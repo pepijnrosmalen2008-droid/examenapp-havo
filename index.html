@@ -1,0 +1,986 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>ExamenApp HAVO 2026</title>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,700;12..96,800&family=Plus+Jakarta+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --bg:#FFFFFF;--bg2:#F8F9FB;--s:#FFFFFF;--dk:#0A0C10;
+  --mu:#8A919E;--bo:#EAECF0;--bo2:#D8DCE3;
+  --or:#E85C0D;--orl:#FEF0E8;--bl:#3B82F6;--r:10px;
+  --nav-h:60px;
+  --nav-bg:rgba(255,255,255,.92);
+  --sam-bg:#F0F7FF;--sam-txt:#1a3558;--sam-h:#0d2240;
+  --tt-bg:#F8F9FB;--ce-bg:#F8F9FB
+}
+html.dark{
+  --bg:#0E1117;--bg2:#161B25;--s:#161B25;--dk:#F1F3F7;
+  --mu:#7A8899;--bo:#252D3D;--bo2:#2E3A4E;
+  --orl:#2A1500;--bl:#5898F8;
+  --nav-bg:rgba(14,17,23,.92);
+  --sam-bg:#0D1E33;--sam-txt:#93BDF5;--sam-h:#C8DFFE;
+  --tt-bg:#161B25;--ce-bg:#161B25
+}
+body{font-family:'Plus Jakarta Sans',sans-serif;background:var(--bg);color:var(--dk);line-height:1.6;-webkit-font-smoothing:antialiased;transition:background .25s,color .25s}
+h1,h2,h3,h4{font-family:'Bricolage Grotesque',sans-serif;line-height:1.15}
+.sc{display:none;min-height:100vh;animation:fi .2s ease}.sc.on{display:block}
+@keyframes fi{from{opacity:0;transform:translateY(5px)}to{opacity:1;transform:translateY(0)}}
+.w{max-width:960px;margin:0 auto;padding:0 20px}
+
+/* ── NAV ─────────────────────────────────────── */
+.nav{height:var(--nav-h);display:flex;align-items:center;border-bottom:1px solid var(--bo);position:sticky;top:0;background:var(--nav-bg);backdrop-filter:blur(12px);z-index:100;transition:background .25s,border-color .25s}
+.nav-inner{max-width:960px;margin:0 auto;padding:0 20px;width:100%;display:flex;align-items:center;gap:12px}
+.logo{font-family:'Bricolage Grotesque',sans-serif;font-weight:800;font-size:17px;color:var(--dk);cursor:pointer;display:flex;align-items:center;gap:7px;letter-spacing:-.3px}
+.logo-dot{width:8px;height:8px;border-radius:50%;background:var(--or);flex-shrink:0}
+.nav-chip{margin-left:8px;padding:2px 9px;border-radius:20px;font-size:11px;font-weight:600;background:var(--bg2);color:var(--mu);border:1px solid var(--bo);letter-spacing:.2px}
+.nav-btn{margin-left:auto;padding:7px 16px;border-radius:8px;font-size:13px;font-weight:600;cursor:pointer;border:1px solid var(--bo);background:var(--s);color:var(--dk);transition:.15s;font-family:'Plus Jakarta Sans',sans-serif}
+.nav-btn:hover{background:var(--bg2);border-color:var(--bo2)}
+.bk{color:var(--mu);font-size:13px;cursor:pointer;padding:5px 11px;border-radius:7px;border:1px solid var(--bo);background:var(--s);transition:.15s;font-family:'Plus Jakarta Sans',sans-serif}
+.bk:hover{background:var(--bg2)}
+.hbg{margin-left:auto;padding:3px 10px;border-radius:20px;font-size:11px;font-weight:600;background:#FEF3C7;color:#92400E;letter-spacing:.2px}
+
+/* ── HOME HERO ────────────────────────────────── */
+.hero{padding:52px 0 36px;text-align:center;position:relative}
+.hero-badge{display:inline-flex;align-items:center;gap:6px;background:var(--orl);color:var(--or);font-size:12px;font-weight:600;padding:5px 13px;border-radius:20px;margin-bottom:20px;border:1px solid #fdd5b5}
+.hero-badge::before{content:'';width:6px;height:6px;border-radius:50%;background:var(--or)}
+.hero h1{font-size:clamp(32px,6vw,58px);font-weight:800;letter-spacing:-2px;margin-bottom:14px;color:var(--dk);line-height:1.08}
+.hero h1 em{font-style:normal;color:var(--or)}
+.hero-sub{font-size:15px;color:var(--mu);max-width:420px;margin:0 auto 36px;line-height:1.65;font-weight:400}
+
+/* ── EXAM DATE STRIP ──────────────────────────── */
+.date-strip{display:flex;gap:1px;background:var(--bo);border-radius:12px;overflow:hidden;margin-bottom:44px;border:1px solid var(--bo)}
+.ds-cell{flex:1;background:var(--s);padding:14px 18px}
+.ds-cell:first-child{border-radius:11px 0 0 11px}
+.ds-cell:last-child{border-radius:0 11px 11px 0}
+.ds-label{font-size:10px;font-weight:700;color:var(--mu);text-transform:uppercase;letter-spacing:.7px;margin-bottom:4px}
+.ds-val{font-family:'Bricolage Grotesque',sans-serif;font-size:14px;font-weight:700;color:var(--dk)}
+.ds-sub{font-size:11px;color:var(--mu);margin-top:1px}
+@media(max-width:580px){.date-strip{flex-direction:column;gap:1px}.ds-cell{border-radius:0!important}.ds-cell:first-child{border-radius:11px 11px 0 0!important}.ds-cell:last-child{border-radius:0 0 11px 11px!important}}
+
+/* ── SECTION LABEL ────────────────────────────── */
+.sec-label{font-size:11px;font-weight:700;color:var(--mu);text-transform:uppercase;letter-spacing:1px;margin-bottom:14px;display:flex;align-items:center;gap:8px}
+.sec-label::after{content:'';flex:1;height:1px;background:var(--bo)}
+
+/* ── VAK CARDS ────────────────────────────────── */
+.sg{display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:8px;margin-bottom:48px}
+@media(max-width:580px){.sg{grid-template-columns:1fr}}
+.card{background:var(--s);border:1px solid var(--bo);border-radius:12px;padding:18px 18px 16px;cursor:pointer;transition:border-color .15s,box-shadow .15s,transform .15s;position:relative;overflow:hidden}
+.card::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:var(--card-col,var(--or));border-radius:12px 12px 0 0}
+.card:hover{border-color:var(--bo2);box-shadow:0 4px 20px rgba(0,0,0,.07);transform:translateY(-1px)}
+.card-code{font-family:'Bricolage Grotesque',sans-serif;font-size:22px;font-weight:800;color:var(--card-col,var(--or));margin-bottom:8px;letter-spacing:-.5px}
+.card-name{font-size:14px;font-weight:600;color:var(--dk);margin-bottom:4px}
+.card-desc{font-size:12px;color:var(--mu);line-height:1.5;margin-bottom:10px}
+.card-meta{font-size:11px;color:var(--mu);display:flex;align-items:center;gap:4px}
+.card-meta::before{content:'';display:inline-block;width:4px;height:4px;border-radius:50%;background:var(--bo2)}
+
+/* ── INFO SCREEN ──────────────────────────────── */
+.ibox{border:1px solid var(--bo);border-radius:12px;margin-bottom:8px;overflow:hidden}
+.ihd{display:flex;justify-content:space-between;align-items:center;padding:15px 18px;cursor:pointer;transition:background .15s}
+.ihd:hover{background:var(--bg2)}
+.ihd h3{font-family:'Bricolage Grotesque',sans-serif;font-size:15px;font-weight:700;display:flex;align-items:center;gap:8px}
+.ibd{display:none;padding:0 18px 16px;font-size:13px;color:var(--mu);line-height:1.8}
+.ibd.on{display:block}
+.ibd strong{color:var(--dk)}
+.ibd ul{padding-left:18px;line-height:2.2}
+.ir{display:flex;justify-content:space-between;padding:8px 0;border-bottom:1px solid var(--bo);font-size:13px}
+.ir:last-child{border:none}
+
+/* ── DETAIL SCREEN ────────────────────────────── */
+.sh{border:1px solid var(--bo);border-radius:12px;padding:22px;margin-bottom:16px}
+.sh h2{font-size:24px;margin-bottom:5px;letter-spacing:-.5px}
+.sh p{color:var(--mu);margin-bottom:12px;font-size:13px}
+.ce{background:var(--ce-bg);border-radius:8px;padding:11px 14px;font-size:12px;color:var(--mu);border-left:3px solid var(--or)}
+.ce strong{color:var(--dk)}
+.dl{display:flex;flex-direction:column;gap:6px;margin-bottom:32px}
+.dc2{border:1px solid var(--bo);border-radius:12px;overflow:hidden}
+.dh{display:flex;align-items:center;gap:10px;padding:13px 16px;cursor:pointer;transition:.15s}
+.dh:hover{background:var(--bg2)}
+.dlet{width:34px;height:34px;border-radius:8px;display:flex;align-items:center;justify-content:center;font-family:'Bricolage Grotesque',sans-serif;font-weight:800;font-size:15px;flex-shrink:0}
+.di{flex:1}
+.di h4{font-size:14px;font-weight:600;margin-bottom:1px}
+.di p{font-size:11px;color:var(--mu)}
+.dbtns{display:flex;gap:5px;flex-shrink:0}
+.exb{background:none;border:1px solid var(--bo);border-radius:6px;padding:4px 9px;font-size:11px;cursor:pointer;color:var(--mu);font-family:'Plus Jakarta Sans',sans-serif;transition:.15s}
+.exb:hover{background:var(--bg2)}
+.qb{background:var(--dk);color:#fff;border:none;border-radius:7px;padding:6px 12px;font-size:11px;font-weight:600;cursor:pointer;transition:.15s;font-family:'Plus Jakarta Sans',sans-serif}
+.qb:hover{background:var(--or)}
+.dtop{display:none;padding:0 16px 16px;border-top:1px solid var(--bo)}
+.dtop.on{display:block}
+.tlbl{font-size:10px;font-weight:700;color:var(--mu);text-transform:uppercase;letter-spacing:.6px;margin:12px 0 7px}
+.ttags{display:flex;flex-wrap:wrap;gap:5px;margin-bottom:12px}
+.tt{background:var(--tt-bg);border:1px solid var(--bo);border-radius:6px;padding:3px 9px;font-size:11px;color:var(--dk)}
+.sam{background:var(--sam-bg);border-radius:9px;padding:13px 15px;font-size:12.5px;line-height:1.9;color:var(--sam-txt);border-left:3px solid var(--bl)}
+.sam strong{color:var(--sam-h);font-weight:600}
+.fm{display:inline-block;background:var(--s);border:1px solid #C5D9F5;border-radius:4px;padding:1px 7px;font-family:monospace;font-size:11px;color:#1a56c4;margin:1px 2px}
+
+/* ── THEME TOGGLE ─────────────────────────────── */
+.theme-btn{width:36px;height:36px;border-radius:8px;border:1px solid var(--bo);background:var(--s);font-size:16px;cursor:pointer;display:flex;align-items:center;justify-content:center;transition:background .15s,border-color .15s;flex-shrink:0;line-height:1}
+.theme-btn:hover{background:var(--bg2);border-color:var(--bo2)}
+/* ── SLBL (legacy compat) ─────────────────────── */
+.slbl{font-size:11px;font-weight:700;color:var(--mu);text-transform:uppercase;letter-spacing:1px;margin-bottom:14px}
+/* ── QUIZ MODE ────────────────────────────────── */
+#sc-qmode{background:var(--dk)}
+.qmw{padding:36px 18px;max-width:580px;margin:0 auto}
+.qmw h2{font-family:'Bricolage Grotesque',sans-serif;color:#fff;font-size:24px;margin-bottom:5px;letter-spacing:-.5px}
+.qmsub{color:rgba(255,255,255,.45);font-size:13px;margin-bottom:28px}
+.qmc{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+@media(max-width:480px){.qmc{grid-template-columns:1fr}}
+.qmcd{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.1);border-radius:13px;padding:22px 18px;cursor:pointer;transition:.2s}
+.qmcd:hover{background:rgba(255,255,255,.11);transform:translateY(-2px)}
+.qmci{font-size:26px;margin-bottom:10px}
+.qmcd h3{font-family:'Bricolage Grotesque',sans-serif;color:#fff;font-size:16px;margin-bottom:5px;font-weight:700}
+.qmcd p{color:rgba(255,255,255,.5);font-size:12px;line-height:1.6}
+.pill{display:inline-block;margin-top:9px;padding:3px 9px;border-radius:10px;font-size:11px;font-weight:600}
+.ps{background:var(--orl);color:var(--or)}
+.po{background:#EDE9FE;color:#7C3AED}
+/* ── QUIZ ─────────────────────────────────────── */
+#sc-quiz{background:var(--dk)}
+.qtb{display:flex;align-items:center;gap:9px;padding:15px 16px 0}
+.ql{font-family:'Bricolage Grotesque',sans-serif;font-weight:800;font-size:16px;color:#fff}
+.qmeta{color:rgba(255,255,255,.4);font-size:11px;margin-left:auto;text-align:right;max-width:240px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.qstp{background:rgba(255,255,255,.1);color:#fff;border:none;border-radius:6px;padding:5px 11px;font-size:12px;cursor:pointer;font-family:'Plus Jakarta Sans',sans-serif}
+.qstp:hover{background:rgba(255,255,255,.18)}
+.qpb{height:3px;background:rgba(255,255,255,.08);margin:13px 16px 0;border-radius:2px}
+.qpf{height:100%;background:var(--or);border-radius:2px;transition:width .4s}
+.qring{position:relative;width:50px;height:50px;margin:0 auto 5px}
+.qring svg{transform:rotate(-90deg)}
+.qring circle{fill:none;stroke-width:4}
+.trbg{stroke:rgba(255,255,255,.1)}
+.trfg{stroke:var(--or);transition:stroke-dashoffset .9s linear}
+.trn{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;font-family:'Bricolage Grotesque',sans-serif;font-weight:700;font-size:16px;color:#fff}
+.qbody{padding:16px 16px 28px;max-width:740px;margin:0 auto}
+.qctr{font-size:11px;font-weight:600;color:rgba(255,255,255,.35);text-align:center;margin-bottom:5px}
+.qctx{background:rgba(255,255,255,.06);border-radius:10px;padding:13px 15px;margin-bottom:14px;font-size:13px;color:rgba(255,255,255,.72);line-height:1.75;border-left:3px solid rgba(139,92,246,.6)}
+.qq{font-family:'Bricolage Grotesque',sans-serif;font-size:clamp(15px,2.5vw,21px);font-weight:700;color:#fff;text-align:center;margin-bottom:22px;line-height:1.3;letter-spacing:-.3px}
+.qopts{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-bottom:14px}
+@media(max-width:440px){.qopts{grid-template-columns:1fr}}
+.opt{border:none;border-radius:10px;padding:13px 14px;font-size:13px;font-weight:600;cursor:pointer;text-align:left;display:flex;align-items:flex-start;gap:8px;line-height:1.4;transition:.15s;font-family:'Plus Jakarta Sans',sans-serif}
+.opt:hover:not(:disabled){filter:brightness(1.1);transform:scale(1.01)}
+.opt:disabled{cursor:default}
+.oA{background:#E21B3C;color:#fff}
+.oB{background:#1368CE;color:#fff}
+.oC{background:#D89E00;color:#fff}
+.oD{background:#26890C;color:#fff}
+.oi{width:22px;height:22px;border-radius:5px;background:rgba(255,255,255,.2);display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:800;flex-shrink:0;margin-top:1px}
+.opt.correct{outline:3px solid #fff}
+.opt.wrong{opacity:.25}
+.qfb{background:rgba(255,255,255,.07);border-radius:10px;padding:11px 14px;margin-bottom:13px;animation:fi .2s}
+.fbt{font-weight:700;font-size:13px;margin-bottom:2px;font-family:'Bricolage Grotesque',sans-serif}
+.fbtx{font-size:12px;color:rgba(255,255,255,.55)}
+.fbok .fbt{color:#4ADE80}
+.fbno .fbt{color:#F87171}
+.fbtm .fbt{color:#F59E0B}
+.nxt{width:100%;background:var(--or);color:#fff;border:none;border-radius:10px;padding:13px;font-family:'Bricolage Grotesque',sans-serif;font-size:15px;font-weight:700;cursor:pointer;transition:.15s;letter-spacing:-.2px}
+.nxt:hover{background:#d14f09}
+/* open question */
+.open-wrap{grid-column:1/-1}
+.open-input{width:100%;min-height:110px;background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.15);border-radius:10px;padding:13px 15px;font-size:14px;color:#fff;font-family:'Plus Jakarta Sans',sans-serif;line-height:1.6;resize:vertical;outline:none}
+.open-input::placeholder{color:rgba(255,255,255,.28)}
+.open-input:focus{border-color:rgba(255,255,255,.3);background:rgba(255,255,255,.1)}
+.nakijk-btn{width:100%;margin-top:10px;background:rgba(255,255,255,.1);color:#fff;border:1px solid rgba(255,255,255,.18);border-radius:10px;padding:12px;font-family:'Bricolage Grotesque',sans-serif;font-size:15px;font-weight:700;cursor:pointer;transition:.15s}
+.nakijk-btn:hover{background:rgba(255,255,255,.18)}
+.model-antwoord{background:rgba(255,255,255,.07);border-radius:10px;padding:14px 16px;margin-bottom:12px;border-left:3px solid #4ADE80;animation:fi .2s}
+.ma-label{font-size:10px;font-weight:700;color:#4ADE80;text-transform:uppercase;letter-spacing:.8px;margin-bottom:6px}
+.ma-text{font-size:13px;color:rgba(255,255,255,.82);line-height:1.75}
+.assess-label{font-size:10px;font-weight:700;color:rgba(255,255,255,.4);text-transform:uppercase;letter-spacing:.7px;text-align:center;margin-bottom:8px}
+.assess-btns{display:grid;grid-template-columns:1fr 1fr 1fr;gap:8px;margin-bottom:14px}
+.assess-btn{border:none;border-radius:10px;padding:12px 8px;font-size:13px;font-weight:700;cursor:pointer;transition:.15s;display:flex;flex-direction:column;align-items:center;gap:3px;font-family:'Plus Jakarta Sans',sans-serif}
+.assess-btn:hover{filter:brightness(1.1);transform:scale(1.02)}
+.ab-goed{background:#14532d;color:#4ADE80}
+.ab-deels{background:#78350F;color:#FCD34D}
+.ab-fout{background:#7F1D1D;color:#F87171}
+.ab-icon{font-size:18px}
+.ab-txt{font-size:11px}
+/* results */
+#sc-res{background:var(--dk)}
+.rb{padding:32px 18px;max-width:520px;margin:0 auto;text-align:center}
+.remi{font-size:48px;margin-bottom:12px}
+.rb h2{font-family:'Bricolage Grotesque',sans-serif;font-size:28px;color:#fff;margin-bottom:6px;letter-spacing:-.5px}
+.rb>p{color:rgba(255,255,255,.45);font-size:13px;margin-bottom:24px}
+.sring{width:120px;height:120px;margin:0 auto 24px;position:relative}
+.sring svg{transform:rotate(-90deg)}
+.sring circle{fill:none;stroke-width:10}
+.srbg{stroke:rgba(255,255,255,.07)}
+.srfill{stroke:var(--or);stroke-linecap:round}
+.srins{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center}
+.srn{font-family:'Bricolage Grotesque',sans-serif;font-size:32px;font-weight:800;color:#fff;line-height:1}
+.srd{font-size:11px;color:rgba(255,255,255,.35);margin-top:2px}
+.rbd{background:rgba(255,255,255,.05);border-radius:10px;padding:14px;margin-bottom:18px;text-align:left;border:1px solid rgba(255,255,255,.07)}
+.rbr{display:flex;justify-content:space-between;padding:7px 0;border-bottom:1px solid rgba(255,255,255,.07);font-size:13px;color:rgba(255,255,255,.7)}
+.rbr:last-child{border:none}
+.rbc{color:#4ADE80;font-weight:600}.rbw{color:#F87171;font-weight:600}.rbs{color:rgba(255,255,255,.3);font-weight:600}
+.rbtns{display:flex;gap:8px;flex-direction:column}
+.btnp{background:var(--or);color:#fff;border:none;border-radius:10px;padding:13px;font-family:'Bricolage Grotesque',sans-serif;font-size:14px;font-weight:700;cursor:pointer;transition:.15s}
+.btnp:hover{background:#d14f09}
+.btns{background:rgba(255,255,255,.08);color:#fff;border:none;border-radius:10px;padding:12px;font-size:13px;cursor:pointer;transition:.15s;font-family:'Plus Jakarta Sans',sans-serif}
+.btns:hover{background:rgba(255,255,255,.13)}
+</style>
+</head>
+<body>
+
+<!-- WELCOME -->
+<div id="sc-home" class="sc on">
+<nav class="nav">
+  <div class="nav-inner">
+    <div class="logo" onclick="show('sc-home')">
+      <div class="logo-dot"></div>ExamenApp
+    </div>
+    <span class="nav-chip">HAVO 2026</span>
+    <button class="nav-btn" onclick="show('sc-info')">Exameninfo</button>
+    <button class="theme-btn" onclick="toggleDark()" title="Nachtmodus" id="theme-btn-home">🌙</button>
+  </div>
+</nav>
+<div class="w">
+  <div class="hero">
+    <div class="hero-badge">Eindexamen 2026</div>
+    <h1>Oefen slim.<br>Slaag voor je <em>eindexamen</em>.</h1>
+    <p class="hero-sub">Alle CE-domeinen, officiële syllabus, snelle quiz en open examenvragen — volledig offline.</p>
+  </div>
+  <div class="date-strip">
+    <div class="ds-cell"><div class="ds-label">1e tijdvak</div><div class="ds-val">12–30 mei 2026</div><div class="ds-sub">Centraal examen</div></div>
+    <div class="ds-cell"><div class="ds-label">2e tijdvak</div><div class="ds-val">16–26 juni 2026</div><div class="ds-sub">Herkansing</div></div>
+    <div class="ds-cell"><div class="ds-label">Uitslag</div><div class="ds-val">begin juli 2026</div><div class="ds-sub">Via school & DUO</div></div>
+  </div>
+  <p class="sec-label">Beschikbare vakken</p>
+  <div id="vakgrid" class="sg"></div>
+</div>
+</div>
+
+<!-- INFO -->
+<div id="sc-info" class="sc">
+<nav class="nav">
+  <div class="nav-inner">
+    <div class="logo" onclick="show('sc-home')"><div class="logo-dot"></div>ExamenApp</div>
+    <button class="bk" onclick="show('sc-home')">← Terug</button>
+    <button class="theme-btn" onclick="toggleDark()" title="Nachtmodus" style="margin-left:auto" id="theme-btn-info">🌙</button>
+  </div>
+</nav>
+<div class="w" style="padding-top:28px">
+  <h2 style="font-size:22px;margin-bottom:16px">Exameninformatie HAVO 2026</h2>
+  <div class="ibox"><div class="ihd" onclick="tog(this)"><h3>📅 Tijdvakken</h3><span>▼</span></div>
+  <div class="ibd"><div class="ir"><span>1e tijdvak</span><strong>12 mei – 30 mei 2026</strong></div><div class="ir"><span>2e tijdvak (herkansing)</span><strong>16 – 26 juni 2026</strong></div><div class="ir"><span>3e tijdvak</span><strong>augustus 2026</strong></div><div class="ir"><span>Uitslag</span><strong>uiterlijk 6 juli 2026</strong></div><p style="margin-top:8px">Exacte datums per vak: <strong>examenblad.nl</strong></p></div></div>
+  <div class="ibox"><div class="ihd" onclick="tog(this)"><h3>🎯 Slaagregels HAVO</h3><span>▼</span></div>
+  <div class="ibd"><ul><li>Gemiddeld CE-cijfer ≥ 5,5</li><li>Maximaal één 5 als eindcijfer (niet lager dan 4)</li><li>Nederlands eindcijfer ≥ 5</li><li>Profielwerkstuk: voldoende of goed</li><li>Bij één 5: compenseren met minimaal één 7 in hetzelfde profiel</li></ul></div></div>
+  <div class="ibox"><div class="ihd" onclick="tog(this)"><h3>🧮 Cijferberekening</h3><span>▼</span></div>
+  <div class="ibd"><p>Eindcijfer = gemiddelde van SE en CE (doorgaans 50/50). Beide afzonderlijk afgerond, dan gemiddeld, dan afgerond op geheel getal.</p><div class="ir"><span>Eindcijfer</span><strong>(SE + CE) ÷ 2</strong></div></div></div>
+  <div class="ibox"><div class="ihd" onclick="tog(this)"><h3>✏️ Praktische tips</h3><span>▼</span></div>
+  <div class="ibd"><ul><li><strong>Binas</strong> toegestaan bij SK en NA</li><li><strong>Grafische rekenmachine</strong> bij WI (deel 2)</li><li><strong>Woordenboek</strong> bij talen</li><li>Wees <strong>15 min</strong> voor aanvang aanwezig met geldig ID</li><li>Ziek? Meld vóór aanvang af → 2e tijdvak</li></ul></div></div>
+  <div class="ibox"><div class="ihd" onclick="tog(this)"><h3>📚 Profielen HAVO</h3><span>▼</span></div>
+  <div class="ibd"><ul><li><strong>C&M:</strong> NE, EN, GS/AK, MA, WA/WB + keuzevakken</li><li><strong>E&M:</strong> NE, EN, EC, WA, MA + keuzevakken</li><li><strong>N&G:</strong> NE, EN, BI, SK/NA, WA/WB + keuzevakken</li><li><strong>N&T:</strong> NE, EN, NA, WB, SK/BI + keuzevakken</li></ul></div></div>
+</div>
+</div>
+
+<!-- DETAIL -->
+<div id="sc-detail" class="sc">
+<nav class="nav">
+  <div class="nav-inner">
+    <div class="logo" onclick="show('sc-home')"><div class="logo-dot"></div>ExamenApp</div>
+    <button class="bk" onclick="show('sc-home')">← Vakken</button>
+    <span class="hbg" style="margin-left:auto">HAVO</span>
+    <button class="theme-btn" onclick="toggleDark()" title="Nachtmodus" id="theme-btn-detail">🌙</button>
+  </div>
+</nav>
+<div class="w" style="padding-top:24px">
+  <div class="sh"><h2 id="dtitle"></h2><p id="ddesc"></p><div class="ce"><strong>CE 2026:</strong> <span id="dce"></span></div></div>
+  <p class="sec-label">Domeinen & syllabus</p>
+  <div id="dlist" class="dl"></div>
+</div>
+</div>
+
+<!-- QUIZ MODE -->
+<div id="sc-qmode" class="sc">
+<div class="w">
+  <div class="tb"><span class="ql">📚 ExamenApp</span><button class="qstp" onclick="show('sc-detail')">← Terug</button></div>
+  <div class="qmw">
+    <h2>Kies quizmodus</h2>
+    <p class="qmsub" id="qmsub"></p>
+    <div class="qmc">
+      <div class="qmcd" onclick="startQ('snel')"><div class="qmci">⚡</div><h3>Snelle Quiz</h3><p>Korte vragen met 15 sec timer. Stamp leerstof in je geheugen.</p><span class="pill ps">⏱ 15 sec · 5 vragen</span></div>
+      <div class="qmcd" onclick="startQ('oud')"><div class="qmci">📄</div><h3>Oud-examen stijl</h3><p>Open vragen zoals bij het echte CE. Schrijf je antwoord en beoordeel jezelf.</p><span class="pill po">✍️ Geen timer · 3 vragen</span></div>
+    </div>
+  </div>
+</div>
+</div>
+
+<!-- QUIZ -->
+<div id="sc-quiz" class="sc">
+<div class="qtb"><span class="ql">📚</span><span class="qmeta" id="qmeta"></span><button class="qstp" onclick="stopQ()">✕ Stop</button></div>
+<div class="qpb"><div class="qpf" id="qprog"></div></div>
+<div class="qbody">
+  <!-- timer (snel only) -->
+  <div id="qring" class="qring"><svg width="50" height="50" viewBox="0 0 50 50"><circle class="trbg" cx="25" cy="25" r="21" stroke-dasharray="132" stroke-dashoffset="0"/><circle class="trfg" id="tcirc" cx="25" cy="25" r="21" stroke-dasharray="132" stroke-dashoffset="0"/></svg><div class="trn" id="tnum">15</div></div>
+  <!-- bron label (oud only) -->
+  <div id="qbron" style="display:none;text-align:center;font-size:11px;color:rgba(255,255,255,.35);margin-bottom:6px;letter-spacing:.3px"></div>
+  <div class="qctr" id="qctr"></div>
+  <div class="qctx" id="qctx" style="display:none"></div>
+  <div class="qq" id="qq"></div>
+  <!-- SNEL: 4 knoppen -->
+  <div class="qopts" id="snel-area"></div>
+  <!-- OUD: open invulveld -->
+  <div id="oud-area" style="display:none">
+    <textarea id="oa-input" class="open-input" placeholder="Schrijf hier je antwoord…"></textarea>
+    <button class="nakijk-btn" id="nakijk-btn" onclick="nakijken()">Nakijken — toon modelantwoord →</button>
+    <div id="model-blok" style="display:none">
+      <div class="model-antwoord">
+        <div class="ma-label">📋 Modelantwoord</div>
+        <div class="ma-text" id="ma-text"></div>
+      </div>
+      <div class="assess-label">Hoe goed was jouw antwoord?</div>
+      <div class="assess-btns">
+        <button class="assess-btn ab-goed" onclick="beoordeel(1)"><span class="ab-icon">✓</span><span class="ab-txt">Goed</span></button>
+        <button class="assess-btn ab-deels" onclick="beoordeel(0.5)"><span class="ab-icon">~</span><span class="ab-txt">Deels goed</span></button>
+        <button class="assess-btn ab-fout" onclick="beoordeel(0)"><span class="ab-icon">✗</span><span class="ab-txt">Fout</span></button>
+      </div>
+    </div>
+  </div>
+  <div id="qfb" style="display:none"></div>
+  <button id="qnxt" class="nxt" onclick="nextQ()" style="display:none">Volgende →</button>
+</div>
+</div>
+
+<!-- RESULTS -->
+<div id="sc-res" class="sc">
+<div class="rb">
+  <div class="remi" id="remi"></div>
+  <h2 id="rtit"></h2><p id="rsub"></p>
+  <div class="sring">
+    <svg width="120" height="120" viewBox="0 0 120 120"><circle class="srbg" cx="60" cy="60" r="50" stroke-dasharray="314" stroke-dashoffset="0"/><circle class="srfill" id="scirc" cx="60" cy="60" r="50" stroke-dasharray="314" stroke-dashoffset="314"/></svg>
+    <div class="srins"><span class="srn" id="rnum">0</span><span class="srd" id="rden"></span></div>
+  </div>
+  <div class="rbd" id="rbd"></div>
+  <div class="rbtns">
+    <button class="btnp" onclick="retryQ()">🔄 Opnieuw</button>
+    <button class="btns" onclick="switchMode()">🔀 Andere modus</button>
+    <button class="btns" onclick="show('sc-detail')">← Terug naar domeinen</button>
+    <button class="btns" onclick="show('sc-home')">🏠 Home</button>
+  </div>
+</div>
+</div>
+
+<script>
+// ═══════ DATA ═══════
+const VAKKEN = [
+
+{id:'nl',naam:'Nederlands',code:'NE',kleur:'#E85C0D',
+ beschrijving:'Leesvaardigheid en literatuur op HAVO-niveau.',
+ ceInfo:'CE = leesvaardigheid (domein B) en literatuur (domein F). Schrijfvaardigheid (domein E) telt alleen mee voor het schoolexamen.',
+ domeinen:[
+  {id:'B',naam:'Leesvaardigheid',beschrijving:'Tekstbegrip, tekststructuur en argumentatieve teksten',
+   onderwerpen:['Hoofdgedachte en deelonderwerpen','Signaalwoorden en tekststructuur','Feit en mening','Argumentatiestructuur','Tekstsoorten (betoog, beschouwing, instructie)','Bedoeling en toon van de schrijver'],
+   sam:'<strong>Hoofdgedachte</strong>: het overkoepelende standpunt of de centrale boodschap die de hele tekst draagt. <strong>Signaalwoorden</strong>: geven tekstrelaties aan. Gevolg: daardoor, dus, zodat. Tegenstelling: maar, echter, toch. Toevoeging: bovendien, daarnaast. Concessie: weliswaar, hoewel. <strong>Feit vs. mening</strong>: feiten zijn controleerbaar; meningen bevatten waardeoordelen. <strong>Argumentatiestructuur</strong>: enkelvoudig (één argument), meervoudig (meerdere onafhankelijke argumenten), onderschikkend (argument wordt zelf onderbouwd). <strong>Concessie en weerlegging</strong>: auteur erkent tegenargument (concessie) maar handhaaft standpunt (weerlegging). <strong>Tekstsoorten</strong>: betoog (overtuigen), beschouwing (meerdere kanten belichten), informatieve tekst, instructie.',
+   sv:[
+{v:'Wat is de hoofdgedachte van een tekst?',o:['Het overkoepelende standpunt of centrale boodschap die de hele tekst draagt','De eerste zin van de inleiding','Het onderwerp van de eerste alinea','De definitie waarmee de tekst opent'],c:0,u:'De hoofdgedachte is het centrale idee dat elke alinea ondersteunt. Het is het standpunt of de boodschap over het onderwerp, niet het onderwerp zelf.'},
+{v:'Welk signaalwoord geeft een tegenstelling aan?',o:['Echter','Daardoor','Bovendien','Weliswaar'],c:0,u:'Echter geeft een tegenstelling aan. Daardoor is een gevolg. Bovendien is een toevoeging. Weliswaar leidt een concessie in.'},
+{v:'Wat is het verschil tussen een betoog en een beschouwing?',o:['Een betoog verdedigt één standpunt om te overtuigen. Een beschouwing belicht meerdere perspectieven zonder te willen overtuigen.','Een betoog is altijd langer dan een beschouwing','Een beschouwing bevat alleen feiten','Er is geen verschil in communicatief doel'],c:0,u:'Betoog: overtuigen van één standpunt. Beschouwing: verkennen van een vraagstuk en meerdere kanten laten zien.'},
+{v:'Wat is een concessie in een betoog?',o:['De schrijver erkent een tegenargument maar handhaaft zijn eigen standpunt','De schrijver trekt zijn standpunt volledig in','De schrijver somt zijn argumenten op','De schrijver herhaalt de stelling aan het einde'],c:0,u:'Concessie: de auteur geeft iets toe (weliswaar klopt X) maar handhaaft het eigen standpunt (maar toch geldt Y). Dit maakt de redenering geloofwaardiger.'},
+{v:'Wat onderscheidt een feit van een mening?',o:['Een feit is objectief controleerbaar. Een mening bevat een waardeoordeel dat niet objectief bewezen kan worden.','Een feit staat altijd in de krant','Een mening begint altijd met ik vind','Feiten zijn altijd positief geformuleerd'],c:0,u:'Feiten zijn aantoonbaar waar of onwaar. Meningen bevatten subjectieve oordelen zoals goed, slecht of onacceptabel.'}
+   ],
+   oe:[
+{bron:'HAVO Nederlands CE 2023 Tijdvak 1 Tekst 3 (geen afbeelding)',ctx:'Fragment uit een opinieartikel over smartphones op school:\n\n"Scholen die smartphones verbieden, denken het probleem op te lossen. Maar verbieden werkt averechts: leerlingen worden nieuwsgieriger en smokkelen hun telefoon naar binnen. Bovendien missen ze de kans om te leren omgaan met afleiding. Toch zijn er goede redenen om de telefoon tijdens lessen weg te houden: concentratie is meetbaar beter als het scherm wegblijft."',v:'Beschrijf de redeneerstructuur van deze passage. Welke twee standpunten worden tegenover elkaar gezet en hoe lost de schrijver de spanning op?',o:[''],c:0,u:'De schrijver stelt dat verbieden averechts werkt (standpunt 1, twee argumenten). Via een concessie erkent hij dat beperkt schermgebruik zinvol kan zijn. De spanning wordt niet volledig opgelost, het eindigt bij een genuanceerd compromis.'},
+{bron:'HAVO Nederlands CE 2022 Tijdvak 2 Tekst 1 (geen afbeelding)',ctx:'Fragment over sociale media en zelfbeeld:\n\n"Onderzoek toont aan dat 41% van de meisjes tussen 12 en 18 aangeeft dat sociale media hun zelfbeeld negatief beinvloeden. Deskundigen wijzen op het mechanisme van sociale vergelijking. Een deel van de onderzoekers relativeert echter de uitkomsten: correlatie is geen causaliteit. Misschien zijn jongeren die al onzeker zijn meer geneigd sociale media te gebruiken."',v:'Leg uit wat de onderzoeker bedoelt met correlatie is geen causaliteit en waarom dit relevant is voor de conclusie.',o:[''],c:0,u:'Correlatie: twee dingen gaan samen. Causaliteit: het een veroorzaakt het ander. De onderzoeker waarschuwt dat de richting onduidelijk is. Misschien kiezen onzekere jongeren voor meer social media, niet andersom. Dit verzwakt de conclusie dat social media het zelfbeeld schaadt.'},
+{bron:'HAVO Nederlands CE 2024 Tijdvak 1 Tekst 2 (geen afbeelding)',ctx:'Fragment uit een betoog over literatuuronderwijs:\n\n"Wie pleit voor meer beta op school, vergeet de kern: taal is het fundament van elk vak. Zonder leesvaardige leerlingen produceert ook het beste wiskundecurriculum slechte resultaten. Literatuur is daarbij onmisbaar, niet als tijdverdrijf, maar als oefening in perspectief nemen."',v:'Identificeer het standpunt en twee argumenten. Welke schrijftechniek gebruikt de auteur door te beginnen met Wie pleit voor meer beta?',o:[''],c:0,u:'Standpunt: literatuuronderwijs is onmisbaar. Argument 1: taal is fundament van alle vakken. Argument 2: literatuur traint perspectief nemen. De opener is een retorische aanval op de tegenstander: door de tegenstander te beschrijven als iemand die de kern vergeet, positioneert de auteur zichzelf als degene die het wel begrijpt.'}
+   ]},
+  {id:'F',naam:'Literatuur',beschrijving:'Literaire begrippen, stromingen en tekstanalyse',
+   onderwerpen:['Vertelstandpunt en focalisatie','Thema en motief','Literaire stromingen (Romantiek, Realisme, Modernisme)','Personages en karakterisering','Chronologie en tijdsverschijnselen','Poëzie: klank, beeld en structuur'],
+   sam:'<strong>Ik-verteller</strong>: personage in het verhaal, begrensd perspectief. <strong>Alwetende verteller</strong>: weet gedachten van alle personages. <strong>Personale verteller</strong>: derde persoon, perspectief van een personage. <strong>Focalisatie</strong>: door wiens ogen zien we de wereld van het verhaal? <strong>Thema</strong>: centrale abstracte boodschap (eenzaamheid, identiteit). <strong>Motief</strong>: concreet terugkerend element dat het thema ondersteunt (bijv. een leeg huis als motief bij eenzaamheid). <strong>Romantiek</strong> (19e eeuw): gevoel, natuur, verheerlijking verleden, afwijzing moderniteit. <strong>Realisme</strong>: objectieve weergave werkelijkheid, sociale misstanden. <strong>Modernisme</strong>: stream of consciousness, fragmentarisch vertellen, innerlijk bewustzijn. <strong>Retarderende momenten</strong>: spanning opbouwende vertragingen. <strong>In medias res</strong>: verhaal begint midden in de actie.',
+   sv:[
+{v:'Wat is een ik-verteller?',o:['Een personage in het verhaal dat in de eerste persoon vertelt met een begrensd perspectief','Een alwetende verteller die alle gedachten kent','Een verteller die buiten het verhaal staat','Een verteller in de tweede persoon'],c:0,u:'Ik-verteller: subjectief, weet alleen wat hij of zij zelf ervaart. Geen toegang tot gedachten van andere personages.'},
+{v:'Welke literaire stroming kenmerkt zich door stream of consciousness?',o:['Modernisme','Realisme','Romantiek','Naturalisme'],c:0,u:'Modernisme (vroeg 20e eeuw): nadruk op innerlijk bewustzijn, experimentele vertelvormen, stream of consciousness.'},
+{v:'Wat is het verschil tussen thema en motief?',o:['Thema is de centrale abstracte boodschap van de hele tekst. Motief is een terugkerend concreet element dat het thema ondersteunt.','Ze zijn synoniemen','Thema is voor poëzie en motief voor proza','Motief is de samenvatting van het thema'],c:0,u:'Thema is abstract (eenzaamheid). Motief is concreet en terugkerend, bijv. een leeg huis dat steeds verschijnt als symbool van eenzaamheid.'},
+{v:'Wat kenmerkt het Realisme?',o:['Objectieve getrouwe weergave van de werkelijkheid inclusief sociale misstanden en armoede','Nadruk op gevoel en verheerlijking van de natuur','Ironie en conventiedoorbreking','Innerlijk bewustzijn en experimentele vertelvorm'],c:0,u:'Realisme (19e eeuw): schrijvers wilden de maatschappij eerlijk weergeven, inclusief armoede en sociale ongelijkheid. Reactie op de romantische idealisering.'},
+{v:'Wat is focalisatie?',o:['Vanuit wiens perspectief de wereld van het verhaal wordt waargenomen','De schrijfstijl van de auteur','Het tempo van de vertelling','Het aantal vertelperspectieven in een tekst'],c:0,u:'Focalisatie is het gezichtspunt: door wiens ogen zien we de wereld van het verhaal? Dit hoeft niet samen te vallen met de verteller.'}
+   ],
+   oe:[
+{bron:'HAVO Nederlands CE 2023 Tijdvak 1 Literatuurvraag proza (geen afbeelding)',ctx:'Fragment:\n\n"Hij zag haar staan bij het raam, maar hij zag haar niet echt zien. Ze keek naar buiten naar iets wat hij nooit zou kunnen zien. Hij had er lang geleden mee leren leven: er bestond in haar een kamer waartoe hij geen toegang had."',v:'(a) Wat is het vertelstandpunt in dit fragment? (b) Welk literair motief wordt gebruikt en wat symboliseert het?',o:[''],c:0,u:'(a) Personale derde-persoons verteller. We volgen de mannelijke hoofdpersoon en kennen zijn gedachten, maar niet die van haar. (b) Het motief van de gesloten kamer en het raam symboliseert emotionele afstand en onbereikbaarheid. Het raam is een klassiek grensmotief.'},
+{bron:'HAVO Nederlands CE 2022 Tijdvak 2 Literatuurvraag stromingen (geen afbeelding)',ctx:'Fragment A: "De fabriek stampte en dreunde. Haar handen bewogen machinaal, tien uur lang, elke dag. Thuis wachtte de kelder, het kraanwater en de kinderen."\n\nFragment B: "O, natuur! Ik werp mij in uw armen. Laat uw wouden mij omsluiten, laat uw rivieren mijn ziel reinigen van de smet der beschaving."',v:'Aan welke literaire stromingen horen Fragment A en B? Noem per fragment twee kenmerken die je keuze onderbouwen.',o:[''],c:0,u:'Fragment A is Realisme: objectieve beschrijving van arbeidersomstandigheden, sociale ellende zonder idealisering, alledaagse taal. Fragment B is Romantiek: verheerlijking van de natuur, emotioneel taalgebruik, afwijzing van de beschaving.'},
+{bron:'HAVO Nederlands CE 2024 Tijdvak 1 Literatuurvraag thema en motief (geen afbeelding)',ctx:'Samenvatting roman: Een jonge vrouw keert terug naar het huis van haar jeugd na het overlijden van haar moeder. Steeds als ze een kamer bezoekt duiken herinneringen op. Het huis staat te koop en wordt afgebroken. Aan het einde vertrekt ze zonder naar het afbreken te kijken.',v:'Noem het thema van deze roman en leg uit hoe het motief van het huis dit thema ondersteunt.',o:[''],c:0,u:'Thema: rouw en loslaten, of de verhouding tussen verleden en heden. Het huis belichaamt het verleden en de moeder. Het afbreken staat voor het definitief afsluiten van het verleden. Door niet te kijken laat de hoofdpersoon los, wat de rouwverwerking verbeeldt.'}
+   ]}
+ ]},
+
+{id:'wa',naam:'Wiskunde A',code:'WA',kleur:'#2563EB',
+ beschrijving:'Algebra, verbanden en statistiek op HAVO-niveau.',
+ ceInfo:'CE = domein B (Algebra en tellen), domein C (Verbanden) en domein E (Statistiek). Kansen is geen CE-domein voor Wiskunde A HAVO.',
+ domeinen:[
+  {id:'B',naam:'Algebra en tellen',beschrijving:'Rekenen, algebra, exponenten en telproblemen',
+   onderwerpen:['Rekenen met breuken en procenten','Algebra: herleiden en oplossen','Exponenten en wortels','Logaritmen','Telproblemen: vermenigvuldigingsprincipe en combinaties'],
+   sam:'<strong>Algebraisch herleiden</strong>: vereenvoudigen van uitdrukkingen, werken met haakjes. <strong>Vergelijkingen oplossen</strong>: lineair (ax+b=c), kwadratisch (abc-formule). <strong>Exponenten</strong>: <span class="fm">aˣ · aʸ = aˣ⁺ʸ</span>, <span class="fm">(aˣ)ʸ = aˣʸ</span>. <strong>Logaritmen</strong>: inverse van machtsverheffen. <span class="fm">ˡᵒᵍa = x ⟺ 10ˣ = a</span>. Rekenregels: <span class="fm">log(a·b) = log a + log b</span>, <span class="fm">log(aⁿ) = n·log a</span>. <strong>Telproblemen</strong>: vermenigvuldigingsprincipe, combinaties <span class="fm">C(n,k) = n!/(k!(n-k)!)</span>.',
+   sv:[
+{v:'Wat is het resultaat van log(1000)?',o:['3','10','100','1000'],c:0,u:'Log 1000 = 3 want 10 tot de derde macht = 1000. Logaritme is de inverse van machtsverheffen met grondtal 10.'},
+{v:'Wat is een logaritme?',o:['De omgekeerde bewerking van machtsverheffen: log a = x betekent 10 tot de macht x = a','Een speciaal type exponentiële functie','De wortel van een getal','De verhouding tussen twee functies'],c:0,u:'Logaritme is de inverse van machtsverheffing. Log 10000 = 4 want 10 tot de 4de = 10000.'},
+{v:'Welke rekenregel geldt voor log(a maal b)?',o:['log a + log b','log a maal log b','log a min log b','log(a+b)'],c:0,u:'Log(a maal b) = log a + log b. Dit volgt uit de exponenregel: 10 tot de x maal 10 tot de y = 10 tot de macht x+y.'},
+{v:'Wat is C(5,2), het aantal combinaties van 2 uit 5?',o:['10','20','5','120'],c:0,u:'C(5,2) = 5! gedeeld door (2! maal 3!) = 120 gedeeld door 12 = 10. Bij combinaties telt volgorde niet mee.'},
+{v:'Wat is het verschil tussen een combinatie en een permutatie?',o:['Bij een combinatie telt volgorde niet mee. Bij een permutatie telt volgorde wel mee.','Bij een permutatie telt volgorde niet mee','Combinaties zijn altijd groter','Er is geen verschil'],c:0,u:'Permutatie: volgorde telt, meer mogelijkheden. Combinatie: volgorde telt niet, C(n,k) = n! gedeeld door k! maal (n min k)!.'}
+   ],
+   oe:[
+{bron:'HAVO Wiskunde A CE 2023 Tijdvak 2 Telvraag (geen afbeelding)',ctx:'Een restaurant heeft 8 voorgerechten, 6 hoofdgerechten en 5 desserts. Een gast kiest altijd precies 1 van elk.',v:'(a) Hoeveel verschillende driegangenmenu\'s zijn er mogelijk?\n(b) De chef kiest 3 voorgerechten voor de chef\'s selection (volgorde maakt niet uit). Op hoeveel manieren?',o:[''],c:0,u:'(a) 8 maal 6 maal 5 = 240 driegangenmenu\'s (vermenigvuldigingsprincipe).\n(b) C(8,3) = 8 maal 7 maal 6 gedeeld door 6 = 56 manieren.'},
+{bron:'HAVO Wiskunde A CE 2022 Tijdvak 1 Logaritmevraag (geen afbeelding)',ctx:'Een geluidsniveau wordt gemeten in decibel (dB). De formule is: L = 10 maal log(I gedeeld door I0), waarbij I de geluidsintensiteit is en I0 = 10 tot de macht min 12 W/m2.',v:'(a) Bereken het geluidsniveau bij I = 10 tot de macht min 6 W/m2.\n(b) Als het geluidsniveau verdubbelt, met hoeveel dB stijgt het niveau?',o:[''],c:0,u:'(a) L = 10 maal log(10 tot de macht min 6 gedeeld door 10 tot de macht min 12) = 10 maal log(10 tot de macht 6) = 10 maal 6 = 60 dB.\n(b) 10 maal log(2I gedeeld door I0) min 10 maal log(I gedeeld door I0) = 10 maal log 2 is gelijk aan 10 maal 0,301 is gelijk aan 3 dB.'},
+{bron:'HAVO Wiskunde A CE 2024 Tijdvak 1 Wachtwoordvraag (geen afbeelding)',ctx:'Een wachtwoord bestaat uit 4 letters uit het alfabet van 26 letters. Letters mogen worden herhaald.',v:'(a) Hoeveel wachtwoorden zijn er?\n(b) Hoeveel wachtwoorden beginnen met de letter A?\n(c) Bereken de kans dat een willekeurig wachtwoord begint met A.',o:[''],c:0,u:'(a) 26 tot de 4de macht = 456.976.\n(b) 1 maal 26 maal 26 maal 26 = 17.576.\n(c) P = 17.576 gedeeld door 456.976 = 1 gedeeld door 26 = 3,8%.'}
+   ]},
+  {id:'C',naam:'Verbanden',beschrijving:'Lineaire en exponentiële verbanden, functies en grafieken',
+   onderwerpen:['Tabellen en grafieken interpreteren','Lineaire verbanden: rico en y-snijpunt','Exponentiële verbanden: groeifactor en halveringstijd','Kwadratische verbanden','Formules met variabelen','Vergelijkingen en ongelijkheden grafisch oplossen'],
+   sam:'<strong>Lineair verband</strong>: <span class="fm">y = ax + b</span>. Rico a = steilheid. b = beginwaarde (snijpunt y-as). <strong>Exponentieel verband</strong>: <span class="fm">y = a · gˣ</span>. Groeifactor g > 1 is groei; 0 < g < 1 is verval. Procentuele verandering per stap is constant. <strong>Groeifactor bij p%</strong>: g = 1 + p/100. <strong>Halveringstijd</strong>: tijd om de helft te worden. <span class="fm">T½ = log(0,5) / log(g)</span>. <strong>Verdubbelingstijd</strong>: <span class="fm">T₂ = log(2) / log(g)</span>. <strong>Kwadratisch verband</strong>: <span class="fm">y = ax² + bx + c</span>. Top op <span class="fm">x = -b/(2a)</span>.',
+   sv:[
+{v:'Wat is een exponentieel verband?',o:['Een verband waarbij de procentuele verandering per stap constant is: y = a maal g tot de macht x','Een verband waarbij de absolute verandering per stap constant is','Een rechte lijn door de oorsprong','Een kwadratisch verband'],c:0,u:'Exponentieel: y = a maal g tot de macht x. Groeifactor g groter dan 1 is groei; 0 kleiner dan g kleiner dan 1 is verval. De procentuele verandering per stap is constant.'},
+{v:'Wat is de groeifactor bij een groei van 7% per jaar?',o:['1,07','0,93','7','0,07'],c:0,u:'Groeifactor = 1 + p/100 = 1 + 7/100 = 1,07. Bij verval van 7% zou het 1 min 0,07 = 0,93 zijn.'},
+{v:'Wat beschrijft de rico van een lineaire functie?',o:['De helling: hoeveel y verandert als x met 1 toeneemt','Het snijpunt met de y-as','Het snijpunt met de x-as','De maximumwaarde van de functie'],c:0,u:'Rico a is de steilheid van de lijn. Positief: stijgend. Negatief: dalend. Berekening: a = verandering y gedeeld door verandering x.'},
+{v:'Wat is de halveringstijd bij exponentieel verval?',o:['De tijd die nodig is om de hoeveelheid te halveren: T half = log(0,5) gedeeld door log(g)','De tijd om de hoeveelheid te verdubbelen','De helft van de beginhoeveelheid','De groeifactor van het verval'],c:0,u:'Halveringstijd: na een halveringstijd is er nog 50% over. Formule: T half = log(0,5) gedeeld door log(g). Radioactief verval en medicijnafbraak volgen dit patroon.'},
+{v:'Hoe bereken je de top van een kwadratische functie y = ax2 + bx + c?',o:['x-coordinaat top = min b gedeeld door (2 maal a)','x-coordinaat top = b gedeeld door (2 maal a)','x-coordinaat top = min b gedeeld door a','De top is altijd bij x = 0'],c:0,u:'De top van een parabool ligt bij x = min b gedeeld door (2 maal a). De y-coordinaat volgt door invullen in de functie.'}
+   ],
+   oe:[
+{bron:'HAVO Wiskunde A CE 2023 Tijdvak 1 Exponentieel verband (geen afbeelding)',ctx:'Een gemeente meet fijnstofconcentratie in microg/m3. Op 1 januari 2020 is de concentratie 80 microg/m3. Door milieubeleid daalt de concentratie elk jaar met 8%. De WHO-norm is 15 microg/m3.',v:'(a) Schrijf een formule voor de concentratie C na t jaar.\n(b) Na hoeveel jaar wordt de WHO-norm bereikt?',o:[''],c:0,u:'(a) C(t) = 80 maal 0,92 tot de macht t (verval 8%, groeifactor 0,92).\n(b) 80 maal 0,92 tot de t = 15 geeft 0,92 tot de t = 0,1875 geeft t = log(0,1875) gedeeld door log(0,92) is gelijk aan 20,2 jaar.'},
+{bron:'HAVO Wiskunde A CE 2022 Tijdvak 2 Kwadratische functie (geen afbeelding)',ctx:'De hoogte in meters van een bal t seconden na de worp wordt beschreven door:\nf(t) = min2 maal t kwadraat + 8t + 3',v:'(a) Bepaal de maximale hoogte en het tijdstip.\n(b) Wat betekent de top in deze context?',o:[''],c:0,u:'(a) t-top = min 8 gedeeld door (2 maal min 2) = 2 seconden. f(2) = min 8 + 16 + 3 = 11 meter.\n(b) Na 2 seconden bereikt de bal zijn hoogste punt van 11 meter. Daarna valt hij terug.'},
+{bron:'HAVO Wiskunde A CE 2024 Tijdvak 1 Groeimodel (geen afbeelding)',ctx:'Een bedrijf heeft op t = 0 een omzet van 500.000 euro. De eerste 5 jaar groeit de omzet met 6% per jaar. Daarna groeit de omzet met 2% per jaar.',v:'Bereken in welk jaar de omzet voor het eerst 1.000.000 euro overschrijdt.',o:[''],c:0,u:'Na 5 jaar: 500.000 maal 1,06 tot de 5de macht is gelijk aan 669.113 euro.\nFase 2: 669.113 maal 1,02 tot de macht (t min 5) = 1.000.000 geeft 1,02 tot de macht (t min 5) = 1,4945 geeft t min 5 = log(1,4945) gedeeld door log(1,02) is gelijk aan 20,2. Dus t is gelijk aan 25,2. In jaar 26 wordt 1 miljoen overschreden.'}
+   ]},
+  {id:'E',naam:'Statistiek',beschrijving:'Beschrijvende statistiek, normale verdeling en hypothesetoetsen',
+   onderwerpen:['Gemiddelde, mediaan, modus en spreiding','Standaardafwijking','Normale verdeling en vuistregels','Z-scores','Steekproef en populatie','Hypothesetoets: H0 en H1'],
+   sam:'<strong>Gemiddelde</strong>: som gedeeld door n. <strong>Mediaan</strong>: middelste waarde (minder gevoelig voor uitschieters). <strong>Standaardafwijking s</strong>: maat voor spreiding; hoe groter s, hoe meer variatie. <strong>Normale verdeling</strong> vuistregel: mu plus of min sigma is 68%, mu plus of min 2 sigma is 95%, mu plus of min 3 sigma is 99,7%. <strong>Z-score</strong>: <span class="fm">z = (x − μ) / σ</span>. Geeft aan hoeveel standaardafwijkingen een waarde van het gemiddelde afwijkt. <strong>Hypothesetoets</strong>: H0 = nulhypothese (geen verschil, status quo). H1 = alternatieve hypothese. Als p kleiner dan alpha dan verwerp je H0. Significantieniveau alpha meestal 5%.',
+   sv:[
+{v:'Wat meet de standaardafwijking?',o:['Hoe sterk waarden in een dataset gemiddeld afwijken van het gemiddelde','De middelste waarde in een gesorteerde rij','Het verschil tussen hoogste en laagste waarde','De meest voorkomende waarde'],c:0,u:'Grote standaardafwijking betekent veel variatie. Kleine standaardafwijking betekent dat waarden dicht bij het gemiddelde liggen.'},
+{v:'Welk percentage valt binnen mu plus of min 2 sigma bij een normale verdeling?',o:['Ongeveer 95%','Ongeveer 68%','Ongeveer 99,7%','Ongeveer 50%'],c:0,u:'Vuistregel: mu plus of min sigma is 68%, mu plus of min 2 sigma is 95%, mu plus of min 3 sigma is 99,7%. Dit geldt alleen bij een normaalverdeling.'},
+{v:'Wat is de nulhypothese H0?',o:['De aanname dat er niets bijzonders is, de geen-effect-hypothese','De hypothese die je wil bewijzen','De hypothese die altijd wordt verworpen','Het gemiddelde van de populatie'],c:0,u:'H0 is de status quo: geen verschil, geen effect. Pas als de data sterk genoeg is, verwerp je H0. Je bewijst H1 nooit direct.'},
+{v:'Wat is het verschil tussen mediaan en gemiddelde?',o:['Mediaan is de middelste waarde en minder gevoelig voor uitschieters. Gemiddelde is som gedeeld door n en gevoelig voor uitschieters.','Ze zijn altijd gelijk','Mediaan is som gedeeld door n','Gemiddelde is altijd de middelste waarde'],c:0,u:'Bij uitschieters geeft de mediaan een beter beeld van het midden. Het gemiddelde wordt sterk beinvloed door extreme waarden.'},
+{v:'Wat is een z-score?',o:['Het aantal standaardafwijkingen dat een waarde boven of onder het gemiddelde ligt: z = (x min mu) gedeeld door sigma','De kans dat een waarde in de normaalverdeling valt','Het gemiddelde van een steekproef','De spreiding van de data'],c:0,u:'Z = (x min mu) gedeeld door sigma. Een z-score van 2 betekent 2 standaardafwijkingen boven het gemiddelde.'}
+   ],
+   oe:[
+{bron:'HAVO Wiskunde A CE 2023 Tijdvak 2 Statistiekopgave (geen afbeelding)',ctx:'De lengte van 400 volwassen mannen is normaal verdeeld met gemiddelde mu = 181 cm en standaardafwijking sigma = 7 cm.',v:'(a) Tussen welke lengtes valt ongeveer 95% van de mannen?\n(b) Een man is 202 cm. Bereken zijn z-score en leg uit wat dit betekent.',o:[''],c:0,u:'(a) mu plus of min 2 sigma = 181 plus of min 14, dus tussen 167 en 195 cm valt 95%.\n(b) z = (202 min 181) gedeeld door 7 = 3,0. Drie standaardafwijkingen boven het gemiddelde: uitzonderlijk lang, slechts 0,15% is langer.'},
+{bron:'HAVO Wiskunde A CE 2022 Tijdvak 1 Hypothesetoets (geen afbeelding)',ctx:'Een snoepfabrikant beweert dat een zak gemiddeld 50 gummies bevat. Steekproef n = 40: x gemiddeld = 47,8, s = 4,2. Significantieniveau alpha = 5%.',v:'(a) Formuleer H0 en H1.\n(b) Leg in eigen woorden uit wat het betekent als je H0 verwerpt.',o:[''],c:0,u:'(a) H0: mu = 50. H1: mu ongelijk aan 50 (tweezijdige toets).\n(b) Als je H0 verwerpt concludeer je dat het gemiddeld aantal gummies significant afwijkt van 50. De fabrikant vult de zakken niet zoals beweerd. Met alpha = 5% accepteer je een kans van 5% dat je H0 ten onrechte verwerpt.'},
+{bron:'HAVO Wiskunde A CE 2024 Tijdvak 2 Beschrijvende statistiek (geen afbeelding)',ctx:'Wachttijden (minuten) bij een huisartsenpraktijk: 2, 3, 5, 5, 8, 9, 12, 14, 14, 18.\nKwaliteitsnorm: gemiddeld maximaal 8 minuten.',v:'(a) Bereken het gemiddelde en de mediaan.\n(b) Welk kenmetal is het meest representatief en waarom?',o:[''],c:0,u:'(a) Gemiddelde = 90 gedeeld door 10 = 9,0 minuten. Mediaan = (8 + 9) gedeeld door 2 = 8,5 minuten.\n(b) Mediaan is representatiever: de uitschieter 18 trekt het gemiddelde omhoog. De mediaan is robuuster voor uitschieters.'}
+   ]}
+ ]},
+
+{id:'bi',naam:'Biologie',code:'BI',kleur:'#16A34A',
+ beschrijving:'Biologie op HAVO-niveau aan de hand van de nieuwe syllabus 2026 (matrix: Molecuul, Orgaan, Populatie niveau).',
+ ceInfo:'CE 2026 = nieuwe matrixopzet. CE-stof: M-niveau (cel en molecuul), O-niveau (orgaan en organisme) en P-niveau (populatie en ecosysteem). Domein A (vaardigheden) is verweven door alle CE-onderdelen.',
+ domeinen:[
+  {id:'M',naam:'Molecuul- en celniveau',beschrijving:'Stofwisseling van de cel, zelforganisatie (DNA/erfelijkheid) en selectie op moleculair niveau',
+   onderwerpen:['Celorganellen en hun functies','Fotosynthese en celademhaling','Cel- en kerndelingen (mitose en meiose)','DNA-structuur, replicatie, transcriptie en translatie','Mutaties en genexpressie','Genetica: Mendelse overerving en stamboombomen'],
+   sam:'<strong>Celorganellen</strong>: mitochondrion (ATP via ademhaling), chloroplast (fotosynthese), ribosoom (eiwitsynthese), kern (DNA). <strong>Fotosynthese</strong>: 6CO₂ + 6H₂O + licht → C₆H₁₂O₆ + 6O₂ (in chloroplasten). <strong>Celademhaling aeroob</strong>: C₆H₁₂O₆ + 6O₂ → 6CO₂ + 6H₂O + 36-38 ATP. <strong>Anaeroob (gisting)</strong>: glucose → ethanol + CO₂ + 2 ATP (noodoplossing bij O₂-tekort). <strong>DNA</strong>: dubbelhelix, basenparen A-T en G-C. <strong>Transcriptie</strong>: DNA → mRNA (in kern). <strong>Translatie</strong>: mRNA → eiwit (op ribosoom). <strong>Codon</strong>: triplet van 3 mRNA-basen codeert voor 1 aminozuur. <strong>Mendelse overerving</strong>: dominant/recessief, genotype (allelen) vs fenotype (waarneembaar). <strong>X-gebonden</strong>: gen op X-chromosoom; mannen (XY) zijn sneller aangedaan.',
+   sv:[
+{v:'Wat is de functie van mitochondrien?',o:['Uitvoeren van aerobe celademhaling en produceren van ATP','Fotosynthese uitvoeren','Eiwitten produceren via ribosomen','Genetische informatie opslaan'],c:0,u:'Mitochondrien zijn de energiecentrales van de cel. Glucose en zuurstof worden omgezet in CO2, water en 36 tot 38 ATP.'},
+{v:'Welke basenparen komen voor in DNA?',o:['Adenine-Thymine en Guanine-Cytosine','Adenine-Uracil en Guanine-Cytosine','Adenine-Guanine en Thymine-Cytosine','Uracil-Adenine en Guanine-Cytosine'],c:0,u:'In DNA: A koppelt aan T en G koppelt aan C. In RNA vervangt Uracil de Thymine.'},
+{v:'Wat is het verschil tussen transcriptie en translatie?',o:['Transcriptie is DNA naar mRNA in de kern. Translatie is mRNA naar eiwit op het ribosoom.','Transcriptie is mRNA naar eiwit en translatie is DNA naar mRNA','Transcriptie is op het ribosoom','Ze zijn beide stappen in DNA-replicatie'],c:0,u:'Transcriptie is het overschrijven van DNA naar mRNA in de celkern. Translatie is het vertalen van mRNA naar een aminozuurketen op het ribosoom.'},
+{v:'Wat is het verschil tussen aerobe en anaerobe ademhaling?',o:['Aeroob gebruikt zuurstof en levert 36 tot 38 ATP. Anaeroob gebruikt geen zuurstof en levert slechts 2 ATP.','Aeroob is zonder zuurstof en anaeroob met zuurstof','Ze leveren evenveel ATP','Anaeroob is altijd efficienter'],c:0,u:'Aeroob is volledig en levert veel ATP. Anaerobe gisting is een noodoplossing bij zuurstoftekort en levert weinig ATP.'},
+{v:'Wat is het verschil tussen genotype en fenotype?',o:['Genotype zijn de allelen die het organisme draagt. Fenotype is de waarneembare eigenschap.','Genotype is het uiterlijk en fenotype zijn de genen','Genotype is altijd dominant','Ze zijn synoniemen'],c:0,u:'Genotype is de genetische samenstelling, bijv. Bb. Fenotype is wat je kunt waarnemen, bijv. bruine ogen.'}
+   ],
+   oe:[
+{bron:'HAVO Biologie CE 2023 Tijdvak 1 Osmosevraag (geen afbeelding)',ctx:'Een biologieleraar plaatst plantencel A in gedestilleerd water en plantencel B in een geconcentreerde zoutoplossing. Na 30 minuten worden beide cellen onderzocht.',v:'Beschrijf wat er met elke cel is gebeurd en verklaar dit vanuit osmose.',o:[''],c:0,u:'Cel A (gedestilleerd water): oplosconcentratie in cel is hoger dan buiten, water stroomt de cel in via osmose, cel zwelt op en wordt turgescent. Celwand voorkomt barsten door turgordruk.\nCel B (zout): oplosconcentratie buiten is hoger, water stroomt de cel uit, vacuole krimpt, celinhoud trekt los van de celwand: plasmolyse.'},
+{bron:'HAVO Biologie CE 2022 Tijdvak 2 ATP-vergelijking (geen afbeelding)',ctx:'Onderzoekers vergelijken ATP-productie bij alcoholgisting en aerobe celademhaling, beide uitgaande van 1 mol glucose.',v:'(a) Geef de reactievergelijkingen.\n(b) Verklaar waarom aerobe ademhaling zoveel meer ATP oplevert.',o:[''],c:0,u:'(a) Aeroob: C6H12O6 + 6O2 geeft 6CO2 + 6H2O + 36 tot 38 ATP.\nGisting: C6H12O6 geeft 2 C2H5OH + 2CO2 + 2 ATP.\n(b) Aeroob verloopt via glycolyse, citroenzuurcyclus en elektronentransportketen: volledige oxidatie. Gisting stopt na glycolyse, de restenergie blijft in ethanol. Gisting is noodoplossing bij zuurstoftekort.'},
+{bron:'HAVO Biologie CE 2023 Tijdvak 2 X-gebonden overerving (geen afbeelding)',ctx:'Hemofilie A is X-gebonden recessief. Een vrouw (niet aangedaan, haar vader had hemofilie) trouwt met een gezonde man.',v:'(a) Bepaal het genotype van de vrouw en leg uit hoe je dit weet.\n(b) Maak een kruisingschema en geef de kansen per geslacht.',o:[''],c:0,u:'(a) Vader had hemofilie, zijn enige X draagt het aangedane allel Xh. De vrouw erfde Xh van haar vader en XH van haar moeder, dus ze is draagster: XHXh.\n(b) XHXh maal XHY:\nDochters: XHXh (draagster) of XHXH (gezond), 0% aangedaan.\nZonen: XhY (hemofilie) of XHY (gezond), 50% van zonen aangedaan.'}
+   ]},
+  {id:'O',naam:'Orgaan- en organismeniveau',beschrijving:'Stofwisseling van het organisme, zelfregulatie en afweer',
+   onderwerpen:['Spijsvertering en opname van voedingsstoffen','Gasuitwisseling (longen, kieuwen)','Bloedsomloop en transport','Hormoonwerking en negatieve terugkoppeling','Zenuwstelsel: neuronen, synaps, reflexbogen','Afweersysteem: specifiek en aspecifiek'],
+   sam:'<strong>Negatieve terugkoppeling</strong>: een effect dat de oorspronkelijke stimulus tegengaat; homeostase. Bijv. hoog bloedsuiker → insuline → bloedsuiker daalt. <strong>Hormonen</strong>: insuline (bètacellen, bloedsuiker ↓), glucagon (alfacellen, bloedsuiker ↑), ADH (waterhuishouding). <strong>Zenuwstelsel</strong>: CZS (hersenen + ruggenmerg), PZS (zenuwen). Neurotransmitters brengen signaal over synaptische spleet. <strong>Reflexboog</strong>: receptor → sensorisch neuron → ruggenmerg → motorisch neuron → effector. Sneller dan bewuste route. <strong>Afweer</strong>: aspecifiek (huid, lysozym, macrofagen, ontsteking) en specifiek (lymfocyten). B-cellen → antilichamen. T-cellen → cel-gemedieerde afweer. Immunologisch geheugen → snellere reactie bij herinfectie.',
+   sv:[
+{v:'Wat is negatieve terugkoppeling?',o:['Een effect dat de oorspronkelijke stimulus tegengaat en zo homeostase handhaaft','Een effect dat de stimulus versterkt','Een hormonaal signaal zonder feedback','De relatie predator-prooi'],c:0,u:'Negatieve terugkoppeling is homeostase. Hoog bloedsuiker leidt tot insuline, bloedsuiker daalt, minder insuline nodig.'},
+{v:'Welk hormoon verhoogt de bloedsuikerspiegel en welk verlaagt die?',o:['Glucagon verhoogt en insuline verlaagt','Insuline verhoogt en glucagon verlaagt','Adrenaline verlaagt en insuline verhoogt','Beide verhogen de bloedsuiker'],c:0,u:'Insuline (bètacellen alvleesklier): stimuleert glucoseopname in cellen, bloedsuiker daalt. Glucagon (alfacellen): glycogeenafbraak in lever, bloedsuiker stijgt.'},
+{v:'Wat is de functie van een neurotransmitter?',o:['Het overbrengen van het zenuwsignaal over de synaptische spleet naar het volgende neuron','Het geleiden van het actiepotentiaal langs het axon','Het beschermen van het axon met de myelineschede','Het produceren van hormonen'],c:0,u:'Neurotransmitters worden vrijgelaten bij de synaps, diffunderen over de spleet en binden aan receptoren op de postsynaptische cel.'},
+{v:'Wat is het verschil tussen specifieke en aspecifieke afweer?',o:['Aspecifiek reageert snel op alle indringers zonder geheugen. Specifiek reageert gericht op een bepaald antigeen en vormt immunologisch geheugen.','Specifiek reageert sneller dan aspecifiek','Aspecifiek omvat alleen antilichamen','Er is geen functioneel verschil'],c:0,u:'Aspecifiek: eerste verdedigingslinie, snel, niet specifiek (huid, macrofagen, ontsteking). Specifiek: langzamer, gericht op antigeen, vormt geheugen voor snellere reactie bij herinfectie.'},
+{v:'Welke cellen produceren antilichamen?',o:['B-lymfocyten (B-cellen) die zijn uitgegroeid tot plasmacellen','T-lymfocyten','Macrofagen','Rode bloedcellen'],c:0,u:'B-cellen worden bij activatie plasmacel. Plasmacellen produceren antilichamen die specifiek binden aan het bijbehorende antigeen.'}
+   ],
+   oe:[
+{bron:'HAVO Biologie CE 2023 Tijdvak 1 Regulatievraag (geen afbeelding)',ctx:'Een sporter loopt een marathon. Halverwege de race is zijn bloedsuikerspiegel gedaald tot onder het normale niveau.',v:'Beschrijf de hormonale reactie. Noem de klier, het hormoon en het effect op de lever.',o:[''],c:0,u:'Lage bloedsuiker leidt ertoe dat de alfacellen van de alvleesklier glucagon afscheiden. Glucagon bereikt de lever via het bloed en stimuleert de glycogeenafbraak tot glucose. Glucose komt in het bloed en de bloedsuikerspiegel stijgt. Dit is negatieve terugkoppeling.'},
+{bron:'HAVO Biologie CE 2022 Tijdvak 2 Reflexvraag (geen afbeelding)',ctx:'Als je per ongeluk een hete pan aanraakt, trek je je hand terug voordat je de pijn ervaart.',v:'(a) Beschrijf de route van het zenuwsignaal bij deze reflex.\n(b) Verklaar waarom de hand al teruggetrokken is voordat je de pijn ervaart.',o:[''],c:0,u:'(a) Receptor in huid detecteert hitte, sensorisch neuron, ruggenmerg (interneuron schakelt door), motorisch neuron, spier trekt samen, hand wordt teruggetrokken.\n(b) De reflexboog loopt via het ruggenmerg, niet via de hersenen. De route naar de hersenen voor bewuste pijnervaring is langer. De reflex is een snelle onbewuste beschermingsreactie.'},
+{bron:'HAVO Biologie CE 2024 Tijdvak 1 Afweervraag (geen afbeelding)',ctx:'Een persoon krijgt een vaccinatie tegen griep. Een jaar later wordt hij besmet met hetzelfde griepvirus.',v:'Leg uit waarom de persoon minder ziek wordt dan iemand die nooit gevaccineerd is. Gebruik de begrippen antigeen, antilichaam en immunologisch geheugen.',o:[''],c:0,u:'Het vaccin bevat (verzwakte of dode) griepvirus-antigenen. Het immuunsysteem reageert hierop door specifieke antilichamen te maken en geheugen B-cellen te vormen (immunologisch geheugen). Bij echte besmetting herkennen de geheugen B-cellen het antigeen direct en produceren snel veel antilichamen. Het virus wordt sneller geneutraliseerd voor het ziek kan maken.'}
+   ]},
+  {id:'P',naam:'Populatie- en ecosysteemniveau',beschrijving:'Ecosystemen, soortvorming en evolutie',
+   onderwerpen:['Voedselketens en energiedoorgifte (10%-regel)','Populatiedynamiek','Eutrofiering en ecostoornissen','Soortvorming (allopatrisch, sympatrisch)','Darwins evolutietheorie','Hardy-Weinberg evenwicht'],
+   sam:'<strong>Energiedoorgifte</strong>: per trofisch niveau wordt circa 10% doorgegeven; 90% gaat verloren als warmte en uitscheiding. Voedselketens zijn daardoor beperkt tot 4-5 schakels. <strong>Eutrofiering</strong>: nutrienten (N, P) → algenbloei → zuurstofdaling → vissterfte. <strong>Darwins evolutietheorie</strong>: variatie + erfelijkheid + overproductie + selectie → evolutie. <strong>Allopatrische speciatie</strong>: soortvorming door geografische isolatie. <strong>Hardy-Weinberg</strong>: <span class="fm">p² + 2pq + q² = 1</span>. Allelfrequenties constant in grote populatie zonder selectie, mutatie of migratie. Afwijking wijst op evolutionaire krachten. <strong>Genetische drift</strong>: toevalsverandering allelfrequenties in kleine populaties.',
+   sv:[
+{v:'Wat is de 10%-regel in ecologie?',o:['Per trofisch niveau wordt circa 10% van de energie doorgegeven; 90% gaat verloren als warmte en uitscheiding','10% van de soorten produceert 90% van de biomassa','Populaties groeien maximaal 10% per jaar','10% energie wordt opgeslagen in de bodem'],c:0,u:'Energiestroom: elke stap verliest circa 90% als warmte, beweging en uitscheiding. Voedselketens zijn beperkt tot 4 of 5 schakels door dit verlies.'},
+{v:'Wat zijn de vier kernprincipes van Darwins evolutietheorie?',o:['Variatie, erfelijkheid, overproductie en natuurlijke selectie','Mutatie, migratie, drift en selectie','Adaptatie, speciatie, extinctie en diversificatie','Variatie, mutatie, recombinatie en uitsterven'],c:0,u:'Darwin: variatie plus erfelijkheid plus overproductie plus selectie. Individuen met voordelige eigenschappen overleven beter en geven die door.'},
+{v:'Wat is allopatrische speciatie?',o:['Soortvorming door geografische isolatie van twee populaties van dezelfde soort','Soortvorming binnen hetzelfde gebied zonder isolatie','Soortvorming door mutaties zonder selectie','Soortvorming door genetische drift alleen'],c:0,u:'Allopatrisch: geografische barriere isoleert twee populaties. Door verschillende selectiedruk en toevalsveranderingen worden de populaties genetisch zo anders dat ze zich niet meer kunnen voortplanten: nieuwe soorten.'},
+{v:'Wat beschrijft Hardy-Weinberg?',o:['Allelfrequenties blijven constant in een grote populatie zonder selectie, mutatie of migratie','De frequentie van mutaties in een populatie','De snelheid van evolutie door selectie','Het aantal generaties voor speciatie'],c:0,u:'p kwadraat + 2pq + q kwadraat = 1. Afwijking van Hardy-Weinberg wijst op evolutionaire krachten zoals selectie, drift of migratie.'},
+{v:'Wat is genetische drift?',o:['Toevalsveranderingen in allelfrequenties in kleine populaties, onafhankelijk van selectie','Gerichte verandering door selectiedruk','Verandering door migratie','Mutatieaccumulatie over generaties'],c:0,u:'Drift is willekeurig: in kleine populaties kan een allel verdwijnen door toeval, niet door voor- of nadeel.'}
+   ],
+   oe:[
+{bron:'HAVO Biologie CE 2023 Tijdvak 2 Speciatie (geen afbeelding)',ctx:'Op een eiland leven twee populaties vogels van dezelfde soort. Door een bergketen zijn ze 50.000 jaar van elkaar geisoleerd. De vogels verschillen nu sterk in snavellengte en kunnen zich niet meer met elkaar voortplanten.',v:'(a) Welk evolutionair proces heeft plaatsgevonden?\n(b) Beschrijf de stappen die tot dit resultaat hebben geleid.',o:[''],c:0,u:'(a) Allopatrische speciatie (soortvorming door geografische isolatie).\n(b) Stap 1: geografische isolatie door de bergketen. Stap 2: in elke populatie treedt door mutatie en recombinatie toevallig variatie op. Stap 3: verschillende omgevingen selecteren voor verschillende snaveltypes. Stap 4: na 50.000 jaar zijn de genetische verschillen zo groot dat reproductie niet meer mogelijk is: nieuwe soorten.'},
+{bron:'HAVO Biologie CE 2022 Tijdvak 1 Eutrofieringsvraag (geen afbeelding)',ctx:'In een meer explodeert de algengroei in de zomer. Tegelijkertijd sterft er veel vis. Boeren rondom het meer gebruiken stikstof- en fosfaatrijke kunstmest.',v:'Beschrijf het volledige ecologische proces dat leidt tot vissterfte. Noem de rol van nutrienten, algen en bacterien.',o:[''],c:0,u:'Eutrofiering: (1) nutrienten (N, P) uit kunstmest spoelen in het meer. (2) Hoge nutrientenconcentraties stimuleren explosieve algengroei. (3) Algen blokkeren zonlicht, waterplanten sterven. (4) Afgestorven algen worden afgebroken door bacterien. (5) Bacteriele afbraak verbruikt grote hoeveelheden zuurstof. (6) Zuurstofdaling (hypoxie) leidt tot vissterfte.'},
+{bron:'HAVO Biologie CE 2024 Tijdvak 2 Hardy-Weinberg (geen afbeelding)',ctx:'In een vlinderpopulatie is het allel voor witte vleugels (w) recessief. 16% van de vlinders heeft witte vleugels.',v:'(a) Bereken de allelfrequenties p en q.\n(b) Bereken het percentage heterozygote vlinders.\n(c) Noem twee voorwaarden voor Hardy-Weinberg evenwicht.',o:[''],c:0,u:'(a) q kwadraat = 0,16 geeft q = 0,4. p = 1 min 0,4 = 0,6.\n(b) Heterozygoten: 2pq = 2 maal 0,6 maal 0,4 = 0,48 = 48%.\n(c) Twee uit: grote populatie, willekeurige paring, geen selectie, geen mutatie, geen migratie.'}
+   ]}
+ ]},
+
+{id:'sk',naam:'Scheikunde',code:'SK',kleur:'#F59E0B',
+ beschrijving:'Stoffen, chemische processen en koolstofchemie op HAVO-niveau.',
+ ceInfo:'CE = domein B (Stoffen en materialen), domein C (Chemische processen) en domein D (Koolstofchemie). Binas 7e editie is toegestaan bij het CE.',
+ domeinen:[
+  {id:'B',naam:'Stoffen en materialen',beschrijving:'Atoomstructuur, bindingen en eigenschappen van stoffen',
+   onderwerpen:['Atoomstructuur en periodiek systeem','Ionbinding en eigenschappen van ionverbindingen','Covalente binding (polair en apolair)','Waterstofbruggen en Van der Waalskrachten','Molecuulpolairiteit en geometrie','Oplossen van stoffen (like dissolves like)'],
+   sam:'<strong>Periodiek systeem</strong>: geordend op atoomnummer Z. Periode = aantal schillen. Groep = valentie-elektronen. <strong>Ionbinding</strong>: metaal geeft e⁻ af aan niet-metaal → ionen. Hoog smeltpunt, geleidt als vloeistof. <strong>Covalente binding</strong>: elektronenpaar gedeeld. Polair: ongelijke EN → δ+/δ⁻. Apolair: gelijke EN. <strong>Molecuulpolairiteit</strong>: hangt af van geometrie. CO₂ lineair → dipolenvectoren heffen elkaar op → apolair. H₂O hoekig → polair. <strong>Waterstofbruggen</strong>: N-H···N, O-H···O, F-H···F. Verklaren hoog kookpunt van water. <strong>Van der Waalskrachten</strong>: tijdelijke dipolen, zwak, sterker bij grotere moleculen. <strong>Like dissolves like</strong>: polair lost op in polair (NaCl in water). Apolair in apolair (vet in benzine).',
+   sv:[
+{v:'Wat is het verschil tussen ionbinding en covalente binding?',o:['Ionbinding is overdracht van elektronen van metaal naar niet-metaal. Covalente binding is deling van een elektronenpaar tussen niet-metalen.','Ionbinding is altijd sterker','Covalent komt alleen in gassen voor','Ze zijn hetzelfde bij hoge temperatuur'],c:0,u:'Ionbinding geeft tegengesteld geladen ionen. Covalente binding geeft gedeelde elektronenparen in moleculen.'},
+{v:'Waarom is CO2 apolair ondanks polaire bindingen?',o:['CO2 is lineair (O=C=O): de twee dipoolvectoren zijn gelijk en tegengesteld en heffen elkaar op, nettodipoolmoment = 0','CO2 heeft geen polaire bindingen','Lineaire moleculen zijn altijd polair','CO2 heeft maar een zuurstofatoom'],c:0,u:'Molecuulpolairiteit hangt af van geometrie. Symmetrische moleculen zoals CO2 zijn apolair ondanks polaire bindingen.'},
+{v:'Wat zijn waterstofbruggen en wanneer ontstaan ze?',o:['Intermoleculaire aantrekking tussen een polair H-atoom en een vrij elektronenpaar op N, O of F van een naburig molecuul','Bindingen tussen waterstofatomen onderling','Krachten die alleen in water voorkomen','Covalente bindingen in watermoleculen'],c:0,u:'Waterstofbruggen zijn de sterkste intermoleculaire krachten. Ze verklaren het hoge kookpunt van water, ammonia en waterstoffluoride.'},
+{v:'Wat geeft de groep aan in het periodiek systeem?',o:['Het aantal valentie-elektronen, bepalend voor het chemisch gedrag','Het aantal protonen in de kern','Het aantal elektronenschillen','De atoomstraal'],c:0,u:'Groepen zijn de kolommen. Elementen in dezelfde groep hebben hetzelfde aantal valentie-elektronen en vergelijkbare chemische eigenschappen.'},
+{v:'Wat betekent like dissolves like?',o:['Polaire stoffen lossen op in polaire oplosmiddelen. Apolaire stoffen lossen op in apolaire oplosmiddelen.','Alle stoffen lossen op in water','Stoffen lossen altijd op in hetzelfde type vloeistof','Zuren lossen altijd op in water'],c:0,u:'NaCl (ionisch, polair) lost op in water (polair): hydratatie-energie compenseert de roosterenergie. In hexaan (apolair) ontbreekt die hydratatie-energie.'}
+   ],
+   oe:[
+{bron:'HAVO Scheikunde CE 2023 Tijdvak 1 Bindingsvraag (geen afbeelding)',ctx:'Vergelijk de kookpunten van methaan (CH4, kpt min 162 graden C), chloorwaterstof (HCl, kpt min 85 graden C) en water (H2O, kpt 100 graden C). Alle drie zijn kleine moleculen.',v:'Verklaar het verschil in kookpunt van de drie stoffen op basis van intermoleculaire krachten. Noem het type kracht voor elk molecuul.',o:[''],c:0,u:'CH4: apolair, alleen zwakke Van der Waalskrachten, laagste kookpunt.\nHCl: polair covalent (H en Cl hebben ongelijke EN), permanente dipoolkrachten, hoger kookpunt dan CH4.\nH2O: vormt sterke waterstofbruggen (O-H...O) door hoge polariteit, hoogste kookpunt. Waterstofbruggen zijn sterker dan dipoolkrachten.'},
+{bron:'HAVO Scheikunde CE 2022 Tijdvak 2 Molecuulgeometrie (geen afbeelding)',ctx:'CO2 heeft twee polaire C=O bindingen maar het molecuul is apolair.\nNH3 heeft drie N-H bindingen en het molecuul is polair.',v:'Leg uit hoe de geometrie van een molecuul bepaalt of het polair of apolair is. Gebruik CO2 en NH3 als voorbeelden.',o:[''],c:0,u:'CO2 is lineair (O=C=O, 180 graden): de twee identieke dipoolvectoren heffen elkaar op, nettodipoolmoment = 0, apolair.\nNH3 heeft een piramidevormige geometrie met drie N-H bindingen en een vrij elektronenpaar op N. De dipoolvectoren heffen elkaar niet op, nettodipoolmoment is ongelijk aan 0, polair molecuul.'},
+{bron:'HAVO Scheikunde CE 2024 Tijdvak 1 Oploshaarheid (geen afbeelding)',ctx:'Natriumchloride (NaCl) lost goed op in water maar praktisch niet in hexaan (een apolaire vloeistof).',v:'Verklaar dit verschil vanuit het principe like dissolves like en het type krachten dat een rol speelt.',o:[''],c:0,u:'Like dissolves like: polaire en ionische stoffen lossen op in polaire oplosmiddelen; apolaire stoffen in apolaire.\nNaCl is ionisch: polaire watermoleculen omsluiten de ionen (hydratatie), hydratatie-energie compenseert de roosterenergie, NaCl lost op.\nIn hexaan (apolair) ontbreekt de hydratatie-energie: ionen kunnen het ionrooster niet verlaten, NaCl lost niet op.'}
+   ]},
+  {id:'C',naam:'Chemische processen',beschrijving:'Reacties, evenwicht, zuren en basen, en stoichiometrie',
+   onderwerpen:['Reactietypen en reactievergelijkingen','Chemisch evenwicht (Le Chatelier)','Zuren en basen (Bronsted-Lowry)','pH berekening','Sterke vs zwakke zuren','Reactiesnelheid en katalyse','Mol, concentratie en stoichiometrie','Verdunning en titratie'],
+   sam:'<strong>Zuur (Bronsted)</strong>: protondonor (H⁺ afstaan). <strong>Base</strong>: protonacceptor. Sterk zuur: volledig gedissocieerd (HCl, HNO₃). Zwak zuur: gedeeltelijk (CH₃COOH). <strong>pH</strong>: <span class="fm">pH = −log[H₃O⁺]</span>. Neutraal = 7. Zuur < 7. Basisch > 7. <span class="fm">pH + pOH = 14</span>. <strong>Le Chatelier</strong>: verstoring → evenwicht verschuift om verstoring te compenseren. Hogere druk → kant met minder mol gas. Exotherm: lagere T → meer product. <strong>Katalysator</strong>: verlaagt activeringsenergie, zelf niet verbruikt. <strong>Mol</strong>: n = m/M. <strong>Concentratie</strong>: c = n/V. <strong>Verdunning</strong>: c₁V₁ = c₂V₂. <strong>Stoichiometrie</strong>: coëfficiënten = molverhoudingen.',
+   sv:[
+{v:'Wat is een zuur volgens Bronsted-Lowry?',o:['Een stof die een proton (H+) kan afstaan aan een andere stof','Een stof die elektronen aanneemt','Een stof met pH groter dan 7','Een stof die hydroxide-ionen afgeeft'],c:0,u:'Bronsted: zuur is protondonor. Base is protonacceptor. Water is amfoteer en kan beide rollen aannemen.'},
+{v:'Wat is het Le Chatelier-principe?',o:['Bij een verstoring verschuift het evenwicht in de richting die de verstoring compenseert','Evenwichten verschuiven altijd naar rechts bij hogere druk','Katalysatoren verschuiven het evenwicht','Temperatuur heeft nooit invloed op evenwichten'],c:0,u:'Le Chatelier: het systeem past zich aan om de stoornis te verminderen. Hogere concentratie reactant geeft meer product gevormd.'},
+{v:'Wat is het verschil tussen een sterk en een zwak zuur?',o:['Sterk zuur dissocieert volledig in water. Zwak zuur dissocieert slechts gedeeltelijk.','Sterk zuur heeft altijd pH 0','Zwak zuur is gevaarlijker','Sterk en zwak verwijzen naar concentratie'],c:0,u:'Sterk: HCl, HNO3, H2SO4 zijn 100% gedissocieerd. Zwak: azijnzuur heeft een evenwicht en is slechts gedeeltelijk gedissocieerd.'},
+{v:'Hoe beeinvloedt een katalysator de reactie?',o:['De katalysator verlaagt de activeringsenergie zodat de reactie sneller verloopt zonder zelf verbruikt te worden','De katalysator verhoogt de activeringsenergie','De katalysator verschuift het chemisch evenwicht','De katalysator wordt verbruikt in de reactie'],c:0,u:'Katalysator: lagere energiebarriere geeft meer moleculen die kunnen reageren. De evenwichtsligging zelf verandert niet.'},
+{v:'Wat is een mol?',o:['De hoeveelheid stof die 6,022 maal 10 tot de 23de deeltjes bevat, het getal van Avogadro','De massa van een stof in grammen','De concentratie van een oplossing','Het aantal grammen per liter'],c:0,u:'1 mol = 6,022 maal 10 tot de 23de deeltjes. n = m gedeeld door M. De molaire massa M lees je af uit het periodiek systeem.'}
+   ],
+   oe:[
+{bron:'HAVO Scheikunde CE 2023 Tijdvak 2 Evenwichtsvraag (geen afbeelding)',ctx:'De synthese van ammoniak: N2(g) + 3H2(g) is in evenwicht met 2NH3(g). Delta H = min 92 kJ/mol (exotherm).\nIn de industrie wordt dit uitgevoerd bij circa 200 atm en 450 graden C met ijzer als katalysator.',v:'(a) Voorspel met Le Chatelier de invloed van hoge druk op de NH3-opbrengst.\n(b) Verklaar waarom lage temperatuur de opbrengst verhoogt maar de reactie vertraagt.',o:[''],c:0,u:'(a) Links: 1 + 3 = 4 mol gas. Rechts: 2 mol gas. Hogere druk verschuift het evenwicht naar de kant met minder mol gas, naar rechts, hogere NH3-opbrengst.\n(b) Lage T: exotherme reactie verschuift naar rechts (meer NH3). Maar lagere T geeft moleculen minder kinetische energie, minder botsingen boven de activeringsenergie, langzamere reactie. Compromis bij 450 graden C plus ijzerkatalysator.'},
+{bron:'HAVO Scheikunde CE 2022 Tijdvak 1 Titratie (geen afbeelding)',ctx:'Bij een titratie wordt 20,0 mL natriumhydroxide (NaOH) geneutraliseerd door 15,0 mL zoutzuur (HCl) met een concentratie van 0,150 mol/L.\nNaOH + HCl geeft NaCl + H2O',v:'(a) Bereken het aantal mol HCl dat wordt gebruikt.\n(b) Bereken de concentratie van de NaOH-oplossing.',o:[''],c:0,u:'(a) n(HCl) = c maal V = 0,150 maal 0,0150 = 0,00225 mol.\n(b) NaOH:HCl = 1:1 geeft n(NaOH) = 0,00225 mol. c(NaOH) = 0,00225 gedeeld door 0,0200 = 0,113 mol/L.'},
+{bron:'HAVO Scheikunde CE 2024 Tijdvak 2 Stoichiometrie (geen afbeelding)',ctx:'IJzer(III)oxide reageert met waterstofgas:\nFe2O3(s) + 3H2(g) geeft 2Fe(s) + 3H2O(g)\nM(Fe2O3) = 160 g/mol, M(Fe) = 56 g/mol',v:'(a) Hoeveel gram ijzer kan maximaal worden gewonnen uit 480 g Fe2O3?\n(b) Bij 168 g Fe verkregen, bereken het rendement.',o:[''],c:0,u:'(a) n(Fe2O3) = 480 gedeeld door 160 = 3 mol. Verhouding Fe2O3:Fe = 1:2 geeft n(Fe) = 6 mol. m(Fe) = 6 maal 56 = 336 g.\n(b) Rendement = 168 gedeeld door 336 maal 100% = 50%.'}
+   ]},
+  {id:'D',naam:'Koolstofchemie',beschrijving:'Organische chemie: koolwaterstofverbindingen, functionele groepen en reacties',
+   onderwerpen:['Homologe reeksen: alkanen, alkenen, alkynen','Functionele groepen (alcohol, carbonzuur, amine, ester)','Naamgeving organische verbindingen','Structuurisomerie','Reactietypen: additie, substitutie, esterificatie, hydrolyse','Polymeren (additie- en condensatiepolymerisatie)'],
+   sam:'<strong>Alkanen</strong>: CₙH₂ₙ₊₂, verzadigd, alleen C-C bindingen. Reactief via substitutie (UV-licht). <strong>Alkenen</strong>: CₙH₂ₙ, een C=C dubbele binding. Reactief via additie. <strong>Functionele groepen</strong>: −OH (alcohol), −COOH (carbonzuur), −NH₂ (amine), −COO− (ester), −CHO (aldehyde). <strong>Structuurisomerie</strong>: zelfde molecuulformule, andere structuur. <strong>Additie</strong>: reagens wordt aan dubbele binding toegevoegd, product is verzadigd. <strong>Substitutie</strong>: H-atoom vervangen door ander atoom. <strong>Esterificatie</strong>: −COOH + −OH ⇌ ester + H₂O (katalysator H⁺). <strong>Additiepolymerisatie</strong>: alkenen koppelen aaneen (PE), geen bijproduct. <strong>Condensatiepolymerisatie</strong>: twee monomeertypen reageren, bijproduct water of HCl (PET, nylon).',
+   sv:[
+{v:'Wat is het verschil tussen alkanen en alkenen?',o:['Alkanen zijn verzadigd (alleen C-C enkelvoudige bindingen). Alkenen bevatten een C=C dubbele binding.','Alkanen zijn altijd gasvormig','Alkanen reageren met zuren; alkenen niet','Er is geen chemisch functioneel verschil'],c:0,u:'Alkanen CnH(2n+2): verzadigd, reactief via substitutie. Alkenen CnH(2n): onverzadigd, reactief via additie aan de dubbele binding.'},
+{v:'Wat is esterificatie?',o:['De reactie van een carbonzuur met een alcohol waarbij een ester en water ontstaan. Reactie is omkeerbaar.','De reactie van een alkaan met een halogeen','De hydrolyse van een vet','De oxidatie van een alcohol tot een zuur'],c:0,u:'R-COOH + R-OH is in evenwicht met R-COO-R + H2O. Katalysator H+. Esters ruiken fruitig.'},
+{v:'Wat is het verschil tussen additie- en condensatiepolymerisatie?',o:['Additie: alkenen koppelen aaneen zonder bijproduct (PE). Condensatie: twee monomeertypen reageren met bijproduct water of HCl (PET, nylon).','Additie heeft altijd een bijproduct','Condensatie is alleen voor plastics','Er is geen functioneel verschil'],c:0,u:'Additiepoly: opening van C=C, geen bijproduct. Condensatiepoly: twee monomeertypen, water of HCl als bijproduct.'},
+{v:'Wat is structuurisomerie?',o:['Verbindingen met dezelfde molecuulformule maar een andere rangschikking van atomen','Verbindingen met dezelfde structuur maar andere molecuulformule','Spiegelbeeldsymmetrie van moleculen','Moleculen die kunnen roteren om een binding'],c:0,u:'Structuurisomeren: zelfde brutoformule, andere rangschikking. Bijv. butaan en methylpropaan, beide C4H10.'},
+{v:'Welk reactietype treedt op bij een alkeen en broomwater?',o:['Additie: Br2 wordt toegevoegd aan de dubbele binding, broomkleur verdwijnt','Substitutie: Br vervangt een H-atoom','Esterificatie','Eliminatie: HBr wordt afgesplitst'],c:0,u:'Alkenen reageren via additie. CH2=CH2 + Br2 geeft CH2Br-CH2Br. De broomkleur verdwijnt omdat Br2 verbruikt wordt. Dit is de test voor onverzadigdheid.'}
+   ],
+   oe:[
+{bron:'HAVO Scheikunde CE 2023 Tijdvak 1 Esterificatie (geen afbeelding)',ctx:'Een student wil boterzuurethylester synthetiseren uit boterzuur (C3H7COOH) en ethanol (C2H5OH).',v:'(a) Schrijf de reactievergelijking.\n(b) Noem twee maatregelen om de opbrengst te verhogen en leg per maatregel de reden uit.',o:[''],c:0,u:'(a) C3H7COOH + C2H5OH is in evenwicht met C3H7COOC2H5 + H2O (katalysator H+).\n(b) Maatregel 1: overmaat van een reactant toevoegen (Le Chatelier: evenwicht verschuift naar rechts). Maatregel 2: water verwijderen bijv. door destillatie (product weghalen: evenwicht verschuift naar rechts).'},
+{bron:'HAVO Scheikunde CE 2022 Tijdvak 2 Polymeerchemie (geen afbeelding)',ctx:'Polyetheen (PE) en nylon zijn beide polymeren maar worden op fundamenteel andere manieren gemaakt.',v:'Vergelijk de vorming van polyetheen en nylon. Noem het type polymerisatie, de monomeren en of er een bijproduct vrijkomt.',o:[''],c:0,u:'Polyetheen: additiepolymerisatie van etheen (CH2=CH2). De C=C binding opent en moleculen koppelen aaneen. Geen bijproduct.\nNylon: condensatiepolymerisatie van een diamine en een dicarbonzuur. Amidebindingen (CO-NH) worden gevormd en bij elke koppeling komt water vrij als bijproduct.'},
+{bron:'HAVO Scheikunde CE 2024 Tijdvak 1 Broomwatertest (geen afbeelding)',ctx:'Etheen (CH2=CH2) reageert met broomwater (Br2-oplossing).',v:'(a) Noem het reactietype en schrijf de vergelijking.\n(b) Hoe gebruik je dit principe om te testen of een stof verzadigd of onverzadigd is?',o:[''],c:0,u:'(a) Additiereactie: CH2=CH2 + Br2 geeft CH2Br-CH2Br (1,2-dibroomethaan).\n(b) Broomwater is oranjegeel. Bij onverzadigde stof verdwijnt de kleur omdat Br2 verbruikt wordt bij additie. Bij een verzadigde stof blijft de broomkleur behouden.'}
+   ]}
+ ]},
+
+{id:'na',naam:'Natuurkunde',code:'NA',kleur:'#3B82F6',
+ beschrijving:'Golven, beweging, elektriciteit en straling op HAVO-niveau.',
+ ceInfo:'CE = domein B (Golven), domein C (Beweging en wisselwerking), domein D (Lading en veld) en domein E (Straling en materie). Binas 7e editie is toegestaan.',
+ domeinen:[
+  {id:'B',naam:'Golven',beschrijving:'Geluid, licht, elektromagnetisch spectrum en beeldvorming',
+   onderwerpen:['Golfvergelijking v = f maal lambda','Trillingen en golfsoorten (transversaal/longitudinaal)','Elektromagnetisch spectrum','Reflectie en refractie (wet van Snellius)','Brekingsindex','Golflengte en kleur van licht'],
+   sam:'<strong>Golfvergelijking</strong>: <span class="fm">v = f · λ</span> (m/s = Hz × m). Geluid circa 340 m/s in lucht. Licht = 3×10⁸ m/s in vacuüm. <strong>Golfsoorten</strong>: transversaal (trilling loodrecht op voortplanting; licht), longitudinaal (trilling in voortplantingsrichting; geluid). <strong>EM-spectrum</strong> (golflengte van klein naar groot): gamma — röntgen — UV — zichtbaar — IR — microgolf — radio. Kortere golflengte = hogere frequentie = meer energie. <strong>Reflectie</strong>: invalshoek = reflectiehoek (meting vanaf normaal). <strong>Refractie</strong>: licht buigt bij overgang naar ander medium doordat de snelheid verandert. <strong>Brekingsindex</strong>: <span class="fm">n = c/v</span>. Snel → langzaam medium: buigt naar normaal. <strong>Totale interne reflectie</strong>: bij overgang van optisch dicht naar optisch ijl boven kritische hoek.',
+   sv:[
+{v:'Wat is de golfvergelijking?',o:['v = f maal lambda: golfsnelheid = frequentie maal golflengte','v = lambda gedeeld door f','f = v maal lambda','v = lambda maal T'],c:0,u:'v = f maal lambda. Licht: v = 3 maal 10 tot de 8 m/s. Geluid: circa 340 m/s in lucht bij kamertemperatuur.'},
+{v:'Welke elektromagnetische straling heeft de kortste golflengte?',o:['Gammastraling','Radiogolven','Infrarood','Zichtbaar licht'],c:0,u:'Gamma heeft de kortste golflengte, dan rontgen, UV, zichtbaar, IR, microgolf, radio. Kortere golflengte is hogere frequentie en meer energie per foton.'},
+{v:'Wat is het verschil tussen een transversale en longitudinale golf?',o:['Transversaal: trilling loodrecht op de voortplantingsrichting (bijv. licht). Longitudinaal: trilling in de voortplantingsrichting (bijv. geluid).','Transversaal is longitudinaal hetzelfde','Longitudinaal heeft altijd een hogere frequentie','Transversaal kan niet door vacuüm'],c:0,u:'Licht is transversaal. Geluid is longitudinaal. Alleen transversale golven kunnen door vacuüm.'},
+{v:'Wat is de brekingsindex van een materiaal?',o:['n = c gedeeld door v: de verhouding van de lichtsnelheid in vacuüm tot de lichtsnelheid in het materiaal','n = v gedeeld door c','n = f maal lambda','n = golflengte in vacuüm gedeeld door golflengte in medium'],c:0,u:'Hoe hoger de brekingsindex, hoe langzamer het licht in het materiaal en hoe sterker het buigt bij refractie.'},
+{v:'Wat gebeurt er bij refractie (lichtbreking)?',o:['De lichtsnelheid en richting veranderen bij overgang naar een ander medium. De frequentie blijft gelijk.','Alleen de richting verandert, niet de snelheid','Licht wordt volledig teruggekaatst','De frequentie van het licht verandert'],c:0,u:'Bij refractie verandert de golfsnelheid in het nieuwe medium, wat de richting doet veranderen. De frequentie blijft gelijk; de golflengte verandert.'}
+   ],
+   oe:[
+{bron:'HAVO Natuurkunde CE 2023 Tijdvak 1 Golfvraag geluid (geen afbeelding)',ctx:'Een ultrasone scanner stuurt geluidsgolven met frequentie 5 MHz (5 maal 10 tot de 6de Hz) door weefsel. De golfsnelheid in weefsel is 1540 m/s.',v:'(a) Bereken de golflengte in weefsel.\n(b) Verklaar waarom hogere frequentie betere beeldresolutie geeft.',o:[''],c:0,u:'(a) lambda = v gedeeld door f = 1540 gedeeld door (5 maal 10 tot de 6de) = 3,08 maal 10 tot de min 4 m = 0,31 mm.\n(b) Hogere frequentie geeft kortere golflengte. Details kunnen pas worden waargenomen als ze groter zijn dan de golflengte. Kortere golflengte maakt kleinere structuren zichtbaar: betere resolutie.'},
+{bron:'HAVO Natuurkunde CE 2022 Tijdvak 2 Brekingsvraag (geen afbeelding)',ctx:'Licht gaat van glas met brekingsindex n = 1,5 naar lucht (n = 1,0).',v:'(a) Bereken de lichtsnelheid in glas.\n(b) Licht treft het grensvlak onder 50 graden (gemeten van de normaal). Buigt het licht naar of van de normaal? Verklaar.',o:[''],c:0,u:'(a) n = c gedeeld door v geeft v = c gedeeld door n = 3 maal 10 tot de 8de gedeeld door 1,5 = 2 maal 10 tot de 8de m/s.\n(b) Van glas (langzaam, dicht medium) naar lucht (snel, ijl medium): het licht buigt van de normaal af, de hoek wordt groter. Als de invalshoek de kritische hoek overschrijdt treedt totale interne reflectie op.'},
+{bron:'HAVO Natuurkunde CE 2024 Tijdvak 1 EM-spectrum vraag (geen afbeelding)',ctx:'Een mobiele telefoon zendt radiogolven uit met frequentie 2,4 GHz (2,4 maal 10 tot de 9de Hz). De lichtsnelheid is 3 maal 10 tot de 8de m/s.',v:'(a) Bereken de golflengte van deze radiogolven.\n(b) Welke schade kunnen deze golven aan het menselijk lichaam veroorzaken vergeleken met UV-straling?',o:[''],c:0,u:'(a) lambda = v gedeeld door f = 3 maal 10 tot de 8de gedeeld door (2,4 maal 10 tot de 9de) = 0,125 m = 12,5 cm.\n(b) Radiogolven hebben een veel langere golflengte en lagere energie dan UV-straling. UV heeft genoeg energie om DNA te beschadigen (kanker). Radiogolven hebben die energie niet. Ze kunnen wel warmteeffecten veroorzaken bij hoge intensiteit maar zijn veel minder gevaarlijk dan UV.'}
+   ]},
+  {id:'C',naam:'Beweging en wisselwerking',beschrijving:'Krachten, kinematica en energie',
+   onderwerpen:['Kinematische vergelijkingen (constante versnelling)','Wetten van Newton','Zwaartekracht, normaalkracht en wrijving','Arbeid en vermogen','Kinetische en potentiele energie','Wet van behoud van energie'],
+   sam:'<strong>Kinematica</strong>: <span class="fm">v = v₀ + at</span>, <span class="fm">s = v₀t + ½at²</span>, <span class="fm">v² = v₀² + 2as</span>. <strong>Newton 1</strong>: bij F_res = 0 is de snelheid constant (traagheid). <strong>Newton 2</strong>: <span class="fm">F = ma</span> (N = kg·m/s²). <strong>Newton 3</strong>: actie = −reactie; gelijke grootte, tegengestelde richting, op VERSCHILLENDE objecten. <strong>Zwaartekracht</strong>: F_z = mg (g ≈ 10 m/s²). <strong>Arbeid</strong>: <span class="fm">W = F·s·cos θ</span> (J). <strong>Vermogen</strong>: <span class="fm">P = W/t = F·v</span> (W). <strong>Kinetische energie</strong>: <span class="fm">E_k = ½mv²</span>. <strong>Potentiele energie</strong>: <span class="fm">E_p = mgh</span>. <strong>Energiebehoud</strong>: E_k + E_p = constant (zonder wrijving).',
+   sv:[
+{v:'Wat zegt de tweede wet van Newton?',o:['De nettokracht op een voorwerp is gelijk aan massa maal versnelling: F = ma','Een voorwerp blijft in rust als krachten in evenwicht zijn','Actie is gelijk en tegengesteld aan reactie','Kracht is gelijk aan massa maal snelheid'],c:0,u:'F = ma in newton = kilogram maal meter per seconde kwadraat. Hoe groter de massa, hoe meer kracht nodig voor dezelfde versnelling.'},
+{v:'Wat is de derde wet van Newton?',o:['Als A een kracht uitoefent op B dan oefent B een even grote maar tegengestelde kracht uit op A, op een ander object','Een voorwerp blijft in rust zonder krachten','F = ma','Zwaartekracht is altijd naar beneden gericht'],c:0,u:'Actie-reactiepaar: gelijke grootte, tegengestelde richting, maar op VERSCHILLENDE voorwerpen. Beide krachten zijn even groot maar werken op andere objecten.'},
+{v:'Wat is kinetische energie?',o:['De energie die een voorwerp heeft door zijn beweging: Ek = half maal m maal v kwadraat','De energie door positie of hoogte','De energie die vrijkomt bij verbranding','De energie opgeslagen in chemische bindingen'],c:0,u:'Ek = half maal m maal v kwadraat. Verdubbel de snelheid: Ek verviervoudigt want het verband is kwadratisch.'},
+{v:'Wat is de wet van behoud van energie?',o:['Energie kan niet worden gemaakt of vernietigd maar alleen omgezet. In gesloten systeem zonder wrijving: Ek + Ep = constant.','Energie neemt altijd toe bij elke omzetting','Kinetische energie is altijd gelijk aan potentiele energie','Energie en massa zijn altijd gelijk'],c:0,u:'Bij een vallend voorwerp daalt Ep en stijgt Ek maar de som blijft gelijk. Wrijving zet mechanische energie om in warmte.'},
+{v:'Wat is het verschil tussen snelheid en versnelling?',o:['Snelheid is positieverandering per tijdseenheid (m/s). Versnelling is snelheidsverandering per tijdseenheid (m/s kwadraat).','Ze zijn identiek','Versnelling is altijd groter dan snelheid','Snelheid heeft geen eenheid'],c:0,u:'v = delta x gedeeld door delta t. a = delta v gedeeld door delta t. Een auto met constante snelheid heeft een grote v maar a = 0.'}
+   ],
+   oe:[
+{bron:'HAVO Natuurkunde CE 2023 Tijdvak 1 Schuin vlak (geen afbeelding)',ctx:'Een skateboarder (massa 65 kg inclusief board) staat op een helling. De component van de zwaartekracht langs de helling is 320 N. De wrijvingskracht bedraagt 85 N.',v:'(a) Bereken de nettokracht langs de helling.\n(b) Bereken de versnelling.\n(c) Welke wet van Newton gebruik je bij (b)?',o:[''],c:0,u:'(a) F_netto = 320 min 85 = 235 N langs de helling omlaag.\n(b) a = F gedeeld door m = 235 gedeeld door 65 = 3,6 m/s kwadraat.\n(c) De tweede wet van Newton: F = ma.'},
+{bron:'HAVO Natuurkunde CE 2022 Tijdvak 2 Achtbaan energiebehoud (geen afbeelding)',ctx:'Een achtbaan start op hoogte h1 = 40 m. Punt B is op hoogte h2 = 15 m. Massa karretje met inzittenden is 800 kg. g = 10 m/s kwadraat.',v:'(a) Bereken de snelheid in punt B via energiebehoud (verwaarloosbaar wrijving).\n(b) In werkelijkheid is de snelheid in B lager. Verklaar dit.',o:[''],c:0,u:'(a) Energiebehoud: mgh1 = mgh2 + half maal mv kwadraat geeft g(h1 min h2) = half v kwadraat geeft v = wortel(2 maal 10 maal 25) = wortel(500) = 22,4 m/s.\n(b) In werkelijkheid is er wrijving en luchtweerstand. Een deel van de mechanische energie gaat verloren als warmte, minder kinetische energie in B, lagere snelheid.'},
+{bron:'HAVO Natuurkunde CE 2024 Tijdvak 1 Stopafstand (geen afbeelding)',ctx:'Een auto rijdt 20 m/s. Reactietijd bestuurder = 0,8 s. Na het remmen vertraagt de auto met 5 m/s kwadraat.',v:'(a) Bereken de reactieweg.\n(b) Bereken de remweg.\n(c) Wat is de totale stopafstand?',o:[''],c:0,u:'(a) s_reactie = v maal t = 20 maal 0,8 = 16 m.\n(b) v kwadraat = v0 kwadraat + 2as geeft 0 = 400 min 10s geeft s = 40 m.\n(c) Totaal: 16 + 40 = 56 m.'}
+   ]},
+  {id:'D',naam:'Lading en veld',beschrijving:'Elektrische schakelingen, Ohm, vermogen en elektromagnetische inductie',
+   onderwerpen:['Elektrische lading en spanning','Wet van Ohm (U = IR)','Serie- en parallelschakelingen','Elektrisch vermogen (P = UI) en energie','Transformator (U1/U2 = n1/n2)','Elektromagnetische inductie'],
+   sam:'<strong>Wet van Ohm</strong>: <span class="fm">U = I·R</span> (V = A × Ω). <strong>Vermogen</strong>: <span class="fm">P = U·I = I²R = U²/R</span> (W). Energie: E = P·t (J of kWh). 1 kWh = 3,6 MJ. <strong>Serieschakeling</strong>: stroom gelijk overal, spanningen optellen, R_tot = ΣR. <strong>Parallelschakeling</strong>: spanning gelijk overal, stromen optellen, 1/R_tot = Σ(1/R). Parallelweerstand altijd kleiner dan kleinste individuele weerstand. <strong>Transformator</strong>: <span class="fm">U₁/U₂ = n₁/n₂</span>. Verliesvrij: P₁ = P₂ → U₁I₁ = U₂I₂. Werkt op wisselstroom. <strong>Inductie (Faraday)</strong>: veranderend magneetveld induceert een spanning. Basis van generator en transformator. <strong>Transportverlies</strong>: P_verlies = I²R. Hoge spanning → kleine stroom → weinig verlies.',
+   sv:[
+{v:'Wat zegt de wet van Ohm?',o:['U = I maal R: de spanning is gelijk aan de stroom maal de weerstand','I = U maal R','R = U maal I','U = I gedeeld door R'],c:0,u:'Wet van Ohm: U in volt = I in ampere maal R in ohm. Meer spanning bij gelijke weerstand geeft meer stroom.'},
+{v:'Wat is het verschil tussen serie- en parallelschakeling?',o:['Serie: stroom gelijk overal, spanningen tellen op. Parallel: spanning gelijk overal, stromen tellen op.','Serie: spanning gelijk; parallel: stroom gelijk','In beide is de stroom gelijk','Er is geen praktisch verschil'],c:0,u:'Serie: R_tot = som van weerstanden. Parallel: 1 gedeeld door R_tot = som van 1/R. Parallelweerstand is altijd kleiner dan de kleinste individuele weerstand.'},
+{v:'Wat is elektrisch vermogen?',o:['De energie die per seconde wordt omgezet: P = U maal I in watt','De totaal verbruikte energie','De spanning maal de weerstand','De lading die per seconde stroomt'],c:0,u:'P = UI = I kwadraat R = U kwadraat gedeeld door R. Energie = P maal t in joule of kWh.'},
+{v:'Hoe werkt een transformator?',o:['Wisselstroom in de primaire spoel geeft een wisselend magneetveld dat een spanning in de secundaire spoel induceert. U1/U2 = n1/n2.','Gelijkstroom wordt omgezet in wisselstroom','Spanning wordt versterkt door batterijen','De transformator werkt ook op gelijkstroom'],c:0,u:'Inductieprincipe van Faraday: veranderend magneetveld induceert spanning. Verliesvrij: P1 = P2. Werkt alleen op wisselstroom.'},
+{v:'Waarom wordt elektrische energie getransporteerd op hoge spanning?',o:['P_verlies = I kwadraat maal R: hogere spanning geeft kleinere stroom en exponentieel minder warmteverlies in de kabels','Hogere spanning vermindert de kabelweerstand','Hoge spanning is eenvoudiger op te wekken','Hoge spanning beschermt huishoudelijke apparaten'],c:0,u:'P = UI: voor hetzelfde vermogen bij hoge U is I klein. Warmteverlies = I kwadraat R, dus kleine stroom geeft kwadratisch minder verlies.'}
+   ],
+   oe:[
+{bron:'HAVO Natuurkunde CE 2023 Tijdvak 1 Energieverbruik (geen afbeelding)',ctx:'Een huishouden heeft drie apparaten:\nKoelkast: 150 W, 24 uur per dag.\nWasmachine: 2000 W, gemiddeld 1 uur per dag.\nTV: 80 W, gemiddeld 5 uur per dag.\nElektriciteitsprijs: 0,32 euro per kWh.',v:'(a) Bereken het totale dagelijkse energieverbruik in kWh.\n(b) Bereken de jaarlijkse elektriciteitskosten.',o:[''],c:0,u:'(a) Koelkast: 0,15 maal 24 = 3,6 kWh. Wasmachine: 2,0 maal 1 = 2,0 kWh. TV: 0,08 maal 5 = 0,4 kWh. Totaal: 6,0 kWh per dag.\n(b) Per jaar: 6,0 maal 365 = 2190 kWh. Kosten: 2190 maal 0,32 = 700,80 euro.'},
+{bron:'HAVO Natuurkunde CE 2022 Tijdvak 2 Schakeling (geen afbeelding)',ctx:'Een schakeling heeft R1 = 30 ohm in serie met een parallelcombinatie van R2 = 20 ohm en R3 = 60 ohm. De totale spanning is 24 V.',v:'(a) Bereken de totale weerstand.\n(b) Bereken de totale stroom.\n(c) Bereken de spanning over de parallelcombinatie.',o:[''],c:0,u:'(a) R_par = (20 maal 60) gedeeld door (20 + 60) = 1200 gedeeld door 80 = 15 ohm. R_tot = 30 + 15 = 45 ohm.\n(b) I = U gedeeld door R = 24 gedeeld door 45 = 0,533 A.\n(c) U_par = I maal R_par = 0,533 maal 15 = 8,0 V.'},
+{bron:'HAVO Natuurkunde CE 2024 Tijdvak 1 Transformator (geen afbeelding)',ctx:'Een transformator verlaagt de netspanning van 230 V naar 12 V. De primaire spoel heeft 1150 wikkelingen. De belasting verbruikt 36 W.',v:'(a) Bereken het aantal wikkelingen van de secundaire spoel.\n(b) Bereken de stroom in de primaire spoel (verliesvrije transformator).',o:[''],c:0,u:'(a) n1/n2 = U1/U2 geeft n2 = 1150 maal 12 gedeeld door 230 = 60 wikkelingen.\n(b) P1 = P2 = 36 W. I1 = P gedeeld door U1 = 36 gedeeld door 230 = 0,157 A.'}
+   ]},
+  {id:'E',naam:'Straling en materie',beschrijving:'Radioactiviteit, kernreacties en elektromagnetische straling met materie',
+   onderwerpen:['Alfa-, beta- en gammastraling: eigenschappen en doordringvermogen','Radioactief verval: halveringstijd','Kernreactievergelijkingen','Ioniserende straling en gezondheid','Elektromagnetische straling en materie (fotonenergie)'],
+   sam:'<strong>Alfastraling (α)</strong>: heliumkern (⁴He₂). A vermindert met 4, Z vermindert met 2. Stopt in papier. <strong>Betastraling (β⁻)</strong>: elektron. A ongewijzigd, Z stijgt met 1 (neutron → proton). Stopt in aluminium. <strong>Gammastraling (γ)</strong>: foton. A en Z ongewijzigd. Stopt in lood of beton. Doordringvermogen: α < β < γ. <strong>Radioactief verval</strong>: <span class="fm">N = N₀ · (½)^(t/T½)</span>. Na n halveringstijden is (½)ⁿ × N₀ over. <strong>Kernreactievergelijking</strong>: behoud van A (massagetal) en Z (atoomnummer). <strong>Fotonenergie</strong>: <span class="fm">E = h·f</span> (h = Planck constant 6,63×10⁻³⁴ J·s). Hogere frequentie = meer energie per foton.',
+   sv:[
+{v:'Wat is het verschil tussen alfa- beta- en gammastraling?',o:['Alfa is een heliumkern (A min 4, Z min 2). Beta min is een elektron (A gelijk, Z plus 1). Gamma is een foton (A en Z ongewijzigd).','Alfa heeft het hoogste doordringvermogen','Beta verandert het massagetal','Gamma verandert het atoomnummer'],c:0,u:'Doordringvermogen: alfa is het kleinst en stopt in papier. Beta stopt in aluminium. Gamma stopt in lood of beton en heeft het hoogste doordringvermogen.'},
+{v:'Wat is de wet van radioactief verval?',o:['N = N0 maal (half) tot de macht (t gedeeld door T-half): exponentieel afnemend per halveringstijd','N = N0 min k maal t: lineair verval','De activiteit neemt toe in de tijd','Verval stopt na drie halveringstijden'],c:0,u:'Na 1 halveringstijd is 50% over. Na 2 is 25% over. Na n halveringstijden is (half) tot de n maal N0.'},
+{v:'Bij beta-min-verval verandert het atoomnummer Z met:',o:['Z stijgt met 1: een neutron wordt omgezet in een proton plus een elektron','Z daalt met 1','Z daalt met 2','Z blijft gelijk'],c:0,u:'Beta-min verval: n geeft p plus e min plus antineutrino. Het massagetal A blijft gelijk, Z stijgt met 1.'},
+{v:'Wat is de fotonenergie en hoe hangt die af van de frequentie?',o:['E = h maal f: hogere frequentie geeft meer energie per foton','E = h gedeeld door f: hogere frequentie geeft minder energie','Fotonenergie is onafhankelijk van frequentie','Fotonenergie hangt alleen af van de golflengte'],c:0,u:'E = h maal f. Hogere frequentie (kortere golflengte) geeft meer energie per foton. Gamma heeft de hoogste energie; radiogolven de laagste.'},
+{v:'Waarom is ioniserende straling gevaarlijk voor levend weefsel?',o:['Ioniserende straling heeft genoeg energie om elektronen los te slaan uit atomen in cellen, waardoor DNA beschadigd kan worden','Ioniserende straling verwarmt het weefsel alleen maar','Ioniserende straling veroorzaakt alleen oppervlakkige brandwonden','Ioniserende straling werkt alleen in op dode cellen'],c:0,u:'Ioniserende straling (gamma, rontgen, alfa en beta) kan DNA in cellen beschadigen wat kan leiden tot mutaties, kanker of celdood. Alfastraling is intern het gevaarlijkst hoewel het extern weinig doordringing heeft.'}
+   ],
+   oe:[
+{bron:'HAVO Natuurkunde CE 2023 Tijdvak 2 Radioactiviteit (geen afbeelding)',ctx:'Een radioactief preparaat heeft op t = 0 een activiteit van 3200 Bq. De halveringstijd is 5 jaar.',v:'(a) Bereken de activiteit na 15 jaar.\n(b) Schrijf de vervalfunctie A(t).\n(c) Na hoeveel jaar is de activiteit gedaald tot 100 Bq?',o:[''],c:0,u:'(a) 15 jaar = 3 halveringstijden geeft A = 3200 maal (half) tot de derde macht = 400 Bq.\n(b) A(t) = 3200 maal 0,5 tot de macht (t gedeeld door 5).\n(c) 3200 maal 0,5 tot de macht (t/5) = 100 geeft 0,5 tot de macht (t/5) = 1/32 = 0,5 tot de 5de macht geeft t/5 = 5 geeft t = 25 jaar.'},
+{bron:'HAVO Natuurkunde CE 2022 Tijdvak 1 Kernreactie (geen afbeelding)',ctx:'Jodium-131 (131I, Z = 53) ondergaat beta-min verval en wordt gebruikt bij de behandeling van schildklierkanker. De halveringstijd is 8 dagen.',v:'(a) Schrijf de kernreactievergelijking.\n(b) Noem twee redenen waarom 131I geschikt is als radioactief medicijn.',o:[''],c:0,u:'(a) 131I_53 geeft 131Xe_54 plus e-1_0 (plus antineutrino). Bij beta-min: A ongewijzigd, Z stijgt met 1.\n(b) Twee uit: (1) schildklier neemt van nature jodium op, selectieve ophoping in doelgebied. (2) T-half van 8 dagen: lang genoeg voor behandeling, snel genoeg afgebroken. (3) Beta-straling heeft beperkt doordringvermogen en beschadigt voornamelijk het doelgebied.'},
+{bron:'HAVO Natuurkunde CE 2024 Tijdvak 2 Warmte en straling (geen afbeelding)',ctx:'Een student wil 0,5 kg ijs bij min 10 graden C omzetten in water van 20 graden C.\nc(ijs) = 2100 J/(kg maal K), L_sm(ijs) = 334000 J/kg, c(water) = 4200 J/(kg maal K)',v:'Bereken de totale benodigde warmte in drie stappen.',o:[''],c:0,u:'Stap 1: ijs verwarmen min 10 naar 0 graden C: Q1 = 0,5 maal 2100 maal 10 = 10500 J.\nStap 2: smelten bij 0 graden C: Q2 = 0,5 maal 334000 = 167000 J.\nStap 3: water verwarmen 0 naar 20 graden C: Q3 = 0,5 maal 4200 maal 20 = 42000 J.\nTotaal: 10500 + 167000 + 42000 = 219500 J.'}
+   ]}
+ ]},
+
+{id:'be',naam:'Bedrijfseconomie',code:'BE',kleur:'#14B8A6',
+ beschrijving:'Persoonlijke financien, organisaties en bedrijfsprocessen op HAVO-niveau.',
+ ceInfo:'CE = domein B (Van persoon naar rechtspersoon), domein C (Interne organisatie), domein D (Marketing), domein E (Financieel beleid) en domein F (Verslaggeving). Open vragen over berekening en theorie.',
+ domeinen:[
+  {id:'B',naam:'Van persoon naar rechtspersoon',beschrijving:'Persoonlijke financien, samenlevingsvormen en rechtsvormen van organisaties',
+   onderwerpen:['Samenlevingsvormen (samenwonen, gehuwd, geregistreerd partnerschap)','Persoonlijke financiele planning (sparen, lenen, verzekeren)','Enkelvoudige en samengestelde interest','Rechtsvormen (eenmanszaak, VOF, BV, NV, stichting, vereniging)','Oprichting en beeindiging van organisaties','Continuiteit van de onderneming'],
+   sam:'<strong>Samengevingsvormen</strong>: samenwoners (geen automatische rechten), gehuwden (gemeenschap van goederen of huwelijkse voorwaarden), geregistreerd partnerschap (zelfde rechten als huwelijk). <strong>Enkelvoudige interest</strong>: R = K₀ · r · t (interest alleen over hoofdsom). <strong>Samengestelde interest</strong>: <span class="fm">Kₙ = K₀ · (1+r)ⁿ</span> (interest ook over eerder verdiende interest). <strong>Rechtsvormen</strong>: Eenmanszaak (1 eigenaar, onbeperkte aansprakelijkheid), VOF (meerdere vennoten, elk onbeperkt aansprakelijk), BV (rechtspersoon, aansprakelijkheid beperkt tot ingebracht kapitaal), NV (aandelen vrij verhandelbaar, beursgenoteerd). Stichting en vereniging: geen winststreven. <strong>Rechtspersoon</strong>: zelfstandige drager van rechten en plichten (BV, NV, stichting, vereniging). <strong>Continuiteit</strong>: langetermijndoelstelling van een onderneming om blijvend te functioneren.',
+   sv:[
+{v:'Wat is het verschil tussen enkelvoudige en samengestelde interest?',o:['Enkelvoudig: interest alleen over de hoofdsom. Samengesteld: interest ook over eerder verdiende interest, leidt tot exponentiële groei.','Enkelvoudig is altijd hoger','Samengesteld is alleen voor korte looptijden','Er is geen verschil bij looptijd van 1 jaar'],c:0,u:'Samengesteld: Kn = K0 maal (1+r) tot de n. Over langere periodes is samengestelde interest veel hoger dan enkelvoudige.'},
+{v:'Wat is het kenmerk van een BV als rechtsvorm?',o:['Beperkte aansprakelijkheid: aandeelhouders zijn alleen aansprakelijk voor hun ingebracht kapitaal. De BV is een rechtspersoon.','Onbeperkte aansprakelijkheid van de eigenaren','Aandelen zijn vrij verhandelbaar op de beurs','Er zijn minimaal 10 aandeelhouders vereist'],c:0,u:'BV is een rechtspersoon met beperkte aansprakelijkheid. Aandeelhouders kunnen maximaal hun inleg verliezen. Aandelen zijn niet vrij overdraagbaar (tegenstelling met NV).'},
+{v:'Wat is het verschil tussen een eenmanszaak en een BV?',o:['Eenmanszaak: eigenaar onbeperkt aansprakelijk met heel zijn vermogen. BV: rechtspersoon, aansprakelijkheid beperkt tot ingebracht kapitaal.','Een eenmanszaak heeft altijd meer werknemers','Een BV betaalt altijd meer belasting','Er is geen juridisch verschil'],c:0,u:'Eenmanszaak: gemakkelijk op te richten, maar eigenaar is met privevermogen aansprakelijk voor bedrijfsschulden. BV biedt bescherming van privevermogen.'},
+{v:'Wat is een rechtspersoon?',o:['Een organisatie die zelfstandig drager is van rechten en plichten, zoals een BV, NV, stichting of vereniging','Een persoon met een bedrijf','Elke organisatie met meer dan 10 werknemers','Alleen bedrijven die winst maken'],c:0,u:'Een rechtspersoon kan zelfstandig rechten en plichten hebben, contracten afsluiten en eigenaar zijn van bezittingen. Eenmanszaak en VOF zijn geen rechtspersonen.'},
+{v:'Wat verstaan we onder continuiteit van een onderneming?',o:['Het streven van de ondernemingsleiding om de organisatie op lange termijn in stand te houden en te laten voortbestaan','Het berekenen van de break-even hoeveelheid','Het maximaliseren van de winst op korte termijn','Het handhaven van een vaste personeelsbezetting'],c:0,u:'Continuiteit is de langetermijndoelstelling van een onderneming: voortbestaan door waardecreatie voor alle stakeholders (people, planet, profit).'}
+   ],
+   oe:[
+{bron:'HAVO Bedrijfseconomie CE 2023 Tijdvak 1 Samengestelde interest (geen afbeelding)',ctx:'Ouders leggen op de geboortedag van hun kind 5000 euro op een spaarrekening met 3% rente per jaar (samengesteld).',v:'(a) Bereken het bedrag na 18 jaar.\n(b) Na hoeveel jaar is het bedrag verdubbeld? Gebruik de regel van 72 als benadering en controleer met de formule.',o:[''],c:0,u:'(a) K18 = 5000 maal 1,03 tot de 18de macht = 5000 maal 1,7024 = 8512 euro.\n(b) Regel van 72: t = 72 gedeeld door 3 = 24 jaar. Controle: 1,03 tot de n = 2 geeft n = log 2 gedeeld door log 1,03 = 23,4 jaar. Klopt goed met de vuistregel.'},
+{bron:'HAVO Bedrijfseconomie CE 2022 Tijdvak 2 Rechtsvormen (geen afbeelding)',ctx:'Twee vrienden (Amir en Bo) beginnen samen een fietsenreparatiewinkel. Ze overwegen twee rechtsvormen: een VOF of een BV.',v:'(a) Leg uit wat het grootste verschil is in aansprakelijkheid tussen een VOF en een BV.\n(b) Noem twee nadelen van het oprichten van een BV voor kleine ondernemers.',o:[''],c:0,u:'(a) VOF: beide vennoten zijn elk onbeperkt aansprakelijk voor de schulden van de VOF, ook met hun privevermogen. BV: de aandeelhouders zijn slechts aansprakelijk voor het ingebrachte kapitaal, privevermogen is beschermd.\n(b) Twee uit: (1) oprichtingskosten en notariskosten zijn hoger. (2) Meer administratieve verplichtingen (jaarrekening deponeren). (3) Minimaal startkapitaal vereist.'},
+{bron:'HAVO Bedrijfseconomie CE 2024 Tijdvak 1 Hypotheek (geen afbeelding)',ctx:'Een stel koopt een woning van 350.000 euro. Ze sluiten een annuiteitenhypotheek af voor 300.000 euro. De rente is 4% per jaar en de looptijd is 30 jaar.',v:'(a) Leg uit wat een annuiteitenhypotheek inhoudt.\n(b) Vergelijk annuiteit met aflossingsvrije hypotheek: wat is het grootste verschil in het verloop van de maandlasten en de schuld?',o:[''],c:0,u:'(a) Annuiteit: elke maand hetzelfde totale bedrag betalen (bruto maandlast constant). Het aandeel rente daalt gedurende de looptijd en het aandeel aflossing stijgt. Aan het einde is de schuld volledig afgelost.\n(b) Annuiteit: schuld daalt, maandlast constant. Aflossingsvrij: schuld blijft constant (geen aflossing), rente blijft gelijk, aan het einde van de looptijd is de hele schuld nog open.'}
+   ]},
+  {id:'C',naam:'Interne organisatie',beschrijving:'Organisatiestructuren, personeelsbeleid en HRM',
+   onderwerpen:['Organisatiestructuren (lijn, lijn-staf, functioneel, matrix)','Organisatiegrafieken lezen en interpreteren','Arbeidsovereenkomsten (bepaalde/onbepaalde tijd, uitzend, oproep)','Personeelsbeleid (werving, selectie, ontslag)','CAO en arbeidsrecht','Motivatie en beloningsvormen'],
+   sam:'<strong>Lijnorganisatie</strong>: duidelijke gezagslijnen, eenvoudig. <strong>Lijn-staf</strong>: lijnmanagers hebben gezag; stafeenheden (HR, IT) adviseren zonder bevelsbevoegdheid. <strong>Functionele organisatie</strong>: specialisatie per functie (inkoop, productie, marketing). <strong>Matrixorganisatie</strong>: medewerkers hebben twee leidinggevenden (functioneel + project); flexibel maar rolconflict mogelijk. <strong>Arbeidsovereenkomst voor bepaalde tijd</strong>: eindigt automatisch; max 3 in 3 jaar daarna automatisch onbepaalde tijd. <strong>Onbepaalde tijd</strong>: ontslag alleen met toestemming UWV of rechter. <strong>CAO</strong>: collectieve arbeidsovereenkomst, afspraken op sectorniveau tussen werkgever(s) en vakbonden. <strong>Drie ontslaggronden</strong>: bedrijfseconomisch, disfunctioneren, verstoorde arbeidsrelatie.',
+   sv:[
+{v:'Wat is een lijn-staforganisatie?',o:['Lijnmanagers hebben gezag. Stafeenheden (HR, IT, Financien) adviseren maar hebben geen bevelsbevoegdheid over lijnmedewerkers.','Een vlakke organisatie zonder hierarchie','Een organisatie met twee gelijkwaardige bazen','Een matrix van projecten en functies'],c:0,u:'Lijn is de gezagslijn van hoog naar laag. Staf zijn specialisten die ondersteunen en adviseren zonder directe bevelsbevoegdheid.'},
+{v:'Wat is het kenmerk van een matrixorganisatie?',o:['Medewerkers rapporteren aan twee leidinggevenden: zowel een functioneel hoofd als een projectleider.','Slechts een leidinggevende per medewerker','Alleen grote bedrijven gebruiken een matrix','Medewerkers zijn altijd vast ingedeeld per afdeling'],c:0,u:'Matrix: flexibel, kennisdeling mogelijk. Nadeel: twee bazen geeft rolconflict en onduidelijkheid over prioriteiten.'},
+{v:'Wat is het verschil tussen een arbeidsovereenkomst voor bepaalde en onbepaalde tijd?',o:['Bepaalde tijd: eindigt automatisch op de einddatum. Onbepaalde tijd: eindigt niet automatisch, ontslag vereist instemming UWV of rechter.','Bepaalde tijd is altijd beter voor de werknemer','Onbepaalde tijd is verboden voor oproepkrachten','Er is geen juridisch verschil'],c:0,u:'Bij bepaalde tijd weet de werknemer van tevoren wanneer het eindigt. Bij onbepaalde tijd geldt sterke ontslagbescherming.'},
+{v:'Wat is een CAO?',o:['Een collectieve arbeidsovereenkomst: afspraken op sectorniveau over loon, arbeidsomstandigheden en werktijden, afgesloten tussen werkgever(s) en vakbonden.','Een contract tussen werkgever en een individu','Een overheidswet over arbeidsrecht','Een intern beleidsdocument van het bedrijf'],c:0,u:'CAO geldt voor alle werknemers in een sector of bedrijf. Minimumafspraken; individuele contracten mogen gunstiger zijn maar niet slechter.'},
+{v:'Wat zijn de drie hoofdgronden voor ontslag in Nederland?',o:['Bedrijfseconomische redenen, disfunctioneren van de werknemer en een verstoorde arbeidsrelatie.','Slechte prestaties, ziekte en te hoog salaris','Reorganisatie, pensionering en vrijwillig vertrek','Overlijden, faillissement en arbeidsconflict'],c:0,u:'Voor ontslag via UWV of rechter zijn de drie gronden: (1) bedrijfseconomisch (bijv. reorganisatie), (2) disfunctioneren en (3) verstoorde arbeidsrelatie.'}
+   ],
+   oe:[
+{bron:'HAVO Bedrijfseconomie CE 2022 Tijdvak 1 Organisatievraag (geen afbeelding)',ctx:'Een consultancybureau werkt met drie vaste functionele afdelingen (Finance, HR, IT) en organiseert tegelijk meerdere klantprojecten. Elke projectmedewerker rapporteert aan zowel zijn functionele afdelingshoofd als aan zijn projectleider.',v:'(a) Welke organisatiestructuur is dit?\n(b) Noem twee voordelen en twee nadelen van deze structuur.',o:[''],c:0,u:'(a) Matrixorganisatie: medewerkers hebben twee leidinggevenden (functioneel + project).\nVoordelen: (1) flexibel inzetten van specialisten over projecten. (2) Kennisdeling tussen functies en projecten.\nNadelen: (1) twee bazen geeft rolconflict en onduidelijkheid over prioriteiten. (2) Hogere coordinatiekosten.'},
+{bron:'HAVO Bedrijfseconomie CE 2023 Tijdvak 2 HRM-vraag (geen afbeelding)',ctx:'Een supermarkt heeft 40 medewerkers. De helft heeft een contract voor onbepaalde tijd, de rest heeft oproepcontracten.',v:'(a) Noem twee voordelen voor de supermarkt van oproepcontracten.\n(b) Noem twee nadelen voor de medewerkers met een oproepcontract.',o:[''],c:0,u:'Voordelen werkgever: (1) Flexibel inzetten bij piekdrukte (bijv. weekenden). (2) Geen loonkosten bij geen werk.\nNadelen werknemer: (1) Onzeker inkomen, moeilijk hypotheek of huur te krijgen. (2) Minder sociale bescherming en opbouw van rechten.'},
+{bron:'HAVO Bedrijfseconomie CE 2024 Tijdvak 1 Organisatieverandering (geen afbeelding)',ctx:'Een middelgroot productiebedrijf heeft een traditionele lijnorganisatie. De directie wil overstappen naar een lijn-staforganisatie door een HR- en een financieelafdeling toe te voegen.',v:'Leg uit wat deze overstap betekent voor de bevoegdheden en verantwoordelijkheden van de nieuwe stafeenheden vergeleken met lijnmanagers.',o:[''],c:0,u:'Stafeenheden (HR en Financien) hebben geen directe bevelsbevoegdheid over de lijnmedewerkers. Ze adviseren en ondersteunen de lijnmanagers. De lijnmanagers behouden het gezag en de eindverantwoordelijkheid voor de dagelijkse aansturing van hun medewerkers. Dit onderscheid is cruciaal: stafeenheden mogen geen orders geven aan lijnpersoneel.'}
+   ]},
+  {id:'D',naam:'Marketing',beschrijving:'Marketing-mix, marktonderzoek en prijsstrategieen',
+   onderwerpen:['Marketing-mix: de vier P\'s','Prijsstrategieen (penetratie, afroomstrategie)','Distributiekanalen en bedrijfskolom','Promotie en communicatiemix','Primair en secundair marktonderzoek','Kwantitatief en kwalitatief onderzoek','Marktvormen (monopolie, oligopolie, volkomen concurrentie)'],
+   sam:'<strong>Marketing-mix (4 P\'s)</strong>: Product (kwaliteit, merk, assortiment), Prijs (strategie), Plaats (distributie), Promotie (reclame, PR, social media). <strong>Penetratiestrategie</strong>: lage introductieprijs voor snel marktaandeel. <strong>Afroomstrategie (skimming)</strong>: hoge introductieprijs voor early adopters, maximale marge. <strong>Bedrijfskolom</strong>: producent → groothandel → detailhandel → consument. Kortere kolom = meer directe controle. <strong>Primair marktonderzoek</strong>: zelf verzameld (enquete, interview, observatie). <strong>Secundair</strong>: bestaande bronnen (CBS, brancherapporten). <strong>Kwantitatief</strong>: cijfermatige data (hoeveel, hoe vaak). <strong>Kwalitatief</strong>: diepgaande meningen en motivaties. <strong>Marktvormen</strong>: volkomen concurrentie (veel aanbieders, homogeen product), monopolie (een aanbieder), oligopolie (weinig aanbieders).',
+   sv:[
+{v:'Wat zijn de vier P\'s van de marketing-mix?',o:['Product, Prijs, Plaats en Promotie','Persoon, Prijs, Productie en Promotie','Product, Processen, Plaats en Prestatie','Prijs, Publiek, Promotie en Prestatie'],c:0,u:'4 P\'s: Product (wat verkoop je), Prijs (voor hoeveel), Plaats (hoe bereik je klanten), Promotie (hoe maak je het bekend).'},
+{v:'Wat is het verschil tussen penetratiestrategie en afroomstrategie?',o:['Penetratie: lage introductieprijs voor snel marktaandeel. Afroomstrategie: hoge introductieprijs voor early adopters, daarna verlagen.','Penetratie is altijd winstgevender','Afroomstrategie is alleen voor luxeproducten','Ze zijn hetzelfde bij hoge kwaliteitsproducten'],c:0,u:'Penetratie: marktaandeel veroveren via lage prijs. Afroomstrategie (skimming): maximale marge bij introductie. Keuze hangt af van doelgroep en concurrentie.'},
+{v:'Wat is het verschil tussen primair en secundair marktonderzoek?',o:['Primair: zelf verzameld (enquete, interview, observatie). Secundair: bestaande bronnen gebruiken (rapporten, CBS).','Primair is altijd kwantitatief','Secundair is altijd betrouwbaarder','Primair is goedkoper dan secundair'],c:0,u:'Primair: originele data, duurder, specifiek voor jouw vraag. Secundair: sneller en goedkoper maar minder actueel.'},
+{v:'Wat is de bedrijfskolom?',o:['De opeenvolgende schakels van producent naar eindconsument: producent, groothandel, detailhandel, consument','De hierarchie binnen een bedrijf','Een kolom in de jaarrekening','De kosten per productieschakel'],c:0,u:'Bedrijfskolom beschrijft de distributieketen. Een kortere kolom heeft minder tussenschakels en geeft meer controle over distributie.'},
+{v:'Wat is het verschil tussen kwantitatief en kwalitatief marktonderzoek?',o:['Kwantitatief: cijfermatige data (hoeveel, hoe vaak) via enquetes. Kwalitatief: diepgaande inzichten in meningen en motivaties via interviews.','Kwantitatief is altijd beter','Kwalitatief levert meer respondenten','Ze zijn identiek qua methode'],c:0,u:'Kwantitatief is statistisch analyseerbaar en representatief. Kwalitatief geeft rijke inzichten maar is minder generaliseerbaar.'}
+   ],
+   oe:[
+{bron:'HAVO Bedrijfseconomie CE 2023 Tijdvak 2 Marketingvraag (geen afbeelding)',ctx:'Een nieuw energiedrankje wordt gelanceerd met de volgende strategie: hoge introductieprijs, verkoop uitsluitend via exclusieve sportscholen, promotie via sportinfluencers op sociale media.',v:'(a) Welke prijsstrategie wordt gehanteerd en wat is het doel?\n(b) Analyseer de keuze voor exclusieve distributie (Plaats). Welk imago streeft het merk na?\n(c) Noem een risico van deze marketingstrategie.',o:[''],c:0,u:'(a) Afroomstrategie (skimming): hoge introductieprijs voor early adopters die voor kwaliteit willen betalen. Doel: hoge marge bij introductie.\n(b) Exclusieve distributie geeft schaarste en prestige: premiumimago. Het merk positioneert zich als luxeproduct.\n(c) Risico: kleine doelgroep bij hoge prijs, beperkt marktaandeel. Concurrenten kunnen met vergelijkbaar product voor lagere prijs komen.'},
+{bron:'HAVO Bedrijfseconomie CE 2022 Tijdvak 1 Marktonderzoek (geen afbeelding)',ctx:'Een supermarktketen wil weten waarom klanten steeds vaker online boodschappen doen in plaats van de fysieke winkel te bezoeken.',v:'(a) Welk type marktonderzoek is het meest geschikt en waarom?\n(b) Noem drie concrete onderzoeksvragen voor een enquete.\n(c) Welke doelgroep selecteer je als steekproef?',o:[''],c:0,u:'(a) Combinatie: kwantitatief (enquete) voor omvang en patronen plus kwalitatief (diepte-interview) voor motivaties. De reden achter gedrag vraagt kwalitatief inzicht.\n(b) Drie uit: Hoe vaak bestelt u online per maand, Wat zijn de drie belangrijkste redenen voor online bestellen, Hoe tevreden bent u met de bezorging (schaal 1-10).\n(c) Klanten die zowel online als offline kopen plus voormalige klanten die volledig overstapten op online.'},
+{bron:'HAVO Bedrijfseconomie CE 2024 Tijdvak 2 4P-analyse (geen afbeelding)',ctx:'Een startend bakkerijbedrijf overweegt zijn brood te verkopen via drie kanalen: een eigen winkel, een online webshop en via supermarkten.',v:'Analyseer de drie distributiekanalen (Plaats) voor het bakkerijbedrijf. Noem per kanaal een voordeel en een nadeel.',o:[''],c:0,u:'Eigen winkel: voordeel directe klantrelatie en volledige winstmarge. Nadeel hoge vaste kosten (huur, personeel).\nWebshop: voordeel breed bereik en lagere vaste kosten. Nadeel logistiek (bezorging vers brood) is complex en duur.\nSupermarkt: voordeel groot bereik en weinig eigen distributiekosten. Nadeel lagere marge door marge voor de supermarkt, minder controle over presentatie.'}
+   ]},
+  {id:'E',naam:'Financieel beleid',beschrijving:'Kosten, opbrengsten, investeringen en rentabiliteit',
+   onderwerpen:['Vaste en variabele kosten','Break-evenanalyse en dekkingsbijdrage','Investeringsbeslissingen: TVT en NCW','Financieringsvormen (eigen en vreemd vermogen)','Rentabiliteit: REV en RTV','Hefboomwerking (positief en negatief)'],
+   sam:'<strong>Vaste kosten (FK)</strong>: onafhankelijk van productie. <strong>Variabele kosten (VK)</strong>: stijgen evenredig met productie. <strong>Dekkingsbijdrage</strong>: <span class="fm">db = vp − vk</span>. <strong>Break-even</strong>: <span class="fm">Q_be = FK / db</span>. <strong>Winst</strong>: W = TO − TK = db·Q − FK. <strong>TVT (terugverdientijd)</strong>: investering / jaarlijkse nettokasinstroom. Eenvoudig maar negeert tijdswaarde. <strong>NCW (netto contante waarde)</strong>: Σ(kasinstroom·CW-factor) − investering. Positieve NCW = waardecreatie. Superieur aan TVT. <strong>RTV</strong>: (nettowinst + rente VV) / TV × 100%. <strong>REV</strong>: nettowinst / EV × 100%. <strong>Positieve hefboomwerking</strong>: RTV > rentevoet VV → REV > RTV. Lenen verhoogt rendement op eigen vermogen als RTV groter is dan de rente op het geleende geld.',
+   sv:[
+{v:'Wat is de dekkingsbijdrage per stuk?',o:['Verkoopprijs minus variabele kosten per stuk: de bijdrage per verkochte eenheid aan de dekking van vaste kosten en winst','Verkoopprijs minus vaste kosten per stuk','Totale winst gedeeld door het aantal stuks','Omzet minus alle kosten'],c:0,u:'db = vp min vk. Break-even: Q_be = FK gedeeld door db. Als db maal Q groter is dan FK is er winst.'},
+{v:'Wat is het break-evenpunt?',o:['De hoeveelheid waarbij totale opbrengst gelijk is aan totale kosten: geen winst, geen verlies','Het punt van maximale winst','De minimale verkoopprijs','Het punt waarop variabele kosten nul zijn'],c:0,u:'Break-even: TO = TK. Q_be = FK gedeeld door (vp min vk).'},
+{v:'Wat is positieve hefboomwerking?',o:['REV is groter dan RTV doordat vreemd vermogen goedkoper is dan de totale rentabiliteit: lenen verhoogt het rendement op eigen vermogen.','REV is altijd kleiner dan RTV bij lenen','Meer vreemd vermogen leidt altijd tot meer winst','Lenen is altijd schadelijk voor de REV'],c:0,u:'Positief hefboom: RTV groter dan rentevoet VV zodat het overschot de winst voor eigenaren vergroot en REV groter wordt dan RTV.'},
+{v:'Wat is het verschil tussen TVT en NCW als investeringscriteria?',o:['TVT is eenvoudig maar negeert tijdswaarde geld en kasstromen na de TVT. NCW houdt rekening met alle kasstromen contant gemaakt en is economisch beter.','NCW is eenvoudiger dan TVT','TVT is altijd hoger dan NCW','Ze geven altijd dezelfde investeringsbeslissing'],c:0,u:'NCW = som van kasinstroom maal CW-factor min investering. Positieve NCW is waardecreatie. NCW is economisch superieur maar vereist een discontovoet.'},
+{v:'Wat zijn vaste kosten en variabele kosten?',o:['Vaste kosten zijn onafhankelijk van productie (huur, afschrijving). Variabele kosten stijgen evenredig met de productie (materiaalkosten, directe arbeid).','Vaste kosten zijn altijd groter','Variabele kosten zijn ook bij nulproductie aanwezig','Er is geen praktisch onderscheid'],c:0,u:'Bij nulproductie: vaste kosten lopen door, variabele kosten zijn nul. Totale kosten = FK + VK.'}
+   ],
+   oe:[
+{bron:'HAVO Bedrijfseconomie CE 2023 Tijdvak 1 Break-evenanalyse (geen afbeelding)',ctx:'Een fietsreparatiebedrijf heeft de volgende maandelijkse gegevens:\nHuur werkplaats: 1800 euro\nSalaris eigenaar: 2200 euro\nAfschrijving machines: 400 euro\nVariabele kosten per reparatie: 12 euro\nVerkoopprijs per reparatie: 45 euro',v:'(a) Bereken het break-evenpunt in reparaties per maand.\n(b) Bereken de winst bij 200 reparaties per maand.\n(c) Leg uit wat schaalvoordeel is in deze context.',o:[''],c:0,u:'(a) FK = 1800 + 2200 + 400 = 4400 euro. db = 45 min 12 = 33 euro. Q_be = 4400 gedeeld door 33 = 133 reparaties.\n(b) Winst = db maal Q min FK = 33 maal 200 min 4400 = 6600 min 4400 = 2200 euro.\n(c) Schaalvoordeel: bij meer reparaties worden de vaste kosten over meer eenheden verspreid, waardoor de vaste kosten per stuk dalen en de winst per stuk stijgt.'},
+{bron:'HAVO Bedrijfseconomie CE 2022 Tijdvak 2 REV en hefboomwerking (geen afbeelding)',ctx:'Bedrijf Y:\nTotaal vermogen: 300.000 euro\nEigen vermogen: 100.000 euro\nVreemd vermogen: 200.000 euro (rente 4%)\nNettowinst voor renteaftrek: 27.000 euro',v:'(a) Bereken de RTV.\n(b) Bereken de nettowinst na rente.\n(c) Bereken de REV.\n(d) Is er sprake van positieve hefboomwerking?',o:[''],c:0,u:'(a) RTV = 27.000 gedeeld door 300.000 maal 100% = 9%.\n(b) Rente = 4% maal 200.000 = 8.000 euro. Nettowinst na rente = 27.000 min 8.000 = 19.000 euro.\n(c) REV = 19.000 gedeeld door 100.000 maal 100% = 19%.\n(d) Ja: RTV (9%) is groter dan rentevoet VV (4%), REV (19%) is groter dan RTV (9%), positieve hefboomwerking.'},
+{bron:'HAVO Bedrijfseconomie CE 2024 Tijdvak 1 Investeringsanalyse (geen afbeelding)',ctx:'Een ondernemer overweegt een machine van 80.000 euro. Verwachte nettokasinstroom: 20.000 euro per jaar gedurende 5 jaar. Daarna is de machine waardeloos.\nDiscontovoet: 8%. CW-factor (8%, 5 jaar) = 3,993.',v:'(a) Bereken de terugverdientijd.\n(b) Bereken de NCW.\n(c) Adviseer de ondernemer op basis van de NCW.',o:[''],c:0,u:'(a) TVT = 80.000 gedeeld door 20.000 = 4 jaar.\n(b) NCW = 20.000 maal 3,993 min 80.000 = 79.860 min 80.000 = min 140 euro.\n(c) De NCW is licht negatief. De investering creëert bij een rendementseis van 8% nagenoeg geen waarde. Advies: niet uitvoeren tenzij de kasinstroom hoger kan of de aanschafprijs lager.'}
+   ]},
+  {id:'F',naam:'Verslaggeving',beschrijving:'Jaarrekening, balans, winst-en-verliesrekening en financiele kengetallen',
+   onderwerpen:['Balans: activa en passiva','Eigen vermogen en vreemd vermogen','Winst-en-verliesrekening','Afschrijvingen','Liquiditeit: current ratio en quick ratio','Solvabiliteit','Rentabiliteit als kengetal'],
+   sam:'<strong>Balans</strong>: momentopname. Activa (bezittingen) = Passiva (financiering). EV + VV = Totale activa. <strong>Activa</strong>: vaste activa (gebouwen, machines; langdurig) + vlottende activa (voorraden, debiteuren, kas; kortlopend). <strong>Passiva</strong>: eigen vermogen + vreemd vermogen (lang- en kortlopend). <strong>Winst-en-verliesrekening</strong>: omzet − kosten = winst/verlies over een periode. <strong>Afschrijving</strong> (lineair): (aanschaf − restwaarde) / gebruiksduur per jaar. <strong>Solvabiliteit</strong>: EV/TV × 100% (hoe sterk op lange termijn). <strong>Current ratio</strong>: vlottende activa / kortlopende schulden (≥ 1 is gezond). <strong>Quick ratio</strong>: (vlottende activa − voorraden) / kortlopende schulden (strenger dan current ratio, voorraden zijn minder liquide).',
+   sv:[
+{v:'Wat toont de balans van een onderneming?',o:['Een overzicht van bezittingen (activa) en financiering (passiva) op een bepaald moment','De winst en verlies over een periode','De kasstroom van een bedrijf','De omzet per productcategorie'],c:0,u:'Balans is een momentopname. Activa (bezittingen) = Passiva (financiering). Altijd: eigen vermogen + vreemd vermogen = totale activa.'},
+{v:'Wat is het verschil tussen de current ratio en de quick ratio?',o:['Current ratio: vlottende activa gedeeld door kortlopende schulden. Quick ratio: vlottende activa minus voorraden gedeeld door kortlopende schulden. Quick ratio is strenger.','Ze zijn identiek','Quick ratio omvat ook de vaste activa','Current ratio telt voorraden niet mee'],c:0,u:'Quick ratio is strenger dan current ratio omdat voorraden worden uitgesloten. Voorraden zijn minder snel omzetbaar in geld dan debiteuren of kas.'},
+{v:'Wat meet de solvabiliteit?',o:['Het aandeel eigen vermogen in het totale vermogen: EV gedeeld door TV maal 100 procent','De liquiditeit van het bedrijf op korte termijn','De winstgevendheid per euro omzet','De verhouding schuld gedeeld door winst'],c:0,u:'Hoge solvabiliteit betekent veel eigen vermogen. Minder afhankelijk van crediteuren en sterker op lange termijn.'},
+{v:'Wat is lineaire afschrijving?',o:['De aanschafwaarde minus restwaarde wordt in gelijke jaarlijkse bedragen afgeschreven over de gebruiksduur','Afschrijving die elk jaar groter wordt','Afschrijving op basis van werkelijk gebruik','Directe volledige afschrijving bij aankoop'],c:0,u:'Jaarlijkse afschrijving = (aanschaf min restwaarde) gedeeld door gebruiksduur. De boekwaarde daalt elk jaar met hetzelfde bedrag.'},
+{v:'Wat is het verschil tussen de balans en de winst-en-verliesrekening?',o:['Balans: momentopname van bezittingen en financiering op een bepaald moment. W&V-rekening: overzicht van opbrengsten en kosten over een periode.','Ze zijn hetzelfde document','Balans toont altijd de toekomst','W&V-rekening is een momentopname'],c:0,u:'Balans (statisch): wat bezit het bedrijf en hoe is het gefinancierd op dit moment. W&V-rekening (dynamisch): hoeveel heeft het bedrijf verdiend en uitgegeven in een periode (jaar).'}
+   ],
+   oe:[
+{bron:'HAVO Bedrijfseconomie CE 2023 Tijdvak 2 Balansvraag (geen afbeelding)',ctx:'Balans Bedrijf X per 31 december:\nActiva: Gebouwen 180.000 euro, Inventaris 40.000 euro, Voorraden 25.000 euro, Debiteuren 15.000 euro, Bank 10.000 euro.\nPassiva: Eigen vermogen 120.000 euro, Langlopende lening 100.000 euro, Crediteuren 35.000 euro, Overige kortlopende schulden 15.000 euro.',v:'(a) Controleer of de balans klopt.\n(b) Bereken de solvabiliteit en de current ratio.\n(c) Beoordeel de financiele positie op basis van beide kengetallen.',o:[''],c:0,u:'(a) Activa = 180 + 40 + 25 + 15 + 10 = 270.000 euro. Passiva = 120 + 100 + 35 + 15 = 270.000 euro. De balans klopt.\n(b) Solvabiliteit = 120/270 maal 100% = 44,4%. Current ratio = (25 + 15 + 10) gedeeld door (35 + 15) = 50/50 = 1,0.\n(c) Solvabiliteit 44,4% is redelijk (meer dan 30% is doorgaans acceptabel). Current ratio 1,0 is minimaal acceptabel: juist voldoende vlottende activa voor kortlopende schulden.'},
+{bron:'HAVO Bedrijfseconomie CE 2022 Tijdvak 1 Afschrijvingsvraag (geen afbeelding)',ctx:'Een transportbedrijf koopt een bestelwagen voor 45.000 euro. Verwachte gebruiksduur: 6 jaar. Restwaarde: 9.000 euro. Lineaire afschrijving.',v:'(a) Bereken de jaarlijkse afschrijving.\n(b) Stel de afschrijvingstabel op voor jaar 1 t/m 3 (beginboekwaarde, afschrijving, eindboekwaarde).\n(c) Wat is het effect van afschrijving op de winst-en-verliesrekening?',o:[''],c:0,u:'(a) Jaarlijkse afschrijving = (45.000 min 9.000) gedeeld door 6 = 6.000 euro.\n(b) Jaar 1: 45.000, 6.000, 39.000. Jaar 2: 39.000, 6.000, 33.000. Jaar 3: 33.000, 6.000, 27.000.\n(c) Afschrijving is een kostenpost in de W&V-rekening die de winst verlaagt. Tegelijk daalt de boekwaarde van het activum op de balans.'},
+{bron:'HAVO Bedrijfseconomie CE 2024 Tijdvak 2 Jaarrekening (geen afbeelding)',ctx:'Winst-en-verliesrekening Bedrijf Z over het afgelopen jaar:\nOmzet: 850.000 euro\nInkoopwaarde: 510.000 euro\nBrutowinst: 340.000 euro\nVerkoopkosten: 80.000 euro\nAlgemene kosten: 120.000 euro\nAfschrijvingen: 40.000 euro\nBedrijfsresultaat: 100.000 euro\nFinanciele lasten (rente): 20.000 euro',v:'(a) Bereken de nettowinst voor belasting.\n(b) Bereken de RTV als het totale vermogen 500.000 euro is.\n(c) Leg uit wat het bedrijfsresultaat aangeeft.',o:[''],c:0,u:'(a) Nettowinst voor belasting = bedrijfsresultaat min financiele lasten = 100.000 min 20.000 = 80.000 euro.\n(b) RTV = (nettowinst + rente VV) gedeeld door TV maal 100% = (80.000 + 20.000) gedeeld door 500.000 maal 100% = 20%.\n(c) Het bedrijfsresultaat geeft aan hoeveel winst het bedrijf behaalt uit zijn kernactiviteiten, voor aftrek van financieringskosten (rente). Het laat zien hoe winstgevend de bedrijfsvoering zelf is, onafhankelijk van de financieringsstructuur.'}
+   ]}
+ ]}
+
+];
+
+
+// ═══════ STATE ═══════
+// antwrd entries: {pts: 0|0.5|1}
+let ST = {vak:null,domein:null,mode:null,vragen:[],idx:0,score:0,antwrd:[],timer:null,tijd:15,shuffleMap:[]};
+
+// ═══════ UI HELPERS ═══════
+function show(id){document.querySelectorAll('.sc').forEach(s=>s.classList.remove('on'));document.getElementById(id).classList.add('on');window.scrollTo(0,0)}
+function toggleDark(){
+  const dark=document.documentElement.classList.toggle('dark');
+  localStorage.setItem('theme',dark?'dark':'light');
+  const icon=dark?'☀️':'🌙';
+  document.querySelectorAll('.theme-btn').forEach(b=>b.textContent=icon);
+}
+// Restore saved theme
+(function(){if(localStorage.getItem('theme')==='dark'){document.documentElement.classList.add('dark');document.querySelectorAll('.theme-btn').forEach(b=>b.textContent='☀️');}})();
+function tog(hd){const bd=hd.nextElementSibling;const arr=hd.querySelector('span');bd.classList.toggle('on');arr.textContent=bd.classList.contains('on')?'▲':'▼'}
+
+// ═══════ BUILD SUBJECT GRID ═══════
+function buildGrid(){
+  const g=document.getElementById('vakgrid');
+  VAKKEN.forEach(v=>{
+    const d=document.createElement('div');
+    d.className='card';
+    d.style.setProperty('--card-col',v.kleur);
+    d.innerHTML=`<div class="card-code">${v.code}</div><div class="card-name">${v.naam}</div><div class="card-desc">${v.beschrijving}</div><div class="card-meta">${v.domeinen.length} CE-domeinen</div>`;
+    d.onclick=()=>openVak(v.id);
+    g.appendChild(d);
+  });
+}
+
+// ═══════ OPEN VAK ═══════
+function openVak(id){
+  ST.vak=VAKKEN.find(v=>v.id===id);
+  document.getElementById('dtitle').textContent=ST.vak.naam;
+  document.getElementById('ddesc').textContent=ST.vak.beschrijving;
+  document.getElementById('dce').textContent=ST.vak.ceInfo;
+  const dl=document.getElementById('dlist');
+  dl.innerHTML='';
+  ST.vak.domeinen.forEach(d=>{
+    const el=document.createElement('div');
+    el.className='dc2';
+    el.innerHTML=`
+      <div class="dh" onclick="toggleD('top-${d.id}')">
+        <div class="dlet" style="background:${ST.vak.kleur}22;color:${ST.vak.kleur}">${d.id}</div>
+        <div class="di"><h4>Domein ${d.id}: ${d.naam}</h4><p>${d.beschrijving}</p></div>
+        <div class="dbtns">
+          <button class="exb" id="exb-${d.id}" onclick="event.stopPropagation();toggleD('top-${d.id}')">▼ Leerstof</button>
+          <button class="qb" onclick="event.stopPropagation();openQmode('${d.id}')">▶ Quiz</button>
+        </div>
+      </div>
+      <div class="dtop" id="top-${d.id}">
+        <div class="tlbl">Onderwerpen CE</div>
+        <div class="ttags">${d.onderwerpen.map(o=>`<span class="tt">${o}</span>`).join('')}</div>
+        <div class="tlbl">Samenvatting & formules</div>
+        <div class="sam">${d.sam}</div>
+      </div>`;
+    dl.appendChild(el);
+  });
+  show('sc-detail');
+}
+
+function toggleD(id){
+  const el=document.getElementById(id);
+  el.classList.toggle('on');
+}
+
+// ═══════ QUIZ MODE ═══════
+function openQmode(did){
+  ST.domein=ST.vak.domeinen.find(d=>d.id===did);
+  document.getElementById('qmsub').textContent=`${ST.vak.naam} · Domein ${ST.domein.id}: ${ST.domein.naam}`;
+  show('sc-qmode');
+}
+
+function startQ(mode){
+  ST.mode=mode;
+  ST.idx=0;ST.score=0;ST.antwrd=[];
+  const pool=mode==='snel'?ST.domein.sv:ST.domein.oe;
+  ST.vragen=pool.slice();
+  document.getElementById('qmeta').textContent=`${ST.vak.naam} · D${ST.domein.id}: ${ST.domein.naam} · ${mode==='snel'?'Snelle Quiz':'Oud-examen'}`;
+  show('sc-quiz');
+  toonV();
+}
+
+// ═══════ QUIZ LOGIC ═══════
+function toonV(){
+  const q=ST.vragen[ST.idx];
+  const tot=ST.vragen.length;
+
+  document.getElementById('qctr').textContent=`Vraag ${ST.idx+1} van ${tot}`;
+  document.getElementById('qprog').style.width=`${(ST.idx/tot)*100}%`;
+  document.getElementById('qfb').style.display='none';
+  document.getElementById('qnxt').style.display='none';
+
+  // context tekst
+  const ctx=document.getElementById('qctx');
+  if(q.ctx&&q.ctx!==''){ctx.style.display='block';ctx.textContent=q.ctx;}
+  else{ctx.style.display='none';}
+
+  // vraagstelling
+  document.getElementById('qq').textContent=q.v;
+
+  if(ST.mode==='snel'){
+    // Toon timer, verberg oud-area + bron
+    document.getElementById('qring').style.display='block';
+    document.getElementById('qbron').style.display='none';
+    document.getElementById('oud-area').style.display='none';
+    document.getElementById('snel-area').style.display='grid';
+
+    // Shuffle antwoorden
+    const idxs=[0,1,2,3];
+    for(let i=3;i>0;i--){const j=Math.floor(Math.random()*(i+1));[idxs[i],idxs[j]]=[idxs[j],idxs[i]];}
+    const correctPos=idxs.indexOf(q.c);
+    ST.shuffleMap=idxs;
+
+    const cols=['oA','oB','oC','oD'];
+    const labs=['A','B','C','D'];
+    const area=document.getElementById('snel-area');
+    area.innerHTML='';
+    idxs.forEach((origIdx,pos)=>{
+      const btn=document.createElement('button');
+      btn.className=`opt ${cols[pos]}`;
+      btn.innerHTML=`<span class="oi">${labs[pos]}</span>${q.o[origIdx]}`;
+      btn.dataset.pos=pos;
+      btn.dataset.correct=correctPos;
+      btn.onclick=function(){kies(parseInt(this.dataset.pos),parseInt(this.dataset.correct));};
+      area.appendChild(btn);
+    });
+    startTimer(15);
+
+  } else {
+    // Oud-examen: verberg timer + snel-area
+    clearInterval(ST.timer);
+    document.getElementById('qring').style.display='none';
+    document.getElementById('snel-area').style.display='none';
+    document.getElementById('snel-area').innerHTML='';
+
+    // Toon bronlabel
+    const bron=document.getElementById('qbron');
+    bron.style.display='block';
+    bron.textContent=q.bron||'Oefenvraag · HAVO-stijl';
+
+    // Reset oud-area volledig voor elke nieuwe vraag
+    document.getElementById('oud-area').style.display='block';
+    document.getElementById('oa-input').value='';
+    document.getElementById('oa-input').disabled=false;
+    document.getElementById('nakijk-btn').style.display='block';
+    document.getElementById('nakijk-btn').disabled=false;
+    document.getElementById('model-blok').style.display='none';
+    document.getElementById('ma-text').textContent=q.u;
+    // Heractiveer de beoordelingsknopppen voor elke nieuwe vraag
+    document.querySelectorAll('.assess-btn').forEach(b=>{b.disabled=false;});
+  }
+}
+
+function startTimer(max){
+  clearInterval(ST.timer);
+  ST.tijd=max;
+  const c=document.getElementById('tcirc');
+  const t=document.getElementById('tnum');
+  const circ=2*Math.PI*21;
+  c.style.stroke='var(--or)';
+  c.style.strokeDashoffset='0';
+  t.textContent=max;
+  ST.timer=setInterval(()=>{
+    ST.tijd--;
+    t.textContent=ST.tijd;
+    c.style.strokeDashoffset=circ*(1-ST.tijd/max);
+    if(ST.tijd<=5)c.style.stroke='#F87171';
+    if(ST.tijd<=0){clearInterval(ST.timer);tijdOp();}
+  },1000);
+}
+
+function kies(gekozen,correct){
+  clearInterval(ST.timer);
+  const ok=gekozen===correct;
+  ST.score+=ok?1:0;
+  ST.antwrd.push({pts:ok?1:0});
+  const btns=document.querySelectorAll('#snel-area .opt');
+  btns.forEach((b,i)=>{
+    b.disabled=true;
+    if(i===correct)b.classList.add('correct');
+    else b.classList.add('wrong');
+  });
+  const q=ST.vragen[ST.idx];
+  const fb=document.getElementById('qfb');
+  fb.style.display='block';
+  fb.className=`qfb ${ok?'fbok':'fbno'}`;
+  fb.innerHTML=`<div class="fbt">${ok?'✓ Correct!':'✗ Fout'}</div><div class="fbtx">${q.u}</div>`;
+  const nxt=document.getElementById('qnxt');
+  nxt.style.display='block';
+  nxt.textContent=ST.idx<ST.vragen.length-1?'Volgende →':'Bekijk resultaat →';
+}
+
+function tijdOp(){
+  const q=ST.vragen[ST.idx];
+  ST.antwrd.push({pts:0});
+  const correct=ST.shuffleMap.indexOf(q.c);
+  const btns=document.querySelectorAll('#snel-area .opt');
+  btns.forEach((b,i)=>{b.disabled=true;if(i===correct)b.classList.add('correct');else b.classList.add('wrong');});
+  const fb=document.getElementById('qfb');
+  fb.style.display='block';
+  fb.className='qfb fbtm';
+  fb.innerHTML=`<div class="fbt">⏱ Tijd is om!</div><div class="fbtx">${q.u}</div>`;
+  const nxt=document.getElementById('qnxt');
+  nxt.style.display='block';
+  nxt.textContent=ST.idx<ST.vragen.length-1?'Volgende →':'Bekijk resultaat →';
+}
+
+function nakijken(){
+  document.getElementById('oa-input').disabled=true;
+  document.getElementById('nakijk-btn').style.display='none';
+  document.getElementById('model-blok').style.display='block';
+}
+
+function beoordeel(pts){
+  ST.score+=pts;
+  ST.antwrd.push({pts});
+  document.querySelectorAll('.assess-btn').forEach(b=>b.disabled=true);
+  const colors={1:'#4ADE80',0.5:'#FCD34D',0:'#F87171'};
+  const labels={1:'✓ Goed genoteerd',0.5:'~ Deels goed genoteerd',0:'✗ Fout genoteerd'};
+  const fb=document.getElementById('qfb');
+  fb.style.display='block';
+  fb.className='qfb';
+  fb.innerHTML=`<div class="fbt" style="color:${colors[pts]}">${labels[pts]}</div>`;
+  const nxt=document.getElementById('qnxt');
+  nxt.style.display='block';
+  nxt.textContent=ST.idx<ST.vragen.length-1?'Volgende vraag →':'Bekijk resultaat →';
+}
+
+function nextQ(){
+  ST.idx++;
+  if(ST.idx>=ST.vragen.length)toonRes();
+  else toonV();
+}
+
+function stopQ(){clearInterval(ST.timer);show('sc-detail');}
+
+// ═══════ RESULTS ═══════
+function toonRes(){
+  clearInterval(ST.timer);
+  const tot=ST.vragen.length;
+  const sc=Math.round(ST.score*10)/10;
+  const pct=sc/tot;
+  let emi,tit,sub;
+  if(pct>=0.9){emi='🏆';tit='Uitstekend!';sub='Je beheerst dit domein helemaal goed.';}
+  else if(pct>=0.7){emi='🎉';tit='Goed gedaan!';sub='Je snapt het meeste — kleine herhaling loont.';}
+  else if(pct>=0.5){emi='📖';tit='Aardig begin';sub='De basis zit erin. Oefen dit domein nog eens.';}
+  else{emi='💪';tit='Blijven oefenen!';sub='Dit domein verdient meer aandacht.';}
+  document.getElementById('remi').textContent=emi;
+  document.getElementById('rtit').textContent=tit;
+  document.getElementById('rsub').textContent=sub;
+  document.getElementById('rnum').textContent=sc;
+  document.getElementById('rden').textContent=`van ${tot}`;
+  const circ=2*Math.PI*50;
+  setTimeout(()=>{const c=document.getElementById('scirc');c.style.strokeDashoffset=circ*(1-pct);c.style.transition='stroke-dashoffset 1s ease';},200);
+  let bdHtml='';
+  if(ST.mode==='snel'){
+    const goed=ST.antwrd.filter(a=>a.pts===1).length;
+    const fout=ST.antwrd.filter(a=>a.pts===0).length;
+    bdHtml=`<div class="rbr"><span>✓ Correct</span><span class="rbc">${goed} / ${tot}</span></div>
+      <div class="rbr"><span>✗ Fout of tijd op</span><span class="rbw">${fout}</span></div>
+      <div class="rbr"><span>Score</span><span style="font-weight:600;color:var(--or)">${Math.round(pct*100)}%</span></div>`;
+  } else {
+    const goed=ST.antwrd.filter(a=>a.pts===1).length;
+    const deels=ST.antwrd.filter(a=>a.pts===0.5).length;
+    const fout=ST.antwrd.filter(a=>a.pts===0).length;
+    bdHtml=`<div class="rbr"><span>✓ Goed</span><span class="rbc">${goed}</span></div>
+      <div class="rbr"><span>~ Deels goed</span><span style="color:#FCD34D;font-weight:600">${deels}</span></div>
+      <div class="rbr"><span>✗ Fout</span><span class="rbw">${fout}</span></div>
+      <div class="rbr"><span>Totaalscore</span><span style="font-weight:600;color:var(--or)">${sc} / ${tot} punten</span></div>`;
+  }
+  document.getElementById('rbd').innerHTML=bdHtml;
+  show('sc-res');
+}
+
+function retryQ(){startQ(ST.mode);}
+function switchMode(){show('sc-qmode');}
+
+// ═══════ INIT ═══════
+buildGrid();
+</script>
+</body>
+</html>
