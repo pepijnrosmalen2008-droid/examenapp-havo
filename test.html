@@ -1,4 +1,15 @@
-<!DOCTYPE html><html><body><pre id="out">Loading...</pre><script>
+<!DOCTYPE html>
+<html><head><meta charset="UTF-8"></head>
+<body>
+<h2>VAKKEN Test</h2>
+<pre id="out" style="font-size:16px;padding:20px;">Loading...</pre>
+<script>
+window.onerror = function(msg, url, line, col, error) {
+  document.getElementById('out').textContent = 'ERROR: ' + msg + '\nLine: ' + line + '\nCol: ' + col;
+  return true;
+};
+</script>
+<script>
 const VAKKEN = [
 
 {id:'nl',naam:'Nederlands',code:'NE',kleur:'#E85C0D',
@@ -599,10 +610,15 @@ const VAKKEN = [
  ]}
 
 ];
-
 try {
-  document.getElementById("out").textContent = "Total vakken: " + VAKKEN.length + "\n" + VAKKEN.map(v => v.code + " - " + v.naam + " (" + v.domeinen.length + " domeinen)").join("\n");
+  var msg = 'Total vakken: ' + VAKKEN.length + '\n\n';
+  for (var i = 0; i < VAKKEN.length; i++) {
+    var v = VAKKEN[i];
+    msg += (i+1) + '. ' + v.code + ' - ' + v.naam + ' (' + v.domeinen.length + ' domeinen)\n';
+  }
+  document.getElementById('out').textContent = msg;
 } catch(e) {
-  document.getElementById("out").textContent = "ERROR: " + e.message + " at line " + e.lineNumber;
+  document.getElementById('out').textContent = 'RUNTIME ERROR: ' + e.message;
 }
-</script></body></html>
+</script>
+</body></html>
