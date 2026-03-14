@@ -253,6 +253,55 @@ h1,h2,h3,h4{font-family:'Bricolage Grotesque',sans-serif;line-height:1.15}
 .po-score{font-size:11px;color:var(--mu)}
 .po-reset{font-size:11px;color:var(--mu);cursor:pointer;border:none;background:none;padding:4px 8px;border-radius:4px;transition:.15s;font-family:'Plus Jakarta Sans',sans-serif}
 .po-reset:hover{background:var(--bg2);color:var(--or)}
+
+/* ── FAVORITES STAR ──────────────────────────── */
+.fav-btn{background:none;border:none;font-size:18px;cursor:pointer;padding:2px 4px;transition:transform .15s;line-height:1;flex-shrink:0;filter:grayscale(1) opacity(.35)}
+.fav-btn:hover{transform:scale(1.2);filter:none}
+.fav-btn.active{filter:none}
+.fav-section{margin-bottom:32px}
+.fav-chips{display:flex;flex-wrap:wrap;gap:6px}
+.fav-chip{display:flex;align-items:center;gap:6px;background:var(--s);border:1px solid var(--bo);border-radius:8px;padding:7px 12px;cursor:pointer;transition:.15s;font-size:12px;font-weight:600}
+.fav-chip:hover{border-color:var(--bo2);box-shadow:0 2px 8px rgba(0,0,0,.06);transform:translateY(-1px)}
+.fav-chip-dot{width:6px;height:6px;border-radius:50%;flex-shrink:0}
+.fav-chip-name{color:var(--dk)}
+.fav-chip-sub{color:var(--mu);font-weight:400}
+
+/* ── STREAK BANNER ───────────────────────────── */
+.streak-banner{display:flex;align-items:center;gap:14px;background:var(--s);border:1px solid var(--bo);border-radius:12px;padding:14px 18px;margin-bottom:20px}
+.streak-fire{font-size:28px;line-height:1}
+.streak-info{flex:1}
+.streak-title{font-family:'Bricolage Grotesque',sans-serif;font-size:15px;font-weight:700;color:var(--dk)}
+.streak-sub{font-size:12px;color:var(--mu);margin-top:2px}
+.streak-days{display:flex;gap:3px;margin-top:6px}
+.streak-dot{width:18px;height:18px;border-radius:4px;background:var(--bo);position:relative}
+.streak-dot.active{background:var(--or)}
+.streak-dot.today{outline:2px solid var(--or);outline-offset:1px}
+.streak-dot-label{font-size:8px;color:var(--mu);text-align:center;margin-top:1px}
+.streak-badges{display:flex;gap:6px;flex-shrink:0}
+.badge{width:32px;height:32px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:16px;background:var(--bg2);border:1px solid var(--bo);transition:.15s}
+.badge.earned{background:linear-gradient(135deg,#FEF3C7,#FDE68A);border-color:#F59E0B;box-shadow:0 2px 8px rgba(245,158,11,.25)}
+.badge.unearned{filter:grayscale(1);opacity:.3}
+.badge-tooltip{position:relative}
+.badge-tooltip::after{content:attr(data-tip);position:absolute;bottom:110%;left:50%;transform:translateX(-50%);background:var(--dk);color:var(--bg);font-size:10px;padding:3px 8px;border-radius:4px;white-space:nowrap;opacity:0;pointer-events:none;transition:.15s}
+.badge-tooltip:hover::after{opacity:1}
+
+/* ── REVIEW SCREEN ───────────────────────────── */
+#sc-review{background:var(--dk)}
+.review-wrap{padding:24px 18px;max-width:640px;margin:0 auto}
+.review-wrap h2{font-family:'Bricolage Grotesque',sans-serif;color:#fff;font-size:22px;margin-bottom:4px;letter-spacing:-.5px}
+.review-sub{color:rgba(255,255,255,.4);font-size:13px;margin-bottom:20px}
+.review-card{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.1);border-radius:12px;padding:16px;margin-bottom:10px}
+.rc-head{display:flex;align-items:center;gap:8px;margin-bottom:8px}
+.rc-num{background:rgba(255,255,255,.1);border-radius:6px;padding:2px 8px;font-size:11px;font-weight:700;color:rgba(255,255,255,.5)}
+.rc-status{font-size:12px;font-weight:700;margin-left:auto}
+.rc-ok{color:#4ADE80}
+.rc-half{color:#FCD34D}
+.rc-wrong{color:#F87171}
+.rc-q{font-family:'Bricolage Grotesque',sans-serif;font-size:14px;font-weight:700;color:#fff;margin-bottom:8px;line-height:1.4}
+.rc-answer{font-size:12px;color:rgba(255,255,255,.55);line-height:1.6;padding:8px 10px;background:rgba(255,255,255,.04);border-radius:8px;margin-bottom:6px}
+.rc-answer strong{color:rgba(255,255,255,.8)}
+.rc-explanation{font-size:12px;color:rgba(255,255,255,.4);line-height:1.6;padding-top:6px;border-top:1px solid rgba(255,255,255,.06)}
+.review-btns{display:flex;gap:8px;flex-direction:column;margin-top:16px}
 </style>
 </head>
 <body>
@@ -287,6 +336,11 @@ h1,h2,h3,h4{font-family:'Bricolage Grotesque',sans-serif;line-height:1.15}
       <div class="cd-box"><div class="cd-val" id="cd-m">--</div><div class="cd-unit">Min</div></div>
       <div class="cd-box"><div class="cd-val" id="cd-s">--</div><div class="cd-unit">Sec</div></div>
     </div>
+  </div>
+  <div id="streak-home"></div>
+  <div id="fav-home" class="fav-section" style="display:none">
+    <p class="sec-label">⭐ Favoriete domeinen</p>
+    <div id="fav-chips" class="fav-chips"></div>
   </div>
   <div class="date-strip">
     <div class="ds-cell"><div class="ds-label">1e tijdvak</div><div class="ds-val">12–30 mei 2026</div><div class="ds-sub">Centraal examen</div></div>
@@ -406,8 +460,23 @@ h1,h2,h3,h4{font-family:'Bricolage Grotesque',sans-serif;line-height:1.15}
   <div class="rbd" id="rbd"></div>
   <div class="rbtns">
     <button class="btnp" onclick="retryQ()">🔄 Opnieuw</button>
+    <button class="btns" onclick="openReview()">📋 Bekijk antwoorden</button>
     <button class="btns" onclick="switchMode()">🔀 Andere modus</button>
     <button class="btns" onclick="show('sc-detail')">← Terug naar domeinen</button>
+    <button class="btns" onclick="show('sc-home')">🏠 Home</button>
+  </div>
+</div>
+</div>
+
+<!-- REVIEW -->
+<div id="sc-review" class="sc">
+<div class="review-wrap">
+  <h2>📋 Antwoorden terugkijken</h2>
+  <p class="review-sub" id="review-sub"></p>
+  <div id="review-list"></div>
+  <div class="review-btns">
+    <button class="btnp" onclick="retryQ()">🔄 Opnieuw proberen</button>
+    <button class="btns" onclick="show('sc-res')">← Terug naar resultaat</button>
     <button class="btns" onclick="show('sc-home')">🏠 Home</button>
   </div>
 </div>
@@ -825,6 +894,7 @@ function openVak(id){
         <div class="dlet" style="background:${ST.vak.kleur}22;color:${ST.vak.kleur}">${d.id}</div>
         <div class="di"><h4>Domein ${d.id}: ${d.naam}</h4><p>${d.beschrijving}</p>${progHtml}</div>
         <div class="dbtns">
+          <button class="fav-btn${isFav(ST.vak.id,d.id)?' active':''}" id="fav-${d.id}" onclick="event.stopPropagation();const on=toggleFav('${ST.vak.id}','${d.id}');this.classList.toggle('active',on)">⭐</button>
           <button class="exb" id="exb-${d.id}" onclick="event.stopPropagation();toggleD('top-${d.id}')">▼ Leerstof</button>
           <button class="qb" onclick="event.stopPropagation();openQmode('${d.id}')">▶ Quiz</button>
         </div>
@@ -955,7 +1025,9 @@ function kies(gekozen,correct){
   clearInterval(ST.timer);
   const ok=gekozen===correct;
   ST.score+=ok?1:0;
-  ST.antwrd.push({pts:ok?1:0});
+  const q=ST.vragen[ST.idx];
+  const chosenOrigIdx=ST.shuffleMap[gekozen];
+  ST.antwrd.push({pts:ok?1:0,chosenText:q.o[chosenOrigIdx]});
   const btns=document.querySelectorAll('#snel-area .opt');
   btns.forEach((b,i)=>{
     b.disabled=true;
@@ -974,7 +1046,7 @@ function kies(gekozen,correct){
 
 function tijdOp(){
   const q=ST.vragen[ST.idx];
-  ST.antwrd.push({pts:0});
+  ST.antwrd.push({pts:0,chosenText:'⏱ Tijd was op'});
   const correct=ST.shuffleMap.indexOf(q.c);
   const btns=document.querySelectorAll('#snel-area .opt');
   btns.forEach((b,i)=>{b.disabled=true;if(i===correct)b.classList.add('correct');else b.classList.add('wrong');});
@@ -995,7 +1067,8 @@ function nakijken(){
 
 function beoordeel(pts){
   ST.score+=pts;
-  ST.antwrd.push({pts});
+  const userText=document.getElementById('oa-input').value||'(geen antwoord ingevuld)';
+  ST.antwrd.push({pts,userText});
   document.querySelectorAll('.assess-btn').forEach(b=>b.disabled=true);
   const colors={1:'#4ADE80',0.5:'#FCD34D',0:'#F87171'};
   const labels={1:'✓ Goed genoteerd',0.5:'~ Deels goed genoteerd',0:'✗ Fout genoteerd'};
@@ -1022,10 +1095,12 @@ function toonRes(){
   const tot=ST.vragen.length;
   const sc=Math.round(ST.score*10)/10;
   const pct=sc/tot;
-  // Save progress
+  // Save progress & streak
   saveProgress(ST.vak.id,ST.domein.id,ST.mode,sc,tot);
-  // Rebuild grid to update progress bars
+  recordPractice();
+  // Rebuild grid and streak to update UI
   const g=document.getElementById('vakgrid');g.innerHTML='';buildGrid();
+  renderStreak();renderFavHome();
   let emi,tit,sub;
   if(pct>=0.9){emi='🏆';tit='Uitstekend!';sub='Je beheerst dit domein helemaal goed.';}
   else if(pct>=0.7){emi='🎉';tit='Goed gedaan!';sub='Je snapt het meeste — kleine herhaling loont.';}
@@ -1146,7 +1221,154 @@ function resetVakProgress(){
   openVak(ST.vak.id);
 }
 
+// ═══════ FAVORITES ═══════
+function getFavs(){
+  try{return JSON.parse(localStorage.getItem('examenapp_favs')||'[]');}
+  catch(e){return [];}
+}
+function toggleFav(vakId,domeinId){
+  let favs=getFavs();
+  const key=`${vakId}_${domeinId}`;
+  const idx=favs.indexOf(key);
+  if(idx>=0)favs.splice(idx,1);else favs.push(key);
+  localStorage.setItem('examenapp_favs',JSON.stringify(favs));
+  renderFavHome();
+  return favs.includes(key);
+}
+function isFav(vakId,domeinId){return getFavs().includes(`${vakId}_${domeinId}`);}
+function renderFavHome(){
+  const favs=getFavs();
+  const box=document.getElementById('fav-home');
+  const chips=document.getElementById('fav-chips');
+  if(!favs.length){box.style.display='none';return;}
+  box.style.display='block';
+  chips.innerHTML='';
+  favs.forEach(key=>{
+    const [vakId,domId]=key.split('_');
+    const vak=VAKKEN.find(v=>v.id===vakId);
+    if(!vak)return;
+    const dom=vak.domeinen.find(d=>d.id===domId);
+    if(!dom)return;
+    const chip=document.createElement('div');
+    chip.className='fav-chip';
+    chip.innerHTML=`<span class="fav-chip-dot" style="background:${vak.kleur}"></span><span class="fav-chip-name">${vak.code} · ${dom.naam}</span>`;
+    chip.onclick=()=>{openVak(vakId);};
+    chips.appendChild(chip);
+  });
+}
+
+// ═══════ STREAK & BADGES ═══════
+function getStreak(){
+  try{return JSON.parse(localStorage.getItem('examenapp_streak')||'{}');}
+  catch(e){return {};}
+}
+function recordPractice(){
+  const s=getStreak();
+  const today=new Date().toISOString().slice(0,10);
+  if(!s.days)s.days=[];
+  if(!s.days.includes(today))s.days.push(today);
+  // Keep only last 60 days
+  const cutoff=new Date();cutoff.setDate(cutoff.getDate()-60);
+  s.days=s.days.filter(d=>new Date(d)>=cutoff);
+  if(!s.totalQuizzes)s.totalQuizzes=0;
+  s.totalQuizzes++;
+  localStorage.setItem('examenapp_streak',JSON.stringify(s));
+}
+function calcStreak(){
+  const s=getStreak();
+  if(!s.days||!s.days.length)return {current:0,longest:0,total:s.totalQuizzes||0,days:[]};
+  const sorted=[...s.days].sort().reverse();
+  let current=0;
+  const today=new Date();today.setHours(0,0,0,0);
+  const check=new Date(today);
+  // Check if practiced today or yesterday to start streak
+  const todayStr=today.toISOString().slice(0,10);
+  const yesterday=new Date(today);yesterday.setDate(yesterday.getDate()-1);
+  const yestStr=yesterday.toISOString().slice(0,10);
+  if(!sorted.includes(todayStr)&&!sorted.includes(yestStr))return {current:0,longest:0,total:s.totalQuizzes||0,days:s.days};
+  if(!sorted.includes(todayStr))check.setDate(check.getDate()-1);
+  for(let i=0;i<60;i++){
+    const d=new Date(check);d.setDate(d.getDate()-i);
+    if(sorted.includes(d.toISOString().slice(0,10)))current++;
+    else break;
+  }
+  return {current,total:s.totalQuizzes||0,days:s.days};
+}
+function renderStreak(){
+  const box=document.getElementById('streak-home');
+  const info=calcStreak();
+  if(info.total===0){box.innerHTML='';return;}
+  // Last 7 days dots
+  let dotsHtml='';
+  const dayLabels=['zo','ma','di','wo','do','vr','za'];
+  for(let i=6;i>=0;i--){
+    const d=new Date();d.setDate(d.getDate()-i);
+    const ds=d.toISOString().slice(0,10);
+    const isActive=info.days.includes(ds);
+    const isToday=i===0;
+    dotsHtml+=`<div style="text-align:center"><div class="streak-dot${isActive?' active':''}${isToday?' today':''}"></div><div class="streak-dot-label">${dayLabels[d.getDay()]}</div></div>`;
+  }
+  // Badges
+  const badges=[
+    {emoji:'🌱',tip:'Eerste quiz',req:info.total>=1},
+    {emoji:'🔥',tip:'3 dagen streak',req:info.current>=3},
+    {emoji:'⚡',tip:'7 dagen streak',req:info.current>=7},
+    {emoji:'🏆',tip:'10+ quizzen',req:info.total>=10}
+  ];
+  let badgeHtml='';
+  badges.forEach(b=>{
+    badgeHtml+=`<div class="badge-tooltip badge ${b.req?'earned':'unearned'}" data-tip="${b.tip}">${b.emoji}</div>`;
+  });
+  box.innerHTML=`<div class="streak-banner">
+    <div class="streak-fire">${info.current>=3?'🔥':'📚'}</div>
+    <div class="streak-info">
+      <div class="streak-title">${info.current>0?info.current+' dag'+(info.current>1?'en':'')+' streak!':'Oefen vandaag om je streak te starten'}</div>
+      <div class="streak-sub">${info.total} quiz${info.total!==1?'zen':''} gemaakt</div>
+      <div class="streak-days">${dotsHtml}</div>
+    </div>
+    <div class="streak-badges">${badgeHtml}</div>
+  </div>`;
+}
+
+// ═══════ REVIEW ═══════
+function openReview(){
+  const list=document.getElementById('review-list');
+  list.innerHTML='';
+  document.getElementById('review-sub').textContent=`${ST.vak.naam} · Domein ${ST.domein.id}: ${ST.domein.naam} · ${ST.mode==='snel'?'Snelle Quiz':'Oud-examen'}`;
+  ST.vragen.forEach((q,i)=>{
+    const a=ST.antwrd[i];
+    if(!a)return;
+    let statusClass,statusText;
+    if(a.pts===1){statusClass='rc-ok';statusText='✓ Goed';}
+    else if(a.pts===0.5){statusClass='rc-half';statusText='~ Deels';}
+    else{statusClass='rc-wrong';statusText='✗ Fout';}
+    let answerHtml='';
+    if(ST.mode==='snel'){
+      const correctAns=q.o[q.c];
+      if(a.chosenText){
+        answerHtml=`<div class="rc-answer"><strong>Jouw antwoord:</strong> ${a.chosenText}</div>`;
+      }
+      answerHtml+=`<div class="rc-answer"><strong>Correct:</strong> ${correctAns}</div>`;
+    } else {
+      if(a.userText){
+        answerHtml=`<div class="rc-answer"><strong>Jouw antwoord:</strong> ${a.userText}</div>`;
+      }
+      answerHtml+=`<div class="rc-answer"><strong>Modelantwoord:</strong> ${q.u}</div>`;
+    }
+    list.innerHTML+=`<div class="review-card">
+      <div class="rc-head"><span class="rc-num">Vraag ${i+1}</span><span class="rc-status ${statusClass}">${statusText}</span></div>
+      <div class="rc-q">${q.v}</div>
+      ${q.ctx?'<div style="font-size:12px;color:rgba(255,255,255,.4);margin-bottom:8px;line-height:1.6;padding:6px 8px;background:rgba(255,255,255,.03);border-radius:6px">'+q.ctx.substring(0,200)+(q.ctx.length>200?'...':'')+'</div>':''}
+      ${answerHtml}
+      <div class="rc-explanation">${q.u}</div>
+    </div>`;
+  });
+  show('sc-review');
+}
+
 // ═══════ INIT ═══════
+renderFavHome();
+renderStreak();
 buildGrid();
 </script>
 </body>
