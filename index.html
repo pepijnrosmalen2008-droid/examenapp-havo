@@ -216,6 +216,43 @@ h1,h2,h3,h4{font-family:'Bricolage Grotesque',sans-serif;line-height:1.15}
 .btnp:hover{background:#d14f09}
 .btns{background:rgba(255,255,255,.08);color:#fff;border:none;border-radius:10px;padding:12px;font-size:13px;cursor:pointer;transition:.15s;font-family:'Plus Jakarta Sans',sans-serif}
 .btns:hover{background:rgba(255,255,255,.13)}
+
+/* ── COUNTDOWN ───────────────────────────────── */
+.countdown{background:linear-gradient(135deg,var(--or),#d14f09);border-radius:14px;padding:22px 24px;margin-bottom:32px;color:#fff;display:flex;align-items:center;gap:20px;flex-wrap:wrap}
+.cd-left{flex:1;min-width:180px}
+.cd-label{font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:1px;opacity:.8;margin-bottom:4px}
+.cd-title{font-family:'Bricolage Grotesque',sans-serif;font-size:22px;font-weight:800;letter-spacing:-.5px;line-height:1.2}
+.cd-sub{font-size:12px;opacity:.7;margin-top:4px}
+.cd-nums{display:flex;gap:8px}
+.cd-box{background:rgba(0,0,0,.2);border-radius:10px;padding:10px 14px;text-align:center;min-width:60px}
+.cd-val{font-family:'Bricolage Grotesque',sans-serif;font-size:26px;font-weight:800;line-height:1}
+.cd-unit{font-size:10px;text-transform:uppercase;letter-spacing:.5px;opacity:.7;margin-top:3px}
+@media(max-width:580px){.countdown{flex-direction:column;text-align:center;gap:14px}.cd-nums{justify-content:center}}
+
+/* ── PROGRESS BADGE ON CARDS ─────────────────── */
+.card-progress{display:flex;align-items:center;gap:6px;margin-top:10px}
+.cp-bar{flex:1;height:5px;border-radius:3px;background:var(--bo);overflow:hidden}
+.cp-fill{height:100%;border-radius:3px;background:var(--or);transition:width .4s}
+.cp-pct{font-size:11px;font-weight:600;color:var(--or);min-width:32px;text-align:right}
+.card-progress.no-data .cp-pct{color:var(--mu)}
+
+/* ── PROGRESS ON DETAIL DOMAINS ──────────────── */
+.dom-progress{display:flex;align-items:center;gap:6px;margin-top:4px}
+.dp-bar{flex:1;height:4px;border-radius:2px;background:var(--bo);overflow:hidden;max-width:80px}
+.dp-fill{height:100%;border-radius:2px;background:var(--or);transition:width .4s}
+.dp-txt{font-size:10px;color:var(--mu);font-weight:600}
+
+/* ── PROGRESS OVERVIEW ON DETAIL ─────────────── */
+.progress-overview{border:1px solid var(--bo);border-radius:12px;padding:16px 18px;margin-bottom:20px;background:var(--s)}
+.po-title{font-family:'Bricolage Grotesque',sans-serif;font-size:14px;font-weight:700;margin-bottom:10px;display:flex;align-items:center;gap:6px}
+.po-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(140px,1fr));gap:8px}
+.po-item{display:flex;align-items:center;gap:8px;padding:8px 10px;border-radius:8px;background:var(--bg2)}
+.po-letter{width:28px;height:28px;border-radius:6px;display:flex;align-items:center;justify-content:center;font-family:'Bricolage Grotesque',sans-serif;font-weight:800;font-size:13px;flex-shrink:0}
+.po-info{flex:1;min-width:0}
+.po-name{font-size:12px;font-weight:600;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.po-score{font-size:11px;color:var(--mu)}
+.po-reset{font-size:11px;color:var(--mu);cursor:pointer;border:none;background:none;padding:4px 8px;border-radius:4px;transition:.15s;font-family:'Plus Jakarta Sans',sans-serif}
+.po-reset:hover{background:var(--bg2);color:var(--or)}
 </style>
 </head>
 <body>
@@ -237,6 +274,19 @@ h1,h2,h3,h4{font-family:'Bricolage Grotesque',sans-serif;line-height:1.15}
     <div class="hero-badge">Eindexamen 2026</div>
     <h1>Oefen slim.<br>Slaag voor je <em>eindexamen</em>.</h1>
     <p class="hero-sub">Alle CE-domeinen, officiële syllabus, snelle quiz en open examenvragen — volledig offline.</p>
+  </div>
+  <div class="countdown" id="countdown">
+    <div class="cd-left">
+      <div class="cd-label">Aftellen naar 1e tijdvak</div>
+      <div class="cd-title" id="cd-title">Nog <span id="cd-days-text">--</span> dagen te gaan</div>
+      <div class="cd-sub">Start: 12 mei 2026</div>
+    </div>
+    <div class="cd-nums">
+      <div class="cd-box"><div class="cd-val" id="cd-d">--</div><div class="cd-unit">Dagen</div></div>
+      <div class="cd-box"><div class="cd-val" id="cd-h">--</div><div class="cd-unit">Uren</div></div>
+      <div class="cd-box"><div class="cd-val" id="cd-m">--</div><div class="cd-unit">Min</div></div>
+      <div class="cd-box"><div class="cd-val" id="cd-s">--</div><div class="cd-unit">Sec</div></div>
+    </div>
   </div>
   <div class="date-strip">
     <div class="ds-cell"><div class="ds-label">1e tijdvak</div><div class="ds-val">12–30 mei 2026</div><div class="ds-sub">Centraal examen</div></div>
@@ -284,6 +334,10 @@ h1,h2,h3,h4{font-family:'Bricolage Grotesque',sans-serif;line-height:1.15}
 </nav>
 <div class="w" style="padding-top:24px">
   <div class="sh"><h2 id="dtitle"></h2><p id="ddesc"></p><div class="ce"><strong>CE 2026:</strong> <span id="dce"></span></div></div>
+  <div class="progress-overview" id="progress-overview" style="display:none">
+    <div class="po-title">📊 Jouw voortgang <button class="po-reset" id="reset-progress" onclick="resetVakProgress()">Wissen</button></div>
+    <div class="po-grid" id="po-grid"></div>
+  </div>
   <p class="sec-label">Domeinen & syllabus</p>
   <div id="dlist" class="dl"></div>
 </div>
@@ -725,7 +779,11 @@ function buildGrid(){
     const d=document.createElement('div');
     d.className='card';
     d.style.setProperty('--card-col',v.kleur);
-    d.innerHTML=`<div class="card-code">${v.code}</div><div class="card-name">${v.naam}</div><div class="card-desc">${v.beschrijving}</div><div class="card-meta">${v.domeinen.length} CE-domeinen</div>`;
+    const prog=getVakBestPct(v.id);
+    const progHtml=prog.hasData
+      ?`<div class="card-progress"><div class="cp-bar"><div class="cp-fill" style="width:${Math.round(prog.pct*100)}%"></div></div><span class="cp-pct">${Math.round(prog.pct*100)}%</span></div>`
+      :`<div class="card-progress no-data"><div class="cp-bar"><div class="cp-fill" style="width:0%"></div></div><span class="cp-pct">—</span></div>`;
+    d.innerHTML=`<div class="card-code">${v.code}</div><div class="card-name">${v.naam}</div><div class="card-desc">${v.beschrijving}</div><div class="card-meta">${v.domeinen.length} CE-domeinen</div>${progHtml}`;
     d.onclick=()=>openVak(v.id);
     g.appendChild(d);
   });
@@ -737,15 +795,35 @@ function openVak(id){
   document.getElementById('dtitle').textContent=ST.vak.naam;
   document.getElementById('ddesc').textContent=ST.vak.beschrijving;
   document.getElementById('dce').textContent=ST.vak.ceInfo;
+
+  // Progress overview
+  const poGrid=document.getElementById('po-grid');
+  const poBox=document.getElementById('progress-overview');
+  poGrid.innerHTML='';
+  let hasAnyProgress=false;
+  ST.vak.domeinen.forEach(d=>{
+    const r=getDomeinBestPct(ST.vak.id,d.id);
+    if(r.hasData)hasAnyProgress=true;
+    const pctVal=Math.round(r.pct*100);
+    const scoreColor=pctVal>=70?'#4ADE80':pctVal>=50?'#FCD34D':'var(--mu)';
+    poGrid.innerHTML+=`<div class="po-item">
+      <div class="po-letter" style="background:${ST.vak.kleur}22;color:${ST.vak.kleur}">${d.id}</div>
+      <div class="po-info"><div class="po-name">${d.naam}</div><div class="po-score" style="color:${r.hasData?scoreColor:'var(--mu)'}">${r.hasData?pctVal+'% beste score':'Nog niet geoefend'}</div></div>
+    </div>`;
+  });
+  poBox.style.display=hasAnyProgress?'block':'none';
+
   const dl=document.getElementById('dlist');
   dl.innerHTML='';
   ST.vak.domeinen.forEach(d=>{
+    const r=getDomeinBestPct(ST.vak.id,d.id);
+    const progHtml=r.hasData?`<div class="dom-progress"><div class="dp-bar"><div class="dp-fill" style="width:${Math.round(r.pct*100)}%"></div></div><span class="dp-txt">${Math.round(r.pct*100)}%</span></div>`:'';
     const el=document.createElement('div');
     el.className='dc2';
     el.innerHTML=`
       <div class="dh" onclick="toggleD('top-${d.id}')">
         <div class="dlet" style="background:${ST.vak.kleur}22;color:${ST.vak.kleur}">${d.id}</div>
-        <div class="di"><h4>Domein ${d.id}: ${d.naam}</h4><p>${d.beschrijving}</p></div>
+        <div class="di"><h4>Domein ${d.id}: ${d.naam}</h4><p>${d.beschrijving}</p>${progHtml}</div>
         <div class="dbtns">
           <button class="exb" id="exb-${d.id}" onclick="event.stopPropagation();toggleD('top-${d.id}')">▼ Leerstof</button>
           <button class="qb" onclick="event.stopPropagation();openQmode('${d.id}')">▶ Quiz</button>
@@ -944,6 +1022,10 @@ function toonRes(){
   const tot=ST.vragen.length;
   const sc=Math.round(ST.score*10)/10;
   const pct=sc/tot;
+  // Save progress
+  saveProgress(ST.vak.id,ST.domein.id,ST.mode,sc,tot);
+  // Rebuild grid to update progress bars
+  const g=document.getElementById('vakgrid');g.innerHTML='';buildGrid();
   let emi,tit,sub;
   if(pct>=0.9){emi='🏆';tit='Uitstekend!';sub='Je beheerst dit domein helemaal goed.';}
   else if(pct>=0.7){emi='🎉';tit='Goed gedaan!';sub='Je snapt het meeste — kleine herhaling loont.';}
@@ -978,6 +1060,91 @@ function toonRes(){
 
 function retryQ(){startQ(ST.mode);}
 function switchMode(){show('sc-qmode');}
+
+// ═══════ COUNTDOWN ═══════
+function updateCountdown(){
+  const target=new Date('2026-05-12T09:00:00+02:00');
+  const now=new Date();
+  const diff=target-now;
+  if(diff<=0){
+    document.getElementById('cd-title').textContent='Het examen is begonnen!';
+    document.getElementById('cd-d').textContent='0';
+    document.getElementById('cd-h').textContent='0';
+    document.getElementById('cd-m').textContent='0';
+    document.getElementById('cd-s').textContent='0';
+    document.getElementById('cd-days-text').textContent='0';
+    return;
+  }
+  const d=Math.floor(diff/(1000*60*60*24));
+  const h=Math.floor((diff%(1000*60*60*24))/(1000*60*60));
+  const m=Math.floor((diff%(1000*60*60))/(1000*60));
+  const s=Math.floor((diff%(1000*60))/1000);
+  document.getElementById('cd-d').textContent=d;
+  document.getElementById('cd-h').textContent=String(h).padStart(2,'0');
+  document.getElementById('cd-m').textContent=String(m).padStart(2,'0');
+  document.getElementById('cd-s').textContent=String(s).padStart(2,'0');
+  document.getElementById('cd-days-text').textContent=d;
+}
+updateCountdown();
+setInterval(updateCountdown,1000);
+
+// ═══════ PROGRESS TRACKING ═══════
+function getProgress(){
+  try{return JSON.parse(localStorage.getItem('examenapp_progress')||'{}');}
+  catch(e){return {};}
+}
+function saveProgress(vakId,domeinId,mode,score,total){
+  const p=getProgress();
+  const key=`${vakId}_${domeinId}_${mode}`;
+  if(!p[key])p[key]={best:0,total:total,attempts:0};
+  p[key].attempts++;
+  if(score>p[key].best)p[key].best=score;
+  p[key].total=total;
+  localStorage.setItem('examenapp_progress',JSON.stringify(p));
+}
+function getVakProgress(vakId){
+  const p=getProgress();
+  const results={};
+  Object.keys(p).forEach(key=>{
+    if(key.startsWith(vakId+'_')){
+      results[key]=p[key];
+    }
+  });
+  return results;
+}
+function getDomeinBestPct(vakId,domeinId){
+  const p=getProgress();
+  let bestPct=0;
+  let hasData=false;
+  ['snel','oud'].forEach(mode=>{
+    const key=`${vakId}_${domeinId}_${mode}`;
+    if(p[key]&&p[key].total>0){
+      hasData=true;
+      const pct=p[key].best/p[key].total;
+      if(pct>bestPct)bestPct=pct;
+    }
+  });
+  return {pct:bestPct,hasData};
+}
+function getVakBestPct(vakId){
+  const vak=VAKKEN.find(v=>v.id===vakId);
+  if(!vak)return {pct:0,hasData:false};
+  let totalPct=0;let count=0;let hasAny=false;
+  vak.domeinen.forEach(d=>{
+    const r=getDomeinBestPct(vakId,d.id);
+    if(r.hasData){hasAny=true;totalPct+=r.pct;count++;}
+  });
+  return {pct:count>0?totalPct/count:0,hasData:hasAny};
+}
+function resetVakProgress(){
+  if(!ST.vak)return;
+  const p=getProgress();
+  Object.keys(p).forEach(key=>{
+    if(key.startsWith(ST.vak.id+'_'))delete p[key];
+  });
+  localStorage.setItem('examenapp_progress',JSON.stringify(p));
+  openVak(ST.vak.id);
+}
 
 // ═══════ INIT ═══════
 buildGrid();
