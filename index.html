@@ -451,6 +451,260 @@ h1,h2,h3,h4{font-family:var(--font-head);line-height:1.2;letter-spacing:-.3px}
 .yt-link{display:inline-flex;align-items:center;gap:8px;font-size:13px;font-weight:700;color:#FF0000;text-decoration:none;padding:7px 14px;border-radius:10px;background:rgba(255,0,0,.06);margin-top:10px;transition:all .2s}
 .yt-link:hover{background:rgba(255,0,0,.12);transform:translateY(-1px)}
 
+/* ── MOBILE BOTTOM NAV ────────────────────────── */
+.bottom-nav{display:none;position:fixed;bottom:0;left:0;right:0;background:var(--nav-bg);backdrop-filter:blur(16px);border-top:1px solid var(--bo);z-index:200;padding:6px 0 env(safe-area-inset-bottom,8px);box-shadow:0 -2px 16px rgba(0,0,0,.06)}
+.bottom-nav-inner{display:flex;justify-content:space-around;align-items:center;max-width:480px;margin:0 auto}
+.bnav-btn{display:flex;flex-direction:column;align-items:center;gap:3px;background:none;border:none;color:var(--mu);font-size:10px;font-weight:600;cursor:pointer;padding:6px 12px;border-radius:10px;transition:all .2s;font-family:var(--font);-webkit-tap-highlight-color:transparent}
+.bnav-btn .bnav-icon{font-size:22px;line-height:1}
+.bnav-btn.active{color:var(--or)}
+.bnav-btn:active{transform:scale(0.92)}
+
+/* ── MOBILE RESPONSIVE ───────────────────────── */
+@media(max-width:640px){
+  /* Bottom nav visible, top nav buttons hidden */
+  .bottom-nav{display:block}
+  body{padding-bottom:72px}
+  .nav-btn{display:none!important}
+  .nav-chip{display:none}
+  .nav{height:52px;box-shadow:0 1px 8px rgba(0,0,0,.03)}
+  .nav-inner{gap:8px;padding:0 16px}
+  .logo{font-size:16px;gap:6px}
+  .logo-dot{width:8px;height:8px}
+  .theme-btn{width:36px;height:36px;font-size:15px;border-radius:8px}
+
+  /* Wrapper */
+  .w{padding:0 16px}
+
+  /* Hero */
+  .hero{padding:36px 0 28px}
+  .hero-badge{font-size:12px;padding:5px 12px;margin-bottom:16px}
+  .hero h1{font-size:28px;letter-spacing:-1px;margin-bottom:12px}
+  .hero-sub{font-size:14px;margin-bottom:28px}
+
+  /* Countdown */
+  .countdown{border-radius:14px;padding:18px 16px;margin-bottom:24px;gap:12px}
+  .cd-label{font-size:10px}
+  .cd-title{font-size:19px}
+  .cd-sub{font-size:11px}
+  .cd-nums{gap:6px}
+  .cd-box{border-radius:10px;padding:8px 10px;min-width:52px}
+  .cd-val{font-size:22px}
+  .cd-unit{font-size:9px}
+
+  /* Date strip */
+  .date-strip{margin-bottom:28px;border-radius:14px}
+  .ds-cell{padding:14px 16px}
+  .ds-val{font-size:14px}
+
+  /* Section labels */
+  .sec-label{font-size:11px;margin-bottom:14px}
+
+  /* Cards */
+  .sg{gap:10px;margin-bottom:36px}
+  .card{padding:18px 18px 16px;border-radius:14px}
+  .card-code{font-size:20px;margin-bottom:6px}
+  .card-name{font-size:15px;margin-bottom:4px}
+  .card-desc{font-size:12px;margin-bottom:8px}
+
+  /* Streak */
+  .streak-banner{padding:14px 16px;border-radius:14px;gap:12px;margin-bottom:18px}
+  .streak-fire{font-size:26px}
+  .streak-title{font-size:15px}
+  .streak-sub{font-size:12px}
+
+  /* Pomodoro */
+  .pomo{padding:18px 16px;border-radius:14px;margin-bottom:20px}
+  .pomo-time{font-size:42px}
+  .pomo-btns{gap:8px}
+  .pomo-btn{padding:8px 16px;font-size:12px}
+
+  /* Favs */
+  .fav-section{margin-bottom:24px}
+  .fav-chips{gap:6px}
+  .fav-chip{padding:7px 10px;font-size:12px;border-radius:8px}
+
+  /* Info boxes */
+  .ibox{border-radius:14px;margin-bottom:10px}
+  .ihd{padding:14px 16px}
+  .ihd h3{font-size:15px}
+  .ibd{padding:0 16px 16px;font-size:13px}
+  .ir{font-size:13px;padding:8px 0;flex-wrap:wrap;gap:4px}
+
+  /* Detail */
+  .sh{padding:20px 18px;border-radius:14px;margin-bottom:18px}
+  .sh h2{font-size:22px}
+  .sh p{font-size:13px}
+  .ce{padding:10px 14px;font-size:12px;border-radius:8px}
+  .dl{gap:8px;margin-bottom:28px}
+  .dc2{border-radius:14px}
+  .dh{padding:14px 16px;gap:10px}
+  .dlet{width:34px;height:34px;font-size:14px;border-radius:8px}
+  .di h4{font-size:14px}
+  .di p{font-size:11px}
+  .dbtns{gap:5px}
+  .exb{padding:5px 10px;font-size:11px;border-radius:6px}
+  .qb{padding:7px 12px;font-size:12px;border-radius:8px}
+  .dtop{padding:0 16px 16px}
+  .ttags{gap:5px}
+  .tt{padding:4px 10px;font-size:11px}
+  .sam{padding:12px 14px;font-size:12px;border-radius:10px}
+  .exam-meta{gap:6px;margin-top:10px}
+  .em-chip{font-size:11px;padding:4px 10px}
+
+  /* Progress overview */
+  .progress-overview{padding:14px 16px;border-radius:14px;margin-bottom:18px}
+  .po-title{font-size:14px}
+  .po-grid{grid-template-columns:1fr;gap:6px}
+  .po-item{padding:8px 10px}
+
+  /* Quiz mode select */
+  .qmw{padding:28px 16px}
+  .qmw h2{font-size:22px}
+  .qmsub{font-size:13px;margin-bottom:22px}
+  .qmcd{padding:20px 16px;border-radius:14px}
+  .qmci{font-size:26px;margin-bottom:8px}
+  .qmcd h3{font-size:16px}
+  .qmcd p{font-size:12px}
+  .pill{font-size:11px;padding:3px 10px}
+
+  /* Quiz */
+  .qtb{padding:10px 14px 0}
+  .ql{font-size:15px}
+  .qstp{padding:6px 10px;font-size:12px}
+  .qpb{margin:10px 14px 8px}
+  .qbody{padding:18px 14px 24px;border-radius:18px;margin:10px 8px 0}
+  .qctr{font-size:12px;margin-bottom:6px}
+  .qctx{padding:12px 14px;font-size:13px;border-radius:10px;margin-bottom:14px}
+  .qq{font-size:17px;margin-bottom:20px}
+  .qopts{gap:8px;margin-bottom:14px}
+  .opt{padding:16px;font-size:15px;border-radius:12px;gap:8px}
+  .oi{width:24px;height:24px;font-size:12px;border-radius:6px}
+  .qfb{padding:12px 14px;border-radius:12px;margin-bottom:12px}
+  .fbt{font-size:14px}
+  .fbtx{font-size:12px}
+  .nxt{padding:16px;font-size:15px;border-radius:12px}
+  .qring{width:48px;height:48px}
+  .trn{font-size:15px}
+
+  /* Open questions */
+  .open-input{min-height:100px;padding:14px;font-size:14px;border-radius:12px}
+  .nakijk-btn{padding:14px;font-size:14px;border-radius:12px}
+  .model-antwoord{padding:14px 16px;border-radius:12px}
+  .ma-text{font-size:13px}
+  .assess-btns{gap:8px;margin-bottom:12px}
+  .assess-btn{padding:12px 6px;border-radius:12px;font-size:13px}
+  .ab-icon{font-size:18px}
+
+  /* Results */
+  .rb{padding:32px 16px}
+  .remi{font-size:48px;margin-bottom:12px}
+  .rb h2{font-size:26px;margin-bottom:8px}
+  .rb>p{font-size:13px;margin-bottom:20px}
+  .sring{width:110px;height:110px;margin-bottom:24px}
+  .srn{font-size:30px}
+  .rbd{padding:16px;border-radius:14px;margin-bottom:18px}
+  .rbr{font-size:13px;padding:7px 0}
+  .rbtns{gap:8px}
+  .btnp{padding:15px;font-size:15px;border-radius:12px}
+  .btns{padding:13px;font-size:13px;border-radius:12px}
+
+  /* Review */
+  .review-wrap{padding:24px 16px}
+  .review-wrap h2{font-size:22px}
+  .review-sub{font-size:13px;margin-bottom:18px}
+  .review-card{padding:16px;border-radius:14px;margin-bottom:10px}
+  .rc-q{font-size:14px}
+  .rc-answer{font-size:12px;padding:8px 10px;border-radius:8px}
+  .review-btns{gap:8px;margin-top:14px}
+
+  /* Schedule */
+  .sch-card{padding:14px 16px;border-radius:14px;gap:8px}
+  .sch-date{font-size:13px}
+  .sch-time{font-size:12px;min-width:auto}
+  .sch-name{font-size:14px}
+  .sch-dur{font-size:11px;padding:3px 8px}
+  .sch-cd{font-size:12px;min-width:auto}
+  .sch-filter{margin-bottom:16px}
+  .sch-filter label{font-size:13px}
+
+  /* Calculator */
+  .calc-tabs{border-radius:12px;padding:4px;margin-bottom:20px;gap:3px}
+  .calc-tab{padding:8px 12px;font-size:12px;border-radius:8px}
+  .calc-row{padding:8px 0;gap:10px}
+  .calc-label{font-size:13px}
+  .calc-input{width:68px;padding:8px 10px;font-size:14px;border-radius:8px}
+  .calc-btn{padding:14px;font-size:15px;border-radius:12px}
+  .calc-result{padding:18px;border-radius:14px;margin-top:16px}
+  .calc-result h3{font-size:20px}
+  .calc-result p{font-size:13px}
+  .calc-result-icon{font-size:44px;margin-bottom:8px}
+  .calc-detail{font-size:12px}
+
+  /* Flashcards */
+  .fc-card{max-width:100%;height:200px;margin-bottom:18px}
+  .fc-front,.fc-back{padding:20px;border-radius:14px}
+  .fc-front{font-size:17px}
+  .fc-back{font-size:13px}
+  .fc-btns{gap:10px;margin-top:14px}
+  .fc-btn{padding:12px 22px;font-size:14px;border-radius:10px}
+  .fc-progress{font-size:12px;margin-bottom:14px}
+
+  /* Footer */
+  .site-footer{margin-top:32px;padding:20px 0 28px;font-size:12px;margin-bottom:8px}
+
+  /* Cookie banner */
+  .cookie-banner{padding:14px 16px;bottom:0}
+  .cookie-inner{gap:12px}
+  .cookie-text{font-size:13px;min-width:auto}
+  .cookie-btns{width:100%;justify-content:stretch}
+  .cookie-btn{flex:1;padding:10px 14px;font-size:13px;text-align:center;border-radius:10px}
+
+  /* Privacy */
+  .privacy-content{padding-top:24px}
+  .privacy-content h2{font-size:24px}
+  .privacy-content h3{font-size:16px;margin-top:24px}
+  .privacy-content p,.privacy-content li{font-size:14px}
+
+  /* Welcome */
+  .welcome-hero{padding:36px 0 28px}
+  .welcome-hero h1{font-size:28px;letter-spacing:-1px;margin-bottom:14px}
+  .welcome-hero .hero-sub{font-size:14px}
+  .welcome-info{gap:8px;margin-bottom:28px}
+  .wi-card{padding:14px 16px;border-radius:12px}
+  .wi-val{font-size:14px}
+  .level-title{margin-bottom:14px;font-size:11px}
+  .level-grid{gap:10px;margin-bottom:36px}
+  .level-card{padding:22px 18px;border-radius:14px}
+  .level-icon{font-size:28px;margin-bottom:10px}
+  .level-card h3{font-size:20px;margin-bottom:4px}
+  .level-card p{font-size:13px;margin-bottom:10px}
+  .level-arrow{bottom:18px;right:18px;font-size:18px}
+  .footer-text{font-size:12px;padding:16px 0 28px}
+
+  /* Ads kleiner op mobiel */
+  .ad-wrapper{margin:16px 0}
+  .ad-slot{max-width:100%;min-height:50px}
+}
+
+/* Extra small phones (≤375px like iPhone SE) */
+@media(max-width:375px){
+  .hero h1,.welcome-hero h1{font-size:24px}
+  .hero-sub,.welcome-hero .hero-sub{font-size:13px}
+  .cd-title{font-size:17px}
+  .cd-box{padding:6px 8px;min-width:46px}
+  .cd-val{font-size:20px}
+  .card-code{font-size:18px}
+  .card-name{font-size:14px}
+  .qq{font-size:15px}
+  .opt{padding:14px;font-size:14px}
+  .qmw h2{font-size:20px}
+  .rb h2{font-size:22px}
+  .sring{width:100px;height:100px}
+  .srn{font-size:26px}
+  .calc-tab{padding:7px 10px;font-size:11px}
+  .level-card h3{font-size:18px}
+}
+
 /* ── SUBTLE ANIMATIONS ───────────────────────── */
 @keyframes pulseGlow { 0%,100%{box-shadow:0 4px 15px rgba(232,92,13,0.3)} 50%{box-shadow:0 4px 25px rgba(232,92,13,0.5)} }
 .opt:active:not(:disabled){transform:scale(0.97)!important;transition:transform .1s}
@@ -2409,6 +2663,37 @@ buildSlaagInputs();
 // Push initial ads op home (na kleine vertraging zodat AdSense geladen is)
 setTimeout(()=>{tryPushAds('sc-home');},1500);
 // Show welcome on first load (sc-welcome is default via class="on")
+// ═══════ BOTTOM NAV ═══════
+function updateBottomNav(id){
+  document.querySelectorAll('.bnav-btn').forEach(b=>{
+    b.classList.toggle('active',b.dataset.screen===id);
+  });
+  // Hide bottom nav during quiz/flashcard/qmode
+  const hideScreens=['sc-quiz','sc-flash','sc-qmode','sc-welcome'];
+  const bn=document.getElementById('bottom-nav');
+  if(bn) bn.style.display=hideScreens.includes(id)?'none':'';
+}
+// Patch show() to update bottom nav
+const _origShow=show;
+window.show=function(id){_origShow(id);updateBottomNav(id);};
 </script>
+
+<!-- Bottom Navigation (mobile only) -->
+<nav class="bottom-nav" id="bottom-nav">
+  <div class="bottom-nav-inner">
+    <button class="bnav-btn active" data-screen="sc-home" onclick="show('sc-home')">
+      <span class="bnav-icon">🏠</span>Home
+    </button>
+    <button class="bnav-btn" data-screen="sc-schedule" onclick="show('sc-schedule')">
+      <span class="bnav-icon">📅</span>Rooster
+    </button>
+    <button class="bnav-btn" data-screen="sc-calc" onclick="show('sc-calc')">
+      <span class="bnav-icon">🧮</span>Cijfers
+    </button>
+    <button class="bnav-btn" data-screen="sc-info" onclick="show('sc-info')">
+      <span class="bnav-icon">ℹ️</span>Info
+    </button>
+  </div>
+</nav>
 </body>
 </html>
