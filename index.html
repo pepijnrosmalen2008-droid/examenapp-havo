@@ -4,6 +4,7 @@
 <meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>ExamenApp HAVO 2026</title>
 <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,700;12..96,800&family=Plus+Jakarta+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-XXXXXXXXXXXXXXXX" crossorigin="anonymous"></script>
 <style>
 *{box-sizing:border-box;margin:0;padding:0}
 :root{
@@ -40,6 +41,14 @@ h1,h2,h3,h4{font-family:'Bricolage Grotesque',sans-serif;line-height:1.15}
 .bk{color:var(--mu);font-size:13px;cursor:pointer;padding:5px 11px;border-radius:7px;border:1px solid var(--bo);background:var(--s);transition:.15s;font-family:'Plus Jakarta Sans',sans-serif}
 .bk:hover{background:var(--bg2)}
 .hbg{margin-left:auto;padding:3px 10px;border-radius:20px;font-size:11px;font-weight:600;background:#FEF3C7;color:#92400E;letter-spacing:.2px}
+
+/* ── ADS (subtiel) ───────────────────────────── */
+.ad-slot{margin:24px auto;max-width:728px;min-height:90px;display:flex;align-items:center;justify-content:center;border-radius:10px;overflow:hidden;opacity:.85;transition:opacity .3s}
+.ad-slot:hover{opacity:1}
+.ad-slot--banner{min-height:90px}
+.ad-slot--inline{min-height:100px;margin:20px auto}
+.ad-label{display:block;text-align:center;font-size:9px;letter-spacing:.8px;text-transform:uppercase;color:var(--mu);opacity:.5;margin-bottom:4px;font-family:'Plus Jakarta Sans',sans-serif}
+@media(max-width:580px){.ad-slot{min-height:50px;max-width:320px}.ad-slot--banner{min-height:50px}}
 
 /* ── HOME HERO ────────────────────────────────── */
 .hero{padding:52px 0 36px;text-align:center;position:relative}
@@ -502,6 +511,13 @@ h1,h2,h3,h4{font-family:'Bricolage Grotesque',sans-serif;line-height:1.15}
     <div class="ds-cell"><div class="ds-label">2e tijdvak</div><div class="ds-val">16–26 juni 2026</div><div class="ds-sub">Herkansing</div></div>
     <div class="ds-cell"><div class="ds-label">Uitslag</div><div class="ds-val">begin juli 2026</div><div class="ds-sub">Via school & DUO</div></div>
   </div>
+  <!-- Ad: home banner (rustmoment, onder datums) -->
+  <div class="ad-wrapper" id="ad-home">
+    <span class="ad-label">Advertentie</span>
+    <div class="ad-slot ad-slot--banner">
+      <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-XXXXXXXXXXXXXXXX" data-ad-slot="HOME_BANNER_SLOT" data-ad-format="horizontal" data-full-width-responsive="true"></ins>
+    </div>
+  </div>
   <p class="sec-label">Beschikbare vakken</p>
   <div id="vakgrid" class="sg"></div>
 </div>
@@ -530,6 +546,13 @@ h1,h2,h3,h4{font-family:'Bricolage Grotesque',sans-serif;line-height:1.15}
   <div class="ibd"><ul><li><strong>Binas</strong> toegestaan bij SK en NA</li><li><strong>Grafische rekenmachine</strong> bij WI (deel 2)</li><li><strong>Woordenboek</strong> bij talen</li><li>Wees <strong>15 min</strong> voor aanvang aanwezig met geldig ID</li><li>Ziek? Meld vóór aanvang af → 2e tijdvak</li></ul></div></div>
   <div class="ibox"><div class="ihd" onclick="tog(this)"><h3>📚 Profielen HAVO</h3><span>▼</span></div>
   <div class="ibd"><ul><li><strong>C&M:</strong> NE, EN, GS/AK, MA, WA/WB + keuzevakken</li><li><strong>E&M:</strong> NE, EN, EC, WA, MA + keuzevakken</li><li><strong>N&G:</strong> NE, EN, BI, SK/NA, WA/WB + keuzevakken</li><li><strong>N&T:</strong> NE, EN, NA, WB, SK/BI + keuzevakken</li></ul></div></div>
+  <!-- Ad: info pagina (rustmoment, browsen) -->
+  <div class="ad-wrapper" id="ad-info" style="margin-top:20px">
+    <span class="ad-label">Advertentie</span>
+    <div class="ad-slot ad-slot--banner">
+      <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-XXXXXXXXXXXXXXXX" data-ad-slot="INFO_BANNER_SLOT" data-ad-format="auto" data-full-width-responsive="true"></ins>
+    </div>
+  </div>
 </div>
 </div>
 
@@ -548,6 +571,13 @@ h1,h2,h3,h4{font-family:'Bricolage Grotesque',sans-serif;line-height:1.15}
   <div class="progress-overview" id="progress-overview" style="display:none">
     <div class="po-title">📊 Jouw voortgang <button class="po-reset" id="reset-progress" onclick="resetVakProgress()">Wissen</button></div>
     <div class="po-grid" id="po-grid"></div>
+  </div>
+  <!-- Ad: vakpagina (rustmoment, browsen voor quiz) -->
+  <div class="ad-wrapper" id="ad-detail" style="margin-bottom:20px">
+    <span class="ad-label">Advertentie</span>
+    <div class="ad-slot ad-slot--inline">
+      <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-XXXXXXXXXXXXXXXX" data-ad-slot="DETAIL_INLINE_SLOT" data-ad-format="auto" data-full-width-responsive="true"></ins>
+    </div>
   </div>
   <p class="sec-label">Domeinen & syllabus</p>
   <div id="dlist" class="dl"></div>
@@ -616,6 +646,13 @@ h1,h2,h3,h4{font-family:'Bricolage Grotesque',sans-serif;line-height:1.15}
     <div class="srins"><span class="srn" id="rnum">0</span><span class="srd" id="rden"></span></div>
   </div>
   <div class="rbd" id="rbd"></div>
+  <!-- Ad: na quiz resultaat (rustmoment) -->
+  <div class="ad-wrapper" id="ad-results">
+    <span class="ad-label">Advertentie</span>
+    <div class="ad-slot ad-slot--inline">
+      <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-XXXXXXXXXXXXXXXX" data-ad-slot="RESULTS_INLINE_SLOT" data-ad-format="auto" data-full-width-responsive="true"></ins>
+    </div>
+  </div>
   <div class="rbtns">
     <button class="btnp" onclick="retryQ()">🔄 Opnieuw</button>
     <button class="btns" onclick="openReview()">📋 Bekijk antwoorden</button>
@@ -650,6 +687,13 @@ h1,h2,h3,h4{font-family:'Bricolage Grotesque',sans-serif;line-height:1.15}
     <label><input type="checkbox" id="sch-filter-mine" class="sch-check" onchange="renderSchedule()"> Alleen mijn vakken</label>
   </div>
   <div id="schedule-list" class="schedule-list"></div>
+  <!-- Ad: rooster pagina (rustmoment) -->
+  <div class="ad-wrapper" id="ad-schedule" style="margin-top:20px">
+    <span class="ad-label">Advertentie</span>
+    <div class="ad-slot ad-slot--banner">
+      <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-XXXXXXXXXXXXXXXX" data-ad-slot="SCHEDULE_BANNER_SLOT" data-ad-format="auto" data-full-width-responsive="true"></ins>
+    </div>
+  </div>
 </div>
 </div>
 
@@ -706,6 +750,13 @@ h1,h2,h3,h4{font-family:'Bricolage Grotesque',sans-serif;line-height:1.15}
     <div class="calc-row"><span class="calc-label">Nieuw CE-cijfer</span><input type="number" id="herk-ce" class="calc-input" min="1" max="10" step="0.1" placeholder="7.0"></div>
     <button class="calc-btn" onclick="berekenHerk()">Simuleer herkansing →</button>
     <div id="herk-result"></div>
+  </div>
+  <!-- Ad: calculator pagina (rustmoment) -->
+  <div class="ad-wrapper" id="ad-calc" style="margin-top:20px">
+    <span class="ad-label">Advertentie</span>
+    <div class="ad-slot ad-slot--inline">
+      <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-XXXXXXXXXXXXXXXX" data-ad-slot="CALC_INLINE_SLOT" data-ad-format="auto" data-full-width-responsive="true"></ins>
+    </div>
   </div>
 </div>
 </div>
@@ -1374,7 +1425,11 @@ youtubeKanaal:'Math with Menno (225K+)',youtubeUrl:'https://youtube.com/@Mathwit
 let ST = {vak:null,domein:null,mode:null,vragen:[],idx:0,score:0,antwrd:[],timer:null,tijd:15,shuffleMap:[]};
 
 // ═══════ UI HELPERS ═══════
-function show(id){document.querySelectorAll('.sc').forEach(s=>s.classList.remove('on'));document.getElementById(id).classList.add('on');window.scrollTo(0,0)}
+function show(id){document.querySelectorAll('.sc').forEach(s=>s.classList.remove('on'));document.getElementById(id).classList.add('on');window.scrollTo(0,0);tryPushAds(id);}
+// Ads: push ads alleen op rustschermen, nooit tijdens quiz/flashcards
+const AD_SCREENS=['sc-home','sc-info','sc-res','sc-schedule','sc-calc','sc-detail','sc-review'];
+const pushedAds=new Set();
+function tryPushAds(screenId){if(!AD_SCREENS.includes(screenId))return;try{const slots=document.querySelectorAll('#'+screenId+' .adsbygoogle');slots.forEach(s=>{if(!pushedAds.has(s)){pushedAds.add(s);(adsbygoogle=window.adsbygoogle||[]).push({});}});}catch(e){}}
 function toggleDark(){
   const dark=document.documentElement.classList.toggle('dark');
   localStorage.setItem('theme',dark?'dark':'light');
@@ -2186,6 +2241,8 @@ buildGrid();
 renderPomo();
 if(document.getElementById('sc-schedule'))renderSchedule();
 buildSlaagInputs();
+// Push initial ads op home (na kleine vertraging zodat AdSense geladen is)
+setTimeout(()=>{tryPushAds('sc-home');},1500);
 // Show welcome on first load (sc-welcome is default via class="on")
 </script>
 </body>
