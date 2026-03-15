@@ -4,7 +4,7 @@
 <meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>ExamenApp HAVO 2026</title>
 <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,700;12..96,800&family=Plus+Jakarta+Sans:wght@400;500;600&display=swap" rel="stylesheet">
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-XXXXXXXXXXXXXXXX" crossorigin="anonymous"></script>
+<!-- AdSense script wordt dynamisch geladen na cookie-consent -->
 <style>
 *{box-sizing:border-box;margin:0;padding:0}
 :root{
@@ -41,6 +41,36 @@ h1,h2,h3,h4{font-family:'Bricolage Grotesque',sans-serif;line-height:1.15}
 .bk{color:var(--mu);font-size:13px;cursor:pointer;padding:5px 11px;border-radius:7px;border:1px solid var(--bo);background:var(--s);transition:.15s;font-family:'Plus Jakarta Sans',sans-serif}
 .bk:hover{background:var(--bg2)}
 .hbg{margin-left:auto;padding:3px 10px;border-radius:20px;font-size:11px;font-weight:600;background:#FEF3C7;color:#92400E;letter-spacing:.2px}
+
+/* ── FOOTER ──────────────────────────────────── */
+.site-footer{margin-top:40px;padding:24px 0 32px;border-top:1px solid var(--bo);text-align:center;font-size:12px;color:var(--mu);line-height:1.8}
+.site-footer a{color:var(--mu);text-decoration:underline;text-underline-offset:2px;transition:color .15s}
+.site-footer a:hover{color:var(--or)}
+.footer-sep{margin:0 6px;opacity:.4}
+
+/* ── COOKIE CONSENT ─────────────────────────── */
+.cookie-banner{position:fixed;bottom:0;left:0;right:0;background:var(--s);border-top:1px solid var(--bo);padding:16px 20px;z-index:9999;display:none;animation:slideUp .3s ease}
+.cookie-banner.show{display:block}
+@keyframes slideUp{from{transform:translateY(100%)}to{transform:translateY(0)}}
+.cookie-inner{max-width:960px;margin:0 auto;display:flex;align-items:center;gap:16px;flex-wrap:wrap}
+.cookie-text{flex:1;min-width:200px;font-size:13px;color:var(--dk);line-height:1.6}
+.cookie-text a{color:var(--or);text-decoration:underline}
+.cookie-btns{display:flex;gap:8px;flex-shrink:0}
+.cookie-btn{padding:8px 18px;border-radius:8px;font-size:13px;font-weight:600;cursor:pointer;border:1px solid var(--bo);font-family:'Plus Jakarta Sans',sans-serif;transition:.15s}
+.cookie-accept{background:var(--or);color:#fff;border-color:var(--or)}
+.cookie-accept:hover{opacity:.9}
+.cookie-decline{background:var(--s);color:var(--dk)}
+.cookie-decline:hover{background:var(--bg2)}
+
+/* ── PRIVACY PAGE ───────────────────────────── */
+.privacy-content{padding-top:28px;padding-bottom:40px}
+.privacy-content h2{font-size:24px;margin-bottom:6px;letter-spacing:-.5px}
+.privacy-content .privacy-updated{font-size:12px;color:var(--mu);margin-bottom:28px}
+.privacy-content h3{font-size:16px;margin-top:24px;margin-bottom:8px;color:var(--dk)}
+.privacy-content p,.privacy-content li{font-size:14px;color:var(--mu);line-height:1.8}
+.privacy-content ul{padding-left:20px;margin-bottom:12px}
+.privacy-content strong{color:var(--dk)}
+.privacy-content a{color:var(--or);text-decoration:underline}
 
 /* ── ADS (subtiel) ───────────────────────────── */
 .ad-slot{margin:24px auto;max-width:728px;min-height:90px;display:flex;align-items:center;justify-content:center;border-radius:10px;overflow:hidden;opacity:.85;transition:opacity .3s}
@@ -462,7 +492,8 @@ h1,h2,h3,h4{font-family:'Bricolage Grotesque',sans-serif;line-height:1.15}
   </div>
   <div class="footer-text">
     Gemaakt door leerlingen, voor leerlingen.<br>
-    Officiële syllabus: <a href="https://www.examenblad.nl" target="_blank">examenblad.nl</a>
+    Officiële syllabus: <a href="https://www.examenblad.nl" target="_blank" rel="noopener">examenblad.nl</a>
+    <br><a href="#" onclick="event.preventDefault();show('sc-privacy')" style="color:inherit;text-decoration:underline;opacity:.7;font-size:11px">Privacybeleid</a>
   </div>
 </div>
 </div>
@@ -520,6 +551,14 @@ h1,h2,h3,h4{font-family:'Bricolage Grotesque',sans-serif;line-height:1.15}
   </div>
   <p class="sec-label">Beschikbare vakken</p>
   <div id="vakgrid" class="sg"></div>
+  <div class="site-footer">
+    <a href="#" onclick="event.preventDefault();show('sc-privacy')">Privacybeleid</a>
+    <span class="footer-sep">·</span>
+    <a href="#" onclick="event.preventDefault();cookieReset()">Cookie-instellingen</a>
+    <span class="footer-sep">·</span>
+    <a href="https://www.examenblad.nl" target="_blank" rel="noopener">Examenblad.nl</a>
+    <br>© 2026 ExamenApp — Gemaakt door leerlingen, voor leerlingen.
+  </div>
 </div>
 </div>
 
@@ -778,6 +817,84 @@ h1,h2,h3,h4{font-family:'Bricolage Grotesque',sans-serif;line-height:1.15}
   </div>
   <div class="fc-score" id="fc-score"></div>
 </div>
+</div>
+
+<!-- PRIVACY POLICY -->
+<div id="sc-privacy" class="sc">
+<nav class="nav"><div class="nav-inner"><div class="logo" onclick="show('sc-home')"><div class="logo-dot"></div>ExamenApp</div><button class="bk" onclick="show(window._privacyFrom||'sc-home')">← Terug</button><button class="theme-btn" onclick="toggleDark()" title="Nachtmodus" style="margin-left:auto">🌙</button></div></nav>
+<div class="w privacy-content">
+  <h2>Privacybeleid</h2>
+  <p class="privacy-updated">Laatst bijgewerkt: 15 maart 2026</p>
+
+  <h3>1. Wie zijn wij</h3>
+  <p>ExamenApp HAVO 2026 is een gratis educatieve webapplicatie gericht op eindexamenvoorbereiding voor Nederlandse HAVO-leerlingen. De app wordt aangeboden via GitHub Pages.</p>
+
+  <h3>2. Welke gegevens verzamelen wij</h3>
+  <p><strong>Persoonlijke gegevens:</strong> Wij verzamelen géén persoonlijke gegevens zoals naam, e-mailadres of telefoonnummer. Je hoeft geen account aan te maken om de app te gebruiken.</p>
+  <p><strong>Lokale opslag (localStorage):</strong> De app slaat de volgende informatie op in de browser van je eigen apparaat:</p>
+  <ul>
+    <li>Studiestreak en voortgang per vak</li>
+    <li>Favoriete domeinen</li>
+    <li>Geselecteerde vakken ("mijn vakken")</li>
+    <li>Ingevulde cijfers bij de calculator</li>
+    <li>Thema-voorkeur (licht/donker)</li>
+    <li>Cookie-toestemming</li>
+  </ul>
+  <p>Deze gegevens verlaten nooit je apparaat en worden niet naar een server gestuurd.</p>
+
+  <h3>3. Cookies en advertenties</h3>
+  <p>Wij gebruiken <strong>Google AdSense</strong> om advertenties te tonen. Google kan cookies plaatsen op je apparaat om advertenties te personaliseren op basis van je browse-geschiedenis. Dit betreft onder andere:</p>
+  <ul>
+    <li><strong>Functionele cookies:</strong> om je cookiekeuze te onthouden</li>
+    <li><strong>Advertentiecookies (Google):</strong> om relevante advertenties te tonen, zoals het DoubleClick-cookie</li>
+    <li><strong>Analytische cookies (Google):</strong> om anonieme gebruiksstatistieken te verzamelen</li>
+  </ul>
+  <p>Je kunt je advertentievoorkeuren aanpassen via <a href="https://www.google.com/settings/ads" target="_blank" rel="noopener">Google Advertentie-instellingen</a>. Je kunt ook het gebruik van cookies door Google uitschakelen via <a href="https://www.aboutads.info/choices/" target="_blank" rel="noopener">aboutads.info</a>.</p>
+  <p>Als je cookies weigert via onze cookiebanner worden er géén gepersonaliseerde advertenties getoond. Google kan dan nog wel niet-gepersonaliseerde advertenties tonen op basis van de inhoud van de pagina.</p>
+
+  <h3>4. Google AdSense</h3>
+  <p>Wij maken gebruik van Google AdSense, een advertentiedienst van Google LLC ("Google"). Google AdSense maakt gebruik van cookies om advertenties te tonen die relevant zijn voor gebruikers. Het DART-cookie wordt door Google gebruikt om advertenties te tonen op basis van bezoeken aan deze en andere websites. Gebruikers kunnen het DART-cookie uitschakelen via het <a href="https://policies.google.com/technologies/ads" target="_blank" rel="noopener">Google-advertentiebeleid</a>.</p>
+  <p>Derde partijen, waaronder Google, gebruiken cookies om advertenties te tonen op basis van eerdere bezoeken van een gebruiker aan deze of andere websites. Voor meer informatie over hoe Google gegevens gebruikt, zie het <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Privacybeleid van Google</a>.</p>
+
+  <h3>5. Rechtsgrondslag (AVG/GDPR)</h3>
+  <p>Voor het plaatsen van advertentiecookies vragen wij vooraf je <strong>toestemming</strong> via de cookiebanner (art. 6 lid 1 sub a AVG). Je kunt je toestemming op elk moment intrekken door je cookievoorkeuren te wijzigen — klik daarvoor op "Cookie-instellingen" in de footer van de app.</p>
+  <p>De lokale opslag van studiegegevens is gebaseerd op ons <strong>gerechtvaardigd belang</strong> (art. 6 lid 1 sub f AVG): het bieden van een werkende studietool. Deze gegevens verlaten je apparaat niet.</p>
+
+  <h3>6. Bewaartermijn</h3>
+  <p>Lokale gegevens (localStorage) blijven bewaard totdat je ze zelf verwijdert via je browserinstellingen of via de "Wissen"-knoppen in de app. Cookies van Google verlopen conform het <a href="https://policies.google.com/technologies/cookies" target="_blank" rel="noopener">cookiebeleid van Google</a>.</p>
+
+  <h3>7. Jouw rechten</h3>
+  <p>Onder de AVG/GDPR heb je de volgende rechten:</p>
+  <ul>
+    <li><strong>Inzage:</strong> je kunt je lokale gegevens bekijken via je browserinstellingen (DevTools → Application → Local Storage)</li>
+    <li><strong>Verwijdering:</strong> wis je browsergegevens of gebruik de "Wissen"-knoppen in de app</li>
+    <li><strong>Bezwaar:</strong> weiger cookies via de cookiebanner of pas je advertentievoorkeuren aan bij Google</li>
+    <li><strong>Intrekking toestemming:</strong> klik op "Cookie-instellingen" in de footer om je keuze te wijzigen</li>
+  </ul>
+
+  <h3>8. Minderjarigen</h3>
+  <p>Deze app is bedoeld voor leerlingen in het voortgezet onderwijs. Wij verzamelen geen persoonlijke gegevens. Voor het tonen van advertenties aan gebruikers onder de 16 jaar vragen wij toestemming via de cookiebanner. Wij raden minderjarigen aan dit privacybeleid samen met een ouder of verzorger te lezen.</p>
+
+  <h3>9. Wijzigingen</h3>
+  <p>Dit privacybeleid kan worden bijgewerkt. De datum bovenaan geeft de laatste wijziging aan. Bij substantiële wijzigingen tonen wij opnieuw de cookiebanner.</p>
+
+  <h3>10. Contact</h3>
+  <p>Vragen over dit privacybeleid? Neem contact op via het GitHub-repository van deze app of stuur een bericht via school.</p>
+</div>
+</div>
+
+<!-- COOKIE CONSENT BANNER -->
+<div class="cookie-banner" id="cookie-banner">
+  <div class="cookie-inner">
+    <div class="cookie-text">
+      🍪 Wij gebruiken cookies voor advertenties (Google AdSense). Functionele gegevens worden alleen lokaal opgeslagen.
+      <a href="#" onclick="event.preventDefault();show('sc-privacy')">Lees ons privacybeleid</a>
+    </div>
+    <div class="cookie-btns">
+      <button class="cookie-btn cookie-decline" onclick="cookieChoice(false)">Weigeren</button>
+      <button class="cookie-btn cookie-accept" onclick="cookieChoice(true)">Accepteren</button>
+    </div>
+  </div>
 </div>
 
 <script>
@@ -1425,11 +1542,44 @@ youtubeKanaal:'Math with Menno (225K+)',youtubeUrl:'https://youtube.com/@Mathwit
 let ST = {vak:null,domein:null,mode:null,vragen:[],idx:0,score:0,antwrd:[],timer:null,tijd:15,shuffleMap:[]};
 
 // ═══════ UI HELPERS ═══════
-function show(id){document.querySelectorAll('.sc').forEach(s=>s.classList.remove('on'));document.getElementById(id).classList.add('on');window.scrollTo(0,0);tryPushAds(id);}
+function show(id){const prev=document.querySelector('.sc.on');if(id==='sc-privacy'&&prev)window._privacyFrom=prev.id;document.querySelectorAll('.sc').forEach(s=>s.classList.remove('on'));document.getElementById(id).classList.add('on');window.scrollTo(0,0);tryPushAds(id);}
 // Ads: push ads alleen op rustschermen, nooit tijdens quiz/flashcards
+// ═══════ COOKIE CONSENT & ADS ═══════
 const AD_SCREENS=['sc-home','sc-info','sc-res','sc-schedule','sc-calc','sc-detail','sc-review'];
 const pushedAds=new Set();
-function tryPushAds(screenId){if(!AD_SCREENS.includes(screenId))return;try{const slots=document.querySelectorAll('#'+screenId+' .adsbygoogle');slots.forEach(s=>{if(!pushedAds.has(s)){pushedAds.add(s);(adsbygoogle=window.adsbygoogle||[]).push({});}});}catch(e){}}
+function getConsent(){return localStorage.getItem('examenapp_cookie_consent');}
+function cookieChoice(accepted){
+  localStorage.setItem('examenapp_cookie_consent',accepted?'accepted':'declined');
+  document.getElementById('cookie-banner').classList.remove('show');
+  if(accepted){loadAdsScript();tryPushAds(document.querySelector('.sc.on')?.id||'sc-home');}
+  else{hideAllAds();}
+}
+function cookieReset(){
+  localStorage.removeItem('examenapp_cookie_consent');
+  document.getElementById('cookie-banner').classList.add('show');
+}
+function hideAllAds(){document.querySelectorAll('.ad-wrapper').forEach(w=>w.style.display='none');}
+function showAllAds(){document.querySelectorAll('.ad-wrapper').forEach(w=>w.style.display='');}
+function loadAdsScript(){
+  if(document.querySelector('script[src*="adsbygoogle"]'))return;
+  const s=document.createElement('script');s.async=true;
+  s.src='https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-XXXXXXXXXXXXXXXX';
+  s.crossOrigin='anonymous';document.head.appendChild(s);
+}
+function tryPushAds(screenId){
+  if(!AD_SCREENS.includes(screenId))return;
+  if(getConsent()!=='accepted'){hideAllAds();return;}
+  showAllAds();
+  try{const slots=document.querySelectorAll('#'+screenId+' .adsbygoogle');
+  slots.forEach(s=>{if(!pushedAds.has(s)){pushedAds.add(s);(adsbygoogle=window.adsbygoogle||[]).push({});}});}catch(e){}
+}
+// Init cookie consent
+(function(){
+  const c=getConsent();
+  if(!c){setTimeout(()=>{document.getElementById('cookie-banner').classList.add('show');},800);}
+  else if(c==='accepted'){loadAdsScript();}
+  else{hideAllAds();}
+})();
 function toggleDark(){
   const dark=document.documentElement.classList.toggle('dark');
   localStorage.setItem('theme',dark?'dark':'light');
