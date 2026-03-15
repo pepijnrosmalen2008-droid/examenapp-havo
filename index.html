@@ -337,6 +337,74 @@ h1,h2,h3,h4{font-family:'Bricolage Grotesque',sans-serif;line-height:1.15}
 .level-soon{display:inline-block;font-size:10px;font-weight:700;background:var(--bg2);color:var(--mu);padding:3px 10px;border-radius:20px;margin-top:6px;letter-spacing:.3px}
 .footer-text{text-align:center;font-size:12px;color:var(--mu);padding:20px 0 40px;line-height:1.8}
 .footer-text a{color:var(--or);text-decoration:none}
+
+/* ── SCHEDULE SCREEN ───────────────────────────── */
+.schedule-list{display:flex;flex-direction:column;gap:6px;margin-bottom:32px}
+.sch-card{display:flex;align-items:center;gap:14px;background:var(--s);border:1px solid var(--bo);border-radius:12px;padding:14px 18px;transition:.15s}
+.sch-card:hover{border-color:var(--bo2)}
+.sch-card.sch-mine{border-left:3px solid var(--or)}
+.sch-date{font-family:'Bricolage Grotesque',sans-serif;font-weight:700;font-size:13px;min-width:90px;color:var(--dk)}
+.sch-time{font-size:12px;color:var(--mu);min-width:80px}
+.sch-name{font-weight:600;font-size:14px;flex:1}
+.sch-dur{font-size:11px;color:var(--mu);background:var(--bg2);padding:3px 10px;border-radius:20px}
+.sch-cd{font-family:'Bricolage Grotesque',sans-serif;font-size:12px;font-weight:700;color:var(--or);min-width:80px;text-align:right}
+.sch-check{width:18px;height:18px;accent-color:var(--or);cursor:pointer}
+.sch-filter{display:flex;gap:10px;align-items:center;margin-bottom:18px;flex-wrap:wrap}
+.sch-filter label{font-size:13px;font-weight:600;cursor:pointer;display:flex;align-items:center;gap:6px}
+@media(max-width:580px){.sch-card{flex-wrap:wrap;gap:8px}.sch-date{min-width:auto}.sch-cd{min-width:auto;text-align:left}}
+
+/* ── CALCULATOR SCREEN ─────────────────────────── */
+.calc-tabs{display:flex;gap:4px;background:var(--bg2);border-radius:10px;padding:4px;margin-bottom:24px;overflow-x:auto}
+.calc-tab{padding:9px 16px;border-radius:8px;font-size:12px;font-weight:600;cursor:pointer;border:none;background:none;color:var(--mu);white-space:nowrap;font-family:'Plus Jakarta Sans',sans-serif;transition:.15s}
+.calc-tab.active{background:var(--s);color:var(--dk);box-shadow:0 1px 4px rgba(0,0,0,.08)}
+.calc-panel{display:none}.calc-panel.active{display:block}
+.calc-grid{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-bottom:18px}
+@media(max-width:580px){.calc-grid{grid-template-columns:1fr}}
+.calc-row{display:flex;align-items:center;gap:10px;padding:8px 0;border-bottom:1px solid var(--bo)}
+.calc-row:last-child{border:none}
+.calc-label{font-size:13px;flex:1;font-weight:500}
+.calc-input{width:70px;padding:7px 10px;border:1px solid var(--bo);border-radius:8px;font-size:14px;font-family:'Bricolage Grotesque',sans-serif;font-weight:700;text-align:center;background:var(--s);color:var(--dk);transition:.15s}
+.calc-input:focus{outline:none;border-color:var(--or);box-shadow:0 0 0 3px rgba(232,92,13,.12)}
+.calc-btn{width:100%;padding:13px;background:var(--dk);color:#fff;border:none;border-radius:10px;font-family:'Bricolage Grotesque',sans-serif;font-size:15px;font-weight:700;cursor:pointer;transition:.15s;margin-top:8px}
+.calc-btn:hover{opacity:.85}
+.calc-result{background:var(--bg2);border-radius:12px;padding:20px;margin-top:16px;text-align:center}
+.calc-result h3{font-family:'Bricolage Grotesque',sans-serif;font-size:20px;margin-bottom:6px}
+.calc-result p{font-size:13px;color:var(--mu);line-height:1.6}
+.calc-pass{color:#22C55E}.calc-fail{color:#EF4444}.calc-warn{color:#F59E0B}
+.calc-result-icon{font-size:48px;margin-bottom:10px}
+.calc-detail{text-align:left;margin-top:12px;font-size:12px;color:var(--mu);line-height:2}
+.calc-detail .ck{color:#22C55E}.calc-detail .cx{color:#EF4444}
+
+/* ── FLASHCARD MODE ────────────────────────────── */
+.fc-card{perspective:600px;width:100%;max-width:400px;margin:0 auto 20px;cursor:pointer;height:220px}
+.fc-inner{position:relative;width:100%;height:100%;transition:transform .5s;transform-style:preserve-3d}
+.fc-card.flipped .fc-inner{transform:rotateY(180deg)}
+.fc-front,.fc-back{position:absolute;inset:0;backface-visibility:hidden;border-radius:14px;display:flex;align-items:center;justify-content:center;padding:24px;text-align:center;font-size:16px;line-height:1.5}
+.fc-front{background:linear-gradient(135deg,#1a1f2e,#252d3d);color:#fff;font-family:'Bricolage Grotesque',sans-serif;font-weight:700;font-size:18px}
+.fc-back{background:linear-gradient(135deg,#0d2240,#1a3558);color:#C8DFFE;transform:rotateY(180deg);font-size:14px}
+.fc-btns{display:flex;gap:10px;justify-content:center;margin-top:14px}
+.fc-btn{padding:10px 24px;border-radius:10px;border:none;font-size:13px;font-weight:700;cursor:pointer;font-family:'Plus Jakarta Sans',sans-serif}
+.fc-btn.fc-yes{background:#22C55E;color:#fff}
+.fc-btn.fc-no{background:#EF4444;color:#fff}
+.fc-progress{text-align:center;font-size:12px;color:var(--mu);margin-bottom:14px}
+.fc-score{text-align:center;font-size:14px;color:var(--mu);margin-top:10px}
+
+/* ── POMODORO TIMER ────────────────────────────── */
+.pomo{background:var(--s);border:1px solid var(--bo);border-radius:14px;padding:20px;margin-bottom:24px;text-align:center;transition:.15s}
+.pomo-title{font-size:11px;font-weight:700;color:var(--mu);text-transform:uppercase;letter-spacing:.7px;margin-bottom:10px}
+.pomo-time{font-family:'Bricolage Grotesque',sans-serif;font-size:48px;font-weight:800;color:var(--dk);letter-spacing:-2px;margin-bottom:6px}
+.pomo-label{font-size:12px;color:var(--mu);margin-bottom:14px}
+.pomo-btns{display:flex;gap:8px;justify-content:center}
+.pomo-btn{padding:8px 20px;border-radius:8px;border:1px solid var(--bo);background:var(--s);color:var(--dk);font-size:12px;font-weight:600;cursor:pointer;font-family:'Plus Jakarta Sans',sans-serif;transition:.15s}
+.pomo-btn:hover{background:var(--bg2)}
+.pomo-btn.pomo-active{background:var(--or);color:#fff;border-color:var(--or)}
+
+/* ── SUBJECT DETAIL EXTRAS ─────────────────────── */
+.exam-meta{display:flex;gap:8px;flex-wrap:wrap;margin-top:12px}
+.em-chip{font-size:11px;font-weight:600;padding:4px 12px;border-radius:20px;background:var(--bg2);color:var(--mu);display:inline-flex;align-items:center;gap:5px}
+.em-chip.em-date{background:var(--orl);color:var(--or)}
+.yt-link{display:inline-flex;align-items:center;gap:6px;font-size:12px;font-weight:600;color:#FF0000;text-decoration:none;padding:5px 12px;border-radius:8px;background:rgba(255,0,0,.06);margin-top:8px;transition:.15s}
+.yt-link:hover{background:rgba(255,0,0,.12)}
 </style>
 </head>
 <body>
@@ -354,7 +422,7 @@ h1,h2,h3,h4{font-family:'Bricolage Grotesque',sans-serif;line-height:1.15}
   <div class="welcome-hero">
     <div class="hero-badge">Eindexamen 2026</div>
     <h1>Klaar voor je<br><em>eindexamen?</em></h1>
-    <p class="hero-sub">Alle CE-domeinen, samenvattingen, quizzen en open examenvragen — volledig offline, voor elk niveau.</p>
+    <p class="hero-sub">CE-domeinen, samenvattingen, quizzen, cijferberekenaars, examenrooster en flashcards — volledig offline.</p>
   </div>
   <div class="welcome-info">
     <div class="wi-card"><div class="wi-label">1e tijdvak</div><div class="wi-val">12–30 mei 2026</div><div class="wi-sub">Centraal examen</div></div>
@@ -398,7 +466,9 @@ h1,h2,h3,h4{font-family:'Bricolage Grotesque',sans-serif;line-height:1.15}
       <div class="logo-dot"></div>ExamenApp
     </div>
     <span class="nav-chip">HAVO 2026</span>
-    <button class="nav-btn" onclick="show('sc-info')">Exameninfo</button>
+    <button class="nav-btn" onclick="show('sc-schedule')">📅 Rooster</button>
+    <button class="nav-btn" onclick="show('sc-calc')">🧮 Cijfers</button>
+    <button class="nav-btn" onclick="show('sc-info')">ℹ️ Info</button>
     <button class="theme-btn" onclick="toggleDark()" title="Nachtmodus" id="theme-btn-home">🌙</button>
   </div>
 </nav>
@@ -422,12 +492,13 @@ h1,h2,h3,h4{font-family:'Bricolage Grotesque',sans-serif;line-height:1.15}
     </div>
   </div>
   <div id="streak-home"></div>
+  <div id="pomo-home"></div>
   <div id="fav-home" class="fav-section" style="display:none">
     <p class="sec-label">⭐ Favoriete domeinen</p>
     <div id="fav-chips" class="fav-chips"></div>
   </div>
   <div class="date-strip">
-    <div class="ds-cell"><div class="ds-label">1e tijdvak</div><div class="ds-val">12–30 mei 2026</div><div class="ds-sub">Centraal examen</div></div>
+    <div class="ds-cell"><div class="ds-label">1e tijdvak</div><div class="ds-val">8–27 mei 2026</div><div class="ds-sub">Centraal examen</div></div>
     <div class="ds-cell"><div class="ds-label">2e tijdvak</div><div class="ds-val">16–26 juni 2026</div><div class="ds-sub">Herkansing</div></div>
     <div class="ds-cell"><div class="ds-label">Uitslag</div><div class="ds-val">begin juli 2026</div><div class="ds-sub">Via school & DUO</div></div>
   </div>
@@ -448,9 +519,11 @@ h1,h2,h3,h4{font-family:'Bricolage Grotesque',sans-serif;line-height:1.15}
 <div class="w" style="padding-top:28px">
   <h2 style="font-size:22px;margin-bottom:16px">Exameninformatie HAVO 2026</h2>
   <div class="ibox"><div class="ihd" onclick="tog(this)"><h3>📅 Tijdvakken</h3><span>▼</span></div>
-  <div class="ibd"><div class="ir"><span>1e tijdvak</span><strong>12 mei – 30 mei 2026</strong></div><div class="ir"><span>2e tijdvak (herkansing)</span><strong>16 – 26 juni 2026</strong></div><div class="ir"><span>3e tijdvak</span><strong>augustus 2026</strong></div><div class="ir"><span>Uitslag</span><strong>uiterlijk 6 juli 2026</strong></div><p style="margin-top:8px">Exacte datums per vak: <strong>examenblad.nl</strong></p></div></div>
+  <div class="ibd"><div class="ir"><span>1e tijdvak</span><strong>8 mei – 27 mei 2026</strong></div><div class="ir"><span>Normering (N-term)</span><strong>11 juni 2026 om 08:00</strong></div><div class="ir"><span>2e tijdvak (herkansing)</span><strong>16 – 23 juni 2026</strong></div><div class="ir"><span>Uitslag 2e tijdvak</span><strong>30 juni 2026</strong></div><div class="ir"><span>3e tijdvak</span><strong>augustus 2026</strong></div><div class="ir"><span>Aanmelden 2e tijdvak</span><strong>vóór 12 juni 2026</strong></div><p style="margin-top:8px">Exacte datums per vak: <strong>examenblad.nl</strong></p></div></div>
   <div class="ibox"><div class="ihd" onclick="tog(this)"><h3>🎯 Slaagregels HAVO</h3><span>▼</span></div>
-  <div class="ibd"><ul><li>Gemiddeld CE-cijfer ≥ 5,5</li><li>Maximaal één 5 als eindcijfer (niet lager dan 4)</li><li>Nederlands eindcijfer ≥ 5</li><li>Profielwerkstuk: voldoende of goed</li><li>Bij één 5: compenseren met minimaal één 7 in hetzelfde profiel</li></ul></div></div>
+  <div class="ibd"><p style="margin-bottom:8px"><strong>Alle 4 regels moeten tegelijk kloppen:</strong></p><ul><li><strong>Regel 1 — CE-gemiddelde:</strong> het onafgeronde gemiddelde van alle CE-cijfers moet ≥ 5,50 zijn (5,49 = gezakt)</li><li><strong>Regel 2 — Kernvakkenregel:</strong> voor NE, EN en WI (kernvakken) maximaal één 5 toegestaan. C&M zonder wiskunde: alleen NE + EN zijn kernvakken</li><li><strong>Regel 3 — Compensatie:</strong> geen eindcijfer lager dan 4. Bij één 4 of twee 5-en: gemiddelde van alle eindcijfers ≥ 6,0. Bij drie of meer onvoldoendes: gezakt.</li><li><strong>Regel 4 — LO:</strong> Lichamelijke Opvoeding moet voldoende of goed zijn</li></ul><p style="margin-top:10px"><strong>Cum laude:</strong> gemiddelde gemeenschappelijk + profieldeel + hoogste vrij-deel cijfer ≥ 8,0, en geen eindcijfer lager dan 6.</p></div></div>
+  <div class="ibox"><div class="ihd" onclick="tog(this)"><h3>📋 Toegestane hulpmiddelen</h3><span>▼</span></div>
+  <div class="ibd"><p style="margin-bottom:8px"><strong>Standaard basispakket (alle examens):</strong></p><ul><li>Schrijfmateriaal, millimeterpapier, tekenpotlood</li><li>Kleurpotloden (blauw + rood), liniaal, passer, geodriehoek</li><li>Gum, nietmachine, eenvoudige rekenmachine (niet-grafisch)</li><li>Eendelig verklarend woordenboek Nederlands</li></ul><p style="margin-top:10px"><strong>Per vak extra:</strong></p><ul><li><strong>Wiskunde A/B:</strong> Grafische rekenmachine verplicht in examenstand. Toegestaan 2026: Casio fx-CG50, HP Prime G2, TI-84 Plus CE-T, TI-Nspire CX (non-CAS), NumWorks N0110+. Let op: Casio fx-9860GII is niet meer toegestaan!</li><li><strong>Biologie, Natuurkunde, Scheikunde:</strong> BINAS 7e editie OF ScienceData (niet beide). Geen stickers of bladwijzers.</li><li><strong>Moderne vreemde talen:</strong> Tweetalig woordenboek (doeltaal ↔ thuistaal). Engels mag ook eentalig EN-EN. Digitale woordenboeken niet toegestaan.</li><li><strong>Aardrijkskunde:</strong> Geen atlas meer toegestaan (gewijzigd in 2021).</li></ul></div></div>
   <div class="ibox"><div class="ihd" onclick="tog(this)"><h3>🧮 Cijferberekening</h3><span>▼</span></div>
   <div class="ibd"><p>Eindcijfer = gemiddelde van SE en CE (doorgaans 50/50). Beide afzonderlijk afgerond, dan gemiddeld, dan afgerond op geheel getal.</p><div class="ir"><span>Eindcijfer</span><strong>(SE + CE) ÷ 2</strong></div></div></div>
   <div class="ibox"><div class="ihd" onclick="tog(this)"><h3>✏️ Praktische tips</h3><span>▼</span></div>
@@ -491,6 +564,7 @@ h1,h2,h3,h4{font-family:'Bricolage Grotesque',sans-serif;line-height:1.15}
     <div class="qmc">
       <div class="qmcd" onclick="startQ('snel')"><div class="qmci">⚡</div><h3>Snelle Quiz</h3><p>Korte vragen met 15 sec timer. Stamp leerstof in je geheugen.</p><span class="pill ps">⏱ 15 sec · 5 vragen</span></div>
       <div class="qmcd" onclick="startQ('oud')"><div class="qmci">📄</div><h3>Oud-examen stijl</h3><p>Open vragen zoals bij het echte CE. Schrijf je antwoord en beoordeel jezelf.</p><span class="pill po">✍️ Geen timer · 3 vragen</span></div>
+      <div class="qmcd" onclick="startFlash()"><div class="qmci">📇</div><h3>Begrippen oefenen</h3><p>Flashcards: ken jij alle begrippen van dit domein?</p><span class="pill" style="background:rgba(139,92,246,.2);color:#A78BFA">🧠 Flip & leer</span></div>
     </div>
   </div>
 </div>
@@ -566,6 +640,95 @@ h1,h2,h3,h4{font-family:'Bricolage Grotesque',sans-serif;line-height:1.15}
 </div>
 </div>
 
+<!-- SCHEDULE -->
+<div id="sc-schedule" class="sc">
+<nav class="nav"><div class="nav-inner"><div class="logo" onclick="show('sc-home')"><div class="logo-dot"></div>ExamenApp</div><button class="bk" onclick="show('sc-home')">← Terug</button><button class="theme-btn" onclick="toggleDark()" title="Nachtmodus" style="margin-left:auto">🌙</button></div></nav>
+<div class="w" style="padding-top:24px">
+  <h2 style="font-size:22px;margin-bottom:6px">📅 Examenrooster HAVO 2026</h2>
+  <p style="font-size:13px;color:var(--mu);margin-bottom:18px">1e tijdvak: 8–27 mei · Normering: 11 juni 08:00 · 2e tijdvak: 16–23 juni</p>
+  <div class="sch-filter">
+    <label><input type="checkbox" id="sch-filter-mine" class="sch-check" onchange="renderSchedule()"> Alleen mijn vakken</label>
+  </div>
+  <div id="schedule-list" class="schedule-list"></div>
+</div>
+</div>
+
+<!-- CALCULATOR -->
+<div id="sc-calc" class="sc">
+<nav class="nav"><div class="nav-inner"><div class="logo" onclick="show('sc-home')"><div class="logo-dot"></div>ExamenApp</div><button class="bk" onclick="show('sc-home')">← Terug</button><button class="theme-btn" onclick="toggleDark()" title="Nachtmodus" style="margin-left:auto">🌙</button></div></nav>
+<div class="w" style="padding-top:24px">
+  <h2 style="font-size:22px;margin-bottom:4px">🧮 Cijferberekenen</h2>
+  <p style="font-size:13px;color:var(--mu);margin-bottom:18px">Bereken je eindcijfer, check of je slaagt en simuleer een herkansing.</p>
+  <div class="calc-tabs">
+    <button class="calc-tab active" onclick="switchCalc('slaag')">Ga ik slagen?</button>
+    <button class="calc-tab" onclick="switchCalc('eind')">Eindcijfer</button>
+    <button class="calc-tab" onclick="switchCalc('nterm')">N-term</button>
+    <button class="calc-tab" onclick="switchCalc('herk')">Herkansing</button>
+  </div>
+
+  <div id="calc-slaag" class="calc-panel active">
+    <p style="font-size:12px;color:var(--mu);margin-bottom:14px">Vul per vak je SE-cijfer en (verwachte) CE-cijfer in. Selecteer je profiel om de kernvakkenregel correct toe te passen.</p>
+    <div style="margin-bottom:14px">
+      <label style="font-size:12px;font-weight:600;margin-bottom:4px;display:block">Profiel</label>
+      <select id="calc-profiel" style="padding:8px 12px;border:1px solid var(--bo);border-radius:8px;font-size:13px;background:var(--s);color:var(--dk);font-family:'Plus Jakarta Sans',sans-serif;width:100%">
+        <option value="nt">Natuur & Techniek</option>
+        <option value="ng">Natuur & Gezondheid</option>
+        <option value="em" selected>Economie & Maatschappij</option>
+        <option value="cm">Cultuur & Maatschappij</option>
+      </select>
+    </div>
+    <div id="slaag-inputs"></div>
+    <button class="calc-btn" onclick="berekenSlaag()">Check of ik slaag →</button>
+    <div id="slaag-result"></div>
+  </div>
+
+  <div id="calc-eind" class="calc-panel">
+    <p style="font-size:12px;color:var(--mu);margin-bottom:14px">Vul je SE-cijfer en CE-cijfer in om je eindcijfer te berekenen.</p>
+    <div class="calc-row"><span class="calc-label">SE-cijfer</span><input type="number" id="eind-se" class="calc-input" min="1" max="10" step="0.1" placeholder="6.5"></div>
+    <div class="calc-row"><span class="calc-label">CE-cijfer</span><input type="number" id="eind-ce" class="calc-input" min="1" max="10" step="0.1" placeholder="7.0"></div>
+    <button class="calc-btn" onclick="berekenEind()">Bereken eindcijfer →</button>
+    <div id="eind-result"></div>
+  </div>
+
+  <div id="calc-nterm" class="calc-panel">
+    <p style="font-size:12px;color:var(--mu);margin-bottom:14px">Bereken je CE-cijfer met de officiële formule: <strong>C = 9 × (score / max) + N-term</strong></p>
+    <div class="calc-row"><span class="calc-label">Behaalde score</span><input type="number" id="nt-score" class="calc-input" min="0" placeholder="42"></div>
+    <div class="calc-row"><span class="calc-label">Maximale score</span><input type="number" id="nt-max" class="calc-input" min="1" placeholder="80"></div>
+    <div class="calc-row"><span class="calc-label">N-term</span><input type="number" id="nt-n" class="calc-input" min="0" max="5" step="0.1" placeholder="1.0"></div>
+    <button class="calc-btn" onclick="berekenNterm()">Bereken CE-cijfer →</button>
+    <div id="nterm-result"></div>
+  </div>
+
+  <div id="calc-herk" class="calc-panel">
+    <p style="font-size:12px;color:var(--mu);margin-bottom:14px">Simuleer een herkansing: welk cijfer moet je halen om te slagen?</p>
+    <p style="font-size:11px;color:var(--mu);margin-bottom:14px">Vul eerst je cijfers in bij "Ga ik slagen?", dan kun je hier een herkansing simuleren.</p>
+    <div class="calc-row"><span class="calc-label">Herkans welk vak?</span><select id="herk-vak" style="padding:7px 10px;border:1px solid var(--bo);border-radius:8px;font-size:13px;background:var(--s);color:var(--dk);font-family:'Plus Jakarta Sans',sans-serif"></select></div>
+    <div class="calc-row"><span class="calc-label">Nieuw CE-cijfer</span><input type="number" id="herk-ce" class="calc-input" min="1" max="10" step="0.1" placeholder="7.0"></div>
+    <button class="calc-btn" onclick="berekenHerk()">Simuleer herkansing →</button>
+    <div id="herk-result"></div>
+  </div>
+</div>
+</div>
+
+<!-- FLASHCARDS -->
+<div id="sc-flash" class="sc">
+<div class="qtb"><span class="ql">📇</span><span class="qmeta" id="fc-meta"></span><button class="qstp" onclick="show('sc-detail')">✕ Stop</button></div>
+<div class="qbody" style="padding-top:30px">
+  <div class="fc-progress" id="fc-progress"></div>
+  <div class="fc-card" id="fc-card" onclick="flipCard()">
+    <div class="fc-inner">
+      <div class="fc-front" id="fc-front"></div>
+      <div class="fc-back" id="fc-back"></div>
+    </div>
+  </div>
+  <div class="fc-btns" id="fc-btns" style="display:none">
+    <button class="fc-btn fc-no" onclick="fcAnswer(false)">✗ Wist ik niet</button>
+    <button class="fc-btn fc-yes" onclick="fcAnswer(true)">✓ Wist ik</button>
+  </div>
+  <div class="fc-score" id="fc-score"></div>
+</div>
+</div>
+
 <script>
 // ═══════ DATA ═══════
 const VAKKEN = [
@@ -573,6 +736,9 @@ const VAKKEN = [
 {id:'nl',naam:'Nederlands',code:'NE',kleur:'#E85C0D',
  beschrijving:'Leesvaardigheid en literatuur op HAVO-niveau.',
  ceInfo:'CE = leesvaardigheid (domein B) en literatuur (domein F). Schrijfvaardigheid (domein E) telt alleen mee voor het schoolexamen.',
+exDatum:'2026-05-08',exTijd:'13:30–16:30',exDuur:'3 uur',
+hulpmiddelen:'Basispakket + eendelig verklarend woordenboek Nederlands',
+youtubeKanaal:'Arnoud Kuijpers (39K+)',youtubeUrl:'https://youtube.com/@ArnoudKuijpers',
  domeinen:[
   {id:'B',naam:'Leesvaardigheid',beschrijving:'Tekstbegrip, tekststructuur en argumentatieve teksten',
    onderwerpen:['Hoofdgedachte en deelonderwerpen','Signaalwoorden en tekststructuur','Feit en mening','Argumentatiestructuur','Tekstsoorten (betoog, beschouwing, instructie)','Bedoeling en toon van de schrijver'],
@@ -609,6 +775,9 @@ const VAKKEN = [
 {id:'wa',naam:'Wiskunde A',code:'WA',kleur:'#2563EB',
  beschrijving:'Algebra, verbanden en statistiek op HAVO-niveau.',
  ceInfo:'CE = domein B (Algebra en tellen), domein C (Verbanden) en domein E (Statistiek). Kansen is geen CE-domein voor Wiskunde A HAVO.',
+exDatum:'2026-05-19',exTijd:'13:30–16:30',exDuur:'3 uur',
+hulpmiddelen:'Basispakket + grafische rekenmachine (verplicht, examenstand)',
+youtubeKanaal:'Math with Menno (225K+)',youtubeUrl:'https://youtube.com/@MathwithMenno',
  domeinen:[
   {id:'B',naam:'Algebra en tellen',beschrijving:'Rekenen, algebra, exponenten en telproblemen',
    onderwerpen:['Rekenen met breuken en procenten','Algebra: herleiden en oplossen','Exponenten en wortels','Logaritmen','Telproblemen: vermenigvuldigingsprincipe en combinaties'],
@@ -660,6 +829,9 @@ const VAKKEN = [
 {id:'bi',naam:'Biologie',code:'BI',kleur:'#16A34A',
  beschrijving:'Biologie op HAVO-niveau aan de hand van de nieuwe syllabus 2026 (matrix: Molecuul, Orgaan, Populatie niveau).',
  ceInfo:'CE 2026 = nieuwe matrixopzet. CE-stof: M-niveau (cel en molecuul), O-niveau (orgaan en organisme) en P-niveau (populatie en ecosysteem). Domein A (vaardigheden) is verweven door alle CE-onderdelen.',
+exDatum:'2026-05-20',exTijd:'13:30–16:30',exDuur:'3 uur',
+hulpmiddelen:'Basispakket + BINAS 7e editie of ScienceData',
+youtubeKanaal:'Biologie met Joost (57K+)',youtubeUrl:'https://youtube.com/@biologiemetjoost',
  domeinen:[
   {id:'M',naam:'Molecuul- en celniveau',beschrijving:'Stofwisseling van de cel, zelforganisatie (DNA/erfelijkheid) en selectie op moleculair niveau',
    onderwerpen:['Celorganellen en hun functies','Fotosynthese en celademhaling','Cel- en kerndelingen (mitose en meiose)','DNA-structuur, replicatie, transcriptie en translatie','Mutaties en genexpressie','Genetica: Mendelse overerving en stamboombomen'],
@@ -711,6 +883,9 @@ const VAKKEN = [
 {id:'sk',naam:'Scheikunde',code:'SK',kleur:'#F59E0B',
  beschrijving:'Stoffen, chemische processen en koolstofchemie op HAVO-niveau.',
  ceInfo:'CE = domein B (Stoffen en materialen), domein C (Chemische processen) en domein D (Koolstofchemie). Binas 7e editie is toegestaan bij het CE.',
+exDatum:'2026-05-12',exTijd:'13:30–16:30',exDuur:'3 uur',
+hulpmiddelen:'Basispakket + BINAS 7e editie of ScienceData',
+youtubeKanaal:'Scheikundelessen (59K+)',youtubeUrl:'https://youtube.com/@scheikundelessen',
  domeinen:[
   {id:'B',naam:'Stoffen en materialen',beschrijving:'Atoomstructuur, bindingen en eigenschappen van stoffen',
    onderwerpen:['Atoomstructuur en periodiek systeem','Ionbinding en eigenschappen van ionverbindingen','Covalente binding (polair en apolair)','Waterstofbruggen en Van der Waalskrachten','Molecuulpolairiteit en geometrie','Oplossen van stoffen (like dissolves like)'],
@@ -762,6 +937,9 @@ const VAKKEN = [
 {id:'na',naam:'Natuurkunde',code:'NA',kleur:'#3B82F6',
  beschrijving:'Golven, beweging, elektriciteit en straling op HAVO-niveau.',
  ceInfo:'CE = domein B (Golven), domein C (Beweging en wisselwerking), domein D (Lading en veld) en domein E (Straling en materie). Binas 7e editie is toegestaan.',
+exDatum:'2026-05-26',exTijd:'13:30–16:30',exDuur:'3 uur',
+hulpmiddelen:'Basispakket + BINAS 7e editie of ScienceData',
+youtubeKanaal:'Meneer Wietsma (64K+)',youtubeUrl:'https://youtube.com/@meneerwietsma',
  domeinen:[
   {id:'B',naam:'Golven',beschrijving:'Geluid, licht, elektromagnetisch spectrum en beeldvorming',
    onderwerpen:['Golfvergelijking v = f maal lambda','Trillingen en golfsoorten (transversaal/longitudinaal)','Elektromagnetisch spectrum','Reflectie en refractie (wet van Snellius)','Brekingsindex','Golflengte en kleur van licht'],
@@ -828,6 +1006,9 @@ const VAKKEN = [
 {id:'be',naam:'Bedrijfseconomie',code:'BE',kleur:'#14B8A6',
  beschrijving:'Persoonlijke financien, organisaties en bedrijfsprocessen op HAVO-niveau.',
  ceInfo:'CE = domein B (Van persoon naar rechtspersoon), domein C (Interne organisatie), domein D (Marketing), domein E (Financieel beleid) en domein F (Verslaggeving). Open vragen over berekening en theorie.',
+exDatum:'2026-05-22',exTijd:'13:30–16:30',exDuur:'3 uur',
+hulpmiddelen:'Basispakket',
+youtubeKanaal:'',youtubeUrl:'',
  domeinen:[
   {id:'B',naam:'Van persoon naar rechtspersoon',beschrijving:'Persoonlijke financien, samenlevingsvormen en rechtsvormen van organisaties',
    onderwerpen:['Samenlevingsvormen (samenwonen, gehuwd, geregistreerd partnerschap)','Persoonlijke financiele planning (sparen, lenen, verzekeren)','Enkelvoudige en samengestelde interest','Rechtsvormen (eenmanszaak, VOF, BV, NV, stichting, vereniging)','Oprichting en beeindiging van organisaties','Continuiteit van de onderneming'],
@@ -909,6 +1090,9 @@ const VAKKEN = [
 {id:'en',naam:'Engels',code:'EN',kleur:'#6366F1',
  beschrijving:'Leesvaardigheid Engels op HAVO-niveau.',
  ceInfo:'CE = leesvaardigheid (domein B). Kijk- en luistervaardigheid, schrijf- en spreekvaardigheid zijn SE-stof.',
+exDatum:'2026-05-18',exTijd:'13:30–16:00',exDuur:'2,5 uur',
+hulpmiddelen:'Basispakket + tweetalig woordenboek (EN↔NL) + eentalig woordenboek (EN-EN)',
+youtubeKanaal:'',youtubeUrl:'',
  domeinen:[
   {id:'B',naam:'Leesvaardigheid',beschrijving:'Engelse teksten begrijpen, analyseren en interpreteren',
    onderwerpen:['Main idea and supporting details','Vocabulary in context','Inference and implication','Tone, purpose and audience','Text structure and cohesion','Fact vs opinion in English texts','Reference words (pronouns, this/that/these)','Summary and paraphrase skills'],
@@ -930,6 +1114,9 @@ const VAKKEN = [
 {id:'gs',naam:'Geschiedenis',code:'GS',kleur:'#92400E',
  beschrijving:'Historisch overzicht en historische contexten op HAVO-niveau.',
  ceInfo:'CE = domein B (Orientatiekennis: tien tijdvakken) en historische contexten. Voor 2026: De Republiek der Zeven Verenigde Nederlanden 1515-1648 en De Koude Oorlog 1945-1991.',
+exDatum:'2026-05-12',exTijd:'09:00–12:00',exDuur:'3 uur',
+hulpmiddelen:'Basispakket',
+youtubeKanaal:'JORT Geschiedenis',youtubeUrl:'',
  domeinen:[
   {id:'B',naam:'Orientatiekennis',beschrijving:'Tien tijdvakken van de westerse geschiedenis en kenmerkende aspecten',
    onderwerpen:['Tijdvak 1: Jagers en boeren (tot 3000 v.C.)','Tijdvak 2: Grieken en Romeinen (3000 v.C.–500)','Tijdvak 3: Monniken en ridders (500–1000)','Tijdvak 4: Stedelingen en handelaren (1000–1500)','Tijdvak 5: Ontdekkers en hervormers (1500–1600)','Tijdvak 6: Regenten en vorsten (1600–1700)','Tijdvak 7: Pruiken en revoluties (1700–1800)','Tijdvak 8: Burgers en stoommachines (1800–1900)','Tijdvak 9: Wereldoorlogen (1900–1950)','Tijdvak 10: Televisie en computer (1950–heden)'],
@@ -981,6 +1168,9 @@ const VAKKEN = [
 {id:'ak',naam:'Aardrijkskunde',code:'AK',kleur:'#059669',
  beschrijving:'Leefomgeving, wonen en wereld op HAVO-niveau.',
  ceInfo:'CE = domein B (Wereld), domein C (Aarde) en domein D (Leefomgeving). Vaardigheden (domein A) zijn verweven door alle CE-onderdelen.',
+exDatum:'2026-05-21',exTijd:'13:30–16:30',exDuur:'3 uur',
+hulpmiddelen:'Basispakket (geen atlas meer toegestaan sinds 2021)',
+youtubeKanaal:'',youtubeUrl:'',
  domeinen:[
   {id:'B',naam:'Wereld',beschrijving:'Globalisering, ontwikkelingsvraagstukken en mondiale patronen',
    onderwerpen:['Globalisering: handel, migratie en cultuur','Centrum-periferiemodel','Ontwikkelingsindicatoren (BNP, HDI, Gini)','Internationale arbeidsverdeling','Multinationale ondernemingen','Migratie: push- en pullfactoren','Demografische transitie'],
@@ -1032,6 +1222,9 @@ const VAKKEN = [
 {id:'ec',naam:'Economie',code:'EC',kleur:'#0891B2',
  beschrijving:'Micro- en macro-economie op HAVO-niveau.',
  ceInfo:'CE = domein C (Markt), domein D (Overheid en bestuur) en domein E (Goede tijden, slechte tijden). Domein B (Concept Schaarste) is verweven.',
+exDatum:'2026-05-11',exTijd:'13:30–16:30',exDuur:'3 uur',
+hulpmiddelen:'Basispakket',
+youtubeKanaal:'Economie Academy (16K+)',youtubeUrl:'https://youtube.com/@EconomieAcademy',
  domeinen:[
   {id:'C',naam:'Markt',beschrijving:'Vraag en aanbod, marktvormen, prijsvorming en marktfalen',
    onderwerpen:['Vraag en aanbod: de markt','Vraagelasticiteit en aanbodelasticiteit','Marktvormen: volkomen concurrentie, monopolie, oligopolie','Prijsvorming en evenwichtsprijs','Consumentensurplus en producentensurplus','Marktfalen: externe effecten en collectieve goederen','Minimumloon en maximumprijs'],
@@ -1083,6 +1276,9 @@ const VAKKEN = [
 {id:'mw',naam:'Maatschappijwetenschappen',code:'MW',kleur:'#7C3AED',
  beschrijving:'Politieke en maatschappelijke vraagstukken op HAVO-niveau.',
  ceInfo:'CE = domein C (Politieke besluitvorming) en domein D (Maatschappelijke vraagstukken). Vaardigheden (domein A) en Analyse van een tweetal tweedelingsbenaderingen (domein B) zijn verweven.',
+exDatum:'2026-05-18',exTijd:'09:00–12:00',exDuur:'3 uur',
+hulpmiddelen:'Basispakket',
+youtubeKanaal:'',youtubeUrl:'',
  domeinen:[
   {id:'C',naam:'Politieke besluitvorming',beschrijving:'Het Nederlandse politieke systeem, verkiezingen, bestuur en grondrechten',
    onderwerpen:['Parlementaire democratie en rechtsstaat','Grondrechten: klassiek en sociaal','Verkiezingen en coalitievorming','Politieke partijen en ideologieen','Trias politica: wetgevende, uitvoerende en rechterlijke macht','Lobbyisme en pressiegroepen','Media en politiek','Europese Unie en nationale soevereiniteit'],
@@ -1119,6 +1315,9 @@ const VAKKEN = [
 {id:'wb',naam:'Wiskunde B',code:'WB',kleur:'#DC2626',
  beschrijving:'Analyse, meetkunde en goniometrie op HAVO-niveau.',
  ceInfo:'CE = domein B (Algebra en tellen), domein C (Verbanden) en domein D (Verandering). Meetkunde (domein E) is deels CE-stof.',
+exDatum:'2026-05-19',exTijd:'13:30–16:30',exDuur:'3 uur',
+hulpmiddelen:'Basispakket + grafische rekenmachine (verplicht, examenstand)',
+youtubeKanaal:'Math with Menno (225K+)',youtubeUrl:'https://youtube.com/@MathwithMenno',
  domeinen:[
   {id:'B',naam:'Algebra en tellen',beschrijving:'Algebraische vaardigheden, vergelijkingen en ongelijkheden',
    onderwerpen:['Haakjes uitwerken en herleiden','Kwadratische vergelijkingen en abc-formule','Ontbinden in factoren','Breukvergelijkingen','Stelsels vergelijkingen','Ongelijkheden oplossen','Exponenten en logaritmen'],
@@ -1208,7 +1407,15 @@ function openVak(id){
   ST.vak=VAKKEN.find(v=>v.id===id);
   document.getElementById('dtitle').textContent=ST.vak.naam;
   document.getElementById('ddesc').textContent=ST.vak.beschrijving;
-  document.getElementById('dce').textContent=ST.vak.ceInfo;
+  document.getElementById('dce').innerHTML=ST.vak.ceInfo;
+  // Exam metadata
+  let metaHtml='<div class="exam-meta">';
+  if(ST.vak.exDatum)metaHtml+=`<span class="em-chip em-date">📅 ${ST.vak.exDatum.split('-').reverse().join('-')} · ${ST.vak.exTijd}</span>`;
+  if(ST.vak.exDuur)metaHtml+=`<span class="em-chip">⏱ ${ST.vak.exDuur}</span>`;
+  if(ST.vak.hulpmiddelen)metaHtml+=`<span class="em-chip">📋 ${ST.vak.hulpmiddelen}</span>`;
+  metaHtml+='</div>';
+  if(ST.vak.youtubeKanaal&&ST.vak.youtubeUrl)metaHtml+=`<a class="yt-link" href="${ST.vak.youtubeUrl}" target="_blank" rel="noopener">▶ ${ST.vak.youtubeKanaal}</a>`;
+  document.getElementById('dce').insertAdjacentHTML('afterend',metaHtml);
 
   // Progress overview
   const poGrid=document.getElementById('po-grid');
@@ -1482,7 +1689,7 @@ function switchMode(){show('sc-qmode');}
 
 // ═══════ COUNTDOWN ═══════
 function updateCountdown(){
-  const target=new Date('2026-05-12T09:00:00+02:00');
+  const target=new Date('2026-05-08T13:30:00+02:00');
   const now=new Date();
   const diff=target-now;
   if(diff<=0){
@@ -1710,6 +1917,263 @@ function openReview(){
   show('sc-review');
 }
 
+// ═══════ EXAM SCHEDULE ═══════
+const EXAM_SCHEDULE=[
+{datum:'2026-05-08',tijd:'09:00–12:00',vak:'Filosofie',duur:'3 uur',havo:false},
+{datum:'2026-05-08',tijd:'13:30–16:30',vak:'Nederlands',duur:'3 uur',havo:true,vakId:'nl'},
+{datum:'2026-05-11',tijd:'09:00–12:00',vak:'Kunst (algemeen)',duur:'3 uur',havo:false},
+{datum:'2026-05-11',tijd:'13:30–16:30',vak:'Economie',duur:'3 uur',havo:true,vakId:'ec'},
+{datum:'2026-05-12',tijd:'09:00–12:00',vak:'Geschiedenis',duur:'3 uur',havo:true,vakId:'gs'},
+{datum:'2026-05-12',tijd:'13:30–16:30',vak:'Scheikunde',duur:'3 uur',havo:true,vakId:'sk'},
+{datum:'2026-05-13',tijd:'13:30–16:00',vak:'Frans',duur:'2,5 uur',havo:false},
+{datum:'2026-05-18',tijd:'09:00–12:00',vak:'Maatschappijwetenschappen',duur:'3 uur',havo:true,vakId:'mw'},
+{datum:'2026-05-18',tijd:'13:30–16:00',vak:'Engels',duur:'2,5 uur',havo:true,vakId:'en'},
+{datum:'2026-05-19',tijd:'09:00–11:30',vak:'Muziek',duur:'2,5 uur',havo:false},
+{datum:'2026-05-19',tijd:'13:30–16:30',vak:'Wiskunde A / Wiskunde B',duur:'3 uur',havo:true,vakId:'wa'},
+{datum:'2026-05-20',tijd:'09:00–11:30',vak:'Duits',duur:'2,5 uur',havo:false},
+{datum:'2026-05-20',tijd:'13:30–16:30',vak:'Biologie',duur:'3 uur',havo:true,vakId:'bi'},
+{datum:'2026-05-21',tijd:'09:00–11:30',vak:'Tekenen/Handvaardigheid',duur:'2,5 uur',havo:false},
+{datum:'2026-05-21',tijd:'13:30–16:30',vak:'Aardrijkskunde',duur:'3 uur',havo:true,vakId:'ak'},
+{datum:'2026-05-22',tijd:'13:30–16:30',vak:'Bedrijfseconomie',duur:'3 uur',havo:true,vakId:'be'},
+{datum:'2026-05-26',tijd:'13:30–16:30',vak:'Natuurkunde',duur:'3 uur',havo:true,vakId:'na'},
+{datum:'2026-05-27',tijd:'09:00–11:30',vak:'Fries / Russisch',duur:'2,5 uur',havo:false},
+{datum:'2026-05-27',tijd:'13:30–16:00',vak:'Arabisch / Spaans / Turks',duur:'2,5 uur',havo:false}
+];
+function getMijnVakken(){try{return JSON.parse(localStorage.getItem('examenapp_mijnvakken')||'[]');}catch(e){return [];}}
+function setMijnVakken(arr){localStorage.setItem('examenapp_mijnvakken',JSON.stringify(arr));}
+function renderSchedule(){
+  const list=document.getElementById('schedule-list');
+  const onlyMine=document.getElementById('sch-filter-mine').checked;
+  const mijn=getMijnVakken();
+  list.innerHTML='';
+  const now=new Date();
+  const dagNamen=['zo','ma','di','wo','do','vr','za'];
+  const maandNamen=['jan','feb','mrt','apr','mei','jun','jul','aug','sep','okt','nov','dec'];
+  EXAM_SCHEDULE.forEach(ex=>{
+    if(onlyMine&&!mijn.includes(ex.vakId||ex.vak))return;
+    const d=new Date(ex.datum+'T'+ex.tijd.split('–')[0]+':00+02:00');
+    const diff=d-now;
+    let cdText='';
+    if(diff<=0)cdText='Afgelopen';
+    else{const dd=Math.floor(diff/(1000*60*60*24));const hh=Math.floor((diff%(1000*60*60*24))/(1000*60*60));cdText=dd>0?dd+'d '+hh+'u':'< '+hh+' uur';}
+    const isMine=mijn.includes(ex.vakId||ex.vak);
+    const dagNaam=dagNamen[d.getDay()];
+    const datumStr=dagNaam+' '+d.getDate()+' '+maandNamen[d.getMonth()];
+    list.innerHTML+=`<div class="sch-card${isMine?' sch-mine':''}">
+      <input type="checkbox" class="sch-check" ${isMine?'checked':''} onchange="toggleMijnVak('${ex.vakId||ex.vak}',this.checked)">
+      <div class="sch-date">${datumStr}</div>
+      <div class="sch-time">${ex.tijd}</div>
+      <div class="sch-name">${ex.vak}</div>
+      <div class="sch-dur">${ex.duur}</div>
+      <div class="sch-cd">${cdText}</div>
+    </div>`;
+  });
+}
+function toggleMijnVak(id,checked){
+  let m=getMijnVakken();
+  if(checked&&!m.includes(id))m.push(id);
+  if(!checked)m=m.filter(v=>v!==id);
+  setMijnVakken(m);
+  renderSchedule();
+}
+
+// ═══════ GRADE CALCULATORS ═══════
+function switchCalc(id){
+  document.querySelectorAll('.calc-tab').forEach(t=>t.classList.remove('active'));
+  document.querySelectorAll('.calc-panel').forEach(p=>p.classList.remove('active'));
+  document.getElementById('calc-'+id).classList.add('active');
+  event.target.classList.add('active');
+  if(id==='slaag')buildSlaagInputs();
+  if(id==='herk')buildHerkSelect();
+}
+function buildSlaagInputs(){
+  const box=document.getElementById('slaag-inputs');
+  if(box.children.length>0)return;
+  const vakken=['Nederlands','Engels','Wiskunde A','Biologie','Scheikunde','Natuurkunde','Economie','Geschiedenis','Aardrijkskunde','Maatschappijwetenschappen','Bedrijfseconomie','Wiskunde B'];
+  const codes=['NE','EN','WA','BI','SK','NA','EC','GS','AK','MW','BE','WB'];
+  box.innerHTML=`<div style="font-size:11px;color:var(--mu);margin-bottom:8px;display:flex;gap:10px"><span style="flex:1">Vak</span><span style="width:70px;text-align:center">SE</span><span style="width:70px;text-align:center">CE</span></div>`;
+  vakken.forEach((v,i)=>{
+    box.innerHTML+=`<div class="calc-row"><span class="calc-label">${v} <span style="color:var(--mu);font-size:10px">(${codes[i]})</span></span><input type="number" class="calc-input slaag-se" data-vak="${codes[i]}" min="1" max="10" step="0.1" placeholder="—"><input type="number" class="calc-input slaag-ce" data-vak="${codes[i]}" min="1" max="10" step="0.1" placeholder="—"></div>`;
+  });
+}
+function berekenSlaag(){
+  const seInputs=document.querySelectorAll('.slaag-se');
+  const ceInputs=document.querySelectorAll('.slaag-ce');
+  const profiel=document.getElementById('calc-profiel').value;
+  let vakken=[];let ceTotal=0;let ceCount=0;
+  seInputs.forEach((inp,i)=>{
+    const se=parseFloat(inp.value);
+    const ce=parseFloat(ceInputs[i].value);
+    const code=inp.dataset.vak;
+    if(!isNaN(se)&&!isNaN(ce)){
+      const eind=Math.round((se+ce)/2);
+      const ceRound=Math.round(ce*10)/10;
+      vakken.push({code,se,ce:ceRound,eind});
+      ceTotal+=ceRound;ceCount++;
+    }
+  });
+  if(vakken.length<3){document.getElementById('slaag-result').innerHTML='<div class="calc-result"><p>Vul minimaal 3 vakken in.</p></div>';return;}
+  const ceGem=ceTotal/ceCount;
+  const kernvakken=profiel==='cm'?['NE','EN']:['NE','EN','WA','WB'];
+  const kernGrades=vakken.filter(v=>kernvakken.includes(v.code));
+  const kernOnder6=kernGrades.filter(v=>v.eind<6);
+  let r1=ceGem>=5.5;
+  let r2=kernOnder6.length<=1&&kernOnder6.every(v=>v.eind>=5);
+  let allEind=vakken.map(v=>v.eind);
+  let onder4=allEind.filter(e=>e<4).length;
+  let vijven=allEind.filter(e=>e===5).length;
+  let vieren=allEind.filter(e=>e===4).length;
+  let eindGem=allEind.reduce((a,b)=>a+b,0)/allEind.length;
+  let r3=true;
+  if(onder4>0)r3=false;
+  else if(vieren>=1&&vijven>=1)r3=eindGem>=6.0;
+  else if(vijven>=3)r3=false;
+  else if(vijven===2||vieren===1)r3=eindGem>=6.0;
+  let geslaagd=r1&&r2&&r3;
+  let cumLaude=false;
+  if(geslaagd){
+    const noBelow6=allEind.every(e=>e>=6);
+    cumLaude=noBelow6&&eindGem>=8.0;
+  }
+  let icon=geslaagd?(cumLaude?'🎓':'🎉'):'😔';
+  let title=geslaagd?(cumLaude?'Cum laude geslaagd!':'Geslaagd!'):'Gezakt';
+  let color=geslaagd?'calc-pass':'calc-fail';
+  let detail=`<div class="calc-detail">
+    <div><span class="${r1?'ck':'cx'}">${r1?'✓':'✗'}</span> CE-gemiddelde: ${ceGem.toFixed(2)} ${r1?'≥':'<'} 5,50</div>
+    <div><span class="${r2?'ck':'cx'}">${r2?'✓':'✗'}</span> Kernvakkenregel: ${kernOnder6.length} kernvak(ken) onder 6 ${profiel==='cm'?'(C&M: NE+EN)':'(NE+EN+WI)'}</div>
+    <div><span class="${r3?'ck':'cx'}">${r3?'✓':'✗'}</span> Compensatie: ${onder4>0?'cijfer <4 gevonden':vijven+' vijf(ven), '+vieren+' vier(en)'}, gem ${eindGem.toFixed(1)}</div>
+  </div>`;
+  let tableHtml='<div style="margin-top:14px;font-size:12px"><table style="width:100%;border-collapse:collapse">';
+  vakken.forEach(v=>{
+    const col=v.eind<6?'color:#EF4444':'';
+    tableHtml+=`<tr style="border-bottom:1px solid var(--bo)"><td style="padding:4px 0">${v.code}</td><td style="text-align:center">${v.se}</td><td style="text-align:center">${v.ce}</td><td style="text-align:center;font-weight:700;${col}">${v.eind}</td></tr>`;
+  });
+  tableHtml+='</table></div>';
+  document.getElementById('slaag-result').innerHTML=`<div class="calc-result">
+    <div class="calc-result-icon">${icon}</div>
+    <h3 class="${color}">${title}</h3>
+    <p>CE-gemiddelde: ${ceGem.toFixed(2)} · Eindcijfergemiddelde: ${eindGem.toFixed(1)}</p>
+    ${detail}${tableHtml}
+  </div>`;
+}
+function berekenEind(){
+  const se=parseFloat(document.getElementById('eind-se').value);
+  const ce=parseFloat(document.getElementById('eind-ce').value);
+  if(isNaN(se)||isNaN(ce)){document.getElementById('eind-result').innerHTML='<div class="calc-result"><p>Vul beide cijfers in.</p></div>';return;}
+  const gem=(se+ce)/2;
+  const eind=Math.round(gem);
+  document.getElementById('eind-result').innerHTML=`<div class="calc-result">
+    <div class="calc-result-icon">📊</div>
+    <h3>${eind}</h3>
+    <p>SE (${se}) + CE (${ce}) = ${gem.toFixed(2)} → afgerond: <strong>${eind}</strong></p>
+  </div>`;
+}
+function berekenNterm(){
+  const s=parseFloat(document.getElementById('nt-score').value);
+  const l=parseFloat(document.getElementById('nt-max').value);
+  const n=parseFloat(document.getElementById('nt-n').value);
+  if(isNaN(s)||isNaN(l)||isNaN(n)){document.getElementById('nterm-result').innerHTML='<div class="calc-result"><p>Vul alle velden in.</p></div>';return;}
+  const c=9*(s/l)+n;
+  const cRound=Math.round(c*10)/10;
+  const cFinal=Math.min(10,Math.max(1,cRound));
+  document.getElementById('nterm-result').innerHTML=`<div class="calc-result">
+    <div class="calc-result-icon">🧮</div>
+    <h3>${cFinal}</h3>
+    <p>C = 9 × (${s}/${l}) + ${n} = ${c.toFixed(2)} → afgerond: <strong>${cFinal}</strong></p>
+    <p style="margin-top:8px;font-size:11px">Formule: C = 9 × (S/L) + N</p>
+  </div>`;
+}
+function buildHerkSelect(){
+  const sel=document.getElementById('herk-vak');
+  if(sel.options.length>1)return;
+  sel.innerHTML='';
+  VAKKEN.forEach(v=>{sel.innerHTML+=`<option value="${v.id}">${v.naam} (${v.code})</option>`;});
+}
+function berekenHerk(){
+  const vakId=document.getElementById('herk-vak').value;
+  const nieuwCe=parseFloat(document.getElementById('herk-ce').value);
+  if(isNaN(nieuwCe)){document.getElementById('herk-result').innerHTML='<div class="calc-result"><p>Vul een nieuw CE-cijfer in.</p></div>';return;}
+  const vak=VAKKEN.find(v=>v.id===vakId);
+  document.getElementById('herk-result').innerHTML=`<div class="calc-result">
+    <div class="calc-result-icon">🔄</div>
+    <h3>Herkansing ${vak.naam}</h3>
+    <p>Met een nieuw CE-cijfer van <strong>${nieuwCe}</strong> voor ${vak.naam}:<br>Vul je huidige SE- en CE-cijfers in bij "Ga ik slagen?" om het effect te zien.</p>
+  </div>`;
+}
+
+// ═══════ FLASHCARDS ═══════
+let FC={cards:[],idx:0,correct:0,total:0,flipped:false};
+function startFlash(){
+  const d=ST.domein;
+  FC.cards=[];FC.idx=0;FC.correct=0;FC.flipped=false;
+  const terms=d.onderwerpen||[];
+  const samText=(d.sam||'').replace(/<[^>]+>/g,'');
+  const parts=samText.split(/\.\s+/).filter(p=>p.length>20);
+  terms.forEach((t,i)=>{
+    const def=parts[i]||'Bestudeer dit begrip in de samenvatting.';
+    FC.cards.push({term:t,def:def});
+  });
+  for(let i=FC.cards.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[FC.cards[i],FC.cards[j]]=[FC.cards[j],FC.cards[i]];}
+  FC.total=FC.cards.length;
+  document.getElementById('fc-meta').textContent=ST.vak.naam+' · D'+d.id+': '+d.naam+' · Begrippen';
+  show('sc-flash');
+  showFlashcard();
+}
+function showFlashcard(){
+  if(FC.idx>=FC.cards.length){
+    document.getElementById('fc-front').textContent='Klaar!';
+    document.getElementById('fc-back').textContent='';
+    document.getElementById('fc-btns').style.display='none';
+    document.getElementById('fc-progress').textContent=`${FC.correct} van ${FC.total} goed (${Math.round(FC.correct/FC.total*100)}%)`;
+    document.getElementById('fc-score').innerHTML=`<button class="calc-btn" onclick="FC.idx=0;FC.correct=0;FC.flipped=false;showFlashcard()">🔄 Opnieuw</button>`;
+    return;
+  }
+  const c=FC.cards[FC.idx];
+  FC.flipped=false;
+  document.getElementById('fc-card').classList.remove('flipped');
+  document.getElementById('fc-front').textContent=c.term;
+  document.getElementById('fc-back').textContent=c.def;
+  document.getElementById('fc-btns').style.display='none';
+  document.getElementById('fc-progress').textContent=`Kaart ${FC.idx+1} van ${FC.total}`;
+  document.getElementById('fc-score').textContent=FC.idx>0?`${FC.correct} goed tot nu toe`:'Tik op de kaart om het antwoord te zien';
+}
+function flipCard(){
+  if(FC.flipped)return;
+  FC.flipped=true;
+  document.getElementById('fc-card').classList.add('flipped');
+  document.getElementById('fc-btns').style.display='flex';
+}
+function fcAnswer(correct){
+  if(correct)FC.correct++;
+  FC.idx++;
+  showFlashcard();
+}
+
+// ═══════ POMODORO ═══════
+let POMO={timer:null,seconds:25*60,running:false,mode:'study'};
+function renderPomo(){
+  const box=document.getElementById('pomo-home');
+  if(!box)return;
+  const mins=Math.floor(POMO.seconds/60);
+  const secs=POMO.seconds%60;
+  const label=POMO.mode==='study'?'Studietijd':'Pauze';
+  box.innerHTML=`<div class="pomo">
+    <div class="pomo-title">🍅 Pomodoro Timer</div>
+    <div class="pomo-time">${String(mins).padStart(2,'0')}:${String(secs).padStart(2,'0')}</div>
+    <div class="pomo-label">${label}</div>
+    <div class="pomo-btns">
+      <button class="pomo-btn${POMO.running?' pomo-active':''}" onclick="togglePomo()">${POMO.running?'⏸ Pauze':'▶ Start'}</button>
+      <button class="pomo-btn" onclick="resetPomo()">↻ Reset</button>
+    </div>
+  </div>`;
+}
+function togglePomo(){
+  if(POMO.running){clearInterval(POMO.timer);POMO.running=false;}
+  else{POMO.running=true;POMO.timer=setInterval(()=>{POMO.seconds--;if(POMO.seconds<=0){clearInterval(POMO.timer);POMO.running=false;if(POMO.mode==='study'){POMO.mode='break';POMO.seconds=5*60;}else{POMO.mode='study';POMO.seconds=25*60;}}renderPomo();},1000);}
+  renderPomo();
+}
+function resetPomo(){clearInterval(POMO.timer);POMO.running=false;POMO.mode='study';POMO.seconds=25*60;renderPomo();}
+
 // ═══════ LEVEL SELECT ═══════
 function chooseLevel(level){
   if(level==='havo'){show('sc-home');}
@@ -1719,6 +2183,9 @@ function chooseLevel(level){
 renderFavHome();
 renderStreak();
 buildGrid();
+renderPomo();
+if(document.getElementById('sc-schedule'))renderSchedule();
+buildSlaagInputs();
 // Show welcome on first load (sc-welcome is default via class="on")
 </script>
 </body>
