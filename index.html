@@ -302,12 +302,96 @@ h1,h2,h3,h4{font-family:'Bricolage Grotesque',sans-serif;line-height:1.15}
 .rc-answer strong{color:rgba(255,255,255,.8)}
 .rc-explanation{font-size:12px;color:rgba(255,255,255,.4);line-height:1.6;padding-top:6px;border-top:1px solid rgba(255,255,255,.06)}
 .review-btns{display:flex;gap:8px;flex-direction:column;margin-top:16px}
+
+/* ── WELCOME SCREEN ────────────────────────────── */
+.welcome-hero{padding:52px 0 32px;text-align:center}
+.welcome-hero h1{font-size:clamp(32px,6vw,56px);font-weight:800;letter-spacing:-2px;line-height:1.08;margin-bottom:14px}
+.welcome-hero h1 em{font-style:normal;color:var(--or)}
+.welcome-hero .hero-sub{font-size:15px;color:var(--mu);max-width:480px;margin:0 auto 10px;line-height:1.65}
+.welcome-info{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-bottom:36px}
+@media(max-width:580px){.welcome-info{grid-template-columns:1fr}}
+.wi-card{background:var(--s);border:1px solid var(--bo);border-radius:12px;padding:16px 18px;transition:border-color .15s}
+.wi-label{font-size:10px;font-weight:700;color:var(--mu);text-transform:uppercase;letter-spacing:.7px;margin-bottom:4px}
+.wi-val{font-family:'Bricolage Grotesque',sans-serif;font-size:15px;font-weight:700}
+.wi-sub{font-size:11px;color:var(--mu);margin-top:2px}
+.level-title{font-size:11px;font-weight:700;color:var(--mu);text-transform:uppercase;letter-spacing:1px;margin-bottom:16px;text-align:center}
+.level-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-bottom:48px}
+@media(max-width:640px){.level-grid{grid-template-columns:1fr}}
+.level-card{background:var(--s);border:1.5px solid var(--bo);border-radius:14px;padding:28px 24px;cursor:pointer;transition:.2s;position:relative;overflow:hidden;text-align:center}
+.level-card:hover{transform:translateY(-3px);box-shadow:0 6px 24px rgba(0,0,0,.08);border-color:var(--bo2)}
+.level-card::before{content:'';position:absolute;top:0;left:0;right:0;height:4px}
+.level-card.lc-vmbo::before{background:#0EA5E9}
+.level-card.lc-havo::before{background:#F59E0B}
+.level-card.lc-vwo::before{background:#8B5CF6}
+.level-icon{font-size:32px;margin-bottom:14px}
+.level-card h3{font-family:'Bricolage Grotesque',sans-serif;font-size:22px;font-weight:700;margin-bottom:6px}
+.level-card p{font-size:13px;color:var(--mu);margin-bottom:14px;line-height:1.5}
+.level-count{font-size:12px;font-weight:600}
+.lc-vmbo .level-count{color:#0EA5E9}
+.lc-havo .level-count{color:#92400E}
+.lc-vwo .level-count{color:#8B5CF6}
+.level-arrow{position:absolute;bottom:24px;right:24px;font-size:20px;opacity:.3;transition:.2s}
+.level-card:hover .level-arrow{opacity:1;transform:translateX(4px)}
+.level-card.lc-disabled{opacity:.5;cursor:default}
+.level-card.lc-disabled:hover{transform:none;box-shadow:none}
+.level-soon{display:inline-block;font-size:10px;font-weight:700;background:var(--bg2);color:var(--mu);padding:3px 10px;border-radius:20px;margin-top:6px;letter-spacing:.3px}
+.footer-text{text-align:center;font-size:12px;color:var(--mu);padding:20px 0 40px;line-height:1.8}
+.footer-text a{color:var(--or);text-decoration:none}
 </style>
 </head>
 <body>
 
-<!-- WELCOME -->
-<div id="sc-home" class="sc on">
+<!-- LEVEL SELECT -->
+<div id="sc-welcome" class="sc on">
+<nav class="nav">
+  <div class="nav-inner">
+    <div class="logo"><div class="logo-dot"></div>ExamenApp</div>
+    <span class="nav-chip">2026</span>
+    <button class="theme-btn" onclick="toggleDark()" title="Nachtmodus">🌙</button>
+  </div>
+</nav>
+<div class="w">
+  <div class="welcome-hero">
+    <div class="hero-badge">Eindexamen 2026</div>
+    <h1>Klaar voor je<br><em>eindexamen?</em></h1>
+    <p class="hero-sub">Alle CE-domeinen, samenvattingen, quizzen en open examenvragen — volledig offline, voor elk niveau.</p>
+  </div>
+  <div class="welcome-info">
+    <div class="wi-card"><div class="wi-label">1e tijdvak</div><div class="wi-val">12–30 mei 2026</div><div class="wi-sub">Centraal examen</div></div>
+    <div class="wi-card"><div class="wi-label">2e tijdvak</div><div class="wi-val">16–26 juni 2026</div><div class="wi-sub">Herkansing</div></div>
+    <div class="wi-card"><div class="wi-label">Uitslag</div><div class="wi-val">begin juli 2026</div><div class="wi-sub">Via school & DUO</div></div>
+  </div>
+  <p class="level-title">Kies jouw niveau</p>
+  <div class="level-grid">
+    <div class="level-card lc-vmbo lc-disabled">
+      <div class="level-icon">🎯</div>
+      <h3>VMBO-TL</h3>
+      <p>Theoretische leerweg — vakken en domeinen voor het centraal examen.</p>
+      <span class="level-soon">Binnenkort beschikbaar</span>
+    </div>
+    <div class="level-card lc-havo" onclick="chooseLevel('havo')">
+      <div class="level-icon">📐</div>
+      <h3>HAVO</h3>
+      <p>12 vakken met samenvattingen, snelle quizzen en oud-examen vragen.</p>
+      <span class="level-count">12 vakken beschikbaar ✓</span>
+      <span class="level-arrow">→</span>
+    </div>
+    <div class="level-card lc-vwo lc-disabled">
+      <div class="level-icon">🔬</div>
+      <h3>VWO</h3>
+      <p>Voorbereidend Wetenschappelijk Onderwijs — de zwaarste variant.</p>
+      <span class="level-soon">Binnenkort beschikbaar</span>
+    </div>
+  </div>
+  <div class="footer-text">
+    Gemaakt door leerlingen, voor leerlingen.<br>
+    Officiële syllabus: <a href="https://www.examenblad.nl" target="_blank">examenblad.nl</a>
+  </div>
+</div>
+</div>
+
+<!-- HOME (HAVO) -->
+<div id="sc-home" class="sc">
 <nav class="nav">
   <div class="nav-inner">
     <div class="logo" onclick="show('sc-home')">
@@ -1295,7 +1379,6 @@ function kies(gekozen,correct){
     if(i===correct)b.classList.add('correct');
     else b.classList.add('wrong');
   });
-  const q=ST.vragen[ST.idx];
   const fb=document.getElementById('qfb');
   fb.style.display='block';
   fb.className=`qfb ${ok?'fbok':'fbno'}`;
@@ -1627,10 +1710,16 @@ function openReview(){
   show('sc-review');
 }
 
+// ═══════ LEVEL SELECT ═══════
+function chooseLevel(level){
+  if(level==='havo'){show('sc-home');}
+}
+
 // ═══════ INIT ═══════
 renderFavHome();
 renderStreak();
 buildGrid();
+// Show welcome on first load (sc-welcome is default via class="on")
 </script>
 </body>
 </html>
