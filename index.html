@@ -444,6 +444,27 @@ h1,h2,h3,h4{font-family:var(--font-head);line-height:1.2;letter-spacing:-.3px}
 .pomo-btn:hover{background:var(--bg2)}
 .pomo-btn.pomo-active{background:var(--or);color:#fff;border-color:var(--or)}
 
+/* ── POMODORO OVERLAY ─────────────────────────── */
+.pomo-overlay{position:fixed;inset:0;background:rgba(0,0,0,.65);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);z-index:9999;display:flex;align-items:center;justify-content:center;opacity:0;pointer-events:none;transition:opacity .35s}
+.pomo-overlay.show{opacity:1;pointer-events:auto}
+.pomo-overlay-card{background:#fff;border-radius:24px;padding:40px 32px;text-align:center;max-width:360px;width:90%;box-shadow:0 20px 60px rgba(0,0,0,.25);animation:pomoPopIn .4s ease}
+@keyframes pomoPopIn{from{transform:scale(.85) translateY(20px);opacity:0}to{transform:scale(1) translateY(0);opacity:1}}
+.pomo-overlay-icon{font-size:56px;margin-bottom:12px;animation:pomoBounce 1s ease infinite}
+@keyframes pomoBounce{0%,100%{transform:translateY(0)}50%{transform:translateY(-8px)}}
+.pomo-overlay-title{font-family:var(--font-head);font-size:24px;font-weight:800;color:var(--dk);margin-bottom:8px}
+.pomo-overlay-sub{font-size:15px;color:var(--mu);margin-bottom:6px;line-height:1.5}
+.pomo-overlay-timer{font-family:var(--font-head);font-size:42px;font-weight:800;color:var(--or);letter-spacing:-1px;margin:16px 0}
+.pomo-overlay-bar{width:100%;height:6px;border-radius:3px;background:var(--bg2);margin-bottom:20px;overflow:hidden}
+.pomo-overlay-bar-fill{height:100%;border-radius:3px;background:var(--or);transition:width 1s linear}
+.pomo-overlay-btns{display:flex;gap:10px;justify-content:center;flex-wrap:wrap}
+.pomo-overlay-btn{padding:12px 28px;border-radius:12px;border:none;font-size:14px;font-weight:700;cursor:pointer;font-family:var(--font);transition:all .2s}
+.pomo-overlay-btn.primary{background:var(--or);color:#fff}
+.pomo-overlay-btn.primary:hover{background:#d14e0a}
+.pomo-overlay-btn.secondary{background:var(--bg2);color:var(--dk)}
+.pomo-overlay-btn.secondary:hover{background:var(--bo)}
+.pomo-overlay.break-mode .pomo-overlay-timer{color:var(--green)}
+.pomo-overlay.break-mode .pomo-overlay-bar-fill{background:var(--green)}
+
 /* ── SUBJECT DETAIL EXTRAS ─────────────────────── */
 .exam-meta{display:flex;gap:10px;flex-wrap:wrap;margin-top:14px}
 .em-chip{font-size:12px;font-weight:600;padding:6px 14px;border-radius:20px;background:var(--bg2);color:var(--mu);display:inline-flex;align-items:center;gap:6px}
@@ -2624,14 +2645,16 @@ function fcAnswer(correct){
 }
 
 // ═══════ POMODORO ═══════
-let POMO={timer:null,seconds:25*60,running:false,mode:'study'};
+let POMO={timer:null,seconds:25*60,running:false,mode:'study',breakTimer:null,breakSeconds:0};
+
 function renderPomo(){
   const box=document.getElementById('pomo-home');
   if(!box)return;
   const mins=Math.floor(POMO.seconds/60);
   const secs=POMO.seconds%60;
-  const label=POMO.mode==='study'?'Studietijd':'Pauze';
-  box.innerHTML=`<div class="pomo">
+  const label=POMO.mode==='study'?'🎯 Studietijd':'☕ Pauze';
+  const modeClass=POMO.mode==='break'?' pomo-break':'';
+  box.innerHTML=`<div class="pomo${modeClass}">
     <div class="pomo-title">🍅 Pomodoro Timer</div>
     <div class="pomo-time">${String(mins).padStart(2,'0')}:${String(secs).padStart(2,'0')}</div>
     <div class="pomo-label">${label}</div>
@@ -2641,12 +2664,115 @@ function renderPomo(){
     </div>
   </div>`;
 }
+
+function pomoAlert(){
+  // Play sound using Web Audio API
+  try{
+    const ctx=new(window.AudioContext||window.webkitAudioContext)();
+    function beep(freq,start,dur){
+      const o=ctx.createOscillator(),g=ctx.createGain();
+      o.connect(g);g.connect(ctx.destination);
+      o.type='sine';o.frequency.value=freq;
+      g.gain.setValueAtTime(0.3,ctx.currentTime+start);
+      g.gain.exponentialRampToValueAtTime(0.01,ctx.currentTime+start+dur);
+      o.start(ctx.currentTime+start);o.stop(ctx.currentTime+start+dur);
+    }
+    beep(880,0,.15);beep(880,.2,.15);beep(1100,.45,.3);
+  }catch(e){}
+  // Vibrate on mobile
+  if(navigator.vibrate)navigator.vibrate([200,100,200,100,300]);
+}
+
+function showPomoOverlay(type){
+  const ov=document.getElementById('pomo-overlay');
+  const icon=document.getElementById('pomo-ov-icon');
+  const title=document.getElementById('pomo-ov-title');
+  const sub=document.getElementById('pomo-ov-sub');
+  const timer=document.getElementById('pomo-ov-timer');
+  const bar=document.getElementById('pomo-ov-bar');
+  const btn=document.getElementById('pomo-ov-action');
+
+  if(type==='break'){
+    ov.classList.add('break-mode');
+    icon.textContent='☕';
+    title.textContent='Pauze tijd!';
+    sub.textContent='Goed bezig! Neem even 5 minuten rust.';
+    timer.textContent='05:00';
+    bar.style.width='100%';
+    btn.textContent='▶ Start pauze';
+    btn.onclick=startBreakFromOverlay;
+    btn.style.display='';
+  }else{
+    ov.classList.remove('break-mode');
+    icon.textContent='🔥';
+    title.textContent='Pauze voorbij!';
+    sub.textContent='Tijd om weer aan de slag te gaan!';
+    timer.textContent='00:00';
+    bar.style.width='0%';
+    btn.textContent='▶ Nieuwe sessie';
+    btn.onclick=function(){dismissPomoOverlay();POMO.mode='study';POMO.seconds=25*60;renderPomo();togglePomo();};
+    btn.style.display='';
+  }
+  ov.classList.add('show');
+  pomoAlert();
+}
+
+function startBreakFromOverlay(){
+  const btn=document.getElementById('pomo-ov-action');
+  btn.style.display='none';
+  POMO.mode='break';POMO.seconds=5*60;POMO.running=true;
+  renderPomo();
+
+  clearInterval(POMO.breakTimer);
+  const totalBreak=5*60;
+  POMO.breakTimer=setInterval(()=>{
+    POMO.seconds--;
+    const m=Math.floor(POMO.seconds/60);
+    const s=POMO.seconds%60;
+    const ovTimer=document.getElementById('pomo-ov-timer');
+    const ovBar=document.getElementById('pomo-ov-bar');
+    if(ovTimer)ovTimer.textContent=String(m).padStart(2,'0')+':'+String(s).padStart(2,'0');
+    if(ovBar)ovBar.style.width=((POMO.seconds/totalBreak)*100)+'%';
+    renderPomo();
+    if(POMO.seconds<=0){
+      clearInterval(POMO.breakTimer);POMO.running=false;
+      dismissPomoOverlay();
+      POMO.mode='study';POMO.seconds=25*60;
+      renderPomo();
+      setTimeout(()=>showPomoOverlay('study'),400);
+    }
+  },1000);
+}
+
+function dismissPomoOverlay(){
+  document.getElementById('pomo-overlay').classList.remove('show','break-mode');
+  clearInterval(POMO.breakTimer);
+}
+
 function togglePomo(){
-  if(POMO.running){clearInterval(POMO.timer);POMO.running=false;}
-  else{POMO.running=true;POMO.timer=setInterval(()=>{POMO.seconds--;if(POMO.seconds<=0){clearInterval(POMO.timer);POMO.running=false;if(POMO.mode==='study'){POMO.mode='break';POMO.seconds=5*60;}else{POMO.mode='study';POMO.seconds=25*60;}}renderPomo();},1000);}
+  if(POMO.running){
+    clearInterval(POMO.timer);clearInterval(POMO.breakTimer);POMO.running=false;
+  }else{
+    POMO.running=true;
+    POMO.timer=setInterval(()=>{
+      POMO.seconds--;
+      if(POMO.seconds<=0){
+        clearInterval(POMO.timer);POMO.running=false;
+        if(POMO.mode==='study'){
+          renderPomo();
+          showPomoOverlay('break');
+          return;
+        }else{
+          POMO.mode='study';POMO.seconds=25*60;
+        }
+      }
+      renderPomo();
+    },1000);
+  }
   renderPomo();
 }
-function resetPomo(){clearInterval(POMO.timer);POMO.running=false;POMO.mode='study';POMO.seconds=25*60;renderPomo();}
+
+function resetPomo(){clearInterval(POMO.timer);clearInterval(POMO.breakTimer);POMO.running=false;POMO.mode='study';POMO.seconds=25*60;dismissPomoOverlay();renderPomo();}
 
 // ═══════ LEVEL SELECT ═══════
 function chooseLevel(level){
@@ -2695,5 +2821,21 @@ window.show=function(id){_origShow(id);updateBottomNav(id);};
     </button>
   </div>
 </nav>
+
+<!-- Pomodoro Overlay -->
+<div class="pomo-overlay" id="pomo-overlay">
+  <div class="pomo-overlay-card">
+    <div class="pomo-overlay-icon" id="pomo-ov-icon">☕</div>
+    <div class="pomo-overlay-title" id="pomo-ov-title">Pauze tijd!</div>
+    <div class="pomo-overlay-sub" id="pomo-ov-sub">Goed bezig! Neem even 5 minuten rust.</div>
+    <div class="pomo-overlay-timer" id="pomo-ov-timer">05:00</div>
+    <div class="pomo-overlay-bar"><div class="pomo-overlay-bar-fill" id="pomo-ov-bar" style="width:100%"></div></div>
+    <div class="pomo-overlay-btns">
+      <button class="pomo-overlay-btn secondary" onclick="dismissPomoOverlay()">Sluiten</button>
+      <button class="pomo-overlay-btn primary" id="pomo-ov-action" onclick="startBreakFromOverlay()">▶ Start pauze</button>
+    </div>
+  </div>
+</div>
+
 </body>
 </html>
