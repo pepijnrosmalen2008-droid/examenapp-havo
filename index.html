@@ -825,6 +825,43 @@ html.dark .calc-btn{background:#2e3550}
 .lb-my-score-l{font-size:10px;color:var(--mu)}
 .lb-res-btn{width:100%;margin-top:16px;padding:14px;border-radius:14px;background:linear-gradient(135deg,#F59E0B,#EF4444);color:#fff;border:none;font-size:15px;font-weight:700;cursor:pointer;font-family:var(--font);display:none}
 .lb-res-btn:hover{opacity:.9}
+/* ── AUTH SCREEN ── */
+.auth-wrap{max-width:420px;margin:0 auto;padding:48px 24px 100px}
+.auth-logo{text-align:center;margin-bottom:32px}
+.auth-logo .logo-dot{width:14px;height:14px;border-radius:50%;background:var(--or);display:inline-block;margin-right:6px;vertical-align:middle}
+.auth-logo h1{font-size:26px;font-weight:800;display:inline;vertical-align:middle}
+.auth-card{background:var(--s);border:1px solid var(--bo);border-radius:24px;padding:32px}
+.auth-tabs{display:flex;gap:4px;background:var(--bg2);border-radius:12px;padding:4px;margin-bottom:28px}
+.auth-tab{flex:1;padding:10px;border-radius:9px;border:none;background:none;font-size:14px;font-weight:600;color:var(--mu);cursor:pointer;font-family:var(--font);transition:all .2s}
+.auth-tab.active{background:var(--s);color:var(--dk);box-shadow:0 2px 8px rgba(0,0,0,.08)}
+.auth-field{margin-bottom:16px}
+.auth-field label{display:block;font-size:12px;font-weight:700;color:var(--mu);text-transform:uppercase;letter-spacing:.5px;margin-bottom:6px}
+.auth-input{width:100%;padding:13px 16px;border:1.5px solid var(--bo);border-radius:12px;font-size:15px;font-family:var(--font);background:var(--bg);color:var(--dk);transition:all .2s;outline:none}
+.auth-input:focus{border-color:var(--or);box-shadow:0 0 0 3px rgba(232,88,12,.12)}
+.auth-btn{width:100%;padding:15px;border-radius:14px;background:var(--or);color:#fff;border:none;font-size:16px;font-weight:700;cursor:pointer;font-family:var(--font);transition:all .2s;margin-top:8px}
+.auth-btn:hover{opacity:.9;transform:translateY(-1px)}
+.auth-btn:disabled{opacity:.5;cursor:default;transform:none}
+.auth-err{background:#FEF2F2;border:1px solid #FECACA;border-radius:10px;padding:10px 14px;font-size:13px;color:#DC2626;margin-bottom:16px;display:none}
+html.dark .auth-err{background:#2D1515;border-color:#7F1D1D;color:#FCA5A5}
+.auth-ok{background:#F0FDF4;border:1px solid #BBF7D0;border-radius:10px;padding:10px 14px;font-size:13px;color:#15803D;margin-bottom:16px;display:none}
+html.dark .auth-ok{background:#0F2D1C;border-color:#166534;color:#86EFAC}
+.auth-link{text-align:center;margin-top:16px;font-size:13px;color:var(--mu)}
+.auth-link button{background:none;border:none;color:var(--or);font-weight:600;cursor:pointer;font-size:13px;font-family:var(--font)}
+.auth-panel{display:none}.auth-panel.active{display:block}
+.auth-divider{text-align:center;font-size:12px;color:var(--mu);margin:16px 0;position:relative}
+.auth-divider::before{content:'';position:absolute;top:50%;left:0;right:0;height:1px;background:var(--bo)}
+.auth-divider span{position:relative;background:var(--s);padding:0 10px}
+/* Cloud sync status in profile */
+.cloud-status{display:flex;align-items:center;gap:10px;background:var(--bg2);border:1px solid var(--bo);border-radius:12px;padding:12px 16px;margin-bottom:20px;font-size:13px}
+.cloud-status .cs-icon{font-size:20px;flex-shrink:0}
+.cloud-status .cs-info{flex:1}
+.cloud-status .cs-email{font-weight:700;color:var(--dk);font-size:14px}
+.cloud-status .cs-sub{color:var(--mu);font-size:12px}
+.cloud-status .cs-logout{padding:6px 14px;border-radius:8px;border:1px solid var(--bo);background:var(--s);color:var(--dk);font-size:12px;font-weight:600;cursor:pointer;font-family:var(--font);flex-shrink:0;transition:all .2s}
+.cloud-status .cs-logout:hover{border-color:#EF4444;color:#EF4444}
+.cloud-setup{background:var(--orl);border:1px solid rgba(232,88,12,.2);border-radius:12px;padding:14px 16px;margin-bottom:20px;font-size:13px;color:var(--or)}
+.cloud-setup a{color:var(--or);font-weight:700}
+.prof-section-sub{font-size:13px;color:var(--mu);margin-bottom:16px}
 .prof-page-header{margin-bottom:32px}
 .prof-page-header h2{font-size:28px;font-weight:800;margin-bottom:6px}
 .prof-page-header p{color:var(--mu);font-size:15px}
@@ -1273,6 +1310,38 @@ html.dark .calc-btn{background:#2e3550}
 </div>
 </div>
 
+<!-- AUTH -->
+<div id="sc-auth" class="sc">
+<nav class="nav"><div class="nav-inner"><div class="logo" onclick="show('sc-home')"><div class="logo-dot"></div>ExamenApp</div><button class="bk" onclick="show('sc-home')">← Terug</button><button class="theme-btn" onclick="toggleDark()" title="Nachtmodus" style="margin-left:auto"><svg viewBox="0 0 24 24"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg></button></div></nav>
+<div class="auth-wrap">
+  <div class="auth-logo"><span class="logo-dot"></span><h1>ExamenApp</h1></div>
+  <div class="auth-card">
+    <div class="auth-tabs">
+      <button class="auth-tab active" id="auth-tab-login" onclick="switchAuthTab('login')">Inloggen</button>
+      <button class="auth-tab" id="auth-tab-register" onclick="switchAuthTab('register')">Registreren</button>
+    </div>
+    <!-- Login panel -->
+    <div class="auth-panel active" id="auth-panel-login">
+      <div class="auth-err" id="auth-err-login"></div>
+      <div class="auth-ok" id="auth-ok-login"></div>
+      <div class="auth-field"><label>E-mailadres</label><input class="auth-input" id="login-email" type="email" placeholder="jouw@email.nl" autocomplete="email"></div>
+      <div class="auth-field"><label>Wachtwoord</label><input class="auth-input" id="login-pass" type="password" placeholder="••••••••" autocomplete="current-password" onkeydown="if(event.key==='Enter')doLogin()"></div>
+      <button class="auth-btn" id="login-btn" onclick="doLogin()">Inloggen</button>
+      <div class="auth-link"><button onclick="doForgotPassword()">Wachtwoord vergeten?</button></div>
+    </div>
+    <!-- Register panel -->
+    <div class="auth-panel" id="auth-panel-register">
+      <div class="auth-err" id="auth-err-register"></div>
+      <div class="auth-field"><label>Jouw naam</label><input class="auth-input" id="reg-naam" type="text" placeholder="Voornaam" autocomplete="name"></div>
+      <div class="auth-field"><label>E-mailadres</label><input class="auth-input" id="reg-email" type="email" placeholder="jouw@email.nl" autocomplete="email"></div>
+      <div class="auth-field"><label>Wachtwoord <span style="font-weight:400;text-transform:none;letter-spacing:0">(minimaal 6 tekens)</span></label><input class="auth-input" id="reg-pass" type="password" placeholder="••••••••" autocomplete="new-password" onkeydown="if(event.key==='Enter')doRegister()"></div>
+      <button class="auth-btn" id="register-btn" onclick="doRegister()">Account aanmaken</button>
+    </div>
+  </div>
+</div>
+</div>
+
+<!-- PROFIEL -->
 <div id="sc-profiel" class="sc">
 <nav class="nav"><div class="nav-inner"><div class="logo" onclick="show('sc-home')"><div class="logo-dot"></div>ExamenApp</div><button class="bk" onclick="show('sc-home')">← Terug</button><button class="theme-btn" onclick="toggleDark()" title="Nachtmodus" style="margin-left:auto"><svg viewBox="0 0 24 24"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg></button></div></nav>
 <div class="w prof-wrap">
@@ -1281,10 +1350,13 @@ html.dark .calc-btn{background:#2e3550}
     <p>Vul je gegevens in en importeer je SE-cijfers vanuit Magister of SomToday.</p>
   </div>
 
+  <!-- Cloud sync status -->
+  <div id="cloud-status-bar"></div>
+
   <!-- Persoonlijke gegevens -->
   <div class="prof-section">
     <div class="prof-section-title">Persoonlijke gegevens</div>
-    <div class="prof-section-sub">Wordt lokaal opgeslagen op dit apparaat</div>
+    <div class="prof-section-sub" id="prof-sub-text">Wordt lokaal opgeslagen op dit apparaat</div>
 
     <!-- Avatar preview + picker -->
     <div class="av-preview-row">
@@ -1411,6 +1483,10 @@ html.dark .calc-btn{background:#2e3550}
   </div>
 </div>
 
+<!-- Firebase SDK (compat) — must load before app script -->
+<script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-auth-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-firestore-compat.js"></script>
 <script>
 // ═══════ DATA ═══════
 const VAKKEN = [
@@ -2138,6 +2214,173 @@ function buildGrid(){
   });
 }
 
+// ═══════ FIREBASE ═══════
+const FIREBASE_CONFIG={
+  apiKey:"JOUW_API_KEY",
+  authDomain:"JOUW_PROJECT.firebaseapp.com",
+  projectId:"JOUW_PROJECT_ID",
+  storageBucket:"JOUW_PROJECT.appspot.com",
+  messagingSenderId:"JOUW_SENDER_ID",
+  appId:"JOUW_APP_ID"
+};
+const FB_ENABLED=FIREBASE_CONFIG.apiKey!=="JOUW_API_KEY";
+let db=null,fbAuth=null,currentUser=null;
+if(FB_ENABLED){
+  try{
+    firebase.initializeApp(FIREBASE_CONFIG);
+    fbAuth=firebase.auth();
+    db=firebase.firestore();
+    fbAuth.onAuthStateChanged(user=>{
+      currentUser=user;
+      updateProfileNav();
+      updateCloudStatusBar();
+      if(user)syncFromFirestore();
+    });
+  }catch(e){console.warn('Firebase init failed:',e);}
+}
+
+async function cloudSet(col,data){
+  const lsKey='examenapp_'+col;
+  localStorage.setItem(lsKey,JSON.stringify(data));
+  if(!currentUser||!db)return;
+  try{await db.doc(`users/${currentUser.uid}/${col}/data`).set(data,{merge:true});}
+  catch(e){console.warn('cloudSet error:',e);}
+}
+async function cloudGet(col,def){
+  if(!currentUser||!db)
+    return JSON.parse(localStorage.getItem('examenapp_'+col)||JSON.stringify(def));
+  try{
+    const snap=await db.doc(`users/${currentUser.uid}/${col}/data`).get();
+    return snap.exists?snap.data():def;
+  }catch(e){
+    return JSON.parse(localStorage.getItem('examenapp_'+col)||JSON.stringify(def));
+  }
+}
+async function syncFromFirestore(){
+  try{
+    const [prof,grades,prog,streak,favs,mijn]=await Promise.all([
+      cloudGet('profiel',{}),cloudGet('cijfers',{}),
+      cloudGet('progress',{}),cloudGet('streak',{}),
+      cloudGet('favs',{list:[]}),cloudGet('mijnvakken',{list:[]})
+    ]);
+    localStorage.setItem(PROF_KEY,JSON.stringify(prof));
+    localStorage.setItem(CIJFER_KEY,JSON.stringify(grades));
+    localStorage.setItem('examenapp_progress',JSON.stringify(prog));
+    localStorage.setItem('examenapp_streak',JSON.stringify(streak));
+    localStorage.setItem('examenapp_favs',JSON.stringify(favs.list||[]));
+    localStorage.setItem('examenapp_mijnvakken',JSON.stringify(mijn.list||[]));
+    updateProfileNav();renderStreak();renderFavHome();buildGrid();
+  }catch(e){console.warn('syncFromFirestore error:',e);}
+}
+
+function authErrMsg(code){
+  const map={
+    'auth/invalid-email':'Ongeldig e-mailadres.',
+    'auth/user-not-found':'Geen account gevonden met dit e-mailadres.',
+    'auth/wrong-password':'Onjuist wachtwoord.',
+    'auth/invalid-credential':'Onjuist e-mailadres of wachtwoord.',
+    'auth/email-already-in-use':'Dit e-mailadres is al in gebruik.',
+    'auth/weak-password':'Wachtwoord moet minimaal 6 tekens zijn.',
+    'auth/too-many-requests':'Te veel pogingen. Probeer het later opnieuw.',
+    'auth/network-request-failed':'Geen internetverbinding.',
+  };
+  return map[code]||'Er is iets misgegaan. Probeer het opnieuw.';
+}
+
+function switchAuthTab(tab){
+  document.getElementById('auth-tab-login').classList.toggle('active',tab==='login');
+  document.getElementById('auth-tab-register').classList.toggle('active',tab==='register');
+  document.getElementById('auth-panel-login').classList.toggle('active',tab==='login');
+  document.getElementById('auth-panel-register').classList.toggle('active',tab==='register');
+  document.getElementById('auth-err-login').style.display='none';
+  document.getElementById('auth-err-register').style.display='none';
+}
+
+async function doLogin(){
+  if(!FB_ENABLED)return;
+  const email=document.getElementById('login-email').value.trim();
+  const pass=document.getElementById('login-pass').value;
+  const errEl=document.getElementById('auth-err-login');
+  const okEl=document.getElementById('auth-ok-login');
+  const btn=document.getElementById('login-btn');
+  errEl.style.display='none';okEl.style.display='none';
+  if(!email||!pass){errEl.textContent='Vul je e-mail en wachtwoord in.';errEl.style.display='block';return;}
+  btn.disabled=true;btn.textContent='Bezig...';
+  try{
+    await fbAuth.signInWithEmailAndPassword(email,pass);
+    show('sc-home');
+  }catch(e){
+    errEl.textContent=authErrMsg(e.code);errEl.style.display='block';
+  }finally{btn.disabled=false;btn.textContent='Inloggen';}
+}
+
+async function doRegister(){
+  if(!FB_ENABLED)return;
+  const naam=document.getElementById('reg-naam').value.trim();
+  const email=document.getElementById('reg-email').value.trim();
+  const pass=document.getElementById('reg-pass').value;
+  const errEl=document.getElementById('auth-err-register');
+  const btn=document.getElementById('register-btn');
+  errEl.style.display='none';
+  if(!naam){errEl.textContent='Vul je naam in.';errEl.style.display='block';return;}
+  if(!email||!pass){errEl.textContent='Vul je e-mail en wachtwoord in.';errEl.style.display='block';return;}
+  btn.disabled=true;btn.textContent='Bezig...';
+  try{
+    const cred=await fbAuth.createUserWithEmailAndPassword(email,pass);
+    // Save naam to profile immediately
+    const prof={naam,avatar:AVATARS[4].e,school:'',klas:'',profiel:''};
+    localStorage.setItem(PROF_KEY,JSON.stringify(prof));
+    await cloudSet('profiel',prof);
+    show('sc-home');updateProfileNav();
+  }catch(e){
+    errEl.textContent=authErrMsg(e.code);errEl.style.display='block';
+  }finally{btn.disabled=false;btn.textContent='Account aanmaken';}
+}
+
+async function doForgotPassword(){
+  const email=document.getElementById('login-email').value.trim();
+  const errEl=document.getElementById('auth-err-login');
+  const okEl=document.getElementById('auth-ok-login');
+  errEl.style.display='none';okEl.style.display='none';
+  if(!email){errEl.textContent='Vul eerst je e-mailadres in.';errEl.style.display='block';return;}
+  try{
+    await fbAuth.sendPasswordResetEmail(email);
+    okEl.textContent='✓ Herstelmail verstuurd! Controleer je inbox.';okEl.style.display='block';
+  }catch(e){errEl.textContent=authErrMsg(e.code);errEl.style.display='block';}
+}
+
+function doLogout(){
+  if(fbAuth)fbAuth.signOut();
+  currentUser=null;
+  updateProfileNav();updateCloudStatusBar();
+  show('sc-home');
+}
+
+function updateCloudStatusBar(){
+  const bar=document.getElementById('cloud-status-bar');
+  const sub=document.getElementById('prof-sub-text');
+  if(!bar)return;
+  if(!FB_ENABLED){
+    bar.innerHTML=`<div class="cloud-setup">☁️ <strong>Cloud-sync uitgeschakeld.</strong> Maak een gratis project aan op <a href="https://firebase.google.com" target="_blank" rel="noopener">firebase.google.com</a> en vul de config in om op elk apparaat in te loggen.</div>`;
+    return;
+  }
+  if(currentUser){
+    bar.innerHTML=`<div class="cloud-status">
+      <div class="cs-icon">☁️</div>
+      <div class="cs-info"><div class="cs-email">${currentUser.displayName||currentUser.email}</div><div class="cs-sub">Gesynchroniseerd · ${currentUser.email}</div></div>
+      <button class="cs-logout" onclick="doLogout()">Uitloggen</button>
+    </div>`;
+    if(sub)sub.textContent='Wordt gesynchroniseerd met je account ☁️';
+  }else{
+    bar.innerHTML=`<div class="cloud-status" style="cursor:pointer" onclick="show('sc-auth')">
+      <div class="cs-icon">🔑</div>
+      <div class="cs-info"><div class="cs-email">Niet ingelogd</div><div class="cs-sub">Log in om je data te synchroniseren</div></div>
+      <button class="cs-logout" style="border-color:var(--or);color:var(--or)" onclick="show('sc-auth')">Inloggen</button>
+    </div>`;
+    if(sub)sub.textContent='Wordt lokaal opgeslagen op dit apparaat';
+  }
+}
+
 // ═══════ PROFIEL & CIJFERS ═══════
 const PROF_KEY='examenapp_profiel';
 const CIJFER_KEY='examenapp_cijfers';
@@ -2214,7 +2457,7 @@ function saveProfileData(){
     profiel:document.getElementById('pf-profiel').value,
     avatar:selectedAvatar,
   };
-  localStorage.setItem(PROF_KEY,JSON.stringify(p));
+  cloudSet('profiel',p);
   const msg=document.getElementById('pf-saved-msg');
   msg.classList.add('show');
   setTimeout(()=>msg.classList.remove('show'),2500);
@@ -2249,7 +2492,7 @@ function saveCijfers(){
       if(!isNaN(n)&&n>=1&&n<=10)saved[v.id]=Math.round(n*10)/10;
     }
   });
-  localStorage.setItem(CIJFER_KEY,JSON.stringify(saved));
+  cloudSet('cijfers',saved);
   const msg=document.getElementById('cijfer-saved-msg');
   msg.classList.add('show');
   setTimeout(()=>msg.classList.remove('show'),2500);
@@ -2340,7 +2583,7 @@ function doImport(app){
   }
   const existing=getSavedCijfers();
   const merged={...existing,...parsed};
-  localStorage.setItem(CIJFER_KEY,JSON.stringify(merged));
+  cloudSet('cijfers',merged);
   buildCijferGrid();
   result.textContent=`✓ ${keys.length} vak${keys.length===1?'':'ken'} geïmporteerd: ${keys.map(k=>VAKKEN.find(v=>v.id===k)?.naam||k).join(', ')}`;
   result.className='import-result ok';
@@ -2348,9 +2591,13 @@ function doImport(app){
 }
 
 function updateProfileNav(){
-  const p=JSON.parse(localStorage.getItem(PROF_KEY)||'{}');
   const btn=document.getElementById('home-prof-btn');
   if(!btn)return;
+  if(FB_ENABLED&&!currentUser){
+    btn.innerHTML='🔑 Inloggen';
+    return;
+  }
+  const p=JSON.parse(localStorage.getItem(PROF_KEY)||'{}');
   if(p.naam&&p.avatar){
     btn.innerHTML=`<div class="pnb-avatar" style="background:transparent;font-size:16px">${p.avatar}</div><span>${p.naam.split(' ')[0]}</span>`;
   }else if(p.naam){
@@ -2362,8 +2609,10 @@ function updateProfileNav(){
 }
 
 function openProfiel(){
+  if(FB_ENABLED&&!currentUser){show('sc-auth');return;}
   loadProfile();
   buildCijferGrid();
+  updateCloudStatusBar();
   show('sc-profiel');
 }
 
@@ -2686,19 +2935,39 @@ function switchMode(){show('sc-qmode');}
 // ═══════ LEADERBOARD ═══════
 const LB_KEY='examenapp_leaderboard';
 function getLbEntries(){try{return JSON.parse(localStorage.getItem(LB_KEY)||'[]');}catch(e){return[];}}
-function saveLeaderboardEntry(entry){
+async function saveLeaderboardEntry(entry){
+  // Add uid for identity when logged in
+  if(currentUser)entry.uid=currentUser.uid;
+  // Save to local cache
   let all=getLbEntries();
   all.push(entry);
-  // Keep max 200 entries total; keep per user only best per vak+domein combo
-  // Sort by score desc and keep top 200
   all.sort((a,b)=>b.score-a.score);
   if(all.length>200)all=all.slice(0,200);
   localStorage.setItem(LB_KEY,JSON.stringify(all));
+  // Save to Firestore global leaderboard (cross-user)
+  if(currentUser&&db){
+    try{await db.collection('leaderboard').add(entry);}
+    catch(e){console.warn('leaderboard save error:',e);}
+  }
+}
+async function loadLeaderboardFromFirestore(){
+  if(!db)return;
+  try{
+    const snap=await db.collection('leaderboard').orderBy('score','desc').limit(200).get();
+    const entries=snap.docs.map(d=>d.data());
+    localStorage.setItem(LB_KEY,JSON.stringify(entries));
+  }catch(e){console.warn('leaderboard load error:',e);}
 }
 let lbVakFilter='all';
 function renderLeaderboard(){
+  // Load from Firestore in background, then re-render
+  if(db)loadLeaderboardFromFirestore().then(()=>_renderLbWithData());
+  else _renderLbWithData();
+}
+function _renderLbWithData(){
   const all=getLbEntries();
   const prof=JSON.parse(localStorage.getItem(PROF_KEY)||'{}');
+  const myUid=currentUser?currentUser.uid:null;
   const myNaam=prof.naam||null;
 
   // Build filter buttons
@@ -2734,8 +3003,8 @@ function renderLeaderboard(){
   deduped.sort((a,b)=>b.score-a.score);
   const top=deduped.slice(0,10);
 
-  // My best score in current filter
-  const myEntries=filtered.filter(e=>e.naam===myNaam);
+  // My best score in current filter (match on uid if available, else name)
+  const myEntries=filtered.filter(e=>myUid?(e.uid===myUid):(myNaam&&e.naam===myNaam));
   const myBest=myEntries.sort((a,b)=>b.score-a.score)[0]||null;
   const myRank=myBest?deduped.findIndex(e=>e.naam===myBest.naam&&e.vak===myBest.vak&&e.domeinId===myBest.domeinId)+1:null;
   const myBox=document.getElementById('lb-myscore-box');
@@ -2857,7 +3126,7 @@ function saveProgress(vakId,domeinId,mode,score,total){
   p[key].attempts++;
   if(score>p[key].best)p[key].best=score;
   p[key].total=total;
-  localStorage.setItem('examenapp_progress',JSON.stringify(p));
+  cloudSet('progress',p);
 }
 function getVakProgress(vakId){
   const p=getProgress();
@@ -2913,7 +3182,7 @@ function toggleFav(vakId,domeinId){
   const key=`${vakId}_${domeinId}`;
   const idx=favs.indexOf(key);
   if(idx>=0)favs.splice(idx,1);else favs.push(key);
-  localStorage.setItem('examenapp_favs',JSON.stringify(favs));
+  cloudSet('favs',{list:favs});
   renderFavHome();
   return favs.includes(key);
 }
@@ -2954,7 +3223,7 @@ function recordPractice(){
   s.days=s.days.filter(d=>new Date(d)>=cutoff);
   if(!s.totalQuizzes)s.totalQuizzes=0;
   s.totalQuizzes++;
-  localStorage.setItem('examenapp_streak',JSON.stringify(s));
+  cloudSet('streak',s);
 }
 function calcStreak(){
   const s=getStreak();
@@ -3071,7 +3340,7 @@ const EXAM_SCHEDULE=[
 {datum:'2026-05-27',tijd:'13:30–16:00',vak:'Arabisch / Spaans / Turks',duur:'2,5 uur',havo:false}
 ];
 function getMijnVakken(){try{return JSON.parse(localStorage.getItem('examenapp_mijnvakken')||'[]');}catch(e){return [];}}
-function setMijnVakken(arr){localStorage.setItem('examenapp_mijnvakken',JSON.stringify(arr));}
+function setMijnVakken(arr){cloudSet('mijnvakken',{list:arr});}
 function renderSchedule(){
   const list=document.getElementById('schedule-list');
   const onlyMine=document.getElementById('sch-filter-mine').checked;
