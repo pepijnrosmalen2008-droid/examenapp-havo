@@ -2089,15 +2089,16 @@ const PROF_KEY='examenapp_profiel';
 const CIJFER_KEY='examenapp_cijfers';
 
 const VAK_NAAM_MAP={
-  'nederlands':'nl','ne':'nl','ned':'nl',
+  'nederlands':'nl','ne':'nl','ned':'nl','nederlandse taal en literatuur':'nl','ned. taal en lit.':'nl',
   'wiskunde a':'wa','wisk.a':'wa','wiskunde-a':'wa','wa':'wa',
   'biologie':'bi','bio':'bi',
   'scheikunde':'sk','schk':'sk',
   'natuurkunde':'na','natk':'na',
-  'bedrijfseconomie':'be','bedr.ec.':'be',
+  'bedrijfseconomie':'be','bedr.ec.':'be','bedrijfsec.':'be',
   'economie':'ec','eco':'ec',
-  'engels':'en','eng':'en',
+  'engels':'en','eng':'en','engelse taal en literatuur':'en','eng. taal en lit.':'en',
   'maatschappijwetenschappen':'mw','maatschappijwetensch.':'mw','m&m':'mw','mw':'mw',
+  'maatschappijleer':'mw','maatsch.leer':'mw',
   'geschiedenis':'gs','ges':'gs',
   'aardrijkskunde':'ak','aard':'ak',
   'wiskunde b':'wb','wisk.b':'wb','wiskunde-b':'wb','wb':'wb',
@@ -2190,15 +2191,45 @@ function toggleImportPanel(app){
 
 function parseCijferText(text){
   const found={};
-  const lines=text.split(/\n/).map(l=>l.trim()).filter(Boolean);
-  for(const line of lines){
-    const vakId=matchVakNaam(line.split(/\t|\s{2,}/)[0]);
+  // Split on newlines; also handle cases where "SE7,6" is directly glued to the subject line
+  // First normalize: insert newline before "SE" followed by a digit if it appears mid-line
+  const normalised=text.replace(/([a-zA-Z])(SE\s*\d)/g,'$1\n$2');
+  const lines=normalised.split(/\r?\n/).map(l=>l.trim()).filter(Boolean);
+
+  // Strategy: subject name on line N, grade "SE{x}" on line N+1
+  // Also handle tab-separated format: "Vak\tSE7,6"
+  for(let i=0;i<lines.length;i++){
+    const line=lines[i];
+
+    // Tab-separated or multi-space: "biologie\tSE7,6" on same line
+    const tabMatch=line.match(/^(.+?)[\t]{1,}SE\s*([0-9]{1,2}[,.][0-9]|[0-9]{1,2})\s*$/i);
+    if(tabMatch){
+      const vakId=matchVakNaam(tabMatch[1]);
+      if(vakId){
+        const g=parseFloat(tabMatch[2].replace(',','.'));
+        if(g>=1&&g<=10)found[vakId]=Math.round(g*10)/10;
+      }
+      continue;
+    }
+
+    // Check if this line IS an SE grade line
+    if(/^SE\s*[0-9]/i.test(line))continue;
+
+    // Try to match line as a subject name
+    const vakId=matchVakNaam(line);
     if(!vakId)continue;
-    const nums=[...line.matchAll(/\b(10|[1-9])[,.](\d)\b|\b(10|[1-9])\b/g)]
-      .map(m=>{const s=m[0].replace(',','.');return parseFloat(s);})
-      .filter(n=>n>=1&&n<=10);
-    if(nums.length>0){
-      found[vakId]=nums[nums.length-1];
+
+    // Look at the very next line for the SE grade
+    if(i+1<lines.length){
+      const next=lines[i+1];
+      const seMatch=next.match(/^SE\s*([0-9]{1,2}[,.]?[0-9]?)\s*$/i);
+      if(seMatch){
+        const g=parseFloat(seMatch[1].replace(',','.'));
+        if(g>=1&&g<=10){
+          found[vakId]=Math.round(g*10)/10;
+          i++; // consume the grade line
+        }
+      }
     }
   }
   return found;
