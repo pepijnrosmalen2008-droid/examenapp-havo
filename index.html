@@ -43,7 +43,7 @@ h1,h2,h3,h4{font-family:var(--font-head);line-height:1.2;letter-spacing:-.3px}
 .nav-btn:hover{background:var(--bg2);border-color:var(--bo2);transform:translateY(-1px)}
 .bk{color:var(--mu);font-size:14px;cursor:pointer;padding:6px 14px;border-radius:10px;border:1px solid var(--bo);background:var(--s);transition:all .2s;font-family:var(--font)}
 .bk:hover{background:var(--bg2)}
-.hbg{margin-left:auto;padding:3px 10px;border-radius:20px;font-size:11px;font-weight:600;background:#FEF3C7;color:#92400E;letter-spacing:.2px}
+.hbg{margin-left:auto;padding:3px 10px;border-radius:20px;font-size:11px;font-weight:600;background:var(--orl);color:var(--or);border:1px solid var(--or);letter-spacing:.2px;opacity:.9}
 
 /* ── FOOTER ──────────────────────────────────── */
 .site-footer{margin-top:48px;padding:28px 0 36px;border-top:1px solid var(--bo);text-align:center;font-size:13px;color:var(--mu);line-height:2}
@@ -166,7 +166,7 @@ h1,h2,h3,h4{font-family:var(--font-head);line-height:1.2;letter-spacing:-.3px}
 /* ── SLBL (legacy compat) ─────────────────────── */
 .slbl{font-size:11px;font-weight:700;color:var(--mu);text-transform:uppercase;letter-spacing:1px;margin-bottom:14px}
 /* ── QUIZ MODE ────────────────────────────────── */
-#sc-qmode{background:var(--dk)}
+#sc-qmode{background:#0A0C10}
 .qmw{padding:44px 24px;max-width:600px;margin:0 auto}
 .qmw h2{font-family:var(--font-head);color:#fff;font-size:28px;margin-bottom:8px}
 .qmsub{color:rgba(255,255,255,.45);font-size:15px;margin-bottom:32px}
@@ -242,7 +242,7 @@ h1,h2,h3,h4{font-family:var(--font-head);line-height:1.2;letter-spacing:-.3px}
 .ab-icon{font-size:20px}
 .ab-txt{font-size:12px}
 /* results */
-#sc-res{background:linear-gradient(180deg, var(--dk) 0%, #141824 100%)}
+#sc-res{background:linear-gradient(180deg, #0A0C10 0%, #141824 100%)}
 .rb{padding:48px 28px;max-width:540px;margin:0 auto;text-align:center}
 .remi{font-size:56px;margin-bottom:16px}
 .rb h2{font-family:var(--font-head);font-size:34px;color:#fff;margin-bottom:10px}
@@ -336,7 +336,7 @@ h1,h2,h3,h4{font-family:var(--font-head);line-height:1.2;letter-spacing:-.3px}
 .badge-tooltip:hover::after{opacity:1}
 
 /* ── REVIEW SCREEN ───────────────────────────── */
-#sc-review{background:linear-gradient(180deg, var(--dk) 0%, #141824 100%)}
+#sc-review{background:linear-gradient(180deg, #0A0C10 0%, #141824 100%)}
 .review-wrap{padding:32px 24px;max-width:660px;margin:0 auto}
 .review-wrap h2{font-family:var(--font-head);color:#fff;font-size:26px;margin-bottom:6px}
 .review-sub{color:rgba(255,255,255,.4);font-size:14px;margin-bottom:24px}
@@ -479,7 +479,7 @@ h1,h2,h3,h4{font-family:var(--font-head);line-height:1.2;letter-spacing:-.3px}
 /* ── POMODORO OVERLAY ─────────────────────────── */
 .pomo-overlay{position:fixed;inset:0;background:rgba(0,0,0,.65);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);z-index:9999;display:flex;align-items:center;justify-content:center;opacity:0;pointer-events:none;transition:opacity .35s}
 .pomo-overlay.show{opacity:1;pointer-events:auto}
-.pomo-overlay-card{background:#fff;border-radius:24px;padding:40px 32px;text-align:center;max-width:360px;width:90%;box-shadow:0 20px 60px rgba(0,0,0,.25);animation:pomoPopIn .4s ease}
+.pomo-overlay-card{background:var(--s);border:1px solid var(--bo);border-radius:24px;padding:40px 32px;text-align:center;max-width:360px;width:90%;box-shadow:0 20px 60px rgba(0,0,0,.35);animation:pomoPopIn .4s ease}
 @keyframes pomoPopIn{from{transform:scale(.85) translateY(20px);opacity:0}to{transform:scale(1) translateY(0);opacity:1}}
 .pomo-overlay-icon{font-size:56px;margin-bottom:12px;animation:pomoBounce 1s ease infinite}
 @keyframes pomoBounce{0%,100%{transform:translateY(0)}50%{transform:translateY(-8px)}}
