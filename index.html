@@ -50,6 +50,32 @@ h1,h2,h3,h4{font-family:var(--font-head);line-height:1.2;letter-spacing:-.3px}
 .bk:hover{background:var(--bg2)}
 .hbg{margin-left:auto;padding:3px 10px;border-radius:20px;font-size:11px;font-weight:600;background:var(--orl);color:var(--or);border:1px solid var(--or);letter-spacing:.2px;opacity:.9}
 
+/* ── TUTORIAL OVERLAY ───────────────────────── */
+.tuto-overlay{position:fixed;inset:0;z-index:9999;background:rgba(0,0,0,.78);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);display:flex;align-items:center;justify-content:center;padding:20px}
+.tuto-card{background:var(--s);border:1px solid var(--bo);border-radius:24px;padding:36px 32px 28px;max-width:440px;width:100%;position:relative;box-shadow:0 24px 80px rgba(0,0,0,.6);animation:tutoIn .35s cubic-bezier(.34,1.56,.64,1)}
+@keyframes tutoIn{from{opacity:0;transform:scale(.88) translateY(16px)}to{opacity:1;transform:none}}
+.tuto-skip{position:absolute;top:14px;right:14px;background:none;border:none;color:var(--mu);font-size:13px;cursor:pointer;padding:4px 10px;border-radius:8px;font-family:var(--font);transition:color .15s}
+.tuto-skip:hover{color:var(--tx)}
+.tuto-slide{display:none;text-align:center;padding:8px 0 24px}
+.tuto-slide.active{display:block}
+.tuto-icon{font-size:52px;margin-bottom:18px;display:block;line-height:1}
+.tuto-slide h2{font-family:var(--font-head);font-size:22px;font-weight:800;margin-bottom:12px;color:var(--tx);letter-spacing:-.3px}
+.tuto-slide p{font-size:15px;color:var(--mu);line-height:1.75;max-width:340px;margin:0 auto}
+.tuto-slide p strong{color:var(--tx)}
+.tuto-dots{display:flex;justify-content:center;gap:8px;margin-bottom:24px}
+.tuto-dot{width:8px;height:8px;border-radius:50%;background:var(--bo);cursor:pointer;transition:all .25s}
+.tuto-dot.active{background:var(--or);width:24px;border-radius:4px}
+.tuto-btn-row{display:flex;justify-content:space-between;align-items:center;gap:12px}
+.tuto-btn-pri{flex:1;padding:13px 20px;background:var(--or);color:#fff;border:none;border-radius:12px;font-size:15px;font-weight:700;cursor:pointer;font-family:var(--font);transition:opacity .2s}
+.tuto-btn-pri:hover{opacity:.85}
+.tuto-btn-sec{padding:13px 16px;background:none;border:1px solid var(--bo);color:var(--mu);border-radius:12px;font-size:14px;cursor:pointer;font-family:var(--font);transition:all .2s}
+.tuto-btn-sec:hover{color:var(--tx);border-color:var(--mu)}
+@media(max-width:640px){
+  .tuto-card{padding:28px 20px 22px;border-radius:20px;margin-bottom:70px}
+  .tuto-icon{font-size:44px}
+  .tuto-slide h2{font-size:19px}
+  .tuto-slide p{font-size:14px}
+}
 /* ── FOOTER ──────────────────────────────────── */
 .site-footer{margin-top:48px;padding:28px 0 36px;border-top:1px solid var(--bo);text-align:center;font-size:13px;color:var(--mu);line-height:2}
 .site-footer a{color:var(--mu);text-decoration:underline;text-underline-offset:3px;transition:color .2s}
@@ -3978,6 +4004,49 @@ function togglePomo(){
 
 function resetPomo(){clearInterval(POMO.timer);clearInterval(POMO.breakTimer);POMO.running=false;POMO.mode='study';POMO.seconds=25*60;dismissPomoOverlay();renderPomo();}
 
+// ═══════ TUTORIAL ═══════
+const TUTO_KEY='examio_tutorial_done';
+const TUTO_TOTAL=5;
+let tutIdx=0;
+function showTutorial(){
+  if(localStorage.getItem(TUTO_KEY))return;
+  tutIdx=0;
+  _updateTuto();
+  document.getElementById('tuto-overlay').style.display='flex';
+}
+function closeTutorial(){
+  localStorage.setItem(TUTO_KEY,'1');
+  document.getElementById('tuto-overlay').style.display='none';
+}
+function tutSlide(dir){
+  tutIdx=Math.max(0,Math.min(TUTO_TOTAL-1,tutIdx+dir));
+  _updateTuto();
+}
+function _updateTuto(){
+  document.querySelectorAll('#tuto-slides .tuto-slide').forEach((s,i)=>s.classList.toggle('active',i===tutIdx));
+  // dots
+  const dots=document.getElementById('tuto-dots');
+  dots.innerHTML='';
+  for(let i=0;i<TUTO_TOTAL;i++){
+    const d=document.createElement('span');
+    d.className='tuto-dot'+(i===tutIdx?' active':'');
+    d.onclick=()=>{tutIdx=i;_updateTuto();};
+    dots.appendChild(d);
+  }
+  // prev button
+  const prev=document.getElementById('tuto-prev');
+  prev.style.visibility=tutIdx===0?'hidden':'visible';
+  // next button
+  const next=document.getElementById('tuto-next');
+  if(tutIdx===TUTO_TOTAL-1){
+    next.textContent='Aan de slag! 🚀';
+    next.onclick=closeTutorial;
+  } else {
+    next.textContent='Volgende →';
+    next.onclick=()=>tutSlide(1);
+  }
+}
+
 // ═══════ LEVEL SELECT ═══════
 function chooseLevel(level){
   APP_LEVEL=level;
@@ -3985,6 +4054,7 @@ function chooseLevel(level){
   updateLevelChip();
   buildGrid();
   show('sc-home');
+  setTimeout(showTutorial,400);
 }
 function updateLevelChip(){
   const chip=document.getElementById('home-level-chip');
@@ -4059,6 +4129,45 @@ window.show=function(id){_origShow(id);updateBottomNav(id);};
     <div class="pomo-overlay-btns">
       <button class="pomo-overlay-btn secondary" onclick="dismissPomoOverlay()">Sluiten</button>
       <button class="pomo-overlay-btn primary" id="pomo-ov-action" onclick="startBreakFromOverlay()">▶ Start pauze</button>
+    </div>
+  </div>
+</div>
+
+<!-- TUTORIAL OVERLAY -->
+<div id="tuto-overlay" class="tuto-overlay" style="display:none">
+  <div class="tuto-card">
+    <button class="tuto-skip" onclick="closeTutorial()">Overslaan ✕</button>
+    <div id="tuto-slides">
+      <div class="tuto-slide active">
+        <span class="tuto-icon">👋</span>
+        <h2>Welkom bij Examio!</h2>
+        <p>De gratis app voor je eindexamen. In een paar stappen laat ik zien hoe je de app het best gebruikt — zodat je zo snel mogelijk klaar bent.</p>
+      </div>
+      <div class="tuto-slide">
+        <span class="tuto-icon">📚</span>
+        <h2>Oefen per domein</h2>
+        <p>Kies een vak op de homepagina en tik op een <strong>CE-domein</strong>. Je ziet precies welke stof op het examen komt — inclusief een samenvatting om te lezen.</p>
+      </div>
+      <div class="tuto-slide">
+        <span class="tuto-icon">⚡</span>
+        <h2>Snelle quiz</h2>
+        <p>Beantwoord vragen zo <strong>snel en correct</strong> mogelijk. Je score hangt af van nauwkeurigheid én snelheid. Daarna zie je jouw voortgang per domein als percentage.</p>
+      </div>
+      <div class="tuto-slide">
+        <span class="tuto-icon">⭐</span>
+        <h2>Favorieten & streak</h2>
+        <p>Sla domeinen op met <strong>⭐</strong> zodat je ze snel terugvindt op de homepagina. Oefen elke dag om je streak op te bouwen en badges te verdienen!</p>
+      </div>
+      <div class="tuto-slide">
+        <span class="tuto-icon">☁️</span>
+        <h2>Maak een account</h2>
+        <p>Log gratis in via <strong>🔑 Inloggen</strong> om je voortgang, cijfers en favorieten op elk apparaat te bewaren. Je doet dan ook mee op het leaderboard!</p>
+      </div>
+    </div>
+    <div class="tuto-dots" id="tuto-dots"></div>
+    <div class="tuto-btn-row">
+      <button class="tuto-btn-sec" id="tuto-prev" onclick="tutSlide(-1)">← Vorige</button>
+      <button class="tuto-btn-pri" id="tuto-next" onclick="tutSlide(1)">Volgende →</button>
     </div>
   </div>
 </div>
