@@ -158,8 +158,9 @@ h1,h2,h3,h4{font-family:var(--font-head);line-height:1.2;letter-spacing:-.3px}
 .fm{display:inline-block;background:var(--s);border:1px solid #C5D9F5;border-radius:6px;padding:2px 8px;font-family:monospace;font-size:12px;color:#1a56c4;margin:2px 3px}
 
 /* ── THEME TOGGLE ─────────────────────────────── */
-.theme-btn{width:40px;height:40px;border-radius:10px;border:1px solid var(--bo);background:var(--s);font-size:17px;cursor:pointer;display:flex;align-items:center;justify-content:center;transition:all .2s;flex-shrink:0;line-height:1}
+.theme-btn{width:40px;height:40px;border-radius:10px;border:1px solid var(--bo);background:var(--s);font-size:17px;cursor:pointer;display:flex;align-items:center;justify-content:center;transition:all .2s;flex-shrink:0;line-height:1;color:var(--mu)}
 .theme-btn:hover{background:var(--bg2);border-color:var(--bo2);transform:rotate(15deg)}
+.theme-btn svg{width:18px;height:18px;stroke:currentColor;fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
 /* ── SLBL (legacy compat) ─────────────────────── */
 .slbl{font-size:11px;font-weight:700;color:var(--mu);text-transform:uppercase;letter-spacing:1px;margin-bottom:14px}
 /* ── QUIZ MODE ────────────────────────────────── */
@@ -171,7 +172,8 @@ h1,h2,h3,h4{font-family:var(--font-head);line-height:1.2;letter-spacing:-.3px}
 @media(max-width:480px){.qmc{grid-template-columns:1fr}}
 .qmcd{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.1);border-radius:16px;padding:26px 22px;cursor:pointer;transition:all .25s}
 .qmcd:hover{background:rgba(255,255,255,.11);transform:translateY(-3px);box-shadow:0 8px 24px rgba(0,0,0,.3)}
-.qmci{font-size:30px;margin-bottom:12px}
+.qmci{font-size:30px;margin-bottom:12px;opacity:.85}
+.qmci svg{width:32px;height:32px;stroke:rgba(255,255,255,.8);fill:none;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
 .qmcd h3{font-family:var(--font-head);color:#fff;font-size:18px;margin-bottom:6px;font-weight:700}
 .qmcd p{color:rgba(255,255,255,.5);font-size:13px;line-height:1.7}
 .pill{display:inline-block;margin-top:10px;padding:4px 12px;border-radius:12px;font-size:12px;font-weight:600}
@@ -475,9 +477,11 @@ h1,h2,h3,h4{font-family:var(--font-head);line-height:1.2;letter-spacing:-.3px}
 /* ── MOBILE BOTTOM NAV ────────────────────────── */
 .bottom-nav{display:none;position:fixed;bottom:0;left:0;right:0;background:var(--nav-bg);backdrop-filter:blur(16px);border-top:1px solid var(--bo);z-index:200;padding:6px 0 env(safe-area-inset-bottom,8px);box-shadow:0 -2px 16px rgba(0,0,0,.06)}
 .bottom-nav-inner{display:flex;justify-content:space-around;align-items:center;max-width:480px;margin:0 auto}
-.bnav-btn{display:flex;flex-direction:column;align-items:center;gap:3px;background:none;border:none;color:var(--mu);font-size:10px;font-weight:600;cursor:pointer;padding:6px 12px;border-radius:10px;transition:all .2s;font-family:var(--font);-webkit-tap-highlight-color:transparent}
-.bnav-btn .bnav-icon{font-size:22px;line-height:1}
+.bnav-btn{display:flex;flex-direction:column;align-items:center;gap:4px;background:none;border:none;color:var(--mu);font-size:10px;font-weight:600;cursor:pointer;padding:6px 12px;border-radius:10px;transition:all .2s;font-family:var(--font);-webkit-tap-highlight-color:transparent;letter-spacing:.3px}
+.bnav-btn .bnav-icon{width:22px;height:22px;display:flex;align-items:center;justify-content:center}
+.bnav-btn .bnav-icon svg{width:22px;height:22px;stroke:currentColor;transition:stroke .2s}
 .bnav-btn.active{color:var(--or)}
+.bnav-btn.active .bnav-icon svg{stroke:var(--or)}
 .bnav-btn:active{transform:scale(0.92)}
 
 /* ── MOBILE RESPONSIVE ───────────────────────── */
@@ -744,7 +748,7 @@ h1,h2,h3,h4{font-family:var(--font-head);line-height:1.2;letter-spacing:-.3px}
   <div class="nav-inner">
     <div class="logo"><div class="logo-dot"></div>ExamenApp</div>
     <span class="nav-chip">2026</span>
-    <button class="theme-btn" onclick="toggleDark()" title="Nachtmodus">🌙</button>
+    <button class="theme-btn" onclick="toggleDark()" title="Nachtmodus"><svg viewBox="0 0 24 24"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg></button>
   </div>
 </nav>
 <div class="w">
@@ -796,10 +800,10 @@ h1,h2,h3,h4{font-family:var(--font-head);line-height:1.2;letter-spacing:-.3px}
       <div class="logo-dot"></div>ExamenApp
     </div>
     <span class="nav-chip">HAVO 2026</span>
-    <button class="nav-btn" onclick="show('sc-schedule')">📅 Rooster</button>
-    <button class="nav-btn" onclick="show('sc-calc')">🧮 Cijfers</button>
-    <button class="nav-btn" onclick="show('sc-info')">ℹ️ Info</button>
-    <button class="theme-btn" onclick="toggleDark()" title="Nachtmodus" id="theme-btn-home">🌙</button>
+    <button class="nav-btn" onclick="show('sc-schedule')">Rooster</button>
+    <button class="nav-btn" onclick="show('sc-calc')">Cijfers</button>
+    <button class="nav-btn" onclick="show('sc-info')">Info</button>
+    <button class="theme-btn" onclick="toggleDark()" title="Nachtmodus" id="theme-btn-home"><svg viewBox="0 0 24 24"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg></button>
   </div>
 </nav>
 <div class="w">
@@ -824,7 +828,7 @@ h1,h2,h3,h4{font-family:var(--font-head);line-height:1.2;letter-spacing:-.3px}
   <div id="streak-home"></div>
   <div id="pomo-home"></div>
   <div id="fav-home" class="fav-section" style="display:none">
-    <p class="sec-label">⭐ Favoriete domeinen</p>
+    <p class="sec-label">Favoriete domeinen</p>
     <div id="fav-chips" class="fav-chips"></div>
   </div>
   <div class="date-strip">
@@ -858,22 +862,22 @@ h1,h2,h3,h4{font-family:var(--font-head);line-height:1.2;letter-spacing:-.3px}
   <div class="nav-inner">
     <div class="logo" onclick="show('sc-home')"><div class="logo-dot"></div>ExamenApp</div>
     <button class="bk" onclick="show('sc-home')">← Terug</button>
-    <button class="theme-btn" onclick="toggleDark()" title="Nachtmodus" style="margin-left:auto" id="theme-btn-info">🌙</button>
+    <button class="theme-btn" onclick="toggleDark()" title="Nachtmodus" style="margin-left:auto" id="theme-btn-info"><svg viewBox="0 0 24 24"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg></button>
   </div>
 </nav>
 <div class="w" style="padding-top:28px">
   <h2 style="font-size:22px;margin-bottom:16px">Exameninformatie HAVO 2026</h2>
-  <div class="ibox"><div class="ihd" onclick="tog(this)"><h3>📅 Tijdvakken</h3><span>▼</span></div>
+  <div class="ibox"><div class="ihd" onclick="tog(this)"><h3>Tijdvakken</h3><span>▼</span></div>
   <div class="ibd"><div class="ir"><span>1e tijdvak</span><strong>8 mei – 27 mei 2026</strong></div><div class="ir"><span>Normering (N-term)</span><strong>11 juni 2026 om 08:00</strong></div><div class="ir"><span>2e tijdvak (herkansing)</span><strong>16 – 23 juni 2026</strong></div><div class="ir"><span>Uitslag 2e tijdvak</span><strong>30 juni 2026</strong></div><div class="ir"><span>3e tijdvak</span><strong>augustus 2026</strong></div><div class="ir"><span>Aanmelden 2e tijdvak</span><strong>vóór 12 juni 2026</strong></div><p style="margin-top:8px">Exacte datums per vak: <strong>examenblad.nl</strong></p></div></div>
-  <div class="ibox"><div class="ihd" onclick="tog(this)"><h3>🎯 Slaagregels HAVO</h3><span>▼</span></div>
+  <div class="ibox"><div class="ihd" onclick="tog(this)"><h3>Slaagregels HAVO</h3><span>▼</span></div>
   <div class="ibd"><p style="margin-bottom:8px"><strong>Alle 4 regels moeten tegelijk kloppen:</strong></p><ul><li><strong>Regel 1 — CE-gemiddelde:</strong> het onafgeronde gemiddelde van alle CE-cijfers moet ≥ 5,50 zijn (5,49 = gezakt)</li><li><strong>Regel 2 — Kernvakkenregel:</strong> voor NE, EN en WI (kernvakken) maximaal één 5 toegestaan. C&M zonder wiskunde: alleen NE + EN zijn kernvakken</li><li><strong>Regel 3 — Compensatie:</strong> geen eindcijfer lager dan 4. Bij één 4 of twee 5-en: gemiddelde van alle eindcijfers ≥ 6,0. Bij drie of meer onvoldoendes: gezakt.</li><li><strong>Regel 4 — LO:</strong> Lichamelijke Opvoeding moet voldoende of goed zijn</li></ul><p style="margin-top:10px"><strong>Cum laude:</strong> gemiddelde gemeenschappelijk + profieldeel + hoogste vrij-deel cijfer ≥ 8,0, en geen eindcijfer lager dan 6.</p></div></div>
-  <div class="ibox"><div class="ihd" onclick="tog(this)"><h3>📋 Toegestane hulpmiddelen</h3><span>▼</span></div>
+  <div class="ibox"><div class="ihd" onclick="tog(this)"><h3>Toegestane hulpmiddelen</h3><span>▼</span></div>
   <div class="ibd"><p style="margin-bottom:8px"><strong>Standaard basispakket (alle examens):</strong></p><ul><li>Schrijfmateriaal, millimeterpapier, tekenpotlood</li><li>Kleurpotloden (blauw + rood), liniaal, passer, geodriehoek</li><li>Gum, nietmachine, eenvoudige rekenmachine (niet-grafisch)</li><li>Eendelig verklarend woordenboek Nederlands</li></ul><p style="margin-top:10px"><strong>Per vak extra:</strong></p><ul><li><strong>Wiskunde A/B:</strong> Grafische rekenmachine verplicht in examenstand. Toegestaan 2026: Casio fx-CG50, HP Prime G2, TI-84 Plus CE-T, TI-Nspire CX (non-CAS), NumWorks N0110+. Let op: Casio fx-9860GII is niet meer toegestaan!</li><li><strong>Biologie, Natuurkunde, Scheikunde:</strong> BINAS 7e editie OF ScienceData (niet beide). Geen stickers of bladwijzers.</li><li><strong>Moderne vreemde talen:</strong> Tweetalig woordenboek (doeltaal ↔ thuistaal). Engels mag ook eentalig EN-EN. Digitale woordenboeken niet toegestaan.</li><li><strong>Aardrijkskunde:</strong> Geen atlas meer toegestaan (gewijzigd in 2021).</li></ul></div></div>
-  <div class="ibox"><div class="ihd" onclick="tog(this)"><h3>🧮 Cijferberekening</h3><span>▼</span></div>
+  <div class="ibox"><div class="ihd" onclick="tog(this)"><h3>Cijferberekening</h3><span>▼</span></div>
   <div class="ibd"><p>Eindcijfer = gemiddelde van SE en CE (doorgaans 50/50). Beide afzonderlijk afgerond, dan gemiddeld, dan afgerond op geheel getal.</p><div class="ir"><span>Eindcijfer</span><strong>(SE + CE) ÷ 2</strong></div></div></div>
-  <div class="ibox"><div class="ihd" onclick="tog(this)"><h3>✏️ Praktische tips</h3><span>▼</span></div>
+  <div class="ibox"><div class="ihd" onclick="tog(this)"><h3>Praktische tips</h3><span>▼</span></div>
   <div class="ibd"><ul><li><strong>Binas</strong> toegestaan bij SK en NA</li><li><strong>Grafische rekenmachine</strong> bij WI (deel 2)</li><li><strong>Woordenboek</strong> bij talen</li><li>Wees <strong>15 min</strong> voor aanvang aanwezig met geldig ID</li><li>Ziek? Meld vóór aanvang af → 2e tijdvak</li></ul></div></div>
-  <div class="ibox"><div class="ihd" onclick="tog(this)"><h3>📚 Profielen HAVO</h3><span>▼</span></div>
+  <div class="ibox"><div class="ihd" onclick="tog(this)"><h3>Profielen HAVO</h3><span>▼</span></div>
   <div class="ibd"><ul><li><strong>C&M:</strong> NE, EN, GS/AK, MA, WA/WB + keuzevakken</li><li><strong>E&M:</strong> NE, EN, EC, WA, MA + keuzevakken</li><li><strong>N&G:</strong> NE, EN, BI, SK/NA, WA/WB + keuzevakken</li><li><strong>N&T:</strong> NE, EN, NA, WB, SK/BI + keuzevakken</li></ul></div></div>
   <!-- Ad: info pagina (rustmoment, browsen) -->
   <div class="ad-wrapper" id="ad-info" style="margin-top:20px">
@@ -892,7 +896,7 @@ h1,h2,h3,h4{font-family:var(--font-head);line-height:1.2;letter-spacing:-.3px}
     <div class="logo" onclick="show('sc-home')"><div class="logo-dot"></div>ExamenApp</div>
     <button class="bk" onclick="show('sc-home')">← Vakken</button>
     <span class="hbg" style="margin-left:auto">HAVO</span>
-    <button class="theme-btn" onclick="toggleDark()" title="Nachtmodus" id="theme-btn-detail">🌙</button>
+    <button class="theme-btn" onclick="toggleDark()" title="Nachtmodus" id="theme-btn-detail"><svg viewBox="0 0 24 24"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg></button>
   </div>
 </nav>
 <div class="w" style="padding-top:24px">
@@ -921,9 +925,9 @@ h1,h2,h3,h4{font-family:var(--font-head);line-height:1.2;letter-spacing:-.3px}
     <h2>Kies quizmodus</h2>
     <p class="qmsub" id="qmsub"></p>
     <div class="qmc">
-      <div class="qmcd" onclick="startQ('snel')"><div class="qmci">⚡</div><h3>Snelle Quiz</h3><p>Korte vragen met 15 sec timer. Stamp leerstof in je geheugen.</p><span class="pill ps">⏱ 15 sec · 5 vragen</span></div>
-      <div class="qmcd" onclick="startQ('oud')"><div class="qmci">📄</div><h3>Oud-examen stijl</h3><p>Open vragen zoals bij het echte CE. Schrijf je antwoord en beoordeel jezelf.</p><span class="pill po">✍️ Geen timer · 3 vragen</span></div>
-      <div class="qmcd" onclick="startFlash()"><div class="qmci">📇</div><h3>Begrippen oefenen</h3><p>Flashcards: ken jij alle begrippen van dit domein?</p><span class="pill" style="background:rgba(139,92,246,.2);color:#A78BFA">🧠 Flip & leer</span></div>
+      <div class="qmcd" onclick="startQ('snel')"><div class="qmci"><svg viewBox="0 0 24 24"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg></div><h3>Snelle Quiz</h3><p>Korte vragen met 15 sec timer. Stamp leerstof in je geheugen.</p><span class="pill ps">15 sec · 5 vragen</span></div>
+      <div class="qmcd" onclick="startQ('oud')"><div class="qmci"><svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg></div><h3>Oud-examen stijl</h3><p>Open vragen zoals bij het echte CE. Schrijf je antwoord en beoordeel jezelf.</p><span class="pill po">Geen timer · 3 vragen</span></div>
+      <div class="qmcd" onclick="startFlash()"><div class="qmci"><svg viewBox="0 0 24 24"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg></div><h3>Begrippen oefenen</h3><p>Flashcards: ken jij alle begrippen van dit domein?</p><span class="pill" style="background:rgba(139,92,246,.2);color:#A78BFA">Flip & leer</span></div>
     </div>
   </div>
 </div>
@@ -1008,9 +1012,9 @@ h1,h2,h3,h4{font-family:var(--font-head);line-height:1.2;letter-spacing:-.3px}
 
 <!-- SCHEDULE -->
 <div id="sc-schedule" class="sc">
-<nav class="nav"><div class="nav-inner"><div class="logo" onclick="show('sc-home')"><div class="logo-dot"></div>ExamenApp</div><button class="bk" onclick="show('sc-home')">← Terug</button><button class="theme-btn" onclick="toggleDark()" title="Nachtmodus" style="margin-left:auto">🌙</button></div></nav>
+<nav class="nav"><div class="nav-inner"><div class="logo" onclick="show('sc-home')"><div class="logo-dot"></div>ExamenApp</div><button class="bk" onclick="show('sc-home')">← Terug</button><button class="theme-btn" onclick="toggleDark()" title="Nachtmodus" style="margin-left:auto"><svg viewBox="0 0 24 24"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg></button></div></nav>
 <div class="w" style="padding-top:24px">
-  <h2 style="font-size:22px;margin-bottom:6px">📅 Examenrooster HAVO 2026</h2>
+  <h2 style="font-size:22px;margin-bottom:6px">Examenrooster HAVO 2026</h2>
   <p style="font-size:13px;color:var(--mu);margin-bottom:18px">1e tijdvak: 8–27 mei · Normering: 11 juni 08:00 · 2e tijdvak: 16–23 juni</p>
   <div class="sch-filter">
     <label><input type="checkbox" id="sch-filter-mine" class="sch-check" onchange="renderSchedule()"> Alleen mijn vakken</label>
@@ -1028,7 +1032,7 @@ h1,h2,h3,h4{font-family:var(--font-head);line-height:1.2;letter-spacing:-.3px}
 
 <!-- CALCULATOR -->
 <div id="sc-calc" class="sc">
-<nav class="nav"><div class="nav-inner"><div class="logo" onclick="show('sc-home')"><div class="logo-dot"></div>ExamenApp</div><button class="bk" onclick="show('sc-home')">← Terug</button><button class="theme-btn" onclick="toggleDark()" title="Nachtmodus" style="margin-left:auto">🌙</button></div></nav>
+<nav class="nav"><div class="nav-inner"><div class="logo" onclick="show('sc-home')"><div class="logo-dot"></div>ExamenApp</div><button class="bk" onclick="show('sc-home')">← Terug</button><button class="theme-btn" onclick="toggleDark()" title="Nachtmodus" style="margin-left:auto"><svg viewBox="0 0 24 24"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg></button></div></nav>
 <div class="w" style="padding-top:24px">
   <h2 style="font-size:22px;margin-bottom:4px">🧮 Cijferberekenen</h2>
   <p style="font-size:13px;color:var(--mu);margin-bottom:18px">Bereken je eindcijfer, check of je slaagt en simuleer een herkansing.</p>
@@ -1111,7 +1115,7 @@ h1,h2,h3,h4{font-family:var(--font-head);line-height:1.2;letter-spacing:-.3px}
 
 <!-- PRIVACY POLICY -->
 <div id="sc-privacy" class="sc">
-<nav class="nav"><div class="nav-inner"><div class="logo" onclick="show('sc-home')"><div class="logo-dot"></div>ExamenApp</div><button class="bk" onclick="show(window._privacyFrom||'sc-home')">← Terug</button><button class="theme-btn" onclick="toggleDark()" title="Nachtmodus" style="margin-left:auto">🌙</button></div></nav>
+<nav class="nav"><div class="nav-inner"><div class="logo" onclick="show('sc-home')"><div class="logo-dot"></div>ExamenApp</div><button class="bk" onclick="show(window._privacyFrom||'sc-home')">← Terug</button><button class="theme-btn" onclick="toggleDark()" title="Nachtmodus" style="margin-left:auto"><svg viewBox="0 0 24 24"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg></button></div></nav>
 <div class="w privacy-content">
   <h2>Privacybeleid</h2>
   <p class="privacy-updated">Laatst bijgewerkt: 15 maart 2026</p>
@@ -1870,14 +1874,16 @@ function tryPushAds(screenId){
   else if(c==='accepted'){loadAdsScript();}
   else{hideAllAds();}
 })();
+const ICON_MOON=`<svg viewBox="0 0 24 24"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>`;
+const ICON_SUN=`<svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>`;
 function toggleDark(){
   const dark=document.documentElement.classList.toggle('dark');
   localStorage.setItem('theme',dark?'dark':'light');
-  const icon=dark?'☀️':'🌙';
-  document.querySelectorAll('.theme-btn').forEach(b=>b.textContent=icon);
+  const icon=dark?ICON_SUN:ICON_MOON;
+  document.querySelectorAll('.theme-btn').forEach(b=>b.innerHTML=icon);
 }
 // Restore saved theme
-(function(){if(localStorage.getItem('theme')==='dark'){document.documentElement.classList.add('dark');document.querySelectorAll('.theme-btn').forEach(b=>b.textContent='☀️');}})();
+(function(){if(localStorage.getItem('theme')==='dark'){document.documentElement.classList.add('dark');document.querySelectorAll('.theme-btn').forEach(b=>b.innerHTML=ICON_SUN);}})();
 function tog(hd){const bd=hd.nextElementSibling;const arr=hd.querySelector('span');bd.classList.toggle('on');arr.textContent=bd.classList.contains('on')?'▲':'▼'}
 
 // ═══════ BUILD SUBJECT GRID ═══════
@@ -2655,7 +2661,7 @@ function renderPomo(){
   const label=POMO.mode==='study'?'🎯 Studietijd':'☕ Pauze';
   const modeClass=POMO.mode==='break'?' pomo-break':'';
   box.innerHTML=`<div class="pomo${modeClass}">
-    <div class="pomo-title">🍅 Pomodoro Timer</div>
+    <div class="pomo-title">Pomodoro Timer</div>
     <div class="pomo-time">${String(mins).padStart(2,'0')}:${String(secs).padStart(2,'0')}</div>
     <div class="pomo-label">${label}</div>
     <div class="pomo-btns">
@@ -2808,16 +2814,16 @@ window.show=function(id){_origShow(id);updateBottomNav(id);};
 <nav class="bottom-nav" id="bottom-nav">
   <div class="bottom-nav-inner">
     <button class="bnav-btn active" data-screen="sc-home" onclick="show('sc-home')">
-      <span class="bnav-icon">🏠</span>Home
+      <span class="bnav-icon"><svg viewBox="0 0 24 24"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg></span>Home
     </button>
     <button class="bnav-btn" data-screen="sc-schedule" onclick="show('sc-schedule')">
-      <span class="bnav-icon">📅</span>Rooster
+      <span class="bnav-icon"><svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg></span>Rooster
     </button>
     <button class="bnav-btn" data-screen="sc-calc" onclick="show('sc-calc')">
-      <span class="bnav-icon">🧮</span>Cijfers
+      <span class="bnav-icon"><svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg></span>Cijfers
     </button>
     <button class="bnav-btn" data-screen="sc-info" onclick="show('sc-info')">
-      <span class="bnav-icon">ℹ️</span>Info
+      <span class="bnav-icon"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg></span>Info
     </button>
   </div>
 </nav>
