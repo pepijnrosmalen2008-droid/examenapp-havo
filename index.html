@@ -523,6 +523,7 @@ html.dark .calc-btn{background:#2e3550}
   body{padding-bottom:72px}
   .nav-btn{display:none!important}
   .nav-chip{display:none}
+  .prof-nav-btn{display:none!important}
   .nav{height:52px;box-shadow:0 1px 8px rgba(0,0,0,.03)}
   .nav-inner{gap:8px;padding:0 16px}
   .logo{font-size:16px;gap:6px}
@@ -740,6 +741,50 @@ html.dark .calc-btn{background:#2e3550}
   /* Ads kleiner op mobiel */
   .ad-wrapper{margin:16px 0}
   .ad-slot{max-width:100%;min-height:50px}
+
+  /* Auth scherm */
+  .auth-wrap{padding:20px 16px 90px}
+  .auth-card{padding:24px 18px;border-radius:18px}
+  .auth-logo{margin-bottom:20px}
+  .auth-logo h1{font-size:22px}
+  .auth-tabs{margin-bottom:20px}
+  .auth-input{padding:12px 14px;font-size:15px}
+  .auth-btn{padding:14px;font-size:15px}
+
+  /* Cloud status bar in profiel */
+  .cloud-status{flex-wrap:wrap;gap:8px;padding:12px 14px;border-radius:14px}
+  .cs-info{flex:1;min-width:0}
+  .cs-email{font-size:13px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;max-width:180px}
+  .cs-sub{font-size:11px}
+  .cloud-setup{font-size:13px;padding:12px 14px;border-radius:12px}
+
+  /* Profiel scherm */
+  .prof-wrap{padding:20px 0 80px}
+  .prof-page-header{margin-bottom:20px}
+  .prof-page-header h2{font-size:22px}
+  .prof-page-header p{font-size:13px}
+  .prof-section{padding:18px;border-radius:16px;margin-bottom:16px}
+  .prof-section-title{font-size:15px}
+  .av-preview-row{gap:12px;margin-bottom:16px}
+  .av-preview{font-size:42px}
+  .cijfer-grid{grid-template-columns:repeat(auto-fill,minmax(140px,1fr));gap:10px}
+
+  /* Leaderboard */
+  .lb-wrap{padding:16px 12px 90px}
+  .lb-header h2{font-size:22px}
+  .lb-filter{display:flex;flex-wrap:wrap;gap:6px;justify-content:center;margin-bottom:18px}
+  .lb-filter-btn{font-size:11px;padding:6px 12px}
+  .lb-podium{gap:6px;margin-bottom:20px}
+  .lb-pod-bar{width:50px}
+  .lb-pod-avatar{width:46px;height:46px;font-size:24px}
+  .lb-pod-name{max-width:56px;font-size:10px}
+  .lb-row{padding:10px 12px;gap:10px;border-radius:12px}
+  .lb-rank{font-size:12px;min-width:20px}
+  .lb-avatar{font-size:20px;width:32px;height:32px}
+  .lb-name{font-size:13px}
+  .lb-meta{font-size:11px}
+  .lb-score{font-size:15px}
+  .lb-myscore-box{border-radius:14px;padding:14px}
 }
 
 /* Extra small phones (≤375px like iPhone SE) */
@@ -3712,9 +3757,14 @@ setTimeout(()=>{tryPushAds('sc-home');},1500);
 // Show welcome on first load (sc-welcome is default via class="on")
 // ═══════ BOTTOM NAV ═══════
 function updateBottomNav(id){
+  // sc-auth counts as sc-profiel for nav highlighting
+  const activeId=(id==='sc-auth')?'sc-profiel':id;
   document.querySelectorAll('.bnav-btn').forEach(b=>{
-    b.classList.toggle('active',b.dataset.screen===id);
+    b.classList.toggle('active',b.dataset.screen===activeId);
   });
+  // Update profiel button label: Inloggen vs Profiel
+  const lbl=document.getElementById('bnav-profiel-label');
+  if(lbl)lbl.textContent=currentUser?'Profiel':'Inloggen';
   // Hide bottom nav during quiz/flashcard/qmode
   const hideScreens=['sc-quiz','sc-flash','sc-qmode','sc-welcome'];
   const bn=document.getElementById('bottom-nav');
@@ -3740,8 +3790,8 @@ window.show=function(id){_origShow(id);updateBottomNav(id);};
     <button class="bnav-btn" data-screen="sc-leaderboard" onclick="show('sc-leaderboard');renderLeaderboard()">
       <span class="bnav-icon"><svg viewBox="0 0 24 24"><path d="M8 21h8M12 17v4M17 3H7l-1 7h10l-1-7z"/><path d="M5 10c0 3.9 3.1 7 7 7s7-3.1 7-7"/></svg></span>Top
     </button>
-    <button class="bnav-btn" data-screen="sc-info" onclick="show('sc-info')">
-      <span class="bnav-icon"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg></span>Info
+    <button class="bnav-btn" data-screen="sc-profiel" id="bnav-profiel-btn" onclick="openProfiel()">
+      <span class="bnav-icon"><svg viewBox="0 0 24 24"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg></span><span id="bnav-profiel-label">Profiel</span>
     </button>
   </div>
 </nav>
