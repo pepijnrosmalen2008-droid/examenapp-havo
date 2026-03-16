@@ -766,6 +766,63 @@ h1,h2,h3,h4{font-family:var(--font-head);line-height:1.2;letter-spacing:-.3px}
 .cookie-accept:active,.cookie-decline:active,.calc-btn:active,.qb:active{transform:scale(0.97)}
 .qpf{animation:none}
 .opt{will-change:transform,opacity}
+
+/* ── PROFIEL SCREEN ──────────────────────────── */
+.prof-wrap{padding:32px 0 72px}
+.prof-page-header{margin-bottom:32px}
+.prof-page-header h2{font-size:28px;font-weight:800;margin-bottom:6px}
+.prof-page-header p{color:var(--mu);font-size:15px}
+.prof-section{background:var(--s);border:1px solid var(--bo);border-radius:20px;padding:28px 32px;margin-bottom:24px}
+.prof-section-title{font-size:17px;font-weight:700;margin-bottom:4px;font-family:var(--font-head)}
+.prof-section-sub{font-size:13px;color:var(--mu);margin-bottom:22px}
+.prof-fields{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+@media(max-width:600px){.prof-fields{grid-template-columns:1fr}}
+.prof-field label{display:block;font-size:12px;font-weight:600;color:var(--mu);text-transform:uppercase;letter-spacing:.6px;margin-bottom:7px}
+.prof-field input,.prof-field select{width:100%;padding:11px 14px;border-radius:12px;border:1.5px solid var(--bo);background:var(--bg);color:var(--dk);font-size:15px;font-family:var(--font);transition:border-color .2s,box-shadow .2s;outline:none}
+.prof-field input:focus,.prof-field select:focus{border-color:var(--or);box-shadow:0 0 0 3px rgba(232,88,12,.1)}
+.prof-field.full{grid-column:1/-1}
+.pf-save-btn{margin-top:20px;padding:12px 28px;border-radius:12px;background:var(--or);color:#fff;border:none;font-size:15px;font-weight:600;cursor:pointer;font-family:var(--font);transition:all .2s}
+.pf-save-btn:hover{opacity:.9;transform:translateY(-1px)}
+.pf-saved{display:inline-flex;align-items:center;gap:6px;color:var(--green);font-size:14px;font-weight:600;margin-left:14px;opacity:0;transition:opacity .4s}
+.pf-saved.show{opacity:1}
+
+/* Import buttons */
+.import-row{display:flex;gap:12px;margin-bottom:20px;flex-wrap:wrap}
+.import-app-btn{display:flex;align-items:center;gap:10px;padding:12px 20px;border-radius:14px;border:1.5px solid var(--bo);background:var(--bg);cursor:pointer;font-family:var(--font);font-size:14px;font-weight:600;color:var(--dk);transition:all .2s}
+.import-app-btn:hover{border-color:var(--or);background:var(--orl)}
+.import-app-btn.active{border-color:var(--or);background:var(--orl);color:var(--or)}
+.import-app-icon{width:32px;height:32px;border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:16px;flex-shrink:0}
+.import-app-icon.mag{background:#003A70;color:#fff}
+.import-app-icon.som{background:#E5171E;color:#fff}
+.import-panel{background:var(--bg2);border-radius:16px;padding:20px 22px;margin-bottom:20px;display:none}
+.import-panel.show{display:block}
+.import-steps{font-size:14px;color:var(--mu);line-height:2;margin-bottom:14px}
+.import-steps strong{color:var(--dk)}
+.import-steps ol{padding-left:20px}
+.import-textarea{width:100%;min-height:110px;padding:12px 14px;border-radius:12px;border:1.5px solid var(--bo);background:var(--s);color:var(--dk);font-size:13px;font-family:var(--font);resize:vertical;outline:none;margin-top:12px;transition:border-color .2s}
+.import-textarea:focus{border-color:var(--or)}
+.import-go-btn{margin-top:12px;padding:10px 22px;border-radius:10px;background:var(--or);color:#fff;border:none;font-size:14px;font-weight:600;cursor:pointer;font-family:var(--font);transition:all .2s}
+.import-go-btn:hover{opacity:.9}
+.import-result{margin-top:10px;font-size:13px;font-weight:600;display:none}
+.import-result.ok{color:var(--green);display:block}
+.import-result.err{color:var(--red);display:block}
+
+/* Grade inputs grid */
+.cijfer-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(180px,1fr));gap:12px;margin-top:8px}
+.cijfer-item{background:var(--bg);border:1px solid var(--bo);border-radius:14px;padding:14px 16px;display:flex;flex-direction:column;gap:8px}
+.cijfer-vak{font-size:13px;font-weight:700;display:flex;align-items:center;gap:8px}
+.cijfer-dot{width:8px;height:8px;border-radius:50%;flex-shrink:0}
+.cijfer-input{width:100%;padding:9px 12px;border-radius:10px;border:1.5px solid var(--bo);background:var(--s);color:var(--dk);font-size:15px;font-weight:600;text-align:center;font-family:var(--font);outline:none;transition:border-color .2s}
+.cijfer-input:focus{border-color:var(--or)}
+.cijfer-input.has-val{border-color:var(--green);background:color-mix(in srgb,var(--green) 6%,var(--s))}
+.cijfer-label{font-size:11px;color:var(--mu);text-align:center}
+.cijfer-save-btn{margin-top:20px;padding:12px 28px;border-radius:12px;background:var(--or);color:#fff;border:none;font-size:15px;font-weight:600;cursor:pointer;font-family:var(--font);transition:all .2s}
+.cijfer-save-btn:hover{opacity:.9;transform:translateY(-1px)}
+
+/* Profile nav pill */
+.prof-nav-btn{margin-left:8px;padding:6px 14px;border-radius:20px;font-size:13px;font-weight:600;cursor:pointer;border:1.5px solid var(--bo);background:var(--s);color:var(--dk);transition:all .2s;font-family:var(--font);display:flex;align-items:center;gap:6px}
+.prof-nav-btn:hover{background:var(--bg2);border-color:var(--or)}
+.prof-nav-btn .pnb-avatar{width:22px;height:22px;border-radius:50%;background:var(--or);color:#fff;font-size:11px;font-weight:800;display:flex;align-items:center;justify-content:center;flex-shrink:0}
 </style>
 </head>
 <body>
@@ -830,8 +887,9 @@ h1,h2,h3,h4{font-family:var(--font-head);line-height:1.2;letter-spacing:-.3px}
     </div>
     <span class="nav-chip">HAVO 2026</span>
     <button class="nav-btn" onclick="show('sc-schedule')">Rooster</button>
-    <button class="nav-btn" onclick="show('sc-calc')">Cijfers</button>
+    <button class="nav-btn" onclick="show('sc-calc');setTimeout(prefillCalcFromSaved,50)">Cijfers</button>
     <button class="nav-btn" onclick="show('sc-info')">Info</button>
+    <button class="prof-nav-btn" id="home-prof-btn" onclick="openProfiel()">👤 Profiel</button>
     <button class="theme-btn" onclick="toggleDark()" title="Nachtmodus" id="theme-btn-home"><svg viewBox="0 0 24 24"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg></button>
   </div>
 </nav>
@@ -1139,6 +1197,85 @@ h1,h2,h3,h4{font-family:var(--font-head);line-height:1.2;letter-spacing:-.3px}
     <button class="fc-btn fc-yes" onclick="fcAnswer(true)">✓ Wist ik</button>
   </div>
   <div class="fc-score" id="fc-score"></div>
+</div>
+</div>
+
+<div id="sc-profiel" class="sc">
+<nav class="nav"><div class="nav-inner"><div class="logo" onclick="show('sc-home')"><div class="logo-dot"></div>ExamenApp</div><button class="bk" onclick="show('sc-home')">← Terug</button><button class="theme-btn" onclick="toggleDark()" title="Nachtmodus" style="margin-left:auto"><svg viewBox="0 0 24 24"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg></button></div></nav>
+<div class="w prof-wrap">
+  <div class="prof-page-header">
+    <h2>Mijn Profiel</h2>
+    <p>Vul je gegevens in en importeer je SE-cijfers vanuit Magister of SomToday.</p>
+  </div>
+
+  <!-- Persoonlijke gegevens -->
+  <div class="prof-section">
+    <div class="prof-section-title">Persoonlijke gegevens</div>
+    <div class="prof-section-sub">Wordt lokaal opgeslagen op dit apparaat</div>
+    <div class="prof-fields">
+      <div class="prof-field full"><label>Naam</label><input id="pf-naam" type="text" placeholder="Jouw voornaam" /></div>
+      <div class="prof-field"><label>School</label><input id="pf-school" type="text" placeholder="Naam van je school" /></div>
+      <div class="prof-field"><label>Klas</label><select id="pf-klas"><option value="">Kies klas...</option><option value="4H">4 HAVO</option><option value="5H">5 HAVO</option><option value="4V">4 VWO</option><option value="5V">5 VWO</option><option value="6V">6 VWO</option></select></div>
+      <div class="prof-field full"><label>Examenprofiel</label><select id="pf-profiel"><option value="">Kies profiel...</option><option value="nt">Natuur &amp; Techniek (N&amp;T)</option><option value="ng">Natuur &amp; Gezondheid (N&amp;G)</option><option value="em">Economie &amp; Maatschappij (E&amp;M)</option><option value="cm">Cultuur &amp; Maatschappij (C&amp;M)</option></select></div>
+    </div>
+    <button class="pf-save-btn" onclick="saveProfileData()">Opslaan</button>
+    <span class="pf-saved" id="pf-saved-msg">✓ Opgeslagen</span>
+  </div>
+
+  <!-- SE Cijfers -->
+  <div class="prof-section">
+    <div class="prof-section-title">SE-cijfers</div>
+    <div class="prof-section-sub">Vul je schoolexamencijfers in — gebruikt door de slaag-/zakrekenaars</div>
+
+    <!-- Import buttons -->
+    <div class="import-row">
+      <button class="import-app-btn" id="imp-btn-mag" onclick="toggleImportPanel('magister')">
+        <div class="import-app-icon mag">M</div>
+        <span>Importeer uit Magister</span>
+      </button>
+      <button class="import-app-btn" id="imp-btn-som" onclick="toggleImportPanel('somtoday')">
+        <div class="import-app-icon som">S</div>
+        <span>Importeer uit SomToday</span>
+      </button>
+    </div>
+
+    <!-- Magister import panel -->
+    <div class="import-panel" id="imp-panel-magister">
+      <div class="import-steps">
+        <strong>Hoe importeer je uit Magister?</strong>
+        <ol>
+          <li>Open <strong>magister.net</strong> en log in</li>
+          <li>Ga naar <strong>Cijfers</strong> → <strong>Overzicht</strong></li>
+          <li>Selecteer alle tekst op de pagina (<kbd>Ctrl+A</kbd>) en kopieer (<kbd>Ctrl+C</kbd>)</li>
+          <li>Plak de tekst hieronder (<kbd>Ctrl+V</kbd>)</li>
+        </ol>
+      </div>
+      <textarea class="import-textarea" id="imp-paste-magister" placeholder="Plak hier je gekopieerde Magister-pagina..."></textarea>
+      <br><button class="import-go-btn" onclick="doImport('magister')">Importeer cijfers →</button>
+      <div class="import-result" id="imp-result-magister"></div>
+    </div>
+
+    <!-- SomToday import panel -->
+    <div class="import-panel" id="imp-panel-somtoday">
+      <div class="import-steps">
+        <strong>Hoe importeer je uit SomToday?</strong>
+        <ol>
+          <li>Open <strong>leerling.somtoday.nl</strong> en log in</li>
+          <li>Ga naar <strong>Cijfers</strong> → <strong>Cijferoverzicht</strong></li>
+          <li>Selecteer alle tekst op de pagina (<kbd>Ctrl+A</kbd>) en kopieer (<kbd>Ctrl+C</kbd>)</li>
+          <li>Plak de tekst hieronder (<kbd>Ctrl+V</kbd>)</li>
+        </ol>
+      </div>
+      <textarea class="import-textarea" id="imp-paste-somtoday" placeholder="Plak hier je gekopieerde SomToday-pagina..."></textarea>
+      <br><button class="import-go-btn" onclick="doImport('somtoday')">Importeer cijfers →</button>
+      <div class="import-result" id="imp-result-somtoday"></div>
+    </div>
+
+    <!-- Manual grade inputs -->
+    <div class="cijfer-grid" id="cijfer-grid"></div>
+    <button class="cijfer-save-btn" onclick="saveCijfers()">Cijfers opslaan</button>
+    <span class="pf-saved" id="cijfer-saved-msg">✓ Opgeslagen</span>
+  </div>
 </div>
 </div>
 
@@ -1944,6 +2081,175 @@ function buildGrid(){
     d.innerHTML=`<div class="card-icon"><svg viewBox="0 0 24 24">${iconPaths}</svg></div><div class="card-name">${v.naam}</div><div class="card-desc">${v.beschrijving}</div><div class="card-meta">${v.domeinen.length} CE-domeinen</div>${progHtml}`;
     d.onclick=()=>openVak(v.id);
     g.appendChild(d);
+  });
+}
+
+// ═══════ PROFIEL & CIJFERS ═══════
+const PROF_KEY='examenapp_profiel';
+const CIJFER_KEY='examenapp_cijfers';
+
+const VAK_NAAM_MAP={
+  'nederlands':'nl','ne':'nl','ned':'nl',
+  'wiskunde a':'wa','wisk.a':'wa','wiskunde-a':'wa','wa':'wa',
+  'biologie':'bi','bio':'bi',
+  'scheikunde':'sk','schk':'sk',
+  'natuurkunde':'na','natk':'na',
+  'bedrijfseconomie':'be','bedr.ec.':'be',
+  'economie':'ec','eco':'ec',
+  'engels':'en','eng':'en',
+  'maatschappijwetenschappen':'mw','maatschappijwetensch.':'mw','m&m':'mw','mw':'mw',
+  'geschiedenis':'gs','ges':'gs',
+  'aardrijkskunde':'ak','aard':'ak',
+  'wiskunde b':'wb','wisk.b':'wb','wiskunde-b':'wb','wb':'wb',
+};
+
+function matchVakNaam(raw){
+  const s=raw.toLowerCase().trim().replace(/[.,;:]/g,'');
+  if(VAK_NAAM_MAP[s])return VAK_NAAM_MAP[s];
+  for(const [key,id] of Object.entries(VAK_NAAM_MAP)){
+    if(s.includes(key)||key.includes(s.split(' ')[0]))return id;
+  }
+  return null;
+}
+
+function loadProfile(){
+  const p=JSON.parse(localStorage.getItem(PROF_KEY)||'{}');
+  if(p.naam)document.getElementById('pf-naam').value=p.naam;
+  if(p.school)document.getElementById('pf-school').value=p.school;
+  if(p.klas)document.getElementById('pf-klas').value=p.klas;
+  if(p.profiel)document.getElementById('pf-profiel').value=p.profiel;
+}
+
+function saveProfileData(){
+  const p={
+    naam:document.getElementById('pf-naam').value.trim(),
+    school:document.getElementById('pf-school').value.trim(),
+    klas:document.getElementById('pf-klas').value,
+    profiel:document.getElementById('pf-profiel').value,
+  };
+  localStorage.setItem(PROF_KEY,JSON.stringify(p));
+  const msg=document.getElementById('pf-saved-msg');
+  msg.classList.add('show');
+  setTimeout(()=>msg.classList.remove('show'),2500);
+  updateProfileNav();
+}
+
+function getSavedCijfers(){
+  return JSON.parse(localStorage.getItem(CIJFER_KEY)||'{}');
+}
+
+function buildCijferGrid(){
+  const saved=getSavedCijfers();
+  const grid=document.getElementById('cijfer-grid');
+  grid.innerHTML='';
+  VAKKEN.forEach(v=>{
+    const val=saved[v.id]||'';
+    const div=document.createElement('div');
+    div.className='cijfer-item';
+    div.innerHTML=`<div class="cijfer-vak"><div class="cijfer-dot" style="background:${v.kleur}"></div>${v.naam}</div>
+      <input class="cijfer-input${val?(' has-val'):''}" id="ci-${v.id}" type="number" min="1" max="10" step="0.1" value="${val}" placeholder="—" oninput="this.classList.toggle('has-val',this.value!=='')" />
+      <div class="cijfer-label">SE-cijfer</div>`;
+    grid.appendChild(div);
+  });
+}
+
+function saveCijfers(){
+  const saved={};
+  VAKKEN.forEach(v=>{
+    const inp=document.getElementById('ci-'+v.id);
+    if(inp&&inp.value!==''){
+      const n=parseFloat(inp.value.replace(',','.'));
+      if(!isNaN(n)&&n>=1&&n<=10)saved[v.id]=Math.round(n*10)/10;
+    }
+  });
+  localStorage.setItem(CIJFER_KEY,JSON.stringify(saved));
+  const msg=document.getElementById('cijfer-saved-msg');
+  msg.classList.add('show');
+  setTimeout(()=>msg.classList.remove('show'),2500);
+}
+
+function toggleImportPanel(app){
+  const magPanel=document.getElementById('imp-panel-magister');
+  const somPanel=document.getElementById('imp-panel-somtoday');
+  const magBtn=document.getElementById('imp-btn-mag');
+  const somBtn=document.getElementById('imp-btn-som');
+  if(app==='magister'){
+    const showing=magPanel.classList.contains('show');
+    magPanel.classList.toggle('show',!showing);
+    somPanel.classList.remove('show');
+    magBtn.classList.toggle('active',!showing);
+    somBtn.classList.remove('active');
+  }else{
+    const showing=somPanel.classList.contains('show');
+    somPanel.classList.toggle('show',!showing);
+    magPanel.classList.remove('show');
+    somBtn.classList.toggle('active',!showing);
+    magBtn.classList.remove('active');
+  }
+}
+
+function parseCijferText(text){
+  const found={};
+  const lines=text.split(/\n/).map(l=>l.trim()).filter(Boolean);
+  for(const line of lines){
+    const vakId=matchVakNaam(line.split(/\t|\s{2,}/)[0]);
+    if(!vakId)continue;
+    const nums=[...line.matchAll(/\b(10|[1-9])[,.](\d)\b|\b(10|[1-9])\b/g)]
+      .map(m=>{const s=m[0].replace(',','.');return parseFloat(s);})
+      .filter(n=>n>=1&&n<=10);
+    if(nums.length>0){
+      found[vakId]=nums[nums.length-1];
+    }
+  }
+  return found;
+}
+
+function doImport(app){
+  const textarea=document.getElementById('imp-paste-'+app);
+  const result=document.getElementById('imp-result-'+app);
+  const text=textarea.value.trim();
+  if(!text){result.textContent='Plak eerst tekst van Magister of SomToday.';result.className='import-result err';return;}
+  const parsed=parseCijferText(text);
+  const keys=Object.keys(parsed);
+  if(keys.length===0){
+    result.textContent='Geen cijfers herkend. Probeer de volledige pagina te kopiëren (Ctrl+A, Ctrl+C).';
+    result.className='import-result err';return;
+  }
+  const existing=getSavedCijfers();
+  const merged={...existing,...parsed};
+  localStorage.setItem(CIJFER_KEY,JSON.stringify(merged));
+  buildCijferGrid();
+  result.textContent=`✓ ${keys.length} vak${keys.length===1?'':'ken'} geïmporteerd: ${keys.map(k=>VAKKEN.find(v=>v.id===k)?.naam||k).join(', ')}`;
+  result.className='import-result ok';
+  textarea.value='';
+}
+
+function updateProfileNav(){
+  const p=JSON.parse(localStorage.getItem(PROF_KEY)||'{}');
+  const btn=document.getElementById('home-prof-btn');
+  if(!btn)return;
+  if(p.naam){
+    const initials=p.naam.trim().split(' ').map(w=>w[0]).slice(0,2).join('').toUpperCase();
+    btn.innerHTML=`<div class="pnb-avatar">${initials}</div><span>${p.naam.split(' ')[0]}</span>`;
+  }else{
+    btn.innerHTML='👤 Profiel';
+  }
+}
+
+function openProfiel(){
+  loadProfile();
+  buildCijferGrid();
+  show('sc-profiel');
+}
+
+function prefillCalcFromSaved(){
+  const saved=getSavedCijfers();
+  VAKKEN.forEach(v=>{
+    const inp=document.getElementById('se-'+v.id)||document.getElementById('calc-se-'+v.id);
+    if(inp&&saved[v.id]!==undefined){
+      inp.value=saved[v.id];
+      inp.dispatchEvent(new Event('input'));
+    }
   });
 }
 
@@ -2849,6 +3155,7 @@ function chooseLevel(level){
 renderFavHome();
 renderStreak();
 buildGrid();
+updateProfileNav();
 renderPomo();
 if(document.getElementById('sc-schedule'))renderSchedule();
 buildSlaagInputs();
