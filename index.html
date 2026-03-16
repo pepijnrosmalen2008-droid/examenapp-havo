@@ -1247,6 +1247,7 @@ html.dark .auth-ok{background:#0F2D1C;border-color:#166534;color:#86EFAC}
   <div class="lb-header">
     <h2>🏆 Leaderboard</h2>
     <p>Snelle quiz · Ranglijst op score (nauwkeurigheid + snelheid)</p>
+    <p id="lb-niveau-badge" style="margin-top:6px;font-size:12px;font-weight:700;opacity:.6;letter-spacing:.5px;text-transform:uppercase"></p>
   </div>
   <div id="lb-myscore-box"></div>
   <div class="lb-filter" id="lb-filter"></div>
@@ -3197,16 +3198,17 @@ function retryQ(){startQ(ST.mode);}
 function switchMode(){show('sc-qmode');}
 
 // ═══════ LEADERBOARD ═══════
-const LB_KEY='examenapp_leaderboard';
-function getLbEntries(){try{return JSON.parse(localStorage.getItem(LB_KEY)||'[]');}catch(e){return[];}}
+function getLbKey(){return 'examenapp_leaderboard_'+APP_LEVEL;}
+function getLbEntries(){try{return JSON.parse(localStorage.getItem(getLbKey())||'[]');}catch(e){return[];}}
 async function saveLeaderboardEntry(entry){
+  entry.niveau=APP_LEVEL;
   if(currentUser)entry.uid=currentUser.id;
   // Save to local cache
   let all=getLbEntries();
   all.push(entry);
   all.sort((a,b)=>b.score-a.score);
   if(all.length>200)all=all.slice(0,200);
-  localStorage.setItem(LB_KEY,JSON.stringify(all));
+  localStorage.setItem(getLbKey(),JSON.stringify(all));
   // Save to Supabase global leaderboard (cross-user)
   if(currentUser){
     try{
@@ -3214,21 +3216,22 @@ async function saveLeaderboardEntry(entry){
         user_id:currentUser.id,
         naam:entry.naam,avatar:entry.avatar,
         vak:entry.vak,vak_naam:entry.vakNaam,
-        score:entry.score,correct:entry.goed,total:entry.tot
+        score:entry.score,correct:entry.goed,total:entry.tot,
+        niveau:APP_LEVEL
       });
     }catch(e){console.warn('leaderboard save error:',e);}
   }
 }
 async function loadLeaderboardFromSupabase(){
   try{
-    const {data,error}=await SB.from('leaderboard').select('*').order('score',{ascending:false}).limit(200);
+    const {data,error}=await SB.from('leaderboard').select('*').eq('niveau',APP_LEVEL).order('score',{ascending:false}).limit(200);
     if(error||!data)return;
     const entries=data.map(d=>({
       naam:d.naam,avatar:d.avatar,vak:d.vak,vakNaam:d.vak_naam,
       score:d.score,goed:d.correct,tot:d.total,uid:d.user_id,
-      date:d.created_at?.slice(0,10)
+      niveau:d.niveau,date:d.created_at?.slice(0,10)
     }));
-    localStorage.setItem(LB_KEY,JSON.stringify(entries));
+    localStorage.setItem(getLbKey(),JSON.stringify(entries));
   }catch(e){console.warn('leaderboard load error:',e);}
 }
 let lbVakFilter='all';
@@ -3241,7 +3244,7 @@ function _renderLbWithData(){
   const myUid=currentUser?currentUser.id:null;
   const myNaam=prof.naam||null;
 
-  // Build filter buttons
+  // Build filter buttons (alleen vakken van huidig niveau)
   const vakSet=new Set(all.map(e=>e.vak));
   const filterEl=document.getElementById('lb-filter');
   filterEl.innerHTML='';
@@ -3250,8 +3253,7 @@ function _renderLbWithData(){
   allBtn.textContent='Alle vakken';
   allBtn.onclick=()=>{lbVakFilter='all';renderLeaderboard();};
   filterEl.appendChild(allBtn);
-  const allVK=[...VAKKEN,...VAKKEN_VWO];
-  const VAKKEN_MAP={};allVK.forEach(v=>{VAKKEN_MAP[v.id]=v;});
+  const VAKKEN_MAP={};getVK().forEach(v=>{VAKKEN_MAP[v.id]=v;});
   [...vakSet].forEach(vid=>{
     const vak=VAKKEN_MAP[vid];if(!vak)return;
     const btn=document.createElement('button');
@@ -3260,6 +3262,10 @@ function _renderLbWithData(){
     btn.onclick=()=>{lbVakFilter=vid;renderLeaderboard();};
     filterEl.appendChild(btn);
   });
+
+  // Niveau badge
+  const badge=document.getElementById('lb-niveau-badge');
+  if(badge)badge.textContent=APP_LEVEL.toUpperCase()+' 2026';
 
   // Filter entries
   const filtered=lbVakFilter==='all'?all:all.filter(e=>e.vak===lbVakFilter);
