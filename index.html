@@ -2496,8 +2496,23 @@ const VAKKEN_VWO=[
 // ═══════ NIVEAU BEHEER ═══════
 let APP_LEVEL=localStorage.getItem('examenapp_level')||'havo';
 function getVK(){return APP_LEVEL==='vwo'?VAKKEN_VWO:VAKKEN;}
-// Level-specifieke localStorage/Supabase kolomnamen (VWO krijgt suffix _vwo)
-function lvlCol(col){return APP_LEVEL==='vwo'?col+'_vwo':col;}
+// Level-specifieke localStorage/Supabase kolomnamen — altijd suffix (_havo / _vwo)
+function lvlCol(col){return col+'_'+APP_LEVEL;}
+// Migreer bestaande HAVO data van oude keys (zonder suffix) naar nieuwe keys (_havo)
+(function migreerHavo(){
+  const cols=['progress','cijfers','favs','mijnvakken'];
+  const lbOld='examenapp_leaderboard';
+  cols.forEach(col=>{
+    const oldKey='examenapp_'+col;
+    const newKey='examenapp_'+col+'_havo';
+    if(!localStorage.getItem(newKey)&&localStorage.getItem(oldKey)){
+      localStorage.setItem(newKey,localStorage.getItem(oldKey));
+    }
+  });
+  if(!localStorage.getItem('examenapp_leaderboard_havo')&&localStorage.getItem(lbOld)){
+    localStorage.setItem('examenapp_leaderboard_havo',localStorage.getItem(lbOld));
+  }
+})();
 
 function buildGrid(){
   const g=document.getElementById('vakgrid');
