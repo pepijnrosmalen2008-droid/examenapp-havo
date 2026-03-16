@@ -1227,48 +1227,20 @@ h1,h2,h3,h4{font-family:var(--font-head);line-height:1.2;letter-spacing:-.3px}
     <div class="prof-section-title">SE-cijfers</div>
     <div class="prof-section-sub">Vul je schoolexamencijfers in — gebruikt door de slaag-/zakrekenaars</div>
 
-    <!-- Import buttons -->
-    <div class="import-row">
-      <button class="import-app-btn" id="imp-btn-mag" onclick="toggleImportPanel('magister')">
-        <div class="import-app-icon mag">M</div>
-        <span>Importeer uit Magister</span>
-      </button>
-      <button class="import-app-btn" id="imp-btn-som" onclick="toggleImportPanel('somtoday')">
-        <div class="import-app-icon som">S</div>
-        <span>Importeer uit SomToday</span>
-      </button>
-    </div>
-
-    <!-- Magister import panel -->
-    <div class="import-panel" id="imp-panel-magister">
+    <!-- Unified import panel -->
+    <div class="import-panel show" id="imp-panel-unified" style="display:block">
       <div class="import-steps">
-        <strong>Hoe importeer je uit Magister?</strong>
+        <strong>Importeer vanuit Magister of SomToday</strong>
         <ol>
-          <li>Open <strong>magister.net</strong> en log in</li>
-          <li>Ga naar <strong>Cijfers</strong> → <strong>Overzicht</strong></li>
-          <li>Selecteer alle tekst op de pagina (<kbd>Ctrl+A</kbd>) en kopieer (<kbd>Ctrl+C</kbd>)</li>
-          <li>Plak de tekst hieronder (<kbd>Ctrl+V</kbd>)</li>
+          <li>Open je schoolapp (<strong>magister.net</strong> of <strong>leerling.somtoday.nl</strong>) en log in</li>
+          <li>Ga naar je <strong>cijferoverzicht</strong></li>
+          <li>Selecteer alles op de pagina (<kbd>Ctrl+A</kbd>) en kopieer (<kbd>Ctrl+C</kbd>)</li>
+          <li>Plak de tekst hieronder (<kbd>Ctrl+V</kbd>) en klik op importeer</li>
         </ol>
       </div>
-      <textarea class="import-textarea" id="imp-paste-magister" placeholder="Plak hier je gekopieerde Magister-pagina..."></textarea>
-      <br><button class="import-go-btn" onclick="doImport('magister')">Importeer cijfers →</button>
-      <div class="import-result" id="imp-result-magister"></div>
-    </div>
-
-    <!-- SomToday import panel -->
-    <div class="import-panel" id="imp-panel-somtoday">
-      <div class="import-steps">
-        <strong>Hoe importeer je uit SomToday?</strong>
-        <ol>
-          <li>Open <strong>leerling.somtoday.nl</strong> en log in</li>
-          <li>Ga naar <strong>Cijfers</strong> → <strong>Cijferoverzicht</strong></li>
-          <li>Selecteer alle tekst op de pagina (<kbd>Ctrl+A</kbd>) en kopieer (<kbd>Ctrl+C</kbd>)</li>
-          <li>Plak de tekst hieronder (<kbd>Ctrl+V</kbd>)</li>
-        </ol>
-      </div>
-      <textarea class="import-textarea" id="imp-paste-somtoday" placeholder="Plak hier je gekopieerde SomToday-pagina..."></textarea>
-      <br><button class="import-go-btn" onclick="doImport('somtoday')">Importeer cijfers →</button>
-      <div class="import-result" id="imp-result-somtoday"></div>
+      <textarea class="import-textarea" id="imp-paste-unified" placeholder="Plak hier je gekopieerde cijferpagina..." rows="6"></textarea>
+      <br><button class="import-go-btn" onclick="doImport('unified')">Importeer cijfers →</button>
+      <div class="import-result" id="imp-result-unified"></div>
     </div>
 
     <!-- Manual grade inputs -->
@@ -2191,53 +2163,59 @@ function toggleImportPanel(app){
 
 function parseCijferText(text){
   const found={};
-  // Split on newlines; also handle cases where "SE7,6" is directly glued to the subject line
-  // First normalize: insert newline before "SE" followed by a digit if it appears mid-line
-  const normalised=text.replace(/([a-zA-Z])(SE\s*\d)/g,'$1\n$2');
-  const lines=normalised.split(/\r?\n/).map(l=>l.trim()).filter(Boolean);
 
-  // Strategy: subject name on line N, grade "SE{x}" on line N+1
-  // Also handle tab-separated format: "Vak\tSE7,6"
+  // ── 1. Normalize whitespace & encodings ──────────────────────────
+  let t=text
+    .replace(/\r\n/g,'\n').replace(/\r/g,'\n')   // Windows/Mac line endings
+    .replace(/\u00a0/g,' ')                        // non-breaking space
+    .replace(/\u200b|\u200c|\u200d|\ufeff/g,'')   // zero-width chars
+    .replace(/([a-zA-Z\u00c0-\u024f])(SE\s*\d)/gi,'$1\n$2'); // glued "biologieSE7,6"
+
+  const lines=t.split('\n').map(l=>l.trim()).filter(Boolean);
+
+  // ── Helper: is this string a valid grade 1-10? ──────────────────
+  function toGrade(s){
+    const n=parseFloat(s.replace(',','.'));
+    return(!isNaN(n)&&n>=1&&n<=10)?Math.round(n*10)/10:null;
+  }
+
+  // ── 2. Scan lines ────────────────────────────────────────────────
   for(let i=0;i<lines.length;i++){
     const line=lines[i];
 
-    // Tab-separated or multi-space: "biologie\tSE7,6" on same line
-    const tabMatch=line.match(/^(.+?)[\t]{1,}SE\s*([0-9]{1,2}[,.][0-9]|[0-9]{1,2})\s*$/i);
-    if(tabMatch){
-      const vakId=matchVakNaam(tabMatch[1]);
-      if(vakId){
-        const g=parseFloat(tabMatch[2].replace(',','.'));
-        if(g>=1&&g<=10)found[vakId]=Math.round(g*10)/10;
-      }
-      continue;
-    }
-
-    // Check if this line IS an SE grade line
+    // Skip pure grade / SE-grade lines
     if(/^SE\s*[0-9]/i.test(line))continue;
+    if(/^[0-9]{1,2}[,.][0-9]\s*$/.test(line))continue;
 
-    // Try to match line as a subject name
+    // Try to identify a subject on this line
     const vakId=matchVakNaam(line);
     if(!vakId)continue;
 
-    // Look at the very next line for the SE grade
-    if(i+1<lines.length){
-      const next=lines[i+1];
-      const seMatch=next.match(/^SE\s*([0-9]{1,2}[,.]?[0-9]?)\s*$/i);
-      if(seMatch){
-        const g=parseFloat(seMatch[1].replace(',','.'));
-        if(g>=1&&g<=10){
-          found[vakId]=Math.round(g*10)/10;
-          i++; // consume the grade line
-        }
-      }
+    // Scan the next 1-3 lines for a grade (SE or bare number)
+    for(let j=i+1;j<=i+3&&j<lines.length;j++){
+      const nx=lines[j];
+
+      // Another subject name → stop looking
+      if(matchVakNaam(nx))break;
+
+      // "SE8,4" or "SE 8.4" → grade
+      const seM=nx.match(/^SE\s*([0-9]{1,2}[,.]?[0-9]*)\s*$/i);
+      if(seM){const g=toGrade(seM[1]);if(g){found[vakId]=g;i=j;}break;}
+
+      // Bare grade "8,4" or "8.4" or "8" on its own line
+      const barM=nx.match(/^([0-9]{1,2}[,.][0-9]|10)\s*$/);
+      if(barM){const g=toGrade(barM[1]);if(g){found[vakId]=g;i=j;}break;}
     }
   }
   return found;
 }
 
 function doImport(app){
-  const textarea=document.getElementById('imp-paste-'+app);
-  const result=document.getElementById('imp-result-'+app);
+  // unified panel replaces separate magister/somtoday panels
+  const textareaId=app==='unified'?'imp-paste-unified':('imp-paste-'+app);
+  const resultId=app==='unified'?'imp-result-unified':('imp-result-'+app);
+  const textarea=document.getElementById(textareaId);
+  const result=document.getElementById(resultId);
   const text=textarea.value.trim();
   if(!text){result.textContent='Plak eerst tekst van Magister of SomToday.';result.className='import-result err';return;}
   const parsed=parseCijferText(text);
