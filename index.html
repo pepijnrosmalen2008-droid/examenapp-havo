@@ -1483,10 +1483,8 @@ html.dark .auth-ok{background:#0F2D1C;border-color:#166534;color:#86EFAC}
   </div>
 </div>
 
-<!-- Firebase SDK (compat) — must load before app script -->
-<script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-app-compat.js"></script>
-<script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-auth-compat.js"></script>
-<script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-firestore-compat.js"></script>
+<!-- Supabase SDK — must load before app script -->
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
 <script>
 // ═══════ DATA ═══════
 const VAKKEN = [
@@ -2214,77 +2212,66 @@ function buildGrid(){
   });
 }
 
-// ═══════ FIREBASE ═══════
-const FIREBASE_CONFIG={
-  apiKey:"JOUW_API_KEY",
-  authDomain:"JOUW_PROJECT.firebaseapp.com",
-  projectId:"JOUW_PROJECT_ID",
-  storageBucket:"JOUW_PROJECT.appspot.com",
-  messagingSenderId:"JOUW_SENDER_ID",
-  appId:"JOUW_APP_ID"
-};
-const FB_ENABLED=FIREBASE_CONFIG.apiKey!=="JOUW_API_KEY";
-let db=null,fbAuth=null,currentUser=null;
-if(FB_ENABLED){
-  try{
-    firebase.initializeApp(FIREBASE_CONFIG);
-    fbAuth=firebase.auth();
-    db=firebase.firestore();
-    fbAuth.onAuthStateChanged(user=>{
-      currentUser=user;
-      updateProfileNav();
-      updateCloudStatusBar();
-      if(user)syncFromFirestore();
-    });
-  }catch(e){console.warn('Firebase init failed:',e);}
-}
+// ═══════ SUPABASE ═══════
+const SUPABASE_URL='https://sxrjdssmgwwygtskovyc.supabase.co';
+const SUPABASE_KEY='eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InN4cmpkc3NtZ3d3eWd0c2tvdnljIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzM2OTEwNDAsImV4cCI6MjA4OTI2NzA0MH0.iML8S6I6wZ9zGUDBZJleyFHlpPYmUvdGyNyDSYcxon4';
+const SB=window.supabase.createClient(SUPABASE_URL,SUPABASE_KEY);
+let currentUser=null;
+// Check existing session on load
+SB.auth.getSession().then(({data:{session}})=>{
+  currentUser=session?.user||null;
+  updateProfileNav();updateCloudStatusBar();
+  if(currentUser)syncFromCloud();
+});
+// Listen for auth changes (login/logout/token refresh)
+SB.auth.onAuthStateChange((_event,session)=>{
+  currentUser=session?.user||null;
+  updateProfileNav();updateCloudStatusBar();
+  if(currentUser)syncFromCloud();
+});
 
 async function cloudSet(col,data){
-  const lsKey='examenapp_'+col;
-  localStorage.setItem(lsKey,JSON.stringify(data));
-  if(!currentUser||!db)return;
-  try{await db.doc(`users/${currentUser.uid}/${col}/data`).set(data,{merge:true});}
-  catch(e){console.warn('cloudSet error:',e);}
+  localStorage.setItem('examenapp_'+col,JSON.stringify(data));
+  if(!currentUser)return;
+  try{
+    await SB.from('user_data').upsert(
+      {user_id:currentUser.id,[col]:data,updated_at:new Date().toISOString()},
+      {onConflict:'user_id'}
+    );
+  }catch(e){console.warn('cloudSet error:',e);}
 }
 async function cloudGet(col,def){
-  if(!currentUser||!db)
-    return JSON.parse(localStorage.getItem('examenapp_'+col)||JSON.stringify(def));
+  if(!currentUser)return JSON.parse(localStorage.getItem('examenapp_'+col)||JSON.stringify(def));
   try{
-    const snap=await db.doc(`users/${currentUser.uid}/${col}/data`).get();
-    return snap.exists?snap.data():def;
-  }catch(e){
-    return JSON.parse(localStorage.getItem('examenapp_'+col)||JSON.stringify(def));
-  }
+    const {data,error}=await SB.from('user_data').select(col).eq('user_id',currentUser.id).single();
+    if(error||!data)return JSON.parse(localStorage.getItem('examenapp_'+col)||JSON.stringify(def));
+    return data[col]||def;
+  }catch(e){return JSON.parse(localStorage.getItem('examenapp_'+col)||JSON.stringify(def));}
 }
-async function syncFromFirestore(){
+async function syncFromCloud(){
   try{
-    const [prof,grades,prog,streak,favs,mijn]=await Promise.all([
-      cloudGet('profiel',{}),cloudGet('cijfers',{}),
-      cloudGet('progress',{}),cloudGet('streak',{}),
-      cloudGet('favs',{list:[]}),cloudGet('mijnvakken',{list:[]})
-    ]);
-    localStorage.setItem(PROF_KEY,JSON.stringify(prof));
-    localStorage.setItem(CIJFER_KEY,JSON.stringify(grades));
-    localStorage.setItem('examenapp_progress',JSON.stringify(prog));
-    localStorage.setItem('examenapp_streak',JSON.stringify(streak));
-    localStorage.setItem('examenapp_favs',JSON.stringify(favs.list||[]));
-    localStorage.setItem('examenapp_mijnvakken',JSON.stringify(mijn.list||[]));
+    const {data,error}=await SB.from('user_data').select('*').eq('user_id',currentUser.id).single();
+    if(error||!data)return;
+    if(data.profiel)localStorage.setItem(PROF_KEY,JSON.stringify(data.profiel));
+    if(data.cijfers)localStorage.setItem(CIJFER_KEY,JSON.stringify(data.cijfers));
+    if(data.progress)localStorage.setItem('examenapp_progress',JSON.stringify(data.progress));
+    if(data.streak)localStorage.setItem('examenapp_streak',JSON.stringify(data.streak));
+    if(data.favs)localStorage.setItem('examenapp_favs',JSON.stringify(data.favs.list||[]));
+    if(data.mijnvakken)localStorage.setItem('examenapp_mijnvakken',JSON.stringify(data.mijnvakken.list||[]));
     updateProfileNav();renderStreak();renderFavHome();buildGrid();
-  }catch(e){console.warn('syncFromFirestore error:',e);}
+  }catch(e){console.warn('syncFromCloud error:',e);}
 }
 
-function authErrMsg(code){
-  const map={
-    'auth/invalid-email':'Ongeldig e-mailadres.',
-    'auth/user-not-found':'Geen account gevonden met dit e-mailadres.',
-    'auth/wrong-password':'Onjuist wachtwoord.',
-    'auth/invalid-credential':'Onjuist e-mailadres of wachtwoord.',
-    'auth/email-already-in-use':'Dit e-mailadres is al in gebruik.',
-    'auth/weak-password':'Wachtwoord moet minimaal 6 tekens zijn.',
-    'auth/too-many-requests':'Te veel pogingen. Probeer het later opnieuw.',
-    'auth/network-request-failed':'Geen internetverbinding.',
-  };
-  return map[code]||'Er is iets misgegaan. Probeer het opnieuw.';
+function authErrMsg(msg){
+  if(!msg)return'Er is iets misgegaan. Probeer het opnieuw.';
+  const m=msg.toLowerCase();
+  if(m.includes('invalid login')||m.includes('invalid credentials'))return'Onjuist e-mailadres of wachtwoord.';
+  if(m.includes('email not confirmed'))return'Bevestig eerst je e-mailadres via de mail die je hebt ontvangen.';
+  if(m.includes('already registered')||m.includes('user already exists'))return'Dit e-mailadres is al in gebruik.';
+  if(m.includes('password'))return'Wachtwoord moet minimaal 6 tekens zijn.';
+  if(m.includes('rate limit'))return'Te veel pogingen. Probeer het later opnieuw.';
+  if(m.includes('network')||m.includes('fetch'))return'Geen internetverbinding.';
+  return'Er is iets misgegaan. Probeer het opnieuw.';
 }
 
 function switchAuthTab(tab){
@@ -2297,7 +2284,6 @@ function switchAuthTab(tab){
 }
 
 async function doLogin(){
-  if(!FB_ENABLED)return;
   const email=document.getElementById('login-email').value.trim();
   const pass=document.getElementById('login-pass').value;
   const errEl=document.getElementById('auth-err-login');
@@ -2307,15 +2293,15 @@ async function doLogin(){
   if(!email||!pass){errEl.textContent='Vul je e-mail en wachtwoord in.';errEl.style.display='block';return;}
   btn.disabled=true;btn.textContent='Bezig...';
   try{
-    await fbAuth.signInWithEmailAndPassword(email,pass);
+    const {error}=await SB.auth.signInWithPassword({email,password:pass});
+    if(error)throw error;
     show('sc-home');
   }catch(e){
-    errEl.textContent=authErrMsg(e.code);errEl.style.display='block';
+    errEl.textContent=authErrMsg(e.message);errEl.style.display='block';
   }finally{btn.disabled=false;btn.textContent='Inloggen';}
 }
 
 async function doRegister(){
-  if(!FB_ENABLED)return;
   const naam=document.getElementById('reg-naam').value.trim();
   const email=document.getElementById('reg-email').value.trim();
   const pass=document.getElementById('reg-pass').value;
@@ -2326,14 +2312,23 @@ async function doRegister(){
   if(!email||!pass){errEl.textContent='Vul je e-mail en wachtwoord in.';errEl.style.display='block';return;}
   btn.disabled=true;btn.textContent='Bezig...';
   try{
-    const cred=await fbAuth.createUserWithEmailAndPassword(email,pass);
-    // Save naam to profile immediately
+    const {data,error}=await SB.auth.signUp({email,password:pass});
+    if(error)throw error;
     const prof={naam,avatar:AVATARS[4].e,school:'',klas:'',profiel:''};
     localStorage.setItem(PROF_KEY,JSON.stringify(prof));
-    await cloudSet('profiel',prof);
-    show('sc-home');updateProfileNav();
+    if(data.user){currentUser=data.user;await cloudSet('profiel',prof);}
+    // Supabase may require email confirmation
+    const needsConfirm=!data.session;
+    if(needsConfirm){
+      const okEl=document.getElementById('auth-ok-login');
+      switchAuthTab('login');
+      document.getElementById('auth-ok-login').textContent='✓ Account aangemaakt! Controleer je inbox om je e-mail te bevestigen.';
+      document.getElementById('auth-ok-login').style.display='block';
+    }else{
+      show('sc-home');updateProfileNav();
+    }
   }catch(e){
-    errEl.textContent=authErrMsg(e.code);errEl.style.display='block';
+    errEl.textContent=authErrMsg(e.message);errEl.style.display='block';
   }finally{btn.disabled=false;btn.textContent='Account aanmaken';}
 }
 
@@ -2344,13 +2339,14 @@ async function doForgotPassword(){
   errEl.style.display='none';okEl.style.display='none';
   if(!email){errEl.textContent='Vul eerst je e-mailadres in.';errEl.style.display='block';return;}
   try{
-    await fbAuth.sendPasswordResetEmail(email);
+    const {error}=await SB.auth.resetPasswordForEmail(email);
+    if(error)throw error;
     okEl.textContent='✓ Herstelmail verstuurd! Controleer je inbox.';okEl.style.display='block';
-  }catch(e){errEl.textContent=authErrMsg(e.code);errEl.style.display='block';}
+  }catch(e){errEl.textContent=authErrMsg(e.message);errEl.style.display='block';}
 }
 
 function doLogout(){
-  if(fbAuth)fbAuth.signOut();
+  SB.auth.signOut();
   currentUser=null;
   updateProfileNav();updateCloudStatusBar();
   show('sc-home');
@@ -2360,14 +2356,10 @@ function updateCloudStatusBar(){
   const bar=document.getElementById('cloud-status-bar');
   const sub=document.getElementById('prof-sub-text');
   if(!bar)return;
-  if(!FB_ENABLED){
-    bar.innerHTML=`<div class="cloud-setup">☁️ <strong>Cloud-sync uitgeschakeld.</strong> Maak een gratis project aan op <a href="https://firebase.google.com" target="_blank" rel="noopener">firebase.google.com</a> en vul de config in om op elk apparaat in te loggen.</div>`;
-    return;
-  }
   if(currentUser){
     bar.innerHTML=`<div class="cloud-status">
       <div class="cs-icon">☁️</div>
-      <div class="cs-info"><div class="cs-email">${currentUser.displayName||currentUser.email}</div><div class="cs-sub">Gesynchroniseerd · ${currentUser.email}</div></div>
+      <div class="cs-info"><div class="cs-email">${currentUser.email}</div><div class="cs-sub">Gesynchroniseerd via Supabase ☁️</div></div>
       <button class="cs-logout" onclick="doLogout()">Uitloggen</button>
     </div>`;
     if(sub)sub.textContent='Wordt gesynchroniseerd met je account ☁️';
@@ -2593,7 +2585,7 @@ function doImport(app){
 function updateProfileNav(){
   const btn=document.getElementById('home-prof-btn');
   if(!btn)return;
-  if(FB_ENABLED&&!currentUser){
+  if(!currentUser){
     btn.innerHTML='🔑 Inloggen';
     return;
   }
@@ -2609,7 +2601,7 @@ function updateProfileNav(){
 }
 
 function openProfiel(){
-  if(FB_ENABLED&&!currentUser){show('sc-auth');return;}
+  if(!currentUser){show('sc-auth');return;}
   loadProfile();
   buildCijferGrid();
   updateCloudStatusBar();
@@ -2936,38 +2928,45 @@ function switchMode(){show('sc-qmode');}
 const LB_KEY='examenapp_leaderboard';
 function getLbEntries(){try{return JSON.parse(localStorage.getItem(LB_KEY)||'[]');}catch(e){return[];}}
 async function saveLeaderboardEntry(entry){
-  // Add uid for identity when logged in
-  if(currentUser)entry.uid=currentUser.uid;
+  if(currentUser)entry.uid=currentUser.id;
   // Save to local cache
   let all=getLbEntries();
   all.push(entry);
   all.sort((a,b)=>b.score-a.score);
   if(all.length>200)all=all.slice(0,200);
   localStorage.setItem(LB_KEY,JSON.stringify(all));
-  // Save to Firestore global leaderboard (cross-user)
-  if(currentUser&&db){
-    try{await db.collection('leaderboard').add(entry);}
-    catch(e){console.warn('leaderboard save error:',e);}
+  // Save to Supabase global leaderboard (cross-user)
+  if(currentUser){
+    try{
+      await SB.from('leaderboard').insert({
+        user_id:currentUser.id,
+        naam:entry.naam,avatar:entry.avatar,
+        vak:entry.vak,vak_naam:entry.vakNaam,
+        score:entry.score,correct:entry.goed,total:entry.tot
+      });
+    }catch(e){console.warn('leaderboard save error:',e);}
   }
 }
-async function loadLeaderboardFromFirestore(){
-  if(!db)return;
+async function loadLeaderboardFromSupabase(){
   try{
-    const snap=await db.collection('leaderboard').orderBy('score','desc').limit(200).get();
-    const entries=snap.docs.map(d=>d.data());
+    const {data,error}=await SB.from('leaderboard').select('*').order('score',{ascending:false}).limit(200);
+    if(error||!data)return;
+    const entries=data.map(d=>({
+      naam:d.naam,avatar:d.avatar,vak:d.vak,vakNaam:d.vak_naam,
+      score:d.score,goed:d.correct,tot:d.total,uid:d.user_id,
+      date:d.created_at?.slice(0,10)
+    }));
     localStorage.setItem(LB_KEY,JSON.stringify(entries));
   }catch(e){console.warn('leaderboard load error:',e);}
 }
 let lbVakFilter='all';
 function renderLeaderboard(){
-  // Load from Firestore in background, then re-render
-  if(db)loadLeaderboardFromFirestore().then(()=>_renderLbWithData());
-  else _renderLbWithData();
+  loadLeaderboardFromSupabase().then(()=>_renderLbWithData());
 }
 function _renderLbWithData(){
   const all=getLbEntries();
   const prof=JSON.parse(localStorage.getItem(PROF_KEY)||'{}');
-  const myUid=currentUser?currentUser.uid:null;
+  const myUid=currentUser?currentUser.id:null;
   const myNaam=prof.naam||null;
 
   // Build filter buttons
