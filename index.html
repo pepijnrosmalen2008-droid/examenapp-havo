@@ -2464,6 +2464,8 @@ const VAKKEN_VWO=[
 // ═══════ NIVEAU BEHEER ═══════
 let APP_LEVEL=localStorage.getItem('examenapp_level')||'havo';
 function getVK(){return APP_LEVEL==='vwo'?VAKKEN_VWO:VAKKEN;}
+// Level-specifieke localStorage/Supabase kolomnamen (VWO krijgt suffix _vwo)
+function lvlCol(col){return APP_LEVEL==='vwo'?col+'_vwo':col;}
 
 function buildGrid(){
   const g=document.getElementById('vakgrid');
@@ -2523,11 +2525,11 @@ async function syncFromCloud(){
     const {data,error}=await SB.from('user_data').select('*').eq('user_id',currentUser.id).single();
     if(error||!data)return;
     if(data.profiel)localStorage.setItem(PROF_KEY,JSON.stringify(data.profiel));
-    if(data.cijfers)localStorage.setItem(CIJFER_KEY,JSON.stringify(data.cijfers));
-    if(data.progress)localStorage.setItem('examenapp_progress',JSON.stringify(data.progress));
+    const cij=data[lvlCol('cijfers')];if(cij)localStorage.setItem('examenapp_'+lvlCol('cijfers'),JSON.stringify(cij));
+    const prog=data[lvlCol('progress')];if(prog)localStorage.setItem('examenapp_'+lvlCol('progress'),JSON.stringify(prog));
     if(data.streak)localStorage.setItem('examenapp_streak',JSON.stringify(data.streak));
-    if(data.favs)localStorage.setItem('examenapp_favs',JSON.stringify(data.favs.list||[]));
-    if(data.mijnvakken)localStorage.setItem('examenapp_mijnvakken',JSON.stringify(data.mijnvakken.list||[]));
+    const favs=data[lvlCol('favs')];if(favs)localStorage.setItem('examenapp_'+lvlCol('favs'),JSON.stringify(favs.list||[]));
+    const mijn=data[lvlCol('mijnvakken')];if(mijn)localStorage.setItem('examenapp_'+lvlCol('mijnvakken'),JSON.stringify(mijn.list||[]));
     updateProfileNav();renderStreak();renderFavHome();buildGrid();
   }catch(e){console.warn('syncFromCloud error:',e);}
 }
@@ -2727,7 +2729,7 @@ function saveProfileData(){
 }
 
 function getSavedCijfers(){
-  return JSON.parse(localStorage.getItem(CIJFER_KEY)||'{}');
+  return JSON.parse(localStorage.getItem('examenapp_'+lvlCol('cijfers'))||'{}');
 }
 
 function buildCijferGrid(){
@@ -2754,7 +2756,7 @@ function saveCijfers(){
       if(!isNaN(n)&&n>=1&&n<=10)saved[v.id]=Math.round(n*10)/10;
     }
   });
-  cloudSet('cijfers',saved);
+  cloudSet(lvlCol('cijfers'),saved);
   const msg=document.getElementById('cijfer-saved-msg');
   msg.classList.add('show');
   setTimeout(()=>msg.classList.remove('show'),2500);
@@ -2845,7 +2847,7 @@ function doImport(app){
   }
   const existing=getSavedCijfers();
   const merged={...existing,...parsed};
-  cloudSet('cijfers',merged);
+  cloudSet(lvlCol('cijfers'),merged);
   buildCijferGrid();
   result.textContent=`✓ ${keys.length} vak${keys.length===1?'':'ken'} geïmporteerd: ${keys.map(k=>getVK().find(v=>v.id===k)?.naam||k).join(', ')}`;
   result.className='import-result ok';
@@ -3386,7 +3388,7 @@ setInterval(updateCountdown,1000);
 
 // ═══════ PROGRESS TRACKING ═══════
 function getProgress(){
-  try{return JSON.parse(localStorage.getItem('examenapp_progress')||'{}');}
+  try{return JSON.parse(localStorage.getItem('examenapp_'+lvlCol('progress'))||'{}');}
   catch(e){return {};}
 }
 function saveProgress(vakId,domeinId,mode,score,total){
@@ -3396,7 +3398,7 @@ function saveProgress(vakId,domeinId,mode,score,total){
   p[key].attempts++;
   if(score>p[key].best)p[key].best=score;
   p[key].total=total;
-  cloudSet('progress',p);
+  cloudSet(lvlCol('progress'),p);
 }
 function getVakProgress(vakId){
   const p=getProgress();
@@ -3438,13 +3440,13 @@ function resetVakProgress(){
   Object.keys(p).forEach(key=>{
     if(key.startsWith(ST.vak.id+'_'))delete p[key];
   });
-  localStorage.setItem('examenapp_progress',JSON.stringify(p));
+  localStorage.setItem('examenapp_'+lvlCol('progress'),JSON.stringify(p));
   openVak(ST.vak.id);
 }
 
 // ═══════ FAVORITES ═══════
 function getFavs(){
-  try{return JSON.parse(localStorage.getItem('examenapp_favs')||'[]');}
+  try{return JSON.parse(localStorage.getItem('examenapp_'+lvlCol('favs'))||'[]');}
   catch(e){return [];}
 }
 function toggleFav(vakId,domeinId){
@@ -3452,7 +3454,7 @@ function toggleFav(vakId,domeinId){
   const key=`${vakId}_${domeinId}`;
   const idx=favs.indexOf(key);
   if(idx>=0)favs.splice(idx,1);else favs.push(key);
-  cloudSet('favs',{list:favs});
+  cloudSet(lvlCol('favs'),{list:favs});
   renderFavHome();
   return favs.includes(key);
 }
@@ -3609,8 +3611,8 @@ const EXAM_SCHEDULE=[
 {datum:'2026-05-27',tijd:'09:00–11:30',vak:'Fries / Russisch',duur:'2,5 uur',havo:false},
 {datum:'2026-05-27',tijd:'13:30–16:00',vak:'Arabisch / Spaans / Turks',duur:'2,5 uur',havo:false}
 ];
-function getMijnVakken(){try{return JSON.parse(localStorage.getItem('examenapp_mijnvakken')||'[]');}catch(e){return [];}}
-function setMijnVakken(arr){cloudSet('mijnvakken',{list:arr});}
+function getMijnVakken(){try{return JSON.parse(localStorage.getItem('examenapp_'+lvlCol('mijnvakken'))||'[]');}catch(e){return [];}}
+function setMijnVakken(arr){cloudSet(lvlCol('mijnvakken'),{list:arr});}
 function renderSchedule(){
   const list=document.getElementById('schedule-list');
   const onlyMine=document.getElementById('sch-filter-mine').checked;
