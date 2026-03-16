@@ -1124,7 +1124,7 @@ html.dark .auth-ok{background:#0F2D1C;border-color:#166534;color:#86EFAC}
   <div class="nav-inner">
     <div class="logo" onclick="show('sc-home')"><div class="logo-dot"></div>ExamenApp</div>
     <button class="bk" onclick="show('sc-home')">← Vakken</button>
-    <span class="hbg" style="margin-left:auto">HAVO</span>
+    <span class="hbg" id="vak-level-badge" style="margin-left:auto">HAVO</span>
     <button class="theme-btn" onclick="toggleDark()" title="Nachtmodus" id="theme-btn-detail"><svg viewBox="0 0 24 24"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg></button>
   </div>
 </nav>
@@ -3976,6 +3976,8 @@ function chooseLevel(level){
 function updateLevelChip(){
   const chip=document.getElementById('home-level-chip');
   if(chip)chip.textContent=(APP_LEVEL==='vwo'?'VWO':'HAVO')+' 2026';
+  const badge=document.getElementById('vak-level-badge');
+  if(badge)badge.textContent=(APP_LEVEL==='vwo'?'VWO':'HAVO');
 }
 
 // ═══════ INIT ═══════
