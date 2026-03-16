@@ -389,6 +389,9 @@ html.dark .qb{background:#2e3550}
 .lc-havo{background:rgba(232,88,12,.1);border-color:rgba(232,88,12,.3)}
 .lc-havo:hover{background:rgba(232,88,12,.18);border-color:rgba(232,88,12,.55);box-shadow:0 16px 48px rgba(232,88,12,.22)}
 .lc-havo::before{background:linear-gradient(90deg,transparent,rgba(232,88,12,.5),transparent)}
+.lc-vwo{background:rgba(139,92,246,.1);border-color:rgba(139,92,246,.3)}
+.lc-vwo:hover{background:rgba(139,92,246,.18);border-color:rgba(139,92,246,.55);box-shadow:0 16px 48px rgba(139,92,246,.22)}
+.lc-vwo::before{background:linear-gradient(90deg,transparent,rgba(139,92,246,.5),transparent)}
 .lc-disabled{opacity:.45;cursor:default}
 .lc-disabled:hover{transform:none!important;box-shadow:none!important}
 .level-arrow{display:inline-block;margin-left:5px;color:var(--or);opacity:.7;transition:transform .25s}
@@ -1000,11 +1003,11 @@ html.dark .auth-ok{background:#0F2D1C;border-color:#166534;color:#86EFAC}
       <p>12 vakken met samenvattingen, snelle quizzen en oud-examen vragen.</p>
       <span class="level-count">12 vakken beschikbaar<span class="level-arrow">→</span></span>
     </div>
-    <div class="level-card lc-vwo lc-disabled">
+    <div class="level-card lc-vwo" onclick="chooseLevel('vwo')">
       <span class="level-icon">🔬</span>
       <h3>VWO</h3>
-      <p>Voorbereidend Wetenschappelijk Onderwijs — de zwaarste variant.</p>
-      <span class="level-soon">Binnenkort</span>
+      <p>14 vakken met samenvattingen, snelle quizzen en theorie op VWO-niveau.</p>
+      <span class="level-count">14 vakken beschikbaar<span class="level-arrow">→</span></span>
     </div>
   </div>
   <div class="footer-text">
@@ -1016,14 +1019,14 @@ html.dark .auth-ok{background:#0F2D1C;border-color:#166534;color:#86EFAC}
 </div>
 </div>
 
-<!-- HOME (HAVO) -->
+<!-- HOME -->
 <div id="sc-home" class="sc">
 <nav class="nav">
   <div class="nav-inner">
-    <div class="logo" onclick="show('sc-home')">
+    <div class="logo" onclick="show('sc-welcome')">
       <div class="logo-dot"></div>ExamenApp
     </div>
-    <span class="nav-chip">HAVO 2026</span>
+    <span class="nav-chip" id="home-level-chip">HAVO 2026</span>
     <button class="nav-btn" onclick="show('sc-schedule')">Rooster</button>
     <button class="nav-btn" onclick="show('sc-calc');setTimeout(prefillCalcFromSaved,50)">Cijfers</button>
     <button class="nav-btn" onclick="show('sc-leaderboard');renderLeaderboard()">🏆</button>
@@ -2239,10 +2242,232 @@ const VAK_ICONS={
   gs:'<path d="M5 22h14"/><path d="M5 2h14"/><path d="M17 22v-4.172a2 2 0 0 0-.586-1.414L12 12l-4.414 4.414A2 2 0 0 0 7 17.828V22"/><path d="M7 2v4.172a2 2 0 0 0 .586 1.414L12 12l4.414-4.414A2 2 0 0 0 17 6.172V2"/>',
   ak:'<circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>',
   wb:'<polyline points="4 19 8 13 12 15 16 8 20 5"/><line x1="4" y1="19" x2="20" y2="19"/>',
+  la:'<path d="M4 19V5h3l5 8 5-8h3v14h-3v-9l-5 7-5-7v9z"/>',
+  gr:'<line x1="3" y1="22" x2="21" y2="22"/><rect x="6" y="2" width="3" height="14"/><rect x="15" y="2" width="3" height="14"/><line x1="6" y1="9" x2="18" y2="9"/>',
+  in:'<rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/>',
+  fr:'<path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>',
+  du:'<path d="M4 4h16v2l-8 8-8-8V4z"/><path d="M4 20h16"/>',
+  wc:'<path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/>',
 };
+// ═══════ VWO VAKKEN ═══════
+const VAKKEN_VWO=[
+{id:'nl',naam:'Nederlands',code:'NE',kleur:'#E85C0D',
+ beschrijving:'Leesvaardigheid, schrijfvaardigheid en literatuur op VWO-niveau.',
+ ceInfo:'CE = leesvaardigheid (domein B) en literatuur (domein F). VWO vereist meer literaire werken (12) dan HAVO.',
+ exDatum:'2026-05-08',exTijd:'13:30–16:30',exDuur:'3 uur',
+ hulpmiddelen:'Basispakket + eendelig verklarend woordenboek Nederlands',
+ youtubeKanaal:'Arnoud Kuijpers',youtubeUrl:'https://youtube.com/@ArnoudKuijpers',
+ domeinen:[
+  {id:'B',naam:'Leesvaardigheid',beschrijving:'Tekstbegrip, argumentatie en retorische middelen op VWO-niveau',
+   onderwerpen:['Hoofdgedachte en opbouw','Signaalwoorden en tekststructuur','Feit, mening en argumentatie','Retorische middelen (ethos, pathos, logos)','Tekstsoorten en toon','Impliciete boodschappen'],
+   sam:'<div class="sam-head">Leesvaardigheid VWO</div><ul><li><strong>Retorische middelen</strong>: ethos (gezag van de schrijver), pathos (emotioneel appel), logos (rationele argumentatie). Identificeer welk middel de schrijver inzet.</li><li><strong>Impliciete boodschappen</strong>: VWO-teksten bevatten vaker impliciete standpunten — let op ironie, understatement en dubbele betekenis.</li><li><strong>Argumentatiestructuur</strong>: meervoudige of nevenschikkende argumentatie. Teken de argumentatiestructuur als boomdiagram bij complexe teksten.</li></ul>'},
+  {id:'F',naam:'Literatuur',beschrijving:'Literaire begrippen, stromingen en 12 literaire werken',
+   onderwerpen:['Literaire begrippen (perspectief, spanning, thema)','Romantiek en Realisme','Naturalisme en Symbolisme','Modernisme en Postmodernisme','Leeslijst (12 werken vereist)','Literaire analyse schrijven'],
+   sam:'<div class="sam-head">Literatuur VWO</div><ul><li><strong>Vereiste werken</strong>: minimaal 12 literaire werken, waarvan minimaal 3 van vóór 1880 en minimaal 3 in een andere taal (bij moderne vreemde talen).</li><li><strong>Analyse</strong>: gebruik literaire begrippen zoals focalisatie, vertelperspectief, tijdverspringen (prolepsis/analepsis), karakterisering en symbolen.</li><li><strong>Stromingen</strong>: ken de kenmerken van Romantiek (gevoel, natuur), Realisme (maatschappijkritiek), Naturalisme (erfelijkheid/milieu), Modernisme (bewustzijnsstroom) en Postmodernisme (metafictie).</li></ul>'},
+ ]},
+{id:'en',naam:'Engels',code:'EN',kleur:'#3B82F6',
+ beschrijving:'Lees- en luistervaardigheid, schrijven en literatuur op VWO-niveau.',
+ ceInfo:'CE = leesvaardigheid en literatuur. VWO vereist hogere taalniveaus (C1) dan HAVO (B2).',
+ exDatum:'2026-05-14',exTijd:'13:30–16:30',exDuur:'3 uur',
+ hulpmiddelen:'Basispakket',
+ youtubeKanaal:'',youtubeUrl:'',
+ domeinen:[
+  {id:'A',naam:'Leesvaardigheid',beschrijving:'Complexe Engelstalige teksten lezen en begrijpen (niveau C1)',
+   onderwerpen:['Tekstbegrip en hoofdgedachte','Inferentie en impliciete betekenis','Woordbetekenis in context','Argumentatiestructuur','Academische en literaire teksten','Skimmen en scannen'],
+   sam:'<div class="sam-head">Leesvaardigheid VWO</div><ul><li><strong>C1-niveau</strong>: VWO Engels vereist begrip van nuance, ironie en complexe zinsbouw. Oefen met authentieke Engelstalige kranten (The Guardian, BBC).</li><li><strong>Inferentie</strong>: trek conclusies uit wat er <em>niet</em> letterlijk staat. Gebruik context en toon van de schrijver.</li></ul>'},
+  {id:'F',naam:'Literatuur',beschrijving:'Literaire werken in het Engels analyseren',
+   onderwerpen:['Literaire begrippen in het Engels','Analyse van proza en poëzie','Thema, motief en symbool','Historische context','Leeslijst Engelstalige werken'],
+   sam:'<div class="sam-head">Engelse literatuur VWO</div><ul><li><strong>Leeslijst</strong>: lees minimaal 3 Engelstalige literaire werken. Maak aantekeningen van plot, thema, personages en stijl.</li><li><strong>Poëzie-analyse</strong>: let op metrum, rijmschema, alliteratie, beeldspraak en toon bij gedichten.</li></ul>'},
+ ]},
+{id:'wa',naam:'Wiskunde A',code:'WA',kleur:'#8B5CF6',
+ beschrijving:'Statistiek, kansen, verbanden en algebra op VWO-niveau.',
+ ceInfo:'CE = algebra (domein B/C), verbanden (D), kans & statistiek (E/F). VWO is uitgebreider dan HAVO.',
+ exDatum:'2026-05-19',exTijd:'13:30–16:30',exDuur:'3 uur',
+ hulpmiddelen:'Grafische rekenmachine',
+ youtubeKanaal:'Math with Menno',youtubeUrl:'https://youtube.com/@MathWithMenno',
+ domeinen:[
+  {id:'B',naam:'Algebra & Formules',beschrijving:'Geavanceerde algebra, logaritmen en exponentiële functies',
+   onderwerpen:['Logaritmen en exponenten','Vergelijkingen oplossen','Differentiëren (afgeleiden)','Limieten','Rijen en reeksen'],
+   sam:'<div class="sam-head">Algebra VWO</div><ul><li><strong>Logaritmen</strong>: ¹⁰log a = b ↔ 10ᵇ = a. Regels: log(ab) = log a + log b, log(aⁿ) = n·log a.</li><li><strong>Differentiëren</strong>: f\'(x) geeft de helling van de raaklijn. Machtsregel: als f(x)=xⁿ dan f\'(x)=n·xⁿ⁻¹.</li></ul>'},
+  {id:'D',naam:'Verbanden',beschrijving:'Functies, grafieken en veranderingen analyseren',
+   onderwerpen:['Lineaire en kwadratische functies','Exponentiële groei en afname','Logaritmische functies','Periodieke functies (sin/cos)','Integreren (oppervlakte)'],
+   sam:'<div class="sam-head">Verbanden VWO</div><ul><li><strong>Integreren</strong>: de integraal ∫f(x)dx geeft de oppervlakte onder een grafiek. Machtsregel: ∫xⁿdx = xⁿ⁺¹/(n+1) + C.</li><li><strong>Periodieke functies</strong>: f(x) = a·sin(b(x−c)) + d. a=amplitude, 2π/b=periode, c=verschuiving, d=middellijn.</li></ul>'},
+  {id:'E',naam:'Statistiek & Kansen',beschrijving:'Kansen, verdelingen en statistische toetsen',
+   onderwerpen:['Kansrekening (product- en somregel)','Binomiale verdeling','Normale verdeling','Hypothesetoets','Correlatiecoëfficiënt en regressie'],
+   sam:'<div class="sam-head">Statistiek VWO</div><ul><li><strong>Binomiale verdeling</strong>: P(X=k) = C(n,k)·pᵏ·(1−p)ⁿ⁻ᵏ. Gebruik bij n-herhalingen met kans p.</li><li><strong>Normale verdeling</strong>: karakteristiek klokvorming, µ=gemiddelde, σ=standaardafwijking. 68-95-99,7% regel.</li></ul>'},
+ ]},
+{id:'wb',naam:'Wiskunde B',code:'WB',kleur:'#6D28D9',
+ beschrijving:'Wiskundige redenering, analyse en ruimtemeetkunde voor bèta-profielen.',
+ ceInfo:'CE = analyse (domein B–D), meetkunde (E) en goniometrie. Zwaarste wiskunde op VWO.',
+ exDatum:'2026-05-15',exTijd:'13:30–16:30',exDuur:'3 uur',
+ hulpmiddelen:'Grafische rekenmachine',
+ youtubeKanaal:'Math with Menno',youtubeUrl:'https://youtube.com/@MathWithMenno',
+ domeinen:[
+  {id:'B',naam:'Algebra & Analyse',beschrijving:'Functies, afgeleiden en integralen op hoog niveau',
+   onderwerpen:['Kettingregel en productregel differentiëren','Integreren (partieel en substitutie)','Limieten en asymptoten','Impliciete differentiatie','Parametervergelijkingen'],
+   sam:'<div class="sam-head">Analyse WB</div><ul><li><strong>Kettingregel</strong>: [f(g(x))]\'= f\'(g(x))·g\'(x). Gebruik bij samengestelde functies.</li><li><strong>Productregel</strong>: [f·g]\' = f\'·g + f·g\'</li><li><strong>Integraal</strong>: oppervlakte tussen twee functies: ∫[f(x)−g(x)]dx van a tot b.</li></ul>'},
+  {id:'D',naam:'Goniometrie',beschrijving:'Goniometrische functies en vergelijkingen',
+   onderwerpen:['Sinus, cosinus en tangens','Eenheidscirkel','Goniometrische vergelijkingen','Optellingsformules','Inverse goniometrische functies'],
+   sam:'<div class="sam-head">Goniometrie WB</div><ul><li><strong>Eenheidscirkel</strong>: sin(α)=y-coördinaat, cos(α)=x-coördinaat op de eenheidscirkel (straal=1).</li><li><strong>Bijzondere hoeken</strong>: sin(30°)=½, cos(60°)=½, sin(45°)=cos(45°)=½√2, sin(90°)=1.</li></ul>'},
+  {id:'E',naam:'Ruimtemeetkunde',beschrijving:'Vectoren, lijnen en vlakken in 3D',
+   onderwerpen:['Vectoren (optelling, scalaire vermenigvuldiging)','Inproduct (dot product)','Vergelijking van een lijn','Vergelijking van een vlak','Doorsneden en hoeken'],
+   sam:'<div class="sam-head">Ruimtemeetkunde WB</div><ul><li><strong>Inproduct</strong>: a⃗·b⃗ = |a||b|cos(θ). Als inproduct = 0 zijn de vectoren loodrecht.</li><li><strong>Vergelijking lijn</strong>: r⃗ = a⃗ + t·b⃗, met a⃗ een punt op de lijn en b⃗ de richtingsvector.</li></ul>'},
+ ]},
+{id:'bi',naam:'Biologie',code:'BI',kleur:'#22C55E',
+ beschrijving:'Cellen, evolutie, genetica en ecologie op VWO-niveau.',
+ ceInfo:'CE = erfelijkheid (domein B), evolutie (D), stofwisseling (E/F). VWO heeft meer moleculaire biologie.',
+ exDatum:'2026-05-20',exTijd:'13:30–16:30',exDuur:'3 uur',
+ hulpmiddelen:'Basispakket',
+ youtubeKanaal:'Biologie voor jou',youtubeUrl:'https://youtube.com/@biologievoorjou',
+ domeinen:[
+  {id:'B',naam:'Erfelijkheid & Genetica',beschrijving:'DNA, genen, eiwitsynthese en overerving op moleculair niveau',
+   onderwerpen:['DNA-structuur en replicatie','Transcriptie en translatie (eiwitsynthese)','Mutaties en gevolgen','Dominante en recessieve overerving','Geslachtsgebonden overerving','Genetische manipulatie (CRISPR)'],
+   sam:'<div class="sam-head">Erfelijkheid VWO</div><ul><li><strong>Eiwitsynthese</strong>: DNA → (transcriptie) → mRNA → (translatie, ribosoom) → eiwit. Codons coderen voor aminozuren.</li><li><strong>Mutaties</strong>: puntmutatie (1 base veranderd), insertiemutatie, deletiemutatie. Frame-shift bij insertie/deletie.</li><li><strong>Kruisingsschema</strong>: gebruik genotypen (bijv. Aa × Aa) voor kansen op fenotypen nakomelingen.</li></ul>'},
+  {id:'D',naam:'Evolutie & Diversiteit',beschrijving:'Evolutietheorie, selectie en soortvorming',
+   onderwerpen:['Darwins evolutietheorie','Natuurlijke selectie','Soortvorming (allopatrisch/sympatrisch)','Populatiegenetica (Hardy-Weinberg)','Fylogenetische bomen','Vergelijkende anatomie'],
+   sam:'<div class="sam-head">Evolutie VWO</div><ul><li><strong>Natuurlijke selectie</strong>: organismen met gunstige eigenschappen overleven beter → meer nakomelingen → verschuiving in alleltfrequentie.</li><li><strong>Hardy-Weinberg</strong>: p² + 2pq + q² = 1, waarbij p=freq. dominante allel, q=freq. recessieve allel. Geldt bij grote populatie, geen mutatie/selectie/migratie.</li></ul>'},
+  {id:'E',naam:'Stofwisseling',beschrijving:'Celademhaling, fotosynthese en energiehuishouding',
+   onderwerpen:['Aerobe en anaerobe celademhaling','Glycolyse, citroenzuurcyclus, oxidatieve fosforylering','Fotosynthese (lichtreacties & Calvincyclus)','Enzymen en katalyse','Regulatie van stofwisseling'],
+   sam:'<div class="sam-head">Stofwisseling VWO</div><ul><li><strong>Celademhaling</strong>: C₆H₁₂O₆ + 6O₂ → 6CO₂ + 6H₂O + ATP. Netto ~38 ATP per glucosemolecuul.</li><li><strong>Fotosynthese</strong>: 6CO₂ + 6H₂O + lichtenergie → C₆H₁₂O₆ + 6O₂. Lichtreacties in thylakoid, Calvincyclus in stroma.</li></ul>'},
+ ]},
+{id:'sk',naam:'Scheikunde',code:'SK',kleur:'#F59E0B',
+ beschrijving:'Atoomstructuur, bindingen, reacties en organische chemie op VWO-niveau.',
+ ceInfo:'CE = organische chemie (domein B), chemische bindingen (C), reacties en evenwicht (D/E).',
+ exDatum:'2026-05-21',exTijd:'13:30–16:30',exDuur:'3 uur',
+ hulpmiddelen:'Grafische rekenmachine + BINAS',
+ youtubeKanaal:'ScheikundeNetwerk',youtubeUrl:'https://youtube.com/@ScheikundeNetwerk',
+ domeinen:[
+  {id:'B',naam:'Organische Chemie',beschrijving:'Functionele groepen, reactietypen en polymeren',
+   onderwerpen:['Alkanen, alkenen, alkynen','Functionele groepen (alcohol, zuur, ester, amine)','Substitutie- en additiereacties','Polymerisatie (additie en condensatie)','Isomerie','Benzeen en aromatische verbindingen'],
+   sam:'<div class="sam-head">Organische chemie VWO</div><ul><li><strong>Functionele groepen</strong>: –OH (alcohol), –COOH (carbonzuur), –COO– (ester), –NH₂ (amine), –CHO (aldehyde), C=O (keton).</li><li><strong>Estervorming</strong>: alcohol + carbonzuur ⇌ ester + water (condensatiereactie, reversibel).</li><li><strong>Isomerie</strong>: constitutie-isomeren (zelfde formule, andere structuur), stereoisomeren (spiegelbeelden).</li></ul>'},
+  {id:'D',naam:'Chemisch Evenwicht',beschrijving:'Evenwichtsreacties, Le Chatelier en evenwichtsconstante',
+   onderwerpen:['Dynamisch evenwicht','Evenwichtsconstante K','Principe van Le Chatelier','Zuur-base evenwichten (pH)','Oplosbaarheidsproduct','Buffer'],
+   sam:'<div class="sam-head">Evenwicht VWO</div><ul><li><strong>Le Chatelier</strong>: bij verstoring (concentratie, druk, temp.) verschuift het evenwicht om de verstoring te compenseren.</li><li><strong>pH berekenen</strong>: pH = −log[H⁺]. Bij zwak zuur: [H⁺] = √(Ka·Ca). Bij buffer: pH = pKa + log([A⁻]/[HA]).</li></ul>'},
+ ]},
+{id:'na',naam:'Natuurkunde',code:'NA',kleur:'#06B6D4',
+ beschrijving:'Mechanica, golven, elektriciteitsleer en moderne fysica op VWO-niveau.',
+ ceInfo:'CE = mechanica (B), golven/optica (C/D), elektromagnetisme (E), moderne fysica (F).',
+ exDatum:'2026-05-22',exTijd:'13:30–16:30',exDuur:'3 uur',
+ hulpmiddelen:'Grafische rekenmachine + Binas/tabellenboek',
+ youtubeKanaal:'NatuurkundeUitleg',youtubeUrl:'https://youtube.com/@NatuurkundeUitleg',
+ domeinen:[
+  {id:'B',naam:'Mechanica',beschrijving:'Krachten, beweging, energie en impuls op VWO-niveau',
+   onderwerpen:['Wetten van Newton','Eenparige cirkelvormige beweging','Arbeid, vermogen en energie','Behoud van energie en impuls','Rotatiebewegingen','Gravitatie (wet van Newton)'],
+   sam:'<div class="sam-head">Mechanica VWO</div><ul><li><strong>Middelpuntzoekende kracht</strong>: F = mv²/r = mω²r. Altijd gericht naar middelpunt van de cirkel.</li><li><strong>Behoud van impuls</strong>: p⃗ = m·v⃗. Bij gesloten systeem: Δp⃗_totaal = 0.</li><li><strong>Gravitatiewet</strong>: F = G·m₁·m₂/r². G = 6,67×10⁻¹¹ N·m²/kg².</li></ul>'},
+  {id:'E',naam:'Elektromagnetisme',beschrijving:'Elektrische en magnetische velden en inductie',
+   onderwerpen:['Elektrisch veld en potentiaal','Magnetisch veld (Lorentzkracht)','Elektromagnetische inductie (Faraday)','Transformatoren en generators','Wisselstroom en vermogen','RC- en RL-kringen'],
+   sam:'<div class="sam-head">Elektromagnetisme VWO</div><ul><li><strong>Lorentzkracht</strong>: F = q·v·B·sin(α). Richting: drievingerregel of F = qv⃗ × B⃗.</li><li><strong>Inductiewet van Faraday</strong>: E = −ΔΦ/Δt. Flux Φ = B·A·cos(θ). Lenz\'s wet: geïnduceerde stroom werkt de verandering tegen.</li></ul>'},
+  {id:'F',naam:'Moderne Fysica',beschrijving:'Kwantummechanica, relativiteit en kernfysica',
+   onderwerpen:['Fotoelektrisch effect (Einstein)','Golfdeeltje-dualisme (de Broglie)','Spectralijnen (Bohr-model)','Radioactiviteit en kernsplitsing','Speciale relativiteitstheorie (tijddilatatie)','Elementaire deeltjes'],
+   sam:'<div class="sam-head">Moderne Fysica VWO</div><ul><li><strong>Fotoelektrisch effect</strong>: E = hf − W. Foton met energie hf slaat elektron los. h = 6,63×10⁻³⁴ J·s.</li><li><strong>Halveringstijd</strong>: N(t) = N₀·(½)^(t/T½). Activiteit A = λ·N (λ = ln2/T½).</li></ul>'},
+ ]},
+{id:'ec',naam:'Economie',code:'EC',kleur:'#10B981',
+ beschrijving:'Micro- en macro-economie, internationale handel en conjunctuur op VWO-niveau.',
+ ceInfo:'CE = micro-economie (markt en prijs), macro-economie (conjunctuur, overheid, buitenland).',
+ exDatum:'2026-05-13',exTijd:'13:30–16:30',exDuur:'3 uur',
+ hulpmiddelen:'Grafische rekenmachine',
+ youtubeKanaal:'Economie voor iedereen',youtubeUrl:'',
+ domeinen:[
+  {id:'A',naam:'Micro-economie',beschrijving:'Marktwerking, prijsvorming en marktfalen',
+   onderwerpen:['Vraag en aanbod','Prijselasticiteit','Marktvormen (monopolie, oligopolie, volledige mededinging)','Externe effecten en marktfalen','Consumentengedrag (budgetlijn, indifferentiecurves)','Productiefactoren en kosten'],
+   sam:'<div class="sam-head">Micro-economie VWO</div><ul><li><strong>Elasticiteit</strong>: E = %ΔQ / %ΔP. Inelastisch (|E|<1): prijs stijgt → omzet stijgt. Elastisch (|E|>1): prijs stijgt → omzet daalt.</li><li><strong>Marktvormen</strong>: bij monopolie: één aanbieder bepaalt prijs (prijszetter). Bij volledige mededinging: prijs = marginale kosten.</li></ul>'},
+  {id:'B',naam:'Macro-economie',beschrijving:'Conjunctuur, overheidsfinanciën en internationale economie',
+   onderwerpen:['Conjunctuur (hoogconjunctuur/laagconjunctuur)','Overheidsbeleid (begrotingsbeleid, monetair beleid)','Werkloosheid en inflatie (Phillipscurve)','Betalingsbalans en wisselkoersen','Europese Unie en globalisering','Economische groei (BBP)'],
+   sam:'<div class="sam-head">Macro-economie VWO</div><ul><li><strong>Phillipscurve</strong>: negatief verband tussen inflatie en werkloosheid op korte termijn. Op lange termijn is er geen afruil.</li><li><strong>Betalingsbalans</strong>: lopende rekening (goederen/diensten) + kapitaalrekening + financiële rekening = 0 (saldo).</li></ul>'},
+ ]},
+{id:'ak',naam:'Aardrijkskunde',code:'AK',kleur:'#059669',
+ beschrijving:'Aarde, klimaat, migratie, stedelijke gebieden en globalisering op VWO-niveau.',
+ ceInfo:'CE = aarde (systemen & klimaat), wereld (migratie & globalisering), gebieden (stedelijk & landelijk).',
+ exDatum:'2026-05-12',exTijd:'13:30–16:30',exDuur:'3 uur',
+ hulpmiddelen:'Basispakket + atlas',
+ youtubeKanaal:'',youtubeUrl:'',
+ domeinen:[
+  {id:'A',naam:'Aarde & Klimaat',beschrijving:'Klimaatverandering, geosystemen en duurzaamheid',
+   onderwerpen:['Klimaatsystemen en broeikaseffect','Platentektoniek (vulkanen, aardbevingen)','Kringlopen (koolstof, water, stikstof)','Klimaatzones en biotopen','Klimaatverandering: oorzaken en gevolgen','Duurzame energie en adaptatie'],
+   sam:'<div class="sam-head">Klimaat VWO</div><ul><li><strong>Broeikaseffect</strong>: broeikasgassen (CO₂, CH₄) absorberen warmtestraling → opwarming. Versterkt broeikaseffect door menselijke uitstoot.</li><li><strong>Platentektoniek</strong>: divergente plaatranden (nieuw gesteente), convergente randen (subductie, vulkanen), transformranden (aardbevingen).</li></ul>'},
+  {id:'B',naam:'Wereld & Globalisering',beschrijving:'Globalisering, migratie en internationale ongelijkheid',
+   onderwerpen:['Globalisering (economisch, cultureel)','Migratie (push- en pullfactoren)','Demografische transitie','Ontwikkeling en ongelijkheid (HDI)','Handelsstromen en ketens','Geopolitiek en conflicten'],
+   sam:'<div class="sam-head">Globalisering VWO</div><ul><li><strong>Demografische transitie</strong>: fase 1 (hoog geboorte+sterfte) → fase 4 (laag geboorte+sterfte). Bevolkingsgroei piek in fase 2-3.</li><li><strong>HDI</strong>: Human Development Index = combinatie van levensverwachting, onderwijs en inkomen per hoofd.</li></ul>'},
+ ]},
+{id:'gs',naam:'Geschiedenis',code:'GS',kleur:'#D97706',
+ beschrijving:'Moderne geschiedenis, historisch redeneren en tien tijdvakken op VWO-niveau.',
+ ceInfo:'CE = moderne geschiedenis (tijdvak 8–10) + historische contexten. VWO vereist diepgaandere analyse.',
+ exDatum:'2026-05-11',exTijd:'9:00–12:00',exDuur:'3 uur',
+ hulpmiddelen:'Basispakket',
+ youtubeKanaal:'GeschiedenisUitleg',youtubeUrl:'',
+ domeinen:[
+  {id:'A',naam:'Historisch Redeneren',beschrijving:'Historische methode, bronkritiek en causale verbanden',
+   onderwerpen:['Historische contexten beschrijven','Oorzaak en gevolg onderscheiden','Primaire en secundaire bronnen','Continuïteit en verandering','Vergelijking in tijd en ruimte','Historische begrippen (emancipatie, modernisering, revolutie)'],
+   sam:'<div class="sam-head">Historisch redeneren VWO</div><ul><li><strong>Oorzaak vs. aanleiding</strong>: een aanleiding is de directe trigger, oorzaken zijn de diepere structurele factoren (politiek, economisch, sociaal).</li><li><strong>Bronkritiek</strong>: bepaal betrouwbaarheid (wie maakte het? wanneer? met welk doel?), representativiteit en bruikbaarheid.</li></ul>'},
+  {id:'B',naam:'Moderne Tijd (1900–heden)',beschrijving:'WO I, WO II, Koude Oorlog en hedendaagse geschiedenis',
+   onderwerpen:['Eerste Wereldoorlog: oorzaken en gevolgen','Interbellum en totalitarisme (fascisme, nazisme, stalinisme)','Tweede Wereldoorlog en Holocaust','Dekolonisatie','Koude Oorlog (1947–1991)','Europese integratie en globalisering'],
+   sam:'<div class="sam-head">Moderne Tijd VWO</div><ul><li><strong>Oorzaken WO I</strong>: allianties, imperialisme, militarisme, nationalisme + aanleiding: moord op Franz Ferdinand (1914).</li><li><strong>Koude Oorlog</strong>: ideologisch conflict VS (kapitalisme/democratie) vs USSR (communisme). Kernwapenwedloop, proxy-oorlogen, Berlin Wall (1961), val 1989.</li></ul>'},
+ ]},
+{id:'mw',naam:'Maatschappijwetenschappen',code:'MW',kleur:'#EC4899',
+ beschrijving:'Samenleving, politiek, socialisatie en criminaliteit op VWO-niveau.',
+ ceInfo:'CE = thema\'s politiek, pluriforme samenleving, socialisatie & verzorgingsstaat + onderzoeksvaardigheden.',
+ exDatum:'2026-05-26',exTijd:'13:30–15:30',exDuur:'2 uur',
+ hulpmiddelen:'Basispakket',
+ youtubeKanaal:'',youtubeUrl:'',
+ domeinen:[
+  {id:'A',naam:'Politiek & Democratie',beschrijving:'Macht, besluitvorming en politieke systemen',
+   onderwerpen:['Democratie (direct vs. representatief)','Macht en legitimiteit','Politieke partijen en ideologieën','Kiesstelsel en coalitievorming','EU en supranationale organisaties','Maatschappelijke participatie'],
+   sam:'<div class="sam-head">Politiek VWO</div><ul><li><strong>Trias politica</strong>: wetgevende (parlement), uitvoerende (kabinet) en rechterlijke macht (rechtspraak). Scheiding voorkomt machtsmisbruik.</li><li><strong>Evenredige vertegenwoordiging</strong>: NL systeem → veel partijen, coalitieregeringen. Voordeel: brede vertegenwoordiging. Nadeel: instabiele coalities.</li></ul>'},
+  {id:'B',naam:'Samenleving & Socialisatie',beschrijving:'Cultuur, identiteit, sociale ongelijkheid en verzorgingsstaat',
+   onderwerpen:['Socialisatie (primair/secundair)','Sociale stratificatie en mobiliteit','Discriminatie en stereotypering','Verzorgingsstaat (voor/nadelen)','Multiculturele samenleving','Deviantie en criminaliteit'],
+   sam:'<div class="sam-head">Samenleving VWO</div><ul><li><strong>Sociale stratificatie</strong>: indeling van samenleving in lagen op basis van inkomen, opleiding, beroep en status. Verticale vs. horizontale mobiliteit.</li><li><strong>Sociale cohesie</strong>: de mate van onderlinge verbondenheid in een samenleving. Bedreigd door individualisering en fragmentarisering.</li></ul>'},
+ ]},
+{id:'la',naam:'Latijn',code:'LA',kleur:'#7C3AED',
+ beschrijving:'Latijnse taal, literatuur en de Grieks-Romeinse beschaving.',
+ ceInfo:'CE = vertaling Latijnse teksten + grammatica + cultuur & maatschappij. Alleen gymnasium/atheneum.',
+ exDatum:'2026-05-27',exTijd:'9:00–12:00',exDuur:'3 uur',
+ hulpmiddelen:'Woordenboek Latijn-Nederlands',
+ youtubeKanaal:'',youtubeUrl:'',
+ domeinen:[
+  {id:'A',naam:'Taal & Vertalen',beschrijving:'Latijnse grammatica en het vertalen van authentieke teksten',
+   onderwerpen:['Naamvallen (nomen, accusativus, genetivus, dativus, ablativus)','Werkwoordsvervoegingen (actief/passief)','Tijdsvormen (praesens, imperfectum, perfectum, futurum)','Bijzinnen (ACI, NCI, cum-zin)','Participiumconstructies','Vertaalstrategie'],
+   sam:'<div class="sam-head">Latijnse grammatica</div><ul><li><strong>ACI</strong> (Accusativus cum Infinitivo): na verba declarandi/putandi. Bijv. <em>Dico eum venire</em> = Ik zeg dat hij komt. Subject van bijzin staat in accusativus, werkwoord als infinitief.</li><li><strong>Ablativus absolutus</strong>: losstaande deelwoordconstructie. <em>Duce mortuo</em> = nadat de aanvoerder gestorven was.</li></ul>'},
+  {id:'B',naam:'Literatuur & Cultuur',beschrijving:'Latijnse auteurs en Romeinse beschaving',
+   onderwerpen:['Cicero (redevoeringen en filosofie)','Vergilius (Aeneis)','Ovidius (Metamorphosen)','Livius (Ab Urbe Condita)','Romeinse staatsinrichting','Religie en mythologie'],
+   sam:'<div class="sam-head">Latijnse literatuur</div><ul><li><strong>Cicero</strong>: retor en staatsman (106–43 v.Chr.). Bekend om redevoeringen (Catilinae), filosofische werken (De Re Publica) en brieven.</li><li><strong>Vergilius</strong>: Aeneis is het nationale epos van Rome. Aeneas vlucht na val van Troje en sticht Rome. Model: Homerus\' Ilias en Odyssee.</li></ul>'},
+ ]},
+{id:'gr',naam:'Grieks',code:'GR',kleur:'#2563EB',
+ beschrijving:'Oude Griekse taal, literatuur en de Griekse beschaving.',
+ ceInfo:'CE = vertaling Griekse teksten + grammatica + cultuur. Alleen gymnasium.',
+ exDatum:'2026-05-08',exTijd:'9:00–12:00',exDuur:'3 uur',
+ hulpmiddelen:'Woordenboek Grieks-Nederlands',
+ youtubeKanaal:'',youtubeUrl:'',
+ domeinen:[
+  {id:'A',naam:'Taal & Vertalen',beschrijving:'Griekse grammatica en het vertalen van authentieke teksten',
+   onderwerpen:['Grieks alfabet en uitspraak','Naamvallen en declinaties','Werkwoordsvervoegingen','Tijdsvormen en modi (optativus, subjectivus)','Participiumconstructies','Vertaalstrategie klassieke teksten'],
+   sam:'<div class="sam-head">Griekse grammatica</div><ul><li><strong>Grieks alfabet</strong>: 24 letters. Kennis van het alfabet is essentieel. Let op accenten (acutus, gravis, circumflexus) — ze geven woordklemtoon aan.</li><li><strong>Participium</strong>: in het Grieks zeer frequent. Het participium stemt overeen in geslacht, getal en naamval met het substantief waarnaar het verwijst.</li></ul>'},
+  {id:'B',naam:'Literatuur & Cultuur',beschrijving:'Griekse auteurs en de Atheense beschaving',
+   onderwerpen:['Homerus (Ilias en Odyssee)','Griekse tragedie (Sophocles, Euripides)','Herodotus en Thucydides (geschiedschrijving)','Plato (filosofie)','Atheense democratie','Griekse mythologie en religie'],
+   sam:'<div class="sam-head">Griekse literatuur</div><ul><li><strong>Tragedie</strong>: kenmerken zijn hamartia (tragische fout van de held), hybris (overmoed), catharsis (zuivering van emoties bij het publiek) en het lot (moira).</li><li><strong>Plato</strong>: filosoof (427–347 v.Chr.). Ideeënleer: de zichtbare wereld is een schaduw van de wereld der Ideeën. Werken: Staat, Symposium, Phaedrus.</li></ul>'},
+ ]},
+{id:'in',naam:'Informatica',code:'IN',kleur:'#0EA5E9',
+ beschrijving:'Algoritmisch denken, programmeren en systemen op VWO-niveau.',
+ ceInfo:'CE = algoritmisch denken (domein A), systemen (B) en data (C). Steeds meer scholen bieden dit aan.',
+ exDatum:'2026-05-18',exTijd:'13:30–15:30',exDuur:'2 uur',
+ hulpmiddelen:'Computer (specifieke software)',
+ youtubeKanaal:'',youtubeUrl:'',
+ domeinen:[
+  {id:'A',naam:'Algoritmisch Denken',beschrijving:'Algoritmen, pseudocode en programmeertalen',
+   onderwerpen:['Algoritmen en flowcharts','Pseudocode schrijven','Variabelen, datatypes en operatoren','Selectie (if/else)','Iteratie (for/while-lussen)','Recursie'],
+   sam:'<div class="sam-head">Algoritmisch denken</div><ul><li><strong>Tijdcomplexiteit</strong>: O(1) constant, O(n) lineair, O(n²) kwadratisch. Bubble sort = O(n²), merge sort = O(n log n).</li><li><strong>Recursie</strong>: een functie die zichzelf aanroept. Vereist een basisgeval (base case) om oneindige herhaling te voorkomen.</li></ul>'},
+  {id:'B',naam:'Systemen & Netwerken',beschrijving:'Hoe computers en internet werken',
+   onderwerpen:['Digitale representatie (binair, hexadecimaal)','Boolean logica en schakelingen','Besturingssystemen','Computernetwerken (TCP/IP, DNS)','Beveiliging (encryptie, hashing)','Databases (SQL basis)'],
+   sam:'<div class="sam-head">Systemen VWO</div><ul><li><strong>Binair rekenen</strong>: 1 byte = 8 bit. Decimaal naar binair: deel herhaaldelijk door 2, noteer rest van rechts. Bijv. 13 = 1101₂.</li><li><strong>Encryptie</strong>: symmetrisch (zelfde sleutel) vs. asymmetrisch (publieke + private sleutel, bijv. RSA). HTTPS gebruikt asymmetrisch voor sleuteluitwisseling.</li></ul>'},
+ ]},
+];
+
+// ═══════ NIVEAU BEHEER ═══════
+let APP_LEVEL=localStorage.getItem('examenapp_level')||'havo';
+function getVK(){return APP_LEVEL==='vwo'?VAKKEN_VWO:VAKKEN;}
+
 function buildGrid(){
   const g=document.getElementById('vakgrid');
-  VAKKEN.forEach(v=>{
+  getVK().forEach(v=>{
     const d=document.createElement('div');
     d.className='card';
     d.style.setProperty('--card-col',v.kleur);
@@ -2509,7 +2734,7 @@ function buildCijferGrid(){
   const saved=getSavedCijfers();
   const grid=document.getElementById('cijfer-grid');
   grid.innerHTML='';
-  VAKKEN.forEach(v=>{
+  getVK().forEach(v=>{
     const val=saved[v.id]||'';
     const div=document.createElement('div');
     div.className='cijfer-item';
@@ -2522,7 +2747,7 @@ function buildCijferGrid(){
 
 function saveCijfers(){
   const saved={};
-  VAKKEN.forEach(v=>{
+  getVK().forEach(v=>{
     const inp=document.getElementById('ci-'+v.id);
     if(inp&&inp.value!==''){
       const n=parseFloat(inp.value.replace(',','.'));
@@ -2622,7 +2847,7 @@ function doImport(app){
   const merged={...existing,...parsed};
   cloudSet('cijfers',merged);
   buildCijferGrid();
-  result.textContent=`✓ ${keys.length} vak${keys.length===1?'':'ken'} geïmporteerd: ${keys.map(k=>VAKKEN.find(v=>v.id===k)?.naam||k).join(', ')}`;
+  result.textContent=`✓ ${keys.length} vak${keys.length===1?'':'ken'} geïmporteerd: ${keys.map(k=>getVK().find(v=>v.id===k)?.naam||k).join(', ')}`;
   result.className='import-result ok';
   textarea.value='';
 }
@@ -2655,7 +2880,7 @@ function openProfiel(){
 
 function prefillCalcFromSaved(){
   const saved=getSavedCijfers();
-  VAKKEN.forEach(v=>{
+  getVK().forEach(v=>{
     const inp=document.getElementById('se-'+v.id)||document.getElementById('calc-se-'+v.id);
     if(inp&&saved[v.id]!==undefined){
       inp.value=saved[v.id];
@@ -2666,7 +2891,7 @@ function prefillCalcFromSaved(){
 
 // ═══════ OPEN VAK ═══════
 function openVak(id){
-  ST.vak=VAKKEN.find(v=>v.id===id);
+  ST.vak=getVK().find(v=>v.id===id);
   document.getElementById('dtitle').textContent=ST.vak.naam;
   document.getElementById('ddesc').textContent=ST.vak.beschrijving;
   document.getElementById('dce').innerHTML=ST.vak.ceInfo;
@@ -3023,7 +3248,8 @@ function _renderLbWithData(){
   allBtn.textContent='Alle vakken';
   allBtn.onclick=()=>{lbVakFilter='all';renderLeaderboard();};
   filterEl.appendChild(allBtn);
-  const VAKKEN_MAP={};VAKKEN.forEach(v=>{VAKKEN_MAP[v.id]=v;});
+  const allVK=[...VAKKEN,...VAKKEN_VWO];
+  const VAKKEN_MAP={};allVK.forEach(v=>{VAKKEN_MAP[v.id]=v;});
   [...vakSet].forEach(vid=>{
     const vak=VAKKEN_MAP[vid];if(!vak)return;
     const btn=document.createElement('button');
@@ -3197,7 +3423,7 @@ function getDomeinBestPct(vakId,domeinId){
   return {pct:bestPct,hasData};
 }
 function getVakBestPct(vakId){
-  const vak=VAKKEN.find(v=>v.id===vakId);
+  const vak=getVK().find(v=>v.id===vakId);
   if(!vak)return {pct:0,hasData:false};
   let totalPct=0;let count=0;let hasAny=false;
   vak.domeinen.forEach(d=>{
@@ -3240,7 +3466,7 @@ function renderFavHome(){
   chips.innerHTML='';
   favs.forEach(key=>{
     const [vakId,domId]=key.split('_');
-    const vak=VAKKEN.find(v=>v.id===vakId);
+    const vak=getVK().find(v=>v.id===vakId);
     if(!vak)return;
     const dom=vak.domeinen.find(d=>d.id===domId);
     if(!dom)return;
@@ -3531,13 +3757,13 @@ function buildHerkSelect(){
   const sel=document.getElementById('herk-vak');
   if(sel.options.length>1)return;
   sel.innerHTML='';
-  VAKKEN.forEach(v=>{sel.innerHTML+=`<option value="${v.id}">${v.naam} (${v.code})</option>`;});
+  getVK().forEach(v=>{sel.innerHTML+=`<option value="${v.id}">${v.naam} (${v.code})</option>`;});
 }
 function berekenHerk(){
   const vakId=document.getElementById('herk-vak').value;
   const nieuwCe=parseFloat(document.getElementById('herk-ce').value);
   if(isNaN(nieuwCe)){document.getElementById('herk-result').innerHTML='<div class="calc-result"><p>Vul een nieuw CE-cijfer in.</p></div>';return;}
-  const vak=VAKKEN.find(v=>v.id===vakId);
+  const vak=getVK().find(v=>v.id===vakId);
   document.getElementById('herk-result').innerHTML=`<div class="calc-result">
     <div class="calc-result-icon">🔄</div>
     <h3>Herkansing ${vak.naam}</h3>
@@ -3741,7 +3967,15 @@ function resetPomo(){clearInterval(POMO.timer);clearInterval(POMO.breakTimer);PO
 
 // ═══════ LEVEL SELECT ═══════
 function chooseLevel(level){
-  if(level==='havo'){show('sc-home');}
+  APP_LEVEL=level;
+  localStorage.setItem('examenapp_level',level);
+  updateLevelChip();
+  buildGrid();
+  show('sc-home');
+}
+function updateLevelChip(){
+  const chip=document.getElementById('home-level-chip');
+  if(chip)chip.textContent=(APP_LEVEL==='vwo'?'VWO':'HAVO')+' 2026';
 }
 
 // ═══════ INIT ═══════
@@ -3749,6 +3983,9 @@ renderFavHome();
 renderStreak();
 buildGrid();
 updateProfileNav();
+updateLevelChip();
+// If user had a level saved, skip welcome screen
+if(APP_LEVEL==='vwo')show('sc-home');
 renderPomo();
 if(document.getElementById('sc-schedule'))renderSchedule();
 buildSlaagInputs();
