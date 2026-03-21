@@ -78,6 +78,21 @@ h1,h2,h3,h4{font-family:var(--font-head);line-height:1.2;letter-spacing:-.3px}
 .nav-chip{margin-left:8px;padding:3px 11px;border-radius:20px;font-size:11px;font-weight:700;background:var(--orl);color:var(--or);border:1px solid rgba(var(--or-rgb),.25);letter-spacing:.3px;transition:all .3s}
 .nav-btn{margin-left:auto;padding:8px 18px;border-radius:12px;font-size:14px;font-weight:600;cursor:pointer;border:1px solid var(--bo);background:var(--s);color:var(--dk);transition:all .22s cubic-bezier(.34,1.2,.64,1);font-family:var(--font)}
 .nav-btn:hover{background:var(--bg2);border-color:rgba(var(--or-rgb),.45);transform:translateY(-2px);box-shadow:0 4px 12px rgba(0,0,0,.07),0 0 0 1px rgba(var(--or-rgb),.15),0 0 18px rgba(var(--or-rgb),.18)}
+/* ── NAV DOCK (icon buttons with tooltip) ──────── */
+.nav-dock{display:flex;align-items:center;gap:2px;padding:4px;border-radius:16px;background:color-mix(in srgb,var(--s) 92%,transparent);border:1px solid var(--bo);box-shadow:0 2px 14px rgba(0,0,0,.06);margin-left:auto;transition:box-shadow .25s,border-color .25s}
+.nav-dock:hover{border-color:rgba(var(--or-rgb),.3);box-shadow:0 4px 24px rgba(var(--or-rgb),.12),0 2px 14px rgba(0,0,0,.04)}
+.dock-btn{position:relative;width:38px;height:38px;display:flex;align-items:center;justify-content:center;border-radius:10px;border:none;background:transparent;cursor:pointer;color:var(--mu);transition:all .22s cubic-bezier(.34,1.4,.64,1);font-family:var(--font);flex-shrink:0}
+.dock-btn svg{width:18px;height:18px;stroke:currentColor;stroke-width:2;fill:none;stroke-linecap:round;stroke-linejoin:round;transition:stroke .2s}
+.dock-btn:hover{background:rgba(var(--or-rgb),.12);color:var(--or);transform:scale(1.15) translateY(-2px)}
+.dock-btn:active{transform:scale(.88) translateY(0)}
+.dock-divider{width:1px;height:20px;background:var(--bo);margin:0 4px;flex-shrink:0}
+.dock-btn::after{content:attr(data-tip);position:absolute;top:calc(100% + 10px);left:50%;transform:translateX(-50%);padding:4px 10px;background:var(--dk);color:var(--s);font-size:11px;font-weight:600;border-radius:8px;white-space:nowrap;pointer-events:none;opacity:0;transition:opacity .15s;font-family:var(--font);z-index:200;box-shadow:0 2px 8px rgba(0,0,0,.18)}
+.dock-btn:hover::after{opacity:1}
+.nav-dock .theme-btn{border:none;background:transparent;width:38px;height:38px;border-radius:10px}
+.nav-dock .theme-btn:hover{background:rgba(var(--or-rgb),.12);transform:scale(1.15) translateY(-2px)}
+.dock-avatar{width:24px;height:24px;border-radius:50%;background:rgba(var(--or-rgb),.18);color:var(--or);font-size:15px;display:flex;align-items:center;justify-content:center;line-height:1}
+.dock-avatar-ini{font-size:10px;font-weight:800;background:var(--or);color:#fff}
+@media(max-width:640px){.nav-dock{display:none!important}}
 .bk{color:var(--mu);font-size:14px;cursor:pointer;padding:6px 14px;border-radius:10px;border:1px solid var(--bo);background:var(--s);transition:all .2s;font-family:var(--font)}
 .bk:hover{background:var(--bg2)}
 .hbg{margin-left:auto;padding:3px 10px;border-radius:20px;font-size:11px;font-weight:600;background:var(--orl);color:var(--or);border:1px solid var(--or);letter-spacing:.2px;opacity:.9}
@@ -1161,12 +1176,28 @@ html.dark .auth-ok{background:#0F2D1C;border-color:#166534;color:#86EFAC}
       <div class="logo-dot"></div>Examio
     </div>
     <span class="nav-chip" id="home-level-chip">HAVO 2026</span>
-    <button class="nav-btn" onclick="show('sc-schedule')">Rooster</button>
-    <button class="nav-btn" onclick="show('sc-calc');setTimeout(prefillCalcFromSaved,50)">Cijfers</button>
-    <button class="nav-btn" onclick="show('sc-leaderboard');renderLeaderboard()">🏆</button>
-    <button class="nav-btn" onclick="show('sc-info')">Info</button>
-    <button class="prof-nav-btn" id="home-prof-btn" onclick="openProfiel()">👤 Profiel</button>
-    <button class="theme-btn" onclick="toggleDark()" title="Nachtmodus" id="theme-btn-home"><svg viewBox="0 0 24 24"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg></button>
+    <div class="nav-dock">
+      <button class="dock-btn" data-tip="Rooster" onclick="show('sc-schedule')" aria-label="Rooster">
+        <svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+      </button>
+      <button class="dock-btn" data-tip="Cijfers" onclick="show('sc-calc');setTimeout(prefillCalcFromSaved,50)" aria-label="Cijfers">
+        <svg viewBox="0 0 24 24"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg>
+      </button>
+      <button class="dock-btn" data-tip="Leaderboard" onclick="show('sc-leaderboard');renderLeaderboard()" aria-label="Leaderboard">
+        <svg viewBox="0 0 24 24"><path d="M12 2l2.4 7.4H22l-6.2 4.5 2.4 7.4L12 17 5.8 21.3l2.4-7.4L2 9.4h7.6z"/></svg>
+      </button>
+      <button class="dock-btn" data-tip="Info" onclick="show('sc-info')" aria-label="Info">
+        <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+      </button>
+      <div class="dock-divider"></div>
+      <button class="dock-btn" data-tip="Profiel" id="home-prof-btn" onclick="openProfiel()" aria-label="Profiel">
+        <svg viewBox="0 0 24 24"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+      </button>
+      <div class="dock-divider"></div>
+      <button class="dock-btn theme-btn" data-tip="Nachtmodus" onclick="toggleDark()" id="theme-btn-home" aria-label="Nachtmodus">
+        <svg viewBox="0 0 24 24"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+      </button>
+    </div>
   </div>
 </nav>
 <div class="hero-zone">
@@ -3109,17 +3140,21 @@ function updateProfileNav(){
   const btn=document.getElementById('home-prof-btn');
   if(!btn)return;
   if(!currentUser){
-    btn.innerHTML='🔑 Inloggen';
+    btn.dataset.tip='Inloggen';
+    btn.innerHTML=`<svg viewBox="0 0 24 24" width="18" height="18" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4"/><polyline points="10 17 15 12 10 7"/><line x1="15" y1="12" x2="3" y2="12"/></svg>`;
     return;
   }
   const p=JSON.parse(localStorage.getItem(PROF_KEY)||'{}');
   if(p.naam&&p.avatar){
-    btn.innerHTML=`<div class="pnb-avatar" style="background:transparent;font-size:16px">${p.avatar}</div><span>${p.naam.split(' ')[0]}</span>`;
+    btn.dataset.tip=p.naam.split(' ')[0];
+    btn.innerHTML=`<div class="dock-avatar">${p.avatar}</div>`;
   }else if(p.naam){
     const initials=p.naam.trim().split(' ').map(w=>w[0]).slice(0,2).join('').toUpperCase();
-    btn.innerHTML=`<div class="pnb-avatar">${initials}</div><span>${p.naam.split(' ')[0]}</span>`;
+    btn.dataset.tip=p.naam.split(' ')[0];
+    btn.innerHTML=`<div class="dock-avatar dock-avatar-ini">${initials}</div>`;
   }else{
-    btn.innerHTML='👤 Profiel';
+    btn.dataset.tip='Profiel';
+    btn.innerHTML=`<svg viewBox="0 0 24 24" width="18" height="18" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>`;
   }
 }
 
