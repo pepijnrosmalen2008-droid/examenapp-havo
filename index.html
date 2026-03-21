@@ -146,18 +146,24 @@ h1,h2,h3,h4{font-family:var(--font-head);line-height:1.2;letter-spacing:-.3px}
 .ad-label{display:block;text-align:center;font-size:9px;letter-spacing:.8px;text-transform:uppercase;color:var(--mu);opacity:.5;margin-bottom:4px;font-family:var(--font)}
 @media(max-width:580px){.ad-slot{min-height:50px;max-width:320px}.ad-slot--banner{min-height:50px}}
 
-/* ── HOME HERO ────────────────────────────────── */
-.hero{padding:56px 0 40px;text-align:center;position:relative;overflow:hidden}
-.hero::before{content:'';position:absolute;top:-80px;left:30%;width:500px;height:500px;background:radial-gradient(ellipse,rgba(var(--or-rgb),.10) 0%,transparent 65%);pointer-events:none;animation:heroBlob1 8s ease-in-out infinite alternate}
-.hero::after{content:'';position:absolute;top:20px;right:15%;width:380px;height:380px;background:radial-gradient(ellipse,rgba(99,102,241,.07) 0%,transparent 65%);pointer-events:none;animation:heroBlob2 10s ease-in-out infinite alternate}
-@keyframes heroBlob1{0%{transform:translate(0,0) scale(1)}100%{transform:translate(-40px,30px) scale(1.12)}}
-@keyframes heroBlob2{0%{transform:translate(0,0) scale(1)}100%{transform:translate(30px,-20px) scale(1.08)}}
-.hero-badge{display:inline-flex;align-items:center;gap:7px;background:var(--orl);color:var(--or);font-size:12px;font-weight:700;padding:5px 14px;border-radius:24px;margin-bottom:22px;border:1px solid rgba(var(--or-rgb),.2);letter-spacing:.2px;backdrop-filter:blur(8px)}
+/* ── HOME HERO ZONE (full-bleed dark + animated beams) ─── */
+.hero-zone{position:relative;overflow:hidden;background:linear-gradient(180deg,#08080f 0%,#0d0d1a 100%)}
+.hero-zone::after{content:'';position:absolute;bottom:0;left:0;right:0;height:1px;background:linear-gradient(90deg,transparent,rgba(var(--or-rgb),.35),transparent);pointer-events:none}
+/* Animated light beams — use level color automatically via --or-rgb */
+.hero-beam{position:absolute;inset:-60%;pointer-events:none;will-change:transform}
+.hb1{background:linear-gradient(108deg,transparent 35%,rgba(var(--or-rgb),.06) 46%,rgba(var(--or-rgb),.18) 50%,rgba(var(--or-rgb),.06) 54%,transparent 65%);filter:blur(22px);animation:hbeam1 11s ease-in-out infinite alternate}
+.hb2{background:linear-gradient(121deg,transparent 28%,rgba(var(--or-rgb),.04) 44%,rgba(var(--or-rgb),.13) 50%,rgba(var(--or-rgb),.04) 56%,transparent 68%);filter:blur(30px);animation:hbeam2 15s ease-in-out infinite alternate}
+.hb3{background:linear-gradient(94deg,transparent 42%,rgba(var(--or-rgb),.03) 52%,rgba(var(--or-rgb),.09) 57%,rgba(var(--or-rgb),.03) 62%,transparent 72%);filter:blur(40px);animation:hbeam3 20s ease-in-out infinite alternate}
+@keyframes hbeam1{from{transform:translateX(-90px) rotate(-4deg)}to{transform:translateX(90px) rotate(4deg)}}
+@keyframes hbeam2{from{transform:translateX(70px) rotate(3deg)}to{transform:translateX(-70px) rotate(-3deg)}}
+@keyframes hbeam3{from{transform:translateX(-50px) rotate(-1.5deg)}to{transform:translateX(60px) rotate(2deg)}}
+.hero{padding:56px 0 44px;text-align:center;position:relative;z-index:1}
+.hero-badge{display:inline-flex;align-items:center;gap:7px;background:rgba(var(--or-rgb),.15);color:var(--or);font-size:12px;font-weight:700;padding:5px 14px;border-radius:24px;margin-bottom:22px;border:1px solid rgba(var(--or-rgb),.3);letter-spacing:.2px;backdrop-filter:blur(8px)}
 .hero-badge::before{content:'';width:6px;height:6px;border-radius:50%;background:var(--or);flex-shrink:0;animation:pulse 2s ease-in-out infinite}
 @keyframes pulse{0%,100%{opacity:1;transform:scale(1)}50%{opacity:.5;transform:scale(.8)}}
-.hero h1{font-size:clamp(32px,6vw,56px);font-weight:800;letter-spacing:-2px;margin-bottom:16px;color:var(--dk);line-height:1.08}
-.hero h1 em{font-style:normal;color:var(--or);text-shadow:0 0 28px rgba(var(--or-rgb),.45),0 0 10px rgba(var(--or-rgb),.25)}
-.hero-sub{font-size:15.5px;color:var(--mu);max-width:440px;margin:0 auto 36px;line-height:1.72;font-weight:400}
+.hero h1{font-size:clamp(32px,6vw,56px);font-weight:800;letter-spacing:-2px;margin-bottom:16px;color:#fff;line-height:1.08}
+.hero h1 em{font-style:normal;color:var(--or);text-shadow:0 0 32px rgba(var(--or-rgb),.6),0 0 12px rgba(var(--or-rgb),.35)}
+.hero-sub{font-size:15.5px;color:rgba(255,255,255,.5);max-width:440px;margin:0 auto 36px;line-height:1.72;font-weight:400}
 
 /* ── EXAM DATE STRIP ──────────────────────────── */
 .date-strip{display:flex;gap:12px;margin-bottom:40px}
@@ -1163,12 +1169,19 @@ html.dark .auth-ok{background:#0F2D1C;border-color:#166534;color:#86EFAC}
     <button class="theme-btn" onclick="toggleDark()" title="Nachtmodus" id="theme-btn-home"><svg viewBox="0 0 24 24"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg></button>
   </div>
 </nav>
-<div class="w">
-  <div class="hero">
-    <div class="hero-badge">Eindexamen 2026</div>
-    <h1>Oefen slim.<br>Slaag voor je <em>eindexamen</em>.</h1>
-    <p class="hero-sub">Alle CE-domeinen, officiële syllabus, snelle quiz en open examenvragen — volledig offline.</p>
+<div class="hero-zone">
+  <div class="hero-beam hb1"></div>
+  <div class="hero-beam hb2"></div>
+  <div class="hero-beam hb3"></div>
+  <div class="w">
+    <div class="hero">
+      <div class="hero-badge">Eindexamen 2026</div>
+      <h1>Oefen slim.<br>Slaag voor je <em>eindexamen</em>.</h1>
+      <p class="hero-sub">Alle CE-domeinen, officiële syllabus, snelle quiz en open examenvragen — volledig offline.</p>
+    </div>
   </div>
+</div>
+<div class="w">
   <div class="countdown" id="countdown">
     <div class="cd-left">
       <div class="cd-label">Aftellen naar 1e tijdvak</div>
