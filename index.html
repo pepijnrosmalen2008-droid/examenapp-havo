@@ -2562,13 +2562,17 @@ async function cloudSet(col,data){
     );
   }catch(e){console.warn('cloudSet error:',e);}
 }
+function _safeLocalGet(col,def){
+  try{const raw=localStorage.getItem('examenapp_'+col);return raw?JSON.parse(raw):def;}
+  catch(e){return def;}
+}
 async function cloudGet(col,def){
-  if(!currentUser)return JSON.parse(localStorage.getItem('examenapp_'+col)||JSON.stringify(def));
+  if(!currentUser)return _safeLocalGet(col,def);
   try{
     const {data,error}=await SB.from('user_data').select(col).eq('user_id',currentUser.id).single();
-    if(error||!data)return JSON.parse(localStorage.getItem('examenapp_'+col)||JSON.stringify(def));
-    return data[col]||def;
-  }catch(e){return JSON.parse(localStorage.getItem('examenapp_'+col)||JSON.stringify(def));}
+    if(error||!data)return _safeLocalGet(col,def);
+    return data[col]??def;
+  }catch(e){return _safeLocalGet(col,def);}
 }
 async function syncFromCloud(){
   try{
@@ -2753,33 +2757,36 @@ function buildAvatarPicker(current){
 }
 
 function loadProfile(){
-  const p=JSON.parse(localStorage.getItem(PROF_KEY)||'{}');
-  if(p.naam){document.getElementById('pf-naam').value=p.naam;document.getElementById('av-preview-name').textContent=p.naam;}
-  if(p.school)document.getElementById('pf-school').value=p.school;
-  if(p.klas)document.getElementById('pf-klas').value=p.klas;
-  if(p.profiel)document.getElementById('pf-profiel').value=p.profiel;
+  let p={};
+  try{p=JSON.parse(localStorage.getItem(PROF_KEY)||'{}');}catch(e){p={};}
+  const set=(id,val)=>{const el=document.getElementById(id);if(el)el.value=val;};
+  if(p.naam){set('pf-naam',p.naam);const n=document.getElementById('av-preview-name');if(n)n.textContent=p.naam;}
+  if(p.school)set('pf-school',p.school);
+  if(p.klas)set('pf-klas',p.klas);
+  if(p.profiel)set('pf-profiel',p.profiel);
   selectedAvatar=p.avatar||AVATARS[4].e;
-  document.getElementById('av-preview-big').textContent=selectedAvatar;
+  const prev=document.getElementById('av-preview-big');if(prev)prev.textContent=selectedAvatar;
   buildAvatarPicker(selectedAvatar);
 }
 
-function saveProfileData(){
+async function saveProfileData(){
+  const get=(id)=>document.getElementById(id)?.value||'';
   const p={
-    naam:document.getElementById('pf-naam').value.trim(),
-    school:document.getElementById('pf-school').value.trim(),
-    klas:document.getElementById('pf-klas').value,
-    profiel:document.getElementById('pf-profiel').value,
+    naam:get('pf-naam').trim(),
+    school:get('pf-school').trim(),
+    klas:get('pf-klas'),
+    profiel:get('pf-profiel'),
     avatar:selectedAvatar,
   };
-  cloudSet('profiel',p);
+  await cloudSet('profiel',p);
   const msg=document.getElementById('pf-saved-msg');
-  msg.classList.add('show');
-  setTimeout(()=>msg.classList.remove('show'),2500);
+  if(msg){msg.classList.add('show');setTimeout(()=>msg.classList.remove('show'),2500);}
   updateProfileNav();
 }
 
 function getSavedCijfers(){
-  return JSON.parse(localStorage.getItem('examenapp_'+lvlCol('cijfers'))||'{}');
+  try{return JSON.parse(localStorage.getItem('examenapp_'+lvlCol('cijfers'))||'{}');}
+  catch(e){return {};}
 }
 
 function buildCijferGrid(){
@@ -3352,97 +3359,81 @@ function _renderLbWithData(){
     myBox.innerHTML='';
   }
 
+  // Helper: safe percentage
+  const safePct=(goed,tot)=>tot>0?Math.round(goed/tot*100):0;
+  const lbMeta=(e)=>`${e.vakNaam}${e.domeinId?` · D${e.domeinId}`:''}${e.avgTijd?` · gem. ${e.avgTijd}s`:''} · ${safePct(e.goed,e.tot)}% goed`;
+  const lbMeSpan=(isMe)=>isMe?' <span style="font-size:10px;color:var(--or)">(jij)</span>':'';
+
   // Podium (top 3)
   const podEl=document.getElementById('lb-podium');
   if(top.length>=3){
     const medals=['🥇','🥈','🥉'];
     const classes=['gold','silver','bronze'];
-    const order=[1,0,2]; // 2nd, 1st, 3rd in visual order
+    const order=[1,0,2];
     const heights=[60,80,50];
-    podEl.innerHTML='';
+    let podHtml='';
     order.forEach((ri,pi)=>{
       const e=top[ri];if(!e)return;
       const isMe=myNaam&&e.naam===myNaam;
-      podEl.innerHTML+=`<div class="lb-pod">
+      podHtml+=`<div class="lb-pod">
         <div class="lb-pod-medal">${medals[ri]}</div>
         <div class="lb-pod-avatar ${classes[ri]}" style="${isMe?'border-color:var(--or)':''}">${e.avatar||'🐻'}</div>
         <div class="lb-pod-bar ${classes[ri]}" style="height:${heights[pi]}px">${e.score}</div>
-        <div class="lb-pod-name${isMe?' ':''}>${e.naam}</div>
-        <div class="lb-pod-score">${e.goed}/${e.tot} · ${Math.round(e.goed/e.tot*100)}%</div>
+        <div class="lb-pod-name">${e.naam}</div>
+        <div class="lb-pod-score">${e.goed}/${e.tot} · ${safePct(e.goed,e.tot)}%</div>
       </div>`;
     });
+    podEl.innerHTML=podHtml;
   } else {
     podEl.innerHTML='';
   }
 
-  // List (rank 4+)
+  // List
   const listEl=document.getElementById('lb-list');
   if(top.length===0){
     listEl.innerHTML=`<div class="lb-empty">Nog geen scores! Maak een snelle quiz om als eerste op het bord te komen. 🚀</div>`;
     return;
   }
-  listEl.innerHTML='';
+  const showPodium=top.length>=3;
+  let listHtml='';
   top.forEach((e,i)=>{
     const rank=i+1;
     const isMe=myNaam&&e.naam===myNaam;
-    const pct=Math.round(e.goed/e.tot*100);
-    if(rank<=3&&top.length>=3)return; // shown in podium
-    listEl.innerHTML+=`<div class="lb-row${isMe?' me':''}">
+    if(showPodium&&rank<=3)return;
+    listHtml+=`<div class="lb-row${isMe?' me':''}">
       <div class="lb-rank${rank<=3?' top3':''}">${rank<=3?['🥇','🥈','🥉'][rank-1]:rank}</div>
       <div class="lb-av">${e.avatar||'🐻'}</div>
       <div class="lb-info">
-        <div class="lb-name">${e.naam}${isMe?' <span style="font-size:10px;color:var(--or)">(jij)</span>':''}</div>
-        <div class="lb-meta">${e.vakNaam}${e.domeinId?` · D${e.domeinId}`:''}${e.avgTijd?` · gem. ${e.avgTijd}s`:''} · ${pct}% goed</div>
+        <div class="lb-name">${e.naam}${lbMeSpan(isMe)}</div>
+        <div class="lb-meta">${lbMeta(e)}</div>
       </div>
       <div class="lb-score"><div class="lb-score-num">${e.score}</div><div class="lb-score-sub">pts</div></div>
     </div>`;
   });
-  // If fewer than 3 in top, show them all in list too
-  if(top.length<3){
-    listEl.innerHTML='';
-    top.forEach((e,i)=>{
-      const rank=i+1;
-      const isMe=myNaam&&e.naam===myNaam;
-      const pct=Math.round(e.goed/e.tot*100);
-      listEl.innerHTML+=`<div class="lb-row${isMe?' me':''}">
-        <div class="lb-rank top3">${['🥇','🥈','🥉'][rank-1]||rank}</div>
-        <div class="lb-av">${e.avatar||'🐻'}</div>
-        <div class="lb-info">
-          <div class="lb-name">${e.naam}${isMe?' <span style="font-size:10px;color:var(--or)">(jij)</span>':''}</div>
-          <div class="lb-meta">${e.vakNaam}${e.domeinId?` · D${e.domeinId}`:''}${e.avgTijd?` · gem. ${e.avgTijd}s`:''} · ${pct}% goed</div>
-        </div>
-        <div class="lb-score"><div class="lb-score-num">${e.score}</div><div class="lb-score-sub">pts</div></div>
-      </div>`;
-    });
-  }
+  listEl.innerHTML=listHtml||'';
 }
 
 // ═══════ COUNTDOWN ═══════
 function updateCountdown(){
+  const setEl=(id,val)=>{const el=document.getElementById(id);if(el)el.textContent=val;};
   const target=new Date('2026-05-08T13:30:00+02:00');
   const now=new Date();
   const diff=target-now;
   if(diff<=0){
-    document.getElementById('cd-title').textContent='Het examen is begonnen!';
-    document.getElementById('cd-d').textContent='0';
-    document.getElementById('cd-h').textContent='0';
-    document.getElementById('cd-m').textContent='0';
-    document.getElementById('cd-s').textContent='0';
-    document.getElementById('cd-days-text').textContent='0';
+    setEl('cd-title','Het examen is begonnen!');
+    ['cd-d','cd-h','cd-m','cd-s','cd-days-text'].forEach(id=>setEl(id,'0'));
     return;
   }
   const d=Math.floor(diff/(1000*60*60*24));
   const h=Math.floor((diff%(1000*60*60*24))/(1000*60*60));
   const m=Math.floor((diff%(1000*60*60))/(1000*60));
   const s=Math.floor((diff%(1000*60))/1000);
-  document.getElementById('cd-d').textContent=d;
-  document.getElementById('cd-h').textContent=String(h).padStart(2,'0');
-  document.getElementById('cd-m').textContent=String(m).padStart(2,'0');
-  document.getElementById('cd-s').textContent=String(s).padStart(2,'0');
-  document.getElementById('cd-days-text').textContent=d;
+  setEl('cd-d',d);setEl('cd-h',String(h).padStart(2,'0'));
+  setEl('cd-m',String(m).padStart(2,'0'));setEl('cd-s',String(s).padStart(2,'0'));
+  setEl('cd-days-text',d);
 }
 updateCountdown();
-setInterval(updateCountdown,1000);
+if(!window._cdTimer)window._cdTimer=setInterval(updateCountdown,1000);
 
 // ═══════ PROGRESS TRACKING ═══════
 function getProgress(){
