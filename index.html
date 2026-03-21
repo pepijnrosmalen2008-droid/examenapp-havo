@@ -3501,7 +3501,7 @@ function resetVakProgress(){
 
 // ═══════ FAVORITES ═══════
 function getFavs(){
-  try{return JSON.parse(localStorage.getItem('examenapp_'+lvlCol('favs'))||'[]');}
+  try{const d=JSON.parse(localStorage.getItem('examenapp_'+lvlCol('favs'))||'[]');return Array.isArray(d)?d:(d.list||[]);}
   catch(e){return [];}
 }
 function toggleFav(vakId,domeinId){
@@ -3666,7 +3666,7 @@ const EXAM_SCHEDULE=[
 {datum:'2026-05-27',tijd:'09:00–11:30',vak:'Fries / Russisch',duur:'2,5 uur',havo:false},
 {datum:'2026-05-27',tijd:'13:30–16:00',vak:'Arabisch / Spaans / Turks',duur:'2,5 uur',havo:false}
 ];
-function getMijnVakken(){try{return JSON.parse(localStorage.getItem('examenapp_'+lvlCol('mijnvakken'))||'[]');}catch(e){return [];}}
+function getMijnVakken(){try{const d=JSON.parse(localStorage.getItem('examenapp_'+lvlCol('mijnvakken'))||'[]');return Array.isArray(d)?d:(d.list||[]);}catch(e){return [];}}
 function setMijnVakken(arr){cloudSet(lvlCol('mijnvakken'),{list:arr});}
 function renderSchedule(){
   const list=document.getElementById('schedule-list');
