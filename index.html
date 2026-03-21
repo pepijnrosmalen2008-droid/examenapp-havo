@@ -654,8 +654,15 @@ html.dark .calc-btn{background:#2e3550}
 .exam-meta{display:flex;gap:10px;flex-wrap:wrap;margin-top:14px}
 .em-chip{font-size:12px;font-weight:600;padding:6px 14px;border-radius:20px;background:var(--bg2);color:var(--mu);display:inline-flex;align-items:center;gap:6px}
 .em-chip.em-date{background:var(--orl);color:var(--or)}
-.yt-link{display:inline-flex;align-items:center;gap:8px;font-size:13px;font-weight:700;color:#FF0000;text-decoration:none;padding:7px 14px;border-radius:10px;background:rgba(255,0,0,.06);margin-top:10px;transition:all .2s}
-.yt-link:hover{background:rgba(255,0,0,.12);transform:translateY(-1px)}
+.yt-card{display:inline-flex;align-items:center;gap:14px;padding:13px 18px;border-radius:14px;background:rgba(255,0,0,.055);border:1px solid rgba(255,0,0,.13);margin-top:16px;text-decoration:none;transition:all .22s cubic-bezier(.34,1.4,.64,1);max-width:100%}
+.yt-card:hover{background:rgba(255,0,0,.1);border-color:rgba(255,0,0,.28);transform:translateY(-2px);box-shadow:0 6px 24px rgba(255,0,0,.1)}
+.yt-icon{width:40px;height:40px;border-radius:10px;background:#FF0000;display:flex;align-items:center;justify-content:center;flex-shrink:0;box-shadow:0 3px 10px rgba(255,0,0,.3)}
+.yt-icon svg{width:22px;height:22px;fill:#fff}
+.yt-info{display:flex;flex-direction:column;gap:2px}
+.yt-label{font-size:10px;font-weight:700;color:rgba(255,0,0,.6);text-transform:uppercase;letter-spacing:.6px}
+.yt-name{font-size:14px;font-weight:700;color:var(--dk)}
+.yt-arr{margin-left:8px;color:rgba(255,0,0,.45);font-size:18px;flex-shrink:0;transition:transform .2s}
+.yt-card:hover .yt-arr{transform:translateX(3px)}
 
 /* ── MOBILE BOTTOM NAV ────────────────────────── */
 .bottom-nav{display:none;position:fixed;bottom:0;left:0;right:0;z-index:200;padding:0 0 calc(env(safe-area-inset-bottom,6px) + 10px);pointer-events:none}
@@ -2020,7 +2027,7 @@ youtubeKanaal:'Meneer Wietsma (64K+)',youtubeUrl:'https://youtube.com/@meneerwie
  ceInfo:'CE = domein B (Van persoon naar rechtspersoon), domein C (Interne organisatie), domein D (Marketing), domein E (Financieel beleid) en domein F (Verslaggeving). Open vragen over berekening en theorie.',
 exDatum:'2026-05-22',exTijd:'13:30–16:30',exDuur:'3 uur',
 hulpmiddelen:'Basispakket',
-youtubeKanaal:'',youtubeUrl:'',
+youtubeKanaal:'OsAcademie',youtubeUrl:'https://youtube.com/@OsAcademie',
  domeinen:[
   {id:'B',naam:'Van persoon naar rechtspersoon',beschrijving:'Persoonlijke financien, samenlevingsvormen en rechtsvormen van organisaties',
    onderwerpen:['Samenlevingsvormen (samenwonen, gehuwd, geregistreerd partnerschap)','Persoonlijke financiele planning (sparen, lenen, verzekeren)','Enkelvoudige en samengestelde interest','Rechtsvormen (eenmanszaak, VOF, BV, NV, stichting, vereniging)','Oprichting en beeindiging van organisaties','Continuiteit van de onderneming'],
@@ -2104,7 +2111,7 @@ youtubeKanaal:'',youtubeUrl:'',
  ceInfo:'CE = leesvaardigheid (domein B). Kijk- en luistervaardigheid, schrijf- en spreekvaardigheid zijn SE-stof.',
 exDatum:'2026-05-18',exTijd:'13:30–16:00',exDuur:'2,5 uur',
 hulpmiddelen:'Basispakket + tweetalig woordenboek (EN↔NL) + eentalig woordenboek (EN-EN)',
-youtubeKanaal:'',youtubeUrl:'',
+youtubeKanaal:'EngelsAcademie (15K+)',youtubeUrl:'https://youtube.com/@EngelsAcademie',
  domeinen:[
   {id:'B',naam:'Leesvaardigheid',beschrijving:'Engelse teksten begrijpen, analyseren en interpreteren',
    onderwerpen:['Main idea and supporting details','Vocabulary in context','Inference and implication','Tone, purpose and audience','Text structure and cohesion','Fact vs opinion in English texts','Reference words (pronouns, this/that/these)','Summary and paraphrase skills'],
@@ -2128,7 +2135,7 @@ youtubeKanaal:'',youtubeUrl:'',
  ceInfo:'CE = domein B (Orientatiekennis: tien tijdvakken) en historische contexten. Voor 2026: De Republiek der Zeven Verenigde Nederlanden 1515-1648 en De Koude Oorlog 1945-1991.',
 exDatum:'2026-05-12',exTijd:'09:00–12:00',exDuur:'3 uur',
 hulpmiddelen:'Basispakket',
-youtubeKanaal:'JORT Geschiedenis',youtubeUrl:'',
+youtubeKanaal:'JORTgeschiedenis (66K+)',youtubeUrl:'https://youtube.com/@JORTgeschiedenis',
  domeinen:[
   {id:'B',naam:'Orientatiekennis',beschrijving:'Tien tijdvakken van de westerse geschiedenis en kenmerkende aspecten',
    onderwerpen:['Tijdvak 1: Jagers en boeren (tot 3000 v.C.)','Tijdvak 2: Grieken en Romeinen (3000 v.C.–500)','Tijdvak 3: Monniken en ridders (500–1000)','Tijdvak 4: Stedelingen en handelaren (1000–1500)','Tijdvak 5: Ontdekkers en hervormers (1500–1600)','Tijdvak 6: Regenten en vorsten (1600–1700)','Tijdvak 7: Pruiken en revoluties (1700–1800)','Tijdvak 8: Burgers en stoommachines (1800–1900)','Tijdvak 9: Wereldoorlogen (1900–1950)','Tijdvak 10: Televisie en computer (1950–heden)'],
@@ -2182,7 +2189,7 @@ youtubeKanaal:'JORT Geschiedenis',youtubeUrl:'',
  ceInfo:'CE = domein B (Wereld), domein C (Aarde) en domein D (Leefomgeving). Vaardigheden (domein A) zijn verweven door alle CE-onderdelen.',
 exDatum:'2026-05-21',exTijd:'13:30–16:30',exDuur:'3 uur',
 hulpmiddelen:'Basispakket (geen atlas meer toegestaan sinds 2021)',
-youtubeKanaal:'',youtubeUrl:'',
+youtubeKanaal:'AK Kennisclips (114K+)',youtubeUrl:'https://youtube.com/c/aardrijkskundekennisclips',
  domeinen:[
   {id:'B',naam:'Wereld',beschrijving:'Globalisering, ontwikkelingsvraagstukken en mondiale patronen',
    onderwerpen:['Globalisering: handel, migratie en cultuur','Centrum-periferiemodel','Ontwikkelingsindicatoren (BNP, HDI, Gini)','Internationale arbeidsverdeling','Multinationale ondernemingen','Migratie: push- en pullfactoren','Demografische transitie'],
@@ -2290,7 +2297,7 @@ youtubeKanaal:'Economie Academy (16K+)',youtubeUrl:'https://youtube.com/@Economi
  ceInfo:'CE = domein C (Politieke besluitvorming) en domein D (Maatschappelijke vraagstukken). Vaardigheden (domein A) en Analyse van een tweetal tweedelingsbenaderingen (domein B) zijn verweven.',
 exDatum:'2026-05-18',exTijd:'09:00–12:00',exDuur:'3 uur',
 hulpmiddelen:'Basispakket',
-youtubeKanaal:'',youtubeUrl:'',
+youtubeKanaal:'Seneca Burgerschap',youtubeUrl:'https://youtube.com/@SenecaBurgerschap',
  domeinen:[
   {id:'C',naam:'Politieke besluitvorming',beschrijving:'Het Nederlandse politieke systeem, verkiezingen, bestuur en grondrechten',
    onderwerpen:['Parlementaire democratie en rechtsstaat','Grondrechten: klassiek en sociaal','Verkiezingen en coalitievorming','Politieke partijen en ideologieen','Trias politica: wetgevende, uitvoerende en rechterlijke macht','Lobbyisme en pressiegroepen','Media en politiek','Europese Unie en nationale soevereiniteit'],
@@ -2495,7 +2502,7 @@ const VAKKEN_VWO=[
  ceInfo:'CE = leesvaardigheid en literatuur. VWO vereist hogere taalniveaus (C1) dan HAVO (B2).',
  exDatum:'2026-05-14',exTijd:'13:30–16:30',exDuur:'3 uur',
  hulpmiddelen:'Basispakket',
- youtubeKanaal:'',youtubeUrl:'',
+ youtubeKanaal:'EngelsAcademie (15K+)',youtubeUrl:'https://youtube.com/@EngelsAcademie',
  domeinen:[
   {id:'A',naam:'Leesvaardigheid',beschrijving:'Complexe Engelstalige teksten lezen en begrijpen (niveau C1)',
    onderwerpen:['Tekstbegrip en hoofdgedachte','Inferentie en impliciete betekenis','Woordbetekenis in context','Argumentatiestructuur','Academische en literaire teksten','Skimmen en scannen'],
@@ -2574,7 +2581,7 @@ const VAKKEN_VWO=[
  ceInfo:'CE = mechanica (B), golven/optica (C/D), elektromagnetisme (E), moderne fysica (F).',
  exDatum:'2026-05-22',exTijd:'13:30–16:30',exDuur:'3 uur',
  hulpmiddelen:'Grafische rekenmachine + Binas/tabellenboek',
- youtubeKanaal:'NatuurkundeUitleg',youtubeUrl:'https://youtube.com/@NatuurkundeUitleg',
+ youtubeKanaal:'Meneer Wietsma (64K+)',youtubeUrl:'https://youtube.com/@meneerwietsma',
  domeinen:[
   {id:'B',naam:'Mechanica',beschrijving:'Krachten, beweging, energie en impuls op VWO-niveau',
    onderwerpen:['Wetten van Newton','Eenparige cirkelvormige beweging','Arbeid, vermogen en energie','Behoud van energie en impuls','Rotatiebewegingen','Gravitatie (wet van Newton)'],
@@ -2591,7 +2598,7 @@ const VAKKEN_VWO=[
  ceInfo:'CE = micro-economie (markt en prijs), macro-economie (conjunctuur, overheid, buitenland).',
  exDatum:'2026-05-13',exTijd:'13:30–16:30',exDuur:'3 uur',
  hulpmiddelen:'Grafische rekenmachine',
- youtubeKanaal:'Economie voor iedereen',youtubeUrl:'',
+ youtubeKanaal:'Economie Academy (16K+)',youtubeUrl:'https://youtube.com/@EconomieAcademy',
  domeinen:[
   {id:'A',naam:'Micro-economie',beschrijving:'Marktwerking, prijsvorming en marktfalen',
    onderwerpen:['Vraag en aanbod','Prijselasticiteit','Marktvormen (monopolie, oligopolie, volledige mededinging)','Externe effecten en marktfalen','Consumentengedrag (budgetlijn, indifferentiecurves)','Productiefactoren en kosten'],
@@ -2605,7 +2612,7 @@ const VAKKEN_VWO=[
  ceInfo:'CE = aarde (systemen & klimaat), wereld (migratie & globalisering), gebieden (stedelijk & landelijk).',
  exDatum:'2026-05-12',exTijd:'13:30–16:30',exDuur:'3 uur',
  hulpmiddelen:'Basispakket + atlas',
- youtubeKanaal:'',youtubeUrl:'',
+ youtubeKanaal:'AK Kennisclips (114K+)',youtubeUrl:'https://youtube.com/c/aardrijkskundekennisclips',
  domeinen:[
   {id:'A',naam:'Aarde & Klimaat',beschrijving:'Klimaatverandering, geosystemen en duurzaamheid',
    onderwerpen:['Klimaatsystemen en broeikaseffect','Platentektoniek (vulkanen, aardbevingen)','Kringlopen (koolstof, water, stikstof)','Klimaatzones en biotopen','Klimaatverandering: oorzaken en gevolgen','Duurzame energie en adaptatie'],
@@ -2619,7 +2626,7 @@ const VAKKEN_VWO=[
  ceInfo:'CE = moderne geschiedenis (tijdvak 8–10) + historische contexten. VWO vereist diepgaandere analyse.',
  exDatum:'2026-05-11',exTijd:'9:00–12:00',exDuur:'3 uur',
  hulpmiddelen:'Basispakket',
- youtubeKanaal:'GeschiedenisUitleg',youtubeUrl:'',
+ youtubeKanaal:'JORTgeschiedenis (66K+)',youtubeUrl:'https://youtube.com/@JORTgeschiedenis',
  domeinen:[
   {id:'A',naam:'Historisch Redeneren',beschrijving:'Historische methode, bronkritiek en causale verbanden',
    onderwerpen:['Historische contexten beschrijven','Oorzaak en gevolg onderscheiden','Primaire en secundaire bronnen','Continuïteit en verandering','Vergelijking in tijd en ruimte','Historische begrippen (emancipatie, modernisering, revolutie)'],
@@ -2633,7 +2640,7 @@ const VAKKEN_VWO=[
  ceInfo:'CE = thema\'s politiek, pluriforme samenleving, socialisatie & verzorgingsstaat + onderzoeksvaardigheden.',
  exDatum:'2026-05-26',exTijd:'13:30–15:30',exDuur:'2 uur',
  hulpmiddelen:'Basispakket',
- youtubeKanaal:'',youtubeUrl:'',
+ youtubeKanaal:'Seneca Burgerschap',youtubeUrl:'https://youtube.com/@SenecaBurgerschap',
  domeinen:[
   {id:'A',naam:'Politiek & Democratie',beschrijving:'Macht, besluitvorming en politieke systemen',
    onderwerpen:['Democratie (direct vs. representatief)','Macht en legitimiteit','Politieke partijen en ideologieën','Kiesstelsel en coalitievorming','EU en supranationale organisaties','Maatschappelijke participatie'],
@@ -2647,7 +2654,7 @@ const VAKKEN_VWO=[
  ceInfo:'CE = vertaling Latijnse teksten + grammatica + cultuur & maatschappij. Alleen gymnasium/atheneum.',
  exDatum:'2026-05-27',exTijd:'9:00–12:00',exDuur:'3 uur',
  hulpmiddelen:'Woordenboek Latijn-Nederlands',
- youtubeKanaal:'',youtubeUrl:'',
+ youtubeKanaal:'Antiquitas Latijn',youtubeUrl:'https://youtube.com/@antiquitas',
  domeinen:[
   {id:'A',naam:'Taal & Vertalen',beschrijving:'Latijnse grammatica en het vertalen van authentieke teksten',
    onderwerpen:['Naamvallen (nomen, accusativus, genetivus, dativus, ablativus)','Werkwoordsvervoegingen (actief/passief)','Tijdsvormen (praesens, imperfectum, perfectum, futurum)','Bijzinnen (ACI, NCI, cum-zin)','Participiumconstructies','Vertaalstrategie'],
@@ -2661,7 +2668,7 @@ const VAKKEN_VWO=[
  ceInfo:'CE = vertaling Griekse teksten + grammatica + cultuur. Alleen gymnasium.',
  exDatum:'2026-05-08',exTijd:'9:00–12:00',exDuur:'3 uur',
  hulpmiddelen:'Woordenboek Grieks-Nederlands',
- youtubeKanaal:'',youtubeUrl:'',
+ youtubeKanaal:'Antiquitas Grieks',youtubeUrl:'https://youtube.com/@antiquitas',
  domeinen:[
   {id:'A',naam:'Taal & Vertalen',beschrijving:'Griekse grammatica en het vertalen van authentieke teksten',
    onderwerpen:['Grieks alfabet en uitspraak','Naamvallen en declinaties','Werkwoordsvervoegingen','Tijdsvormen en modi (optativus, subjectivus)','Participiumconstructies','Vertaalstrategie klassieke teksten'],
@@ -3189,7 +3196,7 @@ function openVak(id){
   if(ST.vak.exDuur)metaHtml+=`<span class="em-chip">⏱ ${ST.vak.exDuur}</span>`;
   if(ST.vak.hulpmiddelen)metaHtml+=`<span class="em-chip">📋 ${ST.vak.hulpmiddelen}</span>`;
   metaHtml+='</div>';
-  if(ST.vak.youtubeKanaal&&ST.vak.youtubeUrl)metaHtml+=`<a class="yt-link" href="${ST.vak.youtubeUrl}" target="_blank" rel="noopener">▶ ${ST.vak.youtubeKanaal}</a>`;
+  if(ST.vak.youtubeKanaal&&ST.vak.youtubeUrl)metaHtml+=`<a class="yt-card" href="${ST.vak.youtubeUrl}" target="_blank" rel="noopener"><div class="yt-icon"><svg viewBox="0 0 24 24"><path d="M23.5 7s-.3-2-1.2-2.8c-1.1-1.2-2.4-1.2-3-1.3C16.8 2.8 12 2.8 12 2.8s-4.8 0-7.3.1c-.6.1-1.9.1-3 1.3C.8 5 .5 7 .5 7S.2 9.3.2 11.5v2.1c0 2.2.3 4.5.3 4.5s.3 2 1.2 2.8c1.1 1.2 2.6 1.1 3.3 1.2C7.2 22.2 12 22.2 12 22.2s4.8 0 7.3-.2c.6-.1 1.9-.1 3-1.3.9-.8 1.2-2.8 1.2-2.8s.3-2.3.3-4.5v-2.1C23.8 9.3 23.5 7 23.5 7zM9.7 15.5V8.4l8.1 3.6-8.1 3.5z"/></svg></div><div class="yt-info"><span class="yt-label">Aanbevolen YouTube-kanaal</span><span class="yt-name">${ST.vak.youtubeKanaal}</span></div><span class="yt-arr">→</span></a>`;
   document.getElementById('dce').insertAdjacentHTML('afterend',metaHtml);
 
   // Progress overview
