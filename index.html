@@ -3265,7 +3265,9 @@ async function saveLeaderboardEntry(entry){
         user_id:currentUser.id,
         naam:entry.naam,avatar:entry.avatar,
         vak:entry.vak,vak_naam:entry.vakNaam,
+        domein_id:entry.domeinId||null,domein_naam:entry.domeinNaam||null,
         score:entry.score,correct:entry.goed,total:entry.tot,
+        avg_tijd:entry.avgTijd||null,
         niveau:APP_LEVEL
       });
     }catch(e){console.warn('leaderboard save error:',e);}
@@ -3277,8 +3279,9 @@ async function loadLeaderboardFromSupabase(){
     if(error||!data)return;
     const entries=data.map(d=>({
       naam:d.naam,avatar:d.avatar,vak:d.vak,vakNaam:d.vak_naam,
+      domeinId:d.domein_id||null,domeinNaam:d.domein_naam||null,
       score:d.score,goed:d.correct,tot:d.total,uid:d.user_id,
-      niveau:d.niveau,date:d.created_at?.slice(0,10)
+      avgTijd:d.avg_tijd||null,niveau:d.niveau,date:d.created_at?.slice(0,10)
     }));
     localStorage.setItem(getLbKey(),JSON.stringify(entries));
   }catch(e){console.warn('leaderboard load error:',e);}
@@ -3341,7 +3344,7 @@ function _renderLbWithData(){
       <div class="lb-my-info">
         <div class="lb-my-title">Jouw beste score</div>
         <div class="lb-my-name">${prof.naam}</div>
-        <div class="lb-my-det">${myBest.vakNaam} · D${myBest.domeinId}: ${myBest.domeinNaam} · ${myBest.goed}/${myBest.tot} goed · gem. ${myBest.avgTijd}s over</div>
+        <div class="lb-my-det">${myBest.vakNaam}${myBest.domeinId?` · D${myBest.domeinId}: ${myBest.domeinNaam}`:''}${myBest.avgTijd?` · gem. ${myBest.avgTijd}s`:''} · ${myBest.goed}/${myBest.tot} goed</div>
       </div>
       <div class="lb-my-score-box"><div class="lb-my-score-n">${myBest.score}</div><div class="lb-my-score-l">rank #${myRank||'?'}</div></div>
     </div>`;
@@ -3389,7 +3392,7 @@ function _renderLbWithData(){
       <div class="lb-av">${e.avatar||'🐻'}</div>
       <div class="lb-info">
         <div class="lb-name">${e.naam}${isMe?' <span style="font-size:10px;color:var(--or)">(jij)</span>':''}</div>
-        <div class="lb-meta">${e.vakNaam} · D${e.domeinId} · ${pct}% goed · gem. ${e.avgTijd}s over</div>
+        <div class="lb-meta">${e.vakNaam}${e.domeinId?` · D${e.domeinId}`:''}${e.avgTijd?` · gem. ${e.avgTijd}s`:''} · ${pct}% goed</div>
       </div>
       <div class="lb-score"><div class="lb-score-num">${e.score}</div><div class="lb-score-sub">pts</div></div>
     </div>`;
@@ -3406,7 +3409,7 @@ function _renderLbWithData(){
         <div class="lb-av">${e.avatar||'🐻'}</div>
         <div class="lb-info">
           <div class="lb-name">${e.naam}${isMe?' <span style="font-size:10px;color:var(--or)">(jij)</span>':''}</div>
-          <div class="lb-meta">${e.vakNaam} · D${e.domeinId} · ${pct}% goed · gem. ${e.avgTijd}s over</div>
+          <div class="lb-meta">${e.vakNaam}${e.domeinId?` · D${e.domeinId}`:''}${e.avgTijd?` · gem. ${e.avgTijd}s`:''} · ${pct}% goed</div>
         </div>
         <div class="lb-score"><div class="lb-score-num">${e.score}</div><div class="lb-score-sub">pts</div></div>
       </div>`;
