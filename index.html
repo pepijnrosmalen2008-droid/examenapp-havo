@@ -2242,7 +2242,20 @@ youtubeKanaal:'Math with Menno (225K+)',youtubeUrl:'https://youtube.com/@Mathwit
 let ST = {vak:null,domein:null,mode:null,vragen:[],idx:0,score:0,antwrd:[],timer:null,tijd:15,shuffleMap:[]};
 
 // ═══════ UI HELPERS ═══════
-function show(id){const prev=document.querySelector('.sc.on');if(id==='sc-privacy'&&prev)window._privacyFrom=prev.id;document.querySelectorAll('.sc').forEach(s=>s.classList.remove('on'));document.getElementById(id).classList.add('on');window.scrollTo(0,0);tryPushAds(id);}
+function show(id){
+  const prev=document.querySelector('.sc.on');
+  if(id==='sc-privacy'&&prev)window._privacyFrom=prev.id;
+  document.querySelectorAll('.sc').forEach(s=>s.classList.remove('on'));
+  document.getElementById(id).classList.add('on');
+  window.scrollTo(0,0);
+  tryPushAds(id);
+  // Welcome screen stays colour-neutral — no level theme applied yet
+  if(id==='sc-welcome'){
+    document.documentElement.classList.remove('level-havo','level-vwo');
+  } else if(!document.documentElement.classList.contains('level-havo')&&!document.documentElement.classList.contains('level-vwo')){
+    applyLevelTheme(APP_LEVEL);
+  }
+}
 // Ads: push ads alleen op rustschermen, nooit tijdens quiz/flashcards
 // ═══════ COOKIE CONSENT & ADS ═══════
 const AD_SCREENS=['sc-home','sc-info','sc-res','sc-schedule','sc-calc','sc-detail','sc-review'];
@@ -4126,7 +4139,8 @@ function updateLevelChip(){
 }
 
 // ═══════ INIT ═══════
-applyLevelTheme(APP_LEVEL); // Apply colour scheme immediately on load
+// Only apply level theme if a level was already chosen (skip on welcome screen)
+if(localStorage.getItem('examenapp_level')) applyLevelTheme(APP_LEVEL);
 renderFavHome();
 renderStreak();
 buildGrid();
