@@ -7,7 +7,8 @@
 <meta property="og:title" content="Examio — HAVO &amp; VWO Examenvoorbereiding 2026">
 <meta property="og:description" content="Gratis examenvoorbereiding voor HAVO en VWO. CE-domeinen, samenvattingen, quizzen en meer.">
 <meta property="og:type" content="website">
-<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%23111111'/%3E%3Ccircle cx='9' cy='9' r='4.5' fill='%23E85C0D'/%3E%3Ctext x='17' y='25' font-family='Arial Black,sans-serif' font-size='13' font-weight='900' fill='white' text-anchor='middle'%3EIO%3C/text%3E%3C/svg%3E">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%23E85C0D'/%3E%3Ctext x='16' y='24' font-family='Arial Black,sans-serif' font-size='19' font-weight='900' fill='white' text-anchor='middle'%3EEx%3C/text%3E%3C/svg%3E">
+<link rel="apple-touch-icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%23E85C0D'/%3E%3Ctext x='16' y='24' font-family='Arial Black,sans-serif' font-size='19' font-weight='900' fill='white' text-anchor='middle'%3EEx%3C/text%3E%3C/svg%3E">
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,700;12..96,800&display=swap" rel="stylesheet">
 <!-- AdSense script wordt dynamisch geladen na cookie-consent -->
 <style>
@@ -2516,6 +2517,8 @@ function lvlCol(col){return col+'_'+APP_LEVEL;}
 
 function buildGrid(){
   const g=document.getElementById('vakgrid');
+  if(!g)return;
+  g.innerHTML='';
   getVK().forEach(v=>{
     const d=document.createElement('div');
     d.className='card';
@@ -4090,8 +4093,11 @@ renderStreak();
 buildGrid();
 updateProfileNav();
 updateLevelChip();
-// If user had a level saved, skip welcome screen
-if(APP_LEVEL==='vwo')show('sc-home');
+// If user had a level saved, skip welcome screen (works for both HAVO and VWO)
+if(localStorage.getItem('examenapp_level')){
+  show('sc-home');
+  setTimeout(showTutorial,600);
+}
 renderPomo();
 if(document.getElementById('sc-schedule'))renderSchedule();
 buildSlaagInputs();
