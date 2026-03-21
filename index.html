@@ -160,6 +160,47 @@ h1,h2,h3,h4{font-family:var(--font-head);line-height:1.2;letter-spacing:-.3px}
 .sec-label{font-size:12px;font-weight:700;color:var(--mu);text-transform:uppercase;letter-spacing:1.2px;margin-bottom:18px;display:flex;align-items:center;gap:10px}
 .sec-label::after{content:'';flex:1;height:1px;background:var(--bo)}
 
+/* ── ANIMATED GLOWING SEARCH BAR ─────────────── */
+.sb-wrap{display:flex;justify-content:center;margin-bottom:24px}
+.sb-poda{position:relative;display:flex;align-items:center;justify-content:center;height:56px}
+.sb-gl{position:absolute;overflow:hidden;border-radius:12px}
+.sb-gl::before{content:'';position:absolute;z-index:-2;top:50%;left:50%;background-repeat:no-repeat;transition:transform 2000ms ease}
+.sb-poda:focus-within .sb-gl::before{transition-duration:4000ms}
+.sb-gl1{z-index:-1;width:314px;height:70px;filter:blur(3px)}
+.sb-gl1::before{width:999px;height:999px;background:conic-gradient(#000,#402fb5 5%,#000 38%,#000 50%,#cf30aa 60%,#000 87%);transform:translate(-50%,-50%) rotate(60deg)}
+.sb-poda:hover .sb-gl1::before{transform:translate(-50%,-50%) rotate(-120deg)}
+.sb-poda:focus-within .sb-gl1::before{transform:translate(-50%,-50%) rotate(420deg)}
+.sb-gl2,.sb-gl3,.sb-gl4{z-index:-1;width:312px;height:65px;filter:blur(3px)}
+.sb-gl2::before,.sb-gl3::before,.sb-gl4::before{width:600px;height:600px;background:conic-gradient(rgba(0,0,0,0),#18116a,rgba(0,0,0,0) 10%,rgba(0,0,0,0) 50%,#6e1b60,rgba(0,0,0,0) 60%);transform:translate(-50%,-50%) rotate(82deg)}
+.sb-poda:hover .sb-gl2::before,.sb-poda:hover .sb-gl3::before,.sb-poda:hover .sb-gl4::before{transform:translate(-50%,-50%) rotate(-98deg)}
+.sb-poda:focus-within .sb-gl2::before,.sb-poda:focus-within .sb-gl3::before,.sb-poda:focus-within .sb-gl4::before{transform:translate(-50%,-50%) rotate(442deg)}
+.sb-gl5{z-index:-1;width:307px;height:63px;filter:blur(2px)}
+.sb-gl5::before{width:600px;height:600px;background:conic-gradient(rgba(0,0,0,0) 0%,#a099d8,rgba(0,0,0,0) 8%,rgba(0,0,0,0) 50%,#dfa2da,rgba(0,0,0,0) 58%);filter:brightness(1.4);transform:translate(-50%,-50%) rotate(83deg)}
+.sb-poda:hover .sb-gl5::before{transform:translate(-50%,-50%) rotate(-97deg)}
+.sb-poda:focus-within .sb-gl5::before{transform:translate(-50%,-50%) rotate(443deg)}
+.sb-gl6{z-index:-1;width:303px;height:59px;filter:blur(0.5px)}
+.sb-gl6::before{width:600px;height:600px;background:conic-gradient(#1c191c,#402fb5 5%,#1c191c 14%,#1c191c 50%,#cf30aa 60%,#1c191c 64%);filter:brightness(1.3);transform:translate(-50%,-50%) rotate(70deg)}
+.sb-poda:hover .sb-gl6::before{transform:translate(-50%,-50%) rotate(-110deg)}
+.sb-poda:focus-within .sb-gl6::before{transform:translate(-50%,-50%) rotate(430deg)}
+.sb-main{position:relative;z-index:1}
+.sb-input{background:#010201;border:none;width:301px;height:56px;border-radius:10px;color:#fff;padding:0 52px 0 52px;font-size:16px;font-family:var(--font);outline:none}
+.sb-input::placeholder{color:#9ca3af}
+.sb-mask{pointer-events:none;width:100px;height:20px;position:absolute;background:linear-gradient(to right,transparent,#000);top:18px;left:70px}
+.sb-poda:focus-within .sb-mask{display:none}
+.sb-pink{pointer-events:none;width:30px;height:20px;position:absolute;background:#cf30aa;top:10px;left:5px;filter:blur(16px);opacity:.8;transition:opacity 2000ms}
+.sb-poda:hover .sb-pink{opacity:0}
+.sb-ring{position:absolute;height:42px;width:40px;overflow:hidden;top:7px;right:7px;border-radius:8px}
+.sb-ring::before{content:'';position:absolute;width:600px;height:600px;top:50%;left:50%;transform:translate(-50%,-50%) rotate(90deg);background:conic-gradient(rgba(0,0,0,0),#3d3a4f,rgba(0,0,0,0) 50%,rgba(0,0,0,0) 50%,#3d3a4f,rgba(0,0,0,0) 100%);filter:brightness(1.35);animation:sbSpin 3s linear infinite}
+@keyframes sbSpin{to{transform:translate(-50%,-50%) rotate(450deg)}}
+.sb-filter-btn{position:absolute;top:8px;right:8px;z-index:2;width:38px;height:40px;display:flex;align-items:center;justify-content:center;border-radius:8px;background:linear-gradient(to bottom,#161329,#000,#1d1b4b);border:none;cursor:pointer}
+.sb-filter-btn .sb-clear-icon{display:none}
+.sb-poda.sb-has-text .sb-filter-btn .sb-filter-icon{display:none}
+.sb-poda.sb-has-text .sb-filter-btn .sb-clear-icon{display:flex}
+.sb-search-icon{position:absolute;left:16px;top:50%;transform:translateY(-50%);pointer-events:none;display:flex}
+.sb-noresult{text-align:center;padding:28px 0 4px;color:var(--mu);font-size:14px;display:none}
+.sb-noresult.show{display:block}
+@media(max-width:340px){.sb-gl1{width:280px}.sb-gl2,.sb-gl3,.sb-gl4{width:278px}.sb-gl5{width:273px}.sb-gl6{width:269px}.sb-input{width:265px}}
+
 /* ── VAK CARDS ────────────────────────────────── */
 .sg{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:16px;margin-bottom:56px}
 @media(max-width:580px){.sg{grid-template-columns:1fr 1fr;gap:12px}}
@@ -1137,6 +1178,41 @@ html.dark .auth-ok{background:#0F2D1C;border-color:#166534;color:#86EFAC}
     </div>
   </div>
   <p class="sec-label">Beschikbare vakken</p>
+  <div class="sb-wrap">
+    <div class="sb-poda" id="sb-poda">
+      <div class="sb-gl sb-gl1"></div>
+      <div class="sb-gl sb-gl2"></div>
+      <div class="sb-gl sb-gl3"></div>
+      <div class="sb-gl sb-gl4"></div>
+      <div class="sb-gl sb-gl5"></div>
+      <div class="sb-gl sb-gl6"></div>
+      <div class="sb-main">
+        <input id="sb-input" type="text" class="sb-input" placeholder="Zoek een vak…" oninput="filterGrid(this.value)" autocomplete="off" spellcheck="false">
+        <div class="sb-mask"></div>
+        <div class="sb-pink"></div>
+        <div class="sb-ring"></div>
+        <button class="sb-filter-btn" onclick="clearGridSearch()" title="Wissen" tabindex="-1">
+          <svg class="sb-filter-icon" preserveAspectRatio="none" height="22" width="22" viewBox="4.8 4.56 14.832 15.408" fill="none">
+            <path d="M8.16 6.65002H15.83C16.47 6.65002 16.99 7.17002 16.99 7.81002V9.09002C16.99 9.56002 16.7 10.14 16.41 10.43L13.91 12.64C13.56 12.93 13.33 13.51 13.33 13.98V16.48C13.33 16.83 13.1 17.29 12.81 17.47L12 17.98C11.24 18.45 10.2 17.92 10.2 16.99V13.91C10.2 13.5 9.97 12.98 9.73 12.69L7.52 10.36C7.23 10.08 7 9.55002 7 9.20002V7.87002C7 7.17002 7.52 6.65002 8.16 6.65002Z" stroke="#d6d6e6" stroke-width="1" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          <svg class="sb-clear-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#d6d6e6" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/>
+          </svg>
+        </button>
+        <div class="sb-search-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" fill="none">
+            <circle stroke="url(#sb-sg1)" r="8" cy="11" cx="11"/>
+            <line stroke="url(#sb-sg2)" y2="16.65" y1="22" x2="16.65" x1="22"/>
+            <defs>
+              <linearGradient gradientTransform="rotate(50)" id="sb-sg1"><stop stop-color="#f8e7f8" offset="0%"/><stop stop-color="#b6a9b7" offset="50%"/></linearGradient>
+              <linearGradient id="sb-sg2"><stop stop-color="#b6a9b7" offset="0%"/><stop stop-color="#837484" offset="50%"/></linearGradient>
+            </defs>
+          </svg>
+        </div>
+      </div>
+    </div>
+  </div>
+  <p id="sb-noresult" class="sb-noresult"></p>
   <div id="vakgrid" class="sg"></div>
   <div class="site-footer">
     <a href="#" onclick="event.preventDefault();show('sc-privacy')">Privacybeleid</a>
@@ -2560,10 +2636,43 @@ function lvlCol(col){return col+'_'+APP_LEVEL;}
   }
 })();
 
+function filterGrid(query){
+  const poda=document.getElementById('sb-poda');
+  if(poda)poda.classList.toggle('sb-has-text',query.length>0);
+  const q=query.trim().toLowerCase();
+  let visible=0;
+  document.querySelectorAll('#vakgrid .card').forEach(card=>{
+    const name=card.querySelector('.card-name')?.textContent.toLowerCase()||'';
+    const desc=card.querySelector('.card-desc')?.textContent.toLowerCase()||'';
+    const match=!q||name.includes(q)||desc.includes(q);
+    card.style.display=match?'':'none';
+    if(match)visible++;
+  });
+  const nr=document.getElementById('sb-noresult');
+  if(nr){
+    nr.textContent=q&&visible===0?`Geen vakken gevonden voor "${query}"`:'';
+    nr.classList.toggle('show',q.length>0&&visible===0);
+  }
+}
+function clearGridSearch(){
+  const inp=document.getElementById('sb-input');
+  if(inp){inp.value='';inp.focus();}
+  const poda=document.getElementById('sb-poda');
+  if(poda)poda.classList.remove('sb-has-text');
+  filterGrid('');
+}
+
 function buildGrid(){
   const g=document.getElementById('vakgrid');
   if(!g)return;
   g.innerHTML='';
+  // Reset search on rebuild (level switch etc.)
+  const inp=document.getElementById('sb-input');
+  if(inp)inp.value='';
+  const poda=document.getElementById('sb-poda');
+  if(poda)poda.classList.remove('sb-has-text');
+  const nr=document.getElementById('sb-noresult');
+  if(nr){nr.textContent='';nr.classList.remove('show');}
   getVK().forEach(v=>{
     const d=document.createElement('div');
     d.className='card';
