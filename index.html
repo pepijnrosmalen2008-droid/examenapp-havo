@@ -26,7 +26,10 @@
   --sam-bg:#f0f5ff;--sam-txt:#1e3a5f;--sam-h:#0d2240;
   --tt-bg:#f5f6fa;--ce-bg:#f5f6fa;
   --font:'Inter',sans-serif;
-  --font-head:'Bricolage Grotesque',sans-serif
+  --font-head:'Bricolage Grotesque',sans-serif;
+  /* Search bar — light mode */
+  --sb-bg:var(--s);--sb-text:var(--dk);--sb-ph:var(--mu);
+  --sb-mask-col:var(--s);--sb-dk:transparent;--sb-dk2:rgba(0,0,0,0)
 }
 html.dark{
   --bg:#0f1118;--bg2:#181c28;--s:#1c2030;--dk:#edf0f7;
@@ -34,7 +37,10 @@ html.dark{
   --orl:#1e293b;--bl:#5898F8;
   --nav-bg:rgba(15,17,24,.95);
   --sam-bg:#0D1E33;--sam-txt:#93BDF5;--sam-h:#C8DFFE;
-  --tt-bg:#181c28;--ce-bg:#181c28
+  --tt-bg:#181c28;--ce-bg:#181c28;
+  /* Search bar — dark mode */
+  --sb-bg:#010201;--sb-text:#ffffff;--sb-ph:#9ca3af;
+  --sb-mask-col:#010201;--sb-dk:#000000;--sb-dk2:#1c191c
 }
 /* ── LEVEL THEMES ─────────────────────────────── */
 html.level-havo{
@@ -167,7 +173,7 @@ h1,h2,h3,h4{font-family:var(--font-head);line-height:1.2;letter-spacing:-.3px}
 .sb-gl::before{content:'';position:absolute;z-index:-2;top:50%;left:50%;background-repeat:no-repeat;transition:transform 2000ms ease}
 .sb-poda:focus-within .sb-gl::before{transition-duration:4000ms}
 .sb-gl1{z-index:-1;width:314px;height:70px;filter:blur(3px)}
-.sb-gl1::before{width:999px;height:999px;background:conic-gradient(#000,#402fb5 5%,#000 38%,#000 50%,#cf30aa 60%,#000 87%);transform:translate(-50%,-50%) rotate(60deg)}
+.sb-gl1::before{width:999px;height:999px;background:conic-gradient(var(--sb-dk),#402fb5 5%,var(--sb-dk) 38%,var(--sb-dk) 50%,#cf30aa 60%,var(--sb-dk) 87%);transform:translate(-50%,-50%) rotate(60deg)}
 .sb-poda:hover .sb-gl1::before{transform:translate(-50%,-50%) rotate(-120deg)}
 .sb-poda:focus-within .sb-gl1::before{transform:translate(-50%,-50%) rotate(420deg)}
 .sb-gl2,.sb-gl3,.sb-gl4{z-index:-1;width:312px;height:65px;filter:blur(3px)}
@@ -179,16 +185,20 @@ h1,h2,h3,h4{font-family:var(--font-head);line-height:1.2;letter-spacing:-.3px}
 .sb-poda:hover .sb-gl5::before{transform:translate(-50%,-50%) rotate(-97deg)}
 .sb-poda:focus-within .sb-gl5::before{transform:translate(-50%,-50%) rotate(443deg)}
 .sb-gl6{z-index:-1;width:303px;height:59px;filter:blur(0.5px)}
-.sb-gl6::before{width:600px;height:600px;background:conic-gradient(#1c191c,#402fb5 5%,#1c191c 14%,#1c191c 50%,#cf30aa 60%,#1c191c 64%);filter:brightness(1.3);transform:translate(-50%,-50%) rotate(70deg)}
+.sb-gl6::before{width:600px;height:600px;background:conic-gradient(var(--sb-dk2),#402fb5 5%,var(--sb-dk2) 14%,var(--sb-dk2) 50%,#cf30aa 60%,var(--sb-dk2) 64%);filter:brightness(1.3);transform:translate(-50%,-50%) rotate(70deg)}
 .sb-poda:hover .sb-gl6::before{transform:translate(-50%,-50%) rotate(-110deg)}
 .sb-poda:focus-within .sb-gl6::before{transform:translate(-50%,-50%) rotate(430deg)}
 .sb-main{position:relative;z-index:1}
-.sb-input{background:#010201;border:none;width:301px;height:56px;border-radius:10px;color:#fff;padding:0 52px 0 52px;font-size:16px;font-family:var(--font);outline:none}
-.sb-input::placeholder{color:#9ca3af}
-.sb-mask{pointer-events:none;width:100px;height:20px;position:absolute;background:linear-gradient(to right,transparent,#000);top:18px;left:70px}
+.sb-input{background:var(--sb-bg);border:none;width:301px;height:56px;border-radius:10px;color:var(--sb-text);padding:0 52px 0 52px;font-size:16px;font-family:var(--font);outline:none;transition:background .25s,color .25s,box-shadow .25s}
+.sb-input::placeholder{color:var(--sb-ph);transition:color .25s}
+/* Light mode: subtle inner shadow to define the input edge */
+html:not(.dark) .sb-input{box-shadow:inset 0 0 0 1px var(--bo)}
+.sb-mask{pointer-events:none;width:100px;height:20px;position:absolute;background:linear-gradient(to right,transparent,var(--sb-mask-col));top:18px;left:70px;transition:background .25s}
 .sb-poda:focus-within .sb-mask{display:none}
 .sb-pink{pointer-events:none;width:30px;height:20px;position:absolute;background:#cf30aa;top:10px;left:5px;filter:blur(16px);opacity:.8;transition:opacity 2000ms}
 .sb-poda:hover .sb-pink{opacity:0}
+/* Pink mask only visible in dark mode */
+html:not(.dark) .sb-pink{display:none}
 .sb-ring{position:absolute;height:42px;width:40px;overflow:hidden;top:7px;right:7px;border-radius:8px}
 .sb-ring::before{content:'';position:absolute;width:600px;height:600px;top:50%;left:50%;transform:translate(-50%,-50%) rotate(90deg);background:conic-gradient(rgba(0,0,0,0),#3d3a4f,rgba(0,0,0,0) 50%,rgba(0,0,0,0) 50%,#3d3a4f,rgba(0,0,0,0) 100%);filter:brightness(1.35);animation:sbSpin 3s linear infinite}
 @keyframes sbSpin{to{transform:translate(-50%,-50%) rotate(450deg)}}
@@ -199,6 +209,15 @@ h1,h2,h3,h4{font-family:var(--font-head);line-height:1.2;letter-spacing:-.3px}
 .sb-search-icon{position:absolute;left:16px;top:50%;transform:translateY(-50%);pointer-events:none;display:flex}
 .sb-noresult{text-align:center;padding:28px 0 4px;color:var(--mu);font-size:14px;display:none}
 .sb-noresult.show{display:block}
+/* Light mode: brighten glow layers slightly for better contrast on white */
+html:not(.dark) .sb-gl1{filter:blur(4px);opacity:.9}
+html:not(.dark) .sb-gl5::before{filter:brightness(1.2)}
+html:not(.dark) .sb-gl6::before{filter:brightness(1.0)}
+/* Light mode search icon — darker tones */
+html:not(.dark) #sb-sg1 stop:first-child{stop-color:#7c3aed}
+html:not(.dark) #sb-sg1 stop:last-child{stop-color:#a78bfa}
+html:not(.dark) #sb-sg2 stop:first-child{stop-color:#a78bfa}
+html:not(.dark) #sb-sg2 stop:last-child{stop-color:#c4b5fd}
 @media(max-width:340px){.sb-gl1{width:280px}.sb-gl2,.sb-gl3,.sb-gl4{width:278px}.sb-gl5{width:273px}.sb-gl6{width:269px}.sb-input{width:265px}}
 
 /* ── VAK CARDS ────────────────────────────────── */
