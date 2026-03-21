@@ -3190,6 +3190,8 @@ function openVak(id){
   document.getElementById('dtitle').textContent=ST.vak.naam;
   document.getElementById('ddesc').textContent=ST.vak.beschrijving;
   document.getElementById('dce').innerHTML=ST.vak.ceInfo;
+  // Remove previously injected exam-meta + yt-card (avoid stacking on revisit)
+  document.querySelectorAll('.exam-meta,.yt-card').forEach(el=>el.remove());
   // Exam metadata
   let metaHtml='<div class="exam-meta">';
   if(ST.vak.exDatum)metaHtml+=`<span class="em-chip em-date">📅 ${ST.vak.exDatum.split('-').reverse().join('-')} · ${ST.vak.exTijd}</span>`;
