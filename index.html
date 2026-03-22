@@ -3764,8 +3764,8 @@ function retryQ(){startQ(ST.mode);}
 function switchMode(){show('sc-qmode');}
 
 // ═══════ BOT LEADERBOARD SEED ═══════
-(function seedBots(){
-  const BOT_KEY='slagio_bots_seeded_v2';
+function seedBotsNow(){
+  const BOT_KEY='slagio_bots_seeded_v3';
   if(localStorage.getItem(BOT_KEY))return;
 
   // score(goed, tot, avgTijd) = goed*100 + totalTijd*5
@@ -3854,7 +3854,8 @@ function switchMode(){show('sc-qmode');}
   });
 
   localStorage.setItem(BOT_KEY,'1');
-})();
+}
+seedBotsNow();
 
 // ═══════ LEADERBOARD ═══════
 function getLbKey(){return 'examenapp_leaderboard_'+APP_LEVEL;}
@@ -3870,7 +3871,7 @@ async function saveLeaderboardEntry(entry){
   localStorage.setItem(getLbKey(),JSON.stringify(all));
   // Re-seed bots if they got lost
   const hasBots=all.some(e=>e.isBot);
-  if(!hasBots)localStorage.removeItem('slagio_bots_seeded_v2');
+  if(!hasBots){localStorage.removeItem('slagio_bots_seeded_v3');seedBotsNow();}
   // Save to Supabase global leaderboard (cross-user)
   if(currentUser){
     try{
@@ -3908,6 +3909,9 @@ function renderLeaderboard(){
   loadLeaderboardFromSupabase().then(()=>_renderLbWithData());
 }
 function _renderLbWithData(){
+  // Re-seed bots if missing
+  const hasBots=getLbEntries().some(e=>e.isBot);
+  if(!hasBots){localStorage.removeItem('slagio_bots_seeded_v3');seedBotsNow();}
   const all=getLbEntries();
   const prof=JSON.parse(localStorage.getItem(PROF_KEY)||'{}');
   const myUid=currentUser?currentUser.id:null;
@@ -3940,14 +3944,12 @@ function _renderLbWithData(){
   const filtered=lbVakFilter==='all'?all:all.filter(e=>e.vak===lbVakFilter);
 
   // Deduplicate: best score per naam+vak+domein
-  const seen={};
-  const deduped=[];
+  const bestMap={};
   filtered.forEach(e=>{
     const k=`${e.naam}|${e.vak}|${e.domeinId}`;
-    if(!seen[k]||e.score>seen[k]){seen[k]=e.score;deduped.push(e);}
+    if(!bestMap[k]||e.score>bestMap[k].score)bestMap[k]=e;
   });
-  // sort desc
-  deduped.sort((a,b)=>b.score-a.score);
+  const deduped=Object.values(bestMap).sort((a,b)=>b.score-a.score);
   const top=deduped.slice(0,10);
 
   // My best score in current filter (match on uid if available, else name)
