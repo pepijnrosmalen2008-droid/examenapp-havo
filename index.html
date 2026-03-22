@@ -1973,19 +1973,19 @@ html.dark .auth-ok{background:#0F2D1C;border-color:#166534;color:#86EFAC}
           <div class="lb-score-part-icon">⚡</div>
           <div>
             <div class="lb-score-part-title">Snelheidsbonus</div>
-            <div class="lb-score-part-val">+5 per seconde over</div>
+            <div class="lb-score-part-val">+100 per vraag als je snel bent</div>
           </div>
         </div>
       </div>
       <div class="lb-score-example">
-        <div class="lb-score-ex-title">Voorbeeld — 5/5 goed, 70s totaal</div>
-        <div class="lb-score-ex-calc">5 × 100 <span>+</span> 70 × 5 <span>=</span> <strong>850 punten</strong></div>
+        <div class="lb-score-ex-title">Voorbeeld — 5/5 goed, 14s/vraag over</div>
+        <div class="lb-score-ex-calc">5 × 100 <span>+</span> 5 × 93 <span>=</span> <strong>965 punten</strong></div>
       </div>
       <div class="lb-score-tiers">
         <div class="lb-score-tier-title">Hoe zien de niveaus eruit?</div>
-        <div class="lb-tier-row"><span class="lb-tier-av">🦅🦁</span><span class="lb-tier-lbl">Elite</span><span class="lb-tier-pts">750–900 pts · 5/5 razendsnel</span></div>
-        <div class="lb-tier-row"><span class="lb-tier-av">🐯🦊🐺</span><span class="lb-tier-lbl">Goed</span><span class="lb-tier-pts">500–750 pts · 4-5/5</span></div>
-        <div class="lb-tier-row"><span class="lb-tier-av">🦋🐢🦄</span><span class="lb-tier-lbl">Gemiddeld</span><span class="lb-tier-pts">250–500 pts · 2-4/5</span></div>
+        <div class="lb-tier-row"><span class="lb-tier-av">🦅🦁</span><span class="lb-tier-lbl">Elite</span><span class="lb-tier-pts">850–1000 pts · 5/5 razendsnel</span></div>
+        <div class="lb-tier-row"><span class="lb-tier-av">🐯🦊🐺</span><span class="lb-tier-lbl">Goed</span><span class="lb-tier-pts">550–850 pts · 4-5/5</span></div>
+        <div class="lb-tier-row"><span class="lb-tier-av">🦋🐢🦄</span><span class="lb-tier-lbl">Gemiddeld</span><span class="lb-tier-pts">250–550 pts · 2-4/5</span></div>
         <div class="lb-tier-row"><span class="lb-tier-av">🐣🐨</span><span class="lb-tier-lbl">Beginner</span><span class="lb-tier-pts">100–250 pts · 1-3/5</span></div>
       </div>
     </div>
@@ -4733,8 +4733,9 @@ function toonRes(){
   if(ST.mode==='snel'){
     const goed=ST.antwrd.filter(a=>a.pts===1).length;
     const totalTijd=ST.tijdPerVraag.reduce((a,b)=>a+b,0);
-    // Score formula: correct*100 + remaining seconds*5 (max per Q: 175)
-    const lbScore=goed*100+totalTijd*5;
+    // Score formula: per vraag max 200 pts = 100 (correct) + 100 (snelheid, schaalt 0-15s)
+    // Max totaal = 5 × 200 = 1000
+    const lbScore=ST.antwrd.reduce((sum,a)=>sum+a.pts*100+Math.round((a.tijdOver||0)/15*100),0);
     const avgTijd=ST.tijdPerVraag.length?Math.round(totalTijd/ST.tijdPerVraag.length*10)/10:0;
     const prof=JSON.parse(localStorage.getItem(PROF_KEY)||'{}');
     const naam=prof.naam||'Anoniem';
@@ -4753,14 +4754,14 @@ function switchMode(){show('sc-qmode');}
 
 // ═══════ BOT LEADERBOARD SEED ═══════
 function seedBotsNow(){
-  const BOT_KEY='slagio_bots_seeded_v4';
+  const BOT_KEY='slagio_bots_seeded_v5';
   if(localStorage.getItem(BOT_KEY))return;
 
-  // score(goed, tot, avgTijd) = goed*100 + totalTijd*5
+  // score per vraag: 100 (correct) + round(avgTijd/15*100) (snelheid), max 200 per vraag → max 1000
   function mkEntry(naam,avatar,vak,vakNaam,domeinId,domeinNaam,goed,tot,avgTijd,daysAgo,niveau){
     const d=new Date();d.setDate(d.getDate()-daysAgo);
     return{naam,avatar,vak,vakNaam,domeinId,domeinNaam,
-      score:goed*100+Math.round(avgTijd*tot*5),goed,tot,avgTijd,
+      score:goed*100+goed*Math.round(avgTijd/15*100),goed,tot,avgTijd,
       date:d.toISOString().slice(0,10),niveau,isBot:true};
   }
 
