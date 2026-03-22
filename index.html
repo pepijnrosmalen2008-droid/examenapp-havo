@@ -639,15 +639,33 @@ html.dark .calc-btn{background:#2e3550}
 .fc-score{text-align:center;font-size:15px;color:var(--mu);margin-top:14px}
 
 /* ── POMODORO TIMER ────────────────────────────── */
-.pomo{background:var(--s);border:1px solid var(--bo);border-radius:20px;padding:28px 24px;margin-bottom:24px;text-align:center;transition:all .2s;box-shadow:0 1px 6px rgba(0,0,0,.04)}
-.pomo-title{font-size:11px;font-weight:700;color:var(--mu);text-transform:uppercase;letter-spacing:1px;margin-bottom:14px}
-.pomo-time{font-family:var(--font-head);font-size:56px;font-weight:800;color:var(--dk);letter-spacing:-3px;margin-bottom:6px}
-.pomo-label{font-size:13px;color:var(--mu);margin-bottom:16px}
-.pomo-btns{display:flex;gap:10px;justify-content:center}
-.pomo-btn{padding:10px 24px;border-radius:10px;border:1px solid var(--bo);background:var(--s);color:var(--dk);font-size:13px;font-weight:600;cursor:pointer;font-family:var(--font);transition:all .2s}
-.pomo-btn:hover{background:var(--bg2)}
-.pomo-btn.pomo-active{background:var(--or);color:#fff;border-color:var(--or)}
-.pomo-info{margin-top:16px;border-top:1px solid var(--bo);padding-top:12px;text-align:left}
+/* ── POMODORO REDESIGN (21st.dev inspired) ───── */
+.pomo{position:relative;overflow:hidden;background:linear-gradient(145deg,color-mix(in srgb,var(--or) 8%,var(--s)),var(--s));border:1px solid color-mix(in srgb,var(--or) 22%,var(--bo));border-radius:28px;padding:32px 24px 24px;margin-bottom:24px;text-align:center;transition:all .3s;box-shadow:0 8px 32px color-mix(in srgb,var(--or) 10%,transparent),0 1px 0 rgba(255,255,255,.04) inset}
+.pomo::before{content:'';position:absolute;top:-60px;right:-60px;width:200px;height:200px;border-radius:50%;background:radial-gradient(circle,color-mix(in srgb,var(--or) 12%,transparent),transparent 70%);pointer-events:none}
+.pomo-break{background:linear-gradient(145deg,color-mix(in srgb,#22C55E 8%,var(--s)),var(--s))!important;border-color:color-mix(in srgb,#22C55E 25%,var(--bo))!important}
+.pomo-break .pomo-ring-fg{stroke:#22C55E!important}
+.pomo-break .pomo-time{color:#22C55E!important}
+.pomo-break .pomo-btn.pomo-active{background:#22C55E!important;border-color:#22C55E!important}
+.pomo-header{display:flex;align-items:center;justify-content:space-between;margin-bottom:20px}
+.pomo-title{font-size:11px;font-weight:700;color:var(--mu);text-transform:uppercase;letter-spacing:1.2px}
+.pomo-mode-badge{font-size:11px;font-weight:700;padding:4px 10px;border-radius:20px;background:color-mix(in srgb,var(--or) 15%,transparent);color:var(--or);border:1px solid color-mix(in srgb,var(--or) 25%,transparent);letter-spacing:.3px}
+.pomo-break .pomo-mode-badge{background:color-mix(in srgb,#22C55E 15%,transparent)!important;color:#22C55E!important;border-color:color-mix(in srgb,#22C55E 25%,transparent)!important}
+.pomo-ring-wrap{position:relative;width:180px;height:180px;margin:0 auto 20px}
+.pomo-ring-wrap svg{position:absolute;inset:0;transform:rotate(-90deg)}
+.pomo-ring-bg{fill:none;stroke:color-mix(in srgb,var(--or) 12%,var(--bo));stroke-width:8}
+.pomo-ring-fg{fill:none;stroke:var(--or);stroke-width:8;stroke-linecap:round;transition:stroke-dashoffset 1s linear}
+.pomo-ring-center{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:2px}
+.pomo-time{font-family:var(--font-head);font-size:46px;font-weight:800;color:var(--dk);letter-spacing:-3px;line-height:1}
+.pomo-label{font-size:12px;color:var(--mu);font-weight:500;letter-spacing:.2px}
+.pomo-sessions{display:flex;gap:6px;justify-content:center;margin-bottom:20px}
+.pomo-session-dot{width:8px;height:8px;border-radius:50%;background:color-mix(in srgb,var(--or) 20%,var(--bo));transition:all .3s}
+.pomo-session-dot.done{background:var(--or);box-shadow:0 0 6px color-mix(in srgb,var(--or) 50%,transparent)}
+.pomo-btns{display:flex;gap:10px;justify-content:center;margin-bottom:16px}
+.pomo-btn{display:flex;align-items:center;gap:7px;padding:11px 26px;border-radius:14px;border:1px solid var(--bo);background:var(--s);color:var(--dk);font-size:13px;font-weight:700;cursor:pointer;font-family:var(--font);transition:all .2s;letter-spacing:.1px}
+.pomo-btn:hover{background:var(--bg2);border-color:color-mix(in srgb,var(--or) 30%,var(--bo));transform:translateY(-1px)}
+.pomo-btn.pomo-active{background:var(--or);color:#fff;border-color:var(--or);box-shadow:0 4px 16px color-mix(in srgb,var(--or) 35%,transparent)}
+.pomo-btn.pomo-active:hover{opacity:.9;transform:translateY(-1px)}
+.pomo-info{margin-top:0;border-top:1px solid var(--bo);padding-top:12px;text-align:left}
 .pomo-info-toggle{width:100%;background:none;border:none;text-align:left;font-size:12px;font-weight:700;color:var(--mu);cursor:pointer;padding:0;font-family:var(--font);display:flex;justify-content:space-between;align-items:center;transition:color .2s;letter-spacing:.3px}
 .pomo-info-toggle:hover{color:var(--or)}
 .pomo-info-toggle .pomo-info-arrow{transition:transform .25s;display:inline-block}
@@ -657,7 +675,7 @@ html.dark .calc-btn{background:#2e3550}
 .pomo-info-body.open{display:block}
 .pomo-info-body ol{margin:6px 0 8px 20px;padding:0}
 .pomo-info-body li{margin-bottom:5px}
-.pomo-info-tip{margin-top:9px;font-size:12px;background:var(--bg2);border-radius:8px;padding:8px 12px;color:var(--dk);line-height:1.5}
+.pomo-info-tip{margin-top:9px;font-size:12px;background:var(--bg2);border-radius:10px;padding:10px 12px;color:var(--dk);line-height:1.5;border-left:3px solid var(--or)}
 /* ── SAM BULLET LISTS ─────────────────────────── */
 .sam ul{margin:2px 0 6px;padding:0;list-style:none}
 .sam ul li{padding:5px 0 5px 16px;position:relative;font-size:13.5px;line-height:1.6;border-bottom:1px solid rgba(0,0,0,.06)}
@@ -4931,23 +4949,49 @@ function fcAnswer(correct){
 }
 
 // ═══════ POMODORO ═══════
-let POMO={timer:null,seconds:25*60,running:false,mode:'study',breakTimer:null,breakSeconds:0};
+let POMO={timer:null,seconds:25*60,total:25*60,running:false,mode:'study',breakTimer:null,breakSeconds:0,sessions:0};
 
 function renderPomo(){
   const box=document.getElementById('pomo-home');
   if(!box)return;
   const mins=Math.floor(POMO.seconds/60);
   const secs=POMO.seconds%60;
-  const label=POMO.mode==='study'?'🎯 Studietijd':'☕ Pauzetijd';
-  const modeClass=POMO.mode==='break'?' pomo-break':'';
+  const isBreak=POMO.mode==='break';
+  const modeClass=isBreak?' pomo-break':'';
+  const modeBadge=isBreak?'☕ Pauze':'🎯 Studie';
+  const modeLabel=isBreak?'Rust even uit':'Blijf gefocust';
   const infoOpen=box._infoOpen||false;
+  // Circular ring
+  const R=80,C=2*Math.PI*R;
+  const progress=POMO.total>0?POMO.seconds/POMO.total:1;
+  const offset=C*(1-progress);
+  // Session dots (max 4)
+  const dots=Array.from({length:4},(_,i)=>`<div class="pomo-session-dot${i<POMO.sessions?' done':''}"></div>`).join('');
   box.innerHTML=`<div class="pomo${modeClass}">
-    <div class="pomo-title">Pomodoro Timer</div>
-    <div class="pomo-time">${String(mins).padStart(2,'0')}:${String(secs).padStart(2,'0')}</div>
-    <div class="pomo-label">${label}</div>
+    <div class="pomo-header">
+      <div class="pomo-title">Pomodoro Timer</div>
+      <div class="pomo-mode-badge">${modeBadge}</div>
+    </div>
+    <div class="pomo-ring-wrap">
+      <svg width="180" height="180" viewBox="0 0 180 180">
+        <circle class="pomo-ring-bg" cx="90" cy="90" r="${R}"/>
+        <circle class="pomo-ring-fg" cx="90" cy="90" r="${R}"
+          stroke-dasharray="${C.toFixed(2)}"
+          stroke-dashoffset="${offset.toFixed(2)}"/>
+      </svg>
+      <div class="pomo-ring-center">
+        <div class="pomo-time">${String(mins).padStart(2,'0')}:${String(secs).padStart(2,'0')}</div>
+        <div class="pomo-label">${modeLabel}</div>
+      </div>
+    </div>
+    <div class="pomo-sessions">${dots}</div>
     <div class="pomo-btns">
-      <button class="pomo-btn${POMO.running?' pomo-active':''}" onclick="togglePomo()">${POMO.running?'⏸ Pauze':'▶ Start'}</button>
-      <button class="pomo-btn" onclick="resetPomo()">↻ Reset</button>
+      <button class="pomo-btn${POMO.running?' pomo-active':''}" onclick="togglePomo()">
+        ${POMO.running?'<svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><rect x="6" y="4" width="4" height="16"/><rect x="14" y="4" width="4" height="16"/></svg> Pauze':'<svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><polygon points="5,3 19,12 5,21"/></svg> Start'}
+      </button>
+      <button class="pomo-btn" onclick="resetPomo()">
+        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="1,4 1,10 7,10"/><path d="M3.51 15a9 9 0 1 0 .49-4.5"/></svg> Reset
+      </button>
     </div>
     <div class="pomo-info">
       <button class="pomo-info-toggle${infoOpen?' open':''}" onclick="const b=this.nextElementSibling;b.classList.toggle('open');this.classList.toggle('open');document.getElementById('pomo-home')._infoOpen=b.classList.contains('open')">
@@ -5012,7 +5056,7 @@ function showPomoOverlay(type){
     timer.textContent='00:00';
     bar.style.width='0%';
     btn.textContent='▶ Nieuwe sessie';
-    btn.onclick=function(){dismissPomoOverlay();POMO.mode='study';POMO.seconds=25*60;renderPomo();togglePomo();};
+    btn.onclick=function(){dismissPomoOverlay();POMO.mode='study';POMO.seconds=25*60;POMO.total=25*60;renderPomo();togglePomo();};
     btn.style.display='';
   }
   ov.classList.add('show');
@@ -5022,7 +5066,7 @@ function showPomoOverlay(type){
 function startBreakFromOverlay(){
   const btn=document.getElementById('pomo-ov-action');
   btn.style.display='none';
-  POMO.mode='break';POMO.seconds=5*60;POMO.running=true;
+  POMO.mode='break';POMO.seconds=5*60;POMO.total=5*60;POMO.running=true;
   renderPomo();
 
   clearInterval(POMO.breakTimer);
@@ -5061,11 +5105,13 @@ function togglePomo(){
       if(POMO.seconds<=0){
         clearInterval(POMO.timer);POMO.running=false;
         if(POMO.mode==='study'){
+          POMO.sessions=Math.min((POMO.sessions||0)+1,4);
           renderPomo();
           showPomoOverlay('break');
           return;
         }else{
-          POMO.mode='study';POMO.seconds=25*60;
+          POMO.mode='study';POMO.seconds=25*60;POMO.total=25*60;
+          if(POMO.sessions>=4)POMO.sessions=0;
         }
       }
       renderPomo();
@@ -5074,7 +5120,7 @@ function togglePomo(){
   renderPomo();
 }
 
-function resetPomo(){clearInterval(POMO.timer);clearInterval(POMO.breakTimer);POMO.running=false;POMO.mode='study';POMO.seconds=25*60;dismissPomoOverlay();renderPomo();}
+function resetPomo(){clearInterval(POMO.timer);clearInterval(POMO.breakTimer);POMO.running=false;POMO.mode='study';POMO.seconds=25*60;POMO.total=25*60;POMO.sessions=0;dismissPomoOverlay();renderPomo();}
 
 // ═══════ TUTORIAL ═══════
 const TUTO_KEY='examio_tutorial_done';
