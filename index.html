@@ -620,6 +620,9 @@ html.dark .qb{background:#2e3550}
 .level-arrow{display:inline-block;margin-left:5px;color:var(--or);opacity:.7;transition:transform .25s}
 .level-card:hover .level-arrow{transform:translateX(4px);opacity:1}
 .level-soon{display:inline-block;font-size:11px;font-weight:600;background:rgba(255,255,255,.07);color:rgba(255,255,255,.3);padding:4px 12px;border-radius:20px;margin-top:4px}
+.lc-active.lc-havo{background:rgba(232,88,12,.22);border-color:rgba(232,88,12,.75);box-shadow:0 0 0 2px rgba(232,88,12,.35),0 12px 40px rgba(232,88,12,.3)}
+.lc-active.lc-vwo{background:rgba(139,92,246,.22);border-color:rgba(139,92,246,.75);box-shadow:0 0 0 2px rgba(139,92,246,.35),0 12px 40px rgba(139,92,246,.3)}
+.level-prev-tag{display:inline-block;font-size:10px;font-weight:700;letter-spacing:.5px;text-transform:uppercase;background:rgba(255,255,255,.12);color:rgba(255,255,255,.7);padding:3px 10px;border-radius:20px;margin-top:6px}
 .footer-text{text-align:center;font-size:13px;color:rgba(255,255,255,.2);padding:24px 0 52px;line-height:2;position:relative;z-index:1}
 .footer-text a{color:rgba(255,255,255,.35);text-decoration:underline;text-underline-offset:3px}
 
@@ -5653,11 +5656,19 @@ renderDailyChallenge();
 buildGrid();
 updateProfileNav();
 updateLevelChip();
-// If user had a level saved, skip welcome screen (works for both HAVO and VWO)
-if(localStorage.getItem('examenapp_level')){
-  show('sc-home');
-  setTimeout(showTutorial,600);
-}
+// Always start on the welcome/level-select screen.
+// If a level was previously chosen, highlight that card so the user knows.
+(function markPrevLevel(){
+  const prev=localStorage.getItem('examenapp_level');
+  if(!prev)return;
+  const card=document.querySelector('.lc-'+prev);
+  if(!card)return;
+  card.classList.add('lc-active');
+  const tag=document.createElement('span');
+  tag.className='level-prev-tag';
+  tag.textContent='Vorige keuze ✓';
+  card.appendChild(tag);
+})();
 renderPomo();
 if(document.getElementById('sc-schedule'))renderSchedule();
 buildRegisterAnimalPicker();
