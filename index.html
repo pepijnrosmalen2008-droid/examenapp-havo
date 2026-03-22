@@ -462,24 +462,50 @@ html.dark .qb{background:#2e3550}
 .fav-chip-name{color:var(--dk)}
 .fav-chip-sub{color:var(--mu);font-weight:400}
 
-/* ── STREAK BANNER ───────────────────────────── */
-.streak-banner{display:flex;align-items:center;gap:16px;background:var(--s);border:1px solid var(--bo);border-radius:18px;padding:18px 22px;margin-bottom:20px;box-shadow:0 1px 6px rgba(0,0,0,.04)}
-.streak-fire{font-size:30px;line-height:1;width:44px;height:44px;background:var(--bg2);border-radius:12px;display:flex;align-items:center;justify-content:center;flex-shrink:0}
-.streak-info{flex:1}
-.streak-title{font-family:var(--font-head);font-size:17px;font-weight:700;color:var(--dk)}
-.streak-sub{font-size:13px;color:var(--mu);margin-top:3px}
-.streak-days{display:flex;gap:4px;margin-top:8px}
-.streak-dot{width:20px;height:20px;border-radius:5px;background:var(--bo);position:relative}
-.streak-dot.active{background:var(--or);box-shadow:0 0 8px rgba(var(--or-rgb),.55),0 0 2px rgba(var(--or-rgb),.8)}
-.streak-dot.today{outline:2px solid var(--or);outline-offset:2px}
-.streak-dot-label{font-size:9px;color:var(--mu);text-align:center;margin-top:2px}
-.streak-badges{display:flex;gap:8px;flex-shrink:0}
-.badge{width:36px;height:36px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:18px;background:var(--bg2);border:1px solid var(--bo);transition:.2s}
-.badge.earned{background:linear-gradient(135deg,#FEF3C7,#FDE68A);border-color:#F59E0B;box-shadow:0 3px 10px rgba(245,158,11,.25)}
-.badge.unearned{filter:grayscale(1);opacity:.3}
+/* ── STREAK CARD ───────────────────────────── */
+.streak-card{position:relative;overflow:hidden;background:linear-gradient(135deg,rgba(var(--or-rgb),.1) 0%,rgba(var(--or-rgb),.03) 100%);border:1px solid rgba(var(--or-rgb),.22);border-radius:24px;padding:24px 22px 20px;margin-bottom:20px;box-shadow:0 4px 24px rgba(var(--or-rgb),.1),0 1px 4px rgba(0,0,0,.04)}
+.streak-card::before{content:'';position:absolute;top:-40px;right:-40px;width:160px;height:160px;background:radial-gradient(circle,rgba(var(--or-rgb),.18) 0%,transparent 70%);pointer-events:none}
+.streak-top{display:flex;align-items:flex-start;gap:16px;margin-bottom:18px}
+.streak-flame-wrap{display:flex;flex-direction:column;align-items:center;flex-shrink:0}
+.streak-flame-big{font-size:44px;line-height:1;display:inline-block;animation:flameBob 2.4s ease-in-out infinite;filter:drop-shadow(0 0 14px rgba(var(--or-rgb),.55))}
+@keyframes flameBob{0%,100%{transform:scale(1) rotate(-4deg)}50%{transform:scale(1.12) rotate(4deg)}}
+.streak-count-num{font-family:var(--font-head);font-size:38px;font-weight:900;color:var(--or);line-height:1;text-align:center;margin-top:2px}
+.streak-count-lbl{font-size:9px;font-weight:700;letter-spacing:.8px;text-transform:uppercase;color:var(--or);opacity:.7;text-align:center}
+.streak-meta{flex:1}
+.streak-headline{font-family:var(--font-head);font-size:18px;font-weight:800;color:var(--dk);line-height:1.2;margin-bottom:4px}
+.streak-tagline{font-size:13px;color:var(--mu);margin-bottom:10px}
+.streak-stats{display:flex;gap:12px}
+.streak-stat{display:flex;flex-direction:column;align-items:center;background:rgba(var(--or-rgb),.08);border:1px solid rgba(var(--or-rgb),.15);border-radius:10px;padding:6px 12px;min-width:56px}
+.streak-stat-num{font-family:var(--font-head);font-size:18px;font-weight:800;color:var(--or);line-height:1}
+.streak-stat-lbl{font-size:10px;color:var(--mu);font-weight:500;margin-top:1px}
+/* 7-day week grid */
+.streak-week{display:grid;grid-template-columns:repeat(7,1fr);gap:5px;margin-bottom:14px}
+.streak-day-cell{display:flex;flex-direction:column;align-items:center;gap:3px}
+.streak-day-pip{width:100%;aspect-ratio:1;border-radius:8px;background:var(--bo);transition:all .3s cubic-bezier(.34,1.4,.64,1);display:flex;align-items:center;justify-content:center;font-size:11px;color:transparent}
+.streak-day-pip.active{background:var(--or);box-shadow:0 0 12px rgba(var(--or-rgb),.45),0 2px 6px rgba(var(--or-rgb),.3);color:#fff}
+.streak-day-pip.today-empty{border:2px dashed rgba(var(--or-rgb),.45);animation:pipPulse 2s ease-in-out infinite}
+@keyframes pipPulse{0%,100%{box-shadow:0 0 0 0 rgba(var(--or-rgb),.3)}50%{box-shadow:0 0 0 5px rgba(var(--or-rgb),.0)}}
+.streak-day-name{font-size:9px;color:var(--mu);font-weight:600;text-transform:uppercase;letter-spacing:.4px}
+/* Badges */
+.streak-badges-row{display:flex;gap:7px;flex-wrap:wrap}
+.badge{position:relative;width:38px;height:38px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:19px;background:var(--bg2);border:1.5px solid var(--bo);transition:all .25s cubic-bezier(.34,1.4,.64,1);cursor:default}
+.badge.earned{background:linear-gradient(135deg,#FEF3C7,#FDE68A);border-color:#F59E0B;box-shadow:0 3px 12px rgba(245,158,11,.3)}
+.badge.earned:hover{transform:scale(1.2) rotate(-6deg)}
+.badge.unearned{filter:grayscale(1);opacity:.28}
 .badge-tooltip{position:relative}
-.badge-tooltip::after{content:attr(data-tip);position:absolute;bottom:110%;left:50%;transform:translateX(-50%);background:var(--dk);color:var(--bg);font-size:11px;padding:4px 10px;border-radius:6px;white-space:nowrap;opacity:0;pointer-events:none;transition:.2s}
+.badge-tooltip::after{content:attr(data-tip);position:absolute;bottom:calc(100% + 6px);left:50%;transform:translateX(-50%);background:var(--dk);color:var(--bg);font-size:11px;font-weight:600;padding:4px 10px;border-radius:8px;white-space:nowrap;opacity:0;pointer-events:none;transition:.18s;font-family:var(--font);z-index:10}
 .badge-tooltip:hover::after{opacity:1}
+/* Streak CTA button */
+.streak-cta{margin-top:14px;width:100%;padding:10px;border-radius:12px;border:none;background:var(--or);color:#fff;font-family:var(--font-head);font-size:14px;font-weight:700;cursor:pointer;letter-spacing:.2px;transition:all .22s cubic-bezier(.34,1.2,.64,1);box-shadow:0 4px 14px rgba(var(--or-rgb),.35)}
+.streak-cta:hover{transform:translateY(-2px);box-shadow:0 8px 22px rgba(var(--or-rgb),.45)}
+.streak-cta:active{transform:scale(.97)}
+/* Responsive */
+@media(max-width:600px){
+  .streak-count-num{font-size:30px}
+  .streak-flame-big{font-size:36px}
+  .streak-headline{font-size:16px}
+  .streak-card{padding:18px 16px 16px}
+}
 
 /* ── REVIEW SCREEN ───────────────────────────── */
 #sc-review{background:linear-gradient(180deg, #0A0C10 0%, #141824 100%)}
@@ -724,10 +750,7 @@ html.dark .calc-btn{background:#2e3550}
   .card-desc{font-size:12px;margin-bottom:8px}
 
   /* Streak */
-  .streak-banner{padding:14px 16px;border-radius:14px;gap:12px;margin-bottom:18px}
-  .streak-fire{font-size:26px}
-  .streak-title{font-size:15px}
-  .streak-sub{font-size:12px}
+  .streak-card{padding:16px 14px 14px;border-radius:18px;margin-bottom:16px}
 
   /* Pomodoro */
   .pomo{padding:18px 16px;border-radius:14px;margin-bottom:20px}
@@ -4319,36 +4342,77 @@ function renderStreak(){
   const box=document.getElementById('streak-home');
   const info=calcStreak();
   if(info.total===0){box.innerHTML='';return;}
-  // Last 7 days dots
-  let dotsHtml='';
+  // 7-day grid
   const dayLabels=['zo','ma','di','wo','do','vr','za'];
+  let weekHtml='';
   for(let i=6;i>=0;i--){
     const d=new Date();d.setDate(d.getDate()-i);
     const ds=d.toISOString().slice(0,10);
     const isActive=info.days.includes(ds);
     const isToday=i===0;
-    dotsHtml+=`<div style="text-align:center"><div class="streak-dot${isActive?' active':''}${isToday?' today':''}"></div><div class="streak-dot-label">${dayLabels[d.getDay()]}</div></div>`;
+    let pipClass='streak-day-pip';
+    if(isActive)pipClass+=' active';
+    else if(isToday)pipClass+=' today-empty';
+    weekHtml+=`<div class="streak-day-cell">
+      <div class="${pipClass}">${isActive?'✓':''}</div>
+      <div class="streak-day-name">${dayLabels[d.getDay()]}</div>
+    </div>`;
   }
   // Badges
-  const badges=[
-    {emoji:'🌱',tip:'Eerste quiz',req:info.total>=1},
+  const badgeDefs=[
+    {emoji:'🌱',tip:'Eerste quiz!',req:info.total>=1},
     {emoji:'🔥',tip:'3 dagen streak',req:info.current>=3},
-    {emoji:'⚡',tip:'7 dagen streak',req:info.current>=7},
-    {emoji:'🏆',tip:'10+ quizzen',req:info.total>=10}
+    {emoji:'⚡',tip:'7 dagen op rij',req:info.current>=7},
+    {emoji:'💎',tip:'14 dagen streak',req:info.current>=14},
+    {emoji:'🏆',tip:'10+ quizzen',req:info.total>=10},
+    {emoji:'🚀',tip:'50+ quizzen',req:info.total>=50}
   ];
   let badgeHtml='';
-  badges.forEach(b=>{
+  badgeDefs.forEach(b=>{
     badgeHtml+=`<div class="badge-tooltip badge ${b.req?'earned':'unearned'}" data-tip="${b.tip}">${b.emoji}</div>`;
   });
-  box.innerHTML=`<div class="streak-banner">
-    <div class="streak-fire">${info.current>=3?'🔥':'📚'}</div>
-    <div class="streak-info">
-      <div class="streak-title">${info.current>0?info.current+' dag'+(info.current>1?'en':'')+' streak!':'Oefen vandaag om je streak te starten'}</div>
-      <div class="streak-sub">${info.total} quiz${info.total!==1?'zen':''} gemaakt</div>
-      <div class="streak-days">${dotsHtml}</div>
+  // Headline
+  const todayStr=new Date().toISOString().slice(0,10);
+  const practicedToday=info.days.includes(todayStr);
+  const fireEmoji=info.current>=14?'💎':info.current>=7?'⚡':info.current>=3?'🔥':'📚';
+  const headline=info.current>0
+    ?`${info.current} dag${info.current>1?'en':''} op rij!`
+    :'Start vandaag je streak!';
+  const tagline=info.current>=7?'Je bent op dreef, ga zo door! 💪'
+    :info.current>=3?'Geweldig, blijf volhouden!'
+    :info.current>0?'Kom morgen terug om je streak te verlengen.'
+    :'Maak een quiz en bouw je streak op.';
+  // Longest streak stat
+  const s=getStreak();
+  const longest=s.longestStreak||info.current;
+  box.innerHTML=`<div class="streak-card">
+    <div class="streak-top">
+      <div class="streak-flame-wrap">
+        <div class="streak-flame-big">${fireEmoji}</div>
+        <div class="streak-count-num">${info.current}</div>
+        <div class="streak-count-lbl">dagen</div>
+      </div>
+      <div class="streak-meta">
+        <div class="streak-headline">${headline}</div>
+        <div class="streak-tagline">${tagline}</div>
+        <div class="streak-stats">
+          <div class="streak-stat">
+            <div class="streak-stat-num">${info.total}</div>
+            <div class="streak-stat-lbl">quizzen</div>
+          </div>
+          <div class="streak-stat">
+            <div class="streak-stat-num">${longest}</div>
+            <div class="streak-stat-lbl">record</div>
+          </div>
+        </div>
+      </div>
     </div>
-    <div class="streak-badges">${badgeHtml}</div>
+    <div class="streak-week">${weekHtml}</div>
+    <div class="streak-badges-row">${badgeHtml}</div>
+    ${!practicedToday?`<button class="streak-cta" onclick="show('home');setTimeout(()=>document.querySelector('.vak-chip')?.click(),200)">🎯 Oefen vandaag — verleng je streak!</button>`:''}
   </div>`;
+  // Update longest streak
+  if(info.current>longest){s.longestStreak=info.current;cloudSet('streak',s);}
 }
 
 // ═══════ REVIEW ═══════
