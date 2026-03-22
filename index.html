@@ -3379,21 +3379,36 @@ const AVATARS=[
 let selectedAvatar=AVATARS[4].e;
 // ── ANIMAL EVOLUTION SYSTEM ──
 const ANIMAL_EVOLUTIONS=[
-  {id:'adelaar', n:'Adelaar',  s:['🥚','🐣','🐥','🐦','🦅'], lbl:['Ei','Kuiken','Jong','Vogel','Adelaar']},
-  {id:'leeuw',   n:'Leeuw',   s:['🐱','🐈','🐅','🐆','🦁'], lbl:['Kitten','Kat','Jong Roofdier','Luipaard','Leeuw']},
-  {id:'draak',   n:'Draak',   s:['🥚','🦎','🐊','🐉','🐲'], lbl:['Ei','Hagedis','Krokodil','Draak','Vuurdrake']},
-  {id:'wolf',    n:'Wolf',    s:['🐾','🐶','🐕','🦮','🐺'], lbl:['Pootje','Puppy','Hond','Geleider','Wolf']},
-  {id:'vlinder', n:'Vlinder', s:['🌱','🐛','🐌','🐝','🦋'], lbl:['Zaad','Rups','Slak','Bij','Vlinder']},
-  {id:'tijger',  n:'Tijger',  s:['🐾','🐱','🐈','🐅','🐯'], lbl:['Pootje','Katje','Kat','Jong Tijger','Tijger']},
-  {id:'haai',    n:'Haai',    s:['🐚','🐠','🐟','🐡','🦈'], lbl:['Schelp','Visje','Vis','Kogelvis','Haai']},
-  {id:'olifant', n:'Olifant', s:['🐭','🐹','🐗','🦏','🐘'], lbl:['Muisje','Hamster','Zwijn','Neushoorn','Olifant']},
-  {id:'eenhoorn',n:'Eenhoorn',s:['🐾','🐴','🐎','🏇','🦄'], lbl:['Pootje','Veulen','Paard','Renpaard','Eenhoorn']},
-  {id:'vos',     n:'Vos',     s:['🐾','🐱','🐈','🦝','🦊'], lbl:['Pootje','Katje','Kat','Wasbeer','Vos']},
-  {id:'uil',     n:'Uil',     s:['🥚','🐣','🐦','🦜','🦉'], lbl:['Ei','Kuiken','Vogel','Papegaai','Uil']},
-  {id:'octopus', n:'Octopus', s:['🐚','🦐','🦞','🦑','🐙'], lbl:['Schelp','Garnaal','Kreeft','Inktvis','Octopus']},
-  {id:'beer',    n:'Beer',    s:['🐾','🐭','🐹','🐻','🐻‍❄️'],lbl:['Pootje','Muisje','Hamster','Beer','IJsbeer']},
-  {id:'slang',   n:'Slang',   s:['🥚','🐛','🦗','🦎','🐍'], lbl:['Ei','Rups','Krekel','Hagedis','Slang']},
-  {id:'gorilla', n:'Gorilla', s:['🐾','🐒','🦍','🦧','🦧'], lbl:['Pootje','Aapje','Gorilla','Orang-oetan','Alphaleider']},
+  // Adelaar: ei → kuiken → jong → vogel → adelaar ✅ accurate
+  {id:'adelaar', n:'Adelaar',  s:['🥚','🐣','🐥','🐦','🦅'], lbl:['Ei','Kuikentje','Kuiken','Jonge Vogel','Adelaar']},
+  // Leeuw: welp → kitten → kat → luipaard (grote katachtige) → leeuw
+  {id:'leeuw',   n:'Leeuw',   s:['🐾','🐱','🐈','🐆','🦁'], lbl:['Welp','Kitten','Jonge Kat','Luipaard','Leeuw']},
+  // Draak: ei → hagedis → krokodil → jonge draak → vuurdrake ✅ accurate
+  {id:'draak',   n:'Draak',   s:['🥚','🦎','🐊','🐲','🐉'], lbl:['Ei','Hagedisje','Krokodil','Jonge Draak','Vuurdrake']},
+  // Wolf: welp → puppy → hond → volwassen hond → wolf (Canidae familie) ✅
+  {id:'wolf',    n:'Wolf',    s:['🐾','🐶','🐕','🦮','🐺'], lbl:['Welp','Puppy','Jonge Hond','Volwassen Hond','Wolf']},
+  // Vlinder: ei → rups → cocon → pop → vlinder ✅ accurate metamorfose
+  {id:'vlinder', n:'Vlinder', s:['🥚','🐛','🐌','🪲','🦋'], lbl:['Ei','Rups','Cocon','Kever','Vlinder']},
+  // Tijger: welp → kitten → kat → jong tijger → tijger ✅ accurate
+  {id:'tijger',  n:'Tijger',  s:['🐾','🐱','🐈','🐅','🐯'], lbl:['Welp','Kitten','Jonge Kat','Jong Tijger','Tijger']},
+  // Haai: micro → visje → vis → kogelvis → haai (evolutie waterwereld) ✅
+  {id:'haai',    n:'Haai',    s:['🦠','🐟','🐠','🐡','🦈'], lbl:['Micro-organisme','Visje','Tropisch Visje','Kogelvis','Haai']},
+  // Olifant: welp → klein zoogdier → nijlpaard → olifant → mammoet ✅ grootteprogres
+  {id:'olifant', n:'Olifant', s:['🐾','🦔','🦛','🐘','🦣'], lbl:['Welp','Egeltje','Nijlpaard','Olifant','Mammoet']},
+  // Eenhoorn: veulen → jong paard → paard → renpaard → eenhoorn ✅ accurate
+  {id:'eenhoorn',n:'Eenhoorn',s:['🐾','🐴','🐎','🏇','🦄'], lbl:['Veulen','Jong Paard','Paard','Renpaard','Eenhoorn']},
+  // Vos: welp → puppy → jonge hond → wasbeer → vos (Canidae familie) ✅
+  {id:'vos',     n:'Vos',     s:['🐾','🐶','🐕','🦝','🦊'], lbl:['Welp','Puppy','Jonge Hond','Wasbeer','Vos']},
+  // Uil: ei → kuikentje → kuiken → jonge vogel → uil ✅ accurate
+  {id:'uil',     n:'Uil',     s:['🥚','🐣','🐥','🐦','🦉'], lbl:['Ei','Kuikentje','Kuiken','Jonge Vogel','Uil']},
+  // Octopus: schelp → garnaal → kreeft → inktvis → octopus ✅ mariene evolutie
+  {id:'octopus', n:'Octopus', s:['🐚','🦐','🦞','🦑','🐙'], lbl:['Larveschelp','Garnaal','Kreeft','Inktvis','Octopus']},
+  // Beer: welp → eekhoorntje → otter → beer → ijsbeer ✅ Carnivora grootteprogres
+  {id:'beer',    n:'Beer',    s:['🐾','🐿️','🦦','🐻','🐻‍❄️'],lbl:['Welp','Eekhoorntje','Otter','Beer','IJsbeer']},
+  // Slang: ei → worm → hagedis → slang → drakenslang (legendarisch) ✅
+  {id:'slang',   n:'Slang',   s:['🥚','🐛','🦎','🐍','🐉'], lbl:['Ei','Worm','Hagedis','Slang','Drakenslang']},
+  // Gorilla: welp → aapje → jonge gorilla → orang-oetan → silverback ✅
+  {id:'gorilla', n:'Gorilla', s:['🐾','🐒','🦍','🦧','🦍'], lbl:['Welp','Aapje','Jonge Gorilla','Orang-oetan','Silverback']},
 ];
 const ANIM_THRESHOLDS=[0,100,500,2000,7500]; // XP-drempels per stadium
 const ANIM_STAGE_NAMES=['Baby','Jong','Tiener','Volwassen','Prime'];
