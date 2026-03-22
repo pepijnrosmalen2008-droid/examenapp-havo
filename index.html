@@ -660,6 +660,11 @@ html.dark .calc-btn{background:#2e3550}
 .calc-result-icon{font-size:52px;margin-bottom:12px}
 .calc-detail{text-align:left;margin-top:14px;font-size:13px;color:var(--mu);line-height:2.1}
 .calc-detail .ck{color:#22C55E}.calc-detail .cx{color:#EF4444}
+.calc-divider{border:none;border-top:1px solid var(--bo);margin:20px 0}
+.calc-prefill-note{font-size:11px;color:#22C55E;background:rgba(34,197,94,.1);border-radius:8px;padding:6px 10px;margin-bottom:10px;font-weight:600}
+.calc-result-bar{display:flex;align-items:center;gap:10px;margin-top:10px}
+.calc-result-bar-track{flex:1;height:8px;border-radius:4px;background:var(--bo);overflow:hidden}
+.calc-result-bar-fill{height:100%;border-radius:4px;transition:width .5s}
 
 /* ── FLASHCARD MODE ────────────────────────────── */
 .fc-card{perspective:600px;width:100%;max-width:420px;margin:0 auto 24px;cursor:pointer;height:240px}
@@ -1735,7 +1740,8 @@ html.dark .auth-ok{background:#0F2D1C;border-color:#166534;color:#86EFAC}
   </div>
 
   <div id="calc-eind" class="calc-panel">
-    <p style="font-size:12px;color:var(--mu);margin-bottom:14px">Vul je SE-cijfer en CE-cijfer in om je eindcijfer te berekenen.</p>
+    <p style="font-size:12px;color:var(--mu);margin-bottom:14px">Vul je SE-cijfer en CE-cijfer in om je eindcijfer te berekenen — of kies een vak om je opgeslagen SE automatisch in te vullen.</p>
+    <div class="calc-row"><span class="calc-label">Kies vak</span><select id="eind-vak" onchange="prefillEindFromSaved(this.value)" style="padding:7px 10px;border:1px solid var(--bo);border-radius:8px;font-size:13px;background:var(--s);color:var(--dk);font-family:'Nunito',sans-serif;flex:1"><option value="">— handmatig invullen —</option></select></div>
     <div class="calc-row"><span class="calc-label">SE-cijfer</span><input type="number" id="eind-se" class="calc-input" min="1" max="10" step="0.1" placeholder="6.5"></div>
     <div class="calc-row"><span class="calc-label">CE-cijfer</span><input type="number" id="eind-ce" class="calc-input" min="1" max="10" step="0.1" placeholder="7.0"></div>
     <button class="calc-btn" onclick="berekenEind()">Bereken eindcijfer →</button>
@@ -1749,12 +1755,20 @@ html.dark .auth-ok{background:#0F2D1C;border-color:#166534;color:#86EFAC}
     <div class="calc-row"><span class="calc-label">N-term</span><input type="number" id="nt-n" class="calc-input" min="0" max="5" step="0.1" placeholder="1.0"></div>
     <button class="calc-btn" onclick="berekenNterm()">Bereken CE-cijfer →</button>
     <div id="nterm-result"></div>
+    <div class="calc-divider"></div>
+    <p style="font-size:13px;font-weight:700;margin-bottom:10px">🎯 Bereken benodigde examen-score</p>
+    <p style="font-size:12px;color:var(--mu);margin-bottom:12px">Welke score moet je halen op het examen om een bepaald eindcijfer te halen?</p>
+    <div class="calc-row"><span class="calc-label">Mijn vak (SE)</span><select id="nt-vak" onchange="prefillNtermSE(this.value)" style="padding:7px 10px;border:1px solid var(--bo);border-radius:8px;font-size:13px;background:var(--s);color:var(--dk);font-family:'Nunito',sans-serif;flex:1"><option value="">— kies vak —</option></select></div>
+    <div class="calc-row"><span class="calc-label">Mijn SE-cijfer</span><input type="number" id="nt-se" class="calc-input" min="1" max="10" step="0.1" placeholder="6.5"></div>
+    <div class="calc-row"><span class="calc-label">Gewenst eindcijfer</span><input type="number" id="nt-doel" class="calc-input" min="1" max="10" step="0.5" value="6" placeholder="6"></div>
+    <button class="calc-btn" onclick="berekenBenodigdScore()">Bereken benodigde score →</button>
+    <div id="nterm-benodig-result"></div>
   </div>
 
   <div id="calc-herk" class="calc-panel">
-    <p style="font-size:12px;color:var(--mu);margin-bottom:14px">Simuleer een herkansing: welk cijfer moet je halen om te slagen?</p>
-    <p style="font-size:11px;color:var(--mu);margin-bottom:14px">Vul eerst je cijfers in bij "Ga ik slagen?", dan kun je hier een herkansing simuleren.</p>
-    <div class="calc-row"><span class="calc-label">Herkans welk vak?</span><select id="herk-vak" style="padding:7px 10px;border:1px solid var(--bo);border-radius:8px;font-size:13px;background:var(--s);color:var(--dk);font-family:'Nunito',sans-serif"></select></div>
+    <p style="font-size:12px;color:var(--mu);margin-bottom:14px">Simuleer een herkansing: vul een nieuw CE-cijfer in en zie direct wat je eindcijfer wordt.</p>
+    <div class="calc-row"><span class="calc-label">Herkans welk vak?</span><select id="herk-vak" onchange="buildHerkSERow(this.value)" style="padding:7px 10px;border:1px solid var(--bo);border-radius:8px;font-size:13px;background:var(--s);color:var(--dk);font-family:'Nunito',sans-serif"></select></div>
+    <div id="herk-se-row"></div>
     <div class="calc-row"><span class="calc-label">Nieuw CE-cijfer</span><input type="number" id="herk-ce" class="calc-input" min="1" max="10" step="0.1" placeholder="7.0"></div>
     <button class="calc-btn" onclick="berekenHerk()">Simuleer herkansing →</button>
     <div id="herk-result"></div>
@@ -4050,14 +4064,12 @@ function openProfiel(){
 }
 
 function prefillCalcFromSaved(){
-  const saved=getSavedCijfers();
-  getVK().forEach(v=>{
-    const inp=document.getElementById('se-'+v.id)||document.getElementById('calc-se-'+v.id);
-    if(inp&&saved[v.id]!==undefined){
-      inp.value=saved[v.id];
-      inp.dispatchEvent(new Event('input'));
-    }
-  });
+  buildSlaagInputs();
+  buildEindVakSelect();
+  buildNtermVakSelect();
+  buildHerkSelect();
+  const firstId=document.getElementById('herk-vak')?.value;
+  if(firstId)buildHerkSERow(firstId);
 }
 
 // ═══════ OPEN VAK ═══════
@@ -5141,14 +5153,49 @@ function switchCalc(id){
   document.getElementById('calc-'+id).classList.add('active');
   event.target.classList.add('active');
   if(id==='slaag')buildSlaagInputs();
-  if(id==='herk')buildHerkSelect();
+  if(id==='eind'){buildEindVakSelect();}
+  if(id==='nterm'){buildNtermVakSelect();}
+  if(id==='herk'){buildHerkSelect();const firstId=document.getElementById('herk-vak')?.value;if(firstId)buildHerkSERow(firstId);}
 }
 function buildSlaagInputs(){
   const box=document.getElementById('slaag-inputs');
-  box.innerHTML=`<div style="font-size:11px;color:var(--mu);margin-bottom:8px;display:flex;gap:10px"><span style="flex:1">Vak</span><span style="width:70px;text-align:center">SE</span><span style="width:70px;text-align:center">CE</span></div>`;
+  const saved=getSavedCijfers();
+  const hasSaved=Object.keys(saved).length>0;
+  box.innerHTML=hasSaved?'<div class="calc-prefill-note">✓ SE-cijfers automatisch ingevuld vanuit je opgeslagen cijfers</div>':'';
+  box.innerHTML+=`<div style="font-size:11px;color:var(--mu);margin-bottom:8px;display:flex;gap:10px"><span style="flex:1">Vak</span><span style="width:70px;text-align:center">SE</span><span style="width:70px;text-align:center">CE</span></div>`;
   getVK().forEach(v=>{
-    box.innerHTML+=`<div class="calc-row"><span class="calc-label">${v.naam} <span style="color:var(--mu);font-size:10px">(${v.code})</span></span><input type="number" class="calc-input slaag-se" data-vak="${v.code}" min="1" max="10" step="0.1" placeholder="—"><input type="number" class="calc-input slaag-ce" data-vak="${v.code}" min="1" max="10" step="0.1" placeholder="—"></div>`;
+    const seVal=saved[v.id]!=null?saved[v.id]:'';
+    box.innerHTML+=`<div class="calc-row"><span class="calc-label">${v.naam} <span style="color:var(--mu);font-size:10px">(${v.code})</span></span><input type="number" class="calc-input slaag-se" data-vak="${v.code}" min="1" max="10" step="0.1" placeholder="—" value="${seVal}"><input type="number" class="calc-input slaag-ce" data-vak="${v.code}" min="1" max="10" step="0.1" placeholder="—"></div>`;
   });
+}
+function buildEindVakSelect(){
+  const sel=document.getElementById('eind-vak');
+  if(!sel||sel.options.length>1)return;
+  getVK().forEach(v=>{sel.innerHTML+=`<option value="${v.id}">${v.naam}</option>`;});
+}
+function buildNtermVakSelect(){
+  const sel=document.getElementById('nt-vak');
+  if(!sel||sel.options.length>1)return;
+  getVK().forEach(v=>{sel.innerHTML+=`<option value="${v.id}">${v.naam}</option>`;});
+}
+function prefillEindFromSaved(vakId){
+  if(!vakId)return;
+  const saved=getSavedCijfers();
+  const inp=document.getElementById('eind-se');
+  if(inp&&saved[vakId]!=null){inp.value=saved[vakId];}
+}
+function prefillNtermSE(vakId){
+  if(!vakId)return;
+  const saved=getSavedCijfers();
+  const inp=document.getElementById('nt-se');
+  if(inp&&saved[vakId]!=null){inp.value=saved[vakId];}
+}
+function buildHerkSERow(vakId){
+  const row=document.getElementById('herk-se-row');
+  if(!row)return;
+  const saved=getSavedCijfers();
+  const cij=vakId&&saved[vakId]!=null?saved[vakId]:null;
+  row.innerHTML=`<div class="calc-row"><span class="calc-label">SE-cijfer</span><input type="number" id="herk-se" class="calc-input" min="1" max="10" step="0.1" placeholder="—" value="${cij!=null?cij:''}">${cij!=null?`<span style="font-size:11px;color:#22C55E;font-weight:600;white-space:nowrap">✓ opgeslagen</span>`:''}</div>`;
 }
 function berekenSlaag(){
   const seInputs=document.querySelectorAll('.slaag-se');
@@ -5237,6 +5284,37 @@ function berekenNterm(){
     <p style="margin-top:8px;font-size:11px">Formule: C = 9 × (S/L) + N</p>
   </div>`;
 }
+function berekenBenodigdScore(){
+  const se=parseFloat(document.getElementById('nt-se').value);
+  const doel=parseFloat(document.getElementById('nt-doel').value||'6');
+  const maxScore=parseFloat(document.getElementById('nt-max').value);
+  const nterm=parseFloat(document.getElementById('nt-n').value);
+  const res=document.getElementById('nterm-benodig-result');
+  if(isNaN(se)){res.innerHTML='<div class="calc-result"><p>Vul je SE-cijfer in (of kies een vak).</p></div>';return;}
+  if(isNaN(doel)||isNaN(maxScore)||isNaN(nterm)){res.innerHTML='<div class="calc-result"><p>Vul ook maximale score en N-term in (boven).</p></div>';return;}
+  // CE nodig = 2*doel - se (voor eindcijfer = round((se+ce)/2) >= doel)
+  const ceNodig=2*doel-se;
+  if(ceNodig<=1){
+    res.innerHTML=`<div class="calc-result"><div class="calc-result-icon">🎯</div><h3 class="calc-pass">Al op koers!</h3><p>Met SE ${se} heb je CE ≥ 1 nodig voor een ${doel}. Je bent al goed op koers!</p></div>`;
+    return;
+  }
+  if(ceNodig>10){
+    res.innerHTML=`<div class="calc-result"><div class="calc-result-icon">😔</div><h3 class="calc-fail">Helaas niet haalbaar</h3><p>Met SE ${se} is een eindcijfer van ${doel} wiskundig niet meer haalbaar (vereiste CE = ${ceNodig.toFixed(1)} > 10).</p></div>`;
+    return;
+  }
+  // score nodig = (ceNodig - nterm) * max / 9
+  const scoreNodig=Math.ceil(((ceNodig-nterm)*maxScore)/9);
+  const scoreNodigClamp=Math.max(0,Math.min(maxScore,scoreNodig));
+  const pct=Math.round((scoreNodigClamp/maxScore)*100);
+  const barClr=pct<=60?'#22C55E':pct<=80?'#F59E0B':'#EF4444';
+  res.innerHTML=`<div class="calc-result">
+    <div class="calc-result-icon">🎯</div>
+    <h3>${scoreNodigClamp} / ${maxScore} punten</h3>
+    <p>Voor eindcijfer <strong>${doel}</strong> met SE <strong>${se}</strong> heb je CE ≥ <strong>${ceNodig.toFixed(1).replace('.',',')}</strong> nodig.</p>
+    <p style="margin-top:6px">Op het examen: minimaal <strong>${scoreNodigClamp} van de ${maxScore} punten</strong> (${pct}%).</p>
+    <div class="calc-result-bar" style="margin-top:10px"><span style="font-size:11px;color:var(--mu);min-width:16px">0</span><div class="calc-result-bar-track"><div class="calc-result-bar-fill" style="width:${pct}%;background:${barClr}"></div></div><span style="font-size:11px;color:var(--mu)">${maxScore}</span></div>
+  </div>`;
+}
 function buildHerkSelect(){
   const sel=document.getElementById('herk-vak');
   if(sel.options.length>1)return;
@@ -5246,12 +5324,25 @@ function buildHerkSelect(){
 function berekenHerk(){
   const vakId=document.getElementById('herk-vak').value;
   const nieuwCe=parseFloat(document.getElementById('herk-ce').value);
-  if(isNaN(nieuwCe)){document.getElementById('herk-result').innerHTML='<div class="calc-result"><p>Vul een nieuw CE-cijfer in.</p></div>';return;}
+  const seInp=document.getElementById('herk-se');
+  const se=seInp?parseFloat(seInp.value):NaN;
+  const res=document.getElementById('herk-result');
+  if(isNaN(nieuwCe)){res.innerHTML='<div class="calc-result"><p>Vul een nieuw CE-cijfer in.</p></div>';return;}
+  if(isNaN(se)){res.innerHTML='<div class="calc-result"><p>Vul je SE-cijfer in.</p></div>';return;}
   const vak=getVK().find(v=>v.id===vakId);
-  document.getElementById('herk-result').innerHTML=`<div class="calc-result">
-    <div class="calc-result-icon">🔄</div>
-    <h3>Herkansing ${vak.naam}</h3>
-    <p>Met een nieuw CE-cijfer van <strong>${nieuwCe}</strong> voor ${vak.naam}:<br>Vul je huidige SE- en CE-cijfers in bij "Ga ik slagen?" om het effect te zien.</p>
+  const gem=(se+nieuwCe)/2;
+  const eind=Math.round(gem);
+  const kleur=eind>=6?'calc-pass':'calc-fail';
+  const icon=eind>=6?'🎉':'😔';
+  const ceVoldoende=Math.round(Math.max(1,Math.min(10,11-se))*10)/10;
+  const barPct=Math.min(100,Math.round((eind/10)*100));
+  const barClr=eind>=6?'#22C55E':eind>=5?'#F59E0B':'#EF4444';
+  res.innerHTML=`<div class="calc-result">
+    <div class="calc-result-icon">${icon}</div>
+    <h3 class="${kleur}">${eind} — ${eind>=6?'voldoende ✓':'onvoldoende ✗'}</h3>
+    <p>SE: <strong>${se}</strong> + nieuw CE: <strong>${nieuwCe}</strong> = gem ${gem.toFixed(2)} → afgerond <strong>${eind}</strong></p>
+    <div class="calc-result-bar"><span style="font-size:11px;color:var(--mu);min-width:16px">1</span><div class="calc-result-bar-track"><div class="calc-result-bar-fill" style="width:${barPct}%;background:${barClr}"></div></div><span style="font-size:11px;color:var(--mu)">10</span></div>
+    <p style="margin-top:10px;font-size:12px;color:var(--mu)">Voor een 6 als eindcijfer heb je CE ≥ <strong>${ceVoldoende.toFixed(1).replace('.',',')}</strong> nodig bij SE ${se}.</p>
   </div>`;
 }
 
