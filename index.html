@@ -741,6 +741,76 @@ html.dark .qb{background:#2e3550}
   .wlc-foot-dates{flex-direction:column;gap:6px;align-items:center}
 }
 
+/* ── WELCOME EYE-CATCHER EXTRAS ────────────────── */
+@property --angle{syntax:'<angle>';inherits:false;initial-value:0deg}
+@keyframes spinAngle{to{--angle:360deg}}
+@keyframes orbDrift{0%,100%{transform:translateY(0) scale(1)}50%{transform:translateY(-32px) scale(1.06)}}
+@keyframes orbDrift2{0%,100%{transform:translateY(0) scale(1)}50%{transform:translateY(22px) scale(.95)}}
+@keyframes fadeUpIn{from{opacity:0;transform:translateY(30px)}to{opacity:1;transform:translateY(0)}}
+@keyframes shimmerSweep{0%{left:-100%}100%{left:220%}}
+@keyframes statCountUp{from{opacity:0;transform:scale(.7)}to{opacity:1;transform:scale(1)}}
+
+/* Dot-grid overlay */
+.wlc-dot-bg{position:absolute;inset:0;pointer-events:none;z-index:0;
+  background-image:radial-gradient(circle,rgba(255,255,255,.12) 1px,transparent 1px);
+  background-size:30px 30px;
+  -webkit-mask-image:radial-gradient(ellipse 85% 75% at 50% 40%,black 30%,transparent 100%);
+  mask-image:radial-gradient(ellipse 85% 75% at 50% 40%,black 30%,transparent 100%);
+  opacity:.3}
+
+/* Orb float */
+.wlc-orb1{animation:orbDrift 10s ease-in-out infinite}
+.wlc-orb2{animation:orbDrift2 13s ease-in-out infinite}
+
+/* Stats row */
+.wlc-stats{display:flex;justify-content:center;margin:32px auto 0;max-width:480px;position:relative;z-index:1}
+.wlc-stat{flex:1;text-align:center;padding:12px 0;border-right:1px solid rgba(255,255,255,.09)}
+.wlc-stat:last-child{border-right:none}
+.wlc-stat-n{font-family:var(--font-head);font-size:30px;font-weight:900;letter-spacing:-1.5px;line-height:1;
+  background:linear-gradient(135deg,#fff 50%,rgba(255,255,255,.4));
+  -webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+.wlc-stat-l{font-size:10px;color:rgba(255,255,255,.25);font-weight:700;letter-spacing:.8px;text-transform:uppercase;margin-top:5px}
+
+/* Spinning gradient border wrapper */
+.wlc-card-wrap{position:relative;border-radius:26px;padding:1.5px;transition:padding .28s}
+.wlc-card-wrap::before{
+  content:'';position:absolute;inset:0;border-radius:26px;
+  background:conic-gradient(from var(--angle),transparent 0%,transparent 55%,rgba(232,92,13,.9) 75%,rgba(249,168,37,.9) 82%,rgba(232,92,13,.9) 88%,transparent 100%);
+  -webkit-mask:linear-gradient(#fff 0 0) content-box,linear-gradient(#fff 0 0);
+  -webkit-mask-composite:xor;mask-composite:exclude;
+  animation:spinAngle 3.5s linear infinite;opacity:0;transition:opacity .35s}
+.wlc-cvwo-wrap::before{
+  background:conic-gradient(from var(--angle),transparent 0%,transparent 55%,rgba(139,92,246,.9) 75%,rgba(167,139,250,1) 82%,rgba(139,92,246,.9) 88%,transparent 100%)}
+.wlc-card-wrap:hover::before,.wlc-card-wrap:has(.lc-active)::before{opacity:1}
+
+/* Shimmer sweep on card CTA */
+.wlc-card-btn{position:relative;overflow:visible}
+.wlc-card-btn-inner{position:relative;overflow:hidden;display:inline-flex;align-items:center;gap:8px}
+.wlc-card-btn-inner::after{content:'';position:absolute;top:-30%;left:-100%;width:45%;height:160%;
+  background:linear-gradient(105deg,transparent 35%,rgba(255,255,255,.28) 50%,transparent 65%);
+  pointer-events:none}
+.wlc-card:hover .wlc-card-btn-inner::after{animation:shimmerSweep .55s ease forwards .05s}
+
+/* Entrance stagger animations */
+.wlc-eyebrow{animation:fadeUpIn .65s cubic-bezier(.22,1,.36,1) both;animation-delay:.08s}
+.wlc-h1{animation:fadeUpIn .75s cubic-bezier(.22,1,.36,1) both;animation-delay:.22s}
+.wlc-sub{animation:fadeUpIn .75s cubic-bezier(.22,1,.36,1) both;animation-delay:.36s}
+.wlc-feats{animation:fadeUpIn .75s cubic-bezier(.22,1,.36,1) both;animation-delay:.48s}
+.wlc-stats{animation:fadeUpIn .75s cubic-bezier(.22,1,.36,1) both;animation-delay:.58s}
+.wlc-pick-lbl{animation:fadeUpIn .7s cubic-bezier(.22,1,.36,1) both;animation-delay:.66s}
+.wlc-card-wrap:first-child{animation:fadeUpIn .8s cubic-bezier(.22,1,.36,1) both;animation-delay:.74s}
+.wlc-card-wrap:last-child{animation:fadeUpIn .8s cubic-bezier(.22,1,.36,1) both;animation-delay:.84s}
+
+/* Pulse ring on the orb dot in eyebrow */
+.wlc-dot{position:relative}
+.wlc-dot::after{content:'';position:absolute;inset:-4px;border-radius:50%;border:2px solid rgba(232,92,13,.5);animation:pulse 2s ease-in-out infinite}
+
+/* Card lvl number glow pulse */
+.wlc-chavo .wlc-card-lvl{animation:glowPulseO 3s ease-in-out infinite}
+.wlc-cvwo .wlc-card-lvl{animation:glowPulseV 3s ease-in-out infinite}
+@keyframes glowPulseO{0%,100%{text-shadow:0 0 28px rgba(232,92,13,.4)}50%{text-shadow:0 0 56px rgba(232,92,13,.8),0 0 90px rgba(232,92,13,.3)}}
+@keyframes glowPulseV{0%,100%{text-shadow:0 0 28px rgba(167,139,250,.4)}50%{text-shadow:0 0 56px rgba(167,139,250,.8),0 0 90px rgba(139,92,246,.3)}}
+
 /* ── SCHEDULE SCREEN ───────────────────────────── */
 .schedule-list{display:flex;flex-direction:column;gap:10px;margin-bottom:40px}
 .sch-card{display:flex;align-items:center;gap:16px;background:var(--s);border:1px solid var(--bo);border-radius:16px;padding:18px 22px;transition:all .2s}
@@ -1440,6 +1510,7 @@ html.dark .auth-ok{background:#0F2D1C;border-color:#166534;color:#86EFAC}
 
 <!-- HERO -->
 <div class="wlc-hero">
+  <div class="wlc-dot-bg"></div>
   <div class="wlc-orb wlc-orb1"></div>
   <div class="wlc-orb wlc-orb2"></div>
   <div class="wlc-orb wlc-orb3"></div>
@@ -1453,6 +1524,11 @@ html.dark .auth-ok{background:#0F2D1C;border-color:#166534;color:#86EFAC}
     <span class="wlc-feat"><span class="wlc-feat-chk">✓</span> Offline</span>
     <span class="wlc-feat"><span class="wlc-feat-chk">✓</span> Examenrooster</span>
   </div>
+  <div class="wlc-stats">
+    <div class="wlc-stat"><div class="wlc-stat-n">26</div><div class="wlc-stat-l">Vakken</div></div>
+    <div class="wlc-stat"><div class="wlc-stat-n">500+</div><div class="wlc-stat-l">Vragen</div></div>
+    <div class="wlc-stat"><div class="wlc-stat-n">100%</div><div class="wlc-stat-l">Gratis</div></div>
+  </div>
 </div>
 
 <!-- LEVEL PICKER -->
@@ -1461,6 +1537,7 @@ html.dark .auth-ok{background:#0F2D1C;border-color:#166534;color:#86EFAC}
   <div class="wlc-cards">
 
     <!-- HAVO -->
+    <div class="wlc-card-wrap">
     <div class="wlc-card wlc-chavo level-card lc-havo" onclick="chooseLevel('havo')">
       <div class="wlc-card-glow"></div>
       <div class="wlc-card-hd">
@@ -1473,10 +1550,12 @@ html.dark .auth-ok{background:#0F2D1C;border-color:#166534;color:#86EFAC}
         <li>Cijfers importeren &amp; berekenen</li>
         <li>Streak, XP &amp; leaderboard</li>
       </ul>
-      <div class="wlc-card-btn">HAVO starten <span>→</span></div>
+      <div class="wlc-card-btn"><span class="wlc-card-btn-inner">HAVO starten <span>→</span></span></div>
+    </div>
     </div>
 
     <!-- VWO -->
+    <div class="wlc-card-wrap wlc-cvwo-wrap">
     <div class="wlc-card wlc-cvwo level-card lc-vwo" onclick="chooseLevel('vwo')">
       <div class="wlc-card-glow"></div>
       <div class="wlc-card-hd">
@@ -1489,7 +1568,8 @@ html.dark .auth-ok{background:#0F2D1C;border-color:#166534;color:#86EFAC}
         <li>Cijfers importeren &amp; berekenen</li>
         <li>Streak, XP &amp; leaderboard</li>
       </ul>
-      <div class="wlc-card-btn">VWO starten <span>→</span></div>
+      <div class="wlc-card-btn"><span class="wlc-card-btn-inner">VWO starten <span>→</span></span></div>
+    </div>
     </div>
 
   </div>
