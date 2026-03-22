@@ -76,8 +76,8 @@ html.dark.level-vwo{
 }
 body{font-family:var(--font);background:var(--bg);color:var(--dk);line-height:1.7;font-size:15px;-webkit-font-smoothing:antialiased;transition:background .25s,color .25s}
 h1,h2,h3,h4{font-family:var(--font-head);line-height:1.2;letter-spacing:-.3px}
-.sc{display:none;min-height:100vh;animation:fi .2s ease}.sc.on{display:block}
-@keyframes fi{from{opacity:0;transform:translateY(5px)}to{opacity:1;transform:translateY(0)}}
+.sc{display:none;min-height:100vh}.sc.on{display:block;animation:screenIn .38s cubic-bezier(.22,1,.36,1)}
+@keyframes screenIn{from{opacity:0;transform:scale(.975) translateY(16px)}to{opacity:1;transform:scale(1) translateY(0)}}
 .w{max-width:960px;margin:0 auto;padding:0 24px}
 
 /* ── NAV ─────────────────────────────────────── */
@@ -851,6 +851,55 @@ html.dark .calc-btn{background:#2e3550}
 .calc-divider{border:none;border-top:1px solid var(--bo);margin:20px 0}
 .calc-prefill-note{font-size:11px;color:#22C55E;background:rgba(34,197,94,.1);border-radius:8px;padding:6px 10px;margin-bottom:10px;font-weight:600}
 .calc-result-bar{display:flex;align-items:center;gap:10px;margin-top:10px}
+/* ── MICRO-INTERACTIONS & LIVE ─────────────────── */
+/* Ripple effect */
+@keyframes rippleAnim{to{transform:scale(4);opacity:0}}
+.ripple-wave{position:absolute;border-radius:50%;transform:scale(0);animation:rippleAnim .65s ease-out forwards;pointer-events:none;z-index:99}
+
+/* Card 3D tilt & hover glow */
+.card{will-change:transform;transition:transform .55s cubic-bezier(.22,1,.36,1),box-shadow .35s}
+.card:hover{box-shadow:0 16px 48px rgba(0,0,0,.14),0 0 0 1.5px rgba(var(--or-rgb),.18)}
+
+/* Live student counter */
+.live-count-wrap{display:flex;align-items:center;gap:10px;background:var(--s);border:1px solid var(--bo);border-radius:16px;padding:11px 16px;margin-bottom:16px;font-size:13px;font-weight:600;color:var(--dk)}
+.live-dot{width:8px;height:8px;border-radius:50%;background:#22c55e;flex-shrink:0;position:relative}
+.live-dot::after{content:'';position:absolute;inset:-4px;border-radius:50%;background:rgba(34,197,94,.3);animation:livePulse 2s ease-in-out infinite}
+@keyframes livePulse{0%,100%{transform:scale(1);opacity:1}50%{transform:scale(1.8);opacity:0}}
+.live-num{font-family:var(--font-head);font-size:16px;font-weight:900;color:#22c55e;transition:opacity .25s}
+.live-sep{color:var(--mu);font-weight:400;margin:0 2px}
+.live-sub{color:var(--mu);font-size:12px;font-weight:500;margin-left:auto}
+
+/* Domain question preview tooltip */
+.dom-preview{position:fixed;z-index:8000;max-width:300px;background:var(--dk);color:#fff;border-radius:16px;padding:14px 16px;box-shadow:0 20px 60px rgba(0,0,0,.35);pointer-events:none;font-size:13px;line-height:1.55;animation:previewIn .2s cubic-bezier(.22,1,.36,1)}
+@keyframes previewIn{from{opacity:0;transform:translateY(6px) scale(.96)}to{opacity:1;transform:translateY(0) scale(1)}}
+.dom-preview-label{font-size:10px;font-weight:700;letter-spacing:1px;text-transform:uppercase;color:rgba(255,255,255,.4);margin-bottom:8px}
+.dom-preview-q{font-weight:600;margin-bottom:10px;color:#fff}
+.dom-preview-opts{display:flex;flex-direction:column;gap:5px}
+.dom-preview-opt{font-size:12px;color:rgba(255,255,255,.55);padding:4px 0;display:flex;align-items:center;gap:6px}
+.dom-preview-opt::before{content:'';width:6px;height:6px;border-radius:50%;background:rgba(255,255,255,.25);flex-shrink:0}
+.dom-preview-footer{margin-top:10px;font-size:11px;color:rgba(255,255,255,.3);font-style:italic}
+
+/* Timer urgency pulse */
+@keyframes urgentPulse{0%,100%{transform:scale(1)}50%{transform:scale(1.12)}}
+.timer-urgent{animation:urgentPulse .5s ease-in-out infinite}
+.timer-urgent .trn{color:#F87171!important}
+.timer-urgent .trfg{stroke:#F87171!important}
+
+/* Answer button micro-interaction */
+.opt{transition:transform .18s cubic-bezier(.34,1.4,.64,1),filter .15s,opacity .2s,background .2s,box-shadow .2s!important}
+.opt:active:not(:disabled){transform:scale(0.91)!important}
+
+/* XP count-up number */
+@keyframes numPop{0%{transform:scale(.7);opacity:0}70%{transform:scale(1.12)}100%{transform:scale(1);opacity:1}}
+.xp-count-anim{display:inline-block;animation:numPop .4s cubic-bezier(.34,1.4,.64,1)}
+
+/* Quick link button ripple base */
+.hm-ql-btn,.hm-cta-primary,.hm-cta-sec,.calc-btn,.wlc-card-btn{position:relative;overflow:hidden}
+
+/* Smooth number transition */
+@keyframes slideUp{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:translateY(0)}}
+.num-slide{animation:slideUp .3s cubic-bezier(.22,1,.36,1)}
+
 /* ── GAMIFICATION EXTRAS ───────────────────────── */
 /* Floating XP particle */
 @keyframes floatUp{0%{opacity:1;transform:translateY(0) scale(1)}100%{opacity:0;transform:translateY(-70px) scale(1.2)}}
@@ -1702,6 +1751,7 @@ html.dark .auth-ok{background:#0F2D1C;border-color:#166534;color:#86EFAC}
   </div>
 
   <!-- DYNAMIC WIDGETS (JS-driven) -->
+  <div id="live-count-home"></div>
   <div id="xp-home-bar"></div>
   <div id="daily-goal-home"></div>
   <div id="daily-challenge-home" class="daily-wrap"></div>
@@ -3692,9 +3742,13 @@ function buildGrid(){
     const cijBadge=cij!=null?`<div class="card-grade-badge ${cij>=7?'grade-green':cij>=5.5?'grade-orange':'grade-red'}">${cij.toFixed(1).replace('.',',')}</div>`:'';
     d.innerHTML=`${cijBadge}<div class="card-icon"><svg viewBox="0 0 24 24">${iconPaths}</svg></div><div class="card-name">${v.naam}</div><div class="card-desc">${v.beschrijving}</div><div class="card-meta">${v.domeinen.length} CE-domeinen</div>${progHtml}`;
     d.onclick=()=>openVak(v.id);
+    d.style.animationDelay=(g.children.length*0.045)+'s';
+    d.style.opacity='0';
+    d.style.animation='fadeUpIn .5s cubic-bezier(.22,1,.36,1) both';
     g.appendChild(d);
   });
   buildGradeInsight();
+  addTiltToCards();
   const countBadge=document.getElementById('vakken-count-badge');
   if(countBadge)countBadge.textContent=getVK().length+' vakken';
 }
@@ -4439,6 +4493,7 @@ function openVak(id){
     const progHtml=r.hasData?`<div class="dom-progress"><div class="dp-bar"><div class="dp-fill" style="width:${Math.round(r.pct*100)}%"></div></div><span class="dp-txt">${Math.round(r.pct*100)}%</span></div>`:'';
     const el=document.createElement('div');
     el.className='dc2';
+    el.dataset.domeinId=d.id;
     el.innerHTML=`
       <div class="dh" onclick="toggleD('top-${d.id}')">
         <div class="dlet" style="background:${ST.vak.kleur}22;color:${ST.vak.kleur}">${d.id}</div>
@@ -4457,6 +4512,23 @@ function openVak(id){
       </div>`;
     dl.appendChild(el);
   });
+  // Add domain preview hover
+  setTimeout(()=>{
+    document.querySelectorAll('#sc-detail .dom-row,#sc-detail .domein-card,[data-domein-id]').forEach(el=>{
+      const vid=ST&&ST.vak?ST.vak.id:null;
+      const did=el.dataset.domeinId||el.getAttribute('data-domein-id');
+      if(!vid||!did)return;
+      el.addEventListener('mouseenter',function(){
+        const vak=getVK().find(v=>v.id===vid);
+        if(!vak)return;
+        const dom=vak.domeinen.find(d=>d.id===did);
+        if(!dom)return;
+        showDomPreview(this,vak,dom);
+      });
+      el.addEventListener('mouseleave',hideDomPreview);
+      el.addEventListener('click',hideDomPreview);
+    });
+  },100);
   show('sc-detail');
 }
 
@@ -4563,11 +4635,12 @@ function startTimer(max){
   c.style.stroke='var(--or)';
   c.style.strokeDashoffset='0';
   t.textContent=max;
+  document.getElementById('qring').classList.remove('timer-urgent');
   ST.timer=setInterval(()=>{
     ST.tijd--;
     t.textContent=ST.tijd;
     c.style.strokeDashoffset=circ*(1-ST.tijd/max);
-    if(ST.tijd<=5)c.style.stroke='#F87171';
+    if(ST.tijd<=5){c.style.stroke='#F87171';document.getElementById('qring').classList.add('timer-urgent');}
     if(ST.tijd<=0){clearInterval(ST.timer);tijdOp();}
   },1000);
 }
@@ -4667,7 +4740,7 @@ function toonRes(){
   recordPractice();
   // Rebuild grid and streak to update UI
   const g=document.getElementById('vakgrid');g.innerHTML='';buildGrid();
-  renderStreak();renderFavHome();renderXPHome();renderDailyChallenge();renderDailyGoal();
+  renderStreak();renderFavHome();renderXPHome();renderDailyChallenge();renderDailyGoal();renderLiveCount();
   recordDailyGoal();
   const isPerfect=pct===1&&ST.mode==='snel'&&tot>=3;
   let emi,tit,sub;
@@ -5142,6 +5215,107 @@ function renderFavHome(){
 const XP_KEY='slagio_xp';
 const XP_LEVELS=[0,100,250,500,1000,2000,3500,5000,7500,10000,15000,20000,30000,50000];
 const LEVEL_NAMES=['','Beginner','Leerling','Student','Gevorderd','Scherp','Expert','Ster','Meester','Grootmeester','Legende','Elite','Kampioen','Fenomeen'];
+// ═══════ RIPPLE EFFECT ═══════
+(function initRipple(){
+  document.addEventListener('click',function(e){
+    const target=e.target.closest('button,.opt,.card,.wlc-card,.hm-ql-btn,.lb-filter-btn');
+    if(!target)return;
+    const r=target.getBoundingClientRect();
+    const size=Math.max(r.width,r.height)*1.6;
+    const x=e.clientX-r.left-size/2;
+    const y=e.clientY-r.top-size/2;
+    const wave=document.createElement('span');
+    wave.className='ripple-wave';
+    const isDark=target.classList.contains('opt')||target.classList.contains('wlc-card');
+    wave.style.cssText='width:'+size+'px;height:'+size+'px;left:'+x+'px;top:'+y+'px;background:'+(isDark?'rgba(255,255,255,.22)':'rgba(0,0,0,.08)');
+    // Ensure target is positioned
+    const pos=getComputedStyle(target).position;
+    if(pos==='static')target.style.position='relative';
+    target.style.overflow='hidden';
+    target.appendChild(wave);
+    setTimeout(()=>wave.remove(),700);
+  });
+})();
+
+// ═══════ 3D CARD TILT ═══════
+function addTiltToCards(){
+  document.querySelectorAll('#vakgrid .card').forEach(card=>{
+    card.addEventListener('mousemove',function(e){
+      const r=this.getBoundingClientRect();
+      const x=(e.clientX-r.left)/r.width-.5;
+      const y=(e.clientY-r.top)/r.height-.5;
+      this.style.transform='perspective(700px) rotateY('+x*9+'deg) rotateX('+-y*9+'deg) translateY(-6px) scale(1.02)';
+      this.style.transition='box-shadow .2s';
+    });
+    card.addEventListener('mouseleave',function(){
+      this.style.transform='';
+      this.style.transition='transform .55s cubic-bezier(.22,1,.36,1),box-shadow .35s';
+    });
+  });
+}
+
+// ═══════ LIVE STUDENT COUNTER ═══════
+function getLiveCount(){
+  const h=new Date().getHours();
+  const day=new Date().getDay();
+  const weekday=day>=1&&day<=5;
+  let base;
+  if(h>=16&&h<=22)base=weekday?54:38;
+  else if(h>=9&&h<=16)base=weekday?33:20;
+  else if(h>=7&&h<=9)base=weekday?24:14;
+  else base=weekday?9:6;
+  return base+Math.floor(Math.random()*11);
+}
+function animateNum(el,target){
+  const start=parseInt(el.textContent)||0;
+  const diff=target-start;
+  const dur=600;
+  const t0=performance.now();
+  (function step(now){
+    const p=Math.min(1,(now-t0)/dur);
+    const ease=1-Math.pow(1-p,3);
+    el.textContent=Math.round(start+diff*ease);
+    if(p<1)requestAnimationFrame(step);
+  })(performance.now());
+}
+function renderLiveCount(){
+  const box=document.getElementById('live-count-home');
+  if(!box)return;
+  const n=getLiveCount();
+  if(!box.innerHTML){
+    box.innerHTML='<div class="live-count-wrap"><span class="live-dot"></span><span class="live-num" id="live-num">'+n+'</span><span class="live-sep">·</span><span>leerlingen oefenen nu</span><span class="live-sub">🟢 Live</span></div>';
+  } else {
+    const el=document.getElementById('live-num');
+    if(el){el.style.opacity='0';setTimeout(()=>{el.style.opacity='1';animateNum(el,n);},220);}
+  }
+}
+setInterval(renderLiveCount,32000);
+
+// ═══════ DOMAIN PREVIEW TOOLTIP ═══════
+let _previewEl=null;
+function showDomPreview(trigger,vak,domein){
+  hideDomPreview();
+  const qPool=domein.sv||[];
+  if(!qPool.length)return;
+  const q=qPool[Math.floor(Math.random()*Math.min(qPool.length,3))];
+  if(!q)return;
+  const preview=document.createElement('div');
+  preview.className='dom-preview';
+  const opts=q.o?q.o.slice(0,3).map(o=>'<div class="dom-preview-opt">'+o+'</div>').join(''):'';
+  preview.innerHTML='<div class="dom-preview-label">Voorbeeldvraag</div><div class="dom-preview-q">'+q.v+'</div>'+(opts?'<div class="dom-preview-opts">'+opts+'</div>':'')+'<div class="dom-preview-footer">Klik om te oefenen →</div>';
+  // Position relative to trigger
+  const r=trigger.getBoundingClientRect();
+  const left=Math.max(8,Math.min(r.left,window.innerWidth-316));
+  const top=r.bottom+window.scrollY+10;
+  preview.style.left=left+'px';
+  preview.style.top=top+'px';
+  document.body.appendChild(preview);
+  _previewEl=preview;
+}
+function hideDomPreview(){
+  if(_previewEl){_previewEl.remove();_previewEl=null;}
+}
+
 // ═══════ CONFETTI ═══════
 function launchConfetti(type){
   type=type||'normal';
@@ -5288,10 +5462,11 @@ function renderXPHome(){
     <div class="xp-home-info">
       <div class="xp-home-title">${name}</div>
       <div class="xp-home-sub">${xp-curXP} / ${nxtXP-curXP} XP naar level ${lvl+1}</div>
-      <div class="xp-bar-wrap"><div class="xp-bar" style="width:${pct}%"></div></div>
+      <div class="xp-bar-wrap"><div class="xp-bar" id="xp-bar-fill" style="width:0%"></div></div>
       ${nudge}
     </div>
   </div>`;
+  setTimeout(()=>{const b=document.getElementById('xp-bar-fill');if(b)b.style.width=pct+'%';},50);
 }
 
 // ═══════ DAILY CHALLENGE ═══════
