@@ -1632,6 +1632,22 @@ html.dark .auth-ok{background:#0F2D1C;border-color:#166534;color:#86EFAC}
 </div>
 </div>
 
+<!-- WACHTWOORD RESET -->
+<div id="sc-reset-pass" class="sc">
+<nav class="nav"><div class="nav-inner"><div class="logo"><div class="logo-dot"></div>Slagio</div></div></nav>
+<div class="auth-wrap">
+  <div class="auth-logo"><span class="logo-dot"></span><h1>Nieuw wachtwoord</h1></div>
+  <div class="auth-card">
+    <p style="font-size:14px;color:var(--mu);margin-bottom:18px;text-align:center">Kies een nieuw wachtwoord voor je account.</p>
+    <div class="auth-err" id="reset-err" style="display:none"></div>
+    <div class="auth-ok" id="reset-ok" style="display:none"></div>
+    <div class="auth-field"><label>Nieuw wachtwoord <span style="font-weight:400;text-transform:none">(minimaal 6 tekens)</span></label><input class="auth-input" id="reset-pass-input" type="password" placeholder="••••••••" autocomplete="new-password"></div>
+    <div class="auth-field"><label>Herhaal wachtwoord</label><input class="auth-input" id="reset-pass-confirm" type="password" placeholder="••••••••" autocomplete="new-password" onkeydown="if(event.key==='Enter')doResetPassword()"></div>
+    <button class="auth-btn" id="reset-pass-btn" onclick="doResetPassword()">Wachtwoord opslaan</button>
+  </div>
+</div>
+</div>
+
 <!-- PROFIEL -->
 <div id="sc-profiel" class="sc">
 <nav class="nav"><div class="nav-inner"><div class="logo" onclick="show('sc-home')"><div class="logo-dot"></div>Slagio</div><button class="bk" onclick="show('sc-home')">← Terug</button><button class="theme-btn" onclick="toggleDark()" title="Nachtmodus" style="margin-left:auto"><svg viewBox="0 0 24 24"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg></button></div></nav>
@@ -3020,6 +3036,8 @@ SB.auth.onAuthStateChange((_event,session)=>{
   currentUser=session?.user||null;
   updateProfileNav();updateCloudStatusBar();
   if(currentUser)syncFromCloud();
+  // Detecteer wachtwoord-reset link (type=recovery in URL hash)
+  if(_event==='PASSWORD_RECOVERY'){show('sc-reset-pass');}
 });
 
 async function cloudSet(col,data){
@@ -3135,10 +3153,30 @@ async function doForgotPassword(){
   errEl.style.display='none';okEl.style.display='none';
   if(!email){errEl.textContent='Vul eerst je e-mailadres in.';errEl.style.display='block';return;}
   try{
-    const {error}=await SB.auth.resetPasswordForEmail(email);
+    const {error}=await SB.auth.resetPasswordForEmail(email,{redirectTo:'https://slagio.nl'});
     if(error)throw error;
-    okEl.textContent='✓ Herstelmail verstuurd! Controleer je inbox.';okEl.style.display='block';
+    okEl.textContent='✓ Herstelmail verstuurd! Klik op de link in je inbox.';okEl.style.display='block';
   }catch(e){errEl.textContent=authErrMsg(e.message);errEl.style.display='block';}
+}
+
+async function doResetPassword(){
+  const pass=document.getElementById('reset-pass-input').value;
+  const confirm=document.getElementById('reset-pass-confirm').value;
+  const errEl=document.getElementById('reset-err');
+  const okEl=document.getElementById('reset-ok');
+  const btn=document.getElementById('reset-pass-btn');
+  errEl.style.display='none';okEl.style.display='none';
+  if(pass.length<6){errEl.textContent='Wachtwoord moet minimaal 6 tekens zijn.';errEl.style.display='block';return;}
+  if(pass!==confirm){errEl.textContent='Wachtwoorden komen niet overeen.';errEl.style.display='block';return;}
+  btn.disabled=true;btn.textContent='Opslaan…';
+  try{
+    const {error}=await SB.auth.updateUser({password:pass});
+    if(error)throw error;
+    okEl.textContent='✓ Wachtwoord opgeslagen! Je wordt doorgestuurd…';okEl.style.display='block';
+    setTimeout(()=>{window.location.hash='';show('sc-home');},2000);
+  }catch(e){
+    errEl.textContent=authErrMsg(e.message);errEl.style.display='block';
+  }finally{btn.disabled=false;btn.textContent='Wachtwoord opslaan';}
 }
 
 function doLogout(){
