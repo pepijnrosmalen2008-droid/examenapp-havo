@@ -1854,7 +1854,7 @@ html.dark .auth-ok{background:#0F2D1C;border-color:#166534;color:#86EFAC}
         </ol>
       </div>
       <textarea class="import-textarea" id="imp-paste-unified" placeholder="Plak hier je gekopieerde cijferpagina..." rows="6"></textarea>
-      <br><button class="import-go-btn" onclick="doImport('unified')">Importeer cijfers →</button>
+      <br><button class="import-go-btn" onclick="doImport('unified')">🔍 Analyseer &amp; importeer →</button>
       <div class="import-result" id="imp-result-unified"></div>
     </div>
 
@@ -3498,26 +3498,67 @@ const PROF_KEY='examenapp_profiel';
 const CIJFER_KEY='examenapp_cijfers';
 
 const VAK_NAAM_MAP={
-  'nederlands':'nl','ne':'nl','ned':'nl','nederlandse taal en literatuur':'nl','ned. taal en lit.':'nl',
-  'wiskunde a':'wa','wisk.a':'wa','wiskunde-a':'wa','wa':'wa',
-  'biologie':'bi','bio':'bi',
-  'scheikunde':'sk','schk':'sk',
-  'natuurkunde':'na','natk':'na',
+  // ── Nederlands ──
+  'nederlands':'nl','ne':'nl','ned':'nl','nl':'nl','nlt':'nl',
+  'ned taal':'nl','ned. taal':'nl','nederlandse taal':'nl',
+  'nederlandse taal en literatuur':'nl','ned. taal en lit.':'nl',
+  'ned. taal en lit':'nl','ned taal en literatuur':'nl','taal en literatuur':'nl',
+  // ── Wiskunde A (vóór generieke wiskunde) ──
+  'wiskunde a':'wa','wisk. a':'wa','wisk.a':'wa','wiskunde-a':'wa',
+  'wa':'wa','wis a':'wa','wisk a':'wa','wiska':'wa',
+  // ── Wiskunde B ──
+  'wiskunde b':'wb','wisk. b':'wb','wisk.b':'wb','wiskunde-b':'wb',
+  'wb':'wb','wis b':'wb','wisk b':'wb','wiskb':'wb',
+  // ── Wiskunde generiek (fallback) ──
+  'wiskunde':'wa','wisk':'wa',
+  // ── Biologie ──
+  'biologie':'bi','bio':'bi','biol':'bi','bi':'bi',
+  // ── Scheikunde ──
+  'scheikunde':'sk','schk':'sk','schei':'sk','sk':'sk',
+  'nask2':'sk','nask 2':'sk','nask-2':'sk',
+  // ── Natuurkunde ──
+  'natuurkunde':'na','natk':'na','na':'na','nat':'na',
+  'nask1':'na','nask 1':'na','nask-1':'na','nask':'na',
+  // ── Economie ──
+  'economie':'ec','eco':'ec','econ':'ec','ec':'ec',
+  // ── Bedrijfseconomie ──
   'bedrijfseconomie':'be','bedr.ec.':'be','bedrijfsec.':'be',
-  'economie':'ec','eco':'ec',
-  'engels':'en','eng':'en','engelse taal en literatuur':'en','eng. taal en lit.':'en',
-  'maatschappijwetenschappen':'mw','maatschappijwetensch.':'mw','m&m':'mw','mw':'mw',
-  'maatschappijleer':'mw','maatsch.leer':'mw',
-  'geschiedenis':'gs','ges':'gs',
-  'aardrijkskunde':'ak','aard':'ak',
-  'wiskunde b':'wb','wisk.b':'wb','wiskunde-b':'wb','wb':'wb',
+  'bedrijfsec':'be','bedr ec':'be','be':'be','bedreco':'be',
+  // ── Engels ──
+  'engels':'en','eng':'en','english':'en','en':'en',
+  'engelse taal en literatuur':'en','eng. taal en lit.':'en',
+  'eng. taal en lit':'en','engelse taal':'en',
+  // ── Maatschappijwetenschappen ──
+  'maatschappijwetenschappen':'mw','maatschappijwetensch.':'mw',
+  'maatschappijwetensch':'mw','maatschappijleer':'mw',
+  'maatsch.leer':'mw','maatsch leer':'mw','m&m':'mw','mw':'mw',
+  'maat':'mw','maatwetensch':'mw','maw':'mw',
+  // ── Geschiedenis ──
+  'geschiedenis':'gs','ges':'gs','gesch':'gs','hist':'gs','gs':'gs',
+  // ── Aardrijkskunde ──
+  'aardrijkskunde':'ak','aard':'ak','aardrijksk':'ak','geo':'ak','ak':'ak',
+  // ── Duits ──
+  'duits':'du','du':'du','dui':'du','german':'du',
+  'duitse taal en literatuur':'du','dui. taal en lit.':'du','duitse taal':'du',
+  // ── Frans ──
+  'frans':'fr','fr':'fr','fra':'fr','french':'fr',
+  'franse taal en literatuur':'fr','fra. taal en lit.':'fr','franse taal':'fr',
 };
 
+// Gesorteerde sleutels: langste eerst zodat specifiekere matches prioriteit krijgen
+const _VAK_KEYS_SORTED=Object.keys(VAK_NAAM_MAP).sort((a,b)=>b.length-a.length);
+
 function matchVakNaam(raw){
-  const s=raw.toLowerCase().trim().replace(/[.,;:]/g,'');
+  if(!raw||raw.length<2)return null;
+  const s=raw.toLowerCase().trim()
+    .replace(/[.,;:()\[\]\/|]/g,' ')
+    .replace(/\s+/g,' ').trim();
+  if(!s||s.length<2)return null;
+  // 1. Exacte match
   if(VAK_NAAM_MAP[s])return VAK_NAAM_MAP[s];
-  for(const [key,id] of Object.entries(VAK_NAAM_MAP)){
-    if(s.includes(key)||key.includes(s.split(' ')[0]))return id;
+  // 2. Bevat-match (langste sleutels eerst, minimaal 3 tekens)
+  for(const key of _VAK_KEYS_SORTED){
+    if(key.length>=3&&s.includes(key))return VAK_NAAM_MAP[key];
   }
   return null;
 }
@@ -3759,73 +3800,149 @@ function toggleImportPanel(app){
 function parseCijferText(text){
   const found={};
 
-  // ── 1. Normalize whitespace & encodings ──────────────────────────
-  let t=text
-    .replace(/\r\n/g,'\n').replace(/\r/g,'\n')   // Windows/Mac line endings
-    .replace(/\u00a0/g,' ')                        // non-breaking space
-    .replace(/\u200b|\u200c|\u200d|\ufeff/g,'')   // zero-width chars
-    .replace(/([a-zA-Z\u00c0-\u024f])(SE\s*\d)/gi,'$1\n$2'); // glued "biologieSE7,6"
-
-  const lines=t.split('\n').map(l=>l.trim()).filter(Boolean);
-
-  // ── Helper: is this string a valid grade 1-10? ──────────────────
   function toGrade(s){
-    const n=parseFloat(s.replace(',','.'));
+    if(!s)return null;
+    const n=parseFloat(String(s).replace(',','.'));
     return(!isNaN(n)&&n>=1&&n<=10)?Math.round(n*10)/10:null;
   }
 
-  // ── 2. Scan lines ────────────────────────────────────────────────
-  for(let i=0;i<lines.length;i++){
-    const line=lines[i];
+  // ── Normaliseer ──────────────────────────────────────────────────
+  let t=text
+    .replace(/\r\n/g,'\n').replace(/\r/g,'\n')
+    .replace(/\u00a0/g,' ')
+    .replace(/\u200b|\u200c|\u200d|\ufeff/g,'')
+    // Plak tab als spatie (sommige exports gebruiken tabs)
+    .replace(/\t/g,'  ')
+    // Splits "NederlandsSE7,8" → "Nederlands\nSE7,8"
+    .replace(/([a-zA-Z\u00c0-\u024f])(SE\s*\d)/gi,'$1\n$2');
 
-    // Skip pure grade / SE-grade lines
-    if(/^SE\s*[0-9]/i.test(line))continue;
-    if(/^[0-9]{1,2}[,.][0-9]\s*$/.test(line))continue;
+  const lines=t.split('\n').map(l=>l.trim()).filter(Boolean);
 
-    // Try to identify a subject on this line
-    const vakId=matchVakNaam(line);
-    if(!vakId)continue;
+  // ── STRATEGIE 1: vak + cijfer op dezelfde regel ──────────────────
+  // Herkent: "Biologie 7,8"  "Biologie: 7,8"  "Biologie | 7,8"
+  //          "Biologie SE7,8"  "Biologie SE 7,8"  "Biologie  7,8  SE1 7,5"
+  for(const line of lines){
+    // Splits op scheidingstekens (|, ;, :) en probeer vak in deel 0, cijfer in rest
+    const parts=line.split(/\s*[|;:]\s*/);
+    if(parts.length>=2){
+      const vid=matchVakNaam(parts[0]);
+      if(vid&&!found[vid]){
+        for(let i=1;i<parts.length;i++){
+          const raw=parts[i].replace(/^SE\s*/i,'').trim();
+          const g=toGrade((raw.match(/^[\d,.]+/))||null);
+          if(g){found[vid]=g;break;}
+        }
+      }
+    }
 
-    // Scan the next 1-3 lines for a grade (SE or bare number)
-    for(let j=i+1;j<=i+3&&j<lines.length;j++){
-      const nx=lines[j];
+    // "VakNaam   7,8" (≥2 spaties als scheiding of einde van regel)
+    const mSpace=line.match(/^(.+?)\s{2,}(\d{1,2}[,.]\d)\s*(?:SE.*)?$/);
+    if(mSpace){
+      const vid=matchVakNaam(mSpace[1].replace(/\bSE\b.*/gi,'').trim());
+      if(vid&&!found[vid]){const g=toGrade(mSpace[2]);if(g)found[vid]=g;}
+    }
 
-      // Another subject name → stop looking
-      if(matchVakNaam(nx))break;
+    // "VakNaam SE7,8" of "VakNaam SE 7,8"
+    const mSE=line.match(/^(.+?)\s+SE\s*(\d{1,2}[,.]\d)\b/i);
+    if(mSE){
+      const vid=matchVakNaam(mSE[1]);
+      if(vid&&!found[vid]){const g=toGrade(mSE[2]);if(g)found[vid]=g;}
+    }
 
-      // "SE8,4" or "SE 8.4" → grade
-      const seM=nx.match(/^SE\s*([0-9]{1,2}[,.]?[0-9]*)\s*$/i);
-      if(seM){const g=toGrade(seM[1]);if(g){found[vakId]=g;i=j;}break;}
-
-      // Bare grade "8,4" or "8.4" or "8" on its own line
-      const barM=nx.match(/^([0-9]{1,2}[,.][0-9]|10)\s*$/);
-      if(barM){const g=toGrade(barM[1]);if(g){found[vakId]=g;i=j;}break;}
+    // Regel eindigt op cijfer: "Biologie 7,8" (1 spatie)
+    const mEnd=line.match(/^(.+?)\s(\d{1,2}[,.]\d)\s*$/);
+    if(mEnd){
+      const vid=matchVakNaam(mEnd[1].replace(/\bSE\b.*/gi,'').trim());
+      if(vid&&!found[vid]){const g=toGrade(mEnd[2]);if(g)found[vid]=g;}
     }
   }
+
+  // ── STRATEGIE 2: vak op één regel, cijfer op volgende regels ─────
+  for(let i=0;i<lines.length;i++){
+    const vid=matchVakNaam(lines[i]);
+    if(!vid)continue;
+
+    for(let j=i+1;j<=i+6&&j<lines.length;j++){
+      const nx=lines[j];
+      if(matchVakNaam(nx))break; // nieuw vak gevonden
+
+      // "SE 8,4" of "SE8,4" of "SE: 8,4"
+      const seM=nx.match(/\bSE\s*:?\s*([0-9]{1,2}[,.]?[0-9]+)\b/i);
+      if(seM){const g=toGrade(seM[1]);if(g&&!found[vid]){found[vid]=g;i=j;}break;}
+
+      // Puur cijfer op eigen regel: "8,4" of "8.4" of "10"
+      const barM=nx.match(/^([0-9]{1,2}[,.][0-9]|10)\s*$/);
+      if(barM){const g=toGrade(barM[1]);if(g&&!found[vid]){found[vid]=g;i=j;}break;}
+    }
+  }
+
   return found;
 }
 
+// Tijdelijk opslaan van geparste import voor preview-bevestiging
+let _pendingImport=null;
+
 function doImport(app){
-  // unified panel replaces separate magister/somtoday panels
-  const textareaId=app==='unified'?'imp-paste-unified':('imp-paste-'+app);
   const resultId=app==='unified'?'imp-result-unified':('imp-result-'+app);
+  const textareaId=app==='unified'?'imp-paste-unified':('imp-paste-'+app);
   const textarea=document.getElementById(textareaId);
   const result=document.getElementById(resultId);
   const text=textarea.value.trim();
-  if(!text){result.textContent='Plak eerst tekst van Magister of SomToday.';result.className='import-result err';return;}
-  const parsed=parseCijferText(text);
-  const keys=Object.keys(parsed);
-  if(keys.length===0){
-    result.textContent='Geen cijfers herkend. Probeer de volledige pagina te kopiëren (Ctrl+A, Ctrl+C).';
+
+  if(!text){
+    result.innerHTML='<strong>Plak eerst tekst</strong> van Magister of SomToday hierboven.';
     result.className='import-result err';return;
   }
+
+  const parsed=parseCijferText(text);
+  const keys=Object.keys(parsed);
+
+  if(keys.length===0){
+    result.innerHTML=`<strong>Geen cijfers herkend.</strong><br>
+Tips:<br>
+• Kopieer de <em>volledige</em> pagina: <kbd>Ctrl+A</kbd> → <kbd>Ctrl+C</kbd><br>
+• Zorg dat je op de <strong>cijferpagina</strong> staat (niet het dashboard)<br>
+• Probeer zowel Magister als SomToday`;
+    result.className='import-result err';return;
+  }
+
+  // Sla op voor bevestiging
+  _pendingImport=parsed;
+
+  // Toon preview met bevestigknop
+  const rows=keys.map(k=>{
+    const naam=getVK().find(v=>v.id===k)?.naam||k;
+    return `<div style="display:flex;justify-content:space-between;align-items:center;padding:5px 0;border-bottom:1px solid rgba(255,255,255,.07)">
+      <span style="font-weight:600">${naam}</span>
+      <span style="font-size:18px;font-weight:800;color:var(--or)">${parsed[k]}</span>
+    </div>`;
+  }).join('');
+
+  result.innerHTML=`
+    <div style="font-weight:700;margin-bottom:8px">✅ ${keys.length} vak${keys.length===1?'':'ken'} herkend — klopt dit?</div>
+    <div style="margin-bottom:12px">${rows}</div>
+    <div style="display:flex;gap:8px;flex-wrap:wrap">
+      <button class="import-go-btn" style="flex:1;min-width:140px" onclick="doImportConfirm('${app}')">💾 Ja, sla op</button>
+      <button class="import-go-btn" style="flex:1;min-width:100px;background:transparent;border:1.5px solid var(--or);color:var(--or)" onclick="document.getElementById('${resultId}').innerHTML='';_pendingImport=null">✕ Annuleer</button>
+    </div>`;
+  result.className='import-result ok';
+}
+
+function doImportConfirm(app){
+  if(!_pendingImport)return;
+  const resultId=app==='unified'?'imp-result-unified':('imp-result-'+app);
+  const textareaId=app==='unified'?'imp-paste-unified':('imp-paste-'+app);
+  const result=document.getElementById(resultId);
+  const textarea=document.getElementById(textareaId);
+  const keys=Object.keys(_pendingImport);
   const existing=getSavedCijfers();
-  const merged={...existing,...parsed};
+  const merged={...existing,..._pendingImport};
   cloudSet(lvlCol('cijfers'),merged);
   buildCijferGrid();
-  result.textContent=`✓ ${keys.length} vak${keys.length===1?'':'ken'} geïmporteerd: ${keys.map(k=>getVK().find(v=>v.id===k)?.naam||k).join(', ')}`;
+  result.innerHTML=`✓ <strong>${keys.length} vak${keys.length===1?'':'ken'}</strong> opgeslagen: ${keys.map(k=>getVK().find(v=>v.id===k)?.naam||k).join(', ')}`;
   result.className='import-result ok';
   textarea.value='';
+  _pendingImport=null;
 }
 
 function updateProfileNav(){
