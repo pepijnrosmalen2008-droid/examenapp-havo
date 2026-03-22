@@ -3862,12 +3862,15 @@ function getLbEntries(){try{return JSON.parse(localStorage.getItem(getLbKey())||
 async function saveLeaderboardEntry(entry){
   entry.niveau=APP_LEVEL;
   if(currentUser)entry.uid=currentUser.id;
-  // Save to local cache
+  // Save to local cache (preserve bots)
   let all=getLbEntries();
   all.push(entry);
   all.sort((a,b)=>b.score-a.score);
   if(all.length>200)all=all.slice(0,200);
   localStorage.setItem(getLbKey(),JSON.stringify(all));
+  // Re-seed bots if they got lost
+  const hasBots=all.some(e=>e.isBot);
+  if(!hasBots)localStorage.removeItem('slagio_bots_seeded_v2');
   // Save to Supabase global leaderboard (cross-user)
   if(currentUser){
     try{
@@ -3887,13 +3890,17 @@ async function loadLeaderboardFromSupabase(){
   try{
     const {data,error}=await SB.from('leaderboard').select('*').eq('niveau',APP_LEVEL).order('score',{ascending:false}).limit(200);
     if(error||!data)return;
-    const entries=data.map(d=>({
+    const remote=data.map(d=>({
       naam:d.naam,avatar:d.avatar,vak:d.vak,vakNaam:d.vak_naam,
       domeinId:d.domein_id||null,domeinNaam:d.domein_naam||null,
       score:d.score,goed:d.correct,tot:d.total,uid:d.user_id,
       avgTijd:d.avg_tijd||null,niveau:d.niveau,date:d.created_at?.slice(0,10)
     }));
-    localStorage.setItem(getLbKey(),JSON.stringify(entries));
+    // Merge: keep bots + local entries, add remote on top
+    const local=getLbEntries();
+    const bots=local.filter(e=>e.isBot);
+    const merged=[...remote,...bots].sort((a,b)=>b.score-a.score).slice(0,200);
+    localStorage.setItem(getLbKey(),JSON.stringify(merged));
   }catch(e){console.warn('leaderboard load error:',e);}
 }
 let lbVakFilter='all';
