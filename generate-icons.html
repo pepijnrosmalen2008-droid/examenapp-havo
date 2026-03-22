@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head><title>Slagio Icon Generator</title></head>
+<body style="background:#111;color:#fff;font-family:sans-serif;padding:40px;text-align:center">
+<h2>Slagio Icon Generator</h2>
+<p>Klik op elke knop om het icoon te downloaden.</p>
+<canvas id="c192" width="192" height="192" style="display:none"></canvas>
+<canvas id="c512" width="512" height="512" style="display:none"></canvas>
+<canvas id="c180" width="180" height="180" style="display:none"></canvas>
+<div id="previews" style="display:flex;gap:20px;justify-content:center;margin:30px 0;flex-wrap:wrap"></div>
+<div id="btns" style="display:flex;gap:12px;justify-content:center;flex-wrap:wrap"></div>
+
+<script>
+const svgSrc = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a1a2e"/>
+      <stop offset="100%" style="stop-color:#0d0d1a"/>
+    </linearGradient>
+    <linearGradient id="orange" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#FF8C00"/>
+      <stop offset="100%" style="stop-color:#FF4500"/>
+    </linearGradient>
+    <linearGradient id="orangeS" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#FFFFFF"/>
+      <stop offset="100%" style="stop-color:#FFD580"/>
+    </linearGradient>
+    <filter id="glow"><feGaussianBlur stdDeviation="8" result="coloredBlur"/><feMerge><feMergeNode in="coloredBlur"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+    <filter id="softglow"><feGaussianBlur stdDeviation="18" result="coloredBlur"/><feMerge><feMergeNode in="coloredBlur"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  </defs>
+  <rect width="512" height="512" rx="110" ry="110" fill="url(#bg)"/>
+  <ellipse cx="256" cy="320" rx="160" ry="100" fill="#FF6B00" opacity="0.13" filter="url(#softglow)"/>
+  <path d="M256 430 C200 400 160 360 170 300 C180 250 210 240 220 200 C230 230 215 255 230 280 C240 250 245 210 260 180 C270 210 265 245 275 265 C285 240 282 215 295 200 C305 240 295 270 310 300 C325 335 290 400 256 430Z" fill="url(#orange)" opacity="0.9" filter="url(#glow)"/>
+  <path d="M256 400 C230 375 215 345 225 305 C232 280 245 270 248 250 C254 268 250 285 258 298 C263 280 262 260 270 248 C276 268 270 290 278 308 C290 335 270 378 256 400Z" fill="#FFD580" opacity="0.7"/>
+  <text x="256" y="235" font-family="Arial Black, Helvetica Neue, Arial, sans-serif" font-size="210" font-weight="900" text-anchor="middle" dominant-baseline="middle" fill="url(#orangeS)" filter="url(#glow)" letter-spacing="-5">S</text>
+  <rect width="512" height="512" rx="110" ry="110" fill="none" stroke="rgba(255,140,0,0.25)" stroke-width="3"/>
+</svg>`;
+
+const sizes = [
+  {name:'icon-192.png', size:192},
+  {name:'icon-512.png', size:512},
+  {name:'apple-touch-icon.png', size:180}
+];
+
+const blob = new Blob([svgSrc], {type:'image/svg+xml'});
+const url = URL.createObjectURL(blob);
+const img = new Image();
+img.onload = function() {
+  sizes.forEach(({name, size}) => {
+    const canvas = document.createElement('canvas');
+    canvas.width = size; canvas.height = size;
+    const ctx = canvas.getContext('2d');
+    ctx.drawImage(img, 0, 0, size, size);
+
+    // Preview
+    const previewCanvas = document.createElement('canvas');
+    previewCanvas.width = 80; previewCanvas.height = 80;
+    previewCanvas.style.borderRadius = '16px';
+    const pctx = previewCanvas.getContext('2d');
+    pctx.drawImage(img, 0, 0, 80, 80);
+    const label = document.createElement('div');
+    label.style.cssText = 'color:#aaa;font-size:11px;margin-top:6px';
+    label.textContent = name;
+    const wrap = document.createElement('div');
+    wrap.appendChild(previewCanvas);
+    wrap.appendChild(label);
+    document.getElementById('previews').appendChild(wrap);
+
+    // Download button
+    canvas.toBlob(blob => {
+      const a = document.createElement('a');
+      a.href = URL.createObjectURL(blob);
+      a.download = name;
+      a.style.cssText = 'background:#FF6B00;color:#fff;padding:10px 20px;border-radius:8px;text-decoration:none;font-weight:700;font-size:14px';
+      a.textContent = '⬇ Download ' + name;
+      document.getElementById('btns').appendChild(a);
+    });
+  });
+};
+img.src = url;
+</script>
+</body>
+</html>
