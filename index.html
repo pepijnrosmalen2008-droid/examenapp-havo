@@ -4106,7 +4106,8 @@ const DC_KEY='slagio_daily_challenge';
 function getDailyChallenge(){
   const today=new Date().toISOString().slice(0,10);
   try{const d=JSON.parse(localStorage.getItem(DC_KEY)||'{}');if(d.date===today)return d;}catch(e){}
-  const vakken=getVK();
+  const mijnVakken=getMijnVakken();
+  const vakken=getVK().filter(v=>!mijnVakken.length||mijnVakken.includes(v.id));
   const all=[];
   vakken.forEach(v=>v.domeinen.forEach(d=>{if(d.sv&&d.sv.length>=3)all.push({vak:v,domein:d});}));
   if(!all.length)return null;
