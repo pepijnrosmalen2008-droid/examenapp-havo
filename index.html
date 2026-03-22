@@ -1081,6 +1081,38 @@ html.dark .calc-btn{background:#2e3550}
 .lb-tier-av{font-size:16px;min-width:52px}
 .lb-tier-lbl{font-weight:700;color:var(--dk);min-width:72px}
 .lb-tier-pts{color:var(--mu)}
+/* ── ANIMAL EVOLUTION ── */
+.anim-pick-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:8px;margin:12px 0 4px}
+@media(max-width:480px){.anim-pick-grid{grid-template-columns:repeat(3,1fr)}}
+.anim-pick-btn{display:flex;flex-direction:column;align-items:center;gap:4px;padding:10px 4px;border-radius:14px;border:2px solid var(--bo);background:var(--bg);cursor:pointer;transition:all .2s cubic-bezier(.34,1.4,.64,1);font-family:var(--font)}
+.anim-pick-btn:hover{border-color:var(--or);background:var(--orl);transform:scale(1.06)}
+.anim-pick-btn.selected{border-color:var(--or);background:var(--orl);box-shadow:0 0 0 3px rgba(var(--or-rgb),.2)}
+.anim-pick-emoji{font-size:26px;line-height:1}
+.anim-pick-name{font-size:10px;font-weight:700;color:var(--mu)}
+.anim-pick-btn.selected .anim-pick-name{color:var(--or)}
+/* Evolution timeline on profile */
+.anim-evo-card{background:linear-gradient(135deg,rgba(var(--or-rgb),.08),rgba(var(--or-rgb),.02));border:1px solid rgba(var(--or-rgb),.2);border-radius:20px;padding:20px;margin-bottom:16px}
+.anim-evo-title{font-family:var(--font-head);font-size:16px;font-weight:800;color:var(--dk);margin-bottom:4px;display:flex;align-items:center;gap:8px}
+.anim-evo-locked{font-size:10px;font-weight:700;background:rgba(var(--or-rgb),.15);color:var(--or);padding:2px 8px;border-radius:10px;letter-spacing:.4px}
+.anim-evo-subtitle{font-size:12px;color:var(--mu);margin-bottom:16px}
+.anim-evo-stages{display:flex;align-items:flex-end;gap:0;margin-bottom:12px}
+.anim-stage{flex:1;display:flex;flex-direction:column;align-items:center;gap:4px;position:relative}
+.anim-stage:not(:last-child)::after{content:'';position:absolute;right:0;top:20px;width:100%;height:2px;background:var(--bo);z-index:0;transform:translateX(50%)}
+.anim-stage.done::after{background:var(--or)}
+.anim-stage-pip{width:40px;height:40px;border-radius:50%;background:var(--bg2);border:2px solid var(--bo);display:flex;align-items:center;justify-content:center;font-size:20px;position:relative;z-index:1;transition:all .3s}
+.anim-stage.done .anim-stage-pip{border-color:var(--or);background:var(--orl)}
+.anim-stage.current .anim-stage-pip{border-color:var(--or);background:var(--or);font-size:24px;width:48px;height:48px;box-shadow:0 0 18px rgba(var(--or-rgb),.45);animation:animalPulse 2.5s ease-in-out infinite}
+@keyframes animalPulse{0%,100%{box-shadow:0 0 18px rgba(var(--or-rgb),.45)}50%{box-shadow:0 0 28px rgba(var(--or-rgb),.7)}}
+.anim-stage-label{font-size:9px;font-weight:700;color:var(--mu);text-transform:uppercase;letter-spacing:.4px;text-align:center}
+.anim-stage.current .anim-stage-label{color:var(--or)}
+.anim-stage-req{font-size:8px;color:var(--mu);opacity:.6}
+.anim-evo-progress{margin-top:8px}
+.anim-evo-prog-bar{height:6px;border-radius:3px;background:var(--bo);overflow:hidden;margin-bottom:4px}
+.anim-evo-prog-fill{height:100%;border-radius:3px;background:linear-gradient(90deg,var(--or),color-mix(in srgb,var(--or) 70%,#f97316));transition:width .6s cubic-bezier(.34,1.2,.64,1)}
+.anim-evo-prog-txt{font-size:11px;color:var(--mu);text-align:right}
+/* Warning in register */
+.anim-warn{font-size:11px;color:var(--mu);background:var(--bg2);border-radius:8px;padding:8px 12px;margin-top:6px;line-height:1.5}
+.anim-warn strong{color:var(--dk)}
 /* ── AUTH SCREEN ── */
 .auth-wrap{max-width:420px;margin:0 auto;padding:48px 24px 100px}
 .auth-logo{text-align:center;margin-bottom:32px}
@@ -1714,6 +1746,11 @@ html.dark .auth-ok{background:#0F2D1C;border-color:#166534;color:#86EFAC}
       <div class="auth-field"><label>Jouw naam</label><input class="auth-input" id="reg-naam" type="text" placeholder="Voornaam" autocomplete="name"></div>
       <div class="auth-field"><label>E-mailadres</label><input class="auth-input" id="reg-email" type="email" placeholder="jouw@email.nl" autocomplete="email"></div>
       <div class="auth-field"><label>Wachtwoord <span style="font-weight:400;text-transform:none;letter-spacing:0">(minimaal 6 tekens)</span></label><input class="auth-input" id="reg-pass" type="password" placeholder="••••••••" autocomplete="new-password" onkeydown="if(event.key==='Enter')doRegister()"></div>
+      <div class="auth-field">
+        <label>Kies je startdier <span style="font-weight:400;text-transform:none;letter-spacing:0">— dit groeit mee met jou!</span></label>
+        <div class="anim-pick-grid" id="reg-animal-grid"></div>
+        <div class="anim-warn">⚠️ <strong>Let op:</strong> je kunt later niet meer van dier wisselen. Kies dus goed!</div>
+      </div>
       <button class="auth-btn" id="register-btn" onclick="doRegister()">Account aanmaken</button>
     </div>
   </div>
@@ -1753,13 +1790,14 @@ html.dark .auth-ok{background:#0F2D1C;border-color:#166534;color:#86EFAC}
     <div class="prof-section-title">Persoonlijke gegevens</div>
     <div class="prof-section-sub" id="prof-sub-text">Wordt lokaal opgeslagen op dit apparaat</div>
 
-    <!-- Avatar preview + picker -->
-    <div class="av-preview-row">
+    <!-- Animal evolution display -->
+    <div id="anim-evo-section"></div>
+    <!-- Hidden avatar-picker div for backwards compat -->
+    <div id="avatar-picker" style="display:none"></div>
+    <div class="av-preview-row" style="display:none">
       <div class="av-preview" id="av-preview-big">🐼</div>
-      <div class="av-preview-info"><strong id="av-preview-name">Geen naam</strong>Kies hieronder je dier</div>
+      <div class="av-preview-info"><strong id="av-preview-name">Geen naam</strong></div>
     </div>
-    <label style="font-size:12px;font-weight:600;color:var(--mu);text-transform:uppercase;letter-spacing:.6px">Kies je dier</label>
-    <div class="avatar-picker" id="avatar-picker"></div>
 
     <div class="prof-fields">
       <div class="prof-field full"><label>Naam</label><input id="pf-naam" type="text" placeholder="Jouw voornaam" oninput="document.getElementById('av-preview-name').textContent=this.value||'Geen naam'" /></div>
@@ -3212,11 +3250,13 @@ async function doRegister(){
   errEl.style.display='none';
   if(!naam){errEl.textContent='Vul je naam in.';errEl.style.display='block';return;}
   if(!email||!pass){errEl.textContent='Vul je e-mail en wachtwoord in.';errEl.style.display='block';return;}
+  if(!selectedAnimalId){errEl.textContent='Kies eerst je startdier!';errEl.style.display='block';return;}
   btn.disabled=true;btn.textContent='Bezig...';
   try{
     const {data,error}=await SB.auth.signUp({email,password:pass});
     if(error)throw error;
-    const prof={naam,avatar:AVATARS[4].e,school:'',klas:'',profiel:''};
+    const initAvatar=selectedAnimalId?getAnimalEmoji(selectedAnimalId,0):'🐾';
+    const prof={naam,avatar:initAvatar,animalId:selectedAnimalId,school:'',klas:'',profiel:''};
     localStorage.setItem(PROF_KEY,JSON.stringify(prof));
     if(data.user){currentUser=data.user;await cloudSet('profiel',prof);}
     // Supabase may require email confirmation
@@ -3331,50 +3371,162 @@ const AVATARS=[
   {e:'🦆',n:'Eend'},{e:'🐬',n:'Dolfijn'},{e:'🦈',n:'Haai'},{e:'🐙',n:'Octopus'},
   {e:'🦋',n:'Vlinder'},{e:'🦜',n:'Papegaai'},{e:'🐊',n:'Krokodil'},{e:'🦒',n:'Giraf'},
 ];
-let selectedAvatar=AVATARS[4].e; // default beer
+let selectedAvatar=AVATARS[4].e;
+// ── ANIMAL EVOLUTION SYSTEM ──
+const ANIMAL_EVOLUTIONS=[
+  {id:'adelaar', n:'Adelaar',  s:['🥚','🐣','🐥','🐦','🦅'], lbl:['Ei','Kuiken','Jong','Vogel','Adelaar']},
+  {id:'leeuw',   n:'Leeuw',   s:['🐱','🐈','🐅','🐆','🦁'], lbl:['Kitten','Kat','Jong Roofdier','Luipaard','Leeuw']},
+  {id:'draak',   n:'Draak',   s:['🥚','🦎','🐊','🐉','🐲'], lbl:['Ei','Hagedis','Krokodil','Draak','Vuurdrake']},
+  {id:'wolf',    n:'Wolf',    s:['🐾','🐶','🐕','🦮','🐺'], lbl:['Pootje','Puppy','Hond','Geleider','Wolf']},
+  {id:'vlinder', n:'Vlinder', s:['🌱','🐛','🐌','🐝','🦋'], lbl:['Zaad','Rups','Slak','Bij','Vlinder']},
+  {id:'tijger',  n:'Tijger',  s:['🐾','🐱','🐈','🐅','🐯'], lbl:['Pootje','Katje','Kat','Jong Tijger','Tijger']},
+  {id:'haai',    n:'Haai',    s:['🐚','🐠','🐟','🐡','🦈'], lbl:['Schelp','Visje','Vis','Kogelvis','Haai']},
+  {id:'olifant', n:'Olifant', s:['🐭','🐹','🐗','🦏','🐘'], lbl:['Muisje','Hamster','Zwijn','Neushoorn','Olifant']},
+  {id:'eenhoorn',n:'Eenhoorn',s:['🐾','🐴','🐎','🏇','🦄'], lbl:['Pootje','Veulen','Paard','Renpaard','Eenhoorn']},
+  {id:'vos',     n:'Vos',     s:['🐾','🐱','🐈','🦝','🦊'], lbl:['Pootje','Katje','Kat','Wasbeer','Vos']},
+  {id:'uil',     n:'Uil',     s:['🥚','🐣','🐦','🦜','🦉'], lbl:['Ei','Kuiken','Vogel','Papegaai','Uil']},
+  {id:'octopus', n:'Octopus', s:['🐚','🦐','🦞','🦑','🐙'], lbl:['Schelp','Garnaal','Kreeft','Inktvis','Octopus']},
+  {id:'beer',    n:'Beer',    s:['🐾','🐭','🐹','🐻','🐻‍❄️'],lbl:['Pootje','Muisje','Hamster','Beer','IJsbeer']},
+  {id:'slang',   n:'Slang',   s:['🥚','🐛','🦗','🦎','🐍'], lbl:['Ei','Rups','Krekel','Hagedis','Slang']},
+  {id:'gorilla', n:'Gorilla', s:['🐾','🐒','🦍','🦧','🦧'], lbl:['Pootje','Aapje','Gorilla','Orang-oetan','Alphaleider']},
+];
+const ANIM_THRESHOLDS=[0,5,15,30,60];
+const ANIM_STAGE_NAMES=['Baby','Jong','Tiener','Volwassen','Prime'];
+let selectedAnimalId=null;
 
-function buildAvatarPicker(current){
-  const grid=document.getElementById('avatar-picker');
+function getAnimalById(id){return ANIMAL_EVOLUTIONS.find(a=>a.id===id)||null;}
+function getAnimalStageIdx(totalQuizzes){
+  let idx=0;
+  for(let i=ANIM_THRESHOLDS.length-1;i>=0;i--){if(totalQuizzes>=ANIM_THRESHOLDS[i]){idx=i;break;}}
+  return idx;
+}
+function getAnimalEmoji(animalId,totalQuizzes){
+  const a=getAnimalById(animalId);
+  if(!a)return'🐾';
+  return a.s[getAnimalStageIdx(totalQuizzes)];
+}
+function buildRegisterAnimalPicker(){
+  const grid=document.getElementById('reg-animal-grid');
   if(!grid)return;
   grid.innerHTML='';
-  AVATARS.forEach(a=>{
+  ANIMAL_EVOLUTIONS.forEach(a=>{
     const btn=document.createElement('button');
-    btn.className='av-opt'+(current===a.e?' selected':'');
-    btn.title=a.n;
-    btn.textContent=a.e;
+    btn.type='button';
+    btn.className='anim-pick-btn';
+    btn.innerHTML=`<span class="anim-pick-emoji">${a.s[0]}</span><span class="anim-pick-name">${a.n}</span>`;
     btn.onclick=()=>{
-      selectedAvatar=a.e;
-      document.querySelectorAll('.av-opt').forEach(b=>b.classList.remove('selected'));
+      selectedAnimalId=a.id;
+      document.querySelectorAll('.anim-pick-btn').forEach(b=>b.classList.remove('selected'));
       btn.classList.add('selected');
-      document.getElementById('av-preview-big').textContent=a.e;
     };
     grid.appendChild(btn);
   });
+}
+function renderAnimalEvoSection(animalId,totalQuizzes){
+  const sec=document.getElementById('anim-evo-section');
+  if(!sec)return;
+  if(!animalId){
+    // No animal chosen yet — show picker
+    sec.innerHTML=`
+      <div class="prof-section-title" style="margin-bottom:6px">Kies je startdier</div>
+      <div class="prof-section-sub" style="margin-bottom:10px">Je dier groeit met je mee naarmate je meer quizzen maakt. <strong>Je kunt later niet meer wisselen!</strong></div>
+      <div class="anim-pick-grid" id="prof-animal-grid"></div>
+      <div class="anim-warn">⚠️ <strong>Let op:</strong> na opslaan is je keuze definitief.</div>`;
+    const grid=document.getElementById('prof-animal-grid');
+    ANIMAL_EVOLUTIONS.forEach(a=>{
+      const btn=document.createElement('button');
+      btn.type='button';
+      btn.className='anim-pick-btn';
+      btn.innerHTML=`<span class="anim-pick-emoji">${a.s[0]}</span><span class="anim-pick-name">${a.n}</span>`;
+      btn.onclick=()=>{
+        selectedAnimalId=a.id;
+        selectedAvatar=a.s[0];
+        document.querySelectorAll('#prof-animal-grid .anim-pick-btn').forEach(b=>b.classList.remove('selected'));
+        btn.classList.add('selected');
+      };
+      grid.appendChild(btn);
+    });
+    return;
+  }
+  // Animal chosen — show evolution timeline
+  const a=getAnimalById(animalId);
+  if(!a){sec.innerHTML='';return;}
+  const stageIdx=getAnimalStageIdx(totalQuizzes);
+  const isMaxed=stageIdx===ANIM_THRESHOLDS.length-1;
+  const nextThreshold=isMaxed?null:ANIM_THRESHOLDS[stageIdx+1];
+  const prevThreshold=ANIM_THRESHOLDS[stageIdx];
+  const pct=isMaxed?100:Math.round(Math.min(100,(totalQuizzes-prevThreshold)/(nextThreshold-prevThreshold)*100));
+  let stagesHtml='';
+  a.s.forEach((emoji,i)=>{
+    const isDone=i<stageIdx;
+    const isCurrent=i===stageIdx;
+    const cls=isDone?'done':isCurrent?'current':'';
+    const reqTxt=i===0?'':(ANIM_THRESHOLDS[i]+'q');
+    stagesHtml+=`<div class="anim-stage ${cls}">
+      <div class="anim-stage-pip">${emoji}</div>
+      <div class="anim-stage-label">${ANIM_STAGE_NAMES[i]}</div>
+      <div class="anim-stage-req">${reqTxt}</div>
+    </div>`;
+  });
+  const progressHtml=isMaxed?`<div style="font-size:12px;color:var(--or);font-weight:700;text-align:center">🏆 Maximaal niveau bereikt!</div>`:`
+    <div class="anim-evo-prog-bar"><div class="anim-evo-prog-fill" style="width:${pct}%"></div></div>
+    <div class="anim-evo-prog-txt">${totalQuizzes}/${nextThreshold} quizzen → ${ANIM_STAGE_NAMES[stageIdx+1]}</div>`;
+  sec.innerHTML=`<div class="anim-evo-card">
+    <div class="anim-evo-title">${a.s[stageIdx]} ${a.n} <span class="anim-evo-locked">🔒 Definitief</span></div>
+    <div class="anim-evo-subtitle">${ANIM_STAGE_NAMES[stageIdx]} · ${totalQuizzes} quiz${totalQuizzes!==1?'zen':''} gemaakt</div>
+    <div class="anim-evo-stages">${stagesHtml}</div>
+    <div class="anim-evo-progress">${progressHtml}</div>
+  </div>`;
+}
+
+function buildAvatarPicker(current){
+  // Legacy - now handled by animal evolution system
 }
 
 function loadProfile(){
   let p={};
   try{p=JSON.parse(localStorage.getItem(PROF_KEY)||'{}');}catch(e){p={};}
   const set=(id,val)=>{const el=document.getElementById(id);if(el)el.value=val;};
-  if(p.naam){set('pf-naam',p.naam);const n=document.getElementById('av-preview-name');if(n)n.textContent=p.naam;}
+  if(p.naam){set('pf-naam',p.naam);}
   if(p.school)set('pf-school',p.school);
   if(p.klas)set('pf-klas',p.klas);
   if(p.profiel)set('pf-profiel',p.profiel);
-  selectedAvatar=p.avatar||AVATARS[4].e;
-  const prev=document.getElementById('av-preview-big');if(prev)prev.textContent=selectedAvatar;
-  buildAvatarPicker(selectedAvatar);
+  // Animal evolution
+  const animalId=p.animalId||null;
+  selectedAnimalId=animalId;
+  const streakInfo=calcStreak();
+  const totalQ=streakInfo.total||0;
+  if(animalId){
+    selectedAvatar=getAnimalEmoji(animalId,totalQ);
+  } else {
+    selectedAvatar=p.avatar||'🐾';
+  }
+  renderAnimalEvoSection(animalId,totalQ);
 }
 
 async function saveProfileData(){
   const get=(id)=>document.getElementById(id)?.value||'';
-  const p={
+  let p={};
+  try{p=JSON.parse(localStorage.getItem(PROF_KEY)||'{}');}catch(e){p={};}
+  const streakInfo=calcStreak();
+  const totalQ=streakInfo.total||0;
+  // Animal: only set if not already locked
+  const lockedAnimalId=p.animalId||null;
+  const newAnimalId=lockedAnimalId||(selectedAnimalId||null);
+  const computedAvatar=newAnimalId?getAnimalEmoji(newAnimalId,totalQ):(selectedAvatar||'🐾');
+  const updated={
     naam:get('pf-naam').trim(),
     school:get('pf-school').trim(),
     klas:get('pf-klas'),
     profiel:get('pf-profiel'),
-    avatar:selectedAvatar,
+    avatar:computedAvatar,
+    animalId:newAnimalId,
   };
-  await cloudSet('profiel',p);
+  await cloudSet('profiel',updated);
+  selectedAnimalId=newAnimalId;
+  selectedAvatar=computedAvatar;
+  // Re-render evo section
+  renderAnimalEvoSection(newAnimalId,totalQ);
   const msg=document.getElementById('pf-saved-msg');
   if(msg){msg.classList.add('show');setTimeout(()=>msg.classList.remove('show'),2500);}
   updateProfileNav();
@@ -4995,6 +5147,7 @@ if(localStorage.getItem('examenapp_level')){
 }
 renderPomo();
 if(document.getElementById('sc-schedule'))renderSchedule();
+buildRegisterAnimalPicker();
 buildSlaagInputs();
 // Push initial ads op home (na kleine vertraging zodat AdSense geladen is)
 setTimeout(()=>{tryPushAds('sc-home');},1500);
