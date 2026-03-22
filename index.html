@@ -4888,7 +4888,7 @@ async function loadLeaderboardFromSupabase(){
     // Merge: keep bots + local entries, add remote on top
     const local=getLbEntries();
     const bots=local.filter(e=>e.isBot);
-    const merged=[...remote,...bots].sort((a,b)=>b.score-a.score).slice(0,200);
+    const merged=[...remote,...bots].filter(e=>e.score<=1000).sort((a,b)=>b.score-a.score).slice(0,200);
     localStorage.setItem(getLbKey(),JSON.stringify(merged));
   }catch(e){console.warn('leaderboard load error:',e);}
 }
@@ -4897,6 +4897,8 @@ function renderLeaderboard(){
   loadLeaderboardFromSupabase().then(()=>_renderLbWithData());
 }
 function _renderLbWithData(){
+  // Clean up any stored entries with score > 1000
+  try{const key=getLbKey();const stored=getLbEntries();const cleaned=stored.filter(e=>e.score<=1000);if(cleaned.length!==stored.length)localStorage.setItem(key,JSON.stringify(cleaned));}catch(e){}
   // Re-seed bots if missing
   const hasBots=getLbEntries().some(e=>e.isBot);
   if(!hasBots){localStorage.removeItem('slagio_bots_seeded_v3');seedBotsNow();}
@@ -4928,8 +4930,9 @@ function _renderLbWithData(){
   const badge=document.getElementById('lb-niveau-badge');
   if(badge)badge.textContent=APP_LEVEL.toUpperCase()+' 2026';
 
-  // Filter entries
-  const filtered=lbVakFilter==='all'?all:all.filter(e=>e.vak===lbVakFilter);
+  // Filter entries (remove invalid scores above 1000)
+  const valid=all.filter(e=>e.score<=1000);
+  const filtered=lbVakFilter==='all'?valid:valid.filter(e=>e.vak===lbVakFilter);
 
   // Deduplicate: best score per naam+vak+domein
   const bestMap={};
