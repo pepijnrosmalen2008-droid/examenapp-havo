@@ -962,8 +962,8 @@ html.dark .calc-btn{background:#2e3550}
   .lb-pod-avatar{width:46px;height:46px;font-size:24px}
   .lb-pod-name{max-width:56px;font-size:10px}
   .lb-row{padding:10px 12px;gap:10px;border-radius:12px}
-  .lb-rank{font-size:12px;min-width:20px}
-  .lb-avatar{font-size:20px;width:32px;height:32px}
+  .lb-av{font-size:22px;width:40px;height:40px}
+  .lb-av-rank{font-size:9px;min-width:17px;height:17px}
   .lb-name{font-size:13px}
   .lb-meta{font-size:11px}
   .lb-score{font-size:15px}
@@ -1032,9 +1032,11 @@ html.dark .calc-btn{background:#2e3550}
 .lb-list{display:flex;flex-direction:column;gap:8px}
 .lb-row{display:flex;align-items:center;gap:12px;background:var(--s);border:1px solid var(--bo);border-radius:14px;padding:12px 14px;transition:all .18s}
 .lb-row.me{border-color:var(--or);background:var(--orl)}
-.lb-rank{width:28px;text-align:center;font-size:16px;font-weight:800;color:var(--mu);flex-shrink:0}
-.lb-rank.top3{color:var(--or)}
-.lb-av{font-size:26px;width:42px;height:42px;border-radius:50%;background:var(--bg2);border:2px solid var(--bo);display:flex;align-items:center;justify-content:center;flex-shrink:0}
+.lb-av-wrap{position:relative;flex-shrink:0}
+.lb-av{font-size:28px;width:50px;height:50px;border-radius:50%;background:var(--bg2);border:2.5px solid var(--bo);display:flex;align-items:center;justify-content:center;flex-shrink:0;transition:transform .2s}
+.lb-row:hover .lb-av{transform:scale(1.1)}
+.lb-av-rank{position:absolute;bottom:-3px;right:-3px;min-width:20px;height:20px;border-radius:10px;background:var(--mu);color:#fff;font-size:10px;font-weight:800;display:flex;align-items:center;justify-content:center;border:2px solid var(--s);font-family:var(--font);padding:0 4px;line-height:1}
+.lb-row.me .lb-av-rank{background:var(--or)}
 .lb-info{flex:1;min-width:0}
 .lb-name{font-size:14px;font-weight:700;color:var(--dk)}
 .lb-meta{font-size:11px;color:var(--mu);margin-top:2px}
@@ -4050,7 +4052,10 @@ function _renderLbWithData(){
       const isMe=myNaam&&e.naam===myNaam;
       podHtml+=`<div class="lb-pod">
         <div class="lb-pod-medal">${medals[ri]}</div>
-        <div class="lb-pod-avatar ${classes[ri]}" style="${isMe?'border-color:var(--or)':''}">${e.avatar||'🐻'}</div>
+        <div style="position:relative;display:inline-block">
+          <div class="lb-pod-avatar ${classes[ri]}" style="${isMe?'border-color:var(--or)':''}">${e.avatar||'🐻'}</div>
+          <div style="position:absolute;bottom:-3px;right:-3px;width:18px;height:18px;border-radius:50%;background:${['#F59E0B','#9CA3AF','#CD7C3F'][ri]};color:#fff;font-size:9px;font-weight:900;display:flex;align-items:center;justify-content:center;border:2px solid var(--bg)">${ri+1}</div>
+        </div>
         <div class="lb-pod-bar ${classes[ri]}" style="height:${heights[pi]}px">${e.score}</div>
         <div class="lb-pod-name">${e.naam}</div>
         <div class="lb-pod-score">${e.goed}/${e.tot} · ${safePct(e.goed,e.tot)}%</div>
@@ -4074,8 +4079,10 @@ function _renderLbWithData(){
     const isMe=myNaam&&e.naam===myNaam;
     if(showPodium&&rank<=3)return;
     listHtml+=`<div class="lb-row${isMe?' me':''}">
-      <div class="lb-rank${rank<=3?' top3':''}">${rank<=3?['🥇','🥈','🥉'][rank-1]:rank}</div>
-      <div class="lb-av">${e.avatar||'🐻'}</div>
+      <div class="lb-av-wrap">
+        <div class="lb-av">${e.avatar||'🐻'}</div>
+        <div class="lb-av-rank">#${rank}</div>
+      </div>
       <div class="lb-info">
         <div class="lb-name">${e.naam}${lbMeSpan(isMe)}</div>
         <div class="lb-meta">${lbMeta(e)}</div>
