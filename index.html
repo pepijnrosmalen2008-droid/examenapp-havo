@@ -1747,7 +1747,7 @@ html.dark .auth-ok{background:#0F2D1C;border-color:#166534;color:#86EFAC}
       <div class="auth-field"><label>E-mailadres</label><input class="auth-input" id="reg-email" type="email" placeholder="jouw@email.nl" autocomplete="email"></div>
       <div class="auth-field"><label>Wachtwoord <span style="font-weight:400;text-transform:none;letter-spacing:0">(minimaal 6 tekens)</span></label><input class="auth-input" id="reg-pass" type="password" placeholder="••••••••" autocomplete="new-password" onkeydown="if(event.key==='Enter')doRegister()"></div>
       <div class="auth-field">
-        <label>Kies je startdier <span style="font-weight:400;text-transform:none;letter-spacing:0">— dit groeit mee met jou!</span></label>
+        <label>Kies je startdier <span style="font-weight:400;text-transform:none;letter-spacing:0">— evolueert met je XP!</span></label>
         <div class="anim-pick-grid" id="reg-animal-grid"></div>
         <div class="anim-warn">⚠️ <strong>Let op:</strong> je kunt later niet meer van dier wisselen. Kies dus goed!</div>
       </div>
@@ -3390,20 +3390,20 @@ const ANIMAL_EVOLUTIONS=[
   {id:'slang',   n:'Slang',   s:['🥚','🐛','🦗','🦎','🐍'], lbl:['Ei','Rups','Krekel','Hagedis','Slang']},
   {id:'gorilla', n:'Gorilla', s:['🐾','🐒','🦍','🦧','🦧'], lbl:['Pootje','Aapje','Gorilla','Orang-oetan','Alphaleider']},
 ];
-const ANIM_THRESHOLDS=[0,5,15,30,60];
+const ANIM_THRESHOLDS=[0,100,500,2000,7500]; // XP-drempels per stadium
 const ANIM_STAGE_NAMES=['Baby','Jong','Tiener','Volwassen','Prime'];
 let selectedAnimalId=null;
 
 function getAnimalById(id){return ANIMAL_EVOLUTIONS.find(a=>a.id===id)||null;}
-function getAnimalStageIdx(totalQuizzes){
+function getAnimalStageIdx(totalXP){
   let idx=0;
-  for(let i=ANIM_THRESHOLDS.length-1;i>=0;i--){if(totalQuizzes>=ANIM_THRESHOLDS[i]){idx=i;break;}}
+  for(let i=ANIM_THRESHOLDS.length-1;i>=0;i--){if(totalXP>=ANIM_THRESHOLDS[i]){idx=i;break;}}
   return idx;
 }
-function getAnimalEmoji(animalId,totalQuizzes){
+function getAnimalEmoji(animalId,totalXP){
   const a=getAnimalById(animalId);
   if(!a)return'🐾';
-  return a.s[getAnimalStageIdx(totalQuizzes)];
+  return a.s[getAnimalStageIdx(totalXP)];
 }
 function buildRegisterAnimalPicker(){
   const grid=document.getElementById('reg-animal-grid');
@@ -3422,14 +3422,13 @@ function buildRegisterAnimalPicker(){
     grid.appendChild(btn);
   });
 }
-function renderAnimalEvoSection(animalId,totalQuizzes){
+function renderAnimalEvoSection(animalId,totalXP){
   const sec=document.getElementById('anim-evo-section');
   if(!sec)return;
   if(!animalId){
-    // No animal chosen yet — show picker
     sec.innerHTML=`
       <div class="prof-section-title" style="margin-bottom:6px">Kies je startdier</div>
-      <div class="prof-section-sub" style="margin-bottom:10px">Je dier groeit met je mee naarmate je meer quizzen maakt. <strong>Je kunt later niet meer wisselen!</strong></div>
+      <div class="prof-section-sub" style="margin-bottom:10px">Je dier evolueert automatisch naarmate je XP verdient. <strong>Je kunt later niet meer wisselen!</strong></div>
       <div class="anim-pick-grid" id="prof-animal-grid"></div>
       <div class="anim-warn">⚠️ <strong>Let op:</strong> na opslaan is je keuze definitief.</div>`;
     const grid=document.getElementById('prof-animal-grid');
@@ -3448,32 +3447,32 @@ function renderAnimalEvoSection(animalId,totalQuizzes){
     });
     return;
   }
-  // Animal chosen — show evolution timeline
   const a=getAnimalById(animalId);
   if(!a){sec.innerHTML='';return;}
-  const stageIdx=getAnimalStageIdx(totalQuizzes);
+  const stageIdx=getAnimalStageIdx(totalXP);
   const isMaxed=stageIdx===ANIM_THRESHOLDS.length-1;
   const nextThreshold=isMaxed?null:ANIM_THRESHOLDS[stageIdx+1];
   const prevThreshold=ANIM_THRESHOLDS[stageIdx];
-  const pct=isMaxed?100:Math.round(Math.min(100,(totalQuizzes-prevThreshold)/(nextThreshold-prevThreshold)*100));
+  const pct=isMaxed?100:Math.round(Math.min(100,(totalXP-prevThreshold)/(nextThreshold-prevThreshold)*100));
   let stagesHtml='';
   a.s.forEach((emoji,i)=>{
     const isDone=i<stageIdx;
     const isCurrent=i===stageIdx;
     const cls=isDone?'done':isCurrent?'current':'';
-    const reqTxt=i===0?'':(ANIM_THRESHOLDS[i]+'q');
+    const reqTxt=i===0?'':ANIM_THRESHOLDS[i].toLocaleString('nl')+' XP';
     stagesHtml+=`<div class="anim-stage ${cls}">
       <div class="anim-stage-pip">${emoji}</div>
       <div class="anim-stage-label">${ANIM_STAGE_NAMES[i]}</div>
       <div class="anim-stage-req">${reqTxt}</div>
     </div>`;
   });
-  const progressHtml=isMaxed?`<div style="font-size:12px;color:var(--or);font-weight:700;text-align:center">🏆 Maximaal niveau bereikt!</div>`:`
-    <div class="anim-evo-prog-bar"><div class="anim-evo-prog-fill" style="width:${pct}%"></div></div>
-    <div class="anim-evo-prog-txt">${totalQuizzes}/${nextThreshold} quizzen → ${ANIM_STAGE_NAMES[stageIdx+1]}</div>`;
+  const progressHtml=isMaxed
+    ?`<div style="font-size:12px;color:var(--or);font-weight:700;text-align:center">🏆 Maximaal niveau bereikt!</div>`
+    :`<div class="anim-evo-prog-bar"><div class="anim-evo-prog-fill" style="width:${pct}%"></div></div>
+      <div class="anim-evo-prog-txt">${totalXP.toLocaleString('nl')} / ${nextThreshold.toLocaleString('nl')} XP → ${ANIM_STAGE_NAMES[stageIdx+1]}</div>`;
   sec.innerHTML=`<div class="anim-evo-card">
     <div class="anim-evo-title">${a.s[stageIdx]} ${a.n} <span class="anim-evo-locked">🔒 Definitief</span></div>
-    <div class="anim-evo-subtitle">${ANIM_STAGE_NAMES[stageIdx]} · ${totalQuizzes} quiz${totalQuizzes!==1?'zen':''} gemaakt</div>
+    <div class="anim-evo-subtitle">${ANIM_STAGE_NAMES[stageIdx]} · ${totalXP.toLocaleString('nl')} XP totaal</div>
     <div class="anim-evo-stages">${stagesHtml}</div>
     <div class="anim-evo-progress">${progressHtml}</div>
   </div>`;
@@ -3494,26 +3493,24 @@ function loadProfile(){
   // Animal evolution
   const animalId=p.animalId||null;
   selectedAnimalId=animalId;
-  const streakInfo=calcStreak();
-  const totalQ=streakInfo.total||0;
+  const totalXP=getTotalXP();
   if(animalId){
-    selectedAvatar=getAnimalEmoji(animalId,totalQ);
+    selectedAvatar=getAnimalEmoji(animalId,totalXP);
   } else {
     selectedAvatar=p.avatar||'🐾';
   }
-  renderAnimalEvoSection(animalId,totalQ);
+  renderAnimalEvoSection(animalId,totalXP);
 }
 
 async function saveProfileData(){
   const get=(id)=>document.getElementById(id)?.value||'';
   let p={};
   try{p=JSON.parse(localStorage.getItem(PROF_KEY)||'{}');}catch(e){p={};}
-  const streakInfo=calcStreak();
-  const totalQ=streakInfo.total||0;
+  const totalXP=getTotalXP();
   // Animal: only set if not already locked
   const lockedAnimalId=p.animalId||null;
   const newAnimalId=lockedAnimalId||(selectedAnimalId||null);
-  const computedAvatar=newAnimalId?getAnimalEmoji(newAnimalId,totalQ):(selectedAvatar||'🐾');
+  const computedAvatar=newAnimalId?getAnimalEmoji(newAnimalId,totalXP):(selectedAvatar||'🐾');
   const updated={
     naam:get('pf-naam').trim(),
     school:get('pf-school').trim(),
@@ -3525,8 +3522,7 @@ async function saveProfileData(){
   await cloudSet('profiel',updated);
   selectedAnimalId=newAnimalId;
   selectedAvatar=computedAvatar;
-  // Re-render evo section
-  renderAnimalEvoSection(newAnimalId,totalQ);
+  renderAnimalEvoSection(newAnimalId,totalXP);
   const msg=document.getElementById('pf-saved-msg');
   if(msg){msg.classList.add('show');setTimeout(()=>msg.classList.remove('show'),2500);}
   updateProfileNav();
