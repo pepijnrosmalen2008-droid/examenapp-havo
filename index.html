@@ -851,6 +851,35 @@ html.dark .calc-btn{background:#2e3550}
 .calc-divider{border:none;border-top:1px solid var(--bo);margin:20px 0}
 .calc-prefill-note{font-size:11px;color:#22C55E;background:rgba(34,197,94,.1);border-radius:8px;padding:6px 10px;margin-bottom:10px;font-weight:600}
 .calc-result-bar{display:flex;align-items:center;gap:10px;margin-top:10px}
+/* ── GAMIFICATION EXTRAS ───────────────────────── */
+/* Floating XP particle */
+@keyframes floatUp{0%{opacity:1;transform:translateY(0) scale(1)}100%{opacity:0;transform:translateY(-70px) scale(1.2)}}
+.xp-float{position:fixed;pointer-events:none;z-index:9999;font-family:var(--font-head);font-size:16px;font-weight:900;color:#22c55e;text-shadow:0 2px 8px rgba(34,197,94,.5);transform:translateX(-50%);animation:floatUp .85s cubic-bezier(.22,1,.36,1) forwards}
+/* Wrong answer shake */
+@keyframes shakeIt{0%,100%{transform:translateX(0)}15%{transform:translateX(-8px)}35%{transform:translateX(8px)}55%{transform:translateX(-5px)}75%{transform:translateX(5px)}}
+.shake{animation:shakeIt .45s ease}
+/* General toast */
+.app-toast{position:fixed;top:72px;left:50%;transform:translateX(-50%);z-index:9998;padding:11px 22px;border-radius:30px;font-family:var(--font-head);font-size:15px;font-weight:800;color:#fff;box-shadow:0 8px 32px rgba(0,0,0,.25);animation:toastIn .3s ease,toastOut .4s ease 2.4s forwards;white-space:nowrap;text-align:center}
+/* Daily goal widget */
+.dg-card{background:var(--s);border:1px solid var(--bo);border-radius:18px;padding:14px 18px;margin-bottom:16px}
+.dg-top{display:flex;align-items:center;gap:8px;margin-bottom:10px}
+.dg-ico{font-size:18px}
+.dg-lbl{font-size:14px;font-weight:700;flex:1;color:var(--dk)}
+.dg-cnt{color:var(--or);font-weight:900}
+.dg-bonus{font-size:12px;font-weight:700;color:#22c55e;background:rgba(34,197,94,.1);border-radius:20px;padding:3px 9px}
+.dg-dots{display:flex;gap:8px;margin-bottom:10px}
+.dg-dot{width:32px;height:8px;border-radius:4px;background:var(--bo2);transition:all .4s cubic-bezier(.34,1.2,.64,1)}
+.dg-dot-done{background:var(--or);box-shadow:0 0 10px rgba(232,92,13,.5)}
+.dg-bar-wrap{height:4px;background:var(--bo2);border-radius:2px;overflow:hidden}
+.dg-bar{height:100%;background:linear-gradient(90deg,var(--or),#f9a825);border-radius:2px;transition:width .6s cubic-bezier(.34,1.2,.64,1)}
+.dg-done{font-size:13px;font-weight:700;color:#22c55e;background:rgba(34,197,94,.08);border:1px solid rgba(34,197,94,.2);border-radius:14px;padding:10px 16px;margin-bottom:16px;display:flex;align-items:center;gap:8px}
+.dg-done span{color:var(--dk);font-weight:600}
+/* Perfect score banner */
+.perfect-banner{background:linear-gradient(135deg,#f59e0b,#ef4444);color:#fff;border-radius:14px;padding:14px 18px;margin-top:14px;text-align:center;font-family:var(--font-head);font-weight:800;font-size:15px;animation:comboIn .5s cubic-bezier(.34,1.2,.64,1)}
+/* Nearly level up nudge */
+.xp-nudge{font-size:12px;color:var(--or);font-weight:700;margin-top:4px;animation:pulse 2s ease-in-out infinite}
+/* Streak milestone toast */
+.streak-toast{background:linear-gradient(135deg,#f59e0b,#E85C0D)}
 .calc-result-bar-track{flex:1;height:8px;border-radius:4px;background:var(--bo);overflow:hidden}
 .calc-result-bar-fill{height:100%;border-radius:4px;transition:width .5s}
 
@@ -1674,6 +1703,7 @@ html.dark .auth-ok{background:#0F2D1C;border-color:#166534;color:#86EFAC}
 
   <!-- DYNAMIC WIDGETS (JS-driven) -->
   <div id="xp-home-bar"></div>
+  <div id="daily-goal-home"></div>
   <div id="daily-challenge-home" class="daily-wrap"></div>
   <div id="streak-home"></div>
   <div id="pomo-home"></div>
@@ -4554,7 +4584,11 @@ function kies(gekozen,correct){
     const earned=Math.round(10*mult*(1+streakBonus)*dcBonus);
     ST.xpThisRound=(ST.xpThisRound||0)+earned;
     showCombo(ST.combo);
-    setTimeout(()=>showXPToast(earned),350);
+    setTimeout(()=>{showXPToast(earned);floatXP(earned);},200);
+  }
+  if(!ok){
+    const qa=document.getElementById('quiz-area')||document.getElementById('snel-area');
+    if(qa){qa.classList.remove('shake');void qa.offsetWidth;qa.classList.add('shake');}
   }
   const q=ST.vragen[ST.idx];
   const chosenOrigIdx=ST.shuffleMap[gekozen];
@@ -4633,12 +4667,17 @@ function toonRes(){
   recordPractice();
   // Rebuild grid and streak to update UI
   const g=document.getElementById('vakgrid');g.innerHTML='';buildGrid();
-  renderStreak();renderFavHome();renderXPHome();renderDailyChallenge();
+  renderStreak();renderFavHome();renderXPHome();renderDailyChallenge();renderDailyGoal();
+  recordDailyGoal();
+  const isPerfect=pct===1&&ST.mode==='snel'&&tot>=3;
   let emi,tit,sub;
-  if(pct>=0.9){emi='🏆';tit='Uitstekend!';sub='Je beheerst dit domein helemaal goed.';}
+  if(isPerfect){emi='🌟';tit='Perfecte score!';sub='Fenomenaal! Alles goed — jij bent klaar voor het CE!';}
+  else if(pct>=0.9){emi='🏆';tit='Uitstekend!';sub='Je beheerst dit domein helemaal goed.';}
   else if(pct>=0.7){emi='🎉';tit='Goed gedaan!';sub='Je snapt het meeste — kleine herhaling loont.';}
   else if(pct>=0.5){emi='📖';tit='Aardig begin';sub='De basis zit erin. Oefen dit domein nog eens.';}
   else{emi='💪';tit='Blijven oefenen!';sub='Dit domein verdient meer aandacht.';}
+  if(isPerfect)setTimeout(()=>launchConfetti('gold'),400);
+  else if(pct>=0.9)setTimeout(()=>launchConfetti(),600);
   document.getElementById('remi').textContent=emi;
   document.getElementById('rtit').textContent=tit;
   document.getElementById('rsub').textContent=sub;
@@ -4667,6 +4706,7 @@ function toonRes(){
   const xpEl=document.getElementById('res-xp-card');
   if(xpEl)xpEl.remove();
   if(ST.mode==='snel'&&ST.xpThisRound>0){
+    if(isPerfect)ST.xpThisRound=Math.round(ST.xpThisRound*1.5);
     const res=addXP(ST.xpThisRound);
     const pct=getXPPct(res.totalXP);
     const lvlName=LEVEL_NAMES[res.newLvl]||'Level '+res.newLvl;
@@ -4678,8 +4718,10 @@ function toonRes(){
       <div class="res-xp-sub">${ST.isDailyChallenge?'⚡ Dagelijkse uitdaging bonus · ':''}&nbsp;</div>
       <div class="res-xp-lvl">Level ${res.newLvl} — ${lvlName} · ${res.totalXP-curXP} / ${nxtXP-curXP} XP</div>
       <div class="xp-bar-wrap"><div class="xp-bar" style="width:${pct}%"></div></div>
-      ${res.leveled?`<div class="levelup-banner">🎉 Level up! Je bent nu level ${res.newLvl} — ${lvlName}!</div>`:''}`;
+      ${res.leveled?`<div class="levelup-banner">🎉 Level up! Je bent nu level ${res.newLvl} — ${lvlName}!</div>`:''}
+    ${isPerfect?`<div class="perfect-banner">🌟 Perfecte score! +50% XP bonus verdiend!</div>`:''}`;
     document.getElementById('rbd').insertAdjacentElement('afterend',card);
+    if(res.leveled)setTimeout(()=>launchConfetti(),300);
     // Mark daily challenge done
     if(ST.isDailyChallenge){
       try{const dc=JSON.parse(localStorage.getItem(DC_KEY)||'{}');dc.done=true;localStorage.setItem(DC_KEY,JSON.stringify(dc));}catch(e){}
@@ -5096,6 +5138,98 @@ function renderFavHome(){
 const XP_KEY='slagio_xp';
 const XP_LEVELS=[0,100,250,500,1000,2000,3500,5000,7500,10000,15000,20000,30000,50000];
 const LEVEL_NAMES=['','Beginner','Leerling','Student','Gevorderd','Scherp','Expert','Ster','Meester','Grootmeester','Legende','Elite','Kampioen','Fenomeen'];
+// ═══════ CONFETTI ═══════
+function launchConfetti(type){
+  type=type||'normal';
+  const canvas=document.createElement('canvas');
+  canvas.style.cssText='position:fixed;inset:0;width:100%;height:100%;pointer-events:none;z-index:9990';
+  document.body.appendChild(canvas);
+  const ctx=canvas.getContext('2d');
+  canvas.width=innerWidth;canvas.height=innerHeight;
+  const colors=type==='gold'?['#f59e0b','#fbbf24','#fcd34d','#fff','#E85C0D']:['#E85C0D','#6366f1','#22c55e','#ec4899','#f59e0b','#60a5fa','#a78bfa'];
+  const count=type==='gold'?130:90;
+  const pieces=[];
+  for(let i=0;i<count;i++){
+    pieces.push({x:Math.random()*innerWidth,y:type==='gold'?Math.random()*innerHeight*.3:Math.random()*-innerHeight*.4,
+      w:Math.random()*10+4,h:Math.random()*6+3,r:Math.random()*Math.PI*2,rd:(Math.random()-.5)*.3,
+      vx:Math.random()*6-3,vy:Math.random()*4+1.5,color:colors[Math.floor(Math.random()*colors.length)],alpha:1});
+  }
+  let fr;
+  (function draw(){
+    ctx.clearRect(0,0,canvas.width,canvas.height);
+    let alive=false;
+    pieces.forEach(p=>{
+      p.x+=p.vx;p.y+=p.vy;p.r+=p.rd;p.vy+=.07;p.alpha-=.006;
+      if(p.alpha>0&&p.y<canvas.height+20){alive=true;ctx.save();ctx.translate(p.x,p.y);ctx.rotate(p.r);ctx.globalAlpha=Math.max(0,p.alpha);ctx.fillStyle=p.color;ctx.fillRect(-p.w/2,-p.h/2,p.w,p.h);ctx.restore();}
+    });
+    if(alive)fr=requestAnimationFrame(draw);else canvas.remove();
+  })();
+  setTimeout(()=>{cancelAnimationFrame(fr);canvas.remove();},6000);
+}
+
+// ═══════ FLOATING XP ═══════
+function floatXP(amount,refEl){
+  const el=refEl||document.getElementById('qfb');
+  if(!el)return;
+  const r=el.getBoundingClientRect();
+  const div=document.createElement('div');
+  div.className='xp-float';
+  div.textContent='+'+amount+' XP';
+  div.style.left=(r.left+r.width/2)+'px';
+  div.style.top=(r.top+10)+'px';
+  document.body.appendChild(div);
+  setTimeout(()=>div.remove(),900);
+}
+
+// ═══════ TOAST ═══════
+function showToast(msg,color){
+  color=color||'#22c55e';
+  document.querySelectorAll('.app-toast').forEach(e=>e.remove());
+  const el=document.createElement('div');
+  el.className='app-toast';
+  el.style.background=color;
+  el.innerHTML=msg;
+  document.body.appendChild(el);
+  setTimeout(()=>el.remove(),2800);
+}
+
+// ═══════ DAILY GOAL ═══════
+const DG_KEY='slagio_daily_goal';
+const DG_TARGET=3;
+function getDailyGoal(){
+  const today=new Date().toISOString().slice(0,10);
+  try{const d=JSON.parse(localStorage.getItem(DG_KEY)||'{}');if(d.date===today)return d;}catch(e){}
+  const d={date:today,done:0,rewarded:false};
+  localStorage.setItem(DG_KEY,JSON.stringify(d));
+  return d;
+}
+function recordDailyGoal(){
+  const d=getDailyGoal();
+  d.done=(d.done||0)+1;
+  const wasRewarded=d.rewarded;
+  if(d.done>=DG_TARGET&&!d.rewarded){
+    d.rewarded=true;
+    localStorage.setItem(DG_KEY,JSON.stringify(d));
+    addXP(75);
+    renderXPHome();
+    setTimeout(()=>{showToast('🎯 Dagdoel bereikt! +75 XP bonus!','#E85C0D');launchConfetti();},500);
+  } else {
+    localStorage.setItem(DG_KEY,JSON.stringify(d));
+  }
+  renderDailyGoal();
+}
+function renderDailyGoal(){
+  const box=document.getElementById('daily-goal-home');
+  if(!box)return;
+  const d=getDailyGoal();
+  const done=Math.min(d.done||0,DG_TARGET);
+  if(d.rewarded||done>=DG_TARGET){
+    box.innerHTML='<div class="dg-done">🎯 Dagdoel bereikt! <span>'+DG_TARGET+' / '+DG_TARGET+' quizzen</span></div>';
+    return;
+  }
+  const dots=Array.from({length:DG_TARGET},function(_,i){return '<div class="dg-dot'+(i<done?' dg-dot-done':'')+'"></div>';}).join('');
+  box.innerHTML='<div class="dg-card"><div class="dg-top"><span class="dg-ico">🎯</span><span class="dg-lbl">Dagdoel <span class="dg-cnt">'+done+'/'+DG_TARGET+'</span></span><span class="dg-bonus">+75 XP</span></div><div class="dg-dots">'+dots+'</div><div class="dg-bar-wrap"><div class="dg-bar" style="width:'+Math.round(done/DG_TARGET*100)+'%"></div></div></div>';
+}
 function getXPData(){try{return JSON.parse(localStorage.getItem(XP_KEY)||'{"xp":0}');}catch(e){return{xp:0};}}
 function getTotalXP(){return getXPData().xp||0;}
 function getLevelForXP(xp){let l=1;for(let i=0;i<XP_LEVELS.length;i++){if(xp>=XP_LEVELS[i])l=i+1;}return Math.min(l,XP_LEVELS.length);}
@@ -5144,12 +5278,14 @@ function renderXPHome(){
   const name=LEVEL_NAMES[lvl]||'Level '+lvl;
   const curXP=getXPForLevel(lvl);
   const nxtXP=getXPForLevel(lvl+1)||curXP+1000;
+  const nudge=pct>=80?`<div class="xp-nudge">🔥 Nog ${nxtXP-xp} XP naar level ${lvl+1}!</div>`:'';
   box.innerHTML=`<div class="xp-home-bar">
     <div class="xp-home-lvl">${lvl}</div>
     <div class="xp-home-info">
       <div class="xp-home-title">${name}</div>
       <div class="xp-home-sub">${xp-curXP} / ${nxtXP-curXP} XP naar level ${lvl+1}</div>
       <div class="xp-bar-wrap"><div class="xp-bar" style="width:${pct}%"></div></div>
+      ${nudge}
     </div>
   </div>`;
 }
@@ -5929,6 +6065,7 @@ renderFavHome();
 renderStreak();
 renderXPHome();
 renderDailyChallenge();
+renderDailyGoal();
 buildGrid();
 updateProfileNav();
 updateLevelChip();
