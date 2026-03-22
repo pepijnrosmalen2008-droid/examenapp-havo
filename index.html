@@ -430,12 +430,12 @@ html.dark .qb{background:#2e3550}
 .qstp:hover{background:rgba(255,255,255,.18)}
 .qpb{height:6px;background:rgba(255,255,255,.08);margin:14px 18px 10px;border-radius:3px}
 .qpf{height:100%;background:linear-gradient(90deg, var(--or), #f59e0b);border-radius:3px;transition:width 0.5s ease}
-.qring{position:relative;width:56px;height:56px;margin:0 auto 8px}
+.qring{position:relative;width:56px;height:56px;margin:0 auto 8px;filter:drop-shadow(0 0 8px rgba(var(--or-rgb),.6)) drop-shadow(0 0 2px rgba(var(--or-rgb),.4));transition:filter .5s}
 .qring svg{transform:rotate(-90deg)}
 .qring circle{fill:none;stroke-width:4}
-.trbg{stroke:rgba(255,255,255,.1)}
-.trfg{stroke:var(--or);transition:stroke-dashoffset .9s linear}
-.trn{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;font-family:var(--font-head);font-weight:700;font-size:18px;color:#fff}
+.trbg{stroke:rgba(255,255,255,.08)}
+.trfg{stroke:var(--or);transition:stroke-dashoffset .9s linear,stroke .4s}
+.trn{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;font-family:var(--font-head);font-weight:700;font-size:18px;color:#fff;text-shadow:0 0 14px rgba(var(--or-rgb),.8);transition:color .4s,text-shadow .4s}
 .qbody{padding:28px 24px 36px;max-width:740px;margin:14px auto 0;background:rgba(255,255,255,0.04);border-radius:24px;backdrop-filter:blur(12px)}
 .qctr{font-size:14px;font-weight:600;color:rgba(255,255,255,0.5);text-align:center;margin-bottom:10px;letter-spacing:0.3px}
 .qctx{background:rgba(255,255,255,.06);border-radius:14px;padding:16px 18px;margin-bottom:18px;font-size:14px;color:rgba(255,255,255,.72);line-height:1.8;border-left:3px solid rgba(139,92,246,.6)}
@@ -880,9 +880,9 @@ html.dark .calc-btn{background:#2e3550}
 .dom-preview-footer{margin-top:10px;font-size:11px;color:rgba(255,255,255,.3);font-style:italic}
 
 /* Timer urgency pulse */
-@keyframes urgentPulse{0%,100%{transform:scale(1)}50%{transform:scale(1.12)}}
-.timer-urgent{animation:urgentPulse .5s ease-in-out infinite}
-.timer-urgent .trn{color:#F87171!important}
+@keyframes urgentPulse{0%,100%{transform:scale(1);filter:drop-shadow(0 0 8px rgba(248,113,113,.55)) drop-shadow(0 0 2px rgba(248,113,113,.4))}50%{transform:scale(1.13);filter:drop-shadow(0 0 18px rgba(248,113,113,.9)) drop-shadow(0 0 6px rgba(248,113,113,.6))}}
+.timer-urgent{animation:urgentPulse .5s ease-in-out infinite!important;filter:none!important}
+.timer-urgent .trn{color:#F87171!important;text-shadow:0 0 14px rgba(248,113,113,.9)!important}
 .timer-urgent .trfg{stroke:#F87171!important}
 
 /* Answer button micro-interaction */
