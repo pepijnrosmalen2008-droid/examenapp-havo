@@ -4729,6 +4729,23 @@ function calcStreak(){
   }
   return {current,total:s.totalQuizzes||0,days:s.days};
 }
+function startStreakQuiz(){
+  // Open a random subject from mijn vakken, or scroll to the vakgrid
+  const mijn=JSON.parse(localStorage.getItem('examenapp_'+lvlCol('mijnvakken'))||'[]');
+  if(mijn.length>0){
+    const id=mijn[Math.floor(Math.random()*mijn.length)];
+    openVak(id);
+    return;
+  }
+  // Fallback: scroll to vakgrid and highlight it
+  const grid=document.getElementById('vakgrid');
+  if(grid){
+    grid.scrollIntoView({behavior:'smooth',block:'start'});
+    grid.style.transition='box-shadow 0.3s';
+    grid.style.boxShadow='0 0 0 3px var(--or), 0 0 24px rgba(var(--or-rgb),.3)';
+    setTimeout(()=>{grid.style.boxShadow='';},1600);
+  }
+}
 function renderStreak(){
   const box=document.getElementById('streak-home');
   const info=calcStreak();
@@ -4800,7 +4817,7 @@ function renderStreak(){
     </div>
     <div class="streak-week">${weekHtml}</div>
     <div class="streak-badges-row">${badgeHtml}</div>
-    ${!practicedToday?`<button class="streak-cta" onclick="show('home');setTimeout(()=>document.querySelector('.vak-chip')?.click(),200)">🎯 Oefen vandaag — verleng je streak!</button>`:''}
+    ${!practicedToday?`<button class="streak-cta" onclick="startStreakQuiz()">🎯 Oefen vandaag — verleng je streak!</button>`:''}
   </div>`;
   // Update longest streak
   if(info.current>longest){s.longestStreak=info.current;cloudSet('streak',s);}
