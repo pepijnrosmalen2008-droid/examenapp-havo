@@ -1121,6 +1121,30 @@ html.dark .auth-ok{background:#0F2D1C;border-color:#166534;color:#86EFAC}
 .prof-nav-btn{margin-left:8px;padding:6px 14px;border-radius:20px;font-size:13px;font-weight:600;cursor:pointer;border:1.5px solid var(--bo);background:var(--s);color:var(--dk);transition:all .2s;font-family:var(--font);display:flex;align-items:center;gap:6px}
 .prof-nav-btn:hover{background:var(--bg2);border-color:var(--or)}
 .prof-nav-btn .pnb-avatar{width:22px;height:22px;border-radius:50%;background:var(--or);color:#fff;font-size:11px;font-weight:800;display:flex;align-items:center;justify-content:center;flex-shrink:0}
+
+/* ── XP & GAMIFICATION ───────────────────────── */
+.combo-badge{position:fixed;top:76px;right:16px;background:linear-gradient(135deg,#f59e0b,#ef4444);color:#fff;border-radius:24px;padding:8px 18px;font-weight:800;font-size:15px;z-index:300;animation:comboIn .35s cubic-bezier(.34,1.5,.64,1);pointer-events:none;box-shadow:0 4px 20px rgba(239,68,68,.4)}
+@keyframes comboIn{from{transform:scale(.4) translateY(-20px);opacity:0}to{transform:scale(1) translateY(0);opacity:1}}
+.xp-toast{position:fixed;top:76px;left:50%;transform:translateX(-50%);background:#22c55e;color:#fff;border-radius:20px;padding:7px 20px;font-weight:700;font-size:14px;z-index:300;animation:toastIn .3s ease,toastOut .4s ease 1s forwards;pointer-events:none;box-shadow:0 4px 16px rgba(34,197,94,.45)}
+@keyframes toastIn{from{opacity:0;transform:translateX(-50%) translateY(-10px)}to{opacity:1;transform:translateX(-50%) translateY(0)}}
+@keyframes toastOut{to{opacity:0;transform:translateX(-50%) translateY(-10px)}}
+.xp-bar-wrap{background:var(--bo);border-radius:10px;height:7px;overflow:hidden;margin:10px 0 4px}
+.xp-bar{height:100%;background:linear-gradient(90deg,var(--or),#f59e0b);border-radius:10px;transition:width .8s cubic-bezier(.34,1.2,.64,1)}
+.lvl-badge{background:var(--or);color:#fff;border-radius:10px;padding:2px 9px;font-size:11px;font-weight:800;margin-left:6px;letter-spacing:.3px}
+.res-xp{background:linear-gradient(135deg,rgba(var(--or-rgb),.08),rgba(var(--or-rgb),.03));border:1px solid rgba(var(--or-rgb),.2);border-radius:18px;padding:18px 20px;margin:16px 0;text-align:center}
+.res-xp-num{font-size:32px;font-weight:900;color:var(--or);font-family:var(--font-head);letter-spacing:-.5px}
+.res-xp-sub{font-size:12px;color:var(--mu);margin-top:4px}
+.res-xp-lvl{font-size:13px;font-weight:700;color:var(--dk);margin-top:12px}
+.levelup-banner{background:linear-gradient(135deg,#f59e0b,#ef4444);color:#fff;border-radius:16px;padding:14px 20px;text-align:center;margin-top:12px;font-weight:800;font-size:16px;animation:comboIn .4s cubic-bezier(.34,1.2,.64,1)}
+.daily-wrap{margin-bottom:16px}
+.daily-chip{display:inline-flex;align-items:center;gap:8px;background:linear-gradient(135deg,#f59e0b,#ef4444);color:#fff;border-radius:20px;padding:10px 20px;font-size:13px;font-weight:700;cursor:pointer;width:100%;justify-content:center;border:none;font-family:var(--font);box-shadow:0 4px 18px rgba(239,68,68,.3);transition:transform .2s,box-shadow .2s}
+.daily-chip:hover{transform:translateY(-2px);box-shadow:0 6px 24px rgba(239,68,68,.4)}
+.daily-done{display:inline-flex;align-items:center;gap:8px;background:var(--s);color:var(--mu);border-radius:20px;padding:10px 20px;font-size:13px;font-weight:600;width:100%;justify-content:center;border:1px solid var(--bo)}
+.xp-home-bar{background:var(--s);border:1px solid var(--bo);border-radius:16px;padding:14px 18px;margin-bottom:16px;display:flex;align-items:center;gap:14px}
+.xp-home-lvl{width:44px;height:44px;border-radius:12px;background:var(--or);color:#fff;font-size:17px;font-weight:900;display:flex;align-items:center;justify-content:center;flex-shrink:0;font-family:var(--font-head)}
+.xp-home-info{flex:1}
+.xp-home-title{font-weight:700;font-size:15px;color:var(--dk);font-family:var(--font-head)}
+.xp-home-sub{font-size:12px;color:var(--mu);margin-top:2px}
 </style>
 </head>
 <body>
@@ -1235,6 +1259,8 @@ html.dark .auth-ok{background:#0F2D1C;border-color:#166534;color:#86EFAC}
       <div class="cd-box"><div class="cd-val" id="cd-s">--</div><div class="cd-unit">Sec</div></div>
     </div>
   </div>
+  <div id="xp-home-bar"></div>
+  <div id="daily-challenge-home" class="daily-wrap"></div>
   <div id="streak-home"></div>
   <div id="pomo-home"></div>
   <div id="fav-home" class="fav-section" style="display:none">
@@ -2392,7 +2418,7 @@ youtubeKanaal:'Math with Menno (225K+)',youtubeUrl:'https://youtube.com/@Mathwit
 
 // ═══════ STATE ═══════
 // antwrd entries: {pts: 0|0.5|1}
-let ST = {vak:null,domein:null,mode:null,vragen:[],idx:0,score:0,antwrd:[],timer:null,tijd:15,shuffleMap:[]};
+let ST = {vak:null,domein:null,mode:null,vragen:[],idx:0,score:0,antwrd:[],timer:null,tijd:15,shuffleMap:[],combo:0,xpThisRound:0,isDailyChallenge:false};
 
 // ═══════ UI HELPERS ═══════
 function show(id){
@@ -3028,7 +3054,7 @@ async function syncFromCloud(){
     if(data.streak)localStorage.setItem('examenapp_streak',JSON.stringify(data.streak));
     const favs=data[lvlCol('favs')];if(favs)localStorage.setItem('examenapp_'+lvlCol('favs'),JSON.stringify(favs.list||[]));
     const mijn=data[lvlCol('mijnvakken')];if(mijn)localStorage.setItem('examenapp_'+lvlCol('mijnvakken'),JSON.stringify(mijn.list||[]));
-    updateProfileNav();renderStreak();renderFavHome();buildGrid();
+    updateProfileNav();renderStreak();renderFavHome();renderXPHome();renderDailyChallenge();buildGrid();
   }catch(e){console.warn('syncFromCloud error:',e);}
 }
 
@@ -3472,7 +3498,8 @@ function openQmode(did){
 
 function startQ(mode){
   ST.mode=mode;
-  ST.idx=0;ST.score=0;ST.antwrd=[];ST.tijdPerVraag=[];
+  ST.idx=0;ST.score=0;ST.antwrd=[];ST.tijdPerVraag=[];ST.combo=0;ST.xpThisRound=0;
+  if(!ST.isDailyChallenge)ST.isDailyChallenge=false;
   const pool=mode==='snel'?ST.domein.sv:ST.domein.oe;
   ST.vragen=pool.slice();
   document.getElementById('qmeta').textContent=`${ST.vak.naam} · D${ST.domein.id}: ${ST.domein.naam} · ${mode==='snel'?'Snelle Quiz':'Oud-examen'}`;
@@ -3573,6 +3600,16 @@ function kies(gekozen,correct){
   clearInterval(ST.timer);
   const ok=gekozen===correct;
   ST.score+=ok?1:0;
+  if(ok){ST.combo=(ST.combo||0)+1;}else{ST.combo=0;}
+  if(ok&&ST.mode==='snel'){
+    const mult=getComboMult(ST.combo);
+    const streakBonus=getStreakBonus();
+    const dcBonus=ST.isDailyChallenge?2:1;
+    const earned=Math.round(10*mult*(1+streakBonus)*dcBonus);
+    ST.xpThisRound=(ST.xpThisRound||0)+earned;
+    showCombo(ST.combo);
+    setTimeout(()=>showXPToast(earned),350);
+  }
   const q=ST.vragen[ST.idx];
   const chosenOrigIdx=ST.shuffleMap[gekozen];
   const tijdOver=Math.max(0,ST.tijd);
@@ -3650,7 +3687,7 @@ function toonRes(){
   recordPractice();
   // Rebuild grid and streak to update UI
   const g=document.getElementById('vakgrid');g.innerHTML='';buildGrid();
-  renderStreak();renderFavHome();
+  renderStreak();renderFavHome();renderXPHome();renderDailyChallenge();
   let emi,tit,sub;
   if(pct>=0.9){emi='🏆';tit='Uitstekend!';sub='Je beheerst dit domein helemaal goed.';}
   else if(pct>=0.7){emi='🎉';tit='Goed gedaan!';sub='Je snapt het meeste — kleine herhaling loont.';}
@@ -3680,6 +3717,29 @@ function toonRes(){
       <div class="rbr"><span>Totaalscore</span><span style="font-weight:600;color:var(--or)">${sc} / ${tot} punten</span></div>`;
   }
   document.getElementById('rbd').innerHTML=bdHtml;
+  // XP reward
+  const xpEl=document.getElementById('res-xp-card');
+  if(xpEl)xpEl.remove();
+  if(ST.mode==='snel'&&ST.xpThisRound>0){
+    const res=addXP(ST.xpThisRound);
+    const pct=getXPPct(res.totalXP);
+    const lvlName=LEVEL_NAMES[res.newLvl]||'Level '+res.newLvl;
+    const curXP=getXPForLevel(res.newLvl);
+    const nxtXP=getXPForLevel(res.newLvl+1)||curXP+1000;
+    const card=document.createElement('div');
+    card.id='res-xp-card';card.className='res-xp';
+    card.innerHTML=`<div class="res-xp-num">+${res.added} XP</div>
+      <div class="res-xp-sub">${ST.isDailyChallenge?'⚡ Dagelijkse uitdaging bonus · ':''}&nbsp;</div>
+      <div class="res-xp-lvl">Level ${res.newLvl} — ${lvlName} · ${res.totalXP-curXP} / ${nxtXP-curXP} XP</div>
+      <div class="xp-bar-wrap"><div class="xp-bar" style="width:${pct}%"></div></div>
+      ${res.leveled?`<div class="levelup-banner">🎉 Level up! Je bent nu level ${res.newLvl} — ${lvlName}!</div>`:''}`;
+    document.getElementById('rbd').insertAdjacentElement('afterend',card);
+    // Mark daily challenge done
+    if(ST.isDailyChallenge){
+      try{const dc=JSON.parse(localStorage.getItem(DC_KEY)||'{}');dc.done=true;localStorage.setItem(DC_KEY,JSON.stringify(dc));}catch(e){}
+      ST.isDailyChallenge=false;
+    }
+  }
   // Leaderboard: save entry for snelle quiz
   const lbBtn=document.getElementById('lb-res-btn');
   if(ST.mode==='snel'){
@@ -3977,6 +4037,104 @@ function renderFavHome(){
     chip.onclick=()=>{openVak(vakId);};
     chips.appendChild(chip);
   });
+}
+
+// ═══════ XP & LEVELS ═══════
+const XP_KEY='slagio_xp';
+const XP_LEVELS=[0,100,250,500,1000,2000,3500,5000,7500,10000,15000,20000,30000,50000];
+const LEVEL_NAMES=['','Beginner','Leerling','Student','Gevorderd','Scherp','Expert','Ster','Meester','Grootmeester','Legende','Elite','Kampioen','Fenomeen'];
+function getXPData(){try{return JSON.parse(localStorage.getItem(XP_KEY)||'{"xp":0}');}catch(e){return{xp:0};}}
+function getTotalXP(){return getXPData().xp||0;}
+function getLevelForXP(xp){let l=1;for(let i=0;i<XP_LEVELS.length;i++){if(xp>=XP_LEVELS[i])l=i+1;}return Math.min(l,XP_LEVELS.length);}
+function getXPForLevel(l){return XP_LEVELS[Math.min(l-1,XP_LEVELS.length-1)]||0;}
+function getXPPct(xp){
+  const l=getLevelForXP(xp);
+  const cur=getXPForLevel(l);
+  const nxt=getXPForLevel(l+1)||cur+1000;
+  return Math.min(Math.round((xp-cur)/(nxt-cur)*100),100);
+}
+function addXP(amount){
+  const d=getXPData();
+  const oldLvl=getLevelForXP(d.xp);
+  d.xp=(d.xp||0)+amount;
+  localStorage.setItem(XP_KEY,JSON.stringify(d));
+  const newLvl=getLevelForXP(d.xp);
+  return{added:amount,oldLvl,newLvl,leveled:newLvl>oldLvl,totalXP:d.xp};
+}
+function getComboMult(combo){if(combo>=5)return 2;if(combo>=3)return 1.5;return 1;}
+function getStreakBonus(){const s=calcStreak();return Math.min((s.current||0)*0.1,0.5);}
+function showCombo(combo){
+  document.querySelectorAll('.combo-badge').forEach(e=>e.remove());
+  if(combo<2)return;
+  const el=document.createElement('div');
+  el.className='combo-badge';
+  const mult=getComboMult(combo);
+  el.textContent=`🔥 ${combo}× combo! ×${mult}`;
+  document.body.appendChild(el);
+  setTimeout(()=>el.remove(),1600);
+}
+function showXPToast(xp){
+  document.querySelectorAll('.xp-toast').forEach(e=>e.remove());
+  const el=document.createElement('div');
+  el.className='xp-toast';
+  el.textContent=`+${xp} XP`;
+  document.body.appendChild(el);
+  setTimeout(()=>el.remove(),1500);
+}
+function renderXPHome(){
+  const box=document.getElementById('xp-home-bar');
+  if(!box)return;
+  const xp=getTotalXP();
+  if(xp===0){box.innerHTML='';return;}
+  const lvl=getLevelForXP(xp);
+  const pct=getXPPct(xp);
+  const name=LEVEL_NAMES[lvl]||'Level '+lvl;
+  const curXP=getXPForLevel(lvl);
+  const nxtXP=getXPForLevel(lvl+1)||curXP+1000;
+  box.innerHTML=`<div class="xp-home-bar">
+    <div class="xp-home-lvl">${lvl}</div>
+    <div class="xp-home-info">
+      <div class="xp-home-title">${name}</div>
+      <div class="xp-home-sub">${xp-curXP} / ${nxtXP-curXP} XP naar level ${lvl+1}</div>
+      <div class="xp-bar-wrap"><div class="xp-bar" style="width:${pct}%"></div></div>
+    </div>
+  </div>`;
+}
+
+// ═══════ DAILY CHALLENGE ═══════
+const DC_KEY='slagio_daily_challenge';
+function getDailyChallenge(){
+  const today=new Date().toISOString().slice(0,10);
+  try{const d=JSON.parse(localStorage.getItem(DC_KEY)||'{}');if(d.date===today)return d;}catch(e){}
+  const vakken=getVK();
+  const all=[];
+  vakken.forEach(v=>v.domeinen.forEach(d=>{if(d.sv&&d.sv.length>=3)all.push({vak:v,domein:d});}));
+  if(!all.length)return null;
+  const pick=all[Math.floor(Math.random()*all.length)];
+  const dc={date:today,vakId:pick.vak.id,vakNaam:pick.vak.naam,domeinId:pick.domein.id,domeinNaam:pick.domein.naam,done:false};
+  localStorage.setItem(DC_KEY,JSON.stringify(dc));
+  return dc;
+}
+function renderDailyChallenge(){
+  const box=document.getElementById('daily-challenge-home');
+  if(!box)return;
+  const dc=getDailyChallenge();
+  if(!dc){box.innerHTML='';return;}
+  if(dc.done){
+    box.innerHTML=`<div class="daily-done">✅ Dagelijkse uitdaging voltooid — +2× XP verdiend!</div>`;
+    return;
+  }
+  box.innerHTML=`<button class="daily-chip" onclick="startDailyChallenge()">⚡ Dagelijkse uitdaging · ${dc.vakNaam}: ${dc.domeinNaam} · 2× XP</button>`;
+}
+function startDailyChallenge(){
+  const dc=getDailyChallenge();
+  if(!dc||dc.done)return;
+  const vak=getVK().find(v=>v.id===dc.vakId);
+  if(!vak)return;
+  const domein=vak.domeinen.find(d=>d.id===dc.domeinId);
+  if(!domein||!domein.sv||!domein.sv.length)return;
+  ST.vak=vak;ST.domein=domein;ST.isDailyChallenge=true;
+  startQ('snel');
 }
 
 // ═══════ STREAK & BADGES ═══════
@@ -4550,6 +4708,8 @@ if(localStorage.getItem('examenapp_level')) applyLevelTheme(APP_LEVEL);
 else document.documentElement.classList.add('level-welcome');
 renderFavHome();
 renderStreak();
+renderXPHome();
+renderDailyChallenge();
 buildGrid();
 updateProfileNav();
 updateLevelChip();
