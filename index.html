@@ -3763,6 +3763,99 @@ function toonRes(){
 function retryQ(){startQ(ST.mode);}
 function switchMode(){show('sc-qmode');}
 
+// ═══════ BOT LEADERBOARD SEED ═══════
+(function seedBots(){
+  const BOT_KEY='slagio_bots_seeded_v2';
+  if(localStorage.getItem(BOT_KEY))return;
+
+  // score(goed, tot, avgTijd) = goed*100 + totalTijd*5
+  function mkEntry(naam,avatar,vak,vakNaam,domeinId,domeinNaam,goed,tot,avgTijd,daysAgo,niveau){
+    const d=new Date();d.setDate(d.getDate()-daysAgo);
+    return{naam,avatar,vak,vakNaam,domeinId,domeinNaam,
+      score:goed*100+Math.round(avgTijd*tot*5),goed,tot,avgTijd,
+      date:d.toISOString().slice(0,10),niveau,isBot:true};
+  }
+
+  // Tier 1 — Elite (bijna perfecte scores, razendsnel)
+  const elite=[
+    {n:'Lars V.',av:'🦅',tier:1},
+    {n:'Sophie K.',av:'⚡',tier:1},
+  ];
+  // Tier 2 — Goed (4/5 gemiddeld, snel)
+  const good=[
+    {n:'Daan M.',av:'🎯',tier:2},
+    {n:'Emma J.',av:'🌟',tier:2},
+    {n:'Noah B.',av:'🔥',tier:2},
+  ];
+  // Tier 3 — Gemiddeld
+  const avg=[
+    {n:'Lena H.',av:'📚',tier:3},
+    {n:'Tim R.',av:'🐢',tier:3},
+    {n:'Sara P.',av:'🌸',tier:3},
+  ];
+  // Tier 4 — Beginner
+  const beg=[
+    {n:'Finn O.',av:'🐣',tier:4},
+    {n:'Mila W.',av:'🍀',tier:4},
+  ];
+  const allBots=[...elite,...good,...avg,...beg];
+
+  // (vak, vakNaam, domeinId, domeinNaam, tot)
+  const havoVakken=[
+    ['nl','Nederlands','A','Lezen',5],
+    ['en','Engels','A','Leesvaardigheid',5],
+    ['wi','Wiskunde','A','Algebra',5],
+    ['bi','Biologie','A','Cellen & Erfelijkheid',5],
+    ['ec','Economie','A','Vraag & Aanbod',5],
+    ['gs','Geschiedenis','A','Moderne Tijd',5],
+    ['na','Natuurkunde','A','Krachten & Beweging',5],
+    ['sk','Scheikunde','A','Stoffen & Reacties',5],
+  ];
+  const vwoVakken=[
+    ['nl','Nederlands','A','Lezen & Schrijven',5],
+    ['en','Engels','A','Leesvaardigheid',5],
+    ['wa','Wiskunde A','A','Statistiek',5],
+    ['wb','Wiskunde B','A','Analyse',5],
+    ['bi','Biologie','A','Cellen & Genetica',5],
+    ['sk','Scheikunde','A','Bindingen & Reacties',5],
+    ['na','Natuurkunde','A','Mechanica',5],
+    ['ec','Economie','A','Marktwerking',5],
+    ['gs','Geschiedenis','A','Moderne Geschiedenis',5],
+    ['in','Informatica','A','Algoritmen',5],
+  ];
+
+  function tierParams(tier){
+    // [goedMin, goedMax, avgTijdMin, avgTijdMax]
+    if(tier===1)return[5,5,9,14];
+    if(tier===2)return[4,5,6,11];
+    if(tier===3)return[2,4,3,8];
+    return[1,3,1,5];
+  }
+
+  ['havo','vwo'].forEach(niveau=>{
+    const vakken=niveau==='havo'?havoVakken:vwoVakken;
+    const entries=[];
+    allBots.forEach(bot=>{
+      const [gMin,gMax,tMin,tMax]=tierParams(bot.tier);
+      // Each bot gets 2-4 random subject entries
+      const count=bot.tier<=2?4:3;
+      const shuffled=[...vakken].sort(()=>Math.random()-.5).slice(0,count);
+      shuffled.forEach(([vak,vakNaam,domeinId,domeinNaam,tot],i)=>{
+        const goed=gMin+Math.floor(Math.random()*(gMax-gMin+1));
+        const avgTijd=+(tMin+Math.random()*(tMax-tMin)).toFixed(1);
+        entries.push(mkEntry(bot.n,bot.av,vak,vakNaam,domeinId,domeinNaam,goed,tot,avgTijd,i+Math.floor(Math.random()*5),niveau));
+      });
+    });
+    entries.sort((a,b)=>b.score-a.score);
+    const key='examenapp_leaderboard_'+niveau;
+    const existing=JSON.parse(localStorage.getItem(key)||'[]');
+    const merged=[...existing,...entries].sort((a,b)=>b.score-a.score).slice(0,200);
+    localStorage.setItem(key,JSON.stringify(merged));
+  });
+
+  localStorage.setItem(BOT_KEY,'1');
+})();
+
 // ═══════ LEADERBOARD ═══════
 function getLbKey(){return 'examenapp_leaderboard_'+APP_LEVEL;}
 function getLbEntries(){try{return JSON.parse(localStorage.getItem(getLbKey())||'[]');}catch(e){return[];}}
