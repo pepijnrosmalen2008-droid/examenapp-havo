@@ -1375,10 +1375,23 @@ html.dark .calc-btn{background:#2e3550}
 .lb-av-rank{position:absolute;bottom:-3px;right:-3px;min-width:20px;height:20px;border-radius:10px;background:var(--mu);color:#fff;font-size:10px;font-weight:800;display:flex;align-items:center;justify-content:center;border:2px solid var(--s);font-family:var(--font);padding:0 4px;line-height:1}
 .lb-row.me .lb-av-rank{background:var(--or)}
 .lb-info{flex:1;min-width:0}
-.lb-name{font-size:14px;font-weight:700;color:var(--dk)}
+.lb-name{font-size:14px;font-weight:700;color:var(--dk);display:flex;align-items:center;gap:6px;flex-wrap:wrap}
 .lb-meta{font-size:11px;color:var(--mu);margin-top:2px}
 .lb-score{text-align:right;flex-shrink:0}
 .lb-score-num{font-size:18px;font-weight:800;color:var(--or)}
+/* Tier + niveau badges */
+.lb-tier{display:inline-flex;align-items:center;gap:3px;font-size:10px;font-weight:700;padding:2px 7px;border-radius:20px;letter-spacing:.3px;white-space:nowrap}
+.lb-tier-elite{background:#fef3c7;color:#92400e}
+.lb-tier-expert{background:#ede9fe;color:#5b21b6}
+.lb-tier-gevorderd{background:#dbeafe;color:#1e40af}
+.lb-tier-leerling{background:#dcfce7;color:#166534}
+.lb-tier-beginner{background:var(--bg2);color:var(--mu)}
+.lb-niveau-chip{display:inline-flex;align-items:center;font-size:10px;font-weight:700;padding:2px 7px;border-radius:20px;background:rgba(var(--or-rgb),.12);color:var(--or);letter-spacing:.5px}
+/* Rank column left of avatar */
+.lb-rank-col{width:28px;text-align:center;font-family:var(--font-head);font-size:13px;font-weight:900;color:var(--mu);flex-shrink:0}
+.lb-rank-col.top1{color:#F59E0B}
+.lb-rank-col.top2{color:#9CA3AF}
+.lb-rank-col.top3{color:#CD7C3F}
 .lb-score-sub{font-size:10px;color:var(--mu)}
 .lb-empty{text-align:center;padding:48px 20px;color:var(--mu);font-size:14px}
 .lb-my-score{background:var(--orl);border:1.5px solid var(--or);border-radius:16px;padding:16px 20px;margin-bottom:20px;display:flex;align-items:center;gap:14px}
@@ -5040,6 +5053,18 @@ function _renderLbWithData(){
   const safePct=(goed,tot)=>tot>0?Math.round(goed/tot*100):0;
   const lbMeta=(e)=>`${e.vakNaam}${e.domeinId?` · D${e.domeinId}`:''}${e.avgTijd?` · gem. ${e.avgTijd}s`:''} · ${safePct(e.goed,e.tot)}% goed`;
   const lbMeSpan=(isMe)=>isMe?' <span style="font-size:10px;color:var(--or)">(jij)</span>':'';
+  // Helper: tier badge from score
+  function tierBadge(score){
+    if(score>=850)return`<span class="lb-tier lb-tier-elite">🏆 Elite</span>`;
+    if(score>=650)return`<span class="lb-tier lb-tier-expert">⚡ Expert</span>`;
+    if(score>=400)return`<span class="lb-tier lb-tier-gevorderd">📚 Gevorderd</span>`;
+    if(score>=150)return`<span class="lb-tier lb-tier-leerling">✏️ Leerling</span>`;
+    return`<span class="lb-tier lb-tier-beginner">🌱 Beginner</span>`;
+  }
+  // Helper: niveau chip
+  const niveauChip=(e)=>e.niveau?`<span class="lb-niveau-chip">${e.niveau.toUpperCase()}</span>`:'';
+  // Helper: rank colour class
+  const rankCls=(r)=>r===1?'top1':r===2?'top2':r===3?'top3':'';
 
   // Podium (top 3)
   const podEl=document.getElementById('lb-podium');
@@ -5061,6 +5086,7 @@ function _renderLbWithData(){
         <div class="lb-pod-bar ${classes[ri]}" style="height:${heights[pi]}px">${e.score}</div>
         <div class="lb-pod-name">${e.naam}</div>
         <div class="lb-pod-score">${e.goed}/${e.tot} · ${safePct(e.goed,e.tot)}%</div>
+        <div style="margin-top:5px;display:flex;gap:4px;justify-content:center;flex-wrap:wrap">${niveauChip(e)}${tierBadge(e.score)}</div>
       </div>`;
     });
     podEl.innerHTML=podHtml;
@@ -5081,12 +5107,12 @@ function _renderLbWithData(){
     const isMe=myNaam&&e.naam===myNaam;
     if(showPodium&&rank<=3)return;
     listHtml+=`<div class="lb-row${isMe?' me':''}">
+      <div class="lb-rank-col ${rankCls(rank)}">${rank===1?'🥇':rank===2?'🥈':rank===3?'🥉':'#'+rank}</div>
       <div class="lb-av-wrap">
         <div class="lb-av">${e.avatar||'🐻'}</div>
-        <div class="lb-av-rank">#${rank}</div>
       </div>
       <div class="lb-info">
-        <div class="lb-name">${e.naam}${lbMeSpan(isMe)}</div>
+        <div class="lb-name">${e.naam}${lbMeSpan(isMe)}${niveauChip(e)}${tierBadge(e.score)}</div>
         <div class="lb-meta">${lbMeta(e)}</div>
       </div>
       <div class="lb-score"><div class="lb-score-num">${e.score}</div><div class="lb-score-sub">pts</div></div>
