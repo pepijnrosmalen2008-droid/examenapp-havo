@@ -2276,26 +2276,34 @@ html.dark .auth-ok{background:#0F2D1C;border-color:#166534;color:#86EFAC}
 <div class="w prof-wrap">
   <div class="prof-page-header">
     <h2>Mijn Profiel</h2>
-    <p>Vul je gegevens in en importeer je SE-cijfers vanuit Magister of SomToday.</p>
   </div>
 
   <!-- Cloud sync status -->
   <div id="cloud-status-bar"></div>
 
-  <!-- Persoonlijke gegevens -->
+  <!-- 1. Avatar + evolutie voortgang -->
   <div class="prof-section">
-    <div class="prof-section-title">Persoonlijke gegevens</div>
-    <div class="prof-section-sub" id="prof-sub-text">Wordt lokaal opgeslagen op dit apparaat</div>
-
-    <!-- Animal evolution display -->
+    <div class="prof-section-title">Avatar &amp; voortgang</div>
+    <div class="prof-section-sub" id="prof-sub-text">Evolueert naarmate je XP verdient</div>
     <div id="anim-evo-section"></div>
-    <!-- Hidden avatar-picker div for backwards compat -->
+    <!-- Hidden compat divs -->
     <div id="avatar-picker" style="display:none"></div>
     <div class="av-preview-row" style="display:none">
       <div class="av-preview" id="av-preview-big">🐼</div>
       <div class="av-preview-info"><strong id="av-preview-name">Geen naam</strong></div>
     </div>
+  </div>
 
+  <!-- 2. Statistieken -->
+  <div class="prof-section" id="mijn-stats-section">
+    <div class="prof-section-title">Mijn statistieken</div>
+    <div class="prof-section-sub">Overzicht van al jouw quiz-activiteit</div>
+    <div id="mijn-stats-content"><p style="color:var(--mu);font-size:13px">Maak eerst een quiz om statistieken te zien.</p></div>
+  </div>
+
+  <!-- 3. Persoonlijke gegevens -->
+  <div class="prof-section">
+    <div class="prof-section-title">Persoonlijke gegevens</div>
     <div class="prof-fields">
       <div class="prof-field full"><label>Naam</label><input id="pf-naam" type="text" placeholder="Jouw voornaam" oninput="document.getElementById('av-preview-name').textContent=this.value||'Geen naam'" /></div>
       <div class="prof-field"><label>School</label><input id="pf-school" type="text" placeholder="Naam van je school" /></div>
@@ -2306,12 +2314,10 @@ html.dark .auth-ok{background:#0F2D1C;border-color:#166534;color:#86EFAC}
     <span class="pf-saved" id="pf-saved-msg">✓ Opgeslagen</span>
   </div>
 
-  <!-- SE Cijfers -->
+  <!-- 4. SE Cijfers -->
   <div class="prof-section">
     <div class="prof-section-title">SE-cijfers</div>
     <div class="prof-section-sub">Vul je schoolexamencijfers in — gebruikt door de slaag-/zakrekenaars</div>
-
-    <!-- Unified import panel -->
     <div class="import-panel show" id="imp-panel-unified" style="display:block">
       <div class="import-steps">
         <strong>Importeer vanuit Magister of SomToday</strong>
@@ -2326,18 +2332,9 @@ html.dark .auth-ok{background:#0F2D1C;border-color:#166534;color:#86EFAC}
       <br><button class="import-go-btn" onclick="doImport('unified')">🔍 Analyseer &amp; importeer →</button>
       <div class="import-result" id="imp-result-unified"></div>
     </div>
-
-    <!-- Manual grade inputs -->
     <div class="cijfer-grid" id="cijfer-grid"></div>
     <button class="cijfer-save-btn" onclick="saveCijfers()">Cijfers opslaan</button>
     <span class="pf-saved" id="cijfer-saved-msg">✓ Opgeslagen</span>
-  </div>
-
-  <!-- Mijn statistieken -->
-  <div class="prof-section" id="mijn-stats-section">
-    <div class="prof-section-title">Mijn statistieken</div>
-    <div class="prof-section-sub">Overzicht van al jouw quiz-activiteit</div>
-    <div id="mijn-stats-content"><p style="color:var(--mu);font-size:13px">Maak eerst een quiz om statistieken te zien.</p></div>
   </div>
 </div>
 </div>
@@ -5312,7 +5309,7 @@ function _renderLbWithData(){
     order.forEach((ri,pi)=>{
       const e=top[ri];if(!e)return;
       const isMe=myNaam&&e.naam===myNaam;
-      podHtml+=`<div class="lb-pod" onclick="openLbProfile(${JSON.stringify(e.naam)})" style="cursor:pointer">
+      podHtml+=`<div class="lb-pod lb-clickable" data-lbname="${e.naam.replace(/"/g,'&quot;')}" style="cursor:pointer">
         <div class="lb-pod-medal">${medals[ri]}</div>
         <div style="position:relative;display:inline-block">
           <div class="lb-pod-avatar ${classes[ri]}" style="${isMe?'border-color:var(--or)':''}">${e.avatar||'🐻'}</div>
@@ -5341,7 +5338,7 @@ function _renderLbWithData(){
     const rank=i+1;
     const isMe=myNaam&&e.naam===myNaam;
     if(showPodium&&rank<=3)return;
-    listHtml+=`<div class="lb-row${isMe?' me':''}" onclick="openLbProfile(${JSON.stringify(e.naam)})">
+    listHtml+=`<div class="lb-row${isMe?' me':''} lb-clickable" data-lbname="${e.naam.replace(/"/g,'&quot;')}">
       <div class="lb-rank-col ${rankCls(rank)}">${rank===1?'🥇':rank===2?'🥈':rank===3?'🥉':'#'+rank}</div>
       <div class="lb-av-wrap">
         <div class="lb-av">${e.avatar||'🐻'}</div>
@@ -5354,6 +5351,11 @@ function _renderLbWithData(){
     </div>`;
   });
   listEl.innerHTML=listHtml||'';
+
+  // Attach click handlers via delegation (avoids inline-onclick quote issues)
+  document.querySelectorAll('.lb-clickable').forEach(el=>{
+    el.addEventListener('click',()=>openLbProfile(el.dataset.lbname));
+  });
 }
 
 // ═══════ COUNTDOWN ═══════
