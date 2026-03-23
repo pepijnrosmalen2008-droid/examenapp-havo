@@ -1701,6 +1701,20 @@ html.dark .auth-ok{background:#0F2D1C;border-color:#166534;color:#86EFAC}
 .daily-chip{display:inline-flex;align-items:center;gap:8px;background:linear-gradient(135deg,#f59e0b,#ef4444);color:#fff;border-radius:20px;padding:10px 20px;font-size:13px;font-weight:700;cursor:pointer;width:100%;justify-content:center;border:none;font-family:var(--font);box-shadow:0 4px 18px rgba(239,68,68,.3);transition:transform .2s,box-shadow .2s}
 .daily-chip:hover{transform:translateY(-2px);box-shadow:0 6px 24px rgba(239,68,68,.4)}
 .daily-done{display:inline-flex;align-items:center;gap:8px;background:var(--s);color:var(--mu);border-radius:20px;padding:10px 20px;font-size:13px;font-weight:600;width:100%;justify-content:center;border:1px solid var(--bo)}
+/* ── HOME STATS DASHBOARD ─────────────────────── */
+.home-stats-dash{display:flex;gap:10px;padding:16px 16px 0;max-width:680px;margin:0 auto}
+.hsd-pill{flex:1;display:flex;align-items:center;gap:11px;background:var(--s);border:1.5px solid var(--bo);border-radius:16px;padding:13px 14px;cursor:pointer;transition:transform .15s,box-shadow .15s;min-width:0;text-decoration:none}
+html.dark .hsd-pill{background:var(--bg2);border-color:var(--bo2)}
+.hsd-pill:hover{transform:translateY(-2px);box-shadow:0 6px 20px rgba(0,0,0,.1)}
+.hsd-icon{font-size:24px;flex-shrink:0;line-height:1}
+.hsd-body{min-width:0}
+.hsd-val{font-size:18px;font-weight:800;color:var(--dk);line-height:1.15;white-space:nowrap;font-family:var(--font-head)}
+.hsd-lbl{font-size:11px;color:var(--mu);margin-top:2px;letter-spacing:.3px;text-transform:uppercase;font-weight:500}
+.hsd-streak .hsd-val{color:#f97316}
+.hsd-xp .hsd-val{color:#eab308}
+.hsd-avg .hsd-val{color:#22c55e}
+.hsd-avg-warn .hsd-val{color:#ef4444}
+@media(max-width:400px){.hsd-pill{padding:11px 10px;gap:8px}.hsd-val{font-size:15px}.hsd-icon{font-size:20px}}
 .xp-home-bar{background:var(--s);border:1px solid var(--bo);border-radius:16px;padding:14px 18px;margin-bottom:16px;display:flex;align-items:center;gap:14px}
 .xp-home-lvl{width:44px;height:44px;border-radius:12px;background:var(--or);color:#fff;font-size:17px;font-weight:900;display:flex;align-items:center;justify-content:center;flex-shrink:0;font-family:var(--font-head)}
 .xp-home-info{flex:1}
@@ -1896,6 +1910,9 @@ html.dark .auth-ok{background:#0F2D1C;border-color:#166534;color:#86EFAC}
     </div>
   </div>
 </nav>
+
+<!-- STATS DASHBOARD BAR -->
+<div id="home-stats-bar"></div>
 
 <!-- HERO -->
 <div class="hm-hero">
@@ -4302,7 +4319,7 @@ async function syncFromCloud(){
     if(data.streak)localStorage.setItem('examenapp_streak',JSON.stringify(data.streak));
     const favs=data[lvlCol('favs')];if(favs)localStorage.setItem('examenapp_'+lvlCol('favs'),JSON.stringify(favs.list||[]));
     const mijn=data[lvlCol('mijnvakken')];if(mijn)localStorage.setItem('examenapp_'+lvlCol('mijnvakken'),JSON.stringify(mijn.list||[]));
-    updateProfileNav();renderStreak();renderFavHome();renderXPHome();renderDailyChallenge();buildGrid();
+    updateProfileNav();renderStreak();renderFavHome();renderXPHome();renderDailyChallenge();buildGrid();renderHomeStats();
   }catch(e){console.warn('syncFromCloud error:',e);}
 }
 
@@ -5393,7 +5410,7 @@ function toonRes(){
   recordPractice();
   // Rebuild grid and streak to update UI
   const g=document.getElementById('vakgrid');g.innerHTML='';buildGrid();
-  renderStreak();renderFavHome();renderXPHome();renderDailyChallenge();renderDailyGoal();renderLiveCount();
+  renderStreak();renderFavHome();renderXPHome();renderDailyChallenge();renderDailyGoal();renderLiveCount();renderHomeStats();
   recordDailyGoal();
   const isPerfect=pct===1&&ST.mode==='snel'&&tot>=3;
   let emi,tit,sub;
@@ -6262,6 +6279,46 @@ function showXPToast(xp){
   document.body.appendChild(el);
   setTimeout(()=>el.remove(),1500);
 }
+function renderHomeStats(){
+  const box=document.getElementById('home-stats-bar');
+  if(!box)return;
+  // Streak
+  const {current:streak}=calcStreak();
+  // XP / Level
+  const xp=getTotalXP();
+  const lvl=getLevelForXP(xp);
+  // Average grade
+  const cijfers=getSavedCijfers();
+  const vals=Object.values(cijfers).filter(v=>typeof v==='number'&&v>0);
+  const avg=vals.length?vals.reduce((a,b)=>a+b,0)/vals.length:null;
+  // Only render if there is actual data to show
+  if(!xp&&!streak&&avg===null){box.innerHTML='';return;}
+  const streakHtml=`<div class="hsd-pill hsd-streak" onclick="document.getElementById('streak-home')&&document.getElementById('streak-home').scrollIntoView({behavior:'smooth'})" title="Jouw streak" role="button" tabindex="0">
+    <span class="hsd-icon">🔥</span>
+    <div class="hsd-body">
+      <div class="hsd-val">${streak} dag${streak!==1?'en':''}</div>
+      <div class="hsd-lbl">Streak</div>
+    </div>
+  </div>`;
+  const lvlHtml=xp>0?`<div class="hsd-pill hsd-xp" onclick="document.getElementById('xp-home-bar')&&document.getElementById('xp-home-bar').scrollIntoView({behavior:'smooth'})" title="Jouw level en XP" role="button" tabindex="0">
+    <span class="hsd-icon">⭐</span>
+    <div class="hsd-body">
+      <div class="hsd-val">Level ${lvl}</div>
+      <div class="hsd-lbl">${xp} XP</div>
+    </div>
+  </div>`:'';
+  let avgClass='hsd-avg';
+  if(avg!==null&&avg<6)avgClass='hsd-avg hsd-avg-warn';
+  const avgHtml=avg!==null?`<div class="hsd-pill ${avgClass}" onclick="show('sc-cijfers');setTimeout(buildCijferGrid,50)" title="Gemiddeld SE-cijfer" role="button" tabindex="0">
+    <span class="hsd-icon">📈</span>
+    <div class="hsd-body">
+      <div class="hsd-val">${avg.toFixed(1).replace('.',',')}</div>
+      <div class="hsd-lbl">Gemiddelde</div>
+    </div>
+  </div>`:'';
+  box.innerHTML=`<div class="home-stats-dash">${streakHtml}${lvlHtml}${avgHtml}</div>`;
+}
+
 function renderXPHome(){
   const box=document.getElementById('xp-home-bar');
   if(!box)return;
@@ -7048,12 +7105,12 @@ function chooseLevel(level){
   // Show intro for first-time users, home for returning users
   const seen=localStorage.getItem('slagio_seen_intro_v2');
   if(!seen){show('sc-intro');}
-  else{show('sc-home');renderStreak();renderFavHome();renderXPHome();renderDailyChallenge();setTimeout(showTutorial,400);}
+  else{show('sc-home');renderStreak();renderFavHome();renderXPHome();renderDailyChallenge();renderHomeStats();setTimeout(showTutorial,400);}
 }
 function dismissIntro(){
   localStorage.setItem('slagio_seen_intro_v2','1');
   show('sc-home');
-  buildGrid();renderStreak();renderFavHome();renderXPHome();renderDailyChallenge();
+  buildGrid();renderStreak();renderFavHome();renderXPHome();renderDailyChallenge();renderHomeStats();
 }
 function updateLevelChip(){
   const chip=document.getElementById('home-level-chip');
@@ -7070,6 +7127,7 @@ renderFavHome();
 renderStreak();
 renderXPHome();
 renderDailyChallenge();
+renderHomeStats();
 renderDailyGoal();
 buildGrid();
 updateProfileNav();
