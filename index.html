@@ -2309,7 +2309,9 @@ html.dark .auth-ok{background:#0F2D1C;border-color:#166534;color:#86EFAC}
       <div class="auth-err" id="auth-err-register"></div>
       <div class="auth-field"><label>Jouw naam</label><input class="auth-input" id="reg-naam" type="text" placeholder="Voornaam" autocomplete="name"></div>
       <div class="auth-field"><label>E-mailadres</label><input class="auth-input" id="reg-email" type="email" placeholder="jouw@email.nl" autocomplete="email"></div>
-      <div class="auth-field"><label>Wachtwoord <span style="font-weight:400;text-transform:none;letter-spacing:0">(minimaal 6 tekens)</span></label><input class="auth-input" id="reg-pass" type="password" placeholder="••••••••" autocomplete="new-password" onkeydown="if(event.key==='Enter')doRegister()"></div>
+      <div class="auth-field"><label>Wachtwoord <span style="font-weight:400;text-transform:none;letter-spacing:0">(minimaal 8 tekens)</span></label><input class="auth-input" id="reg-pass" type="password" placeholder="••••••••" autocomplete="new-password" oninput="checkPasswordStrength(this.value)" onkeydown="if(event.key==='Enter')doRegister()"></div>
+      <div style="margin:-10px 0 10px"><div style="height:4px;border-radius:2px;background:var(--bo2);overflow:hidden"><div id="reg-pass-strength-fill" style="height:100%;width:0;transition:width .3s,background .3s"></div></div><div id="reg-pass-strength-label" style="font-size:11px;color:var(--mu);margin-top:4px;min-height:16px"></div></div>
+      <div class="auth-field"><label>Bevestig wachtwoord</label><input class="auth-input" id="reg-pass-confirm" type="password" placeholder="••••••••" autocomplete="new-password" onkeydown="if(event.key==='Enter')doRegister()"></div>
       <div class="auth-field">
         <label>Kies je startdier <span style="font-weight:400;text-transform:none;letter-spacing:0">— evolueert met je XP!</span></label>
         <div class="anim-pick-grid" id="reg-animal-grid"></div>
@@ -2330,7 +2332,7 @@ html.dark .auth-ok{background:#0F2D1C;border-color:#166534;color:#86EFAC}
     <p style="font-size:14px;color:var(--mu);margin-bottom:18px;text-align:center">Kies een nieuw wachtwoord voor je account.</p>
     <div class="auth-err" id="reset-err" style="display:none"></div>
     <div class="auth-ok" id="reset-ok" style="display:none"></div>
-    <div class="auth-field"><label>Nieuw wachtwoord <span style="font-weight:400;text-transform:none">(minimaal 6 tekens)</span></label><input class="auth-input" id="reset-pass-input" type="password" placeholder="••••••••" autocomplete="new-password"></div>
+    <div class="auth-field"><label>Nieuw wachtwoord <span style="font-weight:400;text-transform:none">(minimaal 8 tekens)</span></label><input class="auth-input" id="reset-pass-input" type="password" placeholder="••••••••" autocomplete="new-password"></div>
     <div class="auth-field"><label>Herhaal wachtwoord</label><input class="auth-input" id="reset-pass-confirm" type="password" placeholder="••••••••" autocomplete="new-password" onkeydown="if(event.key==='Enter')doResetPassword()"></div>
     <button class="auth-btn" id="reset-pass-btn" onclick="doResetPassword()">Wachtwoord opslaan</button>
   </div>
@@ -4064,6 +4066,31 @@ function buildGrid(){
   if(countBadge)countBadge.textContent=getVK().length+' vakken';
 }
 
+// ═══════ SECURITY HELPERS ═══════
+function escapeHtml(s){return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;').replace(/'/g,'&#39;');}
+function isValidEmail(e){return/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(e);}
+function passwordScore(p){let s=0;if(p.length>=8)s++;if(p.length>=12)s++;if(/[A-Z]/.test(p))s++;if(/[0-9]/.test(p))s++;if(/[^A-Za-z0-9]/.test(p))s++;return Math.min(s,4);}
+function checkPasswordStrength(p){
+  const fill=document.getElementById('reg-pass-strength-fill');
+  const lbl=document.getElementById('reg-pass-strength-label');
+  if(!fill||!lbl)return;
+  if(!p){fill.style.width='0';lbl.textContent='';return;}
+  const s=passwordScore(p);
+  const pcts=['0%','25%','50%','75%','100%'];
+  const cols=['#ef4444','#f59e0b','#eab308','#22c55e','#16a34a'];
+  const txts=['','Zwak','Matig','Goed','Sterk'];
+  fill.style.width=pcts[s];fill.style.background=cols[s];
+  lbl.textContent=txts[s];lbl.style.color=cols[s];
+}
+// Client-side rate limiter for login
+const _rl={n:0,until:0};
+function _rlCheck(errEl){
+  if(Date.now()<_rl.until){const sec=Math.ceil((_rl.until-Date.now())/1000);errEl.textContent='Te veel pogingen. Probeer het over '+sec+' seconden opnieuw.';errEl.style.display='block';return false;}
+  return true;
+}
+function _rlFail(){_rl.n++;if(_rl.n>=5){_rl.until=Date.now()+30000;_rl.n=0;}}
+function _rlReset(){_rl.n=0;_rl.until=0;}
+
 // ═══════ SUPABASE ═══════
 const SUPABASE_URL='https://sxrjdssmgwwygtskovyc.supabase.co';
 const SUPABASE_KEY='eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InN4cmpkc3NtZ3d3eWd0c2tvdnljIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzM2OTEwNDAsImV4cCI6MjA4OTI2NzA0MH0.iML8S6I6wZ9zGUDBZJleyFHlpPYmUvdGyNyDSYcxon4';
@@ -4126,7 +4153,7 @@ function authErrMsg(msg){
   if(m.includes('invalid login')||m.includes('invalid credentials'))return'Onjuist e-mailadres of wachtwoord.';
   if(m.includes('email not confirmed'))return'Bevestig eerst je e-mailadres via de mail die je hebt ontvangen.';
   if(m.includes('already registered')||m.includes('user already exists'))return'Dit e-mailadres is al in gebruik.';
-  if(m.includes('password'))return'Wachtwoord moet minimaal 6 tekens zijn.';
+  if(m.includes('password'))return'Wachtwoord moet minimaal 8 tekens zijn.';
   if(m.includes('rate limit'))return'Te veel pogingen. Probeer het later opnieuw.';
   if(m.includes('network')||m.includes('fetch'))return'Geen internetverbinding.';
   return'Er is iets misgegaan. Probeer het opnieuw.';
@@ -4148,13 +4175,17 @@ async function doLogin(){
   const okEl=document.getElementById('auth-ok-login');
   const btn=document.getElementById('login-btn');
   errEl.style.display='none';okEl.style.display='none';
+  if(!_rlCheck(errEl))return;
   if(!email||!pass){errEl.textContent='Vul je e-mail en wachtwoord in.';errEl.style.display='block';return;}
+  if(!isValidEmail(email)){errEl.textContent='Voer een geldig e-mailadres in.';errEl.style.display='block';return;}
   btn.disabled=true;btn.textContent='Bezig...';
   try{
     const {error}=await SB.auth.signInWithPassword({email,password:pass});
     if(error)throw error;
+    _rlReset();
     show('sc-home');
   }catch(e){
+    _rlFail();
     errEl.textContent=authErrMsg(e.message);errEl.style.display='block';
   }finally{btn.disabled=false;btn.textContent='Inloggen';}
 }
@@ -4163,11 +4194,18 @@ async function doRegister(){
   const naam=document.getElementById('reg-naam').value.trim();
   const email=document.getElementById('reg-email').value.trim();
   const pass=document.getElementById('reg-pass').value;
+  const passConfirm=document.getElementById('reg-pass-confirm').value;
   const errEl=document.getElementById('auth-err-register');
   const btn=document.getElementById('register-btn');
   errEl.style.display='none';
   if(!naam){errEl.textContent='Vul je naam in.';errEl.style.display='block';return;}
-  if(!email||!pass){errEl.textContent='Vul je e-mail en wachtwoord in.';errEl.style.display='block';return;}
+  if(naam.length>50){errEl.textContent='Naam mag maximaal 50 tekens zijn.';errEl.style.display='block';return;}
+  if(!email){errEl.textContent='Vul je e-mailadres in.';errEl.style.display='block';return;}
+  if(!isValidEmail(email)){errEl.textContent='Voer een geldig e-mailadres in.';errEl.style.display='block';return;}
+  if(!pass){errEl.textContent='Vul een wachtwoord in.';errEl.style.display='block';return;}
+  if(pass.length<8){errEl.textContent='Wachtwoord moet minimaal 8 tekens zijn.';errEl.style.display='block';return;}
+  if(passwordScore(pass)<2){errEl.textContent='Wachtwoord is te zwak. Voeg een hoofdletter, cijfer of speciaal teken toe.';errEl.style.display='block';return;}
+  if(pass!==passConfirm){errEl.textContent='Wachtwoorden komen niet overeen.';errEl.style.display='block';return;}
   if(!selectedAnimalId){errEl.textContent='Kies eerst je startdier!';errEl.style.display='block';return;}
   btn.disabled=true;btn.textContent='Bezig...';
   try{
@@ -4212,7 +4250,7 @@ async function doResetPassword(){
   const okEl=document.getElementById('reset-ok');
   const btn=document.getElementById('reset-pass-btn');
   errEl.style.display='none';okEl.style.display='none';
-  if(pass.length<6){errEl.textContent='Wachtwoord moet minimaal 6 tekens zijn.';errEl.style.display='block';return;}
+  if(pass.length<8){errEl.textContent='Wachtwoord moet minimaal 8 tekens zijn.';errEl.style.display='block';return;}
   if(pass!==confirm){errEl.textContent='Wachtwoorden komen niet overeen.';errEl.style.display='block';return;}
   btn.disabled=true;btn.textContent='Opslaan…';
   try{
@@ -4239,7 +4277,7 @@ function updateCloudStatusBar(){
   if(currentUser){
     bar.innerHTML=`<div class="cloud-status">
       <div class="cs-icon">☁️</div>
-      <div class="cs-info"><div class="cs-email">${currentUser.email}</div><div class="cs-sub">Gesynchroniseerd via Supabase ☁️</div></div>
+      <div class="cs-info"><div class="cs-email">${escapeHtml(currentUser.email)}</div><div class="cs-sub">Gesynchroniseerd via Supabase ☁️</div></div>
       <button class="cs-logout" onclick="doLogout()">Uitloggen</button>
     </div>`;
     if(sub)sub.textContent='Wordt gesynchroniseerd met je account ☁️';
