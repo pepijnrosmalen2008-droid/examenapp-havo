@@ -1581,6 +1581,20 @@ html.dark .auth-ok{background:#0F2D1C;border-color:#166534;color:#86EFAC}
 .cijfer-save-btn{margin-top:20px;padding:12px 28px;border-radius:12px;background:var(--or);color:#fff;border:none;font-size:15px;font-weight:600;cursor:pointer;font-family:var(--font);transition:all .2s}
 .cijfer-save-btn:hover{opacity:.9;transform:translateY(-1px)}
 
+/* Mijn stats grid */
+.ms-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:10px;margin:14px 0 18px}
+.ms-card{background:var(--bg2);border:1px solid var(--bo);border-radius:14px;padding:14px 15px}
+.ms-val{font-size:24px;font-weight:900;font-family:var(--font-head);color:var(--dk);line-height:1}
+.ms-lbl{font-size:11px;color:var(--mu);margin-top:3px}
+.ms-bar-wrap{margin-top:6px;background:var(--bo);border-radius:4px;height:5px;overflow:hidden}
+.ms-bar{height:100%;border-radius:4px;background:linear-gradient(90deg,var(--or),color-mix(in srgb,var(--or) 70%,#fff))}
+.ms-row{display:flex;align-items:center;justify-content:space-between;padding:9px 0;border-bottom:1px solid var(--bo);font-size:13px}
+.ms-row:last-child{border-bottom:none}
+.ms-key{color:var(--mu)}
+.ms-val2{font-weight:700;color:var(--dk)}
+.ms-vak-row{display:flex;align-items:center;justify-content:space-between;background:var(--bg2);border-radius:10px;padding:9px 13px;font-size:12px;border:1px solid var(--bo)}
+.ms-vak-naam{font-weight:700;color:var(--dk)}
+.ms-vak-score{font-weight:800;color:var(--or)}
 /* Profile nav pill */
 .prof-nav-btn{margin-left:8px;padding:6px 14px;border-radius:20px;font-size:13px;font-weight:600;cursor:pointer;border:1.5px solid var(--bo);background:var(--s);color:var(--dk);transition:all .2s;font-family:var(--font);display:flex;align-items:center;gap:6px}
 .prof-nav-btn:hover{background:var(--bg2);border-color:var(--or)}
@@ -2090,8 +2104,6 @@ html.dark .auth-ok{background:#0F2D1C;border-color:#166534;color:#86EFAC}
   <div id="lb-podium" class="lb-podium"></div>
   <div class="lb-list" id="lb-list"></div>
 </div>
-<!-- LB Profile overlay -->
-<div id="lbp-overlay" class="lbp-overlay" onclick="closeLbProfile()"></div>
 </div>
 
 <!-- SCHEDULE -->
@@ -2319,6 +2331,13 @@ html.dark .auth-ok{background:#0F2D1C;border-color:#166534;color:#86EFAC}
     <div class="cijfer-grid" id="cijfer-grid"></div>
     <button class="cijfer-save-btn" onclick="saveCijfers()">Cijfers opslaan</button>
     <span class="pf-saved" id="cijfer-saved-msg">✓ Opgeslagen</span>
+  </div>
+
+  <!-- Mijn statistieken -->
+  <div class="prof-section" id="mijn-stats-section">
+    <div class="prof-section-title">Mijn statistieken</div>
+    <div class="prof-section-sub">Overzicht van al jouw quiz-activiteit</div>
+    <div id="mijn-stats-content"><p style="color:var(--mu);font-size:13px">Maak eerst een quiz om statistieken te zien.</p></div>
   </div>
 </div>
 </div>
@@ -4470,7 +4489,73 @@ function openProfiel(){
   loadProfile();
   buildCijferGrid();
   updateCloudStatusBar();
+  buildMijnStats();
   show('sc-profiel');
+}
+
+function buildMijnStats(){
+  const el=document.getElementById('mijn-stats-content');
+  if(!el)return;
+  const prof=JSON.parse(localStorage.getItem(PROF_KEY)||'{}');
+  const myNaam=prof.naam||null;
+  if(!myNaam){el.innerHTML='<p style="color:var(--mu);font-size:13px">Sla eerst je naam op om statistieken bij te houden.</p>';return;}
+  // Gather all my entries (both levels)
+  const entriesH=JSON.parse(localStorage.getItem('examenapp_leaderboard_havo')||'[]');
+  const entriesV=JSON.parse(localStorage.getItem('examenapp_leaderboard_vwo')||'[]');
+  const mine=[...entriesH,...entriesV].filter(e=>!e.isBot&&e.naam===myNaam);
+  if(!mine.length){el.innerHTML='<p style="color:var(--mu);font-size:13px">Maak eerst een quiz om statistieken te zien.</p>';return;}
+  // Aggregate
+  const bestScore=Math.max(...mine.map(e=>e.score));
+  const totalGoed=mine.reduce((s,e)=>s+(e.goed||0),0);
+  const totalTot=mine.reduce((s,e)=>s+(e.tot||0),0);
+  const accuracy=totalTot>0?Math.round(totalGoed/totalTot*100):0;
+  const avgSpeed=+(mine.reduce((s,e)=>s+(e.avgTijd||0),0)/mine.length).toFixed(1);
+  const totalQuizzes=mine.length;
+  // Streak from localStorage
+  const streakKey='examenapp_streak';
+  const streakData=JSON.parse(localStorage.getItem(streakKey)||'{}');
+  const streak=streakData.current||0;
+  // Fav subject
+  const vakMap={};mine.forEach(e=>{vakMap[e.vakNaam]=(vakMap[e.vakNaam]||0)+1;});
+  const favVak=Object.entries(vakMap).sort((a,b)=>b[1]-a[1])[0]?.[0]||'–';
+  // Best per vak
+  const bestPerVak={};
+  mine.forEach(e=>{if(!bestPerVak[e.vakNaam]||e.score>bestPerVak[e.vakNaam].score)bestPerVak[e.vakNaam]=e;});
+  const topVakken=Object.values(bestPerVak).sort((a,b)=>b.score-a.score).slice(0,4);
+  // Tier
+  function tierLabel(s){if(s>=850)return'🏆 Elite';if(s>=650)return'⚡ Expert';if(s>=400)return'📚 Gevorderd';if(s>=150)return'✏️ Leerling';return'🌱 Beginner';}
+  function tierCls(s){if(s>=850)return'lb-tier-elite';if(s>=650)return'lb-tier-expert';if(s>=400)return'lb-tier-gevorderd';if(s>=150)return'lb-tier-leerling';return'lb-tier-beginner';}
+  const vakHtml=topVakken.map(e=>`<div class="ms-vak-row"><span class="ms-vak-naam">${e.vakNaam}${e.domeinId?` · D${e.domeinId}`:''}</span><span style="display:flex;align-items:center;gap:8px"><span style="font-size:11px;color:var(--mu)">${e.goed||0}/${e.tot||0} goed</span><span class="ms-vak-score">${e.score} pts</span></span></div>`).join('');
+  el.innerHTML=`
+    <div style="display:flex;align-items:center;gap:8px;margin-bottom:14px;flex-wrap:wrap">
+      <span class="lb-niveau-chip">${APP_LEVEL.toUpperCase()}</span>
+      <span class="lb-tier ${tierCls(bestScore)}">${tierLabel(bestScore)}</span>
+    </div>
+    <div class="ms-grid">
+      <div class="ms-card">
+        <div class="ms-val">${bestScore}</div>
+        <div class="ms-lbl">⚡ Beste score</div>
+        <div class="ms-bar-wrap"><div class="ms-bar" style="width:${bestScore/10}%"></div></div>
+      </div>
+      <div class="ms-card">
+        <div class="ms-val">${accuracy}%</div>
+        <div class="ms-lbl">🎯 Nauwkeurigheid</div>
+        <div class="ms-bar-wrap"><div class="ms-bar" style="width:${accuracy}%"></div></div>
+      </div>
+      <div class="ms-card">
+        <div class="ms-val">${totalQuizzes}</div>
+        <div class="ms-lbl">📋 Quizzes gespeeld</div>
+      </div>
+      <div class="ms-card">
+        <div class="ms-val">${streak}</div>
+        <div class="ms-lbl">🔥 Dagstreak</div>
+      </div>
+    </div>
+    <div class="ms-row"><span class="ms-key">⏱ Gem. reactietijd</span><span class="ms-val2">${avgSpeed}s per vraag</span></div>
+    <div class="ms-row"><span class="ms-key">✅ Totaal goed</span><span class="ms-val2">${totalGoed} / ${totalTot} vragen</span></div>
+    <div class="ms-row"><span class="ms-key">❤️ Favoriete vak</span><span class="ms-val2">${favVak}</span></div>
+    ${topVakken.length?`<p style="font-size:10px;font-weight:800;color:var(--mu);text-transform:uppercase;letter-spacing:1px;margin:16px 0 8px">Beste quizzes</p><div style="display:flex;flex-direction:column;gap:6px">${vakHtml}</div>`:''}
+  `;
 }
 
 function prefillCalcFromSaved(){
@@ -6600,5 +6685,7 @@ if('serviceWorker' in navigator){
   });
 }
 </script>
+<!-- LB Profile overlay — body-level so position:fixed works always -->
+<div id="lbp-overlay" class="lbp-overlay" onclick="closeLbProfile()"></div>
 </body>
 </html>
