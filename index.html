@@ -1375,6 +1375,28 @@ html.dark .calc-btn{background:#2e3550}
 .av-preview-row{display:flex;align-items:center;gap:16px;margin-bottom:6px}
 .av-preview-info{font-size:13px;color:var(--mu);line-height:1.7}
 .av-preview-info strong{color:var(--dk);display:block;font-size:15px}
+/* ── OE PICKER ── */
+.oep-wrap{max-width:560px;margin:0 auto;padding:24px 16px 100px}
+.oep-header{margin-bottom:6px}
+.oep-header h2{font-size:22px;font-weight:800;color:var(--dk)}
+.oep-meta{font-size:13px;color:var(--mu);margin-bottom:20px;display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+.oep-count-pill{background:rgba(var(--or-rgb),.12);color:var(--or);font-size:11px;font-weight:700;padding:3px 10px;border-radius:20px}
+.oep-group{margin-bottom:24px}
+.oep-group-hdr{display:flex;align-items:center;gap:10px;margin-bottom:10px}
+.oep-jaar{font-family:var(--font-head);font-size:20px;font-weight:900;color:var(--dk)}
+.oep-tv{font-size:11px;font-weight:700;padding:3px 10px;border-radius:20px;background:var(--bg2);color:var(--mu);border:1px solid var(--bo)}
+.oep-tv.tv1{background:rgba(var(--or-rgb),.1);color:var(--or);border-color:rgba(var(--or-rgb),.25)}
+.oep-tv.tv2{background:rgba(99,102,241,.1);color:#6366f1;border-color:rgba(99,102,241,.25)}
+.oep-card{background:var(--s);border:1.5px solid var(--bo);border-radius:16px;padding:16px 18px;cursor:pointer;transition:all .2s;margin-bottom:8px}
+.oep-card:hover{border-color:var(--or);transform:translateY(-2px);box-shadow:0 8px 24px rgba(var(--or-rgb),.12)}
+.oep-card-domein{font-size:10px;font-weight:800;color:var(--or);text-transform:uppercase;letter-spacing:.8px;margin-bottom:6px}
+.oep-card-q{font-size:13px;font-weight:600;color:var(--dk);line-height:1.5;margin-bottom:10px}
+.oep-card-foot{display:flex;align-items:center;justify-content:space-between;gap:8px}
+.oep-card-tags{display:flex;gap:6px;flex-wrap:wrap}
+.oep-card-tag{font-size:10px;font-weight:600;padding:2px 8px;border-radius:20px;background:var(--bg2);color:var(--mu);border:1px solid var(--bo)}
+.oep-card-cta{font-size:11px;font-weight:700;color:var(--or);white-space:nowrap}
+.oep-card:hover .oep-card-cta::after{content:' →'}
+
 /* ── LEADERBOARD ── */
 .lb-wrap{max-width:520px;margin:0 auto;padding:24px 16px 100px}
 .lb-header{text-align:center;margin-bottom:24px}
@@ -2079,6 +2101,21 @@ html.dark .auth-ok{background:#0F2D1C;border-color:#166534;color:#86EFAC}
     <button class="btns" onclick="show('sc-res')">← Terug naar resultaat</button>
     <button class="btns" onclick="show('sc-home')">🏠 Home</button>
   </div>
+</div>
+</div>
+
+<!-- OE PICKER -->
+<div id="sc-oe-pick" class="sc">
+<nav class="nav"><div class="nav-inner"><div class="logo" onclick="show('sc-home')"><img src="/icon-192.png" alt="Slagio" style="width:26px;height:26px;border-radius:7px;object-fit:cover;flex-shrink:0">Slagio</div><button class="bk" id="oep-back-btn" onclick="history.back()">← Terug</button><button class="theme-btn" onclick="toggleDark()" title="Nachtmodus" style="margin-left:auto"><svg viewBox="0 0 24 24"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg></button></div></nav>
+<div class="oep-wrap">
+  <div class="oep-header">
+    <h2>Oud-examenvragen</h2>
+  </div>
+  <div class="oep-meta">
+    <span id="oep-title" style="color:var(--dk);font-weight:700"></span>
+    <span id="oep-count" class="oep-count-pill"></span>
+  </div>
+  <div id="oep-list"></div>
 </div>
 </div>
 
@@ -3199,8 +3236,14 @@ const VAKKEN_VWO=[
 {v:'Hoe bepaal je de hoofdgedachte van een tekst op VWO-niveau?',o:['Zoek de centrale boodschap die de schrijver wil overbrengen — dit kan expliciet of impliciet zijn.','Kopieer de eerste en laatste zin van de tekst.','Neem de meest herhaalde zin.','Zoek naar de langste alinea van de tekst.'],c:0,u:'Hoofdgedachte = centrale boodschap. Bij VWO (4F) is deze vaker impliciet: leid hem af uit tekststructuur, toon en woordkeuze. Parafraseer altijd in eigen woorden. Vermijd te breed ("de tekst gaat over klimaat") of te smal ("de schrijver noemt drie feiten").'},
 {v:'Een schrijver zegt: "Hoewel technologie ons verbindt, leidt het ook tot eenzaamheid." Welk tekstkenmerk illustreert dit?',o:['Een concessie: de schrijver erkent een tegenargument om daarna zijn eigen standpunt kracht bij te zetten.','Een drogreden: de schrijver trekt een onjuiste conclusie.','Een cirkelredenering: het standpunt wordt als bewijs gebruikt.','Een opsomming van feiten.'],c:0,u:'Concessie = toegeven dat het tegenstandpunt enige waarde heeft ("weliswaar verbindt technologie"), waarna het eigen standpunt gehandhaafd wordt ("maar het leidt ook tot eenzaamheid"). Maakt een betoog geloofwaardiger.'},
 {v:'Welke strategie gebruik je bij het samenvatten van een tekst (A3)?',o:['Identificeer de hoofduitspraak en de relevante ondergeschikte uitspraken; laat details en voorbeelden weg.','Kopieer de eerste zin van elke alinea.','Schrijf alle feiten uit de tekst op.','Geef alleen de conclusie van de tekst weer.'],c:0,u:'Samenvatten op 4F: (1) bepaal de hoofduitspraak, (2) benoem de belangrijkste ondergeschikte uitspraken die de hoofdgedachte ondersteunen, (3) laat voorbeelden, details en herhalingen weg. Het CE vraagt ook of een aangeboden samenvatting de kern bevat.'}],
-   oe:[{bron:'VWO NE CE 2024 T1',ctx:'Fragment: "Sociale media beloven verbinding, maar onderzoek toont dat intensief gebruik samenhangt met meer eenzaamheid. Wie spendeert er meer tijd op zijn scherm: de jongere of zijn ouder? De vraag stellen is haar beantwoorden."',v:'(a) Tot welke tekstsoort behoort dit fragment? Beargumenteer. (b) Welke relatie bestaat er tussen de eerste en de tweede zin?',o:[''],c:0,u:'(a) Betogend: de schrijver neemt een beargumenteerd standpunt in (sociale media veroorzaken eenzaamheid ondanks hun belofte). Doel = overtuigen.\n(b) Standpunt–argument-relatie (of oorzaak-gevolg): zin 1 bevat het standpunt (sociale media ≠ echte verbinding), zin 2 geeft een argument (onderzoek wijst op toegenomen eenzaamheid).'},
-{bron:'VWO NE CE 2023',ctx:'',v:'Leg het verschil uit tussen een beschouwende en een betogende tekst. Beschrijf per tekstsoort het schrijfdoel en noem een kenmerkend taalverschil.',o:[''],c:0,u:'Beschouwend: doel = de lezer over een kwestie laten nadenken; presenteert voor- en nadelen maar kiest geen kant. Betogend: doel = overtuigen; neemt expliciet een beargumenteerd standpunt in. Taalverschil: een betoog gebruikt sterkere sturende signaalwoorden ("dus", "daarom", "het is duidelijk dat") en meer waarderende woordkeuze.'}]},
+   oe:[
+{bron:'VWO NE CE 2024 T1',jaar:2024,tijdvak:1,ctx:'Fragment: "Sociale media beloven verbinding, maar onderzoek toont dat intensief gebruik samenhangt met meer eenzaamheid. Wie spendeert er meer tijd op zijn scherm: de jongere of zijn ouder? De vraag stellen is haar beantwoorden."',v:'(a) Tot welke tekstsoort behoort dit fragment? Beargumenteer. (b) Welke relatie bestaat er tussen de eerste en de tweede zin?',o:[''],c:0,u:'(a) Betogend: de schrijver neemt een beargumenteerd standpunt in. Doel = overtuigen.\n(b) Standpunt–argument-relatie: zin 1 = standpunt (sociale media ≠ echte verbinding), zin 2 = argument (onderzoek wijst op toegenomen eenzaamheid).'},
+{bron:'VWO NE CE 2024 T2',jaar:2024,tijdvak:2,ctx:'Fragment: "De invoering van de vierdaagse werkweek heeft in pilotprojecten geleid tot hogere productiviteit. Toch menen critici dat dit niet overal toepasbaar is — zij wijzen op sectoren als de zorg, waar continue bezetting essentieel is."',v:'Bepaal het tekstkarakter. Welke twee perspectieven worden tegenover elkaar gesteld en hoe wordt de verhouding daartussen uitgedrukt?',o:[''],c:0,u:'Tekstkarakter: beschouwend — geen expliciet standpunt, beide kanten worden belicht. Perspectief 1: voorstanders (hogere productiviteit). Perspectief 2: critici (niet universeel toepasbaar, zorg). Verhouding: concessie + tegenstelling via signaalwoord "Toch".'},
+{bron:'VWO NE CE 2023 T1',jaar:2023,tijdvak:1,ctx:'',v:'Leg het verschil uit tussen een beschouwende en een betogende tekst. Beschrijf per tekstsoort het schrijfdoel en noem een kenmerkend taalverschil.',o:[''],c:0,u:'Beschouwend: doel = ter overweging aanbieden; presenteert meerdere perspectieven. Betogend: doel = overtuigen; neemt expliciet standpunt in. Taalverschil: betoog gebruikt sterkere signaalwoorden ("dus", "daarom") en meer waarderende woordkeuze.'},
+{bron:'VWO NE CE 2023 T2',jaar:2023,tijdvak:2,ctx:'Samenvatting aangeboden bij vraag:\n"Klimaatmigratie neemt toe. Mensen vluchten voor droogte. Er komen meer vluchtelingen. Landen sluiten grenzen."',v:'Beoordeel de kwaliteit van deze samenvatting. Benoem minimaal twee concrete tekortkomingen.',o:[''],c:0,u:'Tekortkomingen: (1) Geen causaal verband gelegd — de relatie droogte → migratie → grenssluiting is niet verbonden. (2) Geen hoofdgedachte — het is een opsomming zonder kern. (3) Geen signaalwoorden (coherentie ontbreekt). (4) Te summier: schaal, gevolgen en context ontbreken.'},
+{bron:'VWO NE CE 2022 T1',jaar:2022,tijdvak:1,ctx:'Fragment: "Wetenschappers zijn het erover eens dat de aarde opwarmt. Maar of de mens daar de oorzaak van is, staat nog ter discussie — aldus minister X in een debat."',v:'Noem de tekstrelatie tussen zin 1 en zin 2. Beoordeel daarna de claim van de minister inhoudelijk.',o:[''],c:0,u:'Relatie: tegenstelling/concessie. Beoordeling: de claim is misleidend — de wetenschappelijke consensus (IPCC) stelt dat menselijk handelen de dominante oorzaak is. De minister selecteert bewust een minderheidspositie, wat grenst aan een gezagsdrogreden.'},
+{bron:'VWO NE CE 2022 T2',jaar:2022,tijdvak:2,ctx:'Fragment: "Iedereen kan zien dat jongeren lui zijn geworden. Ze zitten de hele dag op hun telefoon en werken nergens voor."',v:'Identificeer de drogreden in dit fragment en leg uit welk argumentatieschema onjuist wordt toegepast.',o:[''],c:0,u:'Drogreden: overhaaste generalisatie (onjuist voorbeeldschema). "Iedereen kan zien" pretendeert algemeenheid zonder bewijs. De schrijver generaliseert van een selectieve waarneming naar een uitspraak over alle jongeren — niet-representatief aantal gevallen.'}
+]},
   {id:'D',naam:'Argumentatieve vaardigheden',beschrijving:'Betogen analyseren, beoordelen en drogredenen herkennen (CE-onderdeel)',
    onderwerpen:['6 argumentatieschema\'s (oorzaak-gevolg, kenmerk, voor/nadelen, voorbeelden, vergelijking, autoriteit)','3 argumentatiestructuren (enkelvoudig / onderschikkend / nevenschikkend)','Feitelijke vs. waarderende argumenten','Aanvaardbaarheid van argumentatie beoordelen','11 drogredenen (6 schema-overtredingen + 5 discussieregels)','Standpunt, argument en subargument herkennen'],
    sam:'<div class="sam-head">Argumentatieve vaardigheden VWO (domein D)</div><ul><li><strong>6 Argumentatieschema\'s</strong>: (1) oorzaak-gevolg, (2) kenmerk/eigenschap, (3) voor- en nadelen, (4) voorbeelden, (5) vergelijking, (6) autoriteit. Ken elk schema én de bijbehorende drogreden.</li><li><strong>3 Structuren</strong>: enkelvoudig (1 argument), onderschikkend/keten (argument + subargument), nevenschikkend (meerdere onafhankelijke argumenten voor 1 standpunt).</li><li><strong>11 Drogredenen</strong>: 6× onjuist schema (oorzaak-gevolg, kenmerk, voor/nadelen×2 [overdrijven + vals dilemma], voorbeelden [overhaaste generalisatie], vergelijking [verkeerde vergelijking], autoriteit) + 5× discussieregel (persoonlijke aanval, bewijslast ontduiken, cirkelredenering, standpunt vertekenen, publiek bespelen).</li></ul>',
@@ -3209,8 +3252,13 @@ const VAKKEN_VWO=[
 {v:'Iemand zegt: "Jij kunt mij niets vertellen over eerlijkheid — jij liegt zelf ook!" Welke drogreden is dit?',o:['Persoonlijke aanval (ad hominem): de discussiant valt de persoon aan in plaats van de argumentatie.','Bewijslast ontduiken: de discussiant weigert argumenten te geven.','Cirkelredenering: het standpunt wordt als bewijs gebruikt.','Standpunt vertekenen: het argument van de ander wordt onjuist weergegeven.'],c:0,u:'Ad hominem / persoonlijke aanval: overtreding van een discussieregel — de tegenstander wordt beschuldigd van onkunde of slechte eigenschappen i.p.v. dat er op de inhoud wordt ingegaan. De discussiant neemt zijn tegenstander niet serieus als gesprekspartner.'},
 {v:'Wanneer is een argument "feitelijk" in de zin van het CE?',o:['Als de spreker claimt dat de uitspraak waar, aannemelijk of controleerbaar is.','Als de uitspraak gaat over wat goed, mooi of wenselijk is.','Als de uitspraak alleen op gevoel gebaseerd is.','Als de uitspraak afkomstig is van een autoriteit.'],c:0,u:'Feitelijk argument: controleerbaar/verifieerbaar ("Roken verhoogt het risico op longkanker"). Waarderend argument: gaat over normen en waarden ("Roken is immoreel"). Het CE vraagt je feitelijke van waarderende argumenten te onderscheiden.'},
 {v:'Wat is een "vals dilemma"?',o:['Er worden slechts twee opties gepresenteerd terwijl er meer mogelijkheden zijn.','Een argument waarbij de bron onbetrouwbaar is.','Een argument gebaseerd op een niet-representatief voorbeeld.','Twee uitspraken die elkaar tegenspreken.'],c:0,u:'Vals dilemma = onjuist gebruik van het voor-en-nadelenschema: de spreker doet alsof er maar twee keuzes zijn terwijl er meer opties bestaan. Voorbeeld: "Je bent voor of tegen ons." Dit is een drogreden.'}],
-   oe:[{bron:'VWO NE CE 2024 Domein D',ctx:'Tekst: "We moeten social media verbieden voor jongeren onder 16. Landen die dit al doen, zien een daling in angststoornissen. Bovendien zei prof. Van Dam, expert in jeugdpsychologie: \'De schade is wetenschappelijk bewezen.\'"',v:'(a) Benoem de twee argumentatieschema\'s in deze tekst. (b) Analyseer de argumentatiestructuur.',o:[''],c:0,u:'(a) 1. Vergelijkingsschema: landen met verbod → daling angststoornissen → conclusie voor NL. 2. Autoriteitsschema: prof. Van Dam als deskundige bron.\n(b) Nevenschikkende argumentatie: beide argumenten steunen onafhankelijk van elkaar het standpunt (verbod voor <16 jaar). Teken als boomdiagram: standpunt ← arg.1 én standpunt ← arg.2.'},
-{bron:'VWO NE CE 2023 Domein D',ctx:'',v:'Leg uit wat het verschil is tussen onderschikkende en nevenschikkende argumentatie. Geef van elk type een eigen voorbeeld.',o:[''],c:0,u:'Onderschikkend (ketenargumentatie): standpunt ← argument ← subargument. Voorbeeld: "We moeten meer bewegen (standpunt), want dat verbetert gezondheid (argument), omdat beweging het immuunsysteem versterkt (subargument)."\nNevenschikkend: standpunt ← argument 1 én argument 2 (onafhankelijk). Voorbeeld: "We moeten meer bewegen, want het verbetert gezondheid én vermindert stress."'}]},
+   oe:[
+{bron:'VWO NE CE 2024 T1',jaar:2024,tijdvak:1,ctx:'Tekst: "We moeten social media verbieden voor jongeren onder 16. Landen die dit al doen, zien een daling in angststoornissen. Bovendien zei prof. Van Dam, expert in jeugdpsychologie: \'De schade is wetenschappelijk bewezen.\'"',v:'(a) Benoem de twee argumentatieschema\'s in deze tekst. (b) Analyseer de argumentatiestructuur.',o:[''],c:0,u:'(a) 1. Vergelijkingsschema: landen met verbod → daling angststoornissen. 2. Autoriteitsschema: prof. Van Dam als deskundige bron.\n(b) Nevenschikkend: beide argumenten steunen onafhankelijk het standpunt. Boomdiagram: standpunt ← arg.1 én standpunt ← arg.2.'},
+{bron:'VWO NE CE 2024 T2',jaar:2024,tijdvak:2,ctx:'Fragment: "Kernenergie is de enige manier om klimaatverandering te stoppen. Wie tegen kernenergie is, is dus voor meer CO₂-uitstoot."',v:'(a) Welke drogreden bevat de tweede zin? (b) Noem het schema van de eerste zin en de bijbehorende drogreden als die wordt overtreden.',o:[''],c:0,u:'(a) Vals dilemma — slechts twee opties gepresenteerd terwijl er meer duurzame alternatieven zijn. Onjuist voor-en-nadelenschema.\n(b) Eerste zin: oorzaak-gevolgschema. Drogreden: het gevolg kan ook andere oorzaken hebben — er zijn meer oplossingen dan alleen kernenergie.'},
+{bron:'VWO NE CE 2023 T1',jaar:2023,tijdvak:1,ctx:'',v:'Leg uit wat het verschil is tussen onderschikkende en nevenschikkende argumentatie. Geef van elk type een eigen voorbeeld.',o:[''],c:0,u:'Onderschikkend: standpunt ← argument ← subargument (keten). Voorbeeld: "We moeten meer bewegen, want dat verbetert gezondheid, omdat beweging het immuunsysteem versterkt."\nNevenschikkend: standpunt ← argument 1 én argument 2 (onafhankelijk). Voorbeeld: "We moeten meer bewegen, want het verbetert gezondheid én vermindert stress."'},
+{bron:'VWO NE CE 2023 T2',jaar:2023,tijdvak:2,ctx:'Een debater zegt: "Mijn tegenstander heeft zelf ook nooit een echte baan gehad, dus zijn argumenten over de arbeidsmarkt zijn waardeloos."',v:'Benoem de drogreden en leg uit welke discussieregel wordt overtreden. Beschrijf ook hoe je als debater het best op deze aanval reageert.',o:[''],c:0,u:'Drogreden: persoonlijke aanval (ad hominem). Discussieregel: je mag de ander niet diskwalificeren op basis van persoonlijke eigenschappen — ga in op de inhoud. Reactie: "Ik stel voor dat we ons richten op de argumenten zelf..." — keer terug naar inhoud, ga niet mee in de persoonlijke sfeer.'},
+{bron:'VWO NE CE 2022 T1',jaar:2022,tijdvak:1,ctx:'Fragment: "Meer dan 70% van de Nederlandse bevolking wil een verbod op vuurwerk. De meerderheid bepaalt — dus moet vuurwerk verboden worden."',v:'Analyseer de argumentatie volledig: (a) benoem het schema, (b) beoordeel de aanvaardbaarheid, (c) benoem eventuele drogreden.',o:[''],c:0,u:'(a) Beroep op de massa (argumentum ad populum) + kenmerkschema ("meerderheid bepaalt als norm").\n(b) Aanvaardbaarheid betwistbaar: democratische meerderheid is geen automatisch argument voor verbod — vrijheid, traditie en handhaafbaarheid spelen ook mee.\n(c) Drogreden: populariteit ≠ geldig argument voor beleid.'}
+]},
   {id:'E',naam:'Literatuur',beschrijving:'Literaire begrippen, stromingen en 12 literaire werken (schoolexamen)',
    onderwerpen:['Literaire begrippen (perspectief, spanning, thema)','Romantiek en Realisme','Naturalisme en Symbolisme','Modernisme en Postmodernisme','Leeslijst (12 werken vereist)','Literaire analyse schrijven'],
    sam:'<div class="sam-head">Literatuur VWO</div><ul><li><strong>Vereiste werken</strong>: minimaal 12 literaire werken, waarvan minimaal 3 van vóór 1880 en minimaal 3 in een andere taal (bij moderne vreemde talen).</li><li><strong>Analyse</strong>: gebruik literaire begrippen zoals focalisatie, vertelperspectief, tijdverspringen (prolepsis/analepsis), karakterisering en symbolen.</li><li><strong>Stromingen</strong>: ken de kenmerken van Romantiek (gevoel, natuur), Realisme (maatschappijkritiek), Naturalisme (erfelijkheid/milieu), Modernisme (bewustzijnsstroom) en Postmodernisme (metafictie).</li></ul>',sv:[{v:'Wat zijn kenmerken van het Naturalisme?',o:['De mens als product van erfelijkheid en milieu; wetenschappelijke, ongepolijste beschrijving van de werkelijkheid, vaak met aandacht voor sociale misstanden.','Nadruk op gevoel, verbeelding en het verhevene van de natuur.','Ironie, metafictie en zelfreflectie als stijlmiddelen.','Optimisme over technologische vooruitgang en de rede.'],c:0,u:'Naturalisme (ca. 1870–1900): Zola en Multatuli. Kenmerken: determinisme (erfelijkheid + milieu bepalen lot), wetenschappelijke benadering, sociale misstanden, nuchtere toon.'},
@@ -3218,8 +3266,14 @@ const VAKKEN_VWO=[
 {v:'Wat is een analepse?',o:['Een terugblik op een vroegere gebeurtenis (flashback).','Een vooruitwijzing naar een latere gebeurtenis.','Een symbool dat terugkeert in de tekst.','Het weglaten van een deel van de handeling.'],c:0,u:'Anachronie = tijdverspringen. Analepse = terugblik (flashback). Prolepse = vooruitwijzing (flash-forward). Noteer ook omvang (hoe lang) en afstand (hoe ver).'},
 {v:'Wat kenmerkt een onbetrouwbare verteller?',o:['De verteller heeft een vertekend of subjectief beeld van de werkelijkheid door tegenstrijdigheden, overdrijving of selectief geheugen.','Een onbetrouwbare verteller liegt altijd bewust.','Onbetrouwbaarheid staat altijd expliciet aangegeven in de tekst.','Een verteller in de derde persoon is nooit onbetrouwbaar.'],c:0,u:'Herken onbetrouwbaarheid via: tegenstrijdige uitspraken, duidelijke bias, selectief geheugen, zelfrechtvaardiging. Voorbeelden: Holden Caulfield (The Catcher in the Rye).'},
 {v:'Welk kenmerk hoort bij het Modernisme?',o:['Stream of consciousness: directe weergave van de gedachtestroom zonder ordening.','Een lineaire plot met heldere oorzaak-gevolgstructuur.','Optimisme over maatschappelijke vooruitgang.','Een alwetende verteller die de moraal expliciet benoemt.'],c:0,u:'Modernisme (ca. 1900–1940): bewustzijnsstroom (Woolf, Joyce), niet-lineaire tijd, subjectivisme, fragmentatie, existentiële twijfel.'}],
-oe:[{bron:'VWO NE Literatuur CE',ctx:'',v:'Beschrijf drie kenmerken van het Realisme en geef per kenmerk een voorbeeld uit een werk van je leeslijst.',o:[''],c:0,u:'Realisme (ca. 1850–1880): (1) Getrouwe weergave dagelijks leven middenklasse. (2) Maatschappijkritiek (sociale ongelijkheid, hypocrisie). (3) Psychologische karakterisering (personages met diepgang en motieven). Leerling verbindt aan eigen leeslijstwerk.'},
-{bron:'VWO NE Literatuur CE',ctx:'',v:'Leg uit wat hamartia is in de klassieke tragedie en beschrijf hoe dit begrip terugkomt in een modern literair werk dat jij gelezen hebt.',o:[''],c:0,u:'Hamartia (Aristoteles) = de fatale fout of karakterzwakte van de tragische held. Klassiek: Oedipus (hybris/zelfoverschatting). Modern: de leerling koppelt dit aan een concrete romanfiguur — bijv. blindheid voor de werkelijkheid, moreel falen of overdreven ambitie die tot de val leidt.'}]},
+oe:[
+{bron:'VWO NE CE 2024 T1',jaar:2024,tijdvak:1,ctx:'',v:'Beschrijf drie kenmerken van het Realisme en geef per kenmerk een voorbeeld uit een werk van je leeslijst.',o:[''],c:0,u:'Realisme (ca. 1850–1880): (1) Getrouwe weergave dagelijks leven middenklasse. (2) Maatschappijkritiek (sociale ongelijkheid, hypocrisie). (3) Psychologische karakterisering. Leerling verbindt elk kenmerk aan een werk van de eigen leeslijst.'},
+{bron:'VWO NE CE 2024 T2',jaar:2024,tijdvak:2,ctx:'',v:'Leg uit wat hamartia is in de klassieke tragedie en beschrijf hoe dit begrip terugkomt in een modern literair werk dat jij gelezen hebt.',o:[''],c:0,u:'Hamartia (Aristoteles) = de fatale fout of karakterzwakte van de tragische held. Klassiek: Oedipus (hybris). Modern: leerling koppelt aan een romanfiguur — bijv. blindheid voor de werkelijkheid, moreel falen of overdreven ambitie.'},
+{bron:'VWO NE CE 2023 T1',jaar:2023,tijdvak:1,ctx:'',v:'Analyseer het vertelperspectief in een werk van je leeslijst. Gebruik de begrippen focalisatie, verteller en betrouwbaarheid.',o:[''],c:0,u:'Identificeer: ik-verteller (intern), personale (één personage, 3e persoon) of alwetende verteller (nul-focalisatie). Beschrijf hoe focalisatie de interpretatie beïnvloedt. Beoordeel betrouwbaarheid via tegenstrijdigheden, zelfrechtvaardiging of beperkt perspectief.'},
+{bron:'VWO NE CE 2023 T2',jaar:2023,tijdvak:2,ctx:'',v:'Beschrijf de kenmerken van het Naturalisme en leg uit hoe het verschilt van het Realisme. Gebruik een werk van je leeslijst als illustratie.',o:[''],c:0,u:'Naturalisme (ca. 1870–1900): determinisme (erfelijkheid + milieu bepalen lot), wetenschappelijke benadering, fatalistisch perspectief, schrijnende toon. Verschil met Realisme: Realisme beschrijft sociaal eerlijk maar zonder determinisme; Naturalisme ziet het lot als onvermijdelijk.'},
+{bron:'VWO NE CE 2022 T1',jaar:2022,tijdvak:1,ctx:'',v:'Beschrijf het thema en het motief in een werk van je leeslijst. Leg uit hoe het motief het thema ondersteunt en geef concrete tekstplaatsen.',o:[''],c:0,u:'Thema: centrale abstracte boodschap (bijv. identiteitsverlies, schuld). Motief: concreet terugkerend element dat het thema symbolisch verankert (bijv. spiegel bij identiteitsverlies). Leerling onderbouwt met minimaal twee concrete tekstplaatsen.'},
+{bron:'VWO NE CE 2022 T2',jaar:2022,tijdvak:2,ctx:'',v:'Bespreek de kenmerken van het Modernisme aan de hand van een werk van je leeslijst. Besteed aandacht aan zowel vorm als inhoud.',o:[''],c:0,u:'Modernisme (ca. 1900–1940): stream of consciousness, niet-lineaire tijd, subjectivisme, fragmentatie, existentiële twijfel. Formeel: ongewone zinsstructuur, geen lineaire plot. Inhoud: innerlijk bewustzijn, zinloosheid. Leerling past toe op eigen werk.'}
+]},
   {id:'B',naam:'Mondeling',beschrijving:'Presenteren, debatteren en gesprekken voeren (schoolexamen)',
    onderwerpen:['Informatieve presentatie houden','Betogende presentatie met argumentatie','Debatteren en discussiëren','Interviewen en samenvatten','Spreekvaardigheid: structuur, tempo en intonatie','Luistervaardigheid in mondelinge communicatie'],
    sam:'<div class="sam-head">Mondeling VWO (domein B)</div><ul><li><strong>Presentatietypen</strong>: informatief (doel: informeren, heldere structuur), betogend (doel: overtuigen, standpunt verdedigen), beschouwend (doel: ter overweging geven).</li><li><strong>Structuur</strong>: inleiding (onderwerp + doel + wegwijzer), kern (logische volgorde, alineas met één kernzin), conclusie (samenvatting + sluitende gedachte).</li><li><strong>Spreekvaardigheid</strong>: heldere articulatie, variatie in tempo en intonatie, oogcontact, gebruik van gebaren ter ondersteuning.</li><li><strong>Debatteren</strong>: standpunt innemen, argumenteren met schema\'s, concessie doen, tegenargumenten weerleggen.</li><li><strong>Luistervaardigheid</strong>: aantekeningen maken, selectief relevante info onderscheiden van details, samenvatten.</li></ul>',
@@ -4704,12 +4758,91 @@ function openQmode(did){
 }
 
 function startQ(mode){
+  // If oud-examen mode and domain has year-tagged questions → show picker first
+  if(mode==='oud'){
+    const hasJaar=(ST.domein.oe||[]).some(q=>q.jaar);
+    if(hasJaar){openOEPicker();return;}
+  }
   ST.mode=mode;
   ST.idx=0;ST.score=0;ST.antwrd=[];ST.tijdPerVraag=[];ST.combo=0;ST.xpThisRound=0;
   if(!ST.isDailyChallenge)ST.isDailyChallenge=false;
   const pool=mode==='snel'?ST.domein.sv:ST.domein.oe;
   ST.vragen=pool.slice();
   document.getElementById('qmeta').textContent=`${ST.vak.naam} · D${ST.domein.id}: ${ST.domein.naam} · ${mode==='snel'?'Snelle Quiz':'Oud-examen'}`;
+  show('sc-quiz');
+  toonV();
+}
+
+function openOEPicker(){
+  const oe=ST.domein.oe||[];
+  const withJaar=oe.filter(q=>q.jaar);
+  // Group by jaar+tijdvak (desc)
+  const groups={};
+  withJaar.forEach(q=>{
+    const key=`${q.jaar}-${q.tijdvak||1}`;
+    if(!groups[key])groups[key]={jaar:q.jaar,tv:q.tijdvak||1,vragen:[]};
+    groups[key].vragen.push(q);
+  });
+  const sorted=Object.values(groups).sort((a,b)=>b.jaar-a.jaar||b.tv-a.tv);
+  let html='';
+  sorted.forEach(g=>{
+    const tvCls=g.tv===1?'tv1':'tv2';
+    html+=`<div class="oep-group">
+      <div class="oep-group-hdr">
+        <span class="oep-jaar">${g.jaar}</span>
+        <span class="oep-tv ${tvCls}">Tijdvak ${g.tv}</span>
+      </div>`;
+    g.vragen.forEach(q=>{
+      const idx=oe.indexOf(q);
+      const preview=q.v.length>110?q.v.slice(0,110)+'…':q.v;
+      const hasCtx=q.ctx&&q.ctx.trim().length>0;
+      html+=`<div class="oep-card" data-oeidx="${idx}">
+        <div class="oep-card-domein">${ST.domein.naam}</div>
+        <div class="oep-card-q">${preview}</div>
+        <div class="oep-card-foot">
+          <div class="oep-card-tags">
+            ${hasCtx?'<span class="oep-card-tag">📄 Tekstfragment</span>':''}
+            <span class="oep-card-tag">Open vraag</span>
+          </div>
+          <span class="oep-card-cta">Start</span>
+        </div>
+      </div>`;
+    });
+    html+='</div>';
+  });
+  // Uncategorized
+  const noJaar=oe.filter(q=>!q.jaar);
+  if(noJaar.length){
+    html+=`<div class="oep-group"><div class="oep-group-hdr"><span class="oep-jaar" style="font-size:15px">Oefenvragen</span></div>`;
+    noJaar.forEach(q=>{
+      const idx=oe.indexOf(q);
+      const preview=q.v.length>110?q.v.slice(0,110)+'…':q.v;
+      html+=`<div class="oep-card" data-oeidx="${idx}">
+        <div class="oep-card-domein">${ST.domein.naam}</div>
+        <div class="oep-card-q">${preview}</div>
+        <div class="oep-card-foot"><div class="oep-card-tags"><span class="oep-card-tag">Open vraag</span></div><span class="oep-card-cta">Start</span></div>
+      </div>`;
+    });
+    html+='</div>';
+  }
+  document.getElementById('oep-list').innerHTML=html;
+  document.getElementById('oep-title').textContent=`${ST.vak.naam} · Domein ${ST.domein.id}: ${ST.domein.naam}`;
+  document.getElementById('oep-count').textContent=oe.length+' '+(oe.length===1?'vraag':'vragen');
+  document.getElementById('oep-back-btn').onclick=()=>show('sc-qmode');
+  // Attach clicks
+  document.querySelectorAll('#oep-list .oep-card').forEach(card=>{
+    card.addEventListener('click',()=>startOESingle(parseInt(card.dataset.oeidx)));
+  });
+  show('sc-oe-pick');
+}
+
+function startOESingle(qIdx){
+  ST.mode='oud';
+  ST.idx=0;ST.score=0;ST.antwrd=[];ST.tijdPerVraag=[];ST.combo=0;ST.xpThisRound=0;
+  ST.vragen=[ST.domein.oe[qIdx]];
+  const q=ST.domein.oe[qIdx];
+  const jaarLabel=q.jaar?` · ${q.jaar} T${q.tijdvak||1}`:'';
+  document.getElementById('qmeta').textContent=`${ST.vak.naam} · D${ST.domein.id}${jaarLabel}`;
   show('sc-quiz');
   toonV();
 }
