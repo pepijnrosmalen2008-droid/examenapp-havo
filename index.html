@@ -1394,6 +1394,37 @@ html.dark .calc-btn{background:#2e3550}
 .lb-rank-col.top3{color:#CD7C3F}
 .lb-score-sub{font-size:10px;color:var(--mu)}
 .lb-empty{text-align:center;padding:48px 20px;color:var(--mu);font-size:14px}
+.lb-row{cursor:pointer}
+.lb-row:hover{transform:translateY(-1px);box-shadow:0 4px 16px rgba(0,0,0,.08)}
+.lb-pod-avatar{cursor:pointer}
+/* ── LB PROFILE MODAL ── */
+.lbp-overlay{position:fixed;inset:0;z-index:900;background:rgba(0,0,0,.55);backdrop-filter:blur(7px);display:flex;align-items:flex-end;justify-content:center;opacity:0;pointer-events:none;transition:opacity .25s}
+.lbp-overlay.open{opacity:1;pointer-events:all}
+.lbp-card{position:relative;background:var(--s);border-radius:28px 28px 0 0;padding:20px 22px 48px;width:100%;max-width:520px;transform:translateY(100%);transition:transform .38s cubic-bezier(.32,1.1,.46,1);max-height:88vh;overflow-y:auto}
+.lbp-overlay.open .lbp-card{transform:translateY(0)}
+.lbp-drag{width:40px;height:4px;border-radius:2px;background:var(--bo);margin:0 auto 20px}
+.lbp-close{position:absolute;top:18px;right:18px;width:32px;height:32px;border-radius:50%;background:var(--bg2);border:1px solid var(--bo);cursor:pointer;font-size:14px;color:var(--mu);display:flex;align-items:center;justify-content:center;transition:all .15s}
+.lbp-close:hover{background:var(--bo)}
+.lbp-header{display:flex;align-items:center;gap:16px;margin-bottom:16px}
+.lbp-av{font-size:40px;width:68px;height:68px;border-radius:50%;background:var(--bg2);border:3px solid var(--bo);display:flex;align-items:center;justify-content:center;flex-shrink:0}
+.lbp-headinfo{flex:1}
+.lbp-naam{font-size:20px;font-weight:800;color:var(--dk);margin-bottom:5px}
+.lbp-chips{display:flex;gap:5px;flex-wrap:wrap;align-items:center}
+.lbp-bio{font-size:13px;color:var(--mu);font-style:italic;border-left:3px solid var(--or);padding:6px 0 6px 12px;margin-bottom:18px;line-height:1.55}
+.lbp-stats{display:grid;grid-template-columns:repeat(2,1fr);gap:9px;margin-bottom:18px}
+.lbp-stat{background:var(--bg2);border-radius:14px;padding:13px 15px;border:1px solid var(--bo)}
+.lbp-stat-val{font-size:22px;font-weight:900;color:var(--dk);font-family:var(--font-head);line-height:1}
+.lbp-stat-lbl{font-size:11px;color:var(--mu);margin-top:3px}
+.lbp-section-title{font-size:10px;font-weight:800;color:var(--mu);text-transform:uppercase;letter-spacing:1px;margin:18px 0 8px}
+.lbp-detail-row{display:flex;align-items:flex-start;justify-content:space-between;gap:12px;padding:9px 0;border-bottom:1px solid var(--bo);font-size:13px}
+.lbp-detail-row:last-child{border-bottom:none}
+.lbp-detail-key{color:var(--mu);flex-shrink:0}
+.lbp-detail-val{font-weight:700;color:var(--dk);text-align:right}
+.lbp-recent-row{display:flex;align-items:center;justify-content:space-between;background:var(--bg2);border-radius:10px;padding:10px 13px;font-size:12px;border:1px solid var(--bo)}
+.lbp-recent-vak{font-weight:700;color:var(--dk)}
+.lbp-recent-score{font-weight:800;color:var(--or)}
+.lbp-bar-wrap{margin-top:4px;background:var(--bo);border-radius:4px;height:5px;overflow:hidden}
+.lbp-bar-fill{height:100%;border-radius:4px;background:linear-gradient(90deg,var(--or),color-mix(in srgb,var(--or) 70%,#fff));transition:width .6s .2s}
 .lb-my-score{background:var(--orl);border:1.5px solid var(--or);border-radius:16px;padding:16px 20px;margin-bottom:20px;display:flex;align-items:center;gap:14px}
 .lb-my-av{font-size:34px;width:52px;height:52px;border-radius:50%;background:var(--bg2);border:2px solid var(--or);display:flex;align-items:center;justify-content:center;flex-shrink:0}
 .lb-my-info{flex:1}
@@ -2059,6 +2090,8 @@ html.dark .auth-ok{background:#0F2D1C;border-color:#166534;color:#86EFAC}
   <div id="lb-podium" class="lb-podium"></div>
   <div class="lb-list" id="lb-list"></div>
 </div>
+<!-- LB Profile overlay -->
+<div id="lbp-overlay" class="lbp-overlay" onclick="closeLbProfile()"></div>
 </div>
 
 <!-- SCHEDULE -->
@@ -4980,6 +5013,122 @@ async function loadLeaderboardFromSupabase(){
     localStorage.setItem(getLbKey(),JSON.stringify(merged));
   }catch(e){console.warn('leaderboard load error:',e);}
 }
+// ═══════ LB PROFILE ═══════
+const BOT_PROFILES={
+  'Lars V.':{bio:'"Verlies staat niet in mijn woordenboek."',school:'Gymnasium Peregrinorum',studytijd:'🌙 Late avond',feit:'Heeft nog nooit een vraag overgeslagen',streak:14,motto:'Snelheid × Precisie = Dominantie',favVak:'Wiskunde',sterk:'Rekenvakken',zwak:'Taalvakken',goals:'Top 3 blijven'},
+  'Sophie K.':{bio:'"Elk examen is een kans om te bewijzen wie je bent."',school:'Atheneum Nova',studytijd:'🌅 Vroege ochtend',feit:'Voltooide alle VWO-domeinen in één week',streak:11,motto:'Analyseer alles, mis niets',favVak:'Scheikunde',sterk:'Bètavakken',zwak:'Geschiedenis',goals:'Perfecte score halen'},
+  'Daan M.':{bio:'"Als je slim speelt hoef je niet altijd perfect te zijn."',school:'RSG Flamingo',studytijd:'🕐 Middag',feit:'Beantwoordt vragen gemiddeld in onder 7s',streak:7,motto:'Slimmer, niet harder',favVak:'Economie',sterk:'Strategisch denken',zwak:'Scheikunde',goals:'Expert-badge behalen'},
+  'Emma J.':{bio:'"Rustig en bedachtzaam winnen het altijd van haast."',school:'Scholengemeenschap Olympus',studytijd:'☀️ Ochtend',feit:'Sterkst in taalvakken — 5/5 gemiddeld',streak:9,motto:'Precisie boven snelheid',favVak:'Nederlands',sterk:'Taalvakken',zwak:'Wiskunde B',goals:'Alles boven 80% nauwkeurigheid'},
+  'Noah B.':{bio:'"Ik ben hier niet om mee te doen — ik ben hier om te winnen."',school:'De Rijswijk Academie',studytijd:'⚡ Altijd en overal',feit:'Haalde 3× een topscore op dezelfde dag',streak:5,motto:'Vol gas, geen remmen',favVak:'Natuurkunde',sterk:'Snelheid',zwak:'Lange theorie-vragen',goals:'Snelste gemiddelde reactietijd'},
+  'Lena H.':{bio:'"Elke dag een beetje beter dan gisteren."',school:'Montessori Lyceum',studytijd:'🌙 Avond',feit:'Begon 3 weken geleden en groeit snel',streak:4,motto:'Geduld is de sleutel',favVak:'Biologie',sterk:'Alfavakken',zwak:'Wiskunde',goals:'Gevorderd-badge bereiken'},
+  'Tim R.':{bio:'"Solide, betrouwbaar, altijd aanwezig."',school:'Coornhert Lyceum',studytijd:'🕐 Na school',feit:'Speelt elke dag minstens één quiz',streak:6,motto:'Consistent is het nieuwe excellent',favVak:'Geschiedenis',sterk:'Geheugenwerk',zwak:'Grafieken & analyse',goals:'Dagelijkse streak naar 10'},
+  'Sara P.':{bio:'"Ik ben aan het groeien — pas maar op."',school:'Wolfert Tweetalig',studytijd:'☀️ Na schooltijd',feit:'Haar favoriete vak is Biologie',streak:3,motto:'Kleine stappen, grote dromen',favVak:'Biologie',sterk:'Exacte vakken',zwak:'Economie',goals:'Top 5 halen'},
+  'Finn O.':{bio:'"Iedereen begint ergens — dit is mijn begin."',school:'Scholengroep Spinoza',studytijd:'🎮 Weekend',feit:'Net aangemeld, eerste quizzen achter de rug',streak:2,motto:'Vandaag beginner, morgen expert',favVak:'Engels',sterk:'Motivatie',zwak:'Alles nog aan het leren',goals:'Eerste 100 punten scoren'},
+  'Mila W.':{bio:'"Elke vraag is een nieuwe kans om iets te leren."',school:'Stedelijk Gymnasium',studytijd:'🌸 Wanneer ik tijd heb',feit:'Speelt voornamelijk taalvakken',streak:1,motto:'Leren is leven',favVak:'Engels',sterk:'Creatief denken',zwak:'Exacte vakken',goals:'Leerling-badge halen'},
+};
+function getTierLabel(score){
+  if(score>=850)return'🏆 Elite';
+  if(score>=650)return'⚡ Expert';
+  if(score>=400)return'📚 Gevorderd';
+  if(score>=150)return'✏️ Leerling';
+  return'🌱 Beginner';
+}
+function getTierClass(score){
+  if(score>=850)return'lb-tier-elite';
+  if(score>=650)return'lb-tier-expert';
+  if(score>=400)return'lb-tier-gevorderd';
+  if(score>=150)return'lb-tier-leerling';
+  return'lb-tier-beginner';
+}
+function openLbProfile(naam){
+  const allEntries=getLbEntries().filter(e=>e.naam===naam);
+  if(!allEntries.length)return;
+  const botProf=BOT_PROFILES[naam]||null;
+  const isBot=allEntries.some(e=>e.isBot);
+  const avatar=allEntries[0]?.avatar||'🐻';
+  const niveau=allEntries[0]?.niveau?.toUpperCase()||'';
+  // Aggregate stats
+  const bestScore=Math.max(...allEntries.map(e=>e.score));
+  const totalGoed=allEntries.reduce((s,e)=>s+(e.goed||0),0);
+  const totalTot=allEntries.reduce((s,e)=>s+(e.tot||0),0);
+  const accuracy=totalTot>0?Math.round(totalGoed/totalTot*100):0;
+  const avgSpeed=allEntries.length?+(allEntries.reduce((s,e)=>s+(e.avgTijd||0),0)/allEntries.length).toFixed(1):0;
+  const totalQuizzes=allEntries.length;
+  const favVakMap={};
+  allEntries.forEach(e=>{favVakMap[e.vakNaam]=(favVakMap[e.vakNaam]||0)+1;});
+  const favVak=botProf?.favVak||Object.entries(favVakMap).sort((a,b)=>b[1]-a[1])[0]?.[0]||'–';
+  const dates=allEntries.map(e=>e.date).filter(Boolean).sort();
+  const actief=dates[0]||'–';
+  const recent=[...allEntries].sort((a,b)=>b.score-a.score).slice(0,3);
+  const tierLabel=getTierLabel(bestScore);
+  const tierCls=getTierClass(bestScore);
+  const botHtml=botProf?`
+    <p class="lbp-section-title">Persoonlijk</p>
+    <div class="lbp-detail-row"><span class="lbp-detail-key">🏫 School</span><span class="lbp-detail-val">${botProf.school}</span></div>
+    <div class="lbp-detail-row"><span class="lbp-detail-key">⏰ Studytijd</span><span class="lbp-detail-val">${botProf.studytijd}</span></div>
+    <div class="lbp-detail-row"><span class="lbp-detail-key">🔥 Streak</span><span class="lbp-detail-val">${botProf.streak} dagen 🔥</span></div>
+    <div class="lbp-detail-row"><span class="lbp-detail-key">💪 Sterk in</span><span class="lbp-detail-val">${botProf.sterk}</span></div>
+    <div class="lbp-detail-row"><span class="lbp-detail-key">📌 Doel</span><span class="lbp-detail-val">${botProf.goals}</span></div>
+    <div class="lbp-detail-row"><span class="lbp-detail-key">💬 Motto</span><span class="lbp-detail-val" style="font-style:italic">${botProf.motto}</span></div>
+  `:'';
+  const recentHtml=recent.map(e=>`
+    <div class="lbp-recent-row">
+      <span class="lbp-recent-vak">${e.vakNaam}${e.domeinId?` · D${e.domeinId}`:''}</span>
+      <span style="display:flex;align-items:center;gap:8px;flex-shrink:0">
+        <span style="font-size:11px;color:var(--mu)">${e.goed||0}/${e.tot||0} goed</span>
+        <span class="lbp-recent-score">${e.score} pts</span>
+      </span>
+    </div>
+  `).join('');
+  const el=document.getElementById('lbp-overlay');
+  el.innerHTML=`<div class="lbp-card" onclick="event.stopPropagation()">
+    <div class="lbp-drag"></div>
+    <button class="lbp-close" onclick="closeLbProfile()">✕</button>
+    <div class="lbp-header">
+      <div class="lbp-av">${avatar}</div>
+      <div class="lbp-headinfo">
+        <div class="lbp-naam">${naam}${isBot?'<span style="font-size:10px;color:var(--mu);font-weight:500;margin-left:6px">· bot</span>':''}</div>
+        <div class="lbp-chips">
+          ${niveau?`<span class="lb-niveau-chip">${niveau}</span>`:''}
+          <span class="lb-tier ${tierCls}">${tierLabel}</span>
+        </div>
+      </div>
+    </div>
+    ${botProf?.bio?`<p class="lbp-bio">${botProf.bio}</p>`:''}
+    <div class="lbp-stats">
+      <div class="lbp-stat">
+        <div class="lbp-stat-val">${bestScore}</div>
+        <div class="lbp-stat-lbl">⚡ Beste score</div>
+        <div class="lbp-bar-wrap" style="margin-top:7px"><div class="lbp-bar-fill" style="width:${bestScore/10}%"></div></div>
+      </div>
+      <div class="lbp-stat">
+        <div class="lbp-stat-val">${accuracy}%</div>
+        <div class="lbp-stat-lbl">🎯 Nauwkeurigheid</div>
+        <div class="lbp-bar-wrap" style="margin-top:7px"><div class="lbp-bar-fill" style="width:${accuracy}%"></div></div>
+      </div>
+      <div class="lbp-stat">
+        <div class="lbp-stat-val">${avgSpeed}s</div>
+        <div class="lbp-stat-lbl">⏱ Gem. reactietijd</div>
+      </div>
+      <div class="lbp-stat">
+        <div class="lbp-stat-val">${totalQuizzes}</div>
+        <div class="lbp-stat-lbl">📋 Quizzes</div>
+      </div>
+    </div>
+    <p class="lbp-section-title">Statistieken</p>
+    <div class="lbp-detail-row"><span class="lbp-detail-key">❤️ Favoriete vak</span><span class="lbp-detail-val">${favVak}</span></div>
+    <div class="lbp-detail-row"><span class="lbp-detail-key">📅 Actief sinds</span><span class="lbp-detail-val">${actief}</span></div>
+    <div class="lbp-detail-row"><span class="lbp-detail-key">✅ Totaal goed</span><span class="lbp-detail-val">${totalGoed} / ${totalTot} vragen</span></div>
+    ${botHtml}
+    ${recentHtml?`<p class="lbp-section-title" style="margin-top:16px">Beste quizzes</p><div style="display:flex;flex-direction:column;gap:6px">${recentHtml}</div>`:''}
+  </div>`;
+  el.classList.add('open');
+  setTimeout(()=>{el.querySelector('.lbp-bar-fill')&&el.querySelectorAll('.lbp-bar-fill').forEach(b=>{const w=b.style.width;b.style.width='0';setTimeout(()=>b.style.width=w,50);});},50);
+}
+function closeLbProfile(){
+  document.getElementById('lbp-overlay').classList.remove('open');
+}
+
 let lbVakFilter='all';
 function renderLeaderboard(){
   loadLeaderboardFromSupabase().then(()=>_renderLbWithData());
@@ -5078,7 +5227,7 @@ function _renderLbWithData(){
     order.forEach((ri,pi)=>{
       const e=top[ri];if(!e)return;
       const isMe=myNaam&&e.naam===myNaam;
-      podHtml+=`<div class="lb-pod">
+      podHtml+=`<div class="lb-pod" onclick="openLbProfile(${JSON.stringify(e.naam)})" style="cursor:pointer">
         <div class="lb-pod-medal">${medals[ri]}</div>
         <div style="position:relative;display:inline-block">
           <div class="lb-pod-avatar ${classes[ri]}" style="${isMe?'border-color:var(--or)':''}">${e.avatar||'🐻'}</div>
@@ -5107,7 +5256,7 @@ function _renderLbWithData(){
     const rank=i+1;
     const isMe=myNaam&&e.naam===myNaam;
     if(showPodium&&rank<=3)return;
-    listHtml+=`<div class="lb-row${isMe?' me':''}">
+    listHtml+=`<div class="lb-row${isMe?' me':''}" onclick="openLbProfile(${JSON.stringify(e.naam)})">
       <div class="lb-rank-col ${rankCls(rank)}">${rank===1?'🥇':rank===2?'🥈':rank===3?'🥉':'#'+rank}</div>
       <div class="lb-av-wrap">
         <div class="lb-av">${e.avatar||'🐻'}</div>
@@ -5116,7 +5265,7 @@ function _renderLbWithData(){
         <div class="lb-name">${e.naam}${lbMeSpan(isMe)}${niveauChip(e)}${tierBadge(e.score)}</div>
         <div class="lb-meta">${lbMeta(e)}</div>
       </div>
-      <div class="lb-score"><div class="lb-score-num">${e.score}</div><div class="lb-score-sub">pts</div></div>
+      <div class="lb-score"><div class="lb-score-num">${e.score}</div><div class="lb-score-sub">pts</div><div style="font-size:9px;color:var(--mu);margin-top:2px">Bekijk →</div></div>
     </div>`;
   });
   listEl.innerHTML=listHtml||'';
