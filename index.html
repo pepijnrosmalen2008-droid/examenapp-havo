@@ -4840,7 +4840,7 @@ function switchMode(){show('sc-qmode');}
 
 // ═══════ BOT LEADERBOARD SEED ═══════
 function seedBotsNow(){
-  const BOT_KEY='slagio_bots_seeded_v6';
+  const BOT_KEY='slagio_bots_seeded_v7';
   if(localStorage.getItem(BOT_KEY))return;
 
   // score per vraag: 100 (correct) + round(avgTijd/15*100) (snelheid), max 200 per vraag → max 1000
@@ -4853,25 +4853,25 @@ function seedBotsNow(){
 
   // Tier 1 — Elite (bijna perfecte scores, razendsnel)
   const elite=[
-    {n:'Lars V.',av:'🎓',tier:1},
-    {n:'Sophie K.',av:'👑',tier:1},
+    {n:'Lars V.',av:'🦁',tier:1},   // leeuw — koning van het lb
+    {n:'Sophie K.',av:'🦅',tier:1}, // adelaar — scherp & snel
   ];
-  // Tier 2 — Goed (4/5 gemiddeld, snel)
+  // Tier 2 — Expert (4/5 gemiddeld, snel)
   const good=[
-    {n:'Daan M.',av:'🧠',tier:2},
-    {n:'Emma J.',av:'📚',tier:2},
-    {n:'Noah B.',av:'⚡',tier:2},
+    {n:'Daan M.',av:'🦊',tier:2},   // vos — slim & berekend
+    {n:'Emma J.',av:'🦋',tier:2},   // vlinder — elegant & precies
+    {n:'Noah B.',av:'⚡',tier:2},   // bliksem — snel
   ];
-  // Tier 3 — Gemiddeld
+  // Tier 3 — Gevorderd
   const avg=[
-    {n:'Lena H.',av:'✏️',tier:3},
-    {n:'Tim R.',av:'📝',tier:3},
-    {n:'Sara P.',av:'🎒',tier:3},
+    {n:'Lena H.',av:'🦉',tier:3},   // uil — wijsheid in wording
+    {n:'Tim R.',av:'🐻',tier:3},    // beer — solide & stabiel
+    {n:'Sara P.',av:'🌸',tier:3},   // bloesem — aan het groeien
   ];
   // Tier 4 — Beginner
   const beg=[
-    {n:'Finn O.',av:'🌱',tier:4},
-    {n:'Mila W.',av:'💫',tier:4},
+    {n:'Finn O.',av:'🐣',tier:4},   // kuiken — net uitgebroed
+    {n:'Mila W.',av:'🌱',tier:4},   // zaailing — eerste stapjes
   ];
   const allBots=[...elite,...good,...avg,...beg];
 
