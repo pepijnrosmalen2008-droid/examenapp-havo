@@ -1702,7 +1702,7 @@ html.dark .auth-ok{background:#0F2D1C;border-color:#166534;color:#86EFAC}
 .daily-chip:hover{transform:translateY(-2px);box-shadow:0 6px 24px rgba(239,68,68,.4)}
 .daily-done{display:inline-flex;align-items:center;gap:8px;background:var(--s);color:var(--mu);border-radius:20px;padding:10px 20px;font-size:13px;font-weight:600;width:100%;justify-content:center;border:1px solid var(--bo)}
 /* ── HOME STATS DASHBOARD ─────────────────────── */
-.home-stats-dash{display:flex;gap:10px;padding:16px 16px 0;max-width:680px;margin:0 auto}
+.home-stats-dash{display:flex;gap:10px;padding:16px 16px 8px;max-width:680px;margin:0 auto}
 .hsd-pill{flex:1;display:flex;align-items:center;gap:11px;background:var(--s);border:1.5px solid var(--bo);border-radius:16px;padding:13px 14px;cursor:pointer;transition:transform .15s,box-shadow .15s;min-width:0;text-decoration:none}
 html.dark .hsd-pill{background:var(--bg2);border-color:var(--bo2)}
 .hsd-pill:hover{transform:translateY(-2px);box-shadow:0 6px 20px rgba(0,0,0,.1)}
@@ -1911,9 +1911,6 @@ html.dark .hsd-pill{background:var(--bg2);border-color:var(--bo2)}
   </div>
 </nav>
 
-<!-- STATS DASHBOARD BAR -->
-<div id="home-stats-bar"></div>
-
 <!-- HERO -->
 <div class="hm-hero">
   <div class="hm-hero-glow"></div>
@@ -1951,6 +1948,9 @@ html.dark .hsd-pill{background:var(--bg2);border-color:var(--bo2)}
     </div>
   </div>
 </div>
+
+<!-- STATS DASHBOARD BAR -->
+<div id="home-stats-bar"></div>
 
 <div class="w">
 
