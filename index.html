@@ -7189,20 +7189,39 @@ function startFlash(){
     else if(sr.due<=today)dueCards.push({...c,k,sr});
   });
 
+  let queue=[...shuffle(dueCards),...shuffle(newCards).slice(0,20)];
+  let isPractice=false;
+
+  // No due/new cards → fallback: practice all cards (ignores due dates)
+  if(!queue.length){
+    isPractice=true;
+    queue=shuffle(cards.map(c=>{
+      const k=srKey(v.id,d.id,c.term);
+      return{...c,k,sr:srData[k]||{}};
+    }));
+    showToast('Klaar voor vandaag! Extra oefensessie gestart 🔥','var(--or)',2500);
+  }
+
   FC={
     cards,
-    queue:[...shuffle(dueCards),...shuffle(newCards).slice(0,20)],
+    queue,
     again:[],
     stats:{again:0,hard:0,good:0,easy:0},
     vakId:v.id,domId:d.id,flipped:false,
-    sessionTotal:0,
-    newCount:Math.min(newCards.length,20),
-    dueCount:dueCards.length
+    sessionTotal:queue.length,
+    newCount:isPractice?0:Math.min(newCards.length,20),
+    dueCount:isPractice?queue.length:dueCards.length,
+    isPractice
   };
-  FC.sessionTotal=FC.queue.length;
+
+  // Always reset card visibility before starting
+  const cardEl=document.getElementById('fc-card');
+  if(cardEl){cardEl.style.display='';cardEl.classList.remove('flipped');}
+  document.getElementById('fc-score').innerHTML='';
+  document.getElementById('fc-btns').style.display='none';
 
   const metaEl=document.getElementById('fc-meta');
-  if(metaEl)metaEl.textContent=v.naam+' · D'+d.id+': '+d.naam;
+  if(metaEl)metaEl.textContent=v.naam+' · D'+d.id+': '+d.naam+(isPractice?' · Oefensessie':'');
   _fcUpdateChips();
   show('sc-flash');
   showFlashcard();
@@ -7211,6 +7230,7 @@ function startFlash(){
 function _fcUpdateChips(){
   const el=document.getElementById('fc-counts');
   if(!el)return;
+  if(FC.isPractice){el.innerHTML=`<span class="fc-count-chip fc-chip-due">${FC.dueCount} oefening</span>`;return;}
   el.innerHTML=
     (FC.newCount>0?`<span class="fc-count-chip fc-chip-new">${FC.newCount} nieuw</span>`:'')+
     (FC.dueCount>0?`<span class="fc-count-chip fc-chip-due">${FC.dueCount} herhaling</span>`:'');
