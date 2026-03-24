@@ -2,10 +2,10 @@
   "version": "0.0.1",
   "configurations": [
     {
-      "name": "examenapp",
-      "runtimeExecutable": "python",
-      "runtimeArgs": ["-m", "http.server", "8123"],
-      "port": 8123
+      "name": "slagio-dev",
+      "runtimeExecutable": "C:\\Program Files\\Git\\usr\\bin\\perl.exe",
+      "runtimeArgs": ["C:\\Users\\pepij\\examenapp-havo\\.claude\\serve.pl"],
+      "port": 9000
     }
   ]
 }
