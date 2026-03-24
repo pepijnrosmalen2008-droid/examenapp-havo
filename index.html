@@ -271,6 +271,13 @@ h1,h2,h3,h4{font-family:var(--font-head);line-height:1.2;letter-spacing:-.3px}
 .hm-countdown .cd-box{background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.1);border-radius:12px;padding:10px 13px;text-align:center;min-width:54px}
 .hm-countdown .cd-val{font-family:var(--font-head);font-size:24px;font-weight:800;color:#fff;line-height:1;letter-spacing:-1px}
 .hm-countdown .cd-unit{font-size:9px;text-transform:uppercase;letter-spacing:.6px;color:rgba(255,255,255,.35);margin-top:4px;font-weight:700}
+/* Level glow variants */
+.hm-countdown.cd-havo{border-color:rgba(var(--or-rgb),.32);box-shadow:0 0 32px rgba(var(--or-rgb),.2),0 0 0 1px rgba(var(--or-rgb),.08) inset;transition:box-shadow .5s,border-color .5s}
+.hm-countdown.cd-havo .cd-box:hover{border-color:rgba(var(--or-rgb),.55);box-shadow:0 0 16px rgba(var(--or-rgb),.28),inset 0 0 10px rgba(var(--or-rgb),.06)}
+.hm-countdown.cd-vwo{border-color:rgba(139,92,246,.32);box-shadow:0 0 32px rgba(139,92,246,.2),0 0 0 1px rgba(139,92,246,.08) inset;transition:box-shadow .5s,border-color .5s}
+.hm-countdown.cd-vwo .cd-box:hover{border-color:rgba(139,92,246,.55);box-shadow:0 0 16px rgba(139,92,246,.28),inset 0 0 10px rgba(139,92,246,.06)}
+.hm-countdown.cd-vwo .cd-val{color:#c4b5fd}
+.hm-countdown.cd-vwo .cd-label{color:rgba(196,181,253,.5)}
 
 /* CTA buttons */
 .hm-ctas{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
@@ -1977,9 +1984,9 @@ html.dark .hsd-pill{background:var(--bg2);border-color:var(--bo2)}
     <p class="hm-sub">Alle CE-domeinen, samenvattingen en quizzen — gratis &amp; offline.</p>
     <div class="hm-countdown" id="countdown">
       <div class="cd-left">
-        <div class="cd-label">Tot 1e tijdvak</div>
+        <div class="cd-label" id="cd-label">Volgende examen</div>
         <div class="cd-title" id="cd-title">Nog <span id="cd-days-text">--</span> dagen</div>
-        <div class="cd-sub">Start: 12 mei 2026</div>
+        <div class="cd-sub" id="cd-sub">Laden…</div>
       </div>
       <div class="cd-nums">
         <div class="cd-box"><div class="cd-val" id="cd-d">--</div><div class="cd-unit">Dagen</div></div>
@@ -5984,13 +5991,52 @@ function _renderLbWithData(){
 }
 
 // ═══════ COUNTDOWN ═══════
+// Returns the earliest upcoming exam relevant to the user (own vakken first, else level fallback)
+function getCountdownTarget(){
+  try{
+    const mijn=getMijnVakken();
+    const now=new Date();
+    const niveauVakIds=new Set(getVK().map(v=>v.id));
+    const upcoming=EXAM_SCHEDULE
+      .filter(ex=>ex.vakId&&niveauVakIds.has(ex.vakId))
+      .map(ex=>({...ex,dt:new Date(ex.datum+'T'+ex.tijd.split('–')[0]+':00+02:00')}))
+      .filter(ex=>ex.dt>now)
+      .sort((a,b)=>a.dt-b.dt);
+    if(!upcoming.length)return null;
+    if(mijn.length){
+      const mine=upcoming.filter(ex=>mijn.includes(ex.vakId));
+      if(mine.length)return mine[0];
+    }
+    return upcoming[0];
+  }catch(e){return null;}
+}
 function updateCountdown(){
   const setEl=(id,val)=>{const el=document.getElementById(id);if(el)el.textContent=val;};
-  const target=new Date('2026-05-08T13:30:00+02:00');
+  // Apply level glow class
+  const cdEl=document.getElementById('countdown');
+  if(cdEl){cdEl.classList.remove('cd-havo','cd-vwo');cdEl.classList.add(APP_LEVEL==='vwo'?'cd-vwo':'cd-havo');}
+  // Dynamic target
+  const tgt=getCountdownTarget();
+  const labelEl=document.getElementById('cd-label');
+  const subEl=document.getElementById('cd-sub');
+  if(!tgt){
+    setEl('cd-title','Alle examens zijn klaar 🎓');
+    if(labelEl)labelEl.textContent='Gefeliciteerd!';
+    if(subEl)subEl.textContent='Je hebt alle examens gehad';
+    ['cd-d','cd-h','cd-m','cd-s','cd-days-text'].forEach(id=>setEl(id,'0'));
+    return;
+  }
+  // Update vak name + formatted date
+  if(labelEl)labelEl.textContent=tgt.vak;
+  if(subEl){
+    const dn=['zo','ma','di','wo','do','vr','za'];
+    const mn=['jan','feb','mrt','apr','mei','jun','jul','aug','sep','okt','nov','dec'];
+    subEl.textContent=dn[tgt.dt.getDay()]+' '+tgt.dt.getDate()+' '+mn[tgt.dt.getMonth()]+' · '+tgt.tijd;
+  }
   const now=new Date();
-  const diff=target-now;
+  const diff=tgt.dt-now;
   if(diff<=0){
-    setEl('cd-title','Het examen is begonnen!');
+    setEl('cd-title','Het examen is begonnen! 🎓');
     ['cd-d','cd-h','cd-m','cd-s','cd-days-text'].forEach(id=>setEl(id,'0'));
     return;
   }
@@ -6824,6 +6870,7 @@ function toggleMijnVak(id,checked){
   if(!checked)m=m.filter(v=>v!==id);
   setMijnVakken(m);
   renderSchedule();
+  updateCountdown(); // refresh timer to reflect new vak selection
 }
 
 // ═══════ GRADE CALCULATORS ═══════
