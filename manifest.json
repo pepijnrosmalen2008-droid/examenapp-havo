@@ -23,5 +23,28 @@
     }
   ],
   "categories": ["education"],
-  "screenshots": []
+  "screenshots": [],
+  "shortcuts": [
+    {
+      "name": "Snel oefenen",
+      "short_name": "Oefenen",
+      "description": "Start direct een quizsessie",
+      "url": "/?start=quiz",
+      "icons": [{"src": "/icon-192.png", "sizes": "192x192"}]
+    },
+    {
+      "name": "Cijfercalculator",
+      "short_name": "Cijfers",
+      "description": "Bereken je gemiddeld cijfer",
+      "url": "/?start=calc",
+      "icons": [{"src": "/icon-192.png", "sizes": "192x192"}]
+    },
+    {
+      "name": "Rooster",
+      "short_name": "Rooster",
+      "description": "Bekijk je examenrooster",
+      "url": "/?start=schedule",
+      "icons": [{"src": "/icon-192.png", "sizes": "192x192"}]
+    }
+  ]
 }
