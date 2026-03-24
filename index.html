@@ -6449,27 +6449,38 @@ function renderXPHome(){
   if(!box)return;
   const xp=getTotalXP();
   if(xp===0){box.innerHTML='';return;}
-  const lvl=getLevelForXP(xp);
-  const pct=getXPPct(xp);
-  const name=LEVEL_NAMES[lvl]||'Level '+lvl;
-  const curXP=getXPForLevel(lvl);
-  const nxtXP=getXPForLevel(lvl+1)||curXP+1000;
-  const toNext=nxtXP-xp;
-  const nudgeTxt=pct>=80?`🔥 Nog <strong>${toNext} XP</strong> naar level ${lvl+1}!`:`Nog ${toNext} XP naar level ${lvl+1}`;
+  // Avatar evolution progress
+  const p=JSON.parse(localStorage.getItem(PROF_KEY)||'{}');
+  const animalId=p.animalId||null;
+  const animal=animalId?getAnimalById(animalId):null;
+  const stageIdx=getAnimalStageIdx(xp);
+  const isMaxStage=stageIdx===ANIM_THRESHOLDS.length-1;
+  const curThresh=ANIM_THRESHOLDS[stageIdx];
+  const nxtThresh=isMaxStage?curThresh+1:ANIM_THRESHOLDS[stageIdx+1];
+  const stagePct=isMaxStage?100:Math.round(Math.min(100,(xp-curThresh)/(nxtThresh-curThresh)*100));
+  const currentEmoji=animal?animal.s[stageIdx]:'⭐';
+  const currentStageName=animal?(animal.n+' · '+ANIM_STAGE_NAMES[stageIdx]):ANIM_STAGE_NAMES[stageIdx];
+  const nextStageName=isMaxStage?'Max bereikt!':(animal?ANIM_STAGE_NAMES[stageIdx+1]:ANIM_STAGE_NAMES[stageIdx+1]);
+  const toNext=nxtThresh-xp;
+  let subTxt=isMaxStage
+    ?`🏆 Maximaal stadium bereikt! · ${xp.toLocaleString('nl')} XP totaal`
+    :(stagePct>=80
+      ?`🔥 Nog <strong>${toNext} XP</strong> naar ${nextStageName}!`
+      :`Nog ${toNext.toLocaleString('nl')} XP naar ${nextStageName} · ${(xp-curThresh).toLocaleString('nl')} / ${(nxtThresh-curThresh).toLocaleString('nl')} XP`);
   box.innerHTML=`<div class="xp-home-bar">
     <div class="xp-hb-inner">
-      <div class="xp-home-lvl">${lvl}</div>
+      <div class="xp-home-lvl" style="font-size:26px;background:transparent;box-shadow:none;border:2px solid rgba(var(--or-rgb),.3)">${currentEmoji}</div>
       <div class="xp-home-info">
         <div class="xp-home-head">
-          <div class="xp-home-title">${name}</div>
-          <div class="xp-home-pct">${Math.round(pct)}%</div>
+          <div class="xp-home-title">${currentStageName}</div>
+          <div class="xp-home-pct">${stagePct}%</div>
         </div>
         <div class="xp-bar-wrap"><div class="xp-bar" id="xp-bar-fill" style="width:0%"></div></div>
-        <div class="xp-home-sub">${nudgeTxt} · ${xp-curXP} / ${nxtXP-curXP} XP</div>
+        <div class="xp-home-sub">${subTxt}</div>
       </div>
     </div>
   </div>`;
-  setTimeout(()=>{const b=document.getElementById('xp-bar-fill');if(b)b.style.width=pct+'%';},50);
+  setTimeout(()=>{const b=document.getElementById('xp-bar-fill');if(b)b.style.width=stagePct+'%';},50);
 }
 
 // ═══════ DAILY CHALLENGE ═══════
