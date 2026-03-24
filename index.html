@@ -4769,38 +4769,68 @@ const AVATARS=[
 let selectedAvatar=AVATARS[4].e;
 // ── ANIMAL EVOLUTION SYSTEM ──
 const ANIMAL_EVOLUTIONS=[
-  // Adelaar: ei → kuiken → jong → vogel → adelaar ✅ accurate
-  {id:'adelaar', n:'Adelaar',  s:['🥚','🐣','🐥','🐦','🦅'], lbl:['Ei','Kuikentje','Kuiken','Jonge Vogel','Adelaar']},
-  // Leeuw: welp → kitten → kat → luipaard (grote katachtige) → leeuw
-  {id:'leeuw',   n:'Leeuw',   s:['🐾','🐱','🐈','🐆','🦁'], lbl:['Welp','Kitten','Jonge Kat','Luipaard','Leeuw']},
-  // Draak: ei → hagedis → krokodil → jonge draak → vuurdrake ✅ accurate
-  {id:'draak',   n:'Draak',   s:['🥚','🦎','🐊','🐲','🐉'], lbl:['Ei','Hagedisje','Krokodil','Jonge Draak','Vuurdrake']},
-  // Wolf: welp → puppy → hond → volwassen hond → wolf (Canidae familie) ✅
-  {id:'wolf',    n:'Wolf',    s:['🐾','🐶','🐕','🦮','🐺'], lbl:['Welp','Puppy','Jonge Hond','Volwassen Hond','Wolf']},
-  // Vlinder: ei → rups → cocon → pop → vlinder ✅ accurate metamorfose
-  {id:'vlinder', n:'Vlinder', s:['🥚','🐛','🐌','🪲','🦋'], lbl:['Ei','Rups','Cocon','Kever','Vlinder']},
-  // Tijger: welp → kitten → kat → jong tijger → tijger ✅ accurate
-  {id:'tijger',  n:'Tijger',  s:['🐾','🐱','🐈','🐅','🐯'], lbl:['Welp','Kitten','Jonge Kat','Jong Tijger','Tijger']},
-  // Haai: micro → visje → vis → kogelvis → haai (evolutie waterwereld) ✅
-  {id:'haai',    n:'Haai',    s:['🦠','🐟','🐠','🐡','🦈'], lbl:['Micro-organisme','Visje','Tropisch Visje','Kogelvis','Haai']},
-  // Olifant: welp → klein zoogdier → nijlpaard → olifant → mammoet ✅ grootteprogres
-  {id:'olifant', n:'Olifant', s:['🐾','🦔','🦛','🐘','🦣'], lbl:['Welp','Egeltje','Nijlpaard','Olifant','Mammoet']},
-  // Eenhoorn: veulen → jong paard → paard → renpaard → eenhoorn ✅ accurate
-  {id:'eenhoorn',n:'Eenhoorn',s:['🐾','🐴','🐎','🏇','🦄'], lbl:['Veulen','Jong Paard','Paard','Renpaard','Eenhoorn']},
-  // Vos: welp → puppy → jonge hond → wasbeer → vos (Canidae familie) ✅
-  {id:'vos',     n:'Vos',     s:['🐾','🐶','🐕','🦝','🦊'], lbl:['Welp','Puppy','Jonge Hond','Wasbeer','Vos']},
-  // Uil: ei → kuikentje → kuiken → jonge vogel → uil ✅ accurate
-  {id:'uil',     n:'Uil',     s:['🥚','🐣','🐥','🐦','🦉'], lbl:['Ei','Kuikentje','Kuiken','Jonge Vogel','Uil']},
-  // Octopus: schelp → garnaal → kreeft → inktvis → octopus ✅ mariene evolutie
-  {id:'octopus', n:'Octopus', s:['🐚','🦐','🦞','🦑','🐙'], lbl:['Larveschelp','Garnaal','Kreeft','Inktvis','Octopus']},
-  // Beer: welp → eekhoorntje → otter → beer → ijsbeer ✅ Carnivora grootteprogres
-  {id:'beer',    n:'Beer',    s:['🐾','🐿️','🦦','🐻','🐻‍❄️'],lbl:['Welp','Eekhoorntje','Otter','Beer','IJsbeer']},
-  // Slang: ei → worm → hagedis → slang → drakenslang (legendarisch) ✅
-  {id:'slang',   n:'Slang',   s:['🥚','🐛','🦎','🐍','🐉'], lbl:['Ei','Worm','Hagedis','Slang','Drakenslang']},
-  // Gorilla: welp → aapje → jonge gorilla → orang-oetan → silverback ✅
-  {id:'gorilla', n:'Gorilla', s:['🐾','🐒','🦍','🦧','🦍'], lbl:['Welp','Aapje','Jonge Gorilla','Orang-oetan','Silverback']},
+  {id:'adelaar', n:'Adelaar', s:['🥚','🐣','🐥','🐦','🦅'],
+   lbl:['Verward Ei','Slaperig Kuiken','Trotse Pieper','Bijziende Vogel','Legendarische Adelaar'],
+   desc:['Ligt lekker te snoozen. Weet nog van niks.','Piept bij elke vraag. Begrijpt nog niks.','Denkt dat het alles snapt. Vergeet de helft.','Vliegt al, maar googlet stiekem nog antwoorden.','Zweeft boven de examenvragen als een god.'],
+   evoMsg:['🐣 Je ei is gebarsten! Je Adelaar is wakker... een beetje.','🐥 Je Adelaar piept van trots!','🐦 Je Adelaar vliegt al! Niet helemaal recht, maar toch.','🦅 LEGENDARISCHE ADELAAR ONTGRENDELD! De examinator trilt.']},
+  {id:'leeuw', n:'Leeuw', s:['🐾','🐱','🐈','🐆','🦁'],
+   lbl:['Huilerig Welp','Nieuwsgierig Katje','Brutaal Puber','Gevaarlijke Luipaard','Onoverwinnelijke Leeuw'],
+   desc:['Huilt bij de eerste moeilijke vraag.','Speelt liever dan oefent. Schattig maar nutteloos.','Denkt dat het beter is dan de leraar. Heeft een punt.','Jaagt op hoge cijfers. Laat niemand ontkomen.','Brult bij elk examen. Zelfs de surveillant is bang.'],
+   evoMsg:['🐱 Je Leeuw heeft zijn eerste tand! Ow wat schattig.','🐈 Je Leeuw is in de puberteit. Excuses voor het gedrag.','🐆 Je Leeuw jaagt nu echt op die hoge cijfers!','🦁 GEBRUL! Je Leeuw heeft het maximum bereikt. Vrees hem.']},
+  {id:'draak', n:'Draak', s:['🥚','🦎','🐊','🐲','🐉'],
+   lbl:['Mysterieus Ei','Verward Hagedisje','Krokodil met Ambities','Semi-Draak','Legendarische Vuurdrake'],
+   desc:['Niemand weet wat erin zit. Jijzelf ook niet.','Klein maar heeft grote plannen. Legt ze niet uit.','Bijt van zich af bij moeilijke vragen. Letterlijk.','Spuwt soms vuur. Soms per ongeluk op de samenvatting.','Vernietigt elk examen met één adem. Onstopbaar.'],
+   evoMsg:['🦎 Je Draak kruipt uit het ei! Ziet er... interessant uit.','🐊 Je Draak bijt van zich af! Pas op je vingers.','🐲 HALF-DRAAK ONTGRENDELD! Er komt rook uit z\'n neus.','🐉 VUURDRAKE! Het examenlokaal heeft extra brandblusser nodig.']},
+  {id:'wolf', n:'Wolf', s:['🐾','🐶','🐕','🐺','🌕'],
+   lbl:['Piepklein Welp','Enthousiast Puppybrein','Trouwe Studeerbuddy','Gevaarlijke Wolf','Hurling-bij-de-Maan Wolf'],
+   desc:['Zo klein dat het bijna zielig is. Bijna.','Blij met elke vraag. Ook de foute antwoorden.','Leert trucjes. Vooral het trucje "niet opgeven".','Huilt naar de maan als het examen nadert.','Huilt succesvol naar de volle maan. 10/10 geslaagd.'],
+   evoMsg:['🐶 Je Wolf kwispelt van vreugde! Alles is spannend!','🐕 Je Wolf leert nieuwe trucjes! Zit. Goed zo.','🐺 WOLF ONTGRENDELD! Huilt professioneel naar de maan.','🌕 JE WOLF HUILT NAAR DE MAAN! De buren bellen de politie.']},
+  {id:'vlinder', n:'Vlinder', s:['🥚','🐛','🫘','🐚','🦋'],
+   lbl:['Twijfelachtig Eitje','Trage Rups','Zwijgende Cocon','Bijna-Vlinder','Prachtige Vlinder'],
+   desc:['Twijfelt of het de moeite waard is. Doet het toch.','Eet bladzijden studie-materiaal. Letterlijk.','Slaapt, maar denkt tegelijkertijd na. Multitasken.','Vleugels groeien al. Nog even geduld.','Danst door de examenzaal. De surveillant is ontroerd.'],
+   evoMsg:['🐛 Je Vlinder kruipt! Langzaam maar zeker.','🫘 Je Vlinder zit in de cocon. Ssh, niet storen.','🐚 Vleugels groeien... nog even...','🦋 JE VLINDER IS ER! Ze danst door de examenzaal!']},
+  {id:'tijger', n:'Tijger', s:['🐾','🐱','🐈','🐅','🐯'],
+   lbl:['Schuchtere Welp','Nieuwsgierig Katje','Gestreepte Puber','Sluipende Tijger','Opper-Tijger'],
+   desc:['Verschuilt zich achter de samenvatting.','Speelt met de flashcards. Kauwt er ook op.','Heeft strepen. Denkt dat het cool is.','Sluipt onhoorbaar door de examenstof.','Sprintt naar een 10 en kijkt niet meer om.'],
+   evoMsg:['🐱 Je Tijger miauwt stoer! (Het is schattig.)','🐈 Je Tijger heeft zijn eerste strepen!','🐅 SLUIPENDE TIJGER! De examenvragen weten niet wat ze te wachten staat.','🐯 OPPER-TIJGER! BRULLLLL!']},
+  {id:'haai', n:'Haai', s:['🦠','🐟','🐠','🦈','🦈'],
+   lbl:['Micro-Organisme','Bangelijk Visje','Tropisch Toerist','Jonge Haai','Grote Witte Examendoder'],
+   desc:['Zo klein dat niemand je ziet. Voordeel bij tentamens.','Zwemt in cirkels rond de studiezaal.','Kleurrijk maar nog steeds geen antwoord op vraag 3.','Bijt alvast in de examenbundel. Ter voorbereiding.','Elke vraag is voedsel. Verslindt ze allemaal.'],
+   evoMsg:['🐟 Je Haai zwemt! Een beetje wiebelig nog.','🐠 Je Haai is tropisch! Nog niet gevaarlijk, wel mooi.','🦈 JE HAAI HAS ARRIVED! DUM DUM DUM DUM DUM DUM...','🦈🦈 GROTE WITTE EXAMENDODER ONTGRENDELD! Vrees het water.']},
+  {id:'olifant', n:'Olifant', s:['🐾','🦔','🦛','🐘','🦣'],
+   lbl:['Prikkelend Egeltje','Dikhuidige Leerling','Kolossale Olifant','Prehistorische Mammoet','Tijdloze Mammoet'],
+   desc:['Prikkt bij moeilijke vragen. Zacht maar aanwezig.','Dik genoeg om alles te onthouden. Vergeet nooit.','Geheugen van een olifant. Herinnert elk antwoord.','Ouder dan de meeste examenvragen. Wijzer ook.','Bestond al voor het eindexamen. Zal er ook na zijn.'],
+   evoMsg:['🦔 Je Olifant begint als egeltje! Stekelig maar lief.','🦛 Je Olifant wordt ENORM! Past niet meer door de deur.','🐘 OLIFANT! Vergeet nooit meer een formule.','🦣 MAMMOET! Bevroren in kennis. Voor altijd.']},
+  {id:'eenhoorn', n:'Eenhoorn', s:['🐾','🐴','🐎','🏇','🦄'],
+   lbl:['Verlegen Veulen','Gewoon Paard','Ongeduldig Renpaard','Racend naar de Finish','Magisch Eenhoorn'],
+   desc:['Wil eigenlijk al een eenhoorn zijn. Heeft geduld.','100% paard. 0% magie. Werkt hard ter compensatie.','Rent harder dan de tijd. Haalt deadlines dus altijd.','Stof vliegt op. Surveillant moet wegkijken.','Spreidt sprankels over het examenpapier. Slaagt altijd.'],
+   evoMsg:['🐴 Je Eenhoorn dribbelt al! Nog geen hoorn maar goed.','🐎 Je Eenhoorn galoppeeert! De maan is het doel.','🏇 RENPAARD! Sprint naar die 10 als de wind!','🦄 MAGISCH EENHOORN ONTGRENDELD! Regenbogen en alles.']},
+  {id:'vos', n:'Vos', s:['🐾','🐶','🐕','🦝','🦊'],
+   lbl:['Sluw Welpje','Grappig Puppy','Slimme Hond','Schrandere Wasbeer','Listige Vos'],
+   desc:['Kijkt al slim. Weet nog niks, maar kijkt slim.','Blij en dom. Een goede combinatie.','Slimmer dan het eruitziet. Maar dat weet het zelf al.','Wast zijn poten na elke quiz. Hygiënisch.','Overtuigt de examinator dat alles goed was. En dat klopt.'],
+   evoMsg:['🐶 Je Vos kwispelt slim! (Strategisch kwispelen.)','🐕 Je Vos wordt slimmer. En het weet dat je dat weet.','🦝 WASBEER MODUS! Wast zijn handen na een perfecte score.','🦊 LISTIGE VOS! Niemand zag de 10 komen. De vos wel.']},
+  {id:'uil', n:'Uil', s:['🥚','🐣','🐥','🐦','🦉'],
+   lbl:['Nachtelijk Ei','Suf Kuiken','Knipper-Kuiken','Brildrager-Vogel','Alwetende Uil'],
+   desc:['Slaapt door de dag. Studeert om 3 uur \'s nachts.','Ziet er moe uit. IS moe. Studeert toch.','Knippert verward bij elke vraag. Geeft altijd het goede antwoord.','Heeft een bril nodig maar weigert dat toe te geven.','Weet het antwoord al voor de vraag gesteld wordt.'],
+   evoMsg:['🐣 Je Uil wordt wakker! Om 14:00. Goed geslapen.','🐥 Je Uil knippert van begrip!','🐦 Je Uil ziet ALLES. Zelfs de valkuilvragen.','🦉 ALWETENDE UIL! "Whooo" heeft er een 10? Jij.']},
+  {id:'octopus', n:'Octopus', s:['🐚','🦐','🦞','🦑','🐙'],
+   lbl:['Leeg Schelpje','Nerveuze Garnaal','Hummerige Kreeft','Inktspuwende Inktvis','Acht-Armige Meester'],
+   desc:['Leeg maar potentievol. Net als jij op dag 1.','Springt schrikachtig omhoog bij elke toets.','Knijpt in zijn klauwen bij open vragen. Doet het goed.','Spuugt inkt als het antwoord fout is. Soms op het papier.','Acht armen, acht vakken tegelijk. Multitasken pro.'],
+   evoMsg:['🦐 Je Octopus springt van schrik! Een kleine garnaal.','🦞 Je Octopus knijpt van trots! KNEEP.','🦑 INKTVIS! Spuugt inkt bij fout antwoord. Opletten.','🐙 ACHT ARMEN! Doet 8 vakken tegelijk. Indrukwekkend.']},
+  {id:'beer', n:'Beer', s:['🐾','🐿️','🦦','🐻','🐻‍❄️'],
+   lbl:['Piepklein Welp','Nootjes-Eekhoorn','Relaxte Otter','Slaperige Beer','IJskoude IJsbeer'],
+   desc:['Wil eigenlijk alleen maar slapen. Selectief studeren.','Hamstert kennis voor de winter (het examen).','Ligt op zijn rug en denkt na. Werkt verrassend goed.','Slaap-oefenen is ook oefenen. Toch?','IJskoud kalm bij elk examen. De kou heeft hem gehard.'],
+   evoMsg:['🐿️ Je Beer begint als eekhoorn! Hamstert kennis.','🦦 Je Beer lounget als een otter. Ontspannen maar scherp.','🐻 BEER WAKKER! Heeft gewinterd en is er klaar voor.','🐻‍❄️ IJSBEER! Bevriest de examenangst. Letterlijk.']},
+  {id:'slang', n:'Slang', s:['🥚','🐛','🦎','🐍','🐉'],
+   lbl:['Glanzend Ei','Kronkelende Worm','Listige Hagedis','Giftige Slang','Drakenslang-Legende'],
+   desc:['Kronkelt al vanbinnen. Kan niet wachten.','Sssst. Ssstudeert. Ssssnel ook.','Likt zijn ogen af na elke correcte quiz.','Glipt ongezien door de moeilijkste vragen heen.','Half slang, half draak. Helemaal gevaarlijk.'],
+   evoMsg:['🐛 Je Slang kronkelt uit het ei! Sssss.','🦎 Je Slang likt zijn ogen! (Hagedissen doen dat echt.)','🐍 GIFTIGE SLANG! De examenvragen hebben geen kans.','🐉 DRAKENSLANG-LEGENDE! Sssssss... (van trots)']},
+  {id:'gorilla', n:'Gorilla', s:['🐒','🐒','🦍','🦧','🦍'],
+   lbl:['Hyper Aapje','Klimmend Jonkie','Borstklopende Gorilla','Superieure Orang-oetan','Silverback-Legende'],
+   desc:['Trekt aan alles. Inclusief de studieplannen.','Klimt van onderwerp naar onderwerp.','Klopt op zijn borst na elk goed antwoord. Terecht.','Denkt dieper na dan de vraagsteller. Problematisch.','Zit boven in de boom der kennis. Kijkt neer op twijfel.'],
+   evoMsg:['🐒 Je Gorilla zwaait van tak tot tak!','🦍 Je Gorilla groeit! Klopt al op z\'n borst.','🦧 ORANG-OETAN! Intelligent en oranje. Gevaarlijke combo.','🦍 SILVERBACK-LEGENDE! Alle gorilla\'s buigen voor hem.']},
 ];
-const ANIM_THRESHOLDS=[0,100,500,2000,7500]; // XP-drempels per stadium
+const ANIM_THRESHOLDS=[0,100,500,2000,7500];
 const ANIM_STAGE_NAMES=['Baby','Jong','Tiener','Volwassen','Prime'];
 let selectedAnimalId=null;
 
@@ -4869,20 +4899,25 @@ function renderAnimalEvoSection(animalId,totalXP){
     const isDone=i<stageIdx;
     const isCurrent=i===stageIdx;
     const cls=isDone?'done':isCurrent?'current':'';
-    const reqTxt=i===0?'':ANIM_THRESHOLDS[i].toLocaleString('nl')+' XP';
-    stagesHtml+=`<div class="anim-stage ${cls}">
-      <div class="anim-stage-pip">${emoji}</div>
-      <div class="anim-stage-label">${ANIM_STAGE_NAMES[i]}</div>
+    const reqTxt=i===0?'Start':ANIM_THRESHOLDS[i].toLocaleString('nl')+' XP';
+    const stageLbl=a.lbl?a.lbl[i]:ANIM_STAGE_NAMES[i];
+    stagesHtml+=`<div class="anim-stage ${cls}" title="${a.desc?a.desc[i]:''}">
+      <div class="anim-stage-pip">${isDone||isCurrent?emoji:'❓'}</div>
+      <div class="anim-stage-label">${isCurrent||isDone?stageLbl:'???'}</div>
       <div class="anim-stage-req">${reqTxt}</div>
     </div>`;
   });
+  const curLbl=a.lbl?a.lbl[stageIdx]:ANIM_STAGE_NAMES[stageIdx];
+  const curDesc=a.desc?a.desc[stageIdx]:'';
+  const nextLbl=a.lbl&&!isMaxed?a.lbl[stageIdx+1]:ANIM_STAGE_NAMES[stageIdx+1];
   const progressHtml=isMaxed
-    ?`<div style="font-size:12px;color:var(--or);font-weight:700;text-align:center">🏆 Maximaal niveau bereikt!</div>`
+    ?`<div style="font-size:12px;color:var(--or);font-weight:700;text-align:center">🏆 Maximaal stadium bereikt! Je ${a.n} is een legende.</div>`
     :`<div class="anim-evo-prog-bar"><div class="anim-evo-prog-fill" style="width:${pct}%"></div></div>
-      <div class="anim-evo-prog-txt">${totalXP.toLocaleString('nl')} / ${nextThreshold.toLocaleString('nl')} XP → ${ANIM_STAGE_NAMES[stageIdx+1]}</div>`;
+      <div class="anim-evo-prog-txt">${totalXP.toLocaleString('nl')} / ${nextThreshold.toLocaleString('nl')} XP → ${a.s[stageIdx+1]} ${nextLbl}</div>`;
   sec.innerHTML=`<div class="anim-evo-card">
     <div class="anim-evo-title">${a.s[stageIdx]} ${a.n} <span class="anim-evo-locked">🔒 Definitief</span></div>
-    <div class="anim-evo-subtitle">${ANIM_STAGE_NAMES[stageIdx]} · ${totalXP.toLocaleString('nl')} XP totaal</div>
+    <div class="anim-evo-subtitle">${curLbl} · ${totalXP.toLocaleString('nl')} XP totaal</div>
+    ${curDesc?`<div style="font-size:13px;color:var(--mu);font-style:italic;margin:4px 0 10px;text-align:center">"${curDesc}"</div>`:''}
     <div class="anim-evo-stages">${stagesHtml}</div>
     <div class="anim-evo-progress">${progressHtml}</div>
   </div>`;
@@ -5713,9 +5748,8 @@ function toonRes(){
       const _p=JSON.parse(localStorage.getItem(PROF_KEY)||'{}');
       const _a=getAnimalById(_p.animalId);
       if(_a){
-        const _emoji=_a.s[res.newStage];
-        const _stageName=ANIM_STAGE_NAMES[res.newStage];
-        setTimeout(()=>showToast(`${_emoji} Je ${_a.n} is geëvolueerd naar <strong>${_stageName}</strong>!`,'var(--or)',4500),1000);
+        const _msg=(_a.evoMsg&&_a.evoMsg[res.newStage-1])||`${_a.s[res.newStage]} Je ${_a.n} is geëvolueerd naar <strong>${_a.lbl?_a.lbl[res.newStage]:ANIM_STAGE_NAMES[res.newStage]}</strong>!`;
+        setTimeout(()=>showToast(_msg,'var(--or)',5500),1000);
         setTimeout(()=>launchConfetti('gold'),1200);
       }
     }
@@ -6750,7 +6784,8 @@ function renderXPHome(){
     const isCur=i===stageIdx;
     const emoji=animal?animal.s[i]:'⭐';
     const cls='xp-evo-step'+(isDone?' done':isCur?' current':'');
-    journeyHtml+=`<div class="${cls}"><span class="xp-evo-step-emoji">${emoji}</span><span class="xp-evo-step-name">${ANIM_STAGE_NAMES[i]}</span></div>`;
+    const stepLbl=animal&&animal.lbl?animal.lbl[i]:ANIM_STAGE_NAMES[i];
+    journeyHtml+=`<div class="${cls}"><span class="xp-evo-step-emoji">${isDone||isCur?emoji:'❓'}</span><span class="xp-evo-step-name">${isDone||isCur?stepLbl:'???'}</span></div>`;
     if(i<ANIM_THRESHOLDS.length-1){
       journeyHtml+=`<div class="xp-evo-connector${isDone?' done':''}"></div>`;
     }
