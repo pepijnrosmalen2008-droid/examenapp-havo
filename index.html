@@ -630,48 +630,56 @@ html.dark .qb{background:#2e3550}
 .fav-chip-sub{color:var(--mu);font-weight:400}
 
 /* ── STREAK CARD ───────────────────────────── */
-.streak-card{position:relative;overflow:hidden;background:linear-gradient(135deg,rgba(var(--or-rgb),.1) 0%,rgba(var(--or-rgb),.03) 100%);border:1px solid rgba(var(--or-rgb),.22);border-radius:24px;padding:24px 22px 20px;margin-bottom:20px;box-shadow:0 4px 24px rgba(var(--or-rgb),.1),0 1px 4px rgba(0,0,0,.04)}
-.streak-card::before{content:'';position:absolute;top:-40px;right:-40px;width:160px;height:160px;background:radial-gradient(circle,rgba(var(--or-rgb),.18) 0%,transparent 70%);pointer-events:none}
-.streak-top{display:flex;align-items:flex-start;gap:16px;margin-bottom:18px}
-.streak-flame-wrap{display:flex;flex-direction:column;align-items:center;flex-shrink:0}
-.streak-flame-big{font-size:44px;line-height:1;display:inline-block;animation:flameBob 2.4s ease-in-out infinite;filter:drop-shadow(0 0 14px rgba(var(--or-rgb),.55))}
-@keyframes flameBob{0%,100%{transform:scale(1) rotate(-4deg)}50%{transform:scale(1.12) rotate(4deg)}}
-.streak-count-num{font-family:var(--font-head);font-size:38px;font-weight:900;color:var(--or);line-height:1;text-align:center;margin-top:2px}
-.streak-count-lbl{font-size:9px;font-weight:700;letter-spacing:.8px;text-transform:uppercase;color:var(--or);opacity:.7;text-align:center}
-.streak-meta{flex:1}
-.streak-headline{font-family:var(--font-head);font-size:18px;font-weight:800;color:var(--dk);line-height:1.2;margin-bottom:4px}
-.streak-tagline{font-size:13px;color:var(--mu);margin-bottom:10px}
-.streak-stats{display:flex;gap:12px}
-.streak-stat{display:flex;flex-direction:column;align-items:center;background:rgba(var(--or-rgb),.08);border:1px solid rgba(var(--or-rgb),.15);border-radius:10px;padding:6px 12px;min-width:56px}
-.streak-stat-num{font-family:var(--font-head);font-size:18px;font-weight:800;color:var(--or);line-height:1}
-.streak-stat-lbl{font-size:10px;color:var(--mu);font-weight:500;margin-top:1px}
-/* 7-day week grid */
-.streak-week{display:grid;grid-template-columns:repeat(7,1fr);gap:5px;margin-bottom:14px}
-.streak-day-cell{display:flex;flex-direction:column;align-items:center;gap:3px}
-.streak-day-pip{width:100%;aspect-ratio:1;border-radius:8px;background:var(--bo);transition:all .3s cubic-bezier(.34,1.4,.64,1);display:flex;align-items:center;justify-content:center;font-size:11px;color:transparent}
-.streak-day-pip.active{background:var(--or);box-shadow:0 0 12px rgba(var(--or-rgb),.45),0 2px 6px rgba(var(--or-rgb),.3);color:#fff}
-.streak-day-pip.today-empty{border:2px dashed rgba(var(--or-rgb),.45);animation:pipPulse 2s ease-in-out infinite}
-@keyframes pipPulse{0%,100%{box-shadow:0 0 0 0 rgba(var(--or-rgb),.3)}50%{box-shadow:0 0 0 5px rgba(var(--or-rgb),.0)}}
-.streak-day-name{font-size:9px;color:var(--mu);font-weight:600;text-transform:uppercase;letter-spacing:.4px}
+/* ── STREAK CARD v3 (21st.dev) ───────────────── */
+.streak-card{position:relative;overflow:hidden;background:var(--s);border:1px solid var(--bo);border-radius:20px;padding:18px 18px 14px;margin-bottom:20px;box-shadow:0 2px 12px rgba(0,0,0,.06),0 1px 3px rgba(0,0,0,.04)}
+.streak-card::before{content:'';position:absolute;top:-30px;right:-30px;width:160px;height:160px;background:radial-gradient(circle,rgba(var(--or-rgb),.12) 0%,transparent 65%);pointer-events:none}
+/* Top row */
+.streak-top{display:flex;align-items:center;gap:13px;margin-bottom:14px}
+.streak-flame-wrap{width:48px;height:48px;border-radius:14px;background:linear-gradient(135deg,#f97316 0%,#f59e0b 100%);display:flex;flex-direction:column;align-items:center;justify-content:center;flex-shrink:0;box-shadow:0 4px 14px rgba(var(--or-rgb),.38)}
+.streak-flame-big{font-size:22px;line-height:1;animation:flameBob 2.4s ease-in-out infinite;filter:drop-shadow(0 1px 3px rgba(0,0,0,.3))}
+@keyframes flameBob{0%,100%{transform:scale(1) rotate(-3deg)}50%{transform:scale(1.1) rotate(3deg)}}
+.streak-count-num{font-family:var(--font-head);font-size:13px;font-weight:900;color:#fff;line-height:1;margin-top:1px}
+.streak-count-lbl{font-size:7px;font-weight:700;letter-spacing:.5px;text-transform:uppercase;color:rgba(255,255,255,.8)}
+/* Meta text */
+.streak-meta{flex:1;min-width:0}
+.streak-headline{font-family:var(--font-head);font-size:16px;font-weight:800;color:var(--dk);line-height:1.2;margin-bottom:2px}
+.streak-tagline{font-size:12px;color:var(--mu);line-height:1.4}
+/* Inline stats */
+.streak-stats{display:flex;gap:6px;margin-top:8px}
+.streak-stat{display:flex;align-items:center;gap:5px;background:rgba(var(--or-rgb),.06);border:1px solid rgba(var(--or-rgb),.12);border-radius:8px;padding:4px 9px}
+.streak-stat-num{font-family:var(--font-head);font-size:13px;font-weight:800;color:var(--or)}
+.streak-stat-lbl{font-size:10px;color:var(--mu);font-weight:500}
+/* 7-day circles */
+.streak-week{display:grid;grid-template-columns:repeat(7,1fr);gap:6px;margin-bottom:12px}
+.streak-day-cell{display:flex;flex-direction:column;align-items:center;gap:5px}
+.streak-day-pip{width:36px;height:36px;max-width:100%;border-radius:50%;background:rgba(var(--or-rgb),.06);border:1.5px solid rgba(var(--or-rgb),.1);transition:all .28s cubic-bezier(.34,1.4,.64,1);display:flex;align-items:center;justify-content:center;font-size:14px;color:transparent;margin:0 auto}
+.streak-day-pip.active{background:linear-gradient(135deg,#f97316,#f59e0b);border-color:transparent;box-shadow:0 0 0 3px rgba(var(--or-rgb),.15),0 3px 10px rgba(var(--or-rgb),.38);color:#fff}
+.streak-day-pip.active.is-today{box-shadow:0 0 0 3px rgba(var(--or-rgb),.3),0 4px 16px rgba(var(--or-rgb),.5)}
+.streak-day-pip.today-empty{border:2px dashed rgba(var(--or-rgb),.45);background:transparent;animation:pipPulse 2s ease-in-out infinite}
+@keyframes pipPulse{0%,100%{box-shadow:0 0 0 0 rgba(var(--or-rgb),.25)}50%{box-shadow:0 0 0 5px rgba(var(--or-rgb),.0)}}
+.streak-day-name{font-size:9px;color:var(--mu);font-weight:600;text-transform:uppercase;letter-spacing:.3px}
+.streak-day-name.act{color:var(--or);font-weight:700}
+/* Divider */
+.streak-divider{height:1px;background:var(--bo);margin:12px 0 10px}
 /* Badges */
-.streak-badges-row{display:flex;gap:7px;flex-wrap:wrap}
-.badge{position:relative;width:38px;height:38px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:19px;background:var(--bg2);border:1.5px solid var(--bo);transition:all .25s cubic-bezier(.34,1.4,.64,1);cursor:default}
-.badge.earned{background:linear-gradient(135deg,#FEF3C7,#FDE68A);border-color:#F59E0B;box-shadow:0 3px 12px rgba(245,158,11,.3)}
-.badge.earned:hover{transform:scale(1.2) rotate(-6deg)}
-.badge.unearned{filter:grayscale(1);opacity:.28}
+.streak-badges-row{display:flex;gap:6px;flex-wrap:wrap}
+.badge{position:relative;width:34px;height:34px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:17px;background:var(--bg2);border:1.5px solid var(--bo);transition:all .25s cubic-bezier(.34,1.4,.64,1);cursor:default}
+.badge.earned{background:linear-gradient(135deg,#FEF3C7,#FDE68A);border-color:#F59E0B;box-shadow:0 3px 10px rgba(245,158,11,.28)}
+.badge.earned:hover{transform:scale(1.18) rotate(-5deg)}
+.badge.unearned{filter:grayscale(1);opacity:.22}
 .badge-tooltip{position:relative}
 .badge-tooltip::after{content:attr(data-tip);position:absolute;bottom:calc(100% + 6px);left:50%;transform:translateX(-50%);background:var(--dk);color:var(--bg);font-size:11px;font-weight:600;padding:4px 10px;border-radius:8px;white-space:nowrap;opacity:0;pointer-events:none;transition:.18s;font-family:var(--font);z-index:10}
 .badge-tooltip:hover::after{opacity:1}
-/* Streak CTA button */
-.streak-cta{margin-top:14px;width:100%;padding:10px;border-radius:12px;border:none;background:var(--or);color:#fff;font-family:var(--font-head);font-size:14px;font-weight:700;cursor:pointer;letter-spacing:.2px;transition:all .22s cubic-bezier(.34,1.2,.64,1);box-shadow:0 4px 14px rgba(var(--or-rgb),.35)}
-.streak-cta:hover{transform:translateY(-2px);box-shadow:0 8px 22px rgba(var(--or-rgb),.45)}
+/* CTA */
+.streak-cta{margin-top:12px;width:100%;padding:10px;border-radius:11px;border:none;background:linear-gradient(135deg,#f97316,#f59e0b);color:#fff;font-family:var(--font-head);font-size:13px;font-weight:700;cursor:pointer;letter-spacing:.2px;transition:all .22s cubic-bezier(.34,1.2,.64,1);box-shadow:0 3px 12px rgba(var(--or-rgb),.32)}
+.streak-cta:hover{transform:translateY(-2px);box-shadow:0 7px 20px rgba(var(--or-rgb),.42)}
 .streak-cta:active{transform:scale(.97)}
-/* Responsive */
 @media(max-width:600px){
-  .streak-count-num{font-size:30px}
-  .streak-flame-big{font-size:36px}
-  .streak-headline{font-size:16px}
-  .streak-card{padding:18px 16px 16px}
+  .streak-card{padding:16px 14px 12px;border-radius:16px}
+  .streak-flame-wrap{width:42px;height:42px;border-radius:12px}
+  .streak-flame-big{font-size:19px}
+  .streak-headline{font-size:15px}
+  .streak-day-pip{width:30px;height:30px}
 }
 
 /* ── REVIEW SCREEN ───────────────────────────── */
@@ -6649,11 +6657,12 @@ function renderStreak(){
     const isActive=info.days.includes(ds);
     const isToday=i===0;
     let pipClass='streak-day-pip';
-    if(isActive)pipClass+=' active';
+    if(isActive){pipClass+=' active';if(isToday)pipClass+=' is-today';}
     else if(isToday)pipClass+=' today-empty';
+    const nameClass='streak-day-name'+(isActive?' act':'');
     weekHtml+=`<div class="streak-day-cell">
       <div class="${pipClass}">${isActive?'✓':''}</div>
-      <div class="streak-day-name">${dayLabels[d.getDay()]}</div>
+      <div class="${nameClass}">${dayLabels[d.getDay()]}</div>
     </div>`;
   }
   // Badges
@@ -6706,6 +6715,7 @@ function renderStreak(){
       </div>
     </div>
     <div class="streak-week">${weekHtml}</div>
+    <div class="streak-divider"></div>
     <div class="streak-badges-row">${badgeHtml}</div>
     ${!practicedToday?`<button class="streak-cta" onclick="startStreakQuiz()">🎯 Oefen vandaag — verleng je streak!</button>`:''}
   </div>`;
