@@ -4961,9 +4961,10 @@ function updateProfileNav(){
     return;
   }
   const p=JSON.parse(localStorage.getItem(PROF_KEY)||'{}');
-  if(p.naam&&p.avatar){
+  const liveAvatar=getMyCurrentAvatar();
+  if(p.naam&&liveAvatar!=='🐾'){
     btn.dataset.tip=p.naam.split(' ')[0];
-    btn.innerHTML=`<div class="dock-avatar">${p.avatar}</div>`;
+    btn.innerHTML=`<div class="dock-avatar" style="font-size:16px;background:transparent">${liveAvatar}</div>`;
   }else if(p.naam){
     const initials=p.naam.trim().split(' ').map(w=>w[0]).slice(0,2).join('').toUpperCase();
     btn.dataset.tip=p.naam.split(' ')[0];
@@ -5505,6 +5506,18 @@ function toonRes(){
     document.getElementById('rbd').insertAdjacentElement('afterend',card);
     if(res.leveled)setTimeout(()=>launchConfetti(),300);
     setTimeout(()=>floatXP(res.added),150);
+    syncAvatarToProfile();
+    updateProfileNav();
+    if(res.evolved){
+      const _p=JSON.parse(localStorage.getItem(PROF_KEY)||'{}');
+      const _a=getAnimalById(_p.animalId);
+      if(_a){
+        const _emoji=_a.s[res.newStage];
+        const _stageName=ANIM_STAGE_NAMES[res.newStage];
+        setTimeout(()=>showToast(`${_emoji} Je ${_a.n} is geëvolueerd naar <strong>${_stageName}</strong>!`,'var(--or)',4500),1000);
+        setTimeout(()=>launchConfetti('gold'),1200);
+      }
+    }
     // Mark daily challenge done
     if(ST.isDailyChallenge){
       try{const _k=_dcLevelKey();const dc=JSON.parse(localStorage.getItem(_k)||'{}');dc.done=true;localStorage.setItem(_k,JSON.stringify(dc));}catch(e){}
@@ -5522,7 +5535,7 @@ function toonRes(){
     const avgTijd=ST.tijdPerVraag.length?Math.round(totalTijd/ST.tijdPerVraag.length*10)/10:0;
     const prof=JSON.parse(localStorage.getItem(PROF_KEY)||'{}');
     const naam=prof.naam||'Anoniem';
-    const avatar=prof.avatar||'🐻';
+    const avatar=getMyCurrentAvatar()||'🐻';
     const entry={naam,avatar,vak:ST.vak.id,vakNaam:ST.vak.naam,domeinId:ST.domein.id,domeinNaam:ST.domein.naam,score:lbScore,goed,tot,avgTijd,date:new Date().toISOString().slice(0,10)};
     saveLeaderboardEntry(entry);
     if(lbBtn)lbBtn.style.display='block';
@@ -6233,15 +6246,31 @@ function floatXP(amount,refEl){
 }
 
 // ═══════ TOAST ═══════
-function showToast(msg,color){
-  color=color||'#22c55e';
+function getMyCurrentAvatar(){
+  try{
+    const p=JSON.parse(localStorage.getItem(PROF_KEY)||'{}');
+    if(p.animalId)return getAnimalEmoji(p.animalId,getTotalXP());
+    return p.avatar||'🐾';
+  }catch(e){return '🐾';}
+}
+function syncAvatarToProfile(){
+  try{
+    const p=JSON.parse(localStorage.getItem(PROF_KEY)||'{}');
+    if(!p.animalId)return;
+    p.avatar=getAnimalEmoji(p.animalId,getTotalXP());
+    localStorage.setItem(PROF_KEY,JSON.stringify(p));
+  }catch(e){}
+}
+
+function showToast(msg,color,dur){
+  color=color||'#22c55e';dur=dur||2800;
   document.querySelectorAll('.app-toast').forEach(e=>e.remove());
   const el=document.createElement('div');
   el.className='app-toast';
   el.style.background=color;
   el.innerHTML=msg;
   document.body.appendChild(el);
-  setTimeout(()=>el.remove(),2800);
+  setTimeout(()=>el.remove(),dur);
 }
 
 // ═══════ DAILY GOAL ═══════
@@ -6297,7 +6326,9 @@ function addXP(amount){
   d.xp=(d.xp||0)+amount;
   localStorage.setItem(XP_KEY,JSON.stringify(d));
   const newLvl=getLevelForXP(d.xp);
-  return{added:amount,oldLvl,newLvl,leveled:newLvl>oldLvl,totalXP:d.xp};
+  const oldStage=getAnimalStageIdx(d.xp-(amount));
+  const newStage=getAnimalStageIdx(d.xp);
+  return{added:amount,oldLvl,newLvl,leveled:newLvl>oldLvl,totalXP:d.xp,evolved:newStage>oldStage,newStage};
 }
 function getComboMult(combo){if(combo>=5)return 2;if(combo>=3)return 1.5;return 1;}
 function getStreakBonus(){const s=calcStreak();return Math.min((s.current||0)*0.1,0.5);}
