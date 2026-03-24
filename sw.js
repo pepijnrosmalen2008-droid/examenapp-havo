@@ -1,5 +1,5 @@
-const CACHE = 'slagio-v4';
-const ASSETS = ['/', '/index.html', '/manifest.json', '/icon-192.png', '/icon-512.png'];
+const CACHE = 'slagio-v5';
+const ASSETS = ['/', '/index.html', '/manifest.json', '/icon-192.png', '/icon-512.png', '/logo.svg', '/apple-touch-icon.png'];
 
 self.addEventListener('install', e => {
   e.waitUntil(caches.open(CACHE).then(c => c.addAll(ASSETS)));
@@ -14,7 +14,37 @@ self.addEventListener('activate', e => {
 });
 
 self.addEventListener('fetch', e => {
+  const { request } = e;
+  const url = new URL(request.url);
+
+  // Sla externe requests over (Supabase, Google Fonts, AdSense, etc.)
+  if (url.origin !== self.location.origin) return;
+
+  // Navigatie requests: network-first, val terug op cache (offline werking)
+  if (request.mode === 'navigate') {
+    e.respondWith(
+      fetch(request)
+        .then(res => {
+          const clone = res.clone();
+          caches.open(CACHE).then(c => c.put(request, clone));
+          return res;
+        })
+        .catch(() => caches.match('/index.html'))
+    );
+    return;
+  }
+
+  // Statische bestanden: cache-first, daarna netwerk
   e.respondWith(
-    fetch(e.request).catch(() => caches.match(e.request))
+    caches.match(request).then(cached => {
+      if (cached) return cached;
+      return fetch(request).then(res => {
+        if (res.ok) {
+          const clone = res.clone();
+          caches.open(CACHE).then(c => c.put(request, clone));
+        }
+        return res;
+      }).catch(() => caches.match('/index.html'));
+    })
   );
 });
