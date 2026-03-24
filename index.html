@@ -689,6 +689,21 @@ html.dark .qb{background:#2e3550}
   .streak-day-pip{width:30px;height:30px}
 }
 
+/* ── BRON / SOURCE CHIP ─────────────────────── */
+#qbron{text-align:center;margin-bottom:8px}
+.q-src{display:inline-flex;align-items:center;gap:5px;font-size:10px;font-weight:700;padding:3px 11px;border-radius:20px;letter-spacing:.4px;cursor:default}
+.q-src-ce{background:rgba(34,197,94,.13);color:#4ade80;border:1px solid rgba(34,197,94,.22)}
+.q-src-oef{background:rgba(255,255,255,.06);color:rgba(255,255,255,.38);border:1px solid rgba(255,255,255,.1)}
+/* ── BRONVERMELDING CARD (detail screen) ─────── */
+.bron-card{background:var(--s);border:1px solid var(--bo);border-radius:14px;margin-bottom:18px;overflow:hidden}
+.bron-card-head{display:flex;align-items:center;justify-content:space-between;padding:12px 16px;cursor:pointer;gap:10px;user-select:none}
+.bron-card-title{font-size:13px;font-weight:700;color:var(--dk);display:flex;align-items:center;gap:7px}
+.bron-card-arrow{font-size:12px;color:var(--mu);transition:transform .22s}
+.bron-card.open .bron-card-arrow{transform:rotate(180deg)}
+.bron-card-body{display:none;padding:0 16px 14px;font-size:12px;color:var(--mu);line-height:1.7}
+.bron-card.open .bron-card-body{display:block}
+.bron-row{display:flex;align-items:flex-start;gap:8px;padding:6px 0;border-top:1px solid var(--bo)}
+.bron-dot{width:8px;height:8px;border-radius:50%;flex-shrink:0;margin-top:5px}
 /* ── REVIEW SCREEN ───────────────────────────── */
 #sc-review{background:linear-gradient(180deg, #0A0C10 0%, #141824 100%)}
 .review-wrap{padding:32px 24px;max-width:660px;margin:0 auto}
@@ -2166,6 +2181,7 @@ html.dark .hsd-pill{background:var(--bg2);border-color:var(--bo2)}
     <span class="footer-sep">·</span>
     <a href="https://www.examenblad.nl" target="_blank" rel="noopener">Examenblad.nl</a>
     <br>© 2026 Slagio · Gemaakt door leerlingen, voor leerlingen.
+    <br><span style="font-size:11px;opacity:.6">Slagio is geen officiële publicatie van het CvTE. CE-vragen zijn afkomstig van <a href="https://www.examenblad.nl" target="_blank" rel="noopener">examenblad.nl</a>.</span>
   </div>
 </div>
 </div>
@@ -2230,6 +2246,27 @@ html.dark .hsd-pill{background:var(--bg2);border-color:var(--bo2)}
     <div class="dt-icon">💡</div>
     <div class="dt-text">Klik op een domein om te kiezen hoe je wilt oefenen: snelle quiz, oud-examenmateriaal of flashcards.</div>
   </div>
+  <!-- Bronvermelding & kwaliteit -->
+  <div class="bron-card" id="bron-card">
+    <div class="bron-card-head" onclick="this.closest('.bron-card').classList.toggle('open')">
+      <div class="bron-card-title">📋 Bronvermelding &amp; kwaliteit</div>
+      <span class="bron-card-arrow">▼</span>
+    </div>
+    <div class="bron-card-body">
+      <div class="bron-row">
+        <div class="bron-dot" style="background:#4ade80"></div>
+        <div><strong style="color:var(--dk)">📋 CE-vragen</strong> — Overgenomen uit officiële centrale examens van het CvTE (via <a href="https://www.examenblad.nl" target="_blank" rel="noopener" style="color:var(--or)">examenblad.nl</a>). Jaartal en tijdvak worden per vraag getoond.</div>
+      </div>
+      <div class="bron-row">
+        <div class="bron-dot" style="background:rgba(255,255,255,.3);border:1px solid var(--bo)"></div>
+        <div><strong style="color:var(--dk)">✍️ Oefenvragen</strong> — Door Slagio geschreven in de stijl van het CE. Niet afkomstig uit officiële examens, maar gericht op hetzelfde syllabus en denkniveau.</div>
+      </div>
+      <div class="bron-row">
+        <div class="bron-dot" style="background:rgba(var(--or-rgb),.6)"></div>
+        <div><strong style="color:var(--dk)">Disclaimer</strong> — Slagio is geen officiële publicatie van het CvTE of de overheid. Raadpleeg altijd <a href="https://www.examenblad.nl" target="_blank" rel="noopener" style="color:var(--or)">examenblad.nl</a> voor officieel examenmateriaal.</div>
+      </div>
+    </div>
+  </div>
   <p class="sec-label">Domeinen &amp; syllabus</p>
   <div id="dlist" class="dl"></div>
 </div>
@@ -2243,8 +2280,8 @@ html.dark .hsd-pill{background:var(--bg2);border-color:var(--bo2)}
     <h2>Kies quizmodus</h2>
     <p class="qmsub" id="qmsub"></p>
     <div class="qmc">
-      <div class="qmcd" onclick="startQ('snel')"><div class="qmci"><svg viewBox="0 0 24 24"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg></div><h3>Snelle Quiz</h3><p>Korte vragen met 15 sec timer. Stamp leerstof in je geheugen.</p><div class="qmode-desc">4 antwoordopties · Timer · Goed/Fout feedback</div><span class="pill ps">15 sec · 5 vragen</span></div>
-      <div class="qmcd" onclick="startQ('oud')"><div class="qmci"><svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg></div><h3>Oud-examen stijl</h3><p>Open vragen zoals bij het echte CE. Schrijf je antwoord en beoordeel jezelf.</p><div class="qmode-desc">Open vragen uit echte CE's · Beoordeelt zichzelf</div><span class="pill po">Geen timer · 3 vragen</span></div>
+      <div class="qmcd" onclick="startQ('snel')"><div class="qmci"><svg viewBox="0 0 24 24"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg></div><h3>Snelle Quiz</h3><p>Korte vragen met 15 sec timer. Stamp leerstof in je geheugen.</p><div class="qmode-desc">4 antwoordopties · Timer · Goed/Fout feedback</div><span class="pill ps">15 sec · 5 vragen</span><div style="font-size:10px;color:var(--mu);margin-top:6px;display:flex;align-items:center;gap:4px"><span style="color:#4ade80;font-weight:700">📋</span> Mix van CE-vragen &amp; Slagio oefenvragen</div></div>
+      <div class="qmcd" onclick="startQ('oud')"><div class="qmci"><svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg></div><h3>Oud-examen stijl</h3><p>Open vragen zoals bij het echte CE. Schrijf je antwoord en beoordeel jezelf.</p><div class="qmode-desc">Open vragen · Modelantwoord · Zelf beoordelen</div><span class="pill po">Geen timer · 3 vragen</span><div style="font-size:10px;color:var(--mu);margin-top:6px;display:flex;align-items:center;gap:4px"><span style="color:#4ade80;font-weight:700">📋</span> Vragen uit officiële CE's (examenblad.nl)</div></div>
       <div class="qmcd" onclick="startFlash()"><div class="qmci"><svg viewBox="0 0 24 24"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg></div><h3>Begrippen oefenen</h3><p>Flashcards: ken jij alle begrippen van dit domein?</p><div class="qmode-desc">Flashcards · Ken je het begrip? Ja/Nee</div><span class="pill" style="background:rgba(139,92,246,.2);color:#A78BFA">Flip &amp; leer</span></div>
     </div>
   </div>
@@ -2259,7 +2296,7 @@ html.dark .hsd-pill{background:var(--bg2);border-color:var(--bo2)}
   <!-- timer (snel only) -->
   <div id="qring" class="qring"><svg width="50" height="50" viewBox="0 0 50 50"><circle class="trbg" cx="25" cy="25" r="21" stroke-dasharray="132" stroke-dashoffset="0"/><circle class="trfg" id="tcirc" cx="25" cy="25" r="21" stroke-dasharray="132" stroke-dashoffset="0"/></svg><div class="trn" id="tnum">15</div></div>
   <!-- bron label (oud only) -->
-  <div id="qbron" style="display:none;text-align:center;font-size:11px;color:rgba(255,255,255,.35);margin-bottom:6px;letter-spacing:.3px"></div>
+  <div id="qbron"></div>
   <div class="qctr" id="qctr"></div>
   <div class="qctx" id="qctx" style="display:none"></div>
   <div class="qq" id="qq"></div>
@@ -5358,10 +5395,15 @@ function toonV(){
   // vraagstelling
   document.getElementById('qq').textContent=q.v;
 
+  // Bronvermelding chip — altijd zichtbaar
+  {const bronEl=document.getElementById('qbron');
+  if(bronEl){const isCE=q.bron&&/CE\s*\d{4}|CE\s*20\d\d|\d{4}\s*T[12]/i.test(q.bron);
+  const label=isCE?q.bron.replace(/\s*\(.*\)/,'').trim():'Slagio oefenvraag';
+  bronEl.innerHTML=`<span class="q-src ${isCE?'q-src-ce':'q-src-oef'}">${isCE?'📋':'✍️'} ${label}</span>`;}}
+
   if(ST.mode==='snel'){
-    // Toon timer, verberg oud-area + bron
+    // Toon timer, verberg oud-area
     document.getElementById('qring').style.display='block';
-    document.getElementById('qbron').style.display='none';
     document.getElementById('oud-area').style.display='none';
     document.getElementById('snel-area').style.display='grid';
 
@@ -5393,10 +5435,7 @@ function toonV(){
     document.getElementById('snel-area').style.display='none';
     document.getElementById('snel-area').innerHTML='';
 
-    // Toon bronlabel
-    const bron=document.getElementById('qbron');
-    bron.style.display='block';
-    bron.textContent=q.bron||'Oefenvraag · HAVO-stijl';
+    // bronlabel al gezet bovenaan voor beide modi
 
     // Reset oud-area volledig voor elke nieuwe vraag
     document.getElementById('oud-area').style.display='block';
