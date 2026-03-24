@@ -6443,6 +6443,7 @@ function renderXPHome(){
 
 // ═══════ DAILY CHALLENGE ═══════
 const DC_KEY='slagio_daily_challenge';
+let _dcCache=null; // cached per render so startDailyChallenge doesn't re-validate
 function _dcLevelKey(){return DC_KEY+'_'+APP_LEVEL;}
 function getDailyChallenge(){
   const today=new Date().toISOString().slice(0,10);
@@ -6450,43 +6451,45 @@ function getDailyChallenge(){
   try{
     const d=JSON.parse(localStorage.getItem(key)||'{}');
     if(d.date===today){
-      // Validate stored vak/domein still exist in current level
       const vak=getVK().find(v=>v.id===d.vakId);
       const dom=vak&&vak.domeinen.find(x=>x.id===d.domeinId);
       if(vak&&dom&&dom.sv&&dom.sv.length>=3)return d;
-      // Stale/invalid — fall through to pick fresh
     }
   }catch(e){}
-  const mijnVakken=getMijnVakken();
-  const vakken=getVK().filter(v=>!mijnVakken.length||mijnVakken.includes(v.id));
+  // Pick a fresh challenge from all valid HAVO/VWO domains
   const all=[];
-  vakken.forEach(v=>v.domeinen.forEach(d=>{if(d.sv&&d.sv.length>=3)all.push({vak:v,domein:d});}));
+  getVK().forEach(v=>v.domeinen.forEach(d=>{if(d.sv&&d.sv.length>=3)all.push({vak:v,domein:d});}));
   if(!all.length)return null;
   const pick=all[Math.floor(Math.random()*all.length)];
   const dc={date:today,vakId:pick.vak.id,vakNaam:pick.vak.naam,domeinId:pick.domein.id,domeinNaam:pick.domein.naam,done:false};
-  localStorage.setItem(key,JSON.stringify(dc));
+  try{localStorage.setItem(key,JSON.stringify(dc));}catch(e){}
   return dc;
 }
 function renderDailyChallenge(){
   const box=document.getElementById('daily-challenge-home');
   if(!box)return;
-  const dc=getDailyChallenge();
-  if(!dc){box.innerHTML='';return;}
-  if(dc.done){
+  _dcCache=getDailyChallenge();
+  if(!_dcCache){box.innerHTML='';return;}
+  if(_dcCache.done){
     box.innerHTML=`<div class="daily-done">✅ Dagelijkse uitdaging voltooid — +2× XP verdiend!</div>`;
     return;
   }
-  box.innerHTML=`<button class="daily-chip pulse-chip" onclick="startDailyChallenge()">⚡ Dagelijkse uitdaging · ${dc.vakNaam}: ${dc.domeinNaam} · 2× XP</button>`;
+  box.innerHTML=`<button class="daily-chip pulse-chip" onclick="startDailyChallenge()">⚡ Dagelijkse uitdaging · ${_dcCache.vakNaam}: ${_dcCache.domeinNaam} · 2× XP</button>`;
 }
 function startDailyChallenge(){
-  const dc=getDailyChallenge();
-  if(!dc||dc.done)return;
-  const vak=getVK().find(v=>v.id===dc.vakId);
-  if(!vak){localStorage.removeItem(_dcLevelKey());renderDailyChallenge();return;}
-  const domein=vak.domeinen.find(d=>d.id===dc.domeinId);
-  if(!domein||!domein.sv||!domein.sv.length){localStorage.removeItem(_dcLevelKey());renderDailyChallenge();return;}
-  ST.vak=vak;ST.domein=domein;ST.isDailyChallenge=true;
-  startQ('snel');
+  try{
+    const dc=_dcCache||getDailyChallenge();
+    if(!dc||dc.done)return;
+    const vak=getVK().find(v=>v.id===dc.vakId);
+    if(!vak){_dcCache=null;localStorage.removeItem(_dcLevelKey());renderDailyChallenge();showToast('Uitdaging vernieuwd — probeer opnieuw!','#f97316');return;}
+    const domein=vak.domeinen.find(d=>d.id===dc.domeinId);
+    if(!domein||!domein.sv||!domein.sv.length){_dcCache=null;localStorage.removeItem(_dcLevelKey());renderDailyChallenge();showToast('Uitdaging vernieuwd — probeer opnieuw!','#f97316');return;}
+    ST.vak=vak;ST.domein=domein;ST.isDailyChallenge=true;
+    startQ('snel');
+  }catch(err){
+    console.error('[DC]',err);
+    showToast('Kon quiz niet starten: '+err.message,'#ef4444');
+  }
 }
 
 // ═══════ STREAK & BADGES ═══════
