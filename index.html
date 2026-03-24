@@ -6382,7 +6382,7 @@ function renderHomeStats(){
   const nextMile=milestones.find(m=>m>streak);
   let streakSub=atRisk?'⚠ Oefen voor middernacht!':streak>0?'dagen op rij':'Begin je streak!';
   if(!atRisk&&nextMile&&(nextMile-streak)<=2)streakSub=`Nog ${nextMile-streak} dag${nextMile-streak>1?'en':''} voor ${nextMile===7?'⚡7-daags':nextMile===14?'💎14-daags':nextMile+'d'} badge!`;
-  const streakHtml=`<div class="hsd-pill hsd-streak${atRisk?' hsd-at-risk':''}" onclick="document.getElementById('streak-home')&&document.getElementById('streak-home').scrollIntoView({behavior:'smooth'})" title="Jouw streak" role="button" tabindex="0">
+  const streakHtml=`<div class="hsd-pill hsd-streak${atRisk?' hsd-at-risk':''}" onclick="openProfiel()" title="Bekijk streak & badges" role="button" tabindex="0">
     <span class="hsd-icon hsd-icon-wrap">🔥</span>
     <div class="hsd-body">
       <div class="hsd-val">${streak} dag${streak!==1?'en':''}</div>
@@ -6394,7 +6394,7 @@ function renderHomeStats(){
   const nxtXP2=getXPForLevel(lvl+1)||curXP2+1000;
   const xpToNext=nxtXP2-xp;
   const xpSub=xp>0?`Nog ${xpToNext} XP naar level ${lvl+1}`:'';
-  const lvlHtml=xp>0?`<div class="hsd-pill hsd-xp" onclick="document.getElementById('xp-home-bar')&&document.getElementById('xp-home-bar').scrollIntoView({behavior:'smooth'})" title="Jouw level en XP" role="button" tabindex="0">
+  const lvlHtml=xp>0?`<div class="hsd-pill hsd-xp" onclick="show('sc-leaderboard');renderLeaderboard()" title="Bekijk leaderboard" role="button" tabindex="0">
     <span class="hsd-icon">⭐</span>
     <div class="hsd-body">
       <div class="hsd-val">Level ${lvl}</div>
@@ -6403,11 +6403,11 @@ function renderHomeStats(){
   </div>`:'';
   let avgClass='hsd-avg';
   if(avg!==null&&avg<6)avgClass='hsd-avg hsd-avg-warn';
-  const avgHtml=avg!==null?`<div class="hsd-pill ${avgClass}" onclick="show('sc-cijfers');setTimeout(buildCijferGrid,50)" title="Gemiddeld SE-cijfer" role="button" tabindex="0">
+  const avgHtml=avg!==null?`<div class="hsd-pill ${avgClass}" onclick="show('sc-calc');setTimeout(prefillCalcFromSaved,50)" title="Bereken je eindcijfer" role="button" tabindex="0">
     <span class="hsd-icon">📈</span>
     <div class="hsd-body">
       <div class="hsd-val">${avg.toFixed(1).replace('.',',')}</div>
-      <div class="hsd-lbl">Gemiddelde</div>
+      <div class="hsd-lbl">Gemiddelde SE</div>
     </div>
   </div>`:'';
   box.innerHTML=`<div class="home-stats-dash">${streakHtml}${lvlHtml}${avgHtml}</div>`;
