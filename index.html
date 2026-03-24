@@ -1008,20 +1008,65 @@ html.dark .calc-btn{background:#2e3550}
 .calc-result-bar-track{flex:1;height:8px;border-radius:4px;background:var(--bo);overflow:hidden}
 .calc-result-bar-fill{height:100%;border-radius:4px;transition:width .5s}
 
-/* ── FLASHCARD MODE ────────────────────────────── */
-.fc-card{perspective:600px;width:100%;max-width:420px;margin:0 auto 24px;cursor:pointer;height:240px}
-.fc-inner{position:relative;width:100%;height:100%;transition:transform .5s;transform-style:preserve-3d}
+/* ── FLASHCARD v2 — SPACED REPETITION ─────────── */
+.fc-card{perspective:800px;width:100%;max-width:480px;margin:0 auto 14px;cursor:pointer;height:210px}
+.fc-inner{position:relative;width:100%;height:100%;transition:transform .45s cubic-bezier(.4,0,.2,1);transform-style:preserve-3d}
 .fc-card.flipped .fc-inner{transform:rotateY(180deg)}
-.fc-front,.fc-back{position:absolute;inset:0;backface-visibility:hidden;border-radius:18px;display:flex;align-items:center;justify-content:center;padding:28px;text-align:center;font-size:17px;line-height:1.6}
-.fc-front{background:linear-gradient(135deg,#1a1f2e,#252d3d);color:#fff;font-family:var(--font-head);font-weight:700;font-size:20px;box-shadow:0 8px 28px rgba(0,0,0,.25)}
-.fc-back{background:linear-gradient(135deg,#0d2240,#1a3558);color:#C8DFFE;transform:rotateY(180deg);font-size:15px;box-shadow:0 8px 28px rgba(0,0,0,.25)}
-.fc-btns{display:flex;gap:12px;justify-content:center;margin-top:18px}
-.fc-btn{padding:12px 28px;border-radius:12px;border:none;font-size:15px;font-weight:700;cursor:pointer;font-family:var(--font);transition:all .2s}
-.fc-btn:hover{transform:translateY(-2px)}
-.fc-btn.fc-yes{background:#22C55E;color:#fff;box-shadow:0 4px 14px rgba(34,197,94,.3)}
-.fc-btn.fc-no{background:#EF4444;color:#fff;box-shadow:0 4px 14px rgba(239,68,68,.3)}
-.fc-progress{text-align:center;font-size:14px;color:var(--mu);margin-bottom:18px;font-weight:600}
-.fc-score{text-align:center;font-size:15px;color:var(--mu);margin-top:14px}
+.fc-front,.fc-back{position:absolute;inset:0;backface-visibility:hidden;border-radius:20px;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:24px 28px;text-align:center;line-height:1.5;gap:6px}
+.fc-front{background:var(--s);border:1px solid var(--bo);color:var(--dk);font-family:var(--font-head);font-weight:700;font-size:19px;box-shadow:0 4px 20px rgba(0,0,0,.07)}
+.fc-front-hint{font-size:10px;font-weight:600;letter-spacing:.6px;text-transform:uppercase;color:var(--mu);opacity:.55;position:absolute;bottom:12px}
+.fc-back{background:linear-gradient(145deg,rgba(var(--or-rgb),.07),rgba(var(--or-rgb),.02));border:1px solid rgba(var(--or-rgb),.18);color:var(--dk);transform:rotateY(180deg);font-size:14px;box-shadow:0 4px 20px rgba(0,0,0,.07)}
+.fc-back-term{font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.8px;color:var(--or);margin-bottom:4px}
+/* Session header */
+.fc-header{display:flex;align-items:center;gap:10px;margin-bottom:10px}
+.fc-prog-wrap{flex:1;height:5px;border-radius:3px;background:var(--bo);overflow:hidden}
+.fc-prog-bar{height:100%;border-radius:3px;background:linear-gradient(90deg,var(--or),#f59e0b);transition:width .5s cubic-bezier(.34,1.2,.64,1);width:0%}
+.fc-counts{display:flex;gap:6px;flex-shrink:0}
+.fc-count-chip{font-size:10px;font-weight:700;padding:2px 8px;border-radius:20px;letter-spacing:.3px}
+.fc-chip-new{background:rgba(99,102,241,.12);color:#818cf8}
+.fc-chip-due{background:rgba(var(--or-rgb),.12);color:var(--or)}
+/* AI badge */
+.fc-ai-badge{display:inline-flex;align-items:center;gap:5px;font-size:10px;font-weight:700;background:linear-gradient(135deg,rgba(var(--or-rgb),.1),rgba(99,102,241,.08));border:1px solid rgba(var(--or-rgb),.18);border-radius:20px;padding:4px 12px;color:var(--or);margin-bottom:10px;letter-spacing:.3px}
+/* 4-button rating row */
+.fc-btns{display:grid;grid-template-columns:repeat(4,1fr);gap:7px;margin-top:12px}
+.fc-btn{display:flex;flex-direction:column;align-items:center;padding:9px 6px;border-radius:11px;border:1.5px solid;font-family:var(--font);cursor:pointer;transition:all .18s cubic-bezier(.34,1.2,.64,1);background:var(--s)}
+.fc-btn:hover{transform:translateY(-3px)}
+.fc-btn:active{transform:scale(.95)}
+.fc-btn-label{font-size:12px;font-weight:700;margin-bottom:2px}
+.fc-btn-int{font-size:10px;font-weight:600;opacity:.6}
+.fc-btn.fc-again{border-color:rgba(239,68,68,.3);color:#ef4444}
+.fc-btn.fc-again:hover{background:rgba(239,68,68,.07);border-color:#ef4444;box-shadow:0 5px 14px rgba(239,68,68,.18)}
+.fc-btn.fc-hard{border-color:rgba(var(--or-rgb),.3);color:var(--or)}
+.fc-btn.fc-hard:hover{background:rgba(var(--or-rgb),.07);border-color:var(--or);box-shadow:0 5px 14px rgba(var(--or-rgb),.18)}
+.fc-btn.fc-good{border-color:rgba(34,197,94,.3);color:#22c55e}
+.fc-btn.fc-good:hover{background:rgba(34,197,94,.07);border-color:#22c55e;box-shadow:0 5px 14px rgba(34,197,94,.18)}
+.fc-btn.fc-easy{border-color:rgba(99,102,241,.3);color:#818cf8}
+.fc-btn.fc-easy:hover{background:rgba(99,102,241,.07);border-color:#818cf8;box-shadow:0 5px 14px rgba(99,102,241,.18)}
+/* Progress text */
+.fc-progress{text-align:center;font-size:12px;color:var(--mu);margin-bottom:6px;font-weight:600}
+/* Session summary */
+.fc-summary{background:var(--s);border:1px solid var(--bo);border-radius:20px;padding:22px 20px;text-align:center;max-width:480px;margin:0 auto}
+.fc-sum-title{font-family:var(--font-head);font-size:20px;font-weight:800;color:var(--dk);margin-bottom:3px}
+.fc-sum-sub{font-size:12px;color:var(--mu);margin-bottom:16px}
+.fc-sum-stats{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-bottom:16px}
+.fc-sum-stat{background:var(--bg2);border-radius:12px;padding:10px 6px}
+.fc-sum-stat-n{font-family:var(--font-head);font-size:22px;font-weight:800}
+.fc-sum-stat-l{font-size:9px;color:var(--mu);font-weight:700;text-transform:uppercase;letter-spacing:.4px;margin-top:2px}
+.fc-mastery-wrap{height:7px;border-radius:4px;background:var(--bo);overflow:hidden;margin-bottom:5px}
+.fc-mastery-bar{height:100%;border-radius:4px;transition:width .9s cubic-bezier(.34,1.2,.64,1)}
+.fc-mastery-lbl{font-size:11px;color:var(--mu);font-weight:600;margin-bottom:14px}
+.fc-sum-btn{width:100%;padding:11px;border-radius:11px;border:none;font-family:var(--font-head);font-size:13px;font-weight:700;cursor:pointer;margin-top:6px}
+.fc-sum-btn-primary{background:linear-gradient(135deg,var(--or),#f59e0b);color:#fff;box-shadow:0 3px 12px rgba(var(--or-rgb),.3)}
+.fc-sum-btn-sec{background:var(--s);color:var(--dk);border:1px solid var(--bo)!important}
+.fc-score{margin-top:12px}
+/* Mobile */
+@media(max-width:600px){
+  .fc-card{height:185px}
+  .fc-front{font-size:16px}
+  .fc-back{font-size:13px}
+  .fc-btns{grid-template-columns:repeat(2,1fr);gap:7px}
+  .fc-btn{padding:9px 6px}
+}
 
 /* ── POMODORO TIMER ────────────────────────────── */
 /* ── POMODORO REDESIGN (21st.dev inspired) ───── */
@@ -1292,15 +1337,6 @@ html.dark .calc-btn{background:#2e3550}
   .calc-result p{font-size:13px}
   .calc-result-icon{font-size:44px;margin-bottom:8px}
   .calc-detail{font-size:12px}
-
-  /* Flashcards */
-  .fc-card{max-width:100%;height:200px;margin-bottom:18px}
-  .fc-front,.fc-back{padding:20px;border-radius:14px}
-  .fc-front{font-size:17px}
-  .fc-back{font-size:13px}
-  .fc-btns{gap:10px;margin-top:14px}
-  .fc-btn{padding:12px 22px;font-size:14px;border-radius:10px}
-  .fc-progress{font-size:12px;margin-bottom:14px}
 
   /* Footer */
   .site-footer{margin-top:32px;padding:20px 0 28px;font-size:12px;margin-bottom:8px}
@@ -2458,17 +2494,32 @@ html.dark .hsd-pill{background:var(--bg2);border-color:var(--bo2)}
 <!-- FLASHCARDS -->
 <div id="sc-flash" class="sc">
 <div class="qtb"><span class="ql">📇</span><span class="qmeta" id="fc-meta"></span><button class="qstp" onclick="show('sc-detail')">✕ Stop</button></div>
-<div class="qbody" style="padding-top:30px">
+<div class="qbody" style="padding-top:18px">
+  <div style="text-align:center"><span class="fc-ai-badge">✨ Spaced Repetition</span></div>
+  <div class="fc-header">
+    <div class="fc-prog-wrap"><div class="fc-prog-bar" id="fc-prog-bar"></div></div>
+    <div class="fc-counts" id="fc-counts"></div>
+  </div>
   <div class="fc-progress" id="fc-progress"></div>
   <div class="fc-card" id="fc-card" onclick="flipCard()">
     <div class="fc-inner">
-      <div class="fc-front" id="fc-front"></div>
+      <div class="fc-front" id="fc-front"><span class="fc-front-hint">Tik om te draaien</span></div>
       <div class="fc-back" id="fc-back"></div>
     </div>
   </div>
   <div class="fc-btns" id="fc-btns" style="display:none">
-    <button class="fc-btn fc-no" onclick="fcAnswer(false)">✗ Wist ik niet</button>
-    <button class="fc-btn fc-yes" onclick="fcAnswer(true)">✓ Wist ik</button>
+    <button class="fc-btn fc-again" onclick="fcRate(0)">
+      <span class="fc-btn-label">Opnieuw</span><span class="fc-btn-int" id="fc-int-0">&lt;1m</span>
+    </button>
+    <button class="fc-btn fc-hard" onclick="fcRate(2)">
+      <span class="fc-btn-label">Moeilijk</span><span class="fc-btn-int" id="fc-int-2">--</span>
+    </button>
+    <button class="fc-btn fc-good" onclick="fcRate(3)">
+      <span class="fc-btn-label">Goed</span><span class="fc-btn-int" id="fc-int-3">--</span>
+    </button>
+    <button class="fc-btn fc-easy" onclick="fcRate(5)">
+      <span class="fc-btn-label">Makkelijk</span><span class="fc-btn-int" id="fc-int-5">--</span>
+    </button>
   </div>
   <div class="fc-score" id="fc-score"></div>
 </div>
@@ -7076,51 +7127,204 @@ function berekenHerk(){
 }
 
 // ═══════ FLASHCARDS ═══════
-let FC={cards:[],idx:0,correct:0,total:0,flipped:false};
+// ═══════ SPACED REPETITION (SM-2) ═══════
+const SR_KEY='slagio_sr_v1';
+function getSR(){try{return JSON.parse(localStorage.getItem(SR_KEY)||'{}');}catch(e){return{};}}
+function saveSR(d){localStorage.setItem(SR_KEY,JSON.stringify(d));}
+function srKey(vakId,domId,term){return vakId+'__'+domId+'__'+term.slice(0,35).replace(/\s+/g,'_').replace(/[^a-zA-Z0-9_]/g,'');}
+
+// SM-2: quality 0=again 2=hard 3=good 5=easy
+function sm2(sr={},q){
+  let{interval=0,ease=2.5,reps=0,lapses=0}=sr;
+  if(q===0){lapses++;reps=0;interval=1;}
+  else if(q===2){interval=Math.max(1,Math.ceil((interval||1)*1.2));reps=Math.max(0,reps-1);}
+  else{
+    if(reps===0)interval=1;
+    else if(reps===1)interval=3;
+    else interval=Math.round((interval||3)*ease);
+    if(q===5)interval=Math.round(interval*1.3);
+    reps++;
+  }
+  ease=Math.max(1.3,ease+0.1-(5-q)*(0.08+(5-q)*0.02));
+  const due=new Date();due.setDate(due.getDate()+Math.max(1,interval));
+  return{interval,ease:Math.round(ease*1000)/1000,reps,lapses,due:due.toISOString().slice(0,10)};
+}
+function srIntLabel(q,sr={}){
+  const{interval=0,ease=2.5,reps=0}=sr;
+  if(q===0)return'<1m';
+  let ni;
+  if(q===2)ni=Math.max(1,Math.ceil((interval||1)*1.2));
+  else if(reps===0)ni=1;
+  else if(reps===1)ni=3;
+  else ni=Math.round((interval||3)*ease);
+  if(q===5)ni=Math.round((ni||1)*1.3);
+  ni=Math.max(1,ni);
+  if(ni>=365)return Math.round(ni/365)+'jr';
+  if(ni>=30)return Math.round(ni/30)+'mo';
+  return ni+'d';
+}
+
+let FC={cards:[],queue:[],again:[],stats:{again:0,hard:0,good:0,easy:0},vakId:'',domId:'',flipped:false,sessionTotal:0};
+
 function startFlash(){
-  const d=ST.domein;
-  FC.cards=[];FC.idx=0;FC.correct=0;FC.flipped=false;
-  const terms=d.onderwerpen||[];
+  const d=ST.domein,v=ST.vak;
+  if(!d||!v)return;
+  const terms=(d.onderwerpen||[]).filter(t=>t&&t.trim().length>1);
   const samText=(d.sam||'').replace(/<[^>]+>/g,'');
-  const parts=samText.split(/\.\s+/).filter(p=>p.length>20);
-  terms.forEach((t,i)=>{
-    const def=parts[i]||'Bestudeer dit begrip in de samenvatting.';
-    FC.cards.push({term:t,def:def});
+  const sents=samText.split(/(?<=[.!?])\s+/).filter(s=>s.length>20);
+  const cards=terms.map((term,i)=>({
+    term,
+    def:sents[i]||sents[i%Math.max(1,sents.length)]||'Bestudeer dit begrip in de samenvatting.'
+  }));
+  if(!cards.length){showToast('Geen flashcards voor dit domein','#ef4444');return;}
+
+  const today=new Date().toISOString().slice(0,10);
+  const srData=getSR();
+  const shuffle=a=>[...a].sort(()=>Math.random()-.5);
+  const newCards=[],dueCards=[];
+  cards.forEach(c=>{
+    const k=srKey(v.id,d.id,c.term);
+    const sr=srData[k];
+    if(!sr)newCards.push({...c,k,sr:{}});
+    else if(sr.due<=today)dueCards.push({...c,k,sr});
   });
-  for(let i=FC.cards.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[FC.cards[i],FC.cards[j]]=[FC.cards[j],FC.cards[i]];}
-  FC.total=FC.cards.length;
-  document.getElementById('fc-meta').textContent=ST.vak.naam+' · D'+d.id+': '+d.naam+' · Begrippen';
+
+  FC={
+    cards,
+    queue:[...shuffle(dueCards),...shuffle(newCards).slice(0,20)],
+    again:[],
+    stats:{again:0,hard:0,good:0,easy:0},
+    vakId:v.id,domId:d.id,flipped:false,
+    sessionTotal:0,
+    newCount:Math.min(newCards.length,20),
+    dueCount:dueCards.length
+  };
+  FC.sessionTotal=FC.queue.length;
+
+  const metaEl=document.getElementById('fc-meta');
+  if(metaEl)metaEl.textContent=v.naam+' · D'+d.id+': '+d.naam;
+  _fcUpdateChips();
   show('sc-flash');
   showFlashcard();
 }
-function showFlashcard(){
-  if(FC.idx>=FC.cards.length){
-    document.getElementById('fc-front').textContent='Klaar!';
-    document.getElementById('fc-back').textContent='';
-    document.getElementById('fc-btns').style.display='none';
-    document.getElementById('fc-progress').textContent=`${FC.correct} van ${FC.total} goed (${Math.round(FC.correct/FC.total*100)}%)`;
-    document.getElementById('fc-score').innerHTML=`<button class="calc-btn" onclick="FC.idx=0;FC.correct=0;FC.flipped=false;showFlashcard()">🔄 Opnieuw</button>`;
-    return;
-  }
-  const c=FC.cards[FC.idx];
-  FC.flipped=false;
-  document.getElementById('fc-card').classList.remove('flipped');
-  document.getElementById('fc-front').textContent=c.term;
-  document.getElementById('fc-back').textContent=c.def;
-  document.getElementById('fc-btns').style.display='none';
-  document.getElementById('fc-progress').textContent=`Kaart ${FC.idx+1} van ${FC.total}`;
-  document.getElementById('fc-score').textContent=FC.idx>0?`${FC.correct} goed tot nu toe`:'Tik op de kaart om het antwoord te zien';
+
+function _fcUpdateChips(){
+  const el=document.getElementById('fc-counts');
+  if(!el)return;
+  el.innerHTML=
+    (FC.newCount>0?`<span class="fc-count-chip fc-chip-new">${FC.newCount} nieuw</span>`:'')+
+    (FC.dueCount>0?`<span class="fc-count-chip fc-chip-due">${FC.dueCount} herhaling</span>`:'');
 }
+
+function showFlashcard(){
+  // Progress bar
+  const done=FC.sessionTotal-FC.queue.length;
+  const bar=document.getElementById('fc-prog-bar');
+  if(bar)bar.style.width=(FC.sessionTotal>0?Math.round(done/FC.sessionTotal*100):0)+'%';
+
+  // Session complete
+  if(!FC.queue.length&&!FC.again.length){_fcSummary();return;}
+
+  // Flush "again" cards back into queue when main queue empties
+  if(!FC.queue.length&&FC.again.length){
+    FC.queue=[...FC.again];FC.again=[];
+    FC.sessionTotal+=FC.queue.length;
+    showToast('🔄 Herhaling van '+FC.queue.length+' moeilijke kaart'+(FC.queue.length!==1?'en':''),'var(--or)',2200);
+  }
+
+  const c=FC.queue[0];
+  FC.flipped=false;
+  const cardEl=document.getElementById('fc-card');
+  cardEl.style.display='';
+  cardEl.classList.remove('flipped');
+  document.getElementById('fc-front').innerHTML=`<span>${c.term}</span><span class="fc-front-hint">Tik om te draaien</span>`;
+  document.getElementById('fc-back').innerHTML=`<div class="fc-back-term">${c.term}</div><div>${c.def}</div>`;
+  document.getElementById('fc-btns').style.display='none';
+  document.getElementById('fc-score').innerHTML='';
+
+  const doneTotal=FC.sessionTotal-FC.queue.length-(FC.again.length>0?0:0);
+  const progEl=document.getElementById('fc-progress');
+  if(progEl)progEl.textContent=(done+1)+' van '+FC.sessionTotal+(FC.again.length?' · +'+FC.again.length+' herhaling':'');
+}
+
 function flipCard(){
   if(FC.flipped)return;
   FC.flipped=true;
   document.getElementById('fc-card').classList.add('flipped');
-  document.getElementById('fc-btns').style.display='flex';
+  const btnsEl=document.getElementById('fc-btns');
+  btnsEl.style.display='grid';
+  const c=FC.queue[0]||{};
+  [0,2,3,5].forEach(q=>{
+    const el=document.getElementById('fc-int-'+q);
+    if(el)el.textContent=srIntLabel(q,c.sr||{});
+  });
 }
-function fcAnswer(correct){
-  if(correct)FC.correct++;
-  FC.idx++;
+
+function fcRate(q){
+  if(!FC.queue.length)return;
+  const c=FC.queue.shift();
+  const srData=getSR();
+  srData[c.k]=sm2(c.sr||{},q);
+  saveSR(srData);
+  if(q===0){FC.stats.again++;FC.again.push({...c,sr:srData[c.k]});}
+  else if(q===2)FC.stats.hard++;
+  else if(q===3)FC.stats.good++;
+  else FC.stats.easy++;
   showFlashcard();
+}
+
+function _fcSummary(){
+  const s=FC.stats;
+  const total=s.again+s.hard+s.good+s.easy;
+  const goodCount=s.good+s.easy;
+  const pct=total>0?Math.round(goodCount/total*100):0;
+  const col=pct>=80?'#22c55e':pct>=50?'var(--or)':'#ef4444';
+  const title=pct>=80?'Uitstekend! 🎉':pct>=50?'Goed bezig! 💪':'Blijf oefenen! 📚';
+
+  // Count mastered (reps >= 2) across full deck
+  const srData=getSR();
+  const mastered=FC.cards.filter(c=>(srData[srKey(FC.vakId,FC.domId,c.term)]?.reps||0)>=2).length;
+
+  // Next due card date
+  const today=new Date();
+  const dueDates=FC.cards.map(c=>srData[srKey(FC.vakId,FC.domId,c.term)]?.due).filter(Boolean).sort();
+  const nextDue=dueDates[0];
+  let nextLabel='—';
+  if(nextDue){
+    const diff=Math.round((new Date(nextDue)-today)/(1000*60*60*24));
+    nextLabel=diff<=0?'Vandaag':diff===1?'Morgen':'Over '+diff+' dagen';
+  }
+
+  document.getElementById('fc-card').style.display='none';
+  document.getElementById('fc-btns').style.display='none';
+  document.getElementById('fc-progress').textContent='';
+  const bar=document.getElementById('fc-prog-bar');
+  if(bar)bar.style.width='100%';
+
+  document.getElementById('fc-score').innerHTML=`
+    <div class="fc-summary">
+      <div class="fc-sum-title">${title}</div>
+      <div class="fc-sum-sub">${total} kaarten beoordeeld deze sessie</div>
+      <div class="fc-sum-stats">
+        <div class="fc-sum-stat">
+          <div class="fc-sum-stat-n" style="color:#22c55e">${goodCount}</div>
+          <div class="fc-sum-stat-l">Goed</div>
+        </div>
+        <div class="fc-sum-stat">
+          <div class="fc-sum-stat-n" style="color:var(--or)">${s.hard}</div>
+          <div class="fc-sum-stat-l">Moeilijk</div>
+        </div>
+        <div class="fc-sum-stat">
+          <div class="fc-sum-stat-n" style="color:#ef4444">${s.again}</div>
+          <div class="fc-sum-stat-l">Opnieuw</div>
+        </div>
+      </div>
+      <div class="fc-mastery-wrap"><div class="fc-mastery-bar" style="width:${Math.round(mastered/Math.max(1,FC.cards.length)*100)}%;background:${col}"></div></div>
+      <div class="fc-mastery-lbl">${mastered}/${FC.cards.length} kaarten beheerst · ${pct}% goed deze sessie</div>
+      <div style="font-size:11px;color:var(--mu);margin:10px 0 2px">⏰ Volgende herhaling: <strong>${nextLabel}</strong></div>
+      <button class="fc-sum-btn fc-sum-btn-primary" onclick="startFlash()">🔄 Nieuwe sessie</button>
+      <button class="fc-sum-btn fc-sum-btn-sec" onclick="show('sc-detail')">← Terug</button>
+    </div>`;
 }
 
 // ═══════ POMODORO ═══════
