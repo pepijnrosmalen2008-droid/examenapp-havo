@@ -5507,7 +5507,7 @@ function toonRes(){
     setTimeout(()=>floatXP(res.added),150);
     // Mark daily challenge done
     if(ST.isDailyChallenge){
-      try{const dc=JSON.parse(localStorage.getItem(DC_KEY)||'{}');dc.done=true;localStorage.setItem(DC_KEY,JSON.stringify(dc));}catch(e){}
+      try{const _k=_dcLevelKey();const dc=JSON.parse(localStorage.getItem(_k)||'{}');dc.done=true;localStorage.setItem(_k,JSON.stringify(dc));}catch(e){}
       ST.isDailyChallenge=false;
     }
   }
@@ -6443,9 +6443,20 @@ function renderXPHome(){
 
 // ═══════ DAILY CHALLENGE ═══════
 const DC_KEY='slagio_daily_challenge';
+function _dcLevelKey(){return DC_KEY+'_'+APP_LEVEL;}
 function getDailyChallenge(){
   const today=new Date().toISOString().slice(0,10);
-  try{const d=JSON.parse(localStorage.getItem(DC_KEY)||'{}');if(d.date===today)return d;}catch(e){}
+  const key=_dcLevelKey();
+  try{
+    const d=JSON.parse(localStorage.getItem(key)||'{}');
+    if(d.date===today){
+      // Validate stored vak/domein still exist in current level
+      const vak=getVK().find(v=>v.id===d.vakId);
+      const dom=vak&&vak.domeinen.find(x=>x.id===d.domeinId);
+      if(vak&&dom&&dom.sv&&dom.sv.length>=3)return d;
+      // Stale/invalid — fall through to pick fresh
+    }
+  }catch(e){}
   const mijnVakken=getMijnVakken();
   const vakken=getVK().filter(v=>!mijnVakken.length||mijnVakken.includes(v.id));
   const all=[];
@@ -6453,7 +6464,7 @@ function getDailyChallenge(){
   if(!all.length)return null;
   const pick=all[Math.floor(Math.random()*all.length)];
   const dc={date:today,vakId:pick.vak.id,vakNaam:pick.vak.naam,domeinId:pick.domein.id,domeinNaam:pick.domein.naam,done:false};
-  localStorage.setItem(DC_KEY,JSON.stringify(dc));
+  localStorage.setItem(key,JSON.stringify(dc));
   return dc;
 }
 function renderDailyChallenge(){
@@ -6471,9 +6482,9 @@ function startDailyChallenge(){
   const dc=getDailyChallenge();
   if(!dc||dc.done)return;
   const vak=getVK().find(v=>v.id===dc.vakId);
-  if(!vak)return;
+  if(!vak){localStorage.removeItem(_dcLevelKey());renderDailyChallenge();return;}
   const domein=vak.domeinen.find(d=>d.id===dc.domeinId);
-  if(!domein||!domein.sv||!domein.sv.length)return;
+  if(!domein||!domein.sv||!domein.sv.length){localStorage.removeItem(_dcLevelKey());renderDailyChallenge();return;}
   ST.vak=vak;ST.domein=domein;ST.isDailyChallenge=true;
   startQ('snel');
 }
