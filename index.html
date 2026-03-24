@@ -1701,6 +1701,27 @@ html.dark .auth-ok{background:#0F2D1C;border-color:#166534;color:#86EFAC}
 .daily-chip{display:inline-flex;align-items:center;gap:8px;background:linear-gradient(135deg,#f59e0b,#ef4444);color:#fff;border-radius:20px;padding:10px 20px;font-size:13px;font-weight:700;cursor:pointer;width:100%;justify-content:center;border:none;font-family:var(--font);box-shadow:0 4px 18px rgba(239,68,68,.3);transition:transform .2s,box-shadow .2s}
 .daily-chip:hover{transform:translateY(-2px);box-shadow:0 6px 24px rgba(239,68,68,.4)}
 .daily-done{display:inline-flex;align-items:center;gap:8px;background:var(--s);color:var(--mu);border-radius:20px;padding:10px 20px;font-size:13px;font-weight:600;width:100%;justify-content:center;border:1px solid var(--bo)}
+/* ── ENGAGEMENT HOOKS ────────────────────────── */
+/* Floating +XP pop */
+.xp-float{font-size:22px;font-weight:800;color:#f59e0b;text-shadow:0 2px 10px rgba(0,0,0,.25);pointer-events:none;user-select:none;font-family:var(--font-head);position:fixed;z-index:9999;white-space:nowrap}
+/* Near-miss retry nudge */
+.nearmiss-nudge{background:rgba(249,115,22,.1);border:1.5px solid rgba(249,115,22,.3);border-radius:12px;padding:12px 16px;margin:12px 0;display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap}
+.nearmiss-nudge span{font-size:14px;font-weight:600;color:#f97316}
+.nearmiss-nudge button{background:#f97316;color:#fff;border:none;border-radius:8px;padding:7px 14px;font-size:13px;font-weight:700;cursor:pointer;font-family:var(--font);white-space:nowrap;transition:background .15s}
+.nearmiss-nudge button:hover{background:#ea6800}
+/* Streak-at-risk pill */
+.hsd-at-risk{border-color:#f97316!important;animation:atRiskPulse 2s ease-in-out infinite}
+@keyframes atRiskPulse{0%,100%{box-shadow:none}50%{box-shadow:0 0 0 5px rgba(249,115,22,.18)}}
+.hsd-at-risk .hsd-val{color:#f97316!important}
+.hsd-at-risk .hsd-icon-wrap{animation:flameBounce .8s ease-in-out infinite alternate}
+@keyframes flameBounce{0%{transform:scale(1)}100%{transform:scale(1.25)}}
+/* Daily challenge pulse */
+@keyframes pulseChip{0%,100%{box-shadow:0 0 0 0 rgba(232,92,13,.45)}60%{box-shadow:0 0 0 9px rgba(232,92,13,0)}}
+.daily-chip.pulse-chip{animation:pulseChip 2s ease-in-out infinite}
+/* Hero greeting */
+.hm-greeting{font-size:14px;font-weight:600;color:rgba(255,255,255,.8);margin-bottom:10px;min-height:18px;letter-spacing:.1px}
+.hm-greeting.hm-greeting-warn{color:#fbbf24}
+
 /* ── HOME STATS DASHBOARD ─────────────────────── */
 .home-stats-dash{display:flex;gap:10px;padding:16px 16px 8px;max-width:680px;margin:0 auto}
 .hsd-pill{flex:1;display:flex;align-items:center;gap:11px;background:var(--s);border:1.5px solid var(--bo);border-radius:16px;padding:13px 14px;cursor:pointer;transition:transform .15s,box-shadow .15s;min-width:0;text-decoration:none}
@@ -1917,6 +1938,7 @@ html.dark .hsd-pill{background:var(--bg2);border-color:var(--bo2)}
   <canvas class="flicker-canvas" id="flicker-canvas" aria-hidden="true"></canvas>
   <div class="hm-hero-inner">
     <div class="hm-badge"><span class="hm-badge-dot"></span>Eindexamen 2026</div>
+    <div id="hm-greeting" class="hm-greeting"></div>
     <h1 class="hm-h1">Oefen slim.<br><em>Slaag zeker.</em></h1>
     <p class="hm-sub">Alle CE-domeinen, samenvattingen en quizzen — gratis &amp; offline.</p>
     <div class="hm-countdown" id="countdown">
@@ -5410,7 +5432,7 @@ function toonRes(){
   recordPractice();
   // Rebuild grid and streak to update UI
   const g=document.getElementById('vakgrid');g.innerHTML='';buildGrid();
-  renderStreak();renderFavHome();renderXPHome();renderDailyChallenge();renderDailyGoal();renderLiveCount();renderHomeStats();
+  renderStreak();renderFavHome();renderXPHome();renderDailyChallenge();renderDailyGoal();renderLiveCount();renderHomeStats();renderGreeting();
   recordDailyGoal();
   const isPerfect=pct===1&&ST.mode==='snel'&&tot>=3;
   let emi,tit,sub;
@@ -5445,6 +5467,14 @@ function toonRes(){
       <div class="rbr"><span>Totaalscore</span><span style="font-weight:600;color:var(--or)">${sc} / ${tot} punten</span></div>`;
   }
   document.getElementById('rbd').innerHTML=bdHtml;
+  // Near-miss nudge
+  const missedCount=tot-Math.round(sc);
+  if(pct>=0.8&&pct<1&&tot>=4&&missedCount<=2){
+    const nm=document.createElement('div');
+    nm.className='nearmiss-nudge';
+    nm.innerHTML=`<span>Bijna! Nog maar ${missedCount} ${missedCount===1?'fout':'fouten'}...</span><button onclick="retryQ()">Doe het opnieuw →</button>`;
+    document.getElementById('rbd').insertAdjacentElement('afterend',nm);
+  }
   // XP reward
   const xpEl=document.getElementById('res-xp-card');
   if(xpEl)xpEl.remove();
@@ -5465,6 +5495,7 @@ function toonRes(){
     ${isPerfect?`<div class="perfect-banner">🌟 Perfecte score! +50% XP bonus verdiend!</div>`:''}`;
     document.getElementById('rbd').insertAdjacentElement('afterend',card);
     if(res.leveled)setTimeout(()=>launchConfetti(),300);
+    setTimeout(()=>floatXP(res.added),150);
     // Mark daily challenge done
     if(ST.isDailyChallenge){
       try{const dc=JSON.parse(localStorage.getItem(DC_KEY)||'{}');dc.done=true;localStorage.setItem(DC_KEY,JSON.stringify(dc));}catch(e){}
@@ -6279,6 +6310,46 @@ function showXPToast(xp){
   document.body.appendChild(el);
   setTimeout(()=>el.remove(),1500);
 }
+function floatXP(amount){
+  const anchor=document.getElementById('res-xp-card')||document.getElementById('sc-res');
+  const el=document.createElement('div');
+  el.className='xp-float';
+  el.textContent='+'+amount+' XP';
+  const top=anchor?anchor.getBoundingClientRect().top+window.scrollY-40:innerHeight*0.4;
+  const left=anchor?anchor.getBoundingClientRect().left+anchor.offsetWidth/2:innerWidth/2;
+  el.style.cssText='top:'+top+'px;left:'+left+'px;transform:translateX(-50%);opacity:1';
+  document.body.appendChild(el);
+  requestAnimationFrame(()=>{
+    el.style.transition='transform 1.3s cubic-bezier(.2,.8,.4,1),opacity 1.3s ease-out';
+    el.style.transform='translateX(-50%) translateY(-90px)';
+    el.style.opacity='0';
+  });
+  setTimeout(()=>el.remove(),1500);
+}
+function renderGreeting(){
+  const el=document.getElementById('hm-greeting');
+  if(!el)return;
+  const h=new Date().getHours();
+  const gdag=h<12?'Goedemorgen':h<18?'Goedemiddag':'Goedenavond';
+  const naam=localStorage.getItem('slagio_naam')||(typeof currentUser!=='undefined'&&currentUser&&currentUser.user_metadata&&currentUser.user_metadata.naam)||'';
+  const {current:streak,days}=calcStreak();
+  const todayStr=new Date().toISOString().slice(0,10);
+  const practicedToday=days&&days.includes(todayStr);
+  el.className='hm-greeting';
+  if(!practicedToday&&streak>0){
+    el.className='hm-greeting hm-greeting-warn';
+    el.textContent='⚠️ Je '+streak+'-daagse streak staat op het spel!';
+  }else if(practicedToday&&streak>=7){
+    el.textContent='💎 '+streak+' dagen op rij — ongelooflijk!';
+  }else if(practicedToday&&streak>=3){
+    el.textContent='🔥 '+streak+' dagen op rij — ga zo door!';
+  }else if(practicedToday){
+    el.textContent='✅ Vandaag al geoefend — top!';
+  }else{
+    el.textContent=gdag+(naam?' '+naam:'')+' — klaar voor je examen?';
+  }
+}
+
 function renderHomeStats(){
   const box=document.getElementById('home-stats-bar');
   if(!box)return;
@@ -6293,18 +6364,32 @@ function renderHomeStats(){
   const avg=vals.length?vals.reduce((a,b)=>a+b,0)/vals.length:null;
   // Only render if there is actual data to show
   if(!xp&&!streak&&avg===null){box.innerHTML='';return;}
-  const streakHtml=`<div class="hsd-pill hsd-streak" onclick="document.getElementById('streak-home')&&document.getElementById('streak-home').scrollIntoView({behavior:'smooth'})" title="Jouw streak" role="button" tabindex="0">
-    <span class="hsd-icon">🔥</span>
+  const todayStr=new Date().toISOString().slice(0,10);
+  const s=getStreak();
+  const practicedToday=s.days&&s.days.includes(todayStr);
+  const atRisk=!practicedToday&&streak>0;
+  // Streak milestone proximity
+  const milestones=[3,7,14,30,60];
+  const nextMile=milestones.find(m=>m>streak);
+  let streakSub=atRisk?'⚠ Oefen voor middernacht!':streak>0?'dagen op rij':'Begin je streak!';
+  if(!atRisk&&nextMile&&(nextMile-streak)<=2)streakSub=`Nog ${nextMile-streak} dag${nextMile-streak>1?'en':''} voor ${nextMile===7?'⚡7-daags':nextMile===14?'💎14-daags':nextMile+'d'} badge!`;
+  const streakHtml=`<div class="hsd-pill hsd-streak${atRisk?' hsd-at-risk':''}" onclick="document.getElementById('streak-home')&&document.getElementById('streak-home').scrollIntoView({behavior:'smooth'})" title="Jouw streak" role="button" tabindex="0">
+    <span class="hsd-icon hsd-icon-wrap">🔥</span>
     <div class="hsd-body">
       <div class="hsd-val">${streak} dag${streak!==1?'en':''}</div>
-      <div class="hsd-lbl">Streak</div>
+      <div class="hsd-lbl">${streakSub}</div>
     </div>
   </div>`;
+  // XP proximity to next level
+  const curXP2=getXPForLevel(lvl);
+  const nxtXP2=getXPForLevel(lvl+1)||curXP2+1000;
+  const xpToNext=nxtXP2-xp;
+  const xpSub=xp>0?`Nog ${xpToNext} XP naar level ${lvl+1}`:'';
   const lvlHtml=xp>0?`<div class="hsd-pill hsd-xp" onclick="document.getElementById('xp-home-bar')&&document.getElementById('xp-home-bar').scrollIntoView({behavior:'smooth'})" title="Jouw level en XP" role="button" tabindex="0">
     <span class="hsd-icon">⭐</span>
     <div class="hsd-body">
       <div class="hsd-val">Level ${lvl}</div>
-      <div class="hsd-lbl">${xp} XP</div>
+      <div class="hsd-lbl">${xpSub}</div>
     </div>
   </div>`:'';
   let avgClass='hsd-avg';
@@ -6366,7 +6451,7 @@ function renderDailyChallenge(){
     box.innerHTML=`<div class="daily-done">✅ Dagelijkse uitdaging voltooid — +2× XP verdiend!</div>`;
     return;
   }
-  box.innerHTML=`<button class="daily-chip" onclick="startDailyChallenge()">⚡ Dagelijkse uitdaging · ${dc.vakNaam}: ${dc.domeinNaam} · 2× XP</button>`;
+  box.innerHTML=`<button class="daily-chip pulse-chip" onclick="startDailyChallenge()">⚡ Dagelijkse uitdaging · ${dc.vakNaam}: ${dc.domeinNaam} · 2× XP</button>`;
 }
 function startDailyChallenge(){
   const dc=getDailyChallenge();
@@ -7105,12 +7190,12 @@ function chooseLevel(level){
   // Show intro for first-time users, home for returning users
   const seen=localStorage.getItem('slagio_seen_intro_v2');
   if(!seen){show('sc-intro');}
-  else{show('sc-home');renderStreak();renderFavHome();renderXPHome();renderDailyChallenge();renderHomeStats();setTimeout(showTutorial,400);}
+  else{show('sc-home');renderStreak();renderFavHome();renderXPHome();renderDailyChallenge();renderHomeStats();renderGreeting();setTimeout(showTutorial,400);}
 }
 function dismissIntro(){
   localStorage.setItem('slagio_seen_intro_v2','1');
   show('sc-home');
-  buildGrid();renderStreak();renderFavHome();renderXPHome();renderDailyChallenge();renderHomeStats();
+  buildGrid();renderStreak();renderFavHome();renderXPHome();renderDailyChallenge();renderHomeStats();renderGreeting();
 }
 function updateLevelChip(){
   const chip=document.getElementById('home-level-chip');
@@ -7128,6 +7213,7 @@ renderStreak();
 renderXPHome();
 renderDailyChallenge();
 renderHomeStats();
+renderGreeting();
 renderDailyGoal();
 buildGrid();
 updateProfileNav();
