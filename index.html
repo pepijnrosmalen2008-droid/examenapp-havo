@@ -6048,8 +6048,7 @@ function updateCountdown(){
   setEl('cd-m',String(m).padStart(2,'0'));setEl('cd-s',String(s).padStart(2,'0'));
   setEl('cd-days-text',d);
 }
-updateCountdown();
-if(!window._cdTimer)window._cdTimer=setInterval(updateCountdown,1000);
+// updateCountdown() is called after EXAM_SCHEDULE is defined (below)
 
 // ═══════ PROGRESS TRACKING ═══════
 function getProgress(){
@@ -6872,6 +6871,9 @@ function toggleMijnVak(id,checked){
   renderSchedule();
   updateCountdown(); // refresh timer to reflect new vak selection
 }
+// Start countdown now that EXAM_SCHEDULE is defined
+updateCountdown();
+if(!window._cdTimer)window._cdTimer=setInterval(updateCountdown,1000);
 
 // ═══════ GRADE CALCULATORS ═══════
 function switchCalc(id){
