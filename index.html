@@ -1882,10 +1882,45 @@ html.dark .hsd-pill{background:var(--bg2);border-color:var(--bo2)}
 .lb-tiers-explain{display:grid;grid-template-columns:1fr 1fr;gap:4px 12px;margin-top:8px;font-size:12px}
 .auth-value-prop{text-align:center;font-size:13px;color:var(--mu);margin:-8px 0 4px;line-height:1.5}
 @media(prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}.flicker-canvas{display:none}}
+/* ── SKELETON LOADER ─────────────────────────── */
+.skel{background:linear-gradient(90deg,var(--bo) 25%,var(--bg2) 50%,var(--bo) 75%);background-size:200% 100%;animation:skelShimmer 1.2s ease-in-out infinite;border-radius:8px}
+@keyframes skelShimmer{0%{background-position:200% 0}100%{background-position:-200% 0}}
+.quiz-skeleton{padding:24px;display:flex;flex-direction:column;gap:14px;max-width:640px;margin:0 auto}
+.quiz-skeleton .sk-badge{height:18px;width:180px;border-radius:20px}
+.quiz-skeleton .sk-q{height:28px;width:90%}
+.quiz-skeleton .sk-q2{height:28px;width:65%}
+.quiz-skeleton .sk-opt{height:56px;width:100%;border-radius:14px}
+/* ── CONFIRM DIALOG ──────────────────────────── */
+.confirm-overlay{position:fixed;inset:0;z-index:10000;background:rgba(0,0,0,.6);backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px);display:flex;align-items:center;justify-content:center;padding:20px;opacity:0;pointer-events:none;transition:opacity .2s}
+.confirm-overlay.show{opacity:1;pointer-events:all}
+.confirm-card{background:var(--s);border:1px solid var(--bo);border-radius:20px;padding:28px 24px 22px;max-width:380px;width:100%;box-shadow:0 20px 60px rgba(0,0,0,.4);transform:scale(.94) translateY(8px);transition:transform .22s cubic-bezier(.34,1.56,.64,1)}
+.confirm-overlay.show .confirm-card{transform:scale(1) translateY(0)}
+.confirm-icon{font-size:36px;margin-bottom:12px;display:block;text-align:center}
+.confirm-title{font-family:var(--font-head);font-size:18px;font-weight:800;color:var(--dk);text-align:center;margin-bottom:8px}
+.confirm-msg{font-size:14px;color:var(--mu);text-align:center;line-height:1.65;margin-bottom:22px}
+.confirm-btns{display:flex;gap:10px}
+.confirm-cancel{flex:1;padding:11px;border-radius:11px;border:1px solid var(--bo);background:var(--s);color:var(--dk);font-family:var(--font);font-size:14px;font-weight:600;cursor:pointer;transition:background .15s}
+.confirm-cancel:hover{background:var(--bg2)}
+.confirm-ok{flex:1;padding:11px;border-radius:11px;border:none;background:#ef4444;color:#fff;font-family:var(--font);font-size:14px;font-weight:700;cursor:pointer;transition:opacity .15s}
+.confirm-ok:hover{opacity:.85}
 </style>
 </head>
 <body>
 <a href="#main-content" class="skip-link">Ga naar inhoud</a>
+
+<!-- CONFIRM DIALOG -->
+<div class="confirm-overlay" id="confirm-overlay" role="dialog" aria-modal="true" aria-labelledby="confirm-title-el">
+  <div class="confirm-card">
+    <span class="confirm-icon" id="confirm-icon">⚠️</span>
+    <div class="confirm-title" id="confirm-title-el"></div>
+    <div class="confirm-msg" id="confirm-msg"></div>
+    <div class="confirm-btns">
+      <button class="confirm-cancel" id="confirm-cancel">Annuleren</button>
+      <button class="confirm-ok" id="confirm-ok">Verwijderen</button>
+    </div>
+  </div>
+</div>
+
 <noscript>
   <style>
     body { font-family: sans-serif; background: #0f1118; color: #edf0f7; display: flex; align-items: center; justify-content: center; min-height: 100vh; margin: 0; text-align: center; padding: 24px; }
@@ -2319,7 +2354,16 @@ html.dark .hsd-pill{background:var(--bg2);border-color:var(--bo2)}
 <div id="sc-quiz" class="sc">
 <div class="qtb"><span class="ql">📚</span><span class="qmeta" id="qmeta"></span><button class="qstp" onclick="stopQ()">✕ Stop</button></div>
 <div class="qpb"><div class="qpf" id="qprog"></div></div>
-<div class="qbody">
+<div class="quiz-skeleton" id="quiz-skeleton" style="display:none">
+  <div class="skel sk-badge"></div>
+  <div class="skel sk-q"></div>
+  <div class="skel sk-q2"></div>
+  <div class="skel sk-opt"></div>
+  <div class="skel sk-opt"></div>
+  <div class="skel sk-opt"></div>
+  <div class="skel sk-opt"></div>
+</div>
+<div class="qbody" id="qbody-inner">
   <!-- timer (snel only) -->
   <div id="qring" class="qring"><svg width="50" height="50" viewBox="0 0 50 50"><circle class="trbg" cx="25" cy="25" r="21" stroke-dasharray="132" stroke-dashoffset="0"/><circle class="trfg" id="tcirc" cx="25" cy="25" r="21" stroke-dasharray="132" stroke-dashoffset="0"/></svg><div class="trn" id="tnum">15</div></div>
   <!-- bron label (oud only) -->
@@ -5327,7 +5371,15 @@ function startQ(mode){
   ST.vragen=pool.slice();
   document.getElementById('qmeta').textContent=`${ST.vak.naam} · D${ST.domein.id}: ${ST.domein.naam} · ${mode==='snel'?'Snelle Quiz':'Oud-examen'}`;
   show('sc-quiz');
-  toonV();
+  // Toon skeleton kort terwijl quiz initialiseert
+  const skel=document.getElementById('quiz-skeleton');
+  const body=document.getElementById('qbody-inner');
+  if(skel&&body){skel.style.display='flex';body.style.display='none';}
+  requestAnimationFrame(()=>requestAnimationFrame(()=>{
+    if(skel)skel.style.display='none';
+    if(body)body.style.display='';
+    toonV();
+  }));
 }
 
 function openOEPicker(){
@@ -6215,14 +6267,35 @@ function getVakBestPct(vakId){
   });
   return {pct:count>0?totalPct/count:0,hasData:hasAny};
 }
+function showConfirm(icon,title,msg,okLabel,onOk){
+  const ov=document.getElementById('confirm-overlay');
+  document.getElementById('confirm-icon').textContent=icon;
+  document.getElementById('confirm-title-el').textContent=title;
+  document.getElementById('confirm-msg').textContent=msg;
+  const okBtn=document.getElementById('confirm-ok');
+  const cancelBtn=document.getElementById('confirm-cancel');
+  okBtn.textContent=okLabel||'Verwijderen';
+  ov.classList.add('show');
+  const close=()=>ov.classList.remove('show');
+  okBtn.onclick=()=>{close();onOk();};
+  cancelBtn.onclick=close;
+  ov.onclick=(e)=>{if(e.target===ov)close();};
+}
 function resetVakProgress(){
   if(!ST.vak)return;
-  const p=getProgress();
-  Object.keys(p).forEach(key=>{
-    if(key.startsWith(ST.vak.id+'_'))delete p[key];
-  });
-  localStorage.setItem('examenapp_'+lvlCol('progress'),JSON.stringify(p));
-  openVak(ST.vak.id);
+  showConfirm(
+    '🗑️',
+    'Voortgang wissen?',
+    `Al je voortgang voor ${ST.vak.naam} wordt permanent verwijderd. Dit kan niet ongedaan worden gemaakt.`,
+    'Wissen',
+    ()=>{
+      const p=getProgress();
+      Object.keys(p).forEach(key=>{if(key.startsWith(ST.vak.id+'_'))delete p[key];});
+      localStorage.setItem('examenapp_'+lvlCol('progress'),JSON.stringify(p));
+      openVak(ST.vak.id);
+      showToast('Voortgang gewist','#ef4444');
+    }
+  );
 }
 
 // ═══════ FAVORITES ═══════
