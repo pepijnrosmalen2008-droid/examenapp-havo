@@ -1686,6 +1686,7 @@ html.dark .auth-ok{background:#0F2D1C;border-color:#166534;color:#86EFAC}
 /* ── XP & GAMIFICATION ───────────────────────── */
 .combo-badge{position:fixed;top:76px;right:16px;background:linear-gradient(135deg,#f59e0b,#ef4444);color:#fff;border-radius:24px;padding:8px 18px;font-weight:800;font-size:15px;z-index:300;animation:comboIn .35s cubic-bezier(.34,1.5,.64,1);pointer-events:none;box-shadow:0 4px 20px rgba(239,68,68,.4)}
 @keyframes comboIn{from{transform:scale(.4) translateY(-20px);opacity:0}to{transform:scale(1) translateY(0);opacity:1}}
+@keyframes xpShimmer{0%{left:-60%}100%{left:120%}}
 .xp-toast{position:fixed;top:76px;left:50%;transform:translateX(-50%);background:#22c55e;color:#fff;border-radius:20px;padding:7px 20px;font-weight:700;font-size:14px;z-index:300;animation:toastIn .3s ease,toastOut .4s ease 1s forwards;pointer-events:none;box-shadow:0 4px 16px rgba(34,197,94,.45)}
 @keyframes toastIn{from{opacity:0;transform:translateX(-50%) translateY(-10px)}to{opacity:1;transform:translateX(-50%) translateY(0)}}
 @keyframes toastOut{to{opacity:0;transform:translateX(-50%) translateY(-10px)}}
@@ -1736,11 +1737,19 @@ html.dark .hsd-pill{background:var(--bg2);border-color:var(--bo2)}
 .hsd-avg .hsd-val{color:#22c55e}
 .hsd-avg-warn .hsd-val{color:#ef4444}
 @media(max-width:400px){.hsd-pill{padding:11px 10px;gap:8px}.hsd-val{font-size:15px}.hsd-icon{font-size:20px}}
-.xp-home-bar{background:var(--s);border:1px solid var(--bo);border-radius:16px;padding:14px 18px;margin-bottom:16px;display:flex;align-items:center;gap:14px}
-.xp-home-lvl{width:44px;height:44px;border-radius:12px;background:var(--or);color:#fff;font-size:17px;font-weight:900;display:flex;align-items:center;justify-content:center;flex-shrink:0;font-family:var(--font-head)}
-.xp-home-info{flex:1}
-.xp-home-title{font-weight:700;font-size:15px;color:var(--dk);font-family:var(--font-head)}
-.xp-home-sub{font-size:12px;color:var(--mu);margin-top:2px}
+.xp-home-bar{position:relative;background:var(--s);border:1.5px solid transparent;border-radius:20px;padding:18px 20px;margin-bottom:16px;overflow:hidden;background-clip:padding-box}
+.xp-home-bar::before{content:'';position:absolute;inset:0;border-radius:20px;padding:1.5px;background:linear-gradient(135deg,var(--or),#f59e0b,rgba(var(--or-rgb),.2));-webkit-mask:linear-gradient(#fff 0 0) content-box,linear-gradient(#fff 0 0);-webkit-mask-composite:xor;mask-composite:exclude;pointer-events:none}
+.xp-home-bar::after{content:'';position:absolute;top:0;right:0;width:180px;height:100%;background:radial-gradient(ellipse at 100% 50%,rgba(var(--or-rgb),.07) 0%,transparent 70%);pointer-events:none}
+.xp-hb-inner{display:flex;align-items:center;gap:16px;position:relative;z-index:1}
+.xp-home-lvl{width:52px;height:52px;border-radius:16px;background:linear-gradient(135deg,var(--or),#f59e0b);color:#fff;font-size:20px;font-weight:900;display:flex;align-items:center;justify-content:center;flex-shrink:0;font-family:var(--font-head);box-shadow:0 4px 16px rgba(var(--or-rgb),.4),inset 0 1px 0 rgba(255,255,255,.25)}
+.xp-home-info{flex:1;min-width:0}
+.xp-home-head{display:flex;align-items:baseline;justify-content:space-between;gap:8px;margin-bottom:5px}
+.xp-home-title{font-weight:800;font-size:16px;color:var(--dk);font-family:var(--font-head);letter-spacing:-.2px}
+.xp-home-pct{font-size:13px;font-weight:700;color:var(--or);font-family:var(--font-head)}
+.xp-home-sub{font-size:12px;color:var(--mu);margin-top:5px}
+.xp-bar-wrap{background:var(--bo2);border-radius:10px;height:10px;overflow:hidden;margin:6px 0 0;position:relative}
+.xp-bar{height:100%;background:linear-gradient(90deg,var(--or),#f59e0b,#fcd34d);border-radius:10px;transition:width .9s cubic-bezier(.34,1.1,.64,1);position:relative;overflow:hidden}
+.xp-bar::after{content:'';position:absolute;top:0;left:-60%;width:40%;height:100%;background:linear-gradient(90deg,transparent,rgba(255,255,255,.35),transparent);animation:xpShimmer 2.2s ease-in-out infinite 1s}
 .how-it-works{max-width:820px;margin:0 auto 40px;padding:0 24px}
 .hiw-title{text-align:center;font-size:13px;font-weight:700;letter-spacing:.8px;text-transform:uppercase;color:var(--or);margin-bottom:24px}
 .hiw-steps{display:flex;align-items:flex-start;gap:8px;justify-content:center;flex-wrap:wrap}
@@ -6414,14 +6423,19 @@ function renderXPHome(){
   const name=LEVEL_NAMES[lvl]||'Level '+lvl;
   const curXP=getXPForLevel(lvl);
   const nxtXP=getXPForLevel(lvl+1)||curXP+1000;
-  const nudge=pct>=80?`<div class="xp-nudge">🔥 Nog ${nxtXP-xp} XP naar level ${lvl+1}!</div>`:'';
+  const toNext=nxtXP-xp;
+  const nudgeTxt=pct>=80?`🔥 Nog <strong>${toNext} XP</strong> naar level ${lvl+1}!`:`Nog ${toNext} XP naar level ${lvl+1}`;
   box.innerHTML=`<div class="xp-home-bar">
-    <div class="xp-home-lvl">${lvl}</div>
-    <div class="xp-home-info">
-      <div class="xp-home-title">${name}</div>
-      <div class="xp-home-sub">${xp-curXP} / ${nxtXP-curXP} XP naar level ${lvl+1}</div>
-      <div class="xp-bar-wrap"><div class="xp-bar" id="xp-bar-fill" style="width:0%"></div></div>
-      ${nudge}
+    <div class="xp-hb-inner">
+      <div class="xp-home-lvl">${lvl}</div>
+      <div class="xp-home-info">
+        <div class="xp-home-head">
+          <div class="xp-home-title">${name}</div>
+          <div class="xp-home-pct">${Math.round(pct)}%</div>
+        </div>
+        <div class="xp-bar-wrap"><div class="xp-bar" id="xp-bar-fill" style="width:0%"></div></div>
+        <div class="xp-home-sub">${nudgeTxt} · ${xp-curXP} / ${nxtXP-curXP} XP</div>
+      </div>
     </div>
   </div>`;
   setTimeout(()=>{const b=document.getElementById('xp-bar-fill');if(b)b.style.width=pct+'%';},50);
