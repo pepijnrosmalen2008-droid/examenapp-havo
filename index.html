@@ -4664,8 +4664,24 @@ async function doResetPassword(){
 function doLogout(){
   SB.auth.signOut();
   currentUser=null;
+  // Wis alle lokale progressie
+  const toClear=[
+    'examenapp_profiel',
+    'slagio_xp',
+    'examenapp_streak',
+    'slagio_daily_goal',
+    'slagio_daily_challenge_havo',
+    'slagio_daily_challenge_vwo',
+    'slagio_sr_v1',
+    'examenapp_cijfers_havo','examenapp_cijfers_vwo',
+    'examenapp_progress_havo','examenapp_progress_vwo',
+    'examenapp_favs_havo','examenapp_favs_vwo',
+    'examenapp_mijnvakken_havo','examenapp_mijnvakken_vwo',
+  ];
+  toClear.forEach(k=>localStorage.removeItem(k));
   updateProfileNav();updateCloudStatusBar();
   show('sc-home');
+  setTimeout(()=>location.reload(),100);
 }
 
 function updateCloudStatusBar(){
