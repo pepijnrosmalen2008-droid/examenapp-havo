@@ -1879,6 +1879,27 @@ html.dark .hsd-pill{background:var(--bg2);border-color:var(--bo2)}
 .intro-btn{width:100%;padding:16px;border-radius:14px;background:var(--or);color:#fff;font-size:16px;font-weight:700;border:none;cursor:pointer;margin-bottom:16px;font-family:var(--font);transition:opacity .2s}
 .intro-btn:hover{opacity:.9}
 .intro-tip{font-size:12px;color:var(--mu)}
+/* ── INTRO MODAL (overlay) ──────────────────────── */
+#sc-intro{position:fixed;inset:0;z-index:9400;background:rgba(0,0,0,.78);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);display:none;align-items:center;justify-content:center;padding:16px}
+.intro-mc{background:var(--s);border:1px solid var(--bo);border-radius:24px;padding:32px 28px 24px;max-width:440px;width:100%;box-shadow:0 24px 80px rgba(0,0,0,.6);animation:tutoIn .35s cubic-bezier(.34,1.56,.64,1);max-height:90vh;overflow-y:auto}
+.intro-step{display:none;text-align:center}
+.intro-step.on{display:block}
+.intro-step-ico{font-size:52px;margin-bottom:14px;display:block}
+.intro-step-title{font-size:22px;font-weight:800;margin-bottom:10px;color:var(--tx);font-family:var(--font-head)}
+.intro-step-sub{font-size:14px;color:var(--mu);line-height:1.65;margin-bottom:20px}
+.intro-feats{display:flex;gap:8px;justify-content:center;flex-wrap:wrap;margin-bottom:4px}
+.intro-feat{display:flex;align-items:center;gap:6px;background:var(--orl);border:1px solid rgba(var(--or-rgb),.2);border-radius:20px;padding:6px 14px;font-size:13px;font-weight:600;color:var(--or)}
+.intro-tips-list{display:flex;flex-direction:column;gap:10px;text-align:left;margin-bottom:4px}
+.intro-tip-row{display:flex;align-items:flex-start;gap:12px;background:var(--bg);border:1px solid var(--bo);border-radius:12px;padding:12px 14px;font-size:13px;color:var(--mu);line-height:1.5}
+.intro-tip-ico{font-size:20px;flex-shrink:0}
+.intro-animal-hint{font-size:12px;color:var(--mu);margin-top:8px;min-height:18px;transition:color .2s}
+.intro-mdots{display:flex;justify-content:center;gap:7px;margin:20px 0 20px}
+.intro-mdot{width:8px;height:8px;border-radius:50%;background:var(--bo2);cursor:pointer;transition:all .2s}
+.intro-mdot.on{background:var(--or);width:24px;border-radius:4px}
+.intro-mbtns{display:flex;gap:10px}
+.intro-mbtn-skip{flex:1;padding:13px;background:none;border:1px solid var(--bo);color:var(--mu);border-radius:12px;font-size:14px;cursor:pointer;font-family:var(--font);transition:all .2s}
+.intro-mbtn-next{flex:2;padding:13px 20px;background:var(--or);color:#fff;border:none;border-radius:12px;font-size:15px;font-weight:700;cursor:pointer;font-family:var(--font);box-shadow:0 4px 16px rgba(var(--or-rgb),.35);transition:all .2s}
+.intro-mbtn-next:disabled{opacity:.45;cursor:not-allowed;box-shadow:none}
 .home-section-header{padding:24px 0 8px;display:flex;flex-direction:column;gap:2px}
 .hsh-title{font-weight:700;font-size:15px;color:var(--dk)}
 .hsh-sub{font-size:12px;color:var(--mu)}
@@ -2086,7 +2107,7 @@ html.dark .hsd-pill{background:var(--bg2);border-color:var(--bo2)}
       <span class="hnav-chip" id="home-level-chip">HAVO 2026</span>
     </div>
     <div class="hnav-right">
-      <button class="hnav-icon-btn" onclick="show('sc-intro')" title="Hoe werkt Slagio?" aria-label="Hoe werkt Slagio?"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg></button>
+      <button class="hnav-icon-btn" onclick="showIntroModal()" title="Hoe werkt Slagio?" aria-label="Hoe werkt Slagio?"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg></button>
       <button class="hnav-icon-btn" id="home-prof-btn" onclick="openProfiel()" aria-label="Profiel" data-tip="Profiel">
         <svg viewBox="0 0 24 24"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
       </button>
@@ -2700,52 +2721,42 @@ html.dark .hsd-pill{background:var(--bg2);border-color:var(--bo2)}
 </div>
 
 <!-- INTRO / ONBOARDING -->
-<div id="sc-intro" class="sc">
-<nav class="nav"><div class="nav-inner"><div class="logo"><img src="/icon-192.png" alt="Slagio" style="width:26px;height:26px;border-radius:7px;object-fit:cover;flex-shrink:0">Slagio</div><button class="theme-btn" onclick="toggleDark()" title="Nachtmodus" style="margin-left:auto"><svg viewBox="0 0 24 24"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg></button></div></nav>
-<div class="intro-wrap">
-  <div class="intro-badge" id="intro-level-badge">HAVO 2026</div>
-  <h1 class="intro-title">Welkom bij Slagio!</h1>
-  <p class="intro-sub">Hier leer je alles wat je nodig hebt voor je eindexamen. Dit is hoe je het meeste uit Slagio haalt:</p>
-  <div class="intro-cards">
-    <div class="intro-card">
-      <div class="intro-card-icon">📖</div>
-      <div class="intro-card-body">
-        <div class="intro-card-title">Samenvattingen per domein</div>
-        <div class="intro-card-desc">Elk CE-domein heeft een beknopte samenvatting. Lees die eerst voor je gaat oefenen.</div>
+<div id="sc-intro">
+  <div class="intro-mc">
+    <div class="intro-step on" id="intro-s0">
+      <span class="intro-step-ico">🎓</span>
+      <div class="intro-badge" id="intro-level-badge">HAVO 2026</div>
+      <h2 class="intro-step-title">Welkom bij Slagio!</h2>
+      <p class="intro-step-sub">De app waarmee je je eindexamen haalt. In een paar stappen ben je klaar om te beginnen.</p>
+      <div class="intro-feats">
+        <div class="intro-feat">⚡ Dagelijks oefenen</div>
+        <div class="intro-feat">🏆 Leaderboard</div>
+        <div class="intro-feat">🧮 Slagingskans</div>
       </div>
     </div>
-    <div class="intro-card">
-      <div class="intro-card-icon">⚡</div>
-      <div class="intro-card-body">
-        <div class="intro-card-title">Drie oefenvormen</div>
-        <div class="intro-card-desc"><strong>Snelle quiz</strong> — 4 keuzes, snel. <strong>Oud-examen</strong> — open vragen uit echte CE's. <strong>Flashcards</strong> — begrippen stampen.</div>
+    <div class="intro-step" id="intro-s1">
+      <span class="intro-step-ico">🐾</span>
+      <h2 class="intro-step-title">Kies je mascotte</h2>
+      <p class="intro-step-sub">Je dier evolueert naarmate je XP verdient. <strong>Je keuze is permanent!</strong></p>
+      <div class="anim-pick-grid" id="intro-animal-grid"></div>
+      <div class="intro-animal-hint" id="intro-animal-hint">Tik op een dier om te kiezen</div>
+    </div>
+    <div class="intro-step" id="intro-s2">
+      <span class="intro-step-ico">🚀</span>
+      <h2 class="intro-step-title">Je bent er klaar voor!</h2>
+      <p class="intro-step-sub">Dit zijn de drie dingen die je direct kunt doen:</p>
+      <div class="intro-tips-list">
+        <div class="intro-tip-row"><span class="intro-tip-ico">📚</span><div><strong>Oefenen</strong> — kies een vak op het startscherm en maak een quiz</div></div>
+        <div class="intro-tip-row"><span class="intro-tip-ico">🧮</span><div><strong>SE-cijfers invoeren</strong> — dan berekent Slagio je slagingskans automatisch</div></div>
+        <div class="intro-tip-row"><span class="intro-tip-ico">🔥</span><div><strong>Streak opbouwen</strong> — oefen elke dag voor bonus XP en badges</div></div>
       </div>
     </div>
-    <div class="intro-card">
-      <div class="intro-card-icon">🔥</div>
-      <div class="intro-card-body">
-        <div class="intro-card-title">Streak &amp; XP</div>
-        <div class="intro-card-desc">Oefen elke dag om je streak op te bouwen. Hoe langer je streak, hoe meer XP je verdient en hoe hoger je op het leaderboard stijgt.</div>
-      </div>
-    </div>
-    <div class="intro-card">
-      <div class="intro-card-icon">🧮</div>
-      <div class="intro-card-body">
-        <div class="intro-card-title">Cijfercalculator &amp; slaagcheck</div>
-        <div class="intro-card-desc">Voer je SE-cijfers in en bereken precies of je slaagt. Gebruik de N-term rekenaars voor een realistische inschatting.</div>
-      </div>
-    </div>
-    <div class="intro-card">
-      <div class="intro-card-icon">☁️</div>
-      <div class="intro-card-body">
-        <div class="intro-card-title">Account = alles bewaard</div>
-        <div class="intro-card-desc">Maak een gratis account aan zodat je streak, voortgang en cijfers bewaard blijven — ook als je een ander apparaat gebruikt.</div>
-      </div>
+    <div class="intro-mdots" id="intro-mdots"></div>
+    <div class="intro-mbtns">
+      <button class="intro-mbtn-skip" id="intro-skip-btn" onclick="dismissIntro()">Overslaan</button>
+      <button class="intro-mbtn-next" id="intro-next-btn">Volgende →</button>
     </div>
   </div>
-  <button class="intro-btn" onclick="dismissIntro()">Ik snap het — begin! 🚀</button>
-  <div class="intro-tip">Je kunt altijd terugkijken via het <strong>ⓘ</strong>-icoon op het startscherm.</div>
-</div>
 </div>
 
 <!-- PROFIEL -->
@@ -7930,6 +7941,80 @@ function togglePomo(){
 
 function resetPomo(){clearInterval(POMO.timer);clearInterval(POMO.breakTimer);POMO.running=false;POMO.mode='study';POMO.seconds=25*60;POMO.total=25*60;POMO.sessions=0;dismissPomoOverlay();renderPomo();}
 
+// ═══════ INTRO MODAL ═══════
+const INTRO_STEPS_N=3;
+let _introIdx=0;
+let _introPickedAnimal=null;
+
+function showIntroModal(){
+  _introIdx=0;
+  _introPickedAnimal=null;
+  const p=JSON.parse(localStorage.getItem(PROF_KEY)||'{}');
+  if(p.animalId)_introPickedAnimal=p.animalId;
+  _buildIntroGrid();
+  document.getElementById('sc-intro').style.display='flex';
+  _introRender();
+}
+
+function _buildIntroGrid(){
+  const grid=document.getElementById('intro-animal-grid');
+  if(!grid)return;
+  grid.innerHTML='';
+  ANIMAL_EVOLUTIONS.forEach(a=>{
+    const btn=document.createElement('button');
+    btn.type='button';
+    btn.className='anim-pick-btn'+(_introPickedAnimal===a.id?' selected':'');
+    btn.innerHTML=`<span class="anim-pick-emoji">${getAnimalDisplay(a.id,0,32)}</span><span class="anim-pick-name">${a.n}</span>`;
+    btn.onclick=()=>{
+      _introPickedAnimal=a.id;
+      grid.querySelectorAll('.anim-pick-btn').forEach(b=>b.classList.remove('selected'));
+      btn.classList.add('selected');
+      const hint=document.getElementById('intro-animal-hint');
+      hint.textContent=a.n+' gekozen ✓';
+      hint.style.color='var(--or)';
+      document.getElementById('intro-next-btn').disabled=false;
+    };
+    grid.appendChild(btn);
+  });
+}
+
+function dismissIntro(){
+  if(_introPickedAnimal){
+    try{
+      const p=JSON.parse(localStorage.getItem(PROF_KEY)||'{}');
+      if(!p.animalId){
+        p.animalId=_introPickedAnimal;
+        const a=getAnimalById(_introPickedAnimal);
+        p.avatar=a?(a.fallback?a.fallback[0]:a.s[0]):'🐾';
+        localStorage.setItem(PROF_KEY,JSON.stringify(p));
+        if(currentUser)cloudSet('profiel',p);
+        selectedAnimalId=_introPickedAnimal;
+      }
+    }catch(e){}
+  }
+  document.getElementById('sc-intro').style.display='none';
+  localStorage.setItem('slagio_seen_intro_v2','1');
+  updateProfileNav();
+  renderXPHome();
+  setTimeout(showTutorial,400);
+}
+
+function _introRender(){
+  document.querySelectorAll('#sc-intro .intro-step').forEach((s,i)=>s.classList.toggle('on',i===_introIdx));
+  const dots=document.getElementById('intro-mdots');
+  dots.innerHTML=Array.from({length:INTRO_STEPS_N},(_,i)=>`<div class="intro-mdot${i===_introIdx?' on':''}"></div>`).join('');
+  const badge=document.getElementById('intro-level-badge');
+  if(badge)badge.textContent=(APP_LEVEL==='havo'?'HAVO':'VWO')+' 2026';
+  const next=document.getElementById('intro-next-btn');
+  const skip=document.getElementById('intro-skip-btn');
+  const last=_introIdx===INTRO_STEPS_N-1;
+  const isAnimalStep=_introIdx===1;
+  next.textContent=last?'Aan de slag 🚀':'Volgende →';
+  next.onclick=last?dismissIntro:()=>{_introIdx++;_introRender();};
+  next.disabled=isAnimalStep&&!_introPickedAnimal;
+  skip.style.display=last?'none':'';
+}
+
 // ═══════ TUTORIAL ═══════
 const TUTO_KEY='examio_tutorial_done';
 const TUTO_TOTAL=5;
@@ -8061,13 +8146,10 @@ function chooseLevel(level){
   if(badge)badge.textContent=(level==='havo'?'HAVO':'VWO')+' 2026';
   // Show intro for first-time users, home for returning users
   const seen=localStorage.getItem('slagio_seen_intro_v2');
-  if(!seen){show('sc-intro');}
-  else{show('sc-home');renderStreak();renderFavHome();renderXPHome();renderDailyChallenge();renderHomeStats();renderGreeting();setTimeout(showTutorial,400);}
-}
-function dismissIntro(){
-  localStorage.setItem('slagio_seen_intro_v2','1');
   show('sc-home');
   buildGrid();renderStreak();renderFavHome();renderXPHome();renderDailyChallenge();renderHomeStats();renderGreeting();
+  if(!seen){setTimeout(showIntroModal,300);}
+  else{setTimeout(showTutorial,400);}
 }
 function updateLevelChip(){
   const chip=document.getElementById('home-level-chip');
