@@ -7005,11 +7005,11 @@ function renderXPHome(){
   const box=document.getElementById('xp-home-bar');
   if(!box)return;
   const xp=getTotalXP();
-  if(xp===0){box.innerHTML='';return;}
   // Avatar evolution progress
   const p=JSON.parse(localStorage.getItem(PROF_KEY)||'{}');
   const animalId=p.animalId||null;
   const animal=animalId?getAnimalById(animalId):null;
+  if(xp===0&&!animal){box.innerHTML='';return;}
   const stageIdx=getAnimalStageIdx(xp);
   const isMaxStage=stageIdx===ANIM_THRESHOLDS.length-1;
   const curThresh=ANIM_THRESHOLDS[stageIdx];
