@@ -1787,6 +1787,13 @@ html.dark .auth-ok{background:#0F2D1C;border-color:#166534;color:#86EFAC}
 .res-xp-num{font-size:32px;font-weight:900;color:var(--or);font-family:var(--font-head);letter-spacing:-.5px}
 .res-xp-sub{font-size:12px;color:var(--mu);margin-top:4px}
 .res-xp-lvl{font-size:13px;font-weight:700;color:var(--dk);margin-top:12px}
+.res-xp-avatar-wrap{display:flex;flex-direction:column;align-items:center;margin-bottom:14px}
+.res-xp-avatar-ring{width:76px;height:76px;border-radius:50%;background:rgba(var(--or-rgb),.1);border:2px solid rgba(var(--or-rgb),.3);display:flex;align-items:center;justify-content:center;box-shadow:0 0 0 4px rgba(var(--or-rgb),.12),0 6px 22px rgba(var(--or-rgb),.3);animation:evoGlow 3s ease-in-out infinite}
+.res-xp-avatar-lbl{font-size:11px;color:var(--mu);margin-top:7px;font-weight:600;letter-spacing:.2px}
+.res-xp-journey-mini{display:flex;align-items:center;margin-top:10px;margin-bottom:2px}
+.res-xp-jdot{display:flex;justify-content:center;align-items:center;flex:0 0 auto}
+.res-xp-jline{flex:1;height:2px;background:rgba(var(--or-rgb),.18);margin:0 2px}
+.res-xp-jline.done{background:linear-gradient(90deg,var(--or),#f59e0b)}
 .levelup-banner{background:linear-gradient(135deg,#f59e0b,#ef4444);color:#fff;border-radius:16px;padding:14px 20px;text-align:center;margin-top:12px;font-weight:800;font-size:16px;animation:comboIn .4s cubic-bezier(.34,1.2,.64,1)}
 .daily-wrap{margin-bottom:16px}
 .daily-chip{display:inline-flex;align-items:center;gap:8px;background:linear-gradient(135deg,#f59e0b,#ef4444);color:#fff;border-radius:20px;padding:10px 20px;font-size:13px;font-weight:700;cursor:pointer;width:100%;justify-content:center;border:none;font-family:var(--font);box-shadow:0 4px 18px rgba(239,68,68,.3);transition:transform .2s,box-shadow .2s}
@@ -5962,10 +5969,30 @@ function toonRes(){
       const nxtXP=getXPForLevel(res.newLvl+1)||curXP+1000;
       const card=document.createElement('div');
       card.id='res-xp-card';card.className='res-xp';
-      card.innerHTML=`<div class="res-xp-num">+${res.added} XP</div>
-        <div class="res-xp-sub">${ST.isDailyChallenge?'⚡ Dagelijkse uitdaging bonus · ':''}&nbsp;</div>
+      // Build avatar section
+      const _rp=JSON.parse(localStorage.getItem(PROF_KEY)||'{}');
+      const _ra=_rp.animalId?getAnimalById(_rp.animalId):null;
+      const _rsi=getAnimalStageIdx(res.totalXP);
+      const _rsn=_ra&&_ra.lbl?_ra.lbl[_rsi]:ANIM_STAGE_NAMES[_rsi];
+      const _rav=_ra?getAnimalDisplay(_ra.id,_rsi,52):`<span style="font-size:38px">⭐</span>`;
+      // Mini journey (5 dots + connecting lines)
+      let _rj='';
+      for(let _ri=0;_ri<5;_ri++){
+        const _rdone=_ri<_rsi,_rcur=_ri===_rsi;
+        const _rdot=_ra&&(_rdone||_rcur)?getAnimalDisplay(_ra.id,_ri,_rcur?24:18):(_rdone||_rcur?`<span style="font-size:${_rcur?24:18}px">${_ra?(_ra.s[_ri]||'⭐'):'⭐'}</span>`:`<span style="font-size:15px;opacity:.22;filter:grayscale(1)">❓</span>`);
+        _rj+=`<div class="res-xp-jdot">${_rdot}</div>`;
+        if(_ri<4)_rj+=`<div class="res-xp-jline${_rdone?' done':''}"></div>`;
+      }
+      card.innerHTML=`
+        <div class="res-xp-avatar-wrap">
+          <div class="res-xp-avatar-ring">${_rav}</div>
+          <div class="res-xp-avatar-lbl">${_ra?_ra.n:'Avatar'} · ${_rsn}</div>
+        </div>
+        <div class="res-xp-num">+${res.added} XP</div>
+        <div class="res-xp-sub">${ST.isDailyChallenge?'⚡ Dagelijkse uitdaging bonus':''}&nbsp;</div>
         <div class="res-xp-lvl">Level ${res.newLvl} — ${lvlName} · ${res.totalXP-curXP} / ${nxtXP-curXP} XP</div>
         <div class="xp-bar-wrap"><div class="xp-bar" style="width:${xpPct}%"></div></div>
+        <div class="res-xp-journey-mini">${_rj}</div>
         ${res.leveled?`<div class="levelup-banner">🎉 Level up! Je bent nu level ${res.newLvl} — ${lvlName}!</div>`:''}
         ${isPerfect?`<div class="perfect-banner">🌟 Perfecte score! +50% XP bonus verdiend!</div>`:''}`;
       const rbdEl2=document.getElementById('rbd');
