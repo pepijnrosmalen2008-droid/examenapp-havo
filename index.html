@@ -5985,94 +5985,113 @@ function switchMode(){show('sc-qmode');}
 
 // ═══════ BOT LEADERBOARD SEED ═══════
 function seedBotsNow(){
-  const BOT_KEY='slagio_bots_seeded_v7';
+  const BOT_KEY='slagio_bots_seeded_v8';
   if(localStorage.getItem(BOT_KEY))return;
 
-  // score per vraag: 100 (correct) + round(avgTijd/15*100) (snelheid), max 200 per vraag → max 1000
   function mkEntry(naam,avatar,vak,vakNaam,domeinId,domeinNaam,goed,tot,avgTijd,daysAgo,niveau){
-    const d=new Date();d.setDate(d.getDate()-daysAgo);
+    const d=new Date('2025-01-15');d.setDate(d.getDate()+daysAgo);
     return{naam,avatar,vak,vakNaam,domeinId,domeinNaam,
       score:goed*100+goed*Math.round(avgTijd/15*100),goed,tot,avgTijd,
       date:d.toISOString().slice(0,10),niveau,isBot:true};
   }
 
-  // Tier 1 — Elite (bijna perfecte scores, razendsnel)
-  const elite=[
-    {n:'Lars V.',av:'🦁',tier:1},   // leeuw — koning van het lb
-    {n:'Sophie K.',av:'🦅',tier:1}, // adelaar — scherp & snel
+  // Vaste bot-entries per niveau — identiek voor alle spelers
+  const havoEntries=[
+    // Lars V. — Elite
+    mkEntry('Lars V.','🦁','wi','Wiskunde','A','Algebra',5,5,13.5,0,'havo'),
+    mkEntry('Lars V.','🦁','na','Natuurkunde','A','Krachten & Beweging',5,5,12.0,1,'havo'),
+    mkEntry('Lars V.','🦁','en','Engels','A','Leesvaardigheid',5,5,11.5,2,'havo'),
+    mkEntry('Lars V.','🦁','ec','Economie','A','Vraag & Aanbod',5,5,13.0,3,'havo'),
+    // Sophie K. — Elite
+    mkEntry('Sophie K.','🦅','sk','Scheikunde','A','Stoffen & Reacties',5,5,12.5,0,'havo'),
+    mkEntry('Sophie K.','🦅','bi','Biologie','A','Cellen & Erfelijkheid',5,5,11.0,1,'havo'),
+    mkEntry('Sophie K.','🦅','nl','Nederlands','A','Lezen',5,5,13.0,2,'havo'),
+    mkEntry('Sophie K.','🦅','gs','Geschiedenis','A','Moderne Tijd',5,5,10.5,3,'havo'),
+    // Daan M. — Expert
+    mkEntry('Daan M.','🦊','ec','Economie','A','Vraag & Aanbod',4,5,9.0,1,'havo'),
+    mkEntry('Daan M.','🦊','gs','Geschiedenis','A','Moderne Tijd',5,5,8.5,2,'havo'),
+    mkEntry('Daan M.','🦊','wi','Wiskunde','A','Algebra',4,5,9.5,3,'havo'),
+    mkEntry('Daan M.','🦊','en','Engels','A','Leesvaardigheid',4,5,8.0,4,'havo'),
+    // Emma J. — Expert
+    mkEntry('Emma J.','🦋','nl','Nederlands','A','Lezen',5,5,8.5,1,'havo'),
+    mkEntry('Emma J.','🦋','en','Engels','A','Leesvaardigheid',4,5,9.0,2,'havo'),
+    mkEntry('Emma J.','🦋','bi','Biologie','A','Cellen & Erfelijkheid',4,5,8.0,3,'havo'),
+    mkEntry('Emma J.','🦋','gs','Geschiedenis','A','Moderne Tijd',4,5,7.5,4,'havo'),
+    // Noah B. — Expert
+    mkEntry('Noah B.','⚡','na','Natuurkunde','A','Krachten & Beweging',5,5,7.5,1,'havo'),
+    mkEntry('Noah B.','⚡','wi','Wiskunde','A','Algebra',4,5,8.0,2,'havo'),
+    mkEntry('Noah B.','⚡','sk','Scheikunde','A','Stoffen & Reacties',4,5,7.0,3,'havo'),
+    mkEntry('Noah B.','⚡','ec','Economie','A','Vraag & Aanbod',5,5,6.5,4,'havo'),
+    // Lena H. — Gevorderd
+    mkEntry('Lena H.','🦉','bi','Biologie','A','Cellen & Erfelijkheid',3,5,5.5,2,'havo'),
+    mkEntry('Lena H.','🦉','nl','Nederlands','A','Lezen',3,5,6.0,3,'havo'),
+    mkEntry('Lena H.','🦉','en','Engels','A','Leesvaardigheid',4,5,5.0,4,'havo'),
+    // Tim R. — Gevorderd
+    mkEntry('Tim R.','🐻','gs','Geschiedenis','A','Moderne Tijd',3,5,5.0,2,'havo'),
+    mkEntry('Tim R.','🐻','ec','Economie','A','Vraag & Aanbod',3,5,5.5,3,'havo'),
+    mkEntry('Tim R.','🐻','nl','Nederlands','A','Lezen',3,5,4.5,4,'havo'),
+    // Sara P. — Gevorderd
+    mkEntry('Sara P.','🌸','bi','Biologie','A','Cellen & Erfelijkheid',4,5,4.5,2,'havo'),
+    mkEntry('Sara P.','🌸','sk','Scheikunde','A','Stoffen & Reacties',3,5,5.0,3,'havo'),
+    mkEntry('Sara P.','🌸','en','Engels','A','Leesvaardigheid',3,5,4.0,4,'havo'),
+    // Finn O. — Beginner
+    mkEntry('Finn O.','🐣','en','Engels','A','Leesvaardigheid',2,5,3.0,3,'havo'),
+    mkEntry('Finn O.','🐣','nl','Nederlands','A','Lezen',2,5,2.5,4,'havo'),
+    mkEntry('Finn O.','🐣','ec','Economie','A','Vraag & Aanbod',1,5,2.0,5,'havo'),
+    // Mila W. — Beginner
+    mkEntry('Mila W.','🌱','nl','Nederlands','A','Lezen',2,5,2.5,3,'havo'),
+    mkEntry('Mila W.','🌱','en','Engels','A','Leesvaardigheid',2,5,3.0,4,'havo'),
+    mkEntry('Mila W.','🌱','bi','Biologie','A','Cellen & Erfelijkheid',1,5,2.0,5,'havo'),
   ];
-  // Tier 2 — Expert (4/5 gemiddeld, snel)
-  const good=[
-    {n:'Daan M.',av:'🦊',tier:2},   // vos — slim & berekend
-    {n:'Emma J.',av:'🦋',tier:2},   // vlinder — elegant & precies
-    {n:'Noah B.',av:'⚡',tier:2},   // bliksem — snel
-  ];
-  // Tier 3 — Gevorderd
-  const avg=[
-    {n:'Lena H.',av:'🦉',tier:3},   // uil — wijsheid in wording
-    {n:'Tim R.',av:'🐻',tier:3},    // beer — solide & stabiel
-    {n:'Sara P.',av:'🌸',tier:3},   // bloesem — aan het groeien
-  ];
-  // Tier 4 — Beginner
-  const beg=[
-    {n:'Finn O.',av:'🐣',tier:4},   // kuiken — net uitgebroed
-    {n:'Mila W.',av:'🌱',tier:4},   // zaailing — eerste stapjes
-  ];
-  const allBots=[...elite,...good,...avg,...beg];
 
-  // (vak, vakNaam, domeinId, domeinNaam, tot)
-  const havoVakken=[
-    ['nl','Nederlands','A','Lezen',5],
-    ['en','Engels','A','Leesvaardigheid',5],
-    ['wi','Wiskunde','A','Algebra',5],
-    ['bi','Biologie','A','Cellen & Erfelijkheid',5],
-    ['ec','Economie','A','Vraag & Aanbod',5],
-    ['gs','Geschiedenis','A','Moderne Tijd',5],
-    ['na','Natuurkunde','A','Krachten & Beweging',5],
-    ['sk','Scheikunde','A','Stoffen & Reacties',5],
+  const vwoEntries=[
+    mkEntry('Lars V.','🦁','wb','Wiskunde B','A','Analyse',5,5,13.5,0,'vwo'),
+    mkEntry('Lars V.','🦁','na','Natuurkunde','A','Mechanica',5,5,12.0,1,'vwo'),
+    mkEntry('Lars V.','🦁','en','Engels','A','Leesvaardigheid',5,5,11.5,2,'vwo'),
+    mkEntry('Lars V.','🦁','sk','Scheikunde','A','Bindingen & Reacties',5,5,13.0,3,'vwo'),
+    mkEntry('Sophie K.','🦅','sk','Scheikunde','A','Bindingen & Reacties',5,5,12.5,0,'vwo'),
+    mkEntry('Sophie K.','🦅','bi','Biologie','A','Cellen & Genetica',5,5,11.0,1,'vwo'),
+    mkEntry('Sophie K.','🦅','wa','Wiskunde A','A','Statistiek',5,5,13.0,2,'vwo'),
+    mkEntry('Sophie K.','🦅','gs','Geschiedenis','A','Moderne Geschiedenis',5,5,10.5,3,'vwo'),
+    mkEntry('Daan M.','🦊','ec','Economie','A','Marktwerking',4,5,9.0,1,'vwo'),
+    mkEntry('Daan M.','🦊','in','Informatica','A','Algoritmen',5,5,8.5,2,'vwo'),
+    mkEntry('Daan M.','🦊','wb','Wiskunde B','A','Analyse',4,5,9.5,3,'vwo'),
+    mkEntry('Daan M.','🦊','en','Engels','A','Leesvaardigheid',4,5,8.0,4,'vwo'),
+    mkEntry('Emma J.','🦋','nl','Nederlands','A','Lezen & Schrijven',5,5,8.5,1,'vwo'),
+    mkEntry('Emma J.','🦋','en','Engels','A','Leesvaardigheid',4,5,9.0,2,'vwo'),
+    mkEntry('Emma J.','🦋','bi','Biologie','A','Cellen & Genetica',4,5,8.0,3,'vwo'),
+    mkEntry('Emma J.','🦋','gs','Geschiedenis','A','Moderne Geschiedenis',4,5,7.5,4,'vwo'),
+    mkEntry('Noah B.','⚡','na','Natuurkunde','A','Mechanica',5,5,7.5,1,'vwo'),
+    mkEntry('Noah B.','⚡','wb','Wiskunde B','A','Analyse',4,5,8.0,2,'vwo'),
+    mkEntry('Noah B.','⚡','sk','Scheikunde','A','Bindingen & Reacties',4,5,7.0,3,'vwo'),
+    mkEntry('Noah B.','⚡','ec','Economie','A','Marktwerking',5,5,6.5,4,'vwo'),
+    mkEntry('Lena H.','🦉','bi','Biologie','A','Cellen & Genetica',3,5,5.5,2,'vwo'),
+    mkEntry('Lena H.','🦉','nl','Nederlands','A','Lezen & Schrijven',3,5,6.0,3,'vwo'),
+    mkEntry('Lena H.','🦉','en','Engels','A','Leesvaardigheid',4,5,5.0,4,'vwo'),
+    mkEntry('Tim R.','🐻','gs','Geschiedenis','A','Moderne Geschiedenis',3,5,5.0,2,'vwo'),
+    mkEntry('Tim R.','🐻','ec','Economie','A','Marktwerking',3,5,5.5,3,'vwo'),
+    mkEntry('Tim R.','🐻','nl','Nederlands','A','Lezen & Schrijven',3,5,4.5,4,'vwo'),
+    mkEntry('Sara P.','🌸','bi','Biologie','A','Cellen & Genetica',4,5,4.5,2,'vwo'),
+    mkEntry('Sara P.','🌸','sk','Scheikunde','A','Bindingen & Reacties',3,5,5.0,3,'vwo'),
+    mkEntry('Sara P.','🌸','en','Engels','A','Leesvaardigheid',3,5,4.0,4,'vwo'),
+    mkEntry('Finn O.','🐣','en','Engels','A','Leesvaardigheid',2,5,3.0,3,'vwo'),
+    mkEntry('Finn O.','🐣','nl','Nederlands','A','Lezen & Schrijven',2,5,2.5,4,'vwo'),
+    mkEntry('Finn O.','🐣','in','Informatica','A','Algoritmen',1,5,2.0,5,'vwo'),
+    mkEntry('Mila W.','🌱','nl','Nederlands','A','Lezen & Schrijven',2,5,2.5,3,'vwo'),
+    mkEntry('Mila W.','🌱','en','Engels','A','Leesvaardigheid',2,5,3.0,4,'vwo'),
+    mkEntry('Mila W.','🌱','bi','Biologie','A','Cellen & Genetica',1,5,2.0,5,'vwo'),
   ];
-  const vwoVakken=[
-    ['nl','Nederlands','A','Lezen & Schrijven',5],
-    ['en','Engels','A','Leesvaardigheid',5],
-    ['wa','Wiskunde A','A','Statistiek',5],
-    ['wb','Wiskunde B','A','Analyse',5],
-    ['bi','Biologie','A','Cellen & Genetica',5],
-    ['sk','Scheikunde','A','Bindingen & Reacties',5],
-    ['na','Natuurkunde','A','Mechanica',5],
-    ['ec','Economie','A','Marktwerking',5],
-    ['gs','Geschiedenis','A','Moderne Geschiedenis',5],
-    ['in','Informatica','A','Algoritmen',5],
-  ];
-
-  function tierParams(tier){
-    // [goedMin, goedMax, avgTijdMin, avgTijdMax]
-    if(tier===1)return[5,5,9,14];
-    if(tier===2)return[4,5,6,11];
-    if(tier===3)return[2,4,3,8];
-    return[1,3,1,5];
-  }
 
   ['havo','vwo'].forEach(niveau=>{
-    const vakken=niveau==='havo'?havoVakken:vwoVakken;
-    const entries=[];
-    allBots.forEach(bot=>{
-      const [gMin,gMax,tMin,tMax]=tierParams(bot.tier);
-      // Each bot gets 2-4 random subject entries
-      const count=bot.tier<=2?4:3;
-      const shuffled=[...vakken].sort(()=>Math.random()-.5).slice(0,count);
-      shuffled.forEach(([vak,vakNaam,domeinId,domeinNaam,tot],i)=>{
-        const goed=gMin+Math.floor(Math.random()*(gMax-gMin+1));
-        const avgTijd=+(tMin+Math.random()*(tMax-tMin)).toFixed(1);
-        entries.push(mkEntry(bot.n,bot.av,vak,vakNaam,domeinId,domeinNaam,goed,tot,avgTijd,i+Math.floor(Math.random()*5),niveau));
-      });
-    });
-    entries.sort((a,b)=>b.score-a.score);
+    const botEntries=niveau==='havo'?havoEntries:vwoEntries;
     const key='examenapp_leaderboard_'+niveau;
-    const existing=JSON.parse(localStorage.getItem(key)||'[]');
-    const merged=[...existing,...entries].sort((a,b)=>b.score-a.score).slice(0,200);
+    const existing=JSON.parse(localStorage.getItem(key)||'[]').filter(e=>!e.isBot);
+    const merged=[...existing,...botEntries].sort((a,b)=>b.score-a.score).slice(0,200);
     localStorage.setItem(key,JSON.stringify(merged));
   });
 
+  // Wis oude seed-vlaggen
+  ['v3','v7'].forEach(v=>localStorage.removeItem('slagio_bots_seeded_'+v));
   localStorage.setItem(BOT_KEY,'1');
 }
 seedBotsNow();
