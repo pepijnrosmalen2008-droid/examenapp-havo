@@ -4569,13 +4569,15 @@ async function syncFromCloud(){
       updateProfileNav();renderStreak();renderFavHome();renderXPHome();renderDailyChallenge();buildGrid();renderHomeStats();
       return;
     }
-    if(data.profiel)localStorage.setItem(PROF_KEY,JSON.stringify(data.profiel));
+    if(data.profiel){
+      localStorage.setItem(PROF_KEY,JSON.stringify(data.profiel));
+      if(data.profiel.xp)localStorage.setItem(XP_KEY,JSON.stringify({xp:data.profiel.xp}));
+    }
     const cij=data[lvlCol('cijfers')];if(cij)localStorage.setItem('examenapp_'+lvlCol('cijfers'),JSON.stringify(cij));
     const prog=data[lvlCol('progress')];if(prog)localStorage.setItem('examenapp_'+lvlCol('progress'),JSON.stringify(prog));
     if(data.streak)localStorage.setItem('examenapp_streak',JSON.stringify(data.streak));
     const favs=data[lvlCol('favs')];if(favs)localStorage.setItem('examenapp_'+lvlCol('favs'),JSON.stringify(favs.list||[]));
     const mijn=data[lvlCol('mijnvakken')];if(mijn)localStorage.setItem('examenapp_'+lvlCol('mijnvakken'),JSON.stringify(mijn.list||[]));
-    if(data.xp)localStorage.setItem(XP_KEY,JSON.stringify(data.xp));
     updateProfileNav();renderStreak();renderFavHome();renderXPHome();renderDailyChallenge();buildGrid();renderHomeStats();
   }catch(e){console.warn('syncFromCloud error:',e);}
 }
@@ -6881,7 +6883,15 @@ function addXP(amount){
   const oldLvl=getLevelForXP(d.xp);
   d.xp=(d.xp||0)+amount;
   localStorage.setItem(XP_KEY,JSON.stringify(d));
-  if(currentUser){SB.from('user_data').upsert({user_id:currentUser.id,xp:d,updated_at:new Date().toISOString()},{onConflict:'user_id'}).catch(()=>{});}
+  // Sla XP op in profiel-kolom (betrouwbare Supabase-kolom)
+  if(currentUser){
+    try{
+      const prof=JSON.parse(localStorage.getItem(PROF_KEY)||'{}');
+      prof.xp=d.xp;
+      localStorage.setItem(PROF_KEY,JSON.stringify(prof));
+      cloudSet('profiel',prof);
+    }catch(e){}
+  }
   const newLvl=getLevelForXP(d.xp);
   const oldStage=getAnimalStageIdx(d.xp-(amount));
   const newStage=getAnimalStageIdx(d.xp);
