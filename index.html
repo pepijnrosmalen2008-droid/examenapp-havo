@@ -1780,6 +1780,8 @@ html.dark .auth-ok{background:#0F2D1C;border-color:#166534;color:#86EFAC}
 .xp-toast{position:fixed;top:76px;left:50%;transform:translateX(-50%);background:#22c55e;color:#fff;border-radius:20px;padding:7px 20px;font-weight:700;font-size:14px;z-index:300;animation:toastIn .3s ease,toastOut .4s ease 1s forwards;pointer-events:none;box-shadow:0 4px 16px rgba(34,197,94,.45)}
 @keyframes toastIn{from{opacity:0;transform:translateX(-50%) translateY(-10px)}to{opacity:1;transform:translateX(-50%) translateY(0)}}
 @keyframes toastOut{to{opacity:0;transform:translateX(-50%) translateY(-10px)}}
+#offline-banner{position:fixed;bottom:80px;left:50%;transform:translateX(-50%) translateY(16px);background:#1e293b;color:#fff;padding:10px 20px;border-radius:40px;font-size:13px;font-weight:600;z-index:9998;white-space:nowrap;opacity:0;pointer-events:none;transition:opacity .3s,transform .3s;box-shadow:0 4px 20px rgba(0,0,0,.4)}
+#offline-banner.show{opacity:1;pointer-events:auto;transform:translateX(-50%) translateY(0)}
 .xp-bar-wrap{background:var(--bo);border-radius:10px;height:7px;overflow:hidden;margin:10px 0 4px}
 .xp-bar{height:100%;background:linear-gradient(90deg,var(--or),#f59e0b);border-radius:10px;transition:width .8s cubic-bezier(.34,1.2,.64,1)}
 .lvl-badge{background:var(--or);color:#fff;border-radius:10px;padding:2px 9px;font-size:11px;font-weight:800;margin-left:6px;letter-spacing:.3px}
@@ -3563,6 +3565,8 @@ let ST = {vak:null,domein:null,mode:null,vragen:[],idx:0,score:0,antwrd:[],timer
 function show(id){
   const prev=document.querySelector('.sc.on');
   if(id==='sc-privacy'&&prev)window._privacyFrom=prev.id;
+  // Stop quiz timer wanneer de gebruiker de quiz verlaat
+  if(prev&&prev.id==='sc-q'&&id!=='sc-q')clearInterval(ST.timer);
   document.querySelectorAll('.sc').forEach(s=>s.classList.remove('on'));
   document.getElementById(id).classList.add('on');
   window.scrollTo(0,0);
@@ -4561,21 +4565,25 @@ async function cloudGet(col,def){
   }catch(e){return _safeLocalGet(col,def);}
 }
 async function syncFromCloud(){
+  const syncKeys=[PROF_KEY,XP_KEY,'examenapp_streak',
+   'examenapp_'+lvlCol('cijfers'),'examenapp_'+lvlCol('progress'),
+   'examenapp_'+lvlCol('favs'),'examenapp_'+lvlCol('mijnvakken'),
+   'examenapp_cijfers_havo','examenapp_cijfers_vwo',
+   'examenapp_progress_havo','examenapp_progress_vwo',
+   'examenapp_favs_havo','examenapp_favs_vwo',
+   'examenapp_mijnvakken_havo','examenapp_mijnvakken_vwo',
+  ];
+  // Maak backup vóórdat we iets wissen — herstel bij netwerk-fout
+  const backup={};
+  syncKeys.forEach(k=>{const v=localStorage.getItem(k);if(v!==null)backup[k]=v;});
   try{
-    // Wis altijd eerst lokale gebruikersdata zodat accounts niet door elkaar lopen
-    [PROF_KEY,XP_KEY,'examenapp_streak',
-     'examenapp_'+lvlCol('cijfers'),'examenapp_'+lvlCol('progress'),
-     'examenapp_'+lvlCol('favs'),'examenapp_'+lvlCol('mijnvakken'),
-     'examenapp_cijfers_havo','examenapp_cijfers_vwo',
-     'examenapp_progress_havo','examenapp_progress_vwo',
-     'examenapp_favs_havo','examenapp_favs_vwo',
-     'examenapp_mijnvakken_havo','examenapp_mijnvakken_vwo',
-    ].forEach(k=>localStorage.removeItem(k));
     const {data,error}=await SB.from('user_data').select('*').eq('user_id',currentUser.id).single();
     if(error||!data){
       updateProfileNav();renderStreak();renderFavHome();renderXPHome();renderDailyChallenge();buildGrid();renderHomeStats();
       return;
     }
+    // Fetch geslaagd: nu pas lokale data wissen en cloud-data inladen
+    syncKeys.forEach(k=>localStorage.removeItem(k));
     if(data.profiel){
       localStorage.setItem(PROF_KEY,JSON.stringify(data.profiel));
       if(data.profiel.xp)localStorage.setItem(XP_KEY,JSON.stringify({xp:data.profiel.xp}));
@@ -4586,7 +4594,11 @@ async function syncFromCloud(){
     const favs=data[lvlCol('favs')];if(favs)localStorage.setItem('examenapp_'+lvlCol('favs'),JSON.stringify(favs.list||[]));
     const mijn=data[lvlCol('mijnvakken')];if(mijn)localStorage.setItem('examenapp_'+lvlCol('mijnvakken'),JSON.stringify(mijn.list||[]));
     updateProfileNav();renderStreak();renderFavHome();renderXPHome();renderDailyChallenge();buildGrid();renderHomeStats();
-  }catch(e){console.warn('syncFromCloud error:',e);}
+  }catch(e){
+    // Herstel lokale data als fetch mislukte
+    Object.entries(backup).forEach(([k,v])=>localStorage.setItem(k,v));
+    console.warn('syncFromCloud error — lokale data hersteld:',e);
+  }
 }
 
 function authErrMsg(msg){
@@ -4706,26 +4718,27 @@ async function doResetPassword(){
 }
 
 function doLogout(){
-  SB.auth.signOut();
-  currentUser=null;
-  // Wis alle lokale progressie
-  const toClear=[
-    'examenapp_profiel',
-    'slagio_xp',
-    'examenapp_streak',
-    'slagio_daily_goal',
-    'slagio_daily_challenge_havo',
-    'slagio_daily_challenge_vwo',
-    'slagio_sr_v1',
-    'examenapp_cijfers_havo','examenapp_cijfers_vwo',
-    'examenapp_progress_havo','examenapp_progress_vwo',
-    'examenapp_favs_havo','examenapp_favs_vwo',
-    'examenapp_mijnvakken_havo','examenapp_mijnvakken_vwo',
-  ];
-  toClear.forEach(k=>localStorage.removeItem(k));
-  updateProfileNav();updateCloudStatusBar();
-  show('sc-home');
-  setTimeout(()=>location.reload(),100);
+  showConfirm('👋','Uitloggen?','Je wordt uitgelogd. Je voortgang blijft bewaard in de cloud.','Uitloggen',()=>{
+    SB.auth.signOut();
+    currentUser=null;
+    const toClear=[
+      'examenapp_profiel',
+      'slagio_xp',
+      'examenapp_streak',
+      'slagio_daily_goal',
+      'slagio_daily_challenge_havo',
+      'slagio_daily_challenge_vwo',
+      'slagio_sr_v1',
+      'examenapp_cijfers_havo','examenapp_cijfers_vwo',
+      'examenapp_progress_havo','examenapp_progress_vwo',
+      'examenapp_favs_havo','examenapp_favs_vwo',
+      'examenapp_mijnvakken_havo','examenapp_mijnvakken_vwo',
+    ];
+    toClear.forEach(k=>localStorage.removeItem(k));
+    updateProfileNav();updateCloudStatusBar();
+    show('sc-home');
+    setTimeout(()=>location.reload(),100);
+  });
 }
 
 function updateCloudStatusBar(){
@@ -6154,6 +6167,18 @@ function seedBotsNow(){
 }
 seedBotsNow();
 
+// ═══════ OFFLINE INDICATOR ═══════
+(function initOfflineBanner(){
+  const banner=document.createElement('div');
+  banner.id='offline-banner';
+  banner.innerHTML='📵 Geen internet — voortgang wordt lokaal opgeslagen';
+  document.body.appendChild(banner);
+  function update(){banner.classList.toggle('show',!navigator.onLine);}
+  window.addEventListener('offline',update);
+  window.addEventListener('online',update);
+  update();
+})();
+
 // ═══════ LEADERBOARD ═══════
 function getLbKey(){return 'examenapp_leaderboard_'+APP_LEVEL;}
 function getLbEntries(){try{return JSON.parse(localStorage.getItem(getLbKey())||'[]');}catch(e){return[];}}
@@ -6901,7 +6926,16 @@ function renderDailyGoal(){
   const dots=Array.from({length:DG_TARGET},function(_,i){return '<div class="dg-dot'+(i<done?' dg-dot-done':'')+'"></div>';}).join('');
   box.innerHTML='<div class="dg-card"><div class="dg-top"><span class="dg-ico">🎯</span><span class="dg-lbl">Dagdoel <span class="dg-cnt">'+done+'/'+DG_TARGET+'</span></span><span class="dg-bonus">+75 XP</span></div><div class="dg-dots">'+dots+'</div><div class="dg-bar-wrap"><div class="dg-bar" style="width:'+Math.round(done/DG_TARGET*100)+'%"></div></div></div>';
 }
-function getXPData(){try{return JSON.parse(localStorage.getItem(XP_KEY)||'{"xp":0}');}catch(e){return{xp:0};}}
+function getXPData(){
+  try{
+    const fromKey=(JSON.parse(localStorage.getItem(XP_KEY)||'{"xp":0}').xp)||0;
+    const prof=JSON.parse(localStorage.getItem(PROF_KEY)||'{}');
+    const fromProf=typeof prof.xp==='number'?prof.xp:null;
+    // Neem de hoogste waarde zodat XP nooit terugvalt bij een desync
+    const xp=fromProf!==null?Math.max(fromProf,fromKey):fromKey;
+    return{xp};
+  }catch(e){return{xp:0};}
+}
 function getTotalXP(){return getXPData().xp||0;}
 function getLevelForXP(xp){let l=1;for(let i=0;i<XP_LEVELS.length;i++){if(xp>=XP_LEVELS[i])l=i+1;}return Math.min(l,XP_LEVELS.length);}
 function getXPForLevel(l){return XP_LEVELS[Math.min(l-1,XP_LEVELS.length-1)]||0;}
