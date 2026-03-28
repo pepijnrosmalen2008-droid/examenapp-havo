@@ -4533,8 +4533,20 @@ async function cloudGet(col,def){
 }
 async function syncFromCloud(){
   try{
+    // Wis altijd eerst lokale gebruikersdata zodat accounts niet door elkaar lopen
+    [PROF_KEY,XP_KEY,'examenapp_streak',
+     'examenapp_'+lvlCol('cijfers'),'examenapp_'+lvlCol('progress'),
+     'examenapp_'+lvlCol('favs'),'examenapp_'+lvlCol('mijnvakken'),
+     'examenapp_cijfers_havo','examenapp_cijfers_vwo',
+     'examenapp_progress_havo','examenapp_progress_vwo',
+     'examenapp_favs_havo','examenapp_favs_vwo',
+     'examenapp_mijnvakken_havo','examenapp_mijnvakken_vwo',
+    ].forEach(k=>localStorage.removeItem(k));
     const {data,error}=await SB.from('user_data').select('*').eq('user_id',currentUser.id).single();
-    if(error||!data)return;
+    if(error||!data){
+      updateProfileNav();renderStreak();renderFavHome();renderXPHome();renderDailyChallenge();buildGrid();renderHomeStats();
+      return;
+    }
     if(data.profiel)localStorage.setItem(PROF_KEY,JSON.stringify(data.profiel));
     const cij=data[lvlCol('cijfers')];if(cij)localStorage.setItem('examenapp_'+lvlCol('cijfers'),JSON.stringify(cij));
     const prog=data[lvlCol('progress')];if(prog)localStorage.setItem('examenapp_'+lvlCol('progress'),JSON.stringify(prog));
