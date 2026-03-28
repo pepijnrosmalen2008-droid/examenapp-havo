@@ -1821,7 +1821,7 @@ html.dark .hsd-pill{background:var(--bg2);border-color:var(--bo2)}
 .xp-home-bar::after{content:'';position:absolute;top:-40px;right:-40px;width:200px;height:200px;background:radial-gradient(circle,rgba(var(--or-rgb),.1) 0%,transparent 65%);pointer-events:none}
 /* top row */
 .xp-hb-inner{display:flex;align-items:flex-start;gap:16px;position:relative;z-index:1}
-.xp-home-lvl{width:58px;height:58px;border-radius:50%;background:radial-gradient(circle at 35% 35%,rgba(255,255,255,.15),transparent 60%),linear-gradient(135deg,var(--or),#f59e0b);display:flex;align-items:center;justify-content:center;flex-shrink:0;font-size:30px;box-shadow:0 0 0 3px rgba(var(--or-rgb),.2),0 6px 20px rgba(var(--or-rgb),.35);animation:evoGlow 3s ease-in-out infinite}
+.xp-home-lvl{width:58px;height:58px;border-radius:50%;background:rgba(var(--or-rgb),.08);border:2px solid rgba(var(--or-rgb),.25);display:flex;align-items:center;justify-content:center;flex-shrink:0;font-size:30px;box-shadow:0 0 0 3px rgba(var(--or-rgb),.15),0 6px 20px rgba(var(--or-rgb),.35);animation:evoGlow 3s ease-in-out infinite}
 @keyframes evoGlow{0%,100%{box-shadow:0 0 0 3px rgba(var(--or-rgb),.2),0 6px 20px rgba(var(--or-rgb),.35)}50%{box-shadow:0 0 0 6px rgba(var(--or-rgb),.12),0 6px 28px rgba(var(--or-rgb),.5)}}
 .xp-home-info{flex:1;min-width:0}
 .xp-home-head{display:flex;align-items:center;justify-content:space-between;gap:8px;margin-bottom:2px}
@@ -6944,6 +6944,7 @@ function renderXPHome(){
   const nxtThresh=isMaxStage?curThresh+1:ANIM_THRESHOLDS[stageIdx+1];
   const stagePct=isMaxStage?100:Math.round(Math.min(100,(xp-curThresh)/(nxtThresh-curThresh)*100));
   const currentEmoji=animal?animal.s[stageIdx]:'⭐';
+  const currentDisplay=animal?getAnimalDisplay(animal.id,stageIdx,50):`<span style="font-size:30px">⭐</span>`;
   const animalName=animal?animal.n:'Avatar';
   const stageName=ANIM_STAGE_NAMES[stageIdx];
   const nextStageName=isMaxStage?null:ANIM_STAGE_NAMES[stageIdx+1];
@@ -6956,7 +6957,10 @@ function renderXPHome(){
     const emoji=animal?animal.s[i]:'⭐';
     const cls='xp-evo-step'+(isDone?' done':isCur?' current':'');
     const stepLbl=animal&&animal.lbl?animal.lbl[i]:ANIM_STAGE_NAMES[i];
-    journeyHtml+=`<div class="${cls}"><span class="xp-evo-step-emoji">${isDone||isCur?emoji:'❓'}</span><span class="xp-evo-step-name">${isDone||isCur?stepLbl:'???'}</span></div>`;
+    const stepDisplay=isDone||isCur
+      ?(animal?getAnimalDisplay(animal.id,i,isCur?26:22):emoji)
+      :'<span style="font-size:20px;opacity:.3;filter:grayscale(1)">❓</span>';
+    journeyHtml+=`<div class="${cls}"><span class="xp-evo-step-emoji">${stepDisplay}</span><span class="xp-evo-step-name">${isDone||isCur?stepLbl:'???'}</span></div>`;
     if(i<ANIM_THRESHOLDS.length-1){
       journeyHtml+=`<div class="xp-evo-connector${isDone?' done':''}"></div>`;
     }
@@ -6965,7 +6969,7 @@ function renderXPHome(){
   const footRight=isMaxStage?`${xp.toLocaleString('nl')} XP totaal`:(stagePct>=80?`🔥 Nog ${toNext} XP!`:`→ ${nextStageName}`);
   box.innerHTML=`<div class="xp-home-bar">
     <div class="xp-hb-inner">
-      <div class="xp-home-lvl">${currentEmoji}</div>
+      <div class="xp-home-lvl">${currentDisplay}</div>
       <div class="xp-home-info">
         <div class="xp-home-head">
           <div class="xp-home-title">${animalName} <span class="xp-evo-chip">${stageName}</span></div>
