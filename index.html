@@ -174,6 +174,17 @@ h1,h2,h3,h4{font-family:var(--font-head);line-height:1.2;letter-spacing:-.3px}
 .tuto-btn-pri:hover{opacity:.85;box-shadow:0 6px 24px rgba(var(--or-rgb),.55),0 0 0 3px rgba(var(--or-rgb),.18)}
 .tuto-btn-sec{padding:13px 16px;background:none;border:1px solid var(--bo);color:var(--mu);border-radius:12px;font-size:14px;cursor:pointer;font-family:var(--font);transition:all .2s}
 .tuto-btn-sec:hover{color:var(--tx);border-color:var(--mu)}
+/* ── CIJFER SPOTLIGHT TUTORIAL ──────────────────── */
+.ctuto-spot{position:fixed;border-radius:12px;box-shadow:0 0 0 4px var(--or),0 0 0 9999px rgba(0,0,0,.68);pointer-events:none;z-index:8902;transition:top .32s,left .32s,width .32s,height .32s}
+.ctuto-tip{position:fixed;background:var(--s);border:2px solid var(--or);border-radius:16px;padding:18px 20px 14px;max-width:280px;box-shadow:0 8px 40px rgba(0,0,0,.5);z-index:8903;pointer-events:all;animation:tutoIn .3s cubic-bezier(.34,1.56,.64,1)}
+.ctuto-tip-title{font-weight:800;font-size:15px;color:var(--tx);margin-bottom:6px}
+.ctuto-tip-body{font-size:13px;color:var(--mu);line-height:1.65;margin-bottom:14px}
+.ctuto-tip-foot{display:flex;align-items:center;gap:8px}
+.ctuto-tip-skip{background:none;border:none;color:var(--mu);font-size:12px;cursor:pointer;font-family:var(--font);padding:4px;white-space:nowrap}
+.ctuto-tip-dots{display:flex;gap:5px;align-items:center;flex:1;justify-content:center}
+.ctuto-tip-dot{width:6px;height:6px;border-radius:50%;background:var(--bo2);transition:all .2s}
+.ctuto-tip-dot.on{background:var(--or);width:18px;border-radius:3px}
+.ctuto-tip-next{background:var(--or);color:#fff;border:none;border-radius:9px;padding:8px 16px;font-size:13px;font-weight:700;cursor:pointer;font-family:var(--font);white-space:nowrap}
 @media(max-width:640px){
   .tuto-card{padding:28px 20px 22px;border-radius:20px;margin-bottom:70px}
   .tuto-icon{font-size:44px}
@@ -5191,6 +5202,7 @@ function buildCijferGrid(){
       <div class="cijfer-label">SE-cijfer</div>`;
     grid.appendChild(div);
   });
+  setTimeout(showCijferTuto,350);
 }
 
 function saveCijfers(){
@@ -7961,6 +7973,68 @@ function _updateTuto(){
   }
 }
 
+// ═══════ CIJFER SPOTLIGHT TUTORIAL ═══════
+const CTUTO_KEY='slagio_cijfer_tuto_v1';
+const CTUTO_STEPS=[
+  {sel:'#cijfer-grid',pad:10,pos:'below',
+   title:'📝 Vul hier je SE-cijfers in',
+   body:'Dit zijn je schoolexamencijfers — de cijfers die je al hebt gehaald op school. Vul ze in per vak.'},
+  {sel:'#cijfer-grid .cijfer-input',pad:6,pos:'below',
+   title:'✏️ Typ je cijfer in',
+   body:'Klik op een vakje en typ je SE-cijfer, bijv. 7,5. Doe dit voor elk vak dat je dit jaar volgt.'},
+  {sel:'.cijfer-save-btn',pad:8,pos:'above',
+   title:'💾 Sla op!',
+   body:'Klik op Opslaan om je cijfers te bewaren. Ze worden dan gebruikt voor de eindcijferberekening en slagingskans.'},
+];
+let _ctutoIdx=0;
+function showCijferTuto(){
+  if(localStorage.getItem(CTUTO_KEY))return;
+  if(Object.keys(getSavedCijfers()).length>0){localStorage.setItem(CTUTO_KEY,'1');return;}
+  _ctutoIdx=0;
+  document.getElementById('ctuto-overlay').style.display='block';
+  _ctutoRender();
+}
+function closeCijferTuto(){
+  localStorage.setItem(CTUTO_KEY,'1');
+  document.getElementById('ctuto-overlay').style.display='none';
+}
+function _ctutoRender(){
+  const step=CTUTO_STEPS[_ctutoIdx];
+  const target=document.querySelector(step.sel);
+  if(!target){closeCijferTuto();return;}
+  const r=target.getBoundingClientRect();
+  const p=step.pad,TW=280,margin=14;
+  // Spotlight
+  const spot=document.getElementById('ctuto-spot');
+  spot.style.left=(r.left-p)+'px';
+  spot.style.top=(r.top-p)+'px';
+  spot.style.width=(r.width+p*2)+'px';
+  spot.style.height=(r.height+p*2)+'px';
+  // Tooltip position
+  const tip=document.getElementById('ctuto-tip');
+  let tx,ty;
+  if(step.pos==='below'){
+    ty=r.bottom+p+margin;
+    tx=Math.max(margin,Math.min(window.innerWidth-TW-margin,r.left+r.width/2-TW/2));
+  } else {
+    ty=r.top-p-margin-165;
+    tx=Math.max(margin,Math.min(window.innerWidth-TW-margin,r.left+r.width/2-TW/2));
+  }
+  ty=Math.max(margin,Math.min(window.innerHeight-180,ty));
+  tip.style.left=tx+'px';
+  tip.style.top=ty+'px';
+  // Content
+  document.getElementById('ctuto-title').textContent=step.title;
+  document.getElementById('ctuto-body').textContent=step.body;
+  // Dots
+  document.getElementById('ctuto-dots').innerHTML=CTUTO_STEPS.map((_,i)=>`<div class="ctuto-tip-dot${i===_ctutoIdx?' on':''}"></div>`).join('');
+  // Button
+  const btn=document.getElementById('ctuto-next');
+  const last=_ctutoIdx===CTUTO_STEPS.length-1;
+  btn.textContent=last?'Begrepen ✓':'Volgende →';
+  btn.onclick=last?closeCijferTuto:()=>{_ctutoIdx++;_ctutoRender();};
+}
+
 // ═══════ LEVEL THEME ═══════
 function applyLevelTheme(level){
   const html=document.documentElement;
@@ -8088,6 +8162,20 @@ window.show=function(id){_origShow(id);updateBottomNav(id);};
     <div class="pomo-overlay-btns">
       <button class="pomo-overlay-btn secondary" onclick="dismissPomoOverlay()">Sluiten</button>
       <button class="pomo-overlay-btn primary" id="pomo-ov-action" onclick="startBreakFromOverlay()">▶ Start pauze</button>
+    </div>
+  </div>
+</div>
+
+<!-- CIJFER SPOTLIGHT TUTORIAL -->
+<div id="ctuto-overlay" style="display:none;position:fixed;inset:0;z-index:8900">
+  <div id="ctuto-spot" class="ctuto-spot"></div>
+  <div id="ctuto-tip" class="ctuto-tip">
+    <div id="ctuto-title" class="ctuto-tip-title"></div>
+    <div id="ctuto-body" class="ctuto-tip-body"></div>
+    <div class="ctuto-tip-foot">
+      <button class="ctuto-tip-skip" onclick="closeCijferTuto()">Overslaan</button>
+      <div id="ctuto-dots" class="ctuto-tip-dots"></div>
+      <button id="ctuto-next" class="ctuto-tip-next">Volgende →</button>
     </div>
   </div>
 </div>
