@@ -5899,109 +5899,115 @@ function toonRes(){
   const sc=Math.round(ST.score*10)/10;
   const pct=sc/tot;
   // Save progress & streak
-  saveProgress(ST.vak.id,ST.domein.id,ST.mode,sc,tot);
-  recordPractice();
+  try{saveProgress(ST.vak.id,ST.domein.id,ST.mode,sc,tot);}catch(e){}
+  try{recordPractice();}catch(e){}
   // Rebuild grid and streak to update UI
-  const g=document.getElementById('vakgrid');g.innerHTML='';buildGrid();
-  renderStreak();renderFavHome();renderXPHome();renderDailyChallenge();renderDailyGoal();renderLiveCount();renderHomeStats();renderGreeting();
-  recordDailyGoal();
+  try{const g=document.getElementById('vakgrid');if(g){g.innerHTML='';buildGrid();}
+  renderStreak();renderFavHome();renderXPHome();renderDailyChallenge();renderDailyGoal();renderLiveCount();renderHomeStats();renderGreeting();}catch(e){}
+  try{recordDailyGoal();}catch(e){};
   const isPerfect=pct===1&&ST.mode==='snel'&&tot>=3;
-  let emi,tit,sub;
-  if(isPerfect){emi='🌟';tit='Perfecte score!';sub='Fenomenaal! Alles goed — jij bent klaar voor het CE!';}
-  else if(pct>=0.9){emi='🏆';tit='Uitstekend!';sub='Je beheerst dit domein helemaal goed.';}
-  else if(pct>=0.7){emi='🎉';tit='Goed gedaan!';sub='Je snapt het meeste — kleine herhaling loont.';}
-  else if(pct>=0.5){emi='📖';tit='Aardig begin';sub='De basis zit erin. Oefen dit domein nog eens.';}
-  else{emi='💪';tit='Blijven oefenen!';sub='Dit domein verdient meer aandacht.';}
-  if(isPerfect)setTimeout(()=>launchConfetti('gold'),400);
-  else if(pct>=0.9)setTimeout(()=>launchConfetti(),600);
-  document.getElementById('remi').textContent=emi;
-  document.getElementById('rtit').textContent=tit;
-  document.getElementById('rsub').textContent=sub;
-  document.getElementById('rnum').textContent=sc;
-  document.getElementById('rden').textContent=`van ${tot}`;
-  const circ=2*Math.PI*50;
-  setTimeout(()=>{const c=document.getElementById('scirc');c.style.strokeDashoffset=circ*(1-pct);c.style.transition='stroke-dashoffset 1s ease';},200);
-  let bdHtml='';
-  if(ST.mode==='snel'){
-    const goed=ST.antwrd.filter(a=>a.pts===1).length;
-    const fout=ST.antwrd.filter(a=>a.pts===0).length;
-    bdHtml=`<div class="rbr"><span>✓ Correct</span><span class="rbc">${goed} / ${tot}</span></div>
-      <div class="rbr"><span>✗ Fout of tijd op</span><span class="rbw">${fout}</span></div>
-      <div class="rbr"><span>Score</span><span style="font-weight:600;color:var(--or)">${Math.round(pct*100)}%</span></div>`;
-  } else {
-    const goed=ST.antwrd.filter(a=>a.pts===1).length;
-    const deels=ST.antwrd.filter(a=>a.pts===0.5).length;
-    const fout=ST.antwrd.filter(a=>a.pts===0).length;
-    bdHtml=`<div class="rbr"><span>✓ Goed</span><span class="rbc">${goed}</span></div>
-      <div class="rbr"><span>~ Deels goed</span><span style="color:#FCD34D;font-weight:600">${deels}</span></div>
-      <div class="rbr"><span>✗ Fout</span><span class="rbw">${fout}</span></div>
-      <div class="rbr"><span>Totaalscore</span><span style="font-weight:600;color:var(--or)">${sc} / ${tot} punten</span></div>`;
-  }
-  document.getElementById('rbd').innerHTML=bdHtml;
-  // Near-miss nudge
-  const missedCount=tot-Math.round(sc);
-  if(pct>=0.8&&pct<1&&tot>=4&&missedCount<=2){
-    const nm=document.createElement('div');
-    nm.className='nearmiss-nudge';
-    nm.innerHTML=`<span>Bijna! Nog maar ${missedCount} ${missedCount===1?'fout':'fouten'}...</span><button onclick="retryQ()">Doe het opnieuw →</button>`;
-    document.getElementById('rbd').insertAdjacentElement('afterend',nm);
-  }
+  try{
+    let emi,tit,sub;
+    if(isPerfect){emi='🌟';tit='Perfecte score!';sub='Fenomenaal! Alles goed — jij bent klaar voor het CE!';}
+    else if(pct>=0.9){emi='🏆';tit='Uitstekend!';sub='Je beheerst dit domein helemaal goed.';}
+    else if(pct>=0.7){emi='🎉';tit='Goed gedaan!';sub='Je snapt het meeste — kleine herhaling loont.';}
+    else if(pct>=0.5){emi='📖';tit='Aardig begin';sub='De basis zit erin. Oefen dit domein nog eens.';}
+    else{emi='💪';tit='Blijven oefenen!';sub='Dit domein verdient meer aandacht.';}
+    if(isPerfect)setTimeout(()=>launchConfetti('gold'),400);
+    else if(pct>=0.9)setTimeout(()=>launchConfetti(),600);
+    document.getElementById('remi').textContent=emi;
+    document.getElementById('rtit').textContent=tit;
+    document.getElementById('rsub').textContent=sub;
+    document.getElementById('rnum').textContent=sc;
+    document.getElementById('rden').textContent=`van ${tot}`;
+    const circ=2*Math.PI*50;
+    setTimeout(()=>{const c=document.getElementById('scirc');if(c){c.style.strokeDashoffset=circ*(1-pct);c.style.transition='stroke-dashoffset 1s ease';}},200);
+    let bdHtml='';
+    if(ST.mode==='snel'){
+      const goed=ST.antwrd.filter(a=>a.pts===1).length;
+      const fout=ST.antwrd.filter(a=>a.pts===0).length;
+      bdHtml=`<div class="rbr"><span>✓ Correct</span><span class="rbc">${goed} / ${tot}</span></div>
+        <div class="rbr"><span>✗ Fout of tijd op</span><span class="rbw">${fout}</span></div>
+        <div class="rbr"><span>Score</span><span style="font-weight:600;color:var(--or)">${Math.round(pct*100)}%</span></div>`;
+    } else {
+      const goed=ST.antwrd.filter(a=>a.pts===1).length;
+      const deels=ST.antwrd.filter(a=>a.pts===0.5).length;
+      const fout=ST.antwrd.filter(a=>a.pts===0).length;
+      bdHtml=`<div class="rbr"><span>✓ Goed</span><span class="rbc">${goed}</span></div>
+        <div class="rbr"><span>~ Deels goed</span><span style="color:#FCD34D;font-weight:600">${deels}</span></div>
+        <div class="rbr"><span>✗ Fout</span><span class="rbw">${fout}</span></div>
+        <div class="rbr"><span>Totaalscore</span><span style="font-weight:600;color:var(--or)">${sc} / ${tot} punten</span></div>`;
+    }
+    const rbdEl=document.getElementById('rbd');
+    if(rbdEl)rbdEl.innerHTML=bdHtml;
+    // Near-miss nudge
+    const missedCount=tot-Math.round(sc);
+    if(rbdEl&&pct>=0.8&&pct<1&&tot>=4&&missedCount<=2){
+      const nm=document.createElement('div');
+      nm.className='nearmiss-nudge';
+      nm.innerHTML=`<span>Bijna! Nog maar ${missedCount} ${missedCount===1?'fout':'fouten'}...</span><button onclick="retryQ()">Doe het opnieuw →</button>`;
+      rbdEl.insertAdjacentElement('afterend',nm);
+    }
+  }catch(e){console.warn('toonRes display error:',e);}
   // XP reward
-  const xpEl=document.getElementById('res-xp-card');
-  if(xpEl)xpEl.remove();
-  if(ST.mode==='snel'&&ST.xpThisRound>0){
-    if(isPerfect)ST.xpThisRound=Math.round(ST.xpThisRound*1.5);
-    const res=addXP(ST.xpThisRound);
-    const pct=getXPPct(res.totalXP);
-    const lvlName=LEVEL_NAMES[res.newLvl]||'Level '+res.newLvl;
-    const curXP=getXPForLevel(res.newLvl);
-    const nxtXP=getXPForLevel(res.newLvl+1)||curXP+1000;
-    const card=document.createElement('div');
-    card.id='res-xp-card';card.className='res-xp';
-    card.innerHTML=`<div class="res-xp-num">+${res.added} XP</div>
-      <div class="res-xp-sub">${ST.isDailyChallenge?'⚡ Dagelijkse uitdaging bonus · ':''}&nbsp;</div>
-      <div class="res-xp-lvl">Level ${res.newLvl} — ${lvlName} · ${res.totalXP-curXP} / ${nxtXP-curXP} XP</div>
-      <div class="xp-bar-wrap"><div class="xp-bar" style="width:${pct}%"></div></div>
-      ${res.leveled?`<div class="levelup-banner">🎉 Level up! Je bent nu level ${res.newLvl} — ${lvlName}!</div>`:''}
-    ${isPerfect?`<div class="perfect-banner">🌟 Perfecte score! +50% XP bonus verdiend!</div>`:''}`;
-    document.getElementById('rbd').insertAdjacentElement('afterend',card);
-    if(res.leveled)setTimeout(()=>launchConfetti(),300);
-    setTimeout(()=>floatXP(res.added),150);
-    syncAvatarToProfile();
-    updateProfileNav();
-    if(res.evolved){
-      const _p=JSON.parse(localStorage.getItem(PROF_KEY)||'{}');
-      const _a=getAnimalById(_p.animalId);
-      if(_a){
-        const _msg=(_a.evoMsg&&_a.evoMsg[res.newStage-1])||`${_a.s[res.newStage]} Je ${_a.n} is geëvolueerd naar <strong>${_a.lbl?_a.lbl[res.newStage]:ANIM_STAGE_NAMES[res.newStage]}</strong>!`;
-        setTimeout(()=>showToast(_msg,'var(--or)',5500),1000);
-        setTimeout(()=>launchConfetti('gold'),1200);
+  try{
+    const xpEl=document.getElementById('res-xp-card');
+    if(xpEl)xpEl.remove();
+    if(ST.mode==='snel'&&ST.xpThisRound>0){
+      if(isPerfect)ST.xpThisRound=Math.round(ST.xpThisRound*1.5);
+      const res=addXP(ST.xpThisRound);
+      const xpPct=getXPPct(res.totalXP);
+      const lvlName=LEVEL_NAMES[res.newLvl]||'Level '+res.newLvl;
+      const curXP=getXPForLevel(res.newLvl);
+      const nxtXP=getXPForLevel(res.newLvl+1)||curXP+1000;
+      const card=document.createElement('div');
+      card.id='res-xp-card';card.className='res-xp';
+      card.innerHTML=`<div class="res-xp-num">+${res.added} XP</div>
+        <div class="res-xp-sub">${ST.isDailyChallenge?'⚡ Dagelijkse uitdaging bonus · ':''}&nbsp;</div>
+        <div class="res-xp-lvl">Level ${res.newLvl} — ${lvlName} · ${res.totalXP-curXP} / ${nxtXP-curXP} XP</div>
+        <div class="xp-bar-wrap"><div class="xp-bar" style="width:${xpPct}%"></div></div>
+        ${res.leveled?`<div class="levelup-banner">🎉 Level up! Je bent nu level ${res.newLvl} — ${lvlName}!</div>`:''}
+        ${isPerfect?`<div class="perfect-banner">🌟 Perfecte score! +50% XP bonus verdiend!</div>`:''}`;
+      const rbdEl2=document.getElementById('rbd');
+      if(rbdEl2)rbdEl2.insertAdjacentElement('afterend',card);
+      if(res.leveled)setTimeout(()=>launchConfetti(),300);
+      setTimeout(()=>floatXP(res.added),150);
+      syncAvatarToProfile();
+      updateProfileNav();
+      if(res.evolved){
+        const _p=JSON.parse(localStorage.getItem(PROF_KEY)||'{}');
+        const _a=getAnimalById(_p.animalId);
+        if(_a){
+          const _msg=(_a.evoMsg&&_a.evoMsg[res.newStage-1])||`${_a.s[res.newStage]} Je ${_a.n} is geëvolueerd naar <strong>${_a.lbl?_a.lbl[res.newStage]:ANIM_STAGE_NAMES[res.newStage]}</strong>!`;
+          setTimeout(()=>showToast(_msg,'var(--or)',5500),1000);
+          setTimeout(()=>launchConfetti('gold'),1200);
+        }
+      }
+      if(ST.isDailyChallenge){
+        try{const _k=_dcLevelKey();const dc=JSON.parse(localStorage.getItem(_k)||'{}');dc.done=true;localStorage.setItem(_k,JSON.stringify(dc));}catch(e){}
+        ST.isDailyChallenge=false;
       }
     }
-    // Mark daily challenge done
-    if(ST.isDailyChallenge){
-      try{const _k=_dcLevelKey();const dc=JSON.parse(localStorage.getItem(_k)||'{}');dc.done=true;localStorage.setItem(_k,JSON.stringify(dc));}catch(e){}
-      ST.isDailyChallenge=false;
+  }catch(e){console.warn('toonRes XP error:',e);}
+  // Leaderboard
+  try{
+    const lbBtn=document.getElementById('lb-res-btn');
+    if(ST.mode==='snel'){
+      const goed=ST.antwrd.filter(a=>a.pts===1).length;
+      const tijden=ST.tijdPerVraag||[];
+      const totalTijd=tijden.reduce((a,b)=>a+b,0);
+      const lbScore=ST.antwrd.reduce((sum,a)=>sum+a.pts*100+Math.round((a.tijdOver||0)/15*100),0);
+      const avgTijd=tijden.length?Math.round(totalTijd/tijden.length*10)/10:0;
+      const prof=JSON.parse(localStorage.getItem(PROF_KEY)||'{}');
+      const naam=prof.naam||'Anoniem';
+      const avatar=getMyCurrentAvatar()||'🐻';
+      const entry={naam,avatar,vak:ST.vak.id,vakNaam:ST.vak.naam,domeinId:ST.domein.id,domeinNaam:ST.domein.naam,score:lbScore,goed,tot,avgTijd,date:new Date().toISOString().slice(0,10)};
+      saveLeaderboardEntry(entry);
+      if(lbBtn)lbBtn.style.display='block';
+    } else {
+      if(lbBtn)lbBtn.style.display='none';
     }
-  }
-  // Leaderboard: save entry for snelle quiz
-  const lbBtn=document.getElementById('lb-res-btn');
-  if(ST.mode==='snel'){
-    const goed=ST.antwrd.filter(a=>a.pts===1).length;
-    const totalTijd=ST.tijdPerVraag.reduce((a,b)=>a+b,0);
-    // Score formula: per vraag max 200 pts = 100 (correct) + 100 (snelheid, schaalt 0-15s)
-    // Max totaal = 5 × 200 = 1000
-    const lbScore=ST.antwrd.reduce((sum,a)=>sum+a.pts*100+Math.round((a.tijdOver||0)/15*100),0);
-    const avgTijd=ST.tijdPerVraag.length?Math.round(totalTijd/ST.tijdPerVraag.length*10)/10:0;
-    const prof=JSON.parse(localStorage.getItem(PROF_KEY)||'{}');
-    const naam=prof.naam||'Anoniem';
-    const avatar=getMyCurrentAvatar()||'🐻';
-    const entry={naam,avatar,vak:ST.vak.id,vakNaam:ST.vak.naam,domeinId:ST.domein.id,domeinNaam:ST.domein.naam,score:lbScore,goed,tot,avgTijd,date:new Date().toISOString().slice(0,10)};
-    saveLeaderboardEntry(entry);
-    if(lbBtn)lbBtn.style.display='block';
-  } else {
-    if(lbBtn)lbBtn.style.display='none';
-  }
+  }catch(e){console.warn('toonRes LB error:',e);}
   show('sc-res');
 }
 
