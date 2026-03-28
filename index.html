@@ -476,6 +476,12 @@ html.dark .qb{background:#2e3550}
 @media(max-width:480px){.qmc{grid-template-columns:1fr}}
 .qmcd{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.1);border-radius:16px;padding:26px 22px;cursor:pointer;transition:all .25s}
 .qmcd:hover{background:rgba(255,255,255,.11);transform:translateY(-3px);box-shadow:0 8px 24px rgba(0,0,0,.3)}
+.qm-resume-chip{background:rgba(var(--or-rgb),.12);border:1px solid rgba(var(--or-rgb),.3);border-radius:12px;padding:12px 16px;display:flex;align-items:center;gap:10px;cursor:pointer;color:#fff;font-size:13px;font-weight:600;transition:background .2s}
+.qm-resume-chip:hover{background:rgba(var(--or-rgb),.22)}
+.qm-resume-info{flex:1;min-width:0}
+.qm-resume-label{font-size:11px;color:rgba(var(--or-rgb),1);font-weight:700;margin-bottom:2px;text-transform:uppercase;letter-spacing:.5px}
+.qm-resume-bar{height:4px;background:rgba(255,255,255,.1);border-radius:4px;margin-top:6px;overflow:hidden}
+.qm-resume-bar-fill{height:100%;background:var(--or);border-radius:4px;transition:width .4s}
 .qmci{font-size:30px;margin-bottom:12px;opacity:.85}
 .qmci svg{width:32px;height:32px;stroke:rgba(255,255,255,.8);fill:none;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
 .qmcd h3{font-family:var(--font-head);color:#fff;font-size:18px;margin-bottom:6px;font-weight:700}
@@ -1682,7 +1688,10 @@ html.dark .calc-btn{background:#2e3550}
 .auth-input:focus{border-color:var(--or);box-shadow:0 0 0 3px rgba(var(--or-rgb),.12)}
 .auth-btn{width:100%;padding:15px;border-radius:14px;background:var(--or);color:#fff;border:none;font-size:16px;font-weight:700;cursor:pointer;font-family:var(--font);transition:all .2s;margin-top:8px;box-shadow:0 4px 16px rgba(var(--or-rgb),.35)}
 .auth-btn:hover{opacity:.9;transform:translateY(-1px);box-shadow:0 8px 28px rgba(var(--or-rgb),.55),0 0 0 3px rgba(var(--or-rgb),.18)}
-.auth-btn:disabled{opacity:.5;cursor:default;transform:none}
+.auth-btn:disabled{opacity:.7;cursor:default;transform:none}
+.auth-btn.loading{display:flex;align-items:center;justify-content:center;gap:10px;pointer-events:none}
+.auth-btn.loading::after{content:'';flex-shrink:0;width:17px;height:17px;border:2.5px solid rgba(255,255,255,.35);border-top-color:#fff;border-radius:50%;animation:btnSpin .65s linear infinite}
+@keyframes btnSpin{to{transform:rotate(360deg)}}
 .auth-err{background:#FEF2F2;border:1px solid #FECACA;border-radius:10px;padding:10px 14px;font-size:13px;color:#DC2626;margin-bottom:16px;display:none}
 html.dark .auth-err{background:#2D1515;border-color:#7F1D1D;color:#FCA5A5}
 .auth-ok{background:#F0FDF4;border:1px solid #BBF7D0;border-radius:10px;padding:10px 14px;font-size:13px;color:#15803D;margin-bottom:16px;display:none}
@@ -2382,6 +2391,7 @@ html.dark .hsd-pill{background:var(--bg2);border-color:var(--bo2)}
   <div class="qmw">
     <h2>Kies quizmodus</h2>
     <p class="qmsub" id="qmsub"></p>
+    <div id="qm-resume" style="margin-bottom:14px"></div>
     <div class="qmc">
       <div class="qmcd" onclick="startQ('snel')"><div class="qmci"><svg viewBox="0 0 24 24"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg></div><h3>Snelle Quiz</h3><p>Korte vragen met 15 sec timer. Stamp leerstof in je geheugen.</p><div class="qmode-desc">4 antwoordopties · Timer · Goed/Fout feedback</div><span class="pill ps">15 sec · 5 vragen</span><div style="font-size:10px;color:var(--mu);margin-top:6px;display:flex;align-items:center;gap:4px"><span style="color:#4ade80;font-weight:700">📋</span> Mix van CE-vragen &amp; Slagio oefenvragen</div></div>
       <div class="qmcd" onclick="startQ('oud')"><div class="qmci"><svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg></div><h3>Oud-examen stijl</h3><p>Open vragen zoals bij het echte CE. Schrijf je antwoord en beoordeel jezelf.</p><div class="qmode-desc">Open vragen · Modelantwoord · Zelf beoordelen</div><span class="pill po">Geen timer · 3 vragen</span><div style="font-size:10px;color:var(--mu);margin-top:6px;display:flex;align-items:center;gap:4px"><span style="color:#4ade80;font-weight:700">📋</span> Vragen uit officiële CE's (examenblad.nl)</div></div>
@@ -3559,7 +3569,7 @@ youtubeKanaal:'Math with Menno (225K+)',youtubeUrl:'https://youtube.com/@Mathwit
 
 // ═══════ STATE ═══════
 // antwrd entries: {pts: 0|0.5|1}
-let ST = {vak:null,domein:null,mode:null,vragen:[],idx:0,score:0,antwrd:[],timer:null,tijd:15,shuffleMap:[],combo:0,xpThisRound:0,isDailyChallenge:false};
+let ST = {vak:null,domein:null,mode:null,vragen:[],idx:0,score:0,antwrd:[],timer:null,tijd:15,shuffleMap:[],shuffleMaps:[],combo:0,xpThisRound:0,isDailyChallenge:false};
 
 // ═══════ UI HELPERS ═══════
 function show(id){
@@ -4632,7 +4642,7 @@ async function doLogin(){
   if(!_rlCheck(errEl))return;
   if(!email||!pass){errEl.textContent='Vul je e-mail en wachtwoord in.';errEl.style.display='block';return;}
   if(!isValidEmail(email)){errEl.textContent='Voer een geldig e-mailadres in.';errEl.style.display='block';return;}
-  btn.disabled=true;btn.textContent='Bezig...';
+  btn.disabled=true;btn.textContent='Bezig...';btn.classList.add('loading');
   try{
     const {error}=await SB.auth.signInWithPassword({email,password:pass});
     if(error)throw error;
@@ -4641,7 +4651,7 @@ async function doLogin(){
   }catch(e){
     _rlFail();
     errEl.textContent=authErrMsg(e.message);errEl.style.display='block';
-  }finally{btn.disabled=false;btn.textContent='Inloggen';}
+  }finally{btn.disabled=false;btn.textContent='Inloggen';btn.classList.remove('loading');}
 }
 
 async function doRegister(){
@@ -4661,7 +4671,7 @@ async function doRegister(){
   if(passwordScore(pass)<2){errEl.textContent='Wachtwoord is te zwak. Voeg een hoofdletter, cijfer of speciaal teken toe.';errEl.style.display='block';return;}
   if(pass!==passConfirm){errEl.textContent='Wachtwoorden komen niet overeen.';errEl.style.display='block';return;}
   if(!selectedAnimalId){errEl.textContent='Kies eerst je startdier!';errEl.style.display='block';return;}
-  btn.disabled=true;btn.textContent='Bezig...';
+  btn.disabled=true;btn.textContent='Bezig...';btn.classList.add('loading');
   try{
     const {data,error}=await SB.auth.signUp({email,password:pass});
     if(error)throw error;
@@ -4681,7 +4691,7 @@ async function doRegister(){
     }
   }catch(e){
     errEl.textContent=authErrMsg(e.message);errEl.style.display='block';
-  }finally{btn.disabled=false;btn.textContent='Account aanmaken';}
+  }finally{btn.disabled=false;btn.textContent='Account aanmaken';btn.classList.remove('loading');}
 }
 
 async function doForgotPassword(){
@@ -5631,10 +5641,70 @@ function toggleD(id){
   el.classList.toggle('on');
 }
 
+// ═══════ QUIZ DRAFT (crash recovery) ═══════
+const QUIZ_DRAFT_KEY='slagio_quiz_draft';
+function saveQuizDraft(){
+  if(!ST.vragen.length||!ST.vak||!ST.domein||ST.idx<=0)return;
+  try{
+    localStorage.setItem(QUIZ_DRAFT_KEY,JSON.stringify({
+      vakId:ST.vak.id,domeinId:ST.domein.id,mode:ST.mode,
+      idx:ST.idx,score:ST.score,
+      antwrd:ST.antwrd,tijdPerVraag:ST.tijdPerVraag||[],
+      shuffleMaps:ST.shuffleMaps,combo:ST.combo,
+      xpThisRound:ST.xpThisRound,isDailyChallenge:ST.isDailyChallenge,
+      savedAt:Date.now()
+    }));
+  }catch(e){}
+}
+function clearQuizDraft(){localStorage.removeItem(QUIZ_DRAFT_KEY);}
+function getQuizDraft(){try{return JSON.parse(localStorage.getItem(QUIZ_DRAFT_KEY)||'null');}catch(e){return null;}}
+function resumeQuizDraft(){
+  const draft=getQuizDraft();
+  if(!draft)return;
+  const vak=getVK().find(v=>v.id===draft.vakId);
+  if(!vak)return;
+  const domein=vak.domeinen.find(d=>d.id===draft.domeinId);
+  if(!domein)return;
+  ST.vak=vak;ST.domein=domein;ST.mode=draft.mode;
+  const pool=draft.mode==='snel'?domein.sv:domein.oe;
+  ST.vragen=pool.slice();
+  ST.idx=draft.idx;ST.score=draft.score;
+  ST.antwrd=draft.antwrd||[];ST.tijdPerVraag=draft.tijdPerVraag||[];
+  ST.shuffleMaps=draft.shuffleMaps||[];ST.combo=draft.combo||0;
+  ST.xpThisRound=draft.xpThisRound||0;ST.isDailyChallenge=draft.isDailyChallenge||false;
+  document.getElementById('qmeta').textContent=`${vak.naam} · D${domein.id}: ${domein.naam} · ${draft.mode==='snel'?'Snelle Quiz':'Oud-examen'}`;
+  show('sc-quiz');
+  const skel=document.getElementById('quiz-skeleton');const body=document.getElementById('qbody-inner');
+  if(skel&&body){skel.style.display='flex';body.style.display='none';}
+  requestAnimationFrame(()=>requestAnimationFrame(()=>{
+    if(skel)skel.style.display='none';if(body)body.style.display='';
+    toonV();
+  }));
+}
+
 // ═══════ QUIZ MODE ═══════
 function openQmode(did){
   ST.domein=ST.vak.domeinen.find(d=>d.id===did);
   document.getElementById('qmsub').textContent=`${ST.vak.naam} · Domein ${ST.domein.id}: ${ST.domein.naam}`;
+  // Toon resume-chip als er een opgeslagen quiz is voor dit domein
+  const resumeEl=document.getElementById('qm-resume');
+  if(resumeEl){
+    const draft=getQuizDraft();
+    const pool=draft&&draft.mode==='snel'?ST.domein.sv:ST.domein.oe;
+    const tot=pool?pool.length:0;
+    if(draft&&draft.vakId===ST.vak.id&&draft.domeinId===did&&draft.idx>0&&draft.idx<tot){
+      const pct=Math.round(draft.idx/tot*100);
+      resumeEl.innerHTML=`<div class="qm-resume-chip" onclick="resumeQuizDraft()">
+        <div style="font-size:22px">↩️</div>
+        <div class="qm-resume-info">
+          <div class="qm-resume-label">Doorgaan</div>
+          <div style="font-size:13px;color:rgba(255,255,255,.8)">${draft.idx} van ${tot} vragen · ${draft.mode==='snel'?'Snelle Quiz':'Oud-examen'}</div>
+          <div class="qm-resume-bar"><div class="qm-resume-bar-fill" style="width:${pct}%"></div></div>
+        </div>
+        <button onclick="event.stopPropagation();clearQuizDraft();document.getElementById('qm-resume').innerHTML=''" style="background:rgba(255,255,255,.1);border:none;color:rgba(255,255,255,.5);border-radius:8px;padding:4px 8px;cursor:pointer;font-size:12px">✕</button>
+      </div>`;
+    }else{resumeEl.innerHTML='';}
+  }
   show('sc-qmode');
 }
 
@@ -5644,11 +5714,20 @@ function startQ(mode){
     const hasJaar=(ST.domein.oe||[]).some(q=>q.jaar);
     if(hasJaar){openOEPicker();return;}
   }
+  clearQuizDraft();
   ST.mode=mode;
   ST.idx=0;ST.score=0;ST.antwrd=[];ST.tijdPerVraag=[];ST.combo=0;ST.xpThisRound=0;
   if(!ST.isDailyChallenge)ST.isDailyChallenge=false;
   const pool=mode==='snel'?ST.domein.sv:ST.domein.oe;
   ST.vragen=pool.slice();
+  // Pre-compute shuffle maps voor alle vragen in één keer (niet per vraag)
+  if(mode==='snel'){
+    ST.shuffleMaps=ST.vragen.map(()=>{
+      const m=[0,1,2,3];
+      for(let i=3;i>0;i--){const j=Math.floor(Math.random()*(i+1));[m[i],m[j]]=[m[j],m[i]];}
+      return m;
+    });
+  }else{ST.shuffleMaps=[];}
   document.getElementById('qmeta').textContent=`${ST.vak.naam} · D${ST.domein.id}: ${ST.domein.naam} · ${mode==='snel'?'Snelle Quiz':'Oud-examen'}`;
   show('sc-quiz');
   // Toon skeleton kort terwijl quiz initialiseert
@@ -5766,9 +5845,8 @@ function toonV(){
     document.getElementById('oud-area').style.display='none';
     document.getElementById('snel-area').style.display='grid';
 
-    // Shuffle antwoorden
-    const idxs=[0,1,2,3];
-    for(let i=3;i>0;i--){const j=Math.floor(Math.random()*(i+1));[idxs[i],idxs[j]]=[idxs[j],idxs[i]];}
+    // Gebruik pre-computed shuffle voor deze vraag (éénmalig berekend bij quiz-start)
+    const idxs=ST.shuffleMaps[ST.idx]||[0,1,2,3];
     const correctPos=idxs.indexOf(q.c);
     ST.shuffleMap=idxs;
 
@@ -5851,6 +5929,7 @@ function kies(gekozen,correct){
   const tijdOver=Math.max(0,ST.tijd);
   ST.tijdPerVraag.push(tijdOver);
   ST.antwrd.push({pts:ok?1:0,chosenText:q.o[chosenOrigIdx],tijdOver});
+  saveQuizDraft();
   const btns=document.querySelectorAll('#snel-area .opt');
   btns.forEach((b,i)=>{
     b.disabled=true;
@@ -5870,6 +5949,7 @@ function tijdOp(){
   const q=ST.vragen[ST.idx];
   ST.tijdPerVraag.push(0);
   ST.antwrd.push({pts:0,chosenText:'⏱ Tijd was op',tijdOver:0});
+  saveQuizDraft();
   const correct=ST.shuffleMap.indexOf(q.c);
   const btns=document.querySelectorAll('#snel-area .opt');
   btns.forEach((b,i)=>{b.disabled=true;if(i===correct)b.classList.add('correct');else b.classList.add('wrong');});
@@ -5892,6 +5972,7 @@ function beoordeel(pts){
   ST.score+=pts;
   const userText=document.getElementById('oa-input').value||'(geen antwoord ingevuld)';
   ST.antwrd.push({pts,userText});
+  saveQuizDraft();
   document.querySelectorAll('.assess-btn').forEach(b=>b.disabled=true);
   const colors={1:'#4ADE80',0.5:'#FCD34D',0:'#F87171'};
   const labels={1:'✓ Goed genoteerd',0.5:'~ Deels goed genoteerd',0:'✗ Fout genoteerd'};
@@ -5915,6 +5996,7 @@ function stopQ(){clearInterval(ST.timer);show('sc-detail');}
 // ═══════ RESULTS ═══════
 function toonRes(){
   clearInterval(ST.timer);
+  clearQuizDraft();
   const tot=ST.vragen.length;
   const sc=Math.round(ST.score*10)/10;
   const pct=sc/tot;
@@ -6382,8 +6464,8 @@ function _renderLbWithData(){
   if(badge)badge.textContent=APP_LEVEL.toUpperCase()+' 2026 · '+VAKKEN_LABEL;
   const subtitleEl=document.getElementById('lb-subtitle');
   if(subtitleEl)subtitleEl.textContent=lbVakFilter==='all'
-    ?'Snelle quiz · Top 10 beste scores uit heel Nederland'
-    :`Snelle quiz · Top 10 ${VAKKEN_LABEL} uit heel Nederland`;
+    ?'Snelle quiz · Top 25 beste scores uit heel Nederland'
+    :`Snelle quiz · Top 25 ${VAKKEN_LABEL} uit heel Nederland`;
 
   // Filter entries (remove invalid scores above 1000)
   const valid=all.filter(e=>e.score<=1000);
@@ -6396,7 +6478,7 @@ function _renderLbWithData(){
     if(!bestMap[k]||e.score>bestMap[k].score)bestMap[k]=e;
   });
   const deduped=Object.values(bestMap).sort((a,b)=>b.score-a.score);
-  const top=deduped.slice(0,10);
+  const top=deduped.slice(0,25);
 
   // My best score in current filter (match on uid if available, else name)
   const myEntries=filtered.filter(e=>myUid?(e.uid===myUid):(myNaam&&e.naam===myNaam));
