@@ -390,20 +390,10 @@ html:not(.dark) .sb-pink{display:none}
 .sb-ring{position:absolute;height:42px;width:40px;overflow:hidden;top:7px;right:7px;border-radius:8px}
 .sb-ring::before{content:'';position:absolute;width:600px;height:600px;top:50%;left:50%;transform:translate(-50%,-50%) rotate(90deg);background:conic-gradient(rgba(0,0,0,0),color-mix(in srgb,var(--or) 40%,#1a1a2e),rgba(0,0,0,0) 50%,rgba(0,0,0,0) 50%,color-mix(in srgb,var(--or) 40%,#1a1a2e),rgba(0,0,0,0) 100%);filter:brightness(1.35);animation:sbSpin 3s linear infinite}
 @keyframes sbSpin{to{transform:translate(-50%,-50%) rotate(450deg)}}
-.sb-filter-btn{position:absolute;top:8px;right:8px;z-index:2;width:38px;height:40px;display:flex;align-items:center;justify-content:center;border-radius:8px;background:linear-gradient(to bottom,color-mix(in srgb,var(--or) 25%,#000),#000,color-mix(in srgb,var(--or) 20%,#000));border:none;cursor:pointer;transition:box-shadow .2s}
-.sb-filter-btn.fp-active{box-shadow:0 0 0 1.5px var(--or),0 0 8px rgba(var(--or-rgb),.4)}
-.sb-filter-btn.fp-active .sb-filter-icon path{stroke:var(--or)}
+.sb-filter-btn{position:absolute;top:8px;right:8px;z-index:2;width:38px;height:40px;display:flex;align-items:center;justify-content:center;border-radius:8px;background:linear-gradient(to bottom,color-mix(in srgb,var(--or) 25%,#000),#000,color-mix(in srgb,var(--or) 20%,#000));border:none;cursor:pointer}
 .sb-filter-btn .sb-clear-icon{display:none}
 .sb-poda.sb-has-text .sb-filter-btn .sb-filter-icon{display:none}
 .sb-poda.sb-has-text .sb-filter-btn .sb-clear-icon{display:flex}
-.filter-panel{overflow:hidden;max-height:0;opacity:0;pointer-events:none;transition:max-height .28s cubic-bezier(.4,0,.2,1),opacity .2s,padding .28s}
-.filter-panel.open{max-height:200px;opacity:1;padding:10px 2px 6px;pointer-events:auto}
-.fp-row{display:flex;align-items:center;gap:10px;margin-bottom:8px;flex-wrap:wrap}
-.fp-label{font-size:11px;font-weight:700;color:var(--mu);text-transform:uppercase;letter-spacing:.6px;min-width:64px;flex-shrink:0}
-.fp-chips{display:flex;gap:6px;flex-wrap:wrap}
-.fp-chip{background:rgba(255,255,255,.06);border:1px solid var(--bo);color:var(--tx2);font-size:12px;font-weight:500;padding:5px 13px;border-radius:20px;cursor:pointer;transition:all .15s;white-space:nowrap}
-.fp-chip:hover{background:rgba(var(--or-rgb),.12);border-color:rgba(var(--or-rgb),.35);color:var(--or)}
-.fp-chip.active{background:rgba(var(--or-rgb),.18);border-color:rgba(var(--or-rgb),.55);color:var(--or);font-weight:600}
 .sb-search-icon{position:absolute;left:16px;top:50%;transform:translateY(-50%);pointer-events:none;display:flex}
 .sb-noresult{text-align:center;padding:28px 0 4px;color:var(--mu);font-size:14px;display:none}
 .sb-noresult.show{display:block}
@@ -2371,7 +2361,7 @@ html.dark .hsd-pill{background:var(--bg2);border-color:var(--bo2)}
         <div class="sb-mask"></div>
         <div class="sb-pink"></div>
         <div class="sb-ring"></div>
-        <button class="sb-filter-btn" id="sb-filter-btn" onclick="filterBtnClick()" title="Filter / Wissen" tabindex="-1">
+        <button class="sb-filter-btn" onclick="clearGridSearch()" title="Wissen" tabindex="-1">
           <svg class="sb-filter-icon" preserveAspectRatio="none" height="22" width="22" viewBox="4.8 4.56 14.832 15.408" fill="none">
             <path d="M8.16 6.65002H15.83C16.47 6.65002 16.99 7.17002 16.99 7.81002V9.09002C16.99 9.56002 16.7 10.14 16.41 10.43L13.91 12.64C13.56 12.93 13.33 13.51 13.33 13.98V16.48C13.33 16.83 13.1 17.29 12.81 17.47L12 17.98C11.24 18.45 10.2 17.92 10.2 16.99V13.91C10.2 13.5 9.97 12.98 9.73 12.69L7.52 10.36C7.23 10.08 7 9.55002 7 9.20002V7.87002C7 7.17002 7.52 6.65002 8.16 6.65002Z" stroke="#d6d6e6" stroke-width="1" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
           </svg>
@@ -2389,24 +2379,6 @@ html.dark .hsd-pill{background:var(--bg2);border-color:var(--bo2)}
             </defs>
           </svg>
         </div>
-      </div>
-    </div>
-  </div>
-  <div id="filter-panel" class="filter-panel">
-    <div class="fp-row">
-      <span class="fp-label">Sorteren</span>
-      <div class="fp-chips">
-        <button class="fp-chip active" id="fp-naam" onclick="setSort('naam')">A–Z</button>
-        <button class="fp-chip" id="fp-progd" onclick="setSort('progd')">Voortgang ↓</button>
-        <button class="fp-chip" id="fp-proga" onclick="setSort('proga')">Voortgang ↑</button>
-        <button class="fp-chip" id="fp-cijfd" onclick="setSort('cijfd')">Cijfer ↓</button>
-      </div>
-    </div>
-    <div class="fp-row">
-      <span class="fp-label">Tonen</span>
-      <div class="fp-chips">
-        <button class="fp-chip active" id="fp-all" onclick="setFavFilter(false)">Alle vakken</button>
-        <button class="fp-chip" id="fp-fav" onclick="setFavFilter(true)">★ Favorieten</button>
       </div>
     </div>
   </div>
@@ -4924,42 +4896,6 @@ function lvlCol(col){return col+'_'+APP_LEVEL;}
   }
 })();
 
-let _activeSort='naam';
-let _favOnly=false;
-
-function filterBtnClick(){
-  const inp=document.getElementById('sb-input');
-  if(inp&&inp.value.length>0){clearGridSearch();}
-  else{toggleFilterPanel();}
-}
-function toggleFilterPanel(){
-  const panel=document.getElementById('filter-panel');
-  if(!panel)return;
-  panel.classList.toggle('open');
-}
-function setSort(s){
-  _activeSort=s;
-  document.querySelectorAll('#filter-panel .fp-chip').forEach(c=>{
-    if(['naam','progd','proga','cijfd'].includes(c.id.replace('fp-','')))c.classList.remove('active');
-  });
-  const el=document.getElementById('fp-'+s);
-  if(el)el.classList.add('active');
-  _updateFilterBtn();
-  buildGrid();
-}
-function setFavFilter(favOnly){
-  _favOnly=favOnly;
-  document.getElementById('fp-all').classList.toggle('active',!favOnly);
-  document.getElementById('fp-fav').classList.toggle('active',favOnly);
-  _updateFilterBtn();
-  buildGrid();
-}
-function _updateFilterBtn(){
-  const btn=document.getElementById('sb-filter-btn');
-  if(!btn)return;
-  const nonDefault=_activeSort!=='naam'||_favOnly;
-  btn.classList.toggle('fp-active',nonDefault);
-}
 function filterGrid(query){
   const poda=document.getElementById('sb-poda');
   if(poda)poda.classList.toggle('sb-has-text',query.length>0);
@@ -5027,21 +4963,7 @@ function buildGrid(){
   const nr=document.getElementById('sb-noresult');
   if(nr){nr.textContent='';nr.classList.remove('show');}
   const cijfers=getSavedCijfers();
-  const favs=getFavs();
-  let vakken=getVK();
-  // Favorites filter
-  if(_favOnly){
-    vakken=vakken.filter(v=>v.domeinen.some(d=>favs.includes(v.id+'_'+d.id)));
-  }
-  // Sort
-  if(_activeSort==='progd'){
-    vakken=[...vakken].sort((a,b)=>{const pa=getVakBestPct(a.id),pb=getVakBestPct(b.id);return (pb.hasData?pb.pct:- 1)-(pa.hasData?pa.pct:-1);});
-  }else if(_activeSort==='proga'){
-    vakken=[...vakken].sort((a,b)=>{const pa=getVakBestPct(a.id),pb=getVakBestPct(b.id);return (pa.hasData?pa.pct:-1)-(pb.hasData?pb.pct:-1);});
-  }else if(_activeSort==='cijfd'){
-    vakken=[...vakken].sort((a,b)=>{const ca=cijfers[a.id]??-1,cb=cijfers[b.id]??-1;return cb-ca;});
-  }
-  vakken.forEach(v=>{
+  getVK().forEach(v=>{
     const d=document.createElement('div');
     d.className='card';
     d.style.setProperty('--card-col',v.kleur);
