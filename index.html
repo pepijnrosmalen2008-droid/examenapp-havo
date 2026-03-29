@@ -1035,6 +1035,9 @@ html.dark .calc-btn{background:#2e3550}
 /* Floating XP particle */
 @keyframes floatUp{0%{opacity:1;transform:translateY(0) scale(1)}100%{opacity:0;transform:translateY(-70px) scale(1.2)}}
 .xp-float{position:fixed;pointer-events:none;z-index:9999;font-family:var(--font-head);font-size:16px;font-weight:900;color:#22c55e;text-shadow:0 2px 8px rgba(34,197,94,.5);transform:translateX(-50%);animation:floatUp .85s cubic-bezier(.22,1,.36,1) forwards}
+/* ── BUTTON RIPPLE ──────────────────────────────── */
+.btn-ripple{position:absolute;border-radius:50%;background:rgba(255,255,255,.28);pointer-events:none;transform:scale(0);animation:rippleGo .55s linear forwards}
+@keyframes rippleGo{to{transform:scale(3.5);opacity:0}}
 /* Wrong answer shake */
 @keyframes shakeIt{0%,100%{transform:translateX(0)}15%{transform:translateX(-8px)}35%{transform:translateX(8px)}55%{transform:translateX(-5px)}75%{transform:translateX(5px)}}
 .shake{animation:shakeIt .45s ease}
@@ -1795,8 +1798,33 @@ html.dark .auth-ok{background:#0F2D1C;border-color:#166534;color:#86EFAC}
 .prof-nav-btn .pnb-avatar{width:22px;height:22px;border-radius:50%;background:var(--or);color:#fff;font-size:11px;font-weight:800;display:flex;align-items:center;justify-content:center;flex-shrink:0}
 
 /* ── XP & GAMIFICATION ───────────────────────── */
-.combo-badge{position:fixed;top:76px;right:16px;background:linear-gradient(135deg,#f59e0b,#ef4444);color:#fff;border-radius:24px;padding:8px 18px;font-weight:800;font-size:15px;z-index:300;animation:comboIn .35s cubic-bezier(.34,1.5,.64,1);pointer-events:none;box-shadow:0 4px 20px rgba(239,68,68,.4)}
-@keyframes comboIn{from{transform:scale(.4) translateY(-20px);opacity:0}to{transform:scale(1) translateY(0);opacity:1}}
+.combo-badge{position:fixed;top:72px;right:14px;background:linear-gradient(135deg,#f59e0b,#ef4444);color:#fff;border-radius:24px;padding:9px 20px;font-weight:900;font-size:16px;z-index:9300;animation:comboIn .3s cubic-bezier(.34,1.6,.64,1);pointer-events:none;box-shadow:0 6px 28px rgba(239,68,68,.55),0 0 0 3px rgba(245,158,11,.3);letter-spacing:.2px}
+.combo-badge.combo-big{font-size:20px;padding:12px 24px;box-shadow:0 8px 36px rgba(239,68,68,.7),0 0 0 4px rgba(245,158,11,.4)}
+@keyframes comboIn{from{transform:scale(.2) translateY(-30px) rotate(-8deg);opacity:0}to{transform:scale(1) translateY(0) rotate(0deg);opacity:1}}
+/* Sound toggle knop in quiz-balk */
+.qtb-snd{background:none;border:none;cursor:pointer;font-size:18px;padding:6px;opacity:.55;transition:opacity .2s;border-radius:8px}
+.qtb-snd:hover{opacity:1;background:rgba(255,255,255,.1)}
+/* Level-up teaser in resultaten */
+.lvl-teaser{background:linear-gradient(135deg,rgba(var(--or-rgb),.1),rgba(var(--or-rgb),.04));border:1px solid rgba(var(--or-rgb),.25);border-radius:16px;padding:14px 18px;margin-top:14px;display:flex;align-items:center;gap:12px;text-align:left}
+.lvl-teaser-bar{flex:1}
+.lvl-teaser-lbl{font-size:12px;color:var(--mu);margin-bottom:5px;font-weight:600}
+.lvl-teaser-fill{height:8px;background:var(--bo2);border-radius:8px;overflow:hidden}
+.lvl-teaser-fill-inner{height:100%;background:linear-gradient(90deg,var(--or),#f59e0b);border-radius:8px;transition:width 1s cubic-bezier(.34,1.1,.64,1)}
+/* "Eén meer" suggestie-kaart */
+.one-more-card{background:var(--s);border:1.5px solid var(--bo);border-radius:18px;padding:18px;margin-top:16px;cursor:pointer;transition:all .2s;text-align:left}
+.one-more-card:hover{transform:translateY(-2px);border-color:var(--or);box-shadow:0 6px 22px rgba(var(--or-rgb),.15)}
+.one-more-tag{font-size:10px;font-weight:800;color:var(--or);text-transform:uppercase;letter-spacing:.8px;margin-bottom:6px}
+.one-more-title{font-family:var(--font-head);font-size:16px;font-weight:800;color:var(--dk);margin-bottom:4px}
+.one-more-sub{font-size:12px;color:var(--mu);margin-bottom:12px}
+.one-more-cta{display:inline-block;background:var(--or);color:#fff;border-radius:10px;padding:8px 18px;font-size:13px;font-weight:800;font-family:var(--font)}
+/* Quiz verlaat-overlay */
+.quit-overlay{position:fixed;inset:0;z-index:9600;background:rgba(0,0,0,.72);display:flex;align-items:center;justify-content:center;padding:24px;backdrop-filter:blur(5px)}
+.quit-card{background:var(--bg);border-radius:24px;padding:28px 24px;max-width:340px;width:100%;text-align:center;animation:comboIn .3s cubic-bezier(.34,1.2,.64,1)}
+.quit-progress-row{display:flex;gap:8px;justify-content:center;margin:14px 0}
+.quit-stat{background:var(--s);border:1px solid var(--bo);border-radius:12px;padding:10px 18px;min-width:80px}
+.quit-stat-val{font-size:22px;font-weight:900;color:var(--dk);font-family:var(--font-head)}
+.quit-stat-lbl{font-size:10px;color:var(--mu);font-weight:600;text-transform:uppercase;letter-spacing:.5px}
+.quit-combo-warn{background:rgba(239,68,68,.08);border:1px solid rgba(239,68,68,.25);border-radius:12px;padding:10px 14px;font-size:13px;color:#ef4444;font-weight:700;margin-bottom:16px}
 @keyframes xpShimmer{0%{left:-60%}100%{left:120%}}
 .xp-toast{position:fixed;top:76px;left:50%;transform:translateX(-50%);background:#22c55e;color:#fff;border-radius:20px;padding:7px 20px;font-weight:700;font-size:14px;z-index:300;animation:toastIn .3s ease,toastOut .4s ease 1s forwards;pointer-events:none;box-shadow:0 4px 16px rgba(34,197,94,.45)}
 @keyframes toastIn{from{opacity:0;transform:translateX(-50%) translateY(-10px)}to{opacity:1;transform:translateX(-50%) translateY(0)}}
@@ -2439,7 +2467,7 @@ html.dark .hsd-pill{background:var(--bg2);border-color:var(--bo2)}
 
 <!-- QUIZ -->
 <div id="sc-quiz" class="sc">
-<div class="qtb"><span class="ql">📚</span><span class="qmeta" id="qmeta"></span><button class="qstp" onclick="stopQ()">✕ Stop</button></div>
+<div class="qtb"><span class="ql">📚</span><span class="qmeta" id="qmeta"></span><button class="qtb-snd" id="quiz-snd-btn" onclick="toggleSound()" title="Geluid aan/uit">🔊</button><button class="qstp" onclick="stopQ()">✕ Stop</button></div>
 <div class="qpb"><div class="qpf" id="qprog"></div></div>
 <div class="quiz-skeleton" id="quiz-skeleton" style="display:none">
   <div class="skel sk-badge"></div>
@@ -2500,6 +2528,7 @@ html.dark .hsd-pill{background:var(--bg2);border-color:var(--bo2)}
       <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-XXXXXXXXXXXXXXXX" data-ad-slot="RESULTS_INLINE_SLOT" data-ad-format="auto" data-full-width-responsive="true"></ins>
     </div>
   </div>
+  <div id="one-more-wrap"></div>
   <div class="rbtns">
     <button class="btnp" onclick="retryQ()">🔄 Opnieuw</button>
     <button class="lb-res-btn" id="lb-res-btn" onclick="show('sc-leaderboard');renderLeaderboard()">🏆 Bekijk leaderboard</button>
@@ -6025,7 +6054,8 @@ function kies(gekozen,correct){
   clearInterval(ST.timer);
   const ok=gekozen===correct;
   ST.score+=ok?1:0;
-  if(ok){ST.combo=(ST.combo||0)+1;}else{ST.combo=0;}
+  if(ok){ST.combo=(ST.combo||0)+1;playSound('correct');haptic([20]);}
+  else{ST.combo=0;playSound('wrong');haptic([60,20,60]);}
   if(ok&&ST.mode==='snel'){
     const mult=getComboMult(ST.combo);
     const streakBonus=getStreakBonus();
@@ -6106,7 +6136,103 @@ function nextQ(){
   else toonV();
 }
 
-function stopQ(){clearInterval(ST.timer);show('sc-detail');}
+// ═══════ GELUID ═══════
+const SND_KEY='slagio_sound';
+let _soundOn=localStorage.getItem(SND_KEY)!=='0';
+function toggleSound(){
+  _soundOn=!_soundOn;
+  localStorage.setItem(SND_KEY,_soundOn?'1':'0');
+  const btn=document.getElementById('quiz-snd-btn');
+  if(btn)btn.textContent=_soundOn?'🔊':'🔇';
+  if(_soundOn)playSound('correct');
+}
+function playSound(type){
+  if(!_soundOn)return;
+  try{
+    const ctx=new(window.AudioContext||window.webkitAudioContext)();
+    const now=ctx.currentTime;
+    const FREQS={
+      correct:[[523,.0],[659,.08]],
+      wrong:[[180,.0]],
+      combo:[[523,.0],[659,.06],[784,.12]],
+      levelup:[[392,.0],[523,.1],[659,.2],[784,.3]],
+      streak:[[523,.0],[523,.1],[659,.2]]
+    };
+    const seqs=FREQS[type]||FREQS.correct;
+    seqs.forEach(([freq,delay])=>{
+      const o=ctx.createOscillator(),g=ctx.createGain();
+      o.connect(g);g.connect(ctx.destination);
+      o.type=type==='wrong'?'square':'sine';
+      o.frequency.value=freq;
+      const t=now+delay;
+      g.gain.setValueAtTime(0,t);
+      g.gain.linearRampToValueAtTime(type==='wrong'?.08:.14,t+.02);
+      g.gain.exponentialRampToValueAtTime(.001,t+(type==='wrong'?.18:.28));
+      o.start(t);o.stop(t+(type==='wrong'?.2:.32));
+    });
+  }catch(e){}
+}
+// Initieel geluid-knop instellen
+document.addEventListener('DOMContentLoaded',()=>{
+  const btn=document.getElementById('quiz-snd-btn');
+  if(btn)btn.textContent=_soundOn?'🔊':'🔇';
+});
+
+// ═══════ HAPTIC ═══════
+function haptic(pat){try{if(navigator.vibrate)navigator.vibrate(pat);}catch(e){}}
+
+// ═══════ BUTTON RIPPLE ═══════
+document.addEventListener('click',function(e){
+  const el=e.target.closest('button,.opt,.card,.daily-card,.qmcd,.hm-ql-btn');
+  if(!el||el.disabled)return;
+  // Zorg dat het element relatief gepositioneerd is voor ripple
+  const pos=getComputedStyle(el).position;
+  if(pos==='static')el.style.position='relative';
+  el.style.overflow='hidden';
+  const r=el.getBoundingClientRect();
+  const size=Math.max(r.width,r.height)*2;
+  const rip=document.createElement('span');
+  rip.className='btn-ripple';
+  rip.style.cssText=`width:${size}px;height:${size}px;left:${e.clientX-r.left-size/2}px;top:${e.clientY-r.top-size/2}px`;
+  el.appendChild(rip);
+  setTimeout(()=>rip.remove(),600);
+},{passive:true});
+
+// ═══════ QUIZ VERLATEN (exit interstitial) ═══════
+function stopQ(){
+  clearInterval(ST.timer);
+  // Toon bevestigingsdialoog alleen als quiz bezig is
+  if(ST.vragen&&ST.vragen.length>0&&ST.idx>0&&ST.idx<ST.vragen.length){
+    _showQuitDialog();
+  }else{
+    show('sc-detail');
+  }
+}
+function _showQuitDialog(){
+  const tot=ST.idx;const sc=ST.score;
+  const pct=tot>0?Math.round(sc/tot*100):0;
+  const combo=ST.combo||0;
+  const xpSoFar=ST.xpThisRound||0;
+  const overlay=document.createElement('div');
+  overlay.className='quit-overlay';
+  overlay.innerHTML=`<div class="quit-card">
+    <div style="font-size:36px;margin-bottom:8px">⚠️</div>
+    <h3 style="font-family:var(--font-head);font-size:20px;font-weight:900;color:var(--dk);margin-bottom:6px">Quiz stoppen?</h3>
+    <p style="font-size:13px;color:var(--mu);margin-bottom:14px;line-height:1.5">Je hebt ${tot} van de ${ST.vragen.length} vragen beantwoord.</p>
+    <div class="quit-progress-row">
+      <div class="quit-stat"><div class="quit-stat-val">${pct}%</div><div class="quit-stat-lbl">Score</div></div>
+      <div class="quit-stat"><div class="quit-stat-val">${tot}/${ST.vragen.length}</div><div class="quit-stat-lbl">Vragen</div></div>
+      ${xpSoFar>0?`<div class="quit-stat"><div class="quit-stat-val">+${xpSoFar}</div><div class="quit-stat-lbl">XP gewonnen</div></div>`:''}
+    </div>
+    ${combo>=2?`<div class="quit-combo-warn">🔥 Je verliest je ${combo}× combo als je stopt!</div>`:''}
+    <div style="display:flex;gap:10px">
+      <button onclick="this.closest('.quit-overlay').remove();show('sc-detail')" style="flex:1;padding:13px;background:var(--s);border:1px solid var(--bo);border-radius:12px;font-size:14px;font-weight:700;cursor:pointer;color:var(--mu);font-family:var(--font)">Stoppen</button>
+      <button onclick="this.closest('.quit-overlay').remove();if(ST.mode==='snel'&&ST.tijd>0)startTimer(ST.tijd)" style="flex:2;padding:13px;background:var(--or);border:none;border-radius:12px;font-size:15px;font-weight:900;cursor:pointer;color:#fff;font-family:var(--font)">Doorgaan 🔥</button>
+    </div>
+  </div>`;
+  document.body.appendChild(overlay);
+  haptic([30]);
+}
 
 // ═══════ RESULTS ═══════
 function toonRes(){
@@ -6207,8 +6333,19 @@ function toonRes(){
         ${isPerfect?`<div class="perfect-banner">🌟 Perfecte score! +50% XP bonus verdiend!</div>`:''}`;
       const rbdEl2=document.getElementById('rbd');
       if(rbdEl2)rbdEl2.insertAdjacentElement('afterend',card);
-      if(res.leveled)setTimeout(()=>launchConfetti(),300);
+      if(res.leveled){setTimeout(()=>launchConfetti(),300);setTimeout(()=>playSound('levelup'),400);haptic([50,30,80,30,120]);}
       setTimeout(()=>floatXP(res.added),150);
+      // Level teaser — als dichtbij volgend level
+      try{
+        const xpToNext=nxtXP-res.totalXP;
+        if(!res.leveled&&xpToNext<150){
+          const tPct=Math.round((res.totalXP-curXP)/(nxtXP-curXP)*100);
+          const tsr=document.createElement('div');tsr.className='lvl-teaser';
+          tsr.innerHTML=`<div style="font-size:22px">⭐</div><div class="lvl-teaser-bar"><div class="lvl-teaser-lbl">Nog <strong>${xpToNext} XP</strong> voor level ${res.newLvl+1} — ${LEVEL_NAMES[res.newLvl+1]||'Level '+(res.newLvl+1)}</div><div class="lvl-teaser-fill"><div class="lvl-teaser-fill-inner" style="width:0%" data-target="${tPct}"></div></div></div>`;
+          card.appendChild(tsr);
+          setTimeout(()=>{const fill=tsr.querySelector('.lvl-teaser-fill-inner');if(fill)fill.style.width=fill.dataset.target+'%';},200);
+        }
+      }catch(e){}
       syncAvatarToProfile();
       updateProfileNav();
       if(res.evolved){
@@ -6245,6 +6382,31 @@ function toonRes(){
       if(lbBtn)lbBtn.style.display='none';
     }
   }catch(e){console.warn('toonRes LB error:',e);}
+  // "Eén meer quiz" suggestie
+  try{
+    const omBox=document.getElementById('one-more-wrap');
+    if(omBox&&ST.mode==='snel'&&ST.vak){
+      const domeinen=ST.vak.domeinen||[];
+      const score=ST.score/ST.vragen.length;
+      // Als score <80%: opnieuw hetzelfde domein, anders: volgend domein
+      let sugDomein=null,sugLabel='';
+      if(score<0.8){
+        sugDomein=ST.domein;sugLabel='📖 Herhalen';
+      }else{
+        const cur=domeinen.findIndex(d=>d.id===ST.domein.id);
+        const nxt=domeinen.slice(cur+1).find(d=>d.sv&&d.sv.length);
+        if(nxt){sugDomein=nxt;sugLabel='➡️ Volgende domein';}
+      }
+      if(sugDomein){
+        omBox.innerHTML=`<div class="one-more-card" onclick="ST.vak=ST.vak;ST.domein=ST.vak.domeinen.find(d=>d.id==='${sugDomein.id}');startQ('snel')">
+          <div class="one-more-tag">${sugLabel}</div>
+          <div class="one-more-title">${sugDomein.naam}</div>
+          <div class="one-more-sub">${ST.vak.naam} · Snelle Quiz · ${sugDomein.sv?sugDomein.sv.length:0} vragen</div>
+          <div class="one-more-cta">Starten →</div>
+        </div>`;
+      }else{omBox.innerHTML='';}
+    }
+  }catch(e){if(document.getElementById('one-more-wrap'))document.getElementById('one-more-wrap').innerHTML='';}
   show('sc-res');
 }
 
@@ -7166,12 +7328,16 @@ function getStreakBonus(){const s=calcStreak();return Math.min((s.current||0)*0.
 function showCombo(combo){
   document.querySelectorAll('.combo-badge').forEach(e=>e.remove());
   if(combo<2)return;
-  const el=document.createElement('div');
-  el.className='combo-badge';
   const mult=getComboMult(combo);
-  el.textContent=`🔥 ${combo}× combo! ×${mult}`;
+  const el=document.createElement('div');
+  el.className='combo-badge'+(combo>=5?' combo-big':'');
+  const labels={2:'Goed zo!',3:'Super!',4:'Onstoppbaar!',5:'GOD MODE!'};
+  const lbl=labels[Math.min(combo,5)]||'Onstoppbaar!';
+  el.innerHTML=`🔥 <strong>${combo}×</strong> — ${lbl} <span style="opacity:.7;font-size:.75em">×${mult} XP</span>`;
   document.body.appendChild(el);
-  setTimeout(()=>el.remove(),1600);
+  haptic(combo>=5?[50,30,50,30,100]:combo>=3?[40,20,60]:[25]);
+  playSound(combo>=3?'combo':'correct');
+  setTimeout(()=>el.remove(),2000);
 }
 function showXPToast(xp){
   document.querySelectorAll('.xp-toast').forEach(e=>e.remove());
