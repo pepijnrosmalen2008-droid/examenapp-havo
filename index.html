@@ -6073,7 +6073,12 @@ function startQ(mode){
   ST.idx=0;ST.score=0;ST.antwrd=[];ST.tijdPerVraag=[];ST.combo=0;ST.xpThisRound=0;
   if(!ST.isDailyChallenge)ST.isDailyChallenge=false;
   const pool=mode==='snel'?ST.domein.sv:ST.domein.oe;
-  ST.vragen=pool.slice();
+  if(mode==='snel'){
+    const shuffled=[...pool].sort(()=>Math.random()-.5);
+    ST.vragen=shuffled.slice(0,5);
+  }else{
+    ST.vragen=pool.slice();
+  }
   // Pre-compute shuffle maps voor alle vragen in één keer (niet per vraag)
   if(mode==='snel'){
     ST.shuffleMaps=ST.vragen.map(()=>{
