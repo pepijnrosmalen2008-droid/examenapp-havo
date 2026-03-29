@@ -1822,6 +1822,25 @@ html.dark .auth-ok{background:#0F2D1C;border-color:#166534;color:#86EFAC}
 .daily-chip{display:inline-flex;align-items:center;gap:8px;background:linear-gradient(135deg,#f59e0b,#ef4444);color:#fff;border-radius:20px;padding:10px 20px;font-size:13px;font-weight:700;cursor:pointer;width:100%;justify-content:center;border:none;font-family:var(--font);box-shadow:0 4px 18px rgba(239,68,68,.3);transition:transform .2s,box-shadow .2s}
 .daily-chip:hover{transform:translateY(-2px);box-shadow:0 6px 24px rgba(239,68,68,.4)}
 .daily-done{display:inline-flex;align-items:center;gap:8px;background:var(--s);color:var(--mu);border-radius:20px;padding:10px 20px;font-size:13px;font-weight:600;width:100%;justify-content:center;border:1px solid var(--bo)}
+/* Daily challenge card (upgrade van button) */
+.daily-card{background:linear-gradient(135deg,rgba(245,158,11,.12),rgba(239,68,68,.08));border:1px solid rgba(245,158,11,.3);border-radius:18px;padding:16px 18px;cursor:pointer;transition:all .2s;position:relative;overflow:hidden}
+.daily-card::before{content:'';position:absolute;inset:0;background:linear-gradient(135deg,rgba(245,158,11,.06),transparent);pointer-events:none}
+.daily-card:hover{transform:translateY(-2px);box-shadow:0 8px 28px rgba(245,158,11,.2);border-color:rgba(245,158,11,.5)}
+.daily-card-top{display:flex;align-items:center;justify-content:space-between;margin-bottom:10px}
+.daily-card-badge{background:linear-gradient(135deg,#f59e0b,#ef4444);color:#fff;border-radius:20px;padding:4px 12px;font-size:11px;font-weight:800;letter-spacing:.4px;display:flex;align-items:center;gap:5px}
+.daily-card-timer{font-size:11px;color:rgba(255,255,255,.45);font-weight:600}
+.daily-card-body{margin-bottom:14px}
+.daily-card-title{font-family:var(--font-head);font-size:18px;font-weight:800;color:#fff;margin-bottom:4px}
+.daily-card-sub{font-size:13px;color:rgba(255,255,255,.55);line-height:1.4}
+.daily-card-foot{display:flex;align-items:center;justify-content:space-between}
+.daily-card-cta{background:linear-gradient(135deg,#f59e0b,#ef4444);color:#fff;border-radius:12px;padding:10px 20px;font-size:14px;font-weight:800;font-family:var(--font);border:none;cursor:pointer;box-shadow:0 3px 14px rgba(239,68,68,.35);transition:all .2s}
+.daily-card-cta:hover{box-shadow:0 6px 20px rgba(239,68,68,.5)}
+.daily-card-xp{font-size:13px;color:#f59e0b;font-weight:700}
+.daily-card-done{background:rgba(74,222,128,.07);border:1px solid rgba(74,222,128,.2);border-radius:18px;padding:14px 18px;display:flex;align-items:center;gap:12px}
+.daily-card-done-icon{font-size:26px}
+.daily-card-done-info{flex:1}
+.daily-card-done-title{font-size:14px;font-weight:700;color:#4ADE80;margin-bottom:2px}
+.daily-card-done-sub{font-size:12px;color:rgba(255,255,255,.45)}
 /* ── ENGAGEMENT HOOKS ────────────────────────── */
 /* Floating +XP pop */
 .xp-float{font-size:22px;font-weight:800;color:#f59e0b;text-shadow:0 2px 10px rgba(0,0,0,.25);pointer-events:none;user-select:none;font-family:var(--font-head);position:fixed;z-index:9999;white-space:nowrap}
@@ -1857,6 +1876,11 @@ html.dark .hsd-pill{background:var(--bg2);border-color:var(--bo2)}
 .hsd-avg .hsd-val{color:#22c55e}
 .hsd-avg-warn .hsd-val{color:#ef4444}
 @media(max-width:400px){.hsd-pill{padding:11px 10px;gap:8px}.hsd-val{font-size:15px}.hsd-icon{font-size:20px}}
+.hsd-empty{display:flex;align-items:center;gap:14px;background:var(--s);border:1.5px dashed var(--bo);border-radius:16px;padding:16px 18px;margin:0 16px 8px;cursor:pointer;transition:border-color .2s}
+.hsd-empty:hover{border-color:var(--or)}
+.hsd-empty-icon{font-size:28px;flex-shrink:0}
+.hsd-empty-text{font-size:13px;color:var(--mu);flex:1;line-height:1.4}
+.hsd-empty-cta{font-size:12px;font-weight:700;color:var(--or);white-space:nowrap;flex-shrink:0}
 .xp-home-bar{position:relative;background:var(--s);border:1.5px solid transparent;border-radius:22px;padding:20px 20px 16px;margin-bottom:16px;overflow:hidden;background-clip:padding-box}
 .xp-home-bar::before{content:'';position:absolute;inset:0;border-radius:22px;padding:1.5px;background:linear-gradient(135deg,var(--or),#f59e0b,rgba(var(--or-rgb),.15));-webkit-mask:linear-gradient(#fff 0 0) content-box,linear-gradient(#fff 0 0);-webkit-mask-composite:xor;mask-composite:exclude;pointer-events:none}
 .xp-home-bar::after{content:'';position:absolute;top:-40px;right:-40px;width:200px;height:200px;background:radial-gradient(circle,rgba(var(--or-rgb),.1) 0%,transparent 65%);pointer-events:none}
@@ -7209,8 +7233,15 @@ function renderHomeStats(){
   const cijfers=getSavedCijfers();
   const vals=Object.values(cijfers).filter(v=>typeof v==='number'&&v>0);
   const avg=vals.length?vals.reduce((a,b)=>a+b,0)/vals.length:null;
-  // Only render if there is actual data to show
-  if(!xp&&!streak&&avg===null){box.innerHTML='';return;}
+  // Geen data → toon motiverende lege staat
+  if(!xp&&!streak&&avg===null){
+    box.innerHTML=`<div class="hsd-empty" onclick="document.getElementById('vakgrid')?.scrollIntoView({behavior:'smooth'})">
+      <div class="hsd-empty-icon">🚀</div>
+      <div class="hsd-empty-text">Maak je eerste quiz om je streak, XP en gemiddelde te zien</div>
+      <div class="hsd-empty-cta">Begin →</div>
+    </div>`;
+    return;
+  }
   const todayStr=new Date().toISOString().slice(0,10);
   const s=getStreak();
   const practicedToday=s.days&&s.days.includes(todayStr);
@@ -7335,11 +7366,37 @@ function renderDailyChallenge(){
   if(!box)return;
   _dcCache=getDailyChallenge();
   if(!_dcCache){box.innerHTML='';return;}
+  // Bereken hoeveel uur/minuten er nog zijn tot middernacht
+  const now=new Date();
+  const midnight=new Date(now);midnight.setHours(23,59,59,999);
+  const msLeft=midnight-now;
+  const hLeft=Math.floor(msLeft/3600000);
+  const mLeft=Math.floor((msLeft%3600000)/60000);
+  const timerStr=hLeft>0?`${hLeft}u ${mLeft}m over`:`${mLeft}m over`;
   if(_dcCache.done){
-    box.innerHTML=`<div class="daily-done">✅ Dagelijkse uitdaging voltooid — +2× XP verdiend!</div>`;
+    box.innerHTML=`<div class="daily-card-done">
+      <div class="daily-card-done-icon">✅</div>
+      <div class="daily-card-done-info">
+        <div class="daily-card-done-title">Dagelijkse uitdaging voltooid!</div>
+        <div class="daily-card-done-sub">${_dcCache.vakNaam} · ${_dcCache.domeinNaam} · +2× XP verdiend</div>
+      </div>
+    </div>`;
     return;
   }
-  box.innerHTML=`<button class="daily-chip pulse-chip" onclick="startDailyChallenge()">⚡ Dagelijkse uitdaging · ${_dcCache.vakNaam}: ${_dcCache.domeinNaam} · 2× XP</button>`;
+  box.innerHTML=`<div class="daily-card pulse-chip" onclick="startDailyChallenge()">
+    <div class="daily-card-top">
+      <div class="daily-card-badge">⚡ Dagelijkse uitdaging</div>
+      <div class="daily-card-timer">🕐 ${timerStr}</div>
+    </div>
+    <div class="daily-card-body">
+      <div class="daily-card-title">${_dcCache.domeinNaam}</div>
+      <div class="daily-card-sub">${_dcCache.vakNaam} · Snelle Quiz · 15 sec per vraag</div>
+    </div>
+    <div class="daily-card-foot">
+      <div class="daily-card-xp">🔥 +2× XP bonus op elke vraag</div>
+      <button class="daily-card-cta" onclick="event.stopPropagation();startDailyChallenge()">Starten →</button>
+    </div>
+  </div>`;
 }
 function startDailyChallenge(){
   try{
@@ -7414,7 +7471,19 @@ function startStreakQuiz(){
 function renderStreak(){
   const box=document.getElementById('streak-home');
   const info=calcStreak();
-  if(info.total===0){box.innerHTML='';return;}
+  if(info.total===0){
+    // Toon motiverende streak-start kaart voor nieuwe gebruikers
+    box.innerHTML=`<div class="streak-card" style="opacity:.7">
+      <div class="streak-top">
+        <div class="streak-headline">📚 Bouw je streak op!</div>
+        <div class="streak-tagline">Oefen elke dag en verdien badges — begin vandaag.</div>
+      </div>
+      <div style="display:flex;gap:8px;margin-top:12px">
+        ${['zo','ma','di','wo','do','vr','za'].map(d=>`<div style="flex:1;text-align:center"><div style="height:22px;border-radius:6px;background:var(--bo2);margin-bottom:4px"></div><div style="font-size:10px;color:var(--mu)">${d}</div></div>`).join('')}
+      </div>
+    </div>`;
+    return;
+  }
   // 7-day grid
   const dayLabels=['zo','ma','di','wo','do','vr','za'];
   let weekHtml='';
@@ -8461,6 +8530,17 @@ function updateBottomNav(id){
   const hideScreens=['sc-quiz','sc-flash','sc-qmode','sc-welcome'];
   const bn=document.getElementById('bottom-nav');
   if(bn) bn.style.display=hideScreens.includes(id)?'none':'';
+  // Avatar in de profiel-knop van de bottom nav
+  const bnavIcon=document.getElementById('bnav-profiel-icon');
+  if(bnavIcon&&currentUser){
+    try{
+      const _p=JSON.parse(localStorage.getItem(PROF_KEY)||'{}');
+      if(_p.animalId){
+        const _si=getAnimalStageIdx(getTotalXP());
+        bnavIcon.innerHTML=`<span style="display:flex;align-items:center;justify-content:center;width:26px;height:26px;border-radius:50%;background:rgba(var(--or-rgb),.15);border:1.5px solid rgba(var(--or-rgb),.3)">${getAnimalDisplay(_p.animalId,_si,18)}</span>`;
+      }
+    }catch(e){}
+  }
 }
 // Patch show() to update bottom nav
 const _origShow=show;
@@ -8483,7 +8563,7 @@ window.show=function(id){_origShow(id);updateBottomNav(id);};
       <span class="bnav-icon"><svg viewBox="0 0 24 24"><path d="M8 21h8M12 17v4M17 3H7l-1 7h10l-1-7z"/><path d="M5 10c0 3.9 3.1 7 7 7s7-3.1 7-7"/></svg></span>Top
     </button>
     <button class="bnav-btn" data-screen="sc-profiel" id="bnav-profiel-btn" onclick="openProfiel()">
-      <span class="bnav-icon"><svg viewBox="0 0 24 24"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg></span><span id="bnav-profiel-label">Profiel</span>
+      <span class="bnav-icon" id="bnav-profiel-icon"><svg viewBox="0 0 24 24"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg></span><span id="bnav-profiel-label">Profiel</span>
     </button>
   </div>
 </nav>
