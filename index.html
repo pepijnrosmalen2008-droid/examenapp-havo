@@ -1047,6 +1047,17 @@ html.dark .calc-btn{background:#2e3550}
 /* ── LUCKY FLASH ────────────────────────────────── */
 @keyframes luckyPulse{0%{opacity:.6}100%{opacity:0}}
 .lucky-flash{position:fixed;inset:0;background:radial-gradient(ellipse at center,rgba(245,158,11,.4),transparent 65%);pointer-events:none;z-index:9200;animation:luckyPulse .7s cubic-bezier(.22,1,.36,1) forwards}
+/* ── ANSWER SUSPENSE ────────────────────────────── */
+@keyframes suspensePulse{0%,100%{box-shadow:0 0 0 3px rgba(255,255,255,.22),0 0 0 0 rgba(255,255,255,0)}50%{box-shadow:0 0 0 5px rgba(255,255,255,.5),0 0 22px rgba(255,255,255,.18)}}
+.opt.suspense-pending{animation:suspensePulse .32s ease infinite!important;pointer-events:none;transform:scale(1.015)!important;transition:transform .1s}
+/* ── XP SURGE BADGE ─────────────────────────────── */
+@keyframes surgeIn{0%{transform:translateX(-50%) scale(.55) translateY(-8px);opacity:0}65%{transform:translateX(-50%) scale(1.1) translateY(0);opacity:1}100%{transform:translateX(-50%) scale(1) translateY(0);opacity:1}}
+.surge-badge{position:fixed;top:58px;left:50%;transform:translateX(-50%);background:linear-gradient(135deg,#f59e0b,#ef4444);color:#fff;border-radius:28px;padding:8px 20px;font-weight:900;font-size:13px;z-index:9350;box-shadow:0 4px 24px rgba(245,158,11,.65),0 0 0 2px rgba(245,158,11,.3);pointer-events:none;display:flex;align-items:center;gap:8px;animation:surgeIn .38s cubic-bezier(.34,1.3,.64,1);letter-spacing:.2px}
+.surge-count{background:rgba(255,255,255,.25);border-radius:20px;padding:2px 9px;font-size:15px;font-weight:900}
+/* ── DECAY DOT ──────────────────────────────────── */
+.decay-dot{display:inline-block;width:9px;height:9px;border-radius:50%;flex-shrink:0;vertical-align:middle;margin-left:4px;box-shadow:0 0 6px currentColor}
+/* ── RECORD BANNER ──────────────────────────────── */
+.record-banner{background:linear-gradient(135deg,#22c55e,#16a34a);color:#fff;border-radius:14px;padding:14px 18px;margin-top:14px;text-align:center;font-family:var(--font-head);font-weight:800;font-size:15px;animation:comboIn .5s cubic-bezier(.34,1.2,.64,1);box-shadow:0 4px 20px rgba(34,197,94,.4)}
 /* ── COMEBACK TOAST ─────────────────────────────── */
 .comeback-toast{position:fixed;top:80px;left:50%;transform:translateX(-50%);background:linear-gradient(135deg,#8b5cf6,#6366f1);color:#fff;border-radius:24px;padding:9px 24px;font-weight:900;font-size:14px;z-index:9300;animation:toastIn .28s ease,toastOut .35s ease 1.5s forwards;pointer-events:none;box-shadow:0 4px 20px rgba(139,92,246,.55)}
 /* ── ACHIEVEMENT TOAST ──────────────────────────── */
@@ -5735,14 +5746,17 @@ function openVak(id){
   dl.innerHTML='';
   ST.vak.domeinen.forEach(d=>{
     const r=getDomeinBestPct(ST.vak.id,d.id);
-    const progHtml=r.hasData?`<div class="dom-progress"><div class="dp-bar"><div class="dp-fill" style="width:${Math.round(r.pct*100)}%"></div></div><span class="dp-txt">${Math.round(r.pct*100)}%</span></div>`:'';
+    const decay=getDecayStatus(ST.vak.id,d.id);
+    const decayDot=decay?`<span class="decay-dot" style="background:${decay.color};color:${decay.color}" title="${decay.label}"></span>`:'';
+    const bestChip=r.hasData?`<span style="font-size:11px;color:var(--mu);font-weight:600;margin-left:4px">Record: ${Math.round(r.pct*100)}%</span>`:'';
+    const progHtml=r.hasData?`<div class="dom-progress"><div class="dp-bar"><div class="dp-fill" style="width:${Math.round(r.pct*100)}%"></div></div><span class="dp-txt">${Math.round(r.pct*100)}%${bestChip}</span></div>`:'';
     const el=document.createElement('div');
     el.className='dc2';
     el.dataset.domeinId=d.id;
     el.innerHTML=`
       <div class="dh" onclick="toggleD('top-${d.id}')">
         <div class="dlet" style="background:${ST.vak.kleur}22;color:${ST.vak.kleur}">${d.id}</div>
-        <div class="di"><h4>Domein ${d.id}: ${d.naam}</h4><p>${d.beschrijving}</p>${progHtml}</div>
+        <div class="di"><h4>Domein ${d.id}: ${d.naam}${decayDot}</h4><p>${d.beschrijving}</p>${progHtml}</div>
         <div class="dbtns">
           <button class="fav-btn${isFav(ST.vak.id,d.id)?' active':''}" id="fav-${d.id}" onclick="event.stopPropagation();const on=toggleFav('${ST.vak.id}','${d.id}');this.classList.toggle('active',on)">⭐</button>
           <button class="exb" id="exb-${d.id}" onclick="event.stopPropagation();toggleD('top-${d.id}')">▼ Leerstof</button>
@@ -6007,6 +6021,8 @@ function toonV(){
     startTimer(15);
     // Lucky bonus kans per vraag
     maybeGiveLucky();
+    // XP Surge kans (1/5, duurt 3 vragen)
+    maybeSurge();
     // Toon keyboard-hint alleen op desktop
     const kbHint=document.getElementById('quiz-kb-hint');
     if(kbHint)kbHint.style.display=(navigator.maxTouchPoints===0)?'block':'none';
@@ -6077,13 +6093,21 @@ function startTimer(max){
 
 function kies(gekozen,correct){
   clearInterval(ST.timer);
+  // Immediately disable all buttons + show suspense shimmer on selected
+  const btns=document.querySelectorAll('#snel-area .opt');
+  btns.forEach(b=>b.disabled=true);
+  btns[gekozen].classList.add('suspense-pending');
+  // 350ms suspense delay — dopamine peak occurs in the gap between action and result
+  setTimeout(()=>_kiesReveal(gekozen,correct,btns),350);
+}
+function _kiesReveal(gekozen,correct,btns){
+  btns[gekozen].classList.remove('suspense-pending');
   const ok=gekozen===correct;
   ST.score+=ok?1:0;
   if(ok){ST.combo=(ST.combo||0)+1;playSound('correct');haptic([20]);}
   else{ST.combo=0;playSound('wrong');haptic([60,20,60]);}
   // Particles van de geklikte knop
-  const _btns=document.querySelectorAll('#snel-area .opt');
-  spawnParticles(_btns[gekozen],ok);
+  spawnParticles(btns[gekozen],ok);
   // Hot streak glow
   setHotStreak(ST.combo);
   // Comeback detectie
@@ -6096,13 +6120,16 @@ function kies(gekozen,correct){
     const mult=getComboMult(ST.combo);
     const streakBonus=getStreakBonus();
     const dcBonus=ST.isDailyChallenge?2:1;
-    const earned=Math.round(10*mult*(1+streakBonus)*dcBonus);
+    const surgeBonus=_surgeActive?2:1;
+    const earned=Math.round(10*mult*(1+streakBonus)*dcBonus*surgeBonus);
     ST.xpThisRound=(ST.xpThisRound||0)+earned;
     showCombo(ST.combo);
     setTimeout(()=>{showXPToast(earned);floatXP(earned);},200);
+    // Verlaag surge teller na correcte vraag
+    if(_surgeActive){_surgeLeft--;if(_surgeLeft<=0){_surgeActive=false;_removeSurgeBadge();}else{_updateSurgeBadge();}}
   }
   if(!ok){
-    const qa=document.getElementById('quiz-area')||document.getElementById('snel-area');
+    const qa=document.getElementById('snel-area');
     if(qa){qa.classList.remove('shake');void qa.offsetWidth;qa.classList.add('shake');}
   }
   const q=ST.vragen[ST.idx];
@@ -6111,9 +6138,7 @@ function kies(gekozen,correct){
   ST.tijdPerVraag.push(tijdOver);
   ST.antwrd.push({pts:ok?1:0,chosenText:q.o[chosenOrigIdx],tijdOver});
   saveQuizDraft();
-  const btns=document.querySelectorAll('#snel-area .opt');
   btns.forEach((b,i)=>{
-    b.disabled=true;
     if(i===correct)b.classList.add('correct');
     else b.classList.add('wrong');
   });
@@ -6234,6 +6259,34 @@ function maybeGiveLucky(){
   haptic([20,10,20,10,40]);
 }
 
+// ═══════ XP SURGE ═══════
+let _surgeActive=false,_surgeLeft=0;
+function maybeSurge(){
+  if(_surgeActive)return;
+  if(Math.random()<(1/5)){
+    _surgeActive=true;_surgeLeft=3;
+    _showSurgeBadge();
+    showToast('🔥 XP SURGE! Volgende 3 vragen ×2 XP!','#f59e0b',2500);
+    haptic([25,10,45,10,25]);
+    playSound('combo');
+  }
+}
+function _showSurgeBadge(){
+  _removeSurgeBadge();
+  const el=document.createElement('div');
+  el.id='surge-badge-el';el.className='surge-badge';
+  el.innerHTML=`🔥 SURGE <span class="surge-count" id="surge-count">${_surgeLeft}</span> ×2 XP`;
+  document.body.appendChild(el);
+}
+function _updateSurgeBadge(){
+  const cnt=document.getElementById('surge-count');
+  if(cnt)cnt.textContent=_surgeLeft;
+}
+function _removeSurgeBadge(){
+  const old=document.getElementById('surge-badge-el');
+  if(old)old.remove();
+}
+
 // ═══════ COMEBACK ═══════
 let _wrongStreak=0;
 function checkComeback(ok){
@@ -6348,6 +6401,7 @@ function stopQ(){
   if(ST.vragen&&ST.vragen.length>0&&ST.idx>0&&ST.idx<ST.vragen.length){
     _showQuitDialog();
   }else{
+    _surgeActive=false;_surgeLeft=0;_removeSurgeBadge();
     show('sc-detail');
   }
 }
@@ -6369,7 +6423,7 @@ function _showQuitDialog(){
     </div>
     ${combo>=2?`<div class="quit-combo-warn">🔥 Je verliest je ${combo}× combo als je stopt!</div>`:''}
     <div style="display:flex;gap:10px">
-      <button onclick="this.closest('.quit-overlay').remove();show('sc-detail')" style="flex:1;padding:13px;background:var(--s);border:1px solid var(--bo);border-radius:12px;font-size:14px;font-weight:700;cursor:pointer;color:var(--mu);font-family:var(--font)">Stoppen</button>
+      <button onclick="this.closest('.quit-overlay').remove();_surgeActive=false;_surgeLeft=0;_removeSurgeBadge();show('sc-detail')" style="flex:1;padding:13px;background:var(--s);border:1px solid var(--bo);border-radius:12px;font-size:14px;font-weight:700;cursor:pointer;color:var(--mu);font-family:var(--font)">Stoppen</button>
       <button onclick="this.closest('.quit-overlay').remove();if(ST.mode==='snel'&&ST.tijd>0)startTimer(ST.tijd)" style="flex:2;padding:13px;background:var(--or);border:none;border-radius:12px;font-size:15px;font-weight:900;cursor:pointer;color:#fff;font-family:var(--font)">Doorgaan 🔥</button>
     </div>
   </div>`;
@@ -6383,11 +6437,13 @@ function toonRes(){
   clearQuizDraft();
   setHotStreak(0);
   _wrongStreak=0;_luckyActive=false;
+  _surgeActive=false;_surgeLeft=0;_removeSurgeBadge();
   const tot=ST.vragen.length;
   const sc=Math.round(ST.score*10)/10;
   const pct=sc/tot;
   // Save progress & streak
-  try{saveProgress(ST.vak.id,ST.domein.id,ST.mode,sc,tot);}catch(e){}
+  let _recordResult=null;
+  try{_recordResult=saveProgress(ST.vak.id,ST.domein.id,ST.mode,sc,tot);}catch(e){}
   try{recordPractice();}catch(e){}
   // Rebuild grid and streak to update UI
   try{const g=document.getElementById('vakgrid');if(g){g.innerHTML='';buildGrid();}
@@ -6436,6 +6492,17 @@ function toonRes(){
       nm.className='nearmiss-nudge';
       nm.innerHTML=`<span>Bijna! Nog maar ${missedCount} ${missedCount===1?'fout':'fouten'}...</span><button onclick="retryQ()">Doe het opnieuw →</button>`;
       rbdEl.insertAdjacentElement('afterend',nm);
+    }
+    // Persoonlijk record banner
+    if(rbdEl&&_recordResult&&_recordResult.isNewRecord&&sc>0){
+      const prevPct=_recordResult.prevBest>0?Math.round(_recordResult.prevBest/_recordResult.total*100):null;
+      const newPct=Math.round(sc/tot*100);
+      const rec=document.createElement('div');
+      rec.className='record-banner';
+      rec.innerHTML=`🏆 Nieuw persoonlijk record! ${prevPct!==null?prevPct+'% → ':''}<strong>${newPct}%</strong>`;
+      rbdEl.insertAdjacentElement('afterend',rec);
+      setTimeout(()=>{playSound('levelup');haptic([40,20,80,20,120]);},300);
+      if(earnAch('record1'))setTimeout(()=>showAch('🏆','Je eerste persoonlijk record!'),600);
     }
   }catch(e){console.warn('toonRes display error:',e);}
   // XP reward
@@ -7068,11 +7135,34 @@ function getProgress(){
 function saveProgress(vakId,domeinId,mode,score,total){
   const p=getProgress();
   const key=`${vakId}_${domeinId}_${mode}`;
+  const prevBest=p[key]?p[key].best:0;
   if(!p[key])p[key]={best:0,total:total,attempts:0};
   p[key].attempts++;
+  const isNewRecord=score>prevBest&&score>0;
   if(score>p[key].best)p[key].best=score;
   p[key].total=total;
   cloudSet(lvlCol('progress'),p);
+  // Sla oefentijdstip op voor knowledge decay indicator
+  try{setDecayNow(vakId,domeinId);}catch(e){}
+  return{isNewRecord,prevBest,newBest:p[key].best,total};
+}
+// ═══════ KNOWLEDGE DECAY ═══════
+const DECAY_KEY='slagio_decay_v1';
+function getDecay(){try{return JSON.parse(localStorage.getItem(DECAY_KEY)||'{}');}catch(e){return{};}}
+function setDecayNow(vakId,domeinId){
+  const d=getDecay();
+  d[`${vakId}_${domeinId}`]=Date.now();
+  localStorage.setItem(DECAY_KEY,JSON.stringify(d));
+}
+function getDecayStatus(vakId,domeinId){
+  const d=getDecay();
+  const ts=d[`${vakId}_${domeinId}`];
+  if(!ts)return null;
+  const days=(Date.now()-ts)/(1000*60*60*24);
+  if(days<1)return{color:'#22c55e',label:'Vandaag geoefend'};
+  if(days<7)return{color:'#facc15',label:`${Math.floor(days)}d geleden`};
+  if(days<21)return{color:'#f97316',label:`${Math.floor(days)}d geleden`};
+  return{color:'#ef4444',label:`${Math.floor(days)} dagen geleden — herhalen!`};
 }
 function getVakProgress(vakId){
   const p=getProgress();
