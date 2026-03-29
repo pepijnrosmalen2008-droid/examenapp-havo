@@ -739,7 +739,10 @@ html.dark .qb{background:#2e3550}
 .review-wrap{padding:32px 24px;max-width:660px;margin:0 auto}
 .review-wrap h2{font-family:var(--font-head);color:#fff;font-size:26px;margin-bottom:6px}
 .review-sub{color:rgba(255,255,255,.4);font-size:14px;margin-bottom:24px}
-.review-card{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.1);border-radius:16px;padding:20px;margin-bottom:14px}
+.review-card{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.1);border-radius:16px;padding:20px;margin-bottom:14px;border-left-width:3px}
+.rc-ok-card{border-left-color:#4ADE80}
+.rc-half-card{border-left-color:#FCD34D}
+.rc-wrong-card{border-left-color:#F87171}
 .rc-head{display:flex;align-items:center;gap:10px;margin-bottom:10px}
 .rc-num{background:rgba(255,255,255,.1);border-radius:8px;padding:3px 10px;font-size:12px;font-weight:700;color:rgba(255,255,255,.5)}
 .rc-status{font-size:13px;font-weight:700;margin-left:auto}
@@ -747,9 +750,16 @@ html.dark .qb{background:#2e3550}
 .rc-half{color:#FCD34D}
 .rc-wrong{color:#F87171}
 .rc-q{font-family:var(--font-head);font-size:16px;font-weight:700;color:#fff;margin-bottom:10px;line-height:1.45}
-.rc-answer{font-size:13px;color:rgba(255,255,255,.55);line-height:1.7;padding:10px 14px;background:rgba(255,255,255,.04);border-radius:10px;margin-bottom:8px}
+.rc-answer{font-size:13px;color:rgba(255,255,255,.7);line-height:1.7;padding:10px 14px;background:rgba(255,255,255,.04);border-radius:10px;margin-bottom:8px;display:flex;flex-direction:column;gap:2px}
+.rc-answer-lbl{font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.7px;opacity:.55;margin-bottom:2px}
+.rc-answer-correct{background:rgba(74,222,128,.08);border:1px solid rgba(74,222,128,.2)}
+.rc-answer-correct .rc-answer-lbl{color:#4ADE80;opacity:.9}
+.rc-answer-wrong{background:rgba(248,113,113,.08);border:1px solid rgba(248,113,113,.2)}
+.rc-answer-wrong .rc-answer-lbl{color:#F87171;opacity:.9}
 .rc-answer strong{color:rgba(255,255,255,.8)}
-.rc-explanation{font-size:13px;color:rgba(255,255,255,.4);line-height:1.7;padding-top:8px;border-top:1px solid rgba(255,255,255,.06)}
+.rc-ctx{font-size:12px;color:rgba(255,255,255,.35);line-height:1.6;padding:6px 10px;background:rgba(255,255,255,.03);border-radius:8px;margin-bottom:10px;border-left:2px solid rgba(255,255,255,.1)}
+.rc-explanation{font-size:13px;color:rgba(255,255,255,.5);line-height:1.65;padding:10px 14px;background:rgba(255,255,255,.03);border-radius:10px;margin-top:4px;display:flex;gap:8px;align-items:flex-start}
+.rc-expl-icon{flex-shrink:0;font-size:14px}
 .review-btns{display:flex;gap:10px;flex-direction:column;margin-top:20px}
 
 /* ── WELCOME SCREEN REDESIGN ───────────────────── */
@@ -1654,6 +1664,8 @@ html.dark .calc-btn{background:#2e3550}
 .anim-evo-card{background:linear-gradient(135deg,rgba(var(--or-rgb),.08),rgba(var(--or-rgb),.02));border:1px solid rgba(var(--or-rgb),.2);border-radius:20px;padding:20px;margin-bottom:16px}
 .anim-evo-title{font-family:var(--font-head);font-size:16px;font-weight:800;color:var(--dk);margin-bottom:4px;display:flex;align-items:center;gap:8px}
 .anim-evo-locked{font-size:10px;font-weight:700;background:rgba(var(--or-rgb),.15);color:var(--or);padding:2px 8px;border-radius:10px;letter-spacing:.4px}
+.anim-change-btn{font-size:11px;font-weight:700;background:rgba(var(--or-rgb),.12);color:var(--or);padding:4px 10px;border-radius:10px;border:1px solid rgba(var(--or-rgb),.3);cursor:pointer;font-family:var(--font);transition:all .2s;flex-shrink:0;margin-left:auto}
+.anim-change-btn:hover{background:rgba(var(--or-rgb),.22)}
 .anim-evo-subtitle{font-size:12px;color:var(--mu);margin-bottom:16px}
 .anim-evo-stages{display:flex;align-items:flex-end;gap:0;margin-bottom:12px}
 .anim-stage{flex:1;display:flex;flex-direction:column;align-items:center;gap:4px;position:relative}
@@ -2443,6 +2455,7 @@ html.dark .hsd-pill{background:var(--bg2);border-color:var(--bo2)}
   </div>
   <div id="qfb" style="display:none"></div>
   <button id="qnxt" class="nxt" onclick="nextQ()" style="display:none">Volgende →</button>
+  <div id="quiz-kb-hint" style="text-align:center;margin-top:10px;font-size:11px;color:rgba(255,255,255,.22);display:none">Toets <kbd style="background:rgba(255,255,255,.1);padding:1px 5px;border-radius:4px;font-family:monospace">1–4</kbd> of <kbd style="background:rgba(255,255,255,.1);padding:1px 5px;border-radius:4px;font-family:monospace">Enter</kbd></div>
 </div>
 </div>
 
@@ -3580,6 +3593,7 @@ function show(id){
   document.querySelectorAll('.sc').forEach(s=>s.classList.remove('on'));
   document.getElementById(id).classList.add('on');
   window.scrollTo(0,0);
+  updateBottomNav(id);
   tryPushAds(id);
   // Welcome screen gets its own indigo theme; level pages get their own theme
   if(id==='sc-welcome'){
@@ -5169,16 +5183,67 @@ function renderAnimalEvoSection(animalId,totalXP){
       <div class="anim-evo-prog-txt">${totalXP.toLocaleString('nl')} / ${nextThreshold.toLocaleString('nl')} XP → ${a.svg?'':a.s[stageIdx+1]+' '}${nextLbl}</div>`;
   const bigDisplay=getAnimalDisplay(a.id,stageIdx,52);
   sec.innerHTML=`<div class="anim-evo-card">
-    <div class="anim-evo-title">${bigDisplay} ${a.n} <span class="anim-evo-locked">🔒 Definitief</span></div>
+    <div class="anim-evo-title">${bigDisplay} ${a.n} <button class="anim-change-btn" onclick="toggleAnimalPicker()" title="Verander dier">🔄 Wisselen</button></div>
     <div class="anim-evo-subtitle">${curLbl} · ${totalXP.toLocaleString('nl')} XP totaal</div>
     ${curDesc?`<div style="font-size:13px;color:var(--mu);font-style:italic;margin:4px 0 10px;text-align:center">"${curDesc}"</div>`:''}
     <div class="anim-evo-stages">${stagesHtml}</div>
     <div class="anim-evo-progress">${progressHtml}</div>
+    <div id="animal-picker-inline" style="display:none;margin-top:14px">
+      <div style="font-size:12px;color:var(--mu);margin-bottom:10px;text-align:center">Kies een nieuw dier — je evolutiestadium blijft behouden</div>
+      <div class="anim-pick-grid" id="prof-animal-switch-grid"></div>
+      <button onclick="saveAnimalChoice()" style="width:100%;margin-top:10px;padding:12px;background:var(--or);color:#fff;border:none;border-radius:12px;font-size:14px;font-weight:700;cursor:pointer;font-family:var(--font)">Opslaan</button>
+    </div>
   </div>`;
 }
 
 function buildAvatarPicker(current){
   // Legacy - now handled by animal evolution system
+}
+
+function toggleAnimalPicker(){
+  const p=document.getElementById('animal-picker-inline');
+  if(!p)return;
+  const visible=p.style.display!=='none';
+  if(!visible){
+    // Bouw switcher grid als nog leeg
+    const grid=document.getElementById('prof-animal-switch-grid');
+    if(grid&&!grid.children.length){
+      const prof=JSON.parse(localStorage.getItem(PROF_KEY)||'{}');
+      const curId=prof.animalId;
+      const stageIdx=getAnimalStageIdx(getTotalXP());
+      ANIMAL_EVOLUTIONS.forEach(a=>{
+        const btn=document.createElement('button');
+        btn.type='button';
+        btn.className='anim-pick-btn'+(a.id===curId?' selected':'');
+        btn.innerHTML=`<span class="anim-pick-emoji">${getAnimalDisplay(a.id,stageIdx,36)}</span><span class="anim-pick-name">${a.n}</span>`;
+        btn.onclick=()=>{
+          selectedAnimalId=a.id;
+          document.querySelectorAll('#prof-animal-switch-grid .anim-pick-btn').forEach(b=>b.classList.remove('selected'));
+          btn.classList.add('selected');
+        };
+        grid.appendChild(btn);
+      });
+      // Zet selectedAnimalId op huidige
+      selectedAnimalId=curId;
+    }
+  }
+  p.style.display=visible?'none':'block';
+}
+
+async function saveAnimalChoice(){
+  if(!selectedAnimalId)return;
+  const prof=JSON.parse(localStorage.getItem(PROF_KEY)||'{}');
+  prof.animalId=selectedAnimalId;
+  prof.avatar=getAnimalEmoji(selectedAnimalId,0);
+  localStorage.setItem(PROF_KEY,JSON.stringify(prof));
+  if(currentUser)cloudSet('profiel',prof);
+  syncAvatarToProfile();
+  // Herrender de sectie
+  const xp=getTotalXP();
+  renderAnimalEvoSection(selectedAnimalId,xp);
+  renderXPHome();
+  updateProfileNav();
+  showToast('✅ Dier gewijzigd naar '+ANIMAL_EVOLUTIONS.find(a=>a.id===selectedAnimalId)?.n,'#4ADE80',3000);
 }
 
 function loadProfile(){
@@ -5864,6 +5929,9 @@ function toonV(){
       area.appendChild(btn);
     });
     startTimer(15);
+    // Toon keyboard-hint alleen op desktop
+    const kbHint=document.getElementById('quiz-kb-hint');
+    if(kbHint)kbHint.style.display=(navigator.maxTouchPoints===0)?'block':'none';
 
   } else {
     // Oud-examen: verberg timer + snel-area
@@ -5886,6 +5954,29 @@ function toonV(){
     document.querySelectorAll('.assess-btn').forEach(b=>{b.disabled=false;});
   }
 }
+
+// ═══════ QUIZ KEYBOARD SHORTCUTS ═══════
+document.addEventListener('keydown',function(e){
+  const scQuiz=document.getElementById('sc-quiz');
+  if(!scQuiz||!scQuiz.classList.contains('on'))return;
+  // Negeer als focus in een input/textarea zit
+  if(['INPUT','TEXTAREA','SELECT'].includes(document.activeElement.tagName))return;
+  const nxt=document.getElementById('qnxt');
+  const nxtVisible=nxt&&nxt.style.display!=='none';
+  if(ST.mode==='snel'&&!nxtVisible){
+    // Antwoord selecteren met 1-4 of a-d
+    const keyMap={'1':0,'2':1,'3':2,'4':3,'a':0,'b':1,'c':2,'d':3};
+    const pos=keyMap[e.key.toLowerCase()];
+    if(pos!==undefined){
+      const btns=document.querySelectorAll('#snel-area .opt');
+      if(btns[pos]&&!btns[pos].disabled){btns[pos].click();e.preventDefault();}
+    }
+  }
+  // Enter/Space = volgende vraag / bekijk resultaat
+  if((e.key==='Enter'||e.key===' ')&&nxtVisible){
+    nxt.click();e.preventDefault();
+  }
+});
 
 function startTimer(max){
   clearInterval(ST.timer);
@@ -7401,9 +7492,9 @@ function renderStreak(){
 
 // ═══════ REVIEW ═══════
 function openReview(){
-  const list=document.getElementById('review-list');
-  list.innerHTML='';
   document.getElementById('review-sub').textContent=`${ST.vak.naam} · Domein ${ST.domein.id}: ${ST.domein.naam} · ${ST.mode==='snel'?'Snelle Quiz':'Oud-examen'}`;
+  // Bouw de volledige HTML in één keer (geen innerHTML+= per stap)
+  let html='';
   ST.vragen.forEach((q,i)=>{
     const a=ST.antwrd[i];
     if(!a)return;
@@ -7414,24 +7505,29 @@ function openReview(){
     let answerHtml='';
     if(ST.mode==='snel'){
       const correctAns=q.o[q.c];
-      if(a.chosenText){
-        answerHtml=`<div class="rc-answer"><strong>Jouw antwoord:</strong> ${a.chosenText}</div>`;
+      // Toon jouw antwoord alleen als het fout was (niet nodig bij goed)
+      if(a.pts!==1&&a.chosenText&&a.chosenText!=='⏱ Tijd was op'){
+        answerHtml+=`<div class="rc-answer rc-answer-wrong"><span class="rc-answer-lbl">Jouw antwoord</span> ${a.chosenText}</div>`;
       }
-      answerHtml+=`<div class="rc-answer"><strong>Correct:</strong> ${correctAns}</div>`;
+      if(a.chosenText==='⏱ Tijd was op'){
+        answerHtml+=`<div class="rc-answer" style="color:#F87171">⏱ Tijd was op</div>`;
+      }
+      answerHtml+=`<div class="rc-answer rc-answer-correct"><span class="rc-answer-lbl">Juist antwoord</span> ${correctAns}</div>`;
+      // Uitleg (toelichting) alleen als aanwezig
+      if(q.u)answerHtml+=`<div class="rc-explanation"><span class="rc-expl-icon">💡</span>${q.u}</div>`;
     } else {
-      if(a.userText){
-        answerHtml=`<div class="rc-answer"><strong>Jouw antwoord:</strong> ${a.userText}</div>`;
-      }
-      answerHtml+=`<div class="rc-answer"><strong>Modelantwoord:</strong> ${q.u}</div>`;
+      if(a.userText)answerHtml+=`<div class="rc-answer"><span class="rc-answer-lbl">Jouw antwoord</span> ${a.userText}</div>`;
+      if(q.u)answerHtml+=`<div class="rc-explanation"><span class="rc-expl-icon">📋</span>${q.u}</div>`;
     }
-    list.innerHTML+=`<div class="review-card">
+    const ctxHtml=q.ctx?`<div class="rc-ctx">${q.ctx.substring(0,250)+(q.ctx.length>250?'…':'')}</div>`:'';
+    html+=`<div class="review-card ${statusClass}-card">
       <div class="rc-head"><span class="rc-num">Vraag ${i+1}</span><span class="rc-status ${statusClass}">${statusText}</span></div>
       <div class="rc-q">${q.v}</div>
-      ${q.ctx?'<div style="font-size:12px;color:rgba(255,255,255,.4);margin-bottom:8px;line-height:1.6;padding:6px 8px;background:rgba(255,255,255,.03);border-radius:6px">'+q.ctx.substring(0,200)+(q.ctx.length>200?'...':'')+'</div>':''}
+      ${ctxHtml}
       ${answerHtml}
-      <div class="rc-explanation">${q.u}</div>
     </div>`;
   });
+  document.getElementById('review-list').innerHTML=html;
   show('sc-review');
 }
 
