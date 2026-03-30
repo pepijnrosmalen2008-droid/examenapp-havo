@@ -391,66 +391,117 @@ html:not(.dark) .sb-pink{display:none}
 .sb-ring::before{content:'';position:absolute;width:600px;height:600px;top:50%;left:50%;transform:translate(-50%,-50%) rotate(90deg);background:conic-gradient(rgba(0,0,0,0),color-mix(in srgb,var(--or) 40%,#1a1a2e),rgba(0,0,0,0) 50%,rgba(0,0,0,0) 50%,color-mix(in srgb,var(--or) 40%,#1a1a2e),rgba(0,0,0,0) 100%);filter:brightness(1.35);animation:sbSpin 3s linear infinite}
 @keyframes sbSpin{to{transform:translate(-50%,-50%) rotate(450deg)}}
 /* ── RACE MODE ── */
-#sc-race{background:#0A0C10;flex-direction:column;min-height:100vh;padding-bottom:40px}
+#sc-race{background:linear-gradient(180deg,#0c0d15 0%,#090b11 100%);flex-direction:column;min-height:100vh;padding-bottom:48px}
 #sc-race.on{display:flex}
 #sc-race-res{background:linear-gradient(180deg,#0A0C10 0%,#141824 100%)}
-.race-qmcd{border:1px solid rgba(239,68,68,.35)!important;position:relative;overflow:hidden}
-.race-qmcd::before{content:'';position:absolute;inset:0;background:linear-gradient(135deg,rgba(239,68,68,.07),rgba(234,179,8,.07));pointer-events:none}
-.race-diff-row{display:flex;gap:8px;margin-top:10px;flex-wrap:wrap}
-.race-diff-btn{flex:1;min-width:80px;padding:7px 10px;border-radius:20px;border:1px solid rgba(255,255,255,.15);background:rgba(255,255,255,.06);color:var(--tx);font-size:12px;font-weight:600;cursor:pointer;transition:all .15s}
-.race-diff-btn:hover{background:rgba(239,68,68,.2);border-color:rgba(239,68,68,.5);color:#f87171}
-.race-tb{display:flex;align-items:center;gap:10px;padding:12px 16px;border-bottom:1px solid var(--bo);position:sticky;top:0;background:rgba(10,12,16,.92);backdrop-filter:blur(16px);z-index:10}
-.race-meta{flex:1;font-size:13px;font-weight:600;color:var(--tx2)}
-.race-tracks{padding:14px 16px 8px;display:flex;flex-direction:column;gap:10px}
-.race-track-row{display:flex;align-items:center;gap:10px}
-.race-track-label{font-size:12px;font-weight:700;color:var(--tx2);width:52px;flex-shrink:0;text-align:right}
-.race-track{flex:1;height:36px;background:rgba(255,255,255,.05);border-radius:18px;border:1px solid var(--bo);position:relative;overflow:hidden}
-.race-car{position:absolute;top:50%;transform:translateY(-50%);font-size:18px;left:4px;transition:left .35s cubic-bezier(.34,1.56,.64,1);z-index:2;filter:drop-shadow(0 0 6px rgba(255,255,255,.3))}
-.race-car-player{filter:drop-shadow(0 0 8px rgba(var(--or-rgb),.8))}
-.race-car-bot{filter:drop-shadow(0 0 8px rgba(239,68,68,.8))}
-.race-finish{position:absolute;right:4px;top:50%;transform:translateY(-50%);font-size:16px}
-.race-track-score{font-size:12px;font-weight:700;color:var(--mu);width:36px;flex-shrink:0}
-.race-qbody{padding:14px 16px;max-width:640px;margin:0 auto;width:100%}
-.race-qring{width:46px;height:46px;position:relative;margin:0 auto 8px;display:flex;align-items:center;justify-content:center}
-.race-qctr{text-align:center;font-size:12px;color:var(--mu);font-weight:600;margin-bottom:10px;letter-spacing:.5px}
-.race-qq{font-size:16px;font-weight:600;line-height:1.5;color:var(--tx);margin-bottom:16px;text-align:center}
-.race-opts{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-bottom:12px}
-.race-opt{padding:12px 14px;border-radius:12px;border:1.5px solid var(--bo);background:rgba(255,255,255,.04);color:var(--tx);font-size:14px;font-weight:500;cursor:pointer;text-align:left;transition:all .15s;line-height:1.4}
-.race-opt:hover:not(:disabled){background:rgba(var(--or-rgb),.1);border-color:rgba(var(--or-rgb),.4)}
-.race-opt.correct{background:rgba(74,222,128,.15)!important;border-color:#4ade80!important;color:#4ade80}
-.race-opt.wrong{background:rgba(248,113,113,.12)!important;border-color:#f87171!important;color:#f87171}
-.race-opt.shaken{animation:raceShake .4s ease}
-.race-fb{padding:12px 14px;border-radius:12px;margin-bottom:10px;font-size:13px;line-height:1.5}
-.race-fb.fbok{background:rgba(74,222,128,.1);border:1px solid rgba(74,222,128,.3);color:#4ade80}
-.race-fb.fbno{background:rgba(248,113,113,.1);border:1px solid rgba(248,113,113,.3);color:#f87171}
-.race-fb .fbt{font-weight:700;margin-bottom:3px}
-.race-fb .fbtx{color:var(--tx2);font-size:12px}
-.race-powerup-bar{background:rgba(255,200,0,.06);border:1px solid rgba(255,200,0,.2);border-radius:14px;padding:12px 14px;margin-bottom:10px}
-.race-pu-title{font-size:12px;font-weight:700;color:#fcd34d;margin-bottom:8px;text-align:center;letter-spacing:.5px}
-.race-pu-row{display:flex;gap:8px;flex-wrap:wrap;justify-content:center}
-.race-pu-btn{padding:8px 14px;border-radius:20px;border:1px solid rgba(255,200,0,.3);background:rgba(255,200,0,.1);color:#fcd34d;font-size:13px;font-weight:600;cursor:pointer;transition:all .15s;display:flex;align-items:center;gap:6px}
-.race-pu-btn:hover{background:rgba(255,200,0,.22);border-color:rgba(255,200,0,.6);transform:scale(1.04)}
-.race-pu-btn .pu-desc{font-size:10px;color:var(--mu);font-weight:400;display:block;margin-top:1px}
-.race-toast{position:fixed;bottom:70px;left:50%;transform:translateX(-50%) translateY(20px);background:rgba(20,20,30,.95);border:1px solid var(--bo);border-radius:20px;padding:10px 20px;font-size:14px;font-weight:600;color:var(--tx);pointer-events:none;opacity:0;transition:all .3s;z-index:9999;white-space:nowrap;backdrop-filter:blur(12px)}
+.race-qmcd{border:1px solid rgba(239,68,68,.4)!important;position:relative;overflow:hidden;background:linear-gradient(135deg,rgba(239,68,68,.05),rgba(234,179,8,.04))!important}
+.race-qmcd::after{content:'🏁 NIEUW';position:absolute;top:10px;right:10px;font-size:9px;font-weight:900;background:rgba(239,68,68,.85);color:#fff;padding:2px 7px;border-radius:8px;letter-spacing:.5px}
+.race-diff-row{display:flex;gap:7px;margin-top:12px;flex-wrap:wrap}
+.race-diff-btn{flex:1;min-width:82px;padding:8px 10px;border-radius:22px;border:1px solid rgba(255,255,255,.12);background:rgba(255,255,255,.05);color:var(--tx);font-size:12px;font-weight:700;cursor:pointer;transition:all .18s}
+.race-diff-btn:hover{background:rgba(239,68,68,.22);border-color:rgba(239,68,68,.55);color:#f87171;transform:scale(1.04)}
+
+/* Topbar */
+.race-tb{display:flex;align-items:center;gap:10px;padding:12px 16px;border-bottom:1px solid rgba(255,255,255,.05);position:sticky;top:0;background:rgba(11,12,18,.96);backdrop-filter:blur(20px);z-index:10}
+.race-meta{flex:1;font-size:12px;font-weight:700;color:var(--mu);letter-spacing:.3px;text-transform:uppercase}
+
+/* Edge flash */
+.race-edge-flash{position:fixed;inset:0;pointer-events:none;z-index:450;opacity:0;transition:opacity .12s}
+.race-edge-flash.flash-ok{box-shadow:inset 0 0 80px 24px rgba(74,222,128,.4);opacity:1;animation:raceEdgeFade .55s ease forwards}
+.race-edge-flash.flash-no{box-shadow:inset 0 0 80px 24px rgba(248,113,113,.4);opacity:1;animation:raceEdgeFade .55s ease forwards}
+
+/* Tracks */
+.race-tracks{padding:14px 14px 6px;display:flex;flex-direction:column;gap:10px}
+.race-track-row{display:flex;align-items:center;gap:8px}
+.race-track-label{font-size:10px;font-weight:900;color:var(--mu);width:44px;flex-shrink:0;text-align:right;text-transform:uppercase;letter-spacing:.6px}
+.race-track{flex:1;height:46px;background:rgba(255,255,255,.04);border-radius:23px;border:1px solid rgba(255,255,255,.07);position:relative;overflow:hidden}
+.race-track-fill{position:absolute;top:0;left:0;bottom:0;width:0%;border-radius:23px;transition:width .42s cubic-bezier(.34,1.3,.64,1);pointer-events:none}
+.race-fill-player{background:linear-gradient(90deg,rgba(var(--or-rgb),.18),rgba(var(--or-rgb),.48))}
+.race-fill-bot{background:linear-gradient(90deg,rgba(139,92,246,.18),rgba(139,92,246,.48))}
+.race-car{position:absolute;top:50%;transform:translateY(-50%);font-size:22px;left:6px;transition:left .42s cubic-bezier(.34,1.6,.64,1);z-index:3;line-height:1}
+.race-car.scored{animation:raceCarBounce .45s cubic-bezier(.34,2,.64,1)}
+.race-car-player{filter:drop-shadow(0 0 12px rgba(var(--or-rgb),1)) drop-shadow(0 0 4px rgba(var(--or-rgb),.6))}
+.race-car-bot{filter:drop-shadow(0 0 12px rgba(139,92,246,1)) drop-shadow(0 0 4px rgba(139,92,246,.6))}
+.race-finish{position:absolute;right:5px;top:50%;transform:translateY(-50%);font-size:20px;z-index:2}
+.race-track-score{font-size:14px;font-weight:900;color:var(--tx);width:38px;flex-shrink:0}
+.race-track-score.leading{color:var(--or)}
+
+/* Combo bar */
+.race-combo-wrap{height:32px;display:flex;align-items:center;justify-content:center;padding:0 16px}
+.race-combo{font-size:15px;font-weight:900;letter-spacing:.5px;opacity:0;transition:opacity .2s}
+.race-combo.show{opacity:1;animation:raceComboIn .4s cubic-bezier(.34,1.8,.64,1)}
+
+/* Question body */
+.race-qbody{padding:10px 14px 0;max-width:640px;margin:0 auto;width:100%;flex:1;box-sizing:border-box}
+.race-qring{width:50px;height:50px;position:relative;margin:0 auto 4px;display:flex;align-items:center;justify-content:center}
+.race-qctr{text-align:center;font-size:10px;color:var(--mu);font-weight:800;margin-bottom:12px;letter-spacing:1px;text-transform:uppercase}
+.race-qq{font-size:16px;font-weight:600;line-height:1.55;color:var(--tx);margin-bottom:14px;padding:16px;background:rgba(255,255,255,.03);border:1px solid rgba(255,255,255,.07);border-radius:16px}
+
+/* Answer options */
+.race-opts{display:grid;grid-template-columns:1fr 1fr;gap:9px;margin-bottom:12px}
+.race-opt{padding:14px 14px;border-radius:14px;border:none;color:#fff;font-size:14px;font-weight:700;cursor:pointer;text-align:left;transition:transform .15s,filter .15s,opacity .15s;line-height:1.4;font-family:var(--font)}
+.race-opt:nth-child(1){background:linear-gradient(135deg,#c0392b,#e74c3c)}
+.race-opt:nth-child(2){background:linear-gradient(135deg,#1e3a8a,#2563eb)}
+.race-opt:nth-child(3){background:linear-gradient(135deg,#92400e,#d97706)}
+.race-opt:nth-child(4){background:linear-gradient(135deg,#14532d,#16a34a)}
+.race-opt:hover:not(:disabled){filter:brightness(1.2);transform:scale(1.03) translateY(-1px)}
+.race-opt.correct{background:linear-gradient(135deg,#15803d,#22c55e)!important;transform:scale(1.05)!important;box-shadow:0 6px 30px rgba(34,197,94,.6)!important;animation:optPop .45s cubic-bezier(.34,1.5,.64,1)}
+.race-opt.wrong{opacity:.3!important;transform:scale(.96)!important;filter:grayscale(.5)}
+.race-opt .opt-lbl{display:inline-flex;align-items:center;justify-content:center;width:22px;height:22px;border-radius:50%;background:rgba(255,255,255,.22);font-size:11px;font-weight:900;margin-right:8px;flex-shrink:0;vertical-align:middle}
+
+/* Feedback */
+.race-fb{padding:12px 16px;border-radius:14px;margin-bottom:10px;font-size:13px;line-height:1.5;border:1px solid}
+.race-fb.fbok{background:rgba(74,222,128,.07);border-color:rgba(74,222,128,.28);color:#4ade80}
+.race-fb.fbno{background:rgba(248,113,113,.07);border-color:rgba(248,113,113,.28);color:#f87171}
+.race-fb .fbt{font-weight:900;margin-bottom:4px;font-size:14px}
+.race-fb .fbtx{color:var(--tx2);font-size:12px;line-height:1.5}
+
+/* Power-up panel */
+.race-powerup-bar{background:rgba(8,8,14,.85);backdrop-filter:blur(24px);border:1px solid rgba(252,211,77,.22);border-radius:20px;padding:16px 14px;margin-bottom:12px;box-shadow:0 0 40px rgba(252,211,77,.08)}
+.race-pu-title{font-size:12px;font-weight:900;color:#fcd34d;margin-bottom:12px;text-align:center;letter-spacing:1.5px;text-transform:uppercase}
+.race-pu-row{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}
+.race-pu-btn{padding:14px 8px;border-radius:16px;border:1px solid rgba(252,211,77,.18);background:rgba(255,255,255,.04);color:var(--tx);cursor:pointer;transition:all .2s;text-align:center;animation:puPop .35s cubic-bezier(.34,1.7,.64,1) both}
+.race-pu-btn:nth-child(2){animation-delay:.07s}
+.race-pu-btn:nth-child(3){animation-delay:.14s}
+.race-pu-btn:hover{background:rgba(252,211,77,.14);border-color:rgba(252,211,77,.45);transform:translateY(-4px) scale(1.05);box-shadow:0 10px 28px rgba(252,211,77,.18)}
+.race-pu-btn .pu-icon{font-size:30px;display:block;margin-bottom:7px}
+.race-pu-btn .pu-name{font-weight:900;display:block;font-size:12px;color:#fcd34d;margin-bottom:3px}
+.race-pu-btn .pu-desc{font-size:10px;color:var(--mu);display:block;line-height:1.35}
+
+/* Toast */
+.race-toast{position:fixed;top:68px;left:50%;transform:translateX(-50%) translateY(-12px);background:rgba(14,15,22,.97);border:1px solid rgba(255,255,255,.1);border-radius:28px;padding:10px 22px;font-size:14px;font-weight:700;color:var(--tx);pointer-events:none;opacity:0;transition:opacity .22s,transform .22s;z-index:9998;white-space:nowrap;backdrop-filter:blur(20px);box-shadow:0 8px 32px rgba(0,0,0,.4)}
 .race-toast.show{opacity:1;transform:translateX(-50%) translateY(0)}
-.race-res-vs{display:flex;gap:16px;justify-content:center;margin:20px 0;flex-wrap:wrap}
-.race-res-col{text-align:center;background:rgba(255,255,255,.04);border:1px solid var(--bo);border-radius:16px;padding:16px 20px;min-width:120px}
-.race-res-col.winner{border-color:rgba(var(--or-rgb),.5);background:rgba(var(--or-rgb),.08)}
-.race-res-col .res-emo{font-size:28px;margin-bottom:4px}
-.race-res-col .res-name{font-size:13px;font-weight:700;color:var(--tx2)}
-.race-res-col .res-sc{font-size:26px;font-weight:800;color:var(--tx)}
-.race-res-col .res-time{font-size:11px;color:var(--mu);margin-top:2px}
-@keyframes raceShake{0%,100%{transform:translateX(0)}20%{transform:translateX(-6px)}40%{transform:translateX(6px)}60%{transform:translateX(-4px)}80%{transform:translateX(4px)}}
-@keyframes racePulse{0%,100%{transform:scale(1)}50%{transform:scale(1.25)}}
-@keyframes puPop{0%{transform:scale(.7);opacity:0}80%{transform:scale(1.05)}100%{transform:scale(1);opacity:1}}
-@keyframes rfoIn{0%{opacity:0;transform:translate(-50%,-50%) scale(.6)}60%{transform:translate(-50%,-50%) scale(1.08)}100%{opacity:1;transform:translate(-50%,-50%) scale(1)}}
-@keyframes rfoFlag{0%,100%{transform:rotate(-8deg) scale(1)}50%{transform:rotate(8deg) scale(1.2)}}
-.race-finish-overlay{position:fixed;inset:0;z-index:500;background:rgba(0,0,0,.72);backdrop-filter:blur(8px);display:none;align-items:center;justify-content:center}
+
+/* Floating score popup */
+.race-float{position:fixed;font-size:26px;font-weight:900;pointer-events:none;z-index:9997;animation:raceFloatUp .95s cubic-bezier(.22,1,.36,1) forwards;text-shadow:0 0 20px currentColor}
+
+/* Result page */
+.race-res-vs{display:flex;gap:14px;justify-content:center;margin:20px 0;flex-wrap:wrap}
+.race-res-col{text-align:center;background:rgba(255,255,255,.04);border:1.5px solid rgba(255,255,255,.07);border-radius:22px;padding:22px 26px;min-width:130px}
+.race-res-col.winner{border-color:rgba(var(--or-rgb),.5);background:rgba(var(--or-rgb),.08);box-shadow:0 0 50px rgba(var(--or-rgb),.12)}
+.race-res-col .res-emo{font-size:40px;margin-bottom:8px;display:block}
+.race-res-col .res-name{font-size:11px;font-weight:800;color:var(--mu);text-transform:uppercase;letter-spacing:.6px}
+.race-res-col .res-sc{font-size:34px;font-weight:900;color:var(--tx);margin:6px 0 2px}
+.race-res-col .res-time{font-size:11px;color:var(--mu)}
+
+/* Finish overlay */
+.race-finish-overlay{position:fixed;inset:0;z-index:500;background:rgba(0,0,0,.82);backdrop-filter:blur(14px);display:none;align-items:center;justify-content:center}
 .race-finish-overlay.visible{display:flex}
-.rfo-inner{position:fixed;top:50%;left:50%;transform:translate(-50%,-50%);text-align:center;animation:rfoIn .45s cubic-bezier(.34,1.56,.64,1) forwards}
-.rfo-flag{font-size:64px;animation:rfoFlag .7s ease-in-out infinite;display:block;margin-bottom:12px}
-.rfo-title{font-size:38px;font-weight:900;letter-spacing:2px;color:#fff;text-shadow:0 0 30px rgba(var(--or-rgb),1),0 0 60px rgba(var(--or-rgb),.6);margin-bottom:8px}
-.rfo-sub{font-size:18px;font-weight:700;color:var(--tx2)}
+.rfo-inner{position:fixed;top:50%;left:50%;transform:translate(-50%,-50%);text-align:center;animation:rfoIn .5s cubic-bezier(.34,1.56,.64,1) forwards}
+.rfo-flag{font-size:80px;animation:rfoFlag .65s ease-in-out infinite;display:block;margin-bottom:18px}
+.rfo-title{font-size:44px;font-weight:900;letter-spacing:3px;color:#fff;text-shadow:0 0 40px rgba(var(--or-rgb),1),0 0 80px rgba(var(--or-rgb),.7),0 0 120px rgba(var(--or-rgb),.3);margin-bottom:12px}
+.rfo-sub{font-size:19px;font-weight:700;color:var(--tx2)}
+.rfo-confetti{position:fixed;inset:0;pointer-events:none;overflow:hidden}
+.rfo-dot{position:absolute;width:8px;height:8px;border-radius:2px;animation:rfoDotFall var(--d,1.2s) var(--delay,0s) ease-in forwards}
+
+@keyframes raceEdgeFade{0%{opacity:1}100%{opacity:0}}
+@keyframes raceCarBounce{0%{transform:translateY(-50%) scale(1)}40%{transform:translateY(-70%) scale(1.5)}70%{transform:translateY(-45%) scale(1.1)}100%{transform:translateY(-50%) scale(1)}}
+@keyframes racePulse{0%,100%{transform:translateY(-50%) scale(1)}50%{transform:translateY(-50%) scale(1.3)}}
+@keyframes puPop{0%{transform:scale(.55) translateY(20px);opacity:0}75%{transform:scale(1.05) translateY(-3px)}100%{transform:scale(1) translateY(0);opacity:1}}
+@keyframes rfoIn{0%{opacity:0;transform:translate(-50%,-50%) scale(.4)}55%{transform:translate(-50%,-50%) scale(1.1)}100%{opacity:1;transform:translate(-50%,-50%) scale(1)}}
+@keyframes rfoFlag{0%,100%{transform:rotate(-12deg) scale(1)}50%{transform:rotate(12deg) scale(1.18)}}
+@keyframes raceFloatUp{0%{opacity:1;transform:translateY(0) scale(1)}50%{opacity:1}100%{opacity:0;transform:translateY(-90px) scale(.7)}}
+@keyframes raceComboIn{0%{transform:scale(.3);opacity:0}65%{transform:scale(1.25)}100%{transform:scale(1);opacity:1}}
+@keyframes rfoDotFall{0%{opacity:1;transform:translateY(-20px) rotate(0)}100%{opacity:0;transform:translateY(100vh) rotate(720deg)}}
 .sb-filter-btn{position:absolute;top:8px;right:8px;z-index:2;width:38px;height:40px;display:flex;align-items:center;justify-content:center;border-radius:8px;background:linear-gradient(to bottom,color-mix(in srgb,var(--or) 25%,#000),#000,color-mix(in srgb,var(--or) 20%,#000));border:none;cursor:pointer}
 .sb-filter-btn .sb-clear-icon{display:none}
 .sb-poda.sb-has-text .sb-filter-btn .sb-filter-icon{display:none}
@@ -2666,27 +2717,37 @@ html.dark .hsd-pill{background:var(--bg2);border-color:var(--bo2)}
 
 <!-- RACE -->
 <div id="sc-race" class="sc">
+<div id="race-edge-flash" class="race-edge-flash"></div>
 <div class="race-tb"><span class="ql">🏁</span><span class="race-meta" id="race-meta"></span><button class="qstp" onclick="stopRace()">✕ Stop</button></div>
 <div class="race-tracks">
-  <div class="race-track-row" id="race-track-player">
+  <div class="race-track-row">
     <span class="race-track-label" id="race-label-player">Jij</span>
-    <div class="race-track"><div class="race-car race-car-player" id="race-car-player">🚀</div><div class="race-finish">🏁</div></div>
+    <div class="race-track">
+      <div class="race-track-fill race-fill-player" id="rf-player"></div>
+      <div class="race-car race-car-player" id="race-car-player">🚀</div>
+      <div class="race-finish">🏁</div>
+    </div>
     <span class="race-track-score" id="race-score-player">0/15</span>
   </div>
-  <div class="race-track-row" id="race-track-bot">
-    <span class="race-track-label" id="race-label-bot">Bot 🤖</span>
-    <div class="race-track"><div class="race-car race-car-bot" id="race-car-bot">🤖</div><div class="race-finish">🏁</div></div>
+  <div class="race-track-row">
+    <span class="race-track-label" id="race-label-bot">Bot</span>
+    <div class="race-track">
+      <div class="race-track-fill race-fill-bot" id="rf-bot"></div>
+      <div class="race-car race-car-bot" id="race-car-bot">🤖</div>
+      <div class="race-finish">🏁</div>
+    </div>
     <span class="race-track-score" id="race-score-bot">0/15</span>
   </div>
 </div>
+<div class="race-combo-wrap"><div class="race-combo" id="race-combo"></div></div>
 <div class="race-qbody">
-  <div class="race-qring" id="race-qring"><svg width="46" height="46" viewBox="0 0 46 46"><circle class="trbg" cx="23" cy="23" r="19" stroke-dasharray="119" stroke-dashoffset="0"/><circle class="trfg" id="race-tcirc" cx="23" cy="23" r="19" stroke-dasharray="119" stroke-dashoffset="0"/></svg><div class="trn" id="race-tnum">15</div></div>
-  <div class="race-qctr" id="race-qctr">Vraag 1 van 15</div>
+  <div class="race-qring" id="race-qring"><svg width="50" height="50" viewBox="0 0 50 50"><circle class="trbg" cx="25" cy="25" r="21" stroke-dasharray="132" stroke-dashoffset="0"/><circle class="trfg" id="race-tcirc" cx="25" cy="25" r="21" stroke-dasharray="132" stroke-dashoffset="0"/></svg><div class="trn" id="race-tnum">15</div></div>
+  <div class="race-qctr" id="race-qctr">VRAAG 1 · STAP 0/15</div>
   <div class="race-qq" id="race-qq"></div>
   <div class="race-opts" id="race-opts"></div>
   <div id="race-fb" class="race-fb" style="display:none"></div>
   <div id="race-powerup-bar" class="race-powerup-bar" style="display:none">
-    <div class="race-pu-title">⚡ Kies een power-up!</div>
+    <div class="race-pu-title">⚡ Power-up vrijgespeeld!</div>
     <div class="race-pu-row" id="race-pu-row"></div>
   </div>
   <button id="race-nxt" class="nxt" style="display:none" onclick="raceNextQ()">Volgende →</button>
@@ -7253,13 +7314,11 @@ function startRace(diff){
   RC={
     diff,allQ,
     TARGET:15,
-    // Player gets a cycling pool of questions
     pool:shuffle(allQ),
     playerQIdx:0,
     playerScore:0,
-    playerQCount:0,   // total questions seen (for display)
-    shuffleMaps:{},   // computed on demand per playerQIdx
-    // Bot
+    playerQCount:0,
+    shuffleMaps:{},
     botPool:shuffle(allQ),
     botQIdx:0,
     botScore:0,
@@ -7269,6 +7328,8 @@ function startRace(diff){
     startTime:Date.now(),
     finished:false,
     powerupsEarned:0,
+    combo:0,
+    lastMilestone:0,
   };
 
   document.getElementById('race-meta').textContent=`${vak.naam} · Bot Race · ${botCfg.name}`;
@@ -7292,7 +7353,7 @@ function raceGetCurrentQ(){
 function raceShowQ(){
   if(RC.finished)return;
   const q=raceGetCurrentQ();
-  document.getElementById('race-qctr').textContent=`Vraag ${RC.playerQCount+1} · Stap ${RC.playerScore}/${RC.TARGET}`;
+  document.getElementById('race-qctr').textContent=`VRAAG ${RC.playerQCount+1} · STAP ${RC.playerScore}/${RC.TARGET}`;
   document.getElementById('race-qq').textContent=q.v;
   document.getElementById('race-fb').style.display='none';
   document.getElementById('race-powerup-bar').style.display='none';
@@ -7309,10 +7370,11 @@ function raceShowQ(){
 
   const area=document.getElementById('race-opts');
   area.innerHTML='';
+  const labs=['A','B','C','D'];
   map.forEach((origIdx,pos)=>{
     const btn=document.createElement('button');
     btn.className='race-opt';
-    btn.textContent=q.o[origIdx];
+    btn.innerHTML=`<span class="opt-lbl">${labs[pos]}</span>${q.o[origIdx]}`;
     btn.dataset.pos=pos;
     btn.onclick=function(){if(!btn.disabled)raceKies(pos,correctPos);};
     area.appendChild(btn);
@@ -7359,19 +7421,77 @@ function raceFeedback(ok,q){
   if(ok){
     RC.playerScore++;
     if(RC.turboNext){RC.playerScore++;RC.turboNext=false;raceToast('🚀 Turbo! +2 stappen!');}
+    RC.combo=(RC.combo||0)+1;
     RC.powerupsEarned++;
     raceUpdateTrack();
     if(RC.finished)return;
     playSound&&playSound('correct');
+    raceEdgeFlash(true);
+    raceFloatNum('+1 🚀');
+    raceShowCombo(RC.combo);
+    raceMilestoneCheck(RC.playerScore);
+    // Animate car
+    const cp=document.getElementById('race-car-player');
+    if(cp){cp.classList.remove('scored');void cp.offsetWidth;cp.classList.add('scored');}
     if(RC.powerupsEarned%3===0){showPowerupChoice(q);return;}
   } else {
+    RC.combo=0;
+    raceEdgeFlash(false);
+    // Shake wrong button
+    document.querySelectorAll('#race-opts .race-opt.wrong').forEach(b=>{
+      b.style.animation='raceShake .4s ease';
+      setTimeout(()=>b.style.animation='',400);
+    });
     playSound&&playSound('wrong');
+    const combo=document.getElementById('race-combo');
+    if(combo)combo.classList.remove('show');
   }
   const fb=document.getElementById('race-fb');
   fb.style.display='block';
   fb.className='race-fb '+(ok?'fbok':'fbno');
   fb.innerHTML=`<div class="fbt">${ok?'✓ Stap vooruit!':'✗ Fout — geen stap'}</div><div class="fbtx">${q.u||''}</div>`;
   document.getElementById('race-nxt').style.display='block';
+}
+
+function raceEdgeFlash(ok){
+  const el=document.getElementById('race-edge-flash');
+  if(!el)return;
+  el.className='race-edge-flash';
+  void el.offsetWidth;
+  el.className='race-edge-flash '+(ok?'flash-ok':'flash-no');
+  setTimeout(()=>{el.className='race-edge-flash';},550);
+}
+
+function raceFloatNum(txt){
+  const el=document.createElement('div');
+  el.className='race-float';
+  el.textContent=txt;
+  el.style.color='#4ade80';
+  el.style.left=(30+Math.random()*40)+'%';
+  el.style.top='55%';
+  document.body.appendChild(el);
+  setTimeout(()=>el.remove(),1000);
+}
+
+function raceShowCombo(n){
+  const el=document.getElementById('race-combo');
+  if(!el)return;
+  if(n<2){el.classList.remove('show');return;}
+  const labels=['','','🔥 x2','🔥 x3','🔥 x4 COMBO!','💥 x5 COMBO!!','⚡ x'+n+' UNSTOPPABLE!!!'];
+  const colors=['','','#f59e0b','#ef4444','#ef4444','#a855f7','#a855f7'];
+  el.textContent=labels[Math.min(n,6)];
+  el.style.color=colors[Math.min(n,6)];
+  el.classList.remove('show');
+  void el.offsetWidth;
+  el.classList.add('show');
+}
+
+function raceMilestoneCheck(score){
+  const milestones={5:'Halverwege! 🎯',10:'Nog 5 stappen! 🔥',14:'Nog 1 stap! 😱'};
+  if(milestones[score]&&score>RC.lastMilestone){
+    RC.lastMilestone=score;
+    raceToast(milestones[score]);
+  }
 }
 
 function showPowerupChoice(q){
@@ -7414,18 +7534,30 @@ function raceNextQ(){
 
 function raceUpdateTrack(){
   const T=RC.TARGET||15;
-  const trackW=document.querySelector('.race-track')?.clientWidth||280;
-  const usable=trackW-28-36;
+  const track=document.querySelector('.race-track');
+  const trackW=track?track.clientWidth:280;
+  const usable=trackW-32-36;
+  const pPct=Math.min(1,RC.playerScore/T);
+  const bPct=Math.min(1,RC.botScore/T);
 
   const cp=document.getElementById('race-car-player');
   const cb=document.getElementById('race-car-bot');
-  if(cp)cp.style.left=(4+Math.min(1,RC.playerScore/T)*usable)+'px';
-  if(cb)cb.style.left=(4+Math.min(1,RC.botScore/T)*usable)+'px';
+  const fp=document.getElementById('rf-player');
+  const fb=document.getElementById('rf-bot');
+  if(cp)cp.style.left=(6+pPct*usable)+'px';
+  if(cb)cb.style.left=(6+bPct*usable)+'px';
+  if(fp)fp.style.width=(pPct*100)+'%';
+  if(fb)fb.style.width=(bPct*100)+'%';
 
   const sp=document.getElementById('race-score-player');
   const sb=document.getElementById('race-score-bot');
-  if(sp)sp.textContent=`${RC.playerScore}/${T}`;
+  if(sp){sp.textContent=`${RC.playerScore}/${T}`;sp.className='race-track-score'+(RC.playerScore>RC.botScore?' leading':'');}
   if(sb)sb.textContent=`${RC.botScore}/${T}`;
+
+  // Bot danger warning
+  const gap=RC.playerScore-RC.botScore;
+  if(gap===-1&&RC.playerScore>0)raceToast('⚠️ Bot is dichtbij!');
+  else if(gap<==-3&&RC.botScore>0)raceToast('🚨 Bot loopt voor!');
 
   if(!RC.finished){
     if(RC.playerScore>=T) raceFinish('player');
@@ -7481,7 +7613,7 @@ function raceFinish(who){
   const tot=RC.TARGET||15;
   const playerWin=RC.playerScore>=tot||(RC.playerScore>RC.botScore)||(RC.playerScore===RC.botScore&&who==='player');
 
-  // Show finish overlay
+  // Show finish overlay with confetti
   const ov=document.getElementById('race-finish-overlay');
   const title=document.getElementById('rfo-title');
   const sub=document.getElementById('rfo-sub');
@@ -7489,8 +7621,21 @@ function raceFinish(who){
     title.textContent=playerWin?'JIJ WINT! 🎉':'BOT WINT 😤';
     title.style.color=playerWin?'#4ade80':'#f87171';
     sub.textContent=playerWin
-      ?`${RC.playerScore}/${tot} goed in ${elapsed}s 🏆`
+      ?`${RC.playerScore}/${tot} stappen in ${elapsed}s 🏆`
       :`Bot: ${RC.botScore}/${tot} · Jij: ${RC.playerScore}/${tot}`;
+    // Confetti dots
+    if(playerWin){
+      let conf=document.querySelector('.rfo-confetti');
+      if(!conf){conf=document.createElement('div');conf.className='rfo-confetti';ov.appendChild(conf);}
+      conf.innerHTML='';
+      const colors=['#f59e0b','#ef4444','#22c55e','#3b82f6','#a855f7','#ec4899','#fcd34d'];
+      for(let i=0;i<40;i++){
+        const d=document.createElement('div');
+        d.className='rfo-dot';
+        d.style.cssText=`left:${Math.random()*100}%;top:-10px;background:${colors[i%colors.length]};--d:${.8+Math.random()*.8}s;--delay:${Math.random()*.6}s;transform:rotate(${Math.random()*360}deg)`;
+        conf.appendChild(d);
+      }
+    }
     ov.classList.add('visible');
   }
 
