@@ -7241,39 +7241,34 @@ function startRace(diff){
   const vak=ST.vak;
   if(!vak)return;
 
-  // Gather ALL sv questions from ALL domains of this vak
   let allQ=[];
   (vak.domeinen||[]).forEach(d=>{
-    (d.sv||[]).forEach(q=>{
-      allQ.push({...q,_domein:d.naam});
-    });
+    (d.sv||[]).forEach(q=>{allQ.push({...q,_domein:d.naam});});
   });
   if(allQ.length<5){raceToast('Te weinig vragen voor een race!');return;}
 
-  // Pick 15 unique questions (or max available), shuffled
-  const shuffled=[...allQ].sort(()=>Math.random()-.5);
-  const questions=shuffled.slice(0,Math.min(15,shuffled.length));
-
-  // Pre-shuffle answer options per question
-  const shuffleMaps=questions.map(()=>{
-    const m=[0,1,2,3];
-    for(let i=3;i>0;i--){const j=Math.floor(Math.random()*(i+1));[m[i],m[j]]=[m[j],m[i]];}
-    return m;
-  });
-
+  const shuffle=arr=>[...arr].sort(()=>Math.random()-.5);
   const botCfg=RACE_BOTS[diff]||RACE_BOTS.medium;
 
   RC={
-    diff,questions,shuffleMaps,
-    playerScore:0,botScore:0,
-    playerIdx:0,botIdx:0,
+    diff,allQ,
+    TARGET:15,
+    // Player gets a cycling pool of questions
+    pool:shuffle(allQ),
+    playerQIdx:0,
+    playerScore:0,
+    playerQCount:0,   // total questions seen (for display)
+    shuffleMaps:{},   // computed on demand per playerQIdx
+    // Bot
+    botPool:shuffle(allQ),
+    botQIdx:0,
+    botScore:0,
     botCfg,
     botTimer:null,botFrozen:false,botPenaltyQ:0,
     playerShield:false,turboNext:false,
     startTime:Date.now(),
     finished:false,
     powerupsEarned:0,
-    pendingPowerup:false
   };
 
   document.getElementById('race-meta').textContent=`${vak.naam} · Bot Race · ${botCfg.name}`;
@@ -7284,21 +7279,33 @@ function startRace(diff){
   raceBotTick();
 }
 
+function raceGetCurrentQ(){
+  // Cycle through pool when exhausted
+  if(RC.playerQIdx>=RC.pool.length){
+    RC.pool=[...RC.allQ].sort(()=>Math.random()-.5);
+    RC.playerQIdx=0;
+    RC.shuffleMaps={};
+  }
+  return RC.pool[RC.playerQIdx];
+}
+
 function raceShowQ(){
-  const idx=RC.playerIdx;
-  const q=RC.questions[idx];
-  if(!q)return;
-  const tot=RC.questions.length;
-  document.getElementById('race-qctr').textContent=`Vraag ${idx+1} van ${tot}`;
+  if(RC.finished)return;
+  const q=raceGetCurrentQ();
+  document.getElementById('race-qctr').textContent=`Vraag ${RC.playerQCount+1} · Stap ${RC.playerScore}/${RC.TARGET}`;
   document.getElementById('race-qq').textContent=q.v;
   document.getElementById('race-fb').style.display='none';
   document.getElementById('race-powerup-bar').style.display='none';
   document.getElementById('race-nxt').style.display='none';
 
-  const map=RC.shuffleMaps[idx]||[0,1,2,3];
+  if(!RC.shuffleMaps[RC.playerQIdx]){
+    const m=[0,1,2,3];
+    for(let i=3;i>0;i--){const j=Math.floor(Math.random()*(i+1));[m[i],m[j]]=[m[j],m[i]];}
+    RC.shuffleMaps[RC.playerQIdx]=m;
+  }
+  const map=RC.shuffleMaps[RC.playerQIdx];
   const correctPos=map.indexOf(q.c);
   RC._currentCorrect=correctPos;
-  RC._currentMap=map;
 
   const area=document.getElementById('race-opts');
   area.innerHTML='';
@@ -7331,11 +7338,10 @@ function raceStartTimer(){
 }
 
 function raceTijdOp(){
-  // Time up = wrong
   const btns=document.querySelectorAll('#race-opts .race-opt');
   btns.forEach(b=>b.disabled=true);
   if(btns[RC._currentCorrect])btns[RC._currentCorrect].classList.add('correct');
-  raceFeedback(false,RC.questions[RC.playerIdx]);
+  raceFeedback(false,raceGetCurrentQ());
 }
 
 function raceKies(gekozen,correct){
@@ -7343,47 +7349,34 @@ function raceKies(gekozen,correct){
   const btns=document.querySelectorAll('#race-opts .race-opt');
   btns.forEach(b=>b.disabled=true);
   const ok=gekozen===correct;
-  if(ok){
-    btns[gekozen].classList.add('correct');
-  } else {
-    btns[gekozen].classList.add('wrong');
-    if(btns[correct])btns[correct].classList.add('correct');
-  }
-  raceFeedback(ok,RC.questions[RC.playerIdx]);
+  if(ok) btns[gekozen].classList.add('correct');
+  else{ btns[gekozen].classList.add('wrong'); if(btns[correct])btns[correct].classList.add('correct'); }
+  raceFeedback(ok,raceGetCurrentQ());
 }
 
 function raceFeedback(ok,q){
+  if(RC.finished)return;
   if(ok){
     RC.playerScore++;
-    if(RC.turboNext){RC.playerScore++;RC.turboNext=false;raceToast('🚀 Turbo! +2 punten!');}
+    if(RC.turboNext){RC.playerScore++;RC.turboNext=false;raceToast('🚀 Turbo! +2 stappen!');}
     RC.powerupsEarned++;
     raceUpdateTrack();
+    if(RC.finished)return;
     playSound&&playSound('correct');
-
-    // Offer power-up every 3 correct answers
-    if(RC.powerupsEarned%3===0){
-      showPowerupChoice();
-      return; // powerup bar shows, then nextQ button
-    }
+    if(RC.powerupsEarned%3===0){showPowerupChoice(q);return;}
   } else {
     playSound&&playSound('wrong');
   }
-
   const fb=document.getElementById('race-fb');
   fb.style.display='block';
   fb.className='race-fb '+(ok?'fbok':'fbno');
-  fb.innerHTML=`<div class="fbt">${ok?'✓ Goed!':'✗ Fout'}</div><div class="fbtx">${q.u||''}</div>`;
+  fb.innerHTML=`<div class="fbt">${ok?'✓ Stap vooruit!':'✗ Fout — geen stap'}</div><div class="fbtx">${q.u||''}</div>`;
   document.getElementById('race-nxt').style.display='block';
-
-  if(RC.playerIdx>=RC.questions.length-1&&!RC.finished){
-    document.getElementById('race-nxt').textContent='Zie resultaat →';
-  }
 }
 
-function showPowerupChoice(){
+function showPowerupChoice(q){
   const bar=document.getElementById('race-powerup-bar');
   const row=document.getElementById('race-pu-row');
-  // Pick 3 random powerups
   const shuffled=[...POWERUPS].sort(()=>Math.random()-.5).slice(0,3);
   row.innerHTML='';
   shuffled.forEach(pu=>{
@@ -7392,99 +7385,82 @@ function showPowerupChoice(){
     btn.style.animation='puPop .3s ease';
     btn.innerHTML=`${pu.icon} ${pu.label}<span class="pu-desc">${pu.desc}</span>`;
     btn.onclick=()=>{
+      if(RC.finished)return;
       pu.apply();
       bar.style.display='none';
       const fb=document.getElementById('race-fb');
-      const q=RC.questions[RC.playerIdx];
       fb.style.display='block';
       fb.className='race-fb fbok';
-      fb.innerHTML=`<div class="fbt">✓ Goed! + ${pu.icon} ${pu.label}</div><div class="fbtx">${q.u||''}</div>`;
+      fb.innerHTML=`<div class="fbt">✓ Stap vooruit! + ${pu.icon} ${pu.label}</div><div class="fbtx">${q.u||''}</div>`;
       document.getElementById('race-nxt').style.display='block';
-      if(RC.playerIdx>=RC.questions.length-1&&!RC.finished){
-        document.getElementById('race-nxt').textContent='Zie resultaat →';
-      }
     };
     row.appendChild(btn);
   });
   bar.style.display='block';
+  // Also show feedback + next behind the powerup panel
+  const fb=document.getElementById('race-fb');
+  fb.style.display='block';
+  fb.className='race-fb fbok';
+  fb.innerHTML=`<div class="fbt">✓ Stap vooruit!</div><div class="fbtx">${q.u||''}</div>`;
+  document.getElementById('race-nxt').style.display='block';
 }
 
 function raceNextQ(){
-  RC.playerIdx++;
-  if(RC.playerIdx>=RC.questions.length){
-    raceFinish('player');
-    return;
-  }
+  if(RC.finished)return;
+  RC.playerQIdx++;
+  RC.playerQCount++;
   raceShowQ();
 }
 
 function raceUpdateTrack(){
-  const tot=RC.questions.length;
+  const T=RC.TARGET||15;
   const trackW=document.querySelector('.race-track')?.clientWidth||280;
-  const carW=24;
-  const usable=trackW-carW-36;
-
-  const playerPct=Math.min(1,RC.playerScore/tot);
-  const botPct=Math.min(1,RC.botScore/tot);
+  const usable=trackW-28-36;
 
   const cp=document.getElementById('race-car-player');
   const cb=document.getElementById('race-car-bot');
-  if(cp)cp.style.left=(4+playerPct*usable)+'px';
-  if(cb)cb.style.left=(4+botPct*usable)+'px';
+  if(cp)cp.style.left=(4+Math.min(1,RC.playerScore/T)*usable)+'px';
+  if(cb)cb.style.left=(4+Math.min(1,RC.botScore/T)*usable)+'px';
 
   const sp=document.getElementById('race-score-player');
   const sb=document.getElementById('race-score-bot');
-  if(sp)sp.textContent=`${RC.playerScore}/${tot}`;
-  if(sb)sb.textContent=`${RC.botScore}/${tot}`;
+  if(sp)sp.textContent=`${RC.playerScore}/${T}`;
+  if(sb)sb.textContent=`${RC.botScore}/${T}`;
 
-  // Check score-based finish (reached 15 correct)
   if(!RC.finished){
-    if(RC.botScore>=tot) raceFinish('bot');
-    else if(RC.playerScore>=tot) raceFinish('player');
+    if(RC.playerScore>=T) raceFinish('player');
+    else if(RC.botScore>=T) raceFinish('bot');
   }
 }
 
 function raceBotTick(){
-  if(RC.finished)return;
-  const cfg=RC.botCfg;
-  const tot=RC.questions.length;
-
-  // Bot answers one question at a time with realistic delays
+  const T=RC.TARGET||15;
   function botAnswerNext(){
-    if(RC.finished||RC.botIdx>=tot){
-      if(!RC.finished)raceFinish('bot');
-      return;
-    }
-    if(RC.botFrozen){
-      // Wait and retry
-      RC.botTimer=setTimeout(botAnswerNext,500);
-      return;
-    }
-    // Handle penalty question (sendback power-up) — bot gets an extra delay
+    if(RC.finished||RC.botScore>=T)return;
+    if(RC.botFrozen){RC.botTimer=setTimeout(botAnswerNext,500);return;}
     if(RC.botPenaltyQ>0){
       RC.botPenaltyQ--;
-      const penaltyDelay=3000+Math.random()*2000;
       raceToast('↩️ Bot beantwoordt extra vraag…');
-      RC.botTimer=setTimeout(botAnswerNext,penaltyDelay);
+      RC.botTimer=setTimeout(botAnswerNext,3000+Math.random()*2000);
       return;
     }
-    const delay=(cfg.speed.min+(Math.random()*(cfg.speed.max-cfg.speed.min)))*1000;
+    const cfg=RC.botCfg;
+    const delay=(cfg.speed.min+Math.random()*(cfg.speed.max-cfg.speed.min))*1000;
     RC.botTimer=setTimeout(()=>{
       if(RC.finished)return;
-      const correct=Math.random()<cfg.accuracy;
-      if(correct){
+      // Cycle bot pool if exhausted
+      if(RC.botQIdx>=RC.botPool.length){
+        RC.botPool=[...RC.allQ].sort(()=>Math.random()-.5);
+        RC.botQIdx=0;
+      }
+      RC.botQIdx++;
+      if(Math.random()<cfg.accuracy){
         RC.botScore++;
         raceUpdateTrack();
-        // Animate bot car briefly
         const cb=document.getElementById('race-car-bot');
         if(cb){cb.style.animation='racePulse .3s ease';setTimeout(()=>{cb.style.animation=''},350);}
       }
-      RC.botIdx++;
-      if(RC.botIdx>=tot&&!RC.finished){
-        raceFinish('bot');
-      } else {
-        botAnswerNext();
-      }
+      botAnswerNext();
     },delay);
   }
   botAnswerNext();
@@ -7502,7 +7478,7 @@ function raceFinish(who){
   document.getElementById('race-powerup-bar').style.display='none';
 
   const elapsed=Math.round((Date.now()-RC.startTime)/1000);
-  const tot=RC.questions.length;
+  const tot=RC.TARGET||15;
   const playerWin=RC.playerScore>=tot||(RC.playerScore>RC.botScore)||(RC.playerScore===RC.botScore&&who==='player');
 
   // Show finish overlay
