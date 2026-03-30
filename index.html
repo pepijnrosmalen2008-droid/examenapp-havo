@@ -391,7 +391,8 @@ html:not(.dark) .sb-pink{display:none}
 .sb-ring::before{content:'';position:absolute;width:600px;height:600px;top:50%;left:50%;transform:translate(-50%,-50%) rotate(90deg);background:conic-gradient(rgba(0,0,0,0),color-mix(in srgb,var(--or) 40%,#1a1a2e),rgba(0,0,0,0) 50%,rgba(0,0,0,0) 50%,color-mix(in srgb,var(--or) 40%,#1a1a2e),rgba(0,0,0,0) 100%);filter:brightness(1.35);animation:sbSpin 3s linear infinite}
 @keyframes sbSpin{to{transform:translate(-50%,-50%) rotate(450deg)}}
 /* ── RACE MODE ── */
-#sc-race{background:#0A0C10;display:flex;flex-direction:column;min-height:100vh;padding-bottom:40px}
+#sc-race{background:#0A0C10;flex-direction:column;min-height:100vh;padding-bottom:40px}
+#sc-race.on{display:flex}
 #sc-race-res{background:linear-gradient(180deg,#0A0C10 0%,#141824 100%)}
 .race-qmcd{border:1px solid rgba(239,68,68,.35)!important;position:relative;overflow:hidden}
 .race-qmcd::before{content:'';position:absolute;inset:0;background:linear-gradient(135deg,rgba(239,68,68,.07),rgba(234,179,8,.07));pointer-events:none}
