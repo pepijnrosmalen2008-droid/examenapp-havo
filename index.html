@@ -442,6 +442,13 @@ html:not(.dark) .sb-pink{display:none}
 @keyframes raceShake{0%,100%{transform:translateX(0)}20%{transform:translateX(-6px)}40%{transform:translateX(6px)}60%{transform:translateX(-4px)}80%{transform:translateX(4px)}}
 @keyframes racePulse{0%,100%{transform:scale(1)}50%{transform:scale(1.25)}}
 @keyframes puPop{0%{transform:scale(.7);opacity:0}80%{transform:scale(1.05)}100%{transform:scale(1);opacity:1}}
+@keyframes rfoIn{0%{opacity:0;transform:translate(-50%,-50%) scale(.6)}60%{transform:translate(-50%,-50%) scale(1.08)}100%{opacity:1;transform:translate(-50%,-50%) scale(1)}}
+@keyframes rfoFlag{0%,100%{transform:rotate(-8deg) scale(1)}50%{transform:rotate(8deg) scale(1.2)}}
+.race-finish-overlay{position:fixed;inset:0;z-index:500;background:rgba(0,0,0,.72);backdrop-filter:blur(8px);display:flex;align-items:center;justify-content:center}
+.rfo-inner{position:fixed;top:50%;left:50%;transform:translate(-50%,-50%);text-align:center;animation:rfoIn .45s cubic-bezier(.34,1.56,.64,1) forwards}
+.rfo-flag{font-size:64px;animation:rfoFlag .7s ease-in-out infinite;display:block;margin-bottom:12px}
+.rfo-title{font-size:38px;font-weight:900;letter-spacing:2px;color:#fff;text-shadow:0 0 30px rgba(var(--or-rgb),1),0 0 60px rgba(var(--or-rgb),.6);margin-bottom:8px}
+.rfo-sub{font-size:18px;font-weight:700;color:var(--tx2)}
 .sb-filter-btn{position:absolute;top:8px;right:8px;z-index:2;width:38px;height:40px;display:flex;align-items:center;justify-content:center;border-radius:8px;background:linear-gradient(to bottom,color-mix(in srgb,var(--or) 25%,#000),#000,color-mix(in srgb,var(--or) 20%,#000));border:none;cursor:pointer}
 .sb-filter-btn .sb-clear-icon{display:none}
 .sb-poda.sb-has-text .sb-filter-btn .sb-filter-icon{display:none}
@@ -2683,6 +2690,13 @@ html.dark .hsd-pill{background:var(--bg2);border-color:var(--bo2)}
   <button id="race-nxt" class="nxt" style="display:none" onclick="raceNextQ()">Volgende →</button>
 </div>
 <div id="race-toast" class="race-toast"></div>
+<div id="race-finish-overlay" class="race-finish-overlay" style="display:none">
+  <div class="rfo-inner">
+    <div class="rfo-flag">🏁</div>
+    <div class="rfo-title" id="rfo-title">FINISH!</div>
+    <div class="rfo-sub" id="rfo-sub"></div>
+  </div>
+</div>
 </div>
 
 <!-- RACE RESULT -->
@@ -7408,8 +7422,8 @@ function raceUpdateTrack(){
   const carW=24;
   const usable=trackW-carW-36;
 
-  const playerPct=RC.playerScore/tot;
-  const botPct=RC.botScore/tot;
+  const playerPct=Math.min(1,RC.playerScore/tot);
+  const botPct=Math.min(1,RC.botScore/tot);
 
   const cp=document.getElementById('race-car-player');
   const cb=document.getElementById('race-car-bot');
@@ -7420,6 +7434,12 @@ function raceUpdateTrack(){
   const sb=document.getElementById('race-score-bot');
   if(sp)sp.textContent=`${RC.playerScore}/${tot}`;
   if(sb)sb.textContent=`${RC.botScore}/${tot}`;
+
+  // Check score-based finish (reached 15 correct)
+  if(!RC.finished){
+    if(RC.botScore>=tot) raceFinish('bot');
+    else if(RC.playerScore>=tot) raceFinish('player');
+  }
 }
 
 function raceBotTick(){
@@ -7474,15 +7494,30 @@ function raceFinish(who){
   clearInterval(_raceTimerInterval);
   clearTimeout(RC.botTimer);
 
-  // Disable all opts
+  // Disable all opts + hide nav
   document.querySelectorAll('#race-opts .race-opt').forEach(b=>b.disabled=true);
   document.getElementById('race-nxt').style.display='none';
+  document.getElementById('race-powerup-bar').style.display='none';
 
   const elapsed=Math.round((Date.now()-RC.startTime)/1000);
   const tot=RC.questions.length;
-  const playerWin=RC.playerScore>RC.botScore||(RC.playerScore===RC.botScore&&who==='player');
+  const playerWin=RC.playerScore>=tot||(RC.playerScore>RC.botScore)||(RC.playerScore===RC.botScore&&who==='player');
+
+  // Show finish overlay
+  const ov=document.getElementById('race-finish-overlay');
+  const title=document.getElementById('rfo-title');
+  const sub=document.getElementById('rfo-sub');
+  if(ov&&title&&sub){
+    title.textContent=playerWin?'JIJ WINT! 🎉':'BOT WINT 😤';
+    title.style.color=playerWin?'#4ade80':'#f87171';
+    sub.textContent=playerWin
+      ?`${RC.playerScore}/${tot} goed in ${elapsed}s 🏆`
+      :`Bot: ${RC.botScore}/${tot} · Jij: ${RC.playerScore}/${tot}`;
+    ov.style.display='flex';
+  }
 
   setTimeout(()=>{
+    if(ov)ov.style.display='none';
     // Build result screen
     document.getElementById('race-res-emi').textContent=playerWin?'🏆':'😅';
     document.getElementById('race-res-tit').textContent=playerWin?'Jij wint! 🎉':'Bot wint… 😤';
@@ -7514,7 +7549,7 @@ function raceFinish(who){
       <div class="rb-row"><span>Tijd</span><strong>${elapsed}s</strong></div>`;
 
     show('sc-race-res');
-  },1200);
+  },2500);
 }
 
 function stopRace(){
