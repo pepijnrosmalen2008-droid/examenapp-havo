@@ -444,7 +444,8 @@ html:not(.dark) .sb-pink{display:none}
 @keyframes puPop{0%{transform:scale(.7);opacity:0}80%{transform:scale(1.05)}100%{transform:scale(1);opacity:1}}
 @keyframes rfoIn{0%{opacity:0;transform:translate(-50%,-50%) scale(.6)}60%{transform:translate(-50%,-50%) scale(1.08)}100%{opacity:1;transform:translate(-50%,-50%) scale(1)}}
 @keyframes rfoFlag{0%,100%{transform:rotate(-8deg) scale(1)}50%{transform:rotate(8deg) scale(1.2)}}
-.race-finish-overlay{position:fixed;inset:0;z-index:500;background:rgba(0,0,0,.72);backdrop-filter:blur(8px);display:flex;align-items:center;justify-content:center}
+.race-finish-overlay{position:fixed;inset:0;z-index:500;background:rgba(0,0,0,.72);backdrop-filter:blur(8px);display:none;align-items:center;justify-content:center}
+.race-finish-overlay.visible{display:flex}
 .rfo-inner{position:fixed;top:50%;left:50%;transform:translate(-50%,-50%);text-align:center;animation:rfoIn .45s cubic-bezier(.34,1.56,.64,1) forwards}
 .rfo-flag{font-size:64px;animation:rfoFlag .7s ease-in-out infinite;display:block;margin-bottom:12px}
 .rfo-title{font-size:38px;font-weight:900;letter-spacing:2px;color:#fff;text-shadow:0 0 30px rgba(var(--or-rgb),1),0 0 60px rgba(var(--or-rgb),.6);margin-bottom:8px}
@@ -7513,11 +7514,11 @@ function raceFinish(who){
     sub.textContent=playerWin
       ?`${RC.playerScore}/${tot} goed in ${elapsed}s 🏆`
       :`Bot: ${RC.botScore}/${tot} · Jij: ${RC.playerScore}/${tot}`;
-    ov.style.display='flex';
+    ov.classList.add('visible');
   }
 
   setTimeout(()=>{
-    if(ov)ov.style.display='none';
+    if(ov)ov.classList.remove('visible');
     // Build result screen
     document.getElementById('race-res-emi').textContent=playerWin?'🏆':'😅';
     document.getElementById('race-res-tit').textContent=playerWin?'Jij wint! 🎉':'Bot wint… 😤';
