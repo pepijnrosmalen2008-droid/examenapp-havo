@@ -10202,6 +10202,8 @@ if('serviceWorker' in navigator){
     navigator.serviceWorker.register('/sw.js',{updateViaCache:'none'}).then(reg=>{
       reg.update();
     }).catch(()=>{});
+    // Reload automatically when new service worker takes control (clears stale PWA cache)
+    navigator.serviceWorker.addEventListener('controllerchange',()=>window.location.reload());
   });
 }
 </script>
