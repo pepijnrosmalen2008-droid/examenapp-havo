@@ -390,6 +390,58 @@ html:not(.dark) .sb-pink{display:none}
 .sb-ring{position:absolute;height:42px;width:40px;overflow:hidden;top:7px;right:7px;border-radius:8px}
 .sb-ring::before{content:'';position:absolute;width:600px;height:600px;top:50%;left:50%;transform:translate(-50%,-50%) rotate(90deg);background:conic-gradient(rgba(0,0,0,0),color-mix(in srgb,var(--or) 40%,#1a1a2e),rgba(0,0,0,0) 50%,rgba(0,0,0,0) 50%,color-mix(in srgb,var(--or) 40%,#1a1a2e),rgba(0,0,0,0) 100%);filter:brightness(1.35);animation:sbSpin 3s linear infinite}
 @keyframes sbSpin{to{transform:translate(-50%,-50%) rotate(450deg)}}
+/* ── RACE MODE ── */
+#sc-race{background:#0A0C10;display:flex;flex-direction:column;min-height:100vh;padding-bottom:40px}
+#sc-race-res{background:linear-gradient(180deg,#0A0C10 0%,#141824 100%)}
+.race-qmcd{border:1px solid rgba(239,68,68,.35)!important;position:relative;overflow:hidden}
+.race-qmcd::before{content:'';position:absolute;inset:0;background:linear-gradient(135deg,rgba(239,68,68,.07),rgba(234,179,8,.07));pointer-events:none}
+.race-diff-row{display:flex;gap:8px;margin-top:10px;flex-wrap:wrap}
+.race-diff-btn{flex:1;min-width:80px;padding:7px 10px;border-radius:20px;border:1px solid rgba(255,255,255,.15);background:rgba(255,255,255,.06);color:var(--tx);font-size:12px;font-weight:600;cursor:pointer;transition:all .15s}
+.race-diff-btn:hover{background:rgba(239,68,68,.2);border-color:rgba(239,68,68,.5);color:#f87171}
+.race-tb{display:flex;align-items:center;gap:10px;padding:12px 16px;border-bottom:1px solid var(--bo);position:sticky;top:0;background:rgba(10,12,16,.92);backdrop-filter:blur(16px);z-index:10}
+.race-meta{flex:1;font-size:13px;font-weight:600;color:var(--tx2)}
+.race-tracks{padding:14px 16px 8px;display:flex;flex-direction:column;gap:10px}
+.race-track-row{display:flex;align-items:center;gap:10px}
+.race-track-label{font-size:12px;font-weight:700;color:var(--tx2);width:52px;flex-shrink:0;text-align:right}
+.race-track{flex:1;height:36px;background:rgba(255,255,255,.05);border-radius:18px;border:1px solid var(--bo);position:relative;overflow:hidden}
+.race-car{position:absolute;top:50%;transform:translateY(-50%);font-size:18px;left:4px;transition:left .35s cubic-bezier(.34,1.56,.64,1);z-index:2;filter:drop-shadow(0 0 6px rgba(255,255,255,.3))}
+.race-car-player{filter:drop-shadow(0 0 8px rgba(var(--or-rgb),.8))}
+.race-car-bot{filter:drop-shadow(0 0 8px rgba(239,68,68,.8))}
+.race-finish{position:absolute;right:4px;top:50%;transform:translateY(-50%);font-size:16px}
+.race-track-score{font-size:12px;font-weight:700;color:var(--mu);width:36px;flex-shrink:0}
+.race-qbody{padding:14px 16px;max-width:640px;margin:0 auto;width:100%}
+.race-qring{width:46px;height:46px;position:relative;margin:0 auto 8px;display:flex;align-items:center;justify-content:center}
+.race-qctr{text-align:center;font-size:12px;color:var(--mu);font-weight:600;margin-bottom:10px;letter-spacing:.5px}
+.race-qq{font-size:16px;font-weight:600;line-height:1.5;color:var(--tx);margin-bottom:16px;text-align:center}
+.race-opts{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-bottom:12px}
+.race-opt{padding:12px 14px;border-radius:12px;border:1.5px solid var(--bo);background:rgba(255,255,255,.04);color:var(--tx);font-size:14px;font-weight:500;cursor:pointer;text-align:left;transition:all .15s;line-height:1.4}
+.race-opt:hover:not(:disabled){background:rgba(var(--or-rgb),.1);border-color:rgba(var(--or-rgb),.4)}
+.race-opt.correct{background:rgba(74,222,128,.15)!important;border-color:#4ade80!important;color:#4ade80}
+.race-opt.wrong{background:rgba(248,113,113,.12)!important;border-color:#f87171!important;color:#f87171}
+.race-opt.shaken{animation:raceShake .4s ease}
+.race-fb{padding:12px 14px;border-radius:12px;margin-bottom:10px;font-size:13px;line-height:1.5}
+.race-fb.fbok{background:rgba(74,222,128,.1);border:1px solid rgba(74,222,128,.3);color:#4ade80}
+.race-fb.fbno{background:rgba(248,113,113,.1);border:1px solid rgba(248,113,113,.3);color:#f87171}
+.race-fb .fbt{font-weight:700;margin-bottom:3px}
+.race-fb .fbtx{color:var(--tx2);font-size:12px}
+.race-powerup-bar{background:rgba(255,200,0,.06);border:1px solid rgba(255,200,0,.2);border-radius:14px;padding:12px 14px;margin-bottom:10px}
+.race-pu-title{font-size:12px;font-weight:700;color:#fcd34d;margin-bottom:8px;text-align:center;letter-spacing:.5px}
+.race-pu-row{display:flex;gap:8px;flex-wrap:wrap;justify-content:center}
+.race-pu-btn{padding:8px 14px;border-radius:20px;border:1px solid rgba(255,200,0,.3);background:rgba(255,200,0,.1);color:#fcd34d;font-size:13px;font-weight:600;cursor:pointer;transition:all .15s;display:flex;align-items:center;gap:6px}
+.race-pu-btn:hover{background:rgba(255,200,0,.22);border-color:rgba(255,200,0,.6);transform:scale(1.04)}
+.race-pu-btn .pu-desc{font-size:10px;color:var(--mu);font-weight:400;display:block;margin-top:1px}
+.race-toast{position:fixed;bottom:70px;left:50%;transform:translateX(-50%) translateY(20px);background:rgba(20,20,30,.95);border:1px solid var(--bo);border-radius:20px;padding:10px 20px;font-size:14px;font-weight:600;color:var(--tx);pointer-events:none;opacity:0;transition:all .3s;z-index:9999;white-space:nowrap;backdrop-filter:blur(12px)}
+.race-toast.show{opacity:1;transform:translateX(-50%) translateY(0)}
+.race-res-vs{display:flex;gap:16px;justify-content:center;margin:20px 0;flex-wrap:wrap}
+.race-res-col{text-align:center;background:rgba(255,255,255,.04);border:1px solid var(--bo);border-radius:16px;padding:16px 20px;min-width:120px}
+.race-res-col.winner{border-color:rgba(var(--or-rgb),.5);background:rgba(var(--or-rgb),.08)}
+.race-res-col .res-emo{font-size:28px;margin-bottom:4px}
+.race-res-col .res-name{font-size:13px;font-weight:700;color:var(--tx2)}
+.race-res-col .res-sc{font-size:26px;font-weight:800;color:var(--tx)}
+.race-res-col .res-time{font-size:11px;color:var(--mu);margin-top:2px}
+@keyframes raceShake{0%,100%{transform:translateX(0)}20%{transform:translateX(-6px)}40%{transform:translateX(6px)}60%{transform:translateX(-4px)}80%{transform:translateX(4px)}}
+@keyframes racePulse{0%,100%{transform:scale(1)}50%{transform:scale(1.25)}}
+@keyframes puPop{0%{transform:scale(.7);opacity:0}80%{transform:scale(1.05)}100%{transform:scale(1);opacity:1}}
 .sb-filter-btn{position:absolute;top:8px;right:8px;z-index:2;width:38px;height:40px;display:flex;align-items:center;justify-content:center;border-radius:8px;background:linear-gradient(to bottom,color-mix(in srgb,var(--or) 25%,#000),#000,color-mix(in srgb,var(--or) 20%,#000));border:none;cursor:pointer}
 .sb-filter-btn .sb-clear-icon{display:none}
 .sb-poda.sb-has-text .sb-filter-btn .sb-filter-icon{display:none}
@@ -2522,6 +2574,7 @@ html.dark .hsd-pill{background:var(--bg2);border-color:var(--bo2)}
       <div class="qmcd" onclick="startQ('snel')"><div class="qmci"><svg viewBox="0 0 24 24"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg></div><h3>Snelle Quiz</h3><p>Korte vragen met 15 sec timer. Stamp leerstof in je geheugen.</p><div class="qmode-desc">4 antwoordopties · Timer · Goed/Fout feedback</div><span class="pill ps">15 sec · 5 vragen</span><div style="font-size:10px;color:var(--mu);margin-top:6px;display:flex;align-items:center;gap:4px"><span style="color:#4ade80;font-weight:700">📋</span> Mix van CE-vragen &amp; Slagio oefenvragen</div></div>
       <div class="qmcd" onclick="startQ('oud')"><div class="qmci"><svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg></div><h3>Oud-examen stijl</h3><p>Open vragen zoals bij het echte CE. Schrijf je antwoord en beoordeel jezelf.</p><div class="qmode-desc">Open vragen · Modelantwoord · Zelf beoordelen</div><span class="pill po">Geen timer · 3 vragen</span><div style="font-size:10px;color:var(--mu);margin-top:6px;display:flex;align-items:center;gap:4px"><span style="color:#4ade80;font-weight:700">📋</span> Vragen uit officiële CE's (examenblad.nl)</div></div>
       <div class="qmcd" onclick="startFlash()"><div class="qmci"><svg viewBox="0 0 24 24"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg></div><h3>Begrippen oefenen</h3><p>Flashcards: ken jij alle begrippen van dit domein?</p><div class="qmode-desc">Flashcards · Ken je het begrip? Ja/Nee</div><span class="pill" style="background:rgba(139,92,246,.2);color:#A78BFA">Flip &amp; leer</span></div>
+      <div class="qmcd race-qmcd"><div class="qmci" style="background:linear-gradient(135deg,rgba(239,68,68,.2),rgba(234,179,8,.2))"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3h18M3 3v6l9 3 9-3V3M12 12v9M8 21h8"/></svg></div><h3>Bot Race 🤖</h3><p>Race tegen de bot! 15 vragen van heel het vak met power-ups om je tegenstander terug te gooien.</p><div class="qmode-desc">Race · Power-ups · 15 vragen · Heel het vak</div><div class="race-diff-row"><button class="race-diff-btn" onclick="event.stopPropagation();startRace('easy')">😌 Makkelijk</button><button class="race-diff-btn" onclick="event.stopPropagation();startRace('medium')">😤 Gemiddeld</button><button class="race-diff-btn" onclick="event.stopPropagation();startRace('hard')">💀 Moeilijk</button></div></div>
     </div>
   </div>
 </div>
@@ -2598,6 +2651,52 @@ html.dark .hsd-pill{background:var(--bg2);border-color:var(--bo2)}
     <button class="btns" onclick="switchMode()">🔀 Andere modus</button>
     <button class="btns" onclick="show('sc-detail')">← Terug naar domeinen</button>
     <button class="btns" onclick="show('sc-home')">🏠 Home</button>
+  </div>
+</div>
+</div>
+
+<!-- RACE -->
+<div id="sc-race" class="sc">
+<div class="race-tb"><span class="ql">🏁</span><span class="race-meta" id="race-meta"></span><button class="qstp" onclick="stopRace()">✕ Stop</button></div>
+<div class="race-tracks">
+  <div class="race-track-row" id="race-track-player">
+    <span class="race-track-label" id="race-label-player">Jij</span>
+    <div class="race-track"><div class="race-car race-car-player" id="race-car-player">🚀</div><div class="race-finish">🏁</div></div>
+    <span class="race-track-score" id="race-score-player">0/15</span>
+  </div>
+  <div class="race-track-row" id="race-track-bot">
+    <span class="race-track-label" id="race-label-bot">Bot 🤖</span>
+    <div class="race-track"><div class="race-car race-car-bot" id="race-car-bot">🤖</div><div class="race-finish">🏁</div></div>
+    <span class="race-track-score" id="race-score-bot">0/15</span>
+  </div>
+</div>
+<div class="race-qbody">
+  <div class="race-qring" id="race-qring"><svg width="46" height="46" viewBox="0 0 46 46"><circle class="trbg" cx="23" cy="23" r="19" stroke-dasharray="119" stroke-dashoffset="0"/><circle class="trfg" id="race-tcirc" cx="23" cy="23" r="19" stroke-dasharray="119" stroke-dashoffset="0"/></svg><div class="trn" id="race-tnum">15</div></div>
+  <div class="race-qctr" id="race-qctr">Vraag 1 van 15</div>
+  <div class="race-qq" id="race-qq"></div>
+  <div class="race-opts" id="race-opts"></div>
+  <div id="race-fb" class="race-fb" style="display:none"></div>
+  <div id="race-powerup-bar" class="race-powerup-bar" style="display:none">
+    <div class="race-pu-title">⚡ Kies een power-up!</div>
+    <div class="race-pu-row" id="race-pu-row"></div>
+  </div>
+  <button id="race-nxt" class="nxt" style="display:none" onclick="raceNextQ()">Volgende →</button>
+</div>
+<div id="race-toast" class="race-toast"></div>
+</div>
+
+<!-- RACE RESULT -->
+<div id="sc-race-res" class="sc">
+<div class="rb">
+  <div class="remi" id="race-res-emi"></div>
+  <h2 id="race-res-tit"></h2>
+  <p id="race-res-sub"></p>
+  <div class="race-res-vs" id="race-res-vs"></div>
+  <div class="rbd" id="race-res-bd"></div>
+  <div class="rbtns">
+    <button class="btnp" onclick="startRace(window._lastRaceDiff)">🔄 Opnieuw</button>
+    <button class="btns" onclick="switchMode()">🔀 Andere modus</button>
+    <button class="btns" onclick="show('sc-detail')">← Domeinen</button>
   </div>
 </div>
 </div>
@@ -7086,6 +7185,353 @@ function toonRes(){
 function retryQ(){startQ(ST.mode);}
 function switchMode(){show('sc-qmode');}
 
+// ═══════ RACE MODE ═══════
+const RACE_BOTS={
+  easy:{name:'Bot Bas 🤖',emoji:'🤖',speed:{min:4.5,max:9},accuracy:.52,skipChance:.12},
+  medium:{name:'Bot Max 🤖',emoji:'🤖',speed:{min:3,max:6},accuracy:.68,skipChance:.07},
+  hard:{name:'Bot Pro 🤖',emoji:'🤖',speed:{min:1.8,max:4.2},accuracy:.84,skipChance:.03}
+};
+
+const POWERUPS=[
+  {id:'freeze',icon:'🧊',label:'Freeze',desc:'Bot staat 6s stil',apply:function(){
+    RC.botFrozen=true;
+    raceToast('🧊 Bot bevroren voor 6 seconden!');
+    setTimeout(()=>{RC.botFrozen=false;},6000);
+  }},
+  {id:'double',icon:'⚡',label:'Dubbelstap',desc:'+2 stappen vooruit',apply:function(){
+    RC.playerScore=Math.min(15,RC.playerScore+2);
+    raceUpdateTrack();
+    raceToast('⚡ Dubbelstap! +2 vooruit');
+  }},
+  {id:'shield',icon:'🛡️',label:'Shield',desc:'Beschermt vs 1 power-up',apply:function(){
+    RC.playerShield=true;
+    raceToast('🛡️ Shield actief! Jij bent beschermd.');
+  }},
+  {id:'sendback',icon:'↩️',label:'Terugsturen',desc:'Bot moet een extra vraag beantwoorden',apply:function(){
+    RC.botPenaltyQ++;
+    raceToast('↩️ Bot moet een extra vraag beantwoorden!');
+  }},
+  {id:'turbo',icon:'🚀',label:'Turbo',desc:'Volgende vraag telt dubbel',apply:function(){
+    RC.turboNext=true;
+    raceToast('🚀 Turbo! Volgende vraag telt dubbel.');
+  }}
+];
+
+let RC={};
+
+function startRace(diff){
+  diff=diff||'medium';
+  window._lastRaceDiff=diff;
+  const vak=ST.vak;
+  if(!vak)return;
+
+  // Gather ALL sv questions from ALL domains of this vak
+  let allQ=[];
+  (vak.domeinen||[]).forEach(d=>{
+    (d.sv||[]).forEach(q=>{
+      allQ.push({...q,_domein:d.naam});
+    });
+  });
+  if(allQ.length<5){raceToast('Te weinig vragen voor een race!');return;}
+
+  // Pick 15 unique questions (or max available), shuffled
+  const shuffled=[...allQ].sort(()=>Math.random()-.5);
+  const questions=shuffled.slice(0,Math.min(15,shuffled.length));
+
+  // Pre-shuffle answer options per question
+  const shuffleMaps=questions.map(()=>{
+    const m=[0,1,2,3];
+    for(let i=3;i>0;i--){const j=Math.floor(Math.random()*(i+1));[m[i],m[j]]=[m[j],m[i]];}
+    return m;
+  });
+
+  const botCfg=RACE_BOTS[diff]||RACE_BOTS.medium;
+
+  RC={
+    diff,questions,shuffleMaps,
+    playerScore:0,botScore:0,
+    playerIdx:0,botIdx:0,
+    botCfg,
+    botTimer:null,botFrozen:false,botPenaltyQ:0,
+    playerShield:false,turboNext:false,
+    startTime:Date.now(),
+    finished:false,
+    powerupsEarned:0,
+    pendingPowerup:false
+  };
+
+  document.getElementById('race-meta').textContent=`${vak.naam} · Bot Race · ${botCfg.name}`;
+  document.getElementById('race-label-bot').textContent=botCfg.name;
+  show('sc-race');
+  raceUpdateTrack();
+  raceShowQ();
+  raceBotTick();
+}
+
+function raceShowQ(){
+  const idx=RC.playerIdx;
+  const q=RC.questions[idx];
+  if(!q)return;
+  const tot=RC.questions.length;
+  document.getElementById('race-qctr').textContent=`Vraag ${idx+1} van ${tot}`;
+  document.getElementById('race-qq').textContent=q.v;
+  document.getElementById('race-fb').style.display='none';
+  document.getElementById('race-powerup-bar').style.display='none';
+  document.getElementById('race-nxt').style.display='none';
+
+  const map=RC.shuffleMaps[idx]||[0,1,2,3];
+  const correctPos=map.indexOf(q.c);
+  RC._currentCorrect=correctPos;
+  RC._currentMap=map;
+
+  const area=document.getElementById('race-opts');
+  area.innerHTML='';
+  map.forEach((origIdx,pos)=>{
+    const btn=document.createElement('button');
+    btn.className='race-opt';
+    btn.textContent=q.o[origIdx];
+    btn.dataset.pos=pos;
+    btn.onclick=function(){if(!btn.disabled)raceKies(pos,correctPos);};
+    area.appendChild(btn);
+  });
+  raceStartTimer();
+}
+
+let _raceTimerInterval=null;
+function raceStartTimer(){
+  clearInterval(_raceTimerInterval);
+  RC._tijd=15;
+  const circ=document.getElementById('race-tcirc');
+  const num=document.getElementById('race-tnum');
+  const total=119;
+  if(circ)circ.style.strokeDashoffset='0';
+  if(num)num.textContent='15';
+  _raceTimerInterval=setInterval(()=>{
+    RC._tijd--;
+    if(num)num.textContent=Math.max(0,RC._tijd);
+    if(circ)circ.style.strokeDashoffset=String(Math.round((1-RC._tijd/15)*total));
+    if(RC._tijd<=0){clearInterval(_raceTimerInterval);raceTijdOp();}
+  },1000);
+}
+
+function raceTijdOp(){
+  // Time up = wrong
+  const btns=document.querySelectorAll('#race-opts .race-opt');
+  btns.forEach(b=>b.disabled=true);
+  if(btns[RC._currentCorrect])btns[RC._currentCorrect].classList.add('correct');
+  raceFeedback(false,RC.questions[RC.playerIdx]);
+}
+
+function raceKies(gekozen,correct){
+  clearInterval(_raceTimerInterval);
+  const btns=document.querySelectorAll('#race-opts .race-opt');
+  btns.forEach(b=>b.disabled=true);
+  const ok=gekozen===correct;
+  if(ok){
+    btns[gekozen].classList.add('correct');
+  } else {
+    btns[gekozen].classList.add('wrong');
+    if(btns[correct])btns[correct].classList.add('correct');
+  }
+  raceFeedback(ok,RC.questions[RC.playerIdx]);
+}
+
+function raceFeedback(ok,q){
+  if(ok){
+    RC.playerScore++;
+    if(RC.turboNext){RC.playerScore++;RC.turboNext=false;raceToast('🚀 Turbo! +2 punten!');}
+    RC.powerupsEarned++;
+    raceUpdateTrack();
+    playSound&&playSound('correct');
+
+    // Offer power-up every 3 correct answers
+    if(RC.powerupsEarned%3===0){
+      showPowerupChoice();
+      return; // powerup bar shows, then nextQ button
+    }
+  } else {
+    playSound&&playSound('wrong');
+  }
+
+  const fb=document.getElementById('race-fb');
+  fb.style.display='block';
+  fb.className='race-fb '+(ok?'fbok':'fbno');
+  fb.innerHTML=`<div class="fbt">${ok?'✓ Goed!':'✗ Fout'}</div><div class="fbtx">${q.u||''}</div>`;
+  document.getElementById('race-nxt').style.display='block';
+
+  if(RC.playerIdx>=RC.questions.length-1&&!RC.finished){
+    document.getElementById('race-nxt').textContent='Zie resultaat →';
+  }
+}
+
+function showPowerupChoice(){
+  const bar=document.getElementById('race-powerup-bar');
+  const row=document.getElementById('race-pu-row');
+  // Pick 3 random powerups
+  const shuffled=[...POWERUPS].sort(()=>Math.random()-.5).slice(0,3);
+  row.innerHTML='';
+  shuffled.forEach(pu=>{
+    const btn=document.createElement('button');
+    btn.className='race-pu-btn';
+    btn.style.animation='puPop .3s ease';
+    btn.innerHTML=`${pu.icon} ${pu.label}<span class="pu-desc">${pu.desc}</span>`;
+    btn.onclick=()=>{
+      pu.apply();
+      bar.style.display='none';
+      const fb=document.getElementById('race-fb');
+      const q=RC.questions[RC.playerIdx];
+      fb.style.display='block';
+      fb.className='race-fb fbok';
+      fb.innerHTML=`<div class="fbt">✓ Goed! + ${pu.icon} ${pu.label}</div><div class="fbtx">${q.u||''}</div>`;
+      document.getElementById('race-nxt').style.display='block';
+      if(RC.playerIdx>=RC.questions.length-1&&!RC.finished){
+        document.getElementById('race-nxt').textContent='Zie resultaat →';
+      }
+    };
+    row.appendChild(btn);
+  });
+  bar.style.display='block';
+}
+
+function raceNextQ(){
+  RC.playerIdx++;
+  if(RC.playerIdx>=RC.questions.length){
+    raceFinish('player');
+    return;
+  }
+  raceShowQ();
+}
+
+function raceUpdateTrack(){
+  const tot=RC.questions.length;
+  const trackW=document.querySelector('.race-track')?.clientWidth||280;
+  const carW=24;
+  const usable=trackW-carW-36;
+
+  const playerPct=RC.playerScore/tot;
+  const botPct=RC.botScore/tot;
+
+  const cp=document.getElementById('race-car-player');
+  const cb=document.getElementById('race-car-bot');
+  if(cp)cp.style.left=(4+playerPct*usable)+'px';
+  if(cb)cb.style.left=(4+botPct*usable)+'px';
+
+  const sp=document.getElementById('race-score-player');
+  const sb=document.getElementById('race-score-bot');
+  if(sp)sp.textContent=`${RC.playerScore}/${tot}`;
+  if(sb)sb.textContent=`${RC.botScore}/${tot}`;
+}
+
+function raceBotTick(){
+  if(RC.finished)return;
+  const cfg=RC.botCfg;
+  const tot=RC.questions.length;
+
+  // Bot answers one question at a time with realistic delays
+  function botAnswerNext(){
+    if(RC.finished||RC.botIdx>=tot){
+      if(!RC.finished)raceFinish('bot');
+      return;
+    }
+    if(RC.botFrozen){
+      // Wait and retry
+      RC.botTimer=setTimeout(botAnswerNext,500);
+      return;
+    }
+    // Handle penalty question (sendback power-up) — bot gets an extra delay
+    if(RC.botPenaltyQ>0){
+      RC.botPenaltyQ--;
+      const penaltyDelay=3000+Math.random()*2000;
+      raceToast('↩️ Bot beantwoordt extra vraag…');
+      RC.botTimer=setTimeout(botAnswerNext,penaltyDelay);
+      return;
+    }
+    const delay=(cfg.speed.min+(Math.random()*(cfg.speed.max-cfg.speed.min)))*1000;
+    RC.botTimer=setTimeout(()=>{
+      if(RC.finished)return;
+      const correct=Math.random()<cfg.accuracy;
+      if(correct){
+        RC.botScore++;
+        raceUpdateTrack();
+        // Animate bot car briefly
+        const cb=document.getElementById('race-car-bot');
+        if(cb){cb.style.animation='racePulse .3s ease';setTimeout(()=>{cb.style.animation=''},350);}
+      }
+      RC.botIdx++;
+      if(RC.botIdx>=tot&&!RC.finished){
+        raceFinish('bot');
+      } else {
+        botAnswerNext();
+      }
+    },delay);
+  }
+  botAnswerNext();
+}
+
+function raceFinish(who){
+  if(RC.finished)return;
+  RC.finished=true;
+  clearInterval(_raceTimerInterval);
+  clearTimeout(RC.botTimer);
+
+  // Disable all opts
+  document.querySelectorAll('#race-opts .race-opt').forEach(b=>b.disabled=true);
+  document.getElementById('race-nxt').style.display='none';
+
+  const elapsed=Math.round((Date.now()-RC.startTime)/1000);
+  const tot=RC.questions.length;
+  const playerWin=RC.playerScore>RC.botScore||(RC.playerScore===RC.botScore&&who==='player');
+
+  setTimeout(()=>{
+    // Build result screen
+    document.getElementById('race-res-emi').textContent=playerWin?'🏆':'😅';
+    document.getElementById('race-res-tit').textContent=playerWin?'Jij wint! 🎉':'Bot wint… 😤';
+    document.getElementById('race-res-sub').textContent=playerWin
+      ?`${RC.playerScore}/${tot} goed — ${elapsed}s. Geweldig!`
+      :`${RC.botScore}/${tot} voor de bot, jij had ${RC.playerScore}/${tot}. Probeer opnieuw!`;
+
+    const vs=document.getElementById('race-res-vs');
+    vs.innerHTML=`
+      <div class="race-res-col${playerWin?' winner':''}">
+        <div class="res-emo">🚀</div>
+        <div class="res-name">Jij</div>
+        <div class="res-sc">${RC.playerScore}/${tot}</div>
+        <div class="res-time">${elapsed}s</div>
+      </div>
+      <div class="race-res-col${!playerWin?' winner':''}">
+        <div class="res-emo">${RC.botCfg.emoji}</div>
+        <div class="res-name">${RC.botCfg.name}</div>
+        <div class="res-sc">${RC.botScore}/${tot}</div>
+        <div class="res-time">${RC.diff}</div>
+      </div>`;
+
+    // Breakdown
+    const pct=Math.round((RC.playerScore/tot)*100);
+    const kleur=pct>=70?'#4ade80':pct>=50?'#fcd34d':'#f87171';
+    document.getElementById('race-res-bd').innerHTML=`
+      <div class="rb-row"><span>Jouw score</span><strong style="color:${kleur}">${RC.playerScore}/${tot} (${pct}%)</strong></div>
+      <div class="rb-row"><span>Moeilijkheid</span><strong>${RC.diff==='easy'?'😌 Makkelijk':RC.diff==='medium'?'😤 Gemiddeld':'💀 Moeilijk'}</strong></div>
+      <div class="rb-row"><span>Tijd</span><strong>${elapsed}s</strong></div>`;
+
+    show('sc-race-res');
+  },1200);
+}
+
+function stopRace(){
+  RC.finished=true;
+  clearInterval(_raceTimerInterval);
+  clearTimeout(RC&&RC.botTimer);
+  show('sc-qmode');
+}
+
+function raceToast(msg){
+  const t=document.getElementById('race-toast');
+  if(!t)return;
+  t.textContent=msg;
+  t.classList.add('show');
+  setTimeout(()=>t.classList.remove('show'),2500);
+}
+
 // ═══════ BOT LEADERBOARD SEED ═══════
 function seedBotsNow(){
   const BOT_KEY='slagio_bots_seeded_v8';
@@ -9405,7 +9851,7 @@ function updateBottomNav(id){
   const lbl=document.getElementById('bnav-profiel-label');
   if(lbl)lbl.textContent=currentUser?'Profiel':'Inloggen';
   // Hide bottom nav during quiz/flashcard/qmode
-  const hideScreens=['sc-quiz','sc-flash','sc-qmode','sc-welcome'];
+  const hideScreens=['sc-quiz','sc-flash','sc-qmode','sc-welcome','sc-race'];
   const bn=document.getElementById('bottom-nav');
   if(bn) bn.style.display=hideScreens.includes(id)?'none':'';
   // Avatar in de profiel-knop van de bottom nav
