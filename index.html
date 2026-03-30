@@ -7558,7 +7558,7 @@ function raceUpdateTrack(){
   // Bot danger warning
   const gap=RC.playerScore-RC.botScore;
   if(gap===-1&&RC.playerScore>0)raceToast('⚠️ Bot is dichtbij!');
-  else if(gap<==-3&&RC.botScore>0)raceToast('🚨 Bot loopt voor!');
+  else if(gap<=-3&&RC.botScore>0)raceToast('🚨 Bot loopt voor!');
 
   if(!RC.finished){
     if(RC.playerScore>=T) raceFinish('player');
