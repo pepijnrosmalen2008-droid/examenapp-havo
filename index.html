@@ -391,6 +391,8 @@ html:not(.dark) .sb-pink{display:none}
 .sb-ring::before{content:'';position:absolute;width:600px;height:600px;top:50%;left:50%;transform:translate(-50%,-50%) rotate(90deg);background:conic-gradient(rgba(0,0,0,0),color-mix(in srgb,var(--or) 40%,#1a1a2e),rgba(0,0,0,0) 50%,rgba(0,0,0,0) 50%,color-mix(in srgb,var(--or) 40%,#1a1a2e),rgba(0,0,0,0) 100%);filter:brightness(1.35);animation:sbSpin 3s linear infinite}
 @keyframes sbSpin{to{transform:translate(-50%,-50%) rotate(450deg)}}
 /* ── RACE MODE ── */
+/* Race screens always use a dark background — force light text in all color schemes */
+#sc-race,#sc-race-res{color:#e8ecf4;--tx:#e8ecf4;--tx2:#b0bdd0;--mu:#8a97aa}
 #sc-race{background:linear-gradient(180deg,#0c0d15 0%,#090b11 100%);flex-direction:column;min-height:100vh;padding-bottom:48px}
 #sc-race.on{display:flex}
 #sc-race-res{background:linear-gradient(180deg,#0A0C10 0%,#141824 100%)}
