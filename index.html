@@ -2,6 +2,7 @@
 <html lang="nl">
 <head>
 <meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="object-src 'none'; base-uri 'self'; upgrade-insecure-requests;">
 <title>Slagio — HAVO &amp; VWO Examenvoorbereiding 2026</title>
 <meta name="description" content="Gratis examenvoorbereiding voor HAVO en VWO. CE-domeinen, samenvattingen, quizzen, cijfercalculator en flashcards.">
 <meta property="og:title" content="Slagio — HAVO &amp; VWO Examenvoorbereiding 2026">
@@ -3238,7 +3239,7 @@ html.dark .hsd-pill{background:var(--bg2);border-color:var(--bo2)}
 </div>
 
 <!-- Supabase SDK — must load before app script -->
-<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.101.1/dist/umd/supabase.js" integrity="sha256-nemRIwEQKZy7uoOYcUFEnleZl6kKX8B3zf4KpR6NVT0=" crossorigin="anonymous"></script>
 <script>
 // ═══════ DATA ═══════
 const VAKKEN = [
