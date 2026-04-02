@@ -709,6 +709,14 @@ html.dark .qb{background:#2e3550}
 .ab-goed{background:#14532d;color:#4ADE80}
 .ab-deels{background:#78350F;color:#FCD34D}
 .ab-fout{background:#7F1D1D;color:#F87171}
+.assess-rubric{font-size:11px;color:var(--mu);text-align:center;margin:-4px 0 14px;line-height:1.8}
+.assess-rubric .ar-g{color:#4ADE80;font-weight:700}.assess-rubric .ar-d{color:#FCD34D;font-weight:700}.assess-rubric .ar-f{color:#F87171;font-weight:700}
+.exam-res-card{display:flex;gap:10px;margin-top:14px;flex-wrap:wrap}
+.exam-res-link{flex:1;display:flex;align-items:center;gap:10px;padding:12px 14px;border-radius:14px;text-decoration:none;color:var(--dk);border:1px solid var(--bo);background:var(--s);transition:all .22s;min-width:130px}
+.exam-res-link:hover{transform:translateY(-2px);box-shadow:0 6px 20px rgba(0,0,0,.12)}
+.exam-res-link.er-alle{border-color:rgba(59,130,246,.3);background:rgba(59,130,246,.07)}.exam-res-link.er-alle:hover{border-color:rgba(59,130,246,.5)}
+.exam-res-link.er-blad{border-color:rgba(var(--or-rgb),.25);background:rgba(var(--or-rgb),.06)}.exam-res-link.er-blad:hover{border-color:rgba(var(--or-rgb),.5)}
+.er-info{display:flex;flex-direction:column;gap:1px;flex:1}.er-title{font-size:13px;font-weight:700}.er-sub{font-size:10px;color:var(--mu);font-weight:400}
 .ab-icon{font-size:20px}
 .ab-txt{font-size:12px}
 /* ── OUD-EXAMEN REDESIGN ─────────────────────── */
@@ -2834,6 +2842,7 @@ html.dark .hsd-pill{background:var(--bg2);border-color:var(--bo2)}
             <div class="ma-text" id="ma-text"></div>
           </div>
           <div class="assess-label">Hoe goed was jouw antwoord?</div>
+          <div class="assess-rubric"><span class="ar-g">✓ Goed</span> — alle kernpunten aanwezig &nbsp;·&nbsp; <span class="ar-d">~ Deels</span> — kern gedeeltelijk &nbsp;·&nbsp; <span class="ar-f">✗ Fout</span> — kern gemist of onjuist</div>
           <div class="assess-btns">
             <button class="assess-btn ab-goed" onclick="beoordeel(1)"><span class="ab-icon">✓</span><span class="ab-txt">Goed</span></button>
             <button class="assess-btn ab-deels" onclick="beoordeel(0.5)"><span class="ab-icon">~</span><span class="ab-txt">Deels goed</span></button>
@@ -2876,6 +2885,7 @@ html.dark .hsd-pill{background:var(--bg2);border-color:var(--bo2)}
   <div class="rbtns">
     <button class="btnp" onclick="retryQ()">🔄 Opnieuw</button>
     <button class="lb-res-btn" id="lb-res-btn" onclick="show('sc-leaderboard');renderLeaderboard()">🏆 Bekijk leaderboard</button>
+    <button class="btns" onclick="deelScore()">📤 Deel je score</button>
     <button class="btns" onclick="openReview()">📋 Bekijk antwoorden</button>
     <button class="btns" onclick="switchMode()">🔀 Andere modus</button>
     <button class="btns" onclick="show('sc-detail')">← Terug naar domeinen</button>
@@ -6766,8 +6776,8 @@ function openVak(id){
   document.getElementById('dtitle').textContent=ST.vak.naam;
   document.getElementById('ddesc').textContent=ST.vak.beschrijving;
   document.getElementById('dce').innerHTML=ST.vak.ceInfo;
-  // Remove previously injected exam-meta + yt-card + grade-panel (avoid stacking on revisit)
-  document.querySelectorAll('.exam-meta,.yt-card,.grade-panel').forEach(el=>el.remove());
+  // Remove previously injected exam-meta + yt-card + grade-panel + exam-res-card (avoid stacking on revisit)
+  document.querySelectorAll('.exam-meta,.yt-card,.grade-panel,.exam-res-card').forEach(el=>el.remove());
   // Exam metadata
   let metaHtml='<div class="exam-meta">';
   if(ST.vak.exDatum)metaHtml+=`<span class="em-chip em-date">📅 ${ST.vak.exDatum.split('-').reverse().join('-')} · ${ST.vak.exTijd}</span>`;
@@ -6775,6 +6785,12 @@ function openVak(id){
   if(ST.vak.hulpmiddelen)metaHtml+=`<span class="em-chip">📋 ${ST.vak.hulpmiddelen}</span>`;
   metaHtml+='</div>';
   if(ST.vak.youtubeKanaal&&ST.vak.youtubeUrl)metaHtml+=`<a class="yt-card" href="${ST.vak.youtubeUrl}" target="_blank" rel="noopener"><div class="yt-icon"><svg viewBox="0 0 24 24"><path d="M23.5 7s-.3-2-1.2-2.8c-1.1-1.2-2.4-1.2-3-1.3C16.8 2.8 12 2.8 12 2.8s-4.8 0-7.3.1c-.6.1-1.9.1-3 1.3C.8 5 .5 7 .5 7S.2 9.3.2 11.5v2.1c0 2.2.3 4.5.3 4.5s.3 2 1.2 2.8c1.1 1.2 2.6 1.1 3.3 1.2C7.2 22.2 12 22.2 12 22.2s4.8 0 7.3-.2c.6-.1 1.9-.1 3-1.3.9-.8 1.2-2.8 1.2-2.8s.3-2.3.3-4.5v-2.1C23.8 9.3 23.5 7 23.5 7zM9.7 15.5V8.4l8.1 3.6-8.1 3.5z"/></svg></div><div class="yt-info"><span class="yt-label">Aanbevolen YouTube-kanaal</span><span class="yt-name">${ST.vak.youtubeKanaal}</span></div><span class="yt-arr">→</span></a>`;
+  // Officiële CE-examen links (AlleExamens.nl + Examenblad.nl)
+  const _aeSlug={nl:'nederlandse-taal-en-literatuur',wa:'wiskunde-a',wb:'wiskunde-b',bi:'biologie',sk:'scheikunde',na:'natuurkunde',en:'engelse-taal-en-literatuur',ec:'economie',be:'bedrijfseconomie',gs:'geschiedenis',ak:'aardrijkskunde',mw:'maatschappijwetenschappen',de:'duits',fr:'frans',la:'latijn-en-griekse-taal-en-cultuur',gr:'latijn-en-griekse-taal-en-cultuur',in:'informatica'};
+  const _lvl=(ST.niveau||'havo').toLowerCase();
+  const _slug=_aeSlug[ST.vak.id];
+  const _aeUrl=_slug?`https://www.alleexamens.nl/${_lvl}/${_slug}/`:`https://www.alleexamens.nl/${_lvl}/`;
+  metaHtml+=`<div class="exam-res-card"><a class="exam-res-link er-alle" href="${_aeUrl}" target="_blank" rel="noopener"><span style="font-size:20px">📄</span><div class="er-info"><span class="er-title">Echte CE-examens</span><span class="er-sub">AlleExamens.nl · t/m 2024</span></div><span style="color:var(--mu)">→</span></a><a class="exam-res-link er-blad" href="https://www.examenblad.nl" target="_blank" rel="noopener"><span style="font-size:20px">🏛️</span><div class="er-info"><span class="er-title">Syllabus &amp; normering</span><span class="er-sub">Examenblad.nl · officieel CvTE</span></div><span style="color:var(--mu)">→</span></a></div>`;
   document.getElementById('dce').insertAdjacentHTML('afterend',metaHtml);
 
   // Grade panel (SE cijfer + benodigde CE)
@@ -7706,6 +7722,19 @@ function toonRes(){
 
 function retryQ(){startQ(ST.mode);}
 function switchMode(){show('sc-qmode');}
+async function deelScore(){
+  const vakNaam=ST.vak?.naam||'een vak';
+  const score=document.getElementById('rnum')?.textContent||'?';
+  const total=document.getElementById('rden')?.textContent||'';
+  const modeTxt={snel:'snelle quiz',oud:'open vragen',fc:'flashcards',race:'Bot Race'}[ST.mode]||'oefening';
+  const tekst=`Ik scoorde ${score}${total} bij ${vakNaam} (${modeTxt}) op Slagio! 🎯\nJij ook oefenen voor het examen? → slagio.nl`;
+  if(navigator.share){
+    try{await navigator.share({title:'Slagio — Mijn score',text:tekst,url:'https://slagio.nl'});}catch(e){}
+  }else{
+    try{await navigator.clipboard.writeText(tekst);showToast('📋 Score gekopieerd naar klembord!');}
+    catch(e){showToast('slagio.nl');}
+  }
+}
 
 // ═══════ RACE MODE ═══════
 const RACE_BOTS={
