@@ -594,24 +594,46 @@ html.dark .qb{background:#2e3550}
 /* ── SLBL (legacy compat) ─────────────────────── */
 .slbl{font-size:11px;font-weight:700;color:var(--mu);text-transform:uppercase;letter-spacing:1px;margin-bottom:14px}
 /* ── QUIZ MODE ────────────────────────────────── */
-#sc-qmode{background:#0A0C10}
-.qmw{padding:44px 24px;max-width:600px;margin:0 auto}
-.qmw h2{font-family:var(--font-head);color:#fff;font-size:28px;margin-bottom:8px}
-.qmsub{color:rgba(255,255,255,.45);font-size:15px;margin-bottom:32px}
-.qmc{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+#sc-qmode{background:linear-gradient(160deg,#07090e 0%,#0d1117 60%,#07090e 100%);min-height:100vh}
+.qmw{padding:0 20px 56px;max-width:560px;margin:0 auto}
+.qmw-header{padding:32px 0 24px}
+.qmw-eyebrow{font-size:11px;font-weight:700;color:var(--or);text-transform:uppercase;letter-spacing:1.8px;margin-bottom:10px}
+.qmw h2{font-family:var(--font-head);color:#fff;font-size:26px;font-weight:800;margin-bottom:6px;letter-spacing:-.4px;line-height:1.2}
+.qmsub{color:rgba(255,255,255,.35);font-size:13px;margin-bottom:0;line-height:1.6}
+.qmc{display:grid;grid-template-columns:1fr 1fr;gap:10px}
 @media(max-width:480px){.qmc{grid-template-columns:1fr}}
-.qmcd{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.1);border-radius:16px;padding:26px 22px;cursor:pointer;transition:all .25s}
-.qmcd:hover{background:rgba(255,255,255,.11);transform:translateY(-3px);box-shadow:0 8px 24px rgba(0,0,0,.3)}
-.qm-resume-chip{background:rgba(var(--or-rgb),.12);border:1px solid rgba(var(--or-rgb),.3);border-radius:12px;padding:12px 16px;display:flex;align-items:center;gap:10px;cursor:pointer;color:#fff;font-size:13px;font-weight:600;transition:background .2s}
-.qm-resume-chip:hover{background:rgba(var(--or-rgb),.22)}
+/* Card base */
+.qmcd{background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.07);border-radius:20px;padding:20px 18px 18px;cursor:pointer;transition:transform .22s cubic-bezier(.34,1.4,.64,1),box-shadow .22s,border-color .18s,background .18s;display:flex;flex-direction:column;position:relative;overflow:hidden}
+.qmcd::before{content:'';position:absolute;inset:0;border-radius:20px;background:radial-gradient(ellipse at 0% 0%,var(--qm-glow,rgba(255,255,255,.04)),transparent 70%);opacity:0;transition:opacity .25s;pointer-events:none}
+.qmcd:hover{transform:translateY(-3px);box-shadow:0 12px 36px rgba(0,0,0,.45),0 0 0 1px var(--qm-border,rgba(255,255,255,.14));border-color:var(--qm-border,rgba(255,255,255,.14));background:rgba(255,255,255,.06)}
+.qmcd:hover::before{opacity:1}
+/* Icon box */
+.qmci{width:42px;height:42px;border-radius:12px;display:flex;align-items:center;justify-content:center;margin-bottom:14px;background:var(--qm-icon-bg,rgba(255,255,255,.08));flex-shrink:0;transition:transform .2s}
+.qmcd:hover .qmci{transform:scale(1.08)}
+.qmci svg{width:20px;height:20px;stroke:var(--qm-color,rgba(255,255,255,.8));fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+/* Card text */
+.qmcd h3{font-family:var(--font-head);color:#fff;font-size:16px;margin-bottom:5px;font-weight:700;letter-spacing:-.15px}
+.qmcd p{color:rgba(255,255,255,.42);font-size:12px;line-height:1.65;margin:0;flex:1}
+/* Tags */
+.qm-tags{display:flex;flex-wrap:wrap;gap:5px;margin-top:14px}
+.qm-tag{font-size:10.5px;font-weight:600;padding:3px 8px;border-radius:7px;color:var(--qm-color,rgba(255,255,255,.55));background:var(--qm-tag-bg,rgba(255,255,255,.07));border:1px solid var(--qm-tag-bd,rgba(255,255,255,.1));white-space:nowrap;letter-spacing:.1px}
+/* Arrow */
+.qm-arrow{position:absolute;top:18px;right:18px;width:26px;height:26px;border-radius:50%;background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.07);display:flex;align-items:center;justify-content:center;transition:transform .2s,background .18s,border-color .18s}
+.qm-arrow svg{width:12px;height:12px;stroke:rgba(255,255,255,.3);stroke-width:2.5;fill:none;transition:stroke .18s}
+.qmcd:hover .qm-arrow{background:var(--qm-icon-bg);border-color:var(--qm-border);transform:translate(2px,-2px)}
+.qmcd:hover .qm-arrow svg{stroke:var(--qm-color)}
+/* Colour themes */
+.qm-snel{--qm-color:#fbbf24;--qm-icon-bg:rgba(251,191,36,.14);--qm-border:rgba(251,191,36,.32);--qm-glow:rgba(251,191,36,.07);--qm-tag-bg:rgba(251,191,36,.1);--qm-tag-bd:rgba(251,191,36,.2)}
+.qm-oud{--qm-color:#60a5fa;--qm-icon-bg:rgba(96,165,250,.14);--qm-border:rgba(96,165,250,.32);--qm-glow:rgba(96,165,250,.07);--qm-tag-bg:rgba(96,165,250,.1);--qm-tag-bd:rgba(96,165,250,.2)}
+.qm-flash{--qm-color:#a78bfa;--qm-icon-bg:rgba(167,139,250,.14);--qm-border:rgba(167,139,250,.32);--qm-glow:rgba(167,139,250,.07);--qm-tag-bg:rgba(167,139,250,.1);--qm-tag-bd:rgba(167,139,250,.2)}
+.qm-race{--qm-color:#f87171;--qm-icon-bg:rgba(248,113,113,.14);--qm-border:rgba(248,113,113,.32);--qm-glow:rgba(248,113,113,.07);--qm-tag-bg:rgba(248,113,113,.1);--qm-tag-bd:rgba(248,113,113,.2)}
+/* Resume chip */
+.qm-resume-chip{background:rgba(var(--or-rgb),.1);border:1px solid rgba(var(--or-rgb),.28);border-radius:14px;padding:12px 16px;display:flex;align-items:center;gap:10px;cursor:pointer;color:#fff;font-size:13px;font-weight:600;transition:background .2s}
+.qm-resume-chip:hover{background:rgba(var(--or-rgb),.2)}
 .qm-resume-info{flex:1;min-width:0}
-.qm-resume-label{font-size:11px;color:rgba(var(--or-rgb),1);font-weight:700;margin-bottom:2px;text-transform:uppercase;letter-spacing:.5px}
-.qm-resume-bar{height:4px;background:rgba(255,255,255,.1);border-radius:4px;margin-top:6px;overflow:hidden}
+.qm-resume-label{font-size:11px;color:var(--or);font-weight:700;margin-bottom:2px;text-transform:uppercase;letter-spacing:.5px}
+.qm-resume-bar{height:3px;background:rgba(255,255,255,.08);border-radius:4px;margin-top:6px;overflow:hidden}
 .qm-resume-bar-fill{height:100%;background:var(--or);border-radius:4px;transition:width .4s}
-.qmci{font-size:30px;margin-bottom:12px;opacity:.85}
-.qmci svg{width:32px;height:32px;stroke:rgba(255,255,255,.8);fill:none;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
-.qmcd h3{font-family:var(--font-head);color:#fff;font-size:18px;margin-bottom:6px;font-weight:700}
-.qmcd p{color:rgba(255,255,255,.5);font-size:13px;line-height:1.7}
 .pill{display:inline-block;margin-top:10px;padding:4px 12px;border-radius:12px;font-size:12px;font-weight:600}
 .ps{background:var(--orl);color:var(--or)}
 .po{background:#EDE9FE;color:#7C3AED}
@@ -2636,14 +2658,45 @@ html.dark .hsd-pill{background:var(--bg2);border-color:var(--bo2)}
 <div class="w">
   <div class="tb"><span class="ql">📚 Slagio</span><button class="qstp" onclick="show('sc-detail')">← Terug</button></div>
   <div class="qmw">
-    <h2>Kies quizmodus</h2>
-    <p class="qmsub" id="qmsub"></p>
+    <div class="qmw-header">
+      <div class="qmw-eyebrow">Oefenen</div>
+      <h2>Kies je oefenmodus</h2>
+      <p class="qmsub" id="qmsub"></p>
+    </div>
     <div id="qm-resume" style="margin-bottom:14px"></div>
     <div class="qmc">
-      <div class="qmcd" onclick="startQ('snel')"><div class="qmci"><svg viewBox="0 0 24 24"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg></div><h3>Snelle Quiz</h3><p>Korte vragen met 15 sec timer. Stamp leerstof in je geheugen.</p><div class="qmode-desc">4 antwoordopties · Timer · Goed/Fout feedback</div><span class="pill ps">15 sec · 5 vragen</span><div style="font-size:10px;color:var(--mu);margin-top:6px;display:flex;align-items:center;gap:4px"><span style="color:#4ade80;font-weight:700">📋</span> Mix van CE-vragen &amp; Slagio oefenvragen</div></div>
-      <div class="qmcd" onclick="startQ('oud')"><div class="qmci"><svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg></div><h3>Oud-examen stijl</h3><p>Open vragen zoals bij het echte CE. Schrijf je antwoord en beoordeel jezelf.</p><div class="qmode-desc">Open vragen · Modelantwoord · Zelf beoordelen</div><span class="pill po">Geen timer · 3 vragen</span><div style="font-size:10px;color:var(--mu);margin-top:6px;display:flex;align-items:center;gap:4px"><span style="color:#4ade80;font-weight:700">📋</span> Vragen uit officiële CE's (examenblad.nl)</div></div>
-      <div class="qmcd" onclick="startFlash()"><div class="qmci"><svg viewBox="0 0 24 24"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg></div><h3>Begrippen oefenen</h3><p>Flashcards: ken jij alle begrippen van dit domein?</p><div class="qmode-desc">Flashcards · Ken je het begrip? Ja/Nee</div><span class="pill" style="background:rgba(139,92,246,.2);color:#A78BFA">Flip &amp; leer</span></div>
-      <div class="qmcd race-qmcd"><div class="qmci" style="background:linear-gradient(135deg,rgba(239,68,68,.2),rgba(234,179,8,.2))"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3h18M3 3v6l9 3 9-3V3M12 12v9M8 21h8"/></svg></div><h3>Bot Race 🤖</h3><p>Race tegen de bot! 15 vragen van heel het vak met power-ups om je tegenstander terug te gooien.</p><div class="qmode-desc">Race · Power-ups · 15 vragen · Heel het vak</div><div class="race-diff-row"><button class="race-diff-btn" onclick="event.stopPropagation();startRace('easy')">😌 Makkelijk</button><button class="race-diff-btn" onclick="event.stopPropagation();startRace('medium')">😤 Gemiddeld</button><button class="race-diff-btn" onclick="event.stopPropagation();startRace('hard')">💀 Moeilijk</button></div></div>
+
+      <div class="qmcd qm-snel" onclick="startQ('snel')">
+        <div class="qm-arrow"><svg viewBox="0 0 24 24"><polyline points="9 18 15 12 9 6"/></svg></div>
+        <div class="qmci"><svg viewBox="0 0 24 24"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg></div>
+        <h3>Snelle Quiz</h3>
+        <p>Stamp leerstof in je geheugen met tijdsdruk en directe feedback.</p>
+        <div class="qm-tags"><span class="qm-tag">⏱ 15 sec</span><span class="qm-tag">5 vragen</span><span class="qm-tag">4 opties</span></div>
+      </div>
+
+      <div class="qmcd qm-oud" onclick="startQ('oud')">
+        <div class="qm-arrow"><svg viewBox="0 0 24 24"><polyline points="9 18 15 12 9 6"/></svg></div>
+        <div class="qmci"><svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg></div>
+        <h3>Oud-examen stijl</h3>
+        <p>Open CE-vragen met modelantwoord. Beoordeel jezelf zoals op het echte examen.</p>
+        <div class="qm-tags"><span class="qm-tag">📋 Officieel CE</span><span class="qm-tag">3 vragen</span></div>
+      </div>
+
+      <div class="qmcd qm-flash" onclick="startFlash()">
+        <div class="qm-arrow"><svg viewBox="0 0 24 24"><polyline points="9 18 15 12 9 6"/></svg></div>
+        <div class="qmci"><svg viewBox="0 0 24 24"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg></div>
+        <h3>Begrippen oefenen</h3>
+        <p>Flashcards: ken jij alle begrippen van dit domein? Flip &amp; scoor.</p>
+        <div class="qm-tags"><span class="qm-tag">🃏 Flashcards</span><span class="qm-tag">Ja / Nee</span></div>
+      </div>
+
+      <div class="qmcd qm-race race-qmcd">
+        <div class="qmci"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3h18M3 3v6l9 3 9-3V3M12 12v9M8 21h8"/></svg></div>
+        <h3>Bot Race 🤖</h3>
+        <p>Race tegen de bot met power-ups. 15 vragen van heel het vak.</p>
+        <div class="race-diff-row"><button class="race-diff-btn" onclick="event.stopPropagation();startRace('easy')">😌 Makkelijk</button><button class="race-diff-btn" onclick="event.stopPropagation();startRace('medium')">😤 Gemiddeld</button><button class="race-diff-btn" onclick="event.stopPropagation();startRace('hard')">💀 Moeilijk</button></div>
+      </div>
+
     </div>
   </div>
 </div>
