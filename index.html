@@ -717,6 +717,16 @@ html.dark .qb{background:#2e3550}
 .exam-res-link.er-alle{border-color:rgba(59,130,246,.3);background:rgba(59,130,246,.07)}.exam-res-link.er-alle:hover{border-color:rgba(59,130,246,.5)}
 .exam-res-link.er-blad{border-color:rgba(var(--or-rgb),.25);background:rgba(var(--or-rgb),.06)}.exam-res-link.er-blad:hover{border-color:rgba(var(--or-rgb),.5)}
 .er-info{display:flex;flex-direction:column;gap:1px;flex:1}.er-title{font-size:13px;font-weight:700}.er-sub{font-size:10px;color:var(--mu);font-weight:400}
+.ce-bundel-btn{display:block;padding:10px 14px;border-radius:12px;background:rgba(var(--or-rgb),.1);border:1px solid rgba(var(--or-rgb),.3);font-size:13px;font-weight:700;color:var(--or);text-decoration:none;margin-bottom:14px;transition:all .2s;text-align:center}
+.ce-bundel-btn:hover{background:rgba(var(--or-rgb),.18);border-color:rgba(var(--or-rgb),.55)}
+.ce-jaar-blok{margin-bottom:14px}
+.ce-jaar-lbl{font-size:11px;font-weight:700;color:var(--mu);text-transform:uppercase;letter-spacing:.6px;margin-bottom:7px}
+.ce-tv-row{display:flex;gap:8px;flex-wrap:wrap}
+.ce-tv-col{display:flex;flex-direction:column;gap:5px;flex:1;min-width:120px}
+.ce-tv-title{font-size:11px;font-weight:600;color:var(--dk);margin-bottom:2px}
+.ce-pdf-btn{display:block;padding:7px 10px;border-radius:9px;background:var(--bg2);border:1px solid var(--bo);font-size:12px;font-weight:600;color:var(--dk);text-decoration:none;transition:all .15s;text-align:center}
+.ce-pdf-btn:hover{background:rgba(59,130,246,.1);border-color:rgba(59,130,246,.4);color:#60a5fa;transform:translateY(-1px)}
+.ce-pdf-cv:hover{background:rgba(74,222,128,.08);border-color:rgba(74,222,128,.35);color:#4ade80}
 .ab-icon{font-size:20px}
 .ab-txt{font-size:12px}
 /* ── OUD-EXAMEN REDESIGN ─────────────────────── */
@@ -6776,8 +6786,8 @@ function openVak(id){
   document.getElementById('dtitle').textContent=ST.vak.naam;
   document.getElementById('ddesc').textContent=ST.vak.beschrijving;
   document.getElementById('dce').innerHTML=ST.vak.ceInfo;
-  // Remove previously injected exam-meta + yt-card + grade-panel + exam-res-card (avoid stacking on revisit)
-  document.querySelectorAll('.exam-meta,.yt-card,.grade-panel,.exam-res-card').forEach(el=>el.remove());
+  // Remove previously injected exam-meta + yt-card + grade-panel + ce-archief-card (avoid stacking on revisit)
+  document.querySelectorAll('.exam-meta,.yt-card,.grade-panel,.ce-archief-card').forEach(el=>el.remove());
   // Exam metadata
   let metaHtml='<div class="exam-meta">';
   if(ST.vak.exDatum)metaHtml+=`<span class="em-chip em-date">📅 ${ST.vak.exDatum.split('-').reverse().join('-')} · ${ST.vak.exTijd}</span>`;
@@ -6785,12 +6795,30 @@ function openVak(id){
   if(ST.vak.hulpmiddelen)metaHtml+=`<span class="em-chip">📋 ${ST.vak.hulpmiddelen}</span>`;
   metaHtml+='</div>';
   if(ST.vak.youtubeKanaal&&ST.vak.youtubeUrl)metaHtml+=`<a class="yt-card" href="${ST.vak.youtubeUrl}" target="_blank" rel="noopener"><div class="yt-icon"><svg viewBox="0 0 24 24"><path d="M23.5 7s-.3-2-1.2-2.8c-1.1-1.2-2.4-1.2-3-1.3C16.8 2.8 12 2.8 12 2.8s-4.8 0-7.3.1c-.6.1-1.9.1-3 1.3C.8 5 .5 7 .5 7S.2 9.3.2 11.5v2.1c0 2.2.3 4.5.3 4.5s.3 2 1.2 2.8c1.1 1.2 2.6 1.1 3.3 1.2C7.2 22.2 12 22.2 12 22.2s4.8 0 7.3-.2c.6-.1 1.9-.1 3-1.3.9-.8 1.2-2.8 1.2-2.8s.3-2.3.3-4.5v-2.1C23.8 9.3 23.5 7 23.5 7zM9.7 15.5V8.4l8.1 3.6-8.1 3.5z"/></svg></div><div class="yt-info"><span class="yt-label">Aanbevolen YouTube-kanaal</span><span class="yt-name">${ST.vak.youtubeKanaal}</span></div><span class="yt-arr">→</span></a>`;
-  // Officiële CE-examen links (AlleExamens.nl + Examenblad.nl)
-  const _aeSlug={nl:'nederlandse-taal-en-literatuur',wa:'wiskunde-a',wb:'wiskunde-b',bi:'biologie',sk:'scheikunde',na:'natuurkunde',en:'engelse-taal-en-literatuur',ec:'economie',be:'bedrijfseconomie',gs:'geschiedenis',ak:'aardrijkskunde',mw:'maatschappijwetenschappen',de:'duits',fr:'frans',la:'latijn-en-griekse-taal-en-cultuur',gr:'latijn-en-griekse-taal-en-cultuur',in:'informatica'};
-  const _lvl=(ST.niveau||'havo').toLowerCase();
-  const _slug=_aeSlug[ST.vak.id];
-  const _aeUrl=_slug?`https://www.alleexamens.nl/${_lvl}/${_slug}/`:`https://www.alleexamens.nl/${_lvl}/`;
-  metaHtml+=`<div class="exam-res-card"><a class="exam-res-link er-alle" href="${_aeUrl}" target="_blank" rel="noopener"><span style="font-size:20px">📄</span><div class="er-info"><span class="er-title">Echte CE-examens</span><span class="er-sub">AlleExamens.nl · t/m 2024</span></div><span style="color:var(--mu)">→</span></a><a class="exam-res-link er-blad" href="https://www.examenblad.nl" target="_blank" rel="noopener"><span style="font-size:20px">🏛️</span><div class="er-info"><span class="er-title">Syllabus &amp; normering</span><span class="er-sub">Examenblad.nl · officieel CvTE</span></div><span style="color:var(--mu)">→</span></a></div>`;
+  // Echte CE-examens archief (directe PDF-links via AlleExamens.nl)
+  const _aeNames={nl:'Nederlands',wa:'Wiskunde A',wb:'Wiskunde B',bi:'Biologie',sk:'Scheikunde',na:'Natuurkunde',en:'Engels',ec:'Economie',be:'Bedrijfseconomie',gs:'Geschiedenis',ak:'Aardrijkskunde',mw:'Maatschappijwetenschappen',de:'Duits',fr:'Frans',la:'Latijn',gr:'Grieks',in:'Informatica'};
+  const _aeLvl=(ST.niveau||'havo').toUpperCase();
+  const _aeName=_aeNames[ST.vak.id];
+  if(_aeName){
+    const _enc=encodeURIComponent(_aeName);
+    const _mkPdf=(year,tv,type)=>`https://static.alleexamens.nl/${_aeLvl}/${_enc}/${year}/${tv}/${_enc}/${_enc}%20${year}%20${tv}_${type}.pdf`;
+    const _bundel=`https://static.alleexamens.nl/${_aeLvl}/${_enc}/Examenbundels/Examenbundel_Compleet_${_aeLvl}_${_enc}.pdf`;
+    const _jaren=[2025,2024,2023,2022,2021,2019];
+    let _ch=`<div class="bron-card ce-archief-card" style="margin-top:14px"><div class="bron-card-head" onclick="this.closest('.bron-card').classList.toggle('open')"><div class="bron-card-title">📄 Echte CE-examens <span style="font-weight:400;font-size:11px;color:var(--mu)">(${_aeName} · AlleExamens.nl)</span></div><span class="bron-card-arrow">▼</span></div><div class="bron-card-body" style="padding-top:10px">`;
+    _ch+=`<a href="${_bundel}" target="_blank" rel="noopener" class="ce-bundel-btn">📦 Download complete examenbundel — alle jaren in één PDF</a>`;
+    _jaren.forEach(year=>{
+      _ch+=`<div class="ce-jaar-blok"><div class="ce-jaar-lbl">${year}${year===2020?' (geannuleerd — COVID)':''}</div><div class="ce-tv-row">`;
+      if(year!==2020){['I','II'].forEach(tv=>{
+        _ch+=`<div class="ce-tv-col"><div class="ce-tv-title">Tijdvak ${tv}</div>`;
+        _ch+=`<a href="${_mkPdf(year,tv,'opgaven')}" target="_blank" rel="noopener" class="ce-pdf-btn">📋 Opgaven</a>`;
+        _ch+=`<a href="${_mkPdf(year,tv,'correctievoorschrift')}" target="_blank" rel="noopener" class="ce-pdf-btn ce-pdf-cv">✅ Antwoorden</a>`;
+        _ch+=`</div>`;
+      });}
+      _ch+=`</div></div>`;
+    });
+    _ch+=`<div style="font-size:11px;color:var(--mu);margin-top:10px;padding-top:10px;border-top:1px solid var(--bo)">Examens via <a href="https://www.alleexamens.nl" target="_blank" rel="noopener" style="color:var(--mu)">AlleExamens.nl</a> · Syllabus &amp; normering: <a href="https://www.examenblad.nl" target="_blank" rel="noopener" style="color:var(--mu)">Examenblad.nl</a></div></div></div>`;
+    metaHtml+=_ch;
+  }
   document.getElementById('dce').insertAdjacentHTML('afterend',metaHtml);
 
   // Grade panel (SE cijfer + benodigde CE)
