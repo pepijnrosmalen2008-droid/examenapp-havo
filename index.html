@@ -594,8 +594,21 @@ html.dark .qb{background:#2e3550}
 /* ── SLBL (legacy compat) ─────────────────────── */
 .slbl{font-size:11px;font-weight:700;color:var(--mu);text-transform:uppercase;letter-spacing:1px;margin-bottom:14px}
 /* ── QUIZ MODE ────────────────────────────────── */
-#sc-qmode{background:linear-gradient(160deg,#07090e 0%,#0d1117 60%,#07090e 100%);min-height:100vh}
-.qmw{padding:0 20px 56px;max-width:560px;margin:0 auto}
+#sc-qmode{background:#07090e;min-height:100vh;position:relative;overflow:hidden}
+/* Animated orb background */
+.qm-bg{position:absolute;inset:0;pointer-events:none;z-index:0;overflow:hidden}
+.qm-orb{position:absolute;border-radius:50%;filter:blur(90px);will-change:transform}
+.qm-orb-1{width:480px;height:480px;background:radial-gradient(circle at center,rgba(251,191,36,.22) 0%,transparent 70%);top:-120px;left:-140px;animation:qmOrb1 11s ease-in-out infinite}
+.qm-orb-2{width:420px;height:420px;background:radial-gradient(circle at center,rgba(96,165,250,.18) 0%,transparent 70%);top:60px;right:-140px;animation:qmOrb2 13s ease-in-out infinite}
+.qm-orb-3{width:360px;height:360px;background:radial-gradient(circle at center,rgba(167,139,250,.16) 0%,transparent 70%);bottom:-60px;left:30%;animation:qmOrb3 9s ease-in-out infinite}
+/* Dot grid overlay */
+.qm-grid{position:absolute;inset:0;background-image:radial-gradient(rgba(255,255,255,.045) 1px,transparent 1px);background-size:28px 28px;mask-image:radial-gradient(ellipse 80% 80% at 50% 50%,#000 40%,transparent 100%)}
+/* Vignette */
+.qm-vignette{position:absolute;inset:0;background:radial-gradient(ellipse 100% 100% at 50% 0%,transparent 40%,rgba(7,9,14,.85) 100%)}
+@keyframes qmOrb1{0%,100%{transform:translate(0,0) scale(1)}40%{transform:translate(30px,24px) scale(1.06)}70%{transform:translate(-18px,14px) scale(.97)}}
+@keyframes qmOrb2{0%,100%{transform:translate(0,0) scale(1)}35%{transform:translate(-24px,30px) scale(1.04)}65%{transform:translate(16px,-20px) scale(.96)}}
+@keyframes qmOrb3{0%,100%{transform:translate(0,0) scale(1)}45%{transform:translate(20px,-26px) scale(1.07)}75%{transform:translate(-14px,18px) scale(.98)}}
+.qmw{padding:0 20px 56px;max-width:560px;margin:0 auto;position:relative;z-index:1}
 .qmw-header{padding:32px 0 24px}
 .qmw-eyebrow{font-size:11px;font-weight:700;color:var(--or);text-transform:uppercase;letter-spacing:1.8px;margin-bottom:10px}
 .qmw h2{font-family:var(--font-head);color:#fff;font-size:26px;font-weight:800;margin-bottom:6px;letter-spacing:-.4px;line-height:1.2}
@@ -2655,6 +2668,7 @@ html.dark .hsd-pill{background:var(--bg2);border-color:var(--bo2)}
 
 <!-- QUIZ MODE -->
 <div id="sc-qmode" class="sc">
+<div class="qm-bg"><div class="qm-orb qm-orb-1"></div><div class="qm-orb qm-orb-2"></div><div class="qm-orb qm-orb-3"></div><div class="qm-grid"></div><div class="qm-vignette"></div></div>
 <div class="w">
   <div class="tb"><span class="ql">📚 Slagio</span><button class="qstp" onclick="show('sc-detail')">← Terug</button></div>
   <div class="qmw">
