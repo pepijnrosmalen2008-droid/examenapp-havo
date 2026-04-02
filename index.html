@@ -763,6 +763,99 @@ html.dark .qb{background:#2e3550}
 .ce-pdf-cv:hover{background:rgba(74,222,128,.08);border-color:rgba(74,222,128,.35);color:#4ade80}
 .ce-archief-card.open .ce-archief-body{display:block!important}
 .ce-archief-card.open .ce-arr{transform:rotate(180deg)}
+/* ── EXAMEN MODUS ────────────────────────────── */
+.exam-entry-btn{display:flex;align-items:center;gap:12px;width:100%;padding:13px 16px;border-radius:14px;background:rgba(239,68,68,.07);border:1.5px solid rgba(239,68,68,.22);color:#f87171;font-size:13px;font-weight:700;cursor:pointer;font-family:var(--font-head);transition:all .22s;margin-bottom:14px;text-align:left}
+.exam-entry-btn:hover{background:rgba(239,68,68,.13);border-color:rgba(239,68,68,.45);transform:translateY(-2px);box-shadow:0 6px 18px rgba(239,68,68,.15)}
+.exam-entry-icon{font-size:22px;line-height:1;flex-shrink:0}
+.exam-entry-text{flex:1;min-width:0}
+.exam-entry-title{font-size:14px;font-weight:800;letter-spacing:-.2px;margin-bottom:1px}
+.exam-entry-sub{font-size:11.5px;opacity:.7;font-weight:500}
+.exam-entry-arr{font-size:16px;font-weight:700;flex-shrink:0;opacity:.6}
+/* Examen scherm */
+#sc-examen{background:#070a12;min-height:100vh;display:flex;flex-direction:column}
+.ex-nav{height:var(--nav-h);display:flex;align-items:center;border-bottom:1px solid rgba(255,255,255,.07);position:sticky;top:0;background:rgba(7,10,18,.95);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);z-index:100;flex-shrink:0}
+.ex-nav-inner{max-width:680px;margin:0 auto;padding:0 16px;width:100%;display:flex;align-items:center;gap:10px}
+.ex-nav .bk{background:rgba(255,255,255,.07);border-color:rgba(255,255,255,.1);color:rgba(255,255,255,.6);flex-shrink:0}
+.ex-nav .bk:hover{background:rgba(255,255,255,.12);color:#fff}
+.ex-timer{font-size:17px;font-weight:800;font-family:var(--font-head);letter-spacing:.5px;flex:1;text-align:center;transition:color .4s}
+.ex-timer.warn{color:#fbbf24}.ex-timer.danger{color:#f87171;animation:exPulse 1s ease-in-out infinite}
+@keyframes exPulse{0%,100%{opacity:1}50%{opacity:.5}}
+.ex-score-chip{font-size:12px;font-weight:700;color:rgba(255,255,255,.5);flex-shrink:0;font-family:var(--font-head)}
+.ex-prog-bar{height:3px;background:rgba(255,255,255,.07);flex-shrink:0}
+.ex-prog-fill{height:100%;background:linear-gradient(90deg,#ef4444,#f97316);transition:width .4s;border-radius:0 2px 2px 0}
+/* Intro scherm */
+.ex-intro{max-width:680px;margin:0 auto;padding:28px 20px;width:100%}
+.ex-intro-badge{display:inline-flex;align-items:center;gap:6px;background:rgba(239,68,68,.1);border:1px solid rgba(239,68,68,.25);border-radius:20px;padding:4px 12px;font-size:11px;font-weight:700;color:#f87171;letter-spacing:.5px;margin-bottom:20px}
+.ex-intro-title{font-size:24px;font-weight:900;color:#fff;font-family:var(--font-head);letter-spacing:-.5px;margin-bottom:6px;line-height:1.2}
+.ex-intro-sub{font-size:14px;color:rgba(255,255,255,.5);margin-bottom:24px}
+.ex-stat-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-bottom:28px}
+.ex-stat{background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.08);border-radius:14px;padding:14px 12px;text-align:center}
+.ex-stat-val{font-size:22px;font-weight:900;color:#fff;font-family:var(--font-head);line-height:1}
+.ex-stat-lbl{font-size:10px;color:rgba(255,255,255,.4);text-transform:uppercase;letter-spacing:.6px;margin-top:4px;font-weight:600}
+.ex-info-box{background:rgba(251,191,36,.06);border:1px solid rgba(251,191,36,.18);border-radius:14px;padding:14px 16px;margin-bottom:24px;font-size:13px;color:rgba(255,255,255,.65);line-height:1.7}
+.ex-info-box strong{color:#fbbf24}
+.ex-start-btn{width:100%;background:linear-gradient(135deg,#ef4444,#dc2626);color:#fff;border:none;border-radius:16px;padding:20px;font-family:var(--font-head);font-size:17px;font-weight:800;cursor:pointer;letter-spacing:-.2px;box-shadow:0 6px 24px rgba(239,68,68,.35);transition:all .2s}
+.ex-start-btn:hover{box-shadow:0 8px 32px rgba(239,68,68,.5);transform:translateY(-1px)}
+/* Quiz scherm */
+.ex-body{max-width:680px;margin:0 auto;padding:20px 20px 100px;width:100%;flex:1}
+.ex-opgave-banner{font-size:11px;font-weight:700;color:rgba(255,255,255,.35);text-transform:uppercase;letter-spacing:.8px;margin-bottom:12px;display:flex;align-items:center;gap:8px}
+.ex-opgave-banner::after{content:'';flex:1;height:1px;background:rgba(255,255,255,.07)}
+.ex-context{background:rgba(255,255,255,.03);border:1px solid rgba(255,255,255,.07);border-radius:14px;padding:16px 18px;margin-bottom:16px;font-size:13.5px;color:rgba(255,255,255,.6);line-height:1.85;white-space:pre-line}
+.ex-bijlage-note{background:rgba(251,191,36,.06);border:1px solid rgba(251,191,36,.2);border-radius:10px;padding:10px 14px;margin-bottom:14px;font-size:12px;color:#fbbf24;line-height:1.6}
+.ex-q-header{display:flex;align-items:baseline;gap:10px;margin-bottom:12px}
+.ex-q-nr{font-size:13px;font-weight:800;color:rgba(255,255,255,.3);flex-shrink:0;font-family:var(--font-head)}
+.ex-q-pts{font-size:11px;font-weight:700;background:rgba(255,255,255,.07);border-radius:6px;padding:2px 7px;color:rgba(255,255,255,.4);flex-shrink:0}
+.ex-vraag{font-size:15.5px;font-weight:700;color:#fff;line-height:1.65;font-family:var(--font-head);letter-spacing:-.1px;flex:1}
+.ex-textarea{width:100%;min-height:130px;background:rgba(255,255,255,.05);border:1.5px solid rgba(255,255,255,.1);border-radius:14px;padding:16px 18px;font-size:14.5px;color:#fff;font-family:var(--font);line-height:1.75;resize:vertical;outline:none;transition:border-color .2s,background .2s;margin-bottom:14px}
+.ex-textarea:focus{border-color:rgba(239,68,68,.45);background:rgba(255,255,255,.07)}
+.ex-textarea::placeholder{color:rgba(255,255,255,.2)}
+/* Nav balk onderaan */
+.ex-bot-nav{position:fixed;bottom:0;left:0;right:0;background:rgba(7,10,18,.96);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);border-top:1px solid rgba(255,255,255,.07);padding:12px 20px;z-index:200}
+.ex-bot-inner{max-width:680px;margin:0 auto;display:flex;align-items:center;gap:10px}
+.ex-prev,.ex-next{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.1);border-radius:12px;padding:12px 18px;font-size:14px;font-weight:700;color:rgba(255,255,255,.7);cursor:pointer;font-family:var(--font-head);transition:all .18s;flex-shrink:0}
+.ex-prev:hover,.ex-next:hover{background:rgba(255,255,255,.14);color:#fff}
+.ex-next.primary{background:rgba(239,68,68,.15);border-color:rgba(239,68,68,.35);color:#f87171}
+.ex-next.primary:hover{background:rgba(239,68,68,.25);border-color:rgba(239,68,68,.55);color:#fca5a5}
+.ex-qgrid{flex:1;display:flex;flex-wrap:wrap;gap:4px;justify-content:center;max-height:54px;overflow:hidden}
+.ex-qd{width:24px;height:24px;border-radius:6px;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.08);font-size:9px;font-weight:700;color:rgba(255,255,255,.35);display:flex;align-items:center;justify-content:center;cursor:pointer;transition:all .15s;font-family:var(--font-head)}
+.ex-qd:hover{background:rgba(255,255,255,.12);color:#fff}
+.ex-qd.answered{background:rgba(239,68,68,.15);border-color:rgba(239,68,68,.3);color:#f87171}
+.ex-qd.current{background:rgba(239,68,68,.3);border-color:rgba(239,68,68,.6);color:#fff;transform:scale(1.15)}
+.ex-qd.bijlage{background:rgba(251,191,36,.08);border-color:rgba(251,191,36,.2);color:#fbbf24}
+/* Resultaat scherm */
+.ex-result-wrap{max-width:680px;margin:0 auto;padding:24px 20px 100px;width:100%}
+.ex-result-hero{text-align:center;margin-bottom:28px}
+.ex-grade-circle{width:88px;height:88px;border-radius:50%;background:linear-gradient(135deg,#ef4444,#dc2626);display:flex;flex-direction:column;align-items:center;justify-content:center;margin:0 auto 14px;box-shadow:0 8px 32px rgba(239,68,68,.4)}
+.ex-grade-num{font-size:32px;font-weight:900;color:#fff;font-family:var(--font-head);line-height:1}
+.ex-grade-lbl{font-size:9px;color:rgba(255,255,255,.7);text-transform:uppercase;letter-spacing:.6px;font-weight:700}
+.ex-result-title{font-size:20px;font-weight:900;color:#fff;font-family:var(--font-head);margin-bottom:4px;letter-spacing:-.3px}
+.ex-result-sub{font-size:13px;color:rgba(255,255,255,.45)}
+.ex-score-bar-wrap{background:rgba(255,255,255,.05);border-radius:8px;height:10px;margin:16px 0;overflow:hidden}
+.ex-score-bar-fill{height:100%;background:linear-gradient(90deg,#ef4444,#f97316);border-radius:8px;transition:width 1s ease}
+.ex-self-total{font-size:13px;color:rgba(255,255,255,.5);text-align:center;margin-bottom:24px}
+.ex-self-total strong{color:#fff}
+/* Per-vraag nakijk kaart */
+.ex-rev-card{background:rgba(255,255,255,.03);border:1px solid rgba(255,255,255,.07);border-radius:16px;padding:16px 18px;margin-bottom:12px;transition:border-color .2s}
+.ex-rev-card.graded-goed{border-color:rgba(74,222,128,.25);background:rgba(74,222,128,.03)}
+.ex-rev-card.graded-deels{border-color:rgba(251,191,36,.2);background:rgba(251,191,36,.02)}
+.ex-rev-card.graded-fout{border-color:rgba(248,113,113,.15)}
+.ex-rev-header{display:flex;align-items:center;gap:8px;margin-bottom:10px}
+.ex-rev-nr{font-size:11px;font-weight:800;color:rgba(255,255,255,.3);text-transform:uppercase;letter-spacing:.5px}
+.ex-rev-pts-badge{font-size:11px;font-weight:700;padding:2px 8px;border-radius:6px;background:rgba(255,255,255,.07);color:rgba(255,255,255,.4);margin-left:auto}
+.ex-rev-vraag{font-size:13.5px;font-weight:700;color:rgba(255,255,255,.85);line-height:1.5;margin-bottom:10px;font-family:var(--font-head)}
+.ex-rev-jouw{font-size:11px;font-weight:700;color:rgba(255,255,255,.3);text-transform:uppercase;letter-spacing:.5px;margin-bottom:4px}
+.ex-rev-jouw-text{font-size:13px;color:rgba(255,255,255,.6);line-height:1.7;padding:10px 12px;background:rgba(255,255,255,.04);border-radius:10px;white-space:pre-wrap;margin-bottom:10px;font-style:italic;min-height:36px}
+.ex-rev-model{font-size:11px;font-weight:700;color:#4ade80;text-transform:uppercase;letter-spacing:.5px;margin-bottom:4px}
+.ex-rev-model-text{font-size:13px;color:rgba(255,255,255,.7);line-height:1.75;padding:10px 12px;background:rgba(74,222,128,.05);border:1px solid rgba(74,222,128,.12);border-radius:10px;white-space:pre-wrap;margin-bottom:10px}
+.ex-rev-rubric{font-size:11.5px;color:rgba(255,255,255,.35);line-height:1.65;padding:8px 12px;background:rgba(255,255,255,.02);border-radius:8px;margin-bottom:12px;border-left:2px solid rgba(255,255,255,.08)}
+.ex-rev-grade{display:grid;grid-template-columns:1fr 1fr 1fr;gap:8px}
+.ex-rev-grade-btn{border:none;border-radius:12px;padding:10px 6px;font-size:12px;font-weight:700;cursor:pointer;transition:all .18s;display:flex;flex-direction:column;align-items:center;gap:3px;font-family:var(--font);opacity:.7}
+.ex-rev-grade-btn:hover{opacity:1;transform:scale(1.04)}
+.ex-rev-grade-btn.selected{opacity:1;transform:scale(1.06)}
+.rg-goed{background:#14532d;color:#4ade80}.rg-deels{background:#78350f;color:#fcd34d}.rg-fout{background:#7f1d1d;color:#f87171}
+.ex-rev-bijlage{background:rgba(251,191,36,.06);border:1px solid rgba(251,191,36,.15);border-radius:10px;padding:10px 12px;font-size:12px;color:#fbbf24;margin-bottom:10px;line-height:1.6}
+.ex-done-btn{width:100%;background:rgba(74,222,128,.12);border:1.5px solid rgba(74,222,128,.25);color:#4ade80;border-radius:16px;padding:18px;font-family:var(--font-head);font-size:16px;font-weight:800;cursor:pointer;transition:all .2s;margin-top:10px}
+.ex-done-btn:hover{background:rgba(74,222,128,.2);box-shadow:0 6px 24px rgba(74,222,128,.2)}
 /* ── LEERPAD ──────────────────────────────────── */
 /* ══════════════════════════════════════════════
    LEERPAD — FULL REDESIGN (game-map dark theme)
@@ -2949,6 +3042,14 @@ html.dark .hsd-pill{background:var(--bg2);border-color:var(--bo2)}
     </div>
     <div class="sim-entry-arr">→</div>
   </button>
+  <button class="exam-entry-btn" onclick="startExamen()" id="exam-entry-btn" style="display:none">
+    <div class="exam-entry-icon">📄</div>
+    <div class="exam-entry-text">
+      <div class="exam-entry-title">Echt Eindexamen</div>
+      <div class="exam-entry-sub" id="exam-entry-sub">Echte examenvragen · officiële tijd</div>
+    </div>
+    <div class="exam-entry-arr">→</div>
+  </button>
   <div class="progress-overview" id="progress-overview" style="display:none">
     <div class="po-title">📊 Jouw voortgang <button class="po-reset" id="reset-progress" onclick="resetVakProgress()">Wissen</button></div>
     <div class="po-grid" id="po-grid"></div>
@@ -3645,6 +3746,8 @@ html.dark .hsd-pill{background:var(--bg2);border-color:var(--bo2)}
   </div>
 </div>
 
+<!-- Examen data — echte eindexamens -->
+<script src="examens.js"></script>
 <!-- Supabase SDK — must load before app script -->
 <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.101.1/dist/umd/supabase.js" integrity="sha256-nemRIwEQKZy7uoOYcUFEnleZl6kKX8B3zf4KpR6NVT0=" crossorigin="anonymous"></script>
 <script>
@@ -7167,6 +7270,19 @@ function openVak(id){
     });
   },100);
   updateLpEntryCard();
+  // Examen entry button — toon alleen als er een echt examen beschikbaar is voor dit vak
+  const _exBtn = document.getElementById('exam-entry-btn');
+  const _exSub = document.getElementById('exam-entry-sub');
+  const _exLijst = typeof EXAMENS !== 'undefined' && EXAMENS[ST.vak.id];
+  if(_exBtn){
+    if(_exLijst && _exLijst.length > 0){
+      const _ex0 = _exLijst[0];
+      _exBtn.style.display = '';
+      if(_exSub) _exSub.textContent = `${_ex0.jaar} Tijdvak ${_ex0.tijdvak} · ${_ex0.vragen.length} vragen · ${_ex0.duur_minuten} min`;
+    } else {
+      _exBtn.style.display = 'none';
+    }
+  }
   show('sc-detail');
 }
 
@@ -8472,6 +8588,248 @@ function simFinish(){
 
 function simExit(){
   if(SIM.timer){clearInterval(SIM.timer);SIM.timer=null;}
+  show('sc-detail');
+}
+
+// ═══════ EXAMEN MODUS ═══════
+let EX = {}; // examen state
+
+function startExamen(){
+  // Zoek examen voor huidig vak
+  const vakId = (ST.vak && ST.vak.id) || ST.vakId || '';
+  const examenLijst = typeof EXAMENS !== 'undefined' && EXAMENS[vakId];
+  if(!examenLijst || examenLijst.length === 0){
+    showToast('Nog geen echt examen beschikbaar voor dit vak');
+    return;
+  }
+  const examen = examenLijst[0]; // gebruik eerste (meest recent) examen
+  EX = {
+    examen,
+    idx: 0,
+    answers: {},    // nr -> tekst
+    grades: {},     // nr -> {pts, max}
+    phase: 'intro', // intro | quiz | result
+    timer: null,
+    secondsLeft: examen.duur_minuten * 60,
+    selfPts: 0,
+    gradedCount: 0
+  };
+  // Update intro UI
+  document.getElementById('ex-intro-title').textContent =
+    `${examen.titel} HAVO ${examen.jaar} · Tijdvak ${examen.tijdvak}`;
+  document.getElementById('ex-intro-sub').textContent =
+    `Officieel eindexamen · ${examen.bron}`;
+  document.getElementById('ex-stat-vragen').textContent = examen.vragen.length;
+  document.getElementById('ex-stat-punten').textContent = examen.max_punten;
+  const h = Math.floor(examen.duur_minuten/60);
+  const m = examen.duur_minuten % 60;
+  document.getElementById('ex-stat-tijd').textContent = m===0 ? `${h} uur` : `${h}u ${m}m`;
+  // Reset timer display
+  document.getElementById('ex-timer').textContent = _exFmtTime(examen.duur_minuten*60);
+  document.getElementById('ex-timer').className = 'ex-timer';
+  document.getElementById('ex-score-chip').textContent = `0 / ${examen.max_punten} pt`;
+  document.getElementById('ex-prog-fill').style.width = '0%';
+  // Toon scherm
+  document.getElementById('ex-intro').style.display = '';
+  document.getElementById('ex-quiz').style.display = 'none';
+  document.getElementById('ex-result').style.display = 'none';
+  show('sc-examen');
+}
+
+function examenStart(){
+  EX.phase = 'quiz';
+  document.getElementById('ex-intro').style.display = 'none';
+  document.getElementById('ex-quiz').style.display = '';
+  // Bouw vraag-grid
+  _exBuildGrid();
+  // Toon eerste vraag
+  examenShowQ(0);
+  // Start timer
+  EX.timer = setInterval(_exTimerTick, 1000);
+}
+
+function _exTimerTick(){
+  EX.secondsLeft--;
+  document.getElementById('ex-timer').textContent = _exFmtTime(EX.secondsLeft);
+  const pct = 1 - EX.secondsLeft / (EX.examen.duur_minuten * 60);
+  document.getElementById('ex-prog-fill').style.width = (pct*100)+'%';
+  const el = document.getElementById('ex-timer');
+  if(EX.secondsLeft <= 60){ el.className='ex-timer danger'; }
+  else if(EX.secondsLeft <= 300){ el.className='ex-timer warn'; }
+  else { el.className='ex-timer'; }
+  if(EX.secondsLeft <= 0){ clearInterval(EX.timer); EX.timer=null; examenFinish(); }
+}
+
+function _exFmtTime(s){
+  const h=Math.floor(s/3600), m=Math.floor((s%3600)/60), sec=s%60;
+  if(h>0) return `${h}:${String(m).padStart(2,'0')}:${String(sec).padStart(2,'0')}`;
+  return `${String(m).padStart(2,'0')}:${String(sec).padStart(2,'0')}`;
+}
+
+function _exBuildGrid(){
+  const g = document.getElementById('ex-qgrid');
+  g.innerHTML = EX.examen.vragen.map((q,i) => {
+    const cls = q.needs_bijlage ? ' bijlage' : '';
+    return `<div class="ex-qd${cls}" id="exqd-${i}" onclick="examenShowQ(${i})">${q.nr}</div>`;
+  }).join('');
+}
+
+function examenShowQ(idx){
+  const q = EX.examen.vragen[idx];
+  if(!q) return;
+  EX.idx = idx;
+  // Opgave banner
+  const prevQ = idx > 0 ? EX.examen.vragen[idx-1] : null;
+  document.getElementById('ex-opgave-banner').textContent = `Opgave ${q.opgave}`;
+  // Context — toon alleen als anders dan vorige vraag in zelfde opgave
+  const ctxEl = document.getElementById('ex-context');
+  const ctxTxt = q.context || '';
+  if(ctxTxt){
+    ctxEl.textContent = ctxTxt;
+    ctxEl.style.display = '';
+  } else {
+    ctxEl.style.display = 'none';
+  }
+  // Bijlage note
+  const bijlEl = document.getElementById('ex-bijlage-note');
+  if(q.needs_bijlage && q.bijlage_tekst){
+    bijlEl.textContent = q.bijlage_tekst;
+    bijlEl.style.display = '';
+  } else {
+    bijlEl.style.display = 'none';
+  }
+  // Vraag
+  document.getElementById('ex-q-nr').textContent = `Vraag ${q.nr}`;
+  document.getElementById('ex-vraag').textContent = q.vraag;
+  document.getElementById('ex-q-pts').textContent = `${q.punten}p`;
+  // Antwoord textarea
+  document.getElementById('ex-textarea').value = EX.answers[q.nr] || '';
+  // Knop label
+  const isLast = idx === EX.examen.vragen.length - 1;
+  const nextBtn = document.getElementById('ex-next-btn');
+  nextBtn.textContent = isLast ? 'Afronden →' : 'Volgende →';
+  nextBtn.onclick = isLast ? examenFinish : ()=>examenNav(1);
+  // Grid update
+  _exUpdateGrid();
+  // Scroll top
+  document.getElementById('sc-examen').scrollTo(0,0);
+}
+
+function examenSaveAnswer(val){
+  const q = EX.examen.vragen[EX.idx];
+  if(!q) return;
+  EX.answers[q.nr] = val;
+  _exUpdateGrid();
+  // Score chip: toon beantwoorde vragen
+  const beantwoord = Object.keys(EX.answers).filter(k=>EX.answers[k].trim()).length;
+  document.getElementById('ex-score-chip').textContent = `${beantwoord} / ${EX.examen.vragen.length} ingevuld`;
+}
+
+function examenNav(dir){
+  const newIdx = EX.idx + dir;
+  if(newIdx < 0 || newIdx >= EX.examen.vragen.length) return;
+  examenShowQ(newIdx);
+}
+
+function _exUpdateGrid(){
+  EX.examen.vragen.forEach((q,i)=>{
+    const el = document.getElementById(`exqd-${i}`);
+    if(!el) return;
+    const hasAns = EX.answers[q.nr] && EX.answers[q.nr].trim();
+    const isCur = i===EX.idx;
+    const isBijl = q.needs_bijlage;
+    el.className = 'ex-qd' + (isCur?' current':hasAns?' answered':isBijl?' bijlage':'');
+  });
+}
+
+function examenFinish(){
+  if(EX.timer){ clearInterval(EX.timer); EX.timer=null; }
+  EX.phase = 'result';
+  document.getElementById('ex-quiz').style.display = 'none';
+  document.getElementById('ex-result').style.display = '';
+  // Reset self-grade state
+  EX.selfPts = 0;
+  EX.gradedCount = 0;
+  EX.grades = {};
+  _exBuildResultList();
+  _exUpdateGrade();
+  document.getElementById('sc-examen').scrollTo(0,0);
+}
+
+function _exBuildResultList(){
+  const list = document.getElementById('ex-rev-list');
+  list.innerHTML = EX.examen.vragen.map((q,i) => {
+    const antw = EX.answers[q.nr] || '';
+    const isBijl = q.needs_bijlage;
+    const bijlHtml = isBijl ? `<div class="ex-rev-bijlage">${q.bijlage_tekst||'Bijlage benodigd'}</div>` : '';
+    return `
+    <div class="ex-rev-card" id="exrc-${i}">
+      <div class="ex-rev-header">
+        <span class="ex-rev-nr">Vraag ${q.nr} · Opgave ${q.opgave}</span>
+        <span class="ex-rev-pts-badge" id="exrb-${i}">0 / ${q.punten}p</span>
+      </div>
+      <div class="ex-rev-vraag">${q.vraag}</div>
+      ${bijlHtml}
+      <div class="ex-rev-jouw">Jouw antwoord</div>
+      <div class="ex-rev-jouw-text">${antw.trim() || '(geen antwoord gegeven)'}</div>
+      <div class="ex-rev-model">Modelantwoord</div>
+      <div class="ex-rev-model-text">${q.antwoord}</div>
+      <div class="ex-rev-rubric">${q.antwoord_rubric}</div>
+      <div class="ex-rev-grade">
+        <button class="ex-rev-grade-btn rg-fout" onclick="examenGrade(${i},0)">✗<span style="font-size:10px">Fout<br>0p</span></button>
+        <button class="ex-rev-grade-btn rg-deels" onclick="examenGrade(${i},${Math.ceil(q.punten/2)})">◑<span style="font-size:10px">Deels<br>${Math.ceil(q.punten/2)}p</span></button>
+        <button class="ex-rev-grade-btn rg-goed" onclick="examenGrade(${i},${q.punten})">✓<span style="font-size:10px">Goed<br>${q.punten}p</span></button>
+      </div>
+    </div>`;
+  }).join('');
+}
+
+function examenGrade(idx, pts){
+  const q = EX.examen.vragen[idx];
+  const wasGraded = EX.grades[idx] !== undefined;
+  const oldPts = wasGraded ? EX.grades[idx] : 0;
+  EX.grades[idx] = pts;
+  if(!wasGraded) EX.gradedCount++;
+  EX.selfPts = EX.selfPts - oldPts + pts;
+  // Update badge
+  document.getElementById(`exrb-${idx}`).textContent = `${pts} / ${q.punten}p`;
+  // Update card style
+  const card = document.getElementById(`exrc-${idx}`);
+  card.className = 'ex-rev-card ' + (pts===0?'graded-fout':pts===q.punten?'graded-goed':'graded-deels');
+  // Highlight selected button
+  const btns = card.querySelectorAll('.ex-rev-grade-btn');
+  btns.forEach(b=>b.classList.remove('selected'));
+  const ptsArr = [0, Math.ceil(q.punten/2), q.punten];
+  const selIdx = ptsArr.indexOf(pts);
+  if(selIdx>=0 && btns[selIdx]) btns[selIdx].classList.add('selected');
+  _exUpdateGrade();
+}
+
+function _exUpdateGrade(){
+  const maxPts = EX.examen.max_punten;
+  const pct = maxPts > 0 ? EX.selfPts / maxPts : 0;
+  // CE cijfer: 9 * pct + 1, afgerond op 0.5
+  const cijfer = Math.round((9 * pct + 1) * 2) / 2;
+  const cijferStr = cijfer.toFixed(1);
+  document.getElementById('ex-grade-num').textContent = cijferStr;
+  document.getElementById('ex-score-bar-fill').style.width = (pct*100)+'%';
+  document.getElementById('ex-self-total').innerHTML =
+    `Gescoord: <strong>${EX.selfPts} / ${maxPts}</strong> punten · ${EX.gradedCount}/${EX.examen.vragen.length} beoordeeld`;
+}
+
+function examenConfirmExit(){
+  if(EX.phase==='quiz'){
+    if(confirm('Weet je zeker dat je het examen wil stoppen? Je antwoorden gaan verloren.')){
+      examenExit();
+    }
+  } else {
+    examenExit();
+  }
+}
+
+function examenExit(){
+  if(EX.timer){ clearInterval(EX.timer); EX.timer=null; }
+  EX = {};
   show('sc-detail');
 }
 
@@ -11573,6 +11931,77 @@ if('serviceWorker' in navigator){
   });
 }
 </script>
+<!-- EXAMEN MODUS SCREEN -->
+<div id="sc-examen" class="sc">
+  <!-- Nav -->
+  <div class="ex-nav">
+    <div class="ex-nav-inner">
+      <button class="bk" onclick="examenConfirmExit()">← Stoppen</button>
+      <div class="ex-timer" id="ex-timer">3:00:00</div>
+      <div class="ex-score-chip" id="ex-score-chip">0 / 58 pt</div>
+    </div>
+  </div>
+  <div class="ex-prog-bar"><div class="ex-prog-fill" id="ex-prog-fill" style="width:0%"></div></div>
+
+  <!-- Intro fase -->
+  <div id="ex-intro" class="ex-intro">
+    <div class="ex-intro-badge">📄 Eindexamen</div>
+    <div class="ex-intro-title" id="ex-intro-title">Bedrijfseconomie HAVO 2025 · Tijdvak 1</div>
+    <div class="ex-intro-sub" id="ex-intro-sub">Officieel eindexamen van examenblad.nl</div>
+    <div class="ex-stat-grid">
+      <div class="ex-stat"><div class="ex-stat-val" id="ex-stat-vragen">30</div><div class="ex-stat-lbl">vragen</div></div>
+      <div class="ex-stat"><div class="ex-stat-val" id="ex-stat-punten">58</div><div class="ex-stat-lbl">punten</div></div>
+      <div class="ex-stat"><div class="ex-stat-val" id="ex-stat-tijd">3 uur</div><div class="ex-stat-lbl">examentijd</div></div>
+    </div>
+    <div class="ex-info-box">
+      <strong>Hoe werkt dit?</strong><br>
+      Beantwoord alle vragen zoals bij een echt examen — je mag niets opzoeken. Open vragen beoordeel je zelf achteraf met het modelantwoord. Vragen met een ⚠️ hebben de bijlage nodig; raadpleeg dan het originele examen.
+    </div>
+    <button class="ex-start-btn" onclick="examenStart()">⏱ Start examen</button>
+  </div>
+
+  <!-- Quiz fase -->
+  <div id="ex-quiz" style="display:none">
+    <div class="ex-body">
+      <div class="ex-opgave-banner" id="ex-opgave-banner">Opgave 1</div>
+      <div class="ex-context" id="ex-context" style="display:none"></div>
+      <div class="ex-bijlage-note" id="ex-bijlage-note" style="display:none"></div>
+      <div class="ex-q-header">
+        <div class="ex-q-nr" id="ex-q-nr">Vraag 1</div>
+        <div class="ex-vraag" id="ex-vraag"></div>
+        <div class="ex-q-pts" id="ex-q-pts">1 pt</div>
+      </div>
+      <textarea class="ex-textarea" id="ex-textarea" placeholder="Schrijf hier je antwoord…" oninput="examenSaveAnswer(this.value)"></textarea>
+    </div>
+    <!-- Vaste nav balk -->
+    <div class="ex-bot-nav">
+      <div class="ex-bot-inner">
+        <button class="ex-prev" onclick="examenNav(-1)">← Vorige</button>
+        <div class="ex-qgrid" id="ex-qgrid"></div>
+        <button class="ex-next primary" id="ex-next-btn" onclick="examenNav(1)">Volgende →</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Resultaat fase -->
+  <div id="ex-result" style="display:none">
+    <div class="ex-result-wrap">
+      <div class="ex-result-hero">
+        <div class="ex-grade-circle">
+          <div class="ex-grade-num" id="ex-grade-num">–</div>
+          <div class="ex-grade-lbl">cijfer</div>
+        </div>
+        <div class="ex-result-title">Examen afgerond!</div>
+        <div class="ex-result-sub" id="ex-result-sub">Beoordeel je open vragen hieronder</div>
+        <div class="ex-score-bar-wrap"><div class="ex-score-bar-fill" id="ex-score-bar-fill" style="width:0%"></div></div>
+        <div class="ex-self-total" id="ex-self-total">Gescoord: <strong>0 / 58</strong> punten</div>
+      </div>
+      <div id="ex-rev-list"></div>
+      <button class="ex-done-btn" onclick="examenExit()">✓ Klaar — terug naar vak</button>
+    </div>
+  </div>
+</div>
+
 <!-- SIMULATIETOETS SCREEN -->
 <div id="sc-simtoets" class="sc">
 <nav class="nav">
