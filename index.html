@@ -711,6 +711,45 @@ html.dark .qb{background:#2e3550}
 .ab-fout{background:#7F1D1D;color:#F87171}
 .ab-icon{font-size:20px}
 .ab-txt{font-size:12px}
+/* ── OUD-EXAMEN REDESIGN ─────────────────────── */
+/* Split layout wrapper */
+.quiz-split{display:flex;flex-direction:column;gap:0;width:100%}
+.quiz-lhs,.quiz-rhs{width:100%}
+@media(min-width:700px){
+  #sc-quiz.oud-mode.has-ctx .quiz-split{flex-direction:row;gap:22px;align-items:flex-start}
+  #sc-quiz.oud-mode.has-ctx .quiz-lhs{flex:0 0 46%;max-width:46%}
+  #sc-quiz.oud-mode.has-ctx .quiz-rhs{flex:1;min-width:0}
+}
+/* Oud mode background */
+#sc-quiz.oud-mode{background:linear-gradient(160deg,#07090e 0%,#0b1022 55%,#09101f 100%)}
+/* Widen the qbody for oud mode */
+#sc-quiz.oud-mode .qbody{max-width:1040px;background:transparent;padding:16px 20px 48px}
+/* Context passage card */
+#sc-quiz.oud-mode .qctx{background:rgba(96,165,250,.06);border:1px solid rgba(96,165,250,.22);border-left:3px solid #60a5fa;border-radius:18px;padding:52px 18px 18px;margin-bottom:0;position:relative;overflow:hidden;line-height:1.9;white-space:pre-wrap}
+#sc-quiz.oud-mode .qctx::before{content:'📄 Tekstfragment';position:absolute;top:0;left:0;right:0;font-size:10px;font-weight:700;color:#60a5fa;text-transform:uppercase;letter-spacing:.9px;padding:14px 18px;border-bottom:1px solid rgba(96,165,250,.15);background:rgba(96,165,250,.05)}
+/* On mobile keep margin */
+@media(max-width:699px){#sc-quiz.oud-mode .qctx{margin-bottom:16px}}
+/* Question counter badge in oud mode */
+#sc-quiz.oud-mode #qctr{display:inline-flex;width:auto;font-size:11px;font-weight:800;color:#60a5fa;background:rgba(96,165,250,.1);border:1px solid rgba(96,165,250,.22);border-radius:20px;padding:4px 14px;letter-spacing:.6px;text-transform:uppercase;margin-bottom:14px}
+/* Source badge row */
+#sc-quiz.oud-mode #qbron{margin-bottom:8px}
+/* Question text card */
+#sc-quiz.oud-mode .qq{text-align:left;font-size:clamp(16px,2.4vw,21px);padding:18px 20px;background:rgba(255,255,255,.04);border-radius:16px;border:1px solid rgba(255,255,255,.08);margin-bottom:18px}
+/* Open input in oud mode */
+#sc-quiz.oud-mode .open-input{border-color:rgba(96,165,250,.2);background:rgba(96,165,250,.04);min-height:130px}
+#sc-quiz.oud-mode .open-input:focus{border-color:rgba(96,165,250,.45);background:rgba(96,165,250,.07);box-shadow:0 0 0 3px rgba(96,165,250,.1),0 2px 12px rgba(96,165,250,.12)}
+/* Nakijken button */
+#sc-quiz.oud-mode .nakijk-btn{background:linear-gradient(135deg,rgba(96,165,250,.18),rgba(139,92,246,.13));border-color:rgba(96,165,250,.32);color:#93c5fd;font-size:15px}
+#sc-quiz.oud-mode .nakijk-btn:hover{background:linear-gradient(135deg,rgba(96,165,250,.28),rgba(139,92,246,.2));border-color:rgba(96,165,250,.55);box-shadow:0 4px 22px rgba(96,165,250,.22);color:#bfdbfe}
+/* Model answer card */
+#sc-quiz.oud-mode .model-antwoord{background:rgba(74,222,128,.06);border-left-color:#4ade80;border-radius:16px}
+/* Next button in oud mode */
+#sc-quiz.oud-mode .nxt{background:linear-gradient(135deg,#3b82f6 0%,#7c3aed 100%);box-shadow:0 4px 22px rgba(59,130,246,.32)}
+#sc-quiz.oud-mode .nxt:hover{background:linear-gradient(135deg,#2563eb 0%,#6d28d9 100%);box-shadow:0 6px 30px rgba(59,130,246,.44)}
+/* Oud mode scroll helper on desktop (LHS scrollable) */
+@media(min-width:700px){
+  #sc-quiz.oud-mode.has-ctx .quiz-lhs{position:sticky;top:16px;max-height:calc(100vh - 120px);overflow-y:auto;overflow-x:hidden;scrollbar-width:thin;scrollbar-color:rgba(96,165,250,.3) transparent}
+}
 /* results */
 #sc-res{background:linear-gradient(180deg, #0A0C10 0%, #141824 100%)}
 .rb{padding:48px 28px;max-width:540px;margin:0 auto;text-align:center}
@@ -2732,33 +2771,41 @@ html.dark .hsd-pill{background:var(--bg2);border-color:var(--bo2)}
 <div class="qbody" id="qbody-inner">
   <!-- timer (snel only) -->
   <div id="qring" class="qring"><svg width="50" height="50" viewBox="0 0 50 50"><circle class="trbg" cx="25" cy="25" r="21" stroke-dasharray="132" stroke-dashoffset="0"/><circle class="trfg" id="tcirc" cx="25" cy="25" r="21" stroke-dasharray="132" stroke-dashoffset="0"/></svg><div class="trn" id="tnum">15</div></div>
-  <!-- bron label (oud only) -->
-  <div id="qbron"></div>
-  <div class="qctr" id="qctr"></div>
-  <div class="qctx" id="qctx" style="display:none"></div>
-  <div class="qq" id="qq"></div>
-  <!-- SNEL: 4 knoppen -->
-  <div class="qopts" id="snel-area"></div>
-  <!-- OUD: open invulveld -->
-  <div id="oud-area" style="display:none">
-    <textarea id="oa-input" class="open-input" placeholder="Schrijf hier je antwoord…"></textarea>
-    <button class="nakijk-btn" id="nakijk-btn" onclick="nakijken()">Nakijken — toon modelantwoord →</button>
-    <div id="model-blok" style="display:none">
-      <div class="model-antwoord">
-        <div class="ma-label">📋 Modelantwoord</div>
-        <div class="ma-text" id="ma-text"></div>
+  <div class="quiz-split">
+    <!-- left col: context passage (oud + has-ctx only) -->
+    <div class="quiz-lhs">
+      <div class="qctx" id="qctx" style="display:none"></div>
+    </div>
+    <!-- right col: question + answers (always) -->
+    <div class="quiz-rhs">
+      <!-- bron label (oud only) -->
+      <div id="qbron"></div>
+      <div class="qctr" id="qctr"></div>
+      <div class="qq" id="qq"></div>
+      <!-- SNEL: 4 knoppen -->
+      <div class="qopts" id="snel-area"></div>
+      <!-- OUD: open invulveld -->
+      <div id="oud-area" style="display:none">
+        <textarea id="oa-input" class="open-input" placeholder="Schrijf hier je antwoord…"></textarea>
+        <button class="nakijk-btn" id="nakijk-btn" onclick="nakijken()">Nakijken — toon modelantwoord →</button>
+        <div id="model-blok" style="display:none">
+          <div class="model-antwoord">
+            <div class="ma-label">📋 Modelantwoord</div>
+            <div class="ma-text" id="ma-text"></div>
+          </div>
+          <div class="assess-label">Hoe goed was jouw antwoord?</div>
+          <div class="assess-btns">
+            <button class="assess-btn ab-goed" onclick="beoordeel(1)"><span class="ab-icon">✓</span><span class="ab-txt">Goed</span></button>
+            <button class="assess-btn ab-deels" onclick="beoordeel(0.5)"><span class="ab-icon">~</span><span class="ab-txt">Deels goed</span></button>
+            <button class="assess-btn ab-fout" onclick="beoordeel(0)"><span class="ab-icon">✗</span><span class="ab-txt">Fout</span></button>
+          </div>
+        </div>
       </div>
-      <div class="assess-label">Hoe goed was jouw antwoord?</div>
-      <div class="assess-btns">
-        <button class="assess-btn ab-goed" onclick="beoordeel(1)"><span class="ab-icon">✓</span><span class="ab-txt">Goed</span></button>
-        <button class="assess-btn ab-deels" onclick="beoordeel(0.5)"><span class="ab-icon">~</span><span class="ab-txt">Deels goed</span></button>
-        <button class="assess-btn ab-fout" onclick="beoordeel(0)"><span class="ab-icon">✗</span><span class="ab-txt">Fout</span></button>
-      </div>
+      <div id="qfb" style="display:none"></div>
+      <button id="qnxt" class="nxt" onclick="nextQ()" style="display:none">Volgende →</button>
+      <div id="quiz-kb-hint" style="text-align:center;margin-top:10px;font-size:11px;color:rgba(255,255,255,.22);display:none">Toets <kbd style="background:rgba(255,255,255,.1);padding:1px 5px;border-radius:4px;font-family:monospace">1–4</kbd> of <kbd style="background:rgba(255,255,255,.1);padding:1px 5px;border-radius:4px;font-family:monospace">Enter</kbd></div>
     </div>
   </div>
-  <div id="qfb" style="display:none"></div>
-  <button id="qnxt" class="nxt" onclick="nextQ()" style="display:none">Volgende →</button>
-  <div id="quiz-kb-hint" style="text-align:center;margin-top:10px;font-size:11px;color:rgba(255,255,255,.22);display:none">Toets <kbd style="background:rgba(255,255,255,.1);padding:1px 5px;border-radius:4px;font-family:monospace">1–4</kbd> of <kbd style="background:rgba(255,255,255,.1);padding:1px 5px;border-radius:4px;font-family:monospace">Enter</kbd></div>
 </div>
 </div>
 
@@ -6858,6 +6905,7 @@ function startQ(mode){
     });
   }else{ST.shuffleMaps=[];}
   document.getElementById('qmeta').textContent=`${ST.vak.naam} · D${ST.domein.id}: ${ST.domein.naam} · ${mode==='snel'?'Snelle Quiz':'Oud-examen'}`;
+  document.getElementById('sc-quiz').classList.toggle('oud-mode',mode==='oud');
   show('sc-quiz');
   // Toon skeleton kort terwijl quiz initialiseert
   const skel=document.getElementById('quiz-skeleton');
@@ -6940,6 +6988,7 @@ function startOESingle(qIdx){
   const q=ST.domein.oe[qIdx];
   const jaarLabel=q.jaar?` · ${q.jaar} T${q.tijdvak||1}`:'';
   document.getElementById('qmeta').textContent=`${ST.vak.naam} · D${ST.domein.id}${jaarLabel}`;
+  document.getElementById('sc-quiz').classList.add('oud-mode');
   show('sc-quiz');
   toonV();
 }
@@ -6956,7 +7005,9 @@ function toonV(){
 
   // context tekst
   const ctx=document.getElementById('qctx');
-  if(q.ctx&&q.ctx!==''){ctx.style.display='block';ctx.textContent=q.ctx;}
+  const hasCtxNow=!!(q.ctx&&q.ctx!=='');
+  document.getElementById('sc-quiz').classList.toggle('has-ctx',hasCtxNow);
+  if(hasCtxNow){ctx.style.display='block';ctx.textContent=q.ctx;}
   else{ctx.style.display='none';}
 
   // vraagstelling
