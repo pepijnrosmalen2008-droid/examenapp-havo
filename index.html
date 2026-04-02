@@ -838,6 +838,33 @@ html.dark .qb{background:#2e3550}
 /* Pulsing next pill */
 .lp-next-pill{position:absolute;top:9px;right:9px;background:linear-gradient(135deg,var(--or),#f59e0b);color:#fff;font-size:9px;font-weight:800;padding:3px 9px;border-radius:10px;letter-spacing:.5px;text-transform:uppercase;animation:lpPulse 2s ease-in-out infinite;box-shadow:0 3px 10px rgba(var(--or-rgb),.5)}
 @keyframes lpPulse{0%,100%{box-shadow:0 3px 10px rgba(var(--or-rgb),.5)}50%{box-shadow:0 3px 20px rgba(var(--or-rgb),.8),0 0 0 5px rgba(var(--or-rgb),.12)}}
+/* Locked domain card */
+.lp-card.lp-locked{opacity:.45;filter:grayscale(.6);cursor:not-allowed;border-color:rgba(255,255,255,.07)!important;box-shadow:none!important}
+.lp-card.lp-locked:hover{transform:none!important;border-color:rgba(255,255,255,.07)!important}
+.lp-ring-outer.lp-locked-ring svg .lp-ring-bg{stroke:rgba(255,255,255,.06)}
+/* Simulatietoets entry button */
+.sim-entry-btn{display:flex;align-items:center;gap:12px;width:100%;padding:13px 16px;border-radius:14px;background:rgba(99,102,241,.08);border:1.5px solid rgba(99,102,241,.25);color:#818cf8;font-size:13px;font-weight:700;cursor:pointer;font-family:var(--font-head);transition:all .22s;margin-bottom:14px;text-align:left}
+.sim-entry-btn:hover{background:rgba(99,102,241,.14);border-color:rgba(99,102,241,.45);transform:translateY(-2px);box-shadow:0 6px 18px rgba(99,102,241,.15)}
+.sim-entry-icon{width:36px;height:36px;border-radius:10px;background:rgba(99,102,241,.18);display:flex;align-items:center;justify-content:center;font-size:17px;flex-shrink:0}
+.sim-entry-text{flex:1;min-width:0}
+.sim-entry-title{font-size:13px;font-weight:800;color:#818cf8}
+.sim-entry-sub{font-size:11px;color:var(--mu);font-weight:500;margin-top:1px;font-family:var(--font)}
+.sim-entry-arr{font-size:16px;color:#818cf8;opacity:.6}
+/* Simulatietoets result cards */
+.sim-dom-card{background:var(--s);border:1px solid var(--bo);border-radius:14px;padding:13px 16px;margin-bottom:10px;display:flex;align-items:center;gap:12px}
+.sim-dom-letter{width:34px;height:34px;border-radius:10px;font-size:14px;font-weight:800;display:flex;align-items:center;justify-content:center;flex-shrink:0;font-family:var(--font-head)}
+.sim-dom-info{flex:1;min-width:0}
+.sim-dom-name{font-size:13px;font-weight:700;color:var(--dk)}
+.sim-dom-bar-wrap{height:4px;background:var(--bo2);border-radius:3px;margin-top:5px;overflow:hidden}
+.sim-dom-bar{height:100%;border-radius:3px;transition:width .8s cubic-bezier(.34,1.1,.64,1)}
+.sim-dom-score{font-size:15px;font-weight:900;font-family:var(--font-head);flex-shrink:0}
+.sim-opt{padding:14px 16px;border-radius:12px;border:1.5px solid var(--bo);background:var(--s);color:var(--dk);font-size:15px;font-weight:600;cursor:pointer;text-align:left;transition:all .18s;font-family:var(--font);width:100%}
+.sim-opt:hover:not([disabled]){border-color:rgba(99,102,241,.45);background:rgba(99,102,241,.06);color:#818cf8}
+.sim-opt.correct{border-color:#22c55e;background:rgba(34,197,94,.08);color:#16a34a}
+.sim-opt.wrong{border-color:#ef4444;background:rgba(239,68,68,.07);color:#dc2626}
+.sim-info-card{background:var(--s);border:1px solid var(--bo);border-radius:12px;padding:14px;text-align:center}
+.sim-info-num{font-size:24px;font-weight:900;color:#818cf8;font-family:var(--font-head)}
+.sim-info-lbl{font-size:10px;color:var(--mu);font-weight:700;text-transform:uppercase;letter-spacing:.6px;margin-top:3px}
 /* Leerpad entry card on detail screen */
 .lp-ec{position:relative;overflow:hidden;border-radius:18px;padding:18px 18px 14px;margin-bottom:16px;cursor:pointer;border:1.5px solid rgba(var(--or-rgb),.28);background:linear-gradient(135deg,var(--cd-bg2),var(--cd-bg1));transition:border-color .22s,box-shadow .22s,transform .22s}
 .lp-ec:hover{border-color:rgba(var(--or-rgb),.55);transform:translateY(-2px);box-shadow:0 8px 32px rgba(var(--or-rgb),.18),0 2px 8px rgba(0,0,0,.12)}
@@ -2880,6 +2907,14 @@ html.dark .hsd-pill{background:var(--bg2);border-color:var(--bo2)}
     <div class="lp-ec-bar-wrap"><div class="lp-ec-bar" id="lp-ec-bar" style="width:0%"></div></div>
     <div class="lp-ec-foot" id="lp-ec-foot"></div>
   </div>
+  <button class="sim-entry-btn" onclick="startSimToets()" id="sim-entry-btn">
+    <div class="sim-entry-icon">🎯</div>
+    <div class="sim-entry-text">
+      <div class="sim-entry-title">Simulatietoets</div>
+      <div class="sim-entry-sub" id="sim-entry-sub">Oefen alle domeinen in één sessie · ~25 min</div>
+    </div>
+    <div class="sim-entry-arr">→</div>
+  </button>
   <div class="progress-overview" id="progress-overview" style="display:none">
     <div class="po-title">📊 Jouw voortgang <button class="po-reset" id="reset-progress" onclick="resetVakProgress()">Wissen</button></div>
     <div class="po-grid" id="po-grid"></div>
@@ -8066,6 +8101,7 @@ function showLeerpad(){
   const R=40,SZ=88,C=(2*Math.PI*R); // bigger ring: r=40, 88px SVG
 
   domeinen.forEach((d,i)=>{
+    const isUnlocked=i===0||getDomeinBestPct(vak.id,domeinen[i-1].id).pct>=0.60;
     const r=getDomeinBestPct(vak.id,d.id);
     const decay=getDecayStatus(vak.id,d.id);
     const pct=Math.round(r.pct*100);
@@ -8073,6 +8109,44 @@ function showLeerpad(){
     const isStarted=r.hasData&&!isDone;
     const needsReview=isDone&&decay&&(decay.label.includes('geleden')&&!decay.label.includes('Vandaag'));
     const isNext=i===nextIdx;
+
+    if(!isUnlocked){
+      // LOCKED domain
+      const statusKey='s-locked';
+      const statusEmoji='🔒';
+      const statusTxt=`Domein ${domeinen[i-1].id} eerst voltooien`;
+      const ringStroke='rgba(255,255,255,.1)';
+      const ringGlow='';
+      const connHtml=`<div class="lp-conn"><div class="lp-conn-line"><div class="lp-conn-fill"></div></div></div>`;
+      const side=i%2===0?'r-left':'r-right';
+      const delayStyle=`animation-delay:${i*0.09}s`;
+      const prevDomeinId=domeinen[i-1].id;
+      const nodeHtml=`${connHtml}
+<div class="lp-node-wrap" style="${delayStyle}">
+<div class="lp-row ${side}">
+  <div class="lp-row-side">
+    <div class="lp-card lp-locked" onclick="showToast('Voltooi eerst Domein ${prevDomeinId} (60%) om dit domein te ontgrendelen 🔒','#6366f1',3000)">
+      <div class="lp-card-head">
+        <div class="lp-card-letter" style="background:rgba(255,255,255,.06);color:rgba(255,255,255,.3)">${d.id}</div>
+        <div class="lp-card-name">Domein ${d.id}<br><span style="font-weight:500;font-size:11.5px;color:rgba(255,255,255,.25)">${d.naam}</span></div>
+      </div>
+      <div class="lp-card-badge ${statusKey}">${statusEmoji} ${statusTxt}</div>
+    </div>
+  </div>
+  <div class="lp-row-mid">
+    <div class="lp-ring-outer lp-locked-ring">
+      <svg class="lp-ring-svg" width="${SZ}" height="${SZ}" viewBox="0 0 ${SZ} ${SZ}">
+        <circle class="lp-ring-bg" cx="44" cy="44" r="${R}" stroke="${ringStroke}"/>
+        <text x="44" y="44" text-anchor="middle" font-size="22" style="dominant-baseline:middle">🔒</text>
+      </svg>
+    </div>
+  </div>
+  <div class="lp-row-side" style="visibility:hidden"></div>
+</div>
+</div>`;
+      container.insertAdjacentHTML('beforeend',nodeHtml);
+      return;
+    }
 
     // Status
     let statusKey,statusTxt,statusEmoji,ringStroke,ringGlow;
@@ -8195,6 +8269,176 @@ function lpStartFlash(domeinId){
   if(!ST.domein)return;
   show('sc-flash');
   startFlash();
+}
+
+// ═══════ SIMULATIETOETS ═══════
+let SIM={};
+const SIM_QPD=3; // questions per domain
+
+function startSimToets(){
+  if(!ST.vak)return;
+  const vak=ST.vak;
+  SIM={vak,questions:[],idx:0,answers:[],timer:null,duration:0,started:false};
+
+  // Build question pool: SIM_QPD questions per domain from sv arrays
+  vak.domeinen.forEach(d=>{
+    const pool=(d.sv||[]).filter(q=>q.v&&q.o&&q.c!==undefined);
+    const shuffled=[...pool].sort(()=>Math.random()-.5).slice(0,SIM_QPD);
+    shuffled.forEach(q=>SIM.questions.push({...q,domeinId:d.id,domeinNaam:d.naam,domeinKleur:vak.kleur}));
+  });
+  // Shuffle all questions
+  SIM.questions.sort(()=>Math.random()-.5);
+
+  const total=SIM.questions.length;
+  const mins=Math.ceil(total*1.5); // ~1.5 min per question
+  SIM.duration=mins*60;
+
+  // Update setup screen
+  document.getElementById('sim-nav-title').textContent=vak.naam+' — Simulatie';
+  document.getElementById('sim-setup-title').textContent='Simulatietoets '+vak.naam;
+  document.getElementById('sim-setup-desc').textContent='Alle '+vak.domeinen.length+' domeinen, '+total+' vragen.';
+  const grid=document.getElementById('sim-info-grid');
+  grid.innerHTML=`
+    <div class="sim-info-card"><div class="sim-info-num">${total}</div><div class="sim-info-lbl">Vragen</div></div>
+    <div class="sim-info-card"><div class="sim-info-num">${mins} min</div><div class="sim-info-lbl">Tijdlimiet</div></div>
+    <div class="sim-info-card"><div class="sim-info-num">${vak.domeinen.length}</div><div class="sim-info-lbl">Domeinen</div></div>
+    <div class="sim-info-card"><div class="sim-info-num">${SIM_QPD}</div><div class="sim-info-lbl">Per domein</div></div>`;
+
+  // Reset phases
+  document.getElementById('sim-setup').style.display='';
+  document.getElementById('sim-quiz').style.display='none';
+  document.getElementById('sim-result').style.display='none';
+  document.getElementById('sim-timer-chip').style.display='none';
+  show('sc-simtoets');
+}
+
+function simStart(){
+  document.getElementById('sim-setup').style.display='none';
+  document.getElementById('sim-quiz').style.display='';
+  document.getElementById('sim-timer-chip').style.display='';
+  SIM.idx=0;SIM.answers=[];SIM.started=true;
+  SIM.endTime=Date.now()+SIM.duration*1000;
+  // Start timer
+  if(SIM.timer)clearInterval(SIM.timer);
+  SIM.timer=setInterval(simTimerTick,1000);
+  simShowQ();
+}
+
+function simTimerTick(){
+  const left=Math.max(0,Math.round((SIM.endTime-Date.now())/1000));
+  const m=Math.floor(left/60),s=left%60;
+  const chip=document.getElementById('sim-timer-chip');
+  if(chip)chip.textContent='⏱ '+m+':'+(s<10?'0':'')+s;
+  if(chip){
+    if(left<=60)chip.style.color='#ef4444';
+    else if(left<=180)chip.style.color='#f97316';
+    else chip.style.color='var(--or)';
+  }
+  if(left===0){clearInterval(SIM.timer);simFinish();}
+}
+
+function simShowQ(){
+  if(SIM.idx>=SIM.questions.length){simFinish();return;}
+  const q=SIM.questions[SIM.idx];
+  const total=SIM.questions.length;
+  const pct=Math.round(SIM.idx/total*100);
+  document.getElementById('sim-prog-bar').style.width=pct+'%';
+  document.getElementById('sim-q-domain').textContent='Domein '+q.domeinId+': '+q.domeinNaam;
+  document.getElementById('sim-q-counter').textContent=(SIM.idx+1)+' / '+total;
+  document.getElementById('sim-q-text').textContent=q.v;
+
+  // Build options
+  const optsEl=document.getElementById('sim-q-opts');
+  // Create shuffled option map
+  const idxArr=[0,1,2,3].slice(0,q.o.length);
+  const shuffled=[...idxArr].sort(()=>Math.random()-.5);
+  optsEl.innerHTML=shuffled.map(oi=>`
+    <button class="sim-opt" onclick="simSelectOpt(this,${oi},${q.c})">${q.o[oi]}</button>
+  `).join('');
+
+  const nextBtn=document.getElementById('sim-next-btn');
+  nextBtn.disabled=true;nextBtn.style.opacity='.35';
+  nextBtn.textContent=SIM.idx===total-1?'Afronden →':'Volgende →';
+}
+
+function simSelectOpt(btn,selectedIdx,correctIdx){
+  // Disable all options
+  const optsEl=document.getElementById('sim-q-opts');
+  optsEl.querySelectorAll('.sim-opt').forEach(b=>b.disabled=true);
+  // Show correct/wrong
+  btn.classList.add(selectedIdx===correctIdx?'correct':'wrong');
+  if(selectedIdx!==correctIdx){
+    optsEl.querySelectorAll('.sim-opt').forEach(b=>{
+      if(parseInt(b.getAttribute('onclick').match(/simSelectOpt\(this,(\d+)/)?.[1])===correctIdx){
+        b.classList.add('correct');
+      }
+    });
+  }
+  // Record answer
+  const q=SIM.questions[SIM.idx];
+  SIM.answers.push({correct:selectedIdx===correctIdx,domeinId:q.domeinId,domeinNaam:q.domeinNaam,domeinKleur:q.domeinKleur});
+  // Enable next
+  const nextBtn=document.getElementById('sim-next-btn');
+  nextBtn.disabled=false;nextBtn.style.opacity='1';
+}
+
+function simNextQ(){
+  SIM.idx++;
+  if(SIM.idx>=SIM.questions.length){simFinish();return;}
+  simShowQ();
+}
+
+function simFinish(){
+  if(SIM.timer){clearInterval(SIM.timer);SIM.timer=null;}
+  document.getElementById('sim-quiz').style.display='none';
+  document.getElementById('sim-timer-chip').style.display='none';
+  document.getElementById('sim-result').style.display='';
+
+  const correct=SIM.answers.filter(a=>a.correct).length;
+  const total=SIM.answers.length;
+  const pct=total>0?correct/total:0;
+  // CE grade estimate: 9 * (pct) + 1, rounded to 0.5
+  const rawGrade=9*pct+1;
+  const grade=Math.round(rawGrade*2)/2;
+  const gradeColor=grade>=7?'#22c55e':grade>=5.5?'#f97316':'#ef4444';
+  const gradeEmoji=grade>=8?'🏆':grade>=7?'⭐':grade>=6?'👍':grade>=5.5?'📈':'📚';
+
+  document.getElementById('sim-res-emoji').textContent=gradeEmoji;
+  document.getElementById('sim-res-grade').textContent=grade.toFixed(1).replace('.',',');
+  document.getElementById('sim-res-grade').style.color=gradeColor;
+  document.getElementById('sim-res-label').textContent='Geschat CE-cijfer';
+  document.getElementById('sim-res-score').textContent=correct+' van '+total+' vragen correct ('+Math.round(pct*100)+'%)';
+
+  // Per-domain breakdown
+  const domMap={};
+  SIM.answers.forEach(a=>{
+    if(!domMap[a.domeinId])domMap[a.domeinId]={naam:a.domeinNaam,kleur:a.domeinKleur,correct:0,total:0};
+    domMap[a.domeinId].total++;
+    if(a.correct)domMap[a.domeinId].correct++;
+  });
+
+  const domRes=document.getElementById('sim-domain-results');
+  domRes.innerHTML='<div style="font-size:12px;font-weight:700;color:var(--mu);text-transform:uppercase;letter-spacing:.7px;margin-bottom:12px">Resultaat per domein</div>'+
+    Object.entries(domMap).map(([id,d])=>{
+      const dp=d.total>0?Math.round(d.correct/d.total*100):0;
+      const dc=dp>=70?'#22c55e':dp>=50?'#f97316':'#ef4444';
+      return `<div class="sim-dom-card">
+        <div class="sim-dom-letter" style="background:${d.kleur}22;color:${d.kleur}">${id}</div>
+        <div class="sim-dom-info">
+          <div class="sim-dom-name">Domein ${id}: ${d.naam}</div>
+          <div class="sim-dom-bar-wrap"><div class="sim-dom-bar" style="width:${dp}%;background:${dc}"></div></div>
+        </div>
+        <div class="sim-dom-score" style="color:${dc}">${d.correct}/${d.total}</div>
+      </div>`;
+    }).join('');
+
+  // Show progress bar full
+  document.getElementById('sim-prog-bar').style.width='100%';
+}
+
+function simExit(){
+  if(SIM.timer){clearInterval(SIM.timer);SIM.timer=null;}
+  show('sc-detail');
 }
 
 // ═══════ RACE MODE ═══════
@@ -11295,6 +11539,58 @@ if('serviceWorker' in navigator){
   });
 }
 </script>
+<!-- SIMULATIETOETS SCREEN -->
+<div id="sc-simtoets" class="sc">
+<nav class="nav">
+  <div class="nav-inner">
+    <button class="bk" onclick="simExit()">← Stop</button>
+    <span style="font-family:var(--font-head);font-weight:800;font-size:15px;color:var(--dk)" id="sim-nav-title">Simulatietoets</span>
+    <div id="sim-timer-chip" style="margin-left:auto;font-size:13px;font-weight:800;font-family:var(--font-head);color:var(--or);background:rgba(var(--or-rgb),.1);border:1px solid rgba(var(--or-rgb),.25);border-radius:20px;padding:4px 14px;display:none">⏱ --:--</div>
+  </div>
+</nav>
+<!-- SETUP PHASE -->
+<div id="sim-setup" class="w" style="padding-top:28px;padding-bottom:48px;max-width:560px">
+  <div style="text-align:center;margin-bottom:28px">
+    <div style="font-size:44px;margin-bottom:12px">🎯</div>
+    <h2 style="font-family:var(--font-head);font-size:24px;font-weight:900;margin-bottom:8px;letter-spacing:-.3px" id="sim-setup-title">Simulatietoets</h2>
+    <p style="color:var(--mu);font-size:14px" id="sim-setup-desc">Oefen alle domeinen in één realistische sessie.</p>
+  </div>
+  <div id="sim-info-grid" style="display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:24px"></div>
+  <div style="background:rgba(99,102,241,.07);border:1px solid rgba(99,102,241,.2);border-radius:14px;padding:14px 16px;margin-bottom:20px;font-size:13px;color:#818cf8;line-height:1.7">
+    💡 Per domein worden 3 vragen gesteld. Beantwoord alles en zie je score per domein + een geschat CE-cijfer.
+  </div>
+  <button onclick="simStart()" style="width:100%;padding:16px;background:linear-gradient(135deg,#6366f1,#818cf8);color:#fff;border:none;border-radius:14px;font-size:16px;font-weight:800;cursor:pointer;font-family:var(--font-head);box-shadow:0 4px 18px rgba(99,102,241,.4);transition:all .2s">▶ Simulatie starten</button>
+</div>
+<!-- QUIZ PHASE -->
+<div id="sim-quiz" style="display:none">
+  <div style="background:var(--bg2);height:6px;position:relative;overflow:hidden">
+    <div id="sim-prog-bar" style="height:100%;background:linear-gradient(90deg,#6366f1,#818cf8);transition:width .4s;width:0%;position:relative;overflow:hidden"></div>
+  </div>
+  <div class="w" style="padding-top:20px;padding-bottom:80px;max-width:640px">
+    <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:16px">
+      <span id="sim-q-domain" style="font-size:11px;font-weight:700;color:#818cf8;text-transform:uppercase;letter-spacing:.8px;background:rgba(99,102,241,.1);border:1px solid rgba(99,102,241,.2);border-radius:20px;padding:3px 12px"></span>
+      <span id="sim-q-counter" style="font-size:12px;color:var(--mu);font-weight:600"></span>
+    </div>
+    <div id="sim-q-text" style="font-size:18px;font-weight:700;font-family:var(--font-head);color:var(--dk);margin-bottom:20px;line-height:1.5;letter-spacing:-.2px"></div>
+    <div id="sim-q-opts" style="display:flex;flex-direction:column;gap:10px;margin-bottom:24px"></div>
+    <button id="sim-next-btn" onclick="simNextQ()" disabled style="width:100%;padding:14px;background:linear-gradient(135deg,#6366f1,#818cf8);color:#fff;border:none;border-radius:13px;font-size:15px;font-weight:800;cursor:pointer;font-family:var(--font-head);opacity:.35;transition:all .2s">Volgende →</button>
+  </div>
+</div>
+<!-- RESULT PHASE -->
+<div id="sim-result" style="display:none">
+  <div class="w" style="padding-top:28px;padding-bottom:80px;max-width:560px">
+    <div style="text-align:center;margin-bottom:24px">
+      <div style="font-size:52px;margin-bottom:12px" id="sim-res-emoji">🎯</div>
+      <div style="font-family:var(--font-head);font-size:38px;font-weight:900;margin-bottom:4px" id="sim-res-grade">—</div>
+      <div style="font-size:14px;color:var(--mu)" id="sim-res-label">Geschat CE-cijfer</div>
+      <div style="margin-top:12px;font-size:14px;color:var(--mu)" id="sim-res-score"></div>
+    </div>
+    <div id="sim-domain-results" style="margin-bottom:24px"></div>
+    <button onclick="startSimToets()" style="width:100%;padding:14px;background:linear-gradient(135deg,#6366f1,#818cf8);color:#fff;border:none;border-radius:13px;font-size:15px;font-weight:800;cursor:pointer;font-family:var(--font-head);box-shadow:0 4px 18px rgba(99,102,241,.35);margin-bottom:10px">🔄 Opnieuw</button>
+    <button onclick="show('sc-detail')" style="width:100%;padding:13px;background:var(--bg2);color:var(--dk);border:1px solid var(--bo);border-radius:13px;font-size:14px;font-weight:700;cursor:pointer;font-family:var(--font)">← Terug naar domeinen</button>
+  </div>
+</div>
+</div>
 <!-- LEERPAD SCREEN -->
 <div id="sc-leerpad" class="sc">
 <nav class="lp-nav">
