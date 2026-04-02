@@ -2216,6 +2216,46 @@ html.dark .hsd-pill{background:var(--bg2);border-color:var(--bo2)}
 .intro-mbtn-skip{flex:1;padding:13px;background:none;border:1px solid var(--bo);color:var(--mu);border-radius:12px;font-size:14px;cursor:pointer;font-family:var(--font);transition:all .2s}
 .intro-mbtn-next{flex:2;padding:13px 20px;background:var(--or);color:#fff;border:none;border-radius:12px;font-size:15px;font-weight:700;cursor:pointer;font-family:var(--font);box-shadow:0 4px 16px rgba(var(--or-rgb),.35);transition:all .2s}
 .intro-mbtn-next:disabled{opacity:.45;cursor:not-allowed;box-shadow:none}
+/* ===== ONBOARDING v3 ===== */
+#ob-overlay{position:fixed;inset:0;z-index:9500;background:rgba(0,0,0,.82);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);display:none;align-items:center;justify-content:center;padding:16px}
+.ob-box{background:linear-gradient(160deg,#0d1622 0%,#111827 100%);border:1px solid rgba(99,102,241,.3);border-radius:24px;padding:32px 28px 28px;max-width:440px;width:100%;box-shadow:0 24px 80px rgba(0,0,0,.7);animation:tutoIn .4s cubic-bezier(.34,1.56,.64,1);max-height:92vh;overflow-y:auto}
+.ob-progress{display:flex;gap:6px;margin-bottom:28px}
+.ob-prog-bar{flex:1;height:4px;border-radius:2px;background:rgba(255,255,255,.1);transition:background .35s,box-shadow .35s}
+.ob-prog-bar.done{background:#6366f1}
+.ob-prog-bar.active{background:linear-gradient(90deg,#6366f1,#818cf8);box-shadow:0 0 8px rgba(99,102,241,.5)}
+.ob-step{display:none;text-align:center}.ob-step.on{display:block}
+.ob-head-icon{font-size:48px;margin-bottom:12px;display:block}
+.ob-title{font-size:22px;font-weight:800;margin-bottom:8px;color:#f1f5f9;font-family:var(--font-head)}
+.ob-sub{font-size:14px;color:rgba(255,255,255,.55);margin-bottom:20px;line-height:1.5}
+.ob-features{display:flex;flex-direction:column;gap:8px;margin-bottom:22px;text-align:left}
+.ob-feat{display:flex;align-items:center;gap:14px;background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.08);border-radius:14px;padding:14px 16px;cursor:pointer;transition:all .25s;user-select:none;-webkit-user-select:none}
+.ob-feat:hover{background:rgba(99,102,241,.12);border-color:rgba(99,102,241,.3)}
+.ob-feat.tapped{background:rgba(99,102,241,.18);border-color:#6366f1;box-shadow:0 0 12px rgba(99,102,241,.25)}
+.ob-feat-ico{font-size:26px;flex-shrink:0;width:36px;text-align:center}
+.ob-feat-body{flex:1}
+.ob-feat-title{font-size:14px;font-weight:700;color:#f1f5f9;margin-bottom:2px}
+.ob-feat-desc{font-size:12px;color:rgba(255,255,255,.45)}
+.ob-feat-desc-extra{font-size:12px;color:rgba(255,255,255,.6);margin-top:6px;display:none;line-height:1.5}
+.ob-feat.tapped .ob-feat-desc-extra{display:block}
+.ob-feat-check{font-size:15px;color:#818cf8;opacity:0;transition:opacity .2s;flex-shrink:0}
+.ob-feat.tapped .ob-feat-check{opacity:1}
+.ob-animal-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin-bottom:12px;max-height:220px;overflow-y:auto}
+.ob-animal-btn{background:rgba(255,255,255,.05);border:2px solid transparent;border-radius:12px;padding:10px 4px;cursor:pointer;text-align:center;transition:all .2s;display:flex;flex-direction:column;align-items:center;gap:4px}
+.ob-animal-btn:hover{background:rgba(99,102,241,.12);border-color:rgba(99,102,241,.3)}
+.ob-animal-btn.selected{background:rgba(99,102,241,.22);border-color:#6366f1;box-shadow:0 0 10px rgba(99,102,241,.3)}
+.ob-animal-emoji{font-size:26px;line-height:1}
+.ob-animal-name{font-size:10px;color:rgba(255,255,255,.5);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;max-width:100%}
+.ob-animal-hint{font-size:12px;color:rgba(255,255,255,.4);margin-bottom:14px;min-height:18px;transition:color .2s}
+.ob-form{display:flex;flex-direction:column;gap:10px;margin-bottom:4px;text-align:left}
+.ob-input{width:100%;background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.12);border-radius:10px;padding:11px 14px;color:#f1f5f9;font-size:14px;outline:none;transition:border-color .2s;box-sizing:border-box;font-family:var(--font)}
+.ob-input:focus{border-color:#6366f1}
+.ob-input::placeholder{color:rgba(255,255,255,.3)}
+.ob-err{background:rgba(239,68,68,.12);border:1px solid rgba(239,68,68,.3);color:#fca5a5;border-radius:8px;padding:8px 12px;font-size:13px}
+.ob-btn{width:100%;padding:13px;border-radius:12px;border:none;background:linear-gradient(135deg,#6366f1 0%,#4f46e5 100%);color:#fff;font-size:15px;font-weight:700;cursor:pointer;transition:all .2s;margin-top:4px;font-family:var(--font)}
+.ob-btn:hover:not(:disabled){transform:translateY(-1px);box-shadow:0 4px 16px rgba(99,102,241,.4)}
+.ob-btn:disabled{opacity:.45;cursor:not-allowed;transform:none}
+.ob-skip-btn{width:100%;padding:9px;border-radius:10px;border:none;background:transparent;color:rgba(255,255,255,.38);font-size:13px;cursor:pointer;margin-top:2px;transition:color .2s;font-family:var(--font)}
+.ob-skip-btn:hover{color:rgba(255,255,255,.65)}
 .home-section-header{padding:24px 0 8px;display:flex;flex-direction:column;gap:2px}
 .hsh-title{font-weight:700;font-size:15px;color:var(--dk)}
 .hsh-sub{font-size:12px;color:var(--mu)}
@@ -10145,6 +10185,93 @@ const INTRO_STEPS_N=3;
 let _introIdx=0;
 let _introPickedAnimal=null;
 
+/* ===== ONBOARDING v3 ===== */
+const OB_KEY='slagio_onboard_v3';
+let _obStep=0,_obPickedAnimal=null;
+function showOnboarding(){
+  _obStep=0;_obPickedAnimal=null;
+  _obBuildAnimals();
+  document.getElementById('ob-overlay').style.display='flex';
+  _obRender();
+}
+function _obBuildAnimals(){
+  const grid=document.getElementById('ob-animal-grid');
+  if(!grid)return;
+  grid.innerHTML='';
+  ANIMAL_EVOLUTIONS.forEach(a=>{
+    const btn=document.createElement('button');
+    btn.type='button';btn.className='ob-animal-btn';btn.dataset.id=a.id;
+    btn.innerHTML=`<span class="ob-animal-emoji">${a.svg?getAnimalDisplay(a.id,0,28):a.s[0]}</span><span class="ob-animal-name">${a.n}</span>`;
+    btn.onclick=()=>{
+      grid.querySelectorAll('.ob-animal-btn').forEach(b=>b.classList.remove('selected'));
+      btn.classList.add('selected');_obPickedAnimal=a.id;
+      const hint=document.getElementById('ob-animal-hint');
+      if(hint){hint.textContent=a.n+' gekozen ✓';hint.style.color='#818cf8';}
+      const nb=document.getElementById('ob-next1-btn');if(nb)nb.disabled=false;
+    };
+    grid.appendChild(btn);
+  });
+}
+function obTapFeat(el){el.classList.toggle('tapped');}
+function obGoStep(n){
+  if(n===2&&!_obPickedAnimal)return;
+  _obStep=n;_obRender();
+}
+function _obRender(){
+  for(let i=0;i<3;i++){
+    const s=document.getElementById('ob-s'+i);
+    if(s)s.classList.toggle('on',i===_obStep);
+    const b=document.getElementById('ob-bar-'+i);
+    if(b){b.classList.toggle('done',i<_obStep);b.classList.toggle('active',i===_obStep);}
+  }
+}
+async function obDoRegister(){
+  const naam=(document.getElementById('ob-naam').value||'').trim();
+  const email=(document.getElementById('ob-email').value||'').trim();
+  const pass=document.getElementById('ob-pass').value||'';
+  const errEl=document.getElementById('ob-err');
+  const btn=document.getElementById('ob-reg-btn');
+  errEl.style.display='none';
+  if(!naam){errEl.textContent='Vul je naam in.';errEl.style.display='block';return;}
+  if(!email||!isValidEmail(email)){errEl.textContent='Voer een geldig e-mailadres in.';errEl.style.display='block';return;}
+  if(pass.length<8){errEl.textContent='Wachtwoord moet minimaal 8 tekens zijn.';errEl.style.display='block';return;}
+  if(passwordScore(pass)<2){errEl.textContent='Wachtwoord is te zwak. Voeg een hoofdletter, cijfer of speciaal teken toe.';errEl.style.display='block';return;}
+  btn.disabled=true;btn.textContent='Bezig...';
+  try{
+    const {data,error}=await SB.auth.signUp({email,password:pass});
+    if(error)throw error;
+    const animalId=_obPickedAnimal||null;
+    const initAvatar=animalId?getAnimalEmoji(animalId,0):'🐾';
+    const prof={naam,avatar:initAvatar,animalId,school:'',klas:'',profiel:''};
+    localStorage.setItem(PROF_KEY,JSON.stringify(prof));
+    selectedAnimalId=animalId;
+    if(data.user){currentUser=data.user;await cloudSet('profiel',prof);}
+    obFinish(true);
+    if(!data.session)showToast('✓ Account aangemaakt! Controleer je inbox om je e-mail te bevestigen.','#4ade80',5000);
+  }catch(e){
+    errEl.textContent=authErrMsg(e.message);errEl.style.display='block';
+  }finally{btn.disabled=false;btn.textContent='Account aanmaken';}
+}
+function obFinish(registered){
+  if(_obPickedAnimal){
+    try{
+      const p=JSON.parse(localStorage.getItem(PROF_KEY)||'{}');
+      if(!p.animalId){
+        p.animalId=_obPickedAnimal;
+        const a=getAnimalById(_obPickedAnimal);
+        p.avatar=a?(a.fallback?a.fallback[0]:a.s[0]):'🐾';
+        localStorage.setItem(PROF_KEY,JSON.stringify(p));
+        if(currentUser)cloudSet('profiel',p);
+        selectedAnimalId=_obPickedAnimal;
+      }
+    }catch(e){}
+  }
+  document.getElementById('ob-overlay').style.display='none';
+  localStorage.setItem(OB_KEY,'1');
+  localStorage.setItem('slagio_seen_intro_v2','1');
+  localStorage.setItem(TUTO_KEY,'1');
+  updateProfileNav();renderXPHome();
+}
 function showIntroModal(){
   _introIdx=0;
   _introPickedAnimal=null;
@@ -10344,11 +10471,11 @@ function chooseLevel(level){
   const badge=document.getElementById('intro-level-badge');
   if(badge)badge.textContent=(level==='havo'?'HAVO':'VWO')+' 2026';
   // Show intro for first-time users, home for returning users
-  const seen=localStorage.getItem('slagio_seen_intro_v2');
   show('sc-home');
   buildGrid();renderStreak();renderFavHome();renderXPHome();renderDailyChallenge();renderHomeStats();renderGreeting();
-  if(!seen){setTimeout(showIntroModal,300);}
-  else{setTimeout(showTutorial,400);}
+  const _isNew=!localStorage.getItem(OB_KEY)&&!localStorage.getItem('slagio_seen_intro_v2');
+  if(_isNew){setTimeout(showOnboarding,300);}
+  else if(!localStorage.getItem(TUTO_KEY)){setTimeout(showTutorial,400);}
 }
 function updateLevelChip(){
   const chip=document.getElementById('home-level-chip');
@@ -10473,6 +10600,71 @@ window.show=function(id){_origShow(id);updateBottomNav(id);};
 </div>
 
 <!-- TUTORIAL OVERLAY -->
+<div id="ob-overlay" style="display:none;align-items:center;justify-content:center">
+  <div class="ob-box">
+    <div class="ob-progress">
+      <div class="ob-prog-bar active" id="ob-bar-0"></div>
+      <div class="ob-prog-bar" id="ob-bar-1"></div>
+      <div class="ob-prog-bar" id="ob-bar-2"></div>
+    </div>
+    <div class="ob-step on" id="ob-s0">
+      <span class="ob-head-icon">🎓</span>
+      <div class="ob-title">Welkom bij Slagio!</div>
+      <div class="ob-sub">Ontdek wat je kunt doen. Tik op een modus om meer te zien.</div>
+      <div class="ob-features">
+        <div class="ob-feat" onclick="obTapFeat(this)">
+          <span class="ob-feat-ico">⚡</span>
+          <div class="ob-feat-body">
+            <div class="ob-feat-title">Snelle quiz</div>
+            <div class="ob-feat-desc">15 seconden per vraag</div>
+            <div class="ob-feat-desc-extra">Beantwoord meerkeuzevragen zo snel en correct mogelijk. Je score hangt af van snelheid én nauwkeurigheid.</div>
+          </div>
+          <span class="ob-feat-check">✓</span>
+        </div>
+        <div class="ob-feat" onclick="obTapFeat(this)">
+          <span class="ob-feat-ico">📄</span>
+          <div class="ob-feat-body">
+            <div class="ob-feat-title">Oud examen</div>
+            <div class="ob-feat-desc">Echte CE-vragen uit het verleden</div>
+            <div class="ob-feat-desc-extra">Oefen met open vragen van het echte eindexamen. Schrijf een antwoord en vergelijk met het modelantwoord.</div>
+          </div>
+          <span class="ob-feat-check">✓</span>
+        </div>
+        <div class="ob-feat" onclick="obTapFeat(this)">
+          <span class="ob-feat-ico">🃏</span>
+          <div class="ob-feat-body">
+            <div class="ob-feat-title">Flashcards</div>
+            <div class="ob-feat-desc">Leer begrippen met spaced repetition</div>
+            <div class="ob-feat-desc-extra">Flip kaartjes om begrippen te leren. Markeer of je het wist — de app herhaalt wat je nog niet kent.</div>
+          </div>
+          <span class="ob-feat-check">✓</span>
+        </div>
+      </div>
+      <button class="ob-btn" onclick="obGoStep(1)">Volgende →</button>
+    </div>
+    <div class="ob-step" id="ob-s1">
+      <span class="ob-head-icon">🐾</span>
+      <div class="ob-title">Kies je mascotte</div>
+      <div class="ob-sub">Jouw mascotte groeit mee met je XP. Kies er eentje om door te gaan.</div>
+      <div class="ob-animal-grid" id="ob-animal-grid"></div>
+      <div class="ob-animal-hint" id="ob-animal-hint">Kies een mascotte om verder te gaan</div>
+      <button class="ob-btn" id="ob-next1-btn" onclick="obGoStep(2)" disabled>Volgende →</button>
+    </div>
+    <div class="ob-step" id="ob-s2">
+      <span class="ob-head-icon">☁️</span>
+      <div class="ob-title">Sla je voortgang op</div>
+      <div class="ob-sub">Maak een gratis account aan. Je voortgang, favorieten en badges worden op elk apparaat bewaard.</div>
+      <div class="ob-form">
+        <input id="ob-naam" class="ob-input" type="text" placeholder="Jouw naam" maxlength="50" autocomplete="name">
+        <input id="ob-email" class="ob-input" type="email" placeholder="E-mailadres" autocomplete="email">
+        <input id="ob-pass" class="ob-input" type="password" placeholder="Wachtwoord (min. 8 tekens)" autocomplete="new-password">
+        <div id="ob-err" class="ob-err" style="display:none"></div>
+        <button class="ob-btn" id="ob-reg-btn" onclick="obDoRegister()">Account aanmaken</button>
+        <button class="ob-skip-btn" onclick="obFinish(false)">Overslaan, ga verder zonder account →</button>
+      </div>
+    </div>
+  </div>
+</div>
 <div id="tuto-overlay" class="tuto-overlay" style="display:none">
   <div class="tuto-card">
     <button class="tuto-skip" onclick="closeTutorial()">Overslaan ✕</button>
