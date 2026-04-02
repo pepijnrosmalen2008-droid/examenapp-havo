@@ -729,6 +729,116 @@ html.dark .qb{background:#2e3550}
 .ce-pdf-cv:hover{background:rgba(74,222,128,.08);border-color:rgba(74,222,128,.35);color:#4ade80}
 .ce-archief-card.open .ce-archief-body{display:block!important}
 .ce-archief-card.open .ce-arr{transform:rotate(180deg)}
+/* ── LEERPAD ──────────────────────────────────── */
+#sc-leerpad{background:var(--bg)}
+.lp-nav{height:var(--nav-h);display:flex;align-items:center;border-bottom:1px solid var(--bo);position:sticky;top:0;background:var(--nav-bg);backdrop-filter:blur(24px);-webkit-backdrop-filter:blur(24px);z-index:100;transition:background .25s,border-color .25s}
+.lp-nav-inner{max-width:680px;margin:0 auto;padding:0 20px;width:100%;display:flex;align-items:center;gap:12px}
+.lp-hero{background:linear-gradient(160deg,var(--cd-bg1) 0%,var(--cd-bg2) 60%,var(--cd-bg3) 100%);padding:28px 20px 24px;text-align:center;position:relative;overflow:hidden}
+.lp-hero::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at 50% 0%,rgba(var(--or-rgb),.28) 0%,transparent 62%);pointer-events:none}
+.lp-hero-badge{display:inline-flex;align-items:center;gap:6px;background:rgba(var(--or-rgb),.18);color:var(--or);font-size:11px;font-weight:700;padding:4px 13px;border-radius:20px;border:1px solid rgba(var(--or-rgb),.35);margin-bottom:12px;letter-spacing:.4px;backdrop-filter:blur(8px)}
+.lp-hero-title{font-family:var(--font-head);font-size:22px;font-weight:800;color:#fff;margin-bottom:5px;letter-spacing:-.4px}
+.lp-hero-sub{font-size:13px;color:rgba(255,255,255,.5);margin-bottom:18px}
+.lp-hero-stats{display:flex;gap:0;justify-content:center;background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.1);border-radius:16px;padding:10px 0;max-width:320px;margin:0 auto}
+.lp-stat{text-align:center;flex:1;padding:0 4px}
+.lp-stat-num{font-size:22px;font-weight:900;color:var(--or);font-family:var(--font-head);line-height:1.1}
+.lp-stat-lbl{font-size:9px;color:rgba(255,255,255,.4);font-weight:700;letter-spacing:.5px;text-transform:uppercase;margin-top:2px}
+.lp-stat-sep{width:1px;background:rgba(255,255,255,.12);align-self:stretch;flex:0 0 1px}
+/* Champion banner */
+.lp-champion{margin:16px 16px 0;border-radius:18px;padding:22px 20px;background:linear-gradient(135deg,rgba(250,204,21,.14),rgba(234,179,8,.07));border:1.5px solid rgba(250,204,21,.4);text-align:center;animation:champIn .6s cubic-bezier(.34,1.2,.64,1)}
+@keyframes champIn{from{transform:scale(.88);opacity:0}to{transform:scale(1);opacity:1}}
+.lp-champ-emoji{font-size:44px;display:block;margin-bottom:10px;animation:lpBounce 1.6s ease-in-out infinite}
+@keyframes lpBounce{0%,100%{transform:translateY(0)}50%{transform:translateY(-9px)}}
+.lp-champ-title{font-family:var(--font-head);font-size:18px;font-weight:800;color:#fcd34d;margin-bottom:5px}
+.lp-champ-sub{font-size:13px;color:rgba(255,255,255,.55)}
+/* Overall progress */
+.lp-overall{margin:16px 16px 0;background:var(--s);border:1px solid var(--bo);border-radius:16px;padding:14px 16px}
+.lp-overall-head{display:flex;justify-content:space-between;align-items:center;margin-bottom:8px}
+.lp-overall-label{font-size:13px;font-weight:700;color:var(--dk)}
+.lp-overall-pct{font-size:14px;font-weight:900;color:var(--or);font-family:var(--font-head)}
+.lp-overall-bar{background:var(--bo2);border-radius:8px;height:10px;overflow:hidden}
+.lp-overall-fill{height:100%;background:linear-gradient(90deg,var(--or),#f59e0b,#fcd34d);border-radius:8px;transition:width 1.3s cubic-bezier(.34,1.1,.64,1);position:relative;overflow:hidden;width:0}
+.lp-overall-fill::after{content:'';position:absolute;top:0;left:-60%;width:40%;height:100%;background:linear-gradient(90deg,transparent,rgba(255,255,255,.38),transparent);animation:lpShim 2.2s ease-in-out infinite 0.8s}
+@keyframes lpShim{0%{left:-60%}100%{left:120%}}
+/* Section label */
+.lp-section-lbl{font-size:10px;font-weight:700;color:var(--mu);text-transform:uppercase;letter-spacing:.8px;padding:16px 20px 8px;text-align:center}
+/* Path */
+.lp-path{max-width:600px;margin:0 auto;padding:0 16px 80px;position:relative}
+/* Connector between nodes */
+.lp-conn{display:flex;flex-direction:column;align-items:center;gap:5px;padding:8px 0;position:relative;z-index:1}
+.lp-conn-dot{width:7px;height:7px;border-radius:50%;background:var(--bo2);transition:background .5s,transform .3s}
+.lp-conn-dot.done{background:linear-gradient(135deg,var(--or),#f59e0b);transform:scale(1.1)}
+/* Node row */
+.lp-row{display:flex;align-items:flex-start;gap:8px;position:relative;z-index:1;margin-bottom:0}
+.lp-row.r-left{flex-direction:row}
+.lp-row.r-right{flex-direction:row-reverse}
+.lp-row-mid{flex:0 0 72px;display:flex;flex-direction:column;align-items:center;padding-top:2px}
+.lp-row-side{flex:1;min-width:0}
+/* Ring */
+.lp-ring-svg{overflow:visible;display:block}
+.lp-ring-bg{fill:none;stroke:var(--bo2);stroke-width:5}
+.lp-ring-fill{fill:none;stroke-width:5;stroke-linecap:round;transform-origin:50% 50%;transition:stroke-dashoffset 1.4s cubic-bezier(.34,1.1,.64,1) .2s,stroke .4s}
+.lp-ring-pct{font-size:10px;font-weight:800;color:var(--mu);text-align:center;margin-top:3px;height:14px;line-height:14px}
+/* Node card */
+.lp-card{background:var(--s);border:1.5px solid var(--bo);border-radius:16px;padding:13px 14px 12px;cursor:pointer;position:relative;overflow:hidden;transition:border-color .22s,box-shadow .22s,transform .22s}
+.lp-card:hover{border-color:rgba(var(--or-rgb),.38);transform:translateY(-2px);box-shadow:0 6px 18px rgba(var(--or-rgb),.1)}
+.lp-card.s-done{border-color:rgba(74,222,128,.3);background:rgba(74,222,128,.03)}
+.lp-card.s-review{border-color:rgba(249,115,22,.3);background:rgba(249,115,22,.03)}
+.lp-card.s-next{border-color:rgba(var(--or-rgb),.5);box-shadow:0 0 0 3px rgba(var(--or-rgb),.1),0 4px 18px rgba(var(--or-rgb),.14)}
+.lp-card-head{display:flex;align-items:center;gap:8px;margin-bottom:7px}
+.lp-card-letter{width:28px;height:28px;border-radius:9px;font-size:12px;font-weight:800;display:flex;align-items:center;justify-content:center;flex-shrink:0;font-family:var(--font-head)}
+.lp-card-name{font-size:13px;font-weight:700;color:var(--dk);line-height:1.25;flex:1;min-width:0}
+.lp-card-badge{display:inline-flex;align-items:center;gap:4px;font-size:10px;font-weight:700;padding:2px 8px;border-radius:10px;margin-bottom:7px;line-height:1.4}
+.lp-card-badge.s-done{background:rgba(74,222,128,.13);color:#4ade80}
+.lp-card-badge.s-started{background:rgba(var(--or-rgb),.12);color:var(--or)}
+.lp-card-badge.s-locked{background:var(--bg2);color:var(--mu)}
+.lp-card-badge.s-review{background:rgba(249,115,22,.12);color:#f97316}
+.lp-card-badge.s-next{background:rgba(var(--or-rgb),.18);color:var(--or)}
+/* Mini progress bar inside card */
+.lp-mini-bar{background:var(--bo2);border-radius:4px;height:4px;margin-bottom:8px;overflow:hidden}
+.lp-mini-fill{height:100%;border-radius:4px;transition:width 1.1s cubic-bezier(.34,1.1,.64,1) .3s;width:0}
+/* Collapsible extra content */
+.lp-card-extra{overflow:hidden;max-height:0;transition:max-height .35s cubic-bezier(.4,0,.2,1)}
+.lp-card-extra.open{max-height:200px}
+.lp-card-desc{font-size:11.5px;color:var(--mu);margin-bottom:10px;line-height:1.6;padding-top:4px}
+.lp-card-btns{display:flex;gap:6px;flex-wrap:wrap;padding-bottom:2px}
+.lp-qbtn{flex:1;min-width:80px;padding:8px 8px;border-radius:10px;font-size:11px;font-weight:700;border:1px solid var(--bo);background:var(--bg2);color:var(--dk);cursor:pointer;font-family:var(--font);transition:all .18s;white-space:nowrap;text-align:center}
+.lp-qbtn:hover{background:rgba(var(--or-rgb),.1);border-color:rgba(var(--or-rgb),.38);color:var(--or)}
+.lp-qbtn.primary{background:var(--or);color:#fff;border-color:transparent;box-shadow:0 3px 10px rgba(var(--or-rgb),.32)}
+.lp-qbtn.primary:hover{opacity:.85;box-shadow:0 5px 18px rgba(var(--or-rgb),.48);transform:translateY(-1px)}
+/* Arrow on next node */
+.lp-next-pill{position:absolute;top:8px;right:8px;background:var(--or);color:#fff;font-size:9px;font-weight:800;padding:2px 8px;border-radius:10px;letter-spacing:.4px;text-transform:uppercase;animation:lpPulse 2s ease-in-out infinite;box-shadow:0 2px 8px rgba(var(--or-rgb),.4)}
+@keyframes lpPulse{0%,100%{box-shadow:0 2px 8px rgba(var(--or-rgb),.4)}50%{box-shadow:0 2px 16px rgba(var(--or-rgb),.7),0 0 0 4px rgba(var(--or-rgb),.15)}}
+/* Leerpad entry card on detail screen */
+.lp-ec{position:relative;overflow:hidden;border-radius:18px;padding:18px 18px 14px;margin-bottom:16px;cursor:pointer;border:1.5px solid rgba(var(--or-rgb),.28);background:linear-gradient(135deg,var(--cd-bg2),var(--cd-bg1));transition:border-color .22s,box-shadow .22s,transform .22s}
+.lp-ec:hover{border-color:rgba(var(--or-rgb),.55);transform:translateY(-2px);box-shadow:0 8px 32px rgba(var(--or-rgb),.18),0 2px 8px rgba(0,0,0,.12)}
+.lp-ec-glow{position:absolute;top:-60px;right:-40px;width:240px;height:240px;background:radial-gradient(circle,rgba(var(--or-rgb),.18) 0%,transparent 65%);pointer-events:none;transition:opacity .3s}
+.lp-ec:hover .lp-ec-glow{opacity:1.5}
+.lp-ec-top{display:flex;align-items:center;gap:14px;margin-bottom:14px;position:relative;z-index:1}
+.lp-ec-icon-wrap{width:44px;height:44px;border-radius:13px;background:rgba(var(--or-rgb),.2);border:1px solid rgba(var(--or-rgb),.35);display:flex;align-items:center;justify-content:center;flex-shrink:0;transition:transform .22s}
+.lp-ec:hover .lp-ec-icon-wrap{transform:scale(1.1) rotate(-5deg)}
+.lp-ec-icon{font-size:22px;line-height:1}
+.lp-ec-info{flex:1;min-width:0}
+.lp-ec-label{font-size:10px;font-weight:700;color:var(--or);text-transform:uppercase;letter-spacing:.8px;opacity:.8;margin-bottom:2px}
+.lp-ec-title{font-size:14px;font-weight:800;color:#fff;line-height:1.3;font-family:var(--font-head);letter-spacing:-.2px}
+.lp-ec-sub{font-size:11.5px;color:rgba(255,255,255,.45);margin-top:2px;font-weight:500}
+.lp-ec-cta{display:flex;align-items:center;flex-shrink:0;background:var(--or);color:#fff;font-size:12px;font-weight:800;padding:7px 14px;border-radius:10px;letter-spacing:.2px;box-shadow:0 3px 12px rgba(var(--or-rgb),.4);transition:box-shadow .2s,transform .2s;font-family:var(--font-head);white-space:nowrap}
+.lp-ec:hover .lp-ec-cta{box-shadow:0 5px 20px rgba(var(--or-rgb),.6);transform:translateX(2px)}
+/* Domain dots row */
+.lp-ec-dots{display:flex;gap:5px;flex-wrap:wrap;margin-bottom:10px;position:relative;z-index:1}
+.lp-ec-dot{width:10px;height:10px;border-radius:50%;background:rgba(255,255,255,.12);border:1.5px solid rgba(255,255,255,.1);transition:background .4s,border-color .4s,transform .3s;flex-shrink:0}
+.lp-ec-dot.d-started{background:rgba(var(--or-rgb),.5);border-color:rgba(var(--or-rgb),.7)}
+.lp-ec-dot.d-done{background:#4ade80;border-color:#22c55e;box-shadow:0 0 5px rgba(74,222,128,.5)}
+.lp-ec-dot.d-review{background:#f97316;border-color:#ea580c}
+/* Progress bar */
+.lp-ec-bar-wrap{background:rgba(255,255,255,.08);border-radius:6px;height:5px;overflow:hidden;position:relative;z-index:1;margin-bottom:8px}
+.lp-ec-bar{height:100%;background:linear-gradient(90deg,var(--or),#f59e0b);border-radius:6px;transition:width 1.2s cubic-bezier(.34,1.1,.64,1);position:relative;overflow:hidden}
+.lp-ec-bar::after{content:'';position:absolute;top:0;left:-60%;width:40%;height:100%;background:linear-gradient(90deg,transparent,rgba(255,255,255,.4),transparent);animation:lpShim 2.2s ease-in-out infinite .6s}
+.lp-ec-foot{font-size:11px;color:rgba(255,255,255,.4);font-weight:600;position:relative;z-index:1}
+/* Leerpad dots on home subject cards */
+.card-lp-dots{display:flex;gap:3px;flex-wrap:wrap;margin-top:7px;padding-top:7px;border-top:1px solid rgba(255,255,255,.07)}
+.card-lp-dot{width:8px;height:8px;border-radius:50%;background:rgba(255,255,255,.12);flex-shrink:0;transition:background .3s}
+.card-lp-dot.cld-started{background:rgba(var(--or-rgb),.6)}
+.card-lp-dot.cld-done{background:#4ade80;box-shadow:0 0 4px rgba(74,222,128,.5)}
 .ab-icon{font-size:20px}
 .ab-txt{font-size:12px}
 /* ── OUD-EXAMEN REDESIGN ─────────────────────── */
@@ -2724,6 +2834,22 @@ html.dark .hsd-pill{background:var(--bg2);border-color:var(--bo2)}
 </nav>
 <div class="w" style="padding-top:24px">
   <div class="sh"><h2 id="dtitle"></h2><p id="ddesc"></p><div class="ce"><strong>CE 2026:</strong> <span id="dce"></span></div></div>
+  <!-- Leerpad hero card -->
+  <div class="lp-ec" onclick="showLeerpad()" id="lp-ec">
+    <div class="lp-ec-glow"></div>
+    <div class="lp-ec-top">
+      <div class="lp-ec-icon-wrap"><span class="lp-ec-icon">🗺️</span></div>
+      <div class="lp-ec-info">
+        <div class="lp-ec-label">Leerpad</div>
+        <div class="lp-ec-title">Studeer gestructureerd door alle domeinen</div>
+        <div class="lp-ec-sub" id="lp-ec-sub">Nog niet begonnen</div>
+      </div>
+      <div class="lp-ec-cta">Starten<svg viewBox="0 0 24 24" width="14" height="14" style="stroke:currentColor;fill:none;stroke-width:2.5;stroke-linecap:round;stroke-linejoin:round;margin-left:4px"><polyline points="9 18 15 12 9 6"/></svg></div>
+    </div>
+    <div class="lp-ec-dots" id="lp-ec-dots"></div>
+    <div class="lp-ec-bar-wrap"><div class="lp-ec-bar" id="lp-ec-bar" style="width:0%"></div></div>
+    <div class="lp-ec-foot" id="lp-ec-foot"></div>
+  </div>
   <div class="progress-overview" id="progress-overview" style="display:none">
     <div class="po-title">📊 Jouw voortgang <button class="po-reset" id="reset-progress" onclick="resetVakProgress()">Wissen</button></div>
     <div class="po-grid" id="po-grid"></div>
@@ -5679,7 +5805,15 @@ function buildGrid(){
     const iconPaths=VAK_ICONS[v.id]||'<circle cx="12" cy="12" r="4"/>';
     const cij=cijfers[v.id];
     const cijBadge=cij!=null?`<div class="card-grade-badge ${cij>=7?'grade-green':cij>=5.5?'grade-orange':'grade-red'}">${cij.toFixed(1).replace('.',',')}</div>`:'';
-    d.innerHTML=`${cijBadge}<div class="card-icon"><svg viewBox="0 0 24 24">${iconPaths}</svg></div><div class="card-name">${v.naam}</div><div class="card-desc">${v.beschrijving}</div><div class="card-meta">${v.domeinen.length} CE-domeinen</div>${progHtml}`;
+    // Leerpad dots for this subject
+    const lpDots=v.domeinen.map(dom=>{
+      const r=getDomeinBestPct(v.id,dom.id);
+      const isDone=r.pct>=0.7;
+      const isStarted=r.hasData&&!isDone;
+      return `<div class="card-lp-dot${isDone?' cld-done':isStarted?' cld-started':''}" title="Domein ${dom.id}"></div>`;
+    }).join('');
+    const lpDotsHtml=`<div class="card-lp-dots">${lpDots}</div>`;
+    d.innerHTML=`${cijBadge}<div class="card-icon"><svg viewBox="0 0 24 24">${iconPaths}</svg></div><div class="card-name">${v.naam}</div><div class="card-desc">${v.beschrijving}</div><div class="card-meta">${v.domeinen.length} CE-domeinen</div>${progHtml}${lpDotsHtml}`;
     d.onclick=()=>openVak(v.id);
     d.style.animationDelay=(g.children.length*0.045)+'s';
     d.style.opacity='0';
@@ -6903,7 +7037,62 @@ function openVak(id){
       el.addEventListener('click',hideDomPreview);
     });
   },100);
+  updateLpEntryCard();
   show('sc-detail');
+}
+
+function updateLpEntryCard(){
+  if(!ST.vak)return;
+  const vak=ST.vak;
+  const domeinen=vak.domeinen;
+  let doneCount=0,startedCount=0,totalPct=0,pctCount=0;
+  domeinen.forEach(d=>{
+    const r=getDomeinBestPct(vak.id,d.id);
+    const decay=getDecayStatus(vak.id,d.id);
+    const isDone=r.pct>=0.7;
+    const needsReview=isDone&&decay&&(decay.label.includes('geleden')&&!decay.label.includes('Vandaag'));
+    if(isDone)doneCount++;
+    else if(r.hasData)startedCount++;
+    if(r.hasData){totalPct+=r.pct;pctCount++;}
+  });
+  const overallPct=Math.round(doneCount/domeinen.length*100);
+  const allDone=doneCount===domeinen.length&&domeinen.length>0;
+
+  // Sub text
+  const sub=document.getElementById('lp-ec-sub');
+  if(sub){
+    if(allDone) sub.textContent='🏆 Alle domeinen voltooid!';
+    else if(doneCount>0) sub.textContent=`${doneCount} van ${domeinen.length} domeinen voltooid`;
+    else if(startedCount>0) sub.textContent=`${startedCount} domein${startedCount>1?'en':''} gestart — ga door!`;
+    else sub.textContent='Begin met het eerste domein →';
+  }
+
+  // Footer
+  const foot=document.getElementById('lp-ec-foot');
+  if(foot) foot.textContent=`${doneCount}/${domeinen.length} domeinen op ≥70%${allDone?' 🎯':''}`;
+
+  // Domain dots
+  const dotsEl=document.getElementById('lp-ec-dots');
+  if(dotsEl){
+    dotsEl.innerHTML=domeinen.map(d=>{
+      const r=getDomeinBestPct(vak.id,d.id);
+      const decay=getDecayStatus(vak.id,d.id);
+      const isDone=r.pct>=0.7;
+      const needsReview=isDone&&decay&&(decay.label.includes('geleden')&&!decay.label.includes('Vandaag'));
+      let cls='lp-ec-dot';
+      if(needsReview) cls+=' d-review';
+      else if(isDone) cls+=' d-done';
+      else if(r.hasData) cls+=' d-started';
+      return `<div class="${cls}" title="Domein ${d.id}: ${d.naam}"></div>`;
+    }).join('');
+  }
+
+  // Progress bar (with tiny delay for animation)
+  const bar=document.getElementById('lp-ec-bar');
+  if(bar){
+    bar.style.width='0%';
+    setTimeout(()=>{bar.style.width=overallPct+'%';},80);
+  }
 }
 
 function toggleD(id){
@@ -7764,6 +7953,181 @@ async function deelScore(){
     try{await navigator.clipboard.writeText(tekst);showToast('📋 Score gekopieerd naar klembord!');}
     catch(e){showToast('slagio.nl');}
   }
+}
+
+// ═══════ LEERPAD ═══════
+function showLeerpad(){
+  if(!ST.vak)return;
+  const vak=ST.vak;
+  const domeinen=vak.domeinen;
+
+  // Header
+  document.getElementById('lp-nav-title').textContent=vak.naam;
+  document.getElementById('lp-nav-badge').textContent=(APP_LEVEL||'havo').toUpperCase();
+  document.getElementById('lp-hero-title').textContent=vak.naam;
+
+  // Stats
+  let doneCount=0,totalPct=0,pctCount=0;
+  domeinen.forEach(d=>{
+    const r=getDomeinBestPct(vak.id,d.id);
+    if(r.pct>=0.7)doneCount++;
+    if(r.hasData){totalPct+=r.pct;pctCount++;}
+  });
+  const avgPct=pctCount>0?Math.round(totalPct/pctCount*100):0;
+  const overallPct=Math.round(doneCount/domeinen.length*100);
+  const allDone=domeinen.length>0&&doneCount===domeinen.length;
+
+  document.getElementById('lp-stat-done').textContent=doneCount;
+  document.getElementById('lp-stat-total').textContent=domeinen.length;
+  document.getElementById('lp-stat-avg').textContent=avgPct+'%';
+  document.getElementById('lp-overall-pct').textContent=overallPct+'%';
+  document.getElementById('lp-hero-sub').textContent=
+    allDone?'🎉 Alle domeinen voltooid — goed bezig!':
+    doneCount>0?`${doneCount} van ${domeinen.length} domeinen voltooid`:
+    'Werk systematisch door alle domeinen heen';
+
+  document.getElementById('lp-champion').style.display=allDone?'block':'none';
+
+  // Find recommended next domain (first not done, or first needing review)
+  let nextIdx=-1;
+  for(let i=0;i<domeinen.length;i++){
+    const r=getDomeinBestPct(vak.id,domeinen[i].id);
+    const decay=getDecayStatus(vak.id,domeinen[i].id);
+    const isDone=r.pct>=0.7;
+    const needsReview=isDone&&decay&&(decay.label.includes('geleden')&&!decay.label.includes('Vandaag'));
+    if(needsReview&&nextIdx===-1){nextIdx=i;}
+    if(!isDone&&nextIdx===-1){nextIdx=i;}
+  }
+  if(nextIdx===-1)nextIdx=0;
+
+  // Build path HTML
+  const container=document.getElementById('lp-path');
+  container.innerHTML='';
+  const C=2*Math.PI*27; // circumference for r=27
+
+  domeinen.forEach((d,i)=>{
+    const r=getDomeinBestPct(vak.id,d.id);
+    const decay=getDecayStatus(vak.id,d.id);
+    const pct=Math.round(r.pct*100);
+    const isDone=r.pct>=0.7;
+    const isStarted=r.hasData&&!isDone;
+    const needsReview=isDone&&decay&&(decay.label.includes('geleden')&&!decay.label.includes('Vandaag'));
+    const isNext=i===nextIdx;
+
+    // Status info
+    let statusKey,statusTxt,statusEmoji,ringStroke;
+    if(isDone&&needsReview){
+      statusKey='s-review';statusTxt='Herhaling aanbevolen';statusEmoji='🔁';ringStroke='#f97316';
+    }else if(isDone){
+      statusKey='s-done';statusTxt='Domein voltooid ✓';statusEmoji='⭐';ringStroke='#4ade80';
+    }else if(isNext&&!isStarted){
+      statusKey='s-next';statusTxt='Begin hier';statusEmoji='🎯';ringStroke='var(--or)';
+    }else if(isStarted){
+      statusKey='s-started';statusTxt=pct+'% beste score';statusEmoji='⚡';ringStroke='var(--or)';
+    }else{
+      statusKey='s-locked';statusTxt='Nog niet geoefend';statusEmoji='📖';ringStroke='var(--bo2)';
+    }
+    const ringOffset=(C*(1-r.pct)).toFixed(1);
+
+    // Connector dots between nodes
+    let connHtml='';
+    if(i>0){
+      const prevDone=getDomeinBestPct(vak.id,domeinen[i-1].id).pct>=0.7;
+      const dotsClass=(prevDone&&isDone)?'done':'';
+      connHtml=`<div class="lp-conn"><div class="lp-conn-dot ${dotsClass}"></div><div class="lp-conn-dot ${dotsClass}" style="transition-delay:.08s"></div><div class="lp-conn-dot ${dotsClass}" style="transition-delay:.16s"></div></div>`;
+    }
+
+    // Card class
+    const cardCls=`lp-card ${isDone?'s-done':''} ${needsReview?'s-review':''} ${(isNext&&!isDone)?'s-next':''}`.trim();
+    // Side: even rows have card on left, odd on right
+    const side=i%2===0?'r-left':'r-right';
+
+    const miniBarHtml=r.hasData?`<div class="lp-mini-bar"><div class="lp-mini-fill" style="background:${ringStroke}" data-w="${pct}"></div></div>`:'';
+
+    const nodeHtml=`${connHtml}
+<div class="lp-row ${side}">
+  <div class="lp-row-side">
+    <div class="${cardCls}" onclick="lpToggleCard(this,'${d.id}')">
+      ${isNext&&!isDone?'<div class="lp-next-pill">Volgende →</div>':''}
+      <div class="lp-card-head">
+        <div class="lp-card-letter" style="background:${vak.kleur}22;color:${vak.kleur}">${d.id}</div>
+        <div class="lp-card-name">Domein ${d.id}<br><span style="font-weight:600;font-size:12px;color:var(--mu)">${d.naam}</span></div>
+      </div>
+      <div class="lp-card-badge ${statusKey}">${statusEmoji} ${statusTxt}</div>
+      ${miniBarHtml}
+      <div class="lp-card-extra">
+        <div class="lp-card-desc">${d.beschrijving}</div>
+        <div class="lp-card-btns">
+          <button class="lp-qbtn primary" onclick="event.stopPropagation();lpStartOefenen('${d.id}')">▶ Oefenen</button>
+          <button class="lp-qbtn" onclick="event.stopPropagation();lpStartFlash('${d.id}')">📇 Flashcards</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="lp-row-mid">
+    <svg class="lp-ring-svg" width="64" height="64" viewBox="0 0 64 64">
+      <circle class="lp-ring-bg" cx="32" cy="32" r="27"/>
+      <circle class="lp-ring-fill"
+        cx="32" cy="32" r="27"
+        stroke="${ringStroke}"
+        stroke-dasharray="${C.toFixed(1)}"
+        stroke-dashoffset="${C.toFixed(1)}"
+        data-to="${ringOffset}"
+        style="transform:rotate(-90deg)"/>
+      <text x="32" y="38" text-anchor="middle" font-size="19" font-family="serif" style="dominant-baseline:middle;font-size:20px">${statusEmoji}</text>
+    </svg>
+    <div class="lp-ring-pct">${r.hasData?pct+'%':''}</div>
+  </div>
+  <div class="lp-row-side" style="visibility:hidden"></div>
+</div>`;
+    container.insertAdjacentHTML('beforeend',nodeHtml);
+  });
+
+  // Animate rings + bars after a short delay
+  show('sc-leerpad');
+  setTimeout(()=>{
+    // Animate progress rings
+    container.querySelectorAll('.lp-ring-fill').forEach(ring=>{
+      const target=ring.dataset.to;
+      if(target)ring.style.strokeDashoffset=target;
+    });
+    // Animate mini bars
+    container.querySelectorAll('.lp-mini-fill').forEach(fill=>{
+      fill.style.width=(fill.dataset.w||'0')+'%';
+    });
+    // Animate overall bar
+    document.getElementById('lp-overall-fill').style.width=overallPct+'%';
+  },120);
+}
+
+function lpToggleCard(card,domeinId){
+  const extra=card.querySelector('.lp-card-extra');
+  if(!extra)return;
+  const isOpen=extra.classList.contains('open');
+  // Close all other open cards first
+  document.querySelectorAll('#lp-path .lp-card-extra.open').forEach(e=>{
+    e.classList.remove('open');
+    e.closest('.lp-card').style.zIndex='';
+  });
+  if(!isOpen){
+    extra.classList.add('open');
+    card.style.zIndex='2';
+  }
+}
+
+function lpStartOefenen(domeinId){
+  if(!ST.vak)return;
+  ST.domein=ST.vak.domeinen.find(d=>d.id===domeinId);
+  if(!ST.domein)return;
+  openQmode(domeinId);
+}
+
+function lpStartFlash(domeinId){
+  if(!ST.vak)return;
+  ST.domein=ST.vak.domeinen.find(d=>d.id===domeinId);
+  if(!ST.domein)return;
+  show('sc-flash');
+  startFlash();
 }
 
 // ═══════ RACE MODE ═══════
@@ -10863,6 +11227,43 @@ if('serviceWorker' in navigator){
   });
 }
 </script>
+<!-- LEERPAD SCREEN -->
+<div id="sc-leerpad" class="sc">
+<nav class="lp-nav">
+  <div class="lp-nav-inner">
+    <button class="bk" onclick="show('sc-detail')">← Terug</button>
+    <span style="font-family:var(--font-head);font-weight:800;font-size:15px;color:var(--dk)" id="lp-nav-title">Leerpad</span>
+    <span class="hbg" id="lp-nav-badge" style="margin-left:auto">HAVO</span>
+  </div>
+</nav>
+<div class="lp-hero">
+  <div class="lp-hero-badge">📍 Leerpad</div>
+  <div class="lp-hero-title" id="lp-hero-title">Vak</div>
+  <div class="lp-hero-sub" id="lp-hero-sub">Werk systematisch door alle domeinen heen</div>
+  <div class="lp-hero-stats">
+    <div class="lp-stat"><div class="lp-stat-num" id="lp-stat-done">0</div><div class="lp-stat-lbl">Voltooid</div></div>
+    <div class="lp-stat-sep"></div>
+    <div class="lp-stat"><div class="lp-stat-num" id="lp-stat-total">0</div><div class="lp-stat-lbl">Domeinen</div></div>
+    <div class="lp-stat-sep"></div>
+    <div class="lp-stat"><div class="lp-stat-num" id="lp-stat-avg">0%</div><div class="lp-stat-lbl">Gem. score</div></div>
+  </div>
+</div>
+<div id="lp-champion" style="display:none" class="lp-champion">
+  <span class="lp-champ-emoji">🏆</span>
+  <div class="lp-champ-title">Leerpad voltooid!</div>
+  <div class="lp-champ-sub">Alle domeinen op ≥70% — je staat klaar voor het CE 💪</div>
+</div>
+<div class="lp-overall" id="lp-overall">
+  <div class="lp-overall-head">
+    <span class="lp-overall-label">📊 Totale voortgang</span>
+    <span class="lp-overall-pct" id="lp-overall-pct">0%</span>
+  </div>
+  <div class="lp-overall-bar"><div class="lp-overall-fill" id="lp-overall-fill" style="width:0%"></div></div>
+</div>
+<div class="lp-section-lbl">Klik op een domein om te oefenen</div>
+<div class="lp-path" id="lp-path"></div>
+</div>
+
 <!-- LB Profile overlay — body-level so position:fixed works always -->
 <div id="lbp-overlay" class="lbp-overlay" onclick="closeLbProfile()"></div>
 </body>
