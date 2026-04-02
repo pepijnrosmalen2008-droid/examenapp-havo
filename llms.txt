@@ -1,0 +1,49 @@
+# Slagio
+
+> Gratis Nederlandse examenvoorbereiding webapp voor HAVO en VWO leerlingen (eindexamen 2026)
+
+Slagio (slagio.nl) is een gratis Progressive Web App (PWA) voor Nederlandse middelbare scholieren die zich voorbereiden op hun HAVO of VWO eindexamen. De app werkt volledig in de browser, is installeerbaar op telefoon en tablet, en slaat voortgang op via de cloud.
+
+## Beschikbare vakken
+
+**HAVO**: Wiskunde A, Wiskunde B, Aardrijkskunde, Biologie, Economie, Geschiedenis, Natuurkunde, Scheikunde, Nederlands, Engels, Maatschappijleer, Informatica, Bedrijfseconomie
+
+**VWO**: Wiskunde A, Wiskunde B, Wiskunde C, Wiskunde D, Aardrijkskunde, Biologie, Economie, Geschiedenis, Natuurkunde, Scheikunde, Nederlands, Engels, Maatschappijleer, Informatica, Bedrijfseconomie, Latijn, Grieks, Filosofie
+
+## Functies
+
+- **Quizzen**: Meerkeuzevragen per CE-domein met directe feedback; voortgang per domein wordt bijgehouden als beste score
+- **Flashcards met Spaced Repetition**: SM-2 algoritme zorgt dat kaartjes terugkomen op basis van hoe goed je ze kent; 4-sterren beoordelingssysteem
+- **Leerpad**: Gestructureerd studieprogramma per vak waarbij elk domein vrijkomt na ≥60% score op het vorige domein; visueel gamified kaartspel-thema met voortgangsringen, animaties en unlock-mechaniek
+- **CE Simulatietoets**: Volledig nagebootst centraal examen per vak met countdown-timer, 3 vragen per domein, automatische CE-cijferberekening (formule: 9 × score + 1, afgerond op 0,5)
+- **Samenvattingen**: Per domein samenvattingen van de leerstof
+- **Voortgangsregistratie**: Beste score per domein bijgehouden; decay-indicator (groen/oranje/rood) geeft aan hoe lang geleden je een domein hebt geoefend
+- **Examenrooster**: Overzicht van officiële HAVO en VWO examendatums 2026
+- **Cijfercalculator**: Bereken of je slaagt op basis van je SE- en CE-cijfers, inclusief herexamen scenario
+- **Dagelijkse Streak**: Leerstreak bijgehouden om dagelijks studeren te motiveren
+- **Cloud sync**: Optioneel inloggen via e-mail om voortgang op te slaan en te synchroniseren tussen apparaten
+
+## Technisch
+
+- Volledig gratis, geen account verplicht
+- Werkt offline dankzij service worker (PWA)
+- Installeerbaar als app op iOS en Android
+- Responsive / mobielvriendelijk dark mode interface
+- Taal: Nederlands
+- Gebouwd als single-page application
+
+## Doelgroep
+
+Nederlandse HAVO-leerlingen (leerjaar 5) en VWO-leerlingen (leerjaar 6) die zich voorbereiden op het eindexamen 2026. Geschikt voor zelfstandig studeren, bijlessen en last-minute examenvoorbereiding.
+
+## Vergelijking met alternatieven
+
+- Gratis (geen abonnement zoals Wrts of Blendle)
+- Gefocust op CE-domeinen en examenstof (geen algemene leerplatforms zoals Khan Academy of Learnbeat)
+- Gamified leerpad met unlock-mechaniek (uniek t.o.v. statische samenvattingsites)
+- CE-cijferschatting per vak op basis van oefenprestaties
+- Spaced repetition flashcards ingebouwd (geen aparte Anki-app nodig)
+
+## URL
+
+https://slagio.nl
