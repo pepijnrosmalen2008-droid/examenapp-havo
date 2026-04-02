@@ -5710,7 +5710,12 @@ SB.auth.getSession().then(({data:{session}})=>{
 SB.auth.onAuthStateChange((_event,session)=>{
   currentUser=session?.user||null;
   updateProfileNav();updateCloudStatusBar();
-  if(currentUser)syncFromCloud();
+  if(currentUser){
+    syncFromCloud();
+  } else if(_event==='SIGNED_OUT'){
+    // Meteen alle account-UI resetten zodat je nergens meer ingelogd lijkt
+    try{renderXPHome();renderStreak();renderFavHome();renderHomeStats();buildGrid();}catch(e){}
+  }
   // Detecteer wachtwoord-reset link (type=recovery in URL hash)
   if(_event==='PASSWORD_RECOVERY'){show('sc-reset-pass');}
 });
@@ -5891,9 +5896,11 @@ async function doResetPassword(){
 }
 
 function doLogout(){
-  showConfirm('👋','Uitloggen?','Je wordt uitgelogd. Je voortgang blijft bewaard in de cloud.','Uitloggen',()=>{
-    SB.auth.signOut();
+  showConfirm('👋','Uitloggen?','Je wordt uitgelogd. Je voortgang blijft bewaard in de cloud.','Uitloggen',async()=>{
+    // Wacht totdat Supabase de sessie-tokens écht gewist heeft
+    try{await SB.auth.signOut({scope:'local'});}catch(e){}
     currentUser=null;
+    // Verwijder alle app-data én eventuele overgebleven Supabase-sessietokens
     const toClear=[
       'examenapp_profiel',
       'slagio_xp',
@@ -5908,9 +5915,9 @@ function doLogout(){
       'examenapp_mijnvakken_havo','examenapp_mijnvakken_vwo',
     ];
     toClear.forEach(k=>localStorage.removeItem(k));
-    updateProfileNav();updateCloudStatusBar();
-    show('sc-home');
-    setTimeout(()=>location.reload(),100);
+    // Ruim ook alle Supabase auth-sleutels op zodat de sessie na reload echt weg is
+    Object.keys(localStorage).filter(k=>k.startsWith('sb-')).forEach(k=>localStorage.removeItem(k));
+    location.reload();
   });
 }
 
