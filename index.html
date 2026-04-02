@@ -5937,6 +5937,9 @@ async function syncFromCloud(){
    'examenapp_favs_havo','examenapp_favs_vwo',
    'examenapp_mijnvakken_havo','examenapp_mijnvakken_vwo',
   ];
+  // Sla lokale voortgang op VÓÓR we iets wissen (zodat we kunnen mergen)
+  const localProgHavo=_safeLocalGet('progress_havo',{});
+  const localProgVwo=_safeLocalGet('progress_vwo',{});
   // Maak backup vóórdat we iets wissen — herstel bij netwerk-fout
   const backup={};
   syncKeys.forEach(k=>{const v=localStorage.getItem(k);if(v!==null)backup[k]=v;});
@@ -5952,9 +5955,36 @@ async function syncFromCloud(){
       localStorage.setItem(PROF_KEY,JSON.stringify(data.profiel));
       if(data.profiel.xp)localStorage.setItem(XP_KEY,JSON.stringify({xp:data.profiel.xp}));
     }
-    const cij=data[lvlCol('cijfers')];if(cij)localStorage.setItem('examenapp_'+lvlCol('cijfers'),JSON.stringify(cij));
-    const prog=data[lvlCol('progress')];if(prog)localStorage.setItem('examenapp_'+lvlCol('progress'),JSON.stringify(prog));
+    // ── PROGRESS MERGE: cloud + lokaal, houd altijd de BESTE score ────────
+    function mergeProgress(cloudProg,localProg){
+      const merged=Object.assign({},localProg);
+      if(cloudProg&&typeof cloudProg==='object'){
+        Object.keys(cloudProg).forEach(key=>{
+          const c=cloudProg[key],l=merged[key];
+          if(!l){merged[key]=c;}
+          else{
+            merged[key]={
+              best:Math.max(c.best||0,l.best||0),
+              total:c.total||l.total||0,
+              attempts:(c.attempts||0)+(l.attempts||0)
+            };
+          }
+        });
+      }
+      return merged;
+    }
+    const cloudProgHavo=data['progress_havo'];
+    const mergedHavo=mergeProgress(cloudProgHavo,localProgHavo);
+    localStorage.setItem('examenapp_progress_havo',JSON.stringify(mergedHavo));
+    if(Object.keys(mergedHavo).length>0)cloudSet('progress_havo',mergedHavo);
+
+    const cloudProgVwo=data['progress_vwo'];
+    const mergedVwo=mergeProgress(cloudProgVwo,localProgVwo);
+    localStorage.setItem('examenapp_progress_vwo',JSON.stringify(mergedVwo));
+    if(Object.keys(mergedVwo).length>0)cloudSet('progress_vwo',mergedVwo);
+    // ─────────────────────────────────────────────────────────────────────
     if(data.streak)localStorage.setItem('examenapp_streak',JSON.stringify(data.streak));
+    const cij=data[lvlCol('cijfers')];if(cij)localStorage.setItem('examenapp_'+lvlCol('cijfers'),JSON.stringify(cij));
     const favs=data[lvlCol('favs')];if(favs)localStorage.setItem('examenapp_'+lvlCol('favs'),JSON.stringify(favs.list||[]));
     const mijn=data[lvlCol('mijnvakken')];if(mijn)localStorage.setItem('examenapp_'+lvlCol('mijnvakken'),JSON.stringify(mijn.list||[]));
     updateProfileNav();renderStreak();renderFavHome();renderXPHome();renderDailyChallenge();buildGrid();renderHomeStats();
@@ -9196,6 +9226,7 @@ function resetVakProgress(){
       const p=getProgress();
       Object.keys(p).forEach(key=>{if(key.startsWith(ST.vak.id+'_'))delete p[key];});
       localStorage.setItem('examenapp_'+lvlCol('progress'),JSON.stringify(p));
+      cloudSet(lvlCol('progress'),p);
       openVak(ST.vak.id);
       showToast('Voortgang gewist','#ef4444');
     }
