@@ -2867,6 +2867,12 @@ html.dark .hsd-pill{background:var(--bg2);border-color:var(--bo2)}
     </div>
   </div>
   <div id="one-more-wrap"></div>
+  <div id="res-register-prompt" style="display:none;background:linear-gradient(135deg,rgba(99,102,241,.15),rgba(79,70,229,.1));border:1px solid rgba(99,102,241,.35);border-radius:16px;padding:16px 18px;margin:14px 0 6px;text-align:center">
+    <div style="font-size:22px;margin-bottom:6px">🏆</div>
+    <div style="font-size:15px;font-weight:700;color:#c7d2fe;margin-bottom:4px">Wil jij op het leaderboard?</div>
+    <div style="font-size:13px;color:rgba(255,255,255,.6);margin-bottom:12px">Alleen spelers met een account verschijnen op het leaderboard. Gratis aanmelden duurt 30 seconden.</div>
+    <button onclick="switchAuthTab&&switchAuthTab('register');show('sc-auth')" style="background:linear-gradient(135deg,#6366f1,#4f46e5);color:#fff;border:none;border-radius:10px;padding:10px 22px;font-size:14px;font-weight:700;cursor:pointer;font-family:var(--font)">Account aanmaken →</button>
+  </div>
   <div class="rbtns">
     <button class="btnp" onclick="retryQ()">🔄 Opnieuw</button>
     <button class="lb-res-btn" id="lb-res-btn" onclick="show('sc-leaderboard');renderLeaderboard()">🏆 Bekijk leaderboard</button>
@@ -7644,6 +7650,7 @@ function toonRes(){
   // Leaderboard
   try{
     const lbBtn=document.getElementById('lb-res-btn');
+    const _regPrompt=document.getElementById('res-register-prompt');
     if(ST.mode==='snel'){
       const goed=ST.antwrd.filter(a=>a.pts===1).length;
       const tijden=ST.tijdPerVraag||[];
@@ -7656,8 +7663,10 @@ function toonRes(){
       const entry={naam,avatar,vak:ST.vak.id,vakNaam:ST.vak.naam,domeinId:ST.domein.id,domeinNaam:ST.domein.naam,score:lbScore,goed,tot,avgTijd,date:new Date().toISOString().slice(0,10)};
       saveLeaderboardEntry(entry);
       if(lbBtn)lbBtn.style.display='block';
+      if(_regPrompt)_regPrompt.style.display=currentUser?'none':'block';
     } else {
       if(lbBtn)lbBtn.style.display='none';
+      if(_regPrompt)_regPrompt.style.display='none';
     }
   }catch(e){console.warn('toonRes LB error:',e);}
   // "Eén meer quiz" suggestie
@@ -10653,7 +10662,7 @@ window.show=function(id){_origShow(id);updateBottomNav(id);};
     <div class="ob-step" id="ob-s2">
       <span class="ob-head-icon">☁️</span>
       <div class="ob-title">Sla je voortgang op</div>
-      <div class="ob-sub">Maak een gratis account aan. Je voortgang, favorieten en badges worden op elk apparaat bewaard.</div>
+      <div class="ob-sub">Maak een gratis account aan. Je voortgang, favorieten en badges worden op elk apparaat bewaard. <strong style="color:#818cf8">Alleen met een account kom je op het leaderboard.</strong></div>
       <div class="ob-form">
         <input id="ob-naam" class="ob-input" type="text" placeholder="Jouw naam" maxlength="50" autocomplete="name">
         <input id="ob-email" class="ob-input" type="email" placeholder="E-mailadres" autocomplete="email">
