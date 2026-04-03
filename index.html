@@ -586,6 +586,10 @@ h1,h2,h3,h4{font-family:var(--font-head);line-height:1.2;letter-spacing:-.3px}
 .bento-groep .bento-sv{color:#14b8a6}
 .bento-dg{border-color:rgba(var(--or-rgb),.35);background:linear-gradient(145deg,rgba(var(--or-rgb),.1) 0%,rgba(var(--or-rgb),.03) 100%)}
 .bento-dg::after{content:'';position:absolute;top:-28px;right:-28px;width:90px;height:90px;border-radius:50%;background:radial-gradient(circle,rgba(var(--or-rgb),.28) 0%,transparent 70%);pointer-events:none}
+.bento-dg-done{border-color:rgba(34,197,94,.4)!important;background:linear-gradient(145deg,rgba(34,197,94,.13) 0%,rgba(34,197,94,.04) 100%)!important}
+.bento-dg-done::after{background:radial-gradient(circle,rgba(34,197,94,.3) 0%,transparent 70%)!important}
+.bento-dg-bar{height:5px;background:var(--bo);border-radius:99px;overflow:hidden;margin-top:8px;position:relative;z-index:1}
+.bento-dg-bar-fill{height:100%;border-radius:99px;background:linear-gradient(90deg,#f97316,#f59e0b);transition:width .4s ease}
 .bento-si{position:relative;z-index:1}
 .bento-sv{position:relative;z-index:1}
 .bento-sl{position:relative;z-index:1}
@@ -12166,9 +12170,34 @@ function renderHomeStats(){
   const _dgDone=Math.min(_dg.done||0,DG_TARGET);
   const _dgRewarded=_dg.rewarded||_dgDone>=DG_TARGET;
   function _buildDgCell(){
-    if(_dgRewarded)return`<div class="bento-cell bento-dg" style="grid-column:1/-1;padding:11px 16px;display:flex;align-items:center;gap:10px"><span style="font-size:18px;position:relative;z-index:1">🎯</span><span style="font-size:13px;font-weight:700;color:var(--dk);position:relative;z-index:1">Dagdoel bereikt!</span><span style="font-size:12px;color:var(--mu);margin-left:2px;position:relative;z-index:1">${DG_TARGET} / ${DG_TARGET} quizzen · +75 XP verdiend</span></div>`;
-    const _dots=Array.from({length:DG_TARGET},(_,i)=>`<div class="dg-dot${i<_dgDone?' dg-dot-done':''}"></div>`).join('');
-    return`<div class="bento-cell bento-dg" style="grid-column:1/-1;padding:11px 16px"><div style="display:flex;align-items:center;gap:8px;margin-bottom:6px;position:relative;z-index:1"><span style="font-size:16px">🎯</span><span style="font-size:13px;font-weight:700;color:var(--dk)">Dagdoel</span><span style="font-size:12px;color:var(--mu)">${_dgDone}/${DG_TARGET} quizzen</span><span style="margin-left:auto;font-size:11px;font-weight:700;color:var(--or);background:rgba(var(--or-rgb),.1);padding:2px 8px;border-radius:20px">+75 XP</span></div><div class="dg-dots" style="margin-bottom:6px;position:relative;z-index:1">${_dots}</div><div class="dg-bar-wrap" style="position:relative;z-index:1"><div class="dg-bar" style="width:${Math.round(_dgDone/DG_TARGET*100)}%"></div></div></div>`;
+    if(_dgRewarded){
+      return`<div class="bento-cell bento-dg bento-dg-done" style="grid-column:1/-1;padding:12px 16px;display:flex;align-items:center;gap:10px">
+        <span style="font-size:20px;position:relative;z-index:1">✅</span>
+        <div style="flex:1;position:relative;z-index:1">
+          <div style="font-size:13px;font-weight:700;color:#22c55e">Dagdoel bereikt!</div>
+          <div style="font-size:11px;color:var(--mu);margin-top:1px">${DG_TARGET} / ${DG_TARGET} quizzen voltooid · +75 XP verdiend</div>
+        </div>
+        <span style="font-size:11px;font-weight:700;color:#22c55e;background:rgba(34,197,94,.1);padding:3px 10px;border-radius:20px;position:relative;z-index:1">+75 XP</span>
+      </div>`;
+    }
+    // Countdown tot middernacht
+    const _now=new Date();
+    const _mn=new Date(_now);_mn.setHours(23,59,59,999);
+    const _ms=_mn-_now;
+    const _h=Math.floor(_ms/3600000);
+    const _m=Math.floor((_ms%3600000)/60000);
+    const _s=Math.floor((_ms%60000)/1000);
+    const _timer=`${String(_h).padStart(2,'0')}:${String(_m).padStart(2,'0')}:${String(_s).padStart(2,'0')}`;
+    const _pct=Math.round(_dgDone/DG_TARGET*100);
+    return`<div class="bento-cell bento-dg" style="grid-column:1/-1;padding:12px 16px">
+      <div style="display:flex;align-items:center;gap:8px;position:relative;z-index:1">
+        <span style="font-size:16px">🎯</span>
+        <span style="font-size:13px;font-weight:700;color:var(--dk)">Dagdoel</span>
+        <span style="font-size:12px;color:var(--mu)">${_dgDone} / ${DG_TARGET} quizzen</span>
+        <span id="bento-dg-timer" style="margin-left:auto;font-size:11px;font-weight:600;color:var(--mu);background:var(--bo);padding:3px 9px;border-radius:20px;font-variant-numeric:tabular-nums">⏱ ${_timer}</span>
+      </div>
+      <div class="bento-dg-bar"><div class="bento-dg-bar-fill" style="width:${_pct}%"></div></div>
+    </div>`;
   }
   // ── Clear standalone containers (altijd) ──────────
   const _dgBox=document.getElementById('daily-goal-home');if(_dgBox)_dgBox.innerHTML='';
@@ -12235,6 +12264,20 @@ function renderHomeStats(){
     }
   }
   box.innerHTML=`<div class="bento">${streakCell}${lvlCell}${badgeCell}${avgCell}${actCells}${_buildDgCell()}${smCell}</div>`;
+  // Live countdown ticker (alleen als dagdoel nog niet voltooid)
+  if(!_dgRewarded){
+    if(window._dgTimer)clearInterval(window._dgTimer);
+    window._dgTimer=setInterval(()=>{
+      const el=document.getElementById('bento-dg-timer');
+      if(!el){clearInterval(window._dgTimer);return;}
+      const now=new Date();const mn=new Date(now);mn.setHours(23,59,59,999);
+      const ms=mn-now;
+      const h=Math.floor(ms/3600000),m=Math.floor((ms%3600000)/60000),s=Math.floor((ms%60000)/1000);
+      el.textContent=`⏱ ${String(h).padStart(2,'0')}:${String(m).padStart(2,'0')}:${String(s).padStart(2,'0')}`;
+    },1000);
+  } else {
+    if(window._dgTimer)clearInterval(window._dgTimer);
+  }
 }
 
 function renderXPHome(){
