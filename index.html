@@ -1234,8 +1234,31 @@ html.dark .qb{background:#2e3550}
 .prof-badge-circle.unearned{filter:grayscale(1);opacity:.2}
 .prof-badge-lbl{font-size:10px;font-weight:600;color:var(--mu);text-align:center;max-width:60px;line-height:1.2}
 .prof-badge-lbl.earned{color:var(--tx)}
+.prof-badge-rarity{font-size:9px;font-weight:700;text-transform:uppercase;letter-spacing:.4px;margin-top:2px}
 .prof-badges-summary{font-size:13px;color:var(--mu);margin-bottom:18px;display:flex;align-items:center;gap:8px}
 .prof-badges-count{font-weight:700;color:var(--or)}
+/* Rarity kleuren op profielbadge-cirkel */
+.prof-badge-circle.rarity-common   {border-color:#9CA3AF;box-shadow:0 0 5px 1px rgba(156,163,175,.45)}
+.prof-badge-circle.rarity-rare     {border-color:#3B82F6;box-shadow:0 0 8px 2px rgba(59,130,246,.55)}
+.prof-badge-circle.rarity-epic     {border-color:#8B5CF6;box-shadow:0 0 10px 3px rgba(139,92,246,.65)}
+.prof-badge-circle.rarity-legendary{border-color:#F59E0B;box-shadow:0 0 12px 4px rgba(245,158,11,.7)}
+.prof-badge-circle.rarity-mythic   {border-color:#EF4444;box-shadow:0 0 16px 5px rgba(239,68,68,.75),0 0 24px 8px rgba(245,158,11,.35);animation:mythicGlow 2s ease-in-out infinite}
+@keyframes mythicGlow{0%,100%{box-shadow:0 0 16px 5px rgba(239,68,68,.75),0 0 24px 8px rgba(245,158,11,.35)}50%{box-shadow:0 0 22px 8px rgba(239,68,68,.9),0 0 32px 12px rgba(245,158,11,.55)}}
+.prof-badge-circle.selected{outline:3px solid var(--or);outline-offset:2px;transform:scale(1.08)}
+.badge-selected-check{position:absolute;bottom:1px;right:1px;font-size:9px;line-height:1;background:var(--or);color:#fff;border-radius:50%;width:14px;height:14px;display:flex;align-items:center;justify-content:center;font-weight:900}
+.prof-badge-circle{position:relative}
+/* Rarity kleuren op leaderboard badge-overlay */
+.lb-av-badge.rarity-common   {border-color:#9CA3AF;box-shadow:0 0 4px 1px rgba(156,163,175,.6)}
+.lb-av-badge.rarity-rare     {border-color:#3B82F6;box-shadow:0 0 6px 2px rgba(59,130,246,.7)}
+.lb-av-badge.rarity-epic     {border-color:#8B5CF6;box-shadow:0 0 8px 3px rgba(139,92,246,.8)}
+.lb-av-badge.rarity-legendary{border-color:#F59E0B;box-shadow:0 0 10px 4px rgba(245,158,11,.85)}
+.lb-av-badge.rarity-mythic   {border-color:#EF4444;box-shadow:0 0 12px 5px rgba(239,68,68,.85),0 0 18px 7px rgba(245,158,11,.4);animation:mythicGlow 2s ease-in-out infinite}
+/* Rarity tekst kleuren */
+.rarity-txt-common   {color:#9CA3AF}
+.rarity-txt-rare     {color:#3B82F6}
+.rarity-txt-epic     {color:#8B5CF6}
+.rarity-txt-legendary{color:#F59E0B}
+.rarity-txt-mythic   {color:#EF4444;animation:mythicGlow 2s ease-in-out infinite}
 /* CTA */
 .streak-cta{margin-top:12px;width:100%;padding:10px;border-radius:11px;border:none;background:linear-gradient(135deg,#f97316,#f59e0b);color:#fff;font-family:var(--font-head);font-size:13px;font-weight:700;cursor:pointer;letter-spacing:.2px;transition:all .22s cubic-bezier(.34,1.2,.64,1);box-shadow:0 3px 12px rgba(var(--or-rgb),.32)}
 .streak-cta:hover{transform:translateY(-2px);box-shadow:0 7px 20px rgba(var(--or-rgb),.42)}
@@ -7901,29 +7924,56 @@ const ACH_KEY='slagio_ach_v1';
 let _achShownSession=new Set();
 const ALL_BADGES=[
   // Streak
-  {id:'streak1',  emoji:'🌱', label:'Eerste stap',   tip:'Je eerste dag geoefend',          cat:'Streak'},
-  {id:'streak3',  emoji:'🔥', label:'Op dreef',       tip:'3 dagen op rij geoefend',         cat:'Streak'},
-  {id:'streak7',  emoji:'⚡', label:'Een week',        tip:'7 dagen op rij',                  cat:'Streak'},
-  {id:'streak14', emoji:'💎', label:'Twee weken',      tip:'14 dagen streak',                 cat:'Streak'},
-  {id:'streak30', emoji:'🔮', label:'Een maand',       tip:'30 dagen op rij',                 cat:'Streak'},
-  {id:'streak100',emoji:'👑', label:'Legende',         tip:'100 dagen streak',                cat:'Streak'},
+  {id:'streak1',  emoji:'🌱', label:'Eerste stap',   tip:'Je eerste dag geoefend',          cat:'Streak',     rarity:'common'},
+  {id:'streak3',  emoji:'🔥', label:'Op dreef',       tip:'3 dagen op rij geoefend',         cat:'Streak',     rarity:'common'},
+  {id:'streak7',  emoji:'⚡', label:'Een week',        tip:'7 dagen op rij',                  cat:'Streak',     rarity:'rare'},
+  {id:'streak14', emoji:'💎', label:'Twee weken',      tip:'14 dagen streak',                 cat:'Streak',     rarity:'epic'},
+  {id:'streak30', emoji:'🔮', label:'Een maand',       tip:'30 dagen op rij',                 cat:'Streak',     rarity:'legendary'},
+  {id:'streak100',emoji:'👑', label:'Legende',         tip:'100 dagen streak',                cat:'Streak',     rarity:'mythic'},
   // Quizzen
-  {id:'quiz1',    emoji:'🎯', label:'Beginner',        tip:'Je eerste quiz gemaakt',          cat:'Quizzen'},
-  {id:'quiz10',   emoji:'📚', label:'Student',         tip:'10 quizzen gemaakt',              cat:'Quizzen'},
-  {id:'quiz50',   emoji:'🚀', label:'Gevorderd',       tip:'50 quizzen gemaakt',              cat:'Quizzen'},
-  {id:'quiz100',  emoji:'🌊', label:'Doorzetter',      tip:'100 quizzen gemaakt',             cat:'Quizzen'},
-  {id:'quiz500',  emoji:'💫', label:'Meester',         tip:'500 quizzen gemaakt',             cat:'Quizzen'},
+  {id:'quiz1',    emoji:'🎯', label:'Beginner',        tip:'Je eerste quiz gemaakt',          cat:'Quizzen',    rarity:'common'},
+  {id:'quiz10',   emoji:'📚', label:'Student',         tip:'10 quizzen gemaakt',              cat:'Quizzen',    rarity:'rare'},
+  {id:'quiz50',   emoji:'🚀', label:'Gevorderd',       tip:'50 quizzen gemaakt',              cat:'Quizzen',    rarity:'epic'},
+  {id:'quiz100',  emoji:'🌊', label:'Doorzetter',      tip:'100 quizzen gemaakt',             cat:'Quizzen',    rarity:'legendary'},
+  {id:'quiz500',  emoji:'💫', label:'Meester',         tip:'500 quizzen gemaakt',             cat:'Quizzen',    rarity:'mythic'},
   // Prestaties
-  {id:'combo3',   emoji:'🎯', label:'3 op rij',        tip:'3 vragen op rij goed',            cat:'Prestaties'},
-  {id:'combo5',   emoji:'⚡', label:'God Mode',        tip:'5 vragen op rij goed',            cat:'Prestaties'},
-  {id:'combo10',  emoji:'💎', label:'Legendarisch',    tip:'10 vragen op rij goed',           cat:'Prestaties'},
-  {id:'perfect',  emoji:'🌟', label:'Perfecte score',  tip:'100% op een quiz',                cat:'Prestaties'},
+  {id:'combo3',   emoji:'🎯', label:'3 op rij',        tip:'3 vragen op rij goed',            cat:'Prestaties', rarity:'rare'},
+  {id:'combo5',   emoji:'⚡', label:'God Mode',        tip:'5 vragen op rij goed',            cat:'Prestaties', rarity:'epic'},
+  {id:'combo10',  emoji:'💎', label:'Legendarisch',    tip:'10 vragen op rij goed',           cat:'Prestaties', rarity:'legendary'},
+  {id:'perfect',  emoji:'🌟', label:'Perfecte score',  tip:'100% op een quiz',                cat:'Prestaties', rarity:'legendary'},
   // Vakken
-  {id:'vakken3',  emoji:'📖', label:'Veelzijdig',      tip:'3 vakken geoefend',               cat:'Vakken'},
-  {id:'vakken10', emoji:'🌍', label:'Alleskunner',     tip:'10 vakken geoefend',              cat:'Vakken'},
+  {id:'vakken3',  emoji:'📖', label:'Veelzijdig',      tip:'3 vakken geoefend',               cat:'Vakken',     rarity:'rare'},
+  {id:'vakken10', emoji:'🌍', label:'Alleskunner',     tip:'10 vakken geoefend',              cat:'Vakken',     rarity:'legendary'},
   // Examen
-  {id:'examen_done',emoji:'📄',label:'Examenkandidaat',tip:'Eerste echt examen afgemaakt',   cat:'Examen'},
+  {id:'examen_done',emoji:'📄',label:'Examenkandidaat',tip:'Eerste echt examen afgemaakt',   cat:'Examen',     rarity:'epic'},
 ];
+const RARITY_LABEL={common:'Gewoon',rare:'Zeldzaam',epic:'Episch',legendary:'Legendarisch',mythic:'Mythisch'};
+const FEATURED_BADGE_KEY='slagio_featured_badge_id';
+function getSelectedFeaturedBadgeId(){return localStorage.getItem(FEATURED_BADGE_KEY)||null;}
+function setSelectedFeaturedBadgeId(id){
+  if(id)localStorage.setItem(FEATURED_BADGE_KEY,id);
+  else localStorage.removeItem(FEATURED_BADGE_KEY);
+}
+function selectFeaturedBadge(id){
+  const sel=getSelectedFeaturedBadgeId();
+  // Toggle off if same badge clicked again
+  setSelectedFeaturedBadgeId(sel===id?null:id);
+  renderProfileBadges();
+  // Update own leaderboard entries live
+  try{
+    const p=JSON.parse(localStorage.getItem(PROF_KEY)||'{}');
+    if(p.naam){
+      const b=ALL_BADGES.find(x=>x.id===(sel===id?null:id));
+      ['havo','vwo'].forEach(lvl=>{
+        const key='examenapp_leaderboard_'+lvl;
+        const entries=JSON.parse(localStorage.getItem(key)||'[]');
+        let changed=false;
+        entries.forEach(e=>{if(!e.isBot&&e.naam===p.naam){e.featuredBadgeId=b?b.id:null;changed=true;}});
+        if(changed)localStorage.setItem(key,JSON.stringify(entries));
+      });
+    }
+  }catch(e){}
+}
 function getAchieved(){try{return JSON.parse(localStorage.getItem(ACH_KEY)||'{}');}catch(e){return{};}}
 function earnAch(id){
   const a=getAchieved();
@@ -7953,8 +8003,16 @@ function renderProfileBadges(){
   const sub=document.getElementById('prof-badges-sub');
   if(!el)return;
   const ach=getAchieved();
+  const selId=getSelectedFeaturedBadgeId();
   const earned=ALL_BADGES.filter(b=>ach[b.id]);
-  if(sub)sub.textContent=`${earned.length} van ${ALL_BADGES.length} behaald`;
+  const selBadge=earned.find(b=>b.id===selId);
+  if(sub){
+    sub.innerHTML=earned.length===0
+      ?`<span style="color:var(--mu)">Maak quizzen om badges te verdienen</span>`
+      :`<span style="color:var(--mu)">${earned.length} van ${ALL_BADGES.length} behaald · </span>`
+       +(selBadge?`<span style="color:var(--or);font-weight:700">${selBadge.emoji} ${selBadge.label} op avatar</span>`
+                 :`<span style="color:var(--mu)">Klik een badge om te selecteren</span>`);
+  }
   const cats=[...new Set(ALL_BADGES.map(b=>b.cat))];
   el.innerHTML=cats.map(cat=>{
     const bs=ALL_BADGES.filter(b=>b.cat===cat);
@@ -7963,10 +8021,15 @@ function renderProfileBadges(){
       <div class="prof-badges-grid">
         ${bs.map(b=>{
           const isEarned=!!ach[b.id];
+          const isSelected=isEarned&&b.id===selId;
           const dateStr=isEarned?new Date(ach[b.id]).toLocaleDateString('nl-NL',{day:'numeric',month:'short',year:'numeric'}):'';
-          return `<div class="prof-badge-item badge-tooltip" data-tip="${isEarned?b.tip+' · '+dateStr:b.tip}">
-            <div class="prof-badge-circle ${isEarned?'earned':'unearned'}">${b.emoji}</div>
+          const rarityLabel=RARITY_LABEL[b.rarity]||'';
+          const tip=isEarned?`${b.tip} · ${dateStr} · ${rarityLabel}${isSelected?' · ✓ op avatar':''}`:b.tip+' · Nog niet behaald';
+          const clickAttr=isEarned?`onclick="selectFeaturedBadge('${b.id}')" style="cursor:pointer"`:'';
+          return `<div class="prof-badge-item badge-tooltip" data-tip="${tip}" ${clickAttr}>
+            <div class="prof-badge-circle ${isEarned?'earned rarity-'+b.rarity:'unearned'}${isSelected?' selected':''}">${b.emoji}${isSelected?'<span class="badge-selected-check">✓</span>':''}</div>
             <div class="prof-badge-lbl ${isEarned?'earned':''}">${b.label}</div>
+            ${isEarned?`<div class="prof-badge-rarity rarity-txt-${b.rarity}">${rarityLabel}</div>`:''}
           </div>`;
         }).join('')}
       </div>
@@ -8251,8 +8314,8 @@ function toonRes(){
       const avatar=getMyCurrentAvatar()||'🐻';
       const animalId=prof.animalId||null;
       const stageIdx=animalId?getAnimalStageIdx(getTotalXP()):0;
-      const featuredBadge=getBestBadgeEmoji(getAchieved())||null;
-      const entry={naam,avatar,animalId,stageIdx,featuredBadge,vak:ST.vak.id,vakNaam:ST.vak.naam,domeinId:ST.domein.id,domeinNaam:ST.domein.naam,score:lbScore,goed,tot,avgTijd,date:new Date().toISOString().slice(0,10)};
+      const featuredBadgeId=getBestBadgeId(getAchieved())||null;
+      const entry={naam,avatar,animalId,stageIdx,featuredBadgeId,vak:ST.vak.id,vakNaam:ST.vak.naam,domeinId:ST.domein.id,domeinNaam:ST.domein.naam,score:lbScore,goed,tot,avgTijd,date:new Date().toISOString().slice(0,10)};
       saveLeaderboardEntry(entry);
       if(lbBtn)lbBtn.style.display='block';
       if(_regPrompt)_regPrompt.style.display=currentUser?'none':'block';
@@ -9375,16 +9438,16 @@ function raceToast(msg){
 // ═══════ BOT LEADERBOARD SEED ═══════
 // Vaste dier-avatars per bot (animalId + stageIdx uit ANIMAL_EVOLUTIONS)
 const BOT_AVATARS={
-  'Lars V.':  {animalId:'leeuw',   stageIdx:4, featuredBadge:'👑'},
-  'Sophie K.':{animalId:'adelaar', stageIdx:4, featuredBadge:'🌟'},
-  'Daan M.':  {animalId:'draak',   stageIdx:3, featuredBadge:'💎'},
-  'Emma J.':  {animalId:'vlinder', stageIdx:3, featuredBadge:'🏆'},
-  'Noah B.':  {animalId:'wolf',    stageIdx:2, featuredBadge:'⚡'},
-  'Lena H.':  {animalId:'leeuw',   stageIdx:2, featuredBadge:'📚'},
-  'Tim R.':   {animalId:'wolf',    stageIdx:1, featuredBadge:'🔥'},
-  'Sara P.':  {animalId:'vlinder', stageIdx:1, featuredBadge:'📖'},
-  'Finn O.':  {animalId:'draak',   stageIdx:0, featuredBadge:'🎯'},
-  'Mila W.':  {animalId:'adelaar', stageIdx:0, featuredBadge:'🌱'},
+  'Lars V.':  {animalId:'leeuw',   stageIdx:4, featuredBadgeId:'streak100'},
+  'Sophie K.':{animalId:'adelaar', stageIdx:4, featuredBadgeId:'perfect'},
+  'Daan M.':  {animalId:'draak',   stageIdx:3, featuredBadgeId:'combo10'},
+  'Emma J.':  {animalId:'vlinder', stageIdx:3, featuredBadgeId:'quiz100'},
+  'Noah B.':  {animalId:'wolf',    stageIdx:2, featuredBadgeId:'combo5'},
+  'Lena H.':  {animalId:'leeuw',   stageIdx:2, featuredBadgeId:'quiz10'},
+  'Tim R.':   {animalId:'wolf',    stageIdx:1, featuredBadgeId:'streak3'},
+  'Sara P.':  {animalId:'vlinder', stageIdx:1, featuredBadgeId:'vakken3'},
+  'Finn O.':  {animalId:'draak',   stageIdx:0, featuredBadgeId:'quiz1'},
+  'Mila W.':  {animalId:'adelaar', stageIdx:0, featuredBadgeId:'streak1'},
 };
 function seedBotsNow(){
   const BOT_KEY='slagio_bots_seeded_v9';
@@ -9393,7 +9456,7 @@ function seedBotsNow(){
   function mkEntry(naam,avatar,vak,vakNaam,domeinId,domeinNaam,goed,tot,avgTijd,daysAgo,niveau){
     const d=new Date('2025-01-15');d.setDate(d.getDate()+daysAgo);
     const ba=BOT_AVATARS[naam]||{};
-    return{naam,avatar,animalId:ba.animalId||null,stageIdx:ba.stageIdx??0,featuredBadge:ba.featuredBadge||null,
+    return{naam,avatar,animalId:ba.animalId||null,stageIdx:ba.stageIdx??0,featuredBadgeId:ba.featuredBadgeId||null,
       vak,vakNaam,domeinId,domeinNaam,
       score:goed*100+goed*Math.round(avgTijd/15*100),goed,tot,avgTijd,
       date:d.toISOString().slice(0,10),niveau,isBot:true};
@@ -9631,7 +9694,7 @@ function openLbProfile(naam){
     <div class="lbp-drag"></div>
     <button class="lbp-close" onclick="closeLbProfile()">✕</button>
     <div class="lbp-header">
-      <div class="lbp-av" style="position:relative">${avatarHtml}${getLbBadgeOverlay(allEntries[0]?.featuredBadge)}</div>
+      <div class="lbp-av" style="position:relative">${avatarHtml}${getLbBadgeOverlay(allEntries[0]?.featuredBadgeId)}</div>
       <div class="lbp-headinfo">
         <div class="lbp-naam">${naam}${isBot?'<span style="font-size:10px;color:var(--mu);font-weight:500;margin-left:6px">· bot</span>':''}</div>
         <div class="lbp-chips">
@@ -9738,10 +9801,10 @@ function _renderLbWithData(){
   const myBox=document.getElementById('lb-myscore-box');
   const myLiveAvatar32=getMyCurrentAvatarHtml(32);
   const myLiveAvatar28=getMyCurrentAvatarHtml(28);
-  const myBestBadge=getBestBadgeEmoji(getAchieved());
+  const myBestBadgeId=getBestBadgeId(getAchieved());
   if(myBest&&prof.naam){
     myBox.innerHTML=`<div class="lb-my-score">
-      <div class="lb-my-av" style="position:relative">${myLiveAvatar32}${getLbBadgeOverlay(myBestBadge,'var(--or)')}</div>
+      <div class="lb-my-av" style="position:relative">${myLiveAvatar32}${getLbBadgeOverlay(myBestBadgeId,'var(--or)')}</div>
       <div class="lb-my-info">
         <div class="lb-my-title">Jouw beste score</div>
         <div class="lb-my-name">${prof.naam}</div>
@@ -9786,7 +9849,7 @@ function _renderLbWithData(){
         <div style="position:relative;display:inline-block">
           <div class="lb-pod-avatar ${classes[ri]}" style="${isMe?'border-color:var(--or)':''}">${isMe?myLiveAvatar32:getLbAvatarHtml(e,32)}</div>
           <div style="position:absolute;bottom:-3px;right:-3px;width:18px;height:18px;border-radius:50%;background:${['#F59E0B','#9CA3AF','#CD7C3F'][ri]};color:#fff;font-size:9px;font-weight:900;display:flex;align-items:center;justify-content:center;border:2px solid var(--bg)">${ri+1}</div>
-          ${getLbBadgeOverlay(isMe?myBestBadge:e.featuredBadge)}
+          ${getLbBadgeOverlay(isMe?myBestBadgeId:e.featuredBadgeId)}
         </div>
         <div class="lb-pod-bar ${classes[ri]}" style="height:${heights[pi]}px">${e.score}</div>
         <div class="lb-pod-name">${e.naam}</div>
@@ -9815,7 +9878,7 @@ function _renderLbWithData(){
       <div class="lb-rank-col ${rankCls(rank)}">${rank===1?'🥇':rank===2?'🥈':rank===3?'🥉':'#'+rank}</div>
       <div class="lb-av-wrap">
         <div class="lb-av">${isMe?myLiveAvatar28:getLbAvatarHtml(e,28)}</div>
-        ${getLbBadgeOverlay(isMe?myBestBadge:e.featuredBadge)}
+        ${getLbBadgeOverlay(isMe?myBestBadgeId:e.featuredBadgeId)}
       </div>
       <div class="lb-info">
         <div class="lb-name">${e.naam}${lbMeSpan(isMe)}${niveauChip(e)}${tierBadge(e.score)}</div>
@@ -10231,17 +10294,21 @@ function getLbAvatarHtml(e,size){
 }
 // Prioriteitsvolgorde voor "beste badge" display
 const BADGE_PRIORITY=['streak100','streak30','streak14','streak7','quiz500','quiz100','combo10','perfect','streak3','quiz50','combo5','vakken10','quiz10','combo3','vakken3','examen_done','quiz1','streak1'];
-function getBestBadgeEmoji(achievedObj){
+function getBestBadgeId(achievedObj){
+  // Gebruik handmatig geselecteerde badge als die is verdiend
+  const sel=getSelectedFeaturedBadgeId();
+  if(sel&&achievedObj&&achievedObj[sel])return sel;
+  // Anders automatisch hoogste badge
   if(!achievedObj)return null;
-  const ach=achievedObj;
-  for(const id of BADGE_PRIORITY){
-    if(ach[id]){const b=ALL_BADGES.find(x=>x.id===id);if(b)return b.emoji;}
-  }
+  for(const id of BADGE_PRIORITY){if(achievedObj[id])return id;}
   return null;
 }
-function getLbBadgeOverlay(emoji,borderColor){
-  if(!emoji)return'';
-  return`<div class="lb-av-badge" style="${borderColor?'border-color:'+borderColor:''}">${emoji}</div>`;
+function getLbBadgeOverlay(badgeId,borderColor){
+  if(!badgeId)return'';
+  const b=ALL_BADGES.find(x=>x.id===badgeId);
+  if(!b)return'';
+  const rarity=b.rarity||'common';
+  return`<div class="lb-av-badge rarity-${rarity}" style="${borderColor?'border-color:'+borderColor:''}" title="${b.label} · ${RARITY_LABEL[rarity]||''}">${b.emoji}</div>`;
 }
 function syncAvatarToProfile(){
   try{
@@ -10263,12 +10330,12 @@ function _updateMyLbAvatar(newAvatar,naam){
       const key='examenapp_leaderboard_'+niveau;
       const entries=JSON.parse(localStorage.getItem(key)||'[]');
       let changed=false;
-      const featuredBadge=getBestBadgeEmoji(getAchieved())||null;
+      const featuredBadgeId=getBestBadgeId(getAchieved())||null;
       entries.forEach(e=>{
         if(!e.isBot&&e.naam===naam){
           e.avatar=newAvatar;
           if(animalId){e.animalId=animalId;e.stageIdx=stageIdx;}
-          if(featuredBadge)e.featuredBadge=featuredBadge;
+          if(featuredBadgeId)e.featuredBadgeId=featuredBadgeId;
           changed=true;
         }
       });
