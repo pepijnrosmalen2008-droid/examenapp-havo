@@ -2573,6 +2573,22 @@ html.dark .calc-btn{background:#2e3550}
 .lbp-detail-key{color:var(--mu);flex-shrink:0}
 .lbp-detail-val{font-weight:700;color:var(--dk);text-align:right}
 .lbp-recent-row{display:flex;align-items:center;justify-content:space-between;background:var(--bg2);border-radius:10px;padding:10px 13px;font-size:12px;border:1px solid var(--bo)}
+.lbp-badges-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:8px}
+.lbp-badge-item{display:flex;flex-direction:column;align-items:center;gap:4px;background:var(--bg2);border:1.5px solid var(--bo);border-radius:12px;padding:10px 6px;text-align:center;transition:transform .15s}
+.lbp-badge-item:hover{transform:translateY(-2px)}
+.lbp-badge-emoji{font-size:22px;line-height:1}
+.lbp-badge-lbl{font-size:9px;font-weight:700;color:var(--mu);letter-spacing:.2px;line-height:1.2}
+.lbp-badge-item.rarity-rare{border-color:rgba(59,130,246,.4);background:rgba(59,130,246,.06)}
+.lbp-badge-item.rarity-epic{border-color:rgba(139,92,246,.4);background:rgba(139,92,246,.06)}
+.lbp-badge-item.rarity-legendary{border-color:rgba(245,158,11,.4);background:rgba(245,158,11,.06)}
+.lbp-badge-item.rarity-mythic{border-color:rgba(239,68,68,.4);background:rgba(239,68,68,.06)}
+.lbp-badge-item.rarity-eternal{border-color:rgba(139,92,246,.5);background:linear-gradient(135deg,rgba(244,63,94,.06),rgba(139,92,246,.06))}
+.lbp-featured-badge{display:flex;align-items:center;gap:14px;background:var(--bg2);border:1.5px solid var(--bo);border-radius:14px;padding:14px 16px}
+.lbp-featured-badge.rarity-rare{border-color:rgba(59,130,246,.4);background:rgba(59,130,246,.07)}
+.lbp-featured-badge.rarity-epic{border-color:rgba(139,92,246,.4);background:rgba(139,92,246,.07)}
+.lbp-featured-badge.rarity-legendary{border-color:rgba(245,158,11,.4);background:rgba(245,158,11,.07)}
+.lbp-featured-badge.rarity-mythic{border-color:rgba(239,68,68,.4);background:rgba(239,68,68,.07)}
+.lbp-featured-badge.rarity-eternal{border-color:rgba(139,92,246,.5);background:linear-gradient(135deg,rgba(244,63,94,.07),rgba(139,92,246,.07))}
 .lbp-recent-vak{font-weight:700;color:var(--dk)}
 .lbp-recent-score{font-weight:800;color:var(--or)}
 .lbp-bar-wrap{margin-top:4px;background:var(--bo);border-radius:4px;height:5px;overflow:hidden}
@@ -11236,6 +11252,29 @@ function openLbProfile(naam){
       </span>
     </div>
   `).join('');
+  // ── Badge sectie ──────────────────────────────────
+  const prof2=JSON.parse(localStorage.getItem(PROF_KEY)||'{}');
+  const myNaamLbp=prof2.naam||'';
+  const isMe=(myNaamLbp&&naam===myNaamLbp)||(typeof currentUser!=='undefined'&&currentUser&&(currentUser.user_metadata?.naam===naam||currentUser.email?.split('@')[0]===naam));
+  let badgeSectionHtml='';
+  if(isMe){
+    const achieved=getAchieved();
+    const earned=ALL_BADGES.filter(b=>achieved[b.id]);
+    if(earned.length){
+      const items=earned.map(b=>`<div class="lbp-badge-item rarity-${b.rarity}" title="${b.label} — ${b.tip}"><span class="lbp-badge-emoji">${b.emoji}</span><span class="lbp-badge-lbl">${b.label}</span></div>`).join('');
+      badgeSectionHtml=`<p class="lbp-section-title">Jouw badges (${earned.length}/${ALL_BADGES.length})</p><div class="lbp-badges-grid">${items}</div>`;
+    }
+  } else {
+    const featId=allEntries[0]?.featuredBadgeId;
+    const featB=featId?ALL_BADGES.find(b=>b.id===featId):null;
+    if(featB){
+      badgeSectionHtml=`<p class="lbp-section-title">Uitgelichte badge</p>
+        <div class="lbp-featured-badge rarity-${featB.rarity}">
+          <span style="font-size:30px;line-height:1">${featB.emoji}</span>
+          <div><div style="font-size:13px;font-weight:700;color:var(--dk)">${featB.label}</div><div style="font-size:11px;color:var(--mu);margin-top:2px">${featB.tip} · <em>${RARITY_LABEL[featB.rarity]||''}</em></div></div>
+        </div>`;
+    }
+  }
   const el=document.getElementById('lbp-overlay');
   el.innerHTML=`<div class="lbp-card" onclick="event.stopPropagation()">
     <div class="lbp-drag"></div>
@@ -11277,6 +11316,7 @@ function openLbProfile(naam){
     <div class="lbp-detail-row"><span class="lbp-detail-key">✅ Totaal goed</span><span class="lbp-detail-val">${totalGoed} / ${totalTot} vragen</span></div>
     ${botHtml}
     ${recentHtml?`<p class="lbp-section-title" style="margin-top:16px">Beste quizzes</p><div style="display:flex;flex-direction:column;gap:6px">${recentHtml}</div>`:''}
+    ${badgeSectionHtml}
   </div>`;
   el.classList.add('open');
   setTimeout(()=>{el.querySelector('.lbp-bar-fill')&&el.querySelectorAll('.lbp-bar-fill').forEach(b=>{const w=b.style.width;b.style.width='0';setTimeout(()=>b.style.width=w,50);});},50);
