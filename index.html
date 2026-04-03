@@ -1244,6 +1244,9 @@ html.dark .qb{background:#2e3550}
 .prof-badge-circle.rarity-legendary{box-shadow:0 0 14px 5px rgba(245,158,11,.8)}
 .prof-badge-circle.rarity-mythic   {box-shadow:0 0 18px 6px rgba(239,68,68,.8),0 0 28px 10px rgba(245,158,11,.4);animation:mythicGlow 2s ease-in-out infinite}
 @keyframes mythicGlow{0%,100%{box-shadow:0 0 18px 6px rgba(239,68,68,.8),0 0 28px 10px rgba(245,158,11,.4)}50%{box-shadow:0 0 24px 9px rgba(239,68,68,.95),0 0 36px 14px rgba(245,158,11,.6)}}
+.prof-badge-circle.rarity-eternal  {animation:eternalGlow 3s linear infinite;border-color:transparent;background:linear-gradient(var(--bg2),var(--bg2)) padding-box,linear-gradient(var(--a,0deg),#f43f5e,#f97316,#eab308,#22c55e,#06b6d4,#8b5cf6,#f43f5e) border-box}
+@property --a{syntax:'<angle>';initial-value:0deg;inherits:false}
+@keyframes eternalGlow{to{--a:360deg}}
 .prof-badge-circle.selected{outline:3px solid var(--or);outline-offset:2px;transform:scale(1.08)}
 .badge-selected-check{position:absolute;bottom:1px;right:1px;font-size:9px;line-height:1;background:var(--or);color:#fff;border-radius:50%;width:14px;height:14px;display:flex;align-items:center;justify-content:center;font-weight:900}
 /* Rarity kleuren op leaderboard badge-overlay */
@@ -1252,12 +1255,15 @@ html.dark .qb{background:#2e3550}
 .lb-av-badge.rarity-epic     {border-color:#8B5CF6;box-shadow:0 0 8px 3px rgba(139,92,246,.8)}
 .lb-av-badge.rarity-legendary{border-color:#F59E0B;box-shadow:0 0 10px 4px rgba(245,158,11,.85)}
 .lb-av-badge.rarity-mythic   {border-color:#EF4444;box-shadow:0 0 12px 5px rgba(239,68,68,.85),0 0 18px 7px rgba(245,158,11,.4);animation:mythicGlow 2s ease-in-out infinite}
+.lb-av-badge.rarity-eternal  {animation:eternalGlow 3s linear infinite;border-color:transparent;background:linear-gradient(var(--bg2,#1a1a2e),var(--bg2,#1a1a2e)) padding-box,linear-gradient(var(--a,0deg),#f43f5e,#f97316,#eab308,#22c55e,#06b6d4,#8b5cf6,#f43f5e) border-box;box-shadow:0 0 14px 5px rgba(139,92,246,.6)}
 /* Rarity tekst kleuren */
 .rarity-txt-common   {color:#9CA3AF}
 .rarity-txt-rare     {color:#3B82F6}
 .rarity-txt-epic     {color:#8B5CF6}
 .rarity-txt-legendary{color:#F59E0B}
 .rarity-txt-mythic   {color:#EF4444;animation:mythicGlow 2s ease-in-out infinite}
+.rarity-txt-eternal  {background:linear-gradient(90deg,#f43f5e,#f97316,#eab308,#22c55e,#06b6d4,#8b5cf6);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;background-size:200%;animation:eternalTxt 3s linear infinite}
+@keyframes eternalTxt{0%{background-position:0%}100%{background-position:200%}}
 /* CTA */
 .streak-cta{margin-top:12px;width:100%;padding:10px;border-radius:11px;border:none;background:linear-gradient(135deg,#f97316,#f59e0b);color:#fff;font-family:var(--font-head);font-size:13px;font-weight:700;cursor:pointer;letter-spacing:.2px;transition:all .22s cubic-bezier(.34,1.2,.64,1);box-shadow:0 3px 12px rgba(var(--or-rgb),.32)}
 .streak-cta:hover{transform:translateY(-2px);box-shadow:0 7px 20px rgba(var(--or-rgb),.42)}
@@ -7931,9 +7937,9 @@ const ALL_BADGES=[
   {id:'streak14', emoji:'💎', label:'Twee weken',      tip:'14 dagen streak',                 cat:'Streak',     rarity:'epic'},
   {id:'streak30', emoji:'🔮', label:'Een maand',       tip:'30 dagen op rij',                 cat:'Streak',     rarity:'legendary'},
   {id:'streak100',emoji:'👑', label:'Legende',         tip:'100 dagen streak',                cat:'Streak',     rarity:'mythic'},
-  {id:'streak200',emoji:'🌌', label:'Onsterfelijk',    tip:'200 dagen streak',                cat:'Streak',     rarity:'mythic'},
-  {id:'streak300',emoji:'⚜️', label:'Grootmeester',    tip:'300 dagen streak',                cat:'Streak',     rarity:'mythic'},
-  {id:'streak365',emoji:'🪐', label:'Heel het jaar',   tip:'365 dagen op rij — een vol jaar', cat:'Streak',     rarity:'mythic'},
+  {id:'streak200',emoji:'🌌', label:'Onsterfelijk',    tip:'200 dagen streak',                cat:'Streak',     rarity:'eternal'},
+  {id:'streak300',emoji:'⚜️', label:'Grootmeester',    tip:'300 dagen streak',                cat:'Streak',     rarity:'eternal'},
+  {id:'streak365',emoji:'🪐', label:'Heel het jaar',   tip:'365 dagen op rij — een vol jaar', cat:'Streak',     rarity:'eternal'},
   // Quizzen
   {id:'quiz1',    emoji:'🎯', label:'Beginner',        tip:'Je eerste quiz gemaakt',          cat:'Quizzen',    rarity:'common'},
   {id:'quiz10',   emoji:'📚', label:'Student',         tip:'10 quizzen gemaakt',              cat:'Quizzen',    rarity:'rare'},
@@ -7951,7 +7957,7 @@ const ALL_BADGES=[
   // Examen
   {id:'examen_done',emoji:'📄',label:'Examenkandidaat',tip:'Eerste echt examen afgemaakt',   cat:'Examen',     rarity:'mythic'},
 ];
-const RARITY_LABEL={common:'Gewoon',rare:'Zeldzaam',epic:'Episch',legendary:'Legendarisch',mythic:'Mythisch'};
+const RARITY_LABEL={common:'Gewoon',rare:'Zeldzaam',epic:'Episch',legendary:'Legendarisch',mythic:'Mythisch',eternal:'Eeuwig'};
 const FEATURED_BADGE_KEY='slagio_featured_badge_id';
 function getSelectedFeaturedBadgeId(){return localStorage.getItem(FEATURED_BADGE_KEY)||null;}
 function setSelectedFeaturedBadgeId(id){
