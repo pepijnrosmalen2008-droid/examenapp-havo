@@ -1391,18 +1391,17 @@ html.dark .qb{background:#2e3550}
 .grp-divider::before,.grp-divider::after{content:'';flex:1;height:1px;background:var(--bo)}
 .grp-no-login{background:rgba(239,68,68,.08);border:1px solid rgba(239,68,68,.2);border-radius:12px;padding:12px 14px;font-size:13px;color:#ef4444;text-align:center;margin-top:8px}
 .adapt-pill{display:inline-flex;align-items:center;gap:4px;font-size:11px;background:rgba(255,255,255,.1);border-radius:20px;padding:2px 8px;color:rgba(255,255,255,.7);margin-left:6px;vertical-align:middle}
-/* ── BOTTOM NAV ──────────────────────────────── */
-.bnav{position:fixed;bottom:0;left:0;right:0;z-index:900;background:var(--s);border-top:1px solid var(--bo);display:flex;align-items:stretch;padding-bottom:env(safe-area-inset-bottom);box-shadow:0 -4px 24px rgba(0,0,0,.18)}
-.bnav-tab{flex:1;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:3px;padding:8px 4px;background:none;border:none;cursor:pointer;color:var(--mu);font-size:10px;font-family:var(--font);font-weight:600;transition:color .15s;-webkit-tap-highlight-color:transparent;min-height:56px}
-.bnav-tab svg{width:22px;height:22px;stroke:currentColor;fill:none;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round;transition:stroke .15s}
-.bnav-tab.active{color:var(--or)}
+/* ── HOME TAB NAV ────────────────────────────── */
+.bnav{position:sticky;top:58px;z-index:150;background:var(--bg);border-bottom:1px solid var(--bo);display:flex;align-items:stretch;box-shadow:0 2px 10px rgba(0,0,0,.07)}
+.dark .bnav{background:var(--bg)}
+.bnav-tab{flex:1;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:3px;padding:10px 4px;background:none;border:none;border-bottom:2.5px solid transparent;cursor:pointer;color:var(--mu);font-size:10px;font-family:var(--font);font-weight:700;transition:color .15s,border-color .15s;-webkit-tap-highlight-color:transparent;letter-spacing:.2px}
+.bnav-tab svg{width:20px;height:20px;stroke:currentColor;fill:none;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round;transition:stroke .15s}
+.bnav-tab.active{color:var(--or);border-bottom-color:var(--or)}
 .bnav-tab.active svg{stroke:var(--or)}
 .bnav-tab-label{font-size:10px;font-weight:700;line-height:1}
 /* Tab panels */
 .home-tab-panel{display:none}
 .home-tab-panel.active{display:block}
-/* Add bottom padding to sc-home so content isn't hidden behind bottom nav */
-#sc-home{padding-bottom:72px}
 /* Menu grid */
 .menu-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-bottom:24px}
 .menu-tile{background:var(--s);border:1px solid var(--bo);border-radius:16px;padding:16px 8px 12px;display:flex;flex-direction:column;align-items:center;gap:8px;cursor:pointer;transition:transform .15s,box-shadow .15s;-webkit-tap-highlight-color:transparent}
@@ -3284,6 +3283,26 @@ html.dark .hsd-pill{background:var(--bg2);border-color:var(--bo2)}
   </div>
 </div>
 
+<!-- HOME TAB NAV -->
+<nav class="bnav" id="home-bnav">
+  <button class="bnav-tab active" id="bnav-start" onclick="switchHomeTab('start')" aria-label="Start">
+    <svg viewBox="0 0 24 24"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+    <span class="bnav-tab-label">Start</span>
+  </button>
+  <button class="bnav-tab" id="bnav-vakken" onclick="switchHomeTab('vakken')" aria-label="Vakken">
+    <svg viewBox="0 0 24 24"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
+    <span class="bnav-tab-label">Vakken</span>
+  </button>
+  <button class="bnav-tab" id="bnav-voortgang" onclick="switchHomeTab('voortgang')" aria-label="Voortgang">
+    <svg viewBox="0 0 24 24"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg>
+    <span class="bnav-tab-label">Voortgang</span>
+  </button>
+  <button class="bnav-tab" id="bnav-menu" onclick="switchHomeTab('menu')" aria-label="Menu">
+    <svg viewBox="0 0 24 24"><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+    <span class="bnav-tab-label">Menu</span>
+  </button>
+</nav>
+
 <!-- TAB PANELS -->
 <div id="tab-start" class="home-tab-panel active">
   <!-- Hero (countdown + CTAs) stays here -->
@@ -3464,25 +3483,6 @@ html.dark .hsd-pill{background:var(--bg2);border-color:var(--bo2)}
   </div>
 </div>
 
-<!-- BOTTOM NAV -->
-<nav class="bnav" id="home-bnav">
-  <button class="bnav-tab active" id="bnav-start" onclick="switchHomeTab('start')" aria-label="Start">
-    <svg viewBox="0 0 24 24"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
-    <span class="bnav-tab-label">Start</span>
-  </button>
-  <button class="bnav-tab" id="bnav-vakken" onclick="switchHomeTab('vakken')" aria-label="Vakken">
-    <svg viewBox="0 0 24 24"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
-    <span class="bnav-tab-label">Vakken</span>
-  </button>
-  <button class="bnav-tab" id="bnav-voortgang" onclick="switchHomeTab('voortgang')" aria-label="Voortgang">
-    <svg viewBox="0 0 24 24"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg>
-    <span class="bnav-tab-label">Voortgang</span>
-  </button>
-  <button class="bnav-tab" id="bnav-menu" onclick="switchHomeTab('menu')" aria-label="Menu">
-    <svg viewBox="0 0 24 24"><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
-    <span class="bnav-tab-label">Menu</span>
-  </button>
-</nav>
 </div>
 
 <!-- INFO -->
