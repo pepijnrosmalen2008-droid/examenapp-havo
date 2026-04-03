@@ -1223,6 +1223,19 @@ html.dark .qb{background:#2e3550}
 .badge-tooltip{position:relative}
 .badge-tooltip::after{content:attr(data-tip);position:absolute;bottom:calc(100% + 6px);left:50%;transform:translateX(-50%);background:var(--dk);color:var(--bg);font-size:11px;font-weight:600;padding:4px 10px;border-radius:8px;white-space:nowrap;opacity:0;pointer-events:none;transition:.18s;font-family:var(--font);z-index:10}
 .badge-tooltip:hover::after{opacity:1}
+/* Profile badge section */
+.prof-badges-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(64px,1fr));gap:12px;margin-top:4px}
+.prof-badge-cat{margin-bottom:20px}
+.prof-badge-cat-title{font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.8px;color:var(--mu);margin-bottom:10px}
+.prof-badge-item{display:flex;flex-direction:column;align-items:center;gap:5px;cursor:default}
+.prof-badge-circle{width:52px;height:52px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:24px;background:var(--bg2);border:2px solid var(--bo);transition:all .25s cubic-bezier(.34,1.4,.64,1);position:relative}
+.prof-badge-circle.earned{background:linear-gradient(135deg,#FEF3C7,#FDE68A);border-color:#F59E0B;box-shadow:0 4px 14px rgba(245,158,11,.32)}
+.prof-badge-circle.earned:hover{transform:scale(1.15) rotate(-6deg)}
+.prof-badge-circle.unearned{filter:grayscale(1);opacity:.2}
+.prof-badge-lbl{font-size:10px;font-weight:600;color:var(--mu);text-align:center;max-width:60px;line-height:1.2}
+.prof-badge-lbl.earned{color:var(--tx)}
+.prof-badges-summary{font-size:13px;color:var(--mu);margin-bottom:18px;display:flex;align-items:center;gap:8px}
+.prof-badges-count{font-weight:700;color:var(--or)}
 /* CTA */
 .streak-cta{margin-top:12px;width:100%;padding:10px;border-radius:11px;border:none;background:linear-gradient(135deg,#f97316,#f59e0b);color:#fff;font-family:var(--font-head);font-size:13px;font-weight:700;cursor:pointer;letter-spacing:.2px;transition:all .22s cubic-bezier(.34,1.2,.64,1);box-shadow:0 3px 12px rgba(var(--or-rgb),.32)}
 .streak-cta:hover{transform:translateY(-2px);box-shadow:0 7px 20px rgba(var(--or-rgb),.42)}
@@ -3622,6 +3635,13 @@ html.dark .hsd-pill{background:var(--bg2);border-color:var(--bo2)}
       <div class="av-preview" id="av-preview-big">🐼</div>
       <div class="av-preview-info"><strong id="av-preview-name">Geen naam</strong></div>
     </div>
+  </div>
+
+  <!-- 1b. Badges -->
+  <div class="prof-section">
+    <div class="prof-section-title">Mijn Badges</div>
+    <div class="prof-section-sub" id="prof-badges-sub">Verdien badges door te oefenen en streaks vol te houden</div>
+    <div id="prof-badges-content"></div>
   </div>
 
   <!-- 2. Statistieken -->
@@ -7085,6 +7105,7 @@ function openProfiel(){
   buildCijferGrid();
   updateCloudStatusBar();
   buildMijnStats();
+  renderProfileBadges();
   show('sc-profiel');
 }
 
@@ -7877,6 +7898,31 @@ function checkComeback(ok){
 // ═══════ ACHIEVEMENTS ═══════
 const ACH_KEY='slagio_ach_v1';
 let _achShownSession=new Set();
+const ALL_BADGES=[
+  // Streak
+  {id:'streak1',  emoji:'🌱', label:'Eerste stap',   tip:'Je eerste dag geoefend',          cat:'Streak'},
+  {id:'streak3',  emoji:'🔥', label:'Op dreef',       tip:'3 dagen op rij geoefend',         cat:'Streak'},
+  {id:'streak7',  emoji:'⚡', label:'Een week',        tip:'7 dagen op rij',                  cat:'Streak'},
+  {id:'streak14', emoji:'💎', label:'Twee weken',      tip:'14 dagen streak',                 cat:'Streak'},
+  {id:'streak30', emoji:'🔮', label:'Een maand',       tip:'30 dagen op rij',                 cat:'Streak'},
+  {id:'streak100',emoji:'👑', label:'Legende',         tip:'100 dagen streak',                cat:'Streak'},
+  // Quizzen
+  {id:'quiz1',    emoji:'🎯', label:'Beginner',        tip:'Je eerste quiz gemaakt',          cat:'Quizzen'},
+  {id:'quiz10',   emoji:'📚', label:'Student',         tip:'10 quizzen gemaakt',              cat:'Quizzen'},
+  {id:'quiz50',   emoji:'🚀', label:'Gevorderd',       tip:'50 quizzen gemaakt',              cat:'Quizzen'},
+  {id:'quiz100',  emoji:'🌊', label:'Doorzetter',      tip:'100 quizzen gemaakt',             cat:'Quizzen'},
+  {id:'quiz500',  emoji:'💫', label:'Meester',         tip:'500 quizzen gemaakt',             cat:'Quizzen'},
+  // Prestaties
+  {id:'combo3',   emoji:'🎯', label:'3 op rij',        tip:'3 vragen op rij goed',            cat:'Prestaties'},
+  {id:'combo5',   emoji:'⚡', label:'God Mode',        tip:'5 vragen op rij goed',            cat:'Prestaties'},
+  {id:'combo10',  emoji:'💎', label:'Legendarisch',    tip:'10 vragen op rij goed',           cat:'Prestaties'},
+  {id:'perfect',  emoji:'🌟', label:'Perfecte score',  tip:'100% op een quiz',                cat:'Prestaties'},
+  // Vakken
+  {id:'vakken3',  emoji:'📖', label:'Veelzijdig',      tip:'3 vakken geoefend',               cat:'Vakken'},
+  {id:'vakken10', emoji:'🌍', label:'Alleskunner',     tip:'10 vakken geoefend',              cat:'Vakken'},
+  // Examen
+  {id:'examen_done',emoji:'📄',label:'Examenkandidaat',tip:'Eerste echt examen afgemaakt',   cat:'Examen'},
+];
 function getAchieved(){try{return JSON.parse(localStorage.getItem(ACH_KEY)||'{}');}catch(e){return{};}}
 function earnAch(id){
   const a=getAchieved();
@@ -7884,6 +7930,47 @@ function earnAch(id){
   a[id]=Date.now();
   localStorage.setItem(ACH_KEY,JSON.stringify(a));
   return true;
+}
+function checkQuizCountAch(total){
+  if(total>=1&&earnAch('quiz1'))setTimeout(()=>showAch('🎯','Eerste quiz gemaakt!'),400);
+  if(total>=10&&earnAch('quiz10'))setTimeout(()=>showAch('📚','10 quizzen — student!'),400);
+  if(total>=50&&earnAch('quiz50'))setTimeout(()=>showAch('🚀','50 quizzen — gevorderd!'),400);
+  if(total>=100&&earnAch('quiz100'))setTimeout(()=>showAch('🌊','100 quizzen — doorzetter!'),400);
+  if(total>=500&&earnAch('quiz500'))setTimeout(()=>showAch('💫','500 quizzen — meester!'),400);
+}
+function checkVakkenAch(){
+  try{
+    const ph=JSON.parse(localStorage.getItem('examenapp_progress_havo')||'{}');
+    const pv=JSON.parse(localStorage.getItem('examenapp_progress_vwo')||'{}');
+    const n=new Set([...Object.keys(ph),...Object.keys(pv)].map(k=>k.split('_')[0])).size;
+    if(n>=3&&earnAch('vakken3'))setTimeout(()=>showAch('📖','3 vakken geoefend — veelzijdig!'),400);
+    if(n>=10&&earnAch('vakken10'))setTimeout(()=>showAch('🌍','10 vakken — alleskunner!'),400);
+  }catch(e){}
+}
+function renderProfileBadges(){
+  const el=document.getElementById('prof-badges-content');
+  const sub=document.getElementById('prof-badges-sub');
+  if(!el)return;
+  const ach=getAchieved();
+  const earned=ALL_BADGES.filter(b=>ach[b.id]);
+  if(sub)sub.textContent=`${earned.length} van ${ALL_BADGES.length} behaald`;
+  const cats=[...new Set(ALL_BADGES.map(b=>b.cat))];
+  el.innerHTML=cats.map(cat=>{
+    const bs=ALL_BADGES.filter(b=>b.cat===cat);
+    return `<div class="prof-badge-cat">
+      <div class="prof-badge-cat-title">${cat}</div>
+      <div class="prof-badges-grid">
+        ${bs.map(b=>{
+          const isEarned=!!ach[b.id];
+          const dateStr=isEarned?new Date(ach[b.id]).toLocaleDateString('nl-NL',{day:'numeric',month:'short',year:'numeric'}):'';
+          return `<div class="prof-badge-item badge-tooltip" data-tip="${isEarned?b.tip+' · '+dateStr:b.tip}">
+            <div class="prof-badge-circle ${isEarned?'earned':'unearned'}">${b.emoji}</div>
+            <div class="prof-badge-lbl ${isEarned?'earned':''}">${b.label}</div>
+          </div>`;
+        }).join('')}
+      </div>
+    </div>`;
+  }).join('');
 }
 function showAch(emoji,txt,offset){
   if(_achShownSession.has(txt))return;
@@ -8768,6 +8855,8 @@ function examenFinish(){
   _exBuildResultList();
   _exUpdateGrade();
   document.getElementById('sc-examen').scrollTo(0,0);
+  // Badge: eerste echt examen afgemaakt
+  try{if(earnAch('examen_done'))setTimeout(()=>showAch('📄','Eerste echt examen afgemaakt!'),1200);}catch(e){}
 }
 
 function _exBuildResultList(){
@@ -10502,6 +10591,10 @@ function recordPractice(){
   if(!s.totalQuizzes)s.totalQuizzes=0;
   s.totalQuizzes++;
   cloudSet('streak',s);
+  // Quiz count badges
+  try{checkQuizCountAch(s.totalQuizzes);}catch(e){}
+  // Vak badges
+  try{checkVakkenAch();}catch(e){}
 }
 function calcStreak(){
   const s=getStreak();
@@ -10574,23 +10667,19 @@ function renderStreak(){
     </div>`;
   }
   // Streak milestone achievements (eenmalig)
+  if(info.total>=1&&earnAch('streak1'))setTimeout(()=>showAch('🌱','Eerste dag geoefend!'),400);
+  if(info.current>=3&&earnAch('streak3'))setTimeout(()=>showAch('🔥','3 dagen op rij — op dreef!'),400);
   if(info.current>=7&&earnAch('streak7'))setTimeout(()=>showAch('⚡','7 dagen op rij — geweldig!'),400);
+  if(info.current>=14&&earnAch('streak14'))setTimeout(()=>showAch('💎','14 dagen streak — twee weken!'),400);
   if(info.current>=30&&earnAch('streak30'))setTimeout(()=>showAch('🔮','30 dagen streak — ongelooflijk!',175),600);
   if(info.current>=100&&earnAch('streak100'))setTimeout(()=>showAch('👑','100 dagen — Slagio Legende!',220),800);
-  // Badges
-  const badgeDefs=[
-    {emoji:'🌱',tip:'Eerste quiz!',req:info.total>=1},
-    {emoji:'🔥',tip:'3 dagen streak',req:info.current>=3},
-    {emoji:'⚡',tip:'7 dagen op rij',req:info.current>=7},
-    {emoji:'💎',tip:'14 dagen streak',req:info.current>=14},
-    {emoji:'🔮',tip:'30 dagen streak',req:info.current>=30},
-    {emoji:'👑',tip:'100 dagen — Legende!',req:info.current>=100},
-    {emoji:'🏆',tip:'10+ quizzen',req:info.total>=10},
-    {emoji:'🚀',tip:'50+ quizzen',req:info.total>=50}
-  ];
+  // Badges (streak + quizzen categorieën)
+  const ach=getAchieved();
+  const badgeDefs=ALL_BADGES.filter(b=>b.cat==='Streak'||b.cat==='Quizzen');
   let badgeHtml='';
   badgeDefs.forEach(b=>{
-    badgeHtml+=`<div class="badge-tooltip badge ${b.req?'earned':'unearned'}" data-tip="${b.tip}">${b.emoji}</div>`;
+    const isEarned=!!ach[b.id];
+    badgeHtml+=`<div class="badge-tooltip badge ${isEarned?'earned':'unearned'}" data-tip="${b.tip}">${b.emoji}</div>`;
   });
   // Headline
   const todayStr=new Date().toISOString().slice(0,10);
