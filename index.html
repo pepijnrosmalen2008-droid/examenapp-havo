@@ -1391,6 +1391,63 @@ html.dark .qb{background:#2e3550}
 .grp-divider{display:flex;align-items:center;gap:12px;color:var(--mu);font-size:12px;margin:16px 0}
 .grp-divider::before,.grp-divider::after{content:'';flex:1;height:1px;background:var(--bo)}
 .grp-no-login{background:rgba(239,68,68,.08);border:1px solid rgba(239,68,68,.2);border-radius:12px;padding:12px 14px;font-size:13px;color:#ef4444;text-align:center;margin-top:8px}
+/* ── PAGE HEROES ─────────────────────────────── */
+@keyframes fadeInUp{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:translateY(0)}}
+@keyframes fadeInScale{from{opacity:0;transform:scale(.92)}to{opacity:1;transform:scale(1)}}
+@keyframes pulseDot{0%,100%{opacity:1;transform:scale(1)}50%{opacity:.6;transform:scale(1.2)}}
+.pg-hero{position:relative;overflow:hidden;padding:36px 20px 32px;margin-bottom:0;text-align:center}
+.pg-hero-glow{position:absolute;top:-60px;left:50%;transform:translateX(-50%);width:360px;height:360px;border-radius:50%;background:radial-gradient(circle,rgba(var(--or-rgb),.22) 0%,transparent 70%);pointer-events:none;z-index:0}
+.pg-hero-content{position:relative;z-index:1}
+.pg-hero-icon{width:60px;height:60px;border-radius:18px;display:flex;align-items:center;justify-content:center;margin:0 auto 16px;font-size:26px;background:linear-gradient(135deg,rgba(var(--or-rgb),.2),rgba(var(--or-rgb),.08));border:1.5px solid rgba(var(--or-rgb),.3);backdrop-filter:blur(12px);animation:fadeInScale .5s ease both}
+.pg-hero-title{font-family:var(--font-head);font-size:26px;font-weight:900;color:var(--dk);letter-spacing:-.5px;margin-bottom:6px;animation:fadeInUp .45s ease both .05s}
+.pg-hero-sub{font-size:13px;color:var(--mu);line-height:1.5;max-width:340px;margin:0 auto;animation:fadeInUp .45s ease both .1s}
+.pg-stat-strip{display:flex;gap:10px;padding:0 20px 24px;animation:fadeInUp .45s ease both .15s}
+.pg-stat{flex:1;background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.1);border-radius:14px;padding:12px 8px;text-align:center;backdrop-filter:blur(8px)}
+.dark .pg-stat{background:rgba(255,255,255,.04)}
+.pg-stat-val{font-family:var(--font-head);font-size:20px;font-weight:900;color:var(--dk);line-height:1}
+.pg-stat-lbl{font-size:10px;color:var(--mu);font-weight:600;text-transform:uppercase;letter-spacing:.05em;margin-top:3px}
+/* ── SLAAGREGELS HERO ────────────────────────── */
+.sr-rule-grid{display:flex;flex-direction:column;gap:10px;padding:0 20px 20px;animation:fadeInUp .4s ease both .2s}
+.sr-rule-card{border-radius:16px;padding:16px;display:flex;align-items:flex-start;gap:14px;border:1.5px solid;position:relative;overflow:hidden}
+.sr-rule-card::before{content:'';position:absolute;top:-30px;right:-30px;width:120px;height:120px;border-radius:50%;background:radial-gradient(circle,currentColor 0%,transparent 70%);opacity:.08;pointer-events:none}
+.sr-rule-num{width:32px;height:32px;border-radius:10px;display:flex;align-items:center;justify-content:center;font-family:var(--font-head);font-size:14px;font-weight:900;color:#fff;flex-shrink:0}
+.sr-rule-title{font-family:var(--font-head);font-size:14px;font-weight:800;color:var(--dk);margin-bottom:3px}
+.sr-rule-text{font-size:12px;color:var(--mu);line-height:1.45}
+/* ── TIMELINE (rooster) ──────────────────────── */
+.sch-hero-card{margin:0 20px 20px;border-radius:22px;background:linear-gradient(135deg,rgba(var(--or-rgb),.18),rgba(var(--or-rgb),.06));border:1.5px solid rgba(var(--or-rgb),.3);padding:20px;position:relative;overflow:hidden;animation:fadeInUp .4s ease both .05s}
+.sch-hero-card::before{content:'';position:absolute;top:-40px;right:-40px;width:200px;height:200px;background:radial-gradient(circle,rgba(var(--or-rgb),.28) 0%,transparent 70%);pointer-events:none}
+.sch-hero-next-label{font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.1em;color:var(--or);opacity:.8;margin-bottom:4px;position:relative}
+.sch-hero-vak{font-family:var(--font-head);font-size:22px;font-weight:900;color:var(--dk);letter-spacing:-.3px;position:relative}
+.sch-hero-date{font-size:13px;color:var(--mu);margin-top:4px;position:relative}
+.sch-hero-countdown{display:flex;gap:8px;margin-top:14px;position:relative}
+.sch-cd-box{background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.15);border-radius:12px;padding:10px 12px;text-align:center;min-width:52px;backdrop-filter:blur(8px)}
+.sch-cd-val{font-family:var(--font-head);font-size:22px;font-weight:900;color:var(--dk);line-height:1}
+.sch-cd-unit{font-size:9px;text-transform:uppercase;letter-spacing:.6px;color:var(--mu);margin-top:2px;font-weight:700}
+.sch-timeline{padding:0 20px 32px;position:relative;animation:fadeInUp .4s ease both .15s}
+.sch-timeline::before{content:'';position:absolute;left:34px;top:0;bottom:0;width:2px;background:linear-gradient(to bottom,rgba(var(--or-rgb),.5),rgba(var(--or-rgb),.1));border-radius:2px}
+.sch-tl-item{display:flex;align-items:flex-start;gap:14px;margin-bottom:12px;position:relative}
+.sch-tl-dot{width:14px;height:14px;border-radius:50%;flex-shrink:0;margin-top:4px;margin-left:-6px;border:2.5px solid var(--bg);box-shadow:0 0 0 1.5px currentColor,0 0 10px rgba(var(--or-rgb),.4);position:relative;z-index:1}
+.sch-tl-dot.today{animation:pulseDot 2s infinite}
+.sch-tl-card{flex:1;background:var(--s);border:1px solid var(--bo);border-radius:14px;padding:12px 14px;transition:border-color .2s}
+.sch-tl-card.mine{border-color:rgba(var(--or-rgb),.4);background:rgba(var(--or-rgb),.04)}
+.sch-tl-vak{font-family:var(--font-head);font-size:14px;font-weight:800;color:var(--dk);margin-bottom:2px}
+.sch-tl-meta{font-size:11px;color:var(--mu);display:flex;gap:8px;flex-wrap:wrap}
+.sch-tl-badge{font-size:10px;font-weight:700;padding:2px 8px;border-radius:20px;background:rgba(var(--or-rgb),.12);color:var(--or)}
+/* ── AUTH FEATURES ───────────────────────────── */
+.auth-features{display:flex;flex-direction:column;gap:8px;padding:0 0 20px;animation:fadeInUp .4s ease both}
+.auth-feat{display:flex;align-items:center;gap:12px;background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.08);border-radius:14px;padding:12px 14px;backdrop-filter:blur(8px)}
+.auth-feat-icon{width:36px;height:36px;border-radius:10px;display:flex;align-items:center;justify-content:center;flex-shrink:0;font-size:16px}
+.auth-feat-text{flex:1}
+.auth-feat-title{font-size:13px;font-weight:700;color:var(--dk);line-height:1.2}
+.auth-feat-sub{font-size:11px;color:var(--mu);margin-top:2px}
+/* ── LEADERBOARD HERO ────────────────────────── */
+.lb-pg-hero{position:relative;overflow:hidden;background:linear-gradient(135deg,rgba(245,158,11,.15),rgba(245,158,11,.04));border-bottom:1px solid rgba(245,158,11,.2);padding:32px 20px 24px;text-align:center}
+.lb-pg-hero::before{content:'';position:absolute;top:-60px;left:50%;transform:translateX(-50%);width:320px;height:320px;background:radial-gradient(circle,rgba(245,158,11,.25) 0%,transparent 65%);pointer-events:none}
+.lb-pg-trophy{font-size:48px;margin-bottom:10px;position:relative;animation:fadeInScale .5s ease both;display:block}
+.lb-pg-title{font-family:var(--font-head);font-size:28px;font-weight:900;color:var(--dk);letter-spacing:-.5px;position:relative;animation:fadeInUp .4s ease both .05s}
+.lb-pg-sub{font-size:13px;color:var(--mu);margin-top:4px;position:relative;animation:fadeInUp .4s ease both .1s}
+.lb-pg-my-rank{display:inline-flex;align-items:center;gap:8px;background:rgba(245,158,11,.12);border:1px solid rgba(245,158,11,.3);border-radius:20px;padding:6px 14px;margin-top:12px;font-size:13px;font-weight:700;color:var(--dk);position:relative;animation:fadeInUp .4s ease both .15s}
+.lb-pg-my-rank-num{font-family:var(--font-head);font-size:17px;font-weight:900;color:#f59e0b}
 .adapt-pill{display:inline-flex;align-items:center;gap:4px;font-size:11px;background:rgba(255,255,255,.1);border-radius:20px;padding:2px 8px;color:rgba(255,255,255,.7);margin-left:6px;vertical-align:middle}
 /* ── HOME TAB NAV ────────────────────────────── */
 .bnav{position:sticky;top:58px;z-index:150;background:var(--bg);border-bottom:1px solid var(--bo);display:flex;align-items:stretch;box-shadow:0 2px 10px rgba(0,0,0,.07)}
@@ -3594,27 +3651,44 @@ html.dark .hsd-pill{background:var(--bg2);border-color:var(--bo2)}
     <button class="theme-btn" onclick="toggleDark()" title="Nachtmodus" style="margin-left:auto" id="theme-btn-info"><svg viewBox="0 0 24 24"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg></button>
   </div>
 </nav>
-<div class="w" style="padding-top:28px">
-  <h2 style="font-size:22px;margin-bottom:16px">Exameninformatie HAVO 2026</h2>
-  <div class="ibox"><div class="ihd" onclick="tog(this)"><h3>Tijdvakken</h3><span>▼</span></div>
-  <div class="ibd"><div class="ir"><span>1e tijdvak</span><strong>8 mei – 27 mei 2026</strong></div><div class="ir"><span>Normering (N-term)</span><strong>11 juni 2026 om 08:00</strong></div><div class="ir"><span>2e tijdvak (herkansing)</span><strong>16 – 23 juni 2026</strong></div><div class="ir"><span>Uitslag 2e tijdvak</span><strong>30 juni 2026</strong></div><div class="ir"><span>3e tijdvak</span><strong>augustus 2026</strong></div><div class="ir"><span>Aanmelden 2e tijdvak</span><strong>vóór 12 juni 2026</strong></div><p style="margin-top:8px">Exacte datums per vak: <strong>examenblad.nl</strong></p></div></div>
-  <div class="ibox"><div class="ihd" onclick="tog(this)"><h3>Slaagregels HAVO</h3><span>▼</span></div>
-  <div class="ibd"><p style="margin-bottom:8px"><strong>Alle 4 regels moeten tegelijk kloppen:</strong></p><ul><li><strong>Regel 1 — CE-gemiddelde:</strong> het onafgeronde gemiddelde van alle CE-cijfers moet ≥ 5,50 zijn (5,49 = gezakt)</li><li><strong>Regel 2 — Kernvakkenregel:</strong> voor NE, EN en WI (kernvakken) maximaal één 5 toegestaan. C&M zonder wiskunde: alleen NE + EN zijn kernvakken</li><li><strong>Regel 3 — Compensatie:</strong> geen eindcijfer lager dan 4. Bij één 4 of twee 5-en: gemiddelde van alle eindcijfers ≥ 6,0. Bij drie of meer onvoldoendes: gezakt.</li><li><strong>Regel 4 — LO:</strong> Lichamelijke Opvoeding moet voldoende of goed zijn</li></ul><p style="margin-top:10px"><strong>Cum laude:</strong> gemiddelde gemeenschappelijk + profieldeel + hoogste vrij-deel cijfer ≥ 8,0, en geen eindcijfer lager dan 6.</p></div></div>
-  <div class="ibox"><div class="ihd" onclick="tog(this)"><h3>Toegestane hulpmiddelen</h3><span>▼</span></div>
-  <div class="ibd"><p style="margin-bottom:8px"><strong>Standaard basispakket (alle examens):</strong></p><ul><li>Schrijfmateriaal, millimeterpapier, tekenpotlood</li><li>Kleurpotloden (blauw + rood), liniaal, passer, geodriehoek</li><li>Gum, nietmachine, eenvoudige rekenmachine (niet-grafisch)</li><li>Eendelig verklarend woordenboek Nederlands</li></ul><p style="margin-top:10px"><strong>Per vak extra:</strong></p><ul><li><strong>Wiskunde A/B:</strong> Grafische rekenmachine verplicht in examenstand. Toegestaan 2026: Casio fx-CG50, HP Prime G2, TI-84 Plus CE-T, TI-Nspire CX (non-CAS), NumWorks N0110+. Let op: Casio fx-9860GII is niet meer toegestaan!</li><li><strong>Biologie, Natuurkunde, Scheikunde:</strong> BINAS 7e editie OF ScienceData (niet beide). Geen stickers of bladwijzers.</li><li><strong>Moderne vreemde talen:</strong> Tweetalig woordenboek (doeltaal ↔ thuistaal). Engels mag ook eentalig EN-EN. Digitale woordenboeken niet toegestaan.</li><li><strong>Aardrijkskunde:</strong> Geen atlas meer toegestaan (gewijzigd in 2021).</li></ul></div></div>
-  <div class="ibox"><div class="ihd" onclick="tog(this)"><h3>Cijferberekening</h3><span>▼</span></div>
-  <div class="ibd"><p>Eindcijfer = gemiddelde van SE en CE (doorgaans 50/50). Beide afzonderlijk afgerond, dan gemiddeld, dan afgerond op geheel getal.</p><div class="ir"><span>Eindcijfer</span><strong>(SE + CE) ÷ 2</strong></div></div></div>
-  <div class="ibox"><div class="ihd" onclick="tog(this)"><h3>Praktische tips</h3><span>▼</span></div>
-  <div class="ibd"><ul><li><strong>Binas</strong> toegestaan bij SK en NA</li><li><strong>Grafische rekenmachine</strong> bij WI (deel 2)</li><li><strong>Woordenboek</strong> bij talen</li><li>Wees <strong>15 min</strong> voor aanvang aanwezig met geldig ID</li><li>Ziek? Meld vóór aanvang af → 2e tijdvak</li></ul></div></div>
-  <div class="ibox"><div class="ihd" onclick="tog(this)"><h3>Profielen HAVO</h3><span>▼</span></div>
-  <div class="ibd"><ul><li><strong>C&M:</strong> NE, EN, GS/AK, MA, WA/WB + keuzevakken</li><li><strong>E&M:</strong> NE, EN, EC, WA, MA + keuzevakken</li><li><strong>N&G:</strong> NE, EN, BI, SK/NA, WA/WB + keuzevakken</li><li><strong>N&T:</strong> NE, EN, NA, WB, SK/BI + keuzevakken</li></ul></div></div>
-  <!-- Ad: info pagina (rustmoment, browsen) -->
-  <div class="ad-wrapper" id="ad-info" style="margin-top:20px">
-    <span class="ad-label">Advertentie</span>
-    <div class="ad-slot ad-slot--banner">
-      <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-3580526892359138" data-ad-slot="0000000000" data-ad-format="auto" data-full-width-responsive="true"></ins>
-    </div>
+<div class="pg-hero">
+  <div class="pg-hero-glow"></div>
+  <div class="pg-hero-content">
+    <div class="pg-hero-icon">📋</div>
+    <div class="pg-hero-title" id="info-hero-title">Exameninformatie HAVO 2026</div>
+    <div class="pg-hero-sub">Alles wat je moet weten over je eindexamen</div>
   </div>
+</div>
+<div class="sr-rule-grid">
+  <div class="sr-rule-card" style="border-color:rgba(var(--or-rgb),.3);background:rgba(var(--or-rgb),.06)">
+    <div class="sr-rule-num" style="background:var(--or)">1</div>
+    <div><div class="sr-rule-title">CE-gemiddelde ≥ 5,50</div><div class="sr-rule-text">Het onafgeronde gemiddelde van alle CE-cijfers moet minstens 5,50 zijn. Een 5,49 is al gezakt.</div></div>
+  </div>
+  <div class="sr-rule-card" style="border-color:rgba(99,102,241,.3);background:rgba(99,102,241,.06)">
+    <div class="sr-rule-num" style="background:#6366f1">2</div>
+    <div><div class="sr-rule-title">Kernvakkenregel</div><div class="sr-rule-text">Voor NE, EN en WI maximaal één 5. Bij C&M zonder wiskunde: alleen NE + EN zijn kernvakken.</div></div>
+  </div>
+  <div class="sr-rule-card" style="border-color:rgba(16,185,129,.3);background:rgba(16,185,129,.06)">
+    <div class="sr-rule-num" style="background:#10b981">3</div>
+    <div><div class="sr-rule-title">Compensatieregel</div><div class="sr-rule-text">Geen eindcijfer lager dan 4. Bij één 4 of twee 5-en: gemiddelde ≥ 6,0. Drie of meer onvoldoendes = gezakt.</div></div>
+  </div>
+  <div class="sr-rule-card" style="border-color:rgba(239,68,68,.3);background:rgba(239,68,68,.06)">
+    <div class="sr-rule-num" style="background:#ef4444">4</div>
+    <div><div class="sr-rule-title">LO voldoende of goed</div><div class="sr-rule-text">Lichamelijke Opvoeding (schoolexamen) moet voldoende of goed zijn.</div></div>
+  </div>
+</div>
+<div class="w" style="padding-top:0;padding-bottom:24px">
+  <div class="ibox"><div class="ihd" onclick="tog(this)"><h3>📅 Tijdvakken</h3><span>▼</span></div>
+  <div class="ibd"><div class="ir"><span>1e tijdvak</span><strong>8 mei – 27 mei 2026</strong></div><div class="ir"><span>Normering (N-term)</span><strong>11 juni 2026 om 08:00</strong></div><div class="ir"><span>2e tijdvak (herkansing)</span><strong>16 – 23 juni 2026</strong></div><div class="ir"><span>Uitslag 2e tijdvak</span><strong>30 juni 2026</strong></div><div class="ir"><span>3e tijdvak</span><strong>augustus 2026</strong></div><div class="ir"><span>Aanmelden 2e tijdvak</span><strong>vóór 12 juni 2026</strong></div></div></div>
+  <div class="ibox"><div class="ihd" onclick="tog(this)"><h3>🧮 Cijferberekening</h3><span>▼</span></div>
+  <div class="ibd"><p>Eindcijfer = gemiddelde van SE en CE (doorgaans 50/50). Beide afzonderlijk afgerond, dan gemiddeld, dan afgerond op geheel getal.</p><div class="ir"><span>Eindcijfer</span><strong>(SE + CE) ÷ 2</strong></div></div></div>
+  <div class="ibox"><div class="ihd" onclick="tog(this)"><h3>🎒 Toegestane hulpmiddelen</h3><span>▼</span></div>
+  <div class="ibd"><p style="margin-bottom:8px"><strong>Standaard basispakket:</strong></p><ul><li>Schrijfmateriaal, millimeterpapier, tekenpotlood</li><li>Kleurpotloden (blauw + rood), liniaal, passer, geodriehoek</li><li>Gum, eenvoudige rekenmachine (niet-grafisch)</li><li>Eendelig verklarend woordenboek Nederlands</li></ul><p style="margin-top:10px"><strong>Per vak extra:</strong></p><ul><li><strong>Wiskunde A/B:</strong> Grafische rekenmachine (TI-84 CE-T, Casio fx-CG50, HP Prime G2, TI-Nspire CX non-CAS, NumWorks N0110+). Casio fx-9860GII niet meer toegestaan!</li><li><strong>Biologie, Natuurkunde, Scheikunde:</strong> BINAS 7e editie OF ScienceData</li><li><strong>Moderne vreemde talen:</strong> Tweetalig woordenboek</li></ul></div></div>
+  <div class="ibox"><div class="ihd" onclick="tog(this)"><h3>💡 Praktische tips</h3><span>▼</span></div>
+  <div class="ibd"><ul><li>Wees <strong>15 min</strong> voor aanvang aanwezig met geldig ID</li><li>Ziek? Meld vóór aanvang af → 2e tijdvak</li><li><strong>Cum laude:</strong> gemiddelde ≥ 8,0 en geen eindcijfer lager dan 6</li></ul></div></div>
+  <div class="ibox"><div class="ihd" onclick="tog(this)"><h3>📚 Profielen HAVO</h3><span>▼</span></div>
+  <div class="ibd"><ul><li><strong>C&M:</strong> NE, EN, GS/AK, MA, WA/WB + keuzevakken</li><li><strong>E&M:</strong> NE, EN, EC, WA, MA + keuzevakken</li><li><strong>N&G:</strong> NE, EN, BI, SK/NA, WA/WB + keuzevakken</li><li><strong>N&T:</strong> NE, EN, NA, WB, SK/BI + keuzevakken</li></ul></div></div>
+  <div class="ad-wrapper" id="ad-info" style="margin-top:20px"><span class="ad-label">Advertentie</span><div class="ad-slot ad-slot--banner"><ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-3580526892359138" data-ad-slot="0000000000" data-ad-format="auto" data-full-width-responsive="true"></ins></div></div>
 </div>
 </div>
 
@@ -3945,10 +4019,15 @@ html.dark .hsd-pill{background:var(--bg2);border-color:var(--bo2)}
 <div id="sc-leaderboard" class="sc">
 <nav class="nav"><div class="nav-inner"><div class="logo" onclick="show('sc-home')"><img src="/icon-192.png" alt="Slagio" style="width:26px;height:26px;border-radius:7px;object-fit:cover;flex-shrink:0">Slagio</div><button class="bk" onclick="show('sc-home')">← Terug</button><button class="theme-btn" onclick="toggleDark()" title="Nachtmodus" style="margin-left:auto"><svg viewBox="0 0 24 24"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg></button></div></nav>
 <div class="lb-wrap">
-  <div class="lb-header">
-    <h2>🏆 Top 10 van Nederland</h2>
-    <p id="lb-subtitle">Snelle quiz · Ranglijst op score (nauwkeurigheid + snelheid)</p>
-    <p id="lb-niveau-badge" style="margin-top:6px;font-size:12px;font-weight:700;opacity:.6;letter-spacing:.5px;text-transform:uppercase"></p>
+  <div class="lb-pg-hero">
+    <span class="lb-pg-trophy">🏆</span>
+    <div class="lb-pg-title">Top 10 van Nederland</div>
+    <div class="lb-pg-sub" id="lb-subtitle">Snelle quiz · Ranglijst op score (nauwkeurigheid + snelheid)</div>
+    <div id="lb-niveau-badge" style="position:relative;animation:fadeInUp .4s ease both .2s;font-size:11px;font-weight:700;opacity:.6;letter-spacing:.5px;text-transform:uppercase;margin-top:6px"></div>
+    <div class="lb-pg-my-rank" id="lb-pg-my-rank" style="display:none">
+      <span>Jouw positie</span>
+      <span class="lb-pg-my-rank-num" id="lb-pg-my-rank-num">#—</span>
+    </div>
   </div>
   <!-- Scoring uitleg -->
   <div class="lb-score-info" id="lb-score-info">
@@ -3998,13 +4077,21 @@ html.dark .hsd-pill{background:var(--bg2);border-color:var(--bo2)}
 <!-- SCHEDULE -->
 <div id="sc-schedule" class="sc">
 <nav class="nav"><div class="nav-inner"><div class="logo" onclick="show('sc-home')"><img src="/icon-192.png" alt="Slagio" style="width:26px;height:26px;border-radius:7px;object-fit:cover;flex-shrink:0">Slagio</div><button class="bk" onclick="show('sc-home')">← Terug</button><button class="theme-btn" onclick="toggleDark()" title="Nachtmodus" style="margin-left:auto"><svg viewBox="0 0 24 24"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg></button></div></nav>
-<div class="w" style="padding-top:24px">
-  <h2 style="font-size:22px;margin-bottom:6px" id="sch-header">Examenrooster HAVO 2026</h2>
-  <p style="font-size:13px;color:var(--mu);margin-bottom:18px">1e tijdvak: 8–27 mei · Normering: 11 juni 08:00 · 2e tijdvak: 16–23 juni</p>
-  <div class="sch-filter">
-    <label><input type="checkbox" id="sch-filter-mine" class="sch-check" onchange="renderSchedule()"> Alleen mijn vakken</label>
+<div id="sch-next-hero" class="sch-hero-card" style="margin-top:20px">
+  <div class="sch-hero-next-label">⚡ Eerstvolgende examen</div>
+  <div class="sch-hero-vak" id="sch-next-vak">Laden…</div>
+  <div class="sch-hero-date" id="sch-next-date"></div>
+  <div class="sch-hero-countdown" id="sch-next-cd"></div>
+</div>
+<div class="w" style="padding-top:0">
+  <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:16px;animation:fadeInUp .4s ease both .1s">
+    <div>
+      <div style="font-family:var(--font-head);font-size:17px;font-weight:800;color:var(--dk)" id="sch-header">Examenrooster HAVO 2026</div>
+      <div style="font-size:11px;color:var(--mu);margin-top:2px">1e tijdvak: 8–27 mei · 2e tijdvak: 16–23 juni</div>
+    </div>
+    <label style="display:flex;align-items:center;gap:6px;font-size:12px;font-weight:600;color:var(--mu);cursor:pointer"><input type="checkbox" id="sch-filter-mine" class="sch-check" onchange="renderSchedule()"> Mijn vakken</label>
   </div>
-  <div id="schedule-list" class="schedule-list"></div>
+  <div id="schedule-list" class="sch-timeline"></div>
   <!-- Ad: rooster pagina (rustmoment) -->
   <div class="ad-wrapper" id="ad-schedule" style="margin-top:20px">
     <span class="ad-label">Advertentie</span>
@@ -4133,6 +4220,20 @@ html.dark .hsd-pill{background:var(--bg2);border-color:var(--bo2)}
 <div class="auth-wrap">
   <div class="auth-logo"><span class="logo-dot"></span><h1>Slagio</h1></div>
   <p class="auth-value-prop">Bewaar je streak, voortgang en cijfers — ook op andere apparaten.</p>
+  <div class="auth-features">
+    <div class="auth-feat">
+      <div class="auth-feat-icon" style="background:linear-gradient(135deg,rgba(var(--or-rgb),.2),rgba(var(--or-rgb),.08))">☁️</div>
+      <div class="auth-feat-text"><div class="auth-feat-title">Cloud-synchronisatie</div><div class="auth-feat-sub">Je voortgang, streak en XP automatisch opgeslagen op elk apparaat</div></div>
+    </div>
+    <div class="auth-feat">
+      <div class="auth-feat-icon" style="background:linear-gradient(135deg,rgba(245,158,11,.2),rgba(245,158,11,.08))">🏆</div>
+      <div class="auth-feat-text"><div class="auth-feat-title">Leaderboard</div><div class="auth-feat-sub">Compete met andere leerlingen en zie jouw rank per vak</div></div>
+    </div>
+    <div class="auth-feat">
+      <div class="auth-feat-icon" style="background:linear-gradient(135deg,rgba(236,72,153,.2),rgba(236,72,153,.08))">👥</div>
+      <div class="auth-feat-text"><div class="auth-feat-title">Groepen & uitdagingen</div><div class="auth-feat-sub">Maak een groep aan met je klas en daag vrienden uit</div></div>
+    </div>
+  </div>
   <div class="auth-card">
     <div class="auth-tabs">
       <button class="auth-tab active" id="auth-tab-login" onclick="switchAuthTab('login')">Inloggen</button>
@@ -12858,7 +12959,39 @@ const EXAM_SCHEDULE=[
 ];
 function getMijnVakken(){try{const d=JSON.parse(localStorage.getItem('examenapp_'+lvlCol('mijnvakken'))||'[]');return Array.isArray(d)?d:(d.list||[]);}catch(e){return [];}}
 function setMijnVakken(arr){cloudSet(lvlCol('mijnvakken'),{list:arr});}
+function renderScheduleHero(){
+  const heroCard=document.getElementById('sch-next-hero');
+  const vakEl=document.getElementById('sch-next-vak');
+  const dateEl=document.getElementById('sch-next-date');
+  const cdEl=document.getElementById('sch-next-cd');
+  if(!heroCard||!vakEl)return;
+  const allVakken=APP_LEVEL==='vwo'?(typeof VAKKEN_VWO!=='undefined'?VAKKEN_VWO:[]):(typeof VAKKEN!=='undefined'?VAKKEN:[]);
+  const now=new Date();
+  const upcoming=allVakken
+    .filter(v=>v.exDatum)
+    .map(v=>({...v,d:new Date(v.exDatum)}))
+    .filter(v=>v.d>=now)
+    .sort((a,b)=>a.d-b.d);
+  if(!upcoming.length){vakEl.textContent='Geen examens gepland';return;}
+  const next=upcoming[0];
+  vakEl.textContent=next.naam;
+  const opts={weekday:'long',day:'numeric',month:'long'};
+  dateEl.textContent=(next.exTijd?next.exTijd+' · ':'')+next.d.toLocaleDateString('nl-NL',opts);
+  function tickHero(){
+    const diff=next.d-new Date();
+    if(diff<=0){cdEl.innerHTML='<span style="color:var(--or);font-weight:700">Vandaag!</span>';return;}
+    const days=Math.floor(diff/86400000);
+    const hours=Math.floor((diff%86400000)/3600000);
+    const mins=Math.floor((diff%3600000)/60000);
+    const secs=Math.floor((diff%60000)/1000);
+    cdEl.innerHTML=`<div class="sch-cd-box"><div class="sch-cd-val">${days}</div><div class="sch-cd-unit">dagen</div></div><div class="sch-cd-box"><div class="sch-cd-val">${hours}</div><div class="sch-cd-unit">uren</div></div><div class="sch-cd-box"><div class="sch-cd-val">${mins}</div><div class="sch-cd-unit">min</div></div><div class="sch-cd-box"><div class="sch-cd-val">${secs}</div><div class="sch-cd-unit">sec</div></div>`;
+  }
+  tickHero();
+  if(window._schedHeroTimer)clearInterval(window._schedHeroTimer);
+  window._schedHeroTimer=setInterval(tickHero,1000);
+}
 function renderSchedule(){
+  renderScheduleHero();
   const list=document.getElementById('schedule-list');
   const onlyMine=document.getElementById('sch-filter-mine').checked;
   const mijn=getMijnVakken();
