@@ -505,7 +505,6 @@ h1,h2,h3,h4{font-family:var(--font-head);line-height:1.2;letter-spacing:-.3px}
 .hnav{position:sticky;top:0;z-index:200;background:rgba(var(--bg-rgb,255,255,255),.82);backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px);border-bottom:1px solid var(--bo);transition:background .3s}
 .dark .hnav{background:rgba(10,11,18,.82)}
 .hnav-inner{max-width:820px;margin:0 auto;padding:0 20px;height:58px;display:flex;align-items:center;justify-content:space-between;gap:12px}
-.hnav-left{display:flex;align-items:center;gap:6px}
 .hnav-logo{display:flex;align-items:center;gap:9px;cursor:pointer;user-select:none}
 .hnav-wordmark{font-family:var(--font-head);font-size:17px;font-weight:800;color:var(--dk);letter-spacing:-.3px}
 .hnav-chip{font-size:11px;font-weight:700;color:var(--or);background:rgba(var(--or-rgb),.12);border:1px solid rgba(var(--or-rgb),.25);border-radius:20px;padding:3px 10px;letter-spacing:.2px}
@@ -1327,177 +1326,50 @@ html.dark .qb{background:#2e3550}
 .ar-weak-q{flex:1;color:var(--dk);line-height:1.4;font-size:12px}
 .ar-weak-pct{white-space:nowrap;font-weight:700;color:#ef4444;font-size:12px}
 .ar-reset-btn{margin-top:12px;font-size:11px;color:var(--mu);background:none;border:1px solid var(--bo);border-radius:6px;padding:4px 10px;cursor:pointer;font-family:var(--font)}
-/* ── CHALLENGE INTRO ─────────────────────────── */
-.chal-intro-wrap{max-width:420px;margin:0 auto;padding:12px 0 32px}
-.chal-challenger-avatar{width:72px;height:72px;border-radius:50%;background:linear-gradient(135deg,var(--or),#f59e0b);display:flex;align-items:center;justify-content:center;font-family:var(--font-head);font-size:28px;font-weight:900;color:#fff;margin:0 auto 12px;box-shadow:0 0 0 4px rgba(var(--or-rgb),.2),0 8px 24px rgba(var(--or-rgb),.35)}
-.chal-challenger-name{font-family:var(--font-head);font-size:24px;font-weight:900;color:var(--dk);text-align:center;margin-bottom:3px}
-.chal-challenger-sub{font-size:13px;color:var(--mu);text-align:center;margin-bottom:20px}
-.chal-score-box{background:linear-gradient(135deg,rgba(var(--or-rgb),.15),rgba(var(--or-rgb),.05));border:1.5px solid rgba(var(--or-rgb),.3);border-radius:20px;padding:20px 24px;margin-bottom:20px;text-align:center;position:relative;overflow:hidden}
-.chal-score-box::before{content:'';position:absolute;top:-40px;right:-40px;width:160px;height:160px;background:radial-gradient(circle,rgba(var(--or-rgb),.25) 0%,transparent 70%);pointer-events:none}
-.chal-score-lbl{font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.1em;color:var(--mu);margin-bottom:6px}
-.chal-score-num{font-family:var(--font-head);font-size:56px;font-weight:900;color:var(--or);line-height:1;letter-spacing:-2px}
-.chal-score-max{font-size:16px;color:var(--mu);font-weight:600}
-.chal-vs-badge{display:inline-flex;align-items:center;gap:6px;background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.12);border-radius:20px;padding:5px 14px;font-size:12px;font-weight:700;color:var(--mu);text-transform:uppercase;letter-spacing:.05em;margin-bottom:20px}
-.chal-accept-btn{background:linear-gradient(135deg,var(--or),#f97316);color:#fff;border:none;border-radius:16px;padding:18px;font-family:var(--font-head);font-size:17px;font-weight:800;cursor:pointer;width:100%;margin-bottom:10px;box-shadow:0 6px 20px rgba(var(--or-rgb),.4);transition:transform .15s,box-shadow .15s}
-.chal-accept-btn:active{transform:scale(.98);box-shadow:0 3px 12px rgba(var(--or-rgb),.3)}
-.chal-decline-btn{display:block;width:100%;background:none;border:none;color:var(--mu);font-size:13px;cursor:pointer;padding:8px;text-align:center}
-/* Challenge result */
-.chal-vs-card{background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.1);border-radius:18px;padding:20px 16px;margin:12px 0;display:flex;align-items:center}
+.chal-intro-card{background:linear-gradient(135deg,rgba(var(--or-rgb),.12),rgba(var(--or-rgb),.06));border:1.5px solid rgba(var(--or-rgb),.35);border-radius:20px;padding:24px 20px;margin:16px 0;text-align:center}
+.chal-intro-icon{font-size:40px;margin-bottom:10px}
+.chal-intro-name{font-family:var(--font-head);font-size:22px;font-weight:900;color:var(--dk);margin-bottom:4px}
+.chal-intro-sub{font-size:13px;color:var(--mu);margin-bottom:16px}
+.chal-intro-score{font-family:var(--font-head);font-size:42px;font-weight:900;color:var(--or);line-height:1}
+.chal-intro-max{font-size:14px;color:var(--mu);margin-bottom:20px}
+.chal-accept-btn{background:var(--or);color:#fff;border:none;border-radius:14px;padding:16px 32px;font-family:var(--font-head);font-size:17px;font-weight:800;cursor:pointer;width:100%;margin-bottom:10px}
+.chal-decline-btn{background:none;border:none;color:var(--mu);font-size:13px;cursor:pointer;padding:8px}
+.chal-vs-card{background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.1);border-radius:16px;padding:16px;margin:12px 0;display:flex;align-items:center;gap:0}
 .chal-vs-side{flex:1;text-align:center}
-.chal-vs-label{font-size:10px;color:var(--mu);font-weight:700;text-transform:uppercase;letter-spacing:.08em;margin-bottom:6px}
-.chal-vs-score{font-family:var(--font-head);font-size:36px;font-weight:900;line-height:1}
+.chal-vs-label{font-size:11px;color:var(--mu);font-weight:600;text-transform:uppercase;letter-spacing:.05em;margin-bottom:4px}
+.chal-vs-score{font-family:var(--font-head);font-size:32px;font-weight:900}
 .chal-vs-score.win{color:#22c55e}
 .chal-vs-score.lose{color:#ef4444}
 .chal-vs-score.tie{color:var(--or)}
-.chal-vs-divider{font-size:13px;font-weight:800;color:var(--mu);padding:0 12px;letter-spacing:.05em}
-.chal-result-banner{font-family:var(--font-head);font-size:17px;font-weight:900;text-align:center;padding:12px 16px;border-radius:14px;margin-bottom:10px;letter-spacing:-.2px}
-.chal-result-banner.win{background:linear-gradient(135deg,rgba(34,197,94,.18),rgba(34,197,94,.08));border:1px solid rgba(34,197,94,.3);color:#22c55e}
-.chal-result-banner.lose{background:rgba(239,68,68,.08);border:1px solid rgba(239,68,68,.2);color:#ef4444}
-.chal-result-banner.tie{background:rgba(var(--or-rgb),.1);border:1px solid rgba(var(--or-rgb),.25);color:var(--or)}
-.chal-daag-btn{background:rgba(var(--or-rgb),.1);border:1.5px solid rgba(var(--or-rgb),.3);color:var(--or);border-radius:14px;padding:14px 16px;font-family:var(--font-head);font-size:14px;font-weight:800;cursor:pointer;width:100%;margin-top:10px;transition:background .15s}
-.chal-daag-btn:hover{background:rgba(var(--or-rgb),.18)}
-/* ── GROEPSLEADERBOARD ───────────────────────── */
-.grp-hero{background:linear-gradient(135deg,rgba(var(--or-rgb),.14) 0%,rgba(var(--or-rgb),.04) 100%);border:1.5px solid rgba(var(--or-rgb),.25);border-radius:22px;padding:24px 20px;margin-bottom:16px;position:relative;overflow:hidden}
-.grp-hero::before{content:'';position:absolute;top:-60px;right:-60px;width:220px;height:220px;background:radial-gradient(circle,rgba(var(--or-rgb),.2) 0%,transparent 70%);pointer-events:none}
-.grp-hero-name{font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.1em;color:rgba(var(--or-rgb),1);margin-bottom:4px;opacity:.8}
-.grp-code{font-family:var(--font-head);font-size:38px;font-weight:900;color:var(--dk);letter-spacing:6px;line-height:1;margin-bottom:6px}
-.grp-members-count{font-size:13px;color:var(--mu);margin-bottom:16px}
-.grp-hero-actions{display:flex;gap:8px}
-.grp-copy-btn{flex:1;background:var(--or);color:#fff;border:none;border-radius:12px;padding:11px;font-size:13px;font-weight:700;cursor:pointer;font-family:var(--font);transition:background .15s}
-.grp-copy-btn:hover{background:#d14f09}
-.grp-share-btn{flex:1;background:rgba(255,255,255,.08);color:var(--dk);border:1px solid var(--bo);border-radius:12px;padding:11px;font-size:13px;font-weight:600;cursor:pointer;font-family:var(--font)}
-.grp-leave-btn{background:none;border:1px solid var(--bo);color:var(--mu);border-radius:10px;padding:8px 14px;font-size:12px;cursor:pointer;font-family:var(--font);margin-top:10px;width:100%}
-.grp-scoreboard{background:var(--s);border:1.5px solid var(--bo);border-radius:18px;padding:16px;margin-bottom:12px}
-.grp-scoreboard-title{font-family:var(--font-head);font-size:15px;font-weight:800;color:var(--dk);margin-bottom:14px;display:flex;align-items:center;gap:8px}
-.grp-member-row{display:flex;align-items:center;gap:12px;padding:10px 0;border-bottom:1px solid rgba(255,255,255,.06)}
+.chal-vs-divider{font-size:20px;font-weight:900;color:var(--mu);padding:0 12px}
+.chal-result-banner{font-family:var(--font-head);font-size:18px;font-weight:900;text-align:center;padding:10px;border-radius:10px;margin-bottom:8px}
+.chal-result-banner.win{background:rgba(34,197,94,.15);color:#22c55e}
+.chal-result-banner.lose{background:rgba(239,68,68,.1);color:#ef4444}
+.chal-result-banner.tie{background:rgba(var(--or-rgb),.12);color:var(--or)}
+.chal-daag-btn{background:rgba(var(--or-rgb),.12);border:1.5px solid rgba(var(--or-rgb),.3);color:var(--or);border-radius:12px;padding:12px 16px;font-family:var(--font-head);font-size:14px;font-weight:700;cursor:pointer;width:100%;margin-top:8px}
+.grp-section{margin:16px 0}
+.grp-card{background:var(--s);border:1.5px solid var(--bo);border-radius:16px;padding:16px;margin-bottom:12px}
+.grp-card-top{display:flex;align-items:center;justify-content:space-between;margin-bottom:10px}
+.grp-code{font-family:var(--font-head);font-size:28px;font-weight:900;color:var(--or);letter-spacing:3px}
+.grp-name{font-size:13px;color:var(--mu);font-weight:600}
+.grp-members-count{font-size:12px;color:var(--mu)}
+.grp-copy-btn{background:rgba(var(--or-rgb),.1);border:1px solid rgba(var(--or-rgb),.3);color:var(--or);border-radius:8px;padding:6px 12px;font-size:12px;font-weight:700;cursor:pointer;font-family:var(--font)}
+.grp-leave-btn{background:none;border:1px solid var(--bo);color:var(--mu);border-radius:8px;padding:6px 12px;font-size:11px;cursor:pointer;font-family:var(--font)}
+.grp-input{width:100%;padding:12px 14px;background:var(--bg2);border:1.5px solid var(--bo);border-radius:12px;color:var(--dk);font-size:15px;font-family:var(--font);margin-bottom:10px;text-transform:uppercase;letter-spacing:2px}
+.grp-input::placeholder{text-transform:none;letter-spacing:0}
+.grp-create-input{text-transform:none;letter-spacing:0}
+.grp-join-btn{background:var(--or);color:#fff;border:none;border-radius:12px;padding:13px;font-family:var(--font-head);font-size:15px;font-weight:800;cursor:pointer;width:100%;margin-bottom:8px}
+.grp-create-btn{background:rgba(var(--or-rgb),.1);border:1.5px solid rgba(var(--or-rgb),.3);color:var(--or);border-radius:12px;padding:13px;font-family:var(--font-head);font-size:15px;font-weight:800;cursor:pointer;width:100%}
+.lb-toggle-row{display:flex;gap:8px;margin-bottom:14px}
+.lb-toggle-btn{flex:1;padding:9px;border-radius:10px;border:1.5px solid var(--bo);background:none;color:var(--mu);font-family:var(--font-head);font-size:13px;font-weight:700;cursor:pointer;transition:all .15s}
+.lb-toggle-btn.active{background:var(--or);border-color:var(--or);color:#fff}
+.grp-member-row{display:flex;align-items:center;gap:10px;padding:8px 0;border-bottom:1px solid var(--bo)}
 .grp-member-row:last-child{border:none}
-.grp-member-row.is-me{background:rgba(var(--or-rgb),.07);border-radius:12px;padding:10px 10px;margin:0 -10px}
-.grp-member-avatar{width:36px;height:36px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-family:var(--font-head);font-size:14px;font-weight:900;color:#fff;flex-shrink:0}
-.grp-member-info{flex:1;min-width:0}
-.grp-member-name{font-size:14px;font-weight:700;color:var(--dk);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
-.grp-member-sub{font-size:11px;color:var(--mu)}
-.grp-member-score{font-family:var(--font-head);font-size:17px;font-weight:900;color:var(--or)}
-.grp-rank-badge{width:28px;height:28px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:14px;flex-shrink:0}
-.grp-empty{text-align:center;padding:32px 16px;color:var(--mu);font-size:14px;line-height:1.6}
-.grp-join-section{background:var(--s);border:1.5px solid var(--bo);border-radius:18px;padding:20px;margin-bottom:12px}
-.grp-join-title{font-family:var(--font-head);font-size:16px;font-weight:800;color:var(--dk);margin-bottom:4px}
-.grp-join-sub{font-size:13px;color:var(--mu);margin-bottom:14px}
-.grp-input{width:100%;padding:13px 14px;background:var(--bg);border:1.5px solid var(--bo);border-radius:12px;color:var(--dk);font-size:18px;font-family:var(--font-head);font-weight:700;margin-bottom:10px;text-transform:uppercase;letter-spacing:4px;text-align:center}
-.grp-input:focus{outline:none;border-color:rgba(var(--or-rgb),.5)}
-.grp-input::placeholder{text-transform:none;letter-spacing:0;font-size:14px;font-weight:400;font-family:var(--font)}
-.grp-create-input{text-transform:none;letter-spacing:0;font-size:15px;font-weight:500;text-align:left}
-.grp-join-btn{background:var(--or);color:#fff;border:none;border-radius:13px;padding:14px;font-family:var(--font-head);font-size:15px;font-weight:800;cursor:pointer;width:100%;margin-bottom:8px;box-shadow:0 4px 14px rgba(var(--or-rgb),.3)}
-.grp-create-btn{background:rgba(var(--or-rgb),.1);border:1.5px solid rgba(var(--or-rgb),.3);color:var(--or);border-radius:13px;padding:14px;font-family:var(--font-head);font-size:15px;font-weight:800;cursor:pointer;width:100%}
-.grp-divider{display:flex;align-items:center;gap:12px;color:var(--mu);font-size:12px;margin:16px 0}
-.grp-divider::before,.grp-divider::after{content:'';flex:1;height:1px;background:var(--bo)}
-.grp-no-login{background:rgba(239,68,68,.08);border:1px solid rgba(239,68,68,.2);border-radius:12px;padding:12px 14px;font-size:13px;color:#ef4444;text-align:center;margin-top:8px}
-/* ── PAGE HEROES ─────────────────────────────── */
-@keyframes fadeInUp{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:translateY(0)}}
-@keyframes fadeInScale{from{opacity:0;transform:scale(.92)}to{opacity:1;transform:scale(1)}}
-@keyframes pulseDot{0%,100%{opacity:1;transform:scale(1)}50%{opacity:.6;transform:scale(1.2)}}
-.pg-hero{position:relative;overflow:hidden;padding:36px 20px 32px;margin-bottom:0;text-align:center}
-.pg-hero-glow{position:absolute;top:-60px;left:50%;transform:translateX(-50%);width:360px;height:360px;border-radius:50%;background:radial-gradient(circle,rgba(var(--or-rgb),.22) 0%,transparent 70%);pointer-events:none;z-index:0}
-.pg-hero-content{position:relative;z-index:1}
-.pg-hero-icon{width:60px;height:60px;border-radius:18px;display:flex;align-items:center;justify-content:center;margin:0 auto 16px;font-size:26px;background:linear-gradient(135deg,rgba(var(--or-rgb),.2),rgba(var(--or-rgb),.08));border:1.5px solid rgba(var(--or-rgb),.3);backdrop-filter:blur(12px);animation:fadeInScale .5s ease both}
-.pg-hero-title{font-family:var(--font-head);font-size:26px;font-weight:900;color:var(--dk);letter-spacing:-.5px;margin-bottom:6px;animation:fadeInUp .45s ease both .05s}
-.pg-hero-sub{font-size:13px;color:var(--mu);line-height:1.5;max-width:340px;margin:0 auto;animation:fadeInUp .45s ease both .1s}
-.pg-stat-strip{display:flex;gap:10px;padding:0 20px 24px;animation:fadeInUp .45s ease both .15s}
-.pg-stat{flex:1;background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.1);border-radius:14px;padding:12px 8px;text-align:center;backdrop-filter:blur(8px)}
-.dark .pg-stat{background:rgba(255,255,255,.04)}
-.pg-stat-val{font-family:var(--font-head);font-size:20px;font-weight:900;color:var(--dk);line-height:1}
-.pg-stat-lbl{font-size:10px;color:var(--mu);font-weight:600;text-transform:uppercase;letter-spacing:.05em;margin-top:3px}
-/* ── SLAAGREGELS HERO ────────────────────────── */
-.sr-rule-grid{display:flex;flex-direction:column;gap:10px;padding:0 20px 20px;animation:fadeInUp .4s ease both .2s}
-.sr-rule-card{border-radius:16px;padding:16px;display:flex;align-items:flex-start;gap:14px;border:1.5px solid;position:relative;overflow:hidden}
-.sr-rule-card::before{content:'';position:absolute;top:-30px;right:-30px;width:120px;height:120px;border-radius:50%;background:radial-gradient(circle,currentColor 0%,transparent 70%);opacity:.08;pointer-events:none}
-.sr-rule-num{width:32px;height:32px;border-radius:10px;display:flex;align-items:center;justify-content:center;font-family:var(--font-head);font-size:14px;font-weight:900;color:#fff;flex-shrink:0}
-.sr-rule-title{font-family:var(--font-head);font-size:14px;font-weight:800;color:var(--dk);margin-bottom:3px}
-.sr-rule-text{font-size:12px;color:var(--mu);line-height:1.45}
-/* ── TIMELINE (rooster) ──────────────────────── */
-.sch-hero-card{margin:0 20px 20px;border-radius:22px;background:linear-gradient(135deg,rgba(var(--or-rgb),.18),rgba(var(--or-rgb),.06));border:1.5px solid rgba(var(--or-rgb),.3);padding:20px;position:relative;overflow:hidden;animation:fadeInUp .4s ease both .05s}
-.sch-hero-card::before{content:'';position:absolute;top:-40px;right:-40px;width:200px;height:200px;background:radial-gradient(circle,rgba(var(--or-rgb),.28) 0%,transparent 70%);pointer-events:none}
-.sch-hero-next-label{font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.1em;color:var(--or);opacity:.8;margin-bottom:4px;position:relative}
-.sch-hero-vak{font-family:var(--font-head);font-size:22px;font-weight:900;color:var(--dk);letter-spacing:-.3px;position:relative}
-.sch-hero-date{font-size:13px;color:var(--mu);margin-top:4px;position:relative}
-.sch-hero-countdown{display:flex;gap:8px;margin-top:14px;position:relative}
-.sch-cd-box{background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.15);border-radius:12px;padding:10px 12px;text-align:center;min-width:52px;backdrop-filter:blur(8px)}
-.sch-cd-val{font-family:var(--font-head);font-size:22px;font-weight:900;color:var(--dk);line-height:1}
-.sch-cd-unit{font-size:9px;text-transform:uppercase;letter-spacing:.6px;color:var(--mu);margin-top:2px;font-weight:700}
-.sch-timeline{padding:0 20px 32px;position:relative;animation:fadeInUp .4s ease both .15s}
-.sch-timeline::before{content:'';position:absolute;left:34px;top:0;bottom:0;width:2px;background:linear-gradient(to bottom,rgba(var(--or-rgb),.5),rgba(var(--or-rgb),.1));border-radius:2px}
-.sch-tl-item{display:flex;align-items:flex-start;gap:14px;margin-bottom:12px;position:relative}
-.sch-tl-dot{width:14px;height:14px;border-radius:50%;flex-shrink:0;margin-top:4px;margin-left:-6px;border:2.5px solid var(--bg);box-shadow:0 0 0 1.5px currentColor,0 0 10px rgba(var(--or-rgb),.4);position:relative;z-index:1}
-.sch-tl-dot.today{animation:pulseDot 2s infinite}
-.sch-tl-card{flex:1;background:var(--s);border:1px solid var(--bo);border-radius:14px;padding:12px 14px;transition:border-color .2s}
-.sch-tl-card.mine{border-color:rgba(var(--or-rgb),.4);background:rgba(var(--or-rgb),.04)}
-.sch-tl-vak{font-family:var(--font-head);font-size:14px;font-weight:800;color:var(--dk);margin-bottom:2px}
-.sch-tl-meta{font-size:11px;color:var(--mu);display:flex;gap:8px;flex-wrap:wrap}
-.sch-tl-badge{font-size:10px;font-weight:700;padding:2px 8px;border-radius:20px;background:rgba(var(--or-rgb),.12);color:var(--or)}
-/* ── AUTH FEATURES ───────────────────────────── */
-.auth-features{display:flex;flex-direction:column;gap:8px;padding:0 0 20px;animation:fadeInUp .4s ease both}
-.auth-feat{display:flex;align-items:center;gap:12px;background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.08);border-radius:14px;padding:12px 14px;backdrop-filter:blur(8px)}
-.auth-feat-icon{width:36px;height:36px;border-radius:10px;display:flex;align-items:center;justify-content:center;flex-shrink:0;font-size:16px}
-.auth-feat-text{flex:1}
-.auth-feat-title{font-size:13px;font-weight:700;color:var(--dk);line-height:1.2}
-.auth-feat-sub{font-size:11px;color:var(--mu);margin-top:2px}
-/* ── LEADERBOARD HERO ────────────────────────── */
-.lb-pg-hero{position:relative;overflow:hidden;background:linear-gradient(135deg,rgba(245,158,11,.15),rgba(245,158,11,.04));border-bottom:1px solid rgba(245,158,11,.2);padding:32px 20px 24px;text-align:center}
-.lb-pg-hero::before{content:'';position:absolute;top:-60px;left:50%;transform:translateX(-50%);width:320px;height:320px;background:radial-gradient(circle,rgba(245,158,11,.25) 0%,transparent 65%);pointer-events:none}
-.lb-pg-trophy{font-size:48px;margin-bottom:10px;position:relative;animation:fadeInScale .5s ease both;display:block}
-.lb-pg-title{font-family:var(--font-head);font-size:28px;font-weight:900;color:var(--dk);letter-spacing:-.5px;position:relative;animation:fadeInUp .4s ease both .05s}
-.lb-pg-sub{font-size:13px;color:var(--mu);margin-top:4px;position:relative;animation:fadeInUp .4s ease both .1s}
-.lb-pg-my-rank{display:inline-flex;align-items:center;gap:8px;background:rgba(245,158,11,.12);border:1px solid rgba(245,158,11,.3);border-radius:20px;padding:6px 14px;margin-top:12px;font-size:13px;font-weight:700;color:var(--dk);position:relative;animation:fadeInUp .4s ease both .15s}
-.lb-pg-my-rank-num{font-family:var(--font-head);font-size:17px;font-weight:900;color:#f59e0b}
+.grp-member-rank{font-family:var(--font-head);font-size:16px;font-weight:900;width:28px;text-align:center;color:var(--mu)}
+.grp-member-name{flex:1;font-size:14px;font-weight:600;color:var(--dk)}
+.grp-member-score{font-family:var(--font-head);font-size:15px;font-weight:800;color:var(--or)}
+.grp-empty{text-align:center;padding:32px 16px;color:var(--mu);font-size:14px}
 .adapt-pill{display:inline-flex;align-items:center;gap:4px;font-size:11px;background:rgba(255,255,255,.1);border-radius:20px;padding:2px 8px;color:rgba(255,255,255,.7);margin-left:6px;vertical-align:middle}
-/* ── HOME TAB NAV ────────────────────────────── */
-.bnav{position:sticky;top:58px;z-index:150;background:var(--bg);border-bottom:1px solid var(--bo);display:flex;align-items:stretch;box-shadow:0 2px 10px rgba(0,0,0,.07)}
-.dark .bnav{background:var(--bg)}
-.bnav-tab{flex:1;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:3px;padding:10px 4px;background:none;border:none;border-bottom:2.5px solid transparent;cursor:pointer;color:var(--mu);font-size:10px;font-family:var(--font);font-weight:700;transition:color .15s,border-color .15s;-webkit-tap-highlight-color:transparent;letter-spacing:.2px}
-.bnav-tab svg{width:20px;height:20px;stroke:currentColor;fill:none;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round;transition:stroke .15s}
-.bnav-tab.active{color:var(--or);border-bottom-color:var(--or)}
-.bnav-tab.active svg{stroke:var(--or)}
-.bnav-tab-label{font-size:10px;font-weight:700;line-height:1}
-/* Tab panels */
-.home-tab-panel{display:none}
-.home-tab-panel.active{display:block}
-/* ── HAMBURGER DRAWER ────────────────────────── */
-.hmb-btn{width:36px;height:36px;border-radius:10px;border:none;background:transparent;cursor:pointer;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:5px;color:var(--dk);padding:0;transition:background .15s;flex-shrink:0}
-.hmb-btn:hover{background:var(--bo)}
-.hmb-line{width:18px;height:2px;border-radius:2px;background:currentColor;transition:transform .25s,opacity .25s,width .25s}
-.hmb-btn.open .hmb-line:nth-child(1){transform:translateY(7px) rotate(45deg)}
-.hmb-btn.open .hmb-line:nth-child(2){opacity:0;width:0}
-.hmb-btn.open .hmb-line:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
-.drawer-overlay{position:fixed;inset:0;z-index:800;background:rgba(0,0,0,.45);opacity:0;pointer-events:none;transition:opacity .28s}
-.drawer-overlay.open{opacity:1;pointer-events:all}
-.drawer{position:fixed;top:0;left:0;bottom:0;width:272px;max-width:80vw;z-index:801;background:var(--s);box-shadow:4px 0 32px rgba(0,0,0,.22);transform:translateX(-100%);transition:transform .28s cubic-bezier(.4,0,.2,1);display:flex;flex-direction:column;overflow:hidden}
-.drawer.open{transform:translateX(0)}
-.drawer-head{display:flex;align-items:center;gap:10px;padding:18px 20px 14px;border-bottom:1px solid var(--bo);flex-shrink:0}
-.drawer-logo{display:flex;align-items:center;gap:9px;flex:1;min-width:0}
-.drawer-close{width:32px;height:32px;border-radius:8px;border:none;background:transparent;cursor:pointer;display:flex;align-items:center;justify-content:center;color:var(--mu);flex-shrink:0;transition:background .15s}
-.drawer-close:hover{background:var(--bo)}
-.drawer-close svg{width:18px;height:18px;stroke:currentColor;fill:none;stroke-width:2.2;stroke-linecap:round}
-.drawer-body{flex:1;overflow-y:auto;padding:12px 0}
-.drawer-section-label{font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.08em;color:var(--mu);padding:10px 20px 4px}
-.drawer-item{display:flex;align-items:center;gap:14px;padding:12px 20px;cursor:pointer;border:none;background:none;width:100%;text-align:left;color:var(--dk);font-size:14px;font-family:var(--font);font-weight:600;transition:background .12s;-webkit-tap-highlight-color:transparent}
-.drawer-item:hover{background:rgba(var(--or-rgb),.06)}
-.drawer-item:active{background:rgba(var(--or-rgb),.12)}
-.drawer-item-icon{width:36px;height:36px;border-radius:10px;display:flex;align-items:center;justify-content:center;flex-shrink:0}
-.drawer-item-icon svg{width:18px;height:18px;stroke:#fff;fill:none;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
-.drawer-item-text{flex:1;min-width:0}
-.drawer-item-label{font-size:14px;font-weight:600;color:var(--dk);line-height:1.2}
-.drawer-item-sub{font-size:11px;color:var(--mu);margin-top:1px}
-.drawer-foot{padding:14px 20px 20px;border-top:1px solid var(--bo);flex-shrink:0}
-.drawer-foot-links{display:flex;gap:12px;flex-wrap:wrap}
-.drawer-foot-links a{font-size:11px;color:var(--mu);text-decoration:none}
-.drawer-foot-links a:hover{color:var(--or)}
-/* Menu grid */
-.menu-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-bottom:24px}
-.menu-tile{background:var(--s);border:1px solid var(--bo);border-radius:16px;padding:16px 8px 12px;display:flex;flex-direction:column;align-items:center;gap:8px;cursor:pointer;transition:transform .15s,box-shadow .15s;-webkit-tap-highlight-color:transparent}
-.menu-tile:active{transform:scale(.96)}
-.menu-tile-icon{width:44px;height:44px;border-radius:12px;display:flex;align-items:center;justify-content:center}
-.menu-tile-icon svg{width:22px;height:22px;stroke:#fff;fill:none;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
-.menu-tile-label{font-size:11px;font-weight:700;color:var(--dk);text-align:center;line-height:1.2}
-@media(max-width:360px){.menu-grid{grid-template-columns:repeat(4,1fr);gap:8px}.menu-tile{padding:12px 4px 10px}.menu-tile-icon{width:38px;height:38px}.menu-tile-label{font-size:10px}}
 .rbtns{display:flex;gap:12px;flex-direction:column}
 .btnp{background:var(--or);color:#fff;border:none;border-radius:14px;padding:18px;font-family:var(--font-head);font-size:16px;font-weight:700;cursor:pointer;transition:all 0.2s ease;box-shadow:0 4px 18px rgba(232,92,13,0.3)}
 .btnp:hover{background:#d14f09;box-shadow:0 6px 24px rgba(232,92,13,0.4)}
@@ -3315,17 +3187,10 @@ html.dark .hsd-pill{background:var(--bg2);border-color:var(--bo2)}
 <!-- MINIMAL STICKY NAV -->
 <nav class="hnav">
   <div class="hnav-inner">
-    <div class="hnav-left">
-      <button class="hmb-btn" id="hmb-btn" onclick="toggleDrawer()" aria-label="Menu openen" aria-expanded="false" aria-controls="home-drawer">
-        <span class="hmb-line"></span>
-        <span class="hmb-line"></span>
-        <span class="hmb-line"></span>
-      </button>
-      <div class="hnav-logo" onclick="show('sc-welcome')">
-        <img src="/icon-192.png" alt="Slagio" style="width:30px;height:30px;border-radius:8px;object-fit:cover;flex-shrink:0">
-        <span class="hnav-wordmark">Slagio</span>
-        <span class="hnav-chip" id="home-level-chip">HAVO 2026</span>
-      </div>
+    <div class="hnav-logo" onclick="show('sc-welcome')">
+      <img src="/icon-192.png" alt="Slagio" style="width:30px;height:30px;border-radius:8px;object-fit:cover;flex-shrink:0">
+      <span class="hnav-wordmark">Slagio</span>
+      <span class="hnav-chip" id="home-level-chip">HAVO 2026</span>
     </div>
     <div class="hnav-right">
       <button class="hnav-icon-btn" onclick="showIntroModal()" title="Hoe werkt Slagio?" aria-label="Hoe werkt Slagio?"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg></button>
@@ -3378,268 +3243,148 @@ html.dark .hsd-pill{background:var(--bg2);border-color:var(--bo2)}
   </div>
 </div>
 
-<!-- HOME TAB NAV -->
-<nav class="bnav" id="home-bnav">
-  <button class="bnav-tab active" id="bnav-start" onclick="switchHomeTab('start')" aria-label="Start">
-    <svg viewBox="0 0 24 24"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
-    <span class="bnav-tab-label">Start</span>
-  </button>
-  <button class="bnav-tab" id="bnav-vakken" onclick="switchHomeTab('vakken')" aria-label="Vakken">
-    <svg viewBox="0 0 24 24"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
-    <span class="bnav-tab-label">Vakken</span>
-  </button>
-  <button class="bnav-tab" id="bnav-voortgang" onclick="switchHomeTab('voortgang')" aria-label="Voortgang">
-    <svg viewBox="0 0 24 24"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg>
-    <span class="bnav-tab-label">Voortgang</span>
-  </button>
-</nav>
+<!-- COMEBACK CARD (Feature 4) -->
+<div id="comeback-card-home"></div>
+<!-- STATS DASHBOARD BAR -->
+<div id="home-stats-bar"></div>
 
-<!-- TAB PANELS -->
-<div id="tab-start" class="home-tab-panel active">
-  <!-- Hero (countdown + CTAs) stays here -->
-  <div id="comeback-card-home"></div>
-  <div id="home-stats-bar"></div>
-  <!-- Tijdvakken strip -->
-  <div class="w">
-    <div class="hm-tvk">
-      <div class="hm-tvk-item">
-        <div class="hm-tvk-dot" style="background:#E85C0D;box-shadow:0 0 8px rgba(232,92,13,.5)"></div>
-        <div><div class="hm-tvk-lbl">1e tijdvak</div><div class="hm-tvk-val">8–27 mei 2026</div><div class="hm-tvk-sub">Centraal examen</div></div>
-      </div>
-      <div class="hm-tvk-item">
-        <div class="hm-tvk-dot" style="background:#6366f1;box-shadow:0 0 8px rgba(99,102,241,.5)"></div>
-        <div><div class="hm-tvk-lbl">2e tijdvak</div><div class="hm-tvk-val">16–26 juni 2026</div><div class="hm-tvk-sub">Herkansing</div></div>
-      </div>
-      <div class="hm-tvk-item">
-        <div class="hm-tvk-dot" style="background:#22c55e;box-shadow:0 0 8px rgba(34,197,94,.5)"></div>
-        <div><div class="hm-tvk-lbl">Uitslag</div><div class="hm-tvk-val">begin juli 2026</div><div class="hm-tvk-sub">Via school &amp; DUO</div></div>
+<div class="w">
+
+  <!-- QUICK LINKS -->
+  <div class="hm-ql">
+    <button class="hm-ql-btn" onclick="show('sc-schedule')" aria-label="Rooster bekijken">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+      Rooster
+    </button>
+    <button class="hm-ql-btn" onclick="show('sc-calc');setTimeout(prefillCalcFromSaved,50)" aria-label="Cijfers berekenen">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="2" width="16" height="20" rx="2"/><line x1="8" y1="6" x2="16" y2="6"/><line x1="8" y1="10" x2="16" y2="10"/><line x1="8" y1="14" x2="12" y2="14"/></svg>
+      Berekenen
+    </button>
+    <button class="hm-ql-btn" onclick="show('sc-leaderboard');renderLeaderboard()" aria-label="Leaderboard bekijken">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 21h8M12 17v4M17 3H7l-1 7h10l-1-7z"/><path d="M5 10c0 3.9 3.1 7 7 7s7-3.1 7-7"/></svg>
+      Leaderboard
+    </button>
+    <button class="hm-ql-btn" onclick="show('sc-info')" aria-label="Slaagregels bekijken">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+      Slaagregels
+    </button>
+  </div>
+
+  <!-- DYNAMIC WIDGETS (JS-driven) -->
+  <div id="live-count-home"></div>
+  <div class="home-section-header">
+    <span class="hsh-title">Jouw voortgang</span>
+    <span class="hsh-sub">Streak, XP en dagelijkse doelen</span>
+  </div>
+  <div id="xp-home-bar"></div>
+  <div id="daily-goal-home"></div>
+  <div id="daily-challenge-home" class="daily-wrap"></div>
+  <div id="streak-milestone-banner-home"></div>
+  <div id="streak-home"></div>
+  <div id="pomo-home"></div>
+  <div class="home-section-header">
+    <span class="hsh-title">Cijferanalyse</span>
+    <span class="hsh-sub">Inzicht in je huidige SE-cijfers</span>
+  </div>
+  <div id="grade-insight-home"></div>
+  <div id="fav-home" class="fav-section" style="display:none">
+    <p class="sec-label">Favoriete domeinen</p>
+    <div id="fav-chips" class="fav-chips"></div>
+  </div>
+
+  <!-- TIJDVAKKEN STRIP -->
+  <div class="hm-tvk">
+    <div class="hm-tvk-item">
+      <div class="hm-tvk-dot" style="background:#E85C0D;box-shadow:0 0 8px rgba(232,92,13,.5)"></div>
+      <div><div class="hm-tvk-lbl">1e tijdvak</div><div class="hm-tvk-val">8–27 mei 2026</div><div class="hm-tvk-sub">Centraal examen</div></div>
+    </div>
+    <div class="hm-tvk-item">
+      <div class="hm-tvk-dot" style="background:#6366f1;box-shadow:0 0 8px rgba(99,102,241,.5)"></div>
+      <div><div class="hm-tvk-lbl">2e tijdvak</div><div class="hm-tvk-val">16–26 juni 2026</div><div class="hm-tvk-sub">Herkansing</div></div>
+    </div>
+    <div class="hm-tvk-item">
+      <div class="hm-tvk-dot" style="background:#22c55e;box-shadow:0 0 8px rgba(34,197,94,.5)"></div>
+      <div><div class="hm-tvk-lbl">Uitslag</div><div class="hm-tvk-val">begin juli 2026</div><div class="hm-tvk-sub">Via school &amp; DUO</div></div>
+    </div>
+  </div>
+
+  <!-- Ad -->
+  <div class="ad-wrapper" id="ad-home">
+    <span class="ad-label">Advertentie</span>
+    <div class="ad-slot ad-slot--banner">
+      <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-3580526892359138" data-ad-slot="0000000000" data-ad-format="horizontal" data-full-width-responsive="true"></ins>
+    </div>
+  </div>
+
+  <!-- VAKKEN HEADER -->
+  <div class="hm-vakken-hdr">
+    <h2 class="hm-vakken-h2">Vakken</h2>
+    <span class="hm-vakken-count" id="vakken-count-badge">—</span>
+  </div>
+  <div class="sb-wrap">
+    <div class="sb-poda" id="sb-poda">
+      <div class="sb-gl sb-gl1"></div>
+      <div class="sb-gl sb-gl2"></div>
+      <div class="sb-gl sb-gl3"></div>
+      <div class="sb-gl sb-gl4"></div>
+      <div class="sb-gl sb-gl5"></div>
+      <div class="sb-gl sb-gl6"></div>
+      <div class="sb-main">
+        <input id="sb-input" type="text" class="sb-input" placeholder="Zoek een vak…" oninput="filterGrid(this.value)" autocomplete="off" spellcheck="false">
+        <div class="sb-mask"></div>
+        <div class="sb-pink"></div>
+        <div class="sb-ring"></div>
+        <button class="sb-filter-btn" id="sb-filter-btn" onclick="filterBtnClick()" title="Filter / Wissen" tabindex="-1">
+          <svg class="sb-filter-icon" preserveAspectRatio="none" height="22" width="22" viewBox="4.8 4.56 14.832 15.408" fill="none">
+            <path d="M8.16 6.65002H15.83C16.47 6.65002 16.99 7.17002 16.99 7.81002V9.09002C16.99 9.56002 16.7 10.14 16.41 10.43L13.91 12.64C13.56 12.93 13.33 13.51 13.33 13.98V16.48C13.33 16.83 13.1 17.29 12.81 17.47L12 17.98C11.24 18.45 10.2 17.92 10.2 16.99V13.91C10.2 13.5 9.97 12.98 9.73 12.69L7.52 10.36C7.23 10.08 7 9.55002 7 9.20002V7.87002C7 7.17002 7.52 6.65002 8.16 6.65002Z" stroke="#d6d6e6" stroke-width="1" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          <svg class="sb-clear-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#d6d6e6" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/>
+          </svg>
+        </button>
+        <div class="sb-search-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" fill="none">
+            <circle stroke="url(#sb-sg1)" r="8" cy="11" cx="11"/>
+            <line stroke="url(#sb-sg2)" y2="16.65" y1="22" x2="16.65" x1="22"/>
+            <defs>
+              <linearGradient gradientTransform="rotate(50)" id="sb-sg1"><stop stop-color="#f8e7f8" offset="0%"/><stop stop-color="#b6a9b7" offset="50%"/></linearGradient>
+              <linearGradient id="sb-sg2"><stop stop-color="#b6a9b7" offset="0%"/><stop stop-color="#837484" offset="50%"/></linearGradient>
+            </defs>
+          </svg>
+        </div>
       </div>
     </div>
+  </div>
+  <div id="filter-panel" class="filter-panel">
+    <div class="fp-row">
+      <span class="fp-label">Sorteren</span>
+      <div class="fp-chips">
+        <button class="fp-chip active" id="fp-naam" onclick="setSort('naam')">A–Z</button>
+        <button class="fp-chip" id="fp-progd" onclick="setSort('progd')">Voortgang ↓</button>
+        <button class="fp-chip" id="fp-proga" onclick="setSort('proga')">Voortgang ↑</button>
+        <button class="fp-chip" id="fp-cijfd" onclick="setSort('cijfd')">Cijfer ↓</button>
+      </div>
+    </div>
+    <div class="fp-row">
+      <span class="fp-label">Tonen</span>
+      <div class="fp-chips">
+        <button class="fp-chip active" id="fp-all" onclick="setFavFilter(false)">Alle vakken</button>
+        <button class="fp-chip" id="fp-fav" onclick="setFavFilter(true)">★ Favorieten</button>
+      </div>
+    </div>
+  </div>
+  <p id="sb-noresult" class="sb-noresult"></p>
+  <div id="vakgrid" class="sg"></div>
+  <div class="site-footer">
+    <a href="#" onclick="event.preventDefault();show('sc-privacy')">Privacybeleid</a>
+    <span class="footer-sep">·</span>
+    <a href="#" onclick="event.preventDefault();cookieReset()">Cookie-instellingen</a>
+    <span class="footer-sep">·</span>
+    <a href="https://www.examenblad.nl" target="_blank" rel="noopener">Examenblad.nl</a>
+    <br>© 2026 Slagio · Gemaakt door leerlingen, voor leerlingen.
+    <br><span style="font-size:11px;opacity:.6">Slagio bevat een archief van alle officiële CE-eindexamens HAVO en VWO 2019–2025 — opgaven én correctievoorschriften voor 17 vakken (Nederlands, Wiskunde A, Wiskunde B, Biologie, Scheikunde, Natuurkunde, Engels, Economie, Bedrijfseconomie, Geschiedenis, Aardrijkskunde, Maatschappijwetenschappen, Duits, Frans, Latijn, Grieks, Informatica), Tijdvak I en II. Slagio is geen officiële publicatie van het CvTE. CE-vragen zijn afkomstig van <a href="https://www.examenblad.nl" target="_blank" rel="noopener">examenblad.nl</a>.</span>
   </div>
 </div>
-
-<div id="tab-vakken" class="home-tab-panel">
-  <div class="w">
-    <div id="live-count-home"></div>
-    <div class="hm-vakken-hdr">
-      <h2 class="hm-vakken-h2">Vakken</h2>
-      <span class="hm-vakken-count" id="vakken-count-badge">—</span>
-    </div>
-    <div class="sb-wrap">
-      <div class="sb-poda" id="sb-poda">
-        <div class="sb-gl sb-gl1"></div>
-        <div class="sb-gl sb-gl2"></div>
-        <div class="sb-gl sb-gl3"></div>
-        <div class="sb-gl sb-gl4"></div>
-        <div class="sb-gl sb-gl5"></div>
-        <div class="sb-gl sb-gl6"></div>
-        <div class="sb-main">
-          <input id="sb-input" type="text" class="sb-input" placeholder="Zoek een vak…" oninput="filterGrid(this.value)" autocomplete="off" spellcheck="false">
-          <div class="sb-mask"></div>
-          <div class="sb-pink"></div>
-          <div class="sb-ring"></div>
-          <button class="sb-filter-btn" id="sb-filter-btn" onclick="filterBtnClick()" title="Filter / Wissen" tabindex="-1">
-            <svg class="sb-filter-icon" preserveAspectRatio="none" height="22" width="22" viewBox="4.8 4.56 14.832 15.408" fill="none">
-              <path d="M8.16 6.65002H15.83C16.47 6.65002 16.99 7.17002 16.99 7.81002V9.09002C16.99 9.56002 16.7 10.14 16.41 10.43L13.91 12.64C13.56 12.93 13.33 13.51 13.33 13.98V16.48C13.33 16.83 13.1 17.29 12.81 17.47L12 17.98C11.24 18.45 10.2 17.92 10.2 16.99V13.91C10.2 13.5 9.97 12.98 9.73 12.69L7.52 10.36C7.23 10.08 7 9.55002 7 9.20002V7.87002C7 7.17002 7.52 6.65002 8.16 6.65002Z" stroke="#d6d6e6" stroke-width="1" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-            </svg>
-            <svg class="sb-clear-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#d6d6e6" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-              <line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/>
-            </svg>
-          </button>
-          <div class="sb-search-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" fill="none">
-              <circle stroke="url(#sb-sg1)" r="8" cy="11" cx="11"/>
-              <line stroke="url(#sb-sg2)" y2="16.65" y1="22" x2="16.65" x1="22"/>
-              <defs>
-                <linearGradient gradientTransform="rotate(50)" id="sb-sg1"><stop stop-color="#f8e7f8" offset="0%"/><stop stop-color="#b6a9b7" offset="50%"/></linearGradient>
-                <linearGradient id="sb-sg2"><stop stop-color="#b6a9b7" offset="0%"/><stop stop-color="#837484" offset="50%"/></linearGradient>
-              </defs>
-            </svg>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div id="filter-panel" class="filter-panel">
-      <div class="fp-row">
-        <span class="fp-label">Sorteren</span>
-        <div class="fp-chips">
-          <button class="fp-chip active" id="fp-naam" onclick="setSort('naam')">A–Z</button>
-          <button class="fp-chip" id="fp-progd" onclick="setSort('progd')">Voortgang ↓</button>
-          <button class="fp-chip" id="fp-proga" onclick="setSort('proga')">Voortgang ↑</button>
-          <button class="fp-chip" id="fp-cijfd" onclick="setSort('cijfd')">Cijfer ↓</button>
-        </div>
-      </div>
-      <div class="fp-row">
-        <span class="fp-label">Tonen</span>
-        <div class="fp-chips">
-          <button class="fp-chip active" id="fp-all" onclick="setFavFilter(false)">Alle vakken</button>
-          <button class="fp-chip" id="fp-fav" onclick="setFavFilter(true)">★ Favorieten</button>
-        </div>
-      </div>
-    </div>
-    <p id="sb-noresult" class="sb-noresult"></p>
-    <div id="vakgrid" class="sg"></div>
-  </div>
-</div>
-
-<div id="tab-voortgang" class="home-tab-panel">
-  <div class="w">
-    <div class="home-section-header" style="padding-top:16px">
-      <span class="hsh-title">Jouw voortgang</span>
-      <span class="hsh-sub">Streak, XP en dagelijkse doelen</span>
-    </div>
-    <div id="xp-home-bar"></div>
-    <div id="daily-goal-home"></div>
-    <div id="daily-challenge-home" class="daily-wrap"></div>
-    <div id="streak-milestone-banner-home"></div>
-    <div id="streak-home"></div>
-    <div id="pomo-home"></div>
-    <div class="home-section-header">
-      <span class="hsh-title">Cijferanalyse</span>
-      <span class="hsh-sub">Inzicht in je huidige SE-cijfers</span>
-    </div>
-    <div id="grade-insight-home"></div>
-    <div id="fav-home" class="fav-section" style="display:none">
-      <p class="sec-label">Favoriete domeinen</p>
-      <div id="fav-chips" class="fav-chips"></div>
-    </div>
-  </div>
-</div>
-
-<div id="tab-menu" class="home-tab-panel">
-  <div class="w" style="padding-top:16px">
-    <div class="home-section-header">
-      <span class="hsh-title">Hulpmiddelen</span>
-      <span class="hsh-sub">Alles wat je nodig hebt</span>
-    </div>
-    <div class="menu-grid">
-      <button class="menu-tile" onclick="show('sc-calc');setTimeout(prefillCalcFromSaved,50)">
-        <div class="menu-tile-icon" style="background:linear-gradient(135deg,#f97316,#fb923c)">
-          <svg viewBox="0 0 24 24"><rect x="4" y="2" width="16" height="20" rx="2"/><line x1="8" y1="6" x2="16" y2="6"/><line x1="8" y1="10" x2="16" y2="10"/><line x1="8" y1="14" x2="12" y2="14"/></svg>
-        </div>
-        <div class="menu-tile-label">Cijfers</div>
-      </button>
-      <button class="menu-tile" onclick="show('sc-leaderboard');renderLeaderboard()">
-        <div class="menu-tile-icon" style="background:linear-gradient(135deg,#f59e0b,#fbbf24)">
-          <svg viewBox="0 0 24 24"><path d="M8 21h8M12 17v4M17 3H7l-1 7h10l-1-7z"/><path d="M5 10c0 3.9 3.1 7 7 7s7-3.1 7-7"/></svg>
-        </div>
-        <div class="menu-tile-label">Leaderboard</div>
-      </button>
-      <button class="menu-tile" onclick="show('sc-schedule')">
-        <div class="menu-tile-icon" style="background:linear-gradient(135deg,#6366f1,#818cf8)">
-          <svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
-        </div>
-        <div class="menu-tile-label">Rooster</div>
-      </button>
-      <button class="menu-tile" onclick="show('sc-info')">
-        <div class="menu-tile-icon" style="background:linear-gradient(135deg,#10b981,#34d399)">
-          <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
-        </div>
-        <div class="menu-tile-label">Slaagregels</div>
-      </button>
-      <button class="menu-tile" onclick="show('sc-leerpad')">
-        <div class="menu-tile-icon" style="background:linear-gradient(135deg,#8b5cf6,#a78bfa)">
-          <svg viewBox="0 0 24 24"><path d="M3 12h18M3 6h18M3 18h12"/></svg>
-        </div>
-        <div class="menu-tile-label">Leerpad</div>
-      </button>
-      <button class="menu-tile" onclick="show('sc-examen')">
-        <div class="menu-tile-icon" style="background:linear-gradient(135deg,#ef4444,#f87171)">
-          <svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
-        </div>
-        <div class="menu-tile-label">Examens</div>
-      </button>
-      <button class="menu-tile" onclick="show('sc-simtoets')">
-        <div class="menu-tile-icon" style="background:linear-gradient(135deg,#06b6d4,#22d3ee)">
-          <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
-        </div>
-        <div class="menu-tile-label">Simulatietoets</div>
-      </button>
-      <button class="menu-tile" onclick="show('sc-groep');renderGroepScreen()">
-        <div class="menu-tile-icon" style="background:linear-gradient(135deg,#ec4899,#f472b6)">
-          <svg viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
-        </div>
-        <div class="menu-tile-label">Groep</div>
-      </button>
-    </div>
-    <div class="site-footer">
-      <a href="#" onclick="event.preventDefault();show('sc-privacy')">Privacybeleid</a>
-      <span class="footer-sep">·</span>
-      <a href="#" onclick="event.preventDefault();cookieReset()">Cookie-instellingen</a>
-      <span class="footer-sep">·</span>
-      <a href="https://www.examenblad.nl" target="_blank" rel="noopener">Examenblad.nl</a>
-      <br>© 2026 Slagio · Gemaakt door leerlingen, voor leerlingen.
-      <br><span style="font-size:11px;opacity:.6">Slagio bevat een archief van alle officiële CE-eindexamens HAVO en VWO 2019–2025 — opgaven én correctievoorschriften voor 17 vakken (Nederlands, Wiskunde A, Wiskunde B, Biologie, Scheikunde, Natuurkunde, Engels, Economie, Bedrijfseconomie, Geschiedenis, Aardrijkskunde, Maatschappijwetenschappen, Duits, Frans, Latijn, Grieks, Informatica), Tijdvak I en II. Slagio is geen officiële publicatie van het CvTE. CE-vragen zijn afkomstig van <a href="https://www.examenblad.nl" target="_blank" rel="noopener">examenblad.nl</a>.</span>
-    </div>
-  </div>
-</div>
-
-<!-- DRAWER OVERLAY -->
-<div class="drawer-overlay" id="drawer-overlay" onclick="closeDrawer()"></div>
-
-<!-- SIDE DRAWER -->
-<aside class="drawer" id="home-drawer" role="dialog" aria-modal="true" aria-label="Menu">
-  <div class="drawer-head">
-    <div class="drawer-logo">
-      <img src="/icon-192.png" alt="Slagio" style="width:28px;height:28px;border-radius:7px;object-fit:cover;flex-shrink:0">
-      <span style="font-family:var(--font-head);font-size:16px;font-weight:800;color:var(--dk)">Slagio</span>
-      <span class="hnav-chip" style="font-size:10px" id="drawer-level-chip">HAVO 2026</span>
-    </div>
-    <button class="drawer-close" onclick="closeDrawer()" aria-label="Menu sluiten">
-      <svg viewBox="0 0 24 24"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
-    </button>
-  </div>
-  <div class="drawer-body">
-    <div class="drawer-section-label">Leertools</div>
-    <button class="drawer-item" onclick="closeDrawer();show('sc-leerpad')">
-      <div class="drawer-item-icon" style="background:linear-gradient(135deg,#8b5cf6,#a78bfa)"><svg viewBox="0 0 24 24"><path d="M3 12h18M3 6h18M3 18h12"/></svg></div>
-      <div class="drawer-item-text"><div class="drawer-item-label">Leerpad</div><div class="drawer-item-sub">Domein voor domein</div></div>
-    </button>
-    <button class="drawer-item" onclick="closeDrawer();show('sc-simtoets')">
-      <div class="drawer-item-icon" style="background:linear-gradient(135deg,#06b6d4,#22d3ee)"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></div>
-      <div class="drawer-item-text"><div class="drawer-item-label">Simulatietoets</div><div class="drawer-item-sub">Oefen het echte CE</div></div>
-    </button>
-    <button class="drawer-item" onclick="closeDrawer();show('sc-examen')">
-      <div class="drawer-item-icon" style="background:linear-gradient(135deg,#ef4444,#f87171)"><svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg></div>
-      <div class="drawer-item-text"><div class="drawer-item-label">Examens</div><div class="drawer-item-sub">Officiële CE's 2019–2025</div></div>
-    </button>
-    <div class="drawer-section-label">Resultaten</div>
-    <button class="drawer-item" onclick="closeDrawer();show('sc-calc');setTimeout(prefillCalcFromSaved,50)">
-      <div class="drawer-item-icon" style="background:linear-gradient(135deg,#f97316,#fb923c)"><svg viewBox="0 0 24 24"><rect x="4" y="2" width="16" height="20" rx="2"/><line x1="8" y1="6" x2="16" y2="6"/><line x1="8" y1="10" x2="16" y2="10"/><line x1="8" y1="14" x2="12" y2="14"/></svg></div>
-      <div class="drawer-item-text"><div class="drawer-item-label">Cijfercalculator</div><div class="drawer-item-sub">SE + CE berekenen</div></div>
-    </button>
-    <button class="drawer-item" onclick="closeDrawer();show('sc-leaderboard');renderLeaderboard()">
-      <div class="drawer-item-icon" style="background:linear-gradient(135deg,#f59e0b,#fbbf24)"><svg viewBox="0 0 24 24"><path d="M8 21h8M12 17v4M17 3H7l-1 7h10l-1-7z"/><path d="M5 10c0 3.9 3.1 7 7 7s7-3.1 7-7"/></svg></div>
-      <div class="drawer-item-text"><div class="drawer-item-label">Leaderboard</div><div class="drawer-item-sub">Ranglijst per vak</div></div>
-    </button>
-    <button class="drawer-item" onclick="closeDrawer();show('sc-groep');renderGroepScreen()">
-      <div class="drawer-item-icon" style="background:linear-gradient(135deg,#ec4899,#f472b6)"><svg viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></div>
-      <div class="drawer-item-text"><div class="drawer-item-label">Mijn groep</div><div class="drawer-item-sub">Scoreboard met vrienden</div></div>
-    </button>
-    <div class="drawer-section-label">Info</div>
-    <button class="drawer-item" onclick="closeDrawer();show('sc-schedule')">
-      <div class="drawer-item-icon" style="background:linear-gradient(135deg,#6366f1,#818cf8)"><svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg></div>
-      <div class="drawer-item-text"><div class="drawer-item-label">Examenrooster</div><div class="drawer-item-sub">Wanneer is jouw examen?</div></div>
-    </button>
-    <button class="drawer-item" onclick="closeDrawer();show('sc-info')">
-      <div class="drawer-item-icon" style="background:linear-gradient(135deg,#10b981,#34d399)"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg></div>
-      <div class="drawer-item-text"><div class="drawer-item-label">Slaagregels</div><div class="drawer-item-sub">Wanneer ben je geslaagd?</div></div>
-    </button>
-    <button class="drawer-item" onclick="closeDrawer();openProfiel()">
-      <div class="drawer-item-icon" style="background:linear-gradient(135deg,#64748b,#94a3b8)"><svg viewBox="0 0 24 24"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg></div>
-      <div class="drawer-item-text"><div class="drawer-item-label">Profiel</div><div class="drawer-item-sub">Account &amp; instellingen</div></div>
-    </button>
-  </div>
-  <div class="drawer-foot">
-    <div class="drawer-foot-links">
-      <a href="#" onclick="event.preventDefault();closeDrawer();show('sc-privacy')">Privacybeleid</a>
-      <a href="#" onclick="event.preventDefault();closeDrawer();cookieReset()">Cookies</a>
-      <a href="https://www.examenblad.nl" target="_blank" rel="noopener">Examenblad.nl</a>
-    </div>
-    <div style="font-size:10px;color:var(--mu);margin-top:6px">© 2026 Slagio</div>
-  </div>
-</aside>
-
 </div>
 
 <!-- INFO -->
@@ -3651,44 +3396,27 @@ html.dark .hsd-pill{background:var(--bg2);border-color:var(--bo2)}
     <button class="theme-btn" onclick="toggleDark()" title="Nachtmodus" style="margin-left:auto" id="theme-btn-info"><svg viewBox="0 0 24 24"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg></button>
   </div>
 </nav>
-<div class="pg-hero">
-  <div class="pg-hero-glow"></div>
-  <div class="pg-hero-content">
-    <div class="pg-hero-icon">📋</div>
-    <div class="pg-hero-title" id="info-hero-title">Exameninformatie HAVO 2026</div>
-    <div class="pg-hero-sub">Alles wat je moet weten over je eindexamen</div>
-  </div>
-</div>
-<div class="sr-rule-grid">
-  <div class="sr-rule-card" style="border-color:rgba(var(--or-rgb),.3);background:rgba(var(--or-rgb),.06)">
-    <div class="sr-rule-num" style="background:var(--or)">1</div>
-    <div><div class="sr-rule-title">CE-gemiddelde ≥ 5,50</div><div class="sr-rule-text">Het onafgeronde gemiddelde van alle CE-cijfers moet minstens 5,50 zijn. Een 5,49 is al gezakt.</div></div>
-  </div>
-  <div class="sr-rule-card" style="border-color:rgba(99,102,241,.3);background:rgba(99,102,241,.06)">
-    <div class="sr-rule-num" style="background:#6366f1">2</div>
-    <div><div class="sr-rule-title">Kernvakkenregel</div><div class="sr-rule-text">Voor NE, EN en WI maximaal één 5. Bij C&M zonder wiskunde: alleen NE + EN zijn kernvakken.</div></div>
-  </div>
-  <div class="sr-rule-card" style="border-color:rgba(16,185,129,.3);background:rgba(16,185,129,.06)">
-    <div class="sr-rule-num" style="background:#10b981">3</div>
-    <div><div class="sr-rule-title">Compensatieregel</div><div class="sr-rule-text">Geen eindcijfer lager dan 4. Bij één 4 of twee 5-en: gemiddelde ≥ 6,0. Drie of meer onvoldoendes = gezakt.</div></div>
-  </div>
-  <div class="sr-rule-card" style="border-color:rgba(239,68,68,.3);background:rgba(239,68,68,.06)">
-    <div class="sr-rule-num" style="background:#ef4444">4</div>
-    <div><div class="sr-rule-title">LO voldoende of goed</div><div class="sr-rule-text">Lichamelijke Opvoeding (schoolexamen) moet voldoende of goed zijn.</div></div>
-  </div>
-</div>
-<div class="w" style="padding-top:0;padding-bottom:24px">
-  <div class="ibox"><div class="ihd" onclick="tog(this)"><h3>📅 Tijdvakken</h3><span>▼</span></div>
-  <div class="ibd"><div class="ir"><span>1e tijdvak</span><strong>8 mei – 27 mei 2026</strong></div><div class="ir"><span>Normering (N-term)</span><strong>11 juni 2026 om 08:00</strong></div><div class="ir"><span>2e tijdvak (herkansing)</span><strong>16 – 23 juni 2026</strong></div><div class="ir"><span>Uitslag 2e tijdvak</span><strong>30 juni 2026</strong></div><div class="ir"><span>3e tijdvak</span><strong>augustus 2026</strong></div><div class="ir"><span>Aanmelden 2e tijdvak</span><strong>vóór 12 juni 2026</strong></div></div></div>
-  <div class="ibox"><div class="ihd" onclick="tog(this)"><h3>🧮 Cijferberekening</h3><span>▼</span></div>
+<div class="w" style="padding-top:28px">
+  <h2 style="font-size:22px;margin-bottom:16px">Exameninformatie HAVO 2026</h2>
+  <div class="ibox"><div class="ihd" onclick="tog(this)"><h3>Tijdvakken</h3><span>▼</span></div>
+  <div class="ibd"><div class="ir"><span>1e tijdvak</span><strong>8 mei – 27 mei 2026</strong></div><div class="ir"><span>Normering (N-term)</span><strong>11 juni 2026 om 08:00</strong></div><div class="ir"><span>2e tijdvak (herkansing)</span><strong>16 – 23 juni 2026</strong></div><div class="ir"><span>Uitslag 2e tijdvak</span><strong>30 juni 2026</strong></div><div class="ir"><span>3e tijdvak</span><strong>augustus 2026</strong></div><div class="ir"><span>Aanmelden 2e tijdvak</span><strong>vóór 12 juni 2026</strong></div><p style="margin-top:8px">Exacte datums per vak: <strong>examenblad.nl</strong></p></div></div>
+  <div class="ibox"><div class="ihd" onclick="tog(this)"><h3>Slaagregels HAVO</h3><span>▼</span></div>
+  <div class="ibd"><p style="margin-bottom:8px"><strong>Alle 4 regels moeten tegelijk kloppen:</strong></p><ul><li><strong>Regel 1 — CE-gemiddelde:</strong> het onafgeronde gemiddelde van alle CE-cijfers moet ≥ 5,50 zijn (5,49 = gezakt)</li><li><strong>Regel 2 — Kernvakkenregel:</strong> voor NE, EN en WI (kernvakken) maximaal één 5 toegestaan. C&M zonder wiskunde: alleen NE + EN zijn kernvakken</li><li><strong>Regel 3 — Compensatie:</strong> geen eindcijfer lager dan 4. Bij één 4 of twee 5-en: gemiddelde van alle eindcijfers ≥ 6,0. Bij drie of meer onvoldoendes: gezakt.</li><li><strong>Regel 4 — LO:</strong> Lichamelijke Opvoeding moet voldoende of goed zijn</li></ul><p style="margin-top:10px"><strong>Cum laude:</strong> gemiddelde gemeenschappelijk + profieldeel + hoogste vrij-deel cijfer ≥ 8,0, en geen eindcijfer lager dan 6.</p></div></div>
+  <div class="ibox"><div class="ihd" onclick="tog(this)"><h3>Toegestane hulpmiddelen</h3><span>▼</span></div>
+  <div class="ibd"><p style="margin-bottom:8px"><strong>Standaard basispakket (alle examens):</strong></p><ul><li>Schrijfmateriaal, millimeterpapier, tekenpotlood</li><li>Kleurpotloden (blauw + rood), liniaal, passer, geodriehoek</li><li>Gum, nietmachine, eenvoudige rekenmachine (niet-grafisch)</li><li>Eendelig verklarend woordenboek Nederlands</li></ul><p style="margin-top:10px"><strong>Per vak extra:</strong></p><ul><li><strong>Wiskunde A/B:</strong> Grafische rekenmachine verplicht in examenstand. Toegestaan 2026: Casio fx-CG50, HP Prime G2, TI-84 Plus CE-T, TI-Nspire CX (non-CAS), NumWorks N0110+. Let op: Casio fx-9860GII is niet meer toegestaan!</li><li><strong>Biologie, Natuurkunde, Scheikunde:</strong> BINAS 7e editie OF ScienceData (niet beide). Geen stickers of bladwijzers.</li><li><strong>Moderne vreemde talen:</strong> Tweetalig woordenboek (doeltaal ↔ thuistaal). Engels mag ook eentalig EN-EN. Digitale woordenboeken niet toegestaan.</li><li><strong>Aardrijkskunde:</strong> Geen atlas meer toegestaan (gewijzigd in 2021).</li></ul></div></div>
+  <div class="ibox"><div class="ihd" onclick="tog(this)"><h3>Cijferberekening</h3><span>▼</span></div>
   <div class="ibd"><p>Eindcijfer = gemiddelde van SE en CE (doorgaans 50/50). Beide afzonderlijk afgerond, dan gemiddeld, dan afgerond op geheel getal.</p><div class="ir"><span>Eindcijfer</span><strong>(SE + CE) ÷ 2</strong></div></div></div>
-  <div class="ibox"><div class="ihd" onclick="tog(this)"><h3>🎒 Toegestane hulpmiddelen</h3><span>▼</span></div>
-  <div class="ibd"><p style="margin-bottom:8px"><strong>Standaard basispakket:</strong></p><ul><li>Schrijfmateriaal, millimeterpapier, tekenpotlood</li><li>Kleurpotloden (blauw + rood), liniaal, passer, geodriehoek</li><li>Gum, eenvoudige rekenmachine (niet-grafisch)</li><li>Eendelig verklarend woordenboek Nederlands</li></ul><p style="margin-top:10px"><strong>Per vak extra:</strong></p><ul><li><strong>Wiskunde A/B:</strong> Grafische rekenmachine (TI-84 CE-T, Casio fx-CG50, HP Prime G2, TI-Nspire CX non-CAS, NumWorks N0110+). Casio fx-9860GII niet meer toegestaan!</li><li><strong>Biologie, Natuurkunde, Scheikunde:</strong> BINAS 7e editie OF ScienceData</li><li><strong>Moderne vreemde talen:</strong> Tweetalig woordenboek</li></ul></div></div>
-  <div class="ibox"><div class="ihd" onclick="tog(this)"><h3>💡 Praktische tips</h3><span>▼</span></div>
-  <div class="ibd"><ul><li>Wees <strong>15 min</strong> voor aanvang aanwezig met geldig ID</li><li>Ziek? Meld vóór aanvang af → 2e tijdvak</li><li><strong>Cum laude:</strong> gemiddelde ≥ 8,0 en geen eindcijfer lager dan 6</li></ul></div></div>
-  <div class="ibox"><div class="ihd" onclick="tog(this)"><h3>📚 Profielen HAVO</h3><span>▼</span></div>
+  <div class="ibox"><div class="ihd" onclick="tog(this)"><h3>Praktische tips</h3><span>▼</span></div>
+  <div class="ibd"><ul><li><strong>Binas</strong> toegestaan bij SK en NA</li><li><strong>Grafische rekenmachine</strong> bij WI (deel 2)</li><li><strong>Woordenboek</strong> bij talen</li><li>Wees <strong>15 min</strong> voor aanvang aanwezig met geldig ID</li><li>Ziek? Meld vóór aanvang af → 2e tijdvak</li></ul></div></div>
+  <div class="ibox"><div class="ihd" onclick="tog(this)"><h3>Profielen HAVO</h3><span>▼</span></div>
   <div class="ibd"><ul><li><strong>C&M:</strong> NE, EN, GS/AK, MA, WA/WB + keuzevakken</li><li><strong>E&M:</strong> NE, EN, EC, WA, MA + keuzevakken</li><li><strong>N&G:</strong> NE, EN, BI, SK/NA, WA/WB + keuzevakken</li><li><strong>N&T:</strong> NE, EN, NA, WB, SK/BI + keuzevakken</li></ul></div></div>
-  <div class="ad-wrapper" id="ad-info" style="margin-top:20px"><span class="ad-label">Advertentie</span><div class="ad-slot ad-slot--banner"><ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-3580526892359138" data-ad-slot="0000000000" data-ad-format="auto" data-full-width-responsive="true"></ins></div></div>
+  <!-- Ad: info pagina (rustmoment, browsen) -->
+  <div class="ad-wrapper" id="ad-info" style="margin-top:20px">
+    <span class="ad-label">Advertentie</span>
+    <div class="ad-slot ad-slot--banner">
+      <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-3580526892359138" data-ad-slot="0000000000" data-ad-format="auto" data-full-width-responsive="true"></ins>
+    </div>
+  </div>
 </div>
 </div>
 
@@ -4019,15 +3747,10 @@ html.dark .hsd-pill{background:var(--bg2);border-color:var(--bo2)}
 <div id="sc-leaderboard" class="sc">
 <nav class="nav"><div class="nav-inner"><div class="logo" onclick="show('sc-home')"><img src="/icon-192.png" alt="Slagio" style="width:26px;height:26px;border-radius:7px;object-fit:cover;flex-shrink:0">Slagio</div><button class="bk" onclick="show('sc-home')">← Terug</button><button class="theme-btn" onclick="toggleDark()" title="Nachtmodus" style="margin-left:auto"><svg viewBox="0 0 24 24"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg></button></div></nav>
 <div class="lb-wrap">
-  <div class="lb-pg-hero">
-    <span class="lb-pg-trophy">🏆</span>
-    <div class="lb-pg-title">Top 10 van Nederland</div>
-    <div class="lb-pg-sub" id="lb-subtitle">Snelle quiz · Ranglijst op score (nauwkeurigheid + snelheid)</div>
-    <div id="lb-niveau-badge" style="position:relative;animation:fadeInUp .4s ease both .2s;font-size:11px;font-weight:700;opacity:.6;letter-spacing:.5px;text-transform:uppercase;margin-top:6px"></div>
-    <div class="lb-pg-my-rank" id="lb-pg-my-rank" style="display:none">
-      <span>Jouw positie</span>
-      <span class="lb-pg-my-rank-num" id="lb-pg-my-rank-num">#—</span>
-    </div>
+  <div class="lb-header">
+    <h2>🏆 Top 10 van Nederland</h2>
+    <p id="lb-subtitle">Snelle quiz · Ranglijst op score (nauwkeurigheid + snelheid)</p>
+    <p id="lb-niveau-badge" style="margin-top:6px;font-size:12px;font-weight:700;opacity:.6;letter-spacing:.5px;text-transform:uppercase"></p>
   </div>
   <!-- Scoring uitleg -->
   <div class="lb-score-info" id="lb-score-info">
@@ -4077,21 +3800,13 @@ html.dark .hsd-pill{background:var(--bg2);border-color:var(--bo2)}
 <!-- SCHEDULE -->
 <div id="sc-schedule" class="sc">
 <nav class="nav"><div class="nav-inner"><div class="logo" onclick="show('sc-home')"><img src="/icon-192.png" alt="Slagio" style="width:26px;height:26px;border-radius:7px;object-fit:cover;flex-shrink:0">Slagio</div><button class="bk" onclick="show('sc-home')">← Terug</button><button class="theme-btn" onclick="toggleDark()" title="Nachtmodus" style="margin-left:auto"><svg viewBox="0 0 24 24"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg></button></div></nav>
-<div id="sch-next-hero" class="sch-hero-card" style="margin-top:20px">
-  <div class="sch-hero-next-label">⚡ Eerstvolgende examen</div>
-  <div class="sch-hero-vak" id="sch-next-vak">Laden…</div>
-  <div class="sch-hero-date" id="sch-next-date"></div>
-  <div class="sch-hero-countdown" id="sch-next-cd"></div>
-</div>
-<div class="w" style="padding-top:0">
-  <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:16px;animation:fadeInUp .4s ease both .1s">
-    <div>
-      <div style="font-family:var(--font-head);font-size:17px;font-weight:800;color:var(--dk)" id="sch-header">Examenrooster HAVO 2026</div>
-      <div style="font-size:11px;color:var(--mu);margin-top:2px">1e tijdvak: 8–27 mei · 2e tijdvak: 16–23 juni</div>
-    </div>
-    <label style="display:flex;align-items:center;gap:6px;font-size:12px;font-weight:600;color:var(--mu);cursor:pointer"><input type="checkbox" id="sch-filter-mine" class="sch-check" onchange="renderSchedule()"> Mijn vakken</label>
+<div class="w" style="padding-top:24px">
+  <h2 style="font-size:22px;margin-bottom:6px" id="sch-header">Examenrooster HAVO 2026</h2>
+  <p style="font-size:13px;color:var(--mu);margin-bottom:18px">1e tijdvak: 8–27 mei · Normering: 11 juni 08:00 · 2e tijdvak: 16–23 juni</p>
+  <div class="sch-filter">
+    <label><input type="checkbox" id="sch-filter-mine" class="sch-check" onchange="renderSchedule()"> Alleen mijn vakken</label>
   </div>
-  <div id="schedule-list" class="sch-timeline"></div>
+  <div id="schedule-list" class="schedule-list"></div>
   <!-- Ad: rooster pagina (rustmoment) -->
   <div class="ad-wrapper" id="ad-schedule" style="margin-top:20px">
     <span class="ad-label">Advertentie</span>
@@ -4220,20 +3935,6 @@ html.dark .hsd-pill{background:var(--bg2);border-color:var(--bo2)}
 <div class="auth-wrap">
   <div class="auth-logo"><span class="logo-dot"></span><h1>Slagio</h1></div>
   <p class="auth-value-prop">Bewaar je streak, voortgang en cijfers — ook op andere apparaten.</p>
-  <div class="auth-features">
-    <div class="auth-feat">
-      <div class="auth-feat-icon" style="background:linear-gradient(135deg,rgba(var(--or-rgb),.2),rgba(var(--or-rgb),.08))">☁️</div>
-      <div class="auth-feat-text"><div class="auth-feat-title">Cloud-synchronisatie</div><div class="auth-feat-sub">Je voortgang, streak en XP automatisch opgeslagen op elk apparaat</div></div>
-    </div>
-    <div class="auth-feat">
-      <div class="auth-feat-icon" style="background:linear-gradient(135deg,rgba(245,158,11,.2),rgba(245,158,11,.08))">🏆</div>
-      <div class="auth-feat-text"><div class="auth-feat-title">Leaderboard</div><div class="auth-feat-sub">Compete met andere leerlingen en zie jouw rank per vak</div></div>
-    </div>
-    <div class="auth-feat">
-      <div class="auth-feat-icon" style="background:linear-gradient(135deg,rgba(236,72,153,.2),rgba(236,72,153,.08))">👥</div>
-      <div class="auth-feat-text"><div class="auth-feat-title">Groepen & uitdagingen</div><div class="auth-feat-sub">Maak een groep aan met je klas en daag vrienden uit</div></div>
-    </div>
-  </div>
   <div class="auth-card">
     <div class="auth-tabs">
       <button class="auth-tab active" id="auth-tab-login" onclick="switchAuthTab('login')">Inloggen</button>
@@ -4403,92 +4104,62 @@ html.dark .hsd-pill{background:var(--bg2);border-color:var(--bo2)}
 <nav class="nav"><div class="nav-inner"><div class="logo" onclick="show('sc-home')"><img src="/icon-192.png" alt="Slagio" style="width:26px;height:26px;border-radius:7px;object-fit:cover;flex-shrink:0">Slagio</div><button class="bk" onclick="show(window._privacyFrom||'sc-home')">← Terug</button><button class="theme-btn" onclick="toggleDark()" title="Nachtmodus" style="margin-left:auto"><svg viewBox="0 0 24 24"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg></button></div></nav>
 <div class="w privacy-content">
   <h2>Privacybeleid</h2>
-  <p class="privacy-updated">Laatst bijgewerkt: 3 april 2026</p>
+  <p class="privacy-updated">Laatst bijgewerkt: 15 maart 2026</p>
 
   <h3>1. Wie zijn wij</h3>
-  <p>Slagio is een gratis educatieve webapplicatie gericht op eindexamenvoorbereiding voor Nederlandse HAVO- en VWO-leerlingen. De app is bereikbaar via <a href="https://slagio.nl" target="_blank" rel="noopener">slagio.nl</a> en wordt gehost via GitHub Pages. De broncode is beschikbaar op GitHub.</p>
+  <p>Slagio is een gratis educatieve webapplicatie gericht op eindexamenvoorbereiding voor Nederlandse HAVO- en VWO-leerlingen. De app wordt aangeboden via GitHub Pages.</p>
 
   <h3>2. Welke gegevens verzamelen wij</h3>
-
-  <p><strong>2a. Gebruik zonder account (standaard)</strong><br>
-  Je kunt Slagio volledig gebruiken zonder een account aan te maken. In dat geval worden alle gegevens uitsluitend lokaal opgeslagen in de browser van je eigen apparaat (zie 2b). Er worden dan géén persoonsgegevens naar een server gestuurd.</p>
-
-  <p><strong>2b. Lokale opslag (localStorage)</strong><br>
-  De app slaat de volgende informatie op in je eigen browser. Deze gegevens verlaten je apparaat niet, tenzij je een account aanmaakt:</p>
+  <p><strong>Persoonlijke gegevens:</strong> Wij verzamelen géén persoonlijke gegevens zoals naam, e-mailadres of telefoonnummer. Je hoeft geen account aan te maken om de app te gebruiken.</p>
+  <p><strong>Lokale opslag (localStorage):</strong> De app slaat de volgende informatie op in de browser van je eigen apparaat:</p>
   <ul>
-    <li>Studiestreak, XP en voorgang per vak en domein</li>
-    <li>Adaptieve quizprestaties per vraag (<code>slagio_aqp_v1</code>)</li>
-    <li>Profielgegevens: weergavenaam, dieravatar, niveau (HAVO/VWO)</li>
-    <li>Favoriete domeinen en geselecteerde vakken</li>
+    <li>Studiestreak en voortgang per vak</li>
+    <li>Favoriete domeinen</li>
+    <li>Geselecteerde vakken ("mijn vakken")</li>
     <li>Ingevulde cijfers bij de calculator</li>
     <li>Thema-voorkeur (licht/donker)</li>
     <li>Cookie-toestemming</li>
-    <li>Groepslidmaatschap (groepscode, opgeslagen lokaal)</li>
   </ul>
+  <p>Deze gegevens verlaten nooit je apparaat en worden niet naar een server gestuurd.</p>
 
-  <p><strong>2c. Optioneel account (Supabase)</strong><br>
-  Als je een account aanmaakt, worden de volgende gegevens opgeslagen op onze cloudserver via <strong>Supabase</strong> (zie sectie 4):</p>
-  <ul>
-    <li><strong>E-mailadres</strong> — gebruikt voor inloggen en authenticatie</li>
-    <li><strong>Weergavenaam</strong> — zichtbaar op het leaderboard en in groepen</li>
-    <li><strong>Quizscores per vak en domein</strong> — voor het leaderboard</li>
-    <li><strong>Groepslidmaatschap</strong> — groepsnaam en -code, gekoppeld aan je account</li>
-    <li><strong>Uitdagingen (challenges)</strong> — score en vak, aangemaakt door of verstuurd naar jou</li>
-  </ul>
-  <p>Een account aanmaken is volledig optioneel. Alle kernfuncties van Slagio werken zonder account.</p>
-
-  <h3>3. Supabase — cloudopslag</h3>
-  <p>Voor accounts, leaderboard, groepen en challenges maken wij gebruik van <strong>Supabase</strong>, een open-source databaseplatform van Supabase Inc. Gegevens worden opgeslagen op servers in de <strong>Europese Unie (Frankfurt, AWS eu-central-1)</strong>.</p>
-  <p>Supabase verwerkt gegevens conform de AVG/GDPR. Meer informatie: <a href="https://supabase.com/privacy" target="_blank" rel="noopener">supabase.com/privacy</a>. Supabase is een verwerker in de zin van de AVG; wij zijn de verwerkingsverantwoordelijke.</p>
-  <p>Gegevens die via Supabase worden opgeslagen zijn alleen toegankelijk voor de eigenaar van het account en — voor zover het leaderboard of groepsscores betreft — voor andere deelnemers aan hetzelfde leaderboard of dezelfde groep.</p>
-
-  <h3>4. Cookies en advertenties</h3>
+  <h3>3. Cookies en advertenties</h3>
   <p>Wij gebruiken <strong>Google AdSense</strong> om advertenties te tonen. Google kan cookies plaatsen op je apparaat om advertenties te personaliseren op basis van je browse-geschiedenis. Dit betreft onder andere:</p>
   <ul>
     <li><strong>Functionele cookies:</strong> om je cookiekeuze te onthouden</li>
     <li><strong>Advertentiecookies (Google):</strong> om relevante advertenties te tonen, zoals het DoubleClick-cookie</li>
     <li><strong>Analytische cookies (Google):</strong> om anonieme gebruiksstatistieken te verzamelen</li>
   </ul>
-  <p>Je kunt je advertentievoorkeuren aanpassen via <a href="https://www.google.com/settings/ads" target="_blank" rel="noopener">Google Advertentie-instellingen</a> of via <a href="https://www.aboutads.info/choices/" target="_blank" rel="noopener">aboutads.info</a>.</p>
-  <p>Als je cookies weigert via onze cookiebanner worden er géén gepersonaliseerde advertenties getoond. Google kan dan nog wel niet-gepersonaliseerde advertenties tonen op basis van de paginainhoud. Meer informatie: <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Privacybeleid van Google</a>.</p>
+  <p>Je kunt je advertentievoorkeuren aanpassen via <a href="https://www.google.com/settings/ads" target="_blank" rel="noopener">Google Advertentie-instellingen</a>. Je kunt ook het gebruik van cookies door Google uitschakelen via <a href="https://www.aboutads.info/choices/" target="_blank" rel="noopener">aboutads.info</a>.</p>
+  <p>Als je cookies weigert via onze cookiebanner worden er géén gepersonaliseerde advertenties getoond. Google kan dan nog wel niet-gepersonaliseerde advertenties tonen op basis van de inhoud van de pagina.</p>
+
+  <h3>4. Google AdSense</h3>
+  <p>Wij maken gebruik van Google AdSense, een advertentiedienst van Google LLC ("Google"). Google AdSense maakt gebruik van cookies om advertenties te tonen die relevant zijn voor gebruikers. Het DART-cookie wordt door Google gebruikt om advertenties te tonen op basis van bezoeken aan deze en andere websites. Gebruikers kunnen het DART-cookie uitschakelen via het <a href="https://policies.google.com/technologies/ads" target="_blank" rel="noopener">Google-advertentiebeleid</a>.</p>
+  <p>Derde partijen, waaronder Google, gebruiken cookies om advertenties te tonen op basis van eerdere bezoeken van een gebruiker aan deze of andere websites. Voor meer informatie over hoe Google gegevens gebruikt, zie het <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Privacybeleid van Google</a>.</p>
 
   <h3>5. Rechtsgrondslag (AVG/GDPR)</h3>
-  <ul>
-    <li><strong>Advertentiecookies:</strong> toestemming (art. 6 lid 1 sub a AVG) via de cookiebanner. Je kunt toestemming altijd intrekken via "Cookie-instellingen" in de footer.</li>
-    <li><strong>Lokale studiegegevens:</strong> gerechtvaardigd belang (art. 6 lid 1 sub f AVG) — noodzakelijk voor het functioneren van de app. Deze gegevens verlaten je apparaat niet.</li>
-    <li><strong>Accountgegevens (Supabase):</strong> uitvoering van een overeenkomst (art. 6 lid 1 sub b AVG) — je geeft toestemming bij het aanmaken van een account en accepteert daarmee deze verwerkingsgrondslag.</li>
-  </ul>
+  <p>Voor het plaatsen van advertentiecookies vragen wij vooraf je <strong>toestemming</strong> via de cookiebanner (art. 6 lid 1 sub a AVG). Je kunt je toestemming op elk moment intrekken door je cookievoorkeuren te wijzigen — klik daarvoor op "Cookie-instellingen" in de footer van de app.</p>
+  <p>De lokale opslag van studiegegevens is gebaseerd op ons <strong>gerechtvaardigd belang</strong> (art. 6 lid 1 sub f AVG): het bieden van een werkende studietool. Deze gegevens verlaten je apparaat niet.</p>
 
   <h3>6. Bewaartermijn</h3>
-  <ul>
-    <li><strong>Lokale gegevens:</strong> blijven bewaard totdat je ze zelf verwijdert via browserinstellingen of via "Wissen"-knoppen in de app.</li>
-    <li><strong>Accountgegevens (Supabase):</strong> blijven bewaard zolang je account actief is. Je kunt je account en alle bijbehorende gegevens laten verwijderen via een verzoek (zie sectie 8).</li>
-    <li><strong>Google-cookies:</strong> verlopen conform het <a href="https://policies.google.com/technologies/cookies" target="_blank" rel="noopener">cookiebeleid van Google</a>.</li>
-  </ul>
+  <p>Lokale gegevens (localStorage) blijven bewaard totdat je ze zelf verwijdert via je browserinstellingen of via de "Wissen"-knoppen in de app. Cookies van Google verlopen conform het <a href="https://policies.google.com/technologies/cookies" target="_blank" rel="noopener">cookiebeleid van Google</a>.</p>
 
-  <h3>7. Leaderboard en groepen — zichtbaarheid</h3>
-  <p>Als je meedoet aan het leaderboard of een groep, is je <strong>weergavenaam en score zichtbaar voor andere gebruikers</strong> van hetzelfde leaderboard of dezelfde groep. Je e-mailadres is nooit zichtbaar voor andere gebruikers. Je kunt je weergavenaam aanpassen in je profiel.</p>
-  <p>Uitdagingen (challenge-links) bevatten je weergavenaam en score en kunnen worden gedeeld via een URL. Deel alleen links met personen die je vertrouwt.</p>
-
-  <h3>8. Jouw rechten</h3>
+  <h3>7. Jouw rechten</h3>
   <p>Onder de AVG/GDPR heb je de volgende rechten:</p>
   <ul>
-    <li><strong>Inzage:</strong> lokale gegevens via browserinstellingen (DevTools → Application → Local Storage); accountgegevens via je profielpagina in de app.</li>
-    <li><strong>Verwijdering lokale data:</strong> via browserinstellingen of de "Wissen"-knoppen in de app.</li>
-    <li><strong>Verwijdering account:</strong> stuur een verzoek via de contactinformatie in sectie 10. Wij verwijderen dan je account en alle bijbehorende Supabase-gegevens binnen 30 dagen.</li>
-    <li><strong>Bezwaar advertenties:</strong> weiger cookies via de cookiebanner of pas voorkeuren aan bij Google.</li>
-    <li><strong>Intrekking toestemming:</strong> klik op "Cookie-instellingen" in de footer.</li>
-    <li><strong>Overdraagbaarheid:</strong> je kunt een export van je quizdata opvragen via de contactinformatie hieronder.</li>
+    <li><strong>Inzage:</strong> je kunt je lokale gegevens bekijken via je browserinstellingen (DevTools → Application → Local Storage)</li>
+    <li><strong>Verwijdering:</strong> wis je browsergegevens of gebruik de "Wissen"-knoppen in de app</li>
+    <li><strong>Bezwaar:</strong> weiger cookies via de cookiebanner of pas je advertentievoorkeuren aan bij Google</li>
+    <li><strong>Intrekking toestemming:</strong> klik op "Cookie-instellingen" in de footer om je keuze te wijzigen</li>
   </ul>
 
-  <h3>9. Minderjarigen</h3>
-  <p>Slagio is bedoeld voor leerlingen in het voortgezet onderwijs (12–18 jaar). Voor advertentiecookies vragen wij toestemming via de cookiebanner. Wij raden minderjarigen aan dit beleid samen met een ouder of verzorger te lezen voordat zij een account aanmaken. Bij het aanmaken van een account door een minderjarige gaan wij ervan uit dat daarvoor toestemming is van een ouder of verzorger.</p>
+  <h3>8. Minderjarigen</h3>
+  <p>Deze app is bedoeld voor leerlingen in het voortgezet onderwijs. Wij verzamelen geen persoonlijke gegevens. Voor het tonen van advertenties aan gebruikers onder de 16 jaar vragen wij toestemming via de cookiebanner. Wij raden minderjarigen aan dit privacybeleid samen met een ouder of verzorger te lezen.</p>
 
-  <h3>10. Wijzigingen</h3>
-  <p>Dit privacybeleid kan worden bijgewerkt wanneer de app nieuwe functies krijgt. De datum bovenaan geeft de laatste wijziging aan. Bij substantiële wijzigingen — met name rond persoonsgegevens — tonen wij opnieuw de cookiebanner of een melding in de app.</p>
+  <h3>9. Wijzigingen</h3>
+  <p>Dit privacybeleid kan worden bijgewerkt. De datum bovenaan geeft de laatste wijziging aan. Bij substantiële wijzigingen tonen wij opnieuw de cookiebanner.</p>
 
-  <h3>11. Contact</h3>
-  <p>Vragen, verzoeken tot inzage of verwijdering? Neem contact op via de GitHub-repository: <a href="https://github.com/pepijnrosmalen2008-droid/examenapp-havo" target="_blank" rel="noopener">github.com/pepijnrosmalen2008-droid/examenapp-havo</a>.</p>
+  <h3>10. Contact</h3>
+  <p>Vragen over dit privacybeleid? Neem contact op via het GitHub-repository van deze app of stuur een bericht via school.</p>
 </div>
 </div>
 
@@ -8920,8 +8591,6 @@ function initChallengeOnLoad(){
   document.getElementById('chal-intro-sub').textContent='daagt je uit bij '+vak.naam+' — '+domein.naam;
   document.getElementById('chal-intro-score').textContent=c.score;
   document.getElementById('chal-intro-max').textContent='/ 1000 punten';
-  const av=document.getElementById('chal-intro-avatar');
-  if(av)av.textContent=(c.naam||'?').slice(0,1).toUpperCase();
   // Set up ST so accept goes straight to quiz
   ST.vak=vak;ST.domein=domein;
   show('sc-chal-intro');
@@ -9030,59 +8699,45 @@ async function renderGroepScreen(){
   if(!g){
     // No group — show join/create UI
     wrap.innerHTML=`
-      <div class="grp-hero" style="text-align:center">
-        <div style="font-size:44px;margin-bottom:10px;position:relative;z-index:1">👥</div>
-        <div style="font-family:var(--font-head);font-size:21px;font-weight:900;color:var(--dk);margin-bottom:6px;position:relative;z-index:1">Groep aanmaken of joinen</div>
-        <div style="font-size:13px;color:var(--mu);position:relative;z-index:1">Vergelijk jouw scores met vrienden of klasgenoten</div>
-      </div>
-      <div class="grp-join-section">
-        <div class="grp-join-title">Doe mee met een groep</div>
-        <div class="grp-join-sub">Voer de groepscode in van je vriend of klas</div>
-        <input class="grp-input" id="grp-join-code" placeholder="VOER CODE IN" maxlength="6">
+      <div style="text-align:center;padding:20px 0 12px"><div style="font-size:40px">👥</div>
+      <div style="font-family:var(--font-head);font-size:20px;font-weight:800;color:var(--dk);margin:8px 0 4px">Groep aanmaken of joinen</div>
+      <div style="font-size:13px;color:var(--mu);margin-bottom:24px">Vergelijk jouw scores met vrienden of klasgenoten</div></div>
+      <div class="grp-card">
+        <div style="font-weight:700;font-size:14px;color:var(--dk);margin-bottom:10px">Doe mee met een groep</div>
+        <input class="grp-input" id="grp-join-code" placeholder="Voer code in (bijv. XK4M7R)" maxlength="6">
         <button class="grp-join-btn" onclick="doeGroepMee(document.getElementById('grp-join-code').value)">Doe mee →</button>
       </div>
-      <div class="grp-divider">of</div>
-      <div class="grp-join-section">
-        <div class="grp-join-title">Maak een nieuwe groep</div>
-        <div class="grp-join-sub">Deel de code met vrienden zodat ze mee kunnen doen</div>
-        <input class="grp-input grp-create-input" id="grp-new-naam" placeholder="Groepsnaam (bijv. Klas 5H)">
+      <div style="text-align:center;color:var(--mu);font-size:12px;margin:8px 0">— of —</div>
+      <div class="grp-card">
+        <div style="font-weight:700;font-size:14px;color:var(--dk);margin-bottom:10px">Maak een nieuwe groep</div>
+        <input class="grp-input grp-create-input" id="grp-new-naam" placeholder="Groepsnaam (bijv. Klas 5H-B)">
         <button class="grp-create-btn" onclick="maakGroep(document.getElementById('grp-new-naam').value)">+ Maak groep aan</button>
       </div>
-      ${!currentUser?'<div class="grp-no-login">⚠️ Je moet ingelogd zijn om een groep aan te maken of te joinen.</div>':''}`;
+      ${!currentUser?'<div class="grp-empty">⚠️ Je moet ingelogd zijn om een groep aan te maken of te joinen.</div>':''}`;
     return;
   }
   // Has group — show scores
-  wrap.innerHTML=`<div style="display:flex;justify-content:center;padding:32px 0"><div style="animation:spin 1s linear infinite;font-size:24px">⏳</div></div>`;
+  wrap.innerHTML=`<div style="display:flex;justify-content:center"><div style="animation:spin 1s linear infinite;font-size:24px">⏳</div></div>`;
   const members=await fetchGroepLeaderboard(g.id);
-  const avatarColors=['#f97316','#8b5cf6','#06b6d4','#10b981','#ef4444','#f59e0b','#3b82f6','#ec4899'];
-  let html=`<div class="grp-hero">
-    <div style="display:flex;justify-content:space-between;align-items:flex-start;gap:12px;position:relative;z-index:1">
-      <div>
-        <div class="grp-hero-name">${g.name}</div>
-        <div class="grp-code">${g.code}</div>
-        <div class="grp-members-count">${members.length} ${members.length===1?'lid':'leden'}</div>
-      </div>
-      <div style="display:flex;flex-direction:column;gap:8px;align-items:flex-end">
-        <button class="grp-copy-btn" onclick="navigator.clipboard.writeText('${g.code}').then(()=>showToast('Code gekopieerd! 📋'))">📋 Kopieer</button>
-        <button class="grp-leave-btn" onclick="verlaarGroep()">Verlaat</button>
+  let html=`<div class="grp-card">
+    <div class="grp-card-top">
+      <div><div class="grp-name">${g.name}</div><div class="grp-code">${g.code}</div><div class="grp-members-count">${members.length} ${members.length===1?'lid':'leden'}</div></div>
+      <div style="display:flex;flex-direction:column;gap:6px;align-items:flex-end">
+        <button class="grp-copy-btn" onclick="navigator.clipboard.writeText('${g.code}').then(()=>showToast('Code gekopieerd! 📋'))">📋 Kopieer code</button>
+        <button class="grp-leave-btn" onclick="verlaarGroep()">Verlaat groep</button>
       </div>
     </div>
   </div>
-  <div class="grp-scoreboard">
-    <div class="grp-scoreboard-title">🏆 Scoreboard</div>`;
+  <div class="grp-card">
+    <div style="font-weight:700;font-size:14px;color:var(--dk);margin-bottom:12px">🏆 Scoreboard</div>`;
   if(members.length===0){html+=`<div class="grp-empty">Nog geen scores. Maak een quiz!</div>`;}
   else{
     const medals=['🥇','🥈','🥉'];
     members.forEach((m,i)=>{
       const isMe=currentUser&&m.user_id===currentUser.id;
-      const initials=(m.display_name||'?').slice(0,1).toUpperCase();
-      const color=avatarColors[i%avatarColors.length];
-      html+=`<div class="grp-member-row${isMe?' is-me':''}">
-        <div class="grp-rank-badge">${medals[i]||'#'+(i+1)}</div>
-        <div class="grp-member-avatar" style="background:${color}">${initials}</div>
-        <div class="grp-member-info">
-          <div class="grp-member-name">${m.display_name||'Onbekend'}${isMe?' <span style="font-size:10px;color:var(--or)">(jij)</span>':''}</div>
-        </div>
+      html+=`<div class="grp-member-row"${isMe?' style="background:rgba(var(--or-rgb),.06);border-radius:8px;padding:8px;"':''}>
+        <div class="grp-member-rank">${medals[i]||'#'+(i+1)}</div>
+        <div class="grp-member-name">${m.display_name||'Onbekend'}${isMe?' <span style="font-size:10px;color:var(--or)">(jij)</span>':''}</div>
         <div class="grp-member-score">${m.score||0}</div>
       </div>`;
     });
@@ -12959,39 +12614,7 @@ const EXAM_SCHEDULE=[
 ];
 function getMijnVakken(){try{const d=JSON.parse(localStorage.getItem('examenapp_'+lvlCol('mijnvakken'))||'[]');return Array.isArray(d)?d:(d.list||[]);}catch(e){return [];}}
 function setMijnVakken(arr){cloudSet(lvlCol('mijnvakken'),{list:arr});}
-function renderScheduleHero(){
-  const heroCard=document.getElementById('sch-next-hero');
-  const vakEl=document.getElementById('sch-next-vak');
-  const dateEl=document.getElementById('sch-next-date');
-  const cdEl=document.getElementById('sch-next-cd');
-  if(!heroCard||!vakEl)return;
-  const allVakken=APP_LEVEL==='vwo'?(typeof VAKKEN_VWO!=='undefined'?VAKKEN_VWO:[]):(typeof VAKKEN!=='undefined'?VAKKEN:[]);
-  const now=new Date();
-  const upcoming=allVakken
-    .filter(v=>v.exDatum)
-    .map(v=>({...v,d:new Date(v.exDatum)}))
-    .filter(v=>v.d>=now)
-    .sort((a,b)=>a.d-b.d);
-  if(!upcoming.length){vakEl.textContent='Geen examens gepland';return;}
-  const next=upcoming[0];
-  vakEl.textContent=next.naam;
-  const opts={weekday:'long',day:'numeric',month:'long'};
-  dateEl.textContent=(next.exTijd?next.exTijd+' · ':'')+next.d.toLocaleDateString('nl-NL',opts);
-  function tickHero(){
-    const diff=next.d-new Date();
-    if(diff<=0){cdEl.innerHTML='<span style="color:var(--or);font-weight:700">Vandaag!</span>';return;}
-    const days=Math.floor(diff/86400000);
-    const hours=Math.floor((diff%86400000)/3600000);
-    const mins=Math.floor((diff%3600000)/60000);
-    const secs=Math.floor((diff%60000)/1000);
-    cdEl.innerHTML=`<div class="sch-cd-box"><div class="sch-cd-val">${days}</div><div class="sch-cd-unit">dagen</div></div><div class="sch-cd-box"><div class="sch-cd-val">${hours}</div><div class="sch-cd-unit">uren</div></div><div class="sch-cd-box"><div class="sch-cd-val">${mins}</div><div class="sch-cd-unit">min</div></div><div class="sch-cd-box"><div class="sch-cd-val">${secs}</div><div class="sch-cd-unit">sec</div></div>`;
-  }
-  tickHero();
-  if(window._schedHeroTimer)clearInterval(window._schedHeroTimer);
-  window._schedHeroTimer=setInterval(tickHero,1000);
-}
 function renderSchedule(){
-  renderScheduleHero();
   const list=document.getElementById('schedule-list');
   const onlyMine=document.getElementById('sch-filter-mine').checked;
   const mijn=getMijnVakken();
@@ -14013,8 +13636,6 @@ function chooseLevel(level){
 function updateLevelChip(){
   const chip=document.getElementById('home-level-chip');
   if(chip)chip.textContent=(APP_LEVEL==='vwo'?'VWO':'HAVO')+' 2026';
-  const dchip=document.getElementById('drawer-level-chip');
-  if(dchip)dchip.textContent=(APP_LEVEL==='vwo'?'VWO':'HAVO')+' 2026';
   const badge=document.getElementById('vak-level-badge');
   if(badge)badge.textContent=(APP_LEVEL==='vwo'?'VWO':'HAVO');
 }
@@ -14065,8 +13686,8 @@ function updateBottomNav(id){
   // Update profiel button label: Inloggen vs Profiel
   const lbl=document.getElementById('bnav-profiel-label');
   if(lbl)lbl.textContent=currentUser?'Profiel':'Inloggen';
-  // Hide bottom nav during quiz/flashcard/qmode and on home (home has its own bnav)
-  const hideScreens=['sc-quiz','sc-flash','sc-qmode','sc-welcome','sc-race','sc-home'];
+  // Hide bottom nav during quiz/flashcard/qmode
+  const hideScreens=['sc-quiz','sc-flash','sc-qmode','sc-welcome','sc-race'];
   const bn=document.getElementById('bottom-nav');
   if(bn) bn.style.display=hideScreens.includes(id)?'none':'';
   // Avatar in de profiel-knop van de bottom nav
@@ -14084,37 +13705,6 @@ function updateBottomNav(id){
 // Patch show() to update bottom nav
 const _origShow=show;
 window.show=function(id){_origShow(id);updateBottomNav(id);};
-function switchHomeTab(tab){
-  document.querySelectorAll('.home-tab-panel').forEach(p=>p.classList.remove('active'));
-  document.querySelectorAll('.bnav-tab').forEach(b=>b.classList.remove('active'));
-  const panel=document.getElementById('tab-'+tab);
-  const btn=document.getElementById('bnav-'+tab);
-  if(panel)panel.classList.add('active');
-  if(btn)btn.classList.add('active');
-  window.scrollTo(0,0);
-}
-function toggleDrawer(){
-  const drawer=document.getElementById('home-drawer');
-  const overlay=document.getElementById('drawer-overlay');
-  const btn=document.getElementById('hmb-btn');
-  const isOpen=drawer&&drawer.classList.contains('open');
-  if(isOpen){closeDrawer();}
-  else{
-    if(drawer)drawer.classList.add('open');
-    if(overlay)overlay.classList.add('open');
-    if(btn){btn.classList.add('open');btn.setAttribute('aria-expanded','true');}
-    document.body.style.overflow='hidden';
-  }
-}
-function closeDrawer(){
-  const drawer=document.getElementById('home-drawer');
-  const overlay=document.getElementById('drawer-overlay');
-  const btn=document.getElementById('hmb-btn');
-  if(drawer)drawer.classList.remove('open');
-  if(overlay)overlay.classList.remove('open');
-  if(btn){btn.classList.remove('open');btn.setAttribute('aria-expanded','false');}
-  document.body.style.overflow='';
-}
 </script>
 
 <!-- Bottom Navigation (mobile only) -->
@@ -14533,16 +14123,12 @@ if('serviceWorker' in navigator){
 <div id="sc-chal-intro" class="sc">
   <div class="qh"><button class="back-btn" onclick="show('sc-home')">←</button><span>Uitdaging</span></div>
   <div style="padding:16px 16px 32px">
-    <div class="chal-intro-wrap">
-      <div class="chal-challenger-avatar" id="chal-intro-avatar">?</div>
-      <div class="chal-challenger-name" id="chal-intro-naam">Iemand</div>
-      <div class="chal-challenger-sub" id="chal-intro-sub">daagt je uit bij</div>
-      <div class="chal-vs-badge">⚔️ Score te verslaan</div>
-      <div class="chal-score-box">
-        <div class="chal-score-lbl">Punten te verslaan</div>
-        <div class="chal-score-num" id="chal-intro-score">0</div>
-        <div class="chal-score-max" id="chal-intro-max">/ 1000 punten</div>
-      </div>
+    <div class="chal-intro-card">
+      <div class="chal-intro-icon">⚔️</div>
+      <div class="chal-intro-name" id="chal-intro-naam">Iemand</div>
+      <div class="chal-intro-sub" id="chal-intro-sub">daagt je uit bij</div>
+      <div class="chal-intro-score" id="chal-intro-score">0</div>
+      <div class="chal-intro-max" id="chal-intro-max">/ 1000 punten</div>
       <button class="chal-accept-btn" id="chal-accept-btn" onclick="acceptChallenge()">⚔️ Accepteer uitdaging</button>
       <button class="chal-decline-btn" onclick="show('sc-home')">Niet nu</button>
     </div>
