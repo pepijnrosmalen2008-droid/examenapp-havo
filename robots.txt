@@ -33,3 +33,6 @@ User-agent: YouBot
 Allow: /
 
 Sitemap: https://slagio.nl/sitemap.xml
+
+# LLMs.txt — beschrijving voor AI-assistenten
+# https://slagio.nl/llms.txt
