@@ -2988,6 +2988,22 @@ html.dark .hsd-pill{background:var(--bg2);border-color:var(--bo2)}
 .confirm-overlay.show{opacity:1;pointer-events:all}
 .confirm-card{background:var(--s);border:1px solid var(--bo);border-radius:20px;padding:28px 24px 22px;max-width:380px;width:100%;box-shadow:0 20px 60px rgba(0,0,0,.4);transform:scale(.94) translateY(8px);transition:transform .22s cubic-bezier(.34,1.56,.64,1)}
 .confirm-overlay.show .confirm-card{transform:scale(1) translateY(0)}
+/* ── DAILY CHALLENGE POPUP ───────────────────── */
+#dc-popup{position:fixed;inset:0;z-index:9000;background:rgba(0,0,0,.55);backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px);display:flex;align-items:flex-end;justify-content:center;padding:0 0 24px;opacity:0;pointer-events:none;transition:opacity .25s}
+@media(min-height:580px){#dc-popup{align-items:center;padding:20px}}
+#dc-popup.show{opacity:1;pointer-events:all}
+.dc-popup-card{background:var(--s);border:1px solid var(--bo);border-radius:24px;padding:24px 22px 20px;max-width:400px;width:calc(100% - 32px);box-shadow:0 24px 64px rgba(0,0,0,.4);transform:translateY(40px);transition:transform .28s cubic-bezier(.34,1.4,.64,1);position:relative}
+#dc-popup.show .dc-popup-card{transform:translateY(0)}
+.dc-popup-badge{display:inline-flex;align-items:center;gap:6px;background:linear-gradient(135deg,rgba(var(--or-rgb),.18),rgba(var(--or-rgb),.06));border:1px solid rgba(var(--or-rgb),.3);border-radius:20px;padding:4px 12px;font-size:11px;font-weight:700;color:var(--or);letter-spacing:.3px;margin-bottom:12px;text-transform:uppercase}
+.dc-popup-title{font-family:var(--font-head);font-size:22px;font-weight:800;color:var(--dk);line-height:1.2;margin-bottom:4px}
+.dc-popup-sub{font-size:13px;color:var(--mu);margin-bottom:16px;line-height:1.5}
+.dc-popup-xp{display:flex;align-items:center;gap:8px;background:rgba(var(--or-rgb),.07);border:1px solid rgba(var(--or-rgb),.18);border-radius:12px;padding:10px 14px;margin-bottom:20px;font-size:13px;font-weight:600;color:var(--dk)}
+.dc-popup-btns{display:flex;gap:10px}
+.dc-popup-start{flex:1;padding:13px;border-radius:14px;border:none;background:linear-gradient(135deg,#f97316,#f59e0b);color:#fff;font-family:var(--font-head);font-size:14px;font-weight:700;cursor:pointer;transition:all .2s cubic-bezier(.34,1.2,.64,1);box-shadow:0 4px 14px rgba(var(--or-rgb),.3)}
+.dc-popup-start:hover{transform:translateY(-2px);box-shadow:0 8px 22px rgba(var(--or-rgb),.42)}
+.dc-popup-start:active{transform:scale(.97)}
+.dc-popup-skip{padding:13px 18px;border-radius:14px;border:1.5px solid var(--bo);background:transparent;color:var(--mu);font-family:var(--font);font-size:13px;font-weight:600;cursor:pointer;transition:all .2s}
+.dc-popup-skip:hover{border-color:var(--or);color:var(--or)}
 .confirm-icon{font-size:36px;margin-bottom:12px;display:block;text-align:center}
 .confirm-title{font-family:var(--font-head);font-size:18px;font-weight:800;color:var(--dk);text-align:center;margin-bottom:8px}
 .confirm-msg{font-size:14px;color:var(--mu);text-align:center;line-height:1.65;margin-bottom:22px}
@@ -3042,6 +3058,18 @@ html.dark .hsd-pill{background:var(--bg2);border-color:var(--bo2)}
 <a href="#main-content" class="skip-link">Ga naar inhoud</a>
 
 <!-- CONFIRM DIALOG -->
+<div id="dc-popup" role="dialog" aria-modal="true" aria-label="Dagelijkse uitdaging">
+  <div class="dc-popup-card">
+    <div class="dc-popup-badge">⚡ Dagelijkse uitdaging</div>
+    <div class="dc-popup-title" id="dc-popup-title"></div>
+    <div class="dc-popup-sub" id="dc-popup-sub"></div>
+    <div class="dc-popup-xp">🔥 +2× XP bonus op elke vraag vandaag</div>
+    <div class="dc-popup-btns">
+      <button class="dc-popup-start" onclick="closeDcPopup(true)">Starten →</button>
+      <button class="dc-popup-skip" onclick="closeDcPopup(false)">Niet nu</button>
+    </div>
+  </div>
+</div>
 <div class="confirm-overlay" id="confirm-overlay" role="dialog" aria-modal="true" aria-labelledby="confirm-title-el">
   <div class="confirm-card">
     <span class="confirm-icon" id="confirm-icon">⚠️</span>
@@ -9625,7 +9653,7 @@ function toonRes(){
   try{const _pbRes=savePB(ST.vak.id,ST.domein.id,pct);if(_pbRes.isNew){window._newPB=true;window._oldPB=_pbRes.prev?_pbRes.prev.score:null;}}catch(e){}
   // Rebuild grid and streak to update UI
   try{const g=document.getElementById('vakgrid');if(g){g.innerHTML='';buildGrid();}
-  renderStreak();renderFavHome();renderXPHome();renderDailyChallenge();renderDailyGoal();renderLiveCount();renderHomeStats();renderGreeting();try{renderComebackCard();}catch(e){}}catch(e){}
+  renderStreak();renderFavHome();renderXPHome();renderDailyChallenge();renderDailyGoal();renderLiveCount();renderHomeStats();renderGreeting();try{renderComebackCard();}catch(e){}showDailyChallengePopup();}catch(e){}
   try{recordDailyGoal();}catch(e){};
   const isPerfect=pct===1&&ST.mode==='snel'&&tot>=3;
   if(isPerfect&&earnAch('perfect'))setTimeout(()=>showAch('🌟','Perfecte score! Geen enkel fout!',90),800);
@@ -12242,41 +12270,29 @@ function getDailyChallenge(){
   return dc;
 }
 function renderDailyChallenge(){
+  // Inline card verwijderd — uitdaging verschijnt nu als popup
   const box=document.getElementById('daily-challenge-home');
-  if(!box)return;
+  if(box)box.innerHTML='';
   _dcCache=getDailyChallenge();
-  if(!_dcCache){box.innerHTML='';return;}
-  // Bereken hoeveel uur/minuten er nog zijn tot middernacht
-  const now=new Date();
-  const midnight=new Date(now);midnight.setHours(23,59,59,999);
-  const msLeft=midnight-now;
-  const hLeft=Math.floor(msLeft/3600000);
-  const mLeft=Math.floor((msLeft%3600000)/60000);
-  const timerStr=hLeft>0?`${hLeft}u ${mLeft}m over`:`${mLeft}m over`;
-  if(_dcCache.done){
-    box.innerHTML=`<div class="daily-card-done">
-      <div class="daily-card-done-icon">✅</div>
-      <div class="daily-card-done-info">
-        <div class="daily-card-done-title">Dagelijkse uitdaging voltooid!</div>
-        <div class="daily-card-done-sub">${_dcCache.vakNaam} · ${_dcCache.domeinNaam} · +2× XP verdiend</div>
-      </div>
-    </div>`;
-    return;
-  }
-  box.innerHTML=`<div class="daily-card pulse-chip" onclick="startDailyChallenge()">
-    <div class="daily-card-top">
-      <div class="daily-card-badge">⚡ Dagelijkse uitdaging</div>
-      <div class="daily-card-timer">🕐 ${timerStr}</div>
-    </div>
-    <div class="daily-card-body">
-      <div class="daily-card-title">${_dcCache.domeinNaam}</div>
-      <div class="daily-card-sub">${_dcCache.vakNaam} · Snelle Quiz · 15 sec per vraag</div>
-    </div>
-    <div class="daily-card-foot">
-      <div class="daily-card-xp">🔥 +2× XP bonus op elke vraag</div>
-      <button class="daily-card-cta" onclick="event.stopPropagation();startDailyChallenge()">Starten →</button>
-    </div>
-  </div>`;
+}
+function showDailyChallengePopup(){
+  const dc=getDailyChallenge();
+  if(!dc||dc.done)return; // al gedaan vandaag
+  if(sessionStorage.getItem('dc_dismissed'))return; // al weggeklikt deze sessie
+  const popup=document.getElementById('dc-popup');
+  if(!popup)return;
+  const titleEl=document.getElementById('dc-popup-title');
+  const subEl=document.getElementById('dc-popup-sub');
+  if(titleEl)titleEl.textContent=dc.domeinNaam;
+  if(subEl)subEl.textContent=dc.vakNaam+' · Snelle Quiz · 15 sec per vraag';
+  _dcCache=dc;
+  setTimeout(()=>popup.classList.add('show'),500);
+}
+function closeDcPopup(start){
+  const popup=document.getElementById('dc-popup');
+  if(popup)popup.classList.remove('show');
+  sessionStorage.setItem('dc_dismissed','1');
+  if(start)setTimeout(startDailyChallenge,300);
 }
 function startDailyChallenge(){
   try{
@@ -13637,6 +13653,7 @@ function chooseLevel(level){
   const _isNew=!localStorage.getItem(OB_KEY)&&!localStorage.getItem('slagio_seen_intro_v2');
   if(_isNew){setTimeout(showOnboarding,300);}
   else if(!localStorage.getItem(TUTO_KEY)){setTimeout(showTutorial,400);}
+  else{showDailyChallengePopup();}
 }
 function updateLevelChip(){
   const chip=document.getElementById('home-level-chip');
