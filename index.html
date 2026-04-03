@@ -2559,6 +2559,7 @@ html.dark .calc-btn{background:#2e3550}
 .lbp-close:hover{background:var(--bo)}
 .lbp-header{display:flex;align-items:center;gap:16px;margin-bottom:16px}
 .lbp-av{font-size:50px;width:68px;height:68px;border-radius:50%;background:var(--bg2);border:3px solid var(--bo);display:flex;align-items:center;justify-content:center;flex-shrink:0;overflow:hidden}
+.lbp-av-wrap{position:relative;flex-shrink:0;width:68px;height:68px}
 .lbp-headinfo{flex:1}
 .lbp-naam{font-size:20px;font-weight:800;color:var(--dk);margin-bottom:5px}
 .lbp-chips{display:flex;gap:5px;flex-wrap:wrap;align-items:center}
@@ -11280,7 +11281,7 @@ function openLbProfile(naam){
     <div class="lbp-drag"></div>
     <button class="lbp-close" onclick="closeLbProfile()">✕</button>
     <div class="lbp-header">
-      <div class="lbp-av" style="position:relative">${avatarHtml}${getLbBadgeOverlay(allEntries[0]?.featuredBadgeId)}</div>
+      <div class="lbp-av-wrap"><div class="lbp-av">${avatarHtml}</div>${getLbBadgeOverlay(allEntries[0]?.featuredBadgeId)}</div>
       <div class="lbp-headinfo">
         <div class="lbp-naam">${naam}${isBot?'<span style="font-size:10px;color:var(--mu);font-weight:500;margin-left:6px">· bot</span>':''}</div>
         <div class="lbp-chips">
