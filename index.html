@@ -1239,6 +1239,9 @@ html.dark .qb{background:#2e3550}
 .rbr{display:flex;justify-content:space-between;padding:9px 0;border-bottom:1px solid rgba(255,255,255,.07);font-size:14px;color:rgba(255,255,255,.7)}
 .rbr:last-child{border:none}
 .rbc{color:#4ADE80;font-weight:700}.rbw{color:#F87171;font-weight:700}.rbs{color:rgba(255,255,255,.3);font-weight:700}
+.res-lb-row{background:rgba(var(--or-rgb),.07);border-radius:8px;padding:8px 10px;margin-top:4px;border:1px solid rgba(var(--or-rgb),.2)}
+.res-lb-val{font-family:var(--font-head);font-size:20px;font-weight:900;color:var(--or)}
+.res-lb-max{font-size:13px;font-weight:600;opacity:.55}
 .rbtns{display:flex;gap:12px;flex-direction:column}
 .btnp{background:var(--or);color:#fff;border:none;border-radius:14px;padding:18px;font-family:var(--font-head);font-size:16px;font-weight:700;cursor:pointer;transition:all 0.2s ease;box-shadow:0 4px 18px rgba(232,92,13,0.3)}
 .btnp:hover{background:#d14f09;box-shadow:0 6px 24px rgba(232,92,13,0.4)}
@@ -3629,7 +3632,7 @@ html.dark .hsd-pill{background:var(--bg2);border-color:var(--bo2)}
           <div class="lb-score-part-icon">✅</div>
           <div>
             <div class="lb-score-part-title">Nauwkeurigheid</div>
-            <div class="lb-score-part-val">+100 per goed antwoord</div>
+            <div class="lb-score-part-val">+50 per goed antwoord</div>
           </div>
         </div>
         <div class="lb-score-plus">+</div>
@@ -3637,20 +3640,20 @@ html.dark .hsd-pill{background:var(--bg2);border-color:var(--bo2)}
           <div class="lb-score-part-icon">⚡</div>
           <div>
             <div class="lb-score-part-title">Snelheidsbonus</div>
-            <div class="lb-score-part-val">+100 per vraag als je snel bent</div>
+            <div class="lb-score-part-val">+50 per vraag als je snel bent</div>
           </div>
         </div>
       </div>
       <div class="lb-score-example">
-        <div class="lb-score-ex-title">Voorbeeld — 5/5 goed, 14s/vraag over</div>
-        <div class="lb-score-ex-calc">5 × 100 <span>+</span> 5 × 93 <span>=</span> <strong>965 punten</strong></div>
+        <div class="lb-score-ex-title">Voorbeeld — 10/10 goed, 14s/vraag over</div>
+        <div class="lb-score-ex-calc">10 × 50 <span>+</span> 10 × 46 <span>=</span> <strong>960 punten</strong></div>
       </div>
       <div class="lb-score-tiers">
         <div class="lb-score-tier-title">Hoe zien de niveaus eruit?</div>
-        <div class="lb-tier-row"><span class="lb-tier-av">🏆</span><span class="lb-tier-lbl">Elite</span><span class="lb-tier-pts">850–1000 pts · 5/5 razendsnel</span></div>
-        <div class="lb-tier-row"><span class="lb-tier-av">⚡</span><span class="lb-tier-lbl">Expert</span><span class="lb-tier-pts">650–849 pts · 4-5/5</span></div>
-        <div class="lb-tier-row"><span class="lb-tier-av">📚</span><span class="lb-tier-lbl">Gevorderd</span><span class="lb-tier-pts">400–649 pts · 2-4/5</span></div>
-        <div class="lb-tier-row"><span class="lb-tier-av">✏️</span><span class="lb-tier-lbl">Leerling</span><span class="lb-tier-pts">150–399 pts · 1-3/5</span></div>
+        <div class="lb-tier-row"><span class="lb-tier-av">🏆</span><span class="lb-tier-lbl">Elite</span><span class="lb-tier-pts">850–1000 pts · 10/10 razendsnel</span></div>
+        <div class="lb-tier-row"><span class="lb-tier-av">⚡</span><span class="lb-tier-lbl">Expert</span><span class="lb-tier-pts">650–849 pts · 8-10/10</span></div>
+        <div class="lb-tier-row"><span class="lb-tier-av">📚</span><span class="lb-tier-lbl">Gevorderd</span><span class="lb-tier-pts">400–649 pts · 6-8/10</span></div>
+        <div class="lb-tier-row"><span class="lb-tier-av">✏️</span><span class="lb-tier-lbl">Leerling</span><span class="lb-tier-pts">150–399 pts · 3-6/10</span></div>
         <div class="lb-tier-row"><span class="lb-tier-av">🌱</span><span class="lb-tier-lbl">Beginner</span><span class="lb-tier-pts">0–149 pts · eerste stappen</span></div>
       </div>
     </div>
@@ -7799,7 +7802,7 @@ function startQ(mode){
   const pool=mode==='snel'?ST.domein.sv:ST.domein.oe;
   if(mode==='snel'){
     const shuffled=[...pool].sort(()=>Math.random()-.5);
-    ST.vragen=shuffled.slice(0,5);
+    ST.vragen=shuffled.slice(0,10);
   }else{
     ST.vragen=pool.slice();
   }
@@ -8557,9 +8560,12 @@ function toonRes(){
     if(ST.mode==='snel'){
       const goed=ST.antwrd.filter(a=>a.pts===1).length;
       const fout=ST.antwrd.filter(a=>a.pts===0).length;
+      const lbScoreDisplay=ST.antwrd.reduce((sum,a)=>sum+a.pts*50+Math.round((a.tijdOver||0)/15*50),0);
+      const maxLbScore=tot*100;
       bdHtml=`<div class="rbr"><span>✓ Correct</span><span class="rbc">${goed} / ${tot}</span></div>
         <div class="rbr"><span>✗ Fout of tijd op</span><span class="rbw">${fout}</span></div>
-        <div class="rbr"><span>Score</span><span style="font-weight:600;color:var(--or)">${Math.round(pct*100)}%</span></div>`;
+        <div class="rbr"><span>Nauwkeurigheid</span><span style="font-weight:600;color:var(--or)">${Math.round(pct*100)}%</span></div>
+        <div class="rbr res-lb-row"><span>🏆 Leaderboardscore</span><span class="res-lb-val">${lbScoreDisplay} <span class="res-lb-max">/ ${maxLbScore}</span></span></div>`;
     } else {
       const goed=ST.antwrd.filter(a=>a.pts===1).length;
       const deels=ST.antwrd.filter(a=>a.pts===0.5).length;
@@ -8697,7 +8703,7 @@ function toonRes(){
       const goed=ST.antwrd.filter(a=>a.pts===1).length;
       const tijden=ST.tijdPerVraag||[];
       const totalTijd=tijden.reduce((a,b)=>a+b,0);
-      const lbScore=ST.antwrd.reduce((sum,a)=>sum+a.pts*100+Math.round((a.tijdOver||0)/15*100),0);
+      const lbScore=ST.antwrd.reduce((sum,a)=>sum+a.pts*50+Math.round((a.tijdOver||0)/15*50),0);
       const avgTijd=tijden.length?Math.round(totalTijd/tijden.length*10)/10:0;
       const prof=JSON.parse(localStorage.getItem(PROF_KEY)||'{}');
       const naam=prof.naam||'Anoniem';
@@ -9840,15 +9846,19 @@ const BOT_AVATARS={
   'Mila W.':  {animalId:'adelaar', stageIdx:0, featuredBadgeId:'streak1'},
 };
 function seedBotsNow(){
-  const BOT_KEY='slagio_bots_seeded_v10';
+  const BOT_KEY='slagio_bots_seeded_v11';
   if(localStorage.getItem(BOT_KEY))return;
+  // Clear old bot key so new entries are re-seeded
+  localStorage.removeItem('slagio_bots_seeded_v10');
 
   function mkEntry(naam,avatar,vak,vakNaam,domeinId,domeinNaam,goed,tot,avgTijd,daysAgo,niveau){
     const d=new Date('2025-01-15');d.setDate(d.getDate()+daysAgo);
     const ba=BOT_AVATARS[naam]||{};
+    // Normalize to 10-question quiz (new standard) and use updated formula (50+50 per question)
+    const g10=Math.round((goed/tot)*10);
     return{naam,avatar,animalId:ba.animalId||null,stageIdx:ba.stageIdx??0,featuredBadgeId:ba.featuredBadgeId||null,
       vak,vakNaam,domeinId,domeinNaam,
-      score:goed*100+goed*Math.round(avgTijd/15*100),goed,tot,avgTijd,
+      score:g10*50+g10*Math.round(avgTijd/15*50),goed:g10,tot:10,avgTijd,
       date:d.toISOString().slice(0,10),niveau,isBot:true};
   }
 
@@ -9979,7 +9989,7 @@ async function saveLeaderboardEntry(entry){
   localStorage.setItem(getLbKey(),JSON.stringify(all));
   // Re-seed bots if they got lost
   const hasBots=all.some(e=>e.isBot);
-  if(!hasBots){localStorage.removeItem('slagio_bots_seeded_v10');seedBotsNow();}
+  if(!hasBots){localStorage.removeItem('slagio_bots_seeded_v11');seedBotsNow();}
   // Save to Supabase global leaderboard (cross-user)
   if(currentUser){
     try{
@@ -10197,7 +10207,7 @@ function _renderLbWithData(){
   try{const key=getLbKey();const stored=getLbEntries();const cleaned=stored.filter(e=>e.score<=1000);if(cleaned.length!==stored.length)localStorage.setItem(key,JSON.stringify(cleaned));}catch(e){}
   // Re-seed bots if missing
   const hasBots=getLbEntries().some(e=>e.isBot);
-  if(!hasBots){localStorage.removeItem('slagio_bots_seeded_v10');seedBotsNow();}
+  if(!hasBots){localStorage.removeItem('slagio_bots_seeded_v11');seedBotsNow();}
   const all=getLbEntries();
   const prof=JSON.parse(localStorage.getItem(PROF_KEY)||'{}');
   const myUid=currentUser?currentUser.id:null;
