@@ -7931,6 +7931,9 @@ const ALL_BADGES=[
   {id:'streak14', emoji:'💎', label:'Twee weken',      tip:'14 dagen streak',                 cat:'Streak',     rarity:'epic'},
   {id:'streak30', emoji:'🔮', label:'Een maand',       tip:'30 dagen op rij',                 cat:'Streak',     rarity:'legendary'},
   {id:'streak100',emoji:'👑', label:'Legende',         tip:'100 dagen streak',                cat:'Streak',     rarity:'mythic'},
+  {id:'streak200',emoji:'🌌', label:'Onsterfelijk',    tip:'200 dagen streak',                cat:'Streak',     rarity:'mythic'},
+  {id:'streak300',emoji:'⚜️', label:'Grootmeester',    tip:'300 dagen streak',                cat:'Streak',     rarity:'mythic'},
+  {id:'streak365',emoji:'🪐', label:'Heel het jaar',   tip:'365 dagen op rij — een vol jaar', cat:'Streak',     rarity:'mythic'},
   // Quizzen
   {id:'quiz1',    emoji:'🎯', label:'Beginner',        tip:'Je eerste quiz gemaakt',          cat:'Quizzen',    rarity:'common'},
   {id:'quiz10',   emoji:'📚', label:'Student',         tip:'10 quizzen gemaakt',              cat:'Quizzen',    rarity:'rare'},
@@ -10572,10 +10575,10 @@ function renderHomeStats(){
   const practicedToday=s.days&&s.days.includes(todayStr);
   const atRisk=!practicedToday&&streak>0;
   // Streak milestone proximity
-  const milestones=[3,7,14,30,100];
+  const milestones=[3,7,14,30,100,200,300,365];
   const nextMile=milestones.find(m=>m>streak);
   let streakSub=atRisk?'⚠ Oefen voor middernacht!':streak>0?'dagen op rij':'Begin je streak!';
-  const mileLabel={3:'🔥3-daags',7:'⚡7-daags',14:'💎14-daags',30:'🔮30-daags',100:'👑100-daags'};
+  const mileLabel={3:'🔥3-daags',7:'⚡7-daags',14:'💎14-daags',30:'🔮30-daags',100:'👑100-daags',200:'🌌200-daags',300:'⚜️300-daags',365:'🪐365-daags'};
   if(!atRisk&&nextMile&&(nextMile-streak)<=2)streakSub=`Nog ${nextMile-streak} dag${nextMile-streak>1?'en':''} voor ${mileLabel[nextMile]||nextMile+'d'} badge!`;
   const streakHtml=`<div class="hsd-pill hsd-streak${atRisk?' hsd-at-risk':''}" onclick="openProfiel()" title="Bekijk streak & badges" role="button" tabindex="0">
     <span class="hsd-icon hsd-icon-wrap">🔥</span>
@@ -10847,6 +10850,9 @@ function renderStreak(){
   if(info.current>=14&&earnAch('streak14'))setTimeout(()=>showAch('💎','14 dagen streak — twee weken!'),400);
   if(info.current>=30&&earnAch('streak30'))setTimeout(()=>showAch('🔮','30 dagen streak — ongelooflijk!',175),600);
   if(info.current>=100&&earnAch('streak100'))setTimeout(()=>showAch('👑','100 dagen — Slagio Legende!',220),800);
+  if(info.current>=200&&earnAch('streak200'))setTimeout(()=>showAch('🌌','200 dagen — Onsterfelijk!',265),1000);
+  if(info.current>=300&&earnAch('streak300'))setTimeout(()=>showAch('⚜️','300 dagen — Grootmeester!',310),1200);
+  if(info.current>=365&&earnAch('streak365'))setTimeout(()=>showAch('🪐','365 dagen — Een heel jaar op rij!',355),1400);
   // Badges (streak + quizzen categorieën)
   const ach=getAchieved();
   const badgeDefs=ALL_BADGES.filter(b=>b.cat==='Streak'||b.cat==='Quizzen');
@@ -10858,11 +10864,14 @@ function renderStreak(){
   // Headline
   const todayStr=new Date().toISOString().slice(0,10);
   const practicedToday=info.days.includes(todayStr);
-  const fireEmoji=info.current>=100?'👑':info.current>=30?'🔮':info.current>=14?'💎':info.current>=7?'⚡':info.current>=3?'🔥':'📚';
+  const fireEmoji=info.current>=365?'🪐':info.current>=300?'⚜️':info.current>=200?'🌌':info.current>=100?'👑':info.current>=30?'🔮':info.current>=14?'💎':info.current>=7?'⚡':info.current>=3?'🔥':'📚';
   const headline=info.current>0
     ?`${info.current} dag${info.current>1?'en':''} op rij!`
     :'Start vandaag je streak!';
-  const tagline=info.current>=100?'👑 Legendarisch — jij bent een Slagio Legende!'
+  const tagline=info.current>=365?'🪐 Een heel jaar! Jij bent een absolute legende.'
+    :info.current>=300?'⚜️ 300 dagen — Grootmeester van Slagio!'
+    :info.current>=200?'🌌 200 dagen — Onsterfelijk!'
+    :info.current>=100?'👑 Legendarisch — jij bent een Slagio Legende!'
     :info.current>=30?'🔮 Ongelooflijk! 30 dagen op rij!'
     :info.current>=7?'Je bent op dreef, ga zo door! 💪'
     :info.current>=3?'Geweldig, blijf volhouden!'
