@@ -10573,12 +10573,18 @@ function renderStreak(){
       <div class="${nameClass}">${dayLabels[d.getDay()]}</div>
     </div>`;
   }
+  // Streak milestone achievements (eenmalig)
+  if(info.current>=7&&earnAch('streak7'))setTimeout(()=>showAch('⚡','7 dagen op rij — geweldig!'),400);
+  if(info.current>=30&&earnAch('streak30'))setTimeout(()=>showAch('🔮','30 dagen streak — ongelooflijk!',175),600);
+  if(info.current>=100&&earnAch('streak100'))setTimeout(()=>showAch('👑','100 dagen — Slagio Legende!',220),800);
   // Badges
   const badgeDefs=[
     {emoji:'🌱',tip:'Eerste quiz!',req:info.total>=1},
     {emoji:'🔥',tip:'3 dagen streak',req:info.current>=3},
     {emoji:'⚡',tip:'7 dagen op rij',req:info.current>=7},
     {emoji:'💎',tip:'14 dagen streak',req:info.current>=14},
+    {emoji:'🔮',tip:'30 dagen streak',req:info.current>=30},
+    {emoji:'👑',tip:'100 dagen — Legende!',req:info.current>=100},
     {emoji:'🏆',tip:'10+ quizzen',req:info.total>=10},
     {emoji:'🚀',tip:'50+ quizzen',req:info.total>=50}
   ];
@@ -10589,11 +10595,13 @@ function renderStreak(){
   // Headline
   const todayStr=new Date().toISOString().slice(0,10);
   const practicedToday=info.days.includes(todayStr);
-  const fireEmoji=info.current>=14?'💎':info.current>=7?'⚡':info.current>=3?'🔥':'📚';
+  const fireEmoji=info.current>=100?'👑':info.current>=30?'🔮':info.current>=14?'💎':info.current>=7?'⚡':info.current>=3?'🔥':'📚';
   const headline=info.current>0
     ?`${info.current} dag${info.current>1?'en':''} op rij!`
     :'Start vandaag je streak!';
-  const tagline=info.current>=7?'Je bent op dreef, ga zo door! 💪'
+  const tagline=info.current>=100?'👑 Legendarisch — jij bent een Slagio Legende!'
+    :info.current>=30?'🔮 Ongelooflijk! 30 dagen op rij!'
+    :info.current>=7?'Je bent op dreef, ga zo door! 💪'
     :info.current>=3?'Geweldig, blijf volhouden!'
     :info.current>0?'Kom morgen terug om je streak te verlengen.'
     :'Maak een quiz en bouw je streak op.';
