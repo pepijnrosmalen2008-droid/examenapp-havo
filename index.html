@@ -1242,6 +1242,19 @@ html.dark .qb{background:#2e3550}
 .res-lb-row{background:rgba(var(--or-rgb),.07);border-radius:8px;padding:8px 10px;margin-top:4px;border:1px solid rgba(var(--or-rgb),.2)}
 .res-lb-val{font-family:var(--font-head);font-size:20px;font-weight:900;color:var(--or)}
 .res-lb-max{font-size:13px;font-weight:600;opacity:.55}
+.adaptive-res-card{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.12);border-radius:14px;padding:14px 16px;margin:12px 0;font-size:13px}
+.ar-mastery-row{display:flex;justify-content:space-between;align-items:center;margin-bottom:6px}
+.ar-mastery-lbl{font-weight:600;color:var(--dk)}
+.ar-mastery-val{font-size:12px;color:var(--mu)}
+.ar-mastery-bar{height:8px;background:rgba(255,255,255,.08);border-radius:4px;margin-bottom:14px;overflow:hidden}
+.ar-mastery-fill{height:100%;border-radius:4px;transition:width .6s ease}
+.ar-weak-hdr{font-weight:700;font-size:12px;color:var(--mu);text-transform:uppercase;letter-spacing:.05em;margin-bottom:8px}
+.ar-weak-list{list-style:none;display:flex;flex-direction:column;gap:6px;padding:0;margin:0}
+.ar-weak-item{display:flex;justify-content:space-between;align-items:flex-start;gap:8px;padding:6px 8px;background:rgba(239,68,68,.08);border-radius:8px}
+.ar-weak-q{flex:1;color:var(--dk);line-height:1.4;font-size:12px}
+.ar-weak-pct{white-space:nowrap;font-weight:700;color:#ef4444;font-size:12px}
+.ar-reset-btn{margin-top:12px;font-size:11px;color:var(--mu);background:none;border:1px solid var(--bo);border-radius:6px;padding:4px 10px;cursor:pointer;font-family:var(--font)}
+.adapt-pill{display:inline-flex;align-items:center;gap:4px;font-size:11px;background:rgba(255,255,255,.1);border-radius:20px;padding:2px 8px;color:rgba(255,255,255,.7);margin-left:6px;vertical-align:middle}
 .rbtns{display:flex;gap:12px;flex-direction:column}
 .btnp{background:var(--or);color:#fff;border:none;border-radius:14px;padding:18px;font-family:var(--font-head);font-size:16px;font-weight:700;cursor:pointer;transition:all 0.2s ease;box-shadow:0 4px 18px rgba(232,92,13,0.3)}
 .btnp:hover{background:#d14f09;box-shadow:0 6px 24px rgba(232,92,13,0.4)}
@@ -3429,7 +3442,7 @@ html.dark .hsd-pill{background:var(--bg2);border-color:var(--bo2)}
 
 <!-- QUIZ -->
 <div id="sc-quiz" class="sc">
-<div class="qtb"><span class="ql">📚</span><span class="qmeta" id="qmeta"></span><button class="qtb-snd" id="quiz-snd-btn" onclick="toggleSound()" title="Geluid aan/uit">🔊</button><button class="qstp" onclick="stopQ()">✕ Stop</button></div>
+<div class="qtb"><span class="ql">📚</span><span class="qmeta" id="qmeta"></span><span id="adaptive-pill" class="adapt-pill" style="display:none">🎯 Adaptief</span><button class="qtb-snd" id="quiz-snd-btn" onclick="toggleSound()" title="Geluid aan/uit">🔊</button><button class="qstp" onclick="stopQ()">✕ Stop</button></div>
 <div class="qpb"><div class="qpf" id="qprog"></div></div>
 <div class="quiz-skeleton" id="quiz-skeleton" style="display:none">
   <div class="skel sk-badge"></div>
@@ -3500,6 +3513,7 @@ html.dark .hsd-pill{background:var(--bg2);border-color:var(--bo2)}
     </div>
   </div>
   <div id="quiz-next-action"></div>
+<div id="adaptive-res-wrap"></div>
   <div id="one-more-wrap"></div>
   <div id="res-register-prompt" style="display:none;background:linear-gradient(135deg,rgba(99,102,241,.15),rgba(79,70,229,.1));border:1px solid rgba(99,102,241,.35);border-radius:16px;padding:16px 18px;margin:14px 0 6px;text-align:center">
     <div style="font-size:22px;margin-bottom:6px">🏆</div>
@@ -7337,6 +7351,7 @@ function doLogout(){
       'examenapp_progress_havo','examenapp_progress_vwo',
       'examenapp_favs_havo','examenapp_favs_vwo',
       'examenapp_mijnvakken_havo','examenapp_mijnvakken_vwo',
+      'slagio_aqp_v1',
     ];
     toClear.forEach(k=>localStorage.removeItem(k));
     // Ruim ook alle Supabase auth-sleutels op zodat de sessie na reload echt weg is
@@ -8427,6 +8442,77 @@ function saveQuizDraft(){
   }catch(e){}
 }
 function clearQuizDraft(){localStorage.removeItem(QUIZ_DRAFT_KEY);}
+// ── ADAPTIVE QUIZ PERFORMANCE ────────────────────────────────────────
+const AQP_KEY='slagio_aqp_v1';
+function aqpGet(){try{return JSON.parse(localStorage.getItem(AQP_KEY)||'{}')}catch(e){return{}}}
+function aqpSave(d){try{localStorage.setItem(AQP_KEY,JSON.stringify(d))}catch(e){}}
+function aqpDomainData(d,vakId,domeinId){const k=vakId+'_'+domeinId;if(!d[k])d[k]={};return d[k]}
+function aqpQKey(q){return(q.v||'').slice(0,50)}
+function aqpWeight(e){
+  if(!e||e.n===0)return 2.0;
+  const wr=e.w/e.n;
+  let w=wr>0.5&&e.n>=2?4.0:wr>=0.2?2.5:0.6;
+  if(e.ts&&(Date.now()-e.ts)/86400000>7)w*=1.4;
+  return w;
+}
+function aqpSelectQuestions(pool,vakId,domeinId,count){
+  if(!pool||pool.length<=count)return[...pool].sort(()=>Math.random()-.5);
+  const d=aqpGet();
+  const dom=aqpDomainData(d,vakId,domeinId);
+  const keyed=pool.map(q=>({q,key:Math.pow(Math.random(),1/Math.max(0.01,aqpWeight(dom[aqpQKey(q)])))}));
+  keyed.sort((a,b)=>b.key-a.key);
+  return keyed.slice(0,count).map(x=>x.q);
+}
+function aqpRecord(q,pts){
+  if(!ST||ST.mode!=='snel'||!ST.vak||!ST.domein)return;
+  try{
+    const d=aqpGet();
+    const dom=aqpDomainData(d,ST.vak.id,ST.domein.id);
+    const k=aqpQKey(q);
+    if(!dom[k])dom[k]={n:0,w:0,ts:0};
+    dom[k].n++;
+    if(pts===0)dom[k].w++;
+    dom[k].ts=Date.now();
+    aqpSave(d);
+  }catch(e){}
+}
+function aqpResetDomain(vakId,domeinId){
+  const d=aqpGet();
+  delete d[vakId+'_'+domeinId];
+  aqpSave(d);
+  showToast('Adaptieve voortgang gewist');
+  renderAdaptiveResults();
+}
+function renderAdaptiveResults(){
+  const wrap=document.getElementById('adaptive-res-wrap');
+  if(!wrap||!ST||ST.mode!=='snel'||!ST.vak||!ST.domein){if(wrap)wrap.innerHTML='';return;}
+  const d=aqpGet();
+  const dom=aqpDomainData(d,ST.vak.id,ST.domein.id);
+  const pool=(ST.domein&&ST.domein.sv)||[];
+  const total=pool.length;
+  const mastered=pool.filter(q=>{const e=dom[aqpQKey(q)];return e&&e.n>=3&&e.w/e.n<0.2;}).length;
+  const mastPct=total>0?Math.round(mastered/total*100):0;
+  const weak=Object.entries(dom).filter(([,e])=>e.n>=2&&e.w/e.n>0.5).sort((a,b)=>(b[1].w/b[1].n)-(a[1].w/a[1].n)).slice(0,4);
+  const hasHistory=Object.values(dom).some(e=>e.n>0);
+  if(!hasHistory){wrap.innerHTML='';return;}
+  const barColor=mastPct>=70?'#22c55e':mastPct>=40?'#f59e0b':'#ef4444';
+  let h=`<div class="adaptive-res-card">`;
+  if(total>0){
+    h+=`<div class="ar-mastery-row"><span class="ar-mastery-lbl">📊 Beheersing dit domein</span><span class="ar-mastery-val">${mastered}/${total} vragen (${mastPct}%)</span></div>`;
+    h+=`<div class="ar-mastery-bar"><div class="ar-mastery-fill" style="width:${mastPct}%;background:${barColor}"></div></div>`;
+  }
+  if(weak.length>0){
+    h+=`<div class="ar-weak-hdr">⚠️ Verbeterpunten</div><ul class="ar-weak-list">`;
+    weak.forEach(([k,e])=>{
+      const pct=Math.round(e.w/e.n*100);
+      h+=`<li class="ar-weak-item"><span class="ar-weak-q">${k.slice(0,50)}…</span><span class="ar-weak-pct">${pct}% fout</span></li>`;
+    });
+    h+=`</ul>`;
+  }
+  h+=`<button class="ar-reset-btn" onclick="aqpResetDomain('${ST.vak.id}','${ST.domein.id}')">↺ Reset voortgang</button></div>`;
+  wrap.innerHTML=h;
+}
+// ── END ADAPTIVE ─────────────────────────────────────────────────────
 function getQuizDraft(){try{return JSON.parse(localStorage.getItem(QUIZ_DRAFT_KEY)||'null');}catch(e){return null;}}
 function resumeQuizDraft(){
   const draft=getQuizDraft();
@@ -8490,8 +8576,7 @@ function startQ(mode){
   if(!ST.isDailyChallenge)ST.isDailyChallenge=false;
   const pool=mode==='snel'?ST.domein.sv:ST.domein.oe;
   if(mode==='snel'){
-    const shuffled=[...pool].sort(()=>Math.random()-.5);
-    ST.vragen=shuffled.slice(0,10);
+    ST.vragen=aqpSelectQuestions(pool,ST.vak.id,ST.domein.id,10);
   }else{
     ST.vragen=pool.slice();
   }
@@ -8596,6 +8681,12 @@ function startOESingle(qIdx){
 function toonV(){
   const q=ST.vragen[ST.idx];
   const tot=ST.vragen.length;
+
+  // Show adaptive pill if history exists for this domain
+  const _aqpd=aqpGet();
+  const _aqpdom=aqpDomainData(_aqpd,ST.vak.id,ST.domein.id);
+  const _adaptPill=document.getElementById('adaptive-pill');
+  if(_adaptPill)_adaptPill.style.display=Object.values(_aqpdom).some(e=>e.n>0)?'inline-flex':'none';
 
   document.getElementById('qctr').textContent=`Vraag ${ST.idx+1} van ${tot}`;
   document.getElementById('qprog').style.width=`${(ST.idx/tot)*100}%`;
@@ -8760,6 +8851,7 @@ function _kiesReveal(gekozen,correct,btns){
   const chosenOrigIdx=ST.shuffleMap[gekozen];
   const tijdOver=Math.max(0,ST.tijd);
   ST.tijdPerVraag.push(tijdOver);
+  aqpRecord(ST.vragen[ST.idx], ok?1:0);
   ST.antwrd.push({pts:ok?1:0,chosenText:q.o[chosenOrigIdx],tijdOver});
   saveQuizDraft();
   btns.forEach((b,i)=>{
@@ -8778,6 +8870,7 @@ function _kiesReveal(gekozen,correct,btns){
 function tijdOp(){
   const q=ST.vragen[ST.idx];
   ST.tijdPerVraag.push(0);
+  aqpRecord(ST.vragen[ST.idx], 0);
   ST.antwrd.push({pts:0,chosenText:'⏱ Tijd was op',tijdOver:0});
   saveQuizDraft();
   const correct=ST.shuffleMap.indexOf(q.c);
@@ -9434,6 +9527,7 @@ function toonRes(){
       }else{omBox.innerHTML='';}
     }
   }catch(e){if(document.getElementById('one-more-wrap'))document.getElementById('one-more-wrap').innerHTML='';}
+  try{renderAdaptiveResults();}catch(e){}
   show('sc-res');
 }
 
