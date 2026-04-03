@@ -581,6 +581,11 @@ h1,h2,h3,h4{font-family:var(--font-head);line-height:1.2;letter-spacing:-.3px}
 .bento-avg-warn{border-color:rgba(239,68,68,.4);background:linear-gradient(145deg,rgba(239,68,68,.13) 0%,rgba(239,68,68,.04) 100%)}
 .bento-avg-warn::after{content:'';position:absolute;top:-28px;right:-28px;width:90px;height:90px;border-radius:50%;background:radial-gradient(circle,rgba(239,68,68,.35) 0%,transparent 70%);pointer-events:none}
 .bento-avg-warn .bento-sv{color:#ef4444}
+.bento-groep{border-color:rgba(20,184,166,.4);background:linear-gradient(145deg,rgba(20,184,166,.13) 0%,rgba(20,184,166,.04) 100%)}
+.bento-groep::after{content:'';position:absolute;top:-28px;right:-28px;width:90px;height:90px;border-radius:50%;background:radial-gradient(circle,rgba(20,184,166,.35) 0%,transparent 70%);pointer-events:none}
+.bento-groep .bento-sv{color:#14b8a6}
+.bento-dg{border-color:rgba(var(--or-rgb),.35);background:linear-gradient(145deg,rgba(var(--or-rgb),.1) 0%,rgba(var(--or-rgb),.03) 100%)}
+.bento-dg::after{content:'';position:absolute;top:-28px;right:-28px;width:90px;height:90px;border-radius:50%;background:radial-gradient(circle,rgba(var(--or-rgb),.28) 0%,transparent 70%);pointer-events:none}
 .bento-si{position:relative;z-index:1}
 .bento-sv{position:relative;z-index:1}
 .bento-sl{position:relative;z-index:1}
@@ -12161,9 +12166,9 @@ function renderHomeStats(){
   const _dgDone=Math.min(_dg.done||0,DG_TARGET);
   const _dgRewarded=_dg.rewarded||_dgDone>=DG_TARGET;
   function _buildDgCell(){
-    if(_dgRewarded)return`<div class="bento-cell" style="grid-column:1/-1;padding:11px 16px;display:flex;align-items:center;gap:10px"><span style="font-size:18px">🎯</span><span style="font-size:13px;font-weight:700;color:var(--dk)">Dagdoel bereikt!</span><span style="font-size:12px;color:var(--mu);margin-left:2px">${DG_TARGET} / ${DG_TARGET} quizzen · +75 XP verdiend</span></div>`;
+    if(_dgRewarded)return`<div class="bento-cell bento-dg" style="grid-column:1/-1;padding:11px 16px;display:flex;align-items:center;gap:10px"><span style="font-size:18px;position:relative;z-index:1">🎯</span><span style="font-size:13px;font-weight:700;color:var(--dk);position:relative;z-index:1">Dagdoel bereikt!</span><span style="font-size:12px;color:var(--mu);margin-left:2px;position:relative;z-index:1">${DG_TARGET} / ${DG_TARGET} quizzen · +75 XP verdiend</span></div>`;
     const _dots=Array.from({length:DG_TARGET},(_,i)=>`<div class="dg-dot${i<_dgDone?' dg-dot-done':''}"></div>`).join('');
-    return`<div class="bento-cell" style="grid-column:1/-1;padding:11px 16px"><div style="display:flex;align-items:center;gap:8px;margin-bottom:6px"><span style="font-size:16px">🎯</span><span style="font-size:13px;font-weight:700;color:var(--dk)">Dagdoel</span><span style="font-size:12px;color:var(--mu)">${_dgDone}/${DG_TARGET} quizzen</span><span style="margin-left:auto;font-size:11px;font-weight:700;color:var(--or);background:rgba(var(--or-rgb),.1);padding:2px 8px;border-radius:20px">+75 XP</span></div><div class="dg-dots" style="margin-bottom:6px">${_dots}</div><div class="dg-bar-wrap"><div class="dg-bar" style="width:${Math.round(_dgDone/DG_TARGET*100)}%"></div></div></div>`;
+    return`<div class="bento-cell bento-dg" style="grid-column:1/-1;padding:11px 16px"><div style="display:flex;align-items:center;gap:8px;margin-bottom:6px;position:relative;z-index:1"><span style="font-size:16px">🎯</span><span style="font-size:13px;font-weight:700;color:var(--dk)">Dagdoel</span><span style="font-size:12px;color:var(--mu)">${_dgDone}/${DG_TARGET} quizzen</span><span style="margin-left:auto;font-size:11px;font-weight:700;color:var(--or);background:rgba(var(--or-rgb),.1);padding:2px 8px;border-radius:20px">+75 XP</span></div><div class="dg-dots" style="margin-bottom:6px;position:relative;z-index:1">${_dots}</div><div class="dg-bar-wrap" style="position:relative;z-index:1"><div class="dg-bar" style="width:${Math.round(_dgDone/DG_TARGET*100)}%"></div></div></div>`;
   }
   // ── Clear standalone containers (altijd) ──────────
   const _dgBox=document.getElementById('daily-goal-home');if(_dgBox)_dgBox.innerHTML='';
@@ -12210,7 +12215,7 @@ function renderHomeStats(){
   const avgCell=avg!==null?`<div class="bento-cell ${avg<6?'bento-avg-warn':'bento-avg-ok'}" onclick="show('sc-calc');setTimeout(prefillCalcFromSaved,50)" role="button" tabindex="0">
     <div class="bento-stat"><div class="bento-si">📈</div><div class="bento-sv">${avg.toFixed(1).replace('.',',')}</div><div class="bento-sl">Gem. SE</div></div>
   </div>`:
-  `<div class="bento-cell" onclick="show('sc-groep');renderGroepScreen()" role="button" tabindex="0">
+  `<div class="bento-cell bento-groep" onclick="show('sc-groep');renderGroepScreen()" role="button" tabindex="0">
     <div class="bento-stat"><div class="bento-si">👥</div><div class="bento-sv">Groep</div><div class="bento-sl">Klassenboard</div></div>
   </div>`;
   // ── Streak milestone cell (conditional, full-width) ──
