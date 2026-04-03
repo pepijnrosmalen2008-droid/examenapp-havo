@@ -6107,14 +6107,14 @@ let currentUser=null;
 SB.auth.getSession().then(({data:{session}})=>{
   currentUser=session?.user||null;
   updateProfileNav();updateCloudStatusBar();
-  if(currentUser)syncFromCloud();
+  if(currentUser){syncFromCloud();syncMyAvatarToCloud();}
 });
 // Listen for auth changes (login/logout/token refresh)
 SB.auth.onAuthStateChange((_event,session)=>{
   currentUser=session?.user||null;
   updateProfileNav();updateCloudStatusBar();
   if(currentUser){
-    syncFromCloud();
+    syncFromCloud();syncMyAvatarToCloud();
   } else if(_event==='SIGNED_OUT'){
     // Meteen alle account-UI resetten zodat je nergens meer ingelogd lijkt
     try{renderXPHome();renderStreak();renderFavHome();renderHomeStats();buildGrid();}catch(e){}
@@ -9596,6 +9596,8 @@ async function saveLeaderboardEntry(entry){
       await SB.from('leaderboard').insert({
         user_id:currentUser.id,
         naam:entry.naam,avatar:entry.avatar,
+        animal_id:entry.animalId||null,stage_idx:entry.stageIdx??null,
+        featured_badge_id:entry.featuredBadgeId||null,
         vak:entry.vak,vak_naam:entry.vakNaam,
         domein_id:entry.domeinId||null,domein_naam:entry.domeinNaam||null,
         score:entry.score,correct:entry.goed,total:entry.tot,
@@ -9610,7 +9612,10 @@ async function loadLeaderboardFromSupabase(){
     const {data,error}=await SB.from('leaderboard').select('*').eq('niveau',APP_LEVEL).order('score',{ascending:false}).limit(200);
     if(error||!data)return;
     const remote=data.map(d=>({
-      naam:d.naam,avatar:d.avatar,vak:d.vak,vakNaam:d.vak_naam,
+      naam:d.naam,avatar:d.avatar,
+      animalId:d.animal_id||null,stageIdx:d.stage_idx??null,
+      featuredBadgeId:d.featured_badge_id||null,
+      vak:d.vak,vakNaam:d.vak_naam,
       domeinId:d.domein_id||null,domeinNaam:d.domein_naam||null,
       score:d.score,goed:d.correct,tot:d.total,uid:d.user_id,
       avgTijd:d.avg_tijd||null,niveau:d.niveau,date:d.created_at?.slice(0,10)
@@ -10316,9 +10321,27 @@ function syncAvatarToProfile(){
     if(!p.animalId)return;
     p.avatar=getAnimalEmoji(p.animalId,getTotalXP());
     localStorage.setItem(PROF_KEY,JSON.stringify(p));
-    // Also patch all own leaderboard entries so the evolved avatar is stored
     if(p.naam)_updateMyLbAvatar(p.avatar,p.naam);
   }catch(e){}
+}
+// Sync eigen avatar-velden naar alle Supabase leaderboard-entries (1x per sessie)
+const _avatarCloudSyncedKey='slagio_av_synced_'+new Date().toISOString().slice(0,10);
+async function syncMyAvatarToCloud(){
+  if(!currentUser)return;
+  if(sessionStorage.getItem(_avatarCloudSyncedKey))return;
+  try{
+    const p=JSON.parse(localStorage.getItem(PROF_KEY)||'{}');
+    if(!p.animalId)return;
+    const stageIdx=getAnimalStageIdx(getTotalXP());
+    const featuredBadgeId=getBestBadgeId(getAchieved())||null;
+    await SB.from('leaderboard').update({
+      animal_id:p.animalId,
+      stage_idx:stageIdx,
+      featured_badge_id:featuredBadgeId,
+      avatar:getAnimalEmoji(p.animalId,getTotalXP())
+    }).eq('user_id',currentUser.id);
+    sessionStorage.setItem(_avatarCloudSyncedKey,'1');
+  }catch(e){console.warn('syncMyAvatarToCloud error:',e);}
 }
 // Patch avatar in all own leaderboard entries (called after evolution)
 function _updateMyLbAvatar(newAvatar,naam){
