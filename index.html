@@ -2843,6 +2843,46 @@ html.dark .hsd-pill{background:var(--bg2);border-color:var(--bo2)}
 .confirm-cancel:hover{background:var(--bg2)}
 .confirm-ok{flex:1;padding:11px;border-radius:11px;border:none;background:#ef4444;color:#fff;font-family:var(--font);font-size:14px;font-weight:700;cursor:pointer;transition:opacity .15s}
 .confirm-ok:hover{opacity:.85}
+/* ── FEATURE 1: STREAK MILESTONE BANNER ─────────────────── */
+.streak-milestone-banner{background:linear-gradient(135deg,rgba(var(--or-rgb),.12),rgba(var(--or-rgb),.06));border:1.5px solid rgba(var(--or-rgb),.35);border-radius:16px;padding:14px 16px;margin-bottom:14px;display:flex;flex-direction:column;gap:8px;animation:bannerPulse 2.5s ease-in-out infinite}
+@keyframes bannerPulse{0%,100%{border-color:rgba(var(--or-rgb),.35)}50%{border-color:rgba(var(--or-rgb),.7)}}
+.smb-row{display:flex;align-items:center;gap:10px}
+.smb-icon{font-size:24px;line-height:1;flex-shrink:0}
+.smb-text{flex:1;font-size:13px;color:var(--dk);line-height:1.5;font-weight:500}
+.smb-text strong{color:var(--or)}
+.smb-bar-wrap{height:6px;background:var(--bo);border-radius:3px;overflow:hidden}
+.smb-bar-fill{height:100%;background:var(--or);border-radius:3px;transition:width .5s}
+.smb-bar-lbl{font-size:10px;color:var(--mu);text-align:right;margin-top:3px;font-weight:600}
+/* ── FEATURE 2: PERSONAL BEST BANNER ────────────────────── */
+.pb-banner{background:linear-gradient(135deg,#f59e0b,#d97706);color:#fff;border-radius:12px;padding:10px 16px;text-align:center;font-family:var(--font-head);font-size:15px;font-weight:800;margin-bottom:14px;animation:pbPop .5s cubic-bezier(.34,1.56,.64,1)}
+@keyframes pbPop{from{opacity:0;transform:scale(.8) translateY(10px)}to{opacity:1;transform:scale(1) translateY(0)}}
+.pb-prev{font-size:11px;opacity:.85;margin-top:2px;font-weight:500}
+.pb-chip{font-size:10px;font-weight:700;color:#d97706;background:rgba(245,158,11,.12);border:1px solid rgba(245,158,11,.3);border-radius:6px;padding:1px 6px;margin-left:4px;white-space:nowrap}
+/* ── FEATURE 3: SMART NEXT ACTION ───────────────────────── */
+.next-action-card{background:var(--s);border:1.5px solid rgba(var(--or-rgb),.25);border-radius:14px;padding:14px 16px;display:flex;align-items:center;gap:12px;margin-top:12px}
+.na-icon{font-size:24px;flex-shrink:0;line-height:1}
+.na-info{flex:1;min-width:0}
+.na-label{font-size:13px;font-weight:800;color:var(--dk);font-family:var(--font-head)}
+.na-sub{font-size:11px;color:var(--mu);margin-top:2px}
+.na-btn{padding:8px 14px;background:var(--or);color:#fff;border:none;border-radius:10px;font-size:13px;font-weight:700;cursor:pointer;font-family:var(--font);white-space:nowrap;transition:opacity .15s}
+.na-btn:hover{opacity:.85}
+/* ── FEATURE 4: COMEBACK CARD ───────────────────────────── */
+.comeback-card{background:linear-gradient(135deg,rgba(34,197,94,.1),rgba(34,197,94,.04));border:1.5px solid rgba(34,197,94,.3);border-radius:16px;padding:16px 18px;margin-bottom:14px;position:relative;text-align:center}
+.comeback-close{position:absolute;top:10px;right:12px;background:none;border:none;color:var(--mu);font-size:16px;cursor:pointer;padding:2px 6px;border-radius:6px;line-height:1}
+.comeback-close:hover{background:var(--bg2)}
+.comeback-icon{font-size:32px;margin-bottom:6px;line-height:1}
+.comeback-title{font-family:var(--font-head);font-size:16px;font-weight:800;color:var(--dk);margin-bottom:4px}
+.comeback-sub{font-size:13px;color:var(--mu);line-height:1.6;max-width:320px;margin:0 auto 10px}
+.comeback-xp{font-size:13px;font-weight:700;color:#22c55e;background:rgba(34,197,94,.1);border-radius:8px;padding:5px 12px;display:inline-block}
+/* ── FEATURE 5: XP URGENT PILL ──────────────────────────── */
+.hsd-pill.hsd-xp-urgent{border-color:rgba(234,179,8,.5);background:linear-gradient(135deg,rgba(234,179,8,.1),rgba(234,179,8,.04))}
+.hsd-pill.hsd-xp-urgent .hsd-val{color:#ca8a04}
+.hsd-pill.hsd-xp-urgent .hsd-icon{animation:xpUrge 1.5s ease-in-out infinite}
+@keyframes xpUrge{0%,100%{transform:scale(1)}50%{transform:scale(1.3) rotate(-10deg)}}
+/* ── FEATURE 6: BADGE PROGRESS ──────────────────────────── */
+.badge-prog-wrap{width:100%;height:3px;background:var(--bo2);border-radius:2px;margin-top:4px;overflow:hidden}
+.badge-prog-fill{height:100%;border-radius:2px;transition:width .5s}
+.badge-prog-lbl{font-size:9px;color:var(--mu);text-align:center;margin-top:2px;font-weight:600}
 </style>
 </head>
 <body>
@@ -3072,6 +3112,8 @@ html.dark .hsd-pill{background:var(--bg2);border-color:var(--bo2)}
   </div>
 </div>
 
+<!-- COMEBACK CARD (Feature 4) -->
+<div id="comeback-card-home"></div>
 <!-- STATS DASHBOARD BAR -->
 <div id="home-stats-bar"></div>
 
@@ -3106,6 +3148,7 @@ html.dark .hsd-pill{background:var(--bg2);border-color:var(--bo2)}
   <div id="xp-home-bar"></div>
   <div id="daily-goal-home"></div>
   <div id="daily-challenge-home" class="daily-wrap"></div>
+  <div id="streak-milestone-banner-home"></div>
   <div id="streak-home"></div>
   <div id="pomo-home"></div>
   <div class="home-section-header">
@@ -3453,6 +3496,7 @@ html.dark .hsd-pill{background:var(--bg2);border-color:var(--bo2)}
       <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-3580526892359138" data-ad-slot="0000000000" data-ad-format="auto" data-full-width-responsive="true"></ins>
     </div>
   </div>
+  <div id="quiz-next-action"></div>
   <div id="one-more-wrap"></div>
   <div id="res-register-prompt" style="display:none;background:linear-gradient(135deg,rgba(99,102,241,.15),rgba(79,70,229,.1));border:1px solid rgba(99,102,241,.35);border-radius:16px;padding:16px 18px;margin:14px 0 6px;text-align:center">
     <div style="font-size:22px;margin-bottom:6px">🏆</div>
@@ -5210,6 +5254,7 @@ function show(id){
   window.scrollTo(0,0);
   updateBottomNav(id);
   tryPushAds(id);
+  if(id==='sc-home'){try{renderComebackCard();}catch(e){}}
   // Welcome screen gets its own indigo theme; level pages get their own theme
   if(id==='sc-welcome'){
     document.documentElement.classList.remove('level-havo','level-vwo');
@@ -7557,7 +7602,9 @@ function openVak(id){
     const decay=getDecayStatus(ST.vak.id,d.id);
     const decayDot=decay?`<span class="decay-dot" style="background:${decay.color};color:${decay.color}" title="${decay.label}"></span>`:'';
     const bestChip=r.hasData?`<span style="font-size:11px;color:var(--mu);font-weight:600;margin-left:4px">Record: ${Math.round(r.pct*100)}%</span>`:'';
-    const progHtml=r.hasData?`<div class="dom-progress"><div class="dp-bar"><div class="dp-fill" style="width:${Math.round(r.pct*100)}%"></div></div><span class="dp-txt">${Math.round(r.pct*100)}%${bestChip}</span></div>`:'';
+    const _pbData=getPB(ST.vak.id,d.id);
+    const pbChip=_pbData?`<span class="pb-chip">⭐ PB: ${Math.round(_pbData.score*100)}%</span>`:'';
+    const progHtml=r.hasData?`<div class="dom-progress"><div class="dp-bar"><div class="dp-fill" style="width:${Math.round(r.pct*100)}%"></div></div><span class="dp-txt">${Math.round(r.pct*100)}%${bestChip}${pbChip}</span></div>`:'';
     const el=document.createElement('div');
     el.className='dc2';
     el.dataset.domeinId=d.id;
@@ -8289,6 +8336,32 @@ function renderProfileBadges(){
        +(selBadge?`<span style="color:var(--or);font-weight:700">${selBadge.emoji} ${selBadge.label} op avatar</span>`
                  :`<span style="color:var(--mu)">Klik een badge om te selecteren</span>`);
   }
+  // Feature 6: badge progress data
+  const _bpStreak=calcStreak().current||0;
+  const _bpTotalQ=getStreak().totalQuizzes||0;
+  let _bpVakCount=0;
+  try{const ph=JSON.parse(localStorage.getItem('examenapp_progress_havo')||'{}');const pv=JSON.parse(localStorage.getItem('examenapp_progress_vwo')||'{}');_bpVakCount=new Set([...Object.keys(ph),...Object.keys(pv)].map(k=>k.split('_')[0])).size;}catch(e){}
+  function _badgeProgress(b){
+    // Returns 0–1 fraction (capped at 0.99) or null if not computable
+    if(b.id==='streak7')return Math.min(0.99,_bpStreak/7);
+    if(b.id==='streak14')return Math.min(0.99,_bpStreak/14);
+    if(b.id==='streak30')return Math.min(0.99,_bpStreak/30);
+    if(b.id==='streak100')return Math.min(0.99,_bpStreak/100);
+    if(b.id==='streak200')return Math.min(0.99,_bpStreak/200);
+    if(b.id==='streak300')return Math.min(0.99,_bpStreak/300);
+    if(b.id==='streak365')return Math.min(0.99,_bpStreak/365);
+    if(b.id==='streak3')return Math.min(0.99,_bpStreak/3);
+    if(b.id==='streak1')return Math.min(0.99,_bpStreak/1);
+    if(b.id==='quiz1')return Math.min(0.99,_bpTotalQ/1);
+    if(b.id==='quiz10')return Math.min(0.99,_bpTotalQ/10);
+    if(b.id==='quiz50')return Math.min(0.99,_bpTotalQ/50);
+    if(b.id==='quiz100')return Math.min(0.99,_bpTotalQ/100);
+    if(b.id==='quiz500')return Math.min(0.99,_bpTotalQ/500);
+    if(b.id==='vakken3')return Math.min(0.99,_bpVakCount/3);
+    if(b.id==='vakken10')return Math.min(0.99,_bpVakCount/10);
+    return null;
+  }
+  const _rarityColors={common:'#6b7280',rare:'#3b82f6',epic:'#8b5cf6',legendary:'#f59e0b',mythic:'#ef4444',eternal:'#06b6d4'};
   const cats=[...new Set(ALL_BADGES.map(b=>b.cat))];
   el.innerHTML=cats.map(cat=>{
     const bs=ALL_BADGES.filter(b=>b.cat===cat);
@@ -8302,10 +8375,21 @@ function renderProfileBadges(){
           const rarityLabel=RARITY_LABEL[b.rarity]||'';
           const tip=isEarned?`${b.tip} · ${dateStr} · ${rarityLabel}${isSelected?' · ✓ op avatar':''}`:b.tip+' · Nog niet behaald';
           const clickAttr=isEarned?`onclick="selectFeaturedBadge('${b.id}')" style="cursor:pointer"`:'';
+          // Feature 6: progress bar for unearned badges
+          let progHtml='';
+          if(!isEarned){
+            const prog=_badgeProgress(b);
+            if(prog!==null&&prog>0.1){
+              const fillPct=Math.round(prog*100);
+              const fillColor=_rarityColors[b.rarity]||'var(--or)';
+              progHtml=`<div class="badge-prog-wrap"><div class="badge-prog-fill" style="width:${fillPct}%;background:${fillColor}"></div></div><div class="badge-prog-lbl">${fillPct}% compleet</div>`;
+            }
+          }
           return `<div class="prof-badge-item badge-tooltip" data-tip="${tip}" ${clickAttr}>
             <div class="prof-badge-circle ${isEarned?'earned rarity-'+b.rarity:'unearned'}${isSelected?' selected':''}">${b.emoji}${isSelected?'<span class="badge-selected-check">✓</span>':''}</div>
             <div class="prof-badge-lbl ${isEarned?'earned':''}">${b.label}</div>
             ${isEarned?`<div class="prof-badge-rarity rarity-txt-${b.rarity}">${rarityLabel}</div>`:''}
+            ${progHtml}
           </div>`;
         }).join('')}
       </div>
@@ -8444,9 +8528,12 @@ function toonRes(){
   let _recordResult=null;
   try{_recordResult=saveProgress(ST.vak.id,ST.domein.id,ST.mode,sc,tot);}catch(e){}
   try{recordPractice();}catch(e){}
+  // Feature 2: PB tracking
+  window._newPB=false;window._oldPB=null;
+  try{const _pbRes=savePB(ST.vak.id,ST.domein.id,pct);if(_pbRes.isNew){window._newPB=true;window._oldPB=_pbRes.prev?_pbRes.prev.score:null;}}catch(e){}
   // Rebuild grid and streak to update UI
   try{const g=document.getElementById('vakgrid');if(g){g.innerHTML='';buildGrid();}
-  renderStreak();renderFavHome();renderXPHome();renderDailyChallenge();renderDailyGoal();renderLiveCount();renderHomeStats();renderGreeting();}catch(e){}
+  renderStreak();renderFavHome();renderXPHome();renderDailyChallenge();renderDailyGoal();renderLiveCount();renderHomeStats();renderGreeting();try{renderComebackCard();}catch(e){}}catch(e){}
   try{recordDailyGoal();}catch(e){};
   const isPerfect=pct===1&&ST.mode==='snel'&&tot>=3;
   if(isPerfect&&earnAch('perfect'))setTimeout(()=>showAch('🌟','Perfecte score! Geen enkel fout!',90),800);
@@ -8503,6 +8590,33 @@ function toonRes(){
       setTimeout(()=>{playSound('levelup');haptic([40,20,80,20,120]);},300);
       if(earnAch('record1'))setTimeout(()=>showAch('🏆','Je eerste persoonlijk record!'),600);
     }
+    // Feature 2: PB banner (for new PB from savePB)
+    if(window._newPB){
+      const pbEl=document.createElement('div');
+      pbEl.className='pb-banner';
+      const oldPctStr=window._oldPB!==null?`<div class="pb-prev">Vorige record: ${Math.round(window._oldPB*100)}% → nu ${Math.round(pct*100)}%</div>`:'';
+      pbEl.innerHTML=`🏆 Nieuw persoonlijk record!${oldPctStr}`;
+      const anchor=document.getElementById('rbd');
+      if(anchor)anchor.insertAdjacentElement('afterend',pbEl);
+    }
+    // Feature 3: Smart next action
+    try{
+      const naEl=document.getElementById('quiz-next-action');
+      if(naEl&&ST.vak&&ST.domein){
+        const na=getSmartNextAction(ST.vak.id,ST.domein.id,pct);
+        if(na){
+          let btnAttr='';
+          if(na.type==='retry')btnAttr=`onclick="retryQ()"`;
+          else if(na.type==='domain')btnAttr=`onclick="openVak('${ST.vak.id}');setTimeout(()=>{const el=document.querySelector('[data-domein-id=\\'${na.domeinId}\\']');if(el)el.scrollIntoView({behavior:'smooth'});},300)"`;
+          else if(na.type==='simtoets')btnAttr=`onclick="openVak('${ST.vak.id}')"`;
+          naEl.innerHTML=`<div class="next-action-card">
+            <div class="na-icon">${na.icon}</div>
+            <div class="na-info"><div class="na-label">${na.label}</div><div class="na-sub">${na.sub}</div></div>
+            <button class="na-btn" ${btnAttr}>Ga →</button>
+          </div>`;
+        }
+      }
+    }catch(e){}
   }catch(e){console.warn('toonRes display error:',e);}
   // XP reward
   try{
@@ -10913,8 +11027,9 @@ function renderHomeStats(){
   const curXP2=getXPForLevel(lvl);
   const nxtXP2=getXPForLevel(lvl+1)||curXP2+1000;
   const xpToNext=nxtXP2-xp;
-  const xpSub=xp>0?`Nog ${xpToNext} XP naar level ${lvl+1}`:'';
-  const lvlHtml=xp>0?`<div class="hsd-pill hsd-xp" onclick="show('sc-leaderboard');renderLeaderboard()" title="Bekijk leaderboard" role="button" tabindex="0">
+  const xpIsUrgent=xpToNext<=100&&xpToNext>0;
+  const xpSub=xp>0?(xpIsUrgent?`⚡ Nog ${xpToNext} XP → Level ${lvl+1}!`:`Nog ${xpToNext} XP naar level ${lvl+1}`):'';
+  const lvlHtml=xp>0?`<div class="hsd-pill hsd-xp${xpIsUrgent?' hsd-xp-urgent':''}" onclick="show('sc-leaderboard');renderLeaderboard()" title="Bekijk leaderboard" role="button" tabindex="0">
     <span class="hsd-icon">⭐</span>
     <div class="hsd-body">
       <div class="hsd-val">Level ${lvl}</div>
@@ -11231,6 +11346,107 @@ function renderStreak(){
   </div>`;
   // Update longest streak
   if(info.current>longest){s.longestStreak=info.current;cloudSet('streak',s);}
+  // Feature 1: streak milestone banner (rendered separately above streak card)
+  try{renderStreakMilestoneBanner(info.current);}catch(e){}
+}
+
+// ═══════ FEATURE 1: STREAK MILESTONE BANNER ═══════
+function getNextStreakMilestone(currentStreak){
+  const milestones=[7,14,30,100,200,300,365];
+  for(const m of milestones){if(currentStreak<m)return m;}
+  return null;
+}
+function renderStreakMilestoneBanner(currentStreak){
+  const el=document.getElementById('streak-milestone-banner-home');
+  if(!el)return;
+  const nextMilestone=getNextStreakMilestone(currentStreak);
+  if(!nextMilestone){el.innerHTML='';return;}
+  const daysLeft=nextMilestone-currentStreak;
+  if(daysLeft>7||daysLeft<=0){el.innerHTML='';return;}
+  const badgeMap={7:{emoji:'⚡',naam:'Een week'},14:{emoji:'💎',naam:'Twee weken'},30:{emoji:'🔮',naam:'Een maand'},100:{emoji:'👑',naam:'Legende'},200:{emoji:'🌌',naam:'Onsterfelijk'},300:{emoji:'⚜️',naam:'Grootmeester'},365:{emoji:'🪐',naam:'Heel het jaar'}};
+  const badge=badgeMap[nextMilestone]||{emoji:'🏅',naam:nextMilestone+' dagen'};
+  const fillPct=Math.round(Math.min(99,currentStreak/nextMilestone*100));
+  el.innerHTML=`<div class="streak-milestone-banner">
+    <div class="smb-row">
+      <div class="smb-icon">🔥</div>
+      <div class="smb-text">Nog <strong>${daysLeft} dag${daysLeft>1?'en':''}</strong> tot je ${badge.emoji} <strong>${badge.naam}</strong> badge! Oefen vandaag voor dag ${currentStreak+1}.</div>
+    </div>
+    <div class="smb-bar-wrap"><div class="smb-bar-fill" style="width:${fillPct}%"></div></div>
+    <div class="smb-bar-lbl">${currentStreak} / ${nextMilestone} dagen</div>
+  </div>`;
+}
+
+// ═══════ FEATURE 2: PERSONAL BEST (PB) TRACKING ═══════
+const PB_KEY='slagio_pb_v1';
+function getPBs(){try{return JSON.parse(localStorage.getItem(PB_KEY)||'{}');}catch(e){return{};}}
+function savePB(vakId,domeinId,score){
+  const pbs=getPBs();
+  const key=vakId+'_'+domeinId;
+  const prev=pbs[key];
+  if(!prev||score>prev.score){
+    pbs[key]={score,date:new Date().toISOString().slice(0,10)};
+    localStorage.setItem(PB_KEY,JSON.stringify(pbs));
+    return {isNew:true,prev:prev||null};
+  }
+  return {isNew:false,prev:prev||null};
+}
+function getPB(vakId,domeinId){
+  const pbs=getPBs();
+  return pbs[vakId+'_'+domeinId]||null;
+}
+
+// ═══════ FEATURE 3: SMART NEXT ACTION ═══════
+function getSmartNextAction(vakId,domeinId,score){
+  if(score<0.5){
+    return {type:'retry',label:'Nog een keer proberen',sub:'Je score is onder 50% — herhaling helpt!',icon:'🔄'};
+  }
+  const vak=getVK().find(v=>v.id===vakId);
+  if(!vak)return null;
+  let worstDom=null,worstPct=1;
+  vak.domeinen.forEach(d=>{
+    if(d.id===domeinId)return;
+    const r=getDomeinBestPct(vakId,d.id);
+    if(r.hasData&&r.pct<worstPct){worstPct=r.pct;worstDom=d;}
+    if(!r.hasData&&!worstDom)worstDom=d;
+  });
+  if(worstDom){
+    const wr=getDomeinBestPct(vakId,worstDom.id);
+    if(!wr.hasData||worstPct<0.65){
+      return {type:'domain',domeinId:worstDom.id,label:worstDom.naam,sub:wr.hasData?`Score: ${Math.round(worstPct*100)}% — kan beter!`:'Nog niet geoefend',icon:'⚡'};
+    }
+  }
+  return {type:'simtoets',label:'Simulatietoets',sub:'Alle domeinen ≥65% — test jezelf met een volledig examen!',icon:'🎯'};
+}
+
+// ═══════ FEATURE 4: COMEBACK CARD ═══════
+function renderComebackCard(){
+  const el=document.getElementById('comeback-card-home');
+  if(!el)return;
+  const dismissed=sessionStorage.getItem('slagio_comeback_dismissed');
+  if(dismissed){el.innerHTML='';return;}
+  const sd=getStreak();
+  if(!sd)return;
+  const today=new Date().toISOString().slice(0,10);
+  const days=(sd.days||[]).slice().sort();
+  if(days.length<2)return;
+  const lastDay=days[days.length-1];
+  const prevDay=days[days.length-2];
+  if(lastDay!==today)return;
+  const msGap=new Date(today)-new Date(prevDay);
+  const dayGap=Math.round(msGap/86400000);
+  if(dayGap<2)return;
+  el.innerHTML=`<div class="comeback-card">
+    <button class="comeback-close" onclick="sessionStorage.setItem('slagio_comeback_dismissed','1');this.closest('.comeback-card').remove()">✕</button>
+    <div class="comeback-icon">💪</div>
+    <div class="comeback-title">Welkom terug!</div>
+    <div class="comeback-sub">Je was ${dayGap} dag${dayGap>1?'en':''} weg — maar je bent er weer! Bouw je streak opnieuw op. Elke dag telt.</div>
+    <div class="comeback-xp">🎁 +50 XP comeback bonus</div>
+  </div>`;
+  if(!sessionStorage.getItem('slagio_comeback_xp')){
+    try{addXP(50);}catch(e){}
+    sessionStorage.setItem('slagio_comeback_xp','1');
+    try{showXPToast(50);}catch(e){}
+  }
 }
 
 // ═══════ REVIEW ═══════
@@ -12336,6 +12552,7 @@ renderHomeStats();
 renderGreeting();
 renderDailyGoal();
 buildGrid();
+try{renderComebackCard();}catch(e){}
 updateProfileNav();
 updateLevelChip();
 // Always start on the welcome/level-select screen.
