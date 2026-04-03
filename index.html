@@ -9450,7 +9450,7 @@ const BOT_AVATARS={
   'Mila W.':  {animalId:'adelaar', stageIdx:0, featuredBadgeId:'streak1'},
 };
 function seedBotsNow(){
-  const BOT_KEY='slagio_bots_seeded_v9';
+  const BOT_KEY='slagio_bots_seeded_v10';
   if(localStorage.getItem(BOT_KEY))return;
 
   function mkEntry(naam,avatar,vak,vakNaam,domeinId,domeinNaam,goed,tot,avgTijd,daysAgo,niveau){
@@ -9558,7 +9558,7 @@ function seedBotsNow(){
   });
 
   // Wis oude seed-vlaggen
-  ['v3','v7','v8'].forEach(v=>localStorage.removeItem('slagio_bots_seeded_'+v));
+  ['v3','v7','v8','v9'].forEach(v=>localStorage.removeItem('slagio_bots_seeded_'+v));
   localStorage.setItem(BOT_KEY,'1');
 }
 seedBotsNow();
