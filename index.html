@@ -2488,6 +2488,7 @@ html.dark .hsd-pill{background:var(--bg2);border-color:var(--bo2)}
 .hsd-xp .hsd-val{color:#eab308}
 .hsd-avg .hsd-val{color:#22c55e}
 .hsd-avg-warn .hsd-val{color:#ef4444}
+.hsd-badges .hsd-val{color:#a78bfa}
 @media(max-width:400px){.hsd-pill{padding:11px 10px;gap:8px}.hsd-val{font-size:15px}.hsd-icon{font-size:20px}}
 .hsd-empty{display:flex;align-items:center;gap:14px;background:var(--s);border:1.5px dashed var(--bo);border-radius:16px;padding:16px 18px;margin:0 16px 8px;cursor:pointer;transition:border-color .2s}
 .hsd-empty:hover{border-color:var(--or)}
@@ -9789,19 +9790,25 @@ function _renderLbWithData(){
   const valid=all.filter(e=>e.score<=1000);
   const filtered=lbVakFilter==='all'?valid:valid.filter(e=>e.vak===lbVakFilter);
 
-  // Deduplicate: best score per naam+vak+domein
-  const bestMap={};
+  // Stap 1: beste score per naam+vak+domein (verwijder duplicaten per quiz)
+  const entryMap={};
   filtered.forEach(e=>{
     const k=`${e.naam}|${e.vak}|${e.domeinId}`;
-    if(!bestMap[k]||e.score>bestMap[k].score)bestMap[k]=e;
+    if(!entryMap[k]||e.score>entryMap[k].score)entryMap[k]=e;
   });
-  const deduped=Object.values(bestMap).sort((a,b)=>b.score-a.score);
+  // Stap 2: deduplicate per gebruiker — toon elke speler maar één keer (beste score ooit)
+  const userMap={};
+  Object.values(entryMap).forEach(e=>{
+    const uk=e.uid||e.naam;
+    if(!userMap[uk]||e.score>userMap[uk].score)userMap[uk]=e;
+  });
+  const deduped=Object.values(userMap).sort((a,b)=>b.score-a.score);
   const top=deduped.slice(0,25);
 
   // My best score in current filter (match on uid if available, else name)
   const myEntries=filtered.filter(e=>myUid?(e.uid===myUid):(myNaam&&e.naam===myNaam));
   const myBest=myEntries.sort((a,b)=>b.score-a.score)[0]||null;
-  const myRank=myBest?deduped.findIndex(e=>e.naam===myBest.naam&&e.vak===myBest.vak&&e.domeinId===myBest.domeinId)+1:null;
+  const myRank=myBest?deduped.findIndex(e=>(myUid?e.uid===myUid:e.naam===myBest.naam))+1:null;
   const myBox=document.getElementById('lb-myscore-box');
   const myLiveAvatar32=getMyCurrentAvatarHtml(32);
   const myLiveAvatar28=getMyCurrentAvatarHtml(28);
@@ -10590,7 +10597,16 @@ function renderHomeStats(){
       <div class="hsd-lbl">Gemiddelde SE</div>
     </div>
   </div>`:'';
-  box.innerHTML=`<div class="home-stats-dash">${streakHtml}${lvlHtml}${avgHtml}</div>`;
+  // Badge teller
+  const earnedCount=ALL_BADGES.filter(b=>getAchieved()[b.id]).length;
+  const badgeHtml=earnedCount>0?`<div class="hsd-pill hsd-badges" onclick="openProfiel()" title="Bekijk je badges" role="button" tabindex="0">
+    <span class="hsd-icon">🏅</span>
+    <div class="hsd-body">
+      <div class="hsd-val">${earnedCount}/${ALL_BADGES.length}</div>
+      <div class="hsd-lbl">Badges</div>
+    </div>
+  </div>`:'';
+  box.innerHTML=`<div class="home-stats-dash">${streakHtml}${lvlHtml}${avgHtml}${badgeHtml}</div>`;
 }
 
 function renderXPHome(){
