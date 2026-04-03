@@ -551,12 +551,34 @@ h1,h2,h3,h4{font-family:var(--font-head);line-height:1.2;letter-spacing:-.3px}
 .hm-cta-sec:hover{background:rgba(255,255,255,.14);border-color:rgba(255,255,255,.3);transform:translateY(-2px)}
 
 /* ── QUICK LINK STRIP ────────────────────────── */
-.hm-ql{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin:24px 0 28px}
-.hm-ql-btn{display:flex;flex-direction:column;align-items:center;gap:8px;padding:16px 8px;background:var(--s);border:1.5px solid var(--bo);border-radius:18px;cursor:pointer;font-family:var(--font);font-size:12px;font-weight:700;color:var(--mu);transition:all .2s cubic-bezier(.34,1.2,.64,1);letter-spacing:.2px}
-.hm-ql-btn svg{stroke:var(--or);width:22px;height:22px;stroke-width:2;fill:none;stroke-linecap:round;stroke-linejoin:round;transition:transform .2s}
-.hm-ql-btn:hover{border-color:rgba(var(--or-rgb),.4);background:rgba(var(--or-rgb),.06);color:var(--dk);transform:translateY(-3px);box-shadow:0 6px 20px rgba(var(--or-rgb),.14)}
-.hm-ql-btn:hover svg{transform:scale(1.15)}
-.hm-ql-btn:active{transform:scale(.96)}
+.hm-ql{display:none}
+/* ── BENTO GRID ──────────────────────────────── */
+.bento{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;padding:10px 16px 18px;max-width:680px;margin:0 auto}
+.bento-cell{background:var(--s);border:1.5px solid var(--bo);border-radius:14px;cursor:pointer;transition:all .18s cubic-bezier(.34,1.2,.64,1);text-decoration:none;overflow:hidden;position:relative;-webkit-tap-highlight-color:transparent;font-family:var(--font)}
+.bento-cell:hover{border-color:rgba(var(--or-rgb),.4);transform:translateY(-2px);box-shadow:0 6px 18px rgba(0,0,0,.14)}
+.bento-cell:active{transform:scale(.97)}
+.bento-stat{display:flex;flex-direction:column;padding:11px 12px;gap:1px}
+.bento-si{font-size:16px;line-height:1;margin-bottom:3px}
+.bento-sv{font-family:var(--font-head);font-size:14px;font-weight:800;color:var(--dk);line-height:1.2;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.bento-sl{font-size:10px;color:var(--mu);line-height:1.35;font-weight:500;overflow:hidden;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical}
+.bento-act{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:5px;padding:12px 6px;text-align:center}
+.bento-act svg{stroke:var(--or);width:20px;height:20px;stroke-width:2;fill:none;stroke-linecap:round;stroke-linejoin:round;transition:transform .18s}
+.bento-cell:hover .bento-act svg{transform:scale(1.15)}
+.bento-al{font-size:11px;font-weight:700;color:var(--mu);letter-spacing:.2px}
+.bento-streak .bento-sv{color:#f97316}
+.bento-xp .bento-sv{color:#eab308}
+.bento-badges .bento-sv{color:#a78bfa}
+.bento-avg-ok .bento-sv{color:#22c55e}
+.bento-avg-warn .bento-sv{color:#ef4444}
+.bento-at-risk{border-color:rgba(249,115,22,.5)!important;animation:atRiskPulse 2s ease-in-out infinite}
+.bento-at-risk .bento-sv{color:#f97316!important}
+.bento-xp-urgent{border-color:rgba(234,179,8,.45)!important}
+.bento-xp-urgent .bento-sv{color:#ca8a04!important}
+.bento-empty{grid-column:1/-1;display:flex;align-items:center;gap:12px;padding:13px 14px}
+.bento-empty-icon{font-size:22px;flex-shrink:0}
+.bento-empty-text{font-size:12px;color:var(--mu);flex:1;line-height:1.4}
+.bento-empty-cta{font-size:12px;font-weight:700;color:var(--or);white-space:nowrap;flex-shrink:0}
+@media(max-width:480px){.bento{gap:6px;padding:8px 12px 14px}.bento-sv{font-size:13px}.bento-si{font-size:15px}.bento-act{padding:10px 4px}}
 
 /* ── TIJDVAK STRIP ───────────────────────────── */
 .hm-tvk{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--bo);border:1px solid var(--bo);border-radius:18px;overflow:hidden;margin-bottom:28px}
@@ -3245,30 +3267,10 @@ html.dark .hsd-pill{background:var(--bg2);border-color:var(--bo2)}
 
 <!-- COMEBACK CARD (Feature 4) -->
 <div id="comeback-card-home"></div>
-<!-- STATS DASHBOARD BAR -->
-<div id="home-stats-bar"></div>
+<!-- BENTO GRID (stats + quick actions) -->
+<div id="home-bento"></div>
 
 <div class="w">
-
-  <!-- QUICK LINKS -->
-  <div class="hm-ql">
-    <button class="hm-ql-btn" onclick="show('sc-schedule')" aria-label="Rooster bekijken">
-      <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
-      Rooster
-    </button>
-    <button class="hm-ql-btn" onclick="show('sc-calc');setTimeout(prefillCalcFromSaved,50)" aria-label="Cijfers berekenen">
-      <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="2" width="16" height="20" rx="2"/><line x1="8" y1="6" x2="16" y2="6"/><line x1="8" y1="10" x2="16" y2="10"/><line x1="8" y1="14" x2="12" y2="14"/></svg>
-      Berekenen
-    </button>
-    <button class="hm-ql-btn" onclick="show('sc-leaderboard');renderLeaderboard()" aria-label="Leaderboard bekijken">
-      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 21h8M12 17v4M17 3H7l-1 7h10l-1-7z"/><path d="M5 10c0 3.9 3.1 7 7 7s7-3.1 7-7"/></svg>
-      Leaderboard
-    </button>
-    <button class="hm-ql-btn" onclick="show('sc-info')" aria-label="Slaagregels bekijken">
-      <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
-      Slaagregels
-    </button>
-  </div>
 
   <!-- DYNAMIC WIDGETS (JS-driven) -->
   <div id="live-count-home"></div>
@@ -12085,76 +12087,79 @@ function renderGreeting(){
 }
 
 function renderHomeStats(){
-  const box=document.getElementById('home-stats-bar');
+  const box=document.getElementById('home-bento');
   if(!box)return;
-  // Streak
+  // ── Data ──────────────────────────────────────────
   const {current:streak}=calcStreak();
-  // XP / Level
   const xp=getTotalXP();
   const lvl=getLevelForXP(xp);
-  // Average grade
   const cijfers=getSavedCijfers();
   const vals=Object.values(cijfers).filter(v=>typeof v==='number'&&v>0);
   const avg=vals.length?vals.reduce((a,b)=>a+b,0)/vals.length:null;
-  // Geen data → toon motiverende lege staat
+  // ── Action cells (always shown) ───────────────────
+  const actCells=`
+    <button class="bento-cell bento-act" onclick="show('sc-schedule')" aria-label="Rooster">
+      <svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+      <span class="bento-al">Rooster</span>
+    </button>
+    <button class="bento-cell bento-act" onclick="show('sc-calc');setTimeout(prefillCalcFromSaved,50)" aria-label="Berekenen">
+      <svg viewBox="0 0 24 24"><rect x="4" y="2" width="16" height="20" rx="2"/><line x1="8" y1="6" x2="16" y2="6"/><line x1="8" y1="10" x2="16" y2="10"/><line x1="8" y1="14" x2="12" y2="14"/></svg>
+      <span class="bento-al">Berekenen</span>
+    </button>
+    <button class="bento-cell bento-act" onclick="show('sc-leaderboard');renderLeaderboard()" aria-label="Leaderboard">
+      <svg viewBox="0 0 24 24"><path d="M8 21h8M12 17v4M17 3H7l-1 7h10l-1-7z"/><path d="M5 10c0 3.9 3.1 7 7 7s7-3.1 7-7"/></svg>
+      <span class="bento-al">Leaderboard</span>
+    </button>
+    <button class="bento-cell bento-act" onclick="show('sc-info')" aria-label="Slaagregels">
+      <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+      <span class="bento-al">Slaagregels</span>
+    </button>`;
+  // ── No data → empty state + actions ──────────────
   if(!xp&&!streak&&avg===null){
-    box.innerHTML=`<div class="hsd-empty" onclick="document.getElementById('vakgrid')?.scrollIntoView({behavior:'smooth'})">
-      <div class="hsd-empty-icon">🚀</div>
-      <div class="hsd-empty-text">Maak je eerste quiz om je streak, XP en gemiddelde te zien</div>
-      <div class="hsd-empty-cta">Begin →</div>
+    box.innerHTML=`<div class="bento">
+      <div class="bento-cell bento-empty" onclick="document.getElementById('vakgrid')?.scrollIntoView({behavior:'smooth'})">
+        <span class="bento-empty-icon">🚀</span>
+        <span class="bento-empty-text">Maak je eerste quiz om je streak, XP en gemiddelde te zien</span>
+        <span class="bento-empty-cta">Begin →</span>
+      </div>
+      ${actCells}
     </div>`;
     return;
   }
+  // ── Streak cell ───────────────────────────────────
   const todayStr=new Date().toISOString().slice(0,10);
   const s=getStreak();
   const practicedToday=s.days&&s.days.includes(todayStr);
   const atRisk=!practicedToday&&streak>0;
-  // Streak milestone proximity
   const milestones=[3,7,14,30,100,200,300,365];
   const nextMile=milestones.find(m=>m>streak);
-  let streakSub=atRisk?'⚠ Oefen voor middernacht!':streak>0?'dagen op rij':'Begin je streak!';
+  let streakSub=atRisk?'⚠ Oefen voor middernacht!':streak>0?'Dagen op rij':'Begin je streak!';
   const mileLabel={3:'🔥3-daags',7:'⚡7-daags',14:'💎14-daags',30:'🔮30-daags',100:'👑100-daags',200:'🌌200-daags',300:'⚜️300-daags',365:'🪐365-daags'};
-  if(!atRisk&&nextMile&&(nextMile-streak)<=2)streakSub=`Nog ${nextMile-streak} dag${nextMile-streak>1?'en':''} voor ${mileLabel[nextMile]||nextMile+'d'} badge!`;
-  const streakHtml=`<div class="hsd-pill hsd-streak${atRisk?' hsd-at-risk':''}" onclick="openProfiel()" title="Bekijk streak & badges" role="button" tabindex="0">
-    <span class="hsd-icon hsd-icon-wrap">🔥</span>
-    <div class="hsd-body">
-      <div class="hsd-val">${streak} dag${streak!==1?'en':''}</div>
-      <div class="hsd-lbl">${streakSub}</div>
-    </div>
+  if(!atRisk&&nextMile&&(nextMile-streak)<=2)streakSub=`Nog ${nextMile-streak}d voor ${mileLabel[nextMile]||nextMile+'d'} badge!`;
+  const streakCell=`<div class="bento-cell bento-streak${atRisk?' bento-at-risk':''}" onclick="openProfiel()" role="button" tabindex="0">
+    <div class="bento-stat"><div class="bento-si">🔥</div><div class="bento-sv">${streak} dag${streak!==1?'en':''}</div><div class="bento-sl">${streakSub}</div></div>
   </div>`;
-  // XP proximity to next level
-  const curXP2=getXPForLevel(lvl);
-  const nxtXP2=getXPForLevel(lvl+1)||curXP2+1000;
-  const xpToNext=nxtXP2-xp;
+  // ── Level / XP cell ───────────────────────────────
+  const nxtXP=getXPForLevel(lvl+1)||(getXPForLevel(lvl)+1000);
+  const xpToNext=nxtXP-xp;
   const xpIsUrgent=xpToNext<=100&&xpToNext>0;
-  const xpSub=xp>0?(xpIsUrgent?`⚡ Nog ${xpToNext} XP → Level ${lvl+1}!`:`Nog ${xpToNext} XP naar level ${lvl+1}`):'';
-  const lvlHtml=xp>0?`<div class="hsd-pill hsd-xp${xpIsUrgent?' hsd-xp-urgent':''}" onclick="show('sc-leaderboard');renderLeaderboard()" title="Bekijk leaderboard" role="button" tabindex="0">
-    <span class="hsd-icon">⭐</span>
-    <div class="hsd-body">
-      <div class="hsd-val">Level ${lvl}</div>
-      <div class="hsd-lbl">${xpSub}</div>
-    </div>
+  const xpSub=xp>0?(xpIsUrgent?`⚡ Nog ${xpToNext} XP!`:`Nog ${xpToNext} XP`):'';
+  const lvlCell=xp>0?`<div class="bento-cell bento-xp${xpIsUrgent?' bento-xp-urgent':''}" onclick="show('sc-leaderboard');renderLeaderboard()" role="button" tabindex="0">
+    <div class="bento-stat"><div class="bento-si">⭐</div><div class="bento-sv">Level ${lvl}</div><div class="bento-sl">${xpSub}</div></div>
   </div>`:'';
-  const groepHtml=`<div class="hsd-pill" onclick="show('sc-groep');renderGroepScreen()" title="Mijn groep" role="button" tabindex="0" style="gap:6px"><span class="hsd-icon">👥</span><div class="hsd-body"><div class="hsd-val">Groep</div><div class="hsd-lbl">Klassenboard</div></div></div>`;
-  let avgClass='hsd-avg';
-  if(avg!==null&&avg<6)avgClass='hsd-avg hsd-avg-warn';
-  const avgHtml=avg!==null?`<div class="hsd-pill ${avgClass}" onclick="show('sc-calc');setTimeout(prefillCalcFromSaved,50)" title="Bereken je eindcijfer" role="button" tabindex="0">
-    <span class="hsd-icon">📈</span>
-    <div class="hsd-body">
-      <div class="hsd-val">${avg.toFixed(1).replace('.',',')}</div>
-      <div class="hsd-lbl">Gemiddelde SE</div>
-    </div>
-  </div>`:'';
-  // Badge teller
+  // ── Badges cell ───────────────────────────────────
   const earnedCount=ALL_BADGES.filter(b=>getAchieved()[b.id]).length;
-  const badgeHtml=earnedCount>0?`<div class="hsd-pill hsd-badges" onclick="openProfiel()" title="Bekijk je badges" role="button" tabindex="0">
-    <span class="hsd-icon">🏅</span>
-    <div class="hsd-body">
-      <div class="hsd-val">${earnedCount}/${ALL_BADGES.length}</div>
-      <div class="hsd-lbl">Badges</div>
-    </div>
+  const badgeCell=earnedCount>0?`<div class="bento-cell bento-badges" onclick="openProfiel()" role="button" tabindex="0">
+    <div class="bento-stat"><div class="bento-si">🏅</div><div class="bento-sv">${earnedCount}/${ALL_BADGES.length}</div><div class="bento-sl">Badges</div></div>
   </div>`:'';
-  box.innerHTML=`<div class="home-stats-dash">${streakHtml}${lvlHtml}${avgHtml}${badgeHtml}${groepHtml}</div>`;
+  // ── Avg / Groep cell ─────────────────────────────
+  const avgCell=avg!==null?`<div class="bento-cell ${avg<6?'bento-avg-warn':'bento-avg-ok'}" onclick="show('sc-calc');setTimeout(prefillCalcFromSaved,50)" role="button" tabindex="0">
+    <div class="bento-stat"><div class="bento-si">📈</div><div class="bento-sv">${avg.toFixed(1).replace('.',',')}</div><div class="bento-sl">Gem. SE</div></div>
+  </div>`:
+  `<div class="bento-cell" onclick="show('sc-groep');renderGroepScreen()" role="button" tabindex="0">
+    <div class="bento-stat"><div class="bento-si">👥</div><div class="bento-sv">Groep</div><div class="bento-sl">Klassenboard</div></div>
+  </div>`;
+  box.innerHTML=`<div class="bento">${streakCell}${lvlCell}${badgeCell}${avgCell}${actCells}</div>`;
 }
 
 function renderXPHome(){
