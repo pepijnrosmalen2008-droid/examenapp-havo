@@ -1237,16 +1237,15 @@ html.dark .qb{background:#2e3550}
 .prof-badge-rarity{font-size:9px;font-weight:700;text-transform:uppercase;letter-spacing:.4px;margin-top:2px}
 .prof-badges-summary{font-size:13px;color:var(--mu);margin-bottom:18px;display:flex;align-items:center;gap:8px}
 .prof-badges-count{font-weight:700;color:var(--or)}
-/* Rarity kleuren op profielbadge-cirkel */
-.prof-badge-circle.rarity-common   {border-color:#9CA3AF;box-shadow:0 0 5px 1px rgba(156,163,175,.45)}
-.prof-badge-circle.rarity-rare     {border-color:#3B82F6;box-shadow:0 0 8px 2px rgba(59,130,246,.55)}
-.prof-badge-circle.rarity-epic     {border-color:#8B5CF6;box-shadow:0 0 10px 3px rgba(139,92,246,.65)}
-.prof-badge-circle.rarity-legendary{border-color:#F59E0B;box-shadow:0 0 12px 4px rgba(245,158,11,.7)}
-.prof-badge-circle.rarity-mythic   {border-color:#EF4444;box-shadow:0 0 16px 5px rgba(239,68,68,.75),0 0 24px 8px rgba(245,158,11,.35);animation:mythicGlow 2s ease-in-out infinite}
-@keyframes mythicGlow{0%,100%{box-shadow:0 0 16px 5px rgba(239,68,68,.75),0 0 24px 8px rgba(245,158,11,.35)}50%{box-shadow:0 0 22px 8px rgba(239,68,68,.9),0 0 32px 12px rgba(245,158,11,.55)}}
+/* Rarity glows op profielbadge-cirkel (alleen outer glow, geen border-override) */
+.prof-badge-circle.rarity-common   {box-shadow:0 0 6px 2px rgba(156,163,175,.5)}
+.prof-badge-circle.rarity-rare     {box-shadow:0 0 9px 3px rgba(59,130,246,.6)}
+.prof-badge-circle.rarity-epic     {box-shadow:0 0 12px 4px rgba(139,92,246,.7)}
+.prof-badge-circle.rarity-legendary{box-shadow:0 0 14px 5px rgba(245,158,11,.8)}
+.prof-badge-circle.rarity-mythic   {box-shadow:0 0 18px 6px rgba(239,68,68,.8),0 0 28px 10px rgba(245,158,11,.4);animation:mythicGlow 2s ease-in-out infinite}
+@keyframes mythicGlow{0%,100%{box-shadow:0 0 18px 6px rgba(239,68,68,.8),0 0 28px 10px rgba(245,158,11,.4)}50%{box-shadow:0 0 24px 9px rgba(239,68,68,.95),0 0 36px 14px rgba(245,158,11,.6)}}
 .prof-badge-circle.selected{outline:3px solid var(--or);outline-offset:2px;transform:scale(1.08)}
 .badge-selected-check{position:absolute;bottom:1px;right:1px;font-size:9px;line-height:1;background:var(--or);color:#fff;border-radius:50%;width:14px;height:14px;display:flex;align-items:center;justify-content:center;font-weight:900}
-.prof-badge-circle{position:relative}
 /* Rarity kleuren op leaderboard badge-overlay */
 .lb-av-badge.rarity-common   {border-color:#9CA3AF;box-shadow:0 0 4px 1px rgba(156,163,175,.6)}
 .lb-av-badge.rarity-rare     {border-color:#3B82F6;box-shadow:0 0 6px 2px rgba(59,130,246,.7)}
@@ -7937,9 +7936,9 @@ const ALL_BADGES=[
   {id:'quiz100',  emoji:'🌊', label:'Doorzetter',      tip:'100 quizzen gemaakt',             cat:'Quizzen',    rarity:'legendary'},
   {id:'quiz500',  emoji:'💫', label:'Meester',         tip:'500 quizzen gemaakt',             cat:'Quizzen',    rarity:'mythic'},
   // Prestaties
-  {id:'combo3',   emoji:'🎯', label:'3 op rij',        tip:'3 vragen op rij goed',            cat:'Prestaties', rarity:'rare'},
-  {id:'combo5',   emoji:'⚡', label:'God Mode',        tip:'5 vragen op rij goed',            cat:'Prestaties', rarity:'epic'},
-  {id:'combo10',  emoji:'💎', label:'Legendarisch',    tip:'10 vragen op rij goed',           cat:'Prestaties', rarity:'legendary'},
+  {id:'combo3',   emoji:'💥', label:'3 op rij',        tip:'3 vragen op rij goed',            cat:'Prestaties', rarity:'rare'},
+  {id:'combo5',   emoji:'🌩️', label:'God Mode',        tip:'5 vragen op rij goed',            cat:'Prestaties', rarity:'epic'},
+  {id:'combo10',  emoji:'🏅', label:'Legendarisch',    tip:'10 vragen op rij goed',           cat:'Prestaties', rarity:'legendary'},
   {id:'perfect',  emoji:'🌟', label:'Perfecte score',  tip:'100% op een quiz',                cat:'Prestaties', rarity:'legendary'},
   // Vakken
   {id:'vakken3',  emoji:'📖', label:'Veelzijdig',      tip:'3 vakken geoefend',               cat:'Vakken',     rarity:'rare'},
@@ -8050,9 +8049,9 @@ function showAch(emoji,txt,offset){
   setTimeout(()=>{el.classList.add('ach-out');setTimeout(()=>el.remove(),450);},3200);
 }
 function checkComboAch(combo){
-  if(combo===3&&earnAch('combo3'))showAch('🔥','3 vragen op rij!');
-  if(combo===5&&earnAch('combo5'))showAch('⚡','GOD MODE — 5 op rij!',175);
-  if(combo===10&&earnAch('combo10'))showAch('💎','10 op rij — legendarisch!',220);
+  if(combo===3&&earnAch('combo3'))showAch('💥','3 vragen op rij!');
+  if(combo===5&&earnAch('combo5'))showAch('🌩️','GOD MODE — 5 op rij!',175);
+  if(combo===10&&earnAch('combo10'))showAch('🏅','10 op rij — legendarisch!',220);
 }
 
 // ═══════ GELUID ═══════
@@ -9659,7 +9658,7 @@ function openLbProfile(naam){
   if(!allEntries.length)return;
   const botProf=BOT_PROFILES[naam]||null;
   const isBot=allEntries.some(e=>e.isBot);
-  const avatarHtml=getLbAvatarHtml(allEntries[0],40);
+  const avatarHtml=getLbAvatarHtml(allEntries[0],50);
   const niveau=allEntries[0]?.niveau?.toUpperCase()||'';
   // Aggregate stats
   const bestScore=Math.max(...allEntries.map(e=>e.score));
