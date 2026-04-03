@@ -12142,7 +12142,19 @@ function renderHomeStats(){
       <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
       <span class="bento-al">Slaagregels</span>
     </button>`;
-  // ── No data → empty state + actions ──────────────
+  // ── Dagdoel (berekend vroeg, nodig voor beide paden) ──
+  const _dg=getDailyGoal();
+  const _dgDone=Math.min(_dg.done||0,DG_TARGET);
+  const _dgRewarded=_dg.rewarded||_dgDone>=DG_TARGET;
+  function _buildDgCell(){
+    if(_dgRewarded)return`<div class="bento-cell" style="grid-column:1/-1;padding:11px 16px;display:flex;align-items:center;gap:10px"><span style="font-size:18px">🎯</span><span style="font-size:13px;font-weight:700;color:var(--dk)">Dagdoel bereikt!</span><span style="font-size:12px;color:var(--mu);margin-left:2px">${DG_TARGET} / ${DG_TARGET} quizzen · +75 XP verdiend</span></div>`;
+    const _dots=Array.from({length:DG_TARGET},(_,i)=>`<div class="dg-dot${i<_dgDone?' dg-dot-done':''}"></div>`).join('');
+    return`<div class="bento-cell" style="grid-column:1/-1;padding:11px 16px"><div style="display:flex;align-items:center;gap:8px;margin-bottom:6px"><span style="font-size:16px">🎯</span><span style="font-size:13px;font-weight:700;color:var(--dk)">Dagdoel</span><span style="font-size:12px;color:var(--mu)">${_dgDone}/${DG_TARGET} quizzen</span><span style="margin-left:auto;font-size:11px;font-weight:700;color:var(--or);background:rgba(var(--or-rgb),.1);padding:2px 8px;border-radius:20px">+75 XP</span></div><div class="dg-dots" style="margin-bottom:6px">${_dots}</div><div class="dg-bar-wrap"><div class="dg-bar" style="width:${Math.round(_dgDone/DG_TARGET*100)}%"></div></div></div>`;
+  }
+  // ── Clear standalone containers (altijd) ──────────
+  const _dgBox=document.getElementById('daily-goal-home');if(_dgBox)_dgBox.innerHTML='';
+  const _smBox=document.getElementById('streak-milestone-banner-home');if(_smBox)_smBox.innerHTML='';
+  // ── No data → empty state + actions + dagdoel ─────
   if(!xp&&!streak&&avg===null){
     box.innerHTML=`<div class="bento">
       <div class="bento-cell bento-empty" onclick="document.getElementById('vakgrid')?.scrollIntoView({behavior:'smooth'})">
@@ -12150,7 +12162,7 @@ function renderHomeStats(){
         <span class="bento-empty-text">Maak je eerste quiz om je streak, XP en gemiddelde te zien</span>
         <span class="bento-empty-cta">Begin →</span>
       </div>
-      ${actCells}
+      ${actCells}${_buildDgCell()}
     </div>`;
     return;
   }
@@ -12187,7 +12199,23 @@ function renderHomeStats(){
   `<div class="bento-cell" onclick="show('sc-groep');renderGroepScreen()" role="button" tabindex="0">
     <div class="bento-stat"><div class="bento-si">👥</div><div class="bento-sv">Groep</div><div class="bento-sl">Klassenboard</div></div>
   </div>`;
-  box.innerHTML=`<div class="bento">${streakCell}${lvlCell}${badgeCell}${avgCell}${actCells}</div>`;
+  // ── Streak milestone cell (conditional, full-width) ──
+  let smCell='';
+  const nextMile2=getNextStreakMilestone(streak);
+  if(nextMile2){
+    const dLeft=nextMile2-streak;
+    if(dLeft>0&&dLeft<=7){
+      const bMap={7:{e:'⚡',n:'Een week'},14:{e:'💎',n:'Twee weken'},30:{e:'🔮',n:'Een maand'},100:{e:'👑',n:'Legende'},200:{e:'🌌',n:'Onsterfelijk'},300:{e:'⚜️',n:'Grootmeester'},365:{e:'🪐',n:'Heel het jaar'}};
+      const b=bMap[nextMile2]||{e:'🏅',n:nextMile2+' dagen'};
+      const fp=Math.round(Math.min(99,streak/nextMile2*100));
+      smCell=`<div class="bento-cell streak-milestone-banner" style="grid-column:1/-1;border-radius:14px;padding:12px 16px;margin:0">
+        <div class="smb-row"><div class="smb-icon">🔥</div><div class="smb-text">Nog <strong>${dLeft} dag${dLeft>1?'en':''}</strong> tot je ${b.e} <strong>${b.n}</strong> badge! Oefen vandaag voor dag ${streak+1}.</div></div>
+        <div class="smb-bar-wrap"><div class="smb-bar-fill" style="width:${fp}%"></div></div>
+        <div class="smb-bar-lbl">${streak} / ${nextMile2} dagen</div>
+      </div>`;
+    }
+  }
+  box.innerHTML=`<div class="bento">${streakCell}${lvlCell}${badgeCell}${avgCell}${actCells}${_buildDgCell()}${smCell}</div>`;
 }
 
 function renderXPHome(){
