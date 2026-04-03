@@ -9371,13 +9371,28 @@ function raceToast(msg){
 }
 
 // ═══════ BOT LEADERBOARD SEED ═══════
+// Vaste dier-avatars per bot (animalId + stageIdx uit ANIMAL_EVOLUTIONS)
+const BOT_AVATARS={
+  'Lars V.':  {animalId:'leeuw',   stageIdx:4},
+  'Sophie K.':{animalId:'adelaar', stageIdx:4},
+  'Daan M.':  {animalId:'draak',   stageIdx:3},
+  'Emma J.':  {animalId:'vlinder', stageIdx:3},
+  'Noah B.':  {animalId:'wolf',    stageIdx:2},
+  'Lena H.':  {animalId:'leeuw',   stageIdx:2},
+  'Tim R.':   {animalId:'wolf',    stageIdx:1},
+  'Sara P.':  {animalId:'vlinder', stageIdx:1},
+  'Finn O.':  {animalId:'draak',   stageIdx:0},
+  'Mila W.':  {animalId:'adelaar', stageIdx:0},
+};
 function seedBotsNow(){
-  const BOT_KEY='slagio_bots_seeded_v8';
+  const BOT_KEY='slagio_bots_seeded_v9';
   if(localStorage.getItem(BOT_KEY))return;
 
   function mkEntry(naam,avatar,vak,vakNaam,domeinId,domeinNaam,goed,tot,avgTijd,daysAgo,niveau){
     const d=new Date('2025-01-15');d.setDate(d.getDate()+daysAgo);
-    return{naam,avatar,vak,vakNaam,domeinId,domeinNaam,
+    const ba=BOT_AVATARS[naam]||{};
+    return{naam,avatar,animalId:ba.animalId||null,stageIdx:ba.stageIdx??0,
+      vak,vakNaam,domeinId,domeinNaam,
       score:goed*100+goed*Math.round(avgTijd/15*100),goed,tot,avgTijd,
       date:d.toISOString().slice(0,10),niveau,isBot:true};
   }
@@ -9478,7 +9493,7 @@ function seedBotsNow(){
   });
 
   // Wis oude seed-vlaggen
-  ['v3','v7'].forEach(v=>localStorage.removeItem('slagio_bots_seeded_'+v));
+  ['v3','v7','v8'].forEach(v=>localStorage.removeItem('slagio_bots_seeded_'+v));
   localStorage.setItem(BOT_KEY,'1');
 }
 seedBotsNow();
@@ -9574,7 +9589,7 @@ function openLbProfile(naam){
   if(!allEntries.length)return;
   const botProf=BOT_PROFILES[naam]||null;
   const isBot=allEntries.some(e=>e.isBot);
-  const avatar=allEntries[0]?.avatar||'🐻';
+  const avatarHtml=getLbAvatarHtml(allEntries[0],40);
   const niveau=allEntries[0]?.niveau?.toUpperCase()||'';
   // Aggregate stats
   const bestScore=Math.max(...allEntries.map(e=>e.score));
@@ -9614,7 +9629,7 @@ function openLbProfile(naam){
     <div class="lbp-drag"></div>
     <button class="lbp-close" onclick="closeLbProfile()">✕</button>
     <div class="lbp-header">
-      <div class="lbp-av">${avatar}</div>
+      <div class="lbp-av">${avatarHtml}</div>
       <div class="lbp-headinfo">
         <div class="lbp-naam">${naam}${isBot?'<span style="font-size:10px;color:var(--mu);font-weight:500;margin-left:6px">· bot</span>':''}</div>
         <div class="lbp-chips">
