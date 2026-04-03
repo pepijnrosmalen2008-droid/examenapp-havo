@@ -1308,6 +1308,43 @@ html.dark .qb{background:#2e3550}
 .gi-cij{font-family:var(--font-head);font-size:14px;font-weight:800;text-align:right}
 .gi-ce{font-size:11px;color:var(--mu);white-space:nowrap;font-weight:500}
 
+/* Verbeterpunten / Focus card */
+.focus-card{background:var(--s);border:1.5px solid rgba(var(--or-rgb),.3);border-radius:20px;padding:18px 20px 14px;margin-bottom:20px}
+.focus-card-head{display:flex;align-items:center;justify-content:space-between;margin-bottom:12px}
+.focus-card-title{font-family:var(--font-head);font-size:15px;font-weight:800;color:var(--dk)}
+.focus-item{display:flex;align-items:center;gap:10px;padding:9px 10px;border-radius:12px;margin-bottom:6px;background:var(--bg);border:1px solid var(--bo);transition:background .15s}
+.focus-item:last-child{margin-bottom:0}
+.focus-urgency{font-size:11px;font-weight:700;padding:2px 8px;border-radius:20px;white-space:nowrap;flex-shrink:0}
+.focus-urgency.ur-red{background:rgba(239,68,68,.12);color:#ef4444}
+.focus-urgency.ur-orange{background:rgba(249,115,22,.12);color:#f97316}
+.focus-urgency.ur-yellow{background:rgba(234,179,8,.12);color:#ca8a04}
+.focus-urgency.ur-green{background:rgba(34,197,94,.12);color:#16a34a}
+.focus-info{flex:1;min-width:0}
+.focus-naam{font-size:13px;font-weight:700;color:var(--dk);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.focus-ce{font-size:11px;color:var(--mu);margin-top:1px}
+.focus-quiz-chip{font-size:11px;font-weight:700;padding:2px 7px;border-radius:8px;background:var(--bg2);color:var(--mu);white-space:nowrap;flex-shrink:0}
+.focus-btn{font-size:12px;font-weight:700;padding:5px 12px;border-radius:9px;background:var(--or);color:#fff;border:none;cursor:pointer;white-space:nowrap;flex-shrink:0;font-family:var(--font);transition:opacity .15s}
+.focus-btn:hover{opacity:.85}
+/* Grade panel quiz insight */
+.gp-quiz-insight{width:100%;padding-top:8px;margin-top:4px;border-top:1px solid var(--bo);display:flex;flex-direction:column;gap:6px}
+.gp-est-ce{display:flex;align-items:center;gap:8px;font-size:12px;flex-wrap:wrap}
+.gp-est-val{font-family:var(--font-head);font-size:14px;font-weight:800}
+.gp-weak-domain{display:flex;align-items:center;gap:8px;background:rgba(var(--or-rgb),.07);border:1px solid rgba(var(--or-rgb),.2);border-radius:10px;padding:8px 12px;flex-wrap:wrap}
+.gp-weak-txt{flex:1;font-size:12px;color:var(--dk);min-width:0}
+.gp-weak-btn{font-size:12px;font-weight:700;padding:5px 12px;border-radius:8px;background:var(--or);color:#fff;border:none;cursor:pointer;font-family:var(--font);white-space:nowrap;flex-shrink:0}
+/* Action plan */
+.ap-section{margin-bottom:16px}
+.ap-section-head{font-size:12px;font-weight:800;text-transform:uppercase;letter-spacing:.6px;margin-bottom:8px;display:flex;align-items:center;gap:6px}
+.ap-item{display:flex;align-items:center;gap:10px;padding:10px 12px;border-radius:12px;border:1px solid var(--bo);background:var(--bg);margin-bottom:6px}
+.ap-dot{width:10px;height:10px;border-radius:50%;flex-shrink:0}
+.ap-info{flex:1;min-width:0}
+.ap-naam{font-size:13px;font-weight:700;color:var(--dk)}
+.ap-detail{font-size:11px;color:var(--mu);margin-top:1px}
+.ap-btn{font-size:12px;font-weight:700;padding:5px 12px;border-radius:9px;background:var(--or);color:#fff;border:none;cursor:pointer;white-space:nowrap;font-family:var(--font)}
+.ap-empty{text-align:center;padding:24px;color:var(--mu);font-size:13px;line-height:1.8}
+.ap-slaag-link{display:block;text-align:center;margin-top:16px;padding:11px;border-radius:12px;background:rgba(var(--or-rgb),.1);border:1px solid rgba(var(--or-rgb),.25);color:var(--or);font-size:13px;font-weight:700;cursor:pointer;transition:background .15s}
+.ap-slaag-link:hover{background:rgba(var(--or-rgb),.18)}
+
 /* ── PROGRESS ON DETAIL DOMAINS ──────────────── */
 .dom-progress{display:flex;align-items:center;gap:8px;margin-top:6px}
 .dp-bar{flex:1;height:5px;border-radius:3px;background:var(--bo);overflow:hidden;max-width:90px}
@@ -3612,6 +3649,7 @@ html.dark .hsd-pill{background:var(--bg2);border-color:var(--bo2)}
     <button class="calc-tab" onclick="switchCalc('eind')">Eindcijfer</button>
     <button class="calc-tab" onclick="switchCalc('nterm')">N-term</button>
     <button class="calc-tab" onclick="switchCalc('herk')">Herkansing</button>
+    <button class="calc-tab" onclick="switchCalc('plan')">Actieplan</button>
   </div>
 
   <div id="calc-slaag" class="calc-panel active">
@@ -3663,6 +3701,10 @@ html.dark .hsd-pill{background:var(--bg2);border-color:var(--bo2)}
     <div class="calc-row"><span class="calc-label">Nieuw CE-cijfer</span><input type="number" id="herk-ce" class="calc-input" min="1" max="10" step="0.1" placeholder="7.0"></div>
     <button class="calc-btn" onclick="berekenHerk()">Simuleer herkansing →</button>
     <div id="herk-result"></div>
+  </div>
+
+  <div id="calc-plan" class="calc-panel">
+    <div id="actieplan-content"><p class="ap-empty">Laden...</p></div>
   </div>
   <!-- Ad: calculator pagina (rustmoment) -->
   <div class="ad-wrapper" id="ad-calc" style="margin-top:20px">
@@ -6175,11 +6217,45 @@ function buildGradeInsight(){
       <div class="gi-ce">${ceTxt}</div>
     </div>`;
   }).join('');
+  // Build Verbeterpunten (focus) card
+  const urgentVakken=metCijfer.map(v=>{
+    const c=cijfers[v.id];
+    const ceNodig=Math.max(1,Math.min(10,11-c));
+    const quiz=getVakBestPct(v.id);
+    return {v,c,ceNodig,quiz};
+  }).sort((a,b)=>{
+    const aRed=a.c<6?1:0,bRed=b.c<6?1:0;
+    if(bRed!==aRed)return bRed-aRed;
+    if(b.ceNodig!==a.ceNodig)return b.ceNodig-a.ceNodig;
+    const aPct=a.quiz.hasData?a.quiz.pct:1,bPct=b.quiz.hasData?b.quiz.pct:1;
+    return aPct-bPct;
+  }).slice(0,3);
+  const focusItems=urgentVakken.map(({v,c,ceNodig,quiz})=>{
+    const ceNodigRnd=Math.round(ceNodig*10)/10;
+    let urgCls,urgLbl;
+    if(c<5.5){urgCls='ur-red';urgLbl='🔴 Cruciaal';}
+    else if(c<6.5){urgCls='ur-orange';urgLbl='🟠 Belangrijk';}
+    else if(c<7.5){urgCls='ur-yellow';urgLbl='🟡 Let op';}
+    else{urgCls='ur-green';urgLbl='🟢 Goed';}
+    const quizChip=quiz.hasData?`<span class="focus-quiz-chip">Quiz: ${Math.round(quiz.pct*100)}%</span>`:'';
+    return `<div class="focus-item">
+      <span class="focus-urgency ${urgCls}">${urgLbl}</span>
+      <div class="focus-info">
+        <div class="focus-naam"><span style="display:inline-block;width:8px;height:8px;border-radius:50%;background:${v.kleur};margin-right:5px;vertical-align:middle"></span>${v.naam}</div>
+        <div class="focus-ce">CE ≥ ${ceNodigRnd.toFixed(1).replace('.',',')} nodig ${quizChip}</div>
+      </div>
+      <button class="focus-btn" onclick="openVak('${v.id}')">Oefen nu →</button>
+    </div>`;
+  }).join('');
+  const focusCard=urgentVakken.length>0?`<div class="focus-card">
+    <div class="focus-card-head"><span class="focus-card-title">🎯 Verbeterpunten</span></div>
+    ${focusItems}
+  </div>`:'';
   el.innerHTML=`<div class="grade-insight-card">
     <div class="gi-head"><span class="gi-title">📊 Mijn SE-cijfers</span><button class="gi-edit-btn" onclick="event.stopPropagation();show('sc-cijfers');setTimeout(buildCijferGrid,50)">Bewerk</button></div>
     ${warnHtml}
     <div class="gi-rows">${rows}</div>
-  </div>`;
+  </div>${focusCard}`;
 }
 
 function buildGrid(){
@@ -7425,11 +7501,34 @@ function openVak(id){
     const kleur=cij>=7?'#4ADE80':cij>=5.5?'#FCD34D':'#F87171';
     const status=cij>=7?'Goed op koers — focus op je zwakste CE-domeinen 🎯':cij>=5.5?'CE hard nodig — oefen intensief 📚':'CE is cruciaal — elke punt telt ⚠️';
     const ceTxt=cij>=9?'Je hebt al bijna genoeg zonder CE':ceNodig<=1?'Minimale CE voldoende':`CE-score ≥ ${ceNodig.toFixed(1).replace('.',',')} voor een voldoende`;
+    // Quiz insight section inside grade panel
+    const vpData=getVakBestPct(ST.vak.id);
+    let quizInsightHtml='';
+    if(vpData.hasData){
+      const estCE=Math.round((1+9*vpData.pct)*10)/10;
+      const estCEStr=estCE.toFixed(1).replace('.',',');
+      const estColor=estCE>=ceNodig?'#4ADE80':estCE>=ceNodig-1?'#FCD34D':'#F87171';
+      // Find weakest domain
+      let weakestDomein=null;let weakestPct=2;
+      ST.vak.domeinen.forEach(d=>{
+        const dr=getDomeinBestPct(ST.vak.id,d.id);
+        if(dr.hasData&&dr.pct<weakestPct){weakestPct=dr.pct;weakestDomein=d;}
+      });
+      const weakHtml=weakestDomein?`<div class="gp-weak-domain">
+        <span class="gp-weak-txt">⚡ Zwakste domein: <strong>${weakestDomein.naam}</strong> (${Math.round(weakestPct*100)}%) — oefen dit nu voor de meeste winst</span>
+        <button class="gp-weak-btn" onclick="openQmode('${weakestDomein.id}')">Oefen →</button>
+      </div>`:'';
+      quizInsightHtml=`<div class="gp-quiz-insight">
+        <div class="gp-est-ce"><span>📈 Geschatte CE op basis van oefenscore:</span><span class="gp-est-val" style="color:${estColor}">${estCEStr}</span><span style="font-size:11px;color:var(--mu)">Gebaseerd op je beste quizresultaten</span></div>
+        ${weakHtml}
+      </div>`;
+    }
     const gpHtml=`<div class="grade-panel">
       <div class="gp-se"><span class="gp-lbl">SE-cijfer</span><span class="gp-val" style="color:${kleur}">${cij.toFixed(1).replace('.',',')}</span></div>
       <div class="gp-div"></div>
       <div class="gp-ce"><span class="gp-lbl">Benodigde CE</span><span class="gp-ce-val">${ceTxt}</span></div>
       <div class="gp-status">${status}</div>
+      ${quizInsightHtml}
     </div>`;
     document.querySelector('.exam-meta').insertAdjacentHTML('afterend',gpHtml);
   }
@@ -11256,6 +11355,65 @@ function switchCalc(id){
   if(id==='eind'){buildEindVakSelect();}
   if(id==='nterm'){buildNtermVakSelect();}
   if(id==='herk'){buildHerkSelect();const firstId=document.getElementById('herk-vak')?.value;if(firstId)buildHerkSERow(firstId);}
+  if(id==='plan'){buildActiePlan();}
+}
+function buildActiePlan(){
+  const el=document.getElementById('actieplan-content');
+  if(!el)return;
+  const cijfers=getSavedCijfers();
+  const vakken=getVK();
+  const metCijfer=vakken.filter(v=>cijfers[v.id]!=null);
+  const hasQuizData=vakken.some(v=>getVakBestPct(v.id).hasData);
+  if(metCijfer.length===0&&!hasQuizData){
+    el.innerHTML=`<p class="ap-empty">Voer je SE-cijfers in en maak een paar quizzen om je actieplan te zien.</p>`;
+    return;
+  }
+  const mustBetter=[],canBetter=[],onTrack=[];
+  vakken.forEach(v=>{
+    const c=cijfers[v.id];
+    const quiz=getVakBestPct(v.id);
+    const seScore=c!=null?c:null;
+    const quizPct=quiz.hasData?quiz.pct:null;
+    if(seScore!=null||quizPct!=null){
+      const isMust=(seScore!=null&&seScore<6)||(quizPct!=null&&quizPct<0.5);
+      const isCan=!isMust&&((seScore!=null&&seScore<7)||(quizPct!=null&&quizPct<0.65));
+      if(isMust)mustBetter.push({v,seScore,quizPct,quiz});
+      else if(isCan)canBetter.push({v,seScore,quizPct,quiz});
+      else onTrack.push({v,seScore,quizPct,quiz});
+    }
+  });
+  function renderItem({v,seScore,quizPct,quiz}){
+    // Find weakest domain
+    let weakestDomein=null;let weakestPct=2;
+    v.domeinen.forEach(d=>{
+      const dr=getDomeinBestPct(v.id,d.id);
+      if(dr.hasData&&dr.pct<weakestPct){weakestPct=dr.pct;weakestDomein=d;}
+    });
+    const detailParts=[];
+    if(seScore!=null)detailParts.push(`SE: ${seScore.toFixed(1).replace('.',',')}`);
+    if(quizPct!=null)detailParts.push(`Quiz: ${Math.round(quizPct*100)}%`);
+    if(weakestDomein)detailParts.push(`Zwakste domein: ${weakestDomein.naam}`);
+    return `<div class="ap-item">
+      <div class="ap-dot" style="background:${v.kleur}"></div>
+      <div class="ap-info"><div class="ap-naam">${v.naam}</div><div class="ap-detail">${detailParts.join(' · ')}</div></div>
+      <button class="ap-btn" onclick="openVak('${v.id}')">Oefen →</button>
+    </div>`;
+  }
+  function renderSection(emoji,title,items,showItems){
+    if(items.length===0)return'';
+    const itemsHtml=showItems?items.map(renderItem).join(''):'';
+    return `<div class="ap-section">
+      <div class="ap-section-head">${emoji} ${title}</div>
+      ${itemsHtml}
+    </div>`;
+  }
+  const slaagLink=`<div class="ap-slaag-link" onclick="document.querySelectorAll('.calc-tab').forEach(t=>t.classList.remove('active'));document.querySelectorAll('.calc-panel').forEach(p=>p.classList.remove('active'));document.getElementById('calc-slaag').classList.add('active');document.querySelectorAll('.calc-tab')[0].classList.add('active');buildSlaagInputs()">📊 Bereken slagingskans →</div>`;
+  el.innerHTML=`<h3 style="font-size:16px;font-weight:800;margin-bottom:16px">Jouw persoonlijke studieplan</h3>
+    ${renderSection('🔴','Moet beter',mustBetter,true)}
+    ${renderSection('🟠','Kan beter',canBetter,true)}
+    ${renderSection('🟢','Goed op koers',onTrack,false)}
+    ${mustBetter.length===0&&canBetter.length===0&&onTrack.length===0?'<p class="ap-empty">Voer je SE-cijfers in en maak een paar quizzen om je actieplan te zien.</p>':''}
+    ${slaagLink}`;
 }
 function buildSlaagInputs(){
   const box=document.getElementById('slaag-inputs');
@@ -11350,11 +11508,33 @@ function berekenSlaag(){
     tableHtml+=`<tr style="border-bottom:1px solid var(--bo)"><td style="padding:4px 0">${v.code}</td><td style="text-align:center">${v.se}</td><td style="text-align:center">${v.ce}</td><td style="text-align:center;font-weight:700;${col}">${v.eind}</td></tr>`;
   });
   tableHtml+='</table></div>';
+  // Coaching: where is the most improvement possible?
+  const allVakken=getVK();
+  const coachVakken=vakken.filter(v=>v.eind<6||(v.ce<(Math.max(1,Math.min(10,11-v.se))))).sort((a,b)=>a.eind-b.eind).slice(0,3);
+  let coachHtml='';
+  if(coachVakken.length>0){
+    const coachItems=coachVakken.map(cv=>{
+      const vakObj=allVakken.find(v=>v.code===cv.code);
+      const ceNodigVoor6=Math.max(1,Math.min(10,11-cv.se));
+      const ceGap=Math.round((ceNodigVoor6-cv.ce)*10)/10;
+      const gapTxt=ceGap>0?`CE ${ceGap.toFixed(1).replace('.',',')} punt omhoog → al voldoende`:`eindcijfer ${cv.eind}`;
+      const oefenBtn=vakObj?`<button class="ap-btn" onclick="openVak('${vakObj.id}')">Oefen →</button>`:'';
+      return `<div class="ap-item">
+        <div class="ap-dot" style="background:${vakObj?vakObj.kleur:'#999'}"></div>
+        <div class="ap-info"><div class="ap-naam">${cv.code}</div><div class="ap-detail">eindcijfer ${cv.eind} — ${gapTxt}</div></div>
+        ${oefenBtn}
+      </div>`;
+    }).join('');
+    coachHtml=`<div class="ap-section" style="margin-top:14px;border-top:1px solid var(--bo);padding-top:12px">
+      <div class="ap-section-head">💡 Waar valt de meeste winst te halen?</div>
+      ${coachItems}
+    </div>`;
+  }
   document.getElementById('slaag-result').innerHTML=`<div class="calc-result">
     <div class="calc-result-icon">${icon}</div>
     <h3 class="${color}">${title}</h3>
     <p>CE-gemiddelde: ${ceGem.toFixed(2)} · Eindcijfergemiddelde: ${eindGem.toFixed(1)}</p>
-    ${detail}${tableHtml}
+    ${detail}${tableHtml}${coachHtml}
   </div>`;
 }
 function berekenEind(){
