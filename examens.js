@@ -78,12 +78,10 @@ const EXAMENS = {
         },
         {
           nr: 8, opgave: 2, punten: 3, type: 'berekening',
-          needs_bijlage: true,
-          context: 'Joachim en Deniz moeten investeringen doen om te starten, waaronder de aanschaf van een zeilboot (zie informatiebron 1 van de bijlage). Zij brengen ieder een bedrag aan eigen vermogen in (zie informatiebron 2 van de bijlage). Het ontbrekende bedrag halen ze op via crowdfunding.',
-          bijlage_tekst: '⚠️ Deze vraag vereist informatiebronnen 1 en 2 uit de bijlage (aankoopprijs boot + inventaris, eigen vermogen inbreng Joachim en Deniz). Raadpleeg de originele bijlage voor de specifieke bedragen.',
+          context: 'Informatiebron 1 — Investeringen:\n• Zeilboot aanschafprijs: €250.000\n• Installatiekosten vaarklaar maken: 8% van aanschafprijs\n• Inventaris: €5.000 (aangeschaft 1 jan 2025)\n\nInformatiebron 2 — Eigen vermogen vennoten:\nJoachim:\n• Pensioenuitkering contant maken: €100.000 op 1-1-2030 → contante waarde per 1-1-2025 (3% samengestelde interest, 5 jaar)\n• Betaalrekening: €18.739,12\n\nDeniz:\n• Aandelen FastNed: 3.000 aandelen gekocht à €10, verkoop 31-12-2024 à €30/aandeel\n• Betaalrekening: €15.000',
           vraag: 'Bereken het bedrag dat met crowdfunding moet worden geleend om de boot te kunnen kopen (zie informatiebronnen 1 en 2).',
-          antwoord: 'Crowdfunding = Aankoopprijs boot + inventaris (infobron 1) − eigen vermogen Joachim − eigen vermogen Deniz (infobron 2).\n\n[Specifieke bedragen staan in informatiebronnen 1 en 2 van de bijlage]',
-          antwoord_rubric: '3 punten voor correcte berekening met de bedragen uit informatiebronnen 1 en 2.'
+          antwoord: 'Totale investering (infobron 1):\n• Zeilboot: €250.000 + 8% × €250.000 = €270.000\n• Inventaris: €5.000\n• Totaal: €275.000\n\nEigen vermogen Joachim (infobron 2):\n• CW pensioen: €100.000 / (1,03)^5 = €100.000 / 1,159274 = €86.260,88\n• Betaalrekening: €18.739,12\n• Totaal Joachim: €105.000\n\nEigen vermogen Deniz (infobron 2):\n• Aandelen: 3.000 × €30 = €90.000\n• Betaalrekening: €15.000\n• Totaal Deniz: €105.000\n\nTotaal eigen vermogen: €105.000 + €105.000 = €210.000\n\nCrowdfunding = €275.000 − €210.000 = €65.000',
+          antwoord_rubric: '1 punt: correcte totale investering (€275.000). 1 punt: correcte eigen vermogens Joachim en Deniz (elk €105.000). 1 punt: correct crowdfunding bedrag (€65.000).'
         },
         {
           nr: 9, opgave: 2, punten: 2, type: 'open',
@@ -94,12 +92,10 @@ const EXAMENS = {
         },
         {
           nr: 10, opgave: 2, punten: 5, type: 'berekening',
-          needs_bijlage: true,
-          context: 'De vroegboekkorting zorgt voor een toename van het aantal reserveringen. Het verwachte resultaat van 2025 kan worden berekend met behulp van informatiebronnen 1 t/m 3 van de bijlage.',
-          bijlage_tekst: '⚠️ Deze vraag vereist informatiebronnen 1, 2 en 3 uit de bijlage (omzet, kosten, afschrijvingen, rente, vroegboekkorting). Raadpleeg de originele bijlage voor de specifieke bedragen.',
+          context: 'Informatiebron 3 — Opbrengsten verhuur 2025:\n• Periode 1 (2 mei – 22 juni): 6 weken à €3.750\n• Periode 2 (23 juni – 14 sept): 10 weken à €4.750\n• Periode 3 (15 sept – 31 okt): 4 weken à €3.750\n• Vroegboekkorting: 10% bij helft van de reserveringen per periode\n\nKosten 2025:\n• Afschrijving boot: (€270.000 − €50.000) / 20 jaar\n• Afschrijving inventaris: 5% × €5.000\n• Interestkosten crowdfunding: 3,5% over €65.000 (eerste jaar)\n• Overige kosten: €10.400 per jaar\n\nIn deze opgave blijven belastingen buiten beschouwing.',
           vraag: 'Laat met een berekening van het verwachte resultaat van 2025 zien of ze gaan starten met het plan. Vul hiervoor de uitwerkbijlage in.',
-          antwoord: 'Verwacht resultaat = Verwachte omzet − Totale kosten (inclusief afschrijvingen, rentelasten etc.)\n\nAls resultaat > 0 → ze starten. Als resultaat ≤ 0 → ze starten niet.\n\n[Specifieke bedragen staan in informatiebronnen 1, 2 en 3 van de bijlage]',
-          antwoord_rubric: '5 punten voor een volledige en correcte resultatenberekening met de bedragen uit informatiebronnen 1 t/m 3.'
+          antwoord: 'OPBRENGSTEN:\nPeriode 1 (6 weken, €3.750, 10% korting bij helft):\n  3 × €3.750 × 0,90 = €10.125\n  3 × €3.750 = €11.250\n  Subtotaal: €21.375\n\nPeriode 2 (10 weken, €4.750):\n  5 × €4.750 × 0,90 = €21.375\n  5 × €4.750 = €23.750\n  Subtotaal: €45.125\n\nPeriode 3 (4 weken, €3.750):\n  2 × €3.750 × 0,90 = €6.750\n  2 × €3.750 = €7.500\n  Subtotaal: €14.250\n\nTotale opbrengsten: €80.750\n\nKOSTEN:\nAfschrijving boot: (€270.000 − €50.000) / 20 = €11.000\nAfschrijving inventaris: 5% × €5.000 = €250\nInterestkosten crowdfunding: 3,5% × €65.000 = €2.275\nOverige kosten: €10.400\nTotale kosten: €23.925\n\nVERWACHT RESULTAAT: €80.750 − €23.925 = €56.825\n\nResultaat is positief (€56.825 > 0) → Joachim en Deniz gaan starten met het plan.',
+          antwoord_rubric: '2 punten: correcte totale opbrengsten (€80.750) inclusief vroegboekkorting. 2 punten: correcte totale kosten (€23.925) incl. afschrijvingen en interestkosten. 1 punt: correcte conclusie (resultaat €56.825 positief → ze starten).'
         },
 
         // ── OPGAVE 3: Aegon / Levi ────────────────────────────
@@ -179,21 +175,17 @@ const EXAMENS = {
         },
         {
           nr: 21, opgave: 5, punten: 3, type: 'berekening',
-          needs_bijlage: true,
-          context: 'Eva woont per 1 september 2021 op kamers in Amsterdam. Bijbaan: €300/maand. In het laatste studiejaar krijgt ze een basisbeurs voor uitwonende studenten. Gegevens over collegegeld, basisbeurs en maandelijkse uitgaven staan in informatiebron 4 van de bijlage.',
-          bijlage_tekst: '⚠️ Deze vraag vereist informatiebron 4 uit de bijlage (collegegeld per jaar, hoogte basisbeurs, maandelijkse uitgaven). Raadpleeg de originele bijlage voor de specifieke bedragen.',
+          context: 'Studietijd Eva: 1 september 2021 – 31 augustus 2024 (36 maanden)\nBijbaan: €300/maand gedurende hele studietijd\n\nInformatiebron 4 — Collegegeld:\n• 2021-2022: €2.143 (eerste jaar: halvering wettelijk collegegeld)\n• 2022-2023: €2.209\n• 2023-2024: €2.314\n\nMaandelijkse uitgaven: €1.031 per maand (excl. collegegeld)\n\nBasisbeurs uitwonend (infobron 4):\n• 2021-2022: €0/maand\n• 2022-2023: €0/maand\n• 2023-2024: €469/maand',
           vraag: 'Bereken het verwachte totale bedrag dat Eva gedurende haar 3-jarige studietijd tekort komt.',
-          antwoord: 'Totaal tekort = Totale uitgaven (collegegeld + maandelijkse kosten × maanden) − Totale inkomsten (bijbaan €300 × 36 maanden + basisbeurs jaar 3)\n\n[Specifieke bedragen staan in informatiebron 4 van de bijlage]',
-          antwoord_rubric: '3 punten voor een volledige correcte berekening met de bedragen uit informatiebron 4.'
+          antwoord: 'INKOMSTEN:\nBijbaan: €300 × 36 maanden = €10.800\nBasisbeurs jaar 3 (2023-2024): €469 × 12 maanden = €5.628\nTotale inkomsten: €16.428\n\nUITGAVEN:\nCollegegeld:\n  Jaar 1 (halvering): €2.143 / 2 = €1.071,50\n  Jaar 2: €2.209\n  Jaar 3: €2.314\n  Totaal collegegeld: €5.594,50\n\nMaandelijkse kosten: €1.031 × 36 = €37.116\nTotale uitgaven: €5.594,50 + €37.116 = €42.710,50\n\nTEKORT: €42.710,50 − €16.428 = €26.282,50',
+          antwoord_rubric: '1 punt: correcte inkomsten (€16.428). 1 punt: correcte uitgaven (€42.710,50) incl. halvering collegegeld jaar 1. 1 punt: correct tekort (€26.282,50).'
         },
         {
           nr: 22, opgave: 5, punten: 1, type: 'open',
-          needs_bijlage: true,
-          context: 'Eva besluit haar spaargeld NIET te gebruiken voor de studiekosten, maar te lenen bij DUO. Rentepercentages staan in informatiebronnen 5 en 6 van de bijlage.',
-          bijlage_tekst: '⚠️ Rentepercentages van spaarrekening en DUO-lening staan in informatiebronnen 5 en 6.',
+          context: 'Informatiebron 5 — ASN Ideaalsparen (saldo Eva < €25.000): 1,65% samengestelde interest per jaar\nInformatiebron 6 — DUO studielening: jaarlijks interestpercentage 0,46%\n\nEva heeft spaargeld op haar ASN-rekening. Ze kan kiezen: spaargeld opnemen óf lenen bij DUO.',
           vraag: 'Waarom is het voor Eva financieel aantrekkelijker om te lenen bij DUO dan het opgebouwde bedrag op haar spaarrekening te gebruiken?',
-          antwoord: 'De rente op de DUO-studielening is lager dan de spaarrente die Eva ontvangt op haar spaarsaldo. Het is daardoor voordeliger om het spaargeld te laten staan (rente ontvangen) en het tekort te lenen bij DUO tegen de lagere rente.',
-          antwoord_rubric: '1 punt: rente DUO-lening is lager dan spaarrente / spaargeld levert meer op dan de DUO-rente kost.'
+          antwoord: 'De rente die Eva ontvangt op haar spaarsaldo (ASN Ideaalsparen: 1,65% per jaar) is hoger dan de rente die ze betaalt op de DUO-studielening (0,46% per jaar).\n\nDoor het spaargeld te laten staan en in plaats daarvan bij DUO te lenen, verdient Eva 1,65% spaarrente terwijl ze slechts 0,46% rente betaalt. Per saldo levert dit een voordeel van 1,19% per jaar op.',
+          antwoord_rubric: '1 punt: spaarrente (1,65%) is hoger dan DUO-rente (0,46%), dus spaargeld laten staan levert meer op dan de DUO-rente kost.'
         },
         {
           nr: 23, opgave: 5, punten: 2, type: 'open',
@@ -218,21 +210,17 @@ const EXAMENS = {
         },
         {
           nr: 26, opgave: 5, punten: 2, type: 'berekening',
-          needs_bijlage: true,
-          context: 'Eva wil de kosten koper en verbouwingskosten (totaal €15.000) betalen met het opgebouwde spaarsaldo dat ze gedurende haar studietijd en daarna niet heeft gebruikt (zie informatiebron 5 van de bijlage).',
-          bijlage_tekst: '⚠️ Spaarbedrag, rente en opbouw staan in informatiebron 5 van de bijlage.',
+          context: 'Informatiebron 5 — ASN Jeugdsparen (1,40% samengesteld/jaar, vast):\n• Storting 1: €6.500 op 1-1-2003\n• Storting 2: €7.500 op 1-1-2013\n• Op 1-1-2021 (18e verjaardag): omgezet naar ASN Ideaalsparen\n\nASN Ideaalsparen (saldo < €25.000): 1,65% samengesteld per jaar\n\nEva heeft het spaargeld NIET gebruikt. Kosten koper + verbouwing = €15.000.',
           vraag: 'Toon aan dat het spaargeld per 1 januari 2026 genoeg is om de kosten koper en de verbouwingskosten te betalen.',
-          antwoord: 'Spaarsaldo per 1 januari 2026 (beginbedrag + opgebouwde rente) ≥ €15.000\n\n[Specifieke bedragen staan in informatiebron 5 van de bijlage]',
-          antwoord_rubric: '2 punten voor correcte berekening van spaarsaldo per 1 januari 2026 (met rente) uit informatiebron 5, met conclusie dat dit ≥ €15.000 is.'
+          antwoord: 'Stap 1 — Saldo op 1-1-2021 (ASN Jeugdsparen, 1,40%/jaar):\n• €6.500 × (1,014)^18 = €6.500 × 1,28434 = €8.348,21\n• €7.500 × (1,014)^8  = €7.500 × 1,11764 = €8.382,33\n• Saldo op 1-1-2021: €16.730,54\n\nStap 2 — Saldo op 1-1-2026 (ASN Ideaalsparen, 1,65%/jaar, 5 jaar):\n• €16.730,54 × (1,0165)^5 = €16.730,54 × 1,08523 = €18.156,–\n\nConclusie: €18.156 > €15.000 → het spaargeld is voldoende.',
+          antwoord_rubric: '1 punt: correct saldo op 1-1-2021 (≈ €16.730). 1 punt: correct saldo op 1-1-2026 (≈ €18.156) met conclusie dat dit ≥ €15.000 is.'
         },
         {
           nr: 27, opgave: 5, punten: 4, type: 'berekening',
-          needs_bijlage: true,
-          context: 'Hypothecaire lening Eva (gesloten 1 januari 2026):\n• Bedrag: €210.000 | Looptijd: 30 jaar | Lineaire aflossing\n• Interestpercentage: 0,33% per maand\n• Betaling aan eind van maand (eerste betaling 31 jan 2026)\n• Belastingvoordeel op interest: 36,97%\n\nOp 1 januari 2026 start Eva ook met aflossen van haar studielening (zie informatiebron 6 van de bijlage).',
-          bijlage_tekst: '⚠️ Gegevens studielening (bedrag, aflossingstermijn, rente) staan in informatiebron 6 van de bijlage.',
+          context: 'Hypothecaire lening Eva (gesloten 1-1-2026):\n• Bedrag: €210.000 | Looptijd: 30 jaar | Lineaire aflossing\n• Interestpercentage: 0,33% per maand\n• Betaling aan eind van de maand (1e betaling 31-1-2026)\n• Belastingvoordeel op interest: 36,97%\n\nInformatiebron 6 — DUO studielening van Eva:\n• Schuldbedrag op 1-1-2026: €27.045\n• Maandelijks termijnbedrag: €145,60\n• Jaarlijks interestpercentage: 0,46%',
           vraag: 'Bereken de totale uitgaven aan beide leningen van Eva in februari 2026. Vul hiervoor de uitwerkbijlage in.',
-          antwoord: 'Hypothecaire lening — februari 2026:\n• Maandelijkse aflossing = €210.000 / (30 × 12) = €583,33\n• Restschuld per 1 feb = €210.000 − €583,33 = €209.416,67\n• Interest feb = 0,33% × €209.416,67 = €691,08\n• Belastingvoordeel = 36,97% × €691,08 = €255,49\n• Netto interest = €691,08 − €255,49 = €435,59\n• Totaal hypotheek feb = €583,33 + €435,59 = €1.018,92\n\nStudielening feb: raadpleeg informatiebron 6 voor bedrag en rente.\n\nTotaal = hypotheeklasten feb + studielening feb',
-          antwoord_rubric: '1 punt: correcte hypotheekaflossing (€583,33). 1 punt: correcte netto interest na belastingvoordeel. 1 punt: studielening feb (uit infobron 6). 1 punt: correct eindtotaal.'
+          antwoord: 'HYPOTHECAIRE LENING — FEBRUARI 2026:\nMaandelijkse aflossing = €210.000 / (30 × 12) = €583,33\n\nJanuari 2026 (eerst berekenen om restschuld te weten):\n  Restschuld begin jan = €210.000\n  Interest jan = 0,33% × €210.000 = €693,–\n  Belastingvoordeel jan = 36,97% × €693 = €256,20\n  Netto interest jan = €693 − €256,20 = €436,80\n\nRestschuld begin februari = €210.000 − €583,33 = €209.416,67\n  Interest feb = 0,33% × €209.416,67 = €691,07\n  Belastingvoordeel feb = 36,97% × €691,07 = €255,47\n  Netto interest feb = €691,07 − €255,47 = €435,60\n  Totaal hypotheek feb = €583,33 + €435,60 = €1.018,93\n\nDUO STUDIELENING — FEBRUARI 2026:\nVast maandelijks termijnbedrag = €145,60\n\nTOTAAL UITGAVEN FEBRUARI 2026:\n€1.018,93 + €145,60 = €1.164,53',
+          antwoord_rubric: '1 punt: correcte maandelijkse hypotheekaflossing (€583,33). 1 punt: correcte netto interest hypotheek februari (€435,60) na belastingvoordeel 36,97%. 1 punt: DUO termijnbedrag februari (€145,60). 1 punt: correct totaal (€1.164,53).'
         },
 
         // ── OPGAVE 6: De Pluktuin ─────────────────────────────
