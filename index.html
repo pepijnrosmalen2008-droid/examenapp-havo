@@ -2183,7 +2183,7 @@ html.dark .calc-btn{background:#2e3550}
 .lbp-close{position:absolute;top:18px;right:18px;width:32px;height:32px;border-radius:50%;background:var(--bg2);border:1px solid var(--bo);cursor:pointer;font-size:14px;color:var(--mu);display:flex;align-items:center;justify-content:center;transition:all .15s}
 .lbp-close:hover{background:var(--bo)}
 .lbp-header{display:flex;align-items:center;gap:16px;margin-bottom:16px}
-.lbp-av{font-size:40px;width:68px;height:68px;border-radius:50%;background:var(--bg2);border:3px solid var(--bo);display:flex;align-items:center;justify-content:center;flex-shrink:0}
+.lbp-av{font-size:50px;width:68px;height:68px;border-radius:50%;background:var(--bg2);border:3px solid var(--bo);display:flex;align-items:center;justify-content:center;flex-shrink:0;overflow:hidden}
 .lbp-headinfo{flex:1}
 .lbp-naam{font-size:20px;font-weight:800;color:var(--dk);margin-bottom:5px}
 .lbp-chips{display:flex;gap:5px;flex-wrap:wrap;align-items:center}
@@ -2476,7 +2476,7 @@ html.dark .auth-ok{background:#0F2D1C;border-color:#166534;color:#86EFAC}
 .hm-greeting.hm-greeting-warn{color:#fbbf24}
 
 /* ── HOME STATS DASHBOARD ─────────────────────── */
-.home-stats-dash{display:flex;gap:10px;padding:16px 16px 8px;max-width:680px;margin:0 auto}
+.home-stats-dash{display:flex;gap:10px;padding:16px 16px 8px;max-width:680px;margin:0 auto;flex-wrap:wrap}
 .hsd-pill{flex:1;display:flex;align-items:center;gap:11px;background:var(--s);border:1.5px solid var(--bo);border-radius:16px;padding:13px 14px;cursor:pointer;transition:transform .15s,box-shadow .15s;min-width:0;text-decoration:none}
 html.dark .hsd-pill{background:var(--bg2);border-color:var(--bo2)}
 .hsd-pill:hover{transform:translateY(-2px);box-shadow:0 6px 20px rgba(0,0,0,.1)}
@@ -2489,7 +2489,8 @@ html.dark .hsd-pill{background:var(--bg2);border-color:var(--bo2)}
 .hsd-avg .hsd-val{color:#22c55e}
 .hsd-avg-warn .hsd-val{color:#ef4444}
 .hsd-badges .hsd-val{color:#a78bfa}
-@media(max-width:400px){.hsd-pill{padding:11px 10px;gap:8px}.hsd-val{font-size:15px}.hsd-icon{font-size:20px}}
+@media(max-width:520px){.hsd-pill{flex:1 1 calc(50% - 5px);min-width:calc(50% - 5px)}}
+@media(max-width:400px){.hsd-pill{padding:10px 9px;gap:7px}.hsd-val{font-size:14px}.hsd-icon{font-size:18px}}
 .hsd-empty{display:flex;align-items:center;gap:14px;background:var(--s);border:1.5px dashed var(--bo);border-radius:16px;padding:16px 18px;margin:0 16px 8px;cursor:pointer;transition:border-color .2s}
 .hsd-empty:hover{border-color:var(--or)}
 .hsd-empty-icon{font-size:28px;flex-shrink:0}
@@ -7956,23 +7957,28 @@ function setSelectedFeaturedBadgeId(id){
 }
 function selectFeaturedBadge(id){
   const sel=getSelectedFeaturedBadgeId();
-  // Toggle off if same badge clicked again
-  setSelectedFeaturedBadgeId(sel===id?null:id);
+  const newId=sel===id?null:id;
+  setSelectedFeaturedBadgeId(newId);
   renderProfileBadges();
-  // Update own leaderboard entries live
+  // Update own localStorage leaderboard entries live
   try{
     const p=JSON.parse(localStorage.getItem(PROF_KEY)||'{}');
     if(p.naam){
-      const b=ALL_BADGES.find(x=>x.id===(sel===id?null:id));
       ['havo','vwo'].forEach(lvl=>{
         const key='examenapp_leaderboard_'+lvl;
         const entries=JSON.parse(localStorage.getItem(key)||'[]');
         let changed=false;
-        entries.forEach(e=>{if(!e.isBot&&e.naam===p.naam){e.featuredBadgeId=b?b.id:null;changed=true;}});
+        entries.forEach(e=>{if(!e.isBot&&e.naam===p.naam){e.featuredBadgeId=newId;changed=true;}});
         if(changed)localStorage.setItem(key,JSON.stringify(entries));
       });
     }
   }catch(e){}
+  // Push naar Supabase zodat andere gebruikers de badge ook zien
+  if(currentUser){
+    SB.from('leaderboard').update({featured_badge_id:newId}).eq('user_id',currentUser.id)
+      .then(()=>{sessionStorage.removeItem(_avatarCloudSyncedKey);})
+      .catch(()=>{});
+  }
 }
 function getAchieved(){try{return JSON.parse(localStorage.getItem(ACH_KEY)||'{}');}catch(e){return{};}}
 function earnAch(id){
@@ -9589,7 +9595,7 @@ async function saveLeaderboardEntry(entry){
   localStorage.setItem(getLbKey(),JSON.stringify(all));
   // Re-seed bots if they got lost
   const hasBots=all.some(e=>e.isBot);
-  if(!hasBots){localStorage.removeItem('slagio_bots_seeded_v3');seedBotsNow();}
+  if(!hasBots){localStorage.removeItem('slagio_bots_seeded_v10');seedBotsNow();}
   // Save to Supabase global leaderboard (cross-user)
   if(currentUser){
     try{
@@ -9752,7 +9758,7 @@ function _renderLbWithData(){
   try{const key=getLbKey();const stored=getLbEntries();const cleaned=stored.filter(e=>e.score<=1000);if(cleaned.length!==stored.length)localStorage.setItem(key,JSON.stringify(cleaned));}catch(e){}
   // Re-seed bots if missing
   const hasBots=getLbEntries().some(e=>e.isBot);
-  if(!hasBots){localStorage.removeItem('slagio_bots_seeded_v3');seedBotsNow();}
+  if(!hasBots){localStorage.removeItem('slagio_bots_seeded_v10');seedBotsNow();}
   const all=getLbEntries();
   const prof=JSON.parse(localStorage.getItem(PROF_KEY)||'{}');
   const myUid=currentUser?currentUser.id:null;
@@ -9782,9 +9788,10 @@ function _renderLbWithData(){
   const VAKKEN_LABEL=lbVakFilter==='all'?'Alle vakken':(VAKKEN_MAP[lbVakFilter]?VAKKEN_MAP[lbVakFilter].naam:lbVakFilter);
   if(badge)badge.textContent=APP_LEVEL.toUpperCase()+' 2026 · '+VAKKEN_LABEL;
   const subtitleEl=document.getElementById('lb-subtitle');
+  const playerCount=[...new Set(all.filter(e=>!e.isBot).map(e=>e.uid||e.naam))].length;
   if(subtitleEl)subtitleEl.textContent=lbVakFilter==='all'
-    ?'Snelle quiz · Top 25 beste scores uit heel Nederland'
-    :`Snelle quiz · Top 25 ${VAKKEN_LABEL} uit heel Nederland`;
+    ?`Snelle quiz · beste score per speler · ${playerCount} deelnemers`
+    :`Snelle quiz · beste ${VAKKEN_LABEL}-score per speler`;
 
   // Filter entries (remove invalid scores above 1000)
   const valid=all.filter(e=>e.score<=1000);
@@ -10565,10 +10572,11 @@ function renderHomeStats(){
   const practicedToday=s.days&&s.days.includes(todayStr);
   const atRisk=!practicedToday&&streak>0;
   // Streak milestone proximity
-  const milestones=[3,7,14,30,60];
+  const milestones=[3,7,14,30,100];
   const nextMile=milestones.find(m=>m>streak);
   let streakSub=atRisk?'⚠ Oefen voor middernacht!':streak>0?'dagen op rij':'Begin je streak!';
-  if(!atRisk&&nextMile&&(nextMile-streak)<=2)streakSub=`Nog ${nextMile-streak} dag${nextMile-streak>1?'en':''} voor ${nextMile===7?'⚡7-daags':nextMile===14?'💎14-daags':nextMile+'d'} badge!`;
+  const mileLabel={3:'🔥3-daags',7:'⚡7-daags',14:'💎14-daags',30:'🔮30-daags',100:'👑100-daags'};
+  if(!atRisk&&nextMile&&(nextMile-streak)<=2)streakSub=`Nog ${nextMile-streak} dag${nextMile-streak>1?'en':''} voor ${mileLabel[nextMile]||nextMile+'d'} badge!`;
   const streakHtml=`<div class="hsd-pill hsd-streak${atRisk?' hsd-at-risk':''}" onclick="openProfiel()" title="Bekijk streak & badges" role="button" tabindex="0">
     <span class="hsd-icon hsd-icon-wrap">🔥</span>
     <div class="hsd-body">
