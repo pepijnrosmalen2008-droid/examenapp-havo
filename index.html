@@ -4302,62 +4302,92 @@ html.dark .hsd-pill{background:var(--bg2);border-color:var(--bo2)}
 <nav class="nav"><div class="nav-inner"><div class="logo" onclick="show('sc-home')"><img src="/icon-192.png" alt="Slagio" style="width:26px;height:26px;border-radius:7px;object-fit:cover;flex-shrink:0">Slagio</div><button class="bk" onclick="show(window._privacyFrom||'sc-home')">← Terug</button><button class="theme-btn" onclick="toggleDark()" title="Nachtmodus" style="margin-left:auto"><svg viewBox="0 0 24 24"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg></button></div></nav>
 <div class="w privacy-content">
   <h2>Privacybeleid</h2>
-  <p class="privacy-updated">Laatst bijgewerkt: 15 maart 2026</p>
+  <p class="privacy-updated">Laatst bijgewerkt: 3 april 2026</p>
 
   <h3>1. Wie zijn wij</h3>
-  <p>Slagio is een gratis educatieve webapplicatie gericht op eindexamenvoorbereiding voor Nederlandse HAVO- en VWO-leerlingen. De app wordt aangeboden via GitHub Pages.</p>
+  <p>Slagio is een gratis educatieve webapplicatie gericht op eindexamenvoorbereiding voor Nederlandse HAVO- en VWO-leerlingen. De app is bereikbaar via <a href="https://slagio.nl" target="_blank" rel="noopener">slagio.nl</a> en wordt gehost via GitHub Pages. De broncode is beschikbaar op GitHub.</p>
 
   <h3>2. Welke gegevens verzamelen wij</h3>
-  <p><strong>Persoonlijke gegevens:</strong> Wij verzamelen géén persoonlijke gegevens zoals naam, e-mailadres of telefoonnummer. Je hoeft geen account aan te maken om de app te gebruiken.</p>
-  <p><strong>Lokale opslag (localStorage):</strong> De app slaat de volgende informatie op in de browser van je eigen apparaat:</p>
+
+  <p><strong>2a. Gebruik zonder account (standaard)</strong><br>
+  Je kunt Slagio volledig gebruiken zonder een account aan te maken. In dat geval worden alle gegevens uitsluitend lokaal opgeslagen in de browser van je eigen apparaat (zie 2b). Er worden dan géén persoonsgegevens naar een server gestuurd.</p>
+
+  <p><strong>2b. Lokale opslag (localStorage)</strong><br>
+  De app slaat de volgende informatie op in je eigen browser. Deze gegevens verlaten je apparaat niet, tenzij je een account aanmaakt:</p>
   <ul>
-    <li>Studiestreak en voortgang per vak</li>
-    <li>Favoriete domeinen</li>
-    <li>Geselecteerde vakken ("mijn vakken")</li>
+    <li>Studiestreak, XP en voorgang per vak en domein</li>
+    <li>Adaptieve quizprestaties per vraag (<code>slagio_aqp_v1</code>)</li>
+    <li>Profielgegevens: weergavenaam, dieravatar, niveau (HAVO/VWO)</li>
+    <li>Favoriete domeinen en geselecteerde vakken</li>
     <li>Ingevulde cijfers bij de calculator</li>
     <li>Thema-voorkeur (licht/donker)</li>
     <li>Cookie-toestemming</li>
+    <li>Groepslidmaatschap (groepscode, opgeslagen lokaal)</li>
   </ul>
-  <p>Deze gegevens verlaten nooit je apparaat en worden niet naar een server gestuurd.</p>
 
-  <h3>3. Cookies en advertenties</h3>
+  <p><strong>2c. Optioneel account (Supabase)</strong><br>
+  Als je een account aanmaakt, worden de volgende gegevens opgeslagen op onze cloudserver via <strong>Supabase</strong> (zie sectie 4):</p>
+  <ul>
+    <li><strong>E-mailadres</strong> — gebruikt voor inloggen en authenticatie</li>
+    <li><strong>Weergavenaam</strong> — zichtbaar op het leaderboard en in groepen</li>
+    <li><strong>Quizscores per vak en domein</strong> — voor het leaderboard</li>
+    <li><strong>Groepslidmaatschap</strong> — groepsnaam en -code, gekoppeld aan je account</li>
+    <li><strong>Uitdagingen (challenges)</strong> — score en vak, aangemaakt door of verstuurd naar jou</li>
+  </ul>
+  <p>Een account aanmaken is volledig optioneel. Alle kernfuncties van Slagio werken zonder account.</p>
+
+  <h3>3. Supabase — cloudopslag</h3>
+  <p>Voor accounts, leaderboard, groepen en challenges maken wij gebruik van <strong>Supabase</strong>, een open-source databaseplatform van Supabase Inc. Gegevens worden opgeslagen op servers in de <strong>Europese Unie (Frankfurt, AWS eu-central-1)</strong>.</p>
+  <p>Supabase verwerkt gegevens conform de AVG/GDPR. Meer informatie: <a href="https://supabase.com/privacy" target="_blank" rel="noopener">supabase.com/privacy</a>. Supabase is een verwerker in de zin van de AVG; wij zijn de verwerkingsverantwoordelijke.</p>
+  <p>Gegevens die via Supabase worden opgeslagen zijn alleen toegankelijk voor de eigenaar van het account en — voor zover het leaderboard of groepsscores betreft — voor andere deelnemers aan hetzelfde leaderboard of dezelfde groep.</p>
+
+  <h3>4. Cookies en advertenties</h3>
   <p>Wij gebruiken <strong>Google AdSense</strong> om advertenties te tonen. Google kan cookies plaatsen op je apparaat om advertenties te personaliseren op basis van je browse-geschiedenis. Dit betreft onder andere:</p>
   <ul>
     <li><strong>Functionele cookies:</strong> om je cookiekeuze te onthouden</li>
     <li><strong>Advertentiecookies (Google):</strong> om relevante advertenties te tonen, zoals het DoubleClick-cookie</li>
     <li><strong>Analytische cookies (Google):</strong> om anonieme gebruiksstatistieken te verzamelen</li>
   </ul>
-  <p>Je kunt je advertentievoorkeuren aanpassen via <a href="https://www.google.com/settings/ads" target="_blank" rel="noopener">Google Advertentie-instellingen</a>. Je kunt ook het gebruik van cookies door Google uitschakelen via <a href="https://www.aboutads.info/choices/" target="_blank" rel="noopener">aboutads.info</a>.</p>
-  <p>Als je cookies weigert via onze cookiebanner worden er géén gepersonaliseerde advertenties getoond. Google kan dan nog wel niet-gepersonaliseerde advertenties tonen op basis van de inhoud van de pagina.</p>
-
-  <h3>4. Google AdSense</h3>
-  <p>Wij maken gebruik van Google AdSense, een advertentiedienst van Google LLC ("Google"). Google AdSense maakt gebruik van cookies om advertenties te tonen die relevant zijn voor gebruikers. Het DART-cookie wordt door Google gebruikt om advertenties te tonen op basis van bezoeken aan deze en andere websites. Gebruikers kunnen het DART-cookie uitschakelen via het <a href="https://policies.google.com/technologies/ads" target="_blank" rel="noopener">Google-advertentiebeleid</a>.</p>
-  <p>Derde partijen, waaronder Google, gebruiken cookies om advertenties te tonen op basis van eerdere bezoeken van een gebruiker aan deze of andere websites. Voor meer informatie over hoe Google gegevens gebruikt, zie het <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Privacybeleid van Google</a>.</p>
+  <p>Je kunt je advertentievoorkeuren aanpassen via <a href="https://www.google.com/settings/ads" target="_blank" rel="noopener">Google Advertentie-instellingen</a> of via <a href="https://www.aboutads.info/choices/" target="_blank" rel="noopener">aboutads.info</a>.</p>
+  <p>Als je cookies weigert via onze cookiebanner worden er géén gepersonaliseerde advertenties getoond. Google kan dan nog wel niet-gepersonaliseerde advertenties tonen op basis van de paginainhoud. Meer informatie: <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Privacybeleid van Google</a>.</p>
 
   <h3>5. Rechtsgrondslag (AVG/GDPR)</h3>
-  <p>Voor het plaatsen van advertentiecookies vragen wij vooraf je <strong>toestemming</strong> via de cookiebanner (art. 6 lid 1 sub a AVG). Je kunt je toestemming op elk moment intrekken door je cookievoorkeuren te wijzigen — klik daarvoor op "Cookie-instellingen" in de footer van de app.</p>
-  <p>De lokale opslag van studiegegevens is gebaseerd op ons <strong>gerechtvaardigd belang</strong> (art. 6 lid 1 sub f AVG): het bieden van een werkende studietool. Deze gegevens verlaten je apparaat niet.</p>
-
-  <h3>6. Bewaartermijn</h3>
-  <p>Lokale gegevens (localStorage) blijven bewaard totdat je ze zelf verwijdert via je browserinstellingen of via de "Wissen"-knoppen in de app. Cookies van Google verlopen conform het <a href="https://policies.google.com/technologies/cookies" target="_blank" rel="noopener">cookiebeleid van Google</a>.</p>
-
-  <h3>7. Jouw rechten</h3>
-  <p>Onder de AVG/GDPR heb je de volgende rechten:</p>
   <ul>
-    <li><strong>Inzage:</strong> je kunt je lokale gegevens bekijken via je browserinstellingen (DevTools → Application → Local Storage)</li>
-    <li><strong>Verwijdering:</strong> wis je browsergegevens of gebruik de "Wissen"-knoppen in de app</li>
-    <li><strong>Bezwaar:</strong> weiger cookies via de cookiebanner of pas je advertentievoorkeuren aan bij Google</li>
-    <li><strong>Intrekking toestemming:</strong> klik op "Cookie-instellingen" in de footer om je keuze te wijzigen</li>
+    <li><strong>Advertentiecookies:</strong> toestemming (art. 6 lid 1 sub a AVG) via de cookiebanner. Je kunt toestemming altijd intrekken via "Cookie-instellingen" in de footer.</li>
+    <li><strong>Lokale studiegegevens:</strong> gerechtvaardigd belang (art. 6 lid 1 sub f AVG) — noodzakelijk voor het functioneren van de app. Deze gegevens verlaten je apparaat niet.</li>
+    <li><strong>Accountgegevens (Supabase):</strong> uitvoering van een overeenkomst (art. 6 lid 1 sub b AVG) — je geeft toestemming bij het aanmaken van een account en accepteert daarmee deze verwerkingsgrondslag.</li>
   </ul>
 
-  <h3>8. Minderjarigen</h3>
-  <p>Deze app is bedoeld voor leerlingen in het voortgezet onderwijs. Wij verzamelen geen persoonlijke gegevens. Voor het tonen van advertenties aan gebruikers onder de 16 jaar vragen wij toestemming via de cookiebanner. Wij raden minderjarigen aan dit privacybeleid samen met een ouder of verzorger te lezen.</p>
+  <h3>6. Bewaartermijn</h3>
+  <ul>
+    <li><strong>Lokale gegevens:</strong> blijven bewaard totdat je ze zelf verwijdert via browserinstellingen of via "Wissen"-knoppen in de app.</li>
+    <li><strong>Accountgegevens (Supabase):</strong> blijven bewaard zolang je account actief is. Je kunt je account en alle bijbehorende gegevens laten verwijderen via een verzoek (zie sectie 8).</li>
+    <li><strong>Google-cookies:</strong> verlopen conform het <a href="https://policies.google.com/technologies/cookies" target="_blank" rel="noopener">cookiebeleid van Google</a>.</li>
+  </ul>
 
-  <h3>9. Wijzigingen</h3>
-  <p>Dit privacybeleid kan worden bijgewerkt. De datum bovenaan geeft de laatste wijziging aan. Bij substantiële wijzigingen tonen wij opnieuw de cookiebanner.</p>
+  <h3>7. Leaderboard en groepen — zichtbaarheid</h3>
+  <p>Als je meedoet aan het leaderboard of een groep, is je <strong>weergavenaam en score zichtbaar voor andere gebruikers</strong> van hetzelfde leaderboard of dezelfde groep. Je e-mailadres is nooit zichtbaar voor andere gebruikers. Je kunt je weergavenaam aanpassen in je profiel.</p>
+  <p>Uitdagingen (challenge-links) bevatten je weergavenaam en score en kunnen worden gedeeld via een URL. Deel alleen links met personen die je vertrouwt.</p>
 
-  <h3>10. Contact</h3>
-  <p>Vragen over dit privacybeleid? Neem contact op via het GitHub-repository van deze app of stuur een bericht via school.</p>
+  <h3>8. Jouw rechten</h3>
+  <p>Onder de AVG/GDPR heb je de volgende rechten:</p>
+  <ul>
+    <li><strong>Inzage:</strong> lokale gegevens via browserinstellingen (DevTools → Application → Local Storage); accountgegevens via je profielpagina in de app.</li>
+    <li><strong>Verwijdering lokale data:</strong> via browserinstellingen of de "Wissen"-knoppen in de app.</li>
+    <li><strong>Verwijdering account:</strong> stuur een verzoek via de contactinformatie in sectie 10. Wij verwijderen dan je account en alle bijbehorende Supabase-gegevens binnen 30 dagen.</li>
+    <li><strong>Bezwaar advertenties:</strong> weiger cookies via de cookiebanner of pas voorkeuren aan bij Google.</li>
+    <li><strong>Intrekking toestemming:</strong> klik op "Cookie-instellingen" in de footer.</li>
+    <li><strong>Overdraagbaarheid:</strong> je kunt een export van je quizdata opvragen via de contactinformatie hieronder.</li>
+  </ul>
+
+  <h3>9. Minderjarigen</h3>
+  <p>Slagio is bedoeld voor leerlingen in het voortgezet onderwijs (12–18 jaar). Voor advertentiecookies vragen wij toestemming via de cookiebanner. Wij raden minderjarigen aan dit beleid samen met een ouder of verzorger te lezen voordat zij een account aanmaken. Bij het aanmaken van een account door een minderjarige gaan wij ervan uit dat daarvoor toestemming is van een ouder of verzorger.</p>
+
+  <h3>10. Wijzigingen</h3>
+  <p>Dit privacybeleid kan worden bijgewerkt wanneer de app nieuwe functies krijgt. De datum bovenaan geeft de laatste wijziging aan. Bij substantiële wijzigingen — met name rond persoonsgegevens — tonen wij opnieuw de cookiebanner of een melding in de app.</p>
+
+  <h3>11. Contact</h3>
+  <p>Vragen, verzoeken tot inzage of verwijdering? Neem contact op via de GitHub-repository: <a href="https://github.com/pepijnrosmalen2008-droid/examenapp-havo" target="_blank" rel="noopener">github.com/pepijnrosmalen2008-droid/examenapp-havo</a>.</p>
 </div>
 </div>
 
