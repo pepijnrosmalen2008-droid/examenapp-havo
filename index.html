@@ -1326,49 +1326,70 @@ html.dark .qb{background:#2e3550}
 .ar-weak-q{flex:1;color:var(--dk);line-height:1.4;font-size:12px}
 .ar-weak-pct{white-space:nowrap;font-weight:700;color:#ef4444;font-size:12px}
 .ar-reset-btn{margin-top:12px;font-size:11px;color:var(--mu);background:none;border:1px solid var(--bo);border-radius:6px;padding:4px 10px;cursor:pointer;font-family:var(--font)}
-.chal-intro-card{background:linear-gradient(135deg,rgba(var(--or-rgb),.12),rgba(var(--or-rgb),.06));border:1.5px solid rgba(var(--or-rgb),.35);border-radius:20px;padding:24px 20px;margin:16px 0;text-align:center}
-.chal-intro-icon{font-size:40px;margin-bottom:10px}
-.chal-intro-name{font-family:var(--font-head);font-size:22px;font-weight:900;color:var(--dk);margin-bottom:4px}
-.chal-intro-sub{font-size:13px;color:var(--mu);margin-bottom:16px}
-.chal-intro-score{font-family:var(--font-head);font-size:42px;font-weight:900;color:var(--or);line-height:1}
-.chal-intro-max{font-size:14px;color:var(--mu);margin-bottom:20px}
-.chal-accept-btn{background:var(--or);color:#fff;border:none;border-radius:14px;padding:16px 32px;font-family:var(--font-head);font-size:17px;font-weight:800;cursor:pointer;width:100%;margin-bottom:10px}
-.chal-decline-btn{background:none;border:none;color:var(--mu);font-size:13px;cursor:pointer;padding:8px}
-.chal-vs-card{background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.1);border-radius:16px;padding:16px;margin:12px 0;display:flex;align-items:center;gap:0}
+/* ── CHALLENGE INTRO ─────────────────────────── */
+.chal-intro-wrap{max-width:420px;margin:0 auto;padding:12px 0 32px}
+.chal-challenger-avatar{width:72px;height:72px;border-radius:50%;background:linear-gradient(135deg,var(--or),#f59e0b);display:flex;align-items:center;justify-content:center;font-family:var(--font-head);font-size:28px;font-weight:900;color:#fff;margin:0 auto 12px;box-shadow:0 0 0 4px rgba(var(--or-rgb),.2),0 8px 24px rgba(var(--or-rgb),.35)}
+.chal-challenger-name{font-family:var(--font-head);font-size:24px;font-weight:900;color:var(--dk);text-align:center;margin-bottom:3px}
+.chal-challenger-sub{font-size:13px;color:var(--mu);text-align:center;margin-bottom:20px}
+.chal-score-box{background:linear-gradient(135deg,rgba(var(--or-rgb),.15),rgba(var(--or-rgb),.05));border:1.5px solid rgba(var(--or-rgb),.3);border-radius:20px;padding:20px 24px;margin-bottom:20px;text-align:center;position:relative;overflow:hidden}
+.chal-score-box::before{content:'';position:absolute;top:-40px;right:-40px;width:160px;height:160px;background:radial-gradient(circle,rgba(var(--or-rgb),.25) 0%,transparent 70%);pointer-events:none}
+.chal-score-lbl{font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.1em;color:var(--mu);margin-bottom:6px}
+.chal-score-num{font-family:var(--font-head);font-size:56px;font-weight:900;color:var(--or);line-height:1;letter-spacing:-2px}
+.chal-score-max{font-size:16px;color:var(--mu);font-weight:600}
+.chal-vs-badge{display:inline-flex;align-items:center;gap:6px;background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.12);border-radius:20px;padding:5px 14px;font-size:12px;font-weight:700;color:var(--mu);text-transform:uppercase;letter-spacing:.05em;margin-bottom:20px}
+.chal-accept-btn{background:linear-gradient(135deg,var(--or),#f97316);color:#fff;border:none;border-radius:16px;padding:18px;font-family:var(--font-head);font-size:17px;font-weight:800;cursor:pointer;width:100%;margin-bottom:10px;box-shadow:0 6px 20px rgba(var(--or-rgb),.4);transition:transform .15s,box-shadow .15s}
+.chal-accept-btn:active{transform:scale(.98);box-shadow:0 3px 12px rgba(var(--or-rgb),.3)}
+.chal-decline-btn{display:block;width:100%;background:none;border:none;color:var(--mu);font-size:13px;cursor:pointer;padding:8px;text-align:center}
+/* Challenge result */
+.chal-vs-card{background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.1);border-radius:18px;padding:20px 16px;margin:12px 0;display:flex;align-items:center}
 .chal-vs-side{flex:1;text-align:center}
-.chal-vs-label{font-size:11px;color:var(--mu);font-weight:600;text-transform:uppercase;letter-spacing:.05em;margin-bottom:4px}
-.chal-vs-score{font-family:var(--font-head);font-size:32px;font-weight:900}
+.chal-vs-label{font-size:10px;color:var(--mu);font-weight:700;text-transform:uppercase;letter-spacing:.08em;margin-bottom:6px}
+.chal-vs-score{font-family:var(--font-head);font-size:36px;font-weight:900;line-height:1}
 .chal-vs-score.win{color:#22c55e}
 .chal-vs-score.lose{color:#ef4444}
 .chal-vs-score.tie{color:var(--or)}
-.chal-vs-divider{font-size:20px;font-weight:900;color:var(--mu);padding:0 12px}
-.chal-result-banner{font-family:var(--font-head);font-size:18px;font-weight:900;text-align:center;padding:10px;border-radius:10px;margin-bottom:8px}
-.chal-result-banner.win{background:rgba(34,197,94,.15);color:#22c55e}
-.chal-result-banner.lose{background:rgba(239,68,68,.1);color:#ef4444}
-.chal-result-banner.tie{background:rgba(var(--or-rgb),.12);color:var(--or)}
-.chal-daag-btn{background:rgba(var(--or-rgb),.12);border:1.5px solid rgba(var(--or-rgb),.3);color:var(--or);border-radius:12px;padding:12px 16px;font-family:var(--font-head);font-size:14px;font-weight:700;cursor:pointer;width:100%;margin-top:8px}
-.grp-section{margin:16px 0}
-.grp-card{background:var(--s);border:1.5px solid var(--bo);border-radius:16px;padding:16px;margin-bottom:12px}
-.grp-card-top{display:flex;align-items:center;justify-content:space-between;margin-bottom:10px}
-.grp-code{font-family:var(--font-head);font-size:28px;font-weight:900;color:var(--or);letter-spacing:3px}
-.grp-name{font-size:13px;color:var(--mu);font-weight:600}
-.grp-members-count{font-size:12px;color:var(--mu)}
-.grp-copy-btn{background:rgba(var(--or-rgb),.1);border:1px solid rgba(var(--or-rgb),.3);color:var(--or);border-radius:8px;padding:6px 12px;font-size:12px;font-weight:700;cursor:pointer;font-family:var(--font)}
-.grp-leave-btn{background:none;border:1px solid var(--bo);color:var(--mu);border-radius:8px;padding:6px 12px;font-size:11px;cursor:pointer;font-family:var(--font)}
-.grp-input{width:100%;padding:12px 14px;background:var(--bg2);border:1.5px solid var(--bo);border-radius:12px;color:var(--dk);font-size:15px;font-family:var(--font);margin-bottom:10px;text-transform:uppercase;letter-spacing:2px}
-.grp-input::placeholder{text-transform:none;letter-spacing:0}
-.grp-create-input{text-transform:none;letter-spacing:0}
-.grp-join-btn{background:var(--or);color:#fff;border:none;border-radius:12px;padding:13px;font-family:var(--font-head);font-size:15px;font-weight:800;cursor:pointer;width:100%;margin-bottom:8px}
-.grp-create-btn{background:rgba(var(--or-rgb),.1);border:1.5px solid rgba(var(--or-rgb),.3);color:var(--or);border-radius:12px;padding:13px;font-family:var(--font-head);font-size:15px;font-weight:800;cursor:pointer;width:100%}
-.lb-toggle-row{display:flex;gap:8px;margin-bottom:14px}
-.lb-toggle-btn{flex:1;padding:9px;border-radius:10px;border:1.5px solid var(--bo);background:none;color:var(--mu);font-family:var(--font-head);font-size:13px;font-weight:700;cursor:pointer;transition:all .15s}
-.lb-toggle-btn.active{background:var(--or);border-color:var(--or);color:#fff}
-.grp-member-row{display:flex;align-items:center;gap:10px;padding:8px 0;border-bottom:1px solid var(--bo)}
+.chal-vs-divider{font-size:13px;font-weight:800;color:var(--mu);padding:0 12px;letter-spacing:.05em}
+.chal-result-banner{font-family:var(--font-head);font-size:17px;font-weight:900;text-align:center;padding:12px 16px;border-radius:14px;margin-bottom:10px;letter-spacing:-.2px}
+.chal-result-banner.win{background:linear-gradient(135deg,rgba(34,197,94,.18),rgba(34,197,94,.08));border:1px solid rgba(34,197,94,.3);color:#22c55e}
+.chal-result-banner.lose{background:rgba(239,68,68,.08);border:1px solid rgba(239,68,68,.2);color:#ef4444}
+.chal-result-banner.tie{background:rgba(var(--or-rgb),.1);border:1px solid rgba(var(--or-rgb),.25);color:var(--or)}
+.chal-daag-btn{background:rgba(var(--or-rgb),.1);border:1.5px solid rgba(var(--or-rgb),.3);color:var(--or);border-radius:14px;padding:14px 16px;font-family:var(--font-head);font-size:14px;font-weight:800;cursor:pointer;width:100%;margin-top:10px;transition:background .15s}
+.chal-daag-btn:hover{background:rgba(var(--or-rgb),.18)}
+/* ── GROEPSLEADERBOARD ───────────────────────── */
+.grp-hero{background:linear-gradient(135deg,rgba(var(--or-rgb),.14) 0%,rgba(var(--or-rgb),.04) 100%);border:1.5px solid rgba(var(--or-rgb),.25);border-radius:22px;padding:24px 20px;margin-bottom:16px;position:relative;overflow:hidden}
+.grp-hero::before{content:'';position:absolute;top:-60px;right:-60px;width:220px;height:220px;background:radial-gradient(circle,rgba(var(--or-rgb),.2) 0%,transparent 70%);pointer-events:none}
+.grp-hero-name{font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.1em;color:rgba(var(--or-rgb),1);margin-bottom:4px;opacity:.8}
+.grp-code{font-family:var(--font-head);font-size:38px;font-weight:900;color:var(--dk);letter-spacing:6px;line-height:1;margin-bottom:6px}
+.grp-members-count{font-size:13px;color:var(--mu);margin-bottom:16px}
+.grp-hero-actions{display:flex;gap:8px}
+.grp-copy-btn{flex:1;background:var(--or);color:#fff;border:none;border-radius:12px;padding:11px;font-size:13px;font-weight:700;cursor:pointer;font-family:var(--font);transition:background .15s}
+.grp-copy-btn:hover{background:#d14f09}
+.grp-share-btn{flex:1;background:rgba(255,255,255,.08);color:var(--dk);border:1px solid var(--bo);border-radius:12px;padding:11px;font-size:13px;font-weight:600;cursor:pointer;font-family:var(--font)}
+.grp-leave-btn{background:none;border:1px solid var(--bo);color:var(--mu);border-radius:10px;padding:8px 14px;font-size:12px;cursor:pointer;font-family:var(--font);margin-top:10px;width:100%}
+.grp-scoreboard{background:var(--s);border:1.5px solid var(--bo);border-radius:18px;padding:16px;margin-bottom:12px}
+.grp-scoreboard-title{font-family:var(--font-head);font-size:15px;font-weight:800;color:var(--dk);margin-bottom:14px;display:flex;align-items:center;gap:8px}
+.grp-member-row{display:flex;align-items:center;gap:12px;padding:10px 0;border-bottom:1px solid rgba(255,255,255,.06)}
 .grp-member-row:last-child{border:none}
-.grp-member-rank{font-family:var(--font-head);font-size:16px;font-weight:900;width:28px;text-align:center;color:var(--mu)}
-.grp-member-name{flex:1;font-size:14px;font-weight:600;color:var(--dk)}
-.grp-member-score{font-family:var(--font-head);font-size:15px;font-weight:800;color:var(--or)}
-.grp-empty{text-align:center;padding:32px 16px;color:var(--mu);font-size:14px}
+.grp-member-row.is-me{background:rgba(var(--or-rgb),.07);border-radius:12px;padding:10px 10px;margin:0 -10px}
+.grp-member-avatar{width:36px;height:36px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-family:var(--font-head);font-size:14px;font-weight:900;color:#fff;flex-shrink:0}
+.grp-member-info{flex:1;min-width:0}
+.grp-member-name{font-size:14px;font-weight:700;color:var(--dk);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.grp-member-sub{font-size:11px;color:var(--mu)}
+.grp-member-score{font-family:var(--font-head);font-size:17px;font-weight:900;color:var(--or)}
+.grp-rank-badge{width:28px;height:28px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:14px;flex-shrink:0}
+.grp-empty{text-align:center;padding:32px 16px;color:var(--mu);font-size:14px;line-height:1.6}
+.grp-join-section{background:var(--s);border:1.5px solid var(--bo);border-radius:18px;padding:20px;margin-bottom:12px}
+.grp-join-title{font-family:var(--font-head);font-size:16px;font-weight:800;color:var(--dk);margin-bottom:4px}
+.grp-join-sub{font-size:13px;color:var(--mu);margin-bottom:14px}
+.grp-input{width:100%;padding:13px 14px;background:var(--bg);border:1.5px solid var(--bo);border-radius:12px;color:var(--dk);font-size:18px;font-family:var(--font-head);font-weight:700;margin-bottom:10px;text-transform:uppercase;letter-spacing:4px;text-align:center}
+.grp-input:focus{outline:none;border-color:rgba(var(--or-rgb),.5)}
+.grp-input::placeholder{text-transform:none;letter-spacing:0;font-size:14px;font-weight:400;font-family:var(--font)}
+.grp-create-input{text-transform:none;letter-spacing:0;font-size:15px;font-weight:500;text-align:left}
+.grp-join-btn{background:var(--or);color:#fff;border:none;border-radius:13px;padding:14px;font-family:var(--font-head);font-size:15px;font-weight:800;cursor:pointer;width:100%;margin-bottom:8px;box-shadow:0 4px 14px rgba(var(--or-rgb),.3)}
+.grp-create-btn{background:rgba(var(--or-rgb),.1);border:1.5px solid rgba(var(--or-rgb),.3);color:var(--or);border-radius:13px;padding:14px;font-family:var(--font-head);font-size:15px;font-weight:800;cursor:pointer;width:100%}
+.grp-divider{display:flex;align-items:center;gap:12px;color:var(--mu);font-size:12px;margin:16px 0}
+.grp-divider::before,.grp-divider::after{content:'';flex:1;height:1px;background:var(--bo)}
+.grp-no-login{background:rgba(239,68,68,.08);border:1px solid rgba(239,68,68,.2);border-radius:12px;padding:12px 14px;font-size:13px;color:#ef4444;text-align:center;margin-top:8px}
 .adapt-pill{display:inline-flex;align-items:center;gap:4px;font-size:11px;background:rgba(255,255,255,.1);border-radius:20px;padding:2px 8px;color:rgba(255,255,255,.7);margin-left:6px;vertical-align:middle}
 .rbtns{display:flex;gap:12px;flex-direction:column}
 .btnp{background:var(--or);color:#fff;border:none;border-radius:14px;padding:18px;font-family:var(--font-head);font-size:16px;font-weight:700;cursor:pointer;transition:all 0.2s ease;box-shadow:0 4px 18px rgba(232,92,13,0.3)}
@@ -8591,6 +8612,8 @@ function initChallengeOnLoad(){
   document.getElementById('chal-intro-sub').textContent='daagt je uit bij '+vak.naam+' — '+domein.naam;
   document.getElementById('chal-intro-score').textContent=c.score;
   document.getElementById('chal-intro-max').textContent='/ 1000 punten';
+  const av=document.getElementById('chal-intro-avatar');
+  if(av)av.textContent=(c.naam||'?').slice(0,1).toUpperCase();
   // Set up ST so accept goes straight to quiz
   ST.vak=vak;ST.domein=domein;
   show('sc-chal-intro');
@@ -8699,45 +8722,59 @@ async function renderGroepScreen(){
   if(!g){
     // No group — show join/create UI
     wrap.innerHTML=`
-      <div style="text-align:center;padding:20px 0 12px"><div style="font-size:40px">👥</div>
-      <div style="font-family:var(--font-head);font-size:20px;font-weight:800;color:var(--dk);margin:8px 0 4px">Groep aanmaken of joinen</div>
-      <div style="font-size:13px;color:var(--mu);margin-bottom:24px">Vergelijk jouw scores met vrienden of klasgenoten</div></div>
-      <div class="grp-card">
-        <div style="font-weight:700;font-size:14px;color:var(--dk);margin-bottom:10px">Doe mee met een groep</div>
-        <input class="grp-input" id="grp-join-code" placeholder="Voer code in (bijv. XK4M7R)" maxlength="6">
+      <div class="grp-hero" style="text-align:center">
+        <div style="font-size:44px;margin-bottom:10px;position:relative;z-index:1">👥</div>
+        <div style="font-family:var(--font-head);font-size:21px;font-weight:900;color:var(--dk);margin-bottom:6px;position:relative;z-index:1">Groep aanmaken of joinen</div>
+        <div style="font-size:13px;color:var(--mu);position:relative;z-index:1">Vergelijk jouw scores met vrienden of klasgenoten</div>
+      </div>
+      <div class="grp-join-section">
+        <div class="grp-join-title">Doe mee met een groep</div>
+        <div class="grp-join-sub">Voer de groepscode in van je vriend of klas</div>
+        <input class="grp-input" id="grp-join-code" placeholder="VOER CODE IN" maxlength="6">
         <button class="grp-join-btn" onclick="doeGroepMee(document.getElementById('grp-join-code').value)">Doe mee →</button>
       </div>
-      <div style="text-align:center;color:var(--mu);font-size:12px;margin:8px 0">— of —</div>
-      <div class="grp-card">
-        <div style="font-weight:700;font-size:14px;color:var(--dk);margin-bottom:10px">Maak een nieuwe groep</div>
-        <input class="grp-input grp-create-input" id="grp-new-naam" placeholder="Groepsnaam (bijv. Klas 5H-B)">
+      <div class="grp-divider">of</div>
+      <div class="grp-join-section">
+        <div class="grp-join-title">Maak een nieuwe groep</div>
+        <div class="grp-join-sub">Deel de code met vrienden zodat ze mee kunnen doen</div>
+        <input class="grp-input grp-create-input" id="grp-new-naam" placeholder="Groepsnaam (bijv. Klas 5H)">
         <button class="grp-create-btn" onclick="maakGroep(document.getElementById('grp-new-naam').value)">+ Maak groep aan</button>
       </div>
-      ${!currentUser?'<div class="grp-empty">⚠️ Je moet ingelogd zijn om een groep aan te maken of te joinen.</div>':''}`;
+      ${!currentUser?'<div class="grp-no-login">⚠️ Je moet ingelogd zijn om een groep aan te maken of te joinen.</div>':''}`;
     return;
   }
   // Has group — show scores
-  wrap.innerHTML=`<div style="display:flex;justify-content:center"><div style="animation:spin 1s linear infinite;font-size:24px">⏳</div></div>`;
+  wrap.innerHTML=`<div style="display:flex;justify-content:center;padding:32px 0"><div style="animation:spin 1s linear infinite;font-size:24px">⏳</div></div>`;
   const members=await fetchGroepLeaderboard(g.id);
-  let html=`<div class="grp-card">
-    <div class="grp-card-top">
-      <div><div class="grp-name">${g.name}</div><div class="grp-code">${g.code}</div><div class="grp-members-count">${members.length} ${members.length===1?'lid':'leden'}</div></div>
-      <div style="display:flex;flex-direction:column;gap:6px;align-items:flex-end">
-        <button class="grp-copy-btn" onclick="navigator.clipboard.writeText('${g.code}').then(()=>showToast('Code gekopieerd! 📋'))">📋 Kopieer code</button>
-        <button class="grp-leave-btn" onclick="verlaarGroep()">Verlaat groep</button>
+  const avatarColors=['#f97316','#8b5cf6','#06b6d4','#10b981','#ef4444','#f59e0b','#3b82f6','#ec4899'];
+  let html=`<div class="grp-hero">
+    <div style="display:flex;justify-content:space-between;align-items:flex-start;gap:12px;position:relative;z-index:1">
+      <div>
+        <div class="grp-hero-name">${g.name}</div>
+        <div class="grp-code">${g.code}</div>
+        <div class="grp-members-count">${members.length} ${members.length===1?'lid':'leden'}</div>
+      </div>
+      <div style="display:flex;flex-direction:column;gap:8px;align-items:flex-end">
+        <button class="grp-copy-btn" onclick="navigator.clipboard.writeText('${g.code}').then(()=>showToast('Code gekopieerd! 📋'))">📋 Kopieer</button>
+        <button class="grp-leave-btn" onclick="verlaarGroep()">Verlaat</button>
       </div>
     </div>
   </div>
-  <div class="grp-card">
-    <div style="font-weight:700;font-size:14px;color:var(--dk);margin-bottom:12px">🏆 Scoreboard</div>`;
+  <div class="grp-scoreboard">
+    <div class="grp-scoreboard-title">🏆 Scoreboard</div>`;
   if(members.length===0){html+=`<div class="grp-empty">Nog geen scores. Maak een quiz!</div>`;}
   else{
     const medals=['🥇','🥈','🥉'];
     members.forEach((m,i)=>{
       const isMe=currentUser&&m.user_id===currentUser.id;
-      html+=`<div class="grp-member-row"${isMe?' style="background:rgba(var(--or-rgb),.06);border-radius:8px;padding:8px;"':''}>
-        <div class="grp-member-rank">${medals[i]||'#'+(i+1)}</div>
-        <div class="grp-member-name">${m.display_name||'Onbekend'}${isMe?' <span style="font-size:10px;color:var(--or)">(jij)</span>':''}</div>
+      const initials=(m.display_name||'?').slice(0,1).toUpperCase();
+      const color=avatarColors[i%avatarColors.length];
+      html+=`<div class="grp-member-row${isMe?' is-me':''}">
+        <div class="grp-rank-badge">${medals[i]||'#'+(i+1)}</div>
+        <div class="grp-member-avatar" style="background:${color}">${initials}</div>
+        <div class="grp-member-info">
+          <div class="grp-member-name">${m.display_name||'Onbekend'}${isMe?' <span style="font-size:10px;color:var(--or)">(jij)</span>':''}</div>
+        </div>
         <div class="grp-member-score">${m.score||0}</div>
       </div>`;
     });
@@ -14123,12 +14160,16 @@ if('serviceWorker' in navigator){
 <div id="sc-chal-intro" class="sc">
   <div class="qh"><button class="back-btn" onclick="show('sc-home')">←</button><span>Uitdaging</span></div>
   <div style="padding:16px 16px 32px">
-    <div class="chal-intro-card">
-      <div class="chal-intro-icon">⚔️</div>
-      <div class="chal-intro-name" id="chal-intro-naam">Iemand</div>
-      <div class="chal-intro-sub" id="chal-intro-sub">daagt je uit bij</div>
-      <div class="chal-intro-score" id="chal-intro-score">0</div>
-      <div class="chal-intro-max" id="chal-intro-max">/ 1000 punten</div>
+    <div class="chal-intro-wrap">
+      <div class="chal-challenger-avatar" id="chal-intro-avatar">?</div>
+      <div class="chal-challenger-name" id="chal-intro-naam">Iemand</div>
+      <div class="chal-challenger-sub" id="chal-intro-sub">daagt je uit bij</div>
+      <div class="chal-vs-badge">⚔️ Score te verslaan</div>
+      <div class="chal-score-box">
+        <div class="chal-score-lbl">Punten te verslaan</div>
+        <div class="chal-score-num" id="chal-intro-score">0</div>
+        <div class="chal-score-max" id="chal-intro-max">/ 1000 punten</div>
+      </div>
       <button class="chal-accept-btn" id="chal-accept-btn" onclick="acceptChallenge()">⚔️ Accepteer uitdaging</button>
       <button class="chal-decline-btn" onclick="show('sc-home')">Niet nu</button>
     </div>
