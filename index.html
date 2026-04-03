@@ -6101,60 +6101,53 @@ async function cloudGet(col,def){
     return data[col]??def;
   }catch(e){return _safeLocalGet(col,def);}
 }
+function mergeProgress(cloudProg,localProg){
+  const merged=Object.assign({},localProg);
+  if(cloudProg&&typeof cloudProg==='object'){
+    Object.keys(cloudProg).forEach(key=>{
+      const c=cloudProg[key],l=merged[key];
+      if(!l){merged[key]=c;}
+      else{
+        merged[key]={
+          best:Math.max(c.best||0,l.best||0),
+          total:Math.max(c.total||0,l.total||0),
+          attempts:Math.max(c.attempts||0,l.attempts||0)
+        };
+      }
+    });
+  }
+  return merged;
+}
+
 async function syncFromCloud(){
-  const syncKeys=[PROF_KEY,XP_KEY,'examenapp_streak',
-   'examenapp_'+lvlCol('cijfers'),'examenapp_'+lvlCol('progress'),
-   'examenapp_'+lvlCol('favs'),'examenapp_'+lvlCol('mijnvakken'),
-   'examenapp_cijfers_havo','examenapp_cijfers_vwo',
-   'examenapp_progress_havo','examenapp_progress_vwo',
-   'examenapp_favs_havo','examenapp_favs_vwo',
-   'examenapp_mijnvakken_havo','examenapp_mijnvakken_vwo',
-  ];
-  // Sla lokale voortgang op VÓÓR we iets wissen (zodat we kunnen mergen)
-  const localProgHavo=_safeLocalGet('progress_havo',{});
-  const localProgVwo=_safeLocalGet('progress_vwo',{});
-  // Maak backup vóórdat we iets wissen — herstel bij netwerk-fout
-  const backup={};
-  syncKeys.forEach(k=>{const v=localStorage.getItem(k);if(v!==null)backup[k]=v;});
   try{
     const {data,error}=await SB.from('user_data').select('*').eq('user_id',currentUser.id).single();
     if(error||!data){
       updateProfileNav();renderStreak();renderFavHome();renderXPHome();renderDailyChallenge();buildGrid();renderHomeStats();
       return;
     }
-    // Fetch geslaagd: nu pas lokale data wissen en cloud-data inladen
-    syncKeys.forEach(k=>localStorage.removeItem(k));
+    // Profiel & XP
     if(data.profiel){
       localStorage.setItem(PROF_KEY,JSON.stringify(data.profiel));
       if(data.profiel.xp)localStorage.setItem(XP_KEY,JSON.stringify({xp:data.profiel.xp}));
     }
-    // ── PROGRESS MERGE: cloud + lokaal, houd altijd de BESTE score ────────
-    function mergeProgress(cloudProg,localProg){
-      const merged=Object.assign({},localProg);
-      if(cloudProg&&typeof cloudProg==='object'){
-        Object.keys(cloudProg).forEach(key=>{
-          const c=cloudProg[key],l=merged[key];
-          if(!l){merged[key]=c;}
-          else{
-            merged[key]={
-              best:Math.max(c.best||0,l.best||0),
-              total:c.total||l.total||0,
-              attempts:(c.attempts||0)+(l.attempts||0)
-            };
-          }
-        });
+    // ── PROGRESS: NOOIT wissen — altijd mergen met lokale data ────────────
+    // Zo gaat er nooit voortgang verloren, ook niet bij netwerkproblemen
+    ['havo','vwo'].forEach(lvl=>{
+      const localProg=_safeLocalGet('progress_'+lvl,{});
+      const cloudProg=data['progress_'+lvl];
+      const merged=mergeProgress(cloudProg,localProg);
+      localStorage.setItem('examenapp_progress_'+lvl,JSON.stringify(merged));
+      // Upload merged terug naar cloud als er lokale data bijgekomen is
+      if(Object.keys(merged).length>0){
+        const cloudKeys=Object.keys(cloudProg||{});
+        const hasNew=Object.keys(merged).some(k=>!cloudKeys.includes(k)||merged[k].best>(cloudProg[k]?.best||0));
+        if(hasNew) SB.from('user_data').upsert(
+          {user_id:currentUser.id,['progress_'+lvl]:merged,updated_at:new Date().toISOString()},
+          {onConflict:'user_id'}
+        ).catch(()=>{});
       }
-      return merged;
-    }
-    const cloudProgHavo=data['progress_havo'];
-    const mergedHavo=mergeProgress(cloudProgHavo,localProgHavo);
-    localStorage.setItem('examenapp_progress_havo',JSON.stringify(mergedHavo));
-    if(Object.keys(mergedHavo).length>0)cloudSet('progress_havo',mergedHavo);
-
-    const cloudProgVwo=data['progress_vwo'];
-    const mergedVwo=mergeProgress(cloudProgVwo,localProgVwo);
-    localStorage.setItem('examenapp_progress_vwo',JSON.stringify(mergedVwo));
-    if(Object.keys(mergedVwo).length>0)cloudSet('progress_vwo',mergedVwo);
+    });
     // ─────────────────────────────────────────────────────────────────────
     if(data.streak)localStorage.setItem('examenapp_streak',JSON.stringify(data.streak));
     const cij=data[lvlCol('cijfers')];if(cij)localStorage.setItem('examenapp_'+lvlCol('cijfers'),JSON.stringify(cij));
@@ -6162,11 +6155,31 @@ async function syncFromCloud(){
     const mijn=data[lvlCol('mijnvakken')];if(mijn)localStorage.setItem('examenapp_'+lvlCol('mijnvakken'),JSON.stringify(mijn.list||[]));
     updateProfileNav();renderStreak();renderFavHome();renderXPHome();renderDailyChallenge();buildGrid();renderHomeStats();
   }catch(e){
-    // Herstel lokale data als fetch mislukte
-    Object.entries(backup).forEach(([k,v])=>localStorage.setItem(k,v));
-    console.warn('syncFromCloud error — lokale data hersteld:',e);
+    console.warn('syncFromCloud error:',e);
   }
 }
+
+// ── Cross-tab sync: als tab A progress opslaat, update tab B meteen ──────
+window.addEventListener('storage',e=>{
+  if(e.key&&e.key.includes('progress')&&e.newValue){
+    // Herrender voortgangsindicatoren in de actieve tab zonder pagina-reload
+    try{
+      if(typeof buildGrid==='function')buildGrid();
+      if(typeof renderHomeStats==='function')renderHomeStats();
+      // Als detail-scherm open is, update de domain progress bars
+      if(ST&&ST.vak&&document.getElementById('sc-detail')?.classList.contains('on')){
+        updateLpEntryCard();
+      }
+    }catch(err){}
+  }
+});
+
+// ── Hersync bij terugkeren naar tab (visibilitychange) ───────────────────
+document.addEventListener('visibilitychange',()=>{
+  if(document.visibilityState==='visible'&&currentUser){
+    syncFromCloud();
+  }
+});
 
 function authErrMsg(msg){
   if(!msg)return'Er is iets misgegaan. Probeer het opnieuw.';
