@@ -12383,7 +12383,7 @@ function renderHomeStats(){
   </div>`:'';
   // ── Badges cell ───────────────────────────────────
   const earnedCount=ALL_BADGES.filter(b=>getAchieved()[b.id]).length;
-  const badgeCell=earnedCount>0?`<div class="bento-cell bento-badges" onclick="openProfiel()" role="button" tabindex="0">
+  const badgeCell=earnedCount>0?`<div class="bento-cell bento-badges" onclick="openProfiel();setTimeout(()=>{const el=document.getElementById('prof-badges-content');if(el)el.scrollIntoView({behavior:'smooth',block:'start'})},250)" role="button" tabindex="0">
     <div class="bento-stat"><div class="bento-si">🏅</div><div class="bento-sv">${earnedCount}/${ALL_BADGES.length}</div><div class="bento-sl">Badges</div></div>
   </div>`:'';
   // ── Avg / Groep cell ─────────────────────────────
