@@ -8667,15 +8667,17 @@ function initSamInteractive(container, d) {
       return;
     }
     const q = pool[cur];
-    tjEl.innerHTML = `<div class="tj-hd"><span class="tj-title">⚡ Test jezelf</span><span class="tj-prog">${cur + 1}/${pool.length}</span></div><div class="tj-body"><div class="tj-q">${q.v}</div><div class="tj-opts">${q.o.map((o, i) => `<button class="tj-opt" data-i="${i}">${o}</button>`).join('')}</div></div>`;
+    const shuffled = q.o.map((text, i) => ({text, orig: i})).sort(() => Math.random() - 0.5);
+    const correctIdx = shuffled.findIndex(s => s.orig === q.c);
+    tjEl.innerHTML = `<div class="tj-hd"><span class="tj-title">⚡ Test jezelf</span><span class="tj-prog">${cur + 1}/${pool.length}</span></div><div class="tj-body"><div class="tj-q">${q.v}</div><div class="tj-opts">${shuffled.map((s, i) => `<button class="tj-opt" data-i="${i}">${s.text}</button>`).join('')}</div></div>`;
     tjEl.querySelectorAll('.tj-opt').forEach(btn => {
       btn.addEventListener('click', function () {
         if (tjEl.querySelector('.tj-opt.tj-c, .tj-opt.tj-w')) return;
         const i = +this.dataset.i;
-        const ok = i === q.c;
+        const ok = i === correctIdx;
         if (ok) score++;
         this.classList.add(ok ? 'tj-c' : 'tj-w');
-        if (!ok) tjEl.querySelector(`.tj-opt[data-i="${q.c}"]`).classList.add('tj-c');
+        if (!ok) tjEl.querySelector(`.tj-opt[data-i="${correctIdx}"]`).classList.add('tj-c');
         tjEl.querySelectorAll('.tj-opt').forEach(b => b.disabled = true);
         const body = tjEl.querySelector('.tj-body');
         const fb = document.createElement('div');
