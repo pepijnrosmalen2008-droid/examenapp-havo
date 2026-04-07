@@ -2,176 +2,200 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://slagio.nl/</loc>
-    <lastmod>2026-04-03</lastmod>
+    <lastmod>2026-04-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://slagio.nl/vakken/havo-nl.html</loc>
-    <lastmod>2025-04-07</lastmod>
+    <loc>https://slagio.nl/vakken/</loc>
+    <lastmod>2026-04-07</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://slagio.nl/vakken/havo-wa.html</loc>
-    <lastmod>2025-04-07</lastmod>
+    <loc>https://slagio.nl/vakken/havo-nederlands.html</loc>
+    <lastmod>2026-04-07</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://slagio.nl/vakken/havo-bi.html</loc>
-    <lastmod>2025-04-07</lastmod>
+    <loc>https://slagio.nl/vakken/havo-wiskunde-a.html</loc>
+    <lastmod>2026-04-07</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://slagio.nl/vakken/havo-sk.html</loc>
-    <lastmod>2025-04-07</lastmod>
+    <loc>https://slagio.nl/vakken/havo-wiskunde-b.html</loc>
+    <lastmod>2026-04-07</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://slagio.nl/vakken/havo-na.html</loc>
-    <lastmod>2025-04-07</lastmod>
+    <loc>https://slagio.nl/vakken/havo-biologie.html</loc>
+    <lastmod>2026-04-07</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://slagio.nl/vakken/havo-be.html</loc>
-    <lastmod>2025-04-07</lastmod>
+    <loc>https://slagio.nl/vakken/havo-scheikunde.html</loc>
+    <lastmod>2026-04-07</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://slagio.nl/vakken/havo-en.html</loc>
-    <lastmod>2025-04-07</lastmod>
+    <loc>https://slagio.nl/vakken/havo-natuurkunde.html</loc>
+    <lastmod>2026-04-07</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://slagio.nl/vakken/havo-gs.html</loc>
-    <lastmod>2025-04-07</lastmod>
+    <loc>https://slagio.nl/vakken/havo-bedrijfseconomie.html</loc>
+    <lastmod>2026-04-07</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://slagio.nl/vakken/havo-ak.html</loc>
-    <lastmod>2025-04-07</lastmod>
+    <loc>https://slagio.nl/vakken/havo-engels.html</loc>
+    <lastmod>2026-04-07</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://slagio.nl/vakken/havo-ec.html</loc>
-    <lastmod>2025-04-07</lastmod>
+    <loc>https://slagio.nl/vakken/havo-economie.html</loc>
+    <lastmod>2026-04-07</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://slagio.nl/vakken/havo-mw.html</loc>
-    <lastmod>2025-04-07</lastmod>
+    <loc>https://slagio.nl/vakken/havo-geschiedenis.html</loc>
+    <lastmod>2026-04-07</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://slagio.nl/vakken/havo-wb.html</loc>
-    <lastmod>2025-04-07</lastmod>
+    <loc>https://slagio.nl/vakken/havo-aardrijkskunde.html</loc>
+    <lastmod>2026-04-07</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://slagio.nl/vakken/vwo-nl.html</loc>
-    <lastmod>2025-04-07</lastmod>
+    <loc>https://slagio.nl/vakken/havo-maatschappijwetenschappen.html</loc>
+    <lastmod>2026-04-07</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://slagio.nl/vakken/vwo-en.html</loc>
-    <lastmod>2025-04-07</lastmod>
+    <loc>https://slagio.nl/vakken/havo-duits.html</loc>
+    <lastmod>2026-04-07</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://slagio.nl/vakken/vwo-du.html</loc>
-    <lastmod>2025-04-07</lastmod>
+    <loc>https://slagio.nl/vakken/havo-frans.html</loc>
+    <lastmod>2026-04-07</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://slagio.nl/vakken/vwo-fr.html</loc>
-    <lastmod>2025-04-07</lastmod>
+    <loc>https://slagio.nl/vakken/vwo-nederlands.html</loc>
+    <lastmod>2026-04-07</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://slagio.nl/vakken/vwo-wa.html</loc>
-    <lastmod>2025-04-07</lastmod>
+    <loc>https://slagio.nl/vakken/vwo-wiskunde-a.html</loc>
+    <lastmod>2026-04-07</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://slagio.nl/vakken/vwo-wb.html</loc>
-    <lastmod>2025-04-07</lastmod>
+    <loc>https://slagio.nl/vakken/vwo-wiskunde-b.html</loc>
+    <lastmod>2026-04-07</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://slagio.nl/vakken/vwo-bi.html</loc>
-    <lastmod>2025-04-07</lastmod>
+    <loc>https://slagio.nl/vakken/vwo-biologie.html</loc>
+    <lastmod>2026-04-07</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://slagio.nl/vakken/vwo-sk.html</loc>
-    <lastmod>2025-04-07</lastmod>
+    <loc>https://slagio.nl/vakken/vwo-scheikunde.html</loc>
+    <lastmod>2026-04-07</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://slagio.nl/vakken/vwo-na.html</loc>
-    <lastmod>2025-04-07</lastmod>
+    <loc>https://slagio.nl/vakken/vwo-natuurkunde.html</loc>
+    <lastmod>2026-04-07</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://slagio.nl/vakken/vwo-ec.html</loc>
-    <lastmod>2025-04-07</lastmod>
+    <loc>https://slagio.nl/vakken/vwo-bedrijfseconomie.html</loc>
+    <lastmod>2026-04-07</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://slagio.nl/vakken/vwo-ak.html</loc>
-    <lastmod>2025-04-07</lastmod>
+    <loc>https://slagio.nl/vakken/vwo-engels.html</loc>
+    <lastmod>2026-04-07</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://slagio.nl/vakken/vwo-gs.html</loc>
-    <lastmod>2025-04-07</lastmod>
+    <loc>https://slagio.nl/vakken/vwo-economie.html</loc>
+    <lastmod>2026-04-07</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://slagio.nl/vakken/vwo-mw.html</loc>
-    <lastmod>2025-04-07</lastmod>
+    <loc>https://slagio.nl/vakken/vwo-geschiedenis.html</loc>
+    <lastmod>2026-04-07</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://slagio.nl/vakken/vwo-la.html</loc>
-    <lastmod>2025-04-07</lastmod>
+    <loc>https://slagio.nl/vakken/vwo-aardrijkskunde.html</loc>
+    <lastmod>2026-04-07</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://slagio.nl/vakken/vwo-gr.html</loc>
-    <lastmod>2025-04-07</lastmod>
+    <loc>https://slagio.nl/vakken/vwo-maatschappijwetenschappen.html</loc>
+    <lastmod>2026-04-07</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://slagio.nl/vakken/vwo-in.html</loc>
-    <lastmod>2025-04-07</lastmod>
+    <loc>https://slagio.nl/vakken/vwo-duits.html</loc>
+    <lastmod>2026-04-07</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://slagio.nl/vakken/vwo-frans.html</loc>
+    <lastmod>2026-04-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://slagio.nl/vakken/vwo-informatica.html</loc>
+    <lastmod>2026-04-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://slagio.nl/vakken/vwo-latijn.html</loc>
+    <lastmod>2026-04-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://slagio.nl/vakken/vwo-grieks.html</loc>
+    <lastmod>2026-04-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
   </url>
 </urlset>
