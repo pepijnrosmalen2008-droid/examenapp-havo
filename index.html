@@ -561,11 +561,11 @@ h1,h2,h3,h4{font-family:var(--font-head);line-height:1.2;letter-spacing:-.3px}
 .bento-si{font-size:16px;line-height:1;margin-bottom:3px}
 .bento-sv{font-family:var(--font-head);font-size:14px;font-weight:800;color:var(--dk);line-height:1.2;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 .bento-sl{font-size:10px;color:var(--mu);line-height:1.35;font-weight:500;overflow:hidden;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical}
-.bento-act{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:5px;padding:12px 6px;text-align:center;border-color:rgba(var(--or-rgb),.35);background:linear-gradient(145deg,rgba(var(--or-rgb),.12) 0%,rgba(var(--or-rgb),.04) 100%)}
-.bento-act::after{content:'';position:absolute;top:-28px;right:-28px;width:90px;height:90px;border-radius:50%;background:radial-gradient(circle,rgba(var(--or-rgb),.3) 0%,transparent 70%);pointer-events:none}
-.bento-act svg{stroke:var(--or);width:20px;height:20px;stroke-width:2;fill:none;stroke-linecap:round;stroke-linejoin:round;transition:transform .18s;position:relative;z-index:1}
-.bento-cell:hover .bento-act svg{transform:scale(1.15)}
-.bento-al{font-size:11px;font-weight:700;color:var(--or);letter-spacing:.2px;position:relative;z-index:1;opacity:.85}
+.bento-act{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:5px;padding:12px 6px;text-align:center;border-color:var(--bo);background:var(--s)}
+.bento-act::after{display:none}
+.bento-act svg{stroke:var(--mu);width:20px;height:20px;stroke-width:2;fill:none;stroke-linecap:round;stroke-linejoin:round;transition:stroke .18s,transform .18s;position:relative;z-index:1}
+.bento-cell:hover .bento-act svg{transform:scale(1.15);stroke:var(--dk)}
+.bento-al{font-size:11px;font-weight:600;color:var(--mu);letter-spacing:.2px;position:relative;z-index:1}
 .bento-streak{border-color:rgba(249,115,22,.4);background:linear-gradient(145deg,rgba(249,115,22,.13) 0%,rgba(249,115,22,.04) 100%)}
 .bento-streak::after{content:'';position:absolute;top:-28px;right:-28px;width:90px;height:90px;border-radius:50%;background:radial-gradient(circle,rgba(249,115,22,.35) 0%,transparent 70%);pointer-events:none}
 .bento-streak .bento-sv{color:#f97316}
