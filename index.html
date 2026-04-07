@@ -14187,8 +14187,13 @@ window.show=function(id,_noHash){_origShow(id,_noHash);updateBottomNav(id);};
 
 // Activeer hash-routing na volledig laden
 window.addEventListener('load',()=>{
+  // Query-param fallback: ?niveau=havo&vak=bi → redirect naar hash
+  const _qp=new URLSearchParams(location.search);
+  const _qniv=_qp.get('niveau'), _qvak=_qp.get('vak');
+  if(_qniv&&_qvak&&_VAK_SLUG[_qvak]){
+    history.replaceState(null,'','#'+_qniv+'-'+_VAK_SLUG[_qvak]);
+  }
   if(location.hash&&location.hash.length>1){
-    // Wacht kort tot alle modules geladen zijn
     setTimeout(_routeFromHash,120);
   }
 });
