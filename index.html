@@ -2176,6 +2176,25 @@ html.dark .calc-btn{background:#2e3550}
 .pomo-overlay-btn.secondary{background:var(--bg2);color:var(--dk)}
 .pomo-overlay-btn.secondary:hover{background:var(--bo)}
 .pomo-overlay.break-mode .pomo-overlay-timer{color:var(--green)}
+.pomo-overlay-btn.mg-btn{background:rgba(var(--or-rgb),.12);color:var(--or);border:2px solid rgba(var(--or-rgb),.3)}
+.pomo-overlay-btn.mg-btn:hover{background:rgba(var(--or-rgb),.22);transform:translateY(-1px)}
+/* Minigame */
+.mg-wrap{width:100%}
+.mg-header{font-size:13px;font-weight:700;color:var(--dk);margin-bottom:10px;text-align:center}
+.mg-stats{display:flex;gap:24px;justify-content:center;margin-bottom:10px}
+.mg-stat{text-align:center}
+.mg-stat-val{display:block;font-size:20px;font-weight:800;color:var(--or);font-family:var(--font-head)}
+.mg-stat-lbl{font-size:10px;font-weight:700;color:var(--mu);letter-spacing:.4px;text-transform:uppercase}
+.mg-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:7px;margin-bottom:12px}
+.mg-card{aspect-ratio:1;border-radius:10px;background:rgba(var(--or-rgb),.1);border:2px solid rgba(var(--or-rgb),.18);cursor:pointer;font-size:0;display:flex;align-items:center;justify-content:center;transition:transform .18s,background .18s,border-color .18s,font-size .12s;user-select:none}
+.mg-card:hover:not(.mg-flipped):not(.mg-matched){background:rgba(var(--or-rgb),.2);transform:scale(1.07)}
+.mg-card.mg-flipped{font-size:24px;background:var(--bg2);border-color:rgba(var(--or-rgb),.5)}
+.mg-card.mg-matched{font-size:24px;background:rgba(34,197,94,.15);border-color:#22c55e;cursor:default;animation:mgPop .32s cubic-bezier(.34,1.56,.64,1)}
+@keyframes mgPop{0%{transform:scale(.8)}60%{transform:scale(1.2)}100%{transform:scale(1)}}
+.mg-done-emoji{font-size:48px;margin-bottom:8px;display:block}
+.mg-done-title{font-family:var(--font-head);font-size:22px;font-weight:800;color:var(--dk);margin-bottom:4px}
+.mg-done-sub{font-size:13px;color:var(--mu);margin-bottom:14px}
+.mg-done-btns{display:flex;gap:8px;justify-content:center;flex-wrap:wrap}
 .pomo-overlay.break-mode .pomo-overlay-bar-fill{background:var(--green)}
 
 /* ── SUBJECT DETAIL EXTRAS ─────────────────────── */
@@ -13490,6 +13509,7 @@ function showPomoOverlay(type){
   const bar=document.getElementById('pomo-ov-bar');
   const btn=document.getElementById('pomo-ov-action');
 
+  const mgBtn=document.getElementById('pomo-ov-mg-btn');
   if(type==='break'){
     ov.classList.add('break-mode');
     icon.textContent='☕';
@@ -13500,6 +13520,7 @@ function showPomoOverlay(type){
     btn.textContent='▶ Start pauze';
     btn.onclick=startBreakFromOverlay;
     btn.style.display='';
+    if(mgBtn)mgBtn.style.display='';
   }else{
     ov.classList.remove('break-mode');
     icon.textContent='🔥';
@@ -13510,6 +13531,7 @@ function showPomoOverlay(type){
     btn.textContent='▶ Nieuwe sessie';
     btn.onclick=function(){dismissPomoOverlay();POMO.mode='study';POMO.seconds=25*60;POMO.total=25*60;renderPomo();togglePomo();};
     btn.style.display='';
+    if(mgBtn)mgBtn.style.display='none';
   }
   ov.classList.add('show');
   pomoAlert();
@@ -13543,8 +13565,83 @@ function startBreakFromOverlay(){
 }
 
 function dismissPomoOverlay(){
+  clearInterval(window._mgTimer);
+  window._mgState=null;
   document.getElementById('pomo-overlay').classList.remove('show','break-mode');
   clearInterval(POMO.breakTimer);
+}
+
+function startPomoMinigame(){
+  clearInterval(window._mgTimer);
+  const card=document.querySelector('.pomo-overlay-card');
+  const emojis=['🌟','⚡','🎯','🚀','🦊','🎨','🎵','🌈'];
+  const deck=[...emojis,...emojis].sort(()=>Math.random()-.5);
+  window._mgState={flipped:[],matched:0,moves:0,locked:false,startTime:Date.now()};
+  card.innerHTML=`
+    <div class="mg-wrap">
+      <div class="mg-header">🎮 Geheugenspel — vind alle paren!</div>
+      <div class="mg-stats">
+        <div class="mg-stat"><span class="mg-stat-val" id="mg-moves">0</span><span class="mg-stat-lbl">Zetten</span></div>
+        <div class="mg-stat"><span class="mg-stat-val" id="mg-time">0s</span><span class="mg-stat-lbl">Tijd</span></div>
+      </div>
+      <div class="mg-grid" id="mg-grid">${deck.map((e,i)=>`<div class="mg-card" data-i="${i}" data-e="${e}" onclick="mgFlip(this)"></div>`).join('')}</div>
+      <div style="text-align:center">
+        <button class="pomo-overlay-btn secondary" style="padding:9px 20px;font-size:13px" onclick="dismissPomoOverlay()">✕ Sluiten</button>
+      </div>
+    </div>`;
+  window._mgTimer=setInterval(()=>{
+    const el=document.getElementById('mg-time');
+    if(el&&window._mgState)el.textContent=Math.floor((Date.now()-window._mgState.startTime)/1000)+'s';
+  },1000);
+}
+
+function mgFlip(el){
+  const st=window._mgState;
+  if(!st||st.locked)return;
+  if(el.classList.contains('mg-flipped')||el.classList.contains('mg-matched'))return;
+  el.textContent=el.dataset.e;
+  el.classList.add('mg-flipped');
+  st.flipped.push(el);
+  if(st.flipped.length===2){
+    st.moves++;
+    const mv=document.getElementById('mg-moves');
+    if(mv)mv.textContent=st.moves;
+    const[a,b]=st.flipped;
+    if(a.dataset.e===b.dataset.e){
+      a.classList.replace('mg-flipped','mg-matched');
+      b.classList.replace('mg-flipped','mg-matched');
+      st.flipped=[];st.matched++;
+      if(st.matched===8){
+        clearInterval(window._mgTimer);
+        const secs=Math.floor((Date.now()-st.startTime)/1000);
+        setTimeout(()=>mgDone(st.moves,secs),500);
+      }
+    }else{
+      st.locked=true;
+      setTimeout(()=>{
+        a.textContent='';b.textContent='';
+        a.classList.remove('mg-flipped');b.classList.remove('mg-flipped');
+        st.flipped=[];st.locked=false;
+      },750);
+    }
+  }
+}
+
+function mgDone(moves,secs){
+  const card=document.querySelector('.pomo-overlay-card');
+  const star=moves<=12?'🏆':moves<=18?'🥈':'🥉';
+  const lbl=moves<=12?'Fenomenaal!':moves<=18?'Goed gedaan!':'Blijf oefenen!';
+  card.innerHTML=`
+    <div style="text-align:center">
+      <span class="mg-done-emoji">${star}</span>
+      <div class="mg-done-title">${lbl}</div>
+      <div class="mg-done-sub">Alle paren gevonden in <strong>${moves} zetten</strong> en <strong>${secs}s</strong></div>
+      <div class="mg-done-btns">
+        <button class="pomo-overlay-btn secondary" onclick="dismissPomoOverlay()">Sluiten</button>
+        <button class="pomo-overlay-btn mg-btn" onclick="startPomoMinigame()">↺ Opnieuw</button>
+        <button class="pomo-overlay-btn primary" onclick="startBreakFromOverlay()">☕ Start pauze</button>
+      </div>
+    </div>`;
 }
 
 function togglePomo(){
@@ -13976,7 +14073,8 @@ window.show=function(id){_origShow(id);updateBottomNav(id);};
     <div class="pomo-overlay-timer" id="pomo-ov-timer">05:00</div>
     <div class="pomo-overlay-bar"><div class="pomo-overlay-bar-fill" id="pomo-ov-bar" style="width:100%"></div></div>
     <div class="pomo-overlay-btns">
-      <button class="pomo-overlay-btn secondary" onclick="dismissPomoOverlay()">Sluiten</button>
+      <button class="pomo-overlay-btn secondary" id="pomo-ov-close" onclick="dismissPomoOverlay()">Sluiten</button>
+      <button class="pomo-overlay-btn mg-btn" id="pomo-ov-mg-btn" onclick="startPomoMinigame()" style="display:none">🎮 Minigame</button>
       <button class="pomo-overlay-btn primary" id="pomo-ov-action" onclick="startBreakFromOverlay()">▶ Start pauze</button>
     </div>
   </div>
