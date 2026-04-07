@@ -5855,7 +5855,28 @@ youtubeKanaal:'Math with Menno (225K+)',youtubeUrl:'https://youtube.com/@Mathwit
 let ST = {vak:null,domein:null,mode:null,vragen:[],idx:0,score:0,antwrd:[],timer:null,tijd:15,shuffleMap:[],shuffleMaps:[],combo:0,xpThisRound:0,isDailyChallenge:false};
 
 // ═══════ UI HELPERS ═══════
-function show(id){
+// ═══════ HASH ROUTING ═══════
+const _SCREEN_HASHES={'sc-info':'info','sc-schedule':'rooster','sc-calc':'rekenmachine','sc-streak':'streaks'};
+function _pushHash(h){if((location.hash||'#').slice(1)!==h)history.pushState(null,'',h?'#'+h:location.pathname+location.search);}
+function _routeFromHash(){
+  const h=(location.hash||'').slice(1);
+  if(!h){show('sc-home');return;}
+  // vak: #havo-bi of #vwo-nl
+  const vm=h.match(/^(havo|vwo)-([a-z]+)$/);
+  if(vm){
+    const [,niv,id]=vm;
+    if(niv!==APP_LEVEL){APP_LEVEL=niv;localStorage.setItem('examenapp_level',niv);applyLevelTheme(niv);}
+    const vak=getVK().find(v=>v.id===id);
+    if(vak){openVak(id,true);return;}
+  }
+  // statische schermen
+  const sc=Object.entries(_SCREEN_HASHES).find(([,v])=>v===h);
+  if(sc){show(sc[0],true);return;}
+  show('sc-home',true);
+}
+window.addEventListener('popstate',_routeFromHash);
+
+function show(id,_noHash){
   const prev=document.querySelector('.sc.on');
   if(id==='sc-privacy'&&prev)window._privacyFrom=prev.id;
   // Stop quiz timer wanneer de gebruiker de quiz verlaat
@@ -5865,6 +5886,11 @@ function show(id){
   window.scrollTo(0,0);
   updateBottomNav(id);
   tryPushAds(id);
+  // URL bijwerken
+  if(!_noHash){
+    if(id==='sc-home')_pushHash('');
+    else if(_SCREEN_HASHES[id])_pushHash(_SCREEN_HASHES[id]);
+  }
   if(id==='sc-home'){try{renderComebackCard();}catch(e){}}
   // Welcome screen gets its own indigo theme; level pages get their own theme
   if(id==='sc-welcome'){
@@ -8464,8 +8490,9 @@ function prefillCalcFromSaved(){
 }
 
 // ═══════ OPEN VAK ═══════
-function openVak(id){
+function openVak(id,_noHash){
   ST.vak=getVK().find(v=>v.id===id);
+  if(!_noHash)_pushHash(APP_LEVEL+'-'+id);
   document.getElementById('dtitle').textContent=ST.vak.naam;
   document.getElementById('ddesc').textContent=ST.vak.beschrijving;
   document.getElementById('dce').innerHTML=ST.vak.ceInfo;
@@ -14148,9 +14175,17 @@ function updateBottomNav(id){
     }catch(e){}
   }
 }
-// Patch show() to update bottom nav
+// Patch show() to update bottom nav (pass all args through)
 const _origShow=show;
-window.show=function(id){_origShow(id);updateBottomNav(id);};
+window.show=function(id,_noHash){_origShow(id,_noHash);updateBottomNav(id);};
+
+// Activeer hash-routing na volledig laden
+window.addEventListener('load',()=>{
+  if(location.hash&&location.hash.length>1){
+    // Wacht kort tot alle modules geladen zijn
+    setTimeout(_routeFromHash,120);
+  }
+});
 </script>
 
 <!-- Bottom Navigation (mobile only) -->
