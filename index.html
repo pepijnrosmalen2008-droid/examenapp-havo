@@ -12370,7 +12370,7 @@ function renderHomeStats(){
   let streakSub=atRisk?'⚠ Oefen voor middernacht!':streak>0?'Dagen op rij':'Begin je streak!';
   const mileLabel={3:'🔥3-daags',7:'⚡7-daags',14:'💎14-daags',30:'🔮30-daags',100:'👑100-daags',200:'🌌200-daags',300:'⚜️300-daags',365:'🪐365-daags'};
   if(!atRisk&&nextMile&&(nextMile-streak)<=2)streakSub=`Nog ${nextMile-streak}d voor ${mileLabel[nextMile]||nextMile+'d'} badge!`;
-  const streakCell=`<div class="bento-cell bento-streak${atRisk?' bento-at-risk':''}" onclick="openProfiel()" role="button" tabindex="0">
+  const streakCell=`<div class="bento-cell bento-streak${atRisk?' bento-at-risk':''}" onclick="show('sc-home');setTimeout(()=>{const el=document.getElementById('streak-home');if(el)el.scrollIntoView({behavior:'smooth',block:'start'})},120)" role="button" tabindex="0">
     <div class="bento-stat"><div class="bento-si">🔥</div><div class="bento-sv">${streak} dag${streak!==1?'en':''}</div><div class="bento-sl">${streakSub}</div></div>
   </div>`;
   // ── Level / XP cell ───────────────────────────────
