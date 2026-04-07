@@ -5857,17 +5857,23 @@ let ST = {vak:null,domein:null,mode:null,vragen:[],idx:0,score:0,antwrd:[],timer
 // ═══════ UI HELPERS ═══════
 // ═══════ HASH ROUTING ═══════
 const _SCREEN_HASHES={'sc-info':'info','sc-schedule':'rooster','sc-calc':'rekenmachine','sc-streak':'streaks'};
+// Vak ID → URL-slug (volledige naam)
+const _VAK_SLUG={nl:'nederlands',wa:'wiskunde-a',wb:'wiskunde-b',bi:'biologie',sk:'scheikunde',na:'natuurkunde',be:'bedrijfseconomie',en:'engels',ec:'economie',gs:'geschiedenis',ak:'aardrijkskunde',mw:'maatschappijwetenschappen',du:'duits',fr:'frans',la:'latijn',gr:'grieks',in:'informatica'};
+const _SLUG_VAK=Object.fromEntries(Object.entries(_VAK_SLUG).map(([k,v])=>[v,k]));
 function _pushHash(h){if((location.hash||'#').slice(1)!==h)history.pushState(null,'',h?'#'+h:location.pathname+location.search);}
 function _routeFromHash(){
   const h=(location.hash||'').slice(1);
   if(!h){show('sc-home');return;}
-  // vak: #havo-bi of #vwo-nl
-  const vm=h.match(/^(havo|vwo)-([a-z]+)$/);
+  // vak: #havo-biologie of #vwo-wiskunde-a
+  const vm=h.match(/^(havo|vwo)-(.+)$/);
   if(vm){
-    const [,niv,id]=vm;
-    if(niv!==APP_LEVEL){APP_LEVEL=niv;localStorage.setItem('examenapp_level',niv);applyLevelTheme(niv);}
-    const vak=getVK().find(v=>v.id===id);
-    if(vak){openVak(id,true);return;}
+    const [,niv,slug]=vm;
+    const id=_SLUG_VAK[slug];
+    if(id){
+      if(niv!==APP_LEVEL){APP_LEVEL=niv;localStorage.setItem('examenapp_level',niv);applyLevelTheme(niv);}
+      const vak=getVK().find(v=>v.id===id);
+      if(vak){openVak(id,true);return;}
+    }
   }
   // statische schermen
   const sc=Object.entries(_SCREEN_HASHES).find(([,v])=>v===h);
@@ -8492,7 +8498,7 @@ function prefillCalcFromSaved(){
 // ═══════ OPEN VAK ═══════
 function openVak(id,_noHash){
   ST.vak=getVK().find(v=>v.id===id);
-  if(!_noHash)_pushHash(APP_LEVEL+'-'+id);
+  if(!_noHash)_pushHash(APP_LEVEL+'-'+(_VAK_SLUG[id]||id));
   document.getElementById('dtitle').textContent=ST.vak.naam;
   document.getElementById('ddesc').textContent=ST.vak.beschrijving;
   document.getElementById('dce').innerHTML=ST.vak.ceInfo;
