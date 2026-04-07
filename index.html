@@ -2213,6 +2213,16 @@ html.dark .calc-btn{background:#2e3550}
 
 /* ── MOBILE BOTTOM NAV ────────────────────────── */
 .bottom-nav{display:none;position:fixed;bottom:0;left:0;right:0;z-index:200;padding:0 0 calc(env(safe-area-inset-bottom,6px) + 10px);pointer-events:none}
+/* PWA install banner */
+.pwa-banner{position:fixed;bottom:0;left:0;right:0;z-index:8000;padding:12px 16px calc(env(safe-area-inset-bottom,8px) + 12px);background:var(--s);border-top:1px solid var(--bo);box-shadow:0 -8px 32px rgba(0,0,0,.2);display:flex;align-items:center;gap:12px;transform:translateY(100%);transition:transform .35s cubic-bezier(.34,1.1,.64,1);pointer-events:none}
+.pwa-banner.show{transform:translateY(0);pointer-events:all}
+.pwa-banner-icon{font-size:32px;flex-shrink:0}
+.pwa-banner-text{flex:1;min-width:0}
+.pwa-banner-title{font-size:14px;font-weight:800;color:var(--dk);margin-bottom:2px}
+.pwa-banner-sub{font-size:12px;color:var(--mu);line-height:1.4}
+.pwa-banner-btns{display:flex;flex-direction:column;gap:6px;flex-shrink:0}
+.pwa-banner-install{padding:9px 16px;border-radius:10px;background:var(--or);color:#fff;border:none;font-size:13px;font-weight:700;cursor:pointer;font-family:var(--font);white-space:nowrap}
+.pwa-banner-dismiss{padding:6px 12px;border-radius:10px;background:transparent;color:var(--mu);border:1px solid var(--bo);font-size:12px;font-weight:600;cursor:pointer;font-family:var(--font);white-space:nowrap}
 .bottom-nav-inner{display:flex;justify-content:center;align-items:center;gap:4px;max-width:340px;margin:0 auto;background:color-mix(in srgb,var(--nav-bg) 85%,transparent);backdrop-filter:blur(24px);-webkit-backdrop-filter:blur(24px);border:1px solid var(--bo);border-radius:28px;padding:8px 12px;box-shadow:0 8px 32px rgba(0,0,0,.12),0 1px 0 rgba(255,255,255,.06) inset;pointer-events:all}
 .bnav-btn{display:flex;flex-direction:column;align-items:center;gap:3px;background:none;border:none;color:var(--mu);font-size:9.5px;font-weight:600;cursor:pointer;padding:7px 12px;border-radius:18px;transition:all .22s cubic-bezier(.34,1.4,.64,1);font-family:var(--font);-webkit-tap-highlight-color:transparent;letter-spacing:.3px;flex:1}
 .bnav-btn .bnav-icon{width:22px;height:22px;display:flex;align-items:center;justify-content:center;transition:transform .22s cubic-bezier(.34,1.4,.64,1)}
@@ -3582,13 +3592,6 @@ html.dark .hsd-pill{background:var(--bg2);border-color:var(--bo2)}
   <div class="progress-overview" id="progress-overview" style="display:none">
     <div class="po-title">📊 Jouw voortgang <button class="po-reset" id="reset-progress" onclick="resetVakProgress()">Wissen</button></div>
     <div class="po-grid" id="po-grid"></div>
-  </div>
-  <!-- Ad: vakpagina (rustmoment, browsen voor quiz) -->
-  <div class="ad-wrapper" id="ad-detail" style="margin-bottom:20px">
-    <span class="ad-label">Advertentie</span>
-    <div class="ad-slot ad-slot--inline">
-      <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-3580526892359138" data-ad-slot="0000000000" data-ad-format="auto" data-full-width-responsive="true"></ins>
-    </div>
   </div>
   <div class="detail-tip">
     <div class="dt-icon">💡</div>
@@ -5849,7 +5852,7 @@ function show(id){
 }
 // Ads: push ads alleen op rustschermen, nooit tijdens quiz/flashcards
 // ═══════ COOKIE CONSENT & ADS ═══════
-const AD_SCREENS=['sc-home','sc-info','sc-res','sc-schedule','sc-calc','sc-detail','sc-review'];
+const AD_SCREENS=['sc-home','sc-info','sc-res','sc-schedule','sc-calc'];
 const pushedAds=new Set();
 function getConsent(){return localStorage.getItem('examenapp_cookie_consent');}
 function cookieChoice(accepted){
@@ -14505,5 +14508,85 @@ if('serviceWorker' in navigator){
     <iframe id="pdf-viewer-iframe" title="PDF Viewer" src="about:blank"></iframe>
   </div>
 </div>
+<!-- PWA Install Banner -->
+<div class="pwa-banner" id="pwa-banner" role="complementary" aria-label="App installeren">
+  <div class="pwa-banner-icon">📱</div>
+  <div class="pwa-banner-text">
+    <div class="pwa-banner-title">Slagio installeren</div>
+    <div class="pwa-banner-sub">Sneller opstarten · offline oefenen · altijd bij de hand</div>
+  </div>
+  <div class="pwa-banner-btns">
+    <button class="pwa-banner-install" id="pwa-install-btn">Installeren</button>
+    <button class="pwa-banner-dismiss" id="pwa-dismiss-btn">Niet nu</button>
+  </div>
+</div>
+
+<script>
+(function(){
+  const SNOOZE_KEY='slagio_pwa_snooze';
+  const SESSION_KEY='slagio_pwa_sessions';
+  const QUIZ_SCREENS=['sc-quiz','sc-flash','sc-botrace','sc-simtoets','sc-leerpad'];
+  let _deferredPrompt=null;
+  let _bannerShown=false;
+
+  function isSnoozed(){
+    const t=localStorage.getItem(SNOOZE_KEY);
+    return t&&(Date.now()-parseInt(t))<7*24*60*60*1000;
+  }
+  function snooze(){localStorage.setItem(SNOOZE_KEY,Date.now());}
+  function isInQuiz(){
+    return QUIZ_SCREENS.some(id=>{const el=document.getElementById(id);return el&&el.classList.contains('on');});
+  }
+  function showBanner(){
+    if(_bannerShown||isSnoozed()||isInQuiz())return;
+    _bannerShown=true;
+    document.getElementById('pwa-banner').classList.add('show');
+  }
+  function hideBanner(){document.getElementById('pwa-banner').classList.remove('show');}
+
+  // Count sessions
+  const sessions=parseInt(sessionStorage.getItem(SESSION_KEY)||'0')+1;
+  sessionStorage.setItem(SESSION_KEY,sessions);
+
+  // iOS fallback banner
+  const isIOS=/iphone|ipad|ipod/i.test(navigator.userAgent)&&!window.MSStream;
+  const isStandalone=window.matchMedia('(display-mode: standalone)').matches||navigator.standalone;
+
+  if(isStandalone){return;} // Already installed
+
+  window.addEventListener('beforeinstallprompt',e=>{
+    e.preventDefault();
+    _deferredPrompt=e;
+    if(sessions>=2&&!isSnoozed()){
+      setTimeout(showBanner,2000);
+    }
+  });
+
+  document.getElementById('pwa-install-btn').addEventListener('click',()=>{
+    hideBanner();
+    if(_deferredPrompt){
+      _deferredPrompt.prompt();
+      _deferredPrompt.userChoice.then(()=>{_deferredPrompt=null;});
+    }
+  });
+
+  document.getElementById('pwa-dismiss-btn').addEventListener('click',()=>{
+    hideBanner();snooze();
+  });
+
+  // iOS: show manual instructions
+  if(isIOS&&sessions>=2&&!isSnoozed()){
+    setTimeout(()=>{
+      if(_bannerShown||isSnoozed())return;
+      _bannerShown=true;
+      const b=document.getElementById('pwa-banner');
+      b.querySelector('.pwa-banner-title').textContent='Voeg toe aan beginscherm';
+      b.querySelector('.pwa-banner-sub').textContent='Tik op Delen ↑ → "Zet op beginscherm" voor snelle toegang';
+      b.querySelector('#pwa-install-btn').style.display='none';
+      b.classList.add('show');
+    },2000);
+  }
+})();
+</script>
 </body>
 </html>
