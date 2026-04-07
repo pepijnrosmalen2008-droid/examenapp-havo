@@ -12378,7 +12378,7 @@ function renderHomeStats(){
   const xpToNext=nxtXP-xp;
   const xpIsUrgent=xpToNext<=100&&xpToNext>0;
   const xpSub=xp>0?(xpIsUrgent?`⚡ Nog ${xpToNext} XP!`:`Nog ${xpToNext} XP`):'';
-  const lvlCell=xp>0?`<div class="bento-cell bento-xp${xpIsUrgent?' bento-xp-urgent':''}" onclick="show('sc-leaderboard');renderLeaderboard()" role="button" tabindex="0">
+  const lvlCell=xp>0?`<div class="bento-cell bento-xp${xpIsUrgent?' bento-xp-urgent':''}" onclick="show('sc-home');setTimeout(()=>{const el=document.getElementById('xp-home-bar');if(el)el.scrollIntoView({behavior:'smooth',block:'start'})},120)" role="button" tabindex="0">
     <div class="bento-stat"><div class="bento-si">⭐</div><div class="bento-sv">Level ${lvl}</div><div class="bento-sl">${xpSub}</div></div>
   </div>`:'';
   // ── Badges cell ───────────────────────────────────
