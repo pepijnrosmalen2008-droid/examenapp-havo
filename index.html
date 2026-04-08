@@ -8511,14 +8511,23 @@ function openVak(id,_noHash){
   if(ST.vak.hulpmiddelen)metaHtml+=`<span class="em-chip">📋 ${ST.vak.hulpmiddelen}</span>`;
   metaHtml+='</div>';
   if(ST.vak.youtubeKanaal&&ST.vak.youtubeUrl)metaHtml+=`<a class="yt-card" href="${ST.vak.youtubeUrl}" target="_blank" rel="noopener"><div class="yt-icon"><svg viewBox="0 0 24 24"><path d="M23.5 7s-.3-2-1.2-2.8c-1.1-1.2-2.4-1.2-3-1.3C16.8 2.8 12 2.8 12 2.8s-4.8 0-7.3.1c-.6.1-1.9.1-3 1.3C.8 5 .5 7 .5 7S.2 9.3.2 11.5v2.1c0 2.2.3 4.5.3 4.5s.3 2 1.2 2.8c1.1 1.2 2.6 1.1 3.3 1.2C7.2 22.2 12 22.2 12 22.2s4.8 0 7.3-.2c.6-.1 1.9-.1 3-1.3.9-.8 1.2-2.8 1.2-2.8s.3-2.3.3-4.5v-2.1C23.8 9.3 23.5 7 23.5 7zM9.7 15.5V8.4l8.1 3.6-8.1 3.5z"/></svg></div><div class="yt-info"><span class="yt-label">Aanbevolen YouTube-kanaal</span><span class="yt-name">${ST.vak.youtubeKanaal}</span></div><span class="yt-arr">→</span></a>`;
-  // Echte CE-examens archief (directe PDF-links via AlleExamens.nl)
+  // Echte CE-examens archief
+  // EXAMENS_BASE_URL: zet op je eigen Supabase URL na uploaden met upload-examens-supabase.js
+  // Voorbeeld: 'https://xxxx.supabase.co/storage/v1/object/public/examens'
+  // Laat leeg ('') om de AlleExamens.nl fallback te gebruiken.
+  const _EXAMENS_BASE = '';
   const _aeNames={nl:'Nederlands',wa:'Wiskunde A',wb:'Wiskunde B',bi:'Biologie',sk:'Scheikunde',na:'Natuurkunde',en:'Engels',ec:'Economie',be:'Bedrijfseconomie',gs:'Geschiedenis',ak:'Aardrijkskunde',mw:'Maatschappijwetenschappen',de:'Duits',fr:'Frans',la:'Latijn',gr:'Grieks',in:'Informatica'};
   const _aeLvl=(ST.niveau||'havo').toUpperCase();
+  const _niveau=(ST.niveau||'havo').toLowerCase();
   const _aeName=_aeNames[ST.vak.id];
   if(_aeName){
     const _enc=encodeURIComponent(_aeName);
-    const _mkPdf=(year,tv,type)=>`https://static.alleexamens.nl/${_aeLvl}/${_enc}/${year}/${tv}/${_enc}/${_enc}%20${year}%20${tv}_${type}.pdf`;
-    const _bundel=`https://static.alleexamens.nl/${_aeLvl}/${_enc}/Examenbundels/Examenbundel_Compleet_${_aeLvl}_${_enc}.pdf`;
+    const _mkPdf=(year,tv,type)=>_EXAMENS_BASE
+      ?`${_EXAMENS_BASE}/${_niveau}/${ST.vak.id}/${year}/${tv}/${type}.pdf`
+      :`https://static.alleexamens.nl/${_aeLvl}/${_enc}/${year}/${tv}/${_enc}/${_enc}%20${year}%20${tv}_${type}.pdf`;
+    const _bundel=_EXAMENS_BASE
+      ?`${_EXAMENS_BASE}/${_niveau}/${ST.vak.id}/bundel.pdf`
+      :`https://static.alleexamens.nl/${_aeLvl}/${_enc}/Examenbundels/Examenbundel_Compleet_${_aeLvl}_${_enc}.pdf`;
     const _jaren=[2025,2024,2023,2022,2021,2019];
     // Eerste CE-jaar van huidig examenprogramma per vak en niveau (bron: examenblad.nl / slo.nl)
     const _svData={
@@ -8545,7 +8554,7 @@ function openVak(id,_noHash){
       });}
       _ch+=`</div></div>`;
     });
-    _ch+=`<div style="font-size:11px;color:var(--mu);margin-top:10px;padding-top:10px;border-top:1px solid var(--bo)">Examens via <a href="https://www.alleexamens.nl" target="_blank" rel="noopener" style="color:var(--mu)">AlleExamens.nl</a> · Syllabus &amp; normering: <a href="https://www.examenblad.nl" target="_blank" rel="noopener" style="color:var(--mu)">Examenblad.nl</a></div></div></div>`;
+    _ch+=`<div style="font-size:11px;color:var(--mu);margin-top:10px;padding-top:10px;border-top:1px solid var(--bo)">${_EXAMENS_BASE?'Examens gehost door Slagio':'Examens via <a href="https://www.alleexamens.nl" target="_blank" rel="noopener" style="color:var(--mu)">AlleExamens.nl</a>'} · Syllabus &amp; normering: <a href="https://www.examenblad.nl" target="_blank" rel="noopener" style="color:var(--mu)">Examenblad.nl</a></div></div></div>`;
     metaHtml+=_ch;
   }
   document.getElementById('dce').insertAdjacentHTML('afterend',metaHtml);
