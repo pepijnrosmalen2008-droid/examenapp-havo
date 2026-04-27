@@ -861,13 +861,25 @@ html:not(.dark) .sb-gl6::before{filter:brightness(1.0)}
 .qb{background:#1a1d26;color:#fff;border:none;border-radius:10px;padding:8px 16px;font-size:13px;font-weight:700;cursor:pointer;transition:all .2s;font-family:var(--font)}
 .qb:hover{background:var(--or)}
 html.dark .qb{background:#2e3550}
-.dtop{display:none;padding:0 20px 20px;border-top:1px solid var(--bo)}
+.dtop{display:none;border-top:1px solid var(--bo)}
 .dtop.on{display:block}
 .tlbl{font-size:11px;font-weight:700;color:var(--mu);text-transform:uppercase;letter-spacing:.7px;margin:14px 0 9px}
 .ttags{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:14px}
 .tt{background:var(--tt-bg);border:1px solid var(--bo);border-radius:8px;padding:5px 12px;font-size:12px;color:var(--dk)}
 .sam{background:var(--sam-bg);border-radius:12px;padding:16px 18px;font-size:13.5px;line-height:1.95;color:var(--sam-txt);border-left:3px solid var(--bl)}
 .sam strong{color:var(--sam-h);font-weight:700}
+/* ── Domain tab layout ── */
+.dtab-bar{display:flex;padding:0 16px;background:var(--bg2);border-bottom:1px solid var(--bo);overflow-x:auto;scrollbar-width:none;gap:2px}
+.dtab-bar::-webkit-scrollbar{display:none}
+.dtab-btn{background:none;border:none;border-bottom:2.5px solid transparent;padding:10px 14px 8px;font-size:13px;font-weight:600;color:var(--mu);cursor:pointer;font-family:var(--font);transition:color .15s,border-color .15s;white-space:nowrap;flex-shrink:0;margin-bottom:-1px}
+.dtab-btn:hover:not(.dtab-active){color:var(--dk)}
+.dtab-btn.dtab-active{color:var(--or);border-bottom-color:var(--or);font-weight:700}
+.dtab-pane{display:none;padding:16px 20px 22px}
+.dtab-pane.dtab-vis{display:block}
+.dom-intro{font-size:13px;color:var(--mu);line-height:1.6;padding:10px 14px;background:var(--bg2);border-radius:10px;margin-bottom:2px}
+.sam-cta{margin-top:18px;padding-top:14px;border-top:1px solid var(--bo)}
+.sam-cta-btn{background:var(--or);color:#fff;border:none;border-radius:10px;padding:10px 20px;font-size:13px;font-weight:700;cursor:pointer;font-family:var(--font);width:100%;transition:opacity .15s}
+.sam-cta-btn:hover{opacity:.88}
 .fm{display:inline-block;background:var(--s);border:1px solid #C5D9F5;border-radius:6px;padding:2px 8px;font-family:monospace;font-size:12px;color:#1a56c4;margin:2px 3px}
 
 /* ── THEME TOGGLE ─────────────────────────────── */
@@ -9357,10 +9369,21 @@ function openVak(id,_noHash){
         </div>
       </div>
       <div class="dtop" id="top-${d.id}">
-        <div class="tlbl">Onderwerpen CE</div>
-        <div class="ttags">${d.onderwerpen.map(o=>`<span class="tt">${o}</span>`).join('')}</div>
-        <div class="tlbl">Samenvatting & formules</div>
-        <div class="sam">${d.sam}</div>
+        <div class="dtab-bar">
+          <button class="dtab-btn dtab-active" data-tab="theorie">📖 Theorie</button>
+          <button class="dtab-btn" data-tab="quiz">⚡ Test jezelf</button>
+          <button class="dtab-btn dtab-vid-tab" data-tab="vids" style="display:none">📹 Video's</button>
+        </div>
+        <div class="dtab-pane dtab-vis" data-tab-id="theorie">
+          <p class="dom-intro">${d.beschrijving}</p>
+          <div class="tlbl" style="margin-top:14px">CE-onderwerpen</div>
+          <div class="ttags">${d.onderwerpen.map(o=>`<span class="tt">${o}</span>`).join('')}</div>
+          <div class="tlbl">Samenvatting</div>
+          <div class="sam">${d.sam}</div>
+          <div class="sam-cta"><button class="sam-cta-btn" onclick="event.stopPropagation();openQmode('${d.id}')">▶ Oefenen op dit domein</button></div>
+        </div>
+        <div class="dtab-pane" data-tab-id="quiz"></div>
+        <div class="dtab-pane" data-tab-id="vids"></div>
       </div>`;
     dl.appendChild(el);
     initSamInteractive(el, d);
@@ -9613,41 +9636,49 @@ function initSamInteractive(container, d) {
       });
     });
   }
-  // 2. YouTube uitleg video's voor dit domein
-  const dtopV = container.querySelector('.dtop');
-  if (dtopV && d.id) {
+
+  // 2. Tab wiring
+  const dtop = container.querySelector('.dtop');
+  if (!dtop) return;
+  const tabBar = dtop.querySelector('.dtab-bar');
+  if (tabBar) {
+    tabBar.querySelectorAll('.dtab-btn').forEach(btn => {
+      btn.addEventListener('click', e => {
+        e.stopPropagation();
+        const target = btn.dataset.tab;
+        tabBar.querySelectorAll('.dtab-btn').forEach(b => b.classList.remove('dtab-active'));
+        dtop.querySelectorAll('.dtab-pane').forEach(p => p.classList.remove('dtab-vis'));
+        btn.classList.add('dtab-active');
+        dtop.querySelector(`[data-tab-id="${target}"]`)?.classList.add('dtab-vis');
+      });
+    });
+  }
+
+  // 3. YouTube uitleg video's — inject into video tab
+  const vidPane = dtop.querySelector('[data-tab-id="vids"]');
+  const vidTabBtn = dtop.querySelector('.dtab-vid-tab');
+  if (vidPane && d.id) {
     const vakId = (typeof ST !== 'undefined' && ST.vak) ? ST.vak.id : '';
     const domId = d.id.toUpperCase();
     const vids = (UITLEG_VIDEOS[vakId] || {})[domId] || [];
     if (vids.length > 0) {
-      const vc = document.createElement('div');
-      vc.className = 'sv-video-card';
-      vc.innerHTML = `<div class="sv-video-card-head">
-        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.6 12 3.6 12 3.6s-7.5 0-9.4.5A3 3 0 0 0 .5 6.2 31 31 0 0 0 0 12a31 31 0 0 0 .5 5.8 3 3 0 0 0 2.1 2.1c1.9.5 9.4.5 9.4.5s7.5 0 9.4-.5a3 3 0 0 0 2.1-2.1A31 31 0 0 0 24 12a31 31 0 0 0-.5-5.8zM9.6 15.6V8.4l6.3 3.6-6.3 3.6z"/></svg>
-        <span class="sv-video-card-title">📹 Uitlegvideo's voor dit domein</span>
-        <svg class="sv-video-card-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg>
-      </div>
-      <div class="sv-video-card-body">
-        <div class="sv-video-card-list">${vids.map(v=>`<a class="sv-video-item" href="https://www.youtube.com/watch?v=${v.id}" target="_blank" rel="noopener">
-          <div class="sv-video-thumb-placeholder"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></div>
-          <div class="sv-video-info"><div class="sv-video-name">${v.titel}</div><div class="sv-video-ch">${v.kanaal}</div></div>
-          <svg class="sv-video-arr" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"/></svg>
-        </a>`).join('')}</div>
-      </div>`;
-      vc.querySelector('.sv-video-card-head').addEventListener('click',()=>vc.classList.toggle('open'));
-      dtopV.appendChild(vc);
+      if (vidTabBtn) vidTabBtn.style.display = '';
+      vidPane.innerHTML = `<div class="sv-video-card-list">${vids.map(v=>`<a class="sv-video-item" href="https://www.youtube.com/watch?v=${v.id}" target="_blank" rel="noopener">
+        <div class="sv-video-thumb-placeholder"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></div>
+        <div class="sv-video-info"><div class="sv-video-name">${v.titel}</div><div class="sv-video-ch">${v.kanaal}</div></div>
+        <svg class="sv-video-arr" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"/></svg>
+      </a>`).join('')}</div>`;
     }
   }
 
-  // 3. Test jezelf mini-quiz (3 random vragen uit sv)
-  if (!d.sv || d.sv.length < 3) return;
-  const dtop = container.querySelector('.dtop');
-  if (!dtop) return;
+  // 4. Test jezelf mini-quiz — inject into quiz tab
+  const quizPane = dtop.querySelector('[data-tab-id="quiz"]');
+  if (!quizPane || !d.sv || d.sv.length < 3) return;
   const pool = [...d.sv].sort(() => Math.random() - 0.5).slice(0, 3);
   let cur = 0, score = 0;
   const tjEl = document.createElement('div');
   tjEl.className = 'tj';
-  dtop.appendChild(tjEl);
+  quizPane.appendChild(tjEl);
   function renderQ() {
     if (cur >= pool.length) {
       const pct = score / pool.length;
