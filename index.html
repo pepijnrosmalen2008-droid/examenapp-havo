@@ -3400,6 +3400,40 @@ html.dark .hsd-pill{background:var(--bg2);border-color:var(--bo2)}
 .mf-chip{display:none;align-items:center;gap:6px;background:rgba(var(--or-rgb),.1);border:1px solid rgba(var(--or-rgb),.3);border-radius:20px;padding:5px 10px;margin-top:10px;font-size:11px;color:var(--or);font-weight:700}
 .mf-chip-txt{flex:1;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
 .mf-chip-x{background:none;border:none;color:var(--or);cursor:pointer;font-size:14px;padding:0;line-height:1;flex-shrink:0;font-family:var(--font)}
+
+/* ── MOBILE OVERRIDES (na desktop-regels, zodat cascade klopt) ─── */
+@media(max-width:640px){
+  /* Profiel scherm */
+  .prof-section{padding:14px 14px!important}
+  .prof-page-header{margin-bottom:16px}
+  .prof-page-header h2{font-size:20px}
+
+  /* Avatar & evolutie kaart */
+  .anim-evo-card{padding:12px 10px!important;border-radius:14px}
+  .anim-evo-title{font-size:13px;flex-wrap:wrap;gap:6px}
+  .anim-evo-subtitle{font-size:11px;margin-bottom:10px}
+  .anim-change-btn{font-size:10px;padding:3px 8px}
+
+  /* Evolutie-stadia rij: kleinere pips, scrollbaar als noodval */
+  .anim-evo-stages{overflow-x:auto;-webkit-overflow-scrolling:touch;padding-bottom:4px}
+  .anim-stage-pip{width:32px!important;height:32px!important;font-size:16px!important}
+  .anim-stage.current .anim-stage-pip{width:38px!important;height:38px!important;font-size:19px!important}
+  .anim-stage-label{font-size:7px;letter-spacing:.1px}
+  .anim-stage-req{font-size:6.5px}
+  .anim-stage:not(:last-child)::after{top:17px}
+
+  /* Dierenkeuze-grid: 4 kolommen i.p.v. 5 */
+  .anim-pick-grid{grid-template-columns:repeat(4,1fr)!important;gap:6px}
+  .anim-pick-btn{padding:8px 2px}
+  .anim-pick-emoji .anim-svg-wrap{width:30px!important;height:30px!important}
+  .anim-pick-name{font-size:9px}
+
+  /* XP-kaart na quiz */
+  .res-xp{padding:14px 14px}
+  .res-xp-avatar-ring{width:60px!important;height:60px!important}
+  .res-xp-num{font-size:26px}
+  .res-xp-lvl{font-size:12px;word-break:break-word}
+}
 </style>
 </head>
 <body>
