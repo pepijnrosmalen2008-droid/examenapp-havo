@@ -9360,10 +9360,10 @@ function openVak(id,_noHash){
         if(!vak)return;
         const dom=vak.domeinen.find(d=>d.id===did);
         if(!dom)return;
-        showDomPreview(this,vak,dom);
+        scheduleDomPreview(this,vak,dom);
       });
-      el.addEventListener('mouseleave',hideDomPreview);
-      el.addEventListener('click',hideDomPreview);
+      el.addEventListener('mouseleave',cancelDomPreview);
+      el.addEventListener('click',cancelDomPreview);
     });
   },100);
   initMf();
@@ -12882,6 +12882,15 @@ setInterval(renderLiveCount,32000);
 
 // ═══════ DOMAIN PREVIEW TOOLTIP ═══════
 let _previewEl=null;
+let _previewTimer=null;
+function scheduleDomPreview(trigger,vak,domein){
+  cancelDomPreview();
+  _previewTimer=setTimeout(()=>{ _previewTimer=null; showDomPreview(trigger,vak,domein); },650);
+}
+function cancelDomPreview(){
+  if(_previewTimer){clearTimeout(_previewTimer);_previewTimer=null;}
+  hideDomPreview();
+}
 function showDomPreview(trigger,vak,domein){
   hideDomPreview();
   const qPool=domein.sv||[];
