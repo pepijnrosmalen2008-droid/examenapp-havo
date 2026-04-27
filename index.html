@@ -3401,6 +3401,23 @@ html.dark .hsd-pill{background:var(--bg2);border-color:var(--bo2)}
 .mf-chip-txt{flex:1;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
 .mf-chip-x{background:none;border:none;color:var(--or);cursor:pointer;font-size:14px;padding:0;line-height:1;flex-shrink:0;font-family:var(--font)}
 
+/* ── NOTIFICATION PROMPT ─────────────────────── */
+.notif-prompt{position:fixed;bottom:80px;left:50%;transform:translateX(-50%) translateY(16px);width:calc(100% - 32px);max-width:420px;background:var(--s);border:1px solid rgba(var(--or-rgb),.3);border-radius:18px;padding:16px 16px 14px;box-shadow:0 12px 40px rgba(0,0,0,.35),0 0 0 1px rgba(var(--or-rgb),.08) inset;z-index:1200;display:none;animation:notifIn .38s cubic-bezier(.34,1.4,.64,1) forwards}
+.notif-prompt.visible{display:block}
+@keyframes notifIn{from{transform:translateX(-50%) translateY(16px);opacity:0}to{transform:translateX(-50%) translateY(0);opacity:1}}
+.np-head{display:flex;align-items:center;gap:10px;margin-bottom:8px}
+.np-ico{width:40px;height:40px;border-radius:12px;background:linear-gradient(135deg,var(--or),#f97316);display:flex;align-items:center;justify-content:center;font-size:20px;flex-shrink:0;box-shadow:0 4px 14px rgba(var(--or-rgb),.4)}
+.np-title{font-size:15px;font-weight:800;color:var(--dk);font-family:var(--font-head);line-height:1.2;flex:1}
+.np-title small{display:block;font-size:11px;font-weight:500;color:var(--mu);margin-top:1px}
+.np-close{background:none;border:none;font-size:17px;color:var(--mu);cursor:pointer;line-height:1;padding:4px;flex-shrink:0}
+.np-body{font-size:13px;color:var(--mu);line-height:1.55;margin-bottom:12px}
+.np-btns{display:flex;gap:8px}
+.np-allow{flex:1;background:var(--or);color:#fff;border:none;border-radius:11px;padding:12px;font-size:14px;font-weight:700;cursor:pointer;font-family:var(--font);transition:opacity .15s}
+.np-allow:active{opacity:.82}
+.np-later{padding:12px 14px;background:none;border:1.5px solid var(--bo);border-radius:11px;font-size:13px;color:var(--mu);cursor:pointer;font-family:var(--font);white-space:nowrap}
+/* Notification status row in profiel */
+.notif-status-row{display:flex;align-items:center;justify-content:space-between;padding:10px 0 0;border-top:1px solid var(--bo);margin-top:12px}
+
 /* ── MOBILE OVERRIDES (na desktop-regels, zodat cascade klopt) ─── */
 @media(max-width:640px){
   /* Profiel scherm */
@@ -4509,6 +4526,7 @@ html.dark .hsd-pill{background:var(--bg2);border-color:var(--bo2)}
     </div>
     <button class="pf-save-btn" onclick="saveProfileData()">Opslaan</button>
     <span class="pf-saved" id="pf-saved-msg">✓ Opgeslagen</span>
+    <div class="notif-status-row" id="notif-status-row"></div>
   </div>
 
   <!-- 4. SE Cijfers -->
@@ -4611,6 +4629,20 @@ html.dark .hsd-pill{background:var(--bg2);border-color:var(--bo2)}
       <button class="cookie-btn cookie-decline" onclick="cookieChoice(false)">Weigeren</button>
       <button class="cookie-btn cookie-accept" onclick="cookieChoice(true)">Accepteren</button>
     </div>
+  </div>
+</div>
+
+<!-- NOTIFICATION OPT-IN PROMPT -->
+<div id="notif-prompt" class="notif-prompt" role="dialog" aria-label="Meldingen inschakelen">
+  <div class="np-head">
+    <div class="np-ico">🔔</div>
+    <div class="np-title">Studieherinneringen<small>Gratis · altijd uit te zetten</small></div>
+    <button class="np-close" onclick="dismissNotifPrompt(true)" aria-label="Sluiten">✕</button>
+  </div>
+  <div class="np-body" id="np-body">Ontvang elke dag een herinnering om te oefenen en je streak te bewaren.</div>
+  <div class="np-btns">
+    <button class="np-allow" onclick="enableNotifications()">🔔 Zet aan</button>
+    <button class="np-later" onclick="dismissNotifPrompt(false)">Straks</button>
   </div>
 </div>
 
@@ -9379,6 +9411,7 @@ function openProfiel(){
   updateCloudStatusBar();
   buildMijnStats();
   renderProfileBadges();
+  renderNotifStatus();
   show('sc-profiel');
 }
 
@@ -15631,12 +15664,142 @@ window.addEventListener('load',()=>{
 })();
 </script>
 <script>
+// ══════════════════════════════════════════════════════════════
+// PUSH NOTIFICATIONS
+// ══════════════════════════════════════════════════════════════
+const _NK='slagio_notif_v1';
+const _NV='slagio_visit_cnt';
+
+function _nCfg(){try{return JSON.parse(localStorage.getItem(_NK)||'null');}catch{return null;}}
+function _nSave(c){try{localStorage.setItem(_NK,JSON.stringify(c));}catch{}}
+
+function initNotifications(){
+  if(!('Notification' in window))return;
+  const visits=parseInt(localStorage.getItem(_NV)||'0')+1;
+  localStorage.setItem(_NV,String(visits));
+  const cfg=_nCfg();
+  if(Notification.permission==='granted'&&cfg?.granted){_setupNotifSW();_checkInAppNotif();return;}
+  if(cfg?.denied||Notification.permission==='denied')return;
+  if(cfg?.snoozeUntil&&Date.now()<cfg.snoozeUntil)return;
+  const totalQ=(getStreak().totalQuizzes||0);
+  if(visits>=2&&totalQ>=1)setTimeout(_showNotifPrompt,5000);
+}
+
+function _showNotifPrompt(){
+  const el=document.getElementById('notif-prompt');
+  if(!el||el.classList.contains('visible'))return;
+  const streak=calcStreak().current;
+  const tgt=typeof getCountdownTarget==='function'?getCountdownTarget():null;
+  let body='Ontvang elke dag een herinnering om te oefenen en je streak te bewaren. Gratis, altijd uit te zetten.';
+  if(streak>1){
+    body=`Je hebt een streak van <strong>${streak} dagen</strong>! We herinneren je dagelijks zodat je hem niet verliest. 🔥`;
+  }else if(tgt?.datum){
+    const d=Math.ceil((new Date(tgt.datum)-new Date())/86400000);
+    if(d>0&&d<=30)body=`Nog <strong>${d} dagen</strong> tot ${tgt.vak||'je volgende examen'}! Dagelijkse herinneringen helpen je consistent te studeren.`;
+  }
+  const b=document.getElementById('np-body');
+  if(b)b.innerHTML=body;
+  el.classList.add('visible');
+}
+
+async function enableNotifications(){
+  const el=document.getElementById('notif-prompt');
+  if(el)el.classList.remove('visible');
+  if(!('Notification' in window)){showToast('Je browser ondersteunt geen meldingen','#ef4444',3000);return;}
+  try{
+    const perm=await Notification.requestPermission();
+    if(perm==='granted'){
+      _nSave({granted:true,grantedAt:Date.now()});
+      await _setupNotifSW();
+      renderNotifStatus();
+      showToast('✅ Meldingen ingeschakeld!','#4ade80',3500);
+    }else{
+      _nSave({denied:true});
+      showToast('Meldingen zijn uitgeschakeld in je browser.','#94a3b8',3000);
+    }
+  }catch(e){console.warn('Notification permission:',e);}
+}
+
+function dismissNotifPrompt(permanent){
+  const el=document.getElementById('notif-prompt');
+  if(el)el.classList.remove('visible');
+  const cfg=_nCfg()||{};
+  if(permanent)cfg.denied=true;
+  else cfg.snoozeUntil=Date.now()+3*24*3600000;
+  _nSave(cfg);
+}
+
+async function _setupNotifSW(){
+  if(!('serviceWorker' in navigator))return;
+  try{
+    const reg=await navigator.serviceWorker.ready;
+    // Periodic background sync: dagelijkse herinnering ook als app dicht is (Chrome PWA)
+    if('periodicSync' in reg){
+      try{
+        const status=await navigator.permissions.query({name:'periodic-background-sync'});
+        if(status.state==='granted'){
+          await reg.periodicSync.register('slagio-daily',{minInterval:22*3600000});
+        }
+      }catch{}
+    }
+    _sendNotifData(reg);
+  }catch{}
+}
+
+function _sendNotifData(reg){
+  try{
+    const streak=calcStreak().current||0;
+    const tgt=typeof getCountdownTarget==='function'?getCountdownTarget():null;
+    let examDays=null;
+    if(tgt?.datum){const d=Math.ceil((new Date(tgt.datum)-new Date())/86400000);if(d>0&&d<=30)examDays=d;}
+    reg.active?.postMessage({type:'NOTIF_CONFIG',config:{enabled:true,streak,examDays,lastShown:null}});
+  }catch{}
+}
+
+function _checkInAppNotif(){
+  if(Notification.permission!=='granted')return;
+  const last=parseInt(localStorage.getItem('slagio_notif_shown')||'0');
+  if(Date.now()-last<20*3600000)return;
+  const today=new Date();today.setHours(0,0,0,0);
+  const todayStr=today.toISOString().slice(0,10);
+  const days=(getStreak().days||[]);
+  if(days.includes(todayStr))return;
+  const cur=calcStreak().current;
+  if(cur<1)return;
+  try{
+    new Notification('Slagio 📚',{
+      body:`Je hebt een streak van ${cur} dag${cur===1?'':'en'}! Oefen vandaag om hem te bewaren. 🔥`,
+      icon:'/icon-192.png',badge:'/icon-192.png',tag:'slagio-daily'
+    });
+    localStorage.setItem('slagio_notif_shown',String(Date.now()));
+  }catch{}
+}
+
+function renderNotifStatus(){
+  const el=document.getElementById('notif-status-row');
+  if(!el)return;
+  const cfg=_nCfg();
+  const granted=cfg?.granted&&Notification.permission==='granted';
+  el.innerHTML=granted
+    ?`<span style="font-size:13px;color:var(--mu)">🔔 Meldingen <strong style="color:var(--or)">aan</strong></span>
+       <button onclick="disableNotifications()" style="font-size:11px;color:var(--mu);background:none;border:1px solid var(--bo);border-radius:7px;padding:4px 10px;cursor:pointer;font-family:var(--font)">Uitzetten</button>`
+    :`<span style="font-size:13px;color:var(--mu)">🔕 Meldingen uit</span>
+       <button onclick="_showNotifPrompt()" style="font-size:11px;color:var(--or);background:rgba(var(--or-rgb),.1);border:1px solid rgba(var(--or-rgb),.3);border-radius:7px;padding:4px 10px;cursor:pointer;font-family:var(--font)">Inschakelen</button>`;
+}
+
+function disableNotifications(){
+  _nSave({denied:true});
+  renderNotifStatus();
+  showToast('🔕 Meldingen uitgeschakeld','#94a3b8',2500);
+}
+
 if('serviceWorker' in navigator){
   window.addEventListener('load',()=>{
     navigator.serviceWorker.register('/sw.js',{updateViaCache:'none'}).then(reg=>{
       reg.update();
+      // Init notifications after SW ready
+      navigator.serviceWorker.ready.then(()=>initNotifications());
     }).catch(()=>{});
-    // Reload automatically when new service worker takes control (clears stale PWA cache)
     navigator.serviceWorker.addEventListener('controllerchange',()=>window.location.reload());
   });
 }
