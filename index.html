@@ -1813,6 +1813,12 @@ html.dark .qb{background:#2e3550}
 .lc-havo,.lc-vwo,.lc-disabled,.level-card{} .lc-disabled{opacity:.4;cursor:default;pointer-events:none}
 .wlc-social-proof{display:inline-block;font-size:13px;color:rgba(255,255,255,.45);margin-top:18px;letter-spacing:.1px}
 .wlc-social-proof strong{color:rgba(255,255,255,.7);font-weight:700}
+.wlc-quick-start{display:none;gap:10px;margin-top:22px;justify-content:center}
+.wlc-qs-btn{padding:15px 28px;border-radius:14px;border:none;font-size:16px;font-weight:800;font-family:var(--font-head);cursor:pointer;letter-spacing:.1px;transition:transform .18s,opacity .18s}
+.wlc-qs-btn:active{transform:scale(.95)}
+.wlc-qs-havo{background:linear-gradient(135deg,#E85C0D,#f97316);color:#fff;box-shadow:0 6px 22px rgba(232,92,13,.4)}
+.wlc-qs-vwo{background:rgba(167,139,250,.15);color:#c4b5fd;border:1.5px solid rgba(167,139,250,.35)}
+@media(max-width:640px){.wlc-quick-start{display:flex}.how-it-works{display:none}}
 @media(max-width:620px){
   .wlc-hero{padding:52px 16px 40px}
   .wlc-h1{font-size:56px;letter-spacing:-3px;line-height:.92}
@@ -3514,6 +3520,10 @@ html.dark .hsd-pill{background:var(--bg2);border-color:var(--bo2)}
   <h1 class="wlc-h1">Jij gaat<span class="wlc-h1-accent">slagen.</span></h1>
   <p class="wlc-sub">Quizzen, flashcards, race mode, samenvattingen &amp; alle echte eindexamens 2019–2025 — volledig gratis.</p>
   <div class="wlc-social-proof">⭐⭐⭐⭐⭐ &nbsp;<strong>Gebruikt door duizenden leerlingen</strong></div>
+  <div class="wlc-quick-start">
+    <button class="wlc-qs-btn wlc-qs-havo" onclick="chooseLevel('havo')">HAVO starten →</button>
+    <button class="wlc-qs-btn wlc-qs-vwo" onclick="chooseLevel('vwo')">VWO starten →</button>
+  </div>
   <div class="wlc-feats">
     <span class="wlc-feat"><span class="wlc-feat-chk">✓</span> CE-domeinen</span>
     <span class="wlc-feat"><span class="wlc-feat-chk">✓</span> Snelle quiz</span>
