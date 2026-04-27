@@ -386,8 +386,17 @@ h1,h2,h3,h4{font-family:var(--font-head);line-height:1.2;letter-spacing:-.3px}
 .dock-btn:hover::after{opacity:1}
 .nav-dock .theme-btn{border:none;background:transparent;width:38px;height:38px;border-radius:10px}
 .nav-dock .theme-btn:hover{background:rgba(var(--or-rgb),.12);transform:scale(1.15) translateY(-2px)}
-.dock-avatar{width:24px;height:24px;border-radius:50%;background:rgba(var(--or-rgb),.18);color:var(--or);font-size:15px;display:flex;align-items:center;justify-content:center;line-height:1}
+.dock-avatar{width:24px;height:24px;border-radius:50%;background:rgba(var(--or-rgb),.18);color:var(--or);font-size:15px;display:flex;align-items:center;justify-content:center;line-height:1;overflow:hidden}
 .dock-avatar-ini{font-size:10px;font-weight:800;background:var(--or);color:#fff}
+/* ── AVATAR SVG SCALING FIX ──────────────────────
+   Animal SVGs have viewBox but no width/height.
+   Without this the browser renders them at 300×150px
+   and they overflow every container on mobile. */
+.anim-svg-wrap{display:inline-flex;align-items:center;justify-content:center;flex-shrink:0;overflow:hidden}
+.anim-svg-wrap svg{width:100%;height:100%;display:block;flex-shrink:0}
+.lb-pod-avatar .anim-svg-wrap svg,.res-xp-avatar-ring .anim-svg-wrap svg{width:100%;height:100%}
+.anim-pick-emoji .anim-svg-wrap{width:36px;height:36px}
+.anim-pick-emoji .anim-svg-wrap svg{width:100%;height:100%}
 @media(max-width:640px){.nav-dock{display:none!important}}
 .bk{color:var(--mu);font-size:14px;cursor:pointer;padding:6px 14px;border-radius:10px;border:1px solid var(--bo);background:var(--s);transition:all .2s;font-family:var(--font)}
 .bk:hover{background:var(--bg2)}
@@ -2674,7 +2683,7 @@ html.dark .calc-btn{background:#2e3550}
 .lb-podium{display:flex;justify-content:center;align-items:flex-end;gap:8px;margin-bottom:28px}
 .lb-pod{display:flex;flex-direction:column;align-items:center;gap:4px}
 .lb-pod-medal{font-size:22px}
-.lb-pod-avatar{font-size:32px;width:54px;height:54px;border-radius:50%;border:3px solid var(--bo);background:var(--bg2);display:flex;align-items:center;justify-content:center;position:relative}
+.lb-pod-avatar{font-size:32px;width:54px;height:54px;border-radius:50%;border:3px solid var(--bo);background:var(--bg2);display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden}
 .lb-pod-avatar.gold{border-color:#F59E0B}
 .lb-pod-avatar.silver{border-color:#9CA3AF}
 .lb-pod-avatar.bronze{border-color:#CD7C3F}
@@ -2688,7 +2697,7 @@ html.dark .calc-btn{background:#2e3550}
 .lb-row{display:flex;align-items:center;gap:12px;background:var(--s);border:1px solid var(--bo);border-radius:14px;padding:12px 14px;transition:all .18s}
 .lb-row.me{border-color:var(--or);background:var(--orl)}
 .lb-av-wrap{position:relative;flex-shrink:0}
-.lb-av{font-size:28px;width:50px;height:50px;border-radius:50%;background:var(--bg2);border:2.5px solid var(--bo);display:flex;align-items:center;justify-content:center;flex-shrink:0;transition:transform .2s}
+.lb-av{font-size:28px;width:50px;height:50px;border-radius:50%;background:var(--bg2);border:2.5px solid var(--bo);display:flex;align-items:center;justify-content:center;flex-shrink:0;transition:transform .2s;overflow:hidden}
 .lb-row:hover .lb-av{transform:scale(1.1)}
 .lb-av-rank{position:absolute;bottom:-3px;right:-3px;min-width:20px;height:20px;border-radius:10px;background:var(--mu);color:#fff;font-size:10px;font-weight:800;display:flex;align-items:center;justify-content:center;border:2px solid var(--s);font-family:var(--font);padding:0 4px;line-height:1}
 .lb-row.me .lb-av-rank{background:var(--or)}
@@ -2983,7 +2992,7 @@ html.dark .auth-ok{background:#0F2D1C;border-color:#166534;color:#86EFAC}
 .res-xp-sub{font-size:12px;color:var(--mu);margin-top:4px}
 .res-xp-lvl{font-size:13px;font-weight:700;color:var(--dk);margin-top:12px}
 .res-xp-avatar-wrap{display:flex;flex-direction:column;align-items:center;margin-bottom:14px}
-.res-xp-avatar-ring{width:76px;height:76px;border-radius:50%;background:rgba(var(--or-rgb),.1);border:2px solid rgba(var(--or-rgb),.3);display:flex;align-items:center;justify-content:center;box-shadow:0 0 0 4px rgba(var(--or-rgb),.12),0 6px 22px rgba(var(--or-rgb),.3);animation:evoGlow 3s ease-in-out infinite}
+.res-xp-avatar-ring{width:76px;height:76px;border-radius:50%;background:rgba(var(--or-rgb),.1);border:2px solid rgba(var(--or-rgb),.3);display:flex;align-items:center;justify-content:center;box-shadow:0 0 0 4px rgba(var(--or-rgb),.12),0 6px 22px rgba(var(--or-rgb),.3);animation:evoGlow 3s ease-in-out infinite;overflow:hidden}
 .res-xp-avatar-lbl{font-size:11px;color:var(--mu);margin-top:7px;font-weight:600;letter-spacing:.2px}
 .res-xp-journey-mini{display:flex;align-items:center;margin-top:10px;margin-bottom:2px}
 .res-xp-jdot{display:flex;justify-content:center;align-items:center;flex:0 0 auto}
@@ -8798,7 +8807,8 @@ function getAnimalDisplay(animalId,stageIdx,size){
   const a=getAnimalById(animalId);
   if(!a)return'<span style="font-size:'+size+'px">🐾</span>';
   if(a.svg&&a.svg[stageIdx]){
-    return'<span class="anim-svg-wrap" style="width:'+size+'px;height:'+size+'px;display:inline-flex;align-items:center;justify-content:center">'+a.svg[stageIdx]+'</span>';
+    // Inline style sets container size; CSS .anim-svg-wrap svg makes the SVG fill it
+    return'<span class="anim-svg-wrap" style="width:'+size+'px;height:'+size+'px">'+a.svg[stageIdx]+'</span>';
   }
   return'<span style="font-size:'+size+'px;line-height:1">'+a.s[stageIdx]+'</span>';
 }
@@ -15217,7 +15227,7 @@ function updateBottomNav(id){
       const _p=JSON.parse(localStorage.getItem(PROF_KEY)||'{}');
       if(_p.animalId){
         const _si=getAnimalStageIdx(getTotalXP());
-        bnavIcon.innerHTML=`<span style="display:flex;align-items:center;justify-content:center;width:26px;height:26px;border-radius:50%;background:rgba(var(--or-rgb),.15);border:1.5px solid rgba(var(--or-rgb),.3)">${getAnimalDisplay(_p.animalId,_si,18)}</span>`;
+        bnavIcon.innerHTML=`<span style="display:flex;align-items:center;justify-content:center;width:26px;height:26px;border-radius:50%;background:rgba(var(--or-rgb),.15);border:1.5px solid rgba(var(--or-rgb),.3);overflow:hidden">${getAnimalDisplay(_p.animalId,_si,22)}</span>`;
       }
     }catch(e){}
   }
