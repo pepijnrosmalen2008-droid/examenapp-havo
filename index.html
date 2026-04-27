@@ -3173,6 +3173,24 @@ html.dark .hsd-pill{background:var(--bg2);border-color:var(--bo2)}
 .badge-prog-wrap{width:100%;height:3px;background:var(--bo2);border-radius:2px;margin-top:4px;overflow:hidden}
 .badge-prog-fill{height:100%;border-radius:2px;transition:width .5s}
 .badge-prog-lbl{font-size:9px;color:var(--mu);text-align:center;margin-top:2px;font-weight:600}
+/* ── LESMETHODE FILTER ──────────────────────────────────── */
+.mf-card{border:1.5px solid var(--bo);border-radius:14px;background:var(--s);margin-bottom:14px;overflow:hidden}
+.mf-head{display:flex;align-items:center;gap:10px;padding:12px 14px;cursor:pointer;user-select:none}
+.mf-head-icon{font-size:16px;flex-shrink:0}
+.mf-head-txt{flex:1;min-width:0}
+.mf-head-title{font-size:13px;font-weight:800;color:var(--dk)}
+.mf-head-sub{font-size:11px;color:var(--mu);margin-top:1px}
+.mf-head-arr{font-size:11px;color:var(--mu);transition:transform .2s;flex-shrink:0}
+.mf-card.open .mf-head-arr{transform:rotate(180deg)}
+.mf-body{display:none;padding:0 14px 14px}
+.mf-card.open .mf-body{display:block}
+.mf-selects{display:flex;gap:8px;flex-wrap:wrap}
+.mf-sel{flex:1;min-width:140px;padding:8px 10px;border:1.5px solid var(--bo);border-radius:9px;background:var(--bg);color:var(--dk);font-size:12px;font-weight:600;font-family:var(--font);cursor:pointer;-webkit-appearance:none;appearance:none;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpolyline points='6 9 12 15 18 9' fill='none' stroke='%23888' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 8px center;background-size:14px;padding-right:28px}
+.mf-sel:focus{border-color:var(--or);outline:none}
+.mf-sel:disabled{opacity:.45;cursor:default}
+.mf-chip{display:none;align-items:center;gap:6px;background:rgba(var(--or-rgb),.1);border:1px solid rgba(var(--or-rgb),.3);border-radius:20px;padding:5px 10px;margin-top:10px;font-size:11px;color:var(--or);font-weight:700}
+.mf-chip-txt{flex:1;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.mf-chip-x{background:none;border:none;color:var(--or);cursor:pointer;font-size:14px;padding:0;line-height:1;flex-shrink:0;font-family:var(--font)}
 </style>
 </head>
 <body>
@@ -3646,6 +3664,30 @@ html.dark .hsd-pill{background:var(--bg2);border-color:var(--bo2)}
     </div>
   </div>
   <p class="sec-label">Domeinen &amp; syllabus</p>
+  <div id="methode-filter" class="mf-card" style="display:none">
+    <div class="mf-head" onclick="this.closest('.mf-card').classList.toggle('open')">
+      <span class="mf-head-icon">📚</span>
+      <div class="mf-head-txt">
+        <div class="mf-head-title">Filter op lesmethode</div>
+        <div class="mf-head-sub">Toon domeinen die passen bij het hoofdstuk dat je nu leert</div>
+      </div>
+      <span class="mf-head-arr" id="mf-arr">▼</span>
+    </div>
+    <div class="mf-body">
+      <div class="mf-selects">
+        <select id="mf-methode" class="mf-sel" onchange="onMfMethodeChange()">
+          <option value="">— Kies methode —</option>
+        </select>
+        <select id="mf-hoofdstuk" class="mf-sel" onchange="onMfHoofdstukChange()" disabled style="display:none">
+          <option value="">— Kies hoofdstuk —</option>
+        </select>
+      </div>
+      <div class="mf-chip" id="mf-chip">
+        <span class="mf-chip-txt" id="mf-chip-txt"></span>
+        <button class="mf-chip-x" onclick="resetMf()" title="Filter wissen">✕</button>
+      </div>
+    </div>
+  </div>
   <div id="dlist" class="dl"></div>
 </div>
 </div>
@@ -4328,6 +4370,464 @@ html.dark .hsd-pill{background:var(--bg2);border-color:var(--bo2)}
 <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.101.1/dist/umd/supabase.js" integrity="sha256-nemRIwEQKZy7uoOYcUFEnleZl6kKX8B3zf4KpR6NVT0=" crossorigin="anonymous"></script>
 <script>
 // ═══════ DATA ═══════
+// ── LESMETHODES: schoolboek → hoofdstuk → CE-domeinen ────
+const LESMETHODES={
+  bi:{
+    havo:[
+      {id:'bvj',naam:'Biologie voor Jou',uitgever:'Malmberg',hoofdstukken:[
+        {nr:1,titel:'Cellen en moleculen',domeinen:['A','M']},
+        {nr:2,titel:'Stofwisseling',domeinen:['M','O']},
+        {nr:3,titel:'Erfelijkheid en biotechnologie',domeinen:['M']},
+        {nr:4,titel:'Evolutie',domeinen:['P']},
+        {nr:5,titel:'Regeling en gedrag',domeinen:['O']},
+        {nr:6,titel:'Ecosystemen en duurzaamheid',domeinen:['P']}
+      ]},
+      {id:'nectar',naam:'Nectar',uitgever:'Noordhoff',hoofdstukken:[
+        {nr:1,titel:'Cellen en weefsels',domeinen:['A','M']},
+        {nr:2,titel:'Fotosynthese en celademhaling',domeinen:['M']},
+        {nr:3,titel:'Transport en uitscheiding',domeinen:['O']},
+        {nr:4,titel:'Voortplanting en ontwikkeling',domeinen:['O','M']},
+        {nr:5,titel:'Erfelijkheid',domeinen:['M']},
+        {nr:6,titel:'Evolutie',domeinen:['P']},
+        {nr:7,titel:'Ecosystemen en duurzaamheid',domeinen:['P']}
+      ]},
+      {id:'biogenie',naam:'BioGenie',uitgever:'ThiemeMeulenhoff',hoofdstukken:[
+        {nr:1,titel:'Van molecule tot organisme',domeinen:['M','O']},
+        {nr:2,titel:'Stofwisseling en regeling',domeinen:['O']},
+        {nr:3,titel:'Erfelijkheid en biotechnologie',domeinen:['M']},
+        {nr:4,titel:'Evolutie en gedrag',domeinen:['P']},
+        {nr:5,titel:'Ecosystemen en milieu',domeinen:['P']}
+      ]}
+    ],
+    vwo:[
+      {id:'bvj-vwo',naam:'Biologie voor Jou',uitgever:'Malmberg',hoofdstukken:[
+        {nr:1,titel:'Cellen en moleculen',domeinen:['B','C']},
+        {nr:2,titel:'Stofwisseling',domeinen:['C','D']},
+        {nr:3,titel:'Erfelijkheid',domeinen:['B']},
+        {nr:4,titel:'Evolutie',domeinen:['D']},
+        {nr:5,titel:'Regeling en afweer',domeinen:['C']},
+        {nr:6,titel:'Ecologie',domeinen:['E']}
+      ]},
+      {id:'nectar-vwo',naam:'Nectar',uitgever:'Noordhoff',hoofdstukken:[
+        {nr:1,titel:'Cellen en moleculen',domeinen:['B','C']},
+        {nr:2,titel:'Stofwisseling',domeinen:['C']},
+        {nr:3,titel:'Erfelijkheid',domeinen:['B']},
+        {nr:4,titel:'Evolutie',domeinen:['D']},
+        {nr:5,titel:'Regeling',domeinen:['C']},
+        {nr:6,titel:'Ecologie',domeinen:['E']}
+      ]}
+    ]
+  },
+  wa:{
+    havo:[
+      {id:'gnr-wa',naam:'Getal & Ruimte',uitgever:'Noordhoff',hoofdstukken:[
+        {nr:1,titel:'Functies en grafieken',domeinen:['C']},
+        {nr:2,titel:'Kansen',domeinen:['E']},
+        {nr:3,titel:'Statistiek',domeinen:['E']},
+        {nr:4,titel:'Groeien en afnemen',domeinen:['C','D']},
+        {nr:5,titel:'Differentiëren',domeinen:['D']},
+        {nr:6,titel:'Algebra',domeinen:['B']},
+        {nr:7,titel:'Verbanden en vergelijkingen',domeinen:['B','C']}
+      ]},
+      {id:'mw-wa',naam:'Moderne Wiskunde',uitgever:'Pearson',hoofdstukken:[
+        {nr:1,titel:'Verbanden',domeinen:['C']},
+        {nr:2,titel:'Groeien en afnemen',domeinen:['C','D']},
+        {nr:3,titel:'Statistiek',domeinen:['E']},
+        {nr:4,titel:'Kansen',domeinen:['E']},
+        {nr:5,titel:'Algebra',domeinen:['B']},
+        {nr:6,titel:'Differentiëren',domeinen:['D']}
+      ]}
+    ],
+    vwo:[
+      {id:'gnr-wa-vwo',naam:'Getal & Ruimte',uitgever:'Noordhoff',hoofdstukken:[
+        {nr:1,titel:'Functies en grafieken',domeinen:['C']},
+        {nr:2,titel:'Differentiëren',domeinen:['D']},
+        {nr:3,titel:'Statistiek en kansen',domeinen:['B']},
+        {nr:4,titel:'Groeien en logaritmen',domeinen:['C','D']},
+        {nr:5,titel:'Combinatoriek',domeinen:['B']}
+      ]},
+      {id:'mw-wa-vwo',naam:'Moderne Wiskunde',uitgever:'Pearson',hoofdstukken:[
+        {nr:1,titel:'Algebra',domeinen:['B']},
+        {nr:2,titel:'Verbanden',domeinen:['C']},
+        {nr:3,titel:'Differentiëren',domeinen:['D']},
+        {nr:4,titel:'Statistiek',domeinen:['B']},
+        {nr:5,titel:'Kansen',domeinen:['B']}
+      ]}
+    ]
+  },
+  wb:{
+    havo:[
+      {id:'gnr-wb',naam:'Getal & Ruimte',uitgever:'Noordhoff',hoofdstukken:[
+        {nr:1,titel:'Goniometrische functies',domeinen:['C']},
+        {nr:2,titel:'Algebra en vergelijkingen',domeinen:['B']},
+        {nr:3,titel:'Differentiëren',domeinen:['D']},
+        {nr:4,titel:'Integreren',domeinen:['D']},
+        {nr:5,titel:'Analytische meetkunde',domeinen:['E']},
+        {nr:6,titel:'Ruimtemeetkunde',domeinen:['E']}
+      ]},
+      {id:'mw-wb',naam:'Moderne Wiskunde',uitgever:'Pearson',hoofdstukken:[
+        {nr:1,titel:'Algebraïsche vaardigheden',domeinen:['B']},
+        {nr:2,titel:'Functies',domeinen:['C']},
+        {nr:3,titel:'Differentiëren',domeinen:['D']},
+        {nr:4,titel:'Integreren',domeinen:['D']},
+        {nr:5,titel:'Meetkunde',domeinen:['E']}
+      ]}
+    ],
+    vwo:[
+      {id:'gnr-wb-vwo',naam:'Getal & Ruimte',uitgever:'Noordhoff',hoofdstukken:[
+        {nr:1,titel:'Goniometrie',domeinen:['C']},
+        {nr:2,titel:'Algebra',domeinen:['B']},
+        {nr:3,titel:'Differentiëren',domeinen:['D']},
+        {nr:4,titel:'Integreren',domeinen:['D']},
+        {nr:5,titel:'Meetkunde',domeinen:['C']}
+      ]},
+      {id:'mw-wb-vwo',naam:'Moderne Wiskunde',uitgever:'Pearson',hoofdstukken:[
+        {nr:1,titel:'Algebra',domeinen:['B']},
+        {nr:2,titel:'Goniometrie',domeinen:['C']},
+        {nr:3,titel:'Differentiëren',domeinen:['D']},
+        {nr:4,titel:'Integreren',domeinen:['D']},
+        {nr:5,titel:'Meetkunde',domeinen:['C']}
+      ]}
+    ]
+  },
+  sk:{
+    havo:[
+      {id:'co',naam:'Chemie Overal',uitgever:'ThiemeMeulenhoff',hoofdstukken:[
+        {nr:1,titel:'Stoffen en eigenschappen',domeinen:['A','B']},
+        {nr:2,titel:'Atoommodel en binding',domeinen:['B']},
+        {nr:3,titel:'Chemische reacties',domeinen:['C']},
+        {nr:4,titel:'Zuren en basen',domeinen:['C']},
+        {nr:5,titel:'Redoxreacties',domeinen:['C']},
+        {nr:6,titel:'Koolstofchemie organisch',domeinen:['D']},
+        {nr:7,titel:'Reacties van koolstofverbindingen',domeinen:['D']},
+        {nr:8,titel:'Chemie, milieu en mens',domeinen:['E']}
+      ]},
+      {id:'chemie-m',naam:'Chemie',uitgever:'Malmberg',hoofdstukken:[
+        {nr:1,titel:'Atoom en mol',domeinen:['B']},
+        {nr:2,titel:'Chemische binding',domeinen:['B']},
+        {nr:3,titel:'Chemische reacties',domeinen:['C']},
+        {nr:4,titel:'Evenwichtsreacties',domeinen:['C']},
+        {nr:5,titel:'Zuren en basen',domeinen:['C']},
+        {nr:6,titel:'Organische chemie',domeinen:['D']},
+        {nr:7,titel:'Polymeren en duurzaamheid',domeinen:['D','E']}
+      ]}
+    ],
+    vwo:[
+      {id:'co-vwo',naam:'Chemie Overal',uitgever:'ThiemeMeulenhoff',hoofdstukken:[
+        {nr:1,titel:'Atoom en binding',domeinen:['B']},
+        {nr:2,titel:'Chemische reacties en evenwicht',domeinen:['C']},
+        {nr:3,titel:'Zuren, basen en zout',domeinen:['C']},
+        {nr:4,titel:'Redox en elektrochemie',domeinen:['D']},
+        {nr:5,titel:'Organische chemie',domeinen:['D']},
+        {nr:6,titel:'Chemie en duurzaamheid',domeinen:['E']}
+      ]}
+    ]
+  },
+  na:{
+    havo:[
+      {id:'no',naam:'Natuurkunde Overal',uitgever:'ThiemeMeulenhoff',hoofdstukken:[
+        {nr:1,titel:'Krachten en beweging',domeinen:['C']},
+        {nr:2,titel:'Energie en arbeid',domeinen:['C']},
+        {nr:3,titel:'Elektrisch circuit',domeinen:['D']},
+        {nr:4,titel:'Golven en geluid',domeinen:['B']},
+        {nr:5,titel:'Licht en optica',domeinen:['B']},
+        {nr:6,titel:'Elektromagnetisme',domeinen:['D']},
+        {nr:7,titel:'Atoom- en kernfysica',domeinen:['E']}
+      ]},
+      {id:'pulsar',naam:'Pulsar',uitgever:'Noordhoff',hoofdstukken:[
+        {nr:1,titel:'Krachten en beweging',domeinen:['C']},
+        {nr:2,titel:'Elektrisch circuit',domeinen:['D']},
+        {nr:3,titel:'Golven',domeinen:['B']},
+        {nr:4,titel:'Licht en kleur',domeinen:['B']},
+        {nr:5,titel:'Elektrisch en magnetisch veld',domeinen:['D']},
+        {nr:6,titel:'Straling en kernfysica',domeinen:['E']}
+      ]}
+    ],
+    vwo:[
+      {id:'no-vwo',naam:'Natuurkunde Overal',uitgever:'ThiemeMeulenhoff',hoofdstukken:[
+        {nr:1,titel:'Beweging en krachten',domeinen:['C']},
+        {nr:2,titel:'Golven',domeinen:['B']},
+        {nr:3,titel:'Elektrisch circuit',domeinen:['D']},
+        {nr:4,titel:'Elektromagnetisme',domeinen:['D','E']},
+        {nr:5,titel:'Kwantumfysica',domeinen:['E']},
+        {nr:6,titel:'Relativiteit',domeinen:['F']}
+      ]},
+      {id:'pulsar-vwo',naam:'Pulsar',uitgever:'Noordhoff',hoofdstukken:[
+        {nr:1,titel:'Krachten en beweging',domeinen:['C']},
+        {nr:2,titel:'Golven',domeinen:['B']},
+        {nr:3,titel:'Elektriciteit',domeinen:['D']},
+        {nr:4,titel:'Magnetisme',domeinen:['D','E']},
+        {nr:5,titel:'Kwantum en kern',domeinen:['E','F']}
+      ]}
+    ]
+  },
+  ec:{
+    havo:[
+      {id:'pe',naam:'Praktische Economie',uitgever:'Noordhoff',hoofdstukken:[
+        {nr:1,titel:'Schaarste en keuzen',domeinen:['B']},
+        {nr:2,titel:'Vraag en aanbod',domeinen:['C']},
+        {nr:3,titel:'Marktvormen',domeinen:['C']},
+        {nr:4,titel:'Overheidsbeleid',domeinen:['D']},
+        {nr:5,titel:'Conjunctuur en arbeidsmarkt',domeinen:['E']},
+        {nr:6,titel:'Internationale handel',domeinen:['E']}
+      ]},
+      {id:'pincode',naam:'Pincode',uitgever:'ThiemeMeulenhoff',hoofdstukken:[
+        {nr:1,titel:'Schaarste en keuzen',domeinen:['B']},
+        {nr:2,titel:'De markt',domeinen:['C']},
+        {nr:3,titel:'Bedrijven en concurrentie',domeinen:['C']},
+        {nr:4,titel:'De overheid',domeinen:['D']},
+        {nr:5,titel:'Groei en conjunctuur',domeinen:['E']}
+      ]},
+      {id:'eic',naam:'Economie in Context',uitgever:'Boom',hoofdstukken:[
+        {nr:1,titel:'Economisch denken en schaarste',domeinen:['B']},
+        {nr:2,titel:'Markt en prijs',domeinen:['C']},
+        {nr:3,titel:'Overheid en marktfalen',domeinen:['D']},
+        {nr:4,titel:'Macro-economie en conjunctuur',domeinen:['E']}
+      ]}
+    ],
+    vwo:[
+      {id:'pe-vwo',naam:'Praktische Economie',uitgever:'Noordhoff',hoofdstukken:[
+        {nr:1,titel:'Schaarste en economisch denken',domeinen:['A']},
+        {nr:2,titel:'Markt, prijs en conjunctuur',domeinen:['B']},
+        {nr:3,titel:'Internationale economie',domeinen:['A','B']}
+      ]},
+      {id:'pincode-vwo',naam:'Pincode',uitgever:'ThiemeMeulenhoff',hoofdstukken:[
+        {nr:1,titel:'Economisch denken',domeinen:['A']},
+        {nr:2,titel:'Markt en conjunctuur',domeinen:['B']},
+        {nr:3,titel:'Internationale economie',domeinen:['A','B']}
+      ]}
+    ]
+  },
+  be:{
+    havo:[
+      {id:'percent',naam:'Percent',uitgever:'Malmberg',hoofdstukken:[
+        {nr:1,titel:'Rechtspersonen en rechtsvormen',domeinen:['B']},
+        {nr:2,titel:'Organisatiestructuur',domeinen:['C']},
+        {nr:3,titel:'Marketing en marktonderzoek',domeinen:['D']},
+        {nr:4,titel:'Investeren',domeinen:['E']},
+        {nr:5,titel:'Financiering en kapitaal',domeinen:['E']},
+        {nr:6,titel:'Jaarrekening en verslaggeving',domeinen:['F']}
+      ]},
+      {id:'beco',naam:'Bedrijfseconomie voor de handel',uitgever:'ThiemeMeulenhoff',hoofdstukken:[
+        {nr:1,titel:'Rechtsvormen',domeinen:['B']},
+        {nr:2,titel:'Interne organisatie',domeinen:['C']},
+        {nr:3,titel:'Marketing',domeinen:['D']},
+        {nr:4,titel:'Financieel beleid',domeinen:['E']},
+        {nr:5,titel:'Administratie en verslaggeving',domeinen:['F']}
+      ]}
+    ]
+  },
+  nl:{
+    havo:[
+      {id:'nn',naam:'Nieuw Nederlands',uitgever:'Noordhoff',hoofdstukken:[
+        {nr:1,titel:'Leesvaardigheid',domeinen:['A']},
+        {nr:2,titel:'Mondeling',domeinen:['B']},
+        {nr:3,titel:'Schrijfvaardigheid',domeinen:['C']},
+        {nr:4,titel:'Samenvatten',domeinen:['D']},
+        {nr:5,titel:'Argumentatieve vaardigheden',domeinen:['E']},
+        {nr:6,titel:'Literatuur',domeinen:['F']}
+      ]},
+      {id:'taallijnen',naam:'Taallijnen',uitgever:'ThiemeMeulenhoff',hoofdstukken:[
+        {nr:1,titel:'Leesvaardigheid',domeinen:['A']},
+        {nr:2,titel:'Mondeling communiceren',domeinen:['B']},
+        {nr:3,titel:'Schrijfvaardigheid',domeinen:['C']},
+        {nr:4,titel:'Samenvatten',domeinen:['D']},
+        {nr:5,titel:'Argumentatie',domeinen:['E']},
+        {nr:6,titel:'Literatuur',domeinen:['F']}
+      ]},
+      {id:'talent',naam:'Talent',uitgever:'Malmberg',hoofdstukken:[
+        {nr:1,titel:'Leesvaardigheid',domeinen:['A']},
+        {nr:2,titel:'Mondeling communiceren',domeinen:['B']},
+        {nr:3,titel:'Schrijfvaardigheid',domeinen:['C']},
+        {nr:4,titel:'Samenvatten',domeinen:['D']},
+        {nr:5,titel:'Argumentatie',domeinen:['E']},
+        {nr:6,titel:'Literatuur',domeinen:['F']}
+      ]}
+    ],
+    vwo:[
+      {id:'nn-vwo',naam:'Nieuw Nederlands',uitgever:'Noordhoff',hoofdstukken:[
+        {nr:1,titel:'Leesvaardigheid',domeinen:['A']},
+        {nr:2,titel:'Mondeling',domeinen:['B']},
+        {nr:3,titel:'Schrijfvaardigheid',domeinen:['C']},
+        {nr:4,titel:'Argumentatieve vaardigheden',domeinen:['D']},
+        {nr:5,titel:'Literatuur',domeinen:['E']}
+      ]},
+      {id:'taallijnen-vwo',naam:'Taallijnen',uitgever:'ThiemeMeulenhoff',hoofdstukken:[
+        {nr:1,titel:'Leesvaardigheid',domeinen:['A']},
+        {nr:2,titel:'Mondeling',domeinen:['B']},
+        {nr:3,titel:'Schrijfvaardigheid',domeinen:['C']},
+        {nr:4,titel:'Argumentatieve vaardigheden',domeinen:['D']},
+        {nr:5,titel:'Literatuur',domeinen:['E']}
+      ]}
+    ]
+  },
+  en:{
+    havo:[
+      {id:'ss',naam:'Stepping Stones',uitgever:'Noordhoff',hoofdstukken:[
+        {nr:1,titel:'Vocabulary & Grammar',domeinen:['A']},
+        {nr:2,titel:'Reading',domeinen:['B']},
+        {nr:3,titel:'Listening & Viewing',domeinen:['C']},
+        {nr:4,titel:'Speaking',domeinen:['D']},
+        {nr:5,titel:'Writing',domeinen:['E']},
+        {nr:6,titel:'Literature',domeinen:['F']}
+      ]},
+      {id:'pw',naam:'Password',uitgever:'ThiemeMeulenhoff',hoofdstukken:[
+        {nr:1,titel:'Vocabulary & Grammar',domeinen:['A']},
+        {nr:2,titel:'Reading',domeinen:['B']},
+        {nr:3,titel:'Listening',domeinen:['C']},
+        {nr:4,titel:'Speaking',domeinen:['D']},
+        {nr:5,titel:'Writing',domeinen:['E']},
+        {nr:6,titel:'Literature',domeinen:['F']}
+      ]}
+    ],
+    vwo:[
+      {id:'ss-vwo',naam:'Stepping Stones',uitgever:'Noordhoff',hoofdstukken:[
+        {nr:1,titel:'Vocabulary & Grammar',domeinen:['A']},
+        {nr:2,titel:'Reading',domeinen:['A']},
+        {nr:3,titel:'Listening & Viewing',domeinen:['B']},
+        {nr:4,titel:'Speaking',domeinen:['C']},
+        {nr:5,titel:'Writing',domeinen:['D']},
+        {nr:6,titel:'Literature',domeinen:['E']}
+      ]}
+    ]
+  },
+  du:{
+    havo:[
+      {id:'nk',naam:'Neue Kontakte',uitgever:'Noordhoff',hoofdstukken:[
+        {nr:1,titel:'Woordenschat & Grammatica',domeinen:['A']},
+        {nr:2,titel:'Leesvaardigheid',domeinen:['B']},
+        {nr:3,titel:'Luistervaardigheid',domeinen:['C']},
+        {nr:4,titel:'Gespreksvaardigheid',domeinen:['D']},
+        {nr:5,titel:'Schrijfvaardigheid',domeinen:['E']}
+      ]},
+      {id:'dik',naam:'Deutsch ist klasse',uitgever:'ThiemeMeulenhoff',hoofdstukken:[
+        {nr:1,titel:'Wortschatz & Grammatik',domeinen:['A']},
+        {nr:2,titel:'Lesen',domeinen:['B']},
+        {nr:3,titel:'Hören',domeinen:['C']},
+        {nr:4,titel:'Sprechen',domeinen:['D']},
+        {nr:5,titel:'Schreiben',domeinen:['E']}
+      ]}
+    ]
+  },
+  fr:{
+    havo:[
+      {id:'gl',naam:'Grandes Lignes',uitgever:'Noordhoff',hoofdstukken:[
+        {nr:1,titel:'Vocabulaire & Grammaire',domeinen:['A']},
+        {nr:2,titel:'Lire',domeinen:['B']},
+        {nr:3,titel:'Écouter',domeinen:['C']},
+        {nr:4,titel:'Parler',domeinen:['D']},
+        {nr:5,titel:'Écrire',domeinen:['E']}
+      ]},
+      {id:'cb',naam:'Carte Blanche',uitgever:'ThiemeMeulenhoff',hoofdstukken:[
+        {nr:1,titel:'Vocabulaire & Grammaire',domeinen:['A']},
+        {nr:2,titel:'Compréhension écrite',domeinen:['B']},
+        {nr:3,titel:'Compréhension orale',domeinen:['C']},
+        {nr:4,titel:'Expression orale',domeinen:['D']},
+        {nr:5,titel:'Expression écrite',domeinen:['E']}
+      ]}
+    ]
+  },
+  gs:{
+    havo:[
+      {id:'memo',naam:'Memo',uitgever:'ThiemeMeulenhoff',hoofdstukken:[
+        {nr:1,titel:'Historische vaardigheden',domeinen:['A']},
+        {nr:2,titel:'Oriëntatiekennis — tijdvakken',domeinen:['B']},
+        {nr:3,titel:'De Republiek (1515–1648)',domeinen:['C']},
+        {nr:4,titel:'De Koude Oorlog (1945–1991)',domeinen:['D']}
+      ]},
+      {id:'sporen',naam:'Sporen',uitgever:'Malmberg',hoofdstukken:[
+        {nr:1,titel:'Historische vaardigheden',domeinen:['A']},
+        {nr:2,titel:'Oriëntatiekennis',domeinen:['B']},
+        {nr:3,titel:'De Republiek',domeinen:['C']},
+        {nr:4,titel:'Koude Oorlog en dekolonisatie',domeinen:['D']}
+      ]},
+      {id:'feniks',naam:'Feniks',uitgever:'Noordhoff',hoofdstukken:[
+        {nr:1,titel:'Historische vaardigheden',domeinen:['A']},
+        {nr:2,titel:'Oriëntatiekennis en tijdvakken',domeinen:['B']},
+        {nr:3,titel:'De Republiek der Nederlanden',domeinen:['C']},
+        {nr:4,titel:'De Koude Oorlog',domeinen:['D']}
+      ]}
+    ],
+    vwo:[
+      {id:'memo-vwo',naam:'Memo',uitgever:'ThiemeMeulenhoff',hoofdstukken:[
+        {nr:1,titel:'Historische vaardigheden',domeinen:['A']},
+        {nr:2,titel:'VWO verdiepingsstof',domeinen:['B']}
+      ]},
+      {id:'sporen-vwo',naam:'Sporen',uitgever:'Malmberg',hoofdstukken:[
+        {nr:1,titel:'Historische vaardigheden',domeinen:['A']},
+        {nr:2,titel:'VWO verdiepingsstof',domeinen:['B']}
+      ]}
+    ]
+  },
+  ak:{
+    havo:[
+      {id:'degeo',naam:'De Geo',uitgever:'Malmberg',hoofdstukken:[
+        {nr:1,titel:'Kaartvaardigheden',domeinen:['A']},
+        {nr:2,titel:'Globalisering',domeinen:['B']},
+        {nr:3,titel:'Arm en rijk in de wereld',domeinen:['B']},
+        {nr:4,titel:'Klimaatsystemen',domeinen:['C']},
+        {nr:5,titel:'Geologie en geomorfologie',domeinen:['C']},
+        {nr:6,titel:'Steden en leefomgeving',domeinen:['D']}
+      ]},
+      {id:'bng',naam:'BuiteNgewoon',uitgever:'ThiemeMeulenhoff',hoofdstukken:[
+        {nr:1,titel:'Aardrijkskundige vaardigheden',domeinen:['A']},
+        {nr:2,titel:'Wereld in beweging',domeinen:['B']},
+        {nr:3,titel:'Aarde in beweging',domeinen:['C']},
+        {nr:4,titel:'Leefomgeving Nederland',domeinen:['D']}
+      ]}
+    ],
+    vwo:[
+      {id:'degeo-vwo',naam:'De Geo',uitgever:'Malmberg',hoofdstukken:[
+        {nr:1,titel:'Vaardigheden',domeinen:['A']},
+        {nr:2,titel:'Wereld en globalisering',domeinen:['B']}
+      ]},
+      {id:'bng-vwo',naam:'BuiteNgewoon',uitgever:'ThiemeMeulenhoff',hoofdstukken:[
+        {nr:1,titel:'Vaardigheden',domeinen:['A']},
+        {nr:2,titel:'Wereld',domeinen:['B']}
+      ]}
+    ]
+  },
+  mw:{
+    havo:[
+      {id:'delphi',naam:'Delphi',uitgever:'Malmberg',hoofdstukken:[
+        {nr:1,titel:'Onderzoeksvaardigheden',domeinen:['A']},
+        {nr:2,titel:'Sociologische benadering',domeinen:['B']},
+        {nr:3,titel:'Politicologische benadering',domeinen:['B']},
+        {nr:4,titel:'Politieke besluitvorming',domeinen:['C']},
+        {nr:5,titel:'Maatschappelijke vraagstukken',domeinen:['D']}
+      ]},
+      {id:'sg',naam:'Samenlevingsleer',uitgever:'ThiemeMeulenhoff',hoofdstukken:[
+        {nr:1,titel:'Sociaalwetenschappelijke vaardigheden',domeinen:['A']},
+        {nr:2,titel:'Socialisatie en cultuur',domeinen:['B']},
+        {nr:3,titel:'Politiek systeem',domeinen:['C']},
+        {nr:4,titel:'Maatschappelijke thema\'s',domeinen:['D']}
+      ]}
+    ],
+    vwo:[
+      {id:'delphi-vwo',naam:'Delphi',uitgever:'Malmberg',hoofdstukken:[
+        {nr:1,titel:'Sociaalwetenschappelijke vaardigheden',domeinen:['A']},
+        {nr:2,titel:'Benaderingen en maatschappelijke vraagstukken',domeinen:['B']}
+      ]},
+      {id:'sg-vwo',naam:'Samenlevingsleer',uitgever:'ThiemeMeulenhoff',hoofdstukken:[
+        {nr:1,titel:'Vaardigheden',domeinen:['A']},
+        {nr:2,titel:'Thema\'s',domeinen:['B']}
+      ]}
+    ]
+  },
+  in:{
+    vwo:[
+      {id:'enigma',naam:'Enigma',uitgever:'Sijthoff Education',hoofdstukken:[
+        {nr:1,titel:'Algoritmen en programmeren',domeinen:['A']},
+        {nr:2,titel:'Netwerken en beveiliging',domeinen:['B']}
+      ]},
+      {id:'instruct',naam:'Instruct',uitgever:'Instruct',hoofdstukken:[
+        {nr:1,titel:'Informatica en maatschappij',domeinen:['A']},
+        {nr:2,titel:'Hardware, software en netwerken',domeinen:['B']}
+      ]}
+    ]
+  }
+};
+
 const VAKKEN = [
 
 {id:'nl',naam:'Nederlands',code:'NE',kleur:'#E85C0D',
@@ -8665,6 +9165,7 @@ function openVak(id,_noHash){
       el.addEventListener('click',hideDomPreview);
     });
   },100);
+  initMf();
   updateLpEntryCard();
   // Examen entry button — toon alleen als er een echt examen beschikbaar is voor dit vak
   const _exBtn = document.getElementById('exam-entry-btn');
@@ -8680,6 +9181,103 @@ function openVak(id,_noHash){
     }
   }
   show('sc-detail');
+}
+
+// ── LESMETHODE FILTER LOGIC ──────────────────────────────
+function initMf(){
+  const vak=ST.vak;
+  const el=document.getElementById('methode-filter');
+  if(!vak||!el)return;
+  const niveau=(ST.niveau||'havo').toLowerCase();
+  const vakData=LESMETHODES[vak.id];
+  const methodes=vakData?(vakData[niveau]||vakData.havo||[]):[];
+  if(!methodes.length){el.style.display='none';return;}
+  el.style.display='';
+  const mSel=document.getElementById('mf-methode');
+  mSel.innerHTML='<option value="">— Kies methode —</option>'+
+    methodes.map(m=>`<option value="${m.id}">${m.naam} · ${m.uitgever}</option>`).join('');
+  const hSel=document.getElementById('mf-hoofdstuk');
+  hSel.style.display='none';hSel.disabled=true;
+  document.getElementById('mf-chip').style.display='none';
+  const saved=_mfLoad(vak.id+'_'+niveau);
+  if(saved&&saved.methodeId){
+    mSel.value=saved.methodeId;
+    _mfFillHfdst(saved.methodeId,methodes,false);
+    if(saved.hfdstNr){
+      hSel.value=String(saved.hfdstNr);
+      _mfApply(saved.methodeId,saved.hfdstNr,methodes);
+    }
+    el.classList.add('open');
+  }
+}
+function _mfFillHfdst(mid,methodes,reset){
+  const m=methodes.find(x=>x.id===mid);
+  const hSel=document.getElementById('mf-hoofdstuk');
+  if(!m){hSel.style.display='none';return;}
+  hSel.innerHTML='<option value="">— Kies hoofdstuk —</option>'+
+    m.hoofdstukken.map(h=>`<option value="${h.nr}">H${h.nr}: ${h.titel}</option>`).join('');
+  hSel.style.display='';hSel.disabled=false;
+  if(reset)hSel.value='';
+}
+function _mfApply(mid,hnr,methodes){
+  const m=methodes.find(x=>x.id===mid);
+  if(!m)return;
+  const h=m.hoofdstukken.find(x=>x.nr===hnr);
+  if(!h)return;
+  document.querySelectorAll('#dlist [data-domein-id]').forEach(el=>{
+    el.style.display=h.domeinen.includes(el.dataset.domeinId)?'':'none';
+  });
+  const chip=document.getElementById('mf-chip');
+  const txt=document.getElementById('mf-chip-txt');
+  if(chip)chip.style.display='flex';
+  if(txt)txt.textContent=`${m.naam} · H${hnr}: ${h.titel} (domein${h.domeinen.length>1?'en':''} ${h.domeinen.join(', ')})`;
+}
+function onMfMethodeChange(){
+  const vak=ST.vak;if(!vak)return;
+  const niveau=(ST.niveau||'havo').toLowerCase();
+  const vakData=LESMETHODES[vak.id];
+  const methodes=vakData?(vakData[niveau]||vakData.havo||[]):[];
+  const mid=document.getElementById('mf-methode').value;
+  if(!mid){resetMf();return;}
+  _mfFillHfdst(mid,methodes,true);
+  document.getElementById('mf-chip').style.display='none';
+  document.querySelectorAll('#dlist [data-domein-id]').forEach(el=>el.style.display='');
+  _mfClear(vak.id+'_'+niveau);
+}
+function onMfHoofdstukChange(){
+  const vak=ST.vak;if(!vak)return;
+  const niveau=(ST.niveau||'havo').toLowerCase();
+  const vakData=LESMETHODES[vak.id];
+  const methodes=vakData?(vakData[niveau]||vakData.havo||[]):[];
+  const mid=document.getElementById('mf-methode').value;
+  const hnr=parseInt(document.getElementById('mf-hoofdstuk').value);
+  if(!mid||!hnr){
+    document.getElementById('mf-chip').style.display='none';
+    document.querySelectorAll('#dlist [data-domein-id]').forEach(el=>el.style.display='');
+    return;
+  }
+  _mfApply(mid,hnr,methodes);
+  _mfSave(vak.id+'_'+niveau,mid,hnr);
+}
+function resetMf(){
+  const vak=ST.vak;
+  const niveau=(ST.niveau||'havo').toLowerCase();
+  const mSel=document.getElementById('mf-methode');
+  const hSel=document.getElementById('mf-hoofdstuk');
+  if(mSel)mSel.value='';
+  if(hSel){hSel.innerHTML='<option value="">— Kies hoofdstuk —</option>';hSel.style.display='none';hSel.disabled=true;}
+  document.getElementById('mf-chip').style.display='none';
+  document.querySelectorAll('#dlist [data-domein-id]').forEach(el=>el.style.display='');
+  if(vak)_mfClear(vak.id+'_'+niveau);
+}
+function _mfSave(key,mid,hnr){
+  try{const d=JSON.parse(localStorage.getItem('slg_mf')||'{}');d[key]={methodeId:mid,hfdstNr:hnr};localStorage.setItem('slg_mf',JSON.stringify(d));}catch(e){}
+}
+function _mfLoad(key){
+  try{return JSON.parse(localStorage.getItem('slg_mf')||'{}')[key]||null;}catch(e){return null;}
+}
+function _mfClear(key){
+  try{const d=JSON.parse(localStorage.getItem('slg_mf')||'{}');delete d[key];localStorage.setItem('slg_mf',JSON.stringify(d));}catch(e){}
 }
 
 function updateLpEntryCard(){
