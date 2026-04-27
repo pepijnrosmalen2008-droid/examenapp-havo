@@ -1899,42 +1899,58 @@ html.dark .calc-btn{background:#2e3550}
 /* Domain question preview tooltip */
 @keyframes previewIn{from{opacity:0;transform:translateY(8px) scale(.97)}to{opacity:1;transform:translateY(0) scale(1)}}
 .dom-preview{
-  position:fixed;z-index:8000;width:300px;
+  position:fixed;z-index:8000;width:310px;
   background:var(--s);border:1.5px solid var(--bo);
   border-radius:18px;padding:0;
   box-shadow:0 12px 48px rgba(0,0,0,.18),0 2px 8px rgba(0,0,0,.08);
-  pointer-events:none;
+  pointer-events:auto;
   animation:previewIn .22s cubic-bezier(.22,1,.36,1);
   overflow:hidden;
 }
 .dom-preview-head{
   padding:11px 14px 9px;
   border-bottom:1px solid var(--bo);
-  display:flex;align-items:center;justify-content:space-between;gap:8px;
+  display:flex;align-items:center;gap:7px;
 }
-.dom-preview-vak{font-size:10px;font-weight:800;color:var(--or);text-transform:uppercase;letter-spacing:.8px}
-.dom-preview-count{font-size:10px;color:var(--mu);font-weight:600;background:var(--bg2);padding:2px 8px;border-radius:20px;white-space:nowrap}
-.dom-preview-body{padding:12px 14px}
+.dom-preview-vak{font-size:10px;font-weight:800;color:var(--or);text-transform:uppercase;letter-spacing:.8px;flex:1;min-width:0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.dom-preview-decay{font-size:10px;font-weight:700;padding:2px 8px;border-radius:20px;white-space:nowrap;flex-shrink:0}
+.dom-preview-count{font-size:10px;color:var(--mu);font-weight:600;background:var(--bg2);padding:2px 8px;border-radius:20px;white-space:nowrap;flex-shrink:0}
+.dom-preview-prog{padding:9px 14px 8px;border-bottom:1px solid var(--bo)}
+.dom-preview-prog-row{display:flex;align-items:center;justify-content:space-between;margin-bottom:5px}
+.dom-preview-prog-lbl{font-size:10px;font-weight:700;color:var(--mu);text-transform:uppercase;letter-spacing:.6px}
+.dom-preview-prog-pct{font-size:11px;font-weight:800;color:var(--dk)}
+.dom-preview-prog-track{height:6px;background:var(--bg2);border-radius:99px;overflow:hidden}
+.dom-preview-prog-fill{height:100%;border-radius:99px;transition:width .4s}
+.dom-preview-body{padding:12px 14px 10px}
 .dom-preview-qlabel{font-size:9px;font-weight:800;color:var(--mu);text-transform:uppercase;letter-spacing:1px;margin-bottom:6px}
 .dom-preview-q{font-size:13px;font-weight:700;color:var(--dk);line-height:1.45;margin-bottom:10px}
 .dom-preview-opts{display:flex;flex-direction:column;gap:4px}
 .dom-preview-opt{
   font-size:12px;color:var(--mu);
-  padding:5px 9px;border-radius:8px;
+  padding:6px 10px;border-radius:8px;
   display:flex;align-items:center;gap:7px;
   background:var(--bg2);line-height:1.3;
+  cursor:pointer;border:1.5px solid transparent;
+  transition:background .12s,border-color .12s;
+  user-select:none;
 }
-.dom-preview-opt.correct{
-  background:rgba(34,197,94,.12);color:#15803d;font-weight:700;
-}
+.dom-preview-opt:not(.answered):hover{background:rgba(var(--or-rgb),.08);border-color:rgba(var(--or-rgb),.25)}
+.dom-preview-opt.correct{background:rgba(34,197,94,.12);color:#15803d;font-weight:700;border-color:rgba(34,197,94,.3)}
+.dom-preview-opt.wrong{background:rgba(239,68,68,.1);color:#dc2626;border-color:rgba(239,68,68,.2)}
 .dark .dom-preview-opt.correct{background:rgba(34,197,94,.18);color:#4ade80}
-.dom-preview-opt-dot{width:7px;height:7px;border-radius:50%;flex-shrink:0;background:var(--bo)}
+.dark .dom-preview-opt.wrong{background:rgba(239,68,68,.15);color:#f87171}
+.dom-preview-opt-dot{width:7px;height:7px;border-radius:50%;flex-shrink:0;background:var(--bo);transition:background .12s}
 .dom-preview-opt.correct .dom-preview-opt-dot{background:#22c55e}
-.dom-preview-footer{
-  padding:9px 14px 11px;border-top:1px solid var(--bo);
-  font-size:11px;font-weight:700;color:var(--or);
-  display:flex;align-items:center;gap:5px;
+.dom-preview-opt.wrong .dom-preview-opt-dot{background:#ef4444}
+.dom-preview-footer{padding:10px 14px 12px;border-top:1px solid var(--bo)}
+.dom-preview-btn{
+  width:100%;padding:9px;border:none;border-radius:10px;
+  background:var(--or);color:#fff;
+  font-family:var(--font);font-size:13px;font-weight:700;
+  cursor:pointer;letter-spacing:.2px;
+  transition:opacity .15s,transform .15s;
 }
+.dom-preview-btn:hover{opacity:.88;transform:translateY(-1px)}
 
 /* Timer urgency pulse */
 @keyframes urgentPulse{0%,100%{transform:scale(1);filter:drop-shadow(0 0 8px rgba(248,113,113,.55)) drop-shadow(0 0 2px rgba(248,113,113,.4))}50%{transform:scale(1.13);filter:drop-shadow(0 0 18px rgba(248,113,113,.9)) drop-shadow(0 0 6px rgba(248,113,113,.6))}}
@@ -9356,14 +9372,22 @@ function openVak(id,_noHash){
       const did=el.dataset.domeinId||el.getAttribute('data-domein-id');
       if(!vid||!did)return;
       el.addEventListener('mouseenter',function(){
+        if(_hideTimer){clearTimeout(_hideTimer);_hideTimer=null;}
         const vak=getVK().find(v=>v.id===vid);
         if(!vak)return;
         const dom=vak.domeinen.find(d=>d.id===did);
         if(!dom)return;
         scheduleDomPreview(this,vak,dom);
       });
-      el.addEventListener('mouseleave',cancelDomPreview);
-      el.addEventListener('click',cancelDomPreview);
+      el.addEventListener('mouseleave',function(){
+        if(_previewTimer){clearTimeout(_previewTimer);_previewTimer=null;}
+        _hideTimer=setTimeout(()=>{_hideTimer=null;hideDomPreview();},180);
+      });
+      el.addEventListener('click',function(){
+        if(_previewTimer){clearTimeout(_previewTimer);_previewTimer=null;}
+        if(_hideTimer){clearTimeout(_hideTimer);_hideTimer=null;}
+        hideDomPreview();
+      });
     });
   },100);
   initMf();
@@ -12883,63 +12907,110 @@ setInterval(renderLiveCount,32000);
 // ═══════ DOMAIN PREVIEW TOOLTIP ═══════
 let _previewEl=null;
 let _previewTimer=null;
+let _hideTimer=null;
 function scheduleDomPreview(trigger,vak,domein){
-  cancelDomPreview();
-  _previewTimer=setTimeout(()=>{ _previewTimer=null; showDomPreview(trigger,vak,domein); },650);
-}
-function cancelDomPreview(){
   if(_previewTimer){clearTimeout(_previewTimer);_previewTimer=null;}
-  hideDomPreview();
+  _previewTimer=setTimeout(()=>{ _previewTimer=null; showDomPreview(trigger,vak,domein); },650);
 }
 function showDomPreview(trigger,vak,domein){
   hideDomPreview();
   const qPool=domein.sv||[];
-  if(!qPool.length)return;
-  const q=qPool[Math.floor(Math.random()*Math.min(qPool.length,5))];
-  if(!q)return;
+  const q=qPool.length?qPool[Math.floor(Math.random()*Math.min(qPool.length,5))]:null;
 
-  // Build answer options (max 3), mark correct
-  const optsHtml=(q.o||[]).slice(0,3).map((o,i)=>{
-    const isCorrect=i===q.c;
-    return`<div class="dom-preview-opt${isCorrect?' correct':''}">
+  const {pct,hasData}=getDomeinBestPct(vak.id,domein.id);
+  const decay=getDecayStatus(vak.id,domein.id);
+  const totalQ=(domein.sv||[]).length+(domein.oe||[]).length;
+
+  // Progress bar
+  const progPct=Math.round(pct*100);
+  const barColor=progPct>=80?'linear-gradient(90deg,#22c55e,#4ade80)':progPct>=50?'linear-gradient(90deg,#f59e0b,#fbbf24)':'linear-gradient(90deg,#ef4444,#f87171)';
+  const progHtml=hasData?`
+    <div class="dom-preview-prog">
+      <div class="dom-preview-prog-row">
+        <span class="dom-preview-prog-lbl">Beste score</span>
+        <span class="dom-preview-prog-pct">${progPct}%</span>
+      </div>
+      <div class="dom-preview-prog-track">
+        <div class="dom-preview-prog-fill" style="width:${progPct}%;background:${barColor}"></div>
+      </div>
+    </div>`:'';
+
+  // Sample question options (unanswered — user clicks to reveal)
+  const opts=(q&&q.o)?q.o.slice(0,4):[];
+  const optsHtml=opts.map((o,i)=>`
+    <div class="dom-preview-opt" data-idx="${i}">
       <span class="dom-preview-opt-dot"></span>
       <span>${o}</span>
-      ${isCorrect?'<span style="margin-left:auto;font-size:11px">✓</span>':''}
-    </div>`;
-  }).join('');
+    </div>`).join('');
 
-  const totalQ=(domein.sv||[]).length+(domein.oe||[]).length;
+  const decayBadge=decay?`<span class="dom-preview-decay" style="background:${decay.color}22;color:${decay.color}">${decay.label}</span>`:'';
+
   const preview=document.createElement('div');
   preview.className='dom-preview';
   preview.innerHTML=`
     <div class="dom-preview-head">
       <span class="dom-preview-vak">${domein.naam}</span>
-      <span class="dom-preview-count">${totalQ} vraag${totalQ!==1?'en':''}</span>
+      ${decayBadge}
+      <span class="dom-preview-count">${totalQ}v</span>
     </div>
-    <div class="dom-preview-body">
-      <div class="dom-preview-qlabel">Voorbeeldvraag</div>
+    ${progHtml}
+    ${q?`<div class="dom-preview-body">
+      <div class="dom-preview-qlabel">Klik het juiste antwoord</div>
       <div class="dom-preview-q">${q.v}</div>
       ${optsHtml?`<div class="dom-preview-opts">${optsHtml}</div>`:''}
-    </div>
-    <div class="dom-preview-footer">▶ Klik om dit domein te oefenen</div>
-  `;
+    </div>`:''}
+    <div class="dom-preview-footer">
+      <button class="dom-preview-btn">▶ Start oefenen</button>
+    </div>`;
 
-  // Position: below trigger, fixed so no scrollY offset
+  // Position below trigger, flip above if not enough space
   const r=trigger.getBoundingClientRect();
-  const POPUP_W=300;
-  const POPUP_H_EST=220;
-  let left=r.left;
-  let top=r.bottom+8;
-  // Keep within viewport
-  if(left+POPUP_W>window.innerWidth-8)left=window.innerWidth-POPUP_W-8;
+  const PW=310,PH=300;
+  let left=r.left,top=r.bottom+8;
+  if(left+PW>window.innerWidth-8)left=window.innerWidth-PW-8;
   if(left<8)left=8;
-  if(top+POPUP_H_EST>window.innerHeight-8)top=r.top-POPUP_H_EST-8; // flip above
+  if(top+PH>window.innerHeight-8)top=r.top-PH-8;
   preview.style.left=left+'px';
   preview.style.top=top+'px';
   document.body.appendChild(preview);
   _previewEl=preview;
+
+  // Interactive answer options
+  if(q){
+    let answered=false;
+    preview.querySelectorAll('.dom-preview-opt').forEach(opt=>{
+      opt.addEventListener('click',function(e){
+        e.stopPropagation();
+        if(answered)return;
+        answered=true;
+        const chosen=parseInt(this.dataset.idx);
+        preview.querySelectorAll('.dom-preview-opt').forEach((o,i)=>{
+          o.classList.add('answered');
+          if(i===q.c)o.classList.add('correct');
+          else if(i===chosen)o.classList.add('wrong');
+        });
+      });
+    });
+  }
+
+  // Start button
+  preview.querySelector('.dom-preview-btn').addEventListener('click',function(e){
+    e.stopPropagation();
+    hideDomPreview();
+    ST.vak=vak;ST.domein=domein;
+    startQ('snel');
+  });
+
+  // Keep popup alive when hovering over it
+  preview.addEventListener('mouseenter',function(){
+    if(_hideTimer){clearTimeout(_hideTimer);_hideTimer=null;}
+  });
+  preview.addEventListener('mouseleave',function(){
+    hideDomPreview();
+  });
 }
 function hideDomPreview(){
+  if(_hideTimer){clearTimeout(_hideTimer);_hideTimer=null;}
   if(_previewEl){_previewEl.remove();_previewEl=null;}
 }
 
