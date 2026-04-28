@@ -3553,6 +3553,58 @@ html.dark .hsd-pill{background:var(--bg2);border-color:var(--bo2)}
   /* Domein-kaart: verberg "▼ Leerstof" knop op mobiel — kaartbalk is zelf al klikbaar */
   .dbtns .exb{display:none!important}
 }
+/* ── RAPPORT MODAL ──────────────────────────────── */
+.rapport-modal{position:fixed;inset:0;background:rgba(0,0,0,.65);z-index:9000;display:none;align-items:flex-end;justify-content:center}
+.rapport-modal.open{display:flex}
+.rapport-sheet{background:var(--s);border-radius:24px 24px 0 0;width:100%;max-width:640px;max-height:88vh;overflow-y:auto;padding-bottom:40px;border-top:1px solid var(--bo)}
+.rapport-handle{width:40px;height:4px;border-radius:2px;background:var(--bo);margin:12px auto 0}
+.rapport-hdr{display:flex;justify-content:space-between;align-items:center;padding:14px 20px;border-bottom:1px solid var(--bo);position:sticky;top:0;background:var(--s);z-index:1}
+.rapport-title{font-family:var(--font-head);font-size:17px;font-weight:800;color:var(--dk)}
+.rapport-close-btn{width:32px;height:32px;border-radius:50%;border:1px solid var(--bo);background:var(--bg2);color:var(--mu);cursor:pointer;font-size:14px;display:flex;align-items:center;justify-content:center}
+.rapport-body{padding:18px 20px 0}
+.rp-stats-row{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-bottom:18px}
+.rp-stat{background:var(--bg2);border-radius:14px;padding:14px 10px;text-align:center}
+.rp-stat-val{font-family:var(--font-head);font-size:22px;font-weight:900;color:var(--or)}
+.rp-stat-lbl{font-size:11px;color:var(--mu);margin-top:2px}
+.rp-section-title{font-family:var(--font-head);font-size:12px;font-weight:800;color:var(--mu);text-transform:uppercase;letter-spacing:.6px;margin:16px 0 8px}
+.rp-domain-row{display:flex;align-items:center;gap:10px;padding:8px 0;border-bottom:1px solid var(--bo)}
+.rp-domain-info{flex:1;min-width:0}
+.rp-domain-name{font-size:13px;font-weight:700;color:var(--dk);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.rp-domain-vak{font-size:11px;color:var(--mu)}
+.rp-pct-bar{width:58px;height:6px;background:var(--bo);border-radius:3px;overflow:hidden;flex-shrink:0}
+.rp-pct-fill{height:100%;border-radius:3px}
+.rp-pct-lbl{font-family:var(--font-head);font-size:12px;font-weight:800;width:34px;text-align:right;flex-shrink:0}
+.rp-exam-row{display:flex;justify-content:space-between;align-items:center;padding:9px 12px;border-radius:10px;background:var(--bg2);margin-bottom:6px}
+.rp-exam-vak{font-size:13px;font-weight:700;color:var(--dk)}
+.rp-exam-date{font-size:11px;color:var(--mu);margin-top:2px}
+.rp-share-btn{width:100%;margin-top:22px;padding:14px;background:var(--or);color:#fff;border:none;border-radius:14px;font-family:var(--font-head);font-size:14px;font-weight:800;cursor:pointer;display:flex;align-items:center;justify-content:center;gap:8px;transition:opacity .2s}
+.rp-share-btn:hover{opacity:.88}
+/* ── STUDIEPLAN ──────────────────────────────────── */
+.sp-section{margin-top:28px}
+.sp-section-title{font-family:var(--font-head);font-size:18px;font-weight:800;color:var(--dk);margin-bottom:4px}
+.sp-section-sub{font-size:13px;color:var(--mu);margin-bottom:14px}
+.sp-gen-btn{padding:11px 20px;background:var(--or);color:#fff;border:none;border-radius:12px;font-family:var(--font-head);font-size:13px;font-weight:800;cursor:pointer;margin-bottom:16px;transition:opacity .2s}
+.sp-gen-btn:hover{opacity:.88}
+.sp-day{display:flex;gap:12px;align-items:flex-start;padding:10px 14px;border-radius:12px;background:var(--s);border:1px solid var(--bo);margin-bottom:8px}
+.sp-day-date{font-family:var(--font-head);font-size:11px;font-weight:800;color:var(--mu);width:38px;flex-shrink:0;padding-top:3px;text-align:center}
+.sp-day-tasks{flex:1}
+.sp-task{font-size:13px;color:var(--dk);line-height:1.6}
+.sp-empty{text-align:center;padding:28px 16px;color:var(--mu);font-size:14px;line-height:1.6}
+.sp-exam-divider{display:flex;align-items:center;gap:10px;margin:12px 0;font-size:12px;font-weight:700;color:var(--or)}
+.sp-exam-divider::before,.sp-exam-divider::after{content:'';flex:1;height:1px;background:rgba(var(--or-rgb),.3)}
+/* ── TOEGANKELIJKHEID ────────────────────────────── */
+.acc-row{display:flex;justify-content:space-between;align-items:center;padding:13px 0;border-bottom:1px solid var(--bo)}
+.acc-row:last-child{border-bottom:none}
+.acc-label{font-size:14px;font-weight:600;color:var(--dk)}
+.acc-sub{font-size:12px;color:var(--mu);margin-top:2px}
+.acc-toggle{position:relative;width:46px;height:26px;flex-shrink:0}
+.acc-toggle input{opacity:0;width:0;height:0;position:absolute}
+.acc-slider{position:absolute;inset:0;background:var(--bo);border-radius:13px;cursor:pointer;transition:background .2s}
+.acc-slider::before{content:'';position:absolute;width:20px;height:20px;left:3px;top:3px;background:#fff;border-radius:50%;transition:transform .2s;box-shadow:0 1px 4px rgba(0,0,0,.2)}
+.acc-toggle input:checked+.acc-slider{background:var(--or)}
+.acc-toggle input:checked+.acc-slider::before{transform:translateX(20px)}
+.dyslexie,.dyslexie *{font-family:'OpenDyslexic',sans-serif!important}
+.hoog-contrast{--s:#fff!important;--bg:#f5f5f5!important;--bg2:#e8e8e8!important;--dk:#000!important;--tx:#000!important;--mu:#444!important;--bo:#555!important}
 </style>
 </head>
 <body>
@@ -4375,6 +4427,13 @@ html.dark .hsd-pill{background:var(--bg2);border-color:var(--bo2)}
       <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-3580526892359138" data-ad-slot="0000000000" data-ad-format="auto" data-full-width-responsive="true"></ins>
     </div>
   </div>
+  <!-- STUDIEPLAN -->
+  <div class="sp-section">
+    <div class="sp-section-title">📅 Persoonlijk studieplan</div>
+    <div class="sp-section-sub">Op basis van je examendatum en zwakste domeinen — gegenereerd in één klik</div>
+    <button class="sp-gen-btn" onclick="renderStudieplan()">✨ Genereer mijn studieplan</button>
+    <div id="studieplan-content"></div>
+  </div>
 </div>
 </div>
 
@@ -4590,6 +4649,10 @@ html.dark .hsd-pill{background:var(--bg2);border-color:var(--bo2)}
 <div class="w prof-wrap">
   <div class="prof-page-header">
     <h2>Mijn Profiel</h2>
+    <button class="rp-share-btn" style="margin-top:12px;border-radius:12px;padding:11px 18px;font-size:13px;width:auto" onclick="openRapport()">
+      <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><path d="M18 17V9"/><path d="M13 17V5"/><path d="M8 17v-3"/></svg>
+      Mijn voortgangsrapport
+    </button>
   </div>
 
   <!-- Cloud sync status -->
@@ -4634,6 +4697,20 @@ html.dark .hsd-pill{background:var(--bg2);border-color:var(--bo2)}
     <button class="pf-save-btn" onclick="saveProfileData()">Opslaan</button>
     <span class="pf-saved" id="pf-saved-msg">✓ Opgeslagen</span>
     <div class="notif-status-row" id="notif-status-row"></div>
+  </div>
+
+  <!-- Toegankelijkheid -->
+  <div class="prof-section">
+    <div class="prof-section-title">Toegankelijkheid</div>
+    <div class="prof-section-sub">Pas de weergave aan voor meer comfort</div>
+    <div class="acc-row">
+      <div><div class="acc-label">OpenDyslexic lettertype</div><div class="acc-sub">Speciaal font dat lezen makkelijker maakt bij dyslexie</div></div>
+      <label class="acc-toggle"><input type="checkbox" id="acc-dyslexie-toggle" onchange="toggleDyslexie(this.checked)"><span class="acc-slider"></span></label>
+    </div>
+    <div class="acc-row">
+      <div><div class="acc-label">Hoog contrast</div><div class="acc-sub">Sterker kleurcontrast voor betere leesbaarheid</div></div>
+      <label class="acc-toggle"><input type="checkbox" id="acc-contrast-toggle" onchange="toggleHoogContrast(this.checked)"><span class="acc-slider"></span></label>
+    </div>
   </div>
 
   <!-- 4. SE Cijfers -->
@@ -9559,6 +9636,7 @@ function openProfiel(){
   buildMijnStats();
   renderProfileBadges();
   renderNotifStatus();
+  applyAccPrefs();
   show('sc-profiel');
 }
 
@@ -11022,6 +11100,8 @@ const ALL_BADGES=[
   {id:'vakken10', emoji:'🌍', label:'Alleskunner',     tip:'10 vakken geoefend',              cat:'Vakken',     rarity:'legendary'},
   // Examen
   {id:'examen_done',emoji:'📄',label:'Examenkandidaat',tip:'Eerste echt examen afgemaakt',   cat:'Examen',     rarity:'mythic'},
+  // Sociaal
+  {id:'ambassadeur', emoji:'📣',label:'Ambassadeur',  tip:'Voortgang gedeeld met anderen',   cat:'Sociaal',    rarity:'rare'},
 ];
 const RARITY_LABEL={common:'Gewoon',rare:'Zeldzaam',epic:'Episch',legendary:'Legendarisch',mythic:'Mythisch',eternal:'Eeuwig'};
 const FEATURED_BADGE_KEY='slagio_featured_badge_id';
@@ -11528,12 +11608,167 @@ async function deelScore(){
   const modeTxt={snel:'snelle quiz',oud:'open vragen',fc:'flashcards',race:'Bot Race'}[ST.mode]||'oefening';
   const tekst=`Ik scoorde ${score}${total} bij ${vakNaam} (${modeTxt}) op Slagio! 🎯\nJij ook oefenen voor het examen? → slagio.nl`;
   if(navigator.share){
-    try{await navigator.share({title:'Slagio — Mijn score',text:tekst,url:'https://slagio.nl'});}catch(e){}
+    try{
+      await navigator.share({title:'Slagio — Mijn score',text:tekst,url:'https://slagio.nl'});
+      if(earnAch('ambassadeur'))setTimeout(()=>showAch('📣','Ambassadeur! Score gedeeld.'),500);
+    }catch(e){}
   }else{
     try{await navigator.clipboard.writeText(tekst);showToast('📋 Score gekopieerd naar klembord!');}
     catch(e){showToast('slagio.nl');}
+    if(earnAch('ambassadeur'))setTimeout(()=>showAch('📣','Ambassadeur! Score gedeeld.'),500);
   }
 }
+
+// ═══════ RAPPORT ═══════
+function openRapport(){
+  const modal=document.getElementById('rapport-modal');
+  if(!modal)return;
+  renderRapport();
+  modal.classList.add('open');
+  document.body.style.overflow='hidden';
+}
+function closeRapport(){
+  document.getElementById('rapport-modal')?.classList.remove('open');
+  document.body.style.overflow='';
+}
+function renderRapport(){
+  const el=document.getElementById('rapport-content');
+  if(!el)return;
+  const vakken=getVK();
+  const allDomains=[];
+  vakken.forEach(vak=>{
+    (vak.domeinen||[]).forEach(dom=>{
+      const {pct,hasData}=getDomeinBestPct(vak.id,dom.id);
+      if(hasData)allDomains.push({vakNaam:vak.naam,domNaam:dom.naam,pct});
+    });
+  });
+  const p=getProgress();
+  const totalAttempts=Object.values(p).reduce((s,v)=>s+(v.attempts||0),0);
+  const avgPct=allDomains.length?Math.round(allDomains.reduce((s,d)=>s+d.pct,0)/allDomains.length*100):0;
+  const sorted=[...allDomains].sort((a,b)=>b.pct-a.pct);
+  const strong=sorted.slice(0,3);
+  const weak=[...allDomains].filter(d=>d.pct<0.65).sort((a,b)=>a.pct-b.pct).slice(0,3);
+  const mijn=getMijnVakken();
+  const today=new Date();today.setHours(0,0,0,0);
+  const upcoming=EXAM_SCHEDULE.filter(e=>{
+    const d=new Date(e.datum);
+    return d>=today&&(mijn.length===0||!e.vakId||(e.vakId&&mijn.includes(e.vakId)));
+  }).slice(0,3);
+  const maand=['jan','feb','mrt','apr','mei','jun','jul','aug','sep','okt','nov','dec'];
+  const domRow=(d,color)=>`<div class="rp-domain-row">
+    <div class="rp-domain-info"><div class="rp-domain-name">${d.domNaam}</div><div class="rp-domain-vak">${d.vakNaam}</div></div>
+    <div class="rp-pct-bar"><div class="rp-pct-fill" style="width:${Math.round(d.pct*100)}%;background:${color}"></div></div>
+    <div class="rp-pct-lbl" style="color:${color}">${Math.round(d.pct*100)}%</div>
+  </div>`;
+  el.innerHTML=`
+    <div class="rp-stats-row">
+      <div class="rp-stat"><div class="rp-stat-val">${totalAttempts}</div><div class="rp-stat-lbl">Quizzen</div></div>
+      <div class="rp-stat"><div class="rp-stat-val">${allDomains.length}</div><div class="rp-stat-lbl">Domeinen</div></div>
+      <div class="rp-stat"><div class="rp-stat-val">${avgPct}%</div><div class="rp-stat-lbl">Gemiddeld</div></div>
+    </div>
+    ${strong.length?`<div class="rp-section-title">💪 Sterkste domeinen</div>${strong.map(d=>domRow(d,'#22c55e')).join('')}`:''}
+    ${weak.length?`<div class="rp-section-title">⚠️ Focuspunten</div>${weak.map(d=>domRow(d,'#f97316')).join('')}`:''}
+    ${upcoming.length?`<div class="rp-section-title">📅 Aankomende examens</div>${upcoming.map(e=>{
+      const d=new Date(e.datum);const dL=Math.ceil((d-today)/(864e5));
+      return`<div class="rp-exam-row"><div><div class="rp-exam-vak">${e.vak}</div><div class="rp-exam-date">${d.getDate()} ${maand[d.getMonth()]} · ${e.tijd}</div></div><div style="font-family:var(--font-head);font-size:13px;font-weight:800;color:${dL<=7?'#ef4444':dL<=14?'#f97316':'var(--or)'}">${dL}d</div></div>`;
+    }).join('')}`:''}
+    ${allDomains.length===0?`<div class="sp-empty">Je hebt nog geen domeinen geoefend.<br>Maak eerst een quiz om je rapport te zien.</div>`:''}
+    <button class="rp-share-btn" onclick="shareRapport()">
+      <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"/><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"/></svg>
+      Deel mijn rapport
+    </button>`;
+}
+async function shareRapport(){
+  const vakken=getVK();
+  const allDomains=[];
+  vakken.forEach(vak=>{(vak.domeinen||[]).forEach(dom=>{const {pct,hasData}=getDomeinBestPct(vak.id,dom.id);if(hasData)allDomains.push(pct);});});
+  const avg=allDomains.length?Math.round(allDomains.reduce((s,v)=>s+v,0)/allDomains.length*100):0;
+  const p=getProgress();
+  const tot=Object.values(p).reduce((s,v)=>s+(v.attempts||0),0);
+  const tekst=`Mijn voortgang op Slagio 📊\n${tot} quizzen · ${allDomains.length} domeinen · gemiddeld ${avg}%\nOok oefenen voor het examen? → slagio.nl`;
+  if(navigator.share){
+    try{await navigator.share({title:'Mijn Slagio Rapport',text:tekst,url:'https://slagio.nl'});if(earnAch('ambassadeur'))setTimeout(()=>showAch('📣','Ambassadeur! Rapport gedeeld.'),500);}catch(e){}
+  }else{
+    try{await navigator.clipboard.writeText(tekst);showToast('📋 Rapport gekopieerd!');}catch(e){showToast('slagio.nl');}
+    if(earnAch('ambassadeur'))setTimeout(()=>showAch('📣','Ambassadeur! Rapport gedeeld.'),500);
+  }
+}
+// ═══════ STUDIEPLAN ═══════
+function renderStudieplan(){
+  const el=document.getElementById('studieplan-content');
+  if(!el)return;
+  el.innerHTML=`<div class="sp-empty">⏳ Laden...</div>`;
+  const mijn=getMijnVakken();
+  const today=new Date();today.setHours(0,0,0,0);
+  const upcoming=EXAM_SCHEDULE.filter(e=>{
+    const d=new Date(e.datum);
+    return d>today&&(mijn.length===0||(e.vakId&&mijn.includes(e.vakId)));
+  });
+  if(!upcoming.length){el.innerHTML='<div class="sp-empty">Geen aankomende examens gevonden.<br>Stel je vakken in via het rooster boven.</div>';return;}
+  const dagMap={};
+  upcoming.forEach(ex=>{
+    if(!ex.vakId)return;
+    const vak=getVK().find(v=>v.id===ex.vakId);
+    if(!vak||!vak.domeinen)return;
+    const examD=new Date(ex.datum);examD.setHours(0,0,0,0);
+    const daysLeft=Math.ceil((examD-today)/864e5);
+    if(daysLeft<=0)return;
+    const domains=vak.domeinen.map(dom=>{
+      const {pct}=getDomeinBestPct(vak.id,dom.id);
+      return{naam:dom.naam,pct};
+    }).sort((a,b)=>a.pct-b.pct);
+    const slots=Math.max(1,Math.min(daysLeft-1,domains.length));
+    domains.slice(0,slots).forEach((dom,i)=>{
+      const sd=new Date(today);sd.setDate(today.getDate()+i);
+      if(sd.getDay()===0)sd.setDate(sd.getDate()+1);
+      if(sd>=examD)return;
+      const key=sd.toISOString().slice(0,10);
+      if(!dagMap[key])dagMap[key]={tasks:[],exams:[]};
+      dagMap[key].tasks.push({vakNaam:vak.naam,domNaam:dom.naam,pct:dom.pct,examDatum:ex.datum});
+    });
+    const examKey=ex.datum;
+    if(!dagMap[examKey])dagMap[examKey]={tasks:[],exams:[]};
+    dagMap[examKey].exams.push(vak.naam);
+  });
+  const dates=Object.keys(dagMap).sort().slice(0,21);
+  if(!dates.length){el.innerHTML='<div class="sp-empty">Je hebt alle domeinen al goed geoefend! 🎉</div>';return;}
+  const dagNamen=['zo','ma','di','wo','do','vr','za'];
+  const maandN=['jan','feb','mrt','apr','mei','jun','jul','aug','sep','okt','nov','dec'];
+  let html='';
+  dates.forEach(dateStr=>{
+    const d=new Date(dateStr+'T00:00:00');
+    const {tasks,exams}=dagMap[dateStr];
+    if(exams.length){html+=`<div class="sp-exam-divider">📋 Examen: ${exams.join(' & ')}</div>`;}
+    if(!tasks.length)return;
+    html+=`<div class="sp-day">
+      <div class="sp-day-date">${dagNamen[d.getDay()]}<br>${d.getDate()} ${maandN[d.getMonth()]}</div>
+      <div class="sp-day-tasks">${tasks.map(t=>`<div class="sp-task">${t.vakNaam} <span style="color:var(--mu)">·</span> ${t.domNaam}${t.pct>0?` <span style="font-size:11px;font-weight:700;color:${t.pct<0.5?'#ef4444':t.pct<0.7?'#f97316':'#22c55e'}">${Math.round(t.pct*100)}%</span>`:''}</div>`).join('')}</div>
+    </div>`;
+  });
+  el.innerHTML=html||'<div class="sp-empty">Je hebt alle domeinen al goed geoefend! 🎉</div>';
+}
+// ═══════ TOEGANKELIJKHEID ═══════
+const ACC_KEY='slagio_acc_v1';
+function getAccPrefs(){try{return JSON.parse(localStorage.getItem(ACC_KEY)||'{}');}catch(e){return{};}}
+function toggleDyslexie(on){const p=getAccPrefs();p.dyslexie=on;localStorage.setItem(ACC_KEY,JSON.stringify(p));applyAccPrefs();}
+function toggleHoogContrast(on){const p=getAccPrefs();p.contrast=on;localStorage.setItem(ACC_KEY,JSON.stringify(p));applyAccPrefs();}
+function applyAccPrefs(){
+  const p=getAccPrefs();
+  document.body.classList.toggle('dyslexie',!!p.dyslexie);
+  document.body.classList.toggle('hoog-contrast',!!p.contrast);
+  if(p.dyslexie&&!document.getElementById('dyslexic-font')){
+    const link=document.createElement('link');
+    link.id='dyslexic-font';link.rel='stylesheet';
+    link.href='https://fonts.cdnfonts.com/css/opendyslexic';
+    document.head.appendChild(link);
+  }
+  const t1=document.getElementById('acc-dyslexie-toggle');
+  const t2=document.getElementById('acc-contrast-toggle');
+  if(t1)t1.checked=!!p.dyslexie;
+  if(t2)t2.checked=!!p.contrast;
+}
+// Apply on load
+applyAccPrefs();
 
 // ═══════ LEERPAD ═══════
 function showLeerpad(){
@@ -16326,5 +16561,17 @@ if('serviceWorker' in navigator){
   }
 })();
 </script>
+
+<!-- RAPPORT MODAL -->
+<div id="rapport-modal" class="rapport-modal" onclick="closeRapport()">
+  <div class="rapport-sheet" onclick="event.stopPropagation()">
+    <div class="rapport-handle"></div>
+    <div class="rapport-hdr">
+      <span class="rapport-title">📊 Voortgangsrapport</span>
+      <button class="rapport-close-btn" onclick="closeRapport()">✕</button>
+    </div>
+    <div class="rapport-body" id="rapport-content"></div>
+  </div>
+</div>
 </body>
 </html>
