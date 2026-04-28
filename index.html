@@ -3471,8 +3471,9 @@ html.dark .hsd-pill{background:var(--bg2);border-color:var(--bo2)}
 .notif-status-row{display:flex;align-items:center;justify-content:space-between;padding:10px 0 0;border-top:1px solid var(--bo);margin-top:12px}
 
 /* ── SOCIAAL SHORTCUTS ───────────────────────────── */
-.hm-sociaal-row{display:flex;gap:10px;margin-bottom:20px}
-.hm-soc-btn{flex:1;padding:11px 14px;border-radius:14px;border:1.5px solid var(--bo);background:var(--s);color:var(--dk);font-family:var(--font-head);font-size:13px;font-weight:700;cursor:pointer;transition:all .2s;display:flex;align-items:center;justify-content:center;gap:7px}
+.hm-sociaal-section{padding-top:0;padding-bottom:0}
+.hm-sociaal-row{display:flex;gap:10px;margin:0}
+.hm-soc-btn{flex:1;padding:13px 14px;border-radius:14px;border:1.5px solid var(--bo);background:var(--s);color:var(--dk);font-family:var(--font-head);font-size:13px;font-weight:700;cursor:pointer;transition:all .2s;display:flex;align-items:center;justify-content:center;gap:7px}
 .hm-soc-btn:hover{transform:translateY(-2px);box-shadow:0 6px 18px rgba(0,0,0,.12)}
 .hm-soc-lb{border-color:rgba(251,191,36,.35);background:rgba(251,191,36,.07);color:var(--dk)}
 .hm-soc-lb:hover{border-color:rgba(251,191,36,.6);background:rgba(251,191,36,.13)}
@@ -3799,6 +3800,14 @@ html.dark .hsd-pill{background:var(--bg2);border-color:var(--bo2)}
 <!-- BENTO GRID (stats + quick actions) -->
 <div id="home-bento"></div>
 
+<!-- SOCIAAL SHORTCUTS -->
+<div class="w hm-sociaal-section">
+  <div class="hm-sociaal-row">
+    <button class="hm-soc-btn hm-soc-lb" onclick="show('sc-leaderboard');renderLeaderboard()">🏆 Leaderboard</button>
+    <button class="hm-soc-btn hm-soc-grp" onclick="show('sc-groep');renderGroepScreen()">👥 Mijn Groep</button>
+  </div>
+</div>
+
 <div class="w">
 
   <!-- DYNAMIC WIDGETS (JS-driven) -->
@@ -3845,12 +3854,6 @@ html.dark .hsd-pill{background:var(--bg2);border-color:var(--bo2)}
     <div class="ad-slot ad-slot--banner">
       <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-3580526892359138" data-ad-slot="0000000000" data-ad-format="horizontal" data-full-width-responsive="true"></ins>
     </div>
-  </div>
-
-  <!-- SOCIAAL SHORTCUTS -->
-  <div class="hm-sociaal-row">
-    <button class="hm-soc-btn hm-soc-lb" onclick="show('sc-leaderboard');renderLeaderboard()">🏆 Leaderboard</button>
-    <button class="hm-soc-btn hm-soc-grp" onclick="show('sc-groep');renderGroepScreen()">👥 Mijn Groep</button>
   </div>
 
   <!-- VAKKEN HEADER -->
@@ -10316,6 +10319,8 @@ async function renderGroepScreen(){
   const colors=['#f97316','#6366f1','#22c55e','#ec4899','#14b8a6','#f59e0b','#3b82f6','#8b5cf6'];
   const col=(name)=>colors[(name||'?').charCodeAt(0)%colors.length];
   const ini=(name)=>(name||'?').slice(0,2).toUpperCase();
+  const _myProf=JSON.parse(localStorage.getItem(PROF_KEY)||'{}');
+  const _myEvo=_myProf.animalId?getAnimalEmoji(_myProf.animalId,getTotalXP()):null;
 
   const sidebar=`
     <div class="grp-sidebar">
@@ -10347,8 +10352,10 @@ async function renderGroepScreen(){
       const slot=(m,cls,barH,barBg,medal,medalCls)=>{
         if(!m)return'';
         const isMe=currentUser&&m.user_id===currentUser.id;
-        return`<div class="grp-pod-col">
-          <div class="grp-pod-avatar ${cls}" style="background:${col(m.display_name)}22;border-color:${col(m.display_name)}66;color:${col(m.display_name)}">${ini(m.display_name)}</div>
+        const avContent=isMe&&_myEvo?`<span style="font-size:${cls==='first'?'26px':'18px'};line-height:1">${_myEvo}</span>`:ini(m.display_name);
+        const clickAttr=isMe?`onclick="openProfiel()" style="cursor:pointer" title="Mijn profiel"`:``;
+        return`<div class="grp-pod-col" ${clickAttr}>
+          <div class="grp-pod-avatar ${cls}" style="background:${isMe&&_myEvo?'rgba(var(--or-rgb),.12)':col(m.display_name)+'22'};border-color:${isMe&&_myEvo?'rgba(var(--or-rgb),.4)':col(m.display_name)+'66'};color:${col(m.display_name)}">${avContent}</div>
           <div class="grp-pod-name">${m.display_name||'?'}${isMe?'<br><span class="grp-me-badge">jij</span>':''}</div>
           <div class="grp-pod-score">${(m.score||0).toLocaleString('nl')} pts</div>
           <div class="grp-pod-bar" style="height:${barH}px;background:${barBg}"></div>
@@ -10367,9 +10374,12 @@ async function renderGroepScreen(){
     listMembers.forEach((m,i)=>{
       const isMe=currentUser&&m.user_id===currentUser.id;
       const rank=members.length>=2?i+4:i+1;
-      rows+=`<div class="grp-member-row${isMe?' me':''}">
+      const avContent=isMe&&_myEvo?`<span style="font-size:16px;line-height:1">${_myEvo}</span>`:ini(m.display_name);
+      const avBg=isMe&&_myEvo?'rgba(var(--or-rgb),.12)':col(m.display_name)+'22';
+      const avBorder=isMe&&_myEvo?'rgba(var(--or-rgb),.4)':col(m.display_name)+'44';
+      rows+=`<div class="grp-member-row${isMe?' me':''}"${isMe?' onclick="openProfiel()" style="cursor:pointer" title="Mijn profiel"':''}>
         <div class="grp-member-rank">${medals[rank-1]||rank}</div>
-        <div class="grp-member-avatar" style="background:${col(m.display_name)}22;color:${col(m.display_name)};border-color:${col(m.display_name)}44">${ini(m.display_name)}</div>
+        <div class="grp-member-avatar" style="background:${avBg};color:${col(m.display_name)};border-color:${avBorder}">${avContent}</div>
         <div class="grp-member-info">
           <div class="grp-member-name">${m.display_name||'Onbekend'}${isMe?'<span class="grp-me-badge">jij</span>':''}</div>
           ${m.vak_naam?`<div class="grp-member-vak">Beste bij ${m.vak_naam}</div>`:''}
