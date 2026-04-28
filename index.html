@@ -967,6 +967,20 @@ html.dark .qb{background:#2e3550}
 .sam-proces{display:flex;flex-direction:column;gap:6px;margin:10px 0 12px}
 .sam-proces-step{background:var(--bg2);border:1px solid var(--bo);border-radius:8px;padding:8px 12px;display:flex;align-items:flex-start;gap:10px;font-size:13px;line-height:1.55}
 .sam-proces-num{width:22px;height:22px;border-radius:50%;background:var(--or);color:#fff;font-size:11px;font-weight:800;text-align:center;line-height:22px;flex-shrink:0;margin-top:1px}
+/* ── Sam: inline check-vragen ── */
+.sam-check{background:var(--bg2);border:1px solid var(--bo);border-radius:10px;padding:11px 14px;margin:8px 0 14px}
+.sam-check-label{font-size:10px;font-weight:800;color:var(--or);text-transform:uppercase;letter-spacing:.7px;margin-bottom:8px;display:flex;align-items:center;gap:5px}
+.sam-check-q{font-size:13px;font-weight:600;color:var(--dk);line-height:1.5;margin-bottom:9px}
+.sam-check-opts{display:flex;flex-direction:column;gap:5px}
+.sam-check-opt{background:var(--s);border:1.5px solid var(--bo2,var(--bo));border-radius:8px;padding:7px 11px;font-size:12.5px;font-family:var(--font);cursor:pointer;text-align:left;line-height:1.45;color:var(--dk);transition:border-color .15s,background .15s}
+.sam-check-opt:hover{border-color:var(--or);background:rgba(var(--or-rgb),.06)}
+.ck-done .sam-check-opt{cursor:default;pointer-events:none}
+.sam-check-opt.ck-correct{background:rgba(34,197,94,.12)!important;border-color:#22c55e!important;color:#15803d;font-weight:600}
+.sam-check-opt.ck-wrong{background:rgba(239,68,68,.08)!important;border-color:#ef4444!important;color:#dc2626}
+.sam-check-opt.ck-reveal{background:rgba(34,197,94,.07)!important;border-color:#86efac!important}
+.sam-check-fb{font-size:12px;margin-top:8px;padding:7px 10px;border-radius:7px;line-height:1.5;border-left:3px solid transparent}
+.sam-check-fb.fb-ok{background:rgba(34,197,94,.09);border-color:#22c55e;color:#15803d}
+.sam-check-fb.fb-err{background:rgba(239,68,68,.07);border-color:#ef4444;color:var(--dk)}
 .fm{display:inline-block;background:var(--s);border:1px solid #C5D9F5;border-radius:6px;padding:2px 8px;font-family:monospace;font-size:12px;color:#1a56c4;margin:2px 3px}
 
 /* ── THEME TOGGLE ─────────────────────────────── */
@@ -10200,13 +10214,52 @@ function initSamInteractive(container, d) {
   const samEl = container.querySelector('.sam');
   if (samEl) {
     samEl.querySelectorAll('.sam-head').forEach(h => {
-      const ul = h.nextElementSibling;
-      if (!ul || ul.tagName !== 'UL') return;
       h.addEventListener('click', () => {
         const collapsed = h.classList.toggle('sh-collapsed');
-        ul.classList.toggle('sam-ul-hidden', collapsed);
+        // toggle ALL siblings until next sam-head (ul, tip, warn, check, onthoud, etc.)
+        let sib = h.nextElementSibling;
+        while (sib && !sib.classList.contains('sam-head')) {
+          sib.classList.toggle('sam-ul-hidden', collapsed);
+          sib = sib.nextElementSibling;
+        }
       });
     });
+
+    // 1b. Inline check-vragen — inject after every 2nd section, max 3 total
+    if (d.sv && d.sv.length >= 2) {
+      const heads = [...samEl.querySelectorAll('.sam-head')];
+      const pool = [...d.sv].sort(() => Math.random() - .5);
+      let qi = 0, added = 0;
+      heads.forEach((h, hi) => {
+        if (added >= 3 || qi >= pool.length) return;
+        if ((hi + 1) % 2 !== 0) return; // every 2nd section
+        // find last sibling of this section
+        let last = h.nextElementSibling;
+        while (last?.nextElementSibling && !last.nextElementSibling.classList.contains('sam-head')) last = last.nextElementSibling;
+        if (!last) return;
+        const q = pool[qi++];
+        const sh = q.o.map((t,i)=>({t,i})).sort(()=>Math.random()-.5);
+        const ci = sh.findIndex(s=>s.i===q.c);
+        const ck = document.createElement('div');
+        ck.className = 'sam-check';
+        ck.innerHTML = `<div class="sam-check-label">✓ Check je begrip</div><div class="sam-check-q">${q.v}</div><div class="sam-check-opts">${sh.map((s,i)=>`<button class="sam-check-opt" data-i="${i}">${s.t}</button>`).join('')}</div>`;
+        last.insertAdjacentElement('afterend', ck);
+        added++;
+        ck.querySelectorAll('.sam-check-opt').forEach(btn => {
+          btn.addEventListener('click', function() {
+            if (ck.classList.contains('ck-done')) return;
+            ck.classList.add('ck-done');
+            const i = +this.dataset.i, ok = i===ci;
+            this.classList.add(ok ? 'ck-correct' : 'ck-wrong');
+            if (!ok) ck.querySelectorAll('.sam-check-opt')[ci]?.classList.add('ck-reveal');
+            const fb = document.createElement('div');
+            fb.className = `sam-check-fb ${ok?'fb-ok':'fb-err'}`;
+            fb.textContent = ok ? '✓ Goed!' : `✗ ${(q.u||'').split('.')[0]||'Niet helemaal'}.`;
+            ck.querySelector('.sam-check-opts').after(fb);
+          });
+        });
+      });
+    }
   }
 
   // 2. Tab wiring
