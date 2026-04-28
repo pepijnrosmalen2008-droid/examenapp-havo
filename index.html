@@ -10272,7 +10272,7 @@ async function fetchGroepLeaderboard(groupId){
     const {data:members}=await SB.from('group_members').select('user_id,display_name').eq('group_id',groupId);
     if(!members||!members.length)return[];
     const userIds=members.map(m=>m.user_id);
-    const {data:scores}=await SB.from('leaderboard').select('user_id,score,vak_naam,domein_naam').in('user_id',userIds).order('score',{ascending:false});
+    const {data:scores}=await SB.from('leaderboard').select('user_id,score,vak_naam,domein_naam,animal_id,stage_idx').in('user_id',userIds).order('score',{ascending:false});
     // Aggregate best score per user
     const best={};
     (scores||[]).forEach(r=>{if(!best[r.user_id]||r.score>best[r.user_id].score)best[r.user_id]={...r};});
@@ -10321,6 +10321,15 @@ async function renderGroepScreen(){
   const ini=(name)=>(name||'?').slice(0,2).toUpperCase();
   const _myProf=JSON.parse(localStorage.getItem(PROF_KEY)||'{}');
   const _myEvo=_myProf.animalId?getAnimalEmoji(_myProf.animalId,getTotalXP()):null;
+  const evoEmoji=(m)=>{
+    const isMe=currentUser&&m.user_id===currentUser.id;
+    if(isMe&&_myEvo)return _myEvo;
+    if(!m.animal_id)return null;
+    const a=getAnimalById(m.animal_id);
+    if(!a)return null;
+    const idx=m.stage_idx??0;
+    return a.svg?(a.fallback?.[idx]||a.fallback?.[0]||'⭐'):(a.s[idx]||a.s[0]);
+  };
 
   const sidebar=`
     <div class="grp-sidebar">
@@ -10352,10 +10361,13 @@ async function renderGroepScreen(){
       const slot=(m,cls,barH,barBg,medal,medalCls)=>{
         if(!m)return'';
         const isMe=currentUser&&m.user_id===currentUser.id;
-        const avContent=isMe&&_myEvo?`<span style="font-size:${cls==='first'?'26px':'18px'};line-height:1">${_myEvo}</span>`:ini(m.display_name);
+        const emo=evoEmoji(m);
+        const avContent=emo?`<span style="font-size:${cls==='first'?'26px':'18px'};line-height:1">${emo}</span>`:ini(m.display_name);
+        const avBg=emo?(isMe?'rgba(var(--or-rgb),.12)':col(m.display_name)+'18'):col(m.display_name)+'22';
+        const avBorder=emo?(isMe?'rgba(var(--or-rgb),.4)':col(m.display_name)+'55'):col(m.display_name)+'66';
         const clickAttr=isMe?`onclick="openProfiel()" style="cursor:pointer" title="Mijn profiel"`:``;
         return`<div class="grp-pod-col" ${clickAttr}>
-          <div class="grp-pod-avatar ${cls}" style="background:${isMe&&_myEvo?'rgba(var(--or-rgb),.12)':col(m.display_name)+'22'};border-color:${isMe&&_myEvo?'rgba(var(--or-rgb),.4)':col(m.display_name)+'66'};color:${col(m.display_name)}">${avContent}</div>
+          <div class="grp-pod-avatar ${cls}" style="background:${avBg};border-color:${avBorder};color:${col(m.display_name)}">${avContent}</div>
           <div class="grp-pod-name">${m.display_name||'?'}${isMe?'<br><span class="grp-me-badge">jij</span>':''}</div>
           <div class="grp-pod-score">${(m.score||0).toLocaleString('nl')} pts</div>
           <div class="grp-pod-bar" style="height:${barH}px;background:${barBg}"></div>
@@ -10374,9 +10386,10 @@ async function renderGroepScreen(){
     listMembers.forEach((m,i)=>{
       const isMe=currentUser&&m.user_id===currentUser.id;
       const rank=members.length>=2?i+4:i+1;
-      const avContent=isMe&&_myEvo?`<span style="font-size:16px;line-height:1">${_myEvo}</span>`:ini(m.display_name);
-      const avBg=isMe&&_myEvo?'rgba(var(--or-rgb),.12)':col(m.display_name)+'22';
-      const avBorder=isMe&&_myEvo?'rgba(var(--or-rgb),.4)':col(m.display_name)+'44';
+      const emo=evoEmoji(m);
+      const avContent=emo?`<span style="font-size:16px;line-height:1">${emo}</span>`:ini(m.display_name);
+      const avBg=emo?(isMe?'rgba(var(--or-rgb),.12)':col(m.display_name)+'18'):col(m.display_name)+'22';
+      const avBorder=emo?(isMe?'rgba(var(--or-rgb),.4)':col(m.display_name)+'44'):col(m.display_name)+'44';
       rows+=`<div class="grp-member-row${isMe?' me':''}"${isMe?' onclick="openProfiel()" style="cursor:pointer" title="Mijn profiel"':''}>
         <div class="grp-member-rank">${medals[rank-1]||rank}</div>
         <div class="grp-member-avatar" style="background:${avBg};color:${col(m.display_name)};border-color:${avBorder}">${avContent}</div>
