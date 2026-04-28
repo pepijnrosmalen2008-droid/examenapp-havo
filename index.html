@@ -3492,6 +3492,76 @@ html.dark .hsd-pill{background:var(--bg2);border-color:var(--bo2)}
 .feat-disc-title{font-size:13px;font-weight:800;color:var(--dk);margin-bottom:2px}
 .feat-disc-sub{font-size:12px;color:var(--mu);line-height:1.5}
 .feat-disc-btn{flex-shrink:0;padding:7px 12px;background:var(--or);color:#fff;border:none;border-radius:9px;font-size:12px;font-weight:700;cursor:pointer;font-family:var(--font);white-space:nowrap}
+/* ── MULTIPLAYER QUIZ ─────────────────────────────────────────── */
+.qmcd.qm-multi{background:linear-gradient(135deg,#1a1040,#0f1a35);border:1.5px solid rgba(139,92,246,.4)}
+.qmcd.qm-multi h3{color:#c4b5fd}
+.qmcd.qm-multi p{color:rgba(196,181,253,.7)}
+.qmcd.qm-multi .qm-arrow svg{stroke:#a78bfa}
+.qmcd.qm-multi:hover{border-color:#a78bfa;box-shadow:0 0 0 3px rgba(139,92,246,.18)}
+.mq-overlay{position:fixed;inset:0;z-index:9000;background:#0d0d1a;flex-direction:column;align-items:center;justify-content:center;padding:16px;overflow-y:auto}
+.mq-phase{display:none;width:100%;max-width:560px;position:relative}
+.mq-phase.on{display:flex;flex-direction:column;align-items:center}
+.mq-close{position:fixed;top:16px;right:16px;background:rgba(255,255,255,.08);border:none;color:rgba(255,255,255,.6);font-size:16px;cursor:pointer;padding:6px 12px;border-radius:10px;font-family:var(--font);z-index:10;transition:background .15s}
+.mq-close:hover{background:rgba(255,255,255,.16);color:#fff}
+.mq-card{background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.1);border-radius:24px;padding:28px 24px;width:100%;text-align:center}
+.mq-entry-title{font-family:var(--font-head);font-size:24px;font-weight:900;color:#fff;margin-bottom:6px}
+.mq-entry-sub{font-size:14px;color:rgba(255,255,255,.5);margin-bottom:20px}
+.mq-entry-vak{display:inline-block;font-size:13px;color:#a78bfa;font-weight:700;background:rgba(139,92,246,.14);padding:4px 14px;border-radius:20px;margin-bottom:20px}
+.mq-btn{display:block;width:100%;padding:14px;border:none;border-radius:14px;font-size:15px;font-weight:800;cursor:pointer;font-family:var(--font);transition:opacity .15s,transform .1s;margin-bottom:10px;color:#fff}
+.mq-btn:hover{opacity:.88;transform:translateY(-1px)}
+.mq-btn-host{background:linear-gradient(135deg,#7c3aed,#5b21b6)}
+.mq-btn-join{background:linear-gradient(135deg,#1368ce,#0f52a8);flex-shrink:0;width:auto;padding:12px 20px;margin-bottom:0}
+.mq-or{color:rgba(255,255,255,.3);font-size:12px;margin:8px 0;text-align:center}
+.mq-join-row{display:flex;gap:8px;width:100%;margin-top:4px}
+.mq-code-input{flex:1;padding:12px 16px;background:rgba(255,255,255,.07);border:1.5px solid rgba(255,255,255,.18);border-radius:12px;color:#fff;font-size:20px;font-weight:900;font-family:var(--font);letter-spacing:5px;text-transform:uppercase;text-align:center;outline:none;transition:border-color .15s}
+.mq-code-input:focus{border-color:#a78bfa}
+.mq-code-input::placeholder{color:rgba(255,255,255,.2);letter-spacing:2px;font-size:13px;font-weight:400}
+.mq-lobby-label{font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:1.5px;color:rgba(255,255,255,.4);margin-bottom:8px}
+.mq-lobby-code{font-family:var(--font-head);font-size:54px;font-weight:900;color:#fff;letter-spacing:10px;line-height:1;margin-bottom:6px}
+.mq-lobby-vak{font-size:13px;color:rgba(255,255,255,.45);margin-bottom:4px}
+.mq-lobby-count{font-size:13px;font-weight:700;color:#a78bfa;margin-bottom:14px}
+.mq-players-wrap{display:flex;flex-wrap:wrap;gap:7px;justify-content:center;min-height:36px;margin-bottom:18px;width:100%}
+.mq-player-chip{display:flex;align-items:center;gap:5px;background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.1);border-radius:24px;padding:5px 12px;animation:mqPop .35s cubic-bezier(.34,1.56,.64,1)}
+@keyframes mqPop{from{opacity:0;transform:scale(.4)}to{opacity:1;transform:scale(1)}}
+.mq-player-av{font-size:17px;line-height:1}
+.mq-player-nm{font-size:13px;font-weight:700;color:#e2e8f0}
+.mq-lobby-hint{font-size:12px;color:rgba(255,255,255,.3);margin-top:6px}
+.mq-btn-start{background:linear-gradient(135deg,#16a34a,#15803d)}
+.mq-phase-game.on{flex-direction:column;min-height:calc(100dvh - 32px);width:100%;max-width:640px;justify-content:space-between;padding:0}
+.mq-q-header{display:flex;align-items:center;justify-content:space-between;width:100%;padding:0 4px;margin-bottom:14px}
+.mq-q-num{font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:1px;color:rgba(255,255,255,.4)}
+.mq-timer-wrap{display:flex;align-items:center;gap:8px}
+.mq-timer{font-family:var(--font-head);font-size:32px;font-weight:900;color:#fff;min-width:32px;text-align:right;line-height:1}
+.mq-timer.urgent{color:#ef4444;animation:pulse .5s infinite}
+.mq-tbar-bg{flex:1;max-width:120px;height:6px;background:rgba(255,255,255,.12);border-radius:3px;overflow:hidden}
+.mq-tbar{height:100%;background:linear-gradient(90deg,#7c3aed,#a78bfa);border-radius:3px;width:100%}
+.mq-q-text{background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.1);border-radius:20px;padding:22px 20px;font-size:clamp(15px,2.6vw,21px);font-weight:700;color:#fff;text-align:center;line-height:1.45;width:100%;margin-bottom:16px}
+.mq-opts{display:grid;grid-template-columns:1fr 1fr;gap:10px;width:100%}
+.mq-opt{padding:18px 14px;border:none;border-radius:16px;color:#fff;font-size:clamp(13px,2vw,15px);font-weight:700;cursor:pointer;font-family:var(--font);text-align:left;line-height:1.35;transition:opacity .2s,transform .1s,filter .2s}
+.mq-opt:hover:not(:disabled){filter:brightness(1.12);transform:scale(1.02)}
+.mq-opt:active:not(:disabled){transform:scale(.97)}
+.mq-opt:disabled{cursor:default}
+.mq-opt.correct{outline:3px solid #fff;box-shadow:0 0 20px rgba(255,255,255,.3)}
+.mq-opt.wrong{opacity:.28;filter:grayscale(.5)}
+.mq-opt.chosen{outline:3px solid rgba(255,255,255,.7)}
+.mq-opt.dimmed{opacity:.25}
+.mq-answered-banner{text-align:center;font-size:14px;font-weight:700;color:rgba(255,255,255,.5);padding:8px;min-height:32px}
+.mq-reveal-result{font-size:30px;font-weight:900;margin-bottom:16px;min-height:38px}
+.mq-reveal-expl{font-size:13px;color:rgba(255,255,255,.55);margin:-4px 0 14px;line-height:1.5;max-width:400px;margin-left:auto;margin-right:auto}
+.mq-lb-row{display:flex;align-items:center;gap:10px;padding:8px 12px;border-radius:12px;background:rgba(255,255,255,.05);margin-bottom:6px}
+.mq-lb-pos{font-size:13px;font-weight:800;color:rgba(255,255,255,.4);width:22px;text-align:center}
+.mq-lb-av{font-size:17px;line-height:1}
+.mq-lb-nm{flex:1;font-size:13px;font-weight:700;color:#e2e8f0;text-align:left}
+.mq-lb-pts{font-size:13px;font-weight:800;color:#a78bfa}
+.mq-reveal-wait{font-size:12px;color:rgba(255,255,255,.3);margin-top:14px;text-align:center}
+.mq-final-title{font-family:var(--font-head);font-size:26px;font-weight:900;color:#fff;margin-bottom:20px}
+.mq-final-row{display:flex;align-items:center;gap:12px;padding:10px 14px;border-radius:14px;background:rgba(255,255,255,.04);margin-bottom:8px;text-align:left}
+.mq-final-top{background:rgba(139,92,246,.14);border:1px solid rgba(139,92,246,.3)}
+.mq-final-pos{font-size:22px;width:30px;text-align:center}
+.mq-final-av{font-size:22px;line-height:1}
+.mq-final-nm{flex:1;font-size:14px;font-weight:700;color:#e2e8f0}
+.mq-final-score{font-size:14px;font-weight:800;color:#a78bfa}
+@media(max-width:480px){.mq-lobby-code{font-size:40px;letter-spacing:6px}.mq-opts{grid-template-columns:1fr}.mq-opt{padding:16px 14px}}
 /* ── FEATURE 5: XP URGENT PILL ──────────────────────────── */
 .hsd-pill.hsd-xp-urgent{border-color:rgba(234,179,8,.5);background:linear-gradient(135deg,rgba(234,179,8,.1),rgba(234,179,8,.04))}
 .hsd-pill.hsd-xp-urgent .hsd-val{color:#ca8a04}
@@ -4264,6 +4334,14 @@ html.dark .hsd-pill{background:var(--bg2);border-color:var(--bo2)}
         <div class="qm-tags"><span class="qm-tag">🃏 Flashcards</span><span class="qm-tag">Ja / Nee</span></div>
       </div>
 
+      <div class="qmcd qm-multi" onclick="openMultiQuiz()">
+        <div class="qm-arrow"><svg viewBox="0 0 24 24"><polyline points="9 18 15 12 9 6"/></svg></div>
+        <div class="qmci"><svg viewBox="0 0 24 24" stroke="#a78bfa"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></div>
+        <h3>Speel met vrienden</h3>
+        <p>Kahoot-stijl multiplayer quiz. Maak een spelcode en race met vrienden om de topscore.</p>
+        <div class="qm-tags"><span class="qm-tag">👥 Multiplayer</span><span class="qm-tag">10 vragen</span><span class="qm-tag">Live</span></div>
+      </div>
+
       <div class="qmcd qm-race race-qmcd">
         <div class="qmci"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3h18M3 3v6l9 3 9-3V3M12 12v9M8 21h8"/></svg></div>
         <h3>Bot Race 🤖</h3>
@@ -4274,6 +4352,77 @@ html.dark .hsd-pill{background:var(--bg2);border-color:var(--bo2)}
     </div>
   </div>
 </div>
+</div>
+
+<!-- MULTIPLAYER OVERLAY -->
+<div id="mq-overlay" class="mq-overlay" style="display:none" role="dialog" aria-modal="true" aria-label="Multiplayer quiz">
+  <button class="mq-close" onclick="mqClose()" aria-label="Sluiten">✕ Sluiten</button>
+
+  <!-- Entry -->
+  <div class="mq-phase on" data-phase="entry">
+    <div class="mq-card">
+      <div class="mq-entry-title">👥 Speel met vrienden</div>
+      <div class="mq-entry-sub">Kahoot-stijl multiplayer via een spelcode</div>
+      <div class="mq-entry-vak" id="mq-entry-vak"></div>
+      <button class="mq-btn mq-btn-host" onclick="mqHost()">🏠 Nieuw spel starten</button>
+      <div class="mq-or">— of doe mee met een bestaand spel —</div>
+      <div class="mq-join-row">
+        <input class="mq-code-input" id="mq-join-code" placeholder="SPELCODE" maxlength="6" autocomplete="off" aria-label="Spelcode invoeren">
+        <button class="mq-btn mq-btn-join" onclick="mqJoin()">Doe mee →</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Lobby -->
+  <div class="mq-phase" data-phase="lobby">
+    <div class="mq-card">
+      <div class="mq-lobby-label">Spelcode</div>
+      <div class="mq-lobby-code" id="mq-code-display">------</div>
+      <div class="mq-lobby-vak" id="mq-vak-display"></div>
+      <div class="mq-lobby-count" id="mq-player-count">0 spelers</div>
+      <div class="mq-players-wrap" id="mq-players-wrap"></div>
+      <button class="mq-btn mq-btn-start" id="mq-start-btn" onclick="mqStartGame()" style="display:none">▶ Start het spel</button>
+      <div class="mq-lobby-hint" id="mq-lobby-hint">Stuur de spelcode naar je vrienden</div>
+    </div>
+  </div>
+
+  <!-- Game -->
+  <div class="mq-phase mq-phase-game" data-phase="game">
+    <div class="mq-q-header">
+      <span class="mq-q-num" id="mq-q-num">Vraag 1/10</span>
+      <div class="mq-timer-wrap">
+        <div class="mq-tbar-bg"><div class="mq-tbar" id="mq-tbar"></div></div>
+        <span class="mq-timer" id="mq-timer">15</span>
+      </div>
+    </div>
+    <div class="mq-q-text" id="mq-q-text"></div>
+    <div class="mq-opts" id="mq-opts">
+      <button class="mq-opt" onclick="mqAnswer(0)"></button>
+      <button class="mq-opt" onclick="mqAnswer(1)"></button>
+      <button class="mq-opt" onclick="mqAnswer(2)"></button>
+      <button class="mq-opt" onclick="mqAnswer(3)"></button>
+    </div>
+    <div class="mq-answered-banner" id="mq-answered-banner"></div>
+  </div>
+
+  <!-- Reveal -->
+  <div class="mq-phase" data-phase="reveal">
+    <div class="mq-card">
+      <div class="mq-reveal-result" id="mq-reveal-result"></div>
+      <div class="mq-reveal-expl" id="mq-reveal-expl"></div>
+      <div id="mq-reveal-lb"></div>
+      <div class="mq-reveal-wait" id="mq-reveal-wait">Volgende vraag komt eraan…</div>
+    </div>
+  </div>
+
+  <!-- Final -->
+  <div class="mq-phase" data-phase="final">
+    <div class="mq-card">
+      <div class="mq-final-title">🏆 Eindstand</div>
+      <div id="mq-final-lb"></div>
+      <button class="mq-btn" style="background:rgba(255,255,255,.1);margin-top:16px" onclick="mqClose()">Afsluiten</button>
+    </div>
+  </div>
 </div>
 
 <!-- QUIZ -->
@@ -16366,6 +16515,216 @@ window.addEventListener('load',()=>{
     setTimeout(_routeFromHash,120);
   }
 });
+</script>
+<script>
+/* ═══════ MULTIPLAYER QUIZ (Kahoot-stijl) ═══════ */
+const MQ_GUEST_KEY='slagio_mq_guest';
+let MQ=null;
+
+function _mqId(){let id=localStorage.getItem(MQ_GUEST_KEY);if(!id){id='g'+Math.random().toString(36).slice(2,9);localStorage.setItem(MQ_GUEST_KEY,id);}return currentUser?.id||id;}
+function _mqName(){try{return JSON.parse(localStorage.getItem(PROF_KEY)||'{}').naam||'Speler';}catch(e){return'Speler';}}
+function _mqAvatar(){try{return JSON.parse(localStorage.getItem(PROF_KEY)||'{}').avatar||'🐾';}catch(e){return'🐾';}}
+function _mqCode(){const c='ABCDEFGHJKLMNPQRSTUVWXYZ23456789';return Array.from({length:6},()=>c[Math.floor(Math.random()*c.length)]).join('');}
+
+function _mqPhase(ph){
+  document.querySelectorAll('#mq-overlay .mq-phase').forEach(el=>el.classList.toggle('on',el.dataset.phase===ph));
+}
+
+function openMultiQuiz(){
+  if(!ST.vak||!ST.domein){showToast('Kies eerst een vak en domein','#ef4444');return;}
+  const el=document.getElementById('mq-entry-vak');
+  if(el)el.textContent=ST.vak.naam+' · '+ST.domein.naam;
+  const inp=document.getElementById('mq-join-code');
+  if(inp)inp.value='';
+  document.getElementById('mq-overlay').style.display='flex';
+  _mqPhase('entry');
+}
+
+function mqClose(){
+  if(MQ?.channel){try{SB.removeChannel(MQ.channel);}catch(e){}}
+  if(MQ?.timer)clearInterval(MQ.timer);
+  MQ=null;
+  document.getElementById('mq-overlay').style.display='none';
+}
+
+function _mqRenderLobby(){
+  const wrap=document.getElementById('mq-players-wrap');
+  const cnt=document.getElementById('mq-player-count');
+  const startBtn=document.getElementById('mq-start-btn');
+  const hint=document.getElementById('mq-lobby-hint');
+  const pl=MQ?.players||[];
+  if(wrap)wrap.innerHTML=pl.map(p=>`<div class="mq-player-chip"><span class="mq-player-av">${p.avatar}</span><span class="mq-player-nm">${p.name}</span></div>`).join('');
+  if(cnt)cnt.textContent=pl.length+' speler'+(pl.length===1?'':'s');
+  if(startBtn)startBtn.style.display=MQ?.isHost&&pl.length>=1?'block':'none';
+  if(hint)hint.textContent=MQ?.isHost?'Stuur de spelcode naar je vrienden':'Wachten op de host om het spel te starten…';
+}
+
+async function mqHost(){
+  const code=_mqCode();
+  const me={id:_mqId(),name:_mqName(),avatar:_mqAvatar()};
+  const pool=ST.domein.sv||[];
+  const qs=(pool.length<=10?[...pool]:[...pool].sort(()=>Math.random()-.5).slice(0,10)).map(q=>{
+    const m=[0,1,2,3];for(let i=3;i>0;i--){const j=Math.floor(Math.random()*(i+1));[m[i],m[j]]=[m[j],m[i]];}
+    return{v:q.v,o:m.map(i=>q.o[i]||''),c:m.indexOf(q.c),u:q.u||''};
+  });
+  MQ={room:code,isHost:true,me,players:[{...me,score:0}],questions:qs,currentQ:0,answers:{},scores:{[me.id]:0},timer:null,channel:null};
+
+  const ch=SB.channel('mq_'+code,{config:{broadcast:{self:false}}});
+  MQ.channel=ch;
+  ch.on('broadcast',{event:'join'},({payload:p})=>{
+    if(MQ.players.find(x=>x.id===p.id))return;
+    MQ.players.push({...p,score:0});MQ.scores[p.id]=0;
+    _mqRenderLobby();
+    ch.send({type:'broadcast',event:'roster',payload:{players:MQ.players}});
+  });
+  ch.on('broadcast',{event:'answer'},({payload:{pid,choice,ms}})=>{
+    if(MQ.answers[pid]!==undefined)return;
+    MQ.answers[pid]={choice,ms};
+    if(Object.keys(MQ.answers).length>=MQ.players.length)_mqDoReveal();
+  });
+  await ch.subscribe();
+
+  document.getElementById('mq-code-display').textContent=code;
+  document.getElementById('mq-vak-display').textContent=ST.vak.naam+' · '+ST.domein.naam;
+  _mqRenderLobby();
+  _mqPhase('lobby');
+}
+
+async function mqJoin(){
+  const code=(document.getElementById('mq-join-code').value||'').toUpperCase().replace(/[^A-Z0-9]/g,'');
+  if(code.length!==6){showToast('Voer een geldige spelcode in (6 tekens)','#ef4444');return;}
+  const me={id:_mqId(),name:_mqName(),avatar:_mqAvatar()};
+  MQ={room:code,isHost:false,me,players:[me],questions:[],currentQ:0,answers:{},scores:{},timer:null,channel:null};
+
+  const ch=SB.channel('mq_'+code,{config:{broadcast:{self:false}}});
+  MQ.channel=ch;
+  ch.on('broadcast',{event:'roster'},({payload:{players}})=>{MQ.players=players;_mqRenderLobby();});
+  ch.on('broadcast',{event:'start'},({payload:{questions}})=>{MQ.questions=questions;MQ.currentQ=0;_mqShowQ();});
+  ch.on('broadcast',{event:'reveal'},({payload})=>_mqShowReveal(payload));
+  ch.on('broadcast',{event:'next'},({payload:{idx}})=>{MQ.currentQ=idx;_mqShowQ();});
+  ch.on('broadcast',{event:'end'},({payload:{scores}})=>_mqShowFinal(scores));
+  await ch.subscribe();
+  await ch.send({type:'broadcast',event:'join',payload:me});
+
+  document.getElementById('mq-code-display').textContent=code;
+  document.getElementById('mq-vak-display').textContent='Wachten op host…';
+  _mqRenderLobby();
+  _mqPhase('lobby');
+}
+
+async function mqStartGame(){
+  if(!MQ?.isHost||MQ.players.length<1)return;
+  await MQ.channel.send({type:'broadcast',event:'start',payload:{questions:MQ.questions}});
+  MQ.currentQ=0;_mqShowQ();
+}
+
+const MQ_COLORS=['#e21b3c','#1368ce','#d89e00','#26890c'];
+const MQ_SHAPES=['▲','◆','●','■'];
+
+function _mqShowQ(){
+  const q=MQ.questions[MQ.currentQ];if(!q)return;
+  MQ.answers={};MQ._answered=false;MQ._qStart=Date.now();
+  document.getElementById('mq-q-num').textContent='Vraag '+(MQ.currentQ+1)+' / '+MQ.questions.length;
+  document.getElementById('mq-q-text').textContent=q.v;
+  document.getElementById('mq-answered-banner').textContent='';
+  const opts=document.querySelectorAll('.mq-opt');
+  opts.forEach((btn,i)=>{
+    btn.textContent=MQ_SHAPES[i]+' '+(q.o[i]||'');
+    btn.style.background=MQ_COLORS[i];
+    btn.disabled=false;
+    btn.className='mq-opt';
+    btn.setAttribute('aria-label','Antwoord '+(i+1)+': '+q.o[i]);
+  });
+  // Timer
+  let t=15;
+  const timerEl=document.getElementById('mq-timer');
+  const tbar=document.getElementById('mq-tbar');
+  if(timerEl)timerEl.textContent=t;
+  if(timerEl)timerEl.classList.remove('urgent');
+  if(tbar){tbar.style.transition='none';tbar.style.width='100%';requestAnimationFrame(()=>{tbar.style.transition='width 15s linear';tbar.style.width='0%';});}
+  if(MQ.timer)clearInterval(MQ.timer);
+  MQ.timer=setInterval(()=>{
+    t--;if(timerEl)timerEl.textContent=Math.max(0,t);
+    if(t<=5&&timerEl)timerEl.classList.add('urgent');
+    if(t<=0){clearInterval(MQ.timer);if(MQ.isHost)_mqDoReveal();}
+  },1000);
+  _mqPhase('game');
+}
+
+async function mqAnswer(idx){
+  if(!MQ||MQ._answered)return;
+  MQ._answered=true;
+  const ms=Date.now()-MQ._qStart;
+  document.querySelectorAll('.mq-opt').forEach((btn,i)=>{
+    btn.disabled=true;
+    btn.classList.add(i===idx?'chosen':'dimmed');
+  });
+  document.getElementById('mq-answered-banner').textContent='✓ Antwoord ingediend!';
+  if(MQ.isHost){MQ.answers[MQ.me.id]={choice:idx,ms};if(Object.keys(MQ.answers).length>=MQ.players.length)_mqDoReveal();}
+  else{await MQ.channel.send({type:'broadcast',event:'answer',payload:{pid:MQ.me.id,choice:idx,ms}});}
+}
+
+async function _mqDoReveal(){
+  if(!MQ?.isHost)return;
+  clearInterval(MQ.timer);
+  const q=MQ.questions[MQ.currentQ];const correct=q.c;
+  const results=MQ.players.map(p=>{
+    const ans=MQ.answers[p.id];
+    const ok=ans?.choice===correct;
+    const pts=ok?Math.round(500+500*Math.max(0,1-ans.ms/15000)):0;
+    MQ.scores[p.id]=(MQ.scores[p.id]||0)+pts;
+    return{id:p.id,name:p.name,avatar:p.avatar,ok,pts,choice:ans?.choice};
+  }).sort((a,b)=>MQ.scores[b.id]-MQ.scores[a.id]);
+  const payload={correct,results,scores:{...MQ.scores},q:MQ.currentQ,expl:q.u};
+  await MQ.channel.send({type:'broadcast',event:'reveal',payload});
+  _mqShowReveal(payload);
+}
+
+function _mqShowReveal(payload){
+  clearInterval(MQ.timer);
+  const{correct,results,scores,expl}=payload;
+  // Update buttons
+  document.querySelectorAll('.mq-opt').forEach((btn,i)=>{
+    btn.disabled=true;btn.className='mq-opt';
+    btn.classList.add(i===correct?'correct':'wrong');
+    btn.style.background=MQ_COLORS[i];
+  });
+  // My result
+  const mine=results.find(r=>r.id===MQ.me.id);
+  const resEl=document.getElementById('mq-reveal-result');
+  if(resEl){resEl.textContent=mine?.ok?('✓ +'+mine.pts+' punten!'):'✗ Helaas…';resEl.style.color=mine?.ok?'#4ade80':'#f87171';}
+  if(expl){const ex=document.getElementById('mq-reveal-expl');if(ex)ex.textContent=expl;}
+  // Mini leaderboard
+  const lb=document.getElementById('mq-reveal-lb');
+  if(lb)lb.innerHTML=results.slice(0,5).map((r,i)=>`<div class="mq-lb-row"><span class="mq-lb-pos">${i+1}</span><span class="mq-lb-av">${r.avatar}</span><span class="mq-lb-nm">${r.name}</span><span class="mq-lb-pts">${scores[r.id]||0} pt</span></div>`).join('');
+  const wait=document.getElementById('mq-reveal-wait');
+  if(wait)wait.textContent=MQ.isHost?'Volgende vraag begint zo…':'Wachten op host…';
+  // Show game screen with revealed answers before switching phase
+  setTimeout(()=>{
+    _mqPhase('reveal');
+    if(MQ?.isHost){
+      setTimeout(async()=>{
+        const next=MQ.currentQ+1;
+        if(next>=MQ.questions.length){
+          const fs=MQ.players.map(p=>({...p,score:MQ.scores[p.id]||0})).sort((a,b)=>b.score-a.score);
+          await MQ.channel.send({type:'broadcast',event:'end',payload:{scores:fs}});
+          _mqShowFinal(fs);
+        }else{
+          MQ.currentQ=next;
+          await MQ.channel.send({type:'broadcast',event:'next',payload:{idx:next}});
+          _mqShowQ();
+        }
+      },4000);
+    }
+  },800);
+}
+
+function _mqShowFinal(scores){
+  const lb=document.getElementById('mq-final-lb');
+  const medals=['🥇','🥈','🥉'];
+  if(lb)lb.innerHTML=(Array.isArray(scores)?scores:[]).map((p,i)=>`<div class="mq-final-row${i<3?' mq-final-top':''}"><span class="mq-final-pos">${medals[i]||i+1}</span><span class="mq-final-av">${p.avatar}</span><span class="mq-final-nm">${p.name}</span><span class="mq-final-score">${p.score} pt</span></div>`).join('');
+  _mqPhase('final');
+}
 </script>
 
 <!-- Bottom Navigation (mobile only) -->
