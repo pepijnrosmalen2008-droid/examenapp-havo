@@ -3479,6 +3479,15 @@ html.dark .hsd-pill{background:var(--bg2);border-color:var(--bo2)}
 .comeback-title{font-family:var(--font-head);font-size:16px;font-weight:800;color:var(--dk);margin-bottom:4px}
 .comeback-sub{font-size:13px;color:var(--mu);line-height:1.6;max-width:320px;margin:0 auto 10px}
 .comeback-xp{font-size:13px;font-weight:700;color:#22c55e;background:rgba(34,197,94,.1);border-radius:8px;padding:5px 12px;display:inline-block}
+.comeback-action{display:block;width:100%;margin-top:10px;padding:9px 14px;background:rgba(34,197,94,.15);border:1.5px solid rgba(34,197,94,.4);border-radius:10px;color:#22c55e;font-size:13px;font-weight:700;cursor:pointer;font-family:var(--font);transition:background .15s}
+.comeback-action:hover{background:rgba(34,197,94,.25)}
+.feat-disc-card{background:linear-gradient(135deg,rgba(99,102,241,.1),rgba(99,102,241,.04));border:1.5px solid rgba(99,102,241,.3);border-radius:16px;padding:14px 16px;margin:0 16px 14px;position:relative;display:flex;align-items:center;gap:12px}
+.feat-disc-close{position:absolute;top:8px;right:10px;background:none;border:none;color:var(--mu);font-size:15px;cursor:pointer;padding:2px 6px;border-radius:6px;line-height:1}
+.feat-disc-icon{font-size:28px;flex-shrink:0;line-height:1}
+.feat-disc-body{flex:1;min-width:0}
+.feat-disc-title{font-size:13px;font-weight:800;color:var(--dk);margin-bottom:2px}
+.feat-disc-sub{font-size:12px;color:var(--mu);line-height:1.5}
+.feat-disc-btn{flex-shrink:0;padding:7px 12px;background:var(--or);color:#fff;border:none;border-radius:9px;font-size:12px;font-weight:700;cursor:pointer;font-family:var(--font);white-space:nowrap}
 /* ── FEATURE 5: XP URGENT PILL ──────────────────────────── */
 .hsd-pill.hsd-xp-urgent{border-color:rgba(234,179,8,.5);background:linear-gradient(135deg,rgba(234,179,8,.1),rgba(234,179,8,.04))}
 .hsd-pill.hsd-xp-urgent .hsd-val{color:#ca8a04}
@@ -3939,6 +3948,8 @@ html.dark .hsd-pill{background:var(--bg2);border-color:var(--bo2)}
 
 <!-- COMEBACK CARD (Feature 4) -->
 <div id="comeback-card-home"></div>
+<!-- FEATURE DISCOVERY (one-time) -->
+<div id="feat-disc-home"></div>
 <!-- QUICK ACCESS CHIPS -->
 <div class="w"><div class="hm-quick-scroll" id="hm-quick-scroll"></div></div>
 <!-- BENTO GRID (stats + quick actions) -->
@@ -7207,7 +7218,7 @@ function show(id,_noHash){
     if(id==='sc-home')_pushHash('');
     else if(_SCREEN_HASHES[id])_pushHash(_SCREEN_HASHES[id]);
   }
-  if(id==='sc-home'){try{renderComebackCard();}catch(e){}}
+  if(id==='sc-home'){try{renderComebackCard();}catch(e){}try{renderFeatDisc();}catch(e){}}
   // Welcome screen gets its own indigo theme; level pages get their own theme
   if(id==='sc-welcome'){
     document.documentElement.classList.remove('level-havo','level-vwo');
@@ -11649,7 +11660,7 @@ function toonRes(){
   try{const _pbRes=savePB(ST.vak.id,ST.domein.id,pct);if(_pbRes.isNew){window._newPB=true;window._oldPB=_pbRes.prev?_pbRes.prev.score:null;}}catch(e){}
   // Rebuild grid and streak to update UI
   try{const g=document.getElementById('vakgrid');if(g){g.innerHTML='';buildGrid();}
-  renderStreak();renderFavHome();renderXPHome();renderDailyChallenge();renderDailyGoal();renderLiveCount();renderHomeStats();renderGreeting();try{renderComebackCard();}catch(e){}try{renderHmQuickChips();renderHmStatsStrip();}catch(e){}showDailyChallengePopup();}catch(e){}
+  renderStreak();renderFavHome();renderXPHome();renderDailyChallenge();renderDailyGoal();renderLiveCount();renderHomeStats();renderGreeting();try{renderComebackCard();}catch(e){}try{renderFeatDisc();}catch(e){}try{renderHmQuickChips();renderHmStatsStrip();}catch(e){}showDailyChallengePopup();}catch(e){}
   try{recordDailyGoal();}catch(e){};
   const isPerfect=pct===1&&ST.mode==='snel'&&tot>=3;
   if(isPerfect&&earnAch('perfect'))setTimeout(()=>showAch('🌟','Perfecte score! Geen enkel fout!',90),800);
@@ -15020,18 +15031,59 @@ function renderComebackCard(){
   const dayGap=Math.round(msGap/86400000);
   if(dayGap<2)return;
   checkComebackAch(dayGap);
-  el.innerHTML=`<div class="comeback-card">
-    <button class="comeback-close" onclick="sessionStorage.setItem('slagio_comeback_dismissed','1');this.closest('.comeback-card').remove()">✕</button>
-    <div class="comeback-icon">💪</div>
-    <div class="comeback-title">Welkom terug!</div>
-    <div class="comeback-sub">Je was ${dayGap} dag${dayGap>1?'en':''} weg — maar je bent er weer! Bouw je streak opnieuw op. Elke dag telt.</div>
-    <div class="comeback-xp">🎁 +50 XP comeback bonus</div>
-  </div>`;
+  const cbClose=document.createElement('button');
+  cbClose.className='comeback-close';
+  cbClose.textContent='✕';
+  cbClose.addEventListener('click',()=>{sessionStorage.setItem('slagio_comeback_dismissed','1');el.querySelector('.comeback-card')?.remove();});
+  const cbAct=document.createElement('button');
+  cbAct.className='comeback-action';
+  cbAct.textContent='📅 Bekijk je studieplan →';
+  cbAct.addEventListener('click',()=>{show('sc-schedule');renderStudieplan();});
+  const card=document.createElement('div');
+  card.className='comeback-card';
+  card.innerHTML=`<div class="comeback-icon">💪</div><div class="comeback-title">Welkom terug!</div><div class="comeback-sub">Je was ${dayGap} dag${dayGap>1?'en':''} weg — maar je bent er weer! Bouw je streak opnieuw op. Elke dag telt.</div><div class="comeback-xp">🎁 +50 XP comeback bonus</div>`;
+  card.prepend(cbClose);
+  card.appendChild(cbAct);
+  el.innerHTML='';
+  el.appendChild(card);
   if(!sessionStorage.getItem('slagio_comeback_xp')){
     try{addXP(50);}catch(e){}
     sessionStorage.setItem('slagio_comeback_xp','1');
     try{showXPToast(50);}catch(e){}
   }
+}
+
+const FEAT_DISC_KEY='slagio_feat_disc_v1';
+const FEAT_HINTS=[
+  {icon:'📅',title:'Persoonlijk studieplan',sub:'Slagio maakt automatisch een dagplanning tot je examendatum. Weet precies wat je wanneer moet oefenen.',act:'📅 Open studieplan',fn:()=>{show('sc-schedule');renderStudieplan();}},
+  {icon:'🏁',title:'Bot Race',sub:'Race tegen AI-tegenstanders over 15 vragen. Kies je vak en een moeilijkheidsgraad — en ga!',act:'🏁 Probeer Bot Race',fn:()=>show('sc-race')},
+  {icon:'📊',title:'Voortgangsrapport',sub:'Bekijk jouw score per vak en domein, aankomende examens en je zwakke punten in één overzicht.',act:'📊 Bekijk rapport',fn:()=>openRapport()},
+];
+function renderFeatDisc(){
+  const el=document.getElementById('feat-disc-home');
+  if(!el)return;
+  const dismissed=localStorage.getItem(FEAT_DISC_KEY);
+  if(dismissed)return;
+  const sd=getStreak();
+  if(!sd||!(sd.totalQuizzes>=1||sd.days?.length>=1))return;
+  const seen=JSON.parse(sessionStorage.getItem('slagio_feat_disc_seen')||'[]');
+  const hint=FEAT_HINTS.find(h=>!seen.includes(h.title))||null;
+  if(!hint){el.innerHTML='';return;}
+  seen.push(hint.title);
+  sessionStorage.setItem('slagio_feat_disc_seen',JSON.stringify(seen));
+  const card=document.createElement('div');
+  card.className='feat-disc-card';
+  const closeBtn=document.createElement('button');
+  closeBtn.className='feat-disc-close';closeBtn.textContent='✕';
+  closeBtn.addEventListener('click',()=>{localStorage.setItem(FEAT_DISC_KEY,'1');el.innerHTML='';});
+  const actBtn=document.createElement('button');
+  actBtn.className='feat-disc-btn';actBtn.textContent=hint.act;
+  actBtn.addEventListener('click',()=>{localStorage.setItem(FEAT_DISC_KEY,'1');el.innerHTML='';try{hint.fn();}catch(e){}});
+  card.innerHTML=`<div class="feat-disc-icon">${hint.icon}</div><div class="feat-disc-body"><div class="feat-disc-title">Wist je dit? ${hint.title}</div><div class="feat-disc-sub">${hint.sub}</div></div>`;
+  card.appendChild(actBtn);
+  card.appendChild(closeBtn);
+  el.innerHTML='';
+  el.appendChild(card);
 }
 
 // ═══════ REVIEW ═══════
@@ -16428,14 +16480,14 @@ window.addEventListener('load',()=>{
         <p>Kies een vak op de homepagina en tik op een <strong>CE-domein</strong>. Je ziet precies welke stof op het examen komt — inclusief een samenvatting om te lezen.</p>
       </div>
       <div class="tuto-slide">
-        <span class="tuto-icon">⚡</span>
-        <h2>Snelle quiz</h2>
-        <p>Beantwoord vragen zo <strong>snel en correct</strong> mogelijk. Je score hangt af van nauwkeurigheid én snelheid. Daarna zie je jouw voortgang per domein als percentage.</p>
+        <span class="tuto-icon">📅</span>
+        <h2>Persoonlijk studieplan</h2>
+        <p>Slagio maakt automatisch een <strong>dagplanning tot je examendatum</strong>. Per domein krijg je de juiste oefening: leerstof lezen, quiz, flashcards of herhalen — afhankelijk van jouw score.</p>
       </div>
       <div class="tuto-slide">
-        <span class="tuto-icon">⭐</span>
-        <h2>Favorieten & streak</h2>
-        <p>Sla domeinen op met <strong>⭐</strong> zodat je ze snel terugvindt op de homepagina. Oefen elke dag om je streak op te bouwen en badges te verdienen!</p>
+        <span class="tuto-icon">🏁</span>
+        <h2>Bot Race & meer functies</h2>
+        <p>Race in <strong>Bot Race</strong> tegen AI over 15 vragen. Of bekijk je <strong>voortgangsrapport</strong>, gebruik de <strong>cijfercalculator</strong> en ontdek echte <strong>CE-examens 2019–2025</strong> — alles via het menu onderaan.</p>
       </div>
       <div class="tuto-slide">
         <span class="tuto-icon">☁️</span>
