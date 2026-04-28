@@ -343,6 +343,7 @@
 /* Focus-indicatoren voor toetsenbordnavigatie */
 :focus-visible{outline:2px solid var(--or,#e8580c);outline-offset:2px;border-radius:4px}
 button:focus-visible,a:focus-visible{outline:2px solid var(--or,#e8580c);outline-offset:3px}
+[tabindex="-1"]:focus{outline:none}
 :root{
   --bg:#f5f6fa;--bg2:#eef0f5;--s:#FFFFFF;--dk:#1a1d26;
   --mu:#6b7280;--bo:#e2e5ed;--bo2:#d1d5e0;
@@ -3493,75 +3494,111 @@ html.dark .hsd-pill{background:var(--bg2);border-color:var(--bo2)}
 .feat-disc-sub{font-size:12px;color:var(--mu);line-height:1.5}
 .feat-disc-btn{flex-shrink:0;padding:7px 12px;background:var(--or);color:#fff;border:none;border-radius:9px;font-size:12px;font-weight:700;cursor:pointer;font-family:var(--font);white-space:nowrap}
 /* ── MULTIPLAYER QUIZ ─────────────────────────────────────────── */
-.qmcd.qm-multi{background:linear-gradient(135deg,#1a1040,#0f1a35);border:1.5px solid rgba(139,92,246,.4)}
+.qmcd.qm-multi{background:linear-gradient(135deg,#1a1040,#0e1428);border:1.5px solid rgba(139,92,246,.45);position:relative;overflow:hidden}
+.qmcd.qm-multi::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at top right,rgba(139,92,246,.18),transparent 70%);pointer-events:none}
 .qmcd.qm-multi h3{color:#c4b5fd}
-.qmcd.qm-multi p{color:rgba(196,181,253,.7)}
+.qmcd.qm-multi p{color:rgba(196,181,253,.65)}
 .qmcd.qm-multi .qm-arrow svg{stroke:#a78bfa}
-.qmcd.qm-multi:hover{border-color:#a78bfa;box-shadow:0 0 0 3px rgba(139,92,246,.18)}
-.mq-overlay{position:fixed;inset:0;z-index:9000;background:#0d0d1a;flex-direction:column;align-items:center;justify-content:center;padding:16px;overflow-y:auto}
-.mq-phase{display:none;width:100%;max-width:560px;position:relative}
-.mq-phase.on{display:flex;flex-direction:column;align-items:center}
-.mq-close{position:fixed;top:16px;right:16px;background:rgba(255,255,255,.08);border:none;color:rgba(255,255,255,.6);font-size:16px;cursor:pointer;padding:6px 12px;border-radius:10px;font-family:var(--font);z-index:10;transition:background .15s}
-.mq-close:hover{background:rgba(255,255,255,.16);color:#fff}
-.mq-card{background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.1);border-radius:24px;padding:28px 24px;width:100%;text-align:center}
-.mq-entry-title{font-family:var(--font-head);font-size:24px;font-weight:900;color:#fff;margin-bottom:6px}
-.mq-entry-sub{font-size:14px;color:rgba(255,255,255,.5);margin-bottom:20px}
-.mq-entry-vak{display:inline-block;font-size:13px;color:#a78bfa;font-weight:700;background:rgba(139,92,246,.14);padding:4px 14px;border-radius:20px;margin-bottom:20px}
-.mq-btn{display:block;width:100%;padding:14px;border:none;border-radius:14px;font-size:15px;font-weight:800;cursor:pointer;font-family:var(--font);transition:opacity .15s,transform .1s;margin-bottom:10px;color:#fff}
-.mq-btn:hover{opacity:.88;transform:translateY(-1px)}
-.mq-btn-host{background:linear-gradient(135deg,#7c3aed,#5b21b6)}
-.mq-btn-join{background:linear-gradient(135deg,#1368ce,#0f52a8);flex-shrink:0;width:auto;padding:12px 20px;margin-bottom:0}
-.mq-or{color:rgba(255,255,255,.3);font-size:12px;margin:8px 0;text-align:center}
-.mq-join-row{display:flex;gap:8px;width:100%;margin-top:4px}
-.mq-code-input{flex:1;padding:12px 16px;background:rgba(255,255,255,.07);border:1.5px solid rgba(255,255,255,.18);border-radius:12px;color:#fff;font-size:20px;font-weight:900;font-family:var(--font);letter-spacing:5px;text-transform:uppercase;text-align:center;outline:none;transition:border-color .15s}
-.mq-code-input:focus{border-color:#a78bfa}
-.mq-code-input::placeholder{color:rgba(255,255,255,.2);letter-spacing:2px;font-size:13px;font-weight:400}
-.mq-lobby-label{font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:1.5px;color:rgba(255,255,255,.4);margin-bottom:8px}
-.mq-lobby-code{font-family:var(--font-head);font-size:54px;font-weight:900;color:#fff;letter-spacing:10px;line-height:1;margin-bottom:6px}
-.mq-lobby-vak{font-size:13px;color:rgba(255,255,255,.45);margin-bottom:4px}
-.mq-lobby-count{font-size:13px;font-weight:700;color:#a78bfa;margin-bottom:14px}
-.mq-players-wrap{display:flex;flex-wrap:wrap;gap:7px;justify-content:center;min-height:36px;margin-bottom:18px;width:100%}
-.mq-player-chip{display:flex;align-items:center;gap:5px;background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.1);border-radius:24px;padding:5px 12px;animation:mqPop .35s cubic-bezier(.34,1.56,.64,1)}
-@keyframes mqPop{from{opacity:0;transform:scale(.4)}to{opacity:1;transform:scale(1)}}
-.mq-player-av{font-size:17px;line-height:1}
+.qmcd.qm-multi:hover{border-color:#a78bfa;box-shadow:0 0 0 3px rgba(139,92,246,.2),0 8px 32px rgba(139,92,246,.18)}
+
+/* overlay & shared */
+.mq-overlay{position:fixed;inset:0;z-index:9000;background:linear-gradient(145deg,#07060f 0%,#0c0a1e 50%,#060b14 100%);flex-direction:column;align-items:center;justify-content:center;padding:20px;overflow-y:auto}
+.mq-overlay::before{content:'';position:fixed;inset:0;background:radial-gradient(ellipse 80% 60% at 20% 10%,rgba(139,92,246,.12),transparent),radial-gradient(ellipse 60% 50% at 80% 80%,rgba(99,102,241,.1),transparent);pointer-events:none}
+.mq-phase{display:none;width:100%;max-width:560px;position:relative;z-index:1}
+.mq-phase.on{display:flex;flex-direction:column;align-items:center;animation:mqFadeUp .3s ease}
+@keyframes mqFadeUp{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:translateY(0)}}
+.mq-close{position:fixed;top:14px;right:14px;background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.1);color:rgba(255,255,255,.5);font-size:13px;font-weight:600;cursor:pointer;padding:7px 13px;border-radius:10px;font-family:var(--font);z-index:10;transition:all .15s;letter-spacing:.2px}
+.mq-close:hover{background:rgba(255,255,255,.14);color:#fff;border-color:rgba(255,255,255,.22)}
+
+/* card base */
+.mq-card{background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.1);border-radius:28px;padding:32px 28px;width:100%;text-align:center;box-shadow:0 24px 60px rgba(0,0,0,.4),inset 0 1px 0 rgba(255,255,255,.07)}
+
+/* entry screen */
+.mq-entry-icon{font-size:44px;margin-bottom:12px;display:block;line-height:1;filter:drop-shadow(0 0 20px rgba(139,92,246,.5))}
+.mq-entry-title{font-family:var(--font-head);font-size:26px;font-weight:900;color:#fff;margin-bottom:6px;letter-spacing:-.5px}
+.mq-entry-sub{font-size:14px;color:rgba(255,255,255,.45);margin-bottom:18px;line-height:1.6}
+.mq-entry-vak{display:inline-block;font-size:12px;color:#a78bfa;font-weight:700;background:rgba(139,92,246,.15);border:1px solid rgba(139,92,246,.3);padding:5px 16px;border-radius:20px;margin-bottom:24px;letter-spacing:.2px}
+.mq-btn{display:block;width:100%;padding:15px 20px;border:none;border-radius:14px;font-size:15px;font-weight:800;cursor:pointer;font-family:var(--font);transition:all .18s;margin-bottom:10px;color:#fff;letter-spacing:.1px;position:relative;overflow:hidden}
+.mq-btn::after{content:'';position:absolute;inset:0;background:linear-gradient(180deg,rgba(255,255,255,.1),transparent);pointer-events:none}
+.mq-btn:hover{transform:translateY(-2px);box-shadow:0 8px 28px rgba(0,0,0,.35)}
+.mq-btn:active{transform:translateY(0)}
+.mq-btn-host{background:linear-gradient(135deg,#7c3aed,#4f1fc7)}
+.mq-btn-join{background:linear-gradient(135deg,#1368ce,#0a47a0);flex-shrink:0;width:auto;padding:13px 22px;margin-bottom:0;font-size:14px}
+.mq-divider{display:flex;align-items:center;gap:10px;margin:16px 0;color:rgba(255,255,255,.2);font-size:12px}
+.mq-divider::before,.mq-divider::after{content:'';flex:1;height:1px;background:rgba(255,255,255,.08)}
+.mq-join-row{display:flex;gap:8px;width:100%}
+.mq-code-input{flex:1;padding:14px 16px;background:rgba(255,255,255,.06);border:1.5px solid rgba(255,255,255,.15);border-radius:12px;color:#fff;font-size:22px;font-weight:900;font-family:var(--font);letter-spacing:6px;text-transform:uppercase;text-align:center;outline:none;transition:all .18s}
+.mq-code-input:focus{border-color:#a78bfa;background:rgba(139,92,246,.08);box-shadow:0 0 0 3px rgba(139,92,246,.15)}
+.mq-code-input::placeholder{color:rgba(255,255,255,.18);letter-spacing:2px;font-size:13px;font-weight:400}
+
+/* lobby */
+.mq-lobby-label{font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:2px;color:rgba(255,255,255,.35);margin-bottom:10px}
+.mq-lobby-code{font-family:var(--font-head);font-size:58px;font-weight:900;letter-spacing:12px;line-height:1;margin-bottom:8px;background:linear-gradient(135deg,#e2d9ff,#a78bfa);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;text-shadow:none;filter:drop-shadow(0 0 30px rgba(139,92,246,.4))}
+.mq-lobby-vak{font-size:13px;color:rgba(255,255,255,.4);margin-bottom:6px}
+.mq-lobby-count{font-size:13px;font-weight:700;color:#a78bfa;margin-bottom:16px;background:rgba(139,92,246,.12);border:1px solid rgba(139,92,246,.25);padding:4px 14px;border-radius:20px;display:inline-block}
+.mq-players-wrap{display:flex;flex-wrap:wrap;gap:8px;justify-content:center;min-height:44px;margin-bottom:20px;width:100%}
+.mq-player-chip{display:flex;align-items:center;gap:6px;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.12);border-radius:24px;padding:6px 14px;animation:mqPop .4s cubic-bezier(.34,1.56,.64,1);box-shadow:0 2px 8px rgba(0,0,0,.2)}
+@keyframes mqPop{from{opacity:0;transform:scale(.3) translateY(10px)}to{opacity:1;transform:scale(1) translateY(0)}}
+.mq-player-av{font-size:18px;line-height:1;filter:drop-shadow(0 1px 3px rgba(0,0,0,.3))}
 .mq-player-nm{font-size:13px;font-weight:700;color:#e2e8f0}
-.mq-lobby-hint{font-size:12px;color:rgba(255,255,255,.3);margin-top:6px}
-.mq-btn-start{background:linear-gradient(135deg,#16a34a,#15803d)}
-.mq-phase-game.on{flex-direction:column;min-height:calc(100dvh - 32px);width:100%;max-width:640px;justify-content:space-between;padding:0}
-.mq-q-header{display:flex;align-items:center;justify-content:space-between;width:100%;padding:0 4px;margin-bottom:14px}
-.mq-q-num{font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:1px;color:rgba(255,255,255,.4)}
-.mq-timer-wrap{display:flex;align-items:center;gap:8px}
-.mq-timer{font-family:var(--font-head);font-size:32px;font-weight:900;color:#fff;min-width:32px;text-align:right;line-height:1}
-.mq-timer.urgent{color:#ef4444;animation:pulse .5s infinite}
-.mq-tbar-bg{flex:1;max-width:120px;height:6px;background:rgba(255,255,255,.12);border-radius:3px;overflow:hidden}
-.mq-tbar{height:100%;background:linear-gradient(90deg,#7c3aed,#a78bfa);border-radius:3px;width:100%}
-.mq-q-text{background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.1);border-radius:20px;padding:22px 20px;font-size:clamp(15px,2.6vw,21px);font-weight:700;color:#fff;text-align:center;line-height:1.45;width:100%;margin-bottom:16px}
+.mq-btn-start{background:linear-gradient(135deg,#16a34a,#0f7a35);box-shadow:0 4px 20px rgba(22,163,74,.3)}
+.mq-btn-start:hover{box-shadow:0 8px 28px rgba(22,163,74,.45)}
+.mq-lobby-hint{font-size:12px;color:rgba(255,255,255,.25);margin-top:8px;letter-spacing:.2px}
+
+/* game screen */
+.mq-phase-game.on{flex-direction:column;min-height:calc(100dvh - 40px);width:100%;max-width:680px;justify-content:space-between;padding:0;gap:12px}
+.mq-q-header{display:flex;align-items:center;justify-content:space-between;width:100%;padding:0 2px}
+.mq-q-meta{display:flex;flex-direction:column;gap:2px}
+.mq-q-num{font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:1.2px;color:rgba(255,255,255,.35)}
+.mq-q-players{font-size:11px;color:rgba(255,255,255,.25)}
+.mq-timer-wrap{display:flex;flex-direction:column;align-items:flex-end;gap:6px}
+.mq-timer{font-family:var(--font-head);font-size:38px;font-weight:900;color:#fff;line-height:1;min-width:40px;text-align:right;transition:color .3s}
+.mq-timer.urgent{color:#ef4444;animation:mqPulse .6s ease-in-out infinite}
+@keyframes mqPulse{0%,100%{transform:scale(1)}50%{transform:scale(1.08)}}
+.mq-tbar-bg{width:120px;height:5px;background:rgba(255,255,255,.1);border-radius:3px;overflow:hidden}
+.mq-tbar{height:100%;background:linear-gradient(90deg,#6d28d9,#a78bfa,#c4b5fd);border-radius:3px;width:100%;transform-origin:left}
+.mq-q-text{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.1);border-radius:22px;padding:24px 22px;font-size:clamp(16px,2.8vw,22px);font-weight:700;color:#fff;text-align:center;line-height:1.5;width:100%;box-shadow:inset 0 1px 0 rgba(255,255,255,.07)}
 .mq-opts{display:grid;grid-template-columns:1fr 1fr;gap:10px;width:100%}
-.mq-opt{padding:18px 14px;border:none;border-radius:16px;color:#fff;font-size:clamp(13px,2vw,15px);font-weight:700;cursor:pointer;font-family:var(--font);text-align:left;line-height:1.35;transition:opacity .2s,transform .1s,filter .2s}
-.mq-opt:hover:not(:disabled){filter:brightness(1.12);transform:scale(1.02)}
+.mq-opt{padding:20px 16px;border:none;border-radius:18px;color:#fff;font-size:clamp(13px,2vw,15px);font-weight:700;cursor:pointer;font-family:var(--font);text-align:left;line-height:1.4;transition:all .18s;position:relative;overflow:hidden}
+.mq-opt::after{content:'';position:absolute;inset:0;background:linear-gradient(180deg,rgba(255,255,255,.12) 0%,transparent 60%);pointer-events:none}
+.mq-opt:hover:not(:disabled){transform:scale(1.03) translateY(-2px);box-shadow:0 8px 24px rgba(0,0,0,.35)}
 .mq-opt:active:not(:disabled){transform:scale(.97)}
 .mq-opt:disabled{cursor:default}
-.mq-opt.correct{outline:3px solid #fff;box-shadow:0 0 20px rgba(255,255,255,.3)}
-.mq-opt.wrong{opacity:.28;filter:grayscale(.5)}
-.mq-opt.chosen{outline:3px solid rgba(255,255,255,.7)}
-.mq-opt.dimmed{opacity:.25}
-.mq-answered-banner{text-align:center;font-size:14px;font-weight:700;color:rgba(255,255,255,.5);padding:8px;min-height:32px}
-.mq-reveal-result{font-size:30px;font-weight:900;margin-bottom:16px;min-height:38px}
-.mq-reveal-expl{font-size:13px;color:rgba(255,255,255,.55);margin:-4px 0 14px;line-height:1.5;max-width:400px;margin-left:auto;margin-right:auto}
-.mq-lb-row{display:flex;align-items:center;gap:10px;padding:8px 12px;border-radius:12px;background:rgba(255,255,255,.05);margin-bottom:6px}
-.mq-lb-pos{font-size:13px;font-weight:800;color:rgba(255,255,255,.4);width:22px;text-align:center}
-.mq-lb-av{font-size:17px;line-height:1}
+.mq-opt.correct{outline:3px solid rgba(255,255,255,.9);box-shadow:0 0 0 6px rgba(255,255,255,.15),0 8px 32px rgba(0,0,0,.3);transform:scale(1.03)}
+.mq-opt.wrong{opacity:.22;filter:grayscale(.6) brightness(.7)}
+.mq-opt.chosen{outline:3px solid rgba(255,255,255,.6);box-shadow:0 0 0 5px rgba(255,255,255,.1)}
+.mq-opt.dimmed{opacity:.22;filter:brightness(.7)}
+.mq-answered-banner{text-align:center;font-size:13px;font-weight:700;color:rgba(255,255,255,.4);min-height:28px;display:flex;align-items:center;justify-content:center;gap:6px}
+
+/* reveal */
+.mq-reveal-result{font-size:32px;font-weight:900;margin-bottom:10px;min-height:40px;animation:mqPop .4s cubic-bezier(.34,1.56,.64,1)}
+.mq-reveal-expl{font-size:13px;color:rgba(255,255,255,.5);margin-bottom:16px;line-height:1.6;padding:10px 14px;background:rgba(255,255,255,.04);border-radius:12px;text-align:left}
+.mq-lb-title{font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:1.5px;color:rgba(255,255,255,.3);margin-bottom:10px}
+.mq-lb-row{display:flex;align-items:center;gap:10px;padding:9px 12px;border-radius:12px;background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.06);margin-bottom:6px;transition:background .2s}
+.mq-lb-row:first-child{background:rgba(139,92,246,.12);border-color:rgba(139,92,246,.25)}
+.mq-lb-pos{font-size:13px;font-weight:800;color:rgba(255,255,255,.35);width:22px;text-align:center}
+.mq-lb-av{font-size:18px;line-height:1}
 .mq-lb-nm{flex:1;font-size:13px;font-weight:700;color:#e2e8f0;text-align:left}
 .mq-lb-pts{font-size:13px;font-weight:800;color:#a78bfa}
-.mq-reveal-wait{font-size:12px;color:rgba(255,255,255,.3);margin-top:14px;text-align:center}
-.mq-final-title{font-family:var(--font-head);font-size:26px;font-weight:900;color:#fff;margin-bottom:20px}
-.mq-final-row{display:flex;align-items:center;gap:12px;padding:10px 14px;border-radius:14px;background:rgba(255,255,255,.04);margin-bottom:8px;text-align:left}
-.mq-final-top{background:rgba(139,92,246,.14);border:1px solid rgba(139,92,246,.3)}
-.mq-final-pos{font-size:22px;width:30px;text-align:center}
-.mq-final-av{font-size:22px;line-height:1}
+.mq-lb-delta{font-size:11px;color:#4ade80;font-weight:700;margin-left:4px}
+.mq-reveal-wait{font-size:12px;color:rgba(255,255,255,.25);margin-top:14px;text-align:center;letter-spacing:.3px}
+
+/* final */
+.mq-final-title{font-family:var(--font-head);font-size:28px;font-weight:900;color:#fff;margin-bottom:4px;letter-spacing:-.5px}
+.mq-final-sub{font-size:13px;color:rgba(255,255,255,.35);margin-bottom:22px}
+.mq-final-row{display:flex;align-items:center;gap:12px;padding:11px 16px;border-radius:16px;background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.07);margin-bottom:8px;text-align:left;transition:all .2s}
+.mq-final-top{background:linear-gradient(135deg,rgba(139,92,246,.18),rgba(99,102,241,.1));border-color:rgba(139,92,246,.35);box-shadow:0 4px 16px rgba(139,92,246,.15)}
+.mq-final-pos{font-size:24px;width:32px;text-align:center}
+.mq-final-av{font-size:24px;line-height:1;filter:drop-shadow(0 2px 4px rgba(0,0,0,.3))}
 .mq-final-nm{flex:1;font-size:14px;font-weight:700;color:#e2e8f0}
-.mq-final-score{font-size:14px;font-weight:800;color:#a78bfa}
-@media(max-width:480px){.mq-lobby-code{font-size:40px;letter-spacing:6px}.mq-opts{grid-template-columns:1fr}.mq-opt{padding:16px 14px}}
+.mq-final-score{font-size:15px;font-weight:900;color:#a78bfa}
+
+@media(max-width:480px){
+  .mq-lobby-code{font-size:42px;letter-spacing:7px}
+  .mq-opts{grid-template-columns:1fr}
+  .mq-opt{padding:17px 16px}
+  .mq-card{padding:24px 18px;border-radius:22px}
+}
 /* ── FEATURE 5: XP URGENT PILL ──────────────────────────── */
 .hsd-pill.hsd-xp-urgent{border-color:rgba(234,179,8,.5);background:linear-gradient(135deg,rgba(234,179,8,.1),rgba(234,179,8,.04))}
 .hsd-pill.hsd-xp-urgent .hsd-val{color:#ca8a04}
@@ -4361,11 +4398,12 @@ html.dark .hsd-pill{background:var(--bg2);border-color:var(--bo2)}
   <!-- Entry -->
   <div class="mq-phase on" data-phase="entry">
     <div class="mq-card">
-      <div class="mq-entry-title">👥 Speel met vrienden</div>
-      <div class="mq-entry-sub">Kahoot-stijl multiplayer via een spelcode</div>
+      <span class="mq-entry-icon">👥</span>
+      <div class="mq-entry-title">Speel met vrienden</div>
+      <div class="mq-entry-sub">Multiplayer quiz — race met vrienden via een spelcode</div>
       <div class="mq-entry-vak" id="mq-entry-vak"></div>
       <button class="mq-btn mq-btn-host" onclick="mqHost()">🏠 Nieuw spel starten</button>
-      <div class="mq-or">— of doe mee met een bestaand spel —</div>
+      <div class="mq-divider">of doe mee met een bestaand spel</div>
       <div class="mq-join-row">
         <input class="mq-code-input" id="mq-join-code" placeholder="SPELCODE" maxlength="6" autocomplete="off" aria-label="Spelcode invoeren">
         <button class="mq-btn mq-btn-join" onclick="mqJoin()">Doe mee →</button>
@@ -4389,7 +4427,10 @@ html.dark .hsd-pill{background:var(--bg2);border-color:var(--bo2)}
   <!-- Game -->
   <div class="mq-phase mq-phase-game" data-phase="game">
     <div class="mq-q-header">
-      <span class="mq-q-num" id="mq-q-num">Vraag 1/10</span>
+      <div class="mq-q-meta">
+        <span class="mq-q-num" id="mq-q-num">Vraag 1/10</span>
+        <span class="mq-q-players" id="mq-q-players"></span>
+      </div>
       <div class="mq-timer-wrap">
         <div class="mq-tbar-bg"><div class="mq-tbar" id="mq-tbar"></div></div>
         <span class="mq-timer" id="mq-timer">15</span>
@@ -4409,7 +4450,8 @@ html.dark .hsd-pill{background:var(--bg2);border-color:var(--bo2)}
   <div class="mq-phase" data-phase="reveal">
     <div class="mq-card">
       <div class="mq-reveal-result" id="mq-reveal-result"></div>
-      <div class="mq-reveal-expl" id="mq-reveal-expl"></div>
+      <div class="mq-reveal-expl" id="mq-reveal-expl" style="display:none"></div>
+      <div class="mq-lb-title">Tussenstand</div>
       <div id="mq-reveal-lb"></div>
       <div class="mq-reveal-wait" id="mq-reveal-wait">Volgende vraag komt eraan…</div>
     </div>
@@ -4419,8 +4461,9 @@ html.dark .hsd-pill{background:var(--bg2);border-color:var(--bo2)}
   <div class="mq-phase" data-phase="final">
     <div class="mq-card">
       <div class="mq-final-title">🏆 Eindstand</div>
+      <div class="mq-final-sub">Goed gespeeld!</div>
       <div id="mq-final-lb"></div>
-      <button class="mq-btn" style="background:rgba(255,255,255,.1);margin-top:16px" onclick="mqClose()">Afsluiten</button>
+      <button class="mq-btn" style="background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.14);margin-top:8px" onclick="mqClose()">Afsluiten</button>
     </div>
   </div>
 </div>
@@ -16625,6 +16668,7 @@ function _mqShowQ(){
   const q=MQ.questions[MQ.currentQ];if(!q)return;
   MQ.answers={};MQ._answered=false;MQ._qStart=Date.now();
   document.getElementById('mq-q-num').textContent='Vraag '+(MQ.currentQ+1)+' / '+MQ.questions.length;
+  const qpl=document.getElementById('mq-q-players');if(qpl)qpl.textContent=MQ.players.length+' speler'+(MQ.players.length===1?'':'s');
   document.getElementById('mq-q-text').textContent=q.v;
   document.getElementById('mq-answered-banner').textContent='';
   const opts=document.querySelectorAll('.mq-opt');
@@ -16693,7 +16737,7 @@ function _mqShowReveal(payload){
   const mine=results.find(r=>r.id===MQ.me.id);
   const resEl=document.getElementById('mq-reveal-result');
   if(resEl){resEl.textContent=mine?.ok?('✓ +'+mine.pts+' punten!'):'✗ Helaas…';resEl.style.color=mine?.ok?'#4ade80':'#f87171';}
-  if(expl){const ex=document.getElementById('mq-reveal-expl');if(ex)ex.textContent=expl;}
+  const ex=document.getElementById('mq-reveal-expl');if(ex){ex.textContent=expl||'';ex.style.display=expl?'block':'none';}
   // Mini leaderboard
   const lb=document.getElementById('mq-reveal-lb');
   if(lb)lb.innerHTML=results.slice(0,5).map((r,i)=>`<div class="mq-lb-row"><span class="mq-lb-pos">${i+1}</span><span class="mq-lb-av">${r.avatar}</span><span class="mq-lb-nm">${r.name}</span><span class="mq-lb-pts">${scores[r.id]||0} pt</span></div>`).join('');
