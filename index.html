@@ -3473,6 +3473,13 @@ html.dark .hsd-pill{background:var(--bg2);border-color:var(--bo2)}
   .res-xp-avatar-ring{width:60px!important;height:60px!important}
   .res-xp-num{font-size:26px}
   .res-xp-lvl{font-size:12px;word-break:break-word}
+
+  /* Quiz antwoord-opties: altijd 1 kolom op mobiel (lange tekst past niet naast elkaar) */
+  .qopts{grid-template-columns:1fr!important}
+
+  /* Resultaat-scherm: verberg minder wichtige knoppen — zitten al in navigatie */
+  .rbtns>button:nth-child(6){display:none!important}  /* Andere modus */
+  .rbtns>button:nth-child(8){display:none!important}  /* Home */
 }
 </style>
 </head>
