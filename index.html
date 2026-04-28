@@ -3585,13 +3585,36 @@ html.dark .hsd-pill{background:var(--bg2);border-color:var(--bo2)}
 .sp-section-sub{font-size:13px;color:var(--mu);margin-bottom:14px}
 .sp-gen-btn{padding:11px 20px;background:var(--or);color:#fff;border:none;border-radius:12px;font-family:var(--font-head);font-size:13px;font-weight:800;cursor:pointer;margin-bottom:16px;transition:opacity .2s}
 .sp-gen-btn:hover{opacity:.88}
-.sp-day{display:flex;gap:12px;align-items:flex-start;padding:10px 14px;border-radius:12px;background:var(--s);border:1px solid var(--bo);margin-bottom:8px}
-.sp-day-date{font-family:var(--font-head);font-size:11px;font-weight:800;color:var(--mu);width:38px;flex-shrink:0;padding-top:3px;text-align:center}
-.sp-day-tasks{flex:1}
-.sp-task{font-size:13px;color:var(--dk);line-height:1.6}
 .sp-empty{text-align:center;padding:28px 16px;color:var(--mu);font-size:14px;line-height:1.6}
-.sp-exam-divider{display:flex;align-items:center;gap:10px;margin:12px 0;font-size:12px;font-weight:700;color:var(--or)}
-.sp-exam-divider::before,.sp-exam-divider::after{content:'';flex:1;height:1px;background:rgba(var(--or-rgb),.3)}
+.sp-summary{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:20px}
+.sp-sum-card{background:var(--bg2);border-radius:14px;padding:13px 14px;text-align:center}
+.sp-sum-val{font-family:var(--font-head);font-size:22px;font-weight:900;color:var(--or)}
+.sp-sum-lbl{font-size:11px;color:var(--mu);margin-top:2px}
+.sp-vak-block{margin-bottom:20px;border-radius:16px;overflow:hidden;border:1px solid var(--bo)}
+.sp-vak-header{display:flex;align-items:center;gap:12px;padding:13px 16px;background:var(--bg2)}
+.sp-vak-name{font-family:var(--font-head);font-size:15px;font-weight:800;color:var(--dk);flex:1}
+.sp-vak-countdown{font-family:var(--font-head);font-size:12px;font-weight:800;padding:4px 10px;border-radius:20px;flex-shrink:0}
+.sp-vak-countdown.urgent{background:rgba(239,68,68,.15);color:#ef4444}
+.sp-vak-countdown.soon{background:rgba(249,115,22,.15);color:#f97316}
+.sp-vak-countdown.ok{background:rgba(34,197,94,.12);color:#22c55e}
+.sp-vak-progress{height:3px;background:var(--bo)}
+.sp-vak-progress-fill{height:100%;background:linear-gradient(90deg,var(--or),color-mix(in srgb,var(--or) 70%,#f97316));transition:width .6s}
+.sp-day-row{display:flex;align-items:flex-start;gap:0;border-top:1px solid var(--bo)}
+.sp-day-row.today{background:rgba(var(--or-rgb),.06)}
+.sp-day-label{width:72px;flex-shrink:0;padding:12px 14px;border-right:1px solid var(--bo)}
+.sp-day-label-top{font-family:var(--font-head);font-size:11px;font-weight:800;color:var(--dk)}
+.sp-day-label-top.today-lbl{color:var(--or)}
+.sp-day-label-sub{font-size:10px;color:var(--mu);margin-top:1px}
+.sp-day-chips{display:flex;flex-wrap:wrap;gap:6px;padding:10px 14px;flex:1;align-items:center}
+.sp-chip{display:inline-flex;align-items:center;gap:5px;padding:5px 10px;border-radius:20px;font-size:12px;font-weight:700;cursor:default;line-height:1.3}
+.sp-chip.never{background:rgba(239,68,68,.12);color:#ef4444;border:1px solid rgba(239,68,68,.25)}
+.sp-chip.weak{background:rgba(249,115,22,.12);color:#f97316;border:1px solid rgba(249,115,22,.25)}
+.sp-chip.ok{background:rgba(34,197,94,.1);color:#22c55e;border:1px solid rgba(34,197,94,.22)}
+.sp-chip-pct{font-size:10px;opacity:.8}
+.sp-exam-day{display:flex;align-items:center;gap:10px;padding:11px 16px;background:rgba(var(--or-rgb),.1);border-top:1px solid rgba(var(--or-rgb),.2)}
+.sp-exam-day-icon{font-size:18px}
+.sp-exam-day-text{font-family:var(--font-head);font-size:13px;font-weight:800;color:var(--or)}
+.sp-exam-day-sub{font-size:11px;color:var(--mu)}
 /* ── TOEGANKELIJKHEID ────────────────────────────── */
 .acc-row{display:flex;justify-content:space-between;align-items:center;padding:13px 0;border-bottom:1px solid var(--bo)}
 .acc-row:last-child{border-bottom:none}
@@ -4430,7 +4453,7 @@ html.dark .hsd-pill{background:var(--bg2);border-color:var(--bo2)}
   <!-- STUDIEPLAN -->
   <div class="sp-section">
     <div class="sp-section-title">📅 Persoonlijk studieplan</div>
-    <div class="sp-section-sub">Op basis van je examendatum en zwakste domeinen — gegenereerd in één klik</div>
+    <div class="sp-section-sub">Per vak: welke domeinen je moet oefenen, in welke volgorde en wanneer — op basis van je beheersing en de examendatum</div>
     <button class="sp-gen-btn" onclick="renderStudieplan()">✨ Genereer mijn studieplan</button>
     <div id="studieplan-content"></div>
   </div>
@@ -11697,55 +11720,115 @@ async function shareRapport(){
 function renderStudieplan(){
   const el=document.getElementById('studieplan-content');
   if(!el)return;
-  el.innerHTML=`<div class="sp-empty">⏳ Laden...</div>`;
   const mijn=getMijnVakken();
   const today=new Date();today.setHours(0,0,0,0);
+  const dagNamen=['zo','ma','di','wo','do','vr','za'];
+  const maandN=['jan','feb','mrt','apr','mei','jun','jul','aug','sep','okt','nov','dec'];
+
   const upcoming=EXAM_SCHEDULE.filter(e=>{
     const d=new Date(e.datum);
-    return d>today&&(mijn.length===0||(e.vakId&&mijn.includes(e.vakId)));
+    return d>today&&e.vakId&&(mijn.length===0||mijn.includes(e.vakId));
   });
-  if(!upcoming.length){el.innerHTML='<div class="sp-empty">Geen aankomende examens gevonden.<br>Stel je vakken in via het rooster boven.</div>';return;}
-  const dagMap={};
+  if(!upcoming.length){el.innerHTML='<div class="sp-empty">Geen aankomende examens gevonden.<br>Vink eerst je vakken aan via "Alleen mijn vakken" boven.</div>';return;}
+
+  // Build domain lists per vak, sorted by urgency
+  const vakBlocks=[];
+  let totalToDo=0,totalDone=0;
   upcoming.forEach(ex=>{
-    if(!ex.vakId)return;
     const vak=getVK().find(v=>v.id===ex.vakId);
     if(!vak||!vak.domeinen)return;
     const examD=new Date(ex.datum);examD.setHours(0,0,0,0);
     const daysLeft=Math.ceil((examD-today)/864e5);
     if(daysLeft<=0)return;
+
     const domains=vak.domeinen.map(dom=>{
-      const {pct}=getDomeinBestPct(vak.id,dom.id);
-      return{naam:dom.naam,pct};
-    }).sort((a,b)=>a.pct-b.pct);
-    const slots=Math.max(1,Math.min(daysLeft-1,domains.length));
-    domains.slice(0,slots).forEach((dom,i)=>{
-      const sd=new Date(today);sd.setDate(today.getDate()+i);
-      if(sd.getDay()===0)sd.setDate(sd.getDate()+1);
-      if(sd>=examD)return;
-      const key=sd.toISOString().slice(0,10);
-      if(!dagMap[key])dagMap[key]={tasks:[],exams:[]};
-      dagMap[key].tasks.push({vakNaam:vak.naam,domNaam:dom.naam,pct:dom.pct,examDatum:ex.datum});
+      const {pct,hasData}=getDomeinBestPct(vak.id,dom.id);
+      const urgency=!hasData?0:pct<0.4?1:pct<0.7?2:3; // 0=never,1=weak,2=medium,3=ok
+      return{naam:dom.naam,pct,hasData,urgency};
+    }).sort((a,b)=>a.urgency-b.urgency||a.pct-b.pct);
+
+    const needWork=domains.filter(d=>d.urgency<3);
+    const reviews=domains.filter(d=>d.urgency===3);
+    totalToDo+=needWork.length;
+    totalDone+=reviews.length;
+
+    // Assign study days: spread needWork across available days (skip sundays, cap 2/day)
+    const studyDays=[];
+    let dayOffset=0;
+    needWork.forEach((dom,i)=>{
+      let sd=new Date(today);sd.setDate(today.getDate()+dayOffset);
+      // Skip sundays
+      while(sd.getDay()===0){dayOffset++;sd.setDate(today.getDate()+dayOffset);}
+      // Don't schedule on or after exam day
+      if(sd>=examD){return;}
+      studyDays.push({date:new Date(sd),dom});
+      // Advance to next day every 2 tasks
+      if((i+1)%2===0)dayOffset++;
     });
-    const examKey=ex.datum;
-    if(!dagMap[examKey])dagMap[examKey]={tasks:[],exams:[]};
-    dagMap[examKey].exams.push(vak.naam);
+    // Day before exam: review all ok domains (brief)
+    const dayBefore=new Date(examD);dayBefore.setDate(examD.getDate()-1);
+    if(dayBefore>today&&reviews.length){
+      studyDays.push({date:dayBefore,dom:null,review:true,reviewDoms:reviews});
+    }
+
+    vakBlocks.push({vak,examD,daysLeft,domains,studyDays,reviews,needWork});
   });
-  const dates=Object.keys(dagMap).sort().slice(0,21);
-  if(!dates.length){el.innerHTML='<div class="sp-empty">Je hebt alle domeinen al goed geoefend! 🎉</div>';return;}
-  const dagNamen=['zo','ma','di','wo','do','vr','za'];
-  const maandN=['jan','feb','mrt','apr','mei','jun','jul','aug','sep','okt','nov','dec'];
-  let html='';
-  dates.forEach(dateStr=>{
-    const d=new Date(dateStr+'T00:00:00');
-    const {tasks,exams}=dagMap[dateStr];
-    if(exams.length){html+=`<div class="sp-exam-divider">📋 Examen: ${exams.join(' & ')}</div>`;}
-    if(!tasks.length)return;
-    html+=`<div class="sp-day">
-      <div class="sp-day-date">${dagNamen[d.getDay()]}<br>${d.getDate()} ${maandN[d.getMonth()]}</div>
-      <div class="sp-day-tasks">${tasks.map(t=>`<div class="sp-task">${t.vakNaam} <span style="color:var(--mu)">·</span> ${t.domNaam}${t.pct>0?` <span style="font-size:11px;font-weight:700;color:${t.pct<0.5?'#ef4444':t.pct<0.7?'#f97316':'#22c55e'}">${Math.round(t.pct*100)}%</span>`:''}</div>`).join('')}</div>
+
+  if(!vakBlocks.length){el.innerHTML='<div class="sp-empty">Alle domeinen zijn al goed geoefend! 🎉</div>';return;}
+
+  // Summary
+  let html=`<div class="sp-summary">
+    <div class="sp-sum-card"><div class="sp-sum-val">${totalToDo}</div><div class="sp-sum-lbl">Domeinen te oefenen</div></div>
+    <div class="sp-sum-card"><div class="sp-sum-val">${upcoming.length}</div><div class="sp-sum-lbl">Aankomende examens</div></div>
+  </div>`;
+
+  // Per-vak blocks
+  vakBlocks.forEach(({vak,examD,daysLeft,studyDays,reviews,needWork})=>{
+    const urgCls=daysLeft<=5?'urgent':daysLeft<=12?'soon':'ok';
+    const urgTxt=daysLeft<=5?`⚠️ Nog ${daysLeft} dagen!`:`over ${daysLeft} dagen`;
+    const domainsDone=reviews.length;
+    const domainsTotal=needWork.length+reviews.length;
+    const donePct=domainsTotal?Math.round(domainsDone/domainsTotal*100):100;
+
+    let rows='';
+    studyDays.forEach(({date,dom,review,reviewDoms})=>{
+      const isToday=date.getTime()===today.getTime();
+      const isTomorrow=date.getTime()===today.getTime()+864e5;
+      const dayLbl=isToday?'Vandaag':isTomorrow?'Morgen':`${dagNamen[date.getDay()]}`;
+      const dateLbl=`${date.getDate()} ${maandN[date.getMonth()]}`;
+      if(review){
+        rows+=`<div class="sp-day-row">
+          <div class="sp-day-label"><div class="sp-day-label-top">Herhalen</div><div class="sp-day-label-sub">${dateLbl}</div></div>
+          <div class="sp-day-chips">${reviewDoms.slice(0,4).map(d=>`<span class="sp-chip ok">↩ ${d.naam} <span class="sp-chip-pct">${Math.round(d.pct*100)}%</span></span>`).join('')}${reviewDoms.length>4?`<span style="font-size:11px;color:var(--mu)">+${reviewDoms.length-4} meer</span>`:''}</div>
+        </div>`;
+      } else if(dom){
+        const chipCls=!dom.hasData?'never':dom.urgency===1?'weak':dom.urgency===2?'weak':'ok';
+        const pctTxt=dom.hasData?`${Math.round(dom.pct*100)}%`:'nieuw';
+        rows+=`<div class="sp-day-row${isToday?' today':''}">
+          <div class="sp-day-label"><div class="sp-day-label-top${isToday?' today-lbl':''}">${dayLbl}</div><div class="sp-day-label-sub">${dateLbl}</div></div>
+          <div class="sp-day-chips"><span class="sp-chip ${chipCls}">${dom.naam} <span class="sp-chip-pct">${pctTxt}</span></span></div>
+        </div>`;
+      }
+    });
+
+    // Exam day row
+    rows+=`<div class="sp-exam-day">
+      <div class="sp-exam-day-icon">🎓</div>
+      <div><div class="sp-exam-day-text">Examen ${vak.naam}</div><div class="sp-exam-day-sub">${examD.getDate()} ${maandN[examD.getMonth()]} · ${upcoming.find(e=>e.vakId===vak.id)?.tijd||''}</div></div>
+    </div>`;
+
+    html+=`<div class="sp-vak-block">
+      <div class="sp-vak-header">
+        <span style="font-size:20px">${vak.kleur?`<span style="width:10px;height:10px;border-radius:50%;display:inline-block;background:${vak.kleur};margin-right:4px;vertical-align:middle"></span>`:''}${vak.naam}</span>
+        <span class="sp-vak-name" style="font-size:13px;font-weight:600;color:var(--mu)">${needWork.length?`${needWork.length} te oefenen`:''} ${reviews.length?`· ${reviews.length} klaar`:''}</span>
+        <span class="sp-vak-countdown ${urgCls}">${urgTxt}</span>
+      </div>
+      <div class="sp-vak-progress"><div class="sp-vak-progress-fill" style="width:${donePct}%"></div></div>
+      ${rows||'<div style="padding:12px 16px;font-size:13px;color:var(--mu)">Alle domeinen al geoefend 🎉</div>'}
     </div>`;
   });
-  el.innerHTML=html||'<div class="sp-empty">Je hebt alle domeinen al goed geoefend! 🎉</div>';
+
+  el.innerHTML=html;
 }
 // ═══════ TOEGANKELIJKHEID ═══════
 const ACC_KEY='slagio_acc_v1';
