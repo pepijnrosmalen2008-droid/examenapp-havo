@@ -11928,18 +11928,25 @@ function renderHmQuickChips(){
   const vak=ST.vak||null;
   const vakNaam=vak?.naam||null;
   const chips=[
-    {icon:'📅',label:'Studieplan',onclick:`show('sc-schedule')`},
-    {icon:'📊',label:'Voortgang',onclick:`openRapport()`},
-    {icon:'📋',label:'Actieplan',onclick:`show('sc-calc');setTimeout(()=>switchCalc('plan'),100)`},
+    {icon:'📅',label:'Studieplan',fn:()=>show('sc-schedule')},
+    {icon:'📊',label:'Voortgang',fn:()=>openRapport()},
+    {icon:'📋',label:'Actieplan',fn:()=>{show('sc-calc');setTimeout(()=>switchCalc('plan'),100);}},
     vakNaam
-      ?{icon:'📄',label:`${vakNaam} examens`,onclick:`openLastVakCE()`}
-      :{icon:'📄',label:'CE-examens',onclick:`show('sc-home')`},
+      ?{icon:'📄',label:`${vakNaam} examens`,fn:()=>openLastVakCE()}
+      :{icon:'📄',label:'CE-examens',fn:()=>show('sc-schedule')},
     vakNaam
-      ?{icon:'🏁',label:`Race — ${vakNaam}`,onclick:`openLastVakRace()`}
-      :{icon:'🏁',label:'Bot Race',onclick:`show('sc-home')`},
-    {icon:'🏅',label:'Badges',onclick:`openProfiel()`},
+      ?{icon:'🏁',label:`Race — ${vakNaam}`,fn:()=>openLastVakRace()}
+      :{icon:'🏁',label:'Bot Race',fn:()=>show('sc-home')},
+    {icon:'🏅',label:'Badges',fn:()=>openProfiel()},
   ];
-  wrap.innerHTML=chips.map(c=>`<button class="hm-qchip" onclick="${c.onclick}">${c.icon} ${c.label}</button>`).join('');
+  wrap.innerHTML='';
+  chips.forEach(c=>{
+    const btn=document.createElement('button');
+    btn.className='hm-qchip';
+    btn.textContent=`${c.icon} ${c.label}`;
+    btn.addEventListener('click',c.fn);
+    wrap.appendChild(btn);
+  });
 }
 function renderHmStatsStrip(){
   const wrap=document.getElementById('hm-stats-strip-wrap');
