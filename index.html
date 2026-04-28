@@ -1444,62 +1444,83 @@ html.dark .qb{background:#2e3550}
 .chal-result-banner.lose{background:rgba(239,68,68,.1);color:#ef4444}
 .chal-result-banner.tie{background:rgba(var(--or-rgb),.12);color:var(--or)}
 .chal-daag-btn{background:rgba(var(--or-rgb),.12);border:1.5px solid rgba(var(--or-rgb),.3);color:var(--or);border-radius:12px;padding:12px 16px;font-family:var(--font-head);font-size:14px;font-weight:700;cursor:pointer;width:100%;margin-top:8px}
-/* ── GROEP PAGINA ────────────────────────────────────────────── */
-/* Lege staat — hero banner */
-.grp-hero{background:linear-gradient(135deg,rgba(var(--or-rgb),.1) 0%,rgba(99,102,241,.06) 100%);border:1.5px solid rgba(var(--or-rgb),.18);border-radius:24px;padding:36px 24px 28px;text-align:center;margin-bottom:20px;position:relative;overflow:hidden}
-.grp-hero::after{content:'👥';position:absolute;font-size:130px;opacity:.05;bottom:-20px;right:-10px;line-height:1;pointer-events:none}
-.grp-hero-icon{font-size:52px;margin-bottom:14px;position:relative}
-.grp-hero-title{font-family:var(--font-head);font-size:26px;font-weight:900;color:var(--dk);margin-bottom:8px;letter-spacing:-.4px}
-.grp-hero-sub{font-size:14px;color:var(--mu);line-height:1.6;max-width:300px;margin:0 auto}
-/* 2-kolommen split op desktop, gestapeld op mobiel */
-.grp-split{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-bottom:4px}
+/* ── GROEP PAGINA ─────────────────────────────────────────────── */
+.grp-nav{position:sticky;top:0;z-index:100;background:color-mix(in srgb,var(--bg) 88%,transparent);border-bottom:1px solid var(--bo);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px)}
+.grp-nav-inner{display:flex;align-items:center;gap:12px;padding:0 16px;height:54px;max-width:960px;margin:0 auto}
+.grp-nav-back{width:36px;height:36px;border-radius:10px;border:1.5px solid var(--bo);background:var(--s);display:flex;align-items:center;justify-content:center;cursor:pointer;color:var(--dk);transition:all .18s;flex-shrink:0}
+.grp-nav-back:hover{border-color:rgba(var(--or-rgb),.5);color:var(--or);background:rgba(var(--or-rgb),.06);transform:translateX(-2px)}
+.grp-nav-title{font-family:var(--font-head);font-weight:800;font-size:16px;color:var(--dk)}
+.grp-page-wrap{padding:20px 16px 56px;max-width:960px;margin:0 auto}
+.grp-hero{background:linear-gradient(140deg,rgba(var(--or-rgb),.11) 0%,rgba(99,102,241,.07) 55%,rgba(20,184,166,.05) 100%);border:1.5px solid rgba(var(--or-rgb),.16);border-radius:28px;padding:40px 24px 32px;text-align:center;margin-bottom:18px;position:relative;overflow:hidden}
+.grp-hero::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at 50% -10%,rgba(var(--or-rgb),.12),transparent 65%);pointer-events:none}
+.grp-hero-icon{font-size:54px;margin-bottom:14px;position:relative;filter:drop-shadow(0 4px 14px rgba(var(--or-rgb),.28))}
+.grp-hero-title{font-family:var(--font-head);font-size:26px;font-weight:900;color:var(--dk);margin-bottom:8px;letter-spacing:-.5px;position:relative}
+.grp-hero-sub{font-size:14px;color:var(--mu);line-height:1.65;max-width:320px;margin:0 auto 18px;position:relative}
+.grp-hero-pills{display:flex;gap:8px;justify-content:center;flex-wrap:wrap;position:relative}
+.grp-hero-pill{display:inline-flex;align-items:center;gap:5px;padding:5px 13px;border-radius:20px;font-size:12px;font-weight:700;border:1px solid var(--bo);background:var(--s);color:var(--mu)}
+.grp-split{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:16px}
 @media(max-width:640px){.grp-split{grid-template-columns:1fr;gap:10px}}
-/* Kaarten */
-.grp-card{background:var(--s);border:1.5px solid var(--bo);border-radius:20px;padding:20px;margin-bottom:14px}
-.grp-card-title{font-family:var(--font-head);font-size:13px;font-weight:800;color:var(--mu);text-transform:uppercase;letter-spacing:.8px;margin-bottom:14px}
-.grp-input{width:100%;padding:12px 14px;background:var(--bg2);border:1.5px solid var(--bo);border-radius:12px;color:var(--dk);font-size:15px;font-family:var(--font);margin-bottom:10px;box-sizing:border-box;transition:border-color .18s;text-transform:uppercase;letter-spacing:2px}
-.grp-input:focus{outline:none;border-color:var(--or)}
-.grp-input::placeholder{text-transform:none;letter-spacing:0}
+.grp-card{background:var(--s);border:1.5px solid var(--bo);border-radius:22px;padding:22px;margin-bottom:14px}
+.grp-card-title{font-family:var(--font-head);font-size:12px;font-weight:800;color:var(--mu);text-transform:uppercase;letter-spacing:1px;margin-bottom:16px}
+.grp-input{width:100%;padding:13px 15px;background:var(--bg2);border:1.5px solid var(--bo);border-radius:13px;color:var(--dk);font-size:15px;font-family:var(--font);margin-bottom:10px;box-sizing:border-box;transition:border-color .18s,box-shadow .18s;text-transform:uppercase;letter-spacing:2px}
+.grp-input:focus{outline:none;border-color:var(--or);box-shadow:0 0 0 3px rgba(var(--or-rgb),.1)}
+.grp-input::placeholder{text-transform:none;letter-spacing:0;color:var(--mu)}
 .grp-create-input{text-transform:none;letter-spacing:0}
-.grp-join-btn{background:var(--or);color:#fff;border:none;border-radius:12px;padding:13px;font-family:var(--font-head);font-size:15px;font-weight:800;cursor:pointer;width:100%;transition:opacity .18s}
-.grp-join-btn:hover{opacity:.88}
-.grp-create-btn{background:rgba(var(--or-rgb),.1);border:1.5px solid rgba(var(--or-rgb),.3);color:var(--or);border-radius:12px;padding:13px;font-family:var(--font-head);font-size:15px;font-weight:800;cursor:pointer;width:100%;transition:all .18s}
-.grp-create-btn:hover{background:rgba(var(--or-rgb),.18)}
-/* Actieve groep — header card */
-.grp-header-card{background:linear-gradient(135deg,rgba(var(--or-rgb),.12) 0%,rgba(var(--or-rgb),.03) 100%);border:1.5px solid rgba(var(--or-rgb),.22);border-radius:20px;padding:20px 20px 16px;margin-bottom:14px}
-.grp-header-top{display:flex;align-items:flex-start;justify-content:space-between;gap:12px;margin-bottom:10px}
-.grp-header-name{font-family:var(--font-head);font-size:22px;font-weight:900;color:var(--dk);margin-bottom:5px;letter-spacing:-.3px}
-.grp-header-meta{font-size:12px;color:var(--mu)}
-.grp-code-chip{display:inline-flex;align-items:center;gap:7px;background:rgba(var(--or-rgb),.1);border:1.5px solid rgba(var(--or-rgb),.28);border-radius:10px;padding:6px 12px;font-family:var(--font-head);font-size:18px;font-weight:900;color:var(--or);letter-spacing:3px;cursor:pointer;transition:all .18s;white-space:nowrap}
-.grp-code-chip:hover{background:rgba(var(--or-rgb),.2);transform:scale(1.03)}
-.grp-code-copy-icon{font-size:12px;letter-spacing:0;opacity:.7}
-.grp-header-btns{display:flex;flex-direction:column;gap:6px;align-items:flex-end;flex-shrink:0}
-.grp-leave-btn{background:none;border:1px solid var(--bo);color:var(--mu);border-radius:8px;padding:6px 12px;font-size:11px;cursor:pointer;font-family:var(--font);transition:all .15s;white-space:nowrap}
+.grp-join-btn{background:linear-gradient(135deg,var(--or),#f97316);color:#fff;border:none;border-radius:13px;padding:14px;font-family:var(--font-head);font-size:15px;font-weight:800;cursor:pointer;width:100%;transition:opacity .18s,transform .18s;box-shadow:0 4px 16px rgba(var(--or-rgb),.28)}
+.grp-join-btn:hover{opacity:.9;transform:translateY(-1px)}
+.grp-create-btn{background:rgba(var(--or-rgb),.1);border:1.5px solid rgba(var(--or-rgb),.3);color:var(--or);border-radius:13px;padding:13px;font-family:var(--font-head);font-size:15px;font-weight:800;cursor:pointer;width:100%;transition:all .18s}
+.grp-create-btn:hover{background:rgba(var(--or-rgb),.18);transform:translateY(-1px)}
+.grp-active-grid{display:grid;grid-template-columns:1fr;gap:14px}
+@media(min-width:720px){.grp-active-grid{grid-template-columns:290px 1fr;gap:22px;align-items:start}}
+.grp-header-card{background:linear-gradient(150deg,rgba(var(--or-rgb),.13) 0%,rgba(var(--or-rgb),.03) 100%);border:1.5px solid rgba(var(--or-rgb),.2);border-radius:22px;padding:22px;position:relative;overflow:hidden}
+.grp-header-card::before{content:'';position:absolute;top:-32px;right:-32px;width:110px;height:110px;border-radius:50%;background:radial-gradient(circle,rgba(var(--or-rgb),.2),transparent 70%);pointer-events:none}
+.grp-header-emoji{font-size:34px;margin-bottom:10px;position:relative}
+.grp-header-name{font-family:var(--font-head);font-size:20px;font-weight:900;color:var(--dk);margin-bottom:4px;letter-spacing:-.3px;position:relative}
+.grp-header-meta{font-size:12px;color:var(--mu);margin-bottom:16px}
+.grp-code-label{font-size:10px;font-weight:800;color:var(--mu);text-transform:uppercase;letter-spacing:.9px;margin-bottom:7px}
+.grp-code-chip{display:flex;align-items:center;justify-content:space-between;gap:10px;background:rgba(var(--or-rgb),.1);border:1.5px solid rgba(var(--or-rgb),.25);border-radius:13px;padding:11px 14px;cursor:pointer;transition:all .18s;margin-bottom:10px}
+.grp-code-chip:hover{background:rgba(var(--or-rgb),.18);border-color:rgba(var(--or-rgb),.45);transform:scale(1.02)}
+.grp-code-value{font-family:var(--font-head);font-size:22px;font-weight:900;color:var(--or);letter-spacing:4px}
+.grp-code-btn{font-size:11px;font-weight:700;color:var(--or);opacity:.7;white-space:nowrap}
+.grp-header-hint{font-size:11px;color:var(--mu);line-height:1.55;opacity:.8}
+.grp-leave-btn{display:inline-flex;align-items:center;gap:6px;background:none;border:1px solid var(--bo);color:var(--mu);border-radius:9px;padding:7px 13px;font-size:11px;cursor:pointer;font-family:var(--font);transition:all .15s;margin-top:14px}
 .grp-leave-btn:hover{border-color:#ef4444;color:#ef4444}
-.grp-header-hint{font-size:11px;color:var(--mu);opacity:.7}
-/* Podium top 3 */
-.grp-podium{display:flex;align-items:flex-end;justify-content:center;gap:14px;margin:8px 0 20px}
-.grp-pod-col{display:flex;flex-direction:column;align-items:center;gap:5px}
-.grp-pod-avatar{width:42px;height:42px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-family:var(--font-head);font-weight:900;font-size:16px;border:2px solid transparent;flex-shrink:0}
-.grp-pod-avatar.first{width:54px;height:54px;font-size:20px}
-.grp-pod-name{font-size:11px;font-weight:700;color:var(--dk);text-align:center;max-width:72px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
-.grp-pod-score{font-family:var(--font-head);font-size:13px;font-weight:800;color:var(--or)}
-.grp-pod-bar{border-radius:8px 8px 0 0;width:62px}
-.grp-pod-medal{font-size:20px;margin-top:2px}
-.grp-pod-medal.first{font-size:24px}
-/* Member rijen #4+ */
-.grp-member-row{display:flex;align-items:center;gap:12px;padding:10px 8px;border-bottom:1px solid var(--bo);border-radius:10px;transition:background .15s}
-.grp-member-row:last-child{border-bottom:none}
-.grp-member-row.me{background:rgba(var(--or-rgb),.06);border-color:transparent}
-.grp-member-rank{font-family:var(--font-head);font-size:15px;font-weight:900;width:28px;text-align:center;flex-shrink:0;color:var(--mu)}
-.grp-member-avatar{width:36px;height:36px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-family:var(--font-head);font-weight:800;font-size:14px;flex-shrink:0}
+.grp-score-card{background:var(--s);border:1.5px solid var(--bo);border-radius:22px;padding:22px}
+.grp-podium{display:flex;align-items:flex-end;justify-content:center;gap:18px;margin:4px 0 22px;padding:0 4px}
+.grp-pod-col{display:flex;flex-direction:column;align-items:center;gap:5px;cursor:default}
+.grp-pod-avatar{width:44px;height:44px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-family:var(--font-head);font-weight:900;font-size:17px;border:2.5px solid transparent;flex-shrink:0;transition:transform .2s}
+.grp-pod-col:hover .grp-pod-avatar{transform:scale(1.1) translateY(-2px)}
+.grp-pod-avatar.first{width:58px;height:58px;font-size:22px;box-shadow:0 6px 20px rgba(234,179,8,.22)}
+.grp-pod-name{font-size:11px;font-weight:700;color:var(--dk);text-align:center;max-width:78px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.grp-pod-score{font-family:var(--font-head);font-size:12px;font-weight:800;color:var(--or)}
+.grp-pod-bar{border-radius:8px 8px 0 0;width:66px}
+.grp-pod-medal{font-size:20px;margin-top:1px;line-height:1}
+.grp-pod-medal.first{font-size:26px}
+.grp-member-row{display:flex;align-items:center;gap:12px;padding:11px 8px;border-radius:12px;transition:background .15s}
+.grp-member-row+.grp-member-row{border-top:1px solid var(--bo)}
+.grp-member-row:hover{background:var(--bg2)}
+.grp-member-row.me{background:rgba(var(--or-rgb),.06)!important}
+.grp-member-row.me+.grp-member-row,.grp-member-row+.grp-member-row.me{border-top-color:transparent}
+.grp-member-rank{font-family:var(--font-head);font-size:14px;font-weight:900;width:26px;text-align:center;flex-shrink:0;color:var(--mu)}
+.grp-member-avatar{width:38px;height:38px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-family:var(--font-head);font-weight:800;font-size:14px;flex-shrink:0;border:2px solid transparent;transition:transform .18s}
+.grp-member-row:hover .grp-member-avatar{transform:scale(1.1)}
 .grp-member-info{flex:1;min-width:0}
 .grp-member-name{font-size:14px;font-weight:700;color:var(--dk);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
-.grp-member-vak{font-size:11px;color:var(--mu)}
+.grp-member-vak{font-size:11px;color:var(--mu);margin-top:1px}
 .grp-member-score{font-family:var(--font-head);font-size:16px;font-weight:800;color:var(--or);flex-shrink:0}
-.grp-me-badge{font-size:9px;font-weight:800;color:#fff;background:var(--or);border-radius:4px;padding:1px 5px;margin-left:5px;vertical-align:middle;letter-spacing:.2px}
-.grp-empty{text-align:center;padding:32px 16px;color:var(--mu);font-size:14px}
-.grp-no-account{background:rgba(var(--or-rgb),.08);border:1.5px solid rgba(var(--or-rgb),.2);border-radius:14px;padding:14px 16px;font-size:13px;color:var(--mu);margin-bottom:16px;text-align:center}
+.grp-me-badge{font-size:9px;font-weight:800;color:#fff;background:var(--or);border-radius:4px;padding:1px 5px;margin-left:6px;vertical-align:middle;letter-spacing:.2px}
+.grp-empty{text-align:center;padding:36px 16px;color:var(--mu);font-size:14px;line-height:1.65}
+.grp-no-account{background:rgba(var(--or-rgb),.07);border:1.5px solid rgba(var(--or-rgb),.18);border-radius:16px;padding:14px 18px;font-size:13px;color:var(--mu);margin-bottom:16px;text-align:center;line-height:1.5}
+@media(min-width:720px){
+  .grp-page-wrap{padding:28px 28px 72px}
+  .grp-hero{padding:52px 48px 44px}
+  .grp-hero-title{font-size:32px}
+  .grp-hero-sub{font-size:15px;max-width:420px}
+  .grp-split{max-width:660px;margin:18px auto 0}
+  .grp-header-name{font-size:22px}
+  .grp-code-value{font-size:24px}
+  .grp-member-score{font-size:18px}
+}
 .lb-toggle-row{display:flex;gap:8px;margin-bottom:14px}
 .lb-toggle-btn{flex:1;padding:9px;border-radius:10px;border:1.5px solid var(--bo);background:none;color:var(--mu);font-family:var(--font-head);font-size:13px;font-weight:700;cursor:pointer;transition:all .15s}
 .lb-toggle-btn.active{background:var(--or);border-color:var(--or);color:#fff}
@@ -10264,9 +10285,14 @@ async function renderGroepScreen(){
   if(!g){
     wrap.innerHTML=`
       <div class="grp-hero">
-        <div class="grp-hero-icon">👥</div>
-        <div class="grp-hero-title">Oefenen met je klas</div>
-        <div class="grp-hero-sub">Maak een groep aan of join met een code om elkaars scores te zien</div>
+        <div class="grp-hero-icon">🏆</div>
+        <div class="grp-hero-title">Samen studeren, samen slagen</div>
+        <div class="grp-hero-sub">Maak een groep met vrienden, klasgenoten of een studiegroep en vergelijk live wie de hoogste score haalt</div>
+        <div class="grp-hero-pills">
+          <span class="grp-hero-pill">👫 Vrienden</span>
+          <span class="grp-hero-pill">🏫 Klas</span>
+          <span class="grp-hero-pill">📚 Studiegroep</span>
+        </div>
       </div>
       ${!currentUser?'<div class="grp-no-account">⚠️ Je moet ingelogd zijn om een groep aan te maken of te joinen.</div>':''}
       <div class="grp-split">
@@ -10277,66 +10303,64 @@ async function renderGroepScreen(){
         </div>
         <div class="grp-card" style="margin-bottom:0">
           <div class="grp-card-title">✨ Nieuwe groep</div>
-          <input class="grp-input grp-create-input" id="grp-new-naam" placeholder="bijv. Klas 5H-B">
+          <input class="grp-input grp-create-input" id="grp-new-naam" placeholder="bijv. Vrienden 2026">
           <button class="grp-create-btn" onclick="maakGroep(document.getElementById('grp-new-naam').value)">+ Aanmaken</button>
         </div>
       </div>`;
     return;
   }
 
-  wrap.innerHTML=`<div style="display:flex;justify-content:center;padding:40px 0"><div style="animation:spin 1s linear infinite;font-size:28px">⏳</div></div>`;
+  wrap.innerHTML=`<div style="display:flex;justify-content:center;padding:48px 0"><div style="animation:spin 1s linear infinite;font-size:28px">⏳</div></div>`;
   const members=await fetchGroepLeaderboard(g.id);
 
   const colors=['#f97316','#6366f1','#22c55e','#ec4899','#14b8a6','#f59e0b','#3b82f6','#8b5cf6'];
   const col=(name)=>colors[(name||'?').charCodeAt(0)%colors.length];
   const ini=(name)=>(name||'?').slice(0,2).toUpperCase();
 
-  // Header card
-  let html=`
-    <div class="grp-header-card">
-      <div class="grp-header-top">
-        <div>
-          <div class="grp-header-name">${g.name}</div>
-          <div class="grp-header-meta">${members.length} ${members.length===1?'lid':'leden'}</div>
+  const sidebar=`
+    <div class="grp-sidebar">
+      <div class="grp-header-card">
+        <div class="grp-header-emoji">👥</div>
+        <div class="grp-header-name">${g.name}</div>
+        <div class="grp-header-meta">${members.length} ${members.length===1?'lid':'leden'}</div>
+        <div class="grp-code-label">Uitnodigingscode</div>
+        <div class="grp-code-chip" onclick="navigator.clipboard.writeText('${g.code}').then(()=>showToast('Code gekopieerd! 📋'))" title="Klik om te kopiëren">
+          <span class="grp-code-value">${g.code}</span>
+          <span class="grp-code-btn">📋 Kopieer</span>
         </div>
-        <div class="grp-header-btns">
-          <div class="grp-code-chip" onclick="navigator.clipboard.writeText('${g.code}').then(()=>showToast('Code gekopieerd! 📋'))" title="Klik om te kopiëren">
-            ${g.code}<span class="grp-code-copy-icon">📋</span>
-          </div>
-          <button class="grp-leave-btn" onclick="verlaarGroep()">Verlaten</button>
-        </div>
+        <div class="grp-header-hint">Stuur deze code naar vrienden of klasgenoten om ze toe te voegen aan de groep</div>
+        <button class="grp-leave-btn" onclick="verlaarGroep()">
+          <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"/><polyline points="16 17 21 12 16 7"/><line x1="21" y1="12" x2="9" y2="12"/></svg>
+          Groep verlaten
+        </button>
       </div>
-      <div class="grp-header-hint">Deel de code met vrienden om ze toe te voegen</div>
     </div>`;
 
+  let scoreboard='';
   if(members.length===0){
-    html+=`<div class="grp-card"><div class="grp-empty">🏁 Nog geen scores — maak een quiz om op het bord te komen!</div></div>`;
+    scoreboard=`<div class="grp-score-card"><div class="grp-empty">🏁 Nog geen scores<br><span style="font-size:12px">Maak een quiz om als eerste op het bord te komen!</span></div></div>`;
   } else {
     const top3=members.slice(0,Math.min(3,members.length));
     const rest=members.slice(top3.length);
-
-    // Podium (alleen bij ≥2 leden)
     let podium='';
     if(members.length>=2){
-      const podSlot=(m,cls,barH,barBg,medalEm,medalCls)=>{
+      const slot=(m,cls,barH,barBg,medal,medalCls)=>{
         if(!m)return'';
         const isMe=currentUser&&m.user_id===currentUser.id;
         return`<div class="grp-pod-col">
-          <div class="grp-pod-avatar ${cls}" style="background:${col(m.display_name)}22;border-color:${col(m.display_name)}55;color:${col(m.display_name)}">${ini(m.display_name)}</div>
+          <div class="grp-pod-avatar ${cls}" style="background:${col(m.display_name)}22;border-color:${col(m.display_name)}66;color:${col(m.display_name)}">${ini(m.display_name)}</div>
           <div class="grp-pod-name">${m.display_name||'?'}${isMe?'<br><span class="grp-me-badge">jij</span>':''}</div>
-          <div class="grp-pod-score">${m.score||0} pts</div>
+          <div class="grp-pod-score">${(m.score||0).toLocaleString('nl')} pts</div>
           <div class="grp-pod-bar" style="height:${barH}px;background:${barBg}"></div>
-          <div class="grp-pod-medal ${medalCls}">${medalEm}</div>
+          <div class="grp-pod-medal ${medalCls}">${medal}</div>
         </div>`;
       };
       podium=`<div class="grp-podium">
-        ${podSlot(top3[1],'','44','rgba(156,163,175,.15)','🥈','')}
-        ${podSlot(top3[0],'first','66','rgba(234,179,8,.18)','🥇','first')}
-        ${podSlot(top3[2],'','32','rgba(180,120,60,.15)','🥉','')}
+        ${slot(top3[1],'','46','rgba(156,163,175,.18)','🥈','')}
+        ${slot(top3[0],'first','70','rgba(234,179,8,.2)','🥇','first')}
+        ${slot(top3[2],'','34','rgba(180,120,60,.18)','🥉','')}
       </div>`;
     }
-
-    // Ledenrijen (top3 als geen podium, anders #4+)
     const listMembers=members.length>=2?rest:members;
     const medals=['🥇','🥈','🥉'];
     let rows='';
@@ -10344,24 +10368,22 @@ async function renderGroepScreen(){
       const isMe=currentUser&&m.user_id===currentUser.id;
       const rank=members.length>=2?i+4:i+1;
       rows+=`<div class="grp-member-row${isMe?' me':''}">
-        <div class="grp-member-rank">${medals[rank-1]||'#'+rank}</div>
-        <div class="grp-member-avatar" style="background:${col(m.display_name)}22;color:${col(m.display_name)}">${ini(m.display_name)}</div>
+        <div class="grp-member-rank">${medals[rank-1]||rank}</div>
+        <div class="grp-member-avatar" style="background:${col(m.display_name)}22;color:${col(m.display_name)};border-color:${col(m.display_name)}44">${ini(m.display_name)}</div>
         <div class="grp-member-info">
           <div class="grp-member-name">${m.display_name||'Onbekend'}${isMe?'<span class="grp-me-badge">jij</span>':''}</div>
           ${m.vak_naam?`<div class="grp-member-vak">Beste bij ${m.vak_naam}</div>`:''}
         </div>
-        <div class="grp-member-score">${m.score||0}</div>
+        <div class="grp-member-score">${(m.score||0).toLocaleString('nl')}</div>
       </div>`;
     });
-
-    html+=`<div class="grp-card">
+    scoreboard=`<div class="grp-score-card">
       <div class="grp-card-title">🏆 Scoreboard</div>
-      ${podium}
-      ${rows}
+      ${podium}${rows}
     </div>`;
   }
 
-  wrap.innerHTML=html;
+  wrap.innerHTML=`<div class="grp-active-grid">${sidebar}${scoreboard}</div>`;
 }
 // ── END GROEPSLEADERBOARD ─────────────────────────────────────────────
 
@@ -16147,11 +16169,17 @@ if('serviceWorker' in navigator){
 <div id="lbp-overlay" class="lbp-overlay" onclick="closeLbProfile()"></div>
 
 <div id="sc-groep" class="sc">
-  <div class="qh"><button class="back-btn" onclick="show('sc-home')">←</button><span>Mijn Groep</span></div>
-  <div style="padding:16px 16px 32px">
-    <div id="groep-content">
-      <!-- filled by renderGroepScreen() -->
+  <nav class="grp-nav">
+    <div class="grp-nav-inner">
+      <button class="grp-nav-back" onclick="show('sc-home')" aria-label="Terug naar home">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+      </button>
+      <span class="grp-nav-title">Groep</span>
+      <div style="width:36px"></div>
     </div>
+  </nav>
+  <div class="grp-page-wrap">
+    <div id="groep-content"></div>
   </div>
 </div>
 
