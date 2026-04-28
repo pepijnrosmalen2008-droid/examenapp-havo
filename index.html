@@ -8928,6 +8928,7 @@ function doLogout(){
       'slagio_daily_goal',
       'slagio_daily_challenge_havo',
       'slagio_daily_challenge_vwo',
+      'slagio_fc_sessions','slagio_race_wins','slagio_plan_tasks','slagio_perfect_count',
       'slagio_sr_v1',
       'examenapp_cijfers_havo','examenapp_cijfers_vwo',
       'examenapp_progress_havo','examenapp_progress_vwo',
@@ -11270,6 +11271,30 @@ const ALL_BADGES=[
   {id:'examen_done',emoji:'📄',label:'Examenkandidaat',tip:'Eerste echt examen afgemaakt',   cat:'Examen',     rarity:'mythic'},
   // Sociaal
   {id:'ambassadeur', emoji:'📣',label:'Ambassadeur',  tip:'Voortgang gedeeld met anderen',   cat:'Sociaal',    rarity:'rare'},
+  // Flashcards
+  {id:'fc_1',   emoji:'🃏', label:'Kaartjeskoning',  tip:'Eerste flashcard-sessie gespeeld',      cat:'Flashcards', rarity:'common'},
+  {id:'fc_10',  emoji:'📦', label:'Kaartenstapel',   tip:'10 flashcard-sessies gespeeld',         cat:'Flashcards', rarity:'rare'},
+  {id:'fc_50',  emoji:'🔁', label:'Herhaalmeester',  tip:'50 flashcard-sessies voltooid',         cat:'Flashcards', rarity:'epic'},
+  // Bot Race
+  {id:'race_1',    emoji:'🏁', label:'Op de baan',    tip:'Eerste Bot Race gestart',              cat:'Bot Race',   rarity:'common'},
+  {id:'race_win1', emoji:'🥇', label:'Racewinnaar',   tip:'Eerste Bot Race gewonnen',             cat:'Bot Race',   rarity:'rare'},
+  {id:'race_win10',emoji:'🏆', label:'Kampioen',      tip:'10 Bot Races gewonnen',                cat:'Bot Race',   rarity:'epic'},
+  // Domein
+  {id:'dom_1',  emoji:'🎖️', label:'Specialist',     tip:'1 domein ≥80% behaald',                cat:'Domein',     rarity:'rare'},
+  {id:'dom_5',  emoji:'🌠', label:'Expert',          tip:'5 domeinen ≥80% behaald',              cat:'Domein',     rarity:'epic'},
+  {id:'dom_15', emoji:'🧠', label:'Allround',        tip:'15 domeinen ≥80% behaald',             cat:'Domein',     rarity:'legendary'},
+  // Comeback
+  {id:'comeback_3', emoji:'💪', label:'Comeback',        tip:'Teruggekeerd na 3+ dagen weg',     cat:'Comeback',   rarity:'rare'},
+  {id:'comeback_7', emoji:'🔄', label:'Vasthoudend',     tip:'Teruggekeerd na 7+ dagen weg',     cat:'Comeback',   rarity:'epic'},
+  {id:'comeback_14',emoji:'🛡️', label:'Niet te stoppen', tip:'Teruggekeerd na 14+ dagen weg',   cat:'Comeback',   rarity:'legendary'},
+  // Studieplan
+  {id:'plan_1',  emoji:'📅', label:'Planmatig',       tip:'Eerste studieplan-taak gestart',       cat:'Studieplan', rarity:'common'},
+  {id:'plan_7',  emoji:'📋', label:'Doelgericht',     tip:'7 studieplan-taken gestart',           cat:'Studieplan', rarity:'rare'},
+  {id:'plan_30', emoji:'🗓️', label:'IJzeren routine', tip:'30 studieplan-taken gestart',          cat:'Studieplan', rarity:'epic'},
+  // Perfectie
+  {id:'perfect_3', emoji:'🌟', label:'Hat-trick',  tip:'3× een perfecte score (100%) behaald',   cat:'Perfectie',  rarity:'rare'},
+  {id:'perfect_10',emoji:'💎', label:'Onfeilbaar', tip:'10× een perfecte score behaald',          cat:'Perfectie',  rarity:'epic'},
+  {id:'perfect_25',emoji:'🌌', label:'Godniveau',  tip:'25× een perfecte score behaald',          cat:'Perfectie',  rarity:'legendary'},
 ];
 const RARITY_LABEL={common:'Gewoon',rare:'Zeldzaam',epic:'Episch',legendary:'Legendarisch',mythic:'Mythisch',eternal:'Eeuwig'};
 const FEATURED_BADGE_KEY='slagio_featured_badge_id';
@@ -11326,6 +11351,51 @@ function checkVakkenAch(){
     if(n>=3&&earnAch('vakken3'))setTimeout(()=>showAch('📖','3 vakken geoefend — veelzijdig!'),400);
     if(n>=10&&earnAch('vakken10'))setTimeout(()=>showAch('🌍','10 vakken — alleskunner!'),400);
   }catch(e){}
+  checkDomeinAch();
+}
+function checkFcAch(){
+  const n=parseInt(localStorage.getItem('slagio_fc_sessions')||'0')+1;
+  localStorage.setItem('slagio_fc_sessions',n);
+  if(n>=1&&earnAch('fc_1'))setTimeout(()=>showAch('🃏','Kaartjeskoning! Eerste flashcard-sessie!'),400);
+  if(n>=10&&earnAch('fc_10'))setTimeout(()=>showAch('📦','10 flashcard-sessies — kaartenstapel!'),400);
+  if(n>=50&&earnAch('fc_50'))setTimeout(()=>showAch('🔁','50 sessies — herhaalmeester!'),400);
+}
+function checkRaceAch(playerWin){
+  if(earnAch('race_1'))setTimeout(()=>showAch('🏁','Op de baan! Eerste race gespeeld!'),400);
+  if(playerWin){
+    const w=parseInt(localStorage.getItem('slagio_race_wins')||'0')+1;
+    localStorage.setItem('slagio_race_wins',w);
+    if(w>=1&&earnAch('race_win1'))setTimeout(()=>showAch('🥇','Racewinnaar! Eerste race gewonnen!'),600);
+    if(w>=10&&earnAch('race_win10'))setTimeout(()=>showAch('🏆','10 races gewonnen — kampioen!'),600);
+  }
+}
+function checkDomeinAch(){
+  try{
+    let count=0;
+    getVK().forEach(vak=>{(vak.domeinen||[]).forEach(dom=>{const{pct,hasData}=getDomeinBestPct(vak.id,dom.id);if(hasData&&pct>=0.80)count++;});});
+    if(count>=1&&earnAch('dom_1'))setTimeout(()=>showAch('🎖️','Specialist! Eerste domein ≥80%!'),500);
+    if(count>=5&&earnAch('dom_5'))setTimeout(()=>showAch('🌠','Expert! 5 domeinen ≥80%!'),500);
+    if(count>=15&&earnAch('dom_15'))setTimeout(()=>showAch('🧠','Allround! 15 domeinen ≥80%!'),500);
+  }catch(e){}
+}
+function checkComebackAch(dayGap){
+  if(dayGap>=3&&earnAch('comeback_3'))setTimeout(()=>showAch('💪','Comeback na 3+ dagen weg!'),400);
+  if(dayGap>=7&&earnAch('comeback_7'))setTimeout(()=>showAch('🔄','Vasthoudend! 7+ dagen weg maar terug!'),400);
+  if(dayGap>=14&&earnAch('comeback_14'))setTimeout(()=>showAch('🛡️','Niet te stoppen! 14+ dagen weg maar terug!'),400);
+}
+function checkPlanAch(){
+  const n=parseInt(localStorage.getItem('slagio_plan_tasks')||'0')+1;
+  localStorage.setItem('slagio_plan_tasks',n);
+  if(n>=1&&earnAch('plan_1'))setTimeout(()=>showAch('📅','Planmatig! Eerste studieplan-taak!'),400);
+  if(n>=7&&earnAch('plan_7'))setTimeout(()=>showAch('📋','7 studieplan-taken — doelgericht!'),400);
+  if(n>=30&&earnAch('plan_30'))setTimeout(()=>showAch('🗓️','30 taken — IJzeren routine!'),400);
+}
+function checkPerfectCountAch(){
+  const n=parseInt(localStorage.getItem('slagio_perfect_count')||'0')+1;
+  localStorage.setItem('slagio_perfect_count',n);
+  if(n>=3&&earnAch('perfect_3'))setTimeout(()=>showAch('🌟','Hat-trick! 3× perfect gescoord!'),500);
+  if(n>=10&&earnAch('perfect_10'))setTimeout(()=>showAch('💎','Onfeilbaar! 10× perfect!'),500);
+  if(n>=25&&earnAch('perfect_25'))setTimeout(()=>showAch('🌌','Godniveau! 25× perfect!'),500);
 }
 function renderProfileBadges(){
   const el=document.getElementById('prof-badges-content');
@@ -11365,6 +11435,21 @@ function renderProfileBadges(){
     if(b.id==='quiz500')return Math.min(0.99,_bpTotalQ/500);
     if(b.id==='vakken3')return Math.min(0.99,_bpVakCount/3);
     if(b.id==='vakken10')return Math.min(0.99,_bpVakCount/10);
+    const _fcN=parseInt(localStorage.getItem('slagio_fc_sessions')||'0');
+    if(b.id==='fc_1')return Math.min(0.99,_fcN/1);
+    if(b.id==='fc_10')return Math.min(0.99,_fcN/10);
+    if(b.id==='fc_50')return Math.min(0.99,_fcN/50);
+    const _raceW=parseInt(localStorage.getItem('slagio_race_wins')||'0');
+    if(b.id==='race_win1')return Math.min(0.99,_raceW/1);
+    if(b.id==='race_win10')return Math.min(0.99,_raceW/10);
+    const _perfN=parseInt(localStorage.getItem('slagio_perfect_count')||'0');
+    if(b.id==='perfect_3')return Math.min(0.99,_perfN/3);
+    if(b.id==='perfect_10')return Math.min(0.99,_perfN/10);
+    if(b.id==='perfect_25')return Math.min(0.99,_perfN/25);
+    const _planN=parseInt(localStorage.getItem('slagio_plan_tasks')||'0');
+    if(b.id==='plan_1')return Math.min(0.99,_planN/1);
+    if(b.id==='plan_7')return Math.min(0.99,_planN/7);
+    if(b.id==='plan_30')return Math.min(0.99,_planN/30);
     return null;
   }
   const _rarityColors={common:'#6b7280',rare:'#3b82f6',epic:'#8b5cf6',legendary:'#f59e0b',mythic:'#ef4444',eternal:'#06b6d4'};
@@ -11543,6 +11628,7 @@ function toonRes(){
   try{recordDailyGoal();}catch(e){};
   const isPerfect=pct===1&&ST.mode==='snel'&&tot>=3;
   if(isPerfect&&earnAch('perfect'))setTimeout(()=>showAch('🌟','Perfecte score! Geen enkel fout!',90),800);
+  if(isPerfect)checkPerfectCountAch();
   try{
     let emi,tit,sub;
     if(isPerfect){emi='🌟';tit='Perfecte score!';sub='Fenomenaal! Alles goed — jij bent klaar voor het CE!';}
@@ -11869,6 +11955,7 @@ function goToDomein(vakId,domeinId,mode){
   ST.vak=vak;
   ST.domein=vak.domeinen.find(d=>d.id===domeinId);
   if(!ST.domein){openVak(vakId);return;}
+  checkPlanAch();
   if(mode==='snel')startQ('snel');
   else if(mode==='oud')startQ('oud');
   else if(mode==='flash')startFlash();
@@ -13071,6 +13158,7 @@ function raceFinish(who){
   const elapsed=Math.round((Date.now()-RC.startTime)/1000);
   const tot=RC.TARGET||15;
   const playerWin=RC.playerScore>=tot||(RC.playerScore>RC.botScore)||(RC.playerScore===RC.botScore&&who==='player');
+  checkRaceAch(playerWin);
 
   // Show finish overlay with confetti
   const ov=document.getElementById('race-finish-overlay');
@@ -14821,6 +14909,7 @@ function renderComebackCard(){
   const msGap=new Date(today)-new Date(prevDay);
   const dayGap=Math.round(msGap/86400000);
   if(dayGap<2)return;
+  checkComebackAch(dayGap);
   el.innerHTML=`<div class="comeback-card">
     <button class="comeback-close" onclick="sessionStorage.setItem('slagio_comeback_dismissed','1');this.closest('.comeback-card').remove()">✕</button>
     <div class="comeback-icon">💪</div>
@@ -15416,6 +15505,7 @@ function _fcSummary(){
     nextLabel=diff<=0?'Vandaag':diff===1?'Morgen':'Over '+diff+' dagen';
   }
 
+  checkFcAch();
   document.getElementById('fc-card').style.display='none';
   document.getElementById('fc-btns').style.display='none';
   document.getElementById('fc-progress').textContent='';
