@@ -8,7 +8,7 @@ Slagio (slagio.nl) is een gratis Progressive Web App (PWA) voor Nederlandse midd
 
 ### 1. Adaptieve Oefenvragen — 1.800+
 
-Slagio bevat meer dan 1.800 oefenvragen verdeeld over alle CE-domeinen van 17 vakken voor zowel HAVO als VWO:
+Slagio bevat meer dan 1.800 oefenvragen verdeeld over alle CE-domeinen van 28 vakken voor zowel HAVO als VWO:
 - **1.476 snelle quizvragen**: meerkeuze, 10 vragen per quiz, 15 seconden per vraag, directe feedback met uitleg
 - **363 open examenvragen**: CE-stijl vragen met contexttekst en officieel modelantwoord
 - **Gemiddeld 15 vragen per domein**, verdeeld over 96+ CE-domeinen
@@ -28,7 +28,7 @@ Slagio bevat een volledig archief van officiële Nederlandse Centrale Examens (C
 - **Per jaar**: Tijdvak I en Tijdvak II beschikbaar
 - **Inhoud**: Zowel de opgaven als het officiële correctievoorschrift (antwoordmodel/antwoorden)
 - **Inline viewer**: Examens worden direct in de Slagio app geopend via een ingebouwde PDF-viewer — je verlaat de site niet
-- **17 vakken beschikbaar**: Nederlands, Wiskunde A, Wiskunde B, Biologie, Scheikunde, Natuurkunde, Engels, Economie, Bedrijfseconomie, Geschiedenis, Aardrijkskunde, Maatschappijwetenschappen, Duits, Frans, Latijn, Grieks, Informatica
+- **28 vakken beschikbaar** voor HAVO en VWO
 
 ### 3. CE Simulatietoets
 
@@ -36,7 +36,7 @@ Een volledige simulatie van het Centrale Examen:
 - Countdown-timer per vraag
 - Automatische puntentelling conform CE-systematiek
 - Berekening van het verwachte eindcijfer (formule: 9 × score + 1, afgerond op 0,5)
-- Beschikbaar voor alle 17 vakken
+- Beschikbaar voor alle 28 vakken
 
 ### 4. Persoonlijk Studieplan (nieuw 2026)
 
@@ -129,9 +129,7 @@ Elke samenvatting per CE-domein bevat meerdere interactieve lagen:
 
 ## Beschikbare Vakken
 
-**HAVO** (17 vakken): Nederlands, Wiskunde A, Wiskunde B, Biologie, Scheikunde, Natuurkunde, Engels, Economie, Bedrijfseconomie, Geschiedenis, Aardrijkskunde, Maatschappijwetenschappen, Duits, Frans, Latijn, Grieks, Informatica
-
-**VWO** (17 vakken): Nederlands, Wiskunde A, Wiskunde B, Biologie, Scheikunde, Natuurkunde, Engels, Economie, Bedrijfseconomie, Geschiedenis, Aardrijkskunde, Maatschappijwetenschappen, Duits, Frans, Latijn, Grieks, Informatica
+Slagio ondersteunt **28 vakken** verdeeld over HAVO en VWO. Alle gangbare CE-vakken zijn beschikbaar, waaronder de exacte vakken (wiskunde, biologie, scheikunde, natuurkunde), talen (Nederlands, Engels, Duits, Frans), maatschappijvakken (geschiedenis, aardrijkskunde, economie, maatschappijwetenschappen) en meer.
 
 Per vak zijn meerdere CE-domeinen beschikbaar met quizzen, flashcards, samenvattingen en open examenvragen.
 
