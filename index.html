@@ -13283,6 +13283,7 @@ function scheduleDomPreview(trigger,vak,domein){
   _previewTimer=setTimeout(()=>{ _previewTimer=null; showDomPreview(trigger,vak,domein); },650);
 }
 function showDomPreview(trigger,vak,domein){
+  if(window.innerWidth<=640)return;
   hideDomPreview();
   const qPool=domein.sv||[];
   const q=qPool.length?qPool[Math.floor(Math.random()*Math.min(qPool.length,5))]:null;
