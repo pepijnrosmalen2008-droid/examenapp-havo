@@ -3412,6 +3412,15 @@ html.dark .hsd-pill{background:var(--bg2);border-color:var(--bo2)}
 /* Notification status row in profiel */
 .notif-status-row{display:flex;align-items:center;justify-content:space-between;padding:10px 0 0;border-top:1px solid var(--bo);margin-top:12px}
 
+/* ── SOCIAAL SHORTCUTS ───────────────────────────── */
+.hm-sociaal-row{display:flex;gap:10px;margin-bottom:20px}
+.hm-soc-btn{flex:1;padding:11px 14px;border-radius:14px;border:1.5px solid var(--bo);background:var(--s);color:var(--dk);font-family:var(--font-head);font-size:13px;font-weight:700;cursor:pointer;transition:all .2s;display:flex;align-items:center;justify-content:center;gap:7px}
+.hm-soc-btn:hover{transform:translateY(-2px);box-shadow:0 6px 18px rgba(0,0,0,.12)}
+.hm-soc-lb{border-color:rgba(251,191,36,.35);background:rgba(251,191,36,.07);color:var(--dk)}
+.hm-soc-lb:hover{border-color:rgba(251,191,36,.6);background:rgba(251,191,36,.13)}
+.hm-soc-grp{border-color:rgba(20,184,166,.35);background:rgba(20,184,166,.07);color:var(--dk)}
+.hm-soc-grp:hover{border-color:rgba(20,184,166,.6);background:rgba(20,184,166,.13)}
+
 /* ── WELKOMST SCHERM MOBIEL ──────────────────────── */
 @media(max-width:640px){
   /* Hero compacter */
@@ -3778,6 +3787,12 @@ html.dark .hsd-pill{background:var(--bg2);border-color:var(--bo2)}
     <div class="ad-slot ad-slot--banner">
       <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-3580526892359138" data-ad-slot="0000000000" data-ad-format="horizontal" data-full-width-responsive="true"></ins>
     </div>
+  </div>
+
+  <!-- SOCIAAL SHORTCUTS -->
+  <div class="hm-sociaal-row">
+    <button class="hm-soc-btn hm-soc-lb" onclick="show('sc-leaderboard');renderLeaderboard()">🏆 Leaderboard</button>
+    <button class="hm-soc-btn hm-soc-grp" onclick="show('sc-groep');renderGroepScreen()">👥 Mijn Groep</button>
   </div>
 
   <!-- VAKKEN HEADER -->
