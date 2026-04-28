@@ -3453,6 +3453,30 @@ html.dark .hsd-pill{background:var(--bg2);border-color:var(--bo2)}
 .na-sub{font-size:11px;color:var(--mu);margin-top:2px}
 .na-btn{padding:8px 14px;background:var(--or);color:#fff;border:none;border-radius:10px;font-size:13px;font-weight:700;cursor:pointer;font-family:var(--font);white-space:nowrap;transition:opacity .15s}
 .na-btn:hover{opacity:.85}
+/* ── QUICK CHIP BAR (home) ─────────── */
+.hm-quick-scroll{display:flex;gap:8px;overflow-x:auto;padding:10px 0 6px;-webkit-overflow-scrolling:touch;scrollbar-width:none}
+.hm-quick-scroll::-webkit-scrollbar{display:none}
+.hm-qchip{flex-shrink:0;display:inline-flex;align-items:center;gap:6px;padding:8px 15px;border-radius:24px;font-size:13px;font-weight:700;cursor:pointer;border:1.5px solid var(--bo);background:var(--s);color:var(--dk);font-family:var(--font);transition:all .18s;white-space:nowrap}
+.hm-qchip:hover{border-color:var(--or);color:var(--or);background:rgba(var(--or-rgb),.06);transform:translateY(-1px)}
+.hm-qchip:active{transform:scale(.97)}
+/* ── STATS STRIP (home, boven vakken) ─ */
+.hm-stats-strip{display:flex;gap:8px;overflow-x:auto;padding:0 0 4px;margin-bottom:12px;-webkit-overflow-scrolling:touch;scrollbar-width:none}
+.hm-stats-strip::-webkit-scrollbar{display:none}
+.hm-stat-pill{display:inline-flex;align-items:center;gap:6px;padding:7px 13px;border-radius:20px;background:var(--s);border:1px solid var(--bo);font-size:12px;font-weight:700;color:var(--mu);cursor:pointer;white-space:nowrap;flex-shrink:0;transition:all .15s}
+.hm-stat-pill:hover{border-color:var(--or);color:var(--or)}
+/* ── BREADCRUMB (sc-detail) ────────── */
+.det-breadcrumb{font-size:11px;color:var(--mu);font-weight:600;margin-bottom:10px;display:flex;align-items:center;gap:5px}
+.det-bc-home{cursor:pointer;opacity:.7}.det-bc-home:hover{color:var(--or);opacity:1}
+.det-bc-sep{opacity:.35}.det-bc-cur{color:var(--dk);opacity:.9}
+/* ── CE-EXAMENS QUICK CARD (sc-detail) */
+.ce-quick-card{display:flex;align-items:center;gap:12px;padding:13px 16px;border-radius:14px;background:rgba(99,102,241,.07);border:1.5px solid rgba(99,102,241,.22);cursor:pointer;margin-bottom:14px;transition:all .2s}
+.ce-quick-card:hover{background:rgba(99,102,241,.13);border-color:rgba(99,102,241,.45);transform:translateY(-2px)}
+.ce-quick-icon{font-size:22px;flex-shrink:0}.ce-quick-info{flex:1}
+.ce-quick-title{font-size:14px;font-weight:800;color:#818cf8;margin-bottom:2px}
+.ce-quick-sub{font-size:11.5px;color:var(--mu)}.ce-quick-arr{font-size:16px;color:rgba(129,140,248,.5)}
+/* ── NEXT DOMAIN BTN (results) ──────── */
+.res-next-dom{display:none;width:100%;padding:13px;border-radius:14px;background:linear-gradient(135deg,var(--or),#f59e0b);color:#fff;border:none;font-size:15px;font-weight:700;cursor:pointer;font-family:var(--font);margin-bottom:8px;transition:opacity .15s;letter-spacing:.1px}
+.res-next-dom:hover{opacity:.88}
 /* ── FEATURE 4: COMEBACK CARD ───────────────────────────── */
 .comeback-card{background:linear-gradient(135deg,rgba(34,197,94,.1),rgba(34,197,94,.04));border:1.5px solid rgba(34,197,94,.3);border-radius:16px;padding:16px 18px;margin-bottom:14px;position:relative;text-align:center}
 .comeback-close{position:absolute;top:10px;right:12px;background:none;border:none;color:var(--mu);font-size:16px;cursor:pointer;padding:2px 6px;border-radius:6px;line-height:1}
@@ -3921,6 +3945,15 @@ html.dark .hsd-pill{background:var(--bg2);border-color:var(--bo2)}
 
 <!-- COMEBACK CARD (Feature 4) -->
 <div id="comeback-card-home"></div>
+<!-- QUICK ACCESS CHIPS -->
+<div class="w"><div class="hm-quick-scroll">
+  <button class="hm-qchip" onclick="show('sc-schedule')">📅 Studieplan</button>
+  <button class="hm-qchip" onclick="openRapport()">📊 Voortgang</button>
+  <button class="hm-qchip" onclick="show('sc-calc');setTimeout(()=>switchCalc('plan'),100)">📋 Actieplan</button>
+  <button class="hm-qchip" onclick="openLastVakCE()">📄 CE-examens</button>
+  <button class="hm-qchip" onclick="openLastVakRace()">🏁 Bot Race</button>
+  <button class="hm-qchip" onclick="openProfiel()">🏅 Badges</button>
+</div></div>
 <!-- BENTO GRID (stats + quick actions) -->
 <div id="home-bento"></div>
 
@@ -3981,6 +4014,7 @@ html.dark .hsd-pill{background:var(--bg2);border-color:var(--bo2)}
   </div>
 
   <!-- VAKKEN HEADER -->
+  <div id="hm-stats-strip-wrap"></div>
   <div class="hm-vakken-hdr">
     <h2 class="hm-vakken-h2">Vakken</h2>
     <span class="hm-vakken-count" id="vakken-count-badge">—</span>
@@ -4098,6 +4132,7 @@ html.dark .hsd-pill{background:var(--bg2);border-color:var(--bo2)}
   </div>
 </nav>
 <div class="w" style="padding-top:24px">
+  <div class="det-breadcrumb"><span class="det-bc-home" onclick="show('sc-home')">🏠 Home</span><span class="det-bc-sep">›</span><span class="det-bc-cur" id="det-bc-vak"></span></div>
   <div class="sh"><h2 id="dtitle"></h2><p id="ddesc"></p><div class="ce"><strong>CE 2026:</strong> <span id="dce"></span></div></div>
   <!-- Leerpad hero card -->
   <div class="lp-ec" onclick="showLeerpad()" id="lp-ec">
@@ -4114,6 +4149,14 @@ html.dark .hsd-pill{background:var(--bg2);border-color:var(--bo2)}
     <div class="lp-ec-dots" id="lp-ec-dots"></div>
     <div class="lp-ec-bar-wrap"><div class="lp-ec-bar" id="lp-ec-bar" style="width:0%"></div></div>
     <div class="lp-ec-foot" id="lp-ec-foot"></div>
+  </div>
+  <div class="ce-quick-card" id="ce-quick-card" onclick="scrollToCeArchief()" style="display:none">
+    <span class="ce-quick-icon">📄</span>
+    <div class="ce-quick-info">
+      <div class="ce-quick-title">Echte CE-examens 2019–2025</div>
+      <div class="ce-quick-sub" id="ce-quick-sub">Opgaven + correctievoorschriften</div>
+    </div>
+    <span class="ce-quick-arr">›</span>
   </div>
   <button class="sim-entry-btn" onclick="startSimToets()" id="sim-entry-btn">
     <div class="sim-entry-icon">🎯</div>
@@ -4322,6 +4365,7 @@ html.dark .hsd-pill{background:var(--bg2);border-color:var(--bo2)}
     <div style="font-size:13px;color:rgba(255,255,255,.6);margin-bottom:12px">Alleen spelers met een account verschijnen op het leaderboard. Gratis aanmelden duurt 30 seconden.</div>
     <button onclick="switchAuthTab&&switchAuthTab('register');show('sc-auth')" style="background:linear-gradient(135deg,#6366f1,#4f46e5);color:#fff;border:none;border-radius:10px;padding:10px 22px;font-size:14px;font-weight:700;cursor:pointer;font-family:var(--font)">Account aanmaken →</button>
   </div>
+  <button class="res-next-dom" id="res-next-dom" onclick="nextDomeinQ()">→ Volgend domein oefenen</button>
   <div class="rbtns">
     <button class="btnp" onclick="retryQ()">🔄 Opnieuw</button>
     <button class="chal-daag-btn" onclick="daagUit()">⚔️ Daag een vriend uit</button>
@@ -9793,6 +9837,8 @@ function openVak(id,_noHash){
   document.getElementById('dtitle').textContent=ST.vak.naam;
   document.getElementById('ddesc').textContent=ST.vak.beschrijving;
   document.getElementById('dce').innerHTML=ST.vak.ceInfo;
+  const _bcVak=document.getElementById('det-bc-vak');
+  if(_bcVak)_bcVak.textContent=ST.vak.naam;
   // Remove previously injected exam-meta + yt-card + grade-panel + ce-archief-card (avoid stacking on revisit)
   document.querySelectorAll('.exam-meta,.yt-card,.grade-panel,.ce-archief-card').forEach(el=>el.remove());
   // Exam metadata
@@ -9847,6 +9893,12 @@ function openVak(id,_noHash){
     });
     _ch+=`<div style="font-size:11px;color:var(--mu);margin-top:10px;padding-top:10px;border-top:1px solid var(--bo)">${_EXAMENS_BASE?'Examens gehost door Slagio':'Examens via <a href="https://www.alleexamens.nl" target="_blank" rel="noopener" style="color:var(--mu)">AlleExamens.nl</a>'} · Syllabus &amp; normering: <a href="https://www.examenblad.nl" target="_blank" rel="noopener" style="color:var(--mu)">Examenblad.nl</a></div></div></div>`;
     metaHtml+=_ch;
+    const _ceQc=document.getElementById('ce-quick-card');
+    const _ceQs=document.getElementById('ce-quick-sub');
+    if(_ceQc){_ceQc.style.display='flex';if(_ceQs)_ceQs.textContent=`${_aeName} · ${_aeLvl} · 2019–2025`;}
+  } else {
+    const _ceQc=document.getElementById('ce-quick-card');
+    if(_ceQc)_ceQc.style.display='none';
   }
   document.getElementById('dce').insertAdjacentHTML('afterend',metaHtml);
 
@@ -11624,7 +11676,7 @@ function toonRes(){
   try{const _pbRes=savePB(ST.vak.id,ST.domein.id,pct);if(_pbRes.isNew){window._newPB=true;window._oldPB=_pbRes.prev?_pbRes.prev.score:null;}}catch(e){}
   // Rebuild grid and streak to update UI
   try{const g=document.getElementById('vakgrid');if(g){g.innerHTML='';buildGrid();}
-  renderStreak();renderFavHome();renderXPHome();renderDailyChallenge();renderDailyGoal();renderLiveCount();renderHomeStats();renderGreeting();try{renderComebackCard();}catch(e){}showDailyChallengePopup();}catch(e){}
+  renderStreak();renderFavHome();renderXPHome();renderDailyChallenge();renderDailyGoal();renderLiveCount();renderHomeStats();renderGreeting();try{renderComebackCard();}catch(e){}try{renderHmStatsStrip();}catch(e){}showDailyChallengePopup();}catch(e){}
   try{recordDailyGoal();}catch(e){};
   const isPerfect=pct===1&&ST.mode==='snel'&&tot>=3;
   if(isPerfect&&earnAch('perfect'))setTimeout(()=>showAch('🌟','Perfecte score! Geen enkel fout!',90),800);
@@ -11724,6 +11776,17 @@ function toonRes(){
             <button class="na-btn" ${btnAttr}>Ga →</button>
           </div>`;
         }
+      }
+    }catch(e){}
+    // Show "next domain" button if there's a next domain
+    try{
+      const _ndb=document.getElementById('res-next-dom');
+      if(_ndb&&ST.vak&&ST.domein){
+        const _doms=ST.vak.domeinen;
+        const _idx=_doms.findIndex(d=>d.id===ST.domein.id);
+        const _next=_doms[_idx+1];
+        if(_next){_ndb.textContent=`→ Volgend: Domein ${_next.id} — ${_next.naam}`;_ndb.style.display='block';}
+        else _ndb.style.display='none';
       }
     }catch(e){}
   }catch(e){console.warn('toonRes display error:',e);}
@@ -11855,6 +11918,54 @@ function toonRes(){
 
 function retryQ(){startQ(ST.mode);}
 function switchMode(){show('sc-qmode');}
+function nextDomeinQ(){
+  const doms=ST.vak?.domeinen;
+  if(!doms){show('sc-detail');return;}
+  const idx=doms.findIndex(d=>d.id===ST.domein?.id);
+  const next=doms[idx+1];
+  if(next){ST.domein=next;startQ(ST.mode||'snel');}
+  else show('sc-detail');
+}
+function openLastVakCE(){
+  const vak=ST.vak||getVK()[0];
+  if(!vak)return;
+  openVak(vak.id);
+  setTimeout(()=>{
+    const card=document.querySelector('.ce-archief-card');
+    if(card){card.classList.add('open');card.scrollIntoView({behavior:'smooth',block:'center'});}
+  },400);
+}
+function openLastVakRace(){
+  const vak=ST.vak||getVK()[0];
+  if(!vak)return;
+  ST.vak=vak;
+  if(!ST.domein||ST.domein.vakId!==vak.id)ST.domein=vak.domeinen[0];
+  show('sc-qmode');
+  setTimeout(()=>{
+    document.getElementById('qmode-race-section')?.scrollIntoView({behavior:'smooth',block:'center'});
+  },200);
+}
+function scrollToCeArchief(){
+  const card=document.querySelector('.ce-archief-card');
+  if(card){card.classList.add('open');card.scrollIntoView({behavior:'smooth',block:'center'});}
+}
+function renderHmStatsStrip(){
+  const wrap=document.getElementById('hm-stats-strip-wrap');
+  if(!wrap)return;
+  const streak=calcStreak()?.current||0;
+  const ach=getAchieved();
+  const earned=ALL_BADGES.filter(b=>ach[b.id]).length;
+  let vakCount=0;
+  try{const ph=JSON.parse(localStorage.getItem('examenapp_progress_havo')||'{}');const pv=JSON.parse(localStorage.getItem('examenapp_progress_vwo')||'{}');vakCount=new Set([...Object.keys(ph),...Object.keys(pv)].map(k=>k.split('_')[0])).size;}catch(e){}
+  const totalQ=getStreak().totalQuizzes||0;
+  const pills=[
+    streak>0?`<span class="hm-stat-pill" onclick="openProfiel()" title="Dagelijkse streak">🔥 ${streak} dag${streak===1?'':'en'}</span>`:'',
+    earned>0?`<span class="hm-stat-pill" onclick="openProfiel()" title="Behaalde badges">🏅 ${earned} badge${earned===1?'':'s'}</span>`:'',
+    vakCount>0?`<span class="hm-stat-pill" onclick="openProfiel()" title="Actieve vakken">📚 ${vakCount} vak${vakCount===1?'':'ken'}</span>`:'',
+    totalQ>0?`<span class="hm-stat-pill" onclick="openProfiel()" title="Totaal quizzen">⚡ ${totalQ} quiz${totalQ===1?'':'zen'}</span>`:'',
+  ].filter(Boolean);
+  wrap.innerHTML=pills.length?`<div class="hm-stats-strip">${pills.join('')}</div>`:'';
+}
 async function deelScore(){
   const vakNaam=ST.vak?.naam||'een vak';
   const score=document.getElementById('rnum')?.textContent||'?';
