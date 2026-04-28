@@ -981,6 +981,24 @@ html.dark .qb{background:#2e3550}
 .sam-check-fb{font-size:12px;margin-top:8px;padding:7px 10px;border-radius:7px;line-height:1.5;border-left:3px solid transparent}
 .sam-check-fb.fb-ok{background:rgba(34,197,94,.09);border-color:#22c55e;color:#15803d}
 .sam-check-fb.fb-err{background:rgba(239,68,68,.07);border-color:#ef4444;color:var(--dk)}
+/* ── Sam: leesvoortgang (fase 4) ── */
+.sam-prog-wrap{display:flex;align-items:center;gap:10px;margin-bottom:10px}
+.sam-prog-bar{flex:1;height:5px;background:var(--bo);border-radius:3px;overflow:hidden}
+.sam-prog-fill{height:100%;background:var(--or);border-radius:3px;transition:width .35s ease}
+.sam-prog-wrap.prog-done .sam-prog-fill{background:#22c55e}
+.sam-prog-label{font-size:11px;font-weight:700;color:var(--mu);white-space:nowrap;min-width:72px;text-align:right}
+.sam-prog-wrap.prog-done .sam-prog-label{color:#16a34a}
+.sam-head-ck{width:18px;height:18px;border-radius:50%;border:1.5px solid var(--bo);background:transparent;font-size:10px;cursor:pointer;color:var(--mu);display:inline-flex;align-items:center;justify-content:center;transition:all .18s;flex-shrink:0;font-family:var(--font);line-height:1;padding:0}
+.sam-head-ck:hover{border-color:var(--or);color:var(--or);background:rgba(var(--or-rgb),.07)}
+.sam-head-ck.hck-done{background:#22c55e;border-color:#22c55e;color:#fff}
+/* ── Sam: auto CE-spotlight (fase 5) ── */
+.sam-ce-auto .sam-ce-ex{padding:3px 0 5px}
+.sam-ce-bron{font-size:10px;font-weight:700;color:var(--mu);display:block;margin-bottom:3px;opacity:.75}
+.sam-ce-v{font-size:12.5px;color:var(--dk);line-height:1.55;font-style:italic}
+.sam-ce-sep{height:1px;background:var(--bo);margin:8px 0}
+/* ── Sam: print knop (fase 6) ── */
+.sam-print-btn{margin-top:8px;background:transparent;color:var(--mu);border:1.5px solid var(--bo);border-radius:10px;padding:8px 16px;font-size:12px;font-weight:600;cursor:pointer;font-family:var(--font);width:100%;transition:all .15s;display:flex;align-items:center;justify-content:center;gap:6px}
+.sam-print-btn:hover{border-color:var(--or);color:var(--or);background:rgba(var(--or-rgb),.05)}
 .fm{display:inline-block;background:var(--s);border:1px solid #C5D9F5;border-radius:6px;padding:2px 8px;font-family:monospace;font-size:12px;color:#1a56c4;margin:2px 3px}
 
 /* ── THEME TOGGLE ─────────────────────────────── */
@@ -9966,7 +9984,7 @@ function openVak(id,_noHash){
           <div class="ttags">${d.onderwerpen.map(o=>`<span class="tt">${o}</span>`).join('')}</div>
           <div class="tlbl">Samenvatting</div>
           <div class="sam">${SAM_RICH[ST.vak.id+'_'+d.id]||d.sam}</div>
-          <div class="sam-cta"><button class="sam-cta-btn" onclick="event.stopPropagation();openQmode('${d.id}')">▶ Oefenen op dit domein</button></div>
+          <div class="sam-cta"><button class="sam-cta-btn" onclick="event.stopPropagation();openQmode('${d.id}')">▶ Oefenen op dit domein</button><button class="sam-print-btn" onclick="event.stopPropagation();printSam()">📄 Samenvatting printen</button></div>
         </div>
         <div class="dtab-pane" data-tab-id="quiz"></div>
         <div class="dtab-pane" data-tab-id="vids"></div>
@@ -10225,7 +10243,47 @@ function initSamInteractive(container, d) {
       });
     });
 
-    // 1b. Inline check-vragen — inject after every 2nd section, max 3 total
+    // 1b. Leesvoortgang — progress bar + per-sectie vinkje
+    {
+      const vakId = (typeof ST!=='undefined'&&ST.vak)?ST.vak.id:'x';
+      const domId = d.id||'x';
+      const key = `slagio_read_${vakId}_${domId}`;
+      let readSet = new Set(JSON.parse(localStorage.getItem(key)||'[]'));
+      const heads = [...samEl.querySelectorAll('.sam-head')];
+      const total = heads.length;
+      const prog = document.createElement('div');
+      prog.className = 'sam-prog-wrap';
+      prog.innerHTML = `<div class="sam-prog-bar"><div class="sam-prog-fill"></div></div><span class="sam-prog-label"></span>`;
+      samEl.insertAdjacentElement('beforebegin', prog);
+      const fill = prog.querySelector('.sam-prog-fill');
+      const lbl = prog.querySelector('.sam-prog-label');
+      const upd = () => {
+        const n = readSet.size, pct = total ? n/total*100 : 0;
+        fill.style.width = pct+'%';
+        lbl.textContent = `${n}/${total} gelezen`;
+        prog.classList.toggle('prog-done', n===total&&total>0);
+      };
+      heads.forEach(h => {
+        const title = h.childNodes[0]?.textContent?.trim()||h.textContent.trim();
+        const btn = document.createElement('button');
+        btn.className = 'sam-head-ck'+(readSet.has(title)?' hck-done':'');
+        btn.title = readSet.has(title)?'Ongelezen':'Gelezen markeren';
+        btn.textContent = '✓';
+        btn.addEventListener('click', e => {
+          e.stopPropagation();
+          readSet.has(title) ? readSet.delete(title) : readSet.add(title);
+          btn.classList.toggle('hck-done', readSet.has(title));
+          btn.title = readSet.has(title)?'Ongelezen':'Gelezen markeren';
+          localStorage.setItem(key, JSON.stringify([...readSet]));
+          upd();
+        });
+        h.insertBefore(btn, h.lastChild.nodeType===3 ? h.lastChild : null);
+        h.appendChild(btn);
+      });
+      upd();
+    }
+
+    // 1c. Inline check-vragen — inject after every 2nd section, max 3 total
     if (d.sv && d.sv.length >= 2) {
       const heads = [...samEl.querySelectorAll('.sam-head')];
       const pool = [...d.sv].sort(() => Math.random() - .5);
@@ -10259,6 +10317,17 @@ function initSamInteractive(container, d) {
           });
         });
       });
+    }
+
+    // 1d. Auto CE-spotlight uit oe[] (fase 5) — alleen als nog geen sam-ce-spot aanwezig
+    if (d.oe && d.oe.length > 0 && !samEl.querySelector('.sam-ce-spot')) {
+      const ex = d.oe.slice(0, Math.min(2, d.oe.length));
+      const spot = document.createElement('div');
+      spot.className = 'sam-ce-spot sam-ce-auto';
+      spot.innerHTML = ex.map((q,i) =>
+        `${i>0?'<div class="sam-ce-sep"></div>':''}<div class="sam-ce-ex"><span class="sam-ce-bron">${q.bron||''}</span><div class="sam-ce-v">${q.v}</div></div>`
+      ).join('');
+      samEl.appendChild(spot);
     }
   }
 
@@ -10339,6 +10408,36 @@ function initSamInteractive(container, d) {
     });
   }
   renderQ();
+}
+
+function printSam() {
+  const samEl = document.querySelector('.sc-vis .sam');
+  if (!samEl) return;
+  const domNaam = document.querySelector('.sc-vis .dtop-naam')?.textContent || 'Samenvatting';
+  const vakNaam = ST?.vak?.naam || '';
+  const w = window.open('', '_blank');
+  w.document.write(`<!DOCTYPE html><html><head><meta charset="UTF-8"><title>${vakNaam} — ${domNaam}</title><style>
+    body{font-family:system-ui,sans-serif;max-width:800px;margin:40px auto;padding:0 20px;color:#1a1d26;font-size:13pt;line-height:1.8}
+    .sam-head{font-size:10pt;font-weight:800;text-transform:uppercase;color:#888;margin:20px 0 4px;padding-top:16px;border-top:1px solid #ddd}
+    .sam-head:first-child{border-top:none;padding-top:0;margin-top:0}
+    ul{padding-left:16px;margin:4px 0 12px}li{padding:3px 0}strong{color:#222}
+    .sam-tip{background:#f0fdf4;border-left:3px solid #22c55e;padding:8px 12px;margin:8px 0;border-radius:0 6px 6px 0}
+    .sam-warn{background:#fef2f2;border-left:3px solid #ef4444;padding:8px 12px;margin:8px 0;border-radius:0 6px 6px 0}
+    .sam-onthoud{background:#faf5ff;border:1.5px dashed #c084fc;border-radius:8px;padding:10px 14px;margin:10px 0}
+    .sam-ce-spot{background:#fff7ed;border:1.5px solid #fdba74;border-radius:8px;padding:10px 14px;margin:10px 0}
+    .sam-definitie{border-left:3px solid #6366f1;padding:8px 12px;margin:8px 0}
+    .sam-definitie-term{font-size:9pt;font-weight:800;text-transform:uppercase;color:#6366f1}
+    .sam-timeline{border-left:2px solid #f97316;padding:0 0 0 16px;list-style:none}
+    .sam-timeline-date{font-weight:800;color:#f97316;font-size:9pt}
+    .fm{font-family:monospace;background:#f0f0f0;padding:1px 6px;border-radius:4px}
+    .sam-check,.sam-prog-wrap,.sam-head-ck,.sam-cta{display:none}
+    @media print{body{margin:20mm}}
+  </style></head><body>
+    <h1>${vakNaam} — ${domNaam}</h1>
+    ${samEl.innerHTML}
+  </body></html>`);
+  w.document.close();
+  setTimeout(() => w.print(), 300);
 }
 
 function toggleD(id){
