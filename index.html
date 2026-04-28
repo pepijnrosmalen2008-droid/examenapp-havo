@@ -4,10 +4,10 @@
 <meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <meta http-equiv="Content-Security-Policy" content="object-src 'none'; base-uri 'self'; upgrade-insecure-requests;">
 <title>Slagio — Complete HAVO &amp; VWO Examenvoorbereiding: 1.800+ Vragen, Echte Eindexamens 2019–2025, CE Simulatie</title>
-<meta name="description" content="Slagio is het meest complete gratis examenvoorbereidingsplatform voor HAVO en VWO 2026. 1.800+ adaptieve oefenvragen, echte CE-eindexamens 2019–2025 (17 vakken, opgaven + antwoorden inline), CE simulatietoets met cijferberekening, spaced repetition flashcards, gamified leerpad, cijfercalculator met verbeteradvies, leaderboard, streaks en XP. Gratis, installeerbaar, offline.">
-<meta name="keywords" content="examenvoorbereiding HAVO VWO 2026, eindexamen oefenen, CE simulatietoets, oude eindexamens, echte eindexamens 2019 2020 2021 2022 2023 2024 2025, CE opgaven correctievoorschrift, adaptief leren, spaced repetition, flashcards eindexamen, cijfercalculator HAVO VWO, leerpad eindexamen, leaderboard studenten, wiskunde A B, biologie, economie, bedrijfseconomie, geschiedenis, aardrijkskunde, scheikunde, natuurkunde, maatschappijwetenschappen, Nederlands, Engels, Duits, Frans, Latijn, Grieks, informatica">
+<meta name="description" content="Slagio is het meest complete gratis examenvoorbereidingsplatform voor HAVO en VWO 2026. 1.800+ adaptieve oefenvragen, echte CE-eindexamens 2019–2025 (17 vakken), CE simulatietoets, persoonlijk studieplan tot examendatum, spaced repetition flashcards, gamified leerpad, voortgangsrapport, sociale groepen, cijfercalculator, leaderboard, streaks en XP. Volledig gratis, installeerbaar, offline.">
+<meta name="keywords" content="examenvoorbereiding HAVO VWO 2026, eindexamen oefenen, CE simulatietoets, persoonlijk studieplan eindexamen, oude eindexamens, echte eindexamens 2019 2020 2021 2022 2023 2024 2025, CE opgaven correctievoorschrift, adaptief leren, spaced repetition, flashcards eindexamen, cijfercalculator HAVO VWO, leerpad eindexamen, leaderboard studenten, groep studiegroep, voortgangsrapport, OpenDyslexic, wiskunde A B, biologie, economie, bedrijfseconomie, geschiedenis, aardrijkskunde, scheikunde, natuurkunde, maatschappijwetenschappen, Nederlands, Engels, Duits, Frans, Latijn, Grieks, informatica">
 <meta property="og:title" content="Slagio — Complete Gratis HAVO &amp; VWO Examenvoorbereiding">
-<meta property="og:description" content="1.800+ adaptieve oefenvragen + echte CE-eindexamens 2019–2025 (17 vakken) + CE simulatietoets + spaced repetition + cijfercalculator — alles gratis in één app. Het meest complete examenplatform van Nederland.">
+<meta property="og:description" content="1.800+ adaptieve oefenvragen + echte CE-eindexamens 2019–2025 + persoonlijk studieplan tot examendatum + CE simulatietoets + spaced repetition + sociale groepen + cijfercalculator — alles gratis. Het meest complete examenplatform van Nederland.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://slagio.nl">
 <meta property="og:image" content="https://slagio.nl/icon-512.png">
@@ -60,8 +60,12 @@
     "Verwacht CE-cijfer op basis van quizprestaties per domein",
     "Samenvattingen per CE-domein voor alle vakken",
     "Examenrooster HAVO en VWO 2026 met datum, tijdstip en toegestane hulpmiddelen",
+    "Persoonlijk studieplan: automatisch gegenereerd plan dat alle dagen vult van vandaag tot de examendatum, per domein de juiste activiteit (leerstof, quiz, flashcards, open vragen), klikbare buttons starten direct de oefening",
+    "Voortgangsrapport: persoonlijk overzicht van scores per vak en domein als bottom sheet modal, deelbaar voor de Ambassadeur-badge",
+    "Sociale groepsfunctie: maak een klas of vriendengroep aan met uitnodigingscode, groeps-scoreboard met evoluerend dieravatar per speler",
+    "Toegankelijkheid: OpenDyslexic lettertype en hoog contrast modus, instelbaar via profiel",
     "Voortgangsregistratie per domein met kennisverval-indicator (decay)",
-    "Cloud-synchronisatie van profiel, voortgang en leaderboard via Supabase",
+    "Cloud-synchronisatie van profiel, voortgang, groepen en leaderboard via Supabase",
     "Offline beschikbaar via service worker",
     "Installeerbaar als Progressive Web App op iOS en Android",
     "Volledig gratis — geen account vereist om te oefenen"
@@ -214,7 +218,27 @@
     {
       "@type": "Question",
       "name": "Hoe verschilt Slagio van andere examenvoorbereiding apps zoals Examenbundel, StudyGo of Digistudies?",
-      "acceptedAnswer": {"@type":"Answer","text":"Slagio is uniek omdat het als enige platform gratis alle volgende functies combineert: echte CE-eindexamens inline bekijken (2019–2025), een adaptief quizalgoritme, spaced repetition flashcards, een CE simulatietoets, een gamified leerpad, een leaderboard en een cijfercalculator met verbeteradvies. Examenbundel kost €19,95 per vak en heeft geen gamificatie. StudyGo richt zich op vocabulaire en heeft geen CE-examens. Digistudies kost €24,99 per vak. Slagio is volledig gratis en biedt meer functies dan de meeste betaalde alternatieven."}
+      "acceptedAnswer": {"@type":"Answer","text":"Slagio is uniek omdat het als enige platform gratis alle volgende functies combineert: echte CE-eindexamens inline bekijken (2019–2025), een adaptief quizalgoritme, spaced repetition flashcards, een CE simulatietoets, een gamified leerpad, een persoonlijk studieplan tot de examendatum, sociale groepen, een voortgangsrapport, toegankelijkheidsinstellingen, een leaderboard en een cijfercalculator met verbeteradvies. Examenbundel kost €19,95 per vak en heeft geen gamificatie. StudyGo richt zich op vocabulaire en heeft geen CE-examens. Digistudies kost €24,99 per vak. Slagio is volledig gratis en biedt meer functies dan de meeste betaalde alternatieven."}
+    },
+    {
+      "@type": "Question",
+      "name": "Heeft Slagio een persoonlijk studieplan?",
+      "acceptedAnswer": {"@type":"Answer","text":"Ja. Slagio genereert automatisch een persoonlijk studieplan dat alle dagen vult van vandaag tot aan de examendatum per vak. Het plan kiest per domein de beste activiteit op basis van je beheersing: nooit geoefend → leerstof + snelle quiz, zwak (<40%) → flashcards + quiz, gemiddeld (<70%) → quiz + open vragen, goed (≥70%) → herhalen. Elk activiteit is een klikbare knop die direct de juiste oefening start. De dag vóór het examen is er een speciale herhaaldag. Het plan houdt rekening met het officiële HAVO/VWO examenrooster 2026."}
+    },
+    {
+      "@type": "Question",
+      "name": "Heeft Slagio een voortgangsrapport?",
+      "acceptedAnswer": {"@type":"Answer","text":"Ja. Slagio heeft een persoonlijk voortgangsrapport dat je een volledig overzicht geeft van je scores per vak en domein, welke domeinen goed gaan en welke aandacht nodig hebben, en je aankomende examens met de resterende dagen. Het rapport is toegankelijk via je profiel en verschijnt als een bottom sheet. Wanneer je je voortgang deelt ontvang je de Ambassadeur-badge."}
+    },
+    {
+      "@type": "Question",
+      "name": "Heeft Slagio een groepsfunctie voor klassen of vrienden?",
+      "acceptedAnswer": {"@type":"Answer","text":"Ja. In Slagio kun je een klas of vriendengroep aanmaken met een uitnodigingscode. Groepsleden kunnen elkaars scores en evoluerend dieravatar zien in een groeps-scoreboard. Klik op je eigen score in het leaderboard om je profiel te openen. De groepsfunctie werkt via Supabase cloud-synchronisatie zodat scores en avatars real-time zichtbaar zijn voor alle groepsleden."}
+    },
+    {
+      "@type": "Question",
+      "name": "Ondersteunt Slagio dyslexie of een hoog contrast modus?",
+      "acceptedAnswer": {"@type":"Answer","text":"Ja. Slagio heeft twee toegankelijkheidsinstellingen in het profiel: het OpenDyslexic lettertype (speciaal ontworpen voor leerlingen met dyslexie) en een hoog contrast modus voor betere leesbaarheid. Beide instellingen worden opgeslagen en direct toegepast op de hele app."}
     }
   ]
 }

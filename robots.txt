@@ -32,6 +32,36 @@ Allow: /
 User-agent: YouBot
 Allow: /
 
+User-agent: OAI-SearchBot
+Allow: /
+
+# Grok / xAI
+User-agent: Grok
+Allow: /
+
+# Microsoft Copilot
+User-agent: Copilot
+Allow: /
+
+# Meta AI
+User-agent: Meta-ExternalAgent
+Allow: /
+
+User-agent: Meta-ExternalFetcher
+Allow: /
+
+# Common Crawl (gebruikt door veel AI-trainingssets)
+User-agent: CCBot
+Allow: /
+
+# DuckDuckGo AI
+User-agent: DuckAssistBot
+Allow: /
+
+# Mistral
+User-agent: MistralBot
+Allow: /
+
 Sitemap: https://slagio.nl/sitemap.xml
 
 # LLMs.txt — beschrijving voor AI-assistenten
