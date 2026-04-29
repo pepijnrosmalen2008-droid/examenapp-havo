@@ -9136,70 +9136,82 @@ async function cloudGet(col,def){
   }catch(e){return _safeLocalGet(col,def);}
 }
 // ── Cross-device sync bundle (packed into profiel.sync) ──────────────────
-// Bundelt alles wat niet via aparte Supabase-kolommen gaat
+// Alle data die NIET via aparte Supabase-kolommen gesynchroon gaat, wordt
+// hier ingepakt in het bestaande profiel-veld (100% betrouwbaar aanwezig).
 let _syncBundleTimer=null;
+function _ls(key,def){try{return JSON.parse(localStorage.getItem(key)||'null')??def;}catch(e){return def;}}
 function buildSyncBundle(){
-  let sp_prefs={};try{sp_prefs=JSON.parse(localStorage.getItem(SP_PREF_KEY)||'null')||{};}catch(e){}
   return {
+    v:2,
     ach:getAchieved(),
     decay:getDecay(),
     sp_done:spGetDone(),
-    sp_prefs:sp_prefs,
+    sp_prefs:_ls('slagio_sp_prefs_v1',{}),
+    sp_plan:_ls('slagio_sp_plan_v1',null),
     counters:{
       fc:parseInt(localStorage.getItem('slagio_fc_sessions')||'0'),
       race:parseInt(localStorage.getItem('slagio_race_wins')||'0'),
       perfect:parseInt(localStorage.getItem('slagio_perfect_count')||'0'),
       plan:parseInt(localStorage.getItem('slagio_plan_tasks')||'0')
     },
-    cij_h:JSON.parse(localStorage.getItem('examenapp_cijfers_havo')||'{}'),
-    cij_v:JSON.parse(localStorage.getItem('examenapp_cijfers_vwo')||'{}')
+    cij_h:_ls('examenapp_cijfers_havo',{}),
+    cij_v:_ls('examenapp_cijfers_vwo',{}),
+    mijn_h:_ls('examenapp_mijnvakken_havo',[]),
+    mijn_v:_ls('examenapp_mijnvakken_vwo',[])
   };
 }
 function restoreSyncBundle(bundle){
   if(!bundle||typeof bundle!=='object')return;
-  // Achievements: union (badge ooit gehaald = blijft gehaald)
-  if(bundle.ach){
-    const m={...getAchieved(),...bundle.ach};
-    localStorage.setItem(ACH_KEY,JSON.stringify(m));
-  }
-  // Decay: per domein de meest recente timestamp
+  // Achievements: union — badge ooit verdiend = altijd behouden
+  if(bundle.ach){localStorage.setItem(ACH_KEY,JSON.stringify({...getAchieved(),...bundle.ach}));}
+  // Decay: meest recente timestamp per domein
   if(bundle.decay){
-    const local=getDecay();const m={...local};
+    const m={...getDecay()};
     Object.keys(bundle.decay).forEach(k=>{if(!m[k]||bundle.decay[k]>m[k])m[k]=bundle.decay[k];});
     localStorage.setItem(DECAY_KEY,JSON.stringify(m));
   }
   // Studieplan done: union
-  if(bundle.sp_done){
-    const m={...spGetDone(),...bundle.sp_done};
-    localStorage.setItem(SP_DONE_KEY,JSON.stringify(m));
-  }
-  // Studieplan prefs: remote wint (bewuste keuze van de gebruiker)
+  if(bundle.sp_done){localStorage.setItem(SP_DONE_KEY,JSON.stringify({...spGetDone(),...bundle.sp_done}));}
+  // Studieplan prefs: remote wint (bewuste keuze gebruiker)
   if(bundle.sp_prefs&&Object.keys(bundle.sp_prefs).length)
     localStorage.setItem(SP_PREF_KEY,JSON.stringify(bundle.sp_prefs));
+  // Studieplan zelf: meest recente plan wint; geen lokaal plan → gebruik remote
+  if(bundle.sp_plan){
+    const local=_ls('slagio_sp_plan_v1',null);
+    if(!local||(bundle.sp_plan.generated&&(!local.generated||bundle.sp_plan.generated>=local.generated))){
+      localStorage.setItem(SP_PLAN_KEY,JSON.stringify(bundle.sp_plan));
+      localStorage.setItem('slagio_plan_generated','1');
+    }
+  }
   // Tellers: neem het hoogste getal
   if(bundle.counters){
-    const c=bundle.counters;
-    ['fc','race','perfect','plan'].forEach((k,i)=>{
-      const lk=['slagio_fc_sessions','slagio_race_wins','slagio_perfect_count','slagio_plan_tasks'][i];
-      const v=c[k]||0;if(v>0)localStorage.setItem(lk,String(Math.max(v,parseInt(localStorage.getItem(lk)||'0'))));
+    [['fc','slagio_fc_sessions'],['race','slagio_race_wins'],
+     ['perfect','slagio_perfect_count'],['plan','slagio_plan_tasks']].forEach(([k,lk])=>{
+      const v=bundle.counters[k]||0;
+      if(v>0)localStorage.setItem(lk,String(Math.max(v,parseInt(localStorage.getItem(lk)||'0'))));
     });
   }
-  // Cijfers: remote-waarden vullen lokale gaten aan (local wint bij conflict)
-  if(bundle.cij_h){
-    const m={...bundle.cij_h,...JSON.parse(localStorage.getItem('examenapp_cijfers_havo')||'{}')};
-    localStorage.setItem('examenapp_cijfers_havo',JSON.stringify(m));
+  // Cijfers: remote vult lokale leegte aan; lokale waarde wint bij conflict
+  if(bundle.cij_h&&Object.keys(bundle.cij_h).length){
+    localStorage.setItem('examenapp_cijfers_havo',
+      JSON.stringify({...bundle.cij_h,..._ls('examenapp_cijfers_havo',{})}));
   }
-  if(bundle.cij_v){
-    const m={...bundle.cij_v,...JSON.parse(localStorage.getItem('examenapp_cijfers_vwo')||'{}')};
-    localStorage.setItem('examenapp_cijfers_vwo',JSON.stringify(m));
+  if(bundle.cij_v&&Object.keys(bundle.cij_v).length){
+    localStorage.setItem('examenapp_cijfers_vwo',
+      JSON.stringify({...bundle.cij_v,..._ls('examenapp_cijfers_vwo',{})}));
   }
+  // Mijn vakken: remote wint als het niet leeg is
+  if(Array.isArray(bundle.mijn_h)&&bundle.mijn_h.length)
+    localStorage.setItem('examenapp_mijnvakken_havo',JSON.stringify(bundle.mijn_h));
+  if(Array.isArray(bundle.mijn_v)&&bundle.mijn_v.length)
+    localStorage.setItem('examenapp_mijnvakken_vwo',JSON.stringify(bundle.mijn_v));
 }
 async function pushSyncBundle(){
   if(!currentUser)return;
   clearTimeout(_syncBundleTimer);
   _syncBundleTimer=setTimeout(async()=>{
     try{
-      const prof=JSON.parse(localStorage.getItem(PROF_KEY)||'{}');
+      const prof=_ls(PROF_KEY,{});
       prof.sync=buildSyncBundle();
       localStorage.setItem(PROF_KEY,JSON.stringify(prof));
       await SB.from('user_data').upsert(
@@ -9207,7 +9219,7 @@ async function pushSyncBundle(){
         {onConflict:'user_id'}
       );
     }catch(e){console.warn('pushSyncBundle error:',e);}
-  },5000);
+  },4000);
 }
 // ─────────────────────────────────────────────────────────────────────────
 
@@ -9269,6 +9281,8 @@ async function syncFromCloud(){
     try{renderVandaagWidget();}catch(e){}
     try{if(document.getElementById('sc-cijfers')?.classList.contains('on'))buildCijferGrid();}catch(e){}
     try{if(document.getElementById('sc-studieplan')?.classList.contains('on'))renderStudieplan();}catch(e){}
+    // Upload lokale data die de cloud nog niet kent (bijv. cijfers vóór sync-update)
+    try{pushSyncBundle();}catch(e){}
   }catch(e){
     console.warn('syncFromCloud error:',e);
   }
@@ -12688,6 +12702,7 @@ function spMarkDone(key){
 
 function spStorePlan(tasks){
   try{localStorage.setItem(SP_PLAN_KEY,JSON.stringify({generated:new Date().toISOString().slice(0,10),tasks}));}catch(e){}
+  try{pushSyncBundle();}catch(e){}
 }
 function spGetPlan(){try{return JSON.parse(localStorage.getItem(SP_PLAN_KEY)||'null');}catch(e){return null;}}
 function spGetTodayTasks(){
@@ -16073,7 +16088,7 @@ const EXAM_SCHEDULE=[
 {datum:'2026-05-27',tijd:'13:30–16:00',vak:'Arabisch / Spaans / Turks',duur:'2,5 uur',havo:false}
 ];
 function getMijnVakken(){try{const d=JSON.parse(localStorage.getItem('examenapp_'+lvlCol('mijnvakken'))||'[]');return Array.isArray(d)?d:(d.list||[]);}catch(e){return [];}}
-function setMijnVakken(arr){cloudSet(lvlCol('mijnvakken'),{list:arr});}
+function setMijnVakken(arr){cloudSet(lvlCol('mijnvakken'),{list:arr});try{pushSyncBundle();}catch(e){}}
 function renderSchedule(){
   const list=document.getElementById('schedule-list');
   const onlyMine=document.getElementById('sch-filter-mine').checked;
