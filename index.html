@@ -3854,6 +3854,50 @@ html.dark .hsd-pill{background:var(--bg2);border-color:var(--bo2)}
 .sp-exam-icon{font-size:20px}
 .sp-exam-name{font-family:var(--font-head);font-size:13px;font-weight:800;color:var(--or);line-height:1.3}
 .sp-exam-time{font-size:11px;color:var(--mu)}
+/* ── STUDIEPLAN DEDICATED SCREEN ────────────────── */
+.splan-page-hero{background:linear-gradient(135deg,rgba(var(--or-rgb),.13) 0%,rgba(var(--or-rgb),.03) 100%);border-bottom:1px solid rgba(var(--or-rgb),.15);padding:20px 16px 18px;margin:-24px -16px 20px;position:relative;overflow:hidden}
+.splan-page-hero::before{content:'';position:absolute;top:-60px;right:-60px;width:180px;height:180px;background:radial-gradient(circle,rgba(var(--or-rgb),.14),transparent 70%);pointer-events:none}
+.splan-page-title{font-family:var(--font-head);font-size:24px;font-weight:900;color:var(--dk);margin-bottom:4px;letter-spacing:-.5px}
+.splan-page-sub{font-size:13px;color:var(--mu);line-height:1.5;margin-bottom:14px}
+.splan-rooster-link{display:inline-flex;align-items:center;gap:6px;font-size:12px;font-weight:700;color:var(--mu);background:rgba(255,255,255,.06);border:1px solid var(--bo);border-radius:10px;padding:5px 12px;cursor:pointer;transition:color .2s,border-color .2s;-webkit-tap-highlight-color:transparent}
+.splan-rooster-link:active{color:var(--or);border-color:rgba(var(--or-rgb),.3)}
+/* Vandaag sectie bovenaan plan */
+.sp-vandaag{background:linear-gradient(135deg,rgba(var(--or-rgb),.1),rgba(var(--or-rgb),.03));border:1px solid rgba(var(--or-rgb),.2);border-radius:18px;padding:14px 16px;margin-bottom:20px}
+.sp-vandaag-header{display:flex;align-items:center;justify-content:space-between;margin-bottom:12px}
+.sp-vandaag-title{font-family:var(--font-head);font-size:15px;font-weight:800;color:var(--dk)}
+.sp-vandaag-badge{font-size:11px;font-weight:700;background:rgba(var(--or-rgb),.15);color:var(--or);padding:2px 9px;border-radius:20px;border:1px solid rgba(var(--or-rgb),.25)}
+.sp-vandaag-done-state{text-align:center;padding:8px 0;font-size:13px;color:#22c55e;font-weight:700}
+/* Taakkaarten */
+.sp-task-card{background:var(--s);border:1px solid var(--bo);border-radius:14px;padding:11px 14px;display:flex;align-items:center;gap:12px;margin-bottom:8px;transition:opacity .3s}
+.sp-task-card.sp-done{opacity:.45}
+.sp-task-card.sp-done .sp-task-card-dom{text-decoration:line-through;color:var(--mu)}
+.sp-task-card-left{flex:1;min-width:0}
+.sp-task-card-vak{font-size:10.5px;font-weight:700;color:var(--mu);text-transform:uppercase;letter-spacing:.06em;margin-bottom:2px}
+.sp-task-card-dom{font-size:13px;font-weight:700;color:var(--dk);line-height:1.3;margin-bottom:5px}
+.sp-task-card-meta{display:flex;align-items:center;gap:6px;flex-wrap:wrap}
+.sp-task-card-time{font-size:10px;color:var(--mu);font-weight:600;background:rgba(255,255,255,.05);padding:2px 7px;border-radius:7px}
+.sp-check-btn{width:34px;height:34px;border-radius:50%;border:2px solid var(--bo);background:transparent;cursor:pointer;display:flex;align-items:center;justify-content:center;flex-shrink:0;transition:all .2s;-webkit-tap-highlight-color:transparent;color:var(--mu)}
+.sp-check-btn:hover{border-color:#22c55e;color:#22c55e}
+.sp-check-btn.checked{border-color:#22c55e;background:#22c55e;color:#fff}
+.sp-check-btn svg{width:15px;height:15px;stroke:currentColor;stroke-width:2.5;fill:none;stroke-linecap:round;stroke-linejoin:round}
+/* Homepage vandaag-widget */
+.sp-home-widget{background:linear-gradient(135deg,rgba(var(--or-rgb),.11) 0%,rgba(var(--or-rgb),.04) 100%);border:1px solid rgba(var(--or-rgb),.2);border-radius:18px;overflow:hidden;margin-bottom:4px}
+.sp-home-widget.sp-urgent{border-color:rgba(239,68,68,.4);animation:spUrgPulse 3s ease-in-out infinite}
+@keyframes spUrgPulse{0%,100%{box-shadow:none}50%{box-shadow:0 0 14px 2px rgba(239,68,68,.2)}}
+.sp-hw-header{display:flex;align-items:center;justify-content:space-between;padding:13px 16px 10px;border-bottom:1px solid rgba(var(--or-rgb),.12)}
+.sp-hw-title{font-family:var(--font-head);font-size:14px;font-weight:800;color:var(--dk);display:flex;align-items:center;gap:7px}
+.sp-hw-link{font-size:12px;font-weight:700;color:var(--or);cursor:pointer;-webkit-tap-highlight-color:transparent}
+.sp-hw-tasks{padding:10px 16px 14px;display:flex;flex-direction:column;gap:7px}
+.sp-hw-task{display:flex;align-items:center;gap:10px;cursor:pointer;-webkit-tap-highlight-color:transparent;padding:4px 0}
+.sp-hw-task-icon{width:30px;height:30px;border-radius:9px;display:flex;align-items:center;justify-content:center;font-size:14px;flex-shrink:0}
+.sp-hw-task-body{flex:1;min-width:0}
+.sp-hw-task-dom{font-size:13px;font-weight:700;color:var(--dk);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.sp-hw-task-sub{font-size:11px;color:var(--mu)}
+.sp-hw-task-time{font-size:10px;font-weight:700;color:var(--mu);background:rgba(255,255,255,.05);padding:2px 7px;border-radius:7px;flex-shrink:0}
+.sp-hw-done-state{padding:14px 16px;text-align:center;font-size:13px;color:#22c55e;font-weight:700}
+.sp-hw-generate{padding:12px 16px 14px}
+.sp-hw-gen-btn{width:100%;padding:11px;background:var(--or);color:#fff;border:none;border-radius:12px;font-family:var(--font-head);font-size:13px;font-weight:800;cursor:pointer;transition:opacity .2s;box-shadow:0 3px 12px rgba(var(--or-rgb),.3)}
+.sp-hw-gen-btn:active{opacity:.75}
 /* ── TOEGANKELIJKHEID ────────────────────────────── */
 .acc-row{display:flex;justify-content:space-between;align-items:center;padding:13px 0;border-bottom:1px solid var(--bo)}
 .acc-row:last-child{border-bottom:none}
@@ -4139,15 +4183,8 @@ html.dark .hsd-pill{background:var(--bg2);border-color:var(--bo2)}
 
 <div class="w">
 
-  <!-- STUDIEPLAN CTA -->
-  <div class="sp-home-card" onclick="show('sc-schedule');renderStudieplan()" role="button" aria-label="Ga naar adaptief studieplan">
-    <div class="sp-home-card-icon">📅</div>
-    <div class="sp-home-card-body">
-      <div class="sp-home-card-title">Adaptief studieplan</div>
-      <div class="sp-home-card-sub">Per vak &amp; domein — op basis van jouw beheersing en examendatum</div>
-    </div>
-    <div class="sp-home-card-arrow">›</div>
-  </div>
+  <!-- STUDIEPLAN VANDAAG-WIDGET -->
+  <div id="sp-home-widget-wrap"></div>
 
   <!-- DYNAMIC WIDGETS (JS-driven) -->
   <div id="live-count-home"></div>
@@ -4794,34 +4831,35 @@ html.dark .hsd-pill{background:var(--bg2);border-color:var(--bo2)}
     <label><input type="checkbox" id="sch-filter-mine" class="sch-check" onchange="renderSchedule()"> Alleen mijn vakken</label>
   </div>
   <div id="schedule-list" class="schedule-list"></div>
-  <!-- Ad: rooster pagina (rustmoment) -->
-  <div class="ad-wrapper" id="ad-schedule" style="margin-top:20px">
-    <span class="ad-label">Advertentie</span>
-    <div class="ad-slot ad-slot--banner">
-      <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-3580526892359138" data-ad-slot="0000000000" data-ad-format="auto" data-full-width-responsive="true"></ins>
-    </div>
+  <div style="text-align:center;margin-top:20px;padding:16px 0">
+    <button class="sp-gen-btn" style="width:100%" onclick="show('sc-studieplan');renderStudieplan()">📅 Naar mijn studieplan →</button>
   </div>
-  <!-- STUDIEPLAN -->
-  <div class="sp-section">
-    <div class="sp-hero">
-      <div class="sp-hero-title">📅 Adaptief studieplan</div>
-      <div class="sp-hero-sub">Elke dag precies de juiste oefening — op basis van je beheersing, trends en examendatum.</div>
-      <div>
-        <div class="sp-pref-label">Studiedagen &amp; intensiteit</div>
-        <div class="sp-pref-days" id="sp-pref-days">
-          <div class="sp-pref-day" data-day="1" data-intensity="2" onclick="spCyclePref(this)"><div class="sp-pref-day-name">Ma</div><div class="sp-pref-day-dot"></div></div>
-          <div class="sp-pref-day" data-day="2" data-intensity="2" onclick="spCyclePref(this)"><div class="sp-pref-day-name">Di</div><div class="sp-pref-day-dot"></div></div>
-          <div class="sp-pref-day" data-day="3" data-intensity="2" onclick="spCyclePref(this)"><div class="sp-pref-day-name">Wo</div><div class="sp-pref-day-dot"></div></div>
-          <div class="sp-pref-day" data-day="4" data-intensity="2" onclick="spCyclePref(this)"><div class="sp-pref-day-name">Do</div><div class="sp-pref-day-dot"></div></div>
-          <div class="sp-pref-day" data-day="5" data-intensity="2" onclick="spCyclePref(this)"><div class="sp-pref-day-name">Vr</div><div class="sp-pref-day-dot"></div></div>
-          <div class="sp-pref-day" data-day="6" data-intensity="1" onclick="spCyclePref(this)"><div class="sp-pref-day-name">Za</div><div class="sp-pref-day-dot"></div></div>
-        </div>
-        <div class="sp-pref-hint">Tik om te wisselen: <span style="color:#22c55e;font-weight:700">●</span> licht &nbsp;<span style="color:var(--or);font-weight:700">●</span> normaal &nbsp;<span style="color:#ef4444;font-weight:700">●</span> intensief &nbsp;grijs&nbsp;=&nbsp;vrij</div>
-      </div>
-      <button class="sp-gen-btn" id="sp-gen-btn" onclick="renderStudieplan()">✨ Genereer mijn studieplan</button>
-    </div>
-    <div id="studieplan-content"></div>
+</div>
+</div>
+
+<!-- STUDIEPLAN (eigen scherm) -->
+<div id="sc-studieplan" class="sc">
+<nav class="nav"><div class="nav-inner"><div class="logo" onclick="show('sc-home')"><img src="/icon-192.png" alt="Slagio" style="width:26px;height:26px;border-radius:7px;object-fit:cover;flex-shrink:0">Slagio</div><button class="bk" onclick="show('sc-home')">← Terug</button><button class="theme-btn" onclick="toggleDark()" title="Nachtmodus" style="margin-left:auto"><svg viewBox="0 0 24 24"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg></button></div></nav>
+<div class="w" style="padding-top:24px">
+  <div class="splan-page-hero">
+    <div class="splan-page-title">📅 Studieplan</div>
+    <div class="splan-page-sub">Adaptieve planning op basis van jouw resultaten en examendatum — elke dag precies de juiste oefening.</div>
+    <button class="splan-rooster-link" onclick="show('sc-schedule')">📋 Examenrooster bekijken →</button>
   </div>
+  <div style="margin-bottom:16px">
+    <div class="sp-pref-label">Studiedagen &amp; intensiteit</div>
+    <div class="sp-pref-days" id="sp-pref-days">
+      <div class="sp-pref-day" data-day="1" data-intensity="2" onclick="spCyclePref(this)"><div class="sp-pref-day-name">Ma</div><div class="sp-pref-day-dot"></div></div>
+      <div class="sp-pref-day" data-day="2" data-intensity="2" onclick="spCyclePref(this)"><div class="sp-pref-day-name">Di</div><div class="sp-pref-day-dot"></div></div>
+      <div class="sp-pref-day" data-day="3" data-intensity="2" onclick="spCyclePref(this)"><div class="sp-pref-day-name">Wo</div><div class="sp-pref-day-dot"></div></div>
+      <div class="sp-pref-day" data-day="4" data-intensity="2" onclick="spCyclePref(this)"><div class="sp-pref-day-name">Do</div><div class="sp-pref-day-dot"></div></div>
+      <div class="sp-pref-day" data-day="5" data-intensity="2" onclick="spCyclePref(this)"><div class="sp-pref-day-name">Vr</div><div class="sp-pref-day-dot"></div></div>
+      <div class="sp-pref-day" data-day="6" data-intensity="1" onclick="spCyclePref(this)"><div class="sp-pref-day-name">Za</div><div class="sp-pref-day-dot"></div></div>
+    </div>
+    <div class="sp-pref-hint">Tik om te wisselen: <span style="color:#22c55e;font-weight:700">●</span> licht &nbsp;<span style="color:var(--or);font-weight:700">●</span> normaal &nbsp;<span style="color:#ef4444;font-weight:700">●</span> intensief &nbsp;grijs&nbsp;=&nbsp;vrij</div>
+  </div>
+  <button class="sp-gen-btn" id="sp-gen-btn" onclick="renderStudieplan()">✨ Genereer mijn studieplan</button>
+  <div id="studieplan-content"></div>
 </div>
 </div>
 
@@ -7460,7 +7498,7 @@ let ST = {vak:null,domein:null,mode:null,vragen:[],idx:0,score:0,antwrd:[],timer
 
 // ═══════ UI HELPERS ═══════
 // ═══════ HASH ROUTING ═══════
-const _SCREEN_HASHES={'sc-info':'info','sc-schedule':'rooster','sc-calc':'rekenmachine','sc-streak':'streaks'};
+const _SCREEN_HASHES={'sc-info':'info','sc-schedule':'rooster','sc-studieplan':'studieplan','sc-calc':'rekenmachine','sc-streak':'streaks'};
 // Vak ID → URL-slug (volledige naam)
 const _VAK_SLUG={nl:'nederlands',wa:'wiskunde-a',wb:'wiskunde-b',bi:'biologie',sk:'scheikunde',na:'natuurkunde',be:'bedrijfseconomie',en:'engels',ec:'economie',gs:'geschiedenis',ak:'aardrijkskunde',mw:'maatschappijwetenschappen',du:'duits',fr:'frans',la:'latijn',gr:'grieks',in:'informatica'};
 const _SLUG_VAK=Object.fromEntries(Object.entries(_VAK_SLUG).map(([k,v])=>[v,k]));
@@ -7506,6 +7544,7 @@ function show(id,_noHash){
   }
   if(id==='sc-home'){try{renderComebackCard();}catch(e){}try{renderFeatDisc();}catch(e){}}
   if(id==='sc-schedule'&&localStorage.getItem('slagio_plan_generated')&&!document.getElementById('studieplan-content')?.children.length){try{renderStudieplan();}catch(e){}}
+  if(id==='sc-studieplan'){try{spInitPrefs();}catch(e){}if(localStorage.getItem('slagio_plan_generated')){try{renderStudieplan();}catch(e){}}}
   // Welcome screen gets its own indigo theme; level pages get their own theme
   if(id==='sc-welcome'){
     document.documentElement.classList.remove('level-havo','level-vwo');
@@ -11899,6 +11938,7 @@ document.addEventListener('DOMContentLoaded',()=>{
   const btn=document.getElementById('quiz-snd-btn');
   if(btn)btn.textContent=_soundOn?'🔊':'🔇';
   spInitPrefs();
+  try{renderVandaagWidget();}catch(e){}
 });
 
 // ═══════ HAPTIC ═══════
@@ -12393,6 +12433,135 @@ async function shareRapport(){
 // ═══════ STUDIEPLAN v2 ═══════
 const SP_PREF_KEY='slagio_sp_prefs_v1';
 const SP_PREV_KEY='slagio_sp_prev_v1';
+const SP_PLAN_KEY='slagio_sp_plan_v1';
+const SP_DONE_KEY='slagio_sp_done_v1';
+
+function spGetDone(){try{return JSON.parse(localStorage.getItem(SP_DONE_KEY)||'{}');}catch(e){return{};}}
+function spIsDone(key){return!!spGetDone()[key];}
+function spMarkDone(key){
+  const d=spGetDone();
+  if(d[key])return;
+  d[key]=true;
+  localStorage.setItem(SP_DONE_KEY,JSON.stringify(d));
+  // XP bonus
+  try{addXP(25);}catch(e){}
+  // Refresh widgets
+  try{renderVandaagWidget();}catch(e){}
+  // Refresh plan done-states
+  try{
+    const btn=document.querySelector(`[data-spkey="${key}"]`);
+    if(btn){btn.classList.add('checked');btn.closest('.sp-task-card')?.classList.add('sp-done');}
+    const vanBtn=document.querySelector(`[data-spkey-hw="${key}"]`);
+    if(vanBtn)vanBtn.closest('.sp-hw-task')?.remove();
+  }catch(e){}
+}
+
+function spStorePlan(tasks){
+  try{localStorage.setItem(SP_PLAN_KEY,JSON.stringify({generated:new Date().toISOString().slice(0,10),tasks}));}catch(e){}
+}
+function spGetPlan(){try{return JSON.parse(localStorage.getItem(SP_PLAN_KEY)||'null');}catch(e){return null;}}
+function spGetTodayTasks(){
+  const plan=spGetPlan();
+  if(!plan)return[];
+  const today=new Date().toISOString().slice(0,10);
+  return(plan.tasks||[]).filter(t=>t.dateStr===today);
+}
+
+// Actie-kleur helper
+function spActCls(actKey){
+  return{leerstof:'rgba(99,102,241,.15)',quiz:'rgba(249,115,22,.15)',flash:'rgba(20,184,166,.15)',open:'rgba(139,92,246,.15)',herhaal:'rgba(34,197,94,.15)'}[actKey]||'rgba(255,255,255,.08)';
+}
+
+function renderVandaagWidget(){
+  const wrap=document.getElementById('sp-home-widget-wrap');
+  if(!wrap)return;
+  const plan=spGetPlan();
+  const ACTS_HW={leerstof:['📖','Leerstof lezen'],quiz:['⚡','Snelle quiz'],flash:['🃏','Flashcards'],open:['📝','Open vragen'],herhaal:['🔄','Herhalen']};
+
+  if(!plan){
+    wrap.innerHTML=`<div class="sp-home-widget">
+      <div class="sp-hw-header"><div class="sp-hw-title">📅 Studieplan</div></div>
+      <div class="sp-hw-generate"><button class="sp-hw-gen-btn" onclick="show('sc-studieplan');renderStudieplan()">✨ Genereer mijn studieplan</button></div>
+    </div>`;
+    return;
+  }
+
+  const today=new Date().toISOString().slice(0,10);
+  const todayTasks=(plan.tasks||[]).filter(t=>t.dateStr===today);
+  const done=spGetDone();
+  const openTasks=todayTasks.filter(t=>!done[`${t.dateStr}_${t.vakId}_${t.domId}_${t.actKey}`]);
+
+  // Check urgency: any exam within 5 days?
+  const mijn=getMijnVakken();
+  const tody=new Date();tody.setHours(0,0,0,0);
+  const urgent=EXAM_SCHEDULE.some(e=>{
+    if(!e.vakId||(mijn.length>0&&!mijn.includes(e.vakId)))return false;
+    const d=new Date(e.datum);d.setHours(0,0,0,0);
+    return(d-tody)/864e5<=5&&(d-tody)>=0;
+  });
+
+  if(openTasks.length===0){
+    const allDone=todayTasks.length>0;
+    wrap.innerHTML=`<div class="sp-home-widget${urgent?' sp-urgent':''}">
+      <div class="sp-hw-header">
+        <div class="sp-hw-title">📅 Vandaag</div>
+        <span class="sp-hw-link" onclick="show('sc-studieplan');renderStudieplan()">Plan →</span>
+      </div>
+      ${allDone
+        ?'<div class="sp-hw-done-state">🎉 Alle taken voor vandaag gedaan!</div>'
+        :'<div style="padding:12px 16px 14px;font-size:13px;color:var(--mu)">Geen taken ingepland voor vandaag.</div>'}
+    </div>`;
+    return;
+  }
+
+  const taskHtml=openTasks.slice(0,3).map(t=>{
+    const key=`${t.dateStr}_${t.vakId}_${t.domId}_${t.actKey}`;
+    const [icon,label]=ACTS_HW[t.actKey]||['📚','Oefenen'];
+    return`<div class="sp-hw-task" onclick="spMarkDone('${key}');goToDomein('${t.vakId}','${t.domId}','${t.mode}')" data-spkey-hw="${key}">
+      <div class="sp-hw-task-icon" style="background:${spActCls(t.actKey)}">${icon}</div>
+      <div class="sp-hw-task-body">
+        <div class="sp-hw-task-dom">${t.domNaam}</div>
+        <div class="sp-hw-task-sub">${t.vakNaam} · ${label}</div>
+      </div>
+      <div class="sp-hw-task-time">~${t.mins}m</div>
+    </div>`;
+  }).join('');
+
+  const extra=openTasks.length>3?`<div style="padding:0 16px 12px;font-size:12px;color:var(--mu)">+${openTasks.length-3} meer taken</div>`:'';
+
+  wrap.innerHTML=`<div class="sp-home-widget${urgent?' sp-urgent':''}">
+    <div class="sp-hw-header">
+      <div class="sp-hw-title">📅 Vandaag <span style="font-size:11px;font-weight:700;background:rgba(var(--or-rgb),.15);color:var(--or);padding:2px 8px;border-radius:12px;border:1px solid rgba(var(--or-rgb),.25)">${openTasks.length} open</span></div>
+      <span class="sp-hw-link" onclick="show('sc-studieplan');renderStudieplan()">Plan →</span>
+    </div>
+    <div class="sp-hw-tasks">${taskHtml}</div>
+    ${extra}
+  </div>`;
+}
+
+function spCheckAfterQuiz(vakId,domId,mode){
+  try{
+    const modeToAct={snel:'quiz',oud:'open',flash:'flash'};
+    const actKey=modeToAct[mode];
+    if(!actKey)return;
+    const today=new Date().toISOString().slice(0,10);
+    const key=`${today}_${vakId}_${domId}_${actKey}`;
+    const plan=spGetPlan();
+    if(!plan)return;
+    const match=(plan.tasks||[]).find(t=>t.dateStr===today&&t.vakId===vakId&&t.domId===domId&&t.actKey===actKey);
+    if(match&&!spIsDone(key)){
+      spMarkDone(key);
+      // Toon toast
+      try{
+        const t=document.createElement('div');
+        t.style.cssText='position:fixed;bottom:90px;left:50%;transform:translateX(-50%);background:#22c55e;color:#fff;padding:8px 18px;border-radius:12px;font-size:13px;font-weight:700;z-index:9999;box-shadow:0 4px 16px rgba(34,197,94,.4);pointer-events:none;white-space:nowrap';
+        t.textContent='📅 Studieplan taak gedaan +25 XP';
+        document.body.appendChild(t);
+        setTimeout(()=>t.remove(),2800);
+      }catch(e){}
+    }
+  }catch(e){}
+}
 
 function spGetPrefs(){
   try{const p=JSON.parse(localStorage.getItem(SP_PREF_KEY)||'null');return p||{1:2,2:2,3:2,4:2,5:2,6:1};}
@@ -12513,6 +12682,7 @@ function renderStudieplan(){
 
   let totalToDo=0,totalDone=0,totalMins=0;
   const vakBlocks=[];
+  const allPlanTasks=[];
 
   upcoming.forEach(ex=>{
     const vak=getVK().find(v=>v.id===ex.vakId);
@@ -12562,9 +12732,22 @@ function renderStudieplan(){
       schedule.get(key).tasks.push({dom:null,actKey:'herhaal',isReview:true,reviews});
     }
 
+    // Sla plat op voor widget en detectie
+    schedule.forEach((entry,dateStr)=>{
+      entry.tasks.forEach(t=>{
+        if(!t.isReview&&t.dom)allPlanTasks.push({
+          dateStr,vakId:vak.id,vakNaam:vak.naam,
+          domId:t.dom.id,domNaam:t.dom.naam,
+          actKey:t.actKey,mins:ACTS[t.actKey][4]||10,
+          mode:ACTS[t.actKey][3]
+        });
+      });
+    });
+
     vakBlocks.push({vak,ex,examD,daysLeft,domains,schedule,studyDays,reviews,needWork,donePct:domains.length?Math.round(reviews.length/domains.length*100):100});
   });
 
+  spStorePlan(allPlanTasks);
   if(!vakBlocks.length){el.innerHTML='<div class="sp-empty">Alle domeinen zijn al klaar! 🎉</div>';return;}
 
   const fmtDate=d=>`${d.getDate()} ${MN[d.getMonth()]}`;
@@ -12591,7 +12774,44 @@ function renderStudieplan(){
   }
 
   const totalUren=(totalMins/60).toFixed(1);
-  let html=`<div class="sp-summary">
+  const todayStr=today.toISOString().slice(0,10);
+  const doneMap=spGetDone();
+
+  // ── "Vandaag" pinned sectie ──
+  const todayAllTasks=allPlanTasks.filter(t=>t.dateStr===todayStr);
+  const todayOpenTasks=todayAllTasks.filter(t=>!doneMap[`${t.dateStr}_${t.vakId}_${t.domId}_${t.actKey}`]);
+  let vandaagHtml='';
+  if(todayAllTasks.length>0){
+    const vandaagCards=todayAllTasks.map(t=>{
+      const key=`${t.dateStr}_${t.vakId}_${t.domId}_${t.actKey}`;
+      const isDone=!!doneMap[key];
+      const [icon,label,cls,mode,mins]=ACTS[t.actKey];
+      return`<div class="sp-task-card${isDone?' sp-done':''}" id="sp-card-${key}">
+        <div class="sp-task-card-left">
+          <div class="sp-task-card-vak">${t.vakNaam}</div>
+          <div class="sp-task-card-dom">${t.domNaam}</div>
+          <div class="sp-task-card-meta">
+            <span class="sp-act-btn ${cls}" style="padding:4px 10px;font-size:11px" onclick="${isDone?'':''}">${icon} ${label}</span>
+            <span class="sp-task-card-time">~${mins} min</span>
+          </div>
+        </div>
+        <button class="sp-check-btn${isDone?' checked':''}" data-spkey="${key}"
+          onclick="spMarkDone('${key}');this.classList.add('checked');this.closest('.sp-task-card')?.classList.add('sp-done');renderVandaagWidget()"
+          aria-label="Markeer als gedaan">
+          <svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
+        </button>
+      </div>`;
+    }).join('');
+    vandaagHtml=`<div class="sp-vandaag">
+      <div class="sp-vandaag-header">
+        <div class="sp-vandaag-title">📌 Vandaag</div>
+        ${todayOpenTasks.length>0?`<span class="sp-vandaag-badge">${todayOpenTasks.length} open</span>`:'<span style="font-size:12px;color:#22c55e;font-weight:700">✓ Alles gedaan</span>'}
+      </div>
+      ${vandaagCards}
+    </div>`;
+  }
+
+  let html=vandaagHtml+`<div class="sp-summary">
     <div class="sp-sum-card"><div class="sp-sum-val">${totalToDo}</div><div class="sp-sum-lbl">Domeinen te oefenen</div></div>
     <div class="sp-sum-card"><div class="sp-sum-val">${upcoming.length}</div><div class="sp-sum-lbl">Examens gepland</div></div>
     <div class="sp-sum-card"><div class="sp-sum-val">${totalUren}u</div><div class="sp-sum-lbl">Studeertijd totaal</div></div>
@@ -14415,6 +14635,8 @@ function saveProgress(vakId,domeinId,mode,score,total){
   cloudSet(lvlCol('progress'),p);
   // Sla oefentijdstip op voor knowledge decay indicator
   try{setDecayNow(vakId,domeinId);}catch(e){}
+  // Studieplan: check of dit een geplande taak afrondt
+  try{spCheckAfterQuiz(vakId,domeinId,mode);}catch(e){}
   return{isNewRecord,prevBest,newBest:p[key].best,total};
 }
 // ═══════ KNOWLEDGE DECAY ═══════
@@ -17009,8 +17231,8 @@ function _mqShowFinal(scores){
     <button class="bnav-btn active" data-screen="sc-home" onclick="show('sc-home')" aria-label="Home">
       <span class="bnav-icon"><svg viewBox="0 0 24 24"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg></span>Home
     </button>
-    <button class="bnav-btn" data-screen="sc-schedule" onclick="show('sc-schedule')" aria-label="Studieplan">
-      <span class="bnav-icon"><svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg></span>Rooster
+    <button class="bnav-btn" data-screen="sc-studieplan" onclick="show('sc-studieplan');renderStudieplan()" aria-label="Studieplan">
+      <span class="bnav-icon"><svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/><line x1="8" y1="14" x2="16" y2="14"/><line x1="8" y1="18" x2="12" y2="18"/></svg></span>Plan
     </button>
     <div class="bnav-fab-wrap">
       <button class="bnav-fab" onclick="quickOefen()" aria-label="Snel oefenen">
