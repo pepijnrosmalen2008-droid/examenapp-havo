@@ -2167,6 +2167,13 @@ html.dark .calc-btn{background:#2e3550}
 .surge-count{background:rgba(255,255,255,.25);border-radius:20px;padding:2px 9px;font-size:15px;font-weight:900}
 /* ── DECAY DOT ──────────────────────────────────── */
 .decay-dot{display:inline-block;width:9px;height:9px;border-radius:50%;flex-shrink:0;vertical-align:middle;margin-left:4px;box-shadow:0 0 6px currentColor}
+/* ── DECAY ALERT (home) ─────────────────────────── */
+.hm-decay-card{background:rgba(249,115,22,.07);border:1px solid rgba(249,115,22,.2);border-radius:14px;padding:10px 14px;margin-bottom:14px;display:flex;flex-direction:column;gap:8px}
+.hm-decay-header{display:flex;align-items:center;justify-content:space-between}
+.hm-decay-title{font-size:12px;font-weight:700;color:var(--or);display:flex;align-items:center;gap:5px}
+.hm-decay-chips{display:flex;flex-wrap:wrap;gap:6px}
+.hm-decay-chip{display:inline-flex;align-items:center;gap:5px;padding:5px 10px;border-radius:20px;font-size:11px;font-weight:700;cursor:pointer;border:1px solid transparent;transition:opacity .15s;-webkit-tap-highlight-color:transparent}
+.hm-decay-chip:active{opacity:.7}
 /* ── RECORD BANNER ──────────────────────────────── */
 .record-banner{background:linear-gradient(135deg,#22c55e,#16a34a);color:#fff;border-radius:14px;padding:14px 18px;margin-top:14px;text-align:center;font-family:var(--font-head);font-weight:800;font-size:15px;animation:comboIn .5s cubic-bezier(.34,1.2,.64,1);box-shadow:0 4px 20px rgba(34,197,94,.4)}
 /* ── COMEBACK TOAST ─────────────────────────────── */
@@ -4253,6 +4260,7 @@ html.dark .hsd-pill{background:var(--bg2);border-color:var(--bo2)}
 
   <!-- VAKKEN HEADER -->
   <div id="hm-stats-strip-wrap"></div>
+  <div id="hm-decay-alert"></div>
   <div class="hm-vakken-hdr">
     <h2 class="hm-vakken-h2">Vakken</h2>
     <span class="hm-vakken-count" id="vakken-count-badge">—</span>
@@ -8889,7 +8897,8 @@ function filterGrid(query){
   document.querySelectorAll('#vakgrid .card').forEach(card=>{
     const name=card.querySelector('.card-name')?.textContent.toLowerCase()||'';
     const desc=card.querySelector('.card-desc')?.textContent.toLowerCase()||'';
-    const match=!q||name.includes(q)||desc.includes(q);
+    const domains=card.dataset.domains||'';
+    const match=!q||name.includes(q)||desc.includes(q)||domains.includes(q);
     card.style.display=match?'':'none';
     if(match)visible++;
   });
@@ -9014,6 +9023,7 @@ function buildGrid(){
     }).join('');
     const lpDotsHtml=`<div class="card-lp-dots">${lpDots}</div>`;
     d.innerHTML=`${cijBadge}<div class="card-icon"><svg viewBox="0 0 24 24">${iconPaths}</svg></div><div class="card-name">${v.naam}</div><div class="card-desc">${v.beschrijving}</div><div class="card-meta">${v.domeinen.length} CE-domeinen</div>${progHtml}${lpDotsHtml}`;
+    d.dataset.domains=v.domeinen.map(dom=>dom.naam).join(' ').toLowerCase();
     d.onclick=()=>openVak(v.id);
     d.style.animationDelay=(g.children.length*0.045)+'s';
     d.style.opacity='0';
@@ -11993,6 +12003,7 @@ document.addEventListener('DOMContentLoaded',()=>{
   if(btn)btn.textContent=_soundOn?'🔊':'🔇';
   spInitPrefs();
   try{renderVandaagWidget();}catch(e){}
+  try{renderDecayAlert();}catch(e){}
 });
 
 // ═══════ HAPTIC ═══════
@@ -12071,7 +12082,7 @@ function toonRes(){
   try{const _pbRes=savePB(ST.vak.id,ST.domein.id,pct);if(_pbRes.isNew){window._newPB=true;window._oldPB=_pbRes.prev?_pbRes.prev.score:null;}}catch(e){}
   // Rebuild grid and streak to update UI
   try{const g=document.getElementById('vakgrid');if(g){g.innerHTML='';buildGrid();}
-  renderStreak();renderFavHome();renderXPHome();renderDailyChallenge();renderDailyGoal();renderLiveCount();renderHomeStats();renderGreeting();try{renderComebackCard();}catch(e){}try{renderFeatDisc();}catch(e){}try{renderHmQuickChips();renderHmStatsStrip();}catch(e){}showDailyChallengePopup();}catch(e){}
+  renderStreak();renderFavHome();renderXPHome();renderDailyChallenge();renderDailyGoal();renderLiveCount();renderHomeStats();renderGreeting();try{renderComebackCard();}catch(e){}try{renderFeatDisc();}catch(e){}try{renderHmQuickChips();renderHmStatsStrip();renderDecayAlert();}catch(e){}try{renderVandaagWidget();}catch(e){}showDailyChallengePopup();}catch(e){}
   try{recordDailyGoal();}catch(e){};
   const isPerfect=pct===1&&ST.mode==='snel'&&tot>=3;
   if(isPerfect&&earnAch('perfect'))setTimeout(()=>showAch('🌟','Perfecte score! Geen enkel fout!',90),800);
@@ -12389,6 +12400,37 @@ function renderHmStatsStrip(){
     totalQ>0?`<span class="hm-stat-pill" onclick="openProfiel()" title="Totaal quizzen">⚡ ${totalQ} quiz${totalQ===1?'':'zen'}</span>`:'',
   ].filter(Boolean);
   wrap.innerHTML=pills.length?`<div class="hm-stats-strip">${pills.join('')}</div>`:'';
+}
+function renderDecayAlert(){
+  const wrap=document.getElementById('hm-decay-alert');
+  if(!wrap)return;
+  const stale=[];
+  getVK().forEach(vak=>{
+    (vak.domeinen||[]).forEach(dom=>{
+      const r=getDomeinBestPct(vak.id,dom.id);
+      if(!r.hasData)return;
+      const decay=getDecayStatus(vak.id,dom.id);
+      if(!decay||decay.label==='Vandaag geoefend')return;
+      const days=Math.floor((Date.now()-getDecay()[`${vak.id}_${dom.id}`])/(864e5));
+      if(days<7)return;
+      stale.push({vakId:vak.id,vakNaam:vak.naam,domId:dom.id,domNaam:dom.naam,days,color:decay.color,pct:r.pct});
+    });
+  });
+  if(!stale.length){wrap.innerHTML='';return;}
+  stale.sort((a,b)=>b.days-a.days);
+  const top=stale.slice(0,4);
+  const chips=top.map(s=>`<button class="hm-decay-chip" style="background:${s.color}18;border-color:${s.color}40;color:${s.color}" onclick="goToDomein('${s.vakId}','${s.domId}','snel')">
+    <span style="width:7px;height:7px;border-radius:50%;background:${s.color};flex-shrink:0;display:inline-block"></span>
+    ${s.vakNaam} · ${s.domNaam} <span style="opacity:.7;font-weight:600">${s.days}d</span>
+  </button>`).join('');
+  const extra=stale.length>4?`<span style="font-size:11px;color:var(--mu);align-self:center">+${stale.length-4} meer</span>`:'';
+  wrap.innerHTML=`<div class="hm-decay-card">
+    <div class="hm-decay-header">
+      <div class="hm-decay-title">🔁 Opfrissen aanbevolen</div>
+      <span style="font-size:11px;color:var(--mu)">${stale.length} domein${stale.length===1?'':'en'}</span>
+    </div>
+    <div class="hm-decay-chips">${chips}${extra}</div>
+  </div>`;
 }
 async function deelScore(){
   const vakNaam=ST.vak?.naam||'een vak';
