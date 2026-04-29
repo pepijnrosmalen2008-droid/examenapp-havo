@@ -3658,6 +3658,15 @@ html.dark .hsd-pill{background:var(--bg2);border-color:var(--bo2)}
 /* ── SOCIAAL SHORTCUTS ───────────────────────────── */
 .hm-sociaal-section{padding-top:0;padding-bottom:0}
 @media(min-width:720px){.hm-sociaal-section{display:none}}
+/* ── Studieplan homekaart ── */
+.sp-home-card{background:linear-gradient(135deg,rgba(var(--or-rgb),.12) 0%,rgba(var(--or-rgb),.04) 100%);border:1px solid rgba(var(--or-rgb),.22);border-radius:18px;padding:16px 18px;display:flex;align-items:center;gap:14px;cursor:pointer;transition:transform .2s,box-shadow .2s;position:relative;overflow:hidden;-webkit-tap-highlight-color:transparent;margin-bottom:4px}
+.sp-home-card::before{content:'';position:absolute;top:-30px;right:-30px;width:100px;height:100px;background:radial-gradient(circle,rgba(var(--or-rgb),.15),transparent 70%);pointer-events:none}
+.sp-home-card:active{transform:scale(.985)}
+.sp-home-card-icon{width:46px;height:46px;border-radius:14px;background:linear-gradient(135deg,rgba(var(--or-rgb),.28),rgba(var(--or-rgb),.1));display:flex;align-items:center;justify-content:center;font-size:22px;flex-shrink:0;box-shadow:0 3px 10px rgba(var(--or-rgb),.2)}
+.sp-home-card-body{flex:1;min-width:0}
+.sp-home-card-title{font-family:var(--font-head);font-size:15px;font-weight:800;color:var(--dk);line-height:1.2;margin-bottom:3px}
+.sp-home-card-sub{font-size:12px;color:var(--mu);line-height:1.45}
+.sp-home-card-arrow{font-size:18px;color:var(--or);flex-shrink:0;opacity:.7}
 .hm-sociaal-row{display:flex;gap:10px;margin:0}
 .hm-soc-btn{flex:1;padding:13px 14px;border-radius:14px;border:1.5px solid var(--bo);background:var(--s);color:var(--dk);font-family:var(--font-head);font-size:13px;font-weight:700;cursor:pointer;transition:all .2s;display:flex;align-items:center;justify-content:center;gap:7px}
 .hm-soc-btn:hover{transform:translateY(-2px);box-shadow:0 6px 18px rgba(0,0,0,.12)}
@@ -4129,6 +4138,16 @@ html.dark .hsd-pill{background:var(--bg2);border-color:var(--bo2)}
 </div>
 
 <div class="w">
+
+  <!-- STUDIEPLAN CTA -->
+  <div class="sp-home-card" onclick="show('sc-schedule');renderStudieplan()" role="button" aria-label="Ga naar adaptief studieplan">
+    <div class="sp-home-card-icon">📅</div>
+    <div class="sp-home-card-body">
+      <div class="sp-home-card-title">Adaptief studieplan</div>
+      <div class="sp-home-card-sub">Per vak &amp; domein — op basis van jouw beheersing en examendatum</div>
+    </div>
+    <div class="sp-home-card-arrow">›</div>
+  </div>
 
   <!-- DYNAMIC WIDGETS (JS-driven) -->
   <div id="live-count-home"></div>
