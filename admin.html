@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Slagio — Admin Dashboard</title>
+  <meta name="robots" content="noindex, nofollow">
+  <link rel="icon" href="/icon-192.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Bricolage+Grotesque:opsz,wght@12..96,700;12..96,800;12..96,900&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg:#07080f;--bg2:#0d0e1c;--card:#111827;--card2:#151e2d;
+      --or:#f97316;--or-rgb:249,115,22;
+      --text:#e4e8ef;--muted:rgba(255,255,255,.45);--border:rgba(255,255,255,.07);
+      --green:#22c55e;--green-rgb:34,197,94;
+      --blue:#60a5fa;--blue-rgb:96,165,250;
+      --purple:#a78bfa;--purple-rgb:167,139,250;
+      --red:#ef4444;--red-rgb:239,68,68;
+      --font:'Inter',sans-serif;--font-head:'Bricolage Grotesque','Inter',sans-serif;
+    }
+    *{margin:0;padding:0;box-sizing:border-box}
+    html{-webkit-font-smoothing:antialiased}
+    body{font-family:var(--font);background:var(--bg);color:var(--text);font-size:14px;line-height:1.6}
+
+    /* ── Login screen ── */
+    #login-screen{
+      min-height:100vh;display:flex;align-items:center;justify-content:center;
+      background:linear-gradient(160deg,#07080f,#0d0e1c);
+      padding:2rem;
+    }
+    .login-card{
+      background:var(--card);border:1px solid var(--border);border-radius:20px;
+      padding:2.5rem 2rem;width:100%;max-width:380px;text-align:center;
+      box-shadow:0 24px 80px rgba(0,0,0,.5);
+    }
+    .login-logo{display:flex;align-items:center;justify-content:center;gap:10px;margin-bottom:1.75rem}
+    .login-logo img{width:36px;height:36px;border-radius:10px}
+    .login-logo span{font-family:var(--font-head);font-weight:800;font-size:20px}
+    .login-logo-dot{width:7px;height:7px;border-radius:50%;background:var(--or);box-shadow:0 0 0 3px rgba(var(--or-rgb),.22);animation:pulse 3s ease-in-out infinite}
+    @keyframes pulse{0%,100%{box-shadow:0 0 0 3px rgba(var(--or-rgb),.22)}50%{box-shadow:0 0 0 6px rgba(var(--or-rgb),.1)}}
+    .login-title{font-family:var(--font-head);font-size:1.3rem;font-weight:800;margin-bottom:.4rem}
+    .login-sub{color:var(--muted);font-size:.85rem;margin-bottom:1.75rem}
+    .login-input{
+      width:100%;padding:.85rem 1rem;background:rgba(255,255,255,.06);
+      border:1px solid var(--border);border-radius:12px;
+      color:var(--text);font-family:var(--font);font-size:15px;outline:none;
+      transition:border-color .2s;margin-bottom:.75rem;
+    }
+    .login-input:focus{border-color:rgba(var(--or-rgb),.5)}
+    .login-btn{
+      width:100%;padding:.9rem;background:var(--or);color:#fff;
+      border:none;border-radius:12px;font-family:var(--font-head);
+      font-size:15px;font-weight:700;cursor:pointer;
+      box-shadow:0 4px 20px rgba(var(--or-rgb),.4);transition:opacity .2s;
+    }
+    .login-btn:hover{opacity:.9}
+    .login-err{color:var(--red);font-size:.82rem;margin-top:.6rem;height:1.2em}
+
+    /* ── Dashboard ── */
+    #dashboard{display:none;min-height:100vh}
+
+    .topbar{
+      height:56px;display:flex;align-items:center;gap:12px;
+      padding:0 1.5rem;border-bottom:1px solid var(--border);
+      background:rgba(7,8,15,.9);backdrop-filter:blur(20px);
+      position:sticky;top:0;z-index:100;
+    }
+    .topbar img{width:28px;height:28px;border-radius:8px}
+    .topbar-title{font-family:var(--font-head);font-weight:800;font-size:16px}
+    .topbar-badge{
+      font-size:11px;font-weight:700;padding:.2rem .6rem;
+      background:rgba(var(--green-rgb),.15);color:var(--green);
+      border:1px solid rgba(var(--green-rgb),.3);border-radius:999px;
+    }
+    .topbar-time{margin-left:auto;color:var(--muted);font-size:12px;font-family:monospace}
+    .topbar-refresh{
+      padding:.35rem .75rem;background:rgba(255,255,255,.06);border:1px solid var(--border);
+      border-radius:8px;color:var(--muted);font-size:12px;font-weight:600;
+      cursor:pointer;transition:all .15s;
+    }
+    .topbar-refresh:hover{border-color:rgba(var(--or-rgb),.4);color:var(--or)}
+    .logout-btn{
+      padding:.35rem .75rem;background:none;border:1px solid rgba(var(--red-rgb),.3);
+      border-radius:8px;color:rgba(var(--red-rgb),.7);font-size:12px;font-weight:600;
+      cursor:pointer;transition:all .15s;
+    }
+    .logout-btn:hover{background:rgba(var(--red-rgb),.1);color:var(--red)}
+
+    .dash-body{max-width:1200px;margin:0 auto;padding:1.5rem}
+
+    /* ── KPI cards ── */
+    .kpi-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:.75rem;margin-bottom:1.5rem}
+    .kpi{
+      background:var(--card);border:1px solid var(--border);border-radius:14px;
+      padding:1.1rem 1.2rem;position:relative;overflow:hidden;
+    }
+    .kpi::before{
+      content:'';position:absolute;top:-30px;right:-30px;width:80px;height:80px;
+      border-radius:50%;opacity:.25;
+    }
+    .kpi.or::before{background:radial-gradient(circle,var(--or),transparent)}
+    .kpi.gr::before{background:radial-gradient(circle,var(--green),transparent)}
+    .kpi.bl::before{background:radial-gradient(circle,var(--blue),transparent)}
+    .kpi.pu::before{background:radial-gradient(circle,var(--purple),transparent)}
+    .kpi-label{font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.1em;color:var(--muted);margin-bottom:.5rem}
+    .kpi-val{font-family:var(--font-head);font-size:2rem;font-weight:800;line-height:1;color:#fff;margin-bottom:.3rem}
+    .kpi-sub{font-size:.78rem;color:var(--muted)}
+    .kpi-delta{font-size:.75rem;font-weight:700;padding:.1rem .45rem;border-radius:999px;margin-left:.4rem}
+    .kpi-delta.up{background:rgba(var(--green-rgb),.15);color:var(--green)}
+    .kpi-delta.dn{background:rgba(var(--red-rgb),.15);color:var(--red)}
+
+    /* ── Charts row ── */
+    .charts-row{display:grid;grid-template-columns:2fr 1fr;gap:.75rem;margin-bottom:1.5rem}
+    @media(max-width:800px){.charts-row{grid-template-columns:1fr}}
+
+    .panel{background:var(--card);border:1px solid var(--border);border-radius:14px;padding:1.2rem}
+    .panel-title{font-family:var(--font-head);font-size:.95rem;font-weight:800;margin-bottom:1rem;color:#fff}
+    .panel-title span{color:var(--muted);font-weight:400;font-family:var(--font);font-size:.82rem;margin-left:.5rem}
+
+    /* Bar chart */
+    .bar-chart{display:flex;align-items:flex-end;gap:3px;height:120px;position:relative}
+    .bar-col{flex:1;display:flex;flex-direction:column;align-items:center;gap:3px;cursor:default}
+    .bar{width:100%;border-radius:3px 3px 0 0;background:rgba(var(--or-rgb),.6);transition:background .15s;min-height:2px}
+    .bar:hover,.bar-col:hover .bar{background:var(--or)}
+    .bar-lbl{font-size:8px;color:var(--muted);writing-mode:horizontal-tb;text-align:center;line-height:1}
+    .bar-val{font-size:9px;color:var(--muted);font-weight:600}
+
+    /* Donut */
+    .donut-wrap{display:flex;flex-direction:column;align-items:center;gap:.75rem}
+    .donut-legend{width:100%;display:flex;flex-direction:column;gap:.4rem}
+    .legend-row{display:flex;align-items:center;gap:.5rem;font-size:.8rem}
+    .legend-dot{width:8px;height:8px;border-radius:50%;flex-shrink:0}
+    .legend-label{flex:1;color:var(--muted)}
+    .legend-val{font-weight:700;color:#fff}
+    .legend-pct{font-size:.72rem;color:var(--muted);margin-left:.2rem}
+
+    /* ── Bottom row ── */
+    .bottom-row{display:grid;grid-template-columns:1fr 1fr 1fr;gap:.75rem;margin-bottom:1.5rem}
+    @media(max-width:900px){.bottom-row{grid-template-columns:1fr 1fr}}
+    @media(max-width:600px){.bottom-row{grid-template-columns:1fr}}
+
+    /* Table */
+    .dash-table{width:100%;border-collapse:collapse;font-size:.82rem}
+    .dash-table th{text-align:left;font-size:.72rem;text-transform:uppercase;letter-spacing:.08em;color:var(--muted);padding:.4rem .5rem .7rem;font-weight:700;border-bottom:1px solid var(--border)}
+    .dash-table td{padding:.55rem .5rem;border-bottom:1px solid rgba(255,255,255,.04);vertical-align:middle}
+    .dash-table tr:last-child td{border-bottom:none}
+    .dash-table tr:hover td{background:rgba(255,255,255,.02)}
+    .rank-badge{
+      display:inline-flex;align-items:center;justify-content:center;
+      width:20px;height:20px;border-radius:6px;font-size:10px;font-weight:800;
+      background:rgba(255,255,255,.07);color:var(--muted);
+    }
+    .rank-badge.gold{background:rgba(251,191,36,.15);color:#fbbf24}
+    .rank-badge.silver{background:rgba(200,200,200,.15);color:#d1d5db}
+    .rank-badge.bronze{background:rgba(180,120,80,.15);color:#cd7c54}
+
+    /* Pill */
+    .pill{
+      display:inline-block;font-size:.68rem;font-weight:700;padding:.15rem .5rem;
+      border-radius:999px;
+    }
+    .pill.havo{background:rgba(var(--or-rgb),.12);color:var(--or);border:1px solid rgba(var(--or-rgb),.22)}
+    .pill.vwo{background:rgba(var(--purple-rgb),.12);color:var(--purple);border:1px solid rgba(var(--purple-rgb),.22)}
+
+    /* Score bar */
+    .score-bar-wrap{display:flex;align-items:center;gap:.5rem}
+    .score-bar-bg{flex:1;height:4px;background:rgba(255,255,255,.08);border-radius:2px;overflow:hidden}
+    .score-bar-fill{height:100%;border-radius:2px;background:linear-gradient(90deg,var(--or),#fbbf24)}
+    .score-num{font-size:.8rem;font-weight:700;color:#fff;min-width:2.5rem;text-align:right}
+
+    /* Activity feed */
+    .feed{display:flex;flex-direction:column;gap:.4rem;max-height:280px;overflow-y:auto}
+    .feed::-webkit-scrollbar{width:4px}
+    .feed::-webkit-scrollbar-track{background:transparent}
+    .feed::-webkit-scrollbar-thumb{background:var(--border);border-radius:2px}
+    .feed-item{
+      display:flex;align-items:flex-start;gap:.6rem;
+      padding:.5rem .6rem;background:rgba(255,255,255,.03);
+      border-radius:9px;border:1px solid transparent;
+      transition:border-color .15s;
+    }
+    .feed-item:hover{border-color:var(--border)}
+    .feed-dot{width:7px;height:7px;border-radius:50%;flex-shrink:0;margin-top:5px}
+    .feed-dot.new{background:var(--green);box-shadow:0 0 0 3px rgba(var(--green-rgb),.2)}
+    .feed-dot.old{background:rgba(255,255,255,.2)}
+    .feed-name{font-weight:700;font-size:.82rem;color:#fff}
+    .feed-detail{font-size:.75rem;color:var(--muted);margin-top:.05rem}
+    .feed-time{margin-left:auto;font-size:.72rem;color:var(--muted);white-space:nowrap;flex-shrink:0}
+
+    /* Heatmap */
+    .heatmap{display:flex;flex-wrap:wrap;gap:3px}
+    .hm-cell{width:12px;height:12px;border-radius:2px;background:rgba(255,255,255,.06);cursor:default;transition:transform .1s}
+    .hm-cell:hover{transform:scale(1.3)}
+    .hm-cell.l1{background:rgba(var(--or-rgb),.2)}
+    .hm-cell.l2{background:rgba(var(--or-rgb),.4)}
+    .hm-cell.l3{background:rgba(var(--or-rgb),.65)}
+    .hm-cell.l4{background:var(--or)}
+    .hm-days{display:flex;gap:3px;margin-top:.4rem}
+    .hm-day{width:12px;font-size:8px;color:var(--muted);text-align:center}
+
+    /* Loading spinner */
+    .spinner{
+      display:inline-block;width:18px;height:18px;border:2px solid rgba(255,255,255,.1);
+      border-top-color:var(--or);border-radius:50%;animation:spin .7s linear infinite;
+    }
+    @keyframes spin{to{transform:rotate(360deg)}}
+    .loading-state{text-align:center;padding:3rem;color:var(--muted)}
+
+    /* Separator */
+    .section-sep{
+      font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.12em;
+      color:rgba(var(--or-rgb),.7);margin:1.5rem 0 .75rem;
+      display:flex;align-items:center;gap:.5rem;
+    }
+    .section-sep::after{content:'';flex:1;height:1px;background:linear-gradient(90deg,rgba(var(--or-rgb),.3),transparent)}
+  </style>
+</head>
+<body>
+
+<!-- ── Login ── -->
+<div id="login-screen">
+  <div class="login-card">
+    <div class="login-logo">
+      <img src="/icon-192.png" alt="Slagio">
+      <span>Slagio</span>
+      <span class="login-logo-dot"></span>
+    </div>
+    <div class="login-title">Admin Dashboard</div>
+    <p class="login-sub">Alleen voor beheerders</p>
+    <input type="password" id="pw-input" class="login-input" placeholder="Wachtwoord" autocomplete="current-password">
+    <button class="login-btn" id="login-btn">Inloggen →</button>
+    <div class="login-err" id="login-err"></div>
+  </div>
+</div>
+
+<!-- ── Dashboard ── -->
+<div id="dashboard">
+  <div class="topbar">
+    <img src="/icon-192.png" alt="">
+    <span class="topbar-title">Slagio Analytics</span>
+    <span class="topbar-badge" id="live-badge">● Live</span>
+    <span class="topbar-time" id="topbar-time"></span>
+    <button class="topbar-refresh" onclick="loadData()">↺ Vernieuwen</button>
+    <button class="logout-btn" onclick="logout()">Uitloggen</button>
+  </div>
+
+  <div class="dash-body">
+    <div id="dash-content">
+      <div class="loading-state"><span class="spinner"></span><br><br>Data laden…</div>
+    </div>
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.101.1/dist/umd/supabase.js" crossorigin="anonymous"></script>
+<script>
+const SB_URL = 'https://sxrjdssmgwwygtskovyc.supabase.co';
+const SB_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InN4cmpkc3NtZ3d3eWd0c2tvdnljIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzM2OTEwNDAsImV4cCI6MjA4OTI2NzA0MH0.iML8S6I6wZ9zGUDBZJleyFHlpPYmUvdGyNyDSYcxon4';
+const SB = window.supabase.createClient(SB_URL, SB_KEY);
+
+const PW_HASH = '1a4ef7f5984939713d4651ee2eda98a674481cf9c5dc447b15c5eb4b9e40312e';
+const SESSION_KEY = 'slagio_admin_v1';
+
+async function sha256(str) {
+  const buf = await crypto.subtle.digest('SHA-256', new TextEncoder().encode(str));
+  return Array.from(new Uint8Array(buf)).map(b => b.toString(16).padStart(2,'0')).join('');
+}
+
+// ── Auth ──
+function isAuthed() { return sessionStorage.getItem(SESSION_KEY) === 'ok'; }
+function logout() { sessionStorage.removeItem(SESSION_KEY); location.reload(); }
+
+document.getElementById('login-btn').addEventListener('click', doLogin);
+document.getElementById('pw-input').addEventListener('keydown', e => { if (e.key === 'Enter') doLogin(); });
+
+async function doLogin() {
+  const val = document.getElementById('pw-input').value;
+  const hash = await sha256(val);
+  if (hash === PW_HASH) {
+    sessionStorage.setItem(SESSION_KEY, 'ok');
+    document.getElementById('login-screen').style.display = 'none';
+    document.getElementById('dashboard').style.display = 'block';
+    loadData();
+    startClock();
+  } else {
+    const err = document.getElementById('login-err');
+    err.textContent = 'Onjuist wachtwoord';
+    setTimeout(() => err.textContent = '', 3000);
+    document.getElementById('pw-input').value = '';
+  }
+}
+
+if (isAuthed()) {
+  document.getElementById('login-screen').style.display = 'none';
+  document.getElementById('dashboard').style.display = 'block';
+  loadData();
+  startClock();
+}
+
+function startClock() {
+  function tick() {
+    document.getElementById('topbar-time').textContent =
+      new Date().toLocaleString('nl-NL', {day:'2-digit',month:'short',hour:'2-digit',minute:'2-digit',second:'2-digit'});
+  }
+  tick();
+  setInterval(tick, 1000);
+}
+
+// ── Data ──
+async function loadData() {
+  try {
+    const { data, error } = await SB.from('leaderboard')
+      .select('user_id,naam,score,vak_naam,domein_naam,niveau,correct,total,avg_tijd,created_at')
+      .order('created_at', { ascending: false })
+      .limit(1000);
+    if (error) throw error;
+    render(data || []);
+  } catch (e) {
+    document.getElementById('dash-content').innerHTML =
+      `<div class="loading-state" style="color:#ef4444">Fout bij laden: ${e.message}</div>`;
+  }
+}
+
+function render(all) {
+  // Filter seed data (impossible scores)
+  const data = all.filter(e => (e.score || 0) <= 1000);
+  const now = Date.now();
+  const today = new Date().toISOString().slice(0, 10);
+  const yesterday = new Date(now - 86400000).toISOString().slice(0, 10);
+  const week7ago = new Date(now - 7 * 86400000).toISOString().slice(0, 10);
+  const month30ago = new Date(now - 30 * 86400000).toISOString().slice(0, 10);
+
+  // ── Metrics ──
+  const totalSessions = data.length;
+  const uniqueUsers = new Set(data.map(e => e.naam).filter(Boolean)).size;
+  const todaySessions = data.filter(e => e.created_at?.slice(0, 10) === today).length;
+  const yesterdaySessions = data.filter(e => e.created_at?.slice(0, 10) === yesterday).length;
+  const weekSessions = data.filter(e => e.created_at?.slice(0, 10) >= week7ago).length;
+  const weekUsers = new Set(data.filter(e => e.created_at?.slice(0, 10) >= week7ago).map(e => e.naam)).size;
+  const monthSessions = data.filter(e => e.created_at?.slice(0, 10) >= month30ago).length;
+
+  const avgScore = data.length ? Math.round(data.reduce((s, e) => s + (e.score || 0), 0) / data.length) : 0;
+  const avgAccuracy = (() => {
+    const entries = data.filter(e => e.total > 0);
+    if (!entries.length) return 0;
+    return Math.round(entries.reduce((s, e) => s + e.correct / e.total, 0) / entries.length * 100);
+  })();
+
+  const newToday = todaySessions - yesterdaySessions;
+  const dayDelta = yesterdaySessions > 0
+    ? Math.round((todaySessions - yesterdaySessions) / yesterdaySessions * 100)
+    : null;
+
+  // ── Sessions per day (last 40 days) ──
+  const dayMap = {};
+  data.forEach(e => {
+    const d = e.created_at?.slice(0, 10);
+    if (d) dayMap[d] = (dayMap[d] || 0) + 1;
+  });
+  const last40 = [];
+  for (let i = 39; i >= 0; i--) {
+    const d = new Date(now - i * 86400000).toISOString().slice(0, 10);
+    last40.push({ date: d, count: dayMap[d] || 0 });
+  }
+  const maxDay = Math.max(...last40.map(d => d.count), 1);
+
+  // ── Subject breakdown ──
+  const vakMap = {};
+  data.forEach(e => {
+    const v = e.vak_naam || 'Onbekend';
+    vakMap[v] = (vakMap[v] || 0) + 1;
+  });
+  const topVakken = Object.entries(vakMap).sort((a, b) => b[1] - a[1]).slice(0, 8);
+
+  // ── HAVO/VWO ──
+  const havo = data.filter(e => e.niveau === 'havo').length;
+  const vwo = data.filter(e => e.niveau === 'vwo').length;
+
+  // ── Top users ──
+  const userMap = {};
+  data.forEach(e => {
+    const n = e.naam || 'Anoniem';
+    if (!userMap[n]) userMap[n] = { sessions: 0, bestScore: 0, lastSeen: e.created_at?.slice(0, 10), vakken: new Set() };
+    userMap[n].sessions++;
+    if ((e.score || 0) > userMap[n].bestScore) userMap[n].bestScore = e.score;
+    if (e.vak_naam) userMap[n].vakken.add(e.vak_naam);
+  });
+  const topUsers = Object.entries(userMap).sort((a, b) => b[1].sessions - a[1].sessions).slice(0, 10);
+
+  // ── Recent feed ──
+  const recent = [...data].sort((a, b) => new Date(b.created_at) - new Date(a.created_at)).slice(0, 20);
+
+  // ── Heatmap (last 10 weeks) ──
+  const heatmap = [];
+  for (let i = 69; i >= 0; i--) {
+    const d = new Date(now - i * 86400000).toISOString().slice(0, 10);
+    heatmap.push({ date: d, count: dayMap[d] || 0 });
+  }
+
+  // ── Render ──
+  document.getElementById('dash-content').innerHTML = `
+    <!-- KPIs -->
+    <div class="kpi-grid">
+      <div class="kpi or">
+        <div class="kpi-label">Totaal sessies</div>
+        <div class="kpi-val">${totalSessions}</div>
+        <div class="kpi-sub">Alle quizzen ooit gespeeld</div>
+      </div>
+      <div class="kpi gr">
+        <div class="kpi-label">Unieke gebruikers</div>
+        <div class="kpi-val">${uniqueUsers}</div>
+        <div class="kpi-sub">Op basis van naam/account</div>
+      </div>
+      <div class="kpi bl">
+        <div class="kpi-label">Vandaag</div>
+        <div class="kpi-val">${todaySessions}
+          ${dayDelta !== null ? `<span class="kpi-delta ${dayDelta >= 0 ? 'up' : 'dn'}">${dayDelta >= 0 ? '↑' : '↓'}${Math.abs(dayDelta)}%</span>` : ''}
+        </div>
+        <div class="kpi-sub">Gisteren: ${yesterdaySessions} sessies</div>
+      </div>
+      <div class="kpi pu">
+        <div class="kpi-label">Deze week</div>
+        <div class="kpi-val">${weekSessions}</div>
+        <div class="kpi-sub">${weekUsers} actieve gebruikers</div>
+      </div>
+      <div class="kpi or">
+        <div class="kpi-label">Gem. score</div>
+        <div class="kpi-val">${avgScore}</div>
+        <div class="kpi-sub">Max 1.000 per quiz</div>
+      </div>
+      <div class="kpi gr">
+        <div class="kpi-label">Gem. nauwkeurigheid</div>
+        <div class="kpi-val">${avgAccuracy}%</div>
+        <div class="kpi-sub">Correcte antwoorden</div>
+      </div>
+      <div class="kpi bl">
+        <div class="kpi-label">Afgelopen 30 dagen</div>
+        <div class="kpi-val">${monthSessions}</div>
+        <div class="kpi-sub">Sessies in de maand</div>
+      </div>
+      <div class="kpi pu">
+        <div class="kpi-label">HAVO / VWO split</div>
+        <div class="kpi-val">${Math.round(havo/(havo+vwo||1)*100)}%</div>
+        <div class="kpi-sub">${havo} HAVO · ${vwo} VWO sessies</div>
+      </div>
+    </div>
+
+    <!-- Charts -->
+    <div class="charts-row">
+      <div class="panel">
+        <div class="panel-title">Sessies per dag <span>laatste 40 dagen</span></div>
+        <div class="bar-chart" id="bar-chart-el">
+          ${last40.map(d => {
+            const h = Math.round((d.count / maxDay) * 110);
+            const isToday = d.date === today;
+            const label = d.date.slice(5); // MM-DD
+            return `<div class="bar-col" title="${d.date}: ${d.count} sessies">
+              <div class="bar-val">${d.count > 0 ? d.count : ''}</div>
+              <div class="bar" style="height:${Math.max(h,2)}px;${isToday ? 'background:var(--or);' : ''}"></div>
+              <div class="bar-lbl">${d.date.slice(8)}</div>
+            </div>`;
+          }).join('')}
+        </div>
+      </div>
+
+      <div class="panel">
+        <div class="panel-title">Top vakken</div>
+        <div class="donut-legend">
+          ${topVakken.map(([vak, cnt], i) => {
+            const pct = Math.round(cnt / totalSessions * 100);
+            const colors = ['var(--or)','var(--blue)','var(--green)','var(--purple)','#f59e0b','#14b8a6','#ec4899','#64748b'];
+            return `<div class="legend-row">
+              <span class="legend-dot" style="background:${colors[i%colors.length]}"></span>
+              <span class="legend-label">${vak}</span>
+              <div class="score-bar-wrap" style="flex:1;margin:0 .4rem">
+                <div class="score-bar-bg"><div class="score-bar-fill" style="width:${pct}%;background:${colors[i%colors.length]}"></div></div>
+              </div>
+              <span class="legend-val">${cnt}</span>
+              <span class="legend-pct">${pct}%</span>
+            </div>`;
+          }).join('')}
+        </div>
+      </div>
+    </div>
+
+    <!-- Bottom row -->
+    <div class="bottom-row">
+
+      <!-- Top gebruikers -->
+      <div class="panel">
+        <div class="panel-title">Top gebruikers</div>
+        <table class="dash-table">
+          <thead><tr><th>#</th><th>Naam</th><th>Sessies</th><th>Best</th><th>Vakken</th></tr></thead>
+          <tbody>
+            ${topUsers.map(([naam, u], i) => `
+              <tr>
+                <td><span class="rank-badge ${i===0?'gold':i===1?'silver':i===2?'bronze':''}">${i+1}</span></td>
+                <td style="font-weight:700;font-size:.85rem">${naam}</td>
+                <td>${u.sessions}</td>
+                <td style="color:var(--or);font-weight:700">${u.bestScore}</td>
+                <td style="color:var(--muted)">${u.vakken.size}</td>
+              </tr>`).join('')}
+          </tbody>
+        </table>
+      </div>
+
+      <!-- Recente activiteit -->
+      <div class="panel">
+        <div class="panel-title">Recente activiteit <span>live</span></div>
+        <div class="feed">
+          ${recent.map(e => {
+            const age = now - new Date(e.created_at).getTime();
+            const isNew = age < 3600000;
+            const timeStr = age < 60000 ? 'Nu' :
+              age < 3600000 ? `${Math.floor(age/60000)}m` :
+              age < 86400000 ? `${Math.floor(age/3600000)}u` :
+              `${Math.floor(age/86400000)}d`;
+            return `<div class="feed-item">
+              <span class="feed-dot ${isNew ? 'new' : 'old'}"></span>
+              <div>
+                <div class="feed-name">${e.naam || 'Anoniem'}</div>
+                <div class="feed-detail">${e.vak_naam || '?'}${e.domein_naam ? ' · ' + e.domein_naam : ''} · ${e.score}pts · ${e.correct||0}/${e.total||0} goed</div>
+              </div>
+              <span class="feed-time">${timeStr}</span>
+            </div>`;
+          }).join('')}
+        </div>
+      </div>
+
+      <!-- Activiteits-heatmap -->
+      <div class="panel">
+        <div class="panel-title">Activiteit heatmap <span>laatste 10 weken</span></div>
+        <div class="heatmap">
+          ${heatmap.map(d => {
+            const lvl = d.count === 0 ? '' : d.count === 1 ? 'l1' : d.count <= 3 ? 'l2' : d.count <= 6 ? 'l3' : 'l4';
+            return `<div class="hm-cell ${lvl}" title="${d.date}: ${d.count} sessies"></div>`;
+          }).join('')}
+        </div>
+        <div style="display:flex;align-items:center;gap:.4rem;margin-top:.75rem;font-size:.72rem;color:var(--muted)">
+          Minder
+          <div style="width:10px;height:10px;border-radius:2px;background:rgba(255,255,255,.06)"></div>
+          <div style="width:10px;height:10px;border-radius:2px;background:rgba(var(--or-rgb),.2)"></div>
+          <div style="width:10px;height:10px;border-radius:2px;background:rgba(var(--or-rgb),.4)"></div>
+          <div style="width:10px;height:10px;border-radius:2px;background:var(--or)"></div>
+          Meer
+        </div>
+
+        <div style="margin-top:1.25rem">
+          <div class="panel-title" style="font-size:.85rem;margin-bottom:.6rem">HAVO vs VWO</div>
+          <div style="display:flex;gap:.5rem;margin-bottom:.4rem">
+            <div style="flex:1">
+              <div style="font-size:.72rem;color:var(--muted);margin-bottom:.3rem">HAVO</div>
+              <div class="score-bar-bg" style="height:8px;border-radius:4px">
+                <div class="score-bar-fill" style="width:${Math.round(havo/(havo+vwo||1)*100)}%;height:100%;border-radius:4px"></div>
+              </div>
+              <div style="font-size:.75rem;font-weight:700;color:var(--or);margin-top:.25rem">${havo} sessies (${Math.round(havo/(havo+vwo||1)*100)}%)</div>
+            </div>
+            <div style="flex:1">
+              <div style="font-size:.72rem;color:var(--muted);margin-bottom:.3rem">VWO</div>
+              <div class="score-bar-bg" style="height:8px;border-radius:4px">
+                <div class="score-bar-fill" style="width:${Math.round(vwo/(havo+vwo||1)*100)}%;height:100%;border-radius:4px;background:linear-gradient(90deg,var(--purple),#818cf8)"></div>
+              </div>
+              <div style="font-size:.75rem;font-weight:700;color:var(--purple);margin-top:.25rem">${vwo} sessies (${Math.round(vwo/(havo+vwo||1)*100)}%)</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- All sessions table -->
+    <div class="section-sep">Alle sessies</div>
+    <div class="panel">
+      <div class="panel-title">Sessielogboek <span>${data.length} sessies · meest recent eerst</span></div>
+      <div style="overflow-x:auto">
+        <table class="dash-table">
+          <thead>
+            <tr>
+              <th>Datum</th>
+              <th>Gebruiker</th>
+              <th>Niveau</th>
+              <th>Vak</th>
+              <th>Domein</th>
+              <th>Score</th>
+              <th>Goed/Tot</th>
+              <th>Gem. tijd</th>
+            </tr>
+          </thead>
+          <tbody>
+            ${recent.concat(data.slice(20)).map(e => `
+              <tr>
+                <td style="color:var(--muted);font-family:monospace;font-size:.77rem">${e.created_at?.slice(0,16).replace('T',' ')}</td>
+                <td style="font-weight:600">${e.naam || '<span style="color:var(--muted)">anoniem</span>'}</td>
+                <td><span class="pill ${e.niveau}">${(e.niveau||'').toUpperCase()}</span></td>
+                <td>${e.vak_naam || '—'}</td>
+                <td style="color:var(--muted);max-width:160px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">${e.domein_naam || '—'}</td>
+                <td>
+                  <div class="score-bar-wrap">
+                    <div class="score-bar-bg"><div class="score-bar-fill" style="width:${e.score/10}%"></div></div>
+                    <span class="score-num">${e.score}</span>
+                  </div>
+                </td>
+                <td style="color:${e.correct===e.total&&e.total>0?'var(--green)':'var(--muted)'}">${e.correct??'—'}/${e.total??'—'}</td>
+                <td style="color:var(--muted);font-family:monospace">${e.avg_tijd ? e.avg_tijd.toFixed(1)+'s' : '—'}</td>
+              </tr>`).join('')}
+          </tbody>
+        </table>
+      </div>
+    </div>
+  `;
+
+  // Auto-refresh every 60s
+  clearTimeout(window._refreshTimer);
+  window._refreshTimer = setTimeout(loadData, 60000);
+}
+</script>
+</body>
+</html>
