@@ -8920,6 +8920,21 @@ function _rlReset(){_rl.n=0;_rl.until=0;}
 const SUPABASE_URL='https://sxrjdssmgwwygtskovyc.supabase.co';
 const SUPABASE_KEY='eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InN4cmpkc3NtZ3d3eWd0c2tvdnljIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzM2OTEwNDAsImV4cCI6MjA4OTI2NzA0MH0.iML8S6I6wZ9zGUDBZJleyFHlpPYmUvdGyNyDSYcxon4';
 const SB=window.supabase.createClient(SUPABASE_URL,SUPABASE_KEY);
+async function trackEvent(type,meta){
+  try{
+    const vak=typeof ST!=='undefined'?ST?.vak:null;
+    const niveau=typeof APP_LEVEL!=='undefined'?APP_LEVEL:'havo';
+    const naam=_safeLocalGet('profiel',{}).naam||null;
+    SB.from('events').insert({
+      user_id:currentUser?.id||null,
+      naam:naam,
+      event_type:type,
+      vak_naam:vak?.naam||null,
+      niveau:niveau,
+      meta:meta||null
+    }).then(()=>{}).catch(()=>{});
+  }catch(e){}
+}
 let currentUser=null;
 // Check existing session on load
 SB.auth.getSession().then(({data:{session}})=>{
@@ -11028,6 +11043,7 @@ function openQmode(did){
 }
 
 function startQ(mode){
+  if(mode==='oud')trackEvent('oud_examen_quiz',{vak:ST.vak?.naam||null,domein:ST.domein?.naam||null});
   // If oud-examen mode and domain has year-tagged questions → show picker first
   if(mode==='oud'){
     const hasJaar=(ST.domein.oe||[]).some(q=>q.jaar);
@@ -12750,6 +12766,7 @@ let SIM={};
 const SIM_QPD=3; // questions per domain
 
 function startSimToets(){
+  trackEvent('simulatietoets',{vak:ST.vak?.naam||null});
   if(!ST.vak)return;
   const vak=ST.vak;
   SIM={vak,questions:[],idx:0,answers:[],timer:null,duration:0,started:false};
@@ -13197,6 +13214,7 @@ let _raceFinishTimeout=null;
 
 function startRace(diff){
   diff=diff||'medium';
+  trackEvent('bot_race',{diff:diff,vak:ST.vak?.naam||null});
   window._lastRaceDiff=diff;
   const vak=ST.vak;
   if(!vak)return;
@@ -13932,6 +13950,7 @@ function closeLbProfile(){
 /* ── PDF VIEWER ──────────────────────────────────────── */
 let _pdfCurrentUrl='';
 function openPdfViewer(url,title){
+  trackEvent('oud_examen_pdf',{title:title||null,pdf:url?.split('/').pop()||null});
   _pdfCurrentUrl=url;
   const modal=document.getElementById('pdf-viewer-modal');
   const iframe=document.getElementById('pdf-viewer-iframe');
@@ -15774,6 +15793,7 @@ function srIntLabel(q,sr={}){
 let FC={cards:[],queue:[],again:[],stats:{again:0,hard:0,good:0,easy:0},vakId:'',domId:'',flipped:false,sessionTotal:0};
 
 function startFlash(){
+  trackEvent('flashcard',{domein:ST.domein?.naam||null});
   const d=ST.domein,v=ST.vak;
   if(!d||!v)return;
   const terms=(d.onderwerpen||[]).filter(t=>t&&t.trim().length>1);
@@ -16614,6 +16634,7 @@ function _mqPhase(ph){
 }
 
 function openMultiQuiz(){
+  trackEvent('multiplayer',{vak:ST.vak?.naam||null,domein:ST.domein?.naam||null});
   if(!ST.vak||!ST.domein){showToast('Kies eerst een vak en domein','#ef4444');return;}
   const el=document.getElementById('mq-entry-vak');
   if(el)el.textContent=ST.vak.naam+' · '+ST.domein.naam;
