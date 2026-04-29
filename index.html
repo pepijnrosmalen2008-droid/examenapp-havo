@@ -15531,11 +15531,12 @@ function renderHomeStats(){
   const badgeCell=earnedCount>0?`<div class="bento-cell bento-badges" onclick="openProfiel();setTimeout(()=>{const el=document.getElementById('prof-badges-content');if(el)el.scrollIntoView({behavior:'smooth',block:'start'})},250)" role="button" tabindex="0">
     <div class="bento-stat"><div class="bento-si">🏅</div><div class="bento-sv">${earnedCount}/${ALL_BADGES.length}</div><div class="bento-sl">Badges</div></div>
   </div>`:'';
-  // ── Avg / Groep cell ─────────────────────────────
+  // ── Avg cell (alleen als cijfers bekend zijn) ────
   const avgCell=avg!==null?`<div class="bento-cell ${avg<6?'bento-avg-warn':'bento-avg-ok'}" onclick="show('sc-calc');setTimeout(prefillCalcFromSaved,50)" role="button" tabindex="0">
     <div class="bento-stat"><div class="bento-si">📈</div><div class="bento-sv">${avg.toFixed(1).replace('.',',')}</div><div class="bento-sl">Gem. SE</div></div>
-  </div>`:
-  `<div class="bento-cell bento-groep" onclick="show('sc-groep');renderGroepScreen()" role="button" tabindex="0">
+  </div>`:'';
+  // ── Groep cell (altijd zichtbaar) ────────────────
+  const groepCell=`<div class="bento-cell bento-groep" onclick="show('sc-groep');renderGroepScreen()" role="button" tabindex="0">
     <div class="bento-stat"><div class="bento-si">👥</div><div class="bento-sv">Groep</div><div class="bento-sl">Klassenboard</div></div>
   </div>`;
   // ── Streak milestone cell (conditional, full-width) ──
@@ -15554,7 +15555,7 @@ function renderHomeStats(){
       </div>`;
     }
   }
-  box.innerHTML=`<div class="bento">${streakCell}${lvlCell}${badgeCell}${avgCell}${actCells}${_buildDgCell()}${smCell}</div>`;
+  box.innerHTML=`<div class="bento">${streakCell}${lvlCell}${badgeCell}${avgCell}${groepCell}${actCells}${_buildDgCell()}${smCell}</div>`;
   // Live countdown ticker (alleen als dagdoel nog niet voltooid)
   if(!_dgRewarded){
     if(window._dgTimer)clearInterval(window._dgTimer);
