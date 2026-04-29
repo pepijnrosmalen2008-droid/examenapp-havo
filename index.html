@@ -1663,6 +1663,7 @@ html.dark .qb{background:#2e3550}
 /* ── GRADE BADGE ON CARD ─────────────────────── */
 .card-grade-badge{position:absolute;top:12px;right:12px;font-family:var(--font-head);font-size:13px;font-weight:800;padding:3px 9px;border-radius:20px;letter-spacing:.3px;box-shadow:0 2px 8px rgba(0,0,0,.15)}
 .card{position:relative}
+.card-decay-dot{position:absolute;top:10px;left:10px;width:8px;height:8px;border-radius:50%;background:#f97316;box-shadow:0 0 5px rgba(249,115,22,.6);pointer-events:none}
 .grade-green{background:#d1fae5;color:#059669}
 .grade-orange{background:#fef3c7;color:#d97706}
 .grade-red{background:#fee2e2;color:#dc2626}
@@ -9031,7 +9032,9 @@ function buildGrid(){
       return `<div class="card-lp-dot${isDone?' cld-done':isStarted?' cld-started':''}" title="Domein ${dom.id}"></div>`;
     }).join('');
     const lpDotsHtml=`<div class="card-lp-dots">${lpDots}</div>`;
-    d.innerHTML=`${cijBadge}<div class="card-icon"><svg viewBox="0 0 24 24">${iconPaths}</svg></div><div class="card-name">${v.naam}</div><div class="card-desc">${v.beschrijving}</div><div class="card-meta">${v.domeinen.length} CE-domeinen</div>${progHtml}${lpDotsHtml}`;
+    const staleCount=v.domeinen.filter(dom=>{const ts=getDecay()[`${v.id}_${dom.id}`];return ts&&(Date.now()-ts)/864e5>=7;}).length;
+    const decayDot=staleCount>0?`<div class="card-decay-dot" title="${staleCount} domein${staleCount>1?'en':''} opfrissen"></div>`:'';
+    d.innerHTML=`${cijBadge}${decayDot}<div class="card-icon"><svg viewBox="0 0 24 24">${iconPaths}</svg></div><div class="card-name">${v.naam}</div><div class="card-desc">${v.beschrijving}</div><div class="card-meta">${v.domeinen.length} CE-domeinen</div>${progHtml}${lpDotsHtml}`;
     d.dataset.domains=v.domeinen.map(dom=>dom.naam).join(' ').toLowerCase();
     d.onclick=()=>openVak(v.id);
     d.style.animationDelay=(g.children.length*0.045)+'s';
@@ -11509,7 +11512,8 @@ function _kiesReveal(gekozen,correct,btns){
   if(ok){
     fb.innerHTML=`<div class="fbt">✓ Correct!</div>${q.u?`<button class="fbt-info-btn" onclick="this.nextElementSibling.classList.toggle('show');this.textContent=this.nextElementSibling.classList.contains('show')?'ℹ️ Verberg uitleg':'ℹ️ Toon uitleg'">ℹ️ Toon uitleg</button><div class="fbt-info-text">${q.u}</div>`:''}`;
   }else{
-    fb.innerHTML=`<div class="fbt">✗ Fout</div>${q.u?`<div class="fbtx">${q.u}</div>`:''}`;
+    const correctText=q.o[q.c]||'';
+    fb.innerHTML=`<div class="fbt">✗ Fout</div><div class="fbtx"><span style="color:#4ade80;font-weight:700">✓ Juist:</span> ${correctText}</div>${q.u?`<button class="fbt-info-btn" style="margin-top:4px" onclick="this.nextElementSibling.classList.toggle('show');this.textContent=this.nextElementSibling.classList.contains('show')?'ℹ️ Verberg uitleg':'ℹ️ Toon uitleg'">ℹ️ Toon uitleg</button><div class="fbt-info-text">${q.u}</div>`:''}`;
   }
   const nxt=document.getElementById('qnxt');
   nxt.style.display='block';
@@ -11831,7 +11835,7 @@ function checkPlanDayAch(dateStr){
     const doneMap=spGetDone();
     const allDone=dayTasks.every(t=>!!doneMap[`${t.dateStr}_${t.vakId}_${t.domId}_${t.actKey}`]);
     if(!allDone)return;
-    if(earnAch('plan_day'))setTimeout(()=>{showAch('🎯','Dagplanner! Alle taken gedaan! +100 XP');try{addXP(100);}catch(e){}},400);
+    if(earnAch('plan_day'))setTimeout(()=>{showAch('🎯','Dagplanner! Alle taken gedaan! +100 XP');try{addXP(100);launchConfetti();}catch(e){}},400);
     checkConsecutivePlanDays();
   }catch(e){}
 }
@@ -12405,11 +12409,13 @@ function renderHmStatsStrip(){
   let vakCount=0;
   try{const ph=JSON.parse(localStorage.getItem('examenapp_progress_havo')||'{}');const pv=JSON.parse(localStorage.getItem('examenapp_progress_vwo')||'{}');vakCount=new Set([...Object.keys(ph),...Object.keys(pv)].map(k=>k.split('_')[0])).size;}catch(e){}
   const totalQ=getStreak().totalQuizzes||0;
+  let xpToday=0;try{const s=JSON.parse(localStorage.getItem('slagio_xp_today')||'{}');if(s.d===new Date().toISOString().slice(0,10))xpToday=s.x||0;}catch(e){}
   const pills=[
     streak>0?`<span class="hm-stat-pill" onclick="openProfiel()" title="Dagelijkse streak">🔥 ${streak} dag${streak===1?'':'en'}</span>`:'',
     earned>0?`<span class="hm-stat-pill" onclick="openProfiel()" title="Behaalde badges">🏅 ${earned} badge${earned===1?'':'s'}</span>`:'',
     vakCount>0?`<span class="hm-stat-pill" onclick="openProfiel()" title="Actieve vakken">📚 ${vakCount} vak${vakCount===1?'':'ken'}</span>`:'',
     totalQ>0?`<span class="hm-stat-pill" onclick="openProfiel()" title="Totaal quizzen">⚡ ${totalQ} quiz${totalQ===1?'':'zen'}</span>`:'',
+    xpToday>0?`<span class="hm-stat-pill" onclick="openProfiel()" title="XP vandaag verdiend">✨ +${xpToday} XP vandaag</span>`:'',
   ].filter(Boolean);
   wrap.innerHTML=pills.length?`<div class="hm-stats-strip">${pills.join('')}</div>`:'';
 }
@@ -13052,6 +13058,7 @@ function renderStudieplan(){
 
   el.innerHTML=vandaagHtml+summaryHtml+calHtml+masteryHtml;
   localStorage.setItem('slagio_plan_generated','1');
+  if(todayAllTasks.length)setTimeout(()=>document.querySelector('.sp-vandaag')?.scrollIntoView({behavior:'smooth',block:'nearest'}),120);
   const btn=document.getElementById('sp-gen-btn');
   if(btn)btn.textContent='🔄 Herbereken studieplan';
   try{trackEvent('studieplan_generated',{vakken:Object.keys(vakInfo).length});}catch(e){}
@@ -15236,6 +15243,7 @@ function getXPPct(xp){
   return Math.min(Math.round((xp-cur)/(nxt-cur)*100),100);
 }
 function addXP(amount){
+  try{const t=new Date().toISOString().slice(0,10);const k='slagio_xp_today';const s=JSON.parse(localStorage.getItem(k)||'{}');if(s.d!==t){s.d=t;s.x=0;}s.x=(s.x||0)+amount;localStorage.setItem(k,JSON.stringify(s));}catch(e){}
   const d=getXPData();
   const oldLvl=getLevelForXP(d.xp);
   d.xp=(d.xp||0)+amount;
