@@ -3898,6 +3898,25 @@ html.dark .hsd-pill{background:var(--bg2);border-color:var(--bo2)}
 .sp-hw-generate{padding:12px 16px 14px}
 .sp-hw-gen-btn{width:100%;padding:11px;background:var(--or);color:#fff;border:none;border-radius:12px;font-family:var(--font-head);font-size:13px;font-weight:800;cursor:pointer;transition:opacity .2s;box-shadow:0 3px 12px rgba(var(--or-rgb),.3)}
 .sp-hw-gen-btn:active{opacity:.75}
+/* ── STUDIEPLAN KALENDER ─────────────────────────── */
+.sp-section-title{font-size:12px;font-weight:700;color:var(--mu);text-transform:uppercase;letter-spacing:.08em;margin:20px 0 10px}
+.sp-cal-day{background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.07);border-radius:14px;margin-bottom:8px;overflow:hidden;transition:opacity .3s}
+.sp-cal-day.sp-done{opacity:.55}
+.sp-cal-day-header{display:flex;align-items:center;justify-content:space-between;padding:12px 14px 10px}
+.sp-cal-day-name{font-size:14px;font-weight:700;color:var(--dk)}
+.sp-cal-day-date{font-size:11px;color:var(--mu);margin-top:1px}
+.sp-cal-day-right{display:flex;align-items:center;gap:8px;flex-wrap:wrap;justify-content:flex-end}
+.sp-cal-task-count{font-size:12px;font-weight:700}
+.sp-cal-mins{font-size:11px;color:var(--mu);background:rgba(255,255,255,.05);padding:2px 7px;border-radius:7px}
+.sp-cal-done-badge{font-size:11px;color:#22c55e;font-weight:700;background:rgba(34,197,94,.12);padding:2px 8px;border-radius:8px;border:1px solid rgba(34,197,94,.2)}
+.sp-cal-tasks{padding:0 14px 10px;display:flex;flex-direction:column}
+.sp-cal-task-row{display:flex;align-items:center;gap:10px;padding:7px 0;border-top:1px solid rgba(255,255,255,.05)}
+.sp-cal-task-row.sp-done .sp-cal-task-dom,.sp-cal-task-row.sp-done .sp-cal-task-vak{text-decoration:line-through;opacity:.5}
+.sp-act-badge{font-size:15px;width:26px;text-align:center;flex-shrink:0}
+.sp-cal-task-info{display:flex;flex-direction:column;flex:1;min-width:0}
+.sp-cal-task-vak{font-size:10px;font-weight:700;color:var(--or);text-transform:uppercase;letter-spacing:.05em;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.sp-cal-task-dom{font-size:12px;color:var(--dk);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.sp-cal-task-meta{font-size:11px;color:var(--mu);flex-shrink:0}
 /* ── TOEGANKELIJKHEID ────────────────────────────── */
 .acc-row{display:flex;justify-content:space-between;align-items:center;padding:13px 0;border-bottom:1px solid var(--bo)}
 .acc-row:last-child{border-bottom:none}
@@ -11682,6 +11701,9 @@ const ALL_BADGES=[
   {id:'plan_1',  emoji:'📅', label:'Planmatig',       tip:'Eerste studieplan-taak gestart',       cat:'Studieplan', rarity:'common'},
   {id:'plan_7',  emoji:'📋', label:'Doelgericht',     tip:'7 studieplan-taken gestart',           cat:'Studieplan', rarity:'rare'},
   {id:'plan_30', emoji:'🗓️', label:'IJzeren routine', tip:'30 studieplan-taken gestart',          cat:'Studieplan', rarity:'epic'},
+  {id:'plan_day',emoji:'🎯', label:'Dagplanner',     tip:'Alle taken van een studiedag voltooid',   cat:'Studieplan', rarity:'rare'},
+  {id:'plan_3d', emoji:'📆', label:'Op schema',      tip:'3 studiedagen op rij alle taken gedaan',  cat:'Studieplan', rarity:'epic'},
+  {id:'plan_wk', emoji:'🏆', label:'Weekkampioen',   tip:'5 studiedagen in een week voltooid',      cat:'Studieplan', rarity:'legendary'},
   // Perfectie
   {id:'perfect_3', emoji:'🌟', label:'Hat-trick',  tip:'3× een perfecte score (100%) behaald',   cat:'Perfectie',  rarity:'rare'},
   {id:'perfect_10',emoji:'💎', label:'Onfeilbaar', tip:'10× een perfecte score behaald',          cat:'Perfectie',  rarity:'epic'},
@@ -11780,6 +11802,38 @@ function checkPlanAch(){
   if(n>=1&&earnAch('plan_1'))setTimeout(()=>showAch('📅','Planmatig! Eerste studieplan-taak!'),400);
   if(n>=7&&earnAch('plan_7'))setTimeout(()=>showAch('📋','7 studieplan-taken — doelgericht!'),400);
   if(n>=30&&earnAch('plan_30'))setTimeout(()=>showAch('🗓️','30 taken — IJzeren routine!'),400);
+}
+function checkPlanDayAch(dateStr){
+  try{
+    const plan=spGetPlan();
+    if(!plan)return;
+    const dayTasks=(plan.tasks||[]).filter(t=>t.dateStr===dateStr);
+    if(!dayTasks.length)return;
+    const doneMap=spGetDone();
+    const allDone=dayTasks.every(t=>!!doneMap[`${t.dateStr}_${t.vakId}_${t.domId}_${t.actKey}`]);
+    if(!allDone)return;
+    if(earnAch('plan_day'))setTimeout(()=>{showAch('🎯','Dagplanner! Alle taken gedaan! +100 XP');try{addXP(100);}catch(e){}},400);
+    checkConsecutivePlanDays();
+  }catch(e){}
+}
+function checkConsecutivePlanDays(){
+  try{
+    const plan=spGetPlan();
+    if(!plan)return;
+    const doneMap=spGetDone();
+    const dates=[...new Set((plan.tasks||[]).map(t=>t.dateStr))].sort();
+    const today=new Date().toISOString().slice(0,10);
+    let streak=0;
+    for(let i=dates.length-1;i>=0;i--){
+      const ds=dates[i];
+      if(ds>today)continue;
+      const dayTasks=(plan.tasks||[]).filter(t=>t.dateStr===ds);
+      if(dayTasks.length>0&&dayTasks.every(t=>!!doneMap[`${t.dateStr}_${t.vakId}_${t.domId}_${t.actKey}`]))streak++;
+      else break;
+    }
+    if(streak>=3&&earnAch('plan_3d'))setTimeout(()=>{showAch('📆','Op schema! 3 studiedagen op rij! +50 XP');try{addXP(50);}catch(e){}},500);
+    if(streak>=5&&earnAch('plan_wk'))setTimeout(()=>showAch('🏆','Weekkampioen! 5 studiedagen voltooid!'),600);
+  }catch(e){}
 }
 function checkPerfectCountAch(){
   const n=parseInt(localStorage.getItem('slagio_perfect_count')||'0')+1;
@@ -12443,17 +12497,16 @@ function spMarkDone(key){
   if(d[key])return;
   d[key]=true;
   localStorage.setItem(SP_DONE_KEY,JSON.stringify(d));
-  // XP bonus
   try{addXP(25);}catch(e){}
-  // Refresh widgets
   try{renderVandaagWidget();}catch(e){}
-  // Refresh plan done-states
   try{
     const btn=document.querySelector(`[data-spkey="${key}"]`);
     if(btn){btn.classList.add('checked');btn.closest('.sp-task-card')?.classList.add('sp-done');}
     const vanBtn=document.querySelector(`[data-spkey-hw="${key}"]`);
     if(vanBtn)vanBtn.closest('.sp-hw-task')?.remove();
   }catch(e){}
+  try{checkPlanAch();}catch(e){}
+  try{checkPlanDayAch(key.slice(0,10));}catch(e){}
 }
 
 function spStorePlan(tasks){
@@ -12539,8 +12592,9 @@ function renderVandaagWidget(){
   </div>`;
 }
 
-function spCheckAfterQuiz(vakId,domId,mode){
+function spCheckAfterQuiz(vakId,domId,mode,score,total){
   try{
+    if(!total||total<5||score<=0)return;
     const modeToAct={snel:'quiz',oud:'open',flash:'flash'};
     const actKey=modeToAct[mode];
     if(!actKey)return;
@@ -12551,11 +12605,10 @@ function spCheckAfterQuiz(vakId,domId,mode){
     const match=(plan.tasks||[]).find(t=>t.dateStr===today&&t.vakId===vakId&&t.domId===domId&&t.actKey===actKey);
     if(match&&!spIsDone(key)){
       spMarkDone(key);
-      // Toon toast
       try{
         const t=document.createElement('div');
         t.style.cssText='position:fixed;bottom:90px;left:50%;transform:translateX(-50%);background:#22c55e;color:#fff;padding:8px 18px;border-radius:12px;font-size:13px;font-weight:700;z-index:9999;box-shadow:0 4px 16px rgba(34,197,94,.4);pointer-events:none;white-space:nowrap';
-        t.textContent='📅 Studieplan taak gedaan +25 XP';
+        t.textContent='📅 Studieplan taak voltooid! +25 XP';
         document.body.appendChild(t);
         setTimeout(()=>t.remove(),2800);
       }catch(e){}
@@ -12645,11 +12698,11 @@ function renderStudieplan(){
   if(!el)return;
   const mijn=getMijnVakken();
   const today=new Date();today.setHours(0,0,0,0);
-  const tomorrow=new Date(today);tomorrow.setDate(today.getDate()+1);
+  const todayStr=today.toISOString().slice(0,10);
   const DN=['zo','ma','di','wo','do','vr','za'];
   const MN=['jan','feb','mrt','apr','mei','jun','jul','aug','sep','okt','nov','dec'];
   const prefs=spGetPrefs();
-  const maxPerIntensity={0:0,1:1,2:2,3:3};
+  const BUDGET={0:0,1:30,2:50,3:70}; // minuten per dag per intensiteit
 
   // [icon, label, cssClass, mode, minutes]
   const ACTS={
@@ -12660,17 +12713,6 @@ function renderStudieplan(){
     herhaal: ['🔄','Herhalen',      'sp-act-herhaal', 'snel',10],
   };
 
-  function getStudyDays(startD,examD){
-    const days=[];const d=new Date(startD);
-    while(d<examD){
-      const dow=d.getDay();
-      const intensity=dow===0?0:(prefs[dow]??2);
-      if(intensity>0)days.push({date:new Date(d),max:maxPerIntensity[intensity],intensity});
-      d.setDate(d.getDate()+1);
-    }
-    return days;
-  }
-
   const upcoming=EXAM_SCHEDULE.filter(e=>{
     const d=new Date(e.datum);
     return d>today&&e.vakId&&(mijn.length===0||mijn.includes(e.vakId));
@@ -12680,83 +12722,97 @@ function renderStudieplan(){
     return;
   }
 
-  let totalToDo=0,totalDone=0,totalMins=0;
-  const vakBlocks=[];
-  const allPlanTasks=[];
-
+  // 1. Bouw domeininfo per vak
+  const vakInfo={};
   upcoming.forEach(ex=>{
     const vak=getVK().find(v=>v.id===ex.vakId);
     if(!vak||!vak.domeinen)return;
     const examD=new Date(ex.datum);examD.setHours(0,0,0,0);
     const daysLeft=Math.ceil((examD-today)/864e5);
     if(daysLeft<=0)return;
-
     const domains=vak.domeinen.map(dom=>{
       const {pct,hasData}=getDomeinBestPct(vak.id,dom.id);
       const trend=spGetTrend(vak.id,dom.id);
       const urgency=!hasData?0:pct<0.4?1:pct<0.7?2:3;
       return{id:dom.id,naam:dom.naam,pct,hasData,urgency,trend};
     }).sort((a,b)=>a.urgency-b.urgency||a.pct-b.pct);
-
     spStorePcts(domains,vak.id);
-
-    const needWork=domains.filter(d=>d.urgency<3);
-    const reviews=domains.filter(d=>d.urgency===3);
-    totalToDo+=needWork.length;
-    totalDone+=reviews.length;
-
-    const tasks=[];
-    needWork.forEach(dom=>spDomActivities(dom,dom.trend).forEach(act=>tasks.push({dom,actKey:act})));
-    tasks.forEach(t=>totalMins+=ACTS[t.actKey][4]||10);
-
-    const studyDays=getStudyDays(today,examD);
-    const schedule=new Map();
-    let ti=0;
-    const gap=tasks.length>0&&studyDays.length>0?Math.max(1,Math.floor(studyDays.length/tasks.length)):1;
-    studyDays.forEach((dayObj,di)=>{
-      if(ti>=tasks.length)return;
-      const remaining=tasks.length-ti;
-      const daysLeft2=studyDays.length-di;
-      if(di%gap===0||remaining>=daysLeft2){
-        const key=dayObj.date.toISOString().slice(0,10);
-        if(!schedule.has(key))schedule.set(key,{tasks:[],intensity:dayObj.intensity,max:dayObj.max});
-        const entry=schedule.get(key);
-        while(entry.tasks.length<entry.max&&ti<tasks.length)entry.tasks.push(tasks[ti++]);
-      }
-    });
-
-    const dayBefore=new Date(examD);dayBefore.setDate(examD.getDate()-1);
-    if(dayBefore>=today&&dayBefore.getDay()!==0){
-      const key=dayBefore.toISOString().slice(0,10);
-      if(!schedule.has(key))schedule.set(key,{tasks:[],intensity:2,max:2});
-      schedule.get(key).tasks.push({dom:null,actKey:'herhaal',isReview:true,reviews});
-    }
-
-    // Sla plat op voor widget en detectie
-    schedule.forEach((entry,dateStr)=>{
-      entry.tasks.forEach(t=>{
-        if(!t.isReview&&t.dom)allPlanTasks.push({
-          dateStr,vakId:vak.id,vakNaam:vak.naam,
-          domId:t.dom.id,domNaam:t.dom.naam,
-          actKey:t.actKey,mins:ACTS[t.actKey][4]||10,
-          mode:ACTS[t.actKey][3]
-        });
-      });
-    });
-
-    vakBlocks.push({vak,ex,examD,daysLeft,domains,schedule,studyDays,reviews,needWork,donePct:domains.length?Math.round(reviews.length/domains.length*100):100});
+    vakInfo[vak.id]={vak,ex,examD,daysLeft,domains};
   });
 
+  // 2. Verzamel alle taken in één globale pool, gesorteerd op prioriteit
+  const pool=[];
+  Object.values(vakInfo).forEach(({vak,examD,daysLeft,domains})=>{
+    const examDateStr=examD.toISOString().slice(0,10);
+    domains.filter(d=>d.urgency<3).forEach(dom=>{
+      spDomActivities(dom,dom.trend).forEach(actKey=>{
+        const [,,,mode,mins]=ACTS[actKey];
+        const urgFactor=[3,2,1][dom.urgency]??1;
+        const priority=(1-dom.pct)*urgFactor*100/Math.max(1,daysLeft)+(dom.trend==='down'?50:0);
+        pool.push({priority,vakId:vak.id,vakNaam:vak.naam,domId:dom.id,domNaam:dom.naam,
+          actKey,mins,mode,examDateStr,daysLeft,pct:dom.pct,hasData:dom.hasData});
+      });
+    });
+  });
+  pool.sort((a,b)=>b.priority-a.priority);
+
+  // 3. Bouw globale studiedagenkaart (vandaag → laatste examen)
+  const maxExamD=Object.values(vakInfo).reduce((mx,{examD})=>examD>mx?examD:mx,today);
+  const dayMap={};
+  {const d=new Date(today);while(d<maxExamD){
+    const ds=d.toISOString().slice(0,10);
+    const dow=d.getDay();const intensity=dow===0?0:(prefs[dow]??2);
+    if(intensity>0)dayMap[ds]={date:new Date(d),intensity,remaining:BUDGET[intensity],tasks:[]};
+    d.setDate(d.getDate()+1);
+  }}
+  const sortedDays=Object.keys(dayMap).sort();
+
+  // 4. Wijs taken toe vanuit pool aan vroegste beschikbare dag met budget
+  pool.forEach(task=>{
+    for(const ds of sortedDays){
+      if(ds>=task.examDateStr)break;
+      const day=dayMap[ds];
+      if(day.remaining>=task.mins){day.tasks.push(task);day.remaining-=task.mins;return;}
+    }
+    for(const ds of sortedDays){
+      if(ds>=task.examDateStr)break;
+      const day=dayMap[ds];
+      if(day.remaining>0){day.tasks.push(task);day.remaining=0;return;}
+    }
+    for(let i=sortedDays.length-1;i>=0;i--){
+      if(sortedDays[i]<task.examDateStr){dayMap[sortedDays[i]].tasks.push(task);return;}
+    }
+  });
+
+  // 5. Voeg herhalingsdag toe de dag vóór elk examen
+  Object.values(vakInfo).forEach(({vak,examD,domains})=>{
+    const dayBefore=new Date(examD);dayBefore.setDate(examD.getDate()-1);
+    if(dayBefore<today||dayBefore.getDay()===0)return;
+    const ds=dayBefore.toISOString().slice(0,10);
+    if(dayMap[ds])dayMap[ds].tasks.push({isReview:true,vakId:vak.id,vakNaam:vak.naam,
+      actKey:'herhaal',mins:15,mode:'snel',domId:'_review',domNaam:'Herhaling'});
+  });
+
+  // 6. Platte takenlijst voor widget + autodetectie
+  const allPlanTasks=[];
+  sortedDays.forEach(ds=>{
+    (dayMap[ds]?.tasks||[]).forEach(t=>{
+      if(!t.isReview)allPlanTasks.push({dateStr:ds,...t});
+    });
+  });
   spStorePlan(allPlanTasks);
-  if(!vakBlocks.length){el.innerHTML='<div class="sp-empty">Alle domeinen zijn al klaar! 🎉</div>';return;}
+  if(!allPlanTasks.length&&!Object.keys(vakInfo).length){
+    el.innerHTML='<div class="sp-empty">Alle domeinen zijn al klaar! 🎉</div>';return;
+  }
 
+  const doneMap=spGetDone();
   const fmtDate=d=>`${d.getDate()} ${MN[d.getMonth()]}`;
-  const dayLbl=d=>{
-    if(d.getTime()===today.getTime())return'Vandaag';
-    if(d.getTime()===tomorrow.getTime())return'Morgen';
+  function dayLbl(d){
+    const ds=d.toISOString().slice(0,10);if(ds===todayStr)return'Vandaag';
+    const tmr=new Date(today);tmr.setDate(today.getDate()+1);
+    if(ds===tmr.toISOString().slice(0,10))return'Morgen';
     return DN[d.getDay()];
-  };
-
+  }
   function ringHtml(pct,color){
     const r=9,cx=12,cy=12,circ=2*Math.PI*r;
     const off=(circ*(1-Math.max(0,Math.min(1,pct||0)))).toFixed(1);
@@ -12773,17 +12829,15 @@ function renderStudieplan(){
     return'';
   }
 
-  const totalUren=(totalMins/60).toFixed(1);
-  const todayStr=today.toISOString().slice(0,10);
-  const doneMap=spGetDone();
-
-  // ── "Vandaag" pinned sectie ──
-  const todayAllTasks=allPlanTasks.filter(t=>t.dateStr===todayStr);
-  const todayOpenTasks=todayAllTasks.filter(t=>!doneMap[`${t.dateStr}_${t.vakId}_${t.domId}_${t.actKey}`]);
+  // ── Vandaag sectie ──
+  const todayAllTasks=(dayMap[todayStr]?.tasks||[]).filter(t=>!t.isReview);
+  const todayOpenTasks=todayAllTasks.filter(t=>!doneMap[`${todayStr}_${t.vakId}_${t.domId}_${t.actKey}`]);
   let vandaagHtml='';
   if(todayAllTasks.length>0){
-    const vandaagCards=todayAllTasks.map(t=>{
-      const key=`${t.dateStr}_${t.vakId}_${t.domId}_${t.actKey}`;
+    const todayMins=todayAllTasks.reduce((s,t)=>s+(t.mins||0),0);
+    const allDoneToday=todayOpenTasks.length===0;
+    const cards=todayAllTasks.map(t=>{
+      const key=`${todayStr}_${t.vakId}_${t.domId}_${t.actKey}`;
       const isDone=!!doneMap[key];
       const [icon,label,cls,mode,mins]=ACTS[t.actKey];
       return`<div class="sp-task-card${isDone?' sp-done':''}" id="sp-card-${key}">
@@ -12791,7 +12845,7 @@ function renderStudieplan(){
           <div class="sp-task-card-vak">${t.vakNaam}</div>
           <div class="sp-task-card-dom">${t.domNaam}</div>
           <div class="sp-task-card-meta">
-            <span class="sp-act-btn ${cls}" style="padding:4px 10px;font-size:11px" onclick="${isDone?'':''}">${icon} ${label}</span>
+            <button class="sp-act-btn ${cls}" style="padding:4px 10px;font-size:11px" onclick="goToDomein('${t.vakId}','${t.domId}','${mode}')">${icon} ${label} →</button>
             <span class="sp-task-card-time">~${mins} min</span>
           </div>
         </div>
@@ -12805,24 +12859,95 @@ function renderStudieplan(){
     vandaagHtml=`<div class="sp-vandaag">
       <div class="sp-vandaag-header">
         <div class="sp-vandaag-title">📌 Vandaag</div>
-        ${todayOpenTasks.length>0?`<span class="sp-vandaag-badge">${todayOpenTasks.length} open</span>`:'<span style="font-size:12px;color:#22c55e;font-weight:700">✓ Alles gedaan</span>'}
+        <div style="display:flex;align-items:center;gap:8px">
+          <span class="sp-task-card-time" style="font-size:12px">~${todayMins} min</span>
+          ${allDoneToday?'<span style="font-size:12px;color:#22c55e;font-weight:700;background:rgba(34,197,94,.12);padding:2px 9px;border-radius:20px;border:1px solid rgba(34,197,94,.2)">✓ Klaar!</span>':`<span class="sp-vandaag-badge">${todayOpenTasks.length} open</span>`}
+        </div>
       </div>
-      ${vandaagCards}
+      ${cards}
+    </div>`;
+  } else if(allPlanTasks.length>0){
+    vandaagHtml=`<div class="sp-vandaag" style="text-align:center;padding:18px 16px">
+      <div class="sp-vandaag-title" style="margin-bottom:6px">📌 Vandaag</div>
+      <div style="font-size:13px;color:var(--mu)">🌴 Vrije dag — goed verdiend!</div>
     </div>`;
   }
 
-  let html=vandaagHtml+`<div class="sp-summary">
-    <div class="sp-sum-card"><div class="sp-sum-val">${totalToDo}</div><div class="sp-sum-lbl">Domeinen te oefenen</div></div>
-    <div class="sp-sum-card"><div class="sp-sum-val">${upcoming.length}</div><div class="sp-sum-lbl">Examens gepland</div></div>
-    <div class="sp-sum-card"><div class="sp-sum-val">${totalUren}u</div><div class="sp-sum-lbl">Studeertijd totaal</div></div>
+  // ── Statistieken ──
+  const totalTasks=allPlanTasks.length;
+  const totalMins=allPlanTasks.reduce((s,t)=>s+(t.mins||0),0);
+  const totalDoneTasks=allPlanTasks.filter(t=>!!doneMap[`${t.dateStr}_${t.vakId}_${t.domId}_${t.actKey}`]).length;
+  const summaryHtml=`<div class="sp-summary">
+    <div class="sp-sum-card"><div class="sp-sum-val">${totalTasks}</div><div class="sp-sum-lbl">Taken gepland</div></div>
+    <div class="sp-sum-card"><div class="sp-sum-val">${totalDoneTasks}</div><div class="sp-sum-lbl">Gedaan</div></div>
+    <div class="sp-sum-card"><div class="sp-sum-val">~${(totalMins/60).toFixed(1)}u</div><div class="sp-sum-lbl">Studeertijd</div></div>
   </div>`;
 
-  vakBlocks.forEach(({vak,ex,examD,daysLeft,domains,schedule,reviews,needWork,donePct})=>{
-    const urgCls=daysLeft<=5?'urgent':daysLeft<=12?'soon':'ok';
-    const urgTxt=daysLeft<=5?`⚠️ Nog ${daysLeft}d`:`over ${daysLeft} dagen`;
+  // ── Kalender: komende dagen ──
+  const futureDates=sortedDays.filter(ds=>ds>todayStr&&(dayMap[ds]?.tasks||[]).length>0).slice(0,14);
+  let calHtml='';
+  if(futureDates.length>0){
+    const intColors={1:'#22c55e',2:'var(--or)',3:'#ef4444'};
+    const dayRows=futureDates.map(ds=>{
+      const day=dayMap[ds];
+      const d=day.date;
+      const realTasks=day.tasks.filter(t=>!t.isReview);
+      const reviewTasks=day.tasks.filter(t=>t.isReview);
+      const usedMins=realTasks.reduce((s,t)=>s+(t.mins||0),0);
+      const doneCnt=realTasks.filter(t=>!!doneMap[`${ds}_${t.vakId}_${t.domId}_${t.actKey}`]).length;
+      const allDone=realTasks.length>0&&doneCnt===realTasks.length;
+      const taskRows=[...realTasks.map(t=>{
+        const isDone=!!doneMap[`${ds}_${t.vakId}_${t.domId}_${t.actKey}`];
+        const [icon,,,, mins]=ACTS[t.actKey];
+        return`<div class="sp-cal-task-row${isDone?' sp-done':''}">
+          <span class="sp-act-badge">${icon}</span>
+          <div class="sp-cal-task-info">
+            <span class="sp-cal-task-vak">${t.vakNaam}</span>
+            <span class="sp-cal-task-dom">${t.domNaam}</span>
+          </div>
+          <span class="sp-cal-task-meta">~${mins}m</span>
+        </div>`;
+      }),...reviewTasks.map(t=>`<div class="sp-cal-task-row" style="opacity:.65">
+        <span class="sp-act-badge">🔄</span>
+        <div class="sp-cal-task-info">
+          <span class="sp-cal-task-vak">${t.vakNaam}</span>
+          <span class="sp-cal-task-dom">Herhalingsdag vóór examen</span>
+        </div>
+        <span class="sp-cal-task-meta">~15m</span>
+      </div>`)].join('');
+      return`<div class="sp-cal-day${allDone?' sp-done':''}">
+        <div class="sp-cal-day-header">
+          <div>
+            <div class="sp-cal-day-name">${dayLbl(d)}</div>
+            <div class="sp-cal-day-date">${fmtDate(d)}</div>
+          </div>
+          <div class="sp-cal-day-right">
+            <span class="sp-cal-task-count" style="color:${intColors[day.intensity]||'var(--mu)'}">${realTasks.length+reviewTasks.length} taken</span>
+            <span class="sp-cal-mins">~${usedMins} min</span>
+            ${allDone?'<span class="sp-cal-done-badge">✓ Klaar</span>':''}
+          </div>
+        </div>
+        <div class="sp-cal-tasks">${taskRows}</div>
+      </div>`;
+    }).join('');
+    calHtml=`<div style="margin-top:4px"><div class="sp-section-title">Komende dagen</div>${dayRows}</div>`;
+  }
 
-    const masteryHtml=`<div class="sp-mastery-section">
-      <div class="sp-mastery-title">Beheersing per domein</div>
+  // ── Beheersing per vak ──
+  let masteryHtml='<div style="margin-top:24px"><div class="sp-section-title">Beheersing per vak</div>';
+  Object.values(vakInfo).forEach(({vak,examD,daysLeft,domains})=>{
+    const doneCount=domains.filter(d=>d.urgency===3).length;
+    const donePct=domains.length?Math.round(doneCount/domains.length*100):100;
+    const urgCls=daysLeft<=5?'urgent':daysLeft<=12?'soon':'ok';
+    const urgTxt=daysLeft<=5?`⚠️ ${daysLeft}d`:`${daysLeft}d`;
+    masteryHtml+=`<div class="sp-vak-block" style="margin-bottom:12px">
+      <div class="sp-vak-header">
+        ${vak.kleur?`<div class="sp-vak-dot" style="background:${vak.kleur}"></div>`:''}
+        <div class="sp-vak-name">${vak.naam}</div>
+        <div class="sp-vak-meta">${doneCount}/${domains.length} klaar</div>
+        <span class="sp-vak-countdown ${urgCls}">${urgTxt}</span>
+      </div>
+      <div class="sp-progress-bar"><div class="sp-progress-fill" style="width:${donePct}%"></div></div>
       <div class="sp-mastery-grid">${domains.map(dom=>{
         const color=pctColor(dom.pct,dom.hasData);
         const pctTxt=dom.hasData?Math.round(dom.pct*100)+'%':'–';
@@ -12836,77 +12961,14 @@ function renderStudieplan(){
         </div>`;
       }).join('')}</div>
     </div>`;
-
-    let rows='';
-    const allDates=[...schedule.keys()].sort();
-    allDates.forEach(dateStr=>{
-      const d=new Date(dateStr+'T00:00:00');
-      const isToday=d.getTime()===today.getTime();
-      const entry=schedule.get(dateStr);
-      const dayTasks=entry?.tasks||[];
-      if(!dayTasks.length)return;
-
-      const reviewTask=dayTasks.find(t=>t.isReview);
-      if(reviewTask){
-        const rdoms=reviewTask.reviews||[];
-        rows+=`<div class="sp-herhaal-row">
-          <div class="sp-herhaal-title">🔄 Herhaaldag — ${fmtDate(d)}</div>
-          <div style="font-size:12px;color:var(--mu);margin-bottom:6px">Dag vóór het examen — doorloop alle domeinen snel</div>
-          <div class="sp-herhaal-chips">${rdoms.map(rd=>`<span class="sp-herhaal-chip">✓ ${rd.naam}</span>`).join('')}${needWork.map(nd=>`<span onclick="goToDomein('${vak.id}','${nd.id}','snel')" style="cursor:pointer" class="sp-herhaal-chip">${nd.naam}</span>`).join('')}</div>
-          <button class="sp-act-btn sp-act-herhaal" style="margin-top:8px" onclick="goToDomein('${vak.id}','${vak.domeinen[0]?.id||''}','snel')">🔄 Start herhalingsquiz →</button>
-        </div>`;
-        return;
-      }
-
-      const loadColors={1:'#22c55e',2:'var(--or)',3:'#ef4444'};
-      const loadDot=entry?.intensity?`<div class="sp-day-load" style="color:${loadColors[entry.intensity]||'var(--mu)'}">${['','●●','●●●','●●●●'][entry.intensity]||''}</div>`:'';
-      const tasksHtml=dayTasks.map(({dom,actKey})=>{
-        const [icon,label,cls,mode,mins]=ACTS[actKey];
-        const pctTxt=dom.hasData?Math.round(dom.pct*100)+'%':'nieuw';
-        return`<div class="sp-task-item">
-          <div class="sp-task-dom">${dom.naam}</div>
-          <div class="sp-task-meta"><span class="sp-task-pct">${pctTxt}</span><span class="sp-task-time">~${mins} min</span></div>
-          <button class="sp-act-btn ${cls}" onclick="goToDomein('${vak.id}','${dom.id}','${mode}')">${icon} ${label} →</button>
-        </div>`;
-      }).join('');
-
-      rows+=`<div class="sp-day-row${isToday?' sp-today':''}${entry?.intensity===3?' sp-heavy':''}">
-        <div class="sp-day-label">
-          <div class="sp-day-lbl-top${isToday?' sp-today-txt':''}">${dayLbl(d)}</div>
-          <div class="sp-day-lbl-sub">${fmtDate(d)}</div>
-          ${loadDot}
-        </div>
-        <div class="sp-day-tasks">${tasksHtml}</div>
-      </div>`;
-    });
-
-    rows+=`<div class="sp-exam-row">
-      <div class="sp-exam-icon">🎓</div>
-      <div>
-        <div class="sp-exam-name">Examen ${vak.naam}</div>
-        <div class="sp-exam-time">${fmtDate(examD)} · ${ex.tijd}</div>
-      </div>
-    </div>`;
-
-    const metaTxt=[needWork.length?`${needWork.length} te oefenen`:'',reviews.length?`${reviews.length} klaar`:''].filter(Boolean).join(' · ');
-    html+=`<div class="sp-vak-block">
-      <div class="sp-vak-header">
-        ${vak.kleur?`<div class="sp-vak-dot" style="background:${vak.kleur}"></div>`:''}
-        <div class="sp-vak-name">${vak.naam}</div>
-        <div class="sp-vak-meta">${metaTxt}</div>
-        <span class="sp-vak-countdown ${urgCls}">${urgTxt}</span>
-      </div>
-      <div class="sp-progress-bar"><div class="sp-progress-fill" style="width:${donePct}%"></div></div>
-      ${masteryHtml}
-      ${rows||`<div style="padding:14px 16px;font-size:13px;color:var(--mu)">Alle domeinen al geoefend 🎉</div>`}
-    </div>`;
   });
+  masteryHtml+='</div>';
 
-  el.innerHTML=html;
+  el.innerHTML=vandaagHtml+summaryHtml+calHtml+masteryHtml;
   localStorage.setItem('slagio_plan_generated','1');
   const btn=document.getElementById('sp-gen-btn');
   if(btn)btn.textContent='🔄 Herbereken studieplan';
-  try{trackEvent('studieplan_generated',{vakken:vakBlocks.length});}catch(e){}
+  try{trackEvent('studieplan_generated',{vakken:Object.keys(vakInfo).length});}catch(e){}
 }
 // ═══════ TOEGANKELIJKHEID ═══════
 const ACC_KEY='slagio_acc_v1';
@@ -14636,7 +14698,7 @@ function saveProgress(vakId,domeinId,mode,score,total){
   // Sla oefentijdstip op voor knowledge decay indicator
   try{setDecayNow(vakId,domeinId);}catch(e){}
   // Studieplan: check of dit een geplande taak afrondt
-  try{spCheckAfterQuiz(vakId,domeinId,mode);}catch(e){}
+  try{spCheckAfterQuiz(vakId,domeinId,mode,score,total);}catch(e){}
   return{isNewRecord,prevBest,newBest:p[key].best,total};
 }
 // ═══════ KNOWLEDGE DECAY ═══════
