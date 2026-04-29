@@ -415,7 +415,7 @@ h1,h2,h3,h4{font-family:var(--font-head);line-height:1.2;letter-spacing:-.3px}
 /* ── NAV DOCK (icon buttons with tooltip) ──────── */
 .nav-dock{display:flex;align-items:center;gap:2px;padding:4px;border-radius:16px;background:color-mix(in srgb,var(--s) 92%,transparent);border:1px solid var(--bo);box-shadow:0 2px 14px rgba(0,0,0,.06);margin-left:auto;transition:box-shadow .25s,border-color .25s}
 .nav-dock:hover{border-color:rgba(var(--or-rgb),.3);box-shadow:0 4px 24px rgba(var(--or-rgb),.12),0 2px 14px rgba(0,0,0,.04)}
-.dock-btn{position:relative;width:38px;height:38px;display:flex;align-items:center;justify-content:center;border-radius:10px;border:none;background:transparent;cursor:pointer;color:var(--mu);transition:all .22s cubic-bezier(.34,1.4,.64,1);font-family:var(--font);flex-shrink:0}
+.dock-btn{position:relative;width:44px;height:44px;display:flex;align-items:center;justify-content:center;border-radius:10px;border:none;background:transparent;cursor:pointer;color:var(--mu);transition:all .22s cubic-bezier(.34,1.4,.64,1);font-family:var(--font);flex-shrink:0}
 .dock-btn svg{width:18px;height:18px;stroke:currentColor;stroke-width:2;fill:none;stroke-linecap:round;stroke-linejoin:round;transition:stroke .2s}
 .dock-btn:hover{background:rgba(var(--or-rgb),.12);color:var(--or);transform:scale(1.15) translateY(-2px)}
 .dock-btn:active{transform:scale(.88) translateY(0)}
@@ -648,7 +648,7 @@ h1,h2,h3,h4{font-family:var(--font-head);line-height:1.2;letter-spacing:-.3px}
 .bento-empty-icon{font-size:22px;flex-shrink:0}
 .bento-empty-text{font-size:12px;color:var(--mu);flex:1;line-height:1.4}
 .bento-empty-cta{font-size:12px;font-weight:700;color:var(--or);white-space:nowrap;flex-shrink:0}
-@media(max-width:480px){.bento{gap:6px;padding:8px 12px 14px}.bento-sv{font-size:13px}.bento-si{font-size:15px}.bento-act{padding:10px 4px}}
+@media(max-width:480px){.bento{grid-template-columns:repeat(2,1fr);gap:6px;padding:8px 12px 14px}.bento-sv{font-size:13px}.bento-si{font-size:15px}.bento-act{padding:10px 4px}}
 
 /* ── TIJDVAK STRIP ───────────────────────────── */
 .hm-tvk{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--bo);border:1px solid var(--bo);border-radius:18px;overflow:hidden;margin-bottom:28px}
@@ -3393,7 +3393,7 @@ html.dark .hsd-pill{background:var(--bg2);border-color:var(--bo2)}
 .lb-scoring-info.open .lb-scoring-toggle{transform:rotate(180deg);display:inline-block}
 .lb-tiers-explain{display:grid;grid-template-columns:1fr 1fr;gap:4px 12px;margin-top:8px;font-size:12px}
 .auth-value-prop{text-align:center;font-size:13px;color:var(--mu);margin:-8px 0 4px;line-height:1.5}
-@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}.flicker-canvas{display:none}}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}.flicker-canvas{display:none}.sb-gl,.wlc-orb,.lp-orb,.qm-orb{animation:none!important;opacity:.15}}
 /* ── SKELETON LOADER ─────────────────────────── */
 .skel{background:linear-gradient(90deg,var(--bo) 25%,var(--bg2) 50%,var(--bo) 75%);background-size:200% 100%;animation:skelShimmer 1.2s ease-in-out infinite;border-radius:8px}
 @keyframes skelShimmer{0%{background-position:200% 0}100%{background-position:-200% 0}}
@@ -3814,9 +3814,19 @@ html.dark .hsd-pill{background:var(--bg2);border-color:var(--bo2)}
 .acc-toggle input:checked+.acc-slider::before{transform:translateX(20px)}
 .dyslexie,.dyslexie *{font-family:'OpenDyslexic',sans-serif!important}
 .hoog-contrast{--s:#fff!important;--bg:#f5f5f5!important;--bg2:#e8e8e8!important;--dk:#000!important;--tx:#000!important;--mu:#444!important;--bo:#555!important}
+#sw-update-banner{position:fixed;top:0;left:0;right:0;z-index:99999;display:none;align-items:center;justify-content:center;gap:10px;padding:10px 16px;background:linear-gradient(135deg,#f97316,#f59e0b);color:#fff;font-size:13px;font-weight:600;box-shadow:0 2px 12px rgba(0,0,0,.25)}
+#sw-update-banner.show{display:flex}
+#sw-update-banner button{padding:5px 14px;border-radius:8px;border:none;cursor:pointer;font-size:12px;font-weight:700}
+#sw-update-banner .sw-banner-reload{background:#fff;color:#f97316}
+#sw-update-banner .sw-banner-dismiss{background:rgba(255,255,255,.2);color:#fff}
 </style>
 </head>
 <body>
+<div id="sw-update-banner" role="status" aria-live="polite">
+  <span>🚀 Nieuwe versie beschikbaar</span>
+  <button class="sw-banner-reload" onclick="location.reload()">Herlaad</button>
+  <button class="sw-banner-dismiss" onclick="this.closest('#sw-update-banner').classList.remove('show')" aria-label="Melding sluiten">×</button>
+</div>
 <a href="#main-content" class="skip-link">Ga naar inhoud</a>
 
 <!-- CONFIRM DIALOG -->
@@ -10188,12 +10198,13 @@ function openVak(id,_noHash){
   });
   initMf();
   updateLpEntryCard();
-  // Examen entry button — toon alleen als er een echt examen beschikbaar is voor dit vak
+  // Examen entry button — toon alleen als er een echt examen beschikbaar is voor dit vak + niveau
   const _exBtn = document.getElementById('exam-entry-btn');
   const _exSub = document.getElementById('exam-entry-sub');
-  const _exLijst = typeof EXAMENS !== 'undefined' && EXAMENS[ST.vak.id];
+  const _allEx = typeof EXAMENS !== 'undefined' && EXAMENS[ST.vak.id];
+  const _exLijst = _allEx ? _allEx.filter(e=>!e.niveau||e.niveau===APP_LEVEL) : [];
   if(_exBtn){
-    if(_exLijst && _exLijst.length > 0){
+    if(_exLijst.length > 0){
       const _ex0 = _exLijst[0];
       _exBtn.style.display = '';
       if(_exSub) _exSub.textContent = `${_ex0.jaar} Tijdvak ${_ex0.tijdvak} · ${_ex0.vragen.length} vragen · ${_ex0.duur_minuten} min`;
@@ -12903,9 +12914,10 @@ function simExit(){
 let EX = {}; // examen state
 
 function startExamen(){
-  // Zoek examen voor huidig vak
+  // Zoek examen voor huidig vak + niveau
   const vakId = (ST.vak && ST.vak.id) || ST.vakId || '';
-  const examenLijst = typeof EXAMENS !== 'undefined' && EXAMENS[vakId];
+  const allEx = typeof EXAMENS !== 'undefined' && EXAMENS[vakId];
+  const examenLijst = allEx ? allEx.filter(e=>!e.niveau||e.niveau===APP_LEVEL) : [];
   if(!examenLijst || examenLijst.length === 0){
     showToast('Nog geen echt examen beschikbaar voor dit vak');
     return;
@@ -14262,6 +14274,21 @@ function getVakBestPct(vakId){
   });
   return {pct:count>0?totalPct/count:0,hasData:hasAny};
 }
+function trapFocus(el,onEscape){
+  const sel='button:not([disabled]),a[href],input,select,textarea,[tabindex]:not([tabindex="-1"])';
+  const nodes=[...el.querySelectorAll(sel)];
+  if(!nodes.length)return()=>{};
+  nodes[0].focus();
+  function onKey(e){
+    if(e.key==='Tab'){
+      if(e.shiftKey){if(document.activeElement===nodes[0]){e.preventDefault();nodes[nodes.length-1].focus();}}
+      else{if(document.activeElement===nodes[nodes.length-1]){e.preventDefault();nodes[0].focus();}}
+    }
+    if(e.key==='Escape'&&onEscape)onEscape();
+  }
+  el.addEventListener('keydown',onKey);
+  return()=>el.removeEventListener('keydown',onKey);
+}
 function showConfirm(icon,title,msg,okLabel,onOk){
   const ov=document.getElementById('confirm-overlay');
   document.getElementById('confirm-icon').textContent=icon;
@@ -14270,8 +14297,11 @@ function showConfirm(icon,title,msg,okLabel,onOk){
   const okBtn=document.getElementById('confirm-ok');
   const cancelBtn=document.getElementById('confirm-cancel');
   okBtn.textContent=okLabel||'Verwijderen';
+  const prev=document.activeElement;
   ov.classList.add('show');
-  const close=()=>ov.classList.remove('show');
+  let releaseTrap;
+  const close=()=>{ov.classList.remove('show');if(releaseTrap)releaseTrap();prev?.focus();};
+  releaseTrap=trapFocus(ov,close);
   okBtn.onclick=()=>{close();onOk();};
   cancelBtn.onclick=close;
   ov.onclick=(e)=>{if(e.target===ov)close();};
@@ -14938,10 +14968,11 @@ function renderDailyChallenge(){
   if(box)box.innerHTML='';
   _dcCache=getDailyChallenge();
 }
+let _dcTrapRelease=null;
 function showDailyChallengePopup(){
   const dc=getDailyChallenge();
-  if(!dc||dc.done)return; // al gedaan vandaag
-  if(sessionStorage.getItem('dc_dismissed'))return; // al weggeklikt deze sessie
+  if(!dc||dc.done)return;
+  if(sessionStorage.getItem('dc_dismissed'))return;
   const popup=document.getElementById('dc-popup');
   if(!popup)return;
   const titleEl=document.getElementById('dc-popup-title');
@@ -14949,11 +14980,15 @@ function showDailyChallengePopup(){
   if(titleEl)titleEl.textContent=dc.domeinNaam;
   if(subEl)subEl.textContent=dc.vakNaam+' · Snelle Quiz · 15 sec per vraag';
   _dcCache=dc;
-  setTimeout(()=>popup.classList.add('show'),500);
+  setTimeout(()=>{
+    popup.classList.add('show');
+    _dcTrapRelease=trapFocus(popup,()=>closeDcPopup(false));
+  },500);
 }
 function closeDcPopup(start){
   const popup=document.getElementById('dc-popup');
   if(popup)popup.classList.remove('show');
+  if(_dcTrapRelease){_dcTrapRelease();_dcTrapRelease=null;}
   sessionStorage.setItem('dc_dismissed','1');
   if(start)setTimeout(startDailyChallenge,300);
 }
@@ -17140,7 +17175,10 @@ if('serviceWorker' in navigator){
       // Init notifications after SW ready
       navigator.serviceWorker.ready.then(()=>initNotifications());
     }).catch(()=>{});
-    navigator.serviceWorker.addEventListener('controllerchange',()=>window.location.reload());
+    navigator.serviceWorker.addEventListener('controllerchange',()=>{
+      const b=document.getElementById('sw-update-banner');
+      if(b)b.classList.add('show');
+    });
   });
 }
 </script>
@@ -17340,7 +17378,7 @@ if('serviceWorker' in navigator){
 </div>
 
 <!-- ── PDF Viewer Modal ──────────────────────────────────────── -->
-<div id="pdf-viewer-modal">
+<div id="pdf-viewer-modal" role="dialog" aria-modal="true" aria-label="Examen PDF bekijken" aria-describedby="pdf-modal-title">
   <div class="pdf-modal-bar">
     <button class="pdf-modal-close" onclick="closePdfViewer()">← Terug</button>
     <span class="pdf-modal-title" id="pdf-modal-title">PDF</span>
