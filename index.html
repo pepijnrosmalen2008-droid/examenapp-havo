@@ -3942,6 +3942,9 @@ html.dark .hsd-pill{background:var(--bg2);border-color:var(--bo2)}
 #sw-update-banner button{padding:5px 14px;border-radius:8px;border:none;cursor:pointer;font-size:12px;font-weight:700}
 #sw-update-banner .sw-banner-reload{background:#fff;color:#f97316}
 #sw-update-banner .sw-banner-dismiss{background:rgba(255,255,255,.2);color:#fff}
+#offline-banner{position:fixed;top:0;left:0;right:0;z-index:99998;display:none;align-items:center;justify-content:center;gap:10px;padding:10px 16px;background:linear-gradient(135deg,#374151,#1f2937);color:#fff;font-size:13px;font-weight:600;box-shadow:0 2px 12px rgba(0,0,0,.3)}
+#offline-banner.show{display:flex}
+#offline-banner .sw-banner-dismiss{background:rgba(255,255,255,.15);color:#fff;padding:4px 10px;border-radius:8px;border:none;cursor:pointer;font-size:13px;font-weight:700}
 </style>
 </head>
 <body>
@@ -3949,6 +3952,10 @@ html.dark .hsd-pill{background:var(--bg2);border-color:var(--bo2)}
   <span>🚀 Nieuwe versie beschikbaar</span>
   <button class="sw-banner-reload" onclick="location.reload()">Herlaad</button>
   <button class="sw-banner-dismiss" onclick="this.closest('#sw-update-banner').classList.remove('show')" aria-label="Melding sluiten">×</button>
+</div>
+<div id="offline-banner" role="status" aria-live="polite">
+  <span>📡 Geen internet — gecachede inhoud beschikbaar</span>
+  <button class="sw-banner-dismiss" onclick="this.parentElement.classList.remove('show')" aria-label="Melding sluiten">×</button>
 </div>
 <a href="#main-content" class="skip-link">Ga naar inhoud</a>
 
@@ -4209,6 +4216,8 @@ html.dark .hsd-pill{background:var(--bg2);border-color:var(--bo2)}
 
 <div class="w">
 
+  <!-- EXAM ALERT -->
+  <div id="hm-exam-alert"></div>
   <!-- STUDIEPLAN VANDAAG-WIDGET -->
   <div id="sp-home-widget-wrap"></div>
 
@@ -12004,7 +12013,10 @@ document.addEventListener('DOMContentLoaded',()=>{
   spInitPrefs();
   try{renderVandaagWidget();}catch(e){}
   try{renderDecayAlert();}catch(e){}
+  try{renderExamAlert();}catch(e){}
 });
+window.addEventListener('offline',()=>{document.getElementById('offline-banner')?.classList.add('show');});
+window.addEventListener('online',()=>{document.getElementById('offline-banner')?.classList.remove('show');});
 
 // ═══════ HAPTIC ═══════
 function haptic(pat){try{if(navigator.vibrate)navigator.vibrate(pat);}catch(e){}}
@@ -12082,7 +12094,7 @@ function toonRes(){
   try{const _pbRes=savePB(ST.vak.id,ST.domein.id,pct);if(_pbRes.isNew){window._newPB=true;window._oldPB=_pbRes.prev?_pbRes.prev.score:null;}}catch(e){}
   // Rebuild grid and streak to update UI
   try{const g=document.getElementById('vakgrid');if(g){g.innerHTML='';buildGrid();}
-  renderStreak();renderFavHome();renderXPHome();renderDailyChallenge();renderDailyGoal();renderLiveCount();renderHomeStats();renderGreeting();try{renderComebackCard();}catch(e){}try{renderFeatDisc();}catch(e){}try{renderHmQuickChips();renderHmStatsStrip();renderDecayAlert();}catch(e){}try{renderVandaagWidget();}catch(e){}showDailyChallengePopup();}catch(e){}
+  renderStreak();renderFavHome();renderXPHome();renderDailyChallenge();renderDailyGoal();renderLiveCount();renderHomeStats();renderGreeting();try{renderComebackCard();}catch(e){}try{renderFeatDisc();}catch(e){}try{renderHmQuickChips();renderHmStatsStrip();renderDecayAlert();renderExamAlert();}catch(e){}try{renderVandaagWidget();}catch(e){}showDailyChallengePopup();}catch(e){}
   try{recordDailyGoal();}catch(e){};
   const isPerfect=pct===1&&ST.mode==='snel'&&tot>=3;
   if(isPerfect&&earnAch('perfect'))setTimeout(()=>showAch('🌟','Perfecte score! Geen enkel fout!',90),800);
@@ -12400,6 +12412,38 @@ function renderHmStatsStrip(){
     totalQ>0?`<span class="hm-stat-pill" onclick="openProfiel()" title="Totaal quizzen">⚡ ${totalQ} quiz${totalQ===1?'':'zen'}</span>`:'',
   ].filter(Boolean);
   wrap.innerHTML=pills.length?`<div class="hm-stats-strip">${pills.join('')}</div>`:'';
+}
+function renderExamAlert(){
+  const el=document.getElementById('hm-exam-alert');
+  if(!el)return;
+  const mijn=getMijnVakken();
+  const today=new Date();today.setHours(0,0,0,0);
+  const imminent=EXAM_SCHEDULE.filter(e=>{
+    if(!e.vakId||(mijn.length>0&&!mijn.includes(e.vakId)))return false;
+    const d=new Date(e.datum);d.setHours(0,0,0,0);
+    const days=Math.round((d-today)/864e5);
+    return days>=0&&days<=2;
+  }).sort((a,b)=>new Date(a.datum)-new Date(b.datum));
+  if(!imminent.length){el.innerHTML='';return;}
+  const MN=['jan','feb','mrt','apr','mei','jun','jul','aug','sep','okt','nov','dec'];
+  const items=imminent.map(e=>{
+    const d=new Date(e.datum);d.setHours(0,0,0,0);
+    const days=Math.round((d-today)/864e5);
+    const when=days===0?'Vandaag!':days===1?'Morgen':'Overmorgen';
+    const urgColor=days===0?'#ef4444':days===1?'#f97316':'#facc15';
+    return`<div style="display:flex;align-items:center;gap:10px;padding:9px 14px;background:${urgColor}14;border-radius:11px;border:1px solid ${urgColor}35">
+      <span style="font-size:20px">🎓</span>
+      <div style="flex:1;min-width:0">
+        <div style="font-size:13px;font-weight:700;color:var(--dk);white-space:nowrap;overflow:hidden;text-overflow:ellipsis">${e.vak}</div>
+        <div style="font-size:11px;color:var(--mu)">${d.getDate()} ${MN[d.getMonth()]} · ${e.tijd}</div>
+      </div>
+      <span style="font-size:12px;font-weight:800;color:${urgColor};white-space:nowrap;flex-shrink:0">${when}</span>
+    </div>`;
+  }).join('');
+  el.innerHTML=`<div style="margin-bottom:14px;display:flex;flex-direction:column;gap:6px">
+    <div style="font-size:12px;font-weight:700;color:var(--mu);text-transform:uppercase;letter-spacing:.08em;margin-bottom:2px">⏰ Aankomend examen</div>
+    ${items}
+  </div>`;
 }
 function renderDecayAlert(){
   const wrap=document.getElementById('hm-decay-alert');
@@ -14741,6 +14785,20 @@ function saveProgress(vakId,domeinId,mode,score,total){
   try{setDecayNow(vakId,domeinId);}catch(e){}
   // Studieplan: check of dit een geplande taak afrondt
   try{spCheckAfterQuiz(vakId,domeinId,mode,score,total);}catch(e){}
+  // Auto-tick vandaag-taken als domein mastery-drempel (70%) gepasseerd wordt
+  if(total>=5&&score>0){
+    try{
+      const newPct=score/total;const oldPct=prevBest/(total||1);
+      if(newPct>=0.7&&oldPct<0.7){
+        const todayStr=new Date().toISOString().slice(0,10);
+        const plan=spGetPlan();
+        if(plan)(plan.tasks||[]).filter(t=>t.dateStr===todayStr&&t.vakId===vakId&&t.domId===domeinId).forEach(t=>{
+          const k=`${todayStr}_${t.vakId}_${t.domId}_${t.actKey}`;
+          if(!spIsDone(k))spMarkDone(k);
+        });
+      }
+    }catch(e){}
+  }
   return{isNewRecord,prevBest,newBest:p[key].best,total};
 }
 // ═══════ KNOWLEDGE DECAY ═══════
