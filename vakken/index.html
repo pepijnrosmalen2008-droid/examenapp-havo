@@ -4,30 +4,95 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Alle examenvakken HAVO en VWO 2026 — Slagio</title>
-  <meta name="description" content="Overzicht van alle examenvakken HAVO en VWO 2026. Oefen gratis met Slagio voor Nederlands, Wiskunde, Biologie, Scheikunde, Engels en meer.">
+  <meta name="description" content="Overzicht van alle examenvakken HAVO en VWO 2026. Oefen gratis met oefenvragen, echte CE-examens en flashcards. Geen account nodig.">
+  <meta property="og:title" content="Alle examenvakken HAVO & VWO 2026 — Slagio">
+  <meta property="og:description" content="30 vakken · 1.800+ oefenvragen · Echte CE-examens 2019–2025 · Gratis · Geen account">
+  <meta property="og:image" content="https://slagio.nl/icon-512.png">
+  <meta property="og:url" content="https://slagio.nl/vakken/">
+  <meta property="og:type" content="website">
   <link rel="canonical" href="https://slagio.nl/vakken/">
   <link rel="icon" href="/icon-192.png">
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[
+    {"@type":"ListItem","position":1,"name":"Slagio","item":"https://slagio.nl"},
+    {"@type":"ListItem","position":2,"name":"Alle vakken","item":"https://slagio.nl/vakken/"}
+  ]}
+  </script>
   <style>
-    :root{--bg:#0f1724;--bg-card:#1a2332;--text:#e4e8ef;--text-muted:#8896a8;--accent:#f97316;--border:#2a3444}
+    :root{--bg:#0f1724;--bg-card:#1a2332;--text:#e4e8ef;--text-muted:#8896a8;--accent:#f97316;--border:#2a3444;--red:#ef4444;--orange:#f97316;--green:#22c55e}
     *{margin:0;padding:0;box-sizing:border-box}
     body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;background:var(--bg);color:var(--text);line-height:1.6}
     .container{max-width:900px;margin:0 auto;padding:2rem 1.5rem}
-    .header{text-align:center;margin-bottom:3rem}
+
+    /* Header */
+    .header{text-align:center;margin-bottom:2rem}
     .header img{width:48px;height:48px;margin-bottom:1rem;border-radius:12px}
     h1{font-size:2rem;margin-bottom:.5rem}
     h1 span{color:var(--accent)}
-    .header p{color:var(--text-muted);font-size:1.1rem}
-    h2{font-size:1.3rem;margin:2rem 0 1rem;padding-bottom:.5rem;border-bottom:1px solid var(--border)}
+    .header-sub{color:var(--text-muted);font-size:1.05rem}
+
+    /* Stats bar */
+    .stats-bar{display:flex;gap:.75rem;justify-content:center;flex-wrap:wrap;margin-bottom:2rem}
+    .stat-chip{background:var(--bg-card);border:1px solid var(--border);border-radius:999px;padding:.4rem 1rem;font-size:.85rem;color:var(--text-muted)}
+    .stat-chip strong{color:var(--text)}
+
+    /* Urgency banner */
+    .urgency-banner{
+      background:linear-gradient(135deg,#7c3aed22,#f9731622);
+      border:1px solid #f9731644;
+      border-radius:14px;
+      padding:1rem 1.25rem;
+      text-align:center;
+      margin-bottom:2rem;
+      font-size:.95rem;
+    }
+    .urgency-banner strong{color:var(--accent)}
+
+    /* Section */
+    h2{font-size:1.2rem;margin:2rem 0 1rem;padding-bottom:.5rem;border-bottom:1px solid var(--border);display:flex;align-items:center;gap:.5rem}
+    .lvl-badge{font-size:.7rem;background:var(--accent);color:#fff;padding:.2rem .6rem;border-radius:999px;font-weight:700}
+
+    /* Grid */
     .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:.75rem;margin-bottom:2rem}
-    .vak-card{background:var(--bg-card);border:1px solid var(--border);border-radius:10px;padding:1rem;text-decoration:none;color:var(--text);transition:border-color .2s,transform .2s;display:block}
+    .vak-card{
+      background:var(--bg-card);
+      border:1px solid var(--border);
+      border-radius:12px;
+      padding:1rem;
+      text-decoration:none;
+      color:var(--text);
+      transition:border-color .2s,transform .2s;
+      display:block;
+      position:relative;
+    }
     .vak-card:hover{border-color:var(--accent);transform:translateY(-2px)}
-    .vak-card-naam{font-weight:700;margin-bottom:.25rem}
-    .vak-card-info{font-size:.85rem;color:var(--text-muted)}
+    .vak-card-naam{font-weight:700;margin-bottom:.25rem;font-size:.95rem}
+    .vak-card-info{font-size:.8rem;color:var(--text-muted)}
+
+    /* Days badge */
+    .days-badge{
+      position:absolute;
+      top:.6rem;
+      right:.6rem;
+      font-size:.65rem;
+      font-weight:700;
+      padding:.15rem .45rem;
+      border-radius:6px;
+      line-height:1.4;
+    }
+    .days-badge.urgent{background:#ef444420;color:var(--red);border:1px solid #ef444440}
+    .days-badge.soon{background:#f9731620;color:var(--orange);border:1px solid #f9731640}
+    .days-badge.ok{background:#22c55e20;color:var(--green);border:1px solid #22c55e40}
+
+    /* CTA */
     .cta-wrap{text-align:center;margin:2rem 0}
     .cta{display:inline-block;background:var(--accent);color:#fff;padding:.9rem 2rem;border-radius:12px;text-decoration:none;font-weight:700;font-size:1rem;transition:opacity .2s}
     .cta:hover{opacity:.85}
+
+    /* Footer */
     .footer{text-align:center;color:var(--text-muted);font-size:.85rem;margin-top:3rem;padding-top:2rem;border-top:1px solid var(--border)}
     .footer a{color:var(--accent);text-decoration:none}
+
     @media(max-width:500px){.grid{grid-template-columns:1fr 1fr}}
   </style>
 </head>
@@ -36,55 +101,101 @@
   <div class="header">
     <a href="https://slagio.nl"><img src="/icon-192.png" alt="Slagio logo"></a>
     <h1>Alle examenvakken <span>2026</span></h1>
-    <p>HAVO en VWO — gratis oefenen met Slagio</p>
+    <p class="header-sub">HAVO en VWO — gratis oefenen met Slagio</p>
   </div>
 
-  <h2>HAVO</h2>
-  <div class="grid">
-    <a class="vak-card" href="havo-nederlands.html"><div class="vak-card-naam">Nederlands</div><div class="vak-card-info">8 mei 2026 · 6 domeinen</div></a>
-    <a class="vak-card" href="havo-wiskunde-a.html"><div class="vak-card-naam">Wiskunde A</div><div class="vak-card-info">19 mei 2026 · 4 domeinen</div></a>
-    <a class="vak-card" href="havo-wiskunde-b.html"><div class="vak-card-naam">Wiskunde B</div><div class="vak-card-info">19 mei 2026 · 4 domeinen</div></a>
-    <a class="vak-card" href="havo-biologie.html"><div class="vak-card-naam">Biologie</div><div class="vak-card-info">20 mei 2026 · 4 domeinen</div></a>
-    <a class="vak-card" href="havo-scheikunde.html"><div class="vak-card-naam">Scheikunde</div><div class="vak-card-info">12 mei 2026 · 5 domeinen</div></a>
-    <a class="vak-card" href="havo-natuurkunde.html"><div class="vak-card-naam">Natuurkunde</div><div class="vak-card-info">26 mei 2026 · 4 domeinen</div></a>
-    <a class="vak-card" href="havo-engels.html"><div class="vak-card-naam">Engels</div><div class="vak-card-info">18 mei 2026 · 6 domeinen</div></a>
-    <a class="vak-card" href="havo-economie.html"><div class="vak-card-naam">Economie</div><div class="vak-card-info">11 mei 2026 · 4 domeinen</div></a>
-    <a class="vak-card" href="havo-bedrijfseconomie.html"><div class="vak-card-naam">Bedrijfseconomie</div><div class="vak-card-info">22 mei 2026 · 5 domeinen</div></a>
-    <a class="vak-card" href="havo-geschiedenis.html"><div class="vak-card-naam">Geschiedenis</div><div class="vak-card-info">12 mei 2026 · 4 domeinen</div></a>
-    <a class="vak-card" href="havo-aardrijkskunde.html"><div class="vak-card-naam">Aardrijkskunde</div><div class="vak-card-info">21 mei 2026 · 4 domeinen</div></a>
-    <a class="vak-card" href="havo-maatschappijwetenschappen.html"><div class="vak-card-naam">Maatschappijwetenschappen</div><div class="vak-card-info">18 mei 2026 · 4 domeinen</div></a>
-    <a class="vak-card" href="havo-duits.html"><div class="vak-card-naam">Duits</div><div class="vak-card-info">20 mei 2026 · 4 domeinen</div></a>
-    <a class="vak-card" href="havo-frans.html"><div class="vak-card-naam">Frans</div><div class="vak-card-info">13 mei 2026 · 4 domeinen</div></a>
+  <div class="stats-bar">
+    <div class="stat-chip"><strong>1.800+</strong> oefenvragen</div>
+    <div class="stat-chip"><strong>30</strong> vakken</div>
+    <div class="stat-chip"><strong>CE 2019–2025</strong> online</div>
+    <div class="stat-chip"><strong>100% gratis</strong> · geen account</div>
   </div>
 
-  <h2>VWO</h2>
+  <div class="urgency-banner" id="urgency-banner">
+    ⏰ <strong id="banner-text">Eerste examen over … dagen</strong> — begin vandaag met oefenen
+  </div>
+
+  <h2><span class="lvl-badge">HAVO</span> Examenvakken</h2>
   <div class="grid">
-    <a class="vak-card" href="vwo-nederlands.html"><div class="vak-card-naam">Nederlands</div><div class="vak-card-info">8 mei 2026 · 5 domeinen</div></a>
-    <a class="vak-card" href="vwo-wiskunde-a.html"><div class="vak-card-naam">Wiskunde A</div><div class="vak-card-info">19 mei 2026 · 3 domeinen</div></a>
-    <a class="vak-card" href="vwo-wiskunde-b.html"><div class="vak-card-naam">Wiskunde B</div><div class="vak-card-info">15 mei 2026 · 3 domeinen</div></a>
-    <a class="vak-card" href="vwo-biologie.html"><div class="vak-card-naam">Biologie</div><div class="vak-card-info">20 mei 2026 · 4 domeinen</div></a>
-    <a class="vak-card" href="vwo-scheikunde.html"><div class="vak-card-naam">Scheikunde</div><div class="vak-card-info">21 mei 2026 · 4 domeinen</div></a>
-    <a class="vak-card" href="vwo-natuurkunde.html"><div class="vak-card-naam">Natuurkunde</div><div class="vak-card-info">22 mei 2026 · 5 domeinen</div></a>
-    <a class="vak-card" href="vwo-engels.html"><div class="vak-card-naam">Engels</div><div class="vak-card-info">14 mei 2026 · 5 domeinen</div></a>
-    <a class="vak-card" href="vwo-economie.html"><div class="vak-card-naam">Economie</div><div class="vak-card-info">13 mei 2026 · 2 domeinen</div></a>
-    <a class="vak-card" href="vwo-bedrijfseconomie.html"><div class="vak-card-naam">Bedrijfseconomie</div><div class="vak-card-info">22 mei 2026 · 5 domeinen</div></a>
-    <a class="vak-card" href="vwo-geschiedenis.html"><div class="vak-card-naam">Geschiedenis</div><div class="vak-card-info">11 mei 2026 · 2 domeinen</div></a>
-    <a class="vak-card" href="vwo-aardrijkskunde.html"><div class="vak-card-naam">Aardrijkskunde</div><div class="vak-card-info">12 mei 2026 · 2 domeinen</div></a>
-    <a class="vak-card" href="vwo-maatschappijwetenschappen.html"><div class="vak-card-naam">Maatschappijwetenschappen</div><div class="vak-card-info">26 mei 2026 · 1 domein</div></a>
-    <a class="vak-card" href="vwo-duits.html"><div class="vak-card-naam">Duits</div><div class="vak-card-info">20 mei 2026 · 5 domeinen</div></a>
-    <a class="vak-card" href="vwo-frans.html"><div class="vak-card-naam">Frans</div><div class="vak-card-info">13 mei 2026 · 5 domeinen</div></a>
-    <a class="vak-card" href="vwo-informatica.html"><div class="vak-card-naam">Informatica</div><div class="vak-card-info">18 mei 2026 · 4 domeinen</div></a>
-    <a class="vak-card" href="vwo-latijn.html"><div class="vak-card-naam">Latijn</div><div class="vak-card-info">27 mei 2026 · 3 domeinen</div></a>
-    <a class="vak-card" href="vwo-grieks.html"><div class="vak-card-naam">Grieks</div><div class="vak-card-info">8 mei 2026 · 3 domeinen</div></a>
+    <a class="vak-card" href="havo-nederlands.html" data-date="2026-05-08"><div class="vak-card-naam">Nederlands</div><div class="vak-card-info">8 mei 2026 · 6 domeinen</div><span class="days-badge"></span></a>
+    <a class="vak-card" href="havo-wiskunde-a.html" data-date="2026-05-19"><div class="vak-card-naam">Wiskunde A</div><div class="vak-card-info">19 mei 2026 · 4 domeinen</div><span class="days-badge"></span></a>
+    <a class="vak-card" href="havo-wiskunde-b.html" data-date="2026-05-19"><div class="vak-card-naam">Wiskunde B</div><div class="vak-card-info">19 mei 2026 · 4 domeinen</div><span class="days-badge"></span></a>
+    <a class="vak-card" href="havo-biologie.html" data-date="2026-05-20"><div class="vak-card-naam">Biologie</div><div class="vak-card-info">20 mei 2026 · 4 domeinen</div><span class="days-badge"></span></a>
+    <a class="vak-card" href="havo-scheikunde.html" data-date="2026-05-12"><div class="vak-card-naam">Scheikunde</div><div class="vak-card-info">12 mei 2026 · 5 domeinen</div><span class="days-badge"></span></a>
+    <a class="vak-card" href="havo-natuurkunde.html" data-date="2026-05-26"><div class="vak-card-naam">Natuurkunde</div><div class="vak-card-info">26 mei 2026 · 4 domeinen</div><span class="days-badge"></span></a>
+    <a class="vak-card" href="havo-engels.html" data-date="2026-05-18"><div class="vak-card-naam">Engels</div><div class="vak-card-info">18 mei 2026 · 6 domeinen</div><span class="days-badge"></span></a>
+    <a class="vak-card" href="havo-economie.html" data-date="2026-05-11"><div class="vak-card-naam">Economie</div><div class="vak-card-info">11 mei 2026 · 4 domeinen</div><span class="days-badge"></span></a>
+    <a class="vak-card" href="havo-bedrijfseconomie.html" data-date="2026-05-22"><div class="vak-card-naam">Bedrijfseconomie</div><div class="vak-card-info">22 mei 2026 · 5 domeinen</div><span class="days-badge"></span></a>
+    <a class="vak-card" href="havo-geschiedenis.html" data-date="2026-05-12"><div class="vak-card-naam">Geschiedenis</div><div class="vak-card-info">12 mei 2026 · 4 domeinen</div><span class="days-badge"></span></a>
+    <a class="vak-card" href="havo-aardrijkskunde.html" data-date="2026-05-21"><div class="vak-card-naam">Aardrijkskunde</div><div class="vak-card-info">21 mei 2026 · 4 domeinen</div><span class="days-badge"></span></a>
+    <a class="vak-card" href="havo-maatschappijwetenschappen.html" data-date="2026-05-18"><div class="vak-card-naam">Maatschappijwetenschappen</div><div class="vak-card-info">18 mei 2026 · 4 domeinen</div><span class="days-badge"></span></a>
+    <a class="vak-card" href="havo-duits.html" data-date="2026-05-20"><div class="vak-card-naam">Duits</div><div class="vak-card-info">20 mei 2026 · 4 domeinen</div><span class="days-badge"></span></a>
+    <a class="vak-card" href="havo-frans.html" data-date="2026-05-13"><div class="vak-card-naam">Frans</div><div class="vak-card-info">13 mei 2026 · 4 domeinen</div><span class="days-badge"></span></a>
+  </div>
+
+  <h2><span class="lvl-badge" style="background:#6366f1">VWO</span> Examenvakken</h2>
+  <div class="grid">
+    <a class="vak-card" href="vwo-nederlands.html" data-date="2026-05-08"><div class="vak-card-naam">Nederlands</div><div class="vak-card-info">8 mei 2026 · 5 domeinen</div><span class="days-badge"></span></a>
+    <a class="vak-card" href="vwo-wiskunde-a.html" data-date="2026-05-19"><div class="vak-card-naam">Wiskunde A</div><div class="vak-card-info">19 mei 2026 · 3 domeinen</div><span class="days-badge"></span></a>
+    <a class="vak-card" href="vwo-wiskunde-b.html" data-date="2026-05-15"><div class="vak-card-naam">Wiskunde B</div><div class="vak-card-info">15 mei 2026 · 3 domeinen</div><span class="days-badge"></span></a>
+    <a class="vak-card" href="vwo-biologie.html" data-date="2026-05-20"><div class="vak-card-naam">Biologie</div><div class="vak-card-info">20 mei 2026 · 4 domeinen</div><span class="days-badge"></span></a>
+    <a class="vak-card" href="vwo-scheikunde.html" data-date="2026-05-21"><div class="vak-card-naam">Scheikunde</div><div class="vak-card-info">21 mei 2026 · 4 domeinen</div><span class="days-badge"></span></a>
+    <a class="vak-card" href="vwo-natuurkunde.html" data-date="2026-05-22"><div class="vak-card-naam">Natuurkunde</div><div class="vak-card-info">22 mei 2026 · 5 domeinen</div><span class="days-badge"></span></a>
+    <a class="vak-card" href="vwo-engels.html" data-date="2026-05-14"><div class="vak-card-naam">Engels</div><div class="vak-card-info">14 mei 2026 · 5 domeinen</div><span class="days-badge"></span></a>
+    <a class="vak-card" href="vwo-economie.html" data-date="2026-05-13"><div class="vak-card-naam">Economie</div><div class="vak-card-info">13 mei 2026 · 2 domeinen</div><span class="days-badge"></span></a>
+    <a class="vak-card" href="vwo-bedrijfseconomie.html" data-date="2026-05-22"><div class="vak-card-naam">Bedrijfseconomie</div><div class="vak-card-info">22 mei 2026 · 5 domeinen</div><span class="days-badge"></span></a>
+    <a class="vak-card" href="vwo-geschiedenis.html" data-date="2026-05-11"><div class="vak-card-naam">Geschiedenis</div><div class="vak-card-info">11 mei 2026 · 2 domeinen</div><span class="days-badge"></span></a>
+    <a class="vak-card" href="vwo-aardrijkskunde.html" data-date="2026-05-12"><div class="vak-card-naam">Aardrijkskunde</div><div class="vak-card-info">12 mei 2026 · 2 domeinen</div><span class="days-badge"></span></a>
+    <a class="vak-card" href="vwo-maatschappijwetenschappen.html" data-date="2026-05-26"><div class="vak-card-naam">Maatschappijwetenschappen</div><div class="vak-card-info">26 mei 2026 · 1 domein</div><span class="days-badge"></span></a>
+    <a class="vak-card" href="vwo-duits.html" data-date="2026-05-20"><div class="vak-card-naam">Duits</div><div class="vak-card-info">20 mei 2026 · 5 domeinen</div><span class="days-badge"></span></a>
+    <a class="vak-card" href="vwo-frans.html" data-date="2026-05-13"><div class="vak-card-naam">Frans</div><div class="vak-card-info">13 mei 2026 · 5 domeinen</div><span class="days-badge"></span></a>
+    <a class="vak-card" href="vwo-informatica.html" data-date="2026-05-18"><div class="vak-card-naam">Informatica</div><div class="vak-card-info">18 mei 2026 · 4 domeinen</div><span class="days-badge"></span></a>
+    <a class="vak-card" href="vwo-latijn.html" data-date="2026-05-27"><div class="vak-card-naam">Latijn</div><div class="vak-card-info">27 mei 2026 · 3 domeinen</div><span class="days-badge"></span></a>
+    <a class="vak-card" href="vwo-grieks.html" data-date="2026-05-08"><div class="vak-card-naam">Grieks</div><div class="vak-card-info">8 mei 2026 · 3 domeinen</div><span class="days-badge"></span></a>
   </div>
 
   <div class="cta-wrap">
-    <a href="https://slagio.nl" class="cta">Ga naar Slagio →</a>
+    <a href="https://slagio.nl" class="cta">🎯 Start met oefenen op Slagio →</a>
   </div>
 
   <div class="footer">
-    <p>&copy; 2026 Slagio &middot; <a href="https://slagio.nl">slagio.nl</a> &middot; <a href="https://www.examenblad.nl">examenblad.nl</a></p>
+    <p>&copy; 2026 <a href="https://slagio.nl">Slagio</a> &middot; gratis examenvoorbereiding HAVO &amp; VWO &middot; <a href="https://www.examenblad.nl">examenblad.nl</a></p>
   </div>
 </div>
+
+<script>
+  function daysLeft(dateStr) {
+    const d = new Date(dateStr + 'T09:00:00+02:00');
+    return Math.max(0, Math.ceil((d - Date.now()) / 86400000));
+  }
+
+  // Fill all badges
+  document.querySelectorAll('.vak-card[data-date]').forEach(card => {
+    const badge = card.querySelector('.days-badge');
+    const n = daysLeft(card.dataset.date);
+    if (n === 0) {
+      badge.textContent = 'vandaag';
+      badge.className = 'days-badge urgent';
+    } else {
+      badge.textContent = n + 'd';
+      if (n <= 10) badge.className = 'days-badge urgent';
+      else if (n <= 20) badge.className = 'days-badge soon';
+      else badge.className = 'days-badge ok';
+    }
+  });
+
+  // Urgency banner: find nearest exam
+  const allDates = [...document.querySelectorAll('.vak-card[data-date]')]
+    .map(c => daysLeft(c.dataset.date));
+  const nearest = Math.min(...allDates);
+  const bannerText = document.getElementById('banner-text');
+  if (nearest <= 0) {
+    bannerText.textContent = 'Examens zijn begonnen! Succes! 🎓';
+  } else if (nearest === 1) {
+    bannerText.textContent = 'Eerste examen is morgen!';
+  } else {
+    bannerText.textContent = `Eerste examen over ${nearest} dagen`;
+  }
+</script>
 </body>
 </html>
