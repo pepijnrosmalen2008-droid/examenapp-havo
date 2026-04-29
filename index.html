@@ -9135,6 +9135,82 @@ async function cloudGet(col,def){
     return data[col]??def;
   }catch(e){return _safeLocalGet(col,def);}
 }
+// ── Cross-device sync bundle (packed into profiel.sync) ──────────────────
+// Bundelt alles wat niet via aparte Supabase-kolommen gaat
+let _syncBundleTimer=null;
+function buildSyncBundle(){
+  let sp_prefs={};try{sp_prefs=JSON.parse(localStorage.getItem(SP_PREF_KEY)||'null')||{};}catch(e){}
+  return {
+    ach:getAchieved(),
+    decay:getDecay(),
+    sp_done:spGetDone(),
+    sp_prefs:sp_prefs,
+    counters:{
+      fc:parseInt(localStorage.getItem('slagio_fc_sessions')||'0'),
+      race:parseInt(localStorage.getItem('slagio_race_wins')||'0'),
+      perfect:parseInt(localStorage.getItem('slagio_perfect_count')||'0'),
+      plan:parseInt(localStorage.getItem('slagio_plan_tasks')||'0')
+    },
+    cij_h:JSON.parse(localStorage.getItem('examenapp_cijfers_havo')||'{}'),
+    cij_v:JSON.parse(localStorage.getItem('examenapp_cijfers_vwo')||'{}')
+  };
+}
+function restoreSyncBundle(bundle){
+  if(!bundle||typeof bundle!=='object')return;
+  // Achievements: union (badge ooit gehaald = blijft gehaald)
+  if(bundle.ach){
+    const m={...getAchieved(),...bundle.ach};
+    localStorage.setItem(ACH_KEY,JSON.stringify(m));
+  }
+  // Decay: per domein de meest recente timestamp
+  if(bundle.decay){
+    const local=getDecay();const m={...local};
+    Object.keys(bundle.decay).forEach(k=>{if(!m[k]||bundle.decay[k]>m[k])m[k]=bundle.decay[k];});
+    localStorage.setItem(DECAY_KEY,JSON.stringify(m));
+  }
+  // Studieplan done: union
+  if(bundle.sp_done){
+    const m={...spGetDone(),...bundle.sp_done};
+    localStorage.setItem(SP_DONE_KEY,JSON.stringify(m));
+  }
+  // Studieplan prefs: remote wint (bewuste keuze van de gebruiker)
+  if(bundle.sp_prefs&&Object.keys(bundle.sp_prefs).length)
+    localStorage.setItem(SP_PREF_KEY,JSON.stringify(bundle.sp_prefs));
+  // Tellers: neem het hoogste getal
+  if(bundle.counters){
+    const c=bundle.counters;
+    ['fc','race','perfect','plan'].forEach((k,i)=>{
+      const lk=['slagio_fc_sessions','slagio_race_wins','slagio_perfect_count','slagio_plan_tasks'][i];
+      const v=c[k]||0;if(v>0)localStorage.setItem(lk,String(Math.max(v,parseInt(localStorage.getItem(lk)||'0'))));
+    });
+  }
+  // Cijfers: remote-waarden vullen lokale gaten aan (local wint bij conflict)
+  if(bundle.cij_h){
+    const m={...bundle.cij_h,...JSON.parse(localStorage.getItem('examenapp_cijfers_havo')||'{}')};
+    localStorage.setItem('examenapp_cijfers_havo',JSON.stringify(m));
+  }
+  if(bundle.cij_v){
+    const m={...bundle.cij_v,...JSON.parse(localStorage.getItem('examenapp_cijfers_vwo')||'{}')};
+    localStorage.setItem('examenapp_cijfers_vwo',JSON.stringify(m));
+  }
+}
+async function pushSyncBundle(){
+  if(!currentUser)return;
+  clearTimeout(_syncBundleTimer);
+  _syncBundleTimer=setTimeout(async()=>{
+    try{
+      const prof=JSON.parse(localStorage.getItem(PROF_KEY)||'{}');
+      prof.sync=buildSyncBundle();
+      localStorage.setItem(PROF_KEY,JSON.stringify(prof));
+      await SB.from('user_data').upsert(
+        {user_id:currentUser.id,profiel:prof,updated_at:new Date().toISOString()},
+        {onConflict:'user_id'}
+      );
+    }catch(e){console.warn('pushSyncBundle error:',e);}
+  },5000);
+}
+// ─────────────────────────────────────────────────────────────────────────
+
 function mergeProgress(cloudProg,localProg){
   const merged=Object.assign({},localProg);
   if(cloudProg&&typeof cloudProg==='object'){
@@ -9160,10 +9236,11 @@ async function syncFromCloud(){
       updateProfileNav();renderStreak();renderFavHome();renderXPHome();renderDailyChallenge();buildGrid();renderHomeStats();
       return;
     }
-    // Profiel & XP
+    // Profiel & XP + sync-bundle
     if(data.profiel){
       localStorage.setItem(PROF_KEY,JSON.stringify(data.profiel));
       if(data.profiel.xp)localStorage.setItem(XP_KEY,JSON.stringify({xp:data.profiel.xp}));
+      if(data.profiel.sync)restoreSyncBundle(data.profiel.sync);
     }
     // ── PROGRESS: NOOIT wissen — altijd mergen met lokale data ────────────
     // Zo gaat er nooit voortgang verloren, ook niet bij netwerkproblemen
@@ -9188,6 +9265,10 @@ async function syncFromCloud(){
     const favs=data[lvlCol('favs')];if(favs)localStorage.setItem('examenapp_'+lvlCol('favs'),JSON.stringify(favs.list||[]));
     const mijn=data[lvlCol('mijnvakken')];if(mijn)localStorage.setItem('examenapp_'+lvlCol('mijnvakken'),JSON.stringify(mijn.list||[]));
     updateProfileNav();renderStreak();renderFavHome();renderXPHome();renderDailyChallenge();buildGrid();renderHomeStats();
+    try{renderDecayAlert();}catch(e){}
+    try{renderVandaagWidget();}catch(e){}
+    try{if(document.getElementById('sc-cijfers')?.classList.contains('on'))buildCijferGrid();}catch(e){}
+    try{if(document.getElementById('sc-studieplan')?.classList.contains('on'))renderStudieplan();}catch(e){}
   }catch(e){
     console.warn('syncFromCloud error:',e);
   }
@@ -9918,6 +9999,7 @@ function saveCijfers(){
     }
   });
   cloudSet(lvlCol('cijfers'),saved);
+  try{pushSyncBundle();}catch(e){}
   buildGrid();
   const msg=document.getElementById('cijfer-saved-msg');
   msg.classList.add('show');
@@ -10085,6 +10167,7 @@ function doImportConfirm(app){
   const existing=getSavedCijfers();
   const merged={...existing,..._pendingImport};
   cloudSet(lvlCol('cijfers'),merged);
+  try{pushSyncBundle();}catch(e){}
   buildCijferGrid();
   buildGrid();
   result.innerHTML=`✓ <strong>${keys.length} vak${keys.length===1?'':'ken'}</strong> opgeslagen: ${keys.map(k=>getVK().find(v=>v.id===k)?.naam||k).join(', ')}`;
@@ -11770,6 +11853,7 @@ function earnAch(id){
   if(a[id])return false;
   a[id]=Date.now();
   localStorage.setItem(ACH_KEY,JSON.stringify(a));
+  try{pushSyncBundle();}catch(e){}
   return true;
 }
 function checkQuizCountAch(total){
@@ -12599,6 +12683,7 @@ function spMarkDone(key){
   }catch(e){}
   try{checkPlanAch();}catch(e){}
   try{checkPlanDayAch(key.slice(0,10));}catch(e){}
+  try{pushSyncBundle();}catch(e){}
 }
 
 function spStorePlan(tasks){
@@ -12712,7 +12797,7 @@ function spGetPrefs(){
   try{const p=JSON.parse(localStorage.getItem(SP_PREF_KEY)||'null');return p||{1:2,2:2,3:2,4:2,5:2,6:1};}
   catch(e){return{1:2,2:2,3:2,4:2,5:2,6:1};}
 }
-function spSavePrefs(p){try{localStorage.setItem(SP_PREF_KEY,JSON.stringify(p));}catch(e){}}
+function spSavePrefs(p){try{localStorage.setItem(SP_PREF_KEY,JSON.stringify(p));}catch(e){}try{pushSyncBundle();}catch(e){}}
 
 function spCyclePref(el){
   const prefs=spGetPrefs();
@@ -14815,6 +14900,7 @@ function setDecayNow(vakId,domeinId){
   const d=getDecay();
   d[`${vakId}_${domeinId}`]=Date.now();
   localStorage.setItem(DECAY_KEY,JSON.stringify(d));
+  try{pushSyncBundle();}catch(e){}
 }
 function getDecayStatus(vakId,domeinId){
   const d=getDecay();
