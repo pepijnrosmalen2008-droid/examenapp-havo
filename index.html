@@ -4262,6 +4262,61 @@ html.dark .hsd-pill{background:var(--bg2);border-color:var(--bo2)}
   .w{padding:0 14px!important}
   .sc>.w:first-child,.sc .w:first-of-type{padding-top:4px!important}
 
+  /* ── DETAIL SCREEN: compact native nav + grotere domein tap-targets ── */
+  #sc-detail .nav{position:sticky!important;top:0!important;z-index:100!important}
+  #sc-detail .nav-inner{height:50px!important;padding:0 14px!important}
+  #sc-detail .w[style*="padding-top"]{padding-top:14px!important}
+  #sc-detail .det-breadcrumb{display:none!important}
+  #sc-detail .sh h2{font-size:20px!important;margin-bottom:4px!important}
+  #sc-detail .sh p{font-size:13px!important}
+  #sc-detail .ce{padding:10px 12px!important;font-size:12px!important}
+  /* Domein-kaart: grotere tap-targets */
+  .dc2{border-radius:14px!important}
+  .dh{padding:14px 14px!important;gap:10px!important}
+  .dlet{width:34px!important;height:34px!important;font-size:14px!important;border-radius:9px!important}
+  .di h4{font-size:14px!important}
+  .di p{font-size:11.5px!important}
+  .dbtns{gap:5px!important;flex-wrap:nowrap!important}
+  .exb{padding:9px 10px!important;font-size:12px!important;border-radius:9px!important;min-height:38px!important}
+  .qb{padding:9px 14px!important;font-size:13px!important;border-radius:9px!important;min-height:38px!important}
+
+  /* ── FLASHCARD SCREEN: vult scherm, grote knoppen ── */
+  #sc-flash.on{
+    height:100svh!important;
+    display:flex!important;
+    flex-direction:column!important;
+    overflow:hidden!important;
+  }
+  #sc-flash .qtb{flex-shrink:0!important}
+  #sc-flash .qbody{
+    flex:1!important;
+    overflow-y:auto!important;
+    -webkit-overflow-scrolling:touch!important;
+    min-height:0!important;
+    display:flex!important;
+    flex-direction:column!important;
+  }
+  .fc-card{
+    height:220px!important;
+    flex-shrink:0!important;
+  }
+  .fc-front{font-size:17px!important;line-height:1.55!important}
+  .fc-back{font-size:14px!important;line-height:1.6!important}
+  /* Grote, app-waardige rating knoppen */
+  .fc-btns{
+    grid-template-columns:repeat(2,1fr)!important;
+    gap:8px!important;
+    margin-top:10px!important;
+  }
+  .fc-btn{
+    padding:14px 8px!important;
+    border-radius:14px!important;
+    min-height:56px!important;
+    border-width:1.5px!important;
+  }
+  .fc-btn-label{font-size:14px!important;font-weight:800!important;margin-bottom:3px!important}
+  .fc-btn-int{font-size:11px!important;opacity:.7!important}
+
   /* ═══════════════════════════════════════
      QUIZ SCREENS — altijd schermvullend
      (bottom nav al verborgen tijdens quiz)
