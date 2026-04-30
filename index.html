@@ -4055,31 +4055,47 @@ html.dark .hsd-pill{background:var(--bg2);border-color:var(--bo2)}
   .hm-countdown.cd-vwo{border-color:rgba(139,92,246,.22)!important;box-shadow:0 10px 40px rgba(139,92,246,.16),inset 0 1px 0 rgba(255,255,255,.04)!important}
   .hm-countdown.cd-vwo::before{background:radial-gradient(ellipse,rgba(139,92,246,.4) 0%,transparent 68%)!important}
 
-  /* cd-left: label + examennaam, compact bovenaan */
+  /* cd-left: statisch kopje + vaknaam + datum */
   .hm-countdown .cd-left{
     width:100%!important;
     margin-bottom:0!important;
     position:relative!important;
     z-index:1!important;
   }
-  .hm-countdown .cd-label{
+  /* Statisch "VOLGENDE EXAMEN" kopje via ::before */
+  .hm-countdown .cd-left::before{
+    content:'VOLGENDE EXAMEN'!important;
+    display:block!important;
     color:rgba(255,255,255,.32)!important;
     font-size:9px!important;
     letter-spacing:1.8px!important;
-    margin-bottom:4px!important;
+    margin-bottom:5px!important;
     text-transform:uppercase!important;
+    font-family:var(--font)!important;
+    font-weight:600!important;
+  }
+  /* cd-label bevat de vaknaam → groot en prominent */
+  .hm-countdown .cd-label{
+    color:#fff!important;
+    font-size:20px!important;
+    font-weight:900!important;
+    font-family:var(--font-head)!important;
+    letter-spacing:-.3px!important;
+    line-height:1.2!important;
+    margin-bottom:4px!important;
+    text-transform:none!important;
+    letter-spacing:normal!important;
   }
   /* "Nog XX dagen" verbergen — cd-box toont al de dagen */
   .hm-countdown .cd-title{display:none!important}
-  /* Examennaam als prominente heading */
+  /* cd-sub bevat de datum → klein en gedimpt */
   .hm-countdown .cd-sub{
-    color:#fff!important;
-    font-size:17px!important;
-    font-weight:800!important;
-    font-family:var(--font-head)!important;
-    letter-spacing:-.2px!important;
+    color:rgba(255,255,255,.38)!important;
+    font-size:11px!important;
+    font-weight:400!important;
+    font-family:var(--font)!important;
     margin-top:0!important;
-    line-height:1.2!important;
+    line-height:1.4!important;
   }
 
   /* Dunne scheidingslijn */
@@ -11776,7 +11792,10 @@ function startQ(mode){
   if(!ST.isDailyChallenge)ST.isDailyChallenge=false;
   const pool=mode==='snel'?ST.domein.sv:ST.domein.oe;
   if(mode==='snel'){
-    ST.vragen=aqpSelectQuestions(pool,ST.vak.id,ST.domein.id,10);
+    const _calcRe=/\bbereken\b/i;
+    const filteredPool=pool.filter(q=>!_calcRe.test(q.v));
+    const snelPool=filteredPool.length>=5?filteredPool:pool;
+    ST.vragen=aqpSelectQuestions(snelPool,ST.vak.id,ST.domein.id,10);
   }else{
     ST.vragen=pool.slice();
   }
