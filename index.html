@@ -3434,7 +3434,11 @@ html.dark .hsd-pill{background:var(--bg2);border-color:var(--bo2)}
    3. Zware infinite-animaties uitzetten op mobiel
    ──────────────────────────────────────────── */
 @media screen and (max-width:768px){
-  input,textarea,select{font-size:16px!important}
+  input,textarea,select{
+    font-size:16px!important;
+    touch-action:manipulation!important;
+    -webkit-user-select:text!important;
+    user-select:text!important}
   .nav,.hnav,
   .quit-overlay,.ex-bot-nav{
     -webkit-backdrop-filter:none!important;
