@@ -4233,10 +4233,11 @@ html.dark .hsd-pill{background:var(--bg2);border-color:var(--bo2)}
 <!-- BENTO GRID (stats + quick actions) -->
 <div id="home-bento"></div>
 
-<!-- SOCIAAL SHORTCUT -->
+<!-- SOCIAAL SHORTCUTS (mobiel only) -->
 <div class="w hm-sociaal-section">
   <div class="hm-sociaal-row">
-    <button class="hm-soc-btn" style="border-color:rgba(99,102,241,.35);background:rgba(99,102,241,.07)" onclick="show('sc-sociaal')">🌐 Sociaal</button>
+    <button class="hm-soc-btn hm-soc-lb" onclick="show('sc-leaderboard');renderLeaderboard()">🏆 Leaderboard</button>
+    <button class="hm-soc-btn hm-soc-grp" onclick="show('sc-groep');renderGroepScreen()">👥 Mijn Groep</button>
   </div>
 </div>
 
