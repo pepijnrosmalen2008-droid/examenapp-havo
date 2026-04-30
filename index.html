@@ -17794,12 +17794,22 @@ const _NV='slagio_visit_cnt';
 
 function _nCfg(){try{return JSON.parse(localStorage.getItem(_NK)||'null');}catch{return null;}}
 function _nSave(c){try{localStorage.setItem(_NK,JSON.stringify(c));}catch{}}
+// iOS = iPhone/iPad (ook iPadOS op iPad met mouse die zich voordoet als Mac)
+function _isIOS(){return /iPad|iPhone|iPod/.test(navigator.userAgent)||(navigator.platform==='MacIntel'&&navigator.maxTouchPoints>1);}
+// Standalone = geïnstalleerd op beginscherm
+function _isStandalone(){return window.matchMedia('(display-mode:standalone)').matches||!!navigator.standalone;}
 
 function initNotifications(){
-  if(!('Notification' in window))return;
   const visits=parseInt(localStorage.getItem(_NV)||'0')+1;
   localStorage.setItem(_NV,String(visits));
   const cfg=_nCfg();
+  // iOS in browser (niet geïnstalleerd): meldingen werken niet — toon installatie-tip
+  if(_isIOS()&&!_isStandalone()){
+    if(cfg?.iosInstallDismissed||cfg?.denied)return;
+    if(visits>=3)setTimeout(_showIOSInstallPrompt,5000);
+    return;
+  }
+  if(!('Notification' in window))return;
   if(Notification.permission==='granted'&&cfg?.granted){_setupNotifSW();_checkInAppNotif();return;}
   if(cfg?.denied||Notification.permission==='denied')return;
   if(cfg?.snoozeUntil&&Date.now()<cfg.snoozeUntil)return;
@@ -17810,23 +17820,40 @@ function initNotifications(){
 function _showNotifPrompt(){
   const el=document.getElementById('notif-prompt');
   if(!el||el.classList.contains('visible'))return;
+  // Zorg dat standaard-prompt zichtbaar is (niet de iOS-variant)
+  const ico=el.querySelector('.np-ico');const ttl=el.querySelector('.np-title');const btns=el.querySelector('.np-btns');
+  if(ico)ico.textContent='🔔';
+  if(ttl)ttl.innerHTML='Studieherinneringen<small>Gratis · altijd uit te zetten</small>';
+  if(btns)btns.innerHTML='<button class="np-allow" onclick="enableNotifications()">🔔 Zet aan</button><button class="np-later" onclick="dismissNotifPrompt(false)">Straks</button>';
   const streak=calcStreak().current;
   const tgt=typeof getCountdownTarget==='function'?getCountdownTarget():null;
   let body='Ontvang elke dag een herinnering om te oefenen en je streak te bewaren. Gratis, altijd uit te zetten.';
-  if(streak>1){
-    body=`Je hebt een streak van <strong>${streak} dagen</strong>! We herinneren je dagelijks zodat je hem niet verliest. 🔥`;
-  }else if(tgt?.datum){
-    const d=Math.ceil((new Date(tgt.datum)-new Date())/86400000);
-    if(d>0&&d<=30)body=`Nog <strong>${d} dagen</strong> tot ${tgt.vak||'je volgende examen'}! Dagelijkse herinneringen helpen je consistent te studeren.`;
-  }
-  const b=document.getElementById('np-body');
-  if(b)b.innerHTML=body;
+  if(streak>1){body=`Je hebt een streak van <strong>${streak} dagen</strong>! We herinneren je dagelijks zodat je hem niet verliest. 🔥`;}
+  else if(tgt?.datum){const d=Math.ceil((new Date(tgt.datum)-new Date())/86400000);if(d>0&&d<=30)body=`Nog <strong>${d} dagen</strong> tot ${tgt.vak||'je volgende examen'}! Dagelijkse herinneringen helpen je consistent te studeren.`;}
+  const b=document.getElementById('np-body');if(b)b.innerHTML=body;
   el.classList.add('visible');
 }
 
-async function enableNotifications(){
+function _showIOSInstallPrompt(){
   const el=document.getElementById('notif-prompt');
-  if(el)el.classList.remove('visible');
+  if(!el||el.classList.contains('visible'))return;
+  const ico=el.querySelector('.np-ico');const ttl=el.querySelector('.np-title');const btns=el.querySelector('.np-btns');
+  const b=document.getElementById('np-body');
+  if(ico)ico.textContent='📲';
+  if(ttl)ttl.innerHTML='Installeer Slagio<small>Voor herinneringen op iPhone/iPad</small>';
+  if(b)b.innerHTML='Meldingen werken op iOS alleen via de geïnstalleerde app.<br><br>Tik op <strong>Delen&nbsp;⬆</strong> in Safari en kies <strong>"Zet op beginscherm"</strong> — dan ontvang je dagelijkse studie&shy;herinneringen.';
+  if(btns)btns.innerHTML='<button class="np-allow" onclick="_dismissIOSInstall()">👍 Begrepen</button>';
+  el.classList.add('visible');
+}
+function _dismissIOSInstall(){
+  const el=document.getElementById('notif-prompt');if(el)el.classList.remove('visible');
+  const cfg=_nCfg()||{};cfg.iosInstallDismissed=true;_nSave(cfg);
+}
+
+async function enableNotifications(){
+  const el=document.getElementById('notif-prompt');if(el)el.classList.remove('visible');
+  // iOS browser: kan geen toestemming vragen — installatie nodig
+  if(_isIOS()&&!_isStandalone()){_showIOSInstallPrompt();return;}
   if(!('Notification' in window)){showToast('Je browser ondersteunt geen meldingen','#ef4444',3000);return;}
   try{
     const perm=await Notification.requestPermission();
@@ -17843,11 +17870,9 @@ async function enableNotifications(){
 }
 
 function dismissNotifPrompt(permanent){
-  const el=document.getElementById('notif-prompt');
-  if(el)el.classList.remove('visible');
+  const el=document.getElementById('notif-prompt');if(el)el.classList.remove('visible');
   const cfg=_nCfg()||{};
-  if(permanent)cfg.denied=true;
-  else cfg.snoozeUntil=Date.now()+3*24*3600000;
+  if(permanent)cfg.denied=true;else cfg.snoozeUntil=Date.now()+3*24*3600000;
   _nSave(cfg);
 }
 
@@ -17855,13 +17880,11 @@ async function _setupNotifSW(){
   if(!('serviceWorker' in navigator))return;
   try{
     const reg=await navigator.serviceWorker.ready;
-    // Periodic background sync: dagelijkse herinnering ook als app dicht is (Chrome PWA)
+    // Periodic background sync: Chrome PWA only (iOS negeert dit stilletjes)
     if('periodicSync' in reg){
       try{
         const status=await navigator.permissions.query({name:'periodic-background-sync'});
-        if(status.state==='granted'){
-          await reg.periodicSync.register('slagio-daily',{minInterval:22*3600000});
-        }
+        if(status.state==='granted')await reg.periodicSync.register('slagio-daily',{minInterval:22*3600000});
       }catch{}
     }
     _sendNotifData(reg);
@@ -17878,23 +17901,33 @@ function _sendNotifData(reg){
   }catch{}
 }
 
+// Toon notificatie via Service Worker — werkt op iOS standalone én desktop
+async function _showNotifViaReg(title,body){
+  if(!('serviceWorker' in navigator))return false;
+  try{
+    const reg=await navigator.serviceWorker.ready;
+    await reg.showNotification(title,{body,icon:'/icon-192.png',badge:'/icon-192.png',tag:'slagio-daily',data:{url:'/'}});
+    return true;
+  }catch{return false;}
+}
+
 function _checkInAppNotif(){
   if(Notification.permission!=='granted')return;
   const last=parseInt(localStorage.getItem('slagio_notif_shown')||'0');
   if(Date.now()-last<20*3600000)return;
   const today=new Date();today.setHours(0,0,0,0);
   const todayStr=today.toISOString().slice(0,10);
-  const days=(getStreak().days||[]);
-  if(days.includes(todayStr))return;
-  const cur=calcStreak().current;
-  if(cur<1)return;
-  try{
-    new Notification('Slagio 📚',{
-      body:`Je hebt een streak van ${cur} dag${cur===1?'':'en'}! Oefen vandaag om hem te bewaren. 🔥`,
-      icon:'/icon-192.png',badge:'/icon-192.png',tag:'slagio-daily'
-    });
-    localStorage.setItem('slagio_notif_shown',String(Date.now()));
-  }catch{}
+  if((getStreak().days||[]).includes(todayStr))return;
+  const cur=calcStreak().current;if(cur<1)return;
+  const title='Slagio 📚';
+  const body=`Je hebt een streak van ${cur} dag${cur===1?'':'en'}! Oefen vandaag om hem te bewaren. 🔥`;
+  // Gebruik altijd de SW-route: werkt op iOS standalone én desktop Chrome/Firefox
+  _showNotifViaReg(title,body).then(ok=>{
+    if(ok)localStorage.setItem('slagio_notif_shown',String(Date.now()));
+  }).catch(()=>{
+    try{new Notification(title,{body,icon:'/icon-192.png',badge:'/icon-192.png',tag:'slagio-daily'});
+      localStorage.setItem('slagio_notif_shown',String(Date.now()));}catch{}
+  });
 }
 
 function renderNotifStatus(){
