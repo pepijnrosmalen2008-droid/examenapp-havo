@@ -8184,6 +8184,11 @@ function show(id,_noHash){
     if(id==='sc-home')_pushHash('');
     else if(_SCREEN_HASHES[id])_pushHash(_SCREEN_HASHES[id]);
   }
+  if(id==='sc-detail'){
+    if(!ST.vak){show('sc-home',true);return;}
+    const dlist=document.getElementById('dlist');
+    if(!dlist||!dlist.children.length){try{openVak(ST.vak.id,true);}catch(e){}return;}
+  }
   if(id==='sc-home'){try{renderComebackCard();}catch(e){}try{renderFeatDisc();}catch(e){}}
   if(id==='sc-schedule'&&localStorage.getItem('slagio_plan_generated')&&!document.getElementById('studieplan-content')?.children.length){try{renderStudieplan();}catch(e){}}
   if(id==='sc-studieplan'){try{spInitPrefs();}catch(e){}if(localStorage.getItem('slagio_plan_generated')){try{renderStudieplan();}catch(e){}}}
