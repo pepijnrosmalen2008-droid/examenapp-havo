@@ -3997,6 +3997,154 @@ html.dark .hsd-pill{background:var(--bg2);border-color:var(--bo2)}
 #offline-banner{position:fixed;top:0;left:0;right:0;z-index:99998;display:none;align-items:center;justify-content:center;gap:10px;padding:10px 16px;background:linear-gradient(135deg,#374151,#1f2937);color:#fff;font-size:13px;font-weight:600;box-shadow:0 2px 12px rgba(0,0,0,.3)}
 #offline-banner.show{display:flex}
 #offline-banner .sw-banner-dismiss{background:rgba(255,255,255,.15);color:#fff;padding:4px 10px;border-radius:8px;border:none;cursor:pointer;font-size:13px;font-weight:700}
+
+/* ═══════════════════════════════════════════
+   NATIVE MOBILE APP FEEL  ≤ 640px
+   ═══════════════════════════════════════════ */
+@media(max-width:640px){
+
+  /* ── HOME HERO: dump de donkere landingspagina-look ── */
+  .hm-hero{background:var(--bg)!important;padding:0!important}
+  .hm-hero::after,.hm-hero-glow,.flicker-canvas{display:none!important}
+  .hm-h1,.hm-badge,.hm-sub{display:none!important}
+  .home-section-header{display:none!important}
+  .hm-hero-inner{padding:14px 16px 10px!important;text-align:left!important}
+
+  /* Groet: de eigenlijke heading van de app-home */
+  #hm-greeting{
+    font-size:22px!important;
+    font-weight:900!important;
+    color:var(--dk)!important;
+    margin-bottom:10px!important;
+    font-family:var(--font-head)!important;
+    line-height:1.2!important;
+    min-height:0!important;
+  }
+
+  /* Countdown: compacte kaart in lichte appstijl */
+  .hm-countdown{
+    display:flex!important;
+    flex-direction:row!important;
+    align-items:center!important;
+    justify-content:space-between!important;
+    background:var(--s)!important;
+    border:1.5px solid var(--bo)!important;
+    border-radius:16px!important;
+    padding:12px 14px!important;
+    margin-bottom:12px!important;
+    gap:10px!important;
+    backdrop-filter:none!important;
+  }
+  .hm-countdown .cd-label{color:var(--mu)!important;font-size:9px!important}
+  .hm-countdown .cd-title{color:var(--dk)!important;font-size:14px!important;font-weight:800!important}
+  .hm-countdown .cd-sub{color:var(--mu)!important;font-size:10px!important}
+  .hm-countdown .cd-box{
+    background:var(--bg2)!important;
+    border:1px solid var(--bo)!important;
+    border-radius:10px!important;
+    min-width:36px!important;
+    padding:6px 5px!important;
+  }
+  .hm-countdown .cd-val{color:var(--dk)!important;font-size:16px!important}
+  .hm-countdown .cd-unit{color:var(--mu)!important;font-size:7.5px!important}
+
+  /* CTAs: twee knoppen naast elkaar */
+  .hm-ctas{flex-direction:row!important;gap:8px!important;margin-top:0!important}
+  .hm-cta-primary{
+    flex:1!important;
+    font-size:15px!important;
+    padding:14px 16px!important;
+    border-radius:15px!important;
+    justify-content:center!important;
+    box-shadow:0 4px 16px rgba(var(--or-rgb),.38)!important;
+  }
+  .hm-cta-sec{
+    display:inline-flex!important;
+    flex:0 0 auto!important;
+    font-size:14px!important;
+    padding:14px 16px!important;
+    border-radius:15px!important;
+    background:var(--bg2)!important;
+    border:1.5px solid var(--bo)!important;
+    color:var(--dk)!important;
+    justify-content:center!important;
+  }
+
+  /* ── HNAV: compacte native app bar ── */
+  .hnav,.hnav-inner{height:50px!important}
+  .hnav-inner{padding:0 14px!important}
+  .hnav-wordmark{font-size:17px!important;font-weight:900!important}
+  .hnav-chip{font-size:10px!important;padding:3px 8px!important;border-radius:8px!important}
+  .hnav-icon-btn{width:34px!important;height:34px!important;border-radius:9px!important}
+
+  /* ── BENTO: volledig breedte, grotere cellen ── */
+  .bento{padding:4px 12px 12px!important;gap:9px!important}
+  .bento-cell{border-radius:18px!important;min-height:82px!important}
+  .bento-act{border-radius:18px!important;min-height:82px!important}
+  .bento-sv{font-size:13px!important;font-weight:800!important}
+  .bento-si{font-size:19px!important}
+  .bento-sl{font-size:10px!important}
+
+  /* ── STATS STRIP ── */
+  .hm-stats-strip{margin-bottom:6px!important}
+  .hm-stat-pill{padding:6px 11px!important;font-size:11px!important;border-radius:16px!important}
+
+  /* ── QUICK SCROLL ── */
+  .hm-ql-btn{padding:8px 14px!important;font-size:12.5px!important;border-radius:20px!important;height:36px!important}
+
+  /* ── SOCIAAL KNOPPEN ── */
+  .hm-soc-btn{padding:15px 12px!important;font-size:14px!important;border-radius:16px!important;font-weight:700!important}
+
+  /* ── BOTTOM NAV: native full-width tab bar ── */
+  .bottom-nav{padding:0!important}
+  .bottom-nav-inner{
+    max-width:100%!important;
+    border-radius:0!important;
+    margin:0!important;
+    padding:6px 8px calc(env(safe-area-inset-bottom,4px) + 6px)!important;
+    border:none!important;
+    border-top:1px solid var(--bo)!important;
+    box-shadow:0 -1px 0 var(--bo)!important;
+    background:color-mix(in srgb,var(--nav-bg) 96%,transparent)!important;
+    backdrop-filter:blur(20px)!important;
+    -webkit-backdrop-filter:blur(20px)!important;
+    gap:0!important;
+  }
+  .bnav-btn{
+    padding:5px 10px!important;
+    border-radius:10px!important;
+    font-size:9px!important;
+    flex:1!important;
+    gap:2px!important;
+  }
+  .bnav-btn svg{width:20px!important;height:20px!important}
+  .bnav-fab-wrap{flex:1!important;display:flex!important;justify-content:center!important}
+  .bnav-fab{width:46px!important;height:46px!important;top:-6px!important}
+
+  /* ── QUIZ: native app schermvullend gevoel ── */
+  .qtb{padding:8px 14px 0!important;gap:8px!important}
+  .qstp{padding:6px 12px!important;font-size:12px!important;border-radius:10px!important}
+  .qpb{margin:6px 14px!important;height:5px!important;border-radius:3px!important}
+  .qbody{padding:14px 14px 18px!important;border-radius:22px!important;margin:6px 10px 0!important}
+  .qring{width:52px!important;height:52px!important;flex-shrink:0!important}
+  .trn{font-size:16px!important}
+  .qq{font-size:18px!important;line-height:1.45!important;margin-bottom:16px!important;font-weight:700!important}
+  .qopts{gap:9px!important;margin-bottom:14px!important;grid-template-columns:1fr!important}
+  .opt{
+    padding:16px 14px!important;
+    font-size:16px!important;
+    border-radius:16px!important;
+    min-height:54px!important;
+    align-items:center!important;
+    font-weight:600!important;
+  }
+  .nxt{padding:16px!important;font-size:16px!important;border-radius:16px!important;width:100%!important;box-sizing:border-box!important}
+
+  /* ── SCHERMEN: geen website-padding ── */
+  body{padding-bottom:calc(env(safe-area-inset-bottom,0px) + 58px)!important}
+  .w{padding:0 14px!important}
+  .sc>.w:first-child,.sc .w:first-of-type{padding-top:4px!important}
+}
 </style>
 </head>
 <body>
