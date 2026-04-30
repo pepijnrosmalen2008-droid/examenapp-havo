@@ -639,6 +639,8 @@ h1,h2,h3,h4{font-family:var(--font-head);line-height:1.2;letter-spacing:-.3px}
 .bento-avg-warn{border-color:rgba(239,68,68,.4);background:linear-gradient(145deg,rgba(239,68,68,.13) 0%,rgba(239,68,68,.04) 100%)}
 .bento-avg-warn::after{content:'';position:absolute;top:-28px;right:-28px;width:90px;height:90px;border-radius:50%;background:radial-gradient(circle,rgba(239,68,68,.35) 0%,transparent 70%);pointer-events:none}
 .bento-avg-warn .bento-sv{color:#ef4444}
+.bento-avg-empty{border-color:var(--bo);border-style:dashed}
+.bento-avg-empty .bento-si{opacity:.5}
 .bento-groep{border-color:rgba(20,184,166,.4);background:linear-gradient(145deg,rgba(20,184,166,.13) 0%,rgba(20,184,166,.04) 100%)}
 .bento-groep::after{content:'';position:absolute;top:-28px;right:-28px;width:90px;height:90px;border-radius:50%;background:radial-gradient(circle,rgba(20,184,166,.35) 0%,transparent 70%);pointer-events:none}
 .bento-groep .bento-sv{color:#14b8a6}
@@ -15583,10 +15585,14 @@ function renderHomeStats(){
   const badgeCell=earnedCount>0?`<div class="bento-cell bento-badges" onclick="openProfiel();setTimeout(()=>{const el=document.getElementById('prof-badges-content');if(el)el.scrollIntoView({behavior:'smooth',block:'start'})},250)" role="button" tabindex="0">
     <div class="bento-stat"><div class="bento-si">🏅</div><div class="bento-sv">${earnedCount}/${ALL_BADGES.length}</div><div class="bento-sl">Badges</div></div>
   </div>`:'';
-  // ── Avg cell (alleen als cijfers bekend zijn; groep staat al in sociaal-sectie) ──
-  const avgCell=avg!==null?`<div class="bento-cell ${avg<6?'bento-avg-warn':'bento-avg-ok'}" onclick="show('sc-calc');setTimeout(prefillCalcFromSaved,50)" role="button" tabindex="0">
-    <div class="bento-stat"><div class="bento-si">📈</div><div class="bento-sv">${avg.toFixed(1).replace('.',',')}</div><div class="bento-sl">Gem. SE</div></div>
-  </div>`:'';
+  // ── Avg cell (altijd zichtbaar; leeg = uitnodiging om cijfers in te voeren) ──
+  const avgCell=avg!==null
+    ?`<div class="bento-cell ${avg<6?'bento-avg-warn':'bento-avg-ok'}" onclick="show('sc-calc');setTimeout(prefillCalcFromSaved,50)" role="button" tabindex="0">
+        <div class="bento-stat"><div class="bento-si">📈</div><div class="bento-sv">${avg.toFixed(1).replace('.',',')}</div><div class="bento-sl">Gem. SE</div></div>
+      </div>`
+    :`<div class="bento-cell bento-avg-empty" onclick="show('sc-calc');setTimeout(prefillCalcFromSaved,50)" role="button" tabindex="0">
+        <div class="bento-stat"><div class="bento-si" style="font-size:18px">📈</div><div class="bento-sv" style="font-size:13px;font-weight:700;color:var(--mu)">Cijfers</div><div class="bento-sl" style="font-size:10px">Voer in →</div></div>
+      </div>`;
   const groepCell='';
   // ── Streak milestone cell (conditional, full-width) ──
   let smCell='';
