@@ -428,7 +428,7 @@ function render(lb, ev, evMissing) {
       <div class="kpi c-bl">
         <div class="kpi-lbl">📱 Mobiel</div>
         <div class="kpi-val">${mobEv + pwaEv}</div>
-        <div class="kpi-sub">${mobPct}% van getrackte events${pwaEv > 0 ? ` · waarvan ${pwaPct}% via PWA` : ''}</div>
+        <div class="kpi-sub">${mobPct}% van getrackte events${pwaEv > 0 ? ' · waarvan ' + pwaPct + '% via PWA' : ''}</div>
       </div>
       <div class="kpi c-gr">
         <div class="kpi-lbl">🖥️ Desktop</div>
@@ -446,7 +446,7 @@ function render(lb, ev, evMissing) {
         <div style="display:flex;gap:1rem;font-size:.72rem;color:var(--muted)">
           <span><span style="color:var(--blue)">●</span> Mobiel ${mobPct}%</span>
           <span><span style="color:var(--green)">●</span> Desktop ${deskPct}%</span>
-          ${totDev === 0 ? '<span style="font-style:italic">Nog geen data — tracking start nu</span>' : `<span>${totDev} events getrackt</span>`}
+          ${totDev === 0 ? '<span style="font-style:italic">Nog geen data — tracking start nu</span>' : '<span>' + totDev + ' events getrackt</span>'}
         </div>
       </div>
     </div>
