@@ -1,4 +1,4 @@
-const CACHE = 'slagio-v38';
+const CACHE = 'slagio-v39';
 const ASSETS = ['/', '/index.html', '/manifest.json', '/icon-192.png', '/icon-512.png', '/logo.svg', '/apple-touch-icon.png'];
 
 self.addEventListener('install', e => {
@@ -20,11 +20,12 @@ self.addEventListener('fetch', e => {
   if (url.origin !== self.location.origin) return;
 
   if (request.mode === 'navigate') {
+    // Always serve index.html for navigation — SPA routing handles /havo, /vwo, etc.
     e.respondWith(
-      fetch(request)
+      fetch('/index.html')
         .then(res => {
           const clone = res.clone();
-          caches.open(CACHE).then(c => c.put(request, clone));
+          caches.open(CACHE).then(c => c.put('/index.html', clone));
           return res;
         })
         .catch(() => caches.match('/index.html'))

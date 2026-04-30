@@ -7654,7 +7654,25 @@ function _routeFromHash(){
   if(sc){show(sc[0],true);return;}
   show('sc-home',true);
 }
-window.addEventListener('popstate',_routeFromHash);
+function _routeFromPath(){
+  const path=location.pathname.replace(/\/$/,'');
+  if(path==='/havo'){chooseLevel('havo',true);return;}
+  if(path==='/vwo'){chooseLevel('vwo',true);return;}
+  // pad onbekend: toon niveau-kiezer
+  show('sc-welcome',true);
+  _updatePageSEO(null);
+}
+window.addEventListener('popstate',()=>{
+  const path=location.pathname.replace(/\/$/,'');
+  if(path==='/havo'||path==='/vwo'){_routeFromPath();return;}
+  if(path==='/'||path===''){
+    // terug naar niveau-kiezer
+    show('sc-welcome',true);
+    _updatePageSEO(null);
+    return;
+  }
+  _routeFromHash();
+});
 
 function show(id,_noHash){
   const prev=document.querySelector('.sc.on');
@@ -7681,6 +7699,8 @@ function show(id,_noHash){
   if(id==='sc-welcome'){
     document.documentElement.classList.remove('level-havo','level-vwo');
     document.documentElement.classList.add('level-welcome');
+    if(!_noHash&&location.pathname!=='/')history.pushState({},'','/');
+    _updatePageSEO(null);
   } else {
     document.documentElement.classList.remove('level-welcome');
     if(!document.documentElement.classList.contains('level-havo')&&!document.documentElement.classList.contains('level-vwo')){
@@ -17275,7 +17295,26 @@ function applyLevelTheme(level){
 }
 
 // ═══════ LEVEL SELECT ═══════
-function chooseLevel(level){
+function _updatePageSEO(level){
+  const isHavo=level==='havo';
+  const nivNaam=isHavo?'HAVO':'VWO';
+  const url='https://slagio.nl/'+(level||'');
+  document.title=level
+    ?`Slagio — ${nivNaam} Examenvoorbereiding 2026 | 1.800+ vragen, eindexamens, studieplan`
+    :'Slagio — Complete HAVO & VWO Examenvoorbereiding 2026';
+  const desc=level
+    ?`Gratis ${nivNaam} examenvoorbereiding 2026. 1.800+ oefenvragen per domein, echte CE-eindexamens 2019–2025, persoonlijk studieplan, spaced repetition flashcards en cijfercalculator. Geen account nodig.`
+    :'Kies je niveau: HAVO of VWO. Gratis examenvoorbereiding met 1.800+ oefenvragen, echte eindexamens 2019–2025, studieplan en meer.';
+  const metaDesc=document.querySelector('meta[name="description"]');
+  if(metaDesc)metaDesc.content=desc;
+  const og=document.querySelector('meta[property="og:url"]');
+  if(og)og.content=url;
+  const ogTitle=document.querySelector('meta[property="og:title"]');
+  if(ogTitle)ogTitle.content=document.title;
+  const canon=document.querySelector('link[rel="canonical"]');
+  if(canon)canon.href=url;
+}
+function chooseLevel(level,_noHistory){
   APP_LEVEL=level;
   localStorage.setItem('examenapp_level',level);
   applyLevelTheme(level);
@@ -17286,6 +17325,9 @@ function chooseLevel(level){
   // Update intro badge
   const badge=document.getElementById('intro-level-badge');
   if(badge)badge.textContent=(level==='havo'?'HAVO':'VWO')+' 2026';
+  // Push URL: /havo or /vwo
+  if(!_noHistory)history.pushState({level},'','/'+level);
+  _updatePageSEO(level);
   // Show intro for first-time users, home for returning users
   show('sc-home');
   buildGrid();renderStreak();renderFavHome();renderXPHome();renderDailyChallenge();renderHomeStats();renderGreeting();
@@ -17367,7 +17409,7 @@ function updateBottomNav(id){
 const _origShow=show;
 window.show=function(id,_noHash){_origShow(id,_noHash);updateBottomNav(id);};
 
-// Activeer hash-routing na volledig laden
+// Activeer routing na volledig laden
 window.addEventListener('load',()=>{
   // Query-param fallback: ?niveau=havo&vak=bi → redirect naar hash
   const _qp=new URLSearchParams(location.search);
@@ -17375,6 +17417,13 @@ window.addEventListener('load',()=>{
   if(_qniv&&_qvak&&_VAK_SLUG[_qvak]){
     history.replaceState(null,'','#'+_qniv+'-'+_VAK_SLUG[_qvak]);
   }
+  // Path-based routing: /havo en /vwo
+  const _path=location.pathname.replace(/\/$/,'');
+  if(_path==='/havo'||_path==='/vwo'){
+    setTimeout(()=>_routeFromPath(),80);
+    return;
+  }
+  // Hash-routing voor sub-schermen
   if(location.hash&&location.hash.length>1){
     setTimeout(_routeFromHash,120);
   }
