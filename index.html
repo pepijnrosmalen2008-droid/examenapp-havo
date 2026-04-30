@@ -46,7 +46,7 @@
     "CE Simulatietoets: volledige examenervaring met countdown-timer, puntentelling en automatische eindcijferberekening",
     "Spaced repetition flashcards per domein (SM-2 algoritme) — kaarten worden aangeboden op het optimale herhalingsmoment; schermvullende kaartinterface met grote beoordelingsknoppen (Opnieuw / Moeilijk / Goed / Makkelijk)",
     "Gamified leerpad met domein-unlocks: volgende domein vrijgespeeld na ≥60% score",
-    "Snelle Quiz: 10 vragen per domein met 15 seconden timer per vraag — berekeningsvragen automatisch gefilterd omdat die niet in 15 seconden op te lossen zijn",
+    "Snelle Quiz: 10 vragen per domein met 20 seconden timer per vraag — berekeningsvragen automatisch gefilterd omdat die niet in 20 seconden op te lossen zijn",
     "Open examenvragen: 363 CE-stijl vragen met contexttekst en modelantwoord",
     "Bot Race: race tegen AI-tegenstanders met powerups over 15 vragen van het hele vak, keuze uit drie moeilijkheidsgraden",
     "Multiplayer quiz: Kahoot-stijl quiz met spelcode, speel live met je klas of vrienden",
@@ -283,7 +283,7 @@
     {
       "@type": "Question",
       "name": "Waarom staan er geen berekeningsvragen in de snelle quiz?",
-      "acceptedAnswer": {"@type":"Answer","text":"De snelle quiz geeft je 15 seconden per vraag. Berekeningsvragen (waarbij je een formule moet toepassen of een som moet uitrekenen) zijn in die tijd niet eerlijk te beantwoorden. Slagio filtert deze vragen automatisch uit de snelle quiz. Berekeningsvragen komen wel voor in de oud-examen modus, waarbij je de tijd hebt om ze zorgvuldig te beantwoorden zoals op het echte CE."}
+      "acceptedAnswer": {"@type":"Answer","text":"De snelle quiz geeft je 20 seconden per vraag. Berekeningsvragen (waarbij je een formule moet toepassen of een som moet uitrekenen) zijn in die tijd niet eerlijk te beantwoorden. Slagio filtert deze vragen automatisch uit de snelle quiz. Berekeningsvragen komen wel voor in de oud-examen modus, waarbij je de tijd hebt om ze zorgvuldig te beantwoorden zoals op het echte CE."}
     },
     {
       "@type": "Question",
@@ -302,7 +302,7 @@
   <h2>Adaptieve oefenvragen — 1.800+</h2>
   <p>Slagio bevat meer dan 1.800 oefenvragen verdeeld over alle CE-domeinen van 28 vakken voor zowel HAVO als VWO. De vragen zijn term- en begripsgebaseerd en sluiten aan op de CE-examenprogramma's. Het platform gebruikt een adaptief algoritme: vragen die de leerling vaak fout heeft krijgen een hogere wegingsfactor en verschijnen vaker. Beheerste vragen (3+ keer goed, minder dan 20% fout) verdwijnen naar de achtergrond. Na elke quiz ziet de leerling zijn beheersingsniveau per domein als voortgangsbalk en een overzicht van verbeterpunten.</p>
   <ul>
-    <li>1.476 snelle quizvragen (meerkeuze, 10 per quiz, 15 seconden per vraag)</li>
+    <li>1.476 snelle quizvragen (meerkeuze, 10 per quiz, 20 seconden per vraag)</li>
     <li>363 open examenvragen in CE-stijl met contexttekst en modelantwoord</li>
     <li>Gemiddeld 15 vragen per domein, verdeeld over 96+ domeinen</li>
     <li>Adaptief quizalgoritme op basis van persoonlijke prestaties per vraag</li>
@@ -373,7 +373,7 @@
     <li>Cloud-synchronisatie van profiel en voortgang (optioneel, via Supabase)</li>
     <li>Examenrooster HAVO en VWO 2026 ingebouwd</li>
     <li>Aparte URL's: slagio.nl/havo en slagio.nl/vwo</li>
-    <li>Berekeningsvragen automatisch gefilterd uit de snelle quiz (15 sec niet genoeg)</li>
+    <li>Berekeningsvragen automatisch gefilterd uit de snelle quiz (20 sec niet genoeg)</li>
   </ul>
   <p>Slagio is te vinden op <a href="https://slagio.nl">slagio.nl</a>, <a href="https://slagio.nl/havo">slagio.nl/havo</a> en <a href="https://slagio.nl/vwo">slagio.nl/vwo</a>. Schakel JavaScript in om de app te gebruiken.</p>
 </noscript>
@@ -5063,7 +5063,7 @@ html.dark .hsd-pill{background:var(--bg2);border-color:var(--bo2)}
         <div class="qmci"><svg viewBox="0 0 24 24"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg></div>
         <h3>Snelle Quiz</h3>
         <p>Stamp leerstof in je geheugen met tijdsdruk en directe feedback.</p>
-        <div class="qm-tags"><span class="qm-tag">⏱ 15 sec</span><span class="qm-tag">10 vragen</span><span class="qm-tag">4 opties</span></div>
+        <div class="qm-tags"><span class="qm-tag">⏱ 20 sec</span><span class="qm-tag">10 vragen</span><span class="qm-tag">4 opties</span></div>
       </div>
 
       <div class="qmcd qm-oud" onclick="startQ('oud')">
@@ -8160,7 +8160,7 @@ youtubeKanaal:'Math with Menno (225K+)',youtubeUrl:'https://youtube.com/@Mathwit
 
 // ═══════ STATE ═══════
 // antwrd entries: {pts: 0|0.5|1}
-let ST = {vak:null,domein:null,mode:null,vragen:[],idx:0,score:0,antwrd:[],timer:null,tijd:15,shuffleMap:[],shuffleMaps:[],combo:0,xpThisRound:0,isDailyChallenge:false};
+let ST = {vak:null,domein:null,mode:null,vragen:[],idx:0,score:0,antwrd:[],timer:null,tijd:20,shuffleMap:[],shuffleMaps:[],combo:0,xpThisRound:0,isDailyChallenge:false};
 
 // ═══════ UI HELPERS ═══════
 // ═══════ HASH ROUTING ═══════
@@ -12140,7 +12140,7 @@ function toonV(){
       btn.onclick=function(){kies(parseInt(this.dataset.pos),parseInt(this.dataset.correct));};
       area.appendChild(btn);
     });
-    startTimer(15);
+    startTimer(20);
     // Lucky bonus kans per vraag
     maybeGiveLucky();
     // XP Surge kans (1/5, duurt 3 vragen)
@@ -16330,7 +16330,7 @@ function showDailyChallengePopup(){
   const titleEl=document.getElementById('dc-popup-title');
   const subEl=document.getElementById('dc-popup-sub');
   if(titleEl)titleEl.textContent=dc.domeinNaam;
-  if(subEl)subEl.textContent=dc.vakNaam+' · Snelle Quiz · 15 sec per vraag';
+  if(subEl)subEl.textContent=dc.vakNaam+' · Snelle Quiz · 20 sec per vraag';
   _dcCache=dc;
   setTimeout(()=>{
     popup.classList.add('show');
@@ -18260,7 +18260,7 @@ function _mqShowFinal(scores){
           <span class="ob-feat-ico">⚡</span>
           <div class="ob-feat-body">
             <div class="ob-feat-title">Snelle quiz</div>
-            <div class="ob-feat-desc">15 seconden per vraag</div>
+            <div class="ob-feat-desc">20 seconden per vraag</div>
             <div class="ob-feat-desc-extra">Beantwoord meerkeuzevragen zo snel en correct mogelijk. Je score hangt af van snelheid én nauwkeurigheid.</div>
           </div>
           <span class="ob-feat-check">✓</span>
