@@ -1007,6 +1007,12 @@ html.dark .qb{background:#2e3550}
 .sam-tip::before{content:'💡 Examentip';font-weight:800;color:#16a34a;font-size:10px;display:block;margin-bottom:4px;text-transform:uppercase;letter-spacing:.6px}
 .sam-warn{background:rgba(239,68,68,.06);border-left:3px solid #ef4444;border-radius:0 8px 8px 0;padding:9px 12px;margin:10px 0 6px;font-size:12.5px;color:var(--dk);line-height:1.55}
 .sam-warn::before{content:'⚠ Veelgemaakte fout';font-weight:800;color:#dc2626;font-size:10px;display:block;margin-bottom:4px;text-transform:uppercase;letter-spacing:.6px}
+.sam-val{background:rgba(239,68,68,.06);border:1.5px solid #ef4444;border-radius:10px;padding:11px 13px;margin:12px 0 4px}
+.sam-val::before{content:'🪤 Examenvallen';font-weight:800;color:#dc2626;font-size:10px;display:block;margin-bottom:6px;text-transform:uppercase;letter-spacing:.6px}
+.sam-val ul{margin:0;padding-left:16px}.sam-val li{font-size:12.5px;color:var(--dk);line-height:1.6;margin-bottom:3px}
+.sam-binas{background:rgba(59,130,246,.06);border:1.5px solid rgba(59,130,246,.35);border-radius:10px;padding:10px 13px;margin:10px 0 4px;display:flex;flex-wrap:wrap;gap:6px;align-items:center}
+.sam-binas::before{content:'📐 BINAS / ScienceData';font-weight:800;color:#2563eb;font-size:10px;display:block;width:100%;margin-bottom:4px;text-transform:uppercase;letter-spacing:.6px}
+.sam-binas-tag{background:rgba(59,130,246,.12);color:#1d4ed8;border-radius:6px;padding:3px 8px;font-size:11.5px;font-weight:600}
 .sam-compare{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin:8px 0 12px}
 .sam-compare-col{background:var(--bg2);border-radius:10px;padding:10px 12px;border:1px solid var(--bo)}
 .sam-compare-head{font-size:11px;font-weight:800;margin-bottom:6px;text-transform:uppercase;letter-spacing:.5px;padding-bottom:5px;border-bottom:1px solid var(--bo)}
@@ -11096,6 +11102,8 @@ function openVak(id,_noHash){
           <div class="ttags">${d.onderwerpen.map(o=>`<span class="tt">${o}</span>`).join('')}</div>
           <div class="tlbl">Samenvatting</div>
           <div class="sam">${SAM_RICH[ST.vak.id+'_'+d.id]||d.sam}</div>
+          ${d.val&&d.val.length?`<div class="sam-val"><ul>${d.val.map(v=>`<li>${v}</li>`).join('')}</ul></div>`:''}
+          ${d.binas&&d.binas.length?`<div class="sam-binas">${d.binas.map(b=>`<span class="sam-binas-tag">${b}</span>`).join('')}</div>`:''}
           <div class="sam-cta"><button class="sam-cta-btn" onclick="event.stopPropagation();openQmode('${d.id}')">▶ Oefenen op dit domein</button><button class="sam-print-btn" onclick="event.stopPropagation();printSam()">📄 Samenvatting printen</button></div>
         </div>
         <div class="dtab-pane" data-tab-id="quiz"></div>
