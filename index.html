@@ -348,6 +348,17 @@
 <!-- AdSense script wordt dynamisch geladen na cookie-consent -->
 <style>
 *{box-sizing:border-box;margin:0;padding:0}
+/* ── SPLASH SCREEN ────────────────────────────────────── */
+#splash-screen{position:fixed;inset:0;z-index:99999;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:18px;background:#f5f6fa;transition:opacity .45s ease}
+html.dark #splash-screen{background:#0f1118}
+@media(prefers-color-scheme:dark){#splash-screen{background:#0f1118}}
+#splash-screen.spl-out{opacity:0;pointer-events:none}
+.spl-icon{width:96px;height:96px;border-radius:22px;box-shadow:0 8px 32px rgba(0,0,0,.18);animation:splPop .5s cubic-bezier(.34,1.56,.64,1) both}
+.spl-word{font-family:'Bricolage Grotesque','Inter',sans-serif;font-size:30px;font-weight:900;letter-spacing:-.5px;color:#1a1d26;animation:splFade .5s .15s both}
+html.dark .spl-word{color:#f0f0f0}
+@media(prefers-color-scheme:dark){.spl-word{color:#f0f0f0}}
+@keyframes splPop{from{transform:scale(.65);opacity:0}to{transform:scale(1);opacity:1}}
+@keyframes splFade{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:translateY(0)}}
 /* Skip-link voor toetsenbordgebruikers */
 .skip-link{position:absolute;top:-999px;left:0;z-index:99999;padding:10px 20px;background:var(--or,#e8580c);color:#fff;font-weight:700;font-size:14px;border-radius:0 0 8px 0;text-decoration:none}
 .skip-link:focus{top:0}
@@ -3995,6 +4006,21 @@ html.dark .hsd-pill{background:var(--bg2);border-color:var(--bo2)}
 </style>
 </head>
 <body>
+<div id="splash-screen" aria-hidden="true">
+  <img src="/icon-192.png" alt="" class="spl-icon">
+  <div class="spl-word">Slagio</div>
+</div>
+<script>
+(function(){
+  var s=document.getElementById('splash-screen');
+  var standalone=window.matchMedia('(display-mode:standalone)').matches||!!navigator.standalone;
+  if(!standalone){s.remove();return;}
+  setTimeout(function(){
+    s.classList.add('spl-out');
+    setTimeout(function(){s.remove();},480);
+  },1600);
+})();
+</script>
 <div id="sw-update-banner" role="status" aria-live="polite">
   <span>🚀 Nieuwe versie beschikbaar</span>
   <button class="sw-banner-reload" onclick="location.reload()">Herlaad</button>
