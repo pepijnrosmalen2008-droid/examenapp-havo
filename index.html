@@ -9197,13 +9197,16 @@ async function trackEvent(type,meta){
     const vak=typeof ST!=='undefined'?ST?.vak:null;
     const niveau=typeof APP_LEVEL!=='undefined'?APP_LEVEL:'havo';
     const naam=_safeLocalGet('profiel',{}).naam||null;
+    const _mob=/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)||window.innerWidth<=768;
+    const _pwa=window.matchMedia('(display-mode:standalone)').matches||!!navigator.standalone;
+    const device=_mob?(_pwa?'mobile-pwa':'mobile'):'desktop';
     SB.from('events').insert({
       user_id:currentUser?.id||null,
       naam:naam,
       event_type:type,
       vak_naam:vak?.naam||null,
       niveau:niveau,
-      meta:meta||null
+      meta:{...(meta||{}),device}
     }).then(()=>{}).catch(()=>{});
   }catch(e){}
 }

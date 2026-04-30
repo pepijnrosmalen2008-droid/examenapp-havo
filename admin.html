@@ -341,6 +341,16 @@ function render(lb, ev, evMissing) {
     featVakMap[f.key]=Object.entries(vmap).sort((a,b)=>b[1]-a[1]).slice(0,3).map(([v,c])=>v+' ('+c+')').join(', ')||'—';
   });
 
+  // ── Device breakdown ──
+  const evWithDev = ev.filter(e => e.meta?.device);
+  const mobEv  = evWithDev.filter(e => e.meta.device === 'mobile').length;
+  const pwaEv  = evWithDev.filter(e => e.meta.device === 'mobile-pwa').length;
+  const deskEv = evWithDev.filter(e => e.meta.device === 'desktop').length;
+  const totDev = mobEv + pwaEv + deskEv;
+  const mobPct  = totDev > 0 ? Math.round((mobEv + pwaEv) / totDev * 100) : 0;
+  const deskPct = totDev > 0 ? Math.round(deskEv / totDev * 100) : 0;
+  const pwaPct  = totDev > 0 ? Math.round(pwaEv / (mobEv + pwaEv || 1) * 100) : 0;
+
   // Bot race difficulty breakdown
   const raceDiff = {easy:0,medium:0,hard:0};
   ev.filter(e=>e.event_type==='bot_race').forEach(e=>{ const d=e.meta?.diff; if(d) raceDiff[d]=(raceDiff[d]||0)+1; });
@@ -408,6 +418,35 @@ function render(lb, ev, evMissing) {
               <span style="font-weight:700;min-width:1.5rem;text-align:right">${c}</span>
             </div>`;
           }).join('')}
+        </div>
+      </div>
+    </div>
+
+    <!-- ── Platform ── -->
+    <div class="sec">Platform</div>
+    <div class="row-3">
+      <div class="kpi c-bl">
+        <div class="kpi-lbl">📱 Mobiel</div>
+        <div class="kpi-val">${mobEv + pwaEv}</div>
+        <div class="kpi-sub">${mobPct}% van getrackte events${pwaEv > 0 ? ` · waarvan ${pwaPct}% via PWA` : ''}</div>
+      </div>
+      <div class="kpi c-gr">
+        <div class="kpi-lbl">🖥️ Desktop</div>
+        <div class="kpi-val">${deskEv}</div>
+        <div class="kpi-sub">${deskPct}% van getrackte events</div>
+      </div>
+      <div class="kpi c-pu">
+        <div class="kpi-lbl">📊 Mobiel / Desktop</div>
+        <div style="margin:6px 0 4px">
+          <div style="height:10px;border-radius:5px;overflow:hidden;background:rgba(255,255,255,.07);display:flex">
+            <div style="width:${mobPct}%;background:var(--blue);border-radius:5px 0 0 5px;transition:width .6s"></div>
+            <div style="width:${deskPct}%;background:var(--green);border-radius:0 5px 5px 0"></div>
+          </div>
+        </div>
+        <div style="display:flex;gap:1rem;font-size:.72rem;color:var(--muted)">
+          <span><span style="color:var(--blue)">●</span> Mobiel ${mobPct}%</span>
+          <span><span style="color:var(--green)">●</span> Desktop ${deskPct}%</span>
+          ${totDev === 0 ? '<span style="font-style:italic">Nog geen data — tracking start nu</span>' : `<span>${totDev} events getrackt</span>`}
         </div>
       </div>
     </div>
