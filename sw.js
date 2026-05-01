@@ -1,4 +1,4 @@
-const CACHE = 'slagio-v65';
+const CACHE = 'slagio-v66';
 const ASSETS = ['/', '/index.html', '/manifest.json', '/icon-192.png', '/icon-512.png', '/logo.svg', '/apple-touch-icon.png'];
 
 self.addEventListener('install', e => {

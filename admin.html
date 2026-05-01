@@ -247,15 +247,17 @@ function startClock() {
 
 async function loadAll() {
   try {
-    const [lbRes, evRes] = await Promise.all([
+    const [lbRes, evRes, aoRes] = await Promise.all([
       SB.from('leaderboard').select('user_id,naam,score,vak_naam,domein_naam,niveau,correct,total,avg_tijd,created_at').order('created_at',{ascending:false}).limit(1000),
-      SB.from('events').select('naam,event_type,vak_naam,niveau,meta,created_at').order('created_at',{ascending:false}).limit(2000)
+      SB.from('events').select('naam,event_type,vak_naam,niveau,meta,created_at').order('created_at',{ascending:false}).limit(2000),
+      SB.from('events').select('meta,niveau,created_at').eq('event_type','app_open').order('created_at',{ascending:false}).limit(5000)
     ]);
     const lb = (lbRes.data || []).filter(e => (e.score||0) <= 1000);
     const ev = evRes.data || [];
+    const ao = aoRes.data || [];
     const evMissing = !!evRes.error;
-    window._lb = lb; window._ev = ev; window._evMissing = evMissing;
-    render(lb, ev, evMissing);
+    window._lb = lb; window._ev = ev; window._evMissing = evMissing; window._ao = ao;
+    render(lb, ev, evMissing, ao);
   } catch(e) {
     document.getElementById('content').innerHTML =
       `<div class="loading" style="color:var(--red)">Laad-fout: ${e.message}</div>`;
@@ -270,13 +272,14 @@ function timeAgo(iso) {
   return Math.floor(ms/86400000) + 'd';
 }
 
-function render(lb, ev, evMissing) {
+function render(lb, ev, evMissing, ao=[]) {
   // Apply time filter
   const filterMs = window._filter==='24h'?86400000:window._filter==='7d'?7*86400000:null;
   if (filterMs) {
     const cutoff = new Date(Date.now()-filterMs).toISOString();
     lb = lb.filter(e=>e.created_at>=cutoff);
     ev = ev.filter(e=>e.created_at>=cutoff);
+    ao = ao.filter(e=>e.created_at>=cutoff);
   }
 
   const now = Date.now();
@@ -358,7 +361,7 @@ function render(lb, ev, evMissing) {
     featVakMap[f.key]=Object.entries(vmap).sort((a,b)=>b[1]-a[1]).slice(0,3).map(([v,c])=>v+' ('+c+')').join(', ')||'—';
   });
 
-  // ── Device breakdown ──
+  // ── Device breakdown (feature events) ──
   const evWithDev = ev.filter(e => e.meta?.device);
   const mobEv  = evWithDev.filter(e => e.meta.device === 'mobile').length;
   const pwaEv  = evWithDev.filter(e => e.meta.device === 'mobile-pwa').length;
@@ -367,6 +370,17 @@ function render(lb, ev, evMissing) {
   const mobPct  = totDev > 0 ? Math.round((mobEv + pwaEv) / totDev * 100) : 0;
   const deskPct = totDev > 0 ? Math.round(deskEv / totDev * 100) : 0;
   const pwaPct  = totDev > 0 ? Math.round(pwaEv / (mobEv + pwaEv || 1) * 100) : 0;
+
+  // ── Unique devices (app_open events with persistent device ID) ──
+  const didMap = {};
+  ao.forEach(e => { const did = e.meta?.did; if (did && !didMap[did]) didMap[did] = e.meta?.device || 'unknown'; });
+  const uniqDevTotal  = Object.keys(didMap).length;
+  const uniqDevMob    = Object.values(didMap).filter(d => d.startsWith('mobile')).length;
+  const uniqDevPwa    = Object.values(didMap).filter(d => d === 'mobile-pwa').length;
+  const uniqDevDesk   = Object.values(didMap).filter(d => d === 'desktop').length;
+  const uniqMobPct    = uniqDevTotal > 0 ? Math.round(uniqDevMob / uniqDevTotal * 100) : 0;
+  const uniqDeskPct   = uniqDevTotal > 0 ? Math.round(uniqDevDesk / uniqDevTotal * 100) : 0;
+  const totalVisits   = ao.length;
 
   // Bot race difficulty breakdown
   const raceDiff = {easy:0,medium:0,hard:0};
@@ -396,9 +410,9 @@ function render(lb, ev, evMissing) {
     <!-- ── Tijdfilter ── -->
     <div class="filter-bar">
       <span class="filter-lbl">Periode</span>
-      <button class="filter-btn ${window._filter==='all'?'active':''}" onclick="window._filter='all';render(window._lb,window._ev,window._evMissing)">Altijd</button>
-      <button class="filter-btn ${window._filter==='7d'?'active':''}" onclick="window._filter='7d';render(window._lb,window._ev,window._evMissing)">Afgelopen 7 dagen</button>
-      <button class="filter-btn ${window._filter==='24h'?'active':''}" onclick="window._filter='24h';render(window._lb,window._ev,window._evMissing)">Afgelopen 24 uur</button>
+      <button class="filter-btn ${window._filter==='all'?'active':''}" onclick="window._filter='all';render(window._lb,window._ev,window._evMissing,window._ao||[])">Altijd</button>
+      <button class="filter-btn ${window._filter==='7d'?'active':''}" onclick="window._filter='7d';render(window._lb,window._ev,window._evMissing,window._ao||[])">Afgelopen 7 dagen</button>
+      <button class="filter-btn ${window._filter==='24h'?'active':''}" onclick="window._filter='24h';render(window._lb,window._ev,window._evMissing,window._ao||[])">Afgelopen 24 uur</button>
     </div>
 
     <!-- ── Quizzen KPIs ── -->
@@ -449,19 +463,51 @@ function render(lb, ev, evMissing) {
 
     <!-- ── Platform ── -->
     <div class="sec">Platform</div>
+
+    <!-- Unieke apparaten (app_open) -->
+    <div class="kpi-grid" style="margin-bottom:.6rem">
+      <div class="kpi c-tl">
+        <div class="kpi-lbl">📲 Unieke apparaten</div>
+        <div class="kpi-val">${uniqDevTotal||'—'}</div>
+        <div class="kpi-sub">${totalVisits} paginabezoeken getrackt${uniqDevTotal===0?' · tracking actief na eerste bezoek':''}</div>
+      </div>
+      <div class="kpi c-bl">
+        <div class="kpi-lbl">📱 Mobiel (uniek)</div>
+        <div class="kpi-val">${uniqDevMob||'—'}</div>
+        <div class="kpi-sub">${uniqMobPct}% van unieke apparaten${uniqDevPwa>0?' · '+uniqDevPwa+' via PWA':''}</div>
+      </div>
+      <div class="kpi c-gr">
+        <div class="kpi-lbl">🖥️ Desktop (uniek)</div>
+        <div class="kpi-val">${uniqDevDesk||'—'}</div>
+        <div class="kpi-sub">${uniqDeskPct}% van unieke apparaten</div>
+      </div>
+      ${uniqDevTotal>0?`<div class="kpi c-pu">
+        <div class="kpi-lbl">📊 Verdeling unieke apparaten</div>
+        <div style="margin:6px 0 4px"><div style="height:10px;border-radius:5px;overflow:hidden;background:rgba(255,255,255,.07);display:flex">
+          <div style="width:${uniqMobPct}%;background:var(--blue);border-radius:5px 0 0 5px;transition:width .6s"></div>
+          <div style="width:${uniqDeskPct}%;background:var(--green);border-radius:0 5px 5px 0"></div>
+        </div></div>
+        <div style="display:flex;gap:1rem;font-size:.72rem;color:var(--muted)">
+          <span><span style="color:var(--blue)">●</span> Mobiel ${uniqMobPct}%</span>
+          <span><span style="color:var(--green)">●</span> Desktop ${uniqDeskPct}%</span>
+        </div>
+      </div>`:''}
+    </div>
+
+    <!-- Feature events per apparaat -->
     <div class="row-3">
       <div class="kpi c-bl">
-        <div class="kpi-lbl">📱 Mobiel</div>
+        <div class="kpi-lbl">📱 Mobiel (events)</div>
         <div class="kpi-val">${mobEv + pwaEv}</div>
         <div class="kpi-sub">${mobPct}% van getrackte events${pwaEv > 0 ? ' · waarvan ' + pwaPct + '% via PWA' : ''}</div>
       </div>
       <div class="kpi c-gr">
-        <div class="kpi-lbl">🖥️ Desktop</div>
+        <div class="kpi-lbl">🖥️ Desktop (events)</div>
         <div class="kpi-val">${deskEv}</div>
         <div class="kpi-sub">${deskPct}% van getrackte events</div>
       </div>
       <div class="kpi c-pu">
-        <div class="kpi-lbl">📊 Mobiel / Desktop</div>
+        <div class="kpi-lbl">📊 Mobiel / Desktop (events)</div>
         <div style="margin:6px 0 4px">
           <div style="height:10px;border-radius:5px;overflow:hidden;background:rgba(255,255,255,.07);display:flex">
             <div style="width:${mobPct}%;background:var(--blue);border-radius:5px 0 0 5px;transition:width .6s"></div>

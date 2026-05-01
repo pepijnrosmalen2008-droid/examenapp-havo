@@ -9787,6 +9787,8 @@ function _rlReset(){_rl.n=0;_rl.until=0;}
 const SUPABASE_URL='https://sxrjdssmgwwygtskovyc.supabase.co';
 const SUPABASE_KEY='eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InN4cmpkc3NtZ3d3eWd0c2tvdnljIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzM2OTEwNDAsImV4cCI6MjA4OTI2NzA0MH0.iML8S6I6wZ9zGUDBZJleyFHlpPYmUvdGyNyDSYcxon4';
 const SB=window.supabase.createClient(SUPABASE_URL,SUPABASE_KEY);
+// Persistent device ID — generated once, stored in localStorage
+const _DID=(()=>{try{let id=localStorage.getItem('slagio_did');if(!id){id=(crypto.randomUUID?crypto.randomUUID():'x'+Math.random().toString(36).slice(2)+Date.now().toString(36));localStorage.setItem('slagio_did',id);}return id;}catch(e){return null;}})();
 async function trackEvent(type,meta){
   try{
     const vak=typeof ST!=='undefined'?ST?.vak:null;
@@ -9801,10 +9803,12 @@ async function trackEvent(type,meta){
       event_type:type,
       vak_naam:vak?.naam||null,
       niveau:niveau,
-      meta:{...(meta||{}),device}
+      meta:{...(meta||{}),device,did:_DID}
     }).then(()=>{}).catch(()=>{});
   }catch(e){}
 }
+// Track app open once per browser session
+if(!sessionStorage.getItem('_slagio_ao')){sessionStorage.setItem('_slagio_ao','1');setTimeout(()=>trackEvent('app_open',{}),2000);}
 let currentUser=null;
 // Check existing session on load
 SB.auth.getSession().then(({data:{session}})=>{
