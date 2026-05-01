@@ -134,7 +134,7 @@
     .feed-dot.fresh{background:var(--green);box-shadow:0 0 0 3px rgba(var(--green-rgb),.18)}
     .feed-dot.old{background:rgba(255,255,255,.18)}
     .feed-main{flex:1;min-width:0}
-    .feed-name{font-weight:700;font-size:.8rem}
+    .feed-name{font-weight:700;font-size:.8rem;display:flex;align-items:center;gap:.3rem;flex-wrap:wrap}
     .feed-detail{font-size:.72rem;color:var(--muted);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
     .feed-time{font-size:.68rem;color:var(--muted);white-space:nowrap;flex-shrink:0;margin-top:1px}
 
@@ -153,6 +153,13 @@
     .loading{text-align:center;padding:3rem;color:var(--muted)}
     .sql-box{background:rgba(0,0,0,.4);border:1px solid var(--border);border-radius:10px;padding:.85rem 1rem;font-family:monospace;font-size:.75rem;color:#94a3b8;white-space:pre-wrap;line-height:1.7;margin-top:.5rem}
     .warn-banner{background:rgba(var(--yellow-rgb),.07);border:1px solid rgba(var(--yellow-rgb),.25);border-radius:11px;padding:.85rem 1.1rem;font-size:.82rem;color:rgba(var(--yellow-rgb),.9);display:flex;gap:.7rem;align-items:flex-start}
+
+    /* ── Time filter ── */
+    .filter-bar{display:flex;gap:.4rem;align-items:center;margin-bottom:1rem;flex-wrap:wrap}
+    .filter-lbl{font-size:.72rem;color:var(--muted);margin-right:.15rem;font-weight:600;text-transform:uppercase;letter-spacing:.07em}
+    .filter-btn{padding:.28rem .75rem;border-radius:8px;font-size:.75rem;font-weight:600;cursor:pointer;border:1px solid var(--border);background:transparent;color:var(--muted);transition:all .15s;font-family:var(--font)}
+    .filter-btn:hover{border-color:rgba(var(--or-rgb),.35);color:var(--text)}
+    .filter-btn.active{background:rgba(var(--or-rgb),.12);border-color:rgba(var(--or-rgb),.4);color:var(--or)}
   </style>
 </head>
 <body>
@@ -229,6 +236,7 @@ if (authed()) {
   init();
 }
 
+window._filter = window._filter || 'all';
 function init() { startClock(); loadAll(); }
 
 function startClock() {
@@ -246,6 +254,7 @@ async function loadAll() {
     const lb = (lbRes.data || []).filter(e => (e.score||0) <= 1000);
     const ev = evRes.data || [];
     const evMissing = !!evRes.error;
+    window._lb = lb; window._ev = ev; window._evMissing = evMissing;
     render(lb, ev, evMissing);
   } catch(e) {
     document.getElementById('content').innerHTML =
@@ -262,6 +271,14 @@ function timeAgo(iso) {
 }
 
 function render(lb, ev, evMissing) {
+  // Apply time filter
+  const filterMs = window._filter==='24h'?86400000:window._filter==='7d'?7*86400000:null;
+  if (filterMs) {
+    const cutoff = new Date(Date.now()-filterMs).toISOString();
+    lb = lb.filter(e=>e.created_at>=cutoff);
+    ev = ev.filter(e=>e.created_at>=cutoff);
+  }
+
   const now = Date.now();
   const today = new Date().toISOString().slice(0,10);
   const yest  = new Date(now-86400000).toISOString().slice(0,10);
@@ -368,13 +385,21 @@ function render(lb, ev, evMissing) {
 
   // Recent combined feed
   const feedItems = [
-    ...lb.slice(0,30).map(e=>({ts:e.created_at,name:e.naam||'anoniem',detail:`Quiz · ${e.vak_naam||'?'} · ${e.score}pts`,type:'quiz'})),
-    ...ev.slice(0,30).map(e=>({ts:e.created_at,name:e.naam||'anoniem',detail:`${FEAT.find(f=>f.key===e.event_type)?.label||e.event_type} · ${e.vak_naam||'?'}`,type:e.event_type}))
+    ...lb.slice(0,30).map(e=>({ts:e.created_at,name:e.naam||'anoniem',detail:`Quiz · ${e.vak_naam||'?'} · ${e.score}pts`,type:'quiz',niveau:e.niveau,device:null})),
+    ...ev.slice(0,30).map(e=>({ts:e.created_at,name:e.naam||'anoniem',detail:`${FEAT.find(f=>f.key===e.event_type)?.label||e.event_type} · ${e.vak_naam||'?'}`,type:e.event_type,niveau:e.niveau,device:e.meta?.device}))
   ].sort((a,b)=>new Date(b.ts)-new Date(a.ts)).slice(0,25);
 
   const typeIcon = t => FEAT.find(f=>f.key===t)?.icon||'⚡';
 
   document.getElementById('content').innerHTML = `
+
+    <!-- ── Tijdfilter ── -->
+    <div class="filter-bar">
+      <span class="filter-lbl">Periode</span>
+      <button class="filter-btn ${window._filter==='all'?'active':''}" onclick="window._filter='all';render(window._lb,window._ev,window._evMissing)">Altijd</button>
+      <button class="filter-btn ${window._filter==='7d'?'active':''}" onclick="window._filter='7d';render(window._lb,window._ev,window._evMissing)">Afgelopen 7 dagen</button>
+      <button class="filter-btn ${window._filter==='24h'?'active':''}" onclick="window._filter='24h';render(window._lb,window._ev,window._evMissing)">Afgelopen 24 uur</button>
+    </div>
 
     <!-- ── Quizzen KPIs ── -->
     <div class="sec">Quizzen & gebruikers</div>
@@ -589,10 +614,15 @@ CREATE POLICY "ev_select" ON events FOR SELECT USING (true);</div>
           <div class="feed">
             ${feedItems.map(e=>{
               const fresh = Date.now()-new Date(e.ts).getTime() < 3600000;
+              const devIcon = e.device==='mobile-pwa'?'📲':e.device==='mobile'?'📱':e.device==='desktop'?'🖥️':'';
               return `<div class="feed-row">
                 <span class="feed-dot ${fresh?'fresh':'old'}"></span>
                 <div class="feed-main">
-                  <div class="feed-name">${typeIcon(e.type)} ${e.name}</div>
+                  <div class="feed-name">
+                    <span>${typeIcon(e.type)} ${e.name}</span>
+                    ${e.niveau?`<span class="pill ${e.niveau}">${e.niveau.toUpperCase()}</span>`:''}
+                    ${devIcon?`<span title="${e.device||''}" style="font-size:.72rem;opacity:.75">${devIcon}</span>`:''}
+                  </div>
                   <div class="feed-detail">${e.detail}</div>
                 </div>
                 <span class="feed-time">${timeAgo(e.ts)}</span>
