@@ -405,6 +405,51 @@ function render(lb, ev, evMissing, ao=[]) {
 
   const typeIcon = t => FEAT.find(f=>f.key===t)?.icon||'⚡';
 
+  // ── Anoniem vs. ingelogd ──
+  const namedSess = lb.filter(e=>e.naam).length;
+  const anonSess  = lb.length - namedSess;
+  const namedPct  = lb.length > 0 ? Math.round(namedSess/lb.length*100) : 0;
+
+  // ── Oefentijd schatting ──
+  const totalSecs = lb.reduce((s,e)=>s+(e.avg_tijd||0)*(e.total||0),0);
+  const totalMins = Math.round(totalSecs/60);
+  const oefenUur  = Math.floor(totalMins/60);
+  const oefenMin  = totalMins%60;
+  const oefentijdStr = oefenUur>0 ? `${oefenUur}u ${oefenMin}m` : `${totalMins}m`;
+
+  // ── Domein populariteit ──
+  const domeinMap = {};
+  lb.filter(e=>e.domein_naam).forEach(e=>{domeinMap[e.domein_naam]=(domeinMap[e.domein_naam]||0)+1;});
+  const topDomein = Object.entries(domeinMap).sort((a,b)=>b[1]-a[1]).slice(0,10);
+  const maxDomein = topDomein[0]?.[1]||1;
+
+  // ── Nauwkeurigheid per vak ──
+  const vakAccMap = {};
+  lb.filter(e=>e.total>0).forEach(e=>{
+    const v=e.vak_naam||'?';
+    if(!vakAccMap[v])vakAccMap[v]={sum:0,n:0};
+    vakAccMap[v].sum+=e.correct/e.total;
+    vakAccMap[v].n++;
+  });
+  const vakAccList = Object.entries(vakAccMap)
+    .map(([v,d])=>({vak:v,acc:Math.round(d.sum/d.n*100),n:d.n}))
+    .sort((a,b)=>b.acc-a.acc);
+
+  // ── Piekuren (lb + ev gecombineerd) ──
+  const hourMap = new Array(24).fill(0);
+  [...lb,...ev].forEach(e=>{if(e.created_at){hourMap[new Date(e.created_at).getHours()]++;}});
+  const maxHour = Math.max(...hourMap,1);
+  const peakHour = hourMap.indexOf(maxHour);
+
+  // ── Terugkeerrate (altijd op ruwe data, niet gefilterd) ──
+  const rawLb = window._lb || [];
+  const cut7  = new Date(Date.now()-7*86400000).toISOString().slice(0,10);
+  const cut14 = new Date(Date.now()-14*86400000).toISOString().slice(0,10);
+  const usersLast7 = new Set(rawLb.filter(e=>e.naam&&(e.created_at?.slice(0,10)||'')>=cut7).map(e=>e.naam));
+  const usersPrev7 = new Set(rawLb.filter(e=>e.naam&&(e.created_at?.slice(0,10)||'')>=cut14&&(e.created_at?.slice(0,10)||'')<cut7).map(e=>e.naam));
+  const returnUsers = [...usersLast7].filter(n=>usersPrev7.has(n)).length;
+  const retentionPct = usersLast7.size>0 ? Math.round(returnUsers/usersLast7.size*100) : 0;
+
   document.getElementById('content').innerHTML = `
 
     <!-- ── Tijdfilter ── -->
@@ -426,6 +471,8 @@ function render(lb, ev, evMissing, ao=[]) {
       <div class="kpi c-or"><div class="kpi-lbl">Gem. score</div><div class="kpi-val">${avgScore}</div><div class="kpi-sub">Max 1.000 per quiz</div></div>
       <div class="kpi c-gr"><div class="kpi-lbl">Gem. nauwkeurigheid</div><div class="kpi-val">${avgAcc}%</div><div class="kpi-sub">Correcte antwoorden</div></div>
       <div class="kpi c-bl"><div class="kpi-lbl">HAVO / VWO</div><div class="kpi-val">${Math.round(havo/(havo+vwo||1)*100)}%</div><div class="kpi-sub">${havo} HAVO · ${vwo} VWO</div></div>
+      <div class="kpi c-tl"><div class="kpi-lbl">👤 Ingelogd</div><div class="kpi-val">${namedPct}%</div><div class="kpi-sub">${namedSess} met naam · ${anonSess} anoniem</div></div>
+      <div class="kpi c-yw"><div class="kpi-lbl">⏱ Oefentijd (schat.)</div><div class="kpi-val">${oefentijdStr}</div><div class="kpi-sub">${Math.round(totalSecs/60/lb.length||0)}m gem. per sessie</div></div>
     </div>
 
     <!-- ── Sessies per dag ── -->
@@ -458,6 +505,69 @@ function render(lb, ev, evMissing, ao=[]) {
             </div>`;
           }).join('')}
         </div>
+      </div>
+    </div>
+
+    <!-- ── Inzichten ── -->
+    <div class="sec">Inzichten</div>
+    <div class="row-2">
+      <div class="panel">
+        <div class="panel-h">🕐 Piekuren <span>activiteit per uur van de dag · quiz + features · piek: ${peakHour}:00</span></div>
+        <div class="bar-wrap" style="height:120px">
+          ${hourMap.map((c,h)=>{
+            const ht=Math.round((c/maxHour)*112);
+            const isPeak=c===maxHour;
+            return `<div class="bar-col" title="${h}:00 — ${c} acties">
+              <div class="bar-num" style="font-size:7px">${c||''}</div>
+              <div class="bar-bar" style="height:${Math.max(ht,2)}px;${isPeak?'background:var(--or)':''}"></div>
+              <div class="bar-lbl">${h}</div>
+            </div>`;
+          }).join('')}
+        </div>
+      </div>
+      <div class="panel" style="display:flex;flex-direction:column;gap:.6rem">
+        <div class="panel-h">🔄 Terugkeerrate <span>afgelopen 7d vs. week ervoor (op naam)</span></div>
+        <div style="display:flex;align-items:center;gap:1.2rem">
+          <div>
+            <div style="font-family:var(--font-head);font-size:2.6rem;font-weight:800;color:${retentionPct>=50?'var(--green)':retentionPct>=30?'var(--or)':'var(--red)'};line-height:1">${retentionPct}%</div>
+            <div style="font-size:.75rem;color:var(--muted);margin-top:.3rem">keert terug</div>
+          </div>
+          <div style="flex:1;font-size:.78rem;color:var(--muted);display:flex;flex-direction:column;gap:.2rem">
+            <div><span style="color:#fff;font-weight:700">${usersLast7.size}</span> unieke spelers afgelopen 7d</div>
+            <div><span style="color:#fff;font-weight:700">${usersPrev7.size}</span> unieke spelers week daarvoor</div>
+            <div><span style="color:#fff;font-weight:700">${returnUsers}</span> terugkeerders (overlap)</div>
+          </div>
+        </div>
+        <div class="sbar-bg" style="height:8px;border-radius:4px">
+          <div class="sbar-fill" style="height:8px;width:${retentionPct}%;background:${retentionPct>=50?'var(--green)':retentionPct>=30?'var(--or)':'var(--red)'};border-radius:4px;transition:width .6s"></div>
+        </div>
+      </div>
+    </div>
+    <div class="row-2" style="margin-top:.6rem">
+      <div class="panel">
+        <div class="panel-h">📚 Domein populariteit <span>top 10 geoefende domeinen</span></div>
+        ${topDomein.length ? topDomein.map(([d,c],i)=>{
+          const pct=Math.round(c/maxDomein*100);
+          const cols=['var(--or)','var(--blue)','var(--green)','var(--purple)','var(--teal)','var(--yellow)','var(--red)','#94a3b8','var(--or)','var(--blue)'];
+          return `<div style="display:flex;align-items:center;gap:.5rem;font-size:.78rem;margin-bottom:.4rem">
+            <span style="color:var(--muted);min-width:.9rem">${i+1}</span>
+            <span style="flex:1;color:#fff;font-weight:600;overflow:hidden;text-overflow:ellipsis;white-space:nowrap" title="${d}">${d}</span>
+            <div class="sbar-bg" style="width:70px"><div class="sbar-fill" style="width:${pct}%;background:${cols[i%cols.length]}"></div></div>
+            <span style="font-weight:700;min-width:1.5rem;text-align:right">${c}</span>
+          </div>`;
+        }).join('') : '<span style="color:var(--muted);font-size:.78rem">Nog geen domein-data</span>'}
+      </div>
+      <div class="panel">
+        <div class="panel-h">🎯 Nauwkeurigheid per vak <span>gem. % correct · hoog = makkelijk</span></div>
+        ${vakAccList.length ? vakAccList.map(d=>{
+          const col=d.acc>=80?'var(--green)':d.acc>=60?'var(--or)':'var(--red)';
+          return `<div style="display:flex;align-items:center;gap:.5rem;font-size:.78rem;margin-bottom:.4rem">
+            <span style="flex:1;color:#fff;font-weight:600;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">${d.vak}</span>
+            <div class="sbar-bg" style="width:70px"><div class="sbar-fill" style="width:${d.acc}%;background:${col}"></div></div>
+            <span style="font-weight:700;min-width:2rem;text-align:right;color:${col}">${d.acc}%</span>
+            <span style="color:var(--muted);font-size:.7rem;min-width:1.5rem;text-align:right">${d.n}×</span>
+          </div>`;
+        }).join('') : '<span style="color:var(--muted);font-size:.78rem">Nog geen data</span>'}
       </div>
     </div>
 
