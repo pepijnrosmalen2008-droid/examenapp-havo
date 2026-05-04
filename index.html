@@ -8269,7 +8269,10 @@ function _routeFromPath(){
   const path=location.pathname.replace(/\/$/,'');
   if(path==='/havo'){chooseLevel('havo',true);return;}
   if(path==='/vwo'){chooseLevel('vwo',true);return;}
-  // pad onbekend: toon niveau-kiezer
+  // Terugkerende gebruiker: direct naar opgeslagen niveau — sla welkomstscherm over
+  const saved=localStorage.getItem('examenapp_level');
+  if(saved==='havo'||saved==='vwo'){chooseLevel(saved,true);return;}
+  // Nieuwe gebruiker: toon niveau-kiezer
   show('sc-welcome',true);
   _updatePageSEO(null);
 }
