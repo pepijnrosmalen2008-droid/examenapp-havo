@@ -252,7 +252,7 @@ async function loadAll() {
       SB.from('events').select('naam,event_type,vak_naam,niveau,meta,created_at').order('created_at',{ascending:false}).limit(2000),
       SB.from('events').select('meta,niveau,created_at').eq('event_type','app_open').order('created_at',{ascending:false}).limit(5000)
     ]);
-    const lb = (lbRes.data || []).filter(e => (e.score||0) <= 1000);
+    const lb = (lbRes.data || []).filter(e => (e.score||0) <= 1000 && (e.total||0) > 5);
     const ev = evRes.data || [];
     const ao = aoRes.data || [];
     const evMissing = !!evRes.error;

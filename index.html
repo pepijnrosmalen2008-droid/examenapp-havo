@@ -11680,7 +11680,7 @@ function renderChallengeResult(){
   const sWrap=document.getElementById('chal-share-wrap');
   if(!rWrap||!sWrap)return;
   if(!_chalState){rWrap.innerHTML='';sWrap.innerHTML='';return;}
-  const myScore=ST.antwrd.reduce((s,a)=>s+a.pts*50+Math.round((a.tijdOver||0)/15*50),0);
+  const myScore=ST.antwrd.reduce((s,a)=>s+a.pts*50+Math.round((a.tijdOver||0)/20*50),0);
   const theirScore=_chalState.score;
   const naam=_chalState.naam;
   const myWin=myScore>theirScore,tie=myScore===theirScore;
@@ -11698,7 +11698,7 @@ function renderChallengeResult(){
 function daagUit(){
   if(!ST.vak||!ST.domein)return;
   const naam=localStorage.getItem('slagio_naam')||(currentUser&&currentUser.user_metadata&&currentUser.user_metadata.naam)||'Jij';
-  const myScore=ST.antwrd.reduce((s,a)=>s+a.pts*50+Math.round((a.tijdOver||0)/15*50),0);
+  const myScore=ST.antwrd.reduce((s,a)=>s+a.pts*50+Math.round((a.tijdOver||0)/20*50),0);
   const url=buildChallengeUrl(ST.vak.id,ST.domein.id,myScore,naam);
   const tekst='Ik scoorde '+myScore+'/1000 bij '+ST.vak.naam+' op Slagio — kun jij mij verslaan? 🎯\n'+url;
   if(navigator.share){navigator.share({title:'Slagio uitdaging',text:tekst,url:url}).catch(()=>{});}
@@ -12944,7 +12944,7 @@ function toonRes(){
     if(ST.mode==='snel'){
       const goed=ST.antwrd.filter(a=>a.pts===1).length;
       const fout=ST.antwrd.filter(a=>a.pts===0).length;
-      const lbScoreDisplay=ST.antwrd.reduce((sum,a)=>sum+a.pts*50+Math.round((a.tijdOver||0)/15*50),0);
+      const lbScoreDisplay=ST.antwrd.reduce((sum,a)=>sum+a.pts*50+Math.round((a.tijdOver||0)/20*50),0);
       const maxLbScore=tot*100;
       bdHtml=`<div class="rbr"><span>✓ Correct</span><span class="rbc">${goed} / ${tot}</span></div>
         <div class="rbr"><span>✗ Fout of tijd op</span><span class="rbw">${fout}</span></div>
@@ -13115,7 +13115,7 @@ function toonRes(){
       const goed=ST.antwrd.filter(a=>a.pts===1).length;
       const tijden=ST.tijdPerVraag||[];
       const totalTijd=tijden.reduce((a,b)=>a+b,0);
-      const lbScore=ST.antwrd.reduce((sum,a)=>sum+a.pts*50+Math.round((a.tijdOver||0)/15*50),0);
+      const lbScore=ST.antwrd.reduce((sum,a)=>sum+a.pts*50+Math.round((a.tijdOver||0)/20*50),0);
       const avgTijd=tijden.length?Math.round(totalTijd/tijden.length*10)/10:0;
       const prof=JSON.parse(localStorage.getItem(PROF_KEY)||'{}');
       const naam=prof.naam||'Anoniem';
@@ -15172,7 +15172,7 @@ async function loadLeaderboardFromSupabase(){
     // Merge: keep bots + local entries, add remote on top
     const local=getLbEntries();
     const bots=local.filter(e=>e.isBot);
-    const merged=[...remote,...bots].filter(e=>e.score<=1000).sort((a,b)=>b.score-a.score).slice(0,200);
+    const merged=[...remote,...bots].filter(e=>e.score<=1000&&(e.tot||0)>5).sort((a,b)=>b.score-a.score).slice(0,200);
     localStorage.setItem(getLbKey(),JSON.stringify(merged));
   }catch(e){console.warn('leaderboard load error:',e);}
 }
