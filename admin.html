@@ -247,17 +247,19 @@ function startClock() {
 
 async function loadAll() {
   try {
-    const [lbRes, evRes, aoRes] = await Promise.all([
+    const [lbRes, evRes, aoRes, fbRes] = await Promise.all([
       SB.from('leaderboard').select('user_id,naam,score,vak_naam,domein_naam,niveau,correct,total,avg_tijd,created_at').order('created_at',{ascending:false}).limit(1000),
       SB.from('events').select('naam,event_type,vak_naam,niveau,meta,created_at').order('created_at',{ascending:false}).limit(2000),
-      SB.from('events').select('meta,niveau,created_at').eq('event_type','app_open').order('created_at',{ascending:false}).limit(5000)
+      SB.from('events').select('meta,niveau,created_at').eq('event_type','app_open').order('created_at',{ascending:false}).limit(5000),
+      SB.from('events').select('meta,created_at').eq('event_type','feedback').order('created_at',{ascending:false}).limit(2000)
     ]);
     const lb = (lbRes.data || []).filter(e => (e.score||0) <= 1000 && (e.total||0) > 5);
     const ev = evRes.data || [];
     const ao = aoRes.data || [];
+    const fb = fbRes.data || [];
     const evMissing = !!evRes.error;
-    window._lb = lb; window._ev = ev; window._evMissing = evMissing; window._ao = ao;
-    render(lb, ev, evMissing, ao);
+    window._lb = lb; window._ev = ev; window._evMissing = evMissing; window._ao = ao; window._fb = fb;
+    render(lb, ev, evMissing, ao, fb);
   } catch(e) {
     document.getElementById('content').innerHTML =
       `<div class="loading" style="color:var(--red)">Laad-fout: ${e.message}</div>`;
@@ -272,7 +274,7 @@ function timeAgo(iso) {
   return Math.floor(ms/86400000) + 'd';
 }
 
-function render(lb, ev, evMissing, ao=[]) {
+function render(lb, ev, evMissing, ao=[], fb=[]) {
   // Apply time filter
   const filterMs = window._filter==='24h'?86400000:window._filter==='7d'?7*86400000:null;
   if (filterMs) {
@@ -280,6 +282,7 @@ function render(lb, ev, evMissing, ao=[]) {
     lb = lb.filter(e=>e.created_at>=cutoff);
     ev = ev.filter(e=>e.created_at>=cutoff);
     ao = ao.filter(e=>e.created_at>=cutoff);
+    fb = fb.filter(e=>e.created_at>=cutoff);
   }
 
   const now = Date.now();
@@ -405,6 +408,22 @@ function render(lb, ev, evMissing, ao=[]) {
 
   const typeIcon = t => FEAT.find(f=>f.key===t)?.icon||'⚡';
 
+  // ── Gebruikersfeedback ──
+  const FB_LABELS = {snel:'Snelle Quiz', flashcard:'Flashcards', simulatietoets:'Simulatietoets', bot_race:'Bot Race'};
+  const fbByFeature = {};
+  fb.forEach(e => {
+    const feat = e.meta?.feature; const r = Number(e.meta?.rating);
+    if (!feat || !r || r < 1 || r > 5) return;
+    if (!fbByFeature[feat]) fbByFeature[feat] = {sum:0, count:0, dist:[0,0,0,0,0]};
+    fbByFeature[feat].sum += r;
+    fbByFeature[feat].count++;
+    fbByFeature[feat].dist[r-1]++;
+  });
+  const fbTotal = fb.filter(e=>e.meta?.rating).length;
+  const fbOverallSum = fb.reduce((s,e)=>s+(Number(e.meta?.rating)||0),0);
+  const fbOverallAvg = fbTotal > 0 ? (fbOverallSum/fbTotal).toFixed(1) : null;
+  const fbFeatureList = Object.entries(fbByFeature).sort((a,b)=>b[1].count-a[1].count);
+
   // ── Anoniem vs. ingelogd ──
   const namedSess = lb.filter(e=>e.naam).length;
   const anonSess  = lb.length - namedSess;
@@ -455,9 +474,9 @@ function render(lb, ev, evMissing, ao=[]) {
     <!-- ── Tijdfilter ── -->
     <div class="filter-bar">
       <span class="filter-lbl">Periode</span>
-      <button class="filter-btn ${window._filter==='all'?'active':''}" onclick="window._filter='all';render(window._lb,window._ev,window._evMissing,window._ao||[])">Altijd</button>
-      <button class="filter-btn ${window._filter==='7d'?'active':''}" onclick="window._filter='7d';render(window._lb,window._ev,window._evMissing,window._ao||[])">Afgelopen 7 dagen</button>
-      <button class="filter-btn ${window._filter==='24h'?'active':''}" onclick="window._filter='24h';render(window._lb,window._ev,window._evMissing,window._ao||[])">Afgelopen 24 uur</button>
+      <button class="filter-btn ${window._filter==='all'?'active':''}" onclick="window._filter='all';render(window._lb,window._ev,window._evMissing,window._ao||[],window._fb||[])">Altijd</button>
+      <button class="filter-btn ${window._filter==='7d'?'active':''}" onclick="window._filter='7d';render(window._lb,window._ev,window._evMissing,window._ao||[],window._fb||[])">Afgelopen 7 dagen</button>
+      <button class="filter-btn ${window._filter==='24h'?'active':''}" onclick="window._filter='24h';render(window._lb,window._ev,window._evMissing,window._ao||[],window._fb||[])">Afgelopen 24 uur</button>
     </div>
 
     <!-- ── Quizzen KPIs ── -->
@@ -570,6 +589,53 @@ function render(lb, ev, evMissing, ao=[]) {
         }).join('') : '<span style="color:var(--muted);font-size:.78rem">Nog geen data</span>'}
       </div>
     </div>
+
+    <!-- ── Gebruikersfeedback ── -->
+    <div class="sec">Gebruikersfeedback</div>
+    <div class="kpi-grid" style="margin-bottom:.6rem">
+      <div class="kpi c-yw">
+        <div class="kpi-lbl">⭐ Gem. waardering</div>
+        <div class="kpi-val">${fbOverallAvg ?? '—'}</div>
+        <div class="kpi-sub">${fbTotal} beoordelingen totaal</div>
+      </div>
+      ${fbFeatureList.map(([feat,d])=>{
+        const avg=(d.sum/d.count).toFixed(1);
+        const stars=Math.round(d.sum/d.count);
+        const starStr='★'.repeat(stars)+'☆'.repeat(5-stars);
+        const col=avg>=4?'var(--green)':avg>=3?'var(--or)':'var(--red)';
+        return `<div class="kpi c-bl">
+          <div class="kpi-lbl">${FEAT.find(f=>f.key===feat)?.icon||'⚡'} ${FB_LABELS[feat]||feat}</div>
+          <div class="kpi-val" style="color:${col};font-size:1.6rem">${avg} <span style="font-size:.9rem;color:var(--yellow);letter-spacing:1px">${starStr}</span></div>
+          <div class="kpi-sub">${d.count} beoordeling${d.count!==1?'en':''}</div>
+        </div>`;
+      }).join('')}
+    </div>
+    ${fbFeatureList.length > 0 ? `
+    <div class="panel" style="margin-bottom:.6rem">
+      <div class="panel-h">Verdeling per feature <span>aantal beoordelingen per ster</span></div>
+      <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:1rem">
+        ${fbFeatureList.map(([feat,d])=>{
+          const avg=(d.sum/d.count).toFixed(1);
+          const maxDist=Math.max(...d.dist,1);
+          const icon=FEAT.find(f=>f.key===feat)?.icon||'⚡';
+          return `<div>
+            <div style="font-size:.78rem;font-weight:700;color:#fff;margin-bottom:.5rem">${icon} ${FB_LABELS[feat]||feat} — ⌀ ${avg}</div>
+            ${[5,4,3,2,1].map(s=>{
+              const cnt=d.dist[s-1];
+              const pct=Math.round(cnt/maxDist*100);
+              const col=s>=4?'var(--green)':s===3?'var(--or)':'var(--red)';
+              return `<div style="display:flex;align-items:center;gap:.4rem;margin-bottom:.25rem;font-size:.75rem">
+                <span style="color:var(--yellow);min-width:1.1rem">${'★'.repeat(s)}</span>
+                <div class="sbar-bg" style="flex:1"><div class="sbar-fill" style="width:${pct}%;background:${col}"></div></div>
+                <span style="color:var(--muted);min-width:1rem;text-align:right">${cnt}</span>
+              </div>`;
+            }).join('')}
+          </div>`;
+        }).join('')}
+      </div>
+    </div>` : `<div class="panel" style="margin-bottom:.6rem;text-align:center;color:var(--muted);font-size:.82rem;padding:1.5rem">
+      Nog geen feedback ontvangen — verschijnt zodra leerlingen een quiz of flashcard-sessie afronden.
+    </div>`}
 
     <!-- ── Platform ── -->
     <div class="sec">Platform</div>
