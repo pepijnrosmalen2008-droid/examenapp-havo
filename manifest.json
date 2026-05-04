@@ -1,7 +1,7 @@
 {
   "name": "Slagio",
   "short_name": "Slagio",
-  "description": "Slaag je eindexamen met Slagio — quizzen, samenvattingen en oefenvragen voor HAVO & VWO",
+  "description": "Gratis examenvoorbereiding HAVO & VWO 2026: 2.000+ oefenvragen, per domein CE of SE gemarkeerd, echte CE-examens 2019–2025, simulatietoets, spaced repetition, studieplan, Bot Race, leaderboard, cijfercalculator. Offline als app.",
   "start_url": "/",
   "display": "standalone",
   "background_color": "#0d0d1a",
