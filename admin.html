@@ -251,7 +251,7 @@ async function loadAll() {
       SB.from('leaderboard').select('user_id,naam,score,vak_naam,domein_naam,niveau,correct,total,avg_tijd,created_at').order('created_at',{ascending:false}).limit(1000),
       SB.from('events').select('naam,event_type,vak_naam,niveau,meta,created_at').order('created_at',{ascending:false}).limit(2000),
       SB.from('events').select('meta,niveau,created_at').eq('event_type','app_open').order('created_at',{ascending:false}).limit(5000),
-      SB.from('events').select('meta,created_at').eq('event_type','feedback').order('created_at',{ascending:false}).limit(2000)
+      SB.from('events').select('meta,vak_naam,created_at').eq('event_type','feedback').order('created_at',{ascending:false}).limit(2000)
     ]);
     const lb = (lbRes.data || []).filter(e => (e.score||0) <= 1000 && (e.total||0) > 5);
     const ev = evRes.data || [];
@@ -410,8 +410,25 @@ function render(lb, ev, evMissing, ao=[], fb=[]) {
 
   // ── Gebruikersfeedback ──
   const FB_LABELS = {snel:'Snelle Quiz', flashcard:'Flashcards', simulatietoets:'Simulatietoets', bot_race:'Bot Race'};
+  window._fbVak   = window._fbVak   || null;
+  window._fbDomein= window._fbDomein|| null;
+
+  // Beschikbare vakken & domeinen uit ruwe fb (voor filter-opties, vóór filteren)
+  const fbVakken   = [...new Set(fb.map(e=>e.vak_naam).filter(Boolean))].sort();
+  const fbDomeinen = [...new Set(
+    fb.filter(e=>!window._fbVak||e.vak_naam===window._fbVak)
+      .map(e=>e.meta?.domein).filter(Boolean)
+  )].sort();
+
+  // Gefilterde feedback
+  const fbF = fb.filter(e=>{
+    if(window._fbVak    && e.vak_naam       !== window._fbVak)    return false;
+    if(window._fbDomein && e.meta?.domein   !== window._fbDomein) return false;
+    return true;
+  });
+
   const fbByFeature = {};
-  fb.forEach(e => {
+  fbF.forEach(e => {
     const feat = e.meta?.feature; const r = Number(e.meta?.rating);
     if (!feat || !r || r < 1 || r > 5) return;
     if (!fbByFeature[feat]) fbByFeature[feat] = {sum:0, count:0, dist:[0,0,0,0,0]};
@@ -419,8 +436,8 @@ function render(lb, ev, evMissing, ao=[], fb=[]) {
     fbByFeature[feat].count++;
     fbByFeature[feat].dist[r-1]++;
   });
-  const fbTotal = fb.filter(e=>e.meta?.rating).length;
-  const fbOverallSum = fb.reduce((s,e)=>s+(Number(e.meta?.rating)||0),0);
+  const fbTotal = fbF.filter(e=>e.meta?.rating).length;
+  const fbOverallSum = fbF.reduce((s,e)=>s+(Number(e.meta?.rating)||0),0);
   const fbOverallAvg = fbTotal > 0 ? (fbOverallSum/fbTotal).toFixed(1) : null;
   const fbFeatureList = Object.entries(fbByFeature).sort((a,b)=>b[1].count-a[1].count);
 
@@ -592,6 +609,24 @@ function render(lb, ev, evMissing, ao=[], fb=[]) {
 
     <!-- ── Gebruikersfeedback ── -->
     <div class="sec">Gebruikersfeedback</div>
+
+    ${fbVakken.length > 0 ? `
+    <div class="filter-bar" style="margin-bottom:.75rem;flex-wrap:wrap;row-gap:.35rem">
+      <span class="filter-lbl">Vak</span>
+      <button class="filter-btn ${!window._fbVak?'active':''}"
+        onclick="window._fbVak=null;window._fbDomein=null;render(window._lb,window._ev,window._evMissing,window._ao||[],window._fb||[])">Alle vakken</button>
+      ${fbVakken.map(v=>`<button class="filter-btn ${window._fbVak===v?'active':''}"
+        onclick="window._fbVak=${JSON.stringify(v)};window._fbDomein=null;render(window._lb,window._ev,window._evMissing,window._ao||[],window._fb||[])">${v}</button>`).join('')}
+    </div>
+    ${window._fbVak && fbDomeinen.length > 0 ? `
+    <div class="filter-bar" style="margin-bottom:.75rem;flex-wrap:wrap;row-gap:.35rem">
+      <span class="filter-lbl">Domein</span>
+      <button class="filter-btn ${!window._fbDomein?'active':''}"
+        onclick="window._fbDomein=null;render(window._lb,window._ev,window._evMissing,window._ao||[],window._fb||[])">Alle domeinen</button>
+      ${fbDomeinen.map(d=>`<button class="filter-btn ${window._fbDomein===d?'active':''}"
+        onclick="window._fbDomein=${JSON.stringify(d)};render(window._lb,window._ev,window._evMissing,window._ao||[],window._fb||[])">${d}</button>`).join('')}
+    </div>` : ''}` : ''}
+
     <div class="kpi-grid" style="margin-bottom:.6rem">
       <div class="kpi c-yw">
         <div class="kpi-lbl">⭐ Gem. waardering</div>

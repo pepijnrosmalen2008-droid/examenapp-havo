@@ -9877,7 +9877,10 @@ async function _fbRate(rating,feature){
     el.innerHTML=`<div class="fb-thanks-wrap"><div class="fb-thanks-ico">${rating>=4?'🌟':'⭐'}</div><div class="fb-thanks-txt">Bedankt voor je feedback!</div></div>`;
     setTimeout(_fbRemove,1400);
   }
-  try{await trackEvent('feedback',{rating,feature});}catch(e){}
+  try{
+    const domein=(typeof ST!=='undefined'&&ST?.domein?.naam)||null;
+    await trackEvent('feedback',{rating,feature,domein});
+  }catch(e){}
 }
 let currentUser=null;
 // Check existing session on load
