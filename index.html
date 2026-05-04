@@ -623,6 +623,23 @@ h1,h2,h3,h4{font-family:var(--font-head);line-height:1.2;letter-spacing:-.3px}
 .hnav-login-cta svg{stroke:#fff!important}
 .hnav-login-cta:hover{background:color-mix(in srgb,var(--or) 85%,#000)!important;color:#fff!important;transform:translateY(-1px)!important;box-shadow:0 5px 16px rgba(var(--or-rgb),.45)!important}
 
+/* ── Feedback popup ── */
+.fb-popup{position:fixed;bottom:90px;left:50%;transform:translateX(-50%) translateY(20px);z-index:8500;background:var(--s,#1a1f2e);border:1px solid rgba(255,255,255,.1);border-radius:22px;padding:18px 24px 14px;box-shadow:0 12px 48px rgba(0,0,0,.55);width:min(320px,92vw);text-align:center;animation:fbIn .32s cubic-bezier(.34,1.4,.64,1) forwards;pointer-events:all}
+@keyframes fbIn{from{opacity:0;transform:translateX(-50%) translateY(30px)}to{opacity:1;transform:translateX(-50%) translateY(0)}}
+.fb-popup.fb-out{animation:fbOut .2s ease forwards}
+@keyframes fbOut{to{opacity:0;transform:translateX(-50%) translateY(18px)}}
+.fb-title{font-size:13.5px;font-weight:700;color:var(--dk,#e4e8ef);margin-bottom:4px;line-height:1.4}
+.fb-sub{font-size:11.5px;color:var(--mu,rgba(255,255,255,.4));margin-bottom:14px}
+.fb-stars{display:flex;justify-content:center;gap:4px;margin-bottom:10px}
+.fb-star{background:none;border:none;cursor:pointer;font-size:30px;line-height:1;padding:2px 3px;transition:transform .12s,filter .12s;opacity:.28;-webkit-tap-highlight-color:transparent}
+.fb-star.lit{opacity:1;filter:drop-shadow(0 0 5px rgba(251,191,36,.7))}
+.fb-star:active{transform:scale(.88)}
+.fb-skip{background:none;border:none;color:var(--mu,rgba(255,255,255,.38));font-size:11.5px;cursor:pointer;font-family:inherit;padding:5px 10px;transition:color .15s;display:block;margin:0 auto}
+.fb-skip:hover{color:var(--dk,#e4e8ef)}
+.fb-thanks-wrap{padding:4px 0 2px}
+.fb-thanks-wrap .fb-thanks-ico{font-size:32px;margin-bottom:4px}
+.fb-thanks-wrap .fb-thanks-txt{font-size:14px;font-weight:700;color:var(--dk,#e4e8ef)}
+
 /* ── HERO SECTION ────────────────────────────── */
 .hm-hero{position:relative;overflow:hidden;background:linear-gradient(160deg,#07080f 0%,#0d0e1c 50%,#090c16 100%);padding-bottom:0}
 .hm-hero::after{content:'';position:absolute;bottom:0;left:0;right:0;height:1px;background:linear-gradient(90deg,transparent,rgba(var(--or-rgb),.4),transparent)}
@@ -9813,6 +9830,55 @@ async function trackEvent(type,meta){
 }
 // Track app open once per browser session
 if(!sessionStorage.getItem('_slagio_ao')){sessionStorage.setItem('_slagio_ao','1');setTimeout(()=>trackEvent('app_open',{}),2000);}
+
+// ── FEEDBACK POPUP (1-5 sterren na event) ──────────────────────────────
+const _FB_LABELS={snel:'Snelle Quiz',flashcard:'Flashcards',simulatietoets:'Simulatietoets',bot_race:'Bot Race'};
+function showFeedbackPopup(feature){
+  // Eén keer per browser-sessie per feature tonen
+  const sk='_slagio_fb_'+feature;
+  if(sessionStorage.getItem(sk))return;
+  sessionStorage.setItem(sk,'1');
+  _fbRemove();
+  const label=_FB_LABELS[feature]||feature;
+  const el=document.createElement('div');
+  el.id='fb-popup';
+  el.className='fb-popup';
+  el.innerHTML=`
+    <div class="fb-title">Hoe nuttig vond je de ${label}?</div>
+    <div class="fb-sub">Jouw mening helpt ons verbeteren</div>
+    <div class="fb-stars" id="fb-stars-row">
+      ${[1,2,3,4,5].map(i=>`<button class="fb-star" data-v="${i}"
+        onmouseenter="_fbHov(${i})" onmouseleave="_fbHovOut()"
+        onclick="_fbRate(${i},'${feature}')" aria-label="${i} ster">★</button>`).join('')}
+    </div>
+    <button class="fb-skip" onclick="_fbRemove()">Overslaan</button>`;
+  document.body.appendChild(el);
+}
+function _fbHov(n){
+  document.querySelectorAll('#fb-stars-row .fb-star').forEach((s,i)=>{
+    s.classList.toggle('lit',i<n);
+    s.style.transform=i===n-1?'scale(1.22)':'scale(1)';
+  });
+}
+function _fbHovOut(){
+  document.querySelectorAll('#fb-stars-row .fb-star').forEach(s=>{
+    s.classList.remove('lit');s.style.transform='';
+  });
+}
+function _fbRemove(){
+  const el=document.getElementById('fb-popup');
+  if(!el)return;
+  el.classList.add('fb-out');
+  setTimeout(()=>el?.remove(),220);
+}
+async function _fbRate(rating,feature){
+  const el=document.getElementById('fb-popup');
+  if(el){
+    el.innerHTML=`<div class="fb-thanks-wrap"><div class="fb-thanks-ico">${rating>=4?'🌟':'⭐'}</div><div class="fb-thanks-txt">Bedankt voor je feedback!</div></div>`;
+    setTimeout(_fbRemove,1400);
+  }
+  try{await trackEvent('feedback',{rating,feature});}catch(e){}
+}
 let currentUser=null;
 // Check existing session on load
 SB.auth.getSession().then(({data:{session}})=>{
@@ -13166,6 +13232,7 @@ function toonRes(){
   try{renderAdaptiveResults();}catch(e){}
   try{renderChallengeResult();}catch(e){}
   show('sc-res');
+  if(ST.mode==='snel')setTimeout(()=>showFeedbackPopup('snel'),2500);
 }
 
 function retryQ(){startQ(ST.mode);}
@@ -17394,6 +17461,7 @@ function _fcSummary(){
       <button class="fc-sum-btn fc-sum-btn-primary" onclick="startFlash()">🔄 Nieuwe sessie</button>
       <button class="fc-sum-btn fc-sum-btn-sec" onclick="show('sc-detail')">← Terug</button>
     </div>`;
+  setTimeout(()=>showFeedbackPopup('flashcard'),2000);
 }
 
 // ═══════ POMODORO ═══════
