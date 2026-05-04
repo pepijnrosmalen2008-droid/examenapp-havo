@@ -17307,17 +17307,48 @@ function srIntLabel(q,sr={}){
 
 let FC={cards:[],queue:[],again:[],stats:{again:0,hard:0,good:0,easy:0},vakId:'',domId:'',flipped:false,sessionTotal:0};
 
+// Haalt term→definitie paren uit <strong>term</strong>: def patroon in sam HTML
+function _parseSamCards(html){
+  const tmp=document.createElement('div');
+  tmp.innerHTML=html;
+  const cards=[];
+  const seen=new Set();
+  tmp.querySelectorAll('li').forEach(li=>{
+    const first=li.querySelector('strong');
+    if(!first)return;
+    const term=first.textContent.trim();
+    if(!term||term.length<2||term.length>72||seen.has(term))return;
+    seen.add(term);
+    const full=li.textContent;
+    const tidx=full.indexOf(term);
+    let def=tidx>=0?full.slice(tidx+term.length).replace(/^[\s:,\-–]+/,'').trim():full.trim();
+    if(def.length<5)return;
+    if(def.length>220)def=def.slice(0,220).replace(/\s\S+$/,'')+'…';
+    cards.push({term,def});
+  });
+  return cards;
+}
+
 function startFlash(){
   trackEvent('flashcard',{domein:ST.domein?.naam||null});
   const d=ST.domein,v=ST.vak;
   if(!d||!v)return;
-  const terms=(d.onderwerpen||[]).filter(t=>t&&t.trim().length>1);
-  const samText=(d.sam||'').replace(/<[^>]+>/g,'');
-  const sents=samText.split(/(?<=[.!?])\s+/).filter(s=>s.length>20);
-  const cards=terms.map((term,i)=>({
-    term,
-    def:sents[i]||sents[i%Math.max(1,sents.length)]||'Bestudeer dit begrip in de samenvatting.'
-  }));
+  // Stap 1: haal term→def paren uit <strong> tags in sam HTML
+  let cards=d.sam?_parseSamCards(d.sam):[];
+  // Stap 2: fallback — koppel elke onderwerp aan de meest relevante zin (keyword-matching)
+  if(cards.length<3){
+    const terms=(d.onderwerpen||[]).filter(t=>t&&t.trim().length>1);
+    const samText=(d.sam||'').replace(/<[^>]+>/g,'');
+    const sents=samText.split(/(?<=[.!?])\s+/).filter(s=>s.length>15&&s.length<300);
+    cards=terms.map(term=>{
+      const kw=term.toLowerCase().replace(/[^a-zéèëïöüàâ ]/gi,'').split(/\s+/).filter(w=>w.length>3);
+      const scored=sents.map(s=>{const sl=s.toLowerCase();return{s,n:kw.filter(w=>sl.includes(w)).length};}).sort((a,b)=>b.n-a.n);
+      const best=scored[0];
+      let def=(best&&best.n>0)?best.s:sents[0]||'Bestudeer dit begrip in de samenvatting.';
+      if(def.length>220)def=def.slice(0,220).replace(/\s\S+$/,'')+'…';
+      return{term,def};
+    });
+  }
   if(!cards.length){showToast('Geen flashcards voor dit domein','#ef4444');return;}
 
   const today=new Date().toISOString().slice(0,10);
