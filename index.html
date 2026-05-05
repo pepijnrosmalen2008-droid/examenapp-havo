@@ -8431,6 +8431,54 @@ const VAK_ICONS={
   });
 })();
 
+// ═══════ CONCEPT DEPENDENCY GRAPH (adaptive learning engine — intern, niet zichtbaar voor gebruiker) ═══════
+const conceptGraph = {
+  "subject": "Natuurkunde HAVO",
+  "concepts": [
+    { "id": "A1", "name": "SI-stelsel", "domain": "A", "subdomain": "A1", "prerequisites": [] },
+    { "id": "A2", "name": "Basisgrootheden", "domain": "A", "subdomain": "A1", "prerequisites": [ { "id": "A1", "weight": "must" } ] },
+    { "id": "A3", "name": "Afgeleide grootheden", "domain": "A", "subdomain": "A1", "prerequisites": [ { "id": "A2", "weight": "must" } ] },
+    { "id": "A4", "name": "Omrekenen met machten van 10", "domain": "A", "subdomain": "A1", "prerequisites": [ { "id": "A1", "weight": "must" } ] },
+    { "id": "A5", "name": "Lineair verband herkennen", "domain": "A", "subdomain": "A2", "prerequisites": [] },
+    { "id": "A6", "name": "Hellingshoek bepalen", "domain": "A", "subdomain": "A2", "prerequisites": [ { "id": "A5", "weight": "must" } ] },
+    { "id": "A7", "name": "Oppervlakte onder grafiek", "domain": "A", "subdomain": "A2", "prerequisites": [ { "id": "A5", "weight": "must" } ] },
+    { "id": "B1", "name": "Gemiddelde snelheid v = s/t", "domain": "B", "subdomain": "B1", "prerequisites": [ { "id": "A1", "weight": "must" } ] },
+    { "id": "B2", "name": "Ogenblikkelijke snelheid uit grafiek", "domain": "B", "subdomain": "B1", "prerequisites": [ { "id": "A6", "weight": "must" } ] },
+    { "id": "B3", "name": "s-t grafiek interpreteren", "domain": "B", "subdomain": "B1", "prerequisites": [ { "id": "A5", "weight": "must" } ] },
+    { "id": "B4", "name": "v-t grafiek interpreteren", "domain": "B", "subdomain": "B1", "prerequisites": [ { "id": "A5", "weight": "must" } ] },
+    { "id": "B5", "name": "Versnelling a = Δv/Δt", "domain": "B", "subdomain": "B2", "prerequisites": [ { "id": "B1", "weight": "must" } ] },
+    { "id": "B6", "name": "Versnelling uit v-t grafiek", "domain": "B", "subdomain": "B2", "prerequisites": [ { "id": "B4", "weight": "must" } ] },
+    { "id": "B7", "name": "Negatieve versnelling (remmen)", "domain": "B", "subdomain": "B2", "prerequisites": [ { "id": "B5", "weight": "must" } ] },
+    { "id": "C1", "name": "Krachten tekenen (vectoren)", "domain": "C", "subdomain": "C1", "prerequisites": [ { "id": "A1", "weight": "must" } ] },
+    { "id": "C2", "name": "Resulterende kracht FR", "domain": "C", "subdomain": "C1", "prerequisites": [ { "id": "C1", "weight": "must" } ] },
+    { "id": "C3", "name": "Evenwicht (FR = 0)", "domain": "C", "subdomain": "C1", "prerequisites": [ { "id": "C2", "weight": "must" } ] },
+    { "id": "C4", "name": "F = m·a toepassen", "domain": "C", "subdomain": "C2", "prerequisites": [ { "id": "B5", "weight": "must" }, { "id": "C2", "weight": "must" } ] },
+    { "id": "C5", "name": "Gewicht vs massa", "domain": "C", "subdomain": "C2", "prerequisites": [ { "id": "A1", "weight": "must" } ] },
+    { "id": "C6", "name": "Actie-reactie (3e wet)", "domain": "C", "subdomain": "C2", "prerequisites": [ { "id": "C1", "weight": "must" } ] },
+    { "id": "D1", "name": "Arbeid W = F·s", "domain": "D", "subdomain": "D1", "prerequisites": [ { "id": "C2", "weight": "must" } ] },
+    { "id": "D2", "name": "Kinetische energie Ek = ½mv²", "domain": "D", "subdomain": "D1", "prerequisites": [ { "id": "B1", "weight": "must" } ] },
+    { "id": "D3", "name": "Potentiële energie Ep = mgh", "domain": "D", "subdomain": "D1", "prerequisites": [ { "id": "A1", "weight": "must" } ] },
+    { "id": "D4", "name": "Rendement η = Euit/Ein", "domain": "D", "subdomain": "D1", "prerequisites": [ { "id": "D1", "weight": "medium" }, { "id": "D2", "weight": "medium" } ] },
+    { "id": "D5", "name": "Energiebehoud", "domain": "D", "subdomain": "D2", "prerequisites": [ { "id": "D2", "weight": "must" }, { "id": "D3", "weight": "must" } ] },
+    { "id": "D6", "name": "Vermogen P = E/t", "domain": "D", "subdomain": "D2", "prerequisites": [ { "id": "A1", "weight": "must" } ] },
+    { "id": "D7", "name": "Warmte Q = c·m·ΔT", "domain": "D", "subdomain": "D2", "prerequisites": [ { "id": "A1", "weight": "must" } ] },
+    { "id": "E1", "name": "Spanning U", "domain": "E", "subdomain": "E1", "prerequisites": [ { "id": "A1", "weight": "must" } ] },
+    { "id": "E2", "name": "Stroomsterkte I", "domain": "E", "subdomain": "E1", "prerequisites": [ { "id": "A1", "weight": "must" } ] },
+    { "id": "E3", "name": "Weerstand R", "domain": "E", "subdomain": "E1", "prerequisites": [ { "id": "A1", "weight": "must" } ] },
+    { "id": "E4", "name": "Ohmse wet U = I·R", "domain": "E", "subdomain": "E1", "prerequisites": [ { "id": "E1", "weight": "must" }, { "id": "E2", "weight": "must" }, { "id": "E3", "weight": "must" } ] },
+    { "id": "E5", "name": "Serieschakeling", "domain": "E", "subdomain": "E2", "prerequisites": [ { "id": "E4", "weight": "must" } ] },
+    { "id": "E6", "name": "Parallelschakeling", "domain": "E", "subdomain": "E2", "prerequisites": [ { "id": "E4", "weight": "must" } ] },
+    { "id": "E7", "name": "Totale weerstand series", "domain": "E", "subdomain": "E2", "prerequisites": [ { "id": "E5", "weight": "must" } ] },
+    { "id": "E8", "name": "Totale weerstand parallel", "domain": "E", "subdomain": "E2", "prerequisites": [ { "id": "E6", "weight": "must" } ] },
+    { "id": "F1", "name": "Golflengte λ = v/f", "domain": "F", "subdomain": "F1", "prerequisites": [ { "id": "A1", "weight": "must" } ] },
+    { "id": "F2", "name": "Frequentie f", "domain": "F", "subdomain": "F1", "prerequisites": [ { "id": "A1", "weight": "must" } ] },
+    { "id": "F3", "name": "EM-spectrum", "domain": "F", "subdomain": "F1", "prerequisites": [ { "id": "F1", "weight": "medium" }, { "id": "F2", "weight": "medium" } ] },
+    { "id": "F4", "name": "Soorten straling (α, β, γ)", "domain": "F", "subdomain": "F2", "prerequisites": [ { "id": "F3", "weight": "must" } ] },
+    { "id": "F5", "name": "Halveringstijd", "domain": "F", "subdomain": "F2", "prerequisites": [ { "id": "A1", "weight": "must" } ] },
+    { "id": "F6", "name": "Activiteit A = ΔN/Δt", "domain": "F", "subdomain": "F2", "prerequisites": [ { "id": "A1", "weight": "must" } ] }
+  ]
+};
+
 // ═══════ VWO VAKKEN ═══════
 const VAKKEN_VWO=[
 {id:'nl',naam:'Nederlands',code:'NE',kleur:'#E85C0D',
