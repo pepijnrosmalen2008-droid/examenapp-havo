@@ -1516,6 +1516,23 @@ html.dark .qb{background:#2e3550}
 .sim-opt:hover:not([disabled]){border-color:rgba(99,102,241,.45);background:rgba(99,102,241,.06);color:#818cf8}
 .sim-opt.correct{border-color:#22c55e;background:rgba(34,197,94,.08);color:#16a34a}
 .sim-opt.wrong{border-color:#ef4444;background:rgba(239,68,68,.07);color:#dc2626}
+.sim-ctx-box{background:var(--s);border-left:3px solid #6366f1;border-radius:0 10px 10px 0;padding:14px 16px;margin-bottom:18px;font-size:14px;line-height:1.65;color:var(--dk);font-style:italic}
+.sim-ctx-label{font-size:10px;font-weight:700;color:#818cf8;text-transform:uppercase;letter-spacing:.7px;margin-bottom:6px;font-style:normal}
+.sim-open-area{display:none}
+.sim-open-ta{width:100%;min-height:120px;border:1.5px solid var(--bo);border-radius:12px;padding:13px 15px;font-size:15px;font-family:var(--font);color:var(--dk);background:var(--s);resize:vertical;line-height:1.6;margin-bottom:12px;box-sizing:border-box}
+.sim-open-ta:focus{outline:none;border-color:#818cf8;box-shadow:0 0 0 3px rgba(99,102,241,.12)}
+.sim-nakijk-btn{width:100%;padding:13px;background:linear-gradient(135deg,#6366f1,#818cf8);color:#fff;border:none;border-radius:12px;font-size:14px;font-weight:800;cursor:pointer;font-family:var(--font-head);margin-bottom:14px}
+.sim-model-blok{display:none;margin-bottom:18px}
+.sim-ma-label{font-size:11px;font-weight:800;color:#818cf8;text-transform:uppercase;letter-spacing:.7px;margin-bottom:8px}
+.sim-ma-text{background:rgba(99,102,241,.06);border:1px solid rgba(99,102,241,.18);border-radius:10px;padding:13px 15px;font-size:14px;line-height:1.65;color:var(--dk);margin-bottom:14px;white-space:pre-wrap}
+.sim-assess-btns{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}
+.sim-ab{padding:11px 8px;border-radius:11px;border:1.5px solid var(--bo);background:var(--s);font-size:13px;font-weight:700;cursor:pointer;font-family:var(--font-head);display:flex;flex-direction:column;align-items:center;gap:3px;transition:all .18s}
+.sim-ab-g{color:#22c55e}.sim-ab-g:not([disabled]):hover{background:rgba(34,197,94,.1);border-color:#22c55e}
+.sim-ab-d{color:#f97316}.sim-ab-d:not([disabled]):hover{background:rgba(249,115,22,.1);border-color:#f97316}
+.sim-ab-f{color:#ef4444}.sim-ab-f:not([disabled]):hover{background:rgba(239,68,68,.1);border-color:#ef4444}
+.sim-type-badge{display:inline-block;font-size:10px;font-weight:800;letter-spacing:.6px;text-transform:uppercase;padding:2px 9px;border-radius:20px;margin-bottom:12px}
+.sim-type-mc{background:rgba(99,102,241,.1);color:#818cf8;border:1px solid rgba(99,102,241,.2)}
+.sim-type-open{background:rgba(249,115,22,.1);color:#f97316;border:1px solid rgba(249,115,22,.2)}
 .sim-info-card{background:var(--s);border:1px solid var(--bo);border-radius:12px;padding:14px;text-align:center}
 .sim-info-num{font-size:24px;font-weight:900;color:#818cf8;font-family:var(--font-head)}
 .sim-info-lbl{font-size:10px;color:var(--mu);font-weight:700;text-transform:uppercase;letter-spacing:.6px;margin-top:3px}
@@ -2426,6 +2443,8 @@ html.dark .calc-btn{background:#2e3550}
 .sam .sam-head::after{content:'▾';font-size:11px;opacity:.45;flex-shrink:0;transition:transform .22s ease}
 .sam .sam-head.sh-collapsed::after{transform:rotate(-90deg)}
 .sam .sam-ul-hidden{display:none}
+.sam .sam-section{margin-bottom:14px}
+.sam .sam-section h3{font-size:12px;font-weight:800;color:var(--mu);text-transform:uppercase;letter-spacing:.7px;margin:0 0 8px;font-family:var(--font-head)}
 /* ── TEST JEZELF ────────────────────────────────── */
 .tj{margin-top:16px;border-radius:13px;border:1.5px solid var(--bo);overflow:hidden}
 .tj-hd{display:flex;align-items:center;justify-content:space-between;padding:10px 14px;background:var(--s);user-select:none}
@@ -14335,29 +14354,35 @@ function startSimToets(){
   const vak=ST.vak;
   SIM={vak,questions:[],idx:0,answers:[],timer:null,duration:0,started:false};
 
-  // Build question pool: SIM_QPD questions per domain from sv arrays
+  // Build question pool: 2 MC (sv) + 1 open (oe) per domain
   vak.domeinen.forEach(d=>{
-    const pool=(d.sv||[]).filter(q=>q.v&&q.o&&q.c!==undefined);
-    const shuffled=[...pool].sort(()=>Math.random()-.5).slice(0,SIM_QPD);
-    shuffled.forEach(q=>SIM.questions.push({...q,domeinId:d.id,domeinNaam:d.naam,domeinKleur:vak.kleur}));
+    const svPool=(d.sv||[]).filter(q=>q.v&&q.o?.length>1&&q.c!==undefined);
+    [...svPool].sort(()=>Math.random()-.5).slice(0,2)
+      .forEach(q=>SIM.questions.push({...q,_type:'mc',domeinId:d.id,domeinNaam:d.naam,domeinKleur:vak.kleur}));
+    const oePool=(d.oe||[]).filter(q=>q.v&&q.u);
+    if(oePool.length){
+      const oq=oePool[Math.floor(Math.random()*oePool.length)];
+      SIM.questions.push({...oq,_type:'open',domeinId:d.id,domeinNaam:d.naam,domeinKleur:vak.kleur});
+    }
   });
-  // Shuffle all questions
   SIM.questions.sort(()=>Math.random()-.5);
 
   const total=SIM.questions.length;
-  const mins=Math.ceil(total*1.5); // ~1.5 min per question
+  const mcN=SIM.questions.filter(q=>q._type==='mc').length;
+  const oeN=SIM.questions.filter(q=>q._type==='open').length;
+  const mins=mcN*2+oeN*5;
   SIM.duration=mins*60;
 
   // Update setup screen
   document.getElementById('sim-nav-title').textContent=vak.naam+' — Simulatie';
   document.getElementById('sim-setup-title').textContent='Simulatietoets '+vak.naam;
-  document.getElementById('sim-setup-desc').textContent='Alle '+vak.domeinen.length+' domeinen, '+total+' vragen.';
+  document.getElementById('sim-setup-desc').textContent='Alle '+vak.domeinen.length+' domeinen, '+total+' vragen ('+mcN+' MC + '+oeN+' open).';
   const grid=document.getElementById('sim-info-grid');
   grid.innerHTML=`
-    <div class="sim-info-card"><div class="sim-info-num">${total}</div><div class="sim-info-lbl">Vragen</div></div>
+    <div class="sim-info-card"><div class="sim-info-num">${mcN}</div><div class="sim-info-lbl">MC-vragen</div></div>
+    <div class="sim-info-card"><div class="sim-info-num">${oeN}</div><div class="sim-info-lbl">Open vragen</div></div>
     <div class="sim-info-card"><div class="sim-info-num">${mins} min</div><div class="sim-info-lbl">Tijdlimiet</div></div>
-    <div class="sim-info-card"><div class="sim-info-num">${vak.domeinen.length}</div><div class="sim-info-lbl">Domeinen</div></div>
-    <div class="sim-info-card"><div class="sim-info-num">${SIM_QPD}</div><div class="sim-info-lbl">Per domein</div></div>`;
+    <div class="sim-info-card"><div class="sim-info-num">${vak.domeinen.length}</div><div class="sim-info-lbl">Domeinen</div></div>`;
 
   // Reset phases
   document.getElementById('sim-setup').style.display='';
@@ -14402,25 +14427,48 @@ function simShowQ(){
   document.getElementById('sim-q-counter').textContent=(SIM.idx+1)+' / '+total;
   document.getElementById('sim-q-text').textContent=q.v;
 
-  // Build options
-  const optsEl=document.getElementById('sim-q-opts');
-  // Create shuffled option map
-  const idxArr=[0,1,2,3].slice(0,q.o.length);
-  const shuffled=[...idxArr].sort(()=>Math.random()-.5);
-  optsEl.innerHTML=shuffled.map(oi=>`
-    <button class="sim-opt" onclick="simSelectOpt(this,${oi},${q.c})">${q.o[oi]}</button>
-  `).join('');
+  const isMC=q._type==='mc'||(q.o&&q.o.length>1);
+  // Type badge
+  const badge=document.getElementById('sim-type-badge');
+  badge.textContent=isMC?'Multiple choice':'Open vraag';
+  badge.className='sim-type-badge '+(isMC?'sim-type-mc':'sim-type-open');
 
+  // Context box (open vragen)
+  const ctxWrap=document.getElementById('sim-ctx-wrap');
+  if(q.ctx&&!isMC){ctxWrap.style.display='';document.getElementById('sim-ctx-text').textContent=q.ctx;}
+  else{ctxWrap.style.display='none';}
+
+  // Show/hide MC vs open
+  const optsEl=document.getElementById('sim-q-opts');
+  const openArea=document.getElementById('sim-open-area');
   const nextBtn=document.getElementById('sim-next-btn');
-  nextBtn.disabled=true;nextBtn.style.opacity='.35';
   nextBtn.textContent=SIM.idx===total-1?'Afronden →':'Volgende →';
+
+  if(isMC){
+    optsEl.style.display='flex';
+    openArea.style.display='none';
+    const idxArr=[0,1,2,3].slice(0,q.o.length);
+    const shuffled=[...idxArr].sort(()=>Math.random()-.5);
+    optsEl.innerHTML=shuffled.map(oi=>`
+      <button class="sim-opt" onclick="simSelectOpt(this,${oi},${q.c})">${q.o[oi]}</button>
+    `).join('');
+    nextBtn.disabled=true;nextBtn.style.opacity='.35';
+  }else{
+    optsEl.style.display='none';
+    openArea.style.display='';
+    document.getElementById('sim-open-ta').value='';
+    document.getElementById('sim-open-ta').disabled=false;
+    document.getElementById('sim-nakijk-btn').style.display='';
+    document.getElementById('sim-model-blok').style.display='none';
+    document.getElementById('sim-ma-text').textContent=q.u||'';
+    document.querySelectorAll('.sim-ab').forEach(b=>b.disabled=false);
+    nextBtn.disabled=true;nextBtn.style.opacity='.35';
+  }
 }
 
 function simSelectOpt(btn,selectedIdx,correctIdx){
-  // Disable all options
   const optsEl=document.getElementById('sim-q-opts');
   optsEl.querySelectorAll('.sim-opt').forEach(b=>b.disabled=true);
-  // Show correct/wrong
   btn.classList.add(selectedIdx===correctIdx?'correct':'wrong');
   if(selectedIdx!==correctIdx){
     optsEl.querySelectorAll('.sim-opt').forEach(b=>{
@@ -14429,10 +14477,22 @@ function simSelectOpt(btn,selectedIdx,correctIdx){
       }
     });
   }
-  // Record answer
   const q=SIM.questions[SIM.idx];
-  SIM.answers.push({correct:selectedIdx===correctIdx,domeinId:q.domeinId,domeinNaam:q.domeinNaam,domeinKleur:q.domeinKleur});
-  // Enable next
+  SIM.answers.push({correct:selectedIdx===correctIdx,pts:selectedIdx===correctIdx?1:0,_type:'mc',domeinId:q.domeinId,domeinNaam:q.domeinNaam,domeinKleur:q.domeinKleur});
+  const nextBtn=document.getElementById('sim-next-btn');
+  nextBtn.disabled=false;nextBtn.style.opacity='1';
+}
+
+function simNakijken(){
+  document.getElementById('sim-open-ta').disabled=true;
+  document.getElementById('sim-nakijk-btn').style.display='none';
+  document.getElementById('sim-model-blok').style.display='';
+}
+
+function simBeoordeel(pts){
+  document.querySelectorAll('.sim-ab').forEach(b=>b.disabled=true);
+  const q=SIM.questions[SIM.idx];
+  SIM.answers.push({correct:pts>=0.5,pts,_type:'open',domeinId:q.domeinId,domeinNaam:q.domeinNaam,domeinKleur:q.domeinKleur});
   const nextBtn=document.getElementById('sim-next-btn');
   nextBtn.disabled=false;nextBtn.style.opacity='1';
 }
@@ -14449,9 +14509,10 @@ function simFinish(){
   document.getElementById('sim-timer-chip').style.display='none';
   document.getElementById('sim-result').style.display='';
 
-  const correct=SIM.answers.filter(a=>a.correct).length;
+  const totalPts=SIM.answers.reduce((s,a)=>s+(a.pts??(a.correct?1:0)),0);
   const total=SIM.answers.length;
-  const pct=total>0?correct/total:0;
+  const correct=Math.round(totalPts);
+  const pct=total>0?totalPts/total:0;
   // CE grade estimate: 9 * (pct) + 1, rounded to 0.5
   const rawGrade=9*pct+1;
   const grade=Math.round(rawGrade*2)/2;
@@ -19015,8 +19076,24 @@ if('serviceWorker' in navigator){
       <span id="sim-q-domain" style="font-size:11px;font-weight:700;color:#818cf8;text-transform:uppercase;letter-spacing:.8px;background:rgba(99,102,241,.1);border:1px solid rgba(99,102,241,.2);border-radius:20px;padding:3px 12px"></span>
       <span id="sim-q-counter" style="font-size:12px;color:var(--mu);font-weight:600"></span>
     </div>
+    <div id="sim-type-badge" class="sim-type-badge sim-type-mc">Multiple choice</div>
+    <div id="sim-ctx-wrap" style="display:none"><div class="sim-ctx-label">📄 Contexttekst</div><div class="sim-ctx-box" id="sim-ctx-text"></div></div>
     <div id="sim-q-text" style="font-size:18px;font-weight:700;font-family:var(--font-head);color:var(--dk);margin-bottom:20px;line-height:1.5;letter-spacing:-.2px"></div>
     <div id="sim-q-opts" style="display:flex;flex-direction:column;gap:10px;margin-bottom:24px"></div>
+    <div class="sim-open-area" id="sim-open-area">
+      <textarea class="sim-open-ta" id="sim-open-ta" placeholder="Schrijf hier je antwoord…"></textarea>
+      <button class="sim-nakijk-btn" id="sim-nakijk-btn" onclick="simNakijken()">Nakijken — toon modelantwoord →</button>
+      <div class="sim-model-blok" id="sim-model-blok">
+        <div class="sim-ma-label">📋 Modelantwoord</div>
+        <div class="sim-ma-text" id="sim-ma-text"></div>
+        <div style="font-size:12px;color:var(--mu);margin-bottom:10px;font-weight:600">Hoe goed was jouw antwoord?</div>
+        <div class="sim-assess-btns">
+          <button class="sim-ab sim-ab-g" onclick="simBeoordeel(1)"><span>✓</span><span>Goed</span></button>
+          <button class="sim-ab sim-ab-d" onclick="simBeoordeel(0.5)"><span>~</span><span>Deels</span></button>
+          <button class="sim-ab sim-ab-f" onclick="simBeoordeel(0)"><span>✗</span><span>Fout</span></button>
+        </div>
+      </div>
+    </div>
     <button id="sim-next-btn" onclick="simNextQ()" disabled style="width:100%;padding:14px;background:linear-gradient(135deg,#6366f1,#818cf8);color:#fff;border:none;border-radius:13px;font-size:15px;font-weight:800;cursor:pointer;font-family:var(--font-head);opacity:.35;transition:all .2s">Volgende →</button>
   </div>
 </div>
