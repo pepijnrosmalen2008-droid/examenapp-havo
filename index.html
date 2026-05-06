@@ -1070,6 +1070,15 @@ html.dark .qb{background:#2e3550}
 .sam-ce-spot ul{padding-left:0;margin:0}
 .sam-ce-spot ul li{font-size:12.5px;line-height:1.65;padding:3px 0 3px 18px;border-bottom:none}
 .sam-ce-spot ul li::before{content:'→';color:var(--or);font-size:13px}
+.sam .qa{margin:8px 0;border-radius:10px;overflow:hidden;border:1.5px solid var(--bo)}
+.sam .q{padding:10px 14px;font-size:13px;font-weight:700;cursor:pointer;display:flex;align-items:center;justify-content:space-between;gap:8px;user-select:none;color:var(--dk)}
+.sam .q::after{content:'▾';font-size:11px;opacity:.45;flex-shrink:0;transition:transform .2s}
+.sam .qa.qa-open .q::after{transform:rotate(-180deg)}
+.sam .hint{font-size:11.5px;color:var(--mu);padding:4px 14px 6px;background:rgba(var(--or-rgb),.04);font-style:italic;display:none}
+.sam .qa.qa-open .hint{display:block}
+.sam .a{padding:8px 14px 10px;font-size:13px;line-height:1.6;background:rgba(99,102,241,.06);border-top:1px solid var(--bo);color:var(--dk)}
+.sam .a.hidden{display:none}
+.sam .qa.qa-open .a{display:block}
 /* ── Sam: tijdlijn ── */
 .sam-timeline{list-style:none;margin:10px 0 14px;padding:0 0 0 8px;border-left:2px solid rgba(var(--or-rgb),.4)}
 .sam-timeline li{padding:5px 0 5px 18px;position:relative;border-bottom:none}
@@ -11585,6 +11594,15 @@ function initSamInteractive(container, d) {
           sib.classList.toggle('sam-ul-hidden', collapsed);
           sib = sib.nextElementSibling;
         }
+      });
+    });
+
+    // 1a. Interactieve Q&A (.qa/.q/.hint/.a)
+    samEl.querySelectorAll('.qa').forEach(qa => {
+      const q = qa.querySelector('.q');
+      if (!q) return;
+      q.addEventListener('click', () => {
+        qa.classList.toggle('qa-open');
       });
     });
 
