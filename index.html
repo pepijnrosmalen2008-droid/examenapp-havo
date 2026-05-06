@@ -1518,11 +1518,11 @@ html.dark .qb{background:#2e3550}
 .sim-opt.wrong{border-color:#ef4444;background:rgba(239,68,68,.07);color:#dc2626}
 .sim-ctx-box{background:var(--s);border-left:3px solid #6366f1;border-radius:0 10px 10px 0;padding:14px 16px;margin-bottom:18px;font-size:14px;line-height:1.65;color:var(--dk);font-style:italic}
 .sim-ctx-label{font-size:10px;font-weight:700;color:#818cf8;text-transform:uppercase;letter-spacing:.7px;margin-bottom:6px;font-style:normal}
-.sim-open-area{display:none}
+.sim-open-area{}
 .sim-open-ta{width:100%;min-height:120px;border:1.5px solid var(--bo);border-radius:12px;padding:13px 15px;font-size:15px;font-family:var(--font);color:var(--dk);background:var(--s);resize:vertical;line-height:1.6;margin-bottom:12px;box-sizing:border-box}
 .sim-open-ta:focus{outline:none;border-color:#818cf8;box-shadow:0 0 0 3px rgba(99,102,241,.12)}
 .sim-nakijk-btn{width:100%;padding:13px;background:linear-gradient(135deg,#6366f1,#818cf8);color:#fff;border:none;border-radius:12px;font-size:14px;font-weight:800;cursor:pointer;font-family:var(--font-head);margin-bottom:14px}
-.sim-model-blok{display:none;margin-bottom:18px}
+.sim-model-blok{margin-bottom:18px}
 .sim-ma-label{font-size:11px;font-weight:800;color:#818cf8;text-transform:uppercase;letter-spacing:.7px;margin-bottom:8px}
 .sim-ma-text{background:rgba(99,102,241,.06);border:1px solid rgba(99,102,241,.18);border-radius:10px;padding:13px 15px;font-size:14px;line-height:1.65;color:var(--dk);margin-bottom:14px;white-space:pre-wrap}
 .sim-assess-btns{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}
@@ -14368,34 +14368,26 @@ function startSimToets(){
   const vak=ST.vak;
   SIM={vak,questions:[],idx:0,answers:[],timer:null,duration:0,started:false};
 
-  // Build question pool: 2 MC (sv) + 1 open (oe) per CE domain only
+  // Build question pool: ALL oe (open) questions from CE domains only — no MC
   const ceDomeinen=vak.domeinen.filter(d=>!d.ceStatus||d.ceStatus!=='SE');
   ceDomeinen.forEach(d=>{
-    const svPool=(d.sv||[]).filter(q=>q.v&&q.o?.length>1&&q.c!==undefined);
-    [...svPool].sort(()=>Math.random()-.5).slice(0,2)
-      .forEach(q=>SIM.questions.push({...q,_type:'mc',domeinId:d.id,domeinNaam:d.naam,domeinKleur:vak.kleur}));
-    const oePool=(d.oe||[]).filter(q=>q.v&&q.u);
-    if(oePool.length){
-      const oq=oePool[Math.floor(Math.random()*oePool.length)];
-      SIM.questions.push({...oq,_type:'open',domeinId:d.id,domeinNaam:d.naam,domeinKleur:vak.kleur});
-    }
+    (d.oe||[]).filter(q=>q.v&&q.u).forEach(q=>{
+      SIM.questions.push({...q,_type:'open',domeinId:d.id,domeinNaam:d.naam,domeinKleur:vak.kleur});
+    });
   });
   SIM.questions.sort(()=>Math.random()-.5);
 
   const total=SIM.questions.length;
-  const mcN=SIM.questions.filter(q=>q._type==='mc').length;
-  const oeN=SIM.questions.filter(q=>q._type==='open').length;
-  const mins=mcN*2+oeN*5;
+  const mins=total*5;
   SIM.duration=mins*60;
 
   // Update setup screen
   document.getElementById('sim-nav-title').textContent=vak.naam+' — Simulatie';
   document.getElementById('sim-setup-title').textContent='Simulatietoets '+vak.naam;
-  document.getElementById('sim-setup-desc').textContent=ceDomeinen.length+' CE-domeinen, '+total+' vragen ('+mcN+' MC + '+oeN+' open).';
+  document.getElementById('sim-setup-desc').textContent=ceDomeinen.length+' CE-domeinen · '+total+' open examenvragen.';
   const grid=document.getElementById('sim-info-grid');
   grid.innerHTML=`
-    <div class="sim-info-card"><div class="sim-info-num">${mcN}</div><div class="sim-info-lbl">MC-vragen</div></div>
-    <div class="sim-info-card"><div class="sim-info-num">${oeN}</div><div class="sim-info-lbl">Open vragen</div></div>
+    <div class="sim-info-card"><div class="sim-info-num">${total}</div><div class="sim-info-lbl">Open vragen</div></div>
     <div class="sim-info-card"><div class="sim-info-num">${mins} min</div><div class="sim-info-lbl">Tijdlimiet</div></div>
     <div class="sim-info-card"><div class="sim-info-num">${ceDomeinen.length}</div><div class="sim-info-lbl">CE-domeinen</div></div>`;
 
@@ -14473,7 +14465,7 @@ function simShowQ(){
     openArea.style.display='block';
     document.getElementById('sim-open-ta').value='';
     document.getElementById('sim-open-ta').disabled=false;
-    document.getElementById('sim-nakijk-btn').style.display='';
+    document.getElementById('sim-nakijk-btn').style.display='block';
     document.getElementById('sim-model-blok').style.display='none';
     document.getElementById('sim-ma-text').textContent=q.u||'';
     document.querySelectorAll('.sim-ab').forEach(b=>b.disabled=false);
