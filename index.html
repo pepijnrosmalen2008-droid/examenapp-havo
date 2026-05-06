@@ -14362,8 +14362,9 @@ function startSimToets(){
   const vak=ST.vak;
   SIM={vak,questions:[],idx:0,answers:[],timer:null,duration:0,started:false};
 
-  // Build question pool: 2 MC (sv) + 1 open (oe) per domain
-  vak.domeinen.forEach(d=>{
+  // Build question pool: 2 MC (sv) + 1 open (oe) per CE domain only
+  const ceDomeinen=vak.domeinen.filter(d=>d.ceStatus&&d.ceStatus!=='SE');
+  ceDomeinen.forEach(d=>{
     const svPool=(d.sv||[]).filter(q=>q.v&&q.o?.length>1&&q.c!==undefined);
     [...svPool].sort(()=>Math.random()-.5).slice(0,2)
       .forEach(q=>SIM.questions.push({...q,_type:'mc',domeinId:d.id,domeinNaam:d.naam,domeinKleur:vak.kleur}));
@@ -14384,13 +14385,13 @@ function startSimToets(){
   // Update setup screen
   document.getElementById('sim-nav-title').textContent=vak.naam+' — Simulatie';
   document.getElementById('sim-setup-title').textContent='Simulatietoets '+vak.naam;
-  document.getElementById('sim-setup-desc').textContent='Alle '+vak.domeinen.length+' domeinen, '+total+' vragen ('+mcN+' MC + '+oeN+' open).';
+  document.getElementById('sim-setup-desc').textContent=ceDomeinen.length+' CE-domeinen, '+total+' vragen ('+mcN+' MC + '+oeN+' open).';
   const grid=document.getElementById('sim-info-grid');
   grid.innerHTML=`
     <div class="sim-info-card"><div class="sim-info-num">${mcN}</div><div class="sim-info-lbl">MC-vragen</div></div>
     <div class="sim-info-card"><div class="sim-info-num">${oeN}</div><div class="sim-info-lbl">Open vragen</div></div>
     <div class="sim-info-card"><div class="sim-info-num">${mins} min</div><div class="sim-info-lbl">Tijdlimiet</div></div>
-    <div class="sim-info-card"><div class="sim-info-num">${vak.domeinen.length}</div><div class="sim-info-lbl">Domeinen</div></div>`;
+    <div class="sim-info-card"><div class="sim-info-num">${ceDomeinen.length}</div><div class="sim-info-lbl">CE-domeinen</div></div>`;
 
   // Reset phases
   document.getElementById('sim-setup').style.display='';
@@ -14463,7 +14464,7 @@ function simShowQ(){
     nextBtn.disabled=true;nextBtn.style.opacity='.35';
   }else{
     optsEl.style.display='none';
-    openArea.style.display='';
+    openArea.style.display='block';
     document.getElementById('sim-open-ta').value='';
     document.getElementById('sim-open-ta').disabled=false;
     document.getElementById('sim-nakijk-btn').style.display='';
