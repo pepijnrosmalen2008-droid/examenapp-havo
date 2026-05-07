@@ -15583,136 +15583,21 @@ function raceToast(msg){
 
 // ═══════ BOT LEADERBOARD SEED ═══════
 // Vaste dier-avatars per bot (animalId + stageIdx uit ANIMAL_EVOLUTIONS)
-const BOT_AVATARS={
-  'Lars V.':  {animalId:'leeuw',   stageIdx:5, featuredBadgeId:'streak100', badgeIds:['quiz1','quiz10','quiz50','quiz100','quiz500','streak1','streak3','streak7','streak14','streak30','streak100','combo3','combo5','combo10','perfect','vakken3','vakken10','examen_done']},
-  'Sophie K.':{animalId:'adelaar', stageIdx:4, featuredBadgeId:'perfect',   badgeIds:['quiz1','quiz10','quiz50','quiz100','streak1','streak3','streak7','streak14','combo3','combo5','combo10','perfect','vakken3','vakken10','examen_done']},
-  'Daan M.':  {animalId:'draak',   stageIdx:3, featuredBadgeId:'combo10',   badgeIds:['quiz1','quiz10','quiz50','streak1','streak3','streak7','combo3','combo5','combo10','vakken3','examen_done']},
-  'Emma J.':  {animalId:'vlinder', stageIdx:3, featuredBadgeId:'quiz100',   badgeIds:['quiz1','quiz10','quiz50','quiz100','streak1','streak3','streak7','streak14','combo3','vakken3','examen_done']},
-  'Noah B.':  {animalId:'wolf',    stageIdx:2, featuredBadgeId:'combo5',    badgeIds:['quiz1','quiz10','streak1','streak3','combo3','combo5','vakken3']},
-  'Lena H.':  {animalId:'leeuw',   stageIdx:2, featuredBadgeId:'quiz10',    badgeIds:['quiz1','quiz10','streak1','streak3','streak7','vakken3']},
-  'Tim R.':   {animalId:'wolf',    stageIdx:1, featuredBadgeId:'streak3',   badgeIds:['quiz1','streak1','streak3','streak7']},
-  'Sara P.':  {animalId:'vlinder', stageIdx:1, featuredBadgeId:'vakken3',   badgeIds:['quiz1','streak1','streak3','vakken3']},
-  'Finn O.':  {animalId:'draak',   stageIdx:0, featuredBadgeId:'quiz1',     badgeIds:['quiz1','streak1']},
-  'Mila W.':  {animalId:'adelaar', stageIdx:0, featuredBadgeId:'streak1',   badgeIds:['quiz1','streak1']},
-};
-// stageIdx 5=Goud, 6=Diamant, 7=Platina (nieuw na Prime=4)
-function seedBotsNow(){
-  const BOT_KEY='slagio_bots_seeded_v12';
-  if(localStorage.getItem(BOT_KEY))return;
-  // Clear old bot key so new entries are re-seeded
-  localStorage.removeItem('slagio_bots_seeded_v11');
-
-  function mkEntry(naam,avatar,vak,vakNaam,domeinId,domeinNaam,goed,tot,avgTijd,daysAgo,niveau){
-    const d=new Date('2025-01-15');d.setDate(d.getDate()+daysAgo);
-    const ba=BOT_AVATARS[naam]||{};
-    // Normalize to 10-question quiz (new standard) and use updated formula (50+50 per question)
-    const g10=Math.round((goed/tot)*10);
-    return{naam,avatar,animalId:ba.animalId||null,stageIdx:ba.stageIdx??0,featuredBadgeId:ba.featuredBadgeId||null,badgeIds:ba.badgeIds||[],
-      vak,vakNaam,domeinId,domeinNaam,
-      score:g10*50+g10*Math.round(avgTijd/15*50),goed:g10,tot:10,avgTijd,
-      date:d.toISOString().slice(0,10),niveau,isBot:true};
-  }
-
-  // Vaste bot-entries per niveau — identiek voor alle spelers
-  const havoEntries=[
-    // Lars V. — Elite
-    mkEntry('Lars V.','🦁','wi','Wiskunde','A','Algebra',5,5,13.5,0,'havo'),
-    mkEntry('Lars V.','🦁','na','Natuurkunde','A','Krachten & Beweging',5,5,12.0,1,'havo'),
-    mkEntry('Lars V.','🦁','en','Engels','A','Leesvaardigheid',5,5,11.5,2,'havo'),
-    mkEntry('Lars V.','🦁','ec','Economie','A','Vraag & Aanbod',5,5,13.0,3,'havo'),
-    // Sophie K. — Elite
-    mkEntry('Sophie K.','🦅','sk','Scheikunde','A','Stoffen & Reacties',5,5,12.5,0,'havo'),
-    mkEntry('Sophie K.','🦅','bi','Biologie','A','Cellen & Erfelijkheid',5,5,11.0,1,'havo'),
-    mkEntry('Sophie K.','🦅','nl','Nederlands','A','Lezen',5,5,13.0,2,'havo'),
-    mkEntry('Sophie K.','🦅','gs','Geschiedenis','A','Moderne Tijd',5,5,10.5,3,'havo'),
-    // Daan M. — Expert
-    mkEntry('Daan M.','🦊','ec','Economie','A','Vraag & Aanbod',4,5,9.0,1,'havo'),
-    mkEntry('Daan M.','🦊','gs','Geschiedenis','A','Moderne Tijd',5,5,8.5,2,'havo'),
-    mkEntry('Daan M.','🦊','wi','Wiskunde','A','Algebra',4,5,9.5,3,'havo'),
-    mkEntry('Daan M.','🦊','en','Engels','A','Leesvaardigheid',4,5,8.0,4,'havo'),
-    // Emma J. — Expert
-    mkEntry('Emma J.','🦋','nl','Nederlands','A','Lezen',5,5,8.5,1,'havo'),
-    mkEntry('Emma J.','🦋','en','Engels','A','Leesvaardigheid',4,5,9.0,2,'havo'),
-    mkEntry('Emma J.','🦋','bi','Biologie','A','Cellen & Erfelijkheid',4,5,8.0,3,'havo'),
-    mkEntry('Emma J.','🦋','gs','Geschiedenis','A','Moderne Tijd',4,5,7.5,4,'havo'),
-    // Noah B. — Expert
-    mkEntry('Noah B.','⚡','na','Natuurkunde','A','Krachten & Beweging',5,5,7.5,1,'havo'),
-    mkEntry('Noah B.','⚡','wi','Wiskunde','A','Algebra',4,5,8.0,2,'havo'),
-    mkEntry('Noah B.','⚡','sk','Scheikunde','A','Stoffen & Reacties',4,5,7.0,3,'havo'),
-    mkEntry('Noah B.','⚡','ec','Economie','A','Vraag & Aanbod',5,5,6.5,4,'havo'),
-    // Lena H. — Gevorderd
-    mkEntry('Lena H.','🦉','bi','Biologie','A','Cellen & Erfelijkheid',3,5,5.5,2,'havo'),
-    mkEntry('Lena H.','🦉','nl','Nederlands','A','Lezen',3,5,6.0,3,'havo'),
-    mkEntry('Lena H.','🦉','en','Engels','A','Leesvaardigheid',4,5,5.0,4,'havo'),
-    // Tim R. — Gevorderd
-    mkEntry('Tim R.','🐻','gs','Geschiedenis','A','Moderne Tijd',3,5,5.0,2,'havo'),
-    mkEntry('Tim R.','🐻','ec','Economie','A','Vraag & Aanbod',3,5,5.5,3,'havo'),
-    mkEntry('Tim R.','🐻','nl','Nederlands','A','Lezen',3,5,4.5,4,'havo'),
-    // Sara P. — Gevorderd
-    mkEntry('Sara P.','🌸','bi','Biologie','A','Cellen & Erfelijkheid',4,5,4.5,2,'havo'),
-    mkEntry('Sara P.','🌸','sk','Scheikunde','A','Stoffen & Reacties',3,5,5.0,3,'havo'),
-    mkEntry('Sara P.','🌸','en','Engels','A','Leesvaardigheid',3,5,4.0,4,'havo'),
-    // Finn O. — Beginner
-    mkEntry('Finn O.','🐣','en','Engels','A','Leesvaardigheid',2,5,3.0,3,'havo'),
-    mkEntry('Finn O.','🐣','nl','Nederlands','A','Lezen',2,5,2.5,4,'havo'),
-    mkEntry('Finn O.','🐣','ec','Economie','A','Vraag & Aanbod',1,5,2.0,5,'havo'),
-    // Mila W. — Beginner
-    mkEntry('Mila W.','🌱','nl','Nederlands','A','Lezen',2,5,2.5,3,'havo'),
-    mkEntry('Mila W.','🌱','en','Engels','A','Leesvaardigheid',2,5,3.0,4,'havo'),
-    mkEntry('Mila W.','🌱','bi','Biologie','A','Cellen & Erfelijkheid',1,5,2.0,5,'havo'),
-  ];
-
-  const vwoEntries=[
-    mkEntry('Lars V.','🦁','wb','Wiskunde B','A','Analyse',5,5,13.5,0,'vwo'),
-    mkEntry('Lars V.','🦁','na','Natuurkunde','A','Mechanica',5,5,12.0,1,'vwo'),
-    mkEntry('Lars V.','🦁','en','Engels','A','Leesvaardigheid',5,5,11.5,2,'vwo'),
-    mkEntry('Lars V.','🦁','sk','Scheikunde','A','Bindingen & Reacties',5,5,13.0,3,'vwo'),
-    mkEntry('Sophie K.','🦅','sk','Scheikunde','A','Bindingen & Reacties',5,5,12.5,0,'vwo'),
-    mkEntry('Sophie K.','🦅','bi','Biologie','A','Cellen & Genetica',5,5,11.0,1,'vwo'),
-    mkEntry('Sophie K.','🦅','wa','Wiskunde A','A','Statistiek',5,5,13.0,2,'vwo'),
-    mkEntry('Sophie K.','🦅','gs','Geschiedenis','A','Moderne Geschiedenis',5,5,10.5,3,'vwo'),
-    mkEntry('Daan M.','🦊','ec','Economie','A','Marktwerking',4,5,9.0,1,'vwo'),
-    mkEntry('Daan M.','🦊','in','Informatica','A','Algoritmen',5,5,8.5,2,'vwo'),
-    mkEntry('Daan M.','🦊','wb','Wiskunde B','A','Analyse',4,5,9.5,3,'vwo'),
-    mkEntry('Daan M.','🦊','en','Engels','A','Leesvaardigheid',4,5,8.0,4,'vwo'),
-    mkEntry('Emma J.','🦋','nl','Nederlands','A','Lezen & Schrijven',5,5,8.5,1,'vwo'),
-    mkEntry('Emma J.','🦋','en','Engels','A','Leesvaardigheid',4,5,9.0,2,'vwo'),
-    mkEntry('Emma J.','🦋','bi','Biologie','A','Cellen & Genetica',4,5,8.0,3,'vwo'),
-    mkEntry('Emma J.','🦋','gs','Geschiedenis','A','Moderne Geschiedenis',4,5,7.5,4,'vwo'),
-    mkEntry('Noah B.','⚡','na','Natuurkunde','A','Mechanica',5,5,7.5,1,'vwo'),
-    mkEntry('Noah B.','⚡','wb','Wiskunde B','A','Analyse',4,5,8.0,2,'vwo'),
-    mkEntry('Noah B.','⚡','sk','Scheikunde','A','Bindingen & Reacties',4,5,7.0,3,'vwo'),
-    mkEntry('Noah B.','⚡','ec','Economie','A','Marktwerking',5,5,6.5,4,'vwo'),
-    mkEntry('Lena H.','🦉','bi','Biologie','A','Cellen & Genetica',3,5,5.5,2,'vwo'),
-    mkEntry('Lena H.','🦉','nl','Nederlands','A','Lezen & Schrijven',3,5,6.0,3,'vwo'),
-    mkEntry('Lena H.','🦉','en','Engels','A','Leesvaardigheid',4,5,5.0,4,'vwo'),
-    mkEntry('Tim R.','🐻','gs','Geschiedenis','A','Moderne Geschiedenis',3,5,5.0,2,'vwo'),
-    mkEntry('Tim R.','🐻','ec','Economie','A','Marktwerking',3,5,5.5,3,'vwo'),
-    mkEntry('Tim R.','🐻','nl','Nederlands','A','Lezen & Schrijven',3,5,4.5,4,'vwo'),
-    mkEntry('Sara P.','🌸','bi','Biologie','A','Cellen & Genetica',4,5,4.5,2,'vwo'),
-    mkEntry('Sara P.','🌸','sk','Scheikunde','A','Bindingen & Reacties',3,5,5.0,3,'vwo'),
-    mkEntry('Sara P.','🌸','en','Engels','A','Leesvaardigheid',3,5,4.0,4,'vwo'),
-    mkEntry('Finn O.','🐣','en','Engels','A','Leesvaardigheid',2,5,3.0,3,'vwo'),
-    mkEntry('Finn O.','🐣','nl','Nederlands','A','Lezen & Schrijven',2,5,2.5,4,'vwo'),
-    mkEntry('Finn O.','🐣','in','Informatica','A','Algoritmen',1,5,2.0,5,'vwo'),
-    mkEntry('Mila W.','🌱','nl','Nederlands','A','Lezen & Schrijven',2,5,2.5,3,'vwo'),
-    mkEntry('Mila W.','🌱','en','Engels','A','Leesvaardigheid',2,5,3.0,4,'vwo'),
-    mkEntry('Mila W.','🌱','bi','Biologie','A','Cellen & Genetica',1,5,2.0,5,'vwo'),
-  ];
-
-  ['havo','vwo'].forEach(niveau=>{
-    const botEntries=niveau==='havo'?havoEntries:vwoEntries;
-    const key='examenapp_leaderboard_'+niveau;
-    const existing=JSON.parse(localStorage.getItem(key)||'[]').filter(e=>!e.isBot);
-    const merged=[...existing,...botEntries].sort((a,b)=>b.score-a.score).slice(0,200);
-    localStorage.setItem(key,JSON.stringify(merged));
+// Eenmalige cleanup: verwijder alle bot-entries uit localStorage
+(function _purgeBots(){
+  const done='slagio_bots_purged_v1';
+  if(localStorage.getItem(done))return;
+  ['havo','vwo'].forEach(n=>{
+    const key='examenapp_leaderboard_'+n;
+    try{
+      const entries=JSON.parse(localStorage.getItem(key)||'[]').filter(e=>!e.isBot);
+      localStorage.setItem(key,JSON.stringify(entries));
+    }catch(e){}
   });
-
-  // Wis oude seed-vlaggen
-  ['v3','v7','v8','v9'].forEach(v=>localStorage.removeItem('slagio_bots_seeded_'+v));
-  localStorage.setItem(BOT_KEY,'1');
-}
-seedBotsNow();
+  // Wis alle oude seed-vlaggen
+  ['v3','v7','v8','v9','v11','v12'].forEach(v=>localStorage.removeItem('slagio_bots_seeded_'+v));
+  localStorage.setItem(done,'1');
+})();
 
 // ═══════ OFFLINE INDICATOR ═══════
 (function initOfflineBanner(){
@@ -15732,15 +15617,12 @@ function getLbEntries(){try{return JSON.parse(localStorage.getItem(getLbKey())||
 async function saveLeaderboardEntry(entry){
   entry.niveau=APP_LEVEL;
   if(currentUser)entry.uid=currentUser.id;
-  // Save to local cache (preserve bots)
+  // Save to local cache
   let all=getLbEntries();
   all.push(entry);
   all.sort((a,b)=>b.score-a.score);
   if(all.length>200)all=all.slice(0,200);
   localStorage.setItem(getLbKey(),JSON.stringify(all));
-  // Re-seed bots if they got lost
-  const hasBots=all.some(e=>e.isBot);
-  if(!hasBots){localStorage.removeItem('slagio_bots_seeded_v11');seedBotsNow();}
   // Save to Supabase global leaderboard (cross-user)
   if(currentUser){
     const base={
@@ -15778,26 +15660,11 @@ async function loadLeaderboardFromSupabase(){
       score:d.score,goed:d.correct,tot:d.total,uid:d.user_id,
       avgTijd:d.avg_tijd||null,niveau:d.niveau,date:d.created_at?.slice(0,10)
     }));
-    // Merge: keep bots + local entries, add remote on top
-    const local=getLbEntries();
-    const bots=local.filter(e=>e.isBot);
-    const merged=[...remote,...bots].filter(e=>e.score<=1000&&(e.tot||0)>5).sort((a,b)=>b.score-a.score).slice(0,200);
+    const merged=remote.filter(e=>e.score<=1000&&(e.tot||0)>5).sort((a,b)=>b.score-a.score).slice(0,200);
     localStorage.setItem(getLbKey(),JSON.stringify(merged));
   }catch(e){console.warn('leaderboard load error:',e);}
 }
 // ═══════ LB PROFILE ═══════
-const BOT_PROFILES={
-  'Lars V.':{bio:'"Verlies staat niet in mijn woordenboek."',school:'Gymnasium Peregrinorum',studytijd:'🌙 Late avond',feit:'Heeft nog nooit een vraag overgeslagen',streak:14,motto:'Snelheid × Precisie = Dominantie',favVak:'Wiskunde',sterk:'Rekenvakken',zwak:'Taalvakken',goals:'Top 3 blijven'},
-  'Sophie K.':{bio:'"Elk examen is een kans om te bewijzen wie je bent."',school:'Atheneum Nova',studytijd:'🌅 Vroege ochtend',feit:'Voltooide alle VWO-domeinen in één week',streak:11,motto:'Analyseer alles, mis niets',favVak:'Scheikunde',sterk:'Bètavakken',zwak:'Geschiedenis',goals:'Perfecte score halen'},
-  'Daan M.':{bio:'"Als je slim speelt hoef je niet altijd perfect te zijn."',school:'RSG Flamingo',studytijd:'🕐 Middag',feit:'Beantwoordt vragen gemiddeld in onder 7s',streak:7,motto:'Slimmer, niet harder',favVak:'Economie',sterk:'Strategisch denken',zwak:'Scheikunde',goals:'Expert-badge behalen'},
-  'Emma J.':{bio:'"Rustig en bedachtzaam winnen het altijd van haast."',school:'Scholengemeenschap Olympus',studytijd:'☀️ Ochtend',feit:'Sterkst in taalvakken — 5/5 gemiddeld',streak:9,motto:'Precisie boven snelheid',favVak:'Nederlands',sterk:'Taalvakken',zwak:'Wiskunde B',goals:'Alles boven 80% nauwkeurigheid'},
-  'Noah B.':{bio:'"Ik ben hier niet om mee te doen — ik ben hier om te winnen."',school:'De Rijswijk Academie',studytijd:'⚡ Altijd en overal',feit:'Haalde 3× een topscore op dezelfde dag',streak:5,motto:'Vol gas, geen remmen',favVak:'Natuurkunde',sterk:'Snelheid',zwak:'Lange theorie-vragen',goals:'Snelste gemiddelde reactietijd'},
-  'Lena H.':{bio:'"Elke dag een beetje beter dan gisteren."',school:'Montessori Lyceum',studytijd:'🌙 Avond',feit:'Begon 3 weken geleden en groeit snel',streak:4,motto:'Geduld is de sleutel',favVak:'Biologie',sterk:'Alfavakken',zwak:'Wiskunde',goals:'Gevorderd-badge bereiken'},
-  'Tim R.':{bio:'"Solide, betrouwbaar, altijd aanwezig."',school:'Coornhert Lyceum',studytijd:'🕐 Na school',feit:'Speelt elke dag minstens één quiz',streak:6,motto:'Consistent is het nieuwe excellent',favVak:'Geschiedenis',sterk:'Geheugenwerk',zwak:'Grafieken & analyse',goals:'Dagelijkse streak naar 10'},
-  'Sara P.':{bio:'"Ik ben aan het groeien — pas maar op."',school:'Wolfert Tweetalig',studytijd:'☀️ Na schooltijd',feit:'Haar favoriete vak is Biologie',streak:3,motto:'Kleine stappen, grote dromen',favVak:'Biologie',sterk:'Exacte vakken',zwak:'Economie',goals:'Top 5 halen'},
-  'Finn O.':{bio:'"Iedereen begint ergens — dit is mijn begin."',school:'Scholengroep Spinoza',studytijd:'🎮 Weekend',feit:'Net aangemeld, eerste quizzen achter de rug',streak:2,motto:'Vandaag beginner, morgen expert',favVak:'Engels',sterk:'Motivatie',zwak:'Alles nog aan het leren',goals:'Eerste 100 punten scoren'},
-  'Mila W.':{bio:'"Elke vraag is een nieuwe kans om iets te leren."',school:'Stedelijk Gymnasium',studytijd:'🌸 Wanneer ik tijd heb',feit:'Speelt voornamelijk taalvakken',streak:1,motto:'Leren is leven',favVak:'Engels',sterk:'Creatief denken',zwak:'Exacte vakken',goals:'Leerling-badge halen'},
-};
 function getTierLabel(score){
   if(score>=850)return'🏆 Elite';
   if(score>=650)return'⚡ Expert';
@@ -15815,8 +15682,6 @@ function getTierClass(score){
 function openLbProfile(naam){
   const allEntries=getLbEntries().filter(e=>e.naam===naam);
   if(!allEntries.length)return;
-  const botProf=BOT_PROFILES[naam]||null;
-  const isBot=allEntries.some(e=>e.isBot);
   const avatarHtml=getLbAvatarHtml(allEntries[0],50);
   const niveau=allEntries[0]?.niveau?.toUpperCase()||'';
   // Aggregate stats
@@ -15828,21 +15693,12 @@ function openLbProfile(naam){
   const totalQuizzes=allEntries.length;
   const favVakMap={};
   allEntries.forEach(e=>{favVakMap[e.vakNaam]=(favVakMap[e.vakNaam]||0)+1;});
-  const favVak=botProf?.favVak||Object.entries(favVakMap).sort((a,b)=>b[1]-a[1])[0]?.[0]||'–';
+  const favVak=Object.entries(favVakMap).sort((a,b)=>b[1]-a[1])[0]?.[0]||'–';
   const dates=allEntries.map(e=>e.date).filter(Boolean).sort();
   const actief=dates[0]||'–';
   const recent=[...allEntries].sort((a,b)=>b.score-a.score).slice(0,3);
   const tierLabel=getTierLabel(bestScore);
   const tierCls=getTierClass(bestScore);
-  const botHtml=botProf?`
-    <p class="lbp-section-title">Persoonlijk</p>
-    <div class="lbp-detail-row"><span class="lbp-detail-key">🏫 School</span><span class="lbp-detail-val">${botProf.school}</span></div>
-    <div class="lbp-detail-row"><span class="lbp-detail-key">⏰ Studytijd</span><span class="lbp-detail-val">${botProf.studytijd}</span></div>
-    <div class="lbp-detail-row"><span class="lbp-detail-key">🔥 Streak</span><span class="lbp-detail-val">${botProf.streak} dagen 🔥</span></div>
-    <div class="lbp-detail-row"><span class="lbp-detail-key">💪 Sterk in</span><span class="lbp-detail-val">${botProf.sterk}</span></div>
-    <div class="lbp-detail-row"><span class="lbp-detail-key">📌 Doel</span><span class="lbp-detail-val">${botProf.goals}</span></div>
-    <div class="lbp-detail-row"><span class="lbp-detail-key">💬 Motto</span><span class="lbp-detail-val" style="font-style:italic">${botProf.motto}</span></div>
-  `:'';
   const recentHtml=recent.map(e=>`
     <div class="lbp-recent-row">
       <span class="lbp-recent-vak">${e.vakNaam}${e.domeinId?` · D${e.domeinId}`:''}</span>
@@ -15892,14 +15748,13 @@ function openLbProfile(naam){
     <div class="lbp-header">
       <div class="lbp-av-wrap"><div class="lbp-av">${avatarHtml}</div>${getLbBadgeOverlay(allEntries[0]?.featuredBadgeId)}</div>
       <div class="lbp-headinfo">
-        <div class="lbp-naam">${naam}${isBot?'<span style="font-size:10px;color:var(--mu);font-weight:500;margin-left:6px">· bot</span>':''}</div>
+        <div class="lbp-naam">${naam}</div>
         <div class="lbp-chips">
           ${niveau?`<span class="lb-niveau-chip">${niveau}</span>`:''}
           <span class="lb-tier ${tierCls}">${tierLabel}</span>
         </div>
       </div>
     </div>
-    ${botProf?.bio?`<p class="lbp-bio">${botProf.bio}</p>`:''}
     <div class="lbp-stats">
       <div class="lbp-stat">
         <div class="lbp-stat-val">${bestScore}</div>
@@ -15924,7 +15779,6 @@ function openLbProfile(naam){
     <div class="lbp-detail-row"><span class="lbp-detail-key">❤️ Favoriete vak</span><span class="lbp-detail-val">${favVak}</span></div>
     <div class="lbp-detail-row"><span class="lbp-detail-key">📅 Actief sinds</span><span class="lbp-detail-val">${actief}</span></div>
     <div class="lbp-detail-row"><span class="lbp-detail-key">✅ Totaal goed</span><span class="lbp-detail-val">${totalGoed} / ${totalTot} vragen</span></div>
-    ${botHtml}
     ${recentHtml?`<p class="lbp-section-title" style="margin-top:16px">Beste quizzes</p><div style="display:flex;flex-direction:column;gap:6px">${recentHtml}</div>`:''}
     ${badgeSectionHtml}
   </div>`;
@@ -15998,9 +15852,6 @@ function renderLeaderboard(){
 function _renderLbWithData(){
   // Clean up any stored entries with score > 1000
   try{const key=getLbKey();const stored=getLbEntries();const cleaned=stored.filter(e=>e.score<=1000);if(cleaned.length!==stored.length)localStorage.setItem(key,JSON.stringify(cleaned));}catch(e){}
-  // Re-seed bots if missing
-  const hasBots=getLbEntries().some(e=>e.isBot);
-  if(!hasBots){localStorage.removeItem('slagio_bots_seeded_v11');seedBotsNow();}
   const all=getLbEntries();
   const prof=JSON.parse(localStorage.getItem(PROF_KEY)||'{}');
   const myUid=currentUser?currentUser.id:null;
@@ -16030,7 +15881,7 @@ function _renderLbWithData(){
   const VAKKEN_LABEL=lbVakFilter==='all'?'Alle vakken':(VAKKEN_MAP[lbVakFilter]?VAKKEN_MAP[lbVakFilter].naam:lbVakFilter);
   if(badge)badge.textContent=APP_LEVEL.toUpperCase()+' 2026 · '+VAKKEN_LABEL;
   const subtitleEl=document.getElementById('lb-subtitle');
-  const playerCount=[...new Set(all.filter(e=>!e.isBot).map(e=>e.uid||e.naam))].length;
+  const playerCount=[...new Set(all.map(e=>e.uid||e.naam))].length;
   if(subtitleEl)subtitleEl.textContent=lbVakFilter==='all'
     ?`Snelle quiz · beste score per speler · ${playerCount} deelnemers`
     :`Snelle quiz · beste ${VAKKEN_LABEL}-score per speler`;
