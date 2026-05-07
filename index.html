@@ -4567,13 +4567,69 @@ html.dark .hsd-pill{background:var(--bg2);border-color:var(--bo2)}
   #sc-race .race-pu-btn{padding:10px 6px!important;font-size:10px!important;border-radius:10px!important}
   #sc-race .nxt{padding:13px!important;font-size:15px!important;border-radius:15px!important;margin-top:0!important}
 }
-/* ── PREMIUM AVATAR STAGE FILTERS (geanimeerde gloed) ────────── */
-@keyframes _avo-g{0%,100%{filter:sepia(.8) saturate(4.5) hue-rotate(4deg) brightness(1.25) contrast(1.1) drop-shadow(0 0 6px rgba(251,191,36,.7)) drop-shadow(0 0 2px rgba(245,158,11,.9))}50%{filter:sepia(.8) saturate(4.5) hue-rotate(4deg) brightness(1.45) contrast(1.12) drop-shadow(0 0 18px rgba(251,191,36,.95)) drop-shadow(0 0 36px rgba(245,158,11,.55))}}
-@keyframes _avo-d{0%,100%{filter:hue-rotate(198deg) saturate(3.2) brightness(1.35) contrast(1.18) drop-shadow(0 0 7px rgba(56,189,248,.75)) drop-shadow(0 0 3px rgba(14,165,233,.95))}50%{filter:hue-rotate(203deg) saturate(3.8) brightness(1.55) contrast(1.22) drop-shadow(0 0 20px rgba(56,189,248,.95)) drop-shadow(0 0 40px rgba(14,165,233,.6))}}
-@keyframes _avo-p{0%,100%{filter:grayscale(.2) brightness(1.55) contrast(.9) saturate(.5) drop-shadow(0 0 8px rgba(255,255,255,.85)) drop-shadow(0 0 3px rgba(203,213,225,.95))}50%{filter:grayscale(.1) brightness(1.85) contrast(.85) saturate(.35) drop-shadow(0 0 24px rgba(255,255,255,.98)) drop-shadow(0 0 44px rgba(226,232,240,.75))}}
-.avo-goud{animation:_avo-g 2.6s ease-in-out infinite}
-.avo-diamant{animation:_avo-d 2.1s ease-in-out infinite}
-.avo-platina{animation:_avo-p 1.9s ease-in-out infinite}
+/* ── PREMIUM AVATAR RING + FILTER ────────────────────────────── */
+/* Rotating metallic frame rond het SVG; filter kleurt het dier   */
+.avo-prem-ring{
+  display:inline-flex;align-items:center;justify-content:center;
+  position:relative;flex-shrink:0;padding:3px;border-radius:24%}
+.avo-prem-ring .anim-svg-wrap{
+  position:relative;z-index:1;flex-shrink:0;border-radius:18%;overflow:hidden}
+/* Roterende ring via ::before (conic gradient vult de 3px padding) */
+.avo-prem-ring::before{
+  content:'';position:absolute;inset:0;border-radius:24%;z-index:0}
+/* Speculaire glans (witte schijn linksboven) via ::after */
+.avo-prem-ring::after{
+  content:'';position:absolute;top:6%;left:10%;width:42%;height:28%;
+  border-radius:50%;transform:rotate(-22deg);z-index:3;pointer-events:none;
+  background:radial-gradient(ellipse,rgba(255,255,255,.6) 0%,transparent 68%)}
+
+/* ── Goud ── */
+@keyframes _rg{to{transform:rotate(360deg)}}
+@keyframes _avo-g{
+  0%,100%{filter:sepia(.88) saturate(4.5) hue-rotate(3deg) brightness(1.18) contrast(1.12)}
+  50%{filter:sepia(.88) saturate(4.5) hue-rotate(3deg) brightness(1.38) contrast(1.14)}}
+.avo-ring-goud{
+  box-shadow:0 0 0 .5px rgba(251,191,36,.4),0 0 10px 3px rgba(251,191,36,.55),0 0 24px 7px rgba(245,158,11,.3),0 0 44px 12px rgba(180,110,0,.15)}
+.avo-ring-goud::before{
+  background:conic-gradient(from 0deg,
+    #3d2000 0%,#b36b00 7%,#f59e0b 14%,#fde68a 20%,#fff9e6 27%,
+    #fbbf24 33%,#d97706 40%,#a35900 48%,
+    #d97706 56%,#fbbf24 62%,#fff9e6 68%,
+    #fde68a 74%,#f59e0b 81%,#b36b00 90%,#3d2000 100%);
+  animation:_rg 3.8s linear infinite}
+.avo-goud{animation:_avo-g 2.8s ease-in-out infinite}
+
+/* ── Diamant ── */
+@keyframes _rd{to{transform:rotate(-360deg)}}
+@keyframes _avo-d{
+  0%,100%{filter:hue-rotate(195deg) saturate(3.2) brightness(1.28) contrast(1.18)}
+  50%{filter:hue-rotate(200deg) saturate(4) brightness(1.52) contrast(1.22)}}
+.avo-ring-diamant{
+  box-shadow:0 0 0 .5px rgba(56,189,248,.45),0 0 12px 4px rgba(56,189,248,.58),0 0 28px 8px rgba(14,165,233,.32),0 0 48px 14px rgba(2,132,199,.16)}
+.avo-ring-diamant::before{
+  background:conic-gradient(from 0deg,
+    #061524 0%,#0369a1 8%,#0ea5e9 15%,#7dd3fc 22%,#dff4ff 28%,
+    #38bdf8 34%,#0284c7 41%,#064e72 49%,
+    #0284c7 57%,#38bdf8 63%,#dff4ff 69%,
+    #7dd3fc 75%,#0ea5e9 82%,#0369a1 91%,#061524 100%);
+  animation:_rd 3s linear infinite}
+.avo-diamant{animation:_avo-d 2.2s ease-in-out infinite}
+
+/* ── Platina ── */
+@keyframes _rp{to{transform:rotate(360deg)}}
+@keyframes _avo-p{
+  0%,100%{filter:grayscale(.28) brightness(1.45) contrast(.88) saturate(.55)}
+  50%{filter:grayscale(.1) brightness(1.75) contrast(.82) saturate(.38)}}
+.avo-ring-platina{
+  box-shadow:0 0 0 .5px rgba(203,213,225,.5),0 0 14px 4px rgba(226,232,240,.62),0 0 32px 9px rgba(148,163,184,.32),0 0 54px 15px rgba(100,116,139,.14)}
+.avo-ring-platina::before{
+  background:conic-gradient(from 0deg,
+    #0f172a 0%,#475569 8%,#94a3b8 15%,#e2e8f0 22%,#ffffff 28%,
+    #cbd5e1 34%,#64748b 41%,#1e2d3d 49%,
+    #64748b 57%,#cbd5e1 63%,#ffffff 69%,
+    #e2e8f0 75%,#94a3b8 82%,#475569 91%,#0f172a 100%);
+  animation:_rp 5s linear infinite}
+.avo-platina{animation:_avo-p 2s ease-in-out infinite}
 /* ── EVOLUTION REVEAL MODAL ───────────────────────────────────── */
 @keyframes evo-bg-in{from{opacity:0}to{opacity:1}}
 @keyframes evo-card-in{from{transform:scale(.7) translateY(24px);opacity:0}to{transform:scale(1) translateY(0);opacity:1}}
@@ -4585,9 +4641,9 @@ html.dark .hsd-pill{background:var(--bg2);border-color:var(--bo2)}
 .evo-reveal-card{background:var(--bg);border-radius:26px;padding:36px 26px 28px;text-align:center;max-width:308px;width:90%;position:relative;overflow:hidden;opacity:0;transform:scale(.7) translateY(24px);transition:none}
 #evo-reveal-modal.open .evo-reveal-card{animation:evo-card-in .48s .08s cubic-bezier(.34,1.56,.64,1) forwards}
 .evo-reveal-glow{position:absolute;inset:0;border-radius:26px;pointer-events:none;z-index:0}
-.evo-reveal-glow-goud{background:radial-gradient(ellipse at 50% -10%,rgba(251,191,36,.22) 0%,transparent 70%)}
-.evo-reveal-glow-diamant{background:radial-gradient(ellipse at 50% -10%,rgba(56,189,248,.22) 0%,transparent 70%)}
-.evo-reveal-glow-platina{background:radial-gradient(ellipse at 50% -10%,rgba(226,232,240,.25) 0%,transparent 70%)}
+.evo-reveal-glow-goud{background:radial-gradient(ellipse at 50% 0%,rgba(251,191,36,.28) 0%,rgba(245,158,11,.12) 50%,transparent 75%)}
+.evo-reveal-glow-diamant{background:radial-gradient(ellipse at 50% 0%,rgba(56,189,248,.28) 0%,rgba(14,165,233,.12) 50%,transparent 75%)}
+.evo-reveal-glow-platina{background:radial-gradient(ellipse at 50% 0%,rgba(226,232,240,.32) 0%,rgba(148,163,184,.14) 50%,transparent 75%)}
 .evo-reveal-content{position:relative;z-index:1}
 .evo-reveal-crown{font-size:28px;display:block;margin-bottom:8px;animation:evo-crown-drop .5s .55s both cubic-bezier(.34,1.56,.64,1)}
 .evo-reveal-badge{font-size:10.5px;font-weight:800;letter-spacing:.9px;text-transform:uppercase;padding:4px 14px;border-radius:20px;display:inline-block;margin-bottom:16px}
@@ -10800,13 +10856,22 @@ function getAnimalDisplay(animalId,stageIdx,size){
   size=size||48;
   const a=getAnimalById(animalId);
   if(!a)return'<span style="font-size:'+size+'px">🐾</span>';
-  // Premium stage CSS classes for Goud (5), Diamant (6), Platina (7)
-  const premCls=stageIdx>=5?['avo-goud','avo-diamant','avo-platina'][stageIdx-5]||'avo-platina':'';
+  // Premium ring wrapper for Goud(5), Diamant(6), Platina(7)
+  const premInfo=stageIdx>=5?[
+    {cls:'avo-goud',ring:'avo-ring-goud'},
+    {cls:'avo-diamant',ring:'avo-ring-diamant'},
+    {cls:'avo-platina',ring:'avo-ring-platina'},
+  ][stageIdx-5]||{cls:'avo-platina',ring:'avo-ring-platina'}:null;
   if(a.svg){
     const svgIdx=Math.min(stageIdx,a.svg.length-1);
     if(a.svg[svgIdx]){
-      const cls='anim-svg-wrap'+(premCls?' '+premCls:'');
-      return'<span class="'+cls+'" style="width:'+size+'px;height:'+size+'px">'+a.svg[svgIdx]+'</span>';
+      const svgCls='anim-svg-wrap'+(premInfo?' '+premInfo.cls:'');
+      const svgSpan='<span class="'+svgCls+'" style="width:'+size+'px;height:'+size+'px">'+a.svg[svgIdx]+'</span>';
+      if(premInfo){
+        // Ring wrapper auto-sizes to svg + 6px (3px padding each side)
+        return'<span class="avo-prem-ring '+premInfo.ring+'">'+svgSpan+'</span>';
+      }
+      return svgSpan;
     }
   }
   const sIdx=Math.min(stageIdx,a.s.length-1);
