@@ -1529,6 +1529,25 @@ html.dark .qb{background:#2e3550}
 .sim-opt:hover:not([disabled]){border-color:rgba(99,102,241,.45);background:rgba(99,102,241,.06);color:#818cf8}
 .sim-opt.correct{border-color:#22c55e;background:rgba(34,197,94,.08);color:#16a34a}
 .sim-opt.wrong{border-color:#ef4444;background:rgba(239,68,68,.07);color:#dc2626}
+.sim-mode-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-bottom:20px}
+.sim-mode-card{border:2px solid var(--bo);border-radius:14px;padding:14px 10px;text-align:center;cursor:pointer;background:var(--s);transition:all .18s;user-select:none}
+.sim-mode-card:hover{border-color:#818cf8;background:rgba(99,102,241,.05);transform:translateY(-2px)}
+.sim-mode-card.selected{border-color:var(--sim-mc-clr,#6366f1);background:rgba(var(--sim-mc-rgb,99 102 241),.08);box-shadow:0 0 0 3px rgba(var(--sim-mc-rgb,99 102 241),.15)}
+.sim-mode-card.selected .sim-mode-name{color:var(--sim-mc-clr,#6366f1)}
+.sim-mc-oe.selected{--sim-mc-clr:#22c55e;--sim-mc-rgb:34 197 94}
+.sim-mc-no.selected{--sim-mc-clr:#6366f1;--sim-mc-rgb:99 102 241}
+.sim-mc-ex.selected{--sim-mc-clr:#ef4444;--sim-mc-rgb:239 68 68}
+.sim-mode-icon{font-size:26px;margin-bottom:6px}
+.sim-mode-name{font-size:13px;font-weight:800;font-family:var(--font-head);color:var(--dk);margin-bottom:3px}
+.sim-mode-desc{font-size:10px;color:var(--mu);line-height:1.4;font-weight:500}
+.sim-mode-badge{display:inline-block;font-size:10px;font-weight:800;letter-spacing:.5px;text-transform:uppercase;padding:2px 8px;border-radius:20px;margin-top:6px}
+.sim-mc-oe .sim-mode-badge{background:rgba(34,197,94,.12);color:#16a34a;border:1px solid rgba(34,197,94,.25)}
+.sim-mc-no .sim-mode-badge{background:rgba(99,102,241,.12);color:#818cf8;border:1px solid rgba(99,102,241,.25)}
+.sim-mc-ex .sim-mode-badge{background:rgba(239,68,68,.1);color:#ef4444;border:1px solid rgba(239,68,68,.2)}
+.sim-mode-indicator{display:inline-flex;align-items:center;gap:5px;font-size:10px;font-weight:800;letter-spacing:.5px;text-transform:uppercase;padding:3px 10px;border-radius:20px;margin-left:8px}
+.sim-mi-oe{background:rgba(34,197,94,.12);color:#16a34a;border:1px solid rgba(34,197,94,.25)}
+.sim-mi-no{background:rgba(99,102,241,.12);color:#818cf8;border:1px solid rgba(99,102,241,.25)}
+.sim-mi-ex{background:rgba(239,68,68,.1);color:#ef4444;border:1px solid rgba(239,68,68,.2)}
 .sim-ctx-box{background:var(--s);border-left:3px solid #6366f1;border-radius:0 10px 10px 0;padding:14px 16px;margin-bottom:18px;font-size:14px;line-height:1.65;color:var(--dk);font-style:italic}
 .sim-ctx-label{font-size:10px;font-weight:700;color:#818cf8;text-transform:uppercase;letter-spacing:.7px;margin-bottom:6px;font-style:normal}
 .sim-open-area{}
@@ -14614,36 +14633,71 @@ function lpStartFlash(domeinId){
 
 // ═══════ SIMULATIETOETS ═══════
 let SIM={};
-const SIM_QPD=3; // questions per domain
+const SIM_MODES={
+  oefenen:{key:'oefenen',label:'Oefenen', icon:'📖',vpd:1,  tpq:0, deelsPts:0.5, clr:'#22c55e',badgeCls:'sim-mi-oe'},
+  normaal: {key:'normaal', label:'Normaal', icon:'🎯',vpd:999,tpq:5, deelsPts:0.5, clr:'#6366f1',badgeCls:'sim-mi-no'},
+  examen:  {key:'examen',  label:'Examen',  icon:'⚡',vpd:999,tpq:3, deelsPts:0.25,clr:'#ef4444',badgeCls:'sim-mi-ex'},
+};
+let _simMode='normaal';
+
+function simSelectMode(key){
+  _simMode=key;
+  ['oefenen','normaal','examen'].forEach(k=>{
+    document.getElementById('sim-mc-'+k.slice(0,2))?.classList.toggle('selected',k===key);
+  });
+  // Update hint + info-grid
+  const m=SIM_MODES[key];
+  const hints={
+    oefenen:'📖 <strong>Oefenen</strong> — 1 willekeurige vraag per CE-domein, geen tijdslimiet. Ideaal om rustig te verkennen zonder druk.',
+    normaal: '🎯 <strong>Normaal</strong> — alle vragen, 5 minuten per vraag. Realistische oefensessie met tijdlimiet.',
+    examen:  '⚡ <strong>Examen</strong> — alle vragen, 3 minuten per vraag. <em>Deels goed</em> telt als kwart punt — scherpe beoordelingen vereist.',
+  };
+  const hintClrs={oefenen:'rgba(34,197,94,.08)',normaal:'rgba(99,102,241,.07)',examen:'rgba(239,68,68,.07)'};
+  const hintBrdr={oefenen:'rgba(34,197,94,.25)',normaal:'rgba(99,102,241,.2)',examen:'rgba(239,68,68,.2)'};
+  const hintTxt={oefenen:'#16a34a',normaal:'#818cf8',examen:'#ef4444'};
+  const hint=document.getElementById('sim-mode-hint');
+  if(hint){hint.style.background=hintClrs[key];hint.style.border='1px solid '+hintBrdr[key];hint.style.color=hintTxt[key];hint.innerHTML=hints[key];}
+  // Recompute grid if vak known
+  if(SIM.vak)_simUpdateInfoGrid();
+}
+
+function _simUpdateInfoGrid(){
+  const m=SIM_MODES[_simMode];
+  const vak=SIM.vak;
+  const ceDomeinen=vak.domeinen.filter(d=>!d.ceStatus||d.ceStatus!=='SE');
+  let total=0;
+  ceDomeinen.forEach(d=>{
+    const pool=(d.oe||[]).filter(q=>q.v&&q.u);
+    total+=Math.min(pool.length,m.vpd);
+  });
+  const mins=m.tpq===0?'∞':total*m.tpq;
+  const grid=document.getElementById('sim-info-grid');
+  if(!grid)return;
+  grid.innerHTML=`
+    <div class="sim-info-card"><div class="sim-info-num">${total}</div><div class="sim-info-lbl">Open vragen</div></div>
+    <div class="sim-info-card"><div class="sim-info-num">${mins}${m.tpq?'&nbsp;min':''}</div><div class="sim-info-lbl">Tijdlimiet</div></div>
+    <div class="sim-info-card"><div class="sim-info-num">${ceDomeinen.length}</div><div class="sim-info-lbl">CE-domeinen</div></div>`;
+  const btn=document.getElementById('sim-start-btn');
+  if(btn){btn.style.background=m.key==='examen'?'linear-gradient(135deg,#ef4444,#f87171)':m.key==='oefenen'?'linear-gradient(135deg,#22c55e,#4ade80)':'linear-gradient(135deg,#6366f1,#818cf8)';btn.style.boxShadow='0 4px 18px '+m.clr+'55';}
+}
 
 function startSimToets(){
   trackEvent('simulatietoets',{vak:ST.vak?.naam||null});
   if(!ST.vak)return;
   const vak=ST.vak;
-  SIM={vak,questions:[],idx:0,answers:[],timer:null,duration:0,started:false};
+  SIM={vak,questions:[],idx:0,answers:[],timer:null,duration:0,started:false,mode:_simMode};
 
-  // Build question pool: ALL oe (open) questions from CE domains only — no MC
-  const ceDomeinen=vak.domeinen.filter(d=>!d.ceStatus||d.ceStatus!=='SE');
-  ceDomeinen.forEach(d=>{
-    (d.oe||[]).filter(q=>q.v&&q.u).forEach(q=>{
-      SIM.questions.push({...q,_type:'open',domeinId:d.id,domeinNaam:d.naam,domeinKleur:vak.kleur});
-    });
-  });
-  SIM.questions.sort(()=>Math.random()-.5);
+  // Reset mode selector UI to current _simMode
+  simSelectMode(_simMode);
 
-  const total=SIM.questions.length;
-  const mins=total*5;
-  SIM.duration=mins*60;
+  // Store vak reference so _simUpdateInfoGrid works
+  _simUpdateInfoGrid();
 
   // Update setup screen
   document.getElementById('sim-nav-title').textContent=vak.naam+' — Simulatie';
   document.getElementById('sim-setup-title').textContent='Simulatietoets '+vak.naam;
-  document.getElementById('sim-setup-desc').textContent=ceDomeinen.length+' CE-domeinen · '+total+' open examenvragen.';
-  const grid=document.getElementById('sim-info-grid');
-  grid.innerHTML=`
-    <div class="sim-info-card"><div class="sim-info-num">${total}</div><div class="sim-info-lbl">Open vragen</div></div>
-    <div class="sim-info-card"><div class="sim-info-num">${mins} min</div><div class="sim-info-lbl">Tijdlimiet</div></div>
-    <div class="sim-info-card"><div class="sim-info-num">${ceDomeinen.length}</div><div class="sim-info-lbl">CE-domeinen</div></div>`;
+  const ceDomeinen=vak.domeinen.filter(d=>!d.ceStatus||d.ceStatus!=='SE');
+  document.getElementById('sim-setup-desc').textContent=ceDomeinen.length+' CE-domeinen · kies een moeilijkheidsgraad.';
 
   // Reset phases
   document.getElementById('sim-setup').style.display='';
@@ -14654,14 +14708,37 @@ function startSimToets(){
 }
 
 function simStart(){
+  // Build question pool based on selected mode
+  const m=SIM_MODES[_simMode]||SIM_MODES.normaal;
+  SIM.mode=m;
+  const vak=SIM.vak;
+  const ceDomeinen=vak.domeinen.filter(d=>!d.ceStatus||d.ceStatus!=='SE');
+  SIM.questions=[];
+  ceDomeinen.forEach(d=>{
+    const pool=(d.oe||[]).filter(q=>q.v&&q.u).map(q=>({...q,_type:'open',domeinId:d.id,domeinNaam:d.naam,domeinKleur:vak.kleur}));
+    const shuffled=[...pool].sort(()=>Math.random()-.5);
+    shuffled.slice(0,m.vpd).forEach(q=>SIM.questions.push(q));
+  });
+  SIM.questions.sort(()=>Math.random()-.5);
+
+  const total=SIM.questions.length;
+  SIM.duration=m.tpq>0?total*m.tpq*60:0; // 0 = no timer
+
   document.getElementById('sim-setup').style.display='none';
   document.getElementById('sim-quiz').style.display='';
-  document.getElementById('sim-timer-chip').style.display='';
+  const timerChip=document.getElementById('sim-timer-chip');
+  timerChip.style.display=m.tpq>0?'':'none';
+
+  // Mode badge in nav
+  const navBadge=document.getElementById('sim-mode-nav-badge');
+  if(navBadge){navBadge.className='sim-mode-indicator '+m.badgeCls;navBadge.textContent=m.icon+' '+m.label;navBadge.style.display='';}
+
   SIM.idx=0;SIM.answers=[];SIM.started=true;
-  SIM.endTime=Date.now()+SIM.duration*1000;
-  // Start timer
-  if(SIM.timer)clearInterval(SIM.timer);
-  SIM.timer=setInterval(simTimerTick,1000);
+  if(m.tpq>0){
+    SIM.endTime=Date.now()+SIM.duration*1000;
+    if(SIM.timer)clearInterval(SIM.timer);
+    SIM.timer=setInterval(simTimerTick,1000);
+  }
   simShowQ();
 }
 
@@ -14750,10 +14827,13 @@ function simNakijken(){
   document.getElementById('sim-model-blok').style.display='block';
 }
 
-function simBeoordeel(pts){
+function simBeoordeel(rawPts){
   document.querySelectorAll('.sim-ab').forEach(b=>b.disabled=true);
   const q=SIM.questions[SIM.idx];
-  SIM.answers.push({correct:pts>=0.5,pts,_type:'open',domeinId:q.domeinId,domeinNaam:q.domeinNaam,domeinKleur:q.domeinKleur});
+  // In examen mode: "deels" = 0.25 instead of 0.5
+  const m=SIM.mode||SIM_MODES.normaal;
+  const pts=rawPts===0.5?m.deelsPts:rawPts;
+  SIM.answers.push({correct:pts>=0.5,pts,rawPts,_type:'open',domeinId:q.domeinId,domeinNaam:q.domeinNaam,domeinKleur:q.domeinKleur});
   const nextBtn=document.getElementById('sim-next-btn');
   nextBtn.disabled=false;nextBtn.style.opacity='1';
 }
@@ -14780,11 +14860,14 @@ function simFinish(){
   const gradeColor=grade>=7?'#22c55e':grade>=5.5?'#f97316':'#ef4444';
   const gradeEmoji=grade>=8?'🏆':grade>=7?'⭐':grade>=6?'👍':grade>=5.5?'📈':'📚';
 
-  document.getElementById('sim-res-emoji').textContent=gradeEmoji;
-  document.getElementById('sim-res-grade').textContent=grade.toFixed(1).replace('.',',');
+  const m=SIM.mode||SIM_MODES.normaal;
+  const isOefenen=m.key==='oefenen';
+  document.getElementById('sim-res-emoji').textContent=isOefenen?'📖':gradeEmoji;
+  document.getElementById('sim-res-grade').textContent=isOefenen?Math.round(pct*100)+'%':grade.toFixed(1).replace('.',',');
   document.getElementById('sim-res-grade').style.color=gradeColor;
-  document.getElementById('sim-res-label').textContent='Geschat CE-cijfer';
-  document.getElementById('sim-res-score').textContent=correct+' van '+total+' vragen correct ('+Math.round(pct*100)+'%)';
+  document.getElementById('sim-res-label').textContent=isOefenen?'Oefenscore':'Geschat CE-cijfer';
+  const modeLbl=`<span style="font-size:11px;font-weight:800;padding:2px 9px;border-radius:20px;background:${m.clr}18;color:${m.clr};border:1px solid ${m.clr}33;margin-left:6px">${m.icon} ${m.label}</span>`;
+  document.getElementById('sim-res-score').innerHTML=correct+' van '+total+' vragen correct ('+Math.round(pct*100)+'%)'+modeLbl;
 
   // Per-domain breakdown
   const domMap={};
@@ -14815,6 +14898,7 @@ function simFinish(){
 
 function simExit(){
   if(SIM.timer){clearInterval(SIM.timer);SIM.timer=null;}
+  const nb=document.getElementById('sim-mode-nav-badge');if(nb)nb.style.display='none';
   show('sc-detail');
 }
 
@@ -19391,22 +19475,41 @@ if('serviceWorker' in navigator){
 <nav class="nav">
   <div class="nav-inner">
     <button class="bk" onclick="simExit()">← Stop</button>
-    <span style="font-family:var(--font-head);font-weight:800;font-size:15px;color:var(--dk)" id="sim-nav-title">Simulatietoets</span>
+    <span style="font-family:var(--font-head);font-weight:800;font-size:15px;color:var(--dk)" id="sim-nav-title">Simulatietoets</span><span id="sim-mode-nav-badge" style="display:none"></span>
     <div id="sim-timer-chip" style="margin-left:auto;font-size:13px;font-weight:800;font-family:var(--font-head);color:var(--or);background:rgba(var(--or-rgb),.1);border:1px solid rgba(var(--or-rgb),.25);border-radius:20px;padding:4px 14px;display:none">⏱ --:--</div>
   </div>
 </nav>
 <!-- SETUP PHASE -->
 <div id="sim-setup" class="w" style="padding-top:28px;padding-bottom:48px;max-width:560px">
-  <div style="text-align:center;margin-bottom:28px">
+  <div style="text-align:center;margin-bottom:24px">
     <div style="font-size:44px;margin-bottom:12px">🎯</div>
     <h2 style="font-family:var(--font-head);font-size:24px;font-weight:900;margin-bottom:8px;letter-spacing:-.3px" id="sim-setup-title">Simulatietoets</h2>
     <p style="color:var(--mu);font-size:14px" id="sim-setup-desc">Oefen alle domeinen in één realistische sessie.</p>
   </div>
-  <div id="sim-info-grid" style="display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:24px"></div>
-  <div style="background:rgba(99,102,241,.07);border:1px solid rgba(99,102,241,.2);border-radius:14px;padding:14px 16px;margin-bottom:20px;font-size:13px;color:#818cf8;line-height:1.7">
-    💡 Per domein worden 3 vragen gesteld. Beantwoord alles en zie je score per domein + een geschat CE-cijfer.
+  <div style="font-size:11px;font-weight:800;text-transform:uppercase;letter-spacing:.7px;color:var(--mu);margin-bottom:10px">Kies moeilijkheidsgraad</div>
+  <div class="sim-mode-grid">
+    <div class="sim-mode-card sim-mc-oe" id="sim-mc-oe" onclick="simSelectMode('oefenen')">
+      <div class="sim-mode-icon">📖</div>
+      <div class="sim-mode-name">Oefenen</div>
+      <div class="sim-mode-desc">1 vraag per domein · geen tijdlimiet</div>
+      <div class="sim-mode-badge">Makkelijk</div>
+    </div>
+    <div class="sim-mode-card sim-mc-no selected" id="sim-mc-no" onclick="simSelectMode('normaal')">
+      <div class="sim-mode-icon">🎯</div>
+      <div class="sim-mode-name">Normaal</div>
+      <div class="sim-mode-desc">Alle vragen · 5 min per vraag</div>
+      <div class="sim-mode-badge">Standaard</div>
+    </div>
+    <div class="sim-mode-card sim-mc-ex" id="sim-mc-ex" onclick="simSelectMode('examen')">
+      <div class="sim-mode-icon">⚡</div>
+      <div class="sim-mode-name">Examen</div>
+      <div class="sim-mode-desc">Alle vragen · 3 min per vraag · streng</div>
+      <div class="sim-mode-badge">Zwaar</div>
+    </div>
   </div>
-  <button onclick="simStart()" style="width:100%;padding:16px;background:linear-gradient(135deg,#6366f1,#818cf8);color:#fff;border:none;border-radius:14px;font-size:16px;font-weight:800;cursor:pointer;font-family:var(--font-head);box-shadow:0 4px 18px rgba(99,102,241,.4);transition:all .2s">▶ Simulatie starten</button>
+  <div id="sim-info-grid" style="display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-bottom:16px"></div>
+  <div id="sim-mode-hint" style="border-radius:14px;padding:13px 16px;margin-bottom:20px;font-size:13px;line-height:1.65"></div>
+  <button onclick="simStart()" id="sim-start-btn" style="width:100%;padding:16px;background:linear-gradient(135deg,#6366f1,#818cf8);color:#fff;border:none;border-radius:14px;font-size:16px;font-weight:800;cursor:pointer;font-family:var(--font-head);box-shadow:0 4px 18px rgba(99,102,241,.4);transition:all .2s">▶ Simulatie starten</button>
 </div>
 <!-- QUIZ PHASE -->
 <div id="sim-quiz" style="display:none">
