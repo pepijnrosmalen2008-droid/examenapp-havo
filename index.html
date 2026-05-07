@@ -4567,28 +4567,46 @@ html.dark .hsd-pill{background:var(--bg2);border-color:var(--bo2)}
   #sc-race .race-pu-btn{padding:10px 6px!important;font-size:10px!important;border-radius:10px!important}
   #sc-race .nxt{padding:13px!important;font-size:15px!important;border-radius:15px!important;margin-top:0!important}
 }
-/* ── PREMIUM AVATAR STAGE FILTERS ─────────────────────────────── */
-.avo-goud{filter:sepia(1) saturate(3.5) hue-rotate(8deg) brightness(1.15) drop-shadow(0 0 5px rgba(245,158,11,.55))}
-.avo-diamant{filter:hue-rotate(200deg) saturate(2.5) brightness(1.3) contrast(1.1) drop-shadow(0 0 7px rgba(96,165,250,.65))}
-.avo-platina{filter:grayscale(.45) brightness(1.5) contrast(.95) drop-shadow(0 0 9px rgba(226,232,240,.95))}
+/* ── PREMIUM AVATAR STAGE FILTERS (geanimeerde gloed) ────────── */
+@keyframes _avo-g{0%,100%{filter:sepia(.8) saturate(4.5) hue-rotate(4deg) brightness(1.25) contrast(1.1) drop-shadow(0 0 6px rgba(251,191,36,.7)) drop-shadow(0 0 2px rgba(245,158,11,.9))}50%{filter:sepia(.8) saturate(4.5) hue-rotate(4deg) brightness(1.45) contrast(1.12) drop-shadow(0 0 18px rgba(251,191,36,.95)) drop-shadow(0 0 36px rgba(245,158,11,.55))}}
+@keyframes _avo-d{0%,100%{filter:hue-rotate(198deg) saturate(3.2) brightness(1.35) contrast(1.18) drop-shadow(0 0 7px rgba(56,189,248,.75)) drop-shadow(0 0 3px rgba(14,165,233,.95))}50%{filter:hue-rotate(203deg) saturate(3.8) brightness(1.55) contrast(1.22) drop-shadow(0 0 20px rgba(56,189,248,.95)) drop-shadow(0 0 40px rgba(14,165,233,.6))}}
+@keyframes _avo-p{0%,100%{filter:grayscale(.2) brightness(1.55) contrast(.9) saturate(.5) drop-shadow(0 0 8px rgba(255,255,255,.85)) drop-shadow(0 0 3px rgba(203,213,225,.95))}50%{filter:grayscale(.1) brightness(1.85) contrast(.85) saturate(.35) drop-shadow(0 0 24px rgba(255,255,255,.98)) drop-shadow(0 0 44px rgba(226,232,240,.75))}}
+.avo-goud{animation:_avo-g 2.6s ease-in-out infinite}
+.avo-diamant{animation:_avo-d 2.1s ease-in-out infinite}
+.avo-platina{animation:_avo-p 1.9s ease-in-out infinite}
 /* ── EVOLUTION REVEAL MODAL ───────────────────────────────────── */
-#evo-reveal-modal{position:fixed;inset:0;z-index:9999;display:flex;align-items:center;justify-content:center;background:rgba(0,0,0,.78);opacity:0;pointer-events:none;transition:opacity .3s}
+@keyframes evo-bg-in{from{opacity:0}to{opacity:1}}
+@keyframes evo-card-in{from{transform:scale(.7) translateY(24px);opacity:0}to{transform:scale(1) translateY(0);opacity:1}}
+@keyframes evo-av-pop{0%{transform:scale(0) rotate(-22deg);opacity:0}70%{transform:scale(1.15) rotate(4deg)}100%{transform:scale(1) rotate(0);opacity:1}}
+@keyframes evo-crown-drop{0%{transform:translateY(-20px) scale(.7);opacity:0}60%{transform:translateY(3px) scale(1.1)}100%{transform:translateY(0) scale(1);opacity:1}}
+@keyframes evo-shine{0%,100%{opacity:.7;transform:scaleX(1)}50%{opacity:1;transform:scaleX(1.04)}}
+#evo-reveal-modal{position:fixed;inset:0;z-index:9999;display:flex;align-items:center;justify-content:center;background:rgba(0,0,0,.82);opacity:0;pointer-events:none;transition:opacity .25s;animation:none}
 #evo-reveal-modal.open{opacity:1;pointer-events:all}
-.evo-reveal-card{background:var(--bg);border-radius:24px;padding:40px 28px 32px;text-align:center;max-width:320px;width:90%;position:relative;transform:scale(.75);transition:transform .45s cubic-bezier(.34,1.56,.64,1)}
-#evo-reveal-modal.open .evo-reveal-card{transform:scale(1)}
-.evo-reveal-badge{font-size:11px;font-weight:800;letter-spacing:.8px;text-transform:uppercase;padding:4px 14px;border-radius:20px;display:inline-block;margin-bottom:18px}
-.evo-rb-goud{background:rgba(245,158,11,.13);color:#d97706;border:1.5px solid rgba(245,158,11,.4)}
-.evo-rb-diamant{background:rgba(96,165,250,.13);color:#3b82f6;border:1.5px solid rgba(96,165,250,.4)}
-.evo-rb-platina{background:rgba(148,163,184,.2);color:#64748b;border:1.5px solid rgba(148,163,184,.45)}
-.evo-rb-default{background:rgba(99,102,241,.1);color:#818cf8;border:1.5px solid rgba(99,102,241,.25)}
-.evo-reveal-av{margin:0 auto 20px;display:flex;justify-content:center;animation:evo-av-pop .65s .15s both cubic-bezier(.34,1.56,.64,1)}
-@keyframes evo-av-pop{from{transform:scale(0) rotate(-18deg);opacity:0}to{transform:scale(1) rotate(0);opacity:1}}
-.evo-reveal-title{font-size:21px;font-weight:900;color:var(--dk);margin-bottom:8px;font-family:var(--font-head);line-height:1.2}
-.evo-reveal-sub{font-size:14px;color:var(--mu);margin-bottom:26px;line-height:1.55}
-.evo-reveal-btn{width:100%;padding:15px;border:none;border-radius:14px;font-size:15px;font-weight:800;cursor:pointer;font-family:var(--font-head);color:#fff}
-.evo-btn-goud{background:linear-gradient(135deg,#f59e0b,#fbbf24)}
-.evo-btn-diamant{background:linear-gradient(135deg,#3b82f6,#60a5fa)}
-.evo-btn-platina{background:linear-gradient(135deg,#64748b,#94a3b8)}
+.evo-reveal-card{background:var(--bg);border-radius:26px;padding:36px 26px 28px;text-align:center;max-width:308px;width:90%;position:relative;overflow:hidden;opacity:0;transform:scale(.7) translateY(24px);transition:none}
+#evo-reveal-modal.open .evo-reveal-card{animation:evo-card-in .48s .08s cubic-bezier(.34,1.56,.64,1) forwards}
+.evo-reveal-glow{position:absolute;inset:0;border-radius:26px;pointer-events:none;z-index:0}
+.evo-reveal-glow-goud{background:radial-gradient(ellipse at 50% -10%,rgba(251,191,36,.22) 0%,transparent 70%)}
+.evo-reveal-glow-diamant{background:radial-gradient(ellipse at 50% -10%,rgba(56,189,248,.22) 0%,transparent 70%)}
+.evo-reveal-glow-platina{background:radial-gradient(ellipse at 50% -10%,rgba(226,232,240,.25) 0%,transparent 70%)}
+.evo-reveal-content{position:relative;z-index:1}
+.evo-reveal-crown{font-size:28px;display:block;margin-bottom:8px;animation:evo-crown-drop .5s .55s both cubic-bezier(.34,1.56,.64,1)}
+.evo-reveal-badge{font-size:10.5px;font-weight:800;letter-spacing:.9px;text-transform:uppercase;padding:4px 14px;border-radius:20px;display:inline-block;margin-bottom:16px}
+.evo-rb-goud{background:linear-gradient(90deg,rgba(251,191,36,.18),rgba(245,158,11,.18));color:#b45309;border:1.5px solid rgba(251,191,36,.55)}
+.evo-rb-diamant{background:linear-gradient(90deg,rgba(56,189,248,.17),rgba(14,165,233,.17));color:#0284c7;border:1.5px solid rgba(56,189,248,.55)}
+.evo-rb-platina{background:linear-gradient(90deg,rgba(226,232,240,.22),rgba(203,213,225,.22));color:#475569;border:1.5px solid rgba(203,213,225,.6)}
+.evo-rb-default{background:rgba(99,102,241,.1);color:#818cf8;border:1.5px solid rgba(99,102,241,.28)}
+.evo-reveal-av{margin:0 auto 18px;display:flex;justify-content:center;animation:evo-av-pop .6s .22s both cubic-bezier(.34,1.56,.64,1)}
+.evo-reveal-divider{height:2px;border-radius:2px;margin:0 auto 18px;width:60px;animation:evo-shine 2.5s ease-in-out infinite}
+.evo-divider-goud{background:linear-gradient(90deg,transparent,#fbbf24,transparent)}
+.evo-divider-diamant{background:linear-gradient(90deg,transparent,#38bdf8,transparent)}
+.evo-divider-platina{background:linear-gradient(90deg,transparent,#cbd5e1,transparent)}
+.evo-divider-default{background:linear-gradient(90deg,transparent,#818cf8,transparent)}
+.evo-reveal-title{font-size:20px;font-weight:900;color:var(--dk);margin-bottom:8px;font-family:var(--font-head);line-height:1.2}
+.evo-reveal-sub{font-size:13.5px;color:var(--mu);margin-bottom:24px;line-height:1.6}
+.evo-reveal-btn{width:100%;padding:15px;border:none;border-radius:14px;font-size:15px;font-weight:800;cursor:pointer;font-family:var(--font-head);color:#fff;letter-spacing:.2px}
+.evo-btn-goud{background:linear-gradient(135deg,#d97706,#f59e0b,#fbbf24);box-shadow:0 6px 20px rgba(245,158,11,.4)}
+.evo-btn-diamant{background:linear-gradient(135deg,#0284c7,#0ea5e9,#38bdf8);box-shadow:0 6px 20px rgba(14,165,233,.4)}
+.evo-btn-platina{background:linear-gradient(135deg,#475569,#64748b,#94a3b8);box-shadow:0 6px 20px rgba(100,116,139,.35)}
 .evo-btn-default{background:linear-gradient(135deg,#6366f1,#818cf8)}
 /* ── LEADERBOARD STAGE CHIP ───────────────────────────────────── */
 .lb-stage-chip{font-size:9px;font-weight:800;padding:1px 6px;border-radius:10px;display:inline-block;vertical-align:middle;margin-left:4px}
@@ -4652,11 +4670,16 @@ html.dark .hsd-pill{background:var(--bg2);border-color:var(--bo2)}
 <!-- Evolution Reveal Modal -->
 <div id="evo-reveal-modal" onclick="closeEvoReveal()">
   <div class="evo-reveal-card" onclick="event.stopPropagation()">
-    <div id="evo-reveal-badge" class="evo-reveal-badge evo-rb-default"></div>
-    <div class="evo-reveal-av" id="evo-reveal-av"></div>
-    <div class="evo-reveal-title" id="evo-reveal-title"></div>
-    <div class="evo-reveal-sub" id="evo-reveal-sub"></div>
-    <button id="evo-reveal-btn" class="evo-reveal-btn evo-btn-default" onclick="closeEvoReveal()">Geweldig! 🎉</button>
+    <div id="evo-reveal-glow" class="evo-reveal-glow"></div>
+    <div class="evo-reveal-content">
+      <span id="evo-reveal-crown" class="evo-reveal-crown"></span>
+      <div id="evo-reveal-badge" class="evo-reveal-badge evo-rb-default"></div>
+      <div class="evo-reveal-av" id="evo-reveal-av"></div>
+      <div id="evo-reveal-divider" class="evo-reveal-divider evo-divider-default"></div>
+      <div class="evo-reveal-title" id="evo-reveal-title"></div>
+      <div class="evo-reveal-sub" id="evo-reveal-sub"></div>
+      <button id="evo-reveal-btn" class="evo-reveal-btn evo-btn-default" onclick="closeEvoReveal()">Geweldig! 🎉</button>
+    </div>
   </div>
 </div>
 
@@ -10754,8 +10777,8 @@ const ANIMAL_EVOLUTIONS=[
    desc:['Trekt aan alles. Inclusief de studieplannen.','Klimt van onderwerp naar onderwerp.','Klopt op zijn borst na elk goed antwoord. Terecht.','Denkt dieper na dan de vraagsteller. Problematisch.','Zit boven in de boom der kennis. Kijkt neer op twijfel.'],
    evoMsg:['🐒 Je Gorilla zwaait van tak tot tak!','🦍 Je Gorilla groeit! Klopt al op z\'n borst.','🦧 ORANG-OETAN! Intelligent en oranje. Gevaarlijke combo.','🦍 SILVERBACK-LEGENDE! Alle gorilla\'s buigen voor hem.']},
 ];
-const ANIM_THRESHOLDS=[0,100,500,2000,7500,30000,100000];
-const ANIM_STAGE_NAMES=['Baby','Jong','Tiener','Volwassen','Goud','Diamant','Platina'];
+const ANIM_THRESHOLDS=[0,100,500,2000,7500,30000,75000,200000];
+const ANIM_STAGE_NAMES=['Baby','Jong','Tiener','Volwassen','Prime','Goud','Diamant','Platina'];
 let selectedAnimalId=null;
 
 function getAnimalById(id){return ANIMAL_EVOLUTIONS.find(a=>a.id===id)||null;}
@@ -10777,8 +10800,8 @@ function getAnimalDisplay(animalId,stageIdx,size){
   size=size||48;
   const a=getAnimalById(animalId);
   if(!a)return'<span style="font-size:'+size+'px">🐾</span>';
-  // Premium stage CSS classes for Goud (4), Diamant (5), Platina (6)
-  const premCls=stageIdx>=4?['avo-goud','avo-diamant','avo-platina'][stageIdx-4]||'avo-platina':'';
+  // Premium stage CSS classes for Goud (5), Diamant (6), Platina (7)
+  const premCls=stageIdx>=5?['avo-goud','avo-diamant','avo-platina'][stageIdx-5]||'avo-platina':'';
   if(a.svg){
     const svgIdx=Math.min(stageIdx,a.svg.length-1);
     if(a.svg[svgIdx]){
@@ -15319,6 +15342,7 @@ const BOT_AVATARS={
   'Finn O.':  {animalId:'draak',   stageIdx:0, featuredBadgeId:'quiz1',     badgeIds:['quiz1','streak1']},
   'Mila W.':  {animalId:'adelaar', stageIdx:0, featuredBadgeId:'streak1',   badgeIds:['quiz1','streak1']},
 };
+// stageIdx 5=Goud, 6=Diamant, 7=Platina (nieuw na Prime=4)
 function seedBotsNow(){
   const BOT_KEY='slagio_bots_seeded_v12';
   if(localStorage.getItem(BOT_KEY))return;
@@ -15808,13 +15832,13 @@ function _renderLbWithData(){
   const niveauChip=(e)=>e.niveau?`<span class="lb-niveau-chip">${e.niveau.toUpperCase()}</span>`:'';
   // Helper: rank colour class
   const rankCls=(r)=>r===1?'top1':r===2?'top2':r===3?'top3':'';
-  // Helper: premium stage chip (only for stages 4=Goud, 5=Diamant, 6=Platina)
+  // Helper: premium stage chip (only for stages 5=Goud, 6=Diamant, 7=Platina)
   const stageBadge=(e)=>{
     const idx=e.stageIdx!=null?e.stageIdx:0;
-    if(idx<4)return'';
+    if(idx<5)return'';
     const stageN=ANIM_STAGE_NAMES[idx]||'';
-    const clsMap={4:'lb-sc-goud',5:'lb-sc-diamant',6:'lb-sc-platina'};
-    const em={4:'✨',5:'💎',6:'🔮'}[idx]||'⭐';
+    const clsMap={5:'lb-sc-goud',6:'lb-sc-diamant',7:'lb-sc-platina'};
+    const em={5:'✨',6:'💎',7:'🔮'}[idx]||'⭐';
     return`<span class="lb-stage-chip ${clsMap[idx]||'lb-sc-goud'}">${em} ${stageN}</span>`;
   };
 
@@ -16127,8 +16151,8 @@ function renderFavHome(){
 
 // ═══════ XP & LEVELS ═══════
 const XP_KEY='slagio_xp';
-const XP_LEVELS=[0,100,500,2000,7500,30000,100000];
-const LEVEL_NAMES=['','Baby','Jong','Tiener','Volwassen','Goud','Diamant','Platina'];
+const XP_LEVELS=[0,100,500,2000,7500,30000,75000,200000];
+const LEVEL_NAMES=['','Baby','Jong','Tiener','Volwassen','Prime','Goud','Diamant','Platina'];
 // ═══════ RIPPLE EFFECT ═══════
 (function initRipple(){
   document.addEventListener('click',function(e){
@@ -16293,20 +16317,37 @@ function showEvoReveal(newStage,animalId){
   const modal=document.getElementById('evo-reveal-modal');
   if(!modal)return;
   const stageName=ANIM_STAGE_NAMES[newStage]||'Nieuw stadium';
-  const premMap={4:{badge:'evo-rb-goud',btn:'evo-btn-goud',em:'✨'},5:{badge:'evo-rb-diamant',btn:'evo-btn-diamant',em:'💎'},6:{badge:'evo-rb-platina',btn:'evo-btn-platina',em:'🔮'}};
-  const prem=premMap[newStage]||{badge:'evo-rb-default',btn:'evo-btn-default',em:'⭐'};
+  // Styles per stage: 5=Goud, 6=Diamant, 7=Platina; lager=paars (default)
+  const cfg={
+    5:{badge:'evo-rb-goud',btn:'evo-btn-goud',glow:'evo-reveal-glow-goud',div:'evo-divider-goud',crown:'✨',em:'✨'},
+    6:{badge:'evo-rb-diamant',btn:'evo-btn-diamant',glow:'evo-reveal-glow-diamant',div:'evo-divider-diamant',crown:'💎',em:'💎'},
+    7:{badge:'evo-rb-platina',btn:'evo-btn-platina',glow:'evo-reveal-glow-platina',div:'evo-divider-platina',crown:'🔮',em:'🔮'},
+  }[newStage]||{badge:'evo-rb-default',btn:'evo-btn-default',glow:'',div:'evo-divider-default',crown:'⭐',em:'⭐'};
+  // Reset card animation so it replays
+  const card=modal.querySelector('.evo-reveal-card');
+  if(card){card.style.animation='none';card.style.opacity='0';requestAnimationFrame(()=>requestAnimationFrame(()=>{card.style.animation='';}));}
+  const glowEl=document.getElementById('evo-reveal-glow');
+  const crownEl=document.getElementById('evo-reveal-crown');
   const badgeEl=document.getElementById('evo-reveal-badge');
   const avEl=document.getElementById('evo-reveal-av');
+  const divEl=document.getElementById('evo-reveal-divider');
   const titleEl=document.getElementById('evo-reveal-title');
   const subEl=document.getElementById('evo-reveal-sub');
   const btnEl=document.getElementById('evo-reveal-btn');
-  if(badgeEl){badgeEl.className='evo-reveal-badge '+prem.badge;badgeEl.textContent=prem.em+' '+stageName+' — Nieuw stadium';}
-  if(avEl){avEl.style.animation='none';avEl.innerHTML=getAnimalDisplay(animalId,newStage,72);requestAnimationFrame(()=>requestAnimationFrame(()=>{avEl.style.animation='';}));}
+  if(glowEl)glowEl.className='evo-reveal-glow '+(cfg.glow);
+  if(crownEl){crownEl.style.animation='none';crownEl.textContent=cfg.crown;requestAnimationFrame(()=>requestAnimationFrame(()=>{crownEl.style.animation='';}));}
+  if(badgeEl){badgeEl.className='evo-reveal-badge '+cfg.badge;badgeEl.textContent=cfg.em+' '+stageName;}
+  if(avEl){avEl.style.animation='none';avEl.innerHTML=getAnimalDisplay(animalId,newStage,80);requestAnimationFrame(()=>requestAnimationFrame(()=>{avEl.style.animation='';}));}
+  if(divEl)divEl.className='evo-reveal-divider '+cfg.div;
   const animalLabel=(a&&a.lbl&&a.lbl[Math.min(newStage,a.lbl.length-1)])||(a?stageName+' '+a.n:stageName);
-  const msgs={4:'Je dier straalt als goud! Je bent een echte topper. 🥇',5:'Diamant — zo zeldzaam als jouw discipline. Schitterend! 💎',6:'Platina. Het allerhoogste niveau. Slechts weinigen halen dit. 🏆'};
+  const msgs={
+    5:'Je dier gloeit als goud. Jij bent een echte topper! 🥇',
+    6:'Diamant — zo zeldzaam als jouw doorzettingsvermogen. 💎',
+    7:'Platina. Het allerhoogste niveau. Slechts weinigen halen dit. 🏆'
+  };
   if(titleEl)titleEl.textContent=animalLabel;
-  if(subEl)subEl.textContent=msgs[newStage]||'Gefeliciteerd! Je dier is geëvolueerd naar '+stageName+'!';
-  if(btnEl){btnEl.className='evo-reveal-btn '+prem.btn;btnEl.textContent='Geweldig! 🎉';}
+  if(subEl)subEl.textContent=msgs[newStage]||'Gefeliciteerd! Je dier evolueert naar '+stageName+'!';
+  if(btnEl){btnEl.className='evo-reveal-btn '+cfg.btn;btnEl.textContent='Geweldig! 🎉';}
   modal.classList.add('open');
   haptic([80,40,80,40,200]);
 }
