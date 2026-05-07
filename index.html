@@ -674,6 +674,19 @@ h1,h2,h3,h4{font-family:var(--font-head);line-height:1.2;letter-spacing:-.3px}
 .hm-countdown.cd-vwo .cd-box:hover{border-color:rgba(139,92,246,.55);box-shadow:0 0 16px rgba(139,92,246,.28),inset 0 0 10px rgba(139,92,246,.06)}
 .hm-countdown.cd-vwo .cd-val{color:#c4b5fd}
 .hm-countdown.cd-vwo .cd-label{color:rgba(196,181,253,.5)}
+/* ── PANIEKMODUS: <1 dag tot examen ── */
+.hm-countdown.cd-panic{border-color:rgba(239,68,68,.65)!important;box-shadow:0 0 48px rgba(239,68,68,.45),0 0 0 1px rgba(239,68,68,.25) inset!important;animation:cd-panic-glow 1s ease-in-out infinite!important;transition:none!important}
+.hm-countdown.cd-panic .cd-box{border-color:rgba(239,68,68,.45)!important;animation:cd-panic-shake .55s ease-in-out infinite!important}
+.hm-countdown.cd-panic .cd-box:nth-child(2){animation-delay:.07s!important}
+.hm-countdown.cd-panic .cd-box:nth-child(3){animation-delay:.14s!important}
+.hm-countdown.cd-panic .cd-box:nth-child(4){animation-delay:.21s!important}
+.hm-countdown.cd-panic .cd-val{color:#ef4444!important;animation:cd-panic-pulse .9s ease-in-out infinite!important}
+.hm-countdown.cd-panic .cd-label{color:#fca5a5!important;font-weight:900!important}
+.hm-countdown.cd-panic .cd-sub{color:rgba(252,165,165,.75)!important}
+#cd-panic-msg{display:none;width:100%;text-align:center;font-size:11px;font-weight:900;color:#f87171;letter-spacing:.8px;text-transform:uppercase;padding:5px 0 2px;animation:cd-panic-pulse .8s ease-in-out infinite}
+@keyframes cd-panic-glow{0%,100%{box-shadow:0 0 28px rgba(239,68,68,.3),0 0 0 1px rgba(239,68,68,.15) inset}50%{box-shadow:0 0 60px rgba(239,68,68,.6),0 0 0 2px rgba(239,68,68,.35) inset}}
+@keyframes cd-panic-pulse{0%,100%{opacity:1;transform:scale(1)}50%{opacity:.78;transform:scale(1.07)}}
+@keyframes cd-panic-shake{0%,100%{transform:translateX(0) translateY(0)}20%{transform:translateX(-2px) translateY(-1px)}40%{transform:translateX(2px) translateY(1px)}60%{transform:translateX(-1px) translateY(0)}80%{transform:translateX(1px) translateY(-1px)}}
 
 /* CTA buttons */
 .hm-ctas{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
@@ -4803,6 +4816,7 @@ html.dark .hsd-pill{background:var(--bg2);border-color:var(--bo2)}
         <div class="cd-box"><div class="cd-val" id="cd-m">--</div><div class="cd-unit">Min</div></div>
         <div class="cd-box"><div class="cd-val" id="cd-s">--</div><div class="cd-unit">Sec</div></div>
       </div>
+      <div id="cd-panic-msg"></div>
     </div>
     <div class="home-section-header" style="padding-top:8px">
       <span class="hsh-title">Snel aan de slag</span>
@@ -15858,6 +15872,16 @@ function updateCountdown(){
   setEl('cd-d',d);setEl('cd-h',String(h).padStart(2,'0'));
   setEl('cd-m',String(m).padStart(2,'0'));setEl('cd-s',String(s).padStart(2,'0'));
   setEl('cd-days-text',d);
+  // ── PANIEKMODUS: <1 dag ──
+  const panicMsgs=['😱 MORGEN IS HET EXAMEN!','💀 Geen tijd meer voor Netflix.','📚 Nu studeren of nooit.','🚨 NOODTOESTAND ACTIEF','😰 Slapen is voor later.','🔥 Alles op het spel!','⏰ De klok tikt... SNEL!'];
+  const panicEl=document.getElementById('cd-panic-msg');
+  if(d<1){
+    if(cdEl)cdEl.classList.add('cd-panic');
+    if(panicEl){panicEl.style.display='';panicEl.textContent=panicMsgs[Math.floor(Date.now()/2500)%panicMsgs.length];}
+  }else{
+    if(cdEl)cdEl.classList.remove('cd-panic');
+    if(panicEl)panicEl.style.display='none';
+  }
 }
 // updateCountdown() is called after EXAM_SCHEDULE is defined (below)
 
