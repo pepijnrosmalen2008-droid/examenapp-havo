@@ -4585,86 +4585,53 @@ html.dark .hsd-pill{background:var(--bg2);border-color:var(--bo2)}
 
 /* ══ GOUD ════════════════════════════════════════════════════ */
 @keyframes _rg{to{transform:rotate(360deg)}}
-@keyframes _swg{to{transform:rotate(360deg)}} /* sweep for gold */
-@keyframes _avo-g{
-  0%,100%{filter:sepia(.9) saturate(4.5) hue-rotate(2deg) brightness(1.15) contrast(1.12)}
-  50%{filter:sepia(.9) saturate(4.5) hue-rotate(2deg) brightness(1.35) contrast(1.15)}}
-/* Solid metallic band via box-shadow: inner dark → bright top → outer dark → glow */
-.avo-ring-goud{
-  box-shadow:
-    inset 0 0 0 1px rgba(20,8,0,.65),
-    0 0 0 4.5px #7a3e00,
-    0 0 0 5px #c8860a,
-    0 0 0 5.5px #ffd060,
-    0 0 0 6px #b06800,
-    0 0 0 7px rgba(40,18,0,.35),
-    0 0 14px 6px rgba(255,195,0,.5),
-    0 0 30px 11px rgba(220,140,0,.28),
-    0 0 55px 18px rgba(160,90,0,.14)}
-/* Draaiend lichtpunt */
+@keyframes _glow-g{
+  0%,100%{box-shadow:inset 0 0 0 1px rgba(20,8,0,.65),0 0 0 4.5px #7a3e00,0 0 0 5px #c8860a,0 0 0 5.5px #ffcf50,0 0 0 6px #9c6200,0 0 0 7px rgba(40,18,0,.3),0 0 14px 5px rgba(255,190,0,.5),0 0 30px 10px rgba(210,130,0,.25),0 0 52px 16px rgba(150,80,0,.12)}
+  50%{box-shadow:inset 0 0 0 1px rgba(20,8,0,.65),0 0 0 4.5px #7a3e00,0 0 0 5px #c8860a,0 0 0 5.5px #ffcf50,0 0 0 6px #9c6200,0 0 0 7px rgba(40,18,0,.3),0 0 22px 8px rgba(255,200,0,.72),0 0 46px 16px rgba(220,150,0,.38),0 0 75px 24px rgba(160,95,0,.18)}}
+.avo-ring-goud{animation:_glow-g 2.8s ease-in-out infinite}
+/* Conic ring: 2 lichtpieken per rotatie voor realistisch metaal */
 .avo-ring-goud::before{
-  inset:-7px;
+  inset:-6px;
   background:conic-gradient(from 0deg,
-    transparent 0%,transparent 40%,
-    rgba(255,250,200,.06) 43%,rgba(255,255,220,.32) 48%,
-    rgba(255,255,255,.55) 50%,rgba(255,255,220,.32) 52%,
-    rgba(255,250,200,.06) 57%,transparent 60%,transparent 100%);
-  animation:_swg 2.2s linear infinite}
-.avo-goud{animation:_avo-g 3s ease-in-out infinite}
+    #2a1000 0%,#8b4500 5%,#d4930a 10%,#ffd060 15%,#fff5c0 19%,#ffd060 23%,
+    #d4930a 28%,#8b4500 33%,#3d2000 40%,#8b4500 47%,
+    #d4930a 52%,#ffd060 57%,#fff5c0 61%,#ffd060 65%,
+    #d4930a 70%,#8b4500 76%,#2a1000 84%,#8b4500 92%,#2a1000 100%);
+  animation:_rg 3.5s linear infinite}
+/* SVG filter voor realistische goud-textuur + specular */
+.avo-goud{filter:url(#avo-f-goud)}
 
 /* ══ DIAMANT ══════════════════════════════════════════════════ */
 @keyframes _rd{to{transform:rotate(-360deg)}}
-@keyframes _swd{to{transform:rotate(-360deg)}}
-@keyframes _avo-d{
-  0%,100%{filter:hue-rotate(194deg) saturate(3.5) brightness(1.3) contrast(1.2)}
-  50%{filter:hue-rotate(200deg) saturate(4.2) brightness(1.58) contrast(1.25)}}
-.avo-ring-diamant{
-  box-shadow:
-    inset 0 0 0 1px rgba(0,10,22,.65),
-    0 0 0 4.5px #034e7c,
-    0 0 0 5px #0a87c8,
-    0 0 0 5.5px #70d4ff,
-    0 0 0 6px #0074b8,
-    0 0 0 7px rgba(0,15,30,.35),
-    0 0 16px 6px rgba(40,180,255,.55),
-    0 0 34px 12px rgba(0,145,220,.3),
-    0 0 60px 18px rgba(0,90,170,.15)}
+@keyframes _glow-d{
+  0%,100%{box-shadow:inset 0 0 0 1px rgba(0,10,22,.65),0 0 0 4.5px #034e7c,0 0 0 5px #0a87c8,0 0 0 5.5px #68d0f8,0 0 0 6px #0068a8,0 0 0 7px rgba(0,14,28,.3),0 0 16px 6px rgba(30,170,250,.52),0 0 34px 11px rgba(0,135,215,.28),0 0 58px 17px rgba(0,80,160,.13)}
+  50%{box-shadow:inset 0 0 0 1px rgba(0,10,22,.65),0 0 0 4.5px #034e7c,0 0 0 5px #0a87c8,0 0 0 5.5px #68d0f8,0 0 0 6px #0068a8,0 0 0 7px rgba(0,14,28,.3),0 0 26px 10px rgba(30,185,255,.78),0 0 52px 18px rgba(0,150,230,.42),0 0 85px 26px rgba(0,90,180,.2)}}
+.avo-ring-diamant{animation:_glow-d 2.2s ease-in-out infinite}
 .avo-ring-diamant::before{
-  inset:-7px;
+  inset:-6px;
   background:conic-gradient(from 0deg,
-    transparent 0%,transparent 40%,
-    rgba(200,240,255,.06) 43%,rgba(200,240,255,.3) 48%,
-    rgba(240,255,255,.6) 50%,rgba(200,240,255,.3) 52%,
-    rgba(200,240,255,.06) 57%,transparent 60%,transparent 100%);
-  animation:_swd 1.8s linear infinite}
-.avo-diamant{animation:_avo-d 2.2s ease-in-out infinite}
+    #061524 0%,#0369a1 6%,#0ea5e9 12%,#7dd3fc 17%,#e2f8ff 21%,#7dd3fc 25%,
+    #0ea5e9 30%,#0369a1 35%,#061524 42%,#0369a1 49%,
+    #0ea5e9 54%,#7dd3fc 59%,#e2f8ff 63%,#7dd3fc 67%,
+    #0ea5e9 72%,#0369a1 78%,#061524 86%,#0369a1 93%,#061524 100%);
+  animation:_rd 2.5s linear infinite}
+.avo-diamant{filter:url(#avo-f-diamant)}
 
 /* ══ PLATINA ══════════════════════════════════════════════════ */
 @keyframes _rp{to{transform:rotate(360deg)}}
-@keyframes _swp{to{transform:rotate(360deg)}}
-@keyframes _avo-p{
-  0%,100%{filter:grayscale(.3) brightness(1.4) contrast(.86) saturate(.5)}
-  50%{filter:grayscale(.08) brightness(1.72) contrast(.8) saturate(.35)}}
-.avo-ring-platina{
-  box-shadow:
-    inset 0 0 0 1px rgba(5,10,18,.65),
-    0 0 0 4.5px #2a3444,
-    0 0 0 5px #7a8fa8,
-    0 0 0 5.5px #dce8f5,
-    0 0 0 6px #607080,
-    0 0 0 7px rgba(10,15,25,.3),
-    0 0 18px 7px rgba(200,220,240,.5),
-    0 0 38px 13px rgba(140,165,190,.26),
-    0 0 65px 20px rgba(80,100,130,.12)}
+@keyframes _glow-p{
+  0%,100%{box-shadow:inset 0 0 0 1px rgba(5,10,18,.65),0 0 0 4.5px #2a3444,0 0 0 5px #7a8fa8,0 0 0 5.5px #d8e8f5,0 0 0 6px #5a7090,0 0 0 7px rgba(10,14,22,.3),0 0 18px 6px rgba(190,215,238,.5),0 0 38px 12px rgba(130,158,185,.25),0 0 62px 18px rgba(75,100,130,.11)}
+  50%{box-shadow:inset 0 0 0 1px rgba(5,10,18,.65),0 0 0 4.5px #2a3444,0 0 0 5px #7a8fa8,0 0 0 5.5px #d8e8f5,0 0 0 6px #5a7090,0 0 0 7px rgba(10,14,22,.3),0 0 28px 10px rgba(210,230,248,.76),0 0 58px 18px rgba(155,180,205,.38),0 0 90px 28px rgba(90,115,145,.17)}}
+.avo-ring-platina{animation:_glow-p 2s ease-in-out infinite}
 .avo-ring-platina::before{
-  inset:-7px;
+  inset:-6px;
   background:conic-gradient(from 0deg,
-    transparent 0%,transparent 38%,
-    rgba(220,235,250,.05) 42%,rgba(230,242,255,.28) 47%,
-    rgba(255,255,255,.6) 50%,rgba(230,242,255,.28) 53%,
-    rgba(220,235,250,.05) 58%,transparent 62%,transparent 100%);
-  animation:_swp 3.2s linear infinite}
-.avo-platina{animation:_avo-p 2s ease-in-out infinite}
+    #0f172a 0%,#475569 6%,#94a3b8 12%,#e2e8f0 17%,#ffffff 21%,#e2e8f0 25%,
+    #94a3b8 30%,#475569 35%,#0f172a 42%,#475569 49%,
+    #94a3b8 54%,#e2e8f0 59%,#ffffff 63%,#e2e8f0 67%,
+    #94a3b8 72%,#475569 78%,#0f172a 86%,#475569 93%,#0f172a 100%);
+  animation:_rp 4.8s linear infinite}
+.avo-platina{filter:url(#avo-f-platina)}
 /* ── EVOLUTION REVEAL MODAL ───────────────────────────────────── */
 @keyframes evo-bg-in{from{opacity:0}to{opacity:1}}
 @keyframes evo-card-in{from{transform:scale(.7) translateY(24px);opacity:0}to{transform:scale(1) translateY(0);opacity:1}}
@@ -4773,6 +4740,108 @@ html.dark .hsd-pill{background:var(--bg2);border-color:var(--bo2)}
     </div>
   </div>
 </div>
+
+<!-- SVG filter defs for premium avatar stages — hidden, referenced via CSS filter: url(#id) -->
+<svg id="avo-svg-filters" xmlns="http://www.w3.org/2000/svg"
+     style="display:none;position:absolute;width:0;height:0" aria-hidden="true">
+  <defs>
+
+    <!-- ══ GOUD — warme gouden tint + grain + directional specular ══ -->
+    <filter id="avo-f-goud" color-interpolation-filters="sRGB"
+            x="-4%" y="-4%" width="108%" height="108%">
+      <!-- Stap 1: kleur naar warm goud -->
+      <feColorMatrix type="matrix" result="tint" values="
+        1.22  0.42  0.00  0  0.06
+        0.55  0.88  0.00  0  0.02
+        0.00  0.00  0.07  0  0.00
+        0     0     0     1  0"/>
+      <!-- Stap 2: zachte grain als bump-map voor de verlichting -->
+      <feTurbulence type="fractalNoise" baseFrequency="0.60 0.42"
+                    numOctaves="3" seed="4" result="noise"/>
+      <feColorMatrix in="noise" type="saturate" values="0" result="bump"/>
+      <!-- Stap 3: directioneel speculair licht linksboven (warm goud) -->
+      <feSpecularLighting in="bump" result="spec" lighting-color="#fff4b8"
+          specularConstant="0.80" specularExponent="28" surfaceScale="6">
+        <feDistantLight azimuth="315" elevation="45"/>
+      </feSpecularLighting>
+      <!-- Stap 4: clip aan originele vorm + screen-blend over tint -->
+      <feComposite in="spec" in2="SourceAlpha" operator="in" result="specMasked"/>
+      <feBlend in="tint" in2="specMasked" mode="screen" result="lit"/>
+      <!-- Stap 5: contrast en warmte versterken -->
+      <feComponentTransfer in="lit">
+        <feFuncR type="gamma" amplitude="1.05" exponent="0.88" offset="0.02"/>
+        <feFuncG type="gamma" amplitude="0.96" exponent="0.94" offset="0.01"/>
+        <feFuncB type="gamma" amplitude="0.55" exponent="1.08" offset="0"/>
+      </feComponentTransfer>
+    </filter>
+
+    <!-- ══ DIAMANT — kristalblauw + twee lichtbronnen + scherpe facetten ══ -->
+    <filter id="avo-f-diamant" color-interpolation-filters="sRGB"
+            x="-4%" y="-4%" width="108%" height="108%">
+      <!-- Stap 1: koele kristalblauwe tint -->
+      <feColorMatrix type="matrix" result="tint" values="
+        0.32  0.12  0.52  0  0.04
+        0.28  0.58  0.72  0  0.04
+        0.06  0.06  1.50  0  0.08
+        0     0     0     1  0"/>
+      <!-- Stap 2: scherpe turbulentie als facet-structuur bump-map -->
+      <feTurbulence type="turbulence" baseFrequency="1.0 0.75"
+                    numOctaves="2" seed="11" result="noise"/>
+      <feColorMatrix in="noise" type="saturate" values="0" result="bump"/>
+      <!-- Stap 3a: primaire lichtbron linksboven (helder, scherp) -->
+      <feSpecularLighting in="bump" result="sp1" lighting-color="#e2f6ff"
+          specularConstant="0.95" specularExponent="65" surfaceScale="7">
+        <feDistantLight azimuth="310" elevation="50"/>
+      </feSpecularLighting>
+      <!-- Stap 3b: secundaire lichtbron rechtsonder (reflectie) -->
+      <feSpecularLighting in="bump" result="sp2" lighting-color="#b0e8ff"
+          specularConstant="0.50" specularExponent="40" surfaceScale="7">
+        <feDistantLight azimuth="130" elevation="30"/>
+      </feSpecularLighting>
+      <!-- Stap 4: clip beide speculars + combineren -->
+      <feComposite in="sp1" in2="SourceAlpha" operator="in" result="sm1"/>
+      <feComposite in="sp2" in2="SourceAlpha" operator="in" result="sm2"/>
+      <feBlend in="sm1" in2="sm2" mode="screen" result="allSpec"/>
+      <feBlend in="tint" in2="allSpec" mode="screen" result="lit"/>
+      <!-- Stap 5: verhoog contrast voor diamantuitstraling -->
+      <feComponentTransfer in="lit">
+        <feFuncR type="gamma" amplitude="1.0" exponent="0.85" offset="0.02"/>
+        <feFuncG type="gamma" amplitude="1.0" exponent="0.88" offset="0.02"/>
+        <feFuncB type="gamma" amplitude="1.05" exponent="0.80" offset="0.03"/>
+      </feComponentTransfer>
+    </filter>
+
+    <!-- ══ PLATINA — spiegel-chroom, vloeiend, extreem scherpe highlight ══ -->
+    <filter id="avo-f-platina" color-interpolation-filters="sRGB"
+            x="-4%" y="-4%" width="108%" height="108%">
+      <!-- Stap 1: koel zilver-grijze tint -->
+      <feColorMatrix type="matrix" result="tint" values="
+        0.74  0.17  0.09  0  0.10
+        0.70  0.74  0.12  0  0.10
+        0.65  0.16  0.85  0  0.12
+        0     0     0     1  0"/>
+      <!-- Stap 2: zachte, vloeiende bump-map (laag-frequent → spiegel-effect) -->
+      <feTurbulence type="fractalNoise" baseFrequency="0.22 0.14"
+                    numOctaves="2" seed="1" result="noise"/>
+      <feColorMatrix in="noise" type="saturate" values="0" result="bump"/>
+      <!-- Stap 3: extreem scherpe specular voor chroom/spiegel-look -->
+      <feSpecularLighting in="bump" result="spec" lighting-color="#ffffff"
+          specularConstant="1.15" specularExponent="90" surfaceScale="5">
+        <feDistantLight azimuth="315" elevation="58"/>
+      </feSpecularLighting>
+      <!-- Stap 4: clip + blend -->
+      <feComposite in="spec" in2="SourceAlpha" operator="in" result="specMasked"/>
+      <feBlend in="tint" in2="specMasked" mode="screen" result="lit"/>
+      <!-- Stap 5: verhoog helderheid en contrast voor platina-glans -->
+      <feComponentTransfer in="lit">
+        <feFuncR type="gamma" amplitude="1.08" exponent="0.82" offset="0.04"/>
+        <feFuncG type="gamma" amplitude="1.06" exponent="0.84" offset="0.04"/>
+        <feFuncB type="gamma" amplitude="1.10" exponent="0.80" offset="0.05"/>
+      </feComponentTransfer>
+    </filter>
+
+  </defs>
+</svg>
 
 <noscript>
   <style>
