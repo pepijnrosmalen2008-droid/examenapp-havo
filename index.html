@@ -4567,6 +4567,34 @@ html.dark .hsd-pill{background:var(--bg2);border-color:var(--bo2)}
   #sc-race .race-pu-btn{padding:10px 6px!important;font-size:10px!important;border-radius:10px!important}
   #sc-race .nxt{padding:13px!important;font-size:15px!important;border-radius:15px!important;margin-top:0!important}
 }
+/* ── PREMIUM AVATAR STAGE FILTERS ─────────────────────────────── */
+.avo-goud{filter:sepia(1) saturate(3.5) hue-rotate(8deg) brightness(1.15) drop-shadow(0 0 5px rgba(245,158,11,.55))}
+.avo-diamant{filter:hue-rotate(200deg) saturate(2.5) brightness(1.3) contrast(1.1) drop-shadow(0 0 7px rgba(96,165,250,.65))}
+.avo-platina{filter:grayscale(.45) brightness(1.5) contrast(.95) drop-shadow(0 0 9px rgba(226,232,240,.95))}
+/* ── EVOLUTION REVEAL MODAL ───────────────────────────────────── */
+#evo-reveal-modal{position:fixed;inset:0;z-index:9999;display:flex;align-items:center;justify-content:center;background:rgba(0,0,0,.78);opacity:0;pointer-events:none;transition:opacity .3s}
+#evo-reveal-modal.open{opacity:1;pointer-events:all}
+.evo-reveal-card{background:var(--bg);border-radius:24px;padding:40px 28px 32px;text-align:center;max-width:320px;width:90%;position:relative;transform:scale(.75);transition:transform .45s cubic-bezier(.34,1.56,.64,1)}
+#evo-reveal-modal.open .evo-reveal-card{transform:scale(1)}
+.evo-reveal-badge{font-size:11px;font-weight:800;letter-spacing:.8px;text-transform:uppercase;padding:4px 14px;border-radius:20px;display:inline-block;margin-bottom:18px}
+.evo-rb-goud{background:rgba(245,158,11,.13);color:#d97706;border:1.5px solid rgba(245,158,11,.4)}
+.evo-rb-diamant{background:rgba(96,165,250,.13);color:#3b82f6;border:1.5px solid rgba(96,165,250,.4)}
+.evo-rb-platina{background:rgba(148,163,184,.2);color:#64748b;border:1.5px solid rgba(148,163,184,.45)}
+.evo-rb-default{background:rgba(99,102,241,.1);color:#818cf8;border:1.5px solid rgba(99,102,241,.25)}
+.evo-reveal-av{margin:0 auto 20px;display:flex;justify-content:center;animation:evo-av-pop .65s .15s both cubic-bezier(.34,1.56,.64,1)}
+@keyframes evo-av-pop{from{transform:scale(0) rotate(-18deg);opacity:0}to{transform:scale(1) rotate(0);opacity:1}}
+.evo-reveal-title{font-size:21px;font-weight:900;color:var(--dk);margin-bottom:8px;font-family:var(--font-head);line-height:1.2}
+.evo-reveal-sub{font-size:14px;color:var(--mu);margin-bottom:26px;line-height:1.55}
+.evo-reveal-btn{width:100%;padding:15px;border:none;border-radius:14px;font-size:15px;font-weight:800;cursor:pointer;font-family:var(--font-head);color:#fff}
+.evo-btn-goud{background:linear-gradient(135deg,#f59e0b,#fbbf24)}
+.evo-btn-diamant{background:linear-gradient(135deg,#3b82f6,#60a5fa)}
+.evo-btn-platina{background:linear-gradient(135deg,#64748b,#94a3b8)}
+.evo-btn-default{background:linear-gradient(135deg,#6366f1,#818cf8)}
+/* ── LEADERBOARD STAGE CHIP ───────────────────────────────────── */
+.lb-stage-chip{font-size:9px;font-weight:800;padding:1px 6px;border-radius:10px;display:inline-block;vertical-align:middle;margin-left:4px}
+.lb-sc-goud{background:rgba(245,158,11,.14);color:#d97706;border:1px solid rgba(245,158,11,.35)}
+.lb-sc-diamant{background:rgba(96,165,250,.14);color:#3b82f6;border:1px solid rgba(96,165,250,.35)}
+.lb-sc-platina{background:rgba(148,163,184,.18);color:#64748b;border:1px solid rgba(148,163,184,.4)}
 </style>
 </head>
 <body>
@@ -4618,6 +4646,17 @@ html.dark .hsd-pill{background:var(--bg2);border-color:var(--bo2)}
       <button class="confirm-cancel" id="confirm-cancel">Annuleren</button>
       <button class="confirm-ok" id="confirm-ok">Verwijderen</button>
     </div>
+  </div>
+</div>
+
+<!-- Evolution Reveal Modal -->
+<div id="evo-reveal-modal" onclick="closeEvoReveal()">
+  <div class="evo-reveal-card" onclick="event.stopPropagation()">
+    <div id="evo-reveal-badge" class="evo-reveal-badge evo-rb-default"></div>
+    <div class="evo-reveal-av" id="evo-reveal-av"></div>
+    <div class="evo-reveal-title" id="evo-reveal-title"></div>
+    <div class="evo-reveal-sub" id="evo-reveal-sub"></div>
+    <button id="evo-reveal-btn" class="evo-reveal-btn evo-btn-default" onclick="closeEvoReveal()">Geweldig! 🎉</button>
   </div>
 </div>
 
@@ -10715,8 +10754,8 @@ const ANIMAL_EVOLUTIONS=[
    desc:['Trekt aan alles. Inclusief de studieplannen.','Klimt van onderwerp naar onderwerp.','Klopt op zijn borst na elk goed antwoord. Terecht.','Denkt dieper na dan de vraagsteller. Problematisch.','Zit boven in de boom der kennis. Kijkt neer op twijfel.'],
    evoMsg:['🐒 Je Gorilla zwaait van tak tot tak!','🦍 Je Gorilla groeit! Klopt al op z\'n borst.','🦧 ORANG-OETAN! Intelligent en oranje. Gevaarlijke combo.','🦍 SILVERBACK-LEGENDE! Alle gorilla\'s buigen voor hem.']},
 ];
-const ANIM_THRESHOLDS=[0,100,500,2000,7500];
-const ANIM_STAGE_NAMES=['Baby','Jong','Tiener','Volwassen','Prime'];
+const ANIM_THRESHOLDS=[0,100,500,2000,7500,30000,100000];
+const ANIM_STAGE_NAMES=['Baby','Jong','Tiener','Volwassen','Goud','Diamant','Platina'];
 let selectedAnimalId=null;
 
 function getAnimalById(id){return ANIMAL_EVOLUTIONS.find(a=>a.id===id)||null;}
@@ -10730,19 +10769,25 @@ function getAnimalEmoji(animalId,totalXP){
   if(!a)return'🐾';
   const idx=getAnimalStageIdx(totalXP);
   // Custom SVG dieren: gebruik fallback emoji
-  if(a.svg)return a.fallback?.[idx]||a.fallback?.[0]||'⭐';
-  return a.s[idx];
+  if(a.svg)return a.fallback?.[Math.min(idx,a.fallback.length-1)]||a.fallback?.[0]||'⭐';
+  return a.s[Math.min(idx,a.s.length-1)];
 }
 // Geeft HTML terug: SVG voor custom dieren, emoji-span voor normale
 function getAnimalDisplay(animalId,stageIdx,size){
   size=size||48;
   const a=getAnimalById(animalId);
   if(!a)return'<span style="font-size:'+size+'px">🐾</span>';
-  if(a.svg&&a.svg[stageIdx]){
-    // Inline style sets container size; CSS .anim-svg-wrap svg makes the SVG fill it
-    return'<span class="anim-svg-wrap" style="width:'+size+'px;height:'+size+'px">'+a.svg[stageIdx]+'</span>';
+  // Premium stage CSS classes for Goud (4), Diamant (5), Platina (6)
+  const premCls=stageIdx>=4?['avo-goud','avo-diamant','avo-platina'][stageIdx-4]||'avo-platina':'';
+  if(a.svg){
+    const svgIdx=Math.min(stageIdx,a.svg.length-1);
+    if(a.svg[svgIdx]){
+      const cls='anim-svg-wrap'+(premCls?' '+premCls:'');
+      return'<span class="'+cls+'" style="width:'+size+'px;height:'+size+'px">'+a.svg[svgIdx]+'</span>';
+    }
   }
-  return'<span style="font-size:'+size+'px;line-height:1">'+a.s[stageIdx]+'</span>';
+  const sIdx=Math.min(stageIdx,a.s.length-1);
+  return'<span style="font-size:'+size+'px;line-height:1">'+a.s[sIdx]+'</span>';
 }
 function buildRegisterAnimalPicker(){
   const grid=document.getElementById('reg-animal-grid');
@@ -10794,28 +10839,30 @@ function renderAnimalEvoSection(animalId,totalXP){
   const prevThreshold=ANIM_THRESHOLDS[stageIdx];
   const pct=isMaxed?100:Math.round(Math.min(100,(totalXP-prevThreshold)/(nextThreshold-prevThreshold)*100));
   let stagesHtml='';
-  a.s.forEach((emoji,i)=>{
+  for(let i=0;i<ANIM_THRESHOLDS.length;i++){
+    const emoji=a.s[Math.min(i,a.s.length-1)];
     const isDone=i<stageIdx;
     const isCurrent=i===stageIdx;
     const cls=isDone?'done':isCurrent?'current':'';
     const reqTxt=i===0?'Start':ANIM_THRESHOLDS[i].toLocaleString('nl')+' XP';
-    const stageLbl=a.lbl?a.lbl[i]:ANIM_STAGE_NAMES[i];
+    const stageLbl=(a.lbl&&a.lbl[i])||ANIM_STAGE_NAMES[i];
     const pipContent=a.svg
       ?getAnimalDisplay(a.id,i,36)
       :`<span style="font-size:32px;line-height:1;${!isDone&&!isCurrent?'filter:grayscale(.6);opacity:.5':''}">${emoji}</span>`;
-    stagesHtml+=`<div class="anim-stage ${cls}" title="${a.desc?a.desc[i]:''}">
+    stagesHtml+=`<div class="anim-stage ${cls}" title="${a.desc?a.desc[Math.min(i,a.desc.length-1)]:''}">
       <div class="anim-stage-pip" style="${!isDone&&!isCurrent&&a.svg?'opacity:.45;filter:grayscale(.7)':''}">${pipContent}</div>
       <div class="anim-stage-label">${stageLbl}</div>
       <div class="anim-stage-req">${reqTxt}</div>
     </div>`;
-  });
-  const curLbl=a.lbl?a.lbl[stageIdx]:ANIM_STAGE_NAMES[stageIdx];
-  const curDesc=a.desc?a.desc[stageIdx]:'';
-  const nextLbl=a.lbl&&!isMaxed?a.lbl[stageIdx+1]:ANIM_STAGE_NAMES[stageIdx+1];
+  }
+  const curLbl=(a.lbl&&a.lbl[stageIdx])||ANIM_STAGE_NAMES[stageIdx];
+  const curDesc=a.desc?a.desc[Math.min(stageIdx,a.desc.length-1)]:'';
+  const nextLbl=!isMaxed?((a.lbl&&a.lbl[stageIdx+1])||ANIM_STAGE_NAMES[stageIdx+1]):'';
+
   const progressHtml=isMaxed
     ?`<div style="font-size:12px;color:var(--or);font-weight:700;text-align:center">🏆 Maximaal stadium bereikt! Je ${a.n} is een legende.</div>`
     :`<div class="anim-evo-prog-bar"><div class="anim-evo-prog-fill" style="width:${pct}%"></div></div>
-      <div class="anim-evo-prog-txt">${totalXP.toLocaleString('nl')} / ${nextThreshold.toLocaleString('nl')} XP → ${a.svg?'':a.s[stageIdx+1]+' '}${nextLbl}</div>`;
+      <div class="anim-evo-prog-txt">${totalXP.toLocaleString('nl')} / ${nextThreshold.toLocaleString('nl')} XP → ${!a.svg&&a.s[stageIdx+1]?a.s[stageIdx+1]+' ':''}${nextLbl}</div>`;
   const bigDisplay=getAnimalDisplay(a.id,stageIdx,52);
   sec.innerHTML=`<div class="anim-evo-card">
     <div class="anim-evo-title">${bigDisplay} ${a.n} <button class="anim-change-btn" onclick="toggleAnimalPicker()" title="Verander dier">🔄 Wisselen</button></div>
@@ -13336,11 +13383,9 @@ function toonRes(){
       updateProfileNav();
       if(res.evolved){
         const _p=JSON.parse(localStorage.getItem(PROF_KEY)||'{}');
-        const _a=getAnimalById(_p.animalId);
-        if(_a){
-          const _msg=(_a.evoMsg&&_a.evoMsg[res.newStage-1])||`${_a.s[res.newStage]} Je ${_a.n} is geëvolueerd naar <strong>${_a.lbl?_a.lbl[res.newStage]:ANIM_STAGE_NAMES[res.newStage]}</strong>!`;
-          setTimeout(()=>showToast(_msg,'var(--or)',5500),1000);
-          setTimeout(()=>launchConfetti('gold'),1200);
+        if(_p.animalId){
+          setTimeout(()=>launchConfetti('gold'),600);
+          setTimeout(()=>showEvoReveal(res.newStage,_p.animalId),900);
         }
       }
       if(ST.isDailyChallenge){
@@ -13364,8 +13409,10 @@ function toonRes(){
       const avatar=getMyCurrentAvatar()||'🐻';
       const animalId=prof.animalId||null;
       const stageIdx=animalId?getAnimalStageIdx(getTotalXP()):0;
-      const featuredBadgeId=getBestBadgeId(getAchieved())||null;
-      const entry={naam,avatar,animalId,stageIdx,featuredBadgeId,vak:ST.vak.id,vakNaam:ST.vak.naam,domeinId:ST.domein.id,domeinNaam:ST.domein.naam,score:lbScore,goed,tot,avgTijd,date:new Date().toISOString().slice(0,10)};
+      const _ach=getAchieved();
+      const featuredBadgeId=getBestBadgeId(_ach)||null;
+      const badgeIds=Object.keys(_ach).filter(k=>_ach[k]);
+      const entry={naam,avatar,animalId,stageIdx,featuredBadgeId,badgeIds,vak:ST.vak.id,vakNaam:ST.vak.naam,domeinId:ST.domein.id,domeinNaam:ST.domein.naam,score:lbScore,goed,tot,avgTijd,date:new Date().toISOString().slice(0,10)};
       saveLeaderboardEntry(entry);
       if(lbBtn)lbBtn.style.display='block';
       if(_regPrompt)_regPrompt.style.display=currentUser?'none':'block';
@@ -15261,29 +15308,29 @@ function raceToast(msg){
 // ═══════ BOT LEADERBOARD SEED ═══════
 // Vaste dier-avatars per bot (animalId + stageIdx uit ANIMAL_EVOLUTIONS)
 const BOT_AVATARS={
-  'Lars V.':  {animalId:'leeuw',   stageIdx:4, featuredBadgeId:'streak100'},
-  'Sophie K.':{animalId:'adelaar', stageIdx:4, featuredBadgeId:'perfect'},
-  'Daan M.':  {animalId:'draak',   stageIdx:3, featuredBadgeId:'combo10'},
-  'Emma J.':  {animalId:'vlinder', stageIdx:3, featuredBadgeId:'quiz100'},
-  'Noah B.':  {animalId:'wolf',    stageIdx:2, featuredBadgeId:'combo5'},
-  'Lena H.':  {animalId:'leeuw',   stageIdx:2, featuredBadgeId:'quiz10'},
-  'Tim R.':   {animalId:'wolf',    stageIdx:1, featuredBadgeId:'streak3'},
-  'Sara P.':  {animalId:'vlinder', stageIdx:1, featuredBadgeId:'vakken3'},
-  'Finn O.':  {animalId:'draak',   stageIdx:0, featuredBadgeId:'quiz1'},
-  'Mila W.':  {animalId:'adelaar', stageIdx:0, featuredBadgeId:'streak1'},
+  'Lars V.':  {animalId:'leeuw',   stageIdx:5, featuredBadgeId:'streak100', badgeIds:['quiz1','quiz10','quiz50','quiz100','quiz500','streak1','streak3','streak7','streak14','streak30','streak100','combo3','combo5','combo10','perfect','vakken3','vakken10','examen_done']},
+  'Sophie K.':{animalId:'adelaar', stageIdx:4, featuredBadgeId:'perfect',   badgeIds:['quiz1','quiz10','quiz50','quiz100','streak1','streak3','streak7','streak14','combo3','combo5','combo10','perfect','vakken3','vakken10','examen_done']},
+  'Daan M.':  {animalId:'draak',   stageIdx:3, featuredBadgeId:'combo10',   badgeIds:['quiz1','quiz10','quiz50','streak1','streak3','streak7','combo3','combo5','combo10','vakken3','examen_done']},
+  'Emma J.':  {animalId:'vlinder', stageIdx:3, featuredBadgeId:'quiz100',   badgeIds:['quiz1','quiz10','quiz50','quiz100','streak1','streak3','streak7','streak14','combo3','vakken3','examen_done']},
+  'Noah B.':  {animalId:'wolf',    stageIdx:2, featuredBadgeId:'combo5',    badgeIds:['quiz1','quiz10','streak1','streak3','combo3','combo5','vakken3']},
+  'Lena H.':  {animalId:'leeuw',   stageIdx:2, featuredBadgeId:'quiz10',    badgeIds:['quiz1','quiz10','streak1','streak3','streak7','vakken3']},
+  'Tim R.':   {animalId:'wolf',    stageIdx:1, featuredBadgeId:'streak3',   badgeIds:['quiz1','streak1','streak3','streak7']},
+  'Sara P.':  {animalId:'vlinder', stageIdx:1, featuredBadgeId:'vakken3',   badgeIds:['quiz1','streak1','streak3','vakken3']},
+  'Finn O.':  {animalId:'draak',   stageIdx:0, featuredBadgeId:'quiz1',     badgeIds:['quiz1','streak1']},
+  'Mila W.':  {animalId:'adelaar', stageIdx:0, featuredBadgeId:'streak1',   badgeIds:['quiz1','streak1']},
 };
 function seedBotsNow(){
-  const BOT_KEY='slagio_bots_seeded_v11';
+  const BOT_KEY='slagio_bots_seeded_v12';
   if(localStorage.getItem(BOT_KEY))return;
   // Clear old bot key so new entries are re-seeded
-  localStorage.removeItem('slagio_bots_seeded_v10');
+  localStorage.removeItem('slagio_bots_seeded_v11');
 
   function mkEntry(naam,avatar,vak,vakNaam,domeinId,domeinNaam,goed,tot,avgTijd,daysAgo,niveau){
     const d=new Date('2025-01-15');d.setDate(d.getDate()+daysAgo);
     const ba=BOT_AVATARS[naam]||{};
     // Normalize to 10-question quiz (new standard) and use updated formula (50+50 per question)
     const g10=Math.round((goed/tot)*10);
-    return{naam,avatar,animalId:ba.animalId||null,stageIdx:ba.stageIdx??0,featuredBadgeId:ba.featuredBadgeId||null,
+    return{naam,avatar,animalId:ba.animalId||null,stageIdx:ba.stageIdx??0,featuredBadgeId:ba.featuredBadgeId||null,badgeIds:ba.badgeIds||[],
       vak,vakNaam,domeinId,domeinNaam,
       score:g10*50+g10*Math.round(avgTijd/15*50),goed:g10,tot:10,avgTijd,
       date:d.toISOString().slice(0,10),niveau,isBot:true};
@@ -15534,14 +15581,24 @@ function openLbProfile(naam){
       badgeSectionHtml=`<p class="lbp-section-title">Jouw badges (${earned.length}/${ALL_BADGES.length})</p><div class="lbp-badges-grid">${items}</div>`;
     }
   } else {
-    const featId=allEntries[0]?.featuredBadgeId;
-    const featB=featId?ALL_BADGES.find(b=>b.id===featId):null;
-    if(featB){
-      badgeSectionHtml=`<p class="lbp-section-title">Uitgelichte badge</p>
-        <div class="lbp-featured-badge rarity-${featB.rarity}">
-          <span style="font-size:30px;line-height:1">${featB.emoji}</span>
-          <div><div style="font-size:13px;font-weight:700;color:var(--dk)">${featB.label}</div><div style="font-size:11px;color:var(--mu);margin-top:2px">${featB.tip} · <em>${RARITY_LABEL[featB.rarity]||''}</em></div></div>
-        </div>`;
+    // Show all earned badges — from stored badgeIds (real players & bots), else fall back to featured only
+    const allBadgeIds=[...new Set(allEntries.flatMap(e=>e.badgeIds||[]))];
+    if(allBadgeIds.length){
+      const earnedBadges=allBadgeIds.map(id=>ALL_BADGES.find(b=>b.id===id)).filter(Boolean);
+      if(earnedBadges.length){
+        const items=earnedBadges.map(b=>`<div class="lbp-badge-item rarity-${b.rarity}" title="${b.label} — ${b.tip}"><span class="lbp-badge-emoji">${b.emoji}</span><span class="lbp-badge-lbl">${b.label}</span></div>`).join('');
+        badgeSectionHtml=`<p class="lbp-section-title">Badges (${earnedBadges.length})</p><div class="lbp-badges-grid">${items}</div>`;
+      }
+    } else {
+      const featId=allEntries[0]?.featuredBadgeId;
+      const featB=featId?ALL_BADGES.find(b=>b.id===featId):null;
+      if(featB){
+        badgeSectionHtml=`<p class="lbp-section-title">Uitgelichte badge</p>
+          <div class="lbp-featured-badge rarity-${featB.rarity}">
+            <span style="font-size:30px;line-height:1">${featB.emoji}</span>
+            <div><div style="font-size:13px;font-weight:700;color:var(--dk)">${featB.label}</div><div style="font-size:11px;color:var(--mu);margin-top:2px">${featB.tip} · <em>${RARITY_LABEL[featB.rarity]||''}</em></div></div>
+          </div>`;
+      }
     }
   }
   const el=document.getElementById('lbp-overlay');
@@ -15751,6 +15808,15 @@ function _renderLbWithData(){
   const niveauChip=(e)=>e.niveau?`<span class="lb-niveau-chip">${e.niveau.toUpperCase()}</span>`:'';
   // Helper: rank colour class
   const rankCls=(r)=>r===1?'top1':r===2?'top2':r===3?'top3':'';
+  // Helper: premium stage chip (only for stages 4=Goud, 5=Diamant, 6=Platina)
+  const stageBadge=(e)=>{
+    const idx=e.stageIdx!=null?e.stageIdx:0;
+    if(idx<4)return'';
+    const stageN=ANIM_STAGE_NAMES[idx]||'';
+    const clsMap={4:'lb-sc-goud',5:'lb-sc-diamant',6:'lb-sc-platina'};
+    const em={4:'✨',5:'💎',6:'🔮'}[idx]||'⭐';
+    return`<span class="lb-stage-chip ${clsMap[idx]||'lb-sc-goud'}">${em} ${stageN}</span>`;
+  };
 
   // Podium (top 3)
   const podEl=document.getElementById('lb-podium');
@@ -15773,7 +15839,7 @@ function _renderLbWithData(){
         <div class="lb-pod-bar ${classes[ri]}" style="height:${heights[pi]}px">${e.score}</div>
         <div class="lb-pod-name">${e.naam}</div>
         <div class="lb-pod-score">${e.goed}/${e.tot} · ${safePct(e.goed,e.tot)}%</div>
-        <div style="margin-top:5px;display:flex;gap:4px;justify-content:center;flex-wrap:wrap">${niveauChip(e)}${tierBadge(e.score)}</div>
+        <div style="margin-top:5px;display:flex;gap:4px;justify-content:center;flex-wrap:wrap">${niveauChip(e)}${tierBadge(e.score)}${stageBadge(e)}</div>
       </div>`;
     });
     podEl.innerHTML=podHtml;
@@ -15800,7 +15866,7 @@ function _renderLbWithData(){
         ${getLbBadgeOverlay(isMe?myBestBadgeId:e.featuredBadgeId)}
       </div>
       <div class="lb-info">
-        <div class="lb-name">${e.naam}${lbMeSpan(isMe)}${niveauChip(e)}${tierBadge(e.score)}</div>
+        <div class="lb-name">${e.naam}${lbMeSpan(isMe)}${niveauChip(e)}${tierBadge(e.score)}${stageBadge(e)}</div>
         <div class="lb-meta">${lbMeta(e)}</div>
       </div>
       <div class="lb-score"><div class="lb-score-num">${e.score}</div><div class="lb-score-sub">pts</div><div style="font-size:9px;color:var(--mu);margin-top:2px">Bekijk →</div></div>
@@ -16061,8 +16127,8 @@ function renderFavHome(){
 
 // ═══════ XP & LEVELS ═══════
 const XP_KEY='slagio_xp';
-const XP_LEVELS=[0,100,250,500,1000,2000,3500,5000,7500,10000,15000,20000,30000,50000];
-const LEVEL_NAMES=['','Beginner','Leerling','Student','Gevorderd','Scherp','Expert','Ster','Meester','Grootmeester','Legende','Elite','Kampioen','Fenomeen'];
+const XP_LEVELS=[0,100,500,2000,7500,30000,100000];
+const LEVEL_NAMES=['','Baby','Jong','Tiener','Volwassen','Goud','Diamant','Platina'];
 // ═══════ RIPPLE EFFECT ═══════
 (function initRipple(){
   document.addEventListener('click',function(e){
@@ -16220,6 +16286,33 @@ function getLbBadgeOverlay(badgeId,borderColor){
   if(!b)return'';
   const rarity=b.rarity||'common';
   return`<div class="lb-av-badge rarity-${rarity}" style="${borderColor?'border-color:'+borderColor:''}" title="${b.label} · ${RARITY_LABEL[rarity]||''}">${b.emoji}</div>`;
+}
+// ── EVOLUTION REVEAL ─────────────────────────────────────────────
+function showEvoReveal(newStage,animalId){
+  const a=getAnimalById(animalId);
+  const modal=document.getElementById('evo-reveal-modal');
+  if(!modal)return;
+  const stageName=ANIM_STAGE_NAMES[newStage]||'Nieuw stadium';
+  const premMap={4:{badge:'evo-rb-goud',btn:'evo-btn-goud',em:'✨'},5:{badge:'evo-rb-diamant',btn:'evo-btn-diamant',em:'💎'},6:{badge:'evo-rb-platina',btn:'evo-btn-platina',em:'🔮'}};
+  const prem=premMap[newStage]||{badge:'evo-rb-default',btn:'evo-btn-default',em:'⭐'};
+  const badgeEl=document.getElementById('evo-reveal-badge');
+  const avEl=document.getElementById('evo-reveal-av');
+  const titleEl=document.getElementById('evo-reveal-title');
+  const subEl=document.getElementById('evo-reveal-sub');
+  const btnEl=document.getElementById('evo-reveal-btn');
+  if(badgeEl){badgeEl.className='evo-reveal-badge '+prem.badge;badgeEl.textContent=prem.em+' '+stageName+' — Nieuw stadium';}
+  if(avEl){avEl.style.animation='none';avEl.innerHTML=getAnimalDisplay(animalId,newStage,72);requestAnimationFrame(()=>requestAnimationFrame(()=>{avEl.style.animation='';}));}
+  const animalLabel=(a&&a.lbl&&a.lbl[Math.min(newStage,a.lbl.length-1)])||(a?stageName+' '+a.n:stageName);
+  const msgs={4:'Je dier straalt als goud! Je bent een echte topper. 🥇',5:'Diamant — zo zeldzaam als jouw discipline. Schitterend! 💎',6:'Platina. Het allerhoogste niveau. Slechts weinigen halen dit. 🏆'};
+  if(titleEl)titleEl.textContent=animalLabel;
+  if(subEl)subEl.textContent=msgs[newStage]||'Gefeliciteerd! Je dier is geëvolueerd naar '+stageName+'!';
+  if(btnEl){btnEl.className='evo-reveal-btn '+prem.btn;btnEl.textContent='Geweldig! 🎉';}
+  modal.classList.add('open');
+  haptic([80,40,80,40,200]);
+}
+function closeEvoReveal(){
+  const modal=document.getElementById('evo-reveal-modal');
+  if(modal)modal.classList.remove('open');
 }
 function syncAvatarToProfile(){
   try{
