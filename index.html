@@ -3091,7 +3091,17 @@ html.dark .calc-btn{background:#2e3550}
 .lb-rank-col.top2{color:#9CA3AF}
 .lb-rank-col.top3{color:#CD7C3F}
 .lb-score-sub{font-size:10px;color:var(--mu)}
-.lb-empty{text-align:center;padding:48px 20px;color:var(--mu);font-size:14px}
+.lb-empty{text-align:center;padding:32px 16px 40px}
+.lb-empty-orb{width:80px;height:80px;border-radius:50%;background:linear-gradient(135deg,rgba(var(--or-rgb),.12),rgba(99,102,241,.12));border:2px solid rgba(var(--or-rgb),.2);display:flex;align-items:center;justify-content:center;margin:0 auto 16px;font-size:36px}
+.lb-empty-title{font-size:18px;font-weight:900;font-family:var(--font-head);color:var(--dk);margin-bottom:8px;letter-spacing:-.2px}
+.lb-empty-sub{font-size:13px;color:var(--mu);line-height:1.6;margin-bottom:20px;max-width:280px;margin-left:auto;margin-right:auto}
+.lb-empty-tiers{display:grid;grid-template-columns:repeat(5,1fr);gap:6px;margin-bottom:22px;max-width:340px;margin-left:auto;margin-right:auto}
+.lb-empty-tier{background:var(--s);border:1.5px solid var(--bo);border-radius:10px;padding:8px 4px;text-align:center}
+.lb-empty-tier-icon{font-size:15px;margin-bottom:3px}
+.lb-empty-tier-name{font-size:9px;font-weight:700;color:var(--mu);text-transform:uppercase;letter-spacing:.4px}
+.lb-empty-tier-pts{font-size:10px;font-weight:800;color:var(--dk);margin-top:1px}
+.lb-empty-cta{display:inline-flex;align-items:center;gap:8px;padding:13px 28px;background:linear-gradient(135deg,var(--or),#f59e0b);color:#fff;border:none;border-radius:14px;font-size:14px;font-weight:800;cursor:pointer;font-family:var(--font-head);box-shadow:0 4px 16px rgba(var(--or-rgb),.35);transition:all .2s}
+.lb-empty-cta:hover{transform:translateY(-2px);box-shadow:0 6px 22px rgba(var(--or-rgb),.45)}
 .lb-row{cursor:pointer}
 .lb-row:hover{transform:translateY(-1px);box-shadow:0 4px 16px rgba(0,0,0,.08)}
 .lb-pod-avatar{cursor:pointer}
@@ -15882,9 +15892,11 @@ function _renderLbWithData(){
   if(badge)badge.textContent=APP_LEVEL.toUpperCase()+' 2026 · '+VAKKEN_LABEL;
   const subtitleEl=document.getElementById('lb-subtitle');
   const playerCount=[...new Set(all.map(e=>e.uid||e.naam))].length;
-  if(subtitleEl)subtitleEl.textContent=lbVakFilter==='all'
-    ?`Snelle quiz · beste score per speler · ${playerCount} deelnemers`
-    :`Snelle quiz · beste ${VAKKEN_LABEL}-score per speler`;
+  if(subtitleEl){
+    if(playerCount===0)subtitleEl.textContent='Nog geen spelers — wees de eerste!';
+    else if(lbVakFilter==='all')subtitleEl.textContent=`Snelle quiz · beste score per speler · ${playerCount} deelnemer${playerCount===1?'':'s'}`;
+    else subtitleEl.textContent=`Snelle quiz · beste ${VAKKEN_LABEL}-score per speler`;
+  }
 
   // Filter entries (remove invalid scores above 1000)
   const valid=all.filter(e=>e.score<=1000);
@@ -15985,7 +15997,19 @@ function _renderLbWithData(){
   // List
   const listEl=document.getElementById('lb-list');
   if(top.length===0){
-    listEl.innerHTML=`<div class="lb-empty">Nog geen scores! Maak een snelle quiz om als eerste op het bord te komen. 🚀</div>`;
+    listEl.innerHTML=`<div class="lb-empty">
+      <div class="lb-empty-orb">🏆</div>
+      <div class="lb-empty-title">Wees de eerste!</div>
+      <div class="lb-empty-sub">Het bord is leeg — jij kunt de #1 positie pakken. Maak een snelle quiz en zet je score neer.</div>
+      <div class="lb-empty-tiers">
+        <div class="lb-empty-tier"><div class="lb-empty-tier-icon">🌱</div><div class="lb-empty-tier-name">Beginner</div><div class="lb-empty-tier-pts">&lt;150</div></div>
+        <div class="lb-empty-tier"><div class="lb-empty-tier-icon">✏️</div><div class="lb-empty-tier-name">Leerling</div><div class="lb-empty-tier-pts">150+</div></div>
+        <div class="lb-empty-tier"><div class="lb-empty-tier-icon">📚</div><div class="lb-empty-tier-name">Gevorderd</div><div class="lb-empty-tier-pts">400+</div></div>
+        <div class="lb-empty-tier"><div class="lb-empty-tier-icon">⚡</div><div class="lb-empty-tier-name">Expert</div><div class="lb-empty-tier-pts">650+</div></div>
+        <div class="lb-empty-tier"><div class="lb-empty-tier-icon">🏆</div><div class="lb-empty-tier-name">Elite</div><div class="lb-empty-tier-pts">850+</div></div>
+      </div>
+      <button class="lb-empty-cta" onclick="show('sc-home')">🎯 Start een quiz</button>
+    </div>`;
     return;
   }
   const showPodium=top.length>=3;
