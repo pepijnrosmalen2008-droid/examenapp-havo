@@ -875,14 +875,33 @@ if('serviceWorker' in navigator){
   window.addEventListener('load',()=>{
     navigator.serviceWorker.register('/sw.js',{updateViaCache:'none'}).then(reg=>{
       reg.update();
-      // Init notifications after SW ready
+      // Helper: toon update-banner
+      const _showBanner=()=>document.getElementById('sw-update-banner')?.classList.add('show');
+      // Al een wachtende SW? (bijv. direct na deploy pagina geopend)
+      if(reg.waiting) _showBanner();
+      // Nieuwe SW gevonden tijdens sessie
+      reg.addEventListener('updatefound',()=>{
+        const sw=reg.installing;
+        sw.addEventListener('statechange',()=>{
+          // SW staat te wachten + er is al een actieve controller → nieuwe versie klaar
+          if(sw.state==='installed'&&navigator.serviceWorker.controller) _showBanner();
+        });
+      });
+      // controllerchange = skipWaiting voltooid (user-triggered) → herlaad pagina
+      // localStorage blijft intact → gebruiker blijft ingelogd
+      navigator.serviceWorker.addEventListener('controllerchange',()=>window.location.reload());
+      // Init notificaties
       navigator.serviceWorker.ready.then(()=>initNotifications());
     }).catch(()=>{});
-    navigator.serviceWorker.addEventListener('controllerchange',()=>{
-      const b=document.getElementById('sw-update-banner');
-      if(b)b.classList.add('show');
-    });
   });
+}
+
+// Veilige SW-update: stuur signaal naar wachtende SW, dan herlaad
+function swUpdate(){
+  navigator.serviceWorker.getRegistration().then(reg=>{
+    if(reg?.waiting) reg.waiting.postMessage({type:'SKIP_WAITING'});
+    else window.location.reload();
+  }).catch(()=>window.location.reload());
 }
 
 

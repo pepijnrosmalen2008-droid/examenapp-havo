@@ -1,9 +1,9 @@
-const CACHE = 'slagio-v117';
+const CACHE = 'slagio-v118';
 const ASSETS = ['/', '/index.html', '/styles.css', '/data.js', '/state.js', '/cloud.js', '/profile.js', '/vak.js', '/quiz.js', '/tools.js', '/sim.js', '/lb.js', '/features.js', '/schedule.js', '/init.js', '/examens.js', '/manifest.json', '/icon-192.png', '/icon-512.png', '/logo.svg', '/apple-touch-icon.png'];
 
 self.addEventListener('install', e => {
   e.waitUntil(caches.open(CACHE).then(c => c.addAll(ASSETS)));
-  self.skipWaiting();
+  // Geen automatische skipWaiting — wacht op gebruikersactie om uitloggen te voorkomen
 });
 
 self.addEventListener('activate', e => {
@@ -128,6 +128,7 @@ self.addEventListener('notificationclick', e => {
 
 // ── MESSAGE (app stuurt streak/examen-data naar SW) ──────────────
 self.addEventListener('message', e => {
+  if (e.data?.type === 'SKIP_WAITING') self.skipWaiting(); // veilige update: alleen op verzoek
   if (e.data?.type === 'NOTIF_CONFIG') _writeKV('notif', e.data.config);
 });
 
