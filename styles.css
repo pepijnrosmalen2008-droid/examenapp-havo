@@ -883,6 +883,7 @@ html.dark .qb{background:#2e3550}
 .ce-pdf-btn{display:block;padding:7px 10px;border-radius:9px;background:var(--bg2);border:1px solid var(--bo);font-size:12px;font-weight:600;color:var(--dk);text-decoration:none;transition:all .15s;text-align:center;font-family:var(--font);cursor:pointer;width:100%;box-sizing:border-box;-webkit-appearance:none;appearance:none}
 .ce-pdf-btn:hover{background:rgba(59,130,246,.1);border-color:rgba(59,130,246,.4);color:#60a5fa;transform:translateY(-1px)}
 .ce-pdf-cv:hover{background:rgba(74,222,128,.08);border-color:rgba(74,222,128,.35);color:#4ade80}
+.ce-pdf-tb:hover{background:rgba(139,92,246,.08);border-color:rgba(139,92,246,.35);color:#a78bfa}
 .ce-archief-card.open .ce-archief-body{display:block!important}
 .ce-archief-card.open .ce-arr{transform:rotate(180deg)}
 /* ── PDF VIEWER MODAL ────────────────────────── */
