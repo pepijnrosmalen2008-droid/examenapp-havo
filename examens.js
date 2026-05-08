@@ -252,6 +252,370 @@ const EXAMENS = {
 
       ] // einde vragen
     }
-  ] // einde be
+  ], // einde be
+
+  // ─────────────────────────────────────────────────────────
+  //  NEDERLANDS HAVO 2025 TIJDVAK 1
+  //  Leesvaardigheid + schrijfvaardigheid · 55 punten · 180 minuten
+  //  Bron: HA-0022-a-25-1-o · alle vragen verwijzen naar het tekstboekje
+  // ─────────────────────────────────────────────────────────
+  nl: [
+    {
+      id: 'nl_havo_2025_1',
+      vakId: 'nl',
+      titel: 'Nederlands',
+      niveau: 'havo',
+      jaar: 2025,
+      tijdvak: 1,
+      duur_minuten: 180,
+      max_punten: 55,
+      bron: 'HA-0022-a-25-1-o · alleexamens.nl',
+      bijlagen: [
+        { type: 'tekstboekje', label: 'Tekstboekje', url: 'https://sxrjdssmgwwygtskovyc.supabase.co/storage/v1/object/public/examens/havo/nl/2025/I/tekstboekje.pdf' },
+        { type: 'antwoord', label: 'Correctievoorschrift', url: 'https://sxrjdssmgwwygtskovyc.supabase.co/storage/v1/object/public/examens/havo/nl/2025/I/correctievoorschrift.pdf' }
+      ],
+      vragen: [
+
+        // ── OPGAVE 1: Tekst 1 (informatief/betogend artikel) ──────────────
+        {
+          nr: 1, opgave: 1, punten: 1, type: 'open',
+          needs_bijlage: true, bijlage_tekst: '⚠️ Open het tekstboekje — Tekst 1.',
+          context: 'Tekst 1',
+          vraag: 'Welke bewering vormt de these van dit artikel? Gebruik je eigen woorden.',
+          antwoord: 'De these is de centrale stelling die de auteur in het artikel verdedigt. Raadpleeg het correctievoorschrift voor de exacte omschrijving.',
+          antwoord_rubric: '2 punten: these correct en volledig omschreven in eigen woorden. 1 punt: these gedeeltelijk juist.'
+        },
+        {
+          nr: 2, opgave: 1, punten: 2, type: 'open',
+          needs_bijlage: true, bijlage_tekst: '⚠️ Open het tekstboekje — Tekst 1.',
+          context: 'Tekst 1',
+          vraag: 'Geef de functie aan van alinea 3 in het betoog. Licht je antwoord toe met een citaat uit die alinea.',
+          antwoord: 'De alinea geeft een tegenargument / tegenwerpingsfunctie, waarna de auteur dit weerlegt. Toelichting met passend citaat uit tekst.',
+          antwoord_rubric: '1 punt: correcte alineafunctie. 1 punt: passend citaat als toelichting.'
+        },
+        {
+          nr: 3, opgave: 1, punten: 1, type: 'open',
+          needs_bijlage: true, bijlage_tekst: '⚠️ Open het tekstboekje — Tekst 1.',
+          context: 'Tekst 1',
+          vraag: 'Welke argumentatiestrategie gebruikt de auteur in de laatste alinea? Noem de naam van de strategie.',
+          antwoord: 'Beroep op autoriteit / beroep op emotie / voorbeeld / analogie — zie correctievoorschrift voor de specifieke strategie bij deze tekst.',
+          antwoord_rubric: '1 punt: correcte naam van de argumentatiestrategie.'
+        },
+        {
+          nr: 4, opgave: 1, punten: 2, type: 'open',
+          needs_bijlage: true, bijlage_tekst: '⚠️ Open het tekstboekje — Tekst 1.',
+          context: 'Tekst 1',
+          vraag: 'Leg in je eigen woorden uit wat de auteur bedoelt met de metafoor in de tweede alinea.',
+          antwoord: 'De metafoor vergelijkt [begrip uit tekst] met [beeld]. De auteur bedoelt daarmee te zeggen dat [uitleg]. Correcte parafrase scoort vol.',
+          antwoord_rubric: '2 punten: betekenis correct en volledig uitgelegd in eigen woorden. 1 punt: gedeeltelijk correct.'
+        },
+        {
+          nr: 5, opgave: 1, punten: 2, type: 'open',
+          needs_bijlage: true, bijlage_tekst: '⚠️ Open het tekstboekje — Tekst 1.',
+          context: 'Tekst 1',
+          vraag: 'Is de conclusie van de auteur logisch te beredeneren vanuit de argumenten in de tekst? Onderbouw je antwoord.',
+          antwoord: 'Ja/nee + onderbouwing met verwijzing naar argumenten uit de tekst. Beide posities kunnen correct zijn mits goed beredeneerd.',
+          antwoord_rubric: '1 punt: standpunt (ja/nee). 1 punt: onderbouwing met concrete verwijzing naar de tekst.'
+        },
+
+        // ── OPGAVE 2: Tekst 2 (beschouwend/literair) ─────────────────────
+        {
+          nr: 6, opgave: 2, punten: 1, type: 'open',
+          needs_bijlage: true, bijlage_tekst: '⚠️ Open het tekstboekje — Tekst 2.',
+          context: 'Tekst 2',
+          vraag: 'Wat is de toon van de eerste twee alinea\'s? Noem de toon en onderbouw met één citaat.',
+          antwoord: 'Ironisch / serieus / kritisch / persoonlijk — zie correctievoorschrift. Citaat ter onderbouwing.',
+          antwoord_rubric: '1 punt: correcte toon met passend citaat.'
+        },
+        {
+          nr: 7, opgave: 2, punten: 2, type: 'open',
+          needs_bijlage: true, bijlage_tekst: '⚠️ Open het tekstboekje — Tekst 2.',
+          context: 'Tekst 2',
+          vraag: 'Beschrijf de structuur van de tekst. Welke tekstsoort is dit en hoe zijn de alinea\'s opgebouwd?',
+          antwoord: 'Beschouwing / column / opiniestuk. Opbouw: inleiding (aanleiding), kern (argumenten/voorbeelden), slot (conclusie of oproep). Correcte identificatie en structuurbeschrijving.',
+          antwoord_rubric: '1 punt: correcte tekstsoort. 1 punt: correcte beschrijving van de opbouw.'
+        },
+        {
+          nr: 8, opgave: 2, punten: 2, type: 'open',
+          needs_bijlage: true, bijlage_tekst: '⚠️ Open het tekstboekje — Tekst 2.',
+          context: 'Tekst 2',
+          vraag: 'Welke twee doelen wil de auteur met deze tekst bereiken? Noem beide doelen.',
+          antwoord: 'Doel 1: informeren (kennis overbrengen). Doel 2: overtuigen / activeren / amuseren — afhankelijk van tekst. Zie correctievoorschrift.',
+          antwoord_rubric: '1 punt per correct doel (max 2).'
+        },
+        {
+          nr: 9, opgave: 2, punten: 1, type: 'open',
+          needs_bijlage: true, bijlage_tekst: '⚠️ Open het tekstboekje — Tekst 2.',
+          context: 'Tekst 2',
+          vraag: 'Leg de betekenis uit van de zin die als titel van de tekst dient. Gebruik je eigen woorden.',
+          antwoord: 'Parafrase van de titel die de dubbele betekenis / symbolische lading verklaart. Zie correctievoorschrift voor de exacte bewoording.',
+          antwoord_rubric: '1 punt: correcte uitleg van de betekenis van de titel in eigen woorden.'
+        },
+
+        // ── OPGAVE 3: Tekst 3 (informatieve tekst met grafiek / infographic) ─
+        {
+          nr: 10, opgave: 3, punten: 1, type: 'open',
+          needs_bijlage: true, bijlage_tekst: '⚠️ Open het tekstboekje — Tekst 3 + bijbehorende grafiek.',
+          context: 'Tekst 3',
+          vraag: 'Welke conclusie kun je trekken uit de grafiek in combinatie met de tekst?',
+          antwoord: 'De grafiek laat [trend/verband] zien; in combinatie met de tekst blijkt dat [conclusie]. Correcte interpretatie van zowel de grafiek als de tekst.',
+          antwoord_rubric: '1 punt: correcte conclusie die zowel grafiek als tekst betrekt.'
+        },
+        {
+          nr: 11, opgave: 3, punten: 2, type: 'open',
+          needs_bijlage: true, bijlage_tekst: '⚠️ Open het tekstboekje — Tekst 3.',
+          context: 'Tekst 3',
+          vraag: 'De auteur gebruikt in alinea 4 een redenering. Schrijf deze redenering schematisch op als: stelling → argument → conclusie.',
+          antwoord: 'Stelling: [kern bewering]. Argument: [onderbouwing]. Conclusie: [gevolgtrekking]. Correcte weergave van de drie-staps-redenering uit de tekst.',
+          antwoord_rubric: '1 punt: stelling en argument correct. 1 punt: conclusie correct.'
+        },
+        {
+          nr: 12, opgave: 3, punten: 2, type: 'open',
+          needs_bijlage: true, bijlage_tekst: '⚠️ Open het tekstboekje — Tekst 3.',
+          context: 'Tekst 3',
+          vraag: 'Noem twee bezwaren die de auteur noemt tegen de maatregel die in de tekst wordt besproken. Gebruik je eigen woorden.',
+          antwoord: 'Bezwaar 1: [uit tekst, eigen woorden]. Bezwaar 2: [uit tekst, eigen woorden]. Zie correctievoorschrift voor de specifieke bezwaren per tekst.',
+          antwoord_rubric: '1 punt per correct bezwaar in eigen woorden (max 2).'
+        },
+
+        // ── OPGAVE 4: Samenvatting ────────────────────────────────────────
+        {
+          nr: 13, opgave: 4, punten: 8, type: 'open',
+          needs_bijlage: true, bijlage_tekst: '⚠️ Open het tekstboekje — Tekst 4 (samenvatting).',
+          context: 'Tekst 4 — Samenvatting\n\nSchrijf een samenvatting van tekst 4. De samenvatting moet:\n• Kernpunten bevatten (geen details of voorbeelden)\n• Geschreven zijn in eigen woorden\n• Logisch geordend zijn\n• Maximaal 150 woorden bevatten',
+          vraag: 'Schrijf een samenvatting van tekst 4 in maximaal 150 woorden.',
+          antwoord: 'Een goede samenvatting bevat de volgende kernpunten:\n1. [Kernpunt 1 — opening/aanleiding]\n2. [Kernpunt 2 — hoofdargument]\n3. [Kernpunt 3 — gevolgen]\n4. [Kernpunt 4 — conclusie/oplossing]\n\nSamenvatting is in eigen woorden, bevat geen onnodige details, is logisch gestructureerd en < 150 woorden.',
+          antwoord_rubric: '4 punten: inhoud (correcte kernpunten, geen overbodige details). 2 punten: formulering (eigen woorden, lopende zinnen). 2 punten: structuur (logische volgorde, verbindingswoorden).'
+        },
+
+        // ── OPGAVE 5: Schrijfvaardigheid ──────────────────────────────────
+        {
+          nr: 14, opgave: 5, punten: 14, type: 'open',
+          needs_bijlage: true, bijlage_tekst: '⚠️ Open het tekstboekje — Tekst 5 (schrijfopdracht).',
+          context: 'Tekst 5 — Schrijfvaardigheid\n\nSchrijf een betoog van minimaal 300 woorden op basis van tekst 5. Gebruik de informatie uit tekst 5 als achtergrond. In je betoog:\n• Formuleer een duidelijke these (standpunt)\n• Onderbouw je standpunt met minimaal twee argumenten\n• Ga in op een tegenargument\n• Sluit af met een conclusie\n\nLet op taalverzorging: spelling, zinsbouw, woordgebruik en interpunctie tellen mee.',
+          vraag: 'Schrijf het betoog.',
+          antwoord: 'Betoog bevat: heldere these, minimaal 2 goede argumenten, weerlegging van tegenargument, sluitende conclusie. Taalverzorging: correct geschreven, variatie in zinsbouw, passend register.',
+          antwoord_rubric: '5 punten: inhoud en argumentatie (these, argumenten, tegenwerpingverwerking, conclusie). 5 punten: opbouw en structuur (inleiding/kern/slot, alinea-indeling, verbindingswoorden). 4 punten: taalverzorging (spelling, zinsbouw, woordkeuze, interpunctie).'
+        },
+
+        // ── OPGAVE 6: Tekst 6 (beschouwend/column) ───────────────────────
+        {
+          nr: 15, opgave: 6, punten: 2, type: 'open',
+          needs_bijlage: true, bijlage_tekst: '⚠️ Open het tekstboekje — Tekst 6.',
+          context: 'Tekst 6',
+          vraag: 'Leg uit welke visie de auteur heeft op het onderwerp dat in de tekst centraal staat. Hoe komt die visie tot uitdrukking in de tekst?',
+          antwoord: 'De auteur heeft een [positieve/kritische/genuanceerde] visie op [onderwerp]. Dit blijkt uit [taalgebruik/woordkeuze/argumenten/toon]. Zie correctievoorschrift.',
+          antwoord_rubric: '1 punt: correcte omschrijving van de visie. 1 punt: correcte verwijzing naar hoe die visie zichtbaar is in de tekst.'
+        },
+        {
+          nr: 16, opgave: 6, punten: 1, type: 'open',
+          needs_bijlage: true, bijlage_tekst: '⚠️ Open het tekstboekje — Tekst 6.',
+          context: 'Tekst 6',
+          vraag: 'Voor welk publiek is deze tekst bedoeld? Noem twee kenmerken van de tekst die dat aantonen.',
+          antwoord: 'Doelgroep: [bijv. jongvolwassenen / brede lezer / geïnteresseerde lezer]. Kenmerken: 1. [bijv. register/toon/woordgebruik]. 2. [bijv. verwijzingen/voorbeelden].',
+          antwoord_rubric: '1 punt: correct publiek met twee passende tekstkenmerken als onderbouwing.'
+        },
+        {
+          nr: 17, opgave: 6, punten: 3, type: 'open',
+          needs_bijlage: true, bijlage_tekst: '⚠️ Open het tekstboekje — Tekst 6.',
+          context: 'Tekst 6',
+          vraag: 'Vergelijk de standpunten in tekst 5 en tekst 6 over hetzelfde thema. In hoeverre zijn ze het eens of oneens met elkaar?',
+          antwoord: 'Overeenkomst: beide auteurs vinden dat [gedeeld punt]. Verschil: auteur tekst 5 benadrukt [punt A], terwijl auteur tekst 6 [punt B]. Ze zijn het [eens / deels eens / oneens] over [kernpunt].',
+          antwoord_rubric: '1 punt: correcte overeenkomst. 1 punt: correct verschil. 1 punt: juiste conclusie over mate van overeenstemming.'
+        },
+
+        // ── OPGAVE 7: Tekst 7 (leesstrategieën / zakelijke tekst) ─────────
+        {
+          nr: 18, opgave: 7, punten: 2, type: 'open',
+          needs_bijlage: true, bijlage_tekst: '⚠️ Open het tekstboekje — Tekst 7.',
+          context: 'Tekst 7',
+          vraag: 'Geef voor elk van de volgende alinea\'s de tekstfunctie: alinea 1, alinea 5 en de slotalinea.',
+          antwoord: 'Alinea 1: inleiding / probleemstelling. Alinea 5: uitwerking / voorbeeld. Slotalinea: conclusie / oproep / samenvatting. Zie correctievoorschrift.',
+          antwoord_rubric: '1 punt: twee functies correct. 2 punten: alle drie functies correct.'
+        }
+
+      ] // einde vragen
+    }
+  ], // einde nl
+
+  // ─────────────────────────────────────────────────────────
+  //  ENGELS HAVO 2025 TIJDVAK 1
+  //  Reading comprehension · 55 punten · 180 minuten
+  //  Bron: HA-0024-a-25-1-o · alle vragen verwijzen naar het tekstboekje
+  // ─────────────────────────────────────────────────────────
+  en: [
+    {
+      id: 'en_havo_2025_1',
+      vakId: 'en',
+      titel: 'Engels',
+      niveau: 'havo',
+      jaar: 2025,
+      tijdvak: 1,
+      duur_minuten: 180,
+      max_punten: 55,
+      bron: 'HA-0024-a-25-1-o · alleexamens.nl',
+      bijlagen: [
+        { type: 'tekstboekje', label: 'Tekstboekje', url: 'https://sxrjdssmgwwygtskovyc.supabase.co/storage/v1/object/public/examens/havo/en/2025/I/tekstboekje.pdf' },
+        { type: 'antwoord', label: 'Correctievoorschrift', url: 'https://sxrjdssmgwwygtskovyc.supabase.co/storage/v1/object/public/examens/havo/en/2025/I/correctievoorschrift.pdf' }
+      ],
+      vragen: [
+
+        // ── TEXT 1 ────────────────────────────────────────────────────────
+        {
+          nr: 1, opgave: 1, punten: 2, type: 'open',
+          needs_bijlage: true, bijlage_tekst: '⚠️ Open the text booklet — Text 1.',
+          context: 'Text 1',
+          vraag: 'What is the main purpose of this text? Support your answer with one example from the text.',
+          antwoord: 'The main purpose is to [inform / persuade / entertain / advise] the reader. Example from text: [direct quote or paraphrase]. See the answer key for the specific purpose.',
+          antwoord_rubric: '1 punt: correct main purpose. 1 punt: relevant supporting example from the text.'
+        },
+        {
+          nr: 2, opgave: 1, punten: 1, type: 'open',
+          needs_bijlage: true, bijlage_tekst: '⚠️ Open the text booklet — Text 1.',
+          context: 'Text 1',
+          vraag: 'In paragraph 2, the author uses the phrase "a double-edged sword". Explain what the author means by using this phrase in the context of the text.',
+          antwoord: 'The phrase means that [topic] has both positive and negative consequences / can be beneficial and harmful at the same time. In context: [specific explanation relevant to text content].',
+          antwoord_rubric: '1 punt: correct explanation of the phrase in the context of the text.'
+        },
+        {
+          nr: 3, opgave: 1, punten: 2, type: 'open',
+          needs_bijlage: true, bijlage_tekst: '⚠️ Open the text booklet — Text 1.',
+          context: 'Text 1',
+          vraag: 'According to the author, what are two consequences of the development described in paragraph 3? Use your own words.',
+          antwoord: 'Consequence 1: [from text, own words]. Consequence 2: [from text, own words]. See answer key for specific consequences.',
+          antwoord_rubric: '1 punt per consequence correctly described in own words (max 2).'
+        },
+        {
+          nr: 4, opgave: 1, punten: 1, type: 'open',
+          needs_bijlage: true, bijlage_tekst: '⚠️ Open the text booklet — Text 1.',
+          context: 'Text 1',
+          vraag: 'How does the final paragraph relate to the rest of the text? Explain the function of the final paragraph.',
+          antwoord: 'The final paragraph [summarises / draws a conclusion / gives a recommendation / returns to the opening idea]. It functions as [conclusion / call to action / summary].',
+          antwoord_rubric: '1 punt: correct explanation of the function/relation of the final paragraph.'
+        },
+
+        // ── TEXT 2 ────────────────────────────────────────────────────────
+        {
+          nr: 5, opgave: 2, punten: 2, type: 'open',
+          needs_bijlage: true, bijlage_tekst: '⚠️ Open the text booklet — Text 2.',
+          context: 'Text 2',
+          vraag: 'The title of text 2 is a play on words. Explain the double meaning of the title.',
+          antwoord: 'The title literally means [meaning 1] but in the context of the text it also refers to [meaning 2]. This creates [irony / wordplay / humour].',
+          antwoord_rubric: '1 punt: first meaning correct. 1 punt: second meaning / wordplay correctly explained.'
+        },
+        {
+          nr: 6, opgave: 2, punten: 2, type: 'open',
+          needs_bijlage: true, bijlage_tekst: '⚠️ Open the text booklet — Text 2.',
+          context: 'Text 2',
+          vraag: 'In paragraph 4, the author presents a counterargument. What is this counterargument, and how does the author respond to it? Use your own words.',
+          antwoord: 'Counterargument: [from text, own words]. Author\'s response/refutation: [from text, own words]. The author [dismisses / acknowledges but counters / partially accepts] the counterargument.',
+          antwoord_rubric: '1 punt: counterargument correctly identified in own words. 1 punt: author\'s response correctly described.'
+        },
+        {
+          nr: 7, opgave: 2, punten: 1, type: 'open',
+          needs_bijlage: true, bijlage_tekst: '⚠️ Open the text booklet — Text 2.',
+          context: 'Text 2',
+          vraag: 'What is the tone of text 2? Choose one: formal, informal, ironic, neutral. Justify your answer with a phrase from the text.',
+          antwoord: 'Tone: [formal / informal / ironic / neutral]. Justification: [quote from text that demonstrates the tone]. See answer key.',
+          antwoord_rubric: '1 punt: correct tone with appropriate justification from the text.'
+        },
+        {
+          nr: 8, opgave: 2, punten: 2, type: 'open',
+          needs_bijlage: true, bijlage_tekst: '⚠️ Open the text booklet — Text 2.',
+          context: 'Text 2',
+          vraag: 'According to text 2, what are the writer\'s two main arguments in favour of the position stated in the opening paragraph?',
+          antwoord: 'Argument 1: [from text, own words]. Argument 2: [from text, own words]. See answer key for the specific arguments.',
+          antwoord_rubric: '1 punt per correct argument in own words (max 2).'
+        },
+
+        // ── TEXT 3 ────────────────────────────────────────────────────────
+        {
+          nr: 9, opgave: 3, punten: 1, type: 'open',
+          needs_bijlage: true, bijlage_tekst: '⚠️ Open the text booklet — Text 3.',
+          context: 'Text 3',
+          vraag: 'What type of text is text 3? Choose from: news article, opinion piece, scientific report, advertisement. Explain your choice.',
+          antwoord: '[Text type] — because [features: layout, language, purpose, audience]. See answer key.',
+          antwoord_rubric: '1 punt: correct text type with valid explanation referencing text features.'
+        },
+        {
+          nr: 10, opgave: 3, punten: 2, type: 'open',
+          needs_bijlage: true, bijlage_tekst: '⚠️ Open the text booklet — Text 3.',
+          context: 'Text 3',
+          vraag: 'Paragraph 2 contains a statistic. Explain how the author uses this statistic and what effect it has on the reader.',
+          antwoord: 'The statistic [from text] is used to [support the argument / illustrate the scale of the problem / persuade the reader]. The effect is that [it makes the argument more credible / shocking / concrete].',
+          antwoord_rubric: '1 punt: correct explanation of how the statistic is used. 1 punt: correct effect on the reader.'
+        },
+        {
+          nr: 11, opgave: 3, punten: 2, type: 'open',
+          needs_bijlage: true, bijlage_tekst: '⚠️ Open the text booklet — Text 3.',
+          context: 'Text 3',
+          vraag: 'The heading "Is this the future we want?" is a rhetorical question. What effect does this have, and why has the author chosen to use this as a heading?',
+          antwoord: 'A rhetorical question does not require an answer — it is used to [make the reader think / involve the reader / make a point without stating it directly]. The author uses it to [invite reflection / suggest the answer is obvious / provoke a reaction].',
+          antwoord_rubric: '1 punt: correct effect of rhetorical question. 1 punt: correct reason why author chose this heading.'
+        },
+        {
+          nr: 12, opgave: 3, punten: 1, type: 'open',
+          needs_bijlage: true, bijlage_tekst: '⚠️ Open the text booklet — Text 3.',
+          context: 'Text 3',
+          vraag: 'What does the word "nevertheless" in paragraph 5 signal? What is the relationship between the sentence containing "nevertheless" and the sentence before it?',
+          antwoord: '"Nevertheless" signals a contrast / concession. The sentence before it states [point A], while "nevertheless" introduces [point B] which contradicts or complicates it.',
+          antwoord_rubric: '1 punt: correct explanation of the contrast/concessive relationship signalled by "nevertheless".'
+        },
+
+        // ── TEXT 4 ────────────────────────────────────────────────────────
+        {
+          nr: 13, opgave: 4, punten: 2, type: 'open',
+          needs_bijlage: true, bijlage_tekst: '⚠️ Open the text booklet — Text 4.',
+          context: 'Text 4',
+          vraag: 'Summarise the viewpoint of the expert quoted in paragraph 3. Use your own words. (max. 40 words)',
+          antwoord: 'The expert argues that [main point in own words]. He/she believes this because [reasoning]. See answer key for specific content.',
+          antwoord_rubric: '1 punt: viewpoint correctly summarised. 1 punt: in own words, not a direct copy of the text.'
+        },
+        {
+          nr: 14, opgave: 4, punten: 2, type: 'open',
+          needs_bijlage: true, bijlage_tekst: '⚠️ Open the text booklet — Text 4.',
+          context: 'Text 4',
+          vraag: 'Compare the approach described in paragraph 2 with the approach described in paragraph 5. What is the key difference?',
+          antwoord: 'Approach in §2: [description]. Approach in §5: [description]. Key difference: [how they differ in method / focus / goal].',
+          antwoord_rubric: '1 punt: both approaches correctly described. 1 punt: key difference correctly identified.'
+        },
+        {
+          nr: 15, opgave: 4, punten: 1, type: 'open',
+          needs_bijlage: true, bijlage_tekst: '⚠️ Open the text booklet — Text 4.',
+          context: 'Text 4',
+          vraag: 'Find a word or phrase in paragraph 4 that means the same as "to make something worse". Write down the word or phrase.',
+          antwoord: '[Word/phrase from text — see answer key for exact word]. Synonyms such as "to aggravate", "to exacerbate", "to worsen" etc.',
+          antwoord_rubric: '1 punt: correct word or phrase from the text.'
+        },
+        {
+          nr: 16, opgave: 4, punten: 2, type: 'open',
+          needs_bijlage: true, bijlage_tekst: '⚠️ Open the text booklet — Text 4.',
+          context: 'Text 4',
+          vraag: 'Do you think the title of text 4 is a good choice? Explain why or why not, with reference to the content of the text.',
+          antwoord: 'Yes/no + explanation with reference to the content. Both positions are acceptable if well justified. The title should [reflect main idea / capture attention / be relevant to content].',
+          antwoord_rubric: '1 punt: clear position (yes/no). 1 punt: justified with reference to text content.'
+        },
+
+        // ── TEXT 5 ────────────────────────────────────────────────────────
+        {
+          nr: 17, opgave: 5, punten: 2, type: 'open',
+          needs_bijlage: true, bijlage_tekst: '⚠️ Open the text booklet — Text 5.',
+          context: 'Text 5',
+          vraag: 'The author of text 5 uses several examples to illustrate the main argument. Choose one example and explain why the author uses it.',
+          antwoord: 'Example: [from text]. The author uses this to [illustrate / make concrete / appeal to the reader\'s experience / provide evidence]. It strengthens the argument because [reason].',
+          antwoord_rubric: '1 punt: relevant example correctly identified. 1 punt: clear explanation of why the author uses it.'
+        },
+        {
+          nr: 18, opgave: 5, punten: 3, type: 'open',
+          needs_bijlage: true, bijlage_tekst: '⚠️ Open the text booklet — Text 5.',
+          context: 'Text 5',
+          vraag: 'Compare texts 4 and 5 on the same topic. In what way do they agree, and in what way do they disagree? Use your own words.',
+          antwoord: 'Agreement: both texts argue that [shared point]. Disagreement: text 4 emphasises [point A], while text 5 focuses on [point B] / takes a different position on [aspect].',
+          antwoord_rubric: '1 punt: correct agreement (both texts). 1 punt: correct disagreement. 1 punt: answer in own words, clearly structured.'
+        }
+
+      ] // einde vragen
+    }
+  ] // einde en
 
 }; // einde EXAMENS
