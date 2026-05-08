@@ -342,19 +342,35 @@ function examenStart(){
   examenShowQ(0);
   // Start timer
   EX.timer = setInterval(_exTimerTick, 1000);
-  // Split layout: tekstboekje naast vragen inladen
-  const _tb = (EX.examen.bijlagen||[]).find(b=>b.type==='tekstboekje');
+  // Split layout: inline teksten of PDF tekstboekje
+  const _teksten = EX.examen.teksten || [];
+  const _bijlTb = (EX.examen.bijlagen||[]).find(b=>b.type==='tekstboekje');
   const _quiz = document.getElementById('ex-quiz');
   const _tbPanel = document.getElementById('ex-tb-panel');
   const _tbIframe = document.getElementById('ex-tb-iframe');
+  const _tbContent = document.getElementById('ex-tb-content');
   const _tbNewtab = document.getElementById('ex-tb-newtab');
-  if(_tb && _tbPanel && _tbIframe){
-    _tbIframe.src = _tb.url;
-    if(_tbNewtab) _tbNewtab.href = _tb.url;
-    _tbPanel.style.display = '';
+  const _tbLbl = document.getElementById('ex-tb-lbl');
+  if(_teksten.length > 0){
+    // Inline tekst modus — geen iframe nodig
+    if(_tbIframe){ _tbIframe.style.display='none'; _tbIframe.src='about:blank'; }
+    if(_tbContent) _tbContent.style.display='';
+    if(_tbNewtab) _tbNewtab.style.display='none';
+    if(_tbLbl) _tbLbl.textContent='📄 Tekst';
+    if(_tbPanel) _tbPanel.style.display='';
+    _quiz.classList.add('split');
+    _exUpdateTekstPanel();
+  } else if(_bijlTb && _tbPanel && _tbIframe){
+    // PDF modus
+    if(_tbContent) _tbContent.style.display='none';
+    _tbIframe.style.display='';
+    _tbIframe.src = _bijlTb.url;
+    if(_tbNewtab){ _tbNewtab.style.display=''; _tbNewtab.href=_bijlTb.url; }
+    if(_tbLbl) _tbLbl.textContent='📖 Tekstboekje';
+    _tbPanel.style.display='';
     _quiz.classList.add('split');
   } else {
-    if(_tbPanel) _tbPanel.style.display = 'none';
+    if(_tbPanel) _tbPanel.style.display='none';
     _quiz.classList.remove('split');
   }
 }
@@ -422,8 +438,32 @@ function examenShowQ(idx){
   nextBtn.onclick = isLast ? examenFinish : ()=>examenNav(1);
   // Grid update
   _exUpdateGrid();
+  // Update inline tekst panel indien van toepassing
+  if((EX.examen.teksten||[]).length) _exUpdateTekstPanel();
   // Scroll top
   document.getElementById('sc-examen').scrollTo(0,0);
+}
+
+function _exUpdateTekstPanel(){
+  const contentEl = document.getElementById('ex-tb-content');
+  if(!contentEl) return;
+  const q = EX.examen.vragen[EX.idx];
+  if(!q) return;
+  const teksten = EX.examen.teksten || [];
+  if(!q.tekst_id || !teksten.length){
+    contentEl.innerHTML = '<div class="ex-tb-placeholder">📄 Geen tekst gekoppeld aan deze vraag.</div>';
+    return;
+  }
+  const tekst = teksten.find(t => t.id === q.tekst_id);
+  if(!tekst){
+    contentEl.innerHTML = '<div class="ex-tb-placeholder">📄 Tekst niet gevonden.</div>';
+    return;
+  }
+  // Alleen re-renderen als tekst veranderd is
+  if(contentEl.dataset.tekstId === tekst.id) return;
+  contentEl.dataset.tekstId = tekst.id;
+  contentEl.innerHTML = `<div class="ex-tekst-wrapper"><div class="ex-tekst-header"><div class="ex-tekst-deel">${tekst.deel?'Deel '+tekst.deel+' — ':''}Tekst ${tekst.nr||''}</div><h2 class="ex-tekst-titel">${tekst.titel}</h2></div><div class="ex-tekst-body">${tekst.inhoud}</div></div>`;
+  contentEl.scrollTop = 0;
 }
 
 function examenSaveAnswer(val){
@@ -549,6 +589,8 @@ function examenExit(){
   if(_quiz) _quiz.classList.remove('split');
   if(_tbPanel) _tbPanel.style.display = 'none';
   if(_tbIframe) _tbIframe.src = 'about:blank';
+  const _tbContent = document.getElementById('ex-tb-content');
+  if(_tbContent){ _tbContent.innerHTML=''; delete _tbContent.dataset.tekstId; _tbContent.style.display='none'; }
   EX = {};
   show('sc-detail');
 }

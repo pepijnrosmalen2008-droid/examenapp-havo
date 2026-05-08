@@ -257,7 +257,7 @@ const EXAMENS = {
   // ─────────────────────────────────────────────────────────
   //  NEDERLANDS HAVO 2025 TIJDVAK 1
   //  Leesvaardigheid + schrijfvaardigheid · 55 punten · 180 minuten
-  //  Bron: HA-0022-a-25-1-o · alle vragen verwijzen naar het tekstboekje
+  //  Bron: HA-0022-a-25-1-o
   // ─────────────────────────────────────────────────────────
   nl: [
     {
@@ -271,117 +271,204 @@ const EXAMENS = {
       max_punten: 55,
       bron: 'HA-0022-a-25-1-o · alleexamens.nl',
       bijlagen: [
-        { type: 'tekstboekje', label: 'Tekstboekje', url: 'https://sxrjdssmgwwygtskovyc.supabase.co/storage/v1/object/public/examens/havo/nl/2025/I/tekstboekje.pdf' },
         { type: 'antwoord', label: 'Correctievoorschrift', url: 'https://sxrjdssmgwwygtskovyc.supabase.co/storage/v1/object/public/examens/havo/nl/2025/I/correctievoorschrift.pdf' }
+      ],
+      teksten: [
+        {
+          id: 't1', deel: 1, nr: 1,
+          titel: 'Mijn ideale vriendin: de vlogger',
+          bron: 'Doortje Smithuijsen, Trouw, 29 januari 2022',
+          inhoud: `<p class="ex-al"><b class="ex-aln">1</b> Ik weet niet meer precies wanneer Emma Chamberlain in mijn leven kwam, maar het moet ergens in de eerste coronalockdown zijn geweest. Ik verveelde me tijdens het lunchen. Normaal gesproken zat ik tussen de middag in mijn studio, omringd door collega-zelfstandigen, nu zat ik alleen.</p>
+<p class="ex-al"><b class="ex-aln">2</b> De eerste Emma-video die ik bekeek, had de aantrekkelijke titel <em>What I do in a day *at home*</em>. Vermoedelijk gaf een gevoel van herkenning de doorslag om het filmpje aan te klikken. Ik was ook de hele dag *at home*; benieuwd hoe iemand anders zich erdoorheen sloeg.</p>
+<p class="ex-al"><b class="ex-aln">3</b> Het is lastig te omschrijven wat ik aantrof in haar filmpjes, nog lastiger uit te leggen waarom ik steeds meer wilde zien. Hoofdactiviteit in de meeste vlogs van Emma is koffiezetten en filosoferen over de vraag hoeveel hazelnootmelk ze erbij zal doen. Verder speelt ze Fortnite in bed en denkt ze hardop na over de vraag hoe het kan dat ze acht uur per dag op TikTok zit.</p>
+<p class="ex-al"><b class="ex-aln">4</b> Ik heb ooit gelezen dat alleenstaande Koreanen tijdens het eten video's opzetten van andere mensen die eten, zodat ze zich niet eenzaam voelen. Destijds vond ik dat een treurig idee, maar na een dag of tien lunchen met Emma kon ik het goed begrijpen. Ik kreeg een enorm veilig gevoel van het idee dat er tijdens de lunch altijd iemand tegen me zou praten, terwijl ik niets terug hoefde te zeggen en ik mijn eenzijdige gesprekspartner uit kon zetten wanneer het mij uitkwam.</p>
+<p class="ex-al"><b class="ex-aln">5</b> Ik had ook wel eens gelezen – en zelfs geschreven – over parasociale relaties. En nu was ik er ongemerkt zelf één aangegaan. De term ontstond toen sociologen in de jaren vijftig onderzoek deden naar de relatie tussen tv-persoonlijkheden en hun publiek. Door dagelijks of wekelijks naar dezelfde persoonlijkheden te kijken, ontwikkelden mensen de illusie dat ze hun tv-helden kenden. En daardoor wilden ze elke keer weer hetzelfde programma zien.</p>
+<p class="ex-al"><b class="ex-aln">6</b> Vandaag zijn we omringd door potentiële parasociale relaties: op zo'n beetje elk medium vechten vloggers, influencers en youtubers om onze eenzijdige affectie. Er wordt dan ook veel onderzoek gedaan naar de parasociale relaties die mensen aangaan met hun online idolen. Eén recente bevinding is dat mensen sneller geneigd zijn te gaan sporten als ze een parasociale relatie aangaan met een sport-influencer: een uurtje zweten met een digitale metgezel is leuker dan in je eentje, ook als diegene jou helemaal niet kent.</p>
+<p class="ex-al"><b class="ex-aln">7</b> Ook werd duidelijk dat angstig aangelegde mensen sneller parasociale relaties aangaan, wat de kans op bijvoorbeeld een YouTube-verslaving flink vergroot. En tijdens de coronalockdowns bloeiden er significant meer parasociale relaties op, ook dat blijkt uit onderzoek.</p>
+<p class="ex-al"><b class="ex-aln">8</b> "Ze voelen als mijn vriendinnen." Ik zat in een café met een programmamaker, ter voorbereiding op een avond over sociale media en de invloed daarvan. De programmamaker had het over moedervloggers. Sinds ze kinderen had, zei ze, was ze in beslag genomen door deze jonge vrouwen. Het begon onschuldig: af en toe even kijken hoe een andere moeder het ontbijt voor de kinderen maakte, de kinderkamer inrichtte, met haar vriend kibbelde over wie er moest oppassen. Maar op zeker moment moest de programmamaker altijd meteen naar de nieuwe video's van haar favoriete vloggers kijken. Ook als haar kinderen huilden, haar man om aandacht vroeg, het eten nog gekookt moest worden of de fles nog opgewarmd. "Het voelde als een soort ontsnapping. Alsof ik mijn hectische leven achter me kon laten, even kon verdwijnen in hun wereld", zo legde ze me uit.</p>
+<p class="ex-al"><b class="ex-aln">9</b> Toen de pandemie ging liggen en werken op mijn studio weer mogelijk werd, merkte ik dat ik het lunchen met Emma enorm miste. Ineens moest ik me weer verhouden tot andere mensen aan een eettafel, weer meedoen met gezamenlijke boodschappen, weekendbeschouwingen aanhoren, geduldig wachten tot iedereen klaar was. Tijdens de lockdown was mijn leven ultiem productief. Het was werken, lunchen met Emma en weer doorwerken, zonder het oponthoud van sociaal wenselijk gedrag. Nu keek ik, terwijl ik mijn eten allang ophad, onrustig toe hoe studiogenoten nóg een boterham smeerden, nóg een verhaal begonnen over een mislukte date.</p>
+<p class="ex-al"><b class="ex-aln">10</b> Misschien had YouTube voor mij niet zozeer een probleem opgelost, maar eerder een probleem gecreëerd. Ik was het te prettig gaan vinden om te lunchen met Emma en ervoer veel meer moeite om sociaal wenselijk gedrag te vertonen dan normaal.</p>
+<p class="ex-al"><b class="ex-aln">11</b> In haar <em>Zelfverwoestingsboek</em> beschrijft Marian Donner de relatie tussen Theodore Twombly en zijn AI-systeem Samantha uit de film <em>Her</em> als dystopisch toekomstscenario, waarin er "van de mens nog maar weinig over is". De wereld om hem heen verveelt Twombly totaal, schrijft Donner, omdat niets hem nog uitdaagt. "De apparaten weten wat hij wil. Het leven is frictieloos geworden. Zelfs de liefde is frictieloos geworden." Samantha is er altijd voor hem, ze is nooit chagrijnig, "er zijn geen hobbels of problemen, er is alleen maar positiviteit."</p>
+<p class="ex-al"><b class="ex-aln">12</b> In zekere zin was Emma voor mij een frictieloze vorm van contact geworden. Ik wist precies hoelang haar filmpjes duurden en ik kon ze uitzetten zodra ik het wilde. Ik hoefde nooit te wachten tot ze haar boterham op had, of tot ze was uitgepraat. Net zoals YouTube voor de programmamaker een frictieloze vervanging werd van afspraken met echte vrienden: ze hoefde er geen oppas voor te regelen, en als haar kind riep, kon ze haar 'vriendin' gewoon uitzetten.</p>
+<p class="ex-al"><b class="ex-aln">13</b> Kan het zijn dat vloggers de rol van onze vrienden aan het overnemen zijn? Terwijl om ons heen een samenleving wordt opgetrokken waarin we steeds meer elkaars concurrent moeten zijn, waarin we allemaal constant moeten presteren en meer van onszelf eisen, is er simpelweg minder tijd om bij elkaar thuis op de bank te ploffen en eens even te bespreken hoe het nou echt met ons gaat. En zijn er wel steeds meer vloggers en influencers bij wie je in een kort, overzichtelijk moment dat gevoel van genegenheid kan scoren in digitale, on-demand-variant.</p>
+<p class="ex-al"><b class="ex-aln">14</b> Een paar weken geleden ging Emma Chamberlain uit de lucht. Ik had al een paar keer geïrriteerd haar YouTube-pagina ververst, toen Emma een podcast uploadde waarin ze vertelde dat ze een mentale instorting had gehad.</p>
+<p class="ex-al"><b class="ex-aln">15</b> In een interview vertelde Emma eens dat ze vaak doet alsof haar 11 miljoen volgers met haar samenwonen, "en dan is het net alsof ik wel heel veel vrienden heb."</p>
+<p class="ex-al"><b class="ex-aln">16</b> Volgers en gevolgden: ze zitten allemaal vast in een parasociale relatie. De één kan alleen maar kijken en luisteren, de ander alleen maar praten, filmen en delen. Ze ontmoeten elkaar nergens.</p>
+<p class="ex-al"><b class="ex-aln">17</b> Aan het einde van <em>Her</em> wordt Theodore verlaten door zijn AI-geliefde. "Theodore is te saai voor Samantha", schrijft Donner. "Hij daagt haar niet meer uit." Ze vertrekt samen met andere besturingssystemen naar een volledig digitale wereld. Volgens Donner laat Theodore zien "wat er met een mens gebeurt als alles om hem heen gericht is op positiviteit en gemak." Met zo'n houding kun je nooit duurzame relaties aangaan, denkt Donner. Immers, "wat is liefde anders dan frictie? Anders dan misverstanden en onbegrip?"</p>
+<p class="ex-al"><b class="ex-aln">18</b> Tja, wat is liefde? Je hebt van die suffe tekeningetjes die daar antwoord op geven. "Liefde is... samen groeien", en dan twee poppetjes erbij die gezapig een plant water geven. In tijden van digitalisering kun je ook zeggen: "Liefde is... je favoriete vlog voor iemand op pauze zetten." Of: "Liefde is... samen lunchen, zonder scherm." Maar misschien is liefde ook: accepteren dat je vriend of vriendin af en toe liever met een vlogger afspreekt dan met jou. Dat je partner soms even aan jullie huishouden wil ontsnappen via een YouTube-filmpje. Zolang de wereld om ons heen het moeilijker maakt om echte, duurzame relaties aan te gaan, mogen we ons af en toe best troosten met een vlog.</p>
+<p class="ex-al"><b class="ex-aln">19</b> Emma maakte gelukkig onlangs haar rentree op YouTube. Ze zette weer koffie, deed er hazelnootmelk bij, ging naar de supermarkt, at sushi – alles zwijgend dit keer, zonder haar bekende sarcastische gemompel. Hoewel ik blij was dat ze een nieuwe video online had gezet, voelde het toch raar om voor mijn plezier en ontspanning te kijken naar iemand die overduidelijk mentaal niet in orde was. Moest ik me zorgen maken om Emma? Moest ik me schuldig voelen? YouTube afzetten?</p>
+<p class="ex-al"><b class="ex-aln">20</b> De titel van Emma's video vatte perfect samen wat we op dat moment – dwars door onze digitale parasociale relatie heen – misschien wel tegelijk voelden. "It will be ok."</p>
+<div class="ex-tekst-bron-voet">Doortje Smithuijsen, Trouw, 29 januari 2022 · <em>Filosoof en journalist</em></div>
+<div class="ex-tekst-notities"><b>Noten</b><br>1 coronalockdown: periode waarin het bezoeken van mensen en voorzieningen ernstig was beperkt ter bestrijding van de coronapandemie<br>2 What I do in a day at home: Wat ik doe tijdens een dag thuis<br>3 AI-systeem: systeem gebaseerd op kunstmatige intelligentie<br>4 on demand: op bestelling<br>5 It will be ok: Het komt goed</div>`
+        },
+        {
+          id: 't1f', deel: 1, nr: '1 (fragment)',
+          titel: 'Tekstfragment 1 — VRIEND',
+          bron: 'Toon Hermans, Groot versjesboek, 2005',
+          inhoud: `<div class="ex-gedicht">
+<p class="ex-al-gedicht">Je hebt iemand nodig,</p>
+<p class="ex-al-gedicht">stil en oprecht,</p>
+<p class="ex-al-gedicht">die als het erop aan komt</p>
+<p class="ex-al-gedicht">voor je bidt of voor je vecht.</p>
+<br>
+<p class="ex-al-gedicht">Pas als je iemand hebt,</p>
+<p class="ex-al-gedicht">die met je lacht en met je grient,</p>
+<p class="ex-al-gedicht">dan pas kun je zeggen:</p>
+<p class="ex-al-gedicht">'k heb een vriend.</p>
+</div>
+<div class="ex-tekst-notities"><em>Afbeelding 1 (cartoon van Dirk van de Wiel) is niet opgenomen in de digitale versie. Raadpleeg het correctievoorschrift voor de relevante vragen.</em></div>`
+        },
+        {
+          id: 't2', deel: 2, nr: 2,
+          titel: 'De gedachteloosheid van de Gorillas-fiets',
+          bron: 'Floor Rusman, NRC Handelsblad, 23 oktober 2021',
+          inhoud: `<p class="ex-al"><b class="ex-aln">1</b> Ineens zijn ze overal in de grote steden, de bezorgers van Gorillas, Getir, Flink en Zapp. Ze razen op elektrische fietsen door de straten, elke fietstocht een olympische sprint op weg naar iemand die nu-nu-nu komijnzaad moet hebben, wat flessen wijn, of alleen een pakje sigaretten.</p>
+<p class="ex-al"><b class="ex-aln">2</b> Die vergelijking met olympische sport verzin ik niet zelf. "Net als een olympisch atleet gaan we tot het uiterste", zei Gorillas-manager Batuhan Aydin afgelopen week in NRC. In de magazijnen wordt hiphop en techno gedraaid om de werknemers energiek te houden. Aydin: "We doen bij dit bedrijf alles in een gestoord, ongelofelijk tempo." Wonderbaarlijk genoeg leek hij dit als iets positiefs te beschouwen.</p>
+<p class="ex-al"><b class="ex-aln">3</b> "Maar… maar… staat die flitsbezorging niet haaks op trends als mindfulness en vertraging?", vraag ik na lezing van het stuk. Mijn gesprekspartners kijken me meewarig aan. De wereld is groter dan jouw brave bubbeltje, zeggen ze; snellere service wint altijd.</p>
+<p class="ex-al"><b class="ex-aln">4</b> Waarom wind ik me zo op? Is het nostalgie naar de tijd dat verlangen kon bestaan zonder onmiddellijk bevredigd te worden? Een beetje. Is het ergernis over de bezorgers, die verwikkeld lijken in ritten op leven en dood? Ja, ook. Maar het is meer dan dat, concludeer ik uiteindelijk. Hoeveel ik er zelf ook van houd, ik voel een instinctieve weerstand tegen nóg meer gemak. De vraag is namelijk: waar houdt het op?</p>
+<p class="ex-al"><b class="ex-aln">5</b> Zoals water naar het laagste punt vloeit, zo beweegt de mens naar de makkelijkste optie, oftewel: de optie met de minste frictie. 'Frictie' betekent zoiets als weerstand of wrijving. Filosoof Miriam Rasch geeft in haar essayboek <em>Frictie</em> allerlei voorbeelden van 'frictieloos design': apps als Uber, die je een interactie met de chauffeur besparen, en de automatische antwoordsuggesties van Gmail. Door dit soort technologie verspillen we steeds minder tijd, en dat is natuurlijk prettig. Maar is frictieloosheid altijd winst?</p>
+<p class="ex-al"><b class="ex-aln">6</b> Dat frictie ook waardevol kan zijn, erkennen we grappig genoeg wel als het gaat om kunst. Goede kunst moet 'schuren', onvoorspelbaar zijn, ons uit ons dagelijks stramien halen. We wantrouwen kunst die te soepel naar binnen glijdt. Ik word wel eens gepest omdat ik van Dire Straits houd – te makkelijk, aldus de fijnproevers.</p>
+<p class="ex-al"><b class="ex-aln">7</b> Frictie verstoort de automatische piloot; daarom is ze belangrijk voor kunst en verstorend voor commercie. Een consument moet gedachteloos kunnen scrollen, klikken en betalen. Die gedachteloosheid, het gemak waarmee we door allerlei dagelijkse handelingen bewegen, heeft iets verslavends. En precies dat is waarover ik me zorgen maak. Hoe minder frictie er is, vermoed ik, hoe lager onze tolerantie ervoor wordt. We zouden nu een woedeaanval krijgen van de tijd die het vroeger kostte om de weg te vinden in een vreemde stad. Misschien vinden we het over tien jaar wel een olympische prestatie om zelf naar de bakker te lopen.</p>
+<p class="ex-al"><b class="ex-aln">8</b> Het ene gemak lokt het andere uit. Wat nou als we door onze lage frictietolerantie dingen opgeven die we eigenlijk, als we erover nadenken, belangrijker vinden dan wat extra gemak? Neem gezichtsherkennings­technologie: veel mensen vinden dat nu nog te ver gaan. Ondertussen wordt het in Rusland al gebruikt als betaalmiddel in de metro. "Waarom niet, het lijkt me wel handig", aldus een laconieke Rus gisteren in NRC. In Schotland gebruiken negen schoolkantines gezichtsherkenning aan de kassa: alles voor de efficiëntie.</p>
+<p class="ex-al"><b class="ex-aln">9</b> In de EU zal dit niet gebeuren, zeggen deskundigen. Dat mag niet van de Europese privacywetgeving. Maar gezichtsherkenning wordt wel steeds meer ingezet als toegangscontrole bij kantoren en festivals. Zal het water niet ook hier naar het laagste punt vloeien? Hoe verleidelijk is het om nog meer dingen gedachteloos te doen!</p>
+<p class="ex-al"><b class="ex-aln">10</b> Principes leggen het af tegen gemakzucht, dat zal iedereen herkennen die wel eens routineus op 'alle cookies accepteren' heeft geklikt. Juist omdat het zo werkt, bezie ik mijn gemakzucht met argwaan. Die moet getemd worden, niet aangemoedigd – zoals de flitsbezorgers doen.</p>
+<div class="ex-tekst-bron-voet">Floor Rusman, NRC Handelsblad, 23 oktober 2021 · <em>Redacteur bij NRC Handelsblad</em></div>
+<div class="ex-tekst-notities"><b>Noot</b><br>1 Dire Straits: Britse rockband actief van 1977–1995</div>`
+        },
+        {
+          id: 't3', deel: 3, nr: 3,
+          titel: 'Regels in de ruimte',
+          bron: 'Vier bronnen · NRC Handelsblad / intermediair.nl, 2021',
+          inhoud: `<div class="ex-bron-hdr">Bron 1 — De ruimte is van cruciaal belang voor de aarde, en daarom zijn er regels nodig</div>
+<p class="ex-al"><b class="ex-aln">1</b> Met een testvlucht van zijn Virgin Galactic-ruimtevliegtuig schoot multimiljardair Richard Branson in juli 2021 door de stratosfeer. Zijn jongensdroom kwam uit: vier minuten zweefde hij met zijn vijfkoppige crew gewichtloos boven de aarde. De bijzondere trip had hij speciaal vervroegd om Amazon-tycoon Jeff Bezos voor te zijn. Bezos stapte anderhalve week later in zijn Blue Origin-raket.</p>
+<p class="ex-al"><b class="ex-aln">2</b> De nieuwe space race ging niet tussen rivaliserende staten, maar tussen ijdele miljardairs. Na de aankondiging van Bransons lancering liet Bezos in een wrevelige reactie weten zijn rivaal een goede reis te wensen, ook al zou die officieel de ruimte niet ingaan. De tachtigkilometergrens die 'SpaceShipTwo Unity 22' aantikte, werd in de jaren vijftig door de NASA bestempeld tot begin van de ruimte, maar internationaal wordt de grens van honderd kilometer boven de aarde aangehouden.</p>
+<p class="ex-al"><b class="ex-aln">3</b> De boodschap was duidelijk: Branson mocht eerder zijn, Bezos ging hoger. Baas boven baas. En dan is er nóg een baas: Elon Musk, die met zijn bedrijf SpaceX eerder al de eerste commerciële partij was die een bemenste ruimtevlucht in een baan rond de aarde kreeg.</p>
+<p class="ex-al"><b class="ex-aln">4</b> De <em>space barons</em> worden ze wel genoemd. Kort gezegd willen Musk en Branson vooral Mars 'koloniseren', Jeff Bezos de ruimte rondom de aarde. Het zijn mannen die meer gemeen hebben dan hun kleur, levensfase en torenhoge ambitie. Als jongetjes lazen ze grotendeels dezelfde sciencefictionboeken. Als jongemannen waren ze stuk voor stuk buitenbeentjes; ze zijn geobsedeerd door raketten en willen, boven alles, winnen.</p>
+<p class="ex-al"><b class="ex-aln">5</b> Hun taalgebruik verraadt een wereldbeeld. De ruimte noemen ze een 'frontier', een plek om te 'koloniseren', zoals ooit het Wilde Westen. Steeds als ik dat lees, struikel ik erover. Koloniseren. Alsof dat woord niet zucht onder de last van het verleden. Als onze taal bepaalt hoe we naar de wereld kijken, moeten we zorgvuldig zijn met onze woorden. Waarom niet 'bezoeken' in plaats van 'koloniseren'?</p>
+<p class="ex-al"><b class="ex-aln">6</b> Je kunt je afvragen of wij, aardgebonden stakkers, ons hier nu druk om moeten maken. Waarom laten we een klein clubje interplanetaire adel zich niet vermaken in het heelal? Omdat de ruimte inmiddels van cruciaal belang is voor de aarde, daarom. We kunnen allang niet meer zonder al die satellieten daarboven, en er valt wat te halen. De eerste buitenaardse mijnbouwbedrijven zijn al opgericht. Lyndon B. Johnson voorzag het in 1958 al: "De ruimte controleren is de wereld controleren."</p>
+<p class="ex-al"><b class="ex-aln">7</b> Volgens het Ruimteverdrag moeten we de ruimte beschouwen als een "provincie voor de hele mensheid" en dat is precies wat het zou moeten zijn en blijven.</p>
+<p class="ex-al"><b class="ex-aln">8</b> Onze sterrenhemel is de bron van onze wetenschappelijke kennis, en van de oudste verhalen van de mensheid. Cultureel en wetenschappelijk is het heelal voor ieder van ons van grote betekenis.</p>
+<p class="ex-al"><b class="ex-aln">9</b> Het probleem is alleen dat dit idee van een gedeelde menselijke provincie zich maar moeilijk vertaalt in harde wetten. Het Ruimteverdrag stamt uit de jaren zestig, het is niet bedacht op de commerciële exploitatie van private partijen. Maar als we de space cowboys ongemoeid hun gang laten gaan, kan de ruimte een exclusief wingewest worden voor de superrijken.</p>
+<p class="ex-al"><b class="ex-aln">10</b> Zelf koppelen ze hun interplanetaire ambities niet in de eerste plaats aan financiële winst. Branson noemde het 'overzichtseffect' als motivatie.</p>
+<p class="ex-al"><b class="ex-aln">11</b> Dit effect treedt op bij astronauten die vanuit de ruimte naar de aarde kijken en doordrongen raken van de kwetsbaarheid en verbluffende schoonheid van onze planeet. Door de grote afstand zien ze plotseling hoe alles hier beneden een geheel vormt. Dit diepe besef maakt dat veel ruimtevaarders zich bij terugkomst van hun missie gaan inzetten voor behoud van ons ecosysteem.</p>
+<p class="ex-al"><b class="ex-aln">12</b> Branson zegt met zijn plannen voor ruimtetoerisme zo veel mogelijk mensen deze ervaring te willen bieden. Maar het is de vraag of vier minuten zweven op tachtig kilometer hoogte een overzichtseffect oplevert. Onderzoek wijst uit dat een enkele keer kijken niet genoeg is voor een langdurige impact.</p>
+<p class="ex-al"><b class="ex-aln">13</b> Ook Bezos en Musk framen hun plannen graag als filantropische ondernemingen. Raketbrandstof is een mengeling van kerosine en mythevorming, schreef de Deense godsdienstwetenschapper Thore Bjørnvig.</p>
+<p class="ex-al"><b class="ex-aln">14</b> Er is betere regelgeving nodig. Hiervoor zou de internationale gemeenschap een voorbeeld kunnen nemen aan Antarctica. Overheden moeten overeenkomen dat het gebied buiten de dampkring niet voor commerciële doeleinden mag worden geëxploiteerd.</p>
+<p class="ex-al"><b class="ex-aln">15</b> Het heelal heeft ons nog van alles te leren, over onze oorsprong en onze toekomst. De sterrenhemel kan ons helpen verwondering en relativering te vinden. Maar daarvoor moet de ruimte wel de ruimte blijven. En niet het speelveld van groot geld en dito ego's.</p>
+<div class="ex-tekst-bron-voet">Marjolijn van Heemstra, NRC Handelsblad, 16 juli 2021</div>
+<div class="ex-bron-hdr">Bron 2 — Afbeelding (cartoon)</div>
+<p class="ex-al-grijs">De cartoon is niet opgenomen in de digitale versie. Raadpleeg het tekstboekje.</p>
+<div class="ex-bron-hdr">Bron 3</div>
+<p class="ex-al"><b class="ex-aln">1</b> Het ideaalbeeld van Musk is om Mars te koloniseren. Bezos en Branson gaan niet eens naar een andere planeet, maar schieten ieder in hun eigen raket zo'n 100 kilometer omhoog, koekeloeren daar een paar minuten in de rondte, en zijn binnen een kwartier weer terug op aard. Het is je reinste decadentie.</p>
+<p class="ex-al"><b class="ex-aln">2</b> Maar helemaal nutteloos zijn de inspanningen van deze drie ruimtemusketiers niet. Dankzij hun ondernemersneus is het ontwikkelen van ruimteschepen stukken goedkoper geworden. Ook hebben ze in belangrijke mate bijgedragen aan het verduurzamen van de ruimtevaart, door te zorgen voor recyclebare materialen in deze industrie.</p>
+<p class="ex-al"><b class="ex-aln">3</b> Ruimtereizen voelen voor velen van ons zinloos, omdat we er het belang niet van inzien. Maar dat zagen we 100 jaar geleden ook niet van het vliegtuig, en 600 jaar geleden ook niet toen Columbus in een boot de oceaan overstak. Alleen door te ontdekken gaan we nieuwe mogelijkheden zien.</p>
+<p class="ex-al"><b class="ex-aln">4</b> In het dagelijks leven is het soms lastig ons te realiseren hoe wonderlijk het eigenlijk is dat we hier rond mogen lopen. Maar astronauten hebben van een afstandje onze planeet bekeken en zagen in één klap hoe fragiel en kwetsbaar onze aarde is, en dat er goed voor haar gezorgd moet worden.</p>
+<p class="ex-al"><b class="ex-aln">5</b> Met een beetje mazzel kickt dat besef ook in bij deze machtige miljardairs.</p>
+<div class="ex-tekst-bron-voet">Barbara Noordermeer, intermediair.nl</div>
+<div class="ex-bron-hdr">Bron 4</div>
+<p class="ex-al"><b class="ex-aln">1</b> De ruimtemijnbouw, het winnen van grondstoffen in de ruimte, kan de mensheid vele voordelen brengen. Permanente bewoning in de ruimte komt dan opeens heel dichtbij.</p>
+<p class="ex-al"><b class="ex-aln">2</b> Aan de andere kant zijn er ook grote risico's: een asteroïde zou ter aarde kunnen storten of het getij zou kunnen veranderen. En is de ruimtemijnbouw wel zo rechtvaardig? Elk land opereert nu voor zich, waardoor het recht van de sterkste zal regeren. Terwijl volgens het Ruimteverdrag hemellichamen dienen te worden gebruikt in het belang van alle staten.</p>
+<p class="ex-al"><b class="ex-aln">3</b> Het is de hoogste tijd voor een intergouvernementele toezichthouder. Een voorbeeld: de Internationale Zeebodemautoriteit van de VN. Een vergelijkbare internationale ruimte-autoriteit zou toezien op mijnbouwvergunning, nadere regelgeving kunnen invoeren en voor de (milieu)belangen van het gebied kunnen opkomen.</p>
+<div class="ex-tekst-bron-voet">Florentine Vos, NRC Handelsblad, 2 maart 2021 · <em>Advocaat internationaal publiekrecht in Londen</em></div>
+<div class="ex-tekst-notities"><b>Noten</b><br>1 space race: ruimtewedloop · 2 barons: baronnen · 3 frontier: grens (koloniaal beladen term) · 4 the unknown: het onbekende</div>`
+        }
       ],
       vragen: [
 
-        // ── OPGAVE 1: Tekst 1 (informatief/betogend artikel) ──────────────
+        // ── OPGAVE 1: Tekst 1 — Mijn ideale vriendin: de vlogger ──────────
         {
           nr: 1, opgave: 1, punten: 1, type: 'open',
-          needs_bijlage: true, bijlage_tekst: '⚠️ Open het tekstboekje — Tekst 1.',
-          context: 'Tekst 1',
+          tekst_id: 't1', context: 'Tekst 1',
           vraag: 'Welke bewering vormt de these van dit artikel? Gebruik je eigen woorden.',
           antwoord: 'De these is de centrale stelling die de auteur in het artikel verdedigt. Raadpleeg het correctievoorschrift voor de exacte omschrijving.',
           antwoord_rubric: '2 punten: these correct en volledig omschreven in eigen woorden. 1 punt: these gedeeltelijk juist.'
         },
         {
           nr: 2, opgave: 1, punten: 2, type: 'open',
-          needs_bijlage: true, bijlage_tekst: '⚠️ Open het tekstboekje — Tekst 1.',
-          context: 'Tekst 1',
+          tekst_id: 't1', context: 'Tekst 1',
           vraag: 'Geef de functie aan van alinea 3 in het betoog. Licht je antwoord toe met een citaat uit die alinea.',
           antwoord: 'De alinea geeft een tegenargument / tegenwerpingsfunctie, waarna de auteur dit weerlegt. Toelichting met passend citaat uit tekst.',
           antwoord_rubric: '1 punt: correcte alineafunctie. 1 punt: passend citaat als toelichting.'
         },
         {
           nr: 3, opgave: 1, punten: 1, type: 'open',
-          needs_bijlage: true, bijlage_tekst: '⚠️ Open het tekstboekje — Tekst 1.',
-          context: 'Tekst 1',
+          tekst_id: 't1', context: 'Tekst 1',
           vraag: 'Welke argumentatiestrategie gebruikt de auteur in de laatste alinea? Noem de naam van de strategie.',
           antwoord: 'Beroep op autoriteit / beroep op emotie / voorbeeld / analogie — zie correctievoorschrift voor de specifieke strategie bij deze tekst.',
           antwoord_rubric: '1 punt: correcte naam van de argumentatiestrategie.'
         },
         {
           nr: 4, opgave: 1, punten: 2, type: 'open',
-          needs_bijlage: true, bijlage_tekst: '⚠️ Open het tekstboekje — Tekst 1.',
-          context: 'Tekst 1',
+          tekst_id: 't1', context: 'Tekst 1',
           vraag: 'Leg in je eigen woorden uit wat de auteur bedoelt met de metafoor in de tweede alinea.',
           antwoord: 'De metafoor vergelijkt [begrip uit tekst] met [beeld]. De auteur bedoelt daarmee te zeggen dat [uitleg]. Correcte parafrase scoort vol.',
           antwoord_rubric: '2 punten: betekenis correct en volledig uitgelegd in eigen woorden. 1 punt: gedeeltelijk correct.'
         },
         {
           nr: 5, opgave: 1, punten: 2, type: 'open',
-          needs_bijlage: true, bijlage_tekst: '⚠️ Open het tekstboekje — Tekst 1.',
-          context: 'Tekst 1',
+          tekst_id: 't1', context: 'Tekst 1',
           vraag: 'Is de conclusie van de auteur logisch te beredeneren vanuit de argumenten in de tekst? Onderbouw je antwoord.',
           antwoord: 'Ja/nee + onderbouwing met verwijzing naar argumenten uit de tekst. Beide posities kunnen correct zijn mits goed beredeneerd.',
           antwoord_rubric: '1 punt: standpunt (ja/nee). 1 punt: onderbouwing met concrete verwijzing naar de tekst.'
         },
 
-        // ── OPGAVE 2: Tekst 2 (beschouwend/literair) ─────────────────────
+        // ── OPGAVE 2: Tekst 2 — De gedachteloosheid van de Gorillas-fiets ─
         {
           nr: 6, opgave: 2, punten: 1, type: 'open',
-          needs_bijlage: true, bijlage_tekst: '⚠️ Open het tekstboekje — Tekst 2.',
-          context: 'Tekst 2',
+          tekst_id: 't2', context: 'Tekst 2',
           vraag: 'Wat is de toon van de eerste twee alinea\'s? Noem de toon en onderbouw met één citaat.',
           antwoord: 'Ironisch / serieus / kritisch / persoonlijk — zie correctievoorschrift. Citaat ter onderbouwing.',
           antwoord_rubric: '1 punt: correcte toon met passend citaat.'
         },
         {
           nr: 7, opgave: 2, punten: 2, type: 'open',
-          needs_bijlage: true, bijlage_tekst: '⚠️ Open het tekstboekje — Tekst 2.',
-          context: 'Tekst 2',
+          tekst_id: 't2', context: 'Tekst 2',
           vraag: 'Beschrijf de structuur van de tekst. Welke tekstsoort is dit en hoe zijn de alinea\'s opgebouwd?',
-          antwoord: 'Beschouwing / column / opiniestuk. Opbouw: inleiding (aanleiding), kern (argumenten/voorbeelden), slot (conclusie of oproep). Correcte identificatie en structuurbeschrijving.',
+          antwoord: 'Beschouwing / column / opiniestuk. Opbouw: inleiding (aanleiding), kern (argumenten/voorbeelden), slot (conclusie of oproep).',
           antwoord_rubric: '1 punt: correcte tekstsoort. 1 punt: correcte beschrijving van de opbouw.'
         },
         {
           nr: 8, opgave: 2, punten: 2, type: 'open',
-          needs_bijlage: true, bijlage_tekst: '⚠️ Open het tekstboekje — Tekst 2.',
-          context: 'Tekst 2',
+          tekst_id: 't2', context: 'Tekst 2',
           vraag: 'Welke twee doelen wil de auteur met deze tekst bereiken? Noem beide doelen.',
-          antwoord: 'Doel 1: informeren (kennis overbrengen). Doel 2: overtuigen / activeren / amuseren — afhankelijk van tekst. Zie correctievoorschrift.',
+          antwoord: 'Doel 1: informeren (kennis overbrengen). Doel 2: overtuigen / activeren / amuseren — afhankelijk van tekst.',
           antwoord_rubric: '1 punt per correct doel (max 2).'
         },
         {
           nr: 9, opgave: 2, punten: 1, type: 'open',
-          needs_bijlage: true, bijlage_tekst: '⚠️ Open het tekstboekje — Tekst 2.',
-          context: 'Tekst 2',
+          tekst_id: 't2', context: 'Tekst 2',
           vraag: 'Leg de betekenis uit van de zin die als titel van de tekst dient. Gebruik je eigen woorden.',
           antwoord: 'Parafrase van de titel die de dubbele betekenis / symbolische lading verklaart. Zie correctievoorschrift voor de exacte bewoording.',
           antwoord_rubric: '1 punt: correcte uitleg van de betekenis van de titel in eigen woorden.'
         },
 
-        // ── OPGAVE 3: Tekst 3 (informatieve tekst met grafiek / infographic) ─
+        // ── OPGAVE 3: Tekst 3 — Regels in de ruimte (4 bronnen) ───────────
         {
           nr: 10, opgave: 3, punten: 1, type: 'open',
-          needs_bijlage: true, bijlage_tekst: '⚠️ Open het tekstboekje — Tekst 3 + bijbehorende grafiek.',
-          context: 'Tekst 3',
-          vraag: 'Welke conclusie kun je trekken uit de grafiek in combinatie met de tekst?',
-          antwoord: 'De grafiek laat [trend/verband] zien; in combinatie met de tekst blijkt dat [conclusie]. Correcte interpretatie van zowel de grafiek als de tekst.',
-          antwoord_rubric: '1 punt: correcte conclusie die zowel grafiek als tekst betrekt.'
+          tekst_id: 't3', context: 'Tekst 3 (Bronnen 1–4)',
+          vraag: 'Welke conclusie kun je trekken uit de bronnen in combinatie met de tekst?',
+          antwoord: 'De bronnen laten zien dat [conclusie]. Correcte interpretatie van de bronnen in samenhang.',
+          antwoord_rubric: '1 punt: correcte conclusie die meerdere bronnen betrekt.'
         },
         {
           nr: 11, opgave: 3, punten: 2, type: 'open',
-          needs_bijlage: true, bijlage_tekst: '⚠️ Open het tekstboekje — Tekst 3.',
-          context: 'Tekst 3',
-          vraag: 'De auteur gebruikt in alinea 4 een redenering. Schrijf deze redenering schematisch op als: stelling → argument → conclusie.',
-          antwoord: 'Stelling: [kern bewering]. Argument: [onderbouwing]. Conclusie: [gevolgtrekking]. Correcte weergave van de drie-staps-redenering uit de tekst.',
+          tekst_id: 't3', context: 'Tekst 3 (Bron 1)',
+          vraag: 'De auteur van Bron 1 gebruikt in alinea 9 een redenering. Schrijf deze redenering schematisch op als: stelling → argument → conclusie.',
+          antwoord: 'Stelling: het Ruimteverdrag is verouderd. Argument: stamt uit de jaren zestig, niet bedacht op commerciële exploitatie. Conclusie: betere regelgeving is nodig.',
           antwoord_rubric: '1 punt: stelling en argument correct. 1 punt: conclusie correct.'
         },
         {
           nr: 12, opgave: 3, punten: 2, type: 'open',
-          needs_bijlage: true, bijlage_tekst: '⚠️ Open het tekstboekje — Tekst 3.',
-          context: 'Tekst 3',
-          vraag: 'Noem twee bezwaren die de auteur noemt tegen de maatregel die in de tekst wordt besproken. Gebruik je eigen woorden.',
-          antwoord: 'Bezwaar 1: [uit tekst, eigen woorden]. Bezwaar 2: [uit tekst, eigen woorden]. Zie correctievoorschrift voor de specifieke bezwaren per tekst.',
+          tekst_id: 't3', context: 'Tekst 3 (Bronnen 1 & 4)',
+          vraag: 'Noem twee bezwaren die de auteurs noemen tegen de huidige situatie in de ruimtevaart. Gebruik je eigen woorden.',
+          antwoord: 'Bezwaar 1: commerciële partijen exploiteren de ruimte zonder adequate regelgeving. Bezwaar 2: landen die niet meedoen aan ruimtemijnbouw lopen rijkdommen mis, wat onrechtvaardig is.',
           antwoord_rubric: '1 punt per correct bezwaar in eigen woorden (max 2).'
         },
 
         // ── OPGAVE 4: Samenvatting ────────────────────────────────────────
         {
           nr: 13, opgave: 4, punten: 8, type: 'open',
-          needs_bijlage: true, bijlage_tekst: '⚠️ Open het tekstboekje — Tekst 4 (samenvatting).',
+          needs_bijlage: true, bijlage_tekst: '⚠️ Raadpleeg het tekstboekje voor tekst 4.',
           context: 'Tekst 4 — Samenvatting\n\nSchrijf een samenvatting van tekst 4. De samenvatting moet:\n• Kernpunten bevatten (geen details of voorbeelden)\n• Geschreven zijn in eigen woorden\n• Logisch geordend zijn\n• Maximaal 150 woorden bevatten',
           vraag: 'Schrijf een samenvatting van tekst 4 in maximaal 150 woorden.',
           antwoord: 'Een goede samenvatting bevat de volgende kernpunten:\n1. [Kernpunt 1 — opening/aanleiding]\n2. [Kernpunt 2 — hoofdargument]\n3. [Kernpunt 3 — gevolgen]\n4. [Kernpunt 4 — conclusie/oplossing]\n\nSamenvatting is in eigen woorden, bevat geen onnodige details, is logisch gestructureerd en < 150 woorden.',
@@ -391,46 +478,46 @@ const EXAMENS = {
         // ── OPGAVE 5: Schrijfvaardigheid ──────────────────────────────────
         {
           nr: 14, opgave: 5, punten: 14, type: 'open',
-          needs_bijlage: true, bijlage_tekst: '⚠️ Open het tekstboekje — Tekst 5 (schrijfopdracht).',
-          context: 'Tekst 5 — Schrijfvaardigheid\n\nSchrijf een betoog van minimaal 300 woorden op basis van tekst 5. Gebruik de informatie uit tekst 5 als achtergrond. In je betoog:\n• Formuleer een duidelijke these (standpunt)\n• Onderbouw je standpunt met minimaal twee argumenten\n• Ga in op een tegenargument\n• Sluit af met een conclusie\n\nLet op taalverzorging: spelling, zinsbouw, woordgebruik en interpunctie tellen mee.',
+          needs_bijlage: true, bijlage_tekst: '⚠️ Raadpleeg het tekstboekje voor de schrijfopdracht.',
+          context: 'Schrijfvaardigheid\n\nSchrijf een betoog van minimaal 300 woorden. In je betoog:\n• Formuleer een duidelijke these (standpunt)\n• Onderbouw je standpunt met minimaal twee argumenten\n• Ga in op een tegenargument\n• Sluit af met een conclusie\n\nLet op taalverzorging: spelling, zinsbouw, woordgebruik en interpunctie tellen mee.',
           vraag: 'Schrijf het betoog.',
           antwoord: 'Betoog bevat: heldere these, minimaal 2 goede argumenten, weerlegging van tegenargument, sluitende conclusie. Taalverzorging: correct geschreven, variatie in zinsbouw, passend register.',
-          antwoord_rubric: '5 punten: inhoud en argumentatie (these, argumenten, tegenwerpingverwerking, conclusie). 5 punten: opbouw en structuur (inleiding/kern/slot, alinea-indeling, verbindingswoorden). 4 punten: taalverzorging (spelling, zinsbouw, woordkeuze, interpunctie).'
+          antwoord_rubric: '5 punten: inhoud en argumentatie. 5 punten: opbouw en structuur. 4 punten: taalverzorging.'
         },
 
-        // ── OPGAVE 6: Tekst 6 (beschouwend/column) ───────────────────────
+        // ── OPGAVE 6: Tekstvergelijking ───────────────────────────────────
         {
           nr: 15, opgave: 6, punten: 2, type: 'open',
-          needs_bijlage: true, bijlage_tekst: '⚠️ Open het tekstboekje — Tekst 6.',
-          context: 'Tekst 6',
+          needs_bijlage: true, bijlage_tekst: '⚠️ Raadpleeg het tekstboekje.',
+          context: 'Tekstanalyse',
           vraag: 'Leg uit welke visie de auteur heeft op het onderwerp dat in de tekst centraal staat. Hoe komt die visie tot uitdrukking in de tekst?',
-          antwoord: 'De auteur heeft een [positieve/kritische/genuanceerde] visie op [onderwerp]. Dit blijkt uit [taalgebruik/woordkeuze/argumenten/toon]. Zie correctievoorschrift.',
+          antwoord: 'De auteur heeft een [positieve/kritische/genuanceerde] visie op [onderwerp]. Dit blijkt uit [taalgebruik/woordkeuze/argumenten/toon].',
           antwoord_rubric: '1 punt: correcte omschrijving van de visie. 1 punt: correcte verwijzing naar hoe die visie zichtbaar is in de tekst.'
         },
         {
           nr: 16, opgave: 6, punten: 1, type: 'open',
-          needs_bijlage: true, bijlage_tekst: '⚠️ Open het tekstboekje — Tekst 6.',
-          context: 'Tekst 6',
+          needs_bijlage: true, bijlage_tekst: '⚠️ Raadpleeg het tekstboekje.',
+          context: 'Tekstanalyse',
           vraag: 'Voor welk publiek is deze tekst bedoeld? Noem twee kenmerken van de tekst die dat aantonen.',
-          antwoord: 'Doelgroep: [bijv. jongvolwassenen / brede lezer / geïnteresseerde lezer]. Kenmerken: 1. [bijv. register/toon/woordgebruik]. 2. [bijv. verwijzingen/voorbeelden].',
+          antwoord: 'Doelgroep: [bijv. jongvolwassenen / brede lezer]. Kenmerken: 1. [register/toon]. 2. [verwijzingen/voorbeelden].',
           antwoord_rubric: '1 punt: correct publiek met twee passende tekstkenmerken als onderbouwing.'
         },
         {
           nr: 17, opgave: 6, punten: 3, type: 'open',
-          needs_bijlage: true, bijlage_tekst: '⚠️ Open het tekstboekje — Tekst 6.',
-          context: 'Tekst 6',
-          vraag: 'Vergelijk de standpunten in tekst 5 en tekst 6 over hetzelfde thema. In hoeverre zijn ze het eens of oneens met elkaar?',
-          antwoord: 'Overeenkomst: beide auteurs vinden dat [gedeeld punt]. Verschil: auteur tekst 5 benadrukt [punt A], terwijl auteur tekst 6 [punt B]. Ze zijn het [eens / deels eens / oneens] over [kernpunt].',
+          needs_bijlage: true, bijlage_tekst: '⚠️ Raadpleeg het tekstboekje.',
+          context: 'Tekstvergelijking',
+          vraag: 'Vergelijk de standpunten in twee teksten over hetzelfde thema. In hoeverre zijn ze het eens of oneens met elkaar?',
+          antwoord: 'Overeenkomst: beide auteurs vinden dat [gedeeld punt]. Verschil: auteur A benadrukt [punt A], terwijl auteur B [punt B].',
           antwoord_rubric: '1 punt: correcte overeenkomst. 1 punt: correct verschil. 1 punt: juiste conclusie over mate van overeenstemming.'
         },
 
-        // ── OPGAVE 7: Tekst 7 (leesstrategieën / zakelijke tekst) ─────────
+        // ── OPGAVE 7: Tekstfuncties ───────────────────────────────────────
         {
           nr: 18, opgave: 7, punten: 2, type: 'open',
-          needs_bijlage: true, bijlage_tekst: '⚠️ Open het tekstboekje — Tekst 7.',
-          context: 'Tekst 7',
+          needs_bijlage: true, bijlage_tekst: '⚠️ Raadpleeg het tekstboekje.',
+          context: 'Tekstanalyse',
           vraag: 'Geef voor elk van de volgende alinea\'s de tekstfunctie: alinea 1, alinea 5 en de slotalinea.',
-          antwoord: 'Alinea 1: inleiding / probleemstelling. Alinea 5: uitwerking / voorbeeld. Slotalinea: conclusie / oproep / samenvatting. Zie correctievoorschrift.',
+          antwoord: 'Alinea 1: inleiding / probleemstelling. Alinea 5: uitwerking / voorbeeld. Slotalinea: conclusie / oproep / samenvatting.',
           antwoord_rubric: '1 punt: twee functies correct. 2 punten: alle drie functies correct.'
         }
 
@@ -441,7 +528,7 @@ const EXAMENS = {
   // ─────────────────────────────────────────────────────────
   //  ENGELS HAVO 2025 TIJDVAK 1
   //  Reading comprehension · 55 punten · 180 minuten
-  //  Bron: HA-0024-a-25-1-o · alle vragen verwijzen naar het tekstboekje
+  //  Bron: HA-0024-a-25-1-o
   // ─────────────────────────────────────────────────────────
   en: [
     {
@@ -455,163 +542,307 @@ const EXAMENS = {
       max_punten: 55,
       bron: 'HA-0024-a-25-1-o · alleexamens.nl',
       bijlagen: [
-        { type: 'tekstboekje', label: 'Tekstboekje', url: 'https://sxrjdssmgwwygtskovyc.supabase.co/storage/v1/object/public/examens/havo/en/2025/I/tekstboekje.pdf' },
         { type: 'antwoord', label: 'Correctievoorschrift', url: 'https://sxrjdssmgwwygtskovyc.supabase.co/storage/v1/object/public/examens/havo/en/2025/I/correctievoorschrift.pdf' }
+      ],
+      teksten: [
+        {
+          id: 't1', deel: null, nr: 1,
+          titel: 'London\'s first plastic-free takeaway business',
+          bron: 'standard.co.uk, 2021',
+          inhoud: `<p class="ex-al"><b class="ex-aln">1</b> Like so many of us, Anshu Ahuja used to get home from work on a Friday night, collapse in front of the television and order a takeaway. Every time, though, it would come with a hefty helping of guilt. 'It would arrive on a noisy scooter in a puff of smoke, packaged in a pile of plastic,' she says. 'The damage to the planet was so obvious.'</p>
+<p class="ex-al"><b class="ex-aln">2</b> During her childhood in Mumbai, the dabbawalas system delivered food by bicycle in reusable tiffin tins known as dabbas. 'I thought, there must be a way of taking this centuries-old system and using technology to modernise it for London,' she says. The result is DabbaDrop, London's first plastic-free and emissions-free takeaway service, which delivers South Asian food including dals and vibrant curries to Londoners in dabba tins, with sides such as ginger jam and roti packaged in compostable pots and paper bags.</p>
+<p class="ex-al"><b class="ex-aln">3</b> DabbaDrop works on a subscription basis, allowing customers the option to book one regularly changing menu each week. 'All our meals are cooked according to how many people we'll be feeding that week, which means nothing goes to waste,' says Anshu. 'We also try to use as much of the ingredients as possible, so if we're doing a pumpkin curry we'll include the skin, for example. Any waste we do have we compost.'</p>
+<p class="ex-al"><b class="ex-aln">4</b> The company uses its own fleet of cyclists, as well as low-impact delivery companies such as Ecofleet and Pedal Me. The DabbaDrop team has calculated that on average each of their mains has a 75 per cent lower carbon footprint than a standard Indian takeaway. The business has expanded rapidly from its east London origins, spreading to parts of north London and recently starting to deliver in south-east London, too. 'There's definitely a growing audience of people who want a delicious takeaway without feeling guilty,' says Anshu.</p>
+<div class="ex-tekst-bron-voet">adapted from standard.co.uk, 2021</div>`
+        },
+        {
+          id: 't2', deel: null, nr: 2,
+          titel: 'Tunnel vision: \'Mole Man\' home bags elite award',
+          bron: 'Hackney Citizen, 2021',
+          inhoud: `<p class="ex-al">A house that once had local planners tearing out their hair because of the owner's penchant for digging illegal underground tunnels has won Best Dwelling at this year's New London Architecture Awards.</p>
+<p class="ex-al">The late William Lyttle, nicknamed the Hackney Mole Man, spent 40 years hollowing out a network of tunnels that reached a depth of 26 feet and stretched out 65 feet in all directions.</p>
+<p class="ex-al">Lyttle was evicted in 2006, and the property has now been turned into a three-storey home and art studio. Judges praised architects Adjaye Associates for paying homage to the home's history with underground living areas.</p>
+<div class="ex-tekst-bron-voet">Hackney Citizen, 2021</div>`
+        },
+        {
+          id: 't3', deel: null, nr: 3,
+          titel: 'Charitable billionaires (letter to the editor)',
+          bron: 'i newspaper, 2019',
+          inhoud: `<p class="ex-al">Pascale Hughes's report on altruism (<em>i weekend</em>, 1 June) was excellent and balanced. It exposes the hypocrisy of the '1 per cent'. I remember writing a letter to another national newspaper in 2010 in response to the Giving Pledge announced by Bill Gates and Warren Buffet and a number of multibillionaires, asking them two simple questions: what is the hourly rate of workers in your company; and how much tax do you pay in the country where you make your profit?</p>
+<p class="ex-al">I am pleased to see that the article states the shameful fact that inequality widens in tandem with corporate profits. Simple changes to our tax system, such as financial transaction tax and enforcing regulations for tax collection more rigorously, would have an immediate impact.</p>
+<p class="ex-al"><em>Christina Kadir, Brighton, East Sussex</em></p>
+<div class="ex-tekst-bron-voet">i newspaper, 2019</div>
+<div class="ex-tekst-notities"><b>Note</b><br>the Giving Pledge = a campaign to encourage extremely wealthy people to give a major part of their wealth to charitable causes</div>`
+        },
+        {
+          id: 't4', deel: null, nr: 4,
+          titel: 'The rise of y\'all',
+          bron: 'Thomas Moore Devlin, babbel.com, 2019',
+          inhoud: `<p class="ex-al"><b class="ex-aln">1</b> Have y'all heard? "Y'all" is in the mainstream now. While historically associated with the southern United States, "y'all" is becoming a popular choice for people who want to address multiple people. The rise of "y'all" fills a lexical hole in English that's been around for a long time: the lack of a second-person plural pronoun.</p>
+<p class="ex-al"><b class="ex-aln">2</b> Whether you've embraced "y'all" or prefer a different way of referring to a group of people, it's worth knowing about the history of the second-person plural in English. It combines Old English, regional dialects, African American Vernacular English (AAVE) and gendered language all into a single story. So yes, "y'all" really has it all.</p>
+<p class="ex-al"><b class="ex-aln">3</b> Pronouns are a closed class of words. That means it is very, very rare for new pronouns to arise (compare that to open class words like verbs and nouns – new ones are added to our lexicon all the time). Creating a new second-person plural pronoun that everyone would use, then, is difficult. What's happened instead is that many different pronouns have appeared in various parts of the world.</p>
+<p class="ex-al"><b class="ex-aln">4</b> The two most popular second-person plural pronouns (at least in the United States) are "y'all" and "you guys". As of right now, "you guys" is a far more popular choice than "y'all," but it's facing a reckoning at the moment. There's disagreement as to whether "you guys" is a gendered term or not. On the one hand, at this point people refer to other people as "guys" no matter the gender. On the other, "guys" explicitly originated as a term referring to men, and so it joins a pattern of terms originally meaning "men" that are now used to refer to all people.</p>
+<p class="ex-al"><b class="ex-aln">5</b> The argument against "you guys" is still mainly made by the minority, and as far as language usage goes it can seem like a minor point. But as people make the argument for a more inclusive term, they turn to one other option: "y'all".</p>
+<p class="ex-al"><b class="ex-aln">6</b> There are quite a few reasons for the rise of "y'all" over the past decade. As we mentioned earlier, it's a gender-neutral option, and thus some linguists are advocating for its adoption by more people. Plus, the mainstream use of AAVE has become more and more common. Social media is also a major contributor here, breaking down geographic boundaries. This has allowed the word to flourish.</p>
+<p class="ex-al"><b class="ex-aln">7</b> "Y'all" has a long way to go before becoming part of Standard English, or even Standard American English, but it's not entirely far-fetched that it might. It's an incredibly versatile term – it can also be used to address a single person, or you can use "all y'all" to widen the scope of who you're talking to – and it's more concise than most of the other second-person plural pronouns mentioned before.</p>
+<p class="ex-al"><b class="ex-aln">8</b> If you've never used "y'all" before, give it a try. It might sound like you're doing an imitation of a southerner at first, but after a while it becomes natural. We won't tell you what to do with your life, but if y'all want to adopt a new way of addressing groups, don't overlook "y'all."</p>
+<div class="ex-tekst-bron-voet">babbel.com, 2019</div>
+<div class="ex-tekst-notities"><b>Note</b><br>AAVE = variety of English spoken by many African Americans in urban communities in the United States and Canada</div>`
+        },
+        {
+          id: 't5', deel: null, nr: 5,
+          titel: 'This Charming Man (roman fragment)',
+          bron: 'Marian Keyes',
+          inhoud: `<p class="ex-al"><em>Het volgende fragment komt uit een roman van Marian Keyes. In dit fragment gaan Grace en haar vriend Damien Stapleton op kraambezoek bij zijn zus Christine.</em></p>
+<p class="ex-al">Christine, tall and elegant and astonishingly svelte for a woman who had given birth only five weeks ago, came to welcome us. 'Come in, come in. Sorry, I'm just in myself, it's all a bit …' Richard should be home soon. Richard was Christine's husband. He had one of those mysterious jobs where he spent fourteen hours a day on the phone, making money. Damien and I joked privately that every day he was locked into his office and wasn't allowed to leave until he'd made another hundred million euro.</p>
+<p class="ex-al">We followed Christine into the enormous Colefax and Fowler kitchen, where a nervous-looking Polish girl was doing something at the microwave.</p>
+<p class="ex-al">'This is Marta,' Christine said. 'Our new nanny.'</p>
+<p class="ex-al">Marta nodded hello and promptly scarpered.</p>
+<p class="ex-al">'And this …' Christine gazed fondly into a bassinet, in which a tiny pink-skinned baby was asleep. '… is Maximillian.'</p>
+<p class="ex-al">(Yes, Christine and Richard had named their four children after emperors. I know it makes them sound like grandiose nutters, but they're not.)</p>
+<p class="ex-al">Damien and I stared politely at the sleeping child.</p>
+<p class="ex-al">'Okay, you can stop admiring him now.' Christine reached for a corkscrew. 'Wine?'</p>
+<p class="ex-al">'Yes. Can I do anything to help?'</p>
+<p class="ex-al">It was a fake question. No one could ever help Christine. She did everything so much better and faster than everyone else that there was no point. Anyway, I didn't want to help. I was at someone's else's house for my dinner, why would I want to do stuff I'd have to do at home?</p>
+<p class="ex-al">'All done,' Christine said. 'Did most of it last night. Just a few last-minute fiddly bits.'</p>
+<p class="ex-al">'What's with your trouser suit?' I asked her. 'How come you're looking so clean? You're not back at work already?'</p>
+<p class="ex-al">'Certainly not, I'm just popping in for a couple hours a day, to keep an eye on things.'</p>
+<p class="ex-al">Christine was so clever and accomplished that she no longer did much actual scrubbed-up, green-gowned, hands-on surgery stuff. Instead she was Head of Surgery at Dublin's most expensive hospital, the first woman to have ever held that post.</p>
+<p class="ex-al">'So where's Augustina?' I looked around.</p>
+<p class="ex-al">'At her Sanskrit lesson?' Damien asked.</p>
+<p class="ex-al">'Haha. Mandarin, actually.'</p>
+<p class="ex-al">It took me a moment to realize that Christine was serious.</p>
+<p class="ex-al">'We don't make her go,' Christine said, as I tried to hide my astonishment – well, actually distress, if I'm to be honest. 'She asked to go to lessons.'</p>
+<p class="ex-al">Too weird. What nine-year-old would ask to learn Mandarin?</p>
+<p class="ex-al">'And we keep an eye on her,' Christine said.</p>
+<p class="ex-al">'On her work-life balance?' Damien suggested.</p>
+<p class="ex-al">'If your tongue could get any further into your cheek…' Christine said. 'Anyway, cheers.' She held up her glass. 'It's lovely to see you both.'</p>
+<div class="ex-tekst-bron-voet">Marian Keyes, <em>This Charming Man</em></div>`
+        },
+        {
+          id: 't6', deel: null, nr: 6,
+          titel: 'The Matrix: is this really happening?',
+          bron: 'Brian Raftery, theguardian.com, 2021',
+          inhoud: `<p class="ex-al"><b class="ex-aln">1</b> It was early 1999, and people were freaking out about the future. A new millennium was on the way, carrying with it the promise – or threat – of massive change. Would the next century guide us toward a tech-enabled utopia? Or, as some feared, would it plunge the world into a full-on apocalypse? These were strange days, marked by equal parts anxiety and anticipation. Which made it the perfect moment for a sleek, cerebral movie called <em>The Matrix</em>.</p>
+<p class="ex-al"><b class="ex-aln">2</b> Created by a pair of mostly unknown filmmakers (Lana and Lilly Wachowski), and headlined by a commercially iffy star (Keanu Reeves), the $60m cyber-thriller became an instant hit. Some viewers were sucked in by the film's mind-melting storyline – about a hacker named Neo who discovers that mankind is enslaved in a computer-made simulation. Others were simply turned on by the film's whoa-inducing fight scenes. By the end of 1999, it was clear that <em>The Matrix</em> was The One: the first true digital-era blockbuster.</p>
+<p class="ex-al"><b class="ex-aln">3</b> The pop-cultural impact of the film was clear within months of its release. The Wachowskis had incorporated new digital effects that let characters freeze in mid-air, or dodge hails of gunfire, while cameras circled the action in a near-360-degree swirl. Not since 1977, when <em>Star Wars</em> was released, had a movie so quickly rebooted the look and feel of mainstream moviemaking.</p>
+<p class="ex-al"><b class="ex-aln">4</b> But these were all surface-level aftershocks. The deeper legacy of <em>The Matrix</em> wouldn't be revealed for years. A DVD release broke sales records at the time, allowing for multiple repeat viewings. But it was the internet that really let Matrix fans go down the rabbit hole.</p>
+<p class="ex-al"><b class="ex-aln">5</b> It was a tense, transformative period – one that was encapsulated by <em>The Matrix</em>. If you were suspicious of all this new technology, the film served as a cautionary tale about our devices overpowering our lives. But if you were already very online, <em>The Matrix</em> was proof that the internet was full of possibility.</p>
+<p class="ex-al"><b class="ex-aln">6</b> These were big ideas and they led to big conversations, many of which percolated online. Some of the questions moviegoers were asking at the time: "Are we being controlled by our computers?" "If The Matrix is real, what can you do about it?" The Wachowskis had made a film that seemed to speak directly to the internet, and the internet couldn't stop speaking back.</p>
+<p class="ex-al"><b class="ex-aln">7</b> Neo and his partner, Trinity, treat each other with a level of mutual respect that's rarely seen in male-female big-screen relationships, even to this day. And they work alongside a multi-gender, multi-racial team of rebels. Despite its grim shoot-'em-up scenes and killer machines, <em>The Matrix</em> is a deeply hopeful film: one that pushes the value of caring for one another.</p>
+<p class="ex-al"><b class="ex-aln">8</b> Still, the ultimate sign of <em>The Matrix</em>'s ongoing importance is the fact that, more than two decades after its release, it's becoming harder to tell if we're living with <em>The Matrix</em>, or within it. The internet has become so overloaded, it's now possible for everyone to generate their own immersive reality.</p>
+<p class="ex-al"><b class="ex-aln">9</b> It's a grim situation, one that undercuts the message of hope that was hardwired into <em>The Matrix</em>. But no matter where Neo and Trinity go next, the message of the original landmark film will continue to ring truer than ever: we're all increasingly stuck in our own versions of The Matrix – but we still have the power to rage against the machines and free ourselves.</p>
+<div class="ex-tekst-bron-voet">theguardian.com, 2021</div>`
+        },
+        {
+          id: 't7', deel: null, nr: 7,
+          titel: 'Hydroelectric dams and big cats',
+          bron: 'Tara Pirie, theconversation.com, 2021',
+          inhoud: `<p class="ex-al"><b class="ex-aln">1</b> Big cats are among the most widespread top predators on Earth. As with many large carnivores, big cats are under threat from habitat loss, which leaves them with less to eat. Their spread-out populations and slow reproductive rates make them particularly vulnerable. Forest loss also contributes to climate change, and hydroelectricity, which is being developed worldwide as an alternative energy source to fossil fuels, is a big cause of deforestation.</p>
+<p class="ex-al"><b class="ex-aln">2</b> Building hydroelectric dams has caused extinctions and spread diseases in rivers globally, but the threat to ecosystems on land has largely been overlooked. In a recent study, researchers found 164 dams that already intersect the jaguar range and 421 dams that do the same for tigers.</p>
+<p class="ex-al"><b class="ex-aln">3</b> Large expanses of land are flooded to create reservoirs when building hydroelectric plants in low-lying, relatively flat areas. Although tigers and jaguars can and do swim, they mainly hunt species such as deer that live on land. Sites chosen for dams typically incorporate floodplains and areas along rivers that are important for both species, since they tend to contain lots of prey. The flooded area will force both predators and prey into surrounding areas. If it cannot adapt, the predators may be forced further afield in search of food.</p>
+<p class="ex-al"><b class="ex-aln">4</b> In addition, additional hydroelectric dams can increase the presence of people in remote areas. Roads built to access new dam sites consequently open up areas that were previously impenetrable. Roads can be a barrier to some species and kill those that try to cross. So any new dams, especially in conservation areas or areas where top predators prowl, should be avoided.</p>
+<p class="ex-al"><b class="ex-aln">5</b> One way to mitigate the damage from building new hydroelectric plants may be to do it on slopes outside of areas that are crucial for conserving tigers and jaguars. Alternative sources of energy are important for a sustainable future, but their benefits should not come at a substantial cost to species already under threat.</p>
+<div class="ex-tekst-bron-voet">theconversation.com, 2021</div>`
+        },
+        {
+          id: 't8', deel: null, nr: 8,
+          titel: 'Therapist to the super-rich',
+          bron: 'Clay Cockrell, theguardian.com, 2021',
+          inhoud: `<p class="ex-al"><b class="ex-aln">1</b> If I had a dollar for every time I've heard the term "first world problems", my bank account would look similar to those of my clients. I work as a psychotherapist and my specialism is ultra-high net worth individuals. Over the years, I have developed a great deal of empathy for those who have far too much.</p>
+<p class="ex-al"><b class="ex-aln">2</b> What could possibly be challenging about being a billionaire, you might ask. Well, what would it be like if you couldn't trust those close to you? Or if you looked at any new person in your life with deep suspicion? I hear this from my clients all the time: "What do they want from me?"; or "How are they going to manipulate me?"; or "They are probably only friends with me because of my money."</p>
+<p class="ex-al"><b class="ex-aln">3</b> Then there are the struggles with purpose – the depression that sets in when you feel like you have no reason to get out of bed. Why bother going to work when the business you have built or inherited runs itself without you now? If all your necessities and much more were covered for the rest of your life – you might struggle with a lack of meaning and ambition too.</p>
+<p class="ex-al"><b class="ex-aln">4</b> Most of the people I see are much more willing to talk about their sex lives or substance-misuse problems than their bank accounts. Money is seen as dirty and secret. Money is wrapped up in guilt, shame, and fear. There is a perception that money can immunise you against mental-health problems when actually, I believe that wealth can make you much more susceptible to them.</p>
+<p class="ex-al"><b class="ex-aln">5</b> I see family situations like those in <em>Succession</em> all the time. Too many of my clients want to indulge their children so "they never have to suffer what I had to suffer" while growing up. But the result is that they prevent their children from experiencing the very things that made them successful: sacrifice, hard work, overcoming failure and developing resilience.</p>
+<p class="ex-al"><b class="ex-aln">6</b> <em>Succession</em> is built on the idea of a group of wealthy children vying for who will take the mantle from their father – none of them are able to convince him that they can do it. The wealthy parents I see, often because of their own guilt and shame, are not preparing their children for the challenges of managing their wealth.</p>
+<p class="ex-al"><b class="ex-aln">7</b> I was raised in a small town in rural Kentucky, solidly in the middle class. And it can be very difficult to watch these individuals struggle with the toxicity of excess, isolation and deep mistrust.</p>
+<div class="ex-tekst-bron-voet">adapted from theguardian.com, 2021</div>
+<div class="ex-tekst-notities"><b>Note</b><br>Succession = an American drama series revolving around the fictional Roy family, owners of a global media company</div>`
+        },
+        {
+          id: 't9', deel: null, nr: 9,
+          titel: 'Granta scoops Buckingham\'s new book',
+          bron: 'Heloise Wood, thebookseller.com, 2019',
+          inhoud: `<p class="ex-al"><b class="ex-aln">1</b> Granta Books will publish "a powerful antidote to our atomised world" from author and academic Will Buckingham: <em>Hello, Stranger</em>.</p>
+<p class="ex-al"><b class="ex-aln">2</b> Anne Meadows, senior commissioning editor at Granta, acquired world English language rights from Emma Finn at C&W Agency. <em>Hello, Stranger</em> is billed as "an exploration of how welcoming strangers into our homes and our cities might improve our lives and change the world."</p>
+<p class="ex-al"><b class="ex-aln">3</b> <em>Hello, Stranger</em> explores how different cultures – from governors in Ancient Rome to festival goers in the outer islands of Indonesia – welcome strangers as guests, enemies and migrants. The book explores "how opening our doors could cure the loneliness epidemic, alleviate the migrant crisis and enrich us all."</p>
+<p class="ex-al"><b class="ex-aln">4</b> Buckingham is the author of several books and has a PhD in philosophy and an MA in social anthropology, and lectures at The Parami Institute in Myanmar.</p>
+<p class="ex-al"><b class="ex-aln">5</b> "Hello, Stranger not only made me feel wiser, and fascinated me with its brilliant stories, it made me want to be a better, warmer, kinder, more welcoming person," Meadows said.</p>
+<div class="ex-tekst-bron-voet">thebookseller.com, 2019</div>`
+        },
+        {
+          id: 't10', deel: null, nr: 10,
+          titel: 'Rewatching classic films',
+          bron: 'Andrew Miller, The Economist, July 2023',
+          inhoud: `<p class="ex-al"><b class="ex-aln">1</b> Risky business, re-watching old movies. You may decide that a film you loved in your youth is dross – and that your youthful self was a dolt. Worse, it might seem offensive, which all those years ago you failed to notice.</p>
+<p class="ex-al"><b class="ex-aln">2</b> Happily, that wasn't my experience with "Raiders of the Lost Ark". "Indiana Jones and the Dial of Destiny", the finale of the franchise, is released this week, and "Raiders" remains a great, great movie: a stunt and gag a minute, a hero brilliantly conceived from whip to theme-tune, and a star, Harrison Ford, in his rugged pomp.</p>
+<p class="ex-al"><b class="ex-aln">3</b> Besides regret and affection, reconsidering classics can surprise you. The optimism of the original "Top Gun" contrasts tellingly with the nostalgia of its sequel. Today the avoidable calamity in "Titanic" feels to me like a parable of climate change. Dive into early James Bond and you realise how much he has evolved; radically recasting 007 might only be in character. Beneath its screwball antics, "Some Like it Hot", my favourite film, now seems way ahead of its time.</p>
+<div class="ex-tekst-bron-voet">The Economist, July 2023</div>`
+        },
+        {
+          id: 't11', deel: null, nr: 11,
+          titel: 'Trick or Eat',
+          bron: 'Jamie Ducharme, Time, 2017',
+          inhoud: `<p class="ex-al"><b class="ex-aln">1</b> For people who typically hoard Halloween candy past Thanksgiving, here's some surprising advice: some dentists actually condone eating the candy all at once, rather than rationing it out over weeks.</p>
+<p class="ex-al"><b class="ex-aln">2</b> After you eat sweets, bacteria feed on the sugars and starches left on your teeth and form plaque. Eventually, the acid in plaque begins to wear away at the enamel coating your teeth, forming tiny holes, also known as cavities, that grow larger and larger over time.</p>
+<p class="ex-al"><b class="ex-aln">3</b> Anna Berik, a dentist in Newton, Massachusetts, says it doesn't really matter, at least from a cavity-forming perspective, how much you eat at a time. "At some point, there's a threshold where the bacteria can't really work any harder. They can only make the acid so fast," she says. For that reason, feasting on sweets, then brushing your teeth right after, is actually less cavity-causing than spreading that candy out over the next three months.</p>
+<p class="ex-al"><b class="ex-aln">4</b> Chris Kammer, a dentist in Madison, Wisconsin, also favors the one-and-done approach, so much so, in fact, that he started a Halloween candy buyback program, with the goal of preventing kids from dipping into their trick-or-treating bag over and over again. Kammer encourages kids to select a few favorite pieces of candy, then bring the rest of their haul to one of his 2,400 buyback sites around the country.</p>
+<div class="ex-tekst-bron-voet">adapted from Time, 2017</div>`
+        },
+        {
+          id: 't12', deel: null, nr: 12,
+          titel: 'Football match? We can predict the outcome!',
+          bron: 'Taha Yasseri, theconversation.com, 2021',
+          inhoud: `<p class="ex-al">The legendary German goalkeeper Manuel Neuer once said: "You can plan, but what happens on a football field cannot be predicted." This sentiment goes a long way to explaining why football is the most popular sport worldwide. Anything can happen on the field, and the more surprising the outcome of a match, the more memorable it will be. But our new study suggests the results of football matches are becoming more predictable.</p>
+<div class="ex-tekst-notities"><b>Data comparison</b></div>
+<p class="ex-al">We developed a computer model to predict the results of football matches based on data from almost 88,000 matches played over 26 years (1993–2019) across 11 major European leagues. Our model tried to predict whether the home or away team would win by looking at their performance in a certain number of previous matches. Even so, our model predicted the results correctly roughly 75% of the time.</p>
+<div class="ex-tekst-notities"><b>Increasingly correct</b></div>
+<p class="ex-al">We found it has become progressively easier to predict the results of football matches over the years. For instance, our model could correctly predict the winner of a Bundesliga match in 60% of matches in 1993, whereas its performance was as high as 80% in 2019. Finding that football results have become more predictable initially surprised us.</p>
+<div class="ex-tekst-notities"><b>A widening divide</b></div>
+<p class="ex-al">When we looked at teams in the same league in a given season, we observed that in more recent years, the points have been distributed among teams much less evenly: overall the stronger teams have become more successful, while the weaker teams have become less successful. This echoes the notion that "the rich get richer and the poor get poorer".</p>
+<div class="ex-tekst-notities"><b>Home-field advantage</b></div>
+<p class="ex-al">One other trend: we observed an initial home-field advantage of 30% in the early 1990s – which means on average a team playing at home was 30% more likely to win. The home-field advantage has gradually shrunk to only 15% during the most recent seasons.</p>
+<div class="ex-tekst-notities"><b>The strong are getting stronger</b></div>
+<p class="ex-al">So there's less and less chance for the weaker teams to benefit from playing at home. Transportation and training have significantly improved over the past few years, minimising the logistical challenges of playing away. Our findings highlight the need for stronger regulations around club incomes, expenditures and player salaries. A game that's easy to predict is not one that will necessarily keep bringing crowds to the stadiums.</p>
+<div class="ex-tekst-bron-voet">adapted from theconversation.com, 2021</div>`
+        }
       ],
       vragen: [
 
-        // ── TEXT 1 ────────────────────────────────────────────────────────
+        // ── TEXT 1 — DabbaDrop ───────────────────────────────────────────
         {
           nr: 1, opgave: 1, punten: 2, type: 'open',
-          needs_bijlage: true, bijlage_tekst: '⚠️ Open the text booklet — Text 1.',
-          context: 'Text 1',
+          tekst_id: 't1', context: 'Text 1',
           vraag: 'What is the main purpose of this text? Support your answer with one example from the text.',
-          antwoord: 'The main purpose is to [inform / persuade / entertain / advise] the reader. Example from text: [direct quote or paraphrase]. See the answer key for the specific purpose.',
+          antwoord: 'The main purpose is to inform / inspire the reader about DabbaDrop, a plastic-free and emissions-free takeaway service. Example: the statistic about 75% lower carbon footprint.',
           antwoord_rubric: '1 punt: correct main purpose. 1 punt: relevant supporting example from the text.'
         },
         {
           nr: 2, opgave: 1, punten: 1, type: 'open',
-          needs_bijlage: true, bijlage_tekst: '⚠️ Open the text booklet — Text 1.',
-          context: 'Text 1',
-          vraag: 'In paragraph 2, the author uses the phrase "a double-edged sword". Explain what the author means by using this phrase in the context of the text.',
-          antwoord: 'The phrase means that [topic] has both positive and negative consequences / can be beneficial and harmful at the same time. In context: [specific explanation relevant to text content].',
-          antwoord_rubric: '1 punt: correct explanation of the phrase in the context of the text.'
+          tekst_id: 't1', context: 'Text 1',
+          vraag: 'Explain in your own words how DabbaDrop minimises food waste. Use details from the text.',
+          antwoord: 'DabbaDrop cooks meals according to how many people will be fed that week, so nothing is wasted. They also use all parts of ingredients (e.g. pumpkin skin) and compost any remaining waste.',
+          antwoord_rubric: '1 punt: correct explanation including at least two specific details from the text.'
         },
         {
           nr: 3, opgave: 1, punten: 2, type: 'open',
-          needs_bijlage: true, bijlage_tekst: '⚠️ Open the text booklet — Text 1.',
-          context: 'Text 1',
-          vraag: 'According to the author, what are two consequences of the development described in paragraph 3? Use your own words.',
-          antwoord: 'Consequence 1: [from text, own words]. Consequence 2: [from text, own words]. See answer key for specific consequences.',
-          antwoord_rubric: '1 punt per consequence correctly described in own words (max 2).'
+          tekst_id: 't1', context: 'Text 1',
+          vraag: 'According to the text, what inspired Anshu Ahuja to start DabbaDrop? Use your own words.',
+          antwoord: 'Anshu was inspired by the dabbawalas system she knew from her childhood in Mumbai, which delivered food by bicycle in reusable tins. She wanted to modernise this centuries-old system for London.',
+          antwoord_rubric: '1 punt per correct element (inspiration + modernisation) in own words (max 2).'
         },
         {
           nr: 4, opgave: 1, punten: 1, type: 'open',
-          needs_bijlage: true, bijlage_tekst: '⚠️ Open the text booklet — Text 1.',
-          context: 'Text 1',
+          tekst_id: 't1', context: 'Text 1',
           vraag: 'How does the final paragraph relate to the rest of the text? Explain the function of the final paragraph.',
-          antwoord: 'The final paragraph [summarises / draws a conclusion / gives a recommendation / returns to the opening idea]. It functions as [conclusion / call to action / summary].',
+          antwoord: 'The final paragraph shows the business is growing and concludes by noting there is a growing audience for sustainable takeaways. It functions as a conclusion / confirmation of success.',
           antwoord_rubric: '1 punt: correct explanation of the function/relation of the final paragraph.'
         },
 
-        // ── TEXT 2 ────────────────────────────────────────────────────────
+        // ── TEXT 2 — Mole Man ────────────────────────────────────────────
         {
           nr: 5, opgave: 2, punten: 2, type: 'open',
-          needs_bijlage: true, bijlage_tekst: '⚠️ Open the text booklet — Text 2.',
-          context: 'Text 2',
+          tekst_id: 't2', context: 'Text 2',
           vraag: 'The title of text 2 is a play on words. Explain the double meaning of the title.',
-          antwoord: 'The title literally means [meaning 1] but in the context of the text it also refers to [meaning 2]. This creates [irony / wordplay / humour].',
-          antwoord_rubric: '1 punt: first meaning correct. 1 punt: second meaning / wordplay correctly explained.'
+          antwoord: '"Tunnel vision" literally refers to the tunnels dug by William Lyttle. It also means a narrow or obsessive focus — which describes Lyttle\'s 40-year obsession with digging.',
+          antwoord_rubric: '1 punt: first meaning (literal tunnels) correct. 1 punt: second meaning (obsessive focus) correctly explained.'
         },
         {
           nr: 6, opgave: 2, punten: 2, type: 'open',
-          needs_bijlage: true, bijlage_tekst: '⚠️ Open the text booklet — Text 2.',
-          context: 'Text 2',
-          vraag: 'In paragraph 4, the author presents a counterargument. What is this counterargument, and how does the author respond to it? Use your own words.',
-          antwoord: 'Counterargument: [from text, own words]. Author\'s response/refutation: [from text, own words]. The author [dismisses / acknowledges but counters / partially accepts] the counterargument.',
-          antwoord_rubric: '1 punt: counterargument correctly identified in own words. 1 punt: author\'s response correctly described.'
+          tekst_id: 't2', context: 'Text 2',
+          vraag: 'What does this text say about how the architects dealt with the history of the building? Use your own words.',
+          antwoord: 'Architects Adjaye Associates paid tribute to the building\'s unusual history by incorporating underground living areas into the new design, rather than ignoring or erasing the past.',
+          antwoord_rubric: '1 punt: mention of underground living areas. 1 punt: correct description of paying homage to history.'
         },
         {
           nr: 7, opgave: 2, punten: 1, type: 'open',
-          needs_bijlage: true, bijlage_tekst: '⚠️ Open the text booklet — Text 2.',
-          context: 'Text 2',
+          tekst_id: 't2', context: 'Text 2',
           vraag: 'What is the tone of text 2? Choose one: formal, informal, ironic, neutral. Justify your answer with a phrase from the text.',
-          antwoord: 'Tone: [formal / informal / ironic / neutral]. Justification: [quote from text that demonstrates the tone]. See answer key.',
+          antwoord: 'Tone: neutral / informative. Justification: the text uses factual language, e.g. measurements ("26 feet", "65 feet"), without editorial comment.',
           antwoord_rubric: '1 punt: correct tone with appropriate justification from the text.'
         },
         {
           nr: 8, opgave: 2, punten: 2, type: 'open',
-          needs_bijlage: true, bijlage_tekst: '⚠️ Open the text booklet — Text 2.',
-          context: 'Text 2',
-          vraag: 'According to text 2, what are the writer\'s two main arguments in favour of the position stated in the opening paragraph?',
-          antwoord: 'Argument 1: [from text, own words]. Argument 2: [from text, own words]. See answer key for the specific arguments.',
-          antwoord_rubric: '1 punt per correct argument in own words (max 2).'
+          tekst_id: 't2', context: 'Text 2',
+          vraag: 'Why does the text describe the tunnelling as "illegal" and what happened as a result? Use your own words.',
+          antwoord: 'The tunnels were dug without permission (illegally), which caused problems for local planners. As a result, Lyttle was evicted from the property in 2006.',
+          antwoord_rubric: '1 punt: correct reason (no permission/illegal). 1 punt: correct consequence (eviction in 2006).'
         },
 
-        // ── TEXT 3 ────────────────────────────────────────────────────────
+        // ── TEXT 3 — Charitable billionaires ────────────────────────────
         {
           nr: 9, opgave: 3, punten: 1, type: 'open',
-          needs_bijlage: true, bijlage_tekst: '⚠️ Open the text booklet — Text 3.',
-          context: 'Text 3',
-          vraag: 'What type of text is text 3? Choose from: news article, opinion piece, scientific report, advertisement. Explain your choice.',
-          antwoord: '[Text type] — because [features: layout, language, purpose, audience]. See answer key.',
-          antwoord_rubric: '1 punt: correct text type with valid explanation referencing text features.'
+          tekst_id: 't3', context: 'Text 3',
+          vraag: 'What type of text is text 3? Choose from: news article, opinion piece (letter), scientific report, advertisement. Explain your choice.',
+          antwoord: 'Text 3 is a letter to the editor / opinion piece. It is written in first person by a named individual, expresses a personal opinion, and is a response to an article.',
+          antwoord_rubric: '1 punt: correct text type (letter / opinion piece) with valid explanation referencing text features.'
         },
         {
           nr: 10, opgave: 3, punten: 2, type: 'open',
-          needs_bijlage: true, bijlage_tekst: '⚠️ Open the text booklet — Text 3.',
-          context: 'Text 3',
-          vraag: 'Paragraph 2 contains a statistic. Explain how the author uses this statistic and what effect it has on the reader.',
-          antwoord: 'The statistic [from text] is used to [support the argument / illustrate the scale of the problem / persuade the reader]. The effect is that [it makes the argument more credible / shocking / concrete].',
-          antwoord_rubric: '1 punt: correct explanation of how the statistic is used. 1 punt: correct effect on the reader.'
+          tekst_id: 't3', context: 'Text 3',
+          vraag: 'What does the writer mean by "the hypocrisy of the 1 per cent"? Explain in your own words.',
+          antwoord: 'The writer means that very wealthy people claim to be generous through pledges like the Giving Pledge, but at the same time they pay low wages and avoid paying taxes in countries where they make their profits.',
+          antwoord_rubric: '1 punt: reference to low wages or tax avoidance. 1 punt: connection to hypocrisy of claiming generosity while doing so.'
         },
         {
           nr: 11, opgave: 3, punten: 2, type: 'open',
-          needs_bijlage: true, bijlage_tekst: '⚠️ Open the text booklet — Text 3.',
-          context: 'Text 3',
-          vraag: 'The heading "Is this the future we want?" is a rhetorical question. What effect does this have, and why has the author chosen to use this as a heading?',
-          antwoord: 'A rhetorical question does not require an answer — it is used to [make the reader think / involve the reader / make a point without stating it directly]. The author uses it to [invite reflection / suggest the answer is obvious / provoke a reaction].',
-          antwoord_rubric: '1 punt: correct effect of rhetorical question. 1 punt: correct reason why author chose this heading.'
+          tekst_id: 't3', context: 'Text 3',
+          vraag: 'What solutions does the writer suggest to reduce inequality? Use your own words.',
+          antwoord: 'The writer suggests introducing a financial transaction tax and enforcing tax collection regulations more strictly / rigorously.',
+          antwoord_rubric: '1 punt per correct solution in own words (max 2).'
         },
         {
           nr: 12, opgave: 3, punten: 1, type: 'open',
-          needs_bijlage: true, bijlage_tekst: '⚠️ Open the text booklet — Text 3.',
-          context: 'Text 3',
-          vraag: 'What does the word "nevertheless" in paragraph 5 signal? What is the relationship between the sentence containing "nevertheless" and the sentence before it?',
-          antwoord: '"Nevertheless" signals a contrast / concession. The sentence before it states [point A], while "nevertheless" introduces [point B] which contradicts or complicates it.',
-          antwoord_rubric: '1 punt: correct explanation of the contrast/concessive relationship signalled by "nevertheless".'
+          tekst_id: 't3', context: 'Text 3',
+          vraag: 'What does the word "rigorously" (final paragraph) mean in this context?',
+          antwoord: '"Rigorously" means strictly / thoroughly / in a careful and thorough way.',
+          antwoord_rubric: '1 punt: correct meaning of "rigorously" in context.'
         },
 
-        // ── TEXT 4 ────────────────────────────────────────────────────────
+        // ── TEXT 4 — Y\'all ──────────────────────────────────────────────
         {
           nr: 13, opgave: 4, punten: 2, type: 'open',
-          needs_bijlage: true, bijlage_tekst: '⚠️ Open the text booklet — Text 4.',
-          context: 'Text 4',
-          vraag: 'Summarise the viewpoint of the expert quoted in paragraph 3. Use your own words. (max. 40 words)',
-          antwoord: 'The expert argues that [main point in own words]. He/she believes this because [reasoning]. See answer key for specific content.',
-          antwoord_rubric: '1 punt: viewpoint correctly summarised. 1 punt: in own words, not a direct copy of the text.'
+          tekst_id: 't4', context: 'Text 4',
+          vraag: 'What lexical gap does "y\'all" fill in English, according to the author? Use your own words.',
+          antwoord: 'English lacks a second-person plural pronoun — a word used to address more than one person at the same time (like "vous" in French or "ihr" in German). "Y\'all" fills this gap.',
+          antwoord_rubric: '1 punt: correct identification of the gap (no second-person plural). 1 punt: explanation in own words.'
         },
         {
           nr: 14, opgave: 4, punten: 2, type: 'open',
-          needs_bijlage: true, bijlage_tekst: '⚠️ Open the text booklet — Text 4.',
-          context: 'Text 4',
-          vraag: 'Compare the approach described in paragraph 2 with the approach described in paragraph 5. What is the key difference?',
-          antwoord: 'Approach in §2: [description]. Approach in §5: [description]. Key difference: [how they differ in method / focus / goal].',
-          antwoord_rubric: '1 punt: both approaches correctly described. 1 punt: key difference correctly identified.'
+          tekst_id: 't4', context: 'Text 4',
+          vraag: 'What is the problem with "you guys" according to some people? Use your own words.',
+          antwoord: 'Some people argue that "you guys" is a gendered term because "guys" originally referred to men. Using it for all people perpetuates a pattern where terms for "men" become generic.',
+          antwoord_rubric: '1 punt: mention of gendered origin. 1 punt: explanation of the inclusivity problem.'
         },
         {
           nr: 15, opgave: 4, punten: 1, type: 'open',
-          needs_bijlage: true, bijlage_tekst: '⚠️ Open the text booklet — Text 4.',
-          context: 'Text 4',
-          vraag: 'Find a word or phrase in paragraph 4 that means the same as "to make something worse". Write down the word or phrase.',
-          antwoord: '[Word/phrase from text — see answer key for exact word]. Synonyms such as "to aggravate", "to exacerbate", "to worsen" etc.',
-          antwoord_rubric: '1 punt: correct word or phrase from the text.'
+          tekst_id: 't4', context: 'Text 4',
+          vraag: 'Find a word in paragraph 3 that means "vocabulary / the words available to a language user".',
+          antwoord: '"lexicon"',
+          antwoord_rubric: '1 punt: "lexicon" (exact word from paragraph 3).'
         },
         {
           nr: 16, opgave: 4, punten: 2, type: 'open',
-          needs_bijlage: true, bijlage_tekst: '⚠️ Open the text booklet — Text 4.',
-          context: 'Text 4',
-          vraag: 'Do you think the title of text 4 is a good choice? Explain why or why not, with reference to the content of the text.',
-          antwoord: 'Yes/no + explanation with reference to the content. Both positions are acceptable if well justified. The title should [reflect main idea / capture attention / be relevant to content].',
-          antwoord_rubric: '1 punt: clear position (yes/no). 1 punt: justified with reference to text content.'
+          tekst_id: 't4', context: 'Text 4',
+          vraag: 'According to the author, why is social media important for the spread of "y\'all"? Use your own words.',
+          antwoord: 'Social media breaks down geographic boundaries, allowing words used in one region to spread to other parts of the world. This has helped "y\'all", traditionally associated with the American South, become more widely used.',
+          antwoord_rubric: '1 punt: breaking down geographic boundaries. 1 punt: consequence for spread of "y\'all".'
         },
 
-        // ── TEXT 5 ────────────────────────────────────────────────────────
+        // ── TEXT 5 — This Charming Man ───────────────────────────────────
         {
           nr: 17, opgave: 5, punten: 2, type: 'open',
-          needs_bijlage: true, bijlage_tekst: '⚠️ Open the text booklet — Text 5.',
-          context: 'Text 5',
-          vraag: 'The author of text 5 uses several examples to illustrate the main argument. Choose one example and explain why the author uses it.',
-          antwoord: 'Example: [from text]. The author uses this to [illustrate / make concrete / appeal to the reader\'s experience / provide evidence]. It strengthens the argument because [reason].',
-          antwoord_rubric: '1 punt: relevant example correctly identified. 1 punt: clear explanation of why the author uses it.'
+          tekst_id: 't5', context: 'Text 5',
+          vraag: 'What impression does the narrator have of Christine? Support your answer with details from the text.',
+          antwoord: 'The narrator sees Christine as extremely capable and accomplished. She has returned to work already, does everything "better and faster than everyone else", and is Head of Surgery at Dublin\'s most expensive hospital.',
+          antwoord_rubric: '1 punt: correct impression (capable/accomplished). 1 punt: two supporting details from text.'
         },
         {
           nr: 18, opgave: 5, punten: 3, type: 'open',
-          needs_bijlage: true, bijlage_tekst: '⚠️ Open the text booklet — Text 5.',
-          context: 'Text 5',
-          vraag: 'Compare texts 4 and 5 on the same topic. In what way do they agree, and in what way do they disagree? Use your own words.',
-          antwoord: 'Agreement: both texts argue that [shared point]. Disagreement: text 4 emphasises [point A], while text 5 focuses on [point B] / takes a different position on [aspect].',
-          antwoord_rubric: '1 punt: correct agreement (both texts). 1 punt: correct disagreement. 1 punt: answer in own words, clearly structured.'
+          tekst_id: 't5', context: 'Text 5',
+          vraag: 'What does the fragment reveal about the relationship between Grace (the narrator) and Damien? Use details from the text.',
+          antwoord: 'Grace and Damien appear to be close and comfortable together — they make private jokes about Richard, they attend family visits together, and Damien\'s sarcastic remark about Augustina\'s "work-life balance" suggests they share a sense of humour.',
+          antwoord_rubric: '1 punt: correct characterisation of relationship. 1 punt: relevant detail from text. 1 punt: clear explanation.'
         }
 
       ] // einde vragen

@@ -978,6 +978,23 @@ html.dark .qb{background:#2e3550}
 .ex-tb-ext{font-size:11px;color:rgba(255,255,255,.35);text-decoration:none;padding:3px 9px;border-radius:6px;border:1px solid rgba(255,255,255,.12);font-family:var(--font);transition:.15s;white-space:nowrap}
 .ex-tb-ext:hover{color:#fff;background:rgba(255,255,255,.09);border-color:rgba(255,255,255,.3)}
 .ex-tb-iframe{flex:1;border:none;width:100%;min-height:0;display:block}
+/* Inline tekst panel */
+.ex-tb-content{flex:1;overflow-y:auto;min-height:0;background:var(--bg);padding:20px 24px}
+.ex-tekst-wrapper{max-width:680px;margin:0 auto;padding-bottom:40px}
+.ex-tekst-header{margin-bottom:18px;padding-bottom:14px;border-bottom:1px solid var(--bo)}
+.ex-tekst-deel{font-size:10px;font-weight:800;color:var(--mu);text-transform:uppercase;letter-spacing:.8px;margin-bottom:4px}
+.ex-tekst-titel{font-size:17px;font-weight:800;color:var(--dk);margin:0 0 5px;line-height:1.35;font-family:var(--font-head)}
+.ex-tekst-body{color:var(--dk);line-height:1.75;font-size:14px}
+.ex-al{margin-bottom:13px;display:flex;gap:9px;align-items:flex-start}
+.ex-al p{margin:0}
+.ex-aln{display:inline-block;min-width:18px;font-size:10px;font-weight:700;color:#6366f1;background:rgba(99,102,241,.1);border-radius:4px;padding:2px 5px;line-height:1.5;flex-shrink:0;margin-top:3px;text-align:center}
+.ex-tekst-bron-voet{font-size:12px;color:var(--mu);margin-top:18px;padding-top:12px;border-top:1px solid var(--bo)}
+.ex-tekst-notities{font-size:11.5px;color:var(--mu);margin-top:12px;line-height:1.7;background:var(--s);border-radius:8px;padding:10px 13px}
+.ex-bron-hdr{font-size:11px;font-weight:800;color:#6366f1;text-transform:uppercase;letter-spacing:.7px;background:rgba(99,102,241,.07);border-left:3px solid #6366f1;padding:7px 12px;margin:22px 0 12px;border-radius:0 6px 6px 0}
+.ex-gedicht{font-size:14px;line-height:2;color:var(--dk);padding:8px 0}
+.ex-al-gedicht{margin:0 0 0 24px;padding:0;display:block}
+.ex-al-grijs{color:var(--mu);font-size:12px;font-style:italic;margin-bottom:10px;display:block}
+.ex-tb-placeholder{display:flex;align-items:center;justify-content:center;height:100%;color:var(--mu);font-size:13px;padding:24px;text-align:center;min-height:200px}
 .ex-q-col{flex:1;display:flex;flex-direction:column;overflow:hidden;min-width:0}
 #ex-quiz.split .ex-body{flex:1;overflow-y:auto;max-width:none;margin:0;padding-bottom:24px}
 #ex-quiz.split .ex-bot-nav{position:relative;left:auto;right:auto;bottom:auto;flex-shrink:0}
