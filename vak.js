@@ -45,20 +45,15 @@ function openVak(id,_noHash){
       :`<span style="display:inline-flex;align-items:center;gap:3px;font-size:10px;font-weight:700;padding:2px 7px;border-radius:20px;background:rgba(234,179,8,.1);border:1px solid rgba(234,179,8,.3);color:#ca8a04;letter-spacing:.2px;vertical-align:middle" title="Huidig CE-programma geldt v.a. ${_svVanaf} (bron: examenblad.nl). Dit examen kan stof bevatten die niet meer in het syllabus staat, of nieuwe stof missen.">⚠ Ander syllabus (v.a. ${_svVanaf})</span>`;
     let _ch=`<div class="ce-archief-card" style="margin-top:16px;border-radius:16px;overflow:hidden;border:1.5px solid rgba(var(--or-rgb),.4);background:linear-gradient(135deg,rgba(var(--or-rgb),.08),rgba(var(--or-rgb),.03))"><div style="display:flex;align-items:center;justify-content:space-between;padding:14px 18px;cursor:pointer;gap:10px;user-select:none" onclick="this.closest('.ce-archief-card').classList.toggle('open')"><div style="display:flex;align-items:center;gap:10px"><div style="width:36px;height:36px;border-radius:10px;background:rgba(var(--or-rgb),.18);display:flex;align-items:center;justify-content:center;font-size:18px;flex-shrink:0">📄</div><div><div style="font-size:14px;font-weight:800;color:var(--or)">Echte CE-examens</div><div style="font-size:11px;color:var(--mu);margin-top:1px">${_aeName} · opgaven + antwoorden · 2019–2025</div></div></div><div style="width:28px;height:28px;border-radius:8px;background:rgba(var(--or-rgb),.15);display:flex;align-items:center;justify-content:center;font-size:12px;color:var(--or);flex-shrink:0;transition:transform .22s" class="ce-arr">▼</div></div><div class="ce-archief-body" style="display:none;padding:0 16px 16px">`;
     _ch+=`<a href="${_bundel}" target="_blank" rel="noopener" class="ce-bundel-btn">📦 Download complete examenbundel — alle jaren in één PDF</a><div style="display:flex;align-items:flex-start;gap:8px;background:rgba(234,179,8,.08);border:1px solid rgba(234,179,8,.3);border-radius:10px;padding:9px 12px;margin-bottom:14px;font-size:12px;color:#ca8a04;line-height:1.5"><span style="font-size:15px;flex-shrink:0">⚠️</span><span><strong>Let op: zeer groot bestand.</strong> Deze PDF bevat alle examenjaren en kan honderden MB's groot zijn. Dit kan je browser of computer tijdelijk laten vastlopen. Download liever de losse examens per jaar hieronder.</span></div>`;
-    const _hasTb=['nl','en','fr','de'].includes(ST.vak.id);
     _jaren.forEach(year=>{
       _ch+=`<div class="ce-jaar-blok"><div class="ce-jaar-lbl" style="display:flex;align-items:center;gap:7px">${year}${year===2020?' (geannuleerd — COVID)':''} ${_svBadge(year)}</div><div class="ce-tv-row">`;
       if(year!==2020){['I','II'].forEach(tv=>{
         const _urlOpg=_mkPdf(year,tv,'opgaven');
         const _urlCv=_mkPdf(year,tv,'correctievoorschrift');
-        // Tekstboekje altijd via alleexamens.nl (niet in Supabase geüpload)
-        const _urlTb=`https://static.alleexamens.nl/${_aeLvl}/${_enc}/${year}/${tv}/${_enc}/${_enc}%20${year}%20${tv}_tekstboekje.pdf`;
         const _titleOpg=`${_aeName} ${year} Tijdvak ${tv} — Opgaven`;
         const _titleCv=`${_aeName} ${year} Tijdvak ${tv} — Antwoorden`;
-        const _titleTb=`${_aeName} ${year} Tijdvak ${tv} — Tekstboekje`;
         _ch+=`<div class="ce-tv-col"><div class="ce-tv-title">Tijdvak ${tv}</div>`;
         _ch+=`<button class="ce-pdf-btn" onclick="openPdfViewer('${_urlOpg}','${_titleOpg.replace(/'/g,"\\'")}')">📋 Opgaven</button>`;
-        if(_hasTb)_ch+=`<button class="ce-pdf-btn ce-pdf-tb" onclick="openPdfViewer('${_urlTb}','${_titleTb.replace(/'/g,"\\'")}')">📖 Tekstboekje</button>`;
         _ch+=`<button class="ce-pdf-btn ce-pdf-cv" onclick="openPdfViewer('${_urlCv}','${_titleCv.replace(/'/g,"\\'")}')">✅ Antwoorden</button>`;
         _ch+=`</div>`;
       });}
