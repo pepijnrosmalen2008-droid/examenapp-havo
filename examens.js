@@ -22,6 +22,10 @@ const EXAMENS = {
       duur_minuten: 180,
       max_punten: 58,
       bron: 'HA-0400-a-25-1-o · alleexamens.nl',
+      bijlagen: [
+        { type: 'uitwerkbijlage', label: 'Uitwerkbijlage', url: 'https://sxrjdssmgwwygtskovyc.supabase.co/storage/v1/object/public/examens/havo/be/2025/I/uitwerkbijlage.pdf' },
+        { type: 'antwoord', label: 'Correctievoorschrift', url: 'https://sxrjdssmgwwygtskovyc.supabase.co/storage/v1/object/public/examens/havo/be/2025/I/correctievoorschrift.pdf' }
+      ],
       vragen: [
 
         // ── OPGAVE 1: Roads / Jordan ──────────────────────────

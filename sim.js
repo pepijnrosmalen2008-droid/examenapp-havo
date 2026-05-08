@@ -308,6 +308,23 @@ function startExamen(){
   document.getElementById('ex-timer').className = 'ex-timer';
   document.getElementById('ex-score-chip').textContent = `0 / ${examen.max_punten} pt`;
   document.getElementById('ex-prog-fill').style.width = '0%';
+  // Bijlage knoppen in intro
+  const bijlRow = document.getElementById('ex-bijlage-row');
+  if(bijlRow){
+    const bijlagen = examen.bijlagen || [];
+    if(bijlagen.length){
+      bijlRow.innerHTML = bijlagen.map(b=>{
+        const isCv = b.type==='antwoord';
+        const icon = isCv ? '✅' : '📋';
+        const cls = isCv ? ' cv' : '';
+        const titleStr = (b.label+' — '+examen.titel).replace(/'/g,"\\'");
+        return `<button class="ex-bijlage-btn${cls}" onclick="openPdfViewer('${b.url}','${titleStr}')"><span>${icon}</span><span>${b.label}</span></button>`;
+      }).join('');
+      bijlRow.style.display = '';
+    } else {
+      bijlRow.style.display = 'none';
+    }
+  }
   // Toon scherm
   document.getElementById('ex-intro').style.display = '';
   document.getElementById('ex-quiz').style.display = 'none';
@@ -325,6 +342,20 @@ function examenStart(){
   examenShowQ(0);
   // Start timer
   EX.timer = setInterval(_exTimerTick, 1000);
+  // FAB: uitwerkbijlage knop tijdens examen
+  const fab = document.getElementById('ex-bijlage-fab');
+  if(fab){
+    const uitw = (EX.examen.bijlagen||[]).filter(b=>b.type==='uitwerkbijlage');
+    if(uitw.length){
+      fab.innerHTML = uitw.map(b=>{
+        const titleStr = b.label.replace(/'/g,"\\'");
+        return `<button class="ex-bijlage-fab-btn" onclick="openPdfViewer('${b.url}','${titleStr}')">📋 ${b.label}</button>`;
+      }).join('');
+      fab.style.display = '';
+    } else {
+      fab.style.display = 'none';
+    }
+  }
 }
 
 function _exTimerTick(){
