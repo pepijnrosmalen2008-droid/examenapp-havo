@@ -887,20 +887,24 @@ if('serviceWorker' in navigator){
           if(sw.state==='installed'&&navigator.serviceWorker.controller) _showBanner();
         });
       });
-      // controllerchange = skipWaiting voltooid (user-triggered) → herlaad pagina
-      // localStorage blijft intact → gebruiker blijft ingelogd
-      navigator.serviceWorker.addEventListener('controllerchange',()=>window.location.reload());
+      // Geen auto-reload op controllerchange — dit veroorzaakte onverwachte
+      // reloads + sessie-verlies. Reload zit nu uitsluitend in swUpdate() (user-triggered).
       // Init notificaties
       navigator.serviceWorker.ready.then(()=>initNotifications());
     }).catch(()=>{});
   });
 }
 
-// Veilige SW-update: stuur signaal naar wachtende SW, dan herlaad
+// Veilige SW-update: skipWaiting → éénmalig controllerchange → herlaad
 function swUpdate(){
   navigator.serviceWorker.getRegistration().then(reg=>{
-    if(reg?.waiting) reg.waiting.postMessage({type:'SKIP_WAITING'});
-    else window.location.reload();
+    if(reg?.waiting){
+      // Luister éénmalig op controllerchange, pas DAN herlaad (na SW-overname)
+      navigator.serviceWorker.addEventListener('controllerchange',()=>window.location.reload(),{once:true});
+      reg.waiting.postMessage({type:'SKIP_WAITING'});
+    } else {
+      window.location.reload();
+    }
   }).catch(()=>window.location.reload());
 }
 

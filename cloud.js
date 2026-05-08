@@ -101,7 +101,20 @@ async function _fbRate(rating,feature){
   }catch(e){}
 }
 let currentUser=null;
-// Check existing session on load
+// Synchrone pre-check: lees Supabase-sessie direct uit localStorage zodat
+// updateProfileNav() meteen de juiste staat toont (geen "Inloggen"-flits).
+(function _preloadSession(){
+  try{
+    const k=Object.keys(localStorage).find(x=>x.startsWith('sb-')&&x.endsWith('-auth-token'));
+    if(!k)return;
+    const s=JSON.parse(localStorage.getItem(k)||'null');
+    const user=s?.user||s?.data?.user||null;
+    // Controleer of token nog niet verlopen is (exp in seconden)
+    const exp=s?.expires_at||(s?.data?.session?.expires_at)||0;
+    if(user&&(exp===0||exp*1000>Date.now())){currentUser=user;}
+  }catch(e){}
+})();
+// Async check + token-refresh via Supabase
 SB.auth.getSession().then(({data:{session}})=>{
   currentUser=session?.user||null;
   updateProfileNav();updateCloudStatusBar();
