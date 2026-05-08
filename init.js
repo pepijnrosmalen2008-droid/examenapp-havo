@@ -875,20 +875,7 @@ if('serviceWorker' in navigator){
   window.addEventListener('load',()=>{
     navigator.serviceWorker.register('/sw.js',{updateViaCache:'none'}).then(reg=>{
       reg.update();
-      // Helper: toon update-banner
-      const _showBanner=()=>document.getElementById('sw-update-banner')?.classList.add('show');
-      // Al een wachtende SW? (bijv. direct na deploy pagina geopend)
-      if(reg.waiting) _showBanner();
-      // Nieuwe SW gevonden tijdens sessie
-      reg.addEventListener('updatefound',()=>{
-        const sw=reg.installing;
-        sw.addEventListener('statechange',()=>{
-          // SW staat te wachten + er is al een actieve controller → nieuwe versie klaar
-          if(sw.state==='installed'&&navigator.serviceWorker.controller) _showBanner();
-        });
-      });
-      // Geen auto-reload op controllerchange — dit veroorzaakte onverwachte
-      // reloads + sessie-verlies. Reload zit nu uitsluitend in swUpdate() (user-triggered).
+      // SW gebruikt skipWaiting() — update gaat stil. Geen banner nodig.
       // Init notificaties
       navigator.serviceWorker.ready.then(()=>initNotifications());
     }).catch(()=>{});

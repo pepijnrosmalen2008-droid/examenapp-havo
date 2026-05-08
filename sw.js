@@ -1,9 +1,11 @@
-const CACHE = 'slagio-v121';
+const CACHE = 'slagio-v122';
 const ASSETS = ['/', '/index.html', '/styles.css', '/data.js', '/state.js', '/cloud.js', '/profile.js', '/vak.js', '/quiz.js', '/tools.js', '/sim.js', '/lb.js', '/features.js', '/schedule.js', '/init.js', '/examens.js', '/manifest.json', '/icon-192.png', '/icon-512.png', '/logo.svg', '/apple-touch-icon.png'];
 
 self.addEventListener('install', e => {
   e.waitUntil(caches.open(CACHE).then(c => c.addAll(ASSETS)));
-  // Geen automatische skipWaiting — wacht op gebruikersactie om uitloggen te voorkomen
+  // skipWaiting zodat de nieuwe SW direct overneemt (geen banner nodig).
+  // Auto-reload is verwijderd uit init.js zodat er geen sessie-verlies optreedt.
+  self.skipWaiting();
 });
 
 self.addEventListener('activate', e => {
