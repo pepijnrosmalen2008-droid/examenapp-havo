@@ -51,7 +51,8 @@ function openVak(id,_noHash){
       if(year!==2020){['I','II'].forEach(tv=>{
         const _urlOpg=_mkPdf(year,tv,'opgaven');
         const _urlCv=_mkPdf(year,tv,'correctievoorschrift');
-        const _urlTb=_mkPdf(year,tv,'tekstboekje');
+        // Tekstboekje altijd via alleexamens.nl (niet in Supabase geüpload)
+        const _urlTb=`https://static.alleexamens.nl/${_aeLvl}/${_enc}/${year}/${tv}/${_enc}/${_enc}%20${year}%20${tv}_tekstboekje.pdf`;
         const _titleOpg=`${_aeName} ${year} Tijdvak ${tv} — Opgaven`;
         const _titleCv=`${_aeName} ${year} Tijdvak ${tv} — Antwoorden`;
         const _titleTb=`${_aeName} ${year} Tijdvak ${tv} — Tekstboekje`;
