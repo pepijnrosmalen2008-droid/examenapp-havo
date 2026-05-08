@@ -2147,24 +2147,34 @@
 
   <!-- Quiz fase -->
   <div id="ex-quiz" style="display:none">
-    <div id="ex-bijlage-fab" class="ex-bijlage-fab" style="display:none"></div>
-    <div class="ex-body">
-      <div class="ex-opgave-banner" id="ex-opgave-banner">Opgave 1</div>
-      <div class="ex-context" id="ex-context" style="display:none"></div>
-      <div class="ex-bijlage-note" id="ex-bijlage-note" style="display:none"></div>
-      <div class="ex-q-header">
-        <div class="ex-q-nr" id="ex-q-nr">Vraag 1</div>
-        <div class="ex-vraag" id="ex-vraag"></div>
-        <div class="ex-q-pts" id="ex-q-pts">1 pt</div>
+    <!-- Tekstboekje split-panel (links/boven) — JS voegt .split toe als examen bijlage heeft -->
+    <div id="ex-tb-panel" class="ex-tb-panel" style="display:none">
+      <div class="ex-tb-hdr">
+        <span class="ex-tb-lbl">📖 Tekstboekje</span>
+        <a id="ex-tb-newtab" href="#" target="_blank" rel="noopener" class="ex-tb-ext">↗ Nieuw tabblad</a>
       </div>
-      <textarea class="ex-textarea" id="ex-textarea" placeholder="Schrijf hier je antwoord…" oninput="examenSaveAnswer(this.value)"></textarea>
+      <iframe id="ex-tb-iframe" class="ex-tb-iframe" src="about:blank" title="Tekstboekje"></iframe>
     </div>
-    <!-- Vaste nav balk -->
-    <div class="ex-bot-nav">
-      <div class="ex-bot-inner">
-        <button class="ex-prev" onclick="examenNav(-1)">← Vorige</button>
-        <div class="ex-qgrid" id="ex-qgrid"></div>
-        <button class="ex-next primary" id="ex-next-btn" onclick="examenNav(1)">Volgende →</button>
+    <!-- Vragen kolom (rechts/onder) -->
+    <div class="ex-q-col">
+      <div class="ex-body">
+        <div class="ex-opgave-banner" id="ex-opgave-banner">Opgave 1</div>
+        <div class="ex-context" id="ex-context" style="display:none"></div>
+        <div class="ex-bijlage-note" id="ex-bijlage-note" style="display:none"></div>
+        <div class="ex-q-header">
+          <div class="ex-q-nr" id="ex-q-nr">Vraag 1</div>
+          <div class="ex-vraag" id="ex-vraag"></div>
+          <div class="ex-q-pts" id="ex-q-pts">1 pt</div>
+        </div>
+        <textarea class="ex-textarea" id="ex-textarea" placeholder="Schrijf hier je antwoord…" oninput="examenSaveAnswer(this.value)"></textarea>
+      </div>
+      <!-- Vaste nav balk -->
+      <div class="ex-bot-nav">
+        <div class="ex-bot-inner">
+          <button class="ex-prev" onclick="examenNav(-1)">← Vorige</button>
+          <div class="ex-qgrid" id="ex-qgrid"></div>
+          <button class="ex-next primary" id="ex-next-btn" onclick="examenNav(1)">Volgende →</button>
+        </div>
       </div>
     </div>
   </div>

@@ -970,6 +970,25 @@ html.dark .qb{background:#2e3550}
 .ex-qd.answered{background:rgba(239,68,68,.15);border-color:rgba(239,68,68,.3);color:#f87171}
 .ex-qd.current{background:rgba(239,68,68,.3);border-color:rgba(239,68,68,.6);color:#fff;transform:scale(1.15)}
 .ex-qd.bijlage{background:rgba(251,191,36,.08);border-color:rgba(251,191,36,.2);color:#fbbf24}
+/* ── EXAMEN SPLIT LAYOUT (tekstboekje naast vragen) ──────── */
+#ex-quiz.split{display:flex!important;height:calc(100vh - var(--nav-h) - 3px);overflow:hidden}
+.ex-tb-panel{width:46%;max-width:760px;border-right:1px solid rgba(255,255,255,.07);display:flex;flex-direction:column;flex-shrink:0;background:#14161c;overflow:hidden}
+.ex-tb-hdr{display:flex;align-items:center;justify-content:space-between;padding:9px 14px;background:rgba(255,255,255,.03);border-bottom:1px solid rgba(255,255,255,.06);flex-shrink:0}
+.ex-tb-lbl{font-size:12px;font-weight:700;color:rgba(255,255,255,.4);letter-spacing:.3px;font-family:var(--font-head)}
+.ex-tb-ext{font-size:11px;color:rgba(255,255,255,.35);text-decoration:none;padding:3px 9px;border-radius:6px;border:1px solid rgba(255,255,255,.12);font-family:var(--font);transition:.15s;white-space:nowrap}
+.ex-tb-ext:hover{color:#fff;background:rgba(255,255,255,.09);border-color:rgba(255,255,255,.3)}
+.ex-tb-iframe{flex:1;border:none;width:100%;min-height:0;display:block}
+.ex-q-col{flex:1;display:flex;flex-direction:column;overflow:hidden;min-width:0}
+#ex-quiz.split .ex-body{flex:1;overflow-y:auto;max-width:none;margin:0;padding-bottom:24px}
+#ex-quiz.split .ex-bot-nav{position:relative;left:auto;right:auto;bottom:auto;flex-shrink:0}
+#ex-quiz.split .ex-bot-inner{max-width:none}
+/* Mobile: PDF boven, vragen scrollen eronder */
+@media(max-width:767px){
+  #ex-quiz.split{flex-direction:column;height:auto;overflow:visible}
+  .ex-tb-panel{width:100%;max-width:none;height:44vh;border-right:none;border-bottom:1px solid rgba(255,255,255,.07)}
+  #ex-quiz.split .ex-bot-nav{position:fixed;bottom:0;left:0;right:0}
+  #ex-quiz.split .ex-body{overflow-y:visible;padding-bottom:100px}
+}
 /* Resultaat scherm */
 .ex-result-wrap{max-width:680px;margin:0 auto;padding:24px 20px 100px;width:100%}
 .ex-result-hero{text-align:center;margin-bottom:28px}

@@ -342,19 +342,20 @@ function examenStart(){
   examenShowQ(0);
   // Start timer
   EX.timer = setInterval(_exTimerTick, 1000);
-  // FAB: uitwerkbijlage knop tijdens examen
-  const fab = document.getElementById('ex-bijlage-fab');
-  if(fab){
-    const uitw = (EX.examen.bijlagen||[]).filter(b=>b.type==='uitwerkbijlage');
-    if(uitw.length){
-      fab.innerHTML = uitw.map(b=>{
-        const titleStr = b.label.replace(/'/g,"\\'");
-        return `<button class="ex-bijlage-fab-btn" onclick="openPdfViewer('${b.url}','${titleStr}')">📋 ${b.label}</button>`;
-      }).join('');
-      fab.style.display = '';
-    } else {
-      fab.style.display = 'none';
-    }
+  // Split layout: tekstboekje naast vragen inladen
+  const _tb = (EX.examen.bijlagen||[]).find(b=>b.type==='tekstboekje');
+  const _quiz = document.getElementById('ex-quiz');
+  const _tbPanel = document.getElementById('ex-tb-panel');
+  const _tbIframe = document.getElementById('ex-tb-iframe');
+  const _tbNewtab = document.getElementById('ex-tb-newtab');
+  if(_tb && _tbPanel && _tbIframe){
+    _tbIframe.src = _tb.url;
+    if(_tbNewtab) _tbNewtab.href = _tb.url;
+    _tbPanel.style.display = '';
+    _quiz.classList.add('split');
+  } else {
+    if(_tbPanel) _tbPanel.style.display = 'none';
+    _quiz.classList.remove('split');
   }
 }
 
@@ -541,6 +542,13 @@ function examenConfirmExit(){
 
 function examenExit(){
   if(EX.timer){ clearInterval(EX.timer); EX.timer=null; }
+  // Reset split layout
+  const _quiz = document.getElementById('ex-quiz');
+  const _tbPanel = document.getElementById('ex-tb-panel');
+  const _tbIframe = document.getElementById('ex-tb-iframe');
+  if(_quiz) _quiz.classList.remove('split');
+  if(_tbPanel) _tbPanel.style.display = 'none';
+  if(_tbIframe) _tbIframe.src = 'about:blank';
   EX = {};
   show('sc-detail');
 }
