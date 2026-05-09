@@ -4139,7 +4139,7 @@ function renderRapport(){
   const today=new Date();today.setHours(0,0,0,0);
   const upcoming=EXAM_SCHEDULE.filter(e=>{
     const d=new Date(e.datum);
-    return d>=today&&(mijn.length===0||!e.vakId||(e.vakId&&mijn.includes(e.vakId)));
+    return (!e.niveau||e.niveau===APP_LEVEL)&&d>=today&&(mijn.length===0||!e.vakId||(e.vakId&&mijn.includes(e.vakId)));
   }).slice(0,3);
   const maand=['jan','feb','mrt','apr','mei','jun','jul','aug','sep','okt','nov','dec'];
   const domRow=(d,color)=>`<div class="rp-domain-row">
@@ -4413,7 +4413,7 @@ function renderStudieplan(){
 
   const upcoming=EXAM_SCHEDULE.filter(e=>{
     const d=new Date(e.datum);
-    return d>today&&e.vakId&&(mijn.length===0||mijn.includes(e.vakId));
+    return (!e.niveau||e.niveau===APP_LEVEL)&&d>today&&e.vakId&&(mijn.length===0||mijn.includes(e.vakId));
   });
   if(!upcoming.length){
     el.innerHTML='<div class="sp-empty">Geen aankomende examens gevonden.<br>Vink eerst je vakken aan via "Alleen mijn vakken" boven.</div>';
