@@ -465,60 +465,55 @@ const EXAMENS = {
           antwoord_rubric: '1 punt per correct bezwaar in eigen woorden (max 2).'
         },
 
-        // ── OPGAVE 4: Samenvatting ────────────────────────────────────────
+        // ── OPGAVE 3 (vervolg): Bron 1 — structuur & argumentatie ──────────
         {
-          nr: 13, opgave: 4, punten: 8, type: 'open',
-          needs_bijlage: true, bijlage_tekst: '⚠️ Raadpleeg het tekstboekje voor tekst 4.',
-          context: 'Tekst 4 — Samenvatting\n\nSchrijf een samenvatting van tekst 4. De samenvatting moet:\n• Kernpunten bevatten (geen details of voorbeelden)\n• Geschreven zijn in eigen woorden\n• Logisch geordend zijn\n• Maximaal 150 woorden bevatten',
-          vraag: 'Schrijf een samenvatting van tekst 4 in maximaal 150 woorden.',
-          antwoord: 'Een goede samenvatting bevat de volgende kernpunten:\n1. [Kernpunt 1 — opening/aanleiding]\n2. [Kernpunt 2 — hoofdargument]\n3. [Kernpunt 3 — gevolgen]\n4. [Kernpunt 4 — conclusie/oplossing]\n\nSamenvatting is in eigen woorden, bevat geen onnodige details, is logisch gestructureerd en < 150 woorden.',
-          antwoord_rubric: '4 punten: inhoud (correcte kernpunten, geen overbodige details). 2 punten: formulering (eigen woorden, lopende zinnen). 2 punten: structuur (logische volgorde, verbindingswoorden).'
-        },
-
-        // ── OPGAVE 5: Schrijfvaardigheid ──────────────────────────────────
-        {
-          nr: 14, opgave: 5, punten: 14, type: 'open',
-          needs_bijlage: true, bijlage_tekst: '⚠️ Raadpleeg het tekstboekje voor de schrijfopdracht.',
-          context: 'Schrijfvaardigheid\n\nSchrijf een betoog van minimaal 300 woorden. In je betoog:\n• Formuleer een duidelijke these (standpunt)\n• Onderbouw je standpunt met minimaal twee argumenten\n• Ga in op een tegenargument\n• Sluit af met een conclusie\n\nLet op taalverzorging: spelling, zinsbouw, woordgebruik en interpunctie tellen mee.',
-          vraag: 'Schrijf het betoog.',
-          antwoord: 'Betoog bevat: heldere these, minimaal 2 goede argumenten, weerlegging van tegenargument, sluitende conclusie. Taalverzorging: correct geschreven, variatie in zinsbouw, passend register.',
-          antwoord_rubric: '5 punten: inhoud en argumentatie. 5 punten: opbouw en structuur. 4 punten: taalverzorging.'
-        },
-
-        // ── OPGAVE 6: Tekstvergelijking ───────────────────────────────────
-        {
-          nr: 15, opgave: 6, punten: 2, type: 'open',
-          needs_bijlage: true, bijlage_tekst: '⚠️ Raadpleeg het tekstboekje.',
-          context: 'Tekstanalyse',
-          vraag: 'Leg uit welke visie de auteur heeft op het onderwerp dat in de tekst centraal staat. Hoe komt die visie tot uitdrukking in de tekst?',
-          antwoord: 'De auteur heeft een [positieve/kritische/genuanceerde] visie op [onderwerp]. Dit blijkt uit [taalgebruik/woordkeuze/argumenten/toon].',
-          antwoord_rubric: '1 punt: correcte omschrijving van de visie. 1 punt: correcte verwijzing naar hoe die visie zichtbaar is in de tekst.'
+          nr: 13, opgave: 3, punten: 2, type: 'open',
+          tekst_id: 't3', context: 'Bron 1 (Regels in de ruimte)',
+          vraag: 'Bron 1 is na de inleiding in vier delen te verdelen met de volgende kopjes:\n– deel 1: Het wereldbeeld van de space barons\n– deel 2: De meerwaarde van de ruimte voor de mensheid\n– deel 3: De ruimte als domein voor ondernemers om van te profiteren\n– deel 4: Wat er moet gebeuren tegen de ruimtecowboys\nBij welke alinea begint deel 3? En bij welke alinea begint deel 4?',
+          antwoord: 'Deel 3 begint bij alinea 6. Deel 4 begint bij alinea 14.',
+          antwoord_rubric: '1 punt per correct alineanummer (max 2).'
         },
         {
-          nr: 16, opgave: 6, punten: 1, type: 'open',
-          needs_bijlage: true, bijlage_tekst: '⚠️ Raadpleeg het tekstboekje.',
-          context: 'Tekstanalyse',
-          vraag: 'Voor welk publiek is deze tekst bedoeld? Noem twee kenmerken van de tekst die dat aantonen.',
-          antwoord: 'Doelgroep: [bijv. jongvolwassenen / brede lezer]. Kenmerken: 1. [register/toon]. 2. [verwijzingen/voorbeelden].',
-          antwoord_rubric: '1 punt: correct publiek met twee passende tekstkenmerken als onderbouwing.'
+          nr: 14, opgave: 3, punten: 1, type: 'mc',
+          tekst_id: 't3', context: 'Bron 1 — alinea 6',
+          vraag: 'In alinea 6 van bron 1 worden de groepen "wij, aardgebonden stakkers" en "een klein clubje interplanetaire adel" tegenover elkaar gezet. Wat wordt aangetoond door deze groepen tegenover elkaar te zetten?',
+          opties: [
+            'De gewone mens kan alleen afwachtend toekijken, terwijl de miljardairs ongecontroleerd hun gang kunnen gaan in de ruimte.',
+            'De gewone mens moet zich niet bemoeien met wat er in de ruimte gebeurt, terwijl de rijken hierin juist het voortouw moeten nemen.',
+            'De miljardairs weten precies wat er zich afspeelt in de ruimte, terwijl de gewone mens geen idee heeft van wat daar allemaal gebeurt.',
+            'De rijken amuseren zich in de ruimte, terwijl de gewone mens aan het werk is op de aarde.'
+          ],
+          correct: 0,
+          antwoord: 'A — De gewone mens kan alleen afwachtend toekijken, terwijl de miljardairs ongecontroleerd hun gang kunnen gaan in de ruimte.',
+          antwoord_rubric: '1 punt: A correct.'
         },
         {
-          nr: 17, opgave: 6, punten: 3, type: 'open',
-          needs_bijlage: true, bijlage_tekst: '⚠️ Raadpleeg het tekstboekje.',
-          context: 'Tekstvergelijking',
-          vraag: 'Vergelijk de standpunten in twee teksten over hetzelfde thema. In hoeverre zijn ze het eens of oneens met elkaar?',
-          antwoord: 'Overeenkomst: beide auteurs vinden dat [gedeeld punt]. Verschil: auteur A benadrukt [punt A], terwijl auteur B [punt B].',
-          antwoord_rubric: '1 punt: correcte overeenkomst. 1 punt: correct verschil. 1 punt: juiste conclusie over mate van overeenstemming.'
+          nr: 15, opgave: 3, punten: 1, type: 'open',
+          tekst_id: 't3', context: 'Bron 1 — alinea 10 t/m 13',
+          vraag: 'In alinea 10 tot en met 13 van bron 1 lees je een verwijt richting de ruimtevaartondernemers Bezos, Branson en Musk. Vat dit verwijt samen in maximaal 15 woorden.',
+          antwoord: 'Ze framen hun plannen als filantropisch/goed voor de mensheid, terwijl het om ego en geld gaat.',
+          antwoord_rubric: '1 punt: kern van verwijt correct (schijnfilantropie / mythevorming / eigenbelang) in max 15 woorden.'
         },
-
-        // ── OPGAVE 7: Tekstfuncties ───────────────────────────────────────
         {
-          nr: 18, opgave: 7, punten: 2, type: 'open',
-          needs_bijlage: true, bijlage_tekst: '⚠️ Raadpleeg het tekstboekje.',
-          context: 'Tekstanalyse',
-          vraag: 'Geef voor elk van de volgende alinea\'s de tekstfunctie: alinea 1, alinea 5 en de slotalinea.',
-          antwoord: 'Alinea 1: inleiding / probleemstelling. Alinea 5: uitwerking / voorbeeld. Slotalinea: conclusie / oproep / samenvatting.',
-          antwoord_rubric: '1 punt: twee functies correct. 2 punten: alle drie functies correct.'
+          nr: 16, opgave: 3, punten: 2, type: 'open',
+          tekst_id: 't3', context: 'Bron 1 — alinea 10 t/m 12',
+          vraag: '"Het ligt dus wat genuanceerder dan Branson het doet voorkomen."\nGeef aan welke uitspraak van Branson hier wordt bekritiseerd en welke twee nuanceringen er worden aangebracht. Baseer je antwoord op alinea 10 tot en met 12 van bron 1.',
+          antwoord: 'Uitspraak: Branson beweert dat ruimtetoerisme het "overzichtseffect" bij zo veel mogelijk mensen kan opwekken. Nuancering 1: de vraag is of vier minuten zweven op tachtig kilometer hoogte een overzichtseffect oplevert. Nuancering 2: onderzoek wijst uit dat een enkele keer kijken niet genoeg is voor een langdurige impact.',
+          antwoord_rubric: '1 punt: uitspraak van Branson correct (overzichtseffect / ruimtetoerisme voor breed publiek). 1 punt: beide nuanceringen correct (hoogte onvoldoende / eenmalig kijken onvoldoende).'
+        },
+        {
+          nr: 17, opgave: 3, punten: 3, type: 'open',
+          tekst_id: 't3', context: 'Bronnen 3 en 4',
+          vraag: 'Ook in bron 3 en 4 staan argumenten voor en tegen commerciële activiteiten in de ruimte. Noteer per bron één argument tégen en één argument vóór. (Het argument tégen in bron 3 is al gegeven: "Commerciële ruimtevaart is een vorm van decadentie.")',
+          antwoord: 'Bron 3 — Vóór: door ruimtevaartondernemers zijn raketten goedkoper en duurzamer geworden (recyclebare materialen) / ontdekken leidt tot nieuwe mogelijkheden. Bron 4 — Tégen: risico\'s (asteroïde kan neerstorten / getijverandering) of onrechtvaardigheid (recht van de sterkste). Bron 4 — Vóór: kansen voor winnen van grondstoffen / permanente bewoning in ruimte komt dichterbij.',
+          antwoord_rubric: '1 punt per correct argument (max 3; zie correctievoorschrift voor puntenverdeling per bron).'
+        },
+        {
+          nr: 18, opgave: 3, punten: 1, type: 'open',
+          tekst_id: 't3', context: 'Bron 4',
+          vraag: 'Beargumenteer of de auteur van bron 4 de vraagstelling "Zijn er regels nodig voor commerciële activiteiten in de ruimte?" met "ja" of "nee" zal beantwoorden. Vul in:\n"De auteur van bron 4 zal de centrale vraag waarschijnlijk met (1) beantwoorden, want (2)."',
+          antwoord: 'De auteur van bron 4 zal de centrale vraag waarschijnlijk met JA beantwoorden, want zij pleit in alinea 3 voor een intergouvernementele toezichthouder (vergelijkbaar met de Internationale Zeebodemautoriteit van de VN).',
+          antwoord_rubric: '1 punt: ja + correcte redenering verwijzend naar alinea 3 van bron 4 (pleidooi voor toezichthouder / regelgeving).'
         }
 
       ] // einde vragen
