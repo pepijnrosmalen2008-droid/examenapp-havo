@@ -49,34 +49,39 @@ function _getSrc(){
 // Track app open once per browser session
 if(!sessionStorage.getItem('_slagio_ao')){sessionStorage.setItem('_slagio_ao','1');setTimeout(()=>trackEvent('app_open',{src:_getSrc()}),2000);}
 
-// ── PER-VRAAG LOGGING (adaptive engine data) ────────────────────────────
-// Aparte tabel: question_log — wordt gebatch verstuurd (max 1 req per quiz)
+// ── MASTERY TRACKING (localStorage + compacte Supabase upsert) ─────────────
+// Structuur: {[vakId]: {[domeinId]: {c: correct, t: totaal}}}
+// Supabase: 1 rij per device per vak — groeit NIET onbeperkt (upsert)
 let _qBatch=[];
-let _qBatchTimer=null;
 function logQuestion(vakId,domeinId,mode,vraagNr,isCorrect,responsMs){
-  try{
-    _qBatch.push({
-      did:_DID,
-      user_id:currentUser?.id||null,
-      niveau:typeof APP_LEVEL!=='undefined'?APP_LEVEL:'havo',
-      vak_id:vakId,
-      domein_id:domeinId,
-      mode:mode,
-      vraag_nr:vraagNr,
-      is_correct:isCorrect,
-      respons_ms:Math.min(responsMs||0,60000)
-    });
-    clearTimeout(_qBatchTimer);
-    // Flush na 3s inactiviteit of als batch >=10
-    if(_qBatch.length>=10)_flushQBatch();
-    else _qBatchTimer=setTimeout(_flushQBatch,3000);
-  }catch(e){}
+  if(!vakId||!domeinId)return;
+  try{ _qBatch.push({vakId,domeinId,isCorrect}); }catch(e){}
 }
 function _flushQBatch(){
   if(!_qBatch.length)return;
-  const rows=[..._qBatch];
-  _qBatch=[];
-  SB.from('question_log').insert(rows).then(()=>{}).catch(()=>{});
+  const batch=[..._qBatch]; _qBatch=[];
+  try{
+    // Update cumulatieve mastery in localStorage
+    const m=JSON.parse(localStorage.getItem('slagio_mastery')||'{}');
+    const vaksTouched=new Set();
+    batch.forEach(({vakId,domeinId,isCorrect})=>{
+      if(!m[vakId])m[vakId]={};
+      if(!m[vakId][domeinId])m[vakId][domeinId]={c:0,t:0};
+      m[vakId][domeinId].t++;
+      if(isCorrect)m[vakId][domeinId].c++;
+      vaksTouched.add(vakId);
+    });
+    localStorage.setItem('slagio_mastery',JSON.stringify(m));
+    // Sync naar Supabase: upsert 1 rij per vak (overschrijft, geen nieuwe rijen)
+    const niv=typeof APP_LEVEL!=='undefined'?APP_LEVEL:'havo';
+    vaksTouched.forEach(vakId=>{
+      SB.from('mastery').upsert(
+        {did:_DID,user_id:currentUser?.id||null,niveau:niv,vak_id:vakId,
+         data:m[vakId],updated_at:new Date().toISOString()},
+        {onConflict:'did,vak_id'}
+      ).then(()=>{}).catch(()=>{});
+    });
+  }catch(e){}
 }
 
 // ── CE-CIJFER COLLECTIE ──────────────────────────────────────────────────

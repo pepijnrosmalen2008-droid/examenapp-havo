@@ -252,7 +252,7 @@ async function loadAll() {
       SB.from('events').select('naam,event_type,vak_naam,niveau,meta,created_at').order('created_at',{ascending:false}).limit(2000),
       SB.from('events').select('meta,niveau,created_at').eq('event_type','app_open').order('created_at',{ascending:false}).limit(5000),
       SB.from('events').select('meta,vak_naam,created_at').eq('event_type','feedback').order('created_at',{ascending:false}).limit(2000),
-      SB.from('question_log').select('vak_id,domein_id,mode,vraag_nr,is_correct,respons_ms,created_at').order('created_at',{ascending:false}).limit(5000),
+      SB.from('mastery').select('vak_id,data,niveau,updated_at').order('updated_at',{ascending:false}).limit(2000),
       SB.from('events').select('meta,created_at').eq('event_type','ce_cijfer').order('created_at',{ascending:false}).limit(500)
     ]);
     const lb = (lbRes.data || []).filter(e => (e.score||0) <= 1000 && (e.total||0) > 5);
@@ -287,7 +287,7 @@ function render(lb, ev, evMissing, ao=[], fb=[], ql=[], ce=[]) {
     ev = ev.filter(e=>e.created_at>=cutoff);
     ao = ao.filter(e=>e.created_at>=cutoff);
     fb = fb.filter(e=>e.created_at>=cutoff);
-    ql = ql.filter(e=>e.created_at>=cutoff);
+    ql = ql.filter(e=>e.updated_at>=cutoff);
     ce = ce.filter(e=>e.created_at>=cutoff);
   }
 
@@ -525,15 +525,25 @@ function render(lb, ev, evMissing, ao=[], fb=[], ql=[], ce=[]) {
       </div>
     </div>`:''}
 
-    <!-- ── Question log stats ── -->
+    <!-- ── Mastery stats (adaptive engine) ── -->
     ${ql.length?`
-    <div class="sec">📊 Per-vraag data (adaptive engine)</div>
-    <div class="kpi-grid">
-      <div class="kpi c-or"><div class="kpi-lbl">Gelogde antwoorden</div><div class="kpi-val">${ql.length.toLocaleString()}</div><div class="kpi-sub">Individuele vraag-antwoorden</div></div>
-      <div class="kpi c-gr"><div class="kpi-lbl">Correctheidspercentage</div><div class="kpi-val">${Math.round(ql.filter(e=>e.is_correct).length/ql.length*100)}%</div><div class="kpi-sub">${ql.filter(e=>e.is_correct).length} goed · ${ql.filter(e=>!e.is_correct).length} fout</div></div>
-      <div class="kpi c-bl"><div class="kpi-lbl">Gem. responstijd</div><div class="kpi-val">${(ql.filter(e=>e.respons_ms>200&&e.respons_ms<30000).reduce((s,e)=>s+e.respons_ms,0)/(ql.filter(e=>e.respons_ms>200&&e.respons_ms<30000).length||1)/1000).toFixed(1)}s</div><div class="kpi-sub">Seconden per vraag</div></div>
-      <div class="kpi c-pu"><div class="kpi-lbl">Moeilijkste vakken</div><div class="kpi-val" style="font-size:1rem">${Object.entries(ql.reduce((m,e)=>{if(!m[e.vak_id])m[e.vak_id]={ok:0,tot:0};m[e.vak_id].tot++;if(e.is_correct)m[e.vak_id].ok++;return m;},{})).sort((a,b)=>(a[1].ok/a[1].tot)-(b[1].ok/b[1].tot)).slice(0,2).map(([v,d])=>`${v} (${Math.round(d.ok/d.tot*100)}%)`).join(', ')||'-'}</div><div class="kpi-sub">Laagste slagingskans</div></div>
-    </div>`:''}
+    <div class="sec">📊 Mastery data (adaptive engine)</div>
+    <div class="kpi-grid">${(()=>{
+      // Flatten mastery rows: {vak_id, data:{[domein]:{c,t}}} → aggregate
+      const byVak={};
+      let totC=0,totT=0;
+      ql.forEach(row=>{
+        const d=row.data||{};
+        if(!byVak[row.vak_id])byVak[row.vak_id]={c:0,t:0};
+        Object.values(d).forEach(v=>{byVak[row.vak_id].c+=(v.c||0);byVak[row.vak_id].t+=(v.t||0);totC+=(v.c||0);totT+=(v.t||0);});
+      });
+      const pct=totT?Math.round(totC/totT*100):0;
+      const moeilijkst=Object.entries(byVak).filter(([,v])=>v.t>5).sort((a,b)=>(a[1].c/a[1].t)-(b[1].c/b[1].t)).slice(0,2).map(([v,d])=>`${v} (${Math.round(d.c/d.t*100)}%)`).join(', ')||'-';
+      return `<div class="kpi c-or"><div class="kpi-lbl">Actieve leerlijnen</div><div class="kpi-val">${ql.length.toLocaleString()}</div><div class="kpi-sub">Device-vak combinaties</div></div>
+      <div class="kpi c-gr"><div class="kpi-lbl">Totaal beantwoord</div><div class="kpi-val">${totT.toLocaleString()}</div><div class="kpi-sub">${totC.toLocaleString()} goed · ${(totT-totC).toLocaleString()} fout</div></div>
+      <div class="kpi c-bl"><div class="kpi-lbl">Gem. correctheid</div><div class="kpi-val">${pct}%</div><div class="kpi-sub">Over alle vakken</div></div>
+      <div class="kpi c-pu"><div class="kpi-lbl">Moeilijkste vakken</div><div class="kpi-val" style="font-size:1rem">${moeilijkst}</div><div class="kpi-sub">Laagste slagingskans</div></div>`;
+    })()}</div>`:''}
 
     <!-- ── Quiz events (completed/abandoned) ── -->
     ${ev.filter(e=>e.event_type==='quiz_completed'||e.event_type==='quiz_abandoned').length?`
