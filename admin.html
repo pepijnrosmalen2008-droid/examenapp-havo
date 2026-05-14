@@ -247,19 +247,23 @@ function startClock() {
 
 async function loadAll() {
   try {
-    const [lbRes, evRes, aoRes, fbRes] = await Promise.all([
+    const [lbRes, evRes, aoRes, fbRes, qlRes, ceRes] = await Promise.all([
       SB.from('leaderboard').select('user_id,naam,score,vak_naam,domein_naam,niveau,correct,total,avg_tijd,created_at').order('created_at',{ascending:false}).limit(1000),
       SB.from('events').select('naam,event_type,vak_naam,niveau,meta,created_at').order('created_at',{ascending:false}).limit(2000),
       SB.from('events').select('meta,niveau,created_at').eq('event_type','app_open').order('created_at',{ascending:false}).limit(5000),
-      SB.from('events').select('meta,vak_naam,created_at').eq('event_type','feedback').order('created_at',{ascending:false}).limit(2000)
+      SB.from('events').select('meta,vak_naam,created_at').eq('event_type','feedback').order('created_at',{ascending:false}).limit(2000),
+      SB.from('question_log').select('vak_id,domein_id,mode,vraag_nr,is_correct,respons_ms,created_at').order('created_at',{ascending:false}).limit(5000),
+      SB.from('events').select('meta,created_at').eq('event_type','ce_cijfer').order('created_at',{ascending:false}).limit(500)
     ]);
     const lb = (lbRes.data || []).filter(e => (e.score||0) <= 1000 && (e.total||0) > 5);
     const ev = evRes.data || [];
     const ao = aoRes.data || [];
     const fb = fbRes.data || [];
+    const ql = qlRes.data || [];
+    const ce = ceRes.data || [];
     const evMissing = !!evRes.error;
-    window._lb = lb; window._ev = ev; window._evMissing = evMissing; window._ao = ao; window._fb = fb;
-    render(lb, ev, evMissing, ao, fb);
+    window._lb = lb; window._ev = ev; window._evMissing = evMissing; window._ao = ao; window._fb = fb; window._ql = ql; window._ce = ce;
+    render(lb, ev, evMissing, ao, fb, ql, ce);
   } catch(e) {
     document.getElementById('content').innerHTML =
       `<div class="loading" style="color:var(--red)">Laad-fout: ${e.message}</div>`;
@@ -274,7 +278,7 @@ function timeAgo(iso) {
   return Math.floor(ms/86400000) + 'd';
 }
 
-function render(lb, ev, evMissing, ao=[], fb=[]) {
+function render(lb, ev, evMissing, ao=[], fb=[], ql=[], ce=[]) {
   // Apply time filter
   const filterMs = window._filter==='24h'?86400000:window._filter==='7d'?7*86400000:null;
   if (filterMs) {
@@ -283,6 +287,8 @@ function render(lb, ev, evMissing, ao=[], fb=[]) {
     ev = ev.filter(e=>e.created_at>=cutoff);
     ao = ao.filter(e=>e.created_at>=cutoff);
     fb = fb.filter(e=>e.created_at>=cutoff);
+    ql = ql.filter(e=>e.created_at>=cutoff);
+    ce = ce.filter(e=>e.created_at>=cutoff);
   }
 
   const now = Date.now();
@@ -498,10 +504,44 @@ function render(lb, ev, evMissing, ao=[], fb=[]) {
     <!-- ── Tijdfilter ── -->
     <div class="filter-bar">
       <span class="filter-lbl">Periode</span>
-      <button class="filter-btn ${window._filter==='all'?'active':''}" onclick="window._filter='all';render(window._lb,window._ev,window._evMissing,window._ao||[],window._fb||[])">Altijd</button>
-      <button class="filter-btn ${window._filter==='7d'?'active':''}" onclick="window._filter='7d';render(window._lb,window._ev,window._evMissing,window._ao||[],window._fb||[])">Afgelopen 7 dagen</button>
-      <button class="filter-btn ${window._filter==='24h'?'active':''}" onclick="window._filter='24h';render(window._lb,window._ev,window._evMissing,window._ao||[],window._fb||[])">Afgelopen 24 uur</button>
+      <button class="filter-btn ${window._filter==='all'?'active':''}" onclick="window._filter='all';render(window._lb,window._ev,window._evMissing,window._ao||[],window._fb||[],window._ql||[],window._ce||[])">Altijd</button>
+      <button class="filter-btn ${window._filter==='7d'?'active':''}" onclick="window._filter='7d';render(window._lb,window._ev,window._evMissing,window._ao||[],window._fb||[],window._ql||[],window._ce||[])">Afgelopen 7 dagen</button>
+      <button class="filter-btn ${window._filter==='24h'?'active':''}" onclick="window._filter='24h';render(window._lb,window._ev,window._evMissing,window._ao||[],window._fb||[],window._ql||[],window._ce||[])">Afgelopen 24 uur</button>
     </div>
+
+    <!-- ── CE-cijfers ── -->
+    ${ce.length?`
+    <div class="sec">🎓 CE-cijfers (bewijs dat het werkt)</div>
+    <div class="kpi-grid">
+      <div class="kpi c-gr"><div class="kpi-lbl">Ingediende cijfers</div><div class="kpi-val">${ce.length}</div><div class="kpi-sub">Leerlingen deelden hun CE-cijfer</div></div>
+      <div class="kpi c-or"><div class="kpi-lbl">Gemiddeld CE-cijfer</div><div class="kpi-val">${(ce.reduce((s,e)=>s+(e.meta?.cijfer||0),0)/ce.length).toFixed(1)}</div><div class="kpi-sub">Alle vakken samen</div></div>
+      <div class="kpi c-bl"><div class="kpi-lbl">Geslaagd (≥6)</div><div class="kpi-val">${ce.filter(e=>(e.meta?.cijfer||0)>=6).length}</div><div class="kpi-sub">${Math.round(ce.filter(e=>(e.meta?.cijfer||0)>=6).length/ce.length*100)}% van ingevulde cijfers</div></div>
+      <div class="kpi c-pu"><div class="kpi-lbl">Gem. sessies voor examen</div><div class="kpi-val">${ce.filter(e=>e.meta?.sessions_voor_examen).length?Math.round(ce.filter(e=>e.meta?.sessions_voor_examen).reduce((s,e)=>s+(e.meta.sessions_voor_examen||0),0)/ce.filter(e=>e.meta?.sessions_voor_examen).length):'-'}</div><div class="kpi-sub">Quizzen voor het CE</div></div>
+    </div>
+    <div class="panel" style="margin-top:.6rem">
+      <div class="panel-h">Cijfers per vak</div>
+      <div style="display:flex;flex-wrap:wrap;gap:8px;padding:4px 0">
+        ${Object.entries(ce.reduce((m,e)=>{const v=e.meta?.vak_naam||'?';if(!m[v])m[v]=[];m[v].push(e.meta?.cijfer||0);return m;},{})).sort((a,b)=>b[1].length-a[1].length).map(([v,arr])=>{const avg=(arr.reduce((s,c)=>s+c,0)/arr.length).toFixed(1);return `<div style="background:var(--card2);border:1px solid var(--border);border-radius:10px;padding:10px 14px;min-width:140px"><div style="font-size:11px;color:var(--muted);font-weight:700;margin-bottom:4px">${v}</div><div style="font-family:var(--font-head);font-size:22px;font-weight:800;color:${avg>=6?'var(--green)':avg>=5?'var(--yellow)':'var(--red)'}">${avg}</div><div style="font-size:11px;color:var(--muted)">${arr.length} leerling${arr.length!==1?'en':''}</div></div>`;}).join('')}
+      </div>
+    </div>`:''}
+
+    <!-- ── Question log stats ── -->
+    ${ql.length?`
+    <div class="sec">📊 Per-vraag data (adaptive engine)</div>
+    <div class="kpi-grid">
+      <div class="kpi c-or"><div class="kpi-lbl">Gelogde antwoorden</div><div class="kpi-val">${ql.length.toLocaleString()}</div><div class="kpi-sub">Individuele vraag-antwoorden</div></div>
+      <div class="kpi c-gr"><div class="kpi-lbl">Correctheidspercentage</div><div class="kpi-val">${Math.round(ql.filter(e=>e.is_correct).length/ql.length*100)}%</div><div class="kpi-sub">${ql.filter(e=>e.is_correct).length} goed · ${ql.filter(e=>!e.is_correct).length} fout</div></div>
+      <div class="kpi c-bl"><div class="kpi-lbl">Gem. responstijd</div><div class="kpi-val">${(ql.filter(e=>e.respons_ms>200&&e.respons_ms<30000).reduce((s,e)=>s+e.respons_ms,0)/(ql.filter(e=>e.respons_ms>200&&e.respons_ms<30000).length||1)/1000).toFixed(1)}s</div><div class="kpi-sub">Seconden per vraag</div></div>
+      <div class="kpi c-pu"><div class="kpi-lbl">Moeilijkste vakken</div><div class="kpi-val" style="font-size:1rem">${Object.entries(ql.reduce((m,e)=>{if(!m[e.vak_id])m[e.vak_id]={ok:0,tot:0};m[e.vak_id].tot++;if(e.is_correct)m[e.vak_id].ok++;return m;},{})).sort((a,b)=>(a[1].ok/a[1].tot)-(b[1].ok/b[1].tot)).slice(0,2).map(([v,d])=>`${v} (${Math.round(d.ok/d.tot*100)}%)`).join(', ')||'-'}</div><div class="kpi-sub">Laagste slagingskans</div></div>
+    </div>`:''}
+
+    <!-- ── Quiz events (completed/abandoned) ── -->
+    ${ev.filter(e=>e.event_type==='quiz_completed'||e.event_type==='quiz_abandoned').length?`
+    <div class="sec">🎯 Quiz voltooiing & drop-off</div>
+    <div class="kpi-grid">
+      ${(()=>{const qc=ev.filter(e=>e.event_type==='quiz_completed');const qa=ev.filter(e=>e.event_type==='quiz_abandoned');const total=qc.length+qa.length;const compRate=total?Math.round(qc.length/total*100):0;const avgAbandoned=qa.length?Math.round(qa.reduce((s,e)=>s+(e.meta?.gestopt_bij||0),0)/qa.length):0;const avgPct=qc.length?Math.round(qc.reduce((s,e)=>s+(e.meta?.pct||0),0)/qc.length):0;return `<div class="kpi c-gr"><div class="kpi-lbl">Voltooiingspercentage</div><div class="kpi-val">${compRate}%</div><div class="kpi-sub">${qc.length} voltooid · ${qa.length} afgebroken</div></div><div class="kpi c-or"><div class="kpi-lbl">Gem. score (voltooid)</div><div class="kpi-val">${avgPct}%</div><div class="kpi-sub">Gemiddeld quizresultaat</div></div><div class="kpi c-red" style="--red-rgb:239,68,68"><div class="kpi-lbl">Gem. vraag bij stoppen</div><div class="kpi-val">${avgAbandoned}</div><div class="kpi-sub">Vraagnummer bij afbreken</div></div>`;})()}
+    </div>`:''}
+
 
     <!-- ── Quizzen KPIs ── -->
     <div class="sec">Quizzen & gebruikers</div>

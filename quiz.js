@@ -153,6 +153,7 @@ function toggleFlagQ(){
 function toonV(){
   const q=ST.vragen[ST.idx];
   const tot=ST.vragen.length;
+  ST._vraagStartMs=Date.now(); // starttijd voor responstijd-meting
 
   // Vlag-knop bijwerken
   const _fb=document.getElementById('quiz-flag-btn');
@@ -295,6 +296,8 @@ function _kiesReveal(gekozen,correct,btns){
   btns[gekozen].classList.remove('suspense-pending');
   const ok=gekozen===correct;
   ST.score+=ok?1:0;
+  // Log per-vraag data voor adaptive engine
+  try{const ms=ST._vraagStartMs?Date.now()-ST._vraagStartMs:null;logQuestion(ST.vak?.id,ST.domein?.id,ST.mode,ST.idx,ok,ms);}catch(e){}
   if(ok){ST.combo=(ST.combo||0)+1;playSound('correct');haptic([20]);}
   else{ST.combo=0;playSound('wrong');haptic([60,20,60]);}
   // Particles van de geklikte knop
@@ -900,7 +903,7 @@ function _showQuitDialog(){
     </div>
     ${combo>=2?`<div class="quit-combo-warn">🔥 Je verliest je ${combo}× combo als je stopt!</div>`:''}
     <div style="display:flex;gap:10px">
-      <button onclick="this.closest('.quit-overlay').remove();_surgeActive=false;_surgeLeft=0;_removeSurgeBadge();show('sc-detail')" style="flex:1;padding:13px;background:var(--s);border:1px solid var(--bo);border-radius:12px;font-size:14px;font-weight:700;cursor:pointer;color:var(--mu);font-family:var(--font)">Stoppen</button>
+      <button onclick="try{_flushQBatch();trackEvent('quiz_abandoned',{vak:ST.vak?.naam,vak_id:ST.vak?.id,domein_id:ST.domein?.id,mode:ST.mode,gestopt_bij:ST.idx,totaal:ST.vragen?.length,score_zo_ver:ST.score});}catch(e){}this.closest('.quit-overlay').remove();_surgeActive=false;_surgeLeft=0;_removeSurgeBadge();show('sc-detail')" style="flex:1;padding:13px;background:var(--s);border:1px solid var(--bo);border-radius:12px;font-size:14px;font-weight:700;cursor:pointer;color:var(--mu);font-family:var(--font)">Stoppen</button>
       <button onclick="this.closest('.quit-overlay').remove();if(ST.mode==='snel'&&ST.tijd>0)startTimer(ST.tijd)" style="flex:2;padding:13px;background:var(--or);border:none;border-radius:12px;font-size:15px;font-weight:900;cursor:pointer;color:#fff;font-family:var(--font)">Doorgaan 🔥</button>
     </div>
   </div>`;
@@ -922,6 +925,8 @@ function toonRes(){
   let _recordResult=null;
   try{_recordResult=saveProgress(ST.vak.id,ST.domein.id,ST.mode,sc,tot);}catch(e){}
   try{recordPractice();}catch(e){}
+  // Track quiz voltooid
+  try{_flushQBatch();trackEvent('quiz_completed',{vak:ST.vak?.naam,vak_id:ST.vak?.id,domein_id:ST.domein?.id,mode:ST.mode,score:sc,totaal:tot,pct:Math.round(pct*100)});}catch(e){}
   // Feature 2: PB tracking
   window._newPB=false;window._oldPB=null;
   try{const _pbRes=savePB(ST.vak.id,ST.domein.id,pct);if(_pbRes.isNew){window._newPB=true;window._oldPB=_pbRes.prev?_pbRes.prev.score:null;}}catch(e){}

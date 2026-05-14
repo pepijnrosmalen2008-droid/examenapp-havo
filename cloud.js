@@ -49,6 +49,94 @@ function _getSrc(){
 // Track app open once per browser session
 if(!sessionStorage.getItem('_slagio_ao')){sessionStorage.setItem('_slagio_ao','1');setTimeout(()=>trackEvent('app_open',{src:_getSrc()}),2000);}
 
+// ── PER-VRAAG LOGGING (adaptive engine data) ────────────────────────────
+// Aparte tabel: question_log — wordt gebatch verstuurd (max 1 req per quiz)
+let _qBatch=[];
+let _qBatchTimer=null;
+function logQuestion(vakId,domeinId,mode,vraagNr,isCorrect,responsMs){
+  try{
+    _qBatch.push({
+      did:_DID,
+      user_id:currentUser?.id||null,
+      niveau:typeof APP_LEVEL!=='undefined'?APP_LEVEL:'havo',
+      vak_id:vakId,
+      domein_id:domeinId,
+      mode:mode,
+      vraag_nr:vraagNr,
+      is_correct:isCorrect,
+      respons_ms:Math.min(responsMs||0,60000)
+    });
+    clearTimeout(_qBatchTimer);
+    // Flush na 3s inactiviteit of als batch >=10
+    if(_qBatch.length>=10)_flushQBatch();
+    else _qBatchTimer=setTimeout(_flushQBatch,3000);
+  }catch(e){}
+}
+function _flushQBatch(){
+  if(!_qBatch.length)return;
+  const rows=[..._qBatch];
+  _qBatch=[];
+  SB.from('question_log').insert(rows).then(()=>{}).catch(()=>{});
+}
+
+// ── CE-CIJFER COLLECTIE ──────────────────────────────────────────────────
+function _checkCeScorePrompts(){
+  try{
+    const mijn=getMijnVakken();
+    if(!mijn.length)return;
+    const today=new Date();today.setHours(0,0,0,0);
+    const shown=JSON.parse(localStorage.getItem('slagio_ce_prompted')||'[]');
+    EXAM_SCHEDULE
+      .filter(e=>e.vakId&&mijn.includes(e.vakId)&&(!e.niveau||e.niveau===APP_LEVEL))
+      .forEach(e=>{
+        const examD=new Date(e.datum);examD.setHours(0,0,0,0);
+        const daysSince=Math.floor((today-examD)/864e5);
+        // Toon prompt 1-14 dagen na examen, één keer per vak
+        if(daysSince>=1&&daysSince<=14&&!shown.includes(e.vakId)){
+          shown.push(e.vakId);
+          localStorage.setItem('slagio_ce_prompted',JSON.stringify(shown));
+          setTimeout(()=>_showCeScoreModal(e.vak,e.vakId),1500);
+        }
+      });
+  }catch(err){}
+}
+function _showCeScoreModal(vakNaam,vakId){
+  if(document.getElementById('ce-score-modal'))return;
+  const el=document.createElement('div');
+  el.id='ce-score-modal';
+  el.style.cssText='position:fixed;inset:0;background:rgba(0,0,0,.6);z-index:9999;display:flex;align-items:flex-end;justify-content:center;backdrop-filter:blur(4px)';
+  el.innerHTML=`<div style="background:var(--s);border-radius:24px 24px 0 0;padding:28px 24px 40px;width:100%;max-width:480px;box-shadow:0 -20px 60px rgba(0,0,0,.3)">
+    <div style="width:36px;height:4px;background:var(--bo);border-radius:2px;margin:0 auto 20px"></div>
+    <div style="font-size:28px;text-align:center;margin-bottom:8px">🎓</div>
+    <h3 style="font-family:var(--font-head);font-size:20px;font-weight:900;color:var(--dk);text-align:center;margin-bottom:6px">Je examen ${vakNaam} is geweest!</h3>
+    <p style="font-size:13px;color:var(--mu);text-align:center;margin-bottom:22px;line-height:1.5">Wat was je eindcijfer? Jouw score helpt ons aantonen dat Slagio werkt — voor jou en toekomstige leerlingen.</p>
+    <div style="display:flex;justify-content:center;gap:8px;flex-wrap:wrap;margin-bottom:20px">
+      ${[1,2,3,4,5,6,7,8,9,10].map(c=>`<button onclick="_submitCeScore('${vakId}','${vakNaam}',${c})" style="width:48px;height:48px;border-radius:12px;border:2px solid var(--bo);background:var(--s);font-family:var(--font-head);font-size:17px;font-weight:800;cursor:pointer;color:${c>=6?'#22c55e':c>=5?'var(--or)':'#ef4444'};transition:all .15s" onmouseenter="this.style.transform='scale(1.12)'" onmouseleave="this.style.transform=''">${c}</button>`).join('')}
+    </div>
+    <button onclick="document.getElementById('ce-score-modal').remove()" style="width:100%;padding:12px;background:none;border:none;color:var(--mu);font-size:13px;cursor:pointer">Overslaan</button>
+  </div>`;
+  document.body.appendChild(el);
+}
+function _submitCeScore(vakId,vakNaam,cijfer){
+  try{
+    const p=getProgress();
+    const sessions=Object.entries(p).filter(([k])=>k.startsWith(vakId+'_')).reduce((s,[,v])=>s+(v.attempts||0),0);
+    trackEvent('ce_cijfer',{vak_id:vakId,vak_naam:vakNaam,cijfer,sessions_voor_examen:sessions});
+  }catch(e){}
+  const modal=document.getElementById('ce-score-modal');
+  if(modal){
+    modal.innerHTML=`<div style="background:var(--s);border-radius:24px 24px 0 0;padding:40px 24px;width:100%;max-width:480px;text-align:center">
+      <div style="font-size:40px;margin-bottom:12px">${cijfer>=6?'🎉':'💪'}</div>
+      <h3 style="font-family:var(--font-head);font-size:22px;font-weight:900;color:var(--dk);margin-bottom:8px">${cijfer>=6?'Gefeliciteerd!':'Volgende keer beter!'}</h3>
+      <p style="color:var(--mu);font-size:14px;margin-bottom:24px">Bedankt voor je cijfer — dit helpt ons enorm!</p>
+      <button onclick="document.getElementById('ce-score-modal').remove()" style="padding:13px 32px;background:var(--or);color:#fff;border:none;border-radius:13px;font-family:var(--font-head);font-size:15px;font-weight:800;cursor:pointer">Sluiten</button>
+    </div>`;
+    setTimeout(()=>modal.remove(),4000);
+  }
+}
+// Check CE score prompts elke keer dat de app opent (na examens)
+setTimeout(()=>{try{if(typeof EXAM_SCHEDULE!=='undefined'&&typeof getMijnVakken==='function')_checkCeScorePrompts();}catch(e){}},5000);
+
 // ── FEEDBACK POPUP (1-5 sterren na event) ──────────────────────────────
 const _FB_LABELS={snel:'Snelle Quiz',flashcard:'Flashcards',simulatietoets:'Simulatietoets',bot_race:'Bot Race'};
 function showFeedbackPopup(feature){
