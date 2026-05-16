@@ -318,38 +318,39 @@ function clearGridSearch(){
 
 // ── DEEP SEARCH ──────────────────────────────────────────────────────────
 let _sbRes=null;
+let _sbData=[]; // flat array van alle vraag-resultaten (voor directe navigatie)
+
 function _hl(text,q){
-  // Highlight zoekwoord in tekst, geeft max ~80 tekens terug
   const s=String(text||'');
   const i=s.toLowerCase().indexOf(q);
   if(i<0)return s.slice(0,80)+(s.length>80?'…':'');
   const from=Math.max(0,i-25);
   return (from>0?'…':'')+s.slice(from,i)+'<mark class="sb-res-mark">'+s.slice(i,i+q.length)+'</mark>'+s.slice(i+q.length,i+q.length+55)+(s.length>i+q.length+55?'…':'');
 }
+
 function _showDeepResults(q,rawQ){
   const vakken=getVK();
-  const rVak=[],rDom=[],rVraag=[];
+  const rVak=[],rDom=[];
+  _sbData=[];
   vakken.forEach(vak=>{
     if(vak.naam.toLowerCase().includes(q)||(vak.beschrijving||'').toLowerCase().includes(q))
       rVak.push(vak);
     (vak.domeinen||[]).forEach(dom=>{
       if(dom.naam.toLowerCase().includes(q))
         rDom.push({vak,dom});
-      // Open vragen
       (dom.oe||[]).forEach(v=>{
         const t=(v.v||v.vraag||'').toLowerCase();
         const a=(v.u||v.antwoord||'').toLowerCase();
         if(t.includes(q)||a.includes(q))
-          rVraag.push({vak,dom,v,icon:'✏️',type:'Open',rawT:v.v||v.vraag||''});
+          _sbData.push({vak,dom,v,mode:'oe',icon:'✏️',type:'Open',rawT:v.v||v.vraag||''});
       });
-      // MC vragen
       (dom.sv||[]).forEach(v=>{
         if((v.v||'').toLowerCase().includes(q))
-          rVraag.push({vak,dom,v,icon:'🔘',type:'MC',rawT:v.v||''});
+          _sbData.push({vak,dom,v,mode:'snel',icon:'🔘',type:'MC',rawT:v.v||''});
       });
     });
   });
-  const total=rVak.length+rDom.length+rVraag.length;
+  const total=rVak.length+rDom.length+_sbData.length;
   if(!total){_hideDeepResults();return;}
   let html='';
   if(rVak.length){
@@ -372,12 +373,12 @@ function _showDeepResults(q,rawQ){
     });
     html+='</div>';
   }
-  if(rVraag.length){
-    html+=`<div class="sb-res-group"><div class="sb-res-label">❓ Vragen (${rVraag.length})</div>`;
-    rVraag.slice(0,6).forEach(({vak,dom,icon,type,rawT})=>{
-      html+=`<div class="sb-res-item" onclick="_sbGo('domein','${vak.id}','${dom.id}')">
-        <div class="sb-res-icon" style="background:${vak.kleur}22;color:${vak.kleur}">${icon}</div>
-        <div><div class="sb-res-title">${_hl(rawT,q)}</div><div class="sb-res-sub">${vak.naam} · Domein ${dom.id} · ${type}</div></div>
+  if(_sbData.length){
+    html+=`<div class="sb-res-group"><div class="sb-res-label">❓ Vragen (${_sbData.length})</div>`;
+    _sbData.slice(0,6).forEach((r,i)=>{
+      html+=`<div class="sb-res-item" onclick="_sbGo('vraag',${i})">
+        <div class="sb-res-icon" style="background:${r.vak.kleur}22;color:${r.vak.kleur}">${r.icon}</div>
+        <div><div class="sb-res-title">${_hl(r.rawT,q)}</div><div class="sb-res-sub">${r.vak.naam} · Domein ${r.dom.id} · ${r.type}</div></div>
       </div>`;
     });
     html+='</div>';
@@ -391,6 +392,7 @@ function _showDeepResults(q,rawQ){
   }
   _sbRes.innerHTML=html;
 }
+
 function _sbOutClick(e){
   const inp=document.getElementById('sb-input');
   if(_sbRes&&!_sbRes.contains(e.target)&&e.target!==inp)_hideDeepResults();
@@ -399,10 +401,44 @@ function _hideDeepResults(){
   if(_sbRes){_sbRes.remove();_sbRes=null;}
   document.removeEventListener('click',_sbOutClick);
 }
-function _sbGo(type,vakId,domeinId){
+
+function _sbGo(type,arg,domeinId){
   clearGridSearch();
-  openVak(vakId);
-  if(domeinId)setTimeout(()=>openQmode(domeinId),120);
+  if(type==='vraag'){
+    // Direct naar die exacte vraag: zet de vraag als eerste in de pool
+    const r=_sbData[arg];
+    if(!r)return;
+    ST.vak=r.vak;
+    ST.domein=r.dom;
+    _hideDeepResults();
+    openVak(r.vak.id,true); // true = geen hash push (we starten quiz direct)
+    setTimeout(()=>{
+      const pool=r.mode==='snel'?(r.dom.sv||[]):(r.dom.oe||[]);
+      const rest=pool.filter(q=>q!==r.v);
+      clearQuizDraft();
+      ST.mode=r.mode;
+      ST.idx=0;ST.score=0;ST.antwrd=[];ST.tijdPerVraag=[];ST.combo=0;ST.xpThisRound=0;ST.flagged=new Set();ST.isDailyChallenge=false;
+      ST.vragen=[r.v,...rest];
+      if(r.mode==='snel'){
+        ST.shuffleMaps=ST.vragen.map(()=>{const m=[0,1,2,3];for(let i=3;i>0;i--){const j=Math.floor(Math.random()*(i+1));[m[i],m[j]]=[m[j],m[i]];}return m;});
+      }else{ST.shuffleMaps=[];}
+      document.getElementById('qmeta').textContent=`${ST.vak.naam} · D${ST.domein.id}: ${ST.domein.naam} · ${r.mode==='snel'?'Snelle Quiz':'Open vragen'}`;
+      document.getElementById('sc-quiz').classList.toggle('oud-mode',false);
+      show('sc-quiz');
+      requestAnimationFrame(()=>requestAnimationFrame(()=>{
+        const skel=document.getElementById('quiz-skeleton');
+        const body=document.getElementById('qbody-inner');
+        if(skel)skel.style.display='none';
+        if(body)body.style.display='';
+        toonV();
+      }));
+    },80);
+  } else if(type==='domein'){
+    openVak(arg);
+    setTimeout(()=>openQmode(domeinId),120);
+  } else {
+    openVak(arg);
+  }
 }
 
 function buildGradeInsight(){
