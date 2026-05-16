@@ -404,35 +404,34 @@ function _hideDeepResults(){
 
 function _sbGo(type,arg,domeinId){
   clearGridSearch();
+  _hideDeepResults();
   if(type==='vraag'){
-    // Direct naar die exacte vraag: zet de vraag als eerste in de pool
     const r=_sbData[arg];
     if(!r)return;
+    // Zet state direct — geen openVak nodig (vermijdt sc-detail tussenslide)
     ST.vak=r.vak;
     ST.domein=r.dom;
-    _hideDeepResults();
-    openVak(r.vak.id,true); // true = geen hash push (we starten quiz direct)
-    setTimeout(()=>{
-      const pool=r.mode==='snel'?(r.dom.sv||[]):(r.dom.oe||[]);
-      const rest=pool.filter(q=>q!==r.v);
-      clearQuizDraft();
-      ST.mode=r.mode;
-      ST.idx=0;ST.score=0;ST.antwrd=[];ST.tijdPerVraag=[];ST.combo=0;ST.xpThisRound=0;ST.flagged=new Set();ST.isDailyChallenge=false;
-      ST.vragen=[r.v,...rest];
-      if(r.mode==='snel'){
-        ST.shuffleMaps=ST.vragen.map(()=>{const m=[0,1,2,3];for(let i=3;i>0;i--){const j=Math.floor(Math.random()*(i+1));[m[i],m[j]]=[m[j],m[i]];}return m;});
-      }else{ST.shuffleMaps=[];}
-      document.getElementById('qmeta').textContent=`${ST.vak.naam} · D${ST.domein.id}: ${ST.domein.naam} · ${r.mode==='snel'?'Snelle Quiz':'Open vragen'}`;
-      document.getElementById('sc-quiz').classList.toggle('oud-mode',false);
-      show('sc-quiz');
-      requestAnimationFrame(()=>requestAnimationFrame(()=>{
-        const skel=document.getElementById('quiz-skeleton');
-        const body=document.getElementById('qbody-inner');
-        if(skel)skel.style.display='none';
-        if(body)body.style.display='';
-        toonV();
-      }));
-    },80);
+    const pool=r.mode==='snel'?(r.dom.sv||[]):(r.dom.oe||[]);
+    const rest=pool.filter(q=>q!==r.v);
+    clearQuizDraft();
+    ST.mode=r.mode;
+    ST.idx=0;ST.score=0;ST.antwrd=[];ST.tijdPerVraag=[];ST.combo=0;ST.xpThisRound=0;ST.flagged=new Set();ST.isDailyChallenge=false;
+    ST.vragen=[r.v,...rest];
+    if(r.mode==='snel'){
+      ST.shuffleMaps=ST.vragen.map(()=>{const m=[0,1,2,3];for(let i=3;i>0;i--){const j=Math.floor(Math.random()*(i+1));[m[i],m[j]]=[m[j],m[i]];}return m;});
+    }else{ST.shuffleMaps=[];}
+    const qmeta=document.getElementById('qmeta');
+    if(qmeta)qmeta.textContent=`${ST.vak.naam} · D${ST.domein.id}: ${ST.domein.naam} · ${r.mode==='snel'?'Snelle Quiz':'Open vragen'}`;
+    const scQuiz=document.getElementById('sc-quiz');
+    if(scQuiz)scQuiz.classList.remove('oud-mode');
+    show('sc-quiz');
+    requestAnimationFrame(()=>requestAnimationFrame(()=>{
+      const skel=document.getElementById('quiz-skeleton');
+      const body=document.getElementById('qbody-inner');
+      if(skel)skel.style.display='none';
+      if(body)body.style.display='';
+      toonV();
+    }));
   } else if(type==='domein'){
     openVak(arg);
     setTimeout(()=>openQmode(domeinId),120);
