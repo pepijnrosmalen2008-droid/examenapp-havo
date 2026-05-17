@@ -205,7 +205,8 @@ let _hasLocalSession=false; // true als er een opgeslagen sessie in localStorage
     const user=s?.user||s?.data?.user||null;
     const exp=s?.expires_at||(s?.data?.session?.expires_at)||0;
     if(user){
-      _hasLocalSession=true; // er is een opgeslagen sessie — toon nooit Inloggen vóór bevestiging
+      _hasLocalSession=true;
+      localStorage.setItem('slagio_li','1'); // bootstrap — zodat updateProfileNav direct werkt
       if(exp===0||exp*1000>Date.now())currentUser=user;
     }
   }catch(e){}
