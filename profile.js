@@ -734,8 +734,9 @@ function updateProfileNav(){
   const btn=document.getElementById('home-prof-btn');
   if(!btn)return;
   if(!currentUser){
-    // Verberg knop totdat getSession() heeft geantwoord — voorkomt "Inloggen"-flits
-    if(typeof _authReady!=='undefined'&&!_authReady){
+    // Verberg knop als er een lokale sessie is maar onAuthStateChange nog niet heeft gefired
+    // Dit voorkomt de Inloggen-flits bij automatisch inloggen (token-refresh)
+    if(typeof _hasLocalSession!=='undefined'&&_hasLocalSession&&typeof _authReady!=='undefined'&&!_authReady){
       btn.style.visibility='hidden';
       return;
     }

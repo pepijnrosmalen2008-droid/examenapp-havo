@@ -194,7 +194,8 @@ async function _fbRate(rating,feature){
   }catch(e){}
 }
 let currentUser=null;
-let _authReady=false; // true zodra getSession() antwoord heeft gegeven
+let _authReady=false;    // true zodra onAuthStateChange heeft gefired
+let _hasLocalSession=false; // true als er een opgeslagen sessie in localStorage staat
 // Synchrone pre-check: lees Supabase-sessie direct uit localStorage
 (function _preloadSession(){
   try{
@@ -203,19 +204,28 @@ let _authReady=false; // true zodra getSession() antwoord heeft gegeven
     const s=JSON.parse(localStorage.getItem(k)||'null');
     const user=s?.user||s?.data?.user||null;
     const exp=s?.expires_at||(s?.data?.session?.expires_at)||0;
-    if(user&&(exp===0||exp*1000>Date.now())){currentUser=user;}
+    if(user){
+      _hasLocalSession=true; // er is een opgeslagen sessie — toon nooit Inloggen vóór bevestiging
+      if(exp===0||exp*1000>Date.now())currentUser=user;
+    }
   }catch(e){}
 })();
-// Async check + token-refresh via Supabase
+// Async check — alleen syncen, NIET currentUser op null zetten als er een lokale sessie is
+// (getSession kan null geven bij verlopen token terwijl onAuthStateChange die nog refresht)
 SB.auth.getSession().then(({data:{session}})=>{
-  currentUser=session?.user||null;
-  _authReady=true;
-  updateProfileNav();updateCloudStatusBar();
-  if(currentUser){syncFromCloud();syncMyAvatarToCloud();}
+  if(session?.user){
+    currentUser=session.user;
+    _authReady=true;
+    updateProfileNav();updateCloudStatusBar();
+    syncFromCloud();syncMyAvatarToCloud();
+  }
+  // Als session null: wacht op onAuthStateChange (token-refresh) — geen actie
 });
 // Listen for auth changes (login/logout/token refresh)
 SB.auth.onAuthStateChange((_event,session)=>{
   currentUser=session?.user||null;
+  _authReady=true; // onAuthStateChange is de authoratieve bron — nu is auth bepaald
+  if(_event==='SIGNED_OUT')_hasLocalSession=false;
   updateProfileNav();updateCloudStatusBar();
   if(currentUser){
     syncFromCloud();syncMyAvatarToCloud();
