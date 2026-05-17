@@ -737,7 +737,7 @@ function updateProfileNav(){
   // Lees altijd eerst uit localStorage — staat er direct al in, geen Supabase-wacht nodig
   const p=JSON.parse(localStorage.getItem(PROF_KEY)||'{}');
   const liveAvatar=getMyCurrentAvatar();
-  const isLoggedIn=!!(currentUser||(p.naam&&(typeof _hasLocalSession==='undefined'||_hasLocalSession)));
+  const isLoggedIn=!!(currentUser||p.naam);
   if(!isLoggedIn){
     btn.className='hnav-icon-btn hnav-login-cta';
     btn.dataset.tip='';
