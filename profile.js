@@ -736,7 +736,9 @@ function updateProfileNav(){
   const bnavLabel=document.getElementById('bnav-profiel-label');
   const p=JSON.parse(localStorage.getItem(PROF_KEY)||'{}');
   const liveAvatar=getMyCurrentAvatar();
-  const isLoggedIn=!!(currentUser||localStorage.getItem('slagio_li'));
+  // Triple check: currentUser (Supabase), slagio_li (onze vlag), sb-* token in localStorage, of p.naam/p.dier
+  const _sbSession=Object.keys(localStorage).some(k=>k.startsWith('sb-')&&k.includes('auth-token'));
+  const isLoggedIn=!!(currentUser||localStorage.getItem('slagio_li')||_sbSession||p.naam||p.dier);
 
   // ── Desktop top-right knop ──
   if(btn){
