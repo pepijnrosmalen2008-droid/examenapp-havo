@@ -194,15 +194,14 @@ async function _fbRate(rating,feature){
   }catch(e){}
 }
 let currentUser=null;
-// Synchrone pre-check: lees Supabase-sessie direct uit localStorage zodat
-// updateProfileNav() meteen de juiste staat toont (geen "Inloggen"-flits).
+let _authReady=false; // true zodra getSession() antwoord heeft gegeven
+// Synchrone pre-check: lees Supabase-sessie direct uit localStorage
 (function _preloadSession(){
   try{
     const k=Object.keys(localStorage).find(x=>x.startsWith('sb-')&&x.endsWith('-auth-token'));
     if(!k)return;
     const s=JSON.parse(localStorage.getItem(k)||'null');
     const user=s?.user||s?.data?.user||null;
-    // Controleer of token nog niet verlopen is (exp in seconden)
     const exp=s?.expires_at||(s?.data?.session?.expires_at)||0;
     if(user&&(exp===0||exp*1000>Date.now())){currentUser=user;}
   }catch(e){}
@@ -210,6 +209,7 @@ let currentUser=null;
 // Async check + token-refresh via Supabase
 SB.auth.getSession().then(({data:{session}})=>{
   currentUser=session?.user||null;
+  _authReady=true;
   updateProfileNav();updateCloudStatusBar();
   if(currentUser){syncFromCloud();syncMyAvatarToCloud();}
 });

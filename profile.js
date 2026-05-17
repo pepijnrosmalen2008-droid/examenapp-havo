@@ -734,12 +734,19 @@ function updateProfileNav(){
   const btn=document.getElementById('home-prof-btn');
   if(!btn)return;
   if(!currentUser){
+    // Verberg knop totdat getSession() heeft geantwoord — voorkomt "Inloggen"-flits
+    if(typeof _authReady!=='undefined'&&!_authReady){
+      btn.style.visibility='hidden';
+      return;
+    }
+    btn.style.visibility='';
     btn.className='hnav-icon-btn hnav-login-cta';
     btn.dataset.tip='';
     btn.setAttribute('aria-label','Inloggen');
     btn.innerHTML=`<svg viewBox="0 0 24 24" width="15" height="15" stroke="currentColor" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4"/><polyline points="10 17 15 12 10 7"/><line x1="15" y1="12" x2="3" y2="12"/></svg>Inloggen`;
     return;
   }
+  btn.style.visibility='';
   btn.className='hnav-icon-btn';
   const p=JSON.parse(localStorage.getItem(PROF_KEY)||'{}');
   const liveAvatar=getMyCurrentAvatar();
