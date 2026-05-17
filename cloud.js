@@ -224,8 +224,9 @@ SB.auth.getSession().then(({data:{session}})=>{
 // Listen for auth changes (login/logout/token refresh)
 SB.auth.onAuthStateChange((_event,session)=>{
   currentUser=session?.user||null;
-  _authReady=true; // onAuthStateChange is de authoratieve bron — nu is auth bepaald
-  if(_event==='SIGNED_OUT')_hasLocalSession=false;
+  _authReady=true;
+  if(currentUser){try{localStorage.setItem('slagio_li','1');}catch(e){}}
+  else if(_event==='SIGNED_OUT'){try{localStorage.removeItem('slagio_li');}catch(e){}_hasLocalSession=false;}
   updateProfileNav();updateCloudStatusBar();
   if(currentUser){
     syncFromCloud();syncMyAvatarToCloud();
@@ -557,6 +558,7 @@ function doLogout(){
     currentUser=null;
     // Verwijder alle app-data én eventuele overgebleven Supabase-sessietokens
     const toClear=[
+      'slagio_li',
       'examenapp_profiel',
       'slagio_xp',
       'examenapp_streak',
