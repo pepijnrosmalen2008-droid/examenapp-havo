@@ -732,30 +732,52 @@ function doImportConfirm(app){
 
 function updateProfileNav(){
   const btn=document.getElementById('home-prof-btn');
-  if(!btn)return;
-  btn.style.visibility='';
-  // Lees altijd eerst uit localStorage — staat er direct al in, geen Supabase-wacht nodig
+  const bnavIcon=document.getElementById('bnav-profiel-icon');
+  const bnavLabel=document.getElementById('bnav-profiel-label');
   const p=JSON.parse(localStorage.getItem(PROF_KEY)||'{}');
   const liveAvatar=getMyCurrentAvatar();
   const isLoggedIn=!!(currentUser||localStorage.getItem('slagio_li'));
-  if(!isLoggedIn){
-    btn.className='hnav-icon-btn hnav-login-cta';
-    btn.dataset.tip='';
-    btn.setAttribute('aria-label','Inloggen');
-    btn.innerHTML=`<svg viewBox="0 0 24 24" width="15" height="15" stroke="currentColor" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4"/><polyline points="10 17 15 12 10 7"/><line x1="15" y1="12" x2="3" y2="12"/></svg>Inloggen`;
-    return;
+
+  // ── Desktop top-right knop ──
+  if(btn){
+    btn.style.visibility='';
+    if(!isLoggedIn){
+      btn.className='hnav-icon-btn hnav-login-cta';
+      btn.dataset.tip='';
+      btn.setAttribute('aria-label','Inloggen');
+      btn.innerHTML=`<svg viewBox="0 0 24 24" width="15" height="15" stroke="currentColor" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4"/><polyline points="10 17 15 12 10 7"/><line x1="15" y1="12" x2="3" y2="12"/></svg>Inloggen`;
+    }else{
+      btn.className='hnav-icon-btn';
+      if(p.naam&&liveAvatar!=='🐾'){
+        btn.dataset.tip=p.naam.split(' ')[0];
+        btn.innerHTML=`<div class="dock-avatar" style="font-size:16px;background:transparent">${liveAvatar}</div>`;
+      }else if(p.naam){
+        const ini=p.naam.trim().split(' ').map(w=>w[0]).slice(0,2).join('').toUpperCase();
+        btn.dataset.tip=p.naam.split(' ')[0];
+        btn.innerHTML=`<div class="dock-avatar dock-avatar-ini">${ini}</div>`;
+      }else{
+        btn.dataset.tip='Profiel';
+        btn.innerHTML=`<svg viewBox="0 0 24 24" width="18" height="18" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>`;
+      }
+    }
   }
-  btn.className='hnav-icon-btn';
-  if(p.naam&&liveAvatar!=='🐾'){
-    btn.dataset.tip=p.naam.split(' ')[0];
-    btn.innerHTML=`<div class="dock-avatar" style="font-size:16px;background:transparent">${liveAvatar}</div>`;
-  }else if(p.naam){
-    const initials=p.naam.trim().split(' ').map(w=>w[0]).slice(0,2).join('').toUpperCase();
-    btn.dataset.tip=p.naam.split(' ')[0];
-    btn.innerHTML=`<div class="dock-avatar dock-avatar-ini">${initials}</div>`;
-  }else{
-    btn.dataset.tip='Profiel';
-    btn.innerHTML=`<svg viewBox="0 0 24 24" width="18" height="18" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>`;
+
+  // ── Mobiele bottom nav knop ──
+  if(bnavIcon&&bnavLabel){
+    if(!isLoggedIn){
+      bnavIcon.innerHTML=`<svg viewBox="0 0 24 24"><path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4"/><polyline points="10 17 15 12 10 7"/><line x1="15" y1="12" x2="3" y2="12"/></svg>`;
+      bnavLabel.textContent='Inloggen';
+    }else if(p.naam&&liveAvatar!=='🐾'){
+      bnavIcon.innerHTML=`<span style="font-size:20px;line-height:1">${liveAvatar}</span>`;
+      bnavLabel.textContent=p.naam.split(' ')[0];
+    }else if(p.naam){
+      const ini=p.naam.trim().split(' ').map(w=>w[0]).slice(0,2).join('').toUpperCase();
+      bnavIcon.innerHTML=`<div class="dock-avatar dock-avatar-ini" style="width:26px;height:26px;font-size:11px">${ini}</div>`;
+      bnavLabel.textContent=p.naam.split(' ')[0];
+    }else{
+      bnavIcon.innerHTML=`<svg viewBox="0 0 24 24"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>`;
+      bnavLabel.textContent='Profiel';
+    }
   }
 }
 
