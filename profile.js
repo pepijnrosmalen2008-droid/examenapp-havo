@@ -736,19 +736,20 @@ function updateProfileNav(){
   const bnavLabel=document.getElementById('bnav-profiel-label');
   const p=JSON.parse(localStorage.getItem(PROF_KEY)||'{}');
   const liveAvatar=getMyCurrentAvatar();
-  // Triple check: currentUser (Supabase), slagio_li (onze vlag), sb-* token in localStorage, of p.naam/p.dier
-  const _sbSession=Object.keys(localStorage).some(k=>k.startsWith('sb-')&&k.includes('auth-token'));
-  const isLoggedIn=!!(currentUser||localStorage.getItem('slagio_li')||_sbSession||p.naam||p.dier);
+  const _sbSession=Object.keys(localStorage).some(k=>k.startsWith('sb-')&&k.includes('auth'));
+  const isLoggedIn=!!(currentUser||localStorage.getItem('slagio_li')||_sbSession);
+  // authConfirmed = we weten zeker dat iemand NIET ingelogd is (onAuthStateChange heeft gefired zonder user)
+  const authConfirmed=typeof _authReady!=='undefined'&&_authReady&&!currentUser&&!_sbSession&&!localStorage.getItem('slagio_li');
+
+  const _genericProfileSvgLg=`<svg viewBox="0 0 24 24" width="18" height="18" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>`;
+  const _genericProfileSvgSm=`<svg viewBox="0 0 24 24"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>`;
+  const _loginSvgLg=`<svg viewBox="0 0 24 24" width="15" height="15" stroke="currentColor" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4"/><polyline points="10 17 15 12 10 7"/><line x1="15" y1="12" x2="3" y2="12"/></svg>`;
+  const _loginSvgSm=`<svg viewBox="0 0 24 24"><path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4"/><polyline points="10 17 15 12 10 7"/><line x1="15" y1="12" x2="3" y2="12"/></svg>`;
 
   // ── Desktop top-right knop ──
   if(btn){
     btn.style.visibility='';
-    if(!isLoggedIn){
-      btn.className='hnav-icon-btn hnav-login-cta';
-      btn.dataset.tip='';
-      btn.setAttribute('aria-label','Inloggen');
-      btn.innerHTML=`<svg viewBox="0 0 24 24" width="15" height="15" stroke="currentColor" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4"/><polyline points="10 17 15 12 10 7"/><line x1="15" y1="12" x2="3" y2="12"/></svg>Inloggen`;
-    }else{
+    if(isLoggedIn){
       btn.className='hnav-icon-btn';
       if(p.naam&&liveAvatar!=='🐾'){
         btn.dataset.tip=p.naam.split(' ')[0];
@@ -759,25 +760,41 @@ function updateProfileNav(){
         btn.innerHTML=`<div class="dock-avatar dock-avatar-ini">${ini}</div>`;
       }else{
         btn.dataset.tip='Profiel';
-        btn.innerHTML=`<svg viewBox="0 0 24 24" width="18" height="18" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>`;
+        btn.innerHTML=_genericProfileSvgLg;
       }
+    }else if(authConfirmed){
+      btn.className='hnav-icon-btn hnav-login-cta';
+      btn.dataset.tip='';
+      btn.setAttribute('aria-label','Inloggen');
+      btn.innerHTML=_loginSvgLg+'Inloggen';
+    }else{
+      // Auth state onbekend (nog niet geladen) — toon generiek profiel-icoon, geen Inloggen-flash
+      btn.className='hnav-icon-btn';
+      btn.dataset.tip='Profiel';
+      btn.innerHTML=_genericProfileSvgLg;
     }
   }
 
   // ── Mobiele bottom nav knop ──
   if(bnavIcon&&bnavLabel){
-    if(!isLoggedIn){
-      bnavIcon.innerHTML=`<svg viewBox="0 0 24 24"><path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4"/><polyline points="10 17 15 12 10 7"/><line x1="15" y1="12" x2="3" y2="12"/></svg>`;
+    if(isLoggedIn){
+      if(p.naam&&liveAvatar!=='🐾'){
+        bnavIcon.innerHTML=`<span style="font-size:20px;line-height:1">${liveAvatar}</span>`;
+        bnavLabel.textContent=p.naam.split(' ')[0];
+      }else if(p.naam){
+        const ini=p.naam.trim().split(' ').map(w=>w[0]).slice(0,2).join('').toUpperCase();
+        bnavIcon.innerHTML=`<div class="dock-avatar dock-avatar-ini" style="width:26px;height:26px;font-size:11px">${ini}</div>`;
+        bnavLabel.textContent=p.naam.split(' ')[0];
+      }else{
+        bnavIcon.innerHTML=_genericProfileSvgSm;
+        bnavLabel.textContent='Profiel';
+      }
+    }else if(authConfirmed){
+      bnavIcon.innerHTML=_loginSvgSm;
       bnavLabel.textContent='Inloggen';
-    }else if(p.naam&&liveAvatar!=='🐾'){
-      bnavIcon.innerHTML=`<span style="font-size:20px;line-height:1">${liveAvatar}</span>`;
-      bnavLabel.textContent=p.naam.split(' ')[0];
-    }else if(p.naam){
-      const ini=p.naam.trim().split(' ').map(w=>w[0]).slice(0,2).join('').toUpperCase();
-      bnavIcon.innerHTML=`<div class="dock-avatar dock-avatar-ini" style="width:26px;height:26px;font-size:11px">${ini}</div>`;
-      bnavLabel.textContent=p.naam.split(' ')[0];
     }else{
-      bnavIcon.innerHTML=`<svg viewBox="0 0 24 24"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>`;
+      // Auth state onbekend — generiek icoon, geen Inloggen-flash
+      bnavIcon.innerHTML=_genericProfileSvgSm;
       bnavLabel.textContent='Profiel';
     }
   }
