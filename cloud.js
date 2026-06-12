@@ -209,8 +209,13 @@ function _onAuthReady(cb){if(_authReady){cb(currentUser);}else{_authReadyCbs.pus
     const exp=s?.expires_at||(s?.data?.session?.expires_at)||0;
     if(user){
       _hasLocalSession=true;
-      localStorage.setItem('slagio_li','1'); // bootstrap — zodat updateProfileNav direct werkt
-      if(exp===0||exp*1000>Date.now())currentUser=user;
+      if(exp===0||exp*1000>Date.now()){
+        currentUser=user;
+        localStorage.setItem('slagio_li','1'); // bootstrap — token is nog geldig
+      } else {
+        // Token verlopen — slagio_li wissen zodat UI niet vals "ingelogd" toont
+        try{localStorage.removeItem('slagio_li');}catch(e){}
+      }
     }
   }catch(e){}
 })();
