@@ -13,53 +13,80 @@
     .btn-primary{background:linear-gradient(135deg,#6366f1,#4f46e5);color:#fff;}
     .btn-secondary{background:#2a2f45;color:#e2e8f0;}
     .log{margin-top:16px;font-size:12px;color:#64748b;text-align:left;line-height:1.8;}
+    .spinner{display:inline-block;width:16px;height:16px;border:2px solid rgba(255,255,255,.3);border-top-color:#fff;border-radius:50%;animation:spin .6s linear infinite;vertical-align:middle;margin-right:6px;}
+    @keyframes spin{to{transform:rotate(360deg)}}
   </style>
 </head>
 <body>
 <div class="card">
   <div style="font-size:36px;margin-bottom:12px">🧪</div>
   <h2>B2 Testmodus</h2>
-  <p>Reset sessie naar anonieme first-timer en open de app.</p>
-  <button class="btn btn-primary" onclick="startTest()">Reset &amp; open app →</button>
+  <p>Logt echt uit via Supabase, wist alle lokale app-data en opent de app als anonieme first-timer.</p>
+  <button class="btn btn-primary" id="btn-go" onclick="startTest()">Reset &amp; open app →</button>
   <button class="btn btn-secondary" onclick="onlyReset()">Alleen reset (blijf hier)</button>
   <div class="log" id="log"></div>
 </div>
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/dist/umd/supabase.min.js"></script>
 <script>
-const PROJECT = 'wcfenegohryxhatzxvtw';
-const KEYS_TO_REMOVE = [
-  'slagio_reg_prompted',
-  `sb-${PROJECT}-auth-token`,
-  `sb-${PROJECT}-auth-token-code-verifier`,
-  `supabase.auth.token`,
+const SUPABASE_URL = 'https://wcfenegohryxhatzxvtw.supabase.co';
+const SUPABASE_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6IndjZmVuZWdvaHJ5eGhhdHp4dnR3Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODEyODcwMDAsImV4cCI6MjA5Njg2MzAwMH0.B3ygpkosBybQd53VLiRxqIbVxBPWw4V-Nj2IS3k4UFo';
+
+const PROGRESS_KEYS = [
+  'examenapp_profiel','slagio_xp','examenapp_streak',
+  'examenapp_progress_havo','examenapp_progress_vwo',
+  'examenapp_mijnvakken_havo','examenapp_mijnvakken_vwo',
+  'examenapp_favs_havo','examenapp_favs_vwo',
+  'examenapp_cijfers_havo','examenapp_cijfers_vwo',
+  'slagio_mastery','slagio_li','slagio_daily_goal',
+  'slagio_daily_challenge_havo','slagio_daily_challenge_vwo',
+  'slagio_fc_sessions','slagio_race_wins','slagio_plan_tasks','slagio_perfect_count',
+  'slagio_sr_v1','slagio_aqp_v1','slagio_reg_prompted',
 ];
 
-function doReset(){
-  const log = document.getElementById('log');
-  const lines = [];
-  KEYS_TO_REMOVE.forEach(k=>{
-    if(localStorage.getItem(k) !== null){
-      localStorage.removeItem(k);
-      lines.push(`✓ verwijderd: ${k}`);
-    } else {
-      lines.push(`— niet aanwezig: ${k}`);
-    }
-  });
-  // Ook alle sb-* auth keys opruimen voor zekerheid
-  Object.keys(localStorage).filter(k=>k.startsWith('sb-')&&k.includes('auth')).forEach(k=>{
-    localStorage.removeItem(k);
-    lines.push(`✓ verwijderd: ${k}`);
-  });
-  log.innerHTML = lines.join('<br>');
-  return lines;
+function log(msg){ document.getElementById('log').innerHTML += msg + '<br>'; }
+
+async function doSignOut(){
+  try{
+    const SB = window.supabase.createClient(SUPABASE_URL, SUPABASE_KEY);
+    const { error } = await SB.auth.signOut({ scope: 'local' });
+    log(error ? '⚠ signOut fout: ' + error.message : '✓ Supabase signOut geslaagd');
+  }catch(e){ log('⚠ signOut exception: ' + e.message); }
 }
 
-function startTest(){
-  doReset();
-  setTimeout(()=>{ window.location.href = '/'; }, 600);
+function wipeLocalStorage(){
+  // Verwijder app-data
+  PROGRESS_KEYS.forEach(k=>{
+    if(localStorage.getItem(k) !== null){ localStorage.removeItem(k); log('✓ ' + k); }
+  });
+  // Verwijder alle Supabase auth-keys
+  Object.keys(localStorage).filter(k=>k.startsWith('sb-')).forEach(k=>{
+    localStorage.removeItem(k); log('✓ ' + k);
+  });
+  // Wis sessionStorage ook
+  try{ sessionStorage.clear(); log('✓ sessionStorage gewist'); }catch(e){}
 }
 
-function onlyReset(){
-  doReset();
+async function onlyReset(){
+  document.getElementById('log').innerHTML = '';
+  log('<b>Uitloggen bij Supabase…</b>');
+  await doSignOut();
+  log('<b>Lokale data wissen…</b>');
+  wipeLocalStorage();
+  log('<br><b style="color:#22c55e">✓ Klaar — je bent nu anoniem op dit device.</b>');
+}
+
+async function startTest(){
+  const btn = document.getElementById('btn-go');
+  btn.disabled = true;
+  btn.innerHTML = '<span class="spinner"></span>Bezig…';
+  document.getElementById('log').innerHTML = '';
+  log('<b>Uitloggen bij Supabase…</b>');
+  await doSignOut();
+  log('<b>Lokale data wissen…</b>');
+  wipeLocalStorage();
+  log('<b>Doorsturen naar app…</b>');
+  setTimeout(()=>{ window.location.href = '/'; }, 800);
 }
 </script>
 </body>

@@ -502,6 +502,13 @@ async function doRegister(){
     if(error)throw error;
     const initAvatar=selectedAnimalId?getAnimalEmoji(selectedAnimalId,0):'🐾';
     const prof={naam,avatar:initAvatar,animalId:selectedAnimalId,school:'',klas:'',profiel:''};
+    // Wis lokale voortgang zodat het nieuwe account schoon begint
+    ['examenapp_progress_havo','examenapp_progress_vwo','examenapp_streak','slagio_xp',
+     'examenapp_mijnvakken_havo','examenapp_mijnvakken_vwo','examenapp_favs_havo','examenapp_favs_vwo',
+     'examenapp_cijfers_havo','examenapp_cijfers_vwo','slagio_mastery',
+     'slagio_daily_challenge_havo','slagio_daily_challenge_vwo',
+     'slagio_fc_sessions','slagio_race_wins','slagio_plan_tasks','slagio_perfect_count',
+     'slagio_sr_v1','slagio_aqp_v1'].forEach(k=>localStorage.removeItem(k));
     localStorage.setItem(PROF_KEY,JSON.stringify(prof));
     if(data.user){currentUser=data.user;await cloudSet('profiel',prof);}
     // Supabase may require email confirmation
