@@ -403,8 +403,9 @@ function _renderLbWithData(){
 
   // List
   const listEl=document.getElementById('lb-list');
+  const _resetBanner=`<div style="margin:0 0 10px;padding:9px 14px;background:rgba(96,165,250,.08);border:1px solid rgba(96,165,250,.2);border-radius:12px;font-size:11.5px;color:rgba(96,165,250,.85);display:flex;gap:8px;align-items:center"><span>🔄</span><span>Scores gereset op <strong>1 juni 2025</strong> — start schooljaar 2025–2026</span></div>`;
   if(top.length===0){
-    listEl.innerHTML=`<div class="lb-empty">
+    listEl.innerHTML=_resetBanner+`<div class="lb-empty">
       <div class="lb-empty-orb">🏆</div>
       <div class="lb-empty-title">Wees de eerste!</div>
       <div class="lb-empty-sub">Het bord is leeg — jij kunt de #1 positie pakken. Maak een snelle quiz en zet je score neer.</div>
@@ -438,7 +439,7 @@ function _renderLbWithData(){
       <div class="lb-score"><div class="lb-score-num">${e.score}</div><div class="lb-score-sub">pts</div><div style="font-size:9px;color:var(--mu);margin-top:2px">Bekijk →</div></div>
     </div>`;
   });
-  listEl.innerHTML=listHtml||'';
+  listEl.innerHTML=_resetBanner+(listHtml||'');
 
   // Attach click handlers via delegation (avoids inline-onclick quote issues)
   document.querySelectorAll('.lb-clickable').forEach(el=>{
