@@ -122,6 +122,10 @@
     .exam-info p{color:var(--text-muted);margin-top:.35rem}
     .exam-info strong{color:var(--text)}
     @media(max-width:600px){.header h1{font-size:1.5rem}.stats{gap:1rem}}
+    .domain-list li a{color:var(--text);text-decoration:none;display:block;transition:color .15s}
+    .domain-list li a:hover{color:var(--accent)}
+    .domain-list li a::after{content:' →';color:var(--accent);opacity:0;transition:opacity .15s}
+    .domain-list li a:hover::after{opacity:1}
   </style>
 </head>
 <body>
@@ -145,10 +149,10 @@
   <div class="card">
     <h2>📚 CE-domeinen Biologie HAVO</h2>
     <ul class="domain-list">
-      <li><strong>Domein A — Vaardigheden en onderzoek</strong> — Biologisch onderzoek, variabelen en experimenten opzetten</li>
-      <li><strong>Domein M — Molecuul- en celniveau</strong> — Stofwisseling van de cel, DNA en erfelijkheid</li>
-      <li><strong>Domein O — Orgaan- en organismeniveau</strong> — Stofwisseling, zelfregulatie en afweer</li>
-      <li><strong>Domein P — Populatie- en ecosysteemniveau</strong> — Ecosystemen, soortvorming en evolutie</li>
+      <li><a href="/vakken/havo-biologie-domein-a.html"><strong>Domein A — Vaardigheden en onderzoek</strong> — Biologisch onderzoek, variabelen en experimenten opzetten</a></li>
+      <li><a href="/vakken/havo-biologie-domein-m.html"><strong>Domein M — Molecuul- en celniveau</strong> — Stofwisseling van de cel, DNA en erfelijkheid</a></li>
+      <li><a href="/vakken/havo-biologie-domein-o.html"><strong>Domein O — Orgaan- en organismeniveau</strong> — Stofwisseling, zelfregulatie en afweer</a></li>
+      <li><a href="/vakken/havo-biologie-domein-p.html"><strong>Domein P — Populatie- en ecosysteemniveau</strong> — Ecosystemen, soortvorming en evolutie</a></li>
     </ul>
   </div>
 

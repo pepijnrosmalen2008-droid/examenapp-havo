@@ -122,6 +122,10 @@
     .exam-info p{color:var(--text-muted);margin-top:.35rem}
     .exam-info strong{color:var(--text)}
     @media(max-width:600px){.header h1{font-size:1.5rem}.stats{gap:1rem}}
+    .domain-list li a{color:var(--text);text-decoration:none;display:block;transition:color .15s}
+    .domain-list li a:hover{color:var(--accent)}
+    .domain-list li a::after{content:' →';color:var(--accent);opacity:0;transition:opacity .15s}
+    .domain-list li a:hover::after{opacity:1}
   </style>
 </head>
 <body>
@@ -145,10 +149,10 @@
   <div class="card">
     <h2>📚 CE-domeinen Wiskunde A HAVO</h2>
     <ul class="domain-list">
-      <li><strong>Domein B — Algebra en tellen</strong> — Rekenen, algebra, exponenten en logaritmen (CE)</li>
-      <li><strong>Domein C — Verbanden</strong> — Lineaire en exponentiële verbanden, functies en grafieken</li>
-      <li><strong>Domein D — Verandering</strong> — Gemiddelde en ogenblikkelijke verandering (alleen SE)</li>
-      <li><strong>Domein E — Statistiek</strong> — Beschrijvende statistiek, normale verdeling en hypothesetoetsen</li>
+      <li><a href="/vakken/havo-wiskunde-a-domein-b.html"><strong>Domein B — Algebra en tellen</strong> — Rekenen, algebra, exponenten en logaritmen (CE)</a></li>
+      <li><a href="/vakken/havo-wiskunde-a-domein-c.html"><strong>Domein C — Verbanden</strong> — Lineaire en exponentiële verbanden, functies en grafieken</a></li>
+      <li><a href="/vakken/havo-wiskunde-a-domein-d.html"><strong>Domein D — Verandering</strong> — Gemiddelde en ogenblikkelijke verandering (alleen SE)</a></li>
+      <li><a href="/vakken/havo-wiskunde-a-domein-e.html"><strong>Domein E — Statistiek</strong> — Beschrijvende statistiek, normale verdeling en hypothesetoetsen</a></li>
     </ul>
   </div>
 

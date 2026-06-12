@@ -122,6 +122,10 @@
     .exam-info p{color:var(--text-muted);margin-top:.35rem}
     .exam-info strong{color:var(--text)}
     @media(max-width:600px){.header h1{font-size:1.5rem}.stats{gap:1rem}}
+    .domain-list li a{color:var(--text);text-decoration:none;display:block;transition:color .15s}
+    .domain-list li a:hover{color:var(--accent)}
+    .domain-list li a::after{content:' →';color:var(--accent);opacity:0;transition:opacity .15s}
+    .domain-list li a:hover::after{opacity:1}
   </style>
 </head>
 <body>
@@ -145,10 +149,10 @@
   <div class="card">
     <h2>📚 CE-domeinen Geschiedenis HAVO</h2>
     <ul class="domain-list">
-      <li><strong>Domein A — Historische vaardigheden</strong> — Historisch redeneren, bronnenanalyse en chronologie (CE)</li>
-      <li><strong>Domein B — Oriëntatie</strong> — Tien tijdvakken van de westerse geschiedenis</li>
+      <li><a href="/vakken/havo-geschiedenis-domein-a.html"><strong>Domein A — Historische vaardigheden</strong> — Historisch redeneren, bronnenanalyse en chronologie (CE)</a></li>
+      <li><a href="/vakken/havo-geschiedenis-domein-b.html"><strong>Domein B — Oriëntatie</strong> — Tien tijdvakken van de westerse geschiedenis</a></li>
       <li><strong>Domein C — De Republiek 1515–1648</strong> — Historische context: de Republiek der Zeven Provinciën</li>
-      <li><strong>Domein D — De Koude Oorlog 1945–1991</strong> — Historische context: de Koude Oorlog</li>
+      <li><a href="/vakken/havo-geschiedenis-domein-d.html"><strong>Domein D — De Koude Oorlog 1945–1991</strong> — Historische context: de Koude Oorlog</a></li>
     </ul>
   </div>
 

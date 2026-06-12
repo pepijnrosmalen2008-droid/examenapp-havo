@@ -122,6 +122,10 @@
     .exam-info p{color:var(--text-muted);margin-top:.35rem}
     .exam-info strong{color:var(--text)}
     @media(max-width:600px){.header h1{font-size:1.5rem}.stats{gap:1rem}}
+    .domain-list li a{color:var(--text);text-decoration:none;display:block;transition:color .15s}
+    .domain-list li a:hover{color:var(--accent)}
+    .domain-list li a::after{content:' →';color:var(--accent);opacity:0;transition:opacity .15s}
+    .domain-list li a:hover::after{opacity:1}
   </style>
 </head>
 <body>
@@ -145,12 +149,12 @@
   <div class="card">
     <h2>📚 CE-domeinen Nederlands HAVO</h2>
     <ul class="domain-list">
-      <li><strong>Domein A — Leesvaardigheid</strong> — Tekstbegrip, tekststructuur en argumentatieve teksten</li>
-      <li><strong>Domein B — Mondelinge taalvaardigheid</strong> — Presenteren, debatteren en luistervaardigheid (SE)</li>
-      <li><strong>Domein C — Schrijfvaardigheid</strong> — Betoog, beschouwing en zakelijke teksten (SE)</li>
-      <li><strong>Domein D — Samenvatten</strong> — Hoofdgedachte, kernzinnen en samenvatting (SE)</li>
-      <li><strong>Domein E — Argumentatieve vaardigheden</strong> — Argumentatiestructuur, drogredenen en betogen beoordelen (CE)</li>
-      <li><strong>Domein F — Literatuur</strong> — Literaire begrippen, stromingen en 8 literaire werken (SE)</li>
+      <li><a href="/vakken/havo-nederlands-domein-a.html"><strong>Domein A — Leesvaardigheid</strong> — Tekstbegrip, tekststructuur en argumentatieve teksten</a></li>
+      <li><a href="/vakken/havo-nederlands-domein-b.html"><strong>Domein B — Mondelinge taalvaardigheid</strong> — Presenteren, debatteren en luistervaardigheid (SE)</a></li>
+      <li><a href="/vakken/havo-nederlands-domein-c.html"><strong>Domein C — Schrijfvaardigheid</strong> — Betoog, beschouwing en zakelijke teksten (SE)</a></li>
+      <li><a href="/vakken/havo-nederlands-domein-d.html"><strong>Domein D — Samenvatten</strong> — Hoofdgedachte, kernzinnen en samenvatting (SE)</a></li>
+      <li><a href="/vakken/havo-nederlands-domein-e.html"><strong>Domein E — Argumentatieve vaardigheden</strong> — Argumentatiestructuur, drogredenen en betogen beoordelen (CE)</a></li>
+      <li><a href="/vakken/havo-nederlands-domein-f.html"><strong>Domein F — Literatuur</strong> — Literaire begrippen, stromingen en 8 literaire werken (SE)</a></li>
     </ul>
   </div>
 

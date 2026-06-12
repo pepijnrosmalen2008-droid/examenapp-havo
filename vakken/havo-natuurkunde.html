@@ -122,6 +122,10 @@
     .exam-info p{color:var(--text-muted);margin-top:.35rem}
     .exam-info strong{color:var(--text)}
     @media(max-width:600px){.header h1{font-size:1.5rem}.stats{gap:1rem}}
+    .domain-list li a{color:var(--text);text-decoration:none;display:block;transition:color .15s}
+    .domain-list li a:hover{color:var(--accent)}
+    .domain-list li a::after{content:' →';color:var(--accent);opacity:0;transition:opacity .15s}
+    .domain-list li a:hover::after{opacity:1}
   </style>
 </head>
 <body>
@@ -145,10 +149,10 @@
   <div class="card">
     <h2>📚 CE-domeinen Natuurkunde HAVO</h2>
     <ul class="domain-list">
-      <li><strong>Domein B — Golven</strong> — Geluid, licht, elektromagnetisch spectrum en beeldvorming</li>
-      <li><strong>Domein C — Beweging en wisselwerking</strong> — Krachten, kinematica en energie</li>
-      <li><strong>Domein D — Lading en veld</strong> — Elektrische schakelingen, Ohm, vermogen en inductie</li>
-      <li><strong>Domein E — Straling en materie</strong> — Radioactiviteit, kernreacties en elektromagnetische straling</li>
+      <li><a href="/vakken/havo-natuurkunde-domein-b.html"><strong>Domein B — Golven</strong> — Geluid, licht, elektromagnetisch spectrum en beeldvorming</a></li>
+      <li><a href="/vakken/havo-natuurkunde-domein-c.html"><strong>Domein C — Beweging en wisselwerking</strong> — Krachten, kinematica en energie</a></li>
+      <li><a href="/vakken/havo-natuurkunde-domein-d.html"><strong>Domein D — Lading en veld</strong> — Elektrische schakelingen, Ohm, vermogen en inductie</a></li>
+      <li><a href="/vakken/havo-natuurkunde-domein-e.html"><strong>Domein E — Straling en materie</strong> — Radioactiviteit, kernreacties en elektromagnetische straling</a></li>
     </ul>
   </div>
 

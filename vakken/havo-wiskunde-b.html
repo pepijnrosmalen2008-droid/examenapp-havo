@@ -122,6 +122,10 @@
     .exam-info p{color:var(--text-muted);margin-top:.35rem}
     .exam-info strong{color:var(--text)}
     @media(max-width:600px){.header h1{font-size:1.5rem}.stats{gap:1rem}}
+    .domain-list li a{color:var(--text);text-decoration:none;display:block;transition:color .15s}
+    .domain-list li a:hover{color:var(--accent)}
+    .domain-list li a::after{content:' →';color:var(--accent);opacity:0;transition:opacity .15s}
+    .domain-list li a:hover::after{opacity:1}
   </style>
 </head>
 <body>
@@ -145,10 +149,10 @@
   <div class="card">
     <h2>📚 CE-domeinen Wiskunde B HAVO</h2>
     <ul class="domain-list">
-      <li><strong>Domein B — Algebra en tellen</strong> — Algebraische vaardigheden, vergelijkingen en ongelijkheden</li>
-      <li><strong>Domein C — Verbanden</strong> — Functies, grafieken en transformaties</li>
-      <li><strong>Domein D — Verandering</strong> — Differentiaalrekening: afgeleide, helling en extremen</li>
-      <li><strong>Domein E — Meetkunde</strong> — Analytische meetkunde, goniometrie en vectoren</li>
+      <li><a href="/vakken/havo-wiskunde-b-domein-b.html"><strong>Domein B — Algebra en tellen</strong> — Algebraische vaardigheden, vergelijkingen en ongelijkheden</a></li>
+      <li><a href="/vakken/havo-wiskunde-b-domein-c.html"><strong>Domein C — Verbanden</strong> — Functies, grafieken en transformaties</a></li>
+      <li><a href="/vakken/havo-wiskunde-b-domein-d.html"><strong>Domein D — Verandering</strong> — Differentiaalrekening: afgeleide, helling en extremen</a></li>
+      <li><a href="/vakken/havo-wiskunde-b-domein-e.html"><strong>Domein E — Meetkunde</strong> — Analytische meetkunde, goniometrie en vectoren</a></li>
     </ul>
   </div>
 

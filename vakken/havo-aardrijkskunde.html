@@ -122,6 +122,10 @@
     .exam-info p{color:var(--text-muted);margin-top:.35rem}
     .exam-info strong{color:var(--text)}
     @media(max-width:600px){.header h1{font-size:1.5rem}.stats{gap:1rem}}
+    .domain-list li a{color:var(--text);text-decoration:none;display:block;transition:color .15s}
+    .domain-list li a:hover{color:var(--accent)}
+    .domain-list li a::after{content:' →';color:var(--accent);opacity:0;transition:opacity .15s}
+    .domain-list li a:hover::after{opacity:1}
   </style>
 </head>
 <body>
@@ -145,10 +149,10 @@
   <div class="card">
     <h2>📚 CE-domeinen Aardrijkskunde HAVO</h2>
     <ul class="domain-list">
-      <li><strong>Domein A — Vaardigheden</strong> — Geografisch redeneren, kaartvaardigheden en ruimtelijke begrippen</li>
-      <li><strong>Domein B — Wereld</strong> — Globalisering, ontwikkelingsvraagstukken en mondiale patronen</li>
-      <li><strong>Domein C — Aarde</strong> — Klimaat, weer, tectoniek en waterkringloop</li>
-      <li><strong>Domein D — Leefomgeving</strong> — Stedelijke en landelijke gebieden in Nederland en Europa</li>
+      <li><a href="/vakken/havo-aardrijkskunde-domein-a.html"><strong>Domein A — Vaardigheden</strong> — Geografisch redeneren, kaartvaardigheden en ruimtelijke begrippen</a></li>
+      <li><a href="/vakken/havo-aardrijkskunde-domein-b.html"><strong>Domein B — Wereld</strong> — Globalisering, ontwikkelingsvraagstukken en mondiale patronen</a></li>
+      <li><a href="/vakken/havo-aardrijkskunde-domein-c.html"><strong>Domein C — Aarde</strong> — Klimaat, weer, tectoniek en waterkringloop</a></li>
+      <li><a href="/vakken/havo-aardrijkskunde-domein-d.html"><strong>Domein D — Leefomgeving</strong> — Stedelijke en landelijke gebieden in Nederland en Europa</a></li>
     </ul>
   </div>
 
