@@ -726,7 +726,7 @@ function saveMyGroep(g){if(g)localStorage.setItem(GRP_KEY,JSON.stringify(g));els
 function genGroepCode(){return Math.random().toString(36).slice(2,8).toUpperCase();}
 
 async function maakGroep(naam){
-  if(!currentUser){showToast('Log eerst in om een groep aan te maken');return;}
+  if(!currentUser){_showAccountPrompt('Groep aanmaken','Maak een gratis account aan om een groep te starten en samen te oefenen met je klas.');return;}
   const code=genGroepCode();
   const displayName=localStorage.getItem('slagio_naam')||(currentUser.user_metadata&&currentUser.user_metadata.naam)||'Jij';
   try{
@@ -740,7 +740,7 @@ async function maakGroep(naam){
 }
 
 async function doeGroepMee(code){
-  if(!currentUser){showToast('Log eerst in om lid te worden van een groep');return;}
+  if(!currentUser){_showAccountPrompt('Groep joinen','Maak een gratis account aan om mee te doen aan een groep en je score te vergelijken met je klas.');return;}
   const displayName=localStorage.getItem('slagio_naam')||(currentUser.user_metadata&&currentUser.user_metadata.naam)||'Jij';
   try{
     const {data:grp,error:e1}=await SB.from('groups').select('*').eq('code',code.toUpperCase().trim()).single();

@@ -598,6 +598,31 @@ function doLogout(){
   });
 }
 
+// ── Account-prompt bottom sheet (herbruikbaar voor alle account-gated features) ──
+function _showAccountPrompt(title, desc, onRegister){
+  if(document.getElementById('acct-prompt-sheet'))return;
+  const el=document.createElement('div');
+  el.id='acct-prompt-sheet';
+  el.style.cssText='position:fixed;inset:0;z-index:9300;display:flex;align-items:flex-end;justify-content:center;background:rgba(0,0,0,.5);backdrop-filter:blur(5px);animation:_lbFdIn .22s ease';
+  el.innerHTML=`<div style="background:var(--card,#1e2130);border-radius:22px 22px 0 0;padding:28px 24px 40px;width:100%;max-width:480px;box-shadow:0 -8px 40px rgba(0,0,0,.4);animation:_lbSlUp .3s cubic-bezier(.22,1,.36,1)">
+    <div style="width:36px;height:4px;background:rgba(255,255,255,.15);border-radius:2px;margin:0 auto 20px"></div>
+    <div style="text-align:center;margin-bottom:20px">
+      <div style="font-size:30px;margin-bottom:10px">🔑</div>
+      <div style="font-size:17px;font-weight:900;color:var(--dk,#e2e8f0);margin-bottom:6px">${title}</div>
+      <div style="font-size:13px;color:var(--mu,#94a3b8);line-height:1.5">${desc}</div>
+    </div>
+    <button id="acct-prompt-reg" style="display:block;width:100%;padding:14px;background:linear-gradient(135deg,#6366f1,#4f46e5);color:#fff;border:none;border-radius:14px;font-size:15px;font-weight:700;cursor:pointer;font-family:var(--font);margin-bottom:10px">Account aanmaken — gratis →</button>
+    <button id="acct-prompt-login" style="display:block;width:100%;padding:12px;background:rgba(255,255,255,.07);color:var(--dk,#e2e8f0);border:none;border-radius:12px;font-size:14px;font-weight:600;cursor:pointer;font-family:var(--font);margin-bottom:8px">Al een account? Inloggen</button>
+    <button id="acct-prompt-skip" style="display:block;width:100%;padding:8px;background:none;border:none;color:var(--mu,#94a3b8);font-size:13px;cursor:pointer;font-family:var(--font)">Niet nu</button>
+  </div>`;
+  const close=()=>{el.style.animation='_lbFdIn .18s ease reverse';setTimeout(()=>el.remove(),180);};
+  el.addEventListener('click',e=>{if(e.target===el)close();});
+  el.querySelector('#acct-prompt-reg').onclick=()=>{close();if(typeof onRegister==='function')onRegister();else{switchAuthTab&&switchAuthTab('register');show('sc-auth');}};
+  el.querySelector('#acct-prompt-login').onclick=()=>{close();switchAuthTab&&switchAuthTab('login');show('sc-auth');};
+  el.querySelector('#acct-prompt-skip').onclick=close;
+  document.body.appendChild(el);
+}
+
 function updateCloudStatusBar(){
   const bar=document.getElementById('cloud-status-bar');
   const sub=document.getElementById('prof-sub-text');

@@ -803,7 +803,13 @@ function updateProfileNav(){
 function openProfiel(){
   if(!currentUser){
     // Auth nog aan het laden — wacht op _onAuthReady callback
-    _onAuthReady(user=>{if(user)openProfiel();else show('sc-auth');});
+    _onAuthReady(user=>{
+      if(user)openProfiel();
+      else _showAccountPrompt(
+        'Account nodig',
+        'Maak een gratis account aan om je profiel te zien, voortgang te synchroniseren en op het leaderboard te verschijnen.'
+      );
+    });
     return;
   }
   loadProfile();
