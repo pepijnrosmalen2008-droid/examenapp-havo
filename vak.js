@@ -191,6 +191,15 @@ function openVak(id,_noHash){
     }
   }
   show('sc-detail');
+  // Deep-link: als ?domein=X is meegegeven, open dat domein automatisch
+  try{
+    const _dl=sessionStorage.getItem('_slagio_open_domein');
+    if(_dl){
+      sessionStorage.removeItem('_slagio_open_domein');
+      const _dom=ST.vak?.domeinen?.find(d=>d.id===_dl);
+      if(_dom) setTimeout(()=>openQmode(_dl),200);
+    }
+  }catch(e){}
 }
 
 // ── LESMETHODE FILTER LOGIC ──────────────────────────────

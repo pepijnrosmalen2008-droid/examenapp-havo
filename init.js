@@ -401,11 +401,13 @@ window.show=function(id,_noHash){_origShow(id,_noHash);updateBottomNav(id);};
 
 // Activeer routing na volledig laden
 window.addEventListener('load',()=>{
-  // Query-param fallback: ?niveau=havo&vak=bi → redirect naar hash
+  // Query-param fallback: ?niveau=havo&vak=bi[&domein=C] → open vak (+ optioneel domein)
   const _qp=new URLSearchParams(location.search);
-  const _qniv=_qp.get('niveau'), _qvak=_qp.get('vak');
+  const _qniv=_qp.get('niveau'), _qvak=_qp.get('vak'), _qdom=_qp.get('domein');
   if(_qniv&&_qvak&&_VAK_SLUG[_qvak]){
     history.replaceState(null,'','#'+_qniv+'-'+_VAK_SLUG[_qvak]);
+    // Sla domein op in sessionStorage; vak.js pakt het op bij openVak()
+    if(_qdom){try{sessionStorage.setItem('_slagio_open_domein',_qdom);}catch(e){}}
   }
   // Path-based routing: /havo en /vwo
   const _path=location.pathname.replace(/\/$/,'');
