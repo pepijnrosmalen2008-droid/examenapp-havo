@@ -1,6 +1,6 @@
 // ═══════ SUPABASE ═══════
-const SUPABASE_URL='https://ypjzpqeufxaagqdiunfd.supabase.co';
-const SUPABASE_KEY='eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InlwanpwcWV1ZnhhYWdxZGl1bmZkIiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODEyODQzMDIsImV4cCI6MjA5Njg2MDMwMn0.ivACFpDXakhK8G4hzQUA7vuYV8KlVHXXTiEg8EKDhZ8';
+const SUPABASE_URL='https://wcfenegohryxhatzxvtw.supabase.co';
+const SUPABASE_KEY='eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6IndjZmVuZWdvaHJ5eGhhdHp4dnR3Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODEyODcwMDAsImV4cCI6MjA5Njg2MzAwMH0.B3ygpkosBybQd53VLiRxqIbVxBPWw4V-Nj2IS3k4UFo';
 const SB=window.supabase.createClient(SUPABASE_URL,SUPABASE_KEY);
 // Persistent device ID — generated once, stored in localStorage
 const _DID=(()=>{try{let id=localStorage.getItem('slagio_did');if(!id){id=(crypto.randomUUID?crypto.randomUUID():'x'+Math.random().toString(36).slice(2)+Date.now().toString(36));localStorage.setItem('slagio_did',id);}return id;}catch(e){return null;}})();
