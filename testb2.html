@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>B2 Test — Slagio</title>
+  <style>
+    body{margin:0;display:flex;align-items:center;justify-content:center;min-height:100vh;background:#0f1117;font-family:system-ui,sans-serif;color:#e2e8f0;}
+    .card{background:#1e2130;border-radius:18px;padding:32px 28px;max-width:360px;text-align:center;box-shadow:0 8px 40px rgba(0,0,0,.4);}
+    h2{margin:0 0 8px;font-size:20px;}
+    p{color:#94a3b8;font-size:14px;margin:0 0 24px;}
+    .btn{display:block;width:100%;padding:13px;border-radius:12px;border:none;font-size:15px;font-weight:700;cursor:pointer;font-family:inherit;margin-bottom:10px;}
+    .btn-primary{background:linear-gradient(135deg,#6366f1,#4f46e5);color:#fff;}
+    .btn-secondary{background:#2a2f45;color:#e2e8f0;}
+    .log{margin-top:16px;font-size:12px;color:#64748b;text-align:left;line-height:1.8;}
+  </style>
+</head>
+<body>
+<div class="card">
+  <div style="font-size:36px;margin-bottom:12px">🧪</div>
+  <h2>B2 Testmodus</h2>
+  <p>Reset sessie naar anonieme first-timer en open de app.</p>
+  <button class="btn btn-primary" onclick="startTest()">Reset &amp; open app →</button>
+  <button class="btn btn-secondary" onclick="onlyReset()">Alleen reset (blijf hier)</button>
+  <div class="log" id="log"></div>
+</div>
+<script>
+const PROJECT = 'wcfenegohryxhatzxvtw';
+const KEYS_TO_REMOVE = [
+  'slagio_reg_prompted',
+  `sb-${PROJECT}-auth-token`,
+  `sb-${PROJECT}-auth-token-code-verifier`,
+  `supabase.auth.token`,
+];
+
+function doReset(){
+  const log = document.getElementById('log');
+  const lines = [];
+  KEYS_TO_REMOVE.forEach(k=>{
+    if(localStorage.getItem(k) !== null){
+      localStorage.removeItem(k);
+      lines.push(`✓ verwijderd: ${k}`);
+    } else {
+      lines.push(`— niet aanwezig: ${k}`);
+    }
+  });
+  // Ook alle sb-* auth keys opruimen voor zekerheid
+  Object.keys(localStorage).filter(k=>k.startsWith('sb-')&&k.includes('auth')).forEach(k=>{
+    localStorage.removeItem(k);
+    lines.push(`✓ verwijderd: ${k}`);
+  });
+  log.innerHTML = lines.join('<br>');
+  return lines;
+}
+
+function startTest(){
+  doReset();
+  setTimeout(()=>{ window.location.href = '/'; }, 600);
+}
+
+function onlyReset(){
+  doReset();
+}
+</script>
+</body>
+</html>
