@@ -499,6 +499,37 @@ function render(lb, ev, evMissing, ao=[], fb=[], ql=[], ce=[]) {
   const maxSrc=srcList[0]?.[1]||1;
   const totalAoSrc=ao.length;
 
+  // ── Activatietrechter ──
+  const uniqQuizzers=new Set(ql.map(r=>r.did).filter(Boolean)).size;
+  const openToQuizPct=uniqDevTotal>0?Math.round(uniqQuizzers/uniqDevTotal*100):0;
+  const accountsPct=uniqDevTotal>0?Math.round(new Set(lb.map(e=>e.user_id).filter(Boolean)).size/uniqDevTotal*100):0;
+  const uniqAccounts=new Set(lb.map(e=>e.user_id).filter(Boolean)).size;
+
+  // ── Studie-intensiteit ──
+  const sessFreq={};
+  lb.forEach(e=>{const n=e.naam||(e.user_id?'uid:'+e.user_id:null);if(n)sessFreq[n]=(sessFreq[n]||0)+1;});
+  const sfVals=Object.values(sessFreq);
+  const sf1=sfVals.filter(v=>v===1).length;
+  const sf2_5=sfVals.filter(v=>v>=2&&v<=5).length;
+  const sf6_20=sfVals.filter(v=>v>=6&&v<=20).length;
+  const sf20p=sfVals.filter(v=>v>20).length;
+  const sfTotal=sf1+sf2_5+sf6_20+sf20p||1;
+
+  // ── Nieuwe vs. terugkerende (per week, uitgebreid) ──
+  const firstSeenMap={};
+  lb.forEach(e=>{const n=e.naam||(e.user_id?'uid:'+e.user_id:null);if(!n)return;if(!firstSeenMap[n]||e.created_at<firstSeenMap[n])firstSeenMap[n]=e.created_at?.slice(0,10);});
+  const activeThisWeekSet=new Set(lb.filter(e=>e.created_at?.slice(0,10)>=w7).map(e=>e.naam||(e.user_id?'uid:'+e.user_id:null)).filter(Boolean));
+  const newUsersW=[...activeThisWeekSet].filter(n=>firstSeenMap[n]>=w7).length;
+  const retUsersW=[...activeThisWeekSet].filter(n=>firstSeenMap[n]&&firstSeenMap[n]<w7).length;
+
+  // ── Abandonment per vak ──
+  const vakAbMap={};
+  ev.filter(e=>(e.event_type==='quiz_abandoned'||e.event_type==='quiz_completed')&&e.vak_naam).forEach(e=>{
+    if(!vakAbMap[e.vak_naam])vakAbMap[e.vak_naam]={c:0,a:0};
+    if(e.event_type==='quiz_completed')vakAbMap[e.vak_naam].c++;else vakAbMap[e.vak_naam].a++;
+  });
+  const vakAbList=Object.entries(vakAbMap).map(([v,d])=>({vak:v,c:d.c,a:d.a,tot:d.c+d.a,pct:Math.round(d.a/(d.c+d.a)*100)})).filter(d=>d.tot>=2).sort((a,b)=>b.pct-a.pct).slice(0,8);
+
   document.getElementById('content').innerHTML = `
 
     <!-- ── Tijdfilter ── -->
@@ -552,6 +583,45 @@ function render(lb, ev, evMissing, ao=[], fb=[], ql=[], ce=[]) {
       ${(()=>{const qc=ev.filter(e=>e.event_type==='quiz_completed');const qa=ev.filter(e=>e.event_type==='quiz_abandoned');const total=qc.length+qa.length;const compRate=total?Math.round(qc.length/total*100):0;const avgAbandoned=qa.length?Math.round(qa.reduce((s,e)=>s+(e.meta?.gestopt_bij||0),0)/qa.length):0;const avgPct=qc.length?Math.round(qc.reduce((s,e)=>s+(e.meta?.pct||0),0)/qc.length):0;return `<div class="kpi c-gr"><div class="kpi-lbl">Voltooiingspercentage</div><div class="kpi-val">${compRate}%</div><div class="kpi-sub">${qc.length} voltooid · ${qa.length} afgebroken</div></div><div class="kpi c-or"><div class="kpi-lbl">Gem. score (voltooid)</div><div class="kpi-val">${avgPct}%</div><div class="kpi-sub">Gemiddeld quizresultaat</div></div><div class="kpi c-red" style="--red-rgb:239,68,68"><div class="kpi-lbl">Gem. vraag bij stoppen</div><div class="kpi-val">${avgAbandoned}</div><div class="kpi-sub">Vraagnummer bij afbreken</div></div>`;})()}
     </div>`:''}
 
+
+    <!-- ── Reset banner ── -->
+    <div style="background:rgba(var(--blue-rgb),.07);border:1px solid rgba(var(--blue-rgb),.2);border-radius:11px;padding:.75rem 1.1rem;font-size:.8rem;color:rgba(var(--blue-rgb),.85);display:flex;gap:.7rem;align-items:center;margin-bottom:.75rem">
+      <span>🔄</span>
+      <span>Leaderboard <strong>gereset op 1 juni 2025</strong> — start schooljaar 2025–2026. Scores van voorgaande schooljaren zijn gearchiveerd.</span>
+    </div>
+
+    <!-- ── Activatietrechter ── -->
+    <div class="sec">🔭 Activatietrechter</div>
+    <div class="kpi-grid" style="margin-bottom:.6rem">
+      <div class="kpi c-tl"><div class="kpi-lbl">🔓 Unieke bezoekers</div><div class="kpi-val">${uniqDevTotal||'—'}</div><div class="kpi-sub">Unieke apparaten (app_open)</div></div>
+      <div class="kpi c-bl"><div class="kpi-lbl">📝 Startten een quiz</div><div class="kpi-val">${uniqQuizzers||'—'}</div><div class="kpi-sub">${openToQuizPct}% van bezoekers</div></div>
+      <div class="kpi c-or"><div class="kpi-lbl">👤 Maakten een account</div><div class="kpi-val">${uniqAccounts||'—'}</div><div class="kpi-sub">${accountsPct}% van bezoekers</div></div>
+      <div class="kpi c-gr"><div class="kpi-lbl">📈 Conversie bezoeker → quiz</div>
+        <div class="kpi-val">${openToQuizPct}%</div>
+        <div style="margin:6px 0 2px"><div style="height:8px;border-radius:4px;background:rgba(255,255,255,.07);overflow:hidden"><div style="width:${openToQuizPct}%;height:100%;background:var(--green);border-radius:4px;transition:width .6s"></div></div></div>
+        <div class="kpi-sub">${uniqQuizzers} van ${uniqDevTotal} apparaten</div>
+      </div>
+    </div>
+
+    <!-- ── Studie-intensiteit ── -->
+    <div class="sec">📊 Studie-intensiteit</div>
+    <div class="panel" style="margin-bottom:.6rem">
+      <div class="panel-h">Sessies per gebruiker <span>hoe vaak keert iemand terug</span></div>
+      <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(160px,1fr));gap:.5rem">
+        ${[
+          {label:'Eénmalig',val:sf1,col:'var(--muted)',desc:'1 quiz'},
+          {label:'Regelmatig',val:sf2_5,col:'var(--blue)',desc:'2–5 quizzen'},
+          {label:'Betrokken',val:sf6_20,col:'var(--or)',desc:'6–20 quizzen'},
+          {label:'Power user',val:sf20p,col:'var(--green)',desc:'20+ quizzen'}
+        ].map(({label,val,col,desc})=>`
+          <div style="background:rgba(255,255,255,.03);border:1px solid var(--border);border-radius:11px;padding:.85rem 1rem">
+            <div style="font-size:.72rem;font-weight:700;color:var(--muted);margin-bottom:.3rem;text-transform:uppercase;letter-spacing:.07em">${label}</div>
+            <div style="font-family:var(--font-head);font-size:1.8rem;font-weight:800;color:${col};line-height:1">${val}</div>
+            <div style="font-size:.72rem;color:var(--muted);margin-top:.25rem">${desc} · ${Math.round(val/sfTotal*100)}%</div>
+            <div style="margin-top:.5rem;height:4px;border-radius:2px;background:rgba(255,255,255,.07);overflow:hidden"><div style="width:${Math.round(val/sfTotal*100)}%;height:100%;background:${col};border-radius:2px"></div></div>
+          </div>`).join('')}
+      </div>
+    </div>
 
     <!-- ── Quizzen KPIs ── -->
     <div class="sec">Quizzen & gebruikers</div>
@@ -636,6 +706,38 @@ function render(lb, ev, evMissing, ao=[], fb=[], ql=[], ce=[]) {
         </div>
       </div>
     </div>
+    <!-- ── Nieuwe vs. terugkerende (uitgebreid) + Abandonment ── -->
+    <div class="row-2" style="margin-top:.6rem">
+      <div class="panel">
+        <div class="panel-h">👥 Nieuwe vs. terugkerende gebruikers <span>afgelopen 7 dagen</span></div>
+        <div style="display:flex;gap:1.5rem;margin-bottom:.75rem">
+          <div><div style="font-family:var(--font-head);font-size:2rem;font-weight:800;color:var(--green);line-height:1">${newUsersW}</div><div style="font-size:.72rem;color:var(--muted);margin-top:.2rem">Nieuw deze week</div></div>
+          <div><div style="font-family:var(--font-head);font-size:2rem;font-weight:800;color:var(--blue);line-height:1">${retUsersW}</div><div style="font-size:.72rem;color:var(--muted);margin-top:.2rem">Terugkerend</div></div>
+          <div><div style="font-family:var(--font-head);font-size:2rem;font-weight:800;color:var(--muted);line-height:1">${activeThisWeekSet.size}</div><div style="font-size:.72rem;color:var(--muted);margin-top:.2rem">Actief totaal</div></div>
+        </div>
+        ${activeThisWeekSet.size>0?`<div style="height:10px;border-radius:5px;overflow:hidden;background:rgba(255,255,255,.07);display:flex">
+          <div style="width:${Math.round(newUsersW/activeThisWeekSet.size*100)}%;background:var(--green);transition:width .6s"></div>
+          <div style="width:${Math.round(retUsersW/activeThisWeekSet.size*100)}%;background:var(--blue)"></div>
+        </div>
+        <div style="display:flex;gap:1rem;font-size:.72rem;color:var(--muted);margin-top:.4rem">
+          <span><span style="color:var(--green)">●</span> Nieuw ${Math.round(newUsersW/activeThisWeekSet.size*100)}%</span>
+          <span><span style="color:var(--blue)">●</span> Terugkerend ${Math.round(retUsersW/activeThisWeekSet.size*100)}%</span>
+        </div>`:'<div style="color:var(--muted);font-size:.78rem">Nog geen data</div>'}
+      </div>
+      <div class="panel">
+        <div class="panel-h">⚠️ Drop-off per vak <span>% afgebroken quizzen</span></div>
+        ${vakAbList.length?vakAbList.map(d=>{
+          const col=d.pct>=60?'var(--red)':d.pct>=35?'var(--or)':'var(--green)';
+          return `<div style="display:flex;align-items:center;gap:.5rem;font-size:.78rem;margin-bottom:.4rem">
+            <span style="flex:1;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;font-weight:600">${d.vak}</span>
+            <div class="sbar-bg" style="width:70px"><div class="sbar-fill" style="width:${d.pct}%;background:${col}"></div></div>
+            <span style="font-weight:700;min-width:2rem;text-align:right;color:${col}">${d.pct}%</span>
+            <span style="color:var(--muted);font-size:.7rem">${d.a}/${d.tot}</span>
+          </div>`;
+        }).join(''):'<span style="color:var(--muted);font-size:.78rem">Nog geen data — verschijnt zodra quizzen worden afgebroken</span>'}
+      </div>
+    </div>
+
     <div class="row-2" style="margin-top:.6rem">
       <div class="panel">
         <div class="panel-h">📚 Domein populariteit <span>top 10 geoefende domeinen</span></div>
