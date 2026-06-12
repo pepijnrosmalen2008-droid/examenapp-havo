@@ -735,21 +735,82 @@ function calcStreak(){
   return {current,total:s.totalQuizzes||0,days:s.days};
 }
 function startStreakQuiz(){
-  // Open a random subject from mijn vakken, or scroll to the vakgrid
   const mijn=JSON.parse(localStorage.getItem('examenapp_'+lvlCol('mijnvakken'))||'[]');
   if(mijn.length>0){
-    const id=mijn[Math.floor(Math.random()*mijn.length)];
-    openVak(id);
-    return;
+    // Zoek het domein met de laagste score (of nooit geprobeerd) — dat heeft de meeste impact
+    const prog=JSON.parse(localStorage.getItem('examenapp_progress_'+APP_LEVEL)||'{}');
+    const vakArr=APP_LEVEL==='vwo'?(typeof VAKKEN_VWO!=='undefined'?VAKKEN_VWO:[]):(typeof VAKKEN!=='undefined'?VAKKEN:[]);
+    let bestVak=null,bestDom=null,lowestScore=Infinity;
+    mijn.forEach(vakId=>{
+      const vak=vakArr.find(v=>v.id===vakId);
+      if(!vak)return;
+      vak.domeinen?.filter(d=>(d.sv?.length||0)>0).forEach(dom=>{
+        const p=prog[vakId+'_'+dom.id+'_snel'];
+        const sc=p?(p.best||0):-1;
+        if(sc<lowestScore){lowestScore=sc;bestVak=vakId;bestDom=dom.id;}
+      });
+    });
+    if(bestVak&&bestDom){
+      try{sessionStorage.setItem('_slagio_open_domein',bestDom);}catch(e){}
+      try{sessionStorage.setItem('_slagio_start_qmode','snel');}catch(e){}
+      openVak(bestVak);return;
+    }
+    openVak(mijn[Math.floor(Math.random()*mijn.length)]);return;
   }
-  // Fallback: scroll to vakgrid and highlight it
-  const grid=document.getElementById('vakgrid');
-  if(grid){
-    grid.scrollIntoView({behavior:'smooth',block:'start'});
-    grid.style.transition='box-shadow 0.3s';
-    grid.style.boxShadow='0 0 0 3px var(--or), 0 0 24px rgba(var(--or-rgb),.3)';
-    setTimeout(()=>{grid.style.boxShadow='';},1600);
-  }
+  // Geen vakken: toon quick-pick sheet
+  _showQuickStartSheet();
+}
+function _showQuickStartSheet(){
+  if(document.getElementById('qs-sheet'))return;
+  const vakArr=APP_LEVEL==='vwo'?(typeof VAKKEN_VWO!=='undefined'?VAKKEN_VWO:[]):(typeof VAKKEN!=='undefined'?VAKKEN:[]);
+  const topVakken=[...vakArr].sort((a,b)=>{
+    const qa=a.domeinen?.reduce((s,d)=>s+(d.sv?.length||0),0)||0;
+    const qb=b.domeinen?.reduce((s,d)=>s+(d.sv?.length||0),0)||0;
+    return qb-qa;
+  }).slice(0,8);
+  const el=document.createElement('div');
+  el.id='qs-sheet';
+  el.style.cssText='position:fixed;inset:0;background:rgba(0,0,0,.55);z-index:9999;display:flex;align-items:flex-end;justify-content:center;backdrop-filter:blur(6px);animation:_qsFd .2s ease';
+  el.innerHTML=`<style>
+    @keyframes _qsFd{from{opacity:0}to{opacity:1}}
+    @keyframes _qsSl{from{transform:translateY(50px);opacity:0}to{transform:translateY(0);opacity:1}}
+    .qs-wrap{background:var(--s);border-radius:28px 28px 0 0;padding:12px 20px 40px;width:100%;max-width:500px;animation:_qsSl .28s cubic-bezier(.22,1,.36,1)}
+    .qs-pill{width:40px;height:4px;background:var(--bo);border-radius:2px;margin:0 auto 18px}
+    .qs-grid{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-bottom:12px}
+    .qs-card{background:rgba(var(--or-rgb),.07);border:1px solid rgba(var(--or-rgb),.2);border-radius:14px;padding:12px 14px;cursor:pointer;transition:all .15s;text-align:left;width:100%}
+    .qs-card:active{background:rgba(var(--or-rgb),.15);transform:scale(.97)}
+    .qs-card-name{font-size:13px;font-weight:700;color:var(--dk);margin-bottom:2px}
+    .qs-card-sub{font-size:11px;color:var(--mu)}
+    .qs-skip{width:100%;padding:10px;background:none;border:none;color:var(--mu);font-size:13px;cursor:pointer;font-family:var(--font)}
+  </style>
+  <div class="qs-wrap">
+    <div class="qs-pill"></div>
+    <div style="font-family:var(--font-head,sans-serif);font-size:17px;font-weight:800;color:var(--dk);margin-bottom:4px">⚡ Wat wil je oefenen?</div>
+    <div style="font-size:12px;color:var(--mu);margin-bottom:16px">Kies een vak — quiz start direct</div>
+    <div class="qs-grid" id="qs-grid"></div>
+    <button class="qs-skip" id="qs-skip">Liever zelf kiezen</button>
+  </div>`;
+  document.body.appendChild(el);
+  const grid=document.getElementById('qs-grid');
+  topVakken.forEach(vak=>{
+    const firstDom=vak.domeinen?.find(d=>(d.sv?.length||0)>0);
+    const qCount=vak.domeinen?.reduce((s,d)=>s+(d.sv?.length||0),0)||0;
+    const btn=document.createElement('button');
+    btn.className='qs-card';
+    btn.innerHTML=`<div class="qs-card-name">${vak.naam}</div><div class="qs-card-sub">${qCount} vragen · direct starten</div>`;
+    btn.addEventListener('click',()=>{
+      el.remove();
+      if(firstDom){
+        try{sessionStorage.setItem('_slagio_open_domein',firstDom.id);}catch(e){}
+        try{sessionStorage.setItem('_slagio_start_qmode','snel');}catch(e){}
+      }
+      openVak(vak.id);
+    });
+    grid.appendChild(btn);
+  });
+  const close=()=>el.remove();
+  document.getElementById('qs-skip').addEventListener('click',close);
+  el.addEventListener('click',e=>{if(e.target===el)close();});
 }
 function quickOefen(){
   // If we know the user's current vak, jump straight to quiz mode

@@ -197,7 +197,11 @@ function openVak(id,_noHash){
     if(_dl){
       sessionStorage.removeItem('_slagio_open_domein');
       const _dom=ST.vak?.domeinen?.find(d=>d.id===_dl);
-      if(_dom) setTimeout(()=>openQmode(_dl),200);
+      if(_dom) setTimeout(()=>{
+        openQmode(_dl);
+        const _aqm=sessionStorage.getItem('_slagio_start_qmode');
+        if(_aqm){sessionStorage.removeItem('_slagio_start_qmode');setTimeout(()=>startQ(_aqm),350);}
+      },200);
     }
   }catch(e){}
 }

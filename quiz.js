@@ -1145,6 +1145,12 @@ function toonRes(){
       if(_regPrompt)_regPrompt.style.display='none';
     }
   }catch(e){console.warn('toonRes LB error:',e);}
+  // B2: account prompt bottom sheet (first win, anonymous only)
+  try{
+    if(!currentUser && ST.mode==='snel' && pct>=0.5 && !localStorage.getItem('slagio_reg_prompted')){
+      setTimeout(()=>_showRegPrompt(pct),1200);
+    }
+  }catch(e){}
   // "Eén meer quiz" suggestie
   try{
     const omBox=document.getElementById('one-more-wrap');
@@ -1178,6 +1184,29 @@ function toonRes(){
 
 function retryQ(){startQ(ST.mode);}
 function switchMode(){show('sc-qmode');}
+function _showRegPrompt(pct){
+  try{
+    if(localStorage.getItem('slagio_reg_prompted'))return;
+    localStorage.setItem('slagio_reg_prompted','1');
+    const pctNum=Math.round((pct||0)*100);
+    const msg=pct>=0.9?'Bijna perfect resultaat!':pct>=0.7?'Goed gescoord!':'Niet slecht!';
+    const el=document.createElement('div');
+    el.id='reg-prompt-sheet';
+    el.style.cssText='position:fixed;inset:0;z-index:9200;display:flex;align-items:flex-end;justify-content:center;background:rgba(0,0,0,.45);backdrop-filter:blur(4px);animation:_lbFdIn .22s ease';
+    el.innerHTML=`<div style="background:var(--card,#1e2130);border-radius:22px 22px 0 0;padding:28px 24px 36px;width:100%;max-width:480px;box-shadow:0 -8px 40px rgba(0,0,0,.4);animation:_lbSlUp .3s cubic-bezier(.22,1,.36,1)">
+      <div style="text-align:center;margin-bottom:18px">
+        <div style="font-size:32px;margin-bottom:8px">🏆</div>
+        <div style="font-size:19px;font-weight:900;color:var(--or);margin-bottom:4px">${msg} ${pctNum}%</div>
+        <div style="font-size:14px;font-weight:700;color:var(--dk,#e2e8f0);margin-bottom:6px">Sla je score op — gratis</div>
+        <div style="font-size:13px;color:var(--mu,#94a3b8);margin-bottom:20px">Maak een gratis account en verschijn op het leaderboard. Duurt 30 seconden.</div>
+        <button onclick="(function(){document.getElementById('reg-prompt-sheet')?.remove();switchAuthTab&&switchAuthTab('register');show('sc-auth');})()" style="background:linear-gradient(135deg,#6366f1,#4f46e5);color:#fff;border:none;border-radius:14px;padding:14px 0;font-size:15px;font-weight:700;cursor:pointer;font-family:var(--font);width:100%;margin-bottom:10px">Account aanmaken — gratis →</button>
+        <button onclick="document.getElementById('reg-prompt-sheet')?.remove()" style="background:none;border:none;color:var(--mu,#94a3b8);font-size:13px;cursor:pointer;font-family:var(--font);padding:6px">Niet nu</button>
+      </div>
+    </div>`;
+    el.addEventListener('click',e=>{if(e.target===el)el.remove();});
+    document.body.appendChild(el);
+  }catch(e){}
+}
 function nextDomeinQ(){
   const doms=ST.vak?.domeinen;
   if(!doms){show('sc-detail');return;}
