@@ -403,9 +403,9 @@ function _renderLbWithData(){
 
   // List
   const listEl=document.getElementById('lb-list');
-  const _resetBanner=`<div style="margin:0 0 10px;padding:9px 14px;background:rgba(96,165,250,.08);border:1px solid rgba(96,165,250,.2);border-radius:12px;font-size:11.5px;color:rgba(96,165,250,.85);display:flex;gap:8px;align-items:center"><span>🔄</span><span>Scores gereset op <strong>1 juni 2025</strong> — start schooljaar 2025–2026</span></div>`;
+  _showLbResetPopup();
   if(top.length===0){
-    listEl.innerHTML=_resetBanner+`<div class="lb-empty">
+    listEl.innerHTML=`<div class="lb-empty">
       <div class="lb-empty-orb">🏆</div>
       <div class="lb-empty-title">Wees de eerste!</div>
       <div class="lb-empty-sub">Het bord is leeg — jij kunt de #1 positie pakken. Maak een snelle quiz en zet je score neer.</div>
@@ -439,12 +439,55 @@ function _renderLbWithData(){
       <div class="lb-score"><div class="lb-score-num">${e.score}</div><div class="lb-score-sub">pts</div><div style="font-size:9px;color:var(--mu);margin-top:2px">Bekijk →</div></div>
     </div>`;
   });
-  listEl.innerHTML=_resetBanner+(listHtml||'');
+  listEl.innerHTML=listHtml||'';
 
   // Attach click handlers via delegation (avoids inline-onclick quote issues)
   document.querySelectorAll('.lb-clickable').forEach(el=>{
     el.addEventListener('click',()=>openLbProfile(el.dataset.lbname));
   });
+}
+
+// ═══════ LB RESET POPUP ═══════
+function _showLbResetPopup(){
+  const KEY='slagio_lb_reset_v2026';
+  try{if(localStorage.getItem(KEY))return;}catch(e){return;}
+  const el=document.createElement('div');
+  el.id='lb-reset-popup';
+  el.style.cssText='position:fixed;inset:0;background:rgba(0,0,0,.55);z-index:9999;display:flex;align-items:flex-end;justify-content:center;backdrop-filter:blur(6px);animation:_lbFdIn .2s ease';
+  el.innerHTML=`
+    <style>
+      @keyframes _lbFdIn{from{opacity:0}to{opacity:1}}
+      @keyframes _lbSlUp{from{transform:translateY(60px);opacity:0}to{transform:translateY(0);opacity:1}}
+      .lb-reset-sheet{background:var(--s);border-radius:28px 28px 0 0;padding:10px 24px 44px;width:100%;max-width:500px;animation:_lbSlUp .28s cubic-bezier(.22,1,.36,1)}
+      .lb-reset-pill{width:40px;height:4px;border-radius:2px;background:var(--bo);margin:0 auto 22px}
+      .lb-reset-icon{font-size:44px;text-align:center;margin-bottom:12px;line-height:1}
+      .lb-reset-title{font-family:var(--font-head,sans-serif);font-size:22px;font-weight:900;color:var(--dk,#fff);text-align:center;margin-bottom:8px}
+      .lb-reset-body{font-size:13px;color:var(--mu,#8896a8);text-align:center;line-height:1.6;margin-bottom:24px}
+      .lb-reset-body strong{color:var(--dk,#fff)}
+      .lb-reset-cta{display:block;width:100%;padding:15px;background:var(--or,#f97316);color:#fff;border:none;border-radius:16px;font-family:var(--font-head,sans-serif);font-size:16px;font-weight:800;cursor:pointer;box-shadow:0 6px 24px rgba(249,115,22,.35);margin-bottom:10px;transition:opacity .15s}
+      .lb-reset-cta:hover{opacity:.88}
+      .lb-reset-skip{display:block;width:100%;padding:10px;background:none;border:none;color:var(--mu,#8896a8);font-size:13px;cursor:pointer}
+    </style>
+    <div class="lb-reset-sheet">
+      <div class="lb-reset-pill"></div>
+      <div class="lb-reset-icon">🏆</div>
+      <div class="lb-reset-title">Nieuw schooljaar!</div>
+      <div class="lb-reset-body">
+        De scores zijn <strong>gereset op 1 juni 2026</strong> voor het nieuwe schooljaar 2026–2027.<br>
+        Het bord is leeg — jij kunt als eerste de #1 pakken.
+      </div>
+      <button class="lb-reset-cta" id="lb-reset-btn">🎯 Claim de #1 plek</button>
+      <button class="lb-reset-skip" id="lb-reset-skip">Sluiten</button>
+    </div>`;
+  document.body.appendChild(el);
+  const close=()=>{
+    try{localStorage.setItem(KEY,'1');}catch(e){}
+    el.style.animation='_lbFdIn .18s ease reverse';
+    setTimeout(()=>el.remove(),180);
+  };
+  document.getElementById('lb-reset-btn').onclick=close;
+  document.getElementById('lb-reset-skip').onclick=close;
+  el.addEventListener('click',e=>{if(e.target===el)close();});
 }
 
 // ═══════ COUNTDOWN ═══════
