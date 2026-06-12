@@ -801,7 +801,21 @@ function updateProfileNav(){
 }
 
 function openProfiel(){
-  if(!currentUser){show('sc-auth');return;}
+  // currentUser kan nog null zijn terwijl Supabase de sessie asynchroon herlaadt.
+  // Wacht tot auth klaar is als er een bekende lokale sessie is; stuur anders naar login.
+  if(!currentUser){
+    const hasLocal=_hasLocalSession||!!localStorage.getItem('slagio_li')||
+      Object.keys(localStorage).some(k=>k.startsWith('sb-')&&k.includes('auth'));
+    if(hasLocal){
+      // Sessie is aan het laden — wacht maximaal 2s
+      SB.auth.getSession().then(({data:{session}})=>{
+        if(session?.user){currentUser=session.user;openProfiel();}
+        else{show('sc-auth');}
+      });
+      return;
+    }
+    show('sc-auth');return;
+  }
   loadProfile();
   buildCijferGrid();
   updateCloudStatusBar();
