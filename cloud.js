@@ -196,6 +196,9 @@ async function _fbRate(rating,feature){
 let currentUser=null;
 let _authReady=false;    // true zodra onAuthStateChange heeft gefired
 let _hasLocalSession=false; // true als er een opgeslagen sessie in localStorage staat
+let _authReadyCbs=[];
+// Roep cb(currentUser) aan zodra auth-staat bekend is (direct als al klaar)
+function _onAuthReady(cb){if(_authReady){cb(currentUser);}else{_authReadyCbs.push(cb);}}
 // Synchrone pre-check: lees Supabase-sessie direct uit localStorage
 (function _preloadSession(){
   try{
@@ -217,6 +220,7 @@ SB.auth.getSession().then(({data:{session}})=>{
   if(session?.user){
     currentUser=session.user;
     _authReady=true;
+    const cbs=[..._authReadyCbs];_authReadyCbs=[];cbs.forEach(cb=>cb(currentUser));
     updateProfileNav();updateCloudStatusBar();
     syncFromCloud();syncMyAvatarToCloud();
   }
@@ -226,6 +230,7 @@ SB.auth.getSession().then(({data:{session}})=>{
 SB.auth.onAuthStateChange((_event,session)=>{
   currentUser=session?.user||null;
   _authReady=true;
+  const cbs=[..._authReadyCbs];_authReadyCbs=[];cbs.forEach(cb=>cb(currentUser));
   if(currentUser){try{localStorage.setItem('slagio_li','1');}catch(e){}}
   else if(_event==='SIGNED_OUT'){try{localStorage.removeItem('slagio_li');}catch(e){}_hasLocalSession=false;}
   updateProfileNav();updateCloudStatusBar();
