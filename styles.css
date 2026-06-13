@@ -4799,13 +4799,12 @@ html[data-vak="wa"]{--vak-or:#2563EB;--vak-or-rgb:37,99,235;
     linear-gradient(rgba(37,99,235,.05) 1px,transparent 1px) 0 0/130px 130px,
     linear-gradient(90deg,rgba(37,99,235,.05) 1px,transparent 1px) 0 0/130px 130px}
 
-/* ── WISKUNDE B — blauwdruk dieppaars ────────────────────────── */
+/* ── WISKUNDE B — functiecurves & parabolen (functies/meetkunde) ─ */
 html[data-vak="wb"]{--vak-or:#6D28D9;--vak-or-rgb:109,40,217;
   --vw-motif:
-    linear-gradient(rgba(109,40,217,.10) 1px,transparent 1px) 0 0/26px 26px,
-    linear-gradient(90deg,rgba(109,40,217,.10) 1px,transparent 1px) 0 0/26px 26px,
-    linear-gradient(rgba(109,40,217,.05) 1px,transparent 1px) 0 0/130px 130px,
-    linear-gradient(90deg,rgba(109,40,217,.05) 1px,transparent 1px) 0 0/130px 130px}
+    url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='90' height='90'><path d='M0 84 Q45 -6 90 84' fill='none' stroke='rgba(109,40,217,0.11)' stroke-width='1.6'/><path d='M0 58 Q45 20 90 58' fill='none' stroke='rgba(109,40,217,0.06)' stroke-width='1.3'/></svg>") 0 0/90px 90px,
+    linear-gradient(rgba(109,40,217,.04) 1px,transparent 1px) 0 0/90px 90px,
+    linear-gradient(90deg,rgba(109,40,217,.04) 1px,transparent 1px) 0 0/90px 90px}
 
 /* ── SCHEIKUNDE — moleculair rooster ─────────────────────────── */
 html[data-vak="sk"]{--vak-or:#D97706;--vak-or-rgb:217,119,6;
@@ -4860,11 +4859,11 @@ html[data-vak="in"]{--vak-or:#0284C7;--vak-or-rgb:2,132,199;
 html[data-vak="gr"]{--vak-or:#1D4ED8;--vak-or-rgb:29,78,216;
   --vw-motif:url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='40' height='40'><path d='M4 4h20v20h-12v-10h6' fill='none' stroke='rgba(29,78,216,0.15)' stroke-width='2'/></svg>") 0 0/40px 40px}
 
-/* ── LATIJN — inscriptieregels ───────────────────────────────── */
+/* ── LATIJN — klassieke zuilgroeven (Romeinse pilaren) ───────── */
 html[data-vak="la"]{--vak-or:#7C3AED;--vak-or-rgb:124,58,237;
   --vw-motif:
-    repeating-linear-gradient(0deg,transparent 0 39px,rgba(124,58,237,.08) 39px 40px),
-    radial-gradient(ellipse 70% 40% at 50% 5%,rgba(124,58,237,.06),transparent 70%)}
+    repeating-linear-gradient(90deg,transparent 0 5px,rgba(124,58,237,.085) 5px 6px,transparent 6px 11px,rgba(124,58,237,.045) 11px 12px,transparent 12px 34px),
+    radial-gradient(ellipse 70% 30% at 50% 4%,rgba(124,58,237,.07),transparent 68%)}
 
 /* ── TALEN — typografisch, eigen tongval per taal ────────────── */
 html[data-vak="nl"]{--vak-or:#E85C0D;--vak-or-rgb:232,92,13;

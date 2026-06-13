@@ -44,12 +44,11 @@ html[data-vak="wa"]{--accent:#3B82F6;--accent2:#60A5FA;--accent-rgb:59,130,246;
     linear-gradient(rgba(59,130,246,.03) 1px,transparent 1px) 0 0/130px 130px,
     linear-gradient(90deg,rgba(59,130,246,.03) 1px,transparent 1px) 0 0/130px 130px}
 
-/* WISKUNDE B — blauwdruk dieppaars */
+/* WISKUNDE B — functiecurves & parabolen */
 html[data-vak="wb"]{--accent:#7C3AED;--accent2:#A78BFA;--accent-rgb:124,58,237;
-  --vw-motif:linear-gradient(rgba(124,58,237,.06) 1px,transparent 1px) 0 0/26px 26px,
-    linear-gradient(90deg,rgba(124,58,237,.06) 1px,transparent 1px) 0 0/26px 26px,
-    linear-gradient(rgba(124,58,237,.03) 1px,transparent 1px) 0 0/130px 130px,
-    linear-gradient(90deg,rgba(124,58,237,.03) 1px,transparent 1px) 0 0/130px 130px}
+  --vw-motif:url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='90' height='90'><path d='M0 84 Q45 -6 90 84' fill='none' stroke='rgba(124,58,237,0.09)' stroke-width='1.6'/><path d='M0 58 Q45 20 90 58' fill='none' stroke='rgba(124,58,237,0.05)' stroke-width='1.3'/></svg>") 0 0/90px 90px,
+    linear-gradient(rgba(124,58,237,.03) 1px,transparent 1px) 0 0/90px 90px,
+    linear-gradient(90deg,rgba(124,58,237,.03) 1px,transparent 1px) 0 0/90px 90px}
 
 /* SCHEIKUNDE — moleculair rooster */
 html[data-vak="sk"]{--accent:#F59E0B;--accent2:#FBBF24;--accent-rgb:245,158,11;
@@ -99,10 +98,10 @@ html[data-vak="in"]{--accent:#0284C7;--accent2:#38BDF8;--accent-rgb:2,132,199;
 html[data-vak="gr"]{--accent:#2563EB;--accent2:#60A5FA;--accent-rgb:37,99,235;
   --vw-motif:url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='40' height='40'><path d='M4 4h20v20h-12v-10h6' fill='none' stroke='rgba(37,99,235,0.10)' stroke-width='2'/></svg>") 0 0/40px 40px}
 
-/* LATIJN — inscriptieregels */
+/* LATIJN — klassieke zuilgroeven */
 html[data-vak="la"]{--accent:#7C3AED;--accent2:#A78BFA;--accent-rgb:124,58,237;
-  --vw-motif:repeating-linear-gradient(0deg,transparent 0 39px,rgba(124,58,237,.055) 39px 40px),
-    radial-gradient(ellipse 70% 40% at 50% 5%,rgba(124,58,237,.05),transparent 70%)}
+  --vw-motif:repeating-linear-gradient(90deg,transparent 0 5px,rgba(124,58,237,.06) 5px 6px,transparent 6px 11px,rgba(124,58,237,.03) 11px 12px,transparent 12px 34px),
+    radial-gradient(ellipse 70% 30% at 50% 4%,rgba(124,58,237,.06),transparent 68%)}
 
 /* TALEN — typografisch, eigen tongval per taal */
 html[data-vak="nl"]{--accent:#E85C0D;--accent2:#FB923C;--accent-rgb:232,92,13;

@@ -128,3 +128,17 @@ Elk één georkestreerd moment (geen versnippering), botten gelijk.
 **Aanpak**: accent-override (--or) + atmosfeer-achtergrond per #sc-X.
 Bottom-nav blijft level-accent (constante chrome); schermen zijn de werelden.
 SW v157.
+
+## Pass 5 — Alle vakken écht uniek (gedeelde motieven gedifferentieerd)
+
+Brief-regel: "als de keuze net zo goed bij een ander vak zou passen, is hij
+nog niet specifiek genoeg." Twee paren deelden nog een motief-familie:
+- wa & wb deelden blauwdruk-raster → **wb** krijgt nu functiecurves/parabolen
+  (functies/meetkunde), **wa** houdt het raster (statistiek/data).
+- gs & la deelden horizontale regels → **la** krijgt nu verticale zuilgroeven
+  (Romeinse pilaren), **gs** houdt archiefregels.
+Doorgevoerd in beide bronnen (styles.css + vakken/vak-theme.css).
+
+**Gezien (vision-check)**: wb parabolen ✓, la zuilgroeven ✓ (onderscheidt
+van gs), ec diagonale marktcurves ✓. Alle 17 vakken nu uniek motief.
+Dekking bevestigd: alle vak-ids in data.js hebben een wereld. SW v158.
