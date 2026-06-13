@@ -4528,3 +4528,78 @@ html.dark .record-banner,html.dark .pb-banner{color:#fbbf24}
   .card{border-top-width:2.5px}
   .opt{box-shadow:0 2px 10px rgba(0,0,0,.2),0 1px 0 rgba(255,255,255,.15) inset}
 }
+
+/* ═══════════════════════════════════════════════════════════════
+   DESIGN V3b — SCHERM-SPECIFIEKE VERFIJNING
+   Leaderboard, auth, profiel, XP, toasts.
+   ═══════════════════════════════════════════════════════════════ */
+
+/* ── LEADERBOARD — een echt podium ───────────────────────────── */
+.lb-pod-avatar.gold{box-shadow:0 0 0 4px rgba(245,158,11,.2),0 6px 24px rgba(245,158,11,.45);animation:v3goldpulse 2.8s ease-in-out infinite}
+@keyframes v3goldpulse{0%,100%{box-shadow:0 0 0 4px rgba(245,158,11,.2),0 6px 24px rgba(245,158,11,.45)}50%{box-shadow:0 0 0 6px rgba(245,158,11,.3),0 8px 34px rgba(245,158,11,.65)}}
+.lb-pod-avatar.silver{box-shadow:0 0 0 3px rgba(156,163,175,.18),0 4px 16px rgba(156,163,175,.35)}
+.lb-pod-avatar.bronze{box-shadow:0 0 0 3px rgba(205,124,63,.18),0 4px 16px rgba(205,124,63,.35)}
+.lb-pod-medal{animation:v3medalbob 3s ease-in-out infinite;display:inline-block}
+.lb-pod:nth-child(2) .lb-pod-medal{animation-delay:.3s}
+.lb-pod:nth-child(3) .lb-pod-medal{animation-delay:.6s}
+@keyframes v3medalbob{0%,100%{transform:translateY(0) rotate(-2deg)}50%{transform:translateY(-3px) rotate(2deg)}}
+.lb-pod-bar{transition:box-shadow .3s}
+.lb-pod-bar.gold{background:linear-gradient(0deg,rgba(245,158,11,.14),rgba(245,158,11,.36));box-shadow:0 0 22px rgba(245,158,11,.25) inset,0 -4px 18px rgba(245,158,11,.15)}
+.lb-row{position:relative;overflow:hidden}
+.lb-row:hover{border-color:rgba(var(--or-rgb),.4);box-shadow:0 6px 22px rgba(var(--or-rgb),.12)}
+.lb-row.me{box-shadow:0 0 0 1px rgba(var(--or-rgb),.25),0 4px 18px rgba(var(--or-rgb),.18)}
+.lb-row.me::before{content:'';position:absolute;top:-50%;left:-70%;width:40%;height:200%;background:linear-gradient(100deg,transparent,rgba(var(--or-rgb),.08),transparent);transform:skewX(-22deg);animation:v3sweep 4s cubic-bezier(.6,0,.3,1) infinite}
+.lb-my-score{box-shadow:0 4px 22px rgba(var(--or-rgb),.15)}
+.lb-score-num{font-variant-numeric:tabular-nums}
+
+/* ── AUTH — uitnodigend en premium ───────────────────────────── */
+.auth-card{box-shadow:0 4px 16px rgba(16,24,40,.05),0 16px 48px rgba(16,24,40,.07);position:relative}
+html.dark .auth-card{box-shadow:0 8px 40px rgba(0,0,0,.4)}
+.auth-card::before{content:'';position:absolute;inset:-1px;border-radius:25px;padding:1px;background:linear-gradient(135deg,rgba(var(--or-rgb),.4),transparent 40%,transparent 60%,rgba(var(--or-rgb),.2));-webkit-mask:linear-gradient(#fff 0 0) content-box,linear-gradient(#fff 0 0);-webkit-mask-composite:xor;mask-composite:exclude;pointer-events:none}
+.auth-btn{position:relative;overflow:hidden;background:linear-gradient(135deg,var(--or),color-mix(in srgb,var(--or) 72%,#ffb46b))}
+.auth-btn::after{content:'';position:absolute;top:-50%;left:-80%;width:45%;height:200%;background:linear-gradient(100deg,transparent,rgba(255,255,255,.3),transparent);transform:skewX(-22deg);animation:v3sweep 4.2s cubic-bezier(.6,0,.3,1) infinite}
+.auth-tab.active{box-shadow:0 2px 10px rgba(0,0,0,.1),0 0 0 1px rgba(var(--or-rgb),.15)}
+.auth-input:focus{transform:translateY(-1px)}
+
+/* ── PROFIEL — secties met karakter ──────────────────────────── */
+.prof-section{box-shadow:0 1px 3px rgba(16,24,40,.04),0 6px 20px rgba(16,24,40,.04);transition:box-shadow .25s}
+html.dark .prof-section{box-shadow:0 4px 20px rgba(0,0,0,.22)}
+.prof-section:hover{box-shadow:0 2px 6px rgba(16,24,40,.05),0 10px 30px rgba(16,24,40,.07)}
+html.dark .prof-section:hover{box-shadow:0 6px 28px rgba(0,0,0,.3)}
+.pf-save-btn:active{transform:scale(.96)}
+
+/* ── XP & VOORTGANG — levende balken ─────────────────────────── */
+.xp-bar,.lvl-teaser-fill-inner,.lbp-bar-fill,.bento-dg-bar-fill{position:relative;overflow:hidden}
+.xp-bar::after,.lvl-teaser-fill-inner::after,.bento-dg-bar-fill::after{content:'';position:absolute;top:0;left:-60%;width:50%;height:100%;background:linear-gradient(90deg,transparent,rgba(255,255,255,.4),transparent);animation:xpShimmer 2.6s ease-in-out infinite}
+.lvl-badge{box-shadow:0 2px 8px rgba(var(--or-rgb),.35)}
+
+/* ── TOASTS — zachter en vrolijker ───────────────────────────── */
+.xp-toast{background:linear-gradient(135deg,#22c55e,#16a34a);box-shadow:0 6px 24px rgba(34,197,94,.5),0 1px 0 rgba(255,255,255,.25) inset;backdrop-filter:blur(8px)}
+
+/* ── HOME SECTIEKOPPEN — duidelijke ritmiek ──────────────────── */
+.home-section-header{position:relative}
+.hsh-title{position:relative}
+.hsh-title::after{content:'';position:absolute;bottom:-4px;left:0;width:26px;height:2.5px;border-radius:99px;background:linear-gradient(90deg,var(--or),transparent)}
+
+/* ── FLASHCARDS — tactiele flip ──────────────────────────────── */
+.fc-card{transition:transform .2s cubic-bezier(.34,1.3,.64,1),box-shadow .25s}
+.fc-card:hover{box-shadow:0 14px 44px rgba(0,0,0,.25)}
+
+/* ── POMODORO — rustpunt ─────────────────────────────────────── */
+.pomo-time{font-variant-numeric:tabular-nums}
+
+/* ── CONFIRM/MODAL — diepte ──────────────────────────────────── */
+.quit-card,.tuto-card{box-shadow:0 32px 90px rgba(0,0,0,.55),0 0 0 1px rgba(255,255,255,.06)}
+
+/* ── DAGDOEL & QUICK CHIPS ───────────────────────────────────── */
+.hm-quick-scroll button:active{transform:scale(.94)}
+
+/* ── EMPTY STATES — warm in plaats van leeg ──────────────────── */
+.lb-empty-orb{animation:v3orbfloat 4s ease-in-out infinite}
+@keyframes v3orbfloat{0%,100%{transform:translateY(0)}50%{transform:translateY(-6px)}}
+
+/* ── REDUCED MOTION (aanvulling V3b) ─────────────────────────── */
+@media(prefers-reduced-motion:reduce){
+  .lb-pod-avatar.gold,.lb-pod-medal,.lb-row.me::before,.auth-btn::after,
+  .xp-bar::after,.lvl-teaser-fill-inner::after,.bento-dg-bar-fill::after,.lb-empty-orb{animation:none!important}
+}
