@@ -189,3 +189,24 @@ staat al in u:). 274 vragen / 719 opties in de 13 non-bèta-vakken.
 (de "juist=langste" tell, ~61 vragen in nl alleen al — vereist per-vraag
 herschrijven met behoud van juistheid); bèta-opties handmatig; validiteit
 samenvattingen/oud-examen/flashcards per vak. SW v160.
+
+## Pass 8 — Content stap A: Nederlands HAVO volledig nagelopen (sjabloon)
+
+**Audit als leerling, alle 6 domeinen (sv + oud-examen + samenvattingen)**.
+Inhoud bleek feitelijk correct (argumentatieleer, drogredenen, tekstsoorten,
+literaire stromingen, vertelstandpunt). Twee soorten echte problemen gefixt:
+
+1. **Kapotte oud-examenvraag (domein C)**: één entry gelabeld "Brief" bevatte
+   een exacte kopie van de betoog-vraag ervoor. Vervangen door een distincte,
+   geldige formele-brieftaak (vrijwilliger-aanmelding).
+2. **"Te lang/tell"-antwoorden** die de haakjes-strip oversloeg (door +-tekens):
+   7 juiste antwoorden ingekort zodat ze vergelijkbaar zijn met de afleiders,
+   betekenis behouden (uitleg staat in u:). + 1 typo ("waarden .").
+
+Veilig toegepast via exact-replace met telling-assertie per wijziging; c:-index
+en volgorde ongewijzigd → juiste antwoord blijft juist. Structuur geverifieerd
+(o:[/{v: tellingen gelijk, braces balanced). SW v161.
+
+**Sjabloon voor overige vakken**: (1) domein-voor-domein lezen, (2) feitcheck,
+(3) lange juiste antwoorden inkorten tot afleider-niveau, (4) dubbele/kapotte
+oud-examenvragen herstellen. Bèta daarbij: opties handmatig (geen auto-strip).
