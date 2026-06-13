@@ -142,3 +142,27 @@ Doorgevoerd in beide bronnen (styles.css + vakken/vak-theme.css).
 **Gezien (vision-check)**: wb parabolen ✓, la zuilgroeven ✓ (onderscheidt
 van gs), ec diagonale marktcurves ✓. Alle 17 vakken nu uniek motief.
 Dekking bevestigd: alle vak-ids in data.js hebben een wereld. SW v158.
+
+## Pass 6 — Vak-emblemen + per-domein iconen op de vakpagina's
+
+**Geprobeerd**: thema duidelijker maken met voorwerpen die bij het vak horen.
+- Per vak een lijntekening-embleem in de hero (rechtsboven), accent-kleur,
+  via vakken/vak-theme.css (.header::after, keyed op data-vak):
+  nl=boek, en=spraakwolk, du=dialoog, fr=Eiffeltoren, wa=staafdiagram,
+  wb=parabool, sk=erlenmeyer, na=atoom, bi=blad, ak=globe, ec=vraag/aanbod,
+  be=weegschaal, gs=tempelkolommen, mw=mensen-netwerk, la=Romeinse zuil,
+  gr=amfoor, in=chip.
+- Per-domein passend emoji-icoon in de domeinlijst, via Python-script met
+  trefwoord→emoji-map (⚖️ schaarste, 📈 markt, 🔬 cel, 🫀 orgaan, 🌿 ecosysteem,
+  📖 lezen, ✍️ schrijven, 🧲 kracht, ⚡ energie, …). 12 overzichtspagina's,
+  53 domeinen.
+
+**Gezien (vision-check)**:
+- scheikunde (desktop): erlenmeyer-embleem rechtsboven, 🔍/🧪 domein-iconen ✓
+- geschiedenis (mobiel): tempelkolommen geschaald naar 64px, geen overlap met
+  logo, 🔍/📜 domein-iconen ✓
+Emblemen recognisable + responsive; domein-iconen kloppen inhoudelijk.
+
+**Budget**: emblemen + iconen zijn SVG-data-uri/emoji in één gedeelde CSS +
+inline emoji → geen extra requests, SEO-snelheid intact. SW v159 (forceert
+verse vak-theme.css voor terugkerende bezoekers).
