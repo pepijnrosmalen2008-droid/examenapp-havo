@@ -300,6 +300,7 @@ function _kiesReveal(gekozen,correct,btns){
   try{const ms=ST._vraagStartMs?Date.now()-ST._vraagStartMs:null;logQuestion(ST.vak?.id,ST.domein?.id,ST.mode,ST.idx,ok,ms);}catch(e){}
   if(ok){ST.combo=(ST.combo||0)+1;playSound('correct');haptic([20]);}
   else{ST.combo=0;playSound('wrong');haptic([60,20,60]);}
+  try{if(typeof v4AvatarReact==='function')v4AvatarReact(ok?(ST.combo>=3?'streak':'correct'):'wrong');}catch(e){}
   // Particles van de geklikte knop
   spawnParticles(btns[gekozen],ok);
   // Hot streak glow
@@ -1056,6 +1057,12 @@ function toonRes(){
     if(ST.mode==='snel'&&ST.xpThisRound>0){
       if(isPerfect)ST.xpThisRound=Math.round(ST.xpThisRound*1.5);
       const res=addXP(ST.xpThisRound);
+      try{
+        if(typeof v4AvatarReact==='function'){
+          if(res.leveled||res.evolved)setTimeout(()=>v4AvatarReact('levelup'),700);
+          else if(isPerfect)setTimeout(()=>v4AvatarReact('celebrate'),700);
+        }
+      }catch(e){}
       const xpPct=getXPPct(res.totalXP);
       const lvlName=LEVEL_NAMES[res.newLvl]||'Level '+res.newLvl;
       const curXP=getXPForLevel(res.newLvl);

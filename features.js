@@ -165,6 +165,7 @@ function showEvoReveal(newStage,animalId){
   const a=getAnimalById(animalId);
   const modal=document.getElementById('evo-reveal-modal');
   if(!modal)return;
+  try{if(typeof v4AvatarReact==='function')setTimeout(()=>v4AvatarReact('levelup'),350);}catch(e){}
   const stageName=ANIM_STAGE_NAMES[newStage]||'Nieuw stadium';
   // Styles per stage: 5=Goud, 6=Diamant, 7=Platina; lager=paars (default)
   const cfg={

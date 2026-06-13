@@ -4678,3 +4678,85 @@ html.dark .prof-section:hover{box-shadow:0 6px 28px rgba(0,0,0,.3)}
 .hm-hero .hsh-title{color:rgba(255,255,255,.9)}
 .hm-hero .hsh-sub{color:rgba(255,255,255,.4)}
 .hm-hero .hsh-title::after{left:50%;transform:translateX(-50%)}
+
+/* ═══════════════════════════════════════════════════════════════
+   V4b — AVATAR STATE-ENGINE + COMPANION + EXAMENPAPIER-TOKENS
+   ═══════════════════════════════════════════════════════════════ */
+
+/* ── QUIZ-COMPANION — je mascotte leeft mee ──────────────────── */
+#v4-companion{position:fixed;left:12px;bottom:calc(env(safe-area-inset-bottom,0px) + 14px);width:64px;height:64px;z-index:360;pointer-events:none;filter:drop-shadow(0 6px 18px rgba(0,0,0,.5));animation:v4compIn .55s cubic-bezier(.34,1.5,.64,1)}
+#v4-companion .anim-svg-wrap{width:64px;height:64px}
+@keyframes v4compIn{from{opacity:0;transform:translateY(40px) scale(.6)}to{opacity:1;transform:none}}
+@media(max-width:480px){#v4-companion{width:52px;height:52px;left:8px}#v4-companion .anim-svg-wrap{width:52px;height:52px}}
+/* Emote-bubble boven companion */
+.v4-bubble{position:absolute;top:-26px;left:50%;transform:translateX(-50%);min-width:28px;height:28px;padding:0 7px;border-radius:14px 14px 14px 4px;display:flex;align-items:center;justify-content:center;font-size:14px;font-weight:900;background:#fff;color:#16a34a;box-shadow:0 4px 14px rgba(0,0,0,.3);animation:v4bubble 1.4s cubic-bezier(.34,1.5,.64,1) both}
+.v4b-ok{color:#16a34a}
+.v4b-soft{background:#fef3c7;color:#b45309}
+.v4b-fire{background:#fff7ed;color:#ea580c}
+.v4b-gold{background:linear-gradient(135deg,#fde68a,#fbbf24);color:#78350f}
+@keyframes v4bubble{0%{opacity:0;transform:translateX(-50%) translateY(8px) scale(.4)}18%{opacity:1;transform:translateX(-50%) translateY(0) scale(1.08)}28%{transform:translateX(-50%) scale(1)}82%{opacity:1;transform:translateX(-50%) translateY(-2px)}100%{opacity:0;transform:translateX(-50%) translateY(-12px) scale(.85)}}
+
+/* ── STATE-ANIMATIES (GPU-only: transform/opacity) ───────────── */
+/* Correct: vreugdesprong met draai */
+.v4cs-correct svg{animation:v4csCorrect .75s cubic-bezier(.34,1.56,.64,1)!important;transform-origin:50% 100%}
+@keyframes v4csCorrect{0%{transform:scaleY(1)}18%{transform:scaleY(.76) scaleX(1.16)}45%{transform:translateY(-36%) scaleY(1.12) scaleX(.9) rotate(7deg)}70%{transform:translateY(0) scaleY(.92) scaleX(1.07) rotate(-3deg)}100%{transform:none}}
+/* Wrong: milde headshake — aanmoedigend, niet bestraffend */
+.v4cs-wrong svg{animation:v4csWrong .8s ease-in-out!important;transform-origin:50% 85%}
+@keyframes v4csWrong{0%,100%{transform:rotate(0)}16%{transform:rotate(-9deg) translateX(-3%)}38%{transform:rotate(7deg) translateX(3%)}58%{transform:rotate(-4deg)}78%{transform:rotate(2deg) scaleY(.97)}}
+/* Streak: dubbele opgewonden bounce */
+.v4cs-streak svg{animation:v4csStreak .95s cubic-bezier(.34,1.5,.64,1)!important;transform-origin:50% 100%}
+@keyframes v4csStreak{0%{transform:scaleY(1)}13%{transform:scaleY(.78) scaleX(1.14)}32%{transform:translateY(-30%) rotate(-8deg)}48%{transform:translateY(0) scaleY(.88) scaleX(1.1)}62%{transform:translateY(-20%) rotate(8deg)}78%{transform:translateY(0) scaleY(.93)}100%{transform:none}}
+/* Level-up: aanloop + salto — het hoogtepunt */
+.v4cs-levelup svg{animation:v4csLevel 1.25s cubic-bezier(.45,0,.3,1.3)!important;transform-origin:50% 60%}
+@keyframes v4csLevel{0%{transform:scaleY(1)}16%{transform:scaleY(.65) scaleX(1.28) translateY(8%)}45%{transform:translateY(-55%) rotate(-360deg) scale(1.12)}70%{transform:translateY(0) rotate(-360deg) scaleY(.85) scaleX(1.12)}85%{transform:rotate(-360deg) scaleY(1.06)}100%{transform:rotate(-360deg) scaleY(1)}}
+/* Celebrate: feest-bounce ×3 met wiebel */
+.v4cs-celebrate svg{animation:v4csParty 1.85s cubic-bezier(.34,1.4,.64,1)!important;transform-origin:50% 100%}
+@keyframes v4csParty{0%,100%{transform:none}8%{transform:scaleY(.8) scaleX(1.12)}20%{transform:translateY(-28%) rotate(-10deg)}32%{transform:translateY(0) scaleY(.9)}42%{transform:translateY(-24%) rotate(10deg)}54%{transform:translateY(0) scaleY(.92)}64%{transform:translateY(-30%) rotate(-8deg) scale(1.06)}78%{transform:translateY(0) scaleY(.88) scaleX(1.1)}90%{transform:scaleY(1.04)}}
+/* Gloed-ring per state op de wrapper */
+.v4cs-correct{border-radius:50%;box-shadow:0 0 0 0 rgba(34,197,94,0);animation:v4glowOk .75s ease-out}
+@keyframes v4glowOk{30%{box-shadow:0 0 24px 6px rgba(34,197,94,.5)}100%{box-shadow:0 0 0 0 rgba(34,197,94,0)}}
+.v4cs-wrong{border-radius:50%;animation:v4glowSoft .8s ease-out}
+@keyframes v4glowSoft{30%{box-shadow:0 0 20px 4px rgba(245,158,11,.4)}100%{box-shadow:0 0 0 0 rgba(245,158,11,0)}}
+.v4cs-streak{border-radius:50%;animation:v4glowFire .95s ease-out}
+@keyframes v4glowFire{30%{box-shadow:0 0 26px 7px rgba(249,115,22,.55)}100%{box-shadow:0 0 0 0 rgba(249,115,22,0)}}
+.v4cs-levelup{border-radius:50%;animation:v4glowGold 1.25s ease-out}
+.v4cs-celebrate{border-radius:50%;animation:v4glowGold 1.85s ease-out}
+@keyframes v4glowGold{25%{box-shadow:0 0 32px 10px rgba(251,191,36,.65)}60%{box-shadow:0 0 18px 5px rgba(251,191,36,.35)}100%{box-shadow:0 0 0 0 rgba(251,191,36,0)}}
+
+/* ── DEMO-PANEL (?avatardemo=1) ──────────────────────────────── */
+#v4-demo{position:fixed;top:70px;left:50%;transform:translateX(-50%);z-index:9500;background:rgba(15,17,24,.92);border:1px solid rgba(255,255,255,.14);border-radius:16px;padding:12px 14px;display:flex;gap:6px;flex-wrap:wrap;justify-content:center;backdrop-filter:blur(12px);box-shadow:0 12px 40px rgba(0,0,0,.5);max-width:92vw}
+.v4-demo-title{width:100%;text-align:center;font-size:11px;font-weight:800;color:rgba(255,255,255,.5);text-transform:uppercase;letter-spacing:1px;margin-bottom:2px;font-family:var(--font)}
+.v4-demo-btn{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.15);color:#fff;border-radius:10px;padding:8px 14px;font-size:13px;font-weight:700;cursor:pointer;font-family:var(--font);transition:all .15s}
+.v4-demo-btn:hover{background:rgba(var(--or-rgb),.3);border-color:var(--or)}
+
+/* ── EXAMENPAPIER: ruitjes-textuur in hero ───────────────────── */
+.hm-hero{background-image:
+  linear-gradient(rgba(255,255,255,.028) 1px,transparent 1px),
+  linear-gradient(90deg,rgba(255,255,255,.028) 1px,transparent 1px),
+  linear-gradient(160deg,#07080f 0%,#0d0e1c 50%,#090c16 100%);
+  background-size:26px 26px,26px 26px,100% 100%}
+/* Dot-canvas uit: ruitjespapier ís de textuur (één moment per scherm) */
+.hm-hero .flicker-canvas{display:none}
+
+/* ── EXAMENKLOK: tabulaire mono voor alle data-cijfers ───────── */
+.hm-countdown .cd-val,.trn,.qctr,.res-xp-num,.lb-score-num,.pomo-time,
+.streak-stat-num,.bento-sv,.lb-my-score-n,.quit-stat-val{font-variant-numeric:tabular-nums}
+.hm-countdown .cd-val,.trn,.pomo-time{font-family:ui-monospace,'SF Mono','Cascadia Mono',Consolas,monospace;letter-spacing:-.5px}
+
+/* ── REDUCED MOTION: gloed i.p.v. beweging, even mooi ────────── */
+@media(prefers-reduced-motion:reduce){
+  .v4cs-correct svg,.v4cs-wrong svg,.v4cs-streak svg,.v4cs-levelup svg,.v4cs-celebrate svg{animation:none!important}
+  .v4-bubble{animation:none!important;opacity:1}
+  #v4-companion{animation:none}
+}
+
+/* V4 fix: companion in de quiz-topbalk (geen overlap met knoppen) */
+#v4-companion.v4-inbar{position:relative;width:36px;height:36px;left:auto;bottom:auto;flex-shrink:0;filter:drop-shadow(0 2px 8px rgba(0,0,0,.4));animation:v4compIn .55s cubic-bezier(.34,1.5,.64,1);pointer-events:none}
+#v4-companion.v4-inbar .anim-svg-wrap{width:36px;height:36px}
+#v4-companion.v4-inbar .v4-bubble{top:auto;bottom:-30px;border-radius:4px 14px 14px 14px}
+/* V4 fix: login-CTA past op smalle schermen */
+@media(max-width:430px){.hnav-login-cta{font-size:12px!important;padding:0 10px!important;gap:4px!important}.hnav-inner{gap:6px}}
+@media(max-width:430px){
+  .hnav-login-cta{white-space:nowrap;flex-shrink:0;width:auto!important}
+  .hnav-chip{display:none}
+}
