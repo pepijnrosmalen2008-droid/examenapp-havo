@@ -81,3 +81,28 @@ en=Th, du=ß, fr=é).
 representatieve vakken in alle modi. Eén mechanisme; nieuw vak = nieuwe
 tokenset. AA-contrast blijft (tekst op solide kaarten; motief is lage-alpha
 achtergrond). SW v156.
+
+## Pass 3 — Per-vak werelden op de SEO-vakpagina's (170 pagina's)
+
+**Geprobeerd**: gedeelde `vakken/vak-theme.css` met dezelfde 17 werelden als
+de app (palet --accent + motief --vw-motif). Python-script injecteert
+`data-vak="xx"` op <html> + de stylesheet-link in alle havo-/vwo-pagina's
+(hoofdpagina's én domein-subpagina's). Vak-id afgeleid uit bestandsnaam.
+
+**Dieper dan accent**: animerende accent-topbalk, hero-titel met accent-gloed,
+CTA accent-gradient + gloed, kaart-accentranden + hover-lift, accent
+domein-links, motief-achtergrond per vak.
+
+**Gezien (vision-check, screenshots)**:
+- scheikunde (desktop): moleculair amber — gloeiende titel/CTA, atoomrooster ✓
+- nederlands (desktop): reuze-"ij" typografisch oranje ✓
+- aardrijkskunde (mobiel): hoogtelijnen smaragd, responsive topbalk ✓
+- Injectie correct: ec/bi/la/calculators (overgeslagen) geverifieerd.
+
+**Budget**: één klein cachebaar CSS-bestand (~7KB) + data-vak. Geen JS,
+geen extra requests per vak. Motieven zijn CSS-achtergronden op korte
+statische pagina's → SEO-snelheid intact. SW cachet vak-theme.css
+automatisch (fetch-handler) → offline werkt na eerste bezoek.
+
+**Status**: alle 170 vakpagina's (havo+vwo, hoofd+domein) gethematiseerd
+via één mechanisme. Calculator-/examenrooster-pagina's bewust neutraal.

@@ -1,0 +1,115 @@
+/* ═══════════════════════════════════════════════════════════════
+   VAK-THEME — per-vak werelden voor de SEO-vakpagina's
+   Lichtgewicht: alleen CSS-variabelen + één motief-achtergrond.
+   Zelfde werelden als in de app; matcht via data-vak op <html>.
+   Geen JS, geen externe assets → SEO-snelheid blijft intact.
+   ═══════════════════════════════════════════════════════════════ */
+
+/* ── Gedeelde botten: accent-aangedreven componenten ─────────── */
+html[data-vak]{--accent2:var(--accent)}
+/* Dunne accent-topbalk = directe vak-identiteit */
+html[data-vak] body{position:relative;
+  background:var(--vw-motif,none),
+    radial-gradient(ellipse 90% 40% at 50% -5%,rgba(var(--accent-rgb),.10),transparent 60%),
+    var(--bg)}
+html[data-vak] body::before{content:'';position:fixed;top:0;left:0;right:0;height:3px;z-index:9;
+  background:linear-gradient(90deg,var(--accent),var(--accent2),var(--accent));background-size:200% 100%;
+  animation:vtBar 8s linear infinite}
+@keyframes vtBar{to{background-position:200% 0}}
+html[data-vak] .container{position:relative;z-index:1}
+/* Hero-gloed achter de titel */
+html[data-vak] .header{position:relative}
+html[data-vak] .header h1 span{color:var(--accent);text-shadow:0 0 40px rgba(var(--accent-rgb),.45)}
+/* CTA's met accent-gradient + gloed */
+html[data-vak] .cta{background:linear-gradient(135deg,var(--accent),var(--accent2));
+  box-shadow:0 6px 24px rgba(var(--accent-rgb),.4),0 1px 0 rgba(255,255,255,.18) inset}
+html[data-vak] .cta:hover{box-shadow:0 10px 34px rgba(var(--accent-rgb),.55)}
+/* Statistieken + kaarten in accent */
+html[data-vak] .stat-number{color:var(--accent)}
+html[data-vak] .card{border-top:3px solid color-mix(in srgb,var(--accent) 55%,var(--border));
+  transition:transform .2s cubic-bezier(.34,1.3,.64,1),box-shadow .2s,border-color .2s}
+html[data-vak] .card:hover{transform:translateY(-3px);border-color:color-mix(in srgb,var(--accent) 70%,var(--border));
+  box-shadow:0 10px 30px rgba(var(--accent-rgb),.16)}
+html[data-vak] .card h2{color:var(--text)}
+html[data-vak] .feature-icon{filter:drop-shadow(0 2px 10px rgba(var(--accent-rgb),.35))}
+html[data-vak] .footer a,html[data-vak] .domain-list strong{color:var(--accent)}
+@media(prefers-reduced-motion:reduce){html[data-vak] body::before{animation:none}}
+
+/* ═══ DE WERELDEN ═══════════════════════════════════════════════ */
+
+/* WISKUNDE A — blauwdruk-ruitjes */
+html[data-vak="wa"]{--accent:#3B82F6;--accent2:#60A5FA;--accent-rgb:59,130,246;
+  --vw-motif:linear-gradient(rgba(59,130,246,.06) 1px,transparent 1px) 0 0/26px 26px,
+    linear-gradient(90deg,rgba(59,130,246,.06) 1px,transparent 1px) 0 0/26px 26px,
+    linear-gradient(rgba(59,130,246,.03) 1px,transparent 1px) 0 0/130px 130px,
+    linear-gradient(90deg,rgba(59,130,246,.03) 1px,transparent 1px) 0 0/130px 130px}
+
+/* WISKUNDE B — blauwdruk dieppaars */
+html[data-vak="wb"]{--accent:#7C3AED;--accent2:#A78BFA;--accent-rgb:124,58,237;
+  --vw-motif:linear-gradient(rgba(124,58,237,.06) 1px,transparent 1px) 0 0/26px 26px,
+    linear-gradient(90deg,rgba(124,58,237,.06) 1px,transparent 1px) 0 0/26px 26px,
+    linear-gradient(rgba(124,58,237,.03) 1px,transparent 1px) 0 0/130px 130px,
+    linear-gradient(90deg,rgba(124,58,237,.03) 1px,transparent 1px) 0 0/130px 130px}
+
+/* SCHEIKUNDE — moleculair rooster */
+html[data-vak="sk"]{--accent:#F59E0B;--accent2:#FBBF24;--accent-rgb:245,158,11;
+  --vw-motif:url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='54' height='54'><g fill='none' stroke='rgba(245,158,11,0.10)' stroke-width='1.3'><line x1='27' y1='27' x2='0' y2='0'/><line x1='27' y1='27' x2='54' y2='0'/><line x1='27' y1='27' x2='0' y2='54'/><line x1='27' y1='27' x2='54' y2='54'/></g><g fill='rgba(245,158,11,0.16)'><circle cx='27' cy='27' r='3.4'/><circle cx='0' cy='0' r='3'/><circle cx='54' cy='0' r='3'/><circle cx='0' cy='54' r='3'/><circle cx='54' cy='54' r='3'/></g></svg>") 0 0/54px 54px}
+
+/* NATUURKUNDE — golven */
+html[data-vak="na"]{--accent:#0EA5E9;--accent2:#38BDF8;--accent-rgb:14,165,233;
+  --vw-motif:url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='60' height='30'><path d='M0 15 Q15 1 30 15 T60 15' fill='none' stroke='rgba(14,165,233,0.11)' stroke-width='2'/></svg>") 0 0/60px 30px}
+
+/* BIOLOGIE — cellen */
+html[data-vak="bi"]{--accent:#16A34A;--accent2:#4ADE80;--accent-rgb:22,163,74;
+  --vw-motif:radial-gradient(circle at 20% 30%,rgba(22,163,74,.07) 0 9px,transparent 10px),
+    radial-gradient(circle at 70% 60%,rgba(22,163,74,.05) 0 14px,transparent 15px),
+    radial-gradient(circle at 45% 85%,rgba(22,163,74,.05) 0 7px,transparent 8px),
+    radial-gradient(circle at 88% 22%,rgba(22,163,74,.06) 0 11px,transparent 12px);
+  background-size:170px 170px,210px 210px,150px 150px,190px 190px}
+
+/* AARDRIJKSKUNDE — hoogtelijnen */
+html[data-vak="ak"]{--accent:#059669;--accent2:#34D399;--accent-rgb:5,150,105;
+  --vw-motif:repeating-radial-gradient(circle at 25% 35%,transparent 0 16px,rgba(5,150,105,.07) 16px 17px,transparent 17px 34px),
+    repeating-radial-gradient(circle at 80% 75%,transparent 0 18px,rgba(5,150,105,.06) 18px 19px,transparent 19px 38px)}
+
+/* ECONOMIE — vraag/aanbod-curves */
+html[data-vak="ec"]{--accent:#0891B2;--accent2:#22D3EE;--accent-rgb:8,145,178;
+  --vw-motif:repeating-linear-gradient(38deg,transparent 0 30px,rgba(8,145,178,.06) 30px 32px),
+    repeating-linear-gradient(-38deg,transparent 0 30px,rgba(8,145,178,.05) 30px 32px)}
+
+/* BEDRIJFSECONOMIE — grootboek-kolommen */
+html[data-vak="be"]{--accent:#0D9488;--accent2:#2DD4BF;--accent-rgb:13,148,136;
+  --vw-motif:repeating-linear-gradient(90deg,transparent 0 48px,rgba(13,148,136,.06) 48px 50px),
+    repeating-linear-gradient(0deg,transparent 0 32px,rgba(13,148,136,.035) 32px 33px)}
+
+/* GESCHIEDENIS — archiefregels */
+html[data-vak="gs"]{--accent:#D97706;--accent2:#F59E0B;--accent-rgb:217,119,6;
+  --vw-motif:repeating-linear-gradient(0deg,transparent 0 34px,rgba(217,119,6,.06) 34px 35px),
+    radial-gradient(ellipse 60% 40% at 14% 10%,rgba(217,119,6,.05),transparent 70%)}
+
+/* MAATSCHAPPIJWETENSCHAPPEN — netwerk */
+html[data-vak="mw"]{--accent:#DB2777;--accent2:#F472B6;--accent-rgb:219,39,119;
+  --vw-motif:url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='64' height='64'><g stroke='rgba(219,39,119,0.09)' stroke-width='1'><line x1='12' y1='12' x2='52' y2='40'/><line x1='52' y1='40' x2='20' y2='56'/><line x1='12' y1='12' x2='20' y2='56'/></g><g fill='rgba(219,39,119,0.16)'><circle cx='12' cy='12' r='3'/><circle cx='52' cy='40' r='3'/><circle cx='20' cy='56' r='3'/></g></svg>") 0 0/64px 64px}
+
+/* INFORMATICA — circuit */
+html[data-vak="in"]{--accent:#0284C7;--accent2:#38BDF8;--accent-rgb:2,132,199;
+  --vw-motif:url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='48' height='48'><path d='M0 24h12a4 4 0 004-4V6M24 48V30a4 4 0 014-4h20' fill='none' stroke='rgba(2,132,199,0.10)' stroke-width='1.4'/><circle cx='16' cy='20' r='2.2' fill='rgba(2,132,199,0.18)'/><circle cx='28' cy='26' r='2.2' fill='rgba(2,132,199,0.18)'/></svg>") 0 0/48px 48px}
+
+/* GRIEKS — meander */
+html[data-vak="gr"]{--accent:#2563EB;--accent2:#60A5FA;--accent-rgb:37,99,235;
+  --vw-motif:url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='40' height='40'><path d='M4 4h20v20h-12v-10h6' fill='none' stroke='rgba(37,99,235,0.10)' stroke-width='2'/></svg>") 0 0/40px 40px}
+
+/* LATIJN — inscriptieregels */
+html[data-vak="la"]{--accent:#7C3AED;--accent2:#A78BFA;--accent-rgb:124,58,237;
+  --vw-motif:repeating-linear-gradient(0deg,transparent 0 39px,rgba(124,58,237,.055) 39px 40px),
+    radial-gradient(ellipse 70% 40% at 50% 5%,rgba(124,58,237,.05),transparent 70%)}
+
+/* TALEN — typografisch, eigen tongval per taal */
+html[data-vak="nl"]{--accent:#E85C0D;--accent2:#FB923C;--accent-rgb:232,92,13;
+  --vw-motif:url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='420' height='420'><text x='50%25' y='66%25' font-family='Georgia,serif' font-weight='800' font-size='320' fill='rgba(232,92,13,0.045)' text-anchor='middle'>ij</text></svg>") center 60px/min(78vw,420px) no-repeat}
+html[data-vak="en"]{--accent:#6366F1;--accent2:#818CF8;--accent-rgb:99,102,241;
+  --vw-motif:url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='460' height='420'><text x='50%25' y='66%25' font-family='Georgia,serif' font-weight='800' font-size='300' fill='rgba(99,102,241,0.045)' text-anchor='middle'>Th</text></svg>") center 60px/min(82vw,460px) no-repeat}
+html[data-vak="du"]{--accent:#F59E0B;--accent2:#FBBF24;--accent-rgb:245,158,11;
+  --vw-motif:url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='420' height='420'><text x='50%25' y='70%25' font-family='Georgia,serif' font-weight='800' font-size='340' fill='rgba(245,158,11,0.045)' text-anchor='middle'>ß</text></svg>") center 60px/min(72vw,420px) no-repeat}
+html[data-vak="fr"]{--accent:#DB2777;--accent2:#F472B6;--accent-rgb:219,39,119;
+  --vw-motif:url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='420' height='420'><text x='50%25' y='68%25' font-family='Georgia,serif' font-weight='800' font-size='330' fill='rgba(219,39,119,0.045)' text-anchor='middle'>é</text></svg>") center 60px/min(72vw,420px) no-repeat}
