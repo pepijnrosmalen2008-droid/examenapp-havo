@@ -419,7 +419,16 @@ function renderGreeting(){
   }else if(practicedToday){
     el.textContent='✅ Vandaag al geoefend — top!';
   }else{
-    el.textContent=gdag+(naam?' '+naam:'')+' — klaar voor je examen?';
+    const moti=[
+      '— elke vraag telt 💪',
+      '— 10 vragen en je dag is gewonnen ✨',
+      '— kleine stappen, groot resultaat 🚀',
+      '— jouw toekomstige ik bedankt je alvast 🎓',
+      '— vandaag iets beter dan gisteren 📈',
+      '— klaar voor je examen?'
+    ];
+    const pick=moti[Math.floor(Date.now()/864e5)%moti.length];
+    el.textContent=gdag+(naam?' '+naam:'')+' '+pick;
   }
 }
 

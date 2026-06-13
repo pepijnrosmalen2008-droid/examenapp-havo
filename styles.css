@@ -4363,3 +4363,168 @@ html.dark .hsd-pill{background:var(--bg2);border-color:var(--bo2)}
 .lb-sc-goud{background:rgba(245,158,11,.14);color:#d97706;border:1px solid rgba(245,158,11,.35)}
 .lb-sc-diamant{background:rgba(96,165,250,.14);color:#3b82f6;border:1px solid rgba(96,165,250,.35)}
 .lb-sc-platina{background:rgba(148,163,184,.18);color:#64748b;border:1px solid rgba(148,163,184,.4)}
+
+/* ═══════════════════════════════════════════════════════════════
+   DESIGN V3 — PREMIUM POLISH LAYER
+   Pure visuele verfijning bovenop het bestaande systeem.
+   Geen functionaliteit, alleen schoonheid, beweging en vreugde.
+   ═══════════════════════════════════════════════════════════════ */
+
+/* ── 1. FOUNDATION ───────────────────────────────────────────── */
+html{scroll-behavior:smooth}
+body{text-rendering:optimizeLegibility}
+::selection{background:rgba(var(--or-rgb),.25);color:inherit}
+/* Slanke custom scrollbar */
+*{scrollbar-width:thin;scrollbar-color:rgba(var(--or-rgb),.3) transparent}
+::-webkit-scrollbar{width:9px;height:9px}
+::-webkit-scrollbar-track{background:transparent}
+::-webkit-scrollbar-thumb{background:rgba(var(--or-rgb),.28);border-radius:99px;border:2px solid transparent;background-clip:content-box}
+::-webkit-scrollbar-thumb:hover{background:rgba(var(--or-rgb),.5);background-clip:content-box}
+/* Lichtmodus: zachte warme tint van boven */
+html:not(.dark) body{background:linear-gradient(180deg,#f7f7fc 0%,#f5f6fa 340px)}
+/* Donkere modus: diepe navy met subtiele gloed bovenin */
+html.dark body{background:radial-gradient(ellipse 120% 60% at 50% -10%,#141828 0%,#0f1118 55%)}
+
+/* ── 2. HERO — AURORA + GRAIN ────────────────────────────────── */
+.hm-hero{isolation:isolate}
+.hm-hero::before{content:'';position:absolute;inset:-40% -20%;z-index:0;pointer-events:none;
+  background:
+    radial-gradient(ellipse 38% 42% at 22% 38%,rgba(var(--or-rgb),.14),transparent 70%),
+    radial-gradient(ellipse 34% 38% at 76% 28%,rgba(99,102,241,.12),transparent 70%),
+    radial-gradient(ellipse 30% 34% at 55% 70%,rgba(var(--or-rgb),.08),transparent 70%);
+  animation:v3aurora 18s ease-in-out infinite alternate;filter:blur(12px)}
+@keyframes v3aurora{
+  0%{transform:translate(0,0) scale(1) rotate(0deg)}
+  50%{transform:translate(3%,-4%) scale(1.08) rotate(2deg)}
+  100%{transform:translate(-3%,3%) scale(1.04) rotate(-2deg)}}
+/* Filmische grain voor diepte */
+.hm-hero-inner::after{content:'';position:absolute;inset:0;z-index:-1;opacity:.5;pointer-events:none;
+  background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.05'/%3E%3C/svg%3E")}
+.hm-hero-inner{position:relative}
+/* Headline: levende gradient-shimmer op het accent-woord */
+.hm-h1 em{background:linear-gradient(110deg,var(--or) 20%,color-mix(in srgb,var(--or) 55%,#fff) 42%,var(--or) 60%,color-mix(in srgb,var(--or) 70%,#fff) 80%);background-size:220% 100%;-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;animation:v3shimmer 5.5s ease-in-out infinite}
+@keyframes v3shimmer{0%,100%{background-position:0% 0}50%{background-position:100% 0}}
+/* Greeting prominenter — als chip */
+.hm-greeting{display:inline-flex;align-items:center;gap:7px;font-size:13px;font-weight:700;color:rgba(255,255,255,.82);margin-bottom:14px;min-height:20px;letter-spacing:.1px;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.1);border-radius:24px;padding:6px 16px;backdrop-filter:blur(8px)}
+.hm-greeting:empty{display:none}
+.hm-greeting.hm-greeting-warn{color:#fbbf24;background:rgba(251,191,36,.1);border-color:rgba(251,191,36,.3);animation:v3warnpulse 2.4s ease-in-out infinite}
+@keyframes v3warnpulse{0%,100%{box-shadow:0 0 0 0 rgba(251,191,36,0)}50%{box-shadow:0 0 18px 2px rgba(251,191,36,.25)}}
+
+/* ── 3. PRIMAIRE CTA — gradient + shine sweep ────────────────── */
+.hm-cta-primary{position:relative;overflow:hidden;background:linear-gradient(135deg,var(--or) 0%,color-mix(in srgb,var(--or) 72%,#ffb46b) 100%);box-shadow:0 4px 22px rgba(var(--or-rgb),.5),0 1px 0 rgba(255,255,255,.25) inset}
+.hm-cta-primary::after{content:'';position:absolute;top:-50%;left:-80%;width:50%;height:200%;background:linear-gradient(100deg,transparent,rgba(255,255,255,.35),transparent);transform:skewX(-22deg);animation:v3sweep 3.8s cubic-bezier(.6,0,.3,1) infinite}
+@keyframes v3sweep{0%,55%{left:-80%}85%,100%{left:160%}}
+.hm-cta-primary:hover{transform:translateY(-3px) scale(1.02);box-shadow:0 10px 36px rgba(var(--or-rgb),.6),0 1px 0 rgba(255,255,255,.3) inset}
+.hm-cta-primary:active{transform:scale(.96)}
+.hm-cta-primary svg{filter:drop-shadow(0 1px 2px rgba(0,0,0,.2))}
+
+/* ── 4. VAK CARDS — kleur-accent + leven ─────────────────────── */
+.card{box-shadow:0 1px 2px rgba(16,24,40,.04),0 4px 16px rgba(16,24,40,.05)}
+html.dark .card{box-shadow:0 1px 2px rgba(0,0,0,.25),0 6px 20px rgba(0,0,0,.22)}
+/* Kleur-accentlijn bovenaan elke kaart */
+.card{border-top:3px solid color-mix(in srgb,var(--card-col,var(--or)) 55%,var(--bo))}
+.card:hover{transform:translateY(-6px) scale(1.015)}
+.card:hover .card-icon{transform:scale(1.12) rotate(-4deg);box-shadow:0 6px 20px color-mix(in srgb,var(--card-col,var(--or)) 38%,transparent)}
+.card-icon{transition:transform .3s cubic-bezier(.34,1.5,.64,1),box-shadow .3s}
+/* Staggered entree van de vakkengrid */
+.sg .card{animation:v3cardIn .5s cubic-bezier(.22,1,.36,1) both}
+.sg .card:nth-child(1){animation-delay:.02s}.sg .card:nth-child(2){animation-delay:.05s}
+.sg .card:nth-child(3){animation-delay:.08s}.sg .card:nth-child(4){animation-delay:.11s}
+.sg .card:nth-child(5){animation-delay:.14s}.sg .card:nth-child(6){animation-delay:.17s}
+.sg .card:nth-child(7){animation-delay:.2s}.sg .card:nth-child(8){animation-delay:.23s}
+.sg .card:nth-child(n+9){animation-delay:.26s}
+@keyframes v3cardIn{from{opacity:0;transform:translateY(18px) scale(.97)}to{opacity:1;transform:translateY(0) scale(1)}}
+
+/* ── 5. BENTO — glasdiepte + sheen ───────────────────────────── */
+.bento-cell{backdrop-filter:blur(6px);box-shadow:0 1px 3px rgba(16,24,40,.05)}
+.bento-cell:hover{transform:translateY(-3px) scale(1.02);box-shadow:0 10px 26px rgba(0,0,0,.14)}
+.bento-cell:hover .bento-si{transform:scale(1.2)}
+.bento-si{transition:transform .25s cubic-bezier(.34,1.5,.64,1);display:inline-block}
+
+/* ── 6. QUIZ — juicy antwoorden ──────────────────────────────── */
+.oA{background:linear-gradient(135deg,#ef4565 0%,#d92b4b 100%);box-shadow:0 3px 14px rgba(233,68,90,.3),0 1px 0 rgba(255,255,255,.18) inset}
+.oB{background:linear-gradient(135deg,#3b76f6 0%,#1d56e0 100%);box-shadow:0 3px 14px rgba(43,98,235,.3),0 1px 0 rgba(255,255,255,.18) inset}
+.oC{background:linear-gradient(135deg,#f0930e 0%,#d97a06 100%);box-shadow:0 3px 14px rgba(222,130,8,.3),0 1px 0 rgba(255,255,255,.18) inset}
+.oD{background:linear-gradient(135deg,#22ad57 0%,#15903f 100%);box-shadow:0 3px 14px rgba(26,160,72,.3),0 1px 0 rgba(255,255,255,.18) inset}
+.opt{transition:transform .18s cubic-bezier(.34,1.4,.64,1),box-shadow .18s,filter .18s,opacity .25s}
+.opt:hover:not(:disabled){transform:translateY(-2px) scale(1.015);filter:brightness(1.08) saturate(1.05)}
+.opt:active:not(:disabled){transform:scale(.97)}
+.opt.correct{background:linear-gradient(135deg,#26c862 0%,#16a34a 100%)!important;box-shadow:0 10px 40px rgba(34,197,94,.6),0 0 0 3px rgba(74,222,128,.5),0 1px 0 rgba(255,255,255,.25) inset!important}
+.opt.correct .oi{animation:v3check .5s cubic-bezier(.34,1.6,.64,1)}
+@keyframes v3check{0%{transform:scale(1)}45%{transform:scale(1.45) rotate(8deg)}100%{transform:scale(1)}}
+/* Voortgangsbalk met gloeiende tip */
+.qpf{position:relative;background:linear-gradient(90deg,var(--or),#f59e0b,#fbbf24);background-size:200% 100%;animation:v3progflow 3s linear infinite;box-shadow:0 0 12px rgba(var(--or-rgb),.55)}
+.qpf::after{content:'';position:absolute;right:-2px;top:50%;transform:translateY(-50%);width:10px;height:10px;border-radius:50%;background:#fbbf24;box-shadow:0 0 12px 3px rgba(251,191,36,.7);opacity:.9}
+@keyframes v3progflow{0%{background-position:0% 0}100%{background-position:200% 0}}
+/* Vraagkaart subtiel glas-randje */
+.qbody{border:1px solid rgba(255,255,255,.07);box-shadow:0 18px 60px rgba(0,0,0,.35)}
+/* Next-knop sweep */
+.nxt{position:relative;overflow:hidden;background:linear-gradient(135deg,var(--or),color-mix(in srgb,var(--or) 70%,#ffb46b))}
+.nxt::after{content:'';position:absolute;top:-50%;left:-80%;width:45%;height:200%;background:linear-gradient(100deg,transparent,rgba(255,255,255,.3),transparent);transform:skewX(-22deg);animation:v3sweep 3.2s cubic-bezier(.6,0,.3,1) infinite}
+
+/* ── 7. BOTTOM NAV — zwevende glasdok ────────────────────────── */
+.bottom-nav-inner{box-shadow:0 12px 40px rgba(0,0,0,.22),0 2px 8px rgba(0,0,0,.12),0 1px 0 rgba(255,255,255,.1) inset;border-color:color-mix(in srgb,var(--bo) 70%,rgba(var(--or-rgb),.2))}
+.bnav-btn{position:relative}
+.bnav-btn.active::before{content:'';position:absolute;top:2px;left:50%;transform:translateX(-50%);width:18px;height:3px;border-radius:99px;background:var(--or);box-shadow:0 0 8px rgba(var(--or-rgb),.8)}
+.bnav-fab{animation:v3fabglow 3.5s ease-in-out infinite}
+@keyframes v3fabglow{0%,100%{box-shadow:0 4px 24px rgba(var(--or-rgb),.55),0 0 0 4px rgba(var(--or-rgb),.15),0 1px 0 rgba(255,255,255,.18) inset}50%{box-shadow:0 4px 32px rgba(var(--or-rgb),.75),0 0 0 7px rgba(var(--or-rgb),.1),0 1px 0 rgba(255,255,255,.18) inset}}
+
+/* ── 8. COUNTDOWN — ademende cijfers ─────────────────────────── */
+.hm-countdown .cd-box{transition:transform .25s cubic-bezier(.34,1.4,.64,1),border-color .3s,box-shadow .3s}
+.hm-countdown .cd-box:hover{transform:translateY(-3px)}
+.hm-countdown .cd-val{font-variant-numeric:tabular-nums}
+
+/* ── 9. STREAK & DAILY — vuur en feest ───────────────────────── */
+.daily-card-badge{animation:v3badgebob 3s ease-in-out infinite}
+@keyframes v3badgebob{0%,100%{transform:translateY(0)}50%{transform:translateY(-2px)}}
+.streak-card{position:relative;overflow:hidden}
+
+/* ── 10. KNOPPEN GLOBAAL — spring-feedback ───────────────────── */
+.qb:hover{transform:translateY(-1px);box-shadow:0 4px 14px rgba(var(--or-rgb),.35)}
+.qb:active,.exb:active,.bk:active,.nav-btn:active{transform:scale(.95)}
+.sam-cta-btn:hover{transform:translateY(-1px);box-shadow:0 5px 18px rgba(var(--or-rgb),.4);opacity:1}
+.daily-card-cta:active,.one-more-cta:active{transform:scale(.95)}
+.hm-soc-btn{transition:all .2s cubic-bezier(.34,1.3,.64,1)}
+.hm-soc-btn:hover{transform:translateY(-2px)}
+.hm-soc-btn:active{transform:scale(.96)}
+
+/* ── 11. DETAIL & DOMEINEN — verfijning ──────────────────────── */
+.dc2{transition:border-color .25s,box-shadow .25s,transform .25s}
+.dc2:hover{border-color:rgba(var(--or-rgb),.35);box-shadow:0 6px 24px rgba(var(--or-rgb),.1);transform:translateY(-1px)}
+.dlet{transition:transform .25s cubic-bezier(.34,1.5,.64,1)}
+.dh:hover .dlet{transform:scale(1.1) rotate(-3deg)}
+.sh{box-shadow:0 1px 3px rgba(16,24,40,.04),0 6px 24px rgba(16,24,40,.04)}
+html.dark .sh{box-shadow:0 4px 24px rgba(0,0,0,.25)}
+
+/* ── 12. RESULTATEN — feestelijke score ──────────────────────── */
+.res-xp{position:relative;overflow:hidden}
+.res-xp::before{content:'';position:absolute;top:-60%;left:-30%;width:60%;height:220%;background:linear-gradient(100deg,transparent,rgba(var(--or-rgb),.1),transparent);transform:skewX(-20deg);animation:v3sweep 4.5s cubic-bezier(.6,0,.3,1) infinite}
+.res-xp-num{animation:v3scorein .7s cubic-bezier(.34,1.5,.64,1) both .2s}
+@keyframes v3scorein{from{opacity:0;transform:scale(.4)}to{opacity:1;transform:scale(1)}}
+.record-banner,.pb-banner{background:linear-gradient(135deg,rgba(245,158,11,.16),rgba(234,88,12,.1));border:1px solid rgba(245,158,11,.4);border-radius:16px;padding:13px 18px;margin-top:12px;font-weight:800;font-size:14.5px;color:#d97706;text-align:center;animation:comboIn .45s cubic-bezier(.34,1.5,.64,1);box-shadow:0 4px 20px rgba(245,158,11,.18)}
+html.dark .record-banner,html.dark .pb-banner{color:#fbbf24}
+
+/* ── 13. QUIZ-MODE KAARTEN — premium hover ───────────────────── */
+.qmcd:hover{transform:translateY(-4px) scale(1.01)}
+.qmcd:active{transform:scale(.98)}
+.qmci{transition:transform .3s cubic-bezier(.34,1.5,.64,1),box-shadow .3s}
+.qmcd:hover .qmci{transform:scale(1.12) rotate(-4deg);box-shadow:0 4px 18px var(--qm-glow,rgba(255,255,255,.1))}
+
+/* ── 14. LEADERBOARD — podium glans ──────────────────────────── */
+.lb-pod-avatar{transition:transform .3s cubic-bezier(.34,1.4,.64,1)}
+.lb-pod-avatar:hover{transform:scale(1.08) translateY(-2px)}
+
+/* ── 15. TOEGANKELIJKHEID — minder beweging ──────────────────── */
+@media(prefers-reduced-motion:reduce){
+  .hm-hero::before,.hm-h1 em,.hm-cta-primary::after,.nxt::after,.qpf,.res-xp::before,
+  .bnav-fab,.daily-card-badge,.hm-greeting.hm-greeting-warn,.hero-beam,.qm-orb{animation:none!important}
+  .sg .card{animation-duration:.01s!important;animation-delay:0s!important}
+  *{transition-duration:.01s!important;scroll-behavior:auto}
+}
+
+/* ── 16. MOBIEL — extra adem en comfort ──────────────────────── */
+@media(max-width:640px){
+  .hm-greeting{font-size:12px;padding:5px 13px}
+  .card{border-top-width:2.5px}
+  .opt{box-shadow:0 2px 10px rgba(0,0,0,.2),0 1px 0 rgba(255,255,255,.15) inset}
+}
