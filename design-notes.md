@@ -166,3 +166,26 @@ Emblemen recognisable + responsive; domein-iconen kloppen inhoudelijk.
 **Budget**: emblemen + iconen zijn SVG-data-uri/emoji in één gedeelde CSS +
 inline emoji → geen extra requests, SEO-snelheid intact. SW v159 (forceert
 verse vak-theme.css voor terugkerende bezoekers).
+
+## Pass 7 — Content-audit (stap 1): antwoordopties snelle quiz
+
+**Bevinding (audit als leerling)**: in de snelle quiz stonden in veel opties
+verklarende haakjes ("Betoog (overtuigen van één standpunt)") — dat maakt
+opties ongelijk lang, geeft het antwoord weg en is langer dan nodig.
+
+**Veilig & geautomatiseerd**: verklarende haakjes uit opties strippen (uitleg
+staat al in u:). 274 vragen / 719 opties in de 13 non-bèta-vakken.
+- Conservatieve regel: alleen (...) met spatie, zónder cijfers/symbolen.
+- Per-vraag vangnet: skip als resultaat leeg/dubbel zou worden (0 gevallen).
+- **Bèta uitgesloten** (Wiskunde A/B, Natuurkunde, Scheikunde, Informatica):
+  daar zijn haakjes vaak notatie — strippen zou "a^(m+n)", "log(n·a)",
+  "a=(y₂−y₁)/(x₂−x₁)" slópen. Dry-run bevestigde 2 destructieve gevallen →
+  alle 5 bèta-vakken handmatig later.
+- Geverifieerd: schijf gestript + geldig, structuur intact (o:[/{v: tellingen
+  gelijk, ()-paren in matched pairs verwijderd), server serveert gestript,
+  bèta-notatie aantoonbaar ongewijzigd. Volledig diff-log: CONTENT-FIXES-haakjes.txt.
+
+**Nog te doen (grotere, handmatige stappen)**: lange-zin-antwoorden inkorten
+(de "juist=langste" tell, ~61 vragen in nl alleen al — vereist per-vraag
+herschrijven met behoud van juistheid); bèta-opties handmatig; validiteit
+samenvattingen/oud-examen/flashcards per vak. SW v160.

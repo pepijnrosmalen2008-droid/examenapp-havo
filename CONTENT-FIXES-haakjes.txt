@@ -1,0 +1,724 @@
+# Content-fix log — snelle quiz: verklarende haakjes uit antwoordopties
+# 274 vragen, 719 opties · 13 non-bèta-vakken · bèta (wis/na/sk/in) bewust uitgesloten
+# Doel: opties kort & vergelijkbaar, giveaways weg. Betekenis behouden (uitleg staat in u:).
+
+[HAVO Nederlands] Betoog (overtuigen van één standpunt)  ->  Betoog
+[HAVO Nederlands] Beschouwing (meerdere perspectieven, geen overtuiging)  ->  Beschouwing
+[HAVO Nederlands] Informatieve tekst (informeren zonder standpunt)  ->  Informatieve tekst
+[HAVO Nederlands] Narratieve tekst (vertellen van een verhaal)  ->  Narratieve tekst
+[HAVO Nederlands] Weerlegging (aanval op tegenargument)  ->  Weerlegging
+[HAVO Nederlands] Analogie (vergelijking als bewijs)  ->  Analogie
+[HAVO Nederlands] Opsomming (reeks argumenten)  ->  Opsomming
+[HAVO Nederlands] Feit (objectief controleerbaar)  ->  Feit
+[HAVO Nederlands] Mening (waardeoordeel, subjectief)  ->  Mening
+[HAVO Nederlands] Hypothese (veronderstelling, niet bewezen)  ->  Hypothese
+[HAVO Nederlands] Stelling (bewering die bewijs vereist)  ->  Stelling
+[HAVO Nederlands] Tekststructuur (opbouwprincipe van de tekst)  ->  Tekststructuur
+[HAVO Nederlands] Toon (houding van de schrijver)  ->  Toon
+[HAVO Nederlands] Register (formeel of informeel taalgebruik)  ->  Register
+[HAVO Nederlands] Genre (soort tekst zoals roman, artikel of brief)  ->  Genre
+[HAVO Nederlands] Communicatief doel (functie van de tekst)  ->  Communicatief doel
+[HAVO Nederlands] Stijl (manier van schrijven)  ->  Stijl
+[HAVO Nederlands] Toon (houding van de schrijver)  ->  Toon
+[HAVO Nederlands] Onderwerp (waar de tekst over gaat)  ->  Onderwerp
+[HAVO Nederlands] Deductie (van algemeen naar specifiek)  ->  Deductie
+[HAVO Nederlands] Inductie (van specifiek naar algemeen)  ->  Inductie
+[HAVO Nederlands] Analogie (vergelijking als bewijs)  ->  Analogie
+[HAVO Nederlands] Abductie (beste verklaring voor de feiten)  ->  Abductie
+[HAVO Nederlands] Betoog (standpunt met argumenten)  ->  Betoog
+[HAVO Nederlands] Beschouwing (verkenning van een vraagstuk)  ->  Beschouwing
+[HAVO Nederlands] Informatieve tekst (feiten zonder mening)  ->  Informatieve tekst
+[HAVO Nederlands] De redenering (uitwerking van de kernzin)  ->  De redenering
+[HAVO Nederlands] Het bewijs (feit of statistiek)  ->  Het bewijs
+[HAVO Nederlands] De afsluiting (terugkoppeling naar stelling)  ->  De afsluiting
+[HAVO Nederlands] De inleiding (context van de alinea)  ->  De inleiding
+[HAVO Nederlands] Drogreden: beroep op de massa (argumentum ad populum)  ->  Drogreden: beroep op de massa
+[HAVO Nederlands] Feitelijk: controleerbaar/verifieerbaar. Waarderend: gebaseerd op normen en waarden (goed, slecht, moeten).  ->  Feitelijk: controleerbaar/verifieerbaar. Waarderend: gebaseerd op normen en waarden .
+[HAVO Nederlands] Ik-verteller (eerste persoon, begrensd perspectief)  ->  Ik-verteller
+[HAVO Nederlands] Alwetende verteller (derde persoon, kent alles)  ->  Alwetende verteller
+[HAVO Nederlands] Personale verteller (derde persoon, perspectief van één personage)  ->  Personale verteller
+[HAVO Nederlands] Auctoriale verteller (alwetend, commentarieert)  ->  Auctoriale verteller
+[HAVO Nederlands] Motief (concreet terugkerend element)  ->  Motief
+[HAVO Nederlands] Thema (centrale abstracte boodschap)  ->  Thema
+[HAVO Nederlands] Symbool (object staat voor abstracte waarde)  ->  Symbool
+[HAVO Nederlands] Leitmotiv (muzikaal herhalend thema)  ->  Leitmotiv
+[HAVO Nederlands] Romantiek (gevoel, natuur, idealisering)  ->  Romantiek
+[HAVO Nederlands] Naturalisme (determinisme, erfelijkheid)  ->  Naturalisme
+[HAVO Nederlands] Modernisme (stream of consciousness)  ->  Modernisme
+[HAVO Nederlands] Focalisatie (wiens perspectief)  ->  Focalisatie
+[HAVO Nederlands] Vertelstandpunt (wie vertelt het verhaal)  ->  Vertelstandpunt
+[HAVO Nederlands] Verteltempo (hoe snel de vertelling gaat)  ->  Verteltempo
+[HAVO Nederlands] Chronologie (tijdsvolgorde in het verhaal)  ->  Chronologie
+[HAVO Nederlands] In medias res (verhaal begint midden in de actie)  ->  In medias res
+[HAVO Nederlands] Retardering (opzettelijke vertraging voor spanning)  ->  Retardering
+[HAVO Nederlands] Vergelijking (A is als B)  ->  Vergelijking
+[HAVO Nederlands] Metafoor (A is B, zonder vergelijkingswoord)  ->  Metafoor
+[HAVO Nederlands] Personificatie (levenloze zaak krijgt menselijke eigenschappen)  ->  Personificatie
+[HAVO Nederlands] Hyperbool (overdrijving voor effect)  ->  Hyperbool
+[HAVO Nederlands] Picaresque roman (avonturenroman met schelm als held)  ->  Picaresque roman
+[HAVO Nederlands] Historische roman (fictie in historische setting)  ->  Historische roman
+[HAVO Nederlands] Thriller (spanning en gevaar als hoofdelement)  ->  Thriller
+[HAVO Nederlands] Verhaaltijd (de periode die het verhaal bestrijkt)  ->  Verhaaltijd
+[HAVO Nederlands] Verteltijd (de tijd die het lezen van het verhaal kost)  ->  Verteltijd
+[HAVO Nederlands] Verteltempo (hoe snel de vertelling vordert)  ->  Verteltempo
+[HAVO Nederlands] Chronologie (de tijdsvolgorde van de gebeurtenissen)  ->  Chronologie
+[HAVO Nederlands] In medias res (beginnen midden in de actie)  ->  In medias res
+[HAVO Nederlands] Ellips (tijdsprong vooruit)  ->  Ellips
+[HAVO Biologie] De afhankelijke variabele (AV — wat je meet)  ->  De afhankelijke variabele
+[HAVO Biologie] De constante variabele (CV — wat je gelijkhoudt)  ->  De constante variabele
+[HAVO Biologie] Het optimum (temperatuuroptimum van het enzym)  ->  Het optimum
+[HAVO Biologie] Replicatie (verdubbeling van DNA)  ->  Replicatie
+[HAVO Biologie] Genotype (de allelen die het organisme draagt)  ->  Genotype
+[HAVO Biologie] Proteoom (totaal aan eiwitten)  ->  Proteoom
+[HAVO Biologie] Wet van scheiding (eerste wet van Mendel)  ->  Wet van scheiding
+[HAVO Biologie] Wet van vrije combinatie (tweede wet van Mendel)  ->  Wet van vrije combinatie
+[HAVO Biologie] Wet van dominantie (derde wet van Mendel)  ->  Wet van dominantie
+[HAVO Biologie] Wet van overerving (algemene erfelijkheidswet)  ->  Wet van overerving
+[HAVO Biologie] Insertie (of deletie) van één nucleotide: frameshiftmutatie  ->  Insertie van één nucleotide: frameshiftmutatie
+[HAVO Biologie] Positieve terugkoppeling (stimulus wordt versterkt)  ->  Positieve terugkoppeling
+[HAVO Biologie] Feedforward-regulatie (anticipatieve controle)  ->  Feedforward-regulatie
+[HAVO Biologie] Hormonale cascade (reeks hormonen activeert elkaar)  ->  Hormonale cascade
+[HAVO Biologie] Specifieke afweer (gericht op één antigeen)  ->  Specifieke afweer
+[HAVO Biologie] Aangeboren immuniteit (altijd aanwezig, geen leerproces)  ->  Aangeboren immuniteit
+[HAVO Biologie] Passieve immuniteit (antilichamen van buiten toegediend)  ->  Passieve immuniteit
+[HAVO Biologie] Autonoom zenuwstelsel (sympathisch en parasympathisch)  ->  Autonoom zenuwstelsel
+[HAVO Biologie] Somatisch zenuwstelsel (bewuste beweging)  ->  Somatisch zenuwstelsel
+[HAVO Biologie] Centraal zenuwstelsel (hersenen en ruggenmerg)  ->  Centraal zenuwstelsel
+[HAVO Biologie] Perifeer zenuwstelsel (hersenzenuwen en ruggenmergszenuwen)  ->  Perifeer zenuwstelsel
+[HAVO Biologie] mRNA-vaccin (geeft instructies voor eiwitproductie)  ->  mRNA-vaccin
+[HAVO Biologie] Subunit-vaccin (alleen een eiwit van de ziekteverwekker)  ->  Subunit-vaccin
+[HAVO Biologie] Toxoïdvaccin (inactivated toxine als antigeen)  ->  Toxoïdvaccin
+[HAVO Biologie] Longslagader (arteria pulmonalis)  ->  Longslagader
+[HAVO Biologie] Longader (vena pulmonalis)  ->  Longader
+[HAVO Biologie] Aorta (grote lichaamslagader)  ->  Aorta
+[HAVO Biologie] Holle ader (vena cava)  ->  Holle ader
+[HAVO Biologie] Circa 50% (helft wordt doorgegeven)  ->  Circa 50%
+[HAVO Biologie] Circa 90% (bijna alles wordt doorgegeven)  ->  Circa 90%
+[HAVO Biologie] Circa 1% (bijna alles gaat verloren)  ->  Circa 1%
+[HAVO Biologie] Allopatrische speciatie (geografische isolatie)  ->  Allopatrische speciatie
+[HAVO Biologie] Sympatrische speciatie (zonder geografische isolatie)  ->  Sympatrische speciatie
+[HAVO Biologie] Adaptieve radiatie (snelle diversificatie in nieuwe niche)  ->  Adaptieve radiatie
+[HAVO Biologie] Hybridisatie (kruising van twee soorten)  ->  Hybridisatie
+[HAVO Biologie] Genetische drift (toevallige verandering in kleine populatie)  ->  Genetische drift
+[HAVO Biologie] Natuurlijke selectie (overleving meest geschikte individuen)  ->  Natuurlijke selectie
+[HAVO Biologie] Mutatiedruk (continue aanvoer van nieuwe allelen)  ->  Mutatiedruk
+[HAVO Biologie] Natuurlijke selectie (gerichte verandering door selectiedruk)  ->  Natuurlijke selectie
+[HAVO Biologie] Genmigratie (instroom van allelen uit andere populaties)  ->  Genmigratie
+[HAVO Biologie] Mutatiedruk (continue aanvoer nieuwe allelen)  ->  Mutatiedruk
+[HAVO Biologie] Primaire productie (bruto en netto)  ->  Primaire productie
+[HAVO Biologie] Secundaire productie (door consumenten)  ->  Secundaire productie
+[HAVO Biologie] Bioaccumulatie (ophoping giftige stoffen)  ->  Bioaccumulatie
+[HAVO Biologie] Successie (opeenvolging van levensgemeenschappen)  ->  Successie
+[HAVO Biologie] Successie (ecologische opvolging)  ->  Successie
+[HAVO Biologie] Adaptatie (aanpassing aan omgeving)  ->  Adaptatie
+[HAVO Biologie] Speciatie (ontstaan van nieuwe soorten)  ->  Speciatie
+[HAVO Biologie] Competitie (concurrentie om hulpbronnen)  ->  Competitie
+[HAVO Biologie] Nutriëntenconcentratie (trofisch niveau van het water)  ->  Nutriëntenconcentratie
+[HAVO Biologie] Zuurgraad (pH van het water)  ->  Zuurgraad
+[HAVO Biologie] Temperatuur (invloed op enzymactiviteit)  ->  Temperatuur
+[HAVO Biologie] Saliniteit (zoutgehalte van het water)  ->  Saliniteit
+[HAVO Biologie] Genmigratie (gene flow)  ->  Genmigratie
+[HAVO Bedrijfseconomie] Samengestelde interest (rente op rente)  ->  Samengestelde interest
+[HAVO Bedrijfseconomie] Enkelvoudige interest (alleen over de hoofdsom)  ->  Enkelvoudige interest
+[HAVO Bedrijfseconomie] Annuïteitsrente (gelijke periodieke betaling)  ->  Annuïteitsrente
+[HAVO Bedrijfseconomie] Reële rente (gecorrigeerd voor inflatie)  ->  Reële rente
+[HAVO Bedrijfseconomie] BV (Besloten Vennootschap)  ->  BV
+[HAVO Bedrijfseconomie] Eenmanszaak (onbeperkte aansprakelijkheid)  ->  Eenmanszaak
+[HAVO Bedrijfseconomie] VOF (hoofdelijk aansprakelijk per vennoot)  ->  VOF
+[HAVO Bedrijfseconomie] Maatschap (geen rechtspersoon)  ->  Maatschap
+[HAVO Bedrijfseconomie] BV: onbeperkt (aandeelhouder draait op)  ->  BV: onbeperkt
+[HAVO Bedrijfseconomie] Rechtspersoon (BV, NV, stichting, vereniging)  ->  Rechtspersoon
+[HAVO Bedrijfseconomie] Eenmanszaak (geen rechtspersoon)  ->  Eenmanszaak
+[HAVO Bedrijfseconomie] VOF (geen rechtspersoon)  ->  VOF
+[HAVO Bedrijfseconomie] Maatschap (geen rechtspersoon)  ->  Maatschap
+[HAVO Bedrijfseconomie] Factoring (verkoop van vordering aan factormaatschappij)  ->  Factoring
+[HAVO Bedrijfseconomie] Leasing (huren van investeringsgoed)  ->  Leasing
+[HAVO Bedrijfseconomie] Hypotheek (lening met onderpand onroerend goed)  ->  Hypotheek
+[HAVO Bedrijfseconomie] Kredietfaciliteit (kredietlimiet bij bank)  ->  Kredietfaciliteit
+[HAVO Bedrijfseconomie] Lijn-staforganisatie (staf adviseert, lijn beslist)  ->  Lijn-staforganisatie
+[HAVO Bedrijfseconomie] Lijnorganisatie (alleen gezagslijnen)  ->  Lijnorganisatie
+[HAVO Bedrijfseconomie] Matrixorganisatie (twee leidinggevenden)  ->  Matrixorganisatie
+[HAVO Bedrijfseconomie] Functionele organisatie (per vakgebied)  ->  Functionele organisatie
+[HAVO Bedrijfseconomie] Bepaalde tijd (automatisch einde)  ->  Bepaalde tijd
+[HAVO Bedrijfseconomie] Onbepaalde tijd (opzegging via UWV of rechter)  ->  Onbepaalde tijd
+[HAVO Bedrijfseconomie] Oproepcontract (alleen bij oproep)  ->  Oproepcontract
+[HAVO Bedrijfseconomie] Uitzendcontract (via uitzendbureau)  ->  Uitzendcontract
+[HAVO Bedrijfseconomie] CAO (Collectieve Arbeidsovereenkomst)  ->  CAO
+[HAVO Bedrijfseconomie] Arbeidscontract (individuele afspraken)  ->  Arbeidscontract
+[HAVO Bedrijfseconomie] Wet minimumloon (wettelijk minimum)  ->  Wet minimumloon
+[HAVO Bedrijfseconomie] Bedrijfsreglement (intern beleid)  ->  Bedrijfsreglement
+[HAVO Bedrijfseconomie] Decentralisatie (bevoegdheden naar lagere niveaus)  ->  Decentralisatie
+[HAVO Bedrijfseconomie] Centralisatie (alle beslissingen bij het topmanagement)  ->  Centralisatie
+[HAVO Bedrijfseconomie] Delegatie (overdracht van taken maar niet van eindverantwoordelijkheid)  ->  Delegatie
+[HAVO Bedrijfseconomie] Integratie (samenvoegen van afdelingen)  ->  Integratie
+[HAVO Bedrijfseconomie] Tweefactorentheorie van Herzberg (hygiëne en motivatoren)  ->  Tweefactorentheorie van Herzberg
+[HAVO Bedrijfseconomie] X/Y-theorie van McGregor (visie op medewerkers)  ->  X/Y-theorie van McGregor
+[HAVO Bedrijfseconomie] Controleren (bijsturen op basis van afwijkingen)  ->  Controleren
+[HAVO Bedrijfseconomie] Plannen (doelen stellen en strategie bepalen)  ->  Plannen
+[HAVO Bedrijfseconomie] Organiseren (taken en bevoegdheden verdelen)  ->  Organiseren
+[HAVO Bedrijfseconomie] Leidinggeven (medewerkers motiveren)  ->  Leidinggeven
+[HAVO Bedrijfseconomie] Formele communicatie (via de hiërarchie)  ->  Formele communicatie
+[HAVO Bedrijfseconomie] Informele communicatie (via de wandelgangen)  ->  Informele communicatie
+[HAVO Bedrijfseconomie] Laterale communicatie (tussen gelijke niveaus)  ->  Laterale communicatie
+[HAVO Bedrijfseconomie] Externe communicatie (naar buiten de organisatie)  ->  Externe communicatie
+[HAVO Bedrijfseconomie] Secundair onderzoek (bestaande bronnen)  ->  Secundair onderzoek
+[HAVO Bedrijfseconomie] Primair onderzoek (zelf verzameld)  ->  Primair onderzoek
+[HAVO Bedrijfseconomie] Organisatiehierarchie (interne structuur)  ->  Organisatiehierarchie
+[HAVO Bedrijfseconomie] Productieproces (interne fabricage)  ->  Productieproces
+[HAVO Bedrijfseconomie] Kwalitatief onderzoek (inzichten, kleine groep)  ->  Kwalitatief onderzoek
+[HAVO Bedrijfseconomie] Kwantitatief onderzoek (cijfers, grote steekproef)  ->  Kwantitatief onderzoek
+[HAVO Bedrijfseconomie] Secundair onderzoek (bestaande bronnen)  ->  Secundair onderzoek
+[HAVO Bedrijfseconomie] Productoriëntatie (focus op het product zelf)  ->  Productoriëntatie
+[HAVO Bedrijfseconomie] Verkooporiëntatie (focus op verkooptechnieken)  ->  Verkooporiëntatie
+[HAVO Bedrijfseconomie] Productie-oriëntatie (focus op efficiënte productie)  ->  Productie-oriëntatie
+[HAVO Bedrijfseconomie] Intensieve distributie (zo veel mogelijk verkooppunten)  ->  Intensieve distributie
+[HAVO Bedrijfseconomie] Selectieve distributie (beperkt aantal verkooppunten)  ->  Selectieve distributie
+[HAVO Bedrijfseconomie] Exclusieve distributie (slechts één verkooppunt per gebied)  ->  Exclusieve distributie
+[HAVO Bedrijfseconomie] Directe distributie (fabrikant verkoopt rechtstreeks)  ->  Directe distributie
+[HAVO Bedrijfseconomie] Public relations (PR — gratis publiciteit via redactionele berichten)  ->  Public relations
+[HAVO Bedrijfseconomie] Reclame (betaalde mediacommunicatie)  ->  Reclame
+[HAVO Bedrijfseconomie] Sponsoring (financiële ondersteuning van evenementen)  ->  Sponsoring
+[HAVO Bedrijfseconomie] Enquête (vragenlijst voor grote groep)  ->  Enquête
+[HAVO Bedrijfseconomie] Diepte-interview (open gesprek met één persoon)  ->  Diepte-interview
+[HAVO Bedrijfseconomie] Observatie (gedrag waarnemen zonder vragen)  ->  Observatie
+[HAVO Bedrijfseconomie] Marktontwikkeling (Ansoff: bestaand product, nieuwe markt)  ->  Marktontwikkeling
+[HAVO Bedrijfseconomie] Productontwikkeling (nieuw product, bestaande markt)  ->  Productontwikkeling
+[HAVO Bedrijfseconomie] Marktpenetratie (bestaand product, bestaande markt)  ->  Marktpenetratie
+[HAVO Bedrijfseconomie] Diversificatie (nieuw product, nieuwe markt)  ->  Diversificatie
+[HAVO Bedrijfseconomie] Dekkingsbijdrage per stuk (vp − vk)  ->  Dekkingsbijdrage per stuk
+[HAVO Bedrijfseconomie] Brutowinst per stuk (inclusief vaste kosten)  ->  Brutowinst per stuk
+[HAVO Bedrijfseconomie] Nettowinst per stuk (na alle kosten)  ->  Nettowinst per stuk
+[HAVO Bedrijfseconomie] Omzet per stuk (alleen verkoopprijs)  ->  Omzet per stuk
+[HAVO Bedrijfseconomie] Maximale winst (optimale productie)  ->  Maximale winst
+[HAVO Bedrijfseconomie] Capaciteitsgrens (maximale output)  ->  Capaciteitsgrens
+[HAVO Bedrijfseconomie] NCW (Netto Contante Waarde)  ->  NCW
+[HAVO Bedrijfseconomie] RTV (Rentabiliteit Totaal Vermogen)  ->  RTV
+[HAVO Bedrijfseconomie] REV (Rentabiliteit Eigen Vermogen)  ->  REV
+[HAVO Bedrijfseconomie] Vaste kosten (huur, afschrijving, vaste salarissen)  ->  Vaste kosten
+[HAVO Bedrijfseconomie] Variabele kosten (materialen, directe arbeid)  ->  Variabele kosten
+[HAVO Bedrijfseconomie] Directe kosten (toewijsbaar aan product)  ->  Directe kosten
+[HAVO Bedrijfseconomie] Indirecte kosten (algemene overhead)  ->  Indirecte kosten
+[HAVO Bedrijfseconomie] Als NCW < 0 (investeringskosten overtreffen baten)  ->  Als NCW < 0
+[HAVO Bedrijfseconomie] Als NCW = 0 (exacte terugverdientijd)  ->  Als NCW = 0
+[HAVO Bedrijfseconomie] Werkkapitaal (vlottende activa minus kortlopende schulden)  ->  Werkkapitaal
+[HAVO Bedrijfseconomie] Werkkapitaal (vlottende activa − kortlopende schulden)  ->  Werkkapitaal
+[HAVO Bedrijfseconomie] Quick ratio (zonder voorraden)  ->  Quick ratio
+[HAVO Bedrijfseconomie] RTV (rentabiliteit totaal vermogen)  ->  RTV
+[HAVO Bedrijfseconomie] Lineaire afschrijving (gelijk per jaar)  ->  Lineaire afschrijving
+[HAVO Bedrijfseconomie] Degressieve afschrijving (dalend per jaar)  ->  Degressieve afschrijving
+[HAVO Bedrijfseconomie] Progressieve afschrijving (stijgend per jaar)  ->  Progressieve afschrijving
+[HAVO Bedrijfseconomie] Gebruiksafschrijving (naar werkelijk gebruik)  ->  Gebruiksafschrijving
+[HAVO Bedrijfseconomie] Winst-en-verliesrekening (periode, opbrengsten − kosten)  ->  Winst-en-verliesrekening
+[HAVO Bedrijfseconomie] Jaarverslag (toelichting en strategie)  ->  Jaarverslag
+[HAVO Bedrijfseconomie] Passiva (financieringsstructuur van het bedrijf)  ->  Passiva
+[HAVO Bedrijfseconomie] Activa (bezittingen van het bedrijf)  ->  Activa
+[HAVO Bedrijfseconomie] Vlottende activa (op korte termijn om te zetten)  ->  Vlottende activa
+[HAVO Bedrijfseconomie] Vaste activa (langdurig in gebruik)  ->  Vaste activa
+[HAVO Bedrijfseconomie] Cumulatieve afschrijvingen (gecorrigeerde boekwaarde)  ->  Cumulatieve afschrijvingen
+[HAVO Bedrijfseconomie] Voorzieningen (verwachte toekomstige verplichtingen)  ->  Voorzieningen
+[HAVO Bedrijfseconomie] Reserves (ingehouden winsten)  ->  Reserves
+[HAVO Bedrijfseconomie] Crediteuren (nog te betalen facturen)  ->  Crediteuren
+[HAVO Bedrijfseconomie] Brutowinst (omzet minus inkoopwaarde)  ->  Brutowinst
+[HAVO Bedrijfseconomie] Nettowinst (na aftrek van alle kosten)  ->  Nettowinst
+[HAVO Bedrijfseconomie] Bedrijfsresultaat (na aftrek van bedrijfskosten)  ->  Bedrijfsresultaat
+[HAVO Bedrijfseconomie] Toegevoegde waarde (omzet minus externe kosten)  ->  Toegevoegde waarde
+[HAVO Bedrijfseconomie] Vaste activa (langdurig in gebruik, worden afgeschreven)  ->  Vaste activa
+[HAVO Bedrijfseconomie] Vlottende activa (kortlopend, snel omzetbaar)  ->  Vlottende activa
+[HAVO Bedrijfseconomie] Eigen vermogen (financiering door eigenaren)  ->  Eigen vermogen
+[HAVO Bedrijfseconomie] Vreemd vermogen (schulden aan derden)  ->  Vreemd vermogen
+[HAVO Bedrijfseconomie] Voorzieningen (geraamde toekomstige verplichtingen)  ->  Voorzieningen
+[HAVO Engels] "I disagree." (and then stop)  ->  "I disagree."
+[HAVO Engels] "What?" (said loudly and impatiently)  ->  "What?"
+[HAVO Engels] Best wishes (informal only)  ->  Best wishes
+[HAVO Engels] To introduce the topic and state your thesis (main argument)  ->  To introduce the topic and state your thesis
+[HAVO Geschiedenis] Feodalisme (macht gedeeld met lokale edelen)  ->  Feodalisme
+[HAVO Geschiedenis] Constitutionalisme (grondwet begrenst de macht)  ->  Constitutionalisme
+[HAVO Geschiedenis] Republikanisme (geen erfelijke monarch)  ->  Republikanisme
+[HAVO Geschiedenis] De Verlichting (Voltaire, Rousseau, Montesquieu)  ->  De Verlichting
+[HAVO Geschiedenis] De Renaissance (humanisme, klassieke kunst)  ->  De Renaissance
+[HAVO Geschiedenis] De Reformatie (Luther, Calvijn)  ->  De Reformatie
+[HAVO Geschiedenis] De Romantiek (gevoel boven rede)  ->  De Romantiek
+[HAVO Geschiedenis] Imperialisme (politieke en economische overheersing)  ->  Imperialisme
+[HAVO Geschiedenis] Nationalisme (eenheid van het eigen volk)  ->  Nationalisme
+[HAVO Geschiedenis] Mercantilisme (staatsgeleide handelseconomie)  ->  Mercantilisme
+[HAVO Geschiedenis] Feodalisme (leenbanden en grondbezit)  ->  Feodalisme
+[HAVO Geschiedenis] HBO Erfgoed & Cultuur of Bouwkunde (specialisatie monumentenzorg)  ->  HBO Erfgoed & Cultuur of Bouwkunde
+[HAVO Economie] Lek = geld verlaat kringloop (sparen, belasting, import). Injectie = geld komt erin (investering, overheid, export).  ->  Lek = geld verlaat kringloop . Injectie = geld komt erin .
+[HAVO Economie] Loon = beloning voor arbeid. Rente = beloning voor kapitaal (machines, gebouwen).  ->  Loon = beloning voor arbeid. Rente = beloning voor kapitaal .
+[HAVO Economie] Natuur/grond (huur of pacht)  ->  Natuur/grond
+[HAVO Economie] Evenwichtsprijs (marktruimende prijs)  ->  Evenwichtsprijs
+[HAVO Economie] Richtprijs (aanbevolen verkoopprijs)  ->  Richtprijs
+[HAVO Economie] Elastische vraag (luxegoederen, alternatieven beschikbaar)  ->  Elastische vraag
+[HAVO Economie] Kruiselasticiteit (effect van prijs op verwant goed)  ->  Kruiselasticiteit
+[HAVO Economie] Consumentensurplus (voordeel boven betaalde prijs)  ->  Consumentensurplus
+[HAVO Economie] Producentensurplus (winst boven minimale verkoopprijs)  ->  Producentensurplus
+[HAVO Economie] Dood gewicht (welvaartsverlies door marktfalen)  ->  Dood gewicht
+[HAVO Economie] Monopolie (één aanbieder, geen concurrentie)  ->  Monopolie
+[HAVO Economie] Volledige mededinging (veel kleine aanbieders)  ->  Volledige mededinging
+[HAVO Economie] Monopsonie (één grote vrager op de markt)  ->  Monopsonie
+[HAVO Economie] Subsidie (overheidsbijdrage om prijs te verlagen)  ->  Subsidie
+[HAVO Economie] Accijns (belasting die prijs verhoogt)  ->  Accijns
+[HAVO Economie] Een goed dat de overheid subsidieert omdat de markt het te weinig aanbiedt (onderschatting private baten)  ->  Een goed dat de overheid subsidieert omdat de markt het te weinig aanbiedt
+[HAVO Economie] De verandering in vraag bij een inkomensverandering. Negatief = inferieur goed (minder gevraagd bij hoger inkomen).  ->  De verandering in vraag bij een inkomensverandering. Negatief = inferieur goed .
+[HAVO Economie] Automatische stabilisatoren (uitkeringen omhoog, belasting omlaag)  ->  Automatische stabilisatoren
+[HAVO Economie] Discretionair beleid (gerichte overheidsuitgaven)  ->  Discretionair beleid
+[HAVO Economie] Monetair beleid (renteaanpassing door centrale bank)  ->  Monetair beleid
+[HAVO Economie] Deregulering (minder overheidsregels voor bedrijven)  ->  Deregulering
+[HAVO Economie] Sociale verzekering (WW, WIA, ZW — premiegefinancierd)  ->  Sociale verzekering
+[HAVO Economie] Sociale voorziening (bijstand, AOW — belastinggefinancierd)  ->  Sociale voorziening
+[HAVO Economie] Sociale zekerheidsval (armoedeval bij aannemen werk)  ->  Sociale zekerheidsval
+[HAVO Economie] Algemene prijsstijging waardoor de koopkracht daalt. Oorzaken: bestedingsinflatie (te veel vraag) of kosteninflatie (hogere productiekosten).  ->  Algemene prijsstijging waardoor de koopkracht daalt. Oorzaken: bestedingsinflatie of kosteninflatie .
+[HAVO Economie] BBP = Consumptie + Investeringen + Overheidsbestedingen + (Export minus Import)  ->  BBP = Consumptie + Investeringen + Overheidsbestedingen +
+[HAVO Economie] Inflatie door stijgende productiekosten (energie, grondstoffen, lonen) die worden doorberekend in prijzen  ->  Inflatie door stijgende productiekosten die worden doorberekend in prijzen
+[HAVO Maatschappijwetenschappen] Formele controle via wetten en instituties (politie, rechter). Informele controle via sociale druk, roddel en uitsluiting.  ->  Formele controle via wetten en instituties . Informele controle via sociale druk, roddel en uitsluiting.
+[HAVO Maatschappijwetenschappen] Traditioneel (traditie), charismatisch (persoonlijkheid), rationeel-legaal (wetten en procedures)  ->  Traditioneel (traditie), charismatisch (persoonlijkheid), rationeel-legaal
+[HAVO Maatschappijwetenschappen] Zwakke sociale bindingen (gezin, school, werk) verlagen de drempel voor crimineel gedrag  ->  Zwakke sociale bindingen verlagen de drempel voor crimineel gedrag
+[HAVO Maatschappijwetenschappen] Formeel: wettelijk vastgelegd (overheid, rechtbank). Informeel: gewoonte en tradities (gezin, normen).  ->  Formeel: wettelijk vastgelegd . Informeel: gewoonte en tradities .
+[HAVO Maatschappijwetenschappen] Klassiek grondrecht (vrijheidsrecht, overheid houdt zich afzijdig)  ->  Klassiek grondrecht
+[HAVO Maatschappijwetenschappen] Materieel grondrecht (inhoudelijk recht)  ->  Materieel grondrecht
+[HAVO Maatschappijwetenschappen] 51 zetels (een derde van de Kamer)  ->  51 zetels
+[HAVO Maatschappijwetenschappen] 61 zetels (twee vijfde van de Kamer)  ->  61 zetels
+[HAVO Maatschappijwetenschappen] 101 zetels (tweederde meerderheid)  ->  101 zetels
+[HAVO Maatschappijwetenschappen] Liberalisme (individuele vrijheid, vrije markt)  ->  Liberalisme
+[HAVO Maatschappijwetenschappen] Conservatisme (behoud van tradities en stabiliteit)  ->  Conservatisme
+[HAVO Maatschappijwetenschappen] Socialisme (collectieve eigendom, gelijkheid)  ->  Socialisme
+[HAVO Maatschappijwetenschappen] Pressiegroep (organisatie die druk uitoefent op publiek)  ->  Pressiegroep
+[HAVO Maatschappijwetenschappen] Politieke participatie (meedoen aan verkiezingen)  ->  Politieke participatie
+[HAVO Maatschappijwetenschappen] Burgerinitiatieven (directe volksraadpleging)  ->  Burgerinitiatieven
+[HAVO Maatschappijwetenschappen] Intragenerationele mobiliteit (verandering binnen eigen leven)  ->  Intragenerationele mobiliteit
+[HAVO Maatschappijwetenschappen] Horizontale mobiliteit (wisselen op hetzelfde niveau)  ->  Horizontale mobiliteit
+[HAVO Maatschappijwetenschappen] Sociale stratificatie (indeling in lagen)  ->  Sociale stratificatie
+[HAVO Maatschappijwetenschappen] Labelingtheorie (Becker: reactie samenleving)  ->  Labelingtheorie
+[HAVO Maatschappijwetenschappen] Bindingstheorie (Hirschi: sociale banden)  ->  Bindingstheorie
+[HAVO Maatschappijwetenschappen] Biologische theorie (aangeboren criminaliteit)  ->  Biologische theorie
+[HAVO Maatschappijwetenschappen] Verzorgingsstaat (brede overheidsvoorzieningen)  ->  Verzorgingsstaat
+[HAVO Maatschappijwetenschappen] Welvaartstaat (focus op economische groei)  ->  Welvaartstaat
+[HAVO Maatschappijwetenschappen] Minimalistische staat (overheid beperkt tot veiligheid)  ->  Minimalistische staat
+[HAVO Maatschappijwetenschappen] Homogene samenleving (één dominante cultuur)  ->  Homogene samenleving
+[HAVO Maatschappijwetenschappen] Multiculturele samenleving (nadruk op behoud eigen cultuur)  ->  Multiculturele samenleving
+[HAVO Maatschappijwetenschappen] Gesegregeerde samenleving (groepen leven gescheiden)  ->  Gesegregeerde samenleving
+[HAVO Maatschappijwetenschappen] Assimilatie (eigen cultuur volledig opgeven)  ->  Assimilatie
+[HAVO Maatschappijwetenschappen] Segregatie (gescheiden van de samenleving leven)  ->  Segregatie
+[HAVO Maatschappijwetenschappen] Marginalisatie (noch deel van eigen noch gastcultuur)  ->  Marginalisatie
+[VWO Nederlands] Algemene uitspraak – toelichting (of voorbeeld)  ->  Algemene uitspraak – toelichting
+[VWO Nederlands] Een woord in de ene zin verwijst terug naar (of vooruit naar) iets in een andere zin (bijv. "hij", "dit", "het", "deze kwestie").  ->  Een woord in de ene zin verwijst terug naar iets in een andere zin (bijv. "hij", "dit", "het", "deze kwestie").
+[VWO Nederlands] Presuppositie (verborgen aanname in de tekst)  ->  Presuppositie
+[VWO Nederlands] Implicatuur (wat impliciet wordt meegedeeld)  ->  Implicatuur
+[VWO Nederlands] Connotatie (bijbetekenis van een woord)  ->  Connotatie
+[VWO Nederlands] Metonymie (deel staat voor het geheel)  ->  Metonymie
+[VWO Nederlands] Verwijzingsrelatie (anaforische verwijzing)  ->  Verwijzingsrelatie
+[VWO Nederlands] Persoonlijke aanval (ad hominem): de discussiant valt de persoon aan in plaats van de argumentatie.  ->  Persoonlijke aanval : de discussiant valt de persoon aan in plaats van de argumentatie.
+[VWO Nederlands] Autoriteitsschema (deskundige ondersteuning)  ->  Autoriteitsschema
+[VWO Nederlands] Oorzaak-gevolgschema (A leidt tot B)  ->  Oorzaak-gevolgschema
+[VWO Nederlands] Voorbeeldschema (specifiek geval als bewijs)  ->  Voorbeeldschema
+[VWO Nederlands] Post hoc ergo propter hoc (na dit, dus door dit) — oorzaak-gevolgdrogreden  ->  Post hoc ergo propter hoc — oorzaak-gevolgdrogreden
+[VWO Nederlands] Overhaaste generalisatie (onterecht voorbeeldschema)  ->  Overhaaste generalisatie
+[VWO Nederlands] Vals dilemma (te weinig opties)  ->  Vals dilemma
+[VWO Nederlands] Persoonlijke aanval (ad hominem)  ->  Persoonlijke aanval
+[VWO Nederlands] Cirkelredenering (standpunt als bewijs)  ->  Cirkelredenering
+[VWO Nederlands] Chronologische vertelling (ab ovo)  ->  Chronologische vertelling
+[VWO Nederlands] In medias res (midden in de actie)  ->  In medias res
+[VWO Nederlands] Anachronische vertelling (met tijdsprongen)  ->  Anachronische vertelling
+[VWO Nederlands] Climax (hoogste spanningspunt)  ->  Climax
+[VWO Nederlands] Expositie (opening, achtergrond)  ->  Expositie
+[VWO Nederlands] Dénouement (ontknoping, afwikkeling)  ->  Dénouement
+[VWO Nederlands] Multatuli (Eduard Douwes Dekker)  ->  Multatuli
+[VWO Nederlands] Louis Couperus (Van oude mensen)  ->  Louis Couperus
+[VWO Nederlands] Gerard Reve (De Avonden)  ->  Gerard Reve
+[VWO Nederlands] W.F. Hermans (De donkere kamer van Damokles)  ->  W.F. Hermans
+[VWO Nederlands] Fabula (werkelijke tijdsvolgorde) versus sjuzjet (verhaalde volgorde)  ->  Fabula versus sjuzjet
+[VWO Nederlands] Focalisatie (wie ziet er?)  ->  Focalisatie
+[VWO Nederlands] Perspectief (wie vertelt er?)  ->  Perspectief
+[VWO Nederlands] Compositie (structuur van het geheel)  ->  Compositie
+[VWO Nederlands] Noteer de kernzin per alinea en sleutelinformatie (feiten, getallen, namen)  ->  Noteer de kernzin per alinea en sleutelinformatie
+[VWO Nederlands] Formeel (standaardtaal, zakelijk), informeel (omgangstaal, vriendschappelijk) en dialect/spreektaal  ->  Formeel , informeel en dialect/spreektaal
+[VWO Nederlands] Coherentie = betekenissamenhang (logische opbouw). Cohesie = tekstuele samenhang (verwijzingen en verbindingswoorden).  ->  Coherentie = betekenissamenhang . Cohesie = tekstuele samenhang .
+[VWO Nederlands] Geachte heer/mevrouw [achternaam], (formele aanhef)  ->  Geachte heer/mevrouw [achternaam],
+[VWO Engels] Diverterende tekst (entertaining text)  ->  Diverterende tekst
+[VWO Engels] Informatieve tekst (informative text)  ->  Informatieve tekst
+[VWO Engels] Betogende tekst (persuasive text)  ->  Betogende tekst
+[VWO Engels] Beschouwende tekst (reflective text)  ->  Beschouwende tekst
+[VWO Engels] A recurring element (image, symbol or phrase) that has symbolic significance throughout the work.  ->  A recurring element that has symbolic significance throughout the work.
+[VWO Engels] A sonnet (Shakespearean or Petrarchan)  ->  A sonnet
+[VWO Engels] A ballad (narrative song)  ->  A ballad
+[VWO Engels] An ode (lyric poem of praise)  ->  An ode
+[VWO Engels] Coherence = logical flow of ideas. Cohesion = linguistic links (pronouns, connectors) that hold sentences together.  ->  Coherence = logical flow of ideas. Cohesion = linguistic links that hold sentences together.
+[VWO Duits] Echter / maar (uitdrukking van tegenstelling)  ->  Echter / maar
+[VWO Duits] un- (negatief voorvoegsel)  ->  un-
+[VWO Duits] -ung (nominalisering van werkwoorden)  ->  -ung
+[VWO Duits] -heit/-keit (nominalisering van adjectieven)  ->  -heit/-keit
+[VWO Duits] Toch / desondanks (concessie, tegenstelling)  ->  Toch / desondanks
+[VWO Duits] Obwohl (gevolgd door bijzin met werkwoord aan het eind)  ->  Obwohl
+[VWO Duits] Namelijk / want (geeft een verklaring of redengeving)  ->  Namelijk / want
+[VWO Duits] Dus / kortom / zeg maar (discourse marker of conclusie)  ->  Dus / kortom / zeg maar
+[VWO Duits] Sehr geehrte Damen und Herren, (als de naam onbekend is)  ->  Sehr geehrte Damen und Herren,
+[VWO Duits] Präsens (directe vraagstelling)  ->  Präsens
+[VWO Duits] Perfekt (afgeronde handeling in het verleden)  ->  Perfekt
+[VWO Duits] Futur I (voorspelling over de toekomst)  ->  Futur I
+[VWO Duits] "Mit freundlichen Grüßen," (formeel) of "Hochachtungsvoll," (zeer formeel)  ->  "Mit freundlichen Grüßen," (formeel) of "Hochachtungsvoll,"
+[VWO Duits] Johann Wolfgang von Goethe (Faust, Werther)  ->  Johann Wolfgang von Goethe
+[VWO Duits] Bertolt Brecht (episch theater)  ->  Bertolt Brecht
+[VWO Duits] Friedrich Schiller (klassiek drama)  ->  Friedrich Schiller
+[VWO Duits] Realismus (Fontane, Storm: maatschappijkritiek)  ->  Realismus
+[VWO Duits] Klassik (Goethe, Schiller: harmonie en idealen)  ->  Klassik
+[VWO Duits] Der Prozess (Kafka, absurdisme)  ->  Der Prozess
+[VWO Duits] Die Räuber (Schiller, Sturm und Drang)  ->  Die Räuber
+[VWO Duits] Der allwissende Erzähler (auktoriale Erzählperspektive)  ->  Der allwissende Erzähler
+[VWO Duits] Ich-Erzähler (eerste persoon)  ->  Ich-Erzähler
+[VWO Duits] Erlebte Rede (vrije indirecte rede)  ->  Erlebte Rede
+[VWO Duits] Personaler Erzähler (beperkte focalisatie)  ->  Personaler Erzähler
+[VWO Duits] Innere Emigration (schrijvers die in Duitsland bleven)  ->  Innere Emigration
+[VWO Frans] Echter / maar / toch (signaal van tegenstelling)  ->  Echter / maar / toch
+[VWO Frans] Enerzijds... anderzijds... (afweging van twee kanten).  ->  Enerzijds... anderzijds... .
+[VWO Frans] Toch / desondanks (concessief signaalwoord)  ->  Toch / desondanks
+[VWO Frans] Betogend / argumentatief (texte argumentatif)  ->  Betogend / argumentatief
+[VWO Frans] Informatief (texte informatif)  ->  Informatief
+[VWO Frans] Beschrijvend (texte descriptif)  ->  Beschrijvend
+[VWO Frans] Verhalend (texte narratif)  ->  Verhalend
+[VWO Frans] Toch / desondanks (concession, tegenstelling)  ->  Toch / desondanks
+[VWO Frans] Eigenlijk / in feite (nuancering of correctie).  ->  Eigenlijk / in feite .
+[VWO Frans] Le passé composé ("j'ai mangé", "il est parti")  ->  Le passé composé
+[VWO Frans] L'imparfait ("je mangeais")  ->  L'imparfait
+[VWO Frans] Le plus-que-parfait ("j'avais mangé")  ->  Le plus-que-parfait
+[VWO Frans] Le futur antérieur ("j'aurai mangé")  ->  Le futur antérieur
+[VWO Frans] "Certes, mais il faut aussi considérer que..." (toegeven maar toevoegen)  ->  "Certes, mais il faut aussi considérer que..."
+[VWO Frans] Albert Camus (absurdisme, existentialisme)  ->  Albert Camus
+[VWO Frans] Jean-Paul Sartre (La Nausée, existentialisme)  ->  Jean-Paul Sartre
+[VWO Frans] Victor Hugo (Les Misérables, Romantisme)  ->  Victor Hugo
+[VWO Frans] Gustave Flaubert (Madame Bovary, Réalisme)  ->  Gustave Flaubert
+[VWO Frans] Le Romantisme (Hugo, Lamartine, Musset)  ->  Le Romantisme
+[VWO Frans] Le Classicisme (rede, regels, Racine, Corneille)  ->  Le Classicisme
+[VWO Frans] Le Réalisme (Flaubert, Zola: maatschappijkritiek)  ->  Le Réalisme
+[VWO Frans] Le Surréalisme (Breton: dromen en onderbewuste)  ->  Le Surréalisme
+[VWO Frans] Jean-Paul Sartre (maar hij is Frans, niet Belgisch — correct: Sartre schreef "La Nausée")  ->  Jean-Paul Sartre
+[VWO Frans] Le Réalisme (Flaubert, Zola)  ->  Le Réalisme
+[VWO Frans] Satire (sociale kritiek via humor en overdrijving)  ->  Satire
+[VWO Frans] Tragedie (ernstig lot van de held)  ->  Tragedie
+[VWO Frans] Lyrik (lyrische poëzie)  ->  Lyrik
+[VWO Frans] Absurdisme (ontkenning van de betekenis)  ->  Absurdisme
+[VWO Frans] Madame Bovary (Emma Bovary, bedrog, provincialisme)  ->  Madame Bovary
+[VWO Frans] Les Fleurs du Mal (Baudelaire, symbolisme)  ->  Les Fleurs du Mal
+[VWO Frans] L'Étranger (Camus, absurdisme)  ->  L'Étranger
+[VWO Frans] Germinal (Zola, naturalisme)  ->  Germinal
+[VWO Frans] Point de vue interne / narrateur-personnage (beperkte focalisatie)  ->  Point de vue interne / narrateur-personnage
+[VWO Frans] Narrateur omniscient (alwetende verteller)  ->  Narrateur omniscient
+[VWO Frans] Narrateur neutre (objectieve, onpersoonlijke verteller)  ->  Narrateur neutre
+[VWO Frans] Discours indirect libre (vrije indirecte rede)  ->  Discours indirect libre
+[VWO Frans] Madame Bovary (Flaubert — provinciaal realisme)  ->  Madame Bovary
+[VWO Frans] Les Misérables (Hugo — romantisch en sociaal bewogen)  ->  Les Misérables
+[VWO Frans] L'Étranger (Camus — absurdisme en vervreemding)  ->  L'Étranger
+[VWO Frans] L'Étranger (roman, Meursault)  ->  L'Étranger
+[VWO Frans] La Peste (roman, collectieve crisis)  ->  La Peste
+[VWO Frans] Les Mains sales (Sartre, politiek theater)  ->  Les Mains sales
+[VWO Frans] Le Classicisme (rede en harmonie)  ->  Le Classicisme
+[VWO Frans] Le Romantisme (natuur en gevoel)  ->  Le Romantisme
+[VWO Frans] Le Surréalisme (dromen en onderbewuste)  ->  Le Surréalisme
+[VWO Biologie] Positieve terugkoppeling (afwijking wordt versterkt)  ->  Positieve terugkoppeling
+[VWO Biologie] Feedforward-regulatie (anticiperend op verwachte verandering)  ->  Feedforward-regulatie
+[VWO Biologie] Open-lussysteem (geen feedback)  ->  Open-lussysteem
+[VWO Biologie] Adrenaline (verhoogt bloedglucose bij stress)  ->  Adrenaline
+[VWO Biologie] Cortisol (verhoogt bloedglucose bij langdurige stress)  ->  Cortisol
+[VWO Biologie] Passieve immuniteit (antilichamen van buiten)  ->  Passieve immuniteit
+[VWO Biologie] Niet-specifieke afweer (fagocyten, lysozym)  ->  Niet-specifieke afweer
+[VWO Biologie] Neurale plasticiteit (synapsen versterken of verzwakken)  ->  Neurale plasticiteit
+[VWO Biologie] Myelinisatie (isolatie van axonen voor snellere geleiding)  ->  Myelinisatie
+[VWO Biologie] Reflex-arc (snelle onbewuste reactie)  ->  Reflex-arc
+[VWO Biologie] Sympathisch: vecht-of-vlucht reactie (adrenaline, hoge hartslag). Parasympathisch: rust en vertering.  ->  Sympathisch: vecht-of-vlucht reactie . Parasympathisch: rust en vertering.
+[VWO Biologie] IgE (triggert histamineafgifte bij allergeen contact)  ->  IgE
+[VWO Biologie] IgG (meest voorkomend, bacteriën en virussen)  ->  IgG
+[VWO Biologie] IgM (eerste antilichaam bij primaire immuunrespons)  ->  IgM
+[VWO Biologie] IgA (aanwezig in speeksel en moedermelk)  ->  IgA
+[VWO Biologie] ADH (antidiuretisch hormoon, vasopressine)  ->  ADH
+[VWO Biologie] Insuline (reguleert bloedglucose)  ->  Insuline
+[VWO Biologie] Glucagon (verhoogt bloedglucose)  ->  Glucagon
+[VWO Biologie] Cortisol (stresshormoon, lange termijn)  ->  Cortisol
+[VWO Biologie] Puntmutatie (één base vervangen)  ->  Puntmutatie
+[VWO Biologie] Stille mutatie (zelfde aminozuur ondanks basewijziging)  ->  Stille mutatie
+[VWO Biologie] Nonsense-mutatie (vroegtijdig stopcodon)  ->  Nonsense-mutatie
+[VWO Biologie] tRNA (transporteert aminozuren bij translatie)  ->  tRNA
+[VWO Biologie] mRNA (kopie van gen voor eiwitsynthese)  ->  mRNA
+[VWO Biologie] Polygenie (meerdere genen voor één kenmerk)  ->  Polygenie
+[VWO Biologie] Epistase (één gen maskeert ander gen)  ->  Epistase
+[VWO Biologie] Penetrantie (mate waarin allel tot expressie komt)  ->  Penetrantie
+[VWO Biologie] CRISPR-Cas9 (DNA knippen op specifieke plek)  ->  CRISPR-Cas9
+[VWO Biologie] Western blot (eiwitten detecteren via antilichamen)  ->  Western blot
+[VWO Biologie] Variatie (individuen in een populatie verschillen)  ->  Variatie
+[VWO Biologie] Erfelijkheid van variatie (variatie is erfelijk)  ->  Erfelijkheid van variatie
+[VWO Biologie] Natuurlijke selectie (meest aangepaste overleeft)  ->  Natuurlijke selectie
+[VWO Biologie] Stichtingseffect (kleine groep verlaat populatie om elders te vestigen)  ->  Stichtingseffect
+[VWO Biologie] Genetische drift (willekeurige allelverandering in kleine populatie)  ->  Genetische drift
+[VWO Biologie] Inteelt (paring van verwante individuen)  ->  Inteelt
+[VWO Biologie] Allopatrische speciatie (geografische isolatie)  ->  Allopatrische speciatie
+[VWO Biologie] Adaptieve radiatie (diversificatie in nieuwe niches)  ->  Adaptieve radiatie
+[VWO Biologie] Hybridisatie (kruising tussen soorten)  ->  Hybridisatie
+[VWO Biologie] Analoge structuren (convergente evolutie)  ->  Analoge structuren
+[VWO Biologie] Homologe structuren (gemeenschappelijke voorouder)  ->  Homologe structuren
+[VWO Biologie] Rudimentaire structuren (evolutionair vestige)  ->  Rudimentaire structuren
+[VWO Biologie] Synapomorfe kenmerken (gedeeld afgeleid kenmerk)  ->  Synapomorfe kenmerken
+[VWO Biologie] Natuurlijke selectie (selectievoordeel bepaalt frequentie)  ->  Natuurlijke selectie
+[VWO Biologie] Seksuele selectie (voorkeur voor bepaalde kenmerken)  ->  Seksuele selectie
+[VWO Biologie] Genflow/migratie (inbreng van allelen van buiten)  ->  Genflow/migratie
+[VWO Biologie] Hardy-Weinberg evenwicht (geen evolutie zonder verstoring)  ->  Hardy-Weinberg evenwicht
+[VWO Biologie] Genetische drift (toevallige allelveranderingen)  ->  Genetische drift
+[VWO Biologie] Adaptieve radiatie (snelle diversificatie)  ->  Adaptieve radiatie
+[VWO Biologie] Seksuele selectie (paargedrag beïnvloedt allelen)  ->  Seksuele selectie
+[VWO Biologie] Celkern (transcriptie en replicatie)  ->  Celkern
+[VWO Biologie] Watersplitsing in de lichtreacties (O₂ vrij)  ->  Watersplitsing in de lichtreacties
+[VWO Biologie] Eindproduct remt een vroeg enzym (allosterie, overproductie voorkomen)  ->  Eindproduct remt een vroeg enzym
+[VWO Biologie] Het eindproduct versnelt de reactie (positieve terugkoppeling)  ->  Het eindproduct versnelt de reactie
+[VWO Biologie] In het cytoplasma (buiten het mitochondrium)  ->  In het cytoplasma
+[VWO Biologie] CO₂ (bij anaerobie)  ->  CO₂
+[VWO Biologie] 2 ATP (direct, via substraatfosforylering)  ->  2 ATP
+[VWO Biologie] Allosterie (regulatie via tweede bindingsplaats)  ->  Allosterie
+[VWO Biologie] Feedback-inhibitie (eindproduct remt vroeg enzym)  ->  Feedback-inhibitie
+[VWO Biologie] Denaturatie (verlies van driedimensionale structuur)  ->  Denaturatie
+[VWO Biologie] ATP-synthase (maakt ATP via protongradiënt)  ->  ATP-synthase
+[VWO Biologie] Hexokinase (eerste stap glycolyse)  ->  Hexokinase
+[VWO Biologie] Carboxypeptidase (knipt peptidebindingen)  ->  Carboxypeptidase
+[VWO Economie] Extern effect (kosten voor derden buiten transactie)  ->  Extern effect
+[VWO Economie] Meritorisch goed (goed dat markt onderprovisioneert)  ->  Meritorisch goed
+[VWO Economie] Verschuiving: andere factor dan prijs verandert (inkomen, smaak). Beweging: prijs verandert.  ->  Verschuiving: andere factor dan prijs verandert . Beweging: prijs verandert.
+[VWO Economie] Consumentensurplus (betalingsbereidheid minus betaalde prijs)  ->  Consumentensurplus
+[VWO Economie] Producentensurplus (prijs minus minimale aanbodprijs)  ->  Producentensurplus
+[VWO Economie] Welvaartverlies (deadweight loss bij monopolie)  ->  Welvaartverlies
+[VWO Economie] Transfersurplus (inkomensoverdracht via belastingen)  ->  Transfersurplus
+[VWO Economie] Frictiewerkloosheid (zoekperiode nieuwe baan)  ->  Frictiewerkloosheid
+[VWO Economie] Discretionair begrotingsbeleid (gerichte stimulering)  ->  Discretionair begrotingsbeleid
+[VWO Economie] Kwantitatieve verruiming (ECB koopt obligaties)  ->  Kwantitatieve verruiming
+[VWO Economie] Reële groei (nominaal gedeeld door prijspeil)  ->  Reële groei
+[VWO Economie] Nominale groei (inclusief prijsstijgingen)  ->  Nominale groei
+[VWO Economie] Potentiële groei (maximumcapaciteit economie)  ->  Potentiële groei
+[VWO Economie] Structurele groei (trendmatige groei)  ->  Structurele groei
+[VWO Economie] Financiële rekening (aandelen, obligaties, FDI)  ->  Financiële rekening
+[VWO Economie] Kapitaalrekening (overdrachten van vaste activa)  ->  Kapitaalrekening
+[VWO Economie] Conjuncturele werkloosheid (recessie, tijdelijk)  ->  Conjuncturele werkloosheid
+[VWO Economie] Frictiewerkloosheid (zoekperiode nieuwe baan)  ->  Frictiewerkloosheid
+[VWO Economie] Seizoenswerkloosheid (terugkerend patroon)  ->  Seizoenswerkloosheid
+[VWO Economie] Betalingsbalansoverschot (meer export dan import)  ->  Betalingsbalansoverschot
+[VWO Economie] Staatsbankroet (onvermogen om schulden te betalen)  ->  Staatsbankroet
+[VWO Economie] Crowding out (overheidsinvesteringen verdringen private)  ->  Crowding out
+[VWO Economie] Crowding out (overheid verdringt private sector)  ->  Crowding out
+[VWO Economie] Crowding in (overheidsuitgaven lokken private investeringen uit)  ->  Crowding in
+[VWO Economie] Multipliereffect (overheidsuitgave vergroot BBP)  ->  Multipliereffect
+[VWO Economie] Recessiespiraal (daling vraag versterkt zichzelf)  ->  Recessiespiraal
+[VWO Economie] Nominale groei (inclusief prijsstijgingen)  ->  Nominale groei
+[VWO Economie] Potentiële groei (capaciteitsgroei economie)  ->  Potentiële groei
+[VWO Economie] Productiviteitsgroei (output per werknemer)  ->  Productiviteitsgroei
+[VWO Aardrijkskunde] Subductie (oceanische plaat duikt onder continentale)  ->  Subductie
+[VWO Aardrijkskunde] Rifting (platen drijven uit elkaar)  ->  Rifting
+[VWO Aardrijkskunde] Obductie (continentale plaat schuift over oceanische)  ->  Obductie
+[VWO Aardrijkskunde] Mitigatie (uitstoot verminderen, oorzaak aanpakken)  ->  Mitigatie
+[VWO Aardrijkskunde] Resiliëntie (veerkracht opbouwen)  ->  Resiliëntie
+[VWO Aardrijkskunde] Geoengineering (technisch ingrijpen in klimaat)  ->  Geoengineering
+[VWO Aardrijkskunde] Hitte-eilandeffect (urban heat island)  ->  Hitte-eilandeffect
+[VWO Aardrijkskunde] Albedo-effect (reflectie van zonnestraling)  ->  Albedo-effect
+[VWO Aardrijkskunde] Verdampingskoeling (evapotranspiratie door vegetatie)  ->  Verdampingskoeling
+[VWO Aardrijkskunde] Kantelpunt (tipping point)  ->  Kantelpunt
+[VWO Aardrijkskunde] Draagkracht (carrying capacity)  ->  Draagkracht
+[VWO Aardrijkskunde] Altitudinaal effect (temperatuursdaling met hoogte)  ->  Altitudinaal effect
+[VWO Aardrijkskunde] Continentaal effect (afstand tot zee)  ->  Continentaal effect
+[VWO Aardrijkskunde] Föhneffect (warme neerdalende wind aan lijzijde)  ->  Föhneffect
+[VWO Aardrijkskunde] Koolstofkringloop (fotosynthese en ademhaling)  ->  Koolstofkringloop
+[VWO Aardrijkskunde] Stikstofkringloop (fixatie en denitrificatie)  ->  Stikstofkringloop
+[VWO Aardrijkskunde] Fosforkringloop (verwering en biologische opname)  ->  Fosforkringloop
+[VWO Aardrijkskunde] Pushfactoren (armoede, conflict, droogte, vervolging)  ->  Pushfactoren
+[VWO Aardrijkskunde] Pullfactoren (werk, veiligheid, betere voorzieningen)  ->  Pullfactoren
+[VWO Aardrijkskunde] Interveniërende obstakels (grenzen, afstand, kosten)  ->  Interveniërende obstakels
+[VWO Aardrijkskunde] Retentiefactoren (binding aan thuisland)  ->  Retentiefactoren
+[VWO Aardrijkskunde] Fase 1 (beide hoog, groei nihil)  ->  Fase 1
+[VWO Aardrijkskunde] Fase 3 (geboorterate begint te dalen)  ->  Fase 3
+[VWO Aardrijkskunde] Fase 4 (beide laag, weinig groei)  ->  Fase 4
+[VWO Aardrijkskunde] Overurbanisatie (informele sector, sloppenwijken)  ->  Overurbanisatie
+[VWO Aardrijkskunde] Suburbanisatie (verhuizing van stad naar rand)  ->  Suburbanisatie
+[VWO Aardrijkskunde] Contraurbansatie (vertrek uit steden naar platteland)  ->  Contraurbansatie
+[VWO Aardrijkskunde] Gentrificatie (opwaardering stadswijken door rijke bewoners)  ->  Gentrificatie
+[VWO Aardrijkskunde] Brain drain (verlies van geschoolde arbeidskrachten)  ->  Brain drain
+[VWO Aardrijkskunde] Brain gain (aantrekken van buitenlands talent)  ->  Brain gain
+[VWO Aardrijkskunde] Remittances (geldovermakingen naar herkomstland)  ->  Remittances
+[VWO Aardrijkskunde] Arbeidsmigratie (economisch gemotiveerd)  ->  Arbeidsmigratie
+[VWO Aardrijkskunde] Regionalisering (regionale integratie zoals EU)  ->  Regionalisering
+[VWO Aardrijkskunde] Lokalisering (terugkeer naar lokale economie)  ->  Lokalisering
+[VWO Aardrijkskunde] Autarkie (zelfvoorzienende economie)  ->  Autarkie
+[VWO Aardrijkskunde] Technologietransfer (spillovers via FDI)  ->  Technologietransfer
+[VWO Aardrijkskunde] Brain drain (vertrek geschoolde arbeid)  ->  Brain drain
+[VWO Aardrijkskunde] Remittances (geldovermakingen naar thuisland)  ->  Remittances
+[VWO Aardrijkskunde] Klimaatvluchteling (milieugedreven migratie)  ->  Klimaatvluchteling
+[VWO Aardrijkskunde] Economische migrant (betere levenskansen elders)  ->  Economische migrant
+[VWO Aardrijkskunde] Brain drain (vertrek hoogopgeleiden)  ->  Brain drain
+[VWO Aardrijkskunde] Offshoring (verplaatsing van productie naar lagelonenlanden)  ->  Offshoring
+[VWO Aardrijkskunde] Nearshoring (productie dichter bij thuismarkt)  ->  Nearshoring
+[VWO Aardrijkskunde] Insourcing (taken internaliseren die uitbesteed waren)  ->  Insourcing
+[VWO Aardrijkskunde] Reshoring (productie terughalen naar thuisland)  ->  Reshoring
+[VWO Geschiedenis] Aanleiding (directe trigger)  ->  Aanleiding
+[VWO Geschiedenis] Oorzaak (diepere structurele factor)  ->  Oorzaak
+[VWO Geschiedenis] Achtergrond (historische context)  ->  Achtergrond
+[VWO Geschiedenis] Gevolg (uitkomst van de gebeurtenis)  ->  Gevolg
+[VWO Geschiedenis] Historiografie (geschiedenis van de geschiedschrijving)  ->  Historiografie
+[VWO Geschiedenis] Hermeneutiek (interpretatieleer van teksten)  ->  Hermeneutiek
+[VWO Geschiedenis] Contextualisering (bron in tijd plaatsen)  ->  Contextualisering
+[VWO Geschiedenis] Discontinuïteit (breuk, revolutionaire verandering)  ->  Discontinuïteit
+[VWO Geschiedenis] Periodisering (indelen in tijdvakken)  ->  Periodisering
+[VWO Geschiedenis] Anachronisme (iets uit een andere tijd toepassen)  ->  Anachronisme
+[VWO Geschiedenis] Primaire bron (direct uit de periode zelf)  ->  Primaire bron
+[VWO Geschiedenis] Tertiaire bron (encyclopedie, samenvatting van secondaire)  ->  Tertiaire bron
+[VWO Geschiedenis] Gecombineerde bron (combinatie van primair en secundair)  ->  Gecombineerde bron
+[VWO Geschiedenis] Nationalisme (streven naar eigen staat)  ->  Nationalisme
+[VWO Geschiedenis] Kolonialisme (vestiging van koloniën)  ->  Kolonialisme
+[VWO Geschiedenis] Expansionisme (territoriale uitbreiding)  ->  Expansionisme
+[VWO Geschiedenis] Agrarische revolutie (verbetering landbouw)  ->  Agrarische revolutie
+[VWO Geschiedenis] Emancipatie (bevrijding en gelijkberechtiging)  ->  Emancipatie
+[VWO Geschiedenis] Assimilatie (aanpassing aan dominante cultuur)  ->  Assimilatie
+[VWO Geschiedenis] Dekolonisatie (onafhankelijkheid van koloniën)  ->  Dekolonisatie
+[VWO Geschiedenis] Secularisatie (vermindering religieuze invloed)  ->  Secularisatie
+[VWO Geschiedenis] Etnocentrisme (eigen cultuur als maatstaf)  ->  Etnocentrisme
+[VWO Geschiedenis] Xenofobie (angst voor buitenlanders)  ->  Xenofobie
+[VWO Geschiedenis] Nationalisme (verheffing van de natie)  ->  Nationalisme
+[VWO Geschiedenis] Proxy-oorlog (strijd via derde landen)  ->  Proxy-oorlog
+[VWO Geschiedenis] Bipolaire ordening (twee supermachten na WO II)  ->  Bipolaire ordening
+[VWO Geschiedenis] Pan-Afrikanisme (eenwording Afrikaanse staten)  ->  Pan-Afrikanisme
+[VWO Geschiedenis] Totalitarisme (eenpartijstaat, staatspropaganda, terreur)  ->  Totalitarisme
+[VWO Geschiedenis] Autoritarisme (sterk centraal gezag, maar geen totale controle)  ->  Autoritarisme
+[VWO Geschiedenis] Oligarchie (heerschappij van een kleine elite)  ->  Oligarchie
+[VWO Geschiedenis] Theocratisme (religieuze wet als staatswet)  ->  Theocratisme
+[VWO Geschiedenis] Isolationisme (politiek terugtrekken uit Europa)  ->  Isolationisme
+[VWO Geschiedenis] Collectieve veiligheid (Volkenbond handhaving)  ->  Collectieve veiligheid
+[VWO Geschiedenis] Détente (ontspanning in de Koude Oorlog)  ->  Détente
+[VWO Geschiedenis] Bipolaire wereldorde (twee supermachten, tegengestelde ideologieën)  ->  Bipolaire wereldorde
+[VWO Geschiedenis] Multipolaire wereldorde (meerdere gelijkwaardige machten)  ->  Multipolaire wereldorde
+[VWO Geschiedenis] Unipolaire wereldorde (één dominante macht)  ->  Unipolaire wereldorde
+[VWO Geschiedenis] NAVO (militaire verdragsorganisatie)  ->  NAVO
+[VWO Geschiedenis] Wereldbank (financiële instelling)  ->  Wereldbank
+[VWO Geschiedenis] IMF (monetair fonds)  ->  IMF
+[VWO Geschiedenis] Trumansdoctrine (militaire steun aan Griekenland en Turkije)  ->  Trumansdoctrine
+[VWO Geschiedenis] Lend-Lease (militaire hulp tijdens WO II)  ->  Lend-Lease
+[VWO Geschiedenis] Bretton Woods (monetair stelsel na WO II)  ->  Bretton Woods
+[VWO Maatschappijwetenschappen] Representatieve democratie (burgers kiezen vertegenwoordigers)  ->  Representatieve democratie
+[VWO Maatschappijwetenschappen] Participatiedemocratie (inspraak via overleg)  ->  Participatiedemocratie
+[VWO Maatschappijwetenschappen] Deliberatieve democratie (besluitvorming via debat)  ->  Deliberatieve democratie
+[VWO Maatschappijwetenschappen] Amendementen indienen (wetten aanpassen) — dit mag de Eerste Kamer niet  ->  Amendementen indienen — dit mag de Eerste Kamer niet
+[VWO Maatschappijwetenschappen] Wetten verwerpen (politiek veto) — dit mag de Eerste Kamer wel  ->  Wetten verwerpen — dit mag de Eerste Kamer wel
+[VWO Maatschappijwetenschappen] Intergouvernementalisme (samenwerking tussen staten)  ->  Intergouvernementalisme
+[VWO Maatschappijwetenschappen] Federalisme (staten binnen één bondsstaat)  ->  Federalisme
+[VWO Maatschappijwetenschappen] Subsidiariteit (beslissingen zo laag mogelijk niveau)  ->  Subsidiariteit
+[VWO Maatschappijwetenschappen] Formeel = procedures (vrije verkiezingen); materieel = uitkomsten (gelijke deelname, rechten).  ->  Formeel = procedures ; materieel = uitkomsten .
+[VWO Maatschappijwetenschappen] Pluralisme (strijd tussen concurrerende belangen)  ->  Pluralisme
+[VWO Maatschappijwetenschappen] Elitetheorie (macht geconcentreerd bij een kleine toplaag)  ->  Elitetheorie
+[VWO Maatschappijwetenschappen] Institutionalisme (regels en instellingen bepalen beleid)  ->  Institutionalisme
+[VWO Maatschappijwetenschappen] Marxisme (staat dient de belangen van kapitaalbezitters)  ->  Marxisme
+[VWO Maatschappijwetenschappen] Legitimiteit (erkende bevoegdheid tot machtsuitoefening)  ->  Legitimiteit
+[VWO Maatschappijwetenschappen] Legaliteit (wettelijke bevoegdheid ongeacht acceptatie)  ->  Legaliteit
+[VWO Maatschappijwetenschappen] Autoriteit (feitelijke macht over anderen)  ->  Autoriteit
+[VWO Maatschappijwetenschappen] Hegemonie (dominantie van één groep in het politieke systeem)  ->  Hegemonie
+[VWO Maatschappijwetenschappen] Participatiedemocratie (inspraak, burgerforum, petitie)  ->  Participatiedemocratie
+[VWO Maatschappijwetenschappen] Representatieve democratie (via gekozen vertegenwoordigers)  ->  Representatieve democratie
+[VWO Maatschappijwetenschappen] Technocratie (beslissingen door experts)  ->  Technocratie
+[VWO Maatschappijwetenschappen] Soevereiniteit (suprematie van de staat over het eigen grondgebied)  ->  Soevereiniteit
+[VWO Maatschappijwetenschappen] Volkssoevereiniteit (de bevolking als bron van alle gezag)  ->  Volkssoevereiniteit
+[VWO Maatschappijwetenschappen] Nationalisme (verheffen van de natie boven andere waarden)  ->  Nationalisme
+[VWO Maatschappijwetenschappen] Primaire socialisatie (gezin, eerste levensjaren)  ->  Primaire socialisatie
+[VWO Maatschappijwetenschappen] Secundaire socialisatie (school, vrienden, media, werk)  ->  Secundaire socialisatie
+[VWO Maatschappijwetenschappen] Anticiperende socialisatie (vooruitlopen op nieuwe rol)  ->  Anticiperende socialisatie
+[VWO Maatschappijwetenschappen] Sociale stratificatie (hiërarchische indeling in lagen)  ->  Sociale stratificatie
+[VWO Maatschappijwetenschappen] Sociale cohesie (mate van onderlinge verbondenheid)  ->  Sociale cohesie
+[VWO Maatschappijwetenschappen] Sociale reproductie (overdracht van klassepositie op kinderen)  ->  Sociale reproductie
+[VWO Maatschappijwetenschappen] Controlebindingstheorie (Hirschi: sociale banden)  ->  Controlebindingstheorie
+[VWO Maatschappijwetenschappen] Integratie (publieke deelname met behoud van eigen cultuur)  ->  Integratie
+[VWO Maatschappijwetenschappen] Assimilatie (volledige aanpassing aan de dominante cultuur)  ->  Assimilatie
+[VWO Maatschappijwetenschappen] Multiculturalisme (gelijkwaardige coëxistentie van culturen)  ->  Multiculturalisme
+[VWO Maatschappijwetenschappen] Segregatie (gescheiden leven van culturele groepen)  ->  Segregatie
+[VWO Maatschappijwetenschappen] Ethnocentrisme (eigen cultuur als maatstaf voor andere culturen)  ->  Ethnocentrisme
+[VWO Maatschappijwetenschappen] Cultuurrelativisme (elke cultuur vanuit haar eigen context beoordelen)  ->  Cultuurrelativisme
+[VWO Maatschappijwetenschappen] Stereotypering (vereenvoudigde en generaliserende beeldvorming)  ->  Stereotypering
+[VWO Maatschappijwetenschappen] Discriminatie (ongelijke behandeling op basis van kenmerken)  ->  Discriminatie
+[VWO Maatschappijwetenschappen] Sociale mobiliteit (verandering van klassepositie)  ->  Sociale mobiliteit
+[VWO Maatschappijwetenschappen] Sociale stratificatie (indeling in lagen)  ->  Sociale stratificatie
+[VWO Maatschappijwetenschappen] Sociale cohesie (onderlinge verbondenheid)  ->  Sociale cohesie
+[VWO Maatschappijwetenschappen] Cultuur (gedeeld systeem van waarden en normen)  ->  Cultuur
+[VWO Maatschappijwetenschappen] Identiteit (het persoonlijke besef van wie je bent)  ->  Identiteit
+[VWO Maatschappijwetenschappen] Socialisatie (het aanleren van normen en waarden)  ->  Socialisatie
+[VWO Maatschappijwetenschappen] Sociale controle (mechanisme om gedrag te sturen)  ->  Sociale controle
+[VWO Maatschappijwetenschappen] Sociale controle (formeel en informeel sturen van gedrag)  ->  Sociale controle
+[VWO Maatschappijwetenschappen] Socialisatie (aanleren van normen en waarden)  ->  Socialisatie
+[VWO Maatschappijwetenschappen] Sanctionering (officieel systeem van beloningen en straffen)  ->  Sanctionering
+[VWO Maatschappijwetenschappen] Stigmatisering (labeling van deviant gedrag door omgeving)  ->  Stigmatisering
+[VWO Maatschappijwetenschappen] Anomie (normloosheid bij ontbinding sociale banden)  ->  Anomie
+[VWO Maatschappijwetenschappen] Labelingtheorie (deviantie door reactie omgeving)  ->  Labelingtheorie
+[VWO Maatschappijwetenschappen] Sociale reproductie (overdracht klassenpositie)  ->  Sociale reproductie
+[VWO Maatschappijwetenschappen] Sociale cohesie (verbondenheid in de samenleving)  ->  Sociale cohesie
+[VWO Maatschappijwetenschappen] Conflictperspectief (Marx, Bourdieu)  ->  Conflictperspectief
+[VWO Maatschappijwetenschappen] Functieperspectief (Parsons, Durkheim)  ->  Functieperspectief
+[VWO Maatschappijwetenschappen] Interactionisme (Goffman, Blumer)  ->  Interactionisme
+[VWO Maatschappijwetenschappen] Anticiperende socialisatie (voorbereiding op toekomstige rol)  ->  Anticiperende socialisatie
+[VWO Maatschappijwetenschappen] Primaire socialisatie (basisnormen via het gezin)  ->  Primaire socialisatie
+[VWO Maatschappijwetenschappen] Resocialisatie (heraanpassing na verlies van oude normen)  ->  Resocialisatie
+[VWO Maatschappijwetenschappen] Secundaire socialisatie (via school en peergroep)  ->  Secundaire socialisatie
+[VWO Latijn] Accusativus (het werkwoord staat als infinitief)  ->  Accusativus
+[VWO Latijn] Ablativus (bij de ablativus absolutus)  ->  Ablativus
+[VWO Latijn] Dativus (bij meewerkend voorwerp)  ->  Dativus
+[VWO Latijn] Ablativus (uitdrukt bijstandigheid: tijd, oorzaak, voorwaarde)  ->  Ablativus
+[VWO Latijn] Nominativus (subject van de hoofdzin)  ->  Nominativus
+[VWO Latijn] Dativus (meewerkend voorwerp)  ->  Dativus
+[VWO Latijn] Ablativus (middel of scheiding)  ->  Ablativus
+[VWO Latijn] Accusativus (lijdend voorwerp)  ->  Accusativus
+[VWO Latijn] Perfectum (voltooide handeling)  ->  Perfectum
+[VWO Latijn] Plusquamperfectum (voor het verleden)  ->  Plusquamperfectum
+[VWO Latijn] Consecutieve bijzin (zodat, gevolg)  ->  Consecutieve bijzin
+[VWO Latijn] Dativus (meewerkend voorwerp)  ->  Dativus
+[VWO Latijn] Ablativus (middel of scheiding)  ->  Ablativus
+[VWO Latijn] Plusquamperfectum (vóór het verleden voltooid)  ->  Plusquamperfectum
+[VWO Latijn] Imperfectum (onvoltooid, voortdurend verleden)  ->  Imperfectum
+[VWO Latijn] Perfectum (voltooide handeling in het verleden)  ->  Perfectum
+[VWO Latijn] Futurum exactum (vóór een toekomstige handeling voltooid)  ->  Futurum exactum
+[VWO Latijn] Cicero (redevoeringen en filosofie)  ->  Cicero
+[VWO Latijn] Livius (Ab Urbe Condita, geschiedswerk)  ->  Livius
+[VWO Latijn] De Bello Gallico (Caesars veldtochten)  ->  De Bello Gallico
+[VWO Latijn] Epistulae (brieven aan vrienden)  ->  Epistulae
+[VWO Latijn] Saturae (satirische gedichten)  ->  Saturae
+[VWO Latijn] Collegialiteit en jaarwisseling (twee consuls, cursus honorum)  ->  Collegialiteit en jaarwisseling
+[VWO Latijn] Catilinae (In Catilinam I–IV)  ->  Catilinae
+[VWO Latijn] De Re Publica (over de ideale staatsinrichting)  ->  De Re Publica
+[VWO Latijn] De Amicitia (over vriendschap)  ->  De Amicitia
+[VWO Latijn] Tusculanae Disputationes (filosofische gesprekken)  ->  Tusculanae Disputationes
+[VWO Latijn] Gedaantewisselingen van mensen en goden (van vorm veranderen).  ->  Gedaantewisselingen van mensen en goden .
+[VWO Latijn] Narcissus (Ovidius, Metamorphosen III)  ->  Narcissus
+[VWO Latijn] Orpheus en Eurydice (Metamorphosen X)  ->  Orpheus en Eurydice
+[VWO Latijn] Aeneas en Dido (Vergilius, Aeneis IV)  ->  Aeneas en Dido
+[VWO Latijn] Romulus en Remus (Livius, Ab Urbe Condita I)  ->  Romulus en Remus
+[VWO Latijn] Vergilius (gestorven vóór Augustus hem kon verbannen)  ->  Vergilius
+[VWO Latijn] Horatius (hofpoëet van Augustus, nooit verbannen)  ->  Horatius
+[VWO Latijn] Catullus (gestorven vóór de keizerlijke periode)  ->  Catullus
+[VWO Latijn] Lyrische poëzie (oden in Griekse maatsoorten)  ->  Lyrische poëzie
+[VWO Latijn] Historiografie (beschrijving van Romes geschiedenis)  ->  Historiografie
+[VWO Latijn] Ovidius (Metamorphosen, gedaantewisselingen)  ->  Ovidius
+[VWO Latijn] Vergilius (Aeneis, nationaal epos)  ->  Vergilius
+[VWO Latijn] Cicero (redevoeringen en filosofische werken)  ->  Cicero
+[VWO Grieks] Genitivus (uitdrukt bijstandigheid, losstaand)  ->  Genitivus
+[VWO Grieks] Nominativus (participium stemt overeen met hoofdsubject)  ->  Nominativus
+[VWO Grieks] Dativus (meewerkend voorwerp of middel)  ->  Dativus
+[VWO Grieks] Optativus (wens, mogelijkheid, indirecte rede)  ->  Optativus
+[VWO Grieks] Subjectivus (wil, doel, eis)  ->  Subjectivus
+[VWO Grieks] Imperativus (bevel, aansporing)  ->  Imperativus
+[VWO Grieks] Indicativus (feitelijke mededeling)  ->  Indicativus
+[VWO Grieks] Accusativus (lijdend voorwerp)  ->  Accusativus
+[VWO Grieks] Genitivus (bezit of scheiding)  ->  Genitivus
+[VWO Grieks] Genitivus absolutus (lossstaande bepaling)  ->  Genitivus absolutus
+[VWO Grieks] Het bepaalt een substantief (als bijvoeglijk naamwoord) met lidwoord.  ->  Het bepaalt een substantief met lidwoord.
+[VWO Grieks] Gravis (βαρεῖα, neerwaarts accent `)  ->  Gravis
+[VWO Grieks] Acutus (ὀξεῖα, opwaarts accent ´)  ->  Acutus
+[VWO Grieks] Circumflexus (περισπωμένη, golving ~)  ->  Circumflexus
+[VWO Grieks] Aoristus (eenmalige voltooide handeling in het verleden)  ->  Aoristus
+[VWO Grieks] Perfectum (voltooide handeling met gevolgen voor het heden)  ->  Perfectum
+[VWO Grieks] Praesens (heden, gaande handeling)  ->  Praesens
+[VWO Grieks] Herodotus (Perzische Oorlogen, anekdotisch)  ->  Herodotus
+[VWO Grieks] Xenophon (Anabasis, militaire expeditie)  ->  Xenophon
+[VWO Grieks] Plutarchus (levens van beroemde Grieken en Romeinen)  ->  Plutarchus
+[VWO Grieks] Hybris (overmoed, aanmatigend gedrag tegenover de goden)  ->  Hybris
+[VWO Grieks] Hamartia (de tragische fout of blindheid van de held)  ->  Hamartia
+[VWO Grieks] Catharsis (emotionele zuivering van het publiek)  ->  Catharsis
+[VWO Grieks] Anagnorisis (herkenning of onthulling op het keerpunt)  ->  Anagnorisis
+[VWO Grieks] Ilias (het woedegedicht van Achilles)  ->  Ilias
+[VWO Grieks] Hamartia (tragische fout of tekortkoming)  ->  Hamartia
+[VWO Grieks] Hybris (overmoed tegenover de goden)  ->  Hybris
+[VWO Grieks] Catharsis (emotionele zuivering bij toeschouwers)  ->  Catharsis
+[VWO Grieks] Peripeteia (onverwachte omkering van het lot)  ->  Peripeteia
+[VWO Grieks] Thucydides (Peloponnesische Oorlog)  ->  Thucydides
