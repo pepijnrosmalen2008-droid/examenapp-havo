@@ -4760,3 +4760,118 @@ html.dark .prof-section:hover{box-shadow:0 6px 28px rgba(0,0,0,.3)}
   .hnav-login-cta{white-space:nowrap;flex-shrink:0;width:auto!important}
   .hnav-chip{display:none}
 }
+/* ═══════════════════════════════════════════════════════════════
+   V5 — PER-VAK WERELDEN (lichtgewicht)
+   Eén data-vak-mechanisme. Motief = scrollende achtergrond op het
+   vak-hub scherm (geen fixed laag, geen mask → goedkoop te compositen).
+   Botten gelijk; alleen palet (--vak-or) + motief verschillen.
+   ═══════════════════════════════════════════════════════════════ */
+
+/* Accentkleur per wereld → recolort leerpad, CTA's, balken, timer */
+html[data-vak] #sc-detail,
+html[data-vak] #sc-quiz,
+html[data-vak] #sc-leerpad,
+html[data-vak] #sc-sim,
+html[data-vak] .bottom-nav-inner{--or:var(--vak-or,#E85C0D);--or-rgb:var(--vak-or-rgb,232,88,12)}
+
+/* Themed koptekst-kaart krijgt vak-accentrand */
+html[data-vak] #sc-detail .sh{border-left:4px solid rgba(var(--vak-or-rgb),.55)}
+/* Quiz-chrome subtiel meekleuren */
+html[data-vak] #sc-quiz{background:linear-gradient(180deg,
+  color-mix(in srgb,rgba(var(--vak-or-rgb),1) 8%,#0A0C10) 0%,#10131c 100%)}
+
+/* Basis: elk vak-hub scherm krijgt een sfeer-tint bovenin + zijn motief.
+   --vw-motif = de motieflaag(en); valt terug op niets. */
+html[data-vak] #sc-detail{background:
+  var(--vw-motif,none),
+  radial-gradient(ellipse 120% 55% at 50% -10%,rgba(var(--vak-or-rgb),.10),transparent 60%),
+  var(--bg)}
+html.dark[data-vak] #sc-detail{background:
+  var(--vw-motif-dark,var(--vw-motif,none)),
+  radial-gradient(ellipse 120% 55% at 50% -10%,rgba(var(--vak-or-rgb),.16),transparent 60%),
+  var(--bg)}
+
+/* ── WISKUNDE A — blauwdruk: ruitjespapier ───────────────────── */
+html[data-vak="wa"]{--vak-or:#2563EB;--vak-or-rgb:37,99,235;
+  --vw-motif:
+    linear-gradient(rgba(37,99,235,.10) 1px,transparent 1px) 0 0/26px 26px,
+    linear-gradient(90deg,rgba(37,99,235,.10) 1px,transparent 1px) 0 0/26px 26px,
+    linear-gradient(rgba(37,99,235,.05) 1px,transparent 1px) 0 0/130px 130px,
+    linear-gradient(90deg,rgba(37,99,235,.05) 1px,transparent 1px) 0 0/130px 130px}
+
+/* ── WISKUNDE B — blauwdruk dieppaars ────────────────────────── */
+html[data-vak="wb"]{--vak-or:#6D28D9;--vak-or-rgb:109,40,217;
+  --vw-motif:
+    linear-gradient(rgba(109,40,217,.10) 1px,transparent 1px) 0 0/26px 26px,
+    linear-gradient(90deg,rgba(109,40,217,.10) 1px,transparent 1px) 0 0/26px 26px,
+    linear-gradient(rgba(109,40,217,.05) 1px,transparent 1px) 0 0/130px 130px,
+    linear-gradient(90deg,rgba(109,40,217,.05) 1px,transparent 1px) 0 0/130px 130px}
+
+/* ── SCHEIKUNDE — moleculair rooster ─────────────────────────── */
+html[data-vak="sk"]{--vak-or:#D97706;--vak-or-rgb:217,119,6;
+  --vw-motif:url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='54' height='54'><g fill='none' stroke='rgba(217,119,6,0.16)' stroke-width='1.3'><line x1='27' y1='27' x2='0' y2='0'/><line x1='27' y1='27' x2='54' y2='0'/><line x1='27' y1='27' x2='0' y2='54'/><line x1='27' y1='27' x2='54' y2='54'/></g><g fill='rgba(217,119,6,0.22)'><circle cx='27' cy='27' r='3.4'/><circle cx='0' cy='0' r='3'/><circle cx='54' cy='0' r='3'/><circle cx='0' cy='54' r='3'/><circle cx='54' cy='54' r='3'/></g></svg>") 0 0/54px 54px}
+
+/* ── NATUURKUNDE — golven ────────────────────────────────────── */
+html[data-vak="na"]{--vak-or:#0EA5E9;--vak-or-rgb:14,165,233;
+  --vw-motif:url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='60' height='30'><path d='M0 15 Q15 1 30 15 T60 15' fill='none' stroke='rgba(14,165,233,0.16)' stroke-width='2'/></svg>") 0 0/60px 30px}
+
+/* ── BIOLOGIE — cellen ───────────────────────────────────────── */
+html[data-vak="bi"]{--vak-or:#16A34A;--vak-or-rgb:22,163,74;
+  --vw-motif:
+    radial-gradient(circle at 20% 30%,rgba(22,163,74,.10) 0 9px,transparent 10px),
+    radial-gradient(circle at 70% 60%,rgba(22,163,74,.08) 0 14px,transparent 15px),
+    radial-gradient(circle at 45% 85%,rgba(22,163,74,.07) 0 7px,transparent 8px),
+    radial-gradient(circle at 88% 22%,rgba(22,163,74,.09) 0 11px,transparent 12px);
+  background-size:170px 170px,210px 210px,150px 150px,190px 190px}
+
+/* ── AARDRIJKSKUNDE — hoogtelijnen ───────────────────────────── */
+html[data-vak="ak"]{--vak-or:#059669;--vak-or-rgb:5,150,105;
+  --vw-motif:
+    repeating-radial-gradient(circle at 25% 35%,transparent 0 16px,rgba(5,150,105,.10) 16px 17px,transparent 17px 34px),
+    repeating-radial-gradient(circle at 80% 75%,transparent 0 18px,rgba(5,150,105,.09) 18px 19px,transparent 19px 38px)}
+
+/* ── ECONOMIE — vraag/aanbod-curves ──────────────────────────── */
+html[data-vak="ec"]{--vak-or:#0891B2;--vak-or-rgb:8,145,178;
+  --vw-motif:
+    repeating-linear-gradient(38deg,transparent 0 30px,rgba(8,145,178,.09) 30px 32px),
+    repeating-linear-gradient(-38deg,transparent 0 30px,rgba(8,145,178,.07) 30px 32px)}
+
+/* ── BEDRIJFSECONOMIE — grootboek-kolommen ───────────────────── */
+html[data-vak="be"]{--vak-or:#0D9488;--vak-or-rgb:13,148,136;
+  --vw-motif:
+    repeating-linear-gradient(90deg,transparent 0 48px,rgba(13,148,136,.10) 48px 50px),
+    repeating-linear-gradient(0deg,transparent 0 32px,rgba(13,148,136,.05) 32px 33px)}
+
+/* ── GESCHIEDENIS — archiefregels ────────────────────────────── */
+html[data-vak="gs"]{--vak-or:#B45309;--vak-or-rgb:180,83,9;
+  --vw-motif:
+    repeating-linear-gradient(0deg,transparent 0 34px,rgba(180,83,9,.09) 34px 35px),
+    radial-gradient(ellipse 60% 40% at 14% 10%,rgba(180,83,9,.06),transparent 70%)}
+
+/* ── MAATSCHAPPIJWETENSCHAPPEN — netwerk ─────────────────────── */
+html[data-vak="mw"]{--vak-or:#DB2777;--vak-or-rgb:219,39,119;
+  --vw-motif:url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='64' height='64'><g stroke='rgba(219,39,119,0.13)' stroke-width='1'><line x1='12' y1='12' x2='52' y2='40'/><line x1='52' y1='40' x2='20' y2='56'/><line x1='12' y1='12' x2='20' y2='56'/></g><g fill='rgba(219,39,119,0.22)'><circle cx='12' cy='12' r='3'/><circle cx='52' cy='40' r='3'/><circle cx='20' cy='56' r='3'/></g></svg>") 0 0/64px 64px}
+
+/* ── INFORMATICA — circuit ───────────────────────────────────── */
+html[data-vak="in"]{--vak-or:#0284C7;--vak-or-rgb:2,132,199;
+  --vw-motif:url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='48' height='48'><path d='M0 24h12a4 4 0 004-4V6M24 48V30a4 4 0 014-4h20' fill='none' stroke='rgba(2,132,199,0.15)' stroke-width='1.4'/><circle cx='16' cy='20' r='2.2' fill='rgba(2,132,199,0.24)'/><circle cx='28' cy='26' r='2.2' fill='rgba(2,132,199,0.24)'/></svg>") 0 0/48px 48px}
+
+/* ── GRIEKS — meander ────────────────────────────────────────── */
+html[data-vak="gr"]{--vak-or:#1D4ED8;--vak-or-rgb:29,78,216;
+  --vw-motif:url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='40' height='40'><path d='M4 4h20v20h-12v-10h6' fill='none' stroke='rgba(29,78,216,0.15)' stroke-width='2'/></svg>") 0 0/40px 40px}
+
+/* ── LATIJN — inscriptieregels ───────────────────────────────── */
+html[data-vak="la"]{--vak-or:#7C3AED;--vak-or-rgb:124,58,237;
+  --vw-motif:
+    repeating-linear-gradient(0deg,transparent 0 39px,rgba(124,58,237,.08) 39px 40px),
+    radial-gradient(ellipse 70% 40% at 50% 5%,rgba(124,58,237,.06),transparent 70%)}
+
+/* ── TALEN — typografisch, eigen tongval per taal ────────────── */
+html[data-vak="nl"]{--vak-or:#E85C0D;--vak-or-rgb:232,92,13;
+  --vw-motif:url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='420' height='420'><text x='50%25' y='66%25' font-family='Georgia,serif' font-weight='800' font-size='320' fill='rgba(232,92,13,0.05)' text-anchor='middle'>ij</text></svg>") center 40px/min(78vw,420px) no-repeat}
+html[data-vak="en"]{--vak-or:#4F46E5;--vak-or-rgb:79,70,229;
+  --vw-motif:url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='460' height='420'><text x='50%25' y='66%25' font-family='Georgia,serif' font-weight='800' font-size='300' fill='rgba(79,70,229,0.05)' text-anchor='middle'>Th</text></svg>") center 40px/min(82vw,460px) no-repeat}
+html[data-vak="du"]{--vak-or:#D97706;--vak-or-rgb:217,119,6;
+  --vw-motif:url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='420' height='420'><text x='50%25' y='70%25' font-family='Georgia,serif' font-weight='800' font-size='340' fill='rgba(217,119,6,0.05)' text-anchor='middle'>ß</text></svg>") center 40px/min(72vw,420px) no-repeat}
+html[data-vak="fr"]{--vak-or:#DB2777;--vak-or-rgb:219,39,119;
+  --vw-motif:url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='420' height='420'><text x='50%25' y='68%25' font-family='Georgia,serif' font-weight='800' font-size='330' fill='rgba(219,39,119,0.05)' text-anchor='middle'>é</text></svg>") center 40px/min(72vw,420px) no-repeat}

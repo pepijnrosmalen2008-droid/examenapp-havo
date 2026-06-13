@@ -277,6 +277,23 @@ function buildMarquee(){
   }catch(e){}
 }
 
+/* ── 10b. PER-VAK WERELDEN (één data-vak-mechanisme) ──────────────
+   Zet data-vak op <html> zodra een vak-scherm actief is. De CSS
+   scopet daarop een eigen palet + motief per vak. Schoon weg bij
+   het verlaten van de vak-flow. */
+const VAK_SCREENS=['sc-detail','sc-quiz','sc-leerpad','sc-sim'];
+function applyVakWorld(){
+  try{
+    const active=[...document.querySelectorAll('.sc.on')].map(s=>s.id);
+    const onVak=active.some(id=>VAK_SCREENS.includes(id));
+    const vak=(typeof ST!=='undefined'&&ST&&ST.vak)?ST.vak.id:null;
+    const root=document.documentElement;
+    if(onVak&&vak)root.setAttribute('data-vak',vak);
+    else root.removeAttribute('data-vak');
+  }catch(e){}
+}
+window.applyVakWorld=applyVakWorld;
+
 /* ── 10. OBSERVER: nieuwe DOM automatisch verlevendigen ───────── */
 let scanQueued=false;
 function queueScan(){
@@ -287,11 +304,32 @@ function queueScan(){
     scanAvatars();
     scanReveal();
     ensureCompanion();
+    applyVakWorld();
+    // ST.vak kan nét ná de screen-switch worden gezet — vang die race
+    setTimeout(applyVakWorld,70);
   });
 }
 function setupObserver(){
   try{
     new MutationObserver(queueScan).observe(document.body,{childList:true,subtree:true,attributes:true,attributeFilter:['class']});
+  }catch(e){}
+}
+
+/* ── 11. DETERMINISTISCHE HOOKS op navigatie ──────────────────────
+   Wrap de globale show()/openVak() zodat de vak-wereld + companion
+   exact op het juiste moment worden bijgewerkt (geen timing-race). */
+function wrapNav(){
+  try{
+    if(typeof window.show==='function'&&!window.show._v4){
+      const orig=window.show;
+      window.show=function(){const r=orig.apply(this,arguments);applyVakWorld();ensureCompanion();return r;};
+      window.show._v4=1;
+    }
+    if(typeof window.openVak==='function'&&!window.openVak._v4){
+      const orig=window.openVak;
+      window.openVak=function(){const r=orig.apply(this,arguments);applyVakWorld();return r;};
+      window.openVak._v4=1;
+    }
   }catch(e){}
 }
 
@@ -302,10 +340,12 @@ function init(){
   setupMagnet();
   setupCountUp();
   setupObserver();
+  wrapNav();
   scanAvatars();
   scanReveal();
   buildMarquee();
   buildDemo();
+  applyVakWorld();
   if(!REDUCE)setTimeout(randomHop,4000);
 }
 if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',init);

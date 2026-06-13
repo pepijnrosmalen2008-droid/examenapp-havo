@@ -51,3 +51,33 @@ mono voor countdown/timer, demo-route `?avatardemo=1`.
 
 **Status**: hero + mascotte-engine af, geverifieerd, gecommit. Wacht op
 akkoord eigenaar voor uitrol (per-vak werelden, overige schermen).
+
+## Pass 2 — Per-vak werelden (data-vak-mechanisme)
+
+**Geprobeerd**: één `data-vak` op <html> (gezet via gewrapte show()/openVak),
+per vak een tokenset: `--vak-or` (accent) + `--vw-motif` (achtergrondmotief).
+17 vakken: blauwdruk (wa/wb), moleculair (sk), golven (na), cellen (bi),
+hoogtelijnen (ak), curves (ec), grootboek (be), archief (gs), netwerk (mw),
+circuit (in), meander (gr), inscriptie (la), typografisch per taal (nl=ij,
+en=Th, du=ß, fr=é).
+
+**Gezien (vision-check, screenshots)**:
+1. Eerste versie gebruikte `position:fixed` full-viewport ::before met
+   mask — rasterizer liep vast (en reëel perf-risico: dure composite-laag).
+2. data-vak werd niet gezet: ST.vak wordt nét ná show() gezet → MutationObserver-
+   race. Manueel werkte wel.
+3. bi/gs/wa/sk geverifieerd: elk onmiskenbaar eigen wereld, light+dark,
+   desktop+mobiel. Accenten (knoppen, FAB, badges, bottom-nav) kleuren
+   cohesief mee via één --or-override.
+
+**Veranderd n.a.v. kritiek**:
+1. Fixed ::before + mask geschrapt. Motief nu als scrollende `background`
+   op #sc-detail, kleur in de SVG gebakken (geen mask). Goedkoop te
+   compositen; screenshots werken weer (home/bi/gs/wa/sk allemaal OK).
+2. show()/openVak() deterministisch gewrapt in v4.js → data-vak exact op tijd,
+   valt schoon weg bij home (terug naar level-accent, geverifieerd).
+
+**Status**: per-vak werelden af voor alle 17 vakken, geverifieerd op 4
+representatieve vakken in alle modi. Eén mechanisme; nieuw vak = nieuwe
+tokenset. AA-contrast blijft (tekst op solide kaarten; motief is lage-alpha
+achtergrond). SW v156.
