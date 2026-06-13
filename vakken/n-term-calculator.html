@@ -1,0 +1,737 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>N-term Calculator 2026 — Wat betekent de N-term? | Slagio</title>
+  <meta name="description" content="Bereken je CE-cijfer met de N-term. Vul je aantal punten en de N-term in en zie direct je cijfer. Uitleg over hoe de N-term werkt.">
+  <link rel="canonical" href="https://slagio.nl/vakken/n-term-calculator.html">
+  <meta property="og:title" content="N-term Calculator 2026 | Slagio">
+  <meta property="og:description" content="Bereken je CE-cijfer met de N-term. Vul je aantal punten en de N-term in en zie direct je cijfer.">
+  <meta property="og:url" content="https://slagio.nl/vakken/n-term-calculator.html">
+  <meta property="og:type" content="website">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebApplication",
+        "name": "N-term Calculator 2026",
+        "url": "https://slagio.nl/vakken/n-term-calculator.html",
+        "description": "Bereken je CE-cijfer met de n-term correctiefactor voor HAVO en VWO examens.",
+        "applicationCategory": "EducationalApplication",
+        "operatingSystem": "Any",
+        "offers": {
+          "@type": "Offer",
+          "price": "0",
+          "priceCurrency": "EUR"
+        },
+        "publisher": {
+          "@type": "Organization",
+          "name": "Slagio",
+          "url": "https://slagio.nl"
+        }
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Slagio",
+            "item": "https://slagio.nl"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Vakken",
+            "item": "https://slagio.nl/vakken/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "N-term Calculator",
+            "item": "https://slagio.nl/vakken/n-term-calculator.html"
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+  <style>
+    :root {
+      --bg: #0f1724;
+      --bg-card: #1a2332;
+      --text: #e4e8ef;
+      --text-muted: #8896a8;
+      --accent: #0891b2;
+      --accent-hover: #0e7490;
+      --border: #2a3444;
+      --green: #22c55e;
+      --red: #ef4444;
+      --yellow: #f59e0b;
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+    .container { max-width: 800px; margin: 0 auto; padding: 2rem 1.5rem; }
+
+    .site-header {
+      background: var(--bg-card);
+      border-bottom: 1px solid var(--border);
+      padding: 1rem 0;
+    }
+    .site-header .container {
+      padding-top: 0.5rem;
+      padding-bottom: 0.5rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .logo {
+      font-size: 1.4rem;
+      font-weight: 700;
+      color: var(--accent);
+      text-decoration: none;
+      letter-spacing: -0.5px;
+    }
+    .header-link {
+      color: var(--text-muted);
+      text-decoration: none;
+      font-size: 0.9rem;
+      transition: color 0.2s;
+    }
+    .header-link:hover { color: var(--text); }
+
+    .breadcrumb {
+      font-size: 0.85rem;
+      color: var(--text-muted);
+      margin-bottom: 2rem;
+    }
+    .breadcrumb a { color: var(--text-muted); text-decoration: none; }
+    .breadcrumb a:hover { color: var(--accent); }
+    .breadcrumb span { margin: 0 0.4rem; }
+
+    .hero { margin-bottom: 2rem; }
+    .hero h1 {
+      font-size: 2rem;
+      font-weight: 700;
+      color: var(--text);
+      margin-bottom: 0.5rem;
+      line-height: 1.2;
+    }
+    .hero p {
+      color: var(--text-muted);
+      font-size: 1.05rem;
+    }
+
+    .card {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 2rem;
+      margin-bottom: 2rem;
+    }
+    .card h2 {
+      font-size: 1.2rem;
+      font-weight: 600;
+      margin-bottom: 1.5rem;
+      color: var(--text);
+    }
+
+    .calc-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 1.25rem;
+      margin-bottom: 1.5rem;
+    }
+    @media (max-width: 600px) {
+      .calc-grid { grid-template-columns: 1fr; }
+      .hero h1 { font-size: 1.5rem; }
+    }
+
+    .input-group label {
+      display: block;
+      font-size: 0.9rem;
+      color: var(--text-muted);
+      margin-bottom: 0.5rem;
+      font-weight: 500;
+    }
+    .input-group input {
+      width: 100%;
+      background: var(--bg);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      color: var(--text);
+      font-size: 1.1rem;
+      padding: 0.75rem 1rem;
+      transition: border-color 0.2s;
+      outline: none;
+    }
+    .input-group input:focus { border-color: var(--accent); }
+    .input-hint {
+      font-size: 0.8rem;
+      color: var(--text-muted);
+      margin-top: 0.3rem;
+    }
+
+    /* N-term slider area */
+    .nterm-wrapper {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+    }
+    .nterm-wrapper input[type="range"] {
+      flex: 1;
+      -webkit-appearance: none;
+      appearance: none;
+      height: 6px;
+      background: var(--border);
+      border-radius: 3px;
+      outline: none;
+      padding: 0;
+      border: none;
+    }
+    .nterm-wrapper input[type="range"]::-webkit-slider-thumb {
+      -webkit-appearance: none;
+      width: 18px;
+      height: 18px;
+      border-radius: 50%;
+      background: var(--accent);
+      cursor: pointer;
+    }
+    .nterm-wrapper input[type="range"]::-moz-range-thumb {
+      width: 18px;
+      height: 18px;
+      border-radius: 50%;
+      background: var(--accent);
+      cursor: pointer;
+      border: none;
+    }
+    .nterm-display {
+      min-width: 3rem;
+      text-align: center;
+      font-size: 1.1rem;
+      font-weight: 600;
+      color: var(--accent);
+    }
+
+    .result-box {
+      background: var(--bg);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 1.5rem;
+      text-align: center;
+    }
+    .result-label {
+      font-size: 0.9rem;
+      color: var(--text-muted);
+      margin-bottom: 0.5rem;
+    }
+    .result-value {
+      font-size: 3.5rem;
+      font-weight: 700;
+      color: var(--accent);
+      line-height: 1;
+      margin-bottom: 1rem;
+    }
+    .result-value.pass { color: var(--green); }
+    .result-value.fail { color: var(--red); }
+    .pass-indicator {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.5rem 1.25rem;
+      border-radius: 9999px;
+      font-weight: 600;
+      font-size: 1rem;
+      margin-bottom: 0.5rem;
+    }
+    .pass-indicator.pass { background: rgba(34,197,94,0.15); color: var(--green); }
+    .pass-indicator.fail { background: rgba(239,68,68,0.15); color: var(--red); }
+    .pass-indicator.neutral { background: rgba(136,150,168,0.15); color: var(--text-muted); }
+
+    /* Progress bar */
+    .score-bar-wrap {
+      margin-top: 1rem;
+    }
+    .score-bar-label {
+      display: flex;
+      justify-content: space-between;
+      font-size: 0.8rem;
+      color: var(--text-muted);
+      margin-bottom: 0.35rem;
+    }
+    .score-bar-track {
+      background: var(--border);
+      border-radius: 9999px;
+      height: 10px;
+      overflow: hidden;
+    }
+    .score-bar-fill {
+      height: 100%;
+      border-radius: 9999px;
+      background: var(--accent);
+      transition: width 0.3s ease, background 0.3s;
+      width: 0%;
+    }
+
+    .section { margin-bottom: 2rem; }
+    .section h2 {
+      font-size: 1.3rem;
+      font-weight: 600;
+      margin-bottom: 1rem;
+      color: var(--text);
+    }
+    .section h3 {
+      font-size: 1.05rem;
+      font-weight: 600;
+      margin: 1rem 0 0.5rem;
+      color: var(--text);
+    }
+    .section p {
+      color: var(--text-muted);
+      margin-bottom: 0.75rem;
+      font-size: 0.95rem;
+    }
+    .section ul {
+      list-style: none;
+      padding: 0;
+    }
+    .section ul li {
+      color: var(--text-muted);
+      font-size: 0.95rem;
+      padding: 0.4rem 0;
+      padding-left: 1.25rem;
+      position: relative;
+    }
+    .section ul li::before {
+      content: '•';
+      color: var(--accent);
+      position: absolute;
+      left: 0;
+    }
+
+    .formula-box {
+      background: var(--bg);
+      border: 1px solid var(--border);
+      border-left: 3px solid var(--accent);
+      border-radius: 8px;
+      padding: 1rem 1.25rem;
+      font-family: 'Courier New', monospace;
+      font-size: 0.95rem;
+      color: var(--text);
+      margin: 1rem 0;
+    }
+
+    /* Info boxes */
+    .info-box {
+      background: rgba(8,145,178,0.08);
+      border: 1px solid rgba(8,145,178,0.25);
+      border-radius: 8px;
+      padding: 1rem 1.25rem;
+      margin: 1rem 0;
+    }
+    .info-box p {
+      color: var(--text);
+      font-size: 0.92rem;
+      margin: 0;
+    }
+
+    /* N-term table */
+    .nterm-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 1rem 0;
+      font-size: 0.9rem;
+    }
+    .nterm-table th {
+      background: var(--bg);
+      color: var(--text-muted);
+      font-weight: 600;
+      padding: 0.6rem 1rem;
+      text-align: left;
+      border-bottom: 1px solid var(--border);
+    }
+    .nterm-table td {
+      padding: 0.6rem 1rem;
+      border-bottom: 1px solid var(--border);
+      color: var(--text-muted);
+    }
+    .nterm-table tr:last-child td { border-bottom: none; }
+    .nterm-table .highlight { color: var(--text); font-weight: 600; }
+
+    .cta-card {
+      background: linear-gradient(135deg, rgba(8,145,178,0.15) 0%, rgba(8,145,178,0.05) 100%);
+      border: 1px solid rgba(8,145,178,0.3);
+      border-radius: 12px;
+      padding: 2rem;
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+    .cta-card h2 {
+      font-size: 1.3rem;
+      font-weight: 600;
+      margin-bottom: 0.5rem;
+    }
+    .cta-card p {
+      color: var(--text-muted);
+      margin-bottom: 1.25rem;
+      font-size: 0.95rem;
+    }
+    .btn {
+      display: inline-block;
+      background: var(--accent);
+      color: #fff;
+      text-decoration: none;
+      padding: 0.75rem 1.75rem;
+      border-radius: 8px;
+      font-weight: 600;
+      font-size: 1rem;
+      transition: background 0.2s;
+    }
+    .btn:hover { background: var(--accent-hover); }
+
+    .tools-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 1rem;
+      margin-top: 1rem;
+    }
+    .tool-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 1.25rem;
+      text-decoration: none;
+      color: var(--text);
+      transition: border-color 0.2s, transform 0.2s;
+    }
+    .tool-card:hover { border-color: var(--accent); transform: translateY(-2px); }
+    .tool-card-title {
+      font-weight: 600;
+      font-size: 0.95rem;
+      margin-bottom: 0.25rem;
+    }
+    .tool-card-desc {
+      font-size: 0.82rem;
+      color: var(--text-muted);
+    }
+
+    footer {
+      border-top: 1px solid var(--border);
+      padding: 2rem 0;
+      margin-top: 1rem;
+    }
+    .footer-links {
+      display: flex;
+      gap: 1.5rem;
+      flex-wrap: wrap;
+      margin-bottom: 1rem;
+    }
+    .footer-links a {
+      color: var(--text-muted);
+      text-decoration: none;
+      font-size: 0.9rem;
+      transition: color 0.2s;
+    }
+    .footer-links a:hover { color: var(--text); }
+    .footer-copy {
+      font-size: 0.82rem;
+      color: var(--text-muted);
+    }
+  </style>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container">
+    <a href="https://slagio.nl" class="logo">Slagio</a>
+    <a href="https://slagio.nl" class="header-link">Terug naar Slagio.nl</a>
+  </div>
+</header>
+
+<main class="container">
+
+  <nav class="breadcrumb" aria-label="Breadcrumb">
+    <a href="https://slagio.nl">Slagio</a>
+    <span>/</span>
+    <a href="/vakken/">Vakken</a>
+    <span>/</span>
+    N-term Calculator
+  </nav>
+
+  <div class="hero">
+    <h1>N-term Calculator 2026</h1>
+    <p>Bereken direct je CE-cijfer met de n-term correctiefactor. Vul je score en de n-term in.</p>
+  </div>
+
+  <!-- Calculator -->
+  <div class="card">
+    <h2>Bereken je CE-cijfer</h2>
+    <div class="calc-grid">
+      <div class="input-group">
+        <label for="behaald">Behaalde punten</label>
+        <input type="number" id="behaald" min="0" placeholder="bijv. 43" oninput="bereken()">
+        <div class="input-hint">Jouw score op het examen</div>
+      </div>
+      <div class="input-group">
+        <label for="maximaal">Maximaal te behalen punten</label>
+        <input type="number" id="maximaal" min="1" placeholder="bijv. 60" oninput="bereken()">
+        <div class="input-hint">Staat op je examenopgaven</div>
+      </div>
+      <div class="input-group">
+        <label for="nterm">N-term</label>
+        <div class="nterm-wrapper">
+          <input type="range" id="nterm-slider" min="0" max="2" step="0.1" value="1.0" oninput="syncNterm(this.value)">
+          <span class="nterm-display" id="nterm-display">1,0</span>
+        </div>
+        <input type="number" id="nterm" min="0" max="2" step="0.1" value="1.0" placeholder="1.0" oninput="syncNtermInput(this.value)" style="margin-top:0.5rem">
+        <div class="input-hint">Tussen 0,0 en 2,0 (standaard: 1,0)</div>
+      </div>
+    </div>
+
+    <div class="result-box">
+      <div class="result-label">Jouw CE-cijfer</div>
+      <div class="result-value" id="result-value">—</div>
+      <div id="pass-indicator" class="pass-indicator neutral">Vul je gegevens in</div>
+      <div class="score-bar-wrap" id="bar-wrap" style="display:none">
+        <div class="score-bar-label">
+          <span>1,0</span>
+          <span id="bar-score-label">—</span>
+          <span>10,0</span>
+        </div>
+        <div class="score-bar-track">
+          <div class="score-bar-fill" id="score-bar"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Wat is de n-term -->
+  <div class="card section">
+    <h2>Wat is de N-term?</h2>
+    <p>De n-term (ook wel "normering" of "normterm" genoemd) is een correctiefactor die door het College voor Toetsen en Examens (CvTE) wordt vastgesteld na elk centraal examen. De n-term corrigeert voor de moeilijkheidsgraad van het examen.</p>
+
+    <h3>Waarom bestaat de n-term?</h3>
+    <p>Niet elk examen is even moeilijk. Als een examen makkelijker of moeilijker uitvalt dan gepland, zorgt de n-term ervoor dat leerlingen niet oneerlijk worden benadeeld of bevoordeeld. De n-term normaliseert het resultaat.</p>
+
+    <ul>
+      <li><strong>N-term = 1,0</strong> — Neutraal: geen correctie, het examen was precies op het verwachte niveau</li>
+      <li><strong>N-term &gt; 1,0</strong> — Voordelig: het examen was moeilijker dan verwacht, je krijgt een "bonus"</li>
+      <li><strong>N-term &lt; 1,0</strong> — Nadelig: het examen was makkelijker dan verwacht, de lat ligt iets hoger</li>
+    </ul>
+
+    <div class="info-box">
+      <p>De n-term wordt bepaald door het CvTE op basis van landelijke resultaten en de beoordelingsnormen. Leerlingen, scholen en docenten hebben hier geen invloed op.</p>
+    </div>
+  </div>
+
+  <!-- Formule uitleg -->
+  <div class="card section">
+    <h2>Hoe bereken je je CE-cijfer?</h2>
+    <p>De officiële formule voor het CE-cijfer is:</p>
+    <div class="formula-box">
+      Cijfer = 9 × (behaalde punten / maximale punten) + N-term
+    </div>
+    <p>Het resultaat wordt afgerond op 1 decimaal en begrensd tussen een 1,0 en een 10,0.</p>
+
+    <h3>Rekenvoorbeelden</h3>
+    <table class="nterm-table">
+      <thead>
+        <tr>
+          <th>Score</th>
+          <th>Max</th>
+          <th>N-term</th>
+          <th>Cijfer</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>45</td>
+          <td>60</td>
+          <td>1,0</td>
+          <td class="highlight">7,8</td>
+        </tr>
+        <tr>
+          <td>30</td>
+          <td>60</td>
+          <td>1,0</td>
+          <td class="highlight">5,5</td>
+        </tr>
+        <tr>
+          <td>30</td>
+          <td>60</td>
+          <td>1,2</td>
+          <td class="highlight">5,7</td>
+        </tr>
+        <tr>
+          <td>30</td>
+          <td>60</td>
+          <td>0,8</td>
+          <td class="highlight">5,3</td>
+        </tr>
+        <tr>
+          <td>50</td>
+          <td>60</td>
+          <td>1,0</td>
+          <td class="highlight">8,5</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- Wanneer bekendgemaakt -->
+  <div class="card section">
+    <h2>Wanneer wordt de N-term bekendgemaakt?</h2>
+    <p>De n-term wordt bekend op de dag dat de uitslag van het centraal examen wordt gepubliceerd — de zogenaamde <strong>normeringsdag</strong>. In de meeste gevallen is dit op dezelfde dag als de officiële uitslag.</p>
+
+    <h3>Tijdlijn examens 2026</h3>
+    <ul>
+      <li>Eerste tijdvak CE: mei 2026</li>
+      <li>Normeringsdag (uitslag + n-term): circa 10 werkdagen na het laatste examen</li>
+      <li>Tweede tijdvak CE: juni 2026</li>
+      <li>Officiële uitslagen: uiterlijk 1 week voor de aanvang van de zomervakantie</li>
+    </ul>
+
+    <div class="info-box">
+      <p>Tot de officiële normeringsdag is de n-term onbekend. Je kunt wel alvast berekenen wat je cijfer wordt bij verschillende n-termen — gebruik de slider hierboven om scenario's te verkennen.</p>
+    </div>
+
+    <h3>Waar vind je de officiële n-term?</h3>
+    <ul>
+      <li>Op de website van <strong>Examenblad.nl</strong> (officiele bron van CvTE)</li>
+      <li>Via je school — docenten en decanen worden tijdig geïnformeerd</li>
+      <li>Via nieuwsberichten op onderwijssites op de normeringsdag</li>
+    </ul>
+  </div>
+
+  <!-- CTA -->
+  <div class="cta-card">
+    <h2>Bereid je voor op het CE met Slagio</h2>
+    <p>Hoe hoger je score op het CE, hoe minder je afhankelijk bent van een gunstige n-term. Oefen nu met echte examenvragen op Slagio.</p>
+    <a href="https://slagio.nl" class="btn">Ga naar Slagio.nl</a>
+  </div>
+
+  <!-- Andere tools -->
+  <div class="section">
+    <h2>Andere handige tools</h2>
+    <div class="tools-grid">
+      <a href="eindcijfer-calculator.html" class="tool-card">
+        <div class="tool-card-title">Eindcijfer Calculator</div>
+        <div class="tool-card-desc">Bereken je eindcijfer op basis van SE en CE</div>
+      </a>
+      <a href="slaagkans-calculator.html" class="tool-card">
+        <div class="tool-card-title">Slaagkans Calculator</div>
+        <div class="tool-card-desc">Hoeveel punten heb je nog nodig op je CE?</div>
+      </a>
+      <a href="/vakken/" class="tool-card">
+        <div class="tool-card-title">Alle vakken</div>
+        <div class="tool-card-desc">Oefenmateriaal per vak voor HAVO en VWO</div>
+      </a>
+    </div>
+  </div>
+
+</main>
+
+<footer>
+  <div class="container">
+    <div class="footer-links">
+      <a href="https://slagio.nl">Slagio.nl</a>
+      <a href="/vakken/">Alle vakken</a>
+      <a href="eindcijfer-calculator.html">Eindcijfer Calculator</a>
+      <a href="slaagkans-calculator.html">Slaagkans Calculator</a>
+      <a href="n-term-calculator.html">N-term Calculator</a>
+    </div>
+    <div class="footer-copy">&copy; 2026 Slagio. Alle rechten voorbehouden.</div>
+  </div>
+</footer>
+
+<script>
+  function clamp(val, min, max) {
+    return Math.min(Math.max(val, min), max);
+  }
+
+  function syncNterm(val) {
+    document.getElementById('nterm').value = parseFloat(val).toFixed(1);
+    document.getElementById('nterm-display').textContent = parseFloat(val).toFixed(1).replace('.', ',');
+    bereken();
+  }
+
+  function syncNtermInput(val) {
+    const n = parseFloat(val);
+    if (!isNaN(n)) {
+      const clamped = clamp(n, 0, 2);
+      document.getElementById('nterm-slider').value = clamped;
+      document.getElementById('nterm-display').textContent = clamped.toFixed(1).replace('.', ',');
+    }
+    bereken();
+  }
+
+  function bereken() {
+    const behaald = parseFloat(document.getElementById('behaald').value);
+    const maximaal = parseFloat(document.getElementById('maximaal').value);
+    const nterm = parseFloat(document.getElementById('nterm').value);
+
+    const resultEl = document.getElementById('result-value');
+    const indicatorEl = document.getElementById('pass-indicator');
+    const barWrap = document.getElementById('bar-wrap');
+    const barFill = document.getElementById('score-bar');
+    const barLabel = document.getElementById('bar-score-label');
+
+    if (isNaN(behaald) || isNaN(maximaal) || isNaN(nterm) || maximaal <= 0) {
+      resultEl.textContent = '—';
+      resultEl.className = 'result-value';
+      indicatorEl.textContent = 'Vul je gegevens in';
+      indicatorEl.className = 'pass-indicator neutral';
+      barWrap.style.display = 'none';
+      return;
+    }
+
+    if (behaald > maximaal) {
+      resultEl.textContent = '!';
+      resultEl.className = 'result-value fail';
+      indicatorEl.textContent = 'Score kan niet hoger zijn dan het maximum';
+      indicatorEl.className = 'pass-indicator fail';
+      barWrap.style.display = 'none';
+      return;
+    }
+
+    const raw = 9 * (behaald / maximaal) + nterm;
+    const cijfer = Math.round(clamp(raw, 1, 10) * 10) / 10;
+    const cijferStr = cijfer.toFixed(1).replace('.', ',');
+
+    resultEl.textContent = cijferStr;
+
+    const pct = ((cijfer - 1) / 9) * 100;
+    barFill.style.width = pct + '%';
+    barLabel.textContent = cijferStr;
+    barWrap.style.display = 'block';
+
+    if (cijfer >= 5.5) {
+      resultEl.className = 'result-value pass';
+      indicatorEl.textContent = '✓ Voldoende (voor dit vak)';
+      indicatorEl.className = 'pass-indicator pass';
+      barFill.style.background = 'var(--green)';
+    } else if (cijfer >= 5.0) {
+      resultEl.className = 'result-value';
+      resultEl.style.color = 'var(--yellow)';
+      indicatorEl.textContent = '⚠ Net onvoldoende — mogelijk compenseerbaar';
+      indicatorEl.className = 'pass-indicator neutral';
+      barFill.style.background = 'var(--yellow)';
+    } else {
+      resultEl.className = 'result-value fail';
+      resultEl.style.color = '';
+      indicatorEl.textContent = '✗ Onvoldoende voor dit vak';
+      indicatorEl.className = 'pass-indicator fail';
+      barFill.style.background = 'var(--red)';
+    }
+  }
+</script>
+
+</body>
+</html>

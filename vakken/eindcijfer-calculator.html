@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Eindcijfer Calculator HAVO/VWO 2026 — Bereken je eindcijfer | Slagio</title>
+  <meta name="description" content="Bereken gratis je eindcijfer voor HAVO of VWO. Vul je SE-cijfer en CE-cijfer in en zie direct je eindcijfer en of je geslaagd bent.">
+  <link rel="canonical" href="https://slagio.nl/vakken/eindcijfer-calculator.html">
+  <meta property="og:title" content="Eindcijfer Calculator HAVO/VWO 2026 | Slagio">
+  <meta property="og:description" content="Bereken gratis je eindcijfer voor HAVO of VWO. Vul je SE-cijfer en CE-cijfer in en zie direct je eindcijfer.">
+  <meta property="og:url" content="https://slagio.nl/vakken/eindcijfer-calculator.html">
+  <meta property="og:type" content="website">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebApplication",
+        "name": "Eindcijfer Calculator HAVO/VWO",
+        "url": "https://slagio.nl/vakken/eindcijfer-calculator.html",
+        "description": "Bereken je eindcijfer voor HAVO of VWO op basis van je SE-cijfer en CE-cijfer.",
+        "applicationCategory": "EducationalApplication",
+        "operatingSystem": "Any",
+        "offers": {
+          "@type": "Offer",
+          "price": "0",
+          "priceCurrency": "EUR"
+        },
+        "publisher": {
+          "@type": "Organization",
+          "name": "Slagio",
+          "url": "https://slagio.nl"
+        }
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Slagio",
+            "item": "https://slagio.nl"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Vakken",
+            "item": "https://slagio.nl/vakken/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Eindcijfer Calculator",
+            "item": "https://slagio.nl/vakken/eindcijfer-calculator.html"
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+  <style>
+    :root {
+      --bg: #0f1724;
+      --bg-card: #1a2332;
+      --text: #e4e8ef;
+      --text-muted: #8896a8;
+      --accent: #0891b2;
+      --accent-hover: #0e7490;
+      --border: #2a3444;
+      --green: #22c55e;
+      --red: #ef4444;
+      --yellow: #f59e0b;
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+    .container { max-width: 800px; margin: 0 auto; padding: 2rem 1.5rem; }
+
+    /* Header */
+    .site-header {
+      background: var(--bg-card);
+      border-bottom: 1px solid var(--border);
+      padding: 1rem 0;
+    }
+    .site-header .container {
+      padding-top: 0.5rem;
+      padding-bottom: 0.5rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .logo {
+      font-size: 1.4rem;
+      font-weight: 700;
+      color: var(--accent);
+      text-decoration: none;
+      letter-spacing: -0.5px;
+    }
+    .header-link {
+      color: var(--text-muted);
+      text-decoration: none;
+      font-size: 0.9rem;
+      transition: color 0.2s;
+    }
+    .header-link:hover { color: var(--text); }
+
+    /* Breadcrumb */
+    .breadcrumb {
+      font-size: 0.85rem;
+      color: var(--text-muted);
+      margin-bottom: 2rem;
+    }
+    .breadcrumb a { color: var(--text-muted); text-decoration: none; }
+    .breadcrumb a:hover { color: var(--accent); }
+    .breadcrumb span { margin: 0 0.4rem; }
+
+    /* Hero */
+    .hero { margin-bottom: 2rem; }
+    .hero h1 {
+      font-size: 2rem;
+      font-weight: 700;
+      color: var(--text);
+      margin-bottom: 0.5rem;
+      line-height: 1.2;
+    }
+    .hero p {
+      color: var(--text-muted);
+      font-size: 1.05rem;
+    }
+
+    /* Card */
+    .card {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 2rem;
+      margin-bottom: 2rem;
+    }
+    .card h2 {
+      font-size: 1.2rem;
+      font-weight: 600;
+      margin-bottom: 1.5rem;
+      color: var(--text);
+    }
+
+    /* Calculator */
+    .calc-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1.5rem;
+      margin-bottom: 1.5rem;
+    }
+    @media (max-width: 480px) {
+      .calc-grid { grid-template-columns: 1fr; }
+      .hero h1 { font-size: 1.5rem; }
+    }
+    .input-group label {
+      display: block;
+      font-size: 0.9rem;
+      color: var(--text-muted);
+      margin-bottom: 0.5rem;
+      font-weight: 500;
+    }
+    .input-group input {
+      width: 100%;
+      background: var(--bg);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      color: var(--text);
+      font-size: 1.1rem;
+      padding: 0.75rem 1rem;
+      transition: border-color 0.2s;
+      outline: none;
+    }
+    .input-group input:focus { border-color: var(--accent); }
+    .input-hint {
+      font-size: 0.8rem;
+      color: var(--text-muted);
+      margin-top: 0.3rem;
+    }
+
+    /* Result */
+    .result-box {
+      background: var(--bg);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 1.5rem;
+      text-align: center;
+    }
+    .result-label {
+      font-size: 0.9rem;
+      color: var(--text-muted);
+      margin-bottom: 0.5rem;
+    }
+    .result-value {
+      font-size: 3.5rem;
+      font-weight: 700;
+      color: var(--accent);
+      line-height: 1;
+      margin-bottom: 1rem;
+    }
+    .result-value.pass { color: var(--green); }
+    .result-value.fail { color: var(--red); }
+    .pass-indicator {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.5rem 1.25rem;
+      border-radius: 9999px;
+      font-weight: 600;
+      font-size: 1rem;
+      margin-bottom: 0.75rem;
+    }
+    .pass-indicator.pass { background: rgba(34,197,94,0.15); color: var(--green); }
+    .pass-indicator.fail { background: rgba(239,68,68,0.15); color: var(--red); }
+    .pass-indicator.neutral { background: rgba(136,150,168,0.15); color: var(--text-muted); }
+    .result-note {
+      font-size: 0.8rem;
+      color: var(--text-muted);
+      margin-top: 0.5rem;
+    }
+
+    /* Sections */
+    .section { margin-bottom: 2rem; }
+    .section h2 {
+      font-size: 1.3rem;
+      font-weight: 600;
+      margin-bottom: 1rem;
+      color: var(--text);
+    }
+    .section h3 {
+      font-size: 1.05rem;
+      font-weight: 600;
+      margin-bottom: 0.5rem;
+      color: var(--text);
+    }
+    .section p {
+      color: var(--text-muted);
+      margin-bottom: 0.75rem;
+      font-size: 0.95rem;
+    }
+    .section ul {
+      list-style: none;
+      padding: 0;
+    }
+    .section ul li {
+      color: var(--text-muted);
+      font-size: 0.95rem;
+      padding: 0.4rem 0;
+      padding-left: 1.25rem;
+      position: relative;
+    }
+    .section ul li::before {
+      content: '•';
+      color: var(--accent);
+      position: absolute;
+      left: 0;
+    }
+
+    /* Formula box */
+    .formula-box {
+      background: var(--bg);
+      border: 1px solid var(--border);
+      border-left: 3px solid var(--accent);
+      border-radius: 8px;
+      padding: 1rem 1.25rem;
+      font-family: 'Courier New', monospace;
+      font-size: 0.95rem;
+      color: var(--text);
+      margin: 1rem 0;
+    }
+
+    /* CTA */
+    .cta-card {
+      background: linear-gradient(135deg, rgba(8,145,178,0.15) 0%, rgba(8,145,178,0.05) 100%);
+      border: 1px solid rgba(8,145,178,0.3);
+      border-radius: 12px;
+      padding: 2rem;
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+    .cta-card h2 {
+      font-size: 1.3rem;
+      font-weight: 600;
+      margin-bottom: 0.5rem;
+    }
+    .cta-card p {
+      color: var(--text-muted);
+      margin-bottom: 1.25rem;
+      font-size: 0.95rem;
+    }
+    .btn {
+      display: inline-block;
+      background: var(--accent);
+      color: #fff;
+      text-decoration: none;
+      padding: 0.75rem 1.75rem;
+      border-radius: 8px;
+      font-weight: 600;
+      font-size: 1rem;
+      transition: background 0.2s;
+    }
+    .btn:hover { background: var(--accent-hover); }
+
+    /* Related tools */
+    .tools-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 1rem;
+      margin-top: 1rem;
+    }
+    .tool-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 1.25rem;
+      text-decoration: none;
+      color: var(--text);
+      transition: border-color 0.2s, transform 0.2s;
+    }
+    .tool-card:hover { border-color: var(--accent); transform: translateY(-2px); }
+    .tool-card-title {
+      font-weight: 600;
+      font-size: 0.95rem;
+      margin-bottom: 0.25rem;
+    }
+    .tool-card-desc {
+      font-size: 0.82rem;
+      color: var(--text-muted);
+    }
+
+    /* Footer */
+    footer {
+      border-top: 1px solid var(--border);
+      padding: 2rem 0;
+      margin-top: 1rem;
+    }
+    .footer-links {
+      display: flex;
+      gap: 1.5rem;
+      flex-wrap: wrap;
+      margin-bottom: 1rem;
+    }
+    .footer-links a {
+      color: var(--text-muted);
+      text-decoration: none;
+      font-size: 0.9rem;
+      transition: color 0.2s;
+    }
+    .footer-links a:hover { color: var(--text); }
+    .footer-copy {
+      font-size: 0.82rem;
+      color: var(--text-muted);
+    }
+  </style>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container">
+    <a href="https://slagio.nl" class="logo">Slagio</a>
+    <a href="https://slagio.nl" class="header-link">Terug naar Slagio.nl</a>
+  </div>
+</header>
+
+<main class="container">
+
+  <nav class="breadcrumb" aria-label="Breadcrumb">
+    <a href="https://slagio.nl">Slagio</a>
+    <span>/</span>
+    <a href="/vakken/">Vakken</a>
+    <span>/</span>
+    Eindcijfer Calculator
+  </nav>
+
+  <div class="hero">
+    <h1>Eindcijfer Calculator HAVO/VWO 2026</h1>
+    <p>Bereken direct je eindcijfer op basis van je SE-cijfer en CE-cijfer.</p>
+  </div>
+
+  <!-- Calculator Card -->
+  <div class="card">
+    <h2>Bereken je eindcijfer</h2>
+    <div class="calc-grid">
+      <div class="input-group">
+        <label for="se-cijfer">SE-cijfer (schoolexamen)</label>
+        <input type="number" id="se-cijfer" min="1" max="10" step="0.1" placeholder="bijv. 7.2" oninput="bereken()">
+        <div class="input-hint">Vul een cijfer in tussen 1 en 10</div>
+      </div>
+      <div class="input-group">
+        <label for="ce-cijfer">CE-cijfer (centraal examen)</label>
+        <input type="number" id="ce-cijfer" min="1" max="10" step="0.1" placeholder="bijv. 6.5" oninput="bereken()">
+        <div class="input-hint">Vul een cijfer in tussen 1 en 10</div>
+      </div>
+    </div>
+    <div class="result-box">
+      <div class="result-label">Jouw eindcijfer</div>
+      <div class="result-value" id="result-value">—</div>
+      <div id="pass-indicator" class="pass-indicator neutral">Vul je cijfers in</div>
+      <div class="result-note">Let op: dit is een indicatie. Slaagregels zijn complex en afhankelijk van meerdere vakken.</div>
+    </div>
+  </div>
+
+  <!-- Uitleg -->
+  <div class="card section">
+    <h2>Hoe werkt de eindcijferberekening?</h2>
+    <p>Het eindcijfer voor elk vak wordt berekend op basis van twee onderdelen:</p>
+    <ul>
+      <li><strong>SE (Schoolexamen)</strong> — telt voor 50% mee. Dit zijn de toetsen en opdrachten die je gedurende het jaar maakt op school.</li>
+      <li><strong>CE (Centraal Examen)</strong> — telt voor 50% mee. Dit is het landelijke schriftelijke examen in mei/juni.</li>
+    </ul>
+    <div class="formula-box">
+      Eindcijfer = (SE-cijfer + CE-cijfer) / 2<br>
+      Afgerond op halve punten (0.5)
+    </div>
+    <p>Voorbeeld: SE = 7,2 en CE = 6,4 → Gemiddelde = 6,8 → Afgerond eindcijfer = <strong>7,0</strong></p>
+    <p>Het eindcijfer wordt altijd afgerond op halve punten. Een gemiddelde van 6,3 wordt een 6,5 en een gemiddelde van 6,7 wordt een 7,0.</p>
+  </div>
+
+  <!-- Slaagregels -->
+  <div class="card section">
+    <h2>Slaagregels HAVO/VWO 2026</h2>
+    <p>Slagen voor je eindexamen gaat niet alleen om je eindcijfers. Er zijn meerdere regels waar je aan moet voldoen:</p>
+
+    <h3>Basisregel</h3>
+    <ul>
+      <li>Gemiddeld eindcijfer van alle vakken is minimaal 5,5</li>
+      <li>Geen enkel eindcijfer lager dan een 4</li>
+      <li>Maximaal één 5 als eindcijfer (en dan een compenserend hoger cijfer)</li>
+    </ul>
+
+    <h3>Compensatieregels</h3>
+    <ul>
+      <li>Een 5 mag worden gecompenseerd als het gemiddelde van alle vakken minimaal 6,0 is</li>
+      <li>Twee vijven mogen worden gecompenseerd als het gemiddelde minimaal 6,0 is en beide vijven bij elkaar worden gecompenseerd door hogere cijfers</li>
+      <li>Nederlands, Engels en wiskunde gelden als kernvakken met extra eisen op VWO</li>
+    </ul>
+
+    <h3>Rekentoets</h3>
+    <ul>
+      <li>De rekentoets is afgeschaft als aparte eis — het rekenen is nu onderdeel van de wiskundetoetsing</li>
+    </ul>
+
+    <p>Raadpleeg altijd je school of de officiële website van DUO/Examenblad voor de meest actuele slaagregels van jouw schooltype en niveau.</p>
+  </div>
+
+  <!-- CTA -->
+  <div class="cta-card">
+    <h2>Vergroot je CE-cijfer met Slagio</h2>
+    <p>Oefen met duizenden examenvragen, uitgewerkte opgaven en slimme herhaling. Speciaal voor HAVO en VWO examenkandidaten.</p>
+    <a href="https://slagio.nl" class="btn">Start gratis oefenen op Slagio</a>
+  </div>
+
+  <!-- Andere tools -->
+  <div class="section">
+    <h2>Andere handige tools</h2>
+    <div class="tools-grid">
+      <a href="n-term-calculator.html" class="tool-card">
+        <div class="tool-card-title">N-term Calculator</div>
+        <div class="tool-card-desc">Bereken je CE-cijfer met de n-term correctie</div>
+      </a>
+      <a href="slaagkans-calculator.html" class="tool-card">
+        <div class="tool-card-title">Slaagkans Calculator</div>
+        <div class="tool-card-desc">Hoeveel punten heb je nog nodig op je CE?</div>
+      </a>
+      <a href="/vakken/" class="tool-card">
+        <div class="tool-card-title">Alle vakken</div>
+        <div class="tool-card-desc">Oefenmateriaal per vak voor HAVO en VWO</div>
+      </a>
+    </div>
+  </div>
+
+</main>
+
+<footer>
+  <div class="container">
+    <div class="footer-links">
+      <a href="https://slagio.nl">Slagio.nl</a>
+      <a href="/vakken/">Alle vakken</a>
+      <a href="n-term-calculator.html">N-term Calculator</a>
+      <a href="slaagkans-calculator.html">Slaagkans Calculator</a>
+      <a href="eindcijfer-calculator.html">Eindcijfer Calculator</a>
+    </div>
+    <div class="footer-copy">&copy; 2026 Slagio. Alle rechten voorbehouden.</div>
+  </div>
+</footer>
+
+<script>
+  function clamp(val, min, max) {
+    return Math.min(Math.max(val, min), max);
+  }
+
+  function roundHalf(num) {
+    return Math.round(num * 2) / 2;
+  }
+
+  function bereken() {
+    const seRaw = parseFloat(document.getElementById('se-cijfer').value);
+    const ceRaw = parseFloat(document.getElementById('ce-cijfer').value);
+    const resultEl = document.getElementById('result-value');
+    const indicatorEl = document.getElementById('pass-indicator');
+
+    if (isNaN(seRaw) || isNaN(ceRaw)) {
+      resultEl.textContent = '—';
+      resultEl.className = 'result-value';
+      indicatorEl.textContent = 'Vul beide cijfers in';
+      indicatorEl.className = 'pass-indicator neutral';
+      return;
+    }
+
+    const se = clamp(seRaw, 1, 10);
+    const ce = clamp(ceRaw, 1, 10);
+
+    const gemiddelde = (se + ce) / 2;
+    const eindcijfer = roundHalf(gemiddelde);
+
+    resultEl.textContent = eindcijfer.toFixed(1).replace('.', ',');
+
+    if (eindcijfer >= 5.5) {
+      resultEl.className = 'result-value pass';
+      indicatorEl.textContent = '✓ Voldoende voor dit vak';
+      indicatorEl.className = 'pass-indicator pass';
+    } else if (eindcijfer >= 5.0) {
+      resultEl.className = 'result-value';
+      resultEl.style.color = 'var(--yellow)';
+      indicatorEl.textContent = '⚠ Onvoldoende — mogelijk compenseerbaar';
+      indicatorEl.className = 'pass-indicator neutral';
+      indicatorEl.style.background = 'rgba(245,158,11,0.15)';
+      indicatorEl.style.color = 'var(--yellow)';
+    } else {
+      resultEl.className = 'result-value fail';
+      resultEl.style.color = '';
+      indicatorEl.textContent = '✗ Onvoldoende voor dit vak';
+      indicatorEl.className = 'pass-indicator fail';
+      indicatorEl.style.background = '';
+      indicatorEl.style.color = '';
+    }
+  }
+</script>
+
+</body>
+</html>
