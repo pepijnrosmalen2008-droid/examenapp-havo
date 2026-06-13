@@ -106,3 +106,25 @@ automatisch (fetch-handler) → offline werkt na eerste bezoek.
 
 **Status**: alle 170 vakpagina's (havo+vwo, hoofd+domein) gethematiseerd
 via één mechanisme. Calculator-/examenrooster-pagina's bewust neutraal.
+
+## Pass 4 — Scherm-werelden in de app (bestemmingsschermen)
+
+**Geprobeerd**: elk bestemmingsscherm een eigen sfeer die bij zijn functie
+past, scoped per scherm-ID (geen markup-wijziging, alleen accent + atmosfeer):
+- leaderboard: kampioens-goud + conic spotlight-rays
+- profiel: violette identiteits-aura (avatar = held)
+- studieplan: indigo blauwdruk-raster (planning/structuur)
+- calc: rustig groen (voldoende/precisie)
+- schedule: agenda-blauw met tijdmarkering
+- groep: verbonden teal · sociaal: warme rose-hub
+- flash: fuchsia geheugenfocus · review: gedempt amber
+
+**Gezien (vision-check)**:
+- leaderboard (light): gouden spotlight bovenin, amber filters/score ✓
+- studieplan (dark): indigo raster + indigo "Genereer"-knop, planning-gevoel ✓
+- profiel (dark): violette aura, avatar-reis violet, knoppen violet ✓
+Elk één georkestreerd moment (geen versnippering), botten gelijk.
+
+**Aanpak**: accent-override (--or) + atmosfeer-achtergrond per #sc-X.
+Bottom-nav blijft level-accent (constante chrome); schermen zijn de werelden.
+SW v157.
