@@ -344,3 +344,19 @@ antwoorden staan bovendien niet allemaal op positie 0.
    niet (binnen periode gelijk aantal schillen; reden = minder kernlading) →
    verwijderd; juiste richting + "(extra schillen)" behouden.
 Structuur geverifieerd. SW v168.
+
+## Pass 16 — Content stap F: Wiskunde A HAVO nagelopen (compleet)
+
+**Audit als leerling, alle 5 domeinen (A vaardigheden, B algebra/log, C
+verbanden, D verandering/differentiëren, E statistiek) + oud-examen + sam.**
+Feitelijk uitstekend — geen fouten. Geverifieerd: G=−10T+230 (T=23°C),
+zonnepanelen 400·1,5^t, abc-formule (3x²−12x+9=0 → x=3/1), decibel (60 dB),
+logregels, differentiëren ((6x³)'=18x²), optimalisatie doos (4×4×2), raaklijn
+y=8x−17, z=(202−181)/7=3,0, wachttijden (gem 9,0 / mediaan 8,5). Distractors
+overwegend parallel.
+
+**Notatie-bevinding**: inconsistent "plus"/"min" als woord vs +/−. KRITISCH:
+"min" is ambigu (minus / minimum / minuten / "bèta-min") → automatisch
+converteren zou fouten maken ("30 min"→"30 −"). Bewust NIET gedaan. Eén veilige
+winst: "plus of min" = altijd ± → 3× omgezet (μ ± 2σ = 181 ± 14). "30 min" en
+"bèta-min" aantoonbaar onaangeroerd. SW v169.
