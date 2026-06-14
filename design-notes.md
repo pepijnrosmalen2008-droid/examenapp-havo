@@ -306,3 +306,23 @@ Toegepast op 78 strings (Wiskunde A/B, Natuurkunde, Scheikunde, Economie,
 Bedrijfseconomie, Biologie). Veiligheid: string-literals 13624→13624 (geen
 quote gebroken; binas raakt nooit '/\), structuur intact, rivierdelta's
 behouden. SW v166.
+
+## Pass 14 — BINAS/ScienceData tabelverwijzingen (onderzoek + eerlijke grens)
+
+Gebruiker: zet overal bij in welke BINAS/ScienceData-tabel de formules staan;
+haal info van internet. Webonderzoek gedaan (fysikarel, noordhoff, malmberg,
+natuurkundeuitgelegd):
+- BINAS 7e: natuurkundeformules = **Tabel 35** (onderverdeeld); EM-spectrum 19;
+  brekingsindices 18; geluidssnelheid 15; constanten (h,c,g) 7; isotopen 25;
+  periodiek systeem **Tabel 99**. Betrouwbaar vast te stellen.
+- ScienceData: **andere, hiërarchische nummering** (bv. 1.6.12), NIET per
+  formule betrouwbaar online te vinden. Officiële examens geven beide nummers,
+  maar de ScienceData-index staat niet op het web → niet te fabriceren zonder
+  fouten te riskeren.
+
+Veilige stap gedaan: domein Golven (Natuurkunde B) miste binas-veld volledig →
+toegevoegd met onderzoek-bevestigde BINAS-tabellen (35/19/18/15) + ceStatus CE.
+Bestaande binas-arrays (per domein, al getoond onder de samenvatting) NIET
+blind herschreven — mogelijk correct; risico op introduceren van fouten te
+groot zonder het fysieke boek. ScienceData-nummers bewust niet verzonnen.
+SW v167. Open: ScienceData-index van eigenaar nodig voor exacte SD-nummers.
