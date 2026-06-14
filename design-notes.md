@@ -486,3 +486,23 @@ SW v175.
 **Status content-audit**: alle HAVO CE-vakken nagelopen (NL, BI, GS, NA, SK,
 WisA, WisB, EN, EC, AK, BECO, MW). Vakken fundamenteel correct; fixes vooral
 kwaliteit (giveaways, typo's, notatie) met enkele echte fouten per vak.
+
+## Pass 23 — Samenvattingen: systematische scan + parity-fix
+
+**Scan over alle 112 sam-velden (HAVO + VWO)** via Python: HTML-tagbalans,
+structuurmarkers, woordtelling en tekstdefecten (spatie-voor-punt,
+woordherhaling, komma-zonder-spatie).
+- **HTML-integriteit**: 0 balansfouten over alle 112 samenvattingen.
+- **Structuur**: 93× sam-head(+ul), 10× sam-head+sam-onthoud (onthoud-box),
+  9× sam-section/qa (Economie-stijl met interactieve vragen). Alle drie valide;
+  geen harmonisatie nodig (puur stilistisch).
+- **Tekstdefecten**: na filtering van tag-strip-artefacten (dubbele spatie) en
+  legitieme patronen (math `(x,y)`, `v.Chr`/`n.Chr`, "afstaan aan", "de Broglie")
+  bleven 0 echte typo's over. Samenvattingen zijn schoon.
+- **Dunne samenvattingen**: thinste zijn VWO talen-SE-domeinen (literatuur,
+  gespreksvaardigheid) + 2 HAVO GS SE-only domeinen — terecht beknopt.
+
+**1 echte gap gefixt**: VWO Engels Literatuur (30w) miste — anders dan de
+zustertalen Duits (51w) en Frans (53w) — de items **Auteurs** en **Stromingen**.
+Aangevuld op parity: Shakespeare/Austen/Dickens/Orwell/Woolf + Renaissance→
+Postmodernism, met behoud van het unieke Poëzie-analyse-item. SW v176.
