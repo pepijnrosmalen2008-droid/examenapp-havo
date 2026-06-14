@@ -326,3 +326,21 @@ Bestaande binas-arrays (per domein, al getoond onder de samenvatting) NIET
 blind herschreven — mogelijk correct; risico op introduceren van fouten te
 groot zonder het fysieke boek. ScienceData-nummers bewust niet verzonnen.
 SW v167. Open: ScienceData-index van eigenaar nodig voor exacte SD-nummers.
+
+## Pass 15 — Content stap E: Scheikunde HAVO nagelopen (compleet)
+
+**Audit als leerling, alle 5 domeinen (A vaardigheden, B stoffen, C processen,
+D koolstofchemie, E chemie/samenleving) + oud-examen + samenvattingen.**
+Feitelijk uitstekend — geen fouten in reactievergelijkingen/formules/waarden.
+Geverifieerd: CO₂ apolair (lineair), H₂O 104,5° (VSEPR), N≡N 945 kJ/mol,
+pH=−log[H⁺] (0,01→2), titratie 0,113 mol/L, Fe₂O₃-rendement 50%, verbranding
+CH₄+2O₂→CO₂+2H₂O, CFK-ozonafbraak Cl•+O₃→ClO+O₂, Ostwald (platina), PET-ester.
+Distractors netjes parallel (parens in álle opties) → geen sterke giveaways;
+antwoorden staan bovendien niet allemaal op positie 0.
+
+2 kleine fixes:
+1. Typo "SO₂ (verbrandig fossiele brandstoffen)" → "verbranding" (E-sam).
+2. Onnauwkeurige hint bij atoomstraal (B): "(meer schermen)" als reden klopt
+   niet (binnen periode gelijk aantal schillen; reden = minder kernlading) →
+   verwijderd; juiste richting + "(extra schillen)" behouden.
+Structuur geverifieerd. SW v168.
