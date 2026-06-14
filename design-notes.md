@@ -210,3 +210,22 @@ en volgorde ongewijzigd → juiste antwoord blijft juist. Structuur geverifieerd
 **Sjabloon voor overige vakken**: (1) domein-voor-domein lezen, (2) feitcheck,
 (3) lange juiste antwoorden inkorten tot afleider-niveau, (4) dubbele/kapotte
 oud-examenvragen herstellen. Bèta daarbij: opties handmatig (geen auto-strip).
+
+## Pass 9 — Content stap B: Biologie HAVO nagelopen
+
+**Audit als leerling, alle 4 domeinen (A/M/O/P) + oud-examen + samenvattingen.**
+Bevinding: inhoudelijk uitstekend en in betere staat dan Nederlands — geen
+feitelijke fouten. Fotosynthese/celademhaling, DNA-basenparing, Mendel +
+X-gebonden (hemofilie-kruising klopt), hormonen, afweer, 10%-regel,
+eutrofiëring, Hardy-Weinberg (q²=0,16→48% heterozygoot) allemaal correct.
+
+4 verbeteringen toegepast (exact-replace + assertie):
+1. Typo "evolutioncept" → "evolutionair concept".
+2. Grammatica "Welk abiotisch factor" → "Welke abiotische factor".
+3. Giveaway-tell: enige optie met uitleg-haakje "Circa 10% (90% gaat
+   verloren…)" → "Circa 10%" (nu vergelijkbaar met afleiders 50/90/1%).
+4. Anglicisme "inactivated vaccin" → "geïnactiveerd vaccin".
+
+Compare-vragen (mitose/meiose, dominant/recessief) bewust gelaten: het
+juiste antwoord moet beide kanten noemen — geen giveaway puur door lengte.
+Structuur geverifieerd. SW v162.
