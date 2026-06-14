@@ -438,3 +438,25 @@ transitie, HDI/Gini, dijkringen/Ruimte voor de Rivier/NOVI — alles correct.
   consistent (B1841, D1886).
 - **Typo**: "Legendas" → "Legenda's" (examenval domein A).
 SW v173.
+
+## Pass 21 — Content stap K: Bedrijfseconomie HAVO nagelopen (compleet)
+
+**Audit als leerling, alle 5 domeinen (B Persoon→rechtspersoon, C Interne
+organisatie, D Marketing, E Financieel beleid, F Verslaggeving) + oud-examen
+(meerdelige reken-CE-vragen) + samenvattingen.** Meest rekengevoelige vak —
+élke berekening nagerekend en kloppend: samengestelde interest (5000·1,03¹⁸ ≈
+8512; regel-van-72-controle 23,4 jr), RTV 9% / REV 19% met positieve hefboom,
+NCW = 20.000·3,993 − 80.000 = −140, lineaire afschrijving 6.000/jr, solvabiliteit
+44,4% & current ratio 1,0, RTV 20%. Rechtsvormen, organisatiestructuren, 4 P's,
+Ansoff/PLC/SWOT, kengetallen — allemaal correct.
+
+**3 fixes:**
+- **Rekenkundige afronding (echte fout)**: break-even 4400/33 = 133,3 stond als
+  "= 133 reparaties"; bij 133 is er nog verlies → gecorrigeerd naar "133,3, dus
+  afgerond 134".
+- **Formulefout**: quick-ratio-optie miste haakjes om de aftrekking
+  ("vlottende activa − voorraden / kortlopende schulden" leest als − (voorraden/
+  schulden)) → "(vlottende activa − voorraden) / kortlopende schulden", nu gelijk
+  aan de samenvatting.
+- **Typo**: "MassaMarketing" → "Massamarketing".
+SW v174.
