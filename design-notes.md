@@ -360,3 +360,20 @@ overwegend parallel.
 converteren zou fouten maken ("30 min"→"30 −"). Bewust NIET gedaan. Eén veilige
 winst: "plus of min" = altijd ± → 3× omgezet (μ ± 2σ = 181 ± 14). "30 min" en
 "bèta-min" aantoonbaar onaangeroerd. SW v169.
+
+## Pass 17 — Content stap G: Wiskunde B HAVO nagelopen (compleet)
+
+**Audit als leerling, alle 5 domeinen (A vaardigheden, B functies/grafieken,
+C meetkundige berekeningen, D toegepaste analyse, E meetkunde) + oud-examen.**
+Grotendeels uitstekend. Geverifieerd: sporthal (b=5,6/a=8,4), batterij
+(L=100·0,82^t, L(10)≈13,7%), transformaties (g=3^(2x)+4 asymptoot y=4, h(0)=⅓),
+ongelijkheid (−2≤x≤4), vector ∠BAC≈71,6°, cosinusregel (QR=2√13≈7,21, opp 12√3),
+kwadraat aanvullen, differentiëren ((eˣ)'=eˣ, kettingregel).
+
+**1 echte fout gevonden + gefixt**: uitleg bij "ligt P op cirkel" was
+tegenstrijdig — zei eerst "P ligt buiten de cirkel", daarna "8 < 9 dus binnen".
+Correct = binnen (8 < r²=9). Uitleg herschreven met heldere regel (kleiner =
+binnen, gelijk = op, groter = buiten).
+
+Notatie: "(x min a)"/"3x² min 12x" blijven (min-ambiguïteit, zie Pass 16) —
+bewust niet geautomatiseerd. SW v170.
