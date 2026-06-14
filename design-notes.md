@@ -460,3 +460,29 @@ Ansoff/PLC/SWOT, kengetallen — allemaal correct.
   aan de samenvatting.
 - **Typo**: "MassaMarketing" → "Massamarketing".
 SW v174.
+
+## Pass 22 — Content stap L: Maatschappijwetenschappen HAVO nagelopen (compleet)
+
+**Audit als leerling, alle 4 CE-domeinen (A Vaardigheden/onderzoek, B Twee
+benaderingen, C Politieke besluitvorming, D Maatschappelijke vraagstukken) +
+oud-examen + samenvattingen.** Sociologie/politicologie is vakinhoudelijk juist:
+Weber (macht/gezag, 3 gezagstypen), Hirschi (binding), Becker (labeling),
+Merton (strain), Bourdieu (3 kapitaalvormen), Durkheim (anomie), trias politica,
+klassieke vs sociale grondrechten, 76-zetelsdrempel, formateur/informateur,
+EU-soevereiniteit. Onderzoeksmethoden (betrouwbaarheid/validiteit, confounder,
+aselect, triangulatie, longitudinaal) correct.
+
+**Fixes:**
+- **Intra-domein duplicaten (domein D)**: twee spiegel-vraagparen testten in
+  dezelfde quiz hetzelfde begrip. (1) "intergenerationele mobiliteit" stond al in
+  2168 → spiegelvraag 2183 vervangen door een nieuwe vraag over **maatschappelijke
+  polarisatie** (onderwerp 'maatschappelijke tegenstellingen'). (2)
+  "participatiesamenleving" stond al in 2170 → spiegelvraag 2178 vervangen door
+  **individualisering** (onderwerp 'cultuur, socialisatie en identiteit'). Beide
+  nieuwe begrippen kwamen nergens anders in MW voor → geen nieuwe duplicaten.
+- **Typografie**: 3× spatie vóór punt weggehaald in correcte opties (2112, 2126).
+SW v175.
+
+**Status content-audit**: alle HAVO CE-vakken nagelopen (NL, BI, GS, NA, SK,
+WisA, WisB, EN, EC, AK, BECO, MW). Vakken fundamenteel correct; fixes vooral
+kwaliteit (giveaways, typo's, notatie) met enkele echte fouten per vak.
