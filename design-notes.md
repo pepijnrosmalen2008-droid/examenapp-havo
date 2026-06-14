@@ -418,3 +418,23 @@ nominaal, CPI, werkloosheidstypes, betalingsbalans.
   (Oligopolie, Extern effect) → gelijkgetrokken met de bare afleiders, conform
   het sterkere patroon elders in dit vak (parens op afleiders, correct = kaal).
 SW v172.
+
+## Pass 20 — Content stap J: Aardrijkskunde HAVO nagelopen (compleet)
+
+**Audit als leerling, alle 5 domeinen (A Vaardigheden, B Wereld, C Aarde,
+D Ontwikkelingsland, E Leefomgeving) + oud-examen (incl. meerdelige a/b/c CE-
+vragen) + samenvattingen.** Sterk geschreven vak: opties symmetrisch (géén
+giveaway-tells), berekeningen kloppen (580.000/2900 = 200 inw/km²), endogeen/
+exogeen, subductie/hotspot/moesson, push-pull, centrum-periferie, demografische
+transitie, HDI/Gini, dijkringen/Ruimte voor de Rivier/NOVI — alles correct.
+
+**2 fixes:**
+- **Interne inconsistentie (echte fout)**: "verstedelijking" werd in domein D
+  (1886) strikt onderscheiden van urbanisatie (verstedelijking = ruimtelijke
+  groei, urbanisatie = bevolkingsaandeel), maar in domein E (1911) juist als
+  bevolkingsaandeel-groei gedefinieerd — twee quizantwoorden die elkaar
+  tegenspreken. E-uitleg overbrugd: synoniemgebruik + strikte ruimtelijke
+  betekenis genoemd, met verwijzing naar domein D. Urbanisatie zelf is overal
+  consistent (B1841, D1886).
+- **Typo**: "Legendas" → "Legenda's" (examenval domein A).
+SW v173.
