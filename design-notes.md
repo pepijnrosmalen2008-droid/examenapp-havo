@@ -394,3 +394,27 @@ juiste antwoorden — "Dear Sir/Madam," én afleider "To Whom It May Concern /
 Dear Sir/Madam (British)". Afleider vervangen door "Dear Mr Smith," (zuiver
 fout bij onbekende naam; toetst de bekend/onbekend-regel uit de uitleg).
 SW v171.
+
+## Pass 19 — Content stap I: Economie HAVO nagelopen (compleet)
+
+**Audit als leerling, alle 4 CE-domeinen (B Schaarste, C Markt, D Overheid,
+E Goede/slechte tijden) + oud-examen + samenvattingen.** Concepten, formules en
+definities kloppen: opportuniteitskosten, 4 productiefactoren→beloningen,
+BBP/BNP/BBP per hoofd + 3 berekenmethoden, lek/injectie, elasticiteiten (prijs,
+kruis, inkomen, aanbod), marktvormen, externe effecten, collectieve goederen/
+freerider, Musgrave-functies, directe/indirecte + progressief/proportioneel/
+degressief, automatische stabilisatoren, conjunctuur, inflatietypes, reëel vs
+nominaal, CPI, werkloosheidstypes, betalingsbalans.
+
+**7 fixes (kwaliteit + 2 echte fouten):**
+- **Echte fout**: BBP-bestedingsmethode-optie was afgekapt op een losse "+"
+  ("...Overheidsbestedingen +") → aangevuld tot "+ (Export - Import)".
+- **Spelfout** "belastingfinancied" (2×) → "belastinggefinancierd".
+- **Actualisering**: ECB-doel "dicht bij maar onder de 2%" (pre-2021) →
+  "op middellange termijn rond de 2%" (symmetrisch doel sinds 2021).
+- **Typografie**: 4× spatie vóór punt in correcte opties weggehaald (verschijnt
+  alleen in juiste antwoord = subtiele tell).
+- **Giveaway**: 2 vragen hadden parens-voorbeelden alléén op het juiste antwoord
+  (Oligopolie, Extern effect) → gelijkgetrokken met de bare afleiders, conform
+  het sterkere patroon elders in dit vak (parens op afleiders, correct = kaal).
+SW v172.

@@ -1,0 +1,235 @@
+Gewijzigde strings: 78
+
+n maal log(a)
+   -> n·log(a)
+
+log(n maal a)
+   -> log(n·a)
+
+Machtrekenregel: log(a tot de n) = n maal log(a). Bijv. log(1000) = log(10 tot de 3de) = 3 maal log(10) = 3. Deze regel volgt uit de definitie van de logaritme.
+   -> Machtrekenregel: log(a tot de n) = n·log(a). Bijv. log(1000) = log(10³) = 3·log(10) = 3. Deze regel volgt uit de definitie van de logaritme.
+
+Welke rekenregel geldt voor log(a maal b)?
+   -> Welke rekenregel geldt voor log(a·b)?
+
+log a maal log b
+   -> log a·log b
+
+Log(a maal b) = log a + log b. Dit volgt uit de exponentregel: 10^x maal 10^y = 10^(x+y).
+   -> Log(a·b) = log a + log b. Dit volgt uit de exponentregel: 10^x·10^y = 10^(x+y).
+
+Welke rekenregel geldt voor a^m maal a^n (zelfde grondtal)?
+   -> Welke rekenregel geldt voor a^m·a^n (zelfde grondtal)?
+
+a tot de macht (m maal n)
+   -> a tot de macht (m·n)
+
+Bij vermenigvuldigen met hetzelfde grondtal tel je de exponenten op: a^m maal a^n = a^(m+n). Bijv. 2^3 maal 2^4 = 2^7 = 128.
+   -> Bij vermenigvuldigen met hetzelfde grondtal tel je de exponenten op: a^m·a^n = a^(m+n). Bijv. 2^3·2^4 = 2^7 = 128.
+
+Een geluidsniveau wordt gemeten in decibel (dB). De formule is: L = 10 maal log(I gedeeld door I0), waarbij I de geluidsintensiteit is en I0 = 10 tot de macht m
+   -> Een geluidsniveau wordt gemeten in decibel (dB). De formule is: L = 10·log(I gedeeld door I0), waarbij I de geluidsintensiteit is en I0 = 10 tot de macht min 12
+
+(a) L = 10 maal log(10^−6 gedeeld door 10^−12) = 10 maal log(10^6) = 10 maal 6 = 60 dB.\n(b) 10 maal log(2I gedeeld door I) = 10 maal log(2) ≈ 10 maal 0,301 ≈ 3
+   -> (a) L = 10·log(10^−6 gedeeld door 10^−12) = 10·log(10^6) = 10·6 = 60 dB.\n(b) 10·log(2I gedeeld door I) = 10·log(2) ≈ 10·0,301 ≈ 3 dB.
+
+(a) C(t) = 400 maal 0,85^t (groeifactor 1 − 0,15 = 0,85).\n(b) 400 maal 0,85^t = 50 → 0,85^t = 0,125 → t = log(0,125) / log(0,85) ≈ 12,8 uur. Na 13 uur daalt de
+   -> (a) C(t) = 400·0,85^t (groeifactor 1 − 0,15 = 0,85).\n(b) 400·0,85^t = 50 → 0,85^t = 0,125 → t = log(0,125) / log(0,85) ≈ 12,8 uur. Na 13 uur daalt de concentra
+
+(a) D = (−12)² − 4 maal 3 maal 9 = 144 − 108 = 36.\n(b) x = (12 ± √36) / (2 maal 3) = (12 ± 6) / 6. Oplossingen: x = 3 of x = 1.
+   -> (a) D = (−12)² − 4·3·9 = 144 − 108 = 36.\n(b) x = (12 ± √36) / (2·3) = (12 ± 6) / 6. Oplossingen: x = 3 of x = 1.
+
+Exponentieel: y = a maal g tot de macht x. Groeifactor g > 1 is groei; 0 < g < 1 is verval. De procentuele verandering per stap is constant.
+   -> Exponentieel: y = a·g tot de macht x. Groeifactor g > 1 is groei; 0 < g < 1 is verval. De procentuele verandering per stap is constant.
+
+(a) C(t) = 80 maal 0,92^t (verval 8%, groeifactor 0,92).\n(b) 80 maal 0,92^t = 15 → 0,92^t = 0,1875 → t = log(0,1875)/log(0,92) ≈ 20,2 jaar.
+   -> (a) C(t) = 80·0,92^t (verval 8%, groeifactor 0,92).\n(b) 80·0,92^t = 15 → 0,92^t = 0,1875 → t = log(0,1875)/log(0,92) ≈ 20,2 jaar.
+
+Na 5 jaar: 500.000 maal 1,06^5 = 669.113 euro.\nFase 2: 669.113 maal 1,02^(t−5) = 1.000.000 → 1,02^(t−5) = 1,4945 → t−5 = log(1,4945)/log(1,02) ≈ 20,2. In jaar 
+   -> Na 5 jaar: 500.000·1,06^5 = 669.113 euro.\nFase 2: 669.113·1,02^(t−5) = 1.000.000 → 1,02^(t−5) = 1,4945 → t−5 = log(1,4945)/log(1,02) ≈ 20,2. In jaar 26 wordt 1
+
+(a) Taxi 1: K₁ = 1,80x + 2,50. Taxi 2: K₂ = 2,20x.\n(b) Stel gelijk: 1,80x + 2,50 = 2,20x → 2,50 = 0,40x → x = 6,25 km. Kosten: K = 2,20 maal 6,25 = 13,75 euro.
+   -> (a) Taxi 1: K₁ = 1,80x + 2,50. Taxi 2: K₂ = 2,20x.\n(b) Stel gelijk: 1,80x + 2,50 = 2,20x → 2,50 = 0,40x → x = 6,25 km. Kosten: K = 2,20·6,25 = 13,75 euro.
+
+f'(x) = n maal a maal x^(n−1)
+   -> f'(x) = n·a·x^(n−1)
+
+f'(x) = a maal x^n (onveranderd)
+   -> f'(x) = a·x^n (onveranderd)
+
+f'(x) = n maal x^n (exponent naar voren)
+   -> f'(x) = n·x^n (exponent naar voren)
+
+f'(x) = a maal x^(n+1) / (n+1)
+   -> f'(x) = a·x^(n+1) / (n+1)
+
+Machtsfunctieregel: (axⁿ)' = n maal a maal x^(n-1). Exponent daalt met 1 en komt als factor naar voren. Bijv. (4x²)' = 8x. Constante heeft afgeleide 0.
+   -> Machtsfunctieregel: (axⁿ)' = n·a·x^(n-1). Exponent daalt met 1 en komt als factor naar voren. Bijv. (4x²)' = 8x. Constante heeft afgeleide 0.
+
+Standaardafwijking maal 2
+   -> Standaardafwijking·2
+
+De lengte van 400 volwassen mannen is normaal verdeeld met gemiddelde mu = 181 cm en standaardafwijking sigma = 7 cm.
+   -> De lengte van 400 volwassen mannen is normaal verdeeld met gemiddelde μ = 181 cm en standaardafwijking σ = 7 cm.
+
+(a) mu plus of min 2 sigma = 181 plus of min 14, dus tussen 167 en 195 cm valt 95%.\n(b) z = (202 min 181) gedeeld door 7 = 3,0. Drie standaardafwijkingen boven
+   -> (a) μ plus of min 2 σ = 181 plus of min 14, dus tussen 167 en 195 cm valt 95%.\n(b) z = (202 min 181) gedeeld door 7 = 3,0. Drie standaardafwijkingen boven het 
+
+(a) H0: mu = 50. H1: mu ongelijk aan 50 (tweezijdige toets).\n(b) Als je H0 verwerpt concludeer je dat het gemiddeld aantal gummies significant afwijkt van 50. 
+   -> (a) H0: μ = 50. H1: μ ongelijk aan 50 (tweezijdige toets).\n(b) Als je H0 verwerpt concludeer je dat het gemiddeld aantal gummies significant afwijkt van 50. De
+
+(a) Vader had hemofilie, zijn enige X draagt het aangedane allel Xh. De vrouw erfde Xh van haar vader en XH van haar moeder, dus ze is draagster: XHXh.\n(b) XHX
+   -> (a) Vader had hemofilie, zijn enige X draagt het aangedane allel Xh. De vrouw erfde Xh van haar vader en XH van haar moeder, dus ze is draagster: XHXh.\n(b) XHX
+
+p kwadraat + 2pq + q kwadraat = 1. Afwijking van Hardy-Weinberg wijst op evolutionaire krachten zoals selectie, drift of migratie.
+   -> p² + 2pq + q² = 1. Afwijking van Hardy-Weinberg wijst op evolutionaire krachten zoals selectie, drift of migratie.
+
+(a) q kwadraat = 0,16 geeft q = 0,4. p = 1 min 0,4 = 0,6.\n(b) Heterozygoten: 2pq = 2 maal 0,6 maal 0,4 = 0,48 = 48%.\n(c) Twee uit: grote populatie, willekeuri
+   -> (a) q² = 0,16 geeft q = 0,4. p = 1 min 0,4 = 0,6.\n(b) Heterozygoten: 2pq = 2·0,6·0,4 = 0,48 = 48%.\n(c) Twee uit: grote populatie, willekeurige paring, geen se
+
+1 mol = 6,022 maal 10 tot de 23de deeltjes. n = m gedeeld door M. De molaire massa M lees je af uit het periodiek systeem.
+   -> 1 mol = 6,022·10²³ deeltjes. n = m gedeeld door M. De molaire massa M lees je af uit het periodiek systeem.
+
+(a) n(HCl) = c maal V = 0,150 maal 0,0150 = 0,00225 mol.\n(b) NaOH:HCl = 1:1 geeft n(NaOH) = 0,00225 mol. c(NaOH) = 0,00225 gedeeld door 0,0200 = 0,113 mol/L.
+   -> (a) n(HCl) = c·V = 0,150·0,0150 = 0,00225 mol.\n(b) NaOH:HCl = 1:1 geeft n(NaOH) = 0,00225 mol. c(NaOH) = 0,00225 gedeeld door 0,0200 = 0,113 mol/L.
+
+(a) n(Fe2O3) = 480 gedeeld door 160 = 3 mol. Verhouding Fe2O3:Fe = 1:2 geeft n(Fe) = 6 mol. m(Fe) = 6 maal 56 = 336 g.\n(b) Rendement = 168 gedeeld door 336 maa
+   -> (a) n(Fe2O3) = 480 gedeeld door 160 = 3 mol. Verhouding Fe2O3:Fe = 1:2 geeft n(Fe) = 6 mol. m(Fe) = 6·56 = 336 g.\n(b) Rendement = 168 gedeeld door 336·100% = 5
+
+Golfvergelijking v = f maal lambda
+   -> Golfvergelijking v = f·λ
+
+v = f maal lambda
+   -> v = f·λ
+
+v = lambda gedeeld door f
+   -> v = λ gedeeld door f
+
+f = v maal lambda
+   -> f = v·λ
+
+v = lambda maal T
+   -> v = λ·T
+
+v = f maal lambda. Licht: v = 3 maal 10 tot de 8 m/s. Geluid: circa 340 m/s in lucht bij kamertemperatuur.
+   -> v = f·λ. Licht: v = 3·10⁸ m/s. Geluid: circa 340 m/s in lucht bij kamertemperatuur.
+
+n = f × λ (frequentie maal golflengte)
+   -> n = f × λ (frequentie·golflengte)
+
+F = ma in newton = kilogram maal meter per seconde kwadraat. Hoe groter de massa, hoe meer kracht nodig voor dezelfde versnelling.
+   -> F = ma in newton = kilogram·meter per seconde². Hoe groter de massa, hoe meer kracht nodig voor dezelfde versnelling.
+
+Ek = half maal m maal v kwadraat. Verdubbel de snelheid: Ek verviervoudigt want het verband is kwadratisch.
+   -> Ek = ½·m·v². Verdubbel de snelheid: Ek verviervoudigt want het verband is kwadratisch.
+
+v = delta x gedeeld door delta t. a = delta v gedeeld door delta t. Een auto met constante snelheid heeft een grote v maar a = 0.
+   -> v = Δx gedeeld door Δt. a = Δv gedeeld door Δt. Een auto met constante snelheid heeft een grote v maar a = 0.
+
+U = I maal R
+   -> U = I·R
+
+I = U maal R
+   -> I = U·R
+
+R = U maal I
+   -> R = U·I
+
+Wet van Ohm: U in volt = I in ampere maal R in ohm. Meer spanning bij gelijke weerstand geeft meer stroom.
+   -> Wet van Ohm: U in volt = I in ampere·R in ohm. Meer spanning bij gelijke weerstand geeft meer stroom.
+
+P = U²·I (spanning kwadraat × stroom)
+   -> P = U²·I (spanning² × stroom)
+
+P = UI = I kwadraat R = U kwadraat gedeeld door R. Energie = P maal t in joule of kWh.
+   -> P = UI = I² R = U² gedeeld door R. Energie = P·t in joule of kWh.
+
+P = UI: voor hetzelfde vermogen bij hoge U is I klein. Warmteverlies = I kwadraat R, dus kleine stroom geeft kwadratisch minder verlies.
+   -> P = UI: voor hetzelfde vermogen bij hoge U is I klein. Warmteverlies = I² R, dus kleine stroom geeft kwadratisch minder verlies.
+
+N = N0 maal (half) tot de macht (t gedeeld door T-half): exponentieel afnemend per halveringstijd
+   -> N = N0·(half) tot de macht (t gedeeld door T-half): exponentieel afnemend per halveringstijd
+
+N = N0 min k maal t: lineair verval
+   -> N = N0 min k·t: lineair verval
+
+Na 1 halveringstijd is 50% over. Na 2 is 25% over. Na n halveringstijden is (half) tot de n maal N0.
+   -> Na 1 halveringstijd is 50% over. Na 2 is 25% over. Na n halveringstijden is (half) tot de n·N0.
+
+E = h maal f: hogere frequentie geeft meer energie per foton
+   -> E = h·f: hogere frequentie geeft meer energie per foton
+
+E = h maal f. Hogere frequentie (kortere golflengte) geeft meer energie per foton. Gamma heeft de hoogste energie; radiogolven de laagste.
+   -> E = h·f. Hogere frequentie (kortere golflengte) geeft meer energie per foton. Gamma heeft de hoogste energie; radiogolven de laagste.
+
+Samengesteld: Kn = K0 maal (1+r) tot de n. Over langere periodes is samengestelde interest veel hoger dan enkelvoudige.
+   -> Samengesteld: Kn = K0·(1+r) tot de n. Over langere periodes is samengestelde interest veel hoger dan enkelvoudige.
+
+(a) K18 = 5000 maal 1,03 tot de 18de macht = 5000 maal 1,7024 = 8512 euro.\n(b) Regel van 72: t = 72 gedeeld door 3 = 24 jaar. Controle: 1,03 tot de n = 2 geeft
+   -> (a) K18 = 5000·1,03 tot de 18de macht = 5000·1,7024 = 8512 euro.\n(b) Regel van 72: t = 72 gedeeld door 3 = 24 jaar. Controle: 1,03 tot de n = 2 geeft n = log 2
+
+db = vp min vk. Break-even: Q_be = FK gedeeld door db. Als db maal Q groter is dan FK is er winst.
+   -> db = vp min vk. Break-even: Q_be = FK gedeeld door db. Als db·Q groter is dan FK is er winst.
+
+NCW = som van kasinstroom maal CW-factor min investering. Positieve NCW is waardecreatie. NCW is economisch superieur maar vereist een discontovoet.
+   -> NCW = som van kasinstroom·CW-factor min investering. Positieve NCW is waardecreatie. NCW is economisch superieur maar vereist een discontovoet.
+
+(a) FK = 1800 + 2200 + 400 = 4400 euro. db = 45 min 12 = 33 euro. Q_be = 4400 gedeeld door 33 = 133 reparaties.\n(b) Winst = db maal Q min FK = 33 maal 200 min 
+   -> (a) FK = 1800 + 2200 + 400 = 4400 euro. db = 45 min 12 = 33 euro. Q_be = 4400 gedeeld door 33 = 133 reparaties.\n(b) Winst = db·Q min FK = 33·200 min 4400 = 660
+
+(a) RTV = 27.000 gedeeld door 300.000 maal 100% = 9%.\n(b) Rente = 4% maal 200.000 = 8.000 euro. Nettowinst na rente = 27.000 min 8.000 = 19.000 euro.\n(c) REV 
+   -> (a) RTV = 27.000 gedeeld door 300.000·100% = 9%.\n(b) Rente = 4%·200.000 = 8.000 euro. Nettowinst na rente = 27.000 min 8.000 = 19.000 euro.\n(c) REV = 19.000 g
+
+(a) TVT = 80.000 gedeeld door 20.000 = 4 jaar.\n(b) NCW = 20.000 maal 3,993 min 80.000 = 79.860 min 80.000 = min 140 euro.\n(c) De NCW is licht negatief. De inv
+   -> (a) TVT = 80.000 gedeeld door 20.000 = 4 jaar.\n(b) NCW = 20.000·3,993 min 80.000 = 79.860 min 80.000 = min 140 euro.\n(c) De NCW is licht negatief. De invester
+
+(a) Activa = 180 + 40 + 25 + 15 + 10 = 270.000 euro. Passiva = 120 + 100 + 35 + 15 = 270.000 euro. De balans klopt.\n(b) Solvabiliteit = 120/270 maal 100% = 44,
+   -> (a) Activa = 180 + 40 + 25 + 15 + 10 = 270.000 euro. Passiva = 120 + 100 + 35 + 15 = 270.000 euro. De balans klopt.\n(b) Solvabiliteit = 120/270·100% = 44,4%. C
+
+(a) Nettowinst voor belasting = bedrijfsresultaat min financiele lasten = 100.000 min 20.000 = 80.000 euro.\n(b) RTV = (nettowinst + rente VV) gedeeld door TV m
+   -> (a) Nettowinst voor belasting = bedrijfsresultaat min financiele lasten = 100.000 min 20.000 = 80.000 euro.\n(b) RTV = (nettowinst + rente VV) gedeeld door TV·1
+
+<div class="sam-head">Functiesoorten</div><ul><li><strong>Lineaire functie</strong>: <span class="fm">f(x) = ax + b</span>. Rechte lijn. a = helling (richtingsc
+   -> <div class="sam-head">Functiesoorten</div><ul><li><strong>Lineaire functie</strong>: <span class="fm">f(x) = ax + b</span>. Rechte lijn. a = helling (richtingsc
+
+3 maal 2π
+   -> 3·2π
+
+y = f'(a) maal (x min a) + f(a)
+   -> y = f'(a)·(x min a) + f(a)
+
+y = f(a) maal x + f'(a)
+   -> y = f(a)·x + f'(a)
+
+y = f'(x) maal a
+   -> y = f'(x)·a
+
+y = f(x) maal (x min a)
+   -> y = f(x)·(x min a)
+
+f(g(x))′ = f′(g(x)) maal g′(x): buitenste differentiëren, binnenste laten staan, maal afg. binnenste
+   -> f(g(x))′ = f′(g(x))·g′(x): buitenste differentiëren, binnenste laten staan, maal afg. binnenste
+
+Kettingregel: buitenste functie differentiëren, binnenste laten staan, vermenigvuldigen met de afgeleide van de binnenste. Voorbeeld: (sin(3x))' = cos(3x) maal 
+   -> Kettingregel: buitenste functie differentiëren, binnenste laten staan, vermenigvuldigen met de afgeleide van de binnenste. Voorbeeld: (sin(3x))' = cos(3x)·3.
+
+Gegeven f(x) = x tot de 3de min 6x kwadraat + 9x + 2.
+   -> Gegeven f(x) = x tot de 3de min 6x² + 9x + 2.
+
+(a) f'(x) = 3x kwadraat min 12x + 9.\n(b) f'(x) = 0: 3x kwadraat min 12x + 9 = 0, dus x kwadraat min 4x + 3 = 0, (x-1)(x-3) = 0. Extremen bij x = 1 en x = 3.\n(
+   -> (a) f'(x) = 3x² min 12x + 9.\n(b) f'(x) = 0: 3x² min 12x + 9 = 0, dus x² min 4x + 3 = 0, (x-1)(x-3) = 0. Extremen bij x = 1 en x = 3.\n(c) f''(x) = 6x min 12. f
+
+(a) Hek: twee breedtes x en een lengte = 100 - 2x. A(x) = x(100-2x) = 100x - 2x kwadraat.\n(b) A'(x) = 100 - 4x = 0 geeft x = 25. Lengte = 100 - 50 = 50. A''(x)
+   -> (a) Hek: twee breedtes x en een lengte = 100 - 2x. A(x) = x(100-2x) = 100x - 2x².\n(b) A'(x) = 100 - 4x = 0 geeft x = 25. Lengte = 100 - 50 = 50. A''(x) = -4 kl
+
+(a) f(x) = (2x+1)^(1/2). Kettingregel: f'(x) = 1/2 maal (2x+1)^(-1/2) maal 2 = 1 gedeeld door wortel(2x+1).\n(b) f(4) = wortel(9) = 3. f'(4) = 1/wortel(9) = 1/3
+   -> (a) f(x) = (2x+1)^(1/2). Kettingregel: f'(x) = 1/2·(2x+1)^(-1/2)·2 = 1 gedeeld door wortel(2x+1).\n(b) f(4) = wortel(9) = 3. f'(4) = 1/wortel(9) = 1/3. Raaklijn
+
+a₁ maal a₂: het product van de componenten, oppervlakte van het rechthoekje
+   -> a₁·a₂: het product van de componenten, oppervlakte van het rechthoekje
+
+<div class="sam-head">Wetten van Newton</div><ul><li><strong>Newton I (traagheid)</strong>: een voorwerp blijft in rust of beweegt eenparig rechtlijnig zolang d
+   -> <div class="sam-head">Wetten van Newton</div><ul><li><strong>Newton I (traagheid)</strong>: een voorwerp blijft in rust of beweegt eenparig rechtlijnig zolang d
+
+Energie is gelijk aan massa maal golfsnelheid.
+   -> Energie is gelijk aan massa·golfsnelheid.
