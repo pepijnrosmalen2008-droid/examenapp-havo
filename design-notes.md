@@ -229,3 +229,20 @@ eutrofiëring, Hardy-Weinberg (q²=0,16→48% heterozygoot) allemaal correct.
 Compare-vragen (mitose/meiose, dominant/recessief) bewust gelaten: het
 juiste antwoord moet beide kanten noemen — geen giveaway puur door lengte.
 Structuur geverifieerd. SW v162.
+
+## Pass 10 — Content stap C: Geschiedenis HAVO nagelopen (vak compleet)
+
+**Audit als leerling, alle 5 domeinen (A historisch besef, B oriëntatiekennis/
+tijdvakken, C thema's, D rechtsstaat & democratie, E studie/beroep) + oud-examen
++ samenvattingen.** Feitelijk uitstekend — geen enkele fout in datums,
+gebeurtenissen of begrippen. Alle 10 tijdvakken kloppen (1492, 1517, 1789,
+1917, 1989, 1991), evenals trias politica, Artikel 1 GW, motie van wantrouwen.
+
+3 giveaway-tells ingekort (enige optie met lange uitleg naast kale afleiders;
+auto-strip sloeg ze over vanwege datums/leestekens):
+1. "Absolutisme (bijv. Lodewijk XIV — L'état c'est moi)" → "Absolutisme"
+   (afleiders: Feodalisme/Constitutionalisme/Republikanisme).
+2. "De Franse Revolutie (1789: vrijheid…)" → "De Franse Revolutie (1789)".
+3. "De Holocaust (1941–1945): industriële massamoord…" → "De Holocaust
+   (1941–1945)" (parallel met "De Armeense genocide (1915)").
+Volledige uitleg blijft in u:. SW v163.
