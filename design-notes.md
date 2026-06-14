@@ -283,3 +283,26 @@ over):
 3. "…door zijn beweging: Ek = ½mv²" → "…door zijn beweging".
 4. "U = I maal R: de spanning is…" → "U = I maal R".
 Formules/uitleg blijven in u:. Structuur geverifieerd. SW v165.
+
+## Pass 13 — Formules in BINAS-notatie (leesbaarheid)
+
+Gebruiker: toon formules zoals in BINAS (gebruiksvriendelijker). Woord-math
+("half maal m maal v kwadraat", "E = h maal f", "6,022 maal 10 tot de 23ste")
+omgezet naar notatie (½·m·v², E = h·f, 6,022·10²³).
+
+Veilig gescoped (woordgrenzen + dry-run review):
+- " maal " → "·" (97× heel woord = altijd ×; geverifieerd geen tel-/proza-maal).
+  Negatieve lookahead vóór de/het/een/afg/van/met → "maal de afgeleide" blijft.
+- "half maal" → "½·" · "X kwadraat" → "X²" (excl. "kwadraat aanvullen/van").
+- "10 tot de (macht) N" → "10ⁿ" (wetenschappelijke notatie).
+- Griekse letters λ/σ/θ/μ (heel woord, alleen wiskunde-contexten).
+- delta → Δ ALLEEN vóór losse variabele (Δv/Δt/Δx).
+
+**Dry-run ving 2 prozavallen**: (1) delta → Δ sloopte aardrijkskunde-rivierdelta's
+("delta-systemen", "Bangladesh ligt in een delta") → delta-regel beperkt tot
+variabele-context; (2) "maal de/afg" → lelijke "·de" → lookahead toegevoegd.
+
+Toegepast op 78 strings (Wiskunde A/B, Natuurkunde, Scheikunde, Economie,
+Bedrijfseconomie, Biologie). Veiligheid: string-literals 13624→13624 (geen
+quote gebroken; binas raakt nooit '/\), structuur intact, rivierdelta's
+behouden. SW v166.
