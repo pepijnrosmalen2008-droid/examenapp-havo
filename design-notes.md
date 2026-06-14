@@ -264,3 +264,22 @@ VWO Duits 1). Bv. "De Berlijnse Muur (1961–1989)" → "De Berlijnse Muur";
 "Oktoberrevolutie (1917): Bolsjewieken…" → "Oktoberrevolutie: Bolsjewieken…".
 Geverifieerd: ()-paren −26/−26, uitleg behoudt jaartallen, wiskundenotatie
 onaangeroerd, geen dubbele opties. SW v164.
+
+## Pass 12 — Content stap D: Natuurkunde HAVO nagelopen (eerste bèta-vak)
+
+**Audit als leerling, alle 5 domeinen (A vaardigheden, B golven, C beweging,
+D lading/veld, E straling) + oud-examen + samenvattingen.** Feitelijk
+uitstekend — geen enkele fout in formules/eenheden/waarden. Geverifieerd o.a.:
+Ohm R=6,0/0,024=250 Ω, θc=arcsin(1/1,5)≈41,8°, v-t-grafiek totaal 290 m,
+alfa(A−4,Z−2)/bèta-min(Z+1)/gamma, N=N₀(½)^(t/T½), E=h·f, ²³⁸U→²³⁴Th+⁴He,
+3 halveringstijden→1/8, E=mc², Lorentz F=qvB·sinθ — alles klopt.
+
+4 asymmetrische giveaways in opties gefixt (7 opties; auto-strip sloeg bèta
+over):
+1. "v = f maal lambda: golfsnelheid = …" → "v = f maal lambda" (afleiders
+   kale formules).
+2. "Frequentie (f blijft gelijk)" e.a. → kale grootheden — haakjes
+   verklapten letterlijk welke onveranderd blijft bij refractie.
+3. "…door zijn beweging: Ek = ½mv²" → "…door zijn beweging".
+4. "U = I maal R: de spanning is…" → "U = I maal R".
+Formules/uitleg blijven in u:. Structuur geverifieerd. SW v165.
