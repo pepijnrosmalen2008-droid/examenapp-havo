@@ -377,3 +377,20 @@ binnen, gelijk = op, groter = buiten).
 
 Notatie: "(x min a)"/"3x² min 12x" blijven (min-ambiguïteit, zie Pass 16) —
 bewust niet geautomatiseerd. SW v170.
+
+## Pass 18 — Content stap H: Engels HAVO nagelopen (compleet)
+
+**Audit als leerling, alle 6 domeinen (A woordenschat/grammatica, B
+leesvaardigheid-CE, C kijk/luister, D gesprek, E schrijven, F literatuur) +
+oud-examen + samenvattingen.** Engels is native-kwaliteit, geen feitelijke
+fouten. Geverifieerd: conditionals (type 1/2/3 + mixed), present perfect vs
+simple past, passief, reported-speech backshift, Dear Sir/Madam→Yours
+faithfully vs Dear Mr Smith→Yours sincerely, PIE-alinea, metaphor vs simile,
+dynamic/static character, Lord of the Flies/Gatsby-symboliek. Antwoorden mooi
+verdeeld over c:0 en c:1.
+
+**1 echte fout gefixt**: vraag over formele aanhef (naam onbekend) had TWEE
+juiste antwoorden — "Dear Sir/Madam," én afleider "To Whom It May Concern /
+Dear Sir/Madam (British)". Afleider vervangen door "Dear Mr Smith," (zuiver
+fout bij onbekende naam; toetst de bekend/onbekend-regel uit de uitleg).
+SW v171.
