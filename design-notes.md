@@ -246,3 +246,21 @@ auto-strip sloeg ze over vanwege datums/leestekens):
 3. "De Holocaust (1941–1945): industriële massamoord…" → "De Holocaust
    (1941–1945)" (parallel met "De Armeense genocide (1915)").
 Volledige uitleg blijft in u:. SW v163.
+
+## Pass 11 — Jaartallen uit antwoordopties (verklappers weg)
+
+Gebruiker: jaartal tussen haakjes in een antwoord verraadt soms de hele vraag.
+Strip pure jaartal-haakjes uit ALLEEN de antwoordopties (o:[]); v:/u:/sam/ctx
+onaangeroerd → jaartallen blijven in vraag, uitleg en samenvatting.
+
+Regel: verwijder (jaar) / (jaar–jaar) / (opgericht jaar) / (jaar–heden) /
+(… v.C.). Vangnet: skip als optie leeg/dubbel wordt (jaartal = onderscheid).
+Eerst dry-run → ontdekte scope-creep: globale " ,"/" :"-opschoning raakte ook
+een Wiskunde B-coördinaat en 2 NL-opties → die opschoning verwijderd, alleen
+dubbele-spatie/randen. Tweede dry-run schoon.
+
+Toegepast: 8 vragen, 26 jaartallen (Geschiedenis HAVO 6, VWO Geschiedenis 1,
+VWO Duits 1). Bv. "De Berlijnse Muur (1961–1989)" → "De Berlijnse Muur";
+"Oktoberrevolutie (1917): Bolsjewieken…" → "Oktoberrevolutie: Bolsjewieken…".
+Geverifieerd: ()-paren −26/−26, uitleg behoudt jaartallen, wiskundenotatie
+onaangeroerd, geen dubbele opties. SW v164.
