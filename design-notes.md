@@ -507,6 +507,22 @@ wetenschappelijke notatie, significantieregels, soorten verbanden,
 coördinatentransformatie en onderzoek-/ontwerpcyclus. Gerenderd geverifieerd
 (7 secties, 20 li, superscripts/√/Δ/µ intact). SW v177. B–E volgen na akkoord.
 
+## Pass 24 — Natuurkunde samenvattingen volledig (SAM_RICH na_A..na_E)
+
+Gebruiker wil "een stuk uitgebreider". App heeft daarvoor al `SAM_RICH`
+(data.js) dat `d.sam` overschrijft en in de collapsible Theorie-pane rendert met
+leesvoortgang — rijke opmaak-klassen: sam-formula-box (label/eq/note), sam-table,
+sam-compare, sam-tip/warn, sam-steps. Alle natuurkunde-domeinen als uitgebreide
+SAM_RICH-entries (eigen woorden, formules in eigen box met variabeldefinities):
+- **na_A** Vaardigheden, **na_B** Golven (trillingen/golven/staande golven),
+  **na_C** Beweging+kracht+energie+warmte+gravitatie (11 secties, 20 formuleboxen),
+  **na_D** Lading en veld (elektriciteit, serie/parallel-compare),
+  **na_E** Straling en materie (EM-spectrum, fotonen, verval, dosis).
+Bronfouten gecorrigeerd: Planck h in J·s (doc: J/s), tan = overstaand/aanliggend
+(doc omgekeerd), Ek-rekenvoorbeeld 27,8 i.p.v. 278 (niet overgenomen).
+Alle 5 gerenderd geverifieerd (sub-tags gebalanceerd, formuleboxen/tabellen/
+compare intact, sleutelformules aanwezig). SW v179.
+
 ## Pass 23 — Samenvattingen: systematische scan + parity-fix
 
 **Scan over alle 112 sam-velden (HAVO + VWO)** via Python: HTML-tagbalans,
