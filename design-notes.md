@@ -554,6 +554,16 @@ Gerenderd geverifieerd: data.js parse-OK, gs_B 10 secties/3 tabellen/108
 begrippen, 108 flashcards live. SW v181. De 3 contexten (Brits Rijk, Duitsland,
 Nederland) nog niet verwerkt — optioneel vervolg.
 
+## Pass 27 — Historische contexten toegevoegd aan gs_B (SW v182)
+
+De 3 HAVO-contexten uit geschiedenis.docx (ch12–14) toegevoegd als extra secties
+in gs_B (CE-domein B): Het Britse Rijk (1585–1900), Duitsland 1918–1991,
+Nederland 1948–2008. Elk een inklapbare sectie met kernbegrippen. Eén regel
+opgebouwd (les van pass 26: geen rauwe newlines in de JS-string). gs_B nu 13
+secties; flashcards ~166. Gerenderd geverifieerd: data.js parse-OK (new Function),
+geen newline, 13 sam-heads. Geschiedenis CE-stof nu compleet (tijdvakken +
+contexten).
+
 ## Pass 23 — Samenvattingen: systematische scan + parity-fix
 
 **Scan over alle 112 sam-velden (HAVO + VWO)** via Python: HTML-tagbalans,
