@@ -136,7 +136,7 @@ function openVak(id,_noHash){
     const _pbData=getPB(ST.vak.id,d.id);
     const pbChip=_pbData?`<span class="pb-chip">⭐ PB: ${Math.round(_pbData.score*100)}%</span>`:'';
     const progHtml=r.hasData?`<div class="dom-progress"><div class="dp-bar"><div class="dp-fill" style="width:${Math.round(r.pct*100)}%"></div></div><span class="dp-txt">${Math.round(r.pct*100)}%${bestChip}${pbChip}</span></div>`:'';
-    const _ceMap={'CE':{cls:'CE',icon:'📝',txt:'Centraal Examen'},'SE':{cls:'SE',icon:'📋',txt:'Schoolexamen'},'CE+SE':{cls:'CESE',icon:'📝📋',txt:'CE + Schoolexamen'},'DEELS CE':{cls:'DEELS',icon:'📝',txt:'Deels CE'}};
+    const _ceMap={'CE':{cls:'CE',icon:'📝',txt:'Centraal Examen'},'SE':{cls:'SE',icon:'📋',txt:'Schoolexamen'},'CE+SE':{cls:'CESE',icon:'📝📋',txt:'CE + Schoolexamen'},'DEELS CE':{cls:'DEELS',icon:'📝',txt:'Deels CE'},'CE-KERN':{cls:'CE',icon:'⭐',txt:'Kern van het CE'}};
     const _csInfo=d.ceStatus&&_ceMap[d.ceStatus];
     const csBadge=_csInfo?`<div class="dom-ce-badge dom-ce-${_csInfo.cls}">${_csInfo.icon} ${_csInfo.txt}</div>`:'';
     const el=document.createElement('div');

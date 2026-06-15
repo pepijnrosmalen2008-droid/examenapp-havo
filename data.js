@@ -1699,7 +1699,7 @@ youtubeKanaal:'EngelsAcademie (15K+)',youtubeUrl:'https://youtube.com/@EngelsAca
 
 {id:'gs',naam:'Geschiedenis',code:'GS',kleur:'#92400E',
  beschrijving:'Historisch overzicht en historische contexten op HAVO-niveau.',
- ceInfo:'CE = domein A (Historisch besef: A1–A7) en domein B (Oriëntatiekennis: tijdvakken B5–B10). Domeinen C, D en E zijn uitsluitend SE.',
+ ceInfo:'⭐ Domein B (Oriëntatiekennis — de tien tijdvakken) is veruit het belangrijkste voor het centraal examen: dáár gaat het CE vooral over, dus besteed hier de meeste oefentijd aan. Domein A (Historisch besef) levert de denkvaardigheden en bronnenkennis die je daarbij toepast. De domeinen C, D en E zijn uitsluitend schoolexamen (SE).',
 exDatum:'2026-05-12',exTijd:'09:00–12:00',exDuur:'3 uur',
 hulpmiddelen:'Basispakket',
 youtubeKanaal:'JORTgeschiedenis (66K+)',youtubeUrl:'https://youtube.com/@JORTgeschiedenis',
@@ -1729,8 +1729,8 @@ youtubeKanaal:'JORTgeschiedenis (66K+)',youtubeUrl:'https://youtube.com/@JORTges
 {bron:'Kaart',ctx:'Kaart-beschrijving: \'Europa tijdens de Franse Revolutie en Napoleontische oorlogen. Frankrijk is donkerblauw, bondgenoten lichtblauw en vijanden rood gemarkeerd. Pijlen tonen de verspreiding van Franse legers tussen 1792 en 1812.\'',v:'Leg uit waarom de Franse Revolutie wordt gezien als een breukmoment in de Europese politieke geschiedenis.',o:[''],c:0,u:'De Franse Revolutie maakte een einde aan het absolutisme en introduceerde ideeën over vrijheid en gelijkheid. Deze ideeën verspreidden zich door Europa via oorlogen en hervormingen. Veel landen namen later grondwetten en burgerrechten over. Hierdoor veranderde de politieke structuur van Europa blijvend. De Revolutie vormde de basis voor moderne democratische principes.'},
 {bron:'Artikel',ctx:'Na 1945 ontstond in Afrika een krachtige dekolonisatiebeweging. Europese landen waren economisch verzwakt door de oorlog en konden hun kolonies niet langer effectief besturen. In veel Afrikaanse gebieden groeiden nationalistische bewegingen die streefden naar zelfbeschikking en onafhankelijkheid. Ghana werd in 1957 het eerste Afrikaanse land dat onafhankelijk werd, gevolgd door tientallen andere landen in de jaren zestig. De onafhankelijkheidsprocessen verliepen niet overal vreedzaam: in Algerije en Kenia leidde verzet tot bloedige conflicten. Internationale organisaties zoals de Verenigde Naties ondersteunden het recht op onafhankelijkheid, wat de beweging verder versterkte. De dekolonisatie veranderde de wereldkaart ingrijpend en leidde tot de vorming van nieuwe staten met eigen politieke systemen.',v:'Leg uit hoe de Tweede Wereldoorlog heeft bijgedragen aan de dekolonisatiegolf na 1945.',o:[''],c:0,u:'Europese koloniale machten waren na de oorlog economisch en militair verzwakt. Hierdoor konden zij hun kolonies minder goed controleren. Tegelijk groeiden nationalistische bewegingen die onafhankelijkheid eisten. De VS en de VN steunden het principe van zelfbeschikking. Hierdoor konden veel Afrikaanse landen in korte tijd onafhankelijk worden.'}
    ]},
-  {id:'B',naam:'Oriëntatiekennis',beschrijving:'Tien tijdvakken van de westerse geschiedenis — tijdvakken B5–B10 zijn CE-stof',
-   ceStatus:'DEELS CE',
+  {id:'B',naam:'Oriëntatiekennis',beschrijving:'⭐ Veruit het belangrijkste domein voor het centraal examen. De tien tijdvakken van de westerse geschiedenis vormen de kern van de CE-stof — besteed hier de meeste oefentijd aan.',
+   ceStatus:'CE-KERN',
    binas:[],
    val:['Tijdvakken door elkaar halen — leer naam, tijdgrens én kenmerkend aspect per tijdvak','Tijdvakken 1–4 studeren voor het CE — die zijn alleen SE-stof','Periodisering als vaststaand feit zien — het is een bewuste keuze van historici'],
    onderwerpen:['B1 Tijdvak 1','B2 Tijdvak 2','B3 Tijdvak 3','B4 Tijdvak 4','B5 Tijdvak 5','B6 Tijdvak 6','B7 Tijdvak 7','B8 Tijdvak 8','B9 Tijdvak 9','B10 Tijdvak 10'],
