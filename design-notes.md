@@ -487,6 +487,26 @@ SW v175.
 WisA, WisB, EN, EC, AK, BECO, MW). Vakken fundamenteel correct; fixes vooral
 kwaliteit (giveaways, typo's, notatie) met enkele echte fouten per vak.
 
+## Pass 23 — Samenvattingen: Natuurkunde HAVO (bron-materiaal verwerkt)
+
+Gebruiker levert per-vak samenvattingen aan (eigen/methode-materiaal). Aanpak:
+gebruik als bron, **herschrijf volledig in eigen woorden** (auteursrecht — niet
+licht parafraseren maar substantieel anders + korter), verdeel over de
+CE-domeinen, in de bestaande sam-section/HTML-opmaak. Formules in BiNaS-notatie
+(superscripts, ·, √, Δ) zoals de rest van Natuurkunde.
+
+Bron-docx (natuurkunde.docx, 628 alinea's) bevat Word-vergelijkingen (OMML) die
+platte-tekst-extractie mist → eigen OMML→tekst converter geschreven (_omml.py)
+om formules inline te krijgen. Mapping doc-hoofdstukken → domeinen: H1→A;
+H2.1-2.3→B (golven); H2.4-2.8→E (straling); H3+H5→C (beweging/kracht/energie/
+gravitatie); H6→D (elektriciteit). Bronfout gevonden (constante van Planck als
+J/s i.p.v. J·s) — in herschrijving gecorrigeerd.
+
+**Domein A vervangen** (calibratie): nieuwe sam met SI-basiseenheden,
+wetenschappelijke notatie, significantieregels, soorten verbanden,
+coördinatentransformatie en onderzoek-/ontwerpcyclus. Gerenderd geverifieerd
+(7 secties, 20 li, superscripts/√/Δ/µ intact). SW v177. B–E volgen na akkoord.
+
 ## Pass 23 — Samenvattingen: systematische scan + parity-fix
 
 **Scan over alle 112 sam-velden (HAVO + VWO)** via Python: HTML-tagbalans,
