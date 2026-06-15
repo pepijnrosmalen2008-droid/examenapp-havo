@@ -536,6 +536,24 @@ Resultaat Natuurkunde: ~120 kaarten (A26/B11/C41/D17/E25). Bonus: verrijkt ook
 flashcards van vakken met formuleboxen/tabellen (wa_B, ec_B, gs_A, nl_A, nl_E,
 bi_A). Logica geverifieerd via standalone parse op SAM_RICH. SW v180.
 
+## Pass 26 — Samenvatting + flashcards Geschiedenis (domein B, tijdvakken)
+
+Bron: geschiedenis.docx (757 alinea's, alle 10 tijdvakken + 3 historische
+contexten). CE-stof zit in domein B (Oriëntatiekennis = de 10 tijdvakken);
+domein A had al gs_A (tijdvakkentabel + denkvaardigheden). Nieuw: SAM_RICH['gs_B']
+= 10 tijdvakken, elk een inklapbare sectie met kernbegrippen (<li><strong>) en
+3 tabellen (bestuursvormen, politieke stromingen, totalitaire ideologieën). In
+eigen woorden, gecondenseerd (auteursrecht). Levert ~120 flashcards (108
+begrippen + 12 tabelrijen via de nieuwe parser).
+
+LES: een meerregelige Python-string ('''...''') direct in een JS single-quoted
+string zetten gaf letterlijke newlines = JS-syntaxfout (data.js brak). Opgelost
+door de waarde tot één regel te collapsen (re.sub whitespace). Niet gecommit in
+gebroken staat. Voortaan SAM_RICH-HTML als één regel opbouwen (geen rauwe \n).
+Gerenderd geverifieerd: data.js parse-OK, gs_B 10 secties/3 tabellen/108
+begrippen, 108 flashcards live. SW v181. De 3 contexten (Brits Rijk, Duitsland,
+Nederland) nog niet verwerkt — optioneel vervolg.
+
 ## Pass 23 — Samenvattingen: systematische scan + parity-fix
 
 **Scan over alle 112 sam-velden (HAVO + VWO)** via Python: HTML-tagbalans,
