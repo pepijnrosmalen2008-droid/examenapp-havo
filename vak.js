@@ -630,6 +630,7 @@ function toggleD(id){
 // ═══════ QUIZ DRAFT (crash recovery) ═══════
 const QUIZ_DRAFT_KEY='slagio_quiz_draft';
 function saveQuizDraft(){
+  if(ST.adaptive)return;
   if(!ST.vragen.length||!ST.vak||!ST.domein||ST.idx<=0)return;
   try{
     localStorage.setItem(QUIZ_DRAFT_KEY,JSON.stringify({
@@ -945,6 +946,47 @@ function aqpResetDomain(vakId,domeinId){
   aqpSave(d);
   showToast('Adaptieve voortgang gewist');
   renderAdaptiveResults();
+}
+// ── ADAPTIEVE MOEILIJKHEID (staircase binnen één sessie) ─────────────
+// Schat de moeilijkheid van een meerkeuzevraag in: 1=makkelijk, 2=gemiddeld, 3=moeilijk.
+function qDiff(q){
+  var v=(q&&q.v)||'', t=v+' '+(((q&&q.o)||[]).join(' '));
+  var s=2;
+  if(/welke formule|met de juiste|hoeveel|wat is de waarde|welk verband/i.test(v))s++;
+  if(/[·²³√Δ]|10[⁻⁰¹²³⁴⁵⁶⁷⁸⁹]|\d+[.,]\d/.test(t))s++;
+  if(v.length>120)s++;
+  if(/^wat is een |^wat betekent |^wat is de eenheid|^welke eenheid|^wat is de afkorting/i.test(v))s--;
+  if(v.length<48)s--;
+  return Math.max(1,Math.min(3,s));
+}
+// Zet adaptieve sessie op. Buckets per niveau, gesorteerd op AQP-gewicht (zwakke/onbekende eerst).
+function aqSetupAdaptive(pool,vakId,domeinId,target){
+  if(!pool||pool.length<target)return false;
+  var buckets={1:[],2:[],3:[]};
+  pool.forEach(function(q){buckets[qDiff(q)].push(q);});
+  if([1,2,3].filter(function(l){return buckets[l].length>0;}).length<2)return false;
+  var d=aqpGet(),dom=aqpDomainData(d,vakId,domeinId);
+  [1,2,3].forEach(function(l){
+    buckets[l]=buckets[l].map(function(q){return {q:q,k:Math.pow(Math.random(),1/Math.max(0.01,aqpWeight(dom[aqpQKey(q)])))};})
+      .sort(function(a,b){return b.k-a.k;}).map(function(x){return x.q;});
+  });
+  ST.adaptive=true;ST.aqTarget=target;ST.aqLevel=2;ST.aqBuckets=buckets;ST.aqUsed=new Set();
+  ST.vragen=[];ST.shuffleMaps=[];
+  return aqFill();
+}
+// Voeg de volgende vraag toe op het huidige niveau (val terug op naburig niveau).
+function aqFill(){
+  if(!ST.adaptive||ST.vragen.length>=ST.aqTarget)return false;
+  var lvl=ST.aqLevel,order=[lvl,lvl-1,lvl+1,lvl-2,lvl+2],pick=null;
+  for(var i=0;i<order.length&&!pick;i++){
+    var b=ST.aqBuckets[order[i]];if(!b)continue;
+    for(var j=0;j<b.length;j++){if(!ST.aqUsed.has(b[j])){pick=b[j];break;}}
+  }
+  if(!pick)return false;
+  ST.aqUsed.add(pick);ST.vragen.push(pick);
+  var m=[0,1,2,3];for(var i=3;i>0;i--){var k=Math.floor(Math.random()*(i+1));var tmp=m[i];m[i]=m[k];m[k]=tmp;}
+  ST.shuffleMaps.push(m);
+  return true;
 }
 function renderAdaptiveResults(){
   const wrap=document.getElementById('adaptive-res-wrap');

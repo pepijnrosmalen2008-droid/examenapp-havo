@@ -35,23 +35,25 @@ function startQ(mode){
   ST.mode=mode;
   ST.idx=0;ST.score=0;ST.antwrd=[];ST.tijdPerVraag=[];ST.combo=0;ST.xpThisRound=0;ST.flagged=new Set();
   if(!ST.isDailyChallenge)ST.isDailyChallenge=false;
+  ST.adaptive=false;
   const pool=mode==='snel'?ST.domein.sv:ST.domein.oe;
   if(mode==='snel'){
     const _calcRe=/\bbereken\b/i;
     const filteredPool=pool.filter(q=>!_calcRe.test(q.v));
     const snelPool=filteredPool.length>=5?filteredPool:pool;
-    ST.vragen=aqpSelectQuestions(snelPool,ST.vak.id,ST.domein.id,10);
+    // Adaptieve staircase (10 vragen, goed→moeilijker, fout→makkelijker); val terug op AQP-selectie.
+    if(!aqSetupAdaptive(snelPool,ST.vak.id,ST.domein.id,10)){
+      ST.vragen=aqpSelectQuestions(snelPool,ST.vak.id,ST.domein.id,10);
+      ST.shuffleMaps=ST.vragen.map(()=>{
+        const m=[0,1,2,3];
+        for(let i=3;i>0;i--){const j=Math.floor(Math.random()*(i+1));[m[i],m[j]]=[m[j],m[i]];}
+        return m;
+      });
+    }
   }else{
     ST.vragen=pool.slice();
+    ST.shuffleMaps=[];
   }
-  // Pre-compute shuffle maps voor alle vragen in één keer (niet per vraag)
-  if(mode==='snel'){
-    ST.shuffleMaps=ST.vragen.map(()=>{
-      const m=[0,1,2,3];
-      for(let i=3;i>0;i--){const j=Math.floor(Math.random()*(i+1));[m[i],m[j]]=[m[j],m[i]];}
-      return m;
-    });
-  }else{ST.shuffleMaps=[];}
   document.getElementById('qmeta').textContent=`${ST.vak.naam} · D${ST.domein.id}: ${ST.domein.naam} · ${mode==='snel'?'Snelle Quiz':'Oud-examen'}`;
   document.getElementById('sc-quiz').classList.toggle('oud-mode',mode==='oud');
   show('sc-quiz');
@@ -152,7 +154,7 @@ function toggleFlagQ(){
 }
 function toonV(){
   const q=ST.vragen[ST.idx];
-  const tot=ST.vragen.length;
+  const tot=ST.adaptive?ST.aqTarget:ST.vragen.length;
   ST._vraagStartMs=Date.now(); // starttijd voor responstijd-meting
 
   // Vlag-knop bijwerken
@@ -165,7 +167,8 @@ function toonV(){
   const _adaptPill=document.getElementById('adaptive-pill');
   if(_adaptPill)_adaptPill.style.display=Object.values(_aqpdom).some(e=>e.n>0)?'inline-flex':'none';
 
-  document.getElementById('qctr').textContent=`Vraag ${ST.idx+1} van ${tot}`;
+  const _dl=ST.adaptive&&typeof qDiff==='function'?['','Makkelijk','Gemiddeld','Moeilijk'][qDiff(q)]:'';
+  document.getElementById('qctr').textContent=`Vraag ${ST.idx+1} van ${tot}`+(_dl?` · ${_dl}`:'');
   document.getElementById('qprog').style.width=`${(ST.idx/tot)*100}%`;
   document.getElementById('qfb').style.display='none';
   document.getElementById('qnxt').style.display='none';
@@ -295,6 +298,7 @@ function kies(gekozen,correct){
 function _kiesReveal(gekozen,correct,btns){
   btns[gekozen].classList.remove('suspense-pending');
   const ok=gekozen===correct;
+  if(ST.adaptive)ST.aqLevel=ok?Math.min(3,ST.aqLevel+1):Math.max(1,ST.aqLevel-1);
   ST.score+=ok?1:0;
   // Log per-vraag data voor adaptive engine
   try{const ms=ST._vraagStartMs?Date.now()-ST._vraagStartMs:null;logQuestion(ST.vak?.id,ST.domein?.id,ST.mode,ST.idx,ok,ms);}catch(e){}
@@ -349,11 +353,12 @@ function _kiesReveal(gekozen,correct,btns){
   }
   const nxt=document.getElementById('qnxt');
   nxt.style.display='block';
-  nxt.textContent=ST.idx<ST.vragen.length-1?'Volgende →':'Bekijk resultaat →';
+  nxt.textContent=ST.idx<((ST.adaptive?ST.aqTarget:ST.vragen.length)-1)?'Volgende →':'Bekijk resultaat →';
 }
 
 function tijdOp(){
   const q=ST.vragen[ST.idx];
+  if(ST.adaptive)ST.aqLevel=Math.max(1,ST.aqLevel-1);
   ST.tijdPerVraag.push(0);
   aqpRecord(ST.vragen[ST.idx], 0);
   ST.antwrd.push({pts:0,chosenText:'⏱ Tijd was op',tijdOver:0});
@@ -367,7 +372,7 @@ function tijdOp(){
   fb.innerHTML=`<div class="fbt">⏱ Tijd is om!</div><div class="fbtx">${q.u}</div>`;
   const nxt=document.getElementById('qnxt');
   nxt.style.display='block';
-  nxt.textContent=ST.idx<ST.vragen.length-1?'Volgende →':'Bekijk resultaat →';
+  nxt.textContent=ST.idx<((ST.adaptive?ST.aqTarget:ST.vragen.length)-1)?'Volgende →':'Bekijk resultaat →';
 }
 
 function nakijken(){
@@ -395,6 +400,10 @@ function beoordeel(pts){
 
 function nextQ(){
   ST.idx++;
+  if(ST.adaptive){
+    if(ST.idx>=ST.aqTarget||(!ST.vragen[ST.idx]&&!aqFill())){toonRes();return;}
+    toonV();return;
+  }
   if(ST.idx>=ST.vragen.length)toonRes();
   else toonV();
 }
