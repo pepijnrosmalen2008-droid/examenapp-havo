@@ -606,3 +606,15 @@ niveaus of <10 vragen), toonV toont niveau-label + aqTarget, nextQ lazy, draft u
 voor adaptieve sessies. Algoritme geverifieerd op echte data: alleGoed
 2→3 (tot harde bucket op is, dan terug naar 2), alleFout 2→1, altijd 10 uniek.
 Koppelt aan oefenvolume: meer (en moeilijker) vragen = betere staircase.
+
+## Pass 30 — Verklap-balanceer-pass natuurkunde + geschiedenis (SW v188)
+
+Metingscriterium: juist antwoord is uniek de langste optie én ≥8 tekens langer
+dan de op-een-na-langste = "verklap" (giveaway tell; de engine husselt posities
+maar niet de lengte). Gemeten verklap-% vóór: natuurkunde 31%, geschiedenis 51%
+(rest van Slagio nog erger: eco 79%, mw 81%). Pass: afleiders qua lengte
+gelijkgetrokken / juiste antwoord ingekort (detail staat al in u), correct-index
+ongewijzigd, géén nieuwe vragen. NA 44→0, GS 42→0 verklap-vragen. Geverifieerd:
+data.js valide, 141/82 sv onveranderd, 0 kapotte opties, 0 dubbele opties binnen
+een vraag. Let op: "interpoleren/extrapoleren" bestaat ook in wiskunde A (1e
+occurrence) — per-vak scopen bij dit soort fixes. Memory: feedback_answer_option_length.
