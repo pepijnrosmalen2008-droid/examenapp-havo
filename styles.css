@@ -709,6 +709,14 @@ html.dark .qb{background:#2e3550}
 .sam-chips{display:flex;flex-wrap:wrap;gap:6px;margin:7px 0 11px;align-items:center}
 .sam-chip{background:rgba(var(--or-rgb),.10);border:1px solid rgba(var(--or-rgb),.30);color:var(--or);border-radius:20px;padding:3px 10px;font-size:11px;font-weight:700;line-height:1.35}
 .sam-chip-lead{background:var(--or);border-color:var(--or);color:#fff;text-transform:uppercase;font-size:9.5px;letter-spacing:.4px}
+/* ── Sam: uitgewerkte voorbeeldopgave ── */
+.sam-worked{background:rgba(var(--or-rgb),.05);border:1.5px solid rgba(var(--or-rgb),.28);border-radius:12px;padding:12px 14px;margin:14px 0}
+.sam-worked-h{font-size:10.5px;font-weight:800;text-transform:uppercase;letter-spacing:.5px;color:var(--or);margin-bottom:7px}
+.sam-worked-q{font-size:12.5px;font-style:italic;color:var(--dk);background:var(--bg2);border-radius:8px;padding:8px 11px;margin-bottom:9px;line-height:1.5}
+.sam-worked-steps{margin:0;padding:0;list-style:none;counter-reset:ws}
+.sam-worked-steps li{counter-increment:ws;position:relative;padding:5px 0 5px 28px;font-size:12.5px;line-height:1.55;color:var(--dk);border:none}
+.sam-worked-steps li::before{content:counter(ws);position:absolute;left:0;top:4px;width:19px;height:19px;background:var(--or);color:#fff;border-radius:50%;font-size:10.5px;font-weight:800;text-align:center;line-height:19px}
+.sam-worked-ans{margin-top:9px;font-size:12.5px;font-weight:700;color:var(--or);border-top:1px dashed rgba(var(--or-rgb),.32);padding-top:8px}
 /* ── Sam: CE-spotlight ── */
 .sam-ce-spot{background:rgba(var(--or-rgb),.06);border:1.5px solid rgba(var(--or-rgb),.3);border-radius:10px;padding:11px 14px;margin:12px 0 6px}
 .sam-ce-spot::before{content:'🎯 Zo wordt dit gevraagd op het CE';font-weight:800;color:var(--or);font-size:10px;display:block;margin-bottom:6px;text-transform:uppercase;letter-spacing:.6px}
