@@ -9,3 +9,8 @@ Thumbs.db
 # Editor
 .vscode/
 *.swp
+
+_imgtest/
+_figtest.html
+_*.txt
+_*.py
