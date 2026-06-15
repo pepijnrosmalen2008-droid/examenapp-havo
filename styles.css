@@ -2146,11 +2146,11 @@ html.dark .calc-btn{background:#2e3550}
 .sam ul li{padding:5px 0 5px 16px;position:relative;font-size:13.5px;line-height:1.6;border-bottom:1px solid rgba(0,0,0,.06)}
 .sam ul li:last-child{border-bottom:none}
 .sam ul li::before{content:'›';position:absolute;left:0;color:var(--or);font-weight:800;font-size:15px;line-height:1.45}
-.sam .sam-head{font-size:10.5px;font-weight:800;color:var(--mu);text-transform:uppercase;letter-spacing:.8px;margin:14px 0 3px;padding-top:12px;border-top:1px solid var(--bo)}
+.sam .sam-head{font-size:14px;font-weight:800;color:var(--or);text-transform:none;letter-spacing:-.1px;margin:18px 0 7px;padding-top:15px;border-top:1.5px solid var(--bo)}
 .sam .sam-head:first-child{margin-top:0;padding-top:0;border-top:none}
 /* ── SAM-HEAD COLLAPSIBLE ────────────────────────── */
 .sam .sam-head{cursor:pointer;user-select:none;display:flex;align-items:center;justify-content:space-between;gap:6px}
-.sam .sam-head::after{content:'▾';font-size:11px;opacity:.45;flex-shrink:0;transition:transform .22s ease}
+.sam .sam-head::after{content:'▾';font-size:13px;opacity:.5;flex-shrink:0;transition:transform .22s ease}
 .sam .sam-head.sh-collapsed::after{transform:rotate(-90deg)}
 .sam .sam-ul-hidden{display:none}
 .sam .sam-section{margin-bottom:14px}
