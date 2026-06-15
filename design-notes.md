@@ -583,3 +583,13 @@ woordherhaling, komma-zonder-spatie).
 zustertalen Duits (51w) en Frans (53w) — de items **Auteurs** en **Stromingen**.
 Aangevuld op parity: Shakespeare/Austen/Dickens/Orwell/Woolf + Renaissance→
 Postmodernism, met behoud van het unieke Poëzie-analyse-item. SW v176.
+
+## Pass 28 — Oefenvolume opkrikken: Natuurkunde (SW v184)
+
+Kritische review: mediaan ~13 quizvragen per domein = te dun. Gebruiker koos
+"oefenvolume opkrikken". Ik genereer de vragen zelf, gegrond in de rijke
+samenvattingen, en audit op formaat/correctheid/duplicaten/giveaway-tells. Engine
+husselt opties (shuffleMaps in quiz.js) → c:0 veilig (geen positie-giveaway),
+lengte-symmetrie blijft nodig. Natuurkunde verdubbeld: A 10→25, B/C/D/E elk
+14→29 (66→141). Nieuwe vragen dekken onderbelichte stof per domein. Gerenderd
+geverifieerd (new Function): valide, 0 formaatproblemen, 0 duplicaten.
