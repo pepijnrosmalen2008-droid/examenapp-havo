@@ -593,3 +593,16 @@ husselt opties (shuffleMaps in quiz.js) → c:0 veilig (geen positie-giveaway),
 lengte-symmetrie blijft nodig. Natuurkunde verdubbeld: A 10→25, B/C/D/E elk
 14→29 (66→141). Nieuwe vragen dekken onderbelichte stof per domein. Gerenderd
 geverifieerd (new Function): valide, 0 formaatproblemen, 0 duplicaten.
+
+## Pass 29 — Adaptief leren: difficulty-staircase in de snelle quiz (SW v185)
+
+Bestond al: AQP weegt vragen op wat je persoonlijk fout doet (cross-sessie). Nieuw:
+binnen-sessie staircase op moeilijkheid. qDiff() schat 1/2/3 in via heuristiek
+(formule/getal/lengte omhoog; "wat is een…"/kort omlaag) — runtime, geen
+datawijziging. aqSetupAdaptive() buckt de pool per niveau (binnen niveau nog
+AQP-weging), start op 2; correct→+1, fout/timeout→−1 (clamp 1..3); aqFill() vult
+lazy bij tot 10. Wiring in quiz.js: startQ (val terug op AQP-selectie bij <2
+niveaus of <10 vragen), toonV toont niveau-label + aqTarget, nextQ lazy, draft uit
+voor adaptieve sessies. Algoritme geverifieerd op echte data: alleGoed
+2→3 (tot harde bucket op is, dan terug naar 2), alleFout 2→1, altijd 10 uniek.
+Koppelt aan oefenvolume: meer (en moeilijker) vragen = betere staircase.
