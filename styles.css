@@ -705,6 +705,10 @@ html.dark .qb{background:#2e3550}
 .sam-figure svg text{font-family:var(--font,system-ui,sans-serif)}
 .sam-figcap{font-size:11px;color:var(--mu);margin-top:9px;line-height:1.5;text-align:center}
 .sam-figcap strong{color:var(--dk)}
+/* ── Sam: kenmerkend-aspect chips ── */
+.sam-chips{display:flex;flex-wrap:wrap;gap:6px;margin:7px 0 11px;align-items:center}
+.sam-chip{background:rgba(var(--or-rgb),.10);border:1px solid rgba(var(--or-rgb),.30);color:var(--or);border-radius:20px;padding:3px 10px;font-size:11px;font-weight:700;line-height:1.35}
+.sam-chip-lead{background:var(--or);border-color:var(--or);color:#fff;text-transform:uppercase;font-size:9.5px;letter-spacing:.4px}
 /* ── Sam: CE-spotlight ── */
 .sam-ce-spot{background:rgba(var(--or-rgb),.06);border:1.5px solid rgba(var(--or-rgb),.3);border-radius:10px;padding:11px 14px;margin:12px 0 6px}
 .sam-ce-spot::before{content:'🎯 Zo wordt dit gevraagd op het CE';font-weight:800;color:var(--or);font-size:10px;display:block;margin-bottom:6px;text-transform:uppercase;letter-spacing:.6px}
