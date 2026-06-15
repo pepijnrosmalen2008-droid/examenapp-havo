@@ -523,6 +523,19 @@ Bronfouten gecorrigeerd: Planck h in J·s (doc: J/s), tan = overstaand/aanliggen
 Alle 5 gerenderd geverifieerd (sub-tags gebalanceerd, formuleboxen/tabellen/
 compare intact, sleutelformules aanwezig). SW v179.
 
+## Pass 25 — Flashcards uit rijke samenvattingen (schedule.js)
+
+Flashcards werden auto-gegenereerd door `_parseSamCards` uit `d.sam` (alleen
+`<li><strong>term</strong>: def`). Twee aanpassingen zodat de rijke samenvattingen
+óók flashcards voeden:
+1. `startFlash` leest nu `SAM_RICH[vak_dom] || d.sam` als bron.
+2. `_parseSamCards` haalt nu ook kaarten uit **formuleboxen** (voorkant = label,
+   achterkant = vergelijking + uitleg, eq als innerHTML zodat sub/sup rendert) en
+   uit **tabelrijen** (eerste cel = voorkant, rest = achterkant).
+Resultaat Natuurkunde: ~120 kaarten (A26/B11/C41/D17/E25). Bonus: verrijkt ook
+flashcards van vakken met formuleboxen/tabellen (wa_B, ec_B, gs_A, nl_A, nl_E,
+bi_A). Logica geverifieerd via standalone parse op SAM_RICH. SW v180.
+
 ## Pass 23 — Samenvattingen: systematische scan + parity-fix
 
 **Scan over alle 112 sam-velden (HAVO + VWO)** via Python: HTML-tagbalans,

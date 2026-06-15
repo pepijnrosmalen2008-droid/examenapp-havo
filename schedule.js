@@ -433,6 +433,27 @@ function _parseSamCards(html){
     if(def.length>220)def=def.slice(0,220).replace(/\s\S+$/,'')+'…';
     cards.push({term,def});
   });
+  // Formuleboxen → kaarten (voorkant = naam, achterkant = formule + uitleg)
+  tmp.querySelectorAll('.sam-formula-box').forEach(fb=>{
+    const lab=fb.querySelector('.sam-formula-label');if(!lab)return;
+    const term=lab.textContent.trim();
+    if(!term||term.length<2||term.length>72||seen.has(term))return;
+    const eq=fb.querySelector('.sam-formula-eq'),note=fb.querySelector('.sam-formula-note');
+    let def=eq?eq.innerHTML.trim():'';
+    if(note){let n=note.textContent.trim();if(n.length>180)n=n.slice(0,180).replace(/\s\S+$/,'')+'…';def+=(def?' — ':'')+n;}
+    if(def.replace(/<[^>]+>/g,'').length<3)return;
+    seen.add(term);cards.push({term,def});
+  });
+  // Tabelrijen → kaarten (voorkant = eerste cel, achterkant = overige cellen)
+  tmp.querySelectorAll('.sam-table tbody tr').forEach(tr=>{
+    const tds=[...tr.children];if(tds.length<2)return;
+    const term=tds[0].textContent.trim();
+    if(!term||term.length<2||term.length>72||seen.has(term))return;
+    let def=tds.slice(1).map(td=>td.textContent.trim()).filter(Boolean).join(' — ');
+    if(def.length<2)return;
+    if(def.length>220)def=def.slice(0,220).replace(/\s\S+$/,'')+'…';
+    seen.add(term);cards.push({term,def});
+  });
   return cards;
 }
 
@@ -440,8 +461,9 @@ function startFlash(){
   trackEvent('flashcard',{domein:ST.domein?.naam||null});
   const d=ST.domein,v=ST.vak;
   if(!d||!v)return;
-  // Stap 1: haal term→def paren uit <strong> tags in sam HTML
-  let cards=d.sam?_parseSamCards(d.sam):[];
+  // Stap 1: haal term→def paren uit de (rijke) samenvatting: <strong>, formuleboxen en tabellen
+  const samSrc=(typeof SAM_RICH!=='undefined'&&SAM_RICH[v.id+'_'+d.id])||d.sam;
+  let cards=samSrc?_parseSamCards(samSrc):[];
   // Stap 2: fallback — koppel elke onderwerp aan de meest relevante zin (keyword-matching)
   if(cards.length<3){
     const terms=(d.onderwerpen||[]).filter(t=>t&&t.trim().length>1);
