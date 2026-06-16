@@ -1470,11 +1470,18 @@
 <nav class="nav"><div class="nav-inner"><div class="logo" onclick="show('sc-home')"><img src="/icon-192.png" alt="Slagio" style="width:26px;height:26px;border-radius:7px;object-fit:cover;flex-shrink:0">Slagio</div><button class="bk" onclick="show('sc-home')">← Terug</button><button class="theme-btn" onclick="toggleDark()" title="Nachtmodus" style="margin-left:auto"><svg viewBox="0 0 24 24"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg></button></div></nav>
 <div class="w" style="padding-top:24px">
   <h2 style="font-size:22px;margin-bottom:6px" id="sch-header">Examenrooster HAVO 2026</h2>
-  <p style="font-size:13px;color:var(--mu);margin-bottom:18px">1e tijdvak: 8–27 mei · Normering: 11 juni 08:00 · 2e tijdvak: 16–23 juni</p>
-  <div class="sch-filter">
+  <p style="font-size:13px;color:var(--mu);margin-bottom:18px">1e tijdvak: 8–27 mei · 2e tijdvak: 16–23 juni · 3e tijdvak: 11–20 aug</p>
+  <div class="sch-tabs">
+    <button class="sch-tab on" id="sch-tab-1" onclick="schTab(1)">1e tijdvak</button>
+    <button class="sch-tab" id="sch-tab-2" onclick="schTab(2)">Herkansing</button>
+    <button class="sch-tab" id="sch-tab-3" onclick="schTab(3)">3e tijdvak</button>
+  </div>
+  <div class="sch-filter" id="sch-filter-wrap">
     <label><input type="checkbox" id="sch-filter-mine" class="sch-check" onchange="renderSchedule()"> Alleen mijn vakken</label>
   </div>
+  <div id="sch-tab2-hint" class="sch-tab-hint" style="display:none">Vink de vakken aan die je <strong>herkanst</strong> — de timer telt af naar je eerstvolgende herkansing.</div>
   <div id="schedule-list" class="schedule-list"></div>
+  <div id="sch-tv3" style="display:none"></div>
   <div style="text-align:center;margin-top:20px;padding:16px 0">
     <button class="sp-gen-btn" style="width:100%" onclick="show('sc-studieplan');renderStudieplan()">📅 Naar mijn studieplan →</button>
   </div>

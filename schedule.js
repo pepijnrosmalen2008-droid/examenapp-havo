@@ -76,36 +76,56 @@ const EXAM_SCHEDULE=[
 ];
 function getMijnVakken(){try{const d=JSON.parse(localStorage.getItem('examenapp_'+lvlCol('mijnvakken'))||'[]');return Array.isArray(d)?d:(d.list||[]);}catch(e){return [];}}
 function setMijnVakken(arr){cloudSet(lvlCol('mijnvakken'),{list:arr});try{pushSyncBundle();}catch(e){}}
+let SCH_TAB=1;
+function schTab(n){
+  SCH_TAB=n;
+  for(let i=1;i<=3;i++){const b=document.getElementById('sch-tab-'+i);if(b)b.classList.toggle('on',i===n);}
+  renderSchedule();
+}
+// Herkansing-selectie (2e tijdvak) en 3e-tijdvak-entries
+function getHerkansing(){try{const d=JSON.parse(localStorage.getItem('examenapp_'+lvlCol('herkansing'))||'[]');return Array.isArray(d)?d:(d.list||[]);}catch(e){return [];}}
+function setHerkansing(arr){cloudSet(lvlCol('herkansing'),{list:arr});try{pushSyncBundle();}catch(e){}}
+function toggleHerkansing(id,checked){let m=getHerkansing();if(checked&&!m.includes(id))m.push(id);if(!checked)m=m.filter(v=>v!==id);setHerkansing(m);renderSchedule();updateCountdown();}
+function getTV3(){try{const d=JSON.parse(localStorage.getItem('examenapp_'+lvlCol('tijdvak3'))||'[]');return Array.isArray(d)?d:(d.list||[]);}catch(e){return [];}}
+function setTV3(arr){cloudSet(lvlCol('tijdvak3'),{list:arr});try{pushSyncBundle();}catch(e){}}
 function renderSchedule(){
   const list=document.getElementById('schedule-list');
-  const onlyMine=document.getElementById('sch-filter-mine').checked;
+  if(!list)return;
+  const tv3El=document.getElementById('sch-tv3');
+  const filterWrap=document.getElementById('sch-filter-wrap');
+  const hint=document.getElementById('sch-tab2-hint');
+  const hdr=document.getElementById('sch-header');
+  if(hdr)hdr.textContent='Examenrooster '+APP_LEVEL.toUpperCase()+' 2026';
+  if(SCH_TAB===3){list.style.display='none';if(tv3El)tv3El.style.display='block';if(filterWrap)filterWrap.style.display='none';if(hint)hint.style.display='none';renderTijdvak3();return;}
+  list.style.display='';if(tv3El)tv3El.style.display='none';
+  if(filterWrap)filterWrap.style.display=(SCH_TAB===1?'':'none');
+  if(hint)hint.style.display=(SCH_TAB===2?'block':'none');
+  const onlyMine=SCH_TAB===1&&document.getElementById('sch-filter-mine')?.checked;
   const mijn=getMijnVakken();
+  const herk=getHerkansing();
   list.innerHTML='';
   const now=new Date();
   const dagNamen=['zo','ma','di','wo','do','vr','za'];
   const maandNamen=['jan','feb','mrt','apr','mei','jun','jul','aug','sep','okt','nov','dec'];
-  // Dynamische header
-  const hdr=document.getElementById('sch-header');
-  if(hdr)hdr.textContent='Examenrooster '+APP_LEVEL.toUpperCase()+' 2026';
-  // Vakken van huidig niveau
   const niveauVakIds=new Set(getVK().map(v=>v.id));
-  let _tv2Shown=false;
   EXAM_SCHEDULE.forEach(ex=>{
-    // Verberg als item bij een specifiek ander niveau hoort
     if(ex.niveau&&ex.niveau!==APP_LEVEL)return;
+    if(SCH_TAB===1&&ex.tijdvak)return;
+    if(SCH_TAB===2&&ex.tijdvak!==2)return;
     if(ex.vakId&&!niveauVakIds.has(ex.vakId))return;
     if(onlyMine&&!mijn.includes(ex.vakId||ex.vak))return;
-    if(ex.tijdvak===2&&!_tv2Shown){_tv2Shown=true;list.innerHTML+='<div class="sch-tv-divider">↻ Tweede tijdvak — herkansingen</div>';}
     const d=new Date(ex.datum+'T'+ex.tijd.split('–')[0]+':00+02:00');
     const diff=d-now;
     let cdText='';
     if(diff<=0)cdText='Afgelopen';
     else{const dd=Math.floor(diff/(1000*60*60*24));const hh=Math.floor((diff%(1000*60*60*24))/(1000*60*60));cdText=dd>0?dd+'d '+hh+'u':'< '+hh+' uur';}
-    const isMine=mijn.includes(ex.vakId||ex.vak);
+    const key=ex.vakId||ex.vak;
+    const sel=SCH_TAB===2?herk.includes(key):mijn.includes(key);
+    const fn=SCH_TAB===2?'toggleHerkansing':'toggleMijnVak';
     const dagNaam=dagNamen[d.getDay()];
     const datumStr=dagNaam+' '+d.getDate()+' '+maandNamen[d.getMonth()];
-    list.innerHTML+=`<div class="sch-card${isMine?' sch-mine':''}">
-      <input type="checkbox" class="sch-check" ${isMine?'checked':''} onchange="toggleMijnVak('${ex.vakId||ex.vak}',this.checked)">
+    list.innerHTML+=`<div class="sch-card${sel?' sch-mine':''}">
+      <input type="checkbox" class="sch-check" ${sel?'checked':''} onchange="${fn}('${key}',this.checked)">
       <div class="sch-date">${datumStr}</div>
       <div class="sch-time">${ex.tijd}</div>
       <div class="sch-name">${ex.vak}</div>
@@ -113,7 +133,38 @@ function renderSchedule(){
       <div class="sch-cd">${cdText}</div>
     </div>`;
   });
+  if(!list.innerHTML)list.innerHTML='<p style="color:var(--mu);font-size:13px;padding:14px 2px">Geen examens in dit tijdvak voor jouw niveau.</p>';
 }
+function renderTijdvak3(){
+  const el=document.getElementById('sch-tv3');if(!el)return;
+  const periode=APP_LEVEL==='vwo'?'di 11 t/m wo 19 augustus 2026':'di 11 t/m do 20 augustus 2026';
+  const vakken=getVK();const arr=getTV3();const now=new Date();
+  const dagNamen=['zo','ma','di','wo','do','vr','za'];
+  const maandNamen=['jan','feb','mrt','apr','mei','jun','jul','aug','sep','okt','nov','dec'];
+  const rows=arr.map((e,i)=>{
+    const d=new Date(e.datum+'T'+(e.tijd||'13:30')+':00+02:00');const diff=d-now;
+    const cd=diff<=0?'Afgelopen':(Math.floor(diff/86400000)+'d '+Math.floor(diff%86400000/3600000)+'u');
+    const ds=dagNamen[d.getDay()]+' '+d.getDate()+' '+maandNamen[d.getMonth()];
+    return `<div class="sch-card sch-mine"><div class="sch-date">${ds}</div><div class="sch-time">${e.tijd||'13:30'}</div><div class="sch-name">${e.vak}</div><div class="sch-cd">${cd}</div><button class="tv3-del" onclick="removeTV3(${i})" title="Verwijderen">✕</button></div>`;
+  }).join('');
+  el.innerHTML=`<div class="tv3-info">📌 Het <strong>3e tijdvak</strong> (${periode}) wordt door <strong>DUO</strong> per kandidaat ingepland — er is geen openbaar vakkenrooster. Voer hieronder je eigen datum en tijd in; de timer telt er dan naar af.</div>
+  <div class="tv3-form">
+    <select id="tv3-vak" class="tv3-input">${vakken.map(v=>`<option value="${v.id}">${v.naam}</option>`).join('')}</select>
+    <input type="date" id="tv3-datum" class="tv3-input" min="2026-08-01" max="2026-08-31" value="2026-08-11">
+    <input type="time" id="tv3-tijd" class="tv3-input" value="13:30">
+    <button class="tv3-add" onclick="addTV3()">+ Toevoegen</button>
+  </div>
+  <div class="tv3-list">${rows||'<p style="color:var(--mu);font-size:13px;padding:8px 2px">Nog geen 3e-tijdvak-examen ingevoerd.</p>'}</div>`;
+}
+function addTV3(){
+  const vakSel=document.getElementById('tv3-vak'),dat=document.getElementById('tv3-datum'),tij=document.getElementById('tv3-tijd');
+  if(!vakSel||!dat||!dat.value)return;
+  const v=getVK().find(x=>x.id===vakSel.value);
+  const arr=getTV3();
+  arr.push({vakId:vakSel.value,vak:v?v.naam:vakSel.value,datum:dat.value,tijd:(tij&&tij.value)?tij.value:'13:30'});
+  setTV3(arr);renderTijdvak3();updateCountdown();
+}
+function removeTV3(i){const arr=getTV3();arr.splice(i,1);setTV3(arr);renderTijdvak3();updateCountdown();}
 function toggleMijnVak(id,checked){
   let m=getMijnVakken();
   if(checked&&!m.includes(id))m.push(id);

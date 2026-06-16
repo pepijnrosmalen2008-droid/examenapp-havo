@@ -494,9 +494,23 @@ function _showLbResetPopup(){
 // Returns the earliest upcoming exam relevant to the user (own vakken first, else level fallback)
 function getCountdownTarget(){
   try{
-    const mijn=getMijnVakken();
     const now=new Date();
     const niveauVakIds=new Set(getVK().map(v=>v.id));
+    // Prioriteit: door de leerling gekozen herkansingen (2e tijdvak) + eigen 3e-tijdvak-data
+    const herk=(typeof getHerkansing==='function')?getHerkansing():[];
+    const tv3=(typeof getTV3==='function')?getTV3():[];
+    const sel=[];
+    EXAM_SCHEDULE.forEach(ex=>{
+      if(ex.niveau&&ex.niveau!==APP_LEVEL)return;
+      if(ex.tijdvak===2&&herk.includes(ex.vakId||ex.vak)){
+        sel.push({...ex,dt:new Date(ex.datum+'T'+ex.tijd.split('–')[0]+':00+02:00')});
+      }
+    });
+    tv3.forEach(e=>sel.push({vak:e.vak,vakId:e.vakId,datum:e.datum,tijd:e.tijd||'13:30',duur:'',tijdvak:3,dt:new Date(e.datum+'T'+(e.tijd||'13:30')+':00+02:00')}));
+    const selUp=sel.filter(e=>e.dt>now).sort((a,b)=>a.dt-b.dt);
+    if(selUp.length)return selUp[0];
+    // Fallback: eerstvolgende examen onder 'mijn vakken' (alle tijdvakken)
+    const mijn=getMijnVakken();
     const upcoming=EXAM_SCHEDULE
       .filter(ex=>!ex.niveau||ex.niveau===APP_LEVEL)
       .filter(ex=>ex.vakId&&niveauVakIds.has(ex.vakId))
