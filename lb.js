@@ -496,33 +496,22 @@ function getCountdownTarget(){
   try{
     const now=new Date();
     const niveauVakIds=new Set(getVK().map(v=>v.id));
-    // Prioriteit: door de leerling gekozen herkansingen (2e tijdvak) + eigen 3e-tijdvak-data
+    const mijn=getMijnVakken();
     const herk=(typeof getHerkansing==='function')?getHerkansing():[];
     const tv3=(typeof getTV3==='function')?getTV3():[];
-    const sel=[];
+    // Alleen wat de leerling zelf koos: 1e-tijdvak-vakken (mijn vakken),
+    // aangevinkte herkansingen (2e tijdvak) en eigen 3e-tijdvak-data.
+    const cands=[];
     EXAM_SCHEDULE.forEach(ex=>{
       if(ex.niveau&&ex.niveau!==APP_LEVEL)return;
-      if(ex.tijdvak===2&&herk.includes(ex.vakId||ex.vak)){
-        sel.push({...ex,dt:new Date(ex.datum+'T'+ex.tijd.split('–')[0]+':00+02:00')});
-      }
+      if(ex.vakId&&!niveauVakIds.has(ex.vakId))return;
+      const key=ex.vakId||ex.vak;
+      if(!ex.tijdvak){ if(mijn.includes(key)) cands.push({...ex,dt:new Date(ex.datum+'T'+ex.tijd.split('–')[0]+':00+02:00')}); }
+      else if(ex.tijdvak===2){ if(herk.includes(key)) cands.push({...ex,dt:new Date(ex.datum+'T'+ex.tijd.split('–')[0]+':00+02:00')}); }
     });
-    tv3.forEach(e=>sel.push({vak:e.vak,vakId:e.vakId,datum:e.datum,tijd:e.tijd||'13:30',duur:'',tijdvak:3,dt:new Date(e.datum+'T'+(e.tijd||'13:30')+':00+02:00')}));
-    const selUp=sel.filter(e=>e.dt>now).sort((a,b)=>a.dt-b.dt);
-    if(selUp.length)return selUp[0];
-    // Fallback: eerstvolgende examen onder 'mijn vakken' (alle tijdvakken)
-    const mijn=getMijnVakken();
-    const upcoming=EXAM_SCHEDULE
-      .filter(ex=>!ex.niveau||ex.niveau===APP_LEVEL)
-      .filter(ex=>ex.vakId&&niveauVakIds.has(ex.vakId))
-      .map(ex=>({...ex,dt:new Date(ex.datum+'T'+ex.tijd.split('–')[0]+':00+02:00')}))
-      .filter(ex=>ex.dt>now)
-      .sort((a,b)=>a.dt-b.dt);
-    if(!upcoming.length)return null;
-    if(mijn.length){
-      const mine=upcoming.filter(ex=>mijn.includes(ex.vakId));
-      if(mine.length)return mine[0];
-    }
-    return upcoming[0];
+    tv3.forEach(e=>cands.push({vak:e.vak,vakId:e.vakId,datum:e.datum,tijd:e.tijd||'13:30',duur:'',tijdvak:3,dt:new Date(e.datum+'T'+(e.tijd||'13:30')+':00+02:00')}));
+    const up=cands.filter(e=>e.dt>now).sort((a,b)=>a.dt-b.dt);
+    return up.length?up[0]:null;
   }catch(e){return null;}
 }
 function updateCountdown(){
@@ -535,10 +524,20 @@ function updateCountdown(){
   const labelEl=document.getElementById('cd-label');
   const subEl=document.getElementById('cd-sub');
   if(!tgt){
-    setEl('cd-title','Alle examens zijn klaar 🎓');
-    if(labelEl)labelEl.textContent='Gefeliciteerd!';
-    if(subEl)subEl.textContent='Je hebt alle examens gehad';
-    ['cd-d','cd-h','cd-m','cd-s','cd-days-text'].forEach(id=>setEl(id,'0'));
+    const now=new Date();
+    const nogExamens=EXAM_SCHEDULE.some(ex=>(!ex.niveau||ex.niveau===APP_LEVEL)&&new Date(ex.datum+'T'+ex.tijd.split('–')[0]+':00+02:00')>now);
+    if(nogExamens){
+      setEl('cd-title','Geen examen ingesteld');
+      if(labelEl)labelEl.textContent='—';
+      if(subEl)subEl.textContent='Kies je herkansing of stel je 3e tijdvak in';
+    }else{
+      setEl('cd-title','Alle examens zijn klaar 🎓');
+      if(labelEl)labelEl.textContent='Gefeliciteerd!';
+      if(subEl)subEl.textContent='Je hebt alle examens gehad';
+    }
+    ['cd-d','cd-h','cd-m','cd-s','cd-days-text'].forEach(id=>setEl(id,'–'));
+    if(cdEl)cdEl.classList.remove('cd-panic');
+    const panicEl=document.getElementById('cd-panic-msg');if(panicEl)panicEl.style.display='none';
     return;
   }
   // Update vak name + formatted date
