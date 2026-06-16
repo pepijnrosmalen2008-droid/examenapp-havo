@@ -1901,6 +1901,8 @@ html.dark .qb{background:#2e3550}
 .schedule-list{display:flex;flex-direction:column;gap:10px;margin-bottom:40px}
 .sch-card{display:flex;align-items:center;gap:16px;background:var(--s);border:1px solid var(--bo);border-radius:16px;padding:18px 22px;transition:all .2s}
 .sch-card:hover{border-color:var(--bo2);box-shadow:0 4px 16px rgba(0,0,0,.05)}
+.sch-tv-divider{margin:18px 0 6px;font-size:12px;font-weight:800;text-transform:uppercase;letter-spacing:.6px;color:var(--or);display:flex;align-items:center;gap:10px}
+.sch-tv-divider::after{content:'';flex:1;height:1.5px;background:linear-gradient(90deg,rgba(var(--or-rgb),.4),transparent)}
 .sch-card.sch-mine{border-left:4px solid var(--or)}
 .sch-date{font-family:var(--font-head);font-weight:700;font-size:14px;min-width:94px;color:var(--dk)}
 .sch-time{font-size:13px;color:var(--mu);min-width:84px}

@@ -42,7 +42,37 @@ const EXAM_SCHEDULE=[
 {datum:'2026-05-22',tijd:'13:30–16:30',vak:'Biologie',duur:'3 uur',niveau:'vwo',vakId:'bi'},
 {datum:'2026-05-26',tijd:'13:30–16:00',vak:'Frans',duur:'2,5 uur',niveau:'vwo',vakId:'fr'},
 {datum:'2026-05-27',tijd:'09:00–11:30',vak:'Fries / Russisch',duur:'2,5 uur',niveau:'vwo'},
-{datum:'2026-05-27',tijd:'13:30–16:00',vak:'Arabisch / Spaans / Turks',duur:'2,5 uur',niveau:'vwo'}
+{datum:'2026-05-27',tijd:'13:30–16:00',vak:'Arabisch / Spaans / Turks',duur:'2,5 uur',niveau:'vwo'},
+// ── HAVO CSE 2e tijdvak 2026 (herkansingen) ──
+{datum:'2026-06-16',tijd:'13:30–16:00',vak:'Frans',duur:'2,5 uur',niveau:'havo',tijdvak:2},
+{datum:'2026-06-16',tijd:'13:30–16:30',vak:'Natuurkunde',duur:'3 uur',niveau:'havo',vakId:'na',tijdvak:2},
+{datum:'2026-06-16',tijd:'13:30–16:30',vak:'Scheikunde',duur:'3 uur',niveau:'havo',vakId:'sk',tijdvak:2},
+{datum:'2026-06-17',tijd:'13:30–16:30',vak:'Economie',duur:'3 uur',niveau:'havo',vakId:'ec',tijdvak:2},
+{datum:'2026-06-17',tijd:'13:30–16:30',vak:'Nederlands',duur:'3 uur',niveau:'havo',vakId:'nl',tijdvak:2},
+{datum:'2026-06-17',tijd:'13:30–16:30',vak:'Wiskunde A',duur:'3 uur',niveau:'havo',vakId:'wa',tijdvak:2},
+{datum:'2026-06-18',tijd:'13:30–16:30',vak:'Aardrijkskunde',duur:'3 uur',niveau:'havo',vakId:'ak',tijdvak:2},
+{datum:'2026-06-18',tijd:'13:30–16:30',vak:'Geschiedenis',duur:'3 uur',niveau:'havo',vakId:'gs',tijdvak:2},
+{datum:'2026-06-18',tijd:'13:30–16:30',vak:'Wiskunde B',duur:'3 uur',niveau:'havo',vakId:'wb',tijdvak:2},
+{datum:'2026-06-22',tijd:'13:30–16:00',vak:'Engels',duur:'2,5 uur',niveau:'havo',vakId:'en',tijdvak:2},
+{datum:'2026-06-22',tijd:'13:30–16:30',vak:'Bedrijfseconomie',duur:'3 uur',niveau:'havo',vakId:'be',tijdvak:2},
+{datum:'2026-06-23',tijd:'13:30–16:00',vak:'Duits',duur:'2,5 uur',niveau:'havo',tijdvak:2},
+{datum:'2026-06-23',tijd:'13:30–16:30',vak:'Biologie',duur:'3 uur',niveau:'havo',vakId:'bi',tijdvak:2},
+{datum:'2026-06-23',tijd:'13:30–16:30',vak:'Maatschappijwetenschappen',duur:'3 uur',niveau:'havo',vakId:'mw',tijdvak:2},
+// ── VWO CSE 2e tijdvak 2026 (herkansingen) ──
+{datum:'2026-06-16',tijd:'13:30–16:00',vak:'Frans',duur:'2,5 uur',niveau:'vwo',vakId:'fr',tijdvak:2},
+{datum:'2026-06-16',tijd:'13:30–16:30',vak:'Natuurkunde',duur:'3 uur',niveau:'vwo',vakId:'na',tijdvak:2},
+{datum:'2026-06-16',tijd:'13:30–16:30',vak:'Scheikunde',duur:'3 uur',niveau:'vwo',vakId:'sk',tijdvak:2},
+{datum:'2026-06-17',tijd:'13:30–16:30',vak:'Economie',duur:'3 uur',niveau:'vwo',vakId:'ec',tijdvak:2},
+{datum:'2026-06-17',tijd:'13:30–16:30',vak:'Nederlands',duur:'3 uur',niveau:'vwo',vakId:'nl',tijdvak:2},
+{datum:'2026-06-17',tijd:'13:30–16:30',vak:'Wiskunde A',duur:'3 uur',niveau:'vwo',vakId:'wa',tijdvak:2},
+{datum:'2026-06-18',tijd:'13:30–16:30',vak:'Aardrijkskunde',duur:'3 uur',niveau:'vwo',vakId:'ak',tijdvak:2},
+{datum:'2026-06-18',tijd:'13:30–16:30',vak:'Geschiedenis',duur:'3 uur',niveau:'vwo',vakId:'gs',tijdvak:2},
+{datum:'2026-06-18',tijd:'13:30–16:30',vak:'Wiskunde B',duur:'3 uur',niveau:'vwo',vakId:'wb',tijdvak:2},
+{datum:'2026-06-22',tijd:'13:30–16:00',vak:'Engels',duur:'2,5 uur',niveau:'vwo',vakId:'en',tijdvak:2},
+{datum:'2026-06-22',tijd:'13:30–16:30',vak:'Bedrijfseconomie',duur:'3 uur',niveau:'vwo',tijdvak:2},
+{datum:'2026-06-23',tijd:'13:30–16:00',vak:'Duits',duur:'2,5 uur',niveau:'vwo',vakId:'du',tijdvak:2},
+{datum:'2026-06-23',tijd:'13:30–16:30',vak:'Biologie',duur:'3 uur',niveau:'vwo',vakId:'bi',tijdvak:2},
+{datum:'2026-06-23',tijd:'13:30–16:30',vak:'Maatschappijwetenschappen',duur:'3 uur',niveau:'vwo',vakId:'mw',tijdvak:2}
 ];
 function getMijnVakken(){try{const d=JSON.parse(localStorage.getItem('examenapp_'+lvlCol('mijnvakken'))||'[]');return Array.isArray(d)?d:(d.list||[]);}catch(e){return [];}}
 function setMijnVakken(arr){cloudSet(lvlCol('mijnvakken'),{list:arr});try{pushSyncBundle();}catch(e){}}
@@ -59,11 +89,13 @@ function renderSchedule(){
   if(hdr)hdr.textContent='Examenrooster '+APP_LEVEL.toUpperCase()+' 2026';
   // Vakken van huidig niveau
   const niveauVakIds=new Set(getVK().map(v=>v.id));
+  let _tv2Shown=false;
   EXAM_SCHEDULE.forEach(ex=>{
     // Verberg als item bij een specifiek ander niveau hoort
     if(ex.niveau&&ex.niveau!==APP_LEVEL)return;
     if(ex.vakId&&!niveauVakIds.has(ex.vakId))return;
     if(onlyMine&&!mijn.includes(ex.vakId||ex.vak))return;
+    if(ex.tijdvak===2&&!_tv2Shown){_tv2Shown=true;list.innerHTML+='<div class="sch-tv-divider">↻ Tweede tijdvak — herkansingen</div>';}
     const d=new Date(ex.datum+'T'+ex.tijd.split('–')[0]+':00+02:00');
     const diff=d-now;
     let cdText='';
