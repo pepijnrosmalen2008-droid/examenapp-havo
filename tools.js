@@ -29,10 +29,7 @@ function renderRapport(){
   const weak=[...allDomains].filter(d=>d.pct<0.65).sort((a,b)=>a.pct-b.pct).slice(0,3);
   const mijn=getMijnVakken();
   const today=new Date();today.setHours(0,0,0,0);
-  const upcoming=EXAM_SCHEDULE.filter(e=>{
-    const d=new Date(e.datum);
-    return (!e.niveau||e.niveau===APP_LEVEL)&&d>=today&&(mijn.length===0||!e.vakId||(e.vakId&&mijn.includes(e.vakId)));
-  }).slice(0,3);
+  const upcoming=(typeof getUpcomingExams==='function'?getUpcomingExams():[]).slice(0,3);
   const maand=['jan','feb','mrt','apr','mei','jun','jul','aug','sep','okt','nov','dec'];
   const domRow=(d,color)=>`<div class="rp-domain-row">
     <div class="rp-domain-info"><div class="rp-domain-name">${d.domNaam}</div><div class="rp-domain-vak">${d.vakNaam}</div></div>
@@ -303,12 +300,9 @@ function renderStudieplan(){
     herhaal: ['🔄','Herhalen',      'sp-act-herhaal', 'snel',10],
   };
 
-  const upcoming=EXAM_SCHEDULE.filter(e=>{
-    const d=new Date(e.datum);
-    return (!e.niveau||e.niveau===APP_LEVEL)&&d>today&&e.vakId&&(mijn.length===0||mijn.includes(e.vakId));
-  });
+  const upcoming=(typeof getUpcomingExams==='function'?getUpcomingExams():[]).filter(e=>e.vakId);
   if(!upcoming.length){
-    el.innerHTML='<div class="sp-empty">Geen aankomende examens gevonden.<br>Vink eerst je vakken aan via "Alleen mijn vakken" boven.</div>';
+    el.innerHTML='<div class="sp-empty">Geen aankomende examens.<br>Kies je vakken in het rooster, of vink je herkansing aan.</div>';
     return;
   }
 

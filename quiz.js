@@ -1302,14 +1302,12 @@ function renderHmStatsStrip(){
 function renderExamAlert(){
   const el=document.getElementById('hm-exam-alert');
   if(!el)return;
-  const mijn=getMijnVakken();
   const today=new Date();today.setHours(0,0,0,0);
-  const imminent=EXAM_SCHEDULE.filter(e=>{
-    if(!e.vakId||(mijn.length>0&&!mijn.includes(e.vakId)))return false;
+  const imminent=(typeof getUpcomingExams==='function'?getUpcomingExams():[]).filter(e=>{
     const d=new Date(e.datum);d.setHours(0,0,0,0);
     const days=Math.round((d-today)/864e5);
     return days>=0&&days<=2;
-  }).sort((a,b)=>new Date(a.datum)-new Date(b.datum));
+  });
   if(!imminent.length){el.innerHTML='';return;}
   const MN=['jan','feb','mrt','apr','mei','jun','jul','aug','sep','okt','nov','dec'];
   const items=imminent.map(e=>{

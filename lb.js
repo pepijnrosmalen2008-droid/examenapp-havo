@@ -491,16 +491,15 @@ function _showLbResetPopup(){
 }
 
 // ═══════ COUNTDOWN ═══════
-// Returns the earliest upcoming exam relevant to the user (own vakken first, else level fallback)
-function getCountdownTarget(){
+// Alle aankomende examens die de leerling zelf koos: 1e-tijdvak-vakken (mijn vakken),
+// aangevinkte herkansingen (2e tijdvak) en eigen 3e-tijdvak-data. Niks gekozen = lege lijst.
+function getUpcomingExams(){
   try{
     const now=new Date();
     const niveauVakIds=new Set(getVK().map(v=>v.id));
     const mijn=getMijnVakken();
     const herk=(typeof getHerkansing==='function')?getHerkansing():[];
     const tv3=(typeof getTV3==='function')?getTV3():[];
-    // Alleen wat de leerling zelf koos: 1e-tijdvak-vakken (mijn vakken),
-    // aangevinkte herkansingen (2e tijdvak) en eigen 3e-tijdvak-data.
     const cands=[];
     EXAM_SCHEDULE.forEach(ex=>{
       if(ex.niveau&&ex.niveau!==APP_LEVEL)return;
@@ -510,10 +509,11 @@ function getCountdownTarget(){
       else if(ex.tijdvak===2){ if(herk.includes(key)) cands.push({...ex,dt:new Date(ex.datum+'T'+ex.tijd.split('–')[0]+':00+02:00')}); }
     });
     tv3.forEach(e=>cands.push({vak:e.vak,vakId:e.vakId,datum:e.datum,tijd:e.tijd||'13:30',duur:'',tijdvak:3,dt:new Date(e.datum+'T'+(e.tijd||'13:30')+':00+02:00')}));
-    const up=cands.filter(e=>e.dt>now).sort((a,b)=>a.dt-b.dt);
-    return up.length?up[0]:null;
-  }catch(e){return null;}
+    return cands.filter(e=>e.dt>now).sort((a,b)=>a.dt-b.dt);
+  }catch(e){return [];}
 }
+// Eerstvolgende voor de countdown-timer
+function getCountdownTarget(){const u=getUpcomingExams();return u.length?u[0]:null;}
 function updateCountdown(){
   const setEl=(id,val)=>{const el=document.getElementById(id);if(el)el.textContent=val;};
   // Apply level glow class
