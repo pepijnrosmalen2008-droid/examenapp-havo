@@ -1,4 +1,4 @@
-const CACHE = 'slagio-v209';
+const CACHE = 'slagio-v210';
 const ASSETS = ['/', '/index.html', '/styles.css', '/data.js', '/state.js', '/cloud.js', '/profile.js', '/vak.js', '/quiz.js', '/tools.js', '/sim.js', '/lb.js', '/features.js', '/schedule.js', '/v4.js', '/init.js', '/examens.js', '/manifest.json', '/icon-192.png', '/icon-512.png', '/logo.svg', '/apple-touch-icon.png'];
 
 self.addEventListener('install', e => {
@@ -51,10 +51,10 @@ self.addEventListener('fetch', e => {
   );
 });
 
-// ── PUSH (server-side VAPID, voor toekomstige backend) ───────────
+// â”€â”€ PUSH (server-side VAPID, voor toekomstige backend) â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 self.addEventListener('push', e => {
   const data = e.data ? e.data.json() : {};
-  e.waitUntil(self.registration.showNotification(data.title || 'Slagio 📚', {
+  e.waitUntil(self.registration.showNotification(data.title || 'Slagio ðŸ“š', {
     body: data.body || 'Tijd om te oefenen!',
     icon: '/icon-192.png',
     badge: '/icon-192.png',
@@ -63,13 +63,13 @@ self.addEventListener('push', e => {
     tag: data.tag || 'slagio',
     renotify: true,
     actions: [
-      { action: 'open', title: '🎯 Oefenen' },
+      { action: 'open', title: 'ðŸŽ¯ Oefenen' },
       { action: 'dismiss', title: 'Later' }
     ]
   }));
 });
 
-// ── PERIODIC BACKGROUND SYNC (Chrome PWA: dagelijks, ook als app dicht is) ──
+// â”€â”€ PERIODIC BACKGROUND SYNC (Chrome PWA: dagelijks, ook als app dicht is) â”€â”€
 self.addEventListener('periodicsync', e => {
   if (e.tag === 'slagio-daily') {
     e.waitUntil(_triggerDailyNotif());
@@ -83,15 +83,15 @@ async function _triggerDailyNotif() {
   const now = Date.now();
   if (cfg.lastShown && now - cfg.lastShown < 20 * 3600000) return;
 
-  let title = 'Slagio 📚';
+  let title = 'Slagio ðŸ“š';
   let body = 'Vergeet je dagelijkse oefening niet!';
   let url = '/';
 
   if (cfg.streak > 1) {
-    body = `Je hebt een streak van ${cfg.streak} dagen! Oefen even om hem te bewaren. 🔥`;
+    body = `Je hebt een streak van ${cfg.streak} dagen! Oefen even om hem te bewaren. ðŸ”¥`;
   }
   if (cfg.examDays != null && cfg.examDays > 0 && cfg.examDays <= 14) {
-    title = `⏰ Nog ${cfg.examDays} dag${cfg.examDays === 1 ? '' : 'en'}!`;
+    title = `â° Nog ${cfg.examDays} dag${cfg.examDays === 1 ? '' : 'en'}!`;
     body = `Je volgende examen is over ${cfg.examDays} dag${cfg.examDays === 1 ? '' : 'en'}. Vlug even oefenen?`;
     url = '/?start=quiz';
   }
@@ -105,7 +105,7 @@ async function _triggerDailyNotif() {
     tag: 'slagio-daily',
     renotify: false,
     actions: [
-      { action: 'open', title: '🎯 Oefenen' },
+      { action: 'open', title: 'ðŸŽ¯ Oefenen' },
       { action: 'dismiss', title: 'Later' }
     ]
   });
@@ -113,7 +113,7 @@ async function _triggerDailyNotif() {
   await _writeKV('notif', { ...cfg, lastShown: now });
 }
 
-// ── NOTIFICATION CLICK ───────────────────────────
+// â”€â”€ NOTIFICATION CLICK â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 self.addEventListener('notificationclick', e => {
   e.notification.close();
   if (e.action === 'dismiss') return;
@@ -128,13 +128,13 @@ self.addEventListener('notificationclick', e => {
   );
 });
 
-// ── MESSAGE (app stuurt streak/examen-data naar SW) ──────────────
+// â”€â”€ MESSAGE (app stuurt streak/examen-data naar SW) â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 self.addEventListener('message', e => {
   if (e.data?.type === 'SKIP_WAITING') self.skipWaiting(); // veilige update: alleen op verzoek
   if (e.data?.type === 'NOTIF_CONFIG') _writeKV('notif', e.data.config);
 });
 
-// ── IndexedDB helpers ────────────────────────────
+// â”€â”€ IndexedDB helpers â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 function _openDB() {
   return new Promise((res, rej) => {
     const r = indexedDB.open('slagio-sw', 1);
