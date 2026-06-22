@@ -4982,3 +4982,100 @@ html[data-vak="fr"]{--vak-or:#DB2777;--vak-or-rgb:219,39,119;
   var(--bg)}
 
 /* Reduced motion: niets beweegt hier toch — statische sfeer blijft */
+
+/* ══════════════════════════════════════════════════════════════════
+   MODERN REDESIGN 2026  ·  engagement & depth enhancement layer
+   Appended last so source-order wins ties without raising specificity.
+   Pure-additive. Uses the per-screen accent (--or / --or-rgb), so every
+   level theme (HAVO oranje, VWO paars, per-scherm accenten) adapts.
+   ══════════════════════════════════════════════════════════════════ */
+:root{
+  --ease-spring:cubic-bezier(.34,1.56,.64,1);
+  --ease-out:cubic-bezier(.22,1,.36,1);
+  --ease-soft:cubic-bezier(.4,0,.2,1);
+  --rd-shadow-1:0 1px 2px rgba(16,24,40,.05),0 2px 8px rgba(16,24,40,.06);
+  --rd-shadow-2:0 6px 16px rgba(16,24,40,.07),0 16px 40px rgba(16,24,40,.09);
+  --rd-shadow-3:0 14px 32px rgba(16,24,40,.11),0 30px 70px rgba(16,24,40,.13);
+  --rd-glow:0 10px 34px rgba(var(--or-rgb),.45),0 2px 10px rgba(var(--or-rgb),.28);
+}
+html.dark{
+  --rd-shadow-1:0 1px 2px rgba(0,0,0,.34),0 3px 10px rgba(0,0,0,.4);
+  --rd-shadow-2:0 8px 22px rgba(0,0,0,.46),0 18px 44px rgba(0,0,0,.5);
+  --rd-shadow-3:0 16px 38px rgba(0,0,0,.55),0 34px 80px rgba(0,0,0,.6);
+}
+
+/* ── Primary CTA → living, enticing accent ──────────────────────── */
+.hm-cta-primary{
+  background:linear-gradient(120deg,
+    var(--or) 0%,
+    color-mix(in srgb,var(--or) 60%,#fff) 48%,
+    var(--or) 100%)!important;
+  background-size:220% 100%!important;
+  animation:rdCtaShimmer 5.5s var(--ease-soft) infinite;
+}
+@keyframes rdCtaShimmer{0%,100%{background-position:0% 50%}50%{background-position:100% 50%}}
+.hm-cta-primary:hover{
+  transform:translateY(-3px) scale(1.025);
+  box-shadow:0 12px 38px rgba(var(--or-rgb),.6),0 1px 0 rgba(255,255,255,.3) inset!important;
+}
+.hm-cta-primary:active{transform:translateY(0) scale(.955);transition:transform .09s var(--ease-out)!important}
+
+/* ── Bottom-nav launch button → springy & tactile ───────────────── */
+.bnav-fab:hover{transform:translateY(-2px) scale(1.07)}
+.bnav-fab:active{transform:scale(.9);transition:transform .09s var(--ease-out)}
+
+/* ── Welcome level cards → deeper lift, accent halo, brighter sheen ─ */
+.wlc-card{transition:transform .4s var(--ease-spring),box-shadow .4s var(--ease-out),border-color .3s ease}
+.wlc-card:hover{
+  transform:translateY(-6px) scale(1.012);
+  box-shadow:var(--rd-shadow-3),0 0 0 1px rgba(var(--or-rgb),.18),0 18px 50px rgba(var(--or-rgb),.22);
+}
+.wlc-card:active{transform:translateY(-2px) scale(.992);transition:transform .12s var(--ease-out)}
+
+/* ── Secondary / social / quick buttons → unified spring press ───── */
+.hm-soc-btn:hover{transform:translateY(-2px);border-color:rgba(var(--or-rgb),.5);box-shadow:0 6px 18px rgba(var(--or-rgb),.16)}
+.hm-soc-btn:active,.hm-cta-sec:active,.hm-ql-btn:active,.calc-btn:active{
+  transform:scale(.96);transition:transform .09s var(--ease-out)
+}
+.hm-cta-sec:hover{background:rgba(255,255,255,.14);transform:translateY(-2px)}
+
+/* ── Generic interactive cards → satisfying squish on tap ───────── */
+.card:active,.bento-tile:active,.hm-quick-chip:active{
+  transform:scale(.972)!important;transition:transform .1s var(--ease-out)!important
+}
+
+/* ── Hero accent text → slow gradient shimmer (kept tasteful) ────── */
+.hm-h1 em{
+  background:linear-gradient(100deg,
+    var(--or) 0%,
+    color-mix(in srgb,var(--or) 55%,#fff) 50%,
+    var(--or) 100%);
+  background-size:200% 100%;
+  -webkit-background-clip:text;background-clip:text;
+  -webkit-text-fill-color:transparent;color:transparent;
+  animation:rdHeroShimmer 6s var(--ease-soft) infinite;
+}
+@keyframes rdHeroShimmer{0%,100%{background-position:0% 50%}50%{background-position:100% 50%}}
+
+/* ── Welcome hero star rating (SVG, replaced ⭐ emoji) ───────────── */
+.wlc-stars{display:inline-flex;align-items:center;gap:2px;color:#f5b301;margin-right:9px;vertical-align:middle}
+.wlc-stars svg{filter:drop-shadow(0 1px 3px rgba(245,179,1,.45));animation:rdStarPop .5s var(--ease-spring) both}
+.wlc-stars svg:nth-child(1){animation-delay:.05s}
+.wlc-stars svg:nth-child(2){animation-delay:.12s}
+.wlc-stars svg:nth-child(3){animation-delay:.19s}
+.wlc-stars svg:nth-child(4){animation-delay:.26s}
+.wlc-stars svg:nth-child(5){animation-delay:.33s}
+@keyframes rdStarPop{from{opacity:0;transform:scale(.3) rotate(-25deg)}to{opacity:1;transform:none}}
+
+/* ── Social shortcut icons (SVG, replaced emoji) ────────────────── */
+.hm-soc-ic{flex-shrink:0;transition:transform .22s var(--ease-spring)}
+.hm-soc-btn:hover .hm-soc-ic{transform:scale(1.14) rotate(-5deg)}
+.hm-soc-lb .hm-soc-ic{color:#f59e0b}
+.hm-soc-grp .hm-soc-ic{color:var(--or)}
+
+/* ── Respect reduced-motion for everything added here ───────────── */
+@media(prefers-reduced-motion:reduce){
+  .hm-cta-primary,.hm-h1 em,.wlc-stars svg{animation:none!important}
+  .hm-cta-primary{background-position:0 50%!important}
+  .hm-h1 em{background-position:0 50%!important}
+}
