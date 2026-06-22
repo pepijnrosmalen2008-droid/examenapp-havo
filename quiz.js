@@ -176,9 +176,13 @@ function toonV(){
   // context tekst
   const ctx=document.getElementById('qctx');
   const hasCtxNow=!!(q.ctx&&q.ctx!=='');
-  document.getElementById('sc-quiz').classList.toggle('has-ctx',hasCtxNow);
+  const hasFig=!!(q.img&&q.img!=='');
+  document.getElementById('sc-quiz').classList.toggle('has-ctx',hasCtxNow||hasFig);
   if(hasCtxNow){ctx.style.display='block';ctx.textContent=q.ctx;}
   else{ctx.style.display='none';}
+  // figuur bij de vraag (echte CE-figuur, footer-vrij)
+  const figEl=document.getElementById('qfig');
+  if(figEl){if(hasFig){figEl.src='figuren/'+q.img;figEl.style.display='';}else{figEl.style.display='none';figEl.removeAttribute('src');}}
 
   // vraagstelling
   document.getElementById('qq').textContent=q.v;
