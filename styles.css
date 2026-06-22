@@ -5057,6 +5057,19 @@ html.dark{
 }
 @keyframes rdHeroShimmer{0%,100%{background-position:0% 50%}50%{background-position:100% 50%}}
 
+/* ── Streak empty-state → inviting daily-habit hook (SVG flame) ──── */
+.streak-card-empty{opacity:1!important}
+.streak-card-empty .streak-headline{display:inline-flex;align-items:center;gap:8px}
+.streak-flame-ic{color:var(--or);flex-shrink:0;transform-origin:50% 80%;animation:rdFlameFlicker 2.4s ease-in-out infinite;filter:drop-shadow(0 0 6px rgba(var(--or-rgb),.5))}
+@keyframes rdFlameFlicker{0%,100%{transform:scale(1) rotate(-2deg)}25%{transform:scale(1.08) rotate(2deg)}50%{transform:scale(.97) rotate(-1deg)}75%{transform:scale(1.05) rotate(1deg)}}
+.streak-week-empty{display:flex;gap:8px;margin-top:14px}
+.streak-week-empty .swe-cell{flex:1;text-align:center}
+.streak-week-empty .swe-pip{height:26px;border-radius:8px;background:var(--bo2);border:1.5px dashed transparent;margin-bottom:5px;transition:all .25s var(--ease-out)}
+.streak-week-empty .swe-lbl{font-size:10px;font-weight:600;color:var(--mu)}
+.streak-week-empty .swe-today .swe-pip{background:rgba(var(--or-rgb),.12);border-color:rgba(var(--or-rgb),.55);box-shadow:0 0 0 0 rgba(var(--or-rgb),.45);animation:rdTodayPulse 2s var(--ease-out) infinite}
+.streak-week-empty .swe-today .swe-lbl{color:var(--or);font-weight:800}
+@keyframes rdTodayPulse{0%{box-shadow:0 0 0 0 rgba(var(--or-rgb),.45)}70%{box-shadow:0 0 0 7px rgba(var(--or-rgb),0)}100%{box-shadow:0 0 0 0 rgba(var(--or-rgb),0)}}
+
 /* ── Welcome hero star rating (SVG, replaced ⭐ emoji) ───────────── */
 .wlc-stars{display:inline-flex;align-items:center;gap:2px;color:#f5b301;margin-right:9px;vertical-align:middle}
 .wlc-stars svg{filter:drop-shadow(0 1px 3px rgba(245,179,1,.45));animation:rdStarPop .5s var(--ease-spring) both}
@@ -5075,7 +5088,7 @@ html.dark{
 
 /* ── Respect reduced-motion for everything added here ───────────── */
 @media(prefers-reduced-motion:reduce){
-  .hm-cta-primary,.hm-h1 em,.wlc-stars svg{animation:none!important}
+  .hm-cta-primary,.hm-h1 em,.wlc-stars svg,.streak-flame-ic,.streak-week-empty .swe-today .swe-pip{animation:none!important}
   .hm-cta-primary{background-position:0 50%!important}
   .hm-h1 em{background-position:0 50%!important}
 }

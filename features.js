@@ -853,13 +853,14 @@ function renderStreak(){
   const info=calcStreak();
   if(info.total===0){
     // Toon motiverende streak-start kaart voor nieuwe gebruikers
-    box.innerHTML=`<div class="streak-card" style="opacity:.7">
+    const _td=new Date().getDay();
+    box.innerHTML=`<div class="streak-card streak-card-empty">
       <div class="streak-top">
-        <div class="streak-headline">📚 Bouw je streak op!</div>
+        <div class="streak-headline"><svg class="streak-flame-ic" viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true"><path d="M8.5 14.5A2.5 2.5 0 0 0 11 12c0-1.38-.5-2-1-3-1.072-2.143-.224-4.054 2-6 .5 2.5 2 4.9 4 6.5 2 1.6 3 3.5 3 5.5a7 7 0 1 1-14 0c0-1.153.433-2.294 1-3a2.5 2.5 0 0 0 2.5 2.5z"/></svg> Bouw je streak op!</div>
         <div class="streak-tagline">Oefen elke dag en verdien badges — begin vandaag.</div>
       </div>
-      <div style="display:flex;gap:8px;margin-top:12px">
-        ${['zo','ma','di','wo','do','vr','za'].map(d=>`<div style="flex:1;text-align:center"><div style="height:22px;border-radius:6px;background:var(--bo2);margin-bottom:4px"></div><div style="font-size:10px;color:var(--mu)">${d}</div></div>`).join('')}
+      <div class="streak-week-empty">
+        ${['zo','ma','di','wo','do','vr','za'].map((d,i)=>`<div class="swe-cell${i===_td?' swe-today':''}"><div class="swe-pip"></div><div class="swe-lbl">${d}</div></div>`).join('')}
       </div>
     </div>`;
     return;
