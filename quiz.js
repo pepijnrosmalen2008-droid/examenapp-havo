@@ -349,11 +349,12 @@ function _kiesReveal(gekozen,correct,btns){
   const fb=document.getElementById('qfb');
   fb.style.display='block';
   fb.className=`qfb ${ok?'fbok':'fbno'}`;
+  const _infoBtn=q.u?`<button class="fbt-info-btn" onclick="const t=this.nextElementSibling;const s=this.querySelector('.fib-lbl');t.classList.toggle('show');s.textContent=t.classList.contains('show')?'Verberg uitleg':'Toon uitleg'"><svg class="fib-ic" viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4"/><path d="M12 8h.01"/></svg><span class="fib-lbl">Toon uitleg</span></button><div class="fbt-info-text">${q.u}</div>`:'';
   if(ok){
-    fb.innerHTML=`<div class="fbt">✓ Correct!</div>${q.u?`<button class="fbt-info-btn" onclick="this.nextElementSibling.classList.toggle('show');this.textContent=this.nextElementSibling.classList.contains('show')?'ℹ️ Verberg uitleg':'ℹ️ Toon uitleg'">ℹ️ Toon uitleg</button><div class="fbt-info-text">${q.u}</div>`:''}`;
+    fb.innerHTML=`<div class="fbt"><svg class="fb-ic" viewBox="0 0 24 24" width="19" height="19" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Correct!</div>${_infoBtn}`;
   }else{
     const correctText=q.o[q.c]||'';
-    fb.innerHTML=`<div class="fbt">✗ Fout</div><div class="fbtx"><span style="color:#4ade80;font-weight:700">✓ Juist:</span> ${correctText}</div>${q.u?`<button class="fbt-info-btn" style="margin-top:4px" onclick="this.nextElementSibling.classList.toggle('show');this.textContent=this.nextElementSibling.classList.contains('show')?'ℹ️ Verberg uitleg':'ℹ️ Toon uitleg'">ℹ️ Toon uitleg</button><div class="fbt-info-text">${q.u}</div>`:''}`;
+    fb.innerHTML=`<div class="fbt"><svg class="fb-ic" viewBox="0 0 24 24" width="19" height="19" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 6 6 18M6 6l12 12"/></svg>Fout</div><div class="fbtx"><span class="fbtx-juist"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Juist:</span> ${correctText}</div>${_infoBtn}`;
   }
   const nxt=document.getElementById('qnxt');
   nxt.style.display='block';

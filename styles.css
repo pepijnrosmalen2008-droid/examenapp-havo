@@ -5057,6 +5057,16 @@ html.dark{
 }
 @keyframes rdHeroShimmer{0%,100%{background-position:0% 50%}50%{background-position:100% 50%}}
 
+/* ── Quiz feedback icons (SVG, replaced ✓/✗/ℹ️ emoji) ───────────── */
+.qfb .fbt{display:inline-flex;align-items:center;gap:7px}
+.fb-ic{flex-shrink:0}
+.fbok .fb-ic{animation:rdCheckPop .45s var(--ease-spring) both}
+@keyframes rdCheckPop{0%{transform:scale(0) rotate(-25deg);opacity:0}60%{transform:scale(1.25) rotate(0)}100%{transform:scale(1)}}
+.fbno .fb-ic{animation:rdCrossPop .4s var(--ease-spring) both}
+@keyframes rdCrossPop{0%{transform:scale(0);opacity:0}70%{transform:scale(1.18)}100%{transform:scale(1)}}
+.fbtx-juist{display:inline-flex;align-items:center;gap:4px;color:#4ade80;font-weight:700}
+.fbt-info-btn .fib-ic{flex-shrink:0}
+
 /* ── Streak empty-state → inviting daily-habit hook (SVG flame) ──── */
 .streak-card-empty{opacity:1!important}
 .streak-card-empty .streak-headline{display:inline-flex;align-items:center;gap:8px}
@@ -5088,7 +5098,7 @@ html.dark{
 
 /* ── Respect reduced-motion for everything added here ───────────── */
 @media(prefers-reduced-motion:reduce){
-  .hm-cta-primary,.hm-h1 em,.wlc-stars svg,.streak-flame-ic,.streak-week-empty .swe-today .swe-pip{animation:none!important}
+  .hm-cta-primary,.hm-h1 em,.wlc-stars svg,.streak-flame-ic,.streak-week-empty .swe-today .swe-pip,.fb-ic{animation:none!important}
   .hm-cta-primary{background-position:0 50%!important}
   .hm-h1 em{background-position:0 50%!important}
 }
