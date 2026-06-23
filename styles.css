@@ -4652,22 +4652,39 @@ html.dark .prof-section:hover{box-shadow:0 6px 28px rgba(0,0,0,.3)}
    ═══════════════════════════════════════════════════════════════ */
 
 /* ── AVATAR LEVEN ────────────────────────────────────────────── */
-/* Idle-ademhaling: zachte squash & stretch vanaf de voeten */
-.v4-avt svg{transform-origin:50% 100%;animation:v4breathe 3.6s ease-in-out infinite;will-change:transform}
+/* Idle-ademhaling: zachte squash & stretch + levendige bob vanaf de voeten */
+.v4-avt svg{transform-origin:50% 100%;animation:v4breathe 3.8s ease-in-out infinite;will-change:transform}
 @keyframes v4breathe{
-  0%,100%{transform:scaleY(1) scaleX(1)}
-  50%{transform:scaleY(1.04) scaleX(.975) translateY(-1.5%)}}
-/* Knipperende ogen */
-.v4-eye{transform-box:fill-box;transform-origin:center;animation:v4blink 4.6s ease-in-out infinite}
-@keyframes v4blink{0%,91.5%,97.5%,100%{transform:scaleY(1)}93.5%,95.5%{transform:scaleY(.06)}}
-/* Vreugdesprongetje */
-.v4-hop svg{animation:v4hopA .65s cubic-bezier(.34,1.56,.64,1)!important}
+  0%,100%{transform:scaleY(1) scaleX(1) translateY(0) rotate(0)}
+  30%{transform:scaleY(1.055) scaleX(.965) translateY(-3.5%) rotate(-1.2deg)}
+  62%{transform:scaleY(.99) scaleX(1.012) translateY(-1%) rotate(1deg)}}
+/* Idle-variant: sommige mascottes wiegen i.p.v. ademen (uniek per dier) */
+.v4-avt.v4-idle-sway svg{animation:v4sway 4.3s ease-in-out infinite}
+@keyframes v4sway{
+  0%,100%{transform:rotate(-3.2deg) translateY(0) scaleY(1)}
+  50%{transform:rotate(3.2deg) translateY(-3%) scaleY(1.035)}}
+/* Knipperende ogen - af en toe een speelse dubbele knipper */
+.v4-eye{transform-box:fill-box;transform-origin:center;animation:v4blink 5.2s ease-in-out infinite}
+@keyframes v4blink{
+  0%,40%,46%,88%,91%,95%,98.5%,100%{transform:scaleY(1)}
+  42.5%,44.5%{transform:scaleY(.07)}
+  89%,90%{transform:scaleY(.07)}
+  96%,97.5%{transform:scaleY(.07)}}
+/* Vreugdesprongetje - met sappige landings-squash */
+.v4-hop svg{animation:v4hopA .72s cubic-bezier(.34,1.56,.64,1)!important}
 @keyframes v4hopA{
   0%{transform:scaleY(1) scaleX(1)}
-  22%{transform:scaleY(.8) scaleX(1.14) translateY(4%)}
-  50%{transform:translateY(-26%) scaleY(1.1) scaleX(.92)}
-  72%{transform:translateY(0) scaleY(.92) scaleX(1.07)}
+  20%{transform:scaleY(.78) scaleX(1.17) translateY(5%)}
+  47%{transform:translateY(-32%) scaleY(1.13) scaleX(.89)}
+  66%{transform:translateY(0) scaleY(.8) scaleX(1.18)}
+  83%{transform:translateY(0) scaleY(1.07) scaleX(.96)}
   100%{transform:scaleY(1) scaleX(1)}}
+/* Nieuwsgierig rondkijken - speels gebaar dat af en toe triggert */
+.v4-peek svg{animation:v4peekA 1.5s ease-in-out!important;transform-origin:50% 82%}
+@keyframes v4peekA{
+  0%,100%{transform:rotate(0) translateX(0)}
+  18%,40%{transform:rotate(-10deg) translateX(-4%)}
+  58%,80%{transform:rotate(9deg) translateX(4%)}}
 /* Squish bij aanraken */
 .v4-squish svg{animation:v4squishA .45s cubic-bezier(.34,1.56,.64,1)!important}
 @keyframes v4squishA{

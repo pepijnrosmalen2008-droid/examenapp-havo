@@ -23,7 +23,7 @@ function enliven(svg){
   svg.dataset.v4='1';
   try{
     const wrap=svg.closest('.anim-svg-wrap');
-    if(wrap)wrap.classList.add('v4-avt');
+    if(wrap){wrap.classList.add('v4-avt');if(Math.random()<.45)wrap.classList.add('v4-idle-sway');}
     const delay=(Math.random()*4).toFixed(2)+'s';
     const dur=(3.8+Math.random()*2.4).toFixed(2)+'s';
     svg.querySelectorAll('circle').forEach(c=>{
@@ -53,6 +53,21 @@ function randomHop(){
     }
   }catch(e){}
   setTimeout(randomHop,6000+Math.random()*8000);
+}
+function randomPeek(){
+  if(REDUCE)return;
+  try{
+    const avts=[...document.querySelectorAll('.v4-avt')].filter(el=>{
+      const r=el.getBoundingClientRect();
+      return r.top<innerHeight&&r.bottom>0&&r.width>0&&!el.classList.contains('v4-hop');
+    });
+    if(avts.length){
+      const el=avts[Math.floor(Math.random()*avts.length)];
+      el.classList.add('v4-peek');
+      setTimeout(()=>el.classList.remove('v4-peek'),1500);
+    }
+  }catch(e){}
+  setTimeout(randomPeek,9000+Math.random()*11000);
 }
 document.addEventListener('pointerdown',e=>{
   const w=e.target.closest&&e.target.closest('.v4-avt');
@@ -346,7 +361,7 @@ function init(){
   buildMarquee();
   buildDemo();
   applyVakWorld();
-  if(!REDUCE)setTimeout(randomHop,4000);
+  if(!REDUCE){setTimeout(randomHop,4000);setTimeout(randomPeek,7000);}
 }
 if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',init);
 else init();
