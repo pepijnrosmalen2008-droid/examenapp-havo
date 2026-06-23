@@ -521,7 +521,7 @@ function renderHomeStats(){
   const mileLabel={3:'🔥3-daags',7:'⚡7-daags',14:'💎14-daags',30:'🔮30-daags',100:'👑100-daags',200:'🌌200-daags',300:'⚜️300-daags',365:'🪐365-daags'};
   if(!atRisk&&nextMile&&(nextMile-streak)<=2)streakSub=`Nog ${nextMile-streak}d voor ${mileLabel[nextMile]||nextMile+'d'} badge!`;
   const streakCell=`<div class="bento-cell bento-streak${atRisk?' bento-at-risk':''}" onclick="show('sc-home');setTimeout(()=>{const el=document.getElementById('streak-home');if(el)el.scrollIntoView({behavior:'smooth',block:'start'})},120)" role="button" tabindex="0">
-    <div class="bento-stat"><div class="bento-si">🔥</div><div class="bento-sv">${streak} dag${streak!==1?'en':''}</div><div class="bento-sl">${streakSub}</div></div>
+    <div class="bento-stat"><div class="bento-si" style="color:#f97316"><svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true"><path d="M8.5 14.5A2.5 2.5 0 0 0 11 12c0-1.38-.5-2-1-3-1.072-2.143-.224-4.054 2-6 .5 2.5 2 4.9 4 6.5 2 1.6 3 3.5 3 5.5a7 7 0 1 1-14 0c0-1.153.433-2.294 1-3a2.5 2.5 0 0 0 2.5 2.5z"/></svg></div><div class="bento-sv">${streak} dag${streak!==1?'en':''}</div><div class="bento-sl">${streakSub}</div></div>
   </div>`;
   // ── Level / XP cell ───────────────────────────────
   const nxtXP=getXPForLevel(lvl+1)||(getXPForLevel(lvl)+1000);
@@ -529,20 +529,20 @@ function renderHomeStats(){
   const xpIsUrgent=xpToNext<=100&&xpToNext>0;
   const xpSub=xp>0?(xpIsUrgent?`⚡ Nog ${xpToNext} XP!`:`Nog ${xpToNext} XP`):'';
   const lvlCell=xp>0?`<div class="bento-cell bento-xp${xpIsUrgent?' bento-xp-urgent':''}" onclick="show('sc-home');setTimeout(()=>{const el=document.getElementById('xp-home-bar');if(el)el.scrollIntoView({behavior:'smooth',block:'start'})},120)" role="button" tabindex="0">
-    <div class="bento-stat"><div class="bento-si">⭐</div><div class="bento-sv">Level ${lvl}</div><div class="bento-sl">${xpSub}</div></div>
+    <div class="bento-stat"><div class="bento-si" style="color:#f5b301"><svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></div><div class="bento-sv">Level ${lvl}</div><div class="bento-sl">${xpSub}</div></div>
   </div>`:'';
   // ── Badges cell ───────────────────────────────────
   const earnedCount=ALL_BADGES.filter(b=>getAchieved()[b.id]).length;
   const badgeCell=earnedCount>0?`<div class="bento-cell bento-badges" onclick="openProfiel();setTimeout(()=>{const el=document.getElementById('prof-badges-content');if(el)el.scrollIntoView({behavior:'smooth',block:'start'})},250)" role="button" tabindex="0">
-    <div class="bento-stat"><div class="bento-si">🏅</div><div class="bento-sv">${earnedCount}/${ALL_BADGES.length}</div><div class="bento-sl">Badges</div></div>
+    <div class="bento-stat"><div class="bento-si" style="color:#a78bfa"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m15.477 12.89 1.515 8.526a.5.5 0 0 1-.81.47l-3.58-2.687a1 1 0 0 0-1.197 0l-3.586 2.686a.5.5 0 0 1-.81-.469l1.514-8.526"/><circle cx="12" cy="8" r="6"/></svg></div><div class="bento-sv">${earnedCount}/${ALL_BADGES.length}</div><div class="bento-sl">Badges</div></div>
   </div>`:'';
   // ── Avg cell (altijd zichtbaar; leeg = uitnodiging om cijfers in te voeren) ──
   const avgCell=avg!==null
     ?`<div class="bento-cell ${avg<6?'bento-avg-warn':'bento-avg-ok'}" onclick="show('sc-calc');setTimeout(prefillCalcFromSaved,50)" role="button" tabindex="0">
-        <div class="bento-stat"><div class="bento-si">📈</div><div class="bento-sv">${avg.toFixed(1).replace('.',',')}</div><div class="bento-sl">Gem. SE</div></div>
+        <div class="bento-stat"><div class="bento-si" style="color:#22c55e"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="22 7 13.5 15.5 8.5 10.5 2 17"/><polyline points="16 7 22 7 22 13"/></svg></div><div class="bento-sv">${avg.toFixed(1).replace('.',',')}</div><div class="bento-sl">Gem. SE</div></div>
       </div>`
     :`<div class="bento-cell bento-avg-empty" onclick="show('sc-calc');setTimeout(prefillCalcFromSaved,50)" role="button" tabindex="0">
-        <div class="bento-stat"><div class="bento-si" style="font-size:18px">📈</div><div class="bento-sv" style="font-size:13px;font-weight:700;color:var(--mu)">Cijfers</div><div class="bento-sl" style="font-size:10px">Voer in →</div></div>
+        <div class="bento-stat"><div class="bento-si" style="color:var(--mu)"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="22 7 13.5 15.5 8.5 10.5 2 17"/><polyline points="16 7 22 7 22 13"/></svg></div><div class="bento-sv" style="font-size:13px;font-weight:700;color:var(--mu)">Cijfers</div><div class="bento-sl" style="font-size:10px">Voer in →</div></div>
       </div>`;
   const groepCell='';
   // ── Streak milestone cell (conditional, full-width) ──

@@ -5096,6 +5096,10 @@ html.dark{
 .hm-soc-lb .hm-soc-ic{color:#f59e0b}
 .hm-soc-grp .hm-soc-ic{color:var(--or)}
 
+/* ── Bento stat icons (SVG, replaced 🔥⭐🏅📈 emoji) ─────────────── */
+.bento-si{display:flex;align-items:center;justify-content:center}
+.bento-si svg{display:block}
+
 /* ── Welcome 'how it works' step icons (SVG, replaced emoji) ─────── */
 .hiw-icon{color:var(--or);display:flex;align-items:center;justify-content:center;line-height:0}
 .hiw-icon svg{filter:drop-shadow(0 3px 8px rgba(var(--or-rgb),.32));transition:transform .3s var(--ease-spring)}
