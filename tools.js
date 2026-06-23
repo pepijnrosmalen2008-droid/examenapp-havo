@@ -120,8 +120,8 @@ function renderVandaagWidget(){
 
   if(!plan){
     wrap.innerHTML=`<div class="sp-home-widget">
-      <div class="sp-hw-header"><div class="sp-hw-title">📅 Studieplan</div></div>
-      <div class="sp-hw-generate"><button class="sp-hw-gen-btn" onclick="show('sc-studieplan');renderStudieplan()">✨ Genereer mijn studieplan</button></div>
+      <div class="sp-hw-header"><div class="sp-hw-title"><svg class="lbl-ic" viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="18" height="18" x="3" y="4" rx="2"/><path d="M3 10h18M8 2v4M16 2v4"/></svg>Studieplan</div></div>
+      <div class="sp-hw-generate"><button class="sp-hw-gen-btn" onclick="show('sc-studieplan');renderStudieplan()"><svg class="lbl-ic" viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M13 3l2.2 5.8L21 11l-5.8 2.2L13 19l-2.2-5.8L5 11l5.8-2.2z"/><path d="M5 3v4M3 5h4M19 17v4M17 19h4"/></svg>Genereer mijn studieplan</button></div>
     </div>`;
     return;
   }
@@ -144,7 +144,7 @@ function renderVandaagWidget(){
     const allDone=todayTasks.length>0;
     wrap.innerHTML=`<div class="sp-home-widget${urgent?' sp-urgent':''}">
       <div class="sp-hw-header">
-        <div class="sp-hw-title">📅 Vandaag</div>
+        <div class="sp-hw-title"><svg class="lbl-ic" viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="18" height="18" x="3" y="4" rx="2"/><path d="M3 10h18M8 2v4M16 2v4"/></svg>Vandaag</div>
         <span class="sp-hw-link" onclick="show('sc-studieplan');renderStudieplan()">Plan →</span>
       </div>
       ${allDone
@@ -171,7 +171,7 @@ function renderVandaagWidget(){
 
   wrap.innerHTML=`<div class="sp-home-widget${urgent?' sp-urgent':''}">
     <div class="sp-hw-header">
-      <div class="sp-hw-title">📅 Vandaag <span style="font-size:11px;font-weight:700;background:rgba(var(--or-rgb),.15);color:var(--or);padding:2px 8px;border-radius:12px;border:1px solid rgba(var(--or-rgb),.25)">${openTasks.length} open</span></div>
+      <div class="sp-hw-title"><svg class="lbl-ic" viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="18" height="18" x="3" y="4" rx="2"/><path d="M3 10h18M8 2v4M16 2v4"/></svg>Vandaag <span style="font-size:11px;font-weight:700;background:rgba(var(--or-rgb),.15);color:var(--or);padding:2px 8px;border-radius:12px;border:1px solid rgba(var(--or-rgb),.25)">${openTasks.length} open</span></div>
       <span class="sp-hw-link" onclick="show('sc-studieplan');renderStudieplan()">Plan →</span>
     </div>
     <div class="sp-hw-tasks">${taskHtml}</div>
