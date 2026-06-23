@@ -5141,6 +5141,10 @@ html.dark{
   .race-tb{padding-top:calc(12px + env(safe-area-inset-top,0px))!important}
 }
 
+/* ── Onboarding feature icons (SVG, replaced ⚡📄🃏✓ emoji) ──────── */
+.ob-feat-ico{display:inline-flex;align-items:center;justify-content:center;color:#818cf8}
+.ob-feat-ico svg,.ob-feat-check svg{display:block}
+
 /* ── Daily-challenge popup icons (SVG, replaced ⚡🔥 emoji) ──────── */
 .dc-popup-badge,.dc-popup-xp{display:inline-flex;align-items:center;gap:6px}
 .dc-ic{flex-shrink:0}
