@@ -5113,6 +5113,15 @@ html.dark{
 .hm-soc-lb .hm-soc-ic{color:#f59e0b}
 .hm-soc-grp .hm-soc-ic{color:var(--or)}
 
+/* ── Premium mobiel: diepere glas-chrome + meer ademruimte ──────── */
+@media(max-width:560px){
+  .bottom-nav-inner{backdrop-filter:blur(30px) saturate(1.5);-webkit-backdrop-filter:blur(30px) saturate(1.5);box-shadow:0 14px 44px rgba(0,0,0,.2),0 2px 10px rgba(0,0,0,.1),0 1px 0 rgba(255,255,255,.12) inset}
+  .hnav,.nav{backdrop-filter:blur(26px) saturate(1.4);-webkit-backdrop-filter:blur(26px) saturate(1.4)}
+  /* rustiger ritme tussen home-secties */
+  .hm-sociaal-section{margin-top:12px}
+  .hm-quick-scroll{margin-top:4px}
+}
+
 /* ── iOS PWA safe-area (viewport-fit=cover + black-translucent) ──────
    Houd top-chrome onder de notch/statusbalk; bottom-nav lift al via
    env(safe-area-inset-bottom). Op toestellen zonder inset is env()=0,
