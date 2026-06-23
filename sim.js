@@ -15,9 +15,9 @@ function simSelectMode(key){
   // Update hint + info-grid
   const m=SIM_MODES[key];
   const hints={
-    oefenen:'📖 <strong>Oefenen</strong> — 1 willekeurige vraag per CE-domein, geen tijdslimiet. Ideaal om rustig te verkennen zonder druk.',
-    normaal: '🎯 <strong>Normaal</strong> — alle vragen, 5 minuten per vraag. Realistische oefensessie met tijdlimiet.',
-    examen:  '⚡ <strong>Examen</strong> — alle vragen, 3 minuten per vraag. <em>Deels goed</em> telt als kwart punt — scherpe beoordelingen vereist.',
+    oefenen:'📖 <strong>Oefenen</strong> - 1 willekeurige vraag per CE-domein, geen tijdslimiet. Ideaal om rustig te verkennen zonder druk.',
+    normaal: '🎯 <strong>Normaal</strong> - alle vragen, 5 minuten per vraag. Realistische oefensessie met tijdlimiet.',
+    examen:  '⚡ <strong>Examen</strong> - alle vragen, 3 minuten per vraag. <em>Deels goed</em> telt als kwart punt - scherpe beoordelingen vereist.',
   };
   const hintClrs={oefenen:'rgba(34,197,94,.08)',normaal:'rgba(99,102,241,.07)',examen:'rgba(239,68,68,.07)'};
   const hintBrdr={oefenen:'rgba(34,197,94,.25)',normaal:'rgba(99,102,241,.2)',examen:'rgba(239,68,68,.2)'};
@@ -61,7 +61,7 @@ function startSimToets(){
   _simUpdateInfoGrid();
 
   // Update setup screen
-  document.getElementById('sim-nav-title').textContent=vak.naam+' — Simulatie';
+  document.getElementById('sim-nav-title').textContent=vak.naam+' - Simulatie';
   document.getElementById('sim-setup-title').textContent='Simulatietoets '+vak.naam;
   const ceDomeinen=vak.domeinen.filter(d=>!d.ceStatus||d.ceStatus!=='SE');
   document.getElementById('sim-setup-desc').textContent=ceDomeinen.length+' CE-domeinen · kies een moeilijkheidsgraad.';
@@ -317,7 +317,7 @@ function startExamen(){
         const isCv = b.type==='antwoord';
         const icon = isCv ? '✅' : '📋';
         const cls = isCv ? ' cv' : '';
-        const titleStr = (b.label+' — '+examen.titel).replace(/'/g,"\\'");
+        const titleStr = (b.label+' - '+examen.titel).replace(/'/g,"\\'");
         return `<button class="ex-bijlage-btn${cls}" onclick="openPdfViewer('${b.url}','${titleStr}')"><span>${icon}</span><span>${b.label}</span></button>`;
       }).join('');
       bijlRow.style.display = '';
@@ -352,7 +352,7 @@ function examenStart(){
   const _tbNewtab = document.getElementById('ex-tb-newtab');
   const _tbLbl = document.getElementById('ex-tb-lbl');
   if(_teksten.length > 0){
-    // Inline tekst modus — geen iframe nodig
+    // Inline tekst modus - geen iframe nodig
     if(_tbIframe){ _tbIframe.style.display='none'; _tbIframe.src='about:blank'; }
     if(_tbContent) _tbContent.style.display='';
     if(_tbNewtab) _tbNewtab.style.display='none';
@@ -408,7 +408,7 @@ function examenShowQ(idx){
   // Opgave banner
   const prevQ = idx > 0 ? EX.examen.vragen[idx-1] : null;
   document.getElementById('ex-opgave-banner').textContent = `Opgave ${q.opgave}`;
-  // Context — toon alleen als anders dan vorige vraag in zelfde opgave
+  // Context - toon alleen als anders dan vorige vraag in zelfde opgave
   const ctxEl = document.getElementById('ex-context');
   const ctxTxt = q.context || '';
   if(ctxTxt){
@@ -462,7 +462,7 @@ function _exUpdateTekstPanel(){
   // Alleen re-renderen als tekst veranderd is
   if(contentEl.dataset.tekstId === tekst.id) return;
   contentEl.dataset.tekstId = tekst.id;
-  contentEl.innerHTML = `<div class="ex-tekst-wrapper"><div class="ex-tekst-header"><div class="ex-tekst-deel">${tekst.deel?'Deel '+tekst.deel+' — ':''}Tekst ${tekst.nr||''}</div><h2 class="ex-tekst-titel">${tekst.titel}</h2></div><div class="ex-tekst-body">${tekst.inhoud}</div></div>`;
+  contentEl.innerHTML = `<div class="ex-tekst-wrapper"><div class="ex-tekst-header"><div class="ex-tekst-deel">${tekst.deel?'Deel '+tekst.deel+' - ':''}Tekst ${tekst.nr||''}</div><h2 class="ex-tekst-titel">${tekst.titel}</h2></div><div class="ex-tekst-body">${tekst.inhoud}</div></div>`;
   contentEl.scrollTop = 0;
 }
 
@@ -784,7 +784,7 @@ function raceFeedback(ok,q){
   const fb=document.getElementById('race-fb');
   fb.style.display='block';
   fb.className='race-fb '+(ok?'fbok':'fbno');
-  fb.innerHTML=`<div class="fbt">${ok?'✓ Stap vooruit!':'✗ Fout — geen stap'}</div><div class="fbtx">${q.u||''}</div>`;
+  fb.innerHTML=`<div class="fbt">${ok?'✓ Stap vooruit!':'✗ Fout - geen stap'}</div><div class="fbtx">${q.u||''}</div>`;
   document.getElementById('race-nxt').style.display='block';
 }
 
@@ -981,7 +981,7 @@ function raceFinish(who){
     document.getElementById('race-res-emi').textContent=playerWin?'🏆':'😅';
     document.getElementById('race-res-tit').textContent=playerWin?'Jij wint! 🎉':'Bot wint… 😤';
     document.getElementById('race-res-sub').textContent=playerWin
-      ?`${RC.playerScore}/${tot} goed — ${elapsed}s. Geweldig!`
+      ?`${RC.playerScore}/${tot} goed - ${elapsed}s. Geweldig!`
       :`${RC.botScore}/${tot} voor de bot, jij had ${RC.playerScore}/${tot}. Probeer opnieuw!`;
 
     const vs=document.getElementById('race-res-vs');

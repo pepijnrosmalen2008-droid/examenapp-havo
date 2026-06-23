@@ -1,7 +1,7 @@
 // ═══════════════════════════════════════════════════════════════
-// V4 — LIVING LAYER + AVATAR STATE ENGINE
+// V4 - LIVING LAYER + AVATAR STATE ENGINE
 // Avatars die ademen, knipperen en écht reageren op app-events:
-// correct / wrong / streak / levelup / celebrate — plus een
+// correct / wrong / streak / levelup / celebrate - plus een
 // quiz-companion die meeleeft. Demo: /index.html?avatardemo=1
 // Volledig additief: faalt stil, breekt nooit functionaliteit.
 // ═══════════════════════════════════════════════════════════════
@@ -110,7 +110,7 @@ function showBubble(comp,cfg){
 
 /* ── 3. QUIZ-COMPANION ────────────────────────────────────────────
    Je mascotte zit klein in beeld tijdens de quiz en leeft mee.
-   pointer-events:none — blokkeert nooit een tik. */
+   pointer-events:none - blokkeert nooit een tik. */
 function ensureCompanion(){
   try{
     const quizOn=document.getElementById('sc-quiz')?.classList.contains('on');
@@ -130,7 +130,7 @@ function ensureCompanion(){
     comp.id='v4-companion';
     comp.setAttribute('aria-hidden','true');
     comp.innerHTML=getAnimalDisplay(animalId,stage,demo?64:36);
-    // In de quiz: in de topbalk naast het logo — altijd zichtbaar, nooit overlap
+    // In de quiz: in de topbalk naast het logo - altijd zichtbaar, nooit overlap
     const bar=quizOn?document.querySelector('#sc-quiz .qtb'):null;
     if(bar){
       comp.classList.add('v4-inbar');
@@ -144,7 +144,7 @@ function ensureCompanion(){
   }catch(e){}
 }
 
-/* ── 4. DEMO-ROUTE (?avatardemo=1) — test alle states ─────────── */
+/* ── 4. DEMO-ROUTE (?avatardemo=1) - test alle states ─────────── */
 function buildDemo(){
   if(location.search.indexOf('avatardemo')===-1)return;
   if(document.getElementById('v4-demo'))return;
@@ -305,7 +305,7 @@ function queueScan(){
     scanReveal();
     ensureCompanion();
     applyVakWorld();
-    // ST.vak kan nét ná de screen-switch worden gezet — vang die race
+    // ST.vak kan nét ná de screen-switch worden gezet - vang die race
     setTimeout(applyVakWorld,70);
   });
 }

@@ -2,7 +2,7 @@
 const SUPABASE_URL='https://wcfenegohryxhatzxvtw.supabase.co';
 const SUPABASE_KEY='eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6IndjZmVuZWdvaHJ5eGhhdHp4dnR3Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODEyODcwMDAsImV4cCI6MjA5Njg2MzAwMH0.B3ygpkosBybQd53VLiRxqIbVxBPWw4V-Nj2IS3k4UFo';
 const SB=window.supabase.createClient(SUPABASE_URL,SUPABASE_KEY);
-// Persistent device ID — generated once, stored in localStorage
+// Persistent device ID - generated once, stored in localStorage
 const _DID=(()=>{try{let id=localStorage.getItem('slagio_did');if(!id){id=(crypto.randomUUID?crypto.randomUUID():'x'+Math.random().toString(36).slice(2)+Date.now().toString(36));localStorage.setItem('slagio_did',id);}return id;}catch(e){return null;}})();
 async function trackEvent(type,meta){
   try{
@@ -51,7 +51,7 @@ if(!sessionStorage.getItem('_slagio_ao')){sessionStorage.setItem('_slagio_ao','1
 
 // ── MASTERY TRACKING (localStorage + compacte Supabase upsert) ─────────────
 // Structuur: {[vakId]: {[domeinId]: {c: correct, t: totaal}}}
-// Supabase: 1 rij per device per vak — groeit NIET onbeperkt (upsert)
+// Supabase: 1 rij per device per vak - groeit NIET onbeperkt (upsert)
 let _qBatch=[];
 function logQuestion(vakId,domeinId,mode,vraagNr,isCorrect,responsMs){
   if(!vakId||!domeinId)return;
@@ -114,7 +114,7 @@ function _showCeScoreModal(vakNaam,vakId){
     <div style="width:36px;height:4px;background:var(--bo);border-radius:2px;margin:0 auto 20px"></div>
     <div style="font-size:28px;text-align:center;margin-bottom:8px">🎓</div>
     <h3 style="font-family:var(--font-head);font-size:20px;font-weight:900;color:var(--dk);text-align:center;margin-bottom:6px">Je examen ${vakNaam} is geweest!</h3>
-    <p style="font-size:13px;color:var(--mu);text-align:center;margin-bottom:22px;line-height:1.5">Wat was je eindcijfer? Jouw score helpt ons aantonen dat Slagio werkt — voor jou en toekomstige leerlingen.</p>
+    <p style="font-size:13px;color:var(--mu);text-align:center;margin-bottom:22px;line-height:1.5">Wat was je eindcijfer? Jouw score helpt ons aantonen dat Slagio werkt - voor jou en toekomstige leerlingen.</p>
     <div style="display:flex;justify-content:center;gap:8px;flex-wrap:wrap;margin-bottom:20px">
       ${[1,2,3,4,5,6,7,8,9,10].map(c=>`<button onclick="_submitCeScore('${vakId}','${vakNaam}',${c})" style="width:48px;height:48px;border-radius:12px;border:2px solid var(--bo);background:var(--s);font-family:var(--font-head);font-size:17px;font-weight:800;cursor:pointer;color:${c>=6?'#22c55e':c>=5?'var(--or)':'#ef4444'};transition:all .15s" onmouseenter="this.style.transform='scale(1.12)'" onmouseleave="this.style.transform=''">${c}</button>`).join('')}
     </div>
@@ -133,7 +133,7 @@ function _submitCeScore(vakId,vakNaam,cijfer){
     modal.innerHTML=`<div style="background:var(--s);border-radius:24px 24px 0 0;padding:40px 24px;width:100%;max-width:480px;text-align:center">
       <div style="font-size:40px;margin-bottom:12px">${cijfer>=6?'🎉':'💪'}</div>
       <h3 style="font-family:var(--font-head);font-size:22px;font-weight:900;color:var(--dk);margin-bottom:8px">${cijfer>=6?'Gefeliciteerd!':'Volgende keer beter!'}</h3>
-      <p style="color:var(--mu);font-size:14px;margin-bottom:24px">Bedankt voor je cijfer — dit helpt ons enorm!</p>
+      <p style="color:var(--mu);font-size:14px;margin-bottom:24px">Bedankt voor je cijfer - dit helpt ons enorm!</p>
       <button onclick="document.getElementById('ce-score-modal').remove()" style="padding:13px 32px;background:var(--or);color:#fff;border:none;border-radius:13px;font-family:var(--font-head);font-size:15px;font-weight:800;cursor:pointer">Sluiten</button>
     </div>`;
     setTimeout(()=>modal.remove(),4000);
@@ -211,15 +211,15 @@ function _onAuthReady(cb){if(_authReady){cb(currentUser);}else{_authReadyCbs.pus
       _hasLocalSession=true;
       if(exp===0||exp*1000>Date.now()){
         currentUser=user;
-        localStorage.setItem('slagio_li','1'); // bootstrap — token is nog geldig
+        localStorage.setItem('slagio_li','1'); // bootstrap - token is nog geldig
       } else {
-        // Token verlopen — slagio_li wissen zodat UI niet vals "ingelogd" toont
+        // Token verlopen - slagio_li wissen zodat UI niet vals "ingelogd" toont
         try{localStorage.removeItem('slagio_li');}catch(e){}
       }
     }
   }catch(e){}
 })();
-// Async check — alleen syncen, NIET currentUser op null zetten als er een lokale sessie is
+// Async check - alleen syncen, NIET currentUser op null zetten als er een lokale sessie is
 // (getSession kan null geven bij verlopen token terwijl onAuthStateChange die nog refresht)
 SB.auth.getSession().then(({data:{session}})=>{
   if(session?.user){
@@ -229,7 +229,7 @@ SB.auth.getSession().then(({data:{session}})=>{
     updateProfileNav();updateCloudStatusBar();
     syncFromCloud();syncMyAvatarToCloud();
   }
-  // Als session null: wacht op onAuthStateChange (token-refresh) — geen actie
+  // Als session null: wacht op onAuthStateChange (token-refresh) - geen actie
 });
 // Listen for auth changes (login/logout/token refresh)
 SB.auth.onAuthStateChange((_event,session)=>{
@@ -298,7 +298,7 @@ function buildSyncBundle(){
 }
 function restoreSyncBundle(bundle){
   if(!bundle||typeof bundle!=='object')return;
-  // Achievements: union — badge ooit verdiend = altijd behouden
+  // Achievements: union - badge ooit verdiend = altijd behouden
   if(bundle.ach){localStorage.setItem(ACH_KEY,JSON.stringify({...getAchieved(),...bundle.ach}));}
   // Decay: meest recente timestamp per domein
   if(bundle.decay){
@@ -390,7 +390,7 @@ async function syncFromCloud(){
       if(data.profiel.xp)localStorage.setItem(XP_KEY,JSON.stringify({xp:data.profiel.xp}));
       if(data.profiel.sync)restoreSyncBundle(data.profiel.sync);
     }
-    // ── PROGRESS: NOOIT wissen — altijd mergen met lokale data ────────────
+    // ── PROGRESS: NOOIT wissen - altijd mergen met lokale data ────────────
     // Zo gaat er nooit voortgang verloren, ook niet bij netwerkproblemen
     ['havo','vwo'].forEach(lvl=>{
       const localProg=_safeLocalGet('progress_'+lvl,{});
@@ -611,7 +611,7 @@ function _showAccountPrompt(title, desc, onRegister){
       <div style="font-size:17px;font-weight:900;color:var(--dk,#e2e8f0);margin-bottom:6px">${title}</div>
       <div style="font-size:13px;color:var(--mu,#94a3b8);line-height:1.5">${desc}</div>
     </div>
-    <button id="acct-prompt-reg" style="display:block;width:100%;padding:14px;background:linear-gradient(135deg,#6366f1,#4f46e5);color:#fff;border:none;border-radius:14px;font-size:15px;font-weight:700;cursor:pointer;font-family:var(--font);margin-bottom:10px">Account aanmaken — gratis →</button>
+    <button id="acct-prompt-reg" style="display:block;width:100%;padding:14px;background:linear-gradient(135deg,#6366f1,#4f46e5);color:#fff;border:none;border-radius:14px;font-size:15px;font-weight:700;cursor:pointer;font-family:var(--font);margin-bottom:10px">Account aanmaken - gratis →</button>
     <button id="acct-prompt-login" style="display:block;width:100%;padding:12px;background:rgba(255,255,255,.07);color:var(--dk,#e2e8f0);border:none;border-radius:12px;font-size:14px;font-weight:600;cursor:pointer;font-family:var(--font);margin-bottom:8px">Al een account? Inloggen</button>
     <button id="acct-prompt-skip" style="display:block;width:100%;padding:8px;background:none;border:none;color:var(--mu,#94a3b8);font-size:13px;cursor:pointer;font-family:var(--font)">Niet nu</button>
   </div>`;

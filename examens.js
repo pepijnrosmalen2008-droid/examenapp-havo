@@ -1,5 +1,5 @@
 // ═══════════════════════════════════════════════════════════
-//  SLAGIO — EXAMEN DATA
+//  SLAGIO - EXAMEN DATA
 //  Echte eindexamens van examenblad.nl / alleexamens.nl
 //  Structuur: EXAMENS[vakId] = [ {...examen}, ... ]
 // ═══════════════════════════════════════════════════════════
@@ -34,7 +34,7 @@ const EXAMENS = {
           context: 'Jordan is sinds 1 januari 2000 als teamleider werkzaam bij Roads, een bedrijf dat helpt bij autopech. Op 1 januari 2002 werd zijn arbeidsovereenkomst voor bepaalde tijd wegens goed functioneren omgezet naar een arbeidsovereenkomst voor onbepaalde tijd.',
           vraag: 'Noem een voordeel voor Roads van medewerkers met een arbeidsovereenkomst voor onbepaalde tijd ten opzichte van een arbeidsovereenkomst voor bepaalde tijd.',
           antwoord: 'Medewerkers met een contract voor onbepaalde tijd zijn doorgaans loyaler en meer betrokken bij het bedrijf. Kennis en ervaring blijven behouden en er zijn minder wervings- en opleidingskosten.',
-          antwoord_rubric: '1 punt: een correct voordeel — bijv. meer betrokkenheid/loyaliteit, minder wervingskosten, kennis blijft behouden, medewerkers investeren meer in bedrijf.'
+          antwoord_rubric: '1 punt: een correct voordeel - bijv. meer betrokkenheid/loyaliteit, minder wervingskosten, kennis blijft behouden, medewerkers investeren meer in bedrijf.'
         },
         {
           nr: 2, opgave: 1, punten: 1, type: 'open',
@@ -82,7 +82,7 @@ const EXAMENS = {
         },
         {
           nr: 8, opgave: 2, punten: 3, type: 'berekening',
-          context: 'Informatiebron 1 — Investeringen:\n• Zeilboot aanschafprijs: €250.000\n• Installatiekosten vaarklaar maken: 8% van aanschafprijs\n• Inventaris: €5.000 (aangeschaft 1 jan 2025)\n\nInformatiebron 2 — Eigen vermogen vennoten:\nJoachim:\n• Pensioenuitkering contant maken: €100.000 op 1-1-2030 → contante waarde per 1-1-2025 (3% samengestelde interest, 5 jaar)\n• Betaalrekening: €18.739,12\n\nDeniz:\n• Aandelen FastNed: 3.000 aandelen gekocht à €10, verkoop 31-12-2024 à €30/aandeel\n• Betaalrekening: €15.000',
+          context: 'Informatiebron 1 - Investeringen:\n• Zeilboot aanschafprijs: €250.000\n• Installatiekosten vaarklaar maken: 8% van aanschafprijs\n• Inventaris: €5.000 (aangeschaft 1 jan 2025)\n\nInformatiebron 2 - Eigen vermogen vennoten:\nJoachim:\n• Pensioenuitkering contant maken: €100.000 op 1-1-2030 → contante waarde per 1-1-2025 (3% samengestelde interest, 5 jaar)\n• Betaalrekening: €18.739,12\n\nDeniz:\n• Aandelen FastNed: 3.000 aandelen gekocht à €10, verkoop 31-12-2024 à €30/aandeel\n• Betaalrekening: €15.000',
           vraag: 'Bereken het bedrag dat met crowdfunding moet worden geleend om de boot te kunnen kopen (zie informatiebronnen 1 en 2).',
           antwoord: 'Totale investering (infobron 1):\n• Zeilboot: €250.000 + 8% × €250.000 = €270.000\n• Inventaris: €5.000\n• Totaal: €275.000\n\nEigen vermogen Joachim (infobron 2):\n• CW pensioen: €100.000 / (1,03)^5 = €100.000 / 1,159274 = €86.260,88\n• Betaalrekening: €18.739,12\n• Totaal Joachim: €105.000\n\nEigen vermogen Deniz (infobron 2):\n• Aandelen: 3.000 × €30 = €90.000\n• Betaalrekening: €15.000\n• Totaal Deniz: €105.000\n\nTotaal eigen vermogen: €105.000 + €105.000 = €210.000\n\nCrowdfunding = €275.000 − €210.000 = €65.000',
           antwoord_rubric: '1 punt: correcte totale investering (€275.000). 1 punt: correcte eigen vermogens Joachim en Deniz (elk €105.000). 1 punt: correct crowdfunding bedrag (€65.000).'
@@ -96,7 +96,7 @@ const EXAMENS = {
         },
         {
           nr: 10, opgave: 2, punten: 5, type: 'berekening',
-          context: 'Informatiebron 3 — Opbrengsten verhuur 2025:\n• Periode 1 (2 mei – 22 juni): 6 weken à €3.750\n• Periode 2 (23 juni – 14 sept): 10 weken à €4.750\n• Periode 3 (15 sept – 31 okt): 4 weken à €3.750\n• Vroegboekkorting: 10% bij helft van de reserveringen per periode\n\nKosten 2025:\n• Afschrijving boot: (€270.000 − €50.000) / 20 jaar\n• Afschrijving inventaris: 5% × €5.000\n• Interestkosten crowdfunding: 3,5% over €65.000 (eerste jaar)\n• Overige kosten: €10.400 per jaar\n\nIn deze opgave blijven belastingen buiten beschouwing.',
+          context: 'Informatiebron 3 - Opbrengsten verhuur 2025:\n• Periode 1 (2 mei - 22 juni): 6 weken à €3.750\n• Periode 2 (23 juni - 14 sept): 10 weken à €4.750\n• Periode 3 (15 sept - 31 okt): 4 weken à €3.750\n• Vroegboekkorting: 10% bij helft van de reserveringen per periode\n\nKosten 2025:\n• Afschrijving boot: (€270.000 − €50.000) / 20 jaar\n• Afschrijving inventaris: 5% × €5.000\n• Interestkosten crowdfunding: 3,5% over €65.000 (eerste jaar)\n• Overige kosten: €10.400 per jaar\n\nIn deze opgave blijven belastingen buiten beschouwing.',
           vraag: 'Laat met een berekening van het verwachte resultaat van 2025 zien of ze gaan starten met het plan. Vul hiervoor de uitwerkbijlage in.',
           antwoord: 'OPBRENGSTEN:\nPeriode 1 (6 weken, €3.750, 10% korting bij helft):\n  3 × €3.750 × 0,90 = €10.125\n  3 × €3.750 = €11.250\n  Subtotaal: €21.375\n\nPeriode 2 (10 weken, €4.750):\n  5 × €4.750 × 0,90 = €21.375\n  5 × €4.750 = €23.750\n  Subtotaal: €45.125\n\nPeriode 3 (4 weken, €3.750):\n  2 × €3.750 × 0,90 = €6.750\n  2 × €3.750 = €7.500\n  Subtotaal: €14.250\n\nTotale opbrengsten: €80.750\n\nKOSTEN:\nAfschrijving boot: (€270.000 − €50.000) / 20 = €11.000\nAfschrijving inventaris: 5% × €5.000 = €250\nInterestkosten crowdfunding: 3,5% × €65.000 = €2.275\nOverige kosten: €10.400\nTotale kosten: €23.925\n\nVERWACHT RESULTAAT: €80.750 − €23.925 = €56.825\n\nResultaat is positief (€56.825 > 0) → Joachim en Deniz gaan starten met het plan.',
           antwoord_rubric: '2 punten: correcte totale opbrengsten (€80.750) inclusief vroegboekkorting. 2 punten: correcte totale kosten (€23.925) incl. afschrijvingen en interestkosten. 1 punt: correcte conclusie (resultaat €56.825 positief → ze starten).'
@@ -121,7 +121,7 @@ const EXAMENS = {
           nr: 13, opgave: 3, punten: 2, type: 'open',
           context: 'Levi vindt dat de onzekerheid over de bestemming van het resultaat over 2022 onvoldoende zekerheid biedt voor een hogere opbrengst van beleggen in aandelen Aegon ten opzichte van beleggen in obligaties.',
           vraag: 'Geef hiervoor een verklaring. Betrek in het antwoord de opbrengsten van beleggen in aandelen en obligaties.',
-          antwoord: 'De opbrengst van aandelen bestaat uit dividend. Dividend is afhankelijk van het besluit van de aandeelhoudersvergadering — het is niet zeker of en hoeveel het resultaat als dividend wordt uitgekeerd (het kan ook worden gereserveerd). De opbrengst van obligaties (rente) is daarentegen vast en zeker. Door de onzekerheid over het dividend bieden aandelen geen gegarandeerd hogere opbrengst dan obligaties.',
+          antwoord: 'De opbrengst van aandelen bestaat uit dividend. Dividend is afhankelijk van het besluit van de aandeelhoudersvergadering - het is niet zeker of en hoeveel het resultaat als dividend wordt uitgekeerd (het kan ook worden gereserveerd). De opbrengst van obligaties (rente) is daarentegen vast en zeker. Door de onzekerheid over het dividend bieden aandelen geen gegarandeerd hogere opbrengst dan obligaties.',
           antwoord_rubric: '1 punt: dividend (opbrengst aandelen) is onzeker / afhankelijk van dividendbesluit. 1 punt: rente (opbrengst obligaties) is vast en zeker.'
         },
         {
@@ -175,18 +175,18 @@ const EXAMENS = {
           context: 'Eva is na het behalen van haar havodiploma op 1 september 2021 gestart met de 3-jarige hbo-opleiding Finance & Control aan de Hogeschool van Amsterdam.',
           vraag: 'Noem een belang voor de samenleving van het verder studeren door Eva.',
           antwoord: 'Door verder te studeren vergroot Eva haar kennis en productiviteit, wat bijdraagt aan een hoger opgeleide beroepsbevolking, economische groei en hogere belastinginkomsten voor de overheid.',
-          antwoord_rubric: '1 punt: een correct maatschappelijk belang — bijv. hogere productiviteit / economische groei / meer belastinginkomsten / minder werkloosheid / hoger opleidingsniveau samenleving.'
+          antwoord_rubric: '1 punt: een correct maatschappelijk belang - bijv. hogere productiviteit / economische groei / meer belastinginkomsten / minder werkloosheid / hoger opleidingsniveau samenleving.'
         },
         {
           nr: 21, opgave: 5, punten: 3, type: 'berekening',
-          context: 'Studietijd Eva: 1 september 2021 – 31 augustus 2024 (36 maanden)\nBijbaan: €300/maand gedurende hele studietijd\n\nInformatiebron 4 — Collegegeld:\n• 2021-2022: €2.143 (eerste jaar: halvering wettelijk collegegeld)\n• 2022-2023: €2.209\n• 2023-2024: €2.314\n\nMaandelijkse uitgaven: €1.031 per maand (excl. collegegeld)\n\nBasisbeurs uitwonend (infobron 4):\n• 2021-2022: €0/maand\n• 2022-2023: €0/maand\n• 2023-2024: €469/maand',
+          context: 'Studietijd Eva: 1 september 2021 - 31 augustus 2024 (36 maanden)\nBijbaan: €300/maand gedurende hele studietijd\n\nInformatiebron 4 - Collegegeld:\n• 2021-2022: €2.143 (eerste jaar: halvering wettelijk collegegeld)\n• 2022-2023: €2.209\n• 2023-2024: €2.314\n\nMaandelijkse uitgaven: €1.031 per maand (excl. collegegeld)\n\nBasisbeurs uitwonend (infobron 4):\n• 2021-2022: €0/maand\n• 2022-2023: €0/maand\n• 2023-2024: €469/maand',
           vraag: 'Bereken het verwachte totale bedrag dat Eva gedurende haar 3-jarige studietijd tekort komt.',
           antwoord: 'INKOMSTEN:\nBijbaan: €300 × 36 maanden = €10.800\nBasisbeurs jaar 3 (2023-2024): €469 × 12 maanden = €5.628\nTotale inkomsten: €16.428\n\nUITGAVEN:\nCollegegeld:\n  Jaar 1 (halvering): €2.143 / 2 = €1.071,50\n  Jaar 2: €2.209\n  Jaar 3: €2.314\n  Totaal collegegeld: €5.594,50\n\nMaandelijkse kosten: €1.031 × 36 = €37.116\nTotale uitgaven: €5.594,50 + €37.116 = €42.710,50\n\nTEKORT: €42.710,50 − €16.428 = €26.282,50',
           antwoord_rubric: '1 punt: correcte inkomsten (€16.428). 1 punt: correcte uitgaven (€42.710,50) incl. halvering collegegeld jaar 1. 1 punt: correct tekort (€26.282,50).'
         },
         {
           nr: 22, opgave: 5, punten: 1, type: 'open',
-          context: 'Informatiebron 5 — ASN Ideaalsparen (saldo Eva < €25.000): 1,65% samengestelde interest per jaar\nInformatiebron 6 — DUO studielening: jaarlijks interestpercentage 0,46%\n\nEva heeft spaargeld op haar ASN-rekening. Ze kan kiezen: spaargeld opnemen óf lenen bij DUO.',
+          context: 'Informatiebron 5 - ASN Ideaalsparen (saldo Eva < €25.000): 1,65% samengestelde interest per jaar\nInformatiebron 6 - DUO studielening: jaarlijks interestpercentage 0,46%\n\nEva heeft spaargeld op haar ASN-rekening. Ze kan kiezen: spaargeld opnemen óf lenen bij DUO.',
           vraag: 'Waarom is het voor Eva financieel aantrekkelijker om te lenen bij DUO dan het opgebouwde bedrag op haar spaarrekening te gebruiken?',
           antwoord: 'De rente die Eva ontvangt op haar spaarsaldo (ASN Ideaalsparen: 1,65% per jaar) is hoger dan de rente die ze betaalt op de DUO-studielening (0,46% per jaar).\n\nDoor het spaargeld te laten staan en in plaats daarvan bij DUO te lenen, verdient Eva 1,65% spaarrente terwijl ze slechts 0,46% rente betaalt. Per saldo levert dit een voordeel van 1,19% per jaar op.',
           antwoord_rubric: '1 punt: spaarrente (1,65%) is hoger dan DUO-rente (0,46%), dus spaargeld laten staan levert meer op dan de DUO-rente kost.'
@@ -209,21 +209,21 @@ const EXAMENS = {
           nr: 25, opgave: 5, punten: 2, type: 'open',
           context: 'Naast een hypotheekadviseur zijn er nog andere beroepen betrokken bij de aankoop van een appartement.',
           vraag: 'Noem twee andere beroepen die betrokken zijn bij de aankoop van een appartement.',
-          antwoord: '1. Notaris — voor het opstellen en passeren van de koopakte en hypotheekakte.\n2. Makelaar — voor bemiddeling bij de aan- en verkoop van het appartement.',
+          antwoord: '1. Notaris - voor het opstellen en passeren van de koopakte en hypotheekakte.\n2. Makelaar - voor bemiddeling bij de aan- en verkoop van het appartement.',
           antwoord_rubric: '1 punt per correct beroep (max 2). Voorbeelden: notaris, makelaar, taxateur, bouwkundig inspecteur.'
         },
         {
           nr: 26, opgave: 5, punten: 2, type: 'berekening',
-          context: 'Informatiebron 5 — ASN Jeugdsparen (1,40% samengesteld/jaar, vast):\n• Storting 1: €6.500 op 1-1-2003\n• Storting 2: €7.500 op 1-1-2013\n• Op 1-1-2021 (18e verjaardag): omgezet naar ASN Ideaalsparen\n\nASN Ideaalsparen (saldo < €25.000): 1,65% samengesteld per jaar\n\nEva heeft het spaargeld NIET gebruikt. Kosten koper + verbouwing = €15.000.',
+          context: 'Informatiebron 5 - ASN Jeugdsparen (1,40% samengesteld/jaar, vast):\n• Storting 1: €6.500 op 1-1-2003\n• Storting 2: €7.500 op 1-1-2013\n• Op 1-1-2021 (18e verjaardag): omgezet naar ASN Ideaalsparen\n\nASN Ideaalsparen (saldo < €25.000): 1,65% samengesteld per jaar\n\nEva heeft het spaargeld NIET gebruikt. Kosten koper + verbouwing = €15.000.',
           vraag: 'Toon aan dat het spaargeld per 1 januari 2026 genoeg is om de kosten koper en de verbouwingskosten te betalen.',
-          antwoord: 'Stap 1 — Saldo op 1-1-2021 (ASN Jeugdsparen, 1,40%/jaar):\n• €6.500 × (1,014)^18 = €6.500 × 1,28434 = €8.348,21\n• €7.500 × (1,014)^8  = €7.500 × 1,11764 = €8.382,33\n• Saldo op 1-1-2021: €16.730,54\n\nStap 2 — Saldo op 1-1-2026 (ASN Ideaalsparen, 1,65%/jaar, 5 jaar):\n• €16.730,54 × (1,0165)^5 = €16.730,54 × 1,08523 = €18.156,–\n\nConclusie: €18.156 > €15.000 → het spaargeld is voldoende.',
+          antwoord: 'Stap 1 - Saldo op 1-1-2021 (ASN Jeugdsparen, 1,40%/jaar):\n• €6.500 × (1,014)^18 = €6.500 × 1,28434 = €8.348,21\n• €7.500 × (1,014)^8  = €7.500 × 1,11764 = €8.382,33\n• Saldo op 1-1-2021: €16.730,54\n\nStap 2 - Saldo op 1-1-2026 (ASN Ideaalsparen, 1,65%/jaar, 5 jaar):\n• €16.730,54 × (1,0165)^5 = €16.730,54 × 1,08523 = €18.156,–\n\nConclusie: €18.156 > €15.000 → het spaargeld is voldoende.',
           antwoord_rubric: '1 punt: correct saldo op 1-1-2021 (≈ €16.730). 1 punt: correct saldo op 1-1-2026 (≈ €18.156) met conclusie dat dit ≥ €15.000 is.'
         },
         {
           nr: 27, opgave: 5, punten: 4, type: 'berekening',
-          context: 'Hypothecaire lening Eva (gesloten 1-1-2026):\n• Bedrag: €210.000 | Looptijd: 30 jaar | Lineaire aflossing\n• Interestpercentage: 0,33% per maand\n• Betaling aan eind van de maand (1e betaling 31-1-2026)\n• Belastingvoordeel op interest: 36,97%\n\nInformatiebron 6 — DUO studielening van Eva:\n• Schuldbedrag op 1-1-2026: €27.045\n• Maandelijks termijnbedrag: €145,60\n• Jaarlijks interestpercentage: 0,46%',
+          context: 'Hypothecaire lening Eva (gesloten 1-1-2026):\n• Bedrag: €210.000 | Looptijd: 30 jaar | Lineaire aflossing\n• Interestpercentage: 0,33% per maand\n• Betaling aan eind van de maand (1e betaling 31-1-2026)\n• Belastingvoordeel op interest: 36,97%\n\nInformatiebron 6 - DUO studielening van Eva:\n• Schuldbedrag op 1-1-2026: €27.045\n• Maandelijks termijnbedrag: €145,60\n• Jaarlijks interestpercentage: 0,46%',
           vraag: 'Bereken de totale uitgaven aan beide leningen van Eva in februari 2026. Vul hiervoor de uitwerkbijlage in.',
-          antwoord: 'HYPOTHECAIRE LENING — FEBRUARI 2026:\nMaandelijkse aflossing = €210.000 / (30 × 12) = €583,33\n\nJanuari 2026 (eerst berekenen om restschuld te weten):\n  Restschuld begin jan = €210.000\n  Interest jan = 0,33% × €210.000 = €693,–\n  Belastingvoordeel jan = 36,97% × €693 = €256,20\n  Netto interest jan = €693 − €256,20 = €436,80\n\nRestschuld begin februari = €210.000 − €583,33 = €209.416,67\n  Interest feb = 0,33% × €209.416,67 = €691,07\n  Belastingvoordeel feb = 36,97% × €691,07 = €255,47\n  Netto interest feb = €691,07 − €255,47 = €435,60\n  Totaal hypotheek feb = €583,33 + €435,60 = €1.018,93\n\nDUO STUDIELENING — FEBRUARI 2026:\nVast maandelijks termijnbedrag = €145,60\n\nTOTAAL UITGAVEN FEBRUARI 2026:\n€1.018,93 + €145,60 = €1.164,53',
+          antwoord: 'HYPOTHECAIRE LENING - FEBRUARI 2026:\nMaandelijkse aflossing = €210.000 / (30 × 12) = €583,33\n\nJanuari 2026 (eerst berekenen om restschuld te weten):\n  Restschuld begin jan = €210.000\n  Interest jan = 0,33% × €210.000 = €693,–\n  Belastingvoordeel jan = 36,97% × €693 = €256,20\n  Netto interest jan = €693 − €256,20 = €436,80\n\nRestschuld begin februari = €210.000 − €583,33 = €209.416,67\n  Interest feb = 0,33% × €209.416,67 = €691,07\n  Belastingvoordeel feb = 36,97% × €691,07 = €255,47\n  Netto interest feb = €691,07 − €255,47 = €435,60\n  Totaal hypotheek feb = €583,33 + €435,60 = €1.018,93\n\nDUO STUDIELENING - FEBRUARI 2026:\nVast maandelijks termijnbedrag = €145,60\n\nTOTAAL UITGAVEN FEBRUARI 2026:\n€1.018,93 + €145,60 = €1.164,53',
           antwoord_rubric: '1 punt: correcte maandelijkse hypotheekaflossing (€583,33). 1 punt: correcte netto interest hypotheek februari (€435,60) na belastingvoordeel 36,97%. 1 punt: DUO termijnbedrag februari (€145,60). 1 punt: correct totaal (€1.164,53).'
         },
 
@@ -282,7 +282,7 @@ const EXAMENS = {
 <p class="ex-al"><b class="ex-aln">2</b> De eerste Emma-video die ik bekeek, had de aantrekkelijke titel <em>What I do in a day *at home*</em>. Vermoedelijk gaf een gevoel van herkenning de doorslag om het filmpje aan te klikken. Ik was ook de hele dag *at home*; benieuwd hoe iemand anders zich erdoorheen sloeg.</p>
 <p class="ex-al"><b class="ex-aln">3</b> Het is lastig te omschrijven wat ik aantrof in haar filmpjes, nog lastiger uit te leggen waarom ik steeds meer wilde zien. Hoofdactiviteit in de meeste vlogs van Emma is koffiezetten en filosoferen over de vraag hoeveel hazelnootmelk ze erbij zal doen. Verder speelt ze Fortnite in bed en denkt ze hardop na over de vraag hoe het kan dat ze acht uur per dag op TikTok zit.</p>
 <p class="ex-al"><b class="ex-aln">4</b> Ik heb ooit gelezen dat alleenstaande Koreanen tijdens het eten video's opzetten van andere mensen die eten, zodat ze zich niet eenzaam voelen. Destijds vond ik dat een treurig idee, maar na een dag of tien lunchen met Emma kon ik het goed begrijpen. Ik kreeg een enorm veilig gevoel van het idee dat er tijdens de lunch altijd iemand tegen me zou praten, terwijl ik niets terug hoefde te zeggen en ik mijn eenzijdige gesprekspartner uit kon zetten wanneer het mij uitkwam.</p>
-<p class="ex-al"><b class="ex-aln">5</b> Ik had ook wel eens gelezen – en zelfs geschreven – over parasociale relaties. En nu was ik er ongemerkt zelf één aangegaan. De term ontstond toen sociologen in de jaren vijftig onderzoek deden naar de relatie tussen tv-persoonlijkheden en hun publiek. Door dagelijks of wekelijks naar dezelfde persoonlijkheden te kijken, ontwikkelden mensen de illusie dat ze hun tv-helden kenden. En daardoor wilden ze elke keer weer hetzelfde programma zien.</p>
+<p class="ex-al"><b class="ex-aln">5</b> Ik had ook wel eens gelezen - en zelfs geschreven - over parasociale relaties. En nu was ik er ongemerkt zelf één aangegaan. De term ontstond toen sociologen in de jaren vijftig onderzoek deden naar de relatie tussen tv-persoonlijkheden en hun publiek. Door dagelijks of wekelijks naar dezelfde persoonlijkheden te kijken, ontwikkelden mensen de illusie dat ze hun tv-helden kenden. En daardoor wilden ze elke keer weer hetzelfde programma zien.</p>
 <p class="ex-al"><b class="ex-aln">6</b> Vandaag zijn we omringd door potentiële parasociale relaties: op zo'n beetje elk medium vechten vloggers, influencers en youtubers om onze eenzijdige affectie. Er wordt dan ook veel onderzoek gedaan naar de parasociale relaties die mensen aangaan met hun online idolen. Eén recente bevinding is dat mensen sneller geneigd zijn te gaan sporten als ze een parasociale relatie aangaan met een sport-influencer: een uurtje zweten met een digitale metgezel is leuker dan in je eentje, ook als diegene jou helemaal niet kent.</p>
 <p class="ex-al"><b class="ex-aln">7</b> Ook werd duidelijk dat angstig aangelegde mensen sneller parasociale relaties aangaan, wat de kans op bijvoorbeeld een YouTube-verslaving flink vergroot. En tijdens de coronalockdowns bloeiden er significant meer parasociale relaties op, ook dat blijkt uit onderzoek.</p>
 <p class="ex-al"><b class="ex-aln">8</b> "Ze voelen als mijn vriendinnen." Ik zat in een café met een programmamaker, ter voorbereiding op een avond over sociale media en de invloed daarvan. De programmamaker had het over moedervloggers. Sinds ze kinderen had, zei ze, was ze in beslag genomen door deze jonge vrouwen. Het begon onschuldig: af en toe even kijken hoe een andere moeder het ontbijt voor de kinderen maakte, de kinderkamer inrichtte, met haar vriend kibbelde over wie er moest oppassen. Maar op zeker moment moest de programmamaker altijd meteen naar de nieuwe video's van haar favoriete vloggers kijken. Ook als haar kinderen huilden, haar man om aandacht vroeg, het eten nog gekookt moest worden of de fles nog opgewarmd. "Het voelde als een soort ontsnapping. Alsof ik mijn hectische leven achter me kon laten, even kon verdwijnen in hun wereld", zo legde ze me uit.</p>
@@ -296,14 +296,14 @@ const EXAMENS = {
 <p class="ex-al"><b class="ex-aln">16</b> Volgers en gevolgden: ze zitten allemaal vast in een parasociale relatie. De één kan alleen maar kijken en luisteren, de ander alleen maar praten, filmen en delen. Ze ontmoeten elkaar nergens.</p>
 <p class="ex-al"><b class="ex-aln">17</b> Aan het einde van <em>Her</em> wordt Theodore verlaten door zijn AI-geliefde. "Theodore is te saai voor Samantha", schrijft Donner. "Hij daagt haar niet meer uit." Ze vertrekt samen met andere besturingssystemen naar een volledig digitale wereld. Volgens Donner laat Theodore zien "wat er met een mens gebeurt als alles om hem heen gericht is op positiviteit en gemak." Met zo'n houding kun je nooit duurzame relaties aangaan, denkt Donner. Immers, "wat is liefde anders dan frictie? Anders dan misverstanden en onbegrip?"</p>
 <p class="ex-al"><b class="ex-aln">18</b> Tja, wat is liefde? Je hebt van die suffe tekeningetjes die daar antwoord op geven. "Liefde is... samen groeien", en dan twee poppetjes erbij die gezapig een plant water geven. In tijden van digitalisering kun je ook zeggen: "Liefde is... je favoriete vlog voor iemand op pauze zetten." Of: "Liefde is... samen lunchen, zonder scherm." Maar misschien is liefde ook: accepteren dat je vriend of vriendin af en toe liever met een vlogger afspreekt dan met jou. Dat je partner soms even aan jullie huishouden wil ontsnappen via een YouTube-filmpje. Zolang de wereld om ons heen het moeilijker maakt om echte, duurzame relaties aan te gaan, mogen we ons af en toe best troosten met een vlog.</p>
-<p class="ex-al"><b class="ex-aln">19</b> Emma maakte gelukkig onlangs haar rentree op YouTube. Ze zette weer koffie, deed er hazelnootmelk bij, ging naar de supermarkt, at sushi – alles zwijgend dit keer, zonder haar bekende sarcastische gemompel. Hoewel ik blij was dat ze een nieuwe video online had gezet, voelde het toch raar om voor mijn plezier en ontspanning te kijken naar iemand die overduidelijk mentaal niet in orde was. Moest ik me zorgen maken om Emma? Moest ik me schuldig voelen? YouTube afzetten?</p>
-<p class="ex-al"><b class="ex-aln">20</b> De titel van Emma's video vatte perfect samen wat we op dat moment – dwars door onze digitale parasociale relatie heen – misschien wel tegelijk voelden. "It will be ok."</p>
+<p class="ex-al"><b class="ex-aln">19</b> Emma maakte gelukkig onlangs haar rentree op YouTube. Ze zette weer koffie, deed er hazelnootmelk bij, ging naar de supermarkt, at sushi - alles zwijgend dit keer, zonder haar bekende sarcastische gemompel. Hoewel ik blij was dat ze een nieuwe video online had gezet, voelde het toch raar om voor mijn plezier en ontspanning te kijken naar iemand die overduidelijk mentaal niet in orde was. Moest ik me zorgen maken om Emma? Moest ik me schuldig voelen? YouTube afzetten?</p>
+<p class="ex-al"><b class="ex-aln">20</b> De titel van Emma's video vatte perfect samen wat we op dat moment - dwars door onze digitale parasociale relatie heen - misschien wel tegelijk voelden. "It will be ok."</p>
 <div class="ex-tekst-bron-voet">Doortje Smithuijsen, Trouw, 29 januari 2022 · <em>Filosoof en journalist</em></div>
 <div class="ex-tekst-notities"><b>Noten</b><br>1 coronalockdown: periode waarin het bezoeken van mensen en voorzieningen ernstig was beperkt ter bestrijding van de coronapandemie<br>2 What I do in a day at home: Wat ik doe tijdens een dag thuis<br>3 AI-systeem: systeem gebaseerd op kunstmatige intelligentie<br>4 on demand: op bestelling<br>5 It will be ok: Het komt goed</div>`
         },
         {
           id: 't1f', deel: 1, nr: '1 (fragment)',
-          titel: 'Tekstfragment 1 — VRIEND',
+          titel: 'Tekstfragment 1 - VRIEND',
           bron: 'Toon Hermans, Groot versjesboek, 2005',
           inhoud: `<div class="ex-gedicht">
 <p class="ex-al-gedicht">Je hebt iemand nodig,</p>
@@ -327,11 +327,11 @@ const EXAMENS = {
 <p class="ex-al"><b class="ex-aln">3</b> "Maar… maar… staat die flitsbezorging niet haaks op trends als mindfulness en vertraging?", vraag ik na lezing van het stuk. Mijn gesprekspartners kijken me meewarig aan. De wereld is groter dan jouw brave bubbeltje, zeggen ze; snellere service wint altijd.</p>
 <p class="ex-al"><b class="ex-aln">4</b> Waarom wind ik me zo op? Is het nostalgie naar de tijd dat verlangen kon bestaan zonder onmiddellijk bevredigd te worden? Een beetje. Is het ergernis over de bezorgers, die verwikkeld lijken in ritten op leven en dood? Ja, ook. Maar het is meer dan dat, concludeer ik uiteindelijk. Hoeveel ik er zelf ook van houd, ik voel een instinctieve weerstand tegen nóg meer gemak. De vraag is namelijk: waar houdt het op?</p>
 <p class="ex-al"><b class="ex-aln">5</b> Zoals water naar het laagste punt vloeit, zo beweegt de mens naar de makkelijkste optie, oftewel: de optie met de minste frictie. 'Frictie' betekent zoiets als weerstand of wrijving. Filosoof Miriam Rasch geeft in haar essayboek <em>Frictie</em> allerlei voorbeelden van 'frictieloos design': apps als Uber, die je een interactie met de chauffeur besparen, en de automatische antwoordsuggesties van Gmail. Door dit soort technologie verspillen we steeds minder tijd, en dat is natuurlijk prettig. Maar is frictieloosheid altijd winst?</p>
-<p class="ex-al"><b class="ex-aln">6</b> Dat frictie ook waardevol kan zijn, erkennen we grappig genoeg wel als het gaat om kunst. Goede kunst moet 'schuren', onvoorspelbaar zijn, ons uit ons dagelijks stramien halen. We wantrouwen kunst die te soepel naar binnen glijdt. Ik word wel eens gepest omdat ik van Dire Straits houd – te makkelijk, aldus de fijnproevers.</p>
+<p class="ex-al"><b class="ex-aln">6</b> Dat frictie ook waardevol kan zijn, erkennen we grappig genoeg wel als het gaat om kunst. Goede kunst moet 'schuren', onvoorspelbaar zijn, ons uit ons dagelijks stramien halen. We wantrouwen kunst die te soepel naar binnen glijdt. Ik word wel eens gepest omdat ik van Dire Straits houd - te makkelijk, aldus de fijnproevers.</p>
 <p class="ex-al"><b class="ex-aln">7</b> Frictie verstoort de automatische piloot; daarom is ze belangrijk voor kunst en verstorend voor commercie. Een consument moet gedachteloos kunnen scrollen, klikken en betalen. Die gedachteloosheid, het gemak waarmee we door allerlei dagelijkse handelingen bewegen, heeft iets verslavends. En precies dat is waarover ik me zorgen maak. Hoe minder frictie er is, vermoed ik, hoe lager onze tolerantie ervoor wordt. We zouden nu een woedeaanval krijgen van de tijd die het vroeger kostte om de weg te vinden in een vreemde stad. Misschien vinden we het over tien jaar wel een olympische prestatie om zelf naar de bakker te lopen.</p>
 <p class="ex-al"><b class="ex-aln">8</b> Het ene gemak lokt het andere uit. Wat nou als we door onze lage frictietolerantie dingen opgeven die we eigenlijk, als we erover nadenken, belangrijker vinden dan wat extra gemak? Neem gezichtsherkennings­technologie: veel mensen vinden dat nu nog te ver gaan. Ondertussen wordt het in Rusland al gebruikt als betaalmiddel in de metro. "Waarom niet, het lijkt me wel handig", aldus een laconieke Rus gisteren in NRC. In Schotland gebruiken negen schoolkantines gezichtsherkenning aan de kassa: alles voor de efficiëntie.</p>
 <p class="ex-al"><b class="ex-aln">9</b> In de EU zal dit niet gebeuren, zeggen deskundigen. Dat mag niet van de Europese privacywetgeving. Maar gezichtsherkenning wordt wel steeds meer ingezet als toegangscontrole bij kantoren en festivals. Zal het water niet ook hier naar het laagste punt vloeien? Hoe verleidelijk is het om nog meer dingen gedachteloos te doen!</p>
-<p class="ex-al"><b class="ex-aln">10</b> Principes leggen het af tegen gemakzucht, dat zal iedereen herkennen die wel eens routineus op 'alle cookies accepteren' heeft geklikt. Juist omdat het zo werkt, bezie ik mijn gemakzucht met argwaan. Die moet getemd worden, niet aangemoedigd – zoals de flitsbezorgers doen.</p>
+<p class="ex-al"><b class="ex-aln">10</b> Principes leggen het af tegen gemakzucht, dat zal iedereen herkennen die wel eens routineus op 'alle cookies accepteren' heeft geklikt. Juist omdat het zo werkt, bezie ik mijn gemakzucht met argwaan. Die moet getemd worden, niet aangemoedigd - zoals de flitsbezorgers doen.</p>
 <div class="ex-tekst-bron-voet">Floor Rusman, NRC Handelsblad, 23 oktober 2021 · <em>Redacteur bij NRC Handelsblad</em></div>
 <div class="ex-tekst-notities"><b>Noot</b><br>1 Dire Straits: Britse rockband actief van 1977–1995</div>`
         },
@@ -339,7 +339,7 @@ const EXAMENS = {
           id: 't3', deel: 3, nr: 3,
           titel: 'Regels in de ruimte',
           bron: 'Vier bronnen · NRC Handelsblad / intermediair.nl, 2021',
-          inhoud: `<div class="ex-bron-hdr">Bron 1 — De ruimte is van cruciaal belang voor de aarde, en daarom zijn er regels nodig</div>
+          inhoud: `<div class="ex-bron-hdr">Bron 1 - De ruimte is van cruciaal belang voor de aarde, en daarom zijn er regels nodig</div>
 <p class="ex-al"><b class="ex-aln">1</b> Met een testvlucht van zijn Virgin Galactic-ruimtevliegtuig schoot multimiljardair Richard Branson in juli 2021 door de stratosfeer. Zijn jongensdroom kwam uit: vier minuten zweefde hij met zijn vijfkoppige crew gewichtloos boven de aarde. De bijzondere trip had hij speciaal vervroegd om Amazon-tycoon Jeff Bezos voor te zijn. Bezos stapte anderhalve week later in zijn Blue Origin-raket.</p>
 <p class="ex-al"><b class="ex-aln">2</b> De nieuwe space race ging niet tussen rivaliserende staten, maar tussen ijdele miljardairs. Na de aankondiging van Bransons lancering liet Bezos in een wrevelige reactie weten zijn rivaal een goede reis te wensen, ook al zou die officieel de ruimte niet ingaan. De tachtigkilometergrens die 'SpaceShipTwo Unity 22' aantikte, werd in de jaren vijftig door de NASA bestempeld tot begin van de ruimte, maar internationaal wordt de grens van honderd kilometer boven de aarde aangehouden.</p>
 <p class="ex-al"><b class="ex-aln">3</b> De boodschap was duidelijk: Branson mocht eerder zijn, Bezos ging hoger. Baas boven baas. En dan is er nóg een baas: Elon Musk, die met zijn bedrijf SpaceX eerder al de eerste commerciële partij was die een bemenste ruimtevlucht in een baan rond de aarde kreeg.</p>
@@ -356,7 +356,7 @@ const EXAMENS = {
 <p class="ex-al"><b class="ex-aln">14</b> Er is betere regelgeving nodig. Hiervoor zou de internationale gemeenschap een voorbeeld kunnen nemen aan Antarctica. Overheden moeten overeenkomen dat het gebied buiten de dampkring niet voor commerciële doeleinden mag worden geëxploiteerd.</p>
 <p class="ex-al"><b class="ex-aln">15</b> Het heelal heeft ons nog van alles te leren, over onze oorsprong en onze toekomst. De sterrenhemel kan ons helpen verwondering en relativering te vinden. Maar daarvoor moet de ruimte wel de ruimte blijven. En niet het speelveld van groot geld en dito ego's.</p>
 <div class="ex-tekst-bron-voet">Marjolijn van Heemstra, NRC Handelsblad, 16 juli 2021</div>
-<div class="ex-bron-hdr">Bron 2 — Afbeelding (cartoon)</div>
+<div class="ex-bron-hdr">Bron 2 - Afbeelding (cartoon)</div>
 <p class="ex-al-grijs">De cartoon is niet opgenomen in de digitale versie. Raadpleeg het tekstboekje.</p>
 <div class="ex-bron-hdr">Bron 3</div>
 <p class="ex-al"><b class="ex-aln">1</b> Het ideaalbeeld van Musk is om Mars te koloniseren. Bezos en Branson gaan niet eens naar een andere planeet, maar schieten ieder in hun eigen raket zo'n 100 kilometer omhoog, koekeloeren daar een paar minuten in de rondte, en zijn binnen een kwartier weer terug op aard. Het is je reinste decadentie.</p>
@@ -375,7 +375,7 @@ const EXAMENS = {
       ],
       vragen: [
 
-        // ── OPGAVE 1: Tekst 1 — Mijn ideale vriendin: de vlogger ──────────
+        // ── OPGAVE 1: Tekst 1 - Mijn ideale vriendin: de vlogger ──────────
         {
           nr: 1, opgave: 1, punten: 1, type: 'open',
           tekst_id: 't1', context: 'Tekst 1',
@@ -394,7 +394,7 @@ const EXAMENS = {
           nr: 3, opgave: 1, punten: 1, type: 'open',
           tekst_id: 't1', context: 'Tekst 1',
           vraag: 'Welke argumentatiestrategie gebruikt de auteur in de laatste alinea? Noem de naam van de strategie.',
-          antwoord: 'Beroep op autoriteit / beroep op emotie / voorbeeld / analogie — zie correctievoorschrift voor de specifieke strategie bij deze tekst.',
+          antwoord: 'Beroep op autoriteit / beroep op emotie / voorbeeld / analogie - zie correctievoorschrift voor de specifieke strategie bij deze tekst.',
           antwoord_rubric: '1 punt: correcte naam van de argumentatiestrategie.'
         },
         {
@@ -412,12 +412,12 @@ const EXAMENS = {
           antwoord_rubric: '1 punt: standpunt (ja/nee). 1 punt: onderbouwing met concrete verwijzing naar de tekst.'
         },
 
-        // ── OPGAVE 2: Tekst 2 — De gedachteloosheid van de Gorillas-fiets ─
+        // ── OPGAVE 2: Tekst 2 - De gedachteloosheid van de Gorillas-fiets ─
         {
           nr: 6, opgave: 2, punten: 1, type: 'open',
           tekst_id: 't2', context: 'Tekst 2',
           vraag: 'Wat is de toon van de eerste twee alinea\'s? Noem de toon en onderbouw met één citaat.',
-          antwoord: 'Ironisch / serieus / kritisch / persoonlijk — zie correctievoorschrift. Citaat ter onderbouwing.',
+          antwoord: 'Ironisch / serieus / kritisch / persoonlijk - zie correctievoorschrift. Citaat ter onderbouwing.',
           antwoord_rubric: '1 punt: correcte toon met passend citaat.'
         },
         {
@@ -431,7 +431,7 @@ const EXAMENS = {
           nr: 8, opgave: 2, punten: 2, type: 'open',
           tekst_id: 't2', context: 'Tekst 2',
           vraag: 'Welke twee doelen wil de auteur met deze tekst bereiken? Noem beide doelen.',
-          antwoord: 'Doel 1: informeren (kennis overbrengen). Doel 2: overtuigen / activeren / amuseren — afhankelijk van tekst.',
+          antwoord: 'Doel 1: informeren (kennis overbrengen). Doel 2: overtuigen / activeren / amuseren - afhankelijk van tekst.',
           antwoord_rubric: '1 punt per correct doel (max 2).'
         },
         {
@@ -442,7 +442,7 @@ const EXAMENS = {
           antwoord_rubric: '1 punt: correcte uitleg van de betekenis van de titel in eigen woorden.'
         },
 
-        // ── OPGAVE 3: Tekst 3 — Regels in de ruimte (4 bronnen) ───────────
+        // ── OPGAVE 3: Tekst 3 - Regels in de ruimte (4 bronnen) ───────────
         {
           nr: 10, opgave: 3, punten: 1, type: 'open',
           tekst_id: 't3', context: 'Tekst 3 (Bronnen 1–4)',
@@ -465,7 +465,7 @@ const EXAMENS = {
           antwoord_rubric: '1 punt per correct bezwaar in eigen woorden (max 2).'
         },
 
-        // ── OPGAVE 3 (vervolg): Bron 1 — structuur & argumentatie ──────────
+        // ── OPGAVE 3 (vervolg): Bron 1 - structuur & argumentatie ──────────
         {
           nr: 13, opgave: 3, punten: 2, type: 'open',
           tekst_id: 't3', context: 'Bron 1 (Regels in de ruimte)',
@@ -475,7 +475,7 @@ const EXAMENS = {
         },
         {
           nr: 14, opgave: 3, punten: 1, type: 'mc',
-          tekst_id: 't3', context: 'Bron 1 — alinea 6',
+          tekst_id: 't3', context: 'Bron 1 - alinea 6',
           vraag: 'In alinea 6 van bron 1 worden de groepen "wij, aardgebonden stakkers" en "een klein clubje interplanetaire adel" tegenover elkaar gezet. Wat wordt aangetoond door deze groepen tegenover elkaar te zetten?',
           opties: [
             'De gewone mens kan alleen afwachtend toekijken, terwijl de miljardairs ongecontroleerd hun gang kunnen gaan in de ruimte.',
@@ -484,19 +484,19 @@ const EXAMENS = {
             'De rijken amuseren zich in de ruimte, terwijl de gewone mens aan het werk is op de aarde.'
           ],
           correct: 0,
-          antwoord: 'A — De gewone mens kan alleen afwachtend toekijken, terwijl de miljardairs ongecontroleerd hun gang kunnen gaan in de ruimte.',
+          antwoord: 'A - De gewone mens kan alleen afwachtend toekijken, terwijl de miljardairs ongecontroleerd hun gang kunnen gaan in de ruimte.',
           antwoord_rubric: '1 punt: A correct.'
         },
         {
           nr: 15, opgave: 3, punten: 1, type: 'open',
-          tekst_id: 't3', context: 'Bron 1 — alinea 10 t/m 13',
+          tekst_id: 't3', context: 'Bron 1 - alinea 10 t/m 13',
           vraag: 'In alinea 10 tot en met 13 van bron 1 lees je een verwijt richting de ruimtevaartondernemers Bezos, Branson en Musk. Vat dit verwijt samen in maximaal 15 woorden.',
           antwoord: 'Ze framen hun plannen als filantropisch/goed voor de mensheid, terwijl het om ego en geld gaat.',
           antwoord_rubric: '1 punt: kern van verwijt correct (schijnfilantropie / mythevorming / eigenbelang) in max 15 woorden.'
         },
         {
           nr: 16, opgave: 3, punten: 2, type: 'open',
-          tekst_id: 't3', context: 'Bron 1 — alinea 10 t/m 12',
+          tekst_id: 't3', context: 'Bron 1 - alinea 10 t/m 12',
           vraag: '"Het ligt dus wat genuanceerder dan Branson het doet voorkomen."\nGeef aan welke uitspraak van Branson hier wordt bekritiseerd en welke twee nuanceringen er worden aangebracht. Baseer je antwoord op alinea 10 tot en met 12 van bron 1.',
           antwoord: 'Uitspraak: Branson beweert dat ruimtetoerisme het "overzichtseffect" bij zo veel mogelijk mensen kan opwekken. Nuancering 1: de vraag is of vier minuten zweven op tachtig kilometer hoogte een overzichtseffect oplevert. Nuancering 2: onderzoek wijst uit dat een enkele keer kijken niet genoeg is voor een langdurige impact.',
           antwoord_rubric: '1 punt: uitspraak van Branson correct (overzichtseffect / ruimtetoerisme voor breed publiek). 1 punt: beide nuanceringen correct (hoogte onvoldoende / eenmalig kijken onvoldoende).'
@@ -505,7 +505,7 @@ const EXAMENS = {
           nr: 17, opgave: 3, punten: 3, type: 'open',
           tekst_id: 't3', context: 'Bronnen 3 en 4',
           vraag: 'Ook in bron 3 en 4 staan argumenten voor en tegen commerciële activiteiten in de ruimte. Noteer per bron één argument tégen en één argument vóór. (Het argument tégen in bron 3 is al gegeven: "Commerciële ruimtevaart is een vorm van decadentie.")',
-          antwoord: 'Bron 3 — Vóór: door ruimtevaartondernemers zijn raketten goedkoper en duurzamer geworden (recyclebare materialen) / ontdekken leidt tot nieuwe mogelijkheden. Bron 4 — Tégen: risico\'s (asteroïde kan neerstorten / getijverandering) of onrechtvaardigheid (recht van de sterkste). Bron 4 — Vóór: kansen voor winnen van grondstoffen / permanente bewoning in ruimte komt dichterbij.',
+          antwoord: 'Bron 3 - Vóór: door ruimtevaartondernemers zijn raketten goedkoper en duurzamer geworden (recyclebare materialen) / ontdekken leidt tot nieuwe mogelijkheden. Bron 4 - Tégen: risico\'s (asteroïde kan neerstorten / getijverandering) of onrechtvaardigheid (recht van de sterkste). Bron 4 - Vóór: kansen voor winnen van grondstoffen / permanente bewoning in ruimte komt dichterbij.',
           antwoord_rubric: '1 punt per correct argument (max 3; zie correctievoorschrift voor puntenverdeling per bron).'
         },
         {
@@ -575,11 +575,11 @@ const EXAMENS = {
           bron: 'Thomas Moore Devlin, babbel.com, 2019',
           inhoud: `<p class="ex-al"><b class="ex-aln">1</b> Have y'all heard? "Y'all" is in the mainstream now. While historically associated with the southern United States, "y'all" is becoming a popular choice for people who want to address multiple people. The rise of "y'all" fills a lexical hole in English that's been around for a long time: the lack of a second-person plural pronoun.</p>
 <p class="ex-al"><b class="ex-aln">2</b> Whether you've embraced "y'all" or prefer a different way of referring to a group of people, it's worth knowing about the history of the second-person plural in English. It combines Old English, regional dialects, African American Vernacular English (AAVE) and gendered language all into a single story. So yes, "y'all" really has it all.</p>
-<p class="ex-al"><b class="ex-aln">3</b> Pronouns are a closed class of words. That means it is very, very rare for new pronouns to arise (compare that to open class words like verbs and nouns – new ones are added to our lexicon all the time). Creating a new second-person plural pronoun that everyone would use, then, is difficult. What's happened instead is that many different pronouns have appeared in various parts of the world.</p>
+<p class="ex-al"><b class="ex-aln">3</b> Pronouns are a closed class of words. That means it is very, very rare for new pronouns to arise (compare that to open class words like verbs and nouns - new ones are added to our lexicon all the time). Creating a new second-person plural pronoun that everyone would use, then, is difficult. What's happened instead is that many different pronouns have appeared in various parts of the world.</p>
 <p class="ex-al"><b class="ex-aln">4</b> The two most popular second-person plural pronouns (at least in the United States) are "y'all" and "you guys". As of right now, "you guys" is a far more popular choice than "y'all," but it's facing a reckoning at the moment. There's disagreement as to whether "you guys" is a gendered term or not. On the one hand, at this point people refer to other people as "guys" no matter the gender. On the other, "guys" explicitly originated as a term referring to men, and so it joins a pattern of terms originally meaning "men" that are now used to refer to all people.</p>
 <p class="ex-al"><b class="ex-aln">5</b> The argument against "you guys" is still mainly made by the minority, and as far as language usage goes it can seem like a minor point. But as people make the argument for a more inclusive term, they turn to one other option: "y'all".</p>
 <p class="ex-al"><b class="ex-aln">6</b> There are quite a few reasons for the rise of "y'all" over the past decade. As we mentioned earlier, it's a gender-neutral option, and thus some linguists are advocating for its adoption by more people. Plus, the mainstream use of AAVE has become more and more common. Social media is also a major contributor here, breaking down geographic boundaries. This has allowed the word to flourish.</p>
-<p class="ex-al"><b class="ex-aln">7</b> "Y'all" has a long way to go before becoming part of Standard English, or even Standard American English, but it's not entirely far-fetched that it might. It's an incredibly versatile term – it can also be used to address a single person, or you can use "all y'all" to widen the scope of who you're talking to – and it's more concise than most of the other second-person plural pronouns mentioned before.</p>
+<p class="ex-al"><b class="ex-aln">7</b> "Y'all" has a long way to go before becoming part of Standard English, or even Standard American English, but it's not entirely far-fetched that it might. It's an incredibly versatile term - it can also be used to address a single person, or you can use "all y'all" to widen the scope of who you're talking to - and it's more concise than most of the other second-person plural pronouns mentioned before.</p>
 <p class="ex-al"><b class="ex-aln">8</b> If you've never used "y'all" before, give it a try. It might sound like you're doing an imitation of a southerner at first, but after a while it becomes natural. We won't tell you what to do with your life, but if y'all want to adopt a new way of addressing groups, don't overlook "y'all."</p>
 <div class="ex-tekst-bron-voet">babbel.com, 2019</div>
 <div class="ex-tekst-notities"><b>Note</b><br>AAVE = variety of English spoken by many African Americans in urban communities in the United States and Canada</div>`
@@ -607,7 +607,7 @@ const EXAMENS = {
 <p class="ex-al">'At her Sanskrit lesson?' Damien asked.</p>
 <p class="ex-al">'Haha. Mandarin, actually.'</p>
 <p class="ex-al">It took me a moment to realize that Christine was serious.</p>
-<p class="ex-al">'We don't make her go,' Christine said, as I tried to hide my astonishment – well, actually distress, if I'm to be honest. 'She asked to go to lessons.'</p>
+<p class="ex-al">'We don't make her go,' Christine said, as I tried to hide my astonishment - well, actually distress, if I'm to be honest. 'She asked to go to lessons.'</p>
 <p class="ex-al">Too weird. What nine-year-old would ask to learn Mandarin?</p>
 <p class="ex-al">'And we keep an eye on her,' Christine said.</p>
 <p class="ex-al">'On her work-life balance?' Damien suggested.</p>
@@ -618,15 +618,15 @@ const EXAMENS = {
           id: 't6', deel: null, nr: 6,
           titel: 'The Matrix: is this really happening?',
           bron: 'Brian Raftery, theguardian.com, 2021',
-          inhoud: `<p class="ex-al"><b class="ex-aln">1</b> It was early 1999, and people were freaking out about the future. A new millennium was on the way, carrying with it the promise – or threat – of massive change. Would the next century guide us toward a tech-enabled utopia? Or, as some feared, would it plunge the world into a full-on apocalypse? These were strange days, marked by equal parts anxiety and anticipation. Which made it the perfect moment for a sleek, cerebral movie called <em>The Matrix</em>.</p>
-<p class="ex-al"><b class="ex-aln">2</b> Created by a pair of mostly unknown filmmakers (Lana and Lilly Wachowski), and headlined by a commercially iffy star (Keanu Reeves), the $60m cyber-thriller became an instant hit. Some viewers were sucked in by the film's mind-melting storyline – about a hacker named Neo who discovers that mankind is enslaved in a computer-made simulation. Others were simply turned on by the film's whoa-inducing fight scenes. By the end of 1999, it was clear that <em>The Matrix</em> was The One: the first true digital-era blockbuster.</p>
+          inhoud: `<p class="ex-al"><b class="ex-aln">1</b> It was early 1999, and people were freaking out about the future. A new millennium was on the way, carrying with it the promise - or threat - of massive change. Would the next century guide us toward a tech-enabled utopia? Or, as some feared, would it plunge the world into a full-on apocalypse? These were strange days, marked by equal parts anxiety and anticipation. Which made it the perfect moment for a sleek, cerebral movie called <em>The Matrix</em>.</p>
+<p class="ex-al"><b class="ex-aln">2</b> Created by a pair of mostly unknown filmmakers (Lana and Lilly Wachowski), and headlined by a commercially iffy star (Keanu Reeves), the $60m cyber-thriller became an instant hit. Some viewers were sucked in by the film's mind-melting storyline - about a hacker named Neo who discovers that mankind is enslaved in a computer-made simulation. Others were simply turned on by the film's whoa-inducing fight scenes. By the end of 1999, it was clear that <em>The Matrix</em> was The One: the first true digital-era blockbuster.</p>
 <p class="ex-al"><b class="ex-aln">3</b> The pop-cultural impact of the film was clear within months of its release. The Wachowskis had incorporated new digital effects that let characters freeze in mid-air, or dodge hails of gunfire, while cameras circled the action in a near-360-degree swirl. Not since 1977, when <em>Star Wars</em> was released, had a movie so quickly rebooted the look and feel of mainstream moviemaking.</p>
 <p class="ex-al"><b class="ex-aln">4</b> But these were all surface-level aftershocks. The deeper legacy of <em>The Matrix</em> wouldn't be revealed for years. A DVD release broke sales records at the time, allowing for multiple repeat viewings. But it was the internet that really let Matrix fans go down the rabbit hole.</p>
-<p class="ex-al"><b class="ex-aln">5</b> It was a tense, transformative period – one that was encapsulated by <em>The Matrix</em>. If you were suspicious of all this new technology, the film served as a cautionary tale about our devices overpowering our lives. But if you were already very online, <em>The Matrix</em> was proof that the internet was full of possibility.</p>
+<p class="ex-al"><b class="ex-aln">5</b> It was a tense, transformative period - one that was encapsulated by <em>The Matrix</em>. If you were suspicious of all this new technology, the film served as a cautionary tale about our devices overpowering our lives. But if you were already very online, <em>The Matrix</em> was proof that the internet was full of possibility.</p>
 <p class="ex-al"><b class="ex-aln">6</b> These were big ideas and they led to big conversations, many of which percolated online. Some of the questions moviegoers were asking at the time: "Are we being controlled by our computers?" "If The Matrix is real, what can you do about it?" The Wachowskis had made a film that seemed to speak directly to the internet, and the internet couldn't stop speaking back.</p>
 <p class="ex-al"><b class="ex-aln">7</b> Neo and his partner, Trinity, treat each other with a level of mutual respect that's rarely seen in male-female big-screen relationships, even to this day. And they work alongside a multi-gender, multi-racial team of rebels. Despite its grim shoot-'em-up scenes and killer machines, <em>The Matrix</em> is a deeply hopeful film: one that pushes the value of caring for one another.</p>
 <p class="ex-al"><b class="ex-aln">8</b> Still, the ultimate sign of <em>The Matrix</em>'s ongoing importance is the fact that, more than two decades after its release, it's becoming harder to tell if we're living with <em>The Matrix</em>, or within it. The internet has become so overloaded, it's now possible for everyone to generate their own immersive reality.</p>
-<p class="ex-al"><b class="ex-aln">9</b> It's a grim situation, one that undercuts the message of hope that was hardwired into <em>The Matrix</em>. But no matter where Neo and Trinity go next, the message of the original landmark film will continue to ring truer than ever: we're all increasingly stuck in our own versions of The Matrix – but we still have the power to rage against the machines and free ourselves.</p>
+<p class="ex-al"><b class="ex-aln">9</b> It's a grim situation, one that undercuts the message of hope that was hardwired into <em>The Matrix</em>. But no matter where Neo and Trinity go next, the message of the original landmark film will continue to ring truer than ever: we're all increasingly stuck in our own versions of The Matrix - but we still have the power to rage against the machines and free ourselves.</p>
 <div class="ex-tekst-bron-voet">theguardian.com, 2021</div>`
         },
         {
@@ -646,10 +646,10 @@ const EXAMENS = {
           bron: 'Clay Cockrell, theguardian.com, 2021',
           inhoud: `<p class="ex-al"><b class="ex-aln">1</b> If I had a dollar for every time I've heard the term "first world problems", my bank account would look similar to those of my clients. I work as a psychotherapist and my specialism is ultra-high net worth individuals. Over the years, I have developed a great deal of empathy for those who have far too much.</p>
 <p class="ex-al"><b class="ex-aln">2</b> What could possibly be challenging about being a billionaire, you might ask. Well, what would it be like if you couldn't trust those close to you? Or if you looked at any new person in your life with deep suspicion? I hear this from my clients all the time: "What do they want from me?"; or "How are they going to manipulate me?"; or "They are probably only friends with me because of my money."</p>
-<p class="ex-al"><b class="ex-aln">3</b> Then there are the struggles with purpose – the depression that sets in when you feel like you have no reason to get out of bed. Why bother going to work when the business you have built or inherited runs itself without you now? If all your necessities and much more were covered for the rest of your life – you might struggle with a lack of meaning and ambition too.</p>
+<p class="ex-al"><b class="ex-aln">3</b> Then there are the struggles with purpose - the depression that sets in when you feel like you have no reason to get out of bed. Why bother going to work when the business you have built or inherited runs itself without you now? If all your necessities and much more were covered for the rest of your life - you might struggle with a lack of meaning and ambition too.</p>
 <p class="ex-al"><b class="ex-aln">4</b> Most of the people I see are much more willing to talk about their sex lives or substance-misuse problems than their bank accounts. Money is seen as dirty and secret. Money is wrapped up in guilt, shame, and fear. There is a perception that money can immunise you against mental-health problems when actually, I believe that wealth can make you much more susceptible to them.</p>
 <p class="ex-al"><b class="ex-aln">5</b> I see family situations like those in <em>Succession</em> all the time. Too many of my clients want to indulge their children so "they never have to suffer what I had to suffer" while growing up. But the result is that they prevent their children from experiencing the very things that made them successful: sacrifice, hard work, overcoming failure and developing resilience.</p>
-<p class="ex-al"><b class="ex-aln">6</b> <em>Succession</em> is built on the idea of a group of wealthy children vying for who will take the mantle from their father – none of them are able to convince him that they can do it. The wealthy parents I see, often because of their own guilt and shame, are not preparing their children for the challenges of managing their wealth.</p>
+<p class="ex-al"><b class="ex-aln">6</b> <em>Succession</em> is built on the idea of a group of wealthy children vying for who will take the mantle from their father - none of them are able to convince him that they can do it. The wealthy parents I see, often because of their own guilt and shame, are not preparing their children for the challenges of managing their wealth.</p>
 <p class="ex-al"><b class="ex-aln">7</b> I was raised in a small town in rural Kentucky, solidly in the middle class. And it can be very difficult to watch these individuals struggle with the toxicity of excess, isolation and deep mistrust.</p>
 <div class="ex-tekst-bron-voet">adapted from theguardian.com, 2021</div>
 <div class="ex-tekst-notities"><b>Note</b><br>Succession = an American drama series revolving around the fictional Roy family, owners of a global media company</div>`
@@ -660,7 +660,7 @@ const EXAMENS = {
           bron: 'Heloise Wood, thebookseller.com, 2019',
           inhoud: `<p class="ex-al"><b class="ex-aln">1</b> Granta Books will publish "a powerful antidote to our atomised world" from author and academic Will Buckingham: <em>Hello, Stranger</em>.</p>
 <p class="ex-al"><b class="ex-aln">2</b> Anne Meadows, senior commissioning editor at Granta, acquired world English language rights from Emma Finn at C&W Agency. <em>Hello, Stranger</em> is billed as "an exploration of how welcoming strangers into our homes and our cities might improve our lives and change the world."</p>
-<p class="ex-al"><b class="ex-aln">3</b> <em>Hello, Stranger</em> explores how different cultures – from governors in Ancient Rome to festival goers in the outer islands of Indonesia – welcome strangers as guests, enemies and migrants. The book explores "how opening our doors could cure the loneliness epidemic, alleviate the migrant crisis and enrich us all."</p>
+<p class="ex-al"><b class="ex-aln">3</b> <em>Hello, Stranger</em> explores how different cultures - from governors in Ancient Rome to festival goers in the outer islands of Indonesia - welcome strangers as guests, enemies and migrants. The book explores "how opening our doors could cure the loneliness epidemic, alleviate the migrant crisis and enrich us all."</p>
 <p class="ex-al"><b class="ex-aln">4</b> Buckingham is the author of several books and has a PhD in philosophy and an MA in social anthropology, and lectures at The Parami Institute in Myanmar.</p>
 <p class="ex-al"><b class="ex-aln">5</b> "Hello, Stranger not only made me feel wiser, and fascinated me with its brilliant stories, it made me want to be a better, warmer, kinder, more welcoming person," Meadows said.</p>
 <div class="ex-tekst-bron-voet">thebookseller.com, 2019</div>`
@@ -669,7 +669,7 @@ const EXAMENS = {
           id: 't10', deel: null, nr: 10,
           titel: 'Rewatching classic films',
           bron: 'Andrew Miller, The Economist, July 2023',
-          inhoud: `<p class="ex-al"><b class="ex-aln">1</b> Risky business, re-watching old movies. You may decide that a film you loved in your youth is dross – and that your youthful self was a dolt. Worse, it might seem offensive, which all those years ago you failed to notice.</p>
+          inhoud: `<p class="ex-al"><b class="ex-aln">1</b> Risky business, re-watching old movies. You may decide that a film you loved in your youth is dross - and that your youthful self was a dolt. Worse, it might seem offensive, which all those years ago you failed to notice.</p>
 <p class="ex-al"><b class="ex-aln">2</b> Happily, that wasn't my experience with "Raiders of the Lost Ark". "Indiana Jones and the Dial of Destiny", the finale of the franchise, is released this week, and "Raiders" remains a great, great movie: a stunt and gag a minute, a hero brilliantly conceived from whip to theme-tune, and a star, Harrison Ford, in his rugged pomp.</p>
 <p class="ex-al"><b class="ex-aln">3</b> Besides regret and affection, reconsidering classics can surprise you. The optimism of the original "Top Gun" contrasts tellingly with the nostalgia of its sequel. Today the avoidable calamity in "Titanic" feels to me like a parable of climate change. Dive into early James Bond and you realise how much he has evolved; radically recasting 007 might only be in character. Beneath its screwball antics, "Some Like it Hot", my favourite film, now seems way ahead of its time.</p>
 <div class="ex-tekst-bron-voet">The Economist, July 2023</div>`
@@ -696,7 +696,7 @@ const EXAMENS = {
 <div class="ex-tekst-notities"><b>A widening divide</b></div>
 <p class="ex-al">When we looked at teams in the same league in a given season, we observed that in more recent years, the points have been distributed among teams much less evenly: overall the stronger teams have become more successful, while the weaker teams have become less successful. This echoes the notion that "the rich get richer and the poor get poorer".</p>
 <div class="ex-tekst-notities"><b>Home-field advantage</b></div>
-<p class="ex-al">One other trend: we observed an initial home-field advantage of 30% in the early 1990s – which means on average a team playing at home was 30% more likely to win. The home-field advantage has gradually shrunk to only 15% during the most recent seasons.</p>
+<p class="ex-al">One other trend: we observed an initial home-field advantage of 30% in the early 1990s - which means on average a team playing at home was 30% more likely to win. The home-field advantage has gradually shrunk to only 15% during the most recent seasons.</p>
 <div class="ex-tekst-notities"><b>The strong are getting stronger</b></div>
 <p class="ex-al">So there's less and less chance for the weaker teams to benefit from playing at home. Transportation and training have significantly improved over the past few years, minimising the logistical challenges of playing away. Our findings highlight the need for stronger regulations around club incomes, expenditures and player salaries. A game that's easy to predict is not one that will necessarily keep bringing crowds to the stadiums.</p>
 <div class="ex-tekst-bron-voet">adapted from theconversation.com, 2021</div>`
@@ -704,7 +704,7 @@ const EXAMENS = {
       ],
       vragen: [
 
-        // ── TEXT 1 — DabbaDrop ───────────────────────────────────────────
+        // ── TEXT 1 - DabbaDrop ───────────────────────────────────────────
         {
           nr: 1, opgave: 1, punten: 2, type: 'open',
           tekst_id: 't1', context: 'Text 1',
@@ -734,12 +734,12 @@ const EXAMENS = {
           antwoord_rubric: '1 punt: correct explanation of the function/relation of the final paragraph.'
         },
 
-        // ── TEXT 2 — Mole Man ────────────────────────────────────────────
+        // ── TEXT 2 - Mole Man ────────────────────────────────────────────
         {
           nr: 5, opgave: 2, punten: 2, type: 'open',
           tekst_id: 't2', context: 'Text 2',
           vraag: 'The title of text 2 is a play on words. Explain the double meaning of the title.',
-          antwoord: '"Tunnel vision" literally refers to the tunnels dug by William Lyttle. It also means a narrow or obsessive focus — which describes Lyttle\'s 40-year obsession with digging.',
+          antwoord: '"Tunnel vision" literally refers to the tunnels dug by William Lyttle. It also means a narrow or obsessive focus - which describes Lyttle\'s 40-year obsession with digging.',
           antwoord_rubric: '1 punt: first meaning (literal tunnels) correct. 1 punt: second meaning (obsessive focus) correctly explained.'
         },
         {
@@ -764,7 +764,7 @@ const EXAMENS = {
           antwoord_rubric: '1 punt: correct reason (no permission/illegal). 1 punt: correct consequence (eviction in 2006).'
         },
 
-        // ── TEXT 3 — Charitable billionaires ────────────────────────────
+        // ── TEXT 3 - Charitable billionaires ────────────────────────────
         {
           nr: 9, opgave: 3, punten: 1, type: 'open',
           tekst_id: 't3', context: 'Text 3',
@@ -794,12 +794,12 @@ const EXAMENS = {
           antwoord_rubric: '1 punt: correct meaning of "rigorously" in context.'
         },
 
-        // ── TEXT 4 — Y\'all ──────────────────────────────────────────────
+        // ── TEXT 4 - Y\'all ──────────────────────────────────────────────
         {
           nr: 13, opgave: 4, punten: 2, type: 'open',
           tekst_id: 't4', context: 'Text 4',
           vraag: 'What lexical gap does "y\'all" fill in English, according to the author? Use your own words.',
-          antwoord: 'English lacks a second-person plural pronoun — a word used to address more than one person at the same time (like "vous" in French or "ihr" in German). "Y\'all" fills this gap.',
+          antwoord: 'English lacks a second-person plural pronoun - a word used to address more than one person at the same time (like "vous" in French or "ihr" in German). "Y\'all" fills this gap.',
           antwoord_rubric: '1 punt: correct identification of the gap (no second-person plural). 1 punt: explanation in own words.'
         },
         {
@@ -824,7 +824,7 @@ const EXAMENS = {
           antwoord_rubric: '1 punt: breaking down geographic boundaries. 1 punt: consequence for spread of "y\'all".'
         },
 
-        // ── TEXT 5 — This Charming Man ───────────────────────────────────
+        // ── TEXT 5 - This Charming Man ───────────────────────────────────
         {
           nr: 17, opgave: 5, punten: 2, type: 'open',
           tekst_id: 't5', context: 'Text 5',
@@ -836,7 +836,7 @@ const EXAMENS = {
           nr: 18, opgave: 5, punten: 3, type: 'open',
           tekst_id: 't5', context: 'Text 5',
           vraag: 'What does the fragment reveal about the relationship between Grace (the narrator) and Damien? Use details from the text.',
-          antwoord: 'Grace and Damien appear to be close and comfortable together — they make private jokes about Richard, they attend family visits together, and Damien\'s sarcastic remark about Augustina\'s "work-life balance" suggests they share a sense of humour.',
+          antwoord: 'Grace and Damien appear to be close and comfortable together - they make private jokes about Richard, they attend family visits together, and Damien\'s sarcastic remark about Augustina\'s "work-life balance" suggests they share a sense of humour.',
           antwoord_rubric: '1 punt: correct characterisation of relationship. 1 punt: relevant detail from text. 1 punt: clear explanation.'
         }
 

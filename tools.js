@@ -453,7 +453,7 @@ function renderStudieplan(){
   } else if(allPlanTasks.length>0){
     vandaagHtml=`<div class="sp-vandaag" style="text-align:center;padding:18px 16px">
       <div class="sp-vandaag-title" style="margin-bottom:6px">📌 Vandaag</div>
-      <div style="font-size:13px;color:var(--mu)">🌴 Vrije dag — goed verdiend!</div>
+      <div style="font-size:13px;color:var(--mu)">🌴 Vrije dag - goed verdiend!</div>
     </div>`;
   }
 
@@ -605,7 +605,7 @@ function showLeerpad(){
   document.getElementById('lp-stat-avg').textContent=avgPct+'%';
   document.getElementById('lp-overall-pct').textContent=overallPct+'%';
   document.getElementById('lp-hero-sub').textContent=
-    allDone?'🎉 Alle domeinen voltooid — goed bezig!':
+    allDone?'🎉 Alle domeinen voltooid - goed bezig!':
     doneCount>0?`${doneCount} van ${domeinen.length} domeinen voltooid`:
     'Werk systematisch door alle domeinen heen';
 

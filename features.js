@@ -192,7 +192,7 @@ function showEvoReveal(newStage,animalId){
   const animalLabel=(a&&a.lbl&&a.lbl[Math.min(newStage,a.lbl.length-1)])||(a?stageName+' '+a.n:stageName);
   const msgs={
     5:'Je dier gloeit als goud. Jij bent een echte topper! 🥇',
-    6:'Diamant — zo zeldzaam als jouw doorzettingsvermogen. 💎',
+    6:'Diamant - zo zeldzaam als jouw doorzettingsvermogen. 💎',
     7:'Platina. Het allerhoogste niveau. Slechts weinigen halen dit. 🏆'
   };
   if(titleEl)titleEl.textContent=animalLabel;
@@ -369,7 +369,7 @@ function showCombo(combo){
   el.className='combo-badge'+(combo>=5?' combo-big':'');
   const labels={2:'Goed zo!',3:'Super!',4:'Onstoppbaar!',5:'GOD MODE!'};
   const lbl=labels[Math.min(combo,5)]||'Onstoppbaar!';
-  el.innerHTML=`🔥 <strong>${combo}×</strong> — ${lbl} <span style="opacity:.7;font-size:.75em">×${mult} XP</span>`;
+  el.innerHTML=`🔥 <strong>${combo}×</strong> - ${lbl} <span style="opacity:.7;font-size:.75em">×${mult} XP</span>`;
   document.body.appendChild(el);
   haptic(combo>=5?[50,30,50,30,100]:combo>=3?[40,20,60]:[25]);
   playSound(combo>=3?'combo':'correct');
@@ -414,11 +414,11 @@ function renderGreeting(){
     el.className='hm-greeting hm-greeting-warn';
     el.textContent='⚠️ Je '+streak+'-daagse streak staat op het spel!';
   }else if(practicedToday&&streak>=7){
-    el.textContent='💎 '+streak+' dagen op rij — ongelooflijk!';
+    el.textContent='💎 '+streak+' dagen op rij - ongelooflijk!';
   }else if(practicedToday&&streak>=3){
-    el.textContent='🔥 '+streak+' dagen op rij — ga zo door!';
+    el.textContent='🔥 '+streak+' dagen op rij - ga zo door!';
   }else if(practicedToday){
-    el.textContent='✅ Vandaag al geoefend — top!';
+    el.textContent='✅ Vandaag al geoefend - top!';
   }else{
     const moti=[
       '— elke vraag telt 💪',
@@ -658,7 +658,7 @@ function getDailyChallenge(){
   return dc;
 }
 function renderDailyChallenge(){
-  // Inline card verwijderd — uitdaging verschijnt nu als popup
+  // Inline card verwijderd - uitdaging verschijnt nu als popup
   const box=document.getElementById('daily-challenge-home');
   if(box)box.innerHTML='';
   _dcCache=getDailyChallenge();
@@ -692,9 +692,9 @@ function startDailyChallenge(){
     const dc=_dcCache||getDailyChallenge();
     if(!dc||dc.done)return;
     const vak=getVK().find(v=>v.id===dc.vakId);
-    if(!vak){_dcCache=null;localStorage.removeItem(_dcLevelKey());renderDailyChallenge();showToast('Uitdaging vernieuwd — probeer opnieuw!','#f97316');return;}
+    if(!vak){_dcCache=null;localStorage.removeItem(_dcLevelKey());renderDailyChallenge();showToast('Uitdaging vernieuwd - probeer opnieuw!','#f97316');return;}
     const domein=vak.domeinen.find(d=>d.id===dc.domeinId);
-    if(!domein||!domein.sv||!domein.sv.length){_dcCache=null;localStorage.removeItem(_dcLevelKey());renderDailyChallenge();showToast('Uitdaging vernieuwd — probeer opnieuw!','#f97316');return;}
+    if(!domein||!domein.sv||!domein.sv.length){_dcCache=null;localStorage.removeItem(_dcLevelKey());renderDailyChallenge();showToast('Uitdaging vernieuwd - probeer opnieuw!','#f97316');return;}
     ST.vak=vak;ST.domein=domein;ST.isDailyChallenge=true;
     startQ('snel');
   }catch(err){
@@ -747,7 +747,7 @@ function calcStreak(){
 function startStreakQuiz(){
   const mijn=JSON.parse(localStorage.getItem('examenapp_'+lvlCol('mijnvakken'))||'[]');
   if(mijn.length>0){
-    // Zoek het domein met de laagste score (of nooit geprobeerd) — dat heeft de meeste impact
+    // Zoek het domein met de laagste score (of nooit geprobeerd) - dat heeft de meeste impact
     const prog=JSON.parse(localStorage.getItem('examenapp_progress_'+APP_LEVEL)||'{}');
     const vakArr=APP_LEVEL==='vwo'?(typeof VAKKEN_VWO!=='undefined'?VAKKEN_VWO:[]):(typeof VAKKEN!=='undefined'?VAKKEN:[]);
     let bestVak=null,bestDom=null,lowestScore=Infinity;
@@ -796,7 +796,7 @@ function _showQuickStartSheet(){
   <div class="qs-wrap">
     <div class="qs-pill"></div>
     <div style="font-family:var(--font-head,sans-serif);font-size:17px;font-weight:800;color:var(--dk);margin-bottom:4px">⚡ Wat wil je oefenen?</div>
-    <div style="font-size:12px;color:var(--mu);margin-bottom:16px">Kies een vak — quiz start direct</div>
+    <div style="font-size:12px;color:var(--mu);margin-bottom:16px">Kies een vak - quiz start direct</div>
     <div class="qs-grid" id="qs-grid"></div>
     <button class="qs-skip" id="qs-skip">Liever zelf kiezen</button>
   </div>`;
@@ -857,7 +857,7 @@ function renderStreak(){
     box.innerHTML=`<div class="streak-card streak-card-empty">
       <div class="streak-top">
         <div class="streak-headline"><svg class="streak-flame-ic" viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true"><path d="M8.5 14.5A2.5 2.5 0 0 0 11 12c0-1.38-.5-2-1-3-1.072-2.143-.224-4.054 2-6 .5 2.5 2 4.9 4 6.5 2 1.6 3 3.5 3 5.5a7 7 0 1 1-14 0c0-1.153.433-2.294 1-3a2.5 2.5 0 0 0 2.5 2.5z"/></svg> Bouw je streak op!</div>
-        <div class="streak-tagline">Oefen elke dag en verdien badges — begin vandaag.</div>
+        <div class="streak-tagline">Oefen elke dag en verdien badges - begin vandaag.</div>
       </div>
       <div class="streak-week-empty">
         ${['zo','ma','di','wo','do','vr','za'].map((d,i)=>`<div class="swe-cell${i===_td?' swe-today':''}"><div class="swe-pip"></div><div class="swe-lbl">${d}</div></div>`).join('')}
@@ -884,14 +884,14 @@ function renderStreak(){
   }
   // Streak milestone achievements (eenmalig)
   if(info.total>=1&&earnAch('streak1'))setTimeout(()=>showAch('🌱','Eerste dag geoefend!'),400);
-  if(info.current>=3&&earnAch('streak3'))setTimeout(()=>showAch('🔥','3 dagen op rij — op dreef!'),400);
-  if(info.current>=7&&earnAch('streak7'))setTimeout(()=>showAch('⚡','7 dagen op rij — geweldig!'),400);
-  if(info.current>=14&&earnAch('streak14'))setTimeout(()=>showAch('💎','14 dagen streak — twee weken!'),400);
-  if(info.current>=30&&earnAch('streak30'))setTimeout(()=>showAch('🔮','30 dagen streak — ongelooflijk!',175),600);
-  if(info.current>=100&&earnAch('streak100'))setTimeout(()=>showAch('👑','100 dagen — Slagio Legende!',220),800);
-  if(info.current>=200&&earnAch('streak200'))setTimeout(()=>showAch('🌌','200 dagen — Onsterfelijk!',265),1000);
-  if(info.current>=300&&earnAch('streak300'))setTimeout(()=>showAch('⚜️','300 dagen — Grootmeester!',310),1200);
-  if(info.current>=365&&earnAch('streak365'))setTimeout(()=>showAch('🪐','365 dagen — Een heel jaar op rij!',355),1400);
+  if(info.current>=3&&earnAch('streak3'))setTimeout(()=>showAch('🔥','3 dagen op rij - op dreef!'),400);
+  if(info.current>=7&&earnAch('streak7'))setTimeout(()=>showAch('⚡','7 dagen op rij - geweldig!'),400);
+  if(info.current>=14&&earnAch('streak14'))setTimeout(()=>showAch('💎','14 dagen streak - twee weken!'),400);
+  if(info.current>=30&&earnAch('streak30'))setTimeout(()=>showAch('🔮','30 dagen streak - ongelooflijk!',175),600);
+  if(info.current>=100&&earnAch('streak100'))setTimeout(()=>showAch('👑','100 dagen - Slagio Legende!',220),800);
+  if(info.current>=200&&earnAch('streak200'))setTimeout(()=>showAch('🌌','200 dagen - Onsterfelijk!',265),1000);
+  if(info.current>=300&&earnAch('streak300'))setTimeout(()=>showAch('⚜️','300 dagen - Grootmeester!',310),1200);
+  if(info.current>=365&&earnAch('streak365'))setTimeout(()=>showAch('🪐','365 dagen - Een heel jaar op rij!',355),1400);
   // Badges (streak + quizzen categorieën)
   const ach=getAchieved();
   const badgeDefs=ALL_BADGES.filter(b=>b.cat==='Streak'||b.cat==='Quizzen');
@@ -908,9 +908,9 @@ function renderStreak(){
     ?`${info.current} dag${info.current>1?'en':''} op rij!`
     :'Start vandaag je streak!';
   const tagline=info.current>=365?'🪐 Een heel jaar! Jij bent een absolute legende.'
-    :info.current>=300?'⚜️ 300 dagen — Grootmeester van Slagio!'
-    :info.current>=200?'🌌 200 dagen — Onsterfelijk!'
-    :info.current>=100?'👑 Legendarisch — jij bent een Slagio Legende!'
+    :info.current>=300?'⚜️ 300 dagen - Grootmeester van Slagio!'
+    :info.current>=200?'🌌 200 dagen - Onsterfelijk!'
+    :info.current>=100?'👑 Legendarisch - jij bent een Slagio Legende!'
     :info.current>=30?'🔮 Ongelooflijk! 30 dagen op rij!'
     :info.current>=7?'Je bent op dreef, ga zo door! 💪'
     :info.current>=3?'Geweldig, blijf volhouden!'
@@ -944,7 +944,7 @@ function renderStreak(){
     <div class="streak-week">${weekHtml}</div>
     <div class="streak-divider"></div>
     <div class="streak-badges-row">${badgeHtml}</div>
-    ${!practicedToday?`<button class="streak-cta" onclick="startStreakQuiz()">🎯 Oefen vandaag — verleng je streak!</button>`:''}
+    ${!practicedToday?`<button class="streak-cta" onclick="startStreakQuiz()">🎯 Oefen vandaag - verleng je streak!</button>`:''}
   </div>`;
   // Update longest streak
   if(info.current>longest){s.longestStreak=info.current;cloudSet('streak',s);}
@@ -1000,7 +1000,7 @@ function getPB(vakId,domeinId){
 // ═══════ FEATURE 3: SMART NEXT ACTION ═══════
 function getSmartNextAction(vakId,domeinId,score){
   if(score<0.5){
-    return {type:'retry',label:'Nog een keer proberen',sub:'Je score is onder 50% — herhaling helpt!',icon:'🔄'};
+    return {type:'retry',label:'Nog een keer proberen',sub:'Je score is onder 50% - herhaling helpt!',icon:'🔄'};
   }
   const vak=getVK().find(v=>v.id===vakId);
   if(!vak)return null;
@@ -1014,10 +1014,10 @@ function getSmartNextAction(vakId,domeinId,score){
   if(worstDom){
     const wr=getDomeinBestPct(vakId,worstDom.id);
     if(!wr.hasData||worstPct<0.65){
-      return {type:'domain',domeinId:worstDom.id,label:worstDom.naam,sub:wr.hasData?`Score: ${Math.round(worstPct*100)}% — kan beter!`:'Nog niet geoefend',icon:'⚡'};
+      return {type:'domain',domeinId:worstDom.id,label:worstDom.naam,sub:wr.hasData?`Score: ${Math.round(worstPct*100)}% - kan beter!`:'Nog niet geoefend',icon:'⚡'};
     }
   }
-  return {type:'simtoets',label:'Simulatietoets',sub:'Alle domeinen ≥65% — test jezelf met een volledig examen!',icon:'🎯'};
+  return {type:'simtoets',label:'Simulatietoets',sub:'Alle domeinen ≥65% - test jezelf met een volledig examen!',icon:'🎯'};
 }
 
 // ═══════ FEATURE 4: COMEBACK CARD ═══════
@@ -1048,7 +1048,7 @@ function renderComebackCard(){
   cbAct.addEventListener('click',()=>{show('sc-schedule');renderStudieplan();});
   const card=document.createElement('div');
   card.className='comeback-card';
-  card.innerHTML=`<div class="comeback-icon">💪</div><div class="comeback-title">Welkom terug!</div><div class="comeback-sub">Je was ${dayGap} dag${dayGap>1?'en':''} weg — maar je bent er weer! Bouw je streak opnieuw op. Elke dag telt.</div><div class="comeback-xp">🎁 +50 XP comeback bonus</div>`;
+  card.innerHTML=`<div class="comeback-icon">💪</div><div class="comeback-title">Welkom terug!</div><div class="comeback-sub">Je was ${dayGap} dag${dayGap>1?'en':''} weg - maar je bent er weer! Bouw je streak opnieuw op. Elke dag telt.</div><div class="comeback-xp">🎁 +50 XP comeback bonus</div>`;
   card.prepend(cbClose);
   card.appendChild(cbAct);
   el.innerHTML='';
@@ -1063,7 +1063,7 @@ function renderComebackCard(){
 const FEAT_DISC_KEY='slagio_feat_disc_v1';
 const FEAT_HINTS=[
   {icon:'📅',title:'Persoonlijk studieplan',sub:'Slagio maakt automatisch een dagplanning tot je examendatum. Weet precies wat je wanneer moet oefenen.',act:'📅 Open studieplan',fn:()=>{show('sc-schedule');renderStudieplan();}},
-  {icon:'🏁',title:'Bot Race',sub:'Race tegen AI-tegenstanders over 15 vragen. Kies je vak en een moeilijkheidsgraad — en ga!',act:'🏁 Probeer Bot Race',fn:()=>show('sc-race')},
+  {icon:'🏁',title:'Bot Race',sub:'Race tegen AI-tegenstanders over 15 vragen. Kies je vak en een moeilijkheidsgraad - en ga!',act:'🏁 Probeer Bot Race',fn:()=>show('sc-race')},
   {icon:'📊',title:'Voortgangsrapport',sub:'Bekijk jouw score per vak en domein, aankomende examens en je zwakke punten in één overzicht.',act:'📊 Bekijk rapport',fn:()=>openRapport()},
 ];
 function renderFeatDisc(){

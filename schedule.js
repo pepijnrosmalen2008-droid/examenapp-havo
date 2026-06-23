@@ -109,7 +109,7 @@ function renderSchedule(){
   const niveauVakIds=new Set(getVK().map(v=>v.id));
   const mijn=getMijnVakken(),herk=getHerkansing();
   const leeg='<p style="color:var(--mu);font-size:13px;padding:14px 2px">Geen examens voor jouw niveau.</p>';
-  // 1e tijdvak — gekoppeld aan 'mijn vakken'
+  // 1e tijdvak - gekoppeld aan 'mijn vakken'
   if(l1){
     const onlyMine=document.getElementById('sch-filter-mine')?.checked;
     l1.innerHTML='';
@@ -122,7 +122,7 @@ function renderSchedule(){
     });
     if(!l1.innerHTML)l1.innerHTML=leeg;
   }
-  // 2e tijdvak — herkansing: niks vooraf aangevinkt, leerling kiest zelf
+  // 2e tijdvak - herkansing: niks vooraf aangevinkt, leerling kiest zelf
   if(l2){
     l2.innerHTML='';
     EXAM_SCHEDULE.forEach(ex=>{
@@ -147,7 +147,7 @@ function renderTijdvak3(){
     const ds=dagNamen[d.getDay()]+' '+d.getDate()+' '+maandNamen[d.getMonth()];
     return `<div class="sch-card sch-mine"><div class="sch-date">${ds}</div><div class="sch-time">${e.tijd||'13:30'}</div><div class="sch-name">${e.vak}</div><div class="sch-cd">${cd}</div><button class="tv3-del" onclick="removeTV3(${i})" title="Verwijderen">✕</button></div>`;
   }).join('');
-  el.innerHTML=`<div class="tv3-info">📌 Het <strong>3e tijdvak</strong> (${periode}) wordt door <strong>DUO</strong> per kandidaat ingepland — er is geen openbaar vakkenrooster. Voer hieronder zelf je vak, datum en tijd in; de timer telt er dan naar af.</div>
+  el.innerHTML=`<div class="tv3-info">📌 Het <strong>3e tijdvak</strong> (${periode}) wordt door <strong>DUO</strong> per kandidaat ingepland - er is geen openbaar vakkenrooster. Voer hieronder zelf je vak, datum en tijd in; de timer telt er dan naar af.</div>
   <div class="tv3-form">
     <select id="tv3-vak" class="tv3-input"><option value="">— kies vak —</option>${vakken.map(v=>`<option value="${v.id}">${v.naam}</option>`).join('')}</select>
     <input type="date" id="tv3-datum" class="tv3-input" min="2026-08-01" max="2026-08-31">
@@ -353,7 +353,7 @@ function berekenSlaag(){
       const oefenBtn=vakObj?`<button class="ap-btn" onclick="openVak('${vakObj.id}')">Oefen →</button>`:'';
       return `<div class="ap-item">
         <div class="ap-dot" style="background:${vakObj?vakObj.kleur:'#999'}"></div>
-        <div class="ap-info"><div class="ap-naam">${cv.code}</div><div class="ap-detail">eindcijfer ${cv.eind} — ${gapTxt}</div></div>
+        <div class="ap-info"><div class="ap-naam">${cv.code}</div><div class="ap-detail">eindcijfer ${cv.eind} - ${gapTxt}</div></div>
         ${oefenBtn}
       </div>`;
     }).join('');
@@ -451,7 +451,7 @@ function berekenHerk(){
   const barClr=eind>=6?'#22C55E':eind>=5?'#F59E0B':'#EF4444';
   res.innerHTML=`<div class="calc-result">
     <div class="calc-result-icon">${icon}</div>
-    <h3 class="${kleur}">${eind} — ${eind>=6?'voldoende ✓':'onvoldoende ✗'}</h3>
+    <h3 class="${kleur}">${eind} - ${eind>=6?'voldoende ✓':'onvoldoende ✗'}</h3>
     <p>SE: <strong>${se}</strong> + nieuw CE: <strong>${nieuwCe}</strong> = gem ${gem.toFixed(2)} → afgerond <strong>${eind}</strong></p>
     <div class="calc-result-bar"><span style="font-size:11px;color:var(--mu);min-width:16px">1</span><div class="calc-result-bar-track"><div class="calc-result-bar-fill" style="width:${barPct}%;background:${barClr}"></div></div><span style="font-size:11px;color:var(--mu)">10</span></div>
     <p style="margin-top:10px;font-size:12px;color:var(--mu)">Voor een 6 als eindcijfer heb je CE ≥ <strong>${ceVoldoende.toFixed(1).replace('.',',')}</strong> nodig bij SE ${se}.</p>
@@ -523,7 +523,7 @@ function _parseSamCards(html){
     if(!term||term.length<2||term.length>72||seen.has(term))return;
     const eq=fb.querySelector('.sam-formula-eq'),note=fb.querySelector('.sam-formula-note');
     let def=eq?eq.innerHTML.trim():'';
-    if(note){let n=note.textContent.trim();if(n.length>180)n=n.slice(0,180).replace(/\s\S+$/,'')+'…';def+=(def?' — ':'')+n;}
+    if(note){let n=note.textContent.trim();if(n.length>180)n=n.slice(0,180).replace(/\s\S+$/,'')+'…';def+=(def?' - ':'')+n;}
     if(def.replace(/<[^>]+>/g,'').length<3)return;
     seen.add(term);cards.push({term,def});
   });
@@ -532,7 +532,7 @@ function _parseSamCards(html){
     const tds=[...tr.children];if(tds.length<2)return;
     const term=tds[0].textContent.trim();
     if(!term||term.length<2||term.length>72||seen.has(term))return;
-    let def=tds.slice(1).map(td=>td.textContent.trim()).filter(Boolean).join(' — ');
+    let def=tds.slice(1).map(td=>td.textContent.trim()).filter(Boolean).join(' - ');
     if(def.length<2)return;
     if(def.length>220)def=def.slice(0,220).replace(/\s\S+$/,'')+'…';
     seen.add(term);cards.push({term,def});
@@ -547,7 +547,7 @@ function startFlash(){
   // Stap 1: haal term→def paren uit de (rijke) samenvatting: <strong>, formuleboxen en tabellen
   const samSrc=(typeof SAM_RICH!=='undefined'&&SAM_RICH[v.id+'_'+d.id])||d.sam;
   let cards=samSrc?_parseSamCards(samSrc):[];
-  // Stap 2: fallback — koppel elke onderwerp aan de meest relevante zin (keyword-matching)
+  // Stap 2: fallback - koppel elke onderwerp aan de meest relevante zin (keyword-matching)
   if(cards.length<3){
     const terms=(d.onderwerpen||[]).filter(t=>t&&t.trim().length>1);
     const samText=(d.sam||'').replace(/<[^>]+>/g,'');
@@ -787,7 +787,7 @@ function renderPomo(){
         <p>De <strong>Pomodoro-techniek</strong> is een bewezen methode om gefocust te studeren en mentale vermoeidheid te voorkomen.</p>
         <ol>
           <li>⏱ Werk <strong>25 minuten</strong> volledig gefocust (één pomodoro)</li>
-          <li>☕ Neem <strong>5 minuten</strong> korte pauze — sta op, rek je uit</li>
+          <li>☕ Neem <strong>5 minuten</strong> korte pauze - sta op, rek je uit</li>
           <li>🔁 Herhaal dit <strong>4 keer</strong> na elkaar</li>
           <li>🧘 Na 4 pomodoro's: neem een <strong>lange pauze</strong> van 15–30 minuten</li>
         </ol>
@@ -894,7 +894,7 @@ function startPomoMinigame(){
   window._mgState={flipped:[],matched:0,moves:0,locked:false,startTime:Date.now()};
   card.innerHTML=`
     <div class="mg-wrap">
-      <div class="mg-header">🎮 Geheugenspel — vind alle paren!</div>
+      <div class="mg-header">🎮 Geheugenspel - vind alle paren!</div>
       <div class="mg-stats">
         <div class="mg-stat"><span class="mg-stat-val" id="mg-moves">0</span><span class="mg-stat-lbl">Zetten</span></div>
         <div class="mg-stat"><span class="mg-stat-val" id="mg-time">0s</span><span class="mg-stat-lbl">Tijd</span></div>

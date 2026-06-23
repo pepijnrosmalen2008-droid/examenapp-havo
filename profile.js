@@ -419,7 +419,7 @@ function renderAnimalEvoSection(animalId,totalXP){
     <div class="anim-evo-stages">${stagesHtml}</div>
     <div class="anim-evo-progress">${progressHtml}</div>
     <div id="animal-picker-inline" style="display:none;margin-top:14px">
-      <div style="font-size:12px;color:var(--mu);margin-bottom:10px;text-align:center">Kies een nieuw dier — je evolutiestadium blijft behouden</div>
+      <div style="font-size:12px;color:var(--mu);margin-bottom:10px;text-align:center">Kies een nieuw dier - je evolutiestadium blijft behouden</div>
       <div class="anim-pick-grid" id="prof-animal-switch-grid"></div>
       <button onclick="saveAnimalChoice()" style="width:100%;margin-top:10px;padding:12px;background:var(--or);color:#fff;border:none;border-radius:12px;font-size:14px;font-weight:700;cursor:pointer;font-family:var(--font)">Opslaan</button>
     </div>
@@ -702,7 +702,7 @@ Tips:<br>
   }).join('');
 
   result.innerHTML=`
-    <div style="font-weight:700;margin-bottom:8px">✅ ${keys.length} vak${keys.length===1?'':'ken'} herkend — klopt dit?</div>
+    <div style="font-weight:700;margin-bottom:8px">✅ ${keys.length} vak${keys.length===1?'':'ken'} herkend - klopt dit?</div>
     <div style="margin-bottom:12px">${rows}</div>
     <div style="display:flex;gap:8px;flex-wrap:wrap">
       <button class="import-go-btn" style="flex:1;min-width:140px" onclick="doImportConfirm('${app}')">💾 Ja, sla op</button>
@@ -768,7 +768,7 @@ function updateProfileNav(){
       btn.setAttribute('aria-label','Inloggen');
       btn.innerHTML=_loginSvgLg+'Inloggen';
     }else{
-      // Auth state onbekend (nog niet geladen) — toon generiek profiel-icoon, geen Inloggen-flash
+      // Auth state onbekend (nog niet geladen) - toon generiek profiel-icoon, geen Inloggen-flash
       btn.className='hnav-icon-btn';
       btn.dataset.tip='Profiel';
       btn.innerHTML=_genericProfileSvgLg;
@@ -793,7 +793,7 @@ function updateProfileNav(){
       bnavIcon.innerHTML=_loginSvgSm;
       bnavLabel.textContent='Inloggen';
     }else{
-      // Auth state onbekend — generiek icoon, geen Inloggen-flash
+      // Auth state onbekend - generiek icoon, geen Inloggen-flash
       bnavIcon.innerHTML=_genericProfileSvgSm;
       bnavLabel.textContent='Profiel';
     }
@@ -802,7 +802,7 @@ function updateProfileNav(){
 
 function openProfiel(){
   if(!currentUser){
-    // Auth nog aan het laden — wacht op _onAuthReady callback
+    // Auth nog aan het laden - wacht op _onAuthReady callback
     _onAuthReady(user=>{
       if(user)openProfiel();
       else _showAccountPrompt(

@@ -44,18 +44,18 @@ function openVak(id,_noHash){
       ?`<span style="display:inline-flex;align-items:center;gap:3px;font-size:10px;font-weight:700;padding:2px 7px;border-radius:20px;background:rgba(34,197,94,.12);border:1px solid rgba(34,197,94,.3);color:#22c55e;letter-spacing:.2px;vertical-align:middle">✓ Zelfde syllabus</span>`
       :`<span style="display:inline-flex;align-items:center;gap:3px;font-size:10px;font-weight:700;padding:2px 7px;border-radius:20px;background:rgba(234,179,8,.1);border:1px solid rgba(234,179,8,.3);color:#ca8a04;letter-spacing:.2px;vertical-align:middle" title="Huidig CE-programma geldt v.a. ${_svVanaf} (bron: examenblad.nl). Dit examen kan stof bevatten die niet meer in het syllabus staat, of nieuwe stof missen.">⚠ Ander syllabus (v.a. ${_svVanaf})</span>`;
     let _ch=`<div class="ce-archief-card" style="margin-top:16px;border-radius:16px;overflow:hidden;border:1.5px solid rgba(var(--or-rgb),.4);background:linear-gradient(135deg,rgba(var(--or-rgb),.08),rgba(var(--or-rgb),.03))"><div style="display:flex;align-items:center;justify-content:space-between;padding:14px 18px;cursor:pointer;gap:10px;user-select:none" onclick="this.closest('.ce-archief-card').classList.toggle('open')"><div style="display:flex;align-items:center;gap:10px"><div style="width:36px;height:36px;border-radius:10px;background:rgba(var(--or-rgb),.18);display:flex;align-items:center;justify-content:center;font-size:18px;flex-shrink:0">📄</div><div><div style="font-size:14px;font-weight:800;color:var(--or)">Echte CE-examens</div><div style="font-size:11px;color:var(--mu);margin-top:1px">${_aeName} · opgaven + antwoorden · 2019–2025</div></div></div><div style="width:28px;height:28px;border-radius:8px;background:rgba(var(--or-rgb),.15);display:flex;align-items:center;justify-content:center;font-size:12px;color:var(--or);flex-shrink:0;transition:transform .22s" class="ce-arr">▼</div></div><div class="ce-archief-body" style="display:none;padding:0 16px 16px">`;
-    _ch+=`<a href="${_bundel}" target="_blank" rel="noopener" class="ce-bundel-btn">📦 Download complete examenbundel — alle jaren in één PDF</a><div style="display:flex;align-items:flex-start;gap:8px;background:rgba(234,179,8,.08);border:1px solid rgba(234,179,8,.3);border-radius:10px;padding:9px 12px;margin-bottom:14px;font-size:12px;color:#ca8a04;line-height:1.5"><span style="font-size:15px;flex-shrink:0">⚠️</span><span><strong>Let op: zeer groot bestand.</strong> Deze PDF bevat alle examenjaren en kan honderden MB's groot zijn. Dit kan je browser of computer tijdelijk laten vastlopen. Download liever de losse examens per jaar hieronder.</span></div>`;
+    _ch+=`<a href="${_bundel}" target="_blank" rel="noopener" class="ce-bundel-btn">📦 Download complete examenbundel - alle jaren in één PDF</a><div style="display:flex;align-items:flex-start;gap:8px;background:rgba(234,179,8,.08);border:1px solid rgba(234,179,8,.3);border-radius:10px;padding:9px 12px;margin-bottom:14px;font-size:12px;color:#ca8a04;line-height:1.5"><span style="font-size:15px;flex-shrink:0">⚠️</span><span><strong>Let op: zeer groot bestand.</strong> Deze PDF bevat alle examenjaren en kan honderden MB's groot zijn. Dit kan je browser of computer tijdelijk laten vastlopen. Download liever de losse examens per jaar hieronder.</span></div>`;
     const _hasTb=['nl','en','fr','de'].includes(ST.vak.id);
     _jaren.forEach(year=>{
-      _ch+=`<div class="ce-jaar-blok"><div class="ce-jaar-lbl" style="display:flex;align-items:center;gap:7px">${year}${year===2020?' (geannuleerd — COVID)':''} ${_svBadge(year)}</div><div class="ce-tv-row">`;
+      _ch+=`<div class="ce-jaar-blok"><div class="ce-jaar-lbl" style="display:flex;align-items:center;gap:7px">${year}${year===2020?' (geannuleerd - COVID)':''} ${_svBadge(year)}</div><div class="ce-tv-row">`;
       if(year!==2020){['I','II'].forEach(tv=>{
         const _urlOpg=_mkPdf(year,tv,'opgaven');
         const _urlCv=_mkPdf(year,tv,'correctievoorschrift');
-        // Bijlage (tekstboekje) via alleexamens.nl — bevestigd werkend formaat
+        // Bijlage (tekstboekje) via alleexamens.nl - bevestigd werkend formaat
         const _urlTb=`https://static.alleexamens.nl/${_aeLvl}/${_enc}/${year}/${tv}/${_enc}/${_enc}%20${year}%20${tv}_bijlage.pdf`;
-        const _titleOpg=`${_aeName} ${year} Tijdvak ${tv} — Opgaven`;
-        const _titleCv=`${_aeName} ${year} Tijdvak ${tv} — Antwoorden`;
-        const _titleTb=`${_aeName} ${year} Tijdvak ${tv} — Tekstboekje`;
+        const _titleOpg=`${_aeName} ${year} Tijdvak ${tv} - Opgaven`;
+        const _titleCv=`${_aeName} ${year} Tijdvak ${tv} - Antwoorden`;
+        const _titleTb=`${_aeName} ${year} Tijdvak ${tv} - Tekstboekje`;
         _ch+=`<div class="ce-tv-col"><div class="ce-tv-title">Tijdvak ${tv}</div>`;
         _ch+=`<button class="ce-pdf-btn" onclick="openPdfViewer('${_urlOpg}','${_titleOpg.replace(/'/g,"\\'")}')">📋 Opgaven</button>`;
         if(_hasTb)_ch+=`<button class="ce-pdf-btn ce-pdf-tb" onclick="openPdfViewer('${_urlTb}','${_titleTb.replace(/'/g,"\\'")}')">📖 Tekstboekje</button>`;
@@ -75,7 +75,7 @@ function openVak(id,_noHash){
   if(cij!=null){
     const ceNodig=Math.round(Math.max(1,Math.min(10,11-cij))*10)/10;
     const kleur=cij>=7?'#4ADE80':cij>=5.5?'#FCD34D':'#F87171';
-    const status=cij>=7?'Goed op koers — focus op je zwakste CE-domeinen 🎯':cij>=5.5?'CE hard nodig — oefen intensief 📚':'CE is cruciaal — elke punt telt ⚠️';
+    const status=cij>=7?'Goed op koers - focus op je zwakste CE-domeinen 🎯':cij>=5.5?'CE hard nodig - oefen intensief 📚':'CE is cruciaal - elke punt telt ⚠️';
     const ceTxt=cij>=9?'Je hebt al bijna genoeg zonder CE':ceNodig<=1?'Minimale CE voldoende':`CE-score ≥ ${ceNodig.toFixed(1).replace('.',',')} voor een voldoende`;
     // Quiz insight section inside grade panel
     const vpData=getVakBestPct(ST.vak.id);
@@ -91,7 +91,7 @@ function openVak(id,_noHash){
         if(dr.hasData&&dr.pct<weakestPct){weakestPct=dr.pct;weakestDomein=d;}
       });
       const weakHtml=weakestDomein?`<div class="gp-weak-domain">
-        <span class="gp-weak-txt">⚡ Zwakste domein: <strong>${weakestDomein.naam}</strong> (${Math.round(weakestPct*100)}%) — oefen dit nu voor de meeste winst</span>
+        <span class="gp-weak-txt">⚡ Zwakste domein: <strong>${weakestDomein.naam}</strong> (${Math.round(weakestPct*100)}%) - oefen dit nu voor de meeste winst</span>
         <button class="gp-weak-btn" onclick="openQmode('${weakestDomein.id}')">Oefen →</button>
       </div>`:'';
       quizInsightHtml=`<div class="gp-quiz-insight">
@@ -176,7 +176,7 @@ function openVak(id,_noHash){
   });
   initMf();
   updateLpEntryCard();
-  // Examen entry button — toon alleen als er een echt examen beschikbaar is voor dit vak + niveau
+  // Examen entry button - toon alleen als er een echt examen beschikbaar is voor dit vak + niveau
   const _exBtn = document.getElementById('exam-entry-btn');
   const _exSub = document.getElementById('exam-entry-sub');
   const _allEx = typeof EXAMENS !== 'undefined' && EXAMENS[ST.vak.id];
@@ -325,7 +325,7 @@ function updateLpEntryCard(){
   if(sub){
     if(allDone) sub.textContent='🏆 Alle domeinen voltooid!';
     else if(doneCount>0) sub.textContent=`${doneCount} van ${domeinen.length} domeinen voltooid`;
-    else if(startedCount>0) sub.textContent=`${startedCount} domein${startedCount>1?'en':''} gestart — ga door!`;
+    else if(startedCount>0) sub.textContent=`${startedCount} domein${startedCount>1?'en':''} gestart - ga door!`;
     else sub.textContent='Begin met het eerste domein →';
   }
 
@@ -364,7 +364,7 @@ function updateLpEntryCard(){
 const UITLEG_VIDEOS = {
   nl: {
     A: [{id:'dQw4w9WgXcQ',titel:'Argumenteren & redeneren',kanaal:'ExamenTrainer NL'}],
-    B: [{id:'dQw4w9WgXcQ',titel:'Leesvaardigheid – strategieën',kanaal:'ExamenTrainer NL'}],
+    B: [{id:'dQw4w9WgXcQ',titel:'Leesvaardigheid - strategieën',kanaal:'ExamenTrainer NL'}],
     C: [{id:'dQw4w9WgXcQ',titel:'Luistervaardigheid uitgelegd',kanaal:'ExamenTrainer NL'}],
     D: [{id:'dQw4w9WgXcQ',titel:'Schrijfvaardigheid: opbouw tekst',kanaal:'ExamenTrainer NL'}],
     E: [{id:'dQw4w9WgXcQ',titel:'Stellen & formuleren',kanaal:'ExamenTrainer NL'}],
@@ -372,7 +372,7 @@ const UITLEG_VIDEOS = {
   },
   wa: {
     B: [{id:'dQw4w9WgXcQ',titel:'Verbanden & veranderingen',kanaal:'WiskundeAcademie'}],
-    C: [{id:'dQw4w9WgXcQ',titel:'Meetkunde – basisconcepten',kanaal:'WiskundeAcademie'}],
+    C: [{id:'dQw4w9WgXcQ',titel:'Meetkunde - basisconcepten',kanaal:'WiskundeAcademie'}],
     D: [{id:'dQw4w9WgXcQ',titel:'Statistiek & kansen',kanaal:'WiskundeAcademie'}],
     E: [{id:'dQw4w9WgXcQ',titel:'Discrete wiskunde',kanaal:'WiskundeAcademie'}]
   },
@@ -384,7 +384,7 @@ const UITLEG_VIDEOS = {
   },
   en: {
     A: [{id:'dQw4w9WgXcQ',titel:'Reading comprehension strategies',kanaal:'English HAVO'}],
-    B: [{id:'dQw4w9WgXcQ',titel:'Listening skills – exam tips',kanaal:'English HAVO'}],
+    B: [{id:'dQw4w9WgXcQ',titel:'Listening skills - exam tips',kanaal:'English HAVO'}],
     C: [{id:'dQw4w9WgXcQ',titel:'Writing: essay structure',kanaal:'English HAVO'}],
     D: [{id:'dQw4w9WgXcQ',titel:'Speaking & conversation',kanaal:'English HAVO'}],
     E: [{id:'dQw4w9WgXcQ',titel:'Vocabulary in context',kanaal:'English HAVO'}],
@@ -423,7 +423,7 @@ function initSamInteractive(container, d) {
       });
     });
 
-    // 1b. Leesvoortgang — progress bar + per-sectie vinkje
+    // 1b. Leesvoortgang - progress bar + per-sectie vinkje
     {
       const vakId = (typeof ST!=='undefined'&&ST.vak)?ST.vak.id:'x';
       const domId = d.id||'x';
@@ -463,7 +463,7 @@ function initSamInteractive(container, d) {
       upd();
     }
 
-    // 1c. Inline check-vragen — inject after every 2nd section, max 3 total
+    // 1c. Inline check-vragen - inject after every 2nd section, max 3 total
     if (d.sv && d.sv.length >= 2) {
       const heads = [...samEl.querySelectorAll('.sam-head')];
       const pool = [...d.sv].sort(() => Math.random() - .5);
@@ -499,7 +499,7 @@ function initSamInteractive(container, d) {
       });
     }
 
-    // 1d. Auto CE-spotlight uit oe[] (fase 5) — alleen als nog geen sam-ce-spot aanwezig
+    // 1d. Auto CE-spotlight uit oe[] (fase 5) - alleen als nog geen sam-ce-spot aanwezig
     if (d.oe && d.oe.length > 0 && !samEl.querySelector('.sam-ce-spot')) {
       const ex = d.oe.slice(0, Math.min(2, d.oe.length));
       const spot = document.createElement('div');
@@ -528,7 +528,7 @@ function initSamInteractive(container, d) {
     });
   }
 
-  // 3. YouTube uitleg video's — inject into video tab
+  // 3. YouTube uitleg video's - inject into video tab
   const vidPane = dtop.querySelector('[data-tab-id="vids"]');
   const vidTabBtn = dtop.querySelector('.dtab-vid-tab');
   if (vidPane && d.id) {
@@ -545,7 +545,7 @@ function initSamInteractive(container, d) {
     }
   }
 
-  // 4. Test jezelf mini-quiz — inject into quiz tab
+  // 4. Test jezelf mini-quiz - inject into quiz tab
   const quizPane = dtop.querySelector('[data-tab-id="quiz"]');
   if (!quizPane || !d.sv || d.sv.length < 3) return;
   const pool = [...d.sv].sort(() => Math.random() - 0.5).slice(0, 3);
@@ -598,7 +598,7 @@ function printSam() {
   const domNaam = dtopOpen.previousElementSibling?.querySelector('h4')?.textContent || 'Samenvatting';
   const vakNaam = ST?.vak?.naam || '';
   const w = window.open('', '_blank');
-  w.document.write(`<!DOCTYPE html><html><head><meta charset="UTF-8"><title>${vakNaam} — ${domNaam}</title><style>
+  w.document.write(`<!DOCTYPE html><html><head><meta charset="UTF-8"><title>${vakNaam} - ${domNaam}</title><style>
     body{font-family:system-ui,sans-serif;max-width:800px;margin:40px auto;padding:0 20px;color:#1a1d26;font-size:13pt;line-height:1.8}
     .sam-head{font-size:10pt;font-weight:800;text-transform:uppercase;color:#888;margin:20px 0 4px;padding-top:16px;border-top:1px solid #ddd}
     .sam-head:first-child{border-top:none;padding-top:0;margin-top:0}
@@ -615,7 +615,7 @@ function printSam() {
     .sam-check,.sam-prog-wrap,.sam-head-ck,.sam-cta{display:none}
     @media print{body{margin:20mm}}
   </style></head><body>
-    <h1>${vakNaam} — ${domNaam}</h1>
+    <h1>${vakNaam} - ${domNaam}</h1>
     ${samEl.innerHTML}
   </body></html>`);
   w.document.close();
@@ -672,7 +672,7 @@ function initChallengeOnLoad(){
   if(!vak||!domein){_chalState=null;return;}
   // Populate intro screen
   document.getElementById('chal-intro-naam').textContent=c.naam;
-  document.getElementById('chal-intro-sub').textContent='daagt je uit bij '+vak.naam+' — '+domein.naam;
+  document.getElementById('chal-intro-sub').textContent='daagt je uit bij '+vak.naam+' - '+domein.naam;
   document.getElementById('chal-intro-score').textContent=c.score;
   document.getElementById('chal-intro-max').textContent='/ 1000 punten';
   // Set up ST so accept goes straight to quiz
@@ -696,7 +696,7 @@ function renderChallengeResult(){
   const theirScore=_chalState.score;
   const naam=_chalState.naam;
   const myWin=myScore>theirScore,tie=myScore===theirScore;
-  const banner=myWin?'🏆 Jij wint van '+naam+'!':tie?'🤝 Gelijkspel!':'💪 '+naam+' wint — probeer het opnieuw!';
+  const banner=myWin?'🏆 Jij wint van '+naam+'!':tie?'🤝 Gelijkspel!':'💪 '+naam+' wint - probeer het opnieuw!';
   const cls=myWin?'win':tie?'tie':'lose';
   rWrap.innerHTML=`<div class="chal-result-banner ${cls}">${banner}</div>
     <div class="chal-vs-card">
@@ -712,7 +712,7 @@ function daagUit(){
   const naam=localStorage.getItem('slagio_naam')||(currentUser&&currentUser.user_metadata&&currentUser.user_metadata.naam)||'Jij';
   const myScore=ST.antwrd.reduce((s,a)=>s+a.pts*50+Math.round((a.tijdOver||0)/20*50),0);
   const url=buildChallengeUrl(ST.vak.id,ST.domein.id,myScore,naam);
-  const tekst='Ik scoorde '+myScore+'/1000 bij '+ST.vak.naam+' op Slagio — kun jij mij verslaan? 🎯\n'+url;
+  const tekst='Ik scoorde '+myScore+'/1000 bij '+ST.vak.naam+' op Slagio - kun jij mij verslaan? 🎯\n'+url;
   if(navigator.share){navigator.share({title:'Slagio uitdaging',text:tekst,url:url}).catch(()=>{});}
   else{navigator.clipboard.writeText(url).then(()=>showToast('Link gekopieerd! 📋')).catch(()=>showToast(url));}
 }

@@ -20,7 +20,7 @@
 (function initOfflineBanner(){
   const banner=document.createElement('div');
   banner.id='offline-banner';
-  banner.innerHTML='📵 Geen internet — voortgang wordt lokaal opgeslagen';
+  banner.innerHTML='📵 Geen internet - voortgang wordt lokaal opgeslagen';
   document.body.appendChild(banner);
   function update(){banner.classList.toggle('show',!navigator.onLine);}
   window.addEventListener('offline',update);
@@ -134,16 +134,16 @@ function openLbProfile(naam){
     const achieved=getAchieved();
     const earned=ALL_BADGES.filter(b=>achieved[b.id]);
     if(earned.length){
-      const items=earned.map(b=>`<div class="lbp-badge-item rarity-${b.rarity}" title="${b.label} — ${b.tip}"><span class="lbp-badge-emoji">${b.emoji}</span><span class="lbp-badge-lbl">${b.label}</span></div>`).join('');
+      const items=earned.map(b=>`<div class="lbp-badge-item rarity-${b.rarity}" title="${b.label} - ${b.tip}"><span class="lbp-badge-emoji">${b.emoji}</span><span class="lbp-badge-lbl">${b.label}</span></div>`).join('');
       badgeSectionHtml=`<p class="lbp-section-title">Jouw badges (${earned.length}/${ALL_BADGES.length})</p><div class="lbp-badges-grid">${items}</div>`;
     }
   } else {
-    // Show all earned badges — from stored badgeIds (real players & bots), else fall back to featured only
+    // Show all earned badges - from stored badgeIds (real players & bots), else fall back to featured only
     const allBadgeIds=[...new Set(allEntries.flatMap(e=>e.badgeIds||[]))];
     if(allBadgeIds.length){
       const earnedBadges=allBadgeIds.map(id=>ALL_BADGES.find(b=>b.id===id)).filter(Boolean);
       if(earnedBadges.length){
-        const items=earnedBadges.map(b=>`<div class="lbp-badge-item rarity-${b.rarity}" title="${b.label} — ${b.tip}"><span class="lbp-badge-emoji">${b.emoji}</span><span class="lbp-badge-lbl">${b.label}</span></div>`).join('');
+        const items=earnedBadges.map(b=>`<div class="lbp-badge-item rarity-${b.rarity}" title="${b.label} - ${b.tip}"><span class="lbp-badge-emoji">${b.emoji}</span><span class="lbp-badge-lbl">${b.label}</span></div>`).join('');
         badgeSectionHtml=`<p class="lbp-section-title">Badges (${earnedBadges.length})</p><div class="lbp-badges-grid">${items}</div>`;
       }
     } else {
@@ -238,7 +238,7 @@ function openPdfViewer(url,title){
       error.classList.add('show');
     };
     iframe.src=url;
-    // Timeout fallback — if PDF doesn't load in 12s, show error
+    // Timeout fallback - if PDF doesn't load in 12s, show error
     setTimeout(()=>{
       if(!loading.classList.contains('hidden')){
         loading.classList.add('hidden');
@@ -300,7 +300,7 @@ function _renderLbWithData(){
   const subtitleEl=document.getElementById('lb-subtitle');
   const playerCount=[...new Set(all.map(e=>e.uid||e.naam))].length;
   if(subtitleEl){
-    if(playerCount===0)subtitleEl.textContent='Nog geen spelers — wees de eerste!';
+    if(playerCount===0)subtitleEl.textContent='Nog geen spelers - wees de eerste!';
     else if(lbVakFilter==='all')subtitleEl.textContent=`Snelle quiz · beste score per speler · ${playerCount} deelnemer${playerCount===1?'':'s'}`;
     else subtitleEl.textContent=`Snelle quiz · beste ${VAKKEN_LABEL}-score per speler`;
   }
@@ -315,7 +315,7 @@ function _renderLbWithData(){
     const k=`${e.naam}|${e.vak}|${e.domeinId}`;
     if(!entryMap[k]||e.score>entryMap[k].score)entryMap[k]=e;
   });
-  // Stap 2: deduplicate per gebruiker — toon elke speler maar één keer (beste score ooit)
+  // Stap 2: deduplicate per gebruiker - toon elke speler maar één keer (beste score ooit)
   const userMap={};
   Object.values(entryMap).forEach(e=>{
     const uk=e.uid||e.naam;
@@ -408,7 +408,7 @@ function _renderLbWithData(){
     listEl.innerHTML=`<div class="lb-empty">
       <div class="lb-empty-orb">🏆</div>
       <div class="lb-empty-title">Wees de eerste!</div>
-      <div class="lb-empty-sub">Het bord is leeg — jij kunt de #1 positie pakken. Maak een snelle quiz en zet je score neer.</div>
+      <div class="lb-empty-sub">Het bord is leeg - jij kunt de #1 positie pakken. Maak een snelle quiz en zet je score neer.</div>
       <div class="lb-empty-tiers">
         <div class="lb-empty-tier"><div class="lb-empty-tier-icon">🌱</div><div class="lb-empty-tier-name">Beginner</div><div class="lb-empty-tier-pts">&lt;150</div></div>
         <div class="lb-empty-tier"><div class="lb-empty-tier-icon">✏️</div><div class="lb-empty-tier-name">Leerling</div><div class="lb-empty-tier-pts">150+</div></div>
@@ -474,7 +474,7 @@ function _showLbResetPopup(){
       <div class="lb-reset-title">Nieuw schooljaar!</div>
       <div class="lb-reset-body">
         De scores zijn <strong>gereset op 1 juni 2026</strong> voor het nieuwe schooljaar 2026–2027.<br>
-        Het bord is leeg — jij kunt als eerste de #1 pakken.
+        Het bord is leeg - jij kunt als eerste de #1 pakken.
       </div>
       <button class="lb-reset-cta" id="lb-reset-btn">🎯 Claim de #1 plek</button>
       <button class="lb-reset-skip" id="lb-reset-skip">Sluiten</button>
@@ -626,7 +626,7 @@ function getDecayStatus(vakId,domeinId){
   if(days<1)return{color:'#22c55e',label:'Vandaag geoefend'};
   if(days<7)return{color:'#facc15',label:`${Math.floor(days)}d geleden`};
   if(days<21)return{color:'#f97316',label:`${Math.floor(days)}d geleden`};
-  return{color:'#ef4444',label:`${Math.floor(days)} dagen geleden — herhalen!`};
+  return{color:'#ef4444',label:`${Math.floor(days)} dagen geleden - herhalen!`};
 }
 function getVakProgress(vakId){
   const p=getProgress();

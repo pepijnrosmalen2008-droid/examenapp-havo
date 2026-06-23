@@ -215,7 +215,7 @@ const CTUTO_KEY='slagio_cijfer_tuto_v1';
 const CTUTO_STEPS=[
   {sel:'#cijfer-grid',pad:10,pos:'below',
    title:'📝 Vul hier je SE-cijfers in',
-   body:'Dit zijn je schoolexamencijfers — de cijfers die je al hebt gehaald op school. Vul ze in per vak.'},
+   body:'Dit zijn je schoolexamencijfers - de cijfers die je al hebt gehaald op school. Vul ze in per vak.'},
   {sel:'#cijfer-grid .cijfer-input',pad:6,pos:'below',
    title:'✏️ Typ je cijfer in',
    body:'Klik op een vakje en typ je SE-cijfer, bijv. 7,5. Doe dit voor elk vak dat je dit jaar volgt.'},
@@ -290,8 +290,8 @@ function _updatePageSEO(level){
   const nivNaam=isHavo?'HAVO':'VWO';
   const url='https://slagio.nl/'+(level||'');
   document.title=level
-    ?`Slagio — ${nivNaam} Examenvoorbereiding 2026 | 2.000+ vragen, eindexamens, studieplan`
-    :'Slagio — Complete HAVO & VWO Examenvoorbereiding 2026';
+    ?`Slagio - ${nivNaam} Examenvoorbereiding 2026 | 2.000+ vragen, eindexamens, studieplan`
+    :'Slagio - Complete HAVO & VWO Examenvoorbereiding 2026';
   const desc=level
     ?`Gratis ${nivNaam} examenvoorbereiding 2026. 2.000+ oefenvragen per domein, echte CE-eindexamens 2019–2025, persoonlijk studieplan, spaced repetition flashcards en cijfercalculator. Geen account nodig.`
     :'Kies je niveau: HAVO of VWO. Gratis examenvoorbereiding met 2.000+ oefenvragen, echte eindexamens 2019–2025, studieplan en meer.';
@@ -728,7 +728,7 @@ function initNotifications(){
   const visits=parseInt(localStorage.getItem(_NV)||'0')+1;
   localStorage.setItem(_NV,String(visits));
   const cfg=_nCfg();
-  // iOS in browser (niet geïnstalleerd): meldingen werken niet — toon installatie-tip
+  // iOS in browser (niet geïnstalleerd): meldingen werken niet - toon installatie-tip
   if(_isIOS()&&!_isStandalone()){
     if(cfg?.iosInstallDismissed||cfg?.denied)return;
     if(visits>=3)setTimeout(_showIOSInstallPrompt,5000);
@@ -766,7 +766,7 @@ function _showIOSInstallPrompt(){
   const b=document.getElementById('np-body');
   if(ico)ico.textContent='📲';
   if(ttl)ttl.innerHTML='Installeer Slagio<small>Voor herinneringen op iPhone/iPad</small>';
-  if(b)b.innerHTML='Meldingen werken op iOS alleen via de geïnstalleerde app.<br><br>Tik op <strong>Delen&nbsp;⬆</strong> in Safari en kies <strong>"Zet op beginscherm"</strong> — dan ontvang je dagelijkse studie&shy;herinneringen.';
+  if(b)b.innerHTML='Meldingen werken op iOS alleen via de geïnstalleerde app.<br><br>Tik op <strong>Delen&nbsp;⬆</strong> in Safari en kies <strong>"Zet op beginscherm"</strong> - dan ontvang je dagelijkse studie&shy;herinneringen.';
   if(btns)btns.innerHTML='<button class="np-allow" onclick="_dismissIOSInstall()">👍 Begrepen</button>';
   el.classList.add('visible');
 }
@@ -777,7 +777,7 @@ function _dismissIOSInstall(){
 
 async function enableNotifications(){
   const el=document.getElementById('notif-prompt');if(el)el.classList.remove('visible');
-  // iOS browser: kan geen toestemming vragen — installatie nodig
+  // iOS browser: kan geen toestemming vragen - installatie nodig
   if(_isIOS()&&!_isStandalone()){_showIOSInstallPrompt();return;}
   if(!('Notification' in window)){showToast('Je browser ondersteunt geen meldingen','#ef4444',3000);return;}
   try{
@@ -826,7 +826,7 @@ function _sendNotifData(reg){
   }catch{}
 }
 
-// Toon notificatie via Service Worker — werkt op iOS standalone én desktop
+// Toon notificatie via Service Worker - werkt op iOS standalone én desktop
 async function _showNotifViaReg(title,body){
   if(!('serviceWorker' in navigator))return false;
   try{
@@ -877,7 +877,7 @@ if('serviceWorker' in navigator){
   window.addEventListener('load',()=>{
     navigator.serviceWorker.register('/sw.js',{updateViaCache:'none'}).then(reg=>{
       reg.update();
-      // SW gebruikt skipWaiting() — update gaat stil. Geen banner nodig.
+      // SW gebruikt skipWaiting() - update gaat stil. Geen banner nodig.
       // Init notificaties
       navigator.serviceWorker.ready.then(()=>initNotifications());
     }).catch(()=>{});

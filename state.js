@@ -34,7 +34,7 @@ function _routeFromPath(){
   const path=location.pathname.replace(/\/$/,'');
   if(path==='/havo'){chooseLevel('havo',true);return;}
   if(path==='/vwo'){chooseLevel('vwo',true);return;}
-  // Terugkerende gebruiker: direct naar opgeslagen niveau — sla welkomstscherm over
+  // Terugkerende gebruiker: direct naar opgeslagen niveau - sla welkomstscherm over
   const saved=localStorage.getItem('examenapp_level');
   if(saved==='havo'||saved==='vwo'){chooseLevel(saved,true);return;}
   // Nieuwe gebruiker: toon niveau-kiezer
@@ -176,7 +176,7 @@ const VAK_ICONS={
   });
 })();
 
-// ═══════ CONCEPT DEPENDENCY GRAPH (adaptive learning engine — intern, niet zichtbaar voor gebruiker) ═══════
+// ═══════ CONCEPT DEPENDENCY GRAPH (adaptive learning engine - intern, niet zichtbaar voor gebruiker) ═══════
 const conceptGraph = {
   "subject": "Natuurkunde HAVO",
   "concepts": [
@@ -230,7 +230,7 @@ const conceptGraph = {
 // ═══════ NIVEAU BEHEER ═══════
 let APP_LEVEL=localStorage.getItem('examenapp_level')||'havo';
 function getVK(){return APP_LEVEL==='vwo'?VAKKEN_VWO:VAKKEN;}
-// Level-specifieke localStorage/Supabase kolomnamen — altijd suffix (_havo / _vwo)
+// Level-specifieke localStorage/Supabase kolomnamen - altijd suffix (_havo / _vwo)
 function lvlCol(col){return col+'_'+APP_LEVEL;}
 // Migreer bestaande HAVO data van oude keys (zonder suffix) naar nieuwe keys (_havo)
 (function migreerHavo(){
@@ -408,7 +408,7 @@ function _sbGo(type,arg,domeinId){
   if(type==='vraag'){
     const r=_sbData[arg];
     if(!r)return;
-    // Zet state direct — geen openVak nodig (vermijdt sc-detail tussenslide)
+    // Zet state direct - geen openVak nodig (vermijdt sc-detail tussenslide)
     ST.vak=r.vak;
     ST.domein=r.dom;
     const pool=r.mode==='snel'?(r.dom.sv||[]):(r.dom.oe||[]);
@@ -448,7 +448,7 @@ function buildGradeInsight(){
   const metCijfer=vakken.filter(v=>cijfers[v.id]!=null);
   if(metCijfer.length===0){el.innerHTML='';return;}
   const atRisk=metCijfer.filter(v=>cijfers[v.id]<6).length;
-  const warnHtml=atRisk>0?`<div class="gi-warning">⚠ ${atRisk} vak${atRisk>1?'ken':''} onder de 6 — focus op CE!</div>`:'';
+  const warnHtml=atRisk>0?`<div class="gi-warning">⚠ ${atRisk} vak${atRisk>1?'ken':''} onder de 6 - focus op CE!</div>`:'';
   const rows=metCijfer.map(v=>{
     const c=cijfers[v.id];
     const kleur=c>=7?'#4ADE80':c>=5.5?'#FCD34D':'#F87171';

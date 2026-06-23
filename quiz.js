@@ -187,7 +187,7 @@ function toonV(){
   // vraagstelling
   document.getElementById('qq').textContent=q.v;
 
-  // Bronvermelding chip — altijd zichtbaar
+  // Bronvermelding chip - altijd zichtbaar
   {const bronEl=document.getElementById('qbron');
   if(bronEl){const isCE=q.bron&&/CE\s*\d{4}|CE\s*20\d\d|\d{4}\s*T[12]/i.test(q.bron);
   const label=isCE?q.bron.replace(/\s*\(.*\)/,'').trim():'Slagio oefenvraag';
@@ -296,7 +296,7 @@ function kies(gekozen,correct){
   const btns=document.querySelectorAll('#snel-area .opt');
   btns.forEach(b=>b.disabled=true);
   btns[gekozen].classList.add('suspense-pending');
-  // 350ms suspense delay — dopamine peak occurs in the gap between action and result
+  // 350ms suspense delay - dopamine peak occurs in the gap between action and result
   setTimeout(()=>_kiesReveal(gekozen,correct,btns),350);
 }
 function _kiesReveal(gekozen,correct,btns){
@@ -531,7 +531,7 @@ const ALL_BADGES=[
   {id:'streak100',emoji:'👑', label:'Legende',         tip:'100 dagen streak',                cat:'Streak',     rarity:'mythic'},
   {id:'streak200',emoji:'🌌', label:'Onsterfelijk',    tip:'200 dagen streak',                cat:'Streak',     rarity:'eternal'},
   {id:'streak300',emoji:'⚜️', label:'Grootmeester',    tip:'300 dagen streak',                cat:'Streak',     rarity:'eternal'},
-  {id:'streak365',emoji:'🪐', label:'Heel het jaar',   tip:'365 dagen op rij — een vol jaar', cat:'Streak',     rarity:'eternal'},
+  {id:'streak365',emoji:'🪐', label:'Heel het jaar',   tip:'365 dagen op rij - een vol jaar', cat:'Streak',     rarity:'eternal'},
   // Quizzen
   {id:'quiz1',    emoji:'🎯', label:'Beginner',        tip:'Je eerste quiz gemaakt',          cat:'Quizzen',    rarity:'common'},
   {id:'quiz10',   emoji:'📚', label:'Student',         tip:'10 quizzen gemaakt',              cat:'Quizzen',    rarity:'rare'},
@@ -621,18 +621,18 @@ function earnAch(id){
 }
 function checkQuizCountAch(total){
   if(total>=1&&earnAch('quiz1'))setTimeout(()=>showAch('🎯','Eerste quiz gemaakt!'),400);
-  if(total>=10&&earnAch('quiz10'))setTimeout(()=>showAch('📚','10 quizzen — student!'),400);
-  if(total>=50&&earnAch('quiz50'))setTimeout(()=>showAch('🚀','50 quizzen — gevorderd!'),400);
-  if(total>=100&&earnAch('quiz100'))setTimeout(()=>showAch('🌊','100 quizzen — doorzetter!'),400);
-  if(total>=500&&earnAch('quiz500'))setTimeout(()=>showAch('💫','500 quizzen — meester!'),400);
+  if(total>=10&&earnAch('quiz10'))setTimeout(()=>showAch('📚','10 quizzen - student!'),400);
+  if(total>=50&&earnAch('quiz50'))setTimeout(()=>showAch('🚀','50 quizzen - gevorderd!'),400);
+  if(total>=100&&earnAch('quiz100'))setTimeout(()=>showAch('🌊','100 quizzen - doorzetter!'),400);
+  if(total>=500&&earnAch('quiz500'))setTimeout(()=>showAch('💫','500 quizzen - meester!'),400);
 }
 function checkVakkenAch(){
   try{
     const ph=JSON.parse(localStorage.getItem('examenapp_progress_havo')||'{}');
     const pv=JSON.parse(localStorage.getItem('examenapp_progress_vwo')||'{}');
     const n=new Set([...Object.keys(ph),...Object.keys(pv)].map(k=>k.split('_')[0])).size;
-    if(n>=3&&earnAch('vakken3'))setTimeout(()=>showAch('📖','3 vakken geoefend — veelzijdig!'),400);
-    if(n>=10&&earnAch('vakken10'))setTimeout(()=>showAch('🌍','10 vakken — alleskunner!'),400);
+    if(n>=3&&earnAch('vakken3'))setTimeout(()=>showAch('📖','3 vakken geoefend - veelzijdig!'),400);
+    if(n>=10&&earnAch('vakken10'))setTimeout(()=>showAch('🌍','10 vakken - alleskunner!'),400);
   }catch(e){}
   checkDomeinAch();
 }
@@ -640,8 +640,8 @@ function checkFcAch(){
   const n=parseInt(localStorage.getItem('slagio_fc_sessions')||'0')+1;
   localStorage.setItem('slagio_fc_sessions',n);
   if(n>=1&&earnAch('fc_1'))setTimeout(()=>showAch('🃏','Kaartjeskoning! Eerste flashcard-sessie!'),400);
-  if(n>=10&&earnAch('fc_10'))setTimeout(()=>showAch('📦','10 flashcard-sessies — kaartenstapel!'),400);
-  if(n>=50&&earnAch('fc_50'))setTimeout(()=>showAch('🔁','50 sessies — herhaalmeester!'),400);
+  if(n>=10&&earnAch('fc_10'))setTimeout(()=>showAch('📦','10 flashcard-sessies - kaartenstapel!'),400);
+  if(n>=50&&earnAch('fc_50'))setTimeout(()=>showAch('🔁','50 sessies - herhaalmeester!'),400);
 }
 function checkRaceAch(playerWin){
   if(earnAch('race_1'))setTimeout(()=>showAch('🏁','Op de baan! Eerste race gespeeld!'),400);
@@ -649,7 +649,7 @@ function checkRaceAch(playerWin){
     const w=parseInt(localStorage.getItem('slagio_race_wins')||'0')+1;
     localStorage.setItem('slagio_race_wins',w);
     if(w>=1&&earnAch('race_win1'))setTimeout(()=>showAch('🥇','Racewinnaar! Eerste race gewonnen!'),600);
-    if(w>=10&&earnAch('race_win10'))setTimeout(()=>showAch('🏆','10 races gewonnen — kampioen!'),600);
+    if(w>=10&&earnAch('race_win10'))setTimeout(()=>showAch('🏆','10 races gewonnen - kampioen!'),600);
   }
 }
 function checkDomeinAch(){
@@ -670,8 +670,8 @@ function checkPlanAch(){
   const n=parseInt(localStorage.getItem('slagio_plan_tasks')||'0')+1;
   localStorage.setItem('slagio_plan_tasks',n);
   if(n>=1&&earnAch('plan_1'))setTimeout(()=>showAch('📅','Planmatig! Eerste studieplan-taak!'),400);
-  if(n>=7&&earnAch('plan_7'))setTimeout(()=>showAch('📋','7 studieplan-taken — doelgericht!'),400);
-  if(n>=30&&earnAch('plan_30'))setTimeout(()=>showAch('🗓️','30 taken — IJzeren routine!'),400);
+  if(n>=7&&earnAch('plan_7'))setTimeout(()=>showAch('📋','7 studieplan-taken - doelgericht!'),400);
+  if(n>=30&&earnAch('plan_30'))setTimeout(()=>showAch('🗓️','30 taken - IJzeren routine!'),400);
 }
 function checkPlanDayAch(dateStr){
   try{
@@ -817,8 +817,8 @@ function showAch(emoji,txt,offset){
 }
 function checkComboAch(combo){
   if(combo===3&&earnAch('combo3'))showAch('💥','3 vragen op rij!');
-  if(combo===5&&earnAch('combo5'))showAch('🌩️','GOD MODE — 5 op rij!',175);
-  if(combo===10&&earnAch('combo10'))showAch('🏅','10 op rij — legendarisch!',220);
+  if(combo===5&&earnAch('combo5'))showAch('🌩️','GOD MODE - 5 op rij!',175);
+  if(combo===10&&earnAch('combo10'))showAch('🏅','10 op rij - legendarisch!',220);
 }
 
 // ═══════ GELUID ═══════
@@ -957,9 +957,9 @@ function toonRes(){
   if(isPerfect)checkPerfectCountAch();
   try{
     let emi,tit,sub;
-    if(isPerfect){emi='🌟';tit='Perfecte score!';sub='Fenomenaal! Alles goed — jij bent klaar voor het CE!';}
+    if(isPerfect){emi='🌟';tit='Perfecte score!';sub='Fenomenaal! Alles goed - jij bent klaar voor het CE!';}
     else if(pct>=0.9){emi='🏆';tit='Uitstekend!';sub='Je beheerst dit domein helemaal goed.';}
-    else if(pct>=0.7){emi='🎉';tit='Goed gedaan!';sub='Je snapt het meeste — kleine herhaling loont.';}
+    else if(pct>=0.7){emi='🎉';tit='Goed gedaan!';sub='Je snapt het meeste - kleine herhaling loont.';}
     else if(pct>=0.5){emi='📖';tit='Aardig begin';sub='De basis zit erin. Oefen dit domein nog eens.';}
     else{emi='💪';tit='Blijven oefenen!';sub='Dit domein verdient meer aandacht.';}
     if(isPerfect)setTimeout(()=>launchConfetti('gold'),400);
@@ -992,7 +992,7 @@ function toonRes(){
     }
     const rbdEl=document.getElementById('rbd');
     if(rbdEl)rbdEl.innerHTML=bdHtml;
-    // Share card — laat zien bij ≥50%, competitief frame
+    // Share card - laat zien bij ≥50%, competitief frame
     if(rbdEl&&pct>=0.5){
       const shareCard=document.createElement('div');
       shareCard.id='share-score-card';
@@ -1062,7 +1062,7 @@ function toonRes(){
         const _doms=ST.vak.domeinen;
         const _idx=_doms.findIndex(d=>d.id===ST.domein.id);
         const _next=_doms[_idx+1];
-        if(_next){_ndb.textContent=`→ Volgend: Domein ${_next.id} — ${_next.naam}`;_ndb.style.display='block';}
+        if(_next){_ndb.textContent=`→ Volgend: Domein ${_next.id} - ${_next.naam}`;_ndb.style.display='block';}
         else _ndb.style.display='none';
       }
     }catch(e){}
@@ -1107,22 +1107,22 @@ function toonRes(){
         </div>
         <div class="res-xp-num">+${res.added} XP</div>
         <div class="res-xp-sub">${ST.isDailyChallenge?'⚡ Dagelijkse uitdaging bonus':''}&nbsp;</div>
-        <div class="res-xp-lvl">Level ${res.newLvl} — ${lvlName} · ${res.totalXP-curXP} / ${nxtXP-curXP} XP</div>
+        <div class="res-xp-lvl">Level ${res.newLvl} - ${lvlName} · ${res.totalXP-curXP} / ${nxtXP-curXP} XP</div>
         <div class="xp-bar-wrap"><div class="xp-bar" style="width:${xpPct}%"></div></div>
         <div class="res-xp-journey-mini">${_rj}</div>
-        ${res.leveled?`<div class="levelup-banner">🎉 Level up! Je bent nu level ${res.newLvl} — ${lvlName}!</div>`:''}
+        ${res.leveled?`<div class="levelup-banner">🎉 Level up! Je bent nu level ${res.newLvl} - ${lvlName}!</div>`:''}
         ${isPerfect?`<div class="perfect-banner">🌟 Perfecte score! +50% XP bonus verdiend!</div>`:''}`;
       const rbdEl2=document.getElementById('rbd');
       if(rbdEl2)rbdEl2.insertAdjacentElement('afterend',card);
       if(res.leveled){setTimeout(()=>launchConfetti(),300);setTimeout(()=>playSound('levelup'),400);haptic([50,30,80,30,120]);}
       setTimeout(()=>floatXP(res.added),150);
-      // Level teaser — als dichtbij volgend level
+      // Level teaser - als dichtbij volgend level
       try{
         const xpToNext=nxtXP-res.totalXP;
         if(!res.leveled&&xpToNext<150){
           const tPct=Math.round((res.totalXP-curXP)/(nxtXP-curXP)*100);
           const tsr=document.createElement('div');tsr.className='lvl-teaser';
-          tsr.innerHTML=`<div style="font-size:22px">⭐</div><div class="lvl-teaser-bar"><div class="lvl-teaser-lbl">Nog <strong>${xpToNext} XP</strong> voor level ${res.newLvl+1} — ${LEVEL_NAMES[res.newLvl+1]||'Level '+(res.newLvl+1)}</div><div class="lvl-teaser-fill"><div class="lvl-teaser-fill-inner" style="width:0%" data-target="${tPct}"></div></div></div>`;
+          tsr.innerHTML=`<div style="font-size:22px">⭐</div><div class="lvl-teaser-bar"><div class="lvl-teaser-lbl">Nog <strong>${xpToNext} XP</strong> voor level ${res.newLvl+1} - ${LEVEL_NAMES[res.newLvl+1]||'Level '+(res.newLvl+1)}</div><div class="lvl-teaser-fill"><div class="lvl-teaser-fill-inner" style="width:0%" data-target="${tPct}"></div></div></div>`;
           card.appendChild(tsr);
           setTimeout(()=>{const fill=tsr.querySelector('.lvl-teaser-fill-inner');if(fill)fill.style.width=fill.dataset.target+'%';},200);
         }
@@ -1221,9 +1221,9 @@ function _showRegPrompt(pct){
       <div style="text-align:center;margin-bottom:18px">
         <div style="font-size:32px;margin-bottom:8px">🏆</div>
         <div style="font-size:19px;font-weight:900;color:var(--or);margin-bottom:4px">${msg} ${pctNum}%</div>
-        <div style="font-size:14px;font-weight:700;color:var(--dk,#e2e8f0);margin-bottom:6px">Sla je score op — gratis</div>
+        <div style="font-size:14px;font-weight:700;color:var(--dk,#e2e8f0);margin-bottom:6px">Sla je score op - gratis</div>
         <div style="font-size:13px;color:var(--mu,#94a3b8);margin-bottom:20px">Maak een gratis account en verschijn op het leaderboard. Duurt 30 seconden.</div>
-        <button onclick="(function(){document.getElementById('reg-prompt-sheet')?.remove();switchAuthTab&&switchAuthTab('register');show('sc-auth');})()" style="background:linear-gradient(135deg,#6366f1,#4f46e5);color:#fff;border:none;border-radius:14px;padding:14px 0;font-size:15px;font-weight:700;cursor:pointer;font-family:var(--font);width:100%;margin-bottom:10px">Account aanmaken — gratis →</button>
+        <button onclick="(function(){document.getElementById('reg-prompt-sheet')?.remove();switchAuthTab&&switchAuthTab('register');show('sc-auth');})()" style="background:linear-gradient(135deg,#6366f1,#4f46e5);color:#fff;border:none;border-radius:14px;padding:14px 0;font-size:15px;font-weight:700;cursor:pointer;font-family:var(--font);width:100%;margin-bottom:10px">Account aanmaken - gratis →</button>
         <button onclick="document.getElementById('reg-prompt-sheet')?.remove()" style="background:none;border:none;color:var(--mu,#94a3b8);font-size:13px;cursor:pointer;font-family:var(--font);padding:6px">Niet nu</button>
       </div>
     </div>`;
@@ -1275,7 +1275,7 @@ function renderHmQuickChips(){
       ?{icon:'📄',label:`${vakNaam} examens`,fn:()=>openLastVakCE()}
       :{icon:'📄',label:'CE-examens',fn:()=>show('sc-schedule')},
     vakNaam
-      ?{icon:'🏁',label:`Race — ${vakNaam}`,fn:()=>openLastVakRace()}
+      ?{icon:'🏁',label:`Race - ${vakNaam}`,fn:()=>openLastVakRace()}
       :{icon:'🏁',label:'Bot Race',fn:()=>show('sc-home')},
     {icon:'🏅',label:'Badges',fn:()=>openProfiel()},
   ];
@@ -1375,10 +1375,10 @@ async function deelScore(){
   const pctRaw=total?Math.round(parseInt(score)/parseInt(total.replace('/',''))*100):null;
   const pctTxt=pctRaw?` (${pctRaw}%)`:'';
   const modeTxt={snel:'snelle quiz',oud:'open vragen',fc:'flashcards',race:'Bot Race'}[ST.mode]||'quiz';
-  const tekst=`${pctRaw>=90?'🌟':pctRaw>=70?'🔥':'💪'} ${score}${total}${pctTxt} op ${vakNaam} ${modeTxt} — kun jij het beter?\nGratis oefenen op slagio.nl`;
+  const tekst=`${pctRaw>=90?'🌟':pctRaw>=70?'🔥':'💪'} ${score}${total}${pctTxt} op ${vakNaam} ${modeTxt} - kun jij het beter?\nGratis oefenen op slagio.nl`;
   if(navigator.share){
     try{
-      await navigator.share({title:'Slagio — Mijn score',text:tekst,url:'https://slagio.nl'});
+      await navigator.share({title:'Slagio - Mijn score',text:tekst,url:'https://slagio.nl'});
       if(earnAch('ambassadeur'))setTimeout(()=>showAch('📣','Ambassadeur! Score gedeeld.'),500);
     }catch(e){}
   }else{
