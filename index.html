@@ -422,10 +422,10 @@
 <!-- CONFIRM DIALOG -->
 <div id="dc-popup" role="dialog" aria-modal="true" aria-label="Dagelijkse uitdaging">
   <div class="dc-popup-card">
-    <div class="dc-popup-badge">⚡ Dagelijkse uitdaging</div>
+    <div class="dc-popup-badge"><svg class="dc-ic" viewBox="0 0 24 24" width="14" height="14" fill="currentColor" aria-hidden="true"><path d="M13 2 3 14h9l-1 8 10-12h-9z"/></svg>Dagelijkse uitdaging</div>
     <div class="dc-popup-title" id="dc-popup-title"></div>
     <div class="dc-popup-sub" id="dc-popup-sub"></div>
-    <div class="dc-popup-xp">🔥 +2× XP bonus op elke vraag vandaag</div>
+    <div class="dc-popup-xp"><svg class="dc-ic" viewBox="0 0 24 24" width="14" height="14" fill="currentColor" aria-hidden="true"><path d="M8.5 14.5A2.5 2.5 0 0 0 11 12c0-1.38-.5-2-1-3-1.072-2.143-.224-4.054 2-6 .5 2.5 2 4.9 4 6.5 2 1.6 3 3.5 3 5.5a7 7 0 1 1-14 0c0-1.153.433-2.294 1-3a2.5 2.5 0 0 0 2.5 2.5z"/></svg>+2× XP bonus op elke vraag vandaag</div>
     <div class="dc-popup-btns">
       <button class="dc-popup-start" onclick="closeDcPopup(true)">Starten →</button>
       <button class="dc-popup-skip" onclick="closeDcPopup(false)">Niet nu</button>
@@ -1195,7 +1195,7 @@
 
 <!-- QUIZ -->
 <div id="sc-quiz" class="sc">
-<div class="qtb"><span class="ql">📚</span><span class="qmeta" id="qmeta"></span><span id="adaptive-pill" class="adapt-pill" style="display:none">🎯 Adaptief</span><button class="qtb-flag" id="quiz-flag-btn" onclick="toggleFlagQ()" title="Markeer voor herhaling" aria-label="Markeer vraag voor herhaling">🚩</button><button class="qtb-snd" id="quiz-snd-btn" onclick="toggleSound()" title="Geluid aan/uit">🔊</button><button class="qstp" onclick="stopQ()">✕ Stop</button></div>
+<div class="qtb"><span class="ql"><svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg></span><span class="qmeta" id="qmeta"></span><span id="adaptive-pill" class="adapt-pill" style="display:none"><svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg> Adaptief</span><button class="qtb-flag" id="quiz-flag-btn" onclick="toggleFlagQ()" title="Markeer voor herhaling" aria-label="Markeer vraag voor herhaling"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1z"/><line x1="4" y1="22" x2="4" y2="15"/></svg></button><button class="qtb-snd" id="quiz-snd-btn" onclick="toggleSound()" title="Geluid aan/uit"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/><path d="M15.54 8.46a5 5 0 0 1 0 7.07M19.07 4.93a10 10 0 0 1 0 14.14"/></svg></button><button class="qstp" onclick="stopQ()"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="vertical-align:-2px;margin-right:3px"><path d="M18 6 6 18M6 6l12 12"/></svg>Stop</button></div>
 <div class="qpb"><div class="qpf" id="qprog"></div></div>
 <div class="quiz-skeleton" id="quiz-skeleton" style="display:none">
   <div class="skel sk-badge"></div>

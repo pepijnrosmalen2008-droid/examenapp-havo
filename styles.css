@@ -5096,6 +5096,17 @@ html.dark{
 .hm-soc-lb .hm-soc-ic{color:#f59e0b}
 .hm-soc-grp .hm-soc-ic{color:var(--or)}
 
+/* ── Daily-challenge popup icons (SVG, replaced ⚡🔥 emoji) ──────── */
+.dc-popup-badge,.dc-popup-xp{display:inline-flex;align-items:center;gap:6px}
+.dc-ic{flex-shrink:0}
+
+/* ── Quiz toolbar icons (SVG, replaced 📚🎯🚩🔊✕ emoji) ─────────── */
+.qtb .ql svg,.qtb-flag svg,.qtb-snd svg,.qstp svg,.adapt-pill svg{display:inline-block;vertical-align:middle}
+.qtb .ql{display:inline-flex;align-items:center}
+.qtb-snd,.qtb-flag{color:#fff;display:inline-flex;align-items:center;justify-content:center}
+.qtb-flag.flagged{color:#f43f5e}
+.qtb-flag.flagged svg{fill:#f43f5e}
+
 /* ── Bento stat icons (SVG, replaced 🔥⭐🏅📈 emoji) ─────────────── */
 .bento-si{display:flex;align-items:center;justify-content:center}
 .bento-si svg{display:block}
