@@ -527,19 +527,20 @@ function updateCountdown(){
     const now=new Date();
     const nogExamens=EXAM_SCHEDULE.some(ex=>(!ex.niveau||ex.niveau===APP_LEVEL)&&new Date(ex.datum+'T'+ex.tijd.split('–')[0]+':00+02:00')>now);
     if(nogExamens){
-      setEl('cd-title','Geen examen ingesteld');
-      if(labelEl)labelEl.textContent='—';
-      if(subEl)subEl.textContent='Kies je herkansing of stel je 3e tijdvak in';
+      setEl('cd-title','Stel je volgende examen in');
+      if(labelEl)labelEl.textContent='Aftellen';
+      if(subEl)subEl.textContent='Kies je herkansing of 3e tijdvak voor een live aftelling';
     }else{
-      setEl('cd-title','Alle examens zijn klaar 🎓');
-      if(labelEl)labelEl.textContent='Gefeliciteerd!';
+      setEl('cd-title','Alle examens klaar - goed bezig!');
+      if(labelEl)labelEl.textContent='Geslaagd-modus';
       if(subEl)subEl.textContent='Je hebt alle examens gehad';
     }
     ['cd-d','cd-h','cd-m','cd-s','cd-days-text'].forEach(id=>setEl(id,'–'));
-    if(cdEl)cdEl.classList.remove('cd-panic');
+    if(cdEl){cdEl.classList.remove('cd-panic');cdEl.classList.add('cd-empty');}
     const panicEl=document.getElementById('cd-panic-msg');if(panicEl)panicEl.style.display='none';
     return;
   }
+  if(cdEl)cdEl.classList.remove('cd-empty');
   // Update vak name + formatted date
   if(labelEl)labelEl.textContent=tgt.vak;
   if(subEl){
