@@ -5096,9 +5096,29 @@ html.dark{
 .hm-soc-lb .hm-soc-ic{color:#f59e0b}
 .hm-soc-grp .hm-soc-ic{color:var(--or)}
 
+/* ── Welcome 'how it works' step icons (SVG, replaced emoji) ─────── */
+.hiw-icon{color:var(--or);display:flex;align-items:center;justify-content:center;line-height:0}
+.hiw-icon svg{filter:drop-shadow(0 3px 8px rgba(var(--or-rgb),.32));transition:transform .3s var(--ease-spring)}
+.hiw-step:hover .hiw-icon svg{transform:scale(1.12) rotate(-4deg)}
+
+/* ── Welcome schedule footer icons (SVG, replaced 📝🔄🎓) ────────── */
+.wlc-foot-dates span{display:inline-flex;align-items:center;gap:6px}
+.wlc-foot-ic{flex-shrink:0;opacity:.85}
+
+/* ── Generic label icon helper (button/title inline SVG) ────────── */
+.lbl-ic{display:inline-block;vertical-align:-3px;margin-right:7px;flex-shrink:0}
+
+/* ── Welcome conversion → staggered entrance for cards & steps ───── */
+.wlc-card-wrap{animation:rdRise .55s var(--ease-out) both}
+.wlc-cvwo-wrap{animation-delay:.1s}
+.hiw-step{animation:rdRise .5s var(--ease-out) both}
+.hiw-step:nth-child(3){animation-delay:.08s}
+.hiw-step:nth-child(5){animation-delay:.16s}
+@keyframes rdRise{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:none}}
+
 /* ── Respect reduced-motion for everything added here ───────────── */
 @media(prefers-reduced-motion:reduce){
-  .hm-cta-primary,.hm-h1 em,.wlc-stars svg,.streak-flame-ic,.streak-week-empty .swe-today .swe-pip,.fb-ic{animation:none!important}
+  .hm-cta-primary,.hm-h1 em,.wlc-stars svg,.streak-flame-ic,.streak-week-empty .swe-today .swe-pip,.fb-ic,.wlc-card-wrap,.hiw-step{animation:none!important}
   .hm-cta-primary{background-position:0 50%!important}
   .hm-h1 em{background-position:0 50%!important}
 }
