@@ -5096,6 +5096,17 @@ html.dark{
 .hm-soc-lb .hm-soc-ic{color:#f59e0b}
 .hm-soc-grp .hm-soc-ic{color:var(--or)}
 
+/* ── iOS PWA safe-area (viewport-fit=cover + black-translucent) ──────
+   Houd top-chrome onder de notch/statusbalk; bottom-nav lift al via
+   env(safe-area-inset-bottom). Op toestellen zonder inset is env()=0,
+   dus geen verandering. ─────────────────────────────────────────── */
+@supports(padding:max(0px,env(safe-area-inset-top))){
+  .nav{min-height:var(--nav-h);height:auto;padding-top:env(safe-area-inset-top,0px)}
+  .hnav,.wlc-bar{padding-top:env(safe-area-inset-top,0px)}
+  .qtb{padding-top:calc(10px + env(safe-area-inset-top,0px))!important}
+  .race-tb{padding-top:calc(12px + env(safe-area-inset-top,0px))!important}
+}
+
 /* ── Daily-challenge popup icons (SVG, replaced ⚡🔥 emoji) ──────── */
 .dc-popup-badge,.dc-popup-xp{display:inline-flex;align-items:center;gap:6px}
 .dc-ic{flex-shrink:0}
