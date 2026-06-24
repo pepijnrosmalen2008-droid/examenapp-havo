@@ -359,6 +359,44 @@ function addXP(amount){
   const newStage=getAnimalStageIdx(d.xp);
   return{added:amount,oldLvl,newLvl,leveled:newLvl>oldLvl,totalXP:d.xp,evolved:newStage>oldStage,newStage};
 }
+/* ═══ Signature: "De vlag uit" ═══════════════════════════════════════
+   Het Nederlandse slaag-ritueel — de vlag met de schooltas gaat omhoog.
+   Speelt op level-up, perfecte score en een geslaagde simulatietoets.
+   Eén bold moment; de rest van de UI blijft stil. Reduced-motion: statisch. */
+function slagioVlagUit(kind){
+  try{
+    const old=document.getElementById('vlag-uit'); if(old)old.remove();
+    const reduce=window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    const bagCol=kind==='perfect'?'#e8580c':(kind==='sim'?'#16a34a':'#2b6cb0');
+    const label=kind==='perfect'?'Foutloos!':(kind==='sim'?'Geslaagd!':'De vlag mag uit');
+    const ov=document.createElement('div');
+    ov.id='vlag-uit'; ov.className='vlag-uit'+(reduce?' vlag-reduce':''); ov.setAttribute('aria-hidden','true');
+    ov.innerHTML=
+      '<div class="vlag-stage">'+
+        '<svg class="vlag-svg" viewBox="0 0 200 240" width="200" height="240" aria-hidden="true">'+
+          '<rect x="40" y="12" width="7" height="214" rx="3.5" fill="#6b5b4a"/>'+
+          '<circle cx="43.5" cy="12" r="7" fill="#caa45a"/>'+
+          '<g class="vlag-raise">'+
+            '<g class="vlag-cloth">'+
+              '<rect x="47" y="26" width="98" height="19" fill="#AE1C28"/>'+
+              '<rect x="47" y="45" width="98" height="19" fill="#ffffff"/>'+
+              '<rect x="47" y="64" width="98" height="19" fill="#21468B"/>'+
+            '</g>'+
+            '<g class="vlag-bag" transform="translate(43.5,128)">'+
+              '<path d="M0 -6 q22 4 22 26" stroke="#3a3f4b" stroke-width="4" fill="none"/>'+
+              '<rect x="4" y="14" width="46" height="42" rx="11" fill="'+bagCol+'"/>'+
+              '<rect x="4" y="30" width="46" height="15" rx="6" fill="rgba(0,0,0,.16)"/>'+
+              '<rect x="19" y="20" width="16" height="12" rx="4" fill="rgba(255,255,255,.9)"/>'+
+            '</g>'+
+          '</g>'+
+        '</svg>'+
+        '<div class="vlag-label">'+label+'</div>'+
+      '</div>';
+    document.body.appendChild(ov);
+    try{if(typeof haptic==='function')haptic([40,40,90]);}catch(e){}
+    setTimeout(function(){ov.classList.add('vlag-out');setTimeout(function(){if(ov.parentNode)ov.remove();},560);}, reduce?1500:2500);
+  }catch(e){}
+}
 function getComboMult(combo){if(combo>=5)return 2;if(combo>=3)return 1.5;return 1;}
 function getStreakBonus(){const s=calcStreak();return Math.min((s.current||0)*0.1,0.5);}
 function showCombo(combo){

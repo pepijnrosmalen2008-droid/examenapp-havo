@@ -5230,6 +5230,26 @@ html.dark{
 /* Home-hero glow temmen (geen pulserende aurora) */
 .hm-hero-glow{opacity:.5!important;animation:none!important}
 
+/* ── Signature: "De vlag uit" ──────────────────────────────────────
+   Het ene bold moment. De vlag met de schooltas gaat omhoog bij
+   level-up / perfecte score / geslaagde simulatietoets. */
+.vlag-uit{position:fixed;inset:0;z-index:9998;display:flex;align-items:center;justify-content:center;pointer-events:none;
+  background:radial-gradient(ellipse at center,rgba(11,15,26,.4),rgba(11,15,26,0) 68%);
+  opacity:0;animation:vlagBgIn .42s var(--ease-out) forwards}
+.vlag-uit.vlag-out{animation:vlagBgOut .5s var(--ease-soft) forwards}
+.vlag-stage{display:flex;flex-direction:column;align-items:center;gap:12px}
+.vlag-svg{filter:drop-shadow(0 20px 38px rgba(11,15,26,.45))}
+.vlag-raise{animation:vlagRaise 1.05s var(--ease-out) .12s both}
+.vlag-cloth{transform-origin:47px 54px;animation:vlagWave 2.2s ease-in-out 1.15s 2}
+.vlag-label{font-family:var(--font-head,inherit);font-weight:800;font-size:21px;letter-spacing:-.3px;color:#fff;
+  text-shadow:0 2px 16px rgba(0,0,0,.55);opacity:0;animation:vlagLbl .5s var(--ease-out) .82s both}
+@keyframes vlagBgIn{to{opacity:1}}
+@keyframes vlagBgOut{to{opacity:0}}
+@keyframes vlagRaise{0%{transform:translateY(108px);opacity:.15}55%{opacity:1}100%{transform:translateY(0);opacity:1}}
+@keyframes vlagWave{0%,100%{transform:skewY(0) scaleX(1)}28%{transform:skewY(-2.4deg) scaleX(.985)}64%{transform:skewY(1.7deg) scaleX(1.012)}}
+@keyframes vlagLbl{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
+.vlag-reduce .vlag-raise,.vlag-reduce .vlag-cloth,.vlag-reduce .vlag-label{animation:none!important;opacity:1!important;transform:none!important}
+
 /* ── Glas met mate (geen 30px-blur-overdaad) + hard snoeien op mobiel ── */
 @media(max-width:560px){
   .bottom-nav-inner{backdrop-filter:blur(18px) saturate(1.2)!important;-webkit-backdrop-filter:blur(18px) saturate(1.2)!important}

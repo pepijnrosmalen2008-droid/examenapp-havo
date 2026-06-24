@@ -1114,7 +1114,8 @@ function toonRes(){
         ${isPerfect?`<div class="perfect-banner">🌟 Perfecte score! +50% XP bonus verdiend!</div>`:''}`;
       const rbdEl2=document.getElementById('rbd');
       if(rbdEl2)rbdEl2.insertAdjacentElement('afterend',card);
-      if(res.leveled){setTimeout(()=>launchConfetti(),300);setTimeout(()=>playSound('levelup'),400);haptic([50,30,80,30,120]);}
+      if(res.leveled){setTimeout(()=>{try{slagioVlagUit('levelup');}catch(e){try{launchConfetti();}catch(_){}}},300);setTimeout(()=>playSound('levelup'),400);haptic([50,30,80,30,120]);}
+      else if(isPerfect){setTimeout(()=>{try{slagioVlagUit('perfect');}catch(e){}},300);}
       setTimeout(()=>floatXP(res.added),150);
       // Level teaser - als dichtbij volgend level
       try{
