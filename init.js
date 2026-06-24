@@ -948,28 +948,33 @@ function swUpdate(){
     }
   });
 
-  document.getElementById('pwa-install-btn').addEventListener('click',()=>{
-    hideBanner();
-    if(_deferredPrompt){
-      _deferredPrompt.prompt();
-      _deferredPrompt.userChoice.then(()=>{_deferredPrompt=null;});
+  // De pwa-banner-elementen staan later in de HTML dan dit script → bind de
+  // knoppen pas als de DOM klaar is (anders null.addEventListener bij parse-tijd).
+  function _wirePwa(){
+    const ib=document.getElementById('pwa-install-btn');
+    if(ib)ib.addEventListener('click',()=>{
+      hideBanner();
+      if(_deferredPrompt){
+        _deferredPrompt.prompt();
+        _deferredPrompt.userChoice.then(()=>{_deferredPrompt=null;});
+      }
+    });
+    const db=document.getElementById('pwa-dismiss-btn');
+    if(db)db.addEventListener('click',()=>{hideBanner();snooze();});
+    // iOS: show manual instructions
+    if(isIOS&&sessions>=2&&!isSnoozed()){
+      setTimeout(()=>{
+        if(_bannerShown||isSnoozed())return;
+        _bannerShown=true;
+        const b=document.getElementById('pwa-banner');
+        if(!b)return;
+        b.querySelector('.pwa-banner-title').textContent='Voeg toe aan beginscherm';
+        b.querySelector('.pwa-banner-sub').textContent='Tik op Delen ↑ → "Zet op beginscherm" voor snelle toegang';
+        b.querySelector('#pwa-install-btn').style.display='none';
+        b.classList.add('show');
+      },2000);
     }
-  });
-
-  document.getElementById('pwa-dismiss-btn').addEventListener('click',()=>{
-    hideBanner();snooze();
-  });
-
-  // iOS: show manual instructions
-  if(isIOS&&sessions>=2&&!isSnoozed()){
-    setTimeout(()=>{
-      if(_bannerShown||isSnoozed())return;
-      _bannerShown=true;
-      const b=document.getElementById('pwa-banner');
-      b.querySelector('.pwa-banner-title').textContent='Voeg toe aan beginscherm';
-      b.querySelector('.pwa-banner-sub').textContent='Tik op Delen ↑ → "Zet op beginscherm" voor snelle toegang';
-      b.querySelector('#pwa-install-btn').style.display='none';
-      b.classList.add('show');
-    },2000);
   }
+  if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',_wirePwa);
+  else _wirePwa();
 })();

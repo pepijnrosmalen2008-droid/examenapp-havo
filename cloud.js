@@ -238,9 +238,12 @@ SB.auth.onAuthStateChange((_event,session)=>{
   const cbs=[..._authReadyCbs];_authReadyCbs=[];cbs.forEach(cb=>cb(currentUser));
   if(currentUser){try{localStorage.setItem('slagio_li','1');}catch(e){}}
   else if(_event==='SIGNED_OUT'){try{localStorage.removeItem('slagio_li');}catch(e){}_hasLocalSession=false;}
-  updateProfileNav();updateCloudStatusBar();
+  // Deze callback kan synchroon vuren tijdens Supabase-init, vóór profile.js/
+  // features.js geladen zijn → guard zodat er geen ReferenceError ontstaat.
+  if(typeof updateProfileNav==='function')updateProfileNav();
+  if(typeof updateCloudStatusBar==='function')updateCloudStatusBar();
   if(currentUser){
-    syncFromCloud();syncMyAvatarToCloud();
+    try{syncFromCloud();syncMyAvatarToCloud();}catch(e){}
   } else if(_event==='SIGNED_OUT'){
     // Meteen alle account-UI resetten zodat je nergens meer ingelogd lijkt
     try{renderXPHome();renderStreak();renderFavHome();renderHomeStats();buildGrid();}catch(e){}
