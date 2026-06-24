@@ -5023,14 +5023,9 @@ html.dark{
 
 /* ── Primary CTA → living, enticing accent ──────────────────────── */
 .hm-cta-primary{
-  background:linear-gradient(120deg,
-    var(--or) 0%,
-    color-mix(in srgb,var(--or) 60%,#fff) 48%,
-    var(--or) 100%)!important;
-  background-size:220% 100%!important;
-  animation:rdCtaShimmer 5.5s var(--ease-soft) infinite;
+  background:var(--or)!important;
+  background-image:linear-gradient(180deg,rgba(255,255,255,.12),rgba(0,0,0,.05))!important;
 }
-@keyframes rdCtaShimmer{0%,100%{background-position:0% 50%}50%{background-position:100% 50%}}
 .hm-cta-primary:hover{
   transform:translateY(-3px) scale(1.025);
   box-shadow:0 12px 38px rgba(var(--or-rgb),.6),0 1px 0 rgba(255,255,255,.3) inset!important;
@@ -5063,16 +5058,10 @@ html.dark{
 
 /* ── Hero accent text → slow gradient shimmer (kept tasteful) ────── */
 .hm-h1 em{
-  background:linear-gradient(100deg,
-    var(--or) 0%,
-    color-mix(in srgb,var(--or) 55%,#fff) 50%,
-    var(--or) 100%);
-  background-size:200% 100%;
-  -webkit-background-clip:text;background-clip:text;
-  -webkit-text-fill-color:transparent;color:transparent;
-  animation:rdHeroShimmer 6s var(--ease-soft) infinite;
+  color:var(--or);
+  font-style:normal;
+  -webkit-text-fill-color:var(--or);
 }
-@keyframes rdHeroShimmer{0%,100%{background-position:0% 50%}50%{background-position:100% 50%}}
 
 /* ── Quiz feedback icons (SVG, replaced ✓/✗/ℹ️ emoji) ───────────── */
 .qfb .fbt{display:inline-flex;align-items:center;gap:7px}
@@ -5182,7 +5171,67 @@ html.dark{
 
 /* ── Respect reduced-motion for everything added here ───────────── */
 @media(prefers-reduced-motion:reduce){
-  .hm-cta-primary,.hm-h1 em,.wlc-stars svg,.streak-flame-ic,.streak-week-empty .swe-today .swe-pip,.fb-ic,.wlc-card-wrap,.hiw-step{animation:none!important}
-  .hm-cta-primary{background-position:0 50%!important}
-  .hm-h1 em{background-position:0 50%!important}
+  .wlc-stars svg,.streak-flame-ic,.streak-week-empty .swe-today .swe-pip,.fb-ic,.wlc-card-wrap,.hiw-step{animation:none!important}
+}
+
+/* ══════════════════════════════════════════════════════════════════
+   REDESIGN 2026.2  ·  "Examenpapier & De Vlag Uit" — verfijning
+   Doel: AI-tells eruit, premium via rust. Temt delen van de 2026.1-laag.
+   Source-order wint; feedback-states (groen/rood) blijven onaangeroerd
+   via :not()-scoping zodat kleur betekenis houdt. ═══════════════════ */
+
+/* ── Antwoorden = examenpapier op de studeernacht-canvas ────────────
+   Geen rainbow. Vier identieke papier-kaarten; de A/B/C/D-chip draagt
+   het niveau-accent. Groen/rood blijven exclusief voor feedback. */
+.opt.oA:not(.correct):not(.wrong):not(.was-correct),
+.opt.oB:not(.correct):not(.wrong):not(.was-correct),
+.opt.oC:not(.correct):not(.wrong):not(.was-correct),
+.opt.oD:not(.correct):not(.wrong):not(.was-correct){
+  background:#F7F6F1!important;
+  color:#15171c!important;
+  border:1px solid #e4e1d7!important;
+  box-shadow:0 1px 2px rgba(11,15,26,.16),0 8px 20px rgba(11,15,26,.18)!important;
+}
+.opt .oi{background:rgba(var(--or-rgb),.16)!important;color:var(--or)!important}
+.opt.oA:not(.correct):not(.wrong):hover:not(:disabled),
+.opt.oB:not(.correct):not(.wrong):hover:not(:disabled),
+.opt.oC:not(.correct):not(.wrong):hover:not(:disabled),
+.opt.oD:not(.correct):not(.wrong):hover:not(:disabled){
+  filter:none!important;
+  border-color:rgba(var(--or-rgb),.55)!important;
+  transform:translateY(-2px)!important;
+  box-shadow:0 2px 5px rgba(11,15,26,.18),0 14px 28px rgba(11,15,26,.24)!important;
+}
+
+/* Bot Race: dezelfde papier-taal (energie komt van de race, niet de knop) */
+.race-opt:not(.correct):not(.wrong){
+  background:#F7F6F1!important;
+  color:#15171c!important;
+  border:1px solid #e4e1d7!important;
+  box-shadow:0 1px 2px rgba(11,15,26,.16),0 6px 16px rgba(11,15,26,.2)!important;
+}
+.race-opt:not(.correct):not(.wrong) .opt-lbl{background:rgba(var(--or-rgb),.16)!important;color:var(--or)!important}
+
+/* ── Rust: ambient AI-tells uit (orbs, flicker, regenboog-zoekgloed) ── */
+.wlc-orb,.wlc-dot-bg,.flicker-canvas,.wlc-card-glow{display:none!important}
+.sb-gl,.sb-pink,.sb-ring,.sb-mask{display:none!important}
+
+/* Zoekbalk → rustig en op-merk */
+.sb-poda{background:transparent!important;box-shadow:none!important}
+.sb-main{
+  background:var(--s)!important;
+  border:1.5px solid color-mix(in srgb,var(--dk) 12%,transparent)!important;
+  box-shadow:0 1px 2px rgba(16,24,40,.05),0 2px 8px rgba(16,24,40,.05)!important;
+  border-radius:16px!important;
+}
+.sb-main:focus-within{border-color:rgba(var(--or-rgb),.55)!important;box-shadow:0 0 0 3px rgba(var(--or-rgb),.12)!important}
+.sb-input{color:var(--dk)!important}
+
+/* Home-hero glow temmen (geen pulserende aurora) */
+.hm-hero-glow{opacity:.5!important;animation:none!important}
+
+/* ── Glas met mate (geen 30px-blur-overdaad) ───────────────────────── */
+@media(max-width:560px){
+  .bottom-nav-inner{backdrop-filter:blur(18px) saturate(1.2)!important;-webkit-backdrop-filter:blur(18px) saturate(1.2)!important}
+  .hnav,.nav{backdrop-filter:blur(16px) saturate(1.15)!important;-webkit-backdrop-filter:blur(16px) saturate(1.15)!important}
 }
