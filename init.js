@@ -7,10 +7,19 @@ let _introPickedAnimal=null;
 const OB_KEY='slagio_onboard_v3';
 let _obStep=0,_obPickedAnimal=null;
 function showOnboarding(){
-  _obStep=0;_obPickedAnimal=null;
+  // Slanke flow: start direct bij de mascotte-keuze (het leuke, signature-deel).
+  // Geen feature-tour en geen account-muur vooraf — waarde tonen, niet vertellen.
+  _obStep=1;_obPickedAnimal=null;
   _obBuildAnimals();
+  const prog=document.querySelector('#ob-overlay .ob-progress');
+  if(prog)prog.style.display='none';
   document.getElementById('ob-overlay').style.display='flex';
   _obRender();
+}
+function obFinishAndStart(){
+  try{obFinish(false);}catch(e){var o=document.getElementById('ob-overlay');if(o)o.style.display='none';}
+  // Niveau → mascotte → direct een vraag (quick-start kiest het vak in één tik).
+  try{startStreakQuiz();}catch(e){}
 }
 function _obBuildAnimals(){
   const grid=document.getElementById('ob-animal-grid');

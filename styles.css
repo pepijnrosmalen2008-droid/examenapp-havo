@@ -5230,8 +5230,12 @@ html.dark{
 /* Home-hero glow temmen (geen pulserende aurora) */
 .hm-hero-glow{opacity:.5!important;animation:none!important}
 
-/* ── Glas met mate (geen 30px-blur-overdaad) ───────────────────────── */
+/* ── Glas met mate (geen 30px-blur-overdaad) + hard snoeien op mobiel ── */
 @media(max-width:560px){
   .bottom-nav-inner{backdrop-filter:blur(18px) saturate(1.2)!important;-webkit-backdrop-filter:blur(18px) saturate(1.2)!important}
   .hnav,.nav{backdrop-filter:blur(16px) saturate(1.15)!important;-webkit-backdrop-filter:blur(16px) saturate(1.15)!important}
+  /* Rustiger home: redundante/low-value secties weg op mobiel.
+     Feature-discovery (redundant), live-teller (ruis) en de tijdvakken-strip
+     (staat al op het welkomscherm + in het rooster). */
+  #feat-disc-home,#live-count-home,.hm-tvk{display:none!important}
 }
