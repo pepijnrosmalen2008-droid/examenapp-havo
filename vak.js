@@ -3,6 +3,9 @@ function openVak(id,_noHash){
   ST.vak=getVK().find(v=>v.id===id);
   if(!_noHash)_pushHash(APP_LEVEL+'-'+(_VAK_SLUG[id]||id));
   document.getElementById('dtitle').textContent=ST.vak.naam;
+  // Per-vak embleem: het vak-icoon in de vak-kleur (zelfde taal als de kaarten)
+  const _emb=document.getElementById('vd-emblem');
+  if(_emb)_emb.innerHTML=`<svg viewBox="0 0 24 24">${(typeof VAK_ICONS!=='undefined'&&VAK_ICONS[id])||'<circle cx="12" cy="12" r="4"/>'}</svg>`;
   document.getElementById('ddesc').textContent=ST.vak.beschrijving;
   document.getElementById('dce').innerHTML=ST.vak.ceInfo;
   const _bcVak=document.getElementById('det-bc-vak');

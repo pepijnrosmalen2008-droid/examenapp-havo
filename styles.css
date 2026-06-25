@@ -589,8 +589,8 @@ html:not(.dark) .sb-gl6::before{filter:brightness(1.0)}
 .card:hover{border-color:color-mix(in srgb,var(--card-col) 55%,var(--bo));box-shadow:0 12px 40px color-mix(in srgb,var(--card-col,var(--or)) 18%,rgba(0,0,0,.08)),0 0 0 1px rgba(var(--or-rgb),.1),0 0 30px rgba(var(--or-rgb),.1);transform:translateY(-5px) scale(1.01)}
 .card:hover::before{opacity:1}
 .card:hover::after{transform:skewX(-20deg) translateX(450%)}
-.card-icon{width:46px;height:46px;border-radius:14px;background:linear-gradient(135deg,color-mix(in srgb,var(--card-col,var(--or)) 22%,transparent),color-mix(in srgb,var(--card-col,var(--or)) 8%,transparent));display:flex;align-items:center;justify-content:center;margin-bottom:14px;flex-shrink:0;box-shadow:0 2px 8px color-mix(in srgb,var(--card-col,var(--or)) 20%,transparent)}
-.card-icon svg{width:20px;height:20px;stroke:var(--card-col,var(--or));fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.card-icon{width:46px;height:46px;border-radius:14px;background:linear-gradient(140deg,color-mix(in srgb,var(--card-col,var(--or)) 88%,#fff),var(--card-col,var(--or)));display:flex;align-items:center;justify-content:center;margin-bottom:14px;flex-shrink:0;box-shadow:0 4px 14px color-mix(in srgb,var(--card-col,var(--or)) 42%,transparent),0 1px 0 rgba(255,255,255,.25) inset}
+.card-icon svg{width:21px;height:21px;stroke:#fff;fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
 .card-code{display:none}
 .card-name{font-size:15px;font-weight:700;color:var(--dk);margin-bottom:4px;letter-spacing:-.2px}
 .card-desc{font-size:12px;color:var(--mu);line-height:1.55;margin-bottom:12px}
@@ -5249,6 +5249,17 @@ html.dark{
 @keyframes vlagWave{0%,100%{transform:skewY(0) scaleX(1)}28%{transform:skewY(-2.4deg) scaleX(.985)}64%{transform:skewY(1.7deg) scaleX(1.012)}}
 @keyframes vlagLbl{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
 .vlag-reduce .vlag-raise,.vlag-reduce .vlag-cloth,.vlag-reduce .vlag-label{animation:none!important;opacity:1!important;transform:none!important}
+
+/* ── Per-vak embleem op de vakpagina (kleur + icoon = eigen vibe) ──── */
+.vd-emblem{width:54px;height:54px;border-radius:16px;
+  background:linear-gradient(140deg,color-mix(in srgb,var(--or) 88%,#fff),var(--or));
+  display:flex;align-items:center;justify-content:center;margin-bottom:14px;
+  box-shadow:0 6px 20px rgba(var(--or-rgb),.4),0 1px 0 rgba(255,255,255,.25) inset;
+  animation:vdEmblemIn .5s var(--ease-out) both}
+.vd-emblem svg{width:27px;height:27px;stroke:#fff;fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.vd-emblem:empty{display:none}
+@keyframes vdEmblemIn{from{opacity:0;transform:translateY(8px) scale(.9)}to{opacity:1;transform:none}}
+@media(prefers-reduced-motion:reduce){.vd-emblem{animation:none!important}}
 
 /* ── Glas met mate (geen 30px-blur-overdaad) + hard snoeien op mobiel ── */
 @media(max-width:560px){
