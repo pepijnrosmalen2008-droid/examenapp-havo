@@ -236,6 +236,11 @@ function simFinish(){
   const modeLbl=`<span style="font-size:11px;font-weight:800;padding:2px 9px;border-radius:20px;background:${m.clr}18;color:${m.clr};border:1px solid ${m.clr}33;margin-left:6px">${m.icon} ${m.label}</span>`;
   document.getElementById('sim-res-score').innerHTML=correct+' van '+total+' vragen correct ('+Math.round(pct*100)+'%)'+modeLbl;
 
+  // Signature: geslaagd op de simulatietoets → de vlag gaat uit
+  if(!isOefenen && grade>=5.5 && typeof slagioVlagUit==='function'){
+    setTimeout(()=>{try{slagioVlagUit('sim');}catch(e){}},450);
+  }
+
   // Per-domain breakdown
   const domMap={};
   SIM.answers.forEach(a=>{
