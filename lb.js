@@ -362,14 +362,12 @@ function _renderLbWithData(){
   const niveauChip=(e)=>e.niveau?`<span class="lb-niveau-chip">${e.niveau.toUpperCase()}</span>`:'';
   // Helper: rank colour class
   const rankCls=(r)=>r===1?'top1':r===2?'top2':r===3?'top3':'';
-  // Helper: premium stage chip (only for stages 5=Goud, 6=Diamant, 7=Platina)
+  // Helper: premium stage chip — alleen de hoogste rang (Ultiem)
   const stageBadge=(e)=>{
     const idx=e.stageIdx!=null?e.stageIdx:0;
-    if(idx<5)return'';
-    const stageN=ANIM_STAGE_NAMES[idx]||'';
-    const clsMap={5:'lb-sc-goud',6:'lb-sc-diamant',7:'lb-sc-platina'};
-    const em={5:'✨',6:'💎',7:'🔮'}[idx]||'⭐';
-    return`<span class="lb-stage-chip ${clsMap[idx]||'lb-sc-goud'}">${em} ${stageN}</span>`;
+    if(idx<ANIM_THRESHOLDS.length-1)return'';
+    const stageN=ANIM_STAGE_NAMES[idx]||'Ultiem';
+    return`<span class="lb-stage-chip lb-sc-goud">👑 ${stageN}</span>`;
   };
 
   // Podium (top 3)

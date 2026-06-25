@@ -5282,6 +5282,31 @@ html.dark .vd-hero-art{opacity:.17}
 #pomo-home .pomo-ring-wrap{width:122px;height:122px;margin-bottom:14px}
 #pomo-home .pomo-time{font-size:30px;letter-spacing:-1.5px}
 
+/* ── Mascottes: soort-eigen idle-bewegingen (GPU, alleen grote avatars) ── */
+.amv-fly{animation:amvFly 3.2s ease-in-out infinite}
+@keyframes amvFly{0%,100%{transform:translateY(2%) rotate(-1.5deg)}50%{transform:translateY(-12%) rotate(1.5deg)}}
+.amv-flutter{animation:amvFlutter 1.5s ease-in-out infinite}
+@keyframes amvFlutter{0%,100%{transform:translateY(0) rotate(-3deg) scaleX(1)}25%{transform:translateY(-9%) rotate(2deg) scaleX(.95)}50%{transform:translateY(-3%) rotate(-2deg) scaleX(1)}75%{transform:translateY(-11%) rotate(3deg) scaleX(.96)}}
+.amv-swim{animation:amvSwim 2.8s ease-in-out infinite;transform-origin:50% 50%}
+@keyframes amvSwim{0%,100%{transform:translateX(-7%) rotate(-4deg)}50%{transform:translateX(7%) rotate(4deg)}}
+.amv-drift{animation:amvDrift 3.6s ease-in-out infinite;transform-origin:50% 100%}
+@keyframes amvDrift{0%,100%{transform:translateY(0) scaleY(1) scaleX(1)}50%{transform:translateY(-8%) scaleY(.92) scaleX(1.05)}}
+.amv-slither{animation:amvSlither 2.6s ease-in-out infinite;transform-origin:50% 90%}
+@keyframes amvSlither{0%,100%{transform:skewX(0) translateX(0)}25%{transform:skewX(7deg) translateX(-4%)}75%{transform:skewX(-7deg) translateX(4%)}}
+.amv-prowl{animation:amvProwl 3.4s ease-in-out infinite;transform-origin:50% 100%}
+@keyframes amvProwl{0%,100%{transform:translateY(0) rotate(-1deg)}50%{transform:translateY(-4.5%) rotate(1deg)}}
+.amv-prance{animation:amvPrance 2.2s ease-in-out infinite;transform-origin:50% 100%}
+@keyframes amvPrance{0%,100%{transform:translateY(0) rotate(0)}30%{transform:translateY(-13%) rotate(-2deg)}60%{transform:translateY(0) rotate(2deg)}}
+.amv-mech{animation:amvMech 1.8s steps(7,end) infinite}
+@keyframes amvMech{0%,100%{transform:translateY(0)}50%{transform:translateY(-7%)}}
+.amv-sway{animation:amvSway 3.8s ease-in-out infinite;transform-origin:50% 100%}
+@keyframes amvSway{0%,100%{transform:rotate(-3deg)}50%{transform:rotate(3deg)}}
+/* Ultiem-rang: subtiele warme accent-gloed (geen metaal-ring) */
+.anim-ultiem{filter:drop-shadow(0 0 7px rgba(var(--or-rgb),.5)) drop-shadow(0 3px 6px rgba(0,0,0,.18))}
+@media(prefers-reduced-motion:reduce){
+  .amv-fly,.amv-flutter,.amv-swim,.amv-drift,.amv-slither,.amv-prowl,.amv-prance,.amv-mech,.amv-sway{animation:none!important}
+}
+
 /* ── Glas met mate (geen 30px-blur-overdaad) + hard snoeien op mobiel ── */
 @media(max-width:560px){
   .bottom-nav-inner{backdrop-filter:blur(18px) saturate(1.2)!important;-webkit-backdrop-filter:blur(18px) saturate(1.2)!important}

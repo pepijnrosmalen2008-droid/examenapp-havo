@@ -1,7 +1,7 @@
 // ═══════ XP & LEVELS ═══════
 const XP_KEY='slagio_xp';
 const XP_LEVELS=[0,100,500,2000,7500,30000,75000,200000];
-const LEVEL_NAMES=['','Baby','Jong','Tiener','Volwassen','Prime','Goud','Diamant','Platina'];
+const LEVEL_NAMES=['','Baby','Jong','Tiener','Volwassen','Prime','Ultiem'];
 // ═══════ RIPPLE EFFECT ═══════
 (function initRipple(){
   document.addEventListener('click',function(e){
@@ -167,12 +167,12 @@ function showEvoReveal(newStage,animalId){
   if(!modal)return;
   try{if(typeof v4AvatarReact==='function')setTimeout(()=>v4AvatarReact('levelup'),350);}catch(e){}
   const stageName=ANIM_STAGE_NAMES[newStage]||'Nieuw stadium';
-  // Styles per stage: 5=Goud, 6=Diamant, 7=Platina; lager=paars (default)
-  const cfg={
-    5:{badge:'evo-rb-goud',btn:'evo-btn-goud',glow:'evo-reveal-glow-goud',div:'evo-divider-goud',crown:'✨',em:'✨'},
-    6:{badge:'evo-rb-diamant',btn:'evo-btn-diamant',glow:'evo-reveal-glow-diamant',div:'evo-divider-diamant',crown:'💎',em:'💎'},
-    7:{badge:'evo-rb-platina',btn:'evo-btn-platina',glow:'evo-reveal-glow-platina',div:'evo-divider-platina',crown:'🔮',em:'🔮'},
-  }[newStage]||{badge:'evo-rb-default',btn:'evo-btn-default',glow:'',div:'evo-divider-default',crown:'⭐',em:'⭐'};
+  // Alleen de laatste rang (Ultiem) krijgt de premium-styling (hergebruikt de
+  // mooiste bestaande klassen); lagere stadia = standaard.
+  const _ultiemIdx=ANIM_THRESHOLDS.length-1;
+  const cfg=newStage>=_ultiemIdx
+    ? {badge:'evo-rb-goud',btn:'evo-btn-goud',glow:'evo-reveal-glow-goud',div:'evo-divider-goud',crown:'👑',em:'👑'}
+    : {badge:'evo-rb-default',btn:'evo-btn-default',glow:'',div:'evo-divider-default',crown:'⭐',em:'⭐'};
   // Reset card animation so it replays
   const card=modal.querySelector('.evo-reveal-card');
   if(card){card.style.animation='none';card.style.opacity='0';requestAnimationFrame(()=>requestAnimationFrame(()=>{card.style.animation='';}));}
@@ -190,14 +190,11 @@ function showEvoReveal(newStage,animalId){
   if(avEl){avEl.style.animation='none';avEl.innerHTML=getAnimalDisplay(animalId,newStage,80);requestAnimationFrame(()=>requestAnimationFrame(()=>{avEl.style.animation='';}));}
   if(divEl)divEl.className='evo-reveal-divider '+cfg.div;
   const animalLabel=(a&&a.lbl&&a.lbl[Math.min(newStage,a.lbl.length-1)])||(a?stageName+' '+a.n:stageName);
-  const msgs={
-    5:'Je dier gloeit als goud. Jij bent een echte topper! 🥇',
-    6:'Diamant - zo zeldzaam als jouw doorzettingsvermogen. 💎',
-    7:'Platina. Het allerhoogste niveau. Slechts weinigen halen dit. 🏆'
-  };
+  const msgs={};
+  msgs[_ultiemIdx]='De ultieme vorm. Het allerhoogste niveau dat er is.';
   if(titleEl)titleEl.textContent=animalLabel;
   if(subEl)subEl.textContent=msgs[newStage]||'Gefeliciteerd! Je dier evolueert naar '+stageName+'!';
-  if(btnEl){btnEl.className='evo-reveal-btn '+cfg.btn;btnEl.textContent='Geweldig! 🎉';}
+  if(btnEl){btnEl.className='evo-reveal-btn '+cfg.btn;btnEl.textContent='Geweldig!';}
   modal.classList.add('open');
   haptic([80,40,80,40,200]);
 }

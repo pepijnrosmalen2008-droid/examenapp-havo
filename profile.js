@@ -293,8 +293,19 @@ const ANIMAL_EVOLUTIONS=[
    desc:['Trekt aan alles. Inclusief de studieplannen.','Klimt van onderwerp naar onderwerp.','Klopt op zijn borst na elk goed antwoord. Terecht.','Denkt dieper na dan de vraagsteller. Problematisch.','Zit boven in de boom der kennis. Kijkt neer op twijfel.'],
    evoMsg:['🐒 Je Gorilla zwaait van tak tot tak!','🦍 Je Gorilla groeit! Klopt al op z\'n borst.','🦧 ORANG-OETAN! Intelligent en oranje. Gevaarlijke combo.','🦍 SILVERBACK-LEGENDE! Alle gorilla\'s buigen voor hem.']},
 ];
-const ANIM_THRESHOLDS=[0,100,500,2000,7500,30000,75000,200000];
-const ANIM_STAGE_NAMES=['Baby','Jong','Tiener','Volwassen','Prime','Goud','Diamant','Platina'];
+const ANIM_THRESHOLDS=[0,100,500,2000,7500,25000];
+const ANIM_STAGE_NAMES=['Baby','Jong','Tiener','Volwassen','Prime','Ultiem'];
+// Soort-eigen idle-beweging per mascotte (CSS-klassen in styles.css)
+const ANIMAL_MOVE={
+  adelaar:'amv-fly', uil:'amv-fly', draak:'amv-fly',
+  vlinder:'amv-flutter', eekhoorn:'amv-flutter',
+  haai:'amv-swim',
+  octopus:'amv-drift', slijm:'amv-drift',
+  slang:'amv-slither',
+  leeuw:'amv-prowl', tijger:'amv-prowl', wolf:'amv-prowl', vos:'amv-prowl',
+  beer:'amv-prowl', gorilla:'amv-prowl', olifant:'amv-prowl', eenhoorn:'amv-prance',
+  cactus:'amv-sway', robot:'amv-mech'
+};
 let selectedAnimalId=null;
 
 function getAnimalById(id){return ANIMAL_EVOLUTIONS.find(a=>a.id===id)||null;}
@@ -316,22 +327,15 @@ function getAnimalDisplay(animalId,stageIdx,size){
   size=size||48;
   const a=getAnimalById(animalId);
   if(!a)return'<span style="font-size:'+size+'px">🐾</span>';
-  // Premium ring wrapper for Goud(5), Diamant(6), Platina(7)
-  const premInfo=stageIdx>=5?[
-    {cls:'avo-goud',ring:'avo-ring-goud'},
-    {cls:'avo-diamant',ring:'avo-ring-diamant'},
-    {cls:'avo-platina',ring:'avo-ring-platina'},
-  ][stageIdx-5]||{cls:'avo-platina',ring:'avo-ring-platina'}:null;
+  // Ultiem (laatste rang) krijgt een subtiele klasse-hook voor extra glans
+  // (géén metaal-ring meer — de ultieme vorm onderscheidt zich door zijn eigen art).
+  const ultiemCls=stageIdx>=(ANIM_THRESHOLDS.length-1)?' anim-ultiem':'';
+  // Soort-eigen idle-beweging (alleen op grotere avatars; pips/nav blijven stil)
+  const moveCls=(size>=44&&typeof ANIMAL_MOVE!=='undefined'&&ANIMAL_MOVE[animalId])?(' '+ANIMAL_MOVE[animalId]):'';
   if(a.svg){
     const svgIdx=Math.min(stageIdx,a.svg.length-1);
     if(a.svg[svgIdx]){
-      const svgCls='anim-svg-wrap'+(premInfo?' '+premInfo.cls:'');
-      const svgSpan='<span class="'+svgCls+'" style="width:'+size+'px;height:'+size+'px">'+a.svg[svgIdx]+'</span>';
-      if(premInfo){
-        // Ring wrapper auto-sizes to svg + 6px (3px padding each side)
-        return'<span class="avo-prem-ring '+premInfo.ring+'">'+svgSpan+'</span>';
-      }
-      return svgSpan;
+      return'<span class="anim-svg-wrap'+ultiemCls+moveCls+'" style="width:'+size+'px;height:'+size+'px">'+a.svg[svgIdx]+'</span>';
     }
   }
   const sIdx=Math.min(stageIdx,a.s.length-1);
