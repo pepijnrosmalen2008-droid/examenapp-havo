@@ -3,9 +3,12 @@ function openVak(id,_noHash){
   ST.vak=getVK().find(v=>v.id===id);
   if(!_noHash)_pushHash(APP_LEVEL+'-'+(_VAK_SLUG[id]||id));
   document.getElementById('dtitle').textContent=ST.vak.naam;
-  // Per-vak embleem: het vak-icoon in de vak-kleur (zelfde taal als de kaarten)
+  // Per-vak embleem (klein, solide) + groot hero-watermerk (sfeer) — zelfde icoon
+  const _icoSvg=(typeof VAK_ICONS!=='undefined'&&VAK_ICONS[id])||'<circle cx="12" cy="12" r="4"/>';
   const _emb=document.getElementById('vd-emblem');
-  if(_emb)_emb.innerHTML=`<svg viewBox="0 0 24 24">${(typeof VAK_ICONS!=='undefined'&&VAK_ICONS[id])||'<circle cx="12" cy="12" r="4"/>'}</svg>`;
+  if(_emb)_emb.innerHTML=`<svg viewBox="0 0 24 24">${_icoSvg}</svg>`;
+  const _art=document.getElementById('vd-hero-art');
+  if(_art)_art.innerHTML=`<svg viewBox="0 0 24 24">${_icoSvg}</svg>`;
   document.getElementById('ddesc').textContent=ST.vak.beschrijving;
   document.getElementById('dce').innerHTML=ST.vak.ceInfo;
   const _bcVak=document.getElementById('det-bc-vak');

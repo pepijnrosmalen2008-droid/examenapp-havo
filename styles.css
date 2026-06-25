@@ -5260,6 +5260,21 @@ html.dark{
 @keyframes vdEmblemIn{from{opacity:0;transform:translateY(8px) scale(.9)}to{opacity:1;transform:none}}
 @media(prefers-reduced-motion:reduce){.vd-emblem{animation:none!important}}
 
+/* ── Hero-watermerk in de vak-header: groot, sfeervol, op-merk ─────── */
+.sh{position:relative;overflow:hidden}
+.sh>h2,.sh>p,.sh>.ce,.sh>.vd-emblem{position:relative;z-index:1}
+.vd-hero-art{position:absolute;top:-20px;right:-14px;width:162px;height:162px;pointer-events:none;opacity:.12;z-index:0}
+.vd-hero-art::before{content:'';position:absolute;inset:-26%;background:radial-gradient(circle,rgba(var(--or-rgb),.16),transparent 70%)}
+.vd-hero-art svg{position:relative;width:100%;height:100%;stroke:var(--or);fill:none;stroke-width:1.3;stroke-linecap:round;stroke-linejoin:round}
+.vd-hero-art:empty{display:none}
+html.dark .vd-hero-art{opacity:.17}
+@media(max-width:560px){.vd-hero-art{width:112px;height:112px;opacity:.11;top:-12px;right:-10px}}
+
+/* ── Desktop: quiz & flashcard verticaal centreren (geen leegte) ──── */
+@media(min-width:561px){
+  #sc-quiz .qbody,#sc-flash .qbody{display:flex;flex-direction:column;justify-content:center;min-height:calc(100vh - 140px)}
+}
+
 /* ── Pomodoro op de home: compact i.p.v. hero (toont alleen op desktop) ── */
 #pomo-home .pomo{max-width:360px;margin-left:auto;margin-right:auto;padding:22px 22px 18px}
 #pomo-home .pomo-ring-wrap{width:122px;height:122px;margin-bottom:14px}
