@@ -459,15 +459,15 @@ function renderGreeting(){
     el.textContent='✅ Vandaag al geoefend - top!';
   }else{
     const moti=[
-      '— elke vraag telt 💪',
-      '— 10 vragen en je dag is gewonnen ✨',
-      '— kleine stappen, groot resultaat 🚀',
-      '— jouw toekomstige ik bedankt je alvast 🎓',
-      '— vandaag iets beter dan gisteren 📈',
-      '— klaar voor je examen?'
+      'Elke vraag telt.',
+      '10 vragen en je dag is gewonnen.',
+      'Kleine stappen, groot resultaat.',
+      'Je toekomstige ik bedankt je alvast.',
+      'Vandaag iets beter dan gisteren.',
+      'Klaar voor je examen?'
     ];
     const pick=moti[Math.floor(Date.now()/864e5)%moti.length];
-    el.textContent=gdag+(naam?' '+naam:'')+' '+pick;
+    el.textContent=gdag+(naam?' '+naam:'')+'. '+pick;
   }
 }
 

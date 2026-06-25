@@ -5261,6 +5261,11 @@ html.dark{
 @keyframes vdEmblemIn{from{opacity:0;transform:translateY(8px) scale(.9)}to{opacity:1;transform:none}}
 @media(prefers-reduced-motion:reduce){.vd-emblem{animation:none!important}}
 
+/* ── Pomodoro op de home: compact i.p.v. hero (toont alleen op desktop) ── */
+#pomo-home .pomo{max-width:360px;margin-left:auto;margin-right:auto;padding:22px 22px 18px}
+#pomo-home .pomo-ring-wrap{width:122px;height:122px;margin-bottom:14px}
+#pomo-home .pomo-time{font-size:30px;letter-spacing:-1.5px}
+
 /* ── Glas met mate (geen 30px-blur-overdaad) + hard snoeien op mobiel ── */
 @media(max-width:560px){
   .bottom-nav-inner{backdrop-filter:blur(18px) saturate(1.2)!important;-webkit-backdrop-filter:blur(18px) saturate(1.2)!important}
