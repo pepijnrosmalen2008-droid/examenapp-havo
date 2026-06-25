@@ -4146,9 +4146,12 @@ html.dark .hsd-pill{background:var(--bg2);border-color:var(--bo2)}
     display:flex!important;
     flex-direction:column!important;
   }
-  .fc-card{
-    height:220px!important;
+  /* Kaart verticaal centreren i.p.v. bovenaan plakken (geen leegte eronder) */
+  #sc-flash .fc-card{
+    height:240px!important;
     flex-shrink:0!important;
+    margin-top:auto!important;
+    margin-bottom:auto!important;
   }
   .fc-front{font-size:17px!important;line-height:1.55!important}
   .fc-back{font-size:14px!important;line-height:1.6!important}
