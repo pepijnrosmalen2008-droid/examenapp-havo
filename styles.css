@@ -121,7 +121,8 @@ h1,h2,h3,h4{font-family:var(--font-head);line-height:1.2;letter-spacing:-.3px}
 .tuto-skip:hover{color:var(--tx)}
 .tuto-slide{display:none;text-align:center;padding:8px 0 24px}
 .tuto-slide.active{display:block}
-.tuto-icon{font-size:52px;margin-bottom:18px;display:block;line-height:1}
+.tuto-icon{width:66px;height:66px;margin:0 auto 20px;border-radius:18px;background:linear-gradient(140deg,color-mix(in srgb,var(--or) 86%,#fff),var(--or));display:flex;align-items:center;justify-content:center;box-shadow:0 10px 28px rgba(var(--or-rgb),.4),0 1px 0 rgba(255,255,255,.28) inset}
+.tuto-icon svg{width:31px;height:31px;stroke:#fff;fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
 .tuto-slide h2{font-family:var(--font-head);font-size:22px;font-weight:800;margin-bottom:12px;color:var(--tx);letter-spacing:-.3px}
 .tuto-slide p{font-size:15px;color:var(--mu);line-height:1.75;max-width:340px;margin:0 auto}
 .tuto-slide p strong{color:var(--tx)}
@@ -146,7 +147,8 @@ h1,h2,h3,h4{font-family:var(--font-head);line-height:1.2;letter-spacing:-.3px}
 .ctuto-tip-next{background:var(--or);color:#fff;border:none;border-radius:9px;padding:8px 16px;font-size:13px;font-weight:700;cursor:pointer;font-family:var(--font);white-space:nowrap}
 @media(max-width:640px){
   .tuto-card{padding:28px 20px 22px;border-radius:20px;margin-bottom:70px}
-  .tuto-icon{font-size:44px}
+  .tuto-icon{width:58px;height:58px;border-radius:16px}
+  .tuto-icon svg{width:28px;height:28px}
   .tuto-slide h2{font-size:19px}
   .tuto-slide p{font-size:14px}
 }

@@ -178,7 +178,7 @@ function _introRender(){
 
 // ═══════ TUTORIAL ═══════
 const TUTO_KEY='examio_tutorial_done';
-const TUTO_TOTAL=5;
+const TUTO_TOTAL=4;
 let tutIdx=0;
 function showTutorial(){
   if(localStorage.getItem(TUTO_KEY))return;
@@ -211,7 +211,7 @@ function _updateTuto(){
   // next button
   const next=document.getElementById('tuto-next');
   if(tutIdx===TUTO_TOTAL-1){
-    next.textContent='Aan de slag! 🚀';
+    next.textContent='Aan de slag';
     next.onclick=closeTutorial;
   } else {
     next.textContent='Volgende →';
