@@ -297,7 +297,7 @@ const ANIMAL_EVOLUTIONS=[
    desc:['Trekt aan alles. Inclusief de studieplannen.','Klimt van onderwerp naar onderwerp.','Klopt op zijn borst na elk goed antwoord. Terecht.','Denkt dieper na dan de vraagsteller. Problematisch.','Zit boven in de boom der kennis. Kijkt neer op twijfel.'],
    evoMsg:['🐒 Je Gorilla zwaait van tak tot tak!','🦍 Je Gorilla groeit! Klopt al op z\'n borst.','🦧 ORANG-OETAN! Intelligent en oranje. Gevaarlijke combo.','🦍 SILVERBACK-LEGENDE! Alle gorilla\'s buigen voor hem.']},
 ];
-const ANIM_THRESHOLDS=[0,100,500,2000,7500,25000,30000];
+const ANIM_THRESHOLDS=[0,500,1000,2500,10000,20000,30000];
 const ANIM_STAGE_NAMES=['Baby','Jong','Tiener','Volwassen','Prime','Goud','Ultiem'];
 // Soort-eigen idle-beweging per mascotte (CSS-klassen in styles.css)
 const ANIMAL_MOVE={
