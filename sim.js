@@ -953,6 +953,7 @@ function raceFinish(who){
   const elapsed=Math.round((Date.now()-RC.startTime)/1000);
   const tot=RC.TARGET||15;
   const playerWin=RC.playerScore>=tot||(RC.playerScore>RC.botScore)||(RC.playerScore===RC.botScore&&who==='player');
+  try{playSound(playerWin?'fanfare':'wrong');}catch(e){}
   checkRaceAch(playerWin);
 
   // Show finish overlay with confetti

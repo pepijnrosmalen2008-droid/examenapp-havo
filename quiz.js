@@ -815,7 +815,7 @@ function showAch(emoji,txt,offset){
   el.innerHTML=`<span class="ach-emoji">${emoji}</span><div class="ach-body"><div class="ach-label">Prestatie behaald!</div><div class="ach-text">${txt}</div></div>`;
   document.body.appendChild(el);
   haptic([35,15,60,15,90]);
-  playSound('levelup');
+  playSound('badge');
   setTimeout(()=>{el.classList.add('ach-out');setTimeout(()=>el.remove(),450);},3200);
 }
 function checkComboAch(combo){
@@ -830,12 +830,12 @@ let _soundOn=localStorage.getItem(SND_KEY)!=='0';
 const _SND_ON='<svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/><path d="M15.54 8.46a5 5 0 0 1 0 7.07M19.07 4.93a10 10 0 0 1 0 14.14"/></svg>';
 const _SND_OFF='<svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/><line x1="22" y1="9" x2="16" y2="15"/><line x1="16" y1="9" x2="22" y2="15"/></svg>';
 function _updSndBtn(btn){if(btn)btn.innerHTML=_soundOn?_SND_ON:_SND_OFF;}
+function _updAllSndBtns(){document.querySelectorAll('#quiz-snd-btn,.snd-toggle-btn').forEach(_updSndBtn);}
 function toggleSound(){
   _soundOn=!_soundOn;
   localStorage.setItem(SND_KEY,_soundOn?'1':'0');
-  const btn=document.getElementById('quiz-snd-btn');
-  _updSndBtn(btn);
-  if(_soundOn)playSound('correct');
+  _updAllSndBtns();
+  if(_soundOn)playSound('pop');
 }
 // Eén gedeelde AudioContext (browsers limiteren het aantal; nooit per call aanmaken).
 let _slAC=null;
@@ -865,7 +865,12 @@ function playSound(type){
   const t=ac.currentTime,T=_slTone;
   try{
     switch(type){
-      case'tap': T(ac,520,t,.05,{vol:.06,type:'triangle'}); break;
+      case'tap': T(ac,520,t,.05,{vol:.055,type:'triangle'}); break;
+      case'pop': T(ac,660,t,.06,{vol:.09,type:'triangle'}); T(ac,990,t+.05,.08,{vol:.08,type:'triangle'}); break;
+      case'nav': T(ac,440,t,.06,{vol:.06,type:'sine',to:620}); break;
+      case'badge': [784,1047,1319].forEach((f,i)=>T(ac,f,t+i*.07,.18,{vol:.11,type:'triangle'})); T(ac,1568,t+.22,.3,{vol:.07}); break;
+      case'complete': [523,659,784,1047].forEach((f,i)=>T(ac,f,t+i*.09,.20,{vol:.12})); break;
+      case'open': T(ac,392,t,.07,{vol:.07}); T(ac,523,t+.05,.10,{vol:.07}); break;
       case'correct': T(ac,523,t,.10,{vol:.13}); T(ac,784,t+.08,.16,{vol:.13}); break;
       case'wrong': T(ac,200,t,.17,{vol:.10,to:130}); break;
       case'combo': [523,659,784].forEach((f,i)=>T(ac,f,t+i*.06,.14,{vol:.12})); break;
@@ -884,8 +889,7 @@ function playSound(type){
 }
 // Initieel geluid-knop instellen
 document.addEventListener('DOMContentLoaded',()=>{
-  const btn=document.getElementById('quiz-snd-btn');
-  _updSndBtn(btn);
+  _updAllSndBtns();
   spInitPrefs();
   try{renderVandaagWidget();}catch(e){}
   try{renderDecayAlert();}catch(e){}
@@ -913,6 +917,22 @@ document.addEventListener('click',function(e){
   el.appendChild(rip);
   setTimeout(()=>rip.remove(),600);
 },{passive:true});
+
+// ═══════ UI-GELUID (overal subtiele tik/pop) ═══════
+document.addEventListener('click',function(e){
+  if(!_soundOn)return;
+  const el=e.target.closest('button,a.btn,.card,.bnav-btn,.nav-btn,.dock-btn,.hnav-icon-btn,.wlc-theme-btn,.theme-btn,.qmcd,.hm-ql-btn,.hm-quick-chip,.hm-soc-btn,.hm-cta-primary,.hm-cta-sec,.wlc-card,.wlc-vmbo-bar,.tuto-btn-pri,.tuto-btn-sec,.tuto-skip,.ob-btn,.ob-skip-btn,.ob-animal-btn,.anim-pick-btn,.fp-chip,.calc-btn,.bnav-fab,.dc-popup-btn,.lbl-tab,[role="button"]');
+  if(!el)return;
+  if(el.disabled||el.getAttribute('aria-disabled')==='true')return;
+  // Elementen met hun eigen geluid overslaan
+  if(el.closest('.opt,.race-opt,.fc-btn,.fc-card'))return;
+  if(el.id==='quiz-snd-btn'||el.classList.contains('qtb-snd'))return; // toggle speelt eigen bevestiging
+  if(el.dataset&&el.dataset.nosound!=null)return;
+  let snd='tap';
+  if(el.matches('.hm-cta-primary,.tuto-btn-pri,.ob-btn,.wlc-card,.bnav-fab,.qmcd,.calc-btn,.dc-popup-btn'))snd='pop';
+  else if(el.classList.contains('card'))snd='open';
+  playSound(snd);
+},true);
 
 // ═══════ QUIZ VERLATEN (exit interstitial) ═══════
 function stopQ(){
@@ -1226,6 +1246,7 @@ function toonRes(){
   try{renderAdaptiveResults();}catch(e){}
   try{renderChallengeResult();}catch(e){}
   show('sc-res');
+  try{playSound('complete');}catch(e){}
   if(ST.mode==='snel')setTimeout(()=>showFeedbackPopup('snel'),2500);
 }
 
