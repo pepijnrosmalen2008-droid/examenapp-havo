@@ -544,6 +544,7 @@ function startFlash(){
   trackEvent('flashcard',{domein:ST.domein?.naam||null});
   const d=ST.domein,v=ST.vak;
   if(!d||!v)return;
+  try{playSound('start');}catch(e){}
   // Stap 1: haal term→def paren uit de (rijke) samenvatting: <strong>, formuleboxen en tabellen
   const samSrc=(typeof SAM_RICH!=='undefined'&&SAM_RICH[v.id+'_'+d.id])||d.sam;
   let cards=samSrc?_parseSamCards(samSrc):[];
@@ -655,6 +656,7 @@ function showFlashcard(){
 function flipCard(){
   if(FC.flipped)return;
   FC.flipped=true;
+  try{playSound('flip');}catch(e){}
   document.getElementById('fc-card').classList.add('flipped');
   const btnsEl=document.getElementById('fc-btns');
   btnsEl.style.display='grid';

@@ -637,6 +637,7 @@ let _raceFinishTimeout=null;
 
 function startRace(diff){
   diff=diff||'medium';
+  try{playSound('start');}catch(e){}
   trackEvent('bot_race',{diff:diff,vak:ST.vak?.naam||null});
   window._lastRaceDiff=diff;
   const vak=ST.vak;

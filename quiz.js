@@ -57,6 +57,7 @@ function startQ(mode){
   document.getElementById('qmeta').textContent=`${ST.vak.naam} · D${ST.domein.id}: ${ST.domein.naam} · ${mode==='snel'?'Snelle Quiz':'Oud-examen'}`;
   document.getElementById('sc-quiz').classList.toggle('oud-mode',mode==='oud');
   show('sc-quiz');
+  playSound('start');
   // Toon skeleton kort terwijl quiz initialiseert
   const skel=document.getElementById('quiz-skeleton');
   const body=document.getElementById('qbody-inner');
@@ -286,12 +287,14 @@ function startTimer(max){
     t.textContent=ST.tijd;
     c.style.strokeDashoffset=circ*(1-ST.tijd/max);
     if(ST.tijd<=5){c.style.stroke='#F87171';document.getElementById('qring').classList.add('timer-urgent');}
+    if(ST.tijd<=3&&ST.tijd>0)playSound('tick');
     if(ST.tijd<=0){clearInterval(ST.timer);tijdOp();}
   },1000);
 }
 
 function kies(gekozen,correct){
   clearInterval(ST.timer);
+  playSound('tap');
   // Immediately disable all buttons + show suspense shimmer on selected
   const btns=document.querySelectorAll('#snel-area .opt');
   btns.forEach(b=>b.disabled=true);
@@ -834,30 +837,49 @@ function toggleSound(){
   _updSndBtn(btn);
   if(_soundOn)playSound('correct');
 }
+// Eén gedeelde AudioContext (browsers limiteren het aantal; nooit per call aanmaken).
+let _slAC=null;
+function _slAudio(){
+  try{
+    if(!_slAC)_slAC=new(window.AudioContext||window.webkitAudioContext)();
+    if(_slAC.state==='suspended')_slAC.resume().catch(()=>{});
+    return _slAC;
+  }catch(e){return null;}
+}
+function _slTone(ac,freq,start,dur,opt){
+  opt=opt||{};
+  const o=ac.createOscillator(),g=ac.createGain();
+  o.type=opt.type||'sine';
+  o.frequency.setValueAtTime(freq,start);
+  if(opt.to)o.frequency.exponentialRampToValueAtTime(opt.to,start+dur);
+  const vol=opt.vol!=null?opt.vol:.13;
+  g.gain.setValueAtTime(.0001,start);
+  g.gain.exponentialRampToValueAtTime(vol,start+.012);
+  g.gain.exponentialRampToValueAtTime(.0001,start+dur);
+  o.connect(g);g.connect(ac.destination);
+  o.start(start);o.stop(start+dur+.03);
+}
 function playSound(type){
   if(!_soundOn)return;
+  const ac=_slAudio(); if(!ac)return;
+  const t=ac.currentTime,T=_slTone;
   try{
-    const ctx=new(window.AudioContext||window.webkitAudioContext)();
-    const now=ctx.currentTime;
-    const FREQS={
-      correct:[[523,.0],[659,.08]],
-      wrong:[[180,.0]],
-      combo:[[523,.0],[659,.06],[784,.12]],
-      levelup:[[392,.0],[523,.1],[659,.2],[784,.3]],
-      streak:[[523,.0],[523,.1],[659,.2]]
-    };
-    const seqs=FREQS[type]||FREQS.correct;
-    seqs.forEach(([freq,delay])=>{
-      const o=ctx.createOscillator(),g=ctx.createGain();
-      o.connect(g);g.connect(ctx.destination);
-      o.type=type==='wrong'?'square':'sine';
-      o.frequency.value=freq;
-      const t=now+delay;
-      g.gain.setValueAtTime(0,t);
-      g.gain.linearRampToValueAtTime(type==='wrong'?.08:.14,t+.02);
-      g.gain.exponentialRampToValueAtTime(.001,t+(type==='wrong'?.18:.28));
-      o.start(t);o.stop(t+(type==='wrong'?.2:.32));
-    });
+    switch(type){
+      case'tap': T(ac,520,t,.05,{vol:.06,type:'triangle'}); break;
+      case'correct': T(ac,523,t,.10,{vol:.13}); T(ac,784,t+.08,.16,{vol:.13}); break;
+      case'wrong': T(ac,200,t,.17,{vol:.10,to:130}); break;
+      case'combo': [523,659,784].forEach((f,i)=>T(ac,f,t+i*.06,.14,{vol:.12})); break;
+      case'streak': [523,523,659,784].forEach((f,i)=>T(ac,f,t+i*.08,.14,{vol:.12})); break;
+      case'start': T(ac,392,t,.09,{vol:.10}); T(ac,587,t+.07,.15,{vol:.10}); break;
+      case'flip': T(ac,300,t,.13,{vol:.07,type:'triangle',to:680}); break;
+      case'tick': T(ac,880,t,.045,{vol:.07,type:'square'}); break;
+      case'xp': T(ac,784,t,.07,{vol:.10}); T(ac,1047,t+.06,.11,{vol:.10}); break;
+      case'evolve': [523,659,784,1047].forEach((f,i)=>T(ac,f,t+i*.07,.22,{vol:.11,type:'triangle'})); T(ac,1568,t+.3,.4,{vol:.07}); break;
+      case'levelup': [392,523,659,784].forEach((f,i)=>T(ac,f,t+i*.10,.30,{vol:.13})); break;
+      case'fanfare': [523,659,784,1047].forEach((f,i)=>T(ac,f,t+i*.11,.34,{vol:.14})); T(ac,784,t+.44,.5,{vol:.09}); T(ac,1047,t+.44,.5,{vol:.09}); break;
+      case'perfect': [659,988,1319].forEach((f,i)=>T(ac,f,t+i*.08,.20,{vol:.12,type:'triangle'})); break;
+      default: T(ac,523,t,.10,{vol:.12});
+    }
   }catch(e){}
 }
 // Initieel geluid-knop instellen

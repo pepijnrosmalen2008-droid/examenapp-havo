@@ -166,6 +166,7 @@ function showEvoReveal(newStage,animalId){
   const modal=document.getElementById('evo-reveal-modal');
   if(!modal)return;
   try{if(typeof v4AvatarReact==='function')setTimeout(()=>v4AvatarReact('levelup'),350);}catch(e){}
+  try{if(typeof playSound==='function')playSound('evolve');}catch(e){}
   const stageName=ANIM_STAGE_NAMES[newStage]||'Nieuw stadium';
   // Alleen de laatste rang (Ultiem) krijgt de premium-styling (hergebruikt de
   // mooiste bestaande klassen); lagere stadia = standaard.
@@ -365,6 +366,7 @@ function addXP(amount){
    Speelt op level-up, perfecte score en een geslaagde simulatietoets.
    Eén bold moment; de rest van de UI blijft stil. Reduced-motion: statisch. */
 function slagioVlagUit(kind){
+  try{if(typeof playSound==='function')playSound('fanfare');}catch(e){}
   try{
     const old=document.getElementById('vlag-uit'); if(old)old.remove();
     const reduce=window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)').matches;
