@@ -5301,8 +5301,17 @@ html.dark .vd-hero-art{opacity:.17}
 @keyframes amvMech{0%,100%{transform:translateY(0)}50%{transform:translateY(-7%)}}
 .amv-sway{animation:amvSway 3.8s ease-in-out infinite;transform-origin:50% 100%}
 @keyframes amvSway{0%,100%{transform:rotate(-3deg)}50%{transform:rotate(3deg)}}
-/* Ultiem-rang: subtiele warme accent-gloed (geen metaal-ring) */
-.anim-ultiem{filter:drop-shadow(0 0 7px rgba(var(--or-rgb),.5)) drop-shadow(0 3px 6px rgba(0,0,0,.18))}
+/* Goud-rang (25.000 XP): de mascotte verguld tot een gouden vorm */
+.anim-goud{filter:saturate(0) sepia(1) saturate(3.5) hue-rotate(2deg) brightness(1.08) drop-shadow(0 0 7px rgba(247,196,72,.9)) drop-shadow(0 3px 5px rgba(120,80,0,.28))}
+/* Ultiem-rang (30.000 XP): echt ultiem — stralende aura + draaiende lichtstralen */
+.anim-ascend{position:relative;filter:drop-shadow(0 0 10px rgba(255,242,190,.95)) drop-shadow(0 0 22px rgba(255,205,90,.55))}
+.anim-ascend::before{content:'';position:absolute;left:50%;top:48%;width:186%;height:186%;transform:translate(-50%,-50%);z-index:-1;pointer-events:none;border-radius:50%;
+  background:repeating-conic-gradient(from 0deg,rgba(255,224,130,.5) 0deg 6deg,rgba(255,224,130,0) 6deg 22deg);
+  -webkit-mask:radial-gradient(circle,transparent 40%,#000 46%,#000 58%,transparent 70%);
+          mask:radial-gradient(circle,transparent 40%,#000 46%,#000 58%,transparent 70%);
+  animation:ascendRays 11s linear infinite}
+@keyframes ascendRays{to{transform:translate(-50%,-50%) rotate(360deg)}}
+@media(prefers-reduced-motion:reduce){.anim-ascend::before{animation:none}}
 @media(prefers-reduced-motion:reduce){
   .amv-fly,.amv-flutter,.amv-swim,.amv-drift,.amv-slither,.amv-prowl,.amv-prance,.amv-mech,.amv-sway{animation:none!important}
 }

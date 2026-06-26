@@ -1,7 +1,7 @@
 // ═══════ XP & LEVELS ═══════
 const XP_KEY='slagio_xp';
 const XP_LEVELS=[0,100,500,2000,7500,30000,75000,200000];
-const LEVEL_NAMES=['','Baby','Jong','Tiener','Volwassen','Prime','Ultiem'];
+const LEVEL_NAMES=['','Baby','Jong','Tiener','Volwassen','Prime','Goud','Ultiem'];
 // ═══════ RIPPLE EFFECT ═══════
 (function initRipple(){
   document.addEventListener('click',function(e){
@@ -170,8 +170,11 @@ function showEvoReveal(newStage,animalId){
   // Alleen de laatste rang (Ultiem) krijgt de premium-styling (hergebruikt de
   // mooiste bestaande klassen); lagere stadia = standaard.
   const _ultiemIdx=ANIM_THRESHOLDS.length-1;
+  const _goudIdx=_ultiemIdx-1;
   const cfg=newStage>=_ultiemIdx
     ? {badge:'evo-rb-goud',btn:'evo-btn-goud',glow:'evo-reveal-glow-goud',div:'evo-divider-goud',crown:'👑',em:'👑'}
+    : newStage===_goudIdx
+    ? {badge:'evo-rb-goud',btn:'evo-btn-goud',glow:'evo-reveal-glow-goud',div:'evo-divider-goud',crown:'🏅',em:'🏅'}
     : {badge:'evo-rb-default',btn:'evo-btn-default',glow:'',div:'evo-divider-default',crown:'⭐',em:'⭐'};
   // Reset card animation so it replays
   const card=modal.querySelector('.evo-reveal-card');
@@ -191,6 +194,7 @@ function showEvoReveal(newStage,animalId){
   if(divEl)divEl.className='evo-reveal-divider '+cfg.div;
   const animalLabel=(a&&a.lbl&&a.lbl[Math.min(newStage,a.lbl.length-1)])||(a?stageName+' '+a.n:stageName);
   const msgs={};
+  msgs[_goudIdx]='Goud! Je mascotte glanst als puur goud. Bijna op de top.';
   msgs[_ultiemIdx]='De ultieme vorm. Het allerhoogste niveau dat er is.';
   if(titleEl)titleEl.textContent=animalLabel;
   if(subEl)subEl.textContent=msgs[newStage]||'Gefeliciteerd! Je dier evolueert naar '+stageName+'!';
