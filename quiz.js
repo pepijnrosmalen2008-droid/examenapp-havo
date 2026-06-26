@@ -837,20 +837,19 @@ function toggleSound(){
   _updAllSndBtns();
   if(_soundOn)playSound('pop');
 }
-// Eén gedeelde AudioContext + master-gain + korte reverb (browsers limiteren het aantal).
+// Eén gedeelde AudioContext + master-gain + zachte reverb.
 let _slAC=null,_slMG=null,_slRevIn=null;
 function _slAudio(){
   try{
     if(!_slAC){
       _slAC=new(window.AudioContext||window.webkitAudioContext)();
-      _slMG=_slAC.createGain();_slMG.gain.value=.85;_slMG.connect(_slAC.destination);
-      // Korte, heldere reverb voor 'premium' ruimte op beloningsgeluiden (niet op taps).
+      _slMG=_slAC.createGain();_slMG.gain.value=.40;_slMG.connect(_slAC.destination);
       try{
-        const ac=_slAC,len=Math.floor(ac.sampleRate*.75),ir=ac.createBuffer(2,len,ac.sampleRate);
-        for(let ch=0;ch<2;ch++){const dd=ir.getChannelData(ch);for(let i=0;i<len;i++)dd[i]=(Math.random()*2-1)*Math.pow(1-i/len,3.4);}
+        const ac=_slAC,len=Math.floor(ac.sampleRate*.45),ir=ac.createBuffer(2,len,ac.sampleRate);
+        for(let ch=0;ch<2;ch++){const dd=ir.getChannelData(ch);for(let i=0;i<len;i++)dd[i]=(Math.random()*2-1)*Math.pow(1-i/len,5);}
         const cv=ac.createConvolver();cv.buffer=ir;
         _slRevIn=ac.createGain();
-        const rw=ac.createGain();rw.gain.value=.4;
+        const rw=ac.createGain();rw.gain.value=.18;
         _slRevIn.connect(cv);cv.connect(rw);rw.connect(_slMG);
       }catch(e){_slRevIn=null;}
     }
@@ -858,117 +857,103 @@ function _slAudio(){
     return _slAC;
   }catch(e){return null;}
 }
-// Warme toon met optionele pitch-glide (f1->f2) + lowpass; voelt 'sappig' i.p.v. kale piep.
 function _slTone(ac,f1,f2,start,dur,opt){
   opt=opt||{};
   const o=ac.createOscillator(),g=ac.createGain(),lp=ac.createBiquadFilter();
   o.type=opt.type||'sine';
   o.frequency.setValueAtTime(f1,start);
   if(f2&&f2!==f1)o.frequency.exponentialRampToValueAtTime(Math.max(40,f2),start+dur*(opt.glide||.55));
-  const vol=opt.vol!=null?opt.vol:.12;
+  const vol=opt.vol!=null?opt.vol:.08;
   g.gain.setValueAtTime(.0001,start);
-  g.gain.exponentialRampToValueAtTime(vol,start+(opt.attack||.006));
+  g.gain.exponentialRampToValueAtTime(vol,start+(opt.attack||.010));
   g.gain.exponentialRampToValueAtTime(.0001,start+dur);
-  lp.type='lowpass';lp.frequency.value=opt.cut||3400;lp.Q.value=.6;
+  lp.type='lowpass';lp.frequency.value=opt.cut||2800;lp.Q.value=.5;
   o.connect(g);g.connect(lp);lp.connect(_slMG||ac.destination);
   if(opt.rev&&_slRevIn)lp.connect(_slRevIn);
   o.start(start);o.stop(start+dur+.04);
 }
-// Korte gefilterde-ruis 'klik' voor tactiel gevoel.
-function _slNoise(ac,start,dur,opt){
-  opt=opt||{};
-  const len=Math.max(1,Math.floor(ac.sampleRate*dur)),buf=ac.createBuffer(1,len,ac.sampleRate),d=buf.getChannelData(0);
-  for(let i=0;i<len;i++)d[i]=Math.random()*2-1;
-  const n=ac.createBufferSource();n.buffer=buf;
-  const bp=ac.createBiquadFilter();bp.type='bandpass';bp.frequency.value=opt.freq||2200;bp.Q.value=opt.q||1.1;
-  const g=ac.createGain();g.gain.setValueAtTime(opt.vol!=null?opt.vol:.05,start);g.gain.exponentialRampToValueAtTime(.0001,start+dur);
-  n.connect(bp);bp.connect(g);g.connect(_slMG||ac.destination);
-  n.start(start);n.stop(start+dur+.02);
-}
 function playSound(type){
   if(!_soundOn)return;
   const ac=_slAudio(); if(!ac)return;
-  const t=ac.currentTime,T=_slTone,N=_slNoise;
+  const t=ac.currentTime,T=_slTone;
   try{
     switch(type){
-      // ── UI: sappige bubble-pop met opwaartse glide + sparkle ──
+      // ── UI ──
       case'tap':
-        N(ac,t,.012,{freq:2400,vol:.035,q:.7});
-        T(ac,430,880,t,.09,{type:'sine',vol:.12,glide:.45,cut:2800});
-        T(ac,1320,null,t+.006,.06,{type:'triangle',vol:.035,cut:5400});
+        // Ultrasubiele zachte tik — nauwelijks hoorbaar maar bevestigend
+        T(ac,480,560,t,.055,{type:'sine',vol:.04,glide:.6,cut:1800,attack:.004});
         break;
       case'pop':
-        N(ac,t,.016,{freq:2700,vol:.045});
-        T(ac,540,1080,t,.11,{type:'sine',vol:.14,glide:.42,cut:3200});
-        T(ac,1620,null,t+.02,.09,{type:'triangle',vol:.05});
+        // Iets rijker voor primaire knoppen
+        T(ac,460,740,t,.09,{type:'sine',vol:.07,glide:.55,cut:2200});
+        T(ac,740,null,t+.03,.07,{type:'sine',vol:.025,cut:2600});
         break;
       case'nav':
-        T(ac,400,740,t,.10,{type:'sine',vol:.08,glide:.6});
+        T(ac,360,520,t,.08,{type:'sine',vol:.045,glide:.65,cut:2000});
         break;
       case'open':
-        T(ac,330,680,t,.16,{type:'sine',vol:.10,glide:.7,cut:3000});
-        T(ac,495,1010,t+.02,.18,{type:'triangle',vol:.06,glide:.7});
-        T(ac,1360,null,t+.12,.13,{type:'sine',vol:.04});
+        T(ac,300,520,t,.13,{type:'sine',vol:.055,glide:.7,cut:2400});
+        T(ac,520,null,t+.06,.10,{type:'sine',vol:.022,cut:2800});
         break;
       // ── Feedback ──
       case'correct':
-        [659,880].forEach((f,i)=>T(ac,f,f*1.5,t+i*.075,.16,{type:'triangle',vol:.13,glide:.3,cut:3700}));
-        T(ac,1760,null,t+.16,.2,{type:'sine',vol:.05});
+        // Warm twee-toons akkoord, geen harde triangle
+        T(ac,523,659,t,.18,{type:'sine',vol:.09,glide:.45,cut:2800});
+        T(ac,784,null,t+.08,.18,{type:'sine',vol:.06,cut:3000,rev:true});
         break;
       case'wrong':
-        N(ac,t,.045,{freq:380,vol:.05,q:.6});
-        T(ac,250,150,t,.22,{type:'sine',vol:.10,glide:.5,cut:1300});
+        // Zacht, kort, geen ruisburst — rustig "nee" i.p.v. buzzer
+        T(ac,300,220,t,.20,{type:'sine',vol:.07,glide:.6,cut:1200,attack:.018});
         break;
       case'combo':
-        [523,659,880].forEach((f,i)=>T(ac,f,f*1.4,t+i*.065,.15,{type:'triangle',vol:.12,glide:.3}));
-        T(ac,1760,null,t+.18,.22,{type:'sine',vol:.05});
+        [440,554,659].forEach((f,i)=>T(ac,f,null,t+i*.065,.16,{type:'sine',vol:.08,cut:2800}));
+        T(ac,880,null,t+.20,.18,{type:'sine',vol:.04,cut:3000,rev:true});
         break;
       case'streak':
-        [659,659,880,1175].forEach((f,i)=>T(ac,f,null,t+i*.085,.16,{type:'triangle',vol:.12,cut:4200}));
+        [440,523,659,784].forEach((f,i)=>T(ac,f,null,t+i*.08,.17,{type:'sine',vol:.08,cut:3000}));
+        T(ac,1047,null,t+.26,.22,{type:'sine',vol:.04,cut:3200,rev:true});
         break;
       case'start':
-        T(ac,392,784,t,.14,{type:'triangle',vol:.11,glide:.6});
-        T(ac,587,1175,t+.06,.16,{type:'sine',vol:.07,glide:.6});
+        T(ac,370,523,t,.14,{type:'sine',vol:.08,glide:.6,cut:2600});
+        T(ac,494,659,t+.07,.16,{type:'sine',vol:.055,glide:.55,cut:2800});
         break;
       case'flip':
-        N(ac,t,.07,{freq:3200,vol:.04,q:.5});
-        T(ac,420,940,t,.12,{type:'sine',vol:.06,glide:.8,cut:4200});
+        T(ac,380,660,t,.09,{type:'sine',vol:.045,glide:.8,cut:2800});
         break;
       case'tick':
-        T(ac,1120,null,t,.04,{type:'sine',vol:.06,cut:5200});
+        // Eén rustige tik per seconde, niet stressvol
+        T(ac,720,null,t,.032,{type:'sine',vol:.038,cut:2400,attack:.003});
         break;
       case'xp':
-        T(ac,880,1320,t,.10,{type:'triangle',vol:.11,glide:.3});
-        T(ac,1320,1760,t+.07,.12,{type:'triangle',vol:.10,glide:.3});
+        T(ac,523,659,t,.11,{type:'sine',vol:.08,glide:.4,cut:2800});
+        T(ac,659,784,t+.07,.12,{type:'sine',vol:.06,glide:.35,cut:3000});
         break;
-      // ── Beloningen: rijkere arpeggio's met sparkle-staart ──
+      // ── Beloningen ──
       case'badge':
-        [659,880,1175,1760].forEach((f,i)=>T(ac,f,null,t+i*.075,.22,{type:'triangle',vol:.12,cut:4600,rev:true}));
-        T(ac,2349,null,t+.30,.5,{type:'sine',vol:.05});
+        [523,659,784,1047].forEach((f,i)=>T(ac,f,null,t+i*.075,.22,{type:'sine',vol:.10,cut:3200,rev:true}));
+        T(ac,1319,null,t+.32,.40,{type:'sine',vol:.04,cut:3400,rev:true});
         break;
       case'complete':
-        [523,659,784,1047].forEach((f,i)=>T(ac,f,null,t+i*.085,.26,{type:'triangle',vol:.12,cut:3900,rev:true}));
-        T(ac,2093,null,t+.34,.45,{type:'sine',vol:.045});
+        [523,659,784,1047].forEach((f,i)=>T(ac,f,null,t+i*.085,.26,{type:'sine',vol:.09,cut:3000,rev:true}));
+        T(ac,1319,null,t+.36,.38,{type:'sine',vol:.035,cut:3200,rev:true});
         break;
       case'evolve':
-        [523,659,784,1047,1319].forEach((f,i)=>T(ac,f,f*1.2,t+i*.07,.30,{type:'triangle',vol:.10,glide:.4,rev:true}));
-        T(ac,2637,null,t+.42,.6,{type:'sine',vol:.05});
+        [523,659,784,1047,1319].forEach((f,i)=>T(ac,f,f*1.12,t+i*.07,.28,{type:'sine',vol:.085,glide:.45,cut:3200,rev:true}));
         break;
       case'levelup':
-        [392,523,659,784].forEach((f,i)=>T(ac,f,f*1.25,t+i*.10,.34,{type:'triangle',vol:.13,glide:.25,rev:true}));
-        T(ac,1568,null,t+.42,.5,{type:'sine',vol:.06});
+        [392,494,659,784].forEach((f,i)=>T(ac,f,f*1.18,t+i*.095,.32,{type:'sine',vol:.09,glide:.3,cut:3200,rev:true}));
+        T(ac,1047,null,t+.40,.45,{type:'sine',vol:.04,cut:3400,rev:true});
         break;
       case'fanfare':
-        [523,659,784,1047].forEach((f,i)=>T(ac,f,f*1.2,t+i*.105,.40,{type:'triangle',vol:.14,glide:.2,rev:true}));
-        T(ac,784,null,t+.46,.6,{type:'sine',vol:.08});
-        T(ac,1047,null,t+.46,.6,{type:'triangle',vol:.06});
-        T(ac,1568,null,t+.46,.6,{type:'sine',vol:.045});
+        [523,659,784,1047].forEach((f,i)=>T(ac,f,f*1.12,t+i*.10,.38,{type:'sine',vol:.10,glide:.25,cut:3200,rev:true}));
+        T(ac,784,null,t+.44,.55,{type:'sine',vol:.055,cut:3000,rev:true});
+        T(ac,1047,null,t+.44,.55,{type:'sine',vol:.04,cut:3200,rev:true});
         break;
       case'perfect':
-        [659,988,1319,1760].forEach((f,i)=>T(ac,f,null,t+i*.08,.24,{type:'triangle',vol:.12,cut:4800,rev:true}));
-        T(ac,2637,null,t+.34,.4,{type:'sine',vol:.05});
+        [659,784,988,1175].forEach((f,i)=>T(ac,f,null,t+i*.08,.25,{type:'sine',vol:.09,cut:3400,rev:true}));
+        T(ac,1319,null,t+.36,.38,{type:'sine',vol:.04,cut:3200,rev:true});
         break;
-      default: T(ac,560,860,t,.10,{type:'triangle',vol:.11,glide:.4});
+      default: T(ac,480,660,t,.09,{type:'sine',vol:.06,glide:.4});
     }
   }catch(e){}
 }
