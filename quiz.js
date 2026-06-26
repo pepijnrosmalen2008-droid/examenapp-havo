@@ -843,14 +843,14 @@ function _slAudio(){
   try{
     if(!_slAC){
       _slAC=new(window.AudioContext||window.webkitAudioContext)();
-      _slMG=_slAC.createGain();_slMG.gain.value=.85;_slMG.connect(_slAC.destination);
-      // Korte, heldere reverb voor 'premium' ruimte op beloningsgeluiden (niet op taps).
+      _slMG=_slAC.createGain();_slMG.gain.value=.40;_slMG.connect(_slAC.destination);
+      // Korte, subtiele reverb voor 'premium' ruimte op beloningsgeluiden (niet op taps).
       try{
-        const ac=_slAC,len=Math.floor(ac.sampleRate*.75),ir=ac.createBuffer(2,len,ac.sampleRate);
+        const ac=_slAC,len=Math.floor(ac.sampleRate*.45),ir=ac.createBuffer(2,len,ac.sampleRate);
         for(let ch=0;ch<2;ch++){const dd=ir.getChannelData(ch);for(let i=0;i<len;i++)dd[i]=(Math.random()*2-1)*Math.pow(1-i/len,3.4);}
         const cv=ac.createConvolver();cv.buffer=ir;
         _slRevIn=ac.createGain();
-        const rw=ac.createGain();rw.gain.value=.4;
+        const rw=ac.createGain();rw.gain.value=.18;
         _slRevIn.connect(cv);cv.connect(rw);rw.connect(_slMG);
       }catch(e){_slRevIn=null;}
     }
@@ -867,9 +867,9 @@ function _slTone(ac,f1,f2,start,dur,opt){
   if(f2&&f2!==f1)o.frequency.exponentialRampToValueAtTime(Math.max(40,f2),start+dur*(opt.glide||.55));
   const vol=opt.vol!=null?opt.vol:.12;
   g.gain.setValueAtTime(.0001,start);
-  g.gain.exponentialRampToValueAtTime(vol,start+(opt.attack||.006));
+  g.gain.exponentialRampToValueAtTime(vol,start+(opt.attack||.010));
   g.gain.exponentialRampToValueAtTime(.0001,start+dur);
-  lp.type='lowpass';lp.frequency.value=opt.cut||3400;lp.Q.value=.6;
+  lp.type='lowpass';lp.frequency.value=opt.cut||1800;lp.Q.value=.6;
   o.connect(g);g.connect(lp);lp.connect(_slMG||ac.destination);
   if(opt.rev&&_slRevIn)lp.connect(_slRevIn);
   o.start(start);o.stop(start+dur+.04);
@@ -893,9 +893,7 @@ function playSound(type){
     switch(type){
       // ── UI: sappige bubble-pop met opwaartse glide + sparkle ──
       case'tap':
-        N(ac,t,.012,{freq:2400,vol:.035,q:.7});
-        T(ac,430,880,t,.09,{type:'sine',vol:.12,glide:.45,cut:2800});
-        T(ac,1320,null,t+.006,.06,{type:'triangle',vol:.035,cut:5400});
+        T(ac,440,null,t,.07,{type:'sine',vol:.04,cut:1800});
         break;
       case'pop':
         N(ac,t,.016,{freq:2700,vol:.045});
@@ -912,12 +910,11 @@ function playSound(type){
         break;
       // ── Feedback ──
       case'correct':
-        [659,880].forEach((f,i)=>T(ac,f,f*1.5,t+i*.075,.16,{type:'triangle',vol:.13,glide:.3,cut:3700}));
-        T(ac,1760,null,t+.16,.2,{type:'sine',vol:.05});
+        [659,880].forEach((f,i)=>T(ac,f,f*1.5,t+i*.075,.16,{type:'sine',vol:.13,glide:.3,cut:2600}));
+        T(ac,1319,null,t+.16,.2,{type:'sine',vol:.05});
         break;
       case'wrong':
-        N(ac,t,.045,{freq:380,vol:.05,q:.6});
-        T(ac,250,150,t,.22,{type:'sine',vol:.10,glide:.5,cut:1300});
+        T(ac,300,160,t,.25,{type:'sine',vol:.07,glide:.6,cut:1300});
         break;
       case'combo':
         [523,659,880].forEach((f,i)=>T(ac,f,f*1.4,t+i*.065,.15,{type:'triangle',vol:.12,glide:.3}));
@@ -935,7 +932,7 @@ function playSound(type){
         T(ac,420,940,t,.12,{type:'sine',vol:.06,glide:.8,cut:4200});
         break;
       case'tick':
-        T(ac,1120,null,t,.04,{type:'sine',vol:.06,cut:5200});
+        T(ac,720,null,t,.04,{type:'sine',vol:.038,cut:2200});
         break;
       case'xp':
         T(ac,880,1320,t,.10,{type:'triangle',vol:.11,glide:.3});
@@ -952,7 +949,7 @@ function playSound(type){
         break;
       case'evolve':
         [523,659,784,1047,1319].forEach((f,i)=>T(ac,f,f*1.2,t+i*.07,.30,{type:'triangle',vol:.10,glide:.4,rev:true}));
-        T(ac,2637,null,t+.42,.6,{type:'sine',vol:.05});
+        T(ac,1319,null,t+.42,.6,{type:'sine',vol:.05});
         break;
       case'levelup':
         [392,523,659,784].forEach((f,i)=>T(ac,f,f*1.25,t+i*.10,.34,{type:'triangle',vol:.13,glide:.25,rev:true}));
@@ -966,7 +963,7 @@ function playSound(type){
         break;
       case'perfect':
         [659,988,1319,1760].forEach((f,i)=>T(ac,f,null,t+i*.08,.24,{type:'triangle',vol:.12,cut:4800,rev:true}));
-        T(ac,2637,null,t+.34,.4,{type:'sine',vol:.05});
+        T(ac,1319,null,t+.34,.4,{type:'sine',vol:.05});
         break;
       default: T(ac,560,860,t,.10,{type:'triangle',vol:.11,glide:.4});
     }
