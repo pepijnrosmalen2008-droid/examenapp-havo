@@ -837,53 +837,138 @@ function toggleSound(){
   _updAllSndBtns();
   if(_soundOn)playSound('pop');
 }
-// Eén gedeelde AudioContext (browsers limiteren het aantal; nooit per call aanmaken).
-let _slAC=null;
+// Eén gedeelde AudioContext + master-gain + korte reverb (browsers limiteren het aantal).
+let _slAC=null,_slMG=null,_slRevIn=null;
 function _slAudio(){
   try{
-    if(!_slAC)_slAC=new(window.AudioContext||window.webkitAudioContext)();
+    if(!_slAC){
+      _slAC=new(window.AudioContext||window.webkitAudioContext)();
+      _slMG=_slAC.createGain();_slMG.gain.value=.85;_slMG.connect(_slAC.destination);
+      // Korte, heldere reverb voor 'premium' ruimte op beloningsgeluiden (niet op taps).
+      try{
+        const ac=_slAC,len=Math.floor(ac.sampleRate*.75),ir=ac.createBuffer(2,len,ac.sampleRate);
+        for(let ch=0;ch<2;ch++){const dd=ir.getChannelData(ch);for(let i=0;i<len;i++)dd[i]=(Math.random()*2-1)*Math.pow(1-i/len,3.4);}
+        const cv=ac.createConvolver();cv.buffer=ir;
+        _slRevIn=ac.createGain();
+        const rw=ac.createGain();rw.gain.value=.4;
+        _slRevIn.connect(cv);cv.connect(rw);rw.connect(_slMG);
+      }catch(e){_slRevIn=null;}
+    }
     if(_slAC.state==='suspended')_slAC.resume().catch(()=>{});
     return _slAC;
   }catch(e){return null;}
 }
-function _slTone(ac,freq,start,dur,opt){
+// Warme toon met optionele pitch-glide (f1->f2) + lowpass; voelt 'sappig' i.p.v. kale piep.
+function _slTone(ac,f1,f2,start,dur,opt){
   opt=opt||{};
-  const o=ac.createOscillator(),g=ac.createGain();
+  const o=ac.createOscillator(),g=ac.createGain(),lp=ac.createBiquadFilter();
   o.type=opt.type||'sine';
-  o.frequency.setValueAtTime(freq,start);
-  if(opt.to)o.frequency.exponentialRampToValueAtTime(opt.to,start+dur);
-  const vol=opt.vol!=null?opt.vol:.13;
+  o.frequency.setValueAtTime(f1,start);
+  if(f2&&f2!==f1)o.frequency.exponentialRampToValueAtTime(Math.max(40,f2),start+dur*(opt.glide||.55));
+  const vol=opt.vol!=null?opt.vol:.12;
   g.gain.setValueAtTime(.0001,start);
-  g.gain.exponentialRampToValueAtTime(vol,start+.012);
+  g.gain.exponentialRampToValueAtTime(vol,start+(opt.attack||.006));
   g.gain.exponentialRampToValueAtTime(.0001,start+dur);
-  o.connect(g);g.connect(ac.destination);
-  o.start(start);o.stop(start+dur+.03);
+  lp.type='lowpass';lp.frequency.value=opt.cut||3400;lp.Q.value=.6;
+  o.connect(g);g.connect(lp);lp.connect(_slMG||ac.destination);
+  if(opt.rev&&_slRevIn)lp.connect(_slRevIn);
+  o.start(start);o.stop(start+dur+.04);
+}
+// Korte gefilterde-ruis 'klik' voor tactiel gevoel.
+function _slNoise(ac,start,dur,opt){
+  opt=opt||{};
+  const len=Math.max(1,Math.floor(ac.sampleRate*dur)),buf=ac.createBuffer(1,len,ac.sampleRate),d=buf.getChannelData(0);
+  for(let i=0;i<len;i++)d[i]=Math.random()*2-1;
+  const n=ac.createBufferSource();n.buffer=buf;
+  const bp=ac.createBiquadFilter();bp.type='bandpass';bp.frequency.value=opt.freq||2200;bp.Q.value=opt.q||1.1;
+  const g=ac.createGain();g.gain.setValueAtTime(opt.vol!=null?opt.vol:.05,start);g.gain.exponentialRampToValueAtTime(.0001,start+dur);
+  n.connect(bp);bp.connect(g);g.connect(_slMG||ac.destination);
+  n.start(start);n.stop(start+dur+.02);
 }
 function playSound(type){
   if(!_soundOn)return;
   const ac=_slAudio(); if(!ac)return;
-  const t=ac.currentTime,T=_slTone;
+  const t=ac.currentTime,T=_slTone,N=_slNoise;
   try{
     switch(type){
-      case'tap': T(ac,520,t,.05,{vol:.055,type:'triangle'}); break;
-      case'pop': T(ac,660,t,.06,{vol:.09,type:'triangle'}); T(ac,990,t+.05,.08,{vol:.08,type:'triangle'}); break;
-      case'nav': T(ac,440,t,.06,{vol:.06,type:'sine',to:620}); break;
-      case'badge': [784,1047,1319].forEach((f,i)=>T(ac,f,t+i*.07,.18,{vol:.11,type:'triangle'})); T(ac,1568,t+.22,.3,{vol:.07}); break;
-      case'complete': [523,659,784,1047].forEach((f,i)=>T(ac,f,t+i*.09,.20,{vol:.12})); break;
-      case'open': T(ac,392,t,.07,{vol:.07}); T(ac,523,t+.05,.10,{vol:.07}); break;
-      case'correct': T(ac,523,t,.10,{vol:.13}); T(ac,784,t+.08,.16,{vol:.13}); break;
-      case'wrong': T(ac,200,t,.17,{vol:.10,to:130}); break;
-      case'combo': [523,659,784].forEach((f,i)=>T(ac,f,t+i*.06,.14,{vol:.12})); break;
-      case'streak': [523,523,659,784].forEach((f,i)=>T(ac,f,t+i*.08,.14,{vol:.12})); break;
-      case'start': T(ac,392,t,.09,{vol:.10}); T(ac,587,t+.07,.15,{vol:.10}); break;
-      case'flip': T(ac,300,t,.13,{vol:.07,type:'triangle',to:680}); break;
-      case'tick': T(ac,880,t,.045,{vol:.07,type:'square'}); break;
-      case'xp': T(ac,784,t,.07,{vol:.10}); T(ac,1047,t+.06,.11,{vol:.10}); break;
-      case'evolve': [523,659,784,1047].forEach((f,i)=>T(ac,f,t+i*.07,.22,{vol:.11,type:'triangle'})); T(ac,1568,t+.3,.4,{vol:.07}); break;
-      case'levelup': [392,523,659,784].forEach((f,i)=>T(ac,f,t+i*.10,.30,{vol:.13})); break;
-      case'fanfare': [523,659,784,1047].forEach((f,i)=>T(ac,f,t+i*.11,.34,{vol:.14})); T(ac,784,t+.44,.5,{vol:.09}); T(ac,1047,t+.44,.5,{vol:.09}); break;
-      case'perfect': [659,988,1319].forEach((f,i)=>T(ac,f,t+i*.08,.20,{vol:.12,type:'triangle'})); break;
-      default: T(ac,523,t,.10,{vol:.12});
+      // ── UI: sappige bubble-pop met opwaartse glide + sparkle ──
+      case'tap':
+        N(ac,t,.012,{freq:2400,vol:.035,q:.7});
+        T(ac,430,880,t,.09,{type:'sine',vol:.12,glide:.45,cut:2800});
+        T(ac,1320,null,t+.006,.06,{type:'triangle',vol:.035,cut:5400});
+        break;
+      case'pop':
+        N(ac,t,.016,{freq:2700,vol:.045});
+        T(ac,540,1080,t,.11,{type:'sine',vol:.14,glide:.42,cut:3200});
+        T(ac,1620,null,t+.02,.09,{type:'triangle',vol:.05});
+        break;
+      case'nav':
+        T(ac,400,740,t,.10,{type:'sine',vol:.08,glide:.6});
+        break;
+      case'open':
+        T(ac,330,680,t,.16,{type:'sine',vol:.10,glide:.7,cut:3000});
+        T(ac,495,1010,t+.02,.18,{type:'triangle',vol:.06,glide:.7});
+        T(ac,1360,null,t+.12,.13,{type:'sine',vol:.04});
+        break;
+      // ── Feedback ──
+      case'correct':
+        [659,880].forEach((f,i)=>T(ac,f,f*1.5,t+i*.075,.16,{type:'triangle',vol:.13,glide:.3,cut:3700}));
+        T(ac,1760,null,t+.16,.2,{type:'sine',vol:.05});
+        break;
+      case'wrong':
+        N(ac,t,.045,{freq:380,vol:.05,q:.6});
+        T(ac,250,150,t,.22,{type:'sine',vol:.10,glide:.5,cut:1300});
+        break;
+      case'combo':
+        [523,659,880].forEach((f,i)=>T(ac,f,f*1.4,t+i*.065,.15,{type:'triangle',vol:.12,glide:.3}));
+        T(ac,1760,null,t+.18,.22,{type:'sine',vol:.05});
+        break;
+      case'streak':
+        [659,659,880,1175].forEach((f,i)=>T(ac,f,null,t+i*.085,.16,{type:'triangle',vol:.12,cut:4200}));
+        break;
+      case'start':
+        T(ac,392,784,t,.14,{type:'triangle',vol:.11,glide:.6});
+        T(ac,587,1175,t+.06,.16,{type:'sine',vol:.07,glide:.6});
+        break;
+      case'flip':
+        N(ac,t,.07,{freq:3200,vol:.04,q:.5});
+        T(ac,420,940,t,.12,{type:'sine',vol:.06,glide:.8,cut:4200});
+        break;
+      case'tick':
+        T(ac,1120,null,t,.04,{type:'sine',vol:.06,cut:5200});
+        break;
+      case'xp':
+        T(ac,880,1320,t,.10,{type:'triangle',vol:.11,glide:.3});
+        T(ac,1320,1760,t+.07,.12,{type:'triangle',vol:.10,glide:.3});
+        break;
+      // ── Beloningen: rijkere arpeggio's met sparkle-staart ──
+      case'badge':
+        [659,880,1175,1760].forEach((f,i)=>T(ac,f,null,t+i*.075,.22,{type:'triangle',vol:.12,cut:4600,rev:true}));
+        T(ac,2349,null,t+.30,.5,{type:'sine',vol:.05});
+        break;
+      case'complete':
+        [523,659,784,1047].forEach((f,i)=>T(ac,f,null,t+i*.085,.26,{type:'triangle',vol:.12,cut:3900,rev:true}));
+        T(ac,2093,null,t+.34,.45,{type:'sine',vol:.045});
+        break;
+      case'evolve':
+        [523,659,784,1047,1319].forEach((f,i)=>T(ac,f,f*1.2,t+i*.07,.30,{type:'triangle',vol:.10,glide:.4,rev:true}));
+        T(ac,2637,null,t+.42,.6,{type:'sine',vol:.05});
+        break;
+      case'levelup':
+        [392,523,659,784].forEach((f,i)=>T(ac,f,f*1.25,t+i*.10,.34,{type:'triangle',vol:.13,glide:.25,rev:true}));
+        T(ac,1568,null,t+.42,.5,{type:'sine',vol:.06});
+        break;
+      case'fanfare':
+        [523,659,784,1047].forEach((f,i)=>T(ac,f,f*1.2,t+i*.105,.40,{type:'triangle',vol:.14,glide:.2,rev:true}));
+        T(ac,784,null,t+.46,.6,{type:'sine',vol:.08});
+        T(ac,1047,null,t+.46,.6,{type:'triangle',vol:.06});
+        T(ac,1568,null,t+.46,.6,{type:'sine',vol:.045});
+        break;
+      case'perfect':
+        [659,988,1319,1760].forEach((f,i)=>T(ac,f,null,t+i*.08,.24,{type:'triangle',vol:.12,cut:4800,rev:true}));
+        T(ac,2637,null,t+.34,.4,{type:'sine',vol:.05});
+        break;
+      default: T(ac,560,860,t,.10,{type:'triangle',vol:.11,glide:.4});
     }
   }catch(e){}
 }
