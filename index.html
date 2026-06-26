@@ -66,7 +66,6 @@
     "Inline check-vragen in samenvatting: na elke twee secties verschijnt automatisch een 'Check je begrip' meerkeuzevraag uit de quizbank",
     "CE-spotlight in samenvatting: onderaan elke samenvatting worden automatisch relevante echte CE-examenvragen getoond uit het open vragenarchief",
     "Printbare samenvatting: elke samenvatting heeft een printknop die een schoon opgemaakt printvenster opent geschikt voor papier",
-    "Pomodoro-timer: ingebouwde 25/5-minuten focus-timer voor gestructureerd studeren",
     "Examenrooster HAVO en VWO 2026 met datum, tijdstip en toegestane hulpmiddelen",
     "Premium countdown tot het volgende examen: grote centrale tijdweergave met vaknaam, dagen als hoofdgetal en uren/minuten/seconden als secundaire rij - accentkleur oranje (HAVO) of paars (VWO)",
     "Aparte URL per niveau: slagio.nl/havo en slagio.nl/vwo - refresh behoudt het gekozen niveau, correct geïndexeerd door zoekmachines",
@@ -100,8 +99,7 @@
     {"@type":"Thing","name":"Adaptief leren voor eindexamen","description":"Algoritme dat oefenvragen aanpast aan het persoonlijke niveau van de leerling op basis van historische prestaties per vraag"},
     {"@type":"Thing","name":"Spaced repetition flashcards eindexamen","description":"Flashcards met SM-2 spaced repetition algoritme voor optimale kennisretentie"},
     {"@type":"Thing","name":"CE Simulatietoets HAVO VWO","description":"Volledige simulatie van het Centrale Examen met timer, puntenberekening en eindcijfer"},
-    {"@type":"Thing","name":"Open examenvragen HAVO VWO per domein","description":"Minimaal 3 open CE-stijl vragen per domein met contexttekst, jaar, tijdvak en modelantwoord, voor alle CE-domeinen van HAVO en VWO"},
-    {"@type":"Thing","name":"Pomodoro-timer voor eindexamen studenten","description":"Ingebouwde 25/5-minuten Pomodoro-timer voor gestructureerde studiessies"}
+    {"@type":"Thing","name":"Open examenvragen HAVO VWO per domein","description":"Minimaal 3 open CE-stijl vragen per domein met contexttekst, jaar, tijdvak en modelantwoord, voor alle CE-domeinen van HAVO en VWO"}
   ],
   "image": {"@type":"ImageObject","url":"https://slagio.nl/icon-512.png","width":512,"height":512},
   "sameAs": ["https://slagio.nl"]
@@ -113,7 +111,7 @@
   "@type": "WebSite",
   "name": "Slagio",
   "url": "https://slagio.nl",
-  "description": "Gratis examenvoorbereiding voor HAVO en VWO 2026. 2.000+ oefenvragen, per domein CE of SE gemarkeerd, echte CE-examens 2019–2025, simulatietoets met automatisch cijfer, spaced repetition flashcards, persoonlijk studieplan, Bot Race, Pomodoro-timer, leaderboard, cijfercalculator, examenrooster 2026 - alles gratis, offline beschikbaar als PWA.",
+  "description": "Gratis examenvoorbereiding voor HAVO en VWO 2026. 2.000+ oefenvragen, per domein CE of SE gemarkeerd, echte CE-examens 2019–2025, simulatietoets met automatisch cijfer, spaced repetition flashcards, persoonlijk studieplan, Bot Race, leaderboard, cijfercalculator, examenrooster 2026 - alles gratis, offline beschikbaar als PWA.",
   "inLanguage": "nl-NL",
   "potentialAction": {
     "@type": "SearchAction",
@@ -812,7 +810,6 @@
   <div id="daily-challenge-home" class="daily-wrap"></div>
   <div id="streak-milestone-banner-home"></div>
   <div id="streak-home"></div>
-  <div id="pomo-home"></div>
   <div class="home-section-header">
     <span class="hsh-title">Cijferanalyse</span>
     <span class="hsh-sub">Inzicht in je huidige SE-cijfers</span>
@@ -2002,21 +1999,6 @@
   </div>
 </nav>
 
-<!-- Pomodoro Overlay -->
-<div class="pomo-overlay" id="pomo-overlay">
-  <div class="pomo-overlay-card">
-    <div class="pomo-overlay-icon" id="pomo-ov-icon">☕</div>
-    <div class="pomo-overlay-title" id="pomo-ov-title">Pauze tijd!</div>
-    <div class="pomo-overlay-sub" id="pomo-ov-sub">Goed bezig! Neem even 5 minuten rust.</div>
-    <div class="pomo-overlay-timer" id="pomo-ov-timer">05:00</div>
-    <div class="pomo-overlay-bar"><div class="pomo-overlay-bar-fill" id="pomo-ov-bar" style="width:100%"></div></div>
-    <div class="pomo-overlay-btns">
-      <button class="pomo-overlay-btn secondary" id="pomo-ov-close" onclick="dismissPomoOverlay()">Sluiten</button>
-      <button class="pomo-overlay-btn mg-btn" id="pomo-ov-mg-btn" onclick="startPomoMinigame()" style="display:none">🎮 Minigame</button>
-      <button class="pomo-overlay-btn primary" id="pomo-ov-action" onclick="startBreakFromOverlay()">▶ Start pauze</button>
-    </div>
-  </div>
-</div>
 
 <!-- CIJFER SPOTLIGHT TUTORIAL -->
 <div id="ctuto-overlay" style="display:none;position:fixed;inset:0;z-index:8900">

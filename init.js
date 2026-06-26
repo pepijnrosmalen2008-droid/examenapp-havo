@@ -371,7 +371,6 @@ updateLevelChip();
   tag.textContent='Vorige keuze ✓';
   card.appendChild(tag);
 })();
-renderPomo();
 if(document.getElementById('sc-schedule'))renderSchedule();
 buildRegisterAnimalPicker();
 buildSlaagInputs();
