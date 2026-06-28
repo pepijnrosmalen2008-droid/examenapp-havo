@@ -1,4 +1,4 @@
-const CACHE = 'slagio-v259';
+const CACHE = 'slagio-v260';
 const ASSETS = ['/', '/index.html', '/styles.css', '/data.js', '/state.js', '/cloud.js', '/profile.js', '/vak.js', '/quiz.js', '/tools.js', '/sim.js', '/lb.js', '/features.js', '/schedule.js', '/v4.js', '/init.js', '/examens.js', '/manifest.json', '/icon-192.png', '/icon-512.png', '/logo.svg', '/apple-touch-icon.png'];
 
 self.addEventListener('install', e => {
@@ -37,16 +37,20 @@ self.addEventListener('fetch', e => {
     return;
   }
 
+  // Stale-while-revalidate: serveer direct uit cache (snel + offline), maar haal
+  // élke keer op de achtergrond een verse versie op en ververs de cache. Zo
+  // herstelt een verouderde styles.css/JS zich vanzelf bij de volgende load,
+  // ook zonder cache-versie-bump.
   e.respondWith(
     caches.match(request).then(cached => {
-      if (cached) return cached;
-      return fetch(request).then(res => {
+      const network = fetch(request).then(res => {
         if (res.ok) {
           const clone = res.clone();
           caches.open(CACHE).then(c => c.put(request, clone));
         }
         return res;
-      }).catch(() => caches.match('/index.html'));
+      }).catch(() => cached || caches.match('/index.html'));
+      return cached || network;
     })
   );
 });
