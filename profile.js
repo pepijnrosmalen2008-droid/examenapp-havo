@@ -518,8 +518,8 @@ async function saveProfileData(){
   const newAnimalId=lockedAnimalId||(selectedAnimalId||null);
   const computedAvatar=newAnimalId?getAnimalEmoji(newAnimalId,totalXP):(selectedAvatar||'🐾');
   const updated={
-    naam:get('pf-naam').trim(),
-    school:get('pf-school').trim(),
+    naam:get('pf-naam').trim().slice(0,30),
+    school:get('pf-school').trim().slice(0,60),
     klas:get('pf-klas'),
     profiel:get('pf-profiel'),
     avatar:computedAvatar,
@@ -708,8 +708,8 @@ Tips:<br>
   const rows=keys.map(k=>{
     const naam=getVK().find(v=>v.id===k)?.naam||k;
     return `<div style="display:flex;justify-content:space-between;align-items:center;padding:5px 0;border-bottom:1px solid rgba(255,255,255,.07)">
-      <span style="font-weight:600">${naam}</span>
-      <span style="font-size:18px;font-weight:800;color:var(--or)">${parsed[k]}</span>
+      <span style="font-weight:600">${escapeHtml(naam)}</span>
+      <span style="font-size:18px;font-weight:800;color:var(--or)">${escapeHtml(parsed[k])}</span>
     </div>`;
   }).join('');
 

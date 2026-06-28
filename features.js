@@ -134,13 +134,13 @@ function getMyCurrentAvatarHtml(size){
   try{
     const p=JSON.parse(localStorage.getItem(PROF_KEY)||'{}');
     if(p.animalId)return getAnimalDisplay(p.animalId,getAnimalStageIdx(getTotalXP()),size);
-    return`<span style="font-size:${size}px;line-height:1">${p.avatar||'🐾'}</span>`;
+    return`<span style="font-size:${size}px;line-height:1">${escapeHtml(p.avatar||'🐾')}</span>`;
   }catch(e){return`<span style="font-size:${size}px">🐾</span>`;}
 }
 function getLbAvatarHtml(e,size){
   size=size||28;
   if(e&&e.animalId){return getAnimalDisplay(e.animalId,e.stageIdx!=null?e.stageIdx:0,size);}
-  return`<span style="font-size:${size}px;line-height:1">${e&&e.avatar?e.avatar:'🐻'}</span>`;
+  return`<span style="font-size:${size}px;line-height:1">${escapeHtml(e&&e.avatar?e.avatar:'🐻')}</span>`;
 }
 // Prioriteitsvolgorde voor "beste badge" display
 const BADGE_PRIORITY=['streak100','streak30','streak14','streak7','quiz500','quiz100','combo10','perfect','streak3','quiz50','combo5','vakken10','quiz10','combo3','vakken3','examen_done','quiz1','streak1'];

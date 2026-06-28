@@ -165,7 +165,7 @@ function openLbProfile(naam){
     <div class="lbp-header">
       <div class="lbp-av-wrap"><div class="lbp-av">${avatarHtml}</div>${getLbBadgeOverlay(allEntries[0]?.featuredBadgeId)}</div>
       <div class="lbp-headinfo">
-        <div class="lbp-naam">${naam}</div>
+        <div class="lbp-naam">${escapeHtml(naam)}</div>
         <div class="lbp-chips">
           ${niveau?`<span class="lb-niveau-chip">${niveau}</span>`:''}
           <span class="lb-tier ${tierCls}">${tierLabel}</span>
@@ -337,7 +337,7 @@ function _renderLbWithData(){
       <div class="lb-my-av" style="position:relative">${myLiveAvatar32}${getLbBadgeOverlay(myBestBadgeId,'var(--or)')}</div>
       <div class="lb-my-info">
         <div class="lb-my-title">Jouw beste score</div>
-        <div class="lb-my-name">${prof.naam}</div>
+        <div class="lb-my-name">${escapeHtml(prof.naam)}</div>
         <div class="lb-my-det">${myBest.vakNaam}${myBest.domeinId?` · D${myBest.domeinId}: ${myBest.domeinNaam}`:''}${myBest.avgTijd?` · gem. ${myBest.avgTijd}s`:''} · ${myBest.goed}/${myBest.tot} goed</div>
       </div>
       <div class="lb-my-score-box"><div class="lb-my-score-n">${myBest.score}</div><div class="lb-my-score-l">rank #${myRank||'?'}</div></div>
@@ -382,7 +382,7 @@ function _renderLbWithData(){
     order.forEach((ri,pi)=>{
       const e=top[ri];if(!e)return;
       const isMe=myNaam&&e.naam===myNaam;
-      podHtml+=`<div class="lb-pod lb-clickable" data-lbname="${e.naam.replace(/"/g,'&quot;')}" style="cursor:pointer">
+      podHtml+=`<div class="lb-pod lb-clickable" data-lbname="${escapeHtml(e.naam)}" style="cursor:pointer">
         <div class="lb-pod-medal">${medals[ri]}</div>
         <div style="position:relative;display:inline-block">
           <div class="lb-pod-avatar ${classes[ri]}" style="${isMe?'border-color:var(--or)':''}">${isMe?myLiveAvatar32:getLbAvatarHtml(e,32)}</div>
@@ -390,7 +390,7 @@ function _renderLbWithData(){
           ${getLbBadgeOverlay(isMe?myBestBadgeId:e.featuredBadgeId)}
         </div>
         <div class="lb-pod-bar ${classes[ri]}" style="height:${heights[pi]}px">${e.score}</div>
-        <div class="lb-pod-name">${e.naam}</div>
+        <div class="lb-pod-name">${escapeHtml(e.naam)}</div>
         <div class="lb-pod-score">${e.goed}/${e.tot} · ${safePct(e.goed,e.tot)}%</div>
         <div style="margin-top:5px;display:flex;gap:4px;justify-content:center;flex-wrap:wrap">${niveauChip(e)}${tierBadge(e.score)}${stageBadge(e)}</div>
       </div>`;
@@ -425,14 +425,14 @@ function _renderLbWithData(){
     const rank=i+1;
     const isMe=myNaam&&e.naam===myNaam;
     if(showPodium&&rank<=3)return;
-    listHtml+=`<div class="lb-row${isMe?' me':''} lb-clickable" data-lbname="${e.naam.replace(/"/g,'&quot;')}">
+    listHtml+=`<div class="lb-row${isMe?' me':''} lb-clickable" data-lbname="${escapeHtml(e.naam)}">
       <div class="lb-rank-col ${rankCls(rank)}">${rank===1?'🥇':rank===2?'🥈':rank===3?'🥉':'#'+rank}</div>
       <div class="lb-av-wrap">
         <div class="lb-av">${isMe?myLiveAvatar28:getLbAvatarHtml(e,28)}</div>
         ${getLbBadgeOverlay(isMe?myBestBadgeId:e.featuredBadgeId)}
       </div>
       <div class="lb-info">
-        <div class="lb-name">${e.naam}${lbMeSpan(isMe)}${niveauChip(e)}${tierBadge(e.score)}${stageBadge(e)}</div>
+        <div class="lb-name">${escapeHtml(e.naam)}${lbMeSpan(isMe)}${niveauChip(e)}${tierBadge(e.score)}${stageBadge(e)}</div>
         <div class="lb-meta">${lbMeta(e)}</div>
       </div>
       <div class="lb-score"><div class="lb-score-num">${e.score}</div><div class="lb-score-sub">pts</div><div style="font-size:9px;color:var(--mu);margin-top:2px">Bekijk →</div></div>

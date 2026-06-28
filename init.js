@@ -468,7 +468,7 @@ function _mqRenderLobby(){
   const startBtn=document.getElementById('mq-start-btn');
   const hint=document.getElementById('mq-lobby-hint');
   const pl=MQ?.players||[];
-  if(wrap)wrap.innerHTML=pl.map(p=>`<div class="mq-player-chip"><span class="mq-player-av">${p.avatar}</span><span class="mq-player-nm">${p.name}</span></div>`).join('');
+  if(wrap)wrap.innerHTML=pl.map(p=>`<div class="mq-player-chip"><span class="mq-player-av">${escapeHtml(p.avatar)}</span><span class="mq-player-nm">${escapeHtml(p.name)}</span></div>`).join('');
   if(cnt)cnt.textContent=pl.length+' speler'+(pl.length===1?'':'s');
   if(startBtn)startBtn.style.display=MQ?.isHost&&pl.length>=1?'block':'none';
   if(hint)hint.textContent=MQ?.isHost?'Stuur de spelcode naar je vrienden':'Wachten op de host om het spel te starten…';
@@ -612,7 +612,7 @@ function _mqShowReveal(payload){
   const ex=document.getElementById('mq-reveal-expl');if(ex){ex.textContent=expl||'';ex.style.display=expl?'block':'none';}
   // Mini leaderboard
   const lb=document.getElementById('mq-reveal-lb');
-  if(lb)lb.innerHTML=results.slice(0,5).map((r,i)=>`<div class="mq-lb-row"><span class="mq-lb-pos">${i+1}</span><span class="mq-lb-av">${r.avatar}</span><span class="mq-lb-nm">${r.name}</span><span class="mq-lb-pts">${scores[r.id]||0} pt</span></div>`).join('');
+  if(lb)lb.innerHTML=results.slice(0,5).map((r,i)=>`<div class="mq-lb-row"><span class="mq-lb-pos">${i+1}</span><span class="mq-lb-av">${escapeHtml(r.avatar)}</span><span class="mq-lb-nm">${escapeHtml(r.name)}</span><span class="mq-lb-pts">${scores[r.id]||0} pt</span></div>`).join('');
   const wait=document.getElementById('mq-reveal-wait');
   if(wait)wait.textContent=MQ.isHost?'Volgende vraag begint zo…':'Wachten op host…';
   // Show game screen with revealed answers before switching phase
@@ -638,7 +638,7 @@ function _mqShowReveal(payload){
 function _mqShowFinal(scores){
   const lb=document.getElementById('mq-final-lb');
   const medals=['🥇','🥈','🥉'];
-  if(lb)lb.innerHTML=(Array.isArray(scores)?scores:[]).map((p,i)=>`<div class="mq-final-row${i<3?' mq-final-top':''}"><span class="mq-final-pos">${medals[i]||i+1}</span><span class="mq-final-av">${p.avatar}</span><span class="mq-final-nm">${p.name}</span><span class="mq-final-score">${p.score} pt</span></div>`).join('');
+  if(lb)lb.innerHTML=(Array.isArray(scores)?scores:[]).map((p,i)=>`<div class="mq-final-row${i<3?' mq-final-top':''}"><span class="mq-final-pos">${medals[i]||i+1}</span><span class="mq-final-av">${escapeHtml(p.avatar)}</span><span class="mq-final-nm">${escapeHtml(p.name)}</span><span class="mq-final-score">${p.score} pt</span></div>`).join('');
   _mqPhase('final');
 }
 
