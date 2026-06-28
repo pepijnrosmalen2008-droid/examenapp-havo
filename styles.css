@@ -224,8 +224,8 @@ h1,h2,h3,h4{font-family:var(--font-head);line-height:1.2;letter-spacing:-.3px}
    ══════════════════════════════════════════════ */
 
 /* ── MINIMAL TOP NAV ─────────────────────────── */
-.hnav{position:sticky;top:0;z-index:200;background:rgba(245,246,250,.97);backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px);border-bottom:1px solid var(--bo);transition:background .3s}
-.dark .hnav{background:rgba(15,17,24,.97)}
+.hnav{position:sticky;top:0;z-index:200;background:var(--bg);backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px);border-bottom:1px solid var(--bo);transition:background .3s}
+.dark .hnav{background:var(--bg)}
 .hnav-inner{max-width:820px;margin:0 auto;padding:0 20px;height:58px;display:flex;align-items:center;justify-content:space-between;gap:12px}
 .hnav-logo{display:flex;align-items:center;gap:9px;cursor:pointer;user-select:none}
 .hnav-wordmark{font-family:var(--font-head);font-size:17px;font-weight:800;color:var(--dk);letter-spacing:-.3px}
