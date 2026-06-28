@@ -8,66 +8,62 @@ Slagio (slagio.nl) is a free Dutch HAVO/VWO exam preparation PWA. It is a **stat
 
 - **Live URL**: https://slagio.nl (`/havo` and `/vwo` are SPA routes)
 - **Deployment**: `git push origin main` → auto-deploys via GitHub Pages
-- **Always push directly to `main`** — no feature branches, no PRs
+- **Default workflow**: push directly to `main` — no build, no feature branches, no PRs. (Automated/agent sessions may be pinned to a feature branch; follow whatever branch the task specifies.)
+
+## Architecture (IMPORTANT — read this)
+
+The app is **no longer a single inline file**. `index.html` is now a thin shell (~2400 lines) that contains only the HTML screens plus SEO metadata (`<script type="application/ld+json">` blocks and a `<noscript>` SEO body). **All CSS lives in `styles.css`** and **all JS lives in separate module files**, loaded in order at the bottom of `index.html` (~line 1961+):
+
+```
+examens.js → (supabase CDN) → data.js → state.js → cloud.js → profile.js →
+vak.js → quiz.js → tools.js → sim.js → lb.js → features.js → schedule.js →
+v4.js → init.js
+```
+
+Load order matters: `data.js`/`state.js` define globals the later modules use. `init.js` runs the startup sequence last. These files share one global scope (no modules/bundler), so a function defined in one file is callable from any later file.
 
 ## Files that matter
 
 | File | Purpose |
 |---|---|
-| `index.html` | Entire app (~18 000 lines). All CSS, HTML, and JS inline. |
-| `admin.html` | Admin analytics dashboard |
-| `sw.js` | Service worker. Bump `CACHE = 'slagio-vXX'` on every deploy |
+| `index.html` | HTML screens + SEO (JSON-LD + `<noscript>`). No app logic, no inline CSS/JS. |
+| `styles.css` | **All** styles (~5200 lines). Mobile overrides live in the `@media(max-width:640px)` block — including `display:none` rules that hide long descriptive text on mobile (`.sh p`, `.di p`, `#home-bento`, …). |
+| `data.js` | `LESMETHODES{}`, `SAM_RICH{}`, `VAKKEN[]` (HAVO), `VAKKEN_VWO[]` — subjects, domains, questions, summaries |
+| `state.js` | Global `ST` quiz state, `show()` + hash routing, `APP_LEVEL`/`getVK()`/`lvlCol()`, subject grid, security helpers |
+| `cloud.js` | Supabase init, `trackEvent()`, `_DID` (persistent device id), `cloudSet()`/`cloudGet()` |
+| `profile.js` | Profiel & cijfers (SE grades) |
+| `vak.js` | `openVak()` subject detail, uitleg-video's, quiz-draft crash recovery |
+| `quiz.js` | Quiz mode picker + quiz logic, keyboard shortcuts, particles/bonuses, achievements, **sound (`GELUID`)**, exit interstitial |
+| `tools.js` | Rapport, Studieplan v2, toegankelijkheid, leerpad |
+| `sim.js` | Simulatietoets, examen-modus, Race mode |
+| `lb.js` | Leaderboard, countdown (`getCountdownTarget`), progress tracking, knowledge decay, favorites |
+| `features.js` | XP/levels, toasts, daily challenge, streaks & badges, milestone/PB/comeback cards, "de vlag uit" |
+| `schedule.js` | `EXAM_SCHEDULE[]`, `renderSchedule()`, grade calculators, flashcards + SM-2 |
+| `v4.js` | Misc v4 additions |
+| `init.js` | Intro modal, tutorial, level select, **INIT (startup)**, bottom nav, multiplayer quiz, flickering grid, push notifications, PWA install banner |
+| `examens.js` / `ce_data.js` | Exam PDF / CE question data |
+| `admin.html` | Standalone admin analytics dashboard (own Supabase client) |
+| `sw.js` | Service worker. `CACHE` const on line 1 + `ASSETS[]` list of cached files. |
 | `manifest.json` | PWA manifest |
-| `vakken/*.html` | SEO landing pages per subject (do not contain app logic) |
-| `ce_data.js` / `examens.js` | Exam question data (referenced externally) |
+| `vakken/*.html` | SEO landing pages per subject (no app logic) |
+
+JS sections within each file are delimited by `// ═══════ SECTION NAME ═══════` banners — grep for these to navigate.
 
 ## Deployment rule
 
-After every change to `index.html`, `admin.html`, or any cached asset: **bump the SW cache version** in `sw.js` line 1:
+After every change to `index.html`, `styles.css`, `admin.html`, any `*.js` module, or any other cached asset: **bump the SW cache version** in `sw.js` line 1:
 ```js
 const CACHE = 'slagio-vXX'; // increment XX by 1
 ```
-Then commit all changed files together and push to `main`.
-
-## index.html architecture
-
-The file is one long document. JS sections are delimited by `// ═══════ SECTION NAME ═══════` comments. Key sections by approximate line number:
-
-| Line | Section |
-|---|---|
-| 1–5953 | HTML screens + all CSS (inline `<style>`) |
-| 5954 | **DATA**: `VAKKEN[]`, `VAKKEN_VWO[]`, `SAM_RICH{}`, `LESMETHODES{}` |
-| 8238 | **STATE**: global `ST` object (current quiz session) |
-| 8243 | UI helpers, hash routing (`show()`, `_pushHash()`, `_routeFromHash()`) |
-| 9576 | Niveau beheer: `APP_LEVEL`, `getVK()` |
-| 9807 | Supabase init, `trackEvent()`, `_DID` (persistent device ID), feedback popup |
-| 10268 | Profiel, cijfers, cloud sync (`cloudSet/cloudGet`), auth |
-| 12068 | Quiz mode picker (`openQmode`, `startQ`) |
-| 12211 | Quiz logic (`toonV`, answer handling, timer) |
-| 12978 | Results (`toonRes`) |
-| 13476 | Studieplan |
-| 14209 | Simulatietoets |
-| 14625 | Bot Race |
-| 15203 | Leaderboard (`loadLeaderboardFromSupabase`, `saveLeaderboardEntry`) |
-| 15615 | Countdown + `EXAM_SCHEDULE[]` |
-| 15676 | Progress tracking (`saveProgress`, `getProgress`) |
-| 15850 | XP/levels |
-| 16431 | Daily challenge |
-| 16501 | Streak & badges |
-| 16870 | Exam schedule (`renderSchedule`, `getCountdownTarget`) |
-| 16966 | Grade calculators (SE/CE cijfercalculator) |
-| 17247 | Flashcards + SM-2 spaced repetition (`_fcSummary`) |
-| 17470 | Pomodoro |
-| 18057 | INIT (app startup sequence) |
-| 18093 | Bottom nav |
+If you add a **new** file that should be cached, also add it to the `ASSETS[]` array on line 2 of `sw.js`. Then commit all changed files together and deploy.
 
 ## Key patterns
 
-**Navigation**: `show('sc-X')` switches the visible screen. Screens are `<div id="sc-X" class="sc">`.
+**Navigation**: `show('sc-X')` (in `state.js`) switches the visible screen. Screens are `<div id="sc-X" class="sc">`; the active one gets `.on`. `.sc{display:none}` / `.sc.on{display:block}` lives in `styles.css`.
 
-**Quiz state**: The global `ST` object holds everything for the current session:
+**Quiz state**: The global `ST` object (`state.js`) holds everything for the current session:
 ```js
-ST = { vak, domein, mode, vragen[], idx, score, antwrd[], timer, tijd:20, ... }
+ST = { vak, domein, mode, vragen[], idx, score, antwrd[], timer, tijd:20, combo, xpThisRound, isDailyChallenge, ... }
 ```
 `ST.antwrd` entries: `{pts: 0|0.5|1, tijdOver: number}`.
 
@@ -78,7 +74,7 @@ pts*50 + Math.round((tijdOver||0)/20*50)  // tijdOver = seconds remaining when a
 
 **Niveau**: `APP_LEVEL` is `'havo'` or `'vwo'`. `getVK()` returns the correct `VAKKEN` array. All localStorage keys are suffixed via `lvlCol('key')` → `'key_havo'` or `'key_vwo'`.
 
-**VAKKEN structure**:
+**VAKKEN structure** (`data.js`):
 ```js
 { id:'nl', naam:'Nederlands', exDatum:'2026-05-08', exTijd:'13:30–16:30',
   domeinen: [{ id:'A', naam:'Leesvaardigheid',
@@ -88,16 +84,16 @@ pts*50 + Math.round((tijdOver||0)/20*50)  // tijdOver = seconds remaining when a
 }
 ```
 
-**Tracking**: `trackEvent(type, meta)` auto-includes `vak_naam` (from `ST.vak`), `niveau`, `naam`, `device`, `did`. Pass only extra data in `meta`.
+**Tracking**: `trackEvent(type, meta)` (`cloud.js`) auto-includes `vak_naam` (from `ST.vak`), `niveau`, `naam`, `device`, `did`. Pass only extra data in `meta`.
 
-**Cloud sync**: `cloudSet(col, data)` / `cloudGet(col, def)` — column names correspond to Supabase `profiel` table columns. Progress uses `lvlCol('progress')` → `progress_havo` / `progress_vwo`.
+**Cloud sync**: `cloudSet(col, data)` / `cloudGet(col, def)` (`cloud.js`) — column names correspond to Supabase `profiel` table columns. Progress uses `lvlCol('progress')` → `progress_havo` / `progress_vwo`.
 
-**EXAM_SCHEDULE**: Each entry has `{datum, tijd, vak, duur, niveau:'havo'|'vwo', vakId?}`. Both `getCountdownTarget()` and `renderSchedule()` filter on `niveau === APP_LEVEL`.
+**EXAM_SCHEDULE** (`schedule.js`): Each entry has `{datum, tijd, vak, duur, niveau:'havo'|'vwo', vakId?}`. Both `getCountdownTarget()` (`lb.js`) and `renderSchedule()` (`schedule.js`) filter on `niveau === APP_LEVEL`.
 
 ## Supabase
 
-- URL: `https://sxrjdssmgwwygtskovyc.supabase.co`
-- Key: anon key in both `index.html` (line ~9809) and `admin.html`
+- URL: `https://wcfenegohryxhatzxvtw.supabase.co`
+- Key: anon key in `cloud.js` (line ~2) and again in `admin.html`
 - **Tables**:
   - `leaderboard`: `user_id, naam, score, vak_naam, domein_naam, niveau, correct, total, avg_tijd, created_at`
   - `events`: `user_id, naam, event_type, vak_naam, niveau, meta (jsonb), created_at`
@@ -109,9 +105,11 @@ pts*50 + Math.round((tijdOver||0)/20*50)  // tijdOver = seconds remaining when a
 
 ## admin.html architecture
 
+`admin.html` is a self-contained dashboard (its own inline CSS/JS and Supabase client).
+
 ```js
-loadAll()           // fetches lb, ev, ao (app_open), fb (feedback) in parallel
-render(lb, ev, evMissing, ao, fb)  // single render function, rebuilds entire #content
+loadAll()  // fetches lb, ev, ao (app_open), fb (feedback), ql, ce in parallel
+render(lb, ev, evMissing, ao=[], fb=[], ql=[], ce=[])  // single render, rebuilds entire #content
 ```
 
 **Filter state** (persists across re-renders):
@@ -119,12 +117,12 @@ render(lb, ev, evMissing, ao, fb)  // single render function, rebuilds entire #c
 - `window._fbVak`, `window._fbDomein`: feedback section vak/domein filters
 - Raw data stored as `window._lb`, `window._ev`, `window._ao`, `window._fb`
 
-Filter buttons must call `render(window._lb, window._ev, window._evMissing, window._ao||[], window._fb||[])`.
+Filter buttons must call `render()` with the stored raw data.
 
 **Leaderboard filter** (in `loadAll`): `.filter(e => (e.score||0) <= 1000 && (e.total||0) > 5)` — excludes corrupted scores and old 5-question quizzes.
 
 ## Adding content
 
-To add questions to a subject, find the vak in `VAKKEN` (HAVO, line ~6623) or `VAKKEN_VWO` (line ~8412) and add to the appropriate domein's `sv` (snelle quiz) or `oe` (oud-examen) array.
+To add questions to a subject, find the vak in `VAKKEN` (HAVO, `data.js` line ~682) or `VAKKEN_VWO` (`data.js` line ~2370) and add to the appropriate domein's `sv` (snelle quiz) or `oe` (oud-examen) array.
 
 To add a new event type to the admin dashboard: add it to the `FEAT` array inside `render()` in `admin.html`.
