@@ -1790,10 +1790,12 @@ html.dark .qb{background:#2e3550}
 .wlc-card-list li::before{position:absolute;left:0;font-weight:800;font-size:12px}
 .wlc-chavo .wlc-card-list li::before{content:'✓';color:#E85C0D}
 .wlc-cvwo .wlc-card-list li::before{content:'✓';color:#a78bfa}
-.wlc-card-btn{display:inline-flex;align-items:center;gap:8px;font-family:var(--font-head);font-size:15px;font-weight:800;letter-spacing:.2px;transition:gap .25s}
-.wlc-chavo .wlc-card-btn{color:#E85C0D}
-.wlc-cvwo .wlc-card-btn{color:#a78bfa}
-.wlc-card:hover .wlc-card-btn{gap:14px}
+.wlc-card-btn{display:flex;align-items:center;justify-content:center;gap:8px;font-family:var(--font-head);font-size:15px;font-weight:800;letter-spacing:.2px;color:#fff;border-radius:13px;padding:13px 18px;margin-top:4px;transition:gap .25s,box-shadow .25s,filter .25s}
+.wlc-chavo .wlc-card-btn{background:#C2410C;box-shadow:0 8px 20px -8px rgba(232,92,13,.65)}
+.wlc-cvwo .wlc-card-btn{background:#7c3aed;box-shadow:0 8px 20px -8px rgba(139,92,246,.65)}
+.wlc-card.wlc-chavo:hover .wlc-card-btn{filter:brightness(1.08);box-shadow:0 11px 28px -8px rgba(232,92,13,.85)}
+.wlc-card.wlc-cvwo:hover .wlc-card-btn{filter:brightness(1.08);box-shadow:0 11px 28px -8px rgba(139,92,246,.85)}
+.wlc-card:hover .wlc-card-btn-inner{gap:14px}
 /* lc-active state */
 .lc-active.wlc-chavo,.lc-active.lc-havo{border-color:rgba(232,92,13,.7)!important;box-shadow:0 0 0 2px rgba(232,92,13,.3),0 16px 48px rgba(232,92,13,.22)!important}
 .lc-active.wlc-cvwo,.lc-active.lc-vwo{border-color:rgba(139,92,246,.7)!important;box-shadow:0 0 0 2px rgba(139,92,246,.3),0 16px 48px rgba(139,92,246,.22)!important}
@@ -1813,14 +1815,12 @@ html.dark .qb{background:#2e3550}
 .wlc-social-proof strong{color:rgba(255,255,255,.7);font-weight:700}
 @media(max-width:640px){.how-it-works{display:none}}
 @media(max-width:620px){
-  .wlc-hero{padding:52px 16px 40px}
   .wlc-h1{font-size:56px;letter-spacing:-3px;line-height:.92}
   .wlc-sub{font-size:14px;margin-bottom:20px}
   .wlc-feats{gap:6px}
   .wlc-feat{font-size:11.5px;padding:4px 11px}
   .wlc-stats{margin-top:24px}
   .wlc-stat-n{font-size:26px}
-  .wlc-picker{padding:0 14px 48px}
   .wlc-cards{grid-template-columns:1fr;gap:12px}
   .wlc-card{padding:22px 18px 20px;border-radius:20px}
   .wlc-card-lvl{font-size:38px}
@@ -3505,13 +3505,13 @@ html.dark .hsd-pill{background:var(--bg2);border-color:var(--bo2)}
 /* ── WELKOMST SCHERM MOBIEL ──────────────────────── */
 @media(max-width:640px){
   /* Hero compacter */
-  .wlc-hero{padding:48px 18px 28px}
+  .wlc-hero{padding:48px 18px 32px}
   .wlc-feats{display:none}
   .wlc-stats{display:none}
   .wlc-social-proof{margin-top:14px;font-size:12px}
 
   /* Level picker */
-  .wlc-picker{padding:0 14px 40px}
+  .wlc-picker{padding:0 14px 44px}
   .wlc-pick-lbl{font-size:10px;margin-bottom:14px}
 
   /* Cards: verticaal gestapeld, groot en makkelijk te tikken */
@@ -3523,10 +3523,10 @@ html.dark .hsd-pill{background:var(--bg2);border-color:var(--bo2)}
   .wlc-card-btn{font-size:15px;margin-top:4px}
 
   /* VMBO-bar compact */
-  .wlc-vmbo-bar{padding:12px;font-size:11px;margin-bottom:24px;border-radius:12px}
+  .wlc-vmbo-bar{padding:12px;font-size:11px;margin-bottom:32px;border-radius:12px}
 
   /* Footer compact */
-  .wlc-foot{padding-top:18px}
+  .wlc-foot{padding-top:24px}
   .wlc-foot-dates{flex-direction:column;gap:4px;align-items:center}
   .wlc-foot-dates span{font-size:11px}
 }
