@@ -3287,15 +3287,6 @@ html.dark .hsd-pill{background:var(--bg2);border-color:var(--bo2)}
 /* ── NEXT DOMAIN BTN (results) ──────── */
 .res-next-dom{display:none;width:100%;padding:13px;border-radius:14px;background:linear-gradient(135deg,var(--or),#f59e0b);color:#fff;border:none;font-size:15px;font-weight:700;cursor:pointer;font-family:var(--font);margin-bottom:8px;transition:opacity .15s;letter-spacing:.1px}
 .res-next-dom:hover{opacity:.88}
-/* ── FEATURE 4: COMEBACK CARD ───────────────────────────── */
-.comeback-card{background:rgba(34,197,94,.06);border:1px solid rgba(34,197,94,.22);border-radius:14px;padding:10px 14px 10px 12px;margin-bottom:10px;position:relative;display:flex;align-items:center;gap:10px}
-.comeback-close{position:absolute;top:8px;right:10px;background:none;border:none;color:var(--mu);font-size:14px;cursor:pointer;padding:2px 5px;border-radius:6px;line-height:1}
-.comeback-close:hover{background:var(--bg2)}
-.comeback-icon{font-size:22px;line-height:1;flex-shrink:0}
-.comeback-title{font-family:var(--font-head);font-size:13px;font-weight:800;color:var(--dk);margin-bottom:1px}
-.comeback-sub{font-size:11.5px;color:var(--mu);line-height:1.45;max-width:320px;margin:0}
-.comeback-xp{display:none}
-.comeback-action{display:none}
 .qtb-flag{background:none;border:none;cursor:pointer;font-size:17px;opacity:.45;transition:opacity .15s,transform .15s;padding:2px 4px;border-radius:6px;line-height:1}
 .qtb-flag:hover{opacity:.8}
 .qtb-flag.flagged{opacity:1;transform:scale(1.2)}

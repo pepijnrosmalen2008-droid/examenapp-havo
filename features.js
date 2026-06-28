@@ -1061,44 +1061,13 @@ function getSmartNextAction(vakId,domeinId,score){
   return {type:'simtoets',label:'Simulatietoets',sub:'Alle domeinen ≥65% - test jezelf met een volledig examen!',icon:'🎯'};
 }
 
-// ═══════ FEATURE 4: COMEBACK CARD ═══════
+// ═══════ FEATURE 4: COMEBACK CARD (verwijderd) ═══════
+// De "Welkom terug!" comeback-popup is bewust weggehaald. Deze stub zorgt dat
+// de bestaande aanroepen (init.js, quiz.js, state.js) veilig blijven werken en
+// dat de container leeg blijft.
 function renderComebackCard(){
   const el=document.getElementById('comeback-card-home');
-  if(!el)return;
-  const dismissed=sessionStorage.getItem('slagio_comeback_dismissed');
-  if(dismissed){el.innerHTML='';return;}
-  const sd=getStreak();
-  if(!sd)return;
-  const today=new Date().toISOString().slice(0,10);
-  const days=(sd.days||[]).slice().sort();
-  if(days.length<2)return;
-  const lastDay=days[days.length-1];
-  const prevDay=days[days.length-2];
-  if(lastDay!==today)return;
-  const msGap=new Date(today)-new Date(prevDay);
-  const dayGap=Math.round(msGap/86400000);
-  if(dayGap<2)return;
-  checkComebackAch(dayGap);
-  const cbClose=document.createElement('button');
-  cbClose.className='comeback-close';
-  cbClose.textContent='✕';
-  cbClose.addEventListener('click',()=>{sessionStorage.setItem('slagio_comeback_dismissed','1');el.querySelector('.comeback-card')?.remove();});
-  const cbAct=document.createElement('button');
-  cbAct.className='comeback-action';
-  cbAct.textContent='📅 Bekijk je studieplan →';
-  cbAct.addEventListener('click',()=>{show('sc-schedule');renderStudieplan();});
-  const card=document.createElement('div');
-  card.className='comeback-card';
-  card.innerHTML=`<div class="comeback-icon">💪</div><div class="comeback-title">Welkom terug!</div><div class="comeback-sub">Je was ${dayGap} dag${dayGap>1?'en':''} weg - maar je bent er weer! Bouw je streak opnieuw op. Elke dag telt.</div><div class="comeback-xp">🎁 +50 XP comeback bonus</div>`;
-  card.prepend(cbClose);
-  card.appendChild(cbAct);
-  el.innerHTML='';
-  el.appendChild(card);
-  if(!sessionStorage.getItem('slagio_comeback_xp')){
-    try{addXP(50);}catch(e){}
-    sessionStorage.setItem('slagio_comeback_xp','1');
-    try{showXPToast(50);}catch(e){}
-  }
+  if(el)el.innerHTML='';
 }
 
 const FEAT_DISC_KEY='slagio_feat_disc_v1';
