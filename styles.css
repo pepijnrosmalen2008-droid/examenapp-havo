@@ -1741,7 +1741,7 @@ html.dark .qb{background:#2e3550}
 /* ── WELCOME SCREEN REDESIGN ───────────────────── */
 #sc-welcome{background:#07080f;position:relative;overflow-x:hidden;min-height:100vh}
 /* top bar */
-.wlc-bar{position:sticky;top:0;z-index:200;background:rgba(7,8,15,.88);backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px);border-bottom:1px solid rgba(255,255,255,.07)}
+.wlc-bar{position:sticky;top:0;z-index:200;background:rgba(7,8,15,.98);backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px);border-bottom:1px solid rgba(255,255,255,.07)}
 .wlc-bar-inner{max-width:880px;margin:0 auto;padding:0 20px;height:56px;display:flex;align-items:center;justify-content:space-between}
 .wlc-brand{display:flex;align-items:center;gap:10px}
 .wlc-brand-name{font-family:var(--font-head);font-size:18px;font-weight:800;color:#fff;letter-spacing:-.4px}
