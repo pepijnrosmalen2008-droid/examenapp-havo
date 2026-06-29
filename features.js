@@ -1,4 +1,12 @@
 // ═══════ XP & LEVELS ═══════
+// Strakke inline SVG-iconen (Lucide-stijl, 2px stroke, currentColor) ter
+// vervanging van emoji op het dashboard — professioneler & platform-consistent.
+const _svg=(d,extra='')=>`<svg class="ico" viewBox="0 0 24 24" width="1em" height="1em" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" ${extra}>${d}</svg>`;
+const ICO_TARGET=_svg('<circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><circle cx="12" cy="12" r="1.4" fill="currentColor" stroke="none"/>');
+const ICO_CLOCK=_svg('<circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.5 2"/>');
+const ICO_CHECK=_svg('<circle cx="12" cy="12" r="9"/><path d="M8.5 12.5l2.5 2.5 4.5-5"/>');
+const ICO_FLAME=_svg('<path d="M12 3c0 3-3.5 4.5-3.5 8a3.5 3.5 0 0 0 7 0c0-1.6-.8-2.6-1.4-3.4 2.3.6 3.4 2.6 3.4 4.6a5.5 5.5 0 1 1-11 0C5.5 8.5 9.5 6.5 12 3z"/>');
+const ICO_SPARK=_svg('<path d="M13 3l2.1 5.6L21 11l-5.9 2.4L13 19l-2.1-5.6L5 11l5.9-2.4z"/>');
 const XP_KEY='slagio_xp';
 const XP_LEVELS=[0,100,500,2000,7500,30000,75000,200000];
 const LEVEL_NAMES=['','Baby','Jong','Tiener','Volwassen','Prime','Goud','Ultiem'];
@@ -316,11 +324,11 @@ function renderDailyGoal(){
   const d=getDailyGoal();
   const done=Math.min(d.done||0,DG_TARGET);
   if(d.rewarded||done>=DG_TARGET){
-    box.innerHTML='<div class="dg-done">🎯 Dagdoel bereikt! <span>'+DG_TARGET+' / '+DG_TARGET+' quizzen</span></div>';
+    box.innerHTML='<div class="dg-done">'+ICO_CHECK+' Dagdoel bereikt! <span>'+DG_TARGET+' / '+DG_TARGET+' quizzen</span></div>';
     return;
   }
   const dots=Array.from({length:DG_TARGET},function(_,i){return '<div class="dg-dot'+(i<done?' dg-dot-done':'')+'"></div>';}).join('');
-  box.innerHTML='<div class="dg-card"><div class="dg-top"><span class="dg-ico">🎯</span><span class="dg-lbl">Dagdoel <span class="dg-cnt">'+done+'/'+DG_TARGET+'</span></span><span class="dg-bonus">+75 XP</span></div><div class="dg-dots">'+dots+'</div><div class="dg-bar-wrap"><div class="dg-bar" style="width:'+Math.round(done/DG_TARGET*100)+'%"></div></div></div>';
+  box.innerHTML='<div class="dg-card"><div class="dg-top"><span class="dg-ico">'+ICO_TARGET+'</span><span class="dg-lbl">Dagdoel <span class="dg-cnt">'+done+'/'+DG_TARGET+'</span></span><span class="dg-bonus">+75 XP</span></div><div class="dg-dots">'+dots+'</div><div class="dg-bar-wrap"><div class="dg-bar" style="width:'+Math.round(done/DG_TARGET*100)+'%"></div></div></div>';
 }
 function getXPData(){
   try{
@@ -509,7 +517,7 @@ function renderHomeStats(){
   function _buildDgCell(){
     if(_dgRewarded){
       return`<div class="bento-cell bento-dg bento-dg-done" style="grid-column:1/-1;padding:12px 16px;display:flex;align-items:center;gap:10px">
-        <span style="font-size:20px;position:relative;z-index:1">✅</span>
+        <span style="font-size:20px;position:relative;z-index:1;color:#22c55e">${ICO_CHECK}</span>
         <div style="flex:1;position:relative;z-index:1">
           <div style="font-size:13px;font-weight:700;color:#22c55e">Dagdoel bereikt!</div>
           <div style="font-size:11px;color:var(--mu);margin-top:1px">${DG_TARGET} / ${DG_TARGET} quizzen voltooid · +75 XP verdiend</div>
@@ -528,10 +536,10 @@ function renderHomeStats(){
     const _pct=Math.round(_dgDone/DG_TARGET*100);
     return`<div class="bento-cell bento-dg" style="grid-column:1/-1;padding:12px 16px">
       <div style="display:flex;align-items:center;gap:8px;position:relative;z-index:1">
-        <span style="font-size:16px">🎯</span>
+        <span style="font-size:16px;color:var(--or)">${ICO_TARGET}</span>
         <span style="font-size:13px;font-weight:700;color:var(--dk)">Dagdoel</span>
         <span style="font-size:12px;color:var(--mu)">${_dgDone} / ${DG_TARGET} quizzen</span>
-        <span id="bento-dg-timer" style="margin-left:auto;font-size:11px;font-weight:600;color:var(--mu);background:var(--bo);padding:3px 9px;border-radius:20px;font-variant-numeric:tabular-nums">⏱ ${_timer}</span>
+        <span style="margin-left:auto;display:inline-flex;align-items:center;gap:5px;font-size:11px;font-weight:600;color:var(--mu);background:var(--bo);padding:3px 9px;border-radius:20px">${ICO_CLOCK}<span id="bento-dg-timer" style="font-variant-numeric:tabular-nums">${_timer}</span></span>
       </div>
       <div class="bento-dg-bar"><div class="bento-dg-bar-fill" style="width:${_pct}%"></div></div>
     </div>`;
@@ -543,7 +551,7 @@ function renderHomeStats(){
   if(!xp&&!streak&&avg===null){
     box.innerHTML=`<div class="bento">
       <div class="bento-cell bento-empty" onclick="document.getElementById('vakgrid')?.scrollIntoView({behavior:'smooth'})">
-        <span class="bento-empty-icon">🚀</span>
+        <span class="bento-empty-icon">${ICO_SPARK}</span>
         <span class="bento-empty-text">Maak je eerste quiz om je streak, XP en gemiddelde te zien</span>
         <span class="bento-empty-cta">Begin →</span>
       </div>
@@ -596,7 +604,7 @@ function renderHomeStats(){
       const b=bMap[nextMile2]||{e:'🏅',n:nextMile2+' dagen'};
       const fp=Math.round(Math.min(99,streak/nextMile2*100));
       smCell=`<div class="bento-cell streak-milestone-banner" style="grid-column:1/-1;border-radius:14px;padding:12px 16px;margin:0">
-        <div class="smb-row"><div class="smb-icon">🔥</div><div class="smb-text">Nog <strong>${dLeft} dag${dLeft>1?'en':''}</strong> tot je ${b.e} <strong>${b.n}</strong> badge! Oefen vandaag voor dag ${streak+1}.</div></div>
+        <div class="smb-row"><div class="smb-icon">${ICO_FLAME}</div><div class="smb-text">Nog <strong>${dLeft} dag${dLeft>1?'en':''}</strong> tot je ${b.e} <strong>${b.n}</strong> badge! Oefen vandaag voor dag ${streak+1}.</div></div>
         <div class="smb-bar-wrap"><div class="smb-bar-fill" style="width:${fp}%"></div></div>
         <div class="smb-bar-lbl">${streak} / ${nextMile2} dagen</div>
       </div>`;
@@ -612,7 +620,7 @@ function renderHomeStats(){
       const now=new Date();const mn=new Date(now);mn.setHours(23,59,59,999);
       const ms=mn-now;
       const h=Math.floor(ms/3600000),m=Math.floor((ms%3600000)/60000),s=Math.floor((ms%60000)/1000);
-      el.textContent=`⏱ ${String(h).padStart(2,'0')}:${String(m).padStart(2,'0')}:${String(s).padStart(2,'0')}`;
+      el.textContent=`${String(h).padStart(2,'0')}:${String(m).padStart(2,'0')}:${String(s).padStart(2,'0')}`;
     },1000);
   } else {
     if(window._dgTimer)clearInterval(window._dgTimer);
@@ -656,7 +664,7 @@ function renderXPHome(){
     }
   }
   const footLeft=isMaxStage?`🏆 Maximaal stadium bereikt!`:`${(xp-curThresh).toLocaleString('nl')} / ${(nxtThresh-curThresh).toLocaleString('nl')} XP`;
-  const footRight=isMaxStage?`${xp.toLocaleString('nl')} XP totaal`:(stagePct>=80?`🔥 Nog ${toNext} XP!`:`→ ${nextStageName}`);
+  const footRight=isMaxStage?`${xp.toLocaleString('nl')} XP totaal`:(stagePct>=80?`${ICO_FLAME} Nog ${toNext} XP!`:`→ ${nextStageName}`);
   box.innerHTML=`<div class="xp-home-bar">
     <div class="xp-hb-inner">
       <div class="xp-home-lvl" style="--evo-pct:${stagePct}">${currentDisplay}</div>

@@ -5410,20 +5410,44 @@ html.dark #sc-home .sg .card:hover{
 html.dark #sc-home .xp-home-lvl::after{background:conic-gradient(from -90deg,
   var(--or) calc(var(--evo-pct,0)*1%),rgba(255,255,255,.08) 0)}
 
-/* ── Bento-actietegels: accent-icoontegel i.p.v. vlakke grijze glyph ───── */
+/* ── Bento-actietegels: restraint — neutrale tegel als rust, accent pas bij
+   hover. Vier identieke felle accenttegels = ruis; neutralen laten domineren
+   (10%-regel). De interactie levert de kleur, niet de ruststand. ────────── */
 #sc-home .bento-act{gap:7px;padding:13px 6px}
 #sc-home .bento-act svg{
   width:18px;height:18px;padding:9px;box-sizing:content-box;border-radius:13px;
-  background:linear-gradient(150deg,rgba(var(--or-rgb),.16),rgba(var(--or-rgb),.05));
-  border:1px solid rgba(var(--or-rgb),.14);stroke:var(--or);
-  transition:transform .2s var(--pd-ease),background .2s,box-shadow .2s
+  background:color-mix(in srgb,var(--dk) 6%,transparent);
+  border:1px solid color-mix(in srgb,var(--dk) 9%,transparent);stroke:var(--mu);
+  transition:transform .2s var(--pd-ease),background .2s,box-shadow .2s,stroke .2s,border-color .2s
+}
+html.dark #sc-home .bento-act svg{
+  background:rgba(255,255,255,.05);border-color:rgba(255,255,255,.08)
 }
 #sc-home .bento-act:hover svg{
-  transform:scale(1.08) translateY(-1px);stroke:#fff;
-  background:linear-gradient(150deg,var(--or),color-mix(in srgb,var(--or) 72%,#f59e0b));
-  box-shadow:0 6px 16px -4px rgba(var(--or-rgb),.6)
+  transform:translateY(-1px);stroke:var(--or);
+  background:rgba(var(--or-rgb),.12);border-color:rgba(var(--or-rgb),.25);
+  box-shadow:0 4px 14px -6px rgba(var(--or-rgb),.5)
 }
 #sc-home .bento-act .bento-al{color:var(--dk);font-weight:600}
+
+/* ── Inline SVG-iconen (emoji-vervangers): nette uitlijning met tekst ───── */
+#sc-home .dg-ico{display:inline-flex;align-items:center;color:var(--or);font-size:18px}
+#sc-home .dg-done{align-items:center}
+#sc-home .dg-done .ico{width:17px;height:17px;flex-shrink:0}
+#sc-home .bento-empty-icon{display:inline-flex;align-items:center;justify-content:center;
+  width:34px;height:34px;border-radius:11px;color:var(--or);font-size:18px;
+  background:rgba(var(--or-rgb),.1);border:1px solid rgba(var(--or-rgb),.18)}
+#sc-home .smb-icon{display:inline-flex;align-items:center;color:var(--or);font-size:20px}
+#sc-home .xp-evo-foot-to .ico{width:12px;height:12px;vertical-align:-1px}
+#sc-home .bento-dg .ico{vertical-align:-2px}
+
+/* ── Vakken-chips als verzorgde slider: zachte rand-fade i.p.v. harde knip ─ */
+#sc-home .hm-quick-scroll{
+  -webkit-mask:linear-gradient(90deg,transparent,#000 22px,#000 calc(100% - 28px),transparent);
+          mask:linear-gradient(90deg,transparent,#000 22px,#000 calc(100% - 28px),transparent);
+  scroll-behavior:smooth;scroll-snap-type:x proximity;padding-left:2px;padding-right:2px
+}
+#sc-home .hm-quick-scroll > *{scroll-snap-align:start}
 
 /* ── Tabulaire cijfers: stabiele, "pro" getallen ───────────────────────── */
 #sc-home .cd-val,#sc-home .xp-home-pct,#sc-home .bento-sv,
