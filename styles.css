@@ -5498,3 +5498,52 @@ html.dark #sc-home .sg .card .cp-bar{background:rgba(255,255,255,.09)}
   #sc-home .xp-home-bar:hover,#sc-home .hm-cta-primary:hover,
   #sc-home .bento-act:hover svg{transform:none!important}
 }
+
+/* ═══════════════════════════════════════════════════════════════════════
+   VAK-DETAIL — premium cohesie, overflow-fix & mobiele inkorting
+   ═══════════════════════════════════════════════════════════════════════ */
+/* Flexbox-overflow-fix: de tekstkolom moet kunnen krimpen, anders duwt een
+   lange domeintitel de inhoud buiten het kader ("half buiten het vakje"). */
+#sc-detail .di{min-width:0}
+#sc-detail .dh{min-width:0}
+#sc-detail .di h4{overflow-wrap:anywhere;word-break:break-word}
+#sc-detail .dom-ce-badge{max-width:100%;white-space:normal}
+
+/* Kaart-diepte in dark — consistent met het dashboard (premium donker) */
+html.dark #sc-detail .dc2,
+html.dark #sc-detail .sh{
+  background:linear-gradient(180deg,rgba(255,255,255,.045),rgba(255,255,255,.014));
+  border-color:rgba(255,255,255,.08);
+  box-shadow:0 1px 0 rgba(255,255,255,.05) inset,0 16px 38px -18px rgba(0,0,0,.7)
+}
+html.dark #sc-detail .dc2:hover{
+  border-color:rgba(var(--or-rgb),.42);
+  box-shadow:0 20px 46px -16px rgba(0,0,0,.8),0 0 0 1px rgba(var(--or-rgb),.16),
+             0 0 30px -8px rgba(var(--or-rgb),.3)
+}
+
+/* Mobiel: lange CE-tekst inklapbaar (alleen wanneer hij echt overloopt;
+   .ce-clamped wordt door openVak() gezet na een overflow-check). */
+@media(max-width:640px){
+  #sc-detail .ce.ce-clamped{position:relative;max-height:4.8em;overflow:hidden;
+    cursor:pointer;transition:max-height .35s cubic-bezier(.16,1,.3,1)}
+  #sc-detail .ce.ce-clamped::after{content:'⌄ meer';position:absolute;right:0;bottom:0;
+    padding:1px 12px 2px 28px;font-size:11px;font-weight:700;color:var(--or);
+    background:linear-gradient(90deg,transparent,var(--ce-bg) 42%)}
+  #sc-detail .ce.ce-clamped.ce-open{max-height:60em}
+  #sc-detail .ce.ce-clamped.ce-open::after{content:'⌃ minder';background:var(--ce-bg);padding-left:12px}
+}
+
+/* ── Domein-kaart knoppen: SVG-iconen (emoji-vervangers) uitlijnen ─────── */
+#sc-detail .qb,#sc-detail .exb,#sc-detail .sam-cta-btn,#sc-detail .sam-print-btn,
+#sc-detail .dtab-btn,#sc-detail .pb-chip,#sc-detail .dom-ce-badge{
+  display:inline-flex;align-items:center;gap:6px}
+#sc-detail .qb .ico,#sc-detail .exb .ico,#sc-detail .dtab-btn .ico,
+#sc-detail .sam-cta-btn .ico,#sc-detail .sam-print-btn .ico{width:14px;height:14px;flex-shrink:0}
+#sc-detail .pb-chip .ico,#sc-detail .dom-ce-badge .ico{width:12px;height:12px;flex-shrink:0}
+/* Favoriet-ster: rustige outline → gevuld goud wanneer actief */
+#sc-detail .fav-btn{filter:none;color:var(--mu);display:inline-flex;align-items:center;justify-content:center}
+#sc-detail .fav-btn .ico{width:18px;height:18px}
+#sc-detail .fav-btn:hover{color:#f5b301}
+#sc-detail .fav-btn.active{color:#f5b301}
+#sc-detail .fav-btn.active .ico{fill:currentColor}

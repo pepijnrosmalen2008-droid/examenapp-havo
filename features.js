@@ -7,6 +7,13 @@ const ICO_CLOCK=_svg('<circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.5 2"/>')
 const ICO_CHECK=_svg('<circle cx="12" cy="12" r="9"/><path d="M8.5 12.5l2.5 2.5 4.5-5"/>');
 const ICO_FLAME=_svg('<path d="M12 3c0 3-3.5 4.5-3.5 8a3.5 3.5 0 0 0 7 0c0-1.6-.8-2.6-1.4-3.4 2.3.6 3.4 2.6 3.4 4.6a5.5 5.5 0 1 1-11 0C5.5 8.5 9.5 6.5 12 3z"/>');
 const ICO_SPARK=_svg('<path d="M13 3l2.1 5.6L21 11l-5.9 2.4L13 19l-2.1-5.6L5 11l5.9-2.4z"/>');
+const ICO_STAR=_svg('<path d="M12 3.5l2.6 5.3 5.9.9-4.2 4.1 1 5.8L12 17l-5.3 2.8 1-5.8L3.5 9.7l5.9-.9z"/>');
+const ICO_PLAY=_svg('<polygon points="6 4 20 12 6 20 6 4" fill="currentColor" stroke="none"/>');
+const ICO_CHEVRON=_svg('<polyline points="6 9 12 15 18 9"/>');
+const ICO_DOC=_svg('<path d="M14 3v5h5"/><path d="M14 3H6v18h12V8z"/><path d="M9 13h6M9 17h6"/>');
+const ICO_BOOK=_svg('<path d="M4 5a2 2 0 0 1 2-2h13v16H6a2 2 0 0 0-2 2z"/><path d="M19 17H6a2 2 0 0 0-2 2"/>');
+const ICO_ZAP=_svg('<polygon points="13 2 4 14 11 14 11 22 20 10 13 10 13 2" fill="currentColor" stroke="none"/>');
+const ICO_VIDEO=_svg('<rect x="3" y="6" width="13" height="12" rx="2"/><path d="m16 10 5-3v10l-5-3z"/>');
 const XP_KEY='slagio_xp';
 const XP_LEVELS=[0,100,500,2000,7500,30000,75000,200000];
 const LEVEL_NAMES=['','Baby','Jong','Tiener','Volwassen','Prime','Goud','Ultiem'];

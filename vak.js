@@ -11,6 +11,21 @@ function openVak(id,_noHash){
   if(_art)_art.innerHTML=`<svg viewBox="0 0 24 24">${_icoSvg}</svg>`;
   document.getElementById('ddesc').textContent=ST.vak.beschrijving;
   document.getElementById('dce').innerHTML=ST.vak.ceInfo;
+  // Mobiel: lange CE-tekst inklapbaar maken zodat de bovenkant niet overvol is.
+  const _ceBox=document.querySelector('#sc-detail .ce');
+  if(_ceBox){
+    _ceBox.classList.remove('ce-open','ce-clamped');_ceBox.onclick=null;
+    if(window.innerWidth<=640){
+      _ceBox.classList.add('ce-clamped');
+      requestAnimationFrame(()=>{
+        if(_ceBox.scrollHeight<=_ceBox.clientHeight+2){
+          _ceBox.classList.remove('ce-clamped'); // past al, geen inklap nodig
+        } else {
+          _ceBox.onclick=()=>_ceBox.classList.toggle('ce-open');
+        }
+      });
+    }
+  }
   const _bcVak=document.getElementById('det-bc-vak');
   if(_bcVak)_bcVak.textContent=ST.vak.naam;
   // Remove previously injected exam-meta + yt-card + grade-panel + ce-archief-card (avoid stacking on revisit)
@@ -140,9 +155,9 @@ function openVak(id,_noHash){
     const decayDot=decay?`<span class="decay-dot" style="background:${decay.color};color:${decay.color}" title="${decay.label}"></span>`:'';
     const bestChip=r.hasData?`<span style="font-size:11px;color:var(--mu);font-weight:600;margin-left:4px">Record: ${Math.round(r.pct*100)}%</span>`:'';
     const _pbData=getPB(ST.vak.id,d.id);
-    const pbChip=_pbData?`<span class="pb-chip">⭐ PB: ${Math.round(_pbData.score*100)}%</span>`:'';
+    const pbChip=_pbData?`<span class="pb-chip">${ICO_STAR} PB: ${Math.round(_pbData.score*100)}%</span>`:'';
     const progHtml=r.hasData?`<div class="dom-progress"><div class="dp-bar"><div class="dp-fill" style="width:${Math.round(r.pct*100)}%"></div></div><span class="dp-txt">${Math.round(r.pct*100)}%${bestChip}${pbChip}</span></div>`:'';
-    const _ceMap={'CE':{cls:'CE',icon:'📝',txt:'Centraal Examen'},'SE':{cls:'SE',icon:'📋',txt:'Schoolexamen'},'CE+SE':{cls:'CESE',icon:'📝📋',txt:'CE + Schoolexamen'},'DEELS CE':{cls:'DEELS',icon:'📝',txt:'Deels CE'},'CE-KERN':{cls:'CE',icon:'⭐',txt:'Kern van het CE'}};
+    const _ceMap={'CE':{cls:'CE',icon:ICO_DOC,txt:'Centraal Examen'},'SE':{cls:'SE',icon:ICO_DOC,txt:'Schoolexamen'},'CE+SE':{cls:'CESE',icon:ICO_DOC,txt:'CE + Schoolexamen'},'DEELS CE':{cls:'DEELS',icon:ICO_DOC,txt:'Deels CE'},'CE-KERN':{cls:'CE',icon:ICO_STAR,txt:'Kern van het CE'}};
     const _csInfo=d.ceStatus&&_ceMap[d.ceStatus];
     const csBadge=_csInfo?`<div class="dom-ce-badge dom-ce-${_csInfo.cls}">${_csInfo.icon} ${_csInfo.txt}</div>`:'';
     const el=document.createElement('div');
@@ -153,16 +168,16 @@ function openVak(id,_noHash){
         <div class="dlet" style="background:${ST.vak.kleur}22;color:${ST.vak.kleur}">${d.id}</div>
         <div class="di"><h4>Domein ${d.id}: ${d.naam}${decayDot}</h4>${csBadge}<p>${d.beschrijving}</p>${progHtml}</div>
         <div class="dbtns">
-          <button class="fav-btn${isFav(ST.vak.id,d.id)?' active':''}" id="fav-${d.id}" onclick="event.stopPropagation();const on=toggleFav('${ST.vak.id}','${d.id}');this.classList.toggle('active',on)">⭐</button>
-          <button class="exb" id="exb-${d.id}" onclick="event.stopPropagation();toggleD('top-${d.id}')">▼ Leerstof</button>
-          <button class="qb" onclick="event.stopPropagation();openQmode('${d.id}')">▶ Quiz</button>
+          <button class="fav-btn${isFav(ST.vak.id,d.id)?' active':''}" id="fav-${d.id}" onclick="event.stopPropagation();const on=toggleFav('${ST.vak.id}','${d.id}');this.classList.toggle('active',on)" aria-label="Favoriet">${ICO_STAR}</button>
+          <button class="exb" id="exb-${d.id}" onclick="event.stopPropagation();toggleD('top-${d.id}')">${ICO_CHEVRON} Leerstof</button>
+          <button class="qb" onclick="event.stopPropagation();openQmode('${d.id}')">${ICO_PLAY} Quiz</button>
         </div>
       </div>
       <div class="dtop" id="top-${d.id}">
         <div class="dtab-bar">
-          <button class="dtab-btn dtab-active" data-tab="theorie">📖 Theorie</button>
-          <button class="dtab-btn" data-tab="quiz">⚡ Test jezelf</button>
-          <button class="dtab-btn dtab-vid-tab" data-tab="vids" style="display:none">📹 Video's</button>
+          <button class="dtab-btn dtab-active" data-tab="theorie">${ICO_BOOK} Theorie</button>
+          <button class="dtab-btn" data-tab="quiz">${ICO_ZAP} Test jezelf</button>
+          <button class="dtab-btn dtab-vid-tab" data-tab="vids" style="display:none">${ICO_VIDEO} Video's</button>
         </div>
         <div class="dtab-pane dtab-vis" data-tab-id="theorie">
           <p class="dom-intro">${d.beschrijving}</p>
@@ -172,7 +187,7 @@ function openVak(id,_noHash){
           <div class="sam">${SAM_RICH[ST.vak.id+'_'+d.id]||d.sam}</div>
           ${d.val&&d.val.length?`<div class="sam-val"><ul>${d.val.map(v=>`<li>${v}</li>`).join('')}</ul></div>`:''}
           ${d.binas&&d.binas.length?`<div class="sam-binas">${d.binas.map(b=>`<span class="sam-binas-tag">${b}</span>`).join('')}</div>`:''}
-          <div class="sam-cta"><button class="sam-cta-btn" onclick="event.stopPropagation();openQmode('${d.id}')">▶ Oefenen op dit domein</button><button class="sam-print-btn" onclick="event.stopPropagation();printSam()">📄 Samenvatting printen</button></div>
+          <div class="sam-cta"><button class="sam-cta-btn" onclick="event.stopPropagation();openQmode('${d.id}')">${ICO_PLAY} Oefenen op dit domein</button><button class="sam-print-btn" onclick="event.stopPropagation();printSam()">${ICO_DOC} Samenvatting printen</button></div>
         </div>
         <div class="dtab-pane" data-tab-id="quiz"></div>
         <div class="dtab-pane" data-tab-id="vids"></div>
