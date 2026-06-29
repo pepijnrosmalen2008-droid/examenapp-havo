@@ -882,13 +882,24 @@ function disableNotifications(){
 }
 
 if('serviceWorker' in navigator){
+  // Toon de "nieuwe versie"-banner zodra een nieuwe SW de controle overneemt.
+  // Alleen bij een echte update (er was al een controller), niet bij de
+  // allereerste installatie.
+  const _hadController=!!navigator.serviceWorker.controller;
+  navigator.serviceWorker.addEventListener('controllerchange',()=>{
+    if(_hadController){const b=document.getElementById('sw-update-banner');if(b)b.classList.add('show');}
+  });
   window.addEventListener('load',()=>{
     navigator.serviceWorker.register('/sw.js',{updateViaCache:'none'}).then(reg=>{
       reg.update();
-      // SW gebruikt skipWaiting() - update gaat stil. Geen banner nodig.
-      // Init notificaties
       navigator.serviceWorker.ready.then(()=>initNotifications());
     }).catch(()=>{});
+  });
+  // Controleer op updates zodra de app weer op de voorgrond komt. Zo blijft een
+  // geïnstalleerde PWA niet op een oude service worker (en oude cache) hangen,
+  // ook als hij alleen uit de app-switcher wordt hervat.
+  document.addEventListener('visibilitychange',()=>{
+    if(!document.hidden)navigator.serviceWorker.getRegistration().then(r=>{if(r)r.update();}).catch(()=>{});
   });
 }
 
