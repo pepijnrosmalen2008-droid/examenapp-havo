@@ -659,7 +659,7 @@ function renderXPHome(){
   const footRight=isMaxStage?`${xp.toLocaleString('nl')} XP totaal`:(stagePct>=80?`🔥 Nog ${toNext} XP!`:`→ ${nextStageName}`);
   box.innerHTML=`<div class="xp-home-bar">
     <div class="xp-hb-inner">
-      <div class="xp-home-lvl">${currentDisplay}</div>
+      <div class="xp-home-lvl" style="--evo-pct:${stagePct}">${currentDisplay}</div>
       <div class="xp-home-info">
         <div class="xp-home-head">
           <div class="xp-home-title">${animalName} <span class="xp-evo-chip">${stageName}</span></div>

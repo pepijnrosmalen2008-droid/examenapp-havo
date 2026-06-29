@@ -5395,12 +5395,69 @@ html.dark #sc-home .sg .card:hover{
 /* ── Vakken-koptekst: premium ──────────────────────────────────────────── */
 #sc-home .hm-vakken-h2{font-family:var(--font-head);font-weight:800;letter-spacing:-.5px}
 
+/* ── Avatar-evolutie: echte voortgangsring (conic) rond de orb ──────────
+   --evo-pct wordt door renderXPHome() gezet (% naar volgend stadium). */
+#sc-home .xp-home-lvl{position:relative;overflow:visible}
+#sc-home .xp-home-lvl::after{
+  content:'';position:absolute;inset:-7px;border-radius:50%;pointer-events:none;
+  background:conic-gradient(from -90deg,
+    var(--or) calc(var(--evo-pct,0)*1%),
+    rgba(var(--or-rgb),.14) 0);
+  -webkit-mask:radial-gradient(farthest-side,transparent calc(100% - 3.5px),#000 calc(100% - 3.5px));
+          mask:radial-gradient(farthest-side,transparent calc(100% - 3.5px),#000 calc(100% - 3.5px));
+  filter:drop-shadow(0 0 6px rgba(var(--or-rgb),.5))
+}
+html.dark #sc-home .xp-home-lvl::after{background:conic-gradient(from -90deg,
+  var(--or) calc(var(--evo-pct,0)*1%),rgba(255,255,255,.08) 0)}
+
+/* ── Bento-actietegels: accent-icoontegel i.p.v. vlakke grijze glyph ───── */
+#sc-home .bento-act{gap:7px;padding:13px 6px}
+#sc-home .bento-act svg{
+  width:18px;height:18px;padding:9px;box-sizing:content-box;border-radius:13px;
+  background:linear-gradient(150deg,rgba(var(--or-rgb),.16),rgba(var(--or-rgb),.05));
+  border:1px solid rgba(var(--or-rgb),.14);stroke:var(--or);
+  transition:transform .2s var(--pd-ease),background .2s,box-shadow .2s
+}
+#sc-home .bento-act:hover svg{
+  transform:scale(1.08) translateY(-1px);stroke:#fff;
+  background:linear-gradient(150deg,var(--or),color-mix(in srgb,var(--or) 72%,#f59e0b));
+  box-shadow:0 6px 16px -4px rgba(var(--or-rgb),.6)
+}
+#sc-home .bento-act .bento-al{color:var(--dk);font-weight:600}
+
+/* ── Tabulaire cijfers: stabiele, "pro" getallen ───────────────────────── */
+#sc-home .cd-val,#sc-home .xp-home-pct,#sc-home .bento-sv,
+#sc-home .cp-pct,#sc-home .hm-stat-num,#sc-home .dg-cnt{
+  font-variant-numeric:tabular-nums;font-feature-settings:"tnum" 1
+}
+
+/* ── Levendiger voortgangsbalken in dark ───────────────────────────────── */
+html.dark #sc-home .bento-dg-bar{background:rgba(255,255,255,.07)}
+#sc-home .bento-dg-bar-fill{
+  background:linear-gradient(90deg,var(--or),var(--pd-gold));
+  box-shadow:0 0 12px rgba(var(--or-rgb),.5)
+}
+html.dark #sc-home .sg .card .cp-bar{background:rgba(255,255,255,.09)}
+
+/* ── "Eerste quiz"-prompt: uitnodigender met accent-glow ───────────────── */
+#sc-home .bento-empty{
+  border:1.5px dashed rgba(var(--or-rgb),.4)!important;
+  background:linear-gradient(180deg,rgba(var(--or-rgb),.07),rgba(var(--or-rgb),.02))!important;
+  transition:border-color .25s,background .25s,box-shadow .25s
+}
+#sc-home .bento-empty:hover{
+  border-color:rgba(var(--or-rgb),.7)!important;
+  box-shadow:0 0 0 1px rgba(var(--or-rgb),.2),0 8px 28px -10px rgba(var(--or-rgb),.4)
+}
+
 /* ── Reduced motion: geen lift/transforms ──────────────────────────────── */
 @media(prefers-reduced-motion:reduce){
   #sc-home .bento-cell,#sc-home .dg-card,#sc-home .streak-card,
-  #sc-home .xp-home-bar,#sc-home .hm-cta-primary,#sc-home .sg .card{
+  #sc-home .xp-home-bar,#sc-home .hm-cta-primary,#sc-home .sg .card,
+  #sc-home .bento-act svg{
     transition:none!important
   }
   #sc-home .bento-cell:hover,#sc-home .dg-card:hover,#sc-home .streak-card:hover,
-  #sc-home .xp-home-bar:hover,#sc-home .hm-cta-primary:hover{transform:none!important}
+  #sc-home .xp-home-bar:hover,#sc-home .hm-cta-primary:hover,
+  #sc-home .bento-act:hover svg{transform:none!important}
 }
