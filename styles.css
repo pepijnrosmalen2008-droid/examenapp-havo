@@ -5246,6 +5246,16 @@ html.dark .vd-hero-art{opacity:.17}
   #feat-disc-home,#live-count-home,.hm-tvk{display:none!important}
 }
 
+/* ── Vak-detail: SVG-iconen (emoji-vervangers) nette kleur & uitlijning ─── */
+.lp-ec-icon,.lp-ec-icon-wrap{color:var(--or)}
+.lp-ec-icon{display:inline-flex;align-items:center;justify-content:center}
+.sim-entry-icon{color:#6366f1}
+.exam-entry-icon{color:var(--or);display:inline-flex;align-items:center;justify-content:center}
+.dt-icon{color:var(--or);display:inline-flex;align-items:center;justify-content:center}
+.det-bc-home{display:inline-flex;align-items:center;gap:4px}
+.det-bc-home .ico{vertical-align:-2px}
+.po-title .ico,.bron-card-title .ico{margin-right:0!important;color:var(--or)}
+
 /* ═══════════════════════════════════════════════════════════════════════
    PREMIUM DASHBOARD REDESIGN — flagship (scoped to #sc-home)
    Richting: "premium donker + gamified glow". Eén samenhangende sfeer onder
@@ -5349,9 +5359,7 @@ html.dark #sc-home .xp-home-bar{
   border:1px solid rgba(var(--or-rgb),.3);color:var(--or);font-weight:700
 }
 #sc-home .xp-home-pct{
-  font-family:var(--font-head);font-weight:800;font-size:18px;
-  background:linear-gradient(135deg,var(--or),var(--pd-gold));
-  -webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent
+  font-family:var(--font-head);font-weight:800;font-size:18px;color:var(--or)
 }
 /* XP-balk: dikker, gouden glans */
 #sc-home .xp-bar-wrap{height:12px;border-radius:99px;background:rgba(var(--or-rgb),.12)}
@@ -5432,6 +5440,11 @@ html.dark #sc-home .bento-act svg{
 
 /* ── Inline SVG-iconen (emoji-vervangers): nette uitlijning met tekst ───── */
 #sc-home .dg-ico{display:inline-flex;align-items:center;color:var(--or);font-size:18px}
+#sc-home .dg-timer{display:inline-flex;align-items:center;gap:5px;font-size:11px;font-weight:600;
+  color:var(--mu);background:color-mix(in srgb,var(--dk) 6%,transparent);padding:3px 9px;
+  border-radius:20px;font-variant-numeric:tabular-nums;flex-shrink:0;margin-right:8px}
+html.dark #sc-home .dg-timer{background:rgba(255,255,255,.06)}
+#sc-home .dg-timer .ico{width:13px;height:13px}
 #sc-home .dg-done{align-items:center}
 #sc-home .dg-done .ico{width:17px;height:17px;flex-shrink:0}
 #sc-home .bento-empty-icon{display:inline-flex;align-items:center;justify-content:center;

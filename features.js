@@ -318,9 +318,15 @@ function recordDailyGoal(){
   }
   renderDailyGoal();
 }
+function _dgCountdownStr(){
+  const now=new Date(),mn=new Date(now);mn.setHours(23,59,59,999);
+  const ms=mn-now,h=Math.floor(ms/3600000),m=Math.floor((ms%3600000)/60000),s=Math.floor((ms%60000)/1000);
+  return String(h).padStart(2,'0')+':'+String(m).padStart(2,'0')+':'+String(s).padStart(2,'0');
+}
 function renderDailyGoal(){
   const box=document.getElementById('daily-goal-home');
   if(!box)return;
+  if(window._dgTimer){clearInterval(window._dgTimer);window._dgTimer=null;}
   const d=getDailyGoal();
   const done=Math.min(d.done||0,DG_TARGET);
   if(d.rewarded||done>=DG_TARGET){
@@ -328,7 +334,13 @@ function renderDailyGoal(){
     return;
   }
   const dots=Array.from({length:DG_TARGET},function(_,i){return '<div class="dg-dot'+(i<done?' dg-dot-done':'')+'"></div>';}).join('');
-  box.innerHTML='<div class="dg-card"><div class="dg-top"><span class="dg-ico">'+ICO_TARGET+'</span><span class="dg-lbl">Dagdoel <span class="dg-cnt">'+done+'/'+DG_TARGET+'</span></span><span class="dg-bonus">+75 XP</span></div><div class="dg-dots">'+dots+'</div><div class="dg-bar-wrap"><div class="dg-bar" style="width:'+Math.round(done/DG_TARGET*100)+'%"></div></div></div>';
+  box.innerHTML='<div class="dg-card"><div class="dg-top"><span class="dg-ico">'+ICO_TARGET+'</span><span class="dg-lbl">Dagdoel <span class="dg-cnt">'+done+'/'+DG_TARGET+'</span></span><span class="dg-timer">'+ICO_CLOCK+'<span id="dg-card-timer">'+_dgCountdownStr()+'</span></span><span class="dg-bonus">+75 XP</span></div><div class="dg-dots">'+dots+'</div><div class="dg-bar-wrap"><div class="dg-bar" style="width:'+Math.round(done/DG_TARGET*100)+'%"></div></div></div>';
+  // Live aftellen tot middernacht — urgentie-element op de dagdoel-kaart.
+  window._dgTimer=setInterval(function(){
+    const el=document.getElementById('dg-card-timer');
+    if(!el){clearInterval(window._dgTimer);window._dgTimer=null;return;}
+    el.textContent=_dgCountdownStr();
+  },1000);
 }
 function getXPData(){
   try{
@@ -510,42 +522,10 @@ function renderHomeStats(){
       <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
       <span class="bento-al">Slaagregels</span>
     </button>`;
-  // ── Dagdoel (berekend vroeg, nodig voor beide paden) ──
-  const _dg=getDailyGoal();
-  const _dgDone=Math.min(_dg.done||0,DG_TARGET);
-  const _dgRewarded=_dg.rewarded||_dgDone>=DG_TARGET;
-  function _buildDgCell(){
-    if(_dgRewarded){
-      return`<div class="bento-cell bento-dg bento-dg-done" style="grid-column:1/-1;padding:12px 16px;display:flex;align-items:center;gap:10px">
-        <span style="font-size:20px;position:relative;z-index:1;color:#22c55e">${ICO_CHECK}</span>
-        <div style="flex:1;position:relative;z-index:1">
-          <div style="font-size:13px;font-weight:700;color:#22c55e">Dagdoel bereikt!</div>
-          <div style="font-size:11px;color:var(--mu);margin-top:1px">${DG_TARGET} / ${DG_TARGET} quizzen voltooid · +75 XP verdiend</div>
-        </div>
-        <span style="font-size:11px;font-weight:700;color:#22c55e;background:rgba(34,197,94,.1);padding:3px 10px;border-radius:20px;position:relative;z-index:1">+75 XP</span>
-      </div>`;
-    }
-    // Countdown tot middernacht
-    const _now=new Date();
-    const _mn=new Date(_now);_mn.setHours(23,59,59,999);
-    const _ms=_mn-_now;
-    const _h=Math.floor(_ms/3600000);
-    const _m=Math.floor((_ms%3600000)/60000);
-    const _s=Math.floor((_ms%60000)/1000);
-    const _timer=`${String(_h).padStart(2,'0')}:${String(_m).padStart(2,'0')}:${String(_s).padStart(2,'0')}`;
-    const _pct=Math.round(_dgDone/DG_TARGET*100);
-    return`<div class="bento-cell bento-dg" style="grid-column:1/-1;padding:12px 16px">
-      <div style="display:flex;align-items:center;gap:8px;position:relative;z-index:1">
-        <span style="font-size:16px;color:var(--or)">${ICO_TARGET}</span>
-        <span style="font-size:13px;font-weight:700;color:var(--dk)">Dagdoel</span>
-        <span style="font-size:12px;color:var(--mu)">${_dgDone} / ${DG_TARGET} quizzen</span>
-        <span style="margin-left:auto;display:inline-flex;align-items:center;gap:5px;font-size:11px;font-weight:600;color:var(--mu);background:var(--bo);padding:3px 9px;border-radius:20px">${ICO_CLOCK}<span id="bento-dg-timer" style="font-variant-numeric:tabular-nums">${_timer}</span></span>
-      </div>
-      <div class="bento-dg-bar"><div class="bento-dg-bar-fill" style="width:${_pct}%"></div></div>
-    </div>`;
-  }
+  // Dagdoel zit niet meer in de bento — één widget via renderDailyGoal().
   // ── Clear standalone containers (altijd) ──────────
-  const _dgBox=document.getElementById('daily-goal-home');if(_dgBox)_dgBox.innerHTML='';
+  // daily-goal-home wordt door renderDailyGoal() beheerd (één dagdoel-widget,
+  // niet meer dubbel in de bento). Hier niet wissen.
   const _smBox=document.getElementById('streak-milestone-banner-home');if(_smBox)_smBox.innerHTML='';
   // ── No data → empty state + actions + dagdoel ─────
   if(!xp&&!streak&&avg===null){
@@ -555,7 +535,7 @@ function renderHomeStats(){
         <span class="bento-empty-text">Maak je eerste quiz om je streak, XP en gemiddelde te zien</span>
         <span class="bento-empty-cta">Begin →</span>
       </div>
-      ${actCells}${_buildDgCell()}
+      ${actCells}
     </div>`;
     return;
   }
@@ -610,21 +590,7 @@ function renderHomeStats(){
       </div>`;
     }
   }
-  box.innerHTML=`<div class="bento">${streakCell}${lvlCell}${badgeCell}${avgCell}${groepCell}${actCells}${_buildDgCell()}${smCell}</div>`;
-  // Live countdown ticker (alleen als dagdoel nog niet voltooid)
-  if(!_dgRewarded){
-    if(window._dgTimer)clearInterval(window._dgTimer);
-    window._dgTimer=setInterval(()=>{
-      const el=document.getElementById('bento-dg-timer');
-      if(!el){clearInterval(window._dgTimer);return;}
-      const now=new Date();const mn=new Date(now);mn.setHours(23,59,59,999);
-      const ms=mn-now;
-      const h=Math.floor(ms/3600000),m=Math.floor((ms%3600000)/60000),s=Math.floor((ms%60000)/1000);
-      el.textContent=`${String(h).padStart(2,'0')}:${String(m).padStart(2,'0')}:${String(s).padStart(2,'0')}`;
-    },1000);
-  } else {
-    if(window._dgTimer)clearInterval(window._dgTimer);
-  }
+  box.innerHTML=`<div class="bento">${streakCell}${lvlCell}${badgeCell}${avgCell}${groepCell}${actCells}${smCell}</div>`;
 }
 
 function renderXPHome(){
