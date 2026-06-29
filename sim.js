@@ -113,7 +113,7 @@ function simTimerTick(){
   const left=Math.max(0,Math.round((SIM.endTime-Date.now())/1000));
   const m=Math.floor(left/60),s=left%60;
   const chip=document.getElementById('sim-timer-chip');
-  if(chip)chip.textContent='⏱ '+m+':'+(s<10?'0':'')+s;
+  if(chip)chip.innerHTML=ICO_CLOCK+' <span style="font-variant-numeric:tabular-nums">'+m+':'+(s<10?'0':'')+s+'</span>';
   if(chip){
     if(left<=60)chip.style.color='#ef4444';
     else if(left<=180)chip.style.color='#f97316';

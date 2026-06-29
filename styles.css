@@ -5547,3 +5547,10 @@ html.dark #sc-detail .dc2:hover{
 #sc-detail .fav-btn:hover{color:#f5b301}
 #sc-detail .fav-btn.active{color:#f5b301}
 #sc-detail .fav-btn.active .ico{fill:currentColor}
+
+/* ── Leerpad/sim/quiz: SVG-iconen (emoji-vervangers) uitlijnen ──────────── */
+.lp-card-badge .ico{width:12px;height:12px;flex-shrink:0}
+.lp-next-pill{display:inline-flex;align-items:center;gap:5px}
+.lp-next-pill .ico{width:11px;height:11px;flex-shrink:0}
+#sim-timer-chip .ico{width:14px;height:14px;flex-shrink:0;vertical-align:-2px}
+.qfb .fbt .ico{width:18px;height:18px;flex-shrink:0}

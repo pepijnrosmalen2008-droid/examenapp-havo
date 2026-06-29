@@ -2199,7 +2199,7 @@
   <div class="nav-inner">
     <button class="bk" onclick="simExit()">← Stop</button>
     <span style="font-family:var(--font-head);font-weight:800;font-size:15px;color:var(--dk)" id="sim-nav-title">Simulatietoets</span><span id="sim-mode-nav-badge" style="display:none"></span>
-    <div id="sim-timer-chip" style="margin-left:auto;font-size:13px;font-weight:800;font-family:var(--font-head);color:var(--or);background:rgba(var(--or-rgb),.1);border:1px solid rgba(var(--or-rgb),.25);border-radius:20px;padding:4px 14px;display:none">⏱ --:--</div>
+    <div id="sim-timer-chip" style="margin-left:auto;font-size:13px;font-weight:800;font-family:var(--font-head);color:var(--or);background:rgba(var(--or-rgb),.1);border:1px solid rgba(var(--or-rgb),.25);border-radius:20px;padding:4px 14px;display:none;align-items:center;gap:6px">--:--</div>
   </div>
 </nav>
 <!-- SETUP PHASE -->
@@ -2292,7 +2292,7 @@
 <div class="lp-hero">
   <div class="lp-orb lp-orb-1"></div>
   <div class="lp-orb lp-orb-2"></div>
-  <div class="lp-hero-badge">🗺️ Leerpad</div>
+  <div class="lp-hero-badge"><svg class="ico" viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="vertical-align:-2px;margin-right:4px"><path d="m9 5-6 2v14l6-2 6 2 6-2V5l-6 2-6-2Z"/><path d="M9 5v14M15 7v14"/></svg>Leerpad</div>
   <div class="lp-hero-title" id="lp-hero-title">Vak</div>
   <div class="lp-hero-sub" id="lp-hero-sub">Werk systematisch door alle domeinen heen</div>
   <div class="lp-hero-stats">
@@ -2310,7 +2310,7 @@
 </div>
 <div class="lp-overall" id="lp-overall">
   <div class="lp-overall-head">
-    <span class="lp-overall-label">📊 Totale voortgang</span>
+    <span class="lp-overall-label" style="display:inline-flex;align-items:center;gap:6px"><svg class="ico" viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 3v18h18"/><rect x="7" y="11" width="3" height="6" rx="1"/><rect x="13" y="7" width="3" height="10" rx="1"/></svg>Totale voortgang</span>
     <span class="lp-overall-pct" id="lp-overall-pct">0%</span>
   </div>
   <div class="lp-overall-bar"><div class="lp-overall-fill" id="lp-overall-fill" style="width:0%"></div></div>

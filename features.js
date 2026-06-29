@@ -14,6 +14,8 @@ const ICO_DOC=_svg('<path d="M14 3v5h5"/><path d="M14 3H6v18h12V8z"/><path d="M9
 const ICO_BOOK=_svg('<path d="M4 5a2 2 0 0 1 2-2h13v16H6a2 2 0 0 0-2 2z"/><path d="M19 17H6a2 2 0 0 0-2 2"/>');
 const ICO_ZAP=_svg('<polygon points="13 2 4 14 11 14 11 22 20 10 13 10 13 2" fill="currentColor" stroke="none"/>');
 const ICO_VIDEO=_svg('<rect x="3" y="6" width="13" height="12" rx="2"/><path d="m16 10 5-3v10l-5-3z"/>');
+const ICO_LOCK=_svg('<rect x="5" y="11" width="14" height="9" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/>');
+const ICO_REPEAT=_svg('<path d="M17 2.5 21 6l-4 3.5"/><path d="M3 11V9a4 4 0 0 1 4-4h14"/><path d="M7 21.5 3 18l4-3.5"/><path d="M21 13v2a4 4 0 0 1-4 4H3"/>');
 const XP_KEY='slagio_xp';
 const XP_LEVELS=[0,100,500,2000,7500,30000,75000,200000];
 const LEVEL_NAMES=['','Baby','Jong','Tiener','Volwassen','Prime','Goud','Ultiem'];

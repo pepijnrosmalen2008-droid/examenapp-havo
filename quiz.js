@@ -377,7 +377,7 @@ function tijdOp(){
   const fb=document.getElementById('qfb');
   fb.style.display='block';
   fb.className='qfb fbtm';
-  fb.innerHTML=`<div class="fbt">⏱ Tijd is om!</div><div class="fbtx">${q.u}</div>`;
+  fb.innerHTML=`<div class="fbt" style="display:inline-flex;align-items:center;gap:7px">${ICO_CLOCK} Tijd is om!</div><div class="fbtx">${q.u}</div>`;
   const nxt=document.getElementById('qnxt');
   nxt.style.display='block';
   nxt.textContent=ST.idx<((ST.adaptive?ST.aqTarget:ST.vragen.length)-1)?'Volgende →':'Bekijk resultaat →';

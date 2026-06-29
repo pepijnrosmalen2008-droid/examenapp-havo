@@ -641,7 +641,7 @@ function showLeerpad(){
     if(!isUnlocked){
       // LOCKED domain
       const statusKey='s-locked';
-      const statusEmoji='🔒';
+      const statusEmoji=ICO_LOCK;
       const statusTxt=`Domein ${domeinen[i-1].id} eerst voltooien`;
       const ringStroke='rgba(255,255,255,.1)';
       const ringGlow='';
@@ -665,7 +665,7 @@ function showLeerpad(){
     <div class="lp-ring-outer lp-locked-ring">
       <svg class="lp-ring-svg" width="${SZ}" height="${SZ}" viewBox="0 0 ${SZ} ${SZ}">
         <circle class="lp-ring-bg" cx="44" cy="44" r="${R}" stroke="${ringStroke}"/>
-        <text x="44" y="44" text-anchor="middle" font-size="22" style="dominant-baseline:middle">🔒</text>
+        <g transform="translate(34 33)" fill="none" stroke="rgba(255,255,255,.4)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="8" width="16" height="11" rx="2.5"/><path d="M5 8V5.5a5 5 0 0 1 10 0V8"/></g>
       </svg>
     </div>
   </div>
@@ -679,15 +679,15 @@ function showLeerpad(){
     // Status
     let statusKey,statusTxt,statusEmoji,ringStroke,ringGlow;
     if(isDone&&needsReview){
-      statusKey='s-review';statusTxt='Herhaling aanbevolen';statusEmoji='🔁';ringStroke='#f97316';ringGlow='';
+      statusKey='s-review';statusTxt='Herhaling aanbevolen';statusEmoji=ICO_REPEAT;ringStroke='#f97316';ringGlow='';
     }else if(isDone){
-      statusKey='s-done';statusTxt='Voltooid ✓';statusEmoji='⭐';ringStroke='#4ade80';ringGlow='done';
+      statusKey='s-done';statusTxt='Voltooid';statusEmoji=ICO_CHECK;ringStroke='#4ade80';ringGlow='done';
     }else if(isNext&&!isStarted){
-      statusKey='s-next';statusTxt='Begin hier';statusEmoji='🎯';ringStroke='var(--or)';ringGlow='next';
+      statusKey='s-next';statusTxt='Begin hier';statusEmoji=ICO_TARGET;ringStroke='var(--or)';ringGlow='next';
     }else if(isStarted){
-      statusKey='s-started';statusTxt=pct+'% beste score';statusEmoji='⚡';ringStroke='var(--or)';ringGlow=isNext?'next':'';
+      statusKey='s-started';statusTxt=pct+'% beste score';statusEmoji=ICO_ZAP;ringStroke='var(--or)';ringGlow=isNext?'next':'';
     }else{
-      statusKey='s-locked';statusTxt='Nog niet geoefend';statusEmoji='📖';ringStroke='rgba(255,255,255,.12)';ringGlow='';
+      statusKey='s-locked';statusTxt='Nog niet geoefend';statusEmoji=ICO_BOOK;ringStroke='rgba(255,255,255,.12)';ringGlow='';
     }
     const ringOffset=(C*(1-r.pct)).toFixed(1);
     const pctColor=isDone?'#4ade80':isStarted||isNext?'var(--or)':'rgba(255,255,255,.3)';
@@ -711,7 +711,7 @@ function showLeerpad(){
 <div class="lp-row ${side}">
   <div class="lp-row-side">
     <div class="${cardCls}" onclick="lpToggleCard(this,'${d.id}')">
-      ${isNext&&!isDone?'<div class="lp-next-pill">▶ Volgende</div>':''}
+      ${isNext&&!isDone?`<div class="lp-next-pill">${ICO_PLAY} Volgende</div>`:''}
       <div class="lp-card-head">
         <div class="lp-card-letter" style="background:${vak.kleur}28;color:${vak.kleur}">${d.id}</div>
         <div class="lp-card-name">Domein ${d.id}<br><span style="font-weight:500;font-size:11.5px;color:rgba(255,255,255,.45)">${d.naam}</span></div>
