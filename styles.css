@@ -5245,3 +5245,162 @@ html.dark .vd-hero-art{opacity:.17}
      (staat al op het welkomscherm + in het rooster). */
   #feat-disc-home,#live-count-home,.hm-tvk{display:none!important}
 }
+
+/* ═══════════════════════════════════════════════════════════════════════
+   PREMIUM DASHBOARD REDESIGN — flagship (scoped to #sc-home)
+   Richting: "premium donker + gamified glow". Eén samenhangende sfeer onder
+   de hero, een verzorgd kaart-systeem met diepte, en een opgewaardeerde
+   gamification-hub. Alles gescoped op #sc-home zodat de rest van de app
+   ongemoeid blijft. Spring-easing token + reduced-motion onderaan.
+   ═══════════════════════════════════════════════════════════════════════ */
+#sc-home{
+  --pd-ease:cubic-bezier(.16,1,.3,1);
+  --pd-radius:20px;
+  --pd-gold:#fbbf24;
+  position:relative;
+  background:
+    radial-gradient(820px 440px at 50% -110px, rgba(var(--or-rgb),.06), transparent 62%),
+    linear-gradient(180deg,#f7f8fc 0%,#f1f3f9 46%,#eef0f7 100%);
+}
+html.dark #sc-home{
+  background:
+    radial-gradient(900px 520px at 50% -120px, rgba(var(--or-rgb),.12), transparent 60%),
+    radial-gradient(700px 600px at 88% 8%, rgba(var(--or-rgb),.05), transparent 55%),
+    linear-gradient(180deg,#090b12 0%,#0b0d16 42%,#080a11 100%);
+}
+/* De content-kolom mag de sfeer doorlaten i.p.v. een vlakke balk te zijn */
+#sc-home .w{background:transparent}
+
+/* ── Premium sectie-koppen: eyebrow + titel met accent-streep ───────────
+   Alleen op de content-koppen in .w; de gecentreerde hero-kop blijft zoals hij is. */
+#sc-home .w .home-section-header{padding:30px 0 12px;position:relative;gap:5px}
+#sc-home .w .home-section-header .hsh-title{
+  font-family:var(--font-head);font-weight:800;font-size:19px;letter-spacing:-.4px;
+  color:var(--dk);display:flex;align-items:center;gap:10px;line-height:1.15
+}
+#sc-home .w .home-section-header .hsh-title::before{
+  content:'';width:4px;height:18px;border-radius:3px;flex-shrink:0;
+  background:linear-gradient(180deg,var(--or),var(--pd-gold));
+  box-shadow:0 0 12px rgba(var(--or-rgb),.5)
+}
+#sc-home .w .home-section-header .hsh-sub{
+  font-size:12.5px;color:var(--mu);font-weight:500;padding-left:14px
+}
+
+/* ── Eén samenhangend premium kaart-systeem onder de hero ──────────────── */
+#sc-home .bento-cell,
+#sc-home .dg-card,
+#sc-home .streak-card,
+#sc-home #grade-insight-home > div,
+#sc-home #sp-home-widget-wrap > div{
+  border-radius:var(--pd-radius);
+  transition:transform .26s var(--pd-ease),box-shadow .3s var(--pd-ease),border-color .3s var(--pd-ease);
+}
+html.dark #sc-home .bento-cell,
+html.dark #sc-home .dg-card,
+html.dark #sc-home .streak-card,
+html.dark #sc-home #grade-insight-home > div{
+  background:linear-gradient(180deg,rgba(255,255,255,.045),rgba(255,255,255,.014));
+  border:1px solid rgba(255,255,255,.08);
+  box-shadow:0 1px 0 rgba(255,255,255,.05) inset,0 16px 38px -18px rgba(0,0,0,.75);
+}
+html.dark #sc-home .bento-cell:hover,
+html.dark #sc-home .dg-card:hover,
+html.dark #sc-home .streak-card:hover{
+  border-color:rgba(var(--or-rgb),.45);
+  box-shadow:0 1px 0 rgba(255,255,255,.06) inset,
+             0 20px 46px -16px rgba(0,0,0,.8),
+             0 0 0 1px rgba(var(--or-rgb),.18),
+             0 0 34px -6px rgba(var(--or-rgb),.32);
+  transform:translateY(-3px)
+}
+/* Lichte modus: subtielere diepte, warme hairline */
+html:not(.dark) #sc-home .bento-cell,
+html:not(.dark) #sc-home .dg-card,
+html:not(.dark) #sc-home .streak-card{
+  box-shadow:0 1px 2px rgba(16,24,40,.04),0 10px 30px -16px rgba(var(--or-rgb),.22);
+  border-color:var(--bo)
+}
+
+/* ── GAME HUB: de avatar-evolutie als hero van de gamification ─────────── */
+#sc-home .xp-home-bar{
+  border-radius:24px;
+  padding:22px 22px 18px;
+  transition:transform .3s var(--pd-ease),box-shadow .35s var(--pd-ease)
+}
+html.dark #sc-home .xp-home-bar{
+  background:
+    radial-gradient(420px 200px at 0% 0%, rgba(var(--or-rgb),.16), transparent 60%),
+    linear-gradient(180deg,rgba(255,255,255,.05),rgba(255,255,255,.015));
+  box-shadow:0 1px 0 rgba(255,255,255,.07) inset,0 24px 60px -24px rgba(0,0,0,.85)
+}
+#sc-home .xp-home-bar:hover{transform:translateY(-2px)}
+/* Avatar-orb: meer leven + glow */
+#sc-home .xp-home-lvl{
+  width:64px;height:64px;font-size:33px;
+  background:radial-gradient(circle at 35% 30%,rgba(var(--or-rgb),.22),rgba(var(--or-rgb),.06));
+  border:2px solid rgba(var(--or-rgb),.4);
+  box-shadow:0 0 0 4px rgba(var(--or-rgb),.12),0 8px 26px -4px rgba(var(--or-rgb),.5),
+             0 0 30px -2px rgba(var(--or-rgb),.35)
+}
+#sc-home .xp-home-title{font-family:var(--font-head);font-weight:800;letter-spacing:-.3px}
+#sc-home .xp-evo-chip{
+  background:linear-gradient(135deg,rgba(var(--or-rgb),.2),rgba(var(--or-rgb),.08));
+  border:1px solid rgba(var(--or-rgb),.3);color:var(--or);font-weight:700
+}
+#sc-home .xp-home-pct{
+  font-family:var(--font-head);font-weight:800;font-size:18px;
+  background:linear-gradient(135deg,var(--or),var(--pd-gold));
+  -webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent
+}
+/* XP-balk: dikker, gouden glans */
+#sc-home .xp-bar-wrap{height:12px;border-radius:99px;background:rgba(var(--or-rgb),.12)}
+html.dark #sc-home .xp-bar-wrap{background:rgba(255,255,255,.06)}
+#sc-home .xp-bar{
+  border-radius:99px;
+  background:linear-gradient(90deg,var(--or),#f59e0b,var(--pd-gold));
+  box-shadow:0 0 16px rgba(var(--or-rgb),.55),0 0 0 1px rgba(255,255,255,.08) inset
+}
+
+/* ── Streak: vlam-energie ──────────────────────────────────────────────── */
+#sc-home .streak-day-pip.active{
+  box-shadow:0 0 0 3px rgba(var(--or-rgb),.18),0 4px 14px rgba(var(--or-rgb),.5),
+             0 0 18px -2px rgba(var(--or-rgb),.5)
+}
+#sc-home .streak-day-pip.active.is-today{transform:scale(1.06)}
+
+/* ── Snel-aan-de-slag CTA: meer "juice" ────────────────────────────────── */
+#sc-home .hm-cta-primary{
+  background:linear-gradient(135deg,var(--or),color-mix(in srgb,var(--or) 78%,#f59e0b));
+  box-shadow:0 6px 24px -2px rgba(var(--or-rgb),.55),0 0 0 1px rgba(255,255,255,.12) inset;
+  transition:transform .24s var(--pd-ease),box-shadow .3s var(--pd-ease)
+}
+#sc-home .hm-cta-primary:hover{
+  transform:translateY(-3px) scale(1.02);
+  box-shadow:0 12px 36px -4px rgba(var(--or-rgb),.7),0 0 0 1px rgba(255,255,255,.18) inset
+}
+
+/* ── Vakken-grid: premium diepte in dark, behoud per-vak accentkleur ───── */
+html.dark #sc-home .sg .card{
+  background:linear-gradient(180deg,rgba(255,255,255,.04),rgba(255,255,255,.012));
+  border-color:rgba(255,255,255,.08);
+  box-shadow:0 16px 40px -20px rgba(0,0,0,.8)
+}
+html.dark #sc-home .sg .card:hover{
+  box-shadow:0 22px 50px -18px rgba(0,0,0,.85),
+             0 0 0 1px color-mix(in srgb,var(--card-col,var(--or)) 45%,transparent),
+             0 0 36px -6px color-mix(in srgb,var(--card-col,var(--or)) 50%,transparent)
+}
+
+/* ── Vakken-koptekst: premium ──────────────────────────────────────────── */
+#sc-home .hm-vakken-h2{font-family:var(--font-head);font-weight:800;letter-spacing:-.5px}
+
+/* ── Reduced motion: geen lift/transforms ──────────────────────────────── */
+@media(prefers-reduced-motion:reduce){
+  #sc-home .bento-cell,#sc-home .dg-card,#sc-home .streak-card,
+  #sc-home .xp-home-bar,#sc-home .hm-cta-primary,#sc-home .sg .card{
+    transition:none!important
+  }
+  #sc-home .bento-cell:hover,#sc-home .dg-card:hover,#sc-home .streak-card:hover,
+  #sc-home .xp-home-bar:hover,#sc-home .hm-cta-primary:hover{transform:none!important}
+}
