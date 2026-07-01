@@ -1,9 +1,9 @@
 // ═══════ SIMULATIETOETS ═══════
 let SIM={};
 const SIM_MODES={
-  oefenen:{key:'oefenen',label:'Oefenen', icon:'📖',vpd:1,  tpq:0, deelsPts:0.5, clr:'#22c55e',badgeCls:'sim-mi-oe'},
-  normaal: {key:'normaal', label:'Normaal', icon:'🎯',vpd:999,tpq:5, deelsPts:0.5, clr:'#6366f1',badgeCls:'sim-mi-no'},
-  examen:  {key:'examen',  label:'Examen',  icon:'⚡',vpd:999,tpq:3, deelsPts:0.25,clr:'#ef4444',badgeCls:'sim-mi-ex'},
+  oefenen:{key:'oefenen',label:'Oefenen', icon:'<svg class="ico" viewBox="0 0 24 24" width="1em" height="1em" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 5a2 2 0 0 1 2-2h13v16H6a2 2 0 0 0-2 2z"/><path d="M19 17H6a2 2 0 0 0-2 2"/></svg>',vpd:1,  tpq:0, deelsPts:0.5, clr:'#22c55e',badgeCls:'sim-mi-oe'},
+  normaal: {key:'normaal', label:'Normaal', icon:'<svg class="ico" viewBox="0 0 24 24" width="1em" height="1em" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><circle cx="12" cy="12" r="1.4" fill="currentColor" stroke="none"/></svg>',vpd:999,tpq:5, deelsPts:0.5, clr:'#6366f1',badgeCls:'sim-mi-no'},
+  examen:  {key:'examen',  label:'Examen',  icon:'<svg class="ico" viewBox="0 0 24 24" width="1em" height="1em" fill="currentColor" stroke="none" aria-hidden="true"><polygon points="13 2 4 14 11 14 11 22 20 10 13 10 13 2"/></svg>',vpd:999,tpq:3, deelsPts:0.25,clr:'#ef4444',badgeCls:'sim-mi-ex'},
 };
 let _simMode='normaal';
 
@@ -15,9 +15,9 @@ function simSelectMode(key){
   // Update hint + info-grid
   const m=SIM_MODES[key];
   const hints={
-    oefenen:'📖 <strong>Oefenen</strong> - 1 willekeurige vraag per CE-domein, geen tijdslimiet. Ideaal om rustig te verkennen zonder druk.',
-    normaal: '🎯 <strong>Normaal</strong> - alle vragen, 5 minuten per vraag. Realistische oefensessie met tijdlimiet.',
-    examen:  '⚡ <strong>Examen</strong> - alle vragen, 3 minuten per vraag. <em>Deels goed</em> telt als kwart punt - scherpe beoordelingen vereist.',
+    oefenen:'<strong>Oefenen</strong> - 1 willekeurige vraag per CE-domein, geen tijdslimiet. Ideaal om rustig te verkennen zonder druk.',
+    normaal: '<strong>Normaal</strong> - alle vragen, 5 minuten per vraag. Realistische oefensessie met tijdlimiet.',
+    examen:  '<strong>Examen</strong> - alle vragen, 3 minuten per vraag. <em>Deels goed</em> telt als kwart punt - scherpe beoordelingen vereist.',
   };
   const hintClrs={oefenen:'rgba(34,197,94,.08)',normaal:'rgba(99,102,241,.07)',examen:'rgba(239,68,68,.07)'};
   const hintBrdr={oefenen:'rgba(34,197,94,.25)',normaal:'rgba(99,102,241,.2)',examen:'rgba(239,68,68,.2)'};
@@ -98,7 +98,7 @@ function simStart(){
 
   // Mode badge in nav
   const navBadge=document.getElementById('sim-mode-nav-badge');
-  if(navBadge){navBadge.className='sim-mode-indicator '+m.badgeCls;navBadge.textContent=m.icon+' '+m.label;navBadge.style.display='';}
+  if(navBadge){navBadge.className='sim-mode-indicator '+m.badgeCls;navBadge.innerHTML=m.icon+' '+m.label;navBadge.style.display='';}
 
   SIM.idx=0;SIM.answers=[];SIM.started=true;
   if(m.tpq>0){

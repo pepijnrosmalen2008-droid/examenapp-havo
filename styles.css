@@ -5554,3 +5554,11 @@ html.dark #sc-detail .dc2:hover{
 .lp-next-pill .ico{width:11px;height:11px;flex-shrink:0}
 #sim-timer-chip .ico{width:14px;height:14px;flex-shrink:0;vertical-align:-2px}
 .qfb .fbt .ico{width:18px;height:18px;flex-shrink:0}
+
+/* ── Sim/lesmethode: SVG-iconen (emoji-vervangers) uitlijnen & kleuren ──── */
+.sim-mode-icon{display:flex;align-items:center;justify-content:center;line-height:1}
+.sim-mc-oe .sim-mode-icon{color:#22c55e}
+.sim-mc-no .sim-mode-icon{color:#6366f1}
+.sim-mc-ex .sim-mode-icon{color:#ef4444}
+.sim-mode-indicator .ico{width:13px;height:13px;flex-shrink:0}
+.mf-head-icon{display:inline-flex;align-items:center;color:var(--or)}
