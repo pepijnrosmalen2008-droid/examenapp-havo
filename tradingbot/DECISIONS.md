@@ -140,3 +140,15 @@ alleen strategie-signalen; SL/TP-exits en kill-switch-liquidaties gaan altijd do
 `dashboard.py` schrijft self-contained HTML uit SQLite. Geen webserver-proces in
 de bot, geen poorten, geen dependencies in het kritieke pad: het dashboard kan
 letterlijk niet de trading loop breken. Verversen via cron/systemd-timer.
+
+## D20 — Webportaal: asymmetrische afstandsbediening (wel stoppen, nooit starten)
+
+Het portaal (slagio.nl/bot.html) hergebruikt de bestaande Supabase met
+Auth + Row Level Security; de bot pusht state en pollt een commando-tabel — er
+staat geen poort open op de bot-machine en de Bitvavo-keys komen nooit in het
+portaal-pad. Het enige toegestane commando is `emergency_stop` (afgedwongen met
+een CHECK-constraint in de database, niet alleen in code). Redenering: op afstand
+stoppen is safety-positief, op afstand starten/halt-opheffen is safety-negatief
+en blijft exclusief voor de machine zelf. Bij een gestolen wachtwoord is het
+worst-case scenario dus: meekijken + de bot stoppen. Portal-fouten zijn
+best-effort en kunnen de trading loop per constructie niet breken.

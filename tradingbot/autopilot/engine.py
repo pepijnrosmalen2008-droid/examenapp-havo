@@ -260,6 +260,29 @@ class TradingEngine:
                          reason=f"kill-switch liquidatie: {reason}", strategy="risk")
             self._route_signal(sig, prices, forced=True)
 
+    def emergency_stop(self, reason: str) -> None:
+        """Handmatige noodstop (bv. via het webportaal): alles naar EUR + permanente halt.
+
+        Zelfde eindtoestand als de drawdown-kill-switch; opheffen kan alléén op de
+        machine zelf met status.py --clear-halt.
+        """
+        if self.risk.is_halted():
+            log.info("noodstop: bot was al gestopt")
+            return
+        try:
+            prices = {pair: self.x.ticker_price(pair) for pair in self.cfg.pairs}
+        except Exception:  # noqa: BLE001 — ook zonder prijzen moet de halt doorgaan
+            log.exception("noodstop: prijzen niet beschikbaar; halt zonder liquidatie "
+                          "(posities sluiten bij de eerstvolgende geslaagde cycle niet meer — "
+                          "handmatig ingrijpen vereist)")
+            prices = {}
+        if prices:
+            self._liquidate_all(self.db.open_positions(), prices, reason=reason)
+        self.risk.trigger_halt(reason)
+        self.notify.send(f"⛔ NOODSTOP: {reason}. Alle posities verkocht, bot permanent "
+                         f"gestopt. Opheffen kan alleen op de machine zelf "
+                         f"(status.py --clear-halt).")
+
     # ── circuit breakers ─────────────────────────────────────────────
 
     def _cb_paused(self, now: datetime) -> bool:

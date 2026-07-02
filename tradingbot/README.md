@@ -210,6 +210,41 @@ grid                 €   424.82    -15.04%   15.41%    1171     46   -5.16  �
 buy-and-hold         €   830.50     66.10%   60.61%       2      —    0.60
 ```
 
+## Webportaal op slagio.nl/bot.html
+
+Wil je de bot vanaf je telefoon of een andere computer volgen, dan is er een
+beveiligd portaal: **https://slagio.nl/bot.html** (staat live zodra deze branch
+naar `main` is gemerged; lokaal testen kan door `bot.html` in een browser te openen).
+
+**Wat het is**: een read-only dashboard (status, equity, drawdown, posities,
+orders, risk-blokkades) met één afstandsbediening — een **noodstop** die alle
+posities naar EUR verkoopt en de bot permanent stopt. Bewust NIET op afstand
+mogelijk: starten, de halt opheffen of instellingen wijzigen. De veilige richting
+(stoppen) kan overal vandaan; de gevaarlijke richting (weer aanzetten) alleen op
+de machine zelf. De pagina kent je Bitvavo-keys niet en kan niet handelen.
+
+**Eenmalige setup** (±5 minuten):
+
+1. Draai `deploy/supabase_portal.sql` in de Supabase SQL Editor
+   (maakt `bot_state` + `bot_commands` met Row Level Security).
+2. Supabase → Authentication → Users → **Add user** (vink *Auto confirm* aan).
+   Kies een sterk, uniek wachtwoord — dit is de sleutel tot je botgegevens.
+3. Supabase → Authentication → Sign In / Up → zet **"Allow new users to sign up" uit**.
+4. Vul in `.env` in: `SUPABASE_ANON_KEY` (de publieke key uit `cloud.js`),
+   `BOT_PORTAL_EMAIL` en `BOT_PORTAL_PASSWORD` (het account uit stap 2).
+5. (Her)start de bot. Hij synct nu elke cycle zijn status en checkt op commando's.
+
+**Beveiligingsmodel, eerlijk samengevat**: de anon key is publiek (dat is bij
+Supabase het ontwerp) — de bescherming komt van je wachtwoord plus Row Level
+Security: elke rij is uitsluitend leesbaar/schrijfbaar voor jouw ingelogde
+account. Het ergste dat iemand met je wachtwoord kan doen is meekijken en de
+bot stoppen — nooit starten of handelen. De pagina staat op `noindex` en is
+nergens vanuit de examen-app gelinkt.
+
+**Let op**: de pagina toont wat een drááiende bot rapporteert. De bot zelf moet
+ergens draaien (je eigen PC volstaat voor PAPER: `python bot.py`). Staat de
+laatste update er te lang, dan meldt de pagina "bot lijkt offline".
+
 ## Walk-forward validatie & Monte Carlo
 
 Eén backtest zegt weinig: hij verklaart gisteren. Twee tools geven een eerlijker beeld:

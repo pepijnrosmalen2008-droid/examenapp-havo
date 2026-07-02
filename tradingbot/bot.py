@@ -28,6 +28,7 @@ from autopilot.logsetup import setup_logging
 from autopilot.notify import TelegramNotifier, build_notifier
 from autopilot.risk import RiskEngine
 from autopilot.strategies import get_strategy
+from autopilot.webportal import build_portal, portal_tick
 
 log = logging.getLogger("autopilot.bot")
 
@@ -105,6 +106,7 @@ def main() -> int:
 
     interval = cfg.schedule.interval_minutes * 60
     notifier = engine.notify
+    portal = build_portal()
     if isinstance(notifier, TelegramNotifier):
         notifier.send(f"🤖 Autopilot gestart in {mode.value} mode "
                       f"({cfg.strategy.name}, {', '.join(cfg.pairs)})")
@@ -117,6 +119,7 @@ def main() -> int:
                 notifier.maybe_daily_summary(db, cfg, datetime.now(timezone.utc))
         except Exception:  # noqa: BLE001 — loop mag nooit sterven aan een enkele fout
             log.exception("cycle mislukt; volgende poging over %d min", cfg.schedule.interval_minutes)
+        portal_tick(portal, engine, db, cfg, mode.value)  # best-effort, gooit nooit
         if engine.risk.is_halted() or args.once:
             break
         # slaap in stukjes zodat SIGTERM snel doorkomt
