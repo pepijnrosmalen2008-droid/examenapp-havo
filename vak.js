@@ -201,9 +201,9 @@ function openVak(id,_noHash){
       sessionStorage.removeItem('_slagio_open_domein');
       const _dom=ST.vak?.domeinen?.find(d=>d.id===_dl);
       if(_dom) setTimeout(()=>{
-        openQmode(_dl);
         const _aqm=sessionStorage.getItem('_slagio_start_qmode');
-        if(_aqm){sessionStorage.removeItem('_slagio_start_qmode');setTimeout(()=>startQ(_aqm),350);}
+        if(_aqm){sessionStorage.removeItem('_slagio_start_qmode');openQmode(_dl);setTimeout(()=>startQ(_aqm),350);}
+        else openDomein(_dl);  // standaard: land op de leerstof-pagina van dit domein
       },200);
     }
   }catch(e){}
@@ -632,7 +632,13 @@ function openDomein(domId,_noHash){
   if(!d)return;
   const v=ST.vak;
   ST.domein=d;
-  if(!_noHash)_pushHash(APP_LEVEL+'-'+(_VAK_SLUG[v.id]||v.id)+'-'+domId.toLowerCase());
+  // Echte, indexeerbare URL i.p.v. een hash: dezelfde URL als de statische
+  // SEO-landingspagina van dit domein. Zo is de in-app pagina deelbaar en
+  // valt hij samen met wat Google indexeert; herladen serveert de SEO-pagina.
+  if(!_noHash){
+    const _p='/vakken/'+APP_LEVEL+'-'+(_VAK_SLUG[v.id]||v.id)+'-domein-'+domId.toLowerCase()+'.html';
+    try{history.pushState({dom:domId,vak:v.id,niv:APP_LEVEL},'',_p);}catch(e){}
+  }
 
   const bc=document.getElementById('dom-breadcrumb');
   if(bc)bc.innerHTML=`<span class="det-bc-home" onclick="show('sc-home')"><svg class="ico" viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 10.5 12 3l9 7.5"/><path d="M5 9.5V21h14V9.5"/></svg> Home</span><span class="det-bc-sep">›</span><span class="det-bc-home" onclick="backFromDomein()" style="cursor:pointer">${v.naam}</span><span class="det-bc-sep">›</span><span class="det-bc-cur">Domein ${d.id}</span>`;
