@@ -23,7 +23,9 @@ MIN_ORDER_EUR = 5.0
 
 
 class TradingMode(str, Enum):
-    PAPER = "PAPER"
+    PAPER = "PAPER"    # publieke data, gesimuleerde uitvoering; geen API-key nodig
+    SHADOW = "SHADOW"  # het volledige LIVE-pad (echte key, echt saldo als limiet),
+                       # maar de order zelf wordt gelogd en gesimuleerd — nooit verstuurd
     LIVE = "LIVE"
 
 
@@ -78,7 +80,7 @@ class BacktestCostConfig(BaseModel):
 class AppConfig(BaseModel):
     model_config = ConfigDict(extra="forbid")
 
-    mode: TradingMode = TradingMode.PAPER
+    mode: TradingMode = TradingMode.PAPER  # PAPER | SHADOW | LIVE
     capital_eur: float = Field(gt=0, description="Startkapitaal dat de bot mag beheren")
     pairs: list[str] = Field(min_length=1, description="Whitelist; de bot handelt nooit buiten deze lijst")
     risk: RiskConfig
@@ -143,6 +145,9 @@ def resolve_mode(cfg: AppConfig, project_root: Path = PROJECT_ROOT) -> TradingMo
 
     if cfg.mode == TradingMode.PAPER:
         return TradingMode.PAPER
+    if cfg.mode == TradingMode.SHADOW:
+        # Shadow verstuurt nooit orders en heeft dus geen extra sloten nodig.
+        return TradingMode.SHADOW
 
     # Config vraagt LIVE — controleer de andere twee sloten.
     reasons = []

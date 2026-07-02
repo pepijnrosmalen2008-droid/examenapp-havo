@@ -246,11 +246,15 @@ class TradingEngine:
     # ── hulpfuncties ─────────────────────────────────────────────────
 
     def _cash_eur(self) -> float:
-        """Cash die de bot beheert. In LIVE bovendien gecapt op het echte EUR-saldo."""
+        """Cash die de bot beheert. In LIVE en SHADOW bovendien gecapt op het echte EUR-saldo."""
         cash = self.db.get_meta_float("bot_cash_eur", self.cfg.capital_eur)
         if self.mode == TradingMode.LIVE and hasattr(self.x, "balances"):
             real = self.x.balances().get("EUR", 0.0)
             cash = min(cash, real)
+        elif self.mode == TradingMode.SHADOW and hasattr(self.x, "real_eur"):
+            real = self.x.real_eur()
+            if real is not None:
+                cash = min(cash, real)
         return cash
 
     def _set_cash(self, value: float) -> None:

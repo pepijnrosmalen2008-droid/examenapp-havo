@@ -23,7 +23,7 @@ ROOT = Path(__file__).resolve().parent
 from autopilot.config import LiveModeRefused, TradingMode, load_config, resolve_mode
 from autopilot.database import Database
 from autopilot.engine import TradingEngine
-from autopilot.exchange import BitvavoClient, MarketData, PaperExchange
+from autopilot.exchange import BitvavoClient, MarketData, PaperExchange, ShadowExchange
 from autopilot.logsetup import setup_logging
 from autopilot.notify import TelegramNotifier, build_notifier
 from autopilot.risk import RiskEngine
@@ -44,6 +44,18 @@ def build_engine(cfg, db: Database, mode: TradingMode) -> TradingEngine:
     notifier = build_notifier()
     if mode == TradingMode.LIVE:
         exchange = BitvavoClient(allow_trading=True)
+    elif mode == TradingMode.SHADOW:
+        # SHADOW: het volledige live-pad (echte key optioneel, echt saldo als limiet),
+        # maar orders worden alleen gelogd + gesimuleerd, nooit verstuurd.
+        try:
+            real = BitvavoClient(allow_trading=False)
+        except RuntimeError:
+            log.warning("SHADOW zonder API-key: echt-saldo-limiet wordt overgeslagen")
+            real = None
+        exchange = ShadowExchange(db, real or MarketData(), capital_eur=cfg.capital_eur,
+                                  real_client=real,
+                                  taker_fee_pct=cfg.costs.taker_fee_pct,
+                                  slippage_pct=cfg.costs.slippage_pct)
     else:
         # PAPER: echte marktdata, gesimuleerde uitvoering. Een API-key is niet nodig.
         exchange = PaperExchange(db, MarketData(), capital_eur=cfg.capital_eur,
@@ -71,7 +83,9 @@ def main() -> int:
         print(f"GEWEIGERD: {e}", file=sys.stderr)
         return 2
 
-    banner = "PAPER TRADING (simulatie)" if mode == TradingMode.PAPER else "⚠️  LIVE TRADING MET ECHT GELD ⚠️"
+    banner = {TradingMode.PAPER: "PAPER TRADING (simulatie)",
+              TradingMode.SHADOW: "SHADOW MODE (live-pad, orders worden NIET verstuurd)",
+              TradingMode.LIVE: "⚠️  LIVE TRADING MET ECHT GELD ⚠️"}[mode]
     log.info("Autopilot start — mode: %s, strategie: %s, pairs: %s, interval: %d min",
              banner, cfg.strategy.name, cfg.pairs, cfg.schedule.interval_minutes)
 

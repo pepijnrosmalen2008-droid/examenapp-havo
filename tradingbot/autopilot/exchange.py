@@ -162,3 +162,39 @@ class PaperExchange:
         self.db.set_paper_balance("EUR", eur + gross - fee)
         return {"id": f"paper-{client_order_id[:12]}", "price": fill_price,
                 "amount": amount_asset, "cost": gross - fee, "fee_eur": fee, "status": "closed"}
+
+
+class ShadowExchange(PaperExchange):
+    """Shadow mode: draait het volledige live-pad — geauthenticeerde client, echt
+    EUR-saldo als harde limiet — maar de order zelf wordt NOOIT verstuurd. In plaats
+    daarvan wordt hij luid gelogd en intern gesimuleerd (zelfde fill-model als paper),
+    zodat je na weken kunt vergelijken wat de bot gedaan zóu hebben.
+
+    real_client is een BitvavoClient met allow_trading=False: zelfs een bug die
+    place_market_order op de echte client zou aanroepen, wordt daar geweigerd.
+    """
+
+    def __init__(self, db: Database, market: MarketData, *, capital_eur: float,
+                 real_client=None, taker_fee_pct: float = 0.25, slippage_pct: float = 0.1):
+        super().__init__(db, market, capital_eur=capital_eur,
+                         taker_fee_pct=taker_fee_pct, slippage_pct=slippage_pct)
+        self._real = real_client
+
+    def real_eur(self) -> float | None:
+        """Echt EUR-saldo (view-only), of None als er geen key is geconfigureerd."""
+        if self._real is None:
+            return None
+        try:
+            return self._real.balances().get("EUR", 0.0)
+        except Exception:  # noqa: BLE001 — saldo-check mag de cycle niet breken
+            log.exception("shadow: kon echt saldo niet ophalen; limiet-check overgeslagen")
+            return None
+
+    def place_market_order(self, pair: str, side: Side, *, amount_asset: float | None = None,
+                           amount_eur: float | None = None, client_order_id: str) -> dict:
+        fill = super().place_market_order(pair, side, amount_asset=amount_asset,
+                                          amount_eur=amount_eur, client_order_id=client_order_id)
+        log.warning("SHADOW: order NIET verstuurd, alleen gesimuleerd — %s %s "
+                    "(≈€%.2f @ €%.2f)", side.value, pair, fill["cost"], fill["price"])
+        fill["id"] = f"shadow-{client_order_id[:12]}"
+        return fill
