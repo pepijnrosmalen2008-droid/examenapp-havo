@@ -1,4 +1,4 @@
-const CACHE = 'slagio-v281';
+const CACHE = 'slagio-v282';
 const ASSETS = ['/', '/index.html', '/styles.css', '/data.js', '/data-havo.js', '/data-vwo.js', '/state.js', '/cloud.js', '/profile.js', '/vak.js', '/quiz.js', '/tools.js', '/sim.js', '/lb.js', '/features.js', '/schedule.js', '/v4.js', '/zoek.js', '/init.js', '/examens.js', '/ce_data.js', '/manifest.json', '/icon-192.png', '/icon-512.png', '/logo.svg', '/apple-touch-icon.png'];
 
 self.addEventListener('install', e => {
@@ -37,10 +37,28 @@ self.addEventListener('fetch', e => {
     return;
   }
 
-  // Stale-while-revalidate: serveer direct uit cache (snel + offline), maar haal
-  // élke keer op de achtergrond een verse versie op en ververs de cache. Zo
-  // herstelt een verouderde styles.css/JS zich vanzelf bij de volgende load,
-  // ook zonder cache-versie-bump.
+  // Grote/zelden wijzigende bestanden (data + media) blijven cache-first: die
+  // wil je niet elke load opnieuw downloaden (data-havo.js is ~800 KB).
+  const DATA_FILES = ['/data.js', '/data-havo.js', '/data-vwo.js', '/ce_data.js', '/examens.js'];
+  const isBigData = DATA_FILES.includes(url.pathname);
+  const isCode = !isBigData && (url.pathname.endsWith('.js') || url.pathname.endsWith('.css'));
+
+  if (isCode) {
+    // Network-first voor app-code (klein, wijzigt vaak): altijd de verse versie
+    // wanneer online, cache als offline-fallback. Zo lopen updates nooit achter.
+    e.respondWith(
+      fetch(request)
+        .then(res => {
+          if (res.ok) { const clone = res.clone(); caches.open(CACHE).then(c => c.put(request, clone)); }
+          return res;
+        })
+        .catch(() => caches.match(request))
+    );
+    return;
+  }
+
+  // Stale-while-revalidate voor data/media: direct uit cache (snel + offline),
+  // met een achtergrond-revalidatie zodat een verouderd bestand zich herstelt.
   e.respondWith(
     caches.match(request).then(cached => {
       const network = fetch(request).then(res => {
