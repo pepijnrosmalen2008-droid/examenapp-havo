@@ -1,0 +1,198 @@
+# Autopilot — autonome Bitvavo trading bot
+
+Een crypto trading bot voor [Bitvavo](https://bitvavo.com) die na eenmalige configuratie
+zelfstandig 24/7 draait. **Paper trading is de default**; live handelen vereist drie
+bewuste, onafhankelijke stappen (zie hieronder).
+
+> ⚠️ **Deze bot belooft geen rendement.** Er bestaat geen instelling voor
+> "gewenste winst" — bewust niet. Wat je wél configureert zijn *risicogrenzen*
+> (hoeveel je maximaal kunt verliezen per positie, per dag en in totaal) en
+> strategie-instellingen. Crypto is volatiel; reken erop dat je je inleg kunt
+> verliezen. Resultaten uit backtests of paper trading zeggen niets over de toekomst.
+
+## Hoe het werkt
+
+```
+                 ┌─────────────┐   signalen   ┌─────────────┐  goedgekeurd  ┌──────────────┐
+ candles/prijzen │  Strategie  │ ───────────► │ Risk engine │ ────────────► │ Order-journal│──► Bitvavo
+ ──────────────► │ (pluggable) │              │ (blokkeert/ │               │ (SQLite,     │    of paper-
+                 └─────────────┘              │  verkleint) │               │  idempotent) │    simulatie
+                                              └─────────────┘               └──────────────┘
+```
+
+- **Strategieën** (kiesbaar in `config.yaml`): `dca`, `momentum_ma_cross`, `grid`.
+  Ze *stellen alleen voor*; orders plaatsen kan alleen de engine, ná de risk engine.
+  Strategieën kunnen risk-limieten dus nooit omzeilen.
+- **Risk engine**: pair-whitelist, positielimiet (`max_position_pct`), nooit meer dan
+  het beschikbare EUR-saldo, en drie kill switches (zie hieronder). Elke beslissing —
+  ook elke blokkade — wordt met reden gelogd (logbestand + SQLite).
+- **Crash-safe**: alle state (posities, orders, dagverlies, kill-switch-status) staat
+  in SQLite. Elke order wordt éérst als intent gejournald met een eigen
+  `clientOrderId`; na een crash wordt gereconcilieerd tegen de exchange, dus
+  **geen dubbele orders**.
+
+## De drie kill switches
+
+| Niveau | Trigger | Gevolg |
+|---|---|---|
+| Per positie | prijs ≤ instap − `stop_loss_pct` (of ≥ `take_profit_pct`) | positie wordt verkocht |
+| Per dag | equity vandaag ≥ `max_daily_loss_pct` gezakt | **alle** posities sluiten, 24 uur volledige pauze |
+| Totaal | equity ≥ `max_drawdown_pct` onder startkapitaal | alles naar EUR, bot stopt **permanent** tot jij handmatig `python status.py --clear-halt` draait |
+
+De drawdown-stop staat in de database en overleeft herstarts — ook systemd's
+`Restart=always` omzeilt hem dus niet.
+
+## Installatie (Raspberry Pi / Linux VPS)
+
+Vereist: Python 3.11+ en een Raspberry Pi 3 of nieuwer (of elke Linux-VPS).
+
+```bash
+sudo useradd -r -m -d /opt/autopilot autopilot
+sudo -u autopilot -i bash
+cd /opt/autopilot
+# kopieer de inhoud van de tradingbot/ map hierheen (git clone of scp)
+python3 -m venv .venv
+.venv/bin/pip install -r requirements.txt
+cp .env.example .env && nano .env        # vul je keys in — zie hieronder
+nano config.yaml                          # risicoprofiel instellen
+.venv/bin/python -m pytest tests/        # alles hoort groen te zijn
+.venv/bin/python status.py --balance     # leest je echte saldo met een view-only key
+exit
+
+sudo cp /opt/autopilot/deploy/autopilot.service /etc/systemd/system/
+sudo systemctl daemon-reload
+sudo systemctl enable --now autopilot
+journalctl -u autopilot -f               # meekijken
+```
+
+### API-key aanmaken (belangrijk)
+
+Maak op <https://account.bitvavo.com/user/api> een key aan met **alléén View en
+Trade rechten. Zet Withdrawal NOOIT aan** — als de key ooit lekt kan een aanvaller
+dan wel handelen, maar je geld niet wegsluizen. Beperk de key op het IP-adres van
+je server als Bitvavo dat aanbiedt. Keys staan alleen in `.env` (in `.gitignore`,
+wordt nooit gelogd). Voor paper trading heb je helemaal geen key nodig; voor
+`status.py --balance` volstaat een view-only key.
+
+## Configuratie
+
+Zie `config.yaml` (gevalideerd met pydantic; elke onbekende sleutel of waarde buiten
+bereik stopt de bot bij startup met een duidelijke fout):
+
+```yaml
+mode: PAPER                  # PAPER | LIVE
+capital_eur: 500             # startkapitaal dat de bot mag beheren
+pairs: [BTC-EUR, ETH-EUR]    # whitelist, bot handelt nooit buiten deze lijst
+risk:
+  max_position_pct: 20       # max % van kapitaal per positie
+  stop_loss_pct: 5
+  take_profit_pct: 10
+  trailing_take_profit: false
+  max_daily_loss_pct: 3
+  max_drawdown_pct: 15
+strategy:
+  name: dca                  # dca | momentum_ma_cross | grid
+  params: { amount_eur: 10, every_hours: 24 }
+schedule:
+  interval_minutes: 15
+```
+
+Strategie-parameters:
+
+- **dca** — `amount_eur` (vast bedrag per koop), `every_hours` (interval).
+  Verkoopt alleen via stop-loss/take-profit. Simpelst, minste risico op strategie-bugs.
+- **momentum_ma_cross** — `fast` (12), `slow` (26), `rsi_period` (14), `rsi_min` (50),
+  `rsi_max` (70). EMA-crossover op 1h candles, RSI-filter tegen whipsaws.
+- **grid** — `levels` (6), `order_eur` (25), `band_k` (2.0). Prijsband =
+  SMA(24u) ± k·σ(30 dagen), dagelijks herberekend; koopt per level omlaag,
+  verkoopt per level omhoog.
+
+## Van PAPER naar LIVE — drie sloten
+
+De bot weigert live te starten (en logt waarom) tenzij **alle drie** kloppen:
+
+1. `config.yaml` → `mode: LIVE`
+2. `.env` → `TRADING_MODE=LIVE`
+3. een bestand `I_UNDERSTAND_THE_RISKS.txt` in de projectroot (`touch I_UNDERSTAND_THE_RISKS.txt`)
+
+Dringend advies: laat de bot eerst **minimaal 4 weken in PAPER mode** draaien en
+vergelijk het resultaat met simpelweg BTC aanhouden over dezelfde periode, vóórdat
+je ook maar €1 live inzet. Gebruik per mode een eigen database (de bot weigert
+zelf een PAPER-database in LIVE te hergebruiken).
+
+## Dagelijks gebruik
+
+```bash
+python status.py                 # huidige state uit SQLite (mode, equity, posities, orders)
+python status.py --balance      # + je echte Bitvavo-saldo (view-only key)
+python status.py --clear-halt   # drawdown-stop bewust opheffen na een halt
+python bot.py --once            # één cycle draaien (handig om te testen)
+```
+
+**Telegram** (optioneel): zet `TELEGRAM_BOT_TOKEN` en `TELEGRAM_CHAT_ID` in `.env`
+(bot maken via [@BotFather](https://t.me/BotFather); je chat-id via `@userinfobot`).
+Je krijgt: elke trade, elke risk-blokkade van een exit, elke kill-switch-trigger en
+een dagelijkse samenvatting om 20:00 (NL-tijd) met P&L, open posities en saldo.
+
+**Logs**: `logs/autopilot.log` (JSON, met rotatie) + `journalctl -u autopilot`.
+
+## Backtesting
+
+```bash
+python backtest.py --strategy momentum_ma_cross --from 2023-01-01 --to 2025-12-31
+python backtest.py --all --from 2023-01-01 --to 2025-12-31   # alle 3 + buy-and-hold
+```
+
+Historische 1h-candles worden opgehaald via de publieke Bitvavo API (geen key nodig,
+met rate-limit respect) en lokaal gecachet in `data-cache/`. De backtester replayt de
+candles door **dezelfde engine** als live (incl. risk engine, kill switches, taker fee
+0,25% + 0,1% slippage — beide configureerbaar onder `costs:`). Output: totaalrendement,
+max drawdown, aantal trades, win rate, Sharpe en de vergelijking met buy-and-hold.
+
+Ter illustratie het resultaat op een *synthetische* 2023–2025 dataset (echte data kon
+in de bouwomgeving niet worden opgehaald — draai bovenstaand commando zelf voor echte
+cijfers). Ook leerzaam: in de bear-fase van deze dataset trok de drawdown-kill-switch
+alle drie de strategieën er bij −15% uit, terwijl buy-and-hold een drawdown van 60%
+moest uitzitten:
+
+```
+strategie                  eind  rendement   max DD  trades   win%  Sharpe
+──────────────────────────────────────────────────────────────────────────
+dca                  €   424.61    -15.08%   17.96%     779     25   -1.35  ⛔ gestopt
+momentum_ma_cross    €   424.49    -15.10%   16.07%     418     29   -1.68  ⛔ gestopt
+grid                 €   424.82    -15.04%   15.41%    1171     46   -5.16  ⛔ gestopt
+buy-and-hold         €   830.50     66.10%   60.61%       2      —    0.60
+```
+
+## Tests
+
+```bash
+python -m pytest tests/ -v
+```
+
+58 tests; de risk engine is het zwaarst getest (elke limiet, elke kill switch,
+herstart-na-crash). Geen enkele test raakt de echte Bitvavo API.
+
+## Belasting (NL)
+
+Crypto-winst valt voor particulieren normaal in **box 3**; zeer actief of
+bedrijfsmatig handelen kan als box 1-inkomen worden gezien. Check dit bij een
+belastingadviseur als het serieus wordt.
+
+## Projectstructuur
+
+```
+bot.py            hoofdproces (trading loop)      status.py    state-CLI
+backtest.py       backtester-CLI                  config.yaml  risicoprofiel
+autopilot/
+  config.py       pydantic-validatie + live-guardrails
+  engine.py       trading cycle, order-journal, kill-switch-orchestratie
+  risk.py         risk engine (aparte laag, eigen tests)
+  exchange.py     ccxt-wrapper: MarketData / BitvavoClient / PaperExchange
+  database.py     SQLite state store               notify.py    Telegram
+  indicators.py   EMA / RSI / volatiliteit         logsetup.py  JSON-logs met rotatie
+  strategies/     dca.py, ma_cross.py, grid.py (pluggable interface)
+tests/            58 tests (risk engine, kill switches, crash-recovery, strategieën)
+deploy/           autopilot.service (systemd)
+DECISIONS.md      motivatie van ontwerpkeuzes
+```

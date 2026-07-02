@@ -1,0 +1,34 @@
+# systemd unit voor de Autopilot trading bot.
+# Installatie (als root):
+#   cp deploy/autopilot.service /etc/systemd/system/
+#   systemctl daemon-reload && systemctl enable --now autopilot
+#
+# Restart=always herstart de bot na een crash; dankzij het SQLite-journal gaat hij
+# correct verder zonder dubbele orders. De drawdown-kill-switch staat in de database
+# en wordt door een herstart dus NIET omzeild.
+
+[Unit]
+Description=Autopilot Bitvavo trading bot (paper-trading default)
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+User=autopilot
+Group=autopilot
+WorkingDirectory=/opt/autopilot
+ExecStart=/opt/autopilot/.venv/bin/python /opt/autopilot/bot.py
+Restart=always
+RestartSec=10
+# netjes afsluiten: SIGTERM → bot maakt de huidige cycle af
+TimeoutStopSec=60
+
+# hardening
+NoNewPrivileges=true
+ProtectSystem=strict
+ProtectHome=true
+ReadWritePaths=/opt/autopilot
+PrivateTmp=true
+
+[Install]
+WantedBy=multi-user.target
