@@ -272,8 +272,10 @@ class TradingEngine:
                 self.db.update_peak_price(p.id, price)
 
     @staticmethod
-    def _to_candle(c: tuple):
+    def _to_candle(c):
         from .models import Candle
+        if isinstance(c, Candle):  # backtester levert kant-en-klare Candles (performance)
+            return c
         return Candle(ts=int(c[0]), open=float(c[1]), high=float(c[2]),
                       low=float(c[3]), close=float(c[4]), volume=float(c[5]))
 
