@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html lang="nl" data-vak="wb">
 <head>
+<script>/* Slagio-boot-spa: terugkerende app-gebruiker opent de SPA (nieuwe/zoek-bezoeker en crawler zien de statische pagina) */
+(function(){try{if(!localStorage.getItem("examenapp_level"))return;var id=document.documentElement.getAttribute("data-vak");var m=location.pathname.match(/\/vakken\/(havo|vwo)-.*?(?:-domein-([a-z]))?\.html$/);if(!id||!m)return;location.replace("/?niveau="+m[1]+"&vak="+id+(m[2]?"&domein="+m[2].toUpperCase():""));}catch(e){}})();
+</script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Wiskunde B VWO Eindexamen 2026 — Gratis oefenen | Slagio</title>

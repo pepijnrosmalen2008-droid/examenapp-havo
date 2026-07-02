@@ -435,6 +435,13 @@ window.addEventListener('load',()=>{
     setTimeout(()=>_routeFromPath(),80);
     return;
   }
+  // Echte vak-/domein-URL (/vakken/<niveau>-<vak>[-domein-<x>].html): een
+  // terugkerende gebruiker die zo'n statische SEO-pagina boot in de SPA laadt,
+  // landt direct op het juiste in-app scherm (met oefeningen en samenvatting).
+  if(/^\/vakken\/(havo|vwo)-/.test(_path)&&typeof _routeVakkenPath==='function'){
+    setTimeout(()=>_routeVakkenPath(_path),80);
+    return;
+  }
   // Hash-routing voor sub-schermen
   if(location.hash&&location.hash.length>1){
     setTimeout(_routeFromHash,120);
