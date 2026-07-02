@@ -723,6 +723,7 @@
       <span class="hnav-chip" id="home-level-chip">HAVO 2026</span>
     </div>
     <div class="hnav-right">
+      <button class="hnav-icon-btn hnav-zoek-btn" onclick="openZoek()" title="Zoeken" aria-label="Zoeken" data-tip="Zoeken"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg></button>
       <button class="hnav-icon-btn" onclick="showIntroModal()" title="Hoe werkt Slagio?" aria-label="Hoe werkt Slagio?"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg></button>
       <button class="hnav-icon-btn" id="home-prof-btn" onclick="openProfiel()" aria-label="Profiel" data-tip="Profiel">
         <svg viewBox="0 0 24 24"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
@@ -771,6 +772,11 @@
         Mijn cijfers
       </button>
     </div>
+    <button class="hm-zoek-teaser" onclick="openZoek()" aria-label="Doorzoek alle examens, begrippen en uitleg">
+      <svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
+      <span>Doorzoek alle examens, begrippen &amp; uitleg…</span>
+      <kbd>Zoek</kbd>
+    </button>
   </div>
 </div>
 
@@ -913,6 +919,36 @@
     <br><span style="font-size:11px;opacity:.6">Slagio bevat een archief van alle officiële CE-eindexamens HAVO en VWO 2019–2025 - opgaven én correctievoorschriften voor 28 vakken, Tijdvak I en II. Slagio is geen officiële publicatie van het CvTE. CE-vragen zijn afkomstig van <a href="https://www.examenblad.nl" target="_blank" rel="noopener">examenblad.nl</a>.</span>
     <br><details style="margin-top:10px;font-size:11px;opacity:.55;text-align:left;display:inline-block"><summary style="cursor:pointer;color:var(--mu);list-style:none;text-align:center">Vakpagina's ▾</summary><div style="columns:2;gap:16px;margin-top:6px;line-height:2.2"><strong style="color:var(--mu)">HAVO</strong><br><a href="/vakken/havo-nederlands.html">Nederlands HAVO</a><br><a href="/vakken/havo-wiskunde-a.html">Wiskunde A HAVO</a><br><a href="/vakken/havo-wiskunde-b.html">Wiskunde B HAVO</a><br><a href="/vakken/havo-biologie.html">Biologie HAVO</a><br><a href="/vakken/havo-scheikunde.html">Scheikunde HAVO</a><br><a href="/vakken/havo-natuurkunde.html">Natuurkunde HAVO</a><br><a href="/vakken/havo-engels.html">Engels HAVO</a><br><a href="/vakken/havo-economie.html">Economie HAVO</a><br><a href="/vakken/havo-bedrijfseconomie.html">Bedrijfseconomie HAVO</a><br><a href="/vakken/havo-geschiedenis.html">Geschiedenis HAVO</a><br><a href="/vakken/havo-aardrijkskunde.html">Aardrijkskunde HAVO</a><br><a href="/vakken/havo-maatschappijwetenschappen.html">Maatschappijwetenschappen HAVO</a><br><a href="/vakken/havo-duits.html">Duits HAVO</a><br><a href="/vakken/havo-frans.html">Frans HAVO</a><br><strong style="color:var(--mu)">VWO</strong><br><a href="/vakken/vwo-nederlands.html">Nederlands VWO</a><br><a href="/vakken/vwo-wiskunde-a.html">Wiskunde A VWO</a><br><a href="/vakken/vwo-wiskunde-b.html">Wiskunde B VWO</a><br><a href="/vakken/vwo-biologie.html">Biologie VWO</a><br><a href="/vakken/vwo-scheikunde.html">Scheikunde VWO</a><br><a href="/vakken/vwo-natuurkunde.html">Natuurkunde VWO</a><br><a href="/vakken/vwo-engels.html">Engels VWO</a><br><a href="/vakken/vwo-economie.html">Economie VWO</a><br><a href="/vakken/vwo-bedrijfseconomie.html">Bedrijfseconomie VWO</a><br><a href="/vakken/vwo-geschiedenis.html">Geschiedenis VWO</a><br><a href="/vakken/vwo-aardrijkskunde.html">Aardrijkskunde VWO</a><br><a href="/vakken/vwo-maatschappijwetenschappen.html">Maatschappijwetenschappen VWO</a><br><a href="/vakken/vwo-duits.html">Duits VWO</a><br><a href="/vakken/vwo-frans.html">Frans VWO</a><br><a href="/vakken/vwo-informatica.html">Informatica VWO</a><br><a href="/vakken/vwo-latijn.html">Latijn VWO</a><br><a href="/vakken/vwo-grieks.html">Grieks VWO</a></div></details>
   </div>
+</div>
+</div>
+
+<!-- ZOEKEN -->
+<div id="sc-zoek" class="sc">
+<nav class="nav">
+  <div class="nav-inner">
+    <div class="logo" onclick="show('sc-home')"><img src="/icon-192.png" alt="Slagio" style="width:26px;height:26px;border-radius:7px;object-fit:cover;flex-shrink:0">Slagio</div>
+    <button class="bk" onclick="show('sc-home')">← Terug</button>
+    <button class="theme-btn" onclick="toggleDark()" title="Nachtmodus" id="theme-btn-zoek" style="margin-left:auto"><svg viewBox="0 0 24 24"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg></button>
+  </div>
+</nav>
+<div class="w zoek-wrap">
+  <div class="zoek-hero">
+    <h1 class="zoek-h">Doorzoek <em>elk</em> examen, begrip &amp; uitleg</h1>
+    <p class="zoek-sub">Eén zoekbalk over alle CE-examens, oud-examenvragen, begrippen, samenvattingen en oefenvragen — HAVO &amp; VWO.</p>
+  </div>
+  <div class="zoek-search">
+    <div class="zoek-search-inner">
+      <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
+      <input id="zoek-q" type="search" placeholder="Zoek op onderwerp, begrip of trefwoord…" autocomplete="off" spellcheck="false" aria-label="Zoeken">
+      <button class="zoek-clr" id="zoek-clr" aria-label="Wissen"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M18 6 6 18M6 6l12 12"/></svg></button>
+    </div>
+  </div>
+  <div class="zoek-chips" id="zoek-chips"></div>
+  <div class="zoek-filters" id="zoek-filters" style="display:none"></div>
+  <div class="zoek-tabs" id="zoek-tabs" style="display:none"></div>
+  <div class="zoek-stats" id="zoek-stats"></div>
+  <div class="zoek-res" id="zoek-res"></div>
+  <div class="zoek-more" id="zoek-more"></div>
 </div>
 </div>
 
@@ -1969,6 +2005,7 @@
 <script src="/features.js"></script>
 <script src="/schedule.js"></script>
 <script src="/v4.js"></script>
+<script src="/zoek.js"></script>
 <script src="/init.js"></script>
 
 <!-- Bottom Navigation (mobile only) -->

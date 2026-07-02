@@ -6,7 +6,7 @@ let ST = {vak:null,domein:null,mode:null,vragen:[],idx:0,score:0,antwrd:[],timer
 
 // ═══════ UI HELPERS ═══════
 // ═══════ HASH ROUTING ═══════
-const _SCREEN_HASHES={'sc-info':'info','sc-schedule':'rooster','sc-studieplan':'studieplan','sc-calc':'rekenmachine','sc-streak':'streaks'};
+const _SCREEN_HASHES={'sc-info':'info','sc-schedule':'rooster','sc-studieplan':'studieplan','sc-calc':'rekenmachine','sc-streak':'streaks','sc-zoek':'zoek'};
 // Vak ID → URL-slug (volledige naam)
 const _VAK_SLUG={nl:'nederlands',wa:'wiskunde-a',wb:'wiskunde-b',bi:'biologie',sk:'scheikunde',na:'natuurkunde',be:'bedrijfseconomie',en:'engels',ec:'economie',gs:'geschiedenis',ak:'aardrijkskunde',mw:'maatschappijwetenschappen',du:'duits',fr:'frans',la:'latijn',gr:'grieks',in:'informatica'};
 const _SLUG_VAK=Object.fromEntries(Object.entries(_VAK_SLUG).map(([k,v])=>[v,k]));
@@ -25,6 +25,8 @@ function _routeFromHash(){
       if(vak){openVak(id,true);return;}
     }
   }
+  // zoekscherm: bouwt de index lazy op
+  if(h==='zoek'){if(window.openZoek){openZoek();return;}}
   // statische schermen
   const sc=Object.entries(_SCREEN_HASHES).find(([,v])=>v===h);
   if(sc){show(sc[0],true);return;}
