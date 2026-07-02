@@ -31,6 +31,10 @@ function _routeFromHash(){
       if(niv!==APP_LEVEL){APP_LEVEL=niv;localStorage.setItem('examenapp_level',niv);applyLevelTheme(niv);}
       const vak=getVK().find(v=>v.id===id);
       if(vak){
+        // Deze route opent het vak rechtstreeks (buiten chooseLevel() om), dus de
+        // vaktegel-grid is nog niet (opnieuw) opgebouwd met de zojuist geladen data.
+        // Zonder dit blijft #vakgrid leeg zodra de gebruiker terug naar Home gaat.
+        if(typeof buildGrid==='function')try{buildGrid();}catch(e){}
         openVak(id,true);
         if(domLetter&&vak.domeinen.some(d=>d.id===domLetter))openDomein(domLetter,true);
         return;
@@ -72,6 +76,10 @@ function _routeVakkenPath(path){
     if(niv!==APP_LEVEL){APP_LEVEL=niv;localStorage.setItem('examenapp_level',niv);applyLevelTheme(niv);}
     const vak=getVK().find(v=>v.id===id);
     if(!vak)return;
+    // Deze route opent het vak rechtstreeks (buiten chooseLevel() om), dus de
+    // vaktegel-grid is nog niet (opnieuw) opgebouwd met de zojuist geladen data.
+    // Zonder dit blijft #vakgrid leeg zodra de gebruiker terug naar Home gaat.
+    if(typeof buildGrid==='function')try{buildGrid();}catch(e){}
     if(!ST.vak||ST.vak.id!==id)openVak(id,true);
     if(letter){if(vak.domeinen.some(d=>d.id===letter))openDomein(letter,true);}
     else show('sc-detail',true); // vak-URL zonder domein → toon (of blijf op) detail
@@ -107,7 +115,15 @@ function show(id,_noHash){
   tryPushAds(id);
   // URL bijwerken
   if(!_noHash){
-    if(id==='sc-home')_pushHash('');
+    if(id==='sc-home'){
+      // Kom je van een echte /vakken/-URL (of oude hash-route), dan moet de
+      // adresbalk expliciet terug naar de niveau-pagina — _pushHash('') alleen
+      // strippen van de hash is niet genoeg als het pathname zelf afwijkt.
+      const _hp=(APP_LEVEL==='havo'||APP_LEVEL==='vwo')?'/'+APP_LEVEL:'/';
+      if(location.pathname.replace(/\/$/,'')+location.hash!==_hp){
+        try{history.pushState(null,'',_hp);}catch(e){}
+      }
+    }
     else if(_SCREEN_HASHES[id])_pushHash(_SCREEN_HASHES[id]);
   }
   if(id==='sc-detail'){
