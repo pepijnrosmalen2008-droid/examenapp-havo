@@ -88,13 +88,20 @@ function buildZoekIndex(){
   _zoekIndex=out;_zoekBuilt=true;
 }
 
-// ── ce_data.js lazy laden (niet in de app-shell om load licht te houden) ──
+// ── Zoek doorzoekt beide niveaus + oud-examens: laad alles lazy vóór de index ──
 function _zkEnsureData(cb){
-  if(_zoekCeLoaded||typeof CE_OE!=='undefined'){cb();return;}
-  const s=document.createElement('script');s.src='/ce_data.js';
-  s.onload=()=>{_zoekCeLoaded=true;cb();};
-  s.onerror=()=>{_zoekCeLoaded=true;cb();}; // zonder oud-examens is prima
-  document.head.appendChild(s);
+  function loadCe(){
+    if(_zoekCeLoaded||typeof CE_OE!=='undefined'){cb();return;}
+    const s=document.createElement('script');s.src='/ce_data.js';
+    s.onload=()=>{_zoekCeLoaded=true;cb();};
+    s.onerror=()=>{_zoekCeLoaded=true;cb();}; // zonder oud-examens is prima
+    document.head.appendChild(s);
+  }
+  const ll=(typeof _levelLoaded==='function');
+  const eld=(typeof ensureLevelData==='function');
+  function vwo(){ if(eld&&ll&&!_levelLoaded('vwo'))ensureLevelData('vwo',loadCe); else loadCe(); }
+  function havo(){ if(eld&&ll&&!_levelLoaded('havo'))ensureLevelData('havo',vwo); else vwo(); }
+  havo();
 }
 
 // ── Zoeken ──

@@ -20,6 +20,10 @@ function _routeFromHash(){
     const [,niv,slug]=vm;
     const id=_SLUG_VAK[slug];
     if(id){
+      // Zorg dat de niveau-data geladen is voordat we het vak openen
+      if(typeof ensureLevelData==='function'&&typeof _levelLoaded==='function'&&!_levelLoaded(niv)){
+        ensureLevelData(niv,()=>_routeFromHash());return;
+      }
       if(niv!==APP_LEVEL){APP_LEVEL=niv;localStorage.setItem('examenapp_level',niv);applyLevelTheme(niv);}
       const vak=getVK().find(v=>v.id===id);
       if(vak){openVak(id,true);return;}
@@ -164,19 +168,8 @@ const VAK_ICONS={
   du:'<path d="M4 4h16v2l-8 8-8-8V4z"/><path d="M4 20h16"/>',
   wc:'<path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/>',
 };
-// Auto-voeg jaar/tijdvak toe aan HAVO oe-vragen op basis van de bron-string
-(function(){
-  VAKKEN.forEach(vak=>{
-    vak.domeinen.forEach(dom=>{
-      (dom.oe||[]).forEach(q=>{
-        if(!q.jaar){
-          const m=q.bron&&q.bron.match(/(\d{4})\s+Tijdvak\s+(\d)/i);
-          if(m){q.jaar=parseInt(m[1]);q.tijdvak=parseInt(m[2]);}
-        }
-      });
-    });
-  });
-})();
+// Jaar/tijdvak toevoegen aan oe-vragen gebeurt nu per niveau in _processLevelOe()
+// (data.js), aangeroepen door ensureLevelData() zodra data-havo.js/data-vwo.js laadt.
 
 // ═══════ CONCEPT DEPENDENCY GRAPH (adaptive learning engine - intern, niet zichtbaar voor gebruiker) ═══════
 const conceptGraph = {
@@ -231,7 +224,7 @@ const conceptGraph = {
 
 // ═══════ NIVEAU BEHEER ═══════
 let APP_LEVEL=localStorage.getItem('examenapp_level')||'havo';
-function getVK(){return APP_LEVEL==='vwo'?VAKKEN_VWO:VAKKEN;}
+function getVK(){var a=APP_LEVEL==='vwo'?(typeof VAKKEN_VWO!=='undefined'?VAKKEN_VWO:null):(typeof VAKKEN!=='undefined'?VAKKEN:null);return a||[];}
 // Level-specifieke localStorage/Supabase kolomnamen - altijd suffix (_havo / _vwo)
 function lvlCol(col){return col+'_'+APP_LEVEL;}
 // Migreer bestaande HAVO data van oude keys (zonder suffix) naar nieuwe keys (_havo)

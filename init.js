@@ -314,6 +314,11 @@ function _updatePageSEO(level){
   if(canon)canon.href=url;
 }
 function chooseLevel(level,_noHistory){
+  // Gate: laad eerst de niveau-data (data-havo.js / data-vwo.js) indien nodig.
+  if(typeof ensureLevelData==='function'&&typeof _levelLoaded==='function'&&!_levelLoaded(level)){
+    ensureLevelData(level,()=>chooseLevel(level,_noHistory));
+    return;
+  }
   APP_LEVEL=level;
   localStorage.setItem('examenapp_level',level);
   applyLevelTheme(level);
