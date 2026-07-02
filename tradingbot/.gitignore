@@ -8,6 +8,7 @@
 *.db-shm
 data-cache/
 logs/
+dashboard.html
 
 # Live-mode confirmation file (personal, per machine)
 I_UNDERSTAND_THE_RISKS.txt
