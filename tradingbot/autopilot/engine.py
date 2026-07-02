@@ -22,6 +22,7 @@ from zoneinfo import ZoneInfo
 from .config import AppConfig, TradingMode
 from .database import Database, utcnow
 from .models import OrderStatus, Position, RiskDecision, Side, Signal
+from .regime import RegimeFilter
 from .risk import RiskEngine
 from .strategies import Strategy
 
@@ -44,6 +45,7 @@ class TradingEngine:
         self.strategy = strategy
         self.mode = mode
         self.notify = notifier or NullNotifier()
+        self.regime = RegimeFilter(cfg, db)
 
     # ── startup ───────────────────────────────────────────────────────
 
@@ -153,7 +155,8 @@ class TradingEngine:
                               self.x.candles(pair, self.strategy.candle_interval,
                                              self.strategy.candle_limit)]
                        for pair in self.cfg.pairs}
-        for sig in self.strategy.generate_signals(candles, self.db.open_positions(), now):
+        signals = self.strategy.generate_signals(candles, self.db.open_positions(), now)
+        for sig in self.regime.apply(signals, self.x):
             self._route_signal(sig, prices, now=now)
 
     # ── uitvoering ────────────────────────────────────────────────────

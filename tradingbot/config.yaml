@@ -23,6 +23,11 @@ strategy:
 schedule:
   interval_minutes: 15
 
+regime:
+  enabled: false             # true = geen nieuwe BUY's onder de lange-termijn EMA (bear)
+  ema_days: 200
+  exempt: [dca]              # dca koopt juist bij in dalingen; niet filteren
+
 costs:
   taker_fee_pct: 0.25        # Bitvavo taker fee cat. A — check actueel tarief op bitvavo.com/nl/fees
   slippage_pct: 0.1

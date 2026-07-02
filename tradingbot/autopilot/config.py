@@ -62,6 +62,16 @@ class StrategyConfig(BaseModel):
     params: dict = Field(default_factory=dict)
 
 
+class RegimeConfig(BaseModel):
+    model_config = ConfigDict(extra="forbid")
+
+    enabled: bool = False
+    ema_days: int = Field(default=200, ge=20, le=400,
+                          description="Lange-termijn EMA (dagen); prijs eronder = bear-regime")
+    exempt: list[str] = Field(default_factory=lambda: ["dca"],
+                              description="Strategieën die niet gefilterd worden")
+
+
 class ScheduleConfig(BaseModel):
     model_config = ConfigDict(extra="forbid")
 
@@ -87,6 +97,7 @@ class AppConfig(BaseModel):
     strategy: StrategyConfig
     schedule: ScheduleConfig
     costs: BacktestCostConfig = Field(default_factory=BacktestCostConfig)
+    regime: RegimeConfig = Field(default_factory=RegimeConfig)
 
     @field_validator("pairs")
     @classmethod
