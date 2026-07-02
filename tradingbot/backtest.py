@@ -4,7 +4,8 @@ kill switches, fees en slippage), zodat backtest en live-gedrag niet uiteenlopen
 
 Gebruik:
     python backtest.py --strategy momentum_ma_cross --from 2023-01-01 --to 2025-12-31
-    python backtest.py --all --from 2023-01-01 --to 2025-12-31     # alle 3 + buy-and-hold
+    python backtest.py --all --from 2023-01-01 --to 2025-12-31       # alle 3 + buy-and-hold
+    python backtest.py --strategy grid --monte-carlo 50 --from ... --to ...
 
 Data komt van de publieke Bitvavo API (geen key nodig) met rate-limit respect en
 lokale caching in data-cache/backtest_cache.db. Offline kan met --csv-dir:
@@ -25,13 +26,11 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent
 sys.path.insert(0, str(ROOT))
 
-from autopilot.config import AppConfig, TradingMode, load_config
+from autopilot.backtesting import (WARMUP_CANDLES, buy_and_hold, run_backtest)
+from autopilot.config import AppConfig, load_config
 from autopilot.database import Database
-from autopilot.engine import TradingEngine
-from autopilot.exchange import INTERVAL_MS, MarketData, PaperExchange
+from autopilot.exchange import INTERVAL_MS, MarketData
 from autopilot.models import Candle
-from autopilot.risk import RiskEngine
-from autopilot.strategies import get_strategy
 
 CACHE_DIR = ROOT / "data-cache"
 
@@ -96,160 +95,7 @@ def load_data(cfg: AppConfig, interval: str, start_ms: int, end_ms: int,
     return data
 
 
-# ══════════ replay ══════════
-
-class ReplayMarket:
-    """Speelt candles af; 'ticker' = close van de huidige candle. Geen look-ahead."""
-
-    def __init__(self, data: dict[str, list[Candle]]):
-        self.data = data
-        self.index: dict[str, int] = {p: 0 for p in data}
-
-    def seek(self, ts: int) -> None:
-        for pair, series in self.data.items():
-            i = self.index[pair]
-            while i + 1 < len(series) and series[i + 1].ts <= ts:
-                i += 1
-            self.index[pair] = i
-
-    def ticker_price(self, pair: str) -> float:
-        return self.data[pair][self.index[pair]].close
-
-    def candles(self, pair: str, interval: str = "1h", limit: int = 200, since_ms=None):
-        i = self.index[pair]
-        return self.data[pair][max(0, i + 1 - limit): i + 1]
-
-
-def run_backtest(cfg: AppConfig, strategy_name: str, data: dict[str, list[Candle]],
-                 warmup: int) -> dict:
-    cfg = cfg.model_copy(deep=True)
-    cfg.strategy.name = strategy_name  # type: ignore[assignment]
-
-    db = Database(":memory:")
-    market = ReplayMarket(data)
-    paper = PaperExchange(db, market, capital_eur=cfg.capital_eur,
-                          taker_fee_pct=cfg.costs.taker_fee_pct,
-                          slippage_pct=cfg.costs.slippage_pct)
-    engine = TradingEngine(cfg, db, paper, RiskEngine(cfg, db),
-                           get_strategy(cfg, db), TradingMode.PAPER)
-    engine.startup()
-
-    timeline = sorted(set.intersection(*(set(c.ts for c in series) for series in data.values())))
-    equity_curve: list[tuple[int, float]] = []
-    halted_at = None
-
-    for ts in timeline[warmup:]:
-        market.seek(ts)
-        now = datetime.fromtimestamp(ts / 1000, tz=timezone.utc)
-        engine.cycle(now)
-        snap = db.last_equity()
-        equity_curve.append((ts, snap["equity_eur"]))
-        if engine.risk.is_halted():
-            halted_at = now
-            break
-
-    # metrics
-    orders = [dict(o) for o in db.recent_orders(100000) if o["status"] == "FILLED"]
-    closed = db.conn.execute(
-        "SELECT realized_pnl_eur FROM positions WHERE realized_pnl_eur IS NOT NULL").fetchall()
-    wins = sum(1 for r in closed if r["realized_pnl_eur"] > 0)
-    final = equity_curve[-1][1] if equity_curve else cfg.capital_eur
-    db.close()
-    return {
-        "strategy": strategy_name,
-        "final_equity": final,
-        "return_pct": (final / cfg.capital_eur - 1) * 100,
-        "max_dd_pct": max_drawdown([e for _, e in equity_curve]),
-        "trades": len(orders),
-        "win_rate": (wins / len(closed) * 100) if closed else float("nan"),
-        "sharpe": sharpe([e for _, e in equity_curve]),
-        "halted_at": halted_at,
-    }
-
-
-def buy_and_hold(cfg: AppConfig, data: dict[str, list[Candle]], warmup: int) -> dict:
-    """Gelijk verdeeld over de pairs kopen op de eerste candle, aanhouden tot de laatste."""
-    fee = cfg.costs.taker_fee_pct / 100
-    slip = cfg.costs.slippage_pct / 100
-    per_pair = cfg.capital_eur / len(data)
-    curve: list[float] = []
-    timeline = sorted(set.intersection(*(set(c.ts for c in series) for series in data.values())))
-    closes = {p: {c.ts: c.close for c in series} for p, series in data.items()}
-    entry = {p: closes[p][timeline[warmup]] * (1 + slip) for p in data}
-    units = {p: per_pair * (1 - fee) / entry[p] for p in data}
-    for ts in timeline[warmup:]:
-        curve.append(sum(units[p] * closes[p][ts] for p in data))
-    final = curve[-1] * (1 - fee - slip)  # exit-kosten
-    return {
-        "strategy": "buy-and-hold",
-        "final_equity": final,
-        "return_pct": (final / cfg.capital_eur - 1) * 100,
-        "max_dd_pct": max_drawdown(curve),
-        "trades": len(data),
-        "win_rate": float("nan"),
-        "sharpe": sharpe(curve),
-        "halted_at": None,
-    }
-
-
-def max_drawdown(curve: list[float]) -> float:
-    peak, dd = -math.inf, 0.0
-    for v in curve:
-        peak = max(peak, v)
-        if peak > 0:
-            dd = max(dd, (peak - v) / peak)
-    return dd * 100
-
-
-def sharpe(curve: list[float], periods_per_year: int = 8760) -> float:
-    """Geannualiseerde Sharpe op basis van per-candle returns (risicovrije voet 0)."""
-    if len(curve) < 3:
-        return float("nan")
-    rets = [(curve[i] / curve[i - 1] - 1) for i in range(1, len(curve)) if curve[i - 1] > 0]
-    mean = sum(rets) / len(rets)
-    var = sum((r - mean) ** 2 for r in rets) / (len(rets) - 1)
-    sd = math.sqrt(var)
-    if sd == 0:
-        return float("nan")
-    return mean / sd * math.sqrt(periods_per_year)
-
-
-# ══════════ CLI ══════════
-
-def main() -> int:
-    ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
-    ap.add_argument("--strategy", choices=["dca", "momentum_ma_cross", "grid"])
-    ap.add_argument("--all", action="store_true", help="alle drie de strategieën + buy-and-hold")
-    ap.add_argument("--from", dest="start", required=True, help="YYYY-MM-DD")
-    ap.add_argument("--to", dest="end", required=True, help="YYYY-MM-DD")
-    ap.add_argument("--interval", default="1h", choices=list(INTERVAL_MS))
-    ap.add_argument("--csv-dir", type=Path, help="offline data i.p.v. Bitvavo API")
-    ap.add_argument("--config", default=str(ROOT / "config.yaml"))
-    args = ap.parse_args()
-    if not args.all and not args.strategy:
-        ap.error("kies --strategy of --all")
-    logging.basicConfig(level=logging.CRITICAL)  # geen per-order lognoise tijdens een backtest
-
-    cfg = load_config(args.config)
-    start_ms = int(datetime.fromisoformat(args.start).replace(tzinfo=timezone.utc).timestamp() * 1000)
-    end_ms = int(datetime.fromisoformat(args.end).replace(tzinfo=timezone.utc).timestamp() * 1000)
-
-    print(f"Backtest {args.start} → {args.end} | pairs: {', '.join(cfg.pairs)} | "
-          f"kapitaal €{cfg.capital_eur:.0f} | taker {cfg.costs.taker_fee_pct}% + "
-          f"slippage {cfg.costs.slippage_pct}%")
-    data = load_data(cfg, args.interval, start_ms, end_ms, args.csv_dir)
-    warmup = 24 * 30  # 30 dagen warm-up zodat elke strategie dezelfde startdatum handelt
-
-    names = ["dca", "momentum_ma_cross", "grid"] if args.all else [args.strategy]
-    results = []
-    for name in names:
-        t0 = time.monotonic()
-        print(f"\n▶ {name} …", flush=True)
-        res = run_backtest(cfg, name, data, warmup)
-        print(f"  klaar in {time.monotonic() - t0:.1f}s")
-        results.append(res)
-    results.append(buy_and_hold(cfg, data, warmup))
-
+def print_results(results: list[dict]) -> None:
     print(f"\n{'strategie':<20} {'eind':>10} {'rendement':>10} {'max DD':>8} "
           f"{'trades':>7} {'win%':>6} {'Sharpe':>7}")
     print("─" * 74)
@@ -261,6 +107,53 @@ def main() -> int:
               f"{r['max_dd_pct']:>7.2f}% {r['trades']:>7} {wr:>6} {sh:>7}{halt}")
     print("\nLet op: resultaten uit het verleden zeggen niets over de toekomst. "
           "De bot belooft geen rendement.")
+
+
+# ══════════ CLI ══════════
+
+def main() -> int:
+    ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
+    ap.add_argument("--strategy", choices=["dca", "momentum_ma_cross", "grid"])
+    ap.add_argument("--all", action="store_true", help="alle drie de strategieën + buy-and-hold")
+    ap.add_argument("--monte-carlo", type=int, metavar="N",
+                    help="N gebootstrapte marktscenario's i.p.v. één historische run")
+    ap.add_argument("--from", dest="start", required=True, help="YYYY-MM-DD")
+    ap.add_argument("--to", dest="end", required=True, help="YYYY-MM-DD")
+    ap.add_argument("--interval", default="1h", choices=list(INTERVAL_MS))
+    ap.add_argument("--csv-dir", type=Path, help="offline data i.p.v. Bitvavo API")
+    ap.add_argument("--config", default=str(ROOT / "config.yaml"))
+    ap.add_argument("--seed", type=int, default=1, help="random seed voor Monte Carlo")
+    args = ap.parse_args()
+    if not args.all and not args.strategy:
+        ap.error("kies --strategy of --all")
+    if args.monte_carlo and not args.strategy:
+        ap.error("--monte-carlo vereist --strategy")
+    logging.basicConfig(level=logging.CRITICAL)  # geen per-order lognoise tijdens een backtest
+
+    cfg = load_config(args.config)
+    start_ms = int(datetime.fromisoformat(args.start).replace(tzinfo=timezone.utc).timestamp() * 1000)
+    end_ms = int(datetime.fromisoformat(args.end).replace(tzinfo=timezone.utc).timestamp() * 1000)
+
+    print(f"Backtest {args.start} → {args.end} | pairs: {', '.join(cfg.pairs)} | "
+          f"kapitaal €{cfg.capital_eur:.0f} | taker {cfg.costs.taker_fee_pct}% + "
+          f"slippage {cfg.costs.slippage_pct}%")
+    data = load_data(cfg, args.interval, start_ms, end_ms, args.csv_dir)
+
+    if args.monte_carlo:
+        from autopilot.montecarlo import run_monte_carlo
+        run_monte_carlo(cfg, args.strategy, data, n=args.monte_carlo, seed=args.seed)
+        return 0
+
+    names = ["dca", "momentum_ma_cross", "grid"] if args.all else [args.strategy]
+    results = []
+    for name in names:
+        t0 = time.monotonic()
+        print(f"\n▶ {name} …", flush=True)
+        res = run_backtest(cfg, name, data, WARMUP_CANDLES)
+        print(f"  klaar in {time.monotonic() - t0:.1f}s")
+        results.append(res)
+    results.append(buy_and_hold(cfg, data, WARMUP_CANDLES))
+    print_results(results)
     return 0
 
 
