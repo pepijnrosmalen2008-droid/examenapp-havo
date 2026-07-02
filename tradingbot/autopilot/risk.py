@@ -154,6 +154,20 @@ class RiskEngine:
                      f"van max €{max_pos_eur:.2f}", requested)
 
         approved = min(requested, room, cash_eur)
+
+        # 5. Portfolio heat: totaal kapitaal-op-risico als álle stops afgaan.
+        #    Crypto-pairs zijn sterk gecorreleerd, dus alle posities tellen als één bucket.
+        if r.max_portfolio_heat_pct is not None:
+            total_exposure = sum(p.amount * prices.get(p.pair, p.avg_price) for p in positions)
+            heat_budget_eur = capital * r.max_portfolio_heat_pct / r.stop_loss_pct  # exposure-equivalent
+            heat_room = heat_budget_eur - total_exposure
+            current_heat = total_exposure * r.stop_loss_pct / capital
+            if heat_room < MIN_ORDER_EUR:
+                return self._deny(
+                    sig, f"portfolio heat: {current_heat:.2f}% van kapitaal staat al op risico "
+                         f"(limiet {r.max_portfolio_heat_pct}%)", requested)
+            approved = min(approved, heat_room)
+
         if approved < MIN_ORDER_EUR:
             return self._deny(
                 sig, f"ordergrootte €{approved:.2f} onder minimum €{MIN_ORDER_EUR:.0f} "

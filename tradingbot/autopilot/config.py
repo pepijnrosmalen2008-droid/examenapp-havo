@@ -36,6 +36,12 @@ class RiskConfig(BaseModel):
     trailing_take_profit: bool = Field(default=False, description="Trailing stop zodra take-profit-niveau is bereikt")
     max_daily_loss_pct: float = Field(gt=0, le=50, description="Dag-kill-switch: max verlies per dag in %")
     max_drawdown_pct: float = Field(gt=0, le=90, description="Totale kill-switch: max drawdown vanaf startkapitaal in %")
+    max_portfolio_heat_pct: float | None = Field(
+        default=None, gt=0, le=50,
+        description="Max % van kapitaal dat tegelijk 'op het spel' staat als alle stop-losses "
+                    "afgaan (Σ positiewaarde × stop_loss_pct). Crypto-pairs zijn sterk "
+                    "gecorreleerd; dit behandelt alle posities bewust als één risico-bucket. "
+                    "None = uit.")
 
     @model_validator(mode="after")
     def daily_loss_below_drawdown(self) -> "RiskConfig":

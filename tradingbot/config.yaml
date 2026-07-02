@@ -12,6 +12,7 @@ risk:
   trailing_take_profit: false
   max_daily_loss_pct: 3      # dag-kill-switch: alles sluiten + 24u pauze
   max_drawdown_pct: 15       # totale kill-switch: alles naar EUR + permanent stoppen
+  max_portfolio_heat_pct: 2  # max % kapitaal op risico als alle stops afgaan (weglaten = uit)
 
 strategy:
   name: dca                  # dca | momentum_ma_cross | grid
