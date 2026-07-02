@@ -5681,3 +5681,22 @@ html.dark #sc-zoek mark{color:#ffd9c2}
 .zk-recent-chips{display:flex;flex-wrap:wrap;gap:8px}
 .zk-recent-chip{display:inline-flex;align-items:center;gap:6px}
 .zk-recent-chip svg{stroke:var(--mu);flex-shrink:0}
+
+/* ═══════════════════════════════════════════════════════════════════════
+   DOMEIN-PAGINA — dedicated leerstof-scherm per domein (#sc-domein)
+   ═══════════════════════════════════════════════════════════════════════ */
+#sc-domein .det-breadcrumb{margin-bottom:16px}
+.dom-hero-card{display:flex;gap:16px;align-items:flex-start;background:var(--s);border:1px solid var(--bo);border-radius:18px;padding:22px;margin-bottom:16px;box-shadow:0 2px 8px rgba(0,0,0,.05)}
+html.dark .dom-hero-card{background:linear-gradient(180deg,rgba(255,255,255,.045),rgba(255,255,255,.014));border-color:rgba(255,255,255,.08);box-shadow:0 1px 0 rgba(255,255,255,.05) inset,0 16px 38px -18px rgba(0,0,0,.7)}
+.dom-hero-letter{width:52px;height:52px;border-radius:14px;display:flex;align-items:center;justify-content:center;font-family:var(--font-head);font-weight:800;font-size:21px;flex-shrink:0}
+.dom-hero-info{flex:1;min-width:0}
+.dom-hero-info h1{font-size:21px;font-weight:800;letter-spacing:-.3px;margin:2px 0 6px;line-height:1.25}
+.dom-hero-info p{font-size:14px;color:var(--mu);line-height:1.6}
+.dom-actions{display:flex;gap:8px;align-items:center;margin-bottom:20px;flex-wrap:wrap}
+.dom-act-btn{display:inline-flex;align-items:center;gap:7px;background:var(--s);border:1px solid var(--bo);color:var(--dk);border-radius:12px;padding:10px 16px;font-size:14px;font-weight:700;cursor:pointer;font-family:var(--font);transition:all .2s cubic-bezier(.34,1.2,.64,1)}
+.dom-act-btn:hover{border-color:rgba(var(--or-rgb),.4);transform:translateY(-1px)}
+.dom-act-primary{background:var(--or);color:#fff;border-color:transparent;box-shadow:0 4px 16px rgba(var(--or-rgb),.35)}
+.dom-act-primary:hover{box-shadow:0 6px 22px rgba(var(--or-rgb),.45)}
+.dom-fav-btn{margin-left:auto}
+.dh-solo{display:none} /* alleen nodig als h4-anker voor printSam(), niet zichtbaar */
+#sc-domein .dtop{border-top:none}

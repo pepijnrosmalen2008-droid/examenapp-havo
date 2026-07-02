@@ -1,4 +1,7 @@
 // ═══════ OPEN VAK ═══════
+// Functie i.p.v. top-level const: vak.js laadt vóór features.js (waar ICO_DOC/
+// ICO_STAR gedefinieerd worden), dus deze moet pas bij aanroep evalueren.
+function _ceStatusMap(){return{'CE':{cls:'CE',icon:ICO_DOC,txt:'Centraal Examen'},'SE':{cls:'SE',icon:ICO_DOC,txt:'Schoolexamen'},'CE+SE':{cls:'CESE',icon:ICO_DOC,txt:'CE + Schoolexamen'},'DEELS CE':{cls:'DEELS',icon:ICO_DOC,txt:'Deels CE'},'CE-KERN':{cls:'CE',icon:ICO_STAR,txt:'Kern van het CE'}};}
 function openVak(id,_noHash){
   ST.vak=getVK().find(v=>v.id===id);
   if(!_noHash)_pushHash(APP_LEVEL+'-'+(_VAK_SLUG[id]||id));
@@ -157,43 +160,22 @@ function openVak(id,_noHash){
     const _pbData=getPB(ST.vak.id,d.id);
     const pbChip=_pbData?`<span class="pb-chip">${ICO_STAR} PB: ${Math.round(_pbData.score*100)}%</span>`:'';
     const progHtml=r.hasData?`<div class="dom-progress"><div class="dp-bar"><div class="dp-fill" style="width:${Math.round(r.pct*100)}%"></div></div><span class="dp-txt">${Math.round(r.pct*100)}%${bestChip}${pbChip}</span></div>`:'';
-    const _ceMap={'CE':{cls:'CE',icon:ICO_DOC,txt:'Centraal Examen'},'SE':{cls:'SE',icon:ICO_DOC,txt:'Schoolexamen'},'CE+SE':{cls:'CESE',icon:ICO_DOC,txt:'CE + Schoolexamen'},'DEELS CE':{cls:'DEELS',icon:ICO_DOC,txt:'Deels CE'},'CE-KERN':{cls:'CE',icon:ICO_STAR,txt:'Kern van het CE'}};
-    const _csInfo=d.ceStatus&&_ceMap[d.ceStatus];
+    const _csInfo=d.ceStatus&&_ceStatusMap()[d.ceStatus];
     const csBadge=_csInfo?`<div class="dom-ce-badge dom-ce-${_csInfo.cls}">${_csInfo.icon} ${_csInfo.txt}</div>`:'';
     const el=document.createElement('div');
     el.className='dc2';
     el.dataset.domeinId=d.id;
     el.innerHTML=`
-      <div class="dh" onclick="toggleD('top-${d.id}')">
+      <div class="dh" onclick="openDomein('${d.id}')">
         <div class="dlet" style="background:${ST.vak.kleur}22;color:${ST.vak.kleur}">${d.id}</div>
         <div class="di"><h4>Domein ${d.id}: ${d.naam}${decayDot}</h4>${csBadge}<p>${d.beschrijving}</p>${progHtml}</div>
         <div class="dbtns">
           <button class="fav-btn${isFav(ST.vak.id,d.id)?' active':''}" id="fav-${d.id}" onclick="event.stopPropagation();const on=toggleFav('${ST.vak.id}','${d.id}');this.classList.toggle('active',on)" aria-label="Favoriet">${ICO_STAR}</button>
-          <button class="exb" id="exb-${d.id}" onclick="event.stopPropagation();toggleD('top-${d.id}')">${ICO_CHEVRON} Leerstof</button>
+          <button class="exb" id="exb-${d.id}" onclick="event.stopPropagation();openDomein('${d.id}')">${ICO_CHEVRON} Leerstof</button>
           <button class="qb" onclick="event.stopPropagation();openQmode('${d.id}')">${ICO_PLAY} Quiz</button>
         </div>
-      </div>
-      <div class="dtop" id="top-${d.id}">
-        <div class="dtab-bar">
-          <button class="dtab-btn dtab-active" data-tab="theorie">${ICO_BOOK} Theorie</button>
-          <button class="dtab-btn" data-tab="quiz">${ICO_ZAP} Test jezelf</button>
-          <button class="dtab-btn dtab-vid-tab" data-tab="vids" style="display:none">${ICO_VIDEO} Video's</button>
-        </div>
-        <div class="dtab-pane dtab-vis" data-tab-id="theorie">
-          <p class="dom-intro">${d.beschrijving}</p>
-          <div class="tlbl" style="margin-top:14px">CE-onderwerpen</div>
-          <div class="ttags">${d.onderwerpen.map(o=>`<span class="tt">${o}</span>`).join('')}</div>
-          <div class="tlbl">Samenvatting</div>
-          <div class="sam">${SAM_RICH[ST.vak.id+'_'+d.id]||d.sam}</div>
-          ${d.val&&d.val.length?`<div class="sam-val"><ul>${d.val.map(v=>`<li>${v}</li>`).join('')}</ul></div>`:''}
-          ${d.binas&&d.binas.length?`<div class="sam-binas">${d.binas.map(b=>`<span class="sam-binas-tag">${b}</span>`).join('')}</div>`:''}
-          <div class="sam-cta"><button class="sam-cta-btn" onclick="event.stopPropagation();openQmode('${d.id}')">${ICO_PLAY} Oefenen op dit domein</button><button class="sam-print-btn" onclick="event.stopPropagation();printSam()">${ICO_DOC} Samenvatting printen</button></div>
-        </div>
-        <div class="dtab-pane" data-tab-id="quiz"></div>
-        <div class="dtab-pane" data-tab-id="vids"></div>
       </div>`;
     dl.appendChild(el);
-    initSamInteractive(el, d);
   });
   initMf();
   updateLpEntryCard();
@@ -643,9 +625,76 @@ function printSam() {
   setTimeout(() => w.print(), 300);
 }
 
-function toggleD(id){
-  const el=document.getElementById(id);
-  el.classList.toggle('on');
+// ═══════ DOMEIN-PAGINA (dedicated leerstof-scherm per domein) ═══════
+function openDomein(domId,_noHash){
+  if(!ST.vak)return;
+  const d=ST.vak.domeinen.find(x=>x.id===domId);
+  if(!d)return;
+  const v=ST.vak;
+  ST.domein=d;
+  if(!_noHash)_pushHash(APP_LEVEL+'-'+(_VAK_SLUG[v.id]||v.id)+'-'+domId.toLowerCase());
+
+  const bc=document.getElementById('dom-breadcrumb');
+  if(bc)bc.innerHTML=`<span class="det-bc-home" onclick="show('sc-home')"><svg class="ico" viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 10.5 12 3l9 7.5"/><path d="M5 9.5V21h14V9.5"/></svg> Home</span><span class="det-bc-sep">›</span><span class="det-bc-home" onclick="backFromDomein()" style="cursor:pointer">${v.naam}</span><span class="det-bc-sep">›</span><span class="det-bc-cur">Domein ${d.id}</span>`;
+
+  const lvlBadge=document.getElementById('dom-level-badge');
+  if(lvlBadge)lvlBadge.textContent=APP_LEVEL==='vwo'?'VWO':'HAVO';
+
+  const r=getDomeinBestPct(v.id,d.id);
+  const _pbData=getPB(v.id,d.id);
+  const bestChip=r.hasData?`<span style="font-size:12px;color:var(--mu);font-weight:600;margin-left:6px">Record: ${Math.round(r.pct*100)}%</span>`:'';
+  const pbChip=_pbData?`<span class="pb-chip">${ICO_STAR} PB: ${Math.round(_pbData.score*100)}%</span>`:'';
+  const progHtml=r.hasData?`<div class="dom-progress"><div class="dp-bar"><div class="dp-fill" style="width:${Math.round(r.pct*100)}%"></div></div><span class="dp-txt">${Math.round(r.pct*100)}%${bestChip}${pbChip}</span></div>`:'';
+  const _csInfo=d.ceStatus&&_ceStatusMap()[d.ceStatus];
+  const csBadge=_csInfo?`<div class="dom-ce-badge dom-ce-${_csInfo.cls}">${_csInfo.icon} ${_csInfo.txt}</div>`:'';
+
+  const hero=document.getElementById('dom-hero');
+  if(hero)hero.innerHTML=`<div class="dom-hero-card">
+    <div class="dom-hero-letter" style="background:${v.kleur}22;color:${v.kleur}">${d.id}</div>
+    <div class="dom-hero-info">
+      ${csBadge}
+      <h1>Domein ${d.id}: ${d.naam}</h1>
+      <p>${d.beschrijving}</p>
+      ${progHtml}
+    </div>
+  </div>`;
+
+  const actions=document.getElementById('dom-actions');
+  if(actions)actions.innerHTML=`
+    <button class="dom-act-btn dom-act-primary" onclick="openQmode('${d.id}')">${ICO_PLAY} Snelle quiz</button>
+    <button class="dom-act-btn" onclick="lpStartFlash('${d.id}')">${ICO_ZAP} Flashcards</button>
+    <button class="fav-btn dom-fav-btn${isFav(v.id,d.id)?' active':''}" onclick="const on=toggleFav('${v.id}','${d.id}');this.classList.toggle('active',on)" aria-label="Favoriet">${ICO_STAR}</button>`;
+
+  const contentEl=document.getElementById('dom-content');
+  if(contentEl){
+    contentEl.innerHTML=`
+      <div class="dh-solo"><h4>Domein ${d.id}: ${d.naam}</h4></div>
+      <div class="dtop on">
+        <div class="dtab-bar">
+          <button class="dtab-btn dtab-active" data-tab="theorie">${ICO_BOOK} Theorie</button>
+          <button class="dtab-btn" data-tab="quiz">${ICO_ZAP} Test jezelf</button>
+          <button class="dtab-btn dtab-vid-tab" data-tab="vids" style="display:none">${ICO_VIDEO} Video's</button>
+        </div>
+        <div class="dtab-pane dtab-vis" data-tab-id="theorie">
+          <p class="dom-intro">${d.beschrijving}</p>
+          <div class="tlbl" style="margin-top:14px">CE-onderwerpen</div>
+          <div class="ttags">${d.onderwerpen.map(o=>`<span class="tt">${o}</span>`).join('')}</div>
+          <div class="tlbl">Samenvatting</div>
+          <div class="sam">${SAM_RICH[v.id+'_'+d.id]||d.sam}</div>
+          ${d.val&&d.val.length?`<div class="sam-val"><ul>${d.val.map(x=>`<li>${x}</li>`).join('')}</ul></div>`:''}
+          ${d.binas&&d.binas.length?`<div class="sam-binas">${d.binas.map(b=>`<span class="sam-binas-tag">${b}</span>`).join('')}</div>`:''}
+          <div class="sam-cta"><button class="sam-cta-btn" onclick="openQmode('${d.id}')">${ICO_PLAY} Oefenen op dit domein</button><button class="sam-print-btn" onclick="printSam()">${ICO_DOC} Samenvatting printen</button></div>
+        </div>
+        <div class="dtab-pane" data-tab-id="quiz"></div>
+        <div class="dtab-pane" data-tab-id="vids"></div>
+      </div>`;
+    initSamInteractive(contentEl,d);
+  }
+
+  show('sc-domein',true);
+}
+function backFromDomein(){
+  show('sc-detail',true);
 }
 
 // ═══════ QUIZ DRAFT (crash recovery) ═══════

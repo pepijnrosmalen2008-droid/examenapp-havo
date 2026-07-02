@@ -14,11 +14,15 @@ function _pushHash(h){if((location.hash||'#').slice(1)!==h)history.pushState(nul
 function _routeFromHash(){
   const h=(location.hash||'').slice(1);
   if(!h){show('sc-home');return;}
-  // vak: #havo-biologie of #vwo-wiskunde-a
+  // vak: #havo-biologie of #vwo-wiskunde-a; domein: #havo-biologie-a
   const vm=h.match(/^(havo|vwo)-(.+)$/);
   if(vm){
-    const [,niv,slug]=vm;
-    const id=_SLUG_VAK[slug];
+    const [,niv,rest]=vm;
+    let id=_SLUG_VAK[rest],domLetter=null;
+    if(!id){
+      const dm=rest.match(/^(.+)-([a-z])$/);
+      if(dm&&_SLUG_VAK[dm[1]]){id=_SLUG_VAK[dm[1]];domLetter=dm[2].toUpperCase();}
+    }
     if(id){
       // Zorg dat de niveau-data geladen is voordat we het vak openen
       if(typeof ensureLevelData==='function'&&typeof _levelLoaded==='function'&&!_levelLoaded(niv)){
@@ -26,7 +30,11 @@ function _routeFromHash(){
       }
       if(niv!==APP_LEVEL){APP_LEVEL=niv;localStorage.setItem('examenapp_level',niv);applyLevelTheme(niv);}
       const vak=getVK().find(v=>v.id===id);
-      if(vak){openVak(id,true);return;}
+      if(vak){
+        openVak(id,true);
+        if(domLetter&&vak.domeinen.some(d=>d.id===domLetter))openDomein(domLetter,true);
+        return;
+      }
     }
   }
   // zoekscherm: bouwt de index lazy op
