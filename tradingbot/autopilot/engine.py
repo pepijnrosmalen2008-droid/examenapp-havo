@@ -16,7 +16,7 @@ intent het journal in (crash-safe, geen dubbele orders).
 from __future__ import annotations
 
 import logging
-from datetime import datetime, timezone
+from datetime import datetime, timedelta, timezone
 from zoneinfo import ZoneInfo
 
 from .config import AppConfig, TradingMode
@@ -104,10 +104,18 @@ class TradingEngine:
         if self.risk.is_halted():
             log.info("cycle overgeslagen: bot is permanent gestopt (max drawdown)")
             return
+        if self._cb_paused(now):
+            log.warning("cycle overgeslagen: circuit breaker cooldown (API-storingen)")
+            return
 
         self.reconcile()
 
-        prices = {pair: self.x.ticker_price(pair) for pair in self.cfg.pairs}
+        try:
+            prices = {pair: self.x.ticker_price(pair) for pair in self.cfg.pairs}
+        except Exception:
+            self._cb_failure(now)
+            raise
+        self.db.set_meta("cb_failures", "0")  # data komt weer door
         positions = self.db.open_positions()
         self._update_peaks(positions, prices)
 
@@ -142,11 +150,15 @@ class TradingEngine:
             log.info("cycle: dag-pauze actief, geen handel")
             return
 
-        # ── per-positie SL/TP exits ──────────────────────────────────
+        # ── per-positie SL/TP exits (gaan ook bij wijde spread altijd door:
+        #    kapitaal beschermen weegt zwaarder dan fill-kwaliteit) ─────
         for pos in self.db.open_positions():
             exit_sig = self.risk.position_exit_signal(pos, prices[pos.pair])
             if exit_sig:
                 self._route_signal(exit_sig, prices)
+
+        # ── circuit breaker: pairs met abnormale spread deze cycle overslaan ──
+        blocked_pairs = self._spread_blocked_pairs()
 
         # ── strategie ────────────────────────────────────────────────
         candles = {}
@@ -157,6 +169,8 @@ class TradingEngine:
                        for pair in self.cfg.pairs}
         signals = self.strategy.generate_signals(candles, self.db.open_positions(), now)
         for sig in self.regime.apply(signals, self.x):
+            if sig.pair in blocked_pairs:
+                continue
             self._route_signal(sig, prices, now=now)
 
     # ── uitvoering ────────────────────────────────────────────────────
@@ -245,6 +259,52 @@ class TradingEngine:
             sig = Signal(pair=pos.pair, side=Side.SELL, amount_asset=pos.amount,
                          reason=f"kill-switch liquidatie: {reason}", strategy="risk")
             self._route_signal(sig, prices, forced=True)
+
+    # ── circuit breakers ─────────────────────────────────────────────
+
+    def _cb_paused(self, now: datetime) -> bool:
+        raw = self.db.get_meta("cb_pause_until")
+        if not raw:
+            return False
+        if now >= datetime.fromisoformat(raw):
+            self.db.del_meta("cb_pause_until")
+            log.info("circuit breaker: cooldown voorbij, handel hervat")
+            return False
+        return True
+
+    def _cb_failure(self, now: datetime) -> None:
+        cb = self.cfg.circuit_breaker
+        if not cb.enabled:
+            return
+        n = int(self.db.get_meta_float("cb_failures", 0)) + 1
+        self.db.set_meta("cb_failures", str(n))
+        log.warning("circuit breaker: API-storing %d/%d", n, cb.max_consecutive_failures)
+        if n >= cb.max_consecutive_failures:
+            until = (now + timedelta(minutes=cb.cooldown_minutes)).isoformat(timespec="seconds")
+            self.db.set_meta("cb_pause_until", until)
+            self.db.set_meta("cb_failures", "0")
+            log.error("circuit breaker OPEN: %d storingen op rij → geen handel tot %s", n, until)
+            self.notify.send(f"🔌 Circuit breaker: {n} API-storingen op rij; "
+                             f"bot pauzeert {cb.cooldown_minutes} min (tot {until} UTC).")
+
+    def _spread_blocked_pairs(self) -> set[str]:
+        cb = self.cfg.circuit_breaker
+        if not cb.enabled or not hasattr(self.x, "spread_pct"):
+            return set()
+        blocked: set[str] = set()
+        for pair in self.cfg.pairs:
+            try:
+                sp = self.x.spread_pct(pair)
+            except Exception:  # noqa: BLE001 — spread-check is best-effort
+                continue
+            if sp is not None and sp > cb.max_spread_pct:
+                blocked.add(pair)
+                reason = (f"circuit breaker: spread {sp:.2f}% > {cb.max_spread_pct}% — "
+                          f"{pair} deze cycle niet verhandeld (exits blijven actief)")
+                log.warning(reason)
+                self.db.log_risk_decision(pair=pair, side=None, allowed=False,
+                                          reason=reason, requested_eur=None, approved_eur=None)
+        return blocked
 
     # ── hulpfuncties ─────────────────────────────────────────────────
 

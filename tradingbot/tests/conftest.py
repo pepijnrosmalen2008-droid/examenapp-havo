@@ -54,9 +54,16 @@ class FakeMarket:
     def __init__(self, prices: dict[str, float] | None = None):
         self.prices = prices or {"BTC-EUR": 50_000.0, "ETH-EUR": 2_500.0}
         self.candle_data: dict[str, list[tuple]] = {}
+        self.spreads: dict[str, float] = {}
+        self.fail_ticker = False  # True → ticker_price gooit (circuit-breaker-tests)
 
     def ticker_price(self, pair: str) -> float:
+        if self.fail_ticker:
+            raise ConnectionError("gesimuleerde API-storing")
         return self.prices[pair]
+
+    def spread_pct(self, pair: str) -> float | None:
+        return self.spreads.get(pair)
 
     def candles(self, pair: str, interval: str = "1h", limit: int = 200, since_ms=None) -> list[tuple]:
         data = self.candle_data.get(pair, [])

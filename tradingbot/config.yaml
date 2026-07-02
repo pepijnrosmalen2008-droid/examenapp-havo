@@ -28,6 +28,12 @@ regime:
   ema_days: 200
   exempt: [dca]              # dca koopt juist bij in dalingen; niet filteren
 
+circuit_breaker:
+  enabled: true
+  max_consecutive_failures: 3  # zoveel mislukte cycles op rij → cooldown
+  cooldown_minutes: 30
+  max_spread_pct: 1.0          # wijdere bid/ask-spread → pair die cycle overslaan (exits blijven)
+
 costs:
   taker_fee_pct: 0.25        # Bitvavo taker fee cat. A — check actueel tarief op bitvavo.com/nl/fees
   slippage_pct: 0.1

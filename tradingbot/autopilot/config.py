@@ -62,6 +62,18 @@ class StrategyConfig(BaseModel):
     params: dict = Field(default_factory=dict)
 
 
+class CircuitBreakerConfig(BaseModel):
+    model_config = ConfigDict(extra="forbid")
+
+    enabled: bool = True
+    max_consecutive_failures: int = Field(default=3, ge=1, le=20,
+                                          description="Zoveel mislukte cycles op rij → cooldown")
+    cooldown_minutes: int = Field(default=30, ge=1, le=24 * 60)
+    max_spread_pct: float = Field(default=1.0, gt=0, le=10,
+                                  description="Bid/ask-spread waarboven een pair die cycle "
+                                              "niet door strategieën verhandeld wordt")
+
+
 class RegimeConfig(BaseModel):
     model_config = ConfigDict(extra="forbid")
 
@@ -98,6 +110,7 @@ class AppConfig(BaseModel):
     schedule: ScheduleConfig
     costs: BacktestCostConfig = Field(default_factory=BacktestCostConfig)
     regime: RegimeConfig = Field(default_factory=RegimeConfig)
+    circuit_breaker: CircuitBreakerConfig = Field(default_factory=CircuitBreakerConfig)
 
     @field_validator("pairs")
     @classmethod

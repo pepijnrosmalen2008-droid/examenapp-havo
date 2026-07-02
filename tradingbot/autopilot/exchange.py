@@ -45,6 +45,14 @@ class MarketData:
         t = self._x.fetch_ticker(pair.replace("-", "/"))
         return float(t["last"])
 
+    def spread_pct(self, pair: str) -> float | None:
+        """Bid/ask-spread in %, of None als de exchange geen bid/ask geeft."""
+        t = self._x.fetch_ticker(pair.replace("-", "/"))
+        bid, ask = t.get("bid"), t.get("ask")
+        if not bid or not ask or bid <= 0:
+            return None
+        return (ask - bid) / ((ask + bid) / 2) * 100
+
     def candles(self, pair: str, interval: str = "1h", limit: int = 200,
                 since_ms: int | None = None) -> list[tuple]:
         """Geeft [(ts, open, high, low, close, volume), ...] oplopend op tijd."""
@@ -125,6 +133,10 @@ class PaperExchange:
 
     def ticker_price(self, pair: str) -> float:
         return self.market.ticker_price(pair)
+
+    def spread_pct(self, pair: str) -> float | None:
+        fn = getattr(self.market, "spread_pct", None)
+        return fn(pair) if fn else None
 
     def candles(self, pair: str, interval: str = "1h", limit: int = 200,
                 since_ms: int | None = None) -> list[tuple]:
