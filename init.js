@@ -418,9 +418,16 @@ window.addEventListener('load',()=>{
   const _qp=new URLSearchParams(location.search);
   const _qniv=_qp.get('niveau'), _qvak=_qp.get('vak'), _qdom=_qp.get('domein');
   if(_qniv&&_qvak&&_VAK_SLUG[_qvak]){
-    history.replaceState(null,'','#'+_qniv+'-'+_VAK_SLUG[_qvak]);
-    // Sla domein op in sessionStorage; vak.js pakt het op bij openVak()
-    if(_qdom){try{sessionStorage.setItem('_slagio_open_domein',_qdom);}catch(e){}}
+    if(_qdom){
+      // Domein deep-link: bewaar domein en route via hash (openVak pakt het op).
+      history.replaceState(null,'','#'+_qniv+'-'+_VAK_SLUG[_qvak]);
+      try{sessionStorage.setItem('_slagio_open_domein',_qdom);}catch(e){}
+    }else{
+      // Vak deep-link: leg meteen de echte vak-URL vast en open het vak.
+      const _url='/vakken/'+_qniv+'-'+_VAK_SLUG[_qvak]+'.html';
+      history.replaceState(null,'',_url);
+      if(typeof _routeVakkenPath==='function'){setTimeout(()=>_routeVakkenPath(_url),80);return;}
+    }
   }
   // Path-based routing: /havo en /vwo
   const _path=location.pathname.replace(/\/$/,'');

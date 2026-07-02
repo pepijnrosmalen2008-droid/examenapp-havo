@@ -55,22 +55,33 @@ function _routeFromPath(){
   show('sc-welcome',true);
   _updatePageSEO(null);
 }
+// Open het juiste in-app scherm voor een echte /vakken/-URL:
+//   /vakken/<niveau>-<vak>.html               → vak-detail
+//   /vakken/<niveau>-<vak>-domein-<x>.html     → leerstof van dat domein
+// Retourneert true als de URL herkend en afgehandeld is. Wordt gebruikt door
+// popstate (terug/vooruit) én door de query-param deep-link in init.js, zodat
+// de in-app URL exact samenvalt met de statische SEO-pagina.
+function _routeVakkenPath(path){
+  const dm=path.match(/^\/vakken\/(havo|vwo)-(.+)-domein-([a-z])\.html$/);
+  const vm=!dm&&path.match(/^\/vakken\/(havo|vwo)-(.+)\.html$/);
+  const m=dm||vm;
+  if(!m)return false;
+  const niv=m[1],id=_SLUG_VAK[m[2]],letter=dm?dm[3].toUpperCase():null;
+  if(!id)return false;
+  const go=()=>{
+    if(niv!==APP_LEVEL){APP_LEVEL=niv;localStorage.setItem('examenapp_level',niv);applyLevelTheme(niv);}
+    const vak=getVK().find(v=>v.id===id);
+    if(!vak)return;
+    if(!ST.vak||ST.vak.id!==id)openVak(id,true);
+    if(letter){if(vak.domeinen.some(d=>d.id===letter))openDomein(letter,true);}
+    else show('sc-detail',true); // vak-URL zonder domein → toon (of blijf op) detail
+  };
+  if(typeof ensureLevelData==='function'&&typeof _levelLoaded==='function'&&!_levelLoaded(niv)){ensureLevelData(niv,go);}else go();
+  return true;
+}
 window.addEventListener('popstate',()=>{
   const path=location.pathname.replace(/\/$/,'');
-  // Domein-URL (/vakken/<niveau>-<vak>-domein-<x>.html) → heropen dat domein in-app
-  const dm=path.match(/^\/vakken\/(havo|vwo)-(.+)-domein-([a-z])\.html$/);
-  if(dm){
-    const niv=dm[1],id=_SLUG_VAK[dm[2]],letter=dm[3].toUpperCase();
-    if(id){
-      const go=()=>{
-        if(niv!==APP_LEVEL){APP_LEVEL=niv;localStorage.setItem('examenapp_level',niv);applyLevelTheme(niv);}
-        const vak=getVK().find(v=>v.id===id);
-        if(vak){if(!ST.vak||ST.vak.id!==id)openVak(id,true);if(vak.domeinen.some(d=>d.id===letter))openDomein(letter,true);}
-      };
-      if(typeof ensureLevelData==='function'&&typeof _levelLoaded==='function'&&!_levelLoaded(niv)){ensureLevelData(niv,go);}else go();
-      return;
-    }
-  }
+  if(_routeVakkenPath(path))return;
   if(path==='/havo'||path==='/vwo'){_routeFromPath();return;}
   if(path==='/'||path===''){
     // terug naar niveau-kiezer

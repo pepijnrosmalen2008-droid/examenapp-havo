@@ -4,7 +4,13 @@
 function _ceStatusMap(){return{'CE':{cls:'CE',icon:ICO_DOC,txt:'Centraal Examen'},'SE':{cls:'SE',icon:ICO_DOC,txt:'Schoolexamen'},'CE+SE':{cls:'CESE',icon:ICO_DOC,txt:'CE + Schoolexamen'},'DEELS CE':{cls:'DEELS',icon:ICO_DOC,txt:'Deels CE'},'CE-KERN':{cls:'CE',icon:ICO_STAR,txt:'Kern van het CE'}};}
 function openVak(id,_noHash){
   ST.vak=getVK().find(v=>v.id===id);
-  if(!_noHash)_pushHash(APP_LEVEL+'-'+(_VAK_SLUG[id]||id));
+  // Echte, indexeerbare URL i.p.v. een hash: dezelfde URL als de statische
+  // SEO-pagina van dit vak (/vakken/<niveau>-<vak>.html). Zo is de in-app pagina
+  // deelbaar en valt hij samen met wat Google indexeert; herladen serveert die pagina.
+  if(!_noHash){
+    const _p='/vakken/'+APP_LEVEL+'-'+(_VAK_SLUG[id]||id)+'.html';
+    try{history.pushState({vak:id,niv:APP_LEVEL},'',_p);}catch(e){}
+  }
   document.getElementById('dtitle').textContent=ST.vak.naam;
   // Per-vak embleem (klein, solide) + groot hero-watermerk (sfeer) — zelfde icoon
   const _icoSvg=(typeof VAK_ICONS!=='undefined'&&VAK_ICONS[id])||'<circle cx="12" cy="12" r="4"/>';
@@ -700,6 +706,9 @@ function openDomein(domId,_noHash){
   show('sc-domein',true);
 }
 function backFromDomein(){
+  // Zet de URL terug op de vak-pagina zodat adresbalk en scherm samenvallen.
+  const v=ST.vak;
+  if(v){const _p='/vakken/'+APP_LEVEL+'-'+(_VAK_SLUG[v.id]||v.id)+'.html';try{history.pushState({vak:v.id,niv:APP_LEVEL},'',_p);}catch(e){}}
   show('sc-detail',true);
 }
 
