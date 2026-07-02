@@ -90,3 +90,53 @@ order-reconciliatie (fills buiten de cycle om). Voor robuustheid checkt deze
 implementatie elke cycle welke grid-levels de prijs is gepasseerd en handelt
 dan met market orders. Iets meer fee/slippage, veel minder state-complexiteit;
 de band wordt dagelijks herberekend op 30-dagen volatiliteit.
+
+## D13 — Portfolio heat behandelt alle crypto-posities als één risico-bucket
+
+`risk.max_portfolio_heat_pct` begrenst het totale kapitaal dat verdampt als álle
+stop-losses tegelijk afgaan (Σ positiewaarde × stop_loss_pct). Er wordt bewust
+géén correlatiematrix geschat: BTC/ETH-correlatie is historisch 0,7–0,9 en juist
+in crashes → 1. Rekenen met ρ=1 is conservatief, deterministisch en testbaar;
+een geschatte matrix zou schijnprecisie zijn. Kelly sizing is bewust weggelaten:
+dat vereist een betrouwbare edge-schatting die deze bot per definitie niet heeft.
+
+## D14 — Shadow mode is het live-pad minus de order, niet "paper met een ander label"
+
+SHADOW authenticeert met een echte (view-only) key, capt orders op het échte
+EUR-saldo en doorloopt de volledige risk/journal-flow — alleen de order zelf wordt
+gelogd + gesimuleerd. Dubbele verdediging: de echte client draait met
+`allow_trading=False`, dus zelfs een bug richting `place_market_order` wordt daar
+geweigerd. Geen extra sloten nodig (er kan niets verstuurd worden).
+
+## D15 — Regime-filter als aparte laag, geen stemmen-ensemble
+
+Een ensemble van meerdere strategieën die stemmen maakt "waarom deed de bot dit?"
+onbeantwoordbaar. Het regime-filter geeft de beoogde robuustheid (geen nieuwe
+long-exposure onder de EMA-200d) als dunne, uitlegbare laag tussen strategie en
+risk engine. dca is standaard exempt: die strategie wil juist bijkopen in dalingen.
+
+## D16 — Walk-forward selecteert op Sharpe, met bewust klein grid
+
+Grote parameter-grids vinden gegarandeerd een combinatie die het verleden
+perfect verklaart. De grids zijn daarom klein (3–9 combinaties) en de selectie
+gebeurt per venster op train-data alleen; het aaneengeschakelde out-of-sample
+resultaat is de enige maatstaf die telt. Live auto-tuning is er bewust niet
+(zie ook de review-discussie: dat is een overfitting-machine).
+
+## D17 — Monte Carlo met gedeelde blokken over pairs
+
+Block-bootstrap (24u-blokken) op log-returns, met dezelfde blokvolgorde voor
+alle pairs — anders vernietigt de resampling de BTC/ETH-correlatie en onderschat
+je het portfoliorisico structureel. Fees/slippage krijgen per run ±0,05pp jitter.
+
+## D18 — Spread-breaker blokkeert strategieën, nooit exits
+
+Bij een abnormale spread is een market order duur — maar een stop-loss níét
+uitvoeren is gevaarlijker dan een dure fill. Daarom blokkeert de spread-guard
+alleen strategie-signalen; SL/TP-exits en kill-switch-liquidaties gaan altijd door.
+
+## D19 — Dashboard is een gegenereerd statisch bestand
+
+`dashboard.py` schrijft self-contained HTML uit SQLite. Geen webserver-proces in
+de bot, geen poorten, geen dependencies in het kritieke pad: het dashboard kan
+letterlijk niet de trading loop breken. Verversen via cron/systemd-timer.

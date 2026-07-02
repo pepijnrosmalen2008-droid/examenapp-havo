@@ -90,12 +90,34 @@ risk:
   trailing_take_profit: false
   max_daily_loss_pct: 3
   max_drawdown_pct: 15
+  max_portfolio_heat_pct: 2  # max % kapitaal op risico als álle stops afgaan (weglaten = uit)
 strategy:
   name: dca                  # dca | momentum_ma_cross | grid
   params: { amount_eur: 10, every_hours: 24 }
 schedule:
   interval_minutes: 15
+regime:
+  enabled: false             # true = geen nieuwe BUY's onder de EMA-200d (bear-regime)
+  ema_days: 200
+  exempt: [dca]
+circuit_breaker:
+  enabled: true
+  max_consecutive_failures: 3  # zoveel mislukte cycles op rij → 30 min pauze
+  cooldown_minutes: 30
+  max_spread_pct: 1.0          # wijdere bid/ask-spread → pair die cycle overslaan
 ```
+
+**Portfolio heat**: `max_portfolio_heat_pct` begrenst het totale bedrag dat je kwijt
+bent als alle stop-losses tegelijk afgaan. Alle crypto-posities tellen als één
+gecorreleerde bucket (in crashes gaat de BTC/ETH-correlatie naar 1).
+
+**Regime-filter**: klassieke trendregel — geen nieuwe long-exposure zolang de prijs
+onder de lange-termijn EMA staat. Exits blijven altijd actief; `dca` is standaard
+uitgezonderd omdat die juist in dalingen wil bijkopen.
+
+**Circuit breakers**: na een reeks API-storingen pauzeert de bot (teller overleeft
+herstarts); bij een abnormale bid/ask-spread wordt dat pair die cycle niet door
+strategieën verhandeld. Stop-loss-exits gaan áltijd door, ook bij wijde spread.
 
 Strategie-parameters:
 
@@ -107,7 +129,20 @@ Strategie-parameters:
   SMA(24u) ± k·σ(30 dagen), dagelijks herberekend; koopt per level omlaag,
   verkoopt per level omhoog.
 
-## Van PAPER naar LIVE — drie sloten
+## Van PAPER via SHADOW naar LIVE
+
+Naast `PAPER` en `LIVE` is er een derde mode: **`SHADOW`**. Die doorloopt het
+volledige live-pad — authenticatie met je echte (view-only) key, je echte
+EUR-saldo als harde limiet, dezelfde risk/journal-flow — maar de order zelf wordt
+**nooit verstuurd**: hij wordt gelogd en intern gesimuleerd. Draai een strategie
+een paar maanden in SHADOW en vergelijk het dashboard met gewoon aanhouden;
+pas dan weet je of live gaan überhaupt te verdedigen is. SHADOW vereist geen
+extra sloten (er kan niets verstuurd worden) en de view-only client weigert
+bovendien zelf elke order (dubbele verdediging).
+
+Aanbevolen pad: `PAPER` (weken) → `SHADOW` (maanden) → pas daarna eventueel `LIVE`.
+
+## Van PAPER/SHADOW naar LIVE — drie sloten
 
 De bot weigert live te starten (en logt waarom) tenzij **alle drie** kloppen:
 
@@ -127,6 +162,17 @@ python status.py                 # huidige state uit SQLite (mode, equity, posit
 python status.py --balance      # + je echte Bitvavo-saldo (view-only key)
 python status.py --clear-halt   # drawdown-stop bewust opheffen na een halt
 python bot.py --once            # één cycle draaien (handig om te testen)
+python dashboard.py             # schrijft dashboard.html (zie hieronder)
+```
+
+**Dashboard**: `python dashboard.py` genereert een self-contained `dashboard.html`
+met equity-curve, drawdown (incl. kill-switch-drempel), P&L, hit ratio, Sharpe,
+open posities, orders en risk-blokkades — licht/donker automatisch. Het is een
+statisch bestand: geen backend, kan de trading loop niet raken. Ververs het
+periodiek en serveer het met elke webserver:
+
+```
+*/15 * * * *  cd /opt/autopilot && .venv/bin/python dashboard.py --out /var/www/html/index.html
 ```
 
 **Telegram** (optioneel): zet `TELEGRAM_BOT_TOKEN` en `TELEGRAM_CHAT_ID` in `.env`
@@ -164,14 +210,36 @@ grid                 €   424.82    -15.04%   15.41%    1171     46   -5.16  �
 buy-and-hold         €   830.50     66.10%   60.61%       2      —    0.60
 ```
 
+## Walk-forward validatie & Monte Carlo
+
+Eén backtest zegt weinig: hij verklaart gisteren. Twee tools geven een eerlijker beeld:
+
+```bash
+# rollend train/test-schema: parameters gekozen op alléén verleden data,
+# gehandeld out-of-sample; rapporteert per venster + totaal OOS vs buy-and-hold
+python walkforward.py --strategy momentum_ma_cross --from 2023-01-01 --to 2025-12-31
+
+# N gebootstrapte marktscenario's (24u-blokken, correlatie tussen pairs blijft
+# intact) + fee/slippage-jitter → verdeling i.p.v. één getal
+python backtest.py --strategy grid --monte-carlo 50 --from 2023-01-01 --to 2025-12-31
+```
+
+Vuistregels bij het lezen: presteert een strategie in-sample veel beter dan
+out-of-sample, dan is het grid aan het overfitten. Ligt de historische run ver
+boven de Monte Carlo-mediaan, dan was dat pad waarschijnlijk geluk. Pas als een
+strategie in walk-forward consistent is, in Monte Carlo geen rampscenario's
+produceert én maandenlang in PAPER/SHADOW overleeft, is er reden om over live
+na te denken — en zelfs dan bewijst niets dat de edge blijft bestaan.
+
 ## Tests
 
 ```bash
 python -m pytest tests/ -v
 ```
 
-58 tests; de risk engine is het zwaarst getest (elke limiet, elke kill switch,
-herstart-na-crash). Geen enkele test raakt de echte Bitvavo API.
+94 tests; de risk engine is het zwaarst getest (elke limiet, elke kill switch,
+portfolio heat, circuit breakers, herstart-na-crash). Geen enkele test raakt de
+echte Bitvavo API.
 
 ## Belasting (NL)
 
@@ -182,17 +250,22 @@ belastingadviseur als het serieus wordt.
 ## Projectstructuur
 
 ```
-bot.py            hoofdproces (trading loop)      status.py    state-CLI
-backtest.py       backtester-CLI                  config.yaml  risicoprofiel
+bot.py            hoofdproces (trading loop)      status.py     state-CLI
+backtest.py       backtester + Monte Carlo        walkforward.py walk-forward validatie
+dashboard.py      statisch HTML-dashboard          config.yaml   risicoprofiel
 autopilot/
-  config.py       pydantic-validatie + live-guardrails
-  engine.py       trading cycle, order-journal, kill-switch-orchestratie
-  risk.py         risk engine (aparte laag, eigen tests)
-  exchange.py     ccxt-wrapper: MarketData / BitvavoClient / PaperExchange
+  config.py       pydantic-validatie + live-guardrails (PAPER/SHADOW/LIVE)
+  engine.py       trading cycle, order-journal, kill switches, circuit breakers
+  risk.py         risk engine (aparte laag, eigen tests) incl. portfolio heat
+  regime.py       EMA-200d trendfilter tussen strategie en risk engine
+  exchange.py     ccxt-wrapper: MarketData / BitvavoClient / Paper / Shadow
+  backtesting.py  replay-machinerie (gedeeld door backtest/walk-forward/MC)
+  montecarlo.py   block-bootstrap stress-testing
   database.py     SQLite state store               notify.py    Telegram
   indicators.py   EMA / RSI / volatiliteit         logsetup.py  JSON-logs met rotatie
   strategies/     dca.py, ma_cross.py, grid.py (pluggable interface)
-tests/            58 tests (risk engine, kill switches, crash-recovery, strategieën)
+tests/            94 tests (risk engine, kill switches, crash-recovery, strategieën,
+                  heat, shadow, regime, circuit breakers, walk-forward, Monte Carlo)
 deploy/           autopilot.service (systemd)
 DECISIONS.md      motivatie van ontwerpkeuzes
 ```
