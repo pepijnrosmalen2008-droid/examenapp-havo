@@ -5671,3 +5671,13 @@ html.dark #sc-zoek mark{color:#ffd9c2}
 .dc2-flash{animation:dc2Flash 1.4s var(--zk-ease)}
 @keyframes dc2Flash{0%,100%{box-shadow:0 0 0 0 rgba(var(--or-rgb),0)}25%{box-shadow:0 0 0 3px rgba(var(--or-rgb),.35),0 0 26px -4px rgba(var(--or-rgb),.5)}}
 @media(prefers-reduced-motion:reduce){.zk-card,.zk-go,.zk-chip,.hm-zoek-teaser{transition:none!important}.zk-ans.open .zk-ans-b{animation:none!important}.dc2-flash{animation:none!important}}
+
+/* Recente zoekopdrachten (zoek empty-state) */
+.zk-recent{max-width:440px;margin:20px auto 0;text-align:left}
+.zk-recent-hd{display:flex;align-items:center;justify-content:space-between;margin-bottom:9px;padding:0 2px}
+.zk-recent-hd span{font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.5px;color:var(--mu)}
+.zk-recent-clr{border:none;background:none;color:var(--mu);font:600 12px var(--font);cursor:pointer;padding:2px 4px}
+.zk-recent-clr:hover{color:var(--or)}
+.zk-recent-chips{display:flex;flex-wrap:wrap;gap:8px}
+.zk-recent-chip{display:inline-flex;align-items:center;gap:6px}
+.zk-recent-chip svg{stroke:var(--mu);flex-shrink:0}

@@ -118,6 +118,7 @@ function _zkRun(query){
 
 // ── Navigatie vanuit een resultaat ──
 function zoekGoto(niveau,vakId,kind,domId){
+  try{ const _q=document.getElementById('zoek-q'); if(_q)_zkSaveRecent(_q.value); }catch(e){}
   try{
     if(niveau && typeof APP_LEVEL!=='undefined' && niveau!==APP_LEVEL){
       APP_LEVEL=niveau; localStorage.setItem('examenapp_level',niveau);
@@ -234,9 +235,26 @@ function _zkSearch(query){
   _zkBuildFilters();
   _zkRenderTabs();_zkStats();_zkRenderList(true);
 }
+const _ZK_RECENT='slagio_zoek_recent';
+function _zkGetRecent(){try{return JSON.parse(localStorage.getItem(_ZK_RECENT)||'[]');}catch(e){return[];}}
+function _zkSaveRecent(q){q=(q||'').trim();if(q.length<3)return;
+  let r=_zkGetRecent().filter(x=>x.toLowerCase()!==q.toLowerCase());
+  r.unshift(q);r=r.slice(0,6);try{localStorage.setItem(_ZK_RECENT,JSON.stringify(r));}catch(e){}}
+function _zkClearRecent(){try{localStorage.removeItem(_ZK_RECENT);}catch(e){}_zkEmpty();}
 function _zkEmpty(){
   const el=document.getElementById('zoek-res');
-  el.innerHTML='<div class="zk-state"><h3>Zoek in de hele kennisbank</h3><p>'+(_zoekIndex?_zoekIndex.length.toLocaleString('nl'):'Duizenden')+' vragen, begrippen en uitleg-fragmenten — HAVO &amp; VWO.</p></div>';
+  const rec=_zkGetRecent();
+  let recHtml='';
+  if(rec.length){
+    recHtml='<div class="zk-recent"><div class="zk-recent-hd"><span>Recent gezocht</span>'
+      +'<button class="zk-recent-clr" onclick="_zkClearRecent()">wissen</button></div>'
+      +'<div class="zk-recent-chips">'+rec.map(q=>'<button class="zk-chip zk-recent-chip" data-q="'+_zkEsc(q)+'">'
+      +'<svg viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>'
+      +_zkEsc(q)+'</button>').join('')+'</div></div>';
+  }
+  el.innerHTML='<div class="zk-state"><h3>Zoek in de hele kennisbank</h3><p>'+(_zoekIndex?_zoekIndex.length.toLocaleString('nl'):'Duizenden')+' vragen, begrippen en uitleg-fragmenten — HAVO &amp; VWO.</p></div>'+recHtml;
+  [].forEach.call(el.querySelectorAll('.zk-recent-chip'),c=>c.onclick=()=>{
+    const q=document.getElementById('zoek-q');q.value=c.getAttribute('data-q');_zkSearch(q.value);q.focus();});
 }
 function _zkBuildFilters(){
   const filt=document.getElementById('zoek-filters');
@@ -265,6 +283,9 @@ function openZoek(){
   show('sc-zoek');
   const q=document.getElementById('zoek-q');
   if(!_zkWired){ _zkWire(); _zkWired=true; }
+  // Pending query vanuit /zoek.html?q=… of een externe deeplink
+  try{const pend=sessionStorage.getItem('slagio_pending_zoek');
+    if(pend){sessionStorage.removeItem('slagio_pending_zoek');q.value=pend;}}catch(e){}
   _zkEnsureData(()=>{ buildZoekIndex(); if(!q.value)_zkEmpty(); else _zkSearch(q.value); });
   setTimeout(()=>{try{q.focus();}catch(e){}},80);
 }
@@ -275,6 +296,19 @@ function _zkWire(){
   chips.innerHTML=SUGG.map(s=>'<button class="zk-chip" data-q="'+s[0]+'">'+s[0]+'<small>'+s[1]+'</small></button>').join('');
   [].forEach.call(chips.querySelectorAll('.zk-chip'),c=>c.onclick=()=>{q.value=c.getAttribute('data-q');_zkSearch(q.value);q.focus();});
   let deb; q.addEventListener('input',()=>{clearTimeout(deb);const v=q.value;deb=setTimeout(()=>_zkSearch(v),120);});
+  q.addEventListener('keydown',e=>{if(e.key==='Enter'){_zkSaveRecent(q.value);q.blur();}else if(e.key==='Escape'){q.value='';_zkSearch('');}});
   clr.onclick=()=>{q.value='';_zkSearch('');q.focus();};
   res.addEventListener('click',ev=>{const b=ev.target.closest('.zk-ans-t');if(!b)return;const box=document.getElementById(b.getAttribute('data-t'));if(box)box.classList.toggle('open');});
 }
+
+// Globale sneltoets: "/" opent de zoek van overal in de app (tenzij je typt).
+document.addEventListener('keydown',function(e){
+  if(e.key!=='/'||e.metaKey||e.ctrlKey||e.altKey)return;
+  const t=e.target,tag=(t&&t.tagName||'').toLowerCase();
+  if(tag==='input'||tag==='textarea'||tag==='select'||(t&&t.isContentEditable))return;
+  if(typeof APP_LEVEL==='undefined')return;               // pas na niveaukeuze
+  const cur=document.querySelector('.sc.on');
+  if(cur&&(cur.id==='sc-q'||cur.id==='sc-simtoets'))return;// niet tijdens een toets
+  e.preventDefault();
+  if(window.openZoek)openZoek();
+});
