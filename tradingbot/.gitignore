@@ -1,0 +1,20 @@
+# Secrets — NEVER commit
+.env
+
+# Runtime state & data
+*.db
+*.db-journal
+*.db-wal
+*.db-shm
+data-cache/
+logs/
+
+# Live-mode confirmation file (personal, per machine)
+I_UNDERSTAND_THE_RISKS.txt
+
+# Python
+__pycache__/
+*.pyc
+.pytest_cache/
+.venv/
+venv/

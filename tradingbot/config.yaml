@@ -1,0 +1,27 @@
+# Autopilot configuratie — gevalideerd met pydantic bij startup (fail hard).
+# Er is bewust géén "target growth"-parameter: de bot belooft geen rendement.
+
+mode: PAPER                  # PAPER | LIVE (LIVE vereist óók TRADING_MODE=LIVE én I_UNDERSTAND_THE_RISKS.txt)
+capital_eur: 500             # startkapitaal dat de bot mag beheren
+pairs: [BTC-EUR, ETH-EUR]    # whitelist, bot handelt nooit buiten deze lijst
+
+risk:
+  max_position_pct: 20       # max % van kapitaal per positie
+  stop_loss_pct: 5           # per positie
+  take_profit_pct: 10        # per positie
+  trailing_take_profit: false
+  max_daily_loss_pct: 3      # dag-kill-switch: alles sluiten + 24u pauze
+  max_drawdown_pct: 15       # totale kill-switch: alles naar EUR + permanent stoppen
+
+strategy:
+  name: dca                  # dca | momentum_ma_cross | grid
+  params:
+    amount_eur: 10           # (dca) vast bedrag per koop
+    every_hours: 24          # (dca) koopinterval
+
+schedule:
+  interval_minutes: 15
+
+costs:
+  taker_fee_pct: 0.25        # Bitvavo taker fee cat. A — check actueel tarief op bitvavo.com/nl/fees
+  slippage_pct: 0.1
