@@ -108,29 +108,40 @@ def main() -> int:
     signal.signal(signal.SIGTERM, _stop)
 
     interval = cfg.schedule.interval_minutes * 60
+    HEARTBEAT = 60  # elke minuut equity verversen + naar de site sturen (zonder te handelen)
     notifier = engine.notify
     portal = build_portal()
     if isinstance(notifier, TelegramNotifier):
         notifier.send(f"🤖 Autopilot gestart in {mode.value} mode "
-                      f"({cfg.strategy.name}, {', '.join(cfg.pairs)})")
+                      f"({cfg.strategy.name}, {len(cfg.pairs)} markt(en))")
 
-    while _running:
-        started = time.monotonic()
+    def run_cycle() -> None:
         try:
             engine.cycle()
             if isinstance(notifier, TelegramNotifier):
                 notifier.maybe_daily_summary(db, cfg, datetime.now(timezone.utc))
         except Exception:  # noqa: BLE001 — loop mag nooit sterven aan een enkele fout
             log.exception("cycle mislukt; volgende poging over %d min", cfg.schedule.interval_minutes)
-        portal_tick(portal, engine, db, cfg, mode.value)  # best-effort, gooit nooit
-        if engine.risk.is_halted() or args.once:
-            break
-        # slaap in stukjes zodat SIGTERM snel doorkomt
-        remaining = max(0.0, interval - (time.monotonic() - started))
-        while _running and remaining > 0:
-            step = min(5.0, remaining)
+        portal_tick(portal, engine, db, cfg, mode.value)
+
+    run_cycle()  # meteen een volwaardige handelscyclus bij de start
+    last_cycle = time.monotonic()
+
+    while _running and not (engine.risk.is_halted() or args.once):
+        # hartslag: elke ~minuut prijzen/equity verversen en naar de site sturen
+        slept = 0.0
+        while _running and slept < HEARTBEAT:
+            step = min(5.0, HEARTBEAT - slept)
             time.sleep(step)
-            remaining -= step
+            slept += step
+        if not _running:
+            break
+        if time.monotonic() - last_cycle >= interval:
+            run_cycle()                        # volwaardige handelscyclus (elke `interval`)
+            last_cycle = time.monotonic()
+        else:
+            engine.refresh_snapshot()          # alleen equity verversen, niet handelen
+            portal_tick(portal, engine, db, cfg, mode.value)
 
     db.close()
     log.info("Autopilot gestopt.")

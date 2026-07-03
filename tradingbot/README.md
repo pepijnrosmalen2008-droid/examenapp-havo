@@ -216,9 +216,20 @@ Wil je de bot vanaf je telefoon of een andere computer volgen, dan is er een
 beveiligd portaal: **https://slagio.nl/bot.html** (staat live zodra deze branch
 naar `main` is gemerged; lokaal testen kan door `bot.html` in een browser te openen).
 
-**Wat het is**: een read-only dashboard (status, equity, drawdown, posities,
-orders, risk-blokkades) met één afstandsbediening — een **noodstop** die alle
-posities naar EUR verkoopt en de bot permanent stopt. Bewust NIET op afstand
+**Wat het is**: een crypto-app-achtig dashboard (portefeuillewaarde, verloop,
+je bezit per coin met live prijs en winst/verlies, orders, risk-blokkades) dat
+**~elke minuut** ververst, met één afstandsbediening — een **noodstop** die alle
+posities naar EUR verkoopt en de bot permanent stopt. De bot doet een volwaardige
+handelscyclus elke `interval_minutes`, maar stuurt tussendoor elke ~60s een verse
+statusupdate naar de site (prijzen/equity), zonder te handelen.
+
+**Coin-universe**: met `universe.enabled: true` kiest de bot dagelijks zelf welke
+Bitvavo-EUR-markten liquide genoeg zijn (volume + spread + actief) en handelt die,
+in plaats van alleen `pairs`. Let op: dit bepaalt alléén *welke markten
+verhandelbaar* zijn, niet *welke een goede investering* zijn — dat laatste weet geen
+enkele strategie. Op meer (en kleinere, volatielere) coins handelen met een
+strategie zonder bewezen edge betekent sneller verlies, niet meer winst. De risk
+engine (positielimiet, portfolio heat) begrenst hoeveel er totaal in gaat. Bewust NIET op afstand
 mogelijk: starten, de halt opheffen of instellingen wijzigen. De veilige richting
 (stoppen) kan overal vandaan; de gevaarlijke richting (weer aanzetten) alleen op
 de machine zelf. De pagina kent je Bitvavo-keys niet en kan niet handelen.

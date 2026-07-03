@@ -65,6 +65,14 @@ class FakeMarket:
     def spread_pct(self, pair: str) -> float | None:
         return self.spreads.get(pair)
 
+    def eur_markets(self) -> list[dict]:
+        return [{"pair": p, "active": True} for p in self.prices]
+
+    def market_stats(self) -> dict[str, dict]:
+        # standaard ruim boven de drempels, tenzij expliciet overschreven via self.spreads
+        return {p: {"volume_eur": 1_000_000, "spread_pct": self.spreads.get(p, 0.05)}
+                for p in self.prices}
+
     def candles(self, pair: str, interval: str = "1h", limit: int = 200, since_ms=None) -> list[tuple]:
         data = self.candle_data.get(pair, [])
         return data[-limit:]

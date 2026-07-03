@@ -15,6 +15,7 @@ intent het journal in (crash-safe, geen dubbele orders).
 
 from __future__ import annotations
 
+import json
 import logging
 from datetime import datetime, timedelta, timezone
 from zoneinfo import ZoneInfo
@@ -111,8 +112,13 @@ class TradingEngine:
 
         self.reconcile()
 
+        # Effectieve markten: de universe-selectie (indien aan), anders config-pairs.
+        # cfg.pairs is de gedeelde bron van waarheid voor strategie, risk-whitelist en candles.
+        self.cfg.pairs = self._active_pairs(now)
+        # prijzen voor de actieve markten + alles wat we (nog) aanhouden
+        want = list(dict.fromkeys(self.cfg.pairs + [p.pair for p in self.db.open_positions()]))
         try:
-            prices = {pair: self.x.ticker_price(pair) for pair in self.cfg.pairs}
+            prices = {pair: self.x.ticker_price(pair) for pair in want}
         except Exception:
             self._cb_failure(now)
             raise
@@ -124,6 +130,7 @@ class TradingEngine:
         equity = cash + sum(p.amount * prices.get(p.pair, p.avg_price) for p in positions)
         self._day_rollover(now, equity)
         self.db.snapshot_equity(equity, cash)
+        self._store_last_prices(prices, positions)
 
         # ── kill switches ────────────────────────────────────────────
         breached, dd = self.risk.drawdown_breached(equity)
@@ -177,7 +184,7 @@ class TradingEngine:
         # ── research-laag (optioneel): VOORSTELLEN, gaan verplicht door de risk engine ──
         if self.research_agent is not None:
             from .research import to_trade_signals
-            proposals = self.research_agent.evaluate(self.cfg.pairs, now)
+            proposals = self.research_agent.evaluate(list(self.cfg.pairs), now)
             for sig in to_trade_signals(proposals, self.cfg):
                 if sig.pair in blocked_pairs:
                     continue
@@ -338,6 +345,56 @@ class TradingEngine:
                 self.db.log_risk_decision(pair=pair, side=None, allowed=False,
                                           reason=reason, requested_eur=None, approved_eur=None)
         return blocked
+
+    # ── universe & heartbeat ─────────────────────────────────────────
+
+    def _active_pairs(self, now: datetime) -> list[str]:
+        """Verhandelbare markten: universe-selectie (1×/dag, gecachet) of config-pairs."""
+        if not self.cfg.universe.enabled:
+            return list(self.cfg.pairs)
+        today = now.astimezone(AMS).date().isoformat()
+        if self.db.get_meta("universe_date") == today:
+            stored = self.db.get_meta("universe_pairs")
+            if stored:
+                return json.loads(stored)
+        try:
+            markets = self.x.eur_markets()
+            stats = self.x.market_stats()
+        except Exception:  # noqa: BLE001 — val terug op vorige selectie of config
+            log.exception("universe: markten ophalen mislukt; vorige selectie behouden")
+            stored = self.db.get_meta("universe_pairs")
+            return json.loads(stored) if stored else list(self.cfg.pairs)
+        from .universe import select_universe
+        pairs = select_universe(self.cfg, markets, stats)
+        self.db.set_meta("universe_date", today)
+        self.db.set_meta("universe_pairs", json.dumps(pairs))
+        return pairs
+
+    def refresh_snapshot(self, now: datetime | None = None) -> None:
+        """Lichte 'hartslag': prijzen verversen, equity herberekenen en vastleggen —
+        ZONDER te handelen. Voor de ~1-minuut-updates naar de site tussen de
+        volwaardige handelscycli door. Best-effort: fouten breken de loop niet."""
+        now = now or datetime.now(timezone.utc)
+        positions = self.db.open_positions()
+        if not positions:
+            cash = self._cash_eur()
+            self.db.snapshot_equity(cash, cash)
+            return
+        try:
+            prices = {p.pair: self.x.ticker_price(p.pair) for p in positions}
+        except Exception:  # noqa: BLE001
+            log.warning("hartslag: prijzen ophalen mislukt; snapshot overgeslagen")
+            return
+        self._update_peaks(positions, prices)
+        cash = self._cash_eur()
+        equity = cash + sum(p.amount * prices.get(p.pair, p.avg_price) for p in positions)
+        self.db.snapshot_equity(equity, cash)
+        self._store_last_prices(prices, positions)
+
+    def _store_last_prices(self, prices: dict[str, float], positions: list[Position]) -> None:
+        """Bewaar de laatste prijs per aangehouden coin (voor de live UI op de site)."""
+        self.db.set_meta("last_prices", json.dumps(
+            {p.pair: prices.get(p.pair, p.avg_price) for p in positions}))
 
     # ── hulpfuncties ─────────────────────────────────────────────────
 

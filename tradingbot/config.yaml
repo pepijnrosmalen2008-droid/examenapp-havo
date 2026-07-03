@@ -35,10 +35,10 @@ circuit_breaker:
   max_spread_pct: 1.0          # wijdere bid/ask-spread → pair die cycle overslaan (exits blijven)
 
 universe:
-  enabled: false               # true = automatisch liquide EUR-markten kiezen i.p.v. alleen 'pairs'
-  min_daily_volume_eur: 250000
-  max_spread_pct: 0.5
-  max_markets: 40
+  enabled: true                # automatisch liquide EUR-markten kiezen i.p.v. alleen 'pairs'
+  min_daily_volume_eur: 100000 # lager = ook kleinere coins meenemen (maar niet de illiquide 'dode')
+  max_spread_pct: 1.0          # kleine coins mogen iets wijder; boven dit → overslaan (slechte fills)
+  max_markets: 60
   always_include: [BTC-EUR, ETH-EUR]
 
 research:

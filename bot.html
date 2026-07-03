@@ -3,89 +3,122 @@
 <meta name="robots" content="noindex,nofollow">
 <title>Slagio · Bot-portaal</title>
 <style>
-:root { --surface:#fcfcfb; --page:#f9f9f7; --ink:#0b0b0b; --ink2:#52514e; --muted:#898781;
-  --grid:#e1e0d9; --axis:#c3c2b7; --border:rgba(11,11,11,.10); --s1:#2a78d6; --s6:#e34948;
-  --goodtext:#006300; --warn:#fab219; --crit:#d03b3b; }
+:root { --surface:#ffffff; --page:#f4f5f7; --raise:#ffffff; --ink:#0b1622; --ink2:#5b6673;
+  --muted:#8b95a1; --grid:#e7eaee; --axis:#cfd5dc; --border:rgba(11,22,34,.08);
+  --s1:#2a78d6; --up:#00a878; --down:#e5484d; --crit:#e5484d; --warn:#f0a020; }
 @media (prefers-color-scheme: dark) {
-:root { --surface:#1a1a19; --page:#0d0d0d; --ink:#fff; --ink2:#c3c2b7;
-  --grid:#2c2c2a; --axis:#383835; --border:rgba(255,255,255,.10); --s1:#3987e5; --s6:#e66767;
-  --goodtext:#0ca30c; } }
-* { box-sizing:border-box; margin:0 }
+:root { --surface:#12161c; --page:#0a0d11; --raise:#161b22; --ink:#f2f4f7; --ink2:#aeb6c0;
+  --muted:#7d8794; --grid:#232a33; --axis:#2f3742; --border:rgba(255,255,255,.08);
+  --s1:#3d8bef; --up:#1fc38a; --down:#f0555a; --crit:#f0555a; --warn:#f0a020; } }
+* { box-sizing:border-box; margin:0 } html { -webkit-text-size-adjust:100% }
 body { font:15px/1.45 system-ui,-apple-system,"Segoe UI",sans-serif; background:var(--page);
-  color:var(--ink); padding:24px; max-width:1000px; margin:0 auto }
-h1 { font-size:20px } h2 { font-size:15px; color:var(--ink2); margin:26px 0 10px }
-.head { display:flex; gap:12px; align-items:center; flex-wrap:wrap }
-.badge { font-size:12px; font-weight:600; padding:2px 10px; border-radius:99px;
-  border:1px solid var(--border); color:var(--ink2) }
-.status { display:flex; gap:8px; align-items:center; margin-top:10px; font-weight:600 }
-.status.good { color:var(--goodtext) } .status.critical { color:var(--crit) }
-.meta { color:var(--muted); font-size:12px; margin-top:4px }
-.meta.stale { color:var(--crit); font-weight:600 }
-.tiles { display:grid; grid-template-columns:repeat(auto-fit,minmax(140px,1fr)); gap:10px; margin-top:18px }
-.tile { background:var(--surface); border:1px solid var(--border); border-radius:10px; padding:12px 14px }
-.tl { font-size:12px; color:var(--muted) } .tv { font-size:22px; font-weight:650; margin:2px 0 }
-.tv.up { color:var(--goodtext) } .tv.down { color:var(--crit) }
-.ts { font-size:12px; color:var(--ink2) }
-.card { background:var(--surface); border:1px solid var(--border); border-radius:10px;
-  padding:16px; margin-top:10px; overflow-x:auto }
-svg { display:block; width:100% ; height:auto }
-.gl { stroke:var(--grid); stroke-width:1 } .ax { fill:var(--muted); font-size:11px }
-table { border-collapse:collapse; width:100%; font-size:13px }
-th { text-align:left; color:var(--muted); font-weight:500; padding:6px 10px; border-bottom:1px solid var(--axis) }
-td { padding:6px 10px; border-bottom:1px solid var(--grid) }
-td.num { font-variant-numeric:tabular-nums; text-align:right }
-td.empty { color:var(--muted); font-style:italic }
-input, button { font:inherit }
-input { width:100%; padding:10px 12px; margin:6px 0 14px; border:1px solid var(--axis);
-  border-radius:8px; background:var(--surface); color:var(--ink) }
-button { padding:10px 18px; border:0; border-radius:8px; background:var(--s1); color:#fff;
-  font-weight:600; cursor:pointer }
-button.ghost { background:transparent; color:var(--ink2); border:1px solid var(--border) }
-button.danger { background:var(--crit) }
-button:disabled { opacity:.5; cursor:not-allowed }
-.login { max-width:380px; margin:10vh auto 0 }
-.err { color:var(--crit); font-size:13px; min-height:18px; margin-bottom:8px }
-.stopbox { border:1px solid var(--crit); border-radius:10px; padding:16px; margin-top:26px }
-.stopbox p { font-size:13px; color:var(--ink2); margin:6px 0 12px }
-.row { display:flex; gap:10px; align-items:center; flex-wrap:wrap }
+  color:var(--ink); padding:20px 16px 60px; max-width:760px; margin:0 auto }
+h2 { font-size:13px; text-transform:uppercase; letter-spacing:.04em; color:var(--muted);
+  margin:26px 4px 10px; font-weight:600 }
+.card { background:var(--surface); border:1px solid var(--border); border-radius:16px;
+  padding:16px; margin-top:10px }
+.row { display:flex; align-items:center; gap:12px }
+.spread { justify-content:space-between }
+button, input { font:inherit }
+input { width:100%; padding:12px 14px; margin:6px 0 14px; border:1px solid var(--axis);
+  border-radius:10px; background:var(--surface); color:var(--ink) }
+button { padding:12px 18px; border:0; border-radius:10px; background:var(--s1); color:#fff;
+  font-weight:650; cursor:pointer } button:disabled { opacity:.5; cursor:not-allowed }
+button.ghost { background:transparent; color:var(--ink2); border:1px solid var(--border); padding:8px 14px }
+button.danger { background:var(--down) }
+.up { color:var(--up) } .down { color:var(--down) }
+.pill { font-size:12px; font-weight:600; padding:3px 10px; border-radius:99px;
+  background:var(--page); color:var(--ink2); border:1px solid var(--border) }
+.dot { width:9px; height:9px; border-radius:99px; display:inline-block }
+
+/* login */
+.login { max-width:380px; margin:12vh auto 0 } .login h1 { font-size:22px }
+.err { color:var(--crit); font-size:13px; min-height:18px; margin-bottom:6px }
+
+/* app */
 #app { display:none }
+.topbar { display:flex; align-items:center; gap:10px; margin-bottom:14px }
+.brand { font-size:17px; font-weight:750; letter-spacing:-.01em }
+.hero { background:var(--surface); border:1px solid var(--border); border-radius:18px; padding:22px 20px }
+.hero .lbl { font-size:13px; color:var(--muted) }
+.hero .bal { font-size:38px; font-weight:750; letter-spacing:-.02em; margin:2px 0 6px;
+  font-variant-numeric:tabular-nums }
+.hero .chg { font-size:14px; font-weight:600 }
+.hero .sub { font-size:12px; color:var(--muted); margin-top:10px }
+.badges { display:flex; gap:7px; flex-wrap:wrap; margin-top:14px }
+.statusline { display:flex; align-items:center; gap:8px; margin-top:12px; font-size:13px; font-weight:600 }
+
+/* coin rows */
+.coin { display:flex; align-items:center; gap:12px; padding:12px 6px; border-bottom:1px solid var(--grid) }
+.coin:last-child { border-bottom:0 }
+.ic { width:38px; height:38px; border-radius:99px; flex:none; display:grid; place-items:center;
+  font-weight:700; font-size:13px; color:#fff; letter-spacing:-.02em }
+.coin .nm { font-weight:650 } .coin .px { font-size:12px; color:var(--muted); font-variant-numeric:tabular-nums }
+.coin .rt { margin-left:auto; text-align:right }
+.coin .val { font-weight:650; font-variant-numeric:tabular-nums }
+.coin .pnl { font-size:12px; font-weight:600; font-variant-numeric:tabular-nums }
+.empty { color:var(--muted); font-style:italic; padding:14px 6px }
+
+/* chart */
+svg { display:block; width:100%; height:auto }
+.gl { stroke:var(--grid); stroke-width:1 } .ax { fill:var(--muted); font-size:11px }
+
+/* tables */
+table { border-collapse:collapse; width:100%; font-size:13px }
+th { text-align:left; color:var(--muted); font-weight:500; padding:6px 8px; border-bottom:1px solid var(--axis) }
+td { padding:7px 8px; border-bottom:1px solid var(--grid); font-variant-numeric:tabular-nums }
+.scroll { overflow-x:auto }
+
+.stopbox { border:1px solid var(--down); border-radius:16px; padding:16px; margin-top:26px }
+.stopbox p { font-size:13px; color:var(--ink2); margin:6px 0 12px }
 </style></head><body>
 
 <div id="login" class="login">
   <h1>Slagio · Bot-portaal</h1>
-  <p class="meta" style="margin:8px 0 20px">Privé-pagina. Alleen met account; data is per gebruiker afgeschermd (RLS).</p>
+  <p style="color:var(--muted);font-size:13px;margin:8px 0 20px">Privé. Alleen met account; je gegevens zijn per gebruiker afgeschermd.</p>
   <label>E-mail <input id="email" type="email" autocomplete="username"></label>
   <label>Wachtwoord <input id="pw" type="password" autocomplete="current-password"></label>
   <div class="err" id="loginerr"></div>
-  <button id="loginbtn">Inloggen</button>
+  <button id="loginbtn" style="width:100%">Inloggen</button>
 </div>
 
 <div id="app">
-  <div class="head"><h1>Autopilot</h1>
-    <span class="badge" id="b-mode"></span><span class="badge" id="b-strat"></span>
-    <span class="badge" id="b-pairs"></span>
+  <div class="topbar">
+    <span class="brand">⚡ Autopilot</span>
+    <span class="pill" id="b-mode"></span>
     <span style="flex:1"></span>
     <button class="ghost" id="logout">Uitloggen</button>
   </div>
-  <div class="status" id="status"></div>
-  <div class="meta" id="updated"></div>
-  <div class="tiles" id="tiles"></div>
 
-  <h2>Equity (EUR)</h2><div class="card" id="eqcard"></div>
-  <h2>Drawdown vanaf piek (%)</h2><div class="card" id="ddcard"></div>
-  <h2>Open posities</h2><div class="card"><table id="positions"></table></div>
-  <h2>Laatste orders</h2><div class="card"><table id="orders"></table></div>
-  <h2>Laatste risk-blokkades</h2><div class="card"><table id="blocks"></table></div>
+  <div class="hero">
+    <div class="lbl">Portefeuille (gesimuleerd)</div>
+    <div class="bal" id="h-balance">—</div>
+    <div class="chg" id="h-change"></div>
+    <div class="badges" id="h-badges"></div>
+    <div class="statusline" id="h-status"></div>
+    <div class="sub" id="h-updated"></div>
+  </div>
+
+  <h2>Verloop</h2>
+  <div class="card" id="eqcard"></div>
+
+  <h2>Je bezit</h2>
+  <div class="card" id="holdings"></div>
+
+  <h2>Laatste orders</h2>
+  <div class="card scroll"><table id="orders"></table></div>
+
+  <h2>Risico &amp; kill-switches</h2>
+  <div class="card scroll"><table id="blocks"></table></div>
 
   <div class="stopbox">
-    <h2 style="margin-top:0;color:var(--crit)">⛔ Noodstop</h2>
-    <p>Verkoopt <b>alle posities naar EUR</b> en stopt de bot <b>permanent</b> bij zijn
-    eerstvolgende cycle (max <span id="cyc">15</span> min). Opheffen kan daarna alléén op de
-    machine zelf (<code>python status.py --clear-halt</code>) — bewust niet via deze pagina.</p>
-    <div class="row">
-      <input id="stopconfirm" placeholder='typ STOP om te bevestigen' style="max-width:220px;margin:0">
-      <button class="danger" id="stopbtn" disabled>Noodstop uitvoeren</button>
-      <span class="meta" id="stopmsg"></span>
+    <div class="row spread"><h2 style="margin:0;color:var(--down)">⛔ Noodstop</h2></div>
+    <p>Verkoopt <b>alles naar EUR</b> en stopt de bot <b>permanent</b> bij zijn volgende cyclus.
+    Weer aanzetten kan daarna alleen op de machine zelf — bewust niet via deze pagina.</p>
+    <div class="row" style="flex-wrap:wrap">
+      <input id="stopconfirm" placeholder="typ STOP" style="max-width:160px;margin:0">
+      <button class="danger" id="stopbtn" disabled>Noodstop</button>
+      <span style="color:var(--muted);font-size:12px" id="stopmsg"></span>
     </div>
   </div>
 </div>
@@ -95,17 +128,17 @@ button:disabled { opacity:.5; cursor:not-allowed }
 const SB = window.supabase.createClient(
   'https://wcfenegohryxhatzxvtw.supabase.co',
   'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6IndjZmVuZWdvaHJ5eGhhdHp4dnR3Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODEyODcwMDAsImV4cCI6MjA5Njg2MzAwMH0.B3ygpkosBybQd53VLiRxqIbVxBPWw4V-Nj2IS3k4UFo',
-  { auth: { storageKey: 'slagio-botportal' } }  // eigen sessie, los van de examen-app
-);
+  { auth: { storageKey: 'slagio-botportal' } });
 const $ = id => document.getElementById(id);
 const eur = x => '€' + (x ?? 0).toLocaleString('nl-NL', { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+const pct = x => (x >= 0 ? '+' : '') + (x ?? 0).toFixed(2) + '%';
 const esc = s => String(s ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const base = p => String(p).split('-')[0];
+// stabiele kleur per coin (hue uit de ticker) — puur cosmetisch, zoals de gekleurde iconen bij Bitvavo
+function coinColor(sym) { let h = 0; for (const c of sym) h = (h * 31 + c.charCodeAt(0)) % 360; return `hsl(${h} 62% 46%)`; }
 let timer = null;
 
-async function init() {
-  const { data: { session } } = await SB.auth.getSession();
-  if (session) enter();
-}
+async function init() { const { data:{session} } = await SB.auth.getSession(); if (session) enter(); }
 $('loginbtn').onclick = async () => {
   $('loginerr').textContent = '';
   const { error } = await SB.auth.signInWithPassword({ email: $('email').value.trim(), password: $('pw').value });
@@ -117,111 +150,93 @@ $('logout').onclick = async () => { clearInterval(timer); await SB.auth.signOut(
 
 function enter() {
   $('login').style.display = 'none'; $('app').style.display = 'block';
-  load(); timer = setInterval(load, 60_000);
+  load(); timer = setInterval(load, 60_000);  // de bot pusht ~elke minuut; wij halen even vaak op
 }
 
 async function load() {
   const { data, error } = await SB.from('bot_state').select('state, updated_at').maybeSingle();
-  if (error) { $('status').innerHTML = '<span class="critical">Kon status niet laden: ' + esc(error.message) + '</span>'; return; }
-  if (!data) {
-    $('status').className = 'status'; $('status').textContent = 'Nog geen data — draait de bot al met webportaal-sync in .env?';
-    return;
-  }
+  if (error) { $('h-status').innerHTML = '<span class="down">Kon status niet laden</span>'; return; }
+  if (!data) { $('h-balance').textContent = '—';
+    $('h-status').innerHTML = 'Nog geen data — draait de bot al met webportaal-sync?'; return; }
   render(data.state, data.updated_at);
 }
 
 function render(s, updatedAt) {
-  $('b-mode').textContent = s.mode; $('b-strat').textContent = s.strategy;
-  $('b-pairs').textContent = (s.pairs || []).join(', ');
-  $('cyc').textContent = s.interval_minutes ?? 15;
+  $('b-mode').textContent = s.mode;
+  const pnl = s.equity_now - s.start, pnlDay = s.equity_now - s.day_start;
+  $('h-balance').textContent = eur(s.equity_now);
+  const dcls = pnlDay >= 0 ? 'up' : 'down', arrow = pnlDay >= 0 ? '▲' : '▼';
+  $('h-change').innerHTML = `<span class="${dcls}">${arrow} ${eur(Math.abs(pnlDay))} · ${pct(pnlDay / s.day_start * 100)} vandaag</span>`;
+  $('h-badges').innerHTML = [
+    `${esc(s.strategy)}`, `${s.n_markets ?? (s.pairs||[]).length} markt(en)`,
+    `totaal ${pct(pnl / s.start * 100)}`, `cash ${eur(s.cash)}`
+  ].map(t => `<span class="pill">${t}</span>`).join('');
 
-  const st = $('status');
-  if (s.halted) { st.className = 'status critical'; st.textContent = '⛔ GESTOPT — ' + (s.halt_reason || 'kill switch'); }
-  else if (s.paused_until) { st.className = 'status'; st.textContent = '⏸ Dag-kill-switch: pauze tot ' + s.paused_until + ' (UTC)'; }
-  else { st.className = 'status good'; st.textContent = '✓ Actief — alle kill-switches op groen'; }
+  let sc, stxt;
+  if (s.halted) { sc = 'var(--down)'; stxt = '⛔ Gestopt — ' + esc(s.halt_reason || 'kill switch'); }
+  else if (s.paused_until) { sc = 'var(--warn)'; stxt = '⏸ Dag-pauze tot ' + esc(s.paused_until) + ' UTC'; }
+  else { sc = 'var(--up)'; stxt = 'Actief — kill-switches op groen'; }
+  $('h-status').innerHTML = `<span class="dot" style="background:${sc}"></span><span>${stxt}</span>`;
 
   const ageMin = (Date.now() - new Date(s.updated || updatedAt).getTime()) / 60000;
-  const stale = ageMin > 2 * (s.interval_minutes ?? 15) + 5;
-  $('updated').className = 'meta' + (stale ? ' stale' : '');
-  $('updated').textContent = 'laatste update ' + Math.max(0, Math.round(ageMin)) + ' min geleden'
-    + (stale ? ' — bot lijkt OFFLINE (of sync staat uit)' : '') + ' · deze pagina belooft geen rendement';
+  const stale = ageMin > 4;
+  $('h-updated').innerHTML = (stale ? '<span class="down">bot lijkt offline — </span>' : '')
+    + 'laatste update ' + Math.max(0, Math.round(ageMin)) + ' min geleden · ververst ~elke minuut · geen rendementsbelofte';
 
-  const pnl = s.equity_now - s.start, pnlDay = s.equity_now - s.day_start;
-  const curve = (s.equity || []).map(p => p[1]);
-  let peak = -Infinity, dd = curve.map(v => { peak = Math.max(peak, v); return peak > 0 ? (peak - v) / peak * 100 : 0; });
-  const maxDd = Math.max(0, ...dd);
-  const tile = (l, v, sub, delta) => `<div class="tile"><div class="tl">${l}</div>
-    <div class="tv${delta == null ? '' : delta >= 0 ? ' up' : ' down'}">${v}</div><div class="ts">${sub}</div></div>`;
-  $('tiles').innerHTML =
-    tile('Equity', eur(s.equity_now), 'cash ' + eur(s.cash)) +
-    tile('P&L totaal', (pnl >= 0 ? '+' : '') + pnl.toFixed(2) + ' €', ((pnl / s.start * 100) || 0).toFixed(2) + '% op ' + eur(s.start), pnl) +
-    tile('P&L vandaag', (pnlDay >= 0 ? '+' : '') + pnlDay.toFixed(2) + ' €', ((pnlDay / s.day_start * 100) || 0).toFixed(2) + '%', pnlDay) +
-    tile('Max drawdown', maxDd.toFixed(2) + '%', 'kill-switch op ' + s.max_drawdown_pct + '%') +
-    tile('Open posities', (s.positions || []).length, (s.orders || []).length + ' recente orders');
+  // equity-grafiek
+  drawEquity($('eqcard'), (s.equity || []).map(p => p[1]), s.start);
 
-  drawLine($('eqcard'), curve, { unit: '€', color: 'var(--s1)', ref: s.start });
-  drawArea($('ddcard'), dd, { limit: s.max_drawdown_pct });
+  // bezit — coin-rijen zoals in een crypto-app, gesorteerd op waarde
+  const pos = (s.positions || []).slice().sort((a, b) => (b.value_eur || 0) - (a.value_eur || 0));
+  $('holdings').innerHTML = pos.length ? pos.map(p => {
+    const b = base(p.pair), pc = (p.pnl_pct >= 0 ? 'up' : 'down');
+    return `<div class="coin">
+      <div class="ic" style="background:${coinColor(b)}">${esc(b.slice(0,4))}</div>
+      <div><div class="nm">${esc(b)}</div><div class="px">${eur(p.price)}</div></div>
+      <div class="rt"><div class="val">${eur(p.value_eur)}</div>
+        <div class="pnl ${pc}">${pct(p.pnl_pct)}</div></div>
+    </div>`; }).join('') : '<div class="empty">geen open posities</div>';
 
-  $('positions').innerHTML = '<tr><th>pair</th><th class="num">hoeveelheid</th><th class="num">gem. instap</th><th>sinds</th></tr>' +
-    ((s.positions || []).map(p => `<tr><td>${esc(p.pair)}</td><td class="num">${p.amount.toFixed(8)}</td>
-      <td class="num">${eur(p.avg_price)}</td><td>${esc(p.opened_at)}</td></tr>`).join('') ||
-      '<tr><td colspan="4" class="empty">geen open posities</td></tr>');
+  $('orders').innerHTML = '<tr><th>tijd</th><th>kant</th><th>coin</th><th>bedrag</th><th>reden</th></tr>' +
+    ((s.orders || []).slice(0, 12).map(o => {
+      const sc2 = o.side === 'BUY' ? 'up' : 'down';
+      return `<tr><td>${esc((o.t||'').replace('T',' ').slice(5,16))}</td>
+        <td class="${sc2}">${esc(o.side)}</td><td>${esc(base(o.pair))}</td>
+        <td>${o.eur ? eur(o.eur) : '—'}</td><td>${esc(o.reason)}</td></tr>`; }).join('')
+      || '<tr><td colspan="5" class="empty">nog geen orders</td></tr>');
 
-  $('orders').innerHTML = '<tr><th>tijd</th><th>kant</th><th>pair</th><th class="num">bedrag</th><th>status</th><th>reden</th></tr>' +
-    ((s.orders || []).map(o => `<tr><td>${esc(o.t)}</td><td>${esc(o.side)}</td><td>${esc(o.pair)}</td>
-      <td class="num">${o.eur ? eur(o.eur) : '—'}</td><td>${esc(o.status)}</td><td>${esc(o.reason)}</td></tr>`).join('') ||
-      '<tr><td colspan="6" class="empty">nog geen orders</td></tr>');
-
-  $('blocks').innerHTML = '<tr><th>tijd</th><th>pair</th><th>reden</th></tr>' +
-    ((s.blocks || []).map(b => `<tr><td>${esc(b.t)}</td><td>${esc(b.pair || '—')}</td><td>${esc(b.reason)}</td></tr>`).join('') ||
-      '<tr><td colspan="3" class="empty">geen blokkades</td></tr>');
+  $('blocks').innerHTML = '<tr><th>tijd</th><th>coin</th><th>geblokkeerd omdat…</th></tr>' +
+    ((s.blocks || []).slice(0, 10).map(b => `<tr><td>${esc((b.t||'').replace('T',' ').slice(5,16))}</td>
+      <td>${esc(b.pair ? base(b.pair) : '—')}</td><td>${esc(b.reason)}</td></tr>`).join('')
+      || '<tr><td colspan="3" class="empty">geen blokkades</td></tr>');
 }
 
-function path(values, w, h, vmin, vmax) {
-  if (vmax - vmin < 1e-9) vmax = vmin + 1;
-  return 'M' + values.map((v, i) =>
-    (i / Math.max(values.length - 1, 1) * w).toFixed(1) + ',' + (h - (v - vmin) / (vmax - vmin) * h).toFixed(1)
-  ).join(' L');
-}
-function grid(w, h, vmin, vmax, unit, rows, flip) {
-  let out = '';
-  for (let k = 0; k < rows; k++) {
-    const y = h * k / 4, v = flip ? vmin + (vmax - vmin) * k / 4 : vmax - (vmax - vmin) * k / 4;
-    const label = unit === '%' ? v.toFixed(0) + '%' : '€' + Math.round(v).toLocaleString('nl-NL');
-    out += `<line class="gl" x1="0" x2="${w}" y1="${y.toFixed(1)}" y2="${y.toFixed(1)}"/>
-            <text class="ax" x="4" y="${Math.max(y - 3, 10).toFixed(1)}">${label}</text>`;
-  }
-  return out;
-}
-function drawLine(el, values, { unit, color, ref }) {
-  if (!values.length) { el.innerHTML = '<span class="meta">nog geen data</span>'; return; }
-  const W = 920, H = 220, lo = Math.min(...values), hi = Math.max(...values);
-  const pad = (hi - lo) * .08 + .01, vmin = lo - pad, vmax = hi + pad;
-  const refY = H - (ref - vmin) / (vmax - vmin) * H;
-  el.innerHTML = `<svg viewBox="0 0 ${W} ${H + 10}" role="img" aria-label="Equity-curve">
-    ${grid(W, H, vmin, vmax, unit, 5)}
+// ── mini-grafiek ──
+function drawEquity(el, values, ref) {
+  if (!values.length) { el.innerHTML = '<span style="color:var(--muted)">nog geen data</span>'; return; }
+  const W = 700, H = 200, lo = Math.min(...values), hi = Math.max(...values);
+  const pad = (hi - lo) * .1 + .01, vmin = lo - pad, vmax = hi + pad;
+  const P = values.map((v, i) => (i/Math.max(values.length-1,1)*W).toFixed(1) + ',' + (H-(v-vmin)/(vmax-vmin)*H).toFixed(1));
+  const up = values[values.length-1] >= values[0], col = up ? 'var(--up)' : 'var(--down)';
+  let grid = '';
+  for (let k=0;k<5;k++){ const y=H*k/4, v=vmax-(vmax-vmin)*k/4;
+    grid += `<line class="gl" x1="0" x2="${W}" y1="${y.toFixed(1)}" y2="${y.toFixed(1)}"/>
+      <text class="ax" x="4" y="${Math.max(y-3,10).toFixed(1)}">€${Math.round(v).toLocaleString('nl-NL')}</text>`; }
+  const refY = H-(ref-vmin)/(vmax-vmin)*H;
+  el.innerHTML = `<svg viewBox="0 0 ${W} ${H+8}" role="img" aria-label="Verloop van de portefeuille">
+    ${grid}
     <line x1="0" x2="${W}" y1="${refY.toFixed(1)}" y2="${refY.toFixed(1)}" stroke="var(--axis)" stroke-dasharray="4 4"/>
-    <path d="${path(values, W, H, vmin, vmax)}" fill="none" stroke="${color}" stroke-width="2" stroke-linejoin="round"/></svg>`;
-}
-function drawArea(el, dd, { limit }) {
-  if (!dd.length) { el.innerHTML = '<span class="meta">nog geen data</span>'; return; }
-  const W = 920, H = 110, vmax = Math.max(...dd, limit) * 1.05;
-  const neg = dd.map(v => -v), p = path(neg, W, H, -vmax, 0);
-  const limY = limit / vmax * H;
-  el.innerHTML = `<svg viewBox="0 0 ${W} ${H + 10}" role="img" aria-label="Drawdown">
-    ${grid(W, H, 0, vmax, '%', 4, true)}
-    <path d="${p} L${W},0 L0,0 Z" fill="var(--s6)" opacity=".18"/>
-    <path d="${p}" fill="none" stroke="var(--s6)" stroke-width="2"/>
-    <line x1="0" x2="${W}" y1="${limY.toFixed(1)}" y2="${limY.toFixed(1)}" stroke="var(--crit)" stroke-dasharray="4 4"/>
-    <text class="ax" x="${W - 4}" text-anchor="end" y="${(limY - 4).toFixed(1)}">kill-switch ${limit}%</text></svg>`;
+    <path d="M${P.join(' L')} L${W},${H} L0,${H} Z" fill="${col}" opacity=".08"/>
+    <path d="M${P.join(' L')}" fill="none" stroke="${col}" stroke-width="2" stroke-linejoin="round"/></svg>`;
 }
 
+// ── noodstop ──
 $('stopconfirm').addEventListener('input', () => { $('stopbtn').disabled = $('stopconfirm').value !== 'STOP'; });
 $('stopbtn').onclick = async () => {
   $('stopbtn').disabled = true;
   const { error } = await SB.from('bot_commands').insert({ command: 'emergency_stop' });
   $('stopmsg').textContent = error ? 'Mislukt: ' + error.message
-    : 'Noodstop geplaatst — de bot voert hem bij zijn volgende cycle uit.';
+    : 'Noodstop geplaatst — de bot voert hem bij zijn volgende cyclus uit.';
   $('stopconfirm').value = '';
 };
 

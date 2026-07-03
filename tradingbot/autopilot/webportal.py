@@ -104,6 +104,17 @@ def build_payload(db: Database, cfg, mode: str) -> dict:
     equity = _bucket([(r["ts"], r["equity_eur"]) for r in snaps], EQUITY_POINTS)
     start = db.get_meta_float("starting_capital", cfg.capital_eur)
     last = db.last_equity()
+
+    import json as _json
+    last_prices = _json.loads(db.get_meta("last_prices") or "{}")
+
+    def _position(p):
+        price = last_prices.get(p.pair, p.avg_price)
+        value = p.amount * price
+        pnl_pct = ((price - p.avg_price) / p.avg_price * 100) if p.avg_price > 0 else 0.0
+        return {"pair": p.pair, "amount": p.amount, "avg_price": p.avg_price,
+                "price": price, "value_eur": value, "pnl_pct": pnl_pct,
+                "opened_at": p.opened_at}
     return {
         "mode": mode,
         "strategy": cfg.strategy.name,
@@ -118,8 +129,8 @@ def build_payload(db: Database, cfg, mode: str) -> dict:
         "cash": last["cash_eur"] if last else start,
         "max_drawdown_pct": cfg.risk.max_drawdown_pct,
         "equity": [[t, round(v, 2)] for t, v in equity],
-        "positions": [{"pair": p.pair, "amount": p.amount, "avg_price": p.avg_price,
-                       "opened_at": p.opened_at} for p in db.open_positions()],
+        "positions": [_position(p) for p in db.open_positions()],
+        "n_markets": len(cfg.pairs),
         "orders": [{"t": o["created_at"], "side": o["side"], "pair": o["pair"],
                     "eur": o["amount_eur"], "status": o["status"], "reason": o["reason"]}
                    for o in db.recent_orders(15)],

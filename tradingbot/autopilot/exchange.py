@@ -161,6 +161,12 @@ class PaperExchange:
         fn = getattr(self.market, "spread_pct", None)
         return fn(pair) if fn else None
 
+    def eur_markets(self) -> list[dict]:
+        return self.market.eur_markets()
+
+    def market_stats(self) -> dict[str, dict]:
+        return self.market.market_stats()
+
     def candles(self, pair: str, interval: str = "1h", limit: int = 200,
                 since_ms: int | None = None) -> list[tuple]:
         return self.market.candles(pair, interval, limit, since_ms)
