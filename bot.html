@@ -221,7 +221,7 @@ function render(){
 }
 
 function seriesForRange(){
-  const s=STATE, recent=(s.eq_recent||[]), all=(s.eq_all||[]);
+  const s=STATE, recent=(s.eq_recent||[]), all=(s.eq_all||s.equity||[]); // s.equity = oudere bot-versie
   const src = RANGE<=24*3600e3 && recent.length ? recent : all;
   if(!src.length) return [];
   const cutoff = Date.now()-RANGE;
@@ -239,11 +239,11 @@ function renderHoldings(){
       <div style="min-width:0">
         <div class="nm">${esc(b)}</div>
         <div class="px tnum">${eur(p.price)} · ${(p.amount||0).toLocaleString('nl-NL',{maximumFractionDigits:6})} ${esc(b)}</div>
-        <div class="abar"><i style="width:${Math.min(100,p.alloc_pct||0).toFixed(1)}%"></i></div>
+        <div class="abar"><i style="width:${Math.min(100,Math.max(0,p.alloc_pct||0)).toFixed(1)}%"></i></div>
       </div>
       <div class="rt">
         <div class="val tnum">${eur(p.value_eur)}</div>
-        <div class="pl ${pc} tnum">${sgn(p.pnl_eur,eur)} · ${pct(p.pnl_pct)}</div>
+        <div class="pl ${pc} tnum">${p.pnl_eur!=null?sgn(p.pnl_eur,eur)+' · ':''}${pct(p.pnl_pct)}</div>
       </div></div>`;}).join('') : '<div class="empty">geen open posities</div>';
 }
 
