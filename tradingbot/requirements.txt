@@ -4,3 +4,6 @@ PyYAML>=6.0
 requests>=2.31
 python-dotenv>=1.0
 pytest>=8.0
+# Windows heeft geen ingebouwde IANA-tijdzonedatabase; zoneinfo (Europe/Amsterdam)
+# heeft die dan nodig. Op Linux/macOS levert het OS de data en is dit overbodig.
+tzdata; platform_system == "Windows"
