@@ -128,6 +128,11 @@ Strategie-parameters:
 - **grid** — `levels` (6), `order_eur` (25), `band_k` (2.0). Prijsband =
   SMA(24u) ± k·σ(30 dagen), dagelijks herberekend; koopt per level omlaag,
   verkoopt per level omhoog.
+- **cross_sectional** — `lookback_days` (30), `top_n` (5), `rebalance_days` (7).
+  Rangschikt het hele universe op relatieve sterkte en houdt de sterkste N
+  (long-only rotatie). Andere klasse dan de rest: cross-sectional i.p.v.
+  single-asset. Backtesten met een mand coins — zie `config.basket.yaml`:
+  `python walkforward.py --strategy cross_sectional --config config.basket.yaml --from 2021-01-01 --to 2025-12-31`
 
 ## Van PAPER via SHADOW naar LIVE
 

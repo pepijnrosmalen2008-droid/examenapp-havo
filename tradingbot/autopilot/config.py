@@ -58,7 +58,7 @@ class RiskConfig(BaseModel):
 class StrategyConfig(BaseModel):
     model_config = ConfigDict(extra="forbid")
 
-    name: Literal["dca", "momentum_ma_cross", "grid"]
+    name: Literal["dca", "momentum_ma_cross", "grid", "cross_sectional"]
     params: dict = Field(default_factory=dict)
 
 

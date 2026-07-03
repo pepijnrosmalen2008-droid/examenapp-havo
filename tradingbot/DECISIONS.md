@@ -141,6 +141,23 @@ alleen strategie-signalen; SL/TP-exits en kill-switch-liquidaties gaan altijd do
 de bot, geen poorten, geen dependencies in het kritieke pad: het dashboard kan
 letterlijk niet de trading loop breken. Verversen via cron/systemd-timer.
 
+## D21 — Cross-sectional momentum als eerste échte factor-hypothese
+
+De single-asset strategieën (dca/momentum/grid) voorspellen elk hun eigen tijdreeks
+en verloren allemaal op 5 jaar data. `cross_sectional` test een fundamenteel andere
+klasse: rangschik het hele universe op relatieve sterkte en houd de sterkste N
+(long-only rotatie; Bitvavo is spot, dus geen short). Volledig deterministisch en
+backtestbaar zonder leakage — precies waarvoor het platform is gebouwd.
+
+Bewuste keuzes: gelijk gewicht (kapitaal/top_n) per slot; exit via rotatie én de
+risk-engine-stops; rebalance op vast interval. Voor de backtest een aparte
+`config.basket.yaml` met een mand coins en ruimere risk-limieten, zodat de risk
+engine de factor niet platdrukt (top_n posities moeten tegelijk kunnen bestaan);
+de drawdown-kill-switch blijft de ultieme rem. Survivorship bias is niet te
+elimineren — de mand bevat deels overlevers; daarom telt alleen de vergelijking
+met buy-and-hold van diezelfde mand. `backtest.py` slaat bij een mand een
+ontbrekende/delistte coin over in plaats van af te breken.
+
 ## D20 — Webportaal: asymmetrische afstandsbediening (wel stoppen, nooit starten)
 
 Het portaal (slagio.nl/bot.html) hergebruikt de bestaande Supabase met

@@ -1,0 +1,39 @@
+# Backtest-config voor de cross-sectional strategie.
+# Gebruik: python backtest.py --strategy cross_sectional --config config.basket.yaml --from 2021-01-01 --to 2025-12-31
+#          python walkforward.py --strategy cross_sectional --config config.basket.yaml --from 2021-01-01 --to 2025-12-31
+#
+# 'pairs' is hier bewust een MAND van coins die grotendeels al sinds 2021 op Bitvavo
+# stonden — dat is het universe waarover gerangschikt wordt. Let op survivorship bias:
+# dit zijn deels de overlevers; lees de uitkomst altijd naast buy-and-hold van dezelfde mand.
+# (universe.enabled staat uit: bij een backtest gebruiken we deze vaste mand, geen live-selectie.)
+
+mode: PAPER
+capital_eur: 1000
+pairs: [BTC-EUR, ETH-EUR, XRP-EUR, LTC-EUR, ADA-EUR, LINK-EUR, BCH-EUR, XLM-EUR,
+        TRX-EUR, ATOM-EUR, ETC-EUR, EOS-EUR, XTZ-EUR, ALGO-EUR, DOT-EUR, SOL-EUR,
+        AVAX-EUR, AAVE-EUR, UNI-EUR, DOGE-EUR]
+
+risk:
+  # Bewust ruimer dan de standaard, zodat de risk engine de factor-test niet platdrukt
+  # (top_n posities moeten tegelijk kunnen bestaan). De drawdown-kill-switch blijft de
+  # ultieme rem. Take-profit uit: een momentum-strategie wil winnaars laten lopen.
+  max_position_pct: 25
+  stop_loss_pct: 12
+  take_profit_pct: null
+  max_daily_loss_pct: 8
+  max_drawdown_pct: 25
+  max_portfolio_heat_pct: 12
+
+strategy:
+  name: cross_sectional
+  params: { lookback_days: 30, top_n: 5, rebalance_days: 7 }
+
+schedule:
+  interval_minutes: 15
+
+costs:
+  taker_fee_pct: 0.25
+  slippage_pct: 0.1
+
+universe:
+  enabled: false

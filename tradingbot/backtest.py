@@ -80,18 +80,28 @@ def load_csv(path: Path) -> list[Candle]:
 def load_data(cfg: AppConfig, interval: str, start_ms: int, end_ms: int,
               csv_dir: Path | None) -> dict[str, list[Candle]]:
     data = {}
+    many = len(cfg.pairs) > 3  # bij een mand: één ontbrekende/delistte coin niet fataal
     for pair in cfg.pairs:
         if csv_dir:
             path = csv_dir / f"{pair}-{interval}.csv"
             if not path.exists():
+                if many:
+                    print(f"  overslaan {pair}: {path} niet gevonden")
+                    continue
                 sys.exit(f"FOUT: {path} niet gevonden")
             candles = [c for c in load_csv(path) if start_ms <= c.ts < end_ms]
         else:
             candles = fetch_candles(pair, interval, start_ms, end_ms)
         if len(candles) < 24 * 35:
+            if many:
+                print(f"  overslaan {pair}: te weinig data ({len(candles)} candles)")
+                continue
             sys.exit(f"FOUT: te weinig data voor {pair} ({len(candles)} candles); "
                      "minimaal ~35 dagen nodig (strategy warm-up)")
         data[pair] = candles
+    if len(data) < 2:
+        sys.exit(f"FOUT: te weinig bruikbare markten ({len(data)}); een cross-sectional "
+                 "test heeft er meerdere nodig")
     return data
 
 
@@ -113,7 +123,7 @@ def print_results(results: list[dict]) -> None:
 
 def main() -> int:
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
-    ap.add_argument("--strategy", choices=["dca", "momentum_ma_cross", "grid"])
+    ap.add_argument("--strategy", choices=["dca", "momentum_ma_cross", "grid", "cross_sectional"])
     ap.add_argument("--all", action="store_true", help="alle drie de strategieën + buy-and-hold")
     ap.add_argument("--monte-carlo", type=int, metavar="N",
                     help="N gebootstrapte marktscenario's i.p.v. één historische run")

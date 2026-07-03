@@ -188,6 +188,8 @@ PARAM_GRIDS: dict[str, list[dict]] = {
     "momentum_ma_cross": [{"fast": f, "slow": s, "rsi_max": r}
                           for f, s in ((9, 21), (12, 26), (20, 50)) for r in (65, 75)],
     "grid": [{"levels": lv, "band_k": k} for lv in (4, 6, 8) for k in (1.5, 2.0, 2.5)],
+    "cross_sectional": [{"lookback_days": lb, "top_n": n, "rebalance_days": r}
+                        for lb in (7, 14, 30, 90) for n in (3, 5) for r in (1, 7)],
 }
 
 
