@@ -98,6 +98,11 @@ def test_payload_contents(db, market):
     assert len(p["positions"]) == 2
     assert p["eq_recent"] and p["eq_recent"][-1][1] == pytest.approx(p["equity_now"], rel=0.01)
     assert p["eq_all"]
+    assert "bh_now" in p and "bh_recent" in p and "bh_all" in p
+    assert {"max_dd_pct", "sharpe", "sortino", "volatility_pct", "n_trades",
+            "win_rate", "avg_win", "avg_loss", "vs_benchmark_pct"} <= set(p["metrics"])
+    import json
+    json.dumps(p)  # geen NaN → geldige JSON
     assert all({"t", "side", "pair", "eur", "price", "amount", "status", "reason"} <= set(o)
                for o in p["orders"])
     assert all({"price", "value_eur", "pnl_eur", "pnl_pct", "alloc_pct"} <= set(pos)

@@ -59,6 +59,12 @@ svg { display:block; width:100%; height:auto; touch-action:none }
   padding:6px 9px; border-radius:8px; font-size:12px; font-weight:600; white-space:nowrap;
   transform:translate(-50%,-130%); opacity:0; transition:opacity .08s }
 
+.mgrid { display:grid; grid-template-columns:repeat(auto-fit,minmax(120px,1fr)); gap:1px; background:var(--grid); border-radius:12px; overflow:hidden }
+.mtile { background:var(--surface); padding:12px 14px }
+.mtile .ml { font-size:12px; color:var(--muted) } .mtile .mv { font-size:18px; font-weight:700; margin-top:2px; font-variant-numeric:tabular-nums }
+.leg { display:flex; gap:14px; font-size:12px; color:var(--muted); margin:8px 2px 0 }
+.leg span { display:inline-flex; align-items:center; gap:5px }
+.leg i { width:14px; height:0; border-top:2px solid currentColor; display:inline-block }
 .coin { display:flex; align-items:center; gap:12px; padding:12px 4px; border-bottom:1px solid var(--grid) }
 .coin:last-child { border-bottom:0 }
 .ic { width:36px; height:36px; border-radius:99px; flex:none; display:grid; place-items:center;
@@ -132,7 +138,11 @@ svg { display:block; width:100%; height:auto; touch-action:none }
       <div id="tip"></div>
       <div id="eqchart"></div>
     </div>
+    <div class="leg" id="chart-leg"></div>
   </div>
+
+  <h2>Cijfers &amp; vergelijking met vasthouden</h2>
+  <div class="card" id="metrics"></div>
 
   <h2>Je bezit</h2>
   <div class="card" id="holdings"></div>
@@ -237,17 +247,40 @@ function render(){
   $('h-updated').innerHTML=(age>4?'<span class="down">bot lijkt offline — </span>':'')
     +'laatste update '+Math.max(0,Math.round(age))+' min geleden · ververst ~elke minuut · geen rendementsbelofte';
 
-  drawChart(); renderHoldings(); renderTrades(); renderBlocks();
+  drawChart(); renderMetrics(); renderHoldings(); renderTrades(); renderBlocks();
+}
+
+function renderMetrics(){
+  const m=STATE.metrics||{}, vb=m.vs_benchmark_pct;
+  const f=(x,d,s='')=>x==null?'—':(x.toFixed(d)+s);
+  const tiles=[
+    ['t.o.v. vasthouden', vb==null?'—':pct(vb), vb==null?'':(vb>=0?'up':'down')],
+    ['Max drawdown', f(m.max_dd_pct,1,'%'), ''],
+    ['Sharpe', f(m.sharpe,2), ''],
+    ['Sortino', f(m.sortino,2), ''],
+    ['Volatiliteit', f(m.volatility_pct,0,'%'), ''],
+    ['Trades', (m.n_trades??0)+'', ''],
+    ['Win-ratio', m.win_rate==null?'—':m.win_rate.toFixed(0)+'% ('+(m.n_closed||0)+')', ''],
+    ['Gem. winst / verlies', eur(m.avg_win||0)+' / '+eur(m.avg_loss||0), ''],
+  ];
+  $('metrics').innerHTML='<div class="mgrid">'+tiles.map(([l,v,c])=>
+    `<div class="mtile"><div class="ml">${l}</div><div class="mv ${c}">${v}</div></div>`).join('')+'</div>';
 }
 
 function seriesForRange(){
   const s=STATE, recent=(s.eq_recent||[]), all=(s.eq_all||s.equity||[]); // s.equity = oudere bot-versie
-  const src = RANGE<=24*3600e3 && recent.length ? recent : all;
-  if(!src.length) return [];
+  const useRecent = RANGE<=24*3600e3 && recent.length;
+  const src = useRecent ? recent : all;
+  if(!src.length) return {pts:[], bh:[]};
   const cutoff = Date.now()-RANGE;
   let pts = src.filter(p=>new Date(p[0]).getTime()>=cutoff);
-  if(pts.length<2) pts = src.slice(-Math.max(2,Math.min(src.length,60))); // te weinig in dit vak → toon recente punten
-  return pts;
+  if(pts.length<2) pts = src.slice(-Math.max(2,Math.min(src.length,60)));
+  // benchmark (vasthouden) uitgelijnd op dezelfde tijdstippen
+  const bhSrc = useRecent ? (s.bh_recent||[]) : (s.bh_all||[]);
+  const bhMap = new Map(bhSrc.map(p=>[p[0],p[1]]));
+  let lastBh=null;
+  const bh = pts.map(p=>{ if(bhMap.has(p[0])) lastBh=bhMap.get(p[0]); return lastBh; });
+  return {pts, bh};
 }
 
 function renderHoldings(){
@@ -314,37 +347,47 @@ function fmtWhen(iso){
 // ── grafiek met hover ──
 let CHART=null;
 function drawChart(){
-  const pts=seriesForRange(), el=$('eqchart');
+  const {pts, bh}=seriesForRange(), el=$('eqchart');
   const lbl=RANGES.find(r=>r[1]===RANGE)?.[0]||'';
-  $('ch-range').textContent='Laatste '+lbl.toLowerCase().replace('alles','alles');
-  if(pts.length<2){ el.innerHTML='<div class="empty">nog te weinig data voor dit tijdvak</div>'; $('ch-delta').textContent=''; CHART=null; return; }
+  $('ch-range').textContent='Laatste '+lbl.toLowerCase();
+  if(pts.length<2){ el.innerHTML='<div class="empty">nog te weinig data voor dit tijdvak</div>'; $('ch-delta').textContent=''; $('chart-leg').innerHTML=''; CHART=null; return; }
   const vals=pts.map(p=>p[1]), ts=pts.map(p=>new Date(p[0]).getTime());
   const d=vals[vals.length-1]-vals[0], dc=d>=0?'up':'down';
   $('ch-delta').className='d '+dc;
   $('ch-delta').textContent=`${d>=0?'▲':'▼'} ${eur(Math.abs(d))} · ${pct(vals[0]?d/vals[0]*100:0)}`;
 
-  const W=720,H=210, lo=Math.min(...vals), hi=Math.max(...vals), pad=(hi-lo)*.12+.01, vmin=lo-pad, vmax=hi+pad;
+  const hasBh=bh.some(v=>v!=null);
+  const bhVals=hasBh?bh.filter(v=>v!=null):[];
+  const W=720,H=210;
+  const lo=Math.min(...vals,...bhVals), hi=Math.max(...vals,...bhVals), pad=(hi-lo)*.12+.01, vmin=lo-pad, vmax=hi+pad;
   const X=i=>i/(pts.length-1)*W, Y=v=>H-(v-vmin)/(vmax-vmin)*H;
   const path=vals.map((v,i)=>X(i).toFixed(1)+','+Y(v).toFixed(1)).join(' L');
   const col=d>=0?'var(--up)':'var(--down)';
+  // benchmark-lijn (vasthouden): gestippeld, gedempt
+  let bhPath='';
+  if(hasBh){ let started=false;
+    bh.forEach((v,i)=>{ if(v==null) return; bhPath+=(started?' L':'M')+X(i).toFixed(1)+','+Y(v).toFixed(1); started=true; }); }
   let grid='';
   for(let k=0;k<4;k++){ const y=H*k/3, v=vmax-(vmax-vmin)*k/3;
     grid+=`<line class="gl" x1="0" x2="${W}" y1="${y.toFixed(1)}" y2="${y.toFixed(1)}"/>
       <text class="ax" x="4" y="${Math.max(y-3,10).toFixed(1)}">${eur0(v)}</text>`; }
-  // x-as: 3 tijdstippen
   let xax='';
   [0,Math.floor((pts.length-1)/2),pts.length-1].forEach((i,j)=>{
     const anc=j===0?'start':j===2?'end':'middle', x=j===0?2:j===2?W-2:W/2;
     xax+=`<text class="ax" x="${x}" y="${H+16}" text-anchor="${anc}">${fmtWhen(pts[i][0])}</text>`; });
 
-  el.innerHTML=`<svg id="svg" viewBox="0 0 ${W} ${H+22}" role="img" aria-label="Verloop portefeuille">
+  el.innerHTML=`<svg id="svg" viewBox="0 0 ${W} ${H+22}" role="img" aria-label="Verloop portefeuille vs vasthouden">
     ${grid}
     <path d="M${path} L${W},${H} L0,${H} Z" fill="${col}" opacity=".08"/>
+    ${hasBh?`<path d="${bhPath}" fill="none" stroke="var(--muted)" stroke-width="1.5" stroke-dasharray="5 4"/>`:''}
     <path d="M${path}" fill="none" stroke="${col}" stroke-width="2" stroke-linejoin="round"/>
     <line id="cross" x1="0" x2="0" y1="0" y2="${H}" style="opacity:0"/>
     <circle id="cdot" r="4" fill="${col}" style="opacity:0"/>
     ${xax}
   </svg>`;
+  $('chart-leg').innerHTML = hasBh
+    ? `<span style="color:${d>=0?'var(--up)':'var(--down)'}"><i></i>deze bot</span><span style="color:var(--muted)"><i style="border-top-style:dashed"></i>gewoon vasthouden</span>`
+    : '';
   CHART={pts,vals,ts,W,H,X,Y};
   wireHover();
 }

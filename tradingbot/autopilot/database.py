@@ -65,7 +65,8 @@ CREATE TABLE IF NOT EXISTS equity_snapshots (
     id        INTEGER PRIMARY KEY AUTOINCREMENT,
     ts        TEXT NOT NULL,
     equity_eur REAL NOT NULL,
-    cash_eur  REAL NOT NULL
+    cash_eur  REAL NOT NULL,
+    bh_equity REAL          -- buy-and-hold-benchmark op hetzelfde moment (kan NULL zijn)
 );
 
 CREATE TABLE IF NOT EXISTS paper_balances (
@@ -103,7 +104,14 @@ class Database:
         self.conn.execute("PRAGMA journal_mode=WAL")
         self.conn.execute("PRAGMA foreign_keys=ON")
         self.conn.executescript(SCHEMA)
+        self._migrate()
         self.conn.commit()
+
+    def _migrate(self) -> None:
+        """Kleine, veilige migraties voor databases van een oudere versie."""
+        cols = {r["name"] for r in self.conn.execute("PRAGMA table_info(equity_snapshots)")}
+        if "bh_equity" not in cols:
+            self.conn.execute("ALTER TABLE equity_snapshots ADD COLUMN bh_equity REAL")
 
     def close(self) -> None:
         self.conn.close()
@@ -251,10 +259,11 @@ class Database:
 
     # ── equity ────────────────────────────────────────────────────────
 
-    def snapshot_equity(self, equity_eur: float, cash_eur: float) -> None:
+    def snapshot_equity(self, equity_eur: float, cash_eur: float,
+                        bh_equity: float | None = None) -> None:
         self.conn.execute(
-            "INSERT INTO equity_snapshots(ts, equity_eur, cash_eur) VALUES(?,?,?)",
-            (utcnow(), equity_eur, cash_eur),
+            "INSERT INTO equity_snapshots(ts, equity_eur, cash_eur, bh_equity) VALUES(?,?,?,?)",
+            (utcnow(), equity_eur, cash_eur, bh_equity),
         )
         self.conn.commit()
 

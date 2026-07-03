@@ -92,11 +92,84 @@ class Portal:
         r.raise_for_status()
 
 
-def _bucket(points: list[tuple[str, float]], n: int) -> list[tuple[str, float]]:
+def _bucket(points: list, n: int) -> list:
     if len(points) <= n:
         return points
     size = len(points) / n
     return [points[min(int((i + 1) * size) - 1, len(points) - 1)] for i in range(n)]
+
+
+def _metrics(db: Database, all_pts: list) -> dict:
+    """Risico-/prestatiematen over de equity-curve + trade-historie.
+
+    Sharpe/Sortino/volatiliteit worden op DAGrendementen berekend (geannualiseerd met
+    √365) — dat geeft standaard, interpreteerbare getallen i.p.v. ruis uit
+    minuutdata. Ze zijn indicatief bij korte historie en zijn None tot er ≥3 dagen zijn.
+    """
+    import math
+
+    eq_full = [e for _, e, _ in all_pts]
+
+    def daily(pts):  # laatste equity per kalenderdag
+        out, day = [], None
+        for ts, e, _b in pts:
+            d = ts[:10]
+            if d != day:
+                out.append(e); day = d
+            else:
+                out[-1] = e
+        return out
+
+    def rets(v):
+        return [v[i] / v[i - 1] - 1 for i in range(1, len(v)) if v[i - 1] > 0]
+
+    def std(xs):
+        if len(xs) < 2:
+            return 0.0
+        m = sum(xs) / len(xs)
+        return math.sqrt(sum((x - m) ** 2 for x in xs) / (len(xs) - 1))
+
+    def max_dd(v):
+        peak, dd = -math.inf, 0.0
+        for x in v:
+            peak = max(peak, x)
+            if peak > 0:
+                dd = max(dd, (peak - x) / peak)
+        return dd * 100
+
+    daily_eq = daily(all_pts)
+    r = rets(daily_eq) if len(daily_eq) >= 3 else []  # pas ratio's vanaf ~3 dagen
+    mean = sum(r) / len(r) if r else 0.0
+    sd = std(r)
+    downside = std([x for x in r if x < 0])
+    sqrt_py = math.sqrt(365)
+
+    closed = db.conn.execute(
+        "SELECT realized_pnl_eur FROM positions WHERE status='CLOSED' AND realized_pnl_eur IS NOT NULL"
+    ).fetchall()
+    pnls = [row["realized_pnl_eur"] for row in closed]
+    wins = [p for p in pnls if p > 0]
+    losses = [p for p in pnls if p <= 0]
+    n_trades = db.conn.execute(
+        "SELECT COUNT(*) c FROM orders WHERE status='FILLED'").fetchone()["c"]
+
+    bh_full = [b for _, _, b in all_pts if b is not None]
+    vs_bench = None
+    if eq_full and bh_full and eq_full[0] > 0 and bh_full[0] > 0:
+        vs_bench = (eq_full[-1] / eq_full[0] - 1) * 100 - (bh_full[-1] / bh_full[0] - 1) * 100
+
+    return {  # None i.p.v. NaN (NaN is geen geldige JSON)
+        "sharpe": round(mean / sd * sqrt_py, 2) if sd > 0 else None,
+        "sortino": round(mean / downside * sqrt_py, 2) if downside > 0 else None,
+        "volatility_pct": round(sd * sqrt_py * 100, 1),
+        "max_dd_pct": round(max_dd(eq_full), 2),
+        "n_trades": n_trades,
+        "n_closed": len(pnls),
+        "win_rate": round(len(wins) / len(pnls) * 100, 0) if pnls else None,
+        "avg_win": round(sum(wins) / len(wins), 2) if wins else 0.0,
+        "avg_loss": round(sum(losses) / len(losses), 2) if losses else 0.0,
+        "vs_benchmark_pct": round(vs_bench, 2) if vs_bench is not None else None,
+    }
 
 
 def build_payload(db: Database, cfg, mode: str) -> dict:
@@ -109,14 +182,19 @@ def build_payload(db: Database, cfg, mode: str) -> dict:
     import json as _json
 
     snaps = db.conn.execute(
-        "SELECT ts, equity_eur FROM equity_snapshots ORDER BY id").fetchall()
-    all_pts = [(r["ts"], r["equity_eur"]) for r in snaps]
-    eq_recent = [[t, round(v, 2)] for t, v in all_pts[-1200:]]          # ruw, fijn (korte vakken)
-    eq_all = [[t, round(v, 2)] for t, v in _bucket(all_pts, 500)]        # gebucket (lange vakken)
+        "SELECT ts, equity_eur, bh_equity FROM equity_snapshots ORDER BY id").fetchall()
+    all_pts = [(r["ts"], r["equity_eur"], r["bh_equity"]) for r in snaps]
+    recent, allb = all_pts[-1200:], _bucket(all_pts, 500)
+    eq_recent = [[t, round(e, 2)] for t, e, _ in recent]                 # ruw, fijn (korte vakken)
+    eq_all = [[t, round(e, 2)] for t, e, _ in allb]                      # gebucket (lange vakken)
+    bh_recent = [[t, round(b, 2)] for t, e, b in recent if b is not None]
+    bh_all = [[t, round(b, 2)] for t, e, b in allb if b is not None]
     start = db.get_meta_float("starting_capital", cfg.capital_eur)
     last = db.last_equity()
     last_prices = _json.loads(db.get_meta("last_prices") or "{}")
     equity_now = last["equity_eur"] if last else start
+    bh_now = last["bh_equity"] if last and last["bh_equity"] is not None else start
+    metrics = _metrics(db, all_pts)
 
     def _position(p):
         price = last_prices.get(p.pair, p.avg_price)
@@ -143,6 +221,10 @@ def build_payload(db: Database, cfg, mode: str) -> dict:
         "max_drawdown_pct": cfg.risk.max_drawdown_pct,
         "eq_recent": eq_recent,
         "eq_all": eq_all,
+        "bh_recent": bh_recent,
+        "bh_all": bh_all,
+        "bh_now": bh_now,
+        "metrics": metrics,
         "positions": [_position(p) for p in db.open_positions()],
         "n_markets": len(cfg.pairs),
         "orders": [{"t": o["created_at"], "side": o["side"], "pair": o["pair"],

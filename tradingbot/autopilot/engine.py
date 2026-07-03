@@ -68,7 +68,38 @@ class TradingEngine:
                 self.db.set_meta("starting_capital", str(self.cfg.capital_eur))
                 self.db.set_meta("bot_cash_eur", str(self.cfg.capital_eur))
             self.db.set_meta("start_date", utcnow())
+        if self.db.get_meta("bench_basket") is None:
+            self._record_benchmark()
         self.reconcile()
+
+    def _record_benchmark(self) -> None:
+        """Bevries de startportefeuille als 'gewoon vasthouden'-benchmark."""
+        bals = self.db.paper_balances() if self.mode == TradingMode.PAPER else {}
+        if self.mode != TradingMode.PAPER:
+            try:
+                bals = self.x.balances()
+            except Exception:  # noqa: BLE001
+                bals = {}
+        basket = {a: amt for a, amt in bals.items() if a != "EUR" and amt > 0}
+        self.db.set_meta("bench_eur", f"{bals.get('EUR', 0.0):.8f}")
+        self.db.set_meta("bench_basket", json.dumps(basket))
+
+    def _bench_equity(self, prices: dict[str, float]) -> float | None:
+        """Waarde van de bevroren startportefeuille tegen de huidige prijzen."""
+        raw = self.db.get_meta("bench_basket")
+        if raw is None:
+            return None
+        last = json.loads(self.db.get_meta("last_prices") or "{}")
+        total = self.db.get_meta_float("bench_eur", 0.0)
+        for base, amt in json.loads(raw).items():
+            price = prices.get(f"{base}-EUR") or last.get(f"{base}-EUR")
+            if price:
+                total += amt * price
+        return total
+
+    def _bench_pairs(self) -> list[str]:
+        raw = self.db.get_meta("bench_basket")
+        return [f"{b}-EUR" for b in json.loads(raw)] if raw else []
 
     def _seed_portfolio(self) -> None:
         """PAPER-start vanaf een bestaande portefeuille: zet EUR-cash + posities zoals
@@ -157,8 +188,8 @@ class TradingEngine:
         cash = self._cash_eur()
         equity = cash + sum(p.amount * prices.get(p.pair, p.avg_price) for p in positions)
         self._day_rollover(now, equity)
-        self.db.snapshot_equity(equity, cash)
         self._store_last_prices(prices, positions)
+        self.db.snapshot_equity(equity, cash, self._bench_equity(prices))
 
         # ── kill switches ────────────────────────────────────────────
         breached, dd = self.risk.drawdown_breached(equity)
@@ -404,20 +435,21 @@ class TradingEngine:
         volwaardige handelscycli door. Best-effort: fouten breken de loop niet."""
         now = now or datetime.now(timezone.utc)
         positions = self.db.open_positions()
-        if not positions:
+        want = list(dict.fromkeys([p.pair for p in positions] + self._bench_pairs()))
+        if not want:
             cash = self._cash_eur()
-            self.db.snapshot_equity(cash, cash)
+            self.db.snapshot_equity(cash, cash, cash)
             return
         try:
-            prices = {p.pair: self.x.ticker_price(p.pair) for p in positions}
+            prices = {pair: self.x.ticker_price(pair) for pair in want}
         except Exception:  # noqa: BLE001
             log.warning("hartslag: prijzen ophalen mislukt; snapshot overgeslagen")
             return
         self._update_peaks(positions, prices)
         cash = self._cash_eur()
         equity = cash + sum(p.amount * prices.get(p.pair, p.avg_price) for p in positions)
-        self.db.snapshot_equity(equity, cash)
         self._store_last_prices(prices, positions)
+        self.db.snapshot_equity(equity, cash, self._bench_equity(prices))
 
     def _store_last_prices(self, prices: dict[str, float], positions: list[Position]) -> None:
         """Bewaar de laatste prijs per aangehouden coin (voor de live UI op de site)."""
