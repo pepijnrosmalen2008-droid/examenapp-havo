@@ -53,11 +53,19 @@ def fetch_candles(pair: str, interval: str, start_ms: int, end_ms: int) -> list[
     md = MarketData()
     cursor = start_ms
     fetched = 0
+    empty = 0  # opeenvolgende lege vensters (coin bestond nog niet in die periode)
     while cursor < end_ms:
         batch = md.candles(pair, interval, limit=1000, since_ms=cursor)
         batch = [c for c in batch if c[0] < end_ms]
         if not batch:
-            break
+            # leeg venster → coin was hier nog niet gelist; spring vooruit i.p.v. stoppen
+            empty += 1
+            if empty > 45:  # ~5 jaar aan lege vensters → coin heeft echt geen data
+                break
+            cursor += step * 1000
+            time.sleep(0.2)
+            continue
+        empty = 0
         cache.cache_candles(pair, interval, batch)
         fetched += len(batch)
         cursor = batch[-1][0] + step
@@ -156,6 +164,7 @@ def main() -> int:
           f"kapitaal €{cfg.capital_eur:.0f} | taker {cfg.costs.taker_fee_pct}% + "
           f"slippage {cfg.costs.slippage_pct}%")
     data = load_data(cfg, args.interval, start_ms, end_ms, args.csv_dir)
+    cfg.pairs = list(data)  # alleen coins die écht geladen zijn (rest overgeslagen)
 
     if args.monte_carlo:
         from autopilot.montecarlo import run_monte_carlo

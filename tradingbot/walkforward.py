@@ -100,8 +100,10 @@ def main() -> int:
     start_ms = int(datetime.fromisoformat(args.start).replace(tzinfo=timezone.utc).timestamp() * 1000)
     end_ms = int(datetime.fromisoformat(args.end).replace(tzinfo=timezone.utc).timestamp() * 1000)
     data = load_data(cfg, "1h", start_ms, end_ms, args.csv_dir)
+    cfg.pairs = list(data)  # alleen coins die écht geladen zijn (rest overgeslagen)
 
-    print(f"Walk-forward {args.strategy}: train {args.train_days}d → test {args.test_days}d, "
+    print(f"Walk-forward {args.strategy}: {len(cfg.pairs)} coins in de mand, "
+          f"train {args.train_days}d → test {args.test_days}d, "
           f"grid {len(PARAM_GRIDS[args.strategy])} combinaties")
     t0 = time.monotonic()
     res = walk_forward(cfg, args.strategy, data,
