@@ -82,16 +82,24 @@ def load_data(cfg: AppConfig, interval: str, start_ms: int, end_ms: int,
     data = {}
     many = len(cfg.pairs) > 3  # bij een mand: één ontbrekende/delistte coin niet fataal
     for pair in cfg.pairs:
-        if csv_dir:
-            path = csv_dir / f"{pair}-{interval}.csv"
-            if not path.exists():
-                if many:
-                    print(f"  overslaan {pair}: {path} niet gevonden")
-                    continue
-                sys.exit(f"FOUT: {path} niet gevonden")
-            candles = [c for c in load_csv(path) if start_ms <= c.ts < end_ms]
-        else:
-            candles = fetch_candles(pair, interval, start_ms, end_ms)
+        try:
+            if csv_dir:
+                path = csv_dir / f"{pair}-{interval}.csv"
+                if not path.exists():
+                    if many:
+                        print(f"  overslaan {pair}: {path} niet gevonden")
+                        continue
+                    sys.exit(f"FOUT: {path} niet gevonden")
+                candles = [c for c in load_csv(path) if start_ms <= c.ts < end_ms]
+            else:
+                candles = fetch_candles(pair, interval, start_ms, end_ms)
+        except SystemExit:
+            raise
+        except Exception as e:  # noqa: BLE001 — bv. gedelistte coin (ccxt BadSymbol)
+            if many:
+                print(f"  overslaan {pair}: niet beschikbaar op Bitvavo ({type(e).__name__})")
+                continue
+            raise
         if len(candles) < 24 * 35:
             if many:
                 print(f"  overslaan {pair}: te weinig data ({len(candles)} candles)")
