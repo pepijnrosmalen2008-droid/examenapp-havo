@@ -27,6 +27,10 @@ do $$ begin
 exception when others then null; end $$;
 alter table public.bot_state enable row level security;
 
+-- drop-before-create zodat het hele script probleemloos opnieuw te draaien is
+drop policy if exists "bot_state select own" on public.bot_state;
+drop policy if exists "bot_state insert own" on public.bot_state;
+drop policy if exists "bot_state update own" on public.bot_state;
 create policy "bot_state select own" on public.bot_state
   for select using (auth.uid() = user_id);
 create policy "bot_state insert own" on public.bot_state
@@ -47,6 +51,9 @@ create table if not exists public.bot_commands (
 alter table public.bot_commands add column if not exists bot_id text;  -- migratie oude tabel
 alter table public.bot_commands enable row level security;
 
+drop policy if exists "bot_commands select own" on public.bot_commands;
+drop policy if exists "bot_commands insert own" on public.bot_commands;
+drop policy if exists "bot_commands update own" on public.bot_commands;
 create policy "bot_commands select own" on public.bot_commands
   for select using (auth.uid() = user_id);
 create policy "bot_commands insert own" on public.bot_commands
