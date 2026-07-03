@@ -90,6 +90,37 @@ class ScheduleConfig(BaseModel):
     interval_minutes: int = Field(ge=1, le=24 * 60)
 
 
+class UniverseConfig(BaseModel):
+    """Coin-universe selectie: welke Bitvavo-EUR-markten zijn liquide genoeg om te
+    verhandelen. Deterministisch en dagelijks herbepaald. Uit = alleen `pairs` gebruiken."""
+    model_config = ConfigDict(extra="forbid")
+
+    enabled: bool = False
+    min_daily_volume_eur: float = Field(default=250_000, ge=0,
+                                        description="Min. 24u-omzet in EUR om verhandelbaar te zijn")
+    max_spread_pct: float = Field(default=0.5, gt=0, le=10,
+                                  description="Max. bid/ask-spread bij selectie")
+    max_markets: int = Field(default=40, ge=1, le=500,
+                             description="Hoogstens zoveel markten (op omzet gesorteerd)")
+    always_include: list[str] = Field(default_factory=lambda: ["BTC-EUR", "ETH-EUR"],
+                                      description="Altijd meenemen, mits ze bestaan")
+
+
+class ResearchConfig(BaseModel):
+    """AI/research-laag die signalen VOORSTELT. Gaat verplicht door de risk engine;
+    kan nooit zelf orders plaatsen of code wijzigen. Uit tot je hem bewust aanzet."""
+    model_config = ConfigDict(extra="forbid")
+
+    enabled: bool = False
+    agent: Literal["rulebased"] = "rulebased"   # 'llm' komt later; nu alleen deterministisch
+    min_confidence: float = Field(default=0.6, ge=0, le=1,
+                                  description="Onder deze zekerheid wordt een voorstel genegeerd")
+    max_position_eur: float = Field(default=25, gt=0,
+                                    description="Bovengrens per research-voorstel (risk engine kan verder verkleinen)")
+    events_file: str = Field(default="research_events.json",
+                             description="(rulebased) lokaal bestand met gestructureerde events")
+
+
 class BacktestCostConfig(BaseModel):
     model_config = ConfigDict(extra="forbid")
 
@@ -111,6 +142,8 @@ class AppConfig(BaseModel):
     costs: BacktestCostConfig = Field(default_factory=BacktestCostConfig)
     regime: RegimeConfig = Field(default_factory=RegimeConfig)
     circuit_breaker: CircuitBreakerConfig = Field(default_factory=CircuitBreakerConfig)
+    universe: UniverseConfig = Field(default_factory=UniverseConfig)
+    research: ResearchConfig = Field(default_factory=ResearchConfig)
 
     @field_validator("pairs")
     @classmethod

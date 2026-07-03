@@ -34,6 +34,20 @@ circuit_breaker:
   cooldown_minutes: 30
   max_spread_pct: 1.0          # wijdere bid/ask-spread → pair die cycle overslaan (exits blijven)
 
+universe:
+  enabled: false               # true = automatisch liquide EUR-markten kiezen i.p.v. alleen 'pairs'
+  min_daily_volume_eur: 250000
+  max_spread_pct: 0.5
+  max_markets: 40
+  always_include: [BTC-EUR, ETH-EUR]
+
+research:
+  enabled: false               # AI/research-laag: VOORSTELLEN, gaan altijd door de risk engine
+  agent: rulebased             # nu alleen deterministisch; 'llm' komt later (zie RESEARCH_AGENT.md)
+  min_confidence: 0.6
+  max_position_eur: 25
+  events_file: research_events.json
+
 costs:
   taker_fee_pct: 0.25        # Bitvavo taker fee cat. A — check actueel tarief op bitvavo.com/nl/fees
   slippage_pct: 0.1

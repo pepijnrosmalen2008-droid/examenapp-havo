@@ -37,7 +37,7 @@ class NullNotifier:
 
 class TradingEngine:
     def __init__(self, cfg: AppConfig, db: Database, exchange, risk: RiskEngine,
-                 strategy: Strategy, mode: TradingMode, notifier=None):
+                 strategy: Strategy, mode: TradingMode, notifier=None, research_agent=None):
         self.cfg = cfg
         self.db = db
         self.x = exchange
@@ -46,6 +46,7 @@ class TradingEngine:
         self.mode = mode
         self.notify = notifier or NullNotifier()
         self.regime = RegimeFilter(cfg, db)
+        self.research_agent = research_agent  # optioneel; voorstellen gaan door de risk engine
 
     # ── startup ───────────────────────────────────────────────────────
 
@@ -172,6 +173,15 @@ class TradingEngine:
             if sig.pair in blocked_pairs:
                 continue
             self._route_signal(sig, prices, now=now)
+
+        # ── research-laag (optioneel): VOORSTELLEN, gaan verplicht door de risk engine ──
+        if self.research_agent is not None:
+            from .research import to_trade_signals
+            proposals = self.research_agent.evaluate(self.cfg.pairs, now)
+            for sig in to_trade_signals(proposals, self.cfg):
+                if sig.pair in blocked_pairs:
+                    continue
+                self._route_signal(sig, prices, now=now)
 
     # ── uitvoering ────────────────────────────────────────────────────
 

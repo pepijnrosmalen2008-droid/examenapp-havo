@@ -1,0 +1,19 @@
+[
+  {
+    "pair": "BTC-EUR",
+    "direction": 1,
+    "confidence": 0.72,
+    "horizon_hours": 48,
+    "rationale": "Voorbeeld: aanhoudende ETF-instroom gemeld door meerdere bronnen",
+    "sources": ["https://www.reuters.com/...", "https://www.coindesk.com/..."],
+    "expires": "2026-07-15T00:00:00+00:00"
+  },
+  {
+    "pair": "ETH-EUR",
+    "direction": -1,
+    "confidence": 0.4,
+    "horizon_hours": 24,
+    "rationale": "Voorbeeld: zwak signaal (onder min_confidence, wordt genegeerd)",
+    "sources": []
+  }
+]

@@ -64,7 +64,10 @@ def build_engine(cfg, db: Database, mode: TradingMode) -> TradingEngine:
                                  slippage_pct=cfg.costs.slippage_pct)
     risk = RiskEngine(cfg, db)
     strategy = get_strategy(cfg, db)
-    return TradingEngine(cfg, db, exchange, risk, strategy, mode, notifier=notifier)
+    from autopilot.research import get_research_agent
+    research_agent = get_research_agent(cfg)
+    return TradingEngine(cfg, db, exchange, risk, strategy, mode,
+                         notifier=notifier, research_agent=research_agent)
 
 
 def main() -> int:

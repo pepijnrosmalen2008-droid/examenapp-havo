@@ -59,6 +59,29 @@ class MarketData:
         raw = self._x.fetch_ohlcv(pair.replace("-", "/"), timeframe=interval, since=since_ms, limit=limit)
         return [tuple(c) for c in raw]
 
+    def eur_markets(self) -> list[dict]:
+        """Alle actieve EUR-spotmarkten op Bitvavo als [{'pair','active'}, ...]."""
+        out = []
+        for m in self._x.fetch_markets():
+            if m.get("quote") == "EUR" and m.get("spot", True):
+                out.append({"pair": f"{m['base']}-EUR", "active": m.get("active", True)})
+        return out
+
+    def market_stats(self) -> dict[str, dict]:
+        """Per EUR-pair 24u-omzet + spread: {'BTC-EUR': {'volume_eur','spread_pct'}, ...}."""
+        stats: dict[str, dict] = {}
+        for sym, t in self._x.fetch_tickers().items():
+            if not sym.endswith("/EUR"):
+                continue
+            pair = sym.replace("/", "-")
+            last = t.get("last") or 0
+            base_vol = t.get("baseVolume") or 0
+            quote_vol = t.get("quoteVolume") or (base_vol * last if last else 0)
+            bid, ask = t.get("bid"), t.get("ask")
+            spread = ((ask - bid) / ((ask + bid) / 2) * 100) if bid and ask and bid > 0 else None
+            stats[pair] = {"volume_eur": float(quote_vol or 0), "spread_pct": spread}
+        return stats
+
 
 class BitvavoClient(MarketData):
     """Geauthenticeerde client. Leest saldo; plaatst alleen orders als allow_trading=True."""
