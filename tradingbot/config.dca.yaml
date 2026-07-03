@@ -1,0 +1,46 @@
+# Bot 3 — DCA (bijkopen & vasthouden). PAPER.
+# Start met je coins ÉN €40 cash (je maandinleg), want DCA heeft cash nodig om te
+# kopen. Zet dat bedrag gespreid in de markt en houdt alles vast; verkoopt alleen
+# als een positie hard keldert (stop-loss). Bewust géén rotatie — dit is de rustige,
+# passieve tegenhanger van de momentum- en rotatie-bot.
+# Draaien:  py bot.py --config config.dca.yaml
+
+mode: PAPER
+bot_id: dca
+capital_eur: 158
+
+pairs: [BTC-EUR, ETH-EUR, MOODENG-EUR]
+
+seed:
+  enabled: true
+  eur: 40                    # DCA heeft cash nodig; dit is je geplande maandinleg
+  holdings:
+    MOODENG-EUR: 96
+    ETH-EUR: 15.70
+    BTC-EUR: 5.76
+
+risk:
+  max_position_pct: 35
+  stop_loss_pct: 25          # ruim: DCA verkoopt niet bij een gewone dip
+  take_profit_pct: null      # winnaars laten lopen
+  max_daily_loss_pct: 20
+  max_drawdown_pct: 45
+  max_portfolio_heat_pct: null
+
+strategy:
+  name: dca
+  params: { amount_eur: 10, every_hours: 24 }
+
+schedule:
+  interval_minutes: 15
+
+universe:
+  enabled: true
+  min_daily_volume_eur: 100000
+  max_spread_pct: 1.0
+  max_markets: 40
+  always_include: [BTC-EUR, ETH-EUR, MOODENG-EUR]
+
+costs:
+  taker_fee_pct: 0.25
+  slippage_pct: 0.1
