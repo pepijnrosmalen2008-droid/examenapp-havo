@@ -1,0 +1,45 @@
+# Bot 1 — Momentum (trend volgen). PAPER.
+# Start vanaf je échte wallet (coins, €0 cash). Verkoopt coins waarvan de trend
+# omslaat en koopt opkomende coins uit het hele universe. Handelt alleen bij een
+# trendomslag → kan soms rustig zijn.
+# Draaien:  py bot.py --config config.momentum.yaml
+
+mode: PAPER
+bot_id: momentum
+capital_eur: 118
+
+pairs: [BTC-EUR, ETH-EUR, MOODENG-EUR]
+
+seed:
+  enabled: true
+  eur: 0                     # exact je echte wallet: alles zit in coins, geen losse euro's
+  holdings:
+    MOODENG-EUR: 96
+    ETH-EUR: 15.70
+    BTC-EUR: 5.76
+
+risk:
+  max_position_pct: 35
+  stop_loss_pct: 15
+  take_profit_pct: 25
+  max_daily_loss_pct: 20
+  max_drawdown_pct: 45
+  max_portfolio_heat_pct: null
+
+strategy:
+  name: momentum_ma_cross
+  params: { fast: 12, slow: 26, rsi_period: 14, rsi_min: 50, rsi_max: 75 }
+
+schedule:
+  interval_minutes: 15
+
+universe:
+  enabled: true
+  min_daily_volume_eur: 100000
+  max_spread_pct: 1.0
+  max_markets: 40
+  always_include: [BTC-EUR, ETH-EUR, MOODENG-EUR]
+
+costs:
+  taker_fee_pct: 0.25
+  slippage_pct: 0.1

@@ -1,0 +1,46 @@
+# Bot 2 — Rotatie (relatieve sterkte). PAPER.
+# Zelfde startpunt als de momentum-bot (coins, €0 cash). Rangschikt alle coins op
+# recente kracht en houdt steeds de sterkste; verkoopt de rest en koopt de toppers.
+# Herweegt elke paar dagen → altijd actief. Bouwt zo zelf zijn wallet op uit alle
+# beschikbare coins.
+# Draaien:  py bot.py --config config.rotatie.yaml
+
+mode: PAPER
+bot_id: rotatie
+capital_eur: 118
+
+pairs: [BTC-EUR, ETH-EUR, MOODENG-EUR]
+
+seed:
+  enabled: true
+  eur: 0
+  holdings:
+    MOODENG-EUR: 96
+    ETH-EUR: 15.70
+    BTC-EUR: 5.76
+
+risk:
+  max_position_pct: 35
+  stop_loss_pct: 20
+  take_profit_pct: null      # rotatie regelt de exits zelf
+  max_daily_loss_pct: 20
+  max_drawdown_pct: 45
+  max_portfolio_heat_pct: null
+
+strategy:
+  name: cross_sectional
+  params: { lookback_days: 14, top_n: 5, rebalance_days: 3 }
+
+schedule:
+  interval_minutes: 15
+
+universe:
+  enabled: true
+  min_daily_volume_eur: 100000
+  max_spread_pct: 1.0
+  max_markets: 40
+  always_include: [BTC-EUR, ETH-EUR, MOODENG-EUR]
+
+costs:
+  taker_fee_pct: 0.25
+  slippage_pct: 0.1
