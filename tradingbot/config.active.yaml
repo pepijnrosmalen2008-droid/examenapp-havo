@@ -1,0 +1,43 @@
+# Bot B — momentum (actiever: koopt/verkoopt op trendsignalen, beheert ook de
+# seed-coins actief). PAPER. Zelfde startpunt als bot A → eerlijk te vergelijken.
+# Draaien:  py bot.py --config config.active.yaml
+
+mode: PAPER
+bot_id: momentum
+capital_eur: 157
+
+pairs: [BTC-EUR, ETH-EUR, MOODENG-EUR]
+
+seed:
+  enabled: true
+  eur: 40
+  holdings:
+    MOODENG-EUR: 96
+    ETH-EUR: 15.70
+    BTC-EUR: 5.76
+
+risk:
+  max_position_pct: 30
+  stop_loss_pct: 12          # strakker: een actieve strategie kapt verlies sneller af
+  take_profit_pct: 20
+  max_daily_loss_pct: 15
+  max_drawdown_pct: 40
+  max_portfolio_heat_pct: null
+
+strategy:
+  name: momentum_ma_cross
+  params: { fast: 12, slow: 26, rsi_period: 14, rsi_min: 50, rsi_max: 70 }
+
+schedule:
+  interval_minutes: 15
+
+universe:
+  enabled: true
+  min_daily_volume_eur: 100000
+  max_spread_pct: 1.0
+  max_markets: 40
+  always_include: [BTC-EUR, ETH-EUR, MOODENG-EUR]
+
+costs:
+  taker_fee_pct: 0.25
+  slippage_pct: 0.1

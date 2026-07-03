@@ -11,12 +11,20 @@
 --     "Allow new users to sign up" uitschakelen. Anders kan iedereen een account
 --     maken (die ziet dankzij RLS niets van jou, maar dicht is dicht).
 
--- Status-snapshot van de bot (één rij per gebruiker, geüpsert elke cycle)
+-- Status-snapshot per bot (meerdere bots per gebruiker mogelijk → sleutel user_id + bot_id)
 create table if not exists public.bot_state (
-  user_id    uuid primary key references auth.users(id) on delete cascade,
+  user_id    uuid not null references auth.users(id) on delete cascade,
+  bot_id     text not null default 'default',
   state      jsonb not null,
-  updated_at timestamptz not null default now()
+  updated_at timestamptz not null default now(),
+  primary key (user_id, bot_id)
 );
+-- Migratie voor wie de oude tabel (alleen user_id als sleutel) al had gedraaid:
+alter table public.bot_state add column if not exists bot_id text not null default 'default';
+do $$ begin
+  alter table public.bot_state drop constraint bot_state_pkey;
+  alter table public.bot_state add primary key (user_id, bot_id);
+exception when others then null; end $$;
 alter table public.bot_state enable row level security;
 
 create policy "bot_state select own" on public.bot_state
@@ -31,10 +39,12 @@ create policy "bot_state update own" on public.bot_state
 create table if not exists public.bot_commands (
   id         bigint generated always as identity primary key,
   user_id    uuid not null default auth.uid() references auth.users(id) on delete cascade,
+  bot_id     text,   -- welke bot; null = broadcast naar alle bots van de gebruiker
   command    text not null check (command in ('emergency_stop')),
   handled    boolean not null default false,
   created_at timestamptz not null default now()
 );
+alter table public.bot_commands add column if not exists bot_id text;  -- migratie oude tabel
 alter table public.bot_commands enable row level security;
 
 create policy "bot_commands select own" on public.bot_commands

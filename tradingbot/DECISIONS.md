@@ -141,6 +141,19 @@ alleen strategie-signalen; SL/TP-exits en kill-switch-liquidaties gaan altijd do
 de bot, geen poorten, geen dependencies in het kritieke pad: het dashboard kan
 letterlijk niet de trading loop breken. Verversen via cron/systemd-timer.
 
+## D22 — Meerdere bots naast elkaar + seed-portefeuille
+
+Om strategieën eerlijk te vergelijken kan de bot met `--config` draaien; elke config
+heeft een `bot_id` en krijgt zo een eigen database (`autopilot_<bot_id>.db`) en logmap.
+Meerdere processen draaien dus onafhankelijk naast elkaar. Het webportaal is
+`bot_id`-bewust: `bot_state`/`bot_commands` hebben (user_id, bot_id) als sleutel, en
+`bot.html` toont een schakelaar tussen bots. Een noodstop richt zich op de getoonde bot.
+
+`seed`-config laat een PAPER-bot starten vanaf een bestaande portefeuille (EUR-cash +
+holdings in EUR-waarde → omgezet naar hoeveelheden tegen de prijs bij start; instapprijs
+= die prijs, dus P&L begint op 0). Alleen PAPER; in LIVE geldt het echte saldo. Zo
+kunnen twee bots vanaf exact hetzelfde startpunt vergeleken worden.
+
 ## D21 — Cross-sectional momentum als eerste échte factor-hypothese
 
 De single-asset strategieën (dca/momentum/grid) voorspellen elk hun eigen tijdreeks

@@ -73,12 +73,15 @@ def build_engine(cfg, db: Database, mode: TradingMode) -> TradingEngine:
 def main() -> int:
     ap = argparse.ArgumentParser(description=__doc__)
     ap.add_argument("--once", action="store_true", help="één cycle draaien en stoppen")
-    ap.add_argument("--db", default=str(ROOT / "autopilot.db"))
+    ap.add_argument("--config", default=str(ROOT / "config.yaml"), help="pad naar config.yaml")
+    ap.add_argument("--db", default=None, help="pad naar de database (default: per config afgeleid)")
     args = ap.parse_args()
 
     load_dotenv(ROOT / ".env")
-    setup_logging(ROOT / "logs")
-    cfg = load_config(ROOT / "config.yaml")
+    cfg = load_config(args.config)
+    # eigen db + logmap per bot, zodat er meerdere naast elkaar kunnen draaien
+    db_path = args.db or str(ROOT / f"autopilot_{cfg.bot_id}.db")
+    setup_logging(ROOT / "logs" / cfg.bot_id)
 
     try:
         mode = resolve_mode(cfg)
@@ -93,7 +96,7 @@ def main() -> int:
     log.info("Autopilot start — mode: %s, strategie: %s, pairs: %s, interval: %d min",
              banner, cfg.strategy.name, cfg.pairs, cfg.schedule.interval_minutes)
 
-    db = Database(args.db)
+    db = Database(db_path)
     engine = build_engine(cfg, db, mode)
     engine.startup()
 

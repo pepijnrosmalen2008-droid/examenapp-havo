@@ -105,6 +105,8 @@ svg { display:block; width:100%; height:auto; touch-action:none }
     <button id="logout">Uitloggen</button>
   </div>
 
+  <div class="rng" id="botswitch" style="margin-bottom:12px"></div>
+
   <div class="hero">
     <div class="lbl">Portefeuille (gesimuleerd)</div>
     <div class="bal tnum" id="h-balance">—</div>
@@ -170,7 +172,7 @@ function coinColor(s){ let h=0; for(const c of s) h=(h*31+c.charCodeAt(0))%360; 
 
 const RANGES = [['1u',3600e3],['6u',6*3600e3],['12u',12*3600e3],['24u',24*3600e3],
   ['7d',7*864e5],['30d',30*864e5],['1j',365*864e5],['Alles',Infinity]];
-let STATE = null, RANGE = 24*3600e3, timer = null;
+let STATE = null, RANGE = 24*3600e3, timer = null, BOTS = [], SELECTED = null;
 
 async function init(){ const {data:{session}}=await SB.auth.getSession(); if(session) enter(); }
 $('loginbtn').onclick = async () => {
@@ -193,10 +195,26 @@ function enter(){
 }
 
 async function load(){
-  const {data,error}=await SB.from('bot_state').select('state, updated_at').maybeSingle();
+  const {data,error}=await SB.from('bot_state').select('bot_id, state, updated_at').order('bot_id');
   if(error){ $('h-status').innerHTML='<span class="down">Kon status niet laden</span>'; return; }
-  if(!data){ $('h-balance').textContent='—'; $('h-status').textContent='Nog geen data — draait de bot al met webportaal-sync?'; return; }
-  STATE=data.state; STATE._upd=data.updated_at; render();
+  if(!data || !data.length){ $('h-balance').textContent='—'; $('h-status').textContent='Nog geen data — draait de bot al met webportaal-sync?'; return; }
+  BOTS=data;
+  if(!SELECTED || !BOTS.find(b=>b.bot_id===SELECTED)) SELECTED=BOTS[0].bot_id;
+  renderSwitcher();
+  const row=BOTS.find(b=>b.bot_id===SELECTED);
+  STATE=row.state; STATE._upd=row.updated_at; render();
+}
+
+function renderSwitcher(){
+  const el=$('botswitch');
+  if(BOTS.length<2){ el.innerHTML=''; return; }
+  el.innerHTML=BOTS.map(b=>`<button data-bot="${esc(b.bot_id)}"${b.bot_id===SELECTED?' class="on"':''}>${esc(b.bot_id)}</button>`).join('');
+  el.querySelectorAll('button').forEach(bn=>bn.onclick=()=>{
+    SELECTED=bn.dataset.bot;
+    const row=BOTS.find(b=>b.bot_id===SELECTED);
+    STATE=row.state; STATE._upd=row.updated_at;
+    renderSwitcher(); render();
+  });
 }
 
 function render(){
@@ -335,7 +353,7 @@ function wireHover(){
 // ── noodstop ──
 $('stopconfirm').addEventListener('input',()=>{ $('stopbtn').disabled=$('stopconfirm').value!=='STOP'; });
 $('stopbtn').onclick=async()=>{ $('stopbtn').disabled=true;
-  const {error}=await SB.from('bot_commands').insert({command:'emergency_stop'});
+  const {error}=await SB.from('bot_commands').insert({command:'emergency_stop', bot_id:SELECTED});
   $('stopmsg').textContent=error?'Mislukt: '+error.message:'Noodstop geplaatst — de bot voert hem bij zijn volgende cyclus uit.';
   $('stopconfirm').value=''; };
 

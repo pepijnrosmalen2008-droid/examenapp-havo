@@ -64,20 +64,22 @@ class Portal:
 
     # ── state sync ────────────────────────────────────────────────────
 
-    def sync_state(self, payload: dict) -> None:
+    def sync_state(self, payload: dict, bot_id: str = "default") -> None:
         self._ensure_login()
         r = self.http.post(
-            f"{self.url}/rest/v1/bot_state?on_conflict=user_id",
-            json={"user_id": self.user_id, "state": payload, "updated_at": utcnow()},
+            f"{self.url}/rest/v1/bot_state?on_conflict=user_id,bot_id",
+            json={"user_id": self.user_id, "bot_id": bot_id, "state": payload, "updated_at": utcnow()},
             headers=self._headers(Prefer="resolution=merge-duplicates"), timeout=10)
         r.raise_for_status()
 
     # ── commando's ────────────────────────────────────────────────────
 
-    def pending_commands(self) -> list[dict]:
+    def pending_commands(self, bot_id: str = "default") -> list[dict]:
         self._ensure_login()
+        # commando's voor deze bot, of een broadcast (bot_id leeg)
         r = self.http.get(
-            f"{self.url}/rest/v1/bot_commands?handled=eq.false&select=id,command&order=id",
+            f"{self.url}/rest/v1/bot_commands?handled=eq.false"
+            f"&or=(bot_id.eq.{bot_id},bot_id.is.null)&select=id,command&order=id",
             headers=self._headers(), timeout=10)
         r.raise_for_status()
         return r.json()
@@ -127,6 +129,7 @@ def build_payload(db: Database, cfg, mode: str) -> dict:
                 "pnl_pct": pnl_pct, "alloc_pct": alloc, "opened_at": p.opened_at}
     return {
         "mode": mode,
+        "bot_id": cfg.bot_id,
         "strategy": cfg.strategy.name,
         "interval_minutes": cfg.schedule.interval_minutes,
         "halted": db.get_meta("halted") == "1",
@@ -171,18 +174,19 @@ def portal_tick(portal: Portal | None, engine, db: Database, cfg, mode: str) -> 
     """Eén sync-ronde na elke cycle. Mag nooit een exception doorlaten."""
     if portal is None:
         return
+    bot_id = cfg.bot_id
     try:
-        portal.sync_state(build_payload(db, cfg, mode))
+        portal.sync_state(build_payload(db, cfg, mode), bot_id)
     except Exception:  # noqa: BLE001
         log.exception("portal: state-sync mislukt (volgende cycle opnieuw)")
     try:
-        for cmd in portal.pending_commands():
+        for cmd in portal.pending_commands(bot_id):
             if cmd["command"] == "emergency_stop":
                 log.critical("NOODSTOP ontvangen via webportaal")
                 engine.emergency_stop("noodstop via slagio-webportaal")
                 portal.mark_handled(cmd["id"])
                 # direct de nieuwe (gestopte) status tonen
-                portal.sync_state(build_payload(db, cfg, mode))
+                portal.sync_state(build_payload(db, cfg, mode), bot_id)
             else:
                 log.warning("portal: onbekend commando %r genegeerd", cmd["command"])
                 portal.mark_handled(cmd["id"])

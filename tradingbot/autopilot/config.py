@@ -121,6 +121,17 @@ class ResearchConfig(BaseModel):
                              description="(rulebased) lokaal bestand met gestructureerde events")
 
 
+class SeedConfig(BaseModel):
+    """PAPER-startpunt vanaf een bestaande portefeuille. `holdings` = pair → EUR-waarde
+    bij de start (wordt tegen de actuele prijs omgezet naar een hoeveelheid). Alleen
+    voor PAPER; in LIVE gebruikt de bot het echte saldo."""
+    model_config = ConfigDict(extra="forbid")
+
+    enabled: bool = False
+    eur: float = Field(default=0.0, ge=0, description="Startcash in EUR")
+    holdings: dict[str, float] = Field(default_factory=dict)
+
+
 class BacktestCostConfig(BaseModel):
     model_config = ConfigDict(extra="forbid")
 
@@ -134,6 +145,7 @@ class AppConfig(BaseModel):
     model_config = ConfigDict(extra="forbid")
 
     mode: TradingMode = TradingMode.PAPER  # PAPER | SHADOW | LIVE
+    bot_id: str = Field(default="default", description="Unieke naam; onderscheidt bots op het webportaal")
     capital_eur: float = Field(gt=0, description="Startkapitaal dat de bot mag beheren")
     pairs: list[str] = Field(min_length=1, description="Whitelist; de bot handelt nooit buiten deze lijst")
     risk: RiskConfig
@@ -144,6 +156,7 @@ class AppConfig(BaseModel):
     circuit_breaker: CircuitBreakerConfig = Field(default_factory=CircuitBreakerConfig)
     universe: UniverseConfig = Field(default_factory=UniverseConfig)
     research: ResearchConfig = Field(default_factory=ResearchConfig)
+    seed: SeedConfig = Field(default_factory=SeedConfig)
 
     @field_validator("pairs")
     @classmethod

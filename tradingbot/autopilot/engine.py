@@ -62,10 +62,38 @@ class TradingEngine:
             )
         self.db.set_meta("mode", self.mode.value)
         if self.db.get_meta("starting_capital") is None:
-            self.db.set_meta("starting_capital", str(self.cfg.capital_eur))
-            self.db.set_meta("bot_cash_eur", str(self.cfg.capital_eur))
+            if self.mode == TradingMode.PAPER and self.cfg.seed.enabled:
+                self._seed_portfolio()
+            else:
+                self.db.set_meta("starting_capital", str(self.cfg.capital_eur))
+                self.db.set_meta("bot_cash_eur", str(self.cfg.capital_eur))
             self.db.set_meta("start_date", utcnow())
         self.reconcile()
+
+    def _seed_portfolio(self) -> None:
+        """PAPER-start vanaf een bestaande portefeuille: zet EUR-cash + posities zoals
+        opgegeven in cfg.seed. EUR-waardes worden tegen de actuele prijs omgezet naar
+        hoeveelheden; de instapprijs = die actuele prijs (P&L begint dus op 0)."""
+        seed = self.cfg.seed
+        total = seed.eur
+        self.db.set_paper_balance("EUR", seed.eur)
+        for pair, eur_val in seed.holdings.items():
+            base = pair.split("-")[0]
+            try:
+                price = self.x.ticker_price(pair)
+            except Exception:  # noqa: BLE001
+                log.warning("seed: prijs voor %s niet op te halen; overgeslagen", pair)
+                continue
+            amount = eur_val / price if price > 0 else 0.0
+            if amount <= 0:
+                continue
+            self.db.set_paper_balance(base, amount)
+            self.db.upsert_position(pair, amount, price)
+            total += eur_val
+        self.db.set_meta("starting_capital", f"{total:.2f}")
+        self.db.set_meta("bot_cash_eur", f"{seed.eur:.6f}")
+        log.info("seed: portefeuille geïnitialiseerd op €%.2f (%d holdings + €%.2f cash)",
+                 total, len(seed.holdings), seed.eur)
 
     def reconcile(self) -> None:
         """Herstel na crash: PENDING/PLACED orders afhandelen zonder ze te dupliceren."""
