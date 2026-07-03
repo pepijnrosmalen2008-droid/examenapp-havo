@@ -16,6 +16,10 @@ I_UNDERSTAND_THE_RISKS.txt
 # Python
 __pycache__/
 *.pyc
+# De hoofd-.gitignore van de site negeert _*.py (Slagio-hulpscripts); die regel
+# ving per ongeluk ook __init__.py. Deze negatie zet dat recht voor de bot.
+!__init__.py
+!**/__init__.py
 .pytest_cache/
 .venv/
 venv/
