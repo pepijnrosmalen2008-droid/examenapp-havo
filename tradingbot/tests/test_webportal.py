@@ -96,8 +96,12 @@ def test_payload_contents(db, market):
     assert p["mode"] == "PAPER" and p["strategy"] == "dca"
     assert p["halted"] is False
     assert len(p["positions"]) == 2
-    assert p["equity"] and p["equity"][-1][1] == pytest.approx(p["equity_now"], rel=0.01)
-    assert all(set(o) == {"t", "side", "pair", "eur", "status", "reason"} for o in p["orders"])
+    assert p["eq_recent"] and p["eq_recent"][-1][1] == pytest.approx(p["equity_now"], rel=0.01)
+    assert p["eq_all"]
+    assert all({"t", "side", "pair", "eur", "price", "amount", "status", "reason"} <= set(o)
+               for o in p["orders"])
+    assert all({"price", "value_eur", "pnl_eur", "pnl_pct", "alloc_pct"} <= set(pos)
+               for pos in p["positions"])
 
 
 def test_emergency_stop_command_halts_and_liquidates(db, market):

@@ -98,46 +98,58 @@ def _bucket(points: list[tuple[str, float]], n: int) -> list[tuple[str, float]]:
 
 
 def build_payload(db: Database, cfg, mode: str) -> dict:
-    """Compacte, JSON-serialiseerbare status-snapshot voor het portaal."""
+    """Compacte, JSON-serialiseerbare status-snapshot voor het portaal.
+
+    Twee equity-reeksen zodat de site zowel korte (1u) als lange (alles) tijdvakken
+    scherp kan tonen: `eq_recent` = ruwe snapshots van de laatste ~dagen; `eq_all` =
+    de volledige historie, gebucket tot een handelbaar aantal punten.
+    """
+    import json as _json
+
     snaps = db.conn.execute(
         "SELECT ts, equity_eur FROM equity_snapshots ORDER BY id").fetchall()
-    equity = _bucket([(r["ts"], r["equity_eur"]) for r in snaps], EQUITY_POINTS)
+    all_pts = [(r["ts"], r["equity_eur"]) for r in snaps]
+    eq_recent = [[t, round(v, 2)] for t, v in all_pts[-1200:]]          # ruw, fijn (korte vakken)
+    eq_all = [[t, round(v, 2)] for t, v in _bucket(all_pts, 500)]        # gebucket (lange vakken)
     start = db.get_meta_float("starting_capital", cfg.capital_eur)
     last = db.last_equity()
-
-    import json as _json
     last_prices = _json.loads(db.get_meta("last_prices") or "{}")
+    equity_now = last["equity_eur"] if last else start
 
     def _position(p):
         price = last_prices.get(p.pair, p.avg_price)
         value = p.amount * price
+        pnl_eur = value - p.amount * p.avg_price
         pnl_pct = ((price - p.avg_price) / p.avg_price * 100) if p.avg_price > 0 else 0.0
+        alloc = (value / equity_now * 100) if equity_now > 0 else 0.0
         return {"pair": p.pair, "amount": p.amount, "avg_price": p.avg_price,
-                "price": price, "value_eur": value, "pnl_pct": pnl_pct,
-                "opened_at": p.opened_at}
+                "price": price, "value_eur": value, "pnl_eur": pnl_eur,
+                "pnl_pct": pnl_pct, "alloc_pct": alloc, "opened_at": p.opened_at}
     return {
         "mode": mode,
         "strategy": cfg.strategy.name,
-        "pairs": cfg.pairs,
         "interval_minutes": cfg.schedule.interval_minutes,
         "halted": db.get_meta("halted") == "1",
         "halt_reason": db.get_meta("halt_reason", ""),
         "paused_until": db.get_meta("paused_until"),
         "start": start,
         "day_start": db.get_meta_float("day_start_equity", start),
-        "equity_now": last["equity_eur"] if last else start,
+        "equity_now": equity_now,
         "cash": last["cash_eur"] if last else start,
+        "invested": sum(p.amount * last_prices.get(p.pair, p.avg_price) for p in db.open_positions()),
         "max_drawdown_pct": cfg.risk.max_drawdown_pct,
-        "equity": [[t, round(v, 2)] for t, v in equity],
+        "eq_recent": eq_recent,
+        "eq_all": eq_all,
         "positions": [_position(p) for p in db.open_positions()],
         "n_markets": len(cfg.pairs),
         "orders": [{"t": o["created_at"], "side": o["side"], "pair": o["pair"],
-                    "eur": o["amount_eur"], "status": o["status"], "reason": o["reason"]}
-                   for o in db.recent_orders(15)],
+                    "eur": o["amount_eur"], "price": o["price"], "amount": o["amount_asset"],
+                    "status": o["status"], "reason": o["reason"]}
+                   for o in db.recent_orders(60)],
         "blocks": [{"t": b["ts"], "pair": b["pair"], "reason": b["reason"]}
                    for b in db.conn.execute(
                        "SELECT ts, pair, reason FROM risk_decisions WHERE allowed=0 "
-                       "ORDER BY id DESC LIMIT 10")],
+                       "ORDER BY id DESC LIMIT 12")],
         "updated": utcnow(),
     }
 

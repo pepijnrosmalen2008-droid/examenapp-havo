@@ -3,83 +3,98 @@
 <meta name="robots" content="noindex,nofollow">
 <title>Slagio · Bot-portaal</title>
 <style>
-:root { --surface:#ffffff; --page:#f4f5f7; --raise:#ffffff; --ink:#0b1622; --ink2:#5b6673;
-  --muted:#8b95a1; --grid:#e7eaee; --axis:#cfd5dc; --border:rgba(11,22,34,.08);
-  --s1:#2a78d6; --up:#00a878; --down:#e5484d; --crit:#e5484d; --warn:#f0a020; }
+:root { --surface:#ffffff; --page:#f4f5f7; --ink:#0b1622; --ink2:#5b6673; --muted:#8b95a1;
+  --grid:#e7eaee; --axis:#cfd5dc; --border:rgba(11,22,34,.08); --chip:#eef1f4;
+  --s1:#2a78d6; --up:#00a878; --down:#e5484d; --crit:#e5484d; --warn:#f0a020; --tip:#0b1622; }
 @media (prefers-color-scheme: dark) {
-:root { --surface:#12161c; --page:#0a0d11; --raise:#161b22; --ink:#f2f4f7; --ink2:#aeb6c0;
-  --muted:#7d8794; --grid:#232a33; --axis:#2f3742; --border:rgba(255,255,255,.08);
-  --s1:#3d8bef; --up:#1fc38a; --down:#f0555a; --crit:#f0555a; --warn:#f0a020; } }
+:root { --surface:#12161c; --page:#0a0d11; --ink:#f2f4f7; --ink2:#aeb6c0; --muted:#7d8794;
+  --grid:#232a33; --axis:#2f3742; --border:rgba(255,255,255,.08); --chip:#1c232c;
+  --s1:#3d8bef; --up:#1fc38a; --down:#f0555a; --crit:#f0555a; --warn:#f0a020; --tip:#e9edf2; } }
 * { box-sizing:border-box; margin:0 } html { -webkit-text-size-adjust:100% }
 body { font:15px/1.45 system-ui,-apple-system,"Segoe UI",sans-serif; background:var(--page);
-  color:var(--ink); padding:20px 16px 60px; max-width:760px; margin:0 auto }
-h2 { font-size:13px; text-transform:uppercase; letter-spacing:.04em; color:var(--muted);
-  margin:26px 4px 10px; font-weight:600 }
-.card { background:var(--surface); border:1px solid var(--border); border-radius:16px;
-  padding:16px; margin-top:10px }
-.row { display:flex; align-items:center; gap:12px }
-.spread { justify-content:space-between }
+  color:var(--ink); padding:18px 14px 70px; max-width:780px; margin:0 auto }
+h2 { font-size:12px; text-transform:uppercase; letter-spacing:.05em; color:var(--muted);
+  margin:24px 4px 10px; font-weight:700 }
+.card { background:var(--surface); border:1px solid var(--border); border-radius:16px; padding:16px }
+.row { display:flex; align-items:center; gap:10px } .spread { justify-content:space-between }
+.tnum { font-variant-numeric:tabular-nums }
 button, input { font:inherit }
 input { width:100%; padding:12px 14px; margin:6px 0 14px; border:1px solid var(--axis);
   border-radius:10px; background:var(--surface); color:var(--ink) }
-button { padding:12px 18px; border:0; border-radius:10px; background:var(--s1); color:#fff;
-  font-weight:650; cursor:pointer } button:disabled { opacity:.5; cursor:not-allowed }
-button.ghost { background:transparent; color:var(--ink2); border:1px solid var(--border); padding:8px 14px }
-button.danger { background:var(--down) }
-.up { color:var(--up) } .down { color:var(--down) }
+.up { color:var(--up) } .down { color:var(--down) } .mut { color:var(--muted) }
 .pill { font-size:12px; font-weight:600; padding:3px 10px; border-radius:99px;
-  background:var(--page); color:var(--ink2); border:1px solid var(--border) }
+  background:var(--chip); color:var(--ink2) }
 .dot { width:9px; height:9px; border-radius:99px; display:inline-block }
 
-/* login */
 .login { max-width:380px; margin:12vh auto 0 } .login h1 { font-size:22px }
+.login button { width:100%; padding:12px; border:0; border-radius:10px; background:var(--s1);
+  color:#fff; font-weight:650; cursor:pointer }
 .err { color:var(--crit); font-size:13px; min-height:18px; margin-bottom:6px }
 
-/* app */
 #app { display:none }
 .topbar { display:flex; align-items:center; gap:10px; margin-bottom:14px }
-.brand { font-size:17px; font-weight:750; letter-spacing:-.01em }
-.hero { background:var(--surface); border:1px solid var(--border); border-radius:18px; padding:22px 20px }
+.brand { font-size:17px; font-weight:750 }
+.topbar button { padding:8px 14px; border:1px solid var(--border); border-radius:10px;
+  background:transparent; color:var(--ink2); cursor:pointer; font-weight:600 }
+.hero { background:var(--surface); border:1px solid var(--border); border-radius:18px; padding:20px }
 .hero .lbl { font-size:13px; color:var(--muted) }
-.hero .bal { font-size:38px; font-weight:750; letter-spacing:-.02em; margin:2px 0 6px;
-  font-variant-numeric:tabular-nums }
+.hero .bal { font-size:36px; font-weight:750; letter-spacing:-.02em; margin:2px 0 6px }
 .hero .chg { font-size:14px; font-weight:600 }
-.hero .sub { font-size:12px; color:var(--muted); margin-top:10px }
-.badges { display:flex; gap:7px; flex-wrap:wrap; margin-top:14px }
-.statusline { display:flex; align-items:center; gap:8px; margin-top:12px; font-size:13px; font-weight:600 }
+.split { display:flex; gap:18px; margin-top:14px; flex-wrap:wrap }
+.split .k { font-size:12px; color:var(--muted) } .split .v { font-weight:650 }
+.statusline { display:flex; align-items:center; gap:8px; margin-top:14px; font-size:13px; font-weight:600 }
+.sub { font-size:12px; color:var(--muted); margin-top:6px }
 
-/* coin rows */
-.coin { display:flex; align-items:center; gap:12px; padding:12px 6px; border-bottom:1px solid var(--grid) }
-.coin:last-child { border-bottom:0 }
-.ic { width:38px; height:38px; border-radius:99px; flex:none; display:grid; place-items:center;
-  font-weight:700; font-size:13px; color:#fff; letter-spacing:-.02em }
-.coin .nm { font-weight:650 } .coin .px { font-size:12px; color:var(--muted); font-variant-numeric:tabular-nums }
-.coin .rt { margin-left:auto; text-align:right }
-.coin .val { font-weight:650; font-variant-numeric:tabular-nums }
-.coin .pnl { font-size:12px; font-weight:600; font-variant-numeric:tabular-nums }
-.empty { color:var(--muted); font-style:italic; padding:14px 6px }
-
-/* chart */
-svg { display:block; width:100%; height:auto }
+.rng { display:flex; gap:6px; flex-wrap:wrap; margin-bottom:4px }
+.rng button { padding:6px 11px; border:1px solid var(--border); background:transparent;
+  color:var(--ink2); border-radius:99px; font-size:13px; font-weight:600; cursor:pointer }
+.rng button.on { background:var(--s1); border-color:var(--s1); color:#fff }
+.chart-head { display:flex; justify-content:space-between; align-items:baseline; margin:10px 2px 6px }
+.chart-head .d { font-size:15px; font-weight:700 }
+.chartwrap { position:relative }
+svg { display:block; width:100%; height:auto; touch-action:none }
 .gl { stroke:var(--grid); stroke-width:1 } .ax { fill:var(--muted); font-size:11px }
+#cross { stroke:var(--axis); stroke-width:1 }
+#tip { position:absolute; pointer-events:none; background:var(--tip); color:var(--surface);
+  padding:6px 9px; border-radius:8px; font-size:12px; font-weight:600; white-space:nowrap;
+  transform:translate(-50%,-130%); opacity:0; transition:opacity .08s }
 
-/* tables */
-table { border-collapse:collapse; width:100%; font-size:13px }
-th { text-align:left; color:var(--muted); font-weight:500; padding:6px 8px; border-bottom:1px solid var(--axis) }
-td { padding:7px 8px; border-bottom:1px solid var(--grid); font-variant-numeric:tabular-nums }
-.scroll { overflow-x:auto }
+.coin { display:flex; align-items:center; gap:12px; padding:12px 4px; border-bottom:1px solid var(--grid) }
+.coin:last-child { border-bottom:0 }
+.ic { width:36px; height:36px; border-radius:99px; flex:none; display:grid; place-items:center;
+  font-weight:700; font-size:12px; color:#fff }
+.coin .nm { font-weight:650 } .coin .px { font-size:12px; color:var(--muted) }
+.coin .rt { margin-left:auto; text-align:right }
+.coin .val { font-weight:650 } .coin .pl { font-size:12px; font-weight:600 }
+.abar { height:4px; background:var(--grid); border-radius:9px; margin-top:7px; overflow:hidden }
+.abar > i { display:block; height:100%; background:var(--s1); border-radius:9px }
+
+.trade { display:flex; align-items:center; gap:10px; padding:10px 4px; border-bottom:1px solid var(--grid); font-size:14px }
+.trade:last-child { border-bottom:0 }
+.tag { font-size:11px; font-weight:700; padding:2px 8px; border-radius:6px; flex:none }
+.tag.b { background:color-mix(in srgb,var(--up) 16%,transparent); color:var(--up) }
+.tag.s { background:color-mix(in srgb,var(--down) 16%,transparent); color:var(--down) }
+.trade .desc { min-width:0 } .trade .desc .m { font-weight:600 }
+.trade .desc .r { font-size:12px; color:var(--muted); overflow:hidden; text-overflow:ellipsis; white-space:nowrap }
+.trade .when { margin-left:auto; text-align:right; font-size:12px; color:var(--muted); flex:none }
+.empty { color:var(--muted); font-style:italic; padding:14px 4px }
+.blk { padding:9px 4px; border-bottom:1px solid var(--grid); font-size:13px }
+.blk:last-child { border-bottom:0 } .blk .t { color:var(--muted); font-size:12px }
 
 .stopbox { border:1px solid var(--down); border-radius:16px; padding:16px; margin-top:26px }
 .stopbox p { font-size:13px; color:var(--ink2); margin:6px 0 12px }
+.stopbox input { max-width:150px; margin:0 } .stopbox button { padding:12px 18px; border:0;
+  border-radius:10px; background:var(--down); color:#fff; font-weight:650; cursor:pointer }
+.stopbox button:disabled { opacity:.5; cursor:not-allowed }
 </style></head><body>
 
 <div id="login" class="login">
   <h1>Slagio · Bot-portaal</h1>
-  <p style="color:var(--muted);font-size:13px;margin:8px 0 20px">Privé. Alleen met account; je gegevens zijn per gebruiker afgeschermd.</p>
+  <p class="mut" style="font-size:13px;margin:8px 0 20px">Privé. Alleen met account; je gegevens zijn per gebruiker afgeschermd.</p>
   <label>E-mail <input id="email" type="email" autocomplete="username"></label>
   <label>Wachtwoord <input id="pw" type="password" autocomplete="current-password"></label>
   <div class="err" id="loginerr"></div>
-  <button id="loginbtn" style="width:100%">Inloggen</button>
+  <button id="loginbtn">Inloggen</button>
 </div>
 
 <div id="app">
@@ -87,38 +102,53 @@ td { padding:7px 8px; border-bottom:1px solid var(--grid); font-variant-numeric:
     <span class="brand">⚡ Autopilot</span>
     <span class="pill" id="b-mode"></span>
     <span style="flex:1"></span>
-    <button class="ghost" id="logout">Uitloggen</button>
+    <button id="logout">Uitloggen</button>
   </div>
 
   <div class="hero">
     <div class="lbl">Portefeuille (gesimuleerd)</div>
-    <div class="bal" id="h-balance">—</div>
+    <div class="bal tnum" id="h-balance">—</div>
     <div class="chg" id="h-change"></div>
-    <div class="badges" id="h-badges"></div>
+    <div class="split">
+      <div><div class="k">Belegd</div><div class="v tnum" id="h-invested">—</div></div>
+      <div><div class="k">Cash</div><div class="v tnum" id="h-cash">—</div></div>
+      <div><div class="k">Strategie</div><div class="v" id="h-strat">—</div></div>
+      <div><div class="k">Markten</div><div class="v" id="h-markets">—</div></div>
+    </div>
     <div class="statusline" id="h-status"></div>
     <div class="sub" id="h-updated"></div>
   </div>
 
   <h2>Verloop</h2>
-  <div class="card" id="eqcard"></div>
+  <div class="card">
+    <div class="rng" id="ranges"></div>
+    <div class="chart-head">
+      <span class="mut" style="font-size:12px" id="ch-range">—</span>
+      <span class="d" id="ch-delta"></span>
+    </div>
+    <div class="chartwrap">
+      <div id="tip"></div>
+      <div id="eqchart"></div>
+    </div>
+  </div>
 
   <h2>Je bezit</h2>
   <div class="card" id="holdings"></div>
 
-  <h2>Laatste orders</h2>
-  <div class="card scroll"><table id="orders"></table></div>
+  <h2>Live trades</h2>
+  <div class="card" id="trades"></div>
 
   <h2>Risico &amp; kill-switches</h2>
-  <div class="card scroll"><table id="blocks"></table></div>
+  <div class="card" id="blocks"></div>
 
   <div class="stopbox">
-    <div class="row spread"><h2 style="margin:0;color:var(--down)">⛔ Noodstop</h2></div>
+    <h2 style="margin:0 0 2px;color:var(--down)">⛔ Noodstop</h2>
     <p>Verkoopt <b>alles naar EUR</b> en stopt de bot <b>permanent</b> bij zijn volgende cyclus.
     Weer aanzetten kan daarna alleen op de machine zelf — bewust niet via deze pagina.</p>
     <div class="row" style="flex-wrap:wrap">
-      <input id="stopconfirm" placeholder="typ STOP" style="max-width:160px;margin:0">
-      <button class="danger" id="stopbtn" disabled>Noodstop</button>
-      <span style="color:var(--muted);font-size:12px" id="stopmsg"></span>
+      <input id="stopconfirm" placeholder="typ STOP">
+      <button id="stopbtn" disabled>Noodstop</button>
+      <span class="mut" style="font-size:12px" id="stopmsg"></span>
     </div>
   </div>
 </div>
@@ -131,114 +161,183 @@ const SB = window.supabase.createClient(
   { auth: { storageKey: 'slagio-botportal' } });
 const $ = id => document.getElementById(id);
 const eur = x => '€' + (x ?? 0).toLocaleString('nl-NL', { minimumFractionDigits: 2, maximumFractionDigits: 2 });
-const pct = x => (x >= 0 ? '+' : '') + (x ?? 0).toFixed(2) + '%';
+const eur0 = x => '€' + Math.round(x ?? 0).toLocaleString('nl-NL');
+const sgn = (x, s) => (x >= 0 ? '+' : '−') + s(Math.abs(x));
+const pct = x => (x >= 0 ? '+' : '−') + Math.abs(x ?? 0).toFixed(2) + '%';
 const esc = s => String(s ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const base = p => String(p).split('-')[0];
-// stabiele kleur per coin (hue uit de ticker) — puur cosmetisch, zoals de gekleurde iconen bij Bitvavo
-function coinColor(sym) { let h = 0; for (const c of sym) h = (h * 31 + c.charCodeAt(0)) % 360; return `hsl(${h} 62% 46%)`; }
-let timer = null;
+function coinColor(s){ let h=0; for(const c of s) h=(h*31+c.charCodeAt(0))%360; return `hsl(${h} 60% 47%)`; }
 
-async function init() { const { data:{session} } = await SB.auth.getSession(); if (session) enter(); }
+const RANGES = [['1u',3600e3],['6u',6*3600e3],['12u',12*3600e3],['24u',24*3600e3],
+  ['7d',7*864e5],['30d',30*864e5],['1j',365*864e5],['Alles',Infinity]];
+let STATE = null, RANGE = 24*3600e3, timer = null;
+
+async function init(){ const {data:{session}}=await SB.auth.getSession(); if(session) enter(); }
 $('loginbtn').onclick = async () => {
-  $('loginerr').textContent = '';
-  const { error } = await SB.auth.signInWithPassword({ email: $('email').value.trim(), password: $('pw').value });
-  if (error) { $('loginerr').textContent = 'Inloggen mislukt: ' + error.message; return; }
-  enter();
+  $('loginerr').textContent='';
+  const {error}=await SB.auth.signInWithPassword({email:$('email').value.trim(),password:$('pw').value});
+  if(error){ $('loginerr').textContent='Inloggen mislukt: '+error.message; return; } enter();
 };
-$('pw').addEventListener('keydown', e => { if (e.key === 'Enter') $('loginbtn').click(); });
+$('pw').addEventListener('keydown',e=>{ if(e.key==='Enter') $('loginbtn').click(); });
 $('logout').onclick = async () => { clearInterval(timer); await SB.auth.signOut(); location.reload(); };
 
-function enter() {
-  $('login').style.display = 'none'; $('app').style.display = 'block';
-  load(); timer = setInterval(load, 60_000);  // de bot pusht ~elke minuut; wij halen even vaak op
+function enter(){
+  $('login').style.display='none'; $('app').style.display='block';
+  $('ranges').innerHTML = RANGES.map(([l,ms])=>`<button data-ms="${ms}"${ms===RANGE?' class="on"':''}>${l}</button>`).join('');
+  $('ranges').querySelectorAll('button').forEach(b=>b.onclick=()=>{
+    RANGE=Number(b.dataset.ms);
+    $('ranges').querySelectorAll('button').forEach(x=>x.classList.toggle('on',x===b));
+    if(STATE) drawChart();
+  });
+  load(); timer=setInterval(load,60_000);
 }
 
-async function load() {
-  const { data, error } = await SB.from('bot_state').select('state, updated_at').maybeSingle();
-  if (error) { $('h-status').innerHTML = '<span class="down">Kon status niet laden</span>'; return; }
-  if (!data) { $('h-balance').textContent = '—';
-    $('h-status').innerHTML = 'Nog geen data — draait de bot al met webportaal-sync?'; return; }
-  render(data.state, data.updated_at);
+async function load(){
+  const {data,error}=await SB.from('bot_state').select('state, updated_at').maybeSingle();
+  if(error){ $('h-status').innerHTML='<span class="down">Kon status niet laden</span>'; return; }
+  if(!data){ $('h-balance').textContent='—'; $('h-status').textContent='Nog geen data — draait de bot al met webportaal-sync?'; return; }
+  STATE=data.state; STATE._upd=data.updated_at; render();
 }
 
-function render(s, updatedAt) {
-  $('b-mode').textContent = s.mode;
-  const pnl = s.equity_now - s.start, pnlDay = s.equity_now - s.day_start;
-  $('h-balance').textContent = eur(s.equity_now);
-  const dcls = pnlDay >= 0 ? 'up' : 'down', arrow = pnlDay >= 0 ? '▲' : '▼';
-  $('h-change').innerHTML = `<span class="${dcls}">${arrow} ${eur(Math.abs(pnlDay))} · ${pct(pnlDay / s.day_start * 100)} vandaag</span>`;
-  $('h-badges').innerHTML = [
-    `${esc(s.strategy)}`, `${s.n_markets ?? (s.pairs||[]).length} markt(en)`,
-    `totaal ${pct(pnl / s.start * 100)}`, `cash ${eur(s.cash)}`
-  ].map(t => `<span class="pill">${t}</span>`).join('');
+function render(){
+  const s=STATE;
+  $('b-mode').textContent=s.mode;
+  $('h-balance').textContent=eur(s.equity_now);
+  const d=s.equity_now-s.day_start, dc=d>=0?'up':'down';
+  $('h-change').innerHTML=`<span class="${dc}">${d>=0?'▲':'▼'} ${eur(Math.abs(d))} · ${pct(d/s.day_start*100)} vandaag</span>`;
+  $('h-invested').textContent=eur(s.invested||0); $('h-cash').textContent=eur(s.cash);
+  $('h-strat').textContent=s.strategy; $('h-markets').textContent=(s.n_markets??0);
 
-  let sc, stxt;
-  if (s.halted) { sc = 'var(--down)'; stxt = '⛔ Gestopt — ' + esc(s.halt_reason || 'kill switch'); }
-  else if (s.paused_until) { sc = 'var(--warn)'; stxt = '⏸ Dag-pauze tot ' + esc(s.paused_until) + ' UTC'; }
-  else { sc = 'var(--up)'; stxt = 'Actief — kill-switches op groen'; }
-  $('h-status').innerHTML = `<span class="dot" style="background:${sc}"></span><span>${stxt}</span>`;
+  let sc,st;
+  if(s.halted){sc='var(--down)';st='⛔ Gestopt — '+esc(s.halt_reason||'kill switch');}
+  else if(s.paused_until){sc='var(--warn)';st='⏸ Dag-pauze tot '+esc(s.paused_until)+' UTC';}
+  else{sc='var(--up)';st='Actief — kill-switches op groen';}
+  $('h-status').innerHTML=`<span class="dot" style="background:${sc}"></span><span>${st}</span>`;
+  const age=(Date.now()-new Date(s.updated||s._upd).getTime())/60000;
+  $('h-updated').innerHTML=(age>4?'<span class="down">bot lijkt offline — </span>':'')
+    +'laatste update '+Math.max(0,Math.round(age))+' min geleden · ververst ~elke minuut · geen rendementsbelofte';
 
-  const ageMin = (Date.now() - new Date(s.updated || updatedAt).getTime()) / 60000;
-  const stale = ageMin > 4;
-  $('h-updated').innerHTML = (stale ? '<span class="down">bot lijkt offline — </span>' : '')
-    + 'laatste update ' + Math.max(0, Math.round(ageMin)) + ' min geleden · ververst ~elke minuut · geen rendementsbelofte';
+  drawChart(); renderHoldings(); renderTrades(); renderBlocks();
+}
 
-  // equity-grafiek
-  drawEquity($('eqcard'), (s.equity || []).map(p => p[1]), s.start);
+function seriesForRange(){
+  const s=STATE, recent=(s.eq_recent||[]), all=(s.eq_all||[]);
+  const src = RANGE<=24*3600e3 && recent.length ? recent : all;
+  if(!src.length) return [];
+  const cutoff = Date.now()-RANGE;
+  let pts = src.filter(p=>new Date(p[0]).getTime()>=cutoff);
+  if(pts.length<2) pts = src.slice(-Math.max(2,Math.min(src.length,60))); // te weinig in dit vak → toon recente punten
+  return pts;
+}
 
-  // bezit — coin-rijen zoals in een crypto-app, gesorteerd op waarde
-  const pos = (s.positions || []).slice().sort((a, b) => (b.value_eur || 0) - (a.value_eur || 0));
-  $('holdings').innerHTML = pos.length ? pos.map(p => {
-    const b = base(p.pair), pc = (p.pnl_pct >= 0 ? 'up' : 'down');
+function renderHoldings(){
+  const pos=(STATE.positions||[]).slice().sort((a,b)=>(b.value_eur||0)-(a.value_eur||0));
+  $('holdings').innerHTML = pos.length ? pos.map(p=>{
+    const b=base(p.pair), pc=p.pnl_pct>=0?'up':'down';
     return `<div class="coin">
       <div class="ic" style="background:${coinColor(b)}">${esc(b.slice(0,4))}</div>
-      <div><div class="nm">${esc(b)}</div><div class="px">${eur(p.price)}</div></div>
-      <div class="rt"><div class="val">${eur(p.value_eur)}</div>
-        <div class="pnl ${pc}">${pct(p.pnl_pct)}</div></div>
-    </div>`; }).join('') : '<div class="empty">geen open posities</div>';
-
-  $('orders').innerHTML = '<tr><th>tijd</th><th>kant</th><th>coin</th><th>bedrag</th><th>reden</th></tr>' +
-    ((s.orders || []).slice(0, 12).map(o => {
-      const sc2 = o.side === 'BUY' ? 'up' : 'down';
-      return `<tr><td>${esc((o.t||'').replace('T',' ').slice(5,16))}</td>
-        <td class="${sc2}">${esc(o.side)}</td><td>${esc(base(o.pair))}</td>
-        <td>${o.eur ? eur(o.eur) : '—'}</td><td>${esc(o.reason)}</td></tr>`; }).join('')
-      || '<tr><td colspan="5" class="empty">nog geen orders</td></tr>');
-
-  $('blocks').innerHTML = '<tr><th>tijd</th><th>coin</th><th>geblokkeerd omdat…</th></tr>' +
-    ((s.blocks || []).slice(0, 10).map(b => `<tr><td>${esc((b.t||'').replace('T',' ').slice(5,16))}</td>
-      <td>${esc(b.pair ? base(b.pair) : '—')}</td><td>${esc(b.reason)}</td></tr>`).join('')
-      || '<tr><td colspan="3" class="empty">geen blokkades</td></tr>');
+      <div style="min-width:0">
+        <div class="nm">${esc(b)}</div>
+        <div class="px tnum">${eur(p.price)} · ${(p.amount||0).toLocaleString('nl-NL',{maximumFractionDigits:6})} ${esc(b)}</div>
+        <div class="abar"><i style="width:${Math.min(100,p.alloc_pct||0).toFixed(1)}%"></i></div>
+      </div>
+      <div class="rt">
+        <div class="val tnum">${eur(p.value_eur)}</div>
+        <div class="pl ${pc} tnum">${sgn(p.pnl_eur,eur)} · ${pct(p.pnl_pct)}</div>
+      </div></div>`;}).join('') : '<div class="empty">geen open posities</div>';
 }
 
-// ── mini-grafiek ──
-function drawEquity(el, values, ref) {
-  if (!values.length) { el.innerHTML = '<span style="color:var(--muted)">nog geen data</span>'; return; }
-  const W = 700, H = 200, lo = Math.min(...values), hi = Math.max(...values);
-  const pad = (hi - lo) * .1 + .01, vmin = lo - pad, vmax = hi + pad;
-  const P = values.map((v, i) => (i/Math.max(values.length-1,1)*W).toFixed(1) + ',' + (H-(v-vmin)/(vmax-vmin)*H).toFixed(1));
-  const up = values[values.length-1] >= values[0], col = up ? 'var(--up)' : 'var(--down)';
-  let grid = '';
-  for (let k=0;k<5;k++){ const y=H*k/4, v=vmax-(vmax-vmin)*k/4;
-    grid += `<line class="gl" x1="0" x2="${W}" y1="${y.toFixed(1)}" y2="${y.toFixed(1)}"/>
-      <text class="ax" x="4" y="${Math.max(y-3,10).toFixed(1)}">€${Math.round(v).toLocaleString('nl-NL')}</text>`; }
-  const refY = H-(ref-vmin)/(vmax-vmin)*H;
-  el.innerHTML = `<svg viewBox="0 0 ${W} ${H+8}" role="img" aria-label="Verloop van de portefeuille">
+function renderTrades(){
+  const os=(STATE.orders||[]).filter(o=>o.status==='FILLED');
+  $('trades').innerHTML = os.length ? os.slice(0,25).map(o=>{
+    const b=base(o.pair), buy=o.side==='BUY';
+    const amt=(o.amount!=null)?(o.amount).toLocaleString('nl-NL',{maximumFractionDigits:6})+' '+b:'';
+    const at=(o.price!=null)?' @ '+eur(o.price):'';
+    return `<div class="trade">
+      <span class="tag ${buy?'b':'s'}">${buy?'KOOP':'VERKOOP'}</span>
+      <div class="desc">
+        <div class="m tnum">${amt}${at}</div>
+        <div class="r">${esc(o.reason||'')}</div>
+      </div>
+      <div class="when">${fmtWhen(o.t)}<br>${o.eur!=null?eur(o.eur):''}</div>
+    </div>`;}).join('') : '<div class="empty">nog geen trades</div>';
+}
+
+function renderBlocks(){
+  const bs=STATE.blocks||[];
+  $('blocks').innerHTML = bs.length ? bs.slice(0,12).map(b=>
+    `<div class="blk"><div>${esc(b.pair?base(b.pair):'—')} — ${esc(b.reason)}</div>
+     <div class="t tnum">${fmtWhen(b.t)}</div></div>`).join('')
+    : '<div class="empty">geen blokkades</div>';
+}
+
+// ── tijdweergave ──
+function fmtWhen(iso){
+  if(!iso) return '';
+  const d=new Date(iso.includes('Z')||iso.includes('+')?iso:iso+'Z');
+  const today=new Date(), sameDay=d.toDateString()===today.toDateString();
+  const t=d.toLocaleTimeString('nl-NL',{hour:'2-digit',minute:'2-digit'});
+  return sameDay ? t : d.toLocaleDateString('nl-NL',{day:'2-digit',month:'2-digit'})+' '+t;
+}
+
+// ── grafiek met hover ──
+let CHART=null;
+function drawChart(){
+  const pts=seriesForRange(), el=$('eqchart');
+  const lbl=RANGES.find(r=>r[1]===RANGE)?.[0]||'';
+  $('ch-range').textContent='Laatste '+lbl.toLowerCase().replace('alles','alles');
+  if(pts.length<2){ el.innerHTML='<div class="empty">nog te weinig data voor dit tijdvak</div>'; $('ch-delta').textContent=''; CHART=null; return; }
+  const vals=pts.map(p=>p[1]), ts=pts.map(p=>new Date(p[0]).getTime());
+  const d=vals[vals.length-1]-vals[0], dc=d>=0?'up':'down';
+  $('ch-delta').className='d '+dc;
+  $('ch-delta').textContent=`${d>=0?'▲':'▼'} ${eur(Math.abs(d))} · ${pct(vals[0]?d/vals[0]*100:0)}`;
+
+  const W=720,H=210, lo=Math.min(...vals), hi=Math.max(...vals), pad=(hi-lo)*.12+.01, vmin=lo-pad, vmax=hi+pad;
+  const X=i=>i/(pts.length-1)*W, Y=v=>H-(v-vmin)/(vmax-vmin)*H;
+  const path=vals.map((v,i)=>X(i).toFixed(1)+','+Y(v).toFixed(1)).join(' L');
+  const col=d>=0?'var(--up)':'var(--down)';
+  let grid='';
+  for(let k=0;k<4;k++){ const y=H*k/3, v=vmax-(vmax-vmin)*k/3;
+    grid+=`<line class="gl" x1="0" x2="${W}" y1="${y.toFixed(1)}" y2="${y.toFixed(1)}"/>
+      <text class="ax" x="4" y="${Math.max(y-3,10).toFixed(1)}">${eur0(v)}</text>`; }
+  // x-as: 3 tijdstippen
+  let xax='';
+  [0,Math.floor((pts.length-1)/2),pts.length-1].forEach((i,j)=>{
+    const anc=j===0?'start':j===2?'end':'middle', x=j===0?2:j===2?W-2:W/2;
+    xax+=`<text class="ax" x="${x}" y="${H+16}" text-anchor="${anc}">${fmtWhen(pts[i][0])}</text>`; });
+
+  el.innerHTML=`<svg id="svg" viewBox="0 0 ${W} ${H+22}" role="img" aria-label="Verloop portefeuille">
     ${grid}
-    <line x1="0" x2="${W}" y1="${refY.toFixed(1)}" y2="${refY.toFixed(1)}" stroke="var(--axis)" stroke-dasharray="4 4"/>
-    <path d="M${P.join(' L')} L${W},${H} L0,${H} Z" fill="${col}" opacity=".08"/>
-    <path d="M${P.join(' L')}" fill="none" stroke="${col}" stroke-width="2" stroke-linejoin="round"/></svg>`;
+    <path d="M${path} L${W},${H} L0,${H} Z" fill="${col}" opacity=".08"/>
+    <path d="M${path}" fill="none" stroke="${col}" stroke-width="2" stroke-linejoin="round"/>
+    <line id="cross" x1="0" x2="0" y1="0" y2="${H}" style="opacity:0"/>
+    <circle id="cdot" r="4" fill="${col}" style="opacity:0"/>
+    ${xax}
+  </svg>`;
+  CHART={pts,vals,ts,W,H,X,Y};
+  wireHover();
+}
+function wireHover(){
+  const svg=$('svg'), cross=$('cross'), dot=$('cdot'), tip=$('tip'); if(!svg||!CHART) return;
+  const move=e=>{
+    const r=svg.getBoundingClientRect(), px=( (e.touches?e.touches[0].clientX:e.clientX) - r.left)/r.width*CHART.W;
+    let i=Math.round(px/CHART.W*(CHART.pts.length-1)); i=Math.max(0,Math.min(CHART.pts.length-1,i));
+    const x=CHART.X(i), y=CHART.Y(CHART.vals[i]);
+    cross.setAttribute('x1',x); cross.setAttribute('x2',x); cross.style.opacity=.7;
+    dot.setAttribute('cx',x); dot.setAttribute('cy',y); dot.style.opacity=1;
+    tip.style.opacity=1; tip.style.left=(x/CHART.W*r.width)+'px'; tip.style.top=(y/(CHART.H+22)*r.height)+'px';
+    tip.innerHTML=`${eur(CHART.vals[i])}<br><span style="font-weight:400;opacity:.8">${fmtWhen(CHART.pts[i][0])}</span>`;
+  };
+  const hide=()=>{ cross.style.opacity=0; dot.style.opacity=0; tip.style.opacity=0; };
+  svg.onmousemove=move; svg.onmouseleave=hide; svg.ontouchstart=move; svg.ontouchmove=move; svg.ontouchend=hide;
 }
 
 // ── noodstop ──
-$('stopconfirm').addEventListener('input', () => { $('stopbtn').disabled = $('stopconfirm').value !== 'STOP'; });
-$('stopbtn').onclick = async () => {
-  $('stopbtn').disabled = true;
-  const { error } = await SB.from('bot_commands').insert({ command: 'emergency_stop' });
-  $('stopmsg').textContent = error ? 'Mislukt: ' + error.message
-    : 'Noodstop geplaatst — de bot voert hem bij zijn volgende cyclus uit.';
-  $('stopconfirm').value = '';
-};
+$('stopconfirm').addEventListener('input',()=>{ $('stopbtn').disabled=$('stopconfirm').value!=='STOP'; });
+$('stopbtn').onclick=async()=>{ $('stopbtn').disabled=true;
+  const {error}=await SB.from('bot_commands').insert({command:'emergency_stop'});
+  $('stopmsg').textContent=error?'Mislukt: '+error.message:'Noodstop geplaatst — de bot voert hem bij zijn volgende cyclus uit.';
+  $('stopconfirm').value=''; };
 
 init();
 </script></body></html>
