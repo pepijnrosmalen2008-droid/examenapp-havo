@@ -139,7 +139,7 @@ def print_results(results: list[dict]) -> None:
 
 def main() -> int:
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
-    ap.add_argument("--strategy", choices=["dca", "momentum_ma_cross", "grid", "cross_sectional"])
+    ap.add_argument("--strategy", choices=["dca", "momentum_ma_cross", "grid", "cross_sectional", "vol_target"])
     ap.add_argument("--all", action="store_true", help="alle drie de strategieën + buy-and-hold")
     ap.add_argument("--monte-carlo", type=int, metavar="N",
                     help="N gebootstrapte marktscenario's i.p.v. één historische run")

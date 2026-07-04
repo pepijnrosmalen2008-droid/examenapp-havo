@@ -234,6 +234,8 @@ class TradingEngine:
                               self.x.candles(pair, self.strategy.candle_interval,
                                              self.strategy.candle_limit)]
                        for pair in self.cfg.pairs}
+        # context voor strategieën die de totale equity/cash nodig hebben (bv. allocatie)
+        self.strategy.ctx = {"cash": cash, "equity": equity, "prices": prices, "now": now}
         signals = self.strategy.generate_signals(candles, self.db.open_positions(), now)
         for sig in self.regime.apply(signals, self.x):
             if sig.pair in blocked_pairs:

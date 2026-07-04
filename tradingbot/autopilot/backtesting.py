@@ -190,6 +190,8 @@ PARAM_GRIDS: dict[str, list[dict]] = {
     "grid": [{"levels": lv, "band_k": k} for lv in (4, 6, 8) for k in (1.5, 2.0, 2.5)],
     "cross_sectional": [{"lookback_days": lb, "top_n": n, "rebalance_days": r}
                         for lb in (7, 14, 30, 90) for n in (3, 5) for r in (1, 7)],
+    "vol_target": [{"lookback_days": lb, "target_vol": tv, "btc_min": bm, "rebalance_days": r}
+                   for lb in (20, 30) for tv in (0.02, 0.03) for bm in (0.3, 0.5) for r in (7, 14)],
 }
 
 
