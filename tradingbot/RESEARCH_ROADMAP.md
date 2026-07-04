@@ -22,16 +22,26 @@ paper-bots draaien nu als live nulmeting tegen vasthouden.
 
 ## Hypothese-agenda
 
-| # | Hypothese | Nieuwe info? | Nu testbaar? | Kosten | Eerlijke prior | Prioriteit |
-|---|---|:--:|:--:|:--:|---|:--:|
-| 1 | Vol-target: schaal exposure af bij hoge volatiliteit | nee | ✅ | €0 | Verlaagt drawdown, kost rendement in bull. Mogelijk hogere Sharpe. | **hoog** |
-| 2 | Correlatie-de-risk: verlaag totale crypto-exposure als ρ→1 | nee | ✅ | €0 | Helpt vooral in crashes; geen euro-outperformance. | **hoog** |
-| 3 | Inverse-vol / risk-weighted rebalancing vs equal-weight | nee | ✅ | €0 | Marginaal betere Sharpe, hooguit. | midden |
-| 4 | On-chain exchange in/outflows → richting/regime | **ja** | ✅ (mits data) | €€ | Grotendeels wegge-arbitreerd; klein, mogelijk instabiel signaal. Beste "nieuwe info". | **hoog** |
-| 5 | Stablecoin-supply/flows → risk-on/off filter | **ja** | ⚠️ | €€ | Traag, laagfrequent; hoogstens een regime-filter. | midden |
-| 6 | Macro-events (ETF, FOMC, hacks, regelgeving) effectstudie | **ja** | ⚠️ | € | Te weinig events voor statistische significantie. | midden |
-| 7 | Orderboek / microstructuur | ja | ❌ (geen hist. data) | hoog | HFT-domein; niet haalbaar op retail-Bitvavo. | **geparkeerd** |
-| — | AI als onderzoeksassistent (hypotheses, features, analyse) | meta | ✅ | €0 | Plaatst nooit orders; versnelt 1–6. | **continu** |
+Gerangschikt op **EVR — Expected Value of Research**: niet alleen "kans op edge", maar
+"hoeveel leer ik, óók als het faalt?". Zo voorkom je tijd in ideeën die zelfs bij een
+negatieve uitkomst weinig opleveren.
+
+| # | Hypothese | Nieuwe info? | Testbaar? | Kosten | Kans op edge | Leerwaarde bij falen | EVR |
+|---|---|:--:|:--:|:--:|:--:|:--:|:--:|
+| 1 | Vol-target: exposure afschalen bij hoge volatiliteit | nee | ✅ | €0 | laag | zeer hoog | ⭐⭐⭐⭐⭐ |
+| 2 | Correlatie-de-risk: totale exposure omlaag als ρ→1 | nee | ✅ | €0 | laag | zeer hoog | ⭐⭐⭐⭐⭐ |
+| 3 | Inverse-vol / risk-weighted rebalancing vs equal-weight | nee | ✅ | €0 | laag | hoog | ⭐⭐⭐⭐ |
+| 4 | On-chain exchange in/outflows → richting/regime | **ja** | ✅ (mits data) | €€ | middel | hoog | ⭐⭐⭐⭐ |
+| 5 | Stablecoin-supply/flows → risk-on/off filter | **ja** | ⚠️ | €€ | laag | middel | ⭐⭐⭐ |
+| 6 | Macro-events (ETF, FOMC, hacks) effectstudie | **ja** | ⚠️ | € | laag | middel | ⭐⭐⭐ |
+| — | AI als onderzoeksassistent (hypotheses, features, analyse) | meta | ✅ | €0 | n.v.t. | n.v.t. | ⭐⭐⭐⭐ |
+| 7 | Orderboek / microstructuur | ja | ❌ (geen hist. data) | hoog | zeer laag | laag | ⭐ |
+
+**Eerlijke priors bij de hoogste EVR:** #1/#2 verlagen vermoedelijk de drawdown maar
+kosten rendement in een bullmarkt (dus: betere Sharpe, geen euro-outperformance) —
+en juist daarom is de leerwaarde hoog: je meet zwart-op-wit de risk/return-ruil.
+#4 is de beste "nieuwe informatie", maar het bekende deel (exchange-flows) is
+grotendeels wegge-arbitreerd. #7 blijft geparkeerd: op retail-Bitvavo niet backtestbaar.
 
 ## De allocatie-engine (#1–3) — beoordelen op een vector, niet op rendement
 
@@ -58,8 +68,28 @@ allocatie zegt *hoeveel*, en veel professioneel rendement komt uit de tweede vra
   verlaagt de drawdown, of niet — allebei informatief). Zelfde teststraat, geen
   soepelere eisen.
 
+## Aangescherpt einddoel
+
+Het oorspronkelijke doel ("een bot die 24/7 autonoom handelt en buy-and-hold verslaat")
+blijft geldig, met één beschermende voorwaarde erbij:
+
+> De bot mag alleen live handelen als hij in **onafhankelijke, out-of-sample tests**
+> overtuigend laat zien dat hij **na alle kosten** een positieve verwachtingswaarde
+> heeft. Verliefd worden op een idee mag pas nadat de data het heeft verdiend.
+
+## Fasen
+
+- **Fase 0 — afgerond:** architectuur, veiligheid, testframework, walk-forward,
+  Monte Carlo, dashboard, benchmark.
+- **Fase 1 — loopt:** vier paper-bots maandenlang laten draaien, data verzamelen,
+  tegen buy-and-hold meten.
+- **Fase 2:** één allocatie-experiment. Niet twee, niet drie — alle aandacht op één.
+- **Fase 3:** levert allocatie niets op → on-chain (#4).
+- **Fase 4:** overleeft een hypothese de volledige teststraat → maanden PAPER + SHADOW.
+  Pas daarna zelfs maar overwegen om echt geld in te zetten.
+
 ## Wat er NIET gebeurt
 
-- Geen nieuwe prijs-indicator-varianten meer (uitgeput).
+- Geen nieuwe prijs-indicator-varianten meer (uitgeput — zie REJECTED_HYPOTHESES.md).
 - Geen LLM die koop/verkoop beslist (niet reproduceerbaar, niet backtestbaar).
 - Geen live geld tot iets de volledige teststraat overleeft.
