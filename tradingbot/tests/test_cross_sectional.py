@@ -70,6 +70,24 @@ def test_skips_coins_without_history(db):
     assert "NEW-EUR" not in {s.pair for s in sigs}
 
 
+def test_candle_interval_configurable(db):
+    fast = make_config(pairs=["A-EUR", "B-EUR"],
+                       strategy={"name": "cross_sectional",
+                                 "params": {"candle_interval": "1m", "candle_limit": 60,
+                                            "lookback_days": 15, "top_n": 1, "rebalance_days": 0}})
+    strat = get_strategy(fast, db)
+    assert strat.candle_interval == "1m" and strat.candle_limit == 60
+    # default blijft daglijnen
+    assert get_strategy(cfg_cs(), db).candle_interval == "1d"
+
+
+def test_rebalance_days_zero_always_rebalances(db):
+    strat = get_strategy(cfg_cs(rebalance_days=0), db)
+    data = make_universe({"A-EUR": 0.5, "B-EUR": 0.3, "C-EUR": -0.1, "D-EUR": -0.3})
+    assert strat.generate_signals(data, [], NOW)                       # eerste keer
+    assert strat.generate_signals(data, [], NOW + timedelta(minutes=1))  # meteen weer (geen gate)
+
+
 def test_state_survives_restart(db):
     strat = get_strategy(cfg_cs(), db)
     data = make_universe({"A-EUR": 0.5, "B-EUR": 0.3, "C-EUR": -0.1, "D-EUR": -0.3})

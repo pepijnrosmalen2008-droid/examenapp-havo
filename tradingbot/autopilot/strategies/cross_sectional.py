@@ -35,6 +35,13 @@ class CrossSectionalStrategy(Strategy):
     candle_interval = "1d"   # dag-candles; in de backtester geaggregeerd uit 1h
     candle_limit = 120       # ruim voor lookbacks tot ~90 dagen
 
+    def __init__(self, cfg, db):
+        super().__init__(cfg, db)
+        # candle-interval/limiet instelbaar: '1d' (default) voor weken-rotatie, of bv.
+        # '1m' voor een intraday-experiment waarbij de ranglijst elke minuut verandert.
+        self.candle_interval = str(self.params.get("candle_interval", "1d"))
+        self.candle_limit = int(self.params.get("candle_limit", 120))
+
     def generate_signals(self, candles: dict[str, list[Candle]],
                          positions: list[Position], now: datetime) -> list[Signal]:
         lookback = int(self.params.get("lookback_days", 30))

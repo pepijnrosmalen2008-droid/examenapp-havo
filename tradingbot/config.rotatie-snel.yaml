@@ -1,0 +1,51 @@
+# Bot 4 — Rotatie SNEL (experiment). PAPER.
+# Rangschikt elke minuut de coins op hun beweging over de laatste ~15 minuten en
+# houdt steeds de sterkste 3; herweegt ELKE cyclus (elke minuut). Bewust een extreem:
+# dit laat live zien wat heel vaak handelen doet — verwacht veel fees en waarschijnlijk
+# verlies t.o.v. vasthouden. Vergelijk 'm op het dashboard met de trage 'rotatie'-bot.
+# Draaien:  py bot.py --config config.rotatie-snel.yaml
+
+mode: PAPER
+bot_id: rotatie-snel
+capital_eur: 118
+
+pairs: [BTC-EUR, ETH-EUR, MOODENG-EUR]
+
+seed:
+  enabled: true
+  eur: 0
+  holdings:
+    MOODENG-EUR: 96
+    ETH-EUR: 15.70
+    BTC-EUR: 5.76
+
+risk:
+  max_position_pct: 40
+  stop_loss_pct: 20
+  take_profit_pct: null
+  max_daily_loss_pct: 25
+  max_drawdown_pct: 50
+  max_portfolio_heat_pct: null
+
+strategy:
+  name: cross_sectional
+  params:
+    candle_interval: 1m      # minuut-candles → ranglijst verandert elke minuut
+    lookback_days: 15        # hier: 15 candles = laatste 15 minuten kracht
+    candle_limit: 60
+    top_n: 3
+    rebalance_days: 0        # 0 = herweeg elke cyclus (dus elke minuut)
+
+schedule:
+  interval_minutes: 1        # volledige handelscyclus elke minuut
+
+universe:
+  enabled: true
+  min_daily_volume_eur: 100000
+  max_spread_pct: 1.0
+  max_markets: 25            # iets kleiner: elke minuut 40 coins ophalen is zwaar
+  always_include: [BTC-EUR, ETH-EUR, MOODENG-EUR]
+
+costs:
+  taker_fee_pct: 0.25
+  slippage_pct: 0.1
