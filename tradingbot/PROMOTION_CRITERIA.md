@@ -53,6 +53,10 @@ daar later van af, dan **log je dat met datum en reden** — anders niet.
 > nog niet volledig hebben verwerkt. "We hebben zoveel gebouwd, dus er móét een edge
 > zijn" is een denkfout en geen argument.
 
+**Regel:** aantal regels code, ontwikkeltijd en complexiteit mogen **nooit** meewegen
+in een promotiebeslissing. Een simpel model dat de drempels haalt promoveert; een
+geavanceerd model dat ze niet haalt zakt. Complexiteit is geen bewijs.
+
 En daarom is dit een **volledig legitieme einduitkomst**, geen mislukking:
 
 > "Voor een retail-opstelling met Bitvavo, normale latency en publieke data is geen
