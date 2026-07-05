@@ -170,6 +170,7 @@ class TradingEngine:
             return
 
         self.reconcile()
+        self._cycle_actions = []  # gedachtegang: acties van deze cycle
 
         # Effectieve markten: de universe-selectie (indien aan), anders config-pairs.
         # cfg.pairs is de gedeelde bron van waarheid voor strategie, risk-whitelist en candles.
@@ -201,6 +202,7 @@ class TradingEngine:
             self.notify.send(f"⛔ KILL SWITCH: max drawdown {dd:.2f}% bereikt. Alle posities "
                              f"verkocht, bot is permanent gestopt. Herstart handmatig met "
                              f"status.py --clear-halt.")
+            self._record_decision({}, cash, equity, now, strategy_ran=False)
             return
 
         if not self.risk.is_paused(now):
@@ -212,9 +214,11 @@ class TradingEngine:
                                               f"{self.cfg.risk.max_daily_loss_pct}%", now)
                 self.notify.send(f"🟠 Dag-kill-switch: verlies vandaag {loss:.2f}%. Alle posities "
                                  f"gesloten; bot pauzeert 24 uur.")
+                self._record_decision({}, cash, equity, now, strategy_ran=False)
                 return
         else:
             log.info("cycle: dag-pauze actief, geen handel")
+            self._record_decision({}, cash, equity, now, strategy_ran=False)
             return
 
         # ── per-positie SL/TP exits (gaan ook bij wijde spread altijd door:
@@ -251,6 +255,9 @@ class TradingEngine:
                     continue
                 self._route_signal(sig, prices, now=now)
 
+        # ── gedachtegang vastleggen (factoren + netto-beslissing van deze cycle) ──
+        self._record_decision(candles, cash, equity, now, strategy_ran=True)
+
     # ── uitvoering ────────────────────────────────────────────────────
 
     def _route_signal(self, sig: Signal, prices: dict[str, float],
@@ -261,6 +268,7 @@ class TradingEngine:
         decision = self.risk.evaluate(sig, cash_eur=cash, equity_eur=equity,
                                       positions=positions, prices=prices, forced=forced)
         if not decision.allowed:
+            self._log_action(sig, "geblokkeerd", decision.reason)
             if sig.strategy == "risk":  # geblokkeerde SL/TP-exit is opmerkelijk genoeg voor een melding
                 self.notify.send(f"⚠️ Exit geblokkeerd: {sig.pair} — {decision.reason}")
             return
@@ -288,6 +296,7 @@ class TradingEngine:
                                                  client_order_id=coid)
         except Exception as e:  # noqa: BLE001
             self.db.mark_order(coid, OrderStatus.REJECTED)
+            self._log_action(sig, "mislukt", str(e))
             log.exception("order %s geweigerd/mislukt: %s", coid, e)
             self.notify.send(f"❌ Order mislukt: {sig.side.value} {sig.pair} — {e}")
             return
@@ -304,6 +313,7 @@ class TradingEngine:
         if hasattr(self.strategy, "on_fill") and sig.strategy == self.strategy.name:
             self.strategy.on_fill(sig.pair, sig.side, now)
 
+        self._log_action(sig, "uitgevoerd", sig.reason, eur=cost)
         pnl_txt = f" | P&L €{realized:+.2f}" if sig.side == Side.SELL else ""
         msg = (f"{'🟢' if sig.side == Side.BUY else '🔴'} {self.mode.value}: "
                f"{sig.side.value} {sig.pair} {amount:.8f} @ €{price:.2f} "
@@ -360,6 +370,37 @@ class TradingEngine:
         self.notify.send(f"⛔ NOODSTOP: {reason}. Alle posities verkocht, bot permanent "
                          f"gestopt. Opheffen kan alleen op de machine zelf "
                          f"(status.py --clear-halt).")
+
+    # ── gedachtegang / beslissingsjournaal ───────────────────────────
+
+    def _log_action(self, sig: Signal, status: str, reason: str, eur: float | None = None) -> None:
+        from .decisions import ActionRecord
+        acts = getattr(self, "_cycle_actions", None)
+        if acts is None:
+            self._cycle_actions = acts = []
+        acts.append(ActionRecord(pair=sig.pair, side=sig.side.value, status=status,
+                                 reason=reason or "", eur=eur))
+
+    def _record_decision(self, candles: dict, cash: float, equity: float,
+                         now: datetime, *, strategy_ran: bool) -> None:
+        """Bereken de factor-lezing en leg de netto-beslissing van deze cycle vast.
+        Best-effort: observeerbaarheid mag de trading loop nooit breken."""
+        try:
+            from .decisions import build_record
+            from .factors import compute_reads
+            from .research import load_events
+
+            events = load_events(self.cfg, now) if self.cfg.research.enabled else []
+            reads = compute_reads(candles, list(self.cfg.pairs), now, events=events) if candles else {}
+            held = {p.pair for p in self.db.open_positions()}
+            rec = build_record(
+                reads=reads, actions=getattr(self, "_cycle_actions", []) or [],
+                held=held, cash=cash, equity=equity,
+                halted=self.risk.is_halted(), halt_reason=self.db.get_meta("halt_reason", "") or "",
+                paused=self.risk.is_paused(now), strategy_ran=strategy_ran)
+            self.db.log_decision(stance=rec.stance, headline=rec.headline, record=rec.to_dict())
+        except Exception:  # noqa: BLE001
+            log.exception("gedachtegang vastleggen mislukt (cycle gaat gewoon door)")
 
     # ── circuit breakers ─────────────────────────────────────────────
 

@@ -87,6 +87,34 @@ svg { display:block; width:100%; height:auto; touch-action:none }
 .blk { padding:9px 4px; border-bottom:1px solid var(--grid); font-size:13px }
 .blk:last-child { border-bottom:0 } .blk .t { color:var(--muted); font-size:12px }
 
+/* gedachtegang */
+.think-head { display:flex; align-items:flex-start; gap:12px }
+.think-badge { font-size:22px; line-height:1; margin-top:2px }
+.think-head .htxt { min-width:0 }
+.think-head .hl { font-size:17px; font-weight:750; letter-spacing:-.01em }
+.think-head .dt { font-size:13px; color:var(--ink2); margin-top:3px }
+.tone { display:inline-flex; align-items:center; gap:6px; font-size:12px; font-weight:600;
+  padding:3px 10px; border-radius:99px; background:var(--chip); color:var(--ink2); margin-top:10px }
+.reads { margin-top:14px; display:flex; flex-direction:column; gap:2px }
+.read { padding:10px 4px; border-top:1px solid var(--grid) }
+.read .rhead { display:flex; align-items:center; gap:8px }
+.read .rn { font-weight:650 } .read .held { font-size:11px; color:var(--muted); font-weight:600 }
+.read .conv { margin-left:auto; font-size:12px; font-weight:700 }
+.conv.bullish { color:var(--up) } .conv.bearish { color:var(--down) } .conv.neutraal { color:var(--muted) }
+.facs { margin-top:8px; display:flex; flex-direction:column; gap:5px }
+.fac { display:grid; grid-template-columns:96px 1fr auto; align-items:center; gap:8px; font-size:12px }
+.fac .fl { color:var(--ink2); font-weight:600; white-space:nowrap; overflow:hidden; text-overflow:ellipsis }
+.fac .fl.ext::after { content:"◇"; color:var(--warn); margin-left:4px; font-size:10px }
+.fbar { position:relative; height:6px; background:var(--grid); border-radius:9px }
+.fbar .mid { position:absolute; left:50%; top:-2px; bottom:-2px; width:1px; background:var(--axis) }
+.fbar > i { position:absolute; top:0; height:100%; border-radius:9px }
+.fac .fd { color:var(--muted); white-space:nowrap; max-width:38vw; overflow:hidden; text-overflow:ellipsis }
+.thist { margin-top:14px; border-top:1px solid var(--grid); padding-top:10px }
+.thist .te { display:flex; gap:10px; font-size:12px; padding:4px 4px; color:var(--ink2) }
+.thist .te .tt { color:var(--muted); flex:none; width:74px }
+.thist .te .ts { flex:none; width:96px; font-weight:600 }
+.note { font-size:11px; color:var(--muted); margin-top:12px; line-height:1.5 }
+
 .stopbox { border:1px solid var(--down); border-radius:16px; padding:16px; margin-top:26px }
 .stopbox p { font-size:13px; color:var(--ink2); margin:6px 0 12px }
 .stopbox input { max-width:150px; margin:0 } .stopbox button { padding:12px 18px; border:0;
@@ -126,6 +154,9 @@ svg { display:block; width:100%; height:auto; touch-action:none }
     <div class="statusline" id="h-status"></div>
     <div class="sub" id="h-updated"></div>
   </div>
+
+  <h2>Waarom deze bot dit doet</h2>
+  <div class="card" id="thinking"></div>
 
   <h2>Verloop</h2>
   <div class="card">
@@ -234,7 +265,8 @@ function render(){
   const d=s.equity_now-s.day_start, dc=d>=0?'up':'down';
   $('h-change').innerHTML=`<span class="${dc}">${d>=0?'▲':'▼'} ${eur(Math.abs(d))} · ${pct(d/s.day_start*100)} vandaag</span>`;
   const SNAMES={dca:'DCA — bijkopen & vasthouden', momentum_ma_cross:'Momentum — trend volgen',
-    grid:'Grid — kopen laag / verkopen hoog', cross_sectional:'Rotatie — sterkste coins'};
+    grid:'Grid — kopen laag / verkopen hoog', cross_sectional:'Rotatie — sterkste coins',
+    vol_target:'Allocatie — risico sturen'};
   $('h-invested').textContent=eur(s.invested||0); $('h-cash').textContent=eur(s.cash);
   $('h-strat').textContent=SNAMES[s.strategy]||s.strategy; $('h-markets').textContent=(s.n_markets??0);
 
@@ -247,7 +279,59 @@ function render(){
   $('h-updated').innerHTML=(age>4?'<span class="down">bot lijkt offline — </span>':'')
     +'laatste update '+Math.max(0,Math.round(age))+' min geleden · ververst ~elke minuut · geen rendementsbelofte';
 
-  drawChart(); renderMetrics(); renderHoldings(); renderTrades(); renderBlocks();
+  renderThinking(); drawChart(); renderMetrics(); renderHoldings(); renderTrades(); renderBlocks();
+}
+
+const STANCE_ICON={kopen:'🟢',verkopen:'🔴',herbalanceren:'🔄',cash:'💶',wachten:'⏳',
+  gestopt:'⛔',pauze:'⏸'};
+const TONE_LABEL={'risk-on':'📈 risk-on','risk-off':'📉 risk-off','gemengd':'⚖️ gemengd','onbekend':'—'};
+function convClass(c){ return c>0.15?'bullish':c<-0.15?'bearish':'neutraal'; }
+
+function renderThinking(){
+  const t=STATE.thinking;
+  if(!t||!t.latest){
+    $('thinking').innerHTML='<div class="empty">nog geen beoordeling — de bot legt zijn gedachtegang vanaf de eerstvolgende cyclus vast</div>';
+    return;
+  }
+  const L=t.latest, mk=L.market||{};
+  const reads=(L.considered||[]).map(renderRead).join('');
+  const hist=(t.history||[]).slice(0,8).map(h=>
+    `<div class="te"><span class="tt tnum">${fmtWhen(h.ts)}</span>
+      <span class="ts">${STANCE_ICON[h.stance]||''} ${esc(h.stance)}</span>
+      <span style="min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">${esc(h.headline)}</span></div>`).join('');
+  $('thinking').innerHTML=`
+    <div class="think-head">
+      <div class="think-badge">${STANCE_ICON[L.stance]||'💭'}</div>
+      <div class="htxt">
+        <div class="hl">${esc(L.headline||'')}</div>
+        <div class="dt">${esc(L.detail||'')}</div>
+        <span class="tone">${TONE_LABEL[mk.tone]||esc(mk.tone||'')}</span>
+      </div>
+    </div>
+    ${reads?`<div class="reads">${reads}</div>`:''}
+    ${hist?`<div class="thist">${hist}</div>`:''}
+    <div class="note">◇ = externe factor (nieuws, macro, smart money): alleen live vooruit te toetsen,
+      niet backtestbaar, en gaat nooit rechtstreeks een order in. Prijsfactoren zijn wél getoetst.</div>`;
+}
+
+function renderRead(r){
+  const b=base(r.pair), held=(STATE.positions||[]).some(p=>p.pair===r.pair);
+  const cc=convClass(r.conviction);
+  const facs=(r.factors||[]).map(f=>{
+    const w=Math.min(50,Math.abs(f.score)*50), left=f.score>=0?50:50-w;
+    const col=f.score>=0?'var(--up)':'var(--down)';
+    return `<div class="fac">
+      <span class="fl${f.kind==='external'?' ext':''}" title="${esc(f.detail)}">${esc(f.label)}</span>
+      <span class="fbar"><span class="mid"></span><i style="left:${left}%;width:${w}%;background:${col}"></i></span>
+      <span class="fd">${esc(f.detail)}</span>
+    </div>`;}).join('');
+  return `<div class="read">
+    <div class="rhead">
+      <span class="rn">${esc(b)}</span>${held?'<span class="held">• in bezit</span>':''}
+      <span class="conv ${cc}">${r.conviction>=0?'+':''}${(r.conviction*100).toFixed(0)}</span>
+    </div>
+    <div class="facs">${facs}</div>
+  </div>`;
 }
 
 function renderMetrics(){

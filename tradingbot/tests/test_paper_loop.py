@@ -139,6 +139,16 @@ def test_drawdown_kill_switch_halts_permanently(db, market):
     assert len(db.recent_orders(100)) == n_orders
 
 
+def test_cycle_logs_a_decision(db, market):
+    engine = build(db, market)
+    engine.cycle(NOW)
+    decisions = db.recent_decisions(5)
+    assert decisions, "elke cycle hoort een beslissing vast te leggen"
+    # DCA kocht twee coins → stance 'kopen'
+    assert decisions[0]["stance"] == "kopen"
+    assert decisions[0]["headline"]
+
+
 def test_bot_never_exceeds_capital(db, market):
     cfg = make_config(capital_eur=100,
                       risk={"max_position_pct": 90, "stop_loss_pct": 30, "take_profit_pct": 50,

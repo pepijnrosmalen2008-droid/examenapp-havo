@@ -89,6 +89,14 @@ CREATE TABLE IF NOT EXISTS candle_cache (
     close REAL NOT NULL, volume REAL NOT NULL,
     PRIMARY KEY (pair, interval, ts)
 );
+
+CREATE TABLE IF NOT EXISTS decision_log (
+    id      INTEGER PRIMARY KEY AUTOINCREMENT,
+    ts      TEXT NOT NULL,
+    stance  TEXT NOT NULL,          -- kopen | verkopen | herbalanceren | cash | wachten | gestopt | ...
+    headline TEXT NOT NULL,         -- één regel: de netto-beslissing van deze cycle
+    record  TEXT NOT NULL           -- volledige JSON: factoren, acties, blokkades, overwegingen
+);
 """
 
 
@@ -256,6 +264,32 @@ class Database:
             (utcnow(), pair, side, int(allowed), reason, requested_eur, approved_eur),
         )
         self.conn.commit()
+
+    # ── beslissingen (gedachtegang) ──────────────────────────────────
+
+    def log_decision(self, *, stance: str, headline: str, record: dict) -> None:
+        self.conn.execute(
+            "INSERT INTO decision_log(ts, stance, headline, record) VALUES(?,?,?,?)",
+            (utcnow(), stance, headline, json.dumps(record)),
+        )
+        # Houd het logje compact: alleen de laatste ~200 cycles bewaren.
+        self.conn.execute(
+            "DELETE FROM decision_log WHERE id < "
+            "(SELECT MIN(id) FROM (SELECT id FROM decision_log ORDER BY id DESC LIMIT 200))"
+        )
+        self.conn.commit()
+
+    def recent_decisions(self, limit: int = 20) -> list[dict]:
+        rows = self.conn.execute(
+            "SELECT ts, stance, headline, record FROM decision_log ORDER BY id DESC LIMIT ?",
+            (limit,),
+        ).fetchall()
+        out = []
+        for r in rows:
+            rec = json.loads(r["record"])
+            rec["ts"], rec["stance"], rec["headline"] = r["ts"], r["stance"], r["headline"]
+            out.append(rec)
+        return out
 
     # ── equity ────────────────────────────────────────────────────────
 

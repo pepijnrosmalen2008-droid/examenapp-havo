@@ -141,6 +141,28 @@ alleen strategie-signalen; SL/TP-exits en kill-switch-liquidaties gaan altijd do
 de bot, geen poorten, geen dependencies in het kritieke pad: het dashboard kan
 letterlijk niet de trading loop breken. Verversen via cron/systemd-timer.
 
+## D23 — Zichtbare gedachtegang + multi-factor beslissingslaag (streng gescheiden)
+
+De bot maakt zijn beslissing per cycle expliciet en leesbaar op slagio.nl/bot.html:
+`factors.py` splitst per coin de afweging op (momentum, trend, rust/risico,
+afstand-tot-top, relatieve sterkte), `decisions.py` vat de netto-uitkomst samen
+(kopen / verkopen / herbalanceren / cash / wachten) mét de reden — óók waarom er soms
+niets gebeurt (cash aanhouden, net geherbalanceerd, door risk engine geblokkeerd). Elke
+cycle wordt dit in `decision_log` bewaard en via `build_payload` (`thinking`) getoond.
+Dit verandert geen enkele order; het is puur uitleg, dus geen acceptatietest nodig.
+
+Bewuste, strenge scheiding voor de gevraagde uitbreiding naar nieuws, wereld/macro en
+"smart money" (bv. gemelde trades van bekende personen): die komen als **externe
+factoren** uit gestructureerde events (`research_events.json`, veld `kind`) en **kleuren
+alleen de gedachtegang**. Ze plaatsen nooit rechtstreeks een order — hooguit een VOORSTEL
+door de risk engine (bestaande research-laag). Reden dat ze niet zomaar mogen sturen:
+**leakage** — een model getoetst op oud nieuws kent de afloop al, dus zulke signalen zijn
+niet backtestbaar, alleen live vooruit. Op de UI staan ze met ◇ gemarkeerd als
+forward-only. Promotie tot echte order-invoer vereist het pre-registratieprotocol in
+`experiments/2026_multifactor_decisions.md` (o.a. ≥100 observaties/bron, kosten-nette
+out-of-sample hit-rate, geen schade aan de drawdown). Zo krijgt de gebruiker de gevraagde
+brede afweging én blijft de discipline (AI stelt voor, beslist nooit) overeind.
+
 ## D22 — Meerdere bots naast elkaar + seed-portefeuille
 
 Om strategieën eerlijk te vergelijken kan de bot met `--config` draaien; elke config

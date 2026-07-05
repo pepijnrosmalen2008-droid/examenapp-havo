@@ -106,6 +106,34 @@ class RuleBasedResearchAgent(ResearchAgent):
         return out
 
 
+def load_events(cfg: AppConfig, now: datetime) -> list[dict]:
+    """Ruwe, niet-verlopen events uit het events-bestand — voor de factor-overlay
+    (factors.py). Tolerant t.o.v. het extra `kind`-veld (news|macro|smart_money).
+    Anders dan RuleBasedResearchAgent, die er handels-VOORSTELLEN van maakt, levert
+    dit alleen de gestructureerde feiten om de gedachtegang mee te kleuren."""
+    path = Path(cfg.research.events_file)
+    if not path.is_absolute():
+        path = Path(__file__).resolve().parent.parent / path
+    if not path.exists():
+        return []
+    try:
+        raw = json.loads(path.read_text(encoding="utf-8"))
+    except (json.JSONDecodeError, OSError) as e:
+        log.warning("research: kon %s niet lezen: %s", path, e)
+        return []
+    out = []
+    for ev in raw if isinstance(raw, list) else []:
+        expires = ev.get("expires") if isinstance(ev, dict) else None
+        try:
+            if expires and now >= datetime.fromisoformat(expires):
+                continue
+        except (ValueError, TypeError):
+            pass
+        if isinstance(ev, dict):
+            out.append(ev)
+    return out
+
+
 _AGENTS: dict[str, type[ResearchAgent]] = {"rulebased": RuleBasedResearchAgent}
 
 

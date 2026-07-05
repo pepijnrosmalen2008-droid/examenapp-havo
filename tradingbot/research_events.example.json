@@ -1,6 +1,7 @@
 [
   {
     "pair": "BTC-EUR",
+    "kind": "news",
     "direction": 1,
     "confidence": 0.72,
     "horizon_hours": 48,
@@ -9,11 +10,32 @@
     "expires": "2026-07-15T00:00:00+00:00"
   },
   {
+    "pair": "*",
+    "kind": "macro",
+    "direction": -1,
+    "confidence": 0.6,
+    "horizon_hours": 72,
+    "rationale": "Voorbeeld: centrale bank houdt rente langer hoog (geldt voor de hele mand)",
+    "sources": ["https://www.ecb.europa.eu/..."],
+    "expires": "2026-07-20T00:00:00+00:00"
+  },
+  {
+    "pair": "DOGE-EUR",
+    "kind": "smart_money",
+    "direction": 1,
+    "confidence": 0.5,
+    "horizon_hours": 24,
+    "rationale": "Voorbeeld: invloedrijk persoon meldt/bevestigt een positie (forward-only)",
+    "sources": ["https://x.com/..."],
+    "expires": "2026-07-08T00:00:00+00:00"
+  },
+  {
     "pair": "ETH-EUR",
+    "kind": "news",
     "direction": -1,
     "confidence": 0.4,
     "horizon_hours": 24,
-    "rationale": "Voorbeeld: zwak signaal (onder min_confidence, wordt genegeerd)",
+    "rationale": "Voorbeeld: zwak signaal (onder min_confidence → telt in de factor, maar wordt geen order-voorstel)",
     "sources": []
   }
 ]

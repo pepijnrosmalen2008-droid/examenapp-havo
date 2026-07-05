@@ -235,8 +235,20 @@ def build_payload(db: Database, cfg, mode: str) -> dict:
                    for b in db.conn.execute(
                        "SELECT ts, pair, reason FROM risk_decisions WHERE allowed=0 "
                        "ORDER BY id DESC LIMIT 12")],
+        "thinking": _thinking(db),
         "updated": utcnow(),
     }
+
+
+def _thinking(db: Database) -> dict:
+    """Gedachtegang voor de site: de laatste beslissing (met factoren) + korte historie."""
+    recs = db.recent_decisions(20)
+    if not recs:
+        return {"latest": None, "history": []}
+    latest = recs[0]
+    history = [{"ts": r["ts"], "stance": r["stance"], "headline": r["headline"]}
+               for r in recs]
+    return {"latest": latest, "history": history}
 
 
 def build_portal() -> Portal | None:
