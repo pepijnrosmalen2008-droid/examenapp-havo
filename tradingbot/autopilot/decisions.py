@@ -13,7 +13,7 @@ from __future__ import annotations
 
 from dataclasses import dataclass, field
 
-from .factors import CoinRead, market_summary
+from .factors import CoinRead, market_summary, top_reasons
 
 
 @dataclass
@@ -30,14 +30,19 @@ class DecisionRecord:
     stance: str                      # kopen | verkopen | herbalanceren | cash | wachten | gestopt | pauze
     headline: str                    # één regel voor bovenaan
     detail: str                      # iets uitgebreider, 1–2 zinnen
-    market: dict = field(default_factory=dict)     # market_summary()
+    confidence: float = 0.0          # 0..1: hoe overtuigd de bot van deze beslissing is
+    market: dict = field(default_factory=dict)     # market_summary() incl. factor-tellingen
+    reasons: list[dict] = field(default_factory=list)   # 'Top 5 redenen' voor deze beslissing
+    why_not: list[str] = field(default_factory=list)    # als er niet gehandeld wordt: waarom niet
     actions: list[dict] = field(default_factory=list)
     considered: list[dict] = field(default_factory=list)  # top coin-reads (factoren)
 
     def to_dict(self) -> dict:
         return {
             "stance": self.stance, "headline": self.headline, "detail": self.detail,
-            "market": self.market, "actions": self.actions, "considered": self.considered,
+            "confidence": round(self.confidence, 3), "market": self.market,
+            "reasons": self.reasons, "why_not": self.why_not,
+            "actions": self.actions, "considered": self.considered,
         }
 
 
@@ -64,41 +69,74 @@ def build_record(*, reads: dict[str, CoinRead], actions: list[ActionRecord],
 
     if halted:
         return DecisionRecord("gestopt", "Bot is permanent gestopt",
-                              halt_reason or "kill-switch geraakt", market, acts, considered)
+                              halt_reason or "kill-switch geraakt", market=market,
+                              actions=acts, considered=considered)
     if paused:
         return DecisionRecord("pauze", "Bot pauzeert (dag-kill-switch)",
                               "Na een te grote dagdaling handelt de bot 24 uur niet.",
-                              market, acts, considered)
+                              market=market, actions=acts, considered=considered)
+
+    reasons: list[dict] = []
+    why_not: list[str] = []
 
     if buys and sells:
         stance, head = "herbalanceren", f"Herbalanceren: {len(buys)} koop, {len(sells)} verkoop"
+        lead = reads.get(buys[0].pair)
+        if lead:
+            reasons = top_reasons(lead, want_positive=True)
     elif buys:
         stance, head = "kopen", f"Kopen: {', '.join(a.pair for a in buys[:3])}"
+        lead = reads.get(buys[0].pair)
+        if lead:
+            reasons = top_reasons(lead, want_positive=True)
     elif sells:
         stance, head = "verkopen", f"Afbouwen: {', '.join(a.pair for a in sells[:3])}"
+        lead = reads.get(sells[0].pair)
+        if lead:
+            reasons = top_reasons(lead, want_positive=False)
     else:
-        # Niets uitgevoerd — leg uit waarom.
+        # Niets uitgevoerd — leg uit waarom (de 'Waarom geen trade?'-lijst).
+        blocked = [a for a in actions if a.status == "geblokkeerd"]
         if not strategy_ran:
             stance, head = "wachten", "Nog geen beoordeling deze cycle"
-        elif any(a.status == "geblokkeerd" for a in actions):
-            stance = "wachten"
-            head = "Signaal door risk engine tegengehouden"
+        elif blocked:
+            stance, head = "wachten", "Signaal door risk engine tegengehouden"
         else:
             stance = "cash"
             head = (f"Cash aanhouden ({cash_pct:.0f}%) — geen overtuigende kans"
                     if cash_pct > 5 else "Vasthouden — geen reden om te wijzigen")
+        # 'Waarom geen trade?' opbouwen uit de feitelijke remmen
+        best = max(reads.values(), key=lambda r: r.confidence, default=None)
+        if best is not None:
+            why_not.append(f"hoogste zekerheid slechts {best.confidence * 100:.0f}% ({best.pair.split('-')[0]})")
+        if market.get("tone") == "risk-off":
+            why_not.append("marktbeeld risk-off (macro/breedte negatief)")
+        if market.get("n_bullish", 0) == 0:
+            why_not.append("geen enkele coin overtuigend bullish")
+        for b in blocked[:3]:
+            why_not.append(f"{b.pair.split('-')[0]}: {b.reason}")
+        if not why_not:
+            why_not.append("factoren te zwak of tegenstrijdig voor een trade")
+
+    # overall confidence van de beslissing
+    if executed:
+        confidence = max((reads[a.pair].confidence for a in executed if a.pair in reads),
+                         default=market.get("avg_confidence", 0.0))
+    else:
+        confidence = market.get("avg_confidence", 0.0)
 
     tone = market.get("tone", "onbekend")
-    detail = (f"Marktbeeld: {tone} "
-              f"({market.get('n_bullish', 0)} bullish / {market.get('n_bearish', 0)} bearish). ")
+    detail = (f"Marktbeeld: {tone} · {market.get('n_factors', 0)} factoren bekeken "
+              f"({market.get('f_pos', 0)} positief / {market.get('f_neg', 0)} negatief / "
+              f"{market.get('f_neutral', 0)} neutraal). ")
     if stance == "cash":
-        detail += f"De factoren geven te weinig richting; {cash_pct:.0f}% staat in EUR."
+        detail += f"Te weinig richting; {cash_pct:.0f}% staat in EUR."
     elif stance == "herbalanceren":
         detail += "Gewichten liepen buiten de band; posities teruggezet naar doel."
     elif stance in ("kopen", "verkopen"):
-        top = ", ".join(f"{a.pair} ({a.reason})" for a in executed[:2])
-        detail += top
+        detail += ", ".join(f"{a.pair} ({a.reason})" for a in executed[:2])
     elif stance == "wachten":
         detail += "Er was deze cycle geen actie nodig of toegestaan."
 
-    return DecisionRecord(stance, head, detail, market, acts, considered)
+    return DecisionRecord(stance, head, detail, confidence=confidence, market=market,
+                          reasons=reasons, why_not=why_not, actions=acts, considered=considered)

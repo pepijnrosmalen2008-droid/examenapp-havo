@@ -97,7 +97,30 @@ CREATE TABLE IF NOT EXISTS decision_log (
     headline TEXT NOT NULL,         -- één regel: de netto-beslissing van deze cycle
     record  TEXT NOT NULL           -- volledige JSON: factoren, acties, blokkades, overwegingen
 );
+
+-- Leerlus: per factor bijhouden hoe vaak zijn richting achteraf klopte (forward-only).
+CREATE TABLE IF NOT EXISTS factor_stats (
+    factor_key TEXT PRIMARY KEY,
+    n       INTEGER NOT NULL DEFAULT 0,   -- aantal beoordeelde observaties
+    hits    INTEGER NOT NULL DEFAULT 0,   -- keren dat de richting klopte
+    sum_edge REAL NOT NULL DEFAULT 0      -- som van (forward-return × teken score)
+);
+
+-- Openstaande observaties, later beoordeeld tegen de werkelijke koersbeweging.
+CREATE TABLE IF NOT EXISTS factor_obs (
+    id      INTEGER PRIMARY KEY AUTOINCREMENT,
+    ts      TEXT NOT NULL,
+    due_ts  TEXT NOT NULL,          -- moment waarop deze observatie beoordeeld wordt
+    factor_key TEXT NOT NULL,
+    pair    TEXT NOT NULL,
+    score   REAL NOT NULL,
+    price   REAL NOT NULL           -- prijs op het observatiemoment
+);
+CREATE INDEX IF NOT EXISTS idx_factor_obs_due ON factor_obs(due_ts);
 """
+
+# Bayesiaanse krimp naar 0,5: een factor moet zijn betrouwbaarheid verdienen met data.
+FACTOR_PRIOR = 8.0
 
 
 def utcnow() -> str:
@@ -289,6 +312,45 @@ class Database:
             rec = json.loads(r["record"])
             rec["ts"], rec["stance"], rec["headline"] = r["ts"], r["stance"], r["headline"]
             out.append(rec)
+        return out
+
+    # ── factor-leerlus (forward-only betrouwbaarheid) ────────────────
+
+    def record_factor_obs(self, *, ts: str, due_ts: str, factor_key: str,
+                          pair: str, score: float, price: float) -> None:
+        self.conn.execute(
+            "INSERT INTO factor_obs(ts, due_ts, factor_key, pair, score, price) VALUES(?,?,?,?,?,?)",
+            (ts, due_ts, factor_key, pair, score, price),
+        )
+        self.conn.commit()
+
+    def due_factor_obs(self, now_iso: str) -> list[sqlite3.Row]:
+        return self.conn.execute(
+            "SELECT * FROM factor_obs WHERE due_ts <= ? ORDER BY id LIMIT 2000", (now_iso,)
+        ).fetchall()
+
+    def resolve_factor_obs(self, obs_id: int, factor_key: str,
+                           hit: bool | None, edge: float) -> None:
+        """Verwerk één beoordeelde observatie in de aggregaten en verwijder ze."""
+        if hit is not None:
+            self.conn.execute(
+                "INSERT INTO factor_stats(factor_key, n, hits, sum_edge) VALUES(?,?,?,?) "
+                "ON CONFLICT(factor_key) DO UPDATE SET n=n+1, hits=hits+?, sum_edge=sum_edge+?",
+                (factor_key, 1, int(hit), edge, int(hit), edge),
+            )
+        self.conn.execute("DELETE FROM factor_obs WHERE id=?", (obs_id,))
+        self.conn.commit()
+
+    def factor_reliabilities(self) -> dict[str, dict]:
+        """Per factor: n, precisie (met krimp naar 0,5) en gemiddelde edge."""
+        out: dict[str, dict] = {}
+        for r in self.conn.execute("SELECT * FROM factor_stats"):
+            n, hits = r["n"], r["hits"]
+            precision = (hits + FACTOR_PRIOR) / (n + 2 * FACTOR_PRIOR) if n >= 0 else 0.5
+            out[r["factor_key"]] = {
+                "n": n, "precision": round(precision, 3),
+                "avg_edge": round(r["sum_edge"] / n, 4) if n > 0 else 0.0,
+            }
         return out
 
     # ── equity ────────────────────────────────────────────────────────

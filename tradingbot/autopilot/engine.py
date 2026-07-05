@@ -202,7 +202,7 @@ class TradingEngine:
             self.notify.send(f"⛔ KILL SWITCH: max drawdown {dd:.2f}% bereikt. Alle posities "
                              f"verkocht, bot is permanent gestopt. Herstart handmatig met "
                              f"status.py --clear-halt.")
-            self._record_decision({}, cash, equity, now, strategy_ran=False)
+            self._record_decision({}, cash, equity, now, strategy_ran=False, prices=prices)
             return
 
         if not self.risk.is_paused(now):
@@ -214,11 +214,11 @@ class TradingEngine:
                                               f"{self.cfg.risk.max_daily_loss_pct}%", now)
                 self.notify.send(f"🟠 Dag-kill-switch: verlies vandaag {loss:.2f}%. Alle posities "
                                  f"gesloten; bot pauzeert 24 uur.")
-                self._record_decision({}, cash, equity, now, strategy_ran=False)
+                self._record_decision({}, cash, equity, now, strategy_ran=False, prices=prices)
                 return
         else:
             log.info("cycle: dag-pauze actief, geen handel")
-            self._record_decision({}, cash, equity, now, strategy_ran=False)
+            self._record_decision({}, cash, equity, now, strategy_ran=False, prices=prices)
             return
 
         # ── per-positie SL/TP exits (gaan ook bij wijde spread altijd door:
@@ -256,7 +256,7 @@ class TradingEngine:
                 self._route_signal(sig, prices, now=now)
 
         # ── gedachtegang vastleggen (factoren + netto-beslissing van deze cycle) ──
-        self._record_decision(candles, cash, equity, now, strategy_ran=True)
+        self._record_decision(candles, cash, equity, now, strategy_ran=True, prices=prices)
 
     # ── uitvoering ────────────────────────────────────────────────────
 
@@ -382,16 +382,31 @@ class TradingEngine:
                                  reason=reason or "", eur=eur))
 
     def _record_decision(self, candles: dict, cash: float, equity: float,
-                         now: datetime, *, strategy_ran: bool) -> None:
-        """Bereken de factor-lezing en leg de netto-beslissing van deze cycle vast.
-        Best-effort: observeerbaarheid mag de trading loop nooit breken."""
+                         now: datetime, *, strategy_ran: bool,
+                         prices: dict[str, float] | None = None) -> None:
+        """Bereken de factor-lezing (met geleerde betrouwbaarheid), leg de netto-beslissing
+        vast en voer de forward-only leerlus uit. Best-effort: observeerbaarheid mag de
+        trading loop nooit breken."""
         try:
+            from . import factor_learning as fl
             from .decisions import build_record
             from .factors import compute_reads
             from .research import load_events
 
+            prices = prices or {}
+            # 1) openstaande observaties afrekenen tegen de werkelijke koersbeweging
+            if prices:
+                fl.grade_due(self.db, prices, now)
+
             events = load_events(self.cfg, now) if self.cfg.research.enabled else []
-            reads = compute_reads(candles, list(self.cfg.pairs), now, events=events) if candles else {}
+            reliabilities = self.db.factor_reliabilities()
+            reads = compute_reads(candles, list(self.cfg.pairs), now, events=events,
+                                  reliabilities=reliabilities) if candles else {}
+
+            # 2) de scores van deze cycle vastleggen om later af te rekenen
+            if reads and prices:
+                fl.record_observations(self.db, reads, prices, now)
+
             held = {p.pair for p in self.db.open_positions()}
             rec = build_record(
                 reads=reads, actions=getattr(self, "_cycle_actions", []) or [],

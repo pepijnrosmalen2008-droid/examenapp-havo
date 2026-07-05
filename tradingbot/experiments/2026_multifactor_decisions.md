@@ -25,6 +25,15 @@ de afloop al; elke mooie backtest-curve op nieuws/sentiment is daarom misleidend
 signalen zijn **alleen forward te toetsen** — live, in PAPER/SHADOW, met een vooraf
 vastgelegd protocol. Zie ook RESEARCH_AGENT.md en RESEARCH_ROADMAP.md.
 
+## Leerlus (gebouwd — het mechanisme, niet de conclusie)
+`factor_learning.py` legt elke cycle de factor-scores vast en rekent ze ná 24u af tegen
+de werkelijke koersbeweging → per factor een **precisie** (krimp naar 0,5). Die stuurt het
+effectieve gewicht in de gedachtegang. Het **mechanisme** om "welke informatie bleek
+nuttig?" te meten staat er dus; de **uitkomst** moet zich nog opbouwen. Zolang er te
+weinig afgerekende observaties zijn, staat elke betrouwbaarheid dicht bij 0,5 (eerlijk:
+"nog niet bewezen"). Dit is puur forward — het verandert nooit met terugwerkende kracht
+een order, alleen de uitleg en de gated voorstellen.
+
 ## Hypothese (forward-only)
 Een confidence-gewogen externe-factor-overlay, bovenop de prijsstrategie, verbetert de
 beslissingen **niet vanzelf**. We geloven het pas als een vooraf geregistreerde,

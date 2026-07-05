@@ -115,6 +115,35 @@ svg { display:block; width:100%; height:auto; touch-action:none }
 .thist .te .ts { flex:none; width:96px; font-weight:600 }
 .note { font-size:11px; color:var(--muted); margin-top:12px; line-height:1.5 }
 
+/* confidence + tellingen */
+.meterrow { display:flex; gap:14px; align-items:center; flex-wrap:wrap; margin-top:14px }
+.conf { flex:1; min-width:170px }
+.conf .cl { display:flex; justify-content:space-between; font-size:12px; color:var(--muted); margin-bottom:5px }
+.conf .cl b { color:var(--ink); font-size:15px; font-variant-numeric:tabular-nums }
+.cbar { height:8px; background:var(--grid); border-radius:9px; overflow:hidden }
+.cbar > i { display:block; height:100%; border-radius:9px; background:var(--s1) }
+.tally { display:flex; gap:6px; flex-wrap:wrap }
+.tchip { font-size:12px; font-weight:600; padding:4px 10px; border-radius:99px; background:var(--chip); color:var(--ink2) }
+.tchip.p { color:var(--up) } .tchip.n { color:var(--down) }
+.reasons { margin-top:14px; display:flex; flex-direction:column; gap:1px }
+.reasons .rl { font-size:12px; font-weight:700; color:var(--muted); text-transform:uppercase; letter-spacing:.04em; margin-bottom:4px }
+.rz { display:flex; gap:9px; align-items:baseline; padding:6px 4px; border-top:1px solid var(--grid); font-size:13px }
+.rz .n { color:var(--muted); font-weight:700; flex:none; width:16px }
+.rz .rb { font-weight:600 } .rz .rd { color:var(--muted); font-size:12px }
+.rz .rel { margin-left:auto; flex:none; font-size:11px; color:var(--muted) }
+.whynot { margin-top:14px; border:1px solid var(--border); border-radius:12px; padding:12px 14px; background:var(--chip) }
+.whynot .wl { font-size:12px; font-weight:700; color:var(--ink2); margin-bottom:6px }
+.whynot ul { margin:0; padding-left:18px } .whynot li { font-size:13px; color:var(--ink2); margin:2px 0 }
+.relboard { margin-top:14px; border-top:1px solid var(--grid); padding-top:12px }
+.relboard .rl { font-size:12px; font-weight:700; color:var(--muted); text-transform:uppercase; letter-spacing:.04em; margin-bottom:8px }
+.relrow { display:grid; grid-template-columns:120px 1fr 78px; align-items:center; gap:10px; padding:5px 2px; font-size:12px }
+.relrow .rn { font-weight:600 }
+.relbar { height:6px; background:var(--grid); border-radius:9px; position:relative }
+.relbar .mid { position:absolute; left:50%; top:-2px; bottom:-2px; width:1px; background:var(--axis) }
+.relbar > i { position:absolute; top:0; height:100%; border-radius:9px }
+.relrow .rm { text-align:right; color:var(--muted); font-variant-numeric:tabular-nums }
+.read .conf-mini { margin-left:6px; font-size:11px; color:var(--muted); font-weight:600 }
+
 .stopbox { border:1px solid var(--down); border-radius:16px; padding:16px; margin-top:26px }
 .stopbox p { font-size:13px; color:var(--ink2); margin:6px 0 12px }
 .stopbox input { max-width:150px; margin:0 } .stopbox button { padding:12px 18px; border:0;
@@ -294,11 +323,39 @@ function renderThinking(){
     return;
   }
   const L=t.latest, mk=L.market||{};
+  const conf=Math.round((L.confidence||0)*100);
+  const meter=`<div class="meterrow">
+    <div class="conf">
+      <div class="cl"><span>Zekerheid van deze beslissing</span><b>${conf}%</b></div>
+      <div class="cbar"><i style="width:${conf}%;background:${conf>=60?'var(--up)':conf>=35?'var(--warn)':'var(--down)'}"></i></div>
+    </div>
+    <div class="tally">
+      <span class="tchip">${mk.n_factors??0} factoren bekeken</span>
+      <span class="tchip p">${mk.f_pos??0} positief</span>
+      <span class="tchip n">${mk.f_neg??0} negatief</span>
+      <span class="tchip">${mk.f_neutral??0} neutraal</span>
+    </div></div>`;
+
+  const reasons=(L.reasons||[]);
+  const reasonsBlock = reasons.length ? `<div class="reasons">
+    <div class="rl">Belangrijkste redenen</div>
+    ${reasons.map((r,i)=>`<div class="rz"><span class="n">${i+1}</span>
+      <span style="min-width:0"><span class="rb${r.kind==='external'?' ':''}">${esc(r.label)}</span>
+        <span class="rd">— ${esc(r.detail)}</span></span>
+      ${r.n_obs?`<span class="rel" title="geleerde precisie over ${r.n_obs} beoordeelde observaties">betrouwbaarheid ${Math.round(r.reliability*100)}%</span>`:''}
+    </div>`).join('')}</div>` : '';
+
+  const wn=(L.why_not||[]);
+  const whyNot = wn.length ? `<div class="whynot"><div class="wl">Waarom geen (grotere) trade?</div>
+    <ul>${wn.map(x=>`<li>${esc(x)}</li>`).join('')}</ul></div>` : '';
+
   const reads=(L.considered||[]).map(renderRead).join('');
+  const relBoard = renderReliability(t.reliability||[]);
   const hist=(t.history||[]).slice(0,8).map(h=>
     `<div class="te"><span class="tt tnum">${fmtWhen(h.ts)}</span>
       <span class="ts">${STANCE_ICON[h.stance]||''} ${esc(h.stance)}</span>
       <span style="min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">${esc(h.headline)}</span></div>`).join('');
+
   $('thinking').innerHTML=`
     <div class="think-head">
       <div class="think-badge">${STANCE_ICON[L.stance]||'💭'}</div>
@@ -308,27 +365,49 @@ function renderThinking(){
         <span class="tone">${TONE_LABEL[mk.tone]||esc(mk.tone||'')}</span>
       </div>
     </div>
+    ${meter}
+    ${reasonsBlock}
+    ${whyNot}
     ${reads?`<div class="reads">${reads}</div>`:''}
+    ${relBoard}
     ${hist?`<div class="thist">${hist}</div>`:''}
-    <div class="note">◇ = externe factor (nieuws, macro, smart money): alleen live vooruit te toetsen,
-      niet backtestbaar, en gaat nooit rechtstreeks een order in. Prijsfactoren zijn wél getoetst.</div>`;
+    <div class="note">Elke factor verdient zijn eigen gewicht: de bot rekent zijn factor-scores
+      dagelijks af tegen wat de koers daarna deed en leert zo welke informatie <i>historisch</i>
+      nuttig bleek (betrouwbaarheid). ◇ = externe factor (nieuws, macro, smart money): alleen live
+      vooruit te toetsen, niet backtestbaar, en gaat nooit rechtstreeks een order in.</div>`;
+}
+
+function renderReliability(rel){
+  const rows=(rel||[]).filter(r=>r.n>0);
+  if(!rows.length) return `<div class="relboard"><div class="rl">Geleerde betrouwbaarheid</div>
+    <div class="mut" style="font-size:12px">nog te weinig afgerekende observaties — betrouwbaarheid wordt vanaf ~1 dag opgebouwd (forward-only)</div></div>`;
+  return `<div class="relboard"><div class="rl">Geleerde betrouwbaarheid per factor <span class="mut" style="font-weight:400;text-transform:none">(forward-only, precisie vs. muntworp 50%)</span></div>
+    ${rows.map(r=>{
+      const p=r.precision, above=p>=0.5, w=Math.min(50,Math.abs(p-0.5)*100), left=above?50:50-w;
+      const col=above?'var(--up)':'var(--down)';
+      return `<div class="relrow">
+        <span class="rn">${esc(r.label)}</span>
+        <span class="relbar"><span class="mid"></span><i style="left:${left}%;width:${w}%;background:${col}"></i></span>
+        <span class="rm">${Math.round(p*100)}% · n=${r.n}</span>
+      </div>`;}).join('')}</div>`;
 }
 
 function renderRead(r){
   const b=base(r.pair), held=(STATE.positions||[]).some(p=>p.pair===r.pair);
-  const cc=convClass(r.conviction);
+  const cc=convClass(r.conviction), conf=r.confidence!=null?Math.round(r.confidence*100):null;
   const facs=(r.factors||[]).map(f=>{
     const w=Math.min(50,Math.abs(f.score)*50), left=f.score>=0?50:50-w;
     const col=f.score>=0?'var(--up)':'var(--down)';
+    const rel=(f.n_obs>0)?` · ${Math.round(f.reliability*100)}%`:'';
     return `<div class="fac">
       <span class="fl${f.kind==='external'?' ext':''}" title="${esc(f.detail)}">${esc(f.label)}</span>
-      <span class="fbar"><span class="mid"></span><i style="left:${left}%;width:${w}%;background:${col}"></i></span>
-      <span class="fd">${esc(f.detail)}</span>
+      <span class="fbar"><span class="mid"></span><i style="left:${left}%;width:${w}%;background:${col};opacity:${0.55+0.45*Math.min(1,(f.weight_effective||f.weight||0.5))}"></i></span>
+      <span class="fd">${esc(f.detail)}${rel}</span>
     </div>`;}).join('');
   return `<div class="read">
     <div class="rhead">
       <span class="rn">${esc(b)}</span>${held?'<span class="held">• in bezit</span>':''}
-      <span class="conv ${cc}">${r.conviction>=0?'+':''}${(r.conviction*100).toFixed(0)}</span>
+      <span class="conv ${cc}">${r.conviction>=0?'+':''}${(r.conviction*100).toFixed(0)}${conf!=null?`<span class="conf-mini">${conf}% zeker</span>`:''}</span>
     </div>
     <div class="facs">${facs}</div>
   </div>`;

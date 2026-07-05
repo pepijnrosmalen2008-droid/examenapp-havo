@@ -30,7 +30,18 @@ def test_no_action_high_cash_yields_cash_stance():
     rec = build_record(reads=reads(), actions=[], held=set(), cash=95, equity=100,
                        halted=False, halt_reason="", paused=False, strategy_ran=True)
     assert rec.stance == "cash"
-    assert "considered" in rec.to_dict() and rec.to_dict()["considered"]
+    d = rec.to_dict()
+    assert d["considered"]
+    assert d["why_not"]  # 'Waarom geen trade?' altijd ingevuld bij niet-handelen
+
+
+def test_buy_populates_reasons_and_confidence():
+    acts = [ActionRecord("AAA-EUR", "BUY", "uitgevoerd", "momentum", eur=20)]
+    rec = build_record(reads=reads(), actions=acts, held={"AAA-EUR"}, cash=80, equity=100,
+                       halted=False, halt_reason="", paused=False, strategy_ran=True)
+    d = rec.to_dict()
+    assert d["reasons"] and all("label" in r for r in d["reasons"])
+    assert 0.0 <= d["confidence"] <= 1.0
 
 
 def test_blocked_action_yields_wachten():

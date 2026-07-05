@@ -163,6 +163,21 @@ forward-only. Promotie tot echte order-invoer vereist het pre-registratieprotoco
 out-of-sample hit-rate, geen schade aan de drawdown). Zo krijgt de gebruiker de gevraagde
 brede afweging én blijft de discipline (AI stelt voor, beslist nooit) overeind.
 
+**Vervolg (leerlus + betrouwbaarheids-gewogen afweging).** Niet elke factor verdient
+hetzelfde vertrouwen. `factor_learning.py` rekent elke factor-observatie ná een horizon
+(24u) af tegen de werkelijke koersbeweging en bouwt per factor een **precisie** op
+(Bayesiaanse krimp naar 0,5, tabellen `factor_obs`/`factor_stats`). Die geleerde
+betrouwbaarheid schaalt het **effectieve gewicht** van de factor in de gedachtegang: een
+factor die het structureel mis heeft, vervaagt vanzelf. Dit is strikt forward-only (geen
+leakage) en raakt bewust NIET de order-logica van de getoetste prijsstrategieën — het
+maakt alleen de uitleg en de gated research-voorstellen slimmer. Bovenop de conviction
+komt een **confidence** (eensgezindheid × betrouwbaarheid), een Decision-Intelligence-
+telling ("N factoren bekeken: x positief / y negatief / z neutraal"), een "top redenen"-
+lijst en een expliciete **"waarom geen trade?"**. Externe factoren worden bovendien
+**context-gedempt**: bullish nieuws telt minder als de coin al fors is opgelopen (RSI +
+afstand boven het gemiddelde). De sample-gate (max. 1 observatie-batch/uur) houdt de
+leertabellen klein, ook voor de 1-minuut-bot.
+
 ## D22 — Meerdere bots naast elkaar + seed-portefeuille
 
 Om strategieën eerlijk te vergelijken kan de bot met `--config` draaien; elke config

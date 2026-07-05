@@ -240,15 +240,27 @@ def build_payload(db: Database, cfg, mode: str) -> dict:
     }
 
 
+FACTOR_LABELS = {
+    "momentum": "Momentum", "trend": "Trend", "volatility": "Rust/risico",
+    "drawdown": "Afstand tot top", "relative_strength": "Relatieve sterkte",
+    "news": "Nieuws", "macro": "Wereld/macro", "smart_money": "Smart money",
+}
+
+
 def _thinking(db: Database) -> dict:
-    """Gedachtegang voor de site: de laatste beslissing (met factoren) + korte historie."""
+    """Gedachtegang voor de site: laatste beslissing (met factoren + confidence),
+    korte historie, en de geleerde betrouwbaarheid per factor (forward-only)."""
     recs = db.recent_decisions(20)
+    rel = db.factor_reliabilities()
+    reliability = sorted(
+        ({"key": k, "label": FACTOR_LABELS.get(k, k), "precision": v["precision"],
+          "n": v["n"], "avg_edge": v["avg_edge"]} for k, v in rel.items()),
+        key=lambda r: (-r["n"], -r["precision"]))
     if not recs:
-        return {"latest": None, "history": []}
-    latest = recs[0]
+        return {"latest": None, "history": [], "reliability": reliability}
     history = [{"ts": r["ts"], "stance": r["stance"], "headline": r["headline"]}
                for r in recs]
-    return {"latest": latest, "history": history}
+    return {"latest": recs[0], "history": history, "reliability": reliability}
 
 
 def build_portal() -> Portal | None:

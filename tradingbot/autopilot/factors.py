@@ -80,30 +80,64 @@ def _std(xs: list[float]) -> float:
     return math.sqrt(sum((x - m) ** 2 for x in xs) / (len(xs) - 1))
 
 
+def _rsi(closes: list[float], n: int = 14) -> float | None:
+    """Klassieke RSI (0..100). Gebruikt voor context: is een coin al over-/onderkocht?"""
+    if len(closes) < n + 1:
+        return None
+    gains, losses = [], []
+    for i in range(len(closes) - n, len(closes)):
+        ch = closes[i] - closes[i - 1]
+        gains.append(max(ch, 0.0))
+        losses.append(max(-ch, 0.0))
+    ag, al = sum(gains) / n, sum(losses) / n
+    if al == 0:
+        return 100.0
+    rs = ag / al
+    return 100.0 - 100.0 / (1.0 + rs)
+
+
+def _extension(closes: list[float]) -> float:
+    """Hoe 'uitgerekt' de koers is: -1 (fors onderkocht) .. +1 (fors overkocht).
+    Combineert RSI en de afstand boven het 20-daags gemiddelde. Context voor het
+    dempen van externe signalen: bullish nieuws telt minder als alles al ver gestegen is."""
+    sma20 = _sma(closes, 20)
+    above = (closes[-1] / sma20 - 1) if sma20 else 0.0
+    rsi = _rsi(closes)
+    rsi_ext = ((rsi - 50) / 50) if rsi is not None else 0.0   # -1..+1
+    return _clip(0.6 * rsi_ext + 0.4 * _clip(above / 0.15))
+
+
 @dataclass
 class FactorScore:
     key: str
     label: str
     kind: str            # 'price' | 'external'
     score: float         # -1..+1
-    weight: float
+    weight: float        # basisgewicht (vast, per factortype)
     detail: str          # mensentaal-uitleg met de concrete getallen
+    reliability: float = 0.5      # geleerde precisie (0..1); 0,5 = nog geen bewijs
+    weight_effective: float = 0.0  # basisgewicht × betrouwbaarheids-multiplier
+    n_obs: int = 0                # aantal beoordeelde observaties achter de betrouwbaarheid
 
 
 @dataclass
 class CoinRead:
     """De volledige factor-lezing voor één coin."""
     pair: str
-    conviction: float             # gewogen som van de factoren, -1..+1
+    conviction: float             # betrouwbaarheids-gewogen som van de factoren, -1..+1
     stance: str                   # 'bullish' | 'neutraal' | 'bearish'
+    confidence: float = 0.0       # 0..1: hoe eensgezind + hoe betrouwbaar de factoren zijn
     factors: list[FactorScore] = field(default_factory=list)
 
     def to_dict(self) -> dict:
         return {
             "pair": self.pair,
             "conviction": round(self.conviction, 3),
+            "confidence": round(self.confidence, 3),
             "stance": self.stance,
-            "factors": [asdict(f) | {"score": round(f.score, 3)} for f in self.factors],
+            "factors": [asdict(f) | {"score": round(f.score, 3),
+                                     "weight_effective": round(f.weight_effective, 3)}
+                        for f in self.factors],
         }
 
 
@@ -155,11 +189,39 @@ def _price_factors(closes: list[float], basket_ret: float, weights: dict) -> lis
     return out
 
 
-def _external_factors(pair: str, events: list[dict], now: datetime, weights: dict) -> list[FactorScore]:
+def _event_strength(ev: dict, now: datetime) -> float:
+    """Effectieve zekerheid van één event: basis-confidence × versheid × bron-vertrouwen.
+    Rijkere velden zijn optioneel — ontbreken ze, dan telt alleen `confidence`.
+      confidence   basis 0..1
+      magnitude    0..1 hoe groot de claim is (default 1)
+      n_sources    aantal onafhankelijke bronnen (meer = betrouwbbaarder)
+      published    ISO-tijd; ouder nieuws vervaagt (halfwaardetijd ~48u)
+    """
+    conf = float(ev.get("confidence", 0))
+    mag = float(ev.get("magnitude", 1.0))
+    n_src = int(ev.get("n_sources", len(ev.get("sources", [])) or 1))
+    src_trust = min(1.0, 0.5 + 0.25 * n_src)          # 1 bron→0,75; 2→1,0; capt
+    fresh = 1.0
+    pub = ev.get("published")
+    if pub:
+        try:
+            age_h = max(0.0, (now - datetime.fromisoformat(pub)).total_seconds() / 3600)
+            fresh = 0.5 ** (age_h / 48.0)             # halveert elke 48 uur
+        except (ValueError, TypeError):
+            pass
+    return _clip(conf * mag * src_trust * fresh)
+
+
+def _external_factors(pair: str, events: list[dict], now: datetime, weights: dict,
+                      extension: float) -> list[FactorScore]:
     """Zet gestructureerde events om naar externe factoren. Elk event:
       {"pair":"BTC-EUR"|"*", "kind":"news"|"macro"|"smart_money",
-       "direction":-1|0|1, "confidence":0..1, "rationale":"...", "expires":ISO?}
-    '*' = geldt voor alle coins (bv. wereldnieuws)."""
+       "direction":-1|0|1, "confidence":0..1, "rationale":"...",
+       "magnitude"?, "n_sources"?, "published"?, "expires"?}
+    '*' = geldt voor alle coins (bv. wereldnieuws).
+
+    Context: een bullish extern signaal wordt gedempt als de coin al fors is opgelopen
+    (hoge `extension`), en andersom — dezelfde tweet weegt anders bij +18% dan bij -18%."""
     base = pair.split("-")[0]
     buckets: dict[str, list[dict]] = {"news": [], "macro": [], "smart_money": []}
     for ev in events:
@@ -175,24 +237,36 @@ def _external_factors(pair: str, events: list[dict], now: datetime, weights: dic
     for kind, evs in buckets.items():
         if not evs:
             continue
-        # Confidence-gewogen richting → score; det = kortste onderbouwing.
-        num = sum(int(e.get("direction", 0)) * float(e.get("confidence", 0)) for e in evs)
-        den = sum(float(e.get("confidence", 0)) for e in evs) or 1.0
+        num = sum(int(e.get("direction", 0)) * _event_strength(e, now) for e in evs)
+        den = sum(_event_strength(e, now) for e in evs) or 1.0
         score = _clip(num / den)
-        top = max(evs, key=lambda e: float(e.get("confidence", 0)))
+        # context-demping: signaal dat mét de over-/onderwaardering meebeweegt telt minder
+        damp = 1.0 - 0.5 * _clip(score * extension)   # zelfde teken → tot 50% demping
+        score *= damp
+        top = max(evs, key=lambda e: _event_strength(e, now))
         why = str(top.get("rationale", "")).strip() or f"{len(evs)} event(s)"
+        ctx = " · gedempt (koers al uitgerekt)" if damp < 0.9 else ""
         out.append(FactorScore(kind, *FACTOR_LABELS[kind][:2], score=score,
-                               weight=weights[kind], detail=f"{why} ({len(evs)}×)"))
+                               weight=weights[kind], detail=f"{why} ({len(evs)}×){ctx}"))
     return out
+
+
+def _reliability_multiplier(precision: float) -> float:
+    return max(0.4, min(1.6, 1.0 + (precision - 0.5) * 3.0))
 
 
 def compute_reads(candles: dict[str, list[Candle]], pairs: list[str], now: datetime,
                   events: list[dict] | None = None,
-                  weights: dict | None = None) -> dict[str, CoinRead]:
-    """Bereken per coin de factor-lezing. `events` = externe gestructureerde events
-    (leeg/None = alleen prijsfactoren, de veilige default)."""
+                  weights: dict | None = None,
+                  reliabilities: dict[str, dict] | None = None) -> dict[str, CoinRead]:
+    """Bereken per coin de factor-lezing.
+
+    `events`        externe gestructureerde events (leeg/None = alleen prijsfactoren).
+    `reliabilities` per factor-key {'precision','n',...} uit de leerlus; bepaalt het
+                    effectieve gewicht — een factor die het vaak mis had, vervaagt."""
     w = {**DEFAULT_WEIGHTS, **(weights or {})}
     events = events or []
+    rel = reliabilities or {}
 
     # mand-return (mediaan laatste return) voor relatieve sterkte
     last_rets = []
@@ -213,25 +287,69 @@ def compute_reads(candles: dict[str, list[Candle]], pairs: list[str], now: datet
         factors: list[FactorScore] = []
         if closes and len(closes) >= 5:
             factors += _price_factors(closes, basket_ret, w)
-        factors += _external_factors(pair, events, now, w)
+            factors += _external_factors(pair, events, now, w, _extension(closes))
+        else:
+            factors += _external_factors(pair, events, now, w, 0.0)
         if not factors:
             continue
-        tw = sum(f.weight for f in factors) or 1.0
-        conviction = sum(f.score * f.weight for f in factors) / tw
+
+        # geleerde betrouwbaarheid → effectief gewicht per factor
+        for f in factors:
+            info = rel.get(f.key, {})
+            f.reliability = float(info.get("precision", 0.5))
+            f.n_obs = int(info.get("n", 0))
+            f.weight_effective = f.weight * _reliability_multiplier(f.reliability)
+
+        tw = sum(f.weight_effective for f in factors) or 1.0
+        conviction = sum(f.score * f.weight_effective for f in factors) / tw
         stance = ("bullish" if conviction > 0.15 else
                   "bearish" if conviction < -0.15 else "neutraal")
-        reads[pair] = CoinRead(pair=pair, conviction=conviction, stance=stance, factors=factors)
+
+        # confidence: hoe eensgezind de factoren zijn (aandeel gewicht in de netto-richting),
+        # geschaald met de overtuiging. Weinig eensgezind of zwak → lage confidence.
+        pos_w = sum(f.weight_effective for f in factors if f.score > 0.1)
+        neg_w = sum(f.weight_effective for f in factors if f.score < -0.1)
+        agree = (max(pos_w, neg_w) / tw) if tw else 0.0
+        confidence = _clip(abs(conviction)) * (0.4 + 0.6 * agree)
+
+        reads[pair] = CoinRead(pair=pair, conviction=conviction, stance=stance,
+                               confidence=confidence, factors=factors)
     return reads
 
 
 def market_summary(reads: dict[str, CoinRead]) -> dict:
-    """Een compacte 'markt-lezing' over alle coins samen, voor de kop van het paneel."""
+    """Compacte 'markt-lezing' + Decision-Intelligence-telling over alle coins samen."""
     if not reads:
-        return {"tone": "onbekend", "avg_conviction": 0.0, "n_bullish": 0, "n_bearish": 0}
+        return {"tone": "onbekend", "avg_conviction": 0.0, "n_bullish": 0, "n_bearish": 0,
+                "n": 0, "avg_confidence": 0.0, "f_pos": 0, "f_neg": 0, "f_neutral": 0}
     convs = [r.conviction for r in reads.values()]
     avg = sum(convs) / len(convs)
     n_bull = sum(1 for r in reads.values() if r.stance == "bullish")
     n_bear = sum(1 for r in reads.values() if r.stance == "bearish")
     tone = ("risk-on" if avg > 0.12 else "risk-off" if avg < -0.12 else "gemengd")
+    # tel alle individuele factor-signalen (over alle coins) — de "52 factoren bekeken"-teller
+    f_pos = f_neg = f_neu = 0
+    for r in reads.values():
+        for f in r.factors:
+            if f.score > 0.1:
+                f_pos += 1
+            elif f.score < -0.1:
+                f_neg += 1
+            else:
+                f_neu += 1
+    avg_conf = sum(r.confidence for r in reads.values()) / len(reads)
     return {"tone": tone, "avg_conviction": round(avg, 3),
-            "n_bullish": n_bull, "n_bearish": n_bear, "n": len(reads)}
+            "n_bullish": n_bull, "n_bearish": n_bear, "n": len(reads),
+            "avg_confidence": round(avg_conf, 3),
+            "f_pos": f_pos, "f_neg": f_neg, "f_neutral": f_neu,
+            "n_factors": f_pos + f_neg + f_neu}
+
+
+def top_reasons(read: CoinRead, want_positive: bool, limit: int = 5) -> list[dict]:
+    """De sterkst bijdragende factoren voor (of tegen) een coin — voor 'Top 5 redenen'."""
+    facs = [f for f in read.factors
+            if (f.score > 0) == want_positive and abs(f.score) > 0.05]
+    facs.sort(key=lambda f: abs(f.score * f.weight_effective), reverse=True)
+    return [{"label": f.label, "detail": f.detail, "kind": f.kind,
+             "reliability": round(f.reliability, 2), "n_obs": f.n_obs}
+            for f in facs[:limit]]
