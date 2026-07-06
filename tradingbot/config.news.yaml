@@ -1,14 +1,17 @@
 # Bot 5 — Nieuws / event-bot. PAPER. (Conditie B: nieuwe informatiebron = niet-prijs.)
 #
-# Handelt NIET op koers, maar op gestructureerde events uit research_events.json
-# (nieuws, macro, smart money). Basisstrategie 'hold' geeft zelf geen enkel signaal;
-# álle trades komen van de research-laag en gaan verplicht door de risk engine.
-# Zijn gedachtegang staat op slagio.nl/bot.html (externe factoren + beslissingspaneel
-# + wat-als). Forward-only: nieuws is niet backtestbaar (leakage), alleen live te toetsen —
-# zie experiments/2026_news_event_bot.md voor de vooraf vastgelegde criteria.
+# PROACTIEF: haalt zelf publieke crypto-nieuwskoppen op (RSS) en zet ze deterministisch
+# om naar events — geen LLM, geen social-scraping. Handelt NIET op koers; basisstrategie
+# 'hold' geeft zelf geen signaal. Elke relevante kop wordt één keer als trade-VOORSTEL
+# afgevuurd (en blijft daarna als factor meetellen), altijd via de confidence-poort én de
+# risk engine. Kan de bestaande coins ook verkopen bij negatief nieuws. Niet tijdgebonden:
+# hij handelt zodra er nieuws is, niet op een vaste koop-cyclus.
 #
-# Events invoeren:  kopieer research_events.example.json → research_events.json en vul
-# 'm met echte events (pair, kind, direction, confidence, magnitude, n_sources, published).
+# Zijn gedachtegang (welke kop → welke coin → waarom) staat op slagio.nl/bot.html. Forward-
+# only: nieuws is niet backtestbaar (leakage); de ruwe kop→richting-vertaling wordt door de
+# leerlus afgerekend. Zie experiments/2026_news_event_bot.md voor de criteria.
+#
+# Handmatige events blijven mogelijk via research_events.json (naast de auto-feed).
 # Draaien:  py bot.py --config config.news.yaml
 
 mode: PAPER
@@ -37,13 +40,18 @@ strategy:
   name: hold                  # geen prijssignalen; de nieuws-laag beslist
   params: {}
 
-# de nieuws-laag: stelt trades VOOR op basis van events; risk engine kan verkleinen/blokkeren
+# de nieuws-laag: zoekt zelf nieuws, stelt trades VOOR; risk engine kan verkleinen/blokkeren
 research:
   enabled: true
-  agent: rulebased
-  min_confidence: 0.6         # onder deze zekerheid negeert hij een event
+  agent: newsfeed             # proactief RSS ophalen (i.p.v. handmatig events invoeren)
+  min_confidence: 0.6         # onder deze zekerheid negeert hij een kop
   max_position_eur: 25        # bovengrens per nieuws-voorstel (risk engine kan verder knijpen)
-  events_file: research_events.json
+  events_file: research_events.json   # optioneel: handmatige events naast de auto-feed
+  fetch_minutes: 10           # hoogstens elke 10 min nieuwe koppen ophalen
+  sources:
+    - https://cointelegraph.com/rss
+    - https://decrypt.co/feed
+    - https://www.coindesk.com/arc/outboundfeeds/rss/
 
 schedule:
   interval_minutes: 15

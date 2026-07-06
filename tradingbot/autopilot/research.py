@@ -131,6 +131,12 @@ def load_events(cfg: AppConfig, now: datetime) -> list[dict]:
             pass
         if isinstance(ev, dict):
             out.append(ev)
+    # proactief opgehaalde nieuws-events meenemen in de gedachtegang (factor-overlay)
+    try:
+        from .newsfeed import load_auto_events
+        out += load_auto_events(cfg, now)
+    except Exception:  # noqa: BLE001 — overlay mag nooit de cycle breken
+        pass
     return out
 
 
@@ -140,6 +146,11 @@ _AGENTS: dict[str, type[ResearchAgent]] = {"rulebased": RuleBasedResearchAgent}
 def get_research_agent(cfg: AppConfig) -> ResearchAgent | None:
     if not cfg.research.enabled:
         return None
+    if cfg.research.agent == "newsfeed":
+        from .newsfeed import NewsFeedResearchAgent   # lazy: vermijdt circulaire import
+        log.info("research-laag actief: nieuwsfeed (proactief), min_confidence %.2f",
+                 cfg.research.min_confidence)
+        return NewsFeedResearchAgent(cfg)
     cls = _AGENTS.get(cfg.research.agent)
     if cls is None:
         raise ValueError(f"Onbekende research-agent '{cfg.research.agent}'")

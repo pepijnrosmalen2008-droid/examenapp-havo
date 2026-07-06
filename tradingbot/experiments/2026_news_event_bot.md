@@ -10,14 +10,22 @@ categorie-1-achtige stap die nu op tafel ligt, en de gebruiker vroeg er explicie
 "waarom nieuws niet met één bot uittesten".
 
 ## Wat de bot is (en niet is)
-- **Wel:** een event-gedreven bot. Basisstrategie `hold` (geeft zelf geen enkel signaal);
-  álle trades komen uit gestructureerde events via de bestaande research-laag
-  (`research_events.json` → RuleBasedResearchAgent → `to_trade_signals` → risk engine).
-  Zijn gedachtegang staat al op het dashboard (externe factoren, beslissingspaneel, wat-als).
-- **Niet:** een sentiment-scraper, geen LLM die koopt, geen X/Reddit-feed. Events worden
-  gestructureerd ingevoerd (pair, kind, direction, confidence, magnitude, n_sources,
-  published). De bot beslist zelf te handelen wanneer een event door de confidence-poort
-  én de risk engine komt.
+- **Wel:** een **proactieve** event-gedreven bot. Basisstrategie `hold` (geeft zelf geen
+  signaal); hij **zoekt zelf** publieke crypto-nieuwskoppen (RSS) en zet ze deterministisch
+  om naar events → `to_trade_signals` → risk engine. Niet tijdgebonden: hij handelt zodra er
+  relevant nieuws is. Elke kop vuurt één keer als trade-voorstel en blijft daarna als factor
+  meetellen. Kan de bestaande coins ook verkopen bij negatief nieuws. Gedachtegang (welke kop
+  → welke coin → waarom) staat op het dashboard.
+- **Niet:** geen LLM die koopt, geen X/Reddit/YouTube-scraping. Alleen nieuws-RSS met een
+  **transparante, inspecteerbare trefwoord/entiteit-mapping** (coin-termen → pair; bullish/
+  bearish-woordenlijsten → richting). Handmatige events blijven mogelijk naast de auto-feed.
+
+## Wat er expliciet getoetst wordt
+De **kwaliteit van de kop→richting-mapping** is bewust ruw. Dat is het punt: de forward-only
+leerlus rekent elke nieuws-richting af tegen de werkelijke excess-beweging (na kosten, per
+regime, FDR-bewaakt). Blijkt de mapping niets te voorspellen → status *onbewezen*, geen
+gewicht, en de bron sneuvelt. Zo test de machine of "proactief nieuws zoeken" iets oplevert,
+zonder dat de ruwheid van de mapping tot vals vertrouwen leidt.
 
 ## De harde grens: forward-only
 Nieuws is **niet backtestbaar** — een model getoetst op oud nieuws kent de afloop al
@@ -56,4 +64,8 @@ bron onder deze randvoorwaarden geen overtuigende edge gaf.
   De bestaande risk engine + research-gating vervullen de veto-rol al.
 
 ## Wijzigingslog
-(leeg — nog geen wijzigingen)
+- **Uitbreiding (proactieve feed):** de bot haalt nu zélf nieuws op (RSS) i.p.v. alleen
+  handmatig ingevoerde events. Reden: gebruikersverzoek om proactief naar rendabel nieuws te
+  zoeken. Dit versoepelt géén acceptatiecriterium — de forward-only lat (n≥100, netto-edge na
+  FDR, regime-stabiel, geen drawdown-schade) blijft ongewijzigd; er komt alleen een extra,
+  automatische bron van dezelfde soort events bij, die langs exact dezelfde poorten gaat.

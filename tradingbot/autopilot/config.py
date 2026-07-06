@@ -112,13 +112,21 @@ class ResearchConfig(BaseModel):
     model_config = ConfigDict(extra="forbid")
 
     enabled: bool = False
-    agent: Literal["rulebased"] = "rulebased"   # 'llm' komt later; nu alleen deterministisch
+    # 'rulebased' = handmatig events-bestand; 'newsfeed' = zelf publieke nieuwskoppen ophalen.
+    agent: Literal["rulebased", "newsfeed"] = "rulebased"
     min_confidence: float = Field(default=0.6, ge=0, le=1,
                                   description="Onder deze zekerheid wordt een voorstel genegeerd")
     max_position_eur: float = Field(default=25, gt=0,
                                     description="Bovengrens per research-voorstel (risk engine kan verder verkleinen)")
     events_file: str = Field(default="research_events.json",
-                             description="(rulebased) lokaal bestand met gestructureerde events")
+                             description="lokaal bestand met handmatige gestructureerde events")
+    sources: list[str] = Field(
+        default_factory=lambda: ["https://cointelegraph.com/rss",
+                                 "https://decrypt.co/feed",
+                                 "https://www.coindesk.com/arc/outboundfeeds/rss/"],
+        description="(newsfeed) RSS-bronnen met crypto-nieuwskoppen")
+    fetch_minutes: int = Field(default=10, ge=1, le=24 * 60,
+                               description="(newsfeed) hoogstens één keer per zoveel minuten ophalen")
 
 
 class SeedConfig(BaseModel):

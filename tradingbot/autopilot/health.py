@@ -76,6 +76,22 @@ def diagnostics(db, cfg, mode: str, now: datetime | None = None) -> dict:
     else:
         add("Concept-drift", "ok", "geen kantelende factoren")
 
+    # 5b. nieuwsfeed — zoekt de nieuwsbot nog actief nieuws?
+    if getattr(cfg, "research", None) and cfg.research.enabled and cfg.research.agent == "newsfeed":
+        try:
+            from . import newsfeed
+            data = newsfeed._load(cfg)
+            fresh = newsfeed.load_auto_events(cfg, now)
+            f_age = _age_min(data.get("fetched_at"), now)
+            if f_age is None:
+                add("Nieuwsfeed", "info", "nog niet opgehaald (start bij de eerste cyclus)")
+            elif f_age > 45:
+                add("Nieuwsfeed", "warn", f"geen ophaal in {round(f_age)} min — bronnen bereikbaar?")
+            else:
+                add("Nieuwsfeed", "ok", f"{len(fresh)} actieve kop(pen) · opgehaald {round(f_age)} min geleden")
+        except Exception:  # noqa: BLE001
+            pass
+
     # 6. beslis-zekerheid — zakt de confidence structureel weg?
     recs = db.recent_decisions(30)
     confs = [r.get("confidence") for r in recs if isinstance(r.get("confidence"), (int, float))]

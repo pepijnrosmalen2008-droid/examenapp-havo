@@ -271,6 +271,24 @@ infrastructuur, geen nieuwe informatie — de risk engine + research-gating verv
 veto-rol al). Deze staan met reden op SPP_ROADMAP.md. Zo blijft de discipline overeind:
 alleen de stap die écht nieuwe informatie test mag erdoor.
 
+## D29 — Nieuwsbot wordt proactief (zelf nieuws ophalen)
+
+Verzoek: de nieuwsbot moet altijd kunnen handelen (niet tijdgebonden), zeggen waarom hij
+koopt, de bestaande coins mogen verhandelen, en zelf proactief naar rendabel nieuws zoeken.
+Conditie B (nieuwe informatiebron), dus toegestaan. Gebouwd: `newsfeed.py` — haalt publieke
+crypto-RSS op en zet koppen **deterministisch** (trefwoord/entiteit-mapping, geen LLM, geen
+social-scraping) om naar events. Elke kop vuurt één keer als trade-voorstel (dedup via hash),
+blijft daarna als factor meetellen, en gaat altijd door de confidence-poort + risk engine.
+De bot is niet tijdgebonden (basis `hold`, geen koop-cyclus) en kan bij negatief nieuws ook
+verkopen. `research.agent` uitgebreid met `newsfeed` + velden `sources`/`fetch_minutes`;
+`load_events` merget de auto-events in de gedachtegang; zelfdiagnose krijgt een
+nieuwsfeed-versheidscheck. Auto-events in `news_auto_<bot_id>.json` (gitignored).
+
+Discipline bewaakt: de ruwe kop→richting-mapping wordt bewust niet vertrouwd — de forward-
+only leerlus (excess na kosten, FDR, regime, drift) rekent 'm af; de acceptatiecriteria in
+experiments/2026_news_event_bot.md blijven ongewijzigd. "Waarom hij koopt" = de kop zelf,
+zichtbaar als reden in de trade + externe factor + beslissingspaneel.
+
 ## D22 — Meerdere bots naast elkaar + seed-portefeuille
 
 Om strategieën eerlijk te vergelijken kan de bot met `--config` draaien; elke config
