@@ -1,9 +1,36 @@
-# S++ roadmap — van goed onderzoeksplatform naar zelfcorrigerend systeem
+# S++ roadmap — een falsificatie-machine voor kwantitatieve handelshypotheses
 
-Op basis van de gap-analyse. Leidend principe: richting S++ gaat het **niet** om meer
-factoren of AI die handelt, maar om **adaptiviteit, statistische strengheid,
-uitlegbaarheid en reproduceerbaarheid**. Alles wat hieronder gebouwd wordt, is
-deterministisch, getoetst en **zichtbaar op het dashboard** (slagio.nl/bot.html).
+Wat dit project inmiddels is, treffender dan "trading bot": **een falsificatie-machine voor
+kwantitatieve handelshypotheses.** Het bevestigt niet, het verwerpt — reproduceerbaar.
+
+## Volwassenheidsfasen (niet features, maar fasen)
+
+| Fase | Doel | Klaar | Bouwbeleid |
+|---|---|:--:|---|
+| **1 · Infrastructure** | de machine mag nooit liegen (crash-safe, risk, governance, tests, self-diagnostics, reproduceerbaarheid) | ~98% | **alleen bij een bug** |
+| **2 · Measurement** | de werkelijkheid correct meten (forward learning, overlap, opportunity cost, regime, significantie, FDR, drift) | ~90% | **alleen bij een bewezen meetfout** |
+| **3 · Information** | héb ik informatie die de markt nog niet verwerkt heeft? | ~35% | **ja — hier zit de winst** |
+| **4 · Allocation** | hoeveel risico verdient elk idee? | ~20% | **ja** |
+
+Fase 1 en 2 zijn géén bottleneck meer. De afstand tot S++ zit in fase 3 (informatie) en
+fase 4 (allocatie) — en die zijn moeilijk om inhoudelijke, niet om softwarematige redenen.
+
+## De 80/20 bouw-gate (dwingend)
+
+Elke voorgestelde toevoeging krijgt vooraf een fase-label; het label bepaalt of het mag:
+
+| Type | Mag gebouwd worden? |
+|---|---|
+| Infrastructure | alleen bij een bug |
+| Measurement | alleen bij een bewezen meetfout |
+| **Information** | **ja** |
+| **Allocation** | **ja** |
+
+Concreet: "misschien nog een confidence-metric / dashboard-paneel / risk-module / kill-switch
+/ governance-doc erbij" → automatisch **nee**. Niet omdat het slecht is, maar omdat het niet
+meer de bottleneck is. Expliciet bevroren ("goed genoeg", raak niet meer aan): explainability,
+dashboard-uitbreidingen, nieuwe governance-documenten, nieuwe statistische maten, extra
+risk-modules of kill-switches.
 
 ## De leidende vraag bij ELK nieuw onderdeel (governance-gate)
 
