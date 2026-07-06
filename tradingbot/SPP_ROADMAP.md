@@ -15,22 +15,36 @@ kwantitatieve handelshypotheses.** Het bevestigt niet, het verwerpt — reproduc
 Fase 1 en 2 zijn géén bottleneck meer. De afstand tot S++ zit in fase 3 (informatie) en
 fase 4 (allocatie) — en die zijn moeilijk om inhoudelijke, niet om softwarematige redenen.
 
-## De 80/20 bouw-gate (dwingend)
+## Moratorium (dwingend, geldt vanaf nu)
 
-Elke voorgestelde toevoeging krijgt vooraf een fase-label; het label bepaalt of het mag:
+**Geen nieuwe code tenzij ze aan minstens één van deze drie voldoet:**
 
-| Type | Mag gebouwd worden? |
-|---|---|
-| Infrastructure | alleen bij een bug |
-| Measurement | alleen bij een bewezen meetfout |
-| **Information** | **ja** |
-| **Allocation** | **ja** |
+- **A — bewezen bug.** Verkeerde statistiek, verkeerde edge-definitie, leakage, crash,
+  verkeerde risk-berekening. Mag altijd.
+- **B — nieuwe informatiebron.** Echt nieuw (funding, basis, opties, on-chain, …), geen
+  extra indicator of variant op prijs.
+- **C — slimmere kapitaalallocatie op basis van *bewezen* informatie** (fase 4).
 
-Concreet: "misschien nog een confidence-metric / dashboard-paneel / risk-module / kill-switch
-/ governance-doc erbij" → automatisch **nee**. Niet omdat het slecht is, maar omdat het niet
-meer de bottleneck is. Expliciet bevroren ("goed genoeg", raak niet meer aan): explainability,
-dashboard-uitbreidingen, nieuwe governance-documenten, nieuwe statistische maten, extra
-risk-modules of kill-switches.
+Alles daarbuiten: **niet bouwen.** Concreet automatisch **nee**: nog een confidence-metric,
+dashboard-paneel, risk-module, kill-switch, governance-doc, statistische maat. Niet omdat het
+slecht is, maar omdat het niet meer de bottleneck is. De bottleneck ligt niet meer in de
+software — bijna elk programmeer-uur levert nu minder op dan een uur nadenken over *welke
+informatie ontbreekt*.
+
+## Output-maat: Research Velocity (niet code, niet commits)
+
+De waarde van het platform is niet code of features, maar **betrouwbare kennis**: hoeveel
+hypotheses zijn deze maand definitief bevestigd of verworpen? De ledger bestaat al —
+`experiments/` (pre-registraties), `REJECTED_HYPOTHESES.md` (verworpen, met OOS-cijfers),
+`PROMOTION_CRITERIA.md` (gepromoveerd). Vullen gebeurt door de paper-bots te laten draaien en
+te concluderen, niet door te bouwen.
+
+## Succesdefinitie (herzien)
+
+> Niet "een bot die winst maakt", maar **een platform dat met zo min mogelijk zelfbedrog
+> vaststelt óf er onder deze randvoorwaarden een reproduceerbare handelsedge bestaat.**
+> Een uiteindelijke "nee" is een legitieme, waardevolle uitkomst — het bewijs dat de machine
+> streng genoeg was om een aantrekkelijke maar onbewezen hypothese niet door te laten.
 
 ## De leidende vraag bij ELK nieuw onderdeel (governance-gate)
 
