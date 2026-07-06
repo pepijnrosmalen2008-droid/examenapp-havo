@@ -254,6 +254,23 @@ herrangschikt naar dit doel (retail-Bitvavo, klein kapitaal): portfolio → exec
 reliability → lineage → meta-learning → calibration → Bayesian → research-automation →
 datalake. Multi-source datalake bewust verlaagd: meer bronnen ≠ betere research.
 
+## D28 — Nieuws-/event-bot (conditie B) — en het moratorium toegepast op de rest
+
+Voorstel: bots 5/6/7 (regime-brain, execution-auditor, nieuwsbot) + conflict-engine.
+Langs de A/B/C-poort blijft er precies één over. **Gebouwd — nieuwsbot (conditie B, nieuwe
+niet-prijs informatiebron):** basisstrategie `hold` (geeft zelf geen signaal) + de bestaande
+research-laag, zodat álle trades uit gestructureerde events komen (`research_events.json` →
+gating → risk engine). Forward-only (nieuws is niet backtestbaar door leakage), pre-registratie
+in `experiments/2026_news_event_bot.md`, gedachtegang al zichtbaar op het dashboard. Config
+`config.news.yaml`, strategie-literal uitgebreid met `hold`.
+
+**Niet gebouwd (moratorium):** een aparte regime-bot (het regime wordt al bepaald én per
+observatie vastgelegd — categorie 2/measurement); een execution-auditor (in PAPER echoot de
+fill enkel de modelslippage → pas zinvol in SHADOW/LIVE); een conflict-engine (decision-
+infrastructuur, geen nieuwe informatie — de risk engine + research-gating vervullen de
+veto-rol al). Deze staan met reden op SPP_ROADMAP.md. Zo blijft de discipline overeind:
+alleen de stap die écht nieuwe informatie test mag erdoor.
+
 ## D22 — Meerdere bots naast elkaar + seed-portefeuille
 
 Om strategieën eerlijk te vergelijken kan de bot met `--config` draaien; elke config

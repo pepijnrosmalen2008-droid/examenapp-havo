@@ -56,7 +56,7 @@ def register(cls: type[Strategy]) -> type[Strategy]:
 
 def get_strategy(cfg: AppConfig, db: Database) -> Strategy:
     # Imports hier om circulaire imports te vermijden; registreert de implementaties.
-    from . import dca, ma_cross, grid, cross_sectional, vol_target  # noqa: F401
+    from . import dca, ma_cross, grid, cross_sectional, vol_target, hold  # noqa: F401
     name = cfg.strategy.name
     if name not in _REGISTRY:
         raise ValueError(f"Onbekende strategie '{name}'. Beschikbaar: {sorted(_REGISTRY)}")

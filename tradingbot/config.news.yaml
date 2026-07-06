@@ -1,0 +1,56 @@
+# Bot 5 — Nieuws / event-bot. PAPER. (Conditie B: nieuwe informatiebron = niet-prijs.)
+#
+# Handelt NIET op koers, maar op gestructureerde events uit research_events.json
+# (nieuws, macro, smart money). Basisstrategie 'hold' geeft zelf geen enkel signaal;
+# álle trades komen van de research-laag en gaan verplicht door de risk engine.
+# Zijn gedachtegang staat op slagio.nl/bot.html (externe factoren + beslissingspaneel
+# + wat-als). Forward-only: nieuws is niet backtestbaar (leakage), alleen live te toetsen —
+# zie experiments/2026_news_event_bot.md voor de vooraf vastgelegde criteria.
+#
+# Events invoeren:  kopieer research_events.example.json → research_events.json en vul
+# 'm met echte events (pair, kind, direction, confidence, magnitude, n_sources, published).
+# Draaien:  py bot.py --config config.news.yaml
+
+mode: PAPER
+bot_id: news
+capital_eur: 158
+
+pairs: [BTC-EUR, ETH-EUR, MOODENG-EUR]
+
+seed:
+  enabled: true
+  eur: 40                     # cash om nieuws-koopjes mee te doen
+  holdings:
+    MOODENG-EUR: 96
+    ETH-EUR: 15.70
+    BTC-EUR: 5.76
+
+risk:
+  max_position_pct: 25
+  stop_loss_pct: 15           # nieuws-trades hebben een korte houdbaarheid → strak
+  take_profit_pct: 20
+  max_daily_loss_pct: 15
+  max_drawdown_pct: 40
+  max_portfolio_heat_pct: null
+
+strategy:
+  name: hold                  # geen prijssignalen; de nieuws-laag beslist
+  params: {}
+
+# de nieuws-laag: stelt trades VOOR op basis van events; risk engine kan verkleinen/blokkeren
+research:
+  enabled: true
+  agent: rulebased
+  min_confidence: 0.6         # onder deze zekerheid negeert hij een event
+  max_position_eur: 25        # bovengrens per nieuws-voorstel (risk engine kan verder knijpen)
+  events_file: research_events.json
+
+schedule:
+  interval_minutes: 15
+
+universe:
+  enabled: false              # bewust de vaste mand; nieuws draait om déze coins
+
+costs:
+  taker_fee_pct: 0.25
+  slippage_pct: 0.1
