@@ -235,7 +235,7 @@ def build_payload(db: Database, cfg, mode: str) -> dict:
                    for b in db.conn.execute(
                        "SELECT ts, pair, reason FROM risk_decisions WHERE allowed=0 "
                        "ORDER BY id DESC LIMIT 12")],
-        "thinking": _thinking(db),
+        "thinking": _thinking(db, cfg),
         "updated": utcnow(),
     }
 
@@ -247,15 +247,26 @@ FACTOR_LABELS = {
 }
 
 
-def _thinking(db: Database) -> dict:
+def _factor_label(key: str) -> str:
+    """Label voor een (mogelijk samengestelde) factor-key, bv. 'smart_money:trump'."""
+    kind, _, attr = key.partition(":")
+    base = FACTOR_LABELS.get(kind, kind)
+    return f"{base} · {attr.replace('_', ' ').title()}" if attr else base
+
+
+def _thinking(db: Database, cfg) -> dict:
     """Gedachtegang voor de site: laatste beslissing (met factoren + confidence),
-    korte historie, en de geleerde betrouwbaarheid per factor (forward-only)."""
+    korte historie, en het factor-track-record (forward-only): accuracy, netto-edge
+    (na kosten) en status — factoren verdienen hun plek op gemeten prestatie."""
+    from . import factor_learning as fl
+
     recs = db.recent_decisions(20)
-    rel = db.factor_reliabilities()
+    rel = fl.enrich(db.factor_reliabilities(), fl.roundtrip_cost(cfg))
     reliability = sorted(
-        ({"key": k, "label": FACTOR_LABELS.get(k, k), "precision": v["precision"],
-          "n": v["n"], "avg_edge": v["avg_edge"]} for k, v in rel.items()),
-        key=lambda r: (-r["n"], -r["precision"]))
+        ({"key": k, "label": _factor_label(k), "precision": v["precision"], "n": v["n"],
+          "avg_edge": v["avg_edge"], "net_edge": v["net_edge"], "status": v["status"]}
+         for k, v in rel.items()),
+        key=lambda r: (-r["n"], -r["net_edge"]))
     if not recs:
         return {"latest": None, "history": [], "reliability": reliability}
     history = [{"ts": r["ts"], "stance": r["stance"], "headline": r["headline"]}

@@ -28,8 +28,59 @@ def reliability_multiplier(precision: float) -> float:
     """Betrouwbaarheid (0..1, krimp naar 0,5) → gewichtsvermenigvuldiger.
 
     0,5 (geen bewijs) → 1,0 (ongewijzigd). Hoger tilt op tot ~1,6; lager knijpt af
-    tot ~0,4. Door de krimp in de precisie beweegt dit pas echt bij voldoende data."""
+    tot ~0,4. Door de krimp in de precisie beweegt dit pas echt bij voldoende data.
+    Alleen gebruikt als terugval zolang er nog geen edge-cijfer is."""
     return max(0.4, min(1.6, 1.0 + (precision - 0.5) * 3.0))
+
+
+# Vanaf hoeveel observaties de edge het gewicht mag sturen (daaronder krimp naar 1,0).
+EDGE_CONFIDENCE_N = 30
+
+
+def weight_multiplier(avg_edge: float, n: int, roundtrip_cost: float) -> float:
+    """Effectieve gewichtsvermenigvuldiger op basis van de **netto verwachte return**
+    (na kosten), niet op accuracy. Een factor die vaker goed dan fout zit maar door
+    fees/spread/slippage tóch geld verliest, verdient géén hoger gewicht.
+
+    net_edge = gemiddelde (return × teken score) − round-trip-kosten. 0 → 1,0;
+    positief tilt op tot ~1,6; negatief knijpt af tot ~0,3. Met weinig data schuift
+    het resultaat naar 1,0 (we geloven een edge pas na genoeg observaties)."""
+    net = avg_edge - roundtrip_cost
+    edge_mult = max(0.3, min(1.6, 1.0 + net * 60.0))   # +1%/obs netto → ~1,6; −1% → 0,4
+    blend = n / (n + EDGE_CONFIDENCE_N) if n >= 0 else 0.0
+    return 1.0 * (1 - blend) + edge_mult * blend
+
+
+def factor_status(avg_edge: float, n: int, roundtrip_cost: float) -> str:
+    """Track-record-status à la factor-competitie: verdient de factor zijn plek?"""
+    net = avg_edge - roundtrip_cost
+    if n < 20:
+        return "observeren"          # onvoldoende data
+    if net > 0.001:
+        return "actief"              # positieve netto-edge
+    if net >= -0.001:
+        return "voorzichtig"         # rond nul
+    if n >= 60 and net <= -0.003:
+        return "uitgeschakeld"       # structureel negatief, veel data
+    return "verzwakt"
+
+
+def enrich(rel: dict[str, dict], roundtrip_cost: float) -> dict[str, dict]:
+    """Voeg netto-edge, gewichts-multiplier en status toe aan de ruwe betrouwbaarheden."""
+    out: dict[str, dict] = {}
+    for k, v in rel.items():
+        ae, n = v.get("avg_edge", 0.0), v.get("n", 0)
+        out[k] = {**v,
+                  "net_edge": round(ae - roundtrip_cost, 4),
+                  "weight_mult": round(weight_multiplier(ae, n, roundtrip_cost), 3),
+                  "status": factor_status(ae, n, roundtrip_cost)}
+    return out
+
+
+def roundtrip_cost(cfg) -> float:
+    """Round-trip-kosten als fractie: (koop + verkoop) × (fee + slippage)."""
+    c = cfg.costs
+    return 2.0 * (c.taker_fee_pct + c.slippage_pct) / 100.0
 
 
 def grade_due(db, prices: dict[str, float], now: datetime) -> int:

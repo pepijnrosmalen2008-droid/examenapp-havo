@@ -61,6 +61,49 @@ def test_reliability_changes_effective_weight(db):
     assert mom_low.reliability == 0.3 and mom_low.n_obs == 100
 
 
+def test_weight_multiplier_uses_net_edge_not_accuracy():
+    cost = 0.007  # ~round-trip
+    # ruime data, positieve netto-edge → opgetild
+    assert fl.weight_multiplier(0.02, 200, cost) > 1.1
+    # ruime data, negatieve netto-edge → afgeknepen (ook al 'klopt de richting' vaak)
+    assert fl.weight_multiplier(-0.02, 200, cost) < 0.9
+    # weinig data → dicht bij 1,0 (nog geen bewijs)
+    assert abs(fl.weight_multiplier(0.02, 2, cost) - 1.0) < 0.1
+
+
+def test_factor_status_thresholds():
+    cost = 0.007
+    assert fl.factor_status(0.05, 5, cost) == "observeren"
+    assert fl.factor_status(0.02, 100, cost) == "actief"
+    assert fl.factor_status(-0.02, 100, cost) == "uitgeschakeld"
+
+
+def test_enrich_adds_net_edge_and_status(db):
+    db.conn.execute("INSERT INTO factor_stats(factor_key,n,hits,sum_edge) VALUES('momentum',100,60,2.0)")
+    db.conn.commit()
+    rel = fl.enrich(db.factor_reliabilities(), 0.007)
+    assert "net_edge" in rel["momentum"] and "status" in rel["momentum"]
+    assert rel["momentum"]["net_edge"] == round(0.02 - 0.007, 4)
+
+
+def test_positive_edge_outweighs_high_accuracy_negative_edge():
+    candles = {"AAA-EUR": ramp(100, 1)}
+    # momentum: hoge accuracy maar netto verlieslatend; trend: nette positieve edge
+    rel = fl.enrich({"momentum": {"precision": 0.7, "n": 200, "avg_edge": -0.02},
+                     "trend": {"precision": 0.55, "n": 200, "avg_edge": 0.02}}, 0.007)
+    reads = compute_reads(candles, ["AAA-EUR"], NOW, reliabilities=rel)
+    facs = {f.key: f for f in reads["AAA-EUR"].factors}
+    assert facs["trend"].weight_effective > facs["momentum"].weight_effective
+
+
+def test_external_entity_gets_own_factor_key():
+    events = [{"pair": "AAA-EUR", "kind": "smart_money", "entity": "Musk",
+               "direction": 1, "confidence": 0.6, "rationale": "post"}]
+    reads = compute_reads({"AAA-EUR": ramp(100, 0)}, ["AAA-EUR"], NOW, events=events)
+    keys = {f.key for f in reads["AAA-EUR"].factors}
+    assert "smart_money:musk" in keys
+
+
 def test_overextended_dampens_bullish_news():
     calm = compute_reads({"AAA-EUR": ramp(100, 0)}, ["AAA-EUR"], NOW, events=flat_events())
     hot = compute_reads({"AAA-EUR": ramp(100, 3)}, ["AAA-EUR"], NOW, events=flat_events())

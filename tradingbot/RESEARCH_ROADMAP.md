@@ -68,6 +68,31 @@ allocatie zegt *hoeveel*, en veel professioneel rendement komt uit de tweede vra
   verlaagt de drawdown, of niet — allebei informatief). Zelfde teststraat, geen
   soepelere eisen.
 
+## Beslislaag & factor-competitie (gebouwd + geparkeerd)
+
+De beslislaag staat los van de handelsstrategieën: hij meet welke informatie *lijkt* te
+werken, maar geeft niets invloed op orders tot de data het verdient. **Gebouwd:** per
+factor een forward-only track record met accuracy én **netto verwachte return na kosten**
+(fees+spread+slippage) — want reliability ≠ edge; een factor kan 58% raak zitten en tóch
+geld verliezen. De netto-edge (niet accuracy) stuurt het effectieve gewicht; elke
+bron/persoon (Reuters, Fed, Trump, Musk) krijgt een eigen key en verdient zo zelf zijn
+plek (status: observeren → voorzichtig → actief → verzwakt → uitgeschakeld). Trump/Musk
+zijn dus niet vooraf "belangrijk"; blijkt hun netto-edge negatief, dan verdwijnen ze
+vanzelf. Externe factoren worden context-gedempt (RSI/afstand tot gemiddelde).
+
+**Bewust geparkeerd — pas ná maanden data, niet nu (meer factoren ≠ vooruitgang):**
+
+| # | Idee | Waarom later |
+|---|---|---|
+| L1 | **Leren op verwachte return per horizon** (30 min / 6u / 24u / 3d) i.p.v. één vaste 24u | vermenigvuldigt de databehoefte; eerst één horizon volmaken |
+| L2 | **Bronbetrouwbaarheid fijnmaziger** (per outlet/account) | mechanisme staat er (per-entity keys); heeft alleen véél observaties nodig |
+| L3 | **Factor-interacties** (trend+momentum+volume samen ≠ som der delen) | conditionele effecten vereisen een grote, schone dataset; hoog risico op overfitten |
+| L4 | **Volwaardige factor-competitie** met auto-promotie/degradatie naar order-invoer | pas als L1–L3 en het promotieprotocol (≥100 obs/bron, netto-edge OOS) gehaald zijn |
+
+De eerstvolgende stap is **geen nieuwe factor** maar tijd: de bestaande factoren maanden
+laten meten tot er honderden observaties zijn. Pas dan is "welke informatie voegt echt
+iets toe boven prijs?" een eerlijk te beantwoorden vraag.
+
 ## Aangescherpt einddoel
 
 Het oorspronkelijke doel ("een bot die 24/7 autonoom handelt en buy-and-hold verslaat")

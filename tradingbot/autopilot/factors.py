@@ -212,41 +212,49 @@ def _event_strength(ev: dict, now: datetime) -> float:
     return _clip(conf * mag * src_trust * fresh)
 
 
+def _slug(s: str) -> str:
+    return "".join(c if c.isalnum() else "_" for c in s.lower()).strip("_")[:24]
+
+
 def _external_factors(pair: str, events: list[dict], now: datetime, weights: dict,
                       extension: float) -> list[FactorScore]:
     """Zet gestructureerde events om naar externe factoren. Elk event:
       {"pair":"BTC-EUR"|"*", "kind":"news"|"macro"|"smart_money",
        "direction":-1|0|1, "confidence":0..1, "rationale":"...",
-       "magnitude"?, "n_sources"?, "published"?, "expires"?}
+       "entity"?, "source"?, "magnitude"?, "n_sources"?, "published"?, "expires"?}
     '*' = geldt voor alle coins (bv. wereldnieuws).
 
+    Elke bron/persoon krijgt zijn EIGEN factor (key `kind:entity`), zodat de leerlus per
+    entiteit een track record opbouwt: Trump, Musk, Reuters en de Fed verdienen los hun
+    plek op basis van gemeten netto-edge — niemand is vooraf 'belangrijk'.
+
     Context: een bullish extern signaal wordt gedempt als de coin al fors is opgelopen
-    (hoge `extension`), en andersom — dezelfde tweet weegt anders bij +18% dan bij -18%."""
+    (hoge `extension`) — dezelfde tweet weegt anders bij +18% dan bij -18%."""
     base = pair.split("-")[0]
-    buckets: dict[str, list[dict]] = {"news": [], "macro": [], "smart_money": []}
+    groups: dict[tuple[str, str], list[dict]] = {}
     for ev in events:
         kind = str(ev.get("kind", "news"))
-        if kind not in buckets:
+        if kind not in ("news", "macro", "smart_money"):
             continue
         tgt = str(ev.get("pair", "*"))
         if tgt not in ("*", pair, base):
             continue
-        buckets[kind].append(ev)
+        attr = str(ev.get("entity") or ev.get("source") or "").strip()
+        groups.setdefault((kind, attr), []).append(ev)
 
     out: list[FactorScore] = []
-    for kind, evs in buckets.items():
-        if not evs:
-            continue
+    for (kind, attr), evs in groups.items():
         num = sum(int(e.get("direction", 0)) * _event_strength(e, now) for e in evs)
         den = sum(_event_strength(e, now) for e in evs) or 1.0
         score = _clip(num / den)
-        # context-demping: signaal dat mét de over-/onderwaardering meebeweegt telt minder
         damp = 1.0 - 0.5 * _clip(score * extension)   # zelfde teken → tot 50% demping
         score *= damp
         top = max(evs, key=lambda e: _event_strength(e, now))
         why = str(top.get("rationale", "")).strip() or f"{len(evs)} event(s)"
         ctx = " · gedempt (koers al uitgerekt)" if damp < 0.9 else ""
-        out.append(FactorScore(kind, *FACTOR_LABELS[kind][:2], score=score,
+        key = f"{kind}:{_slug(attr)}" if attr else kind
+        label = FACTOR_LABELS[kind][0] + (f" · {attr}" if attr else "")
+        out.append(FactorScore(key, label, "external", score=score,
                                weight=weights[kind], detail=f"{why} ({len(evs)}×){ctx}"))
     return out
 
@@ -293,12 +301,16 @@ def compute_reads(candles: dict[str, list[Candle]], pairs: list[str], now: datet
         if not factors:
             continue
 
-        # geleerde betrouwbaarheid → effectief gewicht per factor
+        # geleerde prestatie → effectief gewicht per factor. Bij voorkeur op basis van
+        # de netto verwachte return (weight_mult, na kosten); anders terugval op accuracy.
         for f in factors:
             info = rel.get(f.key, {})
             f.reliability = float(info.get("precision", 0.5))
             f.n_obs = int(info.get("n", 0))
-            f.weight_effective = f.weight * _reliability_multiplier(f.reliability)
+            mult = info.get("weight_mult")
+            if mult is None:
+                mult = _reliability_multiplier(f.reliability)
+            f.weight_effective = f.weight * float(mult)
 
         tw = sum(f.weight_effective for f in factors) or 1.0
         conviction = sum(f.score * f.weight_effective for f in factors) / tw

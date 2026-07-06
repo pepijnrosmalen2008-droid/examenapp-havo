@@ -136,12 +136,18 @@ svg { display:block; width:100%; height:auto; touch-action:none }
 .whynot ul { margin:0; padding-left:18px } .whynot li { font-size:13px; color:var(--ink2); margin:2px 0 }
 .relboard { margin-top:14px; border-top:1px solid var(--grid); padding-top:12px }
 .relboard .rl { font-size:12px; font-weight:700; color:var(--muted); text-transform:uppercase; letter-spacing:.04em; margin-bottom:8px }
-.relrow { display:grid; grid-template-columns:120px 1fr 78px; align-items:center; gap:10px; padding:5px 2px; font-size:12px }
-.relrow .rn { font-weight:600 }
-.relbar { height:6px; background:var(--grid); border-radius:9px; position:relative }
-.relbar .mid { position:absolute; left:50%; top:-2px; bottom:-2px; width:1px; background:var(--axis) }
-.relbar > i { position:absolute; top:0; height:100%; border-radius:9px }
-.relrow .rm { text-align:right; color:var(--muted); font-variant-numeric:tabular-nums }
+.reltbl { width:100%; border-collapse:collapse; font-size:12px }
+.reltbl th { text-align:right; font-weight:600; color:var(--muted); padding:4px 6px; font-size:11px }
+.reltbl th:first-child { text-align:left }
+.reltbl td { padding:6px 6px; border-top:1px solid var(--grid); text-align:right; font-variant-numeric:tabular-nums }
+.reltbl td:first-child { text-align:left; font-weight:600 }
+.reltbl td.pos { color:var(--up) } .reltbl td.neg { color:var(--down) }
+.sbadge { font-size:11px; font-weight:700; padding:2px 8px; border-radius:99px; white-space:nowrap }
+.sb-actief { background:color-mix(in srgb,var(--up) 16%,transparent); color:var(--up) }
+.sb-voorzichtig { background:color-mix(in srgb,var(--warn) 18%,transparent); color:var(--warn) }
+.sb-verzwakt { background:color-mix(in srgb,var(--down) 14%,transparent); color:var(--down) }
+.sb-uitgeschakeld { background:color-mix(in srgb,var(--down) 22%,transparent); color:var(--down) }
+.sb-observeren { background:var(--chip); color:var(--muted) }
 .read .conf-mini { margin-left:6px; font-size:11px; color:var(--muted); font-weight:600 }
 
 .stopbox { border:1px solid var(--down); border-radius:16px; padding:16px; margin-top:26px }
@@ -377,19 +383,26 @@ function renderThinking(){
       vooruit te toetsen, niet backtestbaar, en gaat nooit rechtstreeks een order in.</div>`;
 }
 
+const netpct = x => (x>=0?'+':'−')+Math.abs(x*100).toFixed(2)+'%';
 function renderReliability(rel){
   const rows=(rel||[]).filter(r=>r.n>0);
-  if(!rows.length) return `<div class="relboard"><div class="rl">Geleerde betrouwbaarheid</div>
-    <div class="mut" style="font-size:12px">nog te weinig afgerekende observaties — betrouwbaarheid wordt vanaf ~1 dag opgebouwd (forward-only)</div></div>`;
-  return `<div class="relboard"><div class="rl">Geleerde betrouwbaarheid per factor <span class="mut" style="font-weight:400;text-transform:none">(forward-only, precisie vs. muntworp 50%)</span></div>
-    ${rows.map(r=>{
-      const p=r.precision, above=p>=0.5, w=Math.min(50,Math.abs(p-0.5)*100), left=above?50:50-w;
-      const col=above?'var(--up)':'var(--down)';
-      return `<div class="relrow">
-        <span class="rn">${esc(r.label)}</span>
-        <span class="relbar"><span class="mid"></span><i style="left:${left}%;width:${w}%;background:${col}"></i></span>
-        <span class="rm">${Math.round(p*100)}% · n=${r.n}</span>
-      </div>`;}).join('')}</div>`;
+  if(!rows.length) return `<div class="relboard"><div class="rl">Factor-track record</div>
+    <div class="mut" style="font-size:12px">nog te weinig afgerekende observaties — het track record wordt vanaf ~1 dag opgebouwd (forward-only). Elke factor verdient zijn plek op <b>netto rendement na kosten</b>, niet op accuracy.</div></div>`;
+  return `<div class="relboard"><div class="rl">Factor-track record <span class="mut" style="font-weight:400;text-transform:none">(forward-only · netto na kosten bepaalt het gewicht)</span></div>
+    <div style="overflow-x:auto"><table class="reltbl">
+      <thead><tr><th>Factor</th><th>Obs.</th><th>Accuracy</th><th>Netto/obs</th><th>Status</th></tr></thead>
+      <tbody>${rows.map(r=>{
+        const nc=r.net_edge>=0?'pos':'neg';
+        const st=esc(r.status||'observeren');
+        return `<tr>
+          <td>${esc(r.label)}</td>
+          <td>${r.n}</td>
+          <td>${Math.round(r.precision*100)}%</td>
+          <td class="${nc}">${r.n>=20?netpct(r.net_edge):'—'}</td>
+          <td><span class="sbadge sb-${st}">${st}</span></td>
+        </tr>`;}).join('')}</tbody>
+    </table></div>
+    <div class="mut" style="font-size:11px;margin-top:8px">"Accuracy" = hoe vaak de richting klopte. "Netto/obs" = gemiddelde koersbeweging in de factor-richting ná fees+spread+slippage — dít stuurt het gewicht, want een factor kan 58% raak zitten en tóch geld verliezen.</div></div>`;
 }
 
 function renderRead(r){

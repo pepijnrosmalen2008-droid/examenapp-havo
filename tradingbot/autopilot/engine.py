@@ -399,7 +399,8 @@ class TradingEngine:
                 fl.grade_due(self.db, prices, now)
 
             events = load_events(self.cfg, now) if self.cfg.research.enabled else []
-            reliabilities = self.db.factor_reliabilities()
+            # betrouwbaarheden verrijken met netto-edge (na kosten) → gewicht op edge, niet accuracy
+            reliabilities = fl.enrich(self.db.factor_reliabilities(), fl.roundtrip_cost(self.cfg))
             reads = compute_reads(candles, list(self.cfg.pairs), now, events=events,
                                   reliabilities=reliabilities) if candles else {}
 
