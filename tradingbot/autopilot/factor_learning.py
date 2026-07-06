@@ -42,6 +42,14 @@ OVERLAP_FRACTION = SAMPLE_SECONDS / (HORIZON_HOURS * 3600.0)
 # vertrouwen. Per regime dit aantal observaties nodig om mee te tellen.
 MIN_REGIME_N = 15
 
+# Concept-drift (Page-Hinkley): heuristisch, te herijken zodra er echte data stroomt.
+PH_DELTA = 0.001            # tolerantie (verwachte ruis) per observatie
+PH_LAMBDA = 0.05            # drempel op de cumulatieve afwijking → drift-alarm
+PH_MIN_N = 30              # niet flaggen vóór genoeg observaties
+
+# Multiple-hypothesis: we toetsen straks veel factoren tegelijk → False Discovery Rate.
+FDR_ALPHA = 0.10           # toegestane fractie valse ontdekkingen (Benjamini-Hochberg)
+
 
 def effective_n(n: int) -> float:
     return max(1.0, n * OVERLAP_FRACTION)
@@ -143,9 +151,38 @@ def factor_status(avg_edge: float, sd: float | None, n: int, roundtrip_cost: flo
     return "onbewezen"
 
 
+def _norm_sf(z: float) -> float:
+    """Bovenstaartkans van de standaardnormale verdeling."""
+    import math
+    return 0.5 * math.erfc(z / math.sqrt(2))
+
+
+def update_drift(db, factor_key: str, edge: float) -> None:
+    """Online Page-Hinkley op de edge-stroom: detecteert of een factor recent kantelt
+    (drift-up / drift-down) i.p.v. pas na maanden. Heuristisch; herijken met echte data."""
+    st = db.get_drift(factor_key) or {"n": 0, "mean": 0.0, "up_cum": 0.0, "up_min": 0.0,
+                                       "dn_cum": 0.0, "dn_min": 0.0, "status": "stabiel"}
+    n = st["n"] + 1
+    mean = st["mean"] + (edge - st["mean"]) / n
+    up_cum = st["up_cum"] + (edge - mean - PH_DELTA)
+    up_min = min(st["up_min"], up_cum)
+    dn_cum = st["dn_cum"] + (mean - edge - PH_DELTA)
+    dn_min = min(st["dn_min"], dn_cum)
+    status = "stabiel"
+    if n >= PH_MIN_N:
+        if up_cum - up_min > PH_LAMBDA:
+            status = "drift-up"
+        elif dn_cum - dn_min > PH_LAMBDA:
+            status = "drift-down"
+    if status != "stabiel":            # na een alarm de teller resetten → opnieuw kunnen detecteren
+        up_cum = up_min = dn_cum = dn_min = 0.0
+    db.set_drift(factor_key, {"n": n, "mean": mean, "up_cum": up_cum, "up_min": up_min,
+                              "dn_cum": dn_cum, "dn_min": dn_min, "status": status})
+
+
 def enrich(rel: dict[str, dict], roundtrip_cost: float) -> dict[str, dict]:
     """Voeg netto-edge, significantie (overlap-gecorrigeerd), regime-stabiliteit,
-    gewichts-multiplier en status toe. Alleen JSON-veilige velden gaan naar buiten."""
+    p-waarde, gewichts-multiplier en status toe. Alleen JSON-veilige velden gaan naar buiten."""
     out: dict[str, dict] = {}
     for k, v in rel.items():
         ae, n, sd = v.get("avg_edge", 0.0), v.get("n", 0), v.get("sd")
@@ -153,16 +190,60 @@ def enrich(rel: dict[str, dict], roundtrip_cost: float) -> dict[str, dict]:
         consistent = regime_consistent(regimes)
         se = _se(sd, n)
         net = ae - roundtrip_cost
-        significant = effective_n(n) >= MIN_NEFF_SIGNIF and se != float("inf") \
-            and abs(net) - Z_SIGNIF * se > 0
+        enough = effective_n(n) >= MIN_NEFF_SIGNIF and se != float("inf")
+        significant = enough and abs(net) - Z_SIGNIF * se > 0
+        p_value = 2 * _norm_sf(abs(net) / se) if enough and se > 0 else None
         out[k] = {"n": n, "n_eff": round(effective_n(n), 1),
                   "precision": v.get("precision", 0.5), "avg_edge": round(ae, 4),
                   "net_edge": round(net, 4),
                   "net_edge_lo": None if se == float("inf") else round(net - Z_SIGNIF * se, 4),
                   "significant": bool(significant), "regime_stable": bool(consistent),
+                  "p_value": None if p_value is None else round(p_value, 5),
                   "regimes": regimes,
                   "weight_mult": round(weight_multiplier(ae, sd, n, roundtrip_cost, consistent), 3),
                   "status": factor_status(ae, sd, n, roundtrip_cost, consistent)}
+    return out
+
+
+def apply_fdr(enriched: dict[str, dict], alpha: float = FDR_ALPHA) -> dict[str, dict]:
+    """Benjamini-Hochberg over alle factoren tegelijk: bij veel factoren zijn er altijd
+    'toevallig significante'. Alleen factoren die de FDR-correctie overleven blijven
+    'actief'; de rest zakt terug naar 'onbewezen' en verliest hun opwaartse gewicht.
+    Zo lees je niet honderden losse toetsen als evenzovele ontdekkingen."""
+    pv = [(k, v["p_value"]) for k, v in enriched.items() if v.get("p_value") is not None]
+    discoveries: set[str] = set()
+    if pv:
+        pv.sort(key=lambda x: x[1])
+        m = len(pv)
+        thresh_rank = 0
+        for i, (_, p) in enumerate(pv, start=1):
+            if p <= (i / m) * alpha:
+                thresh_rank = i
+        discoveries = {pv[i][0] for i in range(thresh_rank)}
+    for k, v in enriched.items():
+        passed = k in discoveries
+        v["fdr_significant"] = bool(passed and v.get("net_edge", 0) > 0)
+        v["fdr_tested"] = v.get("p_value") is not None
+        # een positieve edge die de FDR niet haalt, mag géén hoger gewicht krijgen
+        if not passed and v["status"] == "actief":
+            v["status"] = "onbewezen"
+            v["weight_mult"] = min(v["weight_mult"], 1.0)
+    return enriched
+
+
+def enrich_and_correct(rel: dict[str, dict], roundtrip_cost: float,
+                       drift: dict[str, str] | None = None,
+                       alpha: float = FDR_ALPHA) -> dict[str, dict]:
+    """Volledige verrijking: significantie + regime + FDR-correctie + drift-status.
+    Een factor in drift-down verliest bovendien zijn opwaartse gewicht (edge kantelt)."""
+    out = apply_fdr(enrich(rel, roundtrip_cost), alpha)
+    drift = drift or {}
+    for k, v in out.items():
+        v["drift"] = drift.get(k, "stabiel")
+        if v["drift"] == "drift-down" and v["weight_mult"] > 1.0:
+            v["weight_mult"] = 1.0       # edge kantelt neerwaarts → niet langer vertrouwen
+            if v["status"] == "actief":
+                v["status"] = "onbewezen"
     return out
 
 
@@ -209,6 +290,7 @@ def grade_due(db, prices: dict[str, float], now: datetime) -> int:
         edge = excess * sign
         regime = obs["regime"] if "regime" in obs.keys() else None
         db.resolve_factor_obs(obs["id"], obs["factor_key"], edge > 0, edge, regime=regime)
+        update_drift(db, obs["factor_key"], edge)                    # concept-drift bijwerken
         graded += 1
     return graded
 

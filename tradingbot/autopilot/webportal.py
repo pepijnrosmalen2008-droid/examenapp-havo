@@ -261,21 +261,25 @@ def _thinking(db: Database, cfg) -> dict:
     from . import factor_learning as fl
 
     recs = db.recent_decisions(20)
-    rel = fl.enrich(db.factor_reliabilities(), fl.roundtrip_cost(cfg))
+    rel = fl.enrich_and_correct(db.factor_reliabilities(), fl.roundtrip_cost(cfg),
+                                drift=db.drift_status())
     reliability = sorted(
         ({"key": k, "label": _factor_label(k), "precision": v["precision"], "n": v["n"],
           "n_eff": v["n_eff"], "avg_edge": v["avg_edge"], "net_edge": v["net_edge"],
           "net_edge_lo": v["net_edge_lo"], "significant": v["significant"],
-          "regime_stable": v["regime_stable"], "status": v["status"],
+          "fdr_significant": v.get("fdr_significant", False), "p_value": v.get("p_value"),
+          "regime_stable": v["regime_stable"], "status": v["status"], "drift": v.get("drift", "stabiel"),
           "regimes": {rg: info["avg_edge"] for rg, info in v.get("regimes", {}).items()
                       if info.get("n", 0) >= 5}}
          for k, v in rel.items()),
         key=lambda r: (-r["n"], -r["net_edge"]))
+    prov = {"code": db.get_meta("code_version"), "config": db.get_meta("config_hash"),
+            "python": db.get_meta("python_version")}
     if not recs:
-        return {"latest": None, "history": [], "reliability": reliability}
+        return {"latest": None, "history": [], "reliability": reliability, "provenance": prov}
     history = [{"ts": r["ts"], "stance": r["stance"], "headline": r["headline"]}
                for r in recs]
-    return {"latest": recs[0], "history": history, "reliability": reliability}
+    return {"latest": recs[0], "history": history, "reliability": reliability, "provenance": prov}
 
 
 def build_portal() -> Portal | None:

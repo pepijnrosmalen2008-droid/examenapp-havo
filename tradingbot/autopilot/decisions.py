@@ -13,7 +13,7 @@ from __future__ import annotations
 
 from dataclasses import dataclass, field
 
-from .factors import CoinRead, market_summary, top_reasons
+from .factors import CoinRead, counterfactuals, market_summary, top_reasons
 
 
 @dataclass
@@ -34,6 +34,7 @@ class DecisionRecord:
     market: dict = field(default_factory=dict)     # market_summary() incl. factor-tellingen
     reasons: list[dict] = field(default_factory=list)   # 'Top 5 redenen' voor deze beslissing
     why_not: list[str] = field(default_factory=list)    # als er niet gehandeld wordt: waarom niet
+    counterfactual: list[dict] = field(default_factory=list)  # wat-als: welke factor was doorslaggevend
     actions: list[dict] = field(default_factory=list)
     considered: list[dict] = field(default_factory=list)  # top coin-reads (factoren)
 
@@ -42,6 +43,7 @@ class DecisionRecord:
             "stance": self.stance, "headline": self.headline, "detail": self.detail,
             "confidence": round(self.confidence, 3), "market": self.market,
             "reasons": self.reasons, "why_not": self.why_not,
+            "counterfactual": self.counterfactual,
             "actions": self.actions, "considered": self.considered,
         }
 
@@ -125,6 +127,14 @@ def build_record(*, reads: dict[str, CoinRead], actions: list[ActionRecord],
     else:
         confidence = market.get("avg_confidence", 0.0)
 
+    # counterfactual: welke factor was doorslaggevend voor de leidende coin?
+    lead_read = None
+    if executed and executed[0].pair in reads:
+        lead_read = reads[executed[0].pair]
+    elif reads:
+        lead_read = max(reads.values(), key=lambda r: abs(r.conviction))
+    counterfactual = counterfactuals(lead_read) if lead_read is not None else []
+
     tone = market.get("tone", "onbekend")
     detail = (f"Marktbeeld: {tone} · {market.get('n_factors', 0)} factoren bekeken "
               f"({market.get('f_pos', 0)} positief / {market.get('f_neg', 0)} negatief / "
@@ -139,4 +149,5 @@ def build_record(*, reads: dict[str, CoinRead], actions: list[ActionRecord],
         detail += "Er was deze cycle geen actie nodig of toegestaan."
 
     return DecisionRecord(stance, head, detail, confidence=confidence, market=market,
-                          reasons=reasons, why_not=why_not, actions=acts, considered=considered)
+                          reasons=reasons, why_not=why_not, counterfactual=counterfactual,
+                          actions=acts, considered=considered)

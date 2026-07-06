@@ -357,6 +357,25 @@ def market_summary(reads: dict[str, CoinRead]) -> dict:
             "n_factors": f_pos + f_neg + f_neu}
 
 
+def counterfactuals(read: CoinRead, limit: int = 3) -> list[dict]:
+    """Wat-als-analyse: hoeveel verandert de overtuiging als je één factor wegdenkt?
+    Zo zie je welke factor doorslaggevend was — en waarom de bot (on)zeker is.
+    Voorbeeld: 'zonder Wereld/macro was de overtuiging +12 i.p.v. −3'."""
+    facs = read.factors
+    tw = sum(f.weight_effective for f in facs)
+    base = read.conviction
+    out = []
+    for f in facs:
+        rem = tw - f.weight_effective
+        if rem <= 0:
+            continue
+        without = sum(g.score * g.weight_effective for g in facs if g is not f) / rem
+        out.append({"label": f.label, "kind": f.kind,
+                    "without": round(without, 3), "delta": round(base - without, 3)})
+    out.sort(key=lambda d: abs(d["delta"]), reverse=True)
+    return out[:limit]
+
+
 def top_reasons(read: CoinRead, want_positive: bool, limit: int = 5) -> list[dict]:
     """De sterkst bijdragende factoren voor (of tegen) een coin — voor 'Top 5 redenen'."""
     facs = [f for f in read.factors

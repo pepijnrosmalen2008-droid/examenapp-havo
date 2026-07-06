@@ -131,6 +131,10 @@ svg { display:block; width:100%; height:auto; touch-action:none }
 .rz .n { color:var(--muted); font-weight:700; flex:none; width:16px }
 .rz .rb { font-weight:600 } .rz .rd { color:var(--muted); font-size:12px }
 .rz .rel { margin-left:auto; flex:none; font-size:11px; color:var(--muted) }
+.cf { margin-top:14px }
+.cf .rl { font-size:12px; font-weight:700; color:var(--muted); text-transform:uppercase; letter-spacing:.04em; margin-bottom:6px }
+.cfz { display:flex; gap:10px; align-items:baseline; padding:6px 4px; border-top:1px solid var(--grid); font-size:13px; flex-wrap:wrap }
+.cfz .cfl { font-weight:650 } .cfz .cfv { color:var(--muted) } .cfz .cfv b { font-variant-numeric:tabular-nums }
 .whynot { margin-top:14px; border:1px solid var(--border); border-radius:12px; padding:12px 14px; background:var(--chip) }
 .whynot .wl { font-size:12px; font-weight:700; color:var(--ink2); margin-bottom:6px }
 .whynot ul { margin:0; padding-left:18px } .whynot li { font-size:13px; color:var(--ink2); margin:2px 0 }
@@ -151,6 +155,8 @@ svg { display:block; width:100%; height:auto; touch-action:none }
 .rgm { display:inline-flex; gap:5px; flex-wrap:wrap }
 .rgm span { font-size:10px; font-weight:700; padding:1px 6px; border-radius:6px; background:var(--chip) }
 .rgm .p { color:var(--up) } .rgm .n { color:var(--down) }
+.drift { font-size:11px; font-weight:700; white-space:nowrap }
+.drift.dn { color:var(--down) } .drift.up { color:var(--warn) }
 .read .conf-mini { margin-left:6px; font-size:11px; color:var(--muted); font-weight:600 }
 
 .stopbox { border:1px solid var(--down); border-radius:16px; padding:16px; margin-top:26px }
@@ -191,6 +197,7 @@ svg { display:block; width:100%; height:auto; touch-action:none }
     </div>
     <div class="statusline" id="h-status"></div>
     <div class="sub" id="h-updated"></div>
+    <div class="sub" id="h-prov" style="font-family:ui-monospace,Menlo,monospace;opacity:.7"></div>
   </div>
 
   <h2>Verloop</h2>
@@ -316,6 +323,8 @@ function render(){
   const age=(Date.now()-new Date(s.updated||s._upd).getTime())/60000;
   $('h-updated').innerHTML=(age>4?'<span class="down">bot lijkt offline — </span>':'')
     +'laatste update '+Math.max(0,Math.round(age))+' min geleden · ververst ~elke minuut · geen rendementsbelofte';
+  const pv=(s.thinking&&s.thinking.provenance)||{};
+  $('h-prov').textContent=pv.code?`code ${pv.code} · config ${pv.config||'—'} · py ${pv.python||'—'} · elke beslissing herleidbaar`:'';
 
   renderThinking(); drawChart(); renderMetrics(); renderHoldings(); renderTrades(); renderBlocks();
 }
@@ -358,6 +367,14 @@ function renderThinking(){
   const whyNot = wn.length ? `<div class="whynot"><div class="wl">Waarom geen (grotere) trade?</div>
     <ul>${wn.map(x=>`<li>${esc(x)}</li>`).join('')}</ul></div>` : '';
 
+  const cf=(L.counterfactual||[]).filter(c=>Math.abs(c.delta)>0.02).slice(0,3);
+  const cfBlock = cf.length ? `<div class="cf"><div class="rl">Wat-als (doorslaggevende factor)</div>
+    ${cf.map(c=>{const base=c.without+c.delta;
+      return `<div class="cfz"><span class="cfl${c.kind==='external'?' ':''}">zonder ${esc(c.label)}</span>
+        <span class="cfv">overtuiging <b class="${base>=0?'up':'down'}">${base>=0?'+':''}${Math.round(base*100)}</b>
+        → <b class="${c.without>=0?'up':'down'}">${c.without>=0?'+':''}${Math.round(c.without*100)}</b></span></div>`;}).join('')}
+    </div>` : '';
+
   const reads=(L.considered||[]).map(renderRead).join('');
   const relBoard = renderReliability(t.reliability||[]);
   const hist=(t.history||[]).slice(0,8).map(h=>
@@ -376,6 +393,7 @@ function renderThinking(){
     </div>
     ${meter}
     ${reasonsBlock}
+    ${cfBlock}
     ${whyNot}
     ${reads?`<div class="reads">${reads}</div>`:''}
     ${relBoard}
@@ -392,25 +410,28 @@ function renderReliability(rel){
   if(!rows.length) return `<div class="relboard"><div class="rl">Factor-track record</div>
     <div class="mut" style="font-size:12px">nog te weinig afgerekende observaties — het track record wordt vanaf ~1 dag opgebouwd (forward-only). Elke factor verdient zijn plek op <b>excess-rendement na kosten</b> dat statistisch van ruis te onderscheiden is, niet op accuracy.</div></div>`;
   const RG={bull:'🐂',bear:'🐻',chop:'〰️',onbekend:'?'};
-  return `<div class="relboard"><div class="rl">Factor-track record <span class="mut" style="font-weight:400;text-transform:none">(forward-only · excess vs. de mand, na kosten · significantie + regime-stabiliteit bepalen het gewicht)</span></div>
+  const DR={'drift-down':'<span class="drift dn" title="concept-drift: edge kantelt neerwaarts">⚠ drift ↓</span>',
+    'drift-up':'<span class="drift up" title="concept-drift: edge kantelt opwaarts">⚠ drift ↑</span>'};
+  return `<div class="relboard"><div class="rl">Factor-track record <span class="mut" style="font-weight:400;text-transform:none">(forward-only · excess na kosten · FDR-gecorrigeerd · regime + drift bewaakt)</span></div>
     <div style="overflow-x:auto"><table class="reltbl">
-      <thead><tr><th>Factor</th><th>Obs. (eff.)</th><th>Excess/obs</th><th>95%-ondergrens</th><th>Per regime</th><th>Status</th></tr></thead>
+      <thead><tr><th>Factor</th><th>Obs. (eff.)</th><th>Excess/obs</th><th>p (FDR)</th><th>Per regime</th><th>Drift</th><th>Status</th></tr></thead>
       <tbody>${rows.map(r=>{
         const nc=r.net_edge>=0?'pos':'neg', st=esc(r.status||'observeren');
-        const lo=r.net_edge_lo, loc=(lo!=null&&lo>=0)?'pos':'neg';
-        const sig=r.significant?' ✓':'';
+        const sig=r.fdr_significant?' ✓':'';
+        const pv=(r.p_value!=null)?(r.p_value<0.001?'&lt;0.001':r.p_value.toFixed(3)):'—';
         const rgs=Object.entries(r.regimes||{}).map(([k,v])=>
           `<span class="${v>=0?'p':'n'}">${RG[k]||k} ${netpct(v)}</span>`).join('');
         return `<tr>
           <td>${esc(r.label)}${sig}</td>
           <td>${r.n} <span class="mut">(${r.n_eff??'—'})</span></td>
           <td class="${nc}">${r.n>=20?netpct(r.net_edge):'—'}</td>
-          <td class="${loc}">${(lo!=null&&r.n>=20)?netpct(lo):'—'}</td>
+          <td>${pv}</td>
           <td><span class="rgm">${rgs||'—'}</span></td>
+          <td>${DR[r.drift]||'<span class="mut">stabiel</span>'}</td>
           <td><span class="sbadge sb-${st}">${st}</span></td>
         </tr>`;}).join('')}</tbody>
     </table></div>
-    <div class="mut" style="font-size:11px;margin-top:8px">"Excess/obs" = hoeveel de coin het in de factor-richting <b>beter deed dan de gemiddelde coin</b> (opportunity cost), ná kosten. "Obs. (eff.)" toont naast het aantal ook de <b>effectieve</b> steekproef ná overlap-correctie — 24u-vensters die elk uur worden gemeten overlappen sterk en tellen dus niet als losse waarnemingen. Status <b>actief</b> (✓) vereist dat de 95%-ondergrens boven nul ligt <b>én</b> dat de edge in meerdere regimes standhoudt; leunt hij op één regime → <b>eenzijdig</b> (geen upweight). Zo wordt beta, toeval én regime-toevalligheid niet als edge gelezen.</div></div>`;
+    <div class="mut" style="font-size:11px;margin-top:8px">"Excess/obs" = hoeveel de coin het in de factor-richting <b>beter deed dan de gemiddelde coin</b> (opportunity cost), ná kosten. "Obs. (eff.)" = ná overlap-correctie (24u-vensters die elk uur worden gemeten overlappen). "p (FDR)" = de p-waarde; het ✓-vinkje geldt alleen als de factor de <b>Benjamini-Hochberg</b>-correctie over álle factoren overleeft — zo tellen "toevallig significante" niet mee. "Drift" bewaakt (Page-Hinkley) of een edge recent kantelt; een <b>drift ↓</b> haalt het hogere gewicht er direct af. Status <b>actief</b> vereist: significant ná FDR + regime-stabiel + geen neerwaartse drift.</div></div>`;
 }
 
 function renderRead(r){

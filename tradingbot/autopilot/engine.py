@@ -61,6 +61,11 @@ class TradingEngine:
                 "(verwijder autopilot.db of pas de mode aan)."
             )
         self.db.set_meta("mode", self.mode.value)
+        # reproduceerbaarheid: leg vast met welke code + config deze bot draait
+        from . import provenance as prov
+        self.db.set_meta("code_version", prov.code_hash())
+        self.db.set_meta("config_hash", prov.config_hash(self.cfg))
+        self.db.set_meta("python_version", prov.python_version())
         if self.db.get_meta("starting_capital") is None:
             if self.mode == TradingMode.PAPER and self.cfg.seed.enabled:
                 self._seed_portfolio()
@@ -399,8 +404,10 @@ class TradingEngine:
                 fl.grade_due(self.db, prices, now)
 
             events = load_events(self.cfg, now) if self.cfg.research.enabled else []
-            # betrouwbaarheden verrijken met netto-edge (na kosten) → gewicht op edge, niet accuracy
-            reliabilities = fl.enrich(self.db.factor_reliabilities(), fl.roundtrip_cost(self.cfg))
+            # betrouwbaarheden: netto-edge na kosten + significantie + regime + FDR + drift
+            reliabilities = fl.enrich_and_correct(
+                self.db.factor_reliabilities(), fl.roundtrip_cost(self.cfg),
+                drift=self.db.drift_status())
             reads = compute_reads(candles, list(self.cfg.pairs), now, events=events,
                                   reliabilities=reliabilities) if candles else {}
 

@@ -216,6 +216,25 @@ op `factor_obs`. Drempels en de eerlijke grens (regime-stabiel = noodzakelijk, n
 voldoende; markt is adaptief) staan in `experiments/edge_criteria.md`; rolling-window,
 regime-transities en allocatie-impact zijn expliciet geparkeerd (roadmap S1–S3).
 
+## D26 — S++ laag: drift-detectie, FDR, counterfactuals, reproduceerbaarheid
+
+Vier gerichte stappen richting een zelfcorrigerend onderzoeksplatform, elk bewust
+deterministisch en zichtbaar op het dashboard (zie SPP_ROADMAP.md). (1) **Concept-drift**
+(Page-Hinkley, tabel `factor_drift`): bewaakt online of een edge kantelt; een drift-down
+haalt het opwaartse gewicht er direct af — herkennen binnen dagen i.p.v. maanden.
+(2) **Multiple-hypothesis-correctie** (Benjamini-Hochberg, `apply_fdr`): bij veel factoren
+zijn er altijd toevallig-significante; alleen wie de FDR overleeft blijft *actief*.
+(3) **Counterfactual reasoning** (`factors.counterfactuals`): per beslissing welke factor
+doorslaggevend was ("zonder macro was de overtuiging +12 i.p.v. −3"). (4) **Reproduceer­-
+baarheid** (`provenance.py`): code-hash (over de eigen .py-bestanden, werkt óók vanuit een
+ZIP) + config-hash, gestempeld bij startup en getoond in de dashboard-header.
+
+Bewust NIET gebouwd (blijft van tafel, past niet bij de discipline of nog niet zinvol):
+LLM die handelt, sentiment-scraping, extra indicatoren, black-box-net. Portfolio 2.0 is de
+lopende vol_target-allocatie; execution-quality-analytics wacht op SHADOW (in PAPER zou het
+enkel de modelslippage echoën); multi-source datalake, meta-learning-volledig,
+research-automation en full observability staan met prioriteit op SPP_ROADMAP.md.
+
 ## D22 — Meerdere bots naast elkaar + seed-portefeuille
 
 Om strategieën eerlijk te vergelijken kan de bot met `--config` draaien; elke config

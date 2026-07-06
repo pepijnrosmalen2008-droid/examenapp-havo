@@ -130,6 +130,20 @@ CREATE TABLE IF NOT EXISTS factor_stats_regime (
     sum_edge2 REAL NOT NULL DEFAULT 0,
     PRIMARY KEY (factor_key, regime)
 );
+
+-- Concept-drift-detector (Page-Hinkley) per factor: werkt een edge nog, of is hij
+-- recent gekanteld? Online bijgewerkt op de edge-stroom.
+CREATE TABLE IF NOT EXISTS factor_drift (
+    factor_key TEXT PRIMARY KEY,
+    n       INTEGER NOT NULL DEFAULT 0,
+    mean    REAL NOT NULL DEFAULT 0,
+    up_cum  REAL NOT NULL DEFAULT 0,
+    up_min  REAL NOT NULL DEFAULT 0,
+    dn_cum  REAL NOT NULL DEFAULT 0,
+    dn_min  REAL NOT NULL DEFAULT 0,
+    status  TEXT NOT NULL DEFAULT 'stabiel',   -- stabiel | drift-up | drift-down
+    updated TEXT
+);
 """
 
 # Bayesiaanse krimp naar 0,5: een factor moet zijn betrouwbaarheid verdienen met data.
@@ -407,6 +421,27 @@ class Database:
             out.setdefault(r["factor_key"], {})[r["regime"]] = {
                 "n": s["n"], "avg_edge": round(s["avg_edge"], 4)}
         return out
+
+    # ── concept-drift (Page-Hinkley) ─────────────────────────────────
+
+    def get_drift(self, factor_key: str) -> dict | None:
+        r = self.conn.execute("SELECT * FROM factor_drift WHERE factor_key=?", (factor_key,)).fetchone()
+        return dict(r) if r else None
+
+    def set_drift(self, factor_key: str, st: dict) -> None:
+        self.conn.execute(
+            "INSERT INTO factor_drift(factor_key, n, mean, up_cum, up_min, dn_cum, dn_min, status, updated) "
+            "VALUES(?,?,?,?,?,?,?,?,?) ON CONFLICT(factor_key) DO UPDATE SET "
+            "n=excluded.n, mean=excluded.mean, up_cum=excluded.up_cum, up_min=excluded.up_min, "
+            "dn_cum=excluded.dn_cum, dn_min=excluded.dn_min, status=excluded.status, updated=excluded.updated",
+            (factor_key, st["n"], st["mean"], st["up_cum"], st["up_min"],
+             st["dn_cum"], st["dn_min"], st["status"], utcnow()),
+        )
+        self.conn.commit()
+
+    def drift_status(self) -> dict[str, str]:
+        return {r["factor_key"]: r["status"]
+                for r in self.conn.execute("SELECT factor_key, status FROM factor_drift")}
 
     # ── equity ────────────────────────────────────────────────────────
 
