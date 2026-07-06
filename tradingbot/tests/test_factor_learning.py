@@ -76,41 +76,72 @@ def test_reliability_changes_effective_weight(db):
     assert mom_low.reliability == 0.3 and mom_low.n_obs == 100
 
 
-def test_weight_multiplier_needs_significance():
+def _regimes(bull, bear, chop=None, n=400):
+    r = {"bull": {"n": n, "avg_edge": bull}, "bear": {"n": n, "avg_edge": bear}}
+    if chop is not None:
+        r["chop"] = {"n": n, "avg_edge": chop}
+    return r
+
+
+# genoeg RUWE obs zodat effectieve n (na overlap-correctie ~1/24) boven de drempel komt
+BIGN = 20000
+
+
+def test_weight_multiplier_needs_significance_and_stability():
     cost = 0.007
-    # veel data, kleine SE, positieve netto-edge boven de ondergrens → opgetild
-    assert fl.weight_multiplier(0.02, 0.002, 200, cost) > 1.1
-    # zelfde gemiddelde maar grote SE (ruis) → ondergrens < 0 → géén optillen
-    assert abs(fl.weight_multiplier(0.02, 0.05, 200, cost) - 1.0) < 0.05
-    # weinig data → altijd neutraal
-    assert fl.weight_multiplier(0.02, 0.002, 5, cost) == 1.0
-    # bewezen negatief → afgeknepen
-    assert fl.weight_multiplier(-0.02, 0.002, 200, cost) < 0.9
+    stable = _regimes(0.02, 0.02)
+    # veel effectieve data, kleine sd, positief + regime-stabiel → opgetild
+    assert fl.weight_multiplier(0.02, 0.01, BIGN, cost, fl.regime_consistent(stable)) > 1.1
+    # hoge variantie (ruis) → ondergrens < 0 → neutraal
+    assert abs(fl.weight_multiplier(0.02, 0.5, BIGN, cost, True) - 1.0) < 0.05
+    # weinig effectieve data → altijd neutraal
+    assert fl.weight_multiplier(0.02, 0.01, 100, cost, True) == 1.0
+    # significant positief maar NIET regime-stabiel → geen upweight
+    assert fl.weight_multiplier(0.02, 0.01, BIGN, cost, consistent=False) == 1.0
+    # bewezen negatief → afgeknepen (ook zonder consistentie)
+    assert fl.weight_multiplier(-0.02, 0.01, BIGN, cost, False) < 0.9
 
 
-def test_factor_status_significance():
+def test_overlap_correction_makes_significance_harder():
+    cost = 0.0
+    # zonder overlap zou n=1000 ruim significant zijn; met ~1/24 effectief is dat veel minder
+    assert fl.effective_n(1000) < 1000 * 0.1
+    # 500 ruwe, overlappende obs is onvoldoende effectieve data → nog geen 'bewijs'
+    assert fl.weight_multiplier(0.02, 0.01, 500, cost, True) == 1.0
+
+
+def test_regime_consistent_requires_two_regimes():
+    assert fl.regime_consistent(_regimes(0.02, 0.02)) is True
+    assert fl.regime_consistent(_regimes(0.02, -0.02)) is False       # 1 van 2 positief → niet
+    assert fl.regime_consistent({"bull": {"n": 400, "avg_edge": 0.02}}) is False  # één regime
+
+
+def test_factor_status_significance_and_regime():
     cost = 0.007
-    assert fl.factor_status(0.05, 0.001, 5, cost) == "observeren"        # te weinig data
-    assert fl.factor_status(0.02, 0.002, 200, cost) == "actief"          # significant positief
-    assert fl.factor_status(-0.02, 0.002, 200, cost) == "uitgeschakeld"  # significant negatief
-    assert fl.factor_status(0.02, 0.05, 200, cost) == "onbewezen"        # ruis
+    stable, lop = fl.regime_consistent(_regimes(0.02, 0.02)), fl.regime_consistent(_regimes(0.02, -0.02))
+    assert fl.factor_status(0.05, 0.001, 100, cost, stable) == "observeren"        # te weinig eff. data
+    assert fl.factor_status(0.02, 0.01, BIGN, cost, stable) == "actief"            # significant + stabiel
+    assert fl.factor_status(0.02, 0.01, BIGN, cost, lop) == "eenzijdig"            # significant, 1 regime
+    assert fl.factor_status(-0.02, 0.01, BIGN, cost, stable) == "uitgeschakeld"    # significant negatief
+    assert fl.factor_status(0.02, 0.5, BIGN, cost, stable) == "onbewezen"          # ruis
 
 
-def test_enrich_adds_significance_fields(db):
+def test_enrich_adds_significance_and_regime_fields(db):
     db.conn.execute("INSERT INTO factor_stats(factor_key,n,hits,sum_edge,sum_edge2) "
                     "VALUES('momentum',100,60,2.0,0.06)")
     db.conn.commit()
     rel = fl.enrich(db.factor_reliabilities(), 0.007)
     m = rel["momentum"]
     assert m["net_edge"] == round(0.02 - 0.007, 4)
-    assert "significant" in m and "net_edge_lo" in m and "status" in m
+    assert {"significant", "net_edge_lo", "status", "regime_stable", "n_eff"} <= set(m)
 
 
 def test_positive_edge_outweighs_high_accuracy_negative_edge():
     candles = {"AAA-EUR": ramp(100, 1)}
-    # momentum: hoge accuracy maar bewezen netto-negatief; trend: bewezen netto-positief
-    rel = fl.enrich({"momentum": {"precision": 0.7, "n": 200, "avg_edge": -0.02, "se": 0.002},
-                     "trend": {"precision": 0.55, "n": 200, "avg_edge": 0.02, "se": 0.002}}, 0.007)
+    stable = _regimes(0.02, 0.02)
+    neg = _regimes(-0.02, -0.02)
+    rel = fl.enrich({"momentum": {"precision": 0.7, "n": BIGN, "avg_edge": -0.02, "sd": 0.01, "regimes": neg},
+                     "trend": {"precision": 0.55, "n": BIGN, "avg_edge": 0.02, "sd": 0.01, "regimes": stable}}, 0.007)
     reads = compute_reads(candles, ["AAA-EUR"], NOW, reliabilities=rel)
     facs = {f.key: f for f in reads["AAA-EUR"].factors}
     assert facs["trend"].weight_effective > facs["momentum"].weight_effective
@@ -122,6 +153,14 @@ def test_external_entity_gets_own_factor_key():
     reads = compute_reads({"AAA-EUR": ramp(100, 0)}, ["AAA-EUR"], NOW, events=events)
     keys = {f.key for f in reads["AAA-EUR"].factors}
     assert "smart_money:musk" in keys
+
+
+def test_market_regime_classification():
+    up = {f"C{i}-EUR": ramp(100, 1) for i in range(5)}    # alles stijgt → bull
+    down = {f"C{i}-EUR": ramp(100, -1) for i in range(5)}  # alles daalt → bear
+    assert fl.market_regime(up) == "bull"
+    assert fl.market_regime(down) == "bear"
+    assert fl.market_regime({}) == "onbekend"
 
 
 def test_overextended_dampens_bullish_news():

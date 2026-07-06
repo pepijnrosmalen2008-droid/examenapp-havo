@@ -55,6 +55,31 @@ backtest van externe/nieuws-factoren (leakage):
 - **Sunk-cost-clausule:** haalt hij dit niet → REJECTED_HYPOTHESES.md, geen tweede poging
   zonder fundamenteel andere reden.
 
+## 3b. Niet-stationariteit: waarom "significant over de hele periode" misleidt
+De CI-toets in §2 gaat impliciet uit van onafhankelijke, identiek verdeelde observaties.
+Crypto voldoet daar niet aan (regimes, autocorrelatie, volatility clustering). Zonder
+correctie zou een "significant"-stempel eigenlijk zeggen: *robuust in déze historische
+mix van regimes* — niet *voorspellend in het volgende regime*. Twee ingebouwde correcties:
+
+- **Overlap → effectieve steekproef.** We meten elk uur maar rekenen over 24u af, dus
+  opeenvolgende vensters overlappen ~23/24. De standaardfout gebruikt daarom een
+  **effectieve n** ≈ n × (sample-interval / horizon), niet de ruwe n. Gevolg: je hebt
+  grofweg een maand niet-overlappend bewijs nodig voor n_eff ≥ 30 — eerlijk, en het
+  voorkomt dat honderden overlappende metingen als los bewijs tellen. (De
+  cross-sectionele correlatie is al grotendeels verwijderd door de excess-t.o.v.-mand-meting.)
+- **Regime-conditionering.** Elke observatie krijgt bij vastlegging het marktregime
+  (bull / bear / chop) mee — *dit moet vooraf, want achteraf is het niet te reconstrueren.*
+  Een factor is pas **actief** als zijn netto-edge in **meerdere regimes** standhoudt.
+  Leunt de edge op één regime, dan is de status **eenzijdig** en krijgt hij géén hoger
+  gewicht — precies omdat "werkte in de bull van 2023" niets zegt over de volgende bear.
+
+Wat dit expliciet nog **niet** is (geparkeerd op de roadmap, L2-vol/L3):
+rolling-window-consistentie, gedrag rond regime-*transities*, en de allocatie-impact
+(verbetert de factor de Sharpe van de hele portefeuille, of alleen geïsoleerde
+trefkans?). Ook mét deze correcties blijft gelden: historische regime-stabiliteit is
+een noodzakelijke, geen voldoende voorwaarde voor toekomstige voorspelkracht — de markt
+is een adaptief systeem, geen vaste dataset.
+
 ## 4. Eerlijke verwachting
 Dit systeem zal waarschijnlijk vooral **slechte signalen zichtbaar maken en laten
 sterven** — ruis reduceren, overfitting temmen, gedrag stabiliseren. Dat is waardevol,

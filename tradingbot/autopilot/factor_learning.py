@@ -28,7 +28,46 @@ DEADBAND = 0.05             # scores dichter bij 0 dan dit tellen niet mee (ruis
 #   Z = eenzijdige 95%-grens; een factor mag zijn gewicht pas van 1,0 laten afwijken
 #   als de ondergrens van zijn netto-edge (na kosten) déze kant van nul ligt.
 Z_SIGNIF = 1.64
-MIN_N_SIGNIF = 30           # onder dit aantal observaties: nooit 'bewezen', altijd neutraal
+MIN_NEFF_SIGNIF = 30        # minimaal aantal EFFECTIEVE (onafhankelijke) observaties
+
+# Overlap-correctie: we samplen elk uur maar rekenen over HORIZON_HOURS af, dus
+# opeenvolgende vensters overlappen sterk → ze zijn NIET onafhankelijk. De effectieve
+# steekproef is grofweg n × (sample-interval / horizon). Zonder deze correctie
+# onderschat de standaardfout de onzekerheid en 'bewijs' je te makkelijk een edge.
+# (De cross-sectionele correlatie is al grotendeels weg door de excess-t.o.v.-mand-meting;
+#  dit corrigeert de resterende overlap in de TIJD.)
+OVERLAP_FRACTION = SAMPLE_SECONDS / (HORIZON_HOURS * 3600.0)
+
+# Regime-stabiliteit: een edge die maar in één regime bestaat is geen edge om op te
+# vertrouwen. Per regime dit aantal observaties nodig om mee te tellen.
+MIN_REGIME_N = 15
+
+
+def effective_n(n: int) -> float:
+    return max(1.0, n * OVERLAP_FRACTION)
+
+
+def market_regime(candles: dict) -> str:
+    """Grof marktregime uit de mand: bull (breed boven het 50-gemiddelde), bear (breed
+    eronder) of chop (richtingloos). Bewust simpel en deterministisch; het dient om de
+    edge per regime te kunnen uitsplitsen, niet om te handelen."""
+    devs = []
+    for c in candles.values():
+        closes = [x.close for x in c] if c else []
+        if len(closes) >= 50:
+            sma = sum(closes[-50:]) / 50
+            if sma > 0:
+                devs.append(closes[-1] / sma - 1)
+    if len(devs) < 2:
+        return "onbekend"
+    breadth = sum(1 for d in devs if d > 0) / len(devs)
+    devs.sort()
+    med = devs[len(devs) // 2]
+    if med > 0.02 and breadth >= 0.6:
+        return "bull"
+    if med < -0.02 and breadth <= 0.4:
+        return "bear"
+    return "chop"
 
 
 def reliability_multiplier(precision: float) -> float:
@@ -40,10 +79,18 @@ def reliability_multiplier(precision: float) -> float:
     return max(0.4, min(1.6, 1.0 + (precision - 0.5) * 3.0))
 
 
+def _se(sd: float | None, n: int) -> float:
+    """Standaardfout met overlap-correctie (effectieve steekproef)."""
+    if sd is None or n <= 1:
+        return float("inf")
+    import math
+    return sd / math.sqrt(effective_n(n))
+
+
 def _conservative_edge(net: float, se: float) -> float:
     """De rand van het betrouwbaarheidsinterval die het dichtst bij nul ligt.
     Zo telt alleen het deel van de edge dat statistisch overeind blijft; bij grote
-    onzekerheid (kleine n, hoge variantie) valt dit vanzelf naar 0 → gewicht blijft 1,0."""
+    onzekerheid (kleine n_eff, hoge variantie) valt dit vanzelf naar 0 → gewicht 1,0."""
     if se == float("inf") or se <= 0:
         return 0.0
     if net > 0:
@@ -51,49 +98,71 @@ def _conservative_edge(net: float, se: float) -> float:
     return min(0.0, net + Z_SIGNIF * se)
 
 
-def weight_multiplier(avg_edge: float, se: float, n: int, roundtrip_cost: float) -> float:
-    """Effectief gewicht op basis van de **statistisch verantwoorde** netto-edge.
+def regime_consistent(regimes: dict) -> bool:
+    """Is de edge over meerdere regimes positief, of leunt hij op één regime?
+    Vereist ≥2 regimes met genoeg data en een positieve edge in de meerderheid ervan."""
+    data = [info for info in regimes.values() if info.get("n", 0) >= MIN_REGIME_N]
+    if len(data) < 2:
+        return False
+    pos = sum(1 for info in data if info.get("avg_edge", 0) > 0)
+    return pos >= (len(data) + 1) // 2 and pos >= 2
 
-    Niet het gemiddelde stuurt het gewicht, maar de conservatieve ondergrens ervan
-    (mean − Z·SE). Een factor die vaak 'goed' zit maar met veel ruis of weinig data
-    krijgt dus géén hoger gewicht — precies om noise niet als signaal te lezen. Onder
-    MIN_N_SIGNIF observaties blijft het gewicht neutraal (1,0)."""
-    if n < MIN_N_SIGNIF:
+
+def weight_multiplier(avg_edge: float, sd: float | None, n: int, roundtrip_cost: float,
+                      consistent: bool = True) -> float:
+    """Effectief gewicht op basis van de **statistisch verantwoorde, regime-stabiele**
+    netto-edge. Niet het gemiddelde stuurt het gewicht maar de conservatieve ondergrens
+    (mean − Z·SE) mét overlap-correctie. Onder MIN_NEFF_SIGNIF effectieve observaties, of
+    als de edge niet regime-stabiel is, blijft een OPWAARTS gewicht achterwege (max 1,0)."""
+    se = _se(sd, n)
+    if effective_n(n) < MIN_NEFF_SIGNIF:
         return 1.0
     cons = _conservative_edge(avg_edge - roundtrip_cost, se)
-    return max(0.3, min(1.6, 1.0 + cons * 60.0))   # +1%/obs bewezen-netto → ~1,6
+    mult = max(0.3, min(1.6, 1.0 + cons * 60.0))   # +1%/obs bewezen-netto → ~1,6
+    if mult > 1.0 and not consistent:
+        return 1.0                                  # positief maar niet regime-stabiel → geen upweight
+    return mult
 
 
-def factor_status(avg_edge: float, se: float, n: int, roundtrip_cost: float) -> str:
-    """Track-record-status: is de netto-edge statistisch te onderscheiden van ruis?
-      observeren   – onvoldoende data
-      actief       – ondergrens netto-edge > 0 (bewezen positief, na kosten)
+def factor_status(avg_edge: float, sd: float | None, n: int, roundtrip_cost: float,
+                  consistent: bool = True) -> str:
+    """Track-record-status:
+      observeren   – te weinig (effectieve) data
+      actief       – ondergrens netto-edge > 0 ÉN regime-stabiel
+      eenzijdig    – significant positief maar leunt op één regime (niet te vertrouwen)
       uitgeschakeld– bovengrens netto-edge < 0 (bewezen verlieslatend)
-      onbewezen    – niet van nul te onderscheiden (ruis; gewicht blijft neutraal)"""
+      onbewezen    – niet van nul te onderscheiden (ruis)"""
     net = avg_edge - roundtrip_cost
-    if n < MIN_N_SIGNIF or se == float("inf"):
+    se = _se(sd, n)
+    if effective_n(n) < MIN_NEFF_SIGNIF or se == float("inf"):
         return "observeren"
-    if net - Z_SIGNIF * se > 0:
-        return "actief"
     if net + Z_SIGNIF * se < 0:
         return "uitgeschakeld"
+    if net - Z_SIGNIF * se > 0:
+        return "actief" if consistent else "eenzijdig"
     return "onbewezen"
 
 
 def enrich(rel: dict[str, dict], roundtrip_cost: float) -> dict[str, dict]:
-    """Voeg netto-edge, significantie, gewichts-multiplier en status toe. `se` (met
-    mogelijke inf) blijft binnen deze laag — de payload krijgt alleen JSON-veilige velden."""
+    """Voeg netto-edge, significantie (overlap-gecorrigeerd), regime-stabiliteit,
+    gewichts-multiplier en status toe. Alleen JSON-veilige velden gaan naar buiten."""
     out: dict[str, dict] = {}
     for k, v in rel.items():
-        ae, n, se = v.get("avg_edge", 0.0), v.get("n", 0), v.get("se", float("inf"))
+        ae, n, sd = v.get("avg_edge", 0.0), v.get("n", 0), v.get("sd")
+        regimes = v.get("regimes", {})
+        consistent = regime_consistent(regimes)
+        se = _se(sd, n)
         net = ae - roundtrip_cost
-        significant = n >= MIN_N_SIGNIF and se != float("inf") and abs(net) - Z_SIGNIF * se > 0
-        out[k] = {"n": n, "precision": v.get("precision", 0.5), "avg_edge": round(ae, 4),
+        significant = effective_n(n) >= MIN_NEFF_SIGNIF and se != float("inf") \
+            and abs(net) - Z_SIGNIF * se > 0
+        out[k] = {"n": n, "n_eff": round(effective_n(n), 1),
+                  "precision": v.get("precision", 0.5), "avg_edge": round(ae, 4),
                   "net_edge": round(net, 4),
                   "net_edge_lo": None if se == float("inf") else round(net - Z_SIGNIF * se, 4),
-                  "significant": bool(significant),
-                  "weight_mult": round(weight_multiplier(ae, se, n, roundtrip_cost), 3),
-                  "status": factor_status(ae, se, n, roundtrip_cost)}
+                  "significant": bool(significant), "regime_stable": bool(consistent),
+                  "regimes": regimes,
+                  "weight_mult": round(weight_multiplier(ae, sd, n, roundtrip_cost, consistent), 3),
+                  "status": factor_status(ae, sd, n, roundtrip_cost, consistent)}
     return out
 
 
@@ -138,14 +207,16 @@ def grade_due(db, prices: dict[str, float], now: datetime) -> int:
             continue
         excess = fwd_by_id[obs["id"]] - bench.get(obs["ts"], 0.0)   # opportunity-cost-correctie
         edge = excess * sign
-        db.resolve_factor_obs(obs["id"], obs["factor_key"], edge > 0, edge)
+        regime = obs["regime"] if "regime" in obs.keys() else None
+        db.resolve_factor_obs(obs["id"], obs["factor_key"], edge > 0, edge, regime=regime)
         graded += 1
     return graded
 
 
-def record_observations(db, reads: dict, prices: dict[str, float], now: datetime) -> None:
-    """Leg de factor-scores van deze cycle vast om later af te rekenen. Gegate op
-    SAMPLE_SECONDS zodat een 1-minuut-bot de tabel niet laat exploderen."""
+def record_observations(db, reads: dict, prices: dict[str, float], now: datetime,
+                        regime: str | None = None) -> None:
+    """Leg de factor-scores van deze cycle vast (met het huidige regime) om later af te
+    rekenen. Gegate op SAMPLE_SECONDS zodat een 1-minuut-bot de tabel niet laat exploderen."""
     last = db.get_meta("factor_obs_last")
     if last:
         try:
@@ -164,8 +235,9 @@ def record_observations(db, reads: dict, prices: dict[str, float], now: datetime
             if abs(f.score) < DEADBAND:
                 continue
             db.record_factor_obs(ts=ts, due_ts=due, factor_key=f.key,
-                                 pair=pair, score=f.score, price=price)
+                                 pair=pair, score=f.score, price=price, regime=regime)
             n += 1
     if n:
         db.set_meta("factor_obs_last", ts)
-        log.debug("leerlus: %d observaties vastgelegd (afrekenen over %.0fu)", n, HORIZON_HOURS)
+        log.debug("leerlus: %d observaties (regime=%s) vastgelegd (afrekenen over %.0fu)",
+                  n, regime, HORIZON_HOURS)

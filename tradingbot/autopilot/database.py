@@ -115,9 +115,21 @@ CREATE TABLE IF NOT EXISTS factor_obs (
     factor_key TEXT NOT NULL,
     pair    TEXT NOT NULL,
     score   REAL NOT NULL,
-    price   REAL NOT NULL           -- prijs op het observatiemoment
+    price   REAL NOT NULL,          -- prijs op het observatiemoment
+    regime  TEXT                    -- marktregime bij de observatie (bull|bear|chop)
 );
 CREATE INDEX IF NOT EXISTS idx_factor_obs_due ON factor_obs(due_ts);
+
+-- Edge per factor ÉN per regime: is een edge regime-stabiel of leunt hij op één regime?
+CREATE TABLE IF NOT EXISTS factor_stats_regime (
+    factor_key TEXT NOT NULL,
+    regime     TEXT NOT NULL,
+    n       INTEGER NOT NULL DEFAULT 0,
+    hits    INTEGER NOT NULL DEFAULT 0,
+    sum_edge REAL NOT NULL DEFAULT 0,
+    sum_edge2 REAL NOT NULL DEFAULT 0,
+    PRIMARY KEY (factor_key, regime)
+);
 """
 
 # Bayesiaanse krimp naar 0,5: een factor moet zijn betrouwbaarheid verdienen met data.
@@ -147,6 +159,9 @@ class Database:
         fcols = {r["name"] for r in self.conn.execute("PRAGMA table_info(factor_stats)")}
         if fcols and "sum_edge2" not in fcols:
             self.conn.execute("ALTER TABLE factor_stats ADD COLUMN sum_edge2 REAL NOT NULL DEFAULT 0")
+        ocols = {r["name"] for r in self.conn.execute("PRAGMA table_info(factor_obs)")}
+        if ocols and "regime" not in ocols:
+            self.conn.execute("ALTER TABLE factor_obs ADD COLUMN regime TEXT")
 
     def close(self) -> None:
         self.conn.close()
@@ -321,10 +336,11 @@ class Database:
     # ── factor-leerlus (forward-only betrouwbaarheid) ────────────────
 
     def record_factor_obs(self, *, ts: str, due_ts: str, factor_key: str,
-                          pair: str, score: float, price: float) -> None:
+                          pair: str, score: float, price: float, regime: str | None = None) -> None:
         self.conn.execute(
-            "INSERT INTO factor_obs(ts, due_ts, factor_key, pair, score, price) VALUES(?,?,?,?,?,?)",
-            (ts, due_ts, factor_key, pair, score, price),
+            "INSERT INTO factor_obs(ts, due_ts, factor_key, pair, score, price, regime) "
+            "VALUES(?,?,?,?,?,?,?)",
+            (ts, due_ts, factor_key, pair, score, price, regime),
         )
         self.conn.commit()
 
@@ -334,38 +350,62 @@ class Database:
         ).fetchall()
 
     def resolve_factor_obs(self, obs_id: int, factor_key: str,
-                           hit: bool | None, edge: float) -> None:
-        """Verwerk één beoordeelde observatie (excess-edge) in de aggregaten en verwijder ze."""
+                           hit: bool | None, edge: float, regime: str | None = None) -> None:
+        """Verwerk één beoordeelde observatie (excess-edge) in de aggregaten — totaal
+        én per regime — en verwijder ze."""
         if hit is not None:
+            e2 = edge * edge
             self.conn.execute(
                 "INSERT INTO factor_stats(factor_key, n, hits, sum_edge, sum_edge2) VALUES(?,?,?,?,?) "
                 "ON CONFLICT(factor_key) DO UPDATE SET n=n+1, hits=hits+?, "
                 "sum_edge=sum_edge+?, sum_edge2=sum_edge2+?",
-                (factor_key, 1, int(hit), edge, edge * edge, int(hit), edge, edge * edge),
+                (factor_key, 1, int(hit), edge, e2, int(hit), edge, e2),
+            )
+            self.conn.execute(
+                "INSERT INTO factor_stats_regime(factor_key, regime, n, hits, sum_edge, sum_edge2) "
+                "VALUES(?,?,?,?,?,?) ON CONFLICT(factor_key, regime) DO UPDATE SET "
+                "n=n+1, hits=hits+?, sum_edge=sum_edge+?, sum_edge2=sum_edge2+?",
+                (factor_key, regime or "onbekend", 1, int(hit), edge, e2, int(hit), edge, e2),
             )
         self.conn.execute("DELETE FROM factor_obs WHERE id=?", (obs_id,))
         self.conn.commit()
 
-    def factor_reliabilities(self) -> dict[str, dict]:
-        """Per factor: n, precisie (krimp naar 0,5), gemiddelde excess-edge en de
-        standaardfout van dat gemiddelde (voor significantie: is de edge te
-        onderscheiden van ruis?)."""
+    @staticmethod
+    def _stats_row(r) -> dict:
         import math
+        n = r["n"]
+        mean = r["sum_edge"] / n if n > 0 else 0.0
+        if n > 1:
+            var = max(0.0, (r["sum_edge2"] - r["sum_edge"] ** 2 / n) / (n - 1))
+            sd = math.sqrt(var)
+        else:
+            sd = None  # één observatie zegt statistisch niets
+        return {"n": n, "avg_edge": mean, "sd": sd}
+
+    def factor_reliabilities(self) -> dict[str, dict]:
+        """Per factor: n, precisie (krimp naar 0,5), gemiddelde excess-edge, de
+        spreiding (sd) per observatie — en de per-regime-uitsplitsing, zodat we kunnen
+        zien of een edge regime-stabiel is of op één regime leunt."""
+        breakdown = self.regime_breakdown()
         out: dict[str, dict] = {}
         for r in self.conn.execute("SELECT * FROM factor_stats"):
             n, hits = r["n"], r["hits"]
-            precision = (hits + FACTOR_PRIOR) / (n + 2 * FACTOR_PRIOR)
-            mean = r["sum_edge"] / n if n > 0 else 0.0
-            if n > 1:
-                var = max(0.0, (r["sum_edge2"] - r["sum_edge"] ** 2 / n) / (n - 1))
-                se = math.sqrt(var / n)
-            else:
-                se = float("inf")  # één observatie zegt statistisch niets
+            base = self._stats_row(r)
             out[r["factor_key"]] = {
-                "n": n, "precision": round(precision, 3),
-                "avg_edge": round(mean, 4),
-                "se": se if se == float("inf") else round(se, 5),
+                "n": n, "precision": round((hits + FACTOR_PRIOR) / (n + 2 * FACTOR_PRIOR), 3),
+                "avg_edge": round(base["avg_edge"], 4),
+                "sd": base["sd"] if base["sd"] is None else round(base["sd"], 5),
+                "regimes": breakdown.get(r["factor_key"], {}),
             }
+        return out
+
+    def regime_breakdown(self) -> dict[str, dict[str, dict]]:
+        """{factor_key: {regime: {n, avg_edge}}} — de edge per marktregime."""
+        out: dict[str, dict[str, dict]] = {}
+        for r in self.conn.execute("SELECT * FROM factor_stats_regime"):
+            s = self._stats_row(r)
+            out.setdefault(r["factor_key"], {})[r["regime"]] = {
+                "n": s["n"], "avg_edge": round(s["avg_edge"], 4)}
         return out
 
     # ── equity ────────────────────────────────────────────────────────

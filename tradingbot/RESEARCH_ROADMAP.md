@@ -89,6 +89,22 @@ vanzelf. Externe factoren worden context-gedempt (RSI/afstand tot gemiddelde).
 | L3 | **Factor-interacties** (trend+momentum+volume samen ≠ som der delen) | conditionele effecten vereisen een grote, schone dataset; hoog risico op overfitten |
 | L4 | **Volwaardige factor-competitie** met auto-promotie/degradatie naar order-invoer | pas als L1–L3 en het promotieprotocol (≥100 obs/bron, netto-edge OOS) gehaald zijn |
 
+**Stationariteit — deels ingebouwd, deels geparkeerd.** De meetlaag is inmiddels
+niet-stationariteit-bewust: excess t.o.v. de mand (haalt beta eruit), effectieve
+steekproef (overlap-correctie op de standaardfout), en **regime-conditionering** (edge
+per bull/bear/chop; alleen regime-stabiele edges tellen, anders status *eenzijdig*).
+Wat nog ontbreekt:
+
+| # | Idee | Waarom later |
+|---|---|---|
+| S1 | **Rolling-window-consistentie** (edge stabiel over voortschrijdende periodes, niet alleen full-sample) | vereist maanden data; nu nog te weinig punten |
+| S2 | **Gedrag rond regime-transities** (waar timing-strategieën juist breken) | pas te meten na meerdere doorgemaakte overgangen |
+| S3 | **Allocatie-impact (L3-eind):** verhoogt een factor de portefeuille-Sharpe, of alleen de geïsoleerde trefkans? | koppelt aan de allocatie-engine (spoor C); pas zinvol als een factor een bewezen edge heeft |
+
+Kernpunt blijft: ook regime-stabiele historische edge is een **noodzakelijke, geen
+voldoende** voorwaarde voor toekomstige winst. De volgende stap is geen extra laag maar
+**tijd** — genoeg observaties per factor én per regime.
+
 De eerstvolgende stap is **geen nieuwe factor** maar tijd: de bestaande factoren maanden
 laten meten tot er honderden observaties zijn. Pas dan is "welke informatie voegt echt
 iets toe boven prijs?" een eerlijk te beantwoorden vraag.

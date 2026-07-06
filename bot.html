@@ -145,8 +145,12 @@ svg { display:block; width:100%; height:auto; touch-action:none }
 .sbadge { font-size:11px; font-weight:700; padding:2px 8px; border-radius:99px; white-space:nowrap }
 .sb-actief { background:color-mix(in srgb,var(--up) 16%,transparent); color:var(--up) }
 .sb-onbewezen { background:color-mix(in srgb,var(--warn) 16%,transparent); color:var(--warn) }
+.sb-eenzijdig { background:color-mix(in srgb,var(--warn) 22%,transparent); color:var(--warn) }
 .sb-uitgeschakeld { background:color-mix(in srgb,var(--down) 22%,transparent); color:var(--down) }
 .sb-observeren { background:var(--chip); color:var(--muted) }
+.rgm { display:inline-flex; gap:5px; flex-wrap:wrap }
+.rgm span { font-size:10px; font-weight:700; padding:1px 6px; border-radius:6px; background:var(--chip) }
+.rgm .p { color:var(--up) } .rgm .n { color:var(--down) }
 .read .conf-mini { margin-left:6px; font-size:11px; color:var(--muted); font-weight:600 }
 
 .stopbox { border:1px solid var(--down); border-radius:16px; padding:16px; margin-top:26px }
@@ -387,22 +391,26 @@ function renderReliability(rel){
   const rows=(rel||[]).filter(r=>r.n>0);
   if(!rows.length) return `<div class="relboard"><div class="rl">Factor-track record</div>
     <div class="mut" style="font-size:12px">nog te weinig afgerekende observaties — het track record wordt vanaf ~1 dag opgebouwd (forward-only). Elke factor verdient zijn plek op <b>excess-rendement na kosten</b> dat statistisch van ruis te onderscheiden is, niet op accuracy.</div></div>`;
-  return `<div class="relboard"><div class="rl">Factor-track record <span class="mut" style="font-weight:400;text-transform:none">(forward-only · excess vs. de mand, na kosten · significantie bepaalt het gewicht)</span></div>
+  const RG={bull:'🐂',bear:'🐻',chop:'〰️',onbekend:'?'};
+  return `<div class="relboard"><div class="rl">Factor-track record <span class="mut" style="font-weight:400;text-transform:none">(forward-only · excess vs. de mand, na kosten · significantie + regime-stabiliteit bepalen het gewicht)</span></div>
     <div style="overflow-x:auto"><table class="reltbl">
-      <thead><tr><th>Factor</th><th>Obs.</th><th>Excess/obs</th><th>95%-ondergrens</th><th>Status</th></tr></thead>
+      <thead><tr><th>Factor</th><th>Obs. (eff.)</th><th>Excess/obs</th><th>95%-ondergrens</th><th>Per regime</th><th>Status</th></tr></thead>
       <tbody>${rows.map(r=>{
         const nc=r.net_edge>=0?'pos':'neg', st=esc(r.status||'observeren');
         const lo=r.net_edge_lo, loc=(lo!=null&&lo>=0)?'pos':'neg';
         const sig=r.significant?' ✓':'';
+        const rgs=Object.entries(r.regimes||{}).map(([k,v])=>
+          `<span class="${v>=0?'p':'n'}">${RG[k]||k} ${netpct(v)}</span>`).join('');
         return `<tr>
           <td>${esc(r.label)}${sig}</td>
-          <td>${r.n}</td>
+          <td>${r.n} <span class="mut">(${r.n_eff??'—'})</span></td>
           <td class="${nc}">${r.n>=20?netpct(r.net_edge):'—'}</td>
           <td class="${loc}">${(lo!=null&&r.n>=20)?netpct(lo):'—'}</td>
+          <td><span class="rgm">${rgs||'—'}</span></td>
           <td><span class="sbadge sb-${st}">${st}</span></td>
         </tr>`;}).join('')}</tbody>
     </table></div>
-    <div class="mut" style="font-size:11px;margin-top:8px">"Excess/obs" = hoeveel de coin het in de factor-richting <b>beter deed dan de gemiddelde coin</b> (opportunity cost), ná fees+spread+slippage. Een factor telt pas mee (status <b>actief</b>, ✓) als de <b>95%-ondergrens boven nul</b> ligt — anders is het niet van ruis te onderscheiden (<b>onbewezen</b>) en blijft het gewicht neutraal. Zo wordt beta-rijden en toeval niet als edge gelezen.</div></div>`;
+    <div class="mut" style="font-size:11px;margin-top:8px">"Excess/obs" = hoeveel de coin het in de factor-richting <b>beter deed dan de gemiddelde coin</b> (opportunity cost), ná kosten. "Obs. (eff.)" toont naast het aantal ook de <b>effectieve</b> steekproef ná overlap-correctie — 24u-vensters die elk uur worden gemeten overlappen sterk en tellen dus niet als losse waarnemingen. Status <b>actief</b> (✓) vereist dat de 95%-ondergrens boven nul ligt <b>én</b> dat de edge in meerdere regimes standhoudt; leunt hij op één regime → <b>eenzijdig</b> (geen upweight). Zo wordt beta, toeval én regime-toevalligheid niet als edge gelezen.</div></div>`;
 }
 
 function renderRead(r){

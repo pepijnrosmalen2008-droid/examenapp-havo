@@ -404,9 +404,10 @@ class TradingEngine:
             reads = compute_reads(candles, list(self.cfg.pairs), now, events=events,
                                   reliabilities=reliabilities) if candles else {}
 
-            # 2) de scores van deze cycle vastleggen om later af te rekenen
+            # 2) de scores van deze cycle vastleggen (met marktregime) om later af te rekenen
             if reads and prices:
-                fl.record_observations(self.db, reads, prices, now)
+                fl.record_observations(self.db, reads, prices, now,
+                                       regime=fl.market_regime(candles))
 
             held = {p.pair for p in self.db.open_positions()}
             rec = build_record(

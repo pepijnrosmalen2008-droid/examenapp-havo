@@ -201,6 +201,21 @@ bot koopt. Een hoger gewicht verandert dus de beslissingen maar niet de meting e
 dat breekt de zelfbevestigende lus. Restbeperking: de keuze van het universe en de
 sample-momenten blijven beleid.
 
+## D25 — Niet-stationariteit: overlap-correctie + regime-conditionering
+
+De significantie-toets uit D24 nam impliciet iid/stationaire data aan; crypto is dat niet.
+Twee correcties, opnieuw omdat het meetsysteem moet kloppen vóórdat er maanden data in
+gaan. (1) **Overlap → effectieve steekproef:** we meten elk uur maar rekenen over 24u af,
+dus vensters overlappen sterk en zijn niet onafhankelijk. De standaardfout gebruikt nu een
+effectieve n ≈ n × (sample/horizon); zonder dit 'bewijs' je een edge veel te makkelijk.
+(2) **Regime-conditionering:** elke observatie krijgt bij vastlegging het marktregime
+(bull/bear/chop) mee — dit moet vooraf, want achteraf niet te reconstrueren — en een factor
+is pas *actief* als zijn netto-edge in meerdere regimes standhoudt. Leunt hij op één regime
+→ status *eenzijdig*, geen hoger gewicht. Nieuwe tabel `factor_stats_regime` + `regime`-kolom
+op `factor_obs`. Drempels en de eerlijke grens (regime-stabiel = noodzakelijk, niet
+voldoende; markt is adaptief) staan in `experiments/edge_criteria.md`; rolling-window,
+regime-transities en allocatie-impact zijn expliciet geparkeerd (roadmap S1–S3).
+
 ## D22 — Meerdere bots naast elkaar + seed-portefeuille
 
 Om strategieën eerlijk te vergelijken kan de bot met `--config` draaien; elke config
