@@ -131,6 +131,13 @@ svg { display:block; width:100%; height:auto; touch-action:none }
 .rz .n { color:var(--muted); font-weight:700; flex:none; width:16px }
 .rz .rb { font-weight:600 } .rz .rd { color:var(--muted); font-size:12px }
 .rz .rel { margin-left:auto; flex:none; font-size:11px; color:var(--muted) }
+.kern { display:flex; gap:11px; align-items:flex-start; margin-top:14px; padding:13px 15px;
+  border:1px solid var(--border); border-left:3px solid var(--s1); border-radius:10px;
+  background:var(--chip); font-size:14.5px; line-height:1.5 }
+.kern .ki { font-size:18px; line-height:1.2; flex:none }
+.kern b { font-weight:700 }
+.kern .kc { display:inline-block; margin-left:6px; font-size:12px; font-weight:600; color:var(--muted);
+  white-space:nowrap }
 .cf { margin-top:14px }
 .cf .rl { font-size:12px; font-weight:700; color:var(--muted); text-transform:uppercase; letter-spacing:.04em; margin-bottom:6px }
 .cfz { display:flex; gap:10px; align-items:baseline; padding:6px 4px; border-top:1px solid var(--grid); font-size:13px; flex-wrap:wrap }
@@ -366,6 +373,11 @@ function renderHealth(){
 
 const STANCE_ICON={kopen:'🟢',verkopen:'🔴',herbalanceren:'🔄',cash:'💶',wachten:'⏳',
   gestopt:'⛔',pauze:'⏸'};
+const STRAT_WHY={dca:'Koopt periodiek bij',momentum_ma_cross:'Volgt trends',
+  grid:'Koopt laag, verkoopt hoog',cross_sectional:'Pakt de sterkste coins',
+  vol_target:'Stuurt op risico',hold:'Handelt alleen op nieuws/events'};
+const PLAIN_STANCE={kopen:'koopt bij',verkopen:'bouwt af',herbalanceren:'herbalanceert',
+  cash:'houdt cash aan',wachten:'wacht af',gestopt:'is gestopt',pauze:'pauzeert'};
 const TONE_LABEL={'risk-on':'📈 risk-on','risk-off':'📉 risk-off','gemengd':'⚖️ gemengd','onbekend':'—'};
 function convClass(c){ return c>0.15?'bullish':c<-0.15?'bearish':'neutraal'; }
 
@@ -410,6 +422,18 @@ function renderThinking(){
         → <b class="${c.without>=0?'up':'down'}">${c.without>=0?'+':''}${Math.round(c.without*100)}</b></span></div>`;}).join('')}
     </div>` : '';
 
+  // kernbeslissing in één zin: wat de bot fundamenteel doet → zijn keuze nu → de doorslag
+  const why=STRAT_WHY[STATE.strategy]||'Beslist';
+  const stance=PLAIN_STANCE[L.stance]||esc(L.stance);
+  let decisive='';
+  if(cf.length) decisive=`doorslaggevend: ${esc(cf[0].label)}`;
+  else if((L.reasons||[]).length) decisive=`vooral door ${esc(L.reasons[0].label)}`;
+  else if(wn.length) decisive=esc(wn[0]);
+  const conf0=Math.round((L.confidence||0)*100);
+  const kern=`<div class="kern"><span class="ki">${STANCE_ICON[L.stance]||'💭'}</span>
+    <span><b>${esc(why)} → ${stance}.</b>${decisive?' '+decisive+'.':''}
+    <span class="kc">zekerheid ${conf0}%</span></span></div>`;
+
   const reads=(L.considered||[]).map(renderRead).join('');
   const relBoard = renderReliability(t.reliability||[]);
   const hist=(t.history||[]).slice(0,8).map(h=>
@@ -426,6 +450,7 @@ function renderThinking(){
         <span class="tone">${TONE_LABEL[mk.tone]||esc(mk.tone||'')}</span>
       </div>
     </div>
+    ${kern}
     ${meter}
     ${reasonsBlock}
     ${cfBlock}
