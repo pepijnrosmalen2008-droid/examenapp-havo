@@ -63,6 +63,34 @@ bron onder deze randvoorwaarden geen overtuigende edge gaf.
 - **Conflict-engine:** decision-infrastructuur, geen nieuwe informatie → categorie 2.
   De bestaande risk engine + research-gating vervullen de veto-rol al.
 
+## Bekende beperkingen & frontier (bewust geparkeerd)
+De kop→richting-mapping is functioneel een hand-gecodeerde sentiment-classifier. Dat is
+aanvaardbaar zolang de meting het afrekent, maar er zijn echte grenzen — hier expliciet
+zodat ze niet als opgelost gelden:
+
+- **Interpretatie ≠ informatie.** De richting zit nu vast aan het opgeslagen event. Daardoor
+  kan een negatieve uitkomst drie oorzaken hebben — slecht nieuws, slechte interpretatie of
+  slechte timing — die we live niet uit elkaar trekken. S++ zou "raw event" (onveranderlijk)
+  scheiden van "interpretatie" (herwaardeerbaar). *Nu niet gebouwd.*
+- **Geen event-canonicalisatie.** 12 koppen over één onderliggend feit zijn geen 12 signalen.
+  *Wat het al dempt:* binnen één bron worden gelijktijdige koppen geaggregeerd tot één
+  factor; de overlap-correctie (effectieve n) telt een 48u-doorlopend event als ~2 i.p.v. 48
+  waarnemingen; en FDR corrigeert over factoren. *Resterend risico:* dezelfde wire-story over
+  meerdere bronnen = tot ~#bronnen gecorreleerde factoren. Reëel, maar begrensd.
+- **Attention-weighting is geleerd, niet aangenomen.** Elke bron/entiteit heeft een eigen
+  track record (`news:reuters`, `macro:fed`, …); een ruis-bron verdient simpelweg geen
+  gewicht en valt op *onbewezen*. Een echte "Fed > blog"-prior is er niet — die ontstaat uit
+  de data of niet.
+- **Geen causale scheiding.** We meten of nieuws vóór de prijsbeweging kwam (lead/lag op de
+  publish-timestamp), niet of prijs het nieuws veroorzaakte. Predictief, niet causaal.
+- **Geen adversariële/ruis-robuustheidstest**, en het rauwe event-logboek wordt na de TTL
+  gesnoeid (alleen de geaggregeerde statistiek blijft). Voor latere causale analyse zou je
+  het rauwe logboek willen bewaren — *prerequisite voor de frontier, nu niet nodig.*
+
+De frontier (event-canonical model, causale scoring i.p.v. predictieve, multi-view
+evaluators, tegenspraak-detectie tussen bronnen) is de volgende échte S++-stap, en bewust
+uitgesteld: eerst maanden meten met wat er staat.
+
 ## Wijzigingslog
 - **Uitbreiding (proactieve feed):** de bot haalt nu zélf nieuws op (RSS) i.p.v. alleen
   handmatig ingevoerde events. Reden: gebruikersverzoek om proactief naar rendabel nieuws te
