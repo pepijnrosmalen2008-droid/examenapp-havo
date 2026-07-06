@@ -72,15 +72,19 @@ zodat ze niet als opgelost gelden:
   kan een negatieve uitkomst drie oorzaken hebben — slecht nieuws, slechte interpretatie of
   slechte timing — die we live niet uit elkaar trekken. S++ zou "raw event" (onveranderlijk)
   scheiden van "interpretatie" (herwaardeerbaar). *Nu niet gebouwd.*
-- **Geen event-canonicalisatie.** 12 koppen over één onderliggend feit zijn geen 12 signalen.
-  *Wat het al dempt:* binnen één bron worden gelijktijdige koppen geaggregeerd tot één
-  factor; de overlap-correctie (effectieve n) telt een 48u-doorlopend event als ~2 i.p.v. 48
-  waarnemingen; en FDR corrigeert over factoren. *Resterend risico:* dezelfde wire-story over
-  meerdere bronnen = tot ~#bronnen gecorreleerde factoren. Reëel, maar begrensd.
-- **Attention-weighting is geleerd, niet aangenomen.** Elke bron/entiteit heeft een eigen
-  track record (`news:reuters`, `macro:fed`, …); een ruis-bron verdient simpelweg geen
-  gewicht en valt op *onbewezen*. Een echte "Fed > blog"-prior is er niet — die ontstaat uit
-  de data of niet.
+- **Geen event-canonicalisatie / geen cross-source duplicate-detection.** 12 koppen over één
+  onderliggend feit zijn geen 12 signalen. *Wat het al dempt:* binnen één bron worden
+  gelijktijdige koppen geaggregeerd tot één factor; de overlap-correctie (effectieve n) telt
+  een 48u-doorlopend event als ~2 i.p.v. 48 waarnemingen; en FDR corrigeert over factoren.
+  *Wat expliciet ontbreekt:* drie feeds die hetzelfde persbericht overnemen worden **niet**
+  herkend als één gebeurtenis → tot ~#bronnen gecorreleerde factoren. Reëel, maar begrensd.
+- **Bronbetrouwbaarheid wordt geleerd; aandacht/intensiteit wordt NIET gemeten.** Elke
+  bron/entiteit krijgt een track record van *historische voorspellende waarde* (`news:reuters`,
+  `macro:fed`, …); een ruis-bron verdient geen gewicht en valt op *onbewezen*. Dat is iets
+  anders dan **attention**: hoeveel aandacht een bericht kreeg toen het verscheen (aantal
+  overnames, unieke publicaties, publicatie-timing, zoek-/handelsactiviteit). Die intensiteits-
+  data hebben we niet, dus "Fed > blog" kan alleen als *achteraf gebleken nut*, niet als
+  *aandacht op het moment*.
 - **Geen causale scheiding.** We meten of nieuws vóór de prijsbeweging kwam (lead/lag op de
   publish-timestamp), niet of prijs het nieuws veroorzaakte. Predictief, niet causaal.
 - **Geen adversariële/ruis-robuustheidstest**, en het rauwe event-logboek wordt na de TTL
