@@ -86,3 +86,29 @@ def test_provenance_hashes_are_stable_and_config_sensitive():
     assert len(prov.code_hash()) == 10
     assert prov.config_hash(c1) != prov.config_hash(c2)    # config-gevoelig
     assert prov.config_hash(c1) == prov.config_hash(make_config())
+
+
+# ── zelfdiagnose (self-diagnostics / reliability) ──────────────────
+
+def test_health_reports_ok_and_flags_halt(db):
+    from autopilot import health
+    db.snapshot_equity(500, 500, 500)
+    h = health.diagnostics(db, make_config(), "PAPER")
+    assert h["overall"] in ("ok", "info", "warn")
+    names = {c["name"] for c in h["checks"]}
+    assert "Hartslag" in names and "Kill-switch" in names and "Concept-drift" in names
+    # halt → overall crit
+    db.set_meta("halted", "1"); db.set_meta("halt_reason", "max drawdown 30%")
+    h2 = health.diagnostics(db, make_config(), "PAPER")
+    assert h2["overall"] == "crit"
+    assert any(c["status"] == "crit" and "Kill-switch" in c["name"] for c in h2["checks"])
+
+
+def test_health_flags_drift(db):
+    from autopilot import health
+    db.snapshot_equity(500, 500, 500)
+    db.set_drift("momentum", {"n": 40, "mean": 0.0, "up_cum": 0, "up_min": 0,
+                              "dn_cum": 0, "dn_min": 0, "status": "drift-down"})
+    h = health.diagnostics(db, make_config(), "PAPER")
+    drift = next(c for c in h["checks"] if c["name"] == "Concept-drift")
+    assert drift["status"] == "warn" and "momentum" in drift["detail"]

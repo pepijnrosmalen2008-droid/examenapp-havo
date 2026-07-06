@@ -236,8 +236,18 @@ def build_payload(db: Database, cfg, mode: str) -> dict:
                        "SELECT ts, pair, reason FROM risk_decisions WHERE allowed=0 "
                        "ORDER BY id DESC LIMIT 12")],
         "thinking": _thinking(db, cfg),
+        "health": _health(db, cfg, mode),
         "updated": utcnow(),
     }
+
+
+def _health(db: Database, cfg, mode: str) -> dict:
+    from .health import diagnostics
+    try:
+        return diagnostics(db, cfg, mode)
+    except Exception:  # noqa: BLE001 — diagnose mag de sync nooit breken
+        log.exception("zelfdiagnose mislukt")
+        return {"overall": "info", "checks": [], "at": utcnow()}
 
 
 FACTOR_LABELS = {

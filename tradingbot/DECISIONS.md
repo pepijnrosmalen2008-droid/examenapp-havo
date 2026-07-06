@@ -235,6 +235,25 @@ lopende vol_target-allocatie; execution-quality-analytics wacht op SHADOW (in PA
 enkel de modelslippage echoën); multi-source datalake, meta-learning-volledig,
 research-automation en full observability staan met prioriteit op SPP_ROADMAP.md.
 
+## D27 — Zelfdiagnose + categorie-1/2-gate (precisie ≠ edge)
+
+Twee dingen uit de tweede gap-review. (1) **Zelfdiagnose** (`health.py`): de bot bewaakt
+zijn eigen gezondheid — hartslag, kill-switch, API/circuit-breaker, leerlus-voeding,
+concept-drift-alarmen, beslis-zekerheid-trend en database-groei — en meldt problemen zelf
+op het dashboard (paneel "Zelfdiagnose", ernstigste check bepaalt de kleur). Puur afgeleid
+van bestaande state; reliability/self-checks, geen extra proces of databron. Dit adresseert
+een terugkerende zorg ("zijn de bots vastgelopen?") en is de eerste laag van reliability
+engineering. (2) **Governance-gate:** elk nieuw onderdeel wordt gelabeld **categorie 1**
+(vergroot de kans op een échte informatievoorsprong) of **categorie 2** (maakt bestaand
+onderzoek nauwkeuriger). Vrijwel alles — inclusief drift/FDR/counterfactual/provenance/
+zelfdiagnose — is categorie 2. Dat is waardevol (voorkomt zelfmisleiding) maar creëert geen
+edge; categorie-2-werk wordt begrensd zolang er geen kandidaat-edge is. De enige echte
+categorie-1-hefbomen (nieuwe databronnen, research-automation) staan bewust laag: duur,
+foutgevoelig, en pas zinvol als het bestaande onderzoek is uitgemolken. SPP_ROADMAP.md is
+herrangschikt naar dit doel (retail-Bitvavo, klein kapitaal): portfolio → execution →
+reliability → lineage → meta-learning → calibration → Bayesian → research-automation →
+datalake. Multi-source datalake bewust verlaagd: meer bronnen ≠ betere research.
+
 ## D22 — Meerdere bots naast elkaar + seed-portefeuille
 
 Om strategieën eerlijk te vergelijken kan de bot met `--config` draaien; elke config

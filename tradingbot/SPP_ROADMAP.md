@@ -5,31 +5,54 @@ factoren of AI die handelt, maar om **adaptiviteit, statistische strengheid,
 uitlegbaarheid en reproduceerbaarheid**. Alles wat hieronder gebouwd wordt, is
 deterministisch, getoetst en **zichtbaar op het dashboard** (slagio.nl/bot.html).
 
-## Gebouwd (deze ronde) — elk zichtbaar op het dashboard
+## De leidende vraag bij ELK nieuw onderdeel (governance-gate)
 
-| Gebied | Wat | Waar op het dashboard |
-|---|---|---|
-| **Adaptiviteit** | **Concept-drift-detector** (Page-Hinkley) op de edge-stroom per factor. Kantelt een edge (drift-down), dan verliest de factor direct zijn hogere gewicht — binnen dagen, niet maanden. | Factor-track record → kolom **Drift** (⚠ drift ↓/↑) |
-| **Statistiek** | **Multiple-hypothesis-correctie** (Benjamini-Hochberg / FDR). Bij veel factoren zijn er altijd 'toevallig significante'; alleen wie de FDR overleeft blijft *actief*. | Kolom **p (FDR)** + het ✓-vinkje |
-| **Decision Intelligence** | **Counterfactual reasoning**: "zonder Wereld/macro was de overtuiging +12 i.p.v. −3" — welke factor was doorslaggevend. | Beslissingspaneel → **Wat-als** |
-| **Reproduceerbaarheid** | **Code- + config-hash** (werkt ook vanuit een ZIP, geen git nodig): elke beslissing herleidbaar naar exact deze code en instellingen. | Header → `code … · config … · py …` |
+> **Vergroot dit de kans dat ik een echte informatievoorsprong ontdek (categorie 1),
+> of maakt het alleen mijn bestaande onderzoek nauwkeuriger (categorie 2)?**
 
-Statistiek-nuance: de bestaande betrouwbaarheid gebruikt al Bayesiaanse krimp (prior
-naar 0,5). De significantie-poort is nu drie-lagig: overlap-gecorrigeerde CT-ondergrens
-(D24/D25) → **FDR over alle factoren** → regime-stabiliteit → drift-bewaking.
+Eerlijk: vrijwel alles op dit platform — inclusief bijna alles hieronder — is **categorie 2**.
+Een perfecte pipeline op prijsdata blijft een perfecte pipeline op prijsdata; een perfecte
+researchomgeving maakt uit zichzelf geen edge. Categorie 2 is waardevol (het voorkomt dat je
+jezelf een edge aanpraat), maar alleen **categorie 1** verandert wat de bot kán weten. Daarom:
+elk voorstel wordt voortaan als 1 of 2 gelabeld, en categorie-2-werk wordt begrensd zolang er
+geen kandidaat-edge is om nauwkeuriger te meten. De schaarste van echte categorie-1-bronnen
+voor retail-Bitvavo is zelf een bevinding: de eigen nulmeting wijst richting "waarschijnlijk
+geen duurzame prijs-only-edge".
 
-## Geparkeerd — bewust nog niet, met reden
+## Gebouwd — elk zichtbaar op het dashboard (categorie tussen haakjes)
 
-| Prioriteit | Onderdeel | Waarom later |
-|---|---|---|
-| ⭐⭐⭐⭐⭐ | **Portfolio Intelligence 2.0** (risico-gewogen allocatie: vol, correlatie, liquiditeit, confidence, regime) | dit is de vol_target-allocatie-engine (spoor C); wordt eerst tegen zijn pre-registered criteria getoetst vóór uitbreiding |
-| ⭐⭐⭐⭐⭐ | **Execution-quality-analytics** (intended vs. fill, alpha-verlies, latency) | in PAPER is de fill gesimuleerd → zou alleen de modelslippage echoën; pas betekenisvol in SHADOW/LIVE. Framework bouwen wanneer SHADOW draait. |
-| ⭐⭐⭐⭐☆ | **Meta-learning** (leersnelheid / decay / stabiliteit per factor) | deels gedekt door drift + regime-dispersie; volledige versie vereist maanden data |
-| ⭐⭐⭐⭐☆ | **Dataset-versioning** (expliciete dataset-hash naast code/config) | code+config-hash staat er; dataset-hash volgt zodra er externe databronnen zijn |
-| ⭐⭐⭐⭐☆ | **Bayesiaanse posterior / credible intervals** | frequentistische CI + FDR volstaan nu; posterior is een verfijning bij kleine-n |
-| ⭐⭐⭐☆☆ | **Research-automation** (AI als *scientist*: stelt hypotheses/analyses vóór, beslist nooit) | pas zinvol met een rijke dataset; blijft binnen "AI stelt voor, nooit handelen" |
-| ⭐⭐☆☆☆ | **Multi-source datalake** (orderboek, funding, OI, on-chain, ETF-flows) | zeer hoge kosten/complexiteit; eerst bewijzen dat de huidige bronnen iets opleveren |
-| ⭐⭐☆☆☆ | **Volledige observability** (CPU/RAM/latency/health per component) | operationeel nuttig, geen research-edge; komt bij productie-hardening |
+| Gebied | Wat | Cat. | Waar op het dashboard |
+|---|---|:--:|---|
+| **Adaptiviteit** | **Concept-drift-detector** (Page-Hinkley): kantelt een edge, dan verliest de factor direct zijn hogere gewicht — binnen dagen. | 2 | Factor-track record → **Drift** |
+| **Statistiek** | **FDR-correctie** (Benjamini-Hochberg): alleen wie de correctie over álle factoren overleeft blijft *actief*. | 2 | **p (FDR)** + ✓ |
+| **Reliability / self-diagnostics** | **Zelfdiagnose**: hartslag, kill-switch, API/circuit-breaker, leerlus-voeding, drift-alarmen, beslis-zekerheid-trend, database-groei — de bot meldt zelf "loop ik nog / krijg ik nog data / kantelt er iets". | 2 | Paneel **Zelfdiagnose** |
+| **Decision Intelligence** | **Counterfactual reasoning**: welke factor was doorslaggevend ("zonder macro +12 i.p.v. −3"). | 2 | Beslispaneel → **Wat-als** |
+| **Reproduceerbaarheid** | **Code- + config-hash** (werkt vanuit ZIP): elke beslissing herleidbaar. | 2 | Header |
+
+Statistiek-nuance: de significantie-poort is nu vier-lagig: overlap-gecorrigeerde
+CI-ondergrens (D24/D25) → **FDR over alle factoren** → regime-stabiliteit → drift-bewaking.
+
+## Geparkeerd — herrangschikt naar het doel (retail-Bitvavo, klein kapitaal)
+
+Rangorde overgenomen uit de review; multi-source datalake bewust verlaagd (meer bronnen ≠
+betere research, wél meer schijncorrelaties), execution + portfolio + reliability verhoogd.
+
+| Rang | Onderdeel | Cat. | Waarom (nog) niet nu |
+|:--:|---|:--:|---|
+| 1 | **Portfolio Intelligence 2.0** (risico-gewogen allocatie: vol, correlatie, liquiditeit, confidence, regime) | 2 | grootste praktische winst; is de lopende vol_target-engine — eerst tegen zijn pre-registered criteria toetsen |
+| 2 | **Execution-quality-analytics** (intended vs. fill, alpha-verlies, latency, retries) | 2 | meet of een theoretische edge écht uitvoerbaar is; in PAPER echoot de fill enkel de modelslippage → bouwen zodra SHADOW draait |
+| 3 | **Reliability engineering** (MTBF/MTTR, uptime, restart-freq, geheugen, DB-groei, scheduler-jitter) | 2 | zelfdiagnose is de eerste laag; volledige DevOps-voor-trading hoort bij productie-hardening |
+| 4 | **Data lineage & experiment-versioning** (dataset-hash naast code+config, seed, git-commit) | 2 | code+config-hash staat er; dataset-hash volgt zodra er externe databronnen zijn |
+| 5 | **Meta-learning** (leersnelheid / decay / stabiliteit per factor) | 2 | deels gedekt door drift + regime-dispersie; volledige versie vereist maanden data |
+| 6 | **Calibration** (zegt 80% confidence ook echt 80%? reliability-diagram, ECE) | 2 | de eerlijkheidscheck op confidence; heeft eerst een stroom (voorspelling → uitkomst) nodig — mechanisme volgt |
+| 7 | **Bayesiaanse posterior / credible intervals** | 2 | frequentistische CI + FDR volstaan nu; posterior is verfijning bij kleine-n, maakt een slechte factor niet goed |
+| 8 | **Research-automation** (AI als *scientist*: stelt hypotheses/analyses vóór, beslist nooit) | 1* | de zeldzame categorie-1-kandidaat, maar pas zinvol met rijke data; blijft "AI stelt voor, nooit handelen" |
+| 9 | **Multi-source datalake** (orderboek, funding, OI, on-chain, ETF-flows) | 1 | *de* categorie-1-hefboom, maar duur/foutgevoelig; eerst één nieuwe bron volledig uitmelken vóór er tien bijkomen |
+
+\* research-automation is meta (categorie 1 alléén als het naar nieuwe informatie zoekt).
+De enige echte categorie-1-onderdelen (nieuwe informatie) zijn #8 en #9 — en juist die
+staan laag omdat ze duur zijn en pas lonen als het bestaande onderzoek is uitgemolken.
+Dat spanningsveld is het eerlijke hart van dit platform.
 
 ## Bewust NIET (blijft van tafel)
 LLM die trades kiest · GPT die koopt/verkoopt · meer RSI-varianten of indicatoren ·

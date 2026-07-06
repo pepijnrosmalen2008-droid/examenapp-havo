@@ -157,6 +157,18 @@ svg { display:block; width:100%; height:auto; touch-action:none }
 .rgm .p { color:var(--up) } .rgm .n { color:var(--down) }
 .drift { font-size:11px; font-weight:700; white-space:nowrap }
 .drift.dn { color:var(--down) } .drift.up { color:var(--warn) }
+
+/* zelfdiagnose */
+.hh { display:flex; align-items:center; gap:10px; margin-bottom:4px }
+.hh .hdot { width:11px; height:11px; border-radius:50% }
+.hh .htxt { font-weight:700; font-size:15px }
+.hh .hsub { margin-left:auto; font-size:12px; color:var(--muted) }
+.hck { display:grid; grid-template-columns:15px 130px 1fr; gap:10px; align-items:baseline;
+  padding:8px 2px; border-top:1px solid var(--grid); font-size:13px }
+.hck:first-of-type { border-top:0 }
+.hck .cn { font-weight:600 } .hck .cd { color:var(--muted); min-width:0 }
+.hck .ci { font-size:12px; line-height:1 }
+.ci.ok { color:var(--up) } .ci.info { color:var(--muted) } .ci.warn { color:var(--warn) } .ci.crit { color:var(--down) }
 .read .conf-mini { margin-left:6px; font-size:11px; color:var(--muted); font-weight:600 }
 
 .stopbox { border:1px solid var(--down); border-radius:16px; padding:16px; margin-top:26px }
@@ -199,6 +211,9 @@ svg { display:block; width:100%; height:auto; touch-action:none }
     <div class="sub" id="h-updated"></div>
     <div class="sub" id="h-prov" style="font-family:ui-monospace,Menlo,monospace;opacity:.7"></div>
   </div>
+
+  <h2>Zelfdiagnose</h2>
+  <div class="card" id="health"></div>
 
   <h2>Verloop</h2>
   <div class="card">
@@ -326,7 +341,27 @@ function render(){
   const pv=(s.thinking&&s.thinking.provenance)||{};
   $('h-prov').textContent=pv.code?`code ${pv.code} · config ${pv.config||'—'} · py ${pv.python||'—'} · elke beslissing herleidbaar`:'';
 
-  renderThinking(); drawChart(); renderMetrics(); renderHoldings(); renderTrades(); renderBlocks();
+  renderHealth(); renderThinking(); drawChart(); renderMetrics(); renderHoldings(); renderTrades(); renderBlocks();
+}
+
+const HCOL={ok:'var(--up)',info:'var(--muted)',warn:'var(--warn)',crit:'var(--down)'};
+const HICO={ok:'✔',info:'•',warn:'▲',crit:'✕'};
+const HLABEL={ok:'gezond',info:'opbouwend',warn:'let op',crit:'actie nodig'};
+function renderHealth(){
+  const h=STATE.health;
+  if(!h||!h.checks||!h.checks.length){
+    $('health').innerHTML='<div class="empty">zelfdiagnose verschijnt na de eerste cyclus</div>';
+    return;
+  }
+  const ov=h.overall||'ok';
+  const head=`<div class="hh"><span class="hdot" style="background:${HCOL[ov]}"></span>
+    <span class="htxt">${HLABEL[ov]||ov}</span>
+    <span class="hsub">${h.checks.filter(c=>c.status==='warn'||c.status==='crit').length} aandachtspunt(en)</span></div>`;
+  const rows=h.checks.map(c=>`<div class="hck">
+    <span class="ci ${c.status}">${HICO[c.status]||'•'}</span>
+    <span class="cn">${esc(c.name)}</span>
+    <span class="cd">${esc(c.detail)}</span></div>`).join('');
+  $('health').innerHTML=head+rows;
 }
 
 const STANCE_ICON={kopen:'🟢',verkopen:'🔴',herbalanceren:'🔄',cash:'💶',wachten:'⏳',
