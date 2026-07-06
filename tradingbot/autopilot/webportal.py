@@ -264,7 +264,8 @@ def _thinking(db: Database, cfg) -> dict:
     rel = fl.enrich(db.factor_reliabilities(), fl.roundtrip_cost(cfg))
     reliability = sorted(
         ({"key": k, "label": _factor_label(k), "precision": v["precision"], "n": v["n"],
-          "avg_edge": v["avg_edge"], "net_edge": v["net_edge"], "status": v["status"]}
+          "avg_edge": v["avg_edge"], "net_edge": v["net_edge"], "net_edge_lo": v["net_edge_lo"],
+          "significant": v["significant"], "status": v["status"]}
          for k, v in rel.items()),
         key=lambda r: (-r["n"], -r["net_edge"]))
     if not recs:

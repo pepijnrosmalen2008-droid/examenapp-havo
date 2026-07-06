@@ -102,8 +102,9 @@ CREATE TABLE IF NOT EXISTS decision_log (
 CREATE TABLE IF NOT EXISTS factor_stats (
     factor_key TEXT PRIMARY KEY,
     n       INTEGER NOT NULL DEFAULT 0,   -- aantal beoordeelde observaties
-    hits    INTEGER NOT NULL DEFAULT 0,   -- keren dat de richting klopte
-    sum_edge REAL NOT NULL DEFAULT 0      -- som van (forward-return × teken score)
+    hits    INTEGER NOT NULL DEFAULT 0,   -- keren dat de EXCESS-richting klopte
+    sum_edge REAL NOT NULL DEFAULT 0,     -- som van excess-edge (t.o.v. de mand, opportunity cost)
+    sum_edge2 REAL NOT NULL DEFAULT 0     -- som van excess-edge² (voor variantie/significantie)
 );
 
 -- Openstaande observaties, later beoordeeld tegen de werkelijke koersbeweging.
@@ -143,6 +144,9 @@ class Database:
         cols = {r["name"] for r in self.conn.execute("PRAGMA table_info(equity_snapshots)")}
         if "bh_equity" not in cols:
             self.conn.execute("ALTER TABLE equity_snapshots ADD COLUMN bh_equity REAL")
+        fcols = {r["name"] for r in self.conn.execute("PRAGMA table_info(factor_stats)")}
+        if fcols and "sum_edge2" not in fcols:
+            self.conn.execute("ALTER TABLE factor_stats ADD COLUMN sum_edge2 REAL NOT NULL DEFAULT 0")
 
     def close(self) -> None:
         self.conn.close()
@@ -331,25 +335,36 @@ class Database:
 
     def resolve_factor_obs(self, obs_id: int, factor_key: str,
                            hit: bool | None, edge: float) -> None:
-        """Verwerk één beoordeelde observatie in de aggregaten en verwijder ze."""
+        """Verwerk één beoordeelde observatie (excess-edge) in de aggregaten en verwijder ze."""
         if hit is not None:
             self.conn.execute(
-                "INSERT INTO factor_stats(factor_key, n, hits, sum_edge) VALUES(?,?,?,?) "
-                "ON CONFLICT(factor_key) DO UPDATE SET n=n+1, hits=hits+?, sum_edge=sum_edge+?",
-                (factor_key, 1, int(hit), edge, int(hit), edge),
+                "INSERT INTO factor_stats(factor_key, n, hits, sum_edge, sum_edge2) VALUES(?,?,?,?,?) "
+                "ON CONFLICT(factor_key) DO UPDATE SET n=n+1, hits=hits+?, "
+                "sum_edge=sum_edge+?, sum_edge2=sum_edge2+?",
+                (factor_key, 1, int(hit), edge, edge * edge, int(hit), edge, edge * edge),
             )
         self.conn.execute("DELETE FROM factor_obs WHERE id=?", (obs_id,))
         self.conn.commit()
 
     def factor_reliabilities(self) -> dict[str, dict]:
-        """Per factor: n, precisie (met krimp naar 0,5) en gemiddelde edge."""
+        """Per factor: n, precisie (krimp naar 0,5), gemiddelde excess-edge en de
+        standaardfout van dat gemiddelde (voor significantie: is de edge te
+        onderscheiden van ruis?)."""
+        import math
         out: dict[str, dict] = {}
         for r in self.conn.execute("SELECT * FROM factor_stats"):
             n, hits = r["n"], r["hits"]
-            precision = (hits + FACTOR_PRIOR) / (n + 2 * FACTOR_PRIOR) if n >= 0 else 0.5
+            precision = (hits + FACTOR_PRIOR) / (n + 2 * FACTOR_PRIOR)
+            mean = r["sum_edge"] / n if n > 0 else 0.0
+            if n > 1:
+                var = max(0.0, (r["sum_edge2"] - r["sum_edge"] ** 2 / n) / (n - 1))
+                se = math.sqrt(var / n)
+            else:
+                se = float("inf")  # één observatie zegt statistisch niets
             out[r["factor_key"]] = {
                 "n": n, "precision": round(precision, 3),
-                "avg_edge": round(r["sum_edge"] / n, 4) if n > 0 else 0.0,
+                "avg_edge": round(mean, 4),
+                "se": se if se == float("inf") else round(se, 5),
             }
         return out
 

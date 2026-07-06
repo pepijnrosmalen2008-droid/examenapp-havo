@@ -144,8 +144,7 @@ svg { display:block; width:100%; height:auto; touch-action:none }
 .reltbl td.pos { color:var(--up) } .reltbl td.neg { color:var(--down) }
 .sbadge { font-size:11px; font-weight:700; padding:2px 8px; border-radius:99px; white-space:nowrap }
 .sb-actief { background:color-mix(in srgb,var(--up) 16%,transparent); color:var(--up) }
-.sb-voorzichtig { background:color-mix(in srgb,var(--warn) 18%,transparent); color:var(--warn) }
-.sb-verzwakt { background:color-mix(in srgb,var(--down) 14%,transparent); color:var(--down) }
+.sb-onbewezen { background:color-mix(in srgb,var(--warn) 16%,transparent); color:var(--warn) }
 .sb-uitgeschakeld { background:color-mix(in srgb,var(--down) 22%,transparent); color:var(--down) }
 .sb-observeren { background:var(--chip); color:var(--muted) }
 .read .conf-mini { margin-left:6px; font-size:11px; color:var(--muted); font-weight:600 }
@@ -387,22 +386,23 @@ const netpct = x => (x>=0?'+':'−')+Math.abs(x*100).toFixed(2)+'%';
 function renderReliability(rel){
   const rows=(rel||[]).filter(r=>r.n>0);
   if(!rows.length) return `<div class="relboard"><div class="rl">Factor-track record</div>
-    <div class="mut" style="font-size:12px">nog te weinig afgerekende observaties — het track record wordt vanaf ~1 dag opgebouwd (forward-only). Elke factor verdient zijn plek op <b>netto rendement na kosten</b>, niet op accuracy.</div></div>`;
-  return `<div class="relboard"><div class="rl">Factor-track record <span class="mut" style="font-weight:400;text-transform:none">(forward-only · netto na kosten bepaalt het gewicht)</span></div>
+    <div class="mut" style="font-size:12px">nog te weinig afgerekende observaties — het track record wordt vanaf ~1 dag opgebouwd (forward-only). Elke factor verdient zijn plek op <b>excess-rendement na kosten</b> dat statistisch van ruis te onderscheiden is, niet op accuracy.</div></div>`;
+  return `<div class="relboard"><div class="rl">Factor-track record <span class="mut" style="font-weight:400;text-transform:none">(forward-only · excess vs. de mand, na kosten · significantie bepaalt het gewicht)</span></div>
     <div style="overflow-x:auto"><table class="reltbl">
-      <thead><tr><th>Factor</th><th>Obs.</th><th>Accuracy</th><th>Netto/obs</th><th>Status</th></tr></thead>
+      <thead><tr><th>Factor</th><th>Obs.</th><th>Excess/obs</th><th>95%-ondergrens</th><th>Status</th></tr></thead>
       <tbody>${rows.map(r=>{
-        const nc=r.net_edge>=0?'pos':'neg';
-        const st=esc(r.status||'observeren');
+        const nc=r.net_edge>=0?'pos':'neg', st=esc(r.status||'observeren');
+        const lo=r.net_edge_lo, loc=(lo!=null&&lo>=0)?'pos':'neg';
+        const sig=r.significant?' ✓':'';
         return `<tr>
-          <td>${esc(r.label)}</td>
+          <td>${esc(r.label)}${sig}</td>
           <td>${r.n}</td>
-          <td>${Math.round(r.precision*100)}%</td>
           <td class="${nc}">${r.n>=20?netpct(r.net_edge):'—'}</td>
+          <td class="${loc}">${(lo!=null&&r.n>=20)?netpct(lo):'—'}</td>
           <td><span class="sbadge sb-${st}">${st}</span></td>
         </tr>`;}).join('')}</tbody>
     </table></div>
-    <div class="mut" style="font-size:11px;margin-top:8px">"Accuracy" = hoe vaak de richting klopte. "Netto/obs" = gemiddelde koersbeweging in de factor-richting ná fees+spread+slippage — dít stuurt het gewicht, want een factor kan 58% raak zitten en tóch geld verliezen.</div></div>`;
+    <div class="mut" style="font-size:11px;margin-top:8px">"Excess/obs" = hoeveel de coin het in de factor-richting <b>beter deed dan de gemiddelde coin</b> (opportunity cost), ná fees+spread+slippage. Een factor telt pas mee (status <b>actief</b>, ✓) als de <b>95%-ondergrens boven nul</b> ligt — anders is het niet van ruis te onderscheiden (<b>onbewezen</b>) en blijft het gewicht neutraal. Zo wordt beta-rijden en toeval niet als edge gelezen.</div></div>`;
 }
 
 function renderRead(r){

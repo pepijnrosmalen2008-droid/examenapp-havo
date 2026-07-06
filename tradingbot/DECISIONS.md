@@ -178,6 +178,29 @@ lijst en een expliciete **"waarom geen trade?"**. Externe factoren worden bovend
 afstand boven het gemiddelde). De sample-gate (max. 1 observatie-batch/uur) houdt de
 leertabellen klein, ook voor de 1-minuut-bot.
 
+## D24 — Edge = excess na kosten, met significantie-drempel (ruis ≠ signaal)
+
+Twee correcties op de factor-leerlus die bepalen of het meetsysteem klopt vóór er
+maanden data in gaan. (1) **Opportunity cost:** de edge is niet meer "ging de coin
+omhoog?" maar de **excess t.o.v. de mand** (koersbeweging in factor-richting min de
+gemiddelde beweging van alle waargenomen coins, zelfde venster), ná fees+spread+slippage.
+Een factor die alleen beta rijdt scoort daardoor ~0; alleen relatieve voorspelkracht
+telt. Gevolg: met één coin is de excess per definitie 0 (geen mand om je tegen te meten) —
+correct, want cross-sectionele skill vereist ≥2 coins. (2) **Significantie:** we houden nu
+ook de variantie bij (`sum_edge2`) en berekenen een standaardfout. Het **gewicht wijkt
+pas van 1,0 af als de conservatieve ondergrens `mean − Z·SE − kosten` (Z=1,64, n≥30) de
+juiste kant van nul ligt** — niet op basis van het gemiddelde alleen. Zo wordt een
+positief-lijkende maar ruizige of dun-bemeten factor als *onbewezen* behandeld i.p.v.
+opgetild. Statussen: observeren → onbewezen → actief / uitgeschakeld. De vooraf
+vastgelegde drempels (ook de zwaardere lat voor échte order-invoer) staan in
+`experiments/edge_criteria.md`.
+
+Bewust benoemd (policy-dependence): de factor-statistiek is **observationeel en
+universe-breed** — observaties worden voor alle gevolgde coins vastgelegd, los van wat de
+bot koopt. Een hoger gewicht verandert dus de beslissingen maar niet de meting eronder;
+dat breekt de zelfbevestigende lus. Restbeperking: de keuze van het universe en de
+sample-momenten blijven beleid.
+
 ## D22 — Meerdere bots naast elkaar + seed-portefeuille
 
 Om strategieën eerlijk te vergelijken kan de bot met `--config` draaien; elke config

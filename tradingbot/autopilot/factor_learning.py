@@ -15,6 +15,7 @@ uitleg (en de gated research-voorstellen) slimmer.
 from __future__ import annotations
 
 import logging
+from collections import defaultdict
 from datetime import datetime, timedelta
 
 log = logging.getLogger("autopilot.learning")
@@ -22,6 +23,12 @@ log = logging.getLogger("autopilot.learning")
 HORIZON_HOURS = 24.0        # over welke termijn een factor-observatie wordt afgerekend
 SAMPLE_SECONDS = 3600       # hoogstens één observatie-batch per uur (houdt de tabel klein)
 DEADBAND = 0.05             # scores dichter bij 0 dan dit tellen niet mee (ruis)
+
+# ── Vooraf vastgelegde drempels om ruis niet als signaal te lezen ──────────────
+#   Z = eenzijdige 95%-grens; een factor mag zijn gewicht pas van 1,0 laten afwijken
+#   als de ondergrens van zijn netto-edge (na kosten) déze kant van nul ligt.
+Z_SIGNIF = 1.64
+MIN_N_SIGNIF = 30           # onder dit aantal observaties: nooit 'bewezen', altijd neutraal
 
 
 def reliability_multiplier(precision: float) -> float:
@@ -33,47 +40,60 @@ def reliability_multiplier(precision: float) -> float:
     return max(0.4, min(1.6, 1.0 + (precision - 0.5) * 3.0))
 
 
-# Vanaf hoeveel observaties de edge het gewicht mag sturen (daaronder krimp naar 1,0).
-EDGE_CONFIDENCE_N = 30
+def _conservative_edge(net: float, se: float) -> float:
+    """De rand van het betrouwbaarheidsinterval die het dichtst bij nul ligt.
+    Zo telt alleen het deel van de edge dat statistisch overeind blijft; bij grote
+    onzekerheid (kleine n, hoge variantie) valt dit vanzelf naar 0 → gewicht blijft 1,0."""
+    if se == float("inf") or se <= 0:
+        return 0.0
+    if net > 0:
+        return max(0.0, net - Z_SIGNIF * se)
+    return min(0.0, net + Z_SIGNIF * se)
 
 
-def weight_multiplier(avg_edge: float, n: int, roundtrip_cost: float) -> float:
-    """Effectieve gewichtsvermenigvuldiger op basis van de **netto verwachte return**
-    (na kosten), niet op accuracy. Een factor die vaker goed dan fout zit maar door
-    fees/spread/slippage tóch geld verliest, verdient géén hoger gewicht.
+def weight_multiplier(avg_edge: float, se: float, n: int, roundtrip_cost: float) -> float:
+    """Effectief gewicht op basis van de **statistisch verantwoorde** netto-edge.
 
-    net_edge = gemiddelde (return × teken score) − round-trip-kosten. 0 → 1,0;
-    positief tilt op tot ~1,6; negatief knijpt af tot ~0,3. Met weinig data schuift
-    het resultaat naar 1,0 (we geloven een edge pas na genoeg observaties)."""
+    Niet het gemiddelde stuurt het gewicht, maar de conservatieve ondergrens ervan
+    (mean − Z·SE). Een factor die vaak 'goed' zit maar met veel ruis of weinig data
+    krijgt dus géén hoger gewicht — precies om noise niet als signaal te lezen. Onder
+    MIN_N_SIGNIF observaties blijft het gewicht neutraal (1,0)."""
+    if n < MIN_N_SIGNIF:
+        return 1.0
+    cons = _conservative_edge(avg_edge - roundtrip_cost, se)
+    return max(0.3, min(1.6, 1.0 + cons * 60.0))   # +1%/obs bewezen-netto → ~1,6
+
+
+def factor_status(avg_edge: float, se: float, n: int, roundtrip_cost: float) -> str:
+    """Track-record-status: is de netto-edge statistisch te onderscheiden van ruis?
+      observeren   – onvoldoende data
+      actief       – ondergrens netto-edge > 0 (bewezen positief, na kosten)
+      uitgeschakeld– bovengrens netto-edge < 0 (bewezen verlieslatend)
+      onbewezen    – niet van nul te onderscheiden (ruis; gewicht blijft neutraal)"""
     net = avg_edge - roundtrip_cost
-    edge_mult = max(0.3, min(1.6, 1.0 + net * 60.0))   # +1%/obs netto → ~1,6; −1% → 0,4
-    blend = n / (n + EDGE_CONFIDENCE_N) if n >= 0 else 0.0
-    return 1.0 * (1 - blend) + edge_mult * blend
-
-
-def factor_status(avg_edge: float, n: int, roundtrip_cost: float) -> str:
-    """Track-record-status à la factor-competitie: verdient de factor zijn plek?"""
-    net = avg_edge - roundtrip_cost
-    if n < 20:
-        return "observeren"          # onvoldoende data
-    if net > 0.001:
-        return "actief"              # positieve netto-edge
-    if net >= -0.001:
-        return "voorzichtig"         # rond nul
-    if n >= 60 and net <= -0.003:
-        return "uitgeschakeld"       # structureel negatief, veel data
-    return "verzwakt"
+    if n < MIN_N_SIGNIF or se == float("inf"):
+        return "observeren"
+    if net - Z_SIGNIF * se > 0:
+        return "actief"
+    if net + Z_SIGNIF * se < 0:
+        return "uitgeschakeld"
+    return "onbewezen"
 
 
 def enrich(rel: dict[str, dict], roundtrip_cost: float) -> dict[str, dict]:
-    """Voeg netto-edge, gewichts-multiplier en status toe aan de ruwe betrouwbaarheden."""
+    """Voeg netto-edge, significantie, gewichts-multiplier en status toe. `se` (met
+    mogelijke inf) blijft binnen deze laag — de payload krijgt alleen JSON-veilige velden."""
     out: dict[str, dict] = {}
     for k, v in rel.items():
-        ae, n = v.get("avg_edge", 0.0), v.get("n", 0)
-        out[k] = {**v,
-                  "net_edge": round(ae - roundtrip_cost, 4),
-                  "weight_mult": round(weight_multiplier(ae, n, roundtrip_cost), 3),
-                  "status": factor_status(ae, n, roundtrip_cost)}
+        ae, n, se = v.get("avg_edge", 0.0), v.get("n", 0), v.get("se", float("inf"))
+        net = ae - roundtrip_cost
+        significant = n >= MIN_N_SIGNIF and se != float("inf") and abs(net) - Z_SIGNIF * se > 0
+        out[k] = {"n": n, "precision": v.get("precision", 0.5), "avg_edge": round(ae, 4),
+                  "net_edge": round(net, 4),
+                  "net_edge_lo": None if se == float("inf") else round(net - Z_SIGNIF * se, 4),
+                  "significant": bool(significant),
+                  "weight_mult": round(weight_multiplier(ae, se, n, roundtrip_cost), 3),
+                  "status": factor_status(ae, se, n, roundtrip_cost)}
     return out
 
 
@@ -84,19 +104,40 @@ def roundtrip_cost(cfg) -> float:
 
 
 def grade_due(db, prices: dict[str, float], now: datetime) -> int:
-    """Beoordeel alle observaties waarvan de horizon is verstreken. Geeft aantal terug."""
-    graded = 0
-    for obs in db.due_factor_obs(now.isoformat(timespec="seconds")):
+    """Beoordeel alle observaties waarvan de horizon is verstreken — **relatief aan de
+    markt** (opportunity cost). De edge is niet "ging de coin omhoog?" maar "deed de coin
+    het béter dan de gemiddelde coin over hetzelfde venster?". Zo wordt een factor die
+    alleen beta rijdt (in een stijgende markt lijkt alles goed) correct als géén edge
+    beoordeeld; alleen echte relatieve voorspelkracht telt.
+
+    De mand-benchmark per observatiebatch (zelfde `ts`) = het gemiddelde forward-rendement
+    van alle coins in die batch die we nú kunnen prijzen."""
+    due = db.due_factor_obs(now.isoformat(timespec="seconds"))
+    if not due:
+        return 0
+
+    # forward-return per observatie berekenen + de mand-benchmark per batch
+    fwd_by_id: dict[int, float] = {}
+    cohort_rets: dict[str, list[float]] = defaultdict(list)
+    for obs in due:
         price_now = prices.get(obs["pair"])
-        if not price_now or obs["price"] <= 0:
-            db.resolve_factor_obs(obs["id"], obs["factor_key"], None, 0.0)  # onbeoordeelbaar → laten vallen
+        if price_now and obs["price"] > 0:
+            fwd = price_now / obs["price"] - 1.0
+            fwd_by_id[obs["id"]] = fwd
+            cohort_rets[obs["ts"]].append(fwd)
+    bench = {ts: (sum(rs) / len(rs)) for ts, rs in cohort_rets.items() if rs}
+
+    graded = 0
+    for obs in due:
+        if obs["id"] not in fwd_by_id:
+            db.resolve_factor_obs(obs["id"], obs["factor_key"], None, 0.0)  # onbeoordeelbaar
             continue
-        fwd = price_now / obs["price"] - 1.0
         sign = 1 if obs["score"] > 0 else -1 if obs["score"] < 0 else 0
         if sign == 0:
             db.resolve_factor_obs(obs["id"], obs["factor_key"], None, 0.0)
             continue
-        edge = fwd * sign
+        excess = fwd_by_id[obs["id"]] - bench.get(obs["ts"], 0.0)   # opportunity-cost-correctie
+        edge = excess * sign
         db.resolve_factor_obs(obs["id"], obs["factor_key"], edge > 0, edge)
         graded += 1
     return graded

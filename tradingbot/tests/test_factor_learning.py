@@ -26,18 +26,33 @@ def test_reliability_multiplier_monotone():
     assert fl.reliability_multiplier(0.3) < 1.0
 
 
-def test_record_and_grade_updates_stats(db):
-    reads = compute_reads({"AAA-EUR": ramp(100, 1)}, ["AAA-EUR"], NOW)
-    fl.record_observations(db, reads, {"AAA-EUR": 100.0}, NOW)
+def test_record_and_grade_updates_stats_cross_section(db):
+    # Twee coins die uiteenlopen: AAA stijgt (momentum +), CCC daalt (momentum −).
+    pairs = ["AAA-EUR", "CCC-EUR"]
+    candles = {"AAA-EUR": ramp(100, 1), "CCC-EUR": ramp(100, -1)}
+    reads = compute_reads(candles, pairs, NOW)
+    obs_px = {"AAA-EUR": candles["AAA-EUR"][-1].close, "CCC-EUR": candles["CCC-EUR"][-1].close}
+    fl.record_observations(db, reads, obs_px, NOW)
     # nog niets af te rekenen vóór de horizon
-    assert fl.grade_due(db, {"AAA-EUR": 110.0}, NOW + timedelta(hours=1)) == 0
-    # ná de horizon met een gestegen koers → positieve prijsfactoren krijgen 'hits'
-    graded = fl.grade_due(db, {"AAA-EUR": 130.0}, NOW + timedelta(hours=25))
+    assert fl.grade_due(db, obs_px, NOW + timedelta(hours=1)) == 0
+    # ná de horizon: de winnaar liep verder op, de verliezer verder omlaag → momentum
+    # discrimineerde correct (relatief aan de mand), dus 'hits'
+    later = {"AAA-EUR": obs_px["AAA-EUR"] * 1.2, "CCC-EUR": obs_px["CCC-EUR"] * 0.8}
+    graded = fl.grade_due(db, later, NOW + timedelta(hours=25))
     assert graded > 0
     rel = db.factor_reliabilities()
-    assert rel and any(v["n"] > 0 for v in rel.values())
     mom = rel.get("momentum")
-    assert mom and mom["precision"] > 0.5  # bullish momentum bleek te kloppen
+    assert mom and mom["n"] > 0 and mom["precision"] > 0.5
+
+
+def test_single_coin_cohort_has_zero_excess(db):
+    # Met één coin is er geen mand om je tegen te meten → excess = 0 → niet als hit geteld.
+    reads = compute_reads({"AAA-EUR": ramp(100, 1)}, ["AAA-EUR"], NOW)
+    fl.record_observations(db, reads, {"AAA-EUR": 169.0}, NOW)
+    fl.grade_due(db, {"AAA-EUR": 250.0}, NOW + timedelta(hours=25))
+    rel = db.factor_reliabilities()
+    # alle edges ~0 → geen enkele factor bewijst iets (opportunity-cost-correctie)
+    assert all(abs(v["avg_edge"]) < 1e-6 for v in rel.values())
 
 
 def test_sample_gate_prevents_spam(db):
@@ -61,36 +76,41 @@ def test_reliability_changes_effective_weight(db):
     assert mom_low.reliability == 0.3 and mom_low.n_obs == 100
 
 
-def test_weight_multiplier_uses_net_edge_not_accuracy():
-    cost = 0.007  # ~round-trip
-    # ruime data, positieve netto-edge → opgetild
-    assert fl.weight_multiplier(0.02, 200, cost) > 1.1
-    # ruime data, negatieve netto-edge → afgeknepen (ook al 'klopt de richting' vaak)
-    assert fl.weight_multiplier(-0.02, 200, cost) < 0.9
-    # weinig data → dicht bij 1,0 (nog geen bewijs)
-    assert abs(fl.weight_multiplier(0.02, 2, cost) - 1.0) < 0.1
-
-
-def test_factor_status_thresholds():
+def test_weight_multiplier_needs_significance():
     cost = 0.007
-    assert fl.factor_status(0.05, 5, cost) == "observeren"
-    assert fl.factor_status(0.02, 100, cost) == "actief"
-    assert fl.factor_status(-0.02, 100, cost) == "uitgeschakeld"
+    # veel data, kleine SE, positieve netto-edge boven de ondergrens → opgetild
+    assert fl.weight_multiplier(0.02, 0.002, 200, cost) > 1.1
+    # zelfde gemiddelde maar grote SE (ruis) → ondergrens < 0 → géén optillen
+    assert abs(fl.weight_multiplier(0.02, 0.05, 200, cost) - 1.0) < 0.05
+    # weinig data → altijd neutraal
+    assert fl.weight_multiplier(0.02, 0.002, 5, cost) == 1.0
+    # bewezen negatief → afgeknepen
+    assert fl.weight_multiplier(-0.02, 0.002, 200, cost) < 0.9
 
 
-def test_enrich_adds_net_edge_and_status(db):
-    db.conn.execute("INSERT INTO factor_stats(factor_key,n,hits,sum_edge) VALUES('momentum',100,60,2.0)")
+def test_factor_status_significance():
+    cost = 0.007
+    assert fl.factor_status(0.05, 0.001, 5, cost) == "observeren"        # te weinig data
+    assert fl.factor_status(0.02, 0.002, 200, cost) == "actief"          # significant positief
+    assert fl.factor_status(-0.02, 0.002, 200, cost) == "uitgeschakeld"  # significant negatief
+    assert fl.factor_status(0.02, 0.05, 200, cost) == "onbewezen"        # ruis
+
+
+def test_enrich_adds_significance_fields(db):
+    db.conn.execute("INSERT INTO factor_stats(factor_key,n,hits,sum_edge,sum_edge2) "
+                    "VALUES('momentum',100,60,2.0,0.06)")
     db.conn.commit()
     rel = fl.enrich(db.factor_reliabilities(), 0.007)
-    assert "net_edge" in rel["momentum"] and "status" in rel["momentum"]
-    assert rel["momentum"]["net_edge"] == round(0.02 - 0.007, 4)
+    m = rel["momentum"]
+    assert m["net_edge"] == round(0.02 - 0.007, 4)
+    assert "significant" in m and "net_edge_lo" in m and "status" in m
 
 
 def test_positive_edge_outweighs_high_accuracy_negative_edge():
     candles = {"AAA-EUR": ramp(100, 1)}
-    # momentum: hoge accuracy maar netto verlieslatend; trend: nette positieve edge
-    rel = fl.enrich({"momentum": {"precision": 0.7, "n": 200, "avg_edge": -0.02},
-                     "trend": {"precision": 0.55, "n": 200, "avg_edge": 0.02}}, 0.007)
+    # momentum: hoge accuracy maar bewezen netto-negatief; trend: bewezen netto-positief
+    rel = fl.enrich({"momentum": {"precision": 0.7, "n": 200, "avg_edge": -0.02, "se": 0.002},
+                     "trend": {"precision": 0.55, "n": 200, "avg_edge": 0.02, "se": 0.002}}, 0.007)
     reads = compute_reads(candles, ["AAA-EUR"], NOW, reliabilities=rel)
     facs = {f.key: f for f in reads["AAA-EUR"].factors}
     assert facs["trend"].weight_effective > facs["momentum"].weight_effective
