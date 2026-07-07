@@ -79,7 +79,7 @@ def slice_data(data: dict[str, list[Candle]], start_ms: int, end_ms: int,
 
 def run_backtest(cfg: AppConfig, strategy_name: str, data: dict[str, list[Candle]],
                  warmup: int = WARMUP_CANDLES, params: dict | None = None,
-                 capital: float | None = None) -> dict:
+                 capital: float | None = None, market: "ReplayMarket | None" = None) -> dict:
     cfg = cfg.model_copy(deep=True)
     cfg.strategy.name = strategy_name  # type: ignore[assignment]
     if params is not None:
@@ -88,7 +88,7 @@ def run_backtest(cfg: AppConfig, strategy_name: str, data: dict[str, list[Candle
         cfg.capital_eur = capital
 
     db = Database(":memory:")
-    market = ReplayMarket(data)
+    market = market if market is not None else ReplayMarket(data)  # injecteerbaar (adversarial)
     paper = PaperExchange(db, market, capital_eur=cfg.capital_eur,
                           taker_fee_pct=cfg.costs.taker_fee_pct,
                           slippage_pct=cfg.costs.slippage_pct)

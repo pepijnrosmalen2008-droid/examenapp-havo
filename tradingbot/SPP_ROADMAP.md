@@ -138,6 +138,7 @@ geen duurzame prijs-only-edge".
 | **Reliability / self-diagnostics** | **Zelfdiagnose**: hartslag, kill-switch, API/circuit-breaker, leerlus-voeding, drift-alarmen, beslis-zekerheid-trend, database-groei — de bot meldt zelf "loop ik nog / krijg ik nog data / kantelt er iets". | 2 | Paneel **Zelfdiagnose** |
 | **Decision Intelligence** | **Counterfactual reasoning**: welke factor was doorslaggevend ("zonder macro +12 i.p.v. −3"). | 2 | Beslispaneel → **Wat-als** |
 | **Reproduceerbaarheid** | **Code- + config-hash** (werkt vanuit ZIP): elke beslissing herleidbaar. | 2 | Header |
+| **Falsificatie** | **Adversariële laag** (`adversarial.py`): cost-stress · shuffle-null · delay · leave-one-out — de machine probeert zijn eigen edge te breken. | 2 | CLI (offline) |
 
 Statistiek-nuance: de significantie-poort is nu vier-lagig: overlap-gecorrigeerde
 CI-ondergrens (D24/D25) → **FDR over alle factoren** → regime-stabiliteit → drift-bewaking.

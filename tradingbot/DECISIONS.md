@@ -289,6 +289,24 @@ only leerlus (excess na kosten, FDR, regime, drift) rekent 'm af; de acceptatiec
 experiments/2026_news_event_bot.md blijven ongewijzigd. "Waarom hij koopt" = de kop zelf,
 zichtbaar als reden in de trade + externe factor + beslissingspaneel.
 
+## D30 — Adversariële onderzoekslaag (de machine valt zijn eigen edge aan)
+
+Van de zes voorgestelde 10/10-lagen bouwt er precies één nu volledig: de **adversariële
+laag** (`adversarial.py` + `autopilot/adversarial.py`) — de zuiverste belichaming van de
+falsificatie-missie en de enige die draait op data die al bestaat (historische candles via
+de backtester). Vier aanvallen op een gemeten excess-vs-hold: **cost-stress** (×2/×4 kosten),
+**shuffle** (permuteer returns → null-verdeling → `p_luck`: is de edge van toeval te
+onderscheiden?), **delay** (verouderde candles, uitvoeren op de actuele prijs → zat de edge
+in de timing?), en **universe/leave-one-out** (leunt de edge op één coin?). `run_all` geeft
+een verdict met concrete flags. Kleine, backward-compatibele hook: `run_backtest(..., market=)`
+zodat een gelaagde markt injecteerbaar is voor de delay-toets.
+
+De overige vijf, met reden: **calibration** en **volledige per-trade lineage** zijn buildbaar
+maar raken het live-pad/payload → zorgvuldige aparte stap. **Information Engine 2.0** = conditie
+B per Research Program (externe data + pre-registratie eerst), geen bulk-build. **Evidence
+Allocation Engine** blijft gegate tot ≥1 factor `actief` is. Zo bouwt "bouw dit" alleen wat nu
+eerlijk kan, en blijft de rest achter zijn poort.
+
 ## D22 — Meerdere bots naast elkaar + seed-portefeuille
 
 Om strategieën eerlijk te vergelijken kan de bot met `--config` draaien; elke config
