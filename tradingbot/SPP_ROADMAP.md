@@ -46,6 +46,25 @@ te concluderen, niet door te bouwen.
 > Een uiteindelijke "nee" is een legitieme, waardevolle uitkomst — het bewijs dat de machine
 > streng genoeg was om een aantrekkelijke maar onbewezen hypothese niet door te laten.
 
+## Doelarchitectuur (north-star): rollen, geen bots
+
+Niet één alles-in-één-bot, maar één centrale beslisengine gevoed door gespecialiseerde
+onderzoeksrollen. De kracht is de **scheiding van verantwoordelijkheden** — makkelijker te
+begrijpen, testen en falsifiëren. De rol die daadwerkelijk "trades kiest" is uiteindelijk
+het kleinst; het meeste werk zit in bewijs verzamelen en risico beheren.
+
+| Rol | Nu | Doel |
+|---|---|---|
+| **Benchmark** | DCA-bot | referentie: is het platform beter dan niets doen? |
+| **Prijs-research** | momentum · rotatie · grid | prijs-hypotheses toetsen (grotendeels uitgeput) |
+| **Informatie-probe** | nieuws-bot | niet-prijs-informatie onderzoeken (nieuws → later funding/macro/on-chain); onderzoekt, handelt nauwelijks |
+| **Allocatie-engine** | vol_target | bewezen signalen → portefeuillegewichten + risicobudget (fase 4, natuurlijke eindbestemming) |
+| **Risk engine** | risk-laag | enige component die orders autoriseert |
+
+Volgorde die telt: een probe levert pas iets aan de allocatie-engine als hij de teststraat
+overleeft. Eerst onafhankelijk bewijs, dan pas invloed op allocatie. Dit is geen bouwopdracht
+— het is de richting waaraan conditie-B/C-voorstellen getoetst worden.
+
 ## De leidende vraag bij ELK nieuw onderdeel (governance-gate)
 
 > **Vergroot dit de kans dat ik een echte informatievoorsprong ontdek (categorie 1),
