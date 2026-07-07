@@ -65,6 +65,27 @@ Volgorde die telt: een probe levert pas iets aan de allocatie-engine als hij de 
 overleeft. Eerst onafhankelijk bewijs, dan pas invloed op allocatie. Dit is geen bouwopdracht
 — het is de richting waaraan conditie-B/C-voorstellen getoetst worden.
 
+### Allocatie-engine (fase 4) — ontwerp én harde activatie-conditie
+
+De vlaggenschip-rol: geen bot die koop/verkoop zoekt, maar één die beslist *hoeveel risico*
+elk bestaand signaal verdient — op basis van bewezen edge × confidence × regime × drift ×
+correlatie → risicobudget, met **cash als volwaardige positie** wanneer alles zwak is. Hij
+verzamelt geen nieuwe data; hij leest alleen wat er al is (factor-track-records, regime,
+drift, portfolio heat) en is volledig uitlegbaar ("SOL krijgt 6% — niet omdat SOL slecht is,
+maar omdat BTC dezelfde informatie draagt met minder risico").
+
+**Waarom nog niet gebouwd — het "bewezen" in conditie C is nog niet waar.** Edge-gewogen
+alloceren over signalen die statistisch *onbewezen* zijn, is risico verdelen over ruis met een
+elegant laagje eroverheen — precies een false-confidence-vector. Harde activatie-conditie:
+
+> De edge-gewogen allocatie-engine wordt pas gebouwd/geactiveerd zodra **≥1 factor of signaal
+> status `actief`** heeft (FDR-significant ná kosten, regime-stabiel, geen drift-down). Tot dan
+> is de enige verdedigbare allocatie **puur risico-gebaseerd** (`vol_target`: inverse-vol,
+> correlatie-de-risk, vol-targeting, cash via exposure) — die claimt géén edge en is er al.
+
+Gevolg vandaag: met alle track records nog op *observeren* zou zo'n engine ~alles in cash of
+gelijk-risico zetten. Dat is correct, en het bewijst het punt: de gate is nog niet bereikt.
+
 ## De leidende vraag bij ELK nieuw onderdeel (governance-gate)
 
 > **Vergroot dit de kans dat ik een echte informatievoorsprong ontdek (categorie 1),
