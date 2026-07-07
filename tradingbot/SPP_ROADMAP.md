@@ -65,26 +65,31 @@ Volgorde die telt: een probe levert pas iets aan de allocatie-engine als hij de 
 overleeft. Eerst onafhankelijk bewijs, dan pas invloed op allocatie. Dit is geen bouwopdracht
 — het is de richting waaraan conditie-B/C-voorstellen getoetst worden.
 
-### Allocatie-engine (fase 4) — ontwerp én harde activatie-conditie
+### Allocatie: twee engines, niet één (v1 bestaat, v2 gegate)
 
-De vlaggenschip-rol: geen bot die koop/verkoop zoekt, maar één die beslist *hoeveel risico*
-elk bestaand signaal verdient — op basis van bewezen edge × confidence × regime × drift ×
-correlatie → risicobudget, met **cash als volwaardige positie** wanneer alles zwak is. Hij
-verzamelt geen nieuwe data; hij leest alleen wat er al is (factor-track-records, regime,
-drift, portfolio heat) en is volledig uitlegbaar ("SOL krijgt 6% — niet omdat SOL slecht is,
-maar omdat BTC dezelfde informatie draagt met minder risico").
+We haalden ze door elkaar; het zijn twee verschillende dingen.
 
-**Waarom nog niet gebouwd — het "bewezen" in conditie C is nog niet waar.** Edge-gewogen
-alloceren over signalen die statistisch *onbewezen* zijn, is risico verdelen over ruis met een
-elegant laagje eroverheen — precies een false-confidence-vector. Harde activatie-conditie:
+- **v1 — risico-allocatie (bestaat: `vol_target`).** Input: volatiliteit, correlatie, portfolio
+  heat, cash. Doel: risico verdelen, geen alpha maximaliseren. Portfolio-engineering, claimt
+  géén edge. Dit mag en draait.
+- **v2 — Evidence Allocation Engine (nog niet).** Input: de edges van de probes (news, funding,
+  macro, momentum, …) — **maar alleen die met status `actief`** (voldoende bewijs ná FDR &
+  kosten, regime-stabiel, geen drift). Daarna edge × confidence × correlatie → risicobudget,
+  met **cash als volwaardige positie**. Volledig uitlegbaar ("SOL krijgt 6% — niet omdat SOL
+  slecht is, maar omdat BTC dezelfde informatie draagt met minder risico"). Dit is geen
+  risk-engine meer maar kapitaalallocatie, en juist die mag nog niet bestaan.
 
-> De edge-gewogen allocatie-engine wordt pas gebouwd/geactiveerd zodra **≥1 factor of signaal
-> status `actief`** heeft (FDR-significant ná kosten, regime-stabiel, geen drift-down). Tot dan
-> is de enige verdedigbare allocatie **puur risico-gebaseerd** (`vol_target`: inverse-vol,
-> correlatie-de-risk, vol-targeting, cash via exposure) — die claimt géén edge en is er al.
+**"Bewezen" is te absoluut — lees: "voldoende bewijs / voorlopig gepromoveerd".** In markten
+bestaat geen absolute waarheid; een factor heeft een *levenscyclus* die de code al kent:
+`observeren → onbewezen → actief → (drift) → uitgeschakeld`. `actief` is dus herroepbaar, nooit
+"voor altijd waar". Gevolg: de Evidence Allocation Engine verdeelt kapitaal niet over
+*waarheden* maar over **tijdelijk geloofwaardige hypotheses** — subtiel in woorden, groot in
+consequentie (een gedegradeerde factor verliest automatisch zijn budget).
 
-Gevolg vandaag: met alle track records nog op *observeren* zou zo'n engine ~alles in cash of
-gelijk-risico zetten. Dat is correct, en het bewijst het punt: de gate is nog niet bereikt.
+**Harde activatie-conditie (v2):**
+> Pas bouwen/activeren zodra **≥1 probe status `actief`** haalt. Tot dan is de enige
+> verdedigbare allocatie v1 (`vol_target`). Vandaag staat alles op *observeren* → v2 zou ~alles
+> in cash of gelijk-risico zetten. Dat is correct, en het bewijst dat de gate nog dicht is.
 
 ## De leidende vraag bij ELK nieuw onderdeel (governance-gate)
 
