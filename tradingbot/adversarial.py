@@ -48,8 +48,11 @@ def _fmt(results: dict) -> None:
     print(f"     → p_luck = {s['p_luck']:.2f}  "
           f"({'niet te onderscheiden van toeval' if s['p_luck'] > 0.10 else 'boven de ruis'})\n")
 
-    print(f"3· Delay (verouderde candles): excess {r['delay_excess']:+.2f}% "
-          f"(Δ {r['delay_excess'] - r['real_excess']:+.2f}pp)\n")
+    d_delta = r["delay_excess"] - r["real_excess"]
+    print(f"3· Delay (verouderde candles): excess {r['delay_excess']:+.2f}% (Δ {d_delta:+.2f}pp)")
+    if abs(d_delta) < 0.01:
+        print("     → geen effect: waarschijnlijk een dag-strategie; probeer --delay-hours 24")
+    print()
 
     if r["universe_loo"]:
         print("4· Universe / leave-one-out (laat telkens één coin weg):")

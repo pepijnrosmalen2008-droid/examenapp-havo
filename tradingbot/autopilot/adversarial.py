@@ -78,17 +78,23 @@ def shuffle_test(cfg: AppConfig, strategy: str, data: dict[str, list[Candle]],
 # ── 3. delay (zat de edge in de timing?) ────────────────────────────────────────
 
 class LaggedReplayMarket(ReplayMarket):
-    """Strategie ziet candles tot t−lag; uitvoering gebeurt op de prijs van t."""
+    """Strategie ziet candles tot t−lag (óók de dagelijkse view); uitvoering op de prijs van t.
+
+    Let op: een strategie die op DAG-candles beslist, merkt een vertraging pas als `lag`
+    een dag-grens overschrijdt. Voor zo'n strategie is een lag < 24u per definitie een no-op
+    — gebruik dan `--delay-hours 24` of meer, anders toetst delay niets."""
 
     def __init__(self, data: dict[str, list[Candle]], lag: int):
         super().__init__(data)
         self.lag = lag
 
     def candles(self, pair: str, interval: str = "1h", limit: int = 200, since_ms=None):
+        j = max(0, self.index[pair] - self.lag)             # gelaagde index
         if interval == "1d":
-            return super().candles(pair, interval, limit, since_ms)   # regime ongelaagd (benadering)
-        i = max(0, self.index[pair] - self.lag)
-        return self.data[pair][max(0, i + 1 - limit): i + 1]
+            cur_day = self.data[pair][j].ts // 86_400_000   # dag-view óók laten meelopen met de lag
+            closed = [c for c in self._daily[pair] if c.ts // 86_400_000 < cur_day]
+            return closed[-limit:]
+        return self.data[pair][max(0, j + 1 - limit): j + 1]
 
 
 def delay_test(cfg: AppConfig, strategy: str, data: dict[str, list[Candle]],
