@@ -65,6 +65,30 @@ Volgorde die telt: een probe levert pas iets aan de allocatie-engine als hij de 
 overleeft. Eerst onafhankelijk bewijs, dan pas invloed op allocatie. Dit is geen bouwopdracht
 — het is de richting waaraan conditie-B/C-voorstellen getoetst worden.
 
+### Research Programs — de container boven de probes (discipline, geen software)
+
+Een bron mag niet ad hoc worden toegevoegd "omdat hij interessant lijkt". Hij hoort eerst
+thuis in een **Research Program**: een onderzoekslijn met één vooraf geformuleerde hypothese
+en acceptatiecriteria. De hiërarchie:
+
+```
+Research Program → Information Probe → Factor → Evidence → Allocation → Risk → Execution
+```
+
+Kandidaat-programma's (elk met eigen pre-registratie in experiments/, één probe tegelijk):
+
+| Programma | Onderliggende vraag | Probes |
+|---|---|---|
+| **P1 · Positionering** | zit er voorspellende waarde in hoe de markt gepositioneerd staat? | funding · open interest · liquidaties |
+| **P2 · Kapitaalstromen** | lopen instroom/uitstroom vóór op prijs? | ETF-flows · stablecoin-supply · exchange reserves |
+| **P3 · Netwerkactiviteit** | zegt on-chain-gebruik iets bovenop prijs? | actieve adressen · fees · transactievolume |
+| **P0 · Nieuws** (loopt) | loopt gestructureerd nieuws vóór op prijs? | news-probe |
+
+Regel: **conditie B mag alleen binnen een pre-geregistreerd programma.** Zo blijft de
+inputruimte gedisciplineerd en wordt het platform steeds meer een reproduceerbaar antwoord op
+"welke informatiecategorieën hebben, onder vooraf vastgelegde voorwaarden, aantoonbaar
+voorspellende waarde boven prijs?" — een interessantere uitkomst dan "de bot won 2,3% vandaag".
+
 ### Allocatie: twee engines, niet één (v1 bestaat, v2 gegate)
 
 We haalden ze door elkaar; het zijn twee verschillende dingen.
