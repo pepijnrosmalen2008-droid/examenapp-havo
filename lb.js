@@ -507,6 +507,15 @@ function getUpcomingExams(){
       if(!ex.tijdvak){ if(mijn.includes(key)) cands.push({...ex,dt:new Date(ex.datum+'T'+ex.tijd.split('–')[0]+':00+02:00')}); }
       else if(ex.tijdvak===2){ if(herk.includes(key)) cands.push({...ex,dt:new Date(ex.datum+'T'+ex.tijd.split('–')[0]+':00+02:00')}); }
     });
+    // 1e-tijdvak-examens 2027 meenemen zodat de teller na 2026 doorrolt.
+    if(typeof EXAM_SCHEDULE_2027!=='undefined'){
+      EXAM_SCHEDULE_2027.forEach(ex=>{
+        if(ex.niveau&&ex.niveau!==APP_LEVEL)return;
+        if(ex.vakId&&!niveauVakIds.has(ex.vakId))return;
+        const key=ex.vakId||ex.vak;
+        if(mijn.includes(key)) cands.push({...ex,dt:new Date(ex.datum+'T'+ex.tijd.split('–')[0]+':00+02:00')});
+      });
+    }
     tv3.forEach(e=>cands.push({vak:e.vak,vakId:e.vakId,datum:e.datum,tijd:e.tijd||'13:30',duur:'',tijdvak:3,dt:new Date(e.datum+'T'+(e.tijd||'13:30')+':00+02:00')}));
     return cands.filter(e=>e.dt>now).sort((a,b)=>a.dt-b.dt);
   }catch(e){return [];}

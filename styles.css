@@ -1908,6 +1908,11 @@ html.dark .qb{background:#2e3550}
 .sch-tv-divider::after{content:'';flex:1;height:1.5px;background:linear-gradient(90deg,rgba(var(--or-rgb),.4),transparent)}
 /* Rooster-secties met inklapbare kopjes */
 .sch-section{margin-bottom:14px}
+/* Jaarwissel (2026 / 2027) bovenaan het rooster-scherm */
+.sy-tabs{display:inline-flex;gap:3px;padding:3px;background:var(--bg2);border:1px solid var(--bo);border-radius:12px;margin-bottom:18px}
+.sy-tab{appearance:none;border:none;background:transparent;font-family:var(--font);font-weight:700;font-size:14px;color:var(--mu);padding:7px 20px;border-radius:9px;cursor:pointer;transition:background .2s var(--ease-out),color .2s,box-shadow .2s;font-variant-numeric:tabular-nums}
+.sy-tab:hover{color:var(--dk)}
+.sy-tab.on{background:var(--s);color:var(--or);box-shadow:var(--rd-shadow-1)}
 .sch-koptitel{width:100%;display:flex;align-items:center;justify-content:space-between;gap:8px;padding:11px 4px 11px 2px;background:transparent;border:none;border-bottom:2px solid var(--bo);cursor:pointer;font-family:inherit;font-size:16px;font-weight:800;color:var(--dk);text-align:left;margin-bottom:12px}
 .sch-koptitel small{font-weight:600;color:var(--mu);font-size:12px;margin-left:5px}
 .sch-kop-ch{font-size:13px;color:var(--mu);transition:transform .2s;flex-shrink:0}

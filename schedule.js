@@ -74,6 +74,68 @@ const EXAM_SCHEDULE=[
 {datum:'2026-06-23',tijd:'13:30–16:30',vak:'Biologie',duur:'3 uur',niveau:'vwo',vakId:'bi',tijdvak:2},
 {datum:'2026-06-23',tijd:'13:30–16:30',vak:'Maatschappijwetenschappen',duur:'3 uur',niveau:'vwo',vakId:'mw',tijdvak:2}
 ];
+// ═══════ EXAMENROOSTER 2027 — 1e tijdvak (CvTE) ═══════
+// Alleen tijdvak 1 is per vak vastgesteld; het herkansingsrooster (2e tijdvak)
+// en 3e tijdvak worden pas later per vak/kandidaat bekend (zie renderSchedule).
+const EXAM_SCHEDULE_2027=[
+// ── HAVO 1e tijdvak 2027 ──
+{datum:'2027-05-12',tijd:'09:00–12:15',vak:'Nederlands',niveau:'havo',vakId:'nl'},
+{datum:'2027-05-13',tijd:'09:00–11:30',vak:'Frans',niveau:'havo'},
+{datum:'2027-05-14',tijd:'09:00–11:30',vak:'Duits',niveau:'havo'},
+{datum:'2027-05-17',tijd:'09:00–11:30',vak:'Engels',niveau:'havo',vakId:'en'},
+{datum:'2027-05-18',tijd:'13:30–16:30',vak:'Wiskunde A / Wiskunde B',niveau:'havo',vakId:'wa'},
+{datum:'2027-05-19',tijd:'09:00–11:30',vak:'Biologie',niveau:'havo',vakId:'bi'},
+{datum:'2027-05-20',tijd:'09:00–11:30',vak:'Scheikunde',niveau:'havo',vakId:'sk'},
+{datum:'2027-05-21',tijd:'09:00–11:30',vak:'Natuurkunde',niveau:'havo',vakId:'na'},
+{datum:'2027-05-24',tijd:'13:30–16:00',vak:'Economie',niveau:'havo',vakId:'ec'},
+{datum:'2027-05-25',tijd:'09:00–11:30',vak:'Bedrijfseconomie',niveau:'havo',vakId:'be'},
+{datum:'2027-05-25',tijd:'13:30–16:00',vak:'Geschiedenis',niveau:'havo',vakId:'gs'},
+{datum:'2027-05-26',tijd:'09:00–11:30',vak:'Aardrijkskunde',niveau:'havo',vakId:'ak'},
+{datum:'2027-05-26',tijd:'13:30–16:00',vak:'Maatschappijwetenschappen',niveau:'havo',vakId:'mw'},
+// ── VWO 1e tijdvak 2027 ──
+{datum:'2027-05-12',tijd:'09:00–12:30',vak:'Nederlands',niveau:'vwo',vakId:'nl'},
+{datum:'2027-05-13',tijd:'09:00–12:00',vak:'Frans',niveau:'vwo',vakId:'fr'},
+{datum:'2027-05-14',tijd:'09:00–12:00',vak:'Duits',niveau:'vwo',vakId:'du'},
+{datum:'2027-05-14',tijd:'13:30–17:00',vak:'Latijnse taal en cultuur',niveau:'vwo',vakId:'la'},
+{datum:'2027-05-17',tijd:'09:00–12:00',vak:'Engels',niveau:'vwo',vakId:'en'},
+{datum:'2027-05-18',tijd:'13:30–17:00',vak:'Wiskunde A / Wiskunde B / Wiskunde C',niveau:'vwo',vakId:'wa'},
+{datum:'2027-05-18',tijd:'09:00–12:30',vak:'Griekse taal en cultuur',niveau:'vwo',vakId:'gr'},
+{datum:'2027-05-19',tijd:'09:00–12:00',vak:'Biologie',niveau:'vwo',vakId:'bi'},
+{datum:'2027-05-20',tijd:'09:00–12:00',vak:'Scheikunde',niveau:'vwo',vakId:'sk'},
+{datum:'2027-05-20',tijd:'13:30–16:30',vak:'Filosofie',niveau:'vwo'},
+{datum:'2027-05-21',tijd:'09:00–12:00',vak:'Natuurkunde',niveau:'vwo',vakId:'na'},
+{datum:'2027-05-24',tijd:'13:30–17:00',vak:'Economie',niveau:'vwo',vakId:'ec'},
+{datum:'2027-05-25',tijd:'09:00–12:00',vak:'Bedrijfseconomie',niveau:'vwo'},
+{datum:'2027-05-25',tijd:'13:30–17:00',vak:'Geschiedenis',niveau:'vwo',vakId:'gs'},
+{datum:'2027-05-26',tijd:'09:00–12:00',vak:'Aardrijkskunde',niveau:'vwo',vakId:'ak'},
+{datum:'2027-05-26',tijd:'13:30–16:30',vak:'Maatschappijwetenschappen',niveau:'vwo',vakId:'mw'},
+{datum:'2027-05-27',tijd:'09:00–12:00',vak:'Informatica',niveau:'vwo',vakId:'in'},
+{datum:'2027-05-28',tijd:'09:00–12:00',vak:'Kunst (algemeen) / Muziek / CKV',niveau:'vwo'}
+];
+// Kies de dataset op basis van het gekozen jaar in het rooster-scherm.
+let _schYear=(function(){try{return localStorage.getItem('sch_year')==='2027'?'2027':'2026';}catch(e){return '2026';}})();
+function schData(){return _schYear==='2027'?EXAM_SCHEDULE_2027:EXAM_SCHEDULE;}
+// Bereken de duur uit een tijdvak-string ('09:00–11:30') als er geen duur is opgegeven.
+function _durFromTijd(tijd){
+  try{
+    const [a,b]=tijd.split('–');
+    const [ah,am]=a.split(':').map(Number),[bh,bm]=b.split(':').map(Number);
+    let min=(bh*60+bm)-(ah*60+am);if(min<=0)return '';
+    const u=Math.floor(min/60),r=min%60;
+    if(r===0)return u+' uur';
+    if(r===30)return (u===0?'':u)+(u?',5':'30 min')+(u?' uur':'');
+    return u+' uur '+r+' min';
+  }catch(e){return '';}
+}
+function setSchYear(y){
+  _schYear=(y==='2027')?'2027':'2026';
+  try{localStorage.setItem('sch_year',_schYear);}catch(e){}
+  updateSchYearUI();
+  renderSchedule();
+}
+function updateSchYearUI(){
+  document.querySelectorAll('.sy-tab').forEach(b=>b.classList.toggle('on',b.dataset.year===_schYear));
+}
 function getMijnVakken(){try{const d=JSON.parse(localStorage.getItem('examenapp_'+lvlCol('mijnvakken'))||'[]');return Array.isArray(d)?d:(d.list||[]);}catch(e){return [];}}
 function setMijnVakken(arr){cloudSet(lvlCol('mijnvakken'),{list:arr});try{pushSyncBundle();}catch(e){}}
 function schToggle(n){
@@ -90,7 +152,8 @@ function _schCard(ex,sel,fn,now,dagNamen,maandNamen){
   else{const dd=Math.floor(diff/(1000*60*60*24));const hh=Math.floor((diff%(1000*60*60*24))/(1000*60*60));cdText=dd>0?dd+'d '+hh+'u':'< '+hh+' uur';}
   const key=ex.vakId||ex.vak;
   const datumStr=dagNamen[d.getDay()]+' '+d.getDate()+' '+maandNamen[d.getMonth()];
-  return `<div class="sch-card${sel?' sch-mine':''}"><input type="checkbox" class="sch-check" ${sel?'checked':''} onchange="${fn}('${key}',this.checked)"><div class="sch-date">${datumStr}</div><div class="sch-time">${ex.tijd}</div><div class="sch-name">${ex.vak}</div><div class="sch-dur">${ex.duur}</div><div class="sch-cd">${cdText}</div></div>`;
+  const duur=ex.duur||_durFromTijd(ex.tijd);
+  return `<div class="sch-card${sel?' sch-mine':''}"><input type="checkbox" class="sch-check" ${sel?'checked':''} onchange="${fn}('${key}',this.checked)"><div class="sch-date">${datumStr}</div><div class="sch-time">${ex.tijd}</div><div class="sch-name">${ex.vak}</div><div class="sch-dur">${duur}</div><div class="sch-cd">${cdText}</div></div>`;
 }
 // Herkansing-selectie (2e tijdvak) en 3e-tijdvak-entries
 function getHerkansing(){try{const d=JSON.parse(localStorage.getItem('examenapp_'+lvlCol('herkansing'))||'[]');return Array.isArray(d)?d:(d.list||[]);}catch(e){return [];}}
@@ -98,11 +161,23 @@ function setHerkansing(arr){cloudSet(lvlCol('herkansing'),{list:arr});try{pushSy
 function toggleHerkansing(id,checked){let m=getHerkansing();if(checked&&!m.includes(id))m.push(id);if(!checked)m=m.filter(v=>v!==id);setHerkansing(m);renderSchedule();updateCountdown();}
 function getTV3(){try{const d=JSON.parse(localStorage.getItem('examenapp_'+lvlCol('tijdvak3'))||'[]');return Array.isArray(d)?d:(d.list||[]);}catch(e){return [];}}
 function setTV3(arr){cloudSet(lvlCol('tijdvak3'),{list:arr});try{pushSyncBundle();}catch(e){}}
+// Periode-teksten per jaar (voor de kopjes en subtitel van het rooster-scherm).
+const _SCH_PERIODS={
+  '2026':{tv1:'8–27 mei',tv2:'16–23 juni',tv3:'11–20 aug',sub:'1e tijdvak: 8–27 mei · 2e tijdvak: 16–23 juni · 3e tijdvak: 11–20 aug'},
+  '2027':{tv1:'12–28 mei',tv2:'16–25 juni',tv3:'aug',sub:'1e tijdvak: 12–28 mei · 2e tijdvak: 16–25 juni (indicatief) · 3e tijdvak: augustus'}
+};
 function renderSchedule(){
+  updateSchYearUI();
+  const P=_SCH_PERIODS[_schYear]||_SCH_PERIODS['2026'];
   const hdr=document.getElementById('sch-header');
-  if(hdr)hdr.textContent='Examenrooster '+APP_LEVEL.toUpperCase()+' 2026';
+  if(hdr)hdr.textContent='Examenrooster '+APP_LEVEL.toUpperCase()+' '+_schYear;
+  const sub=document.getElementById('sch-subhdr');if(sub)sub.textContent=P.sub;
+  const k1=document.getElementById('sch-kop1-sub');if(k1)k1.textContent='· '+P.tv1;
+  const k2=document.getElementById('sch-kop2-sub');if(k2)k2.textContent='· '+P.tv2;
+  const k3=document.getElementById('sch-kop3-sub');if(k3)k3.textContent='· '+P.tv3;
   const l1=document.getElementById('sch-list-1'),l2=document.getElementById('sch-list-2');
   if(!l1&&!l2&&!document.getElementById('sch-tv3'))return;
+  const data=schData();
   const now=new Date();
   const dagNamen=['zo','ma','di','wo','do','vr','za'];
   const maandNamen=['jan','feb','mrt','apr','mei','jun','jul','aug','sep','okt','nov','dec'];
@@ -113,7 +188,7 @@ function renderSchedule(){
   if(l1){
     const onlyMine=document.getElementById('sch-filter-mine')?.checked;
     l1.innerHTML='';
-    EXAM_SCHEDULE.forEach(ex=>{
+    data.forEach(ex=>{
       if(ex.niveau&&ex.niveau!==APP_LEVEL)return;
       if(ex.tijdvak)return;
       if(ex.vakId&&!niveauVakIds.has(ex.vakId))return;
@@ -124,20 +199,27 @@ function renderSchedule(){
   }
   // 2e tijdvak - herkansing: niks vooraf aangevinkt, leerling kiest zelf
   if(l2){
-    l2.innerHTML='';
-    EXAM_SCHEDULE.forEach(ex=>{
-      if(ex.niveau&&ex.niveau!==APP_LEVEL)return;
-      if(ex.tijdvak!==2)return;
-      if(ex.vakId&&!niveauVakIds.has(ex.vakId))return;
-      l2.innerHTML+=_schCard(ex,herk.includes(ex.vakId||ex.vak),'toggleHerkansing',now,dagNamen,maandNamen);
-    });
-    if(!l2.innerHTML)l2.innerHTML=leeg;
+    if(_schYear==='2027'){
+      // Het herkansingsrooster 2027 is nog niet per vak vastgesteld door het CvTE.
+      l2.innerHTML='<div class="tv3-info">📌 Het exacte <strong>herkansingsrooster 2027</strong> (2e tijdvak) is nog niet per vak vastgesteld. De herkansingen vinden plaats in de <strong>week van 16 t/m 25 juni 2027</strong>. Zodra het CvTE de vakdata publiceert, verschijnen ze hier, net als bij 2026.</div>';
+    }else{
+      l2.innerHTML='';
+      data.forEach(ex=>{
+        if(ex.niveau&&ex.niveau!==APP_LEVEL)return;
+        if(ex.tijdvak!==2)return;
+        if(ex.vakId&&!niveauVakIds.has(ex.vakId))return;
+        l2.innerHTML+=_schCard(ex,herk.includes(ex.vakId||ex.vak),'toggleHerkansing',now,dagNamen,maandNamen);
+      });
+      if(!l2.innerHTML)l2.innerHTML=leeg;
+    }
   }
   renderTijdvak3();
 }
 function renderTijdvak3(){
   const el=document.getElementById('sch-tv3');if(!el)return;
-  const periode=APP_LEVEL==='vwo'?'di 11 t/m wo 19 augustus 2026':'di 11 t/m do 20 augustus 2026';
+  const periode=_schYear==='2027'
+    ?'augustus 2027 (exacte data volgen)'
+    :(APP_LEVEL==='vwo'?'di 11 t/m wo 19 augustus 2026':'di 11 t/m do 20 augustus 2026');
   const vakken=getVK();const arr=getTV3();const now=new Date();
   const dagNamen=['zo','ma','di','wo','do','vr','za'];
   const maandNamen=['jan','feb','mrt','apr','mei','jun','jul','aug','sep','okt','nov','dec'];

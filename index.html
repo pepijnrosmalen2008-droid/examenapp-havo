@@ -1519,9 +1519,13 @@
 <nav class="nav"><div class="nav-inner"><div class="logo" onclick="show('sc-home')"><img src="/icon-192.png" alt="Slagio" style="width:26px;height:26px;border-radius:7px;object-fit:cover;flex-shrink:0">Slagio</div><button class="bk" onclick="show('sc-home')">← Terug</button><button class="theme-btn" onclick="toggleDark()" title="Nachtmodus" style="margin-left:auto"><svg viewBox="0 0 24 24"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg></button></div></nav>
 <div class="w" style="padding-top:24px">
   <h2 style="font-size:22px;margin-bottom:6px" id="sch-header">Examenrooster HAVO 2026</h2>
-  <p style="font-size:13px;color:var(--mu);margin-bottom:18px">1e tijdvak: 8–27 mei · 2e tijdvak: 16–23 juni · 3e tijdvak: 11–20 aug</p>
+  <p style="font-size:13px;color:var(--mu);margin-bottom:14px" id="sch-subhdr">1e tijdvak: 8–27 mei · 2e tijdvak: 16–23 juni · 3e tijdvak: 11–20 aug</p>
+  <div class="sy-tabs" role="tablist" aria-label="Kies examenjaar">
+    <button class="sy-tab on" data-year="2026" role="tab" onclick="setSchYear('2026')">2026</button>
+    <button class="sy-tab" data-year="2027" role="tab" onclick="setSchYear('2027')">2027</button>
+  </div>
   <div class="sch-section">
-    <button class="sch-koptitel sch-collapsed" onclick="schToggle(1)"><span>1e tijdvak <small>· 8–27 mei</small></span><span class="sch-kop-ch">▾</span></button>
+    <button class="sch-koptitel sch-collapsed" onclick="schToggle(1)"><span>1e tijdvak <small id="sch-kop1-sub">· 8–27 mei</small></span><span class="sch-kop-ch">▾</span></button>
     <div class="sch-sec-body" id="sch-sec-1" style="display:none">
       <div class="sch-filter" id="sch-filter-wrap">
         <label><input type="checkbox" id="sch-filter-mine" class="sch-check" onchange="renderSchedule()"> Alleen mijn vakken</label>
@@ -1530,14 +1534,14 @@
     </div>
   </div>
   <div class="sch-section">
-    <button class="sch-koptitel" onclick="schToggle(2)"><span>2e tijdvak - herkansing <small>· 16–23 juni</small></span><span class="sch-kop-ch">▾</span></button>
+    <button class="sch-koptitel" onclick="schToggle(2)"><span>2e tijdvak - herkansing <small id="sch-kop2-sub">· 16–23 juni</small></span><span class="sch-kop-ch">▾</span></button>
     <div class="sch-sec-body" id="sch-sec-2">
       <div class="sch-tab-hint">Vink zelf de vakken aan die je <strong>herkanst</strong> - de timer telt dan af naar je eerstvolgende herkansing.</div>
       <div id="sch-list-2" class="schedule-list"></div>
     </div>
   </div>
   <div class="sch-section">
-    <button class="sch-koptitel" onclick="schToggle(3)"><span>3e tijdvak <small>· 11–20 aug</small></span><span class="sch-kop-ch">▾</span></button>
+    <button class="sch-koptitel" onclick="schToggle(3)"><span>3e tijdvak <small id="sch-kop3-sub">· 11–20 aug</small></span><span class="sch-kop-ch">▾</span></button>
     <div class="sch-sec-body" id="sch-sec-3">
       <div id="sch-tv3"></div>
     </div>
