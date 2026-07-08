@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="nl">
+<html lang="nl" class="level-havo">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,8 +10,20 @@
   <meta property="og:description" content="Verwachte uitslagdatum eerste tijdvak: 4 juni 2027. Alles over de normering (n-term), slaag-zakregeling en herkansingen.">
   <meta property="og:url" content="https://slagio.nl/vakken/examenuitslag-2027.html">
   <meta property="og:type" content="website">
+  <meta property="og:image" content="https://slagio.nl/icon-512.png">
   <link rel="canonical" href="https://slagio.nl/vakken/examenuitslag-2027.html">
   <link rel="icon" href="/icon-192.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,700;12..96,800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/styles.css">
+  <script>
+  // Zelfde donker-thema als de app: localStorage 'theme', anders systeemvoorkeur.
+  (function(){try{
+    var t=localStorage.getItem('theme');
+    if(t==='dark'||(!t&&matchMedia('(prefers-color-scheme:dark)').matches))document.documentElement.classList.add('dark');
+  }catch(e){}})();
+  </script>
   <script type="application/ld+json">
   [
     {
@@ -84,115 +96,111 @@
   ]
   </script>
   <style>
-    :root {
-      --bg: #0f1724;
-      --bg-card: #1a2332;
-      --text: #e4e8ef;
-      --text-muted: #8896a8;
-      --accent: #0891b2;
-      --border: #2a3444;
-    }
-    * { margin: 0; padding: 0; box-sizing: border-box; }
-    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: var(--bg); color: var(--text); line-height: 1.6; }
-    .container { max-width: 960px; margin: 0 auto; padding: 2rem 1.5rem; }
-    .site-header { display: flex; align-items: center; justify-content: space-between; padding: 1rem 2rem; border-bottom: 1px solid var(--border); background: var(--bg-card); }
-    .site-header a.logo { font-weight: 800; font-size: 1.2rem; color: var(--accent); text-decoration: none; letter-spacing: -.5px; }
-    .breadcrumb { font-size: .8rem; color: var(--text-muted); }
-    .breadcrumb a { color: var(--text-muted); text-decoration: none; }
-    .breadcrumb a:hover { color: var(--accent); }
-    .breadcrumb span { margin: 0 .35rem; }
-    .hero { text-align: center; padding: 3rem 1rem 2rem; }
-    .hero-badge { display: inline-block; background: #0891b220; color: var(--accent); border: 1.5px solid #0891b240; border-radius: 999px; font-size: .75rem; font-weight: 700; letter-spacing: .05em; text-transform: uppercase; padding: .3rem .9rem; margin-bottom: 1.25rem; }
-    .hero h1 { font-size: 2.2rem; font-weight: 800; line-height: 1.2; margin-bottom: .75rem; }
-    .hero h1 span { color: var(--accent); }
-    .hero-sub { color: var(--text-muted); font-size: 1.05rem; max-width: 620px; margin: 0 auto 1.75rem; }
-    .countdown-card { background: var(--bg-card); border: 1px solid var(--border); border-radius: 16px; padding: 1.5rem 2rem; display: inline-flex; flex-direction: column; align-items: center; gap: .5rem; margin: 0 auto 1rem; }
-    .countdown-label { font-size: .8rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: .06em; }
-    .countdown-numbers { display: flex; gap: 1.25rem; align-items: flex-end; }
-    .countdown-unit { text-align: center; }
-    .countdown-num { font-size: 2.6rem; font-weight: 800; color: var(--accent); line-height: 1; display: block; min-width: 2.5ch; font-variant-numeric: tabular-nums; }
-    .countdown-unit-label { font-size: .7rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: .04em; }
-    .countdown-sep { font-size: 2rem; font-weight: 300; color: var(--border); line-height: 1; padding-bottom: .5rem; }
-    .countdown-date { font-size: .85rem; color: var(--text-muted); }
-    .disclaimer { background: #f59e0b14; border: 1px solid #f59e0b30; border-radius: 10px; padding: .75rem 1.25rem; font-size: .85rem; color: #fbbf24; margin-bottom: 2rem; display: flex; gap: .6rem; align-items: flex-start; }
-    .disclaimer-icon { flex-shrink: 0; }
-    h2.section-h2 { font-size: 1.25rem; font-weight: 700; margin: 2.5rem 0 1rem; padding-bottom: .6rem; border-bottom: 1px solid var(--border); }
-    .info-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1.25rem; margin-bottom: 2.5rem; }
-    @media (max-width: 640px) { .info-grid { grid-template-columns: 1fr; } .hero h1 { font-size: 1.7rem; } }
-    .info-card { background: var(--bg-card); border: 1px solid var(--border); border-radius: 14px; padding: 1.4rem 1.5rem; }
-    .info-card h3 { font-size: 1rem; font-weight: 700; margin-bottom: .75rem; display: flex; align-items: center; gap: .5rem; }
-    .info-card p, .info-card li { font-size: .88rem; color: var(--text-muted); line-height: 1.65; }
-    .info-card p + p { margin-top: .5rem; }
-    .info-card ul { list-style: none; padding: 0; }
-    .info-card ul li { padding: .2rem 0; }
-    .info-card ul li::before { content: '→ '; color: var(--accent); font-size: .85rem; }
-    .info-card strong { color: var(--text); }
-    .info-card a { color: var(--accent); }
-    /* Tijdlijn */
-    .timeline { margin: 0 0 2.5rem; }
-    .tl-row { display: grid; grid-template-columns: 130px 1fr; gap: 1rem; padding: .85rem 0; border-bottom: 1px solid var(--border); }
-    .tl-row:last-child { border-bottom: none; }
-    .tl-date { font-weight: 700; color: var(--accent); font-size: .9rem; }
-    .tl-what { font-size: .9rem; color: var(--text-muted); }
-    .tl-what strong { color: var(--text); }
-    @media (max-width: 640px) { .tl-row { grid-template-columns: 1fr; gap: .15rem; } }
+    /* Pagina-eigen opmaak bovenop de Slagio-huisstijl (styles.css levert tokens,
+       nav, typografie en licht/donker). Alle kleuren via de app-tokens. */
+    .up-wrap{max-width:960px;margin:0 auto;padding:0 24px 64px}
+    .up-hero{text-align:center;padding:56px 0 8px}
+    .up-badge{display:inline-block;background:var(--orl);color:var(--or);border:1.5px solid rgba(var(--or-rgb),.35);border-radius:999px;font-size:12px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;padding:5px 14px;margin-bottom:18px;font-family:var(--font)}
+    .up-hero h1{font-family:var(--font-head);font-size:clamp(28px,5vw,42px);font-weight:800;line-height:1.15;letter-spacing:-.5px;margin:0 0 12px;text-wrap:balance}
+    .up-hero h1 em{font-style:normal;color:var(--or)}
+    .up-sub{color:var(--mu);font-size:16px;max-width:620px;margin:0 auto 28px}
+    .up-sub strong{color:var(--dk)}
+    /* countdown */
+    .up-cd{background:var(--s);border:1px solid var(--bo);border-radius:var(--r);padding:22px 30px;display:inline-flex;flex-direction:column;align-items:center;gap:8px;box-shadow:var(--rd-shadow-2);position:relative;overflow:hidden}
+    .up-cd::before{content:'';position:absolute;inset:0;background:linear-gradient(135deg,rgba(var(--or-rgb),.07),transparent 55%);pointer-events:none}
+    .up-cd-label{font-size:11.5px;color:var(--mu);text-transform:uppercase;letter-spacing:.08em;font-weight:600}
+    .up-cd-nums{display:flex;gap:18px;align-items:flex-end}
+    .up-cd-num{font-family:var(--font-head);font-size:44px;font-weight:800;color:var(--or);line-height:1;display:block;min-width:2.2ch;font-variant-numeric:tabular-nums;text-align:center}
+    .up-cd-unit{font-size:10.5px;color:var(--mu);text-transform:uppercase;letter-spacing:.05em;font-weight:600;text-align:center}
+    .up-cd-sep{font-size:30px;font-weight:300;color:var(--bo2);line-height:1;padding-bottom:10px}
+    .up-cd-date{font-size:13px;color:var(--mu)}
+    /* disclaimer */
+    .up-note{border:1px dashed var(--bo2);border-radius:12px;padding:12px 18px;font-size:13.5px;color:var(--mu);margin:26px 0 8px;text-align:left}
+    .up-note a{color:var(--or);font-weight:600}
+    /* secties */
+    .up-h2{font-family:var(--font-head);font-size:22px;font-weight:800;letter-spacing:-.3px;margin:44px 0 16px;padding-bottom:10px;border-bottom:1px solid var(--bo)}
+    .up-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+    @media(max-width:640px){.up-grid{grid-template-columns:1fr}}
+    .up-card{background:var(--s);border:1px solid var(--bo);border-radius:var(--r);padding:22px 24px;box-shadow:var(--rd-shadow-1)}
+    .up-card h3{font-family:var(--font-head);font-size:16px;font-weight:700;margin:0 0 10px;display:flex;align-items:center;gap:8px}
+    .up-card p,.up-card li{font-size:14px;color:var(--mu);line-height:1.7}
+    .up-card p+p{margin-top:8px}
+    .up-card ul{list-style:none;padding:0;margin:0}
+    .up-card ul li{padding:3px 0 3px 18px;position:relative}
+    .up-card ul li::before{content:'→';position:absolute;left:0;color:var(--or);font-size:13px}
+    .up-card strong{color:var(--dk)}
+    .up-card a{color:var(--or);font-weight:600;text-decoration:none}
+    .up-card a:hover{text-decoration:underline}
+    /* tijdlijn */
+    .up-tl{background:var(--s);border:1px solid var(--bo);border-radius:var(--r);box-shadow:var(--rd-shadow-1);overflow:hidden;margin-bottom:8px}
+    .up-tl-row{display:grid;grid-template-columns:150px 1fr;gap:16px;padding:16px 24px;border-bottom:1px solid var(--bo)}
+    .up-tl-row:last-child{border-bottom:none}
+    .up-tl-date{font-family:var(--font-head);font-weight:700;color:var(--or);font-size:14.5px}
+    .up-tl-what{font-size:14px;color:var(--mu);line-height:1.7}
+    .up-tl-what strong{color:var(--dk)}
+    .up-tl-what a{color:var(--or);font-weight:600;text-decoration:none}
+    .up-tl-what a:hover{text-decoration:underline}
+    @media(max-width:640px){.up-tl-row{grid-template-columns:1fr;gap:3px;padding:14px 18px}}
     /* CTA */
-    .cta-box { background: linear-gradient(135deg, #0891b218, #0891b208); border: 1.5px solid #0891b240; border-radius: 16px; padding: 1.75rem 2rem; text-align: center; margin: 2.5rem 0; }
-    .cta-box h2 { font-size: 1.3rem; font-weight: 800; margin-bottom: .5rem; }
-    .cta-box p { color: var(--text-muted); font-size: .92rem; max-width: 560px; margin: 0 auto 1.25rem; }
-    .cta-btn { display: inline-block; background: var(--accent); color: #fff; font-weight: 700; font-size: .95rem; padding: .75rem 1.75rem; border-radius: 12px; text-decoration: none; }
-    .cta-btn:hover { filter: brightness(1.1); }
-    .cta-sub { display: block; margin-top: .6rem; font-size: .78rem; color: var(--text-muted); }
-    /* Links-footer */
-    .rel-links { display: flex; flex-wrap: wrap; gap: .6rem; margin: 1.5rem 0 2rem; }
-    .rel-links a { font-size: .85rem; color: var(--accent); text-decoration: none; background: var(--bg-card); border: 1px solid var(--border); border-radius: 999px; padding: .4rem 1rem; }
-    .rel-links a:hover { border-color: var(--accent); }
-    footer { border-top: 1px solid var(--border); padding: 1.5rem 2rem; text-align: center; font-size: .8rem; color: var(--text-muted); }
-    footer a { color: var(--accent); text-decoration: none; }
+    .up-cta{background:linear-gradient(135deg,rgba(var(--or-rgb),.10),rgba(var(--or-rgb),.03));border:1.5px solid rgba(var(--or-rgb),.35);border-radius:18px;padding:32px;text-align:center;margin:44px 0 8px}
+    .up-cta h2{font-family:var(--font-head);font-size:22px;font-weight:800;letter-spacing:-.3px;margin:0 0 8px}
+    .up-cta p{color:var(--mu);font-size:14.5px;max-width:560px;margin:0 auto 20px}
+    .up-cta-btn{display:inline-block;background:var(--or);color:#fff;font-weight:700;font-size:15px;padding:13px 30px;border-radius:14px;text-decoration:none;box-shadow:var(--rd-glow);transition:transform .2s var(--ease-out),filter .2s}
+    .up-cta-btn:hover{transform:translateY(-1px);filter:brightness(1.06)}
+    .up-cta-sub{display:block;margin-top:12px;font-size:12.5px;color:var(--mu)}
+    /* gerelateerde links */
+    .up-rel{display:flex;flex-wrap:wrap;gap:10px;margin:16px 0 0}
+    .up-rel a{font-size:13.5px;color:var(--dk);font-weight:600;text-decoration:none;background:var(--s);border:1px solid var(--bo);border-radius:999px;padding:8px 18px;transition:border-color .2s,transform .2s var(--ease-out);box-shadow:var(--rd-shadow-1)}
+    .up-rel a:hover{border-color:rgba(var(--or-rgb),.5);transform:translateY(-1px)}
+    /* footer */
+    .up-foot{border-top:1px solid var(--bo);margin-top:56px;padding:22px 24px;text-align:center;font-size:13px;color:var(--mu)}
+    .up-foot a{color:var(--or);text-decoration:none;font-weight:600}
+    /* nav-CTA rechts */
+    .up-nav-cta{margin-left:auto;background:var(--or);color:#fff!important;font-weight:700;font-size:13.5px;padding:9px 18px;border-radius:12px;text-decoration:none;box-shadow:0 2px 10px rgba(var(--or-rgb),.3)}
+    .up-nav-cta:hover{filter:brightness(1.06)}
+    .up-nav-home{color:var(--mu);text-decoration:none;font-size:14px;font-weight:600}
+    .up-nav-home:hover{color:var(--dk)}
   </style>
 </head>
 <body>
 
-<header class="site-header">
-  <a class="logo" href="https://slagio.nl">Slagio</a>
-  <nav class="breadcrumb"><a href="https://slagio.nl">Home</a><span>›</span><a href="https://slagio.nl/vakken/">Vakken</a><span>›</span>Examenuitslag 2027</nav>
-</header>
+<nav class="nav"><div class="nav-inner">
+  <a class="logo" href="https://slagio.nl" style="text-decoration:none"><img src="/icon-192.png" alt="Slagio" style="width:26px;height:26px;border-radius:7px;object-fit:cover;flex-shrink:0">Slagio</a>
+  <a class="up-nav-home" href="/vakken/examenrooster-2027.html">Examenrooster</a>
+  <a class="up-nav-cta" href="https://slagio.nl/?utm_source=uitslag2027">Gratis oefenen</a>
+</div></nav>
 
-<div class="container">
+<div class="up-wrap">
 
-  <div class="hero">
-    <div class="hero-badge">Eindexamen 2027</div>
-    <h1>Examenuitslag 2027: <span>wanneer weet je of je geslaagd bent?</span></h1>
-    <p class="hero-sub">De uitslag van het eerste tijdvak wordt verwacht op <strong>donderdag 4 juni 2027</strong>. Hier vind je precies hoe die dag verloopt, hoe je cijfer tot stand komt en wat je opties zijn als het tegenvalt.</p>
-    <div class="countdown-card">
-      <span class="countdown-label">Nog tot de verwachte uitslag</span>
-      <div class="countdown-numbers" id="cd">
-        <div class="countdown-unit"><span class="countdown-num" id="cd-d">–</span><span class="countdown-unit-label">dagen</span></div>
-        <span class="countdown-sep">:</span>
-        <div class="countdown-unit"><span class="countdown-num" id="cd-h">–</span><span class="countdown-unit-label">uur</span></div>
-        <span class="countdown-sep">:</span>
-        <div class="countdown-unit"><span class="countdown-num" id="cd-m">–</span><span class="countdown-unit-label">min</span></div>
+  <div class="up-hero">
+    <div class="up-badge">Eindexamen 2027</div>
+    <h1>Examenuitslag 2027: <em>wanneer weet je of je geslaagd bent?</em></h1>
+    <p class="up-sub">De uitslag van het eerste tijdvak wordt verwacht op <strong>donderdag 4 juni 2027</strong>. Hier vind je precies hoe die dag verloopt, hoe je cijfer tot stand komt en wat je opties zijn als het tegenvalt.</p>
+    <div class="up-cd">
+      <span class="up-cd-label">Nog tot de verwachte uitslag</span>
+      <div class="up-cd-nums" id="cd">
+        <div><span class="up-cd-num" id="cd-d">–</span><span class="up-cd-unit">dagen</span></div>
+        <span class="up-cd-sep">:</span>
+        <div><span class="up-cd-num" id="cd-h">–</span><span class="up-cd-unit">uur</span></div>
+        <span class="up-cd-sep">:</span>
+        <div><span class="up-cd-num" id="cd-m">–</span><span class="up-cd-unit">min</span></div>
       </div>
-      <span class="countdown-date">verwacht: donderdag 4 juni 2027</span>
+      <span class="up-cd-date">verwacht: donderdag 4 juni 2027</span>
     </div>
+    <p class="up-note">⚠️ <strong>Indicatieve datum.</strong> Het College voor Toetsen en Examens (CvTE) stelt de definitieve uitslagdatum vast en publiceert die op <a href="https://www.examenblad.nl" rel="noopener">Examenblad.nl</a>. Wij werken deze pagina bij zodra de officiële datum bekend is.</p>
   </div>
 
-  <div class="disclaimer">
-    <span class="disclaimer-icon">⚠️</span>
-    <span><strong>Indicatieve datum.</strong> Het College voor Toetsen en Examens (CvTE) stelt de definitieve uitslagdatum vast en publiceert die op <a href="https://www.examenblad.nl" rel="noopener" style="color:#fbbf24">Examenblad.nl</a>. Wij werken deze pagina bij zodra de officiële datum bekend is.</span>
+  <h2 class="up-h2">Zo verloopt de uitslagdag</h2>
+  <div class="up-tl">
+    <div class="up-tl-row"><span class="up-tl-date">± 08:00</span><span class="up-tl-what"><strong>Normering bekend.</strong> Examenblad publiceert de n-termen van alle vakken. Vanaf dat moment kun je met je puntenaantal je definitieve CE-cijfer uitrekenen, bijvoorbeeld met de <a href="/vakken/n-term-calculator.html">n-term-calculator</a>.</span></div>
+    <div class="up-tl-row"><span class="up-tl-date">ochtend</span><span class="up-tl-what"><strong>Scholen rekenen door.</strong> De examensecretaris verwerkt de n-termen en bepaalt per leerling de uitslag volgens de slaag-zakregeling.</span></div>
+    <div class="up-tl-row"><span class="up-tl-date">± 13:00–16:00</span><span class="up-tl-what"><strong>School belt.</strong> De meeste scholen bellen 's middags, vaak eerst de leerlingen die het niet gehaald hebben, daarna de geslaagden. Hoe laat precies verschilt per school.</span></div>
+    <div class="up-tl-row"><span class="up-tl-date">daarna</span><span class="up-tl-what"><strong>De vlag kan uit</strong> 🎉. Of je meldt je aan voor een herkansing in het tweede tijdvak (week van 16 juni 2027).</span></div>
   </div>
 
-  <h2 class="section-h2">Zo verloopt de uitslagdag</h2>
-  <div class="timeline">
-    <div class="tl-row"><span class="tl-date">± 08:00</span><span class="tl-what"><strong>Normering bekend.</strong> Examenblad publiceert de n-termen van alle vakken. Vanaf dat moment kun je met je puntenaantal je definitieve CE-cijfer uitrekenen, bijvoorbeeld met de <a href="/vakken/n-term-calculator.html" style="color:var(--accent)">n-term-calculator</a>.</span></div>
-    <div class="tl-row"><span class="tl-date">ochtend</span><span class="tl-what"><strong>Scholen rekenen door.</strong> De examensecretaris verwerkt de n-termen en bepaalt per leerling de uitslag volgens de slaag-zakregeling.</span></div>
-    <div class="tl-row"><span class="tl-date">± 13:00–16:00</span><span class="tl-what"><strong>School belt.</strong> De meeste scholen bellen 's middags, vaak eerst de leerlingen die het niet gehaald hebben, daarna de geslaagden. Hoe laat precies verschilt per school.</span></div>
-    <div class="tl-row"><span class="tl-date">daarna</span><span class="tl-what"><strong>De vlag kan uit</strong> 🎉. Of je meldt je aan voor een herkansing in het tweede tijdvak (week van 16 juni 2027).</span></div>
-  </div>
-
-  <h2 class="section-h2">Wanneer ben je geslaagd? De slaag-zakregeling 2027</h2>
-  <div class="info-grid">
-    <div class="info-card">
+  <h2 class="up-h2">Wanneer ben je geslaagd? De slaag-zakregeling 2027</h2>
+  <div class="up-grid">
+    <div class="up-card">
       <h3>✅ Je bent geslaagd als…</h3>
       <ul>
         <li>je gemiddelde <strong>CE-cijfer 5,5 of hoger</strong> is (onafgerond), én</li>
@@ -202,7 +210,7 @@
         <li>LO en CKV zijn beoordeeld met <strong>"voldoende" of "goed"</strong></li>
       </ul>
     </div>
-    <div class="info-card">
+    <div class="up-card">
       <h3>🧮 Twijfelgeval? Reken het na</h3>
       <p>Zit je op het randje, dan wil je niet wachten tot school belt. Met de gratis tools van Slagio reken je het zelf uit:</p>
       <ul>
@@ -213,9 +221,9 @@
     </div>
   </div>
 
-  <h2 class="section-h2">Gezakt of ontevreden? Dit zijn je opties</h2>
-  <div class="info-grid">
-    <div class="info-card">
+  <h2 class="up-h2">Gezakt of ontevreden? Dit zijn je opties</h2>
+  <div class="up-grid">
+    <div class="up-card">
       <h3>🔄 Herkansen in het tweede tijdvak</h3>
       <ul>
         <li>Je mag <strong>één vak</strong> herkansen, ook als je al geslaagd bent (cijfer verbeteren)</li>
@@ -225,7 +233,7 @@
         <li>Uitslag tweede tijdvak: verwacht rond <strong>1 juli 2027</strong></li>
       </ul>
     </div>
-    <div class="info-card">
+    <div class="up-card">
       <h3>📚 Definitief gezakt, wat nu?</h3>
       <ul>
         <li><strong>Overdoen</strong> van je examenjaar op je eigen school</li>
@@ -236,15 +244,15 @@
     </div>
   </div>
 
-  <div class="cta-box">
+  <div class="up-cta">
     <h2>Zorg dat je die uitslag niet hoeft af te wachten</h2>
     <p>De beste voorbereiding op de uitslagdag is een goed CE. Oefen gratis met 2.400+ examenvragen per domein, echte oude examens en een persoonlijk studieplan tot aan je examendatum.</p>
-    <a class="cta-btn" href="https://slagio.nl/?utm_source=uitslag2027">Start gratis met oefenen →</a>
-    <span class="cta-sub">Geen account nodig · werkt ook als app op je telefoon</span>
+    <a class="up-cta-btn" href="https://slagio.nl/?utm_source=uitslag2027">Start gratis met oefenen →</a>
+    <span class="up-cta-sub">Geen account nodig · werkt ook als app op je telefoon</span>
   </div>
 
-  <h2 class="section-h2">Handig bij de uitslag</h2>
-  <div class="rel-links">
+  <h2 class="up-h2">Handig bij de uitslag</h2>
+  <div class="up-rel">
     <a href="/vakken/examenrooster-2027.html">📅 Examenrooster 2027</a>
     <a href="/vakken/n-term-calculator.html">🧮 N-term-calculator</a>
     <a href="/vakken/slaagkans-calculator.html">🎯 Slaagkans-calculator</a>
@@ -254,7 +262,7 @@
 
 </div>
 
-<footer>
+<footer class="up-foot">
   <a href="https://slagio.nl">Slagio</a> · gratis examenvoorbereiding voor HAVO &amp; VWO · Officiële uitslagdata: <a href="https://www.examenblad.nl" rel="noopener">Examenblad.nl</a>
 </footer>
 
@@ -263,7 +271,7 @@
   var t=new Date('2027-06-04T08:00:00+02:00').getTime();
   function tick(){
     var d=t-Date.now();
-    if(d<0){document.getElementById('cd').parentElement.querySelector('.countdown-label').textContent='De uitslag is bekend!';d=0;}
+    if(d<0){var l=document.querySelector('.up-cd-label');if(l)l.textContent='De uitslag is bekend!';d=0;}
     document.getElementById('cd-d').textContent=Math.floor(d/864e5);
     document.getElementById('cd-h').textContent=Math.floor(d%864e5/36e5);
     document.getElementById('cd-m').textContent=Math.floor(d%36e5/6e4);
