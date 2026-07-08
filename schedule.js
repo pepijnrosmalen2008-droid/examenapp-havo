@@ -78,39 +78,51 @@ const EXAM_SCHEDULE=[
 // Alleen tijdvak 1 is per vak vastgesteld; het herkansingsrooster (2e tijdvak)
 // en 3e tijdvak worden pas later per vak/kandidaat bekend (zie renderSchedule).
 const EXAM_SCHEDULE_2027=[
-// ── HAVO 1e tijdvak 2027 ──
-{datum:'2027-05-12',tijd:'09:00–12:15',vak:'Nederlands',niveau:'havo',vakId:'nl'},
-{datum:'2027-05-13',tijd:'09:00–11:30',vak:'Frans',niveau:'havo'},
-{datum:'2027-05-14',tijd:'09:00–11:30',vak:'Duits',niveau:'havo'},
-{datum:'2027-05-17',tijd:'09:00–11:30',vak:'Engels',niveau:'havo',vakId:'en'},
-{datum:'2027-05-18',tijd:'13:30–16:30',vak:'Wiskunde A / Wiskunde B',niveau:'havo',vakId:'wa'},
-{datum:'2027-05-19',tijd:'09:00–11:30',vak:'Biologie',niveau:'havo',vakId:'bi'},
-{datum:'2027-05-20',tijd:'09:00–11:30',vak:'Scheikunde',niveau:'havo',vakId:'sk'},
-{datum:'2027-05-21',tijd:'09:00–11:30',vak:'Natuurkunde',niveau:'havo',vakId:'na'},
-{datum:'2027-05-24',tijd:'13:30–16:00',vak:'Economie',niveau:'havo',vakId:'ec'},
-{datum:'2027-05-25',tijd:'09:00–11:30',vak:'Bedrijfseconomie',niveau:'havo',vakId:'be'},
-{datum:'2027-05-25',tijd:'13:30–16:00',vak:'Geschiedenis',niveau:'havo',vakId:'gs'},
-{datum:'2027-05-26',tijd:'09:00–11:30',vak:'Aardrijkskunde',niveau:'havo',vakId:'ak'},
-{datum:'2027-05-26',tijd:'13:30–16:00',vak:'Maatschappijwetenschappen',niveau:'havo',vakId:'mw'},
-// ── VWO 1e tijdvak 2027 ──
-{datum:'2027-05-12',tijd:'09:00–12:30',vak:'Nederlands',niveau:'vwo',vakId:'nl'},
-{datum:'2027-05-13',tijd:'09:00–12:00',vak:'Frans',niveau:'vwo',vakId:'fr'},
-{datum:'2027-05-14',tijd:'09:00–12:00',vak:'Duits',niveau:'vwo',vakId:'du'},
-{datum:'2027-05-14',tijd:'13:30–17:00',vak:'Latijnse taal en cultuur',niveau:'vwo',vakId:'la'},
-{datum:'2027-05-17',tijd:'09:00–12:00',vak:'Engels',niveau:'vwo',vakId:'en'},
-{datum:'2027-05-18',tijd:'13:30–17:00',vak:'Wiskunde A / Wiskunde B / Wiskunde C',niveau:'vwo',vakId:'wa'},
-{datum:'2027-05-18',tijd:'09:00–12:30',vak:'Griekse taal en cultuur',niveau:'vwo',vakId:'gr'},
-{datum:'2027-05-19',tijd:'09:00–12:00',vak:'Biologie',niveau:'vwo',vakId:'bi'},
-{datum:'2027-05-20',tijd:'09:00–12:00',vak:'Scheikunde',niveau:'vwo',vakId:'sk'},
-{datum:'2027-05-20',tijd:'13:30–16:30',vak:'Filosofie',niveau:'vwo'},
-{datum:'2027-05-21',tijd:'09:00–12:00',vak:'Natuurkunde',niveau:'vwo',vakId:'na'},
-{datum:'2027-05-24',tijd:'13:30–17:00',vak:'Economie',niveau:'vwo',vakId:'ec'},
-{datum:'2027-05-25',tijd:'09:00–12:00',vak:'Bedrijfseconomie',niveau:'vwo'},
-{datum:'2027-05-25',tijd:'13:30–17:00',vak:'Geschiedenis',niveau:'vwo',vakId:'gs'},
-{datum:'2027-05-26',tijd:'09:00–12:00',vak:'Aardrijkskunde',niveau:'vwo',vakId:'ak'},
-{datum:'2027-05-26',tijd:'13:30–16:30',vak:'Maatschappijwetenschappen',niveau:'vwo',vakId:'mw'},
-{datum:'2027-05-27',tijd:'09:00–12:00',vak:'Informatica',niveau:'vwo',vakId:'in'},
-{datum:'2027-05-28',tijd:'09:00–12:00',vak:'Kunst (algemeen) / Muziek / CKV',niveau:'vwo'}
+// ── HAVO 1e tijdvak 2027 (officieel CvTE-rooster) ──
+{datum:'2027-05-14',tijd:'09:00–12:00',vak:'Kunst (algemeen)',niveau:'havo'},
+{datum:'2027-05-14',tijd:'13:30–16:30',vak:'Wiskunde A',niveau:'havo',vakId:'wa'},
+{datum:'2027-05-14',tijd:'13:30–16:30',vak:'Wiskunde B',niveau:'havo',vakId:'wb'},
+{datum:'2027-05-18',tijd:'13:30–16:30',vak:'Nederlands',niveau:'havo',vakId:'nl'},
+{datum:'2027-05-19',tijd:'13:30–16:30',vak:'Geschiedenis',niveau:'havo',vakId:'gs'},
+{datum:'2027-05-20',tijd:'09:00–12:00',vak:'Maatschappijwetenschappen',niveau:'havo',vakId:'mw'},
+{datum:'2027-05-20',tijd:'13:30–16:30',vak:'Biologie',niveau:'havo',vakId:'bi'},
+{datum:'2027-05-21',tijd:'09:00–12:00',vak:'Filosofie',niveau:'havo'},
+{datum:'2027-05-21',tijd:'13:30–16:00',vak:'Frans',niveau:'havo'},
+{datum:'2027-05-24',tijd:'09:00–11:30',vak:'Duits',niveau:'havo'},
+{datum:'2027-05-24',tijd:'13:30–16:30',vak:'Aardrijkskunde',niveau:'havo',vakId:'ak'},
+{datum:'2027-05-25',tijd:'13:30–16:00',vak:'Engels',niveau:'havo',vakId:'en'},
+{datum:'2027-05-26',tijd:'09:00–11:30',vak:'Tekenen/Handvaardigheid',niveau:'havo'},
+{datum:'2027-05-26',tijd:'13:30–16:30',vak:'Scheikunde',niveau:'havo',vakId:'sk'},
+{datum:'2027-05-27',tijd:'13:30–16:30',vak:'Economie',niveau:'havo',vakId:'ec'},
+{datum:'2027-05-28',tijd:'09:00–11:30',vak:'Muziek',niveau:'havo'},
+{datum:'2027-05-28',tijd:'13:30–16:30',vak:'Natuurkunde',niveau:'havo',vakId:'na'},
+{datum:'2027-05-31',tijd:'13:30–16:30',vak:'Bedrijfseconomie',niveau:'havo',vakId:'be'},
+{datum:'2027-06-01',tijd:'09:00–11:30',vak:'Fries / Russisch',niveau:'havo'},
+{datum:'2027-06-01',tijd:'13:30–16:00',vak:'Arabisch / Spaans / Turks',niveau:'havo'},
+// ── VWO 1e tijdvak 2027 (officieel CvTE-rooster) ──
+{datum:'2027-05-14',tijd:'13:30–16:30',vak:'Geschiedenis',niveau:'vwo',vakId:'gs'},
+{datum:'2027-05-18',tijd:'09:00–11:30',vak:'Tekenen/Handvaardigheid',niveau:'vwo'},
+{datum:'2027-05-18',tijd:'13:30–16:00',vak:'Engels',niveau:'vwo',vakId:'en'},
+{datum:'2027-05-19',tijd:'09:00–12:00',vak:'Latijnse taal en cultuur',niveau:'vwo',vakId:'la'},
+{datum:'2027-05-19',tijd:'13:30–16:30',vak:'Scheikunde',niveau:'vwo',vakId:'sk'},
+{datum:'2027-05-20',tijd:'13:30–16:30',vak:'Economie',niveau:'vwo',vakId:'ec'},
+{datum:'2027-05-21',tijd:'09:00–11:30',vak:'Muziek',niveau:'vwo'},
+{datum:'2027-05-21',tijd:'13:30–16:30',vak:'Nederlands',niveau:'vwo',vakId:'nl'},
+{datum:'2027-05-24',tijd:'09:00–12:00',vak:'Kunst (algemeen)',niveau:'vwo'},
+{datum:'2027-05-24',tijd:'13:30–16:30',vak:'Natuurkunde',niveau:'vwo',vakId:'na'},
+{datum:'2027-05-25',tijd:'09:00–11:30',vak:'Duits',niveau:'vwo',vakId:'du'},
+{datum:'2027-05-25',tijd:'13:30–16:30',vak:'Bedrijfseconomie',niveau:'vwo'},
+{datum:'2027-05-26',tijd:'09:00–12:00',vak:'Maatschappijwetenschappen',niveau:'vwo',vakId:'mw'},
+{datum:'2027-05-26',tijd:'13:30–16:30',vak:'Biologie',niveau:'vwo',vakId:'bi'},
+{datum:'2027-05-27',tijd:'09:00–12:00',vak:'Griekse taal en cultuur',niveau:'vwo',vakId:'gr'},
+{datum:'2027-05-27',tijd:'13:30–16:30',vak:'Aardrijkskunde',niveau:'vwo',vakId:'ak'},
+{datum:'2027-05-28',tijd:'13:30–16:30',vak:'Wiskunde A',niveau:'vwo',vakId:'wa'},
+{datum:'2027-05-28',tijd:'13:30–16:30',vak:'Wiskunde B',niveau:'vwo',vakId:'wb'},
+{datum:'2027-05-28',tijd:'13:30–16:30',vak:'Wiskunde C',niveau:'vwo'},
+{datum:'2027-05-31',tijd:'09:00–12:00',vak:'Filosofie',niveau:'vwo'},
+{datum:'2027-05-31',tijd:'13:30–16:00',vak:'Frans',niveau:'vwo',vakId:'fr'},
+{datum:'2027-06-01',tijd:'09:00–11:30',vak:'Fries / Russisch',niveau:'vwo'},
+{datum:'2027-06-01',tijd:'13:30–16:00',vak:'Arabisch / Spaans / Turks',niveau:'vwo'}
 ];
 // Kies de dataset op basis van het gekozen jaar in het rooster-scherm.
 let _schYear=(function(){try{return localStorage.getItem('sch_year')==='2027'?'2027':'2026';}catch(e){return '2026';}})();
@@ -164,7 +176,7 @@ function setTV3(arr){cloudSet(lvlCol('tijdvak3'),{list:arr});try{pushSyncBundle(
 // Periode-teksten per jaar (voor de kopjes en subtitel van het rooster-scherm).
 const _SCH_PERIODS={
   '2026':{tv1:'8–27 mei',tv2:'16–23 juni',tv3:'11–20 aug',sub:'1e tijdvak: 8–27 mei · 2e tijdvak: 16–23 juni · 3e tijdvak: 11–20 aug'},
-  '2027':{tv1:'12–28 mei',tv2:'16–25 juni',tv3:'aug',sub:'1e tijdvak: 12–28 mei · 2e tijdvak: 16–25 juni (indicatief) · 3e tijdvak: augustus'}
+  '2027':{tv1:'14 mei–1 jun',tv2:'16–25 juni',tv3:'aug',sub:'1e tijdvak: 14 mei–1 juni · 2e tijdvak: 16–25 juni (indicatief) · 3e tijdvak: augustus'}
 };
 function renderSchedule(){
   updateSchYearUI();
