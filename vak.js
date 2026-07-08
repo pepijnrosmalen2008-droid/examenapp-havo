@@ -47,13 +47,15 @@ function openVak(id,_noHash){
   metaHtml+='</div>';
   if(ST.vak.youtubeKanaal&&ST.vak.youtubeUrl)metaHtml+=`<a class="yt-card" href="${ST.vak.youtubeUrl}" target="_blank" rel="noopener"><div class="yt-icon"><svg viewBox="0 0 24 24"><path d="M23.5 7s-.3-2-1.2-2.8c-1.1-1.2-2.4-1.2-3-1.3C16.8 2.8 12 2.8 12 2.8s-4.8 0-7.3.1c-.6.1-1.9.1-3 1.3C.8 5 .5 7 .5 7S.2 9.3.2 11.5v2.1c0 2.2.3 4.5.3 4.5s.3 2 1.2 2.8c1.1 1.2 2.6 1.1 3.3 1.2C7.2 22.2 12 22.2 12 22.2s4.8 0 7.3-.2c.6-.1 1.9-.1 3-1.3.9-.8 1.2-2.8 1.2-2.8s.3-2.3.3-4.5v-2.1C23.8 9.3 23.5 7 23.5 7zM9.7 15.5V8.4l8.1 3.6-8.1 3.5z"/></svg></div><div class="yt-info"><span class="yt-label">Aanbevolen YouTube-kanaal</span><span class="yt-name">${ST.vak.youtubeKanaal}</span></div><span class="yt-arr">→</span></a>`;
   // Echte CE-examens archief
-  // EXAMENS_BASE_URL: zet op je eigen Supabase URL na uploaden met upload-examens-supabase.js
+  // EXAMENS_BASE_URL: zet op je eigen Supabase URL nadat de PDF's daar zijn geüpload.
   // Voorbeeld: 'https://xxxx.supabase.co/storage/v1/object/public/examens'
-  // Laat leeg ('') om de AlleExamens.nl fallback te gebruiken.
-  const _EXAMENS_BASE = 'https://sxrjdssmgwwygtskovyc.supabase.co/storage/v1/object/public/examens';
-  const _aeNames={nl:'Nederlands',wa:'Wiskunde A',wb:'Wiskunde B',bi:'Biologie',sk:'Scheikunde',na:'Natuurkunde',en:'Engels',ec:'Economie',be:'Bedrijfseconomie',gs:'Geschiedenis',ak:'Aardrijkskunde',mw:'Maatschappijwetenschappen',de:'Duits',fr:'Frans',la:'Latijn',gr:'Grieks',in:'Informatica'};
-  const _aeLvl=(ST.niveau||'havo').toUpperCase();
-  const _niveau=(ST.niveau||'havo').toLowerCase();
+  // Leeg ('') = AlleExamens.nl gebruiken. De Supabase-bucket bleek de archief-PDF's
+  // niet te bevatten (opgaven/antwoorden gaven 404; alleen de tekstboekje-knop werkte,
+  // want die wees al naar alleexamens.nl) — daarom staat dit nu op de werkende bron.
+  const _EXAMENS_BASE = '';
+  const _aeNames={nl:'Nederlands',wa:'Wiskunde A',wb:'Wiskunde B',bi:'Biologie',sk:'Scheikunde',na:'Natuurkunde',en:'Engels',ec:'Economie',be:'Bedrijfseconomie',gs:'Geschiedenis',ak:'Aardrijkskunde',mw:'Maatschappijwetenschappen',du:'Duits',fr:'Frans',la:'Latijn',gr:'Grieks',in:'Informatica'};
+  const _aeLvl=(APP_LEVEL||'havo').toUpperCase();
+  const _niveau=(APP_LEVEL||'havo').toLowerCase();
   const _aeName=_aeNames[ST.vak.id];
   if(_aeName){
     const _enc=encodeURIComponent(_aeName);
@@ -69,13 +71,13 @@ function openVak(id,_noHash){
       havo:{wa:2017,wb:2017,bi:2024,sk:2024,na:2024,be:2021,gs:2020,ak:2025,ec:2023},
       vwo: {wa:2018,wb:2018,bi:2025,sk:2025,na:2025,gs:2021,ak:2026,ec:2023,mw:2020,la:2017,gr:2017,in:2022}
     };
-    const _svVanaf=((_svData[(ST.niveau||'havo').toLowerCase()])||{})[ST.vak.id]||2019;
+    const _svVanaf=((_svData[(APP_LEVEL||'havo').toLowerCase()])||{})[ST.vak.id]||2019;
     const _svBadge=y=>y>=_svVanaf
       ?`<span style="display:inline-flex;align-items:center;gap:3px;font-size:10px;font-weight:700;padding:2px 7px;border-radius:20px;background:rgba(34,197,94,.12);border:1px solid rgba(34,197,94,.3);color:#22c55e;letter-spacing:.2px;vertical-align:middle">✓ Zelfde syllabus</span>`
       :`<span style="display:inline-flex;align-items:center;gap:3px;font-size:10px;font-weight:700;padding:2px 7px;border-radius:20px;background:rgba(234,179,8,.1);border:1px solid rgba(234,179,8,.3);color:#ca8a04;letter-spacing:.2px;vertical-align:middle" title="Huidig CE-programma geldt v.a. ${_svVanaf} (bron: examenblad.nl). Dit examen kan stof bevatten die niet meer in het syllabus staat, of nieuwe stof missen.">⚠ Ander syllabus (v.a. ${_svVanaf})</span>`;
     let _ch=`<div class="ce-archief-card" style="margin-top:16px;border-radius:16px;overflow:hidden;border:1.5px solid rgba(var(--or-rgb),.4);background:linear-gradient(135deg,rgba(var(--or-rgb),.08),rgba(var(--or-rgb),.03))"><div style="display:flex;align-items:center;justify-content:space-between;padding:14px 18px;cursor:pointer;gap:10px;user-select:none" onclick="this.closest('.ce-archief-card').classList.toggle('open')"><div style="display:flex;align-items:center;gap:10px"><div style="width:36px;height:36px;border-radius:10px;background:rgba(var(--or-rgb),.18);display:flex;align-items:center;justify-content:center;font-size:18px;flex-shrink:0">📄</div><div><div style="font-size:14px;font-weight:800;color:var(--or)">Echte CE-examens</div><div style="font-size:11px;color:var(--mu);margin-top:1px">${_aeName} · opgaven + antwoorden · 2019–2025</div></div></div><div style="width:28px;height:28px;border-radius:8px;background:rgba(var(--or-rgb),.15);display:flex;align-items:center;justify-content:center;font-size:12px;color:var(--or);flex-shrink:0;transition:transform .22s" class="ce-arr">▼</div></div><div class="ce-archief-body" style="display:none;padding:0 16px 16px">`;
     _ch+=`<a href="${_bundel}" target="_blank" rel="noopener" class="ce-bundel-btn">📦 Download complete examenbundel - alle jaren in één PDF</a><div style="display:flex;align-items:flex-start;gap:8px;background:rgba(234,179,8,.08);border:1px solid rgba(234,179,8,.3);border-radius:10px;padding:9px 12px;margin-bottom:14px;font-size:12px;color:#ca8a04;line-height:1.5"><span style="font-size:15px;flex-shrink:0">⚠️</span><span><strong>Let op: zeer groot bestand.</strong> Deze PDF bevat alle examenjaren en kan honderden MB's groot zijn. Dit kan je browser of computer tijdelijk laten vastlopen. Download liever de losse examens per jaar hieronder.</span></div>`;
-    const _hasTb=['nl','en','fr','de'].includes(ST.vak.id);
+    const _hasTb=['nl','en','fr','du'].includes(ST.vak.id);
     _jaren.forEach(year=>{
       _ch+=`<div class="ce-jaar-blok"><div class="ce-jaar-lbl" style="display:flex;align-items:center;gap:7px">${year}${year===2020?' (geannuleerd - COVID)':''} ${_svBadge(year)}</div><div class="ce-tv-row">`;
       if(year!==2020){['I','II'].forEach(tv=>{
@@ -220,7 +222,7 @@ function initMf(){
   const vak=ST.vak;
   const el=document.getElementById('methode-filter');
   if(!vak||!el)return;
-  const niveau=(ST.niveau||'havo').toLowerCase();
+  const niveau=(APP_LEVEL||'havo').toLowerCase();
   const vakData=LESMETHODES[vak.id];
   const methodes=vakData?(vakData[niveau]||vakData.havo||[]):[];
   if(!methodes.length){el.style.display='none';return;}
@@ -266,7 +268,7 @@ function _mfApply(mid,hnr,methodes){
 }
 function onMfMethodeChange(){
   const vak=ST.vak;if(!vak)return;
-  const niveau=(ST.niveau||'havo').toLowerCase();
+  const niveau=(APP_LEVEL||'havo').toLowerCase();
   const vakData=LESMETHODES[vak.id];
   const methodes=vakData?(vakData[niveau]||vakData.havo||[]):[];
   const mid=document.getElementById('mf-methode').value;
@@ -278,7 +280,7 @@ function onMfMethodeChange(){
 }
 function onMfHoofdstukChange(){
   const vak=ST.vak;if(!vak)return;
-  const niveau=(ST.niveau||'havo').toLowerCase();
+  const niveau=(APP_LEVEL||'havo').toLowerCase();
   const vakData=LESMETHODES[vak.id];
   const methodes=vakData?(vakData[niveau]||vakData.havo||[]):[];
   const mid=document.getElementById('mf-methode').value;
@@ -293,7 +295,7 @@ function onMfHoofdstukChange(){
 }
 function resetMf(){
   const vak=ST.vak;
-  const niveau=(ST.niveau||'havo').toLowerCase();
+  const niveau=(APP_LEVEL||'havo').toLowerCase();
   const mSel=document.getElementById('mf-methode');
   const hSel=document.getElementById('mf-hoofdstuk');
   if(mSel)mSel.value='';
