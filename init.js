@@ -334,7 +334,7 @@ function chooseLevel(level,_noHistory){
   _updatePageSEO(level);
   // Show intro for first-time users, home for returning users
   show('sc-home');
-  buildGrid();renderStreak();renderFavHome();renderXPHome();renderDailyChallenge();renderHomeStats();renderGreeting();
+  buildGrid();renderStreak();renderFavHome();renderXPHome();renderDailyChallenge();renderHomeStats();renderGreeting();try{renderKlasHome();}catch(e){}
   const _isNew=!localStorage.getItem(OB_KEY)&&!localStorage.getItem('slagio_seen_intro_v2');
   if(_isNew){setTimeout(showOnboarding,300);}
   else if(!localStorage.getItem(TUTO_KEY)){setTimeout(showTutorial,400);}

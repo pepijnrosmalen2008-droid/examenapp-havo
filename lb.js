@@ -62,6 +62,8 @@ async function saveLeaderboardEntry(entry){
       }else{console.warn('leaderboard save error:',e);}
     }
   }
+  // Klas-ranglijst: tel deze score mee als de leerling in een klas zit.
+  try{ if(typeof klasScoreSave==='function') klasScoreSave(entry); }catch(e){}
 }
 async function loadLeaderboardFromSupabase(){
   try{

@@ -131,7 +131,7 @@ function show(id,_noHash){
     const dlist=document.getElementById('dlist');
     if(!dlist||!dlist.children.length){try{openVak(ST.vak.id,true);}catch(e){}return;}
   }
-  if(id==='sc-home'){try{renderComebackCard();}catch(e){}try{renderFeatDisc();}catch(e){}}
+  if(id==='sc-home'){try{renderComebackCard();}catch(e){}try{renderFeatDisc();}catch(e){}try{renderKlasHome();}catch(e){}}
   if(id==='sc-schedule'&&localStorage.getItem('slagio_plan_generated')&&!document.getElementById('studieplan-content')?.children.length){try{renderStudieplan();}catch(e){}}
   if(id==='sc-studieplan'){try{spInitPrefs();}catch(e){}if(localStorage.getItem('slagio_plan_generated')){try{renderStudieplan();}catch(e){}}}
   // Welcome screen gets its own indigo theme; level pages get their own theme
