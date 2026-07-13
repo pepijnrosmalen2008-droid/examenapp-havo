@@ -640,7 +640,7 @@ function startFlash(){
   if(!d||!v)return;
   try{playSound('start');}catch(e){}
   // Stap 1: haal term→def paren uit de (rijke) samenvatting: <strong>, formuleboxen en tabellen
-  const samSrc=(typeof SAM_RICH!=='undefined'&&SAM_RICH[v.id+'_'+d.id])||d.sam;
+  const samSrc=(typeof SAM_RICH!=='undefined'&&SAM_RICH[APP_LEVEL+'_'+v.id+'_'+d.id])||d.sam;
   let cards=samSrc?_parseSamCards(samSrc):[];
   // Stap 2: fallback - koppel elke onderwerp aan de meest relevante zin (keyword-matching)
   if(cards.length<3){

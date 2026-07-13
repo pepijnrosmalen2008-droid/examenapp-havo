@@ -694,7 +694,7 @@ function openDomein(domId,_noHash){
           <div class="tlbl" style="margin-top:14px">CE-onderwerpen</div>
           <div class="ttags">${d.onderwerpen.map(o=>`<span class="tt">${o}</span>`).join('')}</div>
           <div class="tlbl">Samenvatting</div>
-          <div class="sam">${SAM_RICH[v.id+'_'+d.id]||d.sam}</div>
+          <div class="sam">${SAM_RICH[APP_LEVEL+'_'+v.id+'_'+d.id]||d.sam}</div>
           ${d.val&&d.val.length?`<div class="sam-val"><ul>${d.val.map(x=>`<li>${x}</li>`).join('')}</ul></div>`:''}
           ${d.binas&&d.binas.length?`<div class="sam-binas">${d.binas.map(b=>`<span class="sam-binas-tag">${b}</span>`).join('')}</div>`:''}
           <div class="sam-cta"><button class="sam-cta-btn" onclick="openQmode('${d.id}')">${ICO_PLAY} Oefenen op dit domein</button><button class="sam-print-btn" onclick="printSam()">${ICO_DOC} Samenvatting printen</button></div>
