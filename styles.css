@@ -641,8 +641,10 @@ html.dark .qb{background:#2e3550}
 .tlbl{font-size:11px;font-weight:700;color:var(--mu);text-transform:uppercase;letter-spacing:.7px;margin:14px 0 9px}
 .ttags{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:14px}
 .tt{background:var(--tt-bg);border:1px solid var(--bo);border-radius:8px;padding:5px 12px;font-size:12px;color:var(--dk)}
-.sam{background:var(--sam-bg);border-radius:12px;padding:16px 18px;font-size:13.5px;line-height:1.95;color:var(--sam-txt);border-left:3px solid var(--bl)}
-.sam strong{color:var(--sam-h);font-weight:700}
+.sam{background:var(--s);border-radius:16px;padding:22px 24px;font-size:15.5px;line-height:1.72;color:var(--dk);border:1px solid var(--bo)}
+.sam p{margin:0 0 12px}
+.sam strong{color:var(--dk);font-weight:700}
+@media(max-width:640px){.sam{padding:18px 16px;font-size:15px}}
 /* ── Domain tab layout ── */
 .dtab-bar{display:flex;padding:0 16px;background:var(--bg2);border-bottom:1px solid var(--bo);overflow-x:auto;scrollbar-width:none;gap:2px}
 .dtab-bar::-webkit-scrollbar{display:none}
@@ -656,32 +658,34 @@ html.dark .qb{background:#2e3550}
 .sam-cta-btn{background:var(--or);color:#fff;border:none;border-radius:10px;padding:10px 20px;font-size:13px;font-weight:700;cursor:pointer;font-family:var(--font);width:100%;transition:opacity .15s}
 .sam-cta-btn:hover{opacity:.88}
 /* ── Sam visual components ── */
-.sam-table{width:100%;border-collapse:collapse;margin:6px 0 12px;font-size:12.5px}
-.sam-table th{background:var(--or);color:#fff;padding:7px 10px;text-align:left;font-weight:700;font-size:11px;letter-spacing:.3px}
-.sam-table td{padding:7px 10px;border-bottom:1px solid var(--bo);vertical-align:top;line-height:1.5;font-size:12.5px}
+.sam-table{width:100%;border-collapse:collapse;margin:12px 0 18px;font-size:14px}
+.sam-table th{background:transparent;color:var(--dk);padding:9px 12px;text-align:left;font-weight:800;font-size:13px;border-bottom:2px solid var(--or)}
+.sam-table td{padding:9px 12px;border-bottom:1px solid var(--bo);vertical-align:top;line-height:1.55;font-size:14px}
 .sam-table tr:last-child td{border-bottom:none}
 .sam-table tr:nth-child(even) td{background:rgba(0,0,0,.025)}
 .dark .sam-table tr:nth-child(even) td{background:rgba(255,255,255,.03)}
-.sam-formula-box{background:rgba(var(--or-rgb),.08);border:1.5px solid rgba(var(--or-rgb),.28);border-radius:12px;padding:12px 14px;margin:8px 0 12px;display:flex;flex-direction:column;gap:5px}
-.sam-formula-label{font-size:10px;font-weight:800;color:var(--or);text-transform:uppercase;letter-spacing:.8px}
-.sam-formula-eq{font-size:17px;font-weight:700;color:var(--dk);font-family:monospace;line-height:1.4;letter-spacing:.3px}
-.sam-formula-note{font-size:12px;color:var(--mu);line-height:1.55}
-.sam-tip{background:rgba(34,197,94,.07);border-left:3px solid #22c55e;border-radius:0 8px 8px 0;padding:9px 12px;margin:10px 0 6px;font-size:12.5px;color:var(--dk);line-height:1.55}
-.sam-tip::before{content:'💡 Examentip';font-weight:800;color:#16a34a;font-size:10px;display:block;margin-bottom:4px;text-transform:uppercase;letter-spacing:.6px}
-.sam-warn{background:rgba(239,68,68,.06);border-left:3px solid #ef4444;border-radius:0 8px 8px 0;padding:9px 12px;margin:10px 0 6px;font-size:12.5px;color:var(--dk);line-height:1.55}
-.sam-warn::before{content:'⚠ Veelgemaakte fout';font-weight:800;color:#dc2626;font-size:10px;display:block;margin-bottom:4px;text-transform:uppercase;letter-spacing:.6px}
+.sam-formula-box{background:rgba(var(--or-rgb),.05);border:1px solid rgba(var(--or-rgb),.20);border-left:3px solid var(--or);border-radius:10px;padding:14px 16px;margin:14px 0;display:flex;flex-direction:column;gap:7px}
+.sam-formula-label{font-size:10.5px;font-weight:800;color:var(--or);text-transform:uppercase;letter-spacing:.8px}
+.sam-formula-eq{font-size:18px;font-weight:700;color:var(--dk);font-family:ui-monospace,'SF Mono',Menlo,Consolas,monospace;line-height:1.5;letter-spacing:.2px}
+.sam-formula-note{font-size:13.5px;color:var(--mu);line-height:1.6}
+.sam-tip{background:rgba(34,197,94,.06);border-left:3px solid #22c55e;border-radius:0 10px 10px 0;padding:12px 16px;margin:16px 0;font-size:14px;color:var(--dk);line-height:1.6}
+.sam-tip::before{content:'💡 Examentip';font-weight:800;color:#16a34a;font-size:10.5px;display:block;margin-bottom:5px;text-transform:uppercase;letter-spacing:.6px}
+.dark .sam-tip::before{color:#4ade80}
+.sam-warn{background:rgba(239,68,68,.05);border-left:3px solid #ef4444;border-radius:0 10px 10px 0;padding:12px 16px;margin:16px 0;font-size:14px;color:var(--dk);line-height:1.6}
+.sam-warn::before{content:'⚠ Veelgemaakte fout';font-weight:800;color:#dc2626;font-size:10.5px;display:block;margin-bottom:5px;text-transform:uppercase;letter-spacing:.6px}
+.dark .sam-warn::before{color:#f87171}
 .sam-val{background:rgba(239,68,68,.06);border:1.5px solid #ef4444;border-radius:10px;padding:11px 13px;margin:12px 0 4px}
 .sam-val::before{content:'🪤 Examenvallen';font-weight:800;color:#dc2626;font-size:10px;display:block;margin-bottom:6px;text-transform:uppercase;letter-spacing:.6px}
 .sam-val ul{margin:0;padding-left:16px}.sam-val li{font-size:12.5px;color:var(--dk);line-height:1.6;margin-bottom:3px}
 .sam-binas{background:rgba(59,130,246,.06);border:1.5px solid rgba(59,130,246,.35);border-radius:10px;padding:10px 13px;margin:10px 0 4px;display:flex;flex-wrap:wrap;gap:6px;align-items:center}
 .sam-binas::before{content:'📐 BINAS / ScienceData';font-weight:800;color:#2563eb;font-size:10px;display:block;width:100%;margin-bottom:4px;text-transform:uppercase;letter-spacing:.6px}
 .sam-binas-tag{background:rgba(59,130,246,.12);color:#1d4ed8;border-radius:6px;padding:3px 8px;font-size:11.5px;font-weight:600}
-.sam-compare{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin:8px 0 12px}
-.sam-compare-col{background:var(--bg2);border-radius:10px;padding:10px 12px;border:1px solid var(--bo)}
-.sam-compare-head{font-size:11px;font-weight:800;margin-bottom:6px;text-transform:uppercase;letter-spacing:.5px;padding-bottom:5px;border-bottom:1px solid var(--bo)}
-.sam-compare-col:first-child .sam-compare-head{color:#6366f1}
+.sam-compare{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:14px 0 18px}
+.sam-compare-col{background:var(--bg2);border-radius:12px;padding:13px 15px;border:1px solid var(--bo)}
+.sam-compare-head{font-size:12.5px;font-weight:800;margin-bottom:8px;letter-spacing:-.1px;padding-bottom:7px;border-bottom:1px solid var(--bo);color:var(--dk)}
+.sam-compare-col:first-child .sam-compare-head{color:var(--dk)}
 .sam-compare-col:last-child .sam-compare-head{color:var(--or)}
-.sam-compare-col ul{margin:0;padding:0 0 0 12px;font-size:12px;line-height:1.7;list-style:disc}
+.sam-compare-col ul{margin:0;padding:0 0 0 14px;font-size:13.5px;line-height:1.65;list-style:disc}
 .sam-compare-col ul li{padding:2px 0;border:none}
 .sam-compare-col ul li::before{display:none}
 .sam-steps{margin:4px 0 10px;padding-left:0;list-style:none;counter-reset:sam-step}
@@ -697,28 +701,28 @@ html.dark .qb{background:#2e3550}
 .sam-onthoud{background:rgba(168,85,247,.07);border:1.5px dashed rgba(168,85,247,.45);border-radius:10px;padding:10px 14px;margin:10px 0 8px;font-size:13px;line-height:1.6;color:var(--dk)}
 .sam-onthoud::before{content:'📌 Moet je kennen';font-weight:800;color:#9333ea;font-size:10px;display:block;margin-bottom:5px;text-transform:uppercase;letter-spacing:.6px}
 /* ── Sam: kernzin-hook bovenaan een domein ── */
-.sam-intro{background:linear-gradient(135deg,rgba(var(--or-rgb),.12),rgba(var(--or-rgb),.03));border:1px solid rgba(var(--or-rgb),.28);border-radius:12px;padding:11px 14px;margin:0 0 14px;font-size:13px;line-height:1.55;color:var(--dk)}
-.sam-intro::before{content:'🎯 In het kort';display:block;font-weight:800;font-size:10px;text-transform:uppercase;letter-spacing:.6px;color:var(--or);margin-bottom:4px}
+.sam-intro{background:rgba(var(--or-rgb),.06);border:1px solid rgba(var(--or-rgb),.18);border-radius:12px;padding:15px 18px;margin:0 0 20px;font-size:15px;line-height:1.65;color:var(--dk)}
+.sam-intro::before{content:'🎯 In het kort';display:block;font-weight:800;font-size:10.5px;text-transform:uppercase;letter-spacing:.6px;color:var(--or);margin-bottom:6px}
 .sam-intro strong{color:var(--or)}
 .sam .sam-intro + .sam-head{border-top:none;padding-top:0;margin-top:0}
 /* ── Sam: eigen SVG-figuur ── */
-.sam-figure{margin:10px 0 14px;background:var(--bg2);border:1px solid var(--bo);border-radius:12px;padding:14px 10px 10px;text-align:center}
+.sam-figure{margin:16px 0 18px;background:var(--bg2);border:1px solid var(--bo);border-radius:14px;padding:18px 14px 14px;text-align:center}
 .sam-figure svg{max-width:100%;height:auto;display:block;margin:0 auto;overflow:visible}
 .sam-figure svg text{font-family:var(--font,system-ui,sans-serif)}
-.sam-figcap{font-size:11px;color:var(--mu);margin-top:9px;line-height:1.5;text-align:center}
+.sam-figcap{font-size:12.5px;color:var(--mu);margin-top:12px;line-height:1.55;text-align:center;max-width:52ch;margin-left:auto;margin-right:auto}
 .sam-figcap strong{color:var(--dk)}
 /* ── Sam: kenmerkend-aspect chips ── */
 .sam-chips{display:flex;flex-wrap:wrap;gap:6px;margin:7px 0 11px;align-items:center}
 .sam-chip{background:rgba(var(--or-rgb),.10);border:1px solid rgba(var(--or-rgb),.30);color:var(--or);border-radius:20px;padding:3px 10px;font-size:11px;font-weight:700;line-height:1.35}
 .sam-chip-lead{background:var(--or);border-color:var(--or);color:#fff;text-transform:uppercase;font-size:9.5px;letter-spacing:.4px}
 /* ── Sam: uitgewerkte voorbeeldopgave ── */
-.sam-worked{background:rgba(var(--or-rgb),.05);border:1.5px solid rgba(var(--or-rgb),.28);border-radius:12px;padding:12px 14px;margin:14px 0}
-.sam-worked-h{font-size:10.5px;font-weight:800;text-transform:uppercase;letter-spacing:.5px;color:var(--or);margin-bottom:7px}
-.sam-worked-q{font-size:12.5px;font-style:italic;color:var(--dk);background:var(--bg2);border-radius:8px;padding:8px 11px;margin-bottom:9px;line-height:1.5}
+.sam-worked{background:rgba(var(--or-rgb),.04);border:1px solid rgba(var(--or-rgb),.20);border-radius:12px;padding:16px 18px;margin:18px 0}
+.sam-worked-h{font-size:11px;font-weight:800;text-transform:uppercase;letter-spacing:.5px;color:var(--or);margin-bottom:10px}
+.sam-worked-q{font-size:14px;font-weight:600;color:var(--dk);background:var(--s);border:1px solid var(--bo);border-radius:10px;padding:11px 14px;margin-bottom:12px;line-height:1.55}
 .sam-worked-steps{margin:0;padding:0;list-style:none;counter-reset:ws}
-.sam-worked-steps li{counter-increment:ws;position:relative;padding:5px 0 5px 28px;font-size:12.5px;line-height:1.55;color:var(--dk);border:none}
+.sam-worked-steps li{counter-increment:ws;position:relative;padding:6px 0 6px 30px;font-size:14px;line-height:1.6;color:var(--dk);border:none}
 .sam-worked-steps li::before{content:counter(ws);position:absolute;left:0;top:4px;width:19px;height:19px;background:var(--or);color:#fff;border-radius:50%;font-size:10.5px;font-weight:800;text-align:center;line-height:19px}
-.sam-worked-ans{margin-top:9px;font-size:12.5px;font-weight:700;color:var(--or);border-top:1px dashed rgba(var(--or-rgb),.32);padding-top:8px}
+.sam-worked-ans{margin-top:12px;font-size:14px;font-weight:700;color:var(--or);border-top:1px dashed rgba(var(--or-rgb),.32);padding-top:11px;line-height:1.55}
 /* ── Sam: CE-spotlight ── */
 .sam-ce-spot{background:rgba(var(--or-rgb),.06);border:1.5px solid rgba(var(--or-rgb),.3);border-radius:10px;padding:11px 14px;margin:12px 0 6px}
 .sam-ce-spot::before{content:'🎯 Zo wordt dit gevraagd op het CE';font-weight:800;color:var(--or);font-size:10px;display:block;margin-bottom:6px;text-transform:uppercase;letter-spacing:.6px}
@@ -2189,11 +2193,10 @@ html.dark .calc-btn{background:#2e3550}
 }
 
 /* ── SAM BULLET LISTS ─────────────────────────── */
-.sam ul{margin:2px 0 6px;padding:0;list-style:none}
-.sam ul li{padding:5px 0 5px 16px;position:relative;font-size:13.5px;line-height:1.6;border-bottom:1px solid rgba(0,0,0,.06)}
-.sam ul li:last-child{border-bottom:none}
-.sam ul li::before{content:'›';position:absolute;left:0;color:var(--or);font-weight:800;font-size:15px;line-height:1.45}
-.sam .sam-head{font-size:14px;font-weight:800;color:var(--or);text-transform:none;letter-spacing:-.1px;margin:18px 0 7px;padding-top:15px;border-top:1.5px solid var(--bo)}
+.sam ul{margin:4px 0 14px;padding:0;list-style:none}
+.sam ul li{padding:3px 0 3px 20px;position:relative;font-size:15px;line-height:1.62}
+.sam ul li::before{content:'';position:absolute;left:4px;top:12px;width:5px;height:5px;border-radius:50%;background:var(--or)}
+.sam .sam-head{font-size:16.5px;font-weight:800;color:var(--dk);font-family:var(--font-head);text-transform:none;letter-spacing:-.2px;margin:28px 0 12px;padding-top:22px;border-top:1px solid var(--bo)}
 .sam .sam-head:first-child{margin-top:0;padding-top:0;border-top:none}
 /* ── SAM-HEAD COLLAPSIBLE ────────────────────────── */
 .sam .sam-head{cursor:pointer;user-select:none;display:flex;align-items:center;justify-content:space-between;gap:6px}
