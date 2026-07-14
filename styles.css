@@ -636,6 +636,7 @@ html:not(.dark) .sb-gl6::before{filter:brightness(1.0)}
 .qb{background:#1a1d26;color:#fff;border:none;border-radius:10px;padding:8px 16px;font-size:13px;font-weight:700;cursor:pointer;transition:all .2s;font-family:var(--font)}
 .qb:hover{background:var(--or)}
 html.dark .qb{background:#2e3550}
+.dom-soon{font-size:12.5px;font-weight:700;color:var(--mu);background:var(--bg2);border:1px solid var(--bo);border-radius:10px;padding:8px 14px;white-space:nowrap}
 .dtop{display:none;border-top:1px solid var(--bo)}
 .dtop.on{display:block}
 .tlbl{font-size:11px;font-weight:700;color:var(--mu);text-transform:uppercase;letter-spacing:.7px;margin:14px 0 9px}

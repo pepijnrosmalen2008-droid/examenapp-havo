@@ -170,6 +170,7 @@ function openVak(id,_noHash){
     const progHtml=r.hasData?`<div class="dom-progress"><div class="dp-bar"><div class="dp-fill" style="width:${Math.round(r.pct*100)}%"></div></div><span class="dp-txt">${Math.round(r.pct*100)}%${bestChip}${pbChip}</span></div>`:'';
     const _csInfo=d.ceStatus&&_ceStatusMap()[d.ceStatus];
     const csBadge=_csInfo?`<div class="dom-ce-badge dom-ce-${_csInfo.cls}">${_csInfo.icon} ${_csInfo.txt}</div>`:'';
+    const _empty=(!d.sv||!d.sv.length)&&(!d.oe||!d.oe.length);
     const el=document.createElement('div');
     el.className='dc2';
     el.dataset.domeinId=d.id;
@@ -180,7 +181,7 @@ function openVak(id,_noHash){
         <div class="dbtns">
           <button class="fav-btn${isFav(ST.vak.id,d.id)?' active':''}" id="fav-${d.id}" onclick="event.stopPropagation();const on=toggleFav('${ST.vak.id}','${d.id}');this.classList.toggle('active',on)" aria-label="Favoriet">${ICO_STAR}</button>
           <button class="exb" id="exb-${d.id}" onclick="event.stopPropagation();openDomein('${d.id}')">${ICO_CHEVRON} Leerstof</button>
-          <button class="qb" onclick="event.stopPropagation();openQmode('${d.id}')">${ICO_PLAY} Quiz</button>
+          ${_empty?`<span class="dom-soon">🔜 Binnenkort</span>`:`<button class="qb" onclick="event.stopPropagation();openQmode('${d.id}')">${ICO_PLAY} Quiz</button>`}
         </div>
       </div>`;
     dl.appendChild(el);
