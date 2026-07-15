@@ -27,131 +27,132 @@
   ]}
   </script>
   <style>
-    .pg-nav{position:sticky;top:0;z-index:50;background:color-mix(in srgb,var(--bg) 88%,transparent);backdrop-filter:blur(10px);border-bottom:1px solid var(--bo)}
-    .pg-nav-in{max-width:960px;margin:0 auto;padding:12px 24px;display:flex;align-items:center;gap:14px}
-    .pg-logo{display:flex;align-items:center;gap:9px;font-family:var(--font-head);font-weight:800;font-size:18px;color:var(--dk);text-decoration:none}
-    .pg-logo img{width:28px;height:28px;border-radius:8px}
-    .pg-nav a.open{margin-left:auto;background:var(--or);color:#fff;font-weight:700;font-size:14px;padding:9px 18px;border-radius:11px;text-decoration:none;box-shadow:var(--rd-glow)}
-    .pv-wrap{max-width:760px;margin:0 auto;padding:0 24px 72px}
-    .pv-hero{padding:48px 0 8px}
-    .pv-badge{display:inline-block;background:var(--orl);color:var(--or);border:1.5px solid rgba(var(--or-rgb),.35);border-radius:999px;font-size:12px;font-weight:700;letter-spacing:.07em;text-transform:uppercase;padding:5px 15px;margin-bottom:16px}
-    .pv-hero h1{font-family:var(--font-head);font-size:clamp(28px,5vw,40px);font-weight:800;line-height:1.14;letter-spacing:-.5px;margin:0 0 10px}
-    .pv-updated{color:var(--mu);font-size:14px;margin:0}
-    .pv-tldr{background:var(--orl);border:1.5px solid rgba(var(--or-rgb),.3);border-radius:16px;padding:20px 22px;margin:26px 0 8px}
-    .pv-tldr h2{font-family:var(--font-head);font-size:16px;font-weight:800;margin:0 0 8px;color:var(--dk)}
-    .pv-tldr ul{margin:0;padding-left:20px;color:var(--dk);font-size:14.5px;line-height:1.7}
+    .up-wrap{max-width:720px;margin:0 auto;padding:0 24px 64px}
+    .pv-head{padding:40px 0 4px}
+    .up-badge{display:inline-block;background:var(--orl);color:var(--or);border:1.5px solid rgba(var(--or-rgb),.35);border-radius:999px;font-size:12px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;padding:5px 14px;margin-bottom:14px;font-family:var(--font)}
+    .pv-head h1{font-family:var(--font-head);font-size:clamp(27px,4.6vw,38px);font-weight:800;line-height:1.16;letter-spacing:-.4px;margin:0 0 8px}
+    .pv-updated{color:var(--mu);font-size:13.5px;margin:0}
+    .entree{background:linear-gradient(135deg,rgba(var(--or-rgb),.09),rgba(var(--or-rgb),.03));border:1.5px solid rgba(var(--or-rgb),.32);border-radius:18px;padding:22px 26px;margin:24px 0 4px}
+    .entree h2{font-family:var(--font-head);font-size:16px;font-weight:800;margin:0 0 10px;color:var(--dk)}
+    .entree ul{margin:0;padding-left:20px}
+    .entree li{color:var(--mu);font-size:14.3px;line-height:1.65;margin:5px 0}
+    .entree li strong{color:var(--dk)}
     .pv-body h2{font-family:var(--font-head);font-size:19px;font-weight:800;letter-spacing:-.2px;color:var(--dk);margin:34px 0 8px}
-    .pv-body h3{font-family:var(--font-head);font-size:15.5px;font-weight:700;color:var(--dk);margin:20px 0 6px}
+    .pv-body h3{font-family:var(--font-head);font-size:15px;font-weight:700;color:var(--dk);margin:18px 0 5px}
     .pv-body p{color:var(--mu);font-size:15px;line-height:1.72;margin:0 0 12px}
-    .pv-body ul{color:var(--mu);font-size:15px;line-height:1.7;margin:0 0 14px;padding-left:22px}
+    .pv-body ul{color:var(--mu);font-size:15px;line-height:1.68;margin:0 0 14px;padding-left:22px}
     .pv-body li{margin-bottom:5px}
     .pv-body strong{color:var(--dk)}
     .pv-body a{color:var(--or);font-weight:600;text-decoration:none}
-    .pv-foot{max-width:760px;margin:0 auto;padding:30px 24px 60px;text-align:center;color:var(--mu);font-size:13.5px;line-height:1.9;border-top:1px solid var(--bo)}
-    .pv-foot a{color:var(--or);text-decoration:none;font-weight:600}
+    .up-foot{border-top:1px solid var(--bo);margin-top:44px;padding:22px 24px;text-align:center;font-size:13px;color:var(--mu)}
+    .up-foot a{color:var(--or);text-decoration:none;font-weight:600}
+    .up-nav-cta{margin-left:14px;background:var(--or);color:#fff!important;font-weight:700;font-size:13.5px;padding:9px 18px;border-radius:12px;text-decoration:none;box-shadow:0 2px 10px rgba(var(--or-rgb),.3)}
+    .up-nav-cta:hover{filter:brightness(1.06)}
+    @media(max-width:520px){.up-nav-cta{display:none}}
   </style>
 </head>
 <body>
-  <nav class="pg-nav"><div class="pg-nav-in">
-    <a class="pg-logo" href="/"><img src="/icon-192.png" alt="Slagio">Slagio</a>
-    <a class="open" href="/">Open de app →</a>
-  </div></nav>
 
-  <main class="pv-wrap">
-    <div class="pv-hero">
-      <span class="pv-badge">Privacybeleid</span>
-      <h1>Jouw privacy, in gewone taal</h1>
-      <p class="pv-updated">Laatst bijgewerkt: 27 april 2026</p>
-    </div>
+<nav class="nav"><div class="nav-inner">
+  <a class="logo" href="/" style="text-decoration:none"><img src="/icon-192.png" alt="Slagio" style="width:26px;height:26px;border-radius:7px;object-fit:cover;flex-shrink:0">Slagio</a>
+  <button class="bk" style="margin-left:auto" onclick="if(document.referrer&&document.referrer.indexOf(location.host)>-1){history.back()}else{location.href='/'}">← Terug</button>
+  <a class="up-nav-cta" href="/">Gratis oefenen</a>
+</div></nav>
 
-    <div class="pv-tldr">
-      <h2>In het kort</h2>
-      <ul>
-        <li>Je kunt <strong>volledig anoniem</strong> oefenen; zonder account blijft je data op je eigen apparaat.</li>
-        <li>Een account is <strong>optioneel</strong> en alleen voor synchronisatie tussen apparaten.</li>
-        <li>We <strong>verkopen nooit</strong> gegevens. Cloud-opslag staat op servers in de EU.</li>
-        <li>Advertenties kun je in de cookiebanner weigeren zonder dat de app anders werkt.</li>
-      </ul>
-    </div>
+<div class="up-wrap">
+  <div class="pv-head">
+    <div class="up-badge">Privacybeleid</div>
+    <h1>Jouw privacy, in gewone taal</h1>
+    <p class="pv-updated">Laatst bijgewerkt: 27 april 2026</p>
+  </div>
 
-    <div class="pv-body">
-      <h2>1. Wie zijn wij</h2>
-      <p>Slagio is een gratis educatieve webapplicatie voor eindexamenvoorbereiding van Nederlandse HAVO- en VWO-leerlingen, bereikbaar via <strong>slagio.nl</strong>. De app wordt gehost via GitHub Pages. Voor vragen of opmerkingen kun je contact opnemen via <a href="mailto:slagiocompany@gmail.com">slagiocompany@gmail.com</a>.</p>
+  <div class="entree">
+    <h2>In het kort</h2>
+    <ul>
+      <li>Je kunt <strong>volledig anoniem</strong> oefenen; zonder account blijft je data op je eigen apparaat.</li>
+      <li>Een account is <strong>optioneel</strong> en alleen voor synchronisatie tussen apparaten.</li>
+      <li>We <strong>verkopen nooit</strong> gegevens. Cloud-opslag staat op servers in de EU.</li>
+      <li>Advertenties kun je in de cookiebanner weigeren zonder dat de app anders werkt.</li>
+    </ul>
+  </div>
 
-      <h2>2. Welke gegevens verzamelen en verwerken wij</h2>
-      <p>We onderscheiden drie categorieën:</p>
-      <h3>A. Lokale opslag (alleen op jouw apparaat)</h3>
-      <p>De app slaat de volgende gegevens op in de browser van je eigen apparaat via <em>localStorage</em>. Deze verlaten nooit je apparaat, tenzij je een account aanmaakt en cloud-synchronisatie inschakelt:</p>
-      <ul>
-        <li>Studiestreak en oefenhistorie per dag</li>
-        <li>XP-punten, level en gekozen avatar</li>
-        <li>Verdiende badges en prestaties</li>
-        <li>Voortgang en beheersingsscores per domein</li>
-        <li>Favoriete domeinen en geselecteerde vakken</li>
-        <li>Ingevulde SE-cijfers bij de calculator</li>
-        <li>Profielgegevens die je zelf invult: naam, school, klas, examenprofiel</li>
-        <li>Thema-voorkeur (licht/donker), cookie- en meldingsvoorkeur, examenrooster-instellingen</li>
-      </ul>
-      <h3>B. Cloud-synchronisatie via account (optioneel)</h3>
-      <p>Als je een account aanmaakt, worden de volgende gegevens opgeslagen op onze server via <strong>Supabase</strong> (een clouddienst met servers in de EU):</p>
-      <ul>
-        <li>Gebruikersnaam / weergavenaam</li>
-        <li>E-mailadres (alleen bij een account met e-mail en wachtwoord)</li>
-        <li>Studiestreak, XP en voortgangsdata</li>
-        <li>Leaderboard-score en -naam</li>
-      </ul>
-      <p>Een account is <strong>niet verplicht</strong>. Zonder account werkt de app volledig lokaal. Je kunt je account op elk moment verwijderen via de profielpagina of via een e-mail naar <a href="mailto:slagiocompany@gmail.com">slagiocompany@gmail.com</a>.</p>
-      <h3>C. Anonieme gebruiksstatistieken</h3>
-      <p>Om de app te verbeteren houden we anoniem bij welke functies gebruikt worden (bijvoorbeeld hoe vaak een quiz wordt gestart). Hierbij hoort een willekeurig gegenereerd apparaat-ID dat in je browser wordt opgeslagen; dit is niet tot jou als persoon herleidbaar.</p>
+  <div class="pv-body">
+    <h2>1. Wie zijn wij</h2>
+    <p>Slagio is een gratis educatieve webapplicatie voor eindexamenvoorbereiding van Nederlandse HAVO- en VWO-leerlingen, bereikbaar via <strong>slagio.nl</strong>. De app wordt gehost via GitHub Pages. Voor vragen of opmerkingen kun je contact opnemen via <a href="mailto:slagiocompany@gmail.com">slagiocompany@gmail.com</a>.</p>
 
-      <h2>3. Push-meldingen</h2>
-      <p>Als je push-meldingen inschakelt, slaat je browser een meldingsvoorkeur op. Bij gebruik van de geïnstalleerde app (PWA) kan de browser dagelijkse studieherinneringen sturen. Hierbij worden <strong>geen</strong> persoonlijke gegevens naar externe servers verstuurd: de melding wordt lokaal gegenereerd op basis van je studiestreak en examenrooster. Je kunt meldingen op elk moment uitzetten via je browserinstellingen of via Profiel in de app.</p>
+    <h2>2. Welke gegevens verzamelen en verwerken wij</h2>
+    <p>We onderscheiden drie categorieën:</p>
+    <h3>A. Lokale opslag (alleen op jouw apparaat)</h3>
+    <p>De app slaat de volgende gegevens op in de browser van je eigen apparaat via <em>localStorage</em>. Deze verlaten nooit je apparaat, tenzij je een account aanmaakt en cloud-synchronisatie inschakelt:</p>
+    <ul>
+      <li>Studiestreak en oefenhistorie per dag</li>
+      <li>XP-punten, level en gekozen avatar</li>
+      <li>Verdiende badges en prestaties</li>
+      <li>Voortgang en beheersingsscores per domein</li>
+      <li>Favoriete domeinen en geselecteerde vakken</li>
+      <li>Ingevulde SE-cijfers bij de calculator</li>
+      <li>Profielgegevens die je zelf invult: naam, school, klas, examenprofiel</li>
+      <li>Thema-voorkeur (licht/donker), cookie- en meldingsvoorkeur, examenrooster-instellingen</li>
+    </ul>
+    <h3>B. Cloud-synchronisatie via account (optioneel)</h3>
+    <p>Als je een account aanmaakt, worden de volgende gegevens opgeslagen op onze server via <strong>Supabase</strong> (een clouddienst met servers in de EU):</p>
+    <ul>
+      <li>Gebruikersnaam / weergavenaam</li>
+      <li>E-mailadres (alleen bij een account met e-mail en wachtwoord)</li>
+      <li>Studiestreak, XP en voortgangsdata</li>
+      <li>Leaderboard-score en -naam</li>
+    </ul>
+    <p>Een account is <strong>niet verplicht</strong>. Zonder account werkt de app volledig lokaal. Je kunt je account op elk moment verwijderen via de profielpagina of via een e-mail naar <a href="mailto:slagiocompany@gmail.com">slagiocompany@gmail.com</a>.</p>
+    <h3>C. Anonieme gebruiksstatistieken</h3>
+    <p>Om de app te verbeteren houden we anoniem bij welke functies gebruikt worden (bijvoorbeeld hoe vaak een quiz wordt gestart). Hierbij hoort een willekeurig gegenereerd apparaat-ID dat in je browser wordt opgeslagen; dit is niet tot jou als persoon herleidbaar.</p>
 
-      <h2>4. Cookies en advertenties</h2>
-      <p>Wij gebruiken <strong>Google AdSense</strong> om advertenties te tonen. Google kan cookies plaatsen om advertenties te personaliseren. Dit betreft functionele cookies (om je cookiekeuze te onthouden), advertentiecookies van Google en anonieme analytische cookies. Als je cookies <strong>weigert</strong> via onze cookiebanner, worden er géén gepersonaliseerde advertenties getoond; Google kan dan nog niet-gepersonaliseerde advertenties tonen op basis van de pagina-inhoud. Je advertentievoorkeuren pas je aan via <a href="https://www.google.com/settings/ads" target="_blank" rel="noopener">Google Advertentie-instellingen</a> of <a href="https://www.aboutads.info/choices/" target="_blank" rel="noopener">aboutads.info</a>.</p>
+    <h2>3. Push-meldingen</h2>
+    <p>Als je push-meldingen inschakelt, slaat je browser een meldingsvoorkeur op. Bij gebruik van de geïnstalleerde app (PWA) kan de browser dagelijkse studieherinneringen sturen. Hierbij worden <strong>geen</strong> persoonlijke gegevens naar externe servers verstuurd: de melding wordt lokaal gegenereerd op basis van je studiestreak en examenrooster. Je kunt meldingen op elk moment uitzetten via je browserinstellingen of via Profiel in de app.</p>
 
-      <h2>5. Derden en verwerkers</h2>
-      <ul>
-        <li><strong>Supabase Inc.</strong>: cloud-opslag voor accountgegevens (EU-servers); <a href="https://supabase.com/privacy" target="_blank" rel="noopener">privacybeleid</a></li>
-        <li><strong>Google LLC</strong>: advertenties via AdSense; <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">privacybeleid</a></li>
-        <li><strong>GitHub Inc.</strong>: hosting van de applicatie; <a href="https://docs.github.com/en/site-policy/privacy-policies/github-privacy-statement" target="_blank" rel="noopener">privacybeleid</a></li>
-      </ul>
-      <p>Wij verkopen of delen jouw gegevens nooit met andere partijen dan de bovengenoemde verwerkers, en uitsluitend voor de beschreven doeleinden.</p>
+    <h2>4. Cookies en advertenties</h2>
+    <p>Wij gebruiken <strong>Google AdSense</strong> om advertenties te tonen. Google kan cookies plaatsen om advertenties te personaliseren. Dit betreft functionele cookies (om je cookiekeuze te onthouden), advertentiecookies van Google en anonieme analytische cookies. Als je cookies <strong>weigert</strong> via onze cookiebanner, worden er géén gepersonaliseerde advertenties getoond; Google kan dan nog niet-gepersonaliseerde advertenties tonen op basis van de pagina-inhoud. Je advertentievoorkeuren pas je aan via <a href="https://www.google.com/settings/ads" target="_blank" rel="noopener">Google Advertentie-instellingen</a> of <a href="https://www.aboutads.info/choices/" target="_blank" rel="noopener">aboutads.info</a>.</p>
 
-      <h2>6. Rechtsgrondslag (AVG/GDPR)</h2>
-      <ul>
-        <li><strong>Advertentiecookies:</strong> toestemming (art. 6 lid 1 sub a AVG), via de cookiebanner en intrekbaar via "Cookie-instellingen"</li>
-        <li><strong>Account &amp; cloud-sync:</strong> uitvoering van een overeenkomst (art. 6 lid 1 sub b AVG)</li>
-        <li><strong>Lokale opslag studiedata:</strong> gerechtvaardigd belang (art. 6 lid 1 sub f AVG); gegevens verlaten je apparaat niet</li>
-      </ul>
+    <h2>5. Derden en verwerkers</h2>
+    <ul>
+      <li><strong>Supabase Inc.</strong>: cloud-opslag voor accountgegevens (EU-servers); <a href="https://supabase.com/privacy" target="_blank" rel="noopener">privacybeleid</a></li>
+      <li><strong>Google LLC</strong>: advertenties via AdSense; <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">privacybeleid</a></li>
+      <li><strong>GitHub Inc.</strong>: hosting van de applicatie; <a href="https://docs.github.com/en/site-policy/privacy-policies/github-privacy-statement" target="_blank" rel="noopener">privacybeleid</a></li>
+    </ul>
+    <p>Wij verkopen of delen jouw gegevens nooit met andere partijen dan de bovengenoemde verwerkers, en uitsluitend voor de beschreven doeleinden.</p>
 
-      <h2>7. Bewaartermijn</h2>
-      <ul>
-        <li><strong>Lokale gegevens:</strong> tot je ze zelf wist via browserinstellingen of de wis-knoppen in de app</li>
-        <li><strong>Accountgegevens (Supabase):</strong> zolang je account actief is; inactieve accounts verwijderen wij na 2 jaar</li>
-        <li><strong>Google-cookies:</strong> conform het <a href="https://policies.google.com/technologies/cookies" target="_blank" rel="noopener">cookiebeleid van Google</a></li>
-      </ul>
+    <h2>6. Rechtsgrondslag (AVG/GDPR)</h2>
+    <ul>
+      <li><strong>Advertentiecookies:</strong> toestemming (art. 6 lid 1 sub a AVG), via de cookiebanner en intrekbaar via "Cookie-instellingen"</li>
+      <li><strong>Account &amp; cloud-sync:</strong> uitvoering van een overeenkomst (art. 6 lid 1 sub b AVG)</li>
+      <li><strong>Lokale opslag studiedata:</strong> gerechtvaardigd belang (art. 6 lid 1 sub f AVG); gegevens verlaten je apparaat niet</li>
+    </ul>
 
-      <h2>8. Jouw rechten</h2>
-      <p>Onder de AVG/GDPR heb je recht op inzage, rectificatie, verwijdering, beperking van verwerking, bezwaar en het intrekken van toestemming. Je oefent deze uit via <a href="mailto:slagiocompany@gmail.com">slagiocompany@gmail.com</a>. Je kunt ook een klacht indienen bij de <a href="https://www.autoriteitpersoonsgegevens.nl" target="_blank" rel="noopener">Autoriteit Persoonsgegevens</a>.</p>
+    <h2>7. Bewaartermijn</h2>
+    <ul>
+      <li><strong>Lokale gegevens:</strong> tot je ze zelf wist via browserinstellingen of de wis-knoppen in de app</li>
+      <li><strong>Accountgegevens (Supabase):</strong> zolang je account actief is; inactieve accounts verwijderen wij na 2 jaar</li>
+      <li><strong>Google-cookies:</strong> conform het <a href="https://policies.google.com/technologies/cookies" target="_blank" rel="noopener">cookiebeleid van Google</a></li>
+    </ul>
 
-      <h2>9. Minderjarigen</h2>
-      <p>Slagio is bedoeld voor leerlingen in het voortgezet onderwijs (doorgaans 14 tot 18 jaar). Voor het tonen van gepersonaliseerde advertenties aan gebruikers onder de 16 jaar vragen wij toestemming via de cookiebanner. Wij raden minderjarigen aan dit beleid samen met een ouder of verzorger te lezen. Ouders en verzorgers kunnen via <a href="mailto:slagiocompany@gmail.com">slagiocompany@gmail.com</a> verzoeken om verwijdering van gegevens van hun kind.</p>
+    <h2>8. Jouw rechten</h2>
+    <p>Onder de AVG/GDPR heb je recht op inzage, rectificatie, verwijdering, beperking van verwerking, bezwaar en het intrekken van toestemming. Je oefent deze uit via <a href="mailto:slagiocompany@gmail.com">slagiocompany@gmail.com</a>. Je kunt ook een klacht indienen bij de <a href="https://www.autoriteitpersoonsgegevens.nl" target="_blank" rel="noopener">Autoriteit Persoonsgegevens</a>.</p>
 
-      <h2>10. Beveiliging</h2>
-      <p>Accountgegevens worden versleuteld opgeslagen en verstuurd via HTTPS. Wachtwoorden worden nooit in leesbare tekst bewaard. Lokale gegevens zijn alleen toegankelijk vanuit de browser van je eigen apparaat.</p>
+    <h2>9. Minderjarigen</h2>
+    <p>Slagio is bedoeld voor leerlingen in het voortgezet onderwijs (doorgaans 14 tot 18 jaar). Voor het tonen van gepersonaliseerde advertenties aan gebruikers onder de 16 jaar vragen wij toestemming via de cookiebanner. Wij raden minderjarigen aan dit beleid samen met een ouder of verzorger te lezen. Ouders en verzorgers kunnen via <a href="mailto:slagiocompany@gmail.com">slagiocompany@gmail.com</a> verzoeken om verwijdering van gegevens van hun kind.</p>
 
-      <h2>11. Wijzigingen</h2>
-      <p>Dit privacybeleid kan worden bijgewerkt. De datum bovenaan geeft de laatste wijziging aan. Bij substantiële wijzigingen plaatsen wij een melding in de app.</p>
+    <h2>10. Beveiliging</h2>
+    <p>Accountgegevens worden versleuteld opgeslagen en verstuurd via HTTPS. Wachtwoorden worden nooit in leesbare tekst bewaard. Lokale gegevens zijn alleen toegankelijk vanuit de browser van je eigen apparaat.</p>
 
-      <h2>12. Contact</h2>
-      <p>Vragen of verzoeken over dit privacybeleid? Stuur een e-mail naar <a href="mailto:slagiocompany@gmail.com">slagiocompany@gmail.com</a>. Wij reageren binnen 5 werkdagen.</p>
-    </div>
-  </main>
+    <h2>11. Wijzigingen</h2>
+    <p>Dit privacybeleid kan worden bijgewerkt. De datum bovenaan geeft de laatste wijziging aan. Bij substantiële wijzigingen plaatsen wij een melding in de app.</p>
 
-  <footer class="pv-foot">
-    <strong style="font-family:var(--font-head);color:var(--dk)">Slagio</strong> · gratis examenvoorbereiding voor HAVO &amp; VWO<br>
-    <a href="/">Open de app</a> · <a href="/vakken/">Alle vakken</a> · <a href="/over-ons.html">Over ons</a> · <a href="/faq.html">FAQ</a> · <a href="mailto:slagiocompany@gmail.com">Contact</a>
-  </footer>
+    <h2>12. Contact</h2>
+    <p>Vragen of verzoeken over dit privacybeleid? Stuur een e-mail naar <a href="mailto:slagiocompany@gmail.com">slagiocompany@gmail.com</a>. Wij reageren binnen 5 werkdagen.</p>
+  </div>
+</div>
+
+<footer class="up-foot">
+  <a href="/">Slagio</a> · gratis examenvoorbereiding voor HAVO &amp; VWO · <a href="/vakken/">Alle vakken</a> · <a href="/over-ons.html">Over ons</a> · <a href="/faq.html">FAQ</a> · <a href="mailto:slagiocompany@gmail.com">Contact</a>
+</footer>
 </body>
 </html>
