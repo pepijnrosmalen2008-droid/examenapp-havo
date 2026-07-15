@@ -386,7 +386,8 @@
 <meta name="apple-mobile-web-app-title" content="Slagio">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,700;12..96,800&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,700;12..96,800&display=swap" rel="stylesheet">
 <!-- AdSense script wordt dynamisch geladen na cookie-consent -->
 <link rel="stylesheet" href="/styles.css">
 </head>
@@ -2021,24 +2022,26 @@
 </div>
 
 <!-- Examen data - echte eindexamens -->
-<script src="/examens.js"></script>
-<!-- Supabase SDK - must load before app script -->
-<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.101.1/dist/umd/supabase.js" integrity="sha256-nemRIwEQKZy7uoOYcUFEnleZl6kKX8B3zf4KpR6NVT0=" crossorigin="anonymous"></script>
-<script src="/data.js"></script>
-<script src="/state.js"></script>
-<script src="/cloud.js"></script>
-<script src="/profile.js"></script>
-<script src="/vak.js"></script>
-<script src="/quiz.js"></script>
-<script src="/tools.js"></script>
-<script src="/sim.js"></script>
-<script src="/lb.js"></script>
-<script src="/features.js"></script>
-<script src="/schedule.js"></script>
-<script src="/v4.js"></script>
-<script src="/zoek.js"></script>
-<script src="/klas.js"></script>
-<script src="/init.js"></script>
+<!-- defer: alle modules downloaden parallel tijdens parse, draaien daarna in documentvolgorde
+     vóór DOMContentLoaded. Volgorde blijft behouden; readyState-guards hebben een else-tak. -->
+<script defer src="/examens.js"></script>
+<!-- Supabase SDK - must load before app script (defer bewaart die volgorde) -->
+<script defer src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.101.1/dist/umd/supabase.js" integrity="sha256-nemRIwEQKZy7uoOYcUFEnleZl6kKX8B3zf4KpR6NVT0=" crossorigin="anonymous"></script>
+<script defer src="/data.js"></script>
+<script defer src="/state.js"></script>
+<script defer src="/cloud.js"></script>
+<script defer src="/profile.js"></script>
+<script defer src="/vak.js"></script>
+<script defer src="/quiz.js"></script>
+<script defer src="/tools.js"></script>
+<script defer src="/sim.js"></script>
+<script defer src="/lb.js"></script>
+<script defer src="/features.js"></script>
+<script defer src="/schedule.js"></script>
+<script defer src="/v4.js"></script>
+<script defer src="/zoek.js"></script>
+<script defer src="/klas.js"></script>
+<script defer src="/init.js"></script>
 
 <!-- Bottom Navigation (mobile only) -->
 <nav class="bottom-nav" id="bottom-nav">
