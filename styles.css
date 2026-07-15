@@ -19,7 +19,7 @@ button:focus-visible,a:focus-visible{outline:2px solid var(--or,#e8580c);outline
 [tabindex="-1"]:focus{outline:none}
 :root{
   --bg:#f5f6fa;--bg2:#eef0f5;--s:#FFFFFF;--dk:#1a1d26;
-  --mu:#6b7280;--bo:#e2e5ed;--bo2:#d1d5e0;
+  --mu:#5b6270;--bo:#e2e5ed;--bo2:#d1d5e0;
   /* Neutral accent (no level chosen — welcome screen) */
   --or:#64748b;--orl:#f1f5f9;--bl:#2563eb;--r:14px;
   --or-rgb:100,116,139;
