@@ -18,7 +18,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,700;12..96,800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/styles.css">
   <script>
-  (function(){try{var t=localStorage.getItem('theme');if(t==='dark'||(!t&&matchMedia('(prefers-color-scheme:dark)').matches))document.documentElement.classList.add('dark');}catch(e){}})();
+  (function(){try{var d=document.documentElement,t=localStorage.getItem('theme');if(t==='dark'||(!t&&matchMedia('(prefers-color-scheme:dark)').matches))d.classList.add('dark');d.classList.add(localStorage.getItem('examenapp_level')==='vwo'?'level-vwo':'level-havo');}catch(e){document.documentElement.classList.add('level-havo');}})();
   </script>
   <script type="application/ld+json">
   {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[
@@ -86,7 +86,6 @@
 
 <div class="up-wrap">
   <div class="up-hero">
-    <div class="up-badge">Veelgestelde vragen</div>
     <h1>Alles wat je wilt weten over <em>Slagio</em></h1>
     <p class="up-sub">Kort en duidelijk antwoord op de vragen die leerlingen, ouders en docenten het vaakst stellen. Staat je vraag er niet bij? Mail ons gerust.</p>
   </div>

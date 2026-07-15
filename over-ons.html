@@ -18,7 +18,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,700;12..96,800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/styles.css">
   <script>
-  (function(){try{var t=localStorage.getItem('theme');if(t==='dark'||(!t&&matchMedia('(prefers-color-scheme:dark)').matches))document.documentElement.classList.add('dark');}catch(e){}})();
+  (function(){try{var d=document.documentElement,t=localStorage.getItem('theme');if(t==='dark'||(!t&&matchMedia('(prefers-color-scheme:dark)').matches))d.classList.add('dark');d.classList.add(localStorage.getItem('examenapp_level')==='vwo'?'level-vwo':'level-havo');}catch(e){document.documentElement.classList.add('level-havo');}})();
   </script>
   <script type="application/ld+json">
   [
@@ -83,7 +83,6 @@
 
 <div class="up-wrap">
   <div class="up-hero">
-    <div class="up-badge">Over Slagio</div>
     <h1>Gemaakt <em>door leerlingen</em>, voor leerlingen</h1>
     <p class="up-sub">Slagio is een Nederlands examenplatform voor HAVO en VWO, gebouwd door mensen die zelf net examen deden. Onze overtuiging: goede voorbereiding hoort niet af te hangen van je portemonnee. Daarom is alles gratis.</p>
     <div class="up-hero-btns">
