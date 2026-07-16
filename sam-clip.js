@@ -263,6 +263,48 @@
         { type: "fade", sel: ".lbl-pe", t: [6.4, 7.1] },
         { type: "fade", sel: ".lbl-qe", t: [6.6, 7.3] }
       ]
+    },
+    // normale verdeling: μ, σ en de ±1σ ≈ 68%-zone
+    normaal: {
+      duration: 9.4,
+      cues: [0, 1.6, 3.8, 5.6, 7.4],
+      audio: [[1.45, "clipRoll"], [2.1, "clipCatalyst"], [4.3, "clipCatalyst"], [5.85, "clipCatalyst"], [8.3, "clipSuccess"]],
+      tracks: [
+        { type: "reveal", sel: ".bell", t: [1.4, 4.2], ease: "lin" },
+        { type: "reveal", sel: ".mu-line", t: [2.0, 2.8] },
+        { type: "fade", sel: ".lbl-mu", t: [2.2, 3.0] },
+        { type: "fade", sel: ".sigma-br", t: [4.2, 5.0] },
+        { type: "fade", sel: ".shade", t: [5.8, 6.8], to: 0.2 },
+        { type: "fade", sel: ".lbl-68", t: [6.3, 7.1] },
+        { type: "fade", sel: ".lbl-95", t: [7.4, 8.2] }
+      ]
+    },
+    // (v,t)-diagram: helling = versnelling, oppervlakte = afstand
+    vt: {
+      duration: 9.4, base: { x: 40, y: 120 },
+      cues: [0, 1.5, 3.8, 5.6, 7.4],
+      audio: [[1.45, "clipRoll"], [4.05, "clipCatalyst"], [5.65, "clipCatalyst"], [8.3, "clipSuccess"]],
+      tracks: [
+        { type: "reveal", sel: ".vline", t: [1.4, 3.4], ease: "lin" },
+        { type: "moveAlong", pathSel: ".vline", f: [[1.4, 0, "lin"], [3.4, 1, "lin"]], appear: [1.35, 1.45], bright: [1.4, 3.4], brightVal: 0.28, dimVal: 0.1 },
+        { type: "fade", sel: ".slope-tri", t: [4.0, 4.8] },
+        { type: "fade", sel: ".shade", t: [5.6, 6.6], to: 0.16 },
+        { type: "fade", sel: ".lbl-afstand", t: [6.2, 7.0] }
+      ]
+    },
+    // exponentiële groei vs. lineair
+    expo: {
+      duration: 9.0, base: { x: 40, y: 144 },
+      cues: [0, 1.5, 3.6, 5.4, 7.2],
+      audio: [[1.55, "clipRoll"], [3.6, "clipCatalyst"], [5.2, "clipCatalyst"], [8.0, "clipSuccess"]],
+      tracks: [
+        { type: "reveal", sel: ".linear", t: [1.6, 4.0], ease: "lin" },
+        { type: "reveal", sel: ".expo", t: [1.6, 5.5], ease: "lin" },
+        { type: "moveAlong", pathSel: ".expo", f: [[1.6, 0, "lin"], [5.5, 1, "lin"]], appear: [1.55, 1.7], bright: [1.6, 5.5], brightVal: 0.28, dimVal: 0.1 },
+        { type: "fade", sel: ".lbl-lin", t: [3.6, 4.3] },
+        { type: "fade", sel: ".lbl-exp", t: [5.0, 5.8] },
+        { type: "fade", sel: ".lbl-factor", t: [7.2, 8.0] }
+      ]
     }
   };
   for (var _sk in SPECS) CHOREO[_sk] = specChoreo(SPECS[_sk]);
