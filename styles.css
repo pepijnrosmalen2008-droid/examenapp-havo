@@ -3052,8 +3052,10 @@ html.dark .auth-ok{background:#0F2D1C;border-color:#166534;color:#86EFAC}
 .xp-toast{position:fixed;top:76px;left:50%;transform:translateX(-50%);background:#22c55e;color:#fff;border-radius:20px;padding:7px 20px;font-weight:700;font-size:14px;z-index:300;animation:toastIn .3s ease,toastOut .4s ease 1s forwards;pointer-events:none;box-shadow:0 4px 16px rgba(34,197,94,.45)}
 @keyframes toastIn{from{opacity:0;transform:translateX(-50%) translateY(-10px)}to{opacity:1;transform:translateX(-50%) translateY(0)}}
 @keyframes toastOut{to{opacity:0;transform:translateX(-50%) translateY(-10px)}}
-#offline-banner{position:fixed;bottom:80px;left:50%;transform:translateX(-50%) translateY(16px);background:#1e293b;color:#fff;padding:10px 20px;border-radius:40px;font-size:13px;font-weight:600;z-index:9998;white-space:nowrap;opacity:0;pointer-events:none;transition:opacity .3s,transform .3s;box-shadow:0 4px 20px rgba(0,0,0,.4)}
-#offline-banner.show{opacity:1;pointer-events:auto;transform:translateX(-50%) translateY(0)}
+#offline-banner{position:fixed;bottom:80px;left:50%;transform:translateX(-50%) translateY(16px);background:#1e293b;color:#fff;padding:10px 18px;border-radius:40px;font-size:13px;font-weight:600;z-index:9998;max-width:92vw;text-align:center;opacity:0;pointer-events:none;transition:opacity .3s,transform .3s;box-shadow:0 4px 20px rgba(0,0,0,.4)}
+/* pointer-events blijft altijd none: een status-toast mag de app nooit blokkeren */
+#offline-banner.show{opacity:1;transform:translateX(-50%) translateY(0)}
+#offline-banner.online{background:#16794a}
 .xp-bar-wrap{background:var(--bo);border-radius:10px;height:7px;overflow:hidden;margin:10px 0 4px}
 .xp-bar{height:100%;background:linear-gradient(90deg,var(--or),#f59e0b);border-radius:10px;transition:width .8s cubic-bezier(.34,1.2,.64,1)}
 .lvl-badge{background:var(--or);color:#fff;border-radius:10px;padding:2px 9px;font-size:11px;font-weight:800;margin-left:6px;letter-spacing:.3px}
@@ -3834,9 +3836,8 @@ html.dark .hsd-pill{background:var(--bg2);border-color:var(--bo2)}
 #sw-update-banner button{padding:5px 14px;border-radius:8px;border:none;cursor:pointer;font-size:12px;font-weight:700}
 #sw-update-banner .sw-banner-reload{background:#fff;color:#f97316}
 #sw-update-banner .sw-banner-dismiss{background:rgba(255,255,255,.2);color:#fff}
-#offline-banner{position:fixed;top:0;left:0;right:0;z-index:99998;display:none;align-items:center;justify-content:center;gap:10px;padding:10px 16px;background:linear-gradient(135deg,#374151,#1f2937);color:#fff;font-size:13px;font-weight:600;box-shadow:0 2px 12px rgba(0,0,0,.3)}
-#offline-banner.show{display:flex}
-#offline-banner .sw-banner-dismiss{background:rgba(255,255,255,.15);color:#fff;padding:4px 10px;border-radius:8px;border:none;cursor:pointer;font-size:13px;font-weight:700}
+/* (verouderde top-bar variant van #offline-banner verwijderd — botste met de pill-toast
+   hierboven en veroorzaakte een half-zichtbaar, niet-weg-te-klikken blokkerend scherm) */
 
 /* ═══════════════════════════════════════════
    NATIVE MOBILE APP FEEL  ≤ 640px

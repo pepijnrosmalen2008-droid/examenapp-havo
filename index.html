@@ -412,10 +412,7 @@
   <button class="sw-banner-reload" onclick="swUpdate()">Herlaad</button>
   <button class="sw-banner-dismiss" onclick="this.closest('#sw-update-banner').classList.remove('show')" aria-label="Melding sluiten">×</button>
 </div>
-<div id="offline-banner" role="status" aria-live="polite">
-  <span>📡 Geen internet - gecachede inhoud beschikbaar</span>
-  <button class="sw-banner-dismiss" onclick="this.parentElement.classList.remove('show')" aria-label="Melding sluiten">×</button>
-</div>
+<div id="offline-banner" role="status" aria-live="polite"><span id="offline-banner-text">📡 Geen internet — je voortgang wordt lokaal opgeslagen</span></div>
 <a href="#main-content" class="skip-link">Ga naar inhoud</a>
 
 <!-- CONFIRM DIALOG -->

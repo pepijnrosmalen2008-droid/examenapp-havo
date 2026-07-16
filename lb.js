@@ -17,15 +17,23 @@
 })();
 
 // ═══════ OFFLINE INDICATOR ═══════
+// Eén niet-blokkerende status-toast (pointer-events:none). Offline blijft staan;
+// "weer online" verschijnt kort en verdwijnt vanzelf. Nooit een heel scherm.
 (function initOfflineBanner(){
-  const banner=document.createElement('div');
-  banner.id='offline-banner';
-  banner.innerHTML='📵 Geen internet - voortgang wordt lokaal opgeslagen';
-  document.body.appendChild(banner);
-  function update(){banner.classList.toggle('show',!navigator.onLine);}
-  window.addEventListener('offline',update);
-  window.addEventListener('online',update);
-  update();
+  const banner=document.getElementById('offline-banner');
+  if(!banner)return;
+  const txt=document.getElementById('offline-banner-text')||banner;
+  let hideT=0;
+  function toast(msg,online){
+    txt.textContent=msg;
+    banner.classList.toggle('online',!!online);
+    banner.classList.add('show');
+    if(hideT){clearTimeout(hideT);hideT=0;}
+    if(online){hideT=setTimeout(()=>banner.classList.remove('show'),3000);}
+  }
+  window.addEventListener('offline',()=>toast('📡 Geen internet — je voortgang wordt lokaal opgeslagen',false));
+  window.addEventListener('online',()=>toast('✅ Je bent weer online',true));
+  if(!navigator.onLine)toast('📡 Geen internet — je voortgang wordt lokaal opgeslagen',false);
 })();
 
 // ═══════ LEADERBOARD ═══════

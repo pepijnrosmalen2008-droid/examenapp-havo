@@ -1019,8 +1019,7 @@ document.addEventListener('DOMContentLoaded',()=>{
   try{renderDecayAlert();}catch(e){}
   try{renderExamAlert();}catch(e){}
 });
-window.addEventListener('offline',()=>{document.getElementById('offline-banner')?.classList.add('show');});
-window.addEventListener('online',()=>{document.getElementById('offline-banner')?.classList.remove('show');});
+// (offline-/online-indicator wordt centraal beheerd in lb.js — geen dubbele toggles hier)
 
 // ═══════ HAPTIC ═══════
 function haptic(pat){try{if(navigator.vibrate)navigator.vibrate(pat);}catch(e){}}
