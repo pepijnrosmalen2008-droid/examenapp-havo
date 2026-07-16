@@ -322,6 +322,9 @@ function chooseLevel(level,_noHistory){
   APP_LEVEL=level;
   localStorage.setItem('examenapp_level',level);
   applyLevelTheme(level);
+  // Samenvattingen alvast op de achtergrond laden (parallel, blokkeert de grid niet),
+  // zodat ze klaar zijn wanneer een leerling een vak/samenvatting opent.
+  try{if(typeof ensureSamData==='function')ensureSamData(level);}catch(e){}
   updateLevelChip();
   buildGrid();
   buildSlaagInputs();

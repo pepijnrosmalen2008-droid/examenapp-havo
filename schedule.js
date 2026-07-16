@@ -635,6 +635,8 @@ function _parseSamCards(html){
 }
 
 function startFlash(){
+  // Flashcards putten uit de rijke samenvatting (SAM_RICH, lazy geladen) — eerst zeker laden.
+  if(typeof ensureSamData==='function'&&typeof samReady==='function'&&typeof APP_LEVEL!=='undefined'&&!samReady(APP_LEVEL)){ensureSamData(APP_LEVEL,startFlash);return;}
   trackEvent('flashcard',{domein:ST.domein?.naam||null});
   const d=ST.domein,v=ST.vak;
   if(!d||!v)return;

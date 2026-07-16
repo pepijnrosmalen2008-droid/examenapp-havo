@@ -28,7 +28,9 @@ Load order matters: `data.js`/`state.js` define globals the later modules use. `
 |---|---|
 | `index.html` | HTML screens + SEO (JSON-LD + `<noscript>`). No app logic, no inline CSS/JS. |
 | `styles.css` | **All** styles (~5200 lines). Mobile overrides live in the `@media(max-width:640px)` block — including `display:none` rules that hide long descriptive text on mobile (`.sh p`, `.di p`, `#home-bento`, …). |
-| `data.js` | `LESMETHODES{}`, `SAM_RICH{}`, `VAKKEN[]` (HAVO), `VAKKEN_VWO[]` — subjects, domains, questions, summaries |
+| `data.js` | `LESMETHODES{}`, an **empty** `SAM_RICH{}`, and the lazy-loaders `ensureLevelData()`/`ensureSamData()`/`samReady()`. ~30 KB (the heavy content is split out per niveau, below). |
+| `sam-havo.js` / `sam-vwo.js` | The rich summaries (`SAM_RICH` entries, `Object.assign`ed in). ~440 KB each, **lazy-loaded per niveau** via `ensureSamData()` — NOT on the boot path. Add/replace a summary here, not in `data.js`. |
+| `data-havo.js` / `data-vwo.js` | `VAKKEN[]` / `VAKKEN_VWO[]` — subjects, domains, questions. Lazy-loaded per niveau via `ensureLevelData()`. |
 | `state.js` | Global `ST` quiz state, `show()` + hash routing, `APP_LEVEL`/`getVK()`/`lvlCol()`, subject grid, security helpers |
 | `cloud.js` | Supabase init, `trackEvent()`, `_DID` (persistent device id), `cloudSet()`/`cloudGet()` |
 | `profile.js` | Profiel & cijfers (SE grades) |

@@ -3,6 +3,9 @@
 // ICO_STAR gedefinieerd worden), dus deze moet pas bij aanroep evalueren.
 function _ceStatusMap(){return{'CE':{cls:'CE',icon:ICO_DOC,txt:'Centraal Examen'},'SE':{cls:'SE',icon:ICO_DOC,txt:'Schoolexamen'},'CE+SE':{cls:'CESE',icon:ICO_DOC,txt:'CE + Schoolexamen'},'DEELS CE':{cls:'DEELS',icon:ICO_DOC,txt:'Deels CE'},'CE-KERN':{cls:'CE',icon:ICO_STAR,txt:'Kern van het CE'}};}
 function openVak(id,_noHash){
+  // Samenvattingen (SAM_RICH) worden lazy geladen; wacht erop vóór we de detailpagina
+  // (met de samenvatting-tab) opbouwen, anders valt die terug op de basis-sam.
+  if(typeof ensureSamData==='function'&&typeof samReady==='function'&&typeof APP_LEVEL!=='undefined'&&!samReady(APP_LEVEL)){ensureSamData(APP_LEVEL,function(){openVak(id,_noHash);});return;}
   ST.vak=getVK().find(v=>v.id===id);
   // Echte, indexeerbare URL i.p.v. een hash: dezelfde URL als de statische
   // SEO-pagina van dit vak (/vakken/<niveau>-<vak>.html). Zo is de in-app pagina
@@ -637,6 +640,9 @@ function printSam() {
 // ═══════ DOMEIN-PAGINA (dedicated leerstof-scherm per domein) ═══════
 function openDomein(domId,_noHash){
   if(!ST.vak)return;
+  // De samenvatting komt uit SAM_RICH (lazy geladen); wacht erop vóór we renderen,
+  // anders valt de samenvatting terug op de basisversie.
+  if(typeof ensureSamData==='function'&&typeof samReady==='function'&&typeof APP_LEVEL!=='undefined'&&!samReady(APP_LEVEL)){ensureSamData(APP_LEVEL,function(){openDomein(domId,_noHash);});return;}
   const d=ST.vak.domeinen.find(x=>x.id===domId);
   if(!d)return;
   const v=ST.vak;
