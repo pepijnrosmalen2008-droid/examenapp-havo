@@ -665,6 +665,9 @@ html.dark .qb{background:#2e3550}
 .sam-table tr:last-child td{border-bottom:none}
 .sam-table tr:nth-child(even) td{background:rgba(0,0,0,.025)}
 .dark .sam-table tr:nth-child(even) td{background:rgba(255,255,255,.03)}
+/* op smalle schermen brede tabellen netjes binnen zichzelf laten scrollen i.p.v.
+   de pagina op te rekken; woorden blijven heel, zinnen breken gewoon op spaties */
+@media(max-width:640px){.sam-table{display:block;overflow-x:auto;-webkit-overflow-scrolling:touch}}
 .sam-formula-box{background:rgba(var(--or-rgb),.05);border:1px solid rgba(var(--or-rgb),.20);border-left:3px solid var(--or);border-radius:10px;padding:14px 16px;margin:14px 0;display:flex;flex-direction:column;gap:7px}
 .sam-formula-label{font-size:10.5px;font-weight:800;color:var(--or);text-transform:uppercase;letter-spacing:.8px}
 .sam-formula-eq{font-size:18px;font-weight:700;color:var(--dk);font-family:ui-monospace,'SF Mono',Menlo,Consolas,monospace;line-height:1.5;letter-spacing:.2px}
