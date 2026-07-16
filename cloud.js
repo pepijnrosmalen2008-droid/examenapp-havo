@@ -1,7 +1,34 @@
 // ═══════ SUPABASE ═══════
 const SUPABASE_URL='https://wcfenegohryxhatzxvtw.supabase.co';
 const SUPABASE_KEY='eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6IndjZmVuZWdvaHJ5eGhhdHp4dnR3Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODEyODcwMDAsImV4cCI6MjA5Njg2MzAwMH0.B3ygpkosBybQd53VLiRxqIbVxBPWw4V-Nj2IS3k4UFo';
-const SB=window.supabase.createClient(SUPABASE_URL,SUPABASE_KEY);
+// Supabase-client. Als de (cross-origin) library niet geladen is — offline, CDN plat,
+// of geblokkeerd door een adblocker — mag de app NIET stuklopen: dan draaien we op een
+// veilige offline-stub zodat alles op lokale data blijft werken (vakken, quiz, samenvattingen).
+function _sbOfflineStub(){
+  var res=function(v){return Promise.resolve(v);};
+  var q={then:function(r){try{r&&r({data:[],error:{message:'offline'}});}catch(e){}return q;},
+         catch:function(){return q;},finally:function(f){try{f&&f();}catch(e){}return q;}};
+  var chain=new Proxy(q,{get:function(t,p){return (p in t)?t[p]:function(){return chain;};}});
+  return {
+    from:function(){return chain;},
+    rpc:function(){return chain;},
+    channel:function(){return {on:function(){return this;},subscribe:function(){return {unsubscribe:function(){}};}};},
+    removeChannel:function(){},
+    auth:{
+      getSession:function(){return res({data:{session:null},error:null});},
+      getUser:function(){return res({data:{user:null},error:null});},
+      onAuthStateChange:function(cb){try{setTimeout(function(){cb&&cb('INITIAL_SESSION',null);},0);}catch(e){}return {data:{subscription:{unsubscribe:function(){}}}};},
+      signInWithPassword:function(){return res({data:{user:null,session:null},error:{message:'Geen internetverbinding'}});},
+      signUp:function(){return res({data:{user:null,session:null},error:{message:'Geen internetverbinding'}});},
+      signOut:function(){return res({error:null});},
+      resetPasswordForEmail:function(){return res({data:{},error:{message:'Geen internetverbinding'}});},
+      updateUser:function(){return res({data:{user:null},error:{message:'Geen internetverbinding'}});}
+    }
+  };
+}
+const _sbLib=window.supabase;
+const SB=(_sbLib&&_sbLib.createClient)?_sbLib.createClient(SUPABASE_URL,SUPABASE_KEY):_sbOfflineStub();
+if(!(_sbLib&&_sbLib.createClient)){try{console.warn('[Slagio] Supabase niet beschikbaar — offline modus; lokale data blijft werken.');}catch(e){}}
 // Persistent device ID - generated once, stored in localStorage
 const _DID=(()=>{try{let id=localStorage.getItem('slagio_did');if(!id){id=(crypto.randomUUID?crypto.randomUUID():'x'+Math.random().toString(36).slice(2)+Date.now().toString(36));localStorage.setItem('slagio_did',id);}return id;}catch(e){return null;}})();
 async function trackEvent(type,meta){

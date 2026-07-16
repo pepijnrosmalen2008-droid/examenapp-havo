@@ -31,6 +31,9 @@
     if(hideT){clearTimeout(hideT);hideT=0;}
     if(online){hideT=setTimeout(()=>banner.classList.remove('show'),3000);}
   }
+  function hide(){banner.classList.remove('show');if(hideT){clearTimeout(hideT);hideT=0;}}
+  const dismiss=document.getElementById('offline-dismiss');
+  if(dismiss)dismiss.addEventListener('click',hide);
   window.addEventListener('offline',()=>toast('📡 Geen internet — je voortgang wordt lokaal opgeslagen',false));
   window.addEventListener('online',()=>toast('✅ Je bent weer online',true));
   if(!navigator.onLine)toast('📡 Geen internet — je voortgang wordt lokaal opgeslagen',false);
