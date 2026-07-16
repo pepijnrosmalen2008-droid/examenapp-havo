@@ -332,6 +332,7 @@
 
     var ctx = null, raf = 0, last = 0, elapsed = 0, playing = false, finished = false, lastCue = -1;
     var gesture = false, audioFired = 0;   // geluid pas ná een gebruikersklik (autoplay-beleid + niet opdringerig)
+    var speeds = [1, 1.5, 2, 0.5], spIdx = 0, speed = 1;   // afspeelsnelheid (knop cyclet erdoorheen)
 
     function fireAudio(t) {
       if (!gesture || typeof window.playSound !== "function" || !choreo.audio) return;
@@ -356,7 +357,7 @@
     function frame(now) {
       if (!playing) return;
       if (!last) last = now;
-      elapsed += (now - last) / 1000; last = now;
+      elapsed += (now - last) / 1000 * speed; last = now;
       var t = elapsed;
       if (t >= choreo.duration) { t = choreo.duration; }
       try { choreo.render(t, ctx); } catch (e) {}
@@ -386,6 +387,23 @@
       }
       toggle();
     });
+
+    // afspeelsnelheid-knop (dynamisch toegevoegd — geen markup-wijziging per clip nodig)
+    var bar = clip.querySelector(".sam-clip-bar");
+    if (bar) {
+      var spBtn = document.createElement("button");
+      spBtn.type = "button";
+      spBtn.className = "sam-clip-speed";
+      spBtn.textContent = "1×";
+      spBtn.setAttribute("aria-label", "Afspeelsnelheid");
+      spBtn.setAttribute("title", "Afspeelsnelheid");
+      spBtn.addEventListener("click", function () {
+        spIdx = (spIdx + 1) % speeds.length;
+        speed = speeds[spIdx];
+        spBtn.textContent = (speed % 1 === 0 ? speed : speed.toFixed(1)) + "×";
+      });
+      bar.appendChild(spBtn);
+    }
 
     if ("IntersectionObserver" in window) {
       var io = new IntersectionObserver(function (es) {

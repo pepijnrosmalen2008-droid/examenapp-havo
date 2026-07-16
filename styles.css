@@ -5772,6 +5772,8 @@ html.dark .dom-hero-card{background:linear-gradient(180deg,rgba(255,255,255,.045
 .sam-clip-bar{display:flex;align-items:center;justify-content:center;gap:14px;margin-top:8px}
 .sam-clip-play{font:inherit;font-size:13px;font-weight:700;color:#fff;background:var(--or);border:none;border-radius:999px;padding:7px 16px;cursor:pointer;display:inline-flex;align-items:center;gap:6px;-webkit-tap-highlight-color:transparent}
 .sam-clip-play:hover{filter:brightness(1.07)}
+.sam-clip-speed{font:inherit;font-size:12px;font-weight:700;color:var(--or);background:transparent;border:1.5px solid var(--or);border-radius:999px;padding:5px 10px;cursor:pointer;line-height:1;min-width:40px;-webkit-tap-highlight-color:transparent;transition:background .15s,color .15s}
+.sam-clip-speed:hover{background:var(--or);color:#fff}
 .sam-clip-dots{display:flex;gap:6px}
 .sam-clip-dots i{width:7px;height:7px;border-radius:50%;background:var(--bo);transition:background .3s}
 .sam-clip-dots i.on{background:var(--or)}
