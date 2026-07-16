@@ -5780,18 +5780,8 @@ html.dark .dom-hero-card{background:linear-gradient(180deg,rgba(255,255,255,.045
 .sam-clip.reduced .sam-clip-caps{display:block;margin-top:8px}
 .sam-clip.reduced .sam-clip-caps p{margin:3px 0 3px 20px;font-size:13px;color:var(--mu);font-weight:500;list-style:disc;display:list-item}
 
-/* — clip: activeringsenergie & katalysator — */
-.clip-activering .ball{transition:transform 1.55s cubic-bezier(.45,.05,.55,.95)}
-.clip-activering .curve-low,.clip-activering .lbl-kat{opacity:0;transition:opacity .6s}
-.clip-activering .curve-high{transition:opacity .6s}
-.clip-activering[data-step="1"] .ball{transform:translate(46px,-34px)}
-.clip-activering[data-step="4"] .ball{transform:translate(88px,-24px)}
-.clip-activering[data-step="5"] .ball{transform:translate(212px,22px)}
-.clip-activering[data-step="3"] .curve-low,.clip-activering[data-step="4"] .curve-low,.clip-activering[data-step="5"] .curve-low{opacity:1}
-.clip-activering[data-step="3"] .lbl-kat,.clip-activering[data-step="4"] .lbl-kat,.clip-activering[data-step="5"] .lbl-kat{opacity:1}
-.clip-activering[data-step="3"] .curve-high,.clip-activering[data-step="4"] .curve-high,.clip-activering[data-step="5"] .curve-high{opacity:.3}
-/* statisch eindbeeld voor .reduced */
-.sam-clip.reduced.clip-activering .ball{transform:translate(212px,22px)}
-.sam-clip.reduced.clip-activering .curve-low,.sam-clip.reduced.clip-activering .lbl-kat{opacity:1}
-.sam-clip.reduced.clip-activering .curve-high{opacity:.3}
-@media(prefers-reduced-motion:reduce){.clip-activering .ball,.clip-activering .curve-low,.clip-activering .curve-high,.clip-activering .lbl-kat{transition:none}}
+/* De clip-choreografie (positie, opacity, teken-effect) wordt volledig door
+   sam-clip.js aangestuurd via requestAnimationFrame — geen CSS-transitions op de
+   bewegende elementen, zodat elke frame exact wordt geplaatst (vloeiend). */
+.sam-clip svg .ball,.sam-clip svg .glow{will-change:transform}
+.sam-clip .cap-fade{transition:opacity .35s ease}
