@@ -30,6 +30,10 @@
       { t: 0.0, i: 0 }, { t: 2.0, i: 1 }, { t: 4.2, i: 2 },
       { t: 5.6, i: 3 }, { t: 7.5, i: 4 }, { t: 9.4, i: 5 }
     ],
+    audio: [
+      { t: 2.05, s: "clipRoll" }, { t: 4.15, s: "clipFail" },
+      { t: 5.70, s: "clipCatalyst" }, { t: 7.60, s: "clipRoll" }, { t: 10.15, s: "clipSuccess" }
+    ],
     build: function (clip) {
       var svg = clip.querySelector("svg");
       var ctx = {
@@ -112,6 +116,15 @@
     if (!choreo || !supported || reduce) { staticFallback(); return; }
 
     var ctx = null, raf = 0, last = 0, elapsed = 0, playing = false, finished = false, lastCue = -1;
+    var gesture = false, audioFired = 0;   // geluid pas ná een gebruikersklik (autoplay-beleid + niet opdringerig)
+
+    function fireAudio(t) {
+      if (!gesture || typeof window.playSound !== "function" || !choreo.audio) return;
+      while (audioFired < choreo.audio.length && choreo.audio[audioFired].t <= t + 1e-3) {
+        try { window.playSound(choreo.audio[audioFired].s); } catch (e) {}
+        audioFired++;
+      }
+    }
 
     function caption(t) {
       var idx = 0, ci = 0;
@@ -133,13 +146,14 @@
       if (t >= choreo.duration) { t = choreo.duration; }
       try { choreo.render(t, ctx); } catch (e) {}
       caption(t);
+      fireAudio(t);
       if (elapsed >= choreo.duration) { playing = false; finished = true; if (btn) btn.innerHTML = "↻ Opnieuw"; return; }
       raf = requestAnimationFrame(frame);
     }
     function ensure() { if (!ctx) ctx = choreo.build(clip); }
     function start(fromZero) {
       ensure();
-      if (fromZero) { elapsed = 0; finished = false; lastCue = -1; }
+      if (fromZero) { elapsed = 0; finished = false; lastCue = -1; audioFired = 0; }
       playing = true; last = 0; if (btn) btn.innerHTML = "❚❚ Pauze";
       raf = requestAnimationFrame(frame);
     }
@@ -147,7 +161,16 @@
     function toggle() { if (playing) pause(); else start(finished); }
 
     try { ensure(); choreo.render(0, ctx); caption(0); } catch (e) { staticFallback(); return; }
-    if (btn) btn.addEventListener("click", toggle);
+    if (btn) btn.addEventListener("click", function () {
+      if (!gesture) {                        // eerste echte gebruikersinteractie -> geluid mag
+        gesture = true;
+        if (!finished && elapsed > 0.05 && choreo.audio) { // hervat midden in de clip: al-gepasseerde geluiden overslaan (geen burst)
+          audioFired = 0;
+          while (audioFired < choreo.audio.length && choreo.audio[audioFired].t <= elapsed) audioFired++;
+        }
+      }
+      toggle();
+    });
 
     if ("IntersectionObserver" in window) {
       var io = new IntersectionObserver(function (es) {

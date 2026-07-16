@@ -990,6 +990,23 @@ function playSound(type){
         [659,988,1319,1568].forEach((f,i)=>T(ac,f,null,t+i*.08,.24,{type:'triangle',vol:.15,cut:4800,harm:.24,detune:5,rev:true}));
         T(ac,1976,null,t+.34,.4,{type:'sine',vol:.06,rev:true});
         break;
+      // ── Mini-clip (geanimeerde uitleg): subtiele, verhalende geluiden ──
+      case'clipRoll': // laag oplopend 'rollen' terwijl het deeltje de heuvel op klimt
+        T(ac,110,300,t,1.3,{type:'sawtooth',vol:.045,glide:.92,cut:620,q:.5,detune:8});
+        N(ac,t,1.15,{freq:180,vol:.012,q:.4});
+        break;
+      case'clipFail': // zachte dalende 'donk' als het terugrolt
+        T(ac,260,90,t,.5,{type:'sine',vol:.09,glide:.7,cut:520,detune:6});
+        N(ac,t,.14,{freq:150,vol:.03,q:.5});
+        break;
+      case'clipCatalyst': // heldere shimmer wanneer de katalysator-route verschijnt
+        T(ac,784,1568,t,.42,{type:'triangle',vol:.07,glide:.5,cut:6200,harm:.32,detune:6,rev:true});
+        T(ac,1176,2352,t+.06,.40,{type:'sine',vol:.045,glide:.5,rev:true});
+        break;
+      case'clipSuccess': // bevredigend opgelost akkoordje bij het bereiken van de producten
+        [523,784,1047].forEach((f,i)=>T(ac,f,null,t+i*.09,.30,{type:'triangle',vol:.15,cut:4200,harm:.26,detune:5,rev:true}));
+        T(ac,1568,null,t+.28,.5,{type:'sine',vol:.07,rev:true});
+        break;
       default: T(ac,560,860,t,.10,{type:'sine',vol:.09,glide:.4,harm:.16,detune:7,cut:2900});
     }
   }catch(e){}
