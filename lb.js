@@ -25,7 +25,8 @@
   const txt=document.getElementById('offline-banner-text')||banner;
   let hideT=0;
   function toast(msg,online){
-    txt.textContent=msg;
+    var ico=online?(typeof ICO_CHECK!=='undefined'?ICO_CHECK:''):(typeof ICO_SIGNALOFF!=='undefined'?ICO_SIGNALOFF:'');
+    txt.innerHTML=ico+' '+msg;
     banner.classList.toggle('online',!!online);
     banner.classList.add('show');
     if(hideT){clearTimeout(hideT);hideT=0;}
@@ -34,9 +35,9 @@
   function hide(){banner.classList.remove('show');if(hideT){clearTimeout(hideT);hideT=0;}}
   const dismiss=document.getElementById('offline-dismiss');
   if(dismiss)dismiss.addEventListener('click',hide);
-  window.addEventListener('offline',()=>toast('📡 Geen internet — je voortgang wordt lokaal opgeslagen',false));
-  window.addEventListener('online',()=>toast('✅ Je bent weer online',true));
-  if(!navigator.onLine)toast('📡 Geen internet — je voortgang wordt lokaal opgeslagen',false);
+  window.addEventListener('offline',()=>toast('Geen internet — je voortgang wordt lokaal opgeslagen',false));
+  window.addEventListener('online',()=>toast('Je bent weer online',true));
+  if(!navigator.onLine)toast('Geen internet — je voortgang wordt lokaal opgeslagen',false);
 })();
 
 // ═══════ LEADERBOARD ═══════
