@@ -94,142 +94,178 @@
     }
   };
 
-  // helper: plaats een .ball + .glow op punt p, gegeven authored basispositie (bx,by)
-  function putBall(ctx, p) {
-    var tr = "translate(" + (p.x - ctx.bx).toFixed(2) + "," + (p.y - ctx.by).toFixed(2) + ")";
-    ctx.ball.setAttribute("transform", tr);
-    if (ctx.glow) ctx.glow.setAttribute("transform", tr);
+  // ═══════ SPEC-ENGINE: clips uit een declaratieve tijdlijn ═══════
+  // In plaats van per clip build/render/staticState met de hand te schrijven,
+  // beschrijft een clip zich als data: een SVG-scène (met vaste klassen) plus een
+  // lijst "tracks" op de tijdlijn. specChoreo() maakt daar een choreo-object van
+  // dat het bestaande framework aandrijft. Tracktypes:
+  //   reveal   — teken een pad in (stroke-dashoffset len→0) over [t0,t1]
+  //   fade     — opacity from→to over [t0,t1]
+  //   attr     — numeriek attribuut (bv. r) from→to over [t0,t1]
+  //   moveAlong— .ball/.glow volgt een pad via f-keyframes [[t,fractie,ease]]
+  //   tangent  — raaklijn aan een pad in het volgpunt + richtingslabel per zone
+  //   custom   — ontsnappingsluik: fn(t,ctx)
+  var EAS = { lin: function (x) { return x; }, out: easeOut, in: easeIn, io: easeInOut };
+
+  function piecewise(kfs, t) {
+    if (t <= kfs[0][0]) return kfs[0][1];
+    for (var i = 1; i < kfs.length; i++) {
+      if (t <= kfs[i][0]) {
+        var a = kfs[i - 1], b = kfs[i];
+        return a[1] + (b[1] - a[1]) * EAS[b[2] || "io"](seg(t, a[0], b[0]));
+      }
+    }
+    return kfs[kfs.length - 1][1];
+  }
+  function putAt(ball, glow, p, base) {
+    var tr = "translate(" + (p.x - base.x).toFixed(2) + "," + (p.y - base.y).toFixed(2) + ")";
+    if (ball) ball.setAttribute("transform", tr);
+    if (glow) glow.setAttribute("transform", tr);
+  }
+  function glowVal(tr, t) {
+    if (tr.appear && t < tr.appear[0]) return 0;
+    if (tr.bright && t >= tr.bright[0] && t < tr.bright[1]) return tr.brightVal != null ? tr.brightVal : 0.28;
+    return tr.dimVal != null ? tr.dimVal : 0.1;
+  }
+  function applyTracks(ctx, t) {
+    for (var n = 0; n < ctx.tracks.length; n++) {
+      var tr = ctx.tracks[n], e;
+      switch (tr.type) {
+        case "reveal":
+          e = EAS[tr.ease || "out"](seg(t, tr.t[0], tr.t[1]));
+          tr.node.style.strokeDashoffset = (tr.len * (1 - e)).toFixed(1);
+          break;
+        case "fade":
+          e = EAS[tr.ease || "out"](seg(t, tr.t[0], tr.t[1]));
+          tr.node.style.opacity = ((tr.from != null ? tr.from : 0) + ((tr.to != null ? tr.to : 1) - (tr.from != null ? tr.from : 0)) * e).toFixed(2);
+          break;
+        case "attr":
+          e = EAS[tr.ease || "out"](seg(t, tr.t[0], tr.t[1]));
+          tr.node.setAttribute(tr.attr, (tr.from + (tr.to - tr.from) * e).toFixed(2));
+          break;
+        case "moveAlong": {
+          var f = piecewise(tr.f, t), p = tr.path.getPointAtLength(f * tr.Lp);
+          putAt(tr.ball, tr.glow, p, tr.base);
+          if (tr.appear && tr.ball) tr.ball.style.opacity = EAS.out(seg(t, tr.appear[0], tr.appear[1])).toFixed(2);
+          if (tr.glow) tr.glow.style.opacity = glowVal(tr, t).toFixed(2);
+          break;
+        }
+        case "tangent": {
+          var ft = piecewise(tr.f, t), Lf = ft * tr.Lp, eps = tr.eps || 1.6;
+          var q = tr.path.getPointAtLength(Lf);
+          var q1 = tr.path.getPointAtLength(Math.max(0, Lf - eps));
+          var q2 = tr.path.getPointAtLength(Math.min(tr.Lp, Lf + eps));
+          var dx = q2.x - q1.x, dy = q2.y - q1.y, m = Math.hypot(dx, dy) || 1, ux = dx / m, uy = dy / m, h = tr.half || 30;
+          tr.line.setAttribute("x1", (q.x - ux * h).toFixed(1)); tr.line.setAttribute("y1", (q.y - uy * h).toFixed(1));
+          tr.line.setAttribute("x2", (q.x + ux * h).toFixed(1)); tr.line.setAttribute("y2", (q.y + uy * h).toFixed(1));
+          putAt(tr.ball, tr.glow, q, tr.base);
+          if (tr.glow) tr.glow.style.opacity = ((tr.bright && t >= tr.bright[0] && t < tr.bright[1]) ? (tr.brightVal != null ? tr.brightVal : 0.24) : (tr.dimVal != null ? tr.dimVal : 0.1)).toFixed(2);
+          if (tr.label) {
+            var L = tr.label, neg = q.x < L.vx - 5, pos = q.x > L.vx + 5;
+            tr.lbl.textContent = neg ? L.neg : pos ? L.pos : L.zero;
+            tr.lbl.style.fill = neg ? L.cneg : pos ? L.cpos : L.czero;
+            tr.lbl.setAttribute("x", q.x.toFixed(1)); tr.lbl.setAttribute("y", (q.y - 14).toFixed(1));
+            tr.lbl.style.opacity = EAS.out(seg(t, L.fade[0], L.fade[1])).toFixed(2);
+          }
+          break;
+        }
+        case "custom": tr.fn(t, ctx); break;
+      }
+    }
+  }
+  function specChoreo(spec) {
+    return {
+      duration: spec.duration,
+      cues: spec.cues.map(function (t, i) { return { t: t, i: i }; }),
+      audio: (spec.audio || []).map(function (a) { return { t: a[0], s: a[1] }; }),
+      build: function (clip) {
+        var svg = clip.querySelector("svg"), ctx = { svg: svg, tracks: [] };
+        if (spec.compute) spec.compute(svg);
+        for (var i = 0; i < spec.tracks.length; i++) {
+          var src = spec.tracks[i], tr = {};
+          for (var k in src) tr[k] = src[k];
+          if (tr.sel) tr.node = svg.querySelector(tr.sel);
+          if (tr.type === "reveal") { tr.len = tr.node.getTotalLength(); tr.node.style.strokeDasharray = tr.len; tr.node.style.strokeDashoffset = tr.len; }
+          if (tr.type === "moveAlong" || tr.type === "tangent") {
+            tr.path = svg.querySelector(tr.pathSel); tr.Lp = tr.path.getTotalLength();
+            tr.ball = svg.querySelector(tr.ballSel || ".ball"); tr.glow = svg.querySelector(tr.glowSel || ".glow");
+            tr.base = tr.base || spec.base || { x: 0, y: 0 };
+            if (tr.type === "tangent") { tr.line = svg.querySelector(tr.lineSel); if (tr.label) tr.lbl = svg.querySelector(tr.label.sel); }
+          }
+          ctx.tracks.push(tr);
+        }
+        return ctx;
+      },
+      render: function (t, ctx) { applyTracks(ctx, t); },
+      staticState: function (ctx) { applyTracks(ctx, spec.staticAt != null ? spec.staticAt : spec.duration); }
+    };
   }
 
-  // ── clip: trilling → lopende golf (amplitude & golflengte) ──
-  CHOREO.golf = {
-    duration: 9.2,
-    cues: [{ t: 0, i: 0 }, { t: 1.7, i: 1 }, { t: 3.0, i: 2 }, { t: 5.0, i: 3 }, { t: 7.2, i: 4 }],
-    audio: [{ t: 1.7, s: "clipRoll" }, { t: 3.05, s: "clipCatalyst" }, { t: 5.05, s: "clipCatalyst" }, { t: 8.6, s: "clipSuccess" }],
-    build: function (clip) {
-      var svg = clip.querySelector("svg");
-      var ctx = {
-        svg: svg, wave: svg.querySelector(".wave"), ball: svg.querySelector(".ball"),
-        glow: svg.querySelector(".glow"), amp: svg.querySelector(".amp"),
-        lam: svg.querySelector(".lam"), tnote: svg.querySelector(".tnote"),
-        bx: 40, by: 90
-      };
-      ctx.L = ctx.wave.getTotalLength();
-      ctx.wave.style.strokeDasharray = ctx.L;
-      ctx.wave.style.strokeDashoffset = ctx.L;
-      return ctx;
+  // ── clip-specs (data) ──
+  var SPECS = {
+    // trilling → lopende golf (amplitude & golflengte)
+    golf: {
+      duration: 9.2, base: { x: 40, y: 90 },
+      cues: [0, 1.7, 3.0, 5.0, 7.2],
+      audio: [[1.7, "clipRoll"], [3.05, "clipCatalyst"], [5.05, "clipCatalyst"], [8.6, "clipSuccess"]],
+      tracks: [
+        { type: "reveal", sel: ".wave", t: [1.6, 7.0], ease: "lin" },
+        { type: "moveAlong", pathSel: ".wave", f: [[1.6, 0, "lin"], [7.0, 1, "lin"]], appear: [1.5, 1.6], bright: [1.6, 7.0], brightVal: 0.28, dimVal: 0.1 },
+        { type: "fade", sel: ".amp", t: [3.0, 3.8] },
+        { type: "fade", sel: ".lam", t: [5.0, 5.8] },
+        { type: "fade", sel: ".tnote", t: [7.2, 8.0] }
+      ]
     },
-    render: function (t, ctx) {
-      var f = seg(t, 1.6, 7.0);
-      ctx.wave.style.strokeDashoffset = (ctx.L * (1 - f)).toFixed(1);
-      if (t < 1.55) { ctx.ball.style.opacity = "0"; ctx.glow.style.opacity = "0"; }
-      else { ctx.ball.style.opacity = "1"; putBall(ctx, ctx.wave.getPointAtLength(f * ctx.L)); }
-      ctx.amp.style.opacity = easeOut(seg(t, 3.0, 3.8)).toFixed(2);
-      ctx.lam.style.opacity = easeOut(seg(t, 5.0, 5.8)).toFixed(2);
-      ctx.tnote.style.opacity = easeOut(seg(t, 7.2, 8.0)).toFixed(2);
-      var moving = t >= 1.6 && t < 7.0;
-      ctx.glow.style.opacity = (t < 1.55 ? 0 : moving ? 0.28 : 0.1).toFixed(2);
+    // raaklijn = afgeleide (helling < 0 → 0 → > 0 op een dal-parabool)
+    raaklijn: {
+      duration: 9.6, staticAt: 5.0, base: { x: 40, y: 40 },
+      cues: [0, 2.2, 4.4, 5.6, 8.0],
+      audio: [[2.1, "clipRoll"], [4.45, "clipCatalyst"], [5.65, "clipRoll"], [8.2, "clipSuccess"]],
+      tracks: [
+        {
+          type: "tangent", pathSel: ".curve", lineSel: ".tangent", half: 30,
+          f: [[2.0, 0, "lin"], [4.3, 0.5, "io"], [5.3, 0.5, "lin"], [7.6, 1, "io"]],
+          bright: [2.0, 7.6], brightVal: 0.24, dimVal: 0.1,
+          label: { sel: ".lbl-slope", vx: 155, neg: "helling < 0", zero: "helling = 0", pos: "helling > 0", cneg: "#c0392b", czero: "var(--or)", cpos: "#2e9e6b", fade: [1.9, 2.4] }
+        },
+        { type: "fade", sel: ".vguide", t: [4.3, 4.9] }
+      ]
     },
-    staticState: function (ctx) {
-      ctx.wave.style.strokeDashoffset = "0";
-      ctx.ball.style.opacity = "1"; ctx.glow.style.opacity = "0.1";
-      putBall(ctx, ctx.wave.getPointAtLength(ctx.L));
-      ctx.amp.style.opacity = "1"; ctx.lam.style.opacity = "1"; ctx.tnote.style.opacity = "1";
+    // break-evenpunt (TK & TO snijden; verlies-/winst-zone)
+    breakeven: {
+      duration: 9.5,
+      cues: [0, 1.6, 3.6, 5.6, 7.4],
+      audio: [[1.65, "clipRoll"], [3.65, "clipRoll"], [5.65, "clipCatalyst"], [8.4, "clipSuccess"]],
+      tracks: [
+        { type: "reveal", sel: ".line-tk", t: [1.6, 3.4] },
+        { type: "reveal", sel: ".line-to", t: [3.6, 5.4] },
+        { type: "fade", sel: ".be-dot", t: [5.6, 6.2] },
+        { type: "attr", sel: ".be-dot", attr: "r", from: 2, to: 5, t: [5.6, 6.3] },
+        { type: "reveal", sel: ".be-drop", t: [5.7, 6.6] },
+        { type: "fade", sel: ".lbl-be", t: [6.0, 6.6] },
+        { type: "fade", sel: ".lbl-verlies", t: [7.4, 8.2] },
+        { type: "fade", sel: ".lbl-winst", t: [7.6, 8.4] }
+      ]
+    },
+    // marktevenwicht: vraag & aanbod snijden (Pe, Qe)
+    markt: {
+      duration: 9.5,
+      cues: [0, 1.6, 3.6, 5.6, 7.4],
+      audio: [[1.65, "clipRoll"], [3.65, "clipRoll"], [5.65, "clipCatalyst"], [8.4, "clipSuccess"]],
+      tracks: [
+        { type: "reveal", sel: ".demand", t: [1.6, 3.4] },
+        { type: "reveal", sel: ".supply", t: [3.6, 5.4] },
+        { type: "fade", sel: ".eq-dot", t: [5.6, 6.2] },
+        { type: "attr", sel: ".eq-dot", attr: "r", from: 2, to: 5, t: [5.6, 6.3] },
+        { type: "reveal", sel: ".drop-p", t: [5.7, 6.6] },
+        { type: "reveal", sel: ".drop-q", t: [5.7, 6.6] },
+        { type: "fade", sel: ".lbl-eq", t: [6.0, 6.6] },
+        { type: "fade", sel: ".lbl-pe", t: [6.4, 7.1] },
+        { type: "fade", sel: ".lbl-qe", t: [6.6, 7.3] }
+      ]
     }
   };
-
-  // ── clip: raaklijn = afgeleide (helling < 0 → 0 → > 0 op een dal-parabool) ──
-  CHOREO.raaklijn = {
-    duration: 9.6,
-    cues: [{ t: 0, i: 0 }, { t: 2.2, i: 1 }, { t: 4.4, i: 2 }, { t: 5.6, i: 3 }, { t: 8.0, i: 4 }],
-    audio: [{ t: 2.1, s: "clipRoll" }, { t: 4.45, s: "clipCatalyst" }, { t: 5.65, s: "clipRoll" }, { t: 8.2, s: "clipSuccess" }],
-    build: function (clip) {
-      var svg = clip.querySelector("svg");
-      var ctx = {
-        svg: svg, curve: svg.querySelector(".curve"), ball: svg.querySelector(".ball"),
-        glow: svg.querySelector(".glow"), tangent: svg.querySelector(".tangent"),
-        lbl: svg.querySelector(".lbl-slope"), vguide: svg.querySelector(".vguide"),
-        bx: 40, by: 40, vx: 155
-      };
-      ctx.L = ctx.curve.getTotalLength();
-      return ctx;
-    },
-    _frac: function (t) {
-      if (t < 2.0) return 0;
-      if (t < 4.3) return 0.5 * easeInOut(seg(t, 2.0, 4.3));
-      if (t < 5.3) return 0.5;
-      if (t < 7.6) return 0.5 + 0.5 * easeInOut(seg(t, 5.3, 7.6));
-      return 1;
-    },
-    render: function (t, ctx) {
-      var f = this._frac(t), Lf = f * ctx.L, eps = 1.6;
-      var p = ctx.curve.getPointAtLength(Lf);
-      var p1 = ctx.curve.getPointAtLength(Math.max(0, Lf - eps));
-      var p2 = ctx.curve.getPointAtLength(Math.min(ctx.L, Lf + eps));
-      var dx = p2.x - p1.x, dy = p2.y - p1.y, m = Math.hypot(dx, dy) || 1;
-      var ux = dx / m, uy = dy / m, half = 30;
-      ctx.tangent.setAttribute("x1", (p.x - ux * half).toFixed(1));
-      ctx.tangent.setAttribute("y1", (p.y - uy * half).toFixed(1));
-      ctx.tangent.setAttribute("x2", (p.x + ux * half).toFixed(1));
-      ctx.tangent.setAttribute("y2", (p.y + uy * half).toFixed(1));
-      putBall(ctx, p);
-      var neg = p.x < ctx.vx - 5, pos = p.x > ctx.vx + 5;
-      ctx.lbl.textContent = neg ? "helling < 0" : pos ? "helling > 0" : "helling = 0";
-      ctx.lbl.setAttribute("x", p.x.toFixed(1));
-      ctx.lbl.setAttribute("y", (p.y - 14).toFixed(1));
-      ctx.lbl.style.fill = neg ? "#c0392b" : pos ? "#2e9e6b" : "var(--or)";
-      ctx.lbl.style.opacity = easeOut(seg(t, 1.9, 2.4)).toFixed(2);
-      ctx.vguide.style.opacity = easeOut(seg(t, 4.3, 4.9)).toFixed(2);
-      ctx.glow.style.opacity = ((t >= 2.0 && t < 7.6) ? 0.24 : 0.1).toFixed(2);
-    },
-    staticState: function (ctx) { this.render(4.85, ctx); ctx.lbl.style.opacity = "1"; ctx.vguide.style.opacity = "1"; }
-  };
-
-  // ── clip: break-evenpunt (TK & TO snijden; verlies-/winst-zone) ──
-  CHOREO.breakeven = {
-    duration: 9.5,
-    cues: [{ t: 0, i: 0 }, { t: 1.6, i: 1 }, { t: 3.6, i: 2 }, { t: 5.6, i: 3 }, { t: 7.4, i: 4 }],
-    audio: [{ t: 1.65, s: "clipRoll" }, { t: 3.65, s: "clipRoll" }, { t: 5.65, s: "clipCatalyst" }, { t: 8.4, s: "clipSuccess" }],
-    build: function (clip) {
-      var svg = clip.querySelector("svg");
-      var ctx = {
-        tk: svg.querySelector(".line-tk"), to: svg.querySelector(".line-to"),
-        dot: svg.querySelector(".be-dot"), drop: svg.querySelector(".be-drop"),
-        verlies: svg.querySelector(".lbl-verlies"), winst: svg.querySelector(".lbl-winst"),
-        lblbe: svg.querySelector(".lbl-be")
-      };
-      // snijpunt van TK (40,82)-(280,58) en TO (40,146)-(280,18)
-      var u = (146 - 82) / (128 - 24), xi = 40 + 240 * u, yi = 82 - 24 * u;
-      ctx.xi = xi; ctx.yi = yi;
-      ctx.dot.setAttribute("cx", xi.toFixed(1)); ctx.dot.setAttribute("cy", yi.toFixed(1));
-      ctx.drop.setAttribute("x1", xi.toFixed(1)); ctx.drop.setAttribute("y1", yi.toFixed(1));
-      ctx.drop.setAttribute("x2", xi.toFixed(1)); ctx.drop.setAttribute("y2", "146");
-      ctx.lblbe.setAttribute("x", xi.toFixed(1));
-      ctx.Ltk = ctx.tk.getTotalLength(); ctx.Lto = ctx.to.getTotalLength();
-      ctx.Ldrop = 146 - yi;
-      ctx.tk.style.strokeDasharray = ctx.Ltk; ctx.tk.style.strokeDashoffset = ctx.Ltk;
-      ctx.to.style.strokeDasharray = ctx.Lto; ctx.to.style.strokeDashoffset = ctx.Lto;
-      ctx.drop.style.strokeDasharray = ctx.Ldrop; ctx.drop.style.strokeDashoffset = ctx.Ldrop;
-      return ctx;
-    },
-    render: function (t, ctx) {
-      ctx.tk.style.strokeDashoffset = (ctx.Ltk * (1 - easeOut(seg(t, 1.6, 3.4)))).toFixed(1);
-      ctx.to.style.strokeDashoffset = (ctx.Lto * (1 - easeOut(seg(t, 3.6, 5.4)))).toFixed(1);
-      var pop = easeOut(seg(t, 5.6, 6.3));
-      ctx.dot.style.opacity = easeOut(seg(t, 5.6, 6.2)).toFixed(2);
-      ctx.dot.setAttribute("r", (2 + 3 * pop).toFixed(2));
-      ctx.drop.style.strokeDashoffset = (ctx.Ldrop * (1 - easeOut(seg(t, 5.7, 6.6)))).toFixed(1);
-      ctx.lblbe.style.opacity = easeOut(seg(t, 6.0, 6.6)).toFixed(2);
-      ctx.verlies.style.opacity = easeOut(seg(t, 7.4, 8.2)).toFixed(2);
-      ctx.winst.style.opacity = easeOut(seg(t, 7.6, 8.4)).toFixed(2);
-    },
-    staticState: function (ctx) {
-      ctx.tk.style.strokeDashoffset = "0"; ctx.to.style.strokeDashoffset = "0";
-      ctx.drop.style.strokeDashoffset = "0";
-      ctx.dot.style.opacity = "1"; ctx.dot.setAttribute("r", "5");
-      ctx.lblbe.style.opacity = "1"; ctx.verlies.style.opacity = "1"; ctx.winst.style.opacity = "1";
-    }
-  };
+  for (var _sk in SPECS) CHOREO[_sk] = specChoreo(SPECS[_sk]);
 
   // ══ Framework ══
   function nameOf(clip) {

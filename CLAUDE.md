@@ -59,6 +59,8 @@ If you add a **new** file that should be cached, also add it to the `ASSETS[]` a
 
 ## Key patterns
 
+**Mini-clips (`sam-clip.js`)**: korte geanimeerde uitleg in samenvattingen. Een clip = SVG-scène + rAF-tijdlijn. De **spec-engine** drijft de meeste clips aan: je schrijft géén `build/render/staticState`, maar een declaratieve `SPECS.<naam>` met `duration`, `cues` (bijschrift-starttijden), `audio` (`[t, geluid]`, via `playSound()`), en `tracks`. Tracktypes: `reveal` (pad tekent in), `fade`, `attr` (bv. `r`), `moveAlong` (`.ball`/`.glow` volgt een pad via f-keyframes), `tangent` (raaklijn + zone-label), `custom`. Een nieuwe clip toevoegen: (1) voeg een `SPECS`-entry toe, (2) injecteer SVG-markup met de bijbehorende klassen (`.sam-clip clip-<naam>` + `.sam-clip-cap/-caps/-bar/-dots`) in de SAM_RICH-entry. `clip-<naam>` koppelt aan `CHOREO.<naam>`; #dots = #cues = #caption-`<p>`'s. Autoplay is stil; SFX pas na een klik. `prefers-reduced-motion`/geen-support → statisch eindbeeld + stappen als tekst. `activering` is nog met de hand geschreven (twee-fase-fysica); de rest komt uit specs.
+
 **Navigation**: `show('sc-X')` (in `state.js`) switches the visible screen. Screens are `<div id="sc-X" class="sc">`; the active one gets `.on`. `.sc{display:none}` / `.sc.on{display:block}` lives in `styles.css`.
 
 **Quiz state**: The global `ST` object (`state.js`) holds everything for the current session:
