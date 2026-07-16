@@ -94,6 +94,143 @@
     }
   };
 
+  // helper: plaats een .ball + .glow op punt p, gegeven authored basispositie (bx,by)
+  function putBall(ctx, p) {
+    var tr = "translate(" + (p.x - ctx.bx).toFixed(2) + "," + (p.y - ctx.by).toFixed(2) + ")";
+    ctx.ball.setAttribute("transform", tr);
+    if (ctx.glow) ctx.glow.setAttribute("transform", tr);
+  }
+
+  // ── clip: trilling → lopende golf (amplitude & golflengte) ──
+  CHOREO.golf = {
+    duration: 9.2,
+    cues: [{ t: 0, i: 0 }, { t: 1.7, i: 1 }, { t: 3.0, i: 2 }, { t: 5.0, i: 3 }, { t: 7.2, i: 4 }],
+    audio: [{ t: 1.7, s: "clipRoll" }, { t: 3.05, s: "clipCatalyst" }, { t: 5.05, s: "clipCatalyst" }, { t: 8.6, s: "clipSuccess" }],
+    build: function (clip) {
+      var svg = clip.querySelector("svg");
+      var ctx = {
+        svg: svg, wave: svg.querySelector(".wave"), ball: svg.querySelector(".ball"),
+        glow: svg.querySelector(".glow"), amp: svg.querySelector(".amp"),
+        lam: svg.querySelector(".lam"), tnote: svg.querySelector(".tnote"),
+        bx: 40, by: 90
+      };
+      ctx.L = ctx.wave.getTotalLength();
+      ctx.wave.style.strokeDasharray = ctx.L;
+      ctx.wave.style.strokeDashoffset = ctx.L;
+      return ctx;
+    },
+    render: function (t, ctx) {
+      var f = seg(t, 1.6, 7.0);
+      ctx.wave.style.strokeDashoffset = (ctx.L * (1 - f)).toFixed(1);
+      if (t < 1.55) { ctx.ball.style.opacity = "0"; ctx.glow.style.opacity = "0"; }
+      else { ctx.ball.style.opacity = "1"; putBall(ctx, ctx.wave.getPointAtLength(f * ctx.L)); }
+      ctx.amp.style.opacity = easeOut(seg(t, 3.0, 3.8)).toFixed(2);
+      ctx.lam.style.opacity = easeOut(seg(t, 5.0, 5.8)).toFixed(2);
+      ctx.tnote.style.opacity = easeOut(seg(t, 7.2, 8.0)).toFixed(2);
+      var moving = t >= 1.6 && t < 7.0;
+      ctx.glow.style.opacity = (t < 1.55 ? 0 : moving ? 0.28 : 0.1).toFixed(2);
+    },
+    staticState: function (ctx) {
+      ctx.wave.style.strokeDashoffset = "0";
+      ctx.ball.style.opacity = "1"; ctx.glow.style.opacity = "0.1";
+      putBall(ctx, ctx.wave.getPointAtLength(ctx.L));
+      ctx.amp.style.opacity = "1"; ctx.lam.style.opacity = "1"; ctx.tnote.style.opacity = "1";
+    }
+  };
+
+  // ── clip: raaklijn = afgeleide (helling < 0 → 0 → > 0 op een dal-parabool) ──
+  CHOREO.raaklijn = {
+    duration: 9.6,
+    cues: [{ t: 0, i: 0 }, { t: 2.2, i: 1 }, { t: 4.4, i: 2 }, { t: 5.6, i: 3 }, { t: 8.0, i: 4 }],
+    audio: [{ t: 2.1, s: "clipRoll" }, { t: 4.45, s: "clipCatalyst" }, { t: 5.65, s: "clipRoll" }, { t: 8.2, s: "clipSuccess" }],
+    build: function (clip) {
+      var svg = clip.querySelector("svg");
+      var ctx = {
+        svg: svg, curve: svg.querySelector(".curve"), ball: svg.querySelector(".ball"),
+        glow: svg.querySelector(".glow"), tangent: svg.querySelector(".tangent"),
+        lbl: svg.querySelector(".lbl-slope"), vguide: svg.querySelector(".vguide"),
+        bx: 40, by: 40, vx: 155
+      };
+      ctx.L = ctx.curve.getTotalLength();
+      return ctx;
+    },
+    _frac: function (t) {
+      if (t < 2.0) return 0;
+      if (t < 4.3) return 0.5 * easeInOut(seg(t, 2.0, 4.3));
+      if (t < 5.3) return 0.5;
+      if (t < 7.6) return 0.5 + 0.5 * easeInOut(seg(t, 5.3, 7.6));
+      return 1;
+    },
+    render: function (t, ctx) {
+      var f = this._frac(t), Lf = f * ctx.L, eps = 1.6;
+      var p = ctx.curve.getPointAtLength(Lf);
+      var p1 = ctx.curve.getPointAtLength(Math.max(0, Lf - eps));
+      var p2 = ctx.curve.getPointAtLength(Math.min(ctx.L, Lf + eps));
+      var dx = p2.x - p1.x, dy = p2.y - p1.y, m = Math.hypot(dx, dy) || 1;
+      var ux = dx / m, uy = dy / m, half = 30;
+      ctx.tangent.setAttribute("x1", (p.x - ux * half).toFixed(1));
+      ctx.tangent.setAttribute("y1", (p.y - uy * half).toFixed(1));
+      ctx.tangent.setAttribute("x2", (p.x + ux * half).toFixed(1));
+      ctx.tangent.setAttribute("y2", (p.y + uy * half).toFixed(1));
+      putBall(ctx, p);
+      var neg = p.x < ctx.vx - 5, pos = p.x > ctx.vx + 5;
+      ctx.lbl.textContent = neg ? "helling < 0" : pos ? "helling > 0" : "helling = 0";
+      ctx.lbl.setAttribute("x", p.x.toFixed(1));
+      ctx.lbl.setAttribute("y", (p.y - 14).toFixed(1));
+      ctx.lbl.style.fill = neg ? "#c0392b" : pos ? "#2e9e6b" : "var(--or)";
+      ctx.lbl.style.opacity = easeOut(seg(t, 1.9, 2.4)).toFixed(2);
+      ctx.vguide.style.opacity = easeOut(seg(t, 4.3, 4.9)).toFixed(2);
+      ctx.glow.style.opacity = ((t >= 2.0 && t < 7.6) ? 0.24 : 0.1).toFixed(2);
+    },
+    staticState: function (ctx) { this.render(4.85, ctx); ctx.lbl.style.opacity = "1"; ctx.vguide.style.opacity = "1"; }
+  };
+
+  // ── clip: break-evenpunt (TK & TO snijden; verlies-/winst-zone) ──
+  CHOREO.breakeven = {
+    duration: 9.5,
+    cues: [{ t: 0, i: 0 }, { t: 1.6, i: 1 }, { t: 3.6, i: 2 }, { t: 5.6, i: 3 }, { t: 7.4, i: 4 }],
+    audio: [{ t: 1.65, s: "clipRoll" }, { t: 3.65, s: "clipRoll" }, { t: 5.65, s: "clipCatalyst" }, { t: 8.4, s: "clipSuccess" }],
+    build: function (clip) {
+      var svg = clip.querySelector("svg");
+      var ctx = {
+        tk: svg.querySelector(".line-tk"), to: svg.querySelector(".line-to"),
+        dot: svg.querySelector(".be-dot"), drop: svg.querySelector(".be-drop"),
+        verlies: svg.querySelector(".lbl-verlies"), winst: svg.querySelector(".lbl-winst"),
+        lblbe: svg.querySelector(".lbl-be")
+      };
+      // snijpunt van TK (40,82)-(280,58) en TO (40,146)-(280,18)
+      var u = (146 - 82) / (128 - 24), xi = 40 + 240 * u, yi = 82 - 24 * u;
+      ctx.xi = xi; ctx.yi = yi;
+      ctx.dot.setAttribute("cx", xi.toFixed(1)); ctx.dot.setAttribute("cy", yi.toFixed(1));
+      ctx.drop.setAttribute("x1", xi.toFixed(1)); ctx.drop.setAttribute("y1", yi.toFixed(1));
+      ctx.drop.setAttribute("x2", xi.toFixed(1)); ctx.drop.setAttribute("y2", "146");
+      ctx.lblbe.setAttribute("x", xi.toFixed(1));
+      ctx.Ltk = ctx.tk.getTotalLength(); ctx.Lto = ctx.to.getTotalLength();
+      ctx.Ldrop = 146 - yi;
+      ctx.tk.style.strokeDasharray = ctx.Ltk; ctx.tk.style.strokeDashoffset = ctx.Ltk;
+      ctx.to.style.strokeDasharray = ctx.Lto; ctx.to.style.strokeDashoffset = ctx.Lto;
+      ctx.drop.style.strokeDasharray = ctx.Ldrop; ctx.drop.style.strokeDashoffset = ctx.Ldrop;
+      return ctx;
+    },
+    render: function (t, ctx) {
+      ctx.tk.style.strokeDashoffset = (ctx.Ltk * (1 - easeOut(seg(t, 1.6, 3.4)))).toFixed(1);
+      ctx.to.style.strokeDashoffset = (ctx.Lto * (1 - easeOut(seg(t, 3.6, 5.4)))).toFixed(1);
+      var pop = easeOut(seg(t, 5.6, 6.3));
+      ctx.dot.style.opacity = easeOut(seg(t, 5.6, 6.2)).toFixed(2);
+      ctx.dot.setAttribute("r", (2 + 3 * pop).toFixed(2));
+      ctx.drop.style.strokeDashoffset = (ctx.Ldrop * (1 - easeOut(seg(t, 5.7, 6.6)))).toFixed(1);
+      ctx.lblbe.style.opacity = easeOut(seg(t, 6.0, 6.6)).toFixed(2);
+      ctx.verlies.style.opacity = easeOut(seg(t, 7.4, 8.2)).toFixed(2);
+      ctx.winst.style.opacity = easeOut(seg(t, 7.6, 8.4)).toFixed(2);
+    },
+    staticState: function (ctx) {
+      ctx.tk.style.strokeDashoffset = "0"; ctx.to.style.strokeDashoffset = "0";
+      ctx.drop.style.strokeDashoffset = "0";
+      ctx.dot.style.opacity = "1"; ctx.dot.setAttribute("r", "5");
+      ctx.lblbe.style.opacity = "1"; ctx.verlies.style.opacity = "1"; ctx.winst.style.opacity = "1";
+    }
+  };
+
   // ══ Framework ══
   function nameOf(clip) {
     var cl = clip.className && clip.className.baseVal !== undefined ? clip.className.baseVal : clip.className;
