@@ -49,6 +49,38 @@ async function trackEvent(type,meta){
     }).then(()=>{}).catch(()=>{});
   }catch(e){}
 }
+
+// ═══════ FOUT-MONITORING → bestaande events-tabel (geen Supabase-wijziging nodig) ═══════
+// Vangt live JS-fouten, niet-afgehandelde promises en mislukte bron-loads op en logt ze
+// als event_type 'js_error' (in meta). Gededupliceerd + gecapt zodat het nooit spamt.
+(function initErrorMonitor(){
+  var seen={}, sent=0, MAX=12;
+  function report(kind,msg,src,line,col,stack){
+    try{
+      if(sent>=MAX)return;
+      msg=String(msg||'').slice(0,300);
+      var sig=kind+'|'+msg+'|'+(line||0);
+      if(seen[sig])return; seen[sig]=1; sent++;
+      var scr=''; try{var on=document.querySelector('.sc.on');scr=on?on.id:'';}catch(e){}
+      if(typeof trackEvent==='function')trackEvent('js_error',{
+        kind:kind, message:msg,
+        source:String(src||'').replace(location.origin,'').slice(0,140),
+        line:line||null, col:col||null,
+        stack:String(stack||'').slice(0,700),
+        screen:scr, path:location.pathname,
+        online:navigator.onLine, ua:navigator.userAgent.slice(0,170)
+      });
+    }catch(e){}
+  }
+  window.addEventListener('error',function(e){
+    if(e&&e.message)report('error',e.message,e.filename,e.lineno,e.colno,e.error&&e.error.stack);
+    else if(e&&e.target&&(e.target.src||e.target.href))report('resource','bron kon niet laden: '+(e.target.src||e.target.href),e.target.src||e.target.href);
+  },true);
+  window.addEventListener('unhandledrejection',function(e){
+    var r=e&&e.reason; report('promise',(r&&r.message)||String(r),'',null,null,r&&r.stack);
+  });
+})();
+
 // Detecteer herkomst (UTM param > referrer > direct)
 function _getSrc(){
   try{const p=new URLSearchParams(location.search);const utm=p.get('utm_source');if(utm)return utm.toLowerCase();}catch(e){}

@@ -43,6 +43,15 @@
 // ═══════ LEADERBOARD ═══════
 function getLbKey(){return 'examenapp_leaderboard_'+APP_LEVEL;}
 function getLbEntries(){try{return JSON.parse(localStorage.getItem(getLbKey())||'[]');}catch(e){return[];}}
+// Client-side sanity-check: houdt onmogelijke scores uit de gedeelde ranglijst.
+// (Geen vervanging voor Supabase RLS — wél een rem op corruptie door bugs.)
+function _lbEntryValid(e){
+  var s=+e.score, g=+e.goed, t=+e.tot;
+  if(!isFinite(s)||s<0||s>1000)return false;      // max haalbare score is 1000
+  if(!isFinite(t)||t<1||t>60)return false;         // realistisch aantal vragen
+  if(!isFinite(g)||g<0||g>t)return false;          // goed kan niet > totaal
+  return true;
+}
 async function saveLeaderboardEntry(entry){
   entry.niveau=APP_LEVEL;
   if(currentUser)entry.uid=currentUser.id;
@@ -52,8 +61,8 @@ async function saveLeaderboardEntry(entry){
   all.sort((a,b)=>b.score-a.score);
   if(all.length>200)all=all.slice(0,200);
   localStorage.setItem(getLbKey(),JSON.stringify(all));
-  // Save to Supabase global leaderboard (cross-user)
-  if(currentUser){
+  // Save to Supabase global leaderboard (cross-user) — alleen valide scores
+  if(currentUser && _lbEntryValid(entry)){
     const base={
       user_id:currentUser.id,
       naam:entry.naam,avatar:entry.avatar,
