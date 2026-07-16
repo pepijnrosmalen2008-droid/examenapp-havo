@@ -71,6 +71,9 @@ html.dark.level-vwo{
 /* Root-achtergrond: voorkomt witte randen bij snel scrollen / overscroll-bounce
    (de body dekt niet de overscroll-zone; html wél). */
 html{background:var(--bg,#f5f6fa)}
+/* wrapper voor emoji→SVG-iconen (ico-swap.js): lijnt het icoon uit met de tekst */
+.ico-emoji{display:inline-flex;align-items:center;justify-content:center;vertical-align:-.14em}
+.ico-emoji>.ico{display:block}
 body{font-family:var(--font);background:var(--bg);color:var(--dk);line-height:1.7;font-size:15px;-webkit-font-smoothing:antialiased;transition:background .25s,color .25s;overscroll-behavior-y:contain}
 h1,h2,h3,h4{font-family:var(--font-head);line-height:1.2;letter-spacing:-.3px}
 .sc{display:none;min-height:100vh}.sc.on{display:block;animation:screenIn .38s cubic-bezier(.22,1,.36,1)}
