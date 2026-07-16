@@ -5763,3 +5763,35 @@ html.dark .dom-hero-card{background:linear-gradient(180deg,rgba(255,255,255,.045
 .dom-fav-btn{margin-left:auto}
 .dh-solo{display:none} /* alleen nodig als h4-anker voor printSam(), niet zichtbaar */
 #sc-domein .dtop{border-top:none}
+
+/* ═══════ SAM-CLIP: korte geanimeerde uitleg ("mini-video") ═══════ */
+.sam-clip{background:var(--bg2);border:1px solid var(--bo);border-radius:14px;padding:14px 14px 12px;margin:18px 0}
+.sam-clip svg{max-width:100%;height:auto;display:block;margin:0 auto;overflow:visible}
+.sam-clip-cap{min-height:2.7em;margin-top:8px;font-size:13.5px;color:var(--dk);text-align:center;font-weight:600;line-height:1.42}
+.sam-clip-caps{display:none}
+.sam-clip-bar{display:flex;align-items:center;justify-content:center;gap:14px;margin-top:8px}
+.sam-clip-play{font:inherit;font-size:13px;font-weight:700;color:#fff;background:var(--or);border:none;border-radius:999px;padding:7px 16px;cursor:pointer;display:inline-flex;align-items:center;gap:6px;-webkit-tap-highlight-color:transparent}
+.sam-clip-play:hover{filter:brightness(1.07)}
+.sam-clip-dots{display:flex;gap:6px}
+.sam-clip-dots i{width:7px;height:7px;border-radius:50%;background:var(--bo);transition:background .3s}
+.sam-clip-dots i.on{background:var(--or)}
+/* statische fallback (reduced-motion of geen JS): eindbeeld + alle stappen als tekst */
+.sam-clip.reduced .sam-clip-cap,.sam-clip.reduced .sam-clip-bar{display:none}
+.sam-clip.reduced .sam-clip-caps{display:block;margin-top:8px}
+.sam-clip.reduced .sam-clip-caps p{margin:3px 0 3px 20px;font-size:13px;color:var(--mu);font-weight:500;list-style:disc;display:list-item}
+
+/* — clip: activeringsenergie & katalysator — */
+.clip-activering .ball{transition:transform 1.55s cubic-bezier(.45,.05,.55,.95)}
+.clip-activering .curve-low,.clip-activering .lbl-kat{opacity:0;transition:opacity .6s}
+.clip-activering .curve-high{transition:opacity .6s}
+.clip-activering[data-step="1"] .ball{transform:translate(46px,-34px)}
+.clip-activering[data-step="4"] .ball{transform:translate(88px,-24px)}
+.clip-activering[data-step="5"] .ball{transform:translate(212px,22px)}
+.clip-activering[data-step="3"] .curve-low,.clip-activering[data-step="4"] .curve-low,.clip-activering[data-step="5"] .curve-low{opacity:1}
+.clip-activering[data-step="3"] .lbl-kat,.clip-activering[data-step="4"] .lbl-kat,.clip-activering[data-step="5"] .lbl-kat{opacity:1}
+.clip-activering[data-step="3"] .curve-high,.clip-activering[data-step="4"] .curve-high,.clip-activering[data-step="5"] .curve-high{opacity:.3}
+/* statisch eindbeeld voor .reduced */
+.sam-clip.reduced.clip-activering .ball{transform:translate(212px,22px)}
+.sam-clip.reduced.clip-activering .curve-low,.sam-clip.reduced.clip-activering .lbl-kat{opacity:1}
+.sam-clip.reduced.clip-activering .curve-high{opacity:.3}
+@media(prefers-reduced-motion:reduce){.clip-activering .ball,.clip-activering .curve-low,.clip-activering .curve-high,.clip-activering .lbl-kat{transition:none}}
