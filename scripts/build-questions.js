@@ -111,6 +111,11 @@ const MMAP={
 };
 const CURATED={};
 for(const k in MMAP) CURATED[k]=MMAP[k].map(t=>({t,d:MT[t]})).filter(x=>x.d);
+// extra curated begrippenbank (nieuwe termen per domein) uit een apart bestand
+try{
+  const EXTRA=require('./begrippen.js');
+  for(const k in EXTRA){const arr=(EXTRA[k]||[]).map(p=>Array.isArray(p)?{t:p[0],d:p[1]}:p);CURATED[k]=[...(CURATED[k]||[]),...arr];}
+}catch(e){console.log('(geen begrippen.js gevonden — alleen wiskunde-curated)');}
 
 // ── generator ──
 function shuffle(a){a=a.slice();for(let i=a.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[a[i],a[j]]=[a[j],a[i]];}return a;}
@@ -149,11 +154,13 @@ function run(file, name, niveau, pretty){
     // 1. begrippen per domein bepalen (curated behouden, anders extractie)
     for(const d of vak.domeinen){
       const key=niveau+'_'+vak.id+'_'+d.id;
-      if(CURATED[key]){d.begrippen=CURATED[key];curatedDoms++;}
-      else if(!(d.begrippen&&d.begrippen.length)){
-        const ex=extract(SAM[key]||d.sam||'');
-        if(ex.length>=4){d.begrippen=ex;extractedDoms++;}
-      } else curatedDoms++;
+      // Voeg samen: curated (nieuw) + bestaande + extractie uit de samenvatting (dedup op term).
+      const merged=[], seen=new Set();
+      const addAll=arr=>{for(const b of (arr||[])){const t=(b.t||b[0]||'').toString().trim(), de=(b.d||b[1]||'').toString().trim();if(!t||!de)continue;const k=t.toLowerCase();if(seen.has(k))continue;seen.add(k);merged.push({t,d:de});}};
+      addAll(CURATED[key]);
+      addAll(d.begrippen);
+      if(merged.length<40) addAll(extract(SAM[key]||d.sam||''));
+      if(merged.length){d.begrippen=merged.slice(0,42); (CURATED[key]?curatedDoms++:extractedDoms++);}
     }
     // 2. vak-brede pool voor afleiders
     const vakPool=[]; vak.domeinen.forEach(d=>(d.begrippen||[]).forEach(b=>vakPool.push(b)));
