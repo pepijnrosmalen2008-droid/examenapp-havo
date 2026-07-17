@@ -643,7 +643,10 @@ function startFlash(){
   try{playSound('start');}catch(e){}
   // Stap 1: haal term→def paren uit de (rijke) samenvatting: <strong>, formuleboxen en tabellen
   const samSrc=(typeof SAM_RICH!=='undefined'&&SAM_RICH[APP_LEVEL+'_'+v.id+'_'+d.id])||d.sam;
-  let cards=samSrc?_parseSamCards(samSrc):[];
+  // Curated begrippen (term→definitie) zijn de primaire, term-gebaseerde kaarten.
+  let cards=(d.begrippen&&d.begrippen.length)?d.begrippen.map(b=>({term:b.t,def:b.d})):[];
+  const _seenT=new Set(cards.map(c=>c.term.toLowerCase()));
+  if(samSrc)_parseSamCards(samSrc).forEach(c=>{const k=c.term.toLowerCase();if(!_seenT.has(k)){_seenT.add(k);cards.push(c);}});
   // Stap 2: fallback - koppel elke onderwerp aan de meest relevante zin (keyword-matching)
   if(cards.length<3){
     const terms=(d.onderwerpen||[]).filter(t=>t&&t.trim().length>1);

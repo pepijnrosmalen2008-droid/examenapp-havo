@@ -3185,6 +3185,94 @@ var VAKKEN = [
       ],
       "c": 0,
       "u": "Replicaties verhogen de betrouwbaarheid: toevallige variaties middelen uit. Hoe meer herhalingen, hoe robuuster de conclusie."
+     },
+     {
+      "v": "Wat betekent «Hypothese»?",
+      "o": [
+       "gebruik zonder uitputting voor latere generaties",
+       "een toetsbare voorspelling van een verwacht verband",
+       "een dun plakje materiaal voor onder de microscoop",
+       "CO2 + water + licht worden glucose + zuurstof"
+      ],
+      "c": 1,
+      "u": "Hypothese: een toetsbare voorspelling van een verwacht verband."
+     },
+     {
+      "v": "Welk begrip hoort bij: \"de factor die je in een proef bewust verandert\"?",
+      "o": [
+       "Mitose",
+       "Specifieke afweer",
+       "Betrouwbaarheid",
+       "Onafhankelijke variabele"
+      ],
+      "c": 3,
+      "u": "Onafhankelijke variabele: de factor die je in een proef bewust verandert."
+     },
+     {
+      "v": "Wat betekent «Afhankelijke variabele»?",
+      "o": [
+       "alle individuen van één soort in een gebied",
+       "organisme dat dood materiaal afbreekt (bacteriën, schimmels)",
+       "de factor die je meet als gevolg",
+       "een dun plakje materiaal voor onder de microscoop"
+      ],
+      "c": 2,
+      "u": "Afhankelijke variabele: de factor die je meet als gevolg."
+     },
+     {
+      "v": "Welk begrip hoort bij: \"een proef zonder de onderzochte factor, als vergelijkingspunt\"?",
+      "o": [
+       "Dominant allel",
+       "Controle-experiment",
+       "Antigeen",
+       "Hormoon"
+      ],
+      "c": 1,
+      "u": "Controle-experiment: een proef zonder de onderzochte factor, als vergelijkingspunt."
+     },
+     {
+      "v": "Wat betekent «Betrouwbaarheid»?",
+      "o": [
+       "een levensgemeenschap plus de abiotische omgeving",
+       "energiecentrale die aerobe celademhaling uitvoert (ATP)",
+       "een invloed van levende organismen",
+       "mate waarin herhaalde metingen dezelfde uitkomst geven"
+      ],
+      "c": 3,
+      "u": "Betrouwbaarheid: mate waarin herhaalde metingen dezelfde uitkomst geven."
+     },
+     {
+      "v": "Welk begrip hoort bij: \"mate waarin je meet wat je wilt meten\"?",
+      "o": [
+       "Validiteit",
+       "Recessief allel",
+       "Betrouwbaarheid",
+       "Celkern"
+      ],
+      "c": 0,
+      "u": "Validiteit: mate waarin je meet wat je wilt meten."
+     },
+     {
+      "v": "Wat betekent «Determineertabel»?",
+      "o": [
+       "hormoon dat de bloedglucose verlaagt",
+       "een zenuwcel die impulsen geleidt",
+       "energiecentrale die aerobe celademhaling uitvoert (ATP)",
+       "een sleutel om organismen op kenmerken te benoemen"
+      ],
+      "c": 3,
+      "u": "Determineertabel: een sleutel om organismen op kenmerken te benoemen."
+     },
+     {
+      "v": "Welk begrip hoort bij: \"een dun plakje materiaal voor onder de microscoop\"?",
+      "o": [
+       "Producent",
+       "Preparaat",
+       "Celmembraan",
+       "Ecosysteem"
+      ],
+      "c": 1,
+      "u": "Preparaat: een dun plakje materiaal voor onder de microscoop."
      }
     ],
     "oe": [
@@ -3237,6 +3325,40 @@ var VAKKEN = [
       ],
       "c": 0,
       "u": "(a) Een vetrijk dieet gedurende drie weken leidt bij ratten tot een significant hogere bloedsuikerspiegel (+25%) vergeleken met ratten op normaal voer.\n(b) Bijv.: ratten zijn geen mensen — de fysiologie verschilt. Of: slechts één vetrijke conditie getest — geen dosis-effect relatie. Of: korte duur van 3 weken — geen langetermijneffecten bekend. Of: genetische variatie in de rattengroep niet gecontroleerd."
+     }
+    ],
+    "begrippen": [
+     {
+      "t": "Hypothese",
+      "d": "een toetsbare voorspelling van een verwacht verband"
+     },
+     {
+      "t": "Onafhankelijke variabele",
+      "d": "de factor die je in een proef bewust verandert"
+     },
+     {
+      "t": "Afhankelijke variabele",
+      "d": "de factor die je meet als gevolg"
+     },
+     {
+      "t": "Controle-experiment",
+      "d": "een proef zonder de onderzochte factor, als vergelijkingspunt"
+     },
+     {
+      "t": "Betrouwbaarheid",
+      "d": "mate waarin herhaalde metingen dezelfde uitkomst geven"
+     },
+     {
+      "t": "Validiteit",
+      "d": "mate waarin je meet wat je wilt meten"
+     },
+     {
+      "t": "Determineertabel",
+      "d": "een sleutel om organismen op kenmerken te benoemen"
+     },
+     {
+      "t": "Preparaat",
+      "d": "een dun plakje materiaal voor onder de microscoop"
      }
     ]
    },
@@ -3429,6 +3551,160 @@ var VAKKEN = [
       ],
       "c": 0,
       "u": "Transcriptie: DNA → mRNA in de kern. mRNA verlaat de kern en gaat naar een ribosoom. Translatie: ribosoom leest de codons van mRNA en verbindt de bijbehorende aminozuren tot een eiwit."
+     },
+     {
+      "v": "Wat betekent «Cel»?",
+      "o": [
+       "een levensgemeenschap plus de abiotische omgeving",
+       "allel dat het fenotype bepaalt, ook heterozygoot",
+       "de kleinste eenheid van leven",
+       "inbrengen van onschadelijk antigeen om geheugen op te bouwen"
+      ],
+      "c": 2,
+      "u": "Cel: de kleinste eenheid van leven."
+     },
+     {
+      "v": "Welk begrip hoort bij: \"de selectief doorlaatbare grens van een cel\"?",
+      "o": [
+       "Homeostase",
+       "Abiotische factor",
+       "Celmembraan",
+       "Populatie"
+      ],
+      "c": 2,
+      "u": "Celmembraan: de selectief doorlaatbare grens van een cel."
+     },
+     {
+      "v": "Wat betekent «Celkern»?",
+      "o": [
+       "gebruik zonder uitputting voor latere generaties",
+       "de verbinding tussen twee neuronen met neurotransmitters",
+       "organel dat het DNA bevat en de cel aanstuurt",
+       "de factor die je meet als gevolg"
+      ],
+      "c": 2,
+      "u": "Celkern: organel dat het DNA bevat en de cel aanstuurt."
+     },
+     {
+      "v": "Welk begrip hoort bij: \"energiecentrale die aerobe celademhaling uitvoert (ATP)\"?",
+      "o": [
+       "Antigeen",
+       "Mitochondrion",
+       "Validiteit",
+       "Preparaat"
+      ],
+      "c": 1,
+      "u": "Mitochondrion: energiecentrale die aerobe celademhaling uitvoert (ATP)."
+     },
+     {
+      "v": "Wat betekent «Chloroplast»?",
+      "o": [
+       "best aangepaste individuen planten zich meer voort",
+       "CO2 + water + licht worden glucose + zuurstof",
+       "alle individuen van één soort in een gebied",
+       "organel waarin fotosynthese plaatsvindt"
+      ],
+      "c": 3,
+      "u": "Chloroplast: organel waarin fotosynthese plaatsvindt."
+     },
+     {
+      "v": "Welk begrip hoort bij: \"eiwit dat als biokatalysator een reactie versnelt\"?",
+      "o": [
+       "Afhankelijke variabele",
+       "Ecosysteem",
+       "Celmembraan",
+       "Enzym"
+      ],
+      "c": 3,
+      "u": "Enzym: eiwit dat als biokatalysator een reactie versnelt."
+     },
+     {
+      "v": "Wat betekent «Fotosynthese»?",
+      "o": [
+       "CO2 + water + licht worden glucose + zuurstof",
+       "reductiedeling die geslachtscellen vormt (halve chromosoomaantal)",
+       "een toetsbare voorspelling van een verwacht verband",
+       "mate waarin je meet wat je wilt meten"
+      ],
+      "c": 0,
+      "u": "Fotosynthese: CO2 + water + licht worden glucose + zuurstof."
+     },
+     {
+      "v": "Welk begrip hoort bij: \"glucose + zuurstof worden CO2 + water + energie (ATP)\"?",
+      "o": [
+       "Duurzaamheid",
+       "Celademhaling",
+       "Onafhankelijke variabele",
+       "Homeostase"
+      ],
+      "c": 1,
+      "u": "Celademhaling: glucose + zuurstof worden CO2 + water + energie (ATP)."
+     },
+     {
+      "v": "Wat betekent «DNA»?",
+      "o": [
+       "allel dat het fenotype bepaalt, ook heterozygoot",
+       "molecuul met de erfelijke informatie in genen",
+       "mate waarin herhaalde metingen dezelfde uitkomst geven",
+       "CO2 + water + licht worden glucose + zuurstof"
+      ],
+      "c": 1,
+      "u": "DNA: molecuul met de erfelijke informatie in genen."
+     },
+     {
+      "v": "Welk begrip hoort bij: \"gewone celdeling met twee identieke dochtercellen\"?",
+      "o": [
+       "Mitose",
+       "Neuron",
+       "Antagonisme",
+       "Betrouwbaarheid"
+      ],
+      "c": 0,
+      "u": "Mitose: gewone celdeling met twee identieke dochtercellen."
+     },
+     {
+      "v": "Wat betekent «Meiose»?",
+      "o": [
+       "reductiedeling die geslachtscellen vormt (halve chromosoomaantal)",
+       "inbrengen van onschadelijk antigeen om geheugen op te bouwen",
+       "organel dat het DNA bevat en de cel aanstuurt",
+       "glucose + zuurstof worden CO2 + water + energie (ATP)"
+      ],
+      "c": 0,
+      "u": "Meiose: reductiedeling die geslachtscellen vormt (halve chromosoomaantal)."
+     },
+     {
+      "v": "Welk begrip hoort bij: \"een verandering in het DNA\"?",
+      "o": [
+       "Ecosysteem",
+       "Determineertabel",
+       "Mutatie",
+       "Hormoon"
+      ],
+      "c": 2,
+      "u": "Mutatie: een verandering in het DNA."
+     },
+     {
+      "v": "Wat betekent «Dominant allel»?",
+      "o": [
+       "hormoon dat de bloedglucose verlaagt",
+       "allel dat het fenotype bepaalt, ook heterozygoot",
+       "organel dat het DNA bevat en de cel aanstuurt",
+       "organisme dat dood materiaal afbreekt (bacteriën, schimmels)"
+      ],
+      "c": 1,
+      "u": "Dominant allel: allel dat het fenotype bepaalt, ook heterozygoot."
+     },
+     {
+      "v": "Welk begrip hoort bij: \"allel dat alleen homozygoot tot uiting komt\"?",
+      "o": [
+       "Antilichaam",
+       "Abiotische factor",
+       "Vaccinatie",
+       "Recessief allel"
+      ],
+      "c": 3,
+      "u": "Recessief allel: allel dat alleen homozygoot tot uiting komt."
      }
     ],
     "oe": [
@@ -3531,6 +3807,64 @@ var VAKKEN = [
       ],
       "c": 0,
       "u": "(a) Gids-RNA leidt het Cas9-enzym naar de juiste DNA-plek. Cas9 knipt de dubbelstreng. Cel repareert de breuk, waarbij een gen uitgeschakeld of vervangen kan worden.\n(b) Toepassing: behandeling van erfelijke ziekten (sikkelcelziekte). Bezwaar: kiemlijnbewerking is onomkeerbaar en overdraagbaar op nakomelingen."
+     }
+    ],
+    "begrippen": [
+     {
+      "t": "Cel",
+      "d": "de kleinste eenheid van leven"
+     },
+     {
+      "t": "Celmembraan",
+      "d": "de selectief doorlaatbare grens van een cel"
+     },
+     {
+      "t": "Celkern",
+      "d": "organel dat het DNA bevat en de cel aanstuurt"
+     },
+     {
+      "t": "Mitochondrion",
+      "d": "energiecentrale die aerobe celademhaling uitvoert (ATP)"
+     },
+     {
+      "t": "Chloroplast",
+      "d": "organel waarin fotosynthese plaatsvindt"
+     },
+     {
+      "t": "Enzym",
+      "d": "eiwit dat als biokatalysator een reactie versnelt"
+     },
+     {
+      "t": "Fotosynthese",
+      "d": "CO2 + water + licht worden glucose + zuurstof"
+     },
+     {
+      "t": "Celademhaling",
+      "d": "glucose + zuurstof worden CO2 + water + energie (ATP)"
+     },
+     {
+      "t": "DNA",
+      "d": "molecuul met de erfelijke informatie in genen"
+     },
+     {
+      "t": "Mitose",
+      "d": "gewone celdeling met twee identieke dochtercellen"
+     },
+     {
+      "t": "Meiose",
+      "d": "reductiedeling die geslachtscellen vormt (halve chromosoomaantal)"
+     },
+     {
+      "t": "Mutatie",
+      "d": "een verandering in het DNA"
+     },
+     {
+      "t": "Dominant allel",
+      "d": "allel dat het fenotype bepaalt, ook heterozygoot"
+     },
+     {
+      "t": "Recessief allel",
+      "d": "allel dat alleen homozygoot tot uiting komt"
      }
     ]
    },
@@ -3723,6 +4057,127 @@ var VAKKEN = [
       ],
       "c": 0,
       "u": "Cytotoxische T-cellen (ook wel killer T-cellen) herkennen geïnfecteerde cellen via hun MHC-I presentatie en vernietigen ze. Helper T-cellen activeren B-cellen en cytotoxische T-cellen."
+     },
+     {
+      "v": "Wat betekent «Homeostase»?",
+      "o": [
+       "organisme dat andere organismen eet",
+       "mate waarin je meet wat je wilt meten",
+       "het constant houden van het interne milieu",
+       "een lichaamsvreemde stof die een afweerreactie opwekt"
+      ],
+      "c": 2,
+      "u": "Homeostase: het constant houden van het interne milieu."
+     },
+     {
+      "v": "Welk begrip hoort bij: \"een chemische boodschapper die via het bloed werkt\"?",
+      "o": [
+       "Celmembraan",
+       "Specifieke afweer",
+       "Natuurlijke selectie",
+       "Hormoon"
+      ],
+      "c": 3,
+      "u": "Hormoon: een chemische boodschapper die via het bloed werkt."
+     },
+     {
+      "v": "Wat betekent «Insuline»?",
+      "o": [
+       "een chemische boodschapper die via het bloed werkt",
+       "een zenuwcel die impulsen geleidt",
+       "algemene eerste verdediging (huid, fagocyten)",
+       "hormoon dat de bloedglucose verlaagt"
+      ],
+      "c": 3,
+      "u": "Insuline: hormoon dat de bloedglucose verlaagt."
+     },
+     {
+      "v": "Welk begrip hoort bij: \"een zenuwcel die impulsen geleidt\"?",
+      "o": [
+       "Voedselketen",
+       "Determineertabel",
+       "Mitose",
+       "Neuron"
+      ],
+      "c": 3,
+      "u": "Neuron: een zenuwcel die impulsen geleidt."
+     },
+     {
+      "v": "Wat betekent «Synaps»?",
+      "o": [
+       "de verbinding tussen twee neuronen met neurotransmitters",
+       "gebruik zonder uitputting voor latere generaties",
+       "een toetsbare voorspelling van een verwacht verband",
+       "CO2 + water + licht worden glucose + zuurstof"
+      ],
+      "c": 0,
+      "u": "Synaps: de verbinding tussen twee neuronen met neurotransmitters."
+     },
+     {
+      "v": "Welk begrip hoort bij: \"een lichaamsvreemde stof die een afweerreactie opwekt\"?",
+      "o": [
+       "Celmembraan",
+       "Antigeen",
+       "Voedselketen",
+       "Celkern"
+      ],
+      "c": 1,
+      "u": "Antigeen: een lichaamsvreemde stof die een afweerreactie opwekt."
+     },
+     {
+      "v": "Wat betekent «Antilichaam»?",
+      "o": [
+       "mate waarin je meet wat je wilt meten",
+       "het constant houden van het interne milieu",
+       "molecuul met de erfelijke informatie in genen",
+       "eiwit dat specifiek aan een antigeen bindt"
+      ],
+      "c": 3,
+      "u": "Antilichaam: eiwit dat specifiek aan een antigeen bindt."
+     },
+     {
+      "v": "Welk begrip hoort bij: \"gerichte afweer door lymfocyten, met geheugen\"?",
+      "o": [
+       "Specifieke afweer",
+       "Antilichaam",
+       "Fotosynthese",
+       "Natuurlijke selectie"
+      ],
+      "c": 0,
+      "u": "Specifieke afweer: gerichte afweer door lymfocyten, met geheugen."
+     },
+     {
+      "v": "Wat betekent «Aspecifieke afweer»?",
+      "o": [
+       "allel dat het fenotype bepaalt, ook heterozygoot",
+       "hormoon dat de bloedglucose verlaagt",
+       "organel dat het DNA bevat en de cel aanstuurt",
+       "algemene eerste verdediging (huid, fagocyten)"
+      ],
+      "c": 3,
+      "u": "Aspecifieke afweer: algemene eerste verdediging (huid, fagocyten)."
+     },
+     {
+      "v": "Welk begrip hoort bij: \"inbrengen van onschadelijk antigeen om geheugen op te bouwen\"?",
+      "o": [
+       "Vaccinatie",
+       "Insuline",
+       "Onafhankelijke variabele",
+       "Neuron"
+      ],
+      "c": 0,
+      "u": "Vaccinatie: inbrengen van onschadelijk antigeen om geheugen op te bouwen."
+     },
+     {
+      "v": "Wat betekent «Antagonisme»?",
+      "o": [
+       "een dun plakje materiaal voor onder de microscoop",
+       "mate waarin je meet wat je wilt meten",
+       "algemene eerste verdediging (huid, fagocyten)",
+       "twee hormonen of spieren met een tegengesteld effect"
+      ],
+      "c": 3,
+      "u": "Antagonisme: twee hormonen of spieren met een tegengesteld effect."
      }
     ],
     "oe": [
@@ -3785,6 +4240,52 @@ var VAKKEN = [
       ],
       "c": 0,
       "u": "(a) Aspecifiek: huid, fagocytose door macrofagen. Specifiek: antilichamen door B-lymfocyten.\n(b) Aspecifiek reageert direct. Specifiek duurt 5-14 dagen de eerste keer (lymfocyten moeten klonaal uitbreiden). Bij tweede contact reageert specifieke afweer snel via geheugencel."
+     }
+    ],
+    "begrippen": [
+     {
+      "t": "Homeostase",
+      "d": "het constant houden van het interne milieu"
+     },
+     {
+      "t": "Hormoon",
+      "d": "een chemische boodschapper die via het bloed werkt"
+     },
+     {
+      "t": "Insuline",
+      "d": "hormoon dat de bloedglucose verlaagt"
+     },
+     {
+      "t": "Neuron",
+      "d": "een zenuwcel die impulsen geleidt"
+     },
+     {
+      "t": "Synaps",
+      "d": "de verbinding tussen twee neuronen met neurotransmitters"
+     },
+     {
+      "t": "Antigeen",
+      "d": "een lichaamsvreemde stof die een afweerreactie opwekt"
+     },
+     {
+      "t": "Antilichaam",
+      "d": "eiwit dat specifiek aan een antigeen bindt"
+     },
+     {
+      "t": "Specifieke afweer",
+      "d": "gerichte afweer door lymfocyten, met geheugen"
+     },
+     {
+      "t": "Aspecifieke afweer",
+      "d": "algemene eerste verdediging (huid, fagocyten)"
+     },
+     {
+      "t": "Vaccinatie",
+      "d": "inbrengen van onschadelijk antigeen om geheugen op te bouwen"
+     },
+     {
+      "t": "Antagonisme",
+      "d": "twee hormonen of spieren met een tegengesteld effect"
      }
     ]
    },
@@ -3976,6 +4477,138 @@ var VAKKEN = [
       ],
       "c": 2,
       "u": "Hardy-Weinberg vereist: grote populatie, willekeurige paring, geen selectie, geen mutatie, geen migratie. Generatietijd is geen voorwaarde. In de praktijk zijn deze condities zelden tegelijk vervuld."
+     },
+     {
+      "v": "Wat betekent «Populatie»?",
+      "o": [
+       "twee hormonen of spieren met een tegengesteld effect",
+       "CO2 + water + licht worden glucose + zuurstof",
+       "alle individuen van één soort in een gebied",
+       "gewone celdeling met twee identieke dochtercellen"
+      ],
+      "c": 2,
+      "u": "Populatie: alle individuen van één soort in een gebied."
+     },
+     {
+      "v": "Welk begrip hoort bij: \"een levensgemeenschap plus de abiotische omgeving\"?",
+      "o": [
+       "Natuurlijke selectie",
+       "Vaccinatie",
+       "Celademhaling",
+       "Ecosysteem"
+      ],
+      "c": 3,
+      "u": "Ecosysteem: een levensgemeenschap plus de abiotische omgeving."
+     },
+     {
+      "v": "Wat betekent «Biotische factor»?",
+      "o": [
+       "een invloed van levende organismen",
+       "twee hormonen of spieren met een tegengesteld effect",
+       "een dun plakje materiaal voor onder de microscoop",
+       "mate waarin je meet wat je wilt meten"
+      ],
+      "c": 0,
+      "u": "Biotische factor: een invloed van levende organismen."
+     },
+     {
+      "v": "Welk begrip hoort bij: \"een niet-levende invloed (licht, temperatuur, water)\"?",
+      "o": [
+       "Biotische factor",
+       "Mitochondrion",
+       "Abiotische factor",
+       "Insuline"
+      ],
+      "c": 2,
+      "u": "Abiotische factor: een niet-levende invloed (licht, temperatuur, water)."
+     },
+     {
+      "v": "Wat betekent «Voedselketen»?",
+      "o": [
+       "gerichte afweer door lymfocyten, met geheugen",
+       "een toetsbare voorspelling van een verwacht verband",
+       "de selectief doorlaatbare grens van een cel",
+       "een reeks van eten en gegeten worden"
+      ],
+      "c": 3,
+      "u": "Voedselketen: een reeks van eten en gegeten worden."
+     },
+     {
+      "v": "Welk begrip hoort bij: \"organisme dat zelf organische stof maakt (planten)\"?",
+      "o": [
+       "Celmembraan",
+       "Producent",
+       "Afhankelijke variabele",
+       "Determineertabel"
+      ],
+      "c": 1,
+      "u": "Producent: organisme dat zelf organische stof maakt (planten)."
+     },
+     {
+      "v": "Wat betekent «Consument»?",
+      "o": [
+       "de verbinding tussen twee neuronen met neurotransmitters",
+       "organisme dat andere organismen eet",
+       "allel dat alleen homozygoot tot uiting komt",
+       "inbrengen van onschadelijk antigeen om geheugen op te bouwen"
+      ],
+      "c": 1,
+      "u": "Consument: organisme dat andere organismen eet."
+     },
+     {
+      "v": "Welk begrip hoort bij: \"organisme dat dood materiaal afbreekt (bacteriën, schimmels)\"?",
+      "o": [
+       "Cel",
+       "Specifieke afweer",
+       "Ecosysteem",
+       "Reducent"
+      ],
+      "c": 3,
+      "u": "Reducent: organisme dat dood materiaal afbreekt (bacteriën, schimmels)."
+     },
+     {
+      "v": "Wat betekent «Draagkracht»?",
+      "o": [
+       "de factor die je meet als gevolg",
+       "energiecentrale die aerobe celademhaling uitvoert (ATP)",
+       "de maximale populatiegrootte die een gebied aankan",
+       "een chemische boodschapper die via het bloed werkt"
+      ],
+      "c": 2,
+      "u": "Draagkracht: de maximale populatiegrootte die een gebied aankan."
+     },
+     {
+      "v": "Welk begrip hoort bij: \"best aangepaste individuen planten zich meer voort\"?",
+      "o": [
+       "Enzym",
+       "Homeostase",
+       "Natuurlijke selectie",
+       "Biotische factor"
+      ],
+      "c": 2,
+      "u": "Natuurlijke selectie: best aangepaste individuen planten zich meer voort."
+     },
+     {
+      "v": "Wat betekent «Biodiversiteit»?",
+      "o": [
+       "een toetsbare voorspelling van een verwacht verband",
+       "de verscheidenheid aan soorten en genen",
+       "organisme dat andere organismen eet",
+       "mate waarin je meet wat je wilt meten"
+      ],
+      "c": 1,
+      "u": "Biodiversiteit: de verscheidenheid aan soorten en genen."
+     },
+     {
+      "v": "Welk begrip hoort bij: \"gebruik zonder uitputting voor latere generaties\"?",
+      "o": [
+       "Natuurlijke selectie",
+       "Biodiversiteit",
+       "Aspecifieke afweer",
+       "Duurzaamheid"
+      ],
+      "c": 3,
+      "u": "Duurzaamheid: gebruik zonder uitputting voor latere generaties."
      }
     ],
     "oe": [
@@ -4048,6 +4681,56 @@ var VAKKEN = [
       ],
       "c": 0,
       "u": "(a) Soortendiversiteit: aantal verschillende soorten in een gebied. Genetische diversiteit: variatie in genen binnen een soort.\n(b) (1) Ecosysteemdiensten: bestuiving, waterfiltratie, koolstofopslag. (2) Medisch: veel medicijnen afgeleid van planten/dieren."
+     }
+    ],
+    "begrippen": [
+     {
+      "t": "Populatie",
+      "d": "alle individuen van één soort in een gebied"
+     },
+     {
+      "t": "Ecosysteem",
+      "d": "een levensgemeenschap plus de abiotische omgeving"
+     },
+     {
+      "t": "Biotische factor",
+      "d": "een invloed van levende organismen"
+     },
+     {
+      "t": "Abiotische factor",
+      "d": "een niet-levende invloed (licht, temperatuur, water)"
+     },
+     {
+      "t": "Voedselketen",
+      "d": "een reeks van eten en gegeten worden"
+     },
+     {
+      "t": "Producent",
+      "d": "organisme dat zelf organische stof maakt (planten)"
+     },
+     {
+      "t": "Consument",
+      "d": "organisme dat andere organismen eet"
+     },
+     {
+      "t": "Reducent",
+      "d": "organisme dat dood materiaal afbreekt (bacteriën, schimmels)"
+     },
+     {
+      "t": "Draagkracht",
+      "d": "de maximale populatiegrootte die een gebied aankan"
+     },
+     {
+      "t": "Natuurlijke selectie",
+      "d": "best aangepaste individuen planten zich meer voort"
+     },
+     {
+      "t": "Biodiversiteit",
+      "d": "de verscheidenheid aan soorten en genen"
+     },
+     {
+      "t": "Duurzaamheid",
+      "d": "gebruik zonder uitputting voor latere generaties"
      }
     ]
    }
