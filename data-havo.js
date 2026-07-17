@@ -11390,6 +11390,90 @@ var VAKKEN = [
       ],
       "c": 0,
       "u": "Chronologie is het ordenen van gebeurtenissen in de volgorde waarin ze plaatsvonden."
+     },
+     {
+      "v": "Wat betekent «Primaire bron»?",
+      "o": [
+       "een bron die later is gemaakt op basis van primaire bronnen",
+       "een bron die uit de tijd zelf stamt",
+       "de directe, kortetermijnvonk van een gebeurtenis",
+       "stemrecht voor alle volwassenen"
+      ],
+      "c": 1,
+      "u": "«Primaire bron» betekent: een bron die uit de tijd zelf stamt. Anders dan een secundaire bron: een primaire bron stamt uit de tijd zelf.",
+      "d": 1
+     },
+     {
+      "v": "Welk begrip hoort bij deze omschrijving: \"een bron die later is gemaakt op basis van primaire bronnen\"?",
+      "o": [
+       "Secundaire bron",
+       "Censuskiesrecht",
+       "Interbellum",
+       "Continuïteit"
+      ],
+      "c": 0,
+      "u": "Het juiste begrip is «Secundaire bron»: een bron die later is gemaakt op basis van primaire bronnen. Anders dan een primaire bron: een secundaire bron is later gemaakt over die tijd.",
+      "d": 2
+     },
+     {
+      "v": "Welk begrip hoort bij deze omschrijving: \"het beoordelen van de betrouwbaarheid en representativiteit van een bron\"?",
+      "o": [
+       "Primaire bron",
+       "Standplaatsgebondenheid",
+       "Bronkritiek",
+       "Anachronisme"
+      ],
+      "c": 2,
+      "u": "Het juiste begrip is «Bronkritiek»: het beoordelen van de betrouwbaarheid en representativiteit van een bron.",
+      "d": 3
+     },
+     {
+      "v": "Wat betekent «Anachronisme»?",
+      "o": [
+       "het verleden beoordelen met de normen en kennis van nu",
+       "dat wat door de tijd heen gelijk blijft",
+       "een staat die alle terreinen van het leven wil beheersen",
+       "informatie beoordelen op betrouwbaarheid en herkomst"
+      ],
+      "c": 0,
+      "u": "«Anachronisme» betekent: het verleden beoordelen met de normen en kennis van nu.",
+      "d": 1
+     },
+     {
+      "v": "Welk begrip hoort bij deze omschrijving: \"dat wat door de tijd heen gelijk blijft\"?",
+      "o": [
+       "Continuïteit",
+       "Anachronisme",
+       "Dekolonisatie",
+       "Interbellum"
+      ],
+      "c": 0,
+      "u": "Het juiste begrip is «Continuïteit»: dat wat door de tijd heen gelijk blijft.",
+      "d": 2
+     },
+     {
+      "v": "Welk begrip hoort bij deze omschrijving: \"de directe, kortetermijnvonk van een gebeurtenis\"?",
+      "o": [
+       "Anachronisme",
+       "Standplaatsgebondenheid",
+       "Aanleiding",
+       "Primaire bron"
+      ],
+      "c": 2,
+      "u": "Het juiste begrip is «Aanleiding»: de directe, kortetermijnvonk van een gebeurtenis.",
+      "d": 3
+     },
+     {
+      "v": "Wat betekent «Standplaatsgebondenheid»?",
+      "o": [
+       "de positie en tijd van de historicus kleuren zijn oordeel",
+       "een nationalistische, autoritaire ideologie",
+       "een gebeurtenis vanuit meerdere gezichtspunten bekijken",
+       "stemrecht voor alle volwassenen"
+      ],
+      "c": 0,
+      "u": "«Standplaatsgebondenheid» betekent: de positie en tijd van de historicus kleuren zijn oordeel.",
+      "d": 1
      }
     ],
     "oe": [
@@ -11512,6 +11596,36 @@ var VAKKEN = [
       ],
       "c": 0,
       "u": "(a) Vlak na WO2 (1939-1945): Europa verwoest, miljoenen doden. Churchill wilde herhaling voorkomen door samenwerking.\n(b) Deels gerealiseerd: de EU met gemeenschappelijke markt, euro, Europees parlement. Maar geen volledige politieke unie; lidstaten behielden soevereiniteit."
+     }
+    ],
+    "begrippen": [
+     {
+      "t": "Primaire bron",
+      "d": "een bron die uit de tijd zelf stamt"
+     },
+     {
+      "t": "Secundaire bron",
+      "d": "een bron die later is gemaakt op basis van primaire bronnen"
+     },
+     {
+      "t": "Bronkritiek",
+      "d": "het beoordelen van de betrouwbaarheid en representativiteit van een bron"
+     },
+     {
+      "t": "Anachronisme",
+      "d": "het verleden beoordelen met de normen en kennis van nu"
+     },
+     {
+      "t": "Continuïteit",
+      "d": "dat wat door de tijd heen gelijk blijft"
+     },
+     {
+      "t": "Aanleiding",
+      "d": "de directe, kortetermijnvonk van een gebeurtenis"
+     },
+     {
+      "t": "Standplaatsgebondenheid",
+      "d": "de positie en tijd van de historicus kleuren zijn oordeel"
      }
     ]
    },
@@ -11902,6 +12016,114 @@ var VAKKEN = [
       ],
       "c": 0,
       "u": "In het poldermodel zoeken overheid en sociale partners samen naar compromissen, bijvoorbeeld over bezuinigingen en lonen."
+     },
+     {
+      "v": "Wat betekent «Totalitair regime»?",
+      "o": [
+       "de positie en tijd van de historicus kleuren zijn oordeel",
+       "een staat die alle terreinen van het leven wil beheersen",
+       "informatie beoordelen op betrouwbaarheid en herkomst",
+       "de scheiding van de wetgevende, uitvoerende en rechterlijke macht"
+      ],
+      "c": 1,
+      "u": "«Totalitair regime» betekent: een staat die alle terreinen van het leven wil beheersen.",
+      "d": 1
+     },
+     {
+      "v": "Welk begrip hoort bij deze omschrijving: \"een nationalistische, autoritaire ideologie\"?",
+      "o": [
+       "Fascisme",
+       "Multiperspectiviteit",
+       "Censuskiesrecht",
+       "Standplaatsgebondenheid"
+      ],
+      "c": 0,
+      "u": "Het juiste begrip is «Fascisme»: een nationalistische, autoritaire ideologie.",
+      "d": 2
+     },
+     {
+      "v": "Welk begrip hoort bij deze omschrijving: \"een racistische, totalitaire ideologie\"?",
+      "o": [
+       "Nazisme",
+       "Interbellum",
+       "Holocaust",
+       "Totalitair regime"
+      ],
+      "c": 0,
+      "u": "Het juiste begrip is «Nazisme»: een racistische, totalitaire ideologie.",
+      "d": 3
+     },
+     {
+      "v": "Wat betekent «Communisme»?",
+      "o": [
+       "het verleden beoordelen met de normen en kennis van nu",
+       "een ideologie van gemeenschappelijk bezit",
+       "een bron die later is gemaakt op basis van primaire bronnen",
+       "het dulden van andere godsdiensten of opvattingen"
+      ],
+      "c": 1,
+      "u": "«Communisme» betekent: een ideologie van gemeenschappelijk bezit.",
+      "d": 1
+     },
+     {
+      "v": "Welk begrip hoort bij deze omschrijving: \"het proces waarbij koloniën onafhankelijk worden\"?",
+      "o": [
+       "Holocaust",
+       "Tolerantie",
+       "VOC",
+       "Dekolonisatie"
+      ],
+      "c": 3,
+      "u": "Het juiste begrip is «Dekolonisatie»: het proces waarbij koloniën onafhankelijk worden.",
+      "d": 2
+     },
+     {
+      "v": "Welk begrip hoort bij deze omschrijving: \"de machtsstrijd tussen de VS en de Sovjet-Unie\"?",
+      "o": [
+       "Fascisme",
+       "Nazisme",
+       "Koude Oorlog",
+       "Interbellum"
+      ],
+      "c": 2,
+      "u": "Het juiste begrip is «Koude Oorlog»: de machtsstrijd tussen de VS en de Sovjet-Unie.",
+      "d": 3
+     },
+     {
+      "v": "Wat betekent «Holocaust»?",
+      "o": [
+       "een bron die uit de tijd zelf stamt",
+       "het beoordelen van de betrouwbaarheid en representativiteit van een bron",
+       "informatie beoordelen op betrouwbaarheid en herkomst",
+       "de systematische massamoord op de Joden"
+      ],
+      "c": 3,
+      "u": "«Holocaust» betekent: de systematische massamoord op de Joden.",
+      "d": 1
+     },
+     {
+      "v": "Welk begrip hoort bij deze omschrijving: \"de periode tussen de twee wereldoorlogen\"?",
+      "o": [
+       "Nazisme",
+       "Interbellum",
+       "Ministeriële verantwoordelijkheid",
+       "Transferabele vaardigheid"
+      ],
+      "c": 1,
+      "u": "Het juiste begrip is «Interbellum»: de periode tussen de twee wereldoorlogen.",
+      "d": 2
+     },
+     {
+      "v": "Welk begrip hoort bij deze omschrijving: \"het streven naar koloniale overheersing\"?",
+      "o": [
+       "Interbellum",
+       "Holocaust",
+       "Communisme",
+       "Imperialisme"
+      ],
+      "c": 3,
+      "u": "Het juiste begrip is «Imperialisme»: het streven naar koloniale overheersing.",
+      "d": 3
      }
     ],
     "oe": [
@@ -12195,6 +12417,44 @@ var VAKKEN = [
       "c": 0,
       "u": "B) Op 3 oktober 1990 werd Duitsland herenigd."
      }
+    ],
+    "begrippen": [
+     {
+      "t": "Totalitair regime",
+      "d": "een staat die alle terreinen van het leven wil beheersen"
+     },
+     {
+      "t": "Fascisme",
+      "d": "een nationalistische, autoritaire ideologie"
+     },
+     {
+      "t": "Nazisme",
+      "d": "een racistische, totalitaire ideologie"
+     },
+     {
+      "t": "Communisme",
+      "d": "een ideologie van gemeenschappelijk bezit"
+     },
+     {
+      "t": "Dekolonisatie",
+      "d": "het proces waarbij koloniën onafhankelijk worden"
+     },
+     {
+      "t": "Koude Oorlog",
+      "d": "de machtsstrijd tussen de VS en de Sovjet-Unie"
+     },
+     {
+      "t": "Holocaust",
+      "d": "de systematische massamoord op de Joden"
+     },
+     {
+      "t": "Interbellum",
+      "d": "de periode tussen de twee wereldoorlogen"
+     },
+     {
+      "t": "Imperialisme",
+      "d": "het streven naar koloniale overheersing"
+     }
     ]
    },
    {
@@ -12299,6 +12559,66 @@ var VAKKEN = [
       ],
       "c": 0,
       "u": "Thematisch: je volgt één thema (bijv. mensenrechten) van Griekenland tot nu. Je ziet hoe het idee groeide, stagneerde, werd misbruikt en hersteld. Dit oefent historisch redeneren beter dan losse feitenkennis per tijdvak."
+     },
+     {
+      "v": "Wat betekent «Republiek»?",
+      "o": [
+       "een staatsvorm zonder monarch",
+       "de scheiding van de wetgevende, uitvoerende en rechterlijke macht",
+       "de bestuurlijke elite van de steden",
+       "informatie beoordelen op betrouwbaarheid en herkomst"
+      ],
+      "c": 0,
+      "u": "«Republiek» betekent: een staatsvorm zonder monarch.",
+      "d": 1
+     },
+     {
+      "v": "Welk begrip hoort bij deze omschrijving: \"de handelscompagnie met een monopolie op de handel met Azië\"?",
+      "o": [
+       "Grondrecht",
+       "VOC",
+       "Anachronisme",
+       "Standplaatsgebondenheid"
+      ],
+      "c": 1,
+      "u": "Het juiste begrip is «VOC»: de handelscompagnie met een monopolie op de handel met Azië.",
+      "d": 2
+     },
+     {
+      "v": "Welk begrip hoort bij deze omschrijving: \"de bestuurlijke elite van de steden\"?",
+      "o": [
+       "Tolerantie",
+       "Regenten",
+       "VOC",
+       "Stadhouder"
+      ],
+      "c": 1,
+      "u": "Het juiste begrip is «Regenten»: de bestuurlijke elite van de steden.",
+      "d": 3
+     },
+     {
+      "v": "Wat betekent «Stadhouder»?",
+      "o": [
+       "informatie beoordelen op betrouwbaarheid en herkomst",
+       "het streven naar koloniale overheersing",
+       "de militaire en bestuurlijke leider in de Republiek",
+       "stemrecht voor alle volwassenen"
+      ],
+      "c": 2,
+      "u": "«Stadhouder» betekent: de militaire en bestuurlijke leider in de Republiek.",
+      "d": 1
+     },
+     {
+      "v": "Welk begrip hoort bij deze omschrijving: \"het dulden van andere godsdiensten of opvattingen\"?",
+      "o": [
+       "Secundaire bron",
+       "Primaire bron",
+       "Tolerantie",
+       "Standplaatsgebondenheid"
+      ],
+      "c": 2,
+      "u": "Het juiste begrip is «Tolerantie»: het dulden van andere godsdiensten of opvattingen.",
+      "d": 2
      }
     ],
     "oe": [
@@ -12331,6 +12651,28 @@ var VAKKEN = [
       ],
       "c": 0,
       "u": "Goede aanpak: (1) Lees het PTA voor de specifieke thema's en beoordelingscriteria. (2) Maak een overzicht van de kenmerkende aspecten per tijdvak. (3) Oefen met CE-stijl vragen: bronvragen, vergelijkingsvragen. (4) Gebruik de samenvatting van dit domein en aanvullend lesmateriaal."
+     }
+    ],
+    "begrippen": [
+     {
+      "t": "Republiek",
+      "d": "een staatsvorm zonder monarch"
+     },
+     {
+      "t": "VOC",
+      "d": "de handelscompagnie met een monopolie op de handel met Azië"
+     },
+     {
+      "t": "Regenten",
+      "d": "de bestuurlijke elite van de steden"
+     },
+     {
+      "t": "Stadhouder",
+      "d": "de militaire en bestuurlijke leider in de Republiek"
+     },
+     {
+      "t": "Tolerantie",
+      "d": "het dulden van andere godsdiensten of opvattingen"
      }
     ]
    },
@@ -12438,6 +12780,78 @@ var VAKKEN = [
       ],
       "c": 0,
       "u": "Rechtsgelijkheid: iedereen heeft recht op gelijke behandeling door de wet. Geen uitzonderingen op basis van status, rijkdom of connecties. Aantasting hiervan ondermijnt de rechtsstaat direct."
+     },
+     {
+      "v": "Wat betekent «Rechtsstaat»?",
+      "o": [
+       "de positie en tijd van de historicus kleuren zijn oordeel",
+       "een gebeurtenis vanuit meerdere gezichtspunten bekijken",
+       "een staat waarin de macht aan wetten is gebonden",
+       "een vaardigheid die je breed kunt inzetten"
+      ],
+      "c": 2,
+      "u": "«Rechtsstaat» betekent: een staat waarin de macht aan wetten is gebonden.",
+      "d": 1
+     },
+     {
+      "v": "Welk begrip hoort bij deze omschrijving: \"de scheiding van de wetgevende, uitvoerende en rechterlijke macht\"?",
+      "o": [
+       "Aanleiding",
+       "Censuskiesrecht",
+       "Rechtsstaat",
+       "Trias politica"
+      ],
+      "c": 3,
+      "u": "Het juiste begrip is «Trias politica»: de scheiding van de wetgevende, uitvoerende en rechterlijke macht.",
+      "d": 2
+     },
+     {
+      "v": "Welk begrip hoort bij deze omschrijving: \"een fundamentele vrijheid van burgers\"?",
+      "o": [
+       "Trias politica",
+       "Algemeen kiesrecht",
+       "Rechtsstaat",
+       "Grondrecht"
+      ],
+      "c": 3,
+      "u": "Het juiste begrip is «Grondrecht»: een fundamentele vrijheid van burgers.",
+      "d": 3
+     },
+     {
+      "v": "Wat betekent «Censuskiesrecht»?",
+      "o": [
+       "stemrecht op basis van betaalde belasting",
+       "de handelscompagnie met een monopolie op de handel met Azië",
+       "een staat die alle terreinen van het leven wil beheersen",
+       "een staat waarin de macht aan wetten is gebonden"
+      ],
+      "c": 0,
+      "u": "«Censuskiesrecht» betekent: stemrecht op basis van betaalde belasting.",
+      "d": 1
+     },
+     {
+      "v": "Welk begrip hoort bij deze omschrijving: \"stemrecht voor alle volwassenen\"?",
+      "o": [
+       "Anachronisme",
+       "Algemeen kiesrecht",
+       "Trias politica",
+       "Holocaust"
+      ],
+      "c": 1,
+      "u": "Het juiste begrip is «Algemeen kiesrecht»: stemrecht voor alle volwassenen.",
+      "d": 2
+     },
+     {
+      "v": "Welk begrip hoort bij deze omschrijving: \"ministers verantwoorden zich aan het parlement\"?",
+      "o": [
+       "Trias politica",
+       "Censuskiesrecht",
+       "Ministeriële verantwoordelijkheid",
+       "Grondrecht"
+      ],
+      "c": 2,
+      "u": "Het juiste begrip is «Ministeriële verantwoordelijkheid»: ministers verantwoorden zich aan het parlement.",
+      "d": 3
      }
     ],
     "oe": [
@@ -12470,6 +12884,32 @@ var VAKKEN = [
       ],
       "c": 0,
       "u": "(a) Legaliteitsbeginsel: de overheid mag alleen optreden als ze daarvoor een wettelijke grondslag heeft. Dit beschermt burgers tegen willekeur.\n(b) Vrijheid van meningsuiting mag worden beperkt bij aanzetten tot haat (wet). Demonstratierecht mag worden beperkt bij dreigend geweld."
+     }
+    ],
+    "begrippen": [
+     {
+      "t": "Rechtsstaat",
+      "d": "een staat waarin de macht aan wetten is gebonden"
+     },
+     {
+      "t": "Trias politica",
+      "d": "de scheiding van de wetgevende, uitvoerende en rechterlijke macht"
+     },
+     {
+      "t": "Grondrecht",
+      "d": "een fundamentele vrijheid van burgers"
+     },
+     {
+      "t": "Censuskiesrecht",
+      "d": "stemrecht op basis van betaalde belasting"
+     },
+     {
+      "t": "Algemeen kiesrecht",
+      "d": "stemrecht voor alle volwassenen"
+     },
+     {
+      "t": "Ministeriële verantwoordelijkheid",
+      "d": "ministers verantwoorden zich aan het parlement"
      }
     ]
    },
@@ -12553,6 +12993,42 @@ var VAKKEN = [
       ],
       "c": 0,
       "u": "Transferabele vaardigheden \"transfereren\" van het ene domein naar het andere. Bronkritiek, oorzaak-gevolg redeneren en standplaatsgebondenheid zijn nuttig voor journalist, advocaat, beleidsmedewerker, arts en manager. Niet vak-exclusief — dat maakt ze zo waardevol."
+     },
+     {
+      "v": "Wat betekent «Transferabele vaardigheid»?",
+      "o": [
+       "de systematische massamoord op de Joden",
+       "een bron die uit de tijd zelf stamt",
+       "een nationalistische, autoritaire ideologie",
+       "een vaardigheid die je breed kunt inzetten"
+      ],
+      "c": 3,
+      "u": "«Transferabele vaardigheid» betekent: een vaardigheid die je breed kunt inzetten.",
+      "d": 1
+     },
+     {
+      "v": "Welk begrip hoort bij deze omschrijving: \"informatie beoordelen op betrouwbaarheid en herkomst\"?",
+      "o": [
+       "Tolerantie",
+       "Bronkritiek",
+       "Imperialisme",
+       "Totalitair regime"
+      ],
+      "c": 1,
+      "u": "Het juiste begrip is «Bronkritiek»: informatie beoordelen op betrouwbaarheid en herkomst.",
+      "d": 2
+     },
+     {
+      "v": "Welk begrip hoort bij deze omschrijving: \"een gebeurtenis vanuit meerdere gezichtspunten bekijken\"?",
+      "o": [
+       "Multiperspectiviteit",
+       "Republiek",
+       "VOC",
+       "Dekolonisatie"
+      ],
+      "c": 0,
+      "u": "Het juiste begrip is «Multiperspectiviteit»: een gebeurtenis vanuit meerdere gezichtspunten bekijken.",
+      "d": 2
      }
     ],
     "oe": [
@@ -12585,6 +13061,20 @@ var VAKKEN = [
       ],
       "c": 0,
       "u": "(a) WO Geschiedenis, HBO Erfgoed & Cultuur, HBO Journalistiek, WO Politicologie, HBO Archivistiek.\n(b) Bronkritiek/standplaatsgebondenheid: in een informatiemaatschappij is kritisch beoordelen van bronnen en herkennen van bias waardevol in elke sector. Of: historisch redeneren (oorzaak-gevolg) is analytisch denken dat overal gevraagd wordt."
+     }
+    ],
+    "begrippen": [
+     {
+      "t": "Transferabele vaardigheid",
+      "d": "een vaardigheid die je breed kunt inzetten"
+     },
+     {
+      "t": "Bronkritiek",
+      "d": "informatie beoordelen op betrouwbaarheid en herkomst"
+     },
+     {
+      "t": "Multiperspectiviteit",
+      "d": "een gebeurtenis vanuit meerdere gezichtspunten bekijken"
      }
     ]
    }
@@ -12739,6 +13229,78 @@ var VAKKEN = [
       ],
       "c": 0,
       "u": "Geografische analyse: 1. Beschrijf het patroon. 2. Verklaar vanuit fysische en menselijke factoren. 3. Beoordeel samenhangen. 4. Gebruik meerdere bronnen."
+     },
+     {
+      "v": "Wat betekent «Thematische kaart»?",
+      "o": [
+       "een kaart die één onderwerp per gebied toont",
+       "de afstand gemeten in reistijd of kosten",
+       "de verhouding tussen de kaart en de werkelijkheid",
+       "de trek van het platteland naar de stad"
+      ],
+      "c": 0,
+      "u": "«Thematische kaart» betekent: een kaart die één onderwerp per gebied toont.",
+      "d": 1
+     },
+     {
+      "v": "Welk begrip hoort bij deze omschrijving: \"de verhouding tussen de kaart en de werkelijkheid\"?",
+      "o": [
+       "Monocultuur",
+       "Schaal",
+       "Adaptatie",
+       "Globalisering"
+      ],
+      "c": 1,
+      "u": "Het juiste begrip is «Schaal»: de verhouding tussen de kaart en de werkelijkheid.",
+      "d": 2
+     },
+     {
+      "v": "Welk begrip hoort bij deze omschrijving: \"het niveau lokaal, regionaal, nationaal of mondiaal\"?",
+      "o": [
+       "Ruimtelijk patroon",
+       "Schaalniveau",
+       "Absolute afstand",
+       "Relatieve afstand"
+      ],
+      "c": 1,
+      "u": "Het juiste begrip is «Schaalniveau»: het niveau lokaal, regionaal, nationaal of mondiaal.",
+      "d": 3
+     },
+     {
+      "v": "Wat betekent «Ruimtelijk patroon»?",
+      "o": [
+       "de afstand gemeten in kilometers",
+       "een niet-willekeurige verdeling over de ruimte",
+       "laaggelegen, door dijken omringd en drooggemalen land",
+       "de verhouding tussen de kaart en de werkelijkheid"
+      ],
+      "c": 1,
+      "u": "«Ruimtelijk patroon» betekent: een niet-willekeurige verdeling over de ruimte.",
+      "d": 1
+     },
+     {
+      "v": "Welk begrip hoort bij deze omschrijving: \"de afstand gemeten in kilometers\"?",
+      "o": [
+       "Urbanisatie",
+       "Absolute afstand",
+       "Platentektoniek",
+       "Schaalniveau"
+      ],
+      "c": 1,
+      "u": "Het juiste begrip is «Absolute afstand»: de afstand gemeten in kilometers.",
+      "d": 2
+     },
+     {
+      "v": "Welk begrip hoort bij deze omschrijving: \"de afstand gemeten in reistijd of kosten\"?",
+      "o": [
+       "Thematische kaart",
+       "Absolute afstand",
+       "Ruimtelijk patroon",
+       "Relatieve afstand"
+      ],
+      "c": 3,
+      "u": "Het juiste begrip is «Relatieve afstand»: de afstand gemeten in reistijd of kosten.",
+      "d": 3
      }
     ],
     "oe": [
@@ -12771,6 +13333,32 @@ var VAKKEN = [
       ],
       "c": 0,
       "u": "(a) Patroon: de bevolking is geconcentreerd in het westen (Randstad) en de steden; perifere gebieden (Zeeland, Drenthe, Friesland) zijn dunbevolkt. Fysisch-geografisch: het westen heeft vruchtbare, goed toegankelijke rivierdelta's; perifere gebieden hebben meer veen, zand of kwelders die minder aantrekkelijk zijn voor landbouw en bewoning. Sociaal-economisch: de Randstad herbergt de meeste arbeidsplaatsen, bedrijven en overheidsinstellingen; historische groei van handelssteden trekt verdere groei aan.\n(b) Bevolkingsdichtheid = aantal inwoners / oppervlakte = 580.000 / 2900 = 200 inwoners per km².\n(c) Sluiting van voorzieningen (scholen, ziekenhuizen, winkels) door gebrek aan draagvlak. Afname van het voorzieningenniveau leidt tot verdere bevolkingsdaling (krimp), wat de leefbaarheid verder verslechtert."
+     }
+    ],
+    "begrippen": [
+     {
+      "t": "Thematische kaart",
+      "d": "een kaart die één onderwerp per gebied toont"
+     },
+     {
+      "t": "Schaal",
+      "d": "de verhouding tussen de kaart en de werkelijkheid"
+     },
+     {
+      "t": "Schaalniveau",
+      "d": "het niveau lokaal, regionaal, nationaal of mondiaal"
+     },
+     {
+      "t": "Ruimtelijk patroon",
+      "d": "een niet-willekeurige verdeling over de ruimte"
+     },
+     {
+      "t": "Absolute afstand",
+      "d": "de afstand gemeten in kilometers"
+     },
+     {
+      "t": "Relatieve afstand",
+      "d": "de afstand gemeten in reistijd of kosten"
      }
     ]
    },
@@ -12943,6 +13531,90 @@ var VAKKEN = [
       ],
       "c": 3,
       "u": "De HDI combineert inkomen, levensverwachting en opleiding tot één cijfer (0–1) en geeft daarom een completer beeld van ontwikkeling dan alleen het bbp, dat puur economisch is."
+     },
+     {
+      "v": "Wat betekent «Globalisering»?",
+      "o": [
+       "het aantal inwoners per vierkante kilometer",
+       "een economisch afhankelijke randregio",
+       "het vasthouden van warmte door broeikasgassen",
+       "de toenemende wereldwijde verwevenheid"
+      ],
+      "c": 3,
+      "u": "«Globalisering» betekent: de toenemende wereldwijde verwevenheid.",
+      "d": 1
+     },
+     {
+      "v": "Welk begrip hoort bij deze omschrijving: \"de overgang van hoge naar lage geboorte- en sterftecijfers\"?",
+      "o": [
+       "Adaptatie",
+       "Mitigatie",
+       "Schaalniveau",
+       "Demografische transitie"
+      ],
+      "c": 3,
+      "u": "Het juiste begrip is «Demografische transitie»: de overgang van hoge naar lage geboorte- en sterftecijfers.",
+      "d": 2
+     },
+     {
+      "v": "Welk begrip hoort bij deze omschrijving: \"een reden om ergens weg te trekken\"?",
+      "o": [
+       "Periferie",
+       "Demografische transitie",
+       "Centrum",
+       "Pushfactor"
+      ],
+      "c": 3,
+      "u": "Het juiste begrip is «Pushfactor»: een reden om ergens weg te trekken. Tegenover een pullfactor: push duwt weg uit het herkomstgebied, pull trekt aan.",
+      "d": 3
+     },
+     {
+      "v": "Wat betekent «Pullfactor»?",
+      "o": [
+       "een reden om ergens weg te trekken",
+       "de trek van het platteland naar de stad",
+       "een reden om ergens naartoe te trekken",
+       "het onder een andere plaat schuiven van een plaat"
+      ],
+      "c": 2,
+      "u": "«Pullfactor» betekent: een reden om ergens naartoe te trekken. Tegenover een pushfactor: pull trekt aan naar een gebied, push duwt weg.",
+      "d": 1
+     },
+     {
+      "v": "Welk begrip hoort bij deze omschrijving: \"een maat voor ontwikkeling: welvaart, levensverwachting en onderwijs\"?",
+      "o": [
+       "Schaal",
+       "Periferie",
+       "HDI",
+       "Platentektoniek"
+      ],
+      "c": 2,
+      "u": "Het juiste begrip is «HDI»: een maat voor ontwikkeling: welvaart, levensverwachting en onderwijs.",
+      "d": 2
+     },
+     {
+      "v": "Welk begrip hoort bij deze omschrijving: \"een economisch dominante regio\"?",
+      "o": [
+       "Periferie",
+       "Demografische transitie",
+       "Centrum",
+       "Globalisering"
+      ],
+      "c": 2,
+      "u": "Het juiste begrip is «Centrum»: een economisch dominante regio.",
+      "d": 3
+     },
+     {
+      "v": "Wat betekent «Periferie»?",
+      "o": [
+       "het aanpassen aan de gevolgen van klimaatverandering",
+       "het beperken van de oorzaak van klimaatverandering",
+       "een economisch afhankelijke randregio",
+       "een economie die op één product leunt"
+      ],
+      "c": 2,
+      "u": "«Periferie» betekent: een economisch afhankelijke randregio.",
+      "d": 1
      }
     ],
     "oe": [
@@ -13015,6 +13687,36 @@ var VAKKEN = [
       ],
       "c": 0,
       "u": "Vrijhandel: (1) Lagere prijzen door specialisatie en comparatieve voordelen. (2) Meer keuze voor consumenten.\nProtectionisme: (1) Bescherming van jonge industrieen. (2) Voorkomen van oneerlijke concurrentie (dumpingprijzen)."
+     }
+    ],
+    "begrippen": [
+     {
+      "t": "Globalisering",
+      "d": "de toenemende wereldwijde verwevenheid"
+     },
+     {
+      "t": "Demografische transitie",
+      "d": "de overgang van hoge naar lage geboorte- en sterftecijfers"
+     },
+     {
+      "t": "Pushfactor",
+      "d": "een reden om ergens weg te trekken"
+     },
+     {
+      "t": "Pullfactor",
+      "d": "een reden om ergens naartoe te trekken"
+     },
+     {
+      "t": "HDI",
+      "d": "een maat voor ontwikkeling: welvaart, levensverwachting en onderwijs"
+     },
+     {
+      "t": "Centrum",
+      "d": "een economisch dominante regio"
+     },
+     {
+      "t": "Periferie",
+      "d": "een economisch afhankelijke randregio"
      }
     ]
    },
@@ -13154,6 +13856,78 @@ var VAKKEN = [
       ],
       "c": 0,
       "u": "Een moesson = seizoensgebonden windpatroon dat omslaat tussen zomer (vochtige wind van zee naar land) en winter (droge wind van land naar zee). Brengt in zomer enorme regenval (Azië, India)."
+     },
+     {
+      "v": "Wat betekent «Broeikaseffect»?",
+      "o": [
+       "laaggelegen, door dijken omringd en drooggemalen land",
+       "het aanpassen aan de gevolgen van klimaatverandering",
+       "het vasthouden van warmte door broeikasgassen",
+       "een maat voor ontwikkeling: welvaart, levensverwachting en onderwijs"
+      ],
+      "c": 2,
+      "u": "«Broeikaseffect» betekent: het vasthouden van warmte door broeikasgassen.",
+      "d": 1
+     },
+     {
+      "v": "Welk begrip hoort bij deze omschrijving: \"de beweging van de platen van de aardkorst\"?",
+      "o": [
+       "Ruimtelijk patroon",
+       "Thematische kaart",
+       "Relatieve afstand",
+       "Platentektoniek"
+      ],
+      "c": 3,
+      "u": "Het juiste begrip is «Platentektoniek»: de beweging van de platen van de aardkorst.",
+      "d": 2
+     },
+     {
+      "v": "Welk begrip hoort bij deze omschrijving: \"het onder een andere plaat schuiven van een plaat\"?",
+      "o": [
+       "Broeikaseffect",
+       "Platentektoniek",
+       "Subductie",
+       "Adaptatie"
+      ],
+      "c": 2,
+      "u": "Het juiste begrip is «Subductie»: het onder een andere plaat schuiven van een plaat.",
+      "d": 3
+     },
+     {
+      "v": "Wat betekent «Mitigatie»?",
+      "o": [
+       "het beperken van de oorzaak van klimaatverandering",
+       "een niet-willekeurige verdeling over de ruimte",
+       "de verdeling van de ruimte over functies",
+       "het onder een andere plaat schuiven van een plaat"
+      ],
+      "c": 0,
+      "u": "«Mitigatie» betekent: het beperken van de oorzaak van klimaatverandering. Tegenover adaptatie: mitigatie pakt de oorzaak aan, adaptatie de gevolgen.",
+      "d": 1
+     },
+     {
+      "v": "Welk begrip hoort bij deze omschrijving: \"het aanpassen aan de gevolgen van klimaatverandering\"?",
+      "o": [
+       "Absolute afstand",
+       "Platentektoniek",
+       "HDI",
+       "Adaptatie"
+      ],
+      "c": 3,
+      "u": "Het juiste begrip is «Adaptatie»: het aanpassen aan de gevolgen van klimaatverandering. Tegenover mitigatie: adaptatie pakt de gevolgen aan, mitigatie de oorzaak.",
+      "d": 2
+     },
+     {
+      "v": "Welk begrip hoort bij deze omschrijving: \"het ter plekke afbreken van gesteente\"?",
+      "o": [
+       "Verwering",
+       "Mitigatie",
+       "Subductie",
+       "Platentektoniek"
+      ],
+      "c": 0,
+      "u": "Het juiste begrip is «Verwering»: het ter plekke afbreken van gesteente.",
+      "d": 3
      }
     ],
     "oe": [
@@ -13226,6 +14000,32 @@ var VAKKEN = [
       ],
       "c": 0,
       "u": "Zeeklimaat: milde winters, koele zomers, veel neerslag het hele jaar (oceaanwerking). Voorbeeld: Nederland, Ierland.\nLandklimaat: strenge winters, hete zomers, weinig neerslag. Voorbeeld: Polen, Hongarije."
+     }
+    ],
+    "begrippen": [
+     {
+      "t": "Broeikaseffect",
+      "d": "het vasthouden van warmte door broeikasgassen"
+     },
+     {
+      "t": "Platentektoniek",
+      "d": "de beweging van de platen van de aardkorst"
+     },
+     {
+      "t": "Subductie",
+      "d": "het onder een andere plaat schuiven van een plaat"
+     },
+     {
+      "t": "Mitigatie",
+      "d": "het beperken van de oorzaak van klimaatverandering"
+     },
+     {
+      "t": "Adaptatie",
+      "d": "het aanpassen aan de gevolgen van klimaatverandering"
+     },
+     {
+      "t": "Verwering",
+      "d": "het ter plekke afbreken van gesteente"
      }
     ]
    },
@@ -13364,6 +14164,66 @@ var VAKKEN = [
       ],
       "c": 0,
       "u": "Sociale ongelijkheid = ongelijke verdeling van inkomen, welvaart, onderwijs en kansen tussen sociale groepen. Gemeten met de Gini-coëfficiënt."
+     },
+     {
+      "v": "Wat betekent «Ontwikkelingsland»?",
+      "o": [
+       "een land met een lage HDI",
+       "de trek van het platteland naar de stad",
+       "de beweging van de platen van de aardkorst",
+       "een maat voor ontwikkeling: welvaart, levensverwachting en onderwijs"
+      ],
+      "c": 0,
+      "u": "«Ontwikkelingsland» betekent: een land met een lage HDI.",
+      "d": 1
+     },
+     {
+      "v": "Welk begrip hoort bij deze omschrijving: \"economische activiteit buiten de officiële registratie\"?",
+      "o": [
+       "Thematische kaart",
+       "Randstad",
+       "Polder",
+       "Informele sector"
+      ],
+      "c": 3,
+      "u": "Het juiste begrip is «Informele sector»: economische activiteit buiten de officiële registratie.",
+      "d": 2
+     },
+     {
+      "v": "Welk begrip hoort bij deze omschrijving: \"de trek van het platteland naar de stad\"?",
+      "o": [
+       "Urbanisatie",
+       "Ontwikkelingsland",
+       "Informele sector",
+       "Monocultuur"
+      ],
+      "c": 0,
+      "u": "Het juiste begrip is «Urbanisatie»: de trek van het platteland naar de stad.",
+      "d": 3
+     },
+     {
+      "v": "Wat betekent «Monocultuur»?",
+      "o": [
+       "een economie die op één product leunt",
+       "de trek van het platteland naar de stad",
+       "de overgang van hoge naar lage geboorte- en sterftecijfers",
+       "Normaal Amsterdams Peil, het referentievlak voor hoogte"
+      ],
+      "c": 0,
+      "u": "«Monocultuur» betekent: een economie die op één product leunt.",
+      "d": 1
+     },
+     {
+      "v": "Welk begrip hoort bij deze omschrijving: \"het aantal inwoners per vierkante kilometer\"?",
+      "o": [
+       "Urbanisatie",
+       "Informele sector",
+       "Bevolkingsdichtheid",
+       "Subductie"
+      ],
+      "c": 2,
+      "u": "Het juiste begrip is «Bevolkingsdichtheid»: het aantal inwoners per vierkante kilometer.",
+      "d": 2
      }
     ],
     "oe": [
@@ -13426,6 +14286,28 @@ var VAKKEN = [
       ],
       "c": 0,
       "u": "(a) N = 220 * (1,025)^20 = 220 * 1,638 = 360 miljoen.\n(b) (1) Druk op onderwijs, gezondheidszorg en water. (2) Meer jongeren op arbeidsmarkt (demografisch dividend mogelijk, maar ook werkloosheid)."
+     }
+    ],
+    "begrippen": [
+     {
+      "t": "Ontwikkelingsland",
+      "d": "een land met een lage HDI"
+     },
+     {
+      "t": "Informele sector",
+      "d": "economische activiteit buiten de officiële registratie"
+     },
+     {
+      "t": "Urbanisatie",
+      "d": "de trek van het platteland naar de stad"
+     },
+     {
+      "t": "Monocultuur",
+      "d": "een economie die op één product leunt"
+     },
+     {
+      "t": "Bevolkingsdichtheid",
+      "d": "het aantal inwoners per vierkante kilometer"
      }
     ]
    },
@@ -13555,15 +14437,64 @@ var VAKKEN = [
       "u": "Klimaatadaptatie = het aanpassen van infrastructuur en leefomgeving aan de gevolgen van klimaatverandering (zeespiegelstijging, extreme neerslag, droogte). Bijv. hogere dijken, groene daken, klimaatbestendige steden."
      },
      {
-      "v": "Wat is een nationaal landschap?",
+      "v": "Wat betekent «NAP»?",
       "o": [
-       "Bijzonder cultuurhistorisch landschap met bescherming",
-       "Een nationaal park met wilde natuur",
-       "Recreatiegebied bij een grote stad",
-       "Een door UNESCO erkend monument"
+       "een economisch afhankelijke randregio",
+       "economische activiteit buiten de officiële registratie",
+       "laaggelegen, door dijken omringd en drooggemalen land",
+       "Normaal Amsterdams Peil, het referentievlak voor hoogte"
       ],
-      "c": 0,
-      "u": "Nationale landschappen = bijzondere cultuurhistorische landschappen in Nederland die worden beschermd. Ze combineren natuur, erfgoed en recreatie. Voorbeelden: Groene Hart, Arkemheen-Eempolders."
+      "c": 3,
+      "u": "«NAP» betekent: Normaal Amsterdams Peil, het referentievlak voor hoogte.",
+      "d": 1
+     },
+     {
+      "v": "Welk begrip hoort bij deze omschrijving: \"laaggelegen, door dijken omringd en drooggemalen land\"?",
+      "o": [
+       "Thematische kaart",
+       "Centrum",
+       "Schaal",
+       "Polder"
+      ],
+      "c": 3,
+      "u": "Het juiste begrip is «Polder»: laaggelegen, door dijken omringd en drooggemalen land.",
+      "d": 2
+     },
+     {
+      "v": "Welk begrip hoort bij deze omschrijving: \"de kans op een overstroming maal het gevolg\"?",
+      "o": [
+       "Randstad",
+       "Polder",
+       "Overstromingsrisico",
+       "Ruimtelijke inrichting"
+      ],
+      "c": 2,
+      "u": "Het juiste begrip is «Overstromingsrisico»: de kans op een overstroming maal het gevolg.",
+      "d": 3
+     },
+     {
+      "v": "Wat betekent «Randstad»?",
+      "o": [
+       "de toenemende wereldwijde verwevenheid",
+       "het stedelijke kerngebied van Nederland",
+       "laaggelegen, door dijken omringd en drooggemalen land",
+       "een reden om ergens naartoe te trekken"
+      ],
+      "c": 1,
+      "u": "«Randstad» betekent: het stedelijke kerngebied van Nederland.",
+      "d": 1
+     },
+     {
+      "v": "Welk begrip hoort bij deze omschrijving: \"de verdeling van de ruimte over functies\"?",
+      "o": [
+       "Informele sector",
+       "Demografische transitie",
+       "Ruimtelijke inrichting",
+       "Monocultuur"
+      ],
+      "c": 2,
+      "u": "Het juiste begrip is «Ruimtelijke inrichting»: de verdeling van de ruimte over functies.",
+      "d": 2
      }
     ],
     "oe": [
@@ -13646,6 +14577,28 @@ var VAKKEN = [
       ],
       "c": 0,
       "u": "(a) (1) Meer werkgelegenheid in steden. (2) Betere voorzieningen (onderwijs, zorg, cultuur).\n(b) (1) Woningtekort en hoge huizenprijzen. (2) Verkeerscongestie."
+     }
+    ],
+    "begrippen": [
+     {
+      "t": "NAP",
+      "d": "Normaal Amsterdams Peil, het referentievlak voor hoogte"
+     },
+     {
+      "t": "Polder",
+      "d": "laaggelegen, door dijken omringd en drooggemalen land"
+     },
+     {
+      "t": "Overstromingsrisico",
+      "d": "de kans op een overstroming maal het gevolg"
+     },
+     {
+      "t": "Randstad",
+      "d": "het stedelijke kerngebied van Nederland"
+     },
+     {
+      "t": "Ruimtelijke inrichting",
+      "d": "de verdeling van de ruimte over functies"
      }
     ]
    }
@@ -15866,48 +16819,88 @@ var VAKKEN = [
       "u": "Kwantitatief onderzoek met grote aselecte steekproef heeft een hoge generaliseerbaarheid."
      },
      {
-      "v": "Wat is het verschil tussen betrouwbaarheid en validiteit?",
+      "v": "Wat betekent «Betrouwbaarheid»?",
       "o": [
-       "Betrouwbaarheid: herhaald meten geeft hetzelfde resultaat. Validiteit: het instrument meet wat het moet meten.",
-       "Ze zijn hetzelfde begrip",
-       "Betrouwbaarheid gaat over de steekproefgrootte",
-       "Validiteit gaat over hoe vaak je meet"
+       "een oorzaak-gevolgrelatie",
+       "de overgang van een traditionele naar een moderne samenleving",
+       "een samenhangend geheel van ideeën over de samenleving",
+       "de consistentie van een meting bij herhaling"
       ],
-      "c": 0,
-      "u": "Een meting kan betrouwbaar maar niet valide zijn: een weegschaal die altijd 2 kg te veel aangeeft is consistent (betrouwbaar) maar onjuist (niet valide). Beide zijn nodig voor goed onderzoek."
+      "c": 3,
+      "u": "«Betrouwbaarheid» betekent: de consistentie van een meting bij herhaling. Betrouwbaar ≠ valide: betrouwbaar = herhaalbaar, valide = het júíste meten.",
+      "d": 1
      },
      {
-      "v": "Wat is het verschil tussen kwantitatief en kwalitatief onderzoek?",
+      "v": "Welk begrip hoort bij deze omschrijving: \"de mate waarin je meet wat je wilt meten\"?",
       "o": [
-       "Kwantitatief = cijfers, grote steekproef, generaliseren. Kwalitatief = verhalen, kleine steekproef, begrijpen.",
-       "Kwantitatief = oud onderzoek, kwalitatief = nieuw",
-       "Kwantitatief = weinig respondenten, kwalitatief = veel",
-       "Kwantitatief = veldwerk, kwalitatief = bureauonderzoek"
+       "Confounder",
+       "Validiteit",
+       "Betrouwbaarheid",
+       "Deviantie"
       ],
-      "c": 0,
-      "u": "Kwantitatief meet en vergelijkt. Kwalitatief begrijpt en verklaart. Keuze hangt af van de onderzoeksvraag. Mixed methods combineert de sterktes van beide."
+      "c": 1,
+      "u": "Het juiste begrip is «Validiteit»: de mate waarin je meet wat je wilt meten. Valide ≠ betrouwbaar: valide = het juiste meten, betrouwbaar = herhaalbaar.",
+      "d": 2
      },
      {
-      "v": "Wanneer is een steekproef representatief?",
+      "v": "Welk begrip hoort bij deze omschrijving: \"de mate waarin een steekproef de populatie afspiegelt\"?",
       "o": [
-       "Als de steekproef de populatie goed weerspiegelt qua samenstelling (leeftijd, geslacht, inkomen etc.)",
-       "Als de steekproef groot genoeg is, ongeacht hoe getrokken",
-       "Als alle respondenten dezelfde mening hebben",
-       "Als de onderzoeker de resultaten heeft gecontroleerd"
+       "Confounder",
+       "Causaliteit",
+       "Representativiteit",
+       "Correlatie"
       ],
-      "c": 0,
-      "u": "Representativiteit = de steekproef weerspiegelt de populatie. Willekeurige trekking vermindert selectiebias. Een grote maar vertekende steekproef is niet representatief."
+      "c": 2,
+      "u": "Het juiste begrip is «Representativiteit»: de mate waarin een steekproef de populatie afspiegelt.",
+      "d": 3
      },
      {
-      "v": "Wat betekent operationaliseren?",
+      "v": "Wat betekent «Correlatie»?",
       "o": [
-       "Een abstract begrip meetbaar maken door te definiëren hoe het gemeten wordt",
-       "Een hypothese formuleren op basis van theorie",
-       "Onderzoeksresultaten interpreteren",
-       "Een steekproef samenstellen uit de populatie"
+       "een concrete gedragsregel",
+       "een samenhang tussen twee variabelen",
+       "het losser komen te staan van vaste verbanden",
+       "een nastrevenswaardig ideaal"
+      ],
+      "c": 1,
+      "u": "«Correlatie» betekent: een samenhang tussen twee variabelen. Correlatie is geen causaliteit: samen bewegen betekent niet dat de één de ander veroorzaakt.",
+      "d": 1
+     },
+     {
+      "v": "Welk begrip hoort bij deze omschrijving: \"een oorzaak-gevolgrelatie\"?",
+      "o": [
+       "Rationalisering",
+       "Legitimiteit",
+       "Coalitie",
+       "Causaliteit"
+      ],
+      "c": 3,
+      "u": "Het juiste begrip is «Causaliteit»: een oorzaak-gevolgrelatie.",
+      "d": 2
+     },
+     {
+      "v": "Welk begrip hoort bij deze omschrijving: \"een verborgen derde variabele die een schijnverband schept\"?",
+      "o": [
+       "Correlatie",
+       "Confounder",
+       "Validiteit",
+       "Representativiteit"
+      ],
+      "c": 1,
+      "u": "Het juiste begrip is «Confounder»: een verborgen derde variabele die een schijnverband schept.",
+      "d": 3
+     },
+     {
+      "v": "Wat betekent «Operationaliseren»?",
+      "o": [
+       "een begrip meetbaar maken",
+       "een groep die een gedeeld belang behartigt",
+       "de toenemende wereldwijde verwevenheid",
+       "het vermogen om het gedrag van anderen te bepalen"
       ],
       "c": 0,
-      "u": "Operationaliseren: definieer hoe je een vaag begrip concreet meet. \"Armoede\" = inkomen onder 60% van de mediaandrempel. Maakt vergelijking en replicatie mogelijk."
+      "u": "«Operationaliseren» betekent: een begrip meetbaar maken.",
+      "d": 1
      }
     ],
     "oe": [
@@ -15940,6 +16933,36 @@ var VAKKEN = [
       ],
       "c": 0,
       "u": "(a) Representatieve steekproef: (1) aselecte trekking zodat iedereen in de populatie een gelijke kans heeft om geselecteerd te worden, (2) voldoende groot om de steekproeffout te minimaliseren.\n(b) De steekproef is niet representatief: de leerling trekt uitsluitend uit haar eigen klas op één school. Die groep is mogelijk niet representatief qua wijk, opleiding en achtergrond voor alle jongeren van 16–18 jaar in Nederland.\n(c) Voordeel: respondent geeft een eigen antwoord, wat meer diepte en nuance oplevert. Nadeel: antwoorden zijn moeilijk te vergelijken en kwantitatief te analyseren."
+     }
+    ],
+    "begrippen": [
+     {
+      "t": "Betrouwbaarheid",
+      "d": "de consistentie van een meting bij herhaling"
+     },
+     {
+      "t": "Validiteit",
+      "d": "de mate waarin je meet wat je wilt meten"
+     },
+     {
+      "t": "Representativiteit",
+      "d": "de mate waarin een steekproef de populatie afspiegelt"
+     },
+     {
+      "t": "Correlatie",
+      "d": "een samenhang tussen twee variabelen"
+     },
+     {
+      "t": "Causaliteit",
+      "d": "een oorzaak-gevolgrelatie"
+     },
+     {
+      "t": "Confounder",
+      "d": "een verborgen derde variabele die een schijnverband schept"
+     },
+     {
+      "t": "Operationaliseren",
+      "d": "een begrip meetbaar maken"
      }
     ]
    },
@@ -16025,48 +17048,88 @@ var VAKKEN = [
       "u": "Formele instituties zijn afdwingbaar via de wet. Informele sturen gedrag via sociale normen."
      },
      {
-      "v": "Wat is het verschil tussen macht en gezag?",
+      "v": "Wat betekent «Socialisatie»?",
       "o": [
-       "Macht = vermogen anderen te laten handelen. Gezag = macht die als legitiem erkend wordt.",
-       "Macht is formeel, gezag is informeel",
-       "Macht is negatief, gezag is altijd positief",
-       "Macht betreft individuen, gezag alleen instituties"
+       "het aanleren van normen, waarden en rollen",
+       "de indeling van de samenleving in lagen",
+       "een oorzaak-gevolgrelatie",
+       "een staatsvorm waarin de macht bij het volk ligt"
       ],
       "c": 0,
-      "u": "Macht kan bestaan zonder legitimiteit (via dwang of dreiging). Gezag = macht + legitimiteit: de onderdanen erkennen het recht om te heersen. Weber: drie gezagstypen — traditioneel, charismatisch en rationeel-legaal."
+      "u": "«Socialisatie» betekent: het aanleren van normen, waarden en rollen.",
+      "d": 1
      },
      {
-      "v": "Wat is het verschil tussen formele en informele sociale controle?",
+      "v": "Welk begrip hoort bij deze omschrijving: \"een concrete gedragsregel\"?",
       "o": [
-       "Formele controle via wetten en instituties. Informele controle via sociale druk, roddel en uitsluiting.",
-       "Formele controle is altijd effectiever dan informele",
-       "Informele controle bestaat alleen in kleine gemeenschappen",
-       "Formele controle gaat over gedachten, informele over gedrag"
+       "Trias politica",
+       "Pluriforme samenleving",
+       "Verzorgingsstaat",
+       "Norm"
       ],
-      "c": 0,
-      "u": "Formele sancties: boete, gevangenis, opgelegd door officiële instanties. Informele sancties: afkeuring, uitsluiting — effectief in dagelijkse sociale interactie. Beide sturen gedrag."
+      "c": 3,
+      "u": "Het juiste begrip is «Norm»: een concrete gedragsregel. Een norm is concreet (een regel); een waarde is het achterliggende ideaal.",
+      "d": 2
      },
      {
-      "v": "Wat zijn de drie gezagstypen van Weber?",
+      "v": "Welk begrip hoort bij deze omschrijving: \"een nastrevenswaardig ideaal\"?",
       "o": [
-       "Traditioneel (traditie), charismatisch (persoonlijkheid), rationeel-legaal",
-       "Formeel, informeel en hybride",
-       "Democratisch, autoritair en anarchistisch",
-       "Economisch, politiek en religieus"
+       "Norm",
+       "Sociale stratificatie",
+       "Socialisatie",
+       "Waarde"
       ],
-      "c": 0,
-      "u": "Weber: gezag is macht die als legitiem erkend wordt. Elk type heeft een andere legitimatiebron."
+      "c": 3,
+      "u": "Het juiste begrip is «Waarde»: een nastrevenswaardig ideaal. Een waarde is een ideaal; een norm is de concrete gedragsregel die eruit volgt.",
+      "d": 3
      },
      {
-      "v": "Wat is sociale mobiliteit?",
+      "v": "Wat betekent «Sociale stratificatie»?",
       "o": [
-       "Beweging omhoog of omlaag op de maatschappelijke ladder",
-       "Verhuizing naar een andere stad",
-       "Het wisselen van politieke partij",
-       "Het veranderen van religie"
+       "de consistentie van een meting bij herhaling",
+       "een samenhang tussen twee variabelen",
+       "samenwerkende partijen met samen een meerderheid",
+       "de indeling van de samenleving in lagen"
+      ],
+      "c": 3,
+      "u": "«Sociale stratificatie» betekent: de indeling van de samenleving in lagen.",
+      "d": 1
+     },
+     {
+      "v": "Welk begrip hoort bij deze omschrijving: \"beweging tussen de sociale lagen\"?",
+      "o": [
+       "Sociale mobiliteit",
+       "Sociale stratificatie",
+       "Belangengroep",
+       "Operationaliseren"
       ],
       "c": 0,
-      "u": "Verticale mobiliteit = op/neer. Horizontale mobiliteit = zijwaarts. Intergenerationeel = t.o.v. ouders."
+      "u": "Het juiste begrip is «Sociale mobiliteit»: beweging tussen de sociale lagen.",
+      "d": 2
+     },
+     {
+      "v": "Welk begrip hoort bij deze omschrijving: \"een staat die burgers tegen risico's beschermt\"?",
+      "o": [
+       "Sociale stratificatie",
+       "Verzorgingsstaat",
+       "Norm",
+       "Waarde"
+      ],
+      "c": 1,
+      "u": "Het juiste begrip is «Verzorgingsstaat»: een staat die burgers tegen risico's beschermt.",
+      "d": 3
+     },
+     {
+      "v": "Wat betekent «Deviantie»?",
+      "o": [
+       "gedrag dat afwijkt van de norm",
+       "een concrete gedragsregel",
+       "het losser komen te staan van vaste verbanden",
+       "een staat die burgers tegen risico's beschermt"
+      ],
+      "c": 0,
+      "u": "«Deviantie» betekent: gedrag dat afwijkt van de norm.",
+      "d": 1
      }
     ],
     "oe": [
@@ -16099,6 +17162,36 @@ var VAKKEN = [
       ],
       "c": 0,
       "u": "Socialisatie: het proces waarbij individuen normen en waarden internaliseren via opvoeding (primaire socialisatie, gezin) en school en omgeving (secundaire socialisatie). Als de primaire socialisatie tekortschiet, leren jongeren de gewenste gedragsnormen onvoldoende aan.\nSociale controle: het mechanisme waarmee de samenleving normafwijkend gedrag reguleert. Informele sociale controle (buurtbewoners spreken jongeren aan, sociale druk) is in dit geval afgenomen. Zonder die informele controle ontbreekt de correctie op normafwijkend gedrag, wat vandalisme in stand houdt."
+     }
+    ],
+    "begrippen": [
+     {
+      "t": "Socialisatie",
+      "d": "het aanleren van normen, waarden en rollen"
+     },
+     {
+      "t": "Norm",
+      "d": "een concrete gedragsregel"
+     },
+     {
+      "t": "Waarde",
+      "d": "een nastrevenswaardig ideaal"
+     },
+     {
+      "t": "Sociale stratificatie",
+      "d": "de indeling van de samenleving in lagen"
+     },
+     {
+      "t": "Sociale mobiliteit",
+      "d": "beweging tussen de sociale lagen"
+     },
+     {
+      "t": "Verzorgingsstaat",
+      "d": "een staat die burgers tegen risico's beschermt"
+     },
+     {
+      "t": "Deviantie",
+      "d": "gedrag dat afwijkt van de norm"
      }
     ]
    },
@@ -16196,37 +17289,76 @@ var VAKKEN = [
       "u": "Agendering is de eerste fase van de beleidscyclus: problemen worden erkend en op de agenda gezet."
      },
      {
-      "v": "Wat houdt de trias politica in?",
+      "v": "Wat betekent «Democratie»?",
       "o": [
-       "Scheiding van wetgevende, uitvoerende en rechterlijke macht om machtsmisbruik te voorkomen",
-       "De drie grootste politieke partijen in Nederland",
-       "De drie niveaus van bestuur: gemeente, provincie, Rijk",
-       "De drie grondrechten"
+       "een staatsvorm waarin de macht bij het volk ligt",
+       "een samenhangend geheel van ideeën over de samenleving",
+       "een samenhang tussen twee variabelen",
+       "gedrag dat afwijkt van de norm"
       ],
       "c": 0,
-      "u": "Montesquieu: macht moet verdeeld zijn. Wetgevende macht (parlement) maakt wetten. Uitvoerende macht (regering) voert uit. Rechterlijke macht (rechters) toetst. Voorkomt machtsconcentratie."
+      "u": "«Democratie» betekent: een staatsvorm waarin de macht bij het volk ligt.",
+      "d": 1
      },
      {
-      "v": "Welke drempel bepaalt hoeveel zetels een coalitie minimaal moet hebben om te kunnen regeren in de Tweede Kamer?",
+      "v": "Welk begrip hoort bij deze omschrijving: \"de scheiding van de drie staatsmachten\"?",
       "o": [
-       "76 zetels (absolute meerderheid van 150)",
-       "51 zetels",
-       "61 zetels",
-       "101 zetels"
+       "Trias politica",
+       "Individualisering",
+       "Globalisering",
+       "Gezag"
       ],
       "c": 0,
-      "u": "Geen enkele partij haalt een meerderheid (76 zetels). Partijen onderhandelen, een informateur zoekt een werkbare combinatie. Ze schrijven een regeerakkoord en vormen samen de regering."
+      "u": "Het juiste begrip is «Trias politica»: de scheiding van de drie staatsmachten.",
+      "d": 2
      },
      {
-      "v": "Wat is een motie van wantrouwen?",
+      "v": "Welk begrip hoort bij deze omschrijving: \"de aanvaarding van gezag als rechtvaardig\"?",
       "o": [
-       "Een uitspraak van de Tweede Kamer dat zij geen vertrouwen meer heeft in een minister of kabinet",
-       "Een voorstel voor nieuwe wetgeving",
-       "Een initiatief van een politieke partij",
-       "Een burgerpetitie"
+       "Legitimiteit",
+       "Democratie",
+       "Ideologie",
+       "Evenredige vertegenwoordiging"
       ],
       "c": 0,
-      "u": "Bij aangenomen motie van wantrouwen moet de minister of het kabinet aftreden."
+      "u": "Het juiste begrip is «Legitimiteit»: de aanvaarding van gezag als rechtvaardig.",
+      "d": 3
+     },
+     {
+      "v": "Wat betekent «Ideologie»?",
+      "o": [
+       "de mate waarin je meet wat je wilt meten",
+       "zetelverdeling naar rato van de stemmen",
+       "een samenhangend geheel van ideeën over de samenleving",
+       "de scheiding van de drie staatsmachten"
+      ],
+      "c": 2,
+      "u": "«Ideologie» betekent: een samenhangend geheel van ideeën over de samenleving.",
+      "d": 1
+     },
+     {
+      "v": "Welk begrip hoort bij deze omschrijving: \"zetelverdeling naar rato van de stemmen\"?",
+      "o": [
+       "Rationalisering",
+       "Individualisering",
+       "Operationaliseren",
+       "Evenredige vertegenwoordiging"
+      ],
+      "c": 3,
+      "u": "Het juiste begrip is «Evenredige vertegenwoordiging»: zetelverdeling naar rato van de stemmen.",
+      "d": 2
+     },
+     {
+      "v": "Welk begrip hoort bij deze omschrijving: \"samenwerkende partijen met samen een meerderheid\"?",
+      "o": [
+       "Trias politica",
+       "Coalitie",
+       "Legitimiteit",
+       "Democratie"
+      ],
+      "c": 1,
+      "u": "Het juiste begrip is «Coalitie»: samenwerkende partijen met samen een meerderheid.",
+      "d": 3
      }
     ],
     "oe": [
@@ -16259,6 +17391,32 @@ var VAKKEN = [
       ],
       "c": 0,
       "u": "(a) Twee uit: milieubeleid (stikstofnormen), handelsbeleid (gemeenschappelijke buitentarieven), landbouwbeleid (GLB), migratie- en asielbeleid, mededingingsbeleid.\n(b) Europese integratie betekent dat lidstaten bevoegdheden overdragen aan de EU voor gemeenschappelijk beleid. Dit botst met nationale soevereiniteit: het vermogen om als land zelf te beslissen. Voordelen: sterkere positie in de wereld. Nadelen: minder democratische controle op nationaal niveau."
+     }
+    ],
+    "begrippen": [
+     {
+      "t": "Democratie",
+      "d": "een staatsvorm waarin de macht bij het volk ligt"
+     },
+     {
+      "t": "Trias politica",
+      "d": "de scheiding van de drie staatsmachten"
+     },
+     {
+      "t": "Legitimiteit",
+      "d": "de aanvaarding van gezag als rechtvaardig"
+     },
+     {
+      "t": "Ideologie",
+      "d": "een samenhangend geheel van ideeën over de samenleving"
+     },
+     {
+      "t": "Evenredige vertegenwoordiging",
+      "d": "zetelverdeling naar rato van de stemmen"
+     },
+     {
+      "t": "Coalitie",
+      "d": "samenwerkende partijen met samen een meerderheid"
      }
     ]
    },
@@ -16355,37 +17513,52 @@ var VAKKEN = [
       "u": "Bourdieu: ongelijkheid wordt doorgegeven via economisch, cultureel en sociaal kapitaal. Structuur reproduceert zichzelf."
      },
      {
-      "v": "Welk begrip beschrijft het beleid (ingezet in 2013) waarbij burgers meer eigen verantwoordelijkheid nemen en het sociale vangnet kleiner wordt?",
+      "v": "Wat betekent «Macht»?",
       "o": [
-       "Participatiesamenleving",
-       "Verzorgingsstaat",
-       "Welvaartstaat",
-       "Minimalistische staat"
+       "beweging tussen de sociale lagen",
+       "een samenhang tussen twee variabelen",
+       "een groep die een gedeeld belang behartigt",
+       "het vermogen om het gedrag van anderen te bepalen"
       ],
-      "c": 0,
-      "u": "Verzorgingsstaat (na WO II): brede sociale voorzieningen. Participatiesamenleving (sinds 2013): overheid doet een stap terug, burgers worden aangesproken op zelfredzaamheid en mantelzorg."
+      "c": 3,
+      "u": "«Macht» betekent: het vermogen om het gedrag van anderen te bepalen. Gezag is macht die als legitiem wordt aanvaard; kale macht kan ook op dwang berusten.",
+      "d": 1
      },
      {
-      "v": "Wat zijn de drie kapitaalvormen van Bourdieu?",
+      "v": "Welk begrip hoort bij deze omschrijving: \"macht die als legitiem wordt aanvaard\"?",
       "o": [
-       "Economisch (geld), cultureel (opleiding/taal), sociaal (netwerk)",
-       "Financieel, intellectueel en emotioneel",
-       "Primair, secundair en tertiair",
-       "Formeel, informeel en hybride"
+       "Socialisatie",
+       "Trias politica",
+       "Gezag",
+       "Coalitie"
       ],
-      "c": 0,
-      "u": "Alle drie bepalen kansen in de samenleving. Cultureel kapitaal verklaart waarom kinderen van hoogopgeleiden het beter doen."
+      "c": 2,
+      "u": "Het juiste begrip is «Gezag»: macht die als legitiem wordt aanvaard.",
+      "d": 2
      },
      {
-      "v": "Wat is de labelingtheorie van Becker?",
+      "v": "Welk begrip hoort bij deze omschrijving: \"een groep die een gedeeld belang behartigt\"?",
       "o": [
-       "Deviantie ontstaat doordat de samenleving een stigmatiserend label oplegt dat de persoon internaliseert",
-       "Criminaliteit is aangeboren",
-       "Criminaliteit wordt veroorzaakt door armoede",
-       "Deviantie komt alleen voor in lage sociale klassen"
+       "Gezag",
+       "Belangengroep",
+       "Pluriforme samenleving",
+       "Macht"
       ],
-      "c": 0,
-      "u": "Self-fulfilling prophecy: eenmaal gelabeld als crimineel gedraagt iemand zich er ook naar."
+      "c": 1,
+      "u": "Het juiste begrip is «Belangengroep»: een groep die een gedeeld belang behartigt.",
+      "d": 3
+     },
+     {
+      "v": "Wat betekent «Pluriforme samenleving»?",
+      "o": [
+       "de toenemende wereldwijde verwevenheid",
+       "een samenhang tussen twee variabelen",
+       "beweging tussen de sociale lagen",
+       "een samenleving met veel verschillende groepen"
+      ],
+      "c": 3,
+      "u": "«Pluriforme samenleving» betekent: een samenleving met veel verschillende groepen.",
+      "d": 1
      }
     ],
     "oe": [
@@ -16418,6 +17591,24 @@ var VAKKEN = [
       ],
       "c": 0,
       "u": "(a) Straintheorie: bewoners van een achterstandswijk hebben minder toegang tot legale middelen (opleiding, banen) om maatschappelijke doelen (welvaart) te bereiken. De spanning tussen doelen en beperkte middelen kan leiden tot criminaliteit.\n(b) Preventief: meer jeugdwerk, sportvoorzieningen, stageplekken (voorkomen dat jongeren in criminaliteit belanden). Repressief: meer politie-inzet, cameratoezicht, strenger straffen (bestraffen en afschrikken). Preventie richt zich op oorzaken, repressie op bestrijding."
+     }
+    ],
+    "begrippen": [
+     {
+      "t": "Macht",
+      "d": "het vermogen om het gedrag van anderen te bepalen"
+     },
+     {
+      "t": "Gezag",
+      "d": "macht die als legitiem wordt aanvaard"
+     },
+     {
+      "t": "Belangengroep",
+      "d": "een groep die een gedeeld belang behartigt"
+     },
+     {
+      "t": "Pluriforme samenleving",
+      "d": "een samenleving met veel verschillende groepen"
      }
     ]
    }
