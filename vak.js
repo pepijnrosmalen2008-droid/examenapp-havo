@@ -242,7 +242,7 @@ function initMf(){
     methodes.map(m=>`<option value="${m.id}">${m.naam} · ${m.uitgever}</option>`).join('');
   const hSel=document.getElementById('mf-hoofdstuk');
   hSel.style.display='none';hSel.disabled=true;
-  document.getElementById('mf-chip').style.display='none';
+  var _mfr=document.getElementById("mf-result");if(_mfr)_mfr.style.display="none";
   const saved=_mfLoad(vak.id+'_'+niveau);
   if(saved&&saved.methodeId){
     mSel.value=saved.methodeId;
@@ -258,8 +258,20 @@ function _mfFillHfdst(mid,methodes,reset){
   const m=methodes.find(x=>x.id===mid);
   const hSel=document.getElementById('mf-hoofdstuk');
   if(!m){hSel.style.display='none';return;}
-  hSel.innerHTML='<option value="">— Kies hoofdstuk —</option>'+
-    m.hoofdstukken.map(h=>`<option value="${h.nr}">H${h.nr}: ${h.titel}</option>`).join('');
+  let opts='<option value="">— Kies hoofdstuk —</option>';
+  const hasJaar=m.hoofdstukken.some(h=>h.jaar);
+  if(hasJaar){
+    // Groepeer per leerjaar (hele bovenbouw)
+    const jaren=[...new Set(m.hoofdstukken.map(h=>h.jaar).filter(Boolean))].sort((a,b)=>a-b);
+    jaren.forEach(j=>{
+      opts+=`<optgroup label="Leerjaar ${j}">`;
+      m.hoofdstukken.filter(h=>h.jaar===j).forEach(h=>{opts+=`<option value="${h.nr}">H${h.nr} · ${h.titel}</option>`;});
+      opts+='</optgroup>';
+    });
+  }else{
+    m.hoofdstukken.forEach(h=>{opts+=`<option value="${h.nr}">H${h.nr}: ${h.titel}</option>`;});
+  }
+  hSel.innerHTML=opts;
   hSel.style.display='';hSel.disabled=false;
   if(reset)hSel.value='';
 }
@@ -268,14 +280,30 @@ function _mfApply(mid,hnr,methodes){
   if(!m)return;
   const h=m.hoofdstukken.find(x=>x.nr===hnr);
   if(!h)return;
+  // Visuele filter op de domeinlijst
   document.querySelectorAll('#dlist [data-domein-id]').forEach(el=>{
     el.style.display=h.domeinen.includes(el.dataset.domeinId)?'':'none';
   });
-  const chip=document.getElementById('mf-chip');
-  const txt=document.getElementById('mf-chip-txt');
-  if(chip)chip.style.display='flex';
-  if(txt)txt.textContent=`${m.naam} · H${hnr}: ${h.titel} (domein${h.domeinen.length>1?'en':''} ${h.domeinen.join(', ')})`;
+  // Resultaatpaneel: tik een domein aan om die examenstof te oefenen
+  const res=document.getElementById('mf-result');
+  if(res){
+    const vak=ST.vak;
+    const badges=h.domeinen.map(did=>{
+      const dom=(vak&&vak.domeinen||[]).find(d=>d.id===did);
+      const naam=dom?_esc(dom.naam):'';
+      return `<button class="mf-dom" onclick="openQmode('${did}')"><span class="mf-dom-id">${did}</span><span class="mf-dom-nm">${naam}</span><span class="mf-dom-go">Oefenen →</span></button>`;
+    }).join('');
+    res.innerHTML=`<div class="mf-res-top"><div class="mf-res-hd">`+
+      (h.jaar?`<span class="mf-res-jaar">Leerjaar ${h.jaar}</span>`:'')+
+      `<span class="mf-res-ttl">H${h.nr} · ${_esc(h.titel)}</span></div>`+
+      `<button class="mf-chip-x" onclick="resetMf()" title="Filter wissen" aria-label="Filter wissen">✕</button></div>`+
+      `<div class="mf-res-lbl">Hoort bij examendomein${h.domeinen.length>1?'en':''} — tik om te oefenen:</div>`+
+      `<div class="mf-doms">${badges}</div>`+
+      `<div class="mf-res-note">Indicatief — de hoofdstukindeling kan per editie en school verschillen.</div>`;
+    res.style.display='';
+  }
 }
+function _esc(s){return String(s==null?'':s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));}
 function onMfMethodeChange(){
   const vak=ST.vak;if(!vak)return;
   const niveau=(APP_LEVEL||'havo').toLowerCase();
@@ -284,7 +312,7 @@ function onMfMethodeChange(){
   const mid=document.getElementById('mf-methode').value;
   if(!mid){resetMf();return;}
   _mfFillHfdst(mid,methodes,true);
-  document.getElementById('mf-chip').style.display='none';
+  var _mfr=document.getElementById("mf-result");if(_mfr)_mfr.style.display="none";
   document.querySelectorAll('#dlist [data-domein-id]').forEach(el=>el.style.display='');
   _mfClear(vak.id+'_'+niveau);
 }
@@ -296,7 +324,7 @@ function onMfHoofdstukChange(){
   const mid=document.getElementById('mf-methode').value;
   const hnr=parseInt(document.getElementById('mf-hoofdstuk').value);
   if(!mid||!hnr){
-    document.getElementById('mf-chip').style.display='none';
+    var _mfr=document.getElementById("mf-result");if(_mfr)_mfr.style.display="none";
     document.querySelectorAll('#dlist [data-domein-id]').forEach(el=>el.style.display='');
     return;
   }
@@ -310,7 +338,7 @@ function resetMf(){
   const hSel=document.getElementById('mf-hoofdstuk');
   if(mSel)mSel.value='';
   if(hSel){hSel.innerHTML='<option value="">— Kies hoofdstuk —</option>';hSel.style.display='none';hSel.disabled=true;}
-  document.getElementById('mf-chip').style.display='none';
+  var _mfr=document.getElementById("mf-result");if(_mfr)_mfr.style.display="none";
   document.querySelectorAll('#dlist [data-domein-id]').forEach(el=>el.style.display='');
   if(vak)_mfClear(vak.id+'_'+niveau);
 }

@@ -1067,8 +1067,8 @@
     <div class="mf-head" onclick="this.closest('.mf-card').classList.toggle('open')">
       <span class="mf-head-icon"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 5a2 2 0 0 1 2-2h13v16H6a2 2 0 0 0-2 2z"/><path d="M19 17H6a2 2 0 0 0-2 2"/><path d="M9 3v14"/></svg></span>
       <div class="mf-head-txt">
-        <div class="mf-head-title">Filter op lesmethode</div>
-        <div class="mf-head-sub">Toon domeinen die passen bij het hoofdstuk dat je nu leert</div>
+        <div class="mf-head-title">Oefen per hoofdstuk van je boek</div>
+        <div class="mf-head-sub">Kies je methode en hoofdstuk (per leerjaar) → oefen direct de bijbehorende examenstof</div>
       </div>
       <span class="mf-head-arr" id="mf-arr">▼</span>
     </div>
@@ -1081,10 +1081,7 @@
           <option value="">— Kies hoofdstuk —</option>
         </select>
       </div>
-      <div class="mf-chip" id="mf-chip">
-        <span class="mf-chip-txt" id="mf-chip-txt"></span>
-        <button class="mf-chip-x" onclick="resetMf()" title="Filter wissen">✕</button>
-      </div>
+      <div class="mf-result" id="mf-result" style="display:none"></div>
     </div>
   </div>
   <div id="dlist" class="dl"></div>
