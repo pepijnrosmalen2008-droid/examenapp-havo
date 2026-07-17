@@ -84,17 +84,6 @@ var VAKKEN = [
       "u": "Feiten zijn aantoonbaar waar of onwaar. Meningen bevatten subjectieve oordelen zoals goed, slecht of onacceptabel."
      },
      {
-      "v": "Welk begrip beschrijft de manier waarop een tekst is opgebouwd: van probleem naar oplossing, van oorzaak naar gevolg, of van stelling naar argument?",
-      "o": [
-       "Tekststructuur",
-       "Toon",
-       "Register",
-       "Genre"
-      ],
-      "c": 0,
-      "u": "Tekststructuur beschrijft de manier waarop de inhoud is georganiseerd. Veelvoorkomende structuren zijn: probleemoplossing, oorzaak-gevolg, stelling-argument, chronologisch en vergelijking."
-     },
-     {
       "v": "Welk tekstkenmerk verwijst naar de bedoeling waarmee een schrijver een tekst heeft geschreven: informeren, overtuigen of beschrijven?",
       "o": [
        "Communicatief doel",
@@ -161,17 +150,6 @@ var VAKKEN = [
       "u": "Een inleiding trekt de aandacht, introduceert het onderwerp en bevat soms al de hoofdgedachte of stelling. De conclusie herhaalt het standpunt en rondt het betoog af."
      },
      {
-      "v": "Welk teksttype bevat een doorlopend verslag van gebeurtenissen in volgorde van tijd?",
-      "o": [
-       "Chronologisch opgebouwde tekst",
-       "Betoog",
-       "Beschouwing",
-       "Informatieve tekst"
-      ],
-      "c": 0,
-      "u": "Een chronologische tekst volgt de tijdvolgorde. Signaalwoorden zijn: eerst, daarna, vervolgens, ten slotte. Een betoog of beschouwing is inhoudelijk gestructureerd, niet per se chronologisch."
-     },
-     {
       "v": "Wat is de strekking van een tekst?",
       "o": [
        "De algemene boodschap of moraal die de tekst wil overbrengen",
@@ -181,17 +159,6 @@ var VAKKEN = [
       ],
       "c": 0,
       "u": "De strekking is de overkoepelende boodschap of moraal. Het verschil met de hoofdgedachte is gradueel: de hoofdgedachte is de centrale uitspraak, de strekking is de bredere betekenis of les."
-     },
-     {
-      "v": "Wat is een drogdenken in een betoog?",
-      "o": [
-       "Een schijnbaar geldig argument dat bij nadere analyse onjuist of misleidend blijkt",
-       "Een feitelijk onjuiste bewering die de schrijver maakt",
-       "Een te sterke overdrijving van een standpunt",
-       "Een concessie die het standpunt verzwakt"
-      ],
-      "c": 0,
-      "u": "Drogredenering: een redenering die logisch lijkt maar dat niet is. Voorbeelden: stroman (het standpunt van de tegenstander overdrijven), ad hominem (de persoon aanvallen in plaats van het argument) en cirkelredenering."
      }
     ],
     "oe": [
@@ -274,28 +241,6 @@ var VAKKEN = [
       "u": "Inleiding: trek aandacht, introduceer het onderwerp en geef de opbouw aan. Kern: max 3 punten elk met argument en voorbeeld. Conclusie: vat samen en geef de kernboodschap."
      },
      {
-      "v": "Wanneer gebruik je formeel register?",
-      "o": [
-       "Bij officiële situaties, zoals een sollicitatie of brief aan een instantie",
-       "Alleen bij schriftelijke communicatie",
-       "Altijd, ook in gesprekken met vrienden",
-       "Alleen bij Engels spreken"
-      ],
-      "c": 0,
-      "u": "Formeel register = standaardtaal, beleefde aanspreekvormen (u), geen stopwoorden. Informeel = spreektaal, je/jij, tussenwoorden. Kies op basis van situatie en publiek."
-     },
-     {
-      "v": "Wat is het doel van de weerleggingsronde in een debat?",
-      "o": [
-       "De argumenten van de tegenpartij aanvallen en de eigen positie versterken",
-       "De eigen openingsargumenten herhalen",
-       "De stelling opnieuw formuleren",
-       "De jury overtuigen met nieuwe bewijzen"
-      ],
-      "c": 0,
-      "u": "Weerlegging: ga in op de zwakste schakel van het tegenargument. Geef aan waarom het argument niet klopt, onvolledig of irrelevant is. Versterk daarna je eigen standpunt."
-     },
-     {
       "v": "Welk kenmerk van non-verbale communicatie heeft tijdens een presentatie de meeste invloed op geloofwaardigheid?",
       "o": [
        "Volume van de stem",
@@ -340,17 +285,6 @@ var VAKKEN = [
       "u": "Doel bepaalt de soort: informatief licht toe en geeft kennis. Overtuigend neemt expliciet een standpunt in en probeert het publiek te overtuigen."
      },
      {
-      "v": "Wat is de meest effectieve reactie als je tijdens een presentatie een vraag krijgt die je niet kunt beantwoorden?",
-      "o": [
-       "Iets verzinnen zodat je niet voor gek staat",
-       "Eerlijk aangeven dat je het niet zeker weet en aanbieden het na te zoeken",
-       "De vraag negeren",
-       "De vraagsteller vragen of hij het zelf weet"
-      ],
-      "c": 1,
-      "u": "Eerlijkheid en professionaliteit: \"Dat weet ik niet zeker — ik ga het na.\" Dit is krachtiger dan een fout antwoord geven."
-     },
-     {
       "v": "Welke zinsbouw hoort bij formeel register?",
       "o": [
        "Korte zinnen met \"je\" en \"ze\" en spreektaal",
@@ -360,50 +294,6 @@ var VAKKEN = [
       ],
       "c": 1,
       "u": "Formeel: u, mevrouw/meneer, ABN, volledige zinnen, professioneel vocabulaire. Informeel: je/jij, stopwoorden, spreektaal, afkortingen."
-     },
-     {
-      "v": "Wat beschrijft de \"2 sterren en 1 wens\" feedbackmethode?",
-      "o": [
-       "Twee negatieve punten en één positief punt",
-       "Twee positieve punten en één verbeterpunt, concreet gericht op gedrag",
-       "Twee feiten en één mening",
-       "Eén sterk punt en twee verbeterpunten"
-      ],
-      "c": 1,
-      "u": "2 sterren 1 wens: twee positieve punten (specifiek en concreet) plus één verbeterpunt als wens. Gericht op gedrag, niet op de persoon. Gangbare SE-aanpak."
-     },
-     {
-      "v": "Wat is de functie van een wegwijzer in een presentatie?",
-      "o": [
-       "De luisteraar vooraf informeren over de opbouw van de presentatie",
-       "Een argument samenvatten aan het einde",
-       "De titel herhalen",
-       "Een nieuw onderwerp introduceren"
-      ],
-      "c": 0,
-      "u": "Een wegwijzer (structuurzin) vertelt de luisteraar vooraf hoe de presentatie is opgebouwd: \"Ik bespreek achtereenvolgens X, Y en Z.\" Dit helpt de luisteraar om te volgen."
-     },
-     {
-      "v": "Wat is het verschil tussen spreektaal en schrijftaal?",
-      "o": [
-       "Spreektaal heeft meer stopwoorden en kortere zinnen; schrijftaal is formeler en vollediger",
-       "Schrijftaal is altijd korter dan spreektaal",
-       "Spreektaal is altijd beter te begrijpen",
-       "Schrijftaal gebruikt geen signaalwoorden"
-      ],
-      "c": 0,
-      "u": "Spreektaal: spontaan, stopwoorden (eigenlijk, zeg maar), onvolledige zinnen. Schrijftaal: bewuster geformuleerd, volledige zinnen, geen stopwoorden. Voor formele teksten gebruik je schrijftaal."
-     },
-     {
-      "v": "Welke techniek gebruik je om tijdens een luistertaak de hoofdpunten bij te houden?",
-      "o": [
-       "Steekwoorden per punt noteren aan de hand van signaalwoorden",
-       "Alles woordelijk opschrijven",
-       "Alleen de voorbeelden noteren",
-       "Niets opschrijven"
-      ],
-      "c": 0,
-      "u": "Luisterstrategie: noteer bij elk signaalwoord (ten eerste, bovendien, echter) een steekwoord. Schrijf niet alles op maar filtert op hoofd- en deelpunten."
      },
      {
       "v": "Wat is het doel van het slotpleidooi in een debat?",
@@ -426,6 +316,28 @@ var VAKKEN = [
       ],
       "c": 0,
       "u": "Oogcontact laat zien dat je de stof beheerst en bouwt verbinding met het publiek. Snel spreken, voorlezen of afwijkend lichaamshouding verminderen de geloofwaardigheid."
+     },
+     {
+      "v": "Wanneer gebruik je formeel register?",
+      "o": [
+       "Bij officiële situaties, zoals een sollicitatie of brief aan een instantie",
+       "Alleen bij schriftelijke communicatie",
+       "Altijd, ook in gesprekken met vrienden",
+       "Alleen bij Engels spreken"
+      ],
+      "c": 0,
+      "u": "Formeel register = standaardtaal, beleefde aanspreekvormen (u), geen stopwoorden. Informeel = spreektaal, je/jij, tussenwoorden. Kies op basis van situatie en publiek."
+     },
+     {
+      "v": "Wat is het doel van de weerleggingsronde in een debat?",
+      "o": [
+       "De argumenten van de tegenpartij aanvallen en de eigen positie versterken",
+       "De eigen openingsargumenten herhalen",
+       "De stelling opnieuw formuleren",
+       "De jury overtuigen met nieuwe bewijzen"
+      ],
+      "c": 0,
+      "u": "Weerlegging: ga in op de zwakste schakel van het tegenargument. Geef aan waarom het argument niet klopt, onvolledig of irrelevant is. Versterk daarna je eigen standpunt."
      }
     ],
     "oe": [
@@ -477,39 +389,6 @@ var VAKKEN = [
     "sam": "<div class=\"sam-head\">Betoog schrijven</div><ul><li><strong>Structuur betoog</strong>: (1) Inleiding met stelling, (2) Argumenten (elk in eigen alinea: kernzin → bewijs/voorbeeld → uitwerking), (3) Weerlegging tegenargument, (4) Conclusie die de stelling bevestigt.</li><li><strong>Stelling</strong>: concreet, betwistbaar, in één zin. Niet \"roken is slecht\" maar \"roken in openbare ruimtes moet landelijk verboden worden\".</li><li><strong>Argument opbouwen</strong>: kernzin (bewering) → redenering (waarom klopt dit?) → bewijs (cijfer, voorbeeld, autoriteit) → conclusie (link terug naar stelling).</li></ul><div class=\"sam-head\">Alinea en coherentie</div><ul><li><strong>Alinea-structuur</strong>: begin met een kernzin die het hoofdpunt bevat. Werk uit met twee of drie zinnen. Sluit af met een overgangszin naar de volgende alinea.</li><li><strong>Coherentie</strong>: gebruik verwijswoorden (dit, deze, het) en signaalwoorden (bovendien, echter, daarom) om de tekst vloeiend te maken.</li><li><strong>Zakelijke brief</strong>: aanhef (Geachte heer/mevrouw), duidelijk doel in eerste alinea, concrete vraag of actie in laatste alinea, afsluiting (Met vriendelijke groet).</li></ul>",
     "sv": [
      {
-      "v": "Wat is een stelling in een betoog?",
-      "o": [
-       "Een betwistbare bewering die de schrijver in het betoog gaat verdedigen",
-       "Een feit dat bewezen is",
-       "Een samenvatting van alle argumenten",
-       "De conclusie van het betoog"
-      ],
-      "c": 0,
-      "u": "Een stelling is de kern van het betoog: concreet, betwistbaar en verdedigbaar. Verschil met een feit: een feit is aantoonbaar waar, een stelling is een standpunt dat je moet onderbouwen."
-     },
-     {
-      "v": "Hoe bouw je een goede alinea op?",
-      "o": [
-       "Kernzin (hoofdpunt) → uitwerking (redenering + bewijs) → afsluiting/overgang",
-       "Drie bewijzen → kernzin → conclusie",
-       "Inleiding → stelling → argument",
-       "Citaat → kernzin → uitwerking"
-      ],
-      "c": 0,
-      "u": "Een sterke alinea begint met de kernzin (het punt dat je wil maken), werkt dit uit met redenering en bewijs, en sluit af met een overgang naar de volgende alinea."
-     },
-     {
-      "v": "Wat is het verschil tussen een betoog en een beschouwing?",
-      "o": [
-       "Betoog: overtuigen van één standpunt. Beschouwing: verkennen van meerdere perspectieven zonder hard standpunt te nemen.",
-       "Betoog is altijd langer dan een beschouwing",
-       "Beschouwing gebruikt altijd cijfers, betoog niet",
-       "Betoog is mondeling, beschouwing schriftelijk"
-      ],
-      "c": 0,
-      "u": "Betoog = eenzijdig, overtuigend, neemt expliciet stelling. Beschouwing = meerzijdig, genuanceerd, nodigt lezer uit om zelf te oordelen."
-     },
-     {
       "v": "Welk signaalwoord geeft een oorzaak-gevolg relatie aan?",
       "o": [
        "Daardoor / waardoor / als gevolg hiervan",
@@ -521,50 +400,6 @@ var VAKKEN = [
       "u": "Oorzaak-gevolg: daardoor, waardoor, dus, vandaar, als gevolg hiervan. Tegenstelling: echter, maar, toch. Toevoeging: bovendien, ook. Volgorde: ten eerste, vervolgens, ten slotte."
      },
      {
-      "v": "Wat is het verschil tussen een beschouwing en een betoog?",
-      "o": [
-       "Beschouwing: meerdere kanten belichten zonder stelling; betoog: één standpunt verdedigen",
-       "Beschouwing is altijd korter",
-       "Betoog gebruikt geen argumenten",
-       "Ze zijn beide bedoeld om neutraal te informeren"
-      ],
-      "c": 0,
-      "u": "Betoog = eenzijdig overtuigend. Beschouwing = genuanceerd, toont meerdere perspectieven en nodigt lezer uit zelf te oordelen. Veel CE-teksten zijn beschouwingen."
-     },
-     {
-      "v": "Welke van de volgende zinnen is een sterke kernzin voor een alinea over sociale media?",
-      "o": [
-       "\"Dit is een interessant onderwerp.\"",
-       "\"Sociale media heeft voor- en nadelen.\"",
-       "\"Intensief gebruik van sociale media vergroot de kans op eenzaamheid bij jongeren.\"",
-       "\"Jongeren gebruiken sociale media veel."
-      ],
-      "c": 2,
-      "u": "Een sterke kernzin is concreet, bevat een stellingname en kondigt de uitwerking aan. Optie 3 noemt de variabelen (gebruik, eenzaamheid, jongeren) en maakt een causale claim die je kunt uitwerken."
-     },
-     {
-      "v": "Welke stijlfout maak je als je in een formele brief schrijft \"Hey, ik wil even klagen\"?",
-      "o": [
-       "Een spelfout",
-       "Gebruik van informeel register in een formele context",
-       "Een grammaticale fout",
-       "Een onduidelijke conclusie"
-      ],
-      "c": 1,
-      "u": "Register-mismatch: \"hey\" en \"even\" zijn informele spreektaal. In een formele klachtenbrief gebruik je \"Geachte heer/mevrouw\" en \"Hierbij wil ik u informeren over\"."
-     },
-     {
-      "v": "Wat is de functie van een concessie in een betoog?",
-      "o": [
-       "De stelling intrekken en bijstellen",
-       "Een tegenargument erkennen om daarna het eigen standpunt te versterken",
-       "Een nieuw argument introduceren",
-       "De conclusie onderbouwen met een citaat"
-      ],
-      "c": 1,
-      "u": "Concessie: \"Weliswaar klopt X (toegeven), maar toch geldt Y (eigen standpunt handhaven).\" Dit maakt de redenering geloofwaardiger omdat je laat zien dat je de andere kant kent."
-     },
-     {
       "v": "Welk tekstonderdeel bevat de expliciete stelling in een betoog?",
       "o": [
        "De conclusie",
@@ -574,17 +409,6 @@ var VAKKEN = [
       ],
       "c": 1,
       "u": "De stelling staat doorgaans aan het einde van de inleiding, na de context. In de conclusie wordt ze herhaald en bevestigd. De kern bevat de argumenten die de stelling onderbouwen."
-     },
-     {
-      "v": "Je schrijft een betoog voor NL CE en gebruikt dit argument: \"Alle jongeren worden verslaafd aan telefoons.\" Welk probleem heeft dit argument?",
-      "o": [
-       "Het is te lang geformuleerd",
-       "Het is een overhaaste generalisatie: \"alle\" klopt niet op basis van één bewering",
-       "Het gebruikt geen signaalwoord",
-       "Het is geen feit maar een mening, wat verboden is in een betoog"
-      ],
-      "c": 1,
-      "u": "Overhaaste generalisatie: \"alle\" is een absolute claim die niet met bewijs onderbouwd is. Sterker: \"Onderzoek toont dat X% van de jongeren...\" maakt de claim verifieerbaar en geloofwaardig."
      },
      {
       "v": "Welk element ontbreekt in deze alinea: \"Scholen moeten verplicht mediawijsheid geven. Jongeren gebruiken veel sociale media.\"",
@@ -642,15 +466,37 @@ var VAKKEN = [
       "u": "Een goede conclusie herhaalt het standpunt (niet letterlijk), verwijst naar de sterkste argumenten en kan een oproep tot actie of een blik op de toekomst bevatten. Geen nieuwe argumenten."
      },
      {
-      "v": "Wat is het verschil tussen een formele en een informele schrijfstijl?",
+      "v": "Je schrijft een betoog voor NL CE en gebruikt dit argument: \"Alle jongeren worden verslaafd aan telefoons.\" Welk probleem heeft dit argument?",
       "o": [
-       "Formeel: volledige zinnen, geen afkortingen, geen tussenwoorden. Informeel: spreektaal, afkortingen, stopwoorden.",
-       "Ze zijn hetzelfde als de inhoud correct is",
-       "Formeel is altijd beter voor elke situatie",
-       "Informeel wordt nooit op school gebruikt"
+       "Het is te lang geformuleerd",
+       "Het is een overhaaste generalisatie: \"alle\" klopt niet op basis van één bewering",
+       "Het gebruikt geen signaalwoord",
+       "Het is geen feit maar een mening, wat verboden is in een betoog"
+      ],
+      "c": 1,
+      "u": "Overhaaste generalisatie: \"alle\" is een absolute claim die niet met bewijs onderbouwd is. Sterker: \"Onderzoek toont dat X% van de jongeren...\" maakt de claim verifieerbaar en geloofwaardig."
+     },
+     {
+      "v": "Wat is een stelling in een betoog?",
+      "o": [
+       "Een betwistbare bewering die de schrijver in het betoog gaat verdedigen",
+       "Een feit dat bewezen is",
+       "Een samenvatting van alle argumenten",
+       "De conclusie van het betoog"
       ],
       "c": 0,
-      "u": "Schrijfstijl pas je aan op het doel en de ontvanger. Formeel: brieven, essays, rapporten. Informeel: berichtjes, dagboek, vrienden. Op het CE gelden formele standaarden."
+      "u": "Een stelling is de kern van het betoog: concreet, betwistbaar en verdedigbaar. Verschil met een feit: een feit is aantoonbaar waar, een stelling is een standpunt dat je moet onderbouwen."
+     },
+     {
+      "v": "Hoe bouw je een goede alinea op?",
+      "o": [
+       "Kernzin (hoofdpunt) → uitwerking (redenering + bewijs) → afsluiting/overgang",
+       "Drie bewijzen → kernzin → conclusie",
+       "Inleiding → stelling → argument",
+       "Citaat → kernzin → uitwerking"
+      ],
+      "c": 0,
+      "u": "Een sterke alinea begint met de kernzin (het punt dat je wil maken), werkt dit uit met redenering en bewijs, en sluit af met een overgang naar de volgende alinea."
      }
     ],
     "oe": [
@@ -723,39 +569,6 @@ var VAKKEN = [
       "u": "Begin altijd met een globale lezing: wat is het onderwerp? Wat is het doel (informeren, overtuigen)? Welke tekstsoort? Dit bepaalt wat hoofd- en bijzaak is."
      },
      {
-      "v": "Wat laat je WEG in een samenvatting?",
-      "o": [
-       "Details, voorbeelden, herhalingen en uitweidingen die de hoofdpunten niet toevoegen",
-       "De hoofdgedachte van de tekst",
-       "De conclusie van de auteur",
-       "Argumenten die de stelling ondersteunen"
-      ],
-      "c": 0,
-      "u": "Weglaten: voorbeelden (tenzij essentieel), herhalingen, illustraties, citaten en bijzaken. Behouden: hoofdgedachte, kernargumenten, conclusie."
-     },
-     {
-      "v": "Wat bedoelen we met parafraseren?",
-      "o": [
-       "De inhoud in eigen woorden weergeven zonder de betekenis te veranderen",
-       "Letterlijk kopiëren van de tekst",
-       "De tekst inkorten door zinnen te verwijderen",
-       "De volgorde van de tekst omdraaien"
-      ],
-      "c": 0,
-      "u": "Parafraseren = zelfde inhoud, andere formulering. Dit toont begrip. Letterlijk kopiëren is geen samenvatten en telt niet mee voor het SE."
-     },
-     {
-      "v": "Een samenvatting is te lang. Welke stap los dit het best op?",
-      "o": [
-       "Meer signaalwoorden toevoegen",
-       "Details, herhalingen en voorbeelden schrappen die de hoofdpunten niet toevoegen",
-       "De inleiding weggooien",
-       "De conclusie van de auteur weglaten"
-      ],
-      "c": 1,
-      "u": "Inkorten = weglaten van bijzaken. Details en voorbeelden illustreren maar zijn zelden het hoofdpunt zelf. De conclusie van de auteur is juist essentieel."
-     },
-     {
       "v": "Welk signaalwoord geeft in een samenvatting een tegenstelling aan?",
       "o": [
        "Bovendien",
@@ -765,28 +578,6 @@ var VAKKEN = [
       ],
       "c": 2,
       "u": "Tegenstelling: toch, echter, maar, desondanks. Toevoeging: bovendien, ook. Gevolg: daardoor, dus. Volgorde: ten eerste, vervolgens. Signaalwoorden maken een samenvatting coherent."
-     },
-     {
-      "v": "Wat is een \"kernzin\" in een alinea?",
-      "o": [
-       "De langste zin van de alinea",
-       "De zin die het hoofdpunt van de alinea bevat, vaak de eerste of laatste",
-       "De zin met de meeste feiten",
-       "Een zin met een signaalwoord"
-      ],
-      "c": 1,
-      "u": "De kernzin bevat het centrale punt van de alinea. Staat vaak aan het begin (deductief) of aan het einde (inductief). In een samenvatting noteer je per alinea deze kernzin."
-     },
-     {
-      "v": "Wat is het verschil tussen hoofd- en bijzaak in een tekst?",
-      "o": [
-       "Hoofdzaak = de stelling; bijzaak = de voorbeelden en details die de stelling verduidelijken maar weglaten zijn",
-       "Hoofdzaak = de langste alinea; bijzaak = de kortste",
-       "Hoofdzaak is altijd in de eerste alinea; bijzaak in de rest",
-       "Bijzaak = argumenten; hoofdzaak = feiten"
-      ],
-      "c": 0,
-      "u": "Hoofdzaak: kernargumenten, standpunten, conclusies die je niet kunt weglaten zonder de boodschap te verliezen. Bijzaak: illustraties, herhalingen, uitweidingen die de tekst rijker maar niet noodzakelijk maken."
      },
      {
       "v": "Je samenvatting bevat deze zin: \"De auteur vindt dit een goed idee.\" Wat is hier het probleem?",
@@ -809,17 +600,6 @@ var VAKKEN = [
       ],
       "c": 2,
       "u": "Coherentie = logische samenhang. Signaalwoorden leggen verbanden (oorzaak, tegenstelling, gevolg). Zonder coherentie is een samenvatting een opsomming van losse punten."
-     },
-     {
-      "v": "Wat is de eerste stap als je een samenvatting gaat beoordelen die een ander heeft gemaakt?",
-      "o": [
-       "De spelfouten tellen",
-       "Vergelijken met de originele tekst: welke hoofdpunten ontbreken of zijn onjuist weergegeven?",
-       "De lengte tellen",
-       "Controleren of er geen citaten in staan"
-      ],
-      "c": 1,
-      "u": "Beoordeling: vergelijk de samenvatting met de brontekst. Ontbreken er hoofdpunten? Zijn kernargumenten correct weergegeven? Daarna: zijn er onnodige details? Is het coherent?"
      },
      {
       "v": "Wat is het verschil tussen een kernzin en een detail in een alinea?",
@@ -875,6 +655,17 @@ var VAKKEN = [
       ],
       "c": 0,
       "u": "Systematisch aanpak: globaal lezen (overzicht), kernzinnen per alinea noteren, samenvatting schrijven met signaalwoorden, ten slotte controleren op volledigheid en coherentie."
+     },
+     {
+      "v": "Wat laat je WEG in een samenvatting?",
+      "o": [
+       "Details, voorbeelden, herhalingen en uitweidingen die de hoofdpunten niet toevoegen",
+       "De hoofdgedachte van de tekst",
+       "De conclusie van de auteur",
+       "Argumenten die de stelling ondersteunen"
+      ],
+      "c": 0,
+      "u": "Weglaten: voorbeelden (tenzij essentieel), herhalingen, illustraties, citaten en bijzaken. Behouden: hoofdgedachte, kernargumenten, conclusie."
      }
     ],
     "oe": [
@@ -926,39 +717,6 @@ var VAKKEN = [
     "sam": "<div class=\"sam-head\">Standpunt en argumenten</div><ul><li><strong>Standpunt</strong>: de bewering die de schrijver wil verdedigen. Herkenbaar aan: \"ik vind\", \"moet\", \"is goed/slecht\", waarderende taal.</li><li><strong>Argument</strong>: de reden die het standpunt ondersteunt. Signaalwoorden: want, omdat, immers, dus, daarom.</li><li><strong>Subargument</strong>: een argument dat een ander argument ondersteunt (onderschikkende keten).</li></ul><div class=\"sam-head\">Argumentatieschema's (HAVO)</div><ul><li><strong>Oorzaak-gevolg</strong>: A veroorzaakt B. Drogreden: het gevolg kan andere oorzaken hebben.</li><li><strong>Kenmerk</strong>: X heeft eigenschap Y, dus past in categorie Z. Drogreden: de eigenschap klopt niet of is niet relevant.</li><li><strong>Vergelijking</strong>: A is vergelijkbaar met B, dus geldt voor A wat voor B geldt. Drogreden: de situaties wijken op relevante punten af.</li><li><strong>Voorbeeld</strong>: X is een goed voorbeeld van Y, dus geldt Y in het algemeen. Drogreden: overhaaste generalisatie — te weinig voorbeelden.</li><li><strong>Autoriteit</strong>: deskundige Z zegt X. Drogreden: bron is niet deskundig of belanghebbend.</li></ul><div class=\"sam-head\">Drogredenen</div><ul><li><strong>Overhaaste generalisatie</strong>: van één of weinig gevallen een algemene conclusie trekken.</li><li><strong>Cirkelredenering</strong>: het standpunt wordt als bewijs voor zichzelf gebruikt.</li><li><strong>Ad hominem</strong>: de persoon aanvallen in plaats van het argument.</li><li><strong>Vals dilemma</strong>: twee opties presenteren terwijl er meer mogelijk zijn.</li><li><strong>Gezagsdrogreden</strong>: beroep op autoriteit die niet deskundig is op dit gebied.</li></ul>",
     "sv": [
      {
-      "v": "Welk argumentatieschema wordt gebruikt bij: \"Landen die dit beleid invoerden, zagen criminaliteit dalen — dus Nederland moet het ook invoeren\"?",
-      "o": [
-       "Vergelijkingsschema: de ene situatie is vergelijkbaar met de andere",
-       "Oorzaak-gevolgschema",
-       "Autoriteitsschema",
-       "Voorbeeldschema (inductie)"
-      ],
-      "c": 0,
-      "u": "Vergelijkingsschema: wat in de ene situatie geldt, geldt ook in de vergelijkbare situatie. Drogreden: landen kunnen op relevante punten verschillen (cultuur, omvang, inkomen) waardoor de vergelijking mank gaat."
-     },
-     {
-      "v": "Wat is een cirkelredenering?",
-      "o": [
-       "Het standpunt wordt gebruikt als bewijs voor zichzelf: \"X is goed want X is goed\"",
-       "Een redenering met meer dan twee stappen",
-       "Een argument gebaseerd op een vergelijking",
-       "Een drogreden waarbij de bron onbetrouwbaar is"
-      ],
-      "c": 0,
-      "u": "Cirkelredenering: het argument voegt geen nieuwe informatie toe aan het standpunt. Voorbeeld: \"Cannabis moet legaal zijn want het verbod is onzinnig — en het verbod is onzinnig omdat cannabis legaal zou moeten zijn.\""
-     },
-     {
-      "v": "Iemand zegt: \"Jij kunt mij niets vertellen over eerlijkheid — je hebt zelf ook wel eens gelogen.\" Welke drogreden is dit?",
-      "o": [
-       "Ad hominem: aanval op de persoon in plaats van het argument",
-       "Vals dilemma: twee keuzes presenteren",
-       "Gezagsdrogreden: beroep op ondeskundige",
-       "Overhaaste generalisatie"
-      ],
-      "c": 0,
-      "u": "Ad hominem: de tegenpartij wordt aangevallen op persoonlijke eigenschappen in plaats van op de inhoud van zijn argument. De drogreden maakt het argument niet ongeldig."
-     },
-     {
       "v": "Wat is een vals dilemma?",
       "o": [
        "Slechts twee opties presenteren terwijl er meer mogelijkheden zijn",
@@ -992,17 +750,6 @@ var VAKKEN = [
       "u": "Argumentsignaalwoorden: want, omdat, immers, dus, daarom. Tegenstellingssignaalwoorden: echter, maar, toch. \"Immers\" introduceert een argument dat vanzelfsprekend lijkt."
      },
      {
-      "v": "Een tekst zegt: \"Iedereen weet dat elektriciteit de toekomst is.\" Welke drogreden is dit?",
-      "o": [
-       "Ad hominem",
-       "Vals dilemma",
-       "Overhaaste generalisatie / beroep op consensus",
-       "Cirkelredenering"
-      ],
-      "c": 2,
-      "u": "\"Iedereen weet\" = beroep op consensus. Dit is een gezagsdrogreden variant: breed draagvlak is geen bewijs van waarheid. Het is ook een overhaaste generalisatie als niet iedereen het werkelijk vindt."
-     },
-     {
       "v": "Wat is het kenmerk van een onderschikkende argumentatiestructuur?",
       "o": [
        "Meerdere onafhankelijke argumenten steunen elk apart het standpunt",
@@ -1025,17 +772,6 @@ var VAKKEN = [
       "u": "Autoriteitsschema: een deskundige (arts) onderbouwt het standpunt. Drogreden wordt het als de bron buiten zijn vakgebied spreekt of een belang heeft (reclame door arts die betaald wordt)."
      },
      {
-      "v": "Wat maakt een argument \"aanvaardbaar\" op het HAVO CE?",
-      "o": [
-       "Het argument is lang en gedetailleerd",
-       "Het argument is controleerbaar, relevant voor het standpunt en niet gebaseerd op een drogreden",
-       "Het argument bevat een cijfer of statistiek",
-       "Het argument staat bovenaan de tekst"
-      ],
-      "c": 1,
-      "u": "Aanvaardbaarheid: (1) is de bewering controleerbaar/plausibel? (2) is er een logisch verband met het standpunt? (3) is er geen drogreden? Alle drie moeten kloppen."
-     },
-     {
       "v": "Iemand zegt: \"Je bent óf vóór strengere klimaatwetten, óf je wil de planeet vernietigen.\" Welke drogreden?",
       "o": [
        "Overhaaste generalisatie",
@@ -1045,17 +781,6 @@ var VAKKEN = [
       ],
       "c": 2,
       "u": "Vals dilemma: er worden slechts twee opties gepresenteerd terwijl er meer zijn (bijv. middenweg, andere aanpak). Herkenbaar aan \"óf…óf\", \"je bent voor of tegen\"."
-     },
-     {
-      "v": "Wat is het verschil tussen een standpunt en een argument?",
-      "o": [
-       "Standpunt = de bewering die verdedigd wordt; argument = de reden waarom het standpunt klopt",
-       "Ze zijn hetzelfde",
-       "Argument is het hoofdpunt; standpunt ondersteunt het",
-       "Standpunt bevat altijd een feit; argument een mening"
-      ],
-      "c": 0,
-      "u": "Standpunt: wat beweer je? (te herkennen aan waarderend taalgebruik: moet, is goed/slecht). Argument: waarom? (signaalwoorden: want, omdat). Zonder argument is een standpunt niet verdedigd."
      },
      {
       "v": "Welk argumentatieschema gebruikt een deskundige als onderbouwing van een standpunt?",
@@ -1325,17 +1050,6 @@ var VAKKEN = [
       "u": "Personificatie: \"De wind fluisterde geheimen.\" Een levenloze zaak (wind) krijgt menselijk gedrag (fluisteren). Metafoor: directe gelijkstelling. Vergelijking: met \"als\" of \"zoals\"."
      },
      {
-      "v": "Welk begrip onderscheidt de \"ik-verteller\" van de \"personale verteller\"?",
-      "o": [
-       "Ik-verteller: eerste persoon, personage in het verhaal. Personale verteller: derde persoon, perspectief van één personage.",
-       "Ze zijn identiek",
-       "Personale verteller gebruikt de eerste persoon",
-       "Ik-verteller is altijd alwetend"
-      ],
-      "c": 0,
-      "u": "Ik-verteller: schrijft in de eerste persoon (\"ik\"), is een personage. Personale verteller: schrijft in de derde persoon maar volgt één personage van binnenuit. Beide zijn beperkt in perspectief."
-     },
-     {
       "v": "Wat is een \"in medias res\" opening in een verhaal?",
       "o": [
        "Het verhaal begint midden in de actie, zonder uitgebreide introductie",
@@ -1575,17 +1289,6 @@ var VAKKEN = [
     "sam": "<div class=\"sam-head\">Rekenen (B1 — CE)</div><ul><li><strong>Procenten en verhoudingen</strong>: percentage van een getal: p% van a = (p/100)·a. Verhouding: a op b schrijf je als a:b of a/b. Evenredig: als x verdubbelt, verdubbelt y ook.</li><li><strong>Procentuele verandering</strong>: stijging van p% → nieuw = oud × (1 + p/100). Daling p% → nieuw = oud × (1 − p/100). Omgekeerd: oud = nieuw / groeifactor.</li><li><strong>Eenheden omrekenen</strong>: lengte (km/m/cm/mm), oppervlakte (1 km² = 10⁶ m²), inhoud (1 m³ = 1000 L), snelheid (km/h → m/s: deel door 3,6).</li><li><strong>Benaderend rekenen</strong>: afronden op significante cijfers. Bijv. 3,14159 → 3,14 (3 s.f.). Tussenuitkomsten nooit afronden; alleen het eindantwoord.</li><li><strong>Proportioneel redeneren</strong>: als a/b = c/d dan a·d = b·c (kruisproduct). Bijv. 3 kg voor €4,50 → x kg voor €7,50: x = 3 × 7,50 / 4,50 = 5 kg.</li></ul><div class=\"sam-head\">Algebra (B2 — CE)</div><ul><li><strong>Herleiden</strong>: vereenvoudigen van uitdrukkingen door haakjes uitwerken, gelijknamige termen samenvoegen. Bijv. 3(x+2) − x = 2x + 6.</li><li><strong>Lineaire vergelijking</strong>: ax + b = c → isoleer x. Bijv. 2x + 5 = 11 → x = 3.</li><li><strong>Kwadratische vergelijking</strong>: ax² + bx + c = 0. Oplossen via abc-formule: <span class=\"fm\">x = (−b ± √(b²−4ac)) / 2a</span>. Discriminant D = b²−4ac: D > 0 geeft 2 oplossingen, D = 0 geeft 1, D &lt; 0 geeft geen reële oplossing.</li><li><strong>Ontbinden in factoren</strong>: ax² + bx + c = a(x − x₁)(x − x₂) als x₁ en x₂ bekend zijn.</li></ul><div class=\"sam-head\">Machten en logaritmen (B2 — CE)</div><ul><li><strong>Exponentrekenregels</strong>: <span class=\"fm\">aˣ · aʸ = aˣ⁺ʸ</span>, <span class=\"fm\">aˣ / aʸ = aˣ⁻ʸ</span>, <span class=\"fm\">(aˣ)ʸ = aˣ·ʸ</span>, <span class=\"fm\">a⁰ = 1</span></li><li><strong>Logaritme</strong>: inverse van machtsverheffen met grondtal 10. <span class=\"fm\">log a = x ⟺ 10ˣ = a</span>. Bijv. log 1000 = 3.</li><li><strong>Logaritme rekenregels</strong>: <span class=\"fm\">log(a·b) = log a + log b</span> | <span class=\"fm\">log(a/b) = log a − log b</span> | <span class=\"fm\">log(aⁿ) = n · log a</span></li><li><strong>Wortelschrijfwijze</strong>: <span class=\"fm\">√a = a^(1/2)</span>, <span class=\"fm\">∛a = a^(1/3)</span></li></ul><div class=\"sam-head\">Telproblemen (B3) <span style=\"color:var(--warn);font-size:11px\">⚠️ SE-stof — staat niet op CE</span></div><ul><li><strong>Vermenigvuldigingsprincipe</strong>: als keuze A op m manieren kan en keuze B op n manieren, zijn er m × n combinaties totaal.</li><li><strong>Permutatie</strong>: volgorde telt mee. n! = n × (n−1) × … × 1. Bijv. 3! = 6 volgorden van 3 items.</li><li><strong>Combinatie</strong>: volgorde telt niet. <span class=\"fm\">C(n,k) = n! / (k! · (n−k)!)</span>. Bijv. C(5,2) = 10 manieren om 2 uit 5 te kiezen.</li><li><strong>Nkr vs nCr</strong>: nPr = n!/(n−k)! (met volgorde), nCr = nPr/k! (zonder volgorde). Combinatie is altijd kleiner dan of gelijk aan permutatie.</li></ul>",
     "sv": [
      {
-      "v": "Wat is de groeifactor bij een procentuele stijging van p%?",
-      "o": [
-       "1 plus p/100 (bijv. 5% groei → 1,05)",
-       "p/100 (bijv. 5% → 0,05)",
-       "1 min p/100 (vervalpercentage)",
-       "100 plus p"
-      ],
-      "c": 0,
-      "u": "Groeifactor g = 1 + p/100. Bijv. 12% groei → g = 1,12. Bij verval p%: g = 1 − p/100. Bijv. 8% daling → g = 0,92. Sleutelbegrip voor alle exponentiële verbanden."
-     },
-     {
       "v": "Welke rekenregel geldt voor log(a tot de macht n)?",
       "o": [
        "n·log(a)",
@@ -1595,17 +1298,6 @@ var VAKKEN = [
       ],
       "c": 0,
       "u": "Machtrekenregel: log(a tot de n) = n·log(a). Bijv. log(1000) = log(10³) = 3·log(10) = 3. Deze regel volgt uit de definitie van de logaritme."
-     },
-     {
-      "v": "Wat is een logaritme?",
-      "o": [
-       "Inverse van machtsverheffen: 10^x = a",
-       "Directe machtsverheffing: log(a) = 10^a",
-       "De n-de wortel: a^(1/n)",
-       "Verhouding van machten: a/10"
-      ],
-      "c": 0,
-      "u": "log(a) = x betekent dat 10^x = a. Bijv. log(1000) = 3 want 10³ = 1000. Logaritme is de inverse operatie van machtsverheffen."
      },
      {
       "v": "Welke rekenregel geldt voor log(a·b)?",
@@ -1672,17 +1364,6 @@ var VAKKEN = [
       ],
       "c": 0,
       "u": "log (zonder subscript) = grondtal 10. ²log = grondtal 2. ²log(8) = 3 want 2³ = 8. log(1000) = 3 want 10³ = 1000."
-     },
-     {
-      "v": "Hoe schrijf je √x als machtsvorm?",
-      "o": [
-       "x^(1/2)",
-       "x^2",
-       "x^(−1)",
-       "2x"
-      ],
-      "c": 0,
-      "u": "√x = x^(1/2). Derdemachtswortel ∛x = x^(1/3). Algemeen: ⁿ√x = x^(1/n). Dit maakt rekenen met machtsregels mogelijk."
      },
      {
       "v": "Wat is x tot de macht 0, voor elke x ongelijk aan 0?",
@@ -1760,28 +1441,6 @@ var VAKKEN = [
       ],
       "c": 0,
       "u": "√8 · √2 = √16 = 4 (wortel van een product)."
-     },
-     {
-      "v": "Werk de haakjes uit: 3(2x + 4).",
-      "o": [
-       "6x + 12",
-       "6x + 4",
-       "5x + 7",
-       "2x + 12"
-      ],
-      "c": 0,
-      "u": "Vermenigvuldig 3 met elke term: 3·2x + 3·4 = 6x + 12."
-     },
-     {
-      "v": "Werk uit: (x + 2)(x + 3).",
-      "o": [
-       "x² + 5x + 6",
-       "x² + 6x + 5",
-       "x² + 6",
-       "x² + 5x + 5"
-      ],
-      "c": 0,
-      "u": "De som 2 + 3 = 5 wordt de x-coëfficiënt en het product 2·3 = 6 de constante."
      },
      {
       "v": "Hoeveel is 15% van 80?",
@@ -1945,17 +1604,6 @@ var VAKKEN = [
       "u": "Exponentieel: y = a·g tot de macht x. Groeifactor g > 1 is groei; 0 < g < 1 is verval. De procentuele verandering per stap is constant."
      },
      {
-      "v": "Wat is de groeifactor bij een groei van 7% per jaar?",
-      "o": [
-       "1,07 (1 + 7/100)",
-       "0,93 (1 − 7/100)",
-       "7 (het percentage zelf)",
-       "0,07 (7/100)"
-      ],
-      "c": 0,
-      "u": "Groeifactor g = 1 + p/100 = 1,07. Bij verval 7%: g = 0,93. Altijd beginnen met 1, dan ± het percentage gedeeld door 100."
-     },
-     {
       "v": "Wat beschrijft de rico van een lineaire functie?",
       "o": [
        "De helling: de verandering van y als x met 1 toeneemt",
@@ -1967,17 +1615,6 @@ var VAKKEN = [
       "u": "Rico a is de steilheid van de lijn. Positief: stijgend. Negatief: dalend. Berekening: a = Δy / Δx."
      },
      {
-      "v": "Wat is de halveringstijd bij exponentieel verval?",
-      "o": [
-       "Tijd tot halvering: T½ = log(0,5)/log(g)",
-       "Tijd tot verdubbeling: T₂ = log(2)/log(g)",
-       "Helft van beginwaarde: y = a/2",
-       "Groeifactor na halveringstijdstap: g = 0,5"
-      ],
-      "c": 0,
-      "u": "Halveringstijd: na T½ is er nog 50% over. Formule: T half = log(0,5) gedeeld door log(g). Radioactief verval en medicijnafbraak volgen dit patroon."
-     },
-     {
       "v": "Welke grafiek hoort bij exponentieel verval (0 < g < 1)?",
       "o": [
        "Dalende curve met asymptoot y = 0",
@@ -1987,17 +1624,6 @@ var VAKKEN = [
       ],
       "c": 0,
       "u": "Exponentieel verval: y = a·g^x met 0 < g < 1. De grafiek daalt steeds minder snel en nadert de x-as maar bereikt die nooit (asymptoot)."
-     },
-     {
-      "v": "Hoe bereken je de rico a als je twee punten (x₁,y₁) en (x₂,y₂) kent?",
-      "o": [
-       "a = (y₂ − y₁) / (x₂ − x₁)",
-       "a = (x₂ − x₁) / (y₂ − y₁)",
-       "a = y₁ / x₁",
-       "a = (y₁ + y₂) / 2"
-      ],
-      "c": 0,
-      "u": "Rico = Δy gedeeld door Δx: hoeveel y verandert bij een stap van 1 in x. Positief is stijgend, negatief is dalend."
      },
      {
       "v": "Wat is de beginwaarde in het exponentieel verband y = a · g^x?",
@@ -2077,17 +1703,6 @@ var VAKKEN = [
       "u": "b is de startwaarde: het snijpunt met de y-as (bij x = 0)."
      },
      {
-      "v": "Bereken de richtingscoëfficiënt door (10, 100) en (20, 200).",
-      "o": [
-       "10",
-       "100",
-       "0,1",
-       "30"
-      ],
-      "c": 0,
-      "u": "a = Δy / Δx = (200 − 100) / (20 − 10) = 10."
-     },
-     {
       "v": "Wat is het y-snijpunt van y = 4x − 2?",
       "o": [
        "(0, −2)",
@@ -2097,17 +1712,6 @@ var VAKKEN = [
       ],
       "c": 0,
       "u": "Vul x = 0 in: y = −2, dus het punt (0, −2)."
-     },
-     {
-      "v": "Bij een groei van 7% per jaar is de groeifactor …",
-      "o": [
-       "1,07",
-       "0,07",
-       "7",
-       "0,93"
-      ],
-      "c": 0,
-      "u": "Groeifactor = 1 + 7/100 = 1,07."
      },
      {
       "v": "Wat betekent groeifactor g = 0,8 per jaar?",
@@ -2143,17 +1747,6 @@ var VAKKEN = [
       "u": "Verdubbelen: los gᵗ = 2 op (bijvoorbeeld met de GR via intersect)."
      },
      {
-      "v": "Hoe bereken je het snijpunt met de x-as?",
-      "o": [
-       "Stel f(x) = 0 en los op",
-       "Vul x = 0 in de formule",
-       "Bereken de richtingscoëfficiënt",
-       "Lees de startwaarde b af"
-      ],
-      "c": 0,
-      "u": "Op de x-as is y = 0, dus stel f(x) = 0."
-     },
-     {
       "v": "Wat is interpoleren?",
       "o": [
        "Schatten binnen de meetwaarden",
@@ -2185,17 +1778,6 @@ var VAKKEN = [
       ],
       "c": 0,
       "u": "Bij verzadiging vlakt de groei af en nadert de hoeveelheid een maximum."
-     },
-     {
-      "v": "Twee lijnen f en g snijden elkaar waar …",
-      "o": [
-       "f(x) = g(x)",
-       "f(x) = 0",
-       "g(x) = 0",
-       "x = 0"
-      ],
-      "c": 0,
-      "u": "Snijpunt van twee grafieken: stel de functies aan elkaar gelijk."
      }
     ],
     "oe": [
@@ -2317,17 +1899,6 @@ var VAKKEN = [
       "u": "Machtsfunctieregel: (axⁿ)' = n·a·x^(n-1). Exponent daalt met 1 en komt als factor naar voren. Bijv. (4x²)' = 8x. Constante heeft afgeleide 0."
      },
      {
-      "v": "Hoe bepaal je een maximum of minimum van f(x)?",
-      "o": [
-       "Stel f'(x) = 0, maak tekenschema: + naar − is max",
-       "Stel f(x) = 0: geeft nulpunten, niet extremen",
-       "Stel f''(x) = 0: geeft buigpunten",
-       "Gebruik f(0): geeft beginwaarde"
-      ],
-      "c": 0,
-      "u": "f'(x) = 0 geeft kandidaat-extremen. Tekenschema van f' bepaalt het type: + naar − = maximum. − naar + = minimum."
-     },
-     {
       "v": "Wat is het verschilquotiënt?",
       "o": [
        "(f(b)−f(a))/(b−a): gemiddelde verandering over [a,b]",
@@ -2394,28 +1965,6 @@ var VAKKEN = [
       "u": "f'(x) < 0: helling negatief → dalend. f'(x) > 0: stijgend. f'(x) = 0: horizontale raaklijn, mogelijk een extremum."
      },
      {
-      "v": "Wat is \"afnemend stijgend\" bij een functie?",
-      "o": [
-       "f'(x) > 0 én f''(x) < 0: stijgt maar vertraagt",
-       "f'(x) > 0 én f''(x) > 0: stijgt en versnelt",
-       "f'(x) < 0 én f''(x) < 0: daalt en versnelt",
-       "f'(x) = 0: heeft een extreem"
-      ],
-      "c": 0,
-      "u": "Afnemend stijgend: grafiek stijgt (f' > 0) maar buigt omlaag (f'' < 0). Je ziet dit vlak voor een maximum. Toenemend stijgend: f' en f'' beide positief."
-     },
-     {
-      "v": "Wat is de afgeleide van f(x) = 6x³?",
-      "o": [
-       "18x²",
-       "6x²",
-       "3x²",
-       "18x³"
-      ],
-      "c": 0,
-      "u": "Machtsfunctieregel: (6x³)' = 3·6·x^(3−1) = 18x². Exponent daalt met 1 en de originele exponent komt als factor naar voren."
-     },
-     {
       "v": "Wat geeft Δx aan?",
       "o": [
        "Een verschil op de x-as",
@@ -2436,17 +1985,6 @@ var VAKKEN = [
       ],
       "c": 0,
       "u": "Het differentiequotiënt is de gemiddelde helling over een interval."
-     },
-     {
-      "v": "Bereken het differentiequotiënt tussen (1, 0) en (3, 8).",
-      "o": [
-       "4",
-       "2",
-       "8",
-       "6"
-      ],
-      "c": 0,
-      "u": "a = (8 − 0) / (3 − 1) = 8 / 2 = 4."
      },
      {
       "v": "Wat geldt voor een raaklijn aan een grafiek?",
@@ -2524,17 +2062,6 @@ var VAKKEN = [
       ],
       "c": 0,
       "u": "Een toenamediagram zet de differenties (Δy) van opeenvolgende intervallen in staven."
-     },
-     {
-      "v": "Hoe bereken je de helling in een driehoek?",
-      "o": [
-       "Hoogteverschil / breedteverschil",
-       "Breedteverschil / hoogteverschil",
-       "Hoogte maal breedte",
-       "Hoogte plus breedte"
-      ],
-      "c": 0,
-      "u": "Helling = verticaal verschil gedeeld door horizontaal verschil."
      },
      {
       "v": "Hoe bepaal je de helling van een raaklijn?",
@@ -2845,17 +2372,6 @@ var VAKKEN = [
       "u": "Bij een normale verdeling liggen de punten op een rechte lijn."
      },
      {
-      "v": "Hoe bereken je de standaardafwijking van een proportie?",
-      "o": [
-       "√(p(1 − p) / n)",
-       "p(1 − p) / n",
-       "√(p · n)",
-       "p / n"
-      ],
-      "c": 0,
-      "u": "σ = √(p(1 − p) / n), met p de proportie en n de steekproefgrootte."
-     },
-     {
       "v": "Het 95%-betrouwbaarheidsinterval loopt van …",
       "o": [
        "p − 2σ tot p + 2σ",
@@ -3099,28 +2615,6 @@ var VAKKEN = [
       "u": "Betrouwbaarheid = herhaalbaarheid. Als andere onderzoekers hetzelfde experiment uitvoeren en dezelfde resultaten krijgen, is het betrouwbaar. Validiteit gaat over of je het juiste meet."
      },
      {
-      "v": "Een grafiek toont fotosynthesesnelheid bij toenemende lichtintensiteit. Na een bepaald punt vlakt de lijn af. Wat betekent dit?",
-      "o": [
-       "Er is een lineair verband",
-       "Licht is niet langer de beperkende factor; iets anders limiteert nu de snelheid",
-       "De plant stopt met fotosynthese bij te veel licht",
-       "Er is een dalend verband"
-      ],
-      "c": 1,
-      "u": "Plateau = beperkende factor. Als de snelheid niet meer stijgt bij meer licht, is CO₂-concentratie of temperatuur de nieuwe beperkende factor. Typisch voor enzymatische reacties."
-     },
-     {
-      "v": "Welke van de volgende uitspraken is een geldige hypothese?",
-      "o": [
-       "\"Wat is de invloed van temperatuur op enzymen?\"",
-       "\"Enzymactiviteit verschilt per organisme\"",
-       "\"Als de temperatuur stijgt tot 37°C, neemt de enzymatische activiteit toe, omdat enzymen dan de optimale werking bereiken\"",
-       "\"37°C is de optimale temperatuur voor alle enzymen\""
-      ],
-      "c": 2,
-      "u": "Een hypothese is testbaar en heeft de vorm: Als [OV] dan [verwacht effect], omdat [redenering]. Optie 1 is een onderzoeksvraag. Opties 2 en 4 zijn beweringen zonder als-dan structuur."
-     },
-     {
       "v": "Welke conclusie trek je als je hypothese door de data NIET wordt ondersteund?",
       "o": [
        "De hypothese is verworpen; herformuleer op basis van de resultaten",
@@ -3163,17 +2657,6 @@ var VAKKEN = [
       ],
       "c": 0,
       "u": "De controlegroep ontvangt geen behandeling (nulconditie). Het vergelijken van de experimentele groep met de controlegroep maakt het mogelijk het effect van de OV aan te tonen."
-     },
-     {
-      "v": "Hoe maak je een hypothese testbaar?",
-      "o": [
-       "Formuleer als: als [OV], dan [verwacht effect op AV], omdat [redenering]",
-       "Zeg alleen: \"ik verwacht dat X verandert\"",
-       "Beschrijf de methode die je gebruikt",
-       "Stel een open vraag over het onderwerp"
-      ],
-      "c": 0,
-      "u": "Een testbare hypothese heeft de als-dan-structuur en een reden. Zo kun je de hypothese bevestigen of verwerpen op basis van empirische data."
      },
      {
       "v": "Waarom zijn meerdere herhalingen (replicaties) belangrijk in biologisch onderzoek?",
@@ -3396,17 +2879,6 @@ var VAKKEN = [
     "sam": "<div class=\"sam-head\">Celorganellen en stofwisseling</div><ul><li><strong>Mitochondrion</strong>: aerobe celademhaling → 36–38 ATP per glucose. Eigen DNA (endosymbiose). Aanwezig in alle eukaryote cellen.</li><li><strong>Chloroplast</strong>: fotosynthese. Bevat chlorofyl (groen pigment) voor lichtabsorptie. Alleen in plantencel en algen. Eigen DNA (endosymbiose).</li><li><strong>Ribosoom</strong>: eiwitsynthese (translatie). Op ruw endoplasmatisch reticulum of vrij in cytoplasma. Aanwezig in alle cellen (ook prokaryoten).</li><li><strong>Celmembraan</strong>: selectief doorlaatbaar. Fosfolipiden-dubbellaag met eiwitten. Regelt in- en uitstroom van stoffen.</li><li><strong>Fotosynthese (globaal)</strong>: <span class=\"fm\">6CO₂ + 6H₂O + lichtenergie → C₆H₁₂O₆ + 6O₂</span>. Lichtreacties (thylakoid, ATP + NADPH aanmaken) + donkerreacties/Calvincyclus (stroma, glucose bouwen).</li><li><strong>Aerobe celademhaling</strong>: <span class=\"fm\">C₆H₁₂O₆ + 6O₂ → 6CO₂ + 6H₂O + 36–38 ATP</span>. Fasen: glycolyse (cytoplasma) → citroenzuurcyclus → oxidatieve fosforylering (mitochondrion).</li><li><strong>Anaerobe gisting</strong>: glucose → ethanol + CO₂ + 2 ATP (gistcellen) of melkzuur + 2 ATP (spiercellen). Noodoplossing bij zuurstoftekort. Zeer inefficiënt.</li><li><strong>Beperkende factor fotosynthese</strong>: licht, CO₂-concentratie of temperatuur kan de snelheid beperken. Bij plateau → andere factor is beperkend.</li></ul><div class=\"sam-head\">DNA, transcriptie en translatie</div><ul><li><strong>DNA-structuur</strong>: antiparallelle dubbelhelix van nucleotiden. Basenparen: A−T (2 H-bruggen) en G−C (3 H-bruggen, sterker). In elke lichaamscel identiek aanwezig.</li><li><strong>Replicatie</strong>: DNA-dubbelstreng wordt gesplitst; aan elke streng wordt complementair een nieuwe streng gesynthetiseerd. Semi-conservatief: helft oud, helft nieuw. Vindt plaats vóór celdeling.</li><li><strong>Transcriptie</strong>: DNA → mRNA in de celkern. Slechts één streng dient als mal. mRNA verlaat de kern via kernporiën.</li><li><strong>Translatie</strong>: mRNA → aminozuurketen op het ribosoom. tRNA brengt de juiste aminozuren aan. Elk codon (3 basen van mRNA) codeert voor 1 aminozuur. Stopcodon beëindigt de keten.</li><li><strong>Mutaties</strong>: verandering in DNA. Puntmutatie (één base gewijzigd), insertie (base ingevoegd), deletie (base verwijderd). Insertie en deletie veroorzaken frameshift: alle codons erna veranderen → groot effect. Puntmutatie soms stil (zelfde aminozuur door degenerate code).</li><li><strong>Genexpressie</strong>: welke genen zijn actief hangt af van het celtype en omstandigheden. Transcriptiefactoren reguleren of een gen aan- of uitstaat. Eenzelfde DNA → verschillende cellen door differentiële genexpressie.</li></ul><div class=\"sam-head\">Celdeling en erfelijkheid</div><ul><li><strong>Mitose</strong>: gelijk-delende kern → 2 identieke dochtercellen (2n → 2n). Voor groei, herstel en ongeslachtelijke voortplanting. Gaat via profase → metafase → anafase → telofase.</li><li><strong>Meiose</strong>: reductiedeling → 4 haplode geslachtscellen (2n → 4×n). Crossing-over in profase I: uitwisseling van chromosoomstukken → genetische variatie. Basis van seksuele voortplanting.</li><li><strong>Mendelse overerving</strong>: dominant allel (B) onderdrukt recessief (b). Genotype BB of Bb → fenotype dominant. Genotype bb → fenotype recessief. Kruis Bb × Bb geeft: ¼ BB : ½ Bb : ¼ bb = 3 dominant : 1 recessief.</li><li><strong>X-gebonden overerving</strong>: gen op X-chromosoom. Mannen (XY): één X → recessief allel direct zichtbaar. Vrouwen (XX): draagster als slechts één X het recessieve allel heeft. Kleurenblindheid, hemofilie zijn klassieke voorbeelden.</li><li><strong>Stamboom analyseren</strong>: aangedaan = eigenschap zichtbaar (verschijnt in fenotype). Drager = Bb (niet aangedaan maar kan het doorgeven). Let op geslacht van aangedane personen voor X-gebonden erfelijkheid.</li></ul><div class=\"sam-head\">Biotechnologie en gentech</div><ul><li><strong>PCR (polymerasekettingreactie)</strong>: vermenigvuldigt een specifiek stukje DNA miljoenen keren. Gebruikt bij forensisch onderzoek, diagnose van infecties en genetisch onderzoek.</li><li><strong>Gel-elektroforese</strong>: scheidt DNA-fragmenten op grootte. Kortere fragmenten bewegen sneller. Gebruikt om personen te identificeren (DNA-profiel) of genmutaties aan te tonen.</li><li><strong>Genetische modificatie (GM)</strong>: een gen van een andere soort wordt in het DNA van een organisme ingevoegd. Bijv. insuline-producerende bacteriën (menselijk insulinegen in bacterieel DNA).</li><li><strong>CRISPR-Cas9</strong>: moleculaire schaar die precies op één plek het DNA knipt. Kan genen uitschakelen of vervangen. Medische en landbouwtoepassingen (nog in onderzoek).</li><li><strong>Ethische vragen GM</strong>: voordelen (medicijnen, resistente gewassen) versus risico (verspreiding transgene genen in ecosysteem, onvoorziene gevolgen).</li></ul>",
     "sv": [
      {
-      "v": "Wat is de functie van mitochondrien?",
-      "o": [
-       "Uitvoeren van aerobe celademhaling en produceren van ATP",
-       "Fotosynthese uitvoeren",
-       "Eiwitten produceren via ribosomen",
-       "Genetische informatie opslaan"
-      ],
-      "c": 0,
-      "u": "Mitochondrien zijn de energiecentrales van de cel. Glucose en zuurstof worden omgezet in CO2, water en 36 tot 38 ATP."
-     },
-     {
       "v": "Welke basenparen komen voor in DNA?",
       "o": [
        "Adenine-Thymine en Guanine-Cytosine",
@@ -3506,17 +2978,6 @@ var VAKKEN = [
       "u": "Eerste wet van Mendel (wet van scheiding): bij de vorming van geslachtscellen worden de twee allelen van een gen van elkaar gescheiden. Elk gamet bevat slechts één allel."
      },
      {
-      "v": "Wat is het verschil tussen mitose en meiose?",
-      "o": [
-       "Mitose: twee identieke dochtercellen (2n→2n). Meiose: vier geslachtscellen (2n→n).",
-       "Ze zijn identiek",
-       "Mitose geeft geslachtscellen",
-       "Meiose geeft twee identieke cellen"
-      ],
-      "c": 0,
-      "u": "Mitose: voor groei en herstel. Meiose: voor gameten (2n → 4×n). Meiose heeft ook crossing-over wat genetische variatie verhoogt."
-     },
-     {
       "v": "Welke organellen bevatten eigen DNA en zijn waarschijnlijk via endosymbiose ontstaan?",
       "o": [
        "Mitochondriën en chloroplasten",
@@ -3528,17 +2989,6 @@ var VAKKEN = [
       "u": "Endosymbiose-theorie: mitochondriën en chloroplasten stonden ooit als zelfstandige bacteriën en werden opgenomen in een gastheercel. Ze hebben eigen DNA, eigen ribosomen en delen door deling."
      },
      {
-      "v": "Wat is het verschil tussen een recessief en een dominant allel?",
-      "o": [
-       "Dominant: bepaalt het fenotype ook bij aanwezigheid van een recessief allel. Recessief: alleen zichtbaar als homozygoot.",
-       "Recessief is sterker dan dominant",
-       "Dominant en recessief zijn altijd gelijk uitgedrukt",
-       "Het hangt af van het geslacht"
-      ],
-      "c": 0,
-      "u": "Bb: dominant allel B bepaalt het fenotype. bb: recessief allel b kan zich pas uiten als er geen dominant allel aanwezig is. Homozygoot dominant (BB) en heterozygoot (Bb) hebben hetzelfde fenotype."
-     },
-     {
       "v": "Welk type mutatie verschuift het leesraam van alle codons na het insertiepunt?",
       "o": [
        "Insertie van één nucleotide: frameshiftmutatie",
@@ -3548,17 +2998,6 @@ var VAKKEN = [
       ],
       "c": 0,
       "u": "Frameshiftmutatie: het invoegen of verwijderen van één nucleotide verschuift het leesraam van alle codons daarna. Heeft in de regel ernstige gevolgen voor het eiwit. Puntmutatie verandert maar één aminozuur."
-     },
-     {
-      "v": "Wat is de rol van mRNA in de eiwitsynthese?",
-      "o": [
-       "mRNA draagt de genetische informatie van de celkern naar het ribosoom als tijdelijke kopie",
-       "mRNA is het eindproduct van translatie",
-       "mRNA slaat eiwitten op in het endoplasmatisch reticulum",
-       "mRNA verdubbelt het DNA bij replicatie"
-      ],
-      "c": 0,
-      "u": "Transcriptie: DNA → mRNA in de kern. mRNA verlaat de kern en gaat naar een ribosoom. Translatie: ribosoom leest de codons van mRNA en verbindt de bijbehorende aminozuren tot een eiwit."
      },
      {
       "v": "Wat betekent «Cel»?",
@@ -3938,17 +3377,6 @@ var VAKKEN = [
       "u": "Insuline (bètacellen alvleesklier): stimuleert glucoseopname in cellen, bloedsuiker daalt. Glucagon (alfacellen): glycogeenafbraak in lever, bloedsuiker stijgt."
      },
      {
-      "v": "Wat is de functie van een neurotransmitter?",
-      "o": [
-       "Het overbrengen van het zenuwsignaal over de synaptische spleet naar het volgende neuron",
-       "Het geleiden van het actiepotentiaal langs het axon",
-       "Het beschermen van het axon met de myelineschede",
-       "Het produceren van hormonen"
-      ],
-      "c": 0,
-      "u": "Neurotransmitters worden vrijgelaten bij de synaps, diffunderen over de spleet en binden aan receptoren op de postsynaptische cel."
-     },
-     {
       "v": "Welk type afweer vormt immunologisch geheugen zodat een herinfectie sneller wordt bestreden?",
       "o": [
        "Specifieke afweer",
@@ -3958,17 +3386,6 @@ var VAKKEN = [
       ],
       "c": 0,
       "u": "Aspecifiek: eerste verdedigingslinie, snel, niet specifiek (huid, macrofagen, ontsteking). Specifiek: langzamer, gericht op antigeen, vormt geheugen voor snellere reactie bij herinfectie."
-     },
-     {
-      "v": "Welke cellen produceren antilichamen?",
-      "o": [
-       "B-lymfocyten (B-cellen) die zijn uitgegroeid tot plasmacellen",
-       "T-lymfocyten",
-       "Macrofagen",
-       "Rode bloedcellen"
-      ],
-      "c": 0,
-      "u": "B-cellen worden bij activatie plasmacel. Plasmacellen produceren antilichamen die specifiek binden aan het bijbehorende antigeen."
      },
      {
       "v": "Welk orgaan regelt de bloedsuikerspiegel door insuline en glucagon te produceren?",
@@ -3982,17 +3399,6 @@ var VAKKEN = [
       "u": "De alvleesklier heeft eilandjes van Langerhans: bètacellen produceren insuline (bloedsuiker daalt), alfacellen produceren glucagon (bloedsuiker stijgt). De lever slaat glucose op als glycogeen."
      },
      {
-      "v": "Wat is de functie van de nieren in de homeostase?",
-      "o": [
-       "Filtreren van bloed, reguleren van waterbalans en uitscheiden van ureum",
-       "Produceren van rode bloedcellen",
-       "Opslaan van glycogeen",
-       "Produceren van geslachtshormonen"
-      ],
-      "c": 0,
-      "u": "De nieren filteren per dag circa 180 liter bloedplasma. Ze scheiden afvalproducten (ureum, creatinine) uit en reguleren de zout- en waterbalans, en daarmee de bloeddruk."
-     },
-     {
       "v": "Welk deel van het zenuwstelsel regelt onbewuste lichaamsfuncties zoals hartslag en vertering?",
       "o": [
        "Autonoom zenuwstelsel",
@@ -4002,17 +3408,6 @@ var VAKKEN = [
       ],
       "c": 0,
       "u": "Autonoom zenuwstelsel: regelt onbewuste functies. Sympathisch (actie): verhoogt hartslag, verwijdt pupillen. Parasympathisch (rust): verlaagt hartslag, bevordert vertering."
-     },
-     {
-      "v": "Welk type vaccin bevat verzwakte of gedode ziekteverwekkers om een immuunrespons op te wekken?",
-      "o": [
-       "Levend-geattenueerd vaccin (verzwakt) of geïnactiveerd vaccin (gedood)",
-       "mRNA-vaccin",
-       "Subunit-vaccin",
-       "Toxoïdvaccin"
-      ],
-      "c": 0,
-      "u": "Klassieke vaccins bevatten verzwakte (attenuated) of gedode ziekteverwekkers. Het immuunsysteem maakt antilichamen aan zonder dat de persoon ziek wordt. Immunologisch geheugen beschermt bij echte infectie."
      },
      {
       "v": "Welk bloedvat voert zuurstofarm bloed van het hart naar de longen?",
@@ -4026,28 +3421,6 @@ var VAKKEN = [
       "u": "De longslagader voert zuurstofarm bloed van de rechterhartkamer naar de longen. Daar vindt gasuitwisseling plaats: CO2 diffundeert de long in, O2 diffundeert het bloed in. Daarna keert zuurstofrijk bloed via de longader terug naar de linkerhartkamer."
      },
      {
-      "v": "Welke klier produceert zowel insuline als glucagon?",
-      "o": [
-       "Alvleesklier (pancreas)",
-       "Schildklier",
-       "Bijnieren",
-       "Hypofyse"
-      ],
-      "c": 0,
-      "u": "Alvleesklier: bètacellen maken insuline (bloedsuiker daalt), alfacellen maken glucagon (bloedsuiker stijgt). De eilandjes van Langerhans bevatten beide celtypen."
-     },
-     {
-      "v": "Hoe verschilt de bewuste reactie van een reflex?",
-      "o": [
-       "Bij een bewuste reactie verloopt het signaal via de hersenen; bij een reflex via het ruggenmerg alleen",
-       "Ze zijn hetzelfde",
-       "Een reflex verloopt via de hersenen",
-       "Bewuste reacties zijn altijd sneller"
-      ],
-      "c": 0,
-      "u": "Reflex: prikkel → ruggenmerg → spier (snel, onbewust). Bewuste reactie: prikkel → ruggenmerg → hersenen (verwerking) → spier (trager maar gecontroleerd)."
-     },
-     {
       "v": "Welk orgaan bewaart glycogeen als reservesuiker en speelt een centrale rol in de bloedsuikerregulatie?",
       "o": [
        "Lever",
@@ -4057,17 +3430,6 @@ var VAKKEN = [
       ],
       "c": 0,
       "u": "De lever slaat glucose op als glycogeen wanneer insuline aanwezig is. Bij glucagon wordt glycogeen afgebroken tot glucose en afgegeven aan het bloed."
-     },
-     {
-      "v": "Wat is het verschil tussen aspecifieke en specifieke afweer?",
-      "o": [
-       "Aspecifiek: snel, niet-gericht, geen geheugen. Specifiek: trager, gericht op één antigeen, vormt geheugen.",
-       "Ze zijn identiek",
-       "Specifiek is altijd sneller",
-       "Aspecifiek vormt antilichamen"
-      ],
-      "c": 0,
-      "u": "Aspecifiek: huid, slijmvliezen, macrofagen, ontsteking — altijd aanwezig, reageert op alles. Specifiek: B- en T-lymfocyten, antilichamen, geheugen — duurt langer maar gerichter en sterker bij herinfectie."
      },
      {
       "v": "Welke cellen zijn verantwoordelijk voor het direct doden van met virus geïnfecteerde lichaamscellen?",
@@ -4433,28 +3795,6 @@ var VAKKEN = [
       ],
       "c": 0,
       "u": "Successie: kale grond → pioniersoorten (mossen, korstmossen) → grasland → struiken → bos (climax). Primaire successie begint op kale bodem; secundaire na verstoring van bestaand ecosysteem."
-     },
-     {
-      "v": "Wat wordt bedoeld met bioaccumulatie?",
-      "o": [
-       "De toenemende concentratie van persistente stoffen (bijv. DDT) hoger in de voedselketen",
-       "De afbraak van organisch materiaal door bacteriën",
-       "De overgang van energie tussen trofische niveaus",
-       "De aanpassing van organismen aan hun omgeving"
-      ],
-      "c": 0,
-      "u": "Bioaccumulatie: gifstoffen die moeilijk afgebroken worden (bijv. PCB's, kwik) stapelen op in vetweefsel. Per trofisch niveau neemt de concentratie toe (biomagnificatie), waardoor roofdieren en mensen bovenaan de keten de hoogste blootstelling hebben."
-     },
-     {
-      "v": "Welke abiotische factor beschrijft de hoeveelheid minerale voedingsstoffen (nitraat, fosfaat) die beschikbaar zijn in een aquatisch ecosysteem?",
-      "o": [
-       "Nutriëntenconcentratie",
-       "Zuurgraad",
-       "Temperatuur",
-       "Saliniteit"
-      ],
-      "c": 0,
-      "u": "Eutrofiëring treedt op als te veel nutriënten (nitraat, fosfaat) in water terechtkomen (o.a. landbouwuitspoeling). Algengroei neemt explosief toe, zuurstof raakt op bij verrotting en veel waterleven sterft."
      },
      {
       "v": "Welke term beschrijft de rol van een soort in zijn ecosysteem (wat hij eet, waar hij leeft, wanneer actief)?",
@@ -4843,17 +4183,6 @@ var VAKKEN = [
       "u": "Controle-experiment = identieke opzet, maar zonder de onafhankelijke variabele (of nulwaarde). Het laat zien wat er zonder behandeling gebeurt, zodat je het effect kunt isoleren."
      },
      {
-      "v": "Een leerling meet de reactiesnelheid driemaal en krijgt: 2,4 / 2,5 / 2,3 mL/s. Welke conclusie is juist?",
-      "o": [
-       "De metingen zijn niet valide vanwege de kleine afwijkingen",
-       "De metingen zijn betrouwbaar (consistent), maar validiteit hangt af van de meetmethode",
-       "De metingen zijn fout want een gemiddelde moet worden genomen",
-       "De metingen zijn te weinig om conclusies te trekken"
-      ],
-      "c": 1,
-      "u": "Betrouwbaar = consistent herhaalde resultaten. Valide = je meet wat je bedoelt te meten. Consistentie bewijst niet automatisch validiteit — de meetmethode kan systematisch verkeerd zijn."
-     },
-     {
       "v": "Hoe formuleer je een goede scheikundige hypothese?",
       "o": [
        "Een bewering zonder onderbouwing of verklaring",
@@ -4874,17 +4203,6 @@ var VAKKEN = [
       ],
       "c": 1,
       "u": "Vlam = ontvlambaar/brandbaar. Doodshoofd = acuut giftig. Corrosie-pictogram = bijtend. Uitroepteken = irriterend/schadelijk. Leer alle GHS-pictogrammen voor het CE."
-     },
-     {
-      "v": "Bereken het aantal mol in 44 g CO₂ (M = 44 g/mol).",
-      "o": [
-       "0,5 mol",
-       "1 mol",
-       "2 mol",
-       "44 mol"
-      ],
-      "c": 1,
-      "u": "n = m/M = 44 g / 44 g/mol = 1 mol. Altijd n = m/M. Onthoud: M(CO2) = 12 + 2×16 = 44 g/mol."
      },
      {
       "v": "Een grafiek toont een rechte lijn door de oorsprong. Welk verband beschrijft dit?",
@@ -4920,39 +4238,6 @@ var VAKKEN = [
       "u": "Concentratie c = n/V in mol/L (ook geschreven als M of molar). g/mol is de molaire massa. g/L is massa-concentratie, niet standaard in stoichiometrie."
      },
      {
-      "v": "Een experiment wordt driemaal herhaald en telkens geeft de meetwaarde een ander resultaat ver van de verwachte waarde. Wat is het meest waarschijnlijke probleem?",
-      "o": [
-       "De metingen zijn betrouwbaar maar niet valide",
-       "Zowel betrouwbaarheid als validiteit ontbreken — systematische fout én toevalsfout",
-       "De hypothese klopt niet en moet worden verworpen",
-       "Het experiment is correct, de theorie is verkeerd"
-      ],
-      "c": 1,
-      "u": "Wisselende resultaten ver van verwacht = lage betrouwbaarheid (toevalsfout) + mogelijk ook lage validiteit. Systematische fouten geven consistent de verkeerde waarde; toevalfouten geven wisselende waarden."
-     },
-     {
-      "v": "Welk pictogram op een scheikundig label waarschuwt voor gevaar voor het milieu?",
-      "o": [
-       "Uitroepteken (irriterend)",
-       "Milieupictogram: dode boom en vis (milieugevaarlijk)",
-       "Vlam (ontvlambaar)",
-       "Doodshoofd (giftig)"
-      ],
-      "c": 1,
-      "u": "Het milieupictogram (dode boom en vis) waarschuwt dat de stof gevaarlijk is voor waterorganismen en het milieu. Denk aan herbiciden en bepaalde oplosmiddelen."
-     },
-     {
-      "v": "Wat is het verschil tussen een systematische fout en een toevallige fout?",
-      "o": [
-       "Systematisch: consistent dezelfde afwijking door een constante fout. Toevallig: wisselende afwijking door onsystematische oorzaken.",
-       "Ze zijn hetzelfde",
-       "Toevallige fouten zijn erger dan systematische",
-       "Systematische fouten zijn onvermijdelijk"
-      ],
-      "c": 0,
-      "u": "Systematische fout: bijv. een niet-gecalibreerde weegschaal meet altijd 2g te weinig. Toevalsfouten: variatie in aflezingen door menselijke factoren."
-     },
-     {
       "v": "Waarom is het essentieel om meerdere meetpunten te gebruiken bij het opstellen van een grafiek?",
       "o": [
        "Om de trend betrouwbaarder te bepalen en toevalsfouten te middelen",
@@ -4973,17 +4258,6 @@ var VAKKEN = [
       ],
       "c": 0,
       "u": "Significante cijfers: tellen vanaf het eerste niet-nul cijfer. 0,0340: 3, 4, 0 = 3 sig. cijfers. De nullen voor de 3 zijn niet significant."
-     },
-     {
-      "v": "Wat is het doel van laboratoriumveiligheidsregels zoals dragen van een veiligheidsbril?",
-      "o": [
-       "Verplichte bureaucratie zonder direct nut",
-       "Bescherming van de ogen tegen spatten van bijtende of irriterende stoffen",
-       "Voorkomen dat chemicaliën verdampen",
-       "Verplicht bij alle experimenten, ook veilige"
-      ],
-      "c": 1,
-      "u": "Veiligheidsbril beschermt de ogen, het gevoeligste orgaan in het lab. Spatten van zuren, logen of oplosmiddelen kunnen permanent oogletsel veroorzaken."
      },
      {
       "v": "Wat betekent «Mol»?",
@@ -5285,17 +4559,6 @@ var VAKKEN = [
       "u": "Meer gedeelde elektronenparen = sterkere binding. N≡N (stikstofmolecuul) heeft een drievoudige binding en is zeer stabiel (D = 945 kJ/mol). Enkel: ~345 kJ/mol voor C-C."
      },
      {
-      "v": "Wat is de molecuulgeometrie van water (H₂O) volgens het VSEPR-model?",
-      "o": [
-       "Gebogen/hoekvormig (104,5° door twee vrije elektronenparen)",
-       "Lineair (zoals CO₂)",
-       "Trigonaal planair",
-       "Tetraëdrisch"
-      ],
-      "c": 0,
-      "u": "O heeft 4 elektronenparen: 2 bindingsparen (met H) en 2 vrije paren. Vrije paren stoten sterker af en verkleinen de hoek tot 104,5°. Dit maakt water hoekig en polair."
-     },
-     {
       "v": "Welk type binding hebben twee atomen met gelijk hoge elektronegativiteit (bijv. H₂ of N₂)?",
       "o": [
        "Apolaire covalente binding (gelijke elektronenverdeling)",
@@ -5579,17 +4842,6 @@ var VAKKEN = [
     "sam": "<div class=\"sam-head\">Zuren en basen (Brønsted-Lowry)</div><ul><li><strong>Zuur</strong>: protondonor — staat H⁺ af aan een base. Bijv. HCl, HNO₃, CH₃COOH.</li><li><strong>Base</strong>: protonacceptor — neemt H⁺ op. Bijv. NaOH, NH₃, Na₂CO₃.</li><li><strong>Sterk vs. zwak zuur</strong>: sterk (HCl, HNO₃, H₂SO₄) → volledig gedissocieerd in water. Zwak (CH₃COOH, H₂CO₃) → gedeeltelijk gedissocieerd, evenwicht aanwezig.</li><li><strong>Amfoteer</strong>: kan zowel als zuur als base fungeren. Water: H₂O geeft H⁺ (zuur) of neemt H⁺ op (base). Ook HCO₃⁻ en HSO₄⁻ zijn amfoteer.</li><li><strong>pH</strong>: <span class=\"fm\">pH = −log[H₃O⁺]</span>. Elke eenheid pH = factor 10 in [H⁺]. pH &lt; 7 = zuur, pH 7 = neutraal, pH > 7 = basisch. pH + pOH = 14.</li><li><strong>pH berekening sterk zuur</strong>: bijv. 0,01 mol/L HCl → [H⁺] = 0,01 → pH = −log(0,01) = 2.</li><li><strong>Neutralisatie</strong>: zuur + base → zout + water. Bijv. HCl + NaOH → NaCl + H₂O. Equivalentiepunt: n(zuur) = n(base).</li></ul><div class=\"sam-head\">Chemisch evenwicht</div><ul><li><strong>Le Chatelier-principe</strong>: verstoring → evenwicht verschuift om verstoring te compenseren. Meer reactant → meer product. Hogere druk → kant met minder gasmol. Hogere T → richting endotherm. Katalysator: evenwichtsligging verandert NIET, alleen bereikingssnelheid.</li><li><strong>Evenwichtsconstante Kc</strong>: voor A + B ⇌ C + D: <span class=\"fm\">Kc = [C][D] / [A][B]</span>. Groot Kc = evenwicht ligt rechts (veel product). Klein Kc = links (weinig product).</li><li><strong>Katalysator</strong>: verlaagt activeringsenergie voor zowel heen- als terugrichting. Sneller evenwicht bereiken. Reactie-opbrengst verandert niet.</li></ul><div class=\"sam-head\">Reactiesnelheid</div><ul><li><strong>Botsingstheorie</strong>: reactie vindt plaats bij botsing met voldoende energie (≥ activeringsenergie Ea) en juiste oriëntatie.</li><li><strong>Factoren die snelheid verhogen</strong>: hogere T (meer kinetische energie, meer effectieve botsingen), hogere concentratie (meer botsingen per seconde), kleiner deeltjesgrootte (groter reactieoppervlak), katalysator (lagere Ea).</li><li><strong>Reactiediagram</strong>: energiediagram toont reactanten, activeringsenergie (Ea), overgangscomplex (piek) en producten. Exotherm: producten lager dan reactanten (warmte vrij). Endotherm: producten hoger (warmte vereist).</li></ul><div class=\"sam-head\">Redoxreacties</div><ul><li><strong>Oxidatie</strong>: verlies van elektronen (of toename oxidatiegetal). OIL = Oxidation Is Loss.</li><li><strong>Reductie</strong>: opname van elektronen (of afname oxidatiegetal). RIG = Reduction Is Gain.</li><li><strong>Oxidator vs. reductor</strong>: oxidator neemt elektronen op (wordt zelf gereduceerd). Reductor geeft elektronen af (wordt zelf geoxideerd). Ze reageren altijd samen.</li><li><strong>Halfvergelijkingen</strong>: oxidatie en reductie apart uitschrijven. Optellen geeft de nettovergelijking. Elektronen moeten wegvallen.</li><li><strong>Roestvorming</strong>: Fe → Fe²⁺ + 2e⁻ (oxidatie) | O₂ + 4H⁺ + 4e⁻ → 2H₂O (reductie). IJzer is reductor, O₂ is oxidator.</li></ul><div class=\"sam-head\">Stoichiometrie en berekeningen</div><ul><li><strong>Mol</strong>: <span class=\"fm\">n = m / M</span>. Molaire massa M in g/mol (optellen uit PSE).</li><li><strong>Concentratie</strong>: <span class=\"fm\">c = n / V</span>. c in mol/L (M), V in L.</li><li><strong>Verdunning</strong>: <span class=\"fm\">c₁V₁ = c₂V₂</span>. Aantal mol blijft gelijk.</li><li><strong>Stoichiometrie</strong>: coëfficiënten = molverhoudingen. Bijv. N₂ + 3H₂ → 2NH₃: 1 mol N₂ + 3 mol H₂ geeft 2 mol NH₃.</li><li><strong>Rendement</strong>: <span class=\"fm\">η = (werkelijk / theoretisch) × 100%</span>. Oorzaken laag rendement: onvolledige reactie, bijreacties, verlies bij bereiding.</li><li><strong>Titratie</strong>: n(zuur) = c(zuur) × V(zuur). Bij equivalentiepunt: n(zuur) = n(base). Gebruik S-curve om equivalentiepunt te bepalen.</li></ul>",
     "sv": [
      {
-      "v": "Wat is een zuur volgens Bronsted-Lowry?",
-      "o": [
-       "Een stof die een proton (H+) kan afstaan aan een andere stof",
-       "Een stof die elektronen aanneemt",
-       "Een stof met pH groter dan 7",
-       "Een stof die hydroxide-ionen afgeeft"
-      ],
-      "c": 0,
-      "u": "Bronsted: zuur is protondonor. Base is protonacceptor. Water is amfoteer en kan beide rollen aannemen."
-     },
-     {
       "v": "Welk principe voorspelt dat een evenwicht bij verstoring verschuift om die verstoring te compenseren?",
       "o": [
        "Le Chatelier-principe",
@@ -5623,39 +4875,6 @@ var VAKKEN = [
       "u": "Katalysator: lagere energiebarriere geeft meer moleculen die kunnen reageren. De evenwichtsligging zelf verandert niet."
      },
      {
-      "v": "Welke hoeveelheideenheid komt overeen met 6,022 × 10²³ deeltjes (Avogadro)?",
-      "o": [
-       "Mol (n = m/M)",
-       "Molariteit (c = n/V, mol/L)",
-       "Molaire massa (M, g/mol)",
-       "Stoichiometrisch getal (coëfficiënt in vergelijking)"
-      ],
-      "c": 0,
-      "u": "1 mol = 6,022·10²³ deeltjes. n = m gedeeld door M. De molaire massa M lees je af uit het periodiek systeem."
-     },
-     {
-      "v": "Hoe bereken je de pH van een sterk zuur met concentratie c = 0,01 mol/L?",
-      "o": [
-       "pH = −log[H⁺] = −log(0,01) = 2",
-       "pH = log(0,01) = −2",
-       "pH = 1/0,01 = 100",
-       "pH = 0,01 × 14 = 0,14"
-      ],
-      "c": 0,
-      "u": "Sterk zuur is volledig gedissocieerd: [H⁺] = c = 0,01 mol/L. pH = −log(0,01) = −log(10⁻²) = 2. Een pH van 2 is zuur."
-     },
-     {
-      "v": "Wat is een neerslagreactie?",
-      "o": [
-       "Een reactie waarbij een moeilijk oplosbaar vaste stof (neerslag) wordt gevormd uit een oplossing",
-       "Een reactie waarbij gas ontwijkt",
-       "Een reactie waarbij warmte vrijkomt (exotherm)",
-       "Een reactie waarbij twee vloeistoffen mengen"
-      ],
-      "c": 0,
-      "u": "Neerslagreactie: twee ionen uit oplossing vormen een ionverbinding die zo slecht oplost dat het als vaste stof neerslaat. Bijv. Ag⁺ + Cl⁻ → AgCl↓ (wit neerslag)."
-     },
-     {
       "v": "Welke factor heeft GEEN invloed op de ligging van een evenwicht?",
       "o": [
        "Toevoeging van een katalysator",
@@ -5667,17 +4886,6 @@ var VAKKEN = [
       "u": "Een katalysator verlaagt de activeringsenergie voor zowel de heen- als terugreactie. De evenwichtsligging verandert niet, maar het evenwicht wordt sneller bereikt."
      },
      {
-      "v": "Wat meet de titercurve bij een zuur-base titratie bij het equivalentiepunt?",
-      "o": [
-       "Het punt waarop de stoichiometrische hoeveelheid base precies het zuur heeft geneutraliseerd",
-       "Het punt waarop de pH = 7 is (altijd het geval)",
-       "Het punt met de laagste pH",
-       "Het punt waarop de indicator omslaat"
-      ],
-      "c": 0,
-      "u": "Equivalentiepunt: n(H⁺) = n(OH⁻). Voor een sterk zuur + sterke base is de pH op het equivalentiepunt exact 7. Bij zwak zuur + sterke base is de pH > 7 door de aanwezigheid van het conjugaat base."
-     },
-     {
       "v": "Welk type reactie vindt plaats wanneer een atoom elektronen afgeeft en zijn oxidatiegetal stijgt?",
       "o": [
        "Oxidatie (elektronen afstaan, oxidatiegetal stijgt)",
@@ -5687,17 +4895,6 @@ var VAKKEN = [
       ],
       "c": 0,
       "u": "Oxidatie = verlies van elektronen = stijging oxidatiegetal. Reductie = opname van elektronen = daling oxidatiegetal. OILRIG: Oxidation Is Loss, Reduction Is Gain."
-     },
-     {
-      "v": "Welk effect heeft hogere temperatuur op de snelheid van een chemische reactie?",
-      "o": [
-       "Versnelt de reactie doordat meer deeltjes genoeg energie hebben voor de activeringsenergie",
-       "Vertraagt de reactie door verhoogde activeringsenergie",
-       "Heeft geen effect op reactiesnelheid",
-       "Verlaagt de activeringsenergie permanent"
-      ],
-      "c": 0,
-      "u": "Hogere T: meer thermische energie → grotere fractie moleculen boven de activeringsenergie → meer effectieve botsingen per seconde → hogere reactiesnelheid. Dit is de basis van de Arrhenius-vergelijking."
      },
      {
       "v": "Wat is het verschil tussen een sterk en een zwak zuur?",
@@ -5720,17 +4917,6 @@ var VAKKEN = [
       ],
       "c": 0,
       "u": "Coëfficiënten zijn molverhoudingen. N₂:H₂:NH₃ = 1:3:2. Voor 2 mol N₂ zijn 6 mol H₂ nodig en ontstaan 4 mol NH₃."
-     },
-     {
-      "v": "Wat beschrijft de evenwichtsconstante K?",
-      "o": [
-       "De verhouding van productconcentraties tot reactantconcentraties op evenwicht",
-       "De snelheid waarmee het evenwicht bereikt wordt",
-       "De totale concentratie van alle stoffen",
-       "De temperatuurafhankelijkheid van de reactie"
-      ],
-      "c": 0,
-      "u": "K = [producten]^p / [reactanten]^r. Groot K: evenwicht naar producten. Klein K: naar reactanten. K is temperatuurafhankelijk maar niet afhankelijk van concentraties of katalysator."
      },
      {
       "v": "Welk begrip beschrijft een stof die zowel als zuur als base kan reageren, afhankelijk van de reactionele partner?",
@@ -6063,17 +5249,6 @@ var VAKKEN = [
     "sam": "<div class=\"sam-head\">Koolwaterstoffen</div><ul><li><strong>Alkanen</strong>: CₙH₂ₙ₊₂, volledig verzadigd (alleen C−C enkelvoudige bindingen). Reactief via substitutie bij UV-licht. Bijv. methaan (CH₄), ethaan (C₂H₆), propaan (C₃H₈).</li><li><strong>Alkenen</strong>: CₙH₂ₙ, bevatten één C=C dubbele binding. Reactief via additie. Bijv. etheen (CH₂=CH₂). Test: broomwater ontkleurt bij additie van Br₂.</li><li><strong>IUPAC-naamgeving</strong>: (1) langste keten = stamnaam, (2) nummer koolstofatomen zodat substituenten laagst mogelijk genummerd zijn, (3) noem substituenten alfabetisch als prefix.</li><li><strong>Structuurisomerie</strong>: zelfde molecuulformule, andere rangschikking van atomen. Bijv. butaan en methylpropaan, beide C₄H₁₀. Andere structuur = andere eigenschappen.</li></ul><div class=\"sam-head\">Functionele groepen</div><ul><li><strong>Alcohol (−OH)</strong>: hogere kookpunten dan alkanen door waterstofbruggen. Primair, secundair, tertiair afhankelijk van positie −OH.</li><li><strong>Carbonzuur (−COOH)</strong>: zuur, protondonor. Bijv. azijnzuur (CH₃COOH). Reageert met alcohol tot ester.</li><li><strong>Amine (−NH₂)</strong>: base, protonacceptor. Bijv. methylamine.</li><li><strong>Ester (−COO−)</strong>: ruiken fruitig. Gevormd via esterificatie van carbonzuur + alcohol.</li><li><strong>Aldehyde (−CHO)</strong>: kan worden geoxideerd tot carbonzuur.</li></ul><div class=\"sam-head\">Reactietypen</div><ul><li><strong>Additie</strong>: reagens wordt toegevoegd aan de dubbele binding. Product is verzadigd. Bijv. CH₂=CH₂ + Br₂ → CH₂Br−CH₂Br.</li><li><strong>Substitutie</strong>: H-atoom vervangen door een ander atoom (bijv. halogeen). Alkanen reageren zo bij UV-licht.</li><li><strong>Esterificatie</strong>: −COOH + −OH ⇌ ester + H₂O. Katalysator H⁺. Omkeerbare reactie — opbrengst verhogen via Le Chatelier (overmaat reactant of water verwijderen).</li><li><strong>Additiepolymerisatie</strong>: alkenen koppelen aaneen door opening van C=C binding. Geen bijproduct. Bijv. etheen → polyetheen (PE).</li><li><strong>Condensatiepolymerisatie</strong>: twee monomeertypen reageren met vorming van een bindend bijproduct (water of HCl). Bijv. nylon (amidebinding), PET (esterbinding).</li></ul>",
     "sv": [
      {
-      "v": "Wat is het verschil tussen alkanen en alkenen?",
-      "o": [
-       "Alkanen zijn verzadigd (alleen C-C enkelvoudige bindingen). Alkenen bevatten een C=C dubbele binding.",
-       "Alkanen zijn altijd gasvormig",
-       "Alkanen reageren met zuren; alkenen niet",
-       "Er is geen chemisch functioneel verschil"
-      ],
-      "c": 0,
-      "u": "Alkanen CnH(2n+2): verzadigd, reactief via substitutie. Alkenen CnH(2n): onverzadigd, reactief via additie aan de dubbele binding."
-     },
-     {
       "v": "Welke omkeerbare reactie vindt plaats tussen een carbonzuur en een alcohol onder vorming van een ester en water?",
       "o": [
        "Esterificatie (RCOOH + ROH ⇌ RCOOR + H₂O)",
@@ -6094,28 +5269,6 @@ var VAKKEN = [
       ],
       "c": 0,
       "u": "Additiepoly: opening van C=C, geen bijproduct. Condensatiepoly: twee monomeertypen, water of HCl als bijproduct."
-     },
-     {
-      "v": "Welk begrip beschrijft verbindingen met dezelfde molecuulformule maar een andere rangschikking van atomen (bijv. butaan en methylpropaan)?",
-      "o": [
-       "Structuurisomerie",
-       "Stereoisomerie (zelfde structuur, andere ruimtelijke oriëntatie)",
-       "Conformatie-isomerie (rotatie om C-C binding)",
-       "Regioisomerie (positie functionele groep verschilt)"
-      ],
-      "c": 0,
-      "u": "Structuurisomeren: zelfde brutoformule, andere rangschikking. Bijv. butaan en methylpropaan, beide C4H10."
-     },
-     {
-      "v": "Welk reactietype treedt op bij een alkeen en broomwater?",
-      "o": [
-       "Additie: Br2 wordt toegevoegd aan de dubbele binding, broomkleur verdwijnt",
-       "Substitutie: Br vervangt een H-atoom",
-       "Esterificatie",
-       "Eliminatie: HBr wordt afgesplitst"
-      ],
-      "c": 0,
-      "u": "Alkenen reageren via additie. CH2=CH2 + Br2 geeft CH2Br-CH2Br. De broomkleur verdwijnt omdat Br2 verbruikt wordt. Dit is de test voor onverzadigdheid."
      },
      {
       "v": "Welke functionele groep kenmerkt een alcohol?",
@@ -6522,17 +5675,6 @@ var VAKKEN = [
       "u": "Osmose: hoge zoutconcentratie buiten de bacterie → water stroomt via osmose de cel uit → bacteriën raken uitgedroogd en kunnen zich niet vermenigvuldigen. Hetzelfde principe geldt voor suiker."
      },
      {
-      "v": "Welk gas is verantwoordelijk voor zure regen, gevormd bij verbranding van zwavelhoudende fossiele brandstoffen?",
-      "o": [
-       "CO2 (koolstofdioxide — broeikasgas)",
-       "SO2 (zwaveldioxide — reageert met water tot H2SO3/H2SO4)",
-       "O3 (ozon — UV-absorptie)",
-       "NO2 (stikstofdioxide — ook bijdrage maar andere bron)"
-      ],
-      "c": 1,
-      "u": "SO2 + water → H2SO3 (zwavelig zuur). SO3 + water → H2SO4 (zwavelzuur). Neerslag heeft lage pH → verzuring bossen en wateren, corrosie van gebouwen en beelden."
-     },
-     {
       "v": "Wat is de functie van een emulgator in voedsel?",
       "o": [
        "Een emulgator verhoogt de pH om bacteriegroei te remmen",
@@ -6575,17 +5717,6 @@ var VAKKEN = [
       ],
       "c": 1,
       "u": "PLA = polylactide, gemaakt via ringopening- of condensatiepolymerisatie van melkzuur (uit fermentatie van maïs/suikerbieten). Hernieuwbare grondstof + composteerbaar onder industriële condities. Nadeel: lagere smelttemperatuur dan PET."
-     },
-     {
-      "v": "Waarom wordt bij de productie van salpeterzuur (HNO₃) platina als katalysator gebruikt?",
-      "o": [
-       "Platina verhoogt de evenwichtsopbrengst van NO door Le Chatelier",
-       "Platina verlaagt de activeringsenergie van de oxidatie van NH₃ tot NO, zodat de reactie bij lagere temperatuur snel verloopt",
-       "Platina reageert mee als reactant en kan worden teruggewonnen",
-       "Platina verhoogt de concentratie NO door NH3 op te slaan"
-      ],
-      "c": 1,
-      "u": "Platina (en rhodium) zijn heterogene katalysatoren in het Ostwald-proces: NH3 + O2 → NO + H2O. De katalysator adsorbeert de reactanten op het oppervlak, verlaagt de activeringsenergie en versnelt de reactie zonder zelf verbruikt te worden."
      },
      {
       "v": "Welke twee gassen veroorzaken hoofdzakelijk zure regen?",
@@ -6980,17 +6111,6 @@ var VAKKEN = [
       "u": "De kelvin (K) is de SI-basiseenheid van temperatuur. Warmte en energie worden in joule gemeten, druk in pascal."
      },
      {
-      "v": "Wat is 0,00046 s in wetenschappelijke notatie?",
-      "o": [
-       "4,6·10⁻⁴ s",
-       "4,6·10⁻³ s",
-       "46·10⁻³ s",
-       "4,6·10⁴ s"
-      ],
-      "c": 0,
-      "u": "Schuif de komma vier plaatsen naar rechts: 0,00046 = 4,6·10⁻⁴. Eén cijfer vóór de komma en een negatieve macht omdat het getal klein is."
-     },
-     {
       "v": "Bij vermenigvuldigen of delen krijgt de uitkomst evenveel ... als de minst nauwkeurige waarde.",
       "o": [
        "significante cijfers",
@@ -7000,17 +6120,6 @@ var VAKKEN = [
       ],
       "c": 0,
       "u": "Bij vermenigvuldigen en delen telt het aantal significante cijfers van de minst nauwkeurige waarde. Bij optellen en aftrekken kijk je juist naar het aantal decimalen."
-     },
-     {
-      "v": "Wat is 2,45 + 3,1 met de juiste significantie?",
-      "o": [
-       "5,6",
-       "5,55",
-       "5,5",
-       "6"
-      ],
-      "c": 0,
-      "u": "Bij optellen krijgt de uitkomst evenveel decimalen als de waarde met de minste decimalen. 3,1 heeft één decimaal, dus 5,55 wordt afgerond op 5,6."
      },
      {
       "v": "Hoeveel significante cijfers heeft het getal 0,0047?",
@@ -7088,28 +6197,6 @@ var VAKKEN = [
       ],
       "c": 0,
       "u": "Door bijvoorbeeld √x of 1/x op een as te zetten wordt een krom verband een rechte lijn. Ontstaat er een rechte lijn, dan is het vermoeden over het verband bevestigd."
-     },
-     {
-      "v": "Hoe bereken je sin α in een rechthoekige driehoek?",
-      "o": [
-       "overstaande zijde / schuine zijde",
-       "aanliggende zijde / schuine zijde",
-       "overstaande zijde / aanliggende zijde",
-       "schuine zijde / overstaande zijde"
-      ],
-      "c": 0,
-      "u": "sin α = overstaande zijde gedeeld door de schuine zijde (SOS). cos α gebruikt de aanliggende zijde en tan α gebruikt de overstaande gedeeld door de aanliggende zijde."
-     },
-     {
-      "v": "Hoe bereken je tan α in een rechthoekige driehoek?",
-      "o": [
-       "overstaande zijde / aanliggende zijde",
-       "aanliggende zijde / overstaande zijde",
-       "overstaande zijde / schuine zijde",
-       "aanliggende zijde / schuine zijde"
-      ],
-      "c": 0,
-      "u": "tan α = overstaande zijde gedeeld door de aanliggende zijde (TOA). Let op: de volgorde is overstaand boven aanliggend, niet andersom."
      },
      {
       "v": "Welke stap hoort bij de ontwerpcyclus en niet bij de onderzoekscyclus?",
@@ -7401,17 +6488,6 @@ var VAKKEN = [
       ],
       "c": 0,
       "u": "Diffractie: golven buigen om hindernissen of waaieren uit na een smalle opening. Het effect is het sterkst als de opening even groot is als de golflengte. Licht difracteert bij smalle spleten (splitsingpatroon)."
-     },
-     {
-      "v": "Welk kleur zichtbaar licht heeft de langste golflengte?",
-      "o": [
-       "Rood (circa 700 nm)",
-       "Violet (circa 400 nm)",
-       "Groen (circa 550 nm)",
-       "Geel (circa 580 nm)"
-      ],
-      "c": 0,
-      "u": "In het zichtbare spectrum loopt de golflengte van ~400 nm (violet) tot ~700 nm (rood). Rood heeft de langste golflengte en laagste frequentie van zichtbaar licht. Violet heeft de kortste golflengte."
      },
      {
       "v": "Wat is de eenheid van frequentie?",
@@ -8087,17 +7163,6 @@ var VAKKEN = [
       "u": "De veerkracht is F = C·u, met C de veerconstante (N/m) en u de uitwijking. ½·C·u² is juist de veerenergie."
      },
      {
-      "v": "Hoe bereken je de resultante van twee loodrecht op elkaar staande krachten?",
-      "o": [
-       "met de stelling van Pythagoras",
-       "door ze gewoon op te tellen",
-       "door ze van elkaar af te trekken",
-       "met de hefboomwet"
-      ],
-      "c": 0,
-      "u": "Staan krachten loodrecht, dan vind je de resultante met Pythagoras: F = √(F1² + F2²)."
-     },
-     {
       "v": "Wanneer is een hefboom in evenwicht?",
       "o": [
        "als F1·r1 gelijk is aan F2·r2",
@@ -8129,17 +7194,6 @@ var VAKKEN = [
       ],
       "c": 0,
       "u": "De warmte is Q = c·m·ΔT, met c de soortelijke warmte (J·kg⁻¹·K⁻¹), m de massa en ΔT het temperatuurverschil."
-     },
-     {
-      "v": "Hoe reken je 20 °C om naar kelvin?",
-      "o": [
-       "20 + 273 = 293 K",
-       "20 − 273 = −253 K",
-       "20 × 273 K",
-       "273 − 20 = 253 K"
-      ],
-      "c": 0,
-      "u": "Voor de omrekening geldt T(K) = T(°C) + 273. Dus 20 °C komt overeen met 293 K."
      },
      {
       "v": "Welke vorm van warmtetransport verloopt zonder tussenstof?",
@@ -8551,17 +7605,6 @@ var VAKKEN = [
       ],
       "c": 0,
       "u": "Parallel: 1/R_tot = 1/R₁ + 1/R₂ + … Meer stroomwegen → lagere totale weerstand. Bij twee gelijke weerstanden R is R_tot = R/2. Altijd kleiner dan de kleinste individuele weerstand."
-     },
-     {
-      "v": "Wat is de eenheid van elektrische lading en welk deeltje draagt de elementaire lading e = 1,6 × 10⁻¹⁹ C?",
-      "o": [
-       "Coulomb (C); het elektron draagt elementaire lading e",
-       "Ampere (A); het proton draagt elementaire lading",
-       "Volt (V); het neutron draagt de lading",
-       "Ohm (Ω); de foton draagt de lading"
-      ],
-      "c": 0,
-      "u": "Lading wordt gemeten in coulomb. Het elektron heeft lading −e = −1,6 × 10⁻¹⁹ C. Het proton heeft +e. Stroom I = lading per tijdseenheid: I = Q/t in ampere."
      },
      {
       "v": "Welk element in een gelijkstroom circuit werkt als energiebron en welk element als energieverbruiker?",
@@ -9234,17 +8277,6 @@ var VAKKEN = [
       "u": "PET-scan: radioactief glucose (FDG) wordt opgenomen door actieve cellen (bijv. tumoren). β⁺-verval geeft gammastraling die buiten het lichaam wordt gemeten. Vereist korte T½ zodat de straling snel afneemt na de scan."
      },
      {
-      "v": "Na drie halveringstijden, welk deel van de oorspronkelijke hoeveelheid radioactieve kernen is nog aanwezig?",
-      "o": [
-       "1/8 (12,5%)",
-       "1/4 (25%)",
-       "1/2 (50%)",
-       "1/6 (16,7%)"
-      ],
-      "c": 0,
-      "u": "Na elke halveringstijd halveert het aantal: na 1 T½ = ½, na 2 T½ = ¼, na 3 T½ = ⅛ = 12,5%. Formule: N = N₀ · (½)³ = N₀/8."
-     },
-     {
       "v": "Welke elektromagnetische straling heeft méér energie dan zichtbaar licht?",
       "o": [
        "ultraviolet",
@@ -9832,37 +8864,64 @@ var VAKKEN = [
       "u": "Geregistreerd partnerschap heeft dezelfde juridische gevolgen als een huwelijk (erfrecht, alimentatie, gemeenschap van goederen). Het kan zonder gang naar de rechter worden ontbonden, in tegenstelling tot een huwelijk."
      },
      {
-      "v": "Wat is het doel van huwelijkse voorwaarden?",
+      "v": "Wat betekent «Rechtsvorm»?",
       "o": [
-       "Afwijken van de wettelijke gemeenschap van goederen (bijv. koude uitsluiting of beperkte gemeenschap)",
-       "Vastleggen wie de kinderen verzorgt bij scheiding",
-       "Het huwelijk annuleren",
-       "Automatisch alle schulden van de partner overnemen"
+       "de juridische vorm van een onderneming",
+       "het opdelen van de markt in groepen klanten",
+       "klanten die nog moeten betalen",
+       "de mate waarin je aan alle verplichtingen kunt voldoen"
       ],
       "c": 0,
-      "u": "Zonder huwelijkse voorwaarden geldt de wettelijke gemeenschap van goederen (beperkt). Met voorwaarden kan men bijv. koude uitsluiting afspreken: ieders eigen vermogen en schulden blijven gescheiden. Notarieel verplicht."
+      "u": "«Rechtsvorm» betekent: de juridische vorm van een onderneming.",
+      "d": 1
      },
      {
-      "v": "Wat is de \"regel van 72\" en waarvoor gebruik je hem?",
+      "v": "Welk begrip hoort bij deze omschrijving: \"onderneming met één eigenaar die hoofdelijk aansprakelijk is\"?",
       "o": [
-       "Benadering voor de verdubbelingstijd bij samengestelde interest: t ≈ 72 / rentepercentage",
-       "Formule voor lineaire rente: rente = 72 × hoofdsom",
-       "Maximale looptijd van een hypotheek",
-       "Het maximale aantal aandelen in een BV"
+       "Eenmanszaak",
+       "Variabele kosten",
+       "Crediteuren",
+       "Afschrijving"
       ],
       "c": 0,
-      "u": "Regel van 72: bij 4% rente verdubbelt een bedrag in ±18 jaar. Bij 6%: ±12 jaar. Het is een snelle vuistregel — de exacte formule is t = log(2) / log(1+r)."
+      "u": "Het juiste begrip is «Eenmanszaak»: onderneming met één eigenaar die hoofdelijk aansprakelijk is.",
+      "d": 2
      },
      {
-      "v": "Wat is een coöperatie en hoe wijkt die af van een BV?",
+      "v": "Welk begrip hoort bij deze omschrijving: \"besloten vennootschap met beperkt aansprakelijke aandeelhouders\"?",
       "o": [
-       "Een coöperatie is een vereniging van leden die gezamenlijk economische belangen behartigen; geen aandelenkapitaal",
-       "Een coöperatie is een BV met meer dan 50 aandeelhouders",
-       "Een coöperatie heeft onbeperkte aansprakelijkheid zoals een eenmanszaak",
-       "Een coöperatie is altijd een non-profitorganisatie zonder inkomsten"
+       "Aandeel",
+       "Eenmanszaak",
+       "BV",
+       "Rechtsvorm"
       ],
-      "c": 0,
-      "u": "Coöperatie: rechtspersoon (verenigingsvorm) waarbij leden gezamenlijk voordelen behalen (bijv. Rabobank, FrieslandCampina). Leden participeren, geen traditionele aandeelhouders. Winst kan worden teruggestort naar leden of in reserves."
+      "c": 2,
+      "u": "Het juiste begrip is «BV»: besloten vennootschap met beperkt aansprakelijke aandeelhouders.",
+      "d": 3
+     },
+     {
+      "v": "Wat betekent «Aansprakelijkheid»?",
+      "o": [
+       "een bewijs van deelname in het eigen vermogen van een bv of nv",
+       "de mate waarin je met privévermogen instaat voor schulden",
+       "het opdelen van de markt in groepen klanten",
+       "geld voor langere tijd vastleggen in vaste activa"
+      ],
+      "c": 1,
+      "u": "«Aansprakelijkheid» betekent: de mate waarin je met privévermogen instaat voor schulden.",
+      "d": 1
+     },
+     {
+      "v": "Welk begrip hoort bij deze omschrijving: \"een bewijs van deelname in het eigen vermogen van een bv of nv\"?",
+      "o": [
+       "Marktsegmentatie",
+       "Crediteuren",
+       "Aandeel",
+       "Balans"
+      ],
+      "c": 2,
+      "u": "Het juiste begrip is «Aandeel»: een bewijs van deelname in het eigen vermogen van een bv of nv.",
+      "d": 2
      }
     ],
     "oe": [
@@ -9896,6 +8955,28 @@ var VAKKEN = [
       "c": 0,
       "u": "(a) Annuiteit: elke maand hetzelfde totale bedrag betalen (bruto maandlast constant). Het aandeel rente daalt gedurende de looptijd en het aandeel aflossing stijgt. Aan het einde is de schuld volledig afgelost.\n(b) Annuiteit: schuld daalt, maandlast constant. Aflossingsvrij: schuld blijft constant (geen aflossing), rente blijft gelijk, aan het einde van de looptijd is de hele schuld nog open."
      }
+    ],
+    "begrippen": [
+     {
+      "t": "Rechtsvorm",
+      "d": "de juridische vorm van een onderneming"
+     },
+     {
+      "t": "Eenmanszaak",
+      "d": "onderneming met één eigenaar die hoofdelijk aansprakelijk is"
+     },
+     {
+      "t": "BV",
+      "d": "besloten vennootschap met beperkt aansprakelijke aandeelhouders"
+     },
+     {
+      "t": "Aansprakelijkheid",
+      "d": "de mate waarin je met privévermogen instaat voor schulden"
+     },
+     {
+      "t": "Aandeel",
+      "d": "een bewijs van deelname in het eigen vermogen van een bv of nv"
+     }
     ]
    },
    {
@@ -9922,17 +9003,6 @@ var VAKKEN = [
       ],
       "c": 0,
       "u": "Lijn is de gezagslijn van hoog naar laag. Staf zijn specialisten die ondersteunen en adviseren zonder directe bevelsbevoegdheid."
-     },
-     {
-      "v": "Wat is het kenmerk van een matrixorganisatie?",
-      "o": [
-       "Medewerkers rapporteren aan twee leidinggevenden: zowel een functioneel hoofd als een projectleider.",
-       "Slechts een leidinggevende per medewerker",
-       "Alleen grote bedrijven gebruiken een matrix",
-       "Medewerkers zijn altijd vast ingedeeld per afdeling"
-      ],
-      "c": 0,
-      "u": "Matrix: flexibel, kennisdeling mogelijk. Nadeel: twee bazen geeft rolconflict en onduidelijkheid over prioriteiten."
      },
      {
       "v": "Welk type arbeidsovereenkomst eindigt automatisch op de afgesproken datum, zonder opzegging?",
@@ -10001,17 +9071,6 @@ var VAKKEN = [
       "u": "Maslow: fysiologisch → veiligheid → sociale behoefte → erkenning → zelfontplooiing. Pas als lagere behoeften zijn vervuld, wordt de volgende laag motiverend. Herzberg: onderscheid tussen motivatoren (intrinsiek) en hygiënefactoren (extrinsiek)."
      },
      {
-      "v": "Wat is een functieprofiel?",
-      "o": [
-       "Een omschrijving van taken, bevoegdheden, verantwoordelijkheden en vereiste competenties voor een functie",
-       "Een prestatieoverzicht van een medewerker",
-       "Een personeelshandboek van de organisatie",
-       "Een beloningsstructuur voor alle functies"
-      ],
-      "c": 0,
-      "u": "Het functieprofiel beschrijft WAT de functie inhoudt (taken en verantwoordelijkheden) en WELKE eisen er worden gesteld (competenties, opleiding, ervaring). Basis voor werving, selectie en beoordelingsgesprekken."
-     },
-     {
       "v": "Wat is het verschil tussen leidinggeven en managen?",
       "o": [
        "Leidinggeven richt zich op mensen en motivatie; managen richt zich op planning en beheersing.",
@@ -10034,17 +9093,6 @@ var VAKKEN = [
       "u": "Fayol: de vijf managementfuncties zijn plannen, organiseren, leidinggeven, coördineren en controleren. Controleren: prestaties meten → vergelijken met norm → bijsturen. Zonder controle weet het management niet of de plannen worden gehaald."
      },
      {
-      "v": "Wat is het verschil tussen een functie-omschrijving en een persoonsprofiel bij werving?",
-      "o": [
-       "Functie-omschrijving: taken en verantwoordelijkheden van de functie. Persoonsprofiel: eisen aan de kandidaat.",
-       "Functie-omschrijving: eisen aan de kandidaat. Persoonsprofiel: de taken.",
-       "Beide documenten zijn identiek",
-       "Persoonsprofiel beschrijft de arbeidsvoorwaarden"
-      ],
-      "c": 0,
-      "u": "Functie-omschrijving (functieprofiel): WAT doet de functie. Persoonsprofiel (persoonsspecificatie): WIE zoeken we. Samen vormen ze de basis voor een vacaturetekst en selectieprocedure."
-     },
-     {
       "v": "Welk begrip beschrijft de officiële routes waarlangs informatie in een organisatie stroomt van hoog naar laag?",
       "o": [
        "Formele communicatie",
@@ -10065,6 +9113,66 @@ var VAKKEN = [
       ],
       "c": 0,
       "u": "Herzberg: hygiënefactoren (salaris, werkomstandigheden, beleid) voorkomen ontevredenheid maar motiveren niet. Motivatoren (uitdaging, erkenning, verantwoordelijkheid, groei) leiden tot daadwerkelijke motivatie en hogere prestaties."
+     },
+     {
+      "v": "Wat betekent «Constante kosten»?",
+      "o": [
+       "de verkoopprijs min de variabele kosten per stuk",
+       "kosten die gelijk blijven bij meer of minder productie",
+       "het vermogen dat van de eigenaren zelf is",
+       "de eigen omzet als deel van de totale marktomzet"
+      ],
+      "c": 1,
+      "u": "«Constante kosten» betekent: kosten die gelijk blijven bij meer of minder productie. Tegenover variabele kosten: constante kosten (zoals huur) veranderen niet met de productie.",
+      "d": 1
+     },
+     {
+      "v": "Welk begrip hoort bij deze omschrijving: \"kosten die meebewegen met de productieomvang\"?",
+      "o": [
+       "Variabele kosten",
+       "Constante kosten",
+       "Rechtsvorm",
+       "Solvabiliteit"
+      ],
+      "c": 0,
+      "u": "Het juiste begrip is «Variabele kosten»: kosten die meebewegen met de productieomvang. Tegenover constante kosten: variabele kosten bewegen mee met hoeveel je produceert.",
+      "d": 2
+     },
+     {
+      "v": "Welk begrip hoort bij deze omschrijving: \"de kosten die aan één product worden toegerekend\"?",
+      "o": [
+       "Dekkingsbijdrage",
+       "Variabele kosten",
+       "Kostprijs",
+       "Constante kosten"
+      ],
+      "c": 2,
+      "u": "Het juiste begrip is «Kostprijs»: de kosten die aan één product worden toegerekend.",
+      "d": 3
+     },
+     {
+      "v": "Wat betekent «Break-evenafzet»?",
+      "o": [
+       "een overzicht van de opbrengsten en de kosten",
+       "kosten die gelijk blijven bij meer of minder productie",
+       "de kosten die aan één product worden toegerekend",
+       "de afzet waarbij de winst precies nul is"
+      ],
+      "c": 3,
+      "u": "«Break-evenafzet» betekent: de afzet waarbij de winst precies nul is.",
+      "d": 1
+     },
+     {
+      "v": "Welk begrip hoort bij deze omschrijving: \"de verkoopprijs min de variabele kosten per stuk\"?",
+      "o": [
+       "Aandeel",
+       "Rechtsvorm",
+       "Rentabiliteit",
+       "Dekkingsbijdrage"
+      ],
+      "c": 3,
+      "u": "Het juiste begrip is «Dekkingsbijdrage»: de verkoopprijs min de variabele kosten per stuk.",
+      "d": 2
      }
     ],
     "oe": [
@@ -10097,6 +9205,28 @@ var VAKKEN = [
       ],
       "c": 0,
       "u": "Stafeenheden (HR en Financien) hebben geen directe bevelsbevoegdheid over de lijnmedewerkers. Ze adviseren en ondersteunen de lijnmanagers. De lijnmanagers behouden het gezag en de eindverantwoordelijkheid voor de dagelijkse aansturing van hun medewerkers. Dit onderscheid is cruciaal: stafeenheden mogen geen orders geven aan lijnpersoneel."
+     }
+    ],
+    "begrippen": [
+     {
+      "t": "Constante kosten",
+      "d": "kosten die gelijk blijven bij meer of minder productie"
+     },
+     {
+      "t": "Variabele kosten",
+      "d": "kosten die meebewegen met de productieomvang"
+     },
+     {
+      "t": "Kostprijs",
+      "d": "de kosten die aan één product worden toegerekend"
+     },
+     {
+      "t": "Break-evenafzet",
+      "d": "de afzet waarbij de winst precies nul is"
+     },
+     {
+      "t": "Dekkingsbijdrage",
+      "d": "de verkoopprijs min de variabele kosten per stuk"
      }
     ]
    },
@@ -10182,17 +9312,6 @@ var VAKKEN = [
       "u": "Marktoriëntatie: de klantbehoefte staat centraal. Productoriëntatie: het product is leidend. Verkooporiëntatie: verkopen wat je hebt. De evolutie in marketingdenken loopt van productie → product → verkoop → markt → maatschappij."
      },
      {
-      "v": "Wat is het verschil tussen massa- en doelgroepmarketing (niche)?",
-      "o": [
-       "Massamarketing: één propositie voor iedereen. Doelgroepmarketing: aanpassen aan specifiek segment.",
-       "Doelgroepmarketing is altijd duurder dan massamarketing",
-       "Massamarketing werkt altijd beter dan doelgroepmarketing",
-       "Ze zijn identiek in aanpak"
-      ],
-      "c": 0,
-      "u": "Segmentatie: de markt opdelen in groepen met vergelijkbare kenmerken. Targeting: kies het segment. Positionering: bepaal de plaats in het hoofd van de consument. STP-model is de basis van moderne marketing."
-     },
-     {
       "v": "Welk begrip beschrijft de levensfase van een product van introductie tot neergang?",
       "o": [
        "Productlevenscyclus (PLC): introductie → groei → rijpheid → neergang",
@@ -10202,17 +9321,6 @@ var VAKKEN = [
       ],
       "c": 0,
       "u": "Introductie: lage omzet, hoge investeringen. Groei: snelle omzetstijging. Rijpheid: stabiele omzet, hevige concurrentie. Neergang: dalende omzet. Marketingstrategie past zich aan per fase."
-     },
-     {
-      "v": "Wat is het doel van een SWOT-analyse?",
-      "o": [
-       "Interne sterkten/zwakten en externe kansen/bedreigingen in kaart brengen",
-       "Alleen de concurrenten analyseren",
-       "De financiële prestaties meten",
-       "De leveranciers beoordelen"
-      ],
-      "c": 0,
-      "u": "SWOT: Strengths (intern), Weaknesses (intern), Opportunities (extern), Threats (extern). Confrontatiematrix: verbind sterkten met kansen (groeistrategie) en zwakten met bedreigingen (verdedigingsstrategie)."
      },
      {
       "v": "Welke distributiestrategie maakt het product op zo veel mogelijk verkooppunten beschikbaar?",
@@ -10248,17 +9356,6 @@ var VAKKEN = [
       "u": "Enquête: gestandaardiseerde vragen → grote steekproef → statistische analyse mogelijk. Diepte-interview en focusgroep zijn kwalitatief: kleine groep, rijkere inzichten maar niet representatief."
      },
      {
-      "v": "Wat is het verschil tussen een monopolie en een oligopolie als marktvorm?",
-      "o": [
-       "Monopolie: één aanbieder. Oligopolie: weinig aanbieders met strategische onderlinge afhankelijkheid.",
-       "Monopolie: veel aanbieders. Oligopolie: één aanbieder.",
-       "Oligopolie heeft volkomen concurrentie; monopolie niet.",
-       "Er is geen economisch verschil tussen beide marktvormen"
-      ],
-      "c": 0,
-      "u": "Monopolie: één aanbieder, prijsbepaler, geen concurrentie. Oligopolie: enkele aanbieders (bijv. telecom, supermarkten). Strategische afhankelijkheid: actie van één beïnvloedt alle anderen. Beide leiden tot hogere prijzen dan bij volkomen concurrentie."
-     },
-     {
       "v": "Welk begrip beschrijft het op de markt brengen van een bestaand product in een nieuw marktsegment?",
       "o": [
        "Marktontwikkeling",
@@ -10268,6 +9365,54 @@ var VAKKEN = [
       ],
       "c": 0,
       "u": "Ansoff-matrix: vier groeistategieën: (1) marktpenetratie, (2) marktontwikkeling, (3) productontwikkeling, (4) diversificatie. Hoe verder je afwijkt van wat je kent (product én markt), hoe groter het risico."
+     },
+     {
+      "v": "Wat betekent «Marketingmix»?",
+      "o": [
+       "het opdelen van de markt in groepen klanten",
+       "de vier P's: prijs, product, plaats en promotie",
+       "de groep klanten waarop een onderneming zich richt",
+       "een bewijs van deelname in het eigen vermogen van een bv of nv"
+      ],
+      "c": 1,
+      "u": "«Marketingmix» betekent: de vier P's: prijs, product, plaats en promotie.",
+      "d": 1
+     },
+     {
+      "v": "Welk begrip hoort bij deze omschrijving: \"de groep klanten waarop een onderneming zich richt\"?",
+      "o": [
+       "Doelgroep",
+       "Aandeel",
+       "Kostprijs",
+       "BV"
+      ],
+      "c": 0,
+      "u": "Het juiste begrip is «Doelgroep»: de groep klanten waarop een onderneming zich richt.",
+      "d": 2
+     },
+     {
+      "v": "Welk begrip hoort bij deze omschrijving: \"het opdelen van de markt in groepen klanten\"?",
+      "o": [
+       "Marktaandeel",
+       "Marketingmix",
+       "Marktsegmentatie",
+       "Doelgroep"
+      ],
+      "c": 2,
+      "u": "Het juiste begrip is «Marktsegmentatie»: het opdelen van de markt in groepen klanten.",
+      "d": 3
+     },
+     {
+      "v": "Wat betekent «Marktaandeel»?",
+      "o": [
+       "de eigen omzet als deel van de totale marktomzet",
+       "de mate waarin je op tijd kunt betalen",
+       "een bewijs van deelname in het eigen vermogen van een bv of nv",
+       "het vermogen dat van de eigenaren zelf is"
+      ],
+      "c": 0,
+      "u": "«Marktaandeel» betekent: de eigen omzet als deel van de totale marktomzet.",
+      "d": 1
      }
     ],
     "oe": [
@@ -10301,6 +9446,24 @@ var VAKKEN = [
       "c": 0,
       "u": "Eigen winkel: voordeel directe klantrelatie en volledige winstmarge. Nadeel hoge vaste kosten (huur, personeel).\nWebshop: voordeel breed bereik en lagere vaste kosten. Nadeel logistiek (bezorging vers brood) is complex en duur.\nSupermarkt: voordeel groot bereik en weinig eigen distributiekosten. Nadeel lagere marge door marge voor de supermarkt, minder controle over presentatie."
      }
+    ],
+    "begrippen": [
+     {
+      "t": "Marketingmix",
+      "d": "de vier P's: prijs, product, plaats en promotie"
+     },
+     {
+      "t": "Doelgroep",
+      "d": "de groep klanten waarop een onderneming zich richt"
+     },
+     {
+      "t": "Marktsegmentatie",
+      "d": "het opdelen van de markt in groepen klanten"
+     },
+     {
+      "t": "Marktaandeel",
+      "d": "de eigen omzet als deel van de totale marktomzet"
+     }
     ]
    },
    {
@@ -10327,17 +9490,6 @@ var VAKKEN = [
       ],
       "c": 0,
       "u": "db = vp min vk. Break-even: Q_be = FK gedeeld door db. Als db·Q groter is dan FK is er winst."
-     },
-     {
-      "v": "Welk begrip beschrijft de productieomvang waarbij totale opbrengst precies gelijk is aan totale kosten?",
-      "o": [
-       "Break-evenpunt (TO = TK, geen winst/verlies)",
-       "Maximale winst",
-       "Nulpunt (nulproductie)",
-       "Capaciteitsgrens"
-      ],
-      "c": 0,
-      "u": "Break-even: TO = TK. Q_be = FK gedeeld door (vp min vk)."
      },
      {
       "v": "Wanneer treedt positieve hefboomwerking op?",
@@ -10373,17 +9525,6 @@ var VAKKEN = [
       "u": "Bij nulproductie: vaste kosten lopen door, variabele kosten zijn nul. Totale kosten = FK + VK."
      },
      {
-      "v": "Wat is de formule voor de rentabiliteit totaal vermogen (RTV)?",
-      "o": [
-       "RTV = (nettowinst + betaalde rente) / totaal vermogen × 100%",
-       "RTV = nettowinst / eigen vermogen × 100%",
-       "RTV = omzet / totaal vermogen × 100%",
-       "RTV = brutowinst / vreemd vermogen × 100%"
-      ],
-      "c": 0,
-      "u": "RTV meet de winstgevendheid van al het ingezette vermogen, ongeacht de financiering. Rente wordt opgeteld omdat die de vergoeding is voor het vreemd vermogen. REV = nettowinst / eigen vermogen × 100%."
-     },
-     {
       "v": "Wanneer is een investering financieel aantrekkelijk op basis van de Netto Contante Waarde (NCW)?",
       "o": [
        "Als NCW > 0 (contante waarde van kasstromen > investeringsbedrag)",
@@ -10393,17 +9534,6 @@ var VAKKEN = [
       ],
       "c": 0,
       "u": "NCW = som van (kasinstroom_t × CW-factor_t) − investering. NCW > 0: de investering creëert waarde. NCW < 0: de investering vernietigt waarde. IRR is de discontovoet waarbij NCW = 0."
-     },
-     {
-      "v": "Wat is het verschil tussen solvabiliteit en liquiditeit?",
-      "o": [
-       "Solvabiliteit: lange termijn (EV/TV). Liquiditeit: korte termijn (vlottende activa/kortlopende schulden).",
-       "Solvabiliteit is hetzelfde als liquiditeit",
-       "Liquiditeit gaat over lange termijn; solvabiliteit over korte termijn",
-       "Beide meten de winstgevendheid van het bedrijf"
-      ],
-      "c": 0,
-      "u": "Liquiditeit: kan het bedrijf op korte termijn aan zijn betalingsverplichtingen voldoen? Current ratio = vlottende activa / kortlopende schulden. Solvabiliteit: is het bedrijf op lange termijn financieel gezond? EV/TV."
      },
      {
       "v": "Wat is de dekkingsbijdrage en hoe gebruik je het voor de break-even berekening?",
@@ -10439,37 +9569,76 @@ var VAKKEN = [
       "u": "Negatieve hefboom: de financieringskosten (rente VV) overtreffen de RTV. Het geleende geld kost meer dan het oplevert, waardoor de REV onder de RTV daalt. Risico van veel vreemd vermogen in slechtere tijden."
      },
      {
-      "v": "Wat is het verschil tussen de terugverdientijd (TVT) en de netto contante waarde (NCW)?",
+      "v": "Wat betekent «Eigen vermogen»?",
       "o": [
-       "TVT negeert tijdswaarde en kasstromen ná terugverdienperiode; NCW verdisconteert alle kasstromen",
-       "TVT is superieur omdat het eenvoudiger is",
-       "NCW negeert de tijdswaarde van geld; TVT niet",
-       "Beide methoden geven altijd hetzelfde advies"
+       "het vermogen dat van de eigenaren zelf is",
+       "het opdelen van de markt in groepen klanten",
+       "de mate waarin je aan alle verplichtingen kunt voldoen",
+       "de juridische vorm van een onderneming"
       ],
       "c": 0,
-      "u": "TVT: eenvoudig maar negeert de tijdswaarde van geld en kasstromen na de terugverdienperiode. NCW: houdt rekening met tijdswaarde en alle kasstromen → economisch betere methode, maar vereist een discontovoet."
+      "u": "«Eigen vermogen» betekent: het vermogen dat van de eigenaren zelf is. Tegenover vreemd vermogen: eigen vermogen is van de eigenaren, vreemd vermogen is geleend.",
+      "d": 1
      },
      {
-      "v": "Wat zijn variabele kosten en hoe gedragen ze zich bij toenemende productie?",
+      "v": "Welk begrip hoort bij deze omschrijving: \"het geleende vermogen, oftewel de schulden\"?",
       "o": [
-       "Variabele kosten stijgen evenredig met de productieomvang (bijv. grondstoffen, verpakking)",
-       "Variabele kosten zijn constant ongeacht de productie",
-       "Variabele kosten dalen altijd bij meer productie",
-       "Variabele kosten omvatten alleen arbeidskosten"
+       "Kostprijs",
+       "BV",
+       "Rentabiliteit",
+       "Vreemd vermogen"
       ],
-      "c": 0,
-      "u": "Variabele kosten (VK) per stuk zijn constant; totale variabele kosten stijgen lineair met de productie. Bij nulproductie zijn er geen variabele kosten. Totale kosten = FK + VK = FK + (vk × Q)."
+      "c": 3,
+      "u": "Het juiste begrip is «Vreemd vermogen»: het geleende vermogen, oftewel de schulden. Tegenover eigen vermogen: vreemd vermogen zijn schulden, eigen vermogen is van de eigenaren.",
+      "d": 2
      },
      {
-      "v": "Wat is de current ratio en wat geeft een waarde lager dan 1,0 aan?",
+      "v": "Welk begrip hoort bij deze omschrijving: \"geld voor langere tijd vastleggen in vaste activa\"?",
       "o": [
-       "Current ratio = vlottende activa / kortlopende schulden; < 1,0 = onvoldoende liquiditeit op korte termijn",
-       "Current ratio = eigen vermogen / totaal vermogen; < 1,0 = insolvabiliteit",
-       "Current ratio > 2,0 is altijd een teken van problemen",
-       "Current ratio meet de winstgevendheid op korte termijn"
+       "Solvabiliteit",
+       "Vreemd vermogen",
+       "Liquiditeit",
+       "Investeren"
       ],
-      "c": 0,
-      "u": "Current ratio < 1,0: de kortlopende schulden overtreffen de vlottende activa → mogelijke betalingsproblemen op korte termijn. Normwaarde: ≥ 1,5. Quick ratio is strenger (voorraden uitgesloten)."
+      "c": 3,
+      "u": "Het juiste begrip is «Investeren»: geld voor langere tijd vastleggen in vaste activa.",
+      "d": 3
+     },
+     {
+      "v": "Wat betekent «Liquiditeit»?",
+      "o": [
+       "klanten die nog moeten betalen",
+       "de mate waarin je op tijd kunt betalen",
+       "het vermogen dat van de eigenaren zelf is",
+       "de kosten die aan één product worden toegerekend"
+      ],
+      "c": 1,
+      "u": "«Liquiditeit» betekent: de mate waarin je op tijd kunt betalen. Let op het verschil met solvabiliteit: liquiditeit = kortetermijnbetalen, solvabiliteit = alle schulden aankunnen.",
+      "d": 1
+     },
+     {
+      "v": "Welk begrip hoort bij deze omschrijving: \"de mate waarin je aan alle verplichtingen kunt voldoen\"?",
+      "o": [
+       "Marktsegmentatie",
+       "Break-evenafzet",
+       "Solvabiliteit",
+       "Aandeel"
+      ],
+      "c": 2,
+      "u": "Het juiste begrip is «Solvabiliteit»: de mate waarin je aan alle verplichtingen kunt voldoen. Let op het verschil met liquiditeit: solvabiliteit gaat over álle verplichtingen, liquiditeit over betalen op korte termijn.",
+      "d": 2
+     },
+     {
+      "v": "Welk begrip hoort bij deze omschrijving: \"de verhouding van de winst tot het geïnvesteerde vermogen\"?",
+      "o": [
+       "Liquiditeit",
+       "Solvabiliteit",
+       "Rentabiliteit",
+       "Investeren"
+      ],
+      "c": 2,
+      "u": "Het juiste begrip is «Rentabiliteit»: de verhouding van de winst tot het geïnvesteerde vermogen.",
+      "d": 3
      }
     ],
     "oe": [
@@ -10503,6 +9672,32 @@ var VAKKEN = [
       "c": 0,
       "u": "(a) TVT = 80.000 gedeeld door 20.000 = 4 jaar.\n(b) NCW = 20.000·3,993 min 80.000 = 79.860 min 80.000 = min 140 euro.\n(c) De NCW is licht negatief. De investering creëert bij een rendementseis van 8% nagenoeg geen waarde. Advies: niet uitvoeren tenzij de kasinstroom hoger kan of de aanschafprijs lager."
      }
+    ],
+    "begrippen": [
+     {
+      "t": "Eigen vermogen",
+      "d": "het vermogen dat van de eigenaren zelf is"
+     },
+     {
+      "t": "Vreemd vermogen",
+      "d": "het geleende vermogen, oftewel de schulden"
+     },
+     {
+      "t": "Investeren",
+      "d": "geld voor langere tijd vastleggen in vaste activa"
+     },
+     {
+      "t": "Liquiditeit",
+      "d": "de mate waarin je op tijd kunt betalen"
+     },
+     {
+      "t": "Solvabiliteit",
+      "d": "de mate waarin je aan alle verplichtingen kunt voldoen"
+     },
+     {
+      "t": "Rentabiliteit",
+      "d": "de verhouding van de winst tot het geïnvesteerde vermogen"
+     }
     ]
    },
    {
@@ -10520,17 +9715,6 @@ var VAKKEN = [
     ],
     "sam": "<div class=\"sam-head\">Balans en W&V-rekening</div><ul><li><strong>Balans</strong>: momentopname van de financiële positie. Activa (bezittingen) = Passiva (financiering). EV + VV = totale activa. Altijd in evenwicht.</li><li><strong>Vaste activa</strong>: gebouwen, machines, inventaris. Langdurig in gebruik, worden afgeschreven.</li><li><strong>Vlottende activa</strong>: voorraden, debiteuren (nog te ontvangen), kas/bank. Kortlopend, worden snel omgezet in geld.</li><li><strong>Eigen vermogen (EV)</strong>: ingebracht kapitaal + ingehouden winsten. Resterende aanspraak na aftrek van alle schulden.</li><li><strong>Vreemd vermogen (VV)</strong>: langlopend (leningen &gt; 1 jaar) en kortlopend (crediteuren, belasting &lt; 1 jaar).</li><li><strong>Winst-en-verliesrekening</strong>: periodeoverzicht. Omzet − inkoopwaarde = brutowinst. Brutowinst − bedrijfskosten = bedrijfsresultaat. Bedrijfsresultaat − financiële lasten = nettowinst.</li></ul><div class=\"sam-head\">Afschrijving</div><ul><li><strong>Lineaire afschrijving</strong>: (aanschafwaarde − restwaarde) / gebruiksduur. Elk jaar hetzelfde bedrag. Boekwaarde daalt gelijkmatig.</li><li><strong>Effect op winst</strong>: afschrijving is een kostenpost in de W&V-rekening → verlaagt winst. Tegelijk daalt de boekwaarde op de balans.</li><li><strong>Werkkapitaal</strong>: vlottende activa − kortlopende schulden. Positief = voldoende buffer voor dagelijkse verplichtingen.</li></ul><div class=\"sam-head\">Financiële kengetallen</div><ul><li><strong>Solvabiliteit</strong>: EV / TV × 100%. Hoe groter het aandeel EV, hoe minder afhankelijk van crediteuren. Solvabiliteit > 30% is doorgaans acceptabel.</li><li><strong>Current ratio</strong>: vlottende activa / kortlopende schulden. ≥ 1,0 is gezond (voldoende vlottende activa om kortlopende schulden te voldoen).</li><li><strong>Quick ratio</strong>: (vlottende activa − voorraden) / kortlopende schulden. Strenger dan current ratio. Voorraden worden uitgesloten omdat ze minder snel te gelde zijn. ≥ 0,8 is acceptabel.</li></ul>",
     "sv": [
-     {
-      "v": "Wat toont de balans van een onderneming?",
-      "o": [
-       "Een overzicht van bezittingen (activa) en financiering (passiva) op een bepaald moment",
-       "De winst en verlies over een periode",
-       "De kasstroom van een bedrijf",
-       "De omzet per productcategorie"
-      ],
-      "c": 0,
-      "u": "Balans is een momentopname. Activa (bezittingen) = Passiva (financiering). Altijd: eigen vermogen + vreemd vermogen = totale activa."
-     },
      {
       "v": "Welk liquiditeitskengetal sluit voorraden uit omdat die minder snel te gelde zijn?",
       "o": [
@@ -10585,28 +9769,6 @@ var VAKKEN = [
       ],
       "c": 0,
       "u": "Passiva beschrijft hoe de activa zijn gefinancierd: eigen vermogen (EV) en vreemd vermogen (VV). VV is onder te verdelen in lang vreemd vermogen (bijv. hypotheek) en kort vreemd vermogen (bijv. crediteuren)."
-     },
-     {
-      "v": "Wat is de brutowinstmarge en wat zegt het over een onderneming?",
-      "o": [
-       "Brutowinst / omzet × 100%: winstgevendheid vóór aftrek van bedrijfskosten",
-       "Nettowinst / omzet × 100%: winstgevendheid ná alle kosten",
-       "Omzet / totale kosten × 100%",
-       "EV / omzet × 100%"
-      ],
-      "c": 0,
-      "u": "Brutowinst = omzet − inkoopwaarde van de omzet. Brutowinstmarge: hoe hoog is de brutowinst als percentage van de omzet? Hoge marge = gunstige inkoopcondities of sterke prijspositionering."
-     },
-     {
-      "v": "Welke post op de balans omschrijft de waardevermindering van vaste activa over de gebruiksduur?",
-      "o": [
-       "Cumulatieve afschrijvingen",
-       "Voorzieningen",
-       "Reserves",
-       "Crediteuren"
-      ],
-      "c": 0,
-      "u": "Vaste activa worden lineair of degressief afgeschreven. Jaarlijkse afschrijving = (aanschaf − restwaarde) / gebruiksduur. Cumulatieve afschrijvingen worden in mindering gebracht op de aanschafwaarde: boekwaarde."
      },
      {
       "v": "Wat toont de winst-en-verliesrekening (W&V) en hoe wijkt het af van het kasstroomoverzicht?",
@@ -10664,15 +9826,76 @@ var VAKKEN = [
       "u": "Eigen vermogen = aandelenkapitaal + agioreserve + overige reserves + winst van het jaar. Het is de resterende aanspraak na aftrek van alle schulden. Stijgt bij winst, daalt bij verlies of dividenduitkering."
      },
      {
-      "v": "Wat is het verschil tussen debiteuren en crediteuren op de balans?",
+      "v": "Wat betekent «Balans»?",
       "o": [
-       "Debiteuren: nog te ontvangen van klanten (activa). Crediteuren: nog te betalen aan leveranciers (passiva).",
-       "Debiteuren zijn schulden; crediteuren zijn vorderingen.",
-       "Debiteuren staan op de passivazijde; crediteuren op de activazijde.",
-       "Debiteuren en crediteuren zijn hetzelfde."
+       "een overzicht van bezittingen, schulden en eigen vermogen",
+       "leveranciers die nog betaald moeten worden",
+       "klanten die nog moeten betalen",
+       "kosten die gelijk blijven bij meer of minder productie"
       ],
       "c": 0,
-      "u": "Debiteuren (activa): klanten die nog moeten betalen → vordering van het bedrijf. Crediteuren (passiva): leveranciers aan wie het bedrijf nog moet betalen → schuld van het bedrijf. Debiteuren zijn vlottende activa; crediteuren zijn kortlopende schulden."
+      "u": "«Balans» betekent: een overzicht van bezittingen, schulden en eigen vermogen.",
+      "d": 1
+     },
+     {
+      "v": "Welk begrip hoort bij deze omschrijving: \"een overzicht van de opbrengsten en de kosten\"?",
+      "o": [
+       "Liquiditeit",
+       "Aansprakelijkheid",
+       "Resultatenrekening",
+       "Balans"
+      ],
+      "c": 2,
+      "u": "Het juiste begrip is «Resultatenrekening»: een overzicht van de opbrengsten en de kosten.",
+      "d": 2
+     },
+     {
+      "v": "Welk begrip hoort bij deze omschrijving: \"de opbrengsten min de kosten\"?",
+      "o": [
+       "Winst",
+       "Crediteuren",
+       "Balans",
+       "Debiteuren"
+      ],
+      "c": 0,
+      "u": "Het juiste begrip is «Winst»: de opbrengsten min de kosten.",
+      "d": 3
+     },
+     {
+      "v": "Wat betekent «Afschrijving»?",
+      "o": [
+       "de afzet waarbij de winst precies nul is",
+       "leveranciers die nog betaald moeten worden",
+       "de kosten die aan één product worden toegerekend",
+       "de waardedaling van een vast actief over de tijd"
+      ],
+      "c": 3,
+      "u": "«Afschrijving» betekent: de waardedaling van een vast actief over de tijd.",
+      "d": 1
+     },
+     {
+      "v": "Welk begrip hoort bij deze omschrijving: \"klanten die nog moeten betalen\"?",
+      "o": [
+       "Crediteuren",
+       "Debiteuren",
+       "Kostprijs",
+       "Marktaandeel"
+      ],
+      "c": 1,
+      "u": "Het juiste begrip is «Debiteuren»: klanten die nog moeten betalen.",
+      "d": 2
+     },
+     {
+      "v": "Welk begrip hoort bij deze omschrijving: \"leveranciers die nog betaald moeten worden\"?",
+      "o": [
+       "Crediteuren",
+       "Balans",
+       "Debiteuren",
+       "Resultatenrekening"
+      ],
+      "c": 0,
+      "u": "Het juiste begrip is «Crediteuren»: leveranciers die nog betaald moeten worden.",
+      "d": 3
      }
     ],
     "oe": [
@@ -10705,6 +9928,32 @@ var VAKKEN = [
       ],
       "c": 0,
       "u": "(a) Nettowinst voor belasting = bedrijfsresultaat min financiele lasten = 100.000 min 20.000 = 80.000 euro.\n(b) RTV = (nettowinst + rente VV) gedeeld door TV·100% = (80.000 + 20.000) gedeeld door 500.000·100% = 20%.\n(c) Het bedrijfsresultaat geeft aan hoeveel winst het bedrijf behaalt uit zijn kernactiviteiten, voor aftrek van financieringskosten (rente). Het laat zien hoe winstgevend de bedrijfsvoering zelf is, onafhankelijk van de financieringsstructuur."
+     }
+    ],
+    "begrippen": [
+     {
+      "t": "Balans",
+      "d": "een overzicht van bezittingen, schulden en eigen vermogen"
+     },
+     {
+      "t": "Resultatenrekening",
+      "d": "een overzicht van de opbrengsten en de kosten"
+     },
+     {
+      "t": "Winst",
+      "d": "de opbrengsten min de kosten"
+     },
+     {
+      "t": "Afschrijving",
+      "d": "de waardedaling van een vast actief over de tijd"
+     },
+     {
+      "t": "Debiteuren",
+      "d": "klanten die nog moeten betalen"
+     },
+     {
+      "t": "Crediteuren",
+      "d": "leveranciers die nog betaald moeten worden"
      }
     ]
    }
@@ -10776,17 +10025,6 @@ var VAKKEN = [
       "u": "Type 2 conditional (unreal/hypothetical present): If + past simple → would + base verb. \"If I had enough money, I would buy a new phone.\" Type 1 (realistic): If I have → I will buy."
      },
      {
-      "v": "What does \"make a decision\" mean, and why is \"do a decision\" wrong?",
-      "o": [
-       "\"Do a decision\" is correct in formal writing",
-       "Collocations are fixed combinations — \"make\" pairs with decision, not \"do\"",
-       "Both are acceptable in modern English",
-       "\"Do a decision\" is used in American English"
-      ],
-      "c": 1,
-      "u": "Collocations are fixed word pairs. \"Make\" pairs with: decision, mistake, progress, effort. \"Do\" pairs with: research, homework, work, damage. These must be memorised."
-     },
-     {
       "v": "What is the passive form of \"The scientists discovered a new planet\"?",
       "o": [
        "A new planet is discovered by the scientists.",
@@ -10796,17 +10034,6 @@ var VAKKEN = [
       ],
       "c": 1,
       "u": "Passive: be (in the correct tense) + past participle. The original verb \"discovered\" is past simple → \"was discovered\". \"By the scientists\" is the agent (optional in the passive)."
-     },
-     {
-      "v": "Which word signals that a definition or explanation follows?",
-      "o": [
-       "However",
-       "Such as / in other words",
-       "Therefore",
-       "Nevertheless"
-      ],
-      "c": 1,
-      "u": "\"Such as\", \"in other words\", \"that is\", \"for example\" signal a definition, example or clarification. \"However/nevertheless\" = contrast. \"Therefore\" = result/consequence."
      },
      {
       "v": "Which modal verb expresses advice?",
@@ -10993,17 +10220,6 @@ var VAKKEN = [
     "sam": "<div class=\"sam-head\">Text Comprehension</div><ul><li><strong>Main idea</strong>: the central message or argument of the entire text — not just one paragraph. Often signalled in the title, first paragraph, or final conclusion. Ask: what does the writer want the reader to take away?</li><li><strong>Supporting details</strong>: examples, statistics, expert quotes, anecdotes that back up the main idea. Distinguish between detail (specific) and main idea (general).</li><li><strong>Inference</strong>: reading between the lines. The author implies something without stating it explicitly; the reader uses context and prior knowledge to infer the meaning.</li><li><strong>Skimming vs. scanning</strong>: skimming = reading quickly for general meaning (main idea). Scanning = looking for specific information (a date, a name).</li></ul><div class=\"sam-head\">Writer's Craft</div><ul><li><strong>Tone</strong>: the writer's attitude toward the subject (serious, ironic, humorous, critical, sceptical, sympathetic). Revealed through word choice, not the topic itself.</li><li><strong>Purpose</strong>: what the writer intends to achieve — to inform, to persuade, to entertain, to instruct, or a combination.</li><li><strong>Audience</strong>: who the text is written for. Affects vocabulary level, examples used, and assumed knowledge.</li><li><strong>Hedging language</strong>: writers use \"may\", \"might\", \"could\", \"seems to\", \"suggests\" to indicate uncertainty. This is especially common in academic and scientific texts.</li></ul><div class=\"sam-head\">Language and Structure</div><ul><li><strong>Reference words</strong>: pronouns and phrases that refer to an earlier noun or idea (it, they, this, these, the former, the latter). Always identify what they refer to — this is frequently tested.</li><li><strong>Cohesion markers</strong>: however (contrast) | moreover/furthermore (addition) | therefore/thus (result) | although/even though (concession) | for example/such as (illustration)</li><li><strong>Vocabulary in context</strong>: use surrounding sentences to deduce the meaning of unknown words. Look for synonyms, antonyms, examples, or definitions in the same or nearby sentences.</li><li><strong>Paragraph structure</strong>: topic sentence (main point) + supporting sentences + sometimes a concluding or linking sentence. Identifying topic sentences helps map the whole text quickly.</li></ul>",
     "sv": [
      {
-      "v": "What does \"inference\" mean when reading a text?",
-      "o": [
-       "Drawing a conclusion based on evidence and reasoning rather than explicit statement",
-       "Copying the exact words from the text",
-       "Summarising the first paragraph",
-       "Translating difficult words"
-      ],
-      "c": 0,
-      "u": "Inference means reading between the lines. The author implies something; the reader uses clues and background knowledge to infer the meaning."
-     },
-     {
       "v": "Which word signals a contrast in English?",
       "o": [
        "However",
@@ -11015,17 +10231,6 @@ var VAKKEN = [
       "u": "However signals a contrast or opposition. Moreover and furthermore signal addition. Therefore signals a result or consequence."
      },
      {
-      "v": "What is the difference between tone and purpose?",
-      "o": [
-       "Tone is the attitude of the writer. Purpose is the reason for writing the text.",
-       "They mean the same thing",
-       "Tone is about the topic, purpose is about length",
-       "Purpose is the attitude, tone is the reason"
-      ],
-      "c": 0,
-      "u": "Tone = how the writer feels (ironic, serious, critical). Purpose = what the writer wants to achieve (inform, persuade, entertain)."
-     },
-     {
       "v": "What should you do when you encounter an unknown word?",
       "o": [
        "Use the surrounding context to determine its meaning",
@@ -11035,28 +10240,6 @@ var VAKKEN = [
       ],
       "c": 0,
       "u": "Context clues: look at the sentence before and after. Synonyms, antonyms, examples or definitions nearby often reveal the meaning."
-     },
-     {
-      "v": "What is a reference word?",
-      "o": [
-       "A pronoun or phrase that refers back to something mentioned earlier in the text",
-       "A word that defines a technical term",
-       "A heading or subheading",
-       "A word borrowed from another language"
-      ],
-      "c": 0,
-      "u": "Reference words (it, they, this, these, the former) point back to a noun or idea. Identifying the referent is key to understanding the text."
-     },
-     {
-      "v": "What does the phrase \"hedging language\" mean in an academic text?",
-      "o": [
-       "Language that expresses uncertainty or qualifies a claim (e.g. may, might, seems to)",
-       "Language that strongly asserts a fact",
-       "Language used in informal conversations",
-       "Language that directly contradicts the main argument"
-      ],
-      "c": 0,
-      "u": "Hedging language softens claims: \"this may suggest...\", \"it is possible that...\", \"the evidence seems to indicate...\". It signals that the writer is cautious about certainty. Very common in scientific and academic writing."
      },
      {
       "v": "Which text structure introduces a difficulty and then proposes a resolution?",
@@ -11090,17 +10273,6 @@ var VAKKEN = [
       ],
       "c": 0,
       "u": "Explicit information is directly stated. Implicit information requires inference — the writer hints at something without stating it outright. CE questions often ask about implied meaning."
-     },
-     {
-      "v": "What does it mean when an author uses an anecdote to support a point?",
-      "o": [
-       "The author uses a short personal story or example to make the argument more vivid and relatable",
-       "The author provides statistical data to prove the point",
-       "The author quotes an expert to add authority",
-       "The author uses a counter-argument to strengthen the main point"
-      ],
-      "c": 0,
-      "u": "An anecdote is a brief, specific story — often personal — used to illustrate a general point. It makes the text more engaging and concrete. However, one anecdote is not sufficient evidence on its own."
      },
      {
       "v": "What does the word \"however\" at the beginning of a sentence indicate?",
@@ -11145,6 +10317,17 @@ var VAKKEN = [
       ],
       "c": 1,
       "u": "A fact can be checked and verified. An opinion expresses a personal view. \"15% from wind power in 2022\" is verifiable data = fact. \"Should\", \"best solution\", \"everyone agrees\" signal opinions or normative statements."
+     },
+     {
+      "v": "What does \"inference\" mean when reading a text?",
+      "o": [
+       "Drawing a conclusion based on evidence and reasoning rather than explicit statement",
+       "Copying the exact words from the text",
+       "Summarising the first paragraph",
+       "Translating difficult words"
+      ],
+      "c": 0,
+      "u": "Inference means reading between the lines. The author implies something; the reader uses clues and background knowledge to infer the meaning."
      }
     ],
     "oe": [
@@ -11270,28 +10453,6 @@ var VAKKEN = [
       "u": "Sarcasm: saying the opposite of what you mean for effect. \"Just brilliant\" combined with the negative qualifier signals that the speaker is actually being critical of the government's plan."
      },
      {
-      "v": "What does \"implicit meaning\" mean in listening comprehension?",
-      "o": [
-       "Information directly stated in the text",
-       "A meaning not directly stated but suggested through tone, word choice or context",
-       "A word you must look up in a dictionary",
-       "The main topic sentence of the speech"
-      ],
-      "c": 1,
-      "u": "Implicit = implied, not directly stated. The listener must infer the meaning from tone, word choice, or what is NOT said. Explicit = directly and clearly stated."
-     },
-     {
-      "v": "Which listening strategy helps you understand fast speech or unfamiliar accents?",
-      "o": [
-       "Stop listening if you miss a word",
-       "Use visual context clues and focus on key content words, not every word",
-       "Only listen to speakers with British accents",
-       "Re-read the script instead"
-      ],
-      "c": 1,
-      "u": "Key strategy: content words (nouns, verbs, adjectives) carry meaning — function words (the, a, of) matter less. Use visual context (images, setting). Focus = topic + tone, not every word."
-     },
-     {
       "v": "What type of spoken text presents two sides of an issue and tries to persuade?",
       "o": [
        "An instruction video",
@@ -11378,17 +10539,6 @@ var VAKKEN = [
       ],
       "c": 1,
       "u": "A hook = an attention-grabbing opening: a rhetorical question, shocking statistic, or personal story. Purpose: engage the audience immediately. The hook is followed by the introduction of the topic."
-     },
-     {
-      "v": "A speaker uses the phrase \"In other words...\" What function does this phrase have?",
-      "o": [
-       "It introduces a contrasting idea",
-       "It restates or clarifies the previous point in simpler terms",
-       "It signals a conclusion",
-       "It introduces a new topic"
-      ],
-      "c": 1,
-      "u": "\"In other words\", \"That is to say\", \"What I mean is\" signal a restatement or clarification — the speaker is rephrasing the previous idea for clarity. This is especially common when explaining a complex concept."
      }
     ],
     "oe": [
@@ -11458,6 +10608,72 @@ var VAKKEN = [
       "u": "Structure: 1. Opening (introduce yourself and topic). 2. Body (2-3 points, each with example/evidence). 3. Conclusion (summarise + your view). This is the standard for HAVO oral exams."
      },
      {
+      "v": "In a formal presentation, which opening is most appropriate?",
+      "o": [
+       "\"Hey guys, so today I'm gonna talk about climate change.\"",
+       "\"Good morning. Today I would like to present my findings on climate change.\"",
+       "\"Climate change, right, so basically it's bad.\"",
+       "\"You probably know about climate change already, so I'll be brief.\""
+      ],
+      "c": 1,
+      "u": "Formal opening: greet the audience, introduce yourself (if needed), state the topic clearly. \"I would like to present\" is formal. Avoid: slang (gonna), contractions in very formal contexts, assuming the audience's knowledge."
+     },
+     {
+      "v": "Which phrase correctly introduces a contrast or counter-argument in spoken English?",
+      "o": [
+       "\"Furthermore, / In addition,\"",
+       "\"However, / On the other hand,\"",
+       "\"For example, / Such as,\"",
+       "\"Therefore, / As a result,\""
+      ],
+      "c": 1,
+      "u": "\"However\" / \"On the other hand\" = contrast. \"Furthermore/In addition\" = adding a point. \"For example\" = illustration. \"Therefore\" = result/conclusion. Using these connectors in speaking shows B1+ proficiency."
+     },
+     {
+      "v": "Which technique makes a presentation more persuasive and engaging?",
+      "o": [
+       "Read directly from your notes without looking up",
+       "Use a rhetorical question, statistic or personal anecdote to open",
+       "Speak as fast as possible to cover more points",
+       "Avoid making eye contact to stay focused"
+      ],
+      "c": 1,
+      "u": "Engaging openings: rhetorical question (\"Have you ever wondered…?\"), surprising statistic, or brief personal story. These activate the audience's attention. Eye contact, varied pace, and clear structure also help."
+     },
+     {
+      "v": "Which phrase is best to use when you want to give another person the chance to speak?",
+      "o": [
+       "\"I will keep talking until you interrupt me.\"",
+       "\"What do you think about that?\" or \"Do you agree?\"",
+       "\"I'm not finished — let me continue.\"",
+       "\"The answer is obvious and I've already explained it.\""
+      ],
+      "c": 1,
+      "u": "Inviting others: \"What do you think?\", \"Would you like to add something?\", \"Do you agree?\" These show collaborative conversation skills, which are assessed in HAVO oral exams."
+     },
+     {
+      "v": "What is the correct way to begin a counter-argument in English?",
+      "o": [
+       "\"That's totally wrong because you haven't thought this through.\"",
+       "\"While I understand your point, I would argue that…\"",
+       "\"No. My opinion is different.\"",
+       "\"You are incorrect. The right answer is…\""
+      ],
+      "c": 1,
+      "u": "\"While I understand your point…\", \"I see what you're saying, but…\", \"That's a valid argument; however…\" These phrases acknowledge the other speaker before contrasting — a key B1 conversation skill."
+     },
+     {
+      "v": "A friend says something in English and you didn't catch it. Which response is most appropriate?",
+      "o": [
+       "\"What?\"",
+       "I'm sorry, could you repeat that more slowly, please?",
+       "Pretend you understood and hope for the best.",
+       "Say nothing and wait for someone else to answer."
+      ],
+      "c": 1,
+      "u": "\"I'm sorry, could you repeat that?\" / \"Could you say that a bit more slowly?\" / \"I beg your pardon?\" These are polite clarification requests. Using them demonstrates active communication — not weakness."
+     },
+     {
       "v": "Which phrase is appropriate to politely disagree in a discussion?",
       "o": [
        "\"You're completely wrong.\"",
@@ -11489,116 +10705,6 @@ var VAKKEN = [
       ],
       "c": 1,
       "u": "Strategic fillers: \"Well…\", \"Let me think…\", \"That's an interesting question…\", \"What I mean is…\" give you 2-3 seconds to organise your thoughts while sounding confident."
-     },
-     {
-      "v": "In a formal presentation, which opening is most appropriate?",
-      "o": [
-       "\"Hey guys, so today I'm gonna talk about climate change.\"",
-       "\"Good morning. Today I would like to present my findings on climate change.\"",
-       "\"Climate change, right, so basically it's bad.\"",
-       "\"You probably know about climate change already, so I'll be brief.\""
-      ],
-      "c": 1,
-      "u": "Formal opening: greet the audience, introduce yourself (if needed), state the topic clearly. \"I would like to present\" is formal. Avoid: slang (gonna), contractions in very formal contexts, assuming the audience's knowledge."
-     },
-     {
-      "v": "You are asked a question in your oral exam and you did not understand it. What should you do?",
-      "o": [
-       "Guess the answer and hope for the best",
-       "Politely ask for clarification: \"Could you repeat that, please?\" or \"Do you mean…?\"",
-       "Stay silent for 30 seconds",
-       "Say \"I don't speak English well\""
-      ],
-      "c": 1,
-      "u": "Asking for clarification is a language skill, not a weakness. \"Could you repeat that?\" / \"I'm sorry, could you rephrase?\" / \"Do you mean…?\" demonstrates communication competence at B1 level."
-     },
-     {
-      "v": "Which phrase correctly introduces a contrast or counter-argument in spoken English?",
-      "o": [
-       "\"Furthermore, / In addition,\"",
-       "\"However, / On the other hand,\"",
-       "\"For example, / Such as,\"",
-       "\"Therefore, / As a result,\""
-      ],
-      "c": 1,
-      "u": "\"However\" / \"On the other hand\" = contrast. \"Furthermore/In addition\" = adding a point. \"For example\" = illustration. \"Therefore\" = result/conclusion. Using these connectors in speaking shows B1+ proficiency."
-     },
-     {
-      "v": "What is meant by \"register\" in spoken English?",
-      "o": [
-       "The loudness or volume of your voice",
-       "The level of formality adapted to the situation and audience",
-       "The speed at which you speak",
-       "The accent you use"
-      ],
-      "c": 1,
-      "u": "Register = formality level. Formal (job interview, presentation): full sentences, polite phrases, no slang. Informal (talking with friends): contractions, casual vocabulary, fillers. HAVO oral exam = semi-formal to formal."
-     },
-     {
-      "v": "Which technique makes a presentation more persuasive and engaging?",
-      "o": [
-       "Read directly from your notes without looking up",
-       "Use a rhetorical question, statistic or personal anecdote to open",
-       "Speak as fast as possible to cover more points",
-       "Avoid making eye contact to stay focused"
-      ],
-      "c": 1,
-      "u": "Engaging openings: rhetorical question (\"Have you ever wondered…?\"), surprising statistic, or brief personal story. These activate the audience's attention. Eye contact, varied pace, and clear structure also help."
-     },
-     {
-      "v": "Translate: \"Ik ben het gedeeltelijk eens met je standpunt, maar ik denk dat...\" into a formal English equivalent.",
-      "o": [
-       "\"Kind of agree but…\"",
-       "\"I partially agree with your point; however, I would suggest that…\"",
-       "\"Yeah sure but also…\"",
-       "\"Agree, disagree, whatever.\""
-      ],
-      "c": 1,
-      "u": "\"I partially agree with your point; however, I would argue/suggest that…\" This is the standard HAVO oral exam formula for expressing nuanced agreement. Shows you can handle complex opinion without being rude."
-     },
-     {
-      "v": "Which phrase is best to use when you want to give another person the chance to speak?",
-      "o": [
-       "\"I will keep talking until you interrupt me.\"",
-       "\"What do you think about that?\" or \"Do you agree?\"",
-       "\"I'm not finished — let me continue.\"",
-       "\"The answer is obvious and I've already explained it.\""
-      ],
-      "c": 1,
-      "u": "Inviting others: \"What do you think?\", \"Would you like to add something?\", \"Do you agree?\" These show collaborative conversation skills, which are assessed in HAVO oral exams."
-     },
-     {
-      "v": "What is the correct way to begin a counter-argument in English?",
-      "o": [
-       "\"That's totally wrong because you haven't thought this through.\"",
-       "\"While I understand your point, I would argue that…\"",
-       "\"No. My opinion is different.\"",
-       "\"You are incorrect. The right answer is…\""
-      ],
-      "c": 1,
-      "u": "\"While I understand your point…\", \"I see what you're saying, but…\", \"That's a valid argument; however…\" These phrases acknowledge the other speaker before contrasting — a key B1 conversation skill."
-     },
-     {
-      "v": "What should you include in the CONCLUSION of a spoken presentation?",
-      "o": [
-       "New arguments not mentioned in the body",
-       "A summary of your main points and your final opinion or recommendation",
-       "Only a list of facts you mentioned before",
-       "A question about a completely different topic"
-      ],
-      "c": 1,
-      "u": "Conclusion: summarise your main points briefly + restate your opinion/recommendation + thank the audience or invite questions. Do NOT introduce new arguments in the conclusion."
-     },
-     {
-      "v": "A friend says something in English and you didn't catch it. Which response is most appropriate?",
-      "o": [
-       "\"What?\"",
-       "I'm sorry, could you repeat that more slowly, please?",
-       "Pretend you understood and hope for the best.",
-       "Say nothing and wait for someone else to answer."
-      ],
-      "c": 1,
-      "u": "\"I'm sorry, could you repeat that?\" / \"Could you say that a bit more slowly?\" / \"I beg your pardon?\" These are polite clarification requests. Using them demonstrates active communication — not weakness."
      }
     ],
     "oe": [
@@ -11701,6 +10807,50 @@ var VAKKEN = [
       "u": "PIE = Point (topic sentence/claim), Illustration (example, quote, statistic), Explanation (so what? — link back to your thesis). A standard HAVO essay paragraph follows this structure."
      },
      {
+      "v": "Which sentence uses a correct \"although\" construction?",
+      "o": [
+       "Although, the weather was bad, we went outside.",
+       "Although the weather was bad, we still went outside.",
+       "Although we went outside, however the weather was bad.",
+       "The weather was bad although, we went outside."
+      ],
+      "c": 1,
+      "u": "\"Although + clause, main clause.\" No comma after \"Although\". Do NOT combine \"although\" with \"but\" or \"however\" in the same sentence — that is a double connector error."
+     },
+     {
+      "v": "Which closing phrase is correct for a formal letter where you know the name?",
+      "o": [
+       "Yours faithfully, [name]",
+       "Yours sincerely, [name]",
+       "Best wishes",
+       "Kind regards (semi-formal/email)"
+      ],
+      "c": 1,
+      "u": "\"Yours sincerely\" = formal letter when you know the name (Dear Mr Smith → Yours sincerely). \"Yours faithfully\" = when name is unknown (Dear Sir/Madam → Yours faithfully). \"Kind regards\" = semi-formal email."
+     },
+     {
+      "v": "What is the main purpose of the introduction in an essay?",
+      "o": [
+       "To list all the evidence you will use",
+       "To introduce the topic and state your thesis",
+       "To summarise your conclusion before you write it",
+       "To define every difficult word in the essay"
+      ],
+      "c": 1,
+      "u": "Introduction: (1) engage the reader with a hook, (2) introduce the topic briefly, (3) state your thesis — the main argument that the essay will develop and defend. Without a clear thesis, the reader does not know what to expect."
+     },
+     {
+      "v": "Which is the correct format for a formal English email opening?",
+      "o": [
+       "\"Dear friend, I hope you are well. Just wanted to ask you...\"",
+       "\"Dear Mr Johnson, I am writing to enquire about the availability of...\"",
+       "\"Hey! Quick question about...\"",
+       "\"To: Mr Johnson. What are your prices?\""
+      ],
+      "c": 1,
+      "u": "Formal email: \"Dear [Title + Surname],\" → then a polite opening sentence stating your purpose: \"I am writing to…\" / \"I would like to enquire about…\" Avoid informal greetings, contractions, and direct demands in formal correspondence."
+     },
+     {
       "v": "In a formal email, which phrase is most appropriate to make a polite request?",
       "o": [
        "\"Give me the information about the course.\"",
@@ -11721,94 +10871,6 @@ var VAKKEN = [
       ],
       "c": 1,
       "u": "Problems: \"bad/serious/something\" are vague. Short sentences = weak style. Better: \"Climate change poses a significant threat to global ecosystems, as rising temperatures disrupt weather patterns and endanger biodiversity.\" → precise vocabulary + complex sentence."
-     },
-     {
-      "v": "Which sentence uses a correct \"although\" construction?",
-      "o": [
-       "Although, the weather was bad, we went outside.",
-       "Although the weather was bad, we still went outside.",
-       "Although we went outside, however the weather was bad.",
-       "The weather was bad although, we went outside."
-      ],
-      "c": 1,
-      "u": "\"Although + clause, main clause.\" No comma after \"Although\". Do NOT combine \"although\" with \"but\" or \"however\" in the same sentence — that is a double connector error."
-     },
-     {
-      "v": "What does \"coherence\" mean in written English?",
-      "o": [
-       "Using lots of advanced vocabulary",
-       "The logical flow and organisation of ideas throughout the text",
-       "Writing very long sentences",
-       "Using the passive voice throughout"
-      ],
-      "c": 1,
-      "u": "Coherence = ideas are logically ordered and connected — the reader can follow the argument without confusion. Cohesion = the language tools (linking words, pronouns, repetition) that create that connection."
-     },
-     {
-      "v": "Which closing phrase is correct for a formal letter where you know the name?",
-      "o": [
-       "Yours faithfully, [name]",
-       "Yours sincerely, [name]",
-       "Best wishes",
-       "Kind regards (semi-formal/email)"
-      ],
-      "c": 1,
-      "u": "\"Yours sincerely\" = formal letter when you know the name (Dear Mr Smith → Yours sincerely). \"Yours faithfully\" = when name is unknown (Dear Sir/Madam → Yours faithfully). \"Kind regards\" = semi-formal email."
-     },
-     {
-      "v": "What is the purpose of a counter-argument in an opinion essay?",
-      "o": [
-       "To prove you have no opinion of your own",
-       "To show you understand opposing views and can refute them, strengthening your argument",
-       "To end the essay with a different conclusion",
-       "To list facts without taking a position"
-      ],
-      "c": 1,
-      "u": "A counter-argument shows intellectual honesty and strengthens your essay: \"Some people argue that… However, this overlooks the fact that…\" This demonstrates you can engage with complexity, which is rewarded at HAVO level."
-     },
-     {
-      "v": "Which linking word correctly introduces a conclusion in an English essay?",
-      "o": [
-       "Furthermore",
-       "In conclusion / To sum up",
-       "However",
-       "For instance"
-      ],
-      "c": 1,
-      "u": "\"In conclusion\", \"To sum up\", \"Overall\", \"All in all\" introduce the conclusion. \"Furthermore\" adds a point. \"However\" contrasts. \"For instance\" illustrates. In the HAVO written exam, always start your conclusion with a clear signal word."
-     },
-     {
-      "v": "What is the main purpose of the introduction in an essay?",
-      "o": [
-       "To list all the evidence you will use",
-       "To introduce the topic and state your thesis",
-       "To summarise your conclusion before you write it",
-       "To define every difficult word in the essay"
-      ],
-      "c": 1,
-      "u": "Introduction: (1) engage the reader with a hook, (2) introduce the topic briefly, (3) state your thesis — the main argument that the essay will develop and defend. Without a clear thesis, the reader does not know what to expect."
-     },
-     {
-      "v": "A student writes: \"This shows that climate change is a problem and we should do something about it.\" What is wrong with this sentence?",
-      "o": [
-       "It uses too many linking words",
-       "It is too vague — \"problem\" and \"do something\" lack precision and academic register",
-       "It is grammatically incorrect",
-       "It is too long and should be split into two sentences"
-      ],
-      "c": 1,
-      "u": "\"Problem\" and \"do something\" are too vague. Better: \"This demonstrates that rising temperatures pose a significant threat to global biodiversity, requiring immediate policy intervention.\" Precise vocabulary = higher marks in the HAVO writing exam."
-     },
-     {
-      "v": "Which is the correct format for a formal English email opening?",
-      "o": [
-       "\"Dear friend, I hope you are well. Just wanted to ask you...\"",
-       "\"Dear Mr Johnson, I am writing to enquire about the availability of...\"",
-       "\"Hey! Quick question about...\"",
-       "\"To: Mr Johnson. What are your prices?\""
-      ],
-      "c": 1,
-      "u": "Formal email: \"Dear [Title + Surname],\" → then a polite opening sentence stating your purpose: \"I am writing to…\" / \"I would like to enquire about…\" Avoid informal greetings, contractions, and direct demands in formal correspondence."
      }
     ],
     "oe": [
@@ -11878,17 +10940,6 @@ var VAKKEN = [
       "u": "Theme = the central message or idea (e.g. \"the corrupting power of ambition\", \"loss of innocence\"). NOT the plot summary. Setting = time/place. Protagonist = main character."
      },
      {
-      "v": "What is the difference between a metaphor and a simile?",
-      "o": [
-       "They are the same device",
-       "A simile uses \"like\" or \"as\"; a metaphor states directly that one thing IS another",
-       "A metaphor uses \"like\" or \"as\"; a simile does not",
-       "Similes are only used in poetry"
-      ],
-      "c": 1,
-      "u": "Simile: comparison using \"like\" or \"as\" — \"She was as brave as a lion.\" Metaphor: direct comparison — \"She was a lion in battle.\" Both create vivid imagery but metaphors are more direct/powerful."
-     },
-     {
       "v": "A character who changes significantly during the course of a story is called:",
       "o": [
        "A static character",
@@ -11898,17 +10949,6 @@ var VAKKEN = [
       ],
       "c": 1,
       "u": "Dynamic character = changes (grows, learns, deteriorates) during the story. Static character = stays the same. Round character = complex, realistic (can be static or dynamic). Flat character = one-dimensional, serves a simple function."
-     },
-     {
-      "v": "What does \"narrative perspective\" affect in a story?",
-      "o": [
-       "Only the length of the story",
-       "What information the reader gets and how reliable that information is",
-       "Only the setting and time period",
-       "The number of characters in the story"
-      ],
-      "c": 1,
-      "u": "Narrative perspective determines: who is telling the story, what they can know, and how reliable they are. First person (I) = subjective, limited. Third person omniscient = narrator knows all characters' thoughts. Third person limited = follows one character."
      },
      {
       "v": "In literature, what is \"foreshadowing\"?",
@@ -11922,17 +10962,6 @@ var VAKKEN = [
       "u": "Foreshadowing = early clues that hint at future events. Creates suspense and makes the ending feel inevitable. Example: in Romeo and Juliet, Romeo says \"my grave is like to be my wedding bed\" early on — foreshadowing his death."
      },
      {
-      "v": "What does the term \"conflict\" refer to in literary analysis?",
-      "o": [
-       "A grammatical error in the text",
-       "The central struggle that drives the plot forward",
-       "The author's biography",
-       "The publication date of the work"
-      ],
-      "c": 1,
-      "u": "Conflict = the central struggle: man vs. man (characters), man vs. society, man vs. nature, man vs. himself (internal). Conflict creates tension and drives the narrative. Its resolution is the climax and falling action."
-     },
-     {
       "v": "Which literary device is used in: \"The classroom was a zoo\"?",
       "o": [
        "Simile",
@@ -11942,17 +10971,6 @@ var VAKKEN = [
       ],
       "c": 1,
       "u": "\"The classroom was a zoo\" is a metaphor — it directly states one thing IS another (without using \"like/as\"). It implies the classroom was chaotic and noisy. A simile would be: \"The classroom was like a zoo.\""
-     },
-     {
-      "v": "What is meant by the \"setting\" of a story?",
-      "o": [
-       "The moral lesson of the story",
-       "The time and place in which the story occurs",
-       "The narrator's point of view",
-       "The climax of the plot"
-      ],
-      "c": 1,
-      "u": "Setting = where and when the story takes place. Setting can influence mood and theme: a grey industrial city suggests bleakness; a sunny garden suggests innocence. Authors choose settings deliberately."
      },
      {
       "v": "In a story, what is the \"climax\"?",
@@ -11977,28 +10995,6 @@ var VAKKEN = [
       "u": "Theme = big picture idea about life. Ask: \"What is the author saying about human nature, society, or the human condition?\" Examples: identity, power, freedom, love, injustice. Theme is NOT the topic but the MESSAGE about it."
      },
      {
-      "v": "What is the difference between the protagonist and the antagonist?",
-      "o": [
-       "The protagonist is always good; the antagonist is always evil",
-       "The protagonist is the main character the story follows; the antagonist is the opposing force",
-       "The protagonist tells the story; the antagonist reads it",
-       "They are the same person in most modern novels"
-      ],
-      "c": 1,
-      "u": "Protagonist = the main character whose journey the story follows (can be morally complex — not necessarily \"good\"). Antagonist = the force that opposes the protagonist. This can be a person, society, nature, or an internal struggle."
-     },
-     {
-      "v": "What is symbolism in literature?",
-      "o": [
-       "Using very long and complex sentences to convey meaning",
-       "Using an object, person, or event to represent an abstract idea beyond its literal meaning",
-       "A type of rhyme scheme in poetry",
-       "Repeating the same word for emphasis"
-      ],
-      "c": 1,
-      "u": "Symbol: something concrete that represents an abstract idea. Examples: green light in The Great Gatsby = hope/the American Dream; the conch shell in Lord of the Flies = order and civilisation. When a symbol appears repeatedly, it is often central to the theme."
-     },
-     {
       "v": "What does \"first person narrative\" mean and what is its main limitation?",
       "o": [
        "The narrator knows everything about all characters — no limitation",
@@ -12010,15 +11006,37 @@ var VAKKEN = [
       "u": "First person narrator (I): subjective, limited to what \"I\" can see and know. Creates intimacy and reader empathy, but the narrator may be unreliable or unaware of the full picture. Contrast: third person omniscient knows all characters' thoughts and feelings."
      },
      {
-      "v": "What is meant by \"tone\" in literary analysis?",
+      "v": "What is the difference between a metaphor and a simile?",
       "o": [
-       "The font and formatting used in a book",
-       "The author's attitude or emotional approach toward the subject and audience",
-       "The speed at which the plot develops",
-       "The chapter length and structure"
+       "They are the same device",
+       "A simile uses \"like\" or \"as\"; a metaphor states directly that one thing IS another",
+       "A metaphor uses \"like\" or \"as\"; a simile does not",
+       "Similes are only used in poetry"
       ],
       "c": 1,
-      "u": "Tone = the author's (or narrator's) attitude revealed through word choice, imagery, and sentence structure. Examples: ironic, nostalgic, melancholic, satirical, optimistic. Tone often reveals the author's purpose or viewpoint."
+      "u": "Simile: comparison using \"like\" or \"as\" — \"She was as brave as a lion.\" Metaphor: direct comparison — \"She was a lion in battle.\" Both create vivid imagery but metaphors are more direct/powerful."
+     },
+     {
+      "v": "What does \"narrative perspective\" affect in a story?",
+      "o": [
+       "Only the length of the story",
+       "What information the reader gets and how reliable that information is",
+       "Only the setting and time period",
+       "The number of characters in the story"
+      ],
+      "c": 1,
+      "u": "Narrative perspective determines: who is telling the story, what they can know, and how reliable they are. First person (I) = subjective, limited. Third person omniscient = narrator knows all characters' thoughts. Third person limited = follows one character."
+     },
+     {
+      "v": "What does the term \"conflict\" refer to in literary analysis?",
+      "o": [
+       "A grammatical error in the text",
+       "The central struggle that drives the plot forward",
+       "The author's biography",
+       "The publication date of the work"
+      ],
+      "c": 1,
+      "u": "Conflict = the central struggle: man vs. man (characters), man vs. society, man vs. nature, man vs. himself (internal). Conflict creates tension and drives the narrative. Its resolution is the climax and falling action."
      }
     ],
     "oe": [
@@ -12600,17 +11618,6 @@ var VAKKEN = [
       "u": "De Holocaust (Shoah): het naziregime moordde systematisch 6 miljoen Joden en miljoenen anderen. Vernietigingskampen als Auschwitz-Birkenau gebruikten industriële methoden. Tijdvak 9 = Wereldoorlogen (1900–1950)."
      },
      {
-      "v": "Welke staatsgreep (1917) bracht de Bolsjewieken onder Lenin aan de macht in Rusland?",
-      "o": [
-       "Oktoberrevolutie: Bolsjewieken nemen macht over",
-       "Februarirevolutie: tsaar treedt af",
-       "Russische Revolutie van 1905: protestbeweging",
-       "Cubacrisis: kernwapencrisis Cuba"
-      ],
-      "c": 0,
-      "u": "Oktoberrevolutie 1917: Lenin en de Bolsjewieken namen de macht over van de Voorlopige Regering. Begin van de Sovjet-Unie. Maakt deel uit van tijdvak 9 (Wereldoorlogen), start van het communistische experiment."
-     },
-     {
       "v": "Welk tijdvak (1950–heden) wordt gekenmerkt door de Koude Oorlog, dekolonisatie en globalisering?",
       "o": [
        "Tijdvak 10: Televisie en computer",
@@ -12862,17 +11869,6 @@ var VAKKEN = [
       ],
       "c": 0,
       "u": "Met het Marshallplan financierde de VS de wederopbouw van West-Europa, deels om de aantrekkingskracht van het communisme te beperken (containment)."
-     },
-     {
-      "v": "Wat was de Cubacrisis van 1962?",
-      "o": [
-       "het hoogtepunt van de nucleaire dreiging in de Koude Oorlog",
-       "een dekolonisatieoorlog op het Afrikaanse continent zelf",
-       "een volksopstand tegen het communisme in Hongarije in 1956",
-       "de val van de Berlijnse Muur op 9 november van het jaar 1989"
-      ],
-      "c": 0,
-      "u": "Toen de Sovjet-Unie kernraketten op Cuba wilde plaatsen, dreigde een kernoorlog. Het werd het hoogtepunt van de Koude Oorlog."
      },
      {
       "v": "Welke Britse handelscompagnie bestuurde India tot de opstand van 1857?",
@@ -13938,17 +12934,6 @@ var VAKKEN = [
       "u": "Opkomende economieën (zoals de BRICS-landen) kenmerken zich door snelle industrialisatie, economische groei en een groeiende middenklasse. Ze bewegen vanuit de periferie richting de semiperiferie of het centrum."
      },
      {
-      "v": "Veel multinationals verplaatsen hun fabrieken naar lagelonenlanden; dit verschijnsel heet de 'global shift'. Welk lokaal effect heeft dit vaak in het ontvangende land?",
-      "o": [
-       "Werkgelegenheid in de industrie neemt toe",
-       "De landbouw verdwijnt volledig",
-       "Er ontstaat direct een hoogwaardige kenniseconomie",
-       "De bevolking krimpt snel"
-      ],
-      "c": 0,
-      "u": "De global shift is de verplaatsing van arbeidsintensieve productie naar lagelonenlanden. Een direct lokaal effect is meer werkgelegenheid in de industrie daar, al gaat het vaak om laagbetaald werk."
-     },
-     {
       "v": "Met welke maatstaf worden ontwikkelingsverschillen tussen landen gemeten aan de hand van welvaart, levensverwachting én onderwijs samen?",
       "o": [
        "Het bruto binnenlands product (bbp)",
@@ -13958,17 +12943,6 @@ var VAKKEN = [
       ],
       "c": 3,
       "u": "De HDI combineert inkomen, levensverwachting en opleiding tot één cijfer (0–1) en geeft daarom een completer beeld van ontwikkeling dan alleen het bbp, dat puur economisch is."
-     },
-     {
-      "v": "Veel landen in de periferie exporteren vooral goedkope grondstoffen en importeren dure industrieproducten. Hoe wordt deze ongunstige verhouding genoemd?",
-      "o": [
-       "Een positieve handelsbalans",
-       "Een ongelijke ruilvoet",
-       "Een demografische transitie",
-       "Een positief migratiesaldo"
-      ],
-      "c": 1,
-      "u": "Bij een ongelijke ruilvoet brengt de export van grondstoffen minder op dan de import van eindproducten kost. Dit houdt perifere landen economisch afhankelijk van het centrum."
      }
     ],
     "oe": [
@@ -14570,17 +13544,6 @@ var VAKKEN = [
       "u": "Een dijkring = een aaneengesloten kring van waterkeringen die een bepaald gebied beschermen tegen overstroming. Nederland is opgedeeld in dijkringen, elk met een eigen veiligheidsnorm."
      },
      {
-      "v": "Wat is een nationaal landschap?",
-      "o": [
-       "Bijzonder cultuurhistorisch landschap met bescherming",
-       "Een nationaal park met wilde natuur",
-       "Recreatiegebied bij een grote stad",
-       "Een door UNESCO erkend monument"
-      ],
-      "c": 0,
-      "u": "Nationale landschappen = bijzondere cultuurhistorische landschappen in Nederland die worden beschermd. Ze combineren natuur, erfgoed en recreatie. Voorbeelden: Groene Hart, Arkemheen-Eempolders."
-     },
-     {
       "v": "Wat is klimaatadaptatie?",
       "o": [
        "Aanpassen aan gevolgen van klimaatverandering",
@@ -14590,6 +13553,17 @@ var VAKKEN = [
       ],
       "c": 0,
       "u": "Klimaatadaptatie = het aanpassen van infrastructuur en leefomgeving aan de gevolgen van klimaatverandering (zeespiegelstijging, extreme neerslag, droogte). Bijv. hogere dijken, groene daken, klimaatbestendige steden."
+     },
+     {
+      "v": "Wat is een nationaal landschap?",
+      "o": [
+       "Bijzonder cultuurhistorisch landschap met bescherming",
+       "Een nationaal park met wilde natuur",
+       "Recreatiegebied bij een grote stad",
+       "Een door UNESCO erkend monument"
+      ],
+      "c": 0,
+      "u": "Nationale landschappen = bijzondere cultuurhistorische landschappen in Nederland die worden beschermd. Ze combineren natuur, erfgoed en recreatie. Voorbeelden: Groene Hart, Arkemheen-Eempolders."
      }
     ],
     "oe": [
@@ -14926,6 +13900,102 @@ var VAKKEN = [
       ],
       "c": 0,
       "u": "Vrije goederen (lucht, zonlicht, zeewater) zijn niet schaars — er is meer dan genoeg voor iedereen. Economische goederen zijn schaars (beperkt aanbod) en hebben daardoor een prijs."
+     },
+     {
+      "v": "Wat betekent «Schaarste»?",
+      "o": [
+       "een markt met enkele grote aanbieders",
+       "het uitwisselen van goederen of diensten",
+       "een aanhoudende stijging van het algemene prijspeil",
+       "middelen zijn beperkt ten opzichte van de behoeften"
+      ],
+      "c": 3,
+      "u": "«Schaarste» betekent: middelen zijn beperkt ten opzichte van de behoeften.",
+      "d": 1
+     },
+     {
+      "v": "Welk begrip hoort bij deze omschrijving: \"de waarde van het best opgeofferde alternatief\"?",
+      "o": [
+       "Opportuniteitskosten",
+       "Inflatie",
+       "Oligopolie",
+       "Arbeidsverdeling"
+      ],
+      "c": 0,
+      "u": "Het juiste begrip is «Opportuniteitskosten»: de waarde van het best opgeofferde alternatief.",
+      "d": 2
+     },
+     {
+      "v": "Welk begrip hoort bij deze omschrijving: \"een gevoel van gemis dat je wilt vervullen\"?",
+      "o": [
+       "Arbeidsverdeling",
+       "Schaarste",
+       "Productiefactoren",
+       "Behoefte"
+      ],
+      "c": 3,
+      "u": "Het juiste begrip is «Behoefte»: een gevoel van gemis dat je wilt vervullen.",
+      "d": 3
+     },
+     {
+      "v": "Wat betekent «Ruil»?",
+      "o": [
+       "een periode van twee kwartalen krimp van het bbp",
+       "de waarde van het best opgeofferde alternatief",
+       "de overheidsuitgaven zijn groter dan de inkomsten",
+       "het uitwisselen van goederen of diensten"
+      ],
+      "c": 3,
+      "u": "«Ruil» betekent: het uitwisselen van goederen of diensten.",
+      "d": 1
+     },
+     {
+      "v": "Welk begrip hoort bij deze omschrijving: \"taken opsplitsen om efficiënter te produceren\"?",
+      "o": [
+       "Marginaal",
+       "Collectieve goederen",
+       "Externe effecten",
+       "Arbeidsverdeling"
+      ],
+      "c": 3,
+      "u": "Het juiste begrip is «Arbeidsverdeling»: taken opsplitsen om efficiënter te produceren.",
+      "d": 2
+     },
+     {
+      "v": "Welk begrip hoort bij deze omschrijving: \"arbeid, kapitaal, natuur en ondernemerschap\"?",
+      "o": [
+       "Productiefactoren",
+       "Behoefte",
+       "Arbeidsverdeling",
+       "Marginaal"
+      ],
+      "c": 0,
+      "u": "Het juiste begrip is «Productiefactoren»: arbeid, kapitaal, natuur en ondernemerschap.",
+      "d": 3
+     },
+     {
+      "v": "Wat betekent «Marginaal»?",
+      "o": [
+       "het verschil tussen de export en de import",
+       "een gevoel van gemis dat je wilt vervullen",
+       "de gevoeligheid van de vraag voor een prijsverandering",
+       "de verandering die één extra eenheid veroorzaakt"
+      ],
+      "c": 3,
+      "u": "«Marginaal» betekent: de verandering die één extra eenheid veroorzaakt.",
+      "d": 1
+     },
+     {
+      "v": "Welk begrip hoort bij deze omschrijving: \"het bedrag dat je kunt besteden\"?",
+      "o": [
+       "Schaarste",
+       "Progressief belastingstelsel",
+       "Prijselasticiteit",
+       "Budget"
+      ],
+      "c": 3,
+      "u": "Het juiste begrip is «Budget»: het bedrag dat je kunt besteden.",
+      "d": 2
      }
     ],
     "oe": [
@@ -14998,6 +14068,40 @@ var VAKKEN = [
       ],
       "c": 0,
       "u": "(a) DB = 500.000 - 300.000 = EUR 200.000.\n(b) Winst = 200.000 - 150.000 = EUR 50.000.\n(c) Break-even: VK=0,6*omzet. DB=0,4*omzet=FK. Omzet=150.000/0,4=EUR 375.000."
+     }
+    ],
+    "begrippen": [
+     {
+      "t": "Schaarste",
+      "d": "middelen zijn beperkt ten opzichte van de behoeften"
+     },
+     {
+      "t": "Opportuniteitskosten",
+      "d": "de waarde van het best opgeofferde alternatief"
+     },
+     {
+      "t": "Behoefte",
+      "d": "een gevoel van gemis dat je wilt vervullen"
+     },
+     {
+      "t": "Ruil",
+      "d": "het uitwisselen van goederen of diensten"
+     },
+     {
+      "t": "Arbeidsverdeling",
+      "d": "taken opsplitsen om efficiënter te produceren"
+     },
+     {
+      "t": "Productiefactoren",
+      "d": "arbeid, kapitaal, natuur en ondernemerschap"
+     },
+     {
+      "t": "Marginaal",
+      "d": "de verandering die één extra eenheid veroorzaakt"
+     },
+     {
+      "t": "Budget",
+      "d": "het bedrag dat je kunt besteden"
      }
     ]
    },
@@ -15236,6 +14340,114 @@ var VAKKEN = [
       ],
       "c": 0,
       "u": "Inkomenselasticiteit = %ΔQv / %Δinkomen. Positief: normaal goed (meer vragen bij hoger inkomen). Negatief: inferieur goed (minder vragen, bijv. goedkoop margarine bij hogere welvaart). > 1: luxegoed."
+     },
+     {
+      "v": "Wat betekent «Vraag»?",
+      "o": [
+       "een verboden prijsafspraak tussen aanbieders",
+       "het verschil tussen de export en de import",
+       "een vervangend goed voor een ander goed",
+       "de hoeveelheid die kopers willen kopen bij een prijs"
+      ],
+      "c": 3,
+      "u": "«Vraag» betekent: de hoeveelheid die kopers willen kopen bij een prijs.",
+      "d": 1
+     },
+     {
+      "v": "Welk begrip hoort bij deze omschrijving: \"de hoeveelheid die verkopers willen verkopen bij een prijs\"?",
+      "o": [
+       "Behoefte",
+       "Subsidie",
+       "Aanbod",
+       "Bbp"
+      ],
+      "c": 2,
+      "u": "Het juiste begrip is «Aanbod»: de hoeveelheid die verkopers willen verkopen bij een prijs.",
+      "d": 2
+     },
+     {
+      "v": "Welk begrip hoort bij deze omschrijving: \"de prijs waarbij vraag en aanbod aan elkaar gelijk zijn\"?",
+      "o": [
+       "Prijselasticiteit",
+       "Marktevenwicht",
+       "Volkomen concurrentie",
+       "Aanbod"
+      ],
+      "c": 1,
+      "u": "Het juiste begrip is «Marktevenwicht»: de prijs waarbij vraag en aanbod aan elkaar gelijk zijn.",
+      "d": 3
+     },
+     {
+      "v": "Wat betekent «Prijselasticiteit»?",
+      "o": [
+       "de hoeveelheid die verkopers willen verkopen bij een prijs",
+       "de totale waarde van de productie in een land per jaar",
+       "de gevoeligheid van de vraag voor een prijsverandering",
+       "de verandering die één extra eenheid veroorzaakt"
+      ],
+      "c": 2,
+      "u": "«Prijselasticiteit» betekent: de gevoeligheid van de vraag voor een prijsverandering.",
+      "d": 1
+     },
+     {
+      "v": "Welk begrip hoort bij deze omschrijving: \"veel aanbieders, homogeen product en vrije toetreding\"?",
+      "o": [
+       "Volkomen concurrentie",
+       "Collectieve goederen",
+       "Bbp",
+       "Marktfalen"
+      ],
+      "c": 0,
+      "u": "Het juiste begrip is «Volkomen concurrentie»: veel aanbieders, homogeen product en vrije toetreding.",
+      "d": 2
+     },
+     {
+      "v": "Welk begrip hoort bij deze omschrijving: \"een markt met één aanbieder zonder concurrentie\"?",
+      "o": [
+       "Oligopolie",
+       "Volkomen concurrentie",
+       "Monopolie",
+       "Vraag"
+      ],
+      "c": 2,
+      "u": "Het juiste begrip is «Monopolie»: een markt met één aanbieder zonder concurrentie. Uiterste van volkomen concurrentie: monopolie heeft één aanbieder, concurrentie juist heel veel.",
+      "d": 3
+     },
+     {
+      "v": "Wat betekent «Oligopolie»?",
+      "o": [
+       "een periode van sterke groei en lage werkloosheid",
+       "een markt met enkele grote aanbieders",
+       "een markt met één aanbieder zonder concurrentie",
+       "het bedrag dat je kunt besteden"
+      ],
+      "c": 1,
+      "u": "«Oligopolie» betekent: een markt met enkele grote aanbieders.",
+      "d": 1
+     },
+     {
+      "v": "Welk begrip hoort bij deze omschrijving: \"een verboden prijsafspraak tussen aanbieders\"?",
+      "o": [
+       "Marktevenwicht",
+       "Marginaal",
+       "Externe effecten",
+       "Kartel"
+      ],
+      "c": 3,
+      "u": "Het juiste begrip is «Kartel»: een verboden prijsafspraak tussen aanbieders.",
+      "d": 2
+     },
+     {
+      "v": "Welk begrip hoort bij deze omschrijving: \"een vervangend goed voor een ander goed\"?",
+      "o": [
+       "Oligopolie",
+       "Monopolie",
+       "Marktevenwicht",
+       "Substituut"
+      ],
+      "c": 3,
+      "u": "Het juiste begrip is «Substituut»: een vervangend goed voor een ander goed.",
+      "d": 3
      }
     ],
     "oe": [
@@ -15458,6 +14670,44 @@ var VAKKEN = [
       ],
       "c": 0,
       "u": "Minimumprijs boven evenwicht: het arbeidsaanbod stijgt (meer mensen willen werken) maar de arbeidsvraag daalt (werkgevers vragen minder arbeid). Er ontstaat een overschot: werkloosheid neemt toe."
+     }
+    ],
+    "begrippen": [
+     {
+      "t": "Vraag",
+      "d": "de hoeveelheid die kopers willen kopen bij een prijs"
+     },
+     {
+      "t": "Aanbod",
+      "d": "de hoeveelheid die verkopers willen verkopen bij een prijs"
+     },
+     {
+      "t": "Marktevenwicht",
+      "d": "de prijs waarbij vraag en aanbod aan elkaar gelijk zijn"
+     },
+     {
+      "t": "Prijselasticiteit",
+      "d": "de gevoeligheid van de vraag voor een prijsverandering"
+     },
+     {
+      "t": "Volkomen concurrentie",
+      "d": "veel aanbieders, homogeen product en vrije toetreding"
+     },
+     {
+      "t": "Monopolie",
+      "d": "een markt met één aanbieder zonder concurrentie"
+     },
+     {
+      "t": "Oligopolie",
+      "d": "een markt met enkele grote aanbieders"
+     },
+     {
+      "t": "Kartel",
+      "d": "een verboden prijsafspraak tussen aanbieders"
+     },
+     {
+      "t": "Substituut",
+      "d": "een vervangend goed voor een ander goed"
      }
     ]
    },
@@ -15696,6 +14946,102 @@ var VAKKEN = [
       ],
       "c": 0,
       "u": "Degressief: bij hoger inkomen betaal je procentueel minder belasting. Dit vergroot de inkomensongelijkheid. Progressief is het tegenovergestelde: hoger inkomen = hoger percentage, bedoeld voor herverdeling."
+     },
+     {
+      "v": "Wat betekent «Collectieve goederen»?",
+      "o": [
+       "een markt met één aanbieder zonder concurrentie",
+       "de hoeveelheid die verkopers willen verkopen bij een prijs",
+       "goederen die de markt niet levert, zoals dijken",
+       "werkloosheid door te lage bestedingen"
+      ],
+      "c": 2,
+      "u": "«Collectieve goederen» betekent: goederen die de markt niet levert, zoals dijken.",
+      "d": 1
+     },
+     {
+      "v": "Welk begrip hoort bij deze omschrijving: \"een verplichte afdracht aan de overheid\"?",
+      "o": [
+       "Inflatie",
+       "Handelsbalans",
+       "Aanbod",
+       "Belasting"
+      ],
+      "c": 3,
+      "u": "Het juiste begrip is «Belasting»: een verplichte afdracht aan de overheid.",
+      "d": 2
+     },
+     {
+      "v": "Welk begrip hoort bij deze omschrijving: \"stelsel waarin hogere inkomens relatief meer betalen\"?",
+      "o": [
+       "Begrotingstekort",
+       "Collectieve goederen",
+       "Progressief belastingstelsel",
+       "Belasting"
+      ],
+      "c": 2,
+      "u": "Het juiste begrip is «Progressief belastingstelsel»: stelsel waarin hogere inkomens relatief meer betalen.",
+      "d": 3
+     },
+     {
+      "v": "Wat betekent «Begrotingstekort»?",
+      "o": [
+       "middelen zijn beperkt ten opzichte van de behoeften",
+       "een verboden prijsafspraak tussen aanbieders",
+       "de overheidsuitgaven zijn groter dan de inkomsten",
+       "wat je met je inkomen daadwerkelijk kunt kopen"
+      ],
+      "c": 2,
+      "u": "«Begrotingstekort» betekent: de overheidsuitgaven zijn groter dan de inkomsten.",
+      "d": 1
+     },
+     {
+      "v": "Welk begrip hoort bij deze omschrijving: \"het totaal van alle opgebouwde begrotingstekorten\"?",
+      "o": [
+       "Arbeidsverdeling",
+       "Collectieve goederen",
+       "Prijselasticiteit",
+       "Staatsschuld"
+      ],
+      "c": 3,
+      "u": "Het juiste begrip is «Staatsschuld»: het totaal van alle opgebouwde begrotingstekorten.",
+      "d": 2
+     },
+     {
+      "v": "Welk begrip hoort bij deze omschrijving: \"kosten of baten voor derden buiten de prijs om\"?",
+      "o": [
+       "Subsidie",
+       "Externe effecten",
+       "Progressief belastingstelsel",
+       "Staatsschuld"
+      ],
+      "c": 1,
+      "u": "Het juiste begrip is «Externe effecten»: kosten of baten voor derden buiten de prijs om.",
+      "d": 3
+     },
+     {
+      "v": "Wat betekent «Subsidie»?",
+      "o": [
+       "de prijs waarbij vraag en aanbod aan elkaar gelijk zijn",
+       "middelen zijn beperkt ten opzichte van de behoeften",
+       "financiële steun van de overheid",
+       "het verschil tussen de export en de import"
+      ],
+      "c": 2,
+      "u": "«Subsidie» betekent: financiële steun van de overheid.",
+      "d": 1
+     },
+     {
+      "v": "Welk begrip hoort bij deze omschrijving: \"de situatie waarin de markt geen efficiënte uitkomst geeft\"?",
+      "o": [
+       "Marktfalen",
+       "Opportuniteitskosten",
+       "Progressief belastingstelsel",
+       "Handelsbalans"
+      ],
+      "c": 0,
+      "u": "Het juiste begrip is «Marktfalen»: de situatie waarin de markt geen efficiënte uitkomst geeft.",
+      "d": 2
      }
     ],
     "oe": [
@@ -15858,6 +15204,40 @@ var VAKKEN = [
       ],
       "c": 0,
       "u": "Negatief extern effect: kosten van productie worden afgewenteld op derden (bijv. luchtvervuiling door fabriek). Maatregel: heffing/belasting gelijk aan de externe kosten (Pigouviaanse belasting), waarna de producent de volledige maatschappelijke kosten draagt."
+     }
+    ],
+    "begrippen": [
+     {
+      "t": "Collectieve goederen",
+      "d": "goederen die de markt niet levert, zoals dijken"
+     },
+     {
+      "t": "Belasting",
+      "d": "een verplichte afdracht aan de overheid"
+     },
+     {
+      "t": "Progressief belastingstelsel",
+      "d": "stelsel waarin hogere inkomens relatief meer betalen"
+     },
+     {
+      "t": "Begrotingstekort",
+      "d": "de overheidsuitgaven zijn groter dan de inkomsten"
+     },
+     {
+      "t": "Staatsschuld",
+      "d": "het totaal van alle opgebouwde begrotingstekorten"
+     },
+     {
+      "t": "Externe effecten",
+      "d": "kosten of baten voor derden buiten de prijs om"
+     },
+     {
+      "t": "Subsidie",
+      "d": "financiële steun van de overheid"
+     },
+     {
+      "t": "Marktfalen",
+      "d": "de situatie waarin de markt geen efficiënte uitkomst geeft"
      }
     ]
    },
@@ -16107,6 +15487,114 @@ var VAKKEN = [
       ],
       "c": 0,
       "u": "Een recessie wordt officieel vastgesteld als het reële BBP twee opeenvolgende kwartalen krimpt. Kenmerken: stijgende werkloosheid, dalende investeringen en consumentenpessimisme."
+     },
+     {
+      "v": "Wat betekent «Conjunctuur»?",
+      "o": [
+       "de hoeveelheid die verkopers willen verkopen bij een prijs",
+       "de schommeling van de economische bedrijvigheid",
+       "het bedrag dat je kunt besteden",
+       "kosten of baten voor derden buiten de prijs om"
+      ],
+      "c": 1,
+      "u": "«Conjunctuur» betekent: de schommeling van de economische bedrijvigheid.",
+      "d": 1
+     },
+     {
+      "v": "Welk begrip hoort bij deze omschrijving: \"een periode van sterke groei en lage werkloosheid\"?",
+      "o": [
+       "Hoogconjunctuur",
+       "Behoefte",
+       "Collectieve goederen",
+       "Conjuncturele werkloosheid"
+      ],
+      "c": 0,
+      "u": "Het juiste begrip is «Hoogconjunctuur»: een periode van sterke groei en lage werkloosheid.",
+      "d": 2
+     },
+     {
+      "v": "Welk begrip hoort bij deze omschrijving: \"een periode van twee kwartalen krimp van het bbp\"?",
+      "o": [
+       "Economische groei",
+       "Inflatie",
+       "Conjuncturele werkloosheid",
+       "Recessie"
+      ],
+      "c": 3,
+      "u": "Het juiste begrip is «Recessie»: een periode van twee kwartalen krimp van het bbp. Bij hoogconjunctuur groeit de economie juist; een recessie is twee kwartalen krimp.",
+      "d": 3
+     },
+     {
+      "v": "Wat betekent «Inflatie»?",
+      "o": [
+       "de overheidsuitgaven zijn groter dan de inkomsten",
+       "een verboden prijsafspraak tussen aanbieders",
+       "een aanhoudende stijging van het algemene prijspeil",
+       "de hoeveelheid die kopers willen kopen bij een prijs"
+      ],
+      "c": 2,
+      "u": "«Inflatie» betekent: een aanhoudende stijging van het algemene prijspeil.",
+      "d": 1
+     },
+     {
+      "v": "Welk begrip hoort bij deze omschrijving: \"de totale waarde van de productie in een land per jaar\"?",
+      "o": [
+       "Behoefte",
+       "Opportuniteitskosten",
+       "Bbp",
+       "Inflatie"
+      ],
+      "c": 2,
+      "u": "Het juiste begrip is «Bbp»: de totale waarde van de productie in een land per jaar.",
+      "d": 2
+     },
+     {
+      "v": "Welk begrip hoort bij deze omschrijving: \"werkloosheid door te lage bestedingen\"?",
+      "o": [
+       "Conjunctuur",
+       "Hoogconjunctuur",
+       "Handelsbalans",
+       "Conjuncturele werkloosheid"
+      ],
+      "c": 3,
+      "u": "Het juiste begrip is «Conjuncturele werkloosheid»: werkloosheid door te lage bestedingen.",
+      "d": 3
+     },
+     {
+      "v": "Wat betekent «Koopkracht»?",
+      "o": [
+       "wat je met je inkomen daadwerkelijk kunt kopen",
+       "middelen zijn beperkt ten opzichte van de behoeften",
+       "een toename van het reële bbp",
+       "de hoeveelheid die kopers willen kopen bij een prijs"
+      ],
+      "c": 0,
+      "u": "«Koopkracht» betekent: wat je met je inkomen daadwerkelijk kunt kopen.",
+      "d": 1
+     },
+     {
+      "v": "Welk begrip hoort bij deze omschrijving: \"het verschil tussen de export en de import\"?",
+      "o": [
+       "Productiefactoren",
+       "Handelsbalans",
+       "Progressief belastingstelsel",
+       "Vraag"
+      ],
+      "c": 1,
+      "u": "Het juiste begrip is «Handelsbalans»: het verschil tussen de export en de import.",
+      "d": 2
+     },
+     {
+      "v": "Welk begrip hoort bij deze omschrijving: \"een toename van het reële bbp\"?",
+      "o": [
+       "Handelsbalans",
+       "Hoogconjunctuur",
+       "Inflatie",
+       "Economische groei"
+      ],
+      "c": 3,
+      "u": "Het juiste begrip is «Economische groei»: een toename van het reële bbp.",
+      "d": 3
      }
     ],
     "oe": [
@@ -16240,6 +15728,44 @@ var VAKKEN = [
       "c": 0,
       "u": "(1) Frictiewerkloosheid: tijdelijk werkloos bij baanwisseling. (2) Structurele werkloosheid: langdurig werkloos door mismatch vaardigheden/vraag of technologische veranderingen."
      }
+    ],
+    "begrippen": [
+     {
+      "t": "Conjunctuur",
+      "d": "de schommeling van de economische bedrijvigheid"
+     },
+     {
+      "t": "Hoogconjunctuur",
+      "d": "een periode van sterke groei en lage werkloosheid"
+     },
+     {
+      "t": "Recessie",
+      "d": "een periode van twee kwartalen krimp van het bbp"
+     },
+     {
+      "t": "Inflatie",
+      "d": "een aanhoudende stijging van het algemene prijspeil"
+     },
+     {
+      "t": "Bbp",
+      "d": "de totale waarde van de productie in een land per jaar"
+     },
+     {
+      "t": "Conjuncturele werkloosheid",
+      "d": "werkloosheid door te lage bestedingen"
+     },
+     {
+      "t": "Koopkracht",
+      "d": "wat je met je inkomen daadwerkelijk kunt kopen"
+     },
+     {
+      "t": "Handelsbalans",
+      "d": "het verschil tussen de export en de import"
+     },
+     {
+      "t": "Economische groei",
+      "d": "een toename van het reële bbp"
+     }
     ]
    }
   ]
@@ -16273,6 +15799,72 @@ var VAKKEN = [
     ],
     "sam": "<div class=\"sam-head\">Onderzoeksopzet</div><ul><li><strong>Probleemstelling</strong>: de centrale onderzoeksvraag. Deelvragen helpen die te beantwoorden.</li><li><strong>Hypothese</strong>: een verwacht antwoord dat je via onderzoek bevestigt of weerlegt. Formuleer als \"Als X dan Y\" of \"Naarmate X toeneemt, neemt Y toe/af\".</li><li><strong>Operationaliseren</strong>: een abstract begrip meetbaar maken. Bijv. \"welzijn\" = score op een vragenlijst. Essentieel voor valide meting.</li></ul><div class=\"sam-head\">Kwantitatief vs kwalitatief</div><ul><li><strong>Kwantitatief</strong>: cijfers en statistiek. Grote steekproeven. Doel = meten, vergelijken, generaliseren. Bijv. enquête met gesloten vragen.</li><li><strong>Kwalitatief</strong>: verhalen en ervaringen. Kleine, diepgaande steekproeven. Doel = begrijpen en verklaren. Bijv. diepte-interview, observatie.</li><li><strong>Mixed methods</strong>: combinatie van beide — sterker dan elk afzonderlijk.</li></ul><div class=\"sam-head\">Kwaliteit van onderzoek</div><ul><li><strong>Betrouwbaarheid</strong>: herhaald meten geeft dezelfde uitkomst. Is de meting consistent?</li><li><strong>Validiteit</strong>: meet het instrument wat het zou moeten meten?</li><li><strong>Representativiteit</strong>: is de steekproef een goede afspiegeling van de populatie? Willekeurige trekking = minder vertekening.</li><li><strong>Correlatie ≠ causaliteit</strong>: twee verschijnselen gaan samen, maar dat betekent niet dat het één het ander veroorzaakt. Altijd controleren op derde variabelen (confounders).</li></ul>",
     "sv": [
+     {
+      "v": "Welk begrip beschrijft het gebruik van meerdere methoden om de validiteit te verhogen?",
+      "o": [
+       "Triangulatie",
+       "Operationalisering",
+       "Steekproeftrekking",
+       "Confounding"
+      ],
+      "c": 0,
+      "u": "Triangulatie combineert kwantitatief en kwalitatief onderzoek voor robuustere conclusies."
+     },
+     {
+      "v": "Wat is het verschil tussen deductief en inductief onderzoek?",
+      "o": [
+       "Deductief: theorie toetsen. Inductief: theorie opbouwen vanuit observaties.",
+       "Deductief is kwalitatief, inductief is kwantitatief",
+       "Ze betekenen hetzelfde",
+       "Deductief gebruikt geen hypothese"
+      ],
+      "c": 0,
+      "u": "Deductief start bij een hypothese en toetst die. Inductief leidt een theorie af uit data."
+     },
+     {
+      "v": "Wat is het voordeel van een diepte-interview boven een schriftelijke enquête?",
+      "o": [
+       "Je kunt doorvragen en nuance achterhalen",
+       "Een enquête is altijd betrouwbaarder",
+       "Interviews zijn sneller af te nemen",
+       "Interviews zijn geschikter voor grote steekproeven"
+      ],
+      "c": 0,
+      "u": "Interview: flexibel en diepgaand, maar tijdrovend en minder generaliseerbaar dan een enquête."
+     },
+     {
+      "v": "Wat is het verschil tussen een afhankelijke en een onafhankelijke variabele?",
+      "o": [
+       "Onafhankelijk = oorzaak. Afhankelijk = effect.",
+       "Afhankelijk = oorzaak, onafhankelijk = effect",
+       "Ze zijn beide gelijk",
+       "Afhankelijk is altijd kwantitatief"
+      ],
+      "c": 0,
+      "u": "In \"roken veroorzaakt kanker\" is roken de onafhankelijke en kanker de afhankelijke variabele."
+     },
+     {
+      "v": "Wat is het verschil tussen een open en een gesloten vraag in een enquête?",
+      "o": [
+       "Open: eigen antwoord. Gesloten: kiezen uit vaste opties.",
+       "Open vragen zijn kwantitatief, gesloten kwalitatief",
+       "Gesloten vragen zijn altijd beter",
+       "Open vragen zijn sneller te analyseren"
+      ],
+      "c": 0,
+      "u": "Gesloten vragen zijn makkelijk te analyseren. Open vragen geven meer diepte maar zijn moeilijker te coderen."
+     },
+     {
+      "v": "Welk begrip beschrijft de mate waarin resultaten gelden voor de gehele populatie?",
+      "o": [
+       "Generaliseerbaarheid",
+       "Betrouwbaarheid",
+       "Validiteit",
+       "Operationalisering"
+      ],
+      "c": 0,
+      "u": "Kwantitatief onderzoek met grote aselecte steekproef heeft een hoge generaliseerbaarheid."
+     },
      {
       "v": "Wat is het verschil tussen betrouwbaarheid en validiteit?",
       "o": [
@@ -16316,171 +15908,6 @@ var VAKKEN = [
       ],
       "c": 0,
       "u": "Operationaliseren: definieer hoe je een vaag begrip concreet meet. \"Armoede\" = inkomen onder 60% van de mediaandrempel. Maakt vergelijking en replicatie mogelijk."
-     },
-     {
-      "v": "Wat is een hypothese?",
-      "o": [
-       "Een te toetsen verwachting over de relatie tussen variabelen",
-       "Een bewezen wetenschappelijke wet",
-       "Een onderzoeksvraag",
-       "Een samenvatting van bronnen"
-      ],
-      "c": 0,
-      "u": "Hypothese: als-dan uitspraak die je via onderzoek bevestigt of verwerpt."
-     },
-     {
-      "v": "Wat is het verschil tussen een populatie en een steekproef?",
-      "o": [
-       "Populatie = de hele doelgroep. Steekproef = het onderzochte deel.",
-       "Ze zijn hetzelfde",
-       "Steekproef is groter dan populatie",
-       "Populatie is altijd kleiner"
-      ],
-      "c": 0,
-      "u": "Je onderzoekt de steekproef om uitspraken over de gehele populatie te doen."
-     },
-     {
-      "v": "Wat is selectiebias?",
-      "o": [
-       "Systematische vertekening doordat de steekproef niet representatief is getrokken",
-       "Willekeurige meetfout",
-       "Een te grote steekproef",
-       "Het gebruik van gesloten vragen"
-      ],
-      "c": 0,
-      "u": "Selectiebias maakt de steekproef onbetrouwbaar: bepaalde groepen zijn over- of ondervertegenwoordigd."
-     },
-     {
-      "v": "Welk begrip beschrijft het gebruik van meerdere methoden om de validiteit te verhogen?",
-      "o": [
-       "Triangulatie",
-       "Operationalisering",
-       "Steekproeftrekking",
-       "Confounding"
-      ],
-      "c": 0,
-      "u": "Triangulatie combineert kwantitatief en kwalitatief onderzoek voor robuustere conclusies."
-     },
-     {
-      "v": "Wat is het verschil tussen deductief en inductief onderzoek?",
-      "o": [
-       "Deductief: theorie toetsen. Inductief: theorie opbouwen vanuit observaties.",
-       "Deductief is kwalitatief, inductief is kwantitatief",
-       "Ze betekenen hetzelfde",
-       "Deductief gebruikt geen hypothese"
-      ],
-      "c": 0,
-      "u": "Deductief start bij een hypothese en toetst die. Inductief leidt een theorie af uit data."
-     },
-     {
-      "v": "Wat is een confounder?",
-      "o": [
-       "Een derde variabele die de relatie tussen twee variabelen verstoort",
-       "De afhankelijke variabele",
-       "Een meetfout in de enquête",
-       "Een correlatie zonder oorzakelijk verband"
-      ],
-      "c": 0,
-      "u": "Confounder hangt samen met zowel oorzaak als gevolg en kan de gevonden relatie vertekenen."
-     },
-     {
-      "v": "Wat is het voordeel van een diepte-interview boven een schriftelijke enquête?",
-      "o": [
-       "Je kunt doorvragen en nuance achterhalen",
-       "Een enquête is altijd betrouwbaarder",
-       "Interviews zijn sneller af te nemen",
-       "Interviews zijn geschikter voor grote steekproeven"
-      ],
-      "c": 0,
-      "u": "Interview: flexibel en diepgaand, maar tijdrovend en minder generaliseerbaar dan een enquête."
-     },
-     {
-      "v": "Wat is het verschil tussen een afhankelijke en een onafhankelijke variabele?",
-      "o": [
-       "Onafhankelijk = oorzaak. Afhankelijk = effect.",
-       "Afhankelijk = oorzaak, onafhankelijk = effect",
-       "Ze zijn beide gelijk",
-       "Afhankelijk is altijd kwantitatief"
-      ],
-      "c": 0,
-      "u": "In \"roken veroorzaakt kanker\" is roken de onafhankelijke en kanker de afhankelijke variabele."
-     },
-     {
-      "v": "Wanneer is een meting betrouwbaar maar niet valide?",
-      "o": [
-       "Als herhaalde metingen hetzelfde geven maar niet meten wat je wilt meten",
-       "Als metingen steeds verschillen",
-       "Als de steekproef te klein is",
-       "Als de hypothese onjuist is"
-      ],
-      "c": 0,
-      "u": "Voorbeeld: een weegschaal die altijd 2 kg te veel aangeeft: consistent (betrouwbaar) maar onjuist (niet valide)."
-     },
-     {
-      "v": "Wat is een longitudinaal onderzoek?",
-      "o": [
-       "Onderzoek waarbij dezelfde groep herhaaldelijk over langere tijd gemeten wordt",
-       "Onderzoek op één moment",
-       "Onderzoek met één respondent",
-       "Onderzoek in het buitenland"
-      ],
-      "c": 0,
-      "u": "Longitudinaal volgt veranderingen in de tijd. Tegenhanger: cross-sectioneel (één meting)."
-     },
-     {
-      "v": "Wat is bronkritiek?",
-      "o": [
-       "Het beoordelen van de betrouwbaarheid en validiteit van een informatiebron",
-       "Het citeren van bronnen in een rapport",
-       "Het verzamelen van secundaire data",
-       "Het toepassen van triangulatie"
-      ],
-      "c": 0,
-      "u": "Vragen bij bronkritiek: wie maakte de bron, met welk doel, en is de bron up-to-date?"
-     },
-     {
-      "v": "Wat is een aselecte steekproef?",
-      "o": [
-       "Een steekproef waarbij elk lid van de populatie gelijke kans heeft om gekozen te worden",
-       "Een bewust gekozen groep respondenten",
-       "Een steekproef van minimaal 1000 personen",
-       "Een steekproef zonder meetfouten"
-      ],
-      "c": 0,
-      "u": "Aselect (willekeurig) vermindert selectiebias en verhoogt de representativiteit."
-     },
-     {
-      "v": "Wat is het verschil tussen een open en een gesloten vraag in een enquête?",
-      "o": [
-       "Open: eigen antwoord. Gesloten: kiezen uit vaste opties.",
-       "Open vragen zijn kwantitatief, gesloten kwalitatief",
-       "Gesloten vragen zijn altijd beter",
-       "Open vragen zijn sneller te analyseren"
-      ],
-      "c": 0,
-      "u": "Gesloten vragen zijn makkelijk te analyseren. Open vragen geven meer diepte maar zijn moeilijker te coderen."
-     },
-     {
-      "v": "Welk begrip beschrijft de mate waarin resultaten gelden voor de gehele populatie?",
-      "o": [
-       "Generaliseerbaarheid",
-       "Betrouwbaarheid",
-       "Validiteit",
-       "Operationalisering"
-      ],
-      "c": 0,
-      "u": "Kwantitatief onderzoek met grote aselecte steekproef heeft een hoge generaliseerbaarheid."
-     },
-     {
-      "v": "Wat is een steekproeffout?",
-      "o": [
-       "Het verschil tussen de steekproefuitkomst en de werkelijke waarde in de populatie",
-       "Een fout in de vraagstelling",
-       "Een te kleine steekproef",
-       "Een ongeldige meting"
-      ],
-      "c": 0,
-      "u": "Steekproeffouten zijn kleiner bij grotere en representatiever getrokken steekproeven."
      }
     ],
     "oe": [
@@ -16543,17 +15970,6 @@ var VAKKEN = [
       "u": "Socialisatie maakt geordend samenleven mogelijk: individuen leren wat normaal en gewenst gedrag is. Primair = gezin. Secundair = school, media, werk, religie."
      },
      {
-      "v": "Wat is het verschil tussen macht en gezag?",
-      "o": [
-       "Macht = vermogen anderen te laten handelen. Gezag = macht die als legitiem erkend wordt.",
-       "Macht is formeel, gezag is informeel",
-       "Macht is negatief, gezag is altijd positief",
-       "Macht betreft individuen, gezag alleen instituties"
-      ],
-      "c": 0,
-      "u": "Macht kan bestaan zonder legitimiteit (via dwang of dreiging). Gezag = macht + legitimiteit: de onderdanen erkennen het recht om te heersen. Weber: drie gezagstypen — traditioneel, charismatisch en rationeel-legaal."
-     },
-     {
       "v": "Welke benadering verklaart individueel gedrag vanuit sociale structuren, groepen en instituties?",
       "o": [
        "Sociologische benadering",
@@ -16563,6 +15979,61 @@ var VAKKEN = [
       ],
       "c": 0,
       "u": "Sociologie: hoe bepalen structuren en groepsprocessen gedrag en kansen? Politicologie: hoe functioneren macht en politieke besluitvorming?"
+     },
+     {
+      "v": "Wat is primaire socialisatie?",
+      "o": [
+       "Socialisatie in het gezin in de vroege jeugd",
+       "Socialisatie op school en het werk",
+       "Socialisatie via sociale media",
+       "Socialisatie in de volwassenheid"
+      ],
+      "c": 0,
+      "u": "Primair: gezin (normen, taal, waarden). Secundair: school, religie, werk, media."
+     },
+     {
+      "v": "Wat is de bindingstheorie van Hirschi?",
+      "o": [
+       "Zwakke sociale bindingen verlagen de drempel voor crimineel gedrag",
+       "Criminaliteit is aangeboren",
+       "Criminaliteit ontstaat door economische ongelijkheid",
+       "Criminaliteit wordt bepaald door media-invloed"
+      ],
+      "c": 0,
+      "u": "Hirschi: sterke bindingen vormen een rem op deviant gedrag. Sociale controle via hechting en betrokkenheid."
+     },
+     {
+      "v": "Wat is de Weberse definitie van macht?",
+      "o": [
+       "Het vermogen om andermans gedrag te bepalen, ook tegen diens wil",
+       "Het recht om wetten te maken",
+       "Democratisch verkregen beslissingsbevoegdheid",
+       "Economisch overwicht over concurrenten"
+      ],
+      "c": 0,
+      "u": "Weber: macht kan gebaseerd zijn op dwang, geld, kennis of charisma. Gezag = macht + legitimiteit."
+     },
+     {
+      "v": "Wat is het verschil tussen formele en informele instituties?",
+      "o": [
+       "Formeel: wettelijk vastgelegd. Informeel: gewoonte en tradities.",
+       "Formeel is groter, informeel kleiner",
+       "Informele instituties zijn altijd effectiever",
+       "Ze zijn identiek"
+      ],
+      "c": 0,
+      "u": "Formele instituties zijn afdwingbaar via de wet. Informele sturen gedrag via sociale normen."
+     },
+     {
+      "v": "Wat is het verschil tussen macht en gezag?",
+      "o": [
+       "Macht = vermogen anderen te laten handelen. Gezag = macht die als legitiem erkend wordt.",
+       "Macht is formeel, gezag is informeel",
+       "Macht is negatief, gezag is altijd positief",
+       "Macht betreft individuen, gezag alleen instituties"
+      ],
+      "c": 0,
+      "u": "Macht kan bestaan zonder legitimiteit (via dwang of dreiging). Gezag = macht + legitimiteit: de onderdanen erkennen het recht om te heersen. Weber: drie gezagstypen — traditioneel, charismatisch en rationeel-legaal."
      },
      {
       "v": "Wat is het verschil tussen formele en informele sociale controle?",
@@ -16587,17 +16058,6 @@ var VAKKEN = [
       "u": "Weber: gezag is macht die als legitiem erkend wordt. Elk type heeft een andere legitimatiebron."
      },
      {
-      "v": "Wat is primaire socialisatie?",
-      "o": [
-       "Socialisatie in het gezin in de vroege jeugd",
-       "Socialisatie op school en het werk",
-       "Socialisatie via sociale media",
-       "Socialisatie in de volwassenheid"
-      ],
-      "c": 0,
-      "u": "Primair: gezin (normen, taal, waarden). Secundair: school, religie, werk, media."
-     },
-     {
       "v": "Wat is sociale mobiliteit?",
       "o": [
        "Beweging omhoog of omlaag op de maatschappelijke ladder",
@@ -16607,138 +16067,6 @@ var VAKKEN = [
       ],
       "c": 0,
       "u": "Verticale mobiliteit = op/neer. Horizontale mobiliteit = zijwaarts. Intergenerationeel = t.o.v. ouders."
-     },
-     {
-      "v": "Wat is het verschil tussen pluralisme en elitisme?",
-      "o": [
-       "Pluralisme: macht verspreid over veel groepen. Elitisme: macht bij een kleine elite.",
-       "Ze betekenen hetzelfde",
-       "Pluralisme is antidemocratisch",
-       "Pluralisme gaat over cultuur, elitisme over economie"
-      ],
-      "c": 0,
-      "u": "Dahl (pluralisme): veel groepen concurreren om invloed. Mills (elitisme): kleine elite bepaalt de koers."
-     },
-     {
-      "v": "Wat is een institutie in sociologische zin?",
-      "o": [
-       "Een stabiel geheel van normen en regels rond een maatschappelijke functie",
-       "Een overheidsgebouw",
-       "Een politieke partij",
-       "Een formele wet"
-      ],
-      "c": 0,
-      "u": "Instituties (gezin, onderwijs, religie, markt) structureren het maatschappelijk leven en zorgen voor continuïteit."
-     },
-     {
-      "v": "Wat is sociale cohesie?",
-      "o": [
-       "De mate van verbondenheid en solidariteit in een samenleving of groep",
-       "Het aantal formele regels in een samenleving",
-       "De economische welvaart van een land",
-       "Het percentage mensen met dezelfde religie"
-      ],
-      "c": 0,
-      "u": "Hoge cohesie: stabiele samenleving. Lage cohesie: conflicten en desintegratie."
-     },
-     {
-      "v": "Wat betekent legitimiteit in politicologische zin?",
-      "o": [
-       "De erkenning door de bevolking dat de machthebber het recht heeft om te heersen",
-       "De wettelijke bevoegdheid van een rechter",
-       "De verkiezingsuitslag",
-       "De grondwettelijke rechten van burgers"
-      ],
-      "c": 0,
-      "u": "Zonder legitimiteit is macht alleen gebaseerd op dwang. Met legitimiteit accepteren burgers het gezag vrijwillig."
-     },
-     {
-      "v": "Wat is de bindingstheorie van Hirschi?",
-      "o": [
-       "Zwakke sociale bindingen verlagen de drempel voor crimineel gedrag",
-       "Criminaliteit is aangeboren",
-       "Criminaliteit ontstaat door economische ongelijkheid",
-       "Criminaliteit wordt bepaald door media-invloed"
-      ],
-      "c": 0,
-      "u": "Hirschi: sterke bindingen vormen een rem op deviant gedrag. Sociale controle via hechting en betrokkenheid."
-     },
-     {
-      "v": "Wat is een pressiegroep?",
-      "o": [
-       "Een organisatie die buiten het parlement druk uitoefent op politieke besluitvorming",
-       "Een politieke partij in de Tweede Kamer",
-       "Een lobbyist die voor de overheid werkt",
-       "Een vakbond die lonen onderhandelt"
-      ],
-      "c": 0,
-      "u": "Pressiegroepen (bijv. Greenpeace, ANWB) proberen beleid te beïnvloeden via campagnes en media."
-     },
-     {
-      "v": "Wat is de Weberse definitie van macht?",
-      "o": [
-       "Het vermogen om andermans gedrag te bepalen, ook tegen diens wil",
-       "Het recht om wetten te maken",
-       "Democratisch verkregen beslissingsbevoegdheid",
-       "Economisch overwicht over concurrenten"
-      ],
-      "c": 0,
-      "u": "Weber: macht kan gebaseerd zijn op dwang, geld, kennis of charisma. Gezag = macht + legitimiteit."
-     },
-     {
-      "v": "Wat is sociale stratificatie?",
-      "o": [
-       "De hiërarchische indeling in lagen op basis van inkomen, opleiding en status",
-       "De culturele diversiteit in een samenleving",
-       "De geografische verdeling van bevolkingsgroepen",
-       "De mate van politieke participatie"
-      ],
-      "c": 0,
-      "u": "Stratificatie bepaalt kansen, levensstijl en macht. Bourdieu: economisch, cultureel en sociaal kapitaal."
-     },
-     {
-      "v": "Wat is de labelingtheorie (Becker)?",
-      "o": [
-       "Deviantie ontstaat doordat de samenleving een stigmatiserend label oplegt dat wordt geïnternaliseerd",
-       "Criminaliteit is aangeboren",
-       "Criminaliteit wordt veroorzaakt door armoede",
-       "Deviantie komt alleen voor in lage sociale klassen"
-      ],
-      "c": 0,
-      "u": "Self-fulfilling prophecy: eenmaal gelabeld als crimineel gedraagt iemand zich er ook naar."
-     },
-     {
-      "v": "Wat is de rol van media in politieke besluitvorming?",
-      "o": [
-       "Media bepalen mede de agenda door te selecteren welke themas aandacht krijgen (agenda-setting)",
-       "Media hebben geen invloed op politiek",
-       "Media zijn volledig objectief en neutraal",
-       "Media voeren alleen overheidsbeleid uit"
-      ],
-      "c": 0,
-      "u": "Agenda-setting: media bepalen niet wat mensen denken, maar wáár ze over nadenken."
-     },
-     {
-      "v": "Wat is het verschil tussen formele en informele instituties?",
-      "o": [
-       "Formeel: wettelijk vastgelegd. Informeel: gewoonte en tradities.",
-       "Formeel is groter, informeel kleiner",
-       "Informele instituties zijn altijd effectiever",
-       "Ze zijn identiek"
-      ],
-      "c": 0,
-      "u": "Formele instituties zijn afdwingbaar via de wet. Informele sturen gedrag via sociale normen."
-     },
-     {
-      "v": "Wat is sociaal kapitaal?",
-      "o": [
-       "Het netwerk van relaties en contacten waaruit iemand hulp en informatie kan putten",
-       "Het inkomen van een huishouden",
-       "Culturele kennis en diploma's",
-       "Eigendom van onroerend goed"
-      ],
-      "c": 0,
-      "u": "Bourdieu: sociaal kapitaal = netwerk. Beïnvloedt kansen via toegang tot informatie en steun."
      }
     ],
     "oe": [
@@ -16791,17 +16119,6 @@ var VAKKEN = [
     "sam": "<div class=\"sam-head\">Democratie en rechtsstaat</div><ul><li><strong>Parlementaire democratie</strong>: burgers kiezen de Tweede Kamer via verkiezingen. Het parlement controleert de uitvoerende macht (kabinet). De regering is afhankelijk van het vertrouwen van de Tweede Kamer.</li><li><strong>Rechtsstaat</strong>: overheid is gebonden aan de wet. Grondrechten beschermen burgers tegen overheidsmacht. Onafhankelijke rechterlijke macht beoordeelt of de wet correct wordt toegepast.</li><li><strong>Klassieke grondrechten</strong>: vrijheidsrechten — overheid onthoudt zich van ingrijpen. Bijv. vrijheid van meningsuiting, godsdienst, vergadering, privacyrecht.</li><li><strong>Sociale grondrechten</strong>: inspanningsverplichtingen — overheid moet actief zorgen voor welzijn. Bijv. recht op onderwijs, huisvesting, gezondheidszorg.</li></ul><div class=\"sam-head\">Politiek systeem</div><ul><li><strong>Trias politica</strong>: scheiding van wetgevende (parlement maakt wetten), uitvoerende (kabinet voert uit) en rechterlijke macht (rechters toetsen). Doel: voorkomen van machtsmisbruik. Checks and balances.</li><li><strong>Coalitievorming</strong>: geen enkele partij haalt een absolute meerderheid (76 zetels). Meerdere partijen onderhandelen over een regeerakkoord. Informateur → formateur → kabinet.</li><li><strong>Lobbyisme</strong>: bedrijven en maatschappelijke organisaties beïnvloeden politieke besluitvorming door informatie te verstrekken, campagnes te voeren of direct contact met politici. Kan wettelijk of onethisch zijn.</li></ul><div class=\"sam-head\">Politieke ideologieën</div><ul><li><strong>Liberalisme</strong>: nadruk op individuele vrijheid, vrije markt, beperkte overheid. Bijv. VVD.</li><li><strong>Sociaal-democratie</strong>: gelijkheid en solidariteit, sterke verzorgingsstaat. Bijv. PvdA/GL.</li><li><strong>Christendemocratie</strong>: gemeenschap, subsidiariteit (overheid springt pas bij als samenleving tekortschiet), solidariteit. Bijv. CDA, CU.</li><li><strong>Populisme</strong>: de volkswil tegenover de gevestigde elite en instituties. Kan zowel links als rechts zijn. Bijv. PVV.</li></ul>",
     "sv": [
      {
-      "v": "Wat houdt de trias politica in?",
-      "o": [
-       "Scheiding van wetgevende, uitvoerende en rechterlijke macht om machtsmisbruik te voorkomen",
-       "De drie grootste politieke partijen in Nederland",
-       "De drie niveaus van bestuur: gemeente, provincie, Rijk",
-       "De drie grondrechten"
-      ],
-      "c": 0,
-      "u": "Montesquieu: macht moet verdeeld zijn. Wetgevende macht (parlement) maakt wetten. Uitvoerende macht (regering) voert uit. Rechterlijke macht (rechters) toetst. Voorkomt machtsconcentratie."
-     },
-     {
       "v": "Welk type grondrecht verplicht de overheid actief iets te doen (bijv. zorgen voor onderwijs en huisvesting)?",
       "o": [
        "Sociaal grondrecht (inspanningsverplichting)",
@@ -16811,17 +16128,6 @@ var VAKKEN = [
       ],
       "c": 0,
       "u": "Klassiek: overheid houdt zich afzijdig (vrijheid van meningsuiting, godsdienst). Sociaal: overheid is actief (recht op onderwijs, huisvesting). Klassieke rechten zijn afdwingbaar, sociale rechten zijn inspanningsverplichtingen."
-     },
-     {
-      "v": "Welke drempel bepaalt hoeveel zetels een coalitie minimaal moet hebben om te kunnen regeren in de Tweede Kamer?",
-      "o": [
-       "76 zetels (absolute meerderheid van 150)",
-       "51 zetels",
-       "61 zetels",
-       "101 zetels"
-      ],
-      "c": 0,
-      "u": "Geen enkele partij haalt een meerderheid (76 zetels). Partijen onderhandelen, een informateur zoekt een werkbare combinatie. Ze schrijven een regeerakkoord en vormen samen de regering."
      },
      {
       "v": "Welk begrip beschrijft een politieke stroming die de volkswil centraal stelt en zich afzet tegen de gevestigde elite?",
@@ -16846,28 +16152,6 @@ var VAKKEN = [
       "u": "Lobbyisten proberen Kamerleden, ministers of ambtenaren te beinvloeden. Kan constructief zijn (expertise inbrengen) maar ook problematisch (ongelijke toegang voor machtige organisaties)."
      },
      {
-      "v": "Wat is een motie van wantrouwen?",
-      "o": [
-       "Een uitspraak van de Tweede Kamer dat zij geen vertrouwen meer heeft in een minister of kabinet",
-       "Een voorstel voor nieuwe wetgeving",
-       "Een initiatief van een politieke partij",
-       "Een burgerpetitie"
-      ],
-      "c": 0,
-      "u": "Bij aangenomen motie van wantrouwen moet de minister of het kabinet aftreden."
-     },
-     {
-      "v": "Wat is het verschil tussen de Eerste en de Tweede Kamer?",
-      "o": [
-       "Tweede Kamer: direct gekozen, initieert wetten. Eerste Kamer: indirect gekozen, toetst wetten.",
-       "Eerste Kamer is machtiger",
-       "Ze zijn identiek",
-       "Eerste Kamer maakt wetten, Tweede Kamer toetst"
-      ],
-      "c": 0,
-      "u": "Eerste Kamer: gekozen door Provinciale Staten. Controleert uitvoerbaarheid van wetten, geen recht van amendement."
-     },
-     {
       "v": "Wat is het verschil tussen actief en passief kiesrecht?",
       "o": [
        "Actief: recht om te stemmen. Passief: recht om je verkiesbaar te stellen.",
@@ -16877,17 +16161,6 @@ var VAKKEN = [
       ],
       "c": 0,
       "u": "In Nederland: actief kiesrecht vanaf 18 jaar. Passief kiesrecht: je mag je kandidaat stellen."
-     },
-     {
-      "v": "Wat is een regeerakkoord?",
-      "o": [
-       "Een overeenkomst tussen coalitiepartijen over het te voeren beleid voor de regeerperiode",
-       "Een wet die door het parlement is aangenomen",
-       "Een verdrag met andere landen",
-       "Een plan van de oppositie"
-      ],
-      "c": 0,
-      "u": "Het regeerakkoord bevat de afspraken van de coalitie over beleid en bezuinigingen voor vier jaar."
      },
      {
       "v": "Wat is de rol van de Raad van State?",
@@ -16901,28 +16174,6 @@ var VAKKEN = [
       "u": "Raad van State adviseert over wetsvoorstellen en behandelt beroepen tegen overheidsbesluiten."
      },
      {
-      "v": "Wat is het verschil tussen een liberale en een sociaaldemocratische ideologie?",
-      "o": [
-       "Liberaal: vrije markt, kleine overheid. Sociaaldemocraat: gelijkheid, verzorgingsstaat, solidariteit.",
-       "Ze zijn identiek",
-       "Liberalisme is links, sociaaldemocratie is rechts",
-       "Beide willen een kleine overheid"
-      ],
-      "c": 0,
-      "u": "Liberalisme (VVD): markt regelt. Sociaaldemocratie (PvdA/GL): overheid corrigeert ongelijkheid."
-     },
-     {
-      "v": "Wat is het verschil tussen directe en representatieve democratie?",
-      "o": [
-       "Direct: burgers nemen zelf beslissingen (referendum). Representatief: gekozen vertegenwoordigers beslissen.",
-       "Direct is altijd beter",
-       "Representatief is antidemocratisch",
-       "Ze zijn identiek in de praktijk"
-      ],
-      "c": 0,
-      "u": "Nederland: representatieve democratie. Directe democratie via referendum is consultatief in Nederland."
-     },
-     {
       "v": "Wat is het recht van amendement?",
       "o": [
        "Het recht van Tweede Kamerleden om wetsvoorstellen te wijzigen",
@@ -16932,17 +16183,6 @@ var VAKKEN = [
       ],
       "c": 0,
       "u": "Alleen de Tweede Kamer heeft het recht van amendement. De Eerste Kamer mag alleen ja of nee zeggen."
-     },
-     {
-      "v": "Wat is het subsidiariteitsbeginsel?",
-      "o": [
-       "Beslissingen worden genomen op het laagst mogelijke bestuursniveau dat effectief is",
-       "De EU neemt altijd beslissingen voor lidstaten",
-       "Gemeenten zijn altijd bevoegd boven het Rijk",
-       "De Grondwet staat boven EU-recht"
-      ],
-      "c": 0,
-      "u": "Subsidiariteit: overheid grijpt pas in als burgers of lagere overheden het zelf niet aankunnen."
      },
      {
       "v": "Welk begrip beschrijft het proces waarbij problemen de politieke agenda bereiken?",
@@ -16956,59 +16196,37 @@ var VAKKEN = [
       "u": "Agendering is de eerste fase van de beleidscyclus: problemen worden erkend en op de agenda gezet."
      },
      {
-      "v": "Wat is de rol van de Nationale Ombudsman?",
+      "v": "Wat houdt de trias politica in?",
       "o": [
-       "Onderzoeken of de overheid burgers correct behandelt en klachten behandelen",
-       "Wetten toetsen op grondwettigheid",
-       "Het parlement controleren",
-       "Rechters benoemen"
+       "Scheiding van wetgevende, uitvoerende en rechterlijke macht om machtsmisbruik te voorkomen",
+       "De drie grootste politieke partijen in Nederland",
+       "De drie niveaus van bestuur: gemeente, provincie, Rijk",
+       "De drie grondrechten"
       ],
       "c": 0,
-      "u": "De Ombudsman bemiddelt tussen burger en overheid en publiceert rapporten over overheidsgedrag."
+      "u": "Montesquieu: macht moet verdeeld zijn. Wetgevende macht (parlement) maakt wetten. Uitvoerende macht (regering) voert uit. Rechterlijke macht (rechters) toetst. Voorkomt machtsconcentratie."
      },
      {
-      "v": "Wat is een coalitieakkoord en wie sluit het?",
+      "v": "Welke drempel bepaalt hoeveel zetels een coalitie minimaal moet hebben om te kunnen regeren in de Tweede Kamer?",
       "o": [
-       "De regerende coalitiepartijen na de formatie, met afspraken over beleid",
-       "De oppositiepartijen na verlies",
-       "De Tweede Kamer als geheel",
-       "De Eerste en Tweede Kamer samen"
+       "76 zetels (absolute meerderheid van 150)",
+       "51 zetels",
+       "61 zetels",
+       "101 zetels"
       ],
       "c": 0,
-      "u": "Coalitieakkoord: partijen die samen een meerderheid vormen leggen hun politieke compromissen vast."
+      "u": "Geen enkele partij haalt een meerderheid (76 zetels). Partijen onderhandelen, een informateur zoekt een werkbare combinatie. Ze schrijven een regeerakkoord en vormen samen de regering."
      },
      {
-      "v": "Wat is het verschil tussen conservatisme en progressivisme?",
+      "v": "Wat is een motie van wantrouwen?",
       "o": [
-       "Conservatief: bestaande waarden en structuren bewaren. Progressief: maatschappij veranderen en vernieuwen.",
-       "Ze zijn hetzelfde",
-       "Conservatief is altijd rechts, progressief altijd links",
-       "Progressivisme verwijst alleen naar economisch beleid"
+       "Een uitspraak van de Tweede Kamer dat zij geen vertrouwen meer heeft in een minister of kabinet",
+       "Een voorstel voor nieuwe wetgeving",
+       "Een initiatief van een politieke partij",
+       "Een burgerpetitie"
       ],
       "c": 0,
-      "u": "Conservatisme: behoud van tradities en stabiliteit. Progressivisme: hervormingen en gelijkheid nastreven."
-     },
-     {
-      "v": "Wat is het verschil tussen een formateur en een informateur?",
-      "o": [
-       "Informateur onderzoekt welke coalitie mogelijk is. Formateur onderhandelt het regeerakkoord en vormt het kabinet.",
-       "Ze zijn hetzelfde",
-       "Formateur gaat vóór informateur",
-       "Informateur vormt het kabinet"
-      ],
-      "c": 0,
-      "u": "Informateur (verkenner): welke combinatie is haalbaar? Formateur: onderhandelt en vormt het kabinet."
-     },
-     {
-      "v": "Welk begrip beschrijft het systeem waarbij de rechter kan toetsen of overheidshandelen rechtmatig is?",
-      "o": [
-       "Rechtsstatelijkheid en rechtsbescherming via de bestuursrechter",
-       "Trias politica",
-       "Democratische legitimiteit",
-       "Ministeriële verantwoordelijkheid"
-      ],
-      "c": 0,
-      "u": "Rechtsstaat: overheid is gebonden aan de wet. Burgers kunnen naar de rechter als de overheid de wet schendt."
+      "u": "Bij aangenomen motie van wantrouwen moet de minister of het kabinet aftreden."
      }
     ],
     "oe": [
@@ -17082,17 +16300,6 @@ var VAKKEN = [
       "u": "Merton: de samenleving benadrukt succes (geld, status) maar niet iedereen heeft gelijke toegang tot legale middelen. De spanning tussen doel en middelen kan leiden tot criminaliteit als alternatieve route."
      },
      {
-      "v": "Welk begrip beschrijft het beleid (ingezet in 2013) waarbij burgers meer eigen verantwoordelijkheid nemen en het sociale vangnet kleiner wordt?",
-      "o": [
-       "Participatiesamenleving",
-       "Verzorgingsstaat",
-       "Welvaartstaat",
-       "Minimalistische staat"
-      ],
-      "c": 0,
-      "u": "Verzorgingsstaat (na WO II): brede sociale voorzieningen. Participatiesamenleving (sinds 2013): overheid doet een stap terug, burgers worden aangesproken op zelfredzaamheid en mantelzorg."
-     },
-     {
       "v": "Welk begrip beschrijft een samenleving met grote diversiteit in culturele, religieuze en etnische achtergronden?",
       "o": [
        "Pluriforme samenleving",
@@ -17115,6 +16322,50 @@ var VAKKEN = [
       "u": "Integratie: tweetaligheid, werk, onderwijs, maar ook eigen tradities behouden. Assimilatie: volledige aanpassing aan de dominante cultuur. In Nederland wordt integratie als beleidsdoel gehanteerd."
      },
      {
+      "v": "Wat is het meritocratische ideaal?",
+      "o": [
+       "Maatschappelijke positie wordt bepaald door talent en inzet, niet door afkomst",
+       "Rijke kinderen hebben altijd meer kansen",
+       "De overheid verdeelt welvaart gelijk",
+       "Opleiding is niet van belang voor maatschappelijke positie"
+      ],
+      "c": 0,
+      "u": "In de praktijk spelen ook afkomst, netwerk en cultureel kapitaal een rol."
+     },
+     {
+      "v": "Wat is individualisering als maatschappelijk proces?",
+      "o": [
+       "Mensen worden minder afhankelijk van vaste groepsverbanden en maken meer eigen keuzes",
+       "Iedereen neemt steeds dezelfde normen en waarden over",
+       "De overheid bemoeit zich meer met het privéleven van burgers",
+       "Sociale ongelijkheid verdwijnt volledig"
+      ],
+      "c": 0,
+      "u": "Individualisering: traditionele verbanden (kerk, zuil, buurt, gezin) verliezen invloed en het individu bepaalt zelf zijn levensloop. Gevolg: meer vrijheid, maar ook minder vanzelfsprekende sociale binding."
+     },
+     {
+      "v": "Welk begrip beschrijft de reproductie van sociale ongelijkheid via overdracht van kapitaal van ouder op kind?",
+      "o": [
+       "Sociale reproductie",
+       "Sociale mobiliteit",
+       "Sociale stratificatie",
+       "Socialisatie"
+      ],
+      "c": 0,
+      "u": "Bourdieu: ongelijkheid wordt doorgegeven via economisch, cultureel en sociaal kapitaal. Structuur reproduceert zichzelf."
+     },
+     {
+      "v": "Welk begrip beschrijft het beleid (ingezet in 2013) waarbij burgers meer eigen verantwoordelijkheid nemen en het sociale vangnet kleiner wordt?",
+      "o": [
+       "Participatiesamenleving",
+       "Verzorgingsstaat",
+       "Welvaartstaat",
+       "Minimalistische staat"
+      ],
+      "c": 0,
+      "u": "Verzorgingsstaat (na WO II): brede sociale voorzieningen. Participatiesamenleving (sinds 2013): overheid doet een stap terug, burgers worden aangesproken op zelfredzaamheid en mantelzorg."
+     },
+     {
       "v": "Wat zijn de drie kapitaalvormen van Bourdieu?",
       "o": [
        "Economisch (geld), cultureel (opleiding/taal), sociaal (netwerk)",
@@ -17135,138 +16386,6 @@ var VAKKEN = [
       ],
       "c": 0,
       "u": "Self-fulfilling prophecy: eenmaal gelabeld als crimineel gedraagt iemand zich er ook naar."
-     },
-     {
-      "v": "Wat is het verschil tussen resocialisatie en recidive?",
-      "o": [
-       "Resocialisatie: terugkeer in de samenleving. Recidive: opnieuw in de fout gaan.",
-       "Ze betekenen hetzelfde",
-       "Recidive is een straf",
-       "Resocialisatie gaat over preventie"
-      ],
-      "c": 0,
-      "u": "Doel van resocialisatie: recidive voorkomen via opleiding, therapie en begeleiding na straf."
-     },
-     {
-      "v": "Wat is het meritocratische ideaal?",
-      "o": [
-       "Maatschappelijke positie wordt bepaald door talent en inzet, niet door afkomst",
-       "Rijke kinderen hebben altijd meer kansen",
-       "De overheid verdeelt welvaart gelijk",
-       "Opleiding is niet van belang voor maatschappelijke positie"
-      ],
-      "c": 0,
-      "u": "In de praktijk spelen ook afkomst, netwerk en cultureel kapitaal een rol."
-     },
-     {
-      "v": "Wat is het verschil tussen preventie en repressie bij criminaliteitsbestrijding?",
-      "o": [
-       "Preventie: criminaliteit voorkomen. Repressie: bestraffen en opsporen na het feit.",
-       "Preventie is zwaarder",
-       "Repressie is altijd effectiever",
-       "Ze zijn hetzelfde"
-      ],
-      "c": 0,
-      "u": "Preventief: jeugdwerk, armoede aanpakken. Repressief: politie, straf, gevangenis. Combinatie werkt het best."
-     },
-     {
-      "v": "Wat is individualisering als maatschappelijk proces?",
-      "o": [
-       "Mensen worden minder afhankelijk van vaste groepsverbanden en maken meer eigen keuzes",
-       "Iedereen neemt steeds dezelfde normen en waarden over",
-       "De overheid bemoeit zich meer met het privéleven van burgers",
-       "Sociale ongelijkheid verdwijnt volledig"
-      ],
-      "c": 0,
-      "u": "Individualisering: traditionele verbanden (kerk, zuil, buurt, gezin) verliezen invloed en het individu bepaalt zelf zijn levensloop. Gevolg: meer vrijheid, maar ook minder vanzelfsprekende sociale binding."
-     },
-     {
-      "v": "Wat is cultureel kapitaal (Bourdieu)?",
-      "o": [
-       "Kennis, taalbeheersing en diploma's die kansen in de samenleving vergroten",
-       "Het inkomen van een huishouden",
-       "Het netwerk van familie en vrienden",
-       "Eigendom van onroerend goed"
-      ],
-      "c": 0,
-      "u": "Kinderen van hoogopgeleiden nemen meer cultureel kapitaal mee vanuit huis, wat hun schoolsucces vergroot."
-     },
-     {
-      "v": "Wat is het verschil tussen absolute en relatieve armoede?",
-      "o": [
-       "Absoluut: inkomen onder bestaansminimum. Relatief: inkomen ver onder het maatschappelijk gemiddelde.",
-       "Ze zijn hetzelfde",
-       "Relatieve armoede is ernstiger",
-       "Absolute armoede bestaat niet in Nederland"
-      ],
-      "c": 0,
-      "u": "Absoluut: niet kunnen voorzien in basisbehoeften. Relatief: sociaal uitgesloten door inkomen onder de maatschappelijke norm."
-     },
-     {
-      "v": "Wat is het Pygmalion-effect in het onderwijs?",
-      "o": [
-       "Leerlingen presteren beter of slechter naarmate docenten hogere of lagere verwachtingen hebben",
-       "Een onderwijsmethode voor talentontwikkeling",
-       "Een theorie over criminaliteit op school",
-       "Een vorm van cultureel kapitaal"
-      ],
-      "c": 0,
-      "u": "Hoge verwachtingen leiden tot betere prestaties. Verklaart mede ongelijke kansen via docentgedrag."
-     },
-     {
-      "v": "Wat is stigmatisering in sociologische zin?",
-      "o": [
-       "Het negatief labelen van een persoon of groep waardoor ze worden buitengesloten",
-       "Positieve aandacht voor een kwetsbare groep",
-       "Een juridische straf",
-       "Formele sociale controle"
-      ],
-      "c": 0,
-      "u": "Stigma leidt tot sociale uitsluiting en kan het zelfbeeld aantasten via de self-fulfilling prophecy."
-     },
-     {
-      "v": "Wat is maatschappelijke polarisatie?",
-      "o": [
-       "Het scherper en onverzoenlijker worden van tegenstellingen tussen groepen in de samenleving",
-       "Het samensmelten van verschillende culturen tot één geheel",
-       "Een toename van de verticale sociale mobiliteit",
-       "Het gelijktrekken van inkomens door de overheid"
-      ],
-      "c": 0,
-      "u": "Polarisatie: standpunten drijven uit elkaar en het wij-zij-denken neemt toe. Wordt versterkt door sociale media (filterbubbels) en kan de sociale cohesie ondermijnen."
-     },
-     {
-      "v": "Wat is anomie (Durkheim)?",
-      "o": [
-       "Een toestand van normloosheid waarbij sociale regels hun bindende kracht verliezen",
-       "Een sterke sociale cohesie",
-       "Een gesloten stratificatiesysteem",
-       "Een maatregel tegen criminaliteit"
-      ],
-      "c": 0,
-      "u": "Anomie treedt op bij snelle maatschappelijke veranderingen. Leidt tot desoriëntatie, deviantie en verhoogd suïciderisico."
-     },
-     {
-      "v": "Wat is het verschil tussen een open en een gesloten stratificatiesysteem?",
-      "o": [
-       "Open: positie veranderbaar via inzet en opleiding. Gesloten: positie bepaald door geboorte.",
-       "Open samenleving = meer criminaliteit",
-       "Gesloten samenleving heeft meer welvaart",
-       "Ze zijn identiek in de praktijk"
-      ],
-      "c": 0,
-      "u": "Kastenstelsel (India) = gesloten. Westerse democratieën streven naar open systemen maar kennen ongelijke kansen."
-     },
-     {
-      "v": "Welk begrip beschrijft de reproductie van sociale ongelijkheid via overdracht van kapitaal van ouder op kind?",
-      "o": [
-       "Sociale reproductie",
-       "Sociale mobiliteit",
-       "Sociale stratificatie",
-       "Socialisatie"
-      ],
-      "c": 0,
-      "u": "Bourdieu: ongelijkheid wordt doorgegeven via economisch, cultureel en sociaal kapitaal. Structuur reproduceert zichzelf."
      }
     ],
     "oe": [
@@ -17337,28 +16456,6 @@ var VAKKEN = [
     "sam": "<div class=\"sam-head\">Redeneren en bewijzen</div><ul><li><strong>Directe redenering</strong>: stap voor stap van de gegeven informatie naar de conclusie. Elke stap moet logisch volgen uit de vorige.</li><li><strong>Tegenvoorbeeld</strong>: één voorbeeld waarvoor een bewering niet klopt volstaat om de bewering te weerleggen. Handig bij \"geldt dit altijd?\"</li><li><strong>Uit het ongerijmde</strong>: neem aan dat de bewering onwaar is en leid een tegenspraak af. Dan is de bewering toch waar.</li></ul><div class=\"sam-head\">Algebraïsche vaardigheden</div><ul><li><strong>Vereenvoudigen</strong>: combineer gelijksoortige termen, werk haakjes uit en herleid tot de eenvoudigste vorm.</li><li><strong>Substitueren</strong>: vervang een variabele door een waarde of een andere uitdrukking. Essentieel bij stelsels en samengestelde functies.</li><li><strong>Vergelijking opstellen</strong>: verwoord de situatie in symbolen. Benoem variabelen expliciet en controleer of de eenheden kloppen.</li></ul><div class=\"sam-head\">Modelleren</div><ul><li><strong>Modelleercyclus</strong>: probleem → wiskundige formule → oplossing → terugvertaling naar de context → beoordeling of het antwoord realistisch is.</li><li><strong>Parameters</strong>: constanten in een formule die de situatie bepalen (bijv. beginstand, groeisnelheid). Onderscheid duidelijk van de variabele.</li><li><strong>Domein bewust kiezen</strong>: in een praktijkmodel zijn niet alle x-waarden zinvol (bijv. negatieve tijd of massa heeft geen betekenis).</li></ul><div class=\"sam-head\">Grafieken interpreteren</div><ul><li><strong>Beginwaarde</strong>: y-waarde bij x = 0, af te lezen op de y-as.</li><li><strong>Helling</strong>: stijging per eenheid op de x-as. Positieve helling = toename, negatieve helling = afname.</li><li><strong>Verband bepalen</strong>: rechte lijn → lineair. Parabool → kwadratisch. Afvlakkende kromme → exponentieel verval of wortelfunctie. Periodiek → sinus/cosinus.</li><li><strong>Snijpunten</strong>: snijpunt met x-as → nulpunt (y = 0). Snijpunt met y-as → beginwaarde (x = 0).</li></ul>",
     "sv": [
      {
-      "v": "Wat is een tegenvoorbeeld en waarvoor gebruik je het?",
-      "o": [
-       "Eén voorbeeld waarvoor een bewering niet geldt, waarmee je de bewering weerlegt",
-       "Een voorbeeld dat de bewering bevestigt",
-       "Een ingewikkelde berekening die de bewering bewijst",
-       "Een uitzondering die de regel bevestigt"
-      ],
-      "c": 0,
-      "u": "Eén tegenvoorbeeld is voldoende om te bewijzen dat een bewering NIET voor altijd geldt. Bijv.: \"x² > x\" is onjuist want x = 0,5 geeft 0,25 < 0,5."
-     },
-     {
-      "v": "Wat is de eerste stap bij het modelleren van een praktijkprobleem?",
-      "o": [
-       "Het probleem beschrijven en de variabelen benoemen",
-       "Direct een formule opschrijven",
-       "De grafiek tekenen",
-       "De oplossing berekenen"
-      ],
-      "c": 0,
-      "u": "Modelleercyclus: 1. Probleem begrijpen en variabelen benoemen. 2. Formule opstellen. 3. Berekenen. 4. Terugvertalen naar de context. 5. Beoordelen of het antwoord realistisch is."
-     },
-     {
       "v": "Wat lees je af op de y-as bij x = 0 van een grafiek?",
       "o": [
        "De beginwaarde (of beginstand)",
@@ -17379,6 +16476,39 @@ var VAKKEN = [
       ],
       "c": 0,
       "u": "Lineair: rechte lijn, y = ax + b. Constante helling a. Kwadratisch: parabool. Exponentieel: afvlakkend of stijgend naar een asymptoot."
+     },
+     {
+      "v": "Wat is substitutie bij het oplossen van een stelsel vergelijkingen?",
+      "o": [
+       "Druk één variabele uit in de andere en vervang dit in de tweede vergelijking",
+       "Trek de vergelijkingen van elkaar af",
+       "Vermenigvuldig beide vergelijkingen met een constante",
+       "Gebruik de abc-formule"
+      ],
+      "c": 0,
+      "u": "Substitutie: herleid bijv. y = 3x − 2 uit de eerste vergelijking en vervang y in de tweede. Zo blijft er één vergelijking in één onbekende over."
+     },
+     {
+      "v": "Wat is een tegenvoorbeeld en waarvoor gebruik je het?",
+      "o": [
+       "Eén voorbeeld waarvoor een bewering niet geldt, waarmee je de bewering weerlegt",
+       "Een voorbeeld dat de bewering bevestigt",
+       "Een ingewikkelde berekening die de bewering bewijst",
+       "Een uitzondering die de regel bevestigt"
+      ],
+      "c": 0,
+      "u": "Eén tegenvoorbeeld is voldoende om te bewijzen dat een bewering NIET voor altijd geldt. Bijv.: \"x² > x\" is onjuist want x = 0,5 geeft 0,25 < 0,5."
+     },
+     {
+      "v": "Wat is de eerste stap bij het modelleren van een praktijkprobleem?",
+      "o": [
+       "Het probleem beschrijven en de variabelen benoemen",
+       "Direct een formule opschrijven",
+       "De grafiek tekenen",
+       "De oplossing berekenen"
+      ],
+      "c": 0,
+      "u": "Modelleercyclus: 1. Probleem begrijpen en variabelen benoemen. 2. Formule opstellen. 3. Berekenen. 4. Terugvertalen naar de context. 5. Beoordelen of het antwoord realistisch is."
      },
      {
       "v": "Wat betekent een negatieve helling in de context van een grafiek?",
@@ -17423,17 +16553,6 @@ var VAKKEN = [
       ],
       "c": 0,
       "u": "Bijv.: een berekende negatieve lengte, massa of prijs is wiskundig correct maar praktisch onzinnig. Altijd terugvertalen en beoordelen."
-     },
-     {
-      "v": "Wat is substitutie bij het oplossen van een stelsel vergelijkingen?",
-      "o": [
-       "Druk één variabele uit in de andere en vervang dit in de tweede vergelijking",
-       "Trek de vergelijkingen van elkaar af",
-       "Vermenigvuldig beide vergelijkingen met een constante",
-       "Gebruik de abc-formule"
-      ],
-      "c": 0,
-      "u": "Substitutie: herleid bijv. y = 3x − 2 uit de eerste vergelijking en vervang y in de tweede. Zo blijft er één vergelijking in één onbekende over."
      },
      {
       "v": "Hoe gebruik je een tekenwafel (tekenschema) bij een ongelijkheid?",
@@ -17521,17 +16640,6 @@ var VAKKEN = [
       "u": "f(x − c) verschuift de grafiek c naar rechts. Tegenintuïtief: min in het argument = rechtsverschuiving. f(x + 3) = 3 naar links."
      },
      {
-      "v": "Wat zijn de nulpunten van f(x) = (x − 4)(x + 2)?",
-      "o": [
-       "x = 4 en x = −2",
-       "x = −4 en x = 2",
-       "x = 4 en x = 2",
-       "x = −4 en x = −2"
-      ],
-      "c": 0,
-      "u": "Stel elke factor gelijk aan 0: x − 4 = 0 → x = 4 en x + 2 = 0 → x = −2. Nulpuntvorm: teken omdraaien om nulpunten af te lezen."
-     },
-     {
       "v": "Wat is de horizontale asymptoot van f(x) = 3 · 2ˣ + 1?",
       "o": [
        "y = 1",
@@ -17565,17 +16673,6 @@ var VAKKEN = [
       "u": "−f(x): alle y-waarden van teken wisselen → spiegeling in de x-as. f(−x): x-waarden wisselen → spiegeling in de y-as."
      },
      {
-      "v": "Wat is het domein van f(x) = √(x − 3)?",
-      "o": [
-       "x ≥ 3",
-       "x > 3",
-       "x ≥ 0",
-       "Alle reële getallen"
-      ],
-      "c": 0,
-      "u": "Uitdrukking onder wortel moet ≥ 0 zijn: x − 3 ≥ 0 → x ≥ 3. Domein is [3, +∞)."
-     },
-     {
       "v": "Hoe vind je snijpunten van twee grafieken f en g?",
       "o": [
        "Stel f(x) = g(x) en los op",
@@ -17607,6 +16704,28 @@ var VAKKEN = [
       ],
       "c": 0,
       "u": "Periode = 2π/b = 2π/3. Grotere b → kortere periode → snellere oscillatie. Amplitude en middellijn veranderen niet door b."
+     },
+     {
+      "v": "Wat zijn de nulpunten van f(x) = (x − 4)(x + 2)?",
+      "o": [
+       "x = 4 en x = −2",
+       "x = −4 en x = 2",
+       "x = 4 en x = 2",
+       "x = −4 en x = −2"
+      ],
+      "c": 0,
+      "u": "Stel elke factor gelijk aan 0: x − 4 = 0 → x = 4 en x + 2 = 0 → x = −2. Nulpuntvorm: teken omdraaien om nulpunten af te lezen."
+     },
+     {
+      "v": "Wat is het domein van f(x) = √(x − 3)?",
+      "o": [
+       "x ≥ 3",
+       "x > 3",
+       "x ≥ 0",
+       "Alle reële getallen"
+      ],
+      "c": 0,
+      "u": "Uitdrukking onder wortel moet ≥ 0 zijn: x − 3 ≥ 0 → x ≥ 3. Domein is [3, +∞)."
      }
     ],
     "oe": [
@@ -17661,17 +16780,6 @@ var VAKKEN = [
     "sam": "<div class=\"sam-head\">Coördinaten en lijnen</div><ul><li><strong>Afstand</strong>: <span class=\"fm\">d = √((x₂−x₁)² + (y₂−y₁)²)</span>. Volgt uit Pythagoras.</li><li><strong>Middelpunt</strong>: <span class=\"fm\">M = ((x₁+x₂)/2, (y₁+y₂)/2)</span>.</li><li><strong>Helling</strong>: rc = (y₂−y₁)/(x₂−x₁). Loodrechte lijnen: rc₁ × rc₂ = −1.</li><li><strong>Lijn door twee punten</strong>: y − y₁ = rc(x − x₁). Schrijf om naar y = ax + b.</li><li><strong>Cirkelvergelijking</strong>: <span class=\"fm\">(x − a)² + (y − b)² = r²</span>. Middelpunt M(a, b), straal r. Algemene vorm omschrijven via kwadraat aanvullen.</li></ul><div class=\"sam-head\">Vectoren</div><ul><li><strong>Vector</strong>: grootheid met richting én grootte. Notatie →a = (a₁, a₂).</li><li><strong>Optelling</strong>: →a + →b = (a₁+b₁, a₂+b₂). Grafisch: kop-op-staart.</li><li><strong>Grootte</strong>: |→a| = √(a₁² + a₂²).</li><li><strong>Inwendig product</strong>: →a · →b = a₁b₁ + a₂b₂. →a · →b = 0 ↔ loodrecht. Hoek: cos θ = (→a · →b)/(|→a|·|→b|).</li></ul><div class=\"sam-head\">Goniometrie in driehoeken</div><ul><li><strong>Rechthoekige driehoek</strong>: sin α = overstaande/schuinzijde. cos α = aanliggende/schuinzijde. tan α = overstaande/aanliggende. (SOH-CAH-TOA)</li><li><strong>Sinusregel</strong>: a/sin A = b/sin B = c/sin C. Gebruik bij AAS, ASA of twee zijden + overstaande hoek (SSA).</li><li><strong>Cosinusregel</strong>: <span class=\"fm\">a² = b² + c² − 2bc·cos A</span>. Gebruik bij SAS (twee zijden + ingesloten hoek) of SSS (drie zijden).</li><li><strong>Oppervlakte</strong>: <span class=\"fm\">A = ½·b·c·sin A</span>.</li></ul><div class=\"sam-head\">Ruimtelijke figuren</div><ul><li><strong>Ruimtelijk redeneren</strong>: teken altijd een schets met correcte oriëntatie van assen. Label punten, zijden en hoeken.</li><li><strong>Afstand in 3D</strong>: <span class=\"fm\">d = √((x₂−x₁)²+(y₂−y₁)²+(z₂−z₁)²)</span>. Extensie van de 2D-formule.</li><li><strong>Hoek tussen lijnen</strong>: gebruik het inwendig product van de richtingsvectoren om de hoek te bepalen.</li></ul>",
     "sv": [
      {
-      "v": "Hoe bereken je de afstand tussen twee punten?",
-      "o": [
-       "Wortel van kwadratensom der verschillen",
-       "Som van absolute waarden der verschillen",
-       "Product van de coördinatenverschillen",
-       "Gemiddelde van de coördinaten"
-      ],
-      "c": 0,
-      "u": "d = √((x₂−x₁)²+(y₂−y₁)²). Volgt uit Pythagoras: de x- en y-verschillen zijn de rechthoekszijden."
-     },
-     {
       "v": "Wanneer zijn twee vectoren loodrecht op elkaar?",
       "o": [
        "Inwendig product = 0: →a · →b = 0",
@@ -17683,17 +16791,6 @@ var VAKKEN = [
       "u": "→a · →b = a₁b₁ + a₂b₂ = 0 ↔ loodrecht. Positief → scherpe hoek. Negatief → stompe hoek."
      },
      {
-      "v": "Wanneer gebruik je de cosinusregel?",
-      "o": [
-       "Bij SAS of SSS (twee zijden + ingesloten hoek of drie zijden)",
-       "Bij AAS of ASA (twee hoeken + zijde)",
-       "Alleen in rechthoekige driehoeken",
-       "Bij twee zijden en overstaande hoek"
-      ],
-      "c": 0,
-      "u": "Cosinusregel: a² = b²+c²−2bc·cos A. SAS of SSS. Sinusregel: AAS, ASA of SSA."
-     },
-     {
       "v": "Wat is de helling van een loodlijn op rc = 2?",
       "o": [
        "rc = −½",
@@ -17703,17 +16800,6 @@ var VAKKEN = [
       ],
       "c": 0,
       "u": "Loodrecht: rc₁ × rc₂ = −1. Dus rc₂ = −1/2. Steile lijn → loodlijn is bijna plat."
-     },
-     {
-      "v": "Wat is de standaardvorm van een cirkelvergelijking?",
-      "o": [
-       "(x−a)²+(y−b)²=r² met middelpunt (a,b) en straal r",
-       "x²+y²=r",
-       "ax+by=r",
-       "(x+a)+(y+b)=r²"
-      ],
-      "c": 0,
-      "u": "Middelpunt M(a,b), straal r. Algemene vorm omschrijven via kwadraat aanvullen. Let op het teken: min in de formule geeft de coördinaat."
      },
      {
       "v": "Wat betekent het als het inwendig product van twee vectoren nul is?",
@@ -17738,17 +16824,6 @@ var VAKKEN = [
       "u": "SOH-CAH-TOA: Sin=O/H, Cos=A/H, Tan=O/A. Alleen toepasbaar in rechthoekige driehoeken."
      },
      {
-      "v": "Hoe bereken je het middelpunt van lijnstuk AB?",
-      "o": [
-       "M = gemiddelde van beide coördinaten",
-       "M = verschil van de coördinaten",
-       "M = product van de coördinaten",
-       "M = som van de coördinaten"
-      ],
-      "c": 0,
-      "u": "M = ((x₁+x₂)/2, (y₁+y₂)/2). Handig bij middelloodlijn of als controlepunt."
-     },
-     {
       "v": "Wanneer gebruik je de sinusregel?",
       "o": [
        "Bij AAS, ASA of twee zijden + overstaande hoek",
@@ -17769,6 +16844,50 @@ var VAKKEN = [
       ],
       "c": 0,
       "u": "Invullen: uitkomst = r² → op de cirkel. Kleiner → binnen. Groter → buiten."
+     },
+     {
+      "v": "Wanneer gebruik je de cosinusregel?",
+      "o": [
+       "Bij SAS of SSS (twee zijden + ingesloten hoek of drie zijden)",
+       "Bij AAS of ASA (twee hoeken + zijde)",
+       "Alleen in rechthoekige driehoeken",
+       "Bij twee zijden en overstaande hoek"
+      ],
+      "c": 0,
+      "u": "Cosinusregel: a² = b²+c²−2bc·cos A. SAS of SSS. Sinusregel: AAS, ASA of SSA."
+     },
+     {
+      "v": "Wat is de standaardvorm van een cirkelvergelijking?",
+      "o": [
+       "(x−a)²+(y−b)²=r² met middelpunt (a,b) en straal r",
+       "x²+y²=r",
+       "ax+by=r",
+       "(x+a)+(y+b)=r²"
+      ],
+      "c": 0,
+      "u": "Middelpunt M(a,b), straal r. Algemene vorm omschrijven via kwadraat aanvullen. Let op het teken: min in de formule geeft de coördinaat."
+     },
+     {
+      "v": "Hoe bereken je de afstand tussen twee punten?",
+      "o": [
+       "Wortel van kwadratensom der verschillen",
+       "Som van absolute waarden der verschillen",
+       "Product van de coördinatenverschillen",
+       "Gemiddelde van de coördinaten"
+      ],
+      "c": 0,
+      "u": "d = √((x₂−x₁)²+(y₂−y₁)²). Volgt uit Pythagoras: de x- en y-verschillen zijn de rechthoekszijden."
+     },
+     {
+      "v": "Hoe bereken je het middelpunt van lijnstuk AB?",
+      "o": [
+       "M = gemiddelde van beide coördinaten",
+       "M = verschil van de coördinaten",
+       "M = product van de coördinaten",
+       "M = som van de coördinaten"
+      ],
+      "c": 0,
+      "u": "M = ((x₁+x₂)/2, (y₁+y₂)/2). Handig bij middelloodlijn of als controlepunt."
      }
     ],
     "oe": [
@@ -17823,28 +16942,6 @@ var VAKKEN = [
     "sam": "<div class=\"sam-head\">Afgeleide en hellingsgetal</div><ul><li><strong>Afgeleide f'(x)</strong>: geeft de helling van de raaklijn in elk punt x. Positief: stijgend. Negatief: dalend. Nul: horizontale raaklijn (mogelijk extremum).</li><li><strong>Differentieerregels</strong>: (xⁿ)' = n·xⁿ⁻¹. (c·f)' = c·f'. (f ± g)' = f' ± g'. (sin x)' = cos x. (cos x)' = −sin x. (eˣ)' = eˣ. (ln x)' = 1/x.</li><li><strong>Kettingregel</strong>: (f(g(x)))' = f'(g(x)) · g'(x). Voorbeeld: (sin(3x))' = cos(3x) · 3.</li><li><strong>Gemiddelde vs. momentane verandering</strong>: gemiddeld = (f(b)−f(a))/(b−a) over een interval. Momentaan = f'(x) in één punt.</li></ul><div class=\"sam-head\">Raaklijn en extremen</div><ul><li><strong>Raaklijn</strong> in (a, f(a)): <span class=\"fm\">y = f'(a)·(x − a) + f(a)</span>. Helling = f'(a).</li><li><strong>Extremen vinden</strong>: stel f'(x) = 0 en bepaal tekenwisseling. f' van + naar − → maximum. f' van − naar + → minimum.</li><li><strong>Tweede afgeleide test</strong>: f'(a) = 0 én f''(a) &lt; 0 → maximum. f''(a) &gt; 0 → minimum. f''(a) = 0 → gebruik tekenschema van f'.</li><li><strong>Buigpunt</strong>: f''(x) = 0 én f'' wisselt van teken.</li></ul><div class=\"sam-head\">Optimaliseren en toepassingen</div><ul><li><strong>Optimalisatieprobleem</strong>: (1) stel een formule op voor de te optimaliseren grootheid. (2) Differentieer. (3) Stel f'(x) = 0 en los op. (4) Controleer of het een max of min is. (5) Bereken de gevraagde waarde.</li><li><strong>Toepassingen in modellen</strong>: kosten/winst (maximale winst), geometrie (minimaal materiaal), beweging (maximale snelheid). Altijd de context controleren: heeft de gevonden waarde zin in het domein van het model?</li><li><strong>Stijgend/dalend</strong>: f'(x) &gt; 0 = stijgend interval. f'(x) &lt; 0 = dalend interval. Toenemend stijgend: f' &gt; 0 én f'' &gt; 0. Afnemend stijgend: f' &gt; 0 én f'' &lt; 0.</li></ul>",
     "sv": [
      {
-      "v": "Wat is een buigpunt van een functie en hoe herken je het?",
-      "o": [
-       "Een punt waar de kromming van richting verandert: f''(x) = 0 en wisselt van teken",
-       "Een punt waar f'(x) = 0: dit geeft een maximum, minimum of zadelpunt",
-       "Het extremum: het punt met de hoogste of laagste y-waarde van de grafiek",
-       "Een nulpunt: het punt waar de grafiek de x-as kruist bij y = 0"
-      ],
-      "c": 0,
-      "u": "Buigpunt (inflectiepunt): de grafiek verandert van hol naar bol of omgekeerd. Kandidaat-buigpunten: f''(x) = 0. Echte buigpunten: f'' wisselt van teken. Let op: f''(x) = 0 is noodzakelijk maar niet voldoende."
-     },
-     {
-      "v": "Hoe vind je een maximum of minimum van een functie?",
-      "o": [
-       "Stel f'(x) = 0 en controleer tekenwissels: van + naar min is max, van min naar + is min",
-       "Bereken f(0): dit geeft de y-waarde bij het snijpunt met de y-as",
-       "Stel f(x) = 0: dit geeft de nulpunten, niet de extremen van de functie",
-       "Stel f''(x) = 0: dit geeft buigpunten, niet per se extremen"
-      ],
-      "c": 0,
-      "u": "f'(x) = 0 geeft de x-waarden van mogelijke extremen. Tekenwissel van f' bepaalt of het een max of min is. Alternatief: f''(x) kleiner dan 0 bij x is maximum."
-     },
-     {
       "v": "Wat is de vergelijking van de raaklijn aan f(x) in het punt x = a?",
       "o": [
        "y = f'(a)·(x min a) + f(a)",
@@ -17856,17 +16953,6 @@ var VAKKEN = [
       "u": "De raaklijn heeft helling f'(a) en gaat door het punt (a, f(a)). Invullen in de lijnvergelijking y - f(a) = f'(a)(x - a) geeft het antwoord."
      },
      {
-      "v": "Wat betekent toenemend stijgend?",
-      "o": [
-       "f'(x) > 0 en f''(x) > 0: de functie stijgt en de stijging versnelt",
-       "f'(x) < 0 en f''(x) < 0: de functie daalt en de daling versnelt (toenemend dalend)",
-       "f'(x) > 0 en f''(x) = 0: de functie stijgt met een constant tempo (lineair)",
-       "f'(x) > 0 en f''(x) < 0: de functie stijgt maar de stijging vertraagt (afnemend stijgend)"
-      ],
-      "c": 0,
-      "u": "Toenemend stijgend: f' positief (stijgend) en f'' positief (de stijging neemt toe). De grafiek buigt omhoog. Afnemend stijgend: f' positief maar f'' negatief (stijging vlakt af)."
-     },
-     {
       "v": "Wat is de kettingregel?",
       "o": [
        "f(g(x))′ = f′(g(x))·g′(x): buitenste differentiëren, binnenste laten staan, maal afg. binnenste",
@@ -17876,6 +16962,39 @@ var VAKKEN = [
       ],
       "c": 0,
       "u": "Kettingregel: buitenste functie differentiëren, binnenste laten staan, vermenigvuldigen met de afgeleide van de binnenste. Voorbeeld: (sin(3x))' = cos(3x)·3."
+     },
+     {
+      "v": "Wat is de afgeleide van een constante functie f(x) = 5?",
+      "o": [
+       "0",
+       "5",
+       "1",
+       "−5"
+      ],
+      "c": 0,
+      "u": "Een constante verandert niet, dus de helling is overal 0. Algemeen: (c)' = 0."
+     },
+     {
+      "v": "Wat is de afgeleide van sin(x)?",
+      "o": [
+       "cos(x)",
+       "−cos(x)",
+       "−sin(x)",
+       "tan(x)"
+      ],
+      "c": 0,
+      "u": "(sin x)' = cos x. (cos x)' = −sin x. Standaard afleidingen die je uit het hoofd moet kennen."
+     },
+     {
+      "v": "Wat is de afgeleide van f(x) = ln(x)?",
+      "o": [
+       "1/x",
+       "ln(x)",
+       "x",
+       "e^x"
+      ],
+      "c": 0,
+      "u": "(ln x)' = 1/x voor x > 0. Standaard afleiding. ln is de natuurlijke logaritme met grondtal e."
      },
      {
       "v": "Wat stelt de afgeleide f'(x) voor op een grafiek?",
@@ -17900,28 +17019,6 @@ var VAKKEN = [
       "u": "Gemiddelde verandering = (f(b)−f(a))/(b−a). Momentaan = limiet hiervan als het interval naar 0 gaat = f'(x)."
      },
      {
-      "v": "Wat is de afgeleide van een constante functie f(x) = 5?",
-      "o": [
-       "0",
-       "5",
-       "1",
-       "−5"
-      ],
-      "c": 0,
-      "u": "Een constante verandert niet, dus de helling is overal 0. Algemeen: (c)' = 0."
-     },
-     {
-      "v": "Wanneer is een functie stijgend?",
-      "o": [
-       "Als f'(x) > 0 op dat interval",
-       "Als f'(x) < 0",
-       "Als f'(x) = 0",
-       "Als f''(x) > 0"
-      ],
-      "c": 0,
-      "u": "f'(x) > 0: stijgend. f'(x) < 0: dalend. f'(x) = 0: horizontale raaklijn, mogelijk een extremum of buigpunt."
-     },
-     {
       "v": "Hoe herken je een maximum met de tweede-afgeleide test?",
       "o": [
        "f'(a) = 0 én f''(a) < 0: bergparabool-achtig, dus maximum",
@@ -17944,28 +17041,6 @@ var VAKKEN = [
       "u": "Buigpunt: kromming wisselt. f''(x) = 0 is noodzakelijk maar niet voldoende: ook tekenwisseling van f'' vereist."
      },
      {
-      "v": "Wat betekent afnemend stijgend?",
-      "o": [
-       "f'(x) > 0 én f''(x) < 0: de functie stijgt maar de stijging vertraagt",
-       "f'(x) > 0 én f''(x) > 0",
-       "f'(x) < 0 én f''(x) < 0",
-       "f'(x) = 0"
-      ],
-      "c": 0,
-      "u": "Afnemend stijgend: grafiek stijgt maar buigt omlaag (concaaf omlaag). Vlak voor een maximum zie je dit patroon."
-     },
-     {
-      "v": "Wat is de afgeleide van sin(x)?",
-      "o": [
-       "cos(x)",
-       "−cos(x)",
-       "−sin(x)",
-       "tan(x)"
-      ],
-      "c": 0,
-      "u": "(sin x)' = cos x. (cos x)' = −sin x. Standaard afleidingen die je uit het hoofd moet kennen."
-     },
-     {
       "v": "Wat is de afgeleide van eˣ?",
       "o": [
        "eˣ (dezelfde functie)",
@@ -17975,61 +17050,6 @@ var VAKKEN = [
       ],
       "c": 0,
       "u": "eˣ is de enige functie die zijn eigen afgeleide is. (eˣ)' = eˣ. Bijzondere eigenschap van het getal e."
-     },
-     {
-      "v": "Hoe gebruik je de afgeleide bij een optimalisatieprobleem?",
-      "o": [
-       "Stel een formule op, differentieer, stel f'(x) = 0 en controleer of het een max of min is",
-       "Neem de tweede afgeleide direct",
-       "Zoek de nulpunten van f(x)",
-       "Gebruik de abc-formule"
-      ],
-      "c": 0,
-      "u": "Stappen: (1) stel formule op, (2) differentieer, (3) f'(x) = 0 oplossen, (4) max of min bepalen via teken of f''."
-     },
-     {
-      "v": "Wat is het verschil tussen een lokaal en een globaal maximum?",
-      "o": [
-       "Lokaal: hoogste punt in de buurt. Globaal: hoogste punt van de hele functie.",
-       "Ze zijn hetzelfde",
-       "Globaal is altijd een lokaal maximum",
-       "Lokaal maximum bestaat niet"
-      ],
-      "c": 0,
-      "u": "Een functie kan meerdere lokale maxima hebben. Het globale maximum is de grootste waarde over het hele domein."
-     },
-     {
-      "v": "Wat is de afgeleide van f(x) = ln(x)?",
-      "o": [
-       "1/x",
-       "ln(x)",
-       "x",
-       "e^x"
-      ],
-      "c": 0,
-      "u": "(ln x)' = 1/x voor x > 0. Standaard afleiding. ln is de natuurlijke logaritme met grondtal e."
-     },
-     {
-      "v": "Wanneer heeft een functie een buigpunt op basis van de tweede afgeleide?",
-      "o": [
-       "Als f''(x) = 0 én f'' van teken wisselt op dat punt",
-       "Als f'(x) = 0",
-       "Als f''(x) > 0",
-       "Als f(x) = 0"
-      ],
-      "c": 0,
-      "u": "f''(x) = 0 is noodzakelijk. Maar controleer ook of f'' echt van teken wisselt — anders is het geen buigpunt."
-     },
-     {
-      "v": "Wat is de helling van de raaklijn aan f in het punt x = a?",
-      "o": [
-       "f'(a): de waarde van de afgeleide in dat punt",
-       "f(a)",
-       "f''(a)",
-       "De discriminant van f"
-      ],
-      "c": 0,
-      "u": "Helling raaklijn = f'(a). Vergelijking raaklijn: y = f'(a)·(x−a) + f(a)."
      }
     ],
     "oe": [
@@ -18087,17 +17107,6 @@ var VAKKEN = [
     "sam": "<div class=\"sam-head\">Analytische meetkunde</div><ul><li><strong>Cirkelvergelijking</strong>: (x − a)² + (y − b)² = r². Middelpunt M(a, b), straal r. Schrijf algemene kwadratische vorm om via kwadraat aanvullen.</li><li><strong>Afstand</strong>: d = √((x₂−x₁)² + (y₂−y₁)²)</li><li><strong>Middelpunt</strong>: M = ((x₁+x₂)/2, (y₁+y₂)/2)</li><li><strong>Helling</strong>: rc = (y₂−y₁)/(x₂−x₁). Loodrechte lijnen: rc₁ × rc₂ = −1.</li><li><strong>Lijn door twee punten</strong>: y − y₁ = rc(x − x₁)</li></ul><div class=\"sam-head\">Goniometrie</div><ul><li><strong>Rechthoekige driehoek</strong>: sin α = overstaande/schuinzijde, cos α = aanliggende/schuinzijde, tan α = overstaande/aanliggende.</li><li><strong>Sinusregel</strong>: a/sin A = b/sin B = c/sin C. Gebruik bij twee hoeken + zijde, of twee zijden + overstaande hoek.</li><li><strong>Cosinusregel</strong>: a² = b² + c² − 2bc·cos A. Gebruik bij drie zijden (SSS) of twee zijden + ingesloten hoek (SAS).</li><li><strong>Goniometrische functies</strong>: y = a·sin(bx + c) + d. Amplitude = |a|, periode = 2π/b, horizontale verschuiving = −c/b, verticale verschuiving = d.</li></ul><div class=\"sam-head\">Vectoren</div><ul><li><strong>Vector</strong>: pijl met richting én grootte. Notatie →a = (a₁, a₂).</li><li><strong>Optelling</strong>: →a + →b = (a₁+b₁, a₂+b₂). Grafisch: kop-op-staart.</li><li><strong>Grootte</strong>: |→a| = √(a₁² + a₂²).</li><li><strong>Inwendig product</strong>: →a · →b = a₁b₁ + a₂b₂. Als →a · →b = 0 dan staan de vectoren loodrecht op elkaar.</li></ul>",
     "sv": [
      {
-      "v": "Wat is de cirkelvergelijking met middelpunt (2, -3) en straal 5?",
-      "o": [
-       "(x-2)² + (y+3)² = 25",
-       "(x+2)² + (y-3)² = 25",
-       "(x-2)² + (y-3)² = 5",
-       "x² + y² = 25"
-      ],
-      "c": 0,
-      "u": "Cirkelvergelijking: (x-a)² + (y-b)² = r². Middelpunt (2,-3): (x-2)² + (y+3)² = 25. Let op het teken: min -3 wordt +3."
-     },
-     {
       "v": "Wat geeft de grootte van een vector aan en hoe noteer je die?",
       "o": [
        "|→a| = wortel(a₁² + a₂²): de Euclidische lengte, afstand van oorsprong tot eindpunt",
@@ -18109,17 +17118,6 @@ var VAKKEN = [
       "u": "Grootte |→a| van vector (a₁, a₂) = wortel(a₁² + a₂²). Volgt uit de stelling van Pythagoras: a₁ en a₂ zijn de rechthoekszijden. Een eenheidsvector heeft grootte 1."
      },
      {
-      "v": "Wanneer gebruik je de cosinusregel?",
-      "o": [
-       "Bij drie bekende zijden (SSS) of twee zijden en de ingesloten hoek (SAS)",
-       "Bij twee hoeken en een zijde (AAS of ASA)",
-       "Alleen in rechthoekige driehoeken",
-       "Bij twee zijden en een overstaande hoek"
-      ],
-      "c": 0,
-      "u": "Cosinusregel: a² = b² + c² − 2bc·cos A. SSS of SAS. Sinusregel gebruik je bij AAS/ASA of twee zijden + overstaande hoek (SSA). In rechthoekige driehoek ook gewoon Pythagoras."
-     },
-     {
       "v": "Twee vectoren zijn loodrecht op elkaar. Wat geldt dan voor hun inwendig product?",
       "o": [
        "Het inwendig product is 0",
@@ -18129,28 +17127,6 @@ var VAKKEN = [
       ],
       "c": 0,
       "u": "→a · →b = a₁b₁ + a₂b₂ = 0 ↔ loodrecht. Inwendig product = 0 is het criterium voor loodrechtheid. Handig om te controleren of twee richtingsvectoren van lijnen haaks staan."
-     },
-     {
-      "v": "Wat is de amplitude van y = 3·sin(2x) + 1?",
-      "o": [
-       "3, de absolute waarde van de factor vóór de sinus",
-       "1, de verticale verschuiving",
-       "2, de factor voor x",
-       "6, want 3 × 2 = 6"
-      ],
-      "c": 0,
-      "u": "y = a·sin(bx+c)+d: amplitude = |a| = 3, periode = 2π/b = π, verticale verschuiving = d = 1."
-     },
-     {
-      "v": "Wat geeft de richtingscoëfficiënt (rc) van een lijn aan en wat betekent rc = 0?",
-      "o": [
-       "rc = Δy/Δx: de steilheid, verandering van y per eenheid x. rc = 0 is horizontaal",
-       "b in y = ax + b: de y-waarde bij x = 0, het snijpunt met de y-as",
-       "Het nulpunt in y = ax + b: de x-waarde bij y = 0, het snijpunt met de x-as",
-       "De afstand via Pythagoras: wortel((x₂−x₁)² + (y₂−y₁)²) tussen twee punten"
-      ],
-      "c": 0,
-      "u": "Richtingscoëfficiënt = steilheid. Formule: rc = (y₂ − y₁) / (x₂ − x₁). Positief: stijgend. Negatief: dalend. rc = 0: horizontaal. Niet gedefinieerd: verticale lijn. Loodrechte lijnen: rc₁ × rc₂ = −1."
      },
      {
       "v": "Lijn l heeft rc = 3. Wat is de helling van een loodrechte lijn op l?",
@@ -18274,50 +17250,6 @@ var VAKKEN = [
       "u": "Inwendig product = 0 ↔ loodrecht. Positief: scherpe hoek. Negatief: stompe hoek."
      },
      {
-      "v": "Wat is het verschil tussen sin, cos en tan in een rechthoekige driehoek?",
-      "o": [
-       "sin = overstaande/schuinzijde, cos = aanliggende/schuinzijde, tan = overstaande/aanliggende",
-       "sin = aanliggende/schuinzijde, cos = overstaande/schuinzijde",
-       "tan = schuinzijde/overstaande",
-       "sin = overstaande/aanliggende"
-      ],
-      "c": 0,
-      "u": "Ezelsbruggetje: SOH-CAH-TOA. Sin=O/H, Cos=A/H, Tan=O/A. Alleen toepasbaar in rechthoekige driehoeken."
-     },
-     {
-      "v": "Wanneer gebruik je de cosinusregel in plaats van de sinusregel?",
-      "o": [
-       "Bij drie bekende zijden (SSS) of twee zijden + ingesloten hoek (SAS)",
-       "Bij twee hoeken + een zijde",
-       "Altijd in rechthoekige driehoeken",
-       "Bij twee zijden + overstaande hoek"
-      ],
-      "c": 0,
-      "u": "Cosinusregel: SAS of SSS. Sinusregel: AAS, ASA of SSA. In rechthoekige driehoeken kun je ook Pythagoras gebruiken."
-     },
-     {
-      "v": "Wat is een richtingsvector van een lijn?",
-      "o": [
-       "Een vector evenwijdig aan de lijn die de richting aangeeft",
-       "Een vector loodrecht op de lijn",
-       "Het middelpunt van het lijnstuk",
-       "De helling van de lijn"
-      ],
-      "c": 0,
-      "u": "Richtingsvector →d = (dx, dy). Helling rc = dy/dx. Loodrechte richtingsvector: (−dy, dx)."
-     },
-     {
-      "v": "Hoe schrijf je x² + y² − 4x + 6y − 3 = 0 om naar standaardvorm?",
-      "o": [
-       "Kwadraat aanvullen voor x en y afzonderlijk",
-       "Discriminant berekenen",
-       "Beide leden door 2 delen",
-       "Nulpunten bepalen"
-      ],
-      "c": 0,
-      "u": "Kwadraat aanvullen: (x²−4x+4) + (y²+6y+9) = 3+4+9 = 16. Standaardvorm: (x−2)²+(y+3)²=16. Middelpunt (2,−3), r=4."
-     },
-     {
       "v": "Wat is het middelpunt van het lijnstuk van A(x₁,y₁) naar B(x₂,y₂)?",
       "o": [
        "M = ((x₁+x₂)/2 , (y₁+y₂)/2)",
@@ -18327,17 +17259,6 @@ var VAKKEN = [
       ],
       "c": 0,
       "u": "Middelpunt = gemiddelde van de coördinaten. Afstand: d = √((x₂−x₁)²+(y₂−y₁)²)."
-     },
-     {
-      "v": "Wat is de faseverschuiving in y = sin(x − π/4)?",
-      "o": [
-       "De grafiek verschuift π/4 naar rechts",
-       "De grafiek verschuift π/4 naar links",
-       "De amplitude wordt π/4",
-       "De periode wordt π/4"
-      ],
-      "c": 0,
-      "u": "f(x − c): horizontaal c naar rechts. f(x + c): naar links. Faseverschuiving = −c/b bij y = a·sin(bx+c)+d."
      }
     ],
     "oe": [
