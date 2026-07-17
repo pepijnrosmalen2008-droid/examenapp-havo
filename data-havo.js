@@ -163,33 +163,105 @@ var VAKKEN = [
      {
       "v": "Wat betekent «Hoofdgedachte»?",
       "o": [
+       "informatief of overtuigend",
+       "formeel, foutloos, helder",
        "de kernboodschap in één zin",
-       "het standpunt herhalen als argument",
-       "volg de volgorde van de tekst",
-       "objectieve weergave van sociale misstanden en armoede; milieu bepaalt de mens"
+       "volg de volgorde van de tekst"
+      ],
+      "c": 2,
+      "u": "«Hoofdgedachte» betekent: de kernboodschap in één zin.",
+      "d": 1
+     },
+     {
+      "v": "Welk begrip hoort bij deze omschrijving: \"de kernboodschap in één zin\"?",
+      "o": [
+       "Hoofdgedachte",
+       "Non-verbaal",
+       "Stromingen",
+       "Personaal (hij/zij)"
       ],
       "c": 0,
-      "u": "«Hoofdgedachte» betekent: de kernboodschap in één zin.",
+      "u": "Het juiste begrip is «Hoofdgedachte»: de kernboodschap in één zin.",
+      "d": 2
+     },
+     {
+      "v": "Welke term past bij: \"de kernboodschap in één zin\"?",
+      "o": [
+       "Oorzaak-gevolg",
+       "Tegenstelling",
+       "Alineaverband",
+       "Hoofdgedachte"
+      ],
+      "c": 3,
+      "u": "Het juiste begrip is «Hoofdgedachte»: de kernboodschap in één zin.",
+      "d": 3
+     },
+     {
+      "v": "Wat betekent «Tekstverbanden»?",
+      "o": [
+       "inleiding, kern, slot",
+       "oorzaak-gevolg, tegenstelling, opsomming…",
+       "terugkerend element vs. onderwerp",
+       "je mening veranderenbetoog, opinie"
+      ],
+      "c": 1,
+      "u": "«Tekstverbanden» betekent: oorzaak-gevolg, tegenstelling, opsomming….",
       "d": 1
      },
      {
       "v": "Welk begrip hoort bij deze omschrijving: \"oorzaak-gevolg, tegenstelling, opsomming…\"?",
       "o": [
-       "Autoriteit",
-       "Eigen woorden",
+       "Toelichting/voorbeeld",
+       "Spreekdoel",
        "Tekstverbanden",
-       "Conclusie/samenvatting"
+       "Stelling & argumenten"
       ],
       "c": 2,
       "u": "Het juiste begrip is «Tekstverbanden»: oorzaak-gevolg, tegenstelling, opsomming….",
       "d": 2
      },
      {
+      "v": "Welke term past bij: \"oorzaak-gevolg, tegenstelling, opsomming…\"?",
+      "o": [
+       "Oorzaak-gevolg",
+       "Activeren",
+       "Tekstverbanden",
+       "Conclusie/samenvatting"
+      ],
+      "c": 2,
+      "u": "Het juiste begrip is «Tekstverbanden»: oorzaak-gevolg, tegenstelling, opsomming….",
+      "d": 3
+     },
+     {
+      "v": "Wat betekent «Signaalwoorden»?",
+      "o": [
+       "wijzen het verband aan",
+       "met \"als\"/\"zoals\"zo sterk als een beer",
+       "realisme, naturalisme, modernisme",
+       "verteller is personage (\"ik\"); beperkt tot eigen ervaring"
+      ],
+      "c": 0,
+      "u": "«Signaalwoorden» betekent: wijzen het verband aan.",
+      "d": 1
+     },
+     {
       "v": "Welk begrip hoort bij deze omschrijving: \"wijzen het verband aan\"?",
       "o": [
+       "Signaalwoorden",
+       "Cirkelredenering",
+       "Non-verbaal",
+       "Hoofdgedachte"
+      ],
+      "c": 0,
+      "u": "Het juiste begrip is «Signaalwoorden»: wijzen het verband aan.",
+      "d": 2
+     },
+     {
+      "v": "Welke term past bij: \"wijzen het verband aan\"?",
+      "o": [
        "Informeren",
-       "Tekstverbanden",
-       "Voorwaarde",
+       "Tekstdoel",
+       "Toelichting/voorbeeld",
        "Signaalwoorden"
       ],
       "c": 3,
@@ -199,69 +271,213 @@ var VAKKEN = [
      {
       "v": "Wat betekent «Tekstdoel»?",
       "o": [
+       "houding, oogcontact, stem",
+       "je valt de persoon aan i.p.v. het argument",
        "informeren, overtuigen, activeren…",
-       "voorbeeld, autoriteit, gevolg, vergelijking",
-       "hoofdzaken houden, bijzaken schrappen",
-       "inleiding, kern, slot"
+       "realisme, naturalisme, modernisme"
+      ],
+      "c": 2,
+      "u": "«Tekstdoel» betekent: informeren, overtuigen, activeren….",
+      "d": 1
+     },
+     {
+      "v": "Welk begrip hoort bij deze omschrijving: \"informeren, overtuigen, activeren…\"?",
+      "o": [
+       "Tekstdoel",
+       "Metafoor",
+       "Verbanden",
+       "Argument"
       ],
       "c": 0,
-      "u": "«Tekstdoel» betekent: informeren, overtuigen, activeren….",
+      "u": "Het juiste begrip is «Tekstdoel»: informeren, overtuigen, activeren….",
+      "d": 2
+     },
+     {
+      "v": "Welke term past bij: \"informeren, overtuigen, activeren…\"?",
+      "o": [
+       "Hoofdgedachte",
+       "Tekstdoel",
+       "Informeren",
+       "Opsomming"
+      ],
+      "c": 1,
+      "u": "Het juiste begrip is «Tekstdoel»: informeren, overtuigen, activeren….",
+      "d": 3
+     },
+     {
+      "v": "Wat betekent «Alineaverband»?",
+      "o": [
+       "de gevolgen van iets",
+       "kortom, dus, al met al",
+       "inleiding, kern, slot",
+       "rol van een alinea in de tekst"
+      ],
+      "c": 3,
+      "u": "«Alineaverband» betekent: rol van een alinea in de tekst.",
       "d": 1
      },
      {
       "v": "Welk begrip hoort bij deze omschrijving: \"rol van een alinea in de tekst\"?",
       "o": [
+       "Tekstverbanden",
+       "Stromingen",
        "Alineaverband",
-       "Beschouwing",
-       "Personificatie",
-       "Woordenlimiet"
+       "Oorzaak-gevolg"
       ],
-      "c": 0,
+      "c": 2,
       "u": "Het juiste begrip is «Alineaverband»: rol van een alinea in de tekst.",
       "d": 2
      },
      {
-      "v": "Welk begrip hoort bij deze omschrijving: \"iets laten wetennieuwsbericht, uitleg\"?",
+      "v": "Welke term past bij: \"rol van een alinea in de tekst\"?",
       "o": [
-       "Conclusie/samenvatting",
-       "Voorwaarde",
-       "Informeren",
-       "Overtuigen"
+       "Amuseren",
+       "Oorzaak-gevolg",
+       "Alineaverband",
+       "Conclusie/samenvatting"
       ],
       "c": 2,
+      "u": "Het juiste begrip is «Alineaverband»: rol van een alinea in de tekst.",
+      "d": 3
+     },
+     {
+      "v": "Wat betekent «Informeren»?",
+      "o": [
+       "iets laten wetennieuwsbericht, uitleg",
+       "overtuigenverdedigt één standpunt met argumenten",
+       "argument + weerlegging",
+       "experiment; stream of consciousness"
+      ],
+      "c": 0,
+      "u": "«Informeren» betekent: iets laten wetennieuwsbericht, uitleg.",
+      "d": 1
+     },
+     {
+      "v": "Welk begrip hoort bij deze omschrijving: \"iets laten wetennieuwsbericht, uitleg\"?",
+      "o": [
+       "Stromingen",
+       "Metafoor",
+       "Informeren",
+       "Autoriteitsdrogreden"
+      ],
+      "c": 2,
+      "u": "Het juiste begrip is «Informeren»: iets laten wetennieuwsbericht, uitleg.",
+      "d": 2
+     },
+     {
+      "v": "Welke term past bij: \"iets laten wetennieuwsbericht, uitleg\"?",
+      "o": [
+       "Tekstdoel",
+       "Informeren",
+       "Activeren",
+       "Hoofdgedachte"
+      ],
+      "c": 1,
       "u": "Het juiste begrip is «Informeren»: iets laten wetennieuwsbericht, uitleg.",
       "d": 3
      },
      {
       "v": "Wat betekent «Overtuigen»?",
       "o": [
-       "je iets laten doenoproep, campagne",
-       "je mening veranderenbetoog, opinie",
+       "het standpunt herhalen als argument",
        "een overeenkomstig geval",
-       "experiment; stream of consciousness"
+       "je mening veranderenbetoog, opinie",
+       "de kernboodschap in één zin"
       ],
-      "c": 1,
+      "c": 2,
       "u": "«Overtuigen» betekent: je mening veranderenbetoog, opinie.",
+      "d": 1
+     },
+     {
+      "v": "Welk begrip hoort bij deze omschrijving: \"je mening veranderenbetoog, opinie\"?",
+      "o": [
+       "Naturalisme (eind 19e e.)",
+       "Cirkelredenering",
+       "Overtuigen",
+       "Informeren"
+      ],
+      "c": 2,
+      "u": "Het juiste begrip is «Overtuigen»: je mening veranderenbetoog, opinie.",
+      "d": 2
+     },
+     {
+      "v": "Welke term past bij: \"je mening veranderenbetoog, opinie\"?",
+      "o": [
+       "Overtuigen",
+       "Hoofdgedachte",
+       "Tekstdoel",
+       "Informeren"
+      ],
+      "c": 0,
+      "u": "Het juiste begrip is «Overtuigen»: je mening veranderenbetoog, opinie.",
+      "d": 3
+     },
+     {
+      "v": "Wat betekent «Activeren»?",
+      "o": [
+       "je iets laten doenoproep, campagne",
+       "\"een BN'er zegt het\" — geen echte deskundige",
+       "formeel vs. informeel",
+       "nevenschikkend of onderschikkend"
+      ],
+      "c": 0,
+      "u": "«Activeren» betekent: je iets laten doenoproep, campagne.",
       "d": 1
      },
      {
       "v": "Welk begrip hoort bij deze omschrijving: \"je iets laten doenoproep, campagne\"?",
       "o": [
-       "Hoofdgedachte",
-       "Beschouwing",
        "Activeren",
-       "Toelichting/voorbeeld"
+       "Toelichting/voorbeeld",
+       "Autoriteit",
+       "Overhaaste generalisatie"
       ],
-      "c": 2,
+      "c": 0,
       "u": "Het juiste begrip is «Activeren»: je iets laten doenoproep, campagne.",
       "d": 2
      },
      {
+      "v": "Welke term past bij: \"je iets laten doenoproep, campagne\"?",
+      "o": [
+       "Opsomming",
+       "Activeren",
+       "Alineaverband",
+       "Hoofdgedachte"
+      ],
+      "c": 1,
+      "u": "Het juiste begrip is «Activeren»: je iets laten doenoproep, campagne.",
+      "d": 3
+     },
+     {
+      "v": "Wat betekent «Amuseren»?",
+      "o": [
+       "rol van een alinea in de tekst",
+       "je vermakencolumn, verhaal",
+       "hoofdzaken houden, bijzaken schrappen",
+       "formeel, foutloos, helder"
+      ],
+      "c": 1,
+      "u": "«Amuseren» betekent: je vermakencolumn, verhaal.",
+      "d": 1
+     },
+     {
       "v": "Welk begrip hoort bij deze omschrijving: \"je vermakencolumn, verhaal\"?",
       "o": [
+       "Spreekdoel",
+       "Overhaaste generalisatie",
+       "Register & stijl",
+       "Amuseren"
+      ],
+      "c": 3,
+      "u": "Het juiste begrip is «Amuseren»: je vermakencolumn, verhaal.",
+      "d": 2
+     },
+     {
+      "v": "Welke term past bij: \"je vermakencolumn, verhaal\"?",
+      "o": [
+       "Opsomming",
        "Activeren",
-       "Informeren",
-       "Voorwaarde",
+       "Tekstdoel",
        "Amuseren"
       ],
       "c": 3,
@@ -271,21 +487,57 @@ var VAKKEN = [
      {
       "v": "Wat betekent «Oorzaak-gevolg»?",
       "o": [
+       "bijvoorbeeld, zoals, namelijk",
        "doordat, daardoor, dus, zodat",
-       "oorzaak-gevolg, tegenstelling, opsomming…",
-       "je mening veranderenbetoog, opinie",
-       "het standpunt herhalen als argument"
+       "uit één geval een algemene regel trekken",
+       "houding, oogcontact, stem"
       ],
-      "c": 0,
+      "c": 1,
       "u": "«Oorzaak-gevolg» betekent: doordat, daardoor, dus, zodat.",
+      "d": 1
+     },
+     {
+      "v": "Welk begrip hoort bij deze omschrijving: \"doordat, daardoor, dus, zodat\"?",
+      "o": [
+       "Alinea-opbouw",
+       "Oorzaak-gevolg",
+       "Non-verbaal",
+       "Verteltijd"
+      ],
+      "c": 1,
+      "u": "Het juiste begrip is «Oorzaak-gevolg»: doordat, daardoor, dus, zodat.",
+      "d": 2
+     },
+     {
+      "v": "Welke term past bij: \"doordat, daardoor, dus, zodat\"?",
+      "o": [
+       "Tegenstelling",
+       "Tekstdoel",
+       "Tekstverbanden",
+       "Oorzaak-gevolg"
+      ],
+      "c": 3,
+      "u": "Het juiste begrip is «Oorzaak-gevolg»: doordat, daardoor, dus, zodat.",
+      "d": 3
+     },
+     {
+      "v": "Wat betekent «Tegenstelling»?",
+      "o": [
+       "flashback, vooruitwijzing",
+       "maar, echter, toch, daarentegen",
+       "betoog, beschouwing, uiteenzetting",
+       "iets levenloos krijgt menselijke trekkende wind fluistert"
+      ],
+      "c": 1,
+      "u": "«Tegenstelling» betekent: maar, echter, toch, daarentegen.",
       "d": 1
      },
      {
       "v": "Welk begrip hoort bij deze omschrijving: \"maar, echter, toch, daarentegen\"?",
       "o": [
-       "Verteltijd",
-       "Naturalisme (eind 19e e.)",
-       "Voorwaarde",
+       "Stromingen",
+       "Drogredenen",
+       "Vergelijking",
        "Tegenstelling"
       ],
       "c": 3,
@@ -293,50 +545,158 @@ var VAKKEN = [
       "d": 2
      },
      {
+      "v": "Welke term past bij: \"maar, echter, toch, daarentegen\"?",
+      "o": [
+       "Tekstdoel",
+       "Tegenstelling",
+       "Opsomming",
+       "Informeren"
+      ],
+      "c": 1,
+      "u": "Het juiste begrip is «Tegenstelling»: maar, echter, toch, daarentegen.",
+      "d": 3
+     },
+     {
+      "v": "Wat betekent «Opsomming»?",
+      "o": [
+       "objectieve weergave van sociale misstanden en armoede; milieu bepaalt de mens",
+       "ten eerste, bovendien, ook, daarnaast",
+       "verteller is personage (\"ik\"); beperkt tot eigen ervaring",
+       "flashback, vooruitwijzing"
+      ],
+      "c": 1,
+      "u": "«Opsomming» betekent: ten eerste, bovendien, ook, daarnaast.",
+      "d": 1
+     },
+     {
       "v": "Welk begrip hoort bij deze omschrijving: \"ten eerste, bovendien, ook, daarnaast\"?",
       "o": [
-       "Tekstverbanden",
-       "Tekstdoel",
+       "Signaalwoorden",
+       "Verteltijd",
        "Opsomming",
-       "Alineaverband"
+       "Tekstsoorten"
       ],
       "c": 2,
+      "u": "Het juiste begrip is «Opsomming»: ten eerste, bovendien, ook, daarnaast.",
+      "d": 2
+     },
+     {
+      "v": "Welke term past bij: \"ten eerste, bovendien, ook, daarnaast\"?",
+      "o": [
+       "Tekstdoel",
+       "Alineaverband",
+       "Tekstverbanden",
+       "Opsomming"
+      ],
+      "c": 3,
       "u": "Het juiste begrip is «Opsomming»: ten eerste, bovendien, ook, daarnaast.",
       "d": 3
      },
      {
       "v": "Wat betekent «Voorwaarde»?",
       "o": [
-       "iets laten wetennieuwsbericht, uitleg",
-       "betoog, beschouwing, uiteenzetting",
        "oorzaak-gevolg, tegenstelling, opsomming…",
-       "als, mits, tenzij"
+       "de mening die verdedigd wordt",
+       "als, mits, tenzij",
+       "informeren, overtuigen, activeren…"
       ],
-      "c": 3,
+      "c": 2,
       "u": "«Voorwaarde» betekent: als, mits, tenzij.",
+      "d": 1
+     },
+     {
+      "v": "Welk begrip hoort bij deze omschrijving: \"als, mits, tenzij\"?",
+      "o": [
+       "Spreekdoel",
+       "Voorwaarde",
+       "Autoriteit",
+       "Register"
+      ],
+      "c": 1,
+      "u": "Het juiste begrip is «Voorwaarde»: als, mits, tenzij.",
+      "d": 2
+     },
+     {
+      "v": "Welke term past bij: \"als, mits, tenzij\"?",
+      "o": [
+       "Amuseren",
+       "Voorwaarde",
+       "Tegenstelling",
+       "Activeren"
+      ],
+      "c": 1,
+      "u": "Het juiste begrip is «Voorwaarde»: als, mits, tenzij.",
+      "d": 3
+     },
+     {
+      "v": "Wat betekent «Toelichting/voorbeeld»?",
+      "o": [
+       "doordat, daardoor, dus, zodat",
+       "wijzen het verband aan",
+       "bijvoorbeeld, zoals, namelijk",
+       "een overeenkomstig geval"
+      ],
+      "c": 2,
+      "u": "«Toelichting/voorbeeld» betekent: bijvoorbeeld, zoals, namelijk.",
       "d": 1
      },
      {
       "v": "Welk begrip hoort bij deze omschrijving: \"bijvoorbeeld, zoals, namelijk\"?",
       "o": [
-       "Tekstsoorten",
-       "Verteltijd",
-       "Toelichting/voorbeeld",
-       "Vergelijking"
+       "Alinea-opbouw",
+       "Overhaaste generalisatie",
+       "Argumentatietypen",
+       "Toelichting/voorbeeld"
       ],
-      "c": 2,
+      "c": 3,
       "u": "Het juiste begrip is «Toelichting/voorbeeld»: bijvoorbeeld, zoals, namelijk.",
       "d": 2
      },
      {
+      "v": "Welke term past bij: \"bijvoorbeeld, zoals, namelijk\"?",
+      "o": [
+       "Signaalwoorden",
+       "Activeren",
+       "Amuseren",
+       "Toelichting/voorbeeld"
+      ],
+      "c": 3,
+      "u": "Het juiste begrip is «Toelichting/voorbeeld»: bijvoorbeeld, zoals, namelijk.",
+      "d": 3
+     },
+     {
+      "v": "Wat betekent «Conclusie/samenvatting»?",
+      "o": [
+       "beeld zónder \"als\"een zee van tijd",
+       "kortom, dus, al met al",
+       "terugkerend element vs. onderwerp",
+       "de gevolgen van iets"
+      ],
+      "c": 1,
+      "u": "«Conclusie/samenvatting» betekent: kortom, dus, al met al.",
+      "d": 1
+     },
+     {
       "v": "Welk begrip hoort bij deze omschrijving: \"kortom, dus, al met al\"?",
       "o": [
-       "Amuseren",
-       "Tegenstelling",
+       "Presentatiestructuur",
        "Conclusie/samenvatting",
-       "Activeren"
+       "Verteltijd",
+       "Betoog"
       ],
-      "c": 2,
+      "c": 1,
+      "u": "Het juiste begrip is «Conclusie/samenvatting»: kortom, dus, al met al.",
+      "d": 2
+     },
+     {
+      "v": "Welke term past bij: \"kortom, dus, al met al\"?",
+      "o": [
+       "Overtuigen",
+       "Tegenstelling",
+       "Amuseren",
+       "Conclusie/samenvatting"
+      ],
+      "c": 3,
       "u": "Het juiste begrip is «Conclusie/samenvatting»: kortom, dus, al met al.",
       "d": 3
      }
@@ -562,62 +922,182 @@ var VAKKEN = [
      {
       "v": "Wat betekent «Presentatiestructuur»?",
       "o": [
+       "doordat, daardoor, dus, zodat",
        "inleiding, kern, slot",
-       "informerenlegt neutraal uit",
-       "kortom, dus, al met al",
-       "kernzin + uitwerking"
+       "iets levenloos krijgt menselijke trekkende wind fluistert",
+       "je iets laten doenoproep, campagne"
       ],
-      "c": 0,
+      "c": 1,
       "u": "«Presentatiestructuur» betekent: inleiding, kern, slot.",
+      "d": 1
+     },
+     {
+      "v": "Welk begrip hoort bij deze omschrijving: \"inleiding, kern, slot\"?",
+      "o": [
+       "Modernisme (20e e.)",
+       "Presentatiestructuur",
+       "Selecteren",
+       "Alineaverband"
+      ],
+      "c": 1,
+      "u": "Het juiste begrip is «Presentatiestructuur»: inleiding, kern, slot.",
+      "d": 2
+     },
+     {
+      "v": "Welke term past bij: \"inleiding, kern, slot\"?",
+      "o": [
+       "Spreekdoel",
+       "Presentatiestructuur",
+       "Debat",
+       "Non-verbaal"
+      ],
+      "c": 1,
+      "u": "Het juiste begrip is «Presentatiestructuur»: inleiding, kern, slot.",
+      "d": 3
+     },
+     {
+      "v": "Wat betekent «Spreekdoel»?",
+      "o": [
+       "formeel vs. informeel",
+       "vergelijking, metafoor, personificatie",
+       "informatief of overtuigend",
+       "betoog, beschouwing, uiteenzetting"
+      ],
+      "c": 2,
+      "u": "«Spreekdoel» betekent: informatief of overtuigend.",
       "d": 1
      },
      {
       "v": "Welk begrip hoort bij deze omschrijving: \"informatief of overtuigend\"?",
       "o": [
+       "Amuseren",
+       "Vergelijking",
        "Spreekdoel",
-       "Overhaaste generalisatie",
-       "Modernisme (20e e.)",
-       "Hyperbool"
+       "Vertelperspectief"
       ],
-      "c": 0,
+      "c": 2,
       "u": "Het juiste begrip is «Spreekdoel»: informatief of overtuigend.",
       "d": 2
+     },
+     {
+      "v": "Welke term past bij: \"informatief of overtuigend\"?",
+      "o": [
+       "Non-verbaal",
+       "Register",
+       "Spreekdoel",
+       "Presentatiestructuur"
+      ],
+      "c": 2,
+      "u": "Het juiste begrip is «Spreekdoel»: informatief of overtuigend.",
+      "d": 3
+     },
+     {
+      "v": "Wat betekent «Register»?",
+      "o": [
+       "overtuigenverdedigt één standpunt met argumenten",
+       "verteller weet alles, ook gedachten van iedereen",
+       "experiment; stream of consciousness",
+       "formeel vs. informeel"
+      ],
+      "c": 3,
+      "u": "«Register» betekent: formeel vs. informeel.",
+      "d": 1
      },
      {
       "v": "Welk begrip hoort bij deze omschrijving: \"formeel vs. informeel\"?",
       "o": [
        "Debat",
-       "Spreekdoel",
        "Register",
-       "Non-verbaal"
+       "Eigen woorden",
+       "Verbanden"
       ],
-      "c": 2,
+      "c": 1,
+      "u": "Het juiste begrip is «Register»: formeel vs. informeel.",
+      "d": 2
+     },
+     {
+      "v": "Welke term past bij: \"formeel vs. informeel\"?",
+      "o": [
+       "Non-verbaal",
+       "Presentatiestructuur",
+       "Debat",
+       "Register"
+      ],
+      "c": 3,
       "u": "Het juiste begrip is «Register»: formeel vs. informeel.",
       "d": 3
      },
      {
       "v": "Wat betekent «Non-verbaal»?",
       "o": [
+       "doordat, daardoor, dus, zodat",
        "houding, oogcontact, stem",
-       "mening van een deskundige",
-       "mening + onderbouwing",
-       "maar, echter, toch, daarentegen"
+       "bijvoorbeeld, zoals, namelijk",
+       "inleiding, kern, slot"
+      ],
+      "c": 1,
+      "u": "«Non-verbaal» betekent: houding, oogcontact, stem.",
+      "d": 1
+     },
+     {
+      "v": "Welk begrip hoort bij deze omschrijving: \"houding, oogcontact, stem\"?",
+      "o": [
+       "Structuur",
+       "Woordenlimiet",
+       "Autoriteit",
+       "Non-verbaal"
+      ],
+      "c": 3,
+      "u": "Het juiste begrip is «Non-verbaal»: houding, oogcontact, stem.",
+      "d": 2
+     },
+     {
+      "v": "Welke term past bij: \"houding, oogcontact, stem\"?",
+      "o": [
+       "Spreekdoel",
+       "Non-verbaal",
+       "Register",
+       "Debat"
+      ],
+      "c": 1,
+      "u": "Het juiste begrip is «Non-verbaal»: houding, oogcontact, stem.",
+      "d": 3
+     },
+     {
+      "v": "Wat betekent «Debat»?",
+      "o": [
+       "argument + weerlegging",
+       "argumenten die niet deugen",
+       "je mening veranderenbetoog, opinie",
+       "verteller weet alles, ook gedachten van iedereen"
       ],
       "c": 0,
-      "u": "«Non-verbaal» betekent: houding, oogcontact, stem.",
+      "u": "«Debat» betekent: argument + weerlegging.",
       "d": 1
      },
      {
       "v": "Welk begrip hoort bij deze omschrijving: \"argument + weerlegging\"?",
       "o": [
+       "Overtuigen",
+       "Metafoor",
        "Debat",
-       "Vergelijking",
-       "Tekstverbanden",
-       "Voorwaarde"
+       "Spreekdoel"
       ],
-      "c": 0,
+      "c": 2,
       "u": "Het juiste begrip is «Debat»: argument + weerlegging.",
       "d": 2
+     },
+     {
+      "v": "Welke term past bij: \"argument + weerlegging\"?",
+      "o": [
+       "Non-verbaal",
+       "Debat",
+       "Presentatiestructuur",
+       "Register"
+      ],
+      "c": 1,
+      "u": "Het juiste begrip is «Debat»: argument + weerlegging.",
+      "d": 3
      }
     ],
     "oe": [
@@ -770,45 +1250,117 @@ var VAKKEN = [
      {
       "v": "Wat betekent «Tekstsoorten»?",
       "o": [
-       "met \"als\"/\"zoals\"zo sterk als een beer",
-       "je valt de persoon aan i.p.v. het argument",
+       "als, mits, tenzij",
+       "iets laten wetennieuwsbericht, uitleg",
        "betoog, beschouwing, uiteenzetting",
-       "laten nadenkenbelicht meerdere kanten, weegt af"
+       "houding, oogcontact, stem"
       ],
       "c": 2,
       "u": "«Tekstsoorten» betekent: betoog, beschouwing, uiteenzetting.",
       "d": 1
      },
      {
+      "v": "Welk begrip hoort bij deze omschrijving: \"betoog, beschouwing, uiteenzetting\"?",
+      "o": [
+       "Informeren",
+       "Tekstsoorten",
+       "Argument",
+       "Overtuigen"
+      ],
+      "c": 1,
+      "u": "Het juiste begrip is «Tekstsoorten»: betoog, beschouwing, uiteenzetting.",
+      "d": 2
+     },
+     {
+      "v": "Welke term past bij: \"betoog, beschouwing, uiteenzetting\"?",
+      "o": [
+       "Tekstsoorten",
+       "Alinea-opbouw",
+       "Structuur",
+       "Betoog"
+      ],
+      "c": 0,
+      "u": "Het juiste begrip is «Tekstsoorten»: betoog, beschouwing, uiteenzetting.",
+      "d": 3
+     },
+     {
+      "v": "Wat betekent «Alinea-opbouw»?",
+      "o": [
+       "argument + weerlegging",
+       "kernzin + uitwerking",
+       "beeld zónder \"als\"een zee van tijd",
+       "informerenlegt neutraal uit"
+      ],
+      "c": 1,
+      "u": "«Alinea-opbouw» betekent: kernzin + uitwerking.",
+      "d": 1
+     },
+     {
       "v": "Welk begrip hoort bij deze omschrijving: \"kernzin + uitwerking\"?",
       "o": [
-       "Naturalisme (eind 19e e.)",
-       "Betoog",
        "Alinea-opbouw",
-       "Conclusie/samenvatting"
+       "Autoriteit",
+       "Stromingen",
+       "Tegenstelling"
       ],
-      "c": 2,
+      "c": 0,
       "u": "Het juiste begrip is «Alinea-opbouw»: kernzin + uitwerking.",
       "d": 2
      },
      {
+      "v": "Welke term past bij: \"kernzin + uitwerking\"?",
+      "o": [
+       "Structuur",
+       "Register & stijl",
+       "Tekstsoorten",
+       "Alinea-opbouw"
+      ],
+      "c": 3,
+      "u": "Het juiste begrip is «Alinea-opbouw»: kernzin + uitwerking.",
+      "d": 3
+     },
+     {
+      "v": "Wat betekent «Stelling & argumenten»?",
+      "o": [
+       "mening + onderbouwing",
+       "volg de volgorde van de tekst",
+       "signaalwoorden behouden",
+       "de mening die verdedigd wordt"
+      ],
+      "c": 0,
+      "u": "«Stelling & argumenten» betekent: mening + onderbouwing.",
+      "d": 1
+     },
+     {
       "v": "Welk begrip hoort bij deze omschrijving: \"mening + onderbouwing\"?",
       "o": [
-       "Betoog",
        "Stelling & argumenten",
-       "Structuur",
-       "Uiteenzetting"
+       "Autoriteit",
+       "Personificatie",
+       "Stijlfiguren"
       ],
-      "c": 1,
+      "c": 0,
+      "u": "Het juiste begrip is «Stelling & argumenten»: mening + onderbouwing.",
+      "d": 2
+     },
+     {
+      "v": "Welke term past bij: \"mening + onderbouwing\"?",
+      "o": [
+       "Stelling & argumenten",
+       "Alinea-opbouw",
+       "Structuur",
+       "Register & stijl"
+      ],
+      "c": 0,
       "u": "Het juiste begrip is «Stelling & argumenten»: mening + onderbouwing.",
       "d": 3
      },
      {
       "v": "Wat betekent «Structuur»?",
       "o": [
-       "informerenlegt neutraal uit",
-       "beeld zónder \"als\"een zee van tijd",
-       "informeren, overtuigen, activeren…",
+       "kortom, dus, al met al",
+       "vergelijking, metafoor, personificatie",
+       "houding, oogcontact, stem",
        "inleiding, kern, slot"
       ],
       "c": 3,
@@ -816,23 +1368,95 @@ var VAKKEN = [
       "d": 1
      },
      {
+      "v": "Welk begrip hoort bij deze omschrijving: \"inleiding, kern, slot\"?",
+      "o": [
+       "Structuur",
+       "Cirkelredenering",
+       "Argument",
+       "Ik-perspectief"
+      ],
+      "c": 0,
+      "u": "Het juiste begrip is «Structuur»: inleiding, kern, slot.",
+      "d": 2
+     },
+     {
+      "v": "Welke term past bij: \"inleiding, kern, slot\"?",
+      "o": [
+       "Betoog",
+       "Stelling & argumenten",
+       "Structuur",
+       "Beschouwing"
+      ],
+      "c": 2,
+      "u": "Het juiste begrip is «Structuur»: inleiding, kern, slot.",
+      "d": 3
+     },
+     {
+      "v": "Wat betekent «Register & stijl»?",
+      "o": [
+       "formeel, foutloos, helder",
+       "houding, oogcontact, stem",
+       "realisme, naturalisme, modernisme",
+       "maar, echter, toch, daarentegen"
+      ],
+      "c": 0,
+      "u": "«Register & stijl» betekent: formeel, foutloos, helder.",
+      "d": 1
+     },
+     {
       "v": "Welk begrip hoort bij deze omschrijving: \"formeel, foutloos, helder\"?",
       "o": [
-       "Opsomming",
-       "Conclusie/samenvatting",
-       "Alineaverband",
-       "Register & stijl"
+       "Register & stijl",
+       "Voorwaarde",
+       "Tekstdoel",
+       "Selecteren"
       ],
-      "c": 3,
+      "c": 0,
       "u": "Het juiste begrip is «Register & stijl»: formeel, foutloos, helder.",
       "d": 2
      },
      {
-      "v": "Welk begrip hoort bij deze omschrijving: \"informerenlegt neutraal uit\"?",
+      "v": "Welke term past bij: \"formeel, foutloos, helder\"?",
       "o": [
        "Alinea-opbouw",
-       "Tekstsoorten",
+       "Stelling & argumenten",
+       "Register & stijl",
+       "Betoog"
+      ],
+      "c": 2,
+      "u": "Het juiste begrip is «Register & stijl»: formeel, foutloos, helder.",
+      "d": 3
+     },
+     {
+      "v": "Wat betekent «Uiteenzetting»?",
+      "o": [
+       "informerenlegt neutraal uit",
+       "formeel, foutloos, helder",
+       "mening van een deskundige",
+       "rol van een alinea in de tekst"
+      ],
+      "c": 0,
+      "u": "«Uiteenzetting» betekent: informerenlegt neutraal uit.",
+      "d": 1
+     },
+     {
+      "v": "Welk begrip hoort bij deze omschrijving: \"informerenlegt neutraal uit\"?",
+      "o": [
+       "Opsomming",
+       "Spreekdoel",
+       "Argument",
+       "Uiteenzetting"
+      ],
+      "c": 3,
+      "u": "Het juiste begrip is «Uiteenzetting»: informerenlegt neutraal uit.",
+      "d": 2
+     },
+     {
+      "v": "Welke term past bij: \"informerenlegt neutraal uit\"?",
+      "o": [
        "Structuur",
+       "Alinea-opbouw",
+       "Tekstsoorten",
        "Uiteenzetting"
       ],
       "c": 3,
@@ -843,25 +1467,73 @@ var VAKKEN = [
       "v": "Wat betekent «Beschouwing»?",
       "o": [
        "laten nadenkenbelicht meerdere kanten, weegt af",
-       "vergelijking, metafoor, personificatie",
-       "formeel, foutloos, helder",
-       "mening + onderbouwing"
+       "je iets laten doenoproep, campagne",
+       "signaalwoorden behouden",
+       "bijvoorbeeld, zoals, namelijk"
       ],
       "c": 0,
       "u": "«Beschouwing» betekent: laten nadenkenbelicht meerdere kanten, weegt af.",
       "d": 1
      },
      {
+      "v": "Welk begrip hoort bij deze omschrijving: \"laten nadenkenbelicht meerdere kanten, weegt af\"?",
+      "o": [
+       "Tekstdoel",
+       "Stijlfiguren",
+       "Verteltijd",
+       "Beschouwing"
+      ],
+      "c": 3,
+      "u": "Het juiste begrip is «Beschouwing»: laten nadenkenbelicht meerdere kanten, weegt af.",
+      "d": 2
+     },
+     {
+      "v": "Welke term past bij: \"laten nadenkenbelicht meerdere kanten, weegt af\"?",
+      "o": [
+       "Structuur",
+       "Alinea-opbouw",
+       "Beschouwing",
+       "Uiteenzetting"
+      ],
+      "c": 2,
+      "u": "Het juiste begrip is «Beschouwing»: laten nadenkenbelicht meerdere kanten, weegt af.",
+      "d": 3
+     },
+     {
+      "v": "Wat betekent «Betoog»?",
+      "o": [
+       "niet overschrijven, wel correct",
+       "met \"als\"/\"zoals\"zo sterk als een beer",
+       "overtuigenverdedigt één standpunt met argumenten",
+       "verteller weet alles, ook gedachten van iedereen"
+      ],
+      "c": 2,
+      "u": "«Betoog» betekent: overtuigenverdedigt één standpunt met argumenten.",
+      "d": 1
+     },
+     {
       "v": "Welk begrip hoort bij deze omschrijving: \"overtuigenverdedigt één standpunt met argumenten\"?",
       "o": [
-       "Hyperbool",
-       "Activeren",
-       "Signaalwoorden",
+       "Vergelijking",
+       "Betoog",
+       "Vertelperspectief",
+       "Verbanden"
+      ],
+      "c": 1,
+      "u": "Het juiste begrip is «Betoog»: overtuigenverdedigt één standpunt met argumenten.",
+      "d": 2
+     },
+     {
+      "v": "Welke term past bij: \"overtuigenverdedigt één standpunt met argumenten\"?",
+      "o": [
+       "Alinea-opbouw",
+       "Stelling & argumenten",
+       "Structuur",
        "Betoog"
       ],
       "c": 3,
       "u": "Het juiste begrip is «Betoog»: overtuigenverdedigt één standpunt met argumenten.",
-      "d": 2
+      "d": 3
      }
     ],
     "oe": [
@@ -1058,9 +1730,9 @@ var VAKKEN = [
      {
       "v": "Wat betekent «Selecteren»?",
       "o": [
-       "je mening veranderenbetoog, opinie",
-       "sterke overdrijvingik heb je duizend keer gebeld",
-       "kernzin + uitwerking",
+       "doordat, daardoor, dus, zodat",
+       "inleiding, kern, slot",
+       "betoog, beschouwing, uiteenzetting",
        "hoofdzaken houden, bijzaken schrappen"
       ],
       "c": 3,
@@ -1068,23 +1740,95 @@ var VAKKEN = [
       "d": 1
      },
      {
-      "v": "Welk begrip hoort bij deze omschrijving: \"volg de volgorde van de tekst\"?",
+      "v": "Welk begrip hoort bij deze omschrijving: \"hoofdzaken houden, bijzaken schrappen\"?",
       "o": [
-       "Informeren",
+       "Autoriteitsdrogreden",
+       "Woordenlimiet",
+       "Selecteren",
+       "Drogredenen"
+      ],
+      "c": 2,
+      "u": "Het juiste begrip is «Selecteren»: hoofdzaken houden, bijzaken schrappen.",
+      "d": 2
+     },
+     {
+      "v": "Welke term past bij: \"hoofdzaken houden, bijzaken schrappen\"?",
+      "o": [
+       "Verbanden",
+       "Selecteren",
        "Structuur",
-       "Alineaverband",
-       "Persoonlijke aanval"
+       "Woordenlimiet"
       ],
       "c": 1,
+      "u": "Het juiste begrip is «Selecteren»: hoofdzaken houden, bijzaken schrappen.",
+      "d": 3
+     },
+     {
+      "v": "Wat betekent «Structuur»?",
+      "o": [
+       "betoog, beschouwing, uiteenzetting",
+       "volg de volgorde van de tekst",
+       "de werkelijkheid zo waarheidsgetrouw mogelijk",
+       "mening + onderbouwing"
+      ],
+      "c": 1,
+      "u": "«Structuur» betekent: volg de volgorde van de tekst.",
+      "d": 1
+     },
+     {
+      "v": "Welk begrip hoort bij deze omschrijving: \"volg de volgorde van de tekst\"?",
+      "o": [
+       "Voorwaarde",
+       "Argument",
+       "Structuur",
+       "Uiteenzetting"
+      ],
+      "c": 2,
       "u": "Het juiste begrip is «Structuur»: volg de volgorde van de tekst.",
       "d": 2
      },
      {
-      "v": "Welk begrip hoort bij deze omschrijving: \"niet overschrijven, wel correct\"?",
+      "v": "Welke term past bij: \"volg de volgorde van de tekst\"?",
       "o": [
        "Eigen woorden",
+       "Woordenlimiet",
        "Selecteren",
+       "Structuur"
+      ],
+      "c": 3,
+      "u": "Het juiste begrip is «Structuur»: volg de volgorde van de tekst.",
+      "d": 3
+     },
+     {
+      "v": "Wat betekent «Eigen woorden»?",
+      "o": [
+       "niet overschrijven, wel correct",
+       "informatief of overtuigend",
+       "flashback, vooruitwijzing",
+       "doordat, daardoor, dus, zodat"
+      ],
+      "c": 0,
+      "u": "«Eigen woorden» betekent: niet overschrijven, wel correct.",
+      "d": 1
+     },
+     {
+      "v": "Welk begrip hoort bij deze omschrijving: \"niet overschrijven, wel correct\"?",
+      "o": [
+       "Non-verbaal",
+       "Alwetend",
+       "Eigen woorden",
+       "Hoofdgedachte"
+      ],
+      "c": 2,
+      "u": "Het juiste begrip is «Eigen woorden»: niet overschrijven, wel correct.",
+      "d": 2
+     },
+     {
+      "v": "Welke term past bij: \"niet overschrijven, wel correct\"?",
+      "o": [
+       "Eigen woorden",
        "Structuur",
+       "Selecteren",
        "Woordenlimiet"
       ],
       "c": 0,
@@ -1094,26 +1838,74 @@ var VAKKEN = [
      {
       "v": "Wat betekent «Woordenlimiet»?",
       "o": [
-       "mening van een deskundige",
-       "reden die het standpunt steunt",
+       "maar, echter, toch, daarentegen",
        "binnen het maximum blijven",
+       "laten nadenkenbelicht meerdere kanten, weegt af",
+       "ten eerste, bovendien, ook, daarnaast"
+      ],
+      "c": 1,
+      "u": "«Woordenlimiet» betekent: binnen het maximum blijven.",
+      "d": 1
+     },
+     {
+      "v": "Welk begrip hoort bij deze omschrijving: \"binnen het maximum blijven\"?",
+      "o": [
+       "Verbanden",
+       "Cirkelredenering",
+       "Woordenlimiet",
+       "Verteltijd"
+      ],
+      "c": 2,
+      "u": "Het juiste begrip is «Woordenlimiet»: binnen het maximum blijven.",
+      "d": 2
+     },
+     {
+      "v": "Welke term past bij: \"binnen het maximum blijven\"?",
+      "o": [
+       "Woordenlimiet",
+       "Selecteren",
+       "Verbanden",
+       "Structuur"
+      ],
+      "c": 0,
+      "u": "Het juiste begrip is «Woordenlimiet»: binnen het maximum blijven.",
+      "d": 3
+     },
+     {
+      "v": "Wat betekent «Verbanden»?",
+      "o": [
+       "het standpunt herhalen als argument",
+       "informatief of overtuigend",
+       "signaalwoorden behouden",
        "door de ogen van één personage, in de derde persoon"
       ],
       "c": 2,
-      "u": "«Woordenlimiet» betekent: binnen het maximum blijven.",
+      "u": "«Verbanden» betekent: signaalwoorden behouden.",
       "d": 1
      },
      {
       "v": "Welk begrip hoort bij deze omschrijving: \"signaalwoorden behouden\"?",
       "o": [
-       "Realisme (19e e.)",
-       "Betoog",
-       "Structuur",
+       "Stelling & argumenten",
+       "Uiteenzetting",
+       "Presentatiestructuur",
        "Verbanden"
       ],
       "c": 3,
       "u": "Het juiste begrip is «Verbanden»: signaalwoorden behouden.",
       "d": 2
+     },
+     {
+      "v": "Welke term past bij: \"signaalwoorden behouden\"?",
+      "o": [
+       "Structuur",
+       "Verbanden",
+       "Eigen woorden",
+       "Selecteren"
+      ],
+      "c": 1,
+      "u": "Het juiste begrip is «Verbanden»: signaalwoorden behouden.",
+      "d": 3
      }
     ],
     "oe": [
@@ -1310,70 +2102,214 @@ var VAKKEN = [
      {
       "v": "Wat betekent «Standpunt»?",
       "o": [
-       "overtuigenverdedigt één standpunt met argumenten",
-       "met \"als\"/\"zoals\"zo sterk als een beer",
-       "\"een BN'er zegt het\" — geen echte deskundige",
-       "de mening die verdedigd wordt"
+       "de mening die verdedigd wordt",
+       "experiment; stream of consciousness",
+       "de werkelijkheid zo waarheidsgetrouw mogelijk",
+       "houding, oogcontact, stem"
       ],
-      "c": 3,
+      "c": 0,
       "u": "«Standpunt» betekent: de mening die verdedigd wordt.",
+      "d": 1
+     },
+     {
+      "v": "Welk begrip hoort bij deze omschrijving: \"de mening die verdedigd wordt\"?",
+      "o": [
+       "Vergelijking",
+       "Standpunt",
+       "Ik-perspectief",
+       "Non-verbaal"
+      ],
+      "c": 1,
+      "u": "Het juiste begrip is «Standpunt»: de mening die verdedigd wordt.",
+      "d": 2
+     },
+     {
+      "v": "Welke term past bij: \"de mening die verdedigd wordt\"?",
+      "o": [
+       "Standpunt",
+       "Oorzaak-gevolg",
+       "Autoriteit",
+       "Persoonlijke aanval"
+      ],
+      "c": 0,
+      "u": "Het juiste begrip is «Standpunt»: de mening die verdedigd wordt.",
+      "d": 3
+     },
+     {
+      "v": "Wat betekent «Argument»?",
+      "o": [
+       "informerenlegt neutraal uit",
+       "reden die het standpunt steunt",
+       "informatief of overtuigend",
+       "laten nadenkenbelicht meerdere kanten, weegt af"
+      ],
+      "c": 1,
+      "u": "«Argument» betekent: reden die het standpunt steunt.",
       "d": 1
      },
      {
       "v": "Welk begrip hoort bij deze omschrijving: \"reden die het standpunt steunt\"?",
       "o": [
+       "Beschouwing",
+       "Argument",
        "Eigen woorden",
-       "Toelichting/voorbeeld",
-       "Modernisme (20e e.)",
-       "Argument"
+       "Motief & thema"
       ],
-      "c": 3,
+      "c": 1,
       "u": "Het juiste begrip is «Argument»: reden die het standpunt steunt.",
       "d": 2
      },
      {
+      "v": "Welke term past bij: \"reden die het standpunt steunt\"?",
+      "o": [
+       "Argument",
+       "Cirkelredenering",
+       "Autoriteitsdrogreden",
+       "Overhaaste generalisatie"
+      ],
+      "c": 0,
+      "u": "Het juiste begrip is «Argument»: reden die het standpunt steunt.",
+      "d": 3
+     },
+     {
+      "v": "Wat betekent «Structuur»?",
+      "o": [
+       "je vermakencolumn, verhaal",
+       "doordat, daardoor, dus, zodat",
+       "nevenschikkend of onderschikkend",
+       "informeren, overtuigen, activeren…"
+      ],
+      "c": 2,
+      "u": "«Structuur» betekent: nevenschikkend of onderschikkend.",
+      "d": 1
+     },
+     {
       "v": "Welk begrip hoort bij deze omschrijving: \"nevenschikkend of onderschikkend\"?",
       "o": [
+       "Alineaverband",
        "Standpunt",
-       "Structuur",
-       "Drogredenen",
-       "Persoonlijke aanval"
+       "Voorwaarde",
+       "Structuur"
       ],
-      "c": 1,
+      "c": 3,
+      "u": "Het juiste begrip is «Structuur»: nevenschikkend of onderschikkend.",
+      "d": 2
+     },
+     {
+      "v": "Welke term past bij: \"nevenschikkend of onderschikkend\"?",
+      "o": [
+       "Structuur",
+       "Cirkelredenering",
+       "Autoriteitsdrogreden",
+       "Autoriteit"
+      ],
+      "c": 0,
       "u": "Het juiste begrip is «Structuur»: nevenschikkend of onderschikkend.",
       "d": 3
      },
      {
       "v": "Wat betekent «Argumentatietypen»?",
       "o": [
-       "binnen het maximum blijven",
-       "mening van een deskundige",
+       "realisme, naturalisme, modernisme",
+       "iets levenloos krijgt menselijke trekkende wind fluistert",
        "voorbeeld, autoriteit, gevolg, vergelijking",
-       "je iets laten doenoproep, campagne"
+       "wijzen het verband aan"
       ],
       "c": 2,
       "u": "«Argumentatietypen» betekent: voorbeeld, autoriteit, gevolg, vergelijking.",
       "d": 1
      },
      {
-      "v": "Welk begrip hoort bij deze omschrijving: \"argumenten die niet deugen\"?",
+      "v": "Welk begrip hoort bij deze omschrijving: \"voorbeeld, autoriteit, gevolg, vergelijking\"?",
       "o": [
-       "Standpunt",
-       "Drogredenen",
-       "Stelling & argumenten",
-       "Metafoor"
+       "Register & stijl",
+       "Argumentatietypen",
+       "Persoonlijke aanval",
+       "Standpunt"
       ],
       "c": 1,
+      "u": "Het juiste begrip is «Argumentatietypen»: voorbeeld, autoriteit, gevolg, vergelijking.",
+      "d": 2
+     },
+     {
+      "v": "Welke term past bij: \"voorbeeld, autoriteit, gevolg, vergelijking\"?",
+      "o": [
+       "Oorzaak-gevolg",
+       "Autoriteit",
+       "Standpunt",
+       "Argumentatietypen"
+      ],
+      "c": 3,
+      "u": "Het juiste begrip is «Argumentatietypen»: voorbeeld, autoriteit, gevolg, vergelijking.",
+      "d": 3
+     },
+     {
+      "v": "Wat betekent «Drogredenen»?",
+      "o": [
+       "nevenschikkend of onderschikkend",
+       "argumenten die niet deugen",
+       "argument + weerlegging",
+       "volg de volgorde van de tekst"
+      ],
+      "c": 1,
+      "u": "«Drogredenen» betekent: argumenten die niet deugen.",
+      "d": 1
+     },
+     {
+      "v": "Welk begrip hoort bij deze omschrijving: \"argumenten die niet deugen\"?",
+      "o": [
+       "Overtuigen",
+       "Conclusie/samenvatting",
+       "Drogredenen",
+       "Structuur"
+      ],
+      "c": 2,
       "u": "Het juiste begrip is «Drogredenen»: argumenten die niet deugen.",
       "d": 2
      },
      {
+      "v": "Welke term past bij: \"argumenten die niet deugen\"?",
+      "o": [
+       "Persoonlijke aanval",
+       "Autoriteit",
+       "Drogredenen",
+       "Autoriteitsdrogreden"
+      ],
+      "c": 2,
+      "u": "Het juiste begrip is «Drogredenen»: argumenten die niet deugen.",
+      "d": 3
+     },
+     {
+      "v": "Wat betekent «Autoriteit»?",
+      "o": [
+       "inleiding, kern, slot",
+       "mening van een deskundige",
+       "de kernboodschap in één zin",
+       "terugkerend element vs. onderwerp"
+      ],
+      "c": 1,
+      "u": "«Autoriteit» betekent: mening van een deskundige.",
+      "d": 1
+     },
+     {
       "v": "Welk begrip hoort bij deze omschrijving: \"mening van een deskundige\"?",
       "o": [
+       "Toelichting/voorbeeld",
+       "Personaal (hij/zij)",
        "Autoriteit",
-       "Standpunt",
-       "Persoonlijke aanval",
-       "Overhaaste generalisatie"
+       "Vergelijking"
+      ],
+      "c": 2,
+      "u": "Het juiste begrip is «Autoriteit»: mening van een deskundige.",
+      "d": 2
+     },
+     {
+      "v": "Welke term past bij: \"mening van een deskundige\"?",
+      "o": [
+       "Autoriteit",
+       "Cirkelredenering",
+       "Drogredenen",
+       "Autoriteitsdrogreden"
       ],
       "c": 0,
       "u": "Het juiste begrip is «Autoriteit»: mening van een deskundige.",
@@ -1382,36 +2318,108 @@ var VAKKEN = [
      {
       "v": "Wat betekent «Oorzaak-gevolg»?",
       "o": [
-       "formeel, foutloos, helder",
        "de gevolgen van iets",
        "de mening die verdedigd wordt",
-       "rol van een alinea in de tekst"
+       "hoofdzaken houden, bijzaken schrappen",
+       "kortom, dus, al met al"
+      ],
+      "c": 0,
+      "u": "«Oorzaak-gevolg» betekent: de gevolgen van iets.",
+      "d": 1
+     },
+     {
+      "v": "Welk begrip hoort bij deze omschrijving: \"de gevolgen van iets\"?",
+      "o": [
+       "Stelling & argumenten",
+       "Oorzaak-gevolg",
+       "Signaalwoorden",
+       "Persoonlijke aanval"
       ],
       "c": 1,
-      "u": "«Oorzaak-gevolg» betekent: de gevolgen van iets.",
+      "u": "Het juiste begrip is «Oorzaak-gevolg»: de gevolgen van iets.",
+      "d": 2
+     },
+     {
+      "v": "Welke term past bij: \"de gevolgen van iets\"?",
+      "o": [
+       "Oorzaak-gevolg",
+       "Standpunt",
+       "Autoriteitsdrogreden",
+       "Structuur"
+      ],
+      "c": 0,
+      "u": "Het juiste begrip is «Oorzaak-gevolg»: de gevolgen van iets.",
+      "d": 3
+     },
+     {
+      "v": "Wat betekent «Vergelijking»?",
+      "o": [
+       "niet overschrijven, wel correct",
+       "een overeenkomstig geval",
+       "vergelijking, metafoor, personificatie",
+       "objectieve weergave van sociale misstanden en armoede; milieu bepaalt de mens"
+      ],
+      "c": 1,
+      "u": "«Vergelijking» betekent: een overeenkomstig geval. Anders dan een metafoor: een vergelijking gebruikt \"als\" of \"zoals\".",
       "d": 1
      },
      {
       "v": "Welk begrip hoort bij deze omschrijving: \"een overeenkomstig geval\"?",
       "o": [
-       "Oorzaak-gevolg",
-       "Argumentatietypen",
+       "Verteltijd",
+       "Verbanden",
        "Vergelijking",
-       "Autoriteitsdrogreden"
+       "Signaalwoorden"
       ],
       "c": 2,
       "u": "Het juiste begrip is «Vergelijking»: een overeenkomstig geval. Anders dan een metafoor: een vergelijking gebruikt \"als\" of \"zoals\".",
       "d": 2
      },
      {
+      "v": "Welke term past bij: \"een overeenkomstig geval\"?",
+      "o": [
+       "Vergelijking",
+       "Standpunt",
+       "Overhaaste generalisatie",
+       "Autoriteitsdrogreden"
+      ],
+      "c": 0,
+      "u": "Het juiste begrip is «Vergelijking»: een overeenkomstig geval. Anders dan een metafoor: een vergelijking gebruikt \"als\" of \"zoals\".",
+      "d": 3
+     },
+     {
+      "v": "Wat betekent «Persoonlijke aanval»?",
+      "o": [
+       "reden die het standpunt steunt",
+       "je valt de persoon aan i.p.v. het argument",
+       "volg de volgorde van de tekst",
+       "formeel vs. informeel"
+      ],
+      "c": 1,
+      "u": "«Persoonlijke aanval» betekent: je valt de persoon aan i.p.v. het argument.",
+      "d": 1
+     },
+     {
       "v": "Welk begrip hoort bij deze omschrijving: \"je valt de persoon aan i.p.v. het argument\"?",
       "o": [
-       "Structuur",
-       "Argument",
-       "Cirkelredenering",
-       "Persoonlijke aanval"
+       "Persoonlijke aanval",
+       "Tekstdoel",
+       "Alwetend",
+       "Structuur"
       ],
-      "c": 3,
+      "c": 0,
+      "u": "Het juiste begrip is «Persoonlijke aanval»: je valt de persoon aan i.p.v. het argument.",
+      "d": 2
+     },
+     {
+      "v": "Welke term past bij: \"je valt de persoon aan i.p.v. het argument\"?",
+      "o": [
+       "Structuur",
+       "Drogredenen",
+       "Persoonlijke aanval",
+       "Standpunt"
+      ],
+      "c": 2,
       "u": "Het juiste begrip is «Persoonlijke aanval»: je valt de persoon aan i.p.v. het argument.",
       "d": 3
      },
@@ -1419,35 +2427,107 @@ var VAKKEN = [
       "v": "Wat betekent «Autoriteitsdrogreden»?",
       "o": [
        "\"een BN'er zegt het\" — geen echte deskundige",
-       "je iets laten doenoproep, campagne",
-       "verteller weet alles, ook gedachten van iedereen",
-       "kortom, dus, al met al"
+       "met \"als\"/\"zoals\"zo sterk als een beer",
+       "uit één geval een algemene regel trekken",
+       "iets laten wetennieuwsbericht, uitleg"
       ],
       "c": 0,
       "u": "«Autoriteitsdrogreden» betekent: \"een BN'er zegt het\" — geen echte deskundige.",
       "d": 1
      },
      {
-      "v": "Welk begrip hoort bij deze omschrijving: \"uit één geval een algemene regel trekken\"?",
+      "v": "Welk begrip hoort bij deze omschrijving: \"\"een BN'er zegt het\" — geen echte deskundige\"?",
       "o": [
-       "Persoonlijke aanval",
-       "Argumentatietypen",
-       "Overhaaste generalisatie",
-       "Tegenstelling"
+       "Non-verbaal",
+       "Signaalwoorden",
+       "Autoriteitsdrogreden",
+       "Debat"
       ],
       "c": 2,
+      "u": "Het juiste begrip is «Autoriteitsdrogreden»: \"een BN'er zegt het\" — geen echte deskundige.",
+      "d": 2
+     },
+     {
+      "v": "Welke term past bij: \"\"een BN'er zegt het\" — geen echte deskundige\"?",
+      "o": [
+       "Vergelijking",
+       "Autoriteitsdrogreden",
+       "Argument",
+       "Argumentatietypen"
+      ],
+      "c": 1,
+      "u": "Het juiste begrip is «Autoriteitsdrogreden»: \"een BN'er zegt het\" — geen echte deskundige.",
+      "d": 3
+     },
+     {
+      "v": "Wat betekent «Overhaaste generalisatie»?",
+      "o": [
+       "je mening veranderenbetoog, opinie",
+       "uit één geval een algemene regel trekken",
+       "realisme, naturalisme, modernisme",
+       "houding, oogcontact, stem"
+      ],
+      "c": 1,
+      "u": "«Overhaaste generalisatie» betekent: uit één geval een algemene regel trekken.",
+      "d": 1
+     },
+     {
+      "v": "Welk begrip hoort bij deze omschrijving: \"uit één geval een algemene regel trekken\"?",
+      "o": [
+       "Alwetend",
+       "Tekstdoel",
+       "Realisme (19e e.)",
+       "Overhaaste generalisatie"
+      ],
+      "c": 3,
       "u": "Het juiste begrip is «Overhaaste generalisatie»: uit één geval een algemene regel trekken.",
       "d": 2
      },
      {
-      "v": "Welk begrip hoort bij deze omschrijving: \"het standpunt herhalen als argument\"?",
+      "v": "Welke term past bij: \"uit één geval een algemene regel trekken\"?",
       "o": [
-       "Standpunt",
-       "Structuur",
-       "Cirkelredenering",
+       "Overhaaste generalisatie",
+       "Oorzaak-gevolg",
+       "Argument",
        "Persoonlijke aanval"
       ],
+      "c": 0,
+      "u": "Het juiste begrip is «Overhaaste generalisatie»: uit één geval een algemene regel trekken.",
+      "d": 3
+     },
+     {
+      "v": "Wat betekent «Cirkelredenering»?",
+      "o": [
+       "iets levenloos krijgt menselijke trekkende wind fluistert",
+       "flashback, vooruitwijzing",
+       "het standpunt herhalen als argument",
+       "reden die het standpunt steunt"
+      ],
       "c": 2,
+      "u": "«Cirkelredenering» betekent: het standpunt herhalen als argument.",
+      "d": 1
+     },
+     {
+      "v": "Welk begrip hoort bij deze omschrijving: \"het standpunt herhalen als argument\"?",
+      "o": [
+       "Tekstsoorten",
+       "Verbanden",
+       "Cirkelredenering",
+       "Eigen woorden"
+      ],
+      "c": 2,
+      "u": "Het juiste begrip is «Cirkelredenering»: het standpunt herhalen als argument.",
+      "d": 2
+     },
+     {
+      "v": "Welke term past bij: \"het standpunt herhalen als argument\"?",
+      "o": [
+       "Autoriteitsdrogreden",
+       "Cirkelredenering",
+       "Argumentatietypen",
+       "Oorzaak-gevolg"
+      ],
+      "c": 1,
       "u": "Het juiste begrip is «Cirkelredenering»: het standpunt herhalen als argument.",
       "d": 3
      }
@@ -1727,142 +2807,430 @@ var VAKKEN = [
      {
       "v": "Wat betekent «Vertelperspectief»?",
       "o": [
-       "voorbeeld, autoriteit, gevolg, vergelijking",
+       "het standpunt herhalen als argument",
+       "mening + onderbouwing",
        "door wiens ogen zie je het verhaal?",
-       "argumenten die niet deugen",
-       "informeren, overtuigen, activeren…"
+       "een overeenkomstig geval"
+      ],
+      "c": 2,
+      "u": "«Vertelperspectief» betekent: door wiens ogen zie je het verhaal?.",
+      "d": 1
+     },
+     {
+      "v": "Welk begrip hoort bij deze omschrijving: \"door wiens ogen zie je het verhaal?\"?",
+      "o": [
+       "Vertelperspectief",
+       "Opsomming",
+       "Modernisme (20e e.)",
+       "Overhaaste generalisatie"
+      ],
+      "c": 0,
+      "u": "Het juiste begrip is «Vertelperspectief»: door wiens ogen zie je het verhaal?.",
+      "d": 2
+     },
+     {
+      "v": "Welke term past bij: \"door wiens ogen zie je het verhaal?\"?",
+      "o": [
+       "Realisme (19e e.)",
+       "Ik-perspectief",
+       "Vertelperspectief",
+       "Vergelijking"
+      ],
+      "c": 2,
+      "u": "Het juiste begrip is «Vertelperspectief»: door wiens ogen zie je het verhaal?.",
+      "d": 3
+     },
+     {
+      "v": "Wat betekent «Verteltijd»?",
+      "o": [
+       "de kernboodschap in één zin",
+       "flashback, vooruitwijzing",
+       "iets laten wetennieuwsbericht, uitleg",
+       "doordat, daardoor, dus, zodat"
       ],
       "c": 1,
-      "u": "«Vertelperspectief» betekent: door wiens ogen zie je het verhaal?.",
+      "u": "«Verteltijd» betekent: flashback, vooruitwijzing.",
       "d": 1
      },
      {
       "v": "Welk begrip hoort bij deze omschrijving: \"flashback, vooruitwijzing\"?",
       "o": [
-       "Amuseren",
        "Vergelijking",
        "Verteltijd",
-       "Modernisme (20e e.)"
+       "Register",
+       "Voorwaarde"
+      ],
+      "c": 1,
+      "u": "Het juiste begrip is «Verteltijd»: flashback, vooruitwijzing.",
+      "d": 2
+     },
+     {
+      "v": "Welke term past bij: \"flashback, vooruitwijzing\"?",
+      "o": [
+       "Vergelijking",
+       "Personificatie",
+       "Verteltijd",
+       "Stijlfiguren"
       ],
       "c": 2,
       "u": "Het juiste begrip is «Verteltijd»: flashback, vooruitwijzing.",
-      "d": 2
+      "d": 3
+     },
+     {
+      "v": "Wat betekent «Motief & thema»?",
+      "o": [
+       "de gevolgen van iets",
+       "uit één geval een algemene regel trekken",
+       "argument + weerlegging",
+       "terugkerend element vs. onderwerp"
+      ],
+      "c": 3,
+      "u": "«Motief & thema» betekent: terugkerend element vs. onderwerp.",
+      "d": 1
      },
      {
       "v": "Welk begrip hoort bij deze omschrijving: \"terugkerend element vs. onderwerp\"?",
       "o": [
        "Motief & thema",
-       "Hyperbool",
-       "Personificatie",
-       "Stromingen"
+       "Alwetend",
+       "Stromingen",
+       "Hoofdgedachte"
       ],
       "c": 0,
+      "u": "Het juiste begrip is «Motief & thema»: terugkerend element vs. onderwerp.",
+      "d": 2
+     },
+     {
+      "v": "Welke term past bij: \"terugkerend element vs. onderwerp\"?",
+      "o": [
+       "Metafoor",
+       "Stijlfiguren",
+       "Vergelijking",
+       "Motief & thema"
+      ],
+      "c": 3,
       "u": "Het juiste begrip is «Motief & thema»: terugkerend element vs. onderwerp.",
       "d": 3
      },
      {
       "v": "Wat betekent «Stromingen»?",
       "o": [
-       "kernzin + uitwerking",
-       "binnen het maximum blijven",
-       "een overeenkomstig geval",
-       "realisme, naturalisme, modernisme"
+       "inleiding, kern, slot",
+       "realisme, naturalisme, modernisme",
+       "kortom, dus, al met al",
+       "nevenschikkend of onderschikkend"
+      ],
+      "c": 1,
+      "u": "«Stromingen» betekent: realisme, naturalisme, modernisme.",
+      "d": 1
+     },
+     {
+      "v": "Welk begrip hoort bij deze omschrijving: \"realisme, naturalisme, modernisme\"?",
+      "o": [
+       "Autoriteit",
+       "Informeren",
+       "Stromingen",
+       "Register"
+      ],
+      "c": 2,
+      "u": "Het juiste begrip is «Stromingen»: realisme, naturalisme, modernisme.",
+      "d": 2
+     },
+     {
+      "v": "Welke term past bij: \"realisme, naturalisme, modernisme\"?",
+      "o": [
+       "Hyperbool",
+       "Naturalisme (eind 19e e.)",
+       "Stijlfiguren",
+       "Stromingen"
       ],
       "c": 3,
-      "u": "«Stromingen» betekent: realisme, naturalisme, modernisme.",
+      "u": "Het juiste begrip is «Stromingen»: realisme, naturalisme, modernisme.",
+      "d": 3
+     },
+     {
+      "v": "Wat betekent «Stijlfiguren»?",
+      "o": [
+       "doordat, daardoor, dus, zodat",
+       "mening + onderbouwing",
+       "je iets laten doenoproep, campagne",
+       "vergelijking, metafoor, personificatie"
+      ],
+      "c": 3,
+      "u": "«Stijlfiguren» betekent: vergelijking, metafoor, personificatie.",
       "d": 1
      },
      {
       "v": "Welk begrip hoort bij deze omschrijving: \"vergelijking, metafoor, personificatie\"?",
       "o": [
-       "Vertelperspectief",
-       "Naturalisme (eind 19e e.)",
        "Stijlfiguren",
-       "Presentatiestructuur"
+       "Oorzaak-gevolg",
+       "Spreekdoel",
+       "Amuseren"
       ],
-      "c": 2,
+      "c": 0,
       "u": "Het juiste begrip is «Stijlfiguren»: vergelijking, metafoor, personificatie.",
       "d": 2
      },
      {
+      "v": "Welke term past bij: \"vergelijking, metafoor, personificatie\"?",
+      "o": [
+       "Metafoor",
+       "Hyperbool",
+       "Personificatie",
+       "Stijlfiguren"
+      ],
+      "c": 3,
+      "u": "Het juiste begrip is «Stijlfiguren»: vergelijking, metafoor, personificatie.",
+      "d": 3
+     },
+     {
+      "v": "Wat betekent «Ik-perspectief»?",
+      "o": [
+       "argumenten die niet deugen",
+       "informerenlegt neutraal uit",
+       "verteller is personage (\"ik\"); beperkt tot eigen ervaring",
+       "verteller weet alles, ook gedachten van iedereen"
+      ],
+      "c": 2,
+      "u": "«Ik-perspectief» betekent: verteller is personage (\"ik\"); beperkt tot eigen ervaring.",
+      "d": 1
+     },
+     {
       "v": "Welk begrip hoort bij deze omschrijving: \"verteller is personage (\"ik\"); beperkt tot eigen ervaring\"?",
       "o": [
-       "Ik-perspectief",
-       "Motief & thema",
-       "Stijlfiguren",
-       "Naturalisme (eind 19e e.)"
+       "Drogredenen",
+       "Presentatiestructuur",
+       "Naturalisme (eind 19e e.)",
+       "Ik-perspectief"
       ],
-      "c": 0,
+      "c": 3,
+      "u": "Het juiste begrip is «Ik-perspectief»: verteller is personage (\"ik\"); beperkt tot eigen ervaring.",
+      "d": 2
+     },
+     {
+      "v": "Welke term past bij: \"verteller is personage (\"ik\"); beperkt tot eigen ervaring\"?",
+      "o": [
+       "Personaal (hij/zij)",
+       "Realisme (19e e.)",
+       "Ik-perspectief",
+       "Metafoor"
+      ],
+      "c": 2,
       "u": "Het juiste begrip is «Ik-perspectief»: verteller is personage (\"ik\"); beperkt tot eigen ervaring.",
       "d": 3
      },
      {
       "v": "Wat betekent «Personaal (hij/zij)»?",
       "o": [
+       "wijzen het verband aan",
+       "nevenschikkend of onderschikkend",
        "door de ogen van één personage, in de derde persoon",
-       "als, mits, tenzij",
-       "experiment; stream of consciousness",
-       "je valt de persoon aan i.p.v. het argument"
+       "laten nadenkenbelicht meerdere kanten, weegt af"
+      ],
+      "c": 2,
+      "u": "«Personaal (hij/zij)» betekent: door de ogen van één personage, in de derde persoon.",
+      "d": 1
+     },
+     {
+      "v": "Welk begrip hoort bij deze omschrijving: \"door de ogen van één personage, in de derde persoon\"?",
+      "o": [
+       "Personaal (hij/zij)",
+       "Vertelperspectief",
+       "Stijlfiguren",
+       "Tekstdoel"
       ],
       "c": 0,
-      "u": "«Personaal (hij/zij)» betekent: door de ogen van één personage, in de derde persoon.",
+      "u": "Het juiste begrip is «Personaal (hij/zij)»: door de ogen van één personage, in de derde persoon.",
+      "d": 2
+     },
+     {
+      "v": "Welke term past bij: \"door de ogen van één personage, in de derde persoon\"?",
+      "o": [
+       "Realisme (19e e.)",
+       "Metafoor",
+       "Personaal (hij/zij)",
+       "Vertelperspectief"
+      ],
+      "c": 2,
+      "u": "Het juiste begrip is «Personaal (hij/zij)»: door de ogen van één personage, in de derde persoon.",
+      "d": 3
+     },
+     {
+      "v": "Wat betekent «Alwetend»?",
+      "o": [
+       "volg de volgorde van de tekst",
+       "verteller weet alles, ook gedachten van iedereen",
+       "mening + onderbouwing",
+       "verteller is personage (\"ik\"); beperkt tot eigen ervaring"
+      ],
+      "c": 1,
+      "u": "«Alwetend» betekent: verteller weet alles, ook gedachten van iedereen.",
       "d": 1
      },
      {
       "v": "Welk begrip hoort bij deze omschrijving: \"verteller weet alles, ook gedachten van iedereen\"?",
       "o": [
-       "Alwetend",
-       "Structuur",
-       "Opsomming",
-       "Activeren"
+       "Standpunt",
+       "Personificatie",
+       "Argument",
+       "Alwetend"
       ],
-      "c": 0,
+      "c": 3,
       "u": "Het juiste begrip is «Alwetend»: verteller weet alles, ook gedachten van iedereen.",
       "d": 2
      },
      {
-      "v": "Welk begrip hoort bij deze omschrijving: \"de werkelijkheid zo waarheidsgetrouw mogelijk\"?",
+      "v": "Welke term past bij: \"verteller weet alles, ook gedachten van iedereen\"?",
       "o": [
-       "Modernisme (20e e.)",
-       "Realisme (19e e.)",
-       "Stijlfiguren",
-       "Verteltijd"
+       "Verteltijd",
+       "Alwetend",
+       "Motief & thema",
+       "Personaal (hij/zij)"
       ],
       "c": 1,
+      "u": "Het juiste begrip is «Alwetend»: verteller weet alles, ook gedachten van iedereen.",
+      "d": 3
+     },
+     {
+      "v": "Wat betekent «Realisme (19e e.)»?",
+      "o": [
+       "\"een BN'er zegt het\" — geen echte deskundige",
+       "hoofdzaken houden, bijzaken schrappen",
+       "de werkelijkheid zo waarheidsgetrouw mogelijk",
+       "houding, oogcontact, stem"
+      ],
+      "c": 2,
+      "u": "«Realisme (19e e.)» betekent: de werkelijkheid zo waarheidsgetrouw mogelijk.",
+      "d": 1
+     },
+     {
+      "v": "Welk begrip hoort bij deze omschrijving: \"de werkelijkheid zo waarheidsgetrouw mogelijk\"?",
+      "o": [
+       "Overhaaste generalisatie",
+       "Realisme (19e e.)",
+       "Overtuigen",
+       "Woordenlimiet"
+      ],
+      "c": 1,
+      "u": "Het juiste begrip is «Realisme (19e e.)»: de werkelijkheid zo waarheidsgetrouw mogelijk.",
+      "d": 2
+     },
+     {
+      "v": "Welke term past bij: \"de werkelijkheid zo waarheidsgetrouw mogelijk\"?",
+      "o": [
+       "Realisme (19e e.)",
+       "Naturalisme (eind 19e e.)",
+       "Metafoor",
+       "Motief & thema"
+      ],
+      "c": 0,
       "u": "Het juiste begrip is «Realisme (19e e.)»: de werkelijkheid zo waarheidsgetrouw mogelijk.",
       "d": 3
      },
      {
       "v": "Wat betekent «Naturalisme (eind 19e e.)»?",
       "o": [
-       "je iets laten doenoproep, campagne",
-       "houding, oogcontact, stem",
+       "reden die het standpunt steunt",
+       "formeel vs. informeel",
        "objectieve weergave van sociale misstanden en armoede; milieu bepaalt de mens",
-       "door wiens ogen zie je het verhaal?"
+       "informerenlegt neutraal uit"
       ],
       "c": 2,
       "u": "«Naturalisme (eind 19e e.)» betekent: objectieve weergave van sociale misstanden en armoede; milieu bepaalt de mens.",
       "d": 1
      },
      {
+      "v": "Welk begrip hoort bij deze omschrijving: \"objectieve weergave van sociale misstanden en armoede; milieu bepaalt de mens\"?",
+      "o": [
+       "Ik-perspectief",
+       "Naturalisme (eind 19e e.)",
+       "Register & stijl",
+       "Metafoor"
+      ],
+      "c": 1,
+      "u": "Het juiste begrip is «Naturalisme (eind 19e e.)»: objectieve weergave van sociale misstanden en armoede; milieu bepaalt de mens.",
+      "d": 2
+     },
+     {
+      "v": "Welke term past bij: \"objectieve weergave van sociale misstanden en armoede; milieu bepaalt de mens\"?",
+      "o": [
+       "Vergelijking",
+       "Stromingen",
+       "Ik-perspectief",
+       "Naturalisme (eind 19e e.)"
+      ],
+      "c": 3,
+      "u": "Het juiste begrip is «Naturalisme (eind 19e e.)»: objectieve weergave van sociale misstanden en armoede; milieu bepaalt de mens.",
+      "d": 3
+     },
+     {
+      "v": "Wat betekent «Modernisme (20e e.)»?",
+      "o": [
+       "kortom, dus, al met al",
+       "een overeenkomstig geval",
+       "experiment; stream of consciousness",
+       "beeld zónder \"als\"een zee van tijd"
+      ],
+      "c": 2,
+      "u": "«Modernisme (20e e.)» betekent: experiment; stream of consciousness.",
+      "d": 1
+     },
+     {
       "v": "Welk begrip hoort bij deze omschrijving: \"experiment; stream of consciousness\"?",
       "o": [
        "Modernisme (20e e.)",
-       "Vertelperspectief",
-       "Structuur",
-       "Autoriteit"
+       "Overtuigen",
+       "Eigen woorden",
+       "Overhaaste generalisatie"
       ],
       "c": 0,
       "u": "Het juiste begrip is «Modernisme (20e e.)»: experiment; stream of consciousness.",
       "d": 2
      },
      {
-      "v": "Welk begrip hoort bij deze omschrijving: \"met \"als\"/\"zoals\"zo sterk als een beer\"?",
+      "v": "Welke term past bij: \"experiment; stream of consciousness\"?",
       "o": [
        "Vergelijking",
        "Alwetend",
-       "Stromingen",
-       "Naturalisme (eind 19e e.)"
+       "Motief & thema",
+       "Modernisme (20e e.)"
+      ],
+      "c": 3,
+      "u": "Het juiste begrip is «Modernisme (20e e.)»: experiment; stream of consciousness.",
+      "d": 3
+     },
+     {
+      "v": "Wat betekent «Vergelijking»?",
+      "o": [
+       "rol van een alinea in de tekst",
+       "verteller is personage (\"ik\"); beperkt tot eigen ervaring",
+       "met \"als\"/\"zoals\"zo sterk als een beer",
+       "het standpunt herhalen als argument"
+      ],
+      "c": 2,
+      "u": "«Vergelijking» betekent: met \"als\"/\"zoals\"zo sterk als een beer. Anders dan een metafoor: een vergelijking gebruikt \"als\" of \"zoals\".",
+      "d": 1
+     },
+     {
+      "v": "Welk begrip hoort bij deze omschrijving: \"met \"als\"/\"zoals\"zo sterk als een beer\"?",
+      "o": [
+       "Alwetend",
+       "Vergelijking",
+       "Verbanden",
+       "Selecteren"
+      ],
+      "c": 1,
+      "u": "Het juiste begrip is «Vergelijking»: met \"als\"/\"zoals\"zo sterk als een beer. Anders dan een metafoor: een vergelijking gebruikt \"als\" of \"zoals\".",
+      "d": 2
+     },
+     {
+      "v": "Welke term past bij: \"met \"als\"/\"zoals\"zo sterk als een beer\"?",
+      "o": [
+       "Vergelijking",
+       "Personaal (hij/zij)",
+       "Alwetend",
+       "Verteltijd"
       ],
       "c": 0,
       "u": "Het juiste begrip is «Vergelijking»: met \"als\"/\"zoals\"zo sterk als een beer. Anders dan een metafoor: een vergelijking gebruikt \"als\" of \"zoals\".",
@@ -1871,36 +3239,108 @@ var VAKKEN = [
      {
       "v": "Wat betekent «Metafoor»?",
       "o": [
-       "beeld zónder \"als\"een zee van tijd",
        "iets levenloos krijgt menselijke trekkende wind fluistert",
-       "vergelijking, metafoor, personificatie",
-       "argument + weerlegging"
+       "sterke overdrijvingik heb je duizend keer gebeld",
+       "beeld zónder \"als\"een zee van tijd",
+       "je mening veranderenbetoog, opinie"
       ],
-      "c": 0,
+      "c": 2,
       "u": "«Metafoor» betekent: beeld zónder \"als\"een zee van tijd. Anders dan een vergelijking: een metafoor gebruikt géén \"als/zoals\".",
+      "d": 1
+     },
+     {
+      "v": "Welk begrip hoort bij deze omschrijving: \"beeld zónder \"als\"een zee van tijd\"?",
+      "o": [
+       "Argument",
+       "Hyperbool",
+       "Tekstverbanden",
+       "Metafoor"
+      ],
+      "c": 3,
+      "u": "Het juiste begrip is «Metafoor»: beeld zónder \"als\"een zee van tijd. Anders dan een vergelijking: een metafoor gebruikt géén \"als/zoals\".",
+      "d": 2
+     },
+     {
+      "v": "Welke term past bij: \"beeld zónder \"als\"een zee van tijd\"?",
+      "o": [
+       "Stromingen",
+       "Personificatie",
+       "Alwetend",
+       "Metafoor"
+      ],
+      "c": 3,
+      "u": "Het juiste begrip is «Metafoor»: beeld zónder \"als\"een zee van tijd. Anders dan een vergelijking: een metafoor gebruikt géén \"als/zoals\".",
+      "d": 3
+     },
+     {
+      "v": "Wat betekent «Personificatie»?",
+      "o": [
+       "kernzin + uitwerking",
+       "verteller is personage (\"ik\"); beperkt tot eigen ervaring",
+       "iets levenloos krijgt menselijke trekkende wind fluistert",
+       "rol van een alinea in de tekst"
+      ],
+      "c": 2,
+      "u": "«Personificatie» betekent: iets levenloos krijgt menselijke trekkende wind fluistert.",
       "d": 1
      },
      {
       "v": "Welk begrip hoort bij deze omschrijving: \"iets levenloos krijgt menselijke trekkende wind fluistert\"?",
       "o": [
-       "Tekstdoel",
        "Personificatie",
-       "Informeren",
-       "Personaal (hij/zij)"
+       "Verbanden",
+       "Eigen woorden",
+       "Tekstverbanden"
       ],
-      "c": 1,
+      "c": 0,
       "u": "Het juiste begrip is «Personificatie»: iets levenloos krijgt menselijke trekkende wind fluistert.",
       "d": 2
      },
      {
-      "v": "Welk begrip hoort bij deze omschrijving: \"sterke overdrijvingik heb je duizend keer gebeld\"?",
+      "v": "Welke term past bij: \"iets levenloos krijgt menselijke trekkende wind fluistert\"?",
       "o": [
        "Personificatie",
-       "Naturalisme (eind 19e e.)",
-       "Hyperbool",
-       "Modernisme (20e e.)"
+       "Vertelperspectief",
+       "Vergelijking",
+       "Realisme (19e e.)"
+      ],
+      "c": 0,
+      "u": "Het juiste begrip is «Personificatie»: iets levenloos krijgt menselijke trekkende wind fluistert.",
+      "d": 3
+     },
+     {
+      "v": "Wat betekent «Hyperbool»?",
+      "o": [
+       "informeren, overtuigen, activeren…",
+       "ten eerste, bovendien, ook, daarnaast",
+       "sterke overdrijvingik heb je duizend keer gebeld",
+       "laten nadenkenbelicht meerdere kanten, weegt af"
       ],
       "c": 2,
+      "u": "«Hyperbool» betekent: sterke overdrijvingik heb je duizend keer gebeld.",
+      "d": 1
+     },
+     {
+      "v": "Welk begrip hoort bij deze omschrijving: \"sterke overdrijvingik heb je duizend keer gebeld\"?",
+      "o": [
+       "Metafoor",
+       "Stijlfiguren",
+       "Hyperbool",
+       "Opsomming"
+      ],
+      "c": 2,
+      "u": "Het juiste begrip is «Hyperbool»: sterke overdrijvingik heb je duizend keer gebeld.",
+      "d": 2
+     },
+     {
+      "v": "Welke term past bij: \"sterke overdrijvingik heb je duizend keer gebeld\"?",
+      "o": [
+       "Hyperbool",
+       "Vergelijking",
+       "Vertelperspectief",
+       "Metafoor"
+      ],
+      "c": 0,
       "u": "Het juiste begrip is «Hyperbool»: sterke overdrijvingik heb je duizend keer gebeld.",
       "d": 3
      }
@@ -2144,34 +3584,106 @@ var VAKKEN = [
      {
       "v": "Wat betekent «Modelleercyclus»?",
       "o": [
-       "stijgt, maar steeds langzamer",
-       "hoogste − laagste waarde",
-       "alle objecten van je onderzoek; steekproef: een selectie eruit.",
-       "probleem → model → rekenen → terugvertalen"
+       "een lijn die de grafiek steeds dichter nadert maar niet raakt",
+       "het herhaald vermenigvuldigen met hetzelfde grondtal",
+       "probleem → model → rekenen → terugvertalen",
+       "een gelijkheid met een onbekende die je oplost"
+      ],
+      "c": 2,
+      "u": "«Modelleercyclus» betekent: probleem → model → rekenen → terugvertalen.",
+      "d": 1
+     },
+     {
+      "v": "Welk begrip hoort bij deze omschrijving: \"probleem → model → rekenen → terugvertalen\"?",
+      "o": [
+       "Kwadratisch",
+       "Lineair",
+       "Modelleercyclus",
+       "Kans"
+      ],
+      "c": 2,
+      "u": "Het juiste begrip is «Modelleercyclus»: probleem → model → rekenen → terugvertalen.",
+      "d": 2
+     },
+     {
+      "v": "Welke term past bij: \"probleem → model → rekenen → terugvertalen\"?",
+      "o": [
+       "Kwadratisch",
+       "Modelleercyclus",
+       "Tegenvoorbeeld",
+       "Interpoleren/extrapoleren"
+      ],
+      "c": 1,
+      "u": "Het juiste begrip is «Modelleercyclus»: probleem → model → rekenen → terugvertalen.",
+      "d": 3
+     },
+     {
+      "v": "Wat betekent «Representaties»?",
+      "o": [
+       "één geval dat een bewering weerlegt",
+       "een verband met een constante toename; de grafiek is een rechte lijn",
+       "een maat voor de spreiding rond het gemiddelde",
+       "tabel, grafiek, formule, woorden"
       ],
       "c": 3,
-      "u": "«Modelleercyclus» betekent: probleem → model → rekenen → terugvertalen.",
+      "u": "«Representaties» betekent: tabel, grafiek, formule, woorden.",
       "d": 1
      },
      {
       "v": "Welk begrip hoort bij deze omschrijving: \"tabel, grafiek, formule, woorden\"?",
       "o": [
-       "Toenemende stijging",
-       "Gemiddelde",
-       "Toenemende daling",
-       "Representaties"
+       "Representaties",
+       "Kwadratisch verband",
+       "Steekproef",
+       "Helling"
       ],
-      "c": 3,
+      "c": 0,
       "u": "Het juiste begrip is «Representaties»: tabel, grafiek, formule, woorden.",
       "d": 2
      },
      {
+      "v": "Welke term past bij: \"tabel, grafiek, formule, woorden\"?",
+      "o": [
+       "Representaties",
+       "Interpoleren/extrapoleren",
+       "Kwadratisch",
+       "Modelleercyclus"
+      ],
+      "c": 0,
+      "u": "Het juiste begrip is «Representaties»: tabel, grafiek, formule, woorden.",
+      "d": 3
+     },
+     {
+      "v": "Wat betekent «Verband herkennen»?",
+      "o": [
+       "de lijn die de grafiek in precies één punt raakt",
+       "lineair, kwadratisch, exponentieel",
+       "een verband waarvan de grafiek een parabool is",
+       "het getal waarmee je per tijdstap vermenigvuldigt"
+      ],
+      "c": 1,
+      "u": "«Verband herkennen» betekent: lineair, kwadratisch, exponentieel.",
+      "d": 1
+     },
+     {
       "v": "Welk begrip hoort bij deze omschrijving: \"lineair, kwadratisch, exponentieel\"?",
+      "o": [
+       "Complement",
+       "Kwadratisch",
+       "Verband herkennen",
+       "Groeifactor"
+      ],
+      "c": 2,
+      "u": "Het juiste begrip is «Verband herkennen»: lineair, kwadratisch, exponentieel.",
+      "d": 2
+     },
+     {
+      "v": "Welke term past bij: \"lineair, kwadratisch, exponentieel\"?",
       "o": [
        "Tegenvoorbeeld",
        "Representaties",
        "Verband herkennen",
-       "Lineair"
+       "Modelleercyclus"
       ],
       "c": 2,
       "u": "Het juiste begrip is «Verband herkennen»: lineair, kwadratisch, exponentieel.",
@@ -2181,49 +3693,145 @@ var VAKKEN = [
       "v": "Wat betekent «Interpoleren/extrapoleren»?",
       "o": [
        "binnen/buiten het meetbereik schatten",
-       "daalt, maar steeds langzamer",
-       "gelijke stappen erbij/eraf (+ vast getal)",
-       "tabel, grafiek, formule, woorden"
+       "het antwoord op de vraag: tot welke macht verhef ik het grondtal?",
+       "de verzameling toegestane invoerwaarden",
+       "lineair, kwadratisch, exponentieel"
       ],
       "c": 0,
       "u": "«Interpoleren/extrapoleren» betekent: binnen/buiten het meetbereik schatten.",
       "d": 1
      },
      {
-      "v": "Welk begrip hoort bij deze omschrijving: \"één geval dat een bewering weerlegt\"?",
+      "v": "Welk begrip hoort bij deze omschrijving: \"binnen/buiten het meetbereik schatten\"?",
       "o": [
-       "Verband herkennen",
+       "Vergelijking",
+       "Interpoleren/extrapoleren",
        "Tegenvoorbeeld",
-       "Spreidingsbreedte",
-       "Modelleercyclus"
+       "Steekproef"
       ],
       "c": 1,
+      "u": "Het juiste begrip is «Interpoleren/extrapoleren»: binnen/buiten het meetbereik schatten.",
+      "d": 2
+     },
+     {
+      "v": "Welke term past bij: \"binnen/buiten het meetbereik schatten\"?",
+      "o": [
+       "Interpoleren/extrapoleren",
+       "Modelleercyclus",
+       "Verband herkennen",
+       "Lineair"
+      ],
+      "c": 0,
+      "u": "Het juiste begrip is «Interpoleren/extrapoleren»: binnen/buiten het meetbereik schatten.",
+      "d": 3
+     },
+     {
+      "v": "Wat betekent «Tegenvoorbeeld»?",
+      "o": [
+       "één geval dat een bewering weerlegt",
+       "de verzameling mogelijke uitvoerwaarden",
+       "een verband waarvan de grafiek een parabool is",
+       "gelijke stappen erbij/eraf (+ vast getal)"
+      ],
+      "c": 0,
+      "u": "«Tegenvoorbeeld» betekent: één geval dat een bewering weerlegt.",
+      "d": 1
+     },
+     {
+      "v": "Welk begrip hoort bij deze omschrijving: \"één geval dat een bewering weerlegt\"?",
+      "o": [
+       "Tegenvoorbeeld",
+       "Extreem",
+       "Standaardafwijking",
+       "Asymptoot"
+      ],
+      "c": 0,
       "u": "Het juiste begrip is «Tegenvoorbeeld»: één geval dat een bewering weerlegt.",
       "d": 2
      },
      {
-      "v": "Welk begrip hoort bij deze omschrijving: \"gelijke stappen erbij/eraf (+ vast getal)\"?",
+      "v": "Welke term past bij: \"één geval dat een bewering weerlegt\"?",
       "o": [
-       "Lineair",
-       "Interpoleren/extrapoleren",
        "Tegenvoorbeeld",
-       "Representaties"
+       "Lineair",
+       "Verband herkennen",
+       "Interpoleren/extrapoleren"
       ],
       "c": 0,
+      "u": "Het juiste begrip is «Tegenvoorbeeld»: één geval dat een bewering weerlegt.",
+      "d": 3
+     },
+     {
+      "v": "Wat betekent «Lineair»?",
+      "o": [
+       "een rangschikking waarbij de volgorde meetelt",
+       "een verband met een constante toename; de grafiek is een rechte lijn",
+       "de gemiddelde helling over een interval",
+       "gelijke stappen erbij/eraf (+ vast getal)"
+      ],
+      "c": 3,
+      "u": "«Lineair» betekent: gelijke stappen erbij/eraf (+ vast getal).",
+      "d": 1
+     },
+     {
+      "v": "Welk begrip hoort bij deze omschrijving: \"gelijke stappen erbij/eraf (+ vast getal)\"?",
+      "o": [
+       "Raaklijn",
+       "Helling",
+       "Variabele",
+       "Lineair"
+      ],
+      "c": 3,
+      "u": "Het juiste begrip is «Lineair»: gelijke stappen erbij/eraf (+ vast getal).",
+      "d": 2
+     },
+     {
+      "v": "Welke term past bij: \"gelijke stappen erbij/eraf (+ vast getal)\"?",
+      "o": [
+       "Verband herkennen",
+       "Lineair",
+       "Representaties",
+       "Interpoleren/extrapoleren"
+      ],
+      "c": 1,
       "u": "Het juiste begrip is «Lineair»: gelijke stappen erbij/eraf (+ vast getal).",
       "d": 3
      },
      {
       "v": "Wat betekent «Kwadratisch»?",
       "o": [
-       "OR > 3 (of < ⅓)",
-       "de tweede verschillen zijn gelijk",
-       "stijgt, maar steeds langzamer",
-       "tabel, grafiek, formule, woorden"
+       "één geval dat een bewering weerlegt",
+       "een gelijkheid met een onbekende die je oplost",
+       "de verhouding tussen gunstige en mogelijke uitkomsten",
+       "de tweede verschillen zijn gelijk"
       ],
-      "c": 1,
+      "c": 3,
       "u": "«Kwadratisch» betekent: de tweede verschillen zijn gelijk.",
       "d": 1
+     },
+     {
+      "v": "Welk begrip hoort bij deze omschrijving: \"de tweede verschillen zijn gelijk\"?",
+      "o": [
+       "Interpoleren/extrapoleren",
+       "Faculteit",
+       "Lineair verband",
+       "Kwadratisch"
+      ],
+      "c": 3,
+      "u": "Het juiste begrip is «Kwadratisch»: de tweede verschillen zijn gelijk.",
+      "d": 2
+     },
+     {
+      "v": "Welke term past bij: \"de tweede verschillen zijn gelijk\"?",
+      "o": [
+       "Lineair",
+       "Kwadratisch",
+       "Interpoleren/extrapoleren",
+       "Tegenvoorbeeld"
+      ],
+      "c": 1,
+      "u": "Het juiste begrip is «Kwadratisch»: de tweede verschillen zijn gelijk.",
+      "d": 3
      }
     ],
     "oe": [
@@ -2516,6 +4124,258 @@ var VAKKEN = [
       ],
       "c": 0,
       "u": "Combinatie: 5 nCr 2 = 5! / (2! · 3!) = 10."
+     },
+     {
+      "v": "Wat betekent «Variabele»?",
+      "o": [
+       "het herhaald vermenigvuldigen met hetzelfde grondtal",
+       "de verzameling mogelijke uitvoerwaarden",
+       "een symbool voor een getal dat kan variëren",
+       "een verband met een vaste groeifactor per stap"
+      ],
+      "c": 2,
+      "u": "«Variabele» betekent: een symbool voor een getal dat kan variëren.",
+      "d": 1
+     },
+     {
+      "v": "Welk begrip hoort bij deze omschrijving: \"een symbool voor een getal dat kan variëren\"?",
+      "o": [
+       "Raaklijn",
+       "Variabele",
+       "Gemiddelde",
+       "Groeifactor"
+      ],
+      "c": 1,
+      "u": "Het juiste begrip is «Variabele»: een symbool voor een getal dat kan variëren.",
+      "d": 2
+     },
+     {
+      "v": "Welke term past bij: \"een symbool voor een getal dat kan variëren\"?",
+      "o": [
+       "Variabele",
+       "Logaritme",
+       "Combinatie",
+       "Permutatie"
+      ],
+      "c": 0,
+      "u": "Het juiste begrip is «Variabele»: een symbool voor een getal dat kan variëren.",
+      "d": 3
+     },
+     {
+      "v": "Wat betekent «Vergelijking»?",
+      "o": [
+       "de tweede verschillen zijn gelijk",
+       "een invoerwaarde waar de grafiek de horizontale as snijdt",
+       "een gelijkheid met een onbekende die je oplost",
+       "de kansverdeling van het aantal successen bij herhaling"
+      ],
+      "c": 2,
+      "u": "«Vergelijking» betekent: een gelijkheid met een onbekende die je oplost. Anders dan een metafoor: een vergelijking gebruikt \"als\" of \"zoals\".",
+      "d": 1
+     },
+     {
+      "v": "Welk begrip hoort bij deze omschrijving: \"een gelijkheid met een onbekende die je oplost\"?",
+      "o": [
+       "Permutatie",
+       "Modelleercyclus",
+       "Verband herkennen",
+       "Vergelijking"
+      ],
+      "c": 3,
+      "u": "Het juiste begrip is «Vergelijking»: een gelijkheid met een onbekende die je oplost. Anders dan een metafoor: een vergelijking gebruikt \"als\" of \"zoals\".",
+      "d": 2
+     },
+     {
+      "v": "Welke term past bij: \"een gelijkheid met een onbekende die je oplost\"?",
+      "o": [
+       "Permutatie",
+       "Combinatie",
+       "Logaritme",
+       "Vergelijking"
+      ],
+      "c": 3,
+      "u": "Het juiste begrip is «Vergelijking»: een gelijkheid met een onbekende die je oplost. Anders dan een metafoor: een vergelijking gebruikt \"als\" of \"zoals\".",
+      "d": 3
+     },
+     {
+      "v": "Wat betekent «Machten»?",
+      "o": [
+       "het product van alle gehele getallen tot en met een getal",
+       "het herhaald vermenigvuldigen met hetzelfde grondtal",
+       "een lijn die de grafiek steeds dichter nadert maar niet raakt",
+       "een maat voor de spreiding rond het gemiddelde"
+      ],
+      "c": 1,
+      "u": "«Machten» betekent: het herhaald vermenigvuldigen met hetzelfde grondtal.",
+      "d": 1
+     },
+     {
+      "v": "Welk begrip hoort bij deze omschrijving: \"het herhaald vermenigvuldigen met hetzelfde grondtal\"?",
+      "o": [
+       "Bereik",
+       "Combinatie",
+       "Variabele",
+       "Machten"
+      ],
+      "c": 3,
+      "u": "Het juiste begrip is «Machten»: het herhaald vermenigvuldigen met hetzelfde grondtal.",
+      "d": 2
+     },
+     {
+      "v": "Welke term past bij: \"het herhaald vermenigvuldigen met hetzelfde grondtal\"?",
+      "o": [
+       "Machten",
+       "Combinatie",
+       "Faculteit",
+       "Vergelijking"
+      ],
+      "c": 0,
+      "u": "Het juiste begrip is «Machten»: het herhaald vermenigvuldigen met hetzelfde grondtal.",
+      "d": 3
+     },
+     {
+      "v": "Wat betekent «Logaritme»?",
+      "o": [
+       "het getal waarmee je per tijdstap vermenigvuldigt",
+       "tabel, grafiek, formule, woorden",
+       "gelijke stappen erbij/eraf (+ vast getal)",
+       "het antwoord op de vraag: tot welke macht verhef ik het grondtal?"
+      ],
+      "c": 3,
+      "u": "«Logaritme» betekent: het antwoord op de vraag: tot welke macht verhef ik het grondtal?.",
+      "d": 1
+     },
+     {
+      "v": "Welk begrip hoort bij deze omschrijving: \"het antwoord op de vraag: tot welke macht verhef ik het grondtal?\"?",
+      "o": [
+       "Complement",
+       "Afgeleide",
+       "Logaritme",
+       "Asymptoot"
+      ],
+      "c": 2,
+      "u": "Het juiste begrip is «Logaritme»: het antwoord op de vraag: tot welke macht verhef ik het grondtal?.",
+      "d": 2
+     },
+     {
+      "v": "Welke term past bij: \"het antwoord op de vraag: tot welke macht verhef ik het grondtal?\"?",
+      "o": [
+       "Vergelijking",
+       "Variabele",
+       "Logaritme",
+       "Combinatie"
+      ],
+      "c": 2,
+      "u": "Het juiste begrip is «Logaritme»: het antwoord op de vraag: tot welke macht verhef ik het grondtal?.",
+      "d": 3
+     },
+     {
+      "v": "Wat betekent «Permutatie»?",
+      "o": [
+       "lineair, kwadratisch, exponentieel",
+       "een gelijkheid met een onbekende die je oplost",
+       "een invoerwaarde waar de grafiek de horizontale as snijdt",
+       "een rangschikking waarbij de volgorde meetelt"
+      ],
+      "c": 3,
+      "u": "«Permutatie» betekent: een rangschikking waarbij de volgorde meetelt.",
+      "d": 1
+     },
+     {
+      "v": "Welk begrip hoort bij deze omschrijving: \"een rangschikking waarbij de volgorde meetelt\"?",
+      "o": [
+       "Exponentieel verband",
+       "Permutatie",
+       "Complement",
+       "Vergelijking"
+      ],
+      "c": 1,
+      "u": "Het juiste begrip is «Permutatie»: een rangschikking waarbij de volgorde meetelt.",
+      "d": 2
+     },
+     {
+      "v": "Welke term past bij: \"een rangschikking waarbij de volgorde meetelt\"?",
+      "o": [
+       "Permutatie",
+       "Faculteit",
+       "Logaritme",
+       "Variabele"
+      ],
+      "c": 0,
+      "u": "Het juiste begrip is «Permutatie»: een rangschikking waarbij de volgorde meetelt.",
+      "d": 3
+     },
+     {
+      "v": "Wat betekent «Combinatie»?",
+      "o": [
+       "gelijke stappen erbij/eraf (+ vast getal)",
+       "een keuze waarbij de volgorde niet meetelt",
+       "de gemiddelde helling over een interval",
+       "een symmetrische, klokvormige kansverdeling"
+      ],
+      "c": 1,
+      "u": "«Combinatie» betekent: een keuze waarbij de volgorde niet meetelt.",
+      "d": 1
+     },
+     {
+      "v": "Welk begrip hoort bij deze omschrijving: \"een keuze waarbij de volgorde niet meetelt\"?",
+      "o": [
+       "Steekproef",
+       "Bereik",
+       "Verband herkennen",
+       "Combinatie"
+      ],
+      "c": 3,
+      "u": "Het juiste begrip is «Combinatie»: een keuze waarbij de volgorde niet meetelt.",
+      "d": 2
+     },
+     {
+      "v": "Welke term past bij: \"een keuze waarbij de volgorde niet meetelt\"?",
+      "o": [
+       "Logaritme",
+       "Vergelijking",
+       "Variabele",
+       "Combinatie"
+      ],
+      "c": 3,
+      "u": "Het juiste begrip is «Combinatie»: een keuze waarbij de volgorde niet meetelt.",
+      "d": 3
+     },
+     {
+      "v": "Wat betekent «Faculteit»?",
+      "o": [
+       "probleem → model → rekenen → terugvertalen",
+       "het product van alle gehele getallen tot en met een getal",
+       "de verzameling mogelijke uitvoerwaarden",
+       "de verhouding tussen gunstige en mogelijke uitkomsten"
+      ],
+      "c": 1,
+      "u": "«Faculteit» betekent: het product van alle gehele getallen tot en met een getal.",
+      "d": 1
+     },
+     {
+      "v": "Welk begrip hoort bij deze omschrijving: \"het product van alle gehele getallen tot en met een getal\"?",
+      "o": [
+       "Extreem",
+       "Mediaan",
+       "Faculteit",
+       "Differentiequotiënt"
+      ],
+      "c": 2,
+      "u": "Het juiste begrip is «Faculteit»: het product van alle gehele getallen tot en met een getal.",
+      "d": 2
+     },
+     {
+      "v": "Welke term past bij: \"het product van alle gehele getallen tot en met een getal\"?",
+      "o": [
+       "Faculteit",
+       "Permutatie",
+       "Variabele",
+       "Combinatie"
+      ],
+      "c": 0,
+      "u": "Het juiste begrip is «Faculteit»: het product van alle gehele getallen tot en met een getal.",
+      "d": 3
      }
     ],
     "oe": [
@@ -2588,6 +4448,36 @@ var VAKKEN = [
       ],
       "c": 0,
       "u": "Kies een rekenvoorbeeld: Nederland verbruik 1 en prijs 14 → totaal 1·14 = 14. Finland verbruik 12 en prijs 1 → totaal 12·1 = 12. Finland gaf (14 − 12)/14 ·100 ≈ 14,2% minder uit, dus 14%."
+     }
+    ],
+    "begrippen": [
+     {
+      "t": "Variabele",
+      "d": "een symbool voor een getal dat kan variëren"
+     },
+     {
+      "t": "Vergelijking",
+      "d": "een gelijkheid met een onbekende die je oplost"
+     },
+     {
+      "t": "Machten",
+      "d": "het herhaald vermenigvuldigen met hetzelfde grondtal"
+     },
+     {
+      "t": "Logaritme",
+      "d": "het antwoord op de vraag: tot welke macht verhef ik het grondtal?"
+     },
+     {
+      "t": "Permutatie",
+      "d": "een rangschikking waarbij de volgorde meetelt"
+     },
+     {
+      "t": "Combinatie",
+      "d": "een keuze waarbij de volgorde niet meetelt"
+     },
+     {
+      "t": "Faculteit",
+      "d": "het product van alle gehele getallen tot en met een getal"
      }
     ]
    },
@@ -2798,6 +4688,330 @@ var VAKKEN = [
       ],
       "c": 0,
       "u": "Bij verzadiging vlakt de groei af en nadert de hoeveelheid een maximum."
+     },
+     {
+      "v": "Wat betekent «Functie»?",
+      "o": [
+       "een symmetrische, klokvormige kansverdeling",
+       "een verband dat bij elke invoer precies één uitvoer geeft",
+       "een lijn die de grafiek steeds dichter nadert maar niet raakt",
+       "een verband met een constante toename; de grafiek is een rechte lijn"
+      ],
+      "c": 1,
+      "u": "«Functie» betekent: een verband dat bij elke invoer precies één uitvoer geeft.",
+      "d": 1
+     },
+     {
+      "v": "Welk begrip hoort bij deze omschrijving: \"een verband dat bij elke invoer precies één uitvoer geeft\"?",
+      "o": [
+       "Functie",
+       "Domein",
+       "Tegenvoorbeeld",
+       "Logaritme"
+      ],
+      "c": 0,
+      "u": "Het juiste begrip is «Functie»: een verband dat bij elke invoer precies één uitvoer geeft.",
+      "d": 2
+     },
+     {
+      "v": "Welke term past bij: \"een verband dat bij elke invoer precies één uitvoer geeft\"?",
+      "o": [
+       "Functie",
+       "Kwadratisch verband",
+       "Domein",
+       "Exponentieel verband"
+      ],
+      "c": 0,
+      "u": "Het juiste begrip is «Functie»: een verband dat bij elke invoer precies één uitvoer geeft.",
+      "d": 3
+     },
+     {
+      "v": "Wat betekent «Lineair verband»?",
+      "o": [
+       "een verband waarvan de grafiek een parabool is",
+       "een symbool voor een getal dat kan variëren",
+       "een maximum of minimum van een functie",
+       "een verband met een constante toename; de grafiek is een rechte lijn"
+      ],
+      "c": 3,
+      "u": "«Lineair verband» betekent: een verband met een constante toename; de grafiek is een rechte lijn.",
+      "d": 1
+     },
+     {
+      "v": "Welk begrip hoort bij deze omschrijving: \"een verband met een constante toename; de grafiek is een rechte lijn\"?",
+      "o": [
+       "Logaritme",
+       "Lineair verband",
+       "Machten",
+       "Raaklijn"
+      ],
+      "c": 1,
+      "u": "Het juiste begrip is «Lineair verband»: een verband met een constante toename; de grafiek is een rechte lijn.",
+      "d": 2
+     },
+     {
+      "v": "Welke term past bij: \"een verband met een constante toename; de grafiek is een rechte lijn\"?",
+      "o": [
+       "Domein",
+       "Asymptoot",
+       "Bereik",
+       "Lineair verband"
+      ],
+      "c": 3,
+      "u": "Het juiste begrip is «Lineair verband»: een verband met een constante toename; de grafiek is een rechte lijn.",
+      "d": 3
+     },
+     {
+      "v": "Wat betekent «Exponentieel verband»?",
+      "o": [
+       "een verband dat bij elke invoer precies één uitvoer geeft",
+       "het getal waarmee je per tijdstap vermenigvuldigt",
+       "een verband met een vaste groeifactor per stap",
+       "één geval dat een bewering weerlegt"
+      ],
+      "c": 2,
+      "u": "«Exponentieel verband» betekent: een verband met een vaste groeifactor per stap.",
+      "d": 1
+     },
+     {
+      "v": "Welk begrip hoort bij deze omschrijving: \"een verband met een vaste groeifactor per stap\"?",
+      "o": [
+       "Faculteit",
+       "Representaties",
+       "Helling",
+       "Exponentieel verband"
+      ],
+      "c": 3,
+      "u": "Het juiste begrip is «Exponentieel verband»: een verband met een vaste groeifactor per stap.",
+      "d": 2
+     },
+     {
+      "v": "Welke term past bij: \"een verband met een vaste groeifactor per stap\"?",
+      "o": [
+       "Domein",
+       "Exponentieel verband",
+       "Functie",
+       "Asymptoot"
+      ],
+      "c": 1,
+      "u": "Het juiste begrip is «Exponentieel verband»: een verband met een vaste groeifactor per stap.",
+      "d": 3
+     },
+     {
+      "v": "Wat betekent «Kwadratisch verband»?",
+      "o": [
+       "de middelste waarde van een geordende reeks",
+       "een rangschikking waarbij de volgorde meetelt",
+       "een verband waarvan de grafiek een parabool is",
+       "het herhaald vermenigvuldigen met hetzelfde grondtal"
+      ],
+      "c": 2,
+      "u": "«Kwadratisch verband» betekent: een verband waarvan de grafiek een parabool is.",
+      "d": 1
+     },
+     {
+      "v": "Welk begrip hoort bij deze omschrijving: \"een verband waarvan de grafiek een parabool is\"?",
+      "o": [
+       "Faculteit",
+       "Kwadratisch verband",
+       "Bereik",
+       "Mediaan"
+      ],
+      "c": 1,
+      "u": "Het juiste begrip is «Kwadratisch verband»: een verband waarvan de grafiek een parabool is.",
+      "d": 2
+     },
+     {
+      "v": "Welke term past bij: \"een verband waarvan de grafiek een parabool is\"?",
+      "o": [
+       "Groeifactor",
+       "Domein",
+       "Kwadratisch verband",
+       "Asymptoot"
+      ],
+      "c": 2,
+      "u": "Het juiste begrip is «Kwadratisch verband»: een verband waarvan de grafiek een parabool is.",
+      "d": 3
+     },
+     {
+      "v": "Wat betekent «Groeifactor»?",
+      "o": [
+       "een verband met een vaste groeifactor per stap",
+       "het getal waarmee je per tijdstap vermenigvuldigt",
+       "een maat voor de spreiding rond het gemiddelde",
+       "een symbool voor een getal dat kan variëren"
+      ],
+      "c": 1,
+      "u": "«Groeifactor» betekent: het getal waarmee je per tijdstap vermenigvuldigt.",
+      "d": 1
+     },
+     {
+      "v": "Welk begrip hoort bij deze omschrijving: \"het getal waarmee je per tijdstap vermenigvuldigt\"?",
+      "o": [
+       "Steekproef",
+       "Kans",
+       "Domein",
+       "Groeifactor"
+      ],
+      "c": 3,
+      "u": "Het juiste begrip is «Groeifactor»: het getal waarmee je per tijdstap vermenigvuldigt.",
+      "d": 2
+     },
+     {
+      "v": "Welke term past bij: \"het getal waarmee je per tijdstap vermenigvuldigt\"?",
+      "o": [
+       "Groeifactor",
+       "Kwadratisch verband",
+       "Asymptoot",
+       "Exponentieel verband"
+      ],
+      "c": 0,
+      "u": "Het juiste begrip is «Groeifactor»: het getal waarmee je per tijdstap vermenigvuldigt.",
+      "d": 3
+     },
+     {
+      "v": "Wat betekent «Asymptoot»?",
+      "o": [
+       "een verband dat bij elke invoer precies één uitvoer geeft",
+       "een lijn die de grafiek steeds dichter nadert maar niet raakt",
+       "een invoerwaarde waar de grafiek de horizontale as snijdt",
+       "de lijn die de grafiek in precies één punt raakt"
+      ],
+      "c": 1,
+      "u": "«Asymptoot» betekent: een lijn die de grafiek steeds dichter nadert maar niet raakt.",
+      "d": 1
+     },
+     {
+      "v": "Welk begrip hoort bij deze omschrijving: \"een lijn die de grafiek steeds dichter nadert maar niet raakt\"?",
+      "o": [
+       "Kans",
+       "Differentiequotiënt",
+       "Representaties",
+       "Asymptoot"
+      ],
+      "c": 3,
+      "u": "Het juiste begrip is «Asymptoot»: een lijn die de grafiek steeds dichter nadert maar niet raakt.",
+      "d": 2
+     },
+     {
+      "v": "Welke term past bij: \"een lijn die de grafiek steeds dichter nadert maar niet raakt\"?",
+      "o": [
+       "Bereik",
+       "Domein",
+       "Functie",
+       "Asymptoot"
+      ],
+      "c": 3,
+      "u": "Het juiste begrip is «Asymptoot»: een lijn die de grafiek steeds dichter nadert maar niet raakt.",
+      "d": 3
+     },
+     {
+      "v": "Wat betekent «Nulpunt»?",
+      "o": [
+       "een invoerwaarde waar de grafiek de horizontale as snijdt",
+       "een verband dat bij elke invoer precies één uitvoer geeft",
+       "de som van de waarden gedeeld door hun aantal",
+       "de gemiddelde helling over een interval"
+      ],
+      "c": 0,
+      "u": "«Nulpunt» betekent: een invoerwaarde waar de grafiek de horizontale as snijdt.",
+      "d": 1
+     },
+     {
+      "v": "Welk begrip hoort bij deze omschrijving: \"een invoerwaarde waar de grafiek de horizontale as snijdt\"?",
+      "o": [
+       "Asymptoot",
+       "Nulpunt",
+       "Variabele",
+       "Steekproef"
+      ],
+      "c": 1,
+      "u": "Het juiste begrip is «Nulpunt»: een invoerwaarde waar de grafiek de horizontale as snijdt.",
+      "d": 2
+     },
+     {
+      "v": "Welke term past bij: \"een invoerwaarde waar de grafiek de horizontale as snijdt\"?",
+      "o": [
+       "Bereik",
+       "Lineair verband",
+       "Nulpunt",
+       "Domein"
+      ],
+      "c": 2,
+      "u": "Het juiste begrip is «Nulpunt»: een invoerwaarde waar de grafiek de horizontale as snijdt.",
+      "d": 3
+     },
+     {
+      "v": "Wat betekent «Domein»?",
+      "o": [
+       "de tweede verschillen zijn gelijk",
+       "de verzameling toegestane invoerwaarden",
+       "binnen/buiten het meetbereik schatten",
+       "een symmetrische, klokvormige kansverdeling"
+      ],
+      "c": 1,
+      "u": "«Domein» betekent: de verzameling toegestane invoerwaarden.",
+      "d": 1
+     },
+     {
+      "v": "Welk begrip hoort bij deze omschrijving: \"de verzameling toegestane invoerwaarden\"?",
+      "o": [
+       "Groeifactor",
+       "Domein",
+       "Nulpunt",
+       "Bereik"
+      ],
+      "c": 1,
+      "u": "Het juiste begrip is «Domein»: de verzameling toegestane invoerwaarden.",
+      "d": 2
+     },
+     {
+      "v": "Welke term past bij: \"de verzameling toegestane invoerwaarden\"?",
+      "o": [
+       "Lineair verband",
+       "Domein",
+       "Groeifactor",
+       "Functie"
+      ],
+      "c": 1,
+      "u": "Het juiste begrip is «Domein»: de verzameling toegestane invoerwaarden.",
+      "d": 3
+     },
+     {
+      "v": "Wat betekent «Bereik»?",
+      "o": [
+       "de verzameling mogelijke uitvoerwaarden",
+       "probleem → model → rekenen → terugvertalen",
+       "een deel van de populatie dat je onderzoekt",
+       "de verhouding tussen gunstige en mogelijke uitkomsten"
+      ],
+      "c": 0,
+      "u": "«Bereik» betekent: de verzameling mogelijke uitvoerwaarden.",
+      "d": 1
+     },
+     {
+      "v": "Welk begrip hoort bij deze omschrijving: \"de verzameling mogelijke uitvoerwaarden\"?",
+      "o": [
+       "Functie",
+       "Bereik",
+       "Exponentieel verband",
+       "Extreem"
+      ],
+      "c": 1,
+      "u": "Het juiste begrip is «Bereik»: de verzameling mogelijke uitvoerwaarden.",
+      "d": 2
+     },
+     {
+      "v": "Welke term past bij: \"de verzameling mogelijke uitvoerwaarden\"?",
+      "o": [
+       "Lineair verband",
+       "Bereik",
+       "Functie",
+       "Nulpunt"
+      ],
+      "c": 1,
+      "u": "Het juiste begrip is «Bereik»: de verzameling mogelijke uitvoerwaarden.",
+      "d": 3
      }
     ],
     "oe": [
@@ -2881,6 +5095,44 @@ var VAKKEN = [
       ],
       "c": 0,
       "u": "Toename per jaar: Zuid-Korea 2,198 − 1,711 = 0,487; Japan 1,945 − 1,631 = 0,314. Zuid-Korea bereikt 10 GB in 2032 (in 2031 nog 9,99; in 2032 al 10,48). Japan bereikt 10 GB pas in 2041. Verschil = 2041 − 2032 = 9 jaar."
+     }
+    ],
+    "begrippen": [
+     {
+      "t": "Functie",
+      "d": "een verband dat bij elke invoer precies één uitvoer geeft"
+     },
+     {
+      "t": "Lineair verband",
+      "d": "een verband met een constante toename; de grafiek is een rechte lijn"
+     },
+     {
+      "t": "Exponentieel verband",
+      "d": "een verband met een vaste groeifactor per stap"
+     },
+     {
+      "t": "Kwadratisch verband",
+      "d": "een verband waarvan de grafiek een parabool is"
+     },
+     {
+      "t": "Groeifactor",
+      "d": "het getal waarmee je per tijdstap vermenigvuldigt"
+     },
+     {
+      "t": "Asymptoot",
+      "d": "een lijn die de grafiek steeds dichter nadert maar niet raakt"
+     },
+     {
+      "t": "Nulpunt",
+      "d": "een invoerwaarde waar de grafiek de horizontale as snijdt"
+     },
+     {
+      "t": "Domein",
+      "d": "de verzameling toegestane invoerwaarden"
+     },
+     {
+      "t": "Bereik",
+      "d": "de verzameling mogelijke uitvoerwaarden"
      }
     ]
    },
@@ -3117,52 +5369,184 @@ var VAKKEN = [
       "u": "Helling = Δy / Δx; een grotere noemer geeft een kleinere helling."
      },
      {
-      "v": "Wat betekent «Toenemende stijging»?",
+      "v": "Wat betekent «Afgeleide»?",
       "o": [
-       "meest voorkomende waarde",
-       "probleem → model → rekenen → terugvertalen",
-       "stijgt steeds sneller",
-       "alle objecten van je onderzoek; steekproef: een selectie eruit."
+       "een gelijkheid met een onbekende die je oplost",
+       "de functie die de helling van de grafiek in elk punt geeft",
+       "een verband met een constante toename; de grafiek is een rechte lijn",
+       "een invoerwaarde waar de grafiek de horizontale as snijdt"
       ],
-      "c": 2,
-      "u": "«Toenemende stijging» betekent: stijgt steeds sneller.",
+      "c": 1,
+      "u": "«Afgeleide» betekent: de functie die de helling van de grafiek in elk punt geeft.",
       "d": 1
      },
      {
-      "v": "Welk begrip hoort bij deze omschrijving: \"stijgt, maar steeds langzamer\"?",
+      "v": "Welk begrip hoort bij deze omschrijving: \"de functie die de helling van de grafiek in elk punt geeft\"?",
       "o": [
-       "Spreidingsbreedte",
-       "Populatie",
-       "Afnemende stijging",
-       "Gemiddelde"
+       "Domein",
+       "Lineair",
+       "Logaritme",
+       "Afgeleide"
       ],
-      "c": 2,
-      "u": "Het juiste begrip is «Afnemende stijging»: stijgt, maar steeds langzamer.",
+      "c": 3,
+      "u": "Het juiste begrip is «Afgeleide»: de functie die de helling van de grafiek in elk punt geeft.",
       "d": 2
      },
      {
-      "v": "Welk begrip hoort bij deze omschrijving: \"daalt steeds sneller\"?",
+      "v": "Welke term past bij: \"de functie die de helling van de grafiek in elk punt geeft\"?",
       "o": [
-       "Afnemende stijging",
-       "Toenemende stijging",
-       "Afnemende daling",
-       "Toenemende daling"
+       "Differentiequotiënt",
+       "Extreem",
+       "Afgeleide",
+       "Helling"
       ],
-      "c": 3,
-      "u": "Het juiste begrip is «Toenemende daling»: daalt steeds sneller.",
+      "c": 2,
+      "u": "Het juiste begrip is «Afgeleide»: de functie die de helling van de grafiek in elk punt geeft.",
       "d": 3
      },
      {
-      "v": "Wat betekent «Afnemende daling»?",
+      "v": "Wat betekent «Helling»?",
       "o": [
-       "meest voorkomende waarde",
-       "stijgt, maar steeds langzamer",
-       "daalt, maar steeds langzamer",
-       "één geval dat een bewering weerlegt"
+       "een rangschikking waarbij de volgorde meetelt",
+       "probleem → model → rekenen → terugvertalen",
+       "de lijn die de grafiek in precies één punt raakt",
+       "de mate van stijging of daling van een grafiek"
+      ],
+      "c": 3,
+      "u": "«Helling» betekent: de mate van stijging of daling van een grafiek.",
+      "d": 1
+     },
+     {
+      "v": "Welk begrip hoort bij deze omschrijving: \"de mate van stijging of daling van een grafiek\"?",
+      "o": [
+       "Functie",
+       "Binomiale verdeling",
+       "Mediaan",
+       "Helling"
+      ],
+      "c": 3,
+      "u": "Het juiste begrip is «Helling»: de mate van stijging of daling van een grafiek.",
+      "d": 2
+     },
+     {
+      "v": "Welke term past bij: \"de mate van stijging of daling van een grafiek\"?",
+      "o": [
+       "Helling",
+       "Extreem",
+       "Afgeleide",
+       "Raaklijn"
+      ],
+      "c": 0,
+      "u": "Het juiste begrip is «Helling»: de mate van stijging of daling van een grafiek.",
+      "d": 3
+     },
+     {
+      "v": "Wat betekent «Differentiequotiënt»?",
+      "o": [
+       "de verzameling mogelijke uitvoerwaarden",
+       "de middelste waarde van een geordende reeks",
+       "de gemiddelde helling over een interval",
+       "een rangschikking waarbij de volgorde meetelt"
       ],
       "c": 2,
-      "u": "«Afnemende daling» betekent: daalt, maar steeds langzamer.",
+      "u": "«Differentiequotiënt» betekent: de gemiddelde helling over een interval.",
       "d": 1
+     },
+     {
+      "v": "Welk begrip hoort bij deze omschrijving: \"de gemiddelde helling over een interval\"?",
+      "o": [
+       "Differentiequotiënt",
+       "Mediaan",
+       "Binomiale verdeling",
+       "Kans"
+      ],
+      "c": 0,
+      "u": "Het juiste begrip is «Differentiequotiënt»: de gemiddelde helling over een interval.",
+      "d": 2
+     },
+     {
+      "v": "Welke term past bij: \"de gemiddelde helling over een interval\"?",
+      "o": [
+       "Differentiequotiënt",
+       "Raaklijn",
+       "Helling",
+       "Afgeleide"
+      ],
+      "c": 0,
+      "u": "Het juiste begrip is «Differentiequotiënt»: de gemiddelde helling over een interval.",
+      "d": 3
+     },
+     {
+      "v": "Wat betekent «Extreem»?",
+      "o": [
+       "het antwoord op de vraag: tot welke macht verhef ik het grondtal?",
+       "een verband met een constante toename; de grafiek is een rechte lijn",
+       "een maximum of minimum van een functie",
+       "tabel, grafiek, formule, woorden"
+      ],
+      "c": 2,
+      "u": "«Extreem» betekent: een maximum of minimum van een functie.",
+      "d": 1
+     },
+     {
+      "v": "Welk begrip hoort bij deze omschrijving: \"een maximum of minimum van een functie\"?",
+      "o": [
+       "Nulpunt",
+       "Extreem",
+       "Complement",
+       "Bereik"
+      ],
+      "c": 1,
+      "u": "Het juiste begrip is «Extreem»: een maximum of minimum van een functie.",
+      "d": 2
+     },
+     {
+      "v": "Welke term past bij: \"een maximum of minimum van een functie\"?",
+      "o": [
+       "Extreem",
+       "Raaklijn",
+       "Differentiequotiënt",
+       "Helling"
+      ],
+      "c": 0,
+      "u": "Het juiste begrip is «Extreem»: een maximum of minimum van een functie.",
+      "d": 3
+     },
+     {
+      "v": "Wat betekent «Raaklijn»?",
+      "o": [
+       "de mate van stijging of daling van een grafiek",
+       "de lijn die de grafiek in precies één punt raakt",
+       "de tweede verschillen zijn gelijk",
+       "een deel van de populatie dat je onderzoekt"
+      ],
+      "c": 1,
+      "u": "«Raaklijn» betekent: de lijn die de grafiek in precies één punt raakt.",
+      "d": 1
+     },
+     {
+      "v": "Welk begrip hoort bij deze omschrijving: \"de lijn die de grafiek in precies één punt raakt\"?",
+      "o": [
+       "Raaklijn",
+       "Modelleercyclus",
+       "Bereik",
+       "Permutatie"
+      ],
+      "c": 0,
+      "u": "Het juiste begrip is «Raaklijn»: de lijn die de grafiek in precies één punt raakt.",
+      "d": 2
+     },
+     {
+      "v": "Welke term past bij: \"de lijn die de grafiek in precies één punt raakt\"?",
+      "o": [
+       "Helling",
+       "Raaklijn",
+       "Extreem",
+       "Differentiequotiënt"
+      ],
+      "c": 1,
+      "u": "Het juiste begrip is «Raaklijn»: de lijn die de grafiek in precies één punt raakt.",
+      "d": 3
      }
     ],
     "oe": [
@@ -3199,20 +5583,24 @@ var VAKKEN = [
     ],
     "begrippen": [
      {
-      "t": "Toenemende stijging",
-      "d": "stijgt steeds sneller"
+      "t": "Afgeleide",
+      "d": "de functie die de helling van de grafiek in elk punt geeft"
      },
      {
-      "t": "Afnemende stijging",
-      "d": "stijgt, maar steeds langzamer"
+      "t": "Helling",
+      "d": "de mate van stijging of daling van een grafiek"
      },
      {
-      "t": "Toenemende daling",
-      "d": "daalt steeds sneller"
+      "t": "Differentiequotiënt",
+      "d": "de gemiddelde helling over een interval"
      },
      {
-      "t": "Afnemende daling",
-      "d": "daalt, maar steeds langzamer"
+      "t": "Extreem",
+      "d": "een maximum of minimum van een functie"
+     },
+     {
+      "t": "Raaklijn",
+      "d": "de lijn die de grafiek in precies één punt raakt"
      }
     ]
    },
@@ -3491,75 +5879,291 @@ var VAKKEN = [
       "u": "OR > 3 (of < ⅓) duidt op een groot verschil tussen de groepen."
      },
      {
-      "v": "Wat betekent «Gemiddelde»?",
+      "v": "Wat betekent «Kans»?",
       "o": [
-       "alle objecten van je onderzoek; steekproef: een selectie eruit.",
-       "daalt, maar steeds langzamer",
-       "som van waarden / aantal",
-       "meest voorkomende waarde"
+       "de tweede verschillen zijn gelijk",
+       "de verhouding tussen gunstige en mogelijke uitkomsten",
+       "de lijn die de grafiek in precies één punt raakt",
+       "de som van de waarden gedeeld door hun aantal"
       ],
-      "c": 2,
-      "u": "«Gemiddelde» betekent: som van waarden / aantal.",
+      "c": 1,
+      "u": "«Kans» betekent: de verhouding tussen gunstige en mogelijke uitkomsten.",
       "d": 1
      },
      {
-      "v": "Welk begrip hoort bij deze omschrijving: \"middelste waarde (positie ½(n + 1))\"?",
+      "v": "Welk begrip hoort bij deze omschrijving: \"de verhouding tussen gunstige en mogelijke uitkomsten\"?",
       "o": [
-       "Modelleercyclus",
-       "Mediaan",
-       "Lineair",
-       "Tegenvoorbeeld"
+       "Normale verdeling",
+       "Kans",
+       "Bereik",
+       "Mediaan"
       ],
       "c": 1,
-      "u": "Het juiste begrip is «Mediaan»: middelste waarde (positie ½(n + 1)).",
+      "u": "Het juiste begrip is «Kans»: de verhouding tussen gunstige en mogelijke uitkomsten.",
       "d": 2
      },
      {
-      "v": "Welk begrip hoort bij deze omschrijving: \"meest voorkomende waarde\"?",
+      "v": "Welke term past bij: \"de verhouding tussen gunstige en mogelijke uitkomsten\"?",
       "o": [
-       "Odds-ratio (OR = ad/bc)",
        "Mediaan",
-       "Gemiddelde",
-       "Modus"
+       "Kans",
+       "Normale verdeling",
+       "Binomiale verdeling"
       ],
-      "c": 3,
-      "u": "Het juiste begrip is «Modus»: meest voorkomende waarde.",
+      "c": 1,
+      "u": "Het juiste begrip is «Kans»: de verhouding tussen gunstige en mogelijke uitkomsten.",
       "d": 3
      },
      {
-      "v": "Wat betekent «Spreidingsbreedte»?",
+      "v": "Wat betekent «Complement»?",
       "o": [
-       "stijgt steeds sneller",
-       "binnen/buiten het meetbereik schatten",
-       "daalt, maar steeds langzamer",
-       "hoogste − laagste waarde"
+       "de kans dat een gebeurtenis juist niet optreedt",
+       "een symmetrische, klokvormige kansverdeling",
+       "een keuze waarbij de volgorde niet meetelt",
+       "de verhouding tussen gunstige en mogelijke uitkomsten"
       ],
-      "c": 3,
-      "u": "«Spreidingsbreedte» betekent: hoogste − laagste waarde.",
+      "c": 0,
+      "u": "«Complement» betekent: de kans dat een gebeurtenis juist niet optreedt.",
       "d": 1
      },
      {
-      "v": "Welk begrip hoort bij deze omschrijving: \"OR > 3 (of < ⅓)\"?",
+      "v": "Welk begrip hoort bij deze omschrijving: \"de kans dat een gebeurtenis juist niet optreedt\"?",
       "o": [
-       "Odds-ratio (OR = ad/bc)",
-       "Populatie",
-       "Toenemende daling",
-       "Afnemende stijging"
+       "Complement",
+       "Normale verdeling",
+       "Extreem",
+       "Vergelijking"
       ],
       "c": 0,
-      "u": "Het juiste begrip is «Odds-ratio (OR = ad/bc)»: OR > 3 (of < ⅓).",
+      "u": "Het juiste begrip is «Complement»: de kans dat een gebeurtenis juist niet optreedt.",
       "d": 2
      },
      {
-      "v": "Welk begrip hoort bij deze omschrijving: \"alle objecten van je onderzoek; steekproef: een selectie eruit.\"?",
+      "v": "Welke term past bij: \"de kans dat een gebeurtenis juist niet optreedt\"?",
       "o": [
-       "Populatie",
-       "Odds-ratio (OR = ad/bc)",
-       "Modus",
+       "Mediaan",
+       "Kans",
+       "Steekproef",
+       "Complement"
+      ],
+      "c": 3,
+      "u": "Het juiste begrip is «Complement»: de kans dat een gebeurtenis juist niet optreedt.",
+      "d": 3
+     },
+     {
+      "v": "Wat betekent «Gemiddelde»?",
+      "o": [
+       "de som van de waarden gedeeld door hun aantal",
+       "één geval dat een bewering weerlegt",
+       "een lijn die de grafiek steeds dichter nadert maar niet raakt",
+       "een keuze waarbij de volgorde niet meetelt"
+      ],
+      "c": 0,
+      "u": "«Gemiddelde» betekent: de som van de waarden gedeeld door hun aantal.",
+      "d": 1
+     },
+     {
+      "v": "Welk begrip hoort bij deze omschrijving: \"de som van de waarden gedeeld door hun aantal\"?",
+      "o": [
+       "Tegenvoorbeeld",
+       "Bereik",
+       "Gemiddelde",
+       "Variabele"
+      ],
+      "c": 2,
+      "u": "Het juiste begrip is «Gemiddelde»: de som van de waarden gedeeld door hun aantal.",
+      "d": 2
+     },
+     {
+      "v": "Welke term past bij: \"de som van de waarden gedeeld door hun aantal\"?",
+      "o": [
+       "Gemiddelde",
+       "Steekproef",
+       "Normale verdeling",
        "Mediaan"
       ],
       "c": 0,
-      "u": "Het juiste begrip is «Populatie»: alle objecten van je onderzoek; steekproef: een selectie eruit..",
+      "u": "Het juiste begrip is «Gemiddelde»: de som van de waarden gedeeld door hun aantal.",
+      "d": 3
+     },
+     {
+      "v": "Wat betekent «Mediaan»?",
+      "o": [
+       "binnen/buiten het meetbereik schatten",
+       "de middelste waarde van een geordende reeks",
+       "een symmetrische, klokvormige kansverdeling",
+       "het herhaald vermenigvuldigen met hetzelfde grondtal"
+      ],
+      "c": 1,
+      "u": "«Mediaan» betekent: de middelste waarde van een geordende reeks.",
+      "d": 1
+     },
+     {
+      "v": "Welk begrip hoort bij deze omschrijving: \"de middelste waarde van een geordende reeks\"?",
+      "o": [
+       "Helling",
+       "Asymptoot",
+       "Domein",
+       "Mediaan"
+      ],
+      "c": 3,
+      "u": "Het juiste begrip is «Mediaan»: de middelste waarde van een geordende reeks.",
+      "d": 2
+     },
+     {
+      "v": "Welke term past bij: \"de middelste waarde van een geordende reeks\"?",
+      "o": [
+       "Mediaan",
+       "Steekproef",
+       "Complement",
+       "Binomiale verdeling"
+      ],
+      "c": 0,
+      "u": "Het juiste begrip is «Mediaan»: de middelste waarde van een geordende reeks.",
+      "d": 3
+     },
+     {
+      "v": "Wat betekent «Standaardafwijking»?",
+      "o": [
+       "de kansverdeling van het aantal successen bij herhaling",
+       "de gemiddelde helling over een interval",
+       "een maat voor de spreiding rond het gemiddelde",
+       "het product van alle gehele getallen tot en met een getal"
+      ],
+      "c": 2,
+      "u": "«Standaardafwijking» betekent: een maat voor de spreiding rond het gemiddelde.",
+      "d": 1
+     },
+     {
+      "v": "Welk begrip hoort bij deze omschrijving: \"een maat voor de spreiding rond het gemiddelde\"?",
+      "o": [
+       "Kans",
+       "Asymptoot",
+       "Permutatie",
+       "Standaardafwijking"
+      ],
+      "c": 3,
+      "u": "Het juiste begrip is «Standaardafwijking»: een maat voor de spreiding rond het gemiddelde.",
+      "d": 2
+     },
+     {
+      "v": "Welke term past bij: \"een maat voor de spreiding rond het gemiddelde\"?",
+      "o": [
+       "Steekproef",
+       "Binomiale verdeling",
+       "Standaardafwijking",
+       "Mediaan"
+      ],
+      "c": 2,
+      "u": "Het juiste begrip is «Standaardafwijking»: een maat voor de spreiding rond het gemiddelde.",
+      "d": 3
+     },
+     {
+      "v": "Wat betekent «Normale verdeling»?",
+      "o": [
+       "de gemiddelde helling over een interval",
+       "de lijn die de grafiek in precies één punt raakt",
+       "een symmetrische, klokvormige kansverdeling",
+       "de middelste waarde van een geordende reeks"
+      ],
+      "c": 2,
+      "u": "«Normale verdeling» betekent: een symmetrische, klokvormige kansverdeling.",
+      "d": 1
+     },
+     {
+      "v": "Welk begrip hoort bij deze omschrijving: \"een symmetrische, klokvormige kansverdeling\"?",
+      "o": [
+       "Normale verdeling",
+       "Asymptoot",
+       "Functie",
+       "Helling"
+      ],
+      "c": 0,
+      "u": "Het juiste begrip is «Normale verdeling»: een symmetrische, klokvormige kansverdeling.",
+      "d": 2
+     },
+     {
+      "v": "Welke term past bij: \"een symmetrische, klokvormige kansverdeling\"?",
+      "o": [
+       "Gemiddelde",
+       "Normale verdeling",
+       "Complement",
+       "Standaardafwijking"
+      ],
+      "c": 1,
+      "u": "Het juiste begrip is «Normale verdeling»: een symmetrische, klokvormige kansverdeling.",
+      "d": 3
+     },
+     {
+      "v": "Wat betekent «Binomiale verdeling»?",
+      "o": [
+       "de som van de waarden gedeeld door hun aantal",
+       "de kansverdeling van het aantal successen bij herhaling",
+       "het herhaald vermenigvuldigen met hetzelfde grondtal",
+       "een lijn die de grafiek steeds dichter nadert maar niet raakt"
+      ],
+      "c": 1,
+      "u": "«Binomiale verdeling» betekent: de kansverdeling van het aantal successen bij herhaling.",
+      "d": 1
+     },
+     {
+      "v": "Welk begrip hoort bij deze omschrijving: \"de kansverdeling van het aantal successen bij herhaling\"?",
+      "o": [
+       "Standaardafwijking",
+       "Lineair verband",
+       "Binomiale verdeling",
+       "Asymptoot"
+      ],
+      "c": 2,
+      "u": "Het juiste begrip is «Binomiale verdeling»: de kansverdeling van het aantal successen bij herhaling.",
+      "d": 2
+     },
+     {
+      "v": "Welke term past bij: \"de kansverdeling van het aantal successen bij herhaling\"?",
+      "o": [
+       "Standaardafwijking",
+       "Gemiddelde",
+       "Binomiale verdeling",
+       "Kans"
+      ],
+      "c": 2,
+      "u": "Het juiste begrip is «Binomiale verdeling»: de kansverdeling van het aantal successen bij herhaling.",
+      "d": 3
+     },
+     {
+      "v": "Wat betekent «Steekproef»?",
+      "o": [
+       "een verband met een vaste groeifactor per stap",
+       "een deel van de populatie dat je onderzoekt",
+       "de tweede verschillen zijn gelijk",
+       "de kansverdeling van het aantal successen bij herhaling"
+      ],
+      "c": 1,
+      "u": "«Steekproef» betekent: een deel van de populatie dat je onderzoekt.",
+      "d": 1
+     },
+     {
+      "v": "Welk begrip hoort bij deze omschrijving: \"een deel van de populatie dat je onderzoekt\"?",
+      "o": [
+       "Functie",
+       "Steekproef",
+       "Lineair",
+       "Complement"
+      ],
+      "c": 1,
+      "u": "Het juiste begrip is «Steekproef»: een deel van de populatie dat je onderzoekt.",
+      "d": 2
+     },
+     {
+      "v": "Welke term past bij: \"een deel van de populatie dat je onderzoekt\"?",
+      "o": [
+       "Mediaan",
+       "Normale verdeling",
+       "Kans",
+       "Steekproef"
+      ],
+      "c": 3,
+      "u": "Het juiste begrip is «Steekproef»: een deel van de populatie dat je onderzoekt.",
       "d": 3
      }
     ],
@@ -3658,28 +6262,36 @@ var VAKKEN = [
     ],
     "begrippen": [
      {
+      "t": "Kans",
+      "d": "de verhouding tussen gunstige en mogelijke uitkomsten"
+     },
+     {
+      "t": "Complement",
+      "d": "de kans dat een gebeurtenis juist niet optreedt"
+     },
+     {
       "t": "Gemiddelde",
-      "d": "som van waarden / aantal"
+      "d": "de som van de waarden gedeeld door hun aantal"
      },
      {
       "t": "Mediaan",
-      "d": "middelste waarde (positie ½(n + 1))"
+      "d": "de middelste waarde van een geordende reeks"
      },
      {
-      "t": "Modus",
-      "d": "meest voorkomende waarde"
+      "t": "Standaardafwijking",
+      "d": "een maat voor de spreiding rond het gemiddelde"
      },
      {
-      "t": "Spreidingsbreedte",
-      "d": "hoogste − laagste waarde"
+      "t": "Normale verdeling",
+      "d": "een symmetrische, klokvormige kansverdeling"
      },
      {
-      "t": "Odds-ratio (OR = ad/bc)",
-      "d": "OR > 3 (of < ⅓)"
+      "t": "Binomiale verdeling",
+      "d": "de kansverdeling van het aantal successen bij herhaling"
      },
      {
-      "t": "Populatie",
-      "d": "alle objecten van je onderzoek; steekproef: een selectie eruit."
+      "t": "Steekproef",
+      "d": "een deel van de populatie dat je onderzoekt"
      }
     ]
    }
@@ -3856,34 +6468,106 @@ var VAKKEN = [
      {
       "v": "Wat betekent «Hypothese»?",
       "o": [
-       "best aangepaste individuen planten zich meer voort",
+       "de kleinste eenheid van leven",
+       "mate waarin herhaalde metingen dezelfde uitkomst geven",
        "een toetsbare voorspelling van een verwacht verband",
-       "het constant houden van het interne milieu",
-       "CO2 + water + licht worden glucose + zuurstof"
+       "eiwit dat specifiek aan een antigeen bindt"
+      ],
+      "c": 2,
+      "u": "«Hypothese» betekent: een toetsbare voorspelling van een verwacht verband.",
+      "d": 1
+     },
+     {
+      "v": "Welk begrip hoort bij deze omschrijving: \"een toetsbare voorspelling van een verwacht verband\"?",
+      "o": [
+       "Abiotische factor",
+       "Onafhankelijke variabele",
+       "Hypothese",
+       "Duurzaamheid"
+      ],
+      "c": 2,
+      "u": "Het juiste begrip is «Hypothese»: een toetsbare voorspelling van een verwacht verband.",
+      "d": 2
+     },
+     {
+      "v": "Welke term past bij: \"een toetsbare voorspelling van een verwacht verband\"?",
+      "o": [
+       "Afhankelijke variabele",
+       "Hypothese",
+       "Betrouwbaarheid",
+       "Determineertabel"
       ],
       "c": 1,
-      "u": "«Hypothese» betekent: een toetsbare voorspelling van een verwacht verband.",
+      "u": "Het juiste begrip is «Hypothese»: een toetsbare voorspelling van een verwacht verband.",
+      "d": 3
+     },
+     {
+      "v": "Wat betekent «Onafhankelijke variabele»?",
+      "o": [
+       "energiecentrale die aerobe celademhaling uitvoert (ATP)",
+       "de factor die je in een proef bewust verandert",
+       "algemene eerste verdediging (huid, fagocyten)",
+       "het constant houden van het interne milieu"
+      ],
+      "c": 1,
+      "u": "«Onafhankelijke variabele» betekent: de factor die je in een proef bewust verandert.",
       "d": 1
      },
      {
       "v": "Welk begrip hoort bij deze omschrijving: \"de factor die je in een proef bewust verandert\"?",
       "o": [
-       "Biodiversiteit",
-       "Betrouwbaarheid",
+       "Dominant allel",
+       "Duurzaamheid",
        "Onafhankelijke variabele",
-       "Homeostase"
+       "Abiotische factor"
       ],
       "c": 2,
       "u": "Het juiste begrip is «Onafhankelijke variabele»: de factor die je in een proef bewust verandert.",
       "d": 2
      },
      {
+      "v": "Welke term past bij: \"de factor die je in een proef bewust verandert\"?",
+      "o": [
+       "Betrouwbaarheid",
+       "Determineertabel",
+       "Afhankelijke variabele",
+       "Onafhankelijke variabele"
+      ],
+      "c": 3,
+      "u": "Het juiste begrip is «Onafhankelijke variabele»: de factor die je in een proef bewust verandert.",
+      "d": 3
+     },
+     {
+      "v": "Wat betekent «Afhankelijke variabele»?",
+      "o": [
+       "de factor die je meet als gevolg",
+       "de verscheidenheid aan soorten en genen",
+       "een invloed van levende organismen",
+       "een niet-levende invloed (licht, temperatuur, water)"
+      ],
+      "c": 0,
+      "u": "«Afhankelijke variabele» betekent: de factor die je meet als gevolg.",
+      "d": 1
+     },
+     {
       "v": "Welk begrip hoort bij deze omschrijving: \"de factor die je meet als gevolg\"?",
       "o": [
-       "Preparaat",
-       "Betrouwbaarheid",
        "Afhankelijke variabele",
-       "Controle-experiment"
+       "Hormoon",
+       "Celkern",
+       "Validiteit"
+      ],
+      "c": 0,
+      "u": "Het juiste begrip is «Afhankelijke variabele»: de factor die je meet als gevolg.",
+      "d": 2
+     },
+     {
+      "v": "Welke term past bij: \"de factor die je meet als gevolg\"?",
+      "o": [
+       "Validiteit",
+       "Determineertabel",
+       "Afhankelijke variabele",
+       "Betrouwbaarheid"
       ],
       "c": 2,
       "u": "Het juiste begrip is «Afhankelijke variabele»: de factor die je meet als gevolg.",
@@ -3892,62 +6576,182 @@ var VAKKEN = [
      {
       "v": "Wat betekent «Controle-experiment»?",
       "o": [
-       "de factor die je in een proef bewust verandert",
+       "gewone celdeling met twee identieke dochtercellen",
+       "een dun plakje materiaal voor onder de microscoop",
        "een proef zonder de onderzochte factor, als vergelijkingspunt",
-       "de kleinste eenheid van leven",
-       "inbrengen van onschadelijk antigeen om geheugen op te bouwen"
+       "een verandering in het DNA"
+      ],
+      "c": 2,
+      "u": "«Controle-experiment» betekent: een proef zonder de onderzochte factor, als vergelijkingspunt.",
+      "d": 1
+     },
+     {
+      "v": "Welk begrip hoort bij deze omschrijving: \"een proef zonder de onderzochte factor, als vergelijkingspunt\"?",
+      "o": [
+       "Mitose",
+       "Chloroplast",
+       "Homeostase",
+       "Controle-experiment"
+      ],
+      "c": 3,
+      "u": "Het juiste begrip is «Controle-experiment»: een proef zonder de onderzochte factor, als vergelijkingspunt.",
+      "d": 2
+     },
+     {
+      "v": "Welke term past bij: \"een proef zonder de onderzochte factor, als vergelijkingspunt\"?",
+      "o": [
+       "Controle-experiment",
+       "Preparaat",
+       "Hypothese",
+       "Determineertabel"
+      ],
+      "c": 0,
+      "u": "Het juiste begrip is «Controle-experiment»: een proef zonder de onderzochte factor, als vergelijkingspunt.",
+      "d": 3
+     },
+     {
+      "v": "Wat betekent «Betrouwbaarheid»?",
+      "o": [
+       "de factor die je meet als gevolg",
+       "mate waarin herhaalde metingen dezelfde uitkomst geven",
+       "best aangepaste individuen planten zich meer voort",
+       "de verscheidenheid aan soorten en genen"
       ],
       "c": 1,
-      "u": "«Controle-experiment» betekent: een proef zonder de onderzochte factor, als vergelijkingspunt.",
+      "u": "«Betrouwbaarheid» betekent: mate waarin herhaalde metingen dezelfde uitkomst geven. Betrouwbaar ≠ valide: consistent meten is niet hetzelfde als het júiste meten.",
       "d": 1
      },
      {
       "v": "Welk begrip hoort bij deze omschrijving: \"mate waarin herhaalde metingen dezelfde uitkomst geven\"?",
       "o": [
-       "DNA",
-       "Mitochondrion",
        "Homeostase",
-       "Betrouwbaarheid"
+       "Betrouwbaarheid",
+       "Celkern",
+       "Mitochondrion"
       ],
-      "c": 3,
+      "c": 1,
       "u": "Het juiste begrip is «Betrouwbaarheid»: mate waarin herhaalde metingen dezelfde uitkomst geven. Betrouwbaar ≠ valide: consistent meten is niet hetzelfde als het júiste meten.",
       "d": 2
      },
      {
+      "v": "Welke term past bij: \"mate waarin herhaalde metingen dezelfde uitkomst geven\"?",
+      "o": [
+       "Hypothese",
+       "Betrouwbaarheid",
+       "Validiteit",
+       "Afhankelijke variabele"
+      ],
+      "c": 1,
+      "u": "Het juiste begrip is «Betrouwbaarheid»: mate waarin herhaalde metingen dezelfde uitkomst geven. Betrouwbaar ≠ valide: consistent meten is niet hetzelfde als het júiste meten.",
+      "d": 3
+     },
+     {
+      "v": "Wat betekent «Validiteit»?",
+      "o": [
+       "een toetsbare voorspelling van een verwacht verband",
+       "organisme dat dood materiaal afbreekt (bacteriën, schimmels)",
+       "mate waarin je meet wat je wilt meten",
+       "een zenuwcel die impulsen geleidt"
+      ],
+      "c": 2,
+      "u": "«Validiteit» betekent: mate waarin je meet wat je wilt meten. Valide ≠ betrouwbaar: valide = het juiste meten, betrouwbaar = herhaalbaar.",
+      "d": 1
+     },
+     {
       "v": "Welk begrip hoort bij deze omschrijving: \"mate waarin je meet wat je wilt meten\"?",
       "o": [
-       "Controle-experiment",
-       "Afhankelijke variabele",
-       "Preparaat",
+       "Vaccinatie",
+       "Hypothese",
+       "Duurzaamheid",
        "Validiteit"
       ],
       "c": 3,
+      "u": "Het juiste begrip is «Validiteit»: mate waarin je meet wat je wilt meten. Valide ≠ betrouwbaar: valide = het juiste meten, betrouwbaar = herhaalbaar.",
+      "d": 2
+     },
+     {
+      "v": "Welke term past bij: \"mate waarin je meet wat je wilt meten\"?",
+      "o": [
+       "Hypothese",
+       "Validiteit",
+       "Afhankelijke variabele",
+       "Preparaat"
+      ],
+      "c": 1,
       "u": "Het juiste begrip is «Validiteit»: mate waarin je meet wat je wilt meten. Valide ≠ betrouwbaar: valide = het juiste meten, betrouwbaar = herhaalbaar.",
       "d": 3
      },
      {
       "v": "Wat betekent «Determineertabel»?",
       "o": [
+       "een zenuwcel die impulsen geleidt",
        "een sleutel om organismen op kenmerken te benoemen",
-       "organisme dat zelf organische stof maakt (planten)",
-       "de maximale populatiegrootte die een gebied aankan",
+       "gewone celdeling met twee identieke dochtercellen",
        "een chemische boodschapper die via het bloed werkt"
       ],
-      "c": 0,
+      "c": 1,
       "u": "«Determineertabel» betekent: een sleutel om organismen op kenmerken te benoemen.",
+      "d": 1
+     },
+     {
+      "v": "Welk begrip hoort bij deze omschrijving: \"een sleutel om organismen op kenmerken te benoemen\"?",
+      "o": [
+       "Afhankelijke variabele",
+       "Chloroplast",
+       "Preparaat",
+       "Determineertabel"
+      ],
+      "c": 3,
+      "u": "Het juiste begrip is «Determineertabel»: een sleutel om organismen op kenmerken te benoemen.",
+      "d": 2
+     },
+     {
+      "v": "Welke term past bij: \"een sleutel om organismen op kenmerken te benoemen\"?",
+      "o": [
+       "Controle-experiment",
+       "Validiteit",
+       "Determineertabel",
+       "Afhankelijke variabele"
+      ],
+      "c": 2,
+      "u": "Het juiste begrip is «Determineertabel»: een sleutel om organismen op kenmerken te benoemen.",
+      "d": 3
+     },
+     {
+      "v": "Wat betekent «Preparaat»?",
+      "o": [
+       "een verandering in het DNA",
+       "alle individuen van één soort in een gebied",
+       "een dun plakje materiaal voor onder de microscoop",
+       "gerichte afweer door lymfocyten, met geheugen"
+      ],
+      "c": 2,
+      "u": "«Preparaat» betekent: een dun plakje materiaal voor onder de microscoop.",
       "d": 1
      },
      {
       "v": "Welk begrip hoort bij deze omschrijving: \"een dun plakje materiaal voor onder de microscoop\"?",
       "o": [
+       "Biodiversiteit",
        "Preparaat",
-       "Producent",
-       "Recessief allel",
-       "Duurzaamheid"
+       "Celkern",
+       "Synaps"
       ],
-      "c": 0,
+      "c": 1,
       "u": "Het juiste begrip is «Preparaat»: een dun plakje materiaal voor onder de microscoop.",
       "d": 2
+     },
+     {
+      "v": "Welke term past bij: \"een dun plakje materiaal voor onder de microscoop\"?",
+      "o": [
+       "Hypothese",
+       "Preparaat",
+       "Betrouwbaarheid",
+       "Controle-experiment"
+      ],
+      "c": 1,
+      "u": "Het juiste begrip is «Preparaat»: een dun plakje materiaal voor onder de microscoop.",
+      "d": 3
      }
     ],
     "oe": [
@@ -4186,33 +6990,105 @@ var VAKKEN = [
      {
       "v": "Wat betekent «Cel»?",
       "o": [
-       "reductiedeling die geslachtscellen vormt (halve chromosoomaantal)",
        "de kleinste eenheid van leven",
-       "organisme dat andere organismen eet",
-       "een invloed van levende organismen"
+       "glucose + zuurstof worden CO2 + water + energie (ATP)",
+       "het constant houden van het interne milieu",
+       "een reeks van eten en gegeten worden"
+      ],
+      "c": 0,
+      "u": "«Cel» betekent: de kleinste eenheid van leven.",
+      "d": 1
+     },
+     {
+      "v": "Welk begrip hoort bij deze omschrijving: \"de kleinste eenheid van leven\"?",
+      "o": [
+       "Cel",
+       "Populatie",
+       "Reducent",
+       "Mutatie"
+      ],
+      "c": 0,
+      "u": "Het juiste begrip is «Cel»: de kleinste eenheid van leven.",
+      "d": 2
+     },
+     {
+      "v": "Welke term past bij: \"de kleinste eenheid van leven\"?",
+      "o": [
+       "Enzym",
+       "Cel",
+       "Mitose",
+       "Celmembraan"
       ],
       "c": 1,
-      "u": "«Cel» betekent: de kleinste eenheid van leven.",
+      "u": "Het juiste begrip is «Cel»: de kleinste eenheid van leven.",
+      "d": 3
+     },
+     {
+      "v": "Wat betekent «Celmembraan»?",
+      "o": [
+       "de selectief doorlaatbare grens van een cel",
+       "een levensgemeenschap plus de abiotische omgeving",
+       "inbrengen van onschadelijk antigeen om geheugen op te bouwen",
+       "de maximale populatiegrootte die een gebied aankan"
+      ],
+      "c": 0,
+      "u": "«Celmembraan» betekent: de selectief doorlaatbare grens van een cel.",
       "d": 1
      },
      {
       "v": "Welk begrip hoort bij deze omschrijving: \"de selectief doorlaatbare grens van een cel\"?",
       "o": [
-       "Aspecifieke afweer",
        "Celmembraan",
-       "Producent",
-       "Insuline"
+       "Celkern",
+       "Insuline",
+       "Preparaat"
       ],
-      "c": 1,
+      "c": 0,
       "u": "Het juiste begrip is «Celmembraan»: de selectief doorlaatbare grens van een cel.",
       "d": 2
      },
      {
+      "v": "Welke term past bij: \"de selectief doorlaatbare grens van een cel\"?",
+      "o": [
+       "Fotosynthese",
+       "Meiose",
+       "DNA",
+       "Celmembraan"
+      ],
+      "c": 3,
+      "u": "Het juiste begrip is «Celmembraan»: de selectief doorlaatbare grens van een cel.",
+      "d": 3
+     },
+     {
+      "v": "Wat betekent «Celkern»?",
+      "o": [
+       "organel dat het DNA bevat en de cel aanstuurt",
+       "een niet-levende invloed (licht, temperatuur, water)",
+       "een levensgemeenschap plus de abiotische omgeving",
+       "gebruik zonder uitputting voor latere generaties"
+      ],
+      "c": 0,
+      "u": "«Celkern» betekent: organel dat het DNA bevat en de cel aanstuurt.",
+      "d": 1
+     },
+     {
       "v": "Welk begrip hoort bij deze omschrijving: \"organel dat het DNA bevat en de cel aanstuurt\"?",
       "o": [
+       "Validiteit",
+       "Hormoon",
+       "Celkern",
+       "Biotische factor"
+      ],
+      "c": 2,
+      "u": "Het juiste begrip is «Celkern»: organel dat het DNA bevat en de cel aanstuurt.",
+      "d": 2
+     },
+     {
+      "v": "Welke term past bij: \"organel dat het DNA bevat en de cel aanstuurt\"?",
+      "o": [
+       "Mitose",
        "Cel",
-       "Meiose",
-       "Celademhaling",
+       "Chloroplast",
        "Celkern"
       ],
       "c": 3,
@@ -4222,33 +7098,105 @@ var VAKKEN = [
      {
       "v": "Wat betekent «Mitochondrion»?",
       "o": [
+       "de verscheidenheid aan soorten en genen",
        "energiecentrale die aerobe celademhaling uitvoert (ATP)",
-       "een toetsbare voorspelling van een verwacht verband",
-       "gewone celdeling met twee identieke dochtercellen",
-       "algemene eerste verdediging (huid, fagocyten)"
+       "allel dat alleen homozygoot tot uiting komt",
+       "best aangepaste individuen planten zich meer voort"
       ],
-      "c": 0,
+      "c": 1,
       "u": "«Mitochondrion» betekent: energiecentrale die aerobe celademhaling uitvoert (ATP).",
+      "d": 1
+     },
+     {
+      "v": "Welk begrip hoort bij deze omschrijving: \"energiecentrale die aerobe celademhaling uitvoert (ATP)\"?",
+      "o": [
+       "Mitose",
+       "Antigeen",
+       "Mitochondrion",
+       "Hypothese"
+      ],
+      "c": 2,
+      "u": "Het juiste begrip is «Mitochondrion»: energiecentrale die aerobe celademhaling uitvoert (ATP).",
+      "d": 2
+     },
+     {
+      "v": "Welke term past bij: \"energiecentrale die aerobe celademhaling uitvoert (ATP)\"?",
+      "o": [
+       "Cel",
+       "DNA",
+       "Mitochondrion",
+       "Chloroplast"
+      ],
+      "c": 2,
+      "u": "Het juiste begrip is «Mitochondrion»: energiecentrale die aerobe celademhaling uitvoert (ATP).",
+      "d": 3
+     },
+     {
+      "v": "Wat betekent «Chloroplast»?",
+      "o": [
+       "gewone celdeling met twee identieke dochtercellen",
+       "alle individuen van één soort in een gebied",
+       "organel waarin fotosynthese plaatsvindt",
+       "de factor die je meet als gevolg"
+      ],
+      "c": 2,
+      "u": "«Chloroplast» betekent: organel waarin fotosynthese plaatsvindt.",
       "d": 1
      },
      {
       "v": "Welk begrip hoort bij deze omschrijving: \"organel waarin fotosynthese plaatsvindt\"?",
       "o": [
-       "Ecosysteem",
-       "Draagkracht",
-       "Dominant allel",
-       "Chloroplast"
+       "Onafhankelijke variabele",
+       "Chloroplast",
+       "Mutatie",
+       "Afhankelijke variabele"
       ],
-      "c": 3,
+      "c": 1,
       "u": "Het juiste begrip is «Chloroplast»: organel waarin fotosynthese plaatsvindt.",
       "d": 2
      },
      {
-      "v": "Welk begrip hoort bij deze omschrijving: \"eiwit dat als biokatalysator een reactie versnelt\"?",
+      "v": "Welke term past bij: \"organel waarin fotosynthese plaatsvindt\"?",
       "o": [
        "Dominant allel",
-       "Celademhaling",
+       "Enzym",
+       "Chloroplast",
+       "Mitose"
+      ],
+      "c": 2,
+      "u": "Het juiste begrip is «Chloroplast»: organel waarin fotosynthese plaatsvindt.",
+      "d": 3
+     },
+     {
+      "v": "Wat betekent «Enzym»?",
+      "o": [
+       "reductiedeling die geslachtscellen vormt (halve chromosoomaantal)",
+       "een niet-levende invloed (licht, temperatuur, water)",
+       "eiwit dat als biokatalysator een reactie versnelt",
+       "algemene eerste verdediging (huid, fagocyten)"
+      ],
+      "c": 2,
+      "u": "«Enzym» betekent: eiwit dat als biokatalysator een reactie versnelt.",
+      "d": 1
+     },
+     {
+      "v": "Welk begrip hoort bij deze omschrijving: \"eiwit dat als biokatalysator een reactie versnelt\"?",
+      "o": [
+       "Celkern",
+       "Draagkracht",
+       "Duurzaamheid",
+       "Enzym"
+      ],
+      "c": 3,
+      "u": "Het juiste begrip is «Enzym»: eiwit dat als biokatalysator een reactie versnelt.",
+      "d": 2
+     },
+     {
+      "v": "Welke term past bij: \"eiwit dat als biokatalysator een reactie versnelt\"?",
+      "o": [
        "Mitochondrion",
+       "Celademhaling",
+       "Celmembraan",
        "Enzym"
       ],
       "c": 3,
@@ -4259,33 +7207,105 @@ var VAKKEN = [
       "v": "Wat betekent «Fotosynthese»?",
       "o": [
        "CO2 + water + licht worden glucose + zuurstof",
-       "een chemische boodschapper die via het bloed werkt",
-       "allel dat het fenotype bepaalt, ook heterozygoot",
-       "energiecentrale die aerobe celademhaling uitvoert (ATP)"
+       "eiwit dat als biokatalysator een reactie versnelt",
+       "een verandering in het DNA",
+       "een proef zonder de onderzochte factor, als vergelijkingspunt"
       ],
       "c": 0,
       "u": "«Fotosynthese» betekent: CO2 + water + licht worden glucose + zuurstof.",
       "d": 1
      },
      {
+      "v": "Welk begrip hoort bij deze omschrijving: \"CO2 + water + licht worden glucose + zuurstof\"?",
+      "o": [
+       "Antilichaam",
+       "Enzym",
+       "Fotosynthese",
+       "Preparaat"
+      ],
+      "c": 2,
+      "u": "Het juiste begrip is «Fotosynthese»: CO2 + water + licht worden glucose + zuurstof.",
+      "d": 2
+     },
+     {
+      "v": "Welke term past bij: \"CO2 + water + licht worden glucose + zuurstof\"?",
+      "o": [
+       "Celmembraan",
+       "Fotosynthese",
+       "Mitose",
+       "DNA"
+      ],
+      "c": 1,
+      "u": "Het juiste begrip is «Fotosynthese»: CO2 + water + licht worden glucose + zuurstof.",
+      "d": 3
+     },
+     {
+      "v": "Wat betekent «Celademhaling»?",
+      "o": [
+       "een toetsbare voorspelling van een verwacht verband",
+       "glucose + zuurstof worden CO2 + water + energie (ATP)",
+       "hormoon dat de bloedglucose verlaagt",
+       "gebruik zonder uitputting voor latere generaties"
+      ],
+      "c": 1,
+      "u": "«Celademhaling» betekent: glucose + zuurstof worden CO2 + water + energie (ATP).",
+      "d": 1
+     },
+     {
       "v": "Welk begrip hoort bij deze omschrijving: \"glucose + zuurstof worden CO2 + water + energie (ATP)\"?",
       "o": [
-       "Controle-experiment",
-       "Vaccinatie",
+       "Synaps",
+       "Abiotische factor",
        "Celademhaling",
-       "Homeostase"
+       "Celmembraan"
       ],
       "c": 2,
       "u": "Het juiste begrip is «Celademhaling»: glucose + zuurstof worden CO2 + water + energie (ATP).",
       "d": 2
      },
      {
-      "v": "Welk begrip hoort bij deze omschrijving: \"molecuul met de erfelijke informatie in genen\"?",
+      "v": "Welke term past bij: \"glucose + zuurstof worden CO2 + water + energie (ATP)\"?",
       "o": [
        "DNA",
-       "Meiose",
-       "Enzym",
-       "Chloroplast"
+       "Celademhaling",
+       "Celmembraan",
+       "Enzym"
+      ],
+      "c": 1,
+      "u": "Het juiste begrip is «Celademhaling»: glucose + zuurstof worden CO2 + water + energie (ATP).",
+      "d": 3
+     },
+     {
+      "v": "Wat betekent «DNA»?",
+      "o": [
+       "het constant houden van het interne milieu",
+       "een niet-levende invloed (licht, temperatuur, water)",
+       "een zenuwcel die impulsen geleidt",
+       "molecuul met de erfelijke informatie in genen"
+      ],
+      "c": 3,
+      "u": "«DNA» betekent: molecuul met de erfelijke informatie in genen.",
+      "d": 1
+     },
+     {
+      "v": "Welk begrip hoort bij deze omschrijving: \"molecuul met de erfelijke informatie in genen\"?",
+      "o": [
+       "Synaps",
+       "Populatie",
+       "Fotosynthese",
+       "DNA"
+      ],
+      "c": 3,
+      "u": "Het juiste begrip is «DNA»: molecuul met de erfelijke informatie in genen.",
+      "d": 2
+     },
+     {
+      "v": "Welke term past bij: \"molecuul met de erfelijke informatie in genen\"?",
+      "o": [
+       "DNA",
+       "Cel",
+       "Celademhaling",
+       "Recessief allel"
       ],
       "c": 0,
       "u": "Het juiste begrip is «DNA»: molecuul met de erfelijke informatie in genen.",
@@ -4294,9 +7314,9 @@ var VAKKEN = [
      {
       "v": "Wat betekent «Mitose»?",
       "o": [
-       "organisme dat andere organismen eet",
-       "energiecentrale die aerobe celademhaling uitvoert (ATP)",
-       "de selectief doorlaatbare grens van een cel",
+       "organel waarin fotosynthese plaatsvindt",
+       "een dun plakje materiaal voor onder de microscoop",
+       "mate waarin je meet wat je wilt meten",
        "gewone celdeling met twee identieke dochtercellen"
       ],
       "c": 3,
@@ -4304,19 +7324,91 @@ var VAKKEN = [
       "d": 1
      },
      {
+      "v": "Welk begrip hoort bij deze omschrijving: \"gewone celdeling met twee identieke dochtercellen\"?",
+      "o": [
+       "Mitose",
+       "Fotosynthese",
+       "Afhankelijke variabele",
+       "Natuurlijke selectie"
+      ],
+      "c": 0,
+      "u": "Het juiste begrip is «Mitose»: gewone celdeling met twee identieke dochtercellen. Let op het verschil met meiose: mitose geeft 2 identieke cellen, meiose 4 met het halve chromosoomaantal.",
+      "d": 2
+     },
+     {
+      "v": "Welke term past bij: \"gewone celdeling met twee identieke dochtercellen\"?",
+      "o": [
+       "Fotosynthese",
+       "Dominant allel",
+       "DNA",
+       "Mitose"
+      ],
+      "c": 3,
+      "u": "Het juiste begrip is «Mitose»: gewone celdeling met twee identieke dochtercellen. Let op het verschil met meiose: mitose geeft 2 identieke cellen, meiose 4 met het halve chromosoomaantal.",
+      "d": 3
+     },
+     {
+      "v": "Wat betekent «Meiose»?",
+      "o": [
+       "algemene eerste verdediging (huid, fagocyten)",
+       "een niet-levende invloed (licht, temperatuur, water)",
+       "een verandering in het DNA",
+       "reductiedeling die geslachtscellen vormt (halve chromosoomaantal)"
+      ],
+      "c": 3,
+      "u": "«Meiose» betekent: reductiedeling die geslachtscellen vormt (halve chromosoomaantal). Anders dan mitose: meiose halveert het chromosoomaantal en zorgt voor variatie.",
+      "d": 1
+     },
+     {
       "v": "Welk begrip hoort bij deze omschrijving: \"reductiedeling die geslachtscellen vormt (halve chromosoomaantal)\"?",
       "o": [
-       "Chloroplast",
-       "Insuline",
        "Meiose",
-       "Biotische factor"
+       "Recessief allel",
+       "Celmembraan",
+       "Synaps"
       ],
-      "c": 2,
+      "c": 0,
       "u": "Het juiste begrip is «Meiose»: reductiedeling die geslachtscellen vormt (halve chromosoomaantal). Anders dan mitose: meiose halveert het chromosoomaantal en zorgt voor variatie.",
       "d": 2
      },
      {
+      "v": "Welke term past bij: \"reductiedeling die geslachtscellen vormt (halve chromosoomaantal)\"?",
+      "o": [
+       "Mitose",
+       "Cel",
+       "Meiose",
+       "DNA"
+      ],
+      "c": 2,
+      "u": "Het juiste begrip is «Meiose»: reductiedeling die geslachtscellen vormt (halve chromosoomaantal). Anders dan mitose: meiose halveert het chromosoomaantal en zorgt voor variatie.",
+      "d": 3
+     },
+     {
+      "v": "Wat betekent «Mutatie»?",
+      "o": [
+       "een verandering in het DNA",
+       "hormoon dat de bloedglucose verlaagt",
+       "een invloed van levende organismen",
+       "inbrengen van onschadelijk antigeen om geheugen op te bouwen"
+      ],
+      "c": 0,
+      "u": "«Mutatie» betekent: een verandering in het DNA.",
+      "d": 1
+     },
+     {
       "v": "Welk begrip hoort bij deze omschrijving: \"een verandering in het DNA\"?",
+      "o": [
+       "Mutatie",
+       "Hormoon",
+       "Recessief allel",
+       "Antilichaam"
+      ],
+      "c": 0,
+      "u": "Het juiste begrip is «Mutatie»: een verandering in het DNA.",
+      "d": 2
+     },
+     {
+      "v": "Welke term past bij: \"een verandering in het DNA\"?",
       "o": [
        "Mitochondrion",
        "Fotosynthese",
@@ -4330,26 +7422,74 @@ var VAKKEN = [
      {
       "v": "Wat betekent «Dominant allel»?",
       "o": [
-       "CO2 + water + licht worden glucose + zuurstof",
+       "mate waarin herhaalde metingen dezelfde uitkomst geven",
+       "een proef zonder de onderzochte factor, als vergelijkingspunt",
        "allel dat het fenotype bepaalt, ook heterozygoot",
-       "een niet-levende invloed (licht, temperatuur, water)",
-       "inbrengen van onschadelijk antigeen om geheugen op te bouwen"
+       "energiecentrale die aerobe celademhaling uitvoert (ATP)"
+      ],
+      "c": 2,
+      "u": "«Dominant allel» betekent: allel dat het fenotype bepaalt, ook heterozygoot.",
+      "d": 1
+     },
+     {
+      "v": "Welk begrip hoort bij deze omschrijving: \"allel dat het fenotype bepaalt, ook heterozygoot\"?",
+      "o": [
+       "Homeostase",
+       "Dominant allel",
+       "Antilichaam",
+       "Ecosysteem"
       ],
       "c": 1,
-      "u": "«Dominant allel» betekent: allel dat het fenotype bepaalt, ook heterozygoot.",
+      "u": "Het juiste begrip is «Dominant allel»: allel dat het fenotype bepaalt, ook heterozygoot.",
+      "d": 2
+     },
+     {
+      "v": "Welke term past bij: \"allel dat het fenotype bepaalt, ook heterozygoot\"?",
+      "o": [
+       "Dominant allel",
+       "DNA",
+       "Celademhaling",
+       "Mutatie"
+      ],
+      "c": 0,
+      "u": "Het juiste begrip is «Dominant allel»: allel dat het fenotype bepaalt, ook heterozygoot.",
+      "d": 3
+     },
+     {
+      "v": "Wat betekent «Recessief allel»?",
+      "o": [
+       "glucose + zuurstof worden CO2 + water + energie (ATP)",
+       "mate waarin je meet wat je wilt meten",
+       "allel dat alleen homozygoot tot uiting komt",
+       "reductiedeling die geslachtscellen vormt (halve chromosoomaantal)"
+      ],
+      "c": 2,
+      "u": "«Recessief allel» betekent: allel dat alleen homozygoot tot uiting komt.",
       "d": 1
      },
      {
       "v": "Welk begrip hoort bij deze omschrijving: \"allel dat alleen homozygoot tot uiting komt\"?",
       "o": [
-       "Celmembraan",
-       "Vaccinatie",
+       "Enzym",
+       "Homeostase",
        "Controle-experiment",
        "Recessief allel"
       ],
       "c": 3,
       "u": "Het juiste begrip is «Recessief allel»: allel dat alleen homozygoot tot uiting komt.",
       "d": 2
+     },
+     {
+      "v": "Welke term past bij: \"allel dat alleen homozygoot tot uiting komt\"?",
+      "o": [
+       "Dominant allel",
+       "Enzym",
+       "Recessief allel",
+       "Fotosynthese"
+      ],
+      "c": 2,
+      "u": "Het juiste begrip is «Recessief allel»: allel dat alleen homozygoot tot uiting komt.",
+      "d": 3
      }
     ],
     "oe": [
@@ -4629,9 +7769,9 @@ var VAKKEN = [
      {
       "v": "Wat betekent «Homeostase»?",
       "o": [
-       "een proef zonder de onderzochte factor, als vergelijkingspunt",
-       "alle individuen van één soort in een gebied",
-       "een levensgemeenschap plus de abiotische omgeving",
+       "CO2 + water + licht worden glucose + zuurstof",
+       "allel dat het fenotype bepaalt, ook heterozygoot",
+       "een chemische boodschapper die via het bloed werkt",
        "het constant houden van het interne milieu"
       ],
       "c": 3,
@@ -4639,60 +7779,204 @@ var VAKKEN = [
       "d": 1
      },
      {
+      "v": "Welk begrip hoort bij deze omschrijving: \"het constant houden van het interne milieu\"?",
+      "o": [
+       "Aspecifieke afweer",
+       "Homeostase",
+       "Mutatie",
+       "Controle-experiment"
+      ],
+      "c": 1,
+      "u": "Het juiste begrip is «Homeostase»: het constant houden van het interne milieu.",
+      "d": 2
+     },
+     {
+      "v": "Welke term past bij: \"het constant houden van het interne milieu\"?",
+      "o": [
+       "Specifieke afweer",
+       "Homeostase",
+       "Antigeen",
+       "Hormoon"
+      ],
+      "c": 1,
+      "u": "Het juiste begrip is «Homeostase»: het constant houden van het interne milieu.",
+      "d": 3
+     },
+     {
+      "v": "Wat betekent «Hormoon»?",
+      "o": [
+       "best aangepaste individuen planten zich meer voort",
+       "een chemische boodschapper die via het bloed werkt",
+       "allel dat het fenotype bepaalt, ook heterozygoot",
+       "een dun plakje materiaal voor onder de microscoop"
+      ],
+      "c": 1,
+      "u": "«Hormoon» betekent: een chemische boodschapper die via het bloed werkt.",
+      "d": 1
+     },
+     {
       "v": "Welk begrip hoort bij deze omschrijving: \"een chemische boodschapper die via het bloed werkt\"?",
       "o": [
-       "Hormoon",
-       "Preparaat",
-       "Betrouwbaarheid",
-       "Mitose"
+       "Validiteit",
+       "Celmembraan",
+       "DNA",
+       "Hormoon"
       ],
-      "c": 0,
+      "c": 3,
       "u": "Het juiste begrip is «Hormoon»: een chemische boodschapper die via het bloed werkt.",
       "d": 2
      },
      {
-      "v": "Welk begrip hoort bij deze omschrijving: \"hormoon dat de bloedglucose verlaagt\"?",
+      "v": "Welke term past bij: \"een chemische boodschapper die via het bloed werkt\"?",
       "o": [
-       "Insuline",
-       "Synaps",
-       "Antigeen",
-       "Antagonisme"
+       "Hormoon",
+       "Specifieke afweer",
+       "Neuron",
+       "Homeostase"
       ],
       "c": 0,
+      "u": "Het juiste begrip is «Hormoon»: een chemische boodschapper die via het bloed werkt.",
+      "d": 3
+     },
+     {
+      "v": "Wat betekent «Insuline»?",
+      "o": [
+       "hormoon dat de bloedglucose verlaagt",
+       "het constant houden van het interne milieu",
+       "een zenuwcel die impulsen geleidt",
+       "mate waarin je meet wat je wilt meten"
+      ],
+      "c": 0,
+      "u": "«Insuline» betekent: hormoon dat de bloedglucose verlaagt.",
+      "d": 1
+     },
+     {
+      "v": "Welk begrip hoort bij deze omschrijving: \"hormoon dat de bloedglucose verlaagt\"?",
+      "o": [
+       "Cel",
+       "Insuline",
+       "Mitochondrion",
+       "DNA"
+      ],
+      "c": 1,
+      "u": "Het juiste begrip is «Insuline»: hormoon dat de bloedglucose verlaagt.",
+      "d": 2
+     },
+     {
+      "v": "Welke term past bij: \"hormoon dat de bloedglucose verlaagt\"?",
+      "o": [
+       "Neuron",
+       "Vaccinatie",
+       "Insuline",
+       "Synaps"
+      ],
+      "c": 2,
       "u": "Het juiste begrip is «Insuline»: hormoon dat de bloedglucose verlaagt.",
       "d": 3
      },
      {
       "v": "Wat betekent «Neuron»?",
       "o": [
-       "een chemische boodschapper die via het bloed werkt",
-       "reductiedeling die geslachtscellen vormt (halve chromosoomaantal)",
-       "een zenuwcel die impulsen geleidt",
-       "eiwit dat als biokatalysator een reactie versnelt"
+       "het constant houden van het interne milieu",
+       "inbrengen van onschadelijk antigeen om geheugen op te bouwen",
+       "organisme dat dood materiaal afbreekt (bacteriën, schimmels)",
+       "een zenuwcel die impulsen geleidt"
       ],
-      "c": 2,
+      "c": 3,
       "u": "«Neuron» betekent: een zenuwcel die impulsen geleidt.",
+      "d": 1
+     },
+     {
+      "v": "Welk begrip hoort bij deze omschrijving: \"een zenuwcel die impulsen geleidt\"?",
+      "o": [
+       "Natuurlijke selectie",
+       "Neuron",
+       "Mutatie",
+       "Consument"
+      ],
+      "c": 1,
+      "u": "Het juiste begrip is «Neuron»: een zenuwcel die impulsen geleidt.",
+      "d": 2
+     },
+     {
+      "v": "Welke term past bij: \"een zenuwcel die impulsen geleidt\"?",
+      "o": [
+       "Neuron",
+       "Antilichaam",
+       "Insuline",
+       "Antigeen"
+      ],
+      "c": 0,
+      "u": "Het juiste begrip is «Neuron»: een zenuwcel die impulsen geleidt.",
+      "d": 3
+     },
+     {
+      "v": "Wat betekent «Synaps»?",
+      "o": [
+       "de verbinding tussen twee neuronen met neurotransmitters",
+       "molecuul met de erfelijke informatie in genen",
+       "organel dat het DNA bevat en de cel aanstuurt",
+       "gebruik zonder uitputting voor latere generaties"
+      ],
+      "c": 0,
+      "u": "«Synaps» betekent: de verbinding tussen twee neuronen met neurotransmitters.",
       "d": 1
      },
      {
       "v": "Welk begrip hoort bij deze omschrijving: \"de verbinding tussen twee neuronen met neurotransmitters\"?",
       "o": [
-       "Abiotische factor",
-       "Celmembraan",
-       "Duurzaamheid",
-       "Synaps"
+       "Synaps",
+       "Reducent",
+       "Chloroplast",
+       "Recessief allel"
       ],
-      "c": 3,
+      "c": 0,
       "u": "Het juiste begrip is «Synaps»: de verbinding tussen twee neuronen met neurotransmitters.",
       "d": 2
      },
      {
+      "v": "Welke term past bij: \"de verbinding tussen twee neuronen met neurotransmitters\"?",
+      "o": [
+       "Homeostase",
+       "Specifieke afweer",
+       "Antigeen",
+       "Synaps"
+      ],
+      "c": 3,
+      "u": "Het juiste begrip is «Synaps»: de verbinding tussen twee neuronen met neurotransmitters.",
+      "d": 3
+     },
+     {
+      "v": "Wat betekent «Antigeen»?",
+      "o": [
+       "reductiedeling die geslachtscellen vormt (halve chromosoomaantal)",
+       "een lichaamsvreemde stof die een afweerreactie opwekt",
+       "allel dat het fenotype bepaalt, ook heterozygoot",
+       "een proef zonder de onderzochte factor, als vergelijkingspunt"
+      ],
+      "c": 1,
+      "u": "«Antigeen» betekent: een lichaamsvreemde stof die een afweerreactie opwekt.",
+      "d": 1
+     },
+     {
       "v": "Welk begrip hoort bij deze omschrijving: \"een lichaamsvreemde stof die een afweerreactie opwekt\"?",
       "o": [
-       "Insuline",
+       "Validiteit",
+       "Afhankelijke variabele",
+       "Celkern",
+       "Antigeen"
+      ],
+      "c": 3,
+      "u": "Het juiste begrip is «Antigeen»: een lichaamsvreemde stof die een afweerreactie opwekt.",
+      "d": 2
+     },
+     {
+      "v": "Welke term past bij: \"een lichaamsvreemde stof die een afweerreactie opwekt\"?",
+      "o": [
+       "Antagonisme",
        "Antigeen",
-       "Antilichaam",
-       "Antagonisme"
+       "Insuline",
+       "Specifieke afweer"
       ],
       "c": 1,
       "u": "Het juiste begrip is «Antigeen»: een lichaamsvreemde stof die een afweerreactie opwekt.",
@@ -4701,29 +7985,101 @@ var VAKKEN = [
      {
       "v": "Wat betekent «Antilichaam»?",
       "o": [
-       "molecuul met de erfelijke informatie in genen",
-       "het constant houden van het interne milieu",
-       "eiwit dat specifiek aan een antigeen bindt",
-       "de maximale populatiegrootte die een gebied aankan"
+       "een invloed van levende organismen",
+       "organel dat het DNA bevat en de cel aanstuurt",
+       "een proef zonder de onderzochte factor, als vergelijkingspunt",
+       "eiwit dat specifiek aan een antigeen bindt"
       ],
-      "c": 2,
+      "c": 3,
       "u": "«Antilichaam» betekent: eiwit dat specifiek aan een antigeen bindt.",
+      "d": 1
+     },
+     {
+      "v": "Welk begrip hoort bij deze omschrijving: \"eiwit dat specifiek aan een antigeen bindt\"?",
+      "o": [
+       "Celkern",
+       "Antilichaam",
+       "Biodiversiteit",
+       "Mitose"
+      ],
+      "c": 1,
+      "u": "Het juiste begrip is «Antilichaam»: eiwit dat specifiek aan een antigeen bindt.",
+      "d": 2
+     },
+     {
+      "v": "Welke term past bij: \"eiwit dat specifiek aan een antigeen bindt\"?",
+      "o": [
+       "Antilichaam",
+       "Antagonisme",
+       "Specifieke afweer",
+       "Synaps"
+      ],
+      "c": 0,
+      "u": "Het juiste begrip is «Antilichaam»: eiwit dat specifiek aan een antigeen bindt.",
+      "d": 3
+     },
+     {
+      "v": "Wat betekent «Specifieke afweer»?",
+      "o": [
+       "reductiedeling die geslachtscellen vormt (halve chromosoomaantal)",
+       "gerichte afweer door lymfocyten, met geheugen",
+       "organisme dat zelf organische stof maakt (planten)",
+       "mate waarin herhaalde metingen dezelfde uitkomst geven"
+      ],
+      "c": 1,
+      "u": "«Specifieke afweer» betekent: gerichte afweer door lymfocyten, met geheugen.",
       "d": 1
      },
      {
       "v": "Welk begrip hoort bij deze omschrijving: \"gerichte afweer door lymfocyten, met geheugen\"?",
       "o": [
-       "Homeostase",
+       "Neuron",
        "Specifieke afweer",
-       "Antagonisme",
-       "Hypothese"
+       "Ecosysteem",
+       "Mitochondrion"
       ],
       "c": 1,
       "u": "Het juiste begrip is «Specifieke afweer»: gerichte afweer door lymfocyten, met geheugen.",
       "d": 2
      },
      {
+      "v": "Welke term past bij: \"gerichte afweer door lymfocyten, met geheugen\"?",
+      "o": [
+       "Specifieke afweer",
+       "Antigeen",
+       "Insuline",
+       "Synaps"
+      ],
+      "c": 0,
+      "u": "Het juiste begrip is «Specifieke afweer»: gerichte afweer door lymfocyten, met geheugen.",
+      "d": 3
+     },
+     {
+      "v": "Wat betekent «Aspecifieke afweer»?",
+      "o": [
+       "het constant houden van het interne milieu",
+       "algemene eerste verdediging (huid, fagocyten)",
+       "een reeks van eten en gegeten worden",
+       "twee hormonen of spieren met een tegengesteld effect"
+      ],
+      "c": 1,
+      "u": "«Aspecifieke afweer» betekent: algemene eerste verdediging (huid, fagocyten).",
+      "d": 1
+     },
+     {
       "v": "Welk begrip hoort bij deze omschrijving: \"algemene eerste verdediging (huid, fagocyten)\"?",
+      "o": [
+       "Preparaat",
+       "Dominant allel",
+       "Aspecifieke afweer",
+       "Determineertabel"
+      ],
+      "c": 2,
+      "u": "Het juiste begrip is «Aspecifieke afweer»: algemene eerste verdediging (huid, fagocyten).",
+      "d": 2
+     },
+     {
+      "v": "Welke term past bij: \"algemene eerste verdediging (huid, fagocyten)\"?",
       "o": [
        "Specifieke afweer",
        "Neuron",
@@ -4737,26 +8093,74 @@ var VAKKEN = [
      {
       "v": "Wat betekent «Vaccinatie»?",
       "o": [
-       "inbrengen van onschadelijk antigeen om geheugen op te bouwen",
-       "mate waarin herhaalde metingen dezelfde uitkomst geven",
+       "een proef zonder de onderzochte factor, als vergelijkingspunt",
+       "twee hormonen of spieren met een tegengesteld effect",
+       "allel dat alleen homozygoot tot uiting komt",
+       "inbrengen van onschadelijk antigeen om geheugen op te bouwen"
+      ],
+      "c": 3,
+      "u": "«Vaccinatie» betekent: inbrengen van onschadelijk antigeen om geheugen op te bouwen.",
+      "d": 1
+     },
+     {
+      "v": "Welk begrip hoort bij deze omschrijving: \"inbrengen van onschadelijk antigeen om geheugen op te bouwen\"?",
+      "o": [
+       "Biotische factor",
+       "Natuurlijke selectie",
+       "Vaccinatie",
+       "Mitochondrion"
+      ],
+      "c": 2,
+      "u": "Het juiste begrip is «Vaccinatie»: inbrengen van onschadelijk antigeen om geheugen op te bouwen.",
+      "d": 2
+     },
+     {
+      "v": "Welke term past bij: \"inbrengen van onschadelijk antigeen om geheugen op te bouwen\"?",
+      "o": [
+       "Neuron",
+       "Vaccinatie",
+       "Specifieke afweer",
+       "Insuline"
+      ],
+      "c": 1,
+      "u": "Het juiste begrip is «Vaccinatie»: inbrengen van onschadelijk antigeen om geheugen op te bouwen.",
+      "d": 3
+     },
+     {
+      "v": "Wat betekent «Antagonisme»?",
+      "o": [
+       "twee hormonen of spieren met een tegengesteld effect",
+       "een sleutel om organismen op kenmerken te benoemen",
        "organisme dat dood materiaal afbreekt (bacteriën, schimmels)",
-       "een chemische boodschapper die via het bloed werkt"
+       "de factor die je in een proef bewust verandert"
       ],
       "c": 0,
-      "u": "«Vaccinatie» betekent: inbrengen van onschadelijk antigeen om geheugen op te bouwen.",
+      "u": "«Antagonisme» betekent: twee hormonen of spieren met een tegengesteld effect.",
       "d": 1
      },
      {
       "v": "Welk begrip hoort bij deze omschrijving: \"twee hormonen of spieren met een tegengesteld effect\"?",
       "o": [
-       "Populatie",
-       "Chloroplast",
        "Antagonisme",
-       "Hypothese"
+       "Consument",
+       "DNA",
+       "Cel"
       ],
-      "c": 2,
+      "c": 0,
       "u": "Het juiste begrip is «Antagonisme»: twee hormonen of spieren met een tegengesteld effect.",
       "d": 2
+     },
+     {
+      "v": "Welke term past bij: \"twee hormonen of spieren met een tegengesteld effect\"?",
+      "o": [
+       "Antagonisme",
+       "Hormoon",
+       "Neuron",
+       "Homeostase"
+      ],
+      "c": 0,
+      "u": "Het juiste begrip is «Antagonisme»: twee hormonen of spieren met een tegengesteld effect.",
+      "d": 3
      }
     ],
     "oe": [
@@ -5038,34 +8442,106 @@ var VAKKEN = [
      {
       "v": "Wat betekent «Populatie»?",
       "o": [
-       "een zenuwcel die impulsen geleidt",
-       "eiwit dat specifiek aan een antigeen bindt",
-       "alle individuen van één soort in een gebied",
-       "mate waarin je meet wat je wilt meten"
+       "energiecentrale die aerobe celademhaling uitvoert (ATP)",
+       "organisme dat zelf organische stof maakt (planten)",
+       "organisme dat dood materiaal afbreekt (bacteriën, schimmels)",
+       "alle individuen van één soort in een gebied"
+      ],
+      "c": 3,
+      "u": "«Populatie» betekent: alle individuen van één soort in een gebied.",
+      "d": 1
+     },
+     {
+      "v": "Welk begrip hoort bij deze omschrijving: \"alle individuen van één soort in een gebied\"?",
+      "o": [
+       "Voedselketen",
+       "Cel",
+       "Populatie",
+       "Insuline"
       ],
       "c": 2,
-      "u": "«Populatie» betekent: alle individuen van één soort in een gebied.",
+      "u": "Het juiste begrip is «Populatie»: alle individuen van één soort in een gebied.",
+      "d": 2
+     },
+     {
+      "v": "Welke term past bij: \"alle individuen van één soort in een gebied\"?",
+      "o": [
+       "Natuurlijke selectie",
+       "Populatie",
+       "Reducent",
+       "Biotische factor"
+      ],
+      "c": 1,
+      "u": "Het juiste begrip is «Populatie»: alle individuen van één soort in een gebied.",
+      "d": 3
+     },
+     {
+      "v": "Wat betekent «Ecosysteem»?",
+      "o": [
+       "algemene eerste verdediging (huid, fagocyten)",
+       "een levensgemeenschap plus de abiotische omgeving",
+       "allel dat alleen homozygoot tot uiting komt",
+       "een zenuwcel die impulsen geleidt"
+      ],
+      "c": 1,
+      "u": "«Ecosysteem» betekent: een levensgemeenschap plus de abiotische omgeving.",
       "d": 1
      },
      {
       "v": "Welk begrip hoort bij deze omschrijving: \"een levensgemeenschap plus de abiotische omgeving\"?",
       "o": [
-       "Betrouwbaarheid",
+       "Ecosysteem",
+       "Dominant allel",
        "Neuron",
-       "Mitose",
-       "Ecosysteem"
+       "Fotosynthese"
       ],
-      "c": 3,
+      "c": 0,
       "u": "Het juiste begrip is «Ecosysteem»: een levensgemeenschap plus de abiotische omgeving.",
       "d": 2
      },
      {
+      "v": "Welke term past bij: \"een levensgemeenschap plus de abiotische omgeving\"?",
+      "o": [
+       "Abiotische factor",
+       "Draagkracht",
+       "Populatie",
+       "Ecosysteem"
+      ],
+      "c": 3,
+      "u": "Het juiste begrip is «Ecosysteem»: een levensgemeenschap plus de abiotische omgeving.",
+      "d": 3
+     },
+     {
+      "v": "Wat betekent «Biotische factor»?",
+      "o": [
+       "een invloed van levende organismen",
+       "een sleutel om organismen op kenmerken te benoemen",
+       "de verbinding tussen twee neuronen met neurotransmitters",
+       "mate waarin herhaalde metingen dezelfde uitkomst geven"
+      ],
+      "c": 0,
+      "u": "«Biotische factor» betekent: een invloed van levende organismen.",
+      "d": 1
+     },
+     {
       "v": "Welk begrip hoort bij deze omschrijving: \"een invloed van levende organismen\"?",
       "o": [
-       "Draagkracht",
+       "Mitose",
+       "Preparaat",
+       "Vaccinatie",
+       "Biotische factor"
+      ],
+      "c": 3,
+      "u": "Het juiste begrip is «Biotische factor»: een invloed van levende organismen.",
+      "d": 2
+     },
+     {
+      "v": "Welke term past bij: \"een invloed van levende organismen\"?",
+      "o": [
+       "Consument",
        "Biotische factor",
-       "Abiotische factor",
-       "Voedselketen"
+       "Populatie",
+       "Biodiversiteit"
       ],
       "c": 1,
       "u": "Het juiste begrip is «Biotische factor»: een invloed van levende organismen.",
@@ -5074,108 +8550,324 @@ var VAKKEN = [
      {
       "v": "Wat betekent «Abiotische factor»?",
       "o": [
+       "inbrengen van onschadelijk antigeen om geheugen op te bouwen",
+       "een levensgemeenschap plus de abiotische omgeving",
        "een niet-levende invloed (licht, temperatuur, water)",
-       "een invloed van levende organismen",
-       "een toetsbare voorspelling van een verwacht verband",
-       "organisme dat andere organismen eet"
+       "een toetsbare voorspelling van een verwacht verband"
+      ],
+      "c": 2,
+      "u": "«Abiotische factor» betekent: een niet-levende invloed (licht, temperatuur, water).",
+      "d": 1
+     },
+     {
+      "v": "Welk begrip hoort bij deze omschrijving: \"een niet-levende invloed (licht, temperatuur, water)\"?",
+      "o": [
+       "Abiotische factor",
+       "Mutatie",
+       "Insuline",
+       "Natuurlijke selectie"
       ],
       "c": 0,
-      "u": "«Abiotische factor» betekent: een niet-levende invloed (licht, temperatuur, water).",
+      "u": "Het juiste begrip is «Abiotische factor»: een niet-levende invloed (licht, temperatuur, water).",
+      "d": 2
+     },
+     {
+      "v": "Welke term past bij: \"een niet-levende invloed (licht, temperatuur, water)\"?",
+      "o": [
+       "Producent",
+       "Draagkracht",
+       "Consument",
+       "Abiotische factor"
+      ],
+      "c": 3,
+      "u": "Het juiste begrip is «Abiotische factor»: een niet-levende invloed (licht, temperatuur, water).",
+      "d": 3
+     },
+     {
+      "v": "Wat betekent «Voedselketen»?",
+      "o": [
+       "een reeks van eten en gegeten worden",
+       "de factor die je in een proef bewust verandert",
+       "een invloed van levende organismen",
+       "mate waarin herhaalde metingen dezelfde uitkomst geven"
+      ],
+      "c": 0,
+      "u": "«Voedselketen» betekent: een reeks van eten en gegeten worden.",
       "d": 1
      },
      {
       "v": "Welk begrip hoort bij deze omschrijving: \"een reeks van eten en gegeten worden\"?",
       "o": [
-       "Neuron",
-       "Antigeen",
+       "Celmembraan",
        "Voedselketen",
-       "DNA"
+       "Meiose",
+       "Antilichaam"
       ],
-      "c": 2,
+      "c": 1,
       "u": "Het juiste begrip is «Voedselketen»: een reeks van eten en gegeten worden.",
       "d": 2
      },
      {
-      "v": "Welk begrip hoort bij deze omschrijving: \"organisme dat zelf organische stof maakt (planten)\"?",
+      "v": "Welke term past bij: \"een reeks van eten en gegeten worden\"?",
       "o": [
+       "Consument",
        "Abiotische factor",
-       "Reducent",
-       "Natuurlijke selectie",
-       "Producent"
+       "Biotische factor",
+       "Voedselketen"
       ],
       "c": 3,
+      "u": "Het juiste begrip is «Voedselketen»: een reeks van eten en gegeten worden.",
+      "d": 3
+     },
+     {
+      "v": "Wat betekent «Producent»?",
+      "o": [
+       "mate waarin je meet wat je wilt meten",
+       "een niet-levende invloed (licht, temperatuur, water)",
+       "een chemische boodschapper die via het bloed werkt",
+       "organisme dat zelf organische stof maakt (planten)"
+      ],
+      "c": 3,
+      "u": "«Producent» betekent: organisme dat zelf organische stof maakt (planten).",
+      "d": 1
+     },
+     {
+      "v": "Welk begrip hoort bij deze omschrijving: \"organisme dat zelf organische stof maakt (planten)\"?",
+      "o": [
+       "Producent",
+       "Biotische factor",
+       "Meiose",
+       "Aspecifieke afweer"
+      ],
+      "c": 0,
+      "u": "Het juiste begrip is «Producent»: organisme dat zelf organische stof maakt (planten).",
+      "d": 2
+     },
+     {
+      "v": "Welke term past bij: \"organisme dat zelf organische stof maakt (planten)\"?",
+      "o": [
+       "Producent",
+       "Natuurlijke selectie",
+       "Draagkracht",
+       "Ecosysteem"
+      ],
+      "c": 0,
       "u": "Het juiste begrip is «Producent»: organisme dat zelf organische stof maakt (planten).",
       "d": 3
      },
      {
       "v": "Wat betekent «Consument»?",
       "o": [
-       "de verscheidenheid aan soorten en genen",
-       "molecuul met de erfelijke informatie in genen",
+       "CO2 + water + licht worden glucose + zuurstof",
        "organisme dat andere organismen eet",
-       "het constant houden van het interne milieu"
+       "de verbinding tussen twee neuronen met neurotransmitters",
+       "algemene eerste verdediging (huid, fagocyten)"
+      ],
+      "c": 1,
+      "u": "«Consument» betekent: organisme dat andere organismen eet.",
+      "d": 1
+     },
+     {
+      "v": "Welk begrip hoort bij deze omschrijving: \"organisme dat andere organismen eet\"?",
+      "o": [
+       "Celademhaling",
+       "Hypothese",
+       "Consument",
+       "Onafhankelijke variabele"
       ],
       "c": 2,
-      "u": "«Consument» betekent: organisme dat andere organismen eet.",
+      "u": "Het juiste begrip is «Consument»: organisme dat andere organismen eet.",
+      "d": 2
+     },
+     {
+      "v": "Welke term past bij: \"organisme dat andere organismen eet\"?",
+      "o": [
+       "Producent",
+       "Biodiversiteit",
+       "Consument",
+       "Reducent"
+      ],
+      "c": 2,
+      "u": "Het juiste begrip is «Consument»: organisme dat andere organismen eet.",
+      "d": 3
+     },
+     {
+      "v": "Wat betekent «Reducent»?",
+      "o": [
+       "organisme dat dood materiaal afbreekt (bacteriën, schimmels)",
+       "de factor die je meet als gevolg",
+       "molecuul met de erfelijke informatie in genen",
+       "een lichaamsvreemde stof die een afweerreactie opwekt"
+      ],
+      "c": 0,
+      "u": "«Reducent» betekent: organisme dat dood materiaal afbreekt (bacteriën, schimmels).",
       "d": 1
      },
      {
       "v": "Welk begrip hoort bij deze omschrijving: \"organisme dat dood materiaal afbreekt (bacteriën, schimmels)\"?",
       "o": [
+       "Populatie",
+       "Mutatie",
        "Reducent",
-       "Antigeen",
-       "Celkern",
-       "Controle-experiment"
+       "Specifieke afweer"
       ],
-      "c": 0,
+      "c": 2,
       "u": "Het juiste begrip is «Reducent»: organisme dat dood materiaal afbreekt (bacteriën, schimmels).",
       "d": 2
      },
      {
+      "v": "Welke term past bij: \"organisme dat dood materiaal afbreekt (bacteriën, schimmels)\"?",
+      "o": [
+       "Reducent",
+       "Populatie",
+       "Draagkracht",
+       "Producent"
+      ],
+      "c": 0,
+      "u": "Het juiste begrip is «Reducent»: organisme dat dood materiaal afbreekt (bacteriën, schimmels).",
+      "d": 3
+     },
+     {
+      "v": "Wat betekent «Draagkracht»?",
+      "o": [
+       "mate waarin je meet wat je wilt meten",
+       "organisme dat dood materiaal afbreekt (bacteriën, schimmels)",
+       "glucose + zuurstof worden CO2 + water + energie (ATP)",
+       "de maximale populatiegrootte die een gebied aankan"
+      ],
+      "c": 3,
+      "u": "«Draagkracht» betekent: de maximale populatiegrootte die een gebied aankan.",
+      "d": 1
+     },
+     {
       "v": "Welk begrip hoort bij deze omschrijving: \"de maximale populatiegrootte die een gebied aankan\"?",
       "o": [
-       "Duurzaamheid",
-       "Draagkracht",
-       "Biotische factor",
-       "Abiotische factor"
+       "Mitochondrion",
+       "Voedselketen",
+       "Vaccinatie",
+       "Draagkracht"
       ],
-      "c": 1,
+      "c": 3,
+      "u": "Het juiste begrip is «Draagkracht»: de maximale populatiegrootte die een gebied aankan.",
+      "d": 2
+     },
+     {
+      "v": "Welke term past bij: \"de maximale populatiegrootte die een gebied aankan\"?",
+      "o": [
+       "Draagkracht",
+       "Duurzaamheid",
+       "Biodiversiteit",
+       "Biotische factor"
+      ],
+      "c": 0,
       "u": "Het juiste begrip is «Draagkracht»: de maximale populatiegrootte die een gebied aankan.",
       "d": 3
      },
      {
       "v": "Wat betekent «Natuurlijke selectie»?",
       "o": [
+       "allel dat het fenotype bepaalt, ook heterozygoot",
+       "een toetsbare voorspelling van een verwacht verband",
        "best aangepaste individuen planten zich meer voort",
-       "inbrengen van onschadelijk antigeen om geheugen op te bouwen",
-       "organel dat het DNA bevat en de cel aanstuurt",
-       "allel dat het fenotype bepaalt, ook heterozygoot"
+       "organel waarin fotosynthese plaatsvindt"
       ],
-      "c": 0,
+      "c": 2,
       "u": "«Natuurlijke selectie» betekent: best aangepaste individuen planten zich meer voort.",
+      "d": 1
+     },
+     {
+      "v": "Welk begrip hoort bij deze omschrijving: \"best aangepaste individuen planten zich meer voort\"?",
+      "o": [
+       "Celkern",
+       "Mutatie",
+       "Natuurlijke selectie",
+       "Aspecifieke afweer"
+      ],
+      "c": 2,
+      "u": "Het juiste begrip is «Natuurlijke selectie»: best aangepaste individuen planten zich meer voort.",
+      "d": 2
+     },
+     {
+      "v": "Welke term past bij: \"best aangepaste individuen planten zich meer voort\"?",
+      "o": [
+       "Reducent",
+       "Biotische factor",
+       "Producent",
+       "Natuurlijke selectie"
+      ],
+      "c": 3,
+      "u": "Het juiste begrip is «Natuurlijke selectie»: best aangepaste individuen planten zich meer voort.",
+      "d": 3
+     },
+     {
+      "v": "Wat betekent «Biodiversiteit»?",
+      "o": [
+       "een toetsbare voorspelling van een verwacht verband",
+       "inbrengen van onschadelijk antigeen om geheugen op te bouwen",
+       "de verscheidenheid aan soorten en genen",
+       "mate waarin herhaalde metingen dezelfde uitkomst geven"
+      ],
+      "c": 2,
+      "u": "«Biodiversiteit» betekent: de verscheidenheid aan soorten en genen.",
       "d": 1
      },
      {
       "v": "Welk begrip hoort bij deze omschrijving: \"de verscheidenheid aan soorten en genen\"?",
       "o": [
-       "Consument",
-       "Antagonisme",
-       "Biodiversiteit",
-       "Populatie"
+       "Preparaat",
+       "Mitochondrion",
+       "Onafhankelijke variabele",
+       "Biodiversiteit"
       ],
-      "c": 2,
+      "c": 3,
       "u": "Het juiste begrip is «Biodiversiteit»: de verscheidenheid aan soorten en genen.",
       "d": 2
      },
      {
-      "v": "Welk begrip hoort bij deze omschrijving: \"gebruik zonder uitputting voor latere generaties\"?",
+      "v": "Welke term past bij: \"de verscheidenheid aan soorten en genen\"?",
       "o": [
-       "Duurzaamheid",
-       "Natuurlijke selectie",
-       "Ecosysteem",
-       "Biotische factor"
+       "Biodiversiteit",
+       "Producent",
+       "Reducent",
+       "Natuurlijke selectie"
       ],
       "c": 0,
+      "u": "Het juiste begrip is «Biodiversiteit»: de verscheidenheid aan soorten en genen.",
+      "d": 3
+     },
+     {
+      "v": "Wat betekent «Duurzaamheid»?",
+      "o": [
+       "gebruik zonder uitputting voor latere generaties",
+       "inbrengen van onschadelijk antigeen om geheugen op te bouwen",
+       "een dun plakje materiaal voor onder de microscoop",
+       "een invloed van levende organismen"
+      ],
+      "c": 0,
+      "u": "«Duurzaamheid» betekent: gebruik zonder uitputting voor latere generaties.",
+      "d": 1
+     },
+     {
+      "v": "Welk begrip hoort bij deze omschrijving: \"gebruik zonder uitputting voor latere generaties\"?",
+      "o": [
+       "Antagonisme",
+       "Mitose",
+       "Duurzaamheid",
+       "Preparaat"
+      ],
+      "c": 2,
+      "u": "Het juiste begrip is «Duurzaamheid»: gebruik zonder uitputting voor latere generaties.",
+      "d": 2
+     },
+     {
+      "v": "Welke term past bij: \"gebruik zonder uitputting voor latere generaties\"?",
+      "o": [
+       "Ecosysteem",
+       "Duurzaamheid",
+       "Voedselketen",
+       "Biodiversiteit"
+      ],
+      "c": 1,
       "u": "Het juiste begrip is «Duurzaamheid»: gebruik zonder uitputting voor latere generaties.",
       "d": 3
      }
@@ -5446,33 +9138,105 @@ var VAKKEN = [
      {
       "v": "Wat betekent «Mol»?",
       "o": [
-       "symbool dat het gevaar van een stof aangeeft",
-       "koolwaterstof met een dubbele C=C-binding",
        "rekeneenheid voor hoeveelheid stof (6,02·10²³ deeltjes)",
-       "stoffen met dezelfde molecuulformule maar andere structuur"
+       "een groepje gebonden atomen",
+       "een combinatie van meerdere stoffen",
+       "geeft het aantal atomen per soort in een molecuul"
       ],
-      "c": 2,
+      "c": 0,
       "u": "«Mol» betekent: rekeneenheid voor hoeveelheid stof (6,02·10²³ deeltjes).",
+      "d": 1
+     },
+     {
+      "v": "Welk begrip hoort bij deze omschrijving: \"rekeneenheid voor hoeveelheid stof (6,02·10²³ deeltjes)\"?",
+      "o": [
+       "Mol",
+       "Ester",
+       "Grondstof",
+       "Duurzaamheid"
+      ],
+      "c": 0,
+      "u": "Het juiste begrip is «Mol»: rekeneenheid voor hoeveelheid stof (6,02·10²³ deeltjes).",
+      "d": 2
+     },
+     {
+      "v": "Welke term past bij: \"rekeneenheid voor hoeveelheid stof (6,02·10²³ deeltjes)\"?",
+      "o": [
+       "Mol",
+       "Hypothese",
+       "Concentratie",
+       "Controle-experiment"
+      ],
+      "c": 0,
+      "u": "Het juiste begrip is «Mol»: rekeneenheid voor hoeveelheid stof (6,02·10²³ deeltjes).",
+      "d": 3
+     },
+     {
+      "v": "Wat betekent «Molaire massa»?",
+      "o": [
+       "gebruik zonder uitputting voor de toekomst",
+       "de massa van één mol stof (g/mol)",
+       "symbool dat het gevaar van een stof aangeeft",
+       "de uitstoot van stoffen naar het milieu"
+      ],
+      "c": 1,
+      "u": "«Molaire massa» betekent: de massa van één mol stof (g/mol).",
       "d": 1
      },
      {
       "v": "Welk begrip hoort bij deze omschrijving: \"de massa van één mol stof (g/mol)\"?",
       "o": [
-       "Biobrandstof",
+       "Ester",
        "Molaire massa",
-       "Grondstof",
-       "Alcohol"
+       "Base",
+       "Molecuulformule"
       ],
       "c": 1,
       "u": "Het juiste begrip is «Molaire massa»: de massa van één mol stof (g/mol).",
       "d": 2
      },
      {
+      "v": "Welke term past bij: \"de massa van één mol stof (g/mol)\"?",
+      "o": [
+       "Concentratie",
+       "Zuivere stof",
+       "Molaire massa",
+       "Hypothese"
+      ],
+      "c": 2,
+      "u": "Het juiste begrip is «Molaire massa»: de massa van één mol stof (g/mol).",
+      "d": 3
+     },
+     {
+      "v": "Wat betekent «Concentratie»?",
+      "o": [
+       "hoeveelheid opgeloste stof per liter (mol/L)",
+       "stof die een reactie versnelt zonder verbruikt te worden",
+       "koolwaterstof met een dubbele C=C-binding",
+       "brandstof gemaakt uit biomassa"
+      ],
+      "c": 0,
+      "u": "«Concentratie» betekent: hoeveelheid opgeloste stof per liter (mol/L).",
+      "d": 1
+     },
+     {
       "v": "Welk begrip hoort bij deze omschrijving: \"hoeveelheid opgeloste stof per liter (mol/L)\"?",
       "o": [
-       "Controle-experiment",
-       "GHS-pictogram",
+       "Substitutiereactie",
+       "Chemische reactie",
+       "Concentratie",
+       "Base"
+      ],
+      "c": 2,
+      "u": "Het juiste begrip is «Concentratie»: hoeveelheid opgeloste stof per liter (mol/L).",
+      "d": 2
+     },
+     {
+      "v": "Welke term past bij: \"hoeveelheid opgeloste stof per liter (mol/L)\"?",
+      "o": [
        "Mol",
+       "Zuivere stof",
+       "Controle-experiment",
        "Concentratie"
       ],
       "c": 3,
@@ -5482,62 +9246,182 @@ var VAKKEN = [
      {
       "v": "Wat betekent «Hypothese»?",
       "o": [
-       "brandstof gemaakt uit biomassa",
-       "een toetsbare voorspelling",
-       "de uitstoot van stoffen naar het milieu",
-       "hoe dicht een meting bij de werkelijke waarde ligt"
+       "een koolstofverbinding met een OH-groep",
+       "geeft het aantal atomen per soort in een molecuul",
+       "stoffen met dezelfde molecuulformule maar andere structuur",
+       "een toetsbare voorspelling"
       ],
-      "c": 1,
+      "c": 3,
       "u": "«Hypothese» betekent: een toetsbare voorspelling.",
+      "d": 1
+     },
+     {
+      "v": "Welk begrip hoort bij deze omschrijving: \"een toetsbare voorspelling\"?",
+      "o": [
+       "Hypothese",
+       "Atoombinding",
+       "Zuur",
+       "Verbranding"
+      ],
+      "c": 0,
+      "u": "Het juiste begrip is «Hypothese»: een toetsbare voorspelling.",
+      "d": 2
+     },
+     {
+      "v": "Welke term past bij: \"een toetsbare voorspelling\"?",
+      "o": [
+       "Hypothese",
+       "Mol",
+       "Concentratie",
+       "Controle-experiment"
+      ],
+      "c": 0,
+      "u": "Het juiste begrip is «Hypothese»: een toetsbare voorspelling.",
+      "d": 3
+     },
+     {
+      "v": "Wat betekent «Controle-experiment»?",
+      "o": [
+       "atomen worden aan een dubbele binding toegevoegd",
+       "materialen blijven in de kringloop",
+       "positieve ionen in een zee van vrije elektronen",
+       "een proef zonder de onderzochte factor, als referentie"
+      ],
+      "c": 3,
+      "u": "«Controle-experiment» betekent: een proef zonder de onderzochte factor, als referentie.",
       "d": 1
      },
      {
       "v": "Welk begrip hoort bij deze omschrijving: \"een proef zonder de onderzochte factor, als referentie\"?",
       "o": [
-       "Substitutiereactie",
-       "Molecuul",
-       "Controle-experiment",
-       "Molaire massa"
+       "Grondstof",
+       "Katalysator",
+       "Endotherm",
+       "Controle-experiment"
       ],
-      "c": 2,
+      "c": 3,
       "u": "Het juiste begrip is «Controle-experiment»: een proef zonder de onderzochte factor, als referentie.",
       "d": 2
      },
      {
+      "v": "Welke term past bij: \"een proef zonder de onderzochte factor, als referentie\"?",
+      "o": [
+       "Concentratie",
+       "Controle-experiment",
+       "Zuivere stof",
+       "Nauwkeurigheid"
+      ],
+      "c": 1,
+      "u": "Het juiste begrip is «Controle-experiment»: een proef zonder de onderzochte factor, als referentie.",
+      "d": 3
+     },
+     {
+      "v": "Wat betekent «GHS-pictogram»?",
+      "o": [
+       "symbool dat het gevaar van een stof aangeeft",
+       "een stof die uit één soort atomen bestaat",
+       "getal dat de molverhouding in een reactie aangeeft",
+       "een proef zonder de onderzochte factor, als referentie"
+      ],
+      "c": 0,
+      "u": "«GHS-pictogram» betekent: symbool dat het gevaar van een stof aangeeft.",
+      "d": 1
+     },
+     {
       "v": "Welk begrip hoort bij deze omschrijving: \"symbool dat het gevaar van een stof aangeeft\"?",
       "o": [
-       "Molaire massa",
-       "Nauwkeurigheid",
-       "Zuivere stof",
+       "Alcohol",
+       "Hypothese",
+       "Polymeer",
        "GHS-pictogram"
       ],
       "c": 3,
+      "u": "Het juiste begrip is «GHS-pictogram»: symbool dat het gevaar van een stof aangeeft.",
+      "d": 2
+     },
+     {
+      "v": "Welke term past bij: \"symbool dat het gevaar van een stof aangeeft\"?",
+      "o": [
+       "GHS-pictogram",
+       "Hypothese",
+       "Molaire massa",
+       "Mol"
+      ],
+      "c": 0,
       "u": "Het juiste begrip is «GHS-pictogram»: symbool dat het gevaar van een stof aangeeft.",
       "d": 3
      },
      {
       "v": "Wat betekent «Nauwkeurigheid»?",
       "o": [
+       "reactie van een zuur met een base tot zout en water",
        "hoe dicht een meting bij de werkelijke waarde ligt",
-       "de massa van één mol stof (g/mol)",
-       "een groot molecuul opgebouwd uit vele monomeren",
-       "een reactie die warmte opneemt"
+       "geeft het aantal atomen per soort in een molecuul",
+       "reactieve groep die de eigenschappen bepaalt"
       ],
-      "c": 0,
+      "c": 1,
       "u": "«Nauwkeurigheid» betekent: hoe dicht een meting bij de werkelijke waarde ligt.",
+      "d": 1
+     },
+     {
+      "v": "Welk begrip hoort bij deze omschrijving: \"hoe dicht een meting bij de werkelijke waarde ligt\"?",
+      "o": [
+       "Atoombinding",
+       "Katalysator",
+       "Nauwkeurigheid",
+       "Duurzaamheid"
+      ],
+      "c": 2,
+      "u": "Het juiste begrip is «Nauwkeurigheid»: hoe dicht een meting bij de werkelijke waarde ligt.",
+      "d": 2
+     },
+     {
+      "v": "Welke term past bij: \"hoe dicht een meting bij de werkelijke waarde ligt\"?",
+      "o": [
+       "Concentratie",
+       "Nauwkeurigheid",
+       "GHS-pictogram",
+       "Mol"
+      ],
+      "c": 1,
+      "u": "Het juiste begrip is «Nauwkeurigheid»: hoe dicht een meting bij de werkelijke waarde ligt.",
+      "d": 3
+     },
+     {
+      "v": "Wat betekent «Zuivere stof»?",
+      "o": [
+       "het hergebruiken van materialen",
+       "een reactie die warmte afgeeft",
+       "een stof met maar één soort deeltjes",
+       "een geladen atoom of groep atomen"
+      ],
+      "c": 2,
+      "u": "«Zuivere stof» betekent: een stof met maar één soort deeltjes.",
       "d": 1
      },
      {
       "v": "Welk begrip hoort bij deze omschrijving: \"een stof met maar één soort deeltjes\"?",
       "o": [
        "Zuivere stof",
-       "Recycling",
-       "Biobrandstof",
-       "Endotherm"
+       "Molaire massa",
+       "Broeikasgas",
+       "Alcohol"
       ],
       "c": 0,
       "u": "Het juiste begrip is «Zuivere stof»: een stof met maar één soort deeltjes.",
       "d": 2
+     },
+     {
+      "v": "Welke term past bij: \"een stof met maar één soort deeltjes\"?",
+      "o": [
+       "Concentratie",
+       "Controle-experiment",
+       "GHS-pictogram",
+       "Zuivere stof"
+      ],
+      "c": 3,
+      "u": "Het juiste begrip is «Zuivere stof»: een stof met maar één soort deeltjes.",
+      "d": 3
      }
     ],
     "oe": [
@@ -5800,72 +9684,216 @@ var VAKKEN = [
      {
       "v": "Wat betekent «Element»?",
       "o": [
-       "een reactie met overdracht van elektronen",
-       "atomen worden aan een dubbele binding toegevoegd",
+       "stoffen met dezelfde molecuulformule maar andere structuur",
        "een stof die uit één soort atomen bestaat",
+       "verbinding uit een zuur en een alcohol (geurstof)",
        "rekeneenheid voor hoeveelheid stof (6,02·10²³ deeltjes)"
       ],
-      "c": 2,
+      "c": 1,
       "u": "«Element» betekent: een stof die uit één soort atomen bestaat.",
+      "d": 1
+     },
+     {
+      "v": "Welk begrip hoort bij deze omschrijving: \"een stof die uit één soort atomen bestaat\"?",
+      "o": [
+       "Mengsel",
+       "Broeikasgas",
+       "Element",
+       "Molecuulformule"
+      ],
+      "c": 2,
+      "u": "Het juiste begrip is «Element»: een stof die uit één soort atomen bestaat.",
+      "d": 2
+     },
+     {
+      "v": "Welke term past bij: \"een stof die uit één soort atomen bestaat\"?",
+      "o": [
+       "Element",
+       "Atoombinding",
+       "Metaalbinding",
+       "Mengsel"
+      ],
+      "c": 0,
+      "u": "Het juiste begrip is «Element»: een stof die uit één soort atomen bestaat.",
+      "d": 3
+     },
+     {
+      "v": "Wat betekent «Molecuul»?",
+      "o": [
+       "een combinatie van meerdere stoffen",
+       "een groepje gebonden atomen",
+       "het hergebruiken van materialen",
+       "reactie met zuurstof waarbij CO2 en water ontstaan"
+      ],
+      "c": 1,
+      "u": "«Molecuul» betekent: een groepje gebonden atomen.",
       "d": 1
      },
      {
       "v": "Welk begrip hoort bij deze omschrijving: \"een groepje gebonden atomen\"?",
       "o": [
-       "Hypothese",
-       "Biobrandstof",
+       "Endotherm",
        "Molecuul",
-       "Oplossing"
+       "Ionbinding",
+       "Broeikasgas"
       ],
-      "c": 2,
+      "c": 1,
       "u": "Het juiste begrip is «Molecuul»: een groepje gebonden atomen.",
       "d": 2
      },
      {
-      "v": "Welk begrip hoort bij deze omschrijving: \"een geladen atoom of groep atomen\"?",
+      "v": "Welke term past bij: \"een groepje gebonden atomen\"?",
       "o": [
-       "Ionbinding",
-       "Ion",
        "Oplossing",
+       "Atoombinding",
+       "Molecuul",
        "Metaalbinding"
       ],
-      "c": 1,
+      "c": 2,
+      "u": "Het juiste begrip is «Molecuul»: een groepje gebonden atomen.",
+      "d": 3
+     },
+     {
+      "v": "Wat betekent «Ion»?",
+      "o": [
+       "stoffen met dezelfde molecuulformule maar andere structuur",
+       "verbinding uit een zuur en een alcohol (geurstof)",
+       "een geladen atoom of groep atomen",
+       "het opnemen van elektronen"
+      ],
+      "c": 2,
+      "u": "«Ion» betekent: een geladen atoom of groep atomen.",
+      "d": 1
+     },
+     {
+      "v": "Welk begrip hoort bij deze omschrijving: \"een geladen atoom of groep atomen\"?",
+      "o": [
+       "Alkaan",
+       "Alkeen",
+       "Ion",
+       "Polymeer"
+      ],
+      "c": 2,
+      "u": "Het juiste begrip is «Ion»: een geladen atoom of groep atomen.",
+      "d": 2
+     },
+     {
+      "v": "Welke term past bij: \"een geladen atoom of groep atomen\"?",
+      "o": [
+       "Metaalbinding",
+       "Element",
+       "Atoombinding",
+       "Ion"
+      ],
+      "c": 3,
       "u": "Het juiste begrip is «Ion»: een geladen atoom of groep atomen.",
       "d": 3
      },
      {
       "v": "Wat betekent «Ionbinding»?",
       "o": [
-       "een stof die H⁺-ionen afstaat",
-       "verbinding uit een zuur en een alcohol (geurstof)",
+       "een reactie die warmte opneemt",
+       "de massa van één mol stof (g/mol)",
        "binding tussen tegengesteld geladen ionen",
-       "een geladen atoom of groep atomen"
+       "stof die een reactie versnelt zonder verbruikt te worden"
       ],
       "c": 2,
       "u": "«Ionbinding» betekent: binding tussen tegengesteld geladen ionen.",
       "d": 1
      },
      {
-      "v": "Welk begrip hoort bij deze omschrijving: \"binding met een gedeeld elektronenpaar tussen niet-metalen\"?",
+      "v": "Welk begrip hoort bij deze omschrijving: \"binding tussen tegengesteld geladen ionen\"?",
       "o": [
-       "Molaire massa",
-       "Atoombinding",
-       "Exotherm",
-       "Polymeer"
+       "Ionbinding",
+       "Katalysator",
+       "Reactievergelijking",
+       "Exotherm"
+      ],
+      "c": 0,
+      "u": "Het juiste begrip is «Ionbinding»: binding tussen tegengesteld geladen ionen.",
+      "d": 2
+     },
+     {
+      "v": "Welke term past bij: \"binding tussen tegengesteld geladen ionen\"?",
+      "o": [
+       "Molecuul",
+       "Ionbinding",
+       "Mengsel",
+       "Ion"
       ],
       "c": 1,
+      "u": "Het juiste begrip is «Ionbinding»: binding tussen tegengesteld geladen ionen.",
+      "d": 3
+     },
+     {
+      "v": "Wat betekent «Atoombinding»?",
+      "o": [
+       "reactie met zuurstof waarbij CO2 en water ontstaan",
+       "verbinding uit een zuur en een alcohol (geurstof)",
+       "een combinatie van meerdere stoffen",
+       "binding met een gedeeld elektronenpaar tussen niet-metalen"
+      ],
+      "c": 3,
+      "u": "«Atoombinding» betekent: binding met een gedeeld elektronenpaar tussen niet-metalen.",
+      "d": 1
+     },
+     {
+      "v": "Welk begrip hoort bij deze omschrijving: \"binding met een gedeeld elektronenpaar tussen niet-metalen\"?",
+      "o": [
+       "Atoombinding",
+       "Circulaire economie",
+       "Endotherm",
+       "Recycling"
+      ],
+      "c": 0,
       "u": "Het juiste begrip is «Atoombinding»: binding met een gedeeld elektronenpaar tussen niet-metalen.",
       "d": 2
      },
      {
-      "v": "Welk begrip hoort bij deze omschrijving: \"geeft het aantal atomen per soort in een molecuul\"?",
+      "v": "Welke term past bij: \"binding met een gedeeld elektronenpaar tussen niet-metalen\"?",
       "o": [
-       "Ionbinding",
        "Element",
-       "Molecuulformule",
-       "Metaalbinding"
+       "Oplossing",
+       "Ionbinding",
+       "Atoombinding"
+      ],
+      "c": 3,
+      "u": "Het juiste begrip is «Atoombinding»: binding met een gedeeld elektronenpaar tussen niet-metalen.",
+      "d": 3
+     },
+     {
+      "v": "Wat betekent «Molecuulformule»?",
+      "o": [
+       "rekeneenheid voor hoeveelheid stof (6,02·10²³ deeltjes)",
+       "verbinding uit een zuur en een alcohol (geurstof)",
+       "geeft het aantal atomen per soort in een molecuul",
+       "een reactie die warmte afgeeft"
       ],
       "c": 2,
+      "u": "«Molecuulformule» betekent: geeft het aantal atomen per soort in een molecuul.",
+      "d": 1
+     },
+     {
+      "v": "Welk begrip hoort bij deze omschrijving: \"geeft het aantal atomen per soort in een molecuul\"?",
+      "o": [
+       "Molecuulformule",
+       "Duurzaamheid",
+       "Base",
+       "Oplossing"
+      ],
+      "c": 0,
+      "u": "Het juiste begrip is «Molecuulformule»: geeft het aantal atomen per soort in een molecuul.",
+      "d": 2
+     },
+     {
+      "v": "Welke term past bij: \"geeft het aantal atomen per soort in een molecuul\"?",
+      "o": [
+       "Ion",
+       "Metaalbinding",
+       "Mengsel",
+       "Molecuulformule"
+      ],
+      "c": 3,
       "u": "Het juiste begrip is «Molecuulformule»: geeft het aantal atomen per soort in een molecuul.",
       "d": 3
      },
@@ -5873,35 +9901,107 @@ var VAKKEN = [
       "v": "Wat betekent «Mengsel»?",
       "o": [
        "een combinatie van meerdere stoffen",
-       "uitgangsmateriaal voor productie",
-       "hoeveelheid opgeloste stof per liter (mol/L)",
-       "een stof die H⁺-ionen opneemt"
+       "binding met een gedeeld elektronenpaar tussen niet-metalen",
+       "een toetsbare voorspelling",
+       "een groepje gebonden atomen"
       ],
       "c": 0,
       "u": "«Mengsel» betekent: een combinatie van meerdere stoffen.",
       "d": 1
      },
      {
-      "v": "Welk begrip hoort bij deze omschrijving: \"een homogeen mengsel van opgeloste stof en oplosmiddel\"?",
+      "v": "Welk begrip hoort bij deze omschrijving: \"een combinatie van meerdere stoffen\"?",
       "o": [
+       "Ester",
+       "Reactievergelijking",
+       "Mengsel",
+       "Neutralisatie"
+      ],
+      "c": 2,
+      "u": "Het juiste begrip is «Mengsel»: een combinatie van meerdere stoffen.",
+      "d": 2
+     },
+     {
+      "v": "Welke term past bij: \"een combinatie van meerdere stoffen\"?",
+      "o": [
+       "Molecuul",
        "Molecuulformule",
-       "Coëfficiënt",
-       "Circulaire economie",
-       "Oplossing"
+       "Oplossing",
+       "Mengsel"
       ],
       "c": 3,
+      "u": "Het juiste begrip is «Mengsel»: een combinatie van meerdere stoffen.",
+      "d": 3
+     },
+     {
+      "v": "Wat betekent «Oplossing»?",
+      "o": [
+       "een homogeen mengsel van opgeloste stof en oplosmiddel",
+       "uitgangsmateriaal voor productie",
+       "de massa van één mol stof (g/mol)",
+       "een gas dat warmte vasthoudt, zoals CO2"
+      ],
+      "c": 0,
+      "u": "«Oplossing» betekent: een homogeen mengsel van opgeloste stof en oplosmiddel.",
+      "d": 1
+     },
+     {
+      "v": "Welk begrip hoort bij deze omschrijving: \"een homogeen mengsel van opgeloste stof en oplosmiddel\"?",
+      "o": [
+       "Levenscyclusanalyse",
+       "Circulaire economie",
+       "Oplossing",
+       "Controle-experiment"
+      ],
+      "c": 2,
       "u": "Het juiste begrip is «Oplossing»: een homogeen mengsel van opgeloste stof en oplosmiddel.",
       "d": 2
      },
      {
-      "v": "Welk begrip hoort bij deze omschrijving: \"positieve ionen in een zee van vrije elektronen\"?",
+      "v": "Welke term past bij: \"een homogeen mengsel van opgeloste stof en oplosmiddel\"?",
       "o": [
-       "Metaalbinding",
+       "Ion",
        "Atoombinding",
-       "Mengsel",
-       "Molecuulformule"
+       "Molecuul",
+       "Oplossing"
+      ],
+      "c": 3,
+      "u": "Het juiste begrip is «Oplossing»: een homogeen mengsel van opgeloste stof en oplosmiddel.",
+      "d": 3
+     },
+     {
+      "v": "Wat betekent «Metaalbinding»?",
+      "o": [
+       "positieve ionen in een zee van vrije elektronen",
+       "een homogeen mengsel van opgeloste stof en oplosmiddel",
+       "binding tussen tegengesteld geladen ionen",
+       "atomen worden aan een dubbele binding toegevoegd"
       ],
       "c": 0,
+      "u": "«Metaalbinding» betekent: positieve ionen in een zee van vrije elektronen.",
+      "d": 1
+     },
+     {
+      "v": "Welk begrip hoort bij deze omschrijving: \"positieve ionen in een zee van vrije elektronen\"?",
+      "o": [
+       "Verbranding",
+       "Metaalbinding",
+       "Duurzaamheid",
+       "Ester"
+      ],
+      "c": 1,
+      "u": "Het juiste begrip is «Metaalbinding»: positieve ionen in een zee van vrije elektronen.",
+      "d": 2
+     },
+     {
+      "v": "Welke term past bij: \"positieve ionen in een zee van vrije elektronen\"?",
+      "o": [
+       "Mengsel",
+       "Molecuulformule",
+       "Metaalbinding",
+       "Molecuul"
+      ],
+      "c": 2,
       "u": "Het juiste begrip is «Metaalbinding»: positieve ionen in een zee van vrije elektronen.",
       "d": 3
      }
@@ -6116,45 +10216,117 @@ var VAKKEN = [
      {
       "v": "Wat betekent «Chemische reactie»?",
       "o": [
-       "geeft het aantal atomen per soort in een molecuul",
-       "omzetting van stoffen tot nieuwe stoffen",
-       "verzadigde koolwaterstof met enkele bindingen (CnH2n+2)",
-       "een reactie met overdracht van elektronen"
+       "de massa van één mol stof (g/mol)",
+       "een groepje gebonden atomen",
+       "hoeveelheid opgeloste stof per liter (mol/L)",
+       "omzetting van stoffen tot nieuwe stoffen"
+      ],
+      "c": 3,
+      "u": "«Chemische reactie» betekent: omzetting van stoffen tot nieuwe stoffen.",
+      "d": 1
+     },
+     {
+      "v": "Welk begrip hoort bij deze omschrijving: \"omzetting van stoffen tot nieuwe stoffen\"?",
+      "o": [
+       "Chemische reactie",
+       "Atoombinding",
+       "Zuur",
+       "Duurzaamheid"
+      ],
+      "c": 0,
+      "u": "Het juiste begrip is «Chemische reactie»: omzetting van stoffen tot nieuwe stoffen.",
+      "d": 2
+     },
+     {
+      "v": "Welke term past bij: \"omzetting van stoffen tot nieuwe stoffen\"?",
+      "o": [
+       "Neutralisatie",
+       "Chemische reactie",
+       "Base",
+       "Coëfficiënt"
       ],
       "c": 1,
-      "u": "«Chemische reactie» betekent: omzetting van stoffen tot nieuwe stoffen.",
+      "u": "Het juiste begrip is «Chemische reactie»: omzetting van stoffen tot nieuwe stoffen.",
+      "d": 3
+     },
+     {
+      "v": "Wat betekent «Reactievergelijking»?",
+      "o": [
+       "materialen blijven in de kringloop",
+       "een toetsbare voorspelling",
+       "kloppende weergave met formules en coëfficiënten",
+       "stof die een reactie versnelt zonder verbruikt te worden"
+      ],
+      "c": 2,
+      "u": "«Reactievergelijking» betekent: kloppende weergave met formules en coëfficiënten.",
       "d": 1
      },
      {
       "v": "Welk begrip hoort bij deze omschrijving: \"kloppende weergave met formules en coëfficiënten\"?",
       "o": [
-       "Alcohol",
+       "Base",
        "Reactievergelijking",
-       "Molecuulformule",
-       "Ester"
+       "Concentratie",
+       "Ionbinding"
       ],
       "c": 1,
       "u": "Het juiste begrip is «Reactievergelijking»: kloppende weergave met formules en coëfficiënten.",
       "d": 2
      },
      {
-      "v": "Welk begrip hoort bij deze omschrijving: \"getal dat de molverhouding in een reactie aangeeft\"?",
+      "v": "Welke term past bij: \"kloppende weergave met formules en coëfficiënten\"?",
       "o": [
+       "Coëfficiënt",
        "Reactievergelijking",
        "Oxidatie",
-       "Endotherm",
-       "Coëfficiënt"
+       "Neutralisatie"
       ],
-      "c": 3,
+      "c": 1,
+      "u": "Het juiste begrip is «Reactievergelijking»: kloppende weergave met formules en coëfficiënten.",
+      "d": 3
+     },
+     {
+      "v": "Wat betekent «Coëfficiënt»?",
+      "o": [
+       "positieve ionen in een zee van vrije elektronen",
+       "getal dat de molverhouding in een reactie aangeeft",
+       "het opnemen van elektronen",
+       "reactieve groep die de eigenschappen bepaalt"
+      ],
+      "c": 1,
+      "u": "«Coëfficiënt» betekent: getal dat de molverhouding in een reactie aangeeft.",
+      "d": 1
+     },
+     {
+      "v": "Welk begrip hoort bij deze omschrijving: \"getal dat de molverhouding in een reactie aangeeft\"?",
+      "o": [
+       "Ester",
+       "Coëfficiënt",
+       "Functionele groep",
+       "Substitutiereactie"
+      ],
+      "c": 1,
+      "u": "Het juiste begrip is «Coëfficiënt»: getal dat de molverhouding in een reactie aangeeft.",
+      "d": 2
+     },
+     {
+      "v": "Welke term past bij: \"getal dat de molverhouding in een reactie aangeeft\"?",
+      "o": [
+       "Exotherm",
+       "Reactievergelijking",
+       "Coëfficiënt",
+       "Redoxreactie"
+      ],
+      "c": 2,
       "u": "Het juiste begrip is «Coëfficiënt»: getal dat de molverhouding in een reactie aangeeft.",
       "d": 3
      },
      {
       "v": "Wat betekent «Exotherm»?",
       "o": [
-       "milieubeoordeling van grondstof tot afval",
-       "een combinatie van meerdere stoffen",
-       "koolwaterstof met een dubbele C=C-binding",
+       "atomen worden aan een dubbele binding toegevoegd",
+       "rekeneenheid voor hoeveelheid stof (6,02·10²³ deeltjes)",
+       "het hergebruiken van materialen",
        "een reactie die warmte afgeeft"
       ],
       "c": 3,
@@ -6162,112 +10334,352 @@ var VAKKEN = [
       "d": 1
      },
      {
-      "v": "Welk begrip hoort bij deze omschrijving: \"een reactie die warmte opneemt\"?",
+      "v": "Welk begrip hoort bij deze omschrijving: \"een reactie die warmte afgeeft\"?",
       "o": [
-       "Grondstof",
-       "Endotherm",
-       "Base",
+       "Polymeer",
+       "Emissie",
+       "Exotherm",
        "Molecuul"
       ],
-      "c": 1,
+      "c": 2,
+      "u": "Het juiste begrip is «Exotherm»: een reactie die warmte afgeeft. Tegenover endotherm: exotherm geeft warmte áf (ΔH < 0).",
+      "d": 2
+     },
+     {
+      "v": "Welke term past bij: \"een reactie die warmte afgeeft\"?",
+      "o": [
+       "pH",
+       "Neutralisatie",
+       "Reductie",
+       "Exotherm"
+      ],
+      "c": 3,
+      "u": "Het juiste begrip is «Exotherm»: een reactie die warmte afgeeft. Tegenover endotherm: exotherm geeft warmte áf (ΔH < 0).",
+      "d": 3
+     },
+     {
+      "v": "Wat betekent «Endotherm»?",
+      "o": [
+       "een reactie die warmte opneemt",
+       "een groot molecuul opgebouwd uit vele monomeren",
+       "reactie met zuurstof waarbij CO2 en water ontstaan",
+       "reactieve groep die de eigenschappen bepaalt"
+      ],
+      "c": 0,
+      "u": "«Endotherm» betekent: een reactie die warmte opneemt. Tegenover exotherm: endotherm neemt warmte óp (ΔH > 0).",
+      "d": 1
+     },
+     {
+      "v": "Welk begrip hoort bij deze omschrijving: \"een reactie die warmte opneemt\"?",
+      "o": [
+       "Recycling",
+       "Reductie",
+       "Element",
+       "Endotherm"
+      ],
+      "c": 3,
       "u": "Het juiste begrip is «Endotherm»: een reactie die warmte opneemt. Tegenover exotherm: endotherm neemt warmte óp (ΔH > 0).",
       "d": 2
      },
      {
-      "v": "Welk begrip hoort bij deze omschrijving: \"een stof die H⁺-ionen afstaat\"?",
+      "v": "Welke term past bij: \"een reactie die warmte opneemt\"?",
       "o": [
-       "Katalysator",
-       "Zuur",
-       "Base",
+       "Endotherm",
+       "Exotherm",
+       "Redoxreactie",
        "Reductie"
       ],
+      "c": 0,
+      "u": "Het juiste begrip is «Endotherm»: een reactie die warmte opneemt. Tegenover exotherm: endotherm neemt warmte óp (ΔH > 0).",
+      "d": 3
+     },
+     {
+      "v": "Wat betekent «Zuur»?",
+      "o": [
+       "een toetsbare voorspelling",
+       "een stof die H⁺-ionen afstaat",
+       "materialen blijven in de kringloop",
+       "verzadigde koolwaterstof met enkele bindingen (CnH2n+2)"
+      ],
       "c": 1,
+      "u": "«Zuur» betekent: een stof die H⁺-ionen afstaat.",
+      "d": 1
+     },
+     {
+      "v": "Welk begrip hoort bij deze omschrijving: \"een stof die H⁺-ionen afstaat\"?",
+      "o": [
+       "Concentratie",
+       "Zuur",
+       "Reactievergelijking",
+       "Additiereactie"
+      ],
+      "c": 1,
+      "u": "Het juiste begrip is «Zuur»: een stof die H⁺-ionen afstaat.",
+      "d": 2
+     },
+     {
+      "v": "Welke term past bij: \"een stof die H⁺-ionen afstaat\"?",
+      "o": [
+       "Zuur",
+       "Chemische reactie",
+       "Reactievergelijking",
+       "Endotherm"
+      ],
+      "c": 0,
       "u": "Het juiste begrip is «Zuur»: een stof die H⁺-ionen afstaat.",
       "d": 3
      },
      {
       "v": "Wat betekent «Base»?",
       "o": [
-       "een reactie die warmte opneemt",
-       "een geladen atoom of groep atomen",
-       "de massa van één mol stof (g/mol)",
-       "een stof die H⁺-ionen opneemt"
+       "een stof die H⁺-ionen opneemt",
+       "koolwaterstof met een dubbele C=C-binding",
+       "een groepje gebonden atomen",
+       "een stof met maar één soort deeltjes"
+      ],
+      "c": 0,
+      "u": "«Base» betekent: een stof die H⁺-ionen opneemt.",
+      "d": 1
+     },
+     {
+      "v": "Welk begrip hoort bij deze omschrijving: \"een stof die H⁺-ionen opneemt\"?",
+      "o": [
+       "Metaalbinding",
+       "Recycling",
+       "Chemische reactie",
+       "Base"
       ],
       "c": 3,
-      "u": "«Base» betekent: een stof die H⁺-ionen opneemt.",
+      "u": "Het juiste begrip is «Base»: een stof die H⁺-ionen opneemt.",
+      "d": 2
+     },
+     {
+      "v": "Welke term past bij: \"een stof die H⁺-ionen opneemt\"?",
+      "o": [
+       "Katalysator",
+       "Reactievergelijking",
+       "Redoxreactie",
+       "Base"
+      ],
+      "c": 3,
+      "u": "Het juiste begrip is «Base»: een stof die H⁺-ionen opneemt.",
+      "d": 3
+     },
+     {
+      "v": "Wat betekent «pH»?",
+      "o": [
+       "een koolstofverbinding met een OH-groep",
+       "een maat voor de zuurgraad van een oplossing",
+       "atomen worden aan een dubbele binding toegevoegd",
+       "een geladen atoom of groep atomen"
+      ],
+      "c": 1,
+      "u": "«pH» betekent: een maat voor de zuurgraad van een oplossing.",
       "d": 1
      },
      {
       "v": "Welk begrip hoort bij deze omschrijving: \"een maat voor de zuurgraad van een oplossing\"?",
       "o": [
-       "Ion",
-       "Biobrandstof",
-       "Molaire massa",
-       "pH"
+       "Circulaire economie",
+       "Alkaan",
+       "pH",
+       "Endotherm"
       ],
-      "c": 3,
+      "c": 2,
       "u": "Het juiste begrip is «pH»: een maat voor de zuurgraad van een oplossing.",
       "d": 2
      },
      {
-      "v": "Welk begrip hoort bij deze omschrijving: \"reactie van een zuur met een base tot zout en water\"?",
+      "v": "Welke term past bij: \"een maat voor de zuurgraad van een oplossing\"?",
       "o": [
+       "Zuur",
        "Reactievergelijking",
-       "Exotherm",
-       "Neutralisatie",
-       "Endotherm"
+       "pH",
+       "Katalysator"
       ],
       "c": 2,
+      "u": "Het juiste begrip is «pH»: een maat voor de zuurgraad van een oplossing.",
+      "d": 3
+     },
+     {
+      "v": "Wat betekent «Neutralisatie»?",
+      "o": [
+       "een toetsbare voorspelling",
+       "reactie van een zuur met een base tot zout en water",
+       "brandstof gemaakt uit biomassa",
+       "een koolstofverbinding met een OH-groep"
+      ],
+      "c": 1,
+      "u": "«Neutralisatie» betekent: reactie van een zuur met een base tot zout en water.",
+      "d": 1
+     },
+     {
+      "v": "Welk begrip hoort bij deze omschrijving: \"reactie van een zuur met een base tot zout en water\"?",
+      "o": [
+       "Neutralisatie",
+       "Mol",
+       "Base",
+       "Recycling"
+      ],
+      "c": 0,
+      "u": "Het juiste begrip is «Neutralisatie»: reactie van een zuur met een base tot zout en water.",
+      "d": 2
+     },
+     {
+      "v": "Welke term past bij: \"reactie van een zuur met een base tot zout en water\"?",
+      "o": [
+       "Base",
+       "Neutralisatie",
+       "Reductie",
+       "Reactievergelijking"
+      ],
+      "c": 1,
       "u": "Het juiste begrip is «Neutralisatie»: reactie van een zuur met een base tot zout en water.",
       "d": 3
      },
      {
       "v": "Wat betekent «Redoxreactie»?",
       "o": [
-       "een groepje gebonden atomen",
+       "binding met een gedeeld elektronenpaar tussen niet-metalen",
+       "verbinding uit een zuur en een alcohol (geurstof)",
        "een reactie met overdracht van elektronen",
-       "materialen blijven in de kringloop",
-       "een proef zonder de onderzochte factor, als referentie"
+       "getal dat de molverhouding in een reactie aangeeft"
+      ],
+      "c": 2,
+      "u": "«Redoxreactie» betekent: een reactie met overdracht van elektronen.",
+      "d": 1
+     },
+     {
+      "v": "Welk begrip hoort bij deze omschrijving: \"een reactie met overdracht van elektronen\"?",
+      "o": [
+       "Polymeer",
+       "Oxidatie",
+       "Redoxreactie",
+       "Molecuul"
+      ],
+      "c": 2,
+      "u": "Het juiste begrip is «Redoxreactie»: een reactie met overdracht van elektronen.",
+      "d": 2
+     },
+     {
+      "v": "Welke term past bij: \"een reactie met overdracht van elektronen\"?",
+      "o": [
+       "Neutralisatie",
+       "Redoxreactie",
+       "Exotherm",
+       "Chemische reactie"
       ],
       "c": 1,
-      "u": "«Redoxreactie» betekent: een reactie met overdracht van elektronen.",
+      "u": "Het juiste begrip is «Redoxreactie»: een reactie met overdracht van elektronen.",
+      "d": 3
+     },
+     {
+      "v": "Wat betekent «Oxidatie»?",
+      "o": [
+       "het afstaan van elektronen",
+       "verbinding uit een zuur en een alcohol (geurstof)",
+       "een homogeen mengsel van opgeloste stof en oplosmiddel",
+       "een stof die H⁺-ionen afstaat"
+      ],
+      "c": 0,
+      "u": "«Oxidatie» betekent: het afstaan van elektronen. Ezelsbruggetje OIL RIG: Oxidation Is Loss van elektronen.",
       "d": 1
      },
      {
       "v": "Welk begrip hoort bij deze omschrijving: \"het afstaan van elektronen\"?",
       "o": [
-       "Exotherm",
-       "Reactievergelijking",
-       "Alkaan",
-       "Oxidatie"
+       "Redoxreactie",
+       "Alkeen",
+       "Oxidatie",
+       "Chemische reactie"
       ],
-      "c": 3,
+      "c": 2,
       "u": "Het juiste begrip is «Oxidatie»: het afstaan van elektronen. Ezelsbruggetje OIL RIG: Oxidation Is Loss van elektronen.",
       "d": 2
      },
      {
+      "v": "Welke term past bij: \"het afstaan van elektronen\"?",
+      "o": [
+       "Katalysator",
+       "Zuur",
+       "Oxidatie",
+       "Exotherm"
+      ],
+      "c": 2,
+      "u": "Het juiste begrip is «Oxidatie»: het afstaan van elektronen. Ezelsbruggetje OIL RIG: Oxidation Is Loss van elektronen.",
+      "d": 3
+     },
+     {
+      "v": "Wat betekent «Reductie»?",
+      "o": [
+       "een groepje gebonden atomen",
+       "kloppende weergave met formules en coëfficiënten",
+       "het opnemen van elektronen",
+       "brandstof gemaakt uit biomassa"
+      ],
+      "c": 2,
+      "u": "«Reductie» betekent: het opnemen van elektronen. Ezelsbruggetje OIL RIG: Reduction Is Gain van elektronen.",
+      "d": 1
+     },
+     {
       "v": "Welk begrip hoort bij deze omschrijving: \"het opnemen van elektronen\"?",
       "o": [
+       "Hypothese",
+       "Katalysator",
        "Reductie",
-       "Neutralisatie",
-       "pH",
-       "Redoxreactie"
+       "Alcohol"
       ],
-      "c": 0,
+      "c": 2,
+      "u": "Het juiste begrip is «Reductie»: het opnemen van elektronen. Ezelsbruggetje OIL RIG: Reduction Is Gain van elektronen.",
+      "d": 2
+     },
+     {
+      "v": "Welke term past bij: \"het opnemen van elektronen\"?",
+      "o": [
+       "pH",
+       "Reductie",
+       "Chemische reactie",
+       "Exotherm"
+      ],
+      "c": 1,
       "u": "Het juiste begrip is «Reductie»: het opnemen van elektronen. Ezelsbruggetje OIL RIG: Reduction Is Gain van elektronen.",
       "d": 3
      },
      {
       "v": "Wat betekent «Katalysator»?",
       "o": [
-       "rekeneenheid voor hoeveelheid stof (6,02·10²³ deeltjes)",
-       "een koolstofverbinding met een OH-groep",
-       "stoffen met dezelfde molecuulformule maar andere structuur",
-       "stof die een reactie versnelt zonder verbruikt te worden"
+       "het opnemen van elektronen",
+       "de uitstoot van stoffen naar het milieu",
+       "stof die een reactie versnelt zonder verbruikt te worden",
+       "een stof met maar één soort deeltjes"
       ],
-      "c": 3,
+      "c": 2,
       "u": "«Katalysator» betekent: stof die een reactie versnelt zonder verbruikt te worden.",
       "d": 1
+     },
+     {
+      "v": "Welk begrip hoort bij deze omschrijving: \"stof die een reactie versnelt zonder verbruikt te worden\"?",
+      "o": [
+       "Additiereactie",
+       "Mol",
+       "Katalysator",
+       "Exotherm"
+      ],
+      "c": 2,
+      "u": "Het juiste begrip is «Katalysator»: stof die een reactie versnelt zonder verbruikt te worden.",
+      "d": 2
+     },
+     {
+      "v": "Welke term past bij: \"stof die een reactie versnelt zonder verbruikt te worden\"?",
+      "o": [
+       "Katalysator",
+       "Reductie",
+       "Exotherm",
+       "Chemische reactie"
+      ],
+      "c": 0,
+      "u": "Het juiste begrip is «Katalysator»: stof die een reactie versnelt zonder verbruikt te worden.",
+      "d": 3
      }
     ],
     "oe": [
@@ -6567,122 +10979,362 @@ var VAKKEN = [
      {
       "v": "Wat betekent «Alkaan»?",
       "o": [
-       "een groot molecuul opgebouwd uit vele monomeren",
-       "het afstaan van elektronen",
-       "verzadigde koolwaterstof met enkele bindingen (CnH2n+2)",
-       "een stof die H⁺-ionen afstaat"
+       "gebruik zonder uitputting voor de toekomst",
+       "uitgangsmateriaal voor productie",
+       "een reactie die warmte afgeeft",
+       "verzadigde koolwaterstof met enkele bindingen (CnH2n+2)"
       ],
-      "c": 2,
+      "c": 3,
       "u": "«Alkaan» betekent: verzadigde koolwaterstof met enkele bindingen (CnH2n+2).",
+      "d": 1
+     },
+     {
+      "v": "Welk begrip hoort bij deze omschrijving: \"verzadigde koolwaterstof met enkele bindingen (CnH2n+2)\"?",
+      "o": [
+       "Exotherm",
+       "pH",
+       "Controle-experiment",
+       "Alkaan"
+      ],
+      "c": 3,
+      "u": "Het juiste begrip is «Alkaan»: verzadigde koolwaterstof met enkele bindingen (CnH2n+2).",
+      "d": 2
+     },
+     {
+      "v": "Welke term past bij: \"verzadigde koolwaterstof met enkele bindingen (CnH2n+2)\"?",
+      "o": [
+       "Alkaan",
+       "Alcohol",
+       "Verbranding",
+       "Functionele groep"
+      ],
+      "c": 0,
+      "u": "Het juiste begrip is «Alkaan»: verzadigde koolwaterstof met enkele bindingen (CnH2n+2).",
+      "d": 3
+     },
+     {
+      "v": "Wat betekent «Alkeen»?",
+      "o": [
+       "een reactie die warmte opneemt",
+       "een reactie met overdracht van elektronen",
+       "de uitstoot van stoffen naar het milieu",
+       "koolwaterstof met een dubbele C=C-binding"
+      ],
+      "c": 3,
+      "u": "«Alkeen» betekent: koolwaterstof met een dubbele C=C-binding.",
       "d": 1
      },
      {
       "v": "Welk begrip hoort bij deze omschrijving: \"koolwaterstof met een dubbele C=C-binding\"?",
       "o": [
        "Alkeen",
-       "Molecuul",
-       "Redoxreactie",
-       "Oplossing"
+       "Exotherm",
+       "Alcohol",
+       "Circulaire economie"
       ],
       "c": 0,
       "u": "Het juiste begrip is «Alkeen»: koolwaterstof met een dubbele C=C-binding.",
       "d": 2
      },
      {
-      "v": "Welk begrip hoort bij deze omschrijving: \"reactieve groep die de eigenschappen bepaalt\"?",
+      "v": "Welke term past bij: \"koolwaterstof met een dubbele C=C-binding\"?",
       "o": [
-       "Functionele groep",
-       "Alkaan",
-       "Isomeren",
+       "Substitutiereactie",
+       "Alcohol",
+       "Additiereactie",
        "Alkeen"
       ],
-      "c": 0,
+      "c": 3,
+      "u": "Het juiste begrip is «Alkeen»: koolwaterstof met een dubbele C=C-binding.",
+      "d": 3
+     },
+     {
+      "v": "Wat betekent «Functionele groep»?",
+      "o": [
+       "een groot molecuul opgebouwd uit vele monomeren",
+       "de uitstoot van stoffen naar het milieu",
+       "reactieve groep die de eigenschappen bepaalt",
+       "hoeveelheid opgeloste stof per liter (mol/L)"
+      ],
+      "c": 2,
+      "u": "«Functionele groep» betekent: reactieve groep die de eigenschappen bepaalt.",
+      "d": 1
+     },
+     {
+      "v": "Welk begrip hoort bij deze omschrijving: \"reactieve groep die de eigenschappen bepaalt\"?",
+      "o": [
+       "Molecuul",
+       "pH",
+       "Ester",
+       "Functionele groep"
+      ],
+      "c": 3,
+      "u": "Het juiste begrip is «Functionele groep»: reactieve groep die de eigenschappen bepaalt.",
+      "d": 2
+     },
+     {
+      "v": "Welke term past bij: \"reactieve groep die de eigenschappen bepaalt\"?",
+      "o": [
+       "Verbranding",
+       "Isomeren",
+       "Alcohol",
+       "Functionele groep"
+      ],
+      "c": 3,
       "u": "Het juiste begrip is «Functionele groep»: reactieve groep die de eigenschappen bepaalt.",
       "d": 3
      },
      {
       "v": "Wat betekent «Isomeren»?",
       "o": [
-       "de massa van één mol stof (g/mol)",
-       "binding met een gedeeld elektronenpaar tussen niet-metalen",
-       "stoffen met dezelfde molecuulformule maar andere structuur",
-       "een stof die H⁺-ionen afstaat"
+       "een groepje gebonden atomen",
+       "een reactie met overdracht van elektronen",
+       "een combinatie van meerdere stoffen",
+       "stoffen met dezelfde molecuulformule maar andere structuur"
+      ],
+      "c": 3,
+      "u": "«Isomeren» betekent: stoffen met dezelfde molecuulformule maar andere structuur.",
+      "d": 1
+     },
+     {
+      "v": "Welk begrip hoort bij deze omschrijving: \"stoffen met dezelfde molecuulformule maar andere structuur\"?",
+      "o": [
+       "Coëfficiënt",
+       "Oplossing",
+       "Isomeren",
+       "Alkaan"
       ],
       "c": 2,
-      "u": "«Isomeren» betekent: stoffen met dezelfde molecuulformule maar andere structuur.",
+      "u": "Het juiste begrip is «Isomeren»: stoffen met dezelfde molecuulformule maar andere structuur.",
+      "d": 2
+     },
+     {
+      "v": "Welke term past bij: \"stoffen met dezelfde molecuulformule maar andere structuur\"?",
+      "o": [
+       "Substitutiereactie",
+       "Isomeren",
+       "Alcohol",
+       "Verbranding"
+      ],
+      "c": 1,
+      "u": "Het juiste begrip is «Isomeren»: stoffen met dezelfde molecuulformule maar andere structuur.",
+      "d": 3
+     },
+     {
+      "v": "Wat betekent «Additiereactie»?",
+      "o": [
+       "materialen blijven in de kringloop",
+       "een groot molecuul opgebouwd uit vele monomeren",
+       "atomen worden aan een dubbele binding toegevoegd",
+       "een stof met maar één soort deeltjes"
+      ],
+      "c": 2,
+      "u": "«Additiereactie» betekent: atomen worden aan een dubbele binding toegevoegd.",
       "d": 1
      },
      {
       "v": "Welk begrip hoort bij deze omschrijving: \"atomen worden aan een dubbele binding toegevoegd\"?",
       "o": [
-       "Molecuulformule",
-       "Reactievergelijking",
-       "Molecuul",
-       "Additiereactie"
+       "Endotherm",
+       "Reductie",
+       "Additiereactie",
+       "Exotherm"
       ],
-      "c": 3,
+      "c": 2,
       "u": "Het juiste begrip is «Additiereactie»: atomen worden aan een dubbele binding toegevoegd.",
       "d": 2
      },
      {
-      "v": "Welk begrip hoort bij deze omschrijving: \"een atoom of groep wordt vervangen door een andere\"?",
+      "v": "Welke term past bij: \"atomen worden aan een dubbele binding toegevoegd\"?",
       "o": [
        "Ester",
-       "Substitutiereactie",
        "Functionele groep",
-       "Polymeer"
+       "Additiereactie",
+       "Alkeen"
       ],
-      "c": 1,
+      "c": 2,
+      "u": "Het juiste begrip is «Additiereactie»: atomen worden aan een dubbele binding toegevoegd.",
+      "d": 3
+     },
+     {
+      "v": "Wat betekent «Substitutiereactie»?",
+      "o": [
+       "uitgangsmateriaal voor productie",
+       "materialen blijven in de kringloop",
+       "binding tussen tegengesteld geladen ionen",
+       "een atoom of groep wordt vervangen door een andere"
+      ],
+      "c": 3,
+      "u": "«Substitutiereactie» betekent: een atoom of groep wordt vervangen door een andere.",
+      "d": 1
+     },
+     {
+      "v": "Welk begrip hoort bij deze omschrijving: \"een atoom of groep wordt vervangen door een andere\"?",
+      "o": [
+       "Base",
+       "Isomeren",
+       "Zuur",
+       "Substitutiereactie"
+      ],
+      "c": 3,
+      "u": "Het juiste begrip is «Substitutiereactie»: een atoom of groep wordt vervangen door een andere.",
+      "d": 2
+     },
+     {
+      "v": "Welke term past bij: \"een atoom of groep wordt vervangen door een andere\"?",
+      "o": [
+       "Additiereactie",
+       "Alcohol",
+       "Verbranding",
+       "Substitutiereactie"
+      ],
+      "c": 3,
       "u": "Het juiste begrip is «Substitutiereactie»: een atoom of groep wordt vervangen door een andere.",
       "d": 3
      },
      {
       "v": "Wat betekent «Polymeer»?",
       "o": [
-       "binding met een gedeeld elektronenpaar tussen niet-metalen",
        "een groot molecuul opgebouwd uit vele monomeren",
-       "gebruik zonder uitputting voor de toekomst",
-       "geeft het aantal atomen per soort in een molecuul"
+       "hoeveelheid opgeloste stof per liter (mol/L)",
+       "het opnemen van elektronen",
+       "een groepje gebonden atomen"
+      ],
+      "c": 0,
+      "u": "«Polymeer» betekent: een groot molecuul opgebouwd uit vele monomeren.",
+      "d": 1
+     },
+     {
+      "v": "Welk begrip hoort bij deze omschrijving: \"een groot molecuul opgebouwd uit vele monomeren\"?",
+      "o": [
+       "Polymeer",
+       "Mengsel",
+       "Chemische reactie",
+       "Metaalbinding"
+      ],
+      "c": 0,
+      "u": "Het juiste begrip is «Polymeer»: een groot molecuul opgebouwd uit vele monomeren.",
+      "d": 2
+     },
+     {
+      "v": "Welke term past bij: \"een groot molecuul opgebouwd uit vele monomeren\"?",
+      "o": [
+       "Polymeer",
+       "Alcohol",
+       "Isomeren",
+       "Additiereactie"
+      ],
+      "c": 0,
+      "u": "Het juiste begrip is «Polymeer»: een groot molecuul opgebouwd uit vele monomeren.",
+      "d": 3
+     },
+     {
+      "v": "Wat betekent «Verbranding»?",
+      "o": [
+       "een stof die H⁺-ionen opneemt",
+       "reactie met zuurstof waarbij CO2 en water ontstaan",
+       "materialen blijven in de kringloop",
+       "kloppende weergave met formules en coëfficiënten"
       ],
       "c": 1,
-      "u": "«Polymeer» betekent: een groot molecuul opgebouwd uit vele monomeren.",
+      "u": "«Verbranding» betekent: reactie met zuurstof waarbij CO2 en water ontstaan.",
       "d": 1
      },
      {
       "v": "Welk begrip hoort bij deze omschrijving: \"reactie met zuurstof waarbij CO2 en water ontstaan\"?",
       "o": [
-       "Coëfficiënt",
        "Verbranding",
-       "Substitutiereactie",
-       "Broeikasgas"
+       "Mol",
+       "Oplossing",
+       "Mengsel"
       ],
-      "c": 1,
+      "c": 0,
       "u": "Het juiste begrip is «Verbranding»: reactie met zuurstof waarbij CO2 en water ontstaan.",
       "d": 2
      },
      {
-      "v": "Welk begrip hoort bij deze omschrijving: \"een koolstofverbinding met een OH-groep\"?",
+      "v": "Welke term past bij: \"reactie met zuurstof waarbij CO2 en water ontstaan\"?",
       "o": [
-       "Alcohol",
-       "Functionele groep",
        "Verbranding",
-       "Ester"
+       "Substitutiereactie",
+       "Ester",
+       "Isomeren"
       ],
       "c": 0,
+      "u": "Het juiste begrip is «Verbranding»: reactie met zuurstof waarbij CO2 en water ontstaan.",
+      "d": 3
+     },
+     {
+      "v": "Wat betekent «Alcohol»?",
+      "o": [
+       "reactie met zuurstof waarbij CO2 en water ontstaan",
+       "een groot molecuul opgebouwd uit vele monomeren",
+       "uitgangsmateriaal voor productie",
+       "een koolstofverbinding met een OH-groep"
+      ],
+      "c": 3,
+      "u": "«Alcohol» betekent: een koolstofverbinding met een OH-groep.",
+      "d": 1
+     },
+     {
+      "v": "Welk begrip hoort bij deze omschrijving: \"een koolstofverbinding met een OH-groep\"?",
+      "o": [
+       "Zuivere stof",
+       "Alcohol",
+       "Coëfficiënt",
+       "Isomeren"
+      ],
+      "c": 1,
+      "u": "Het juiste begrip is «Alcohol»: een koolstofverbinding met een OH-groep.",
+      "d": 2
+     },
+     {
+      "v": "Welke term past bij: \"een koolstofverbinding met een OH-groep\"?",
+      "o": [
+       "Alkaan",
+       "Verbranding",
+       "Isomeren",
+       "Alcohol"
+      ],
+      "c": 3,
       "u": "Het juiste begrip is «Alcohol»: een koolstofverbinding met een OH-groep.",
       "d": 3
      },
      {
       "v": "Wat betekent «Ester»?",
       "o": [
-       "een proef zonder de onderzochte factor, als referentie",
-       "verbinding uit een zuur en een alcohol (geurstof)",
+       "het hergebruiken van materialen",
+       "reactieve groep die de eigenschappen bepaalt",
        "stof die een reactie versnelt zonder verbruikt te worden",
-       "hoe dicht een meting bij de werkelijke waarde ligt"
+       "verbinding uit een zuur en een alcohol (geurstof)"
       ],
-      "c": 1,
+      "c": 3,
       "u": "«Ester» betekent: verbinding uit een zuur en een alcohol (geurstof).",
       "d": 1
+     },
+     {
+      "v": "Welk begrip hoort bij deze omschrijving: \"verbinding uit een zuur en een alcohol (geurstof)\"?",
+      "o": [
+       "Ester",
+       "GHS-pictogram",
+       "Duurzaamheid",
+       "Reductie"
+      ],
+      "c": 0,
+      "u": "Het juiste begrip is «Ester»: verbinding uit een zuur en een alcohol (geurstof).",
+      "d": 2
+     },
+     {
+      "v": "Welke term past bij: \"verbinding uit een zuur en een alcohol (geurstof)\"?",
+      "o": [
+       "Ester",
+       "Polymeer",
+       "Alcohol",
+       "Verbranding"
+      ],
+      "c": 0,
+      "u": "Het juiste begrip is «Ester»: verbinding uit een zuur en een alcohol (geurstof).",
+      "d": 3
      }
     ],
     "oe": [
@@ -6960,72 +11612,216 @@ var VAKKEN = [
      {
       "v": "Wat betekent «Duurzaamheid»?",
       "o": [
-       "een groot molecuul opgebouwd uit vele monomeren",
-       "kloppende weergave met formules en coëfficiënten",
+       "een toetsbare voorspelling",
+       "gebruik zonder uitputting voor de toekomst",
        "omzetting van stoffen tot nieuwe stoffen",
-       "gebruik zonder uitputting voor de toekomst"
+       "de massa van één mol stof (g/mol)"
+      ],
+      "c": 1,
+      "u": "«Duurzaamheid» betekent: gebruik zonder uitputting voor de toekomst.",
+      "d": 1
+     },
+     {
+      "v": "Welk begrip hoort bij deze omschrijving: \"gebruik zonder uitputting voor de toekomst\"?",
+      "o": [
+       "Metaalbinding",
+       "Levenscyclusanalyse",
+       "Redoxreactie",
+       "Duurzaamheid"
       ],
       "c": 3,
-      "u": "«Duurzaamheid» betekent: gebruik zonder uitputting voor de toekomst.",
+      "u": "Het juiste begrip is «Duurzaamheid»: gebruik zonder uitputting voor de toekomst.",
+      "d": 2
+     },
+     {
+      "v": "Welke term past bij: \"gebruik zonder uitputting voor de toekomst\"?",
+      "o": [
+       "Levenscyclusanalyse",
+       "Duurzaamheid",
+       "Biobrandstof",
+       "Circulaire economie"
+      ],
+      "c": 1,
+      "u": "Het juiste begrip is «Duurzaamheid»: gebruik zonder uitputting voor de toekomst.",
+      "d": 3
+     },
+     {
+      "v": "Wat betekent «Recycling»?",
+      "o": [
+       "hoeveelheid opgeloste stof per liter (mol/L)",
+       "het hergebruiken van materialen",
+       "een proef zonder de onderzochte factor, als referentie",
+       "materialen blijven in de kringloop"
+      ],
+      "c": 1,
+      "u": "«Recycling» betekent: het hergebruiken van materialen.",
       "d": 1
      },
      {
       "v": "Welk begrip hoort bij deze omschrijving: \"het hergebruiken van materialen\"?",
       "o": [
-       "Recycling",
-       "Mengsel",
-       "Base",
-       "pH"
+       "Ester",
+       "Grondstof",
+       "Exotherm",
+       "Recycling"
       ],
-      "c": 0,
+      "c": 3,
       "u": "Het juiste begrip is «Recycling»: het hergebruiken van materialen.",
       "d": 2
      },
      {
+      "v": "Welke term past bij: \"het hergebruiken van materialen\"?",
+      "o": [
+       "Recycling",
+       "Duurzaamheid",
+       "Biobrandstof",
+       "Circulaire economie"
+      ],
+      "c": 0,
+      "u": "Het juiste begrip is «Recycling»: het hergebruiken van materialen.",
+      "d": 3
+     },
+     {
+      "v": "Wat betekent «Broeikasgas»?",
+      "o": [
+       "een gas dat warmte vasthoudt, zoals CO2",
+       "reactie van een zuur met een base tot zout en water",
+       "uitgangsmateriaal voor productie",
+       "een homogeen mengsel van opgeloste stof en oplosmiddel"
+      ],
+      "c": 0,
+      "u": "«Broeikasgas» betekent: een gas dat warmte vasthoudt, zoals CO2.",
+      "d": 1
+     },
+     {
       "v": "Welk begrip hoort bij deze omschrijving: \"een gas dat warmte vasthoudt, zoals CO2\"?",
       "o": [
-       "Biobrandstof",
+       "Neutralisatie",
        "Broeikasgas",
-       "Grondstof",
-       "Emissie"
+       "Oxidatie",
+       "Grondstof"
       ],
       "c": 1,
+      "u": "Het juiste begrip is «Broeikasgas»: een gas dat warmte vasthoudt, zoals CO2.",
+      "d": 2
+     },
+     {
+      "v": "Welke term past bij: \"een gas dat warmte vasthoudt, zoals CO2\"?",
+      "o": [
+       "Emissie",
+       "Circulaire economie",
+       "Broeikasgas",
+       "Duurzaamheid"
+      ],
+      "c": 2,
       "u": "Het juiste begrip is «Broeikasgas»: een gas dat warmte vasthoudt, zoals CO2.",
       "d": 3
      },
      {
       "v": "Wat betekent «Biobrandstof»?",
       "o": [
-       "verzadigde koolwaterstof met enkele bindingen (CnH2n+2)",
-       "brandstof gemaakt uit biomassa",
-       "een toetsbare voorspelling",
-       "de uitstoot van stoffen naar het milieu"
+       "materialen blijven in de kringloop",
+       "reactie van een zuur met een base tot zout en water",
+       "milieubeoordeling van grondstof tot afval",
+       "brandstof gemaakt uit biomassa"
+      ],
+      "c": 3,
+      "u": "«Biobrandstof» betekent: brandstof gemaakt uit biomassa.",
+      "d": 1
+     },
+     {
+      "v": "Welk begrip hoort bij deze omschrijving: \"brandstof gemaakt uit biomassa\"?",
+      "o": [
+       "Grondstof",
+       "Biobrandstof",
+       "Hypothese",
+       "Ester"
       ],
       "c": 1,
-      "u": "«Biobrandstof» betekent: brandstof gemaakt uit biomassa.",
+      "u": "Het juiste begrip is «Biobrandstof»: brandstof gemaakt uit biomassa.",
+      "d": 2
+     },
+     {
+      "v": "Welke term past bij: \"brandstof gemaakt uit biomassa\"?",
+      "o": [
+       "Emissie",
+       "Grondstof",
+       "Biobrandstof",
+       "Circulaire economie"
+      ],
+      "c": 2,
+      "u": "Het juiste begrip is «Biobrandstof»: brandstof gemaakt uit biomassa.",
+      "d": 3
+     },
+     {
+      "v": "Wat betekent «Levenscyclusanalyse»?",
+      "o": [
+       "verzadigde koolwaterstof met enkele bindingen (CnH2n+2)",
+       "milieubeoordeling van grondstof tot afval",
+       "gebruik zonder uitputting voor de toekomst",
+       "een groepje gebonden atomen"
+      ],
+      "c": 1,
+      "u": "«Levenscyclusanalyse» betekent: milieubeoordeling van grondstof tot afval.",
       "d": 1
      },
      {
       "v": "Welk begrip hoort bij deze omschrijving: \"milieubeoordeling van grondstof tot afval\"?",
       "o": [
-       "Verbranding",
-       "Levenscyclusanalyse",
-       "Metaalbinding",
-       "Element"
+       "Zuivere stof",
+       "Broeikasgas",
+       "Grondstof",
+       "Levenscyclusanalyse"
       ],
-      "c": 1,
+      "c": 3,
       "u": "Het juiste begrip is «Levenscyclusanalyse»: milieubeoordeling van grondstof tot afval.",
       "d": 2
      },
      {
-      "v": "Welk begrip hoort bij deze omschrijving: \"uitgangsmateriaal voor productie\"?",
+      "v": "Welke term past bij: \"milieubeoordeling van grondstof tot afval\"?",
       "o": [
-       "Grondstof",
-       "Circulaire economie",
-       "Duurzaamheid",
-       "Emissie"
+       "Biobrandstof",
+       "Emissie",
+       "Levenscyclusanalyse",
+       "Grondstof"
+      ],
+      "c": 2,
+      "u": "Het juiste begrip is «Levenscyclusanalyse»: milieubeoordeling van grondstof tot afval.",
+      "d": 3
+     },
+     {
+      "v": "Wat betekent «Grondstof»?",
+      "o": [
+       "uitgangsmateriaal voor productie",
+       "het opnemen van elektronen",
+       "kloppende weergave met formules en coëfficiënten",
+       "een toetsbare voorspelling"
       ],
       "c": 0,
+      "u": "«Grondstof» betekent: uitgangsmateriaal voor productie.",
+      "d": 1
+     },
+     {
+      "v": "Welk begrip hoort bij deze omschrijving: \"uitgangsmateriaal voor productie\"?",
+      "o": [
+       "Ion",
+       "Additiereactie",
+       "Grondstof",
+       "Molecuulformule"
+      ],
+      "c": 2,
+      "u": "Het juiste begrip is «Grondstof»: uitgangsmateriaal voor productie.",
+      "d": 2
+     },
+     {
+      "v": "Welke term past bij: \"uitgangsmateriaal voor productie\"?",
+      "o": [
+       "Circulaire economie",
+       "Grondstof",
+       "Emissie",
+       "Duurzaamheid"
+      ],
+      "c": 1,
       "u": "Het juiste begrip is «Grondstof»: uitgangsmateriaal voor productie.",
       "d": 3
      },
@@ -7033,25 +11829,73 @@ var VAKKEN = [
       "v": "Wat betekent «Emissie»?",
       "o": [
        "positieve ionen in een zee van vrije elektronen",
-       "een stof die H⁺-ionen opneemt",
+       "de massa van één mol stof (g/mol)",
        "de uitstoot van stoffen naar het milieu",
-       "een homogeen mengsel van opgeloste stof en oplosmiddel"
+       "een stof die uit één soort atomen bestaat"
       ],
       "c": 2,
       "u": "«Emissie» betekent: de uitstoot van stoffen naar het milieu.",
       "d": 1
      },
      {
+      "v": "Welk begrip hoort bij deze omschrijving: \"de uitstoot van stoffen naar het milieu\"?",
+      "o": [
+       "Emissie",
+       "Metaalbinding",
+       "Duurzaamheid",
+       "Broeikasgas"
+      ],
+      "c": 0,
+      "u": "Het juiste begrip is «Emissie»: de uitstoot van stoffen naar het milieu.",
+      "d": 2
+     },
+     {
+      "v": "Welke term past bij: \"de uitstoot van stoffen naar het milieu\"?",
+      "o": [
+       "Broeikasgas",
+       "Emissie",
+       "Grondstof",
+       "Recycling"
+      ],
+      "c": 1,
+      "u": "Het juiste begrip is «Emissie»: de uitstoot van stoffen naar het milieu.",
+      "d": 3
+     },
+     {
+      "v": "Wat betekent «Circulaire economie»?",
+      "o": [
+       "het hergebruiken van materialen",
+       "materialen blijven in de kringloop",
+       "een groepje gebonden atomen",
+       "een groot molecuul opgebouwd uit vele monomeren"
+      ],
+      "c": 1,
+      "u": "«Circulaire economie» betekent: materialen blijven in de kringloop.",
+      "d": 1
+     },
+     {
       "v": "Welk begrip hoort bij deze omschrijving: \"materialen blijven in de kringloop\"?",
       "o": [
        "Circulaire economie",
-       "Molecuul",
-       "Redoxreactie",
-       "Nauwkeurigheid"
+       "Additiereactie",
+       "Zuur",
+       "Grondstof"
       ],
       "c": 0,
       "u": "Het juiste begrip is «Circulaire economie»: materialen blijven in de kringloop.",
       "d": 2
+     },
+     {
+      "v": "Welke term past bij: \"materialen blijven in de kringloop\"?",
+      "o": [
+       "Duurzaamheid",
+       "Levenscyclusanalyse",
+       "Grondstof",
+       "Circulaire economie"
+      ],
+      "c": 3,
+      "u": "Het juiste begrip is «Circulaire economie»: materialen blijven in de kringloop.",
+      "d": 3
      }
     ],
     "oe": [
@@ -7396,62 +12240,182 @@ var VAKKEN = [
      {
       "v": "Wat betekent «Significante cijfers»?",
       "o": [
-       "U = I·R",
+       "de mate waarin een geleider de stroom tegenwerkt (ohm)",
+       "EM-straling; sterk doordringend, weinig ioniserend",
        "de betekenisvolle cijfers in een meetwaarde",
+       "F = m·a"
+      ],
+      "c": 2,
+      "u": "«Significante cijfers» betekent: de betekenisvolle cijfers in een meetwaarde.",
+      "d": 1
+     },
+     {
+      "v": "Welk begrip hoort bij deze omschrijving: \"de betekenisvolle cijfers in een meetwaarde\"?",
+      "o": [
+       "Snelheid",
+       "Golflengte",
+       "Elektrisch vermogen",
+       "Significante cijfers"
+      ],
+      "c": 3,
+      "u": "Het juiste begrip is «Significante cijfers»: de betekenisvolle cijfers in een meetwaarde.",
+      "d": 2
+     },
+     {
+      "v": "Welke term past bij: \"de betekenisvolle cijfers in een meetwaarde\"?",
+      "o": [
+       "SI-eenheid",
+       "Omgekeerd evenredig",
+       "Meetonzekerheid",
+       "Significante cijfers"
+      ],
+      "c": 3,
+      "u": "Het juiste begrip is «Significante cijfers»: de betekenisvolle cijfers in een meetwaarde.",
+      "d": 3
+     },
+     {
+      "v": "Wat betekent «SI-eenheid»?",
+      "o": [
+       "een internationale standaardeenheid (m, kg, s, A)",
        "actie en reactie zijn even groot en tegengesteld",
+       "uitzending van straling door onstabiele kernen",
        "frequentieverandering door beweging van bron of waarnemer"
       ],
-      "c": 1,
-      "u": "«Significante cijfers» betekent: de betekenisvolle cijfers in een meetwaarde.",
+      "c": 0,
+      "u": "«SI-eenheid» betekent: een internationale standaardeenheid (m, kg, s, A).",
       "d": 1
      },
      {
       "v": "Welk begrip hoort bij deze omschrijving: \"een internationale standaardeenheid (m, kg, s, A)\"?",
       "o": [
-       "Vermogen",
        "SI-eenheid",
-       "Spanning",
-       "Resulterende kracht"
+       "Versnelling",
+       "Golf",
+       "Resonantie"
       ],
-      "c": 1,
+      "c": 0,
       "u": "Het juiste begrip is «SI-eenheid»: een internationale standaardeenheid (m, kg, s, A).",
       "d": 2
      },
      {
-      "v": "Welk begrip hoort bij deze omschrijving: \"y = a·x; grafiek is een rechte lijn door de oorsprong\"?",
+      "v": "Welke term past bij: \"een internationale standaardeenheid (m, kg, s, A)\"?",
       "o": [
        "Omgekeerd evenredig",
-       "SI-eenheid",
+       "Significante cijfers",
        "Meetonzekerheid",
-       "Recht evenredig"
+       "SI-eenheid"
       ],
       "c": 3,
+      "u": "Het juiste begrip is «SI-eenheid»: een internationale standaardeenheid (m, kg, s, A).",
+      "d": 3
+     },
+     {
+      "v": "Wat betekent «Recht evenredig»?",
+      "o": [
+       "y = a·x; grafiek is een rechte lijn door de oorsprong",
+       "de arbeid per tijd (P = W/t)",
+       "gebied waarin een lading een kracht ondervindt",
+       "de neiging om de bewegingstoestand te behouden"
+      ],
+      "c": 0,
+      "u": "«Recht evenredig» betekent: y = a·x; grafiek is een rechte lijn door de oorsprong.",
+      "d": 1
+     },
+     {
+      "v": "Welk begrip hoort bij deze omschrijving: \"y = a·x; grafiek is een rechte lijn door de oorsprong\"?",
+      "o": [
+       "Recht evenredig",
+       "Amplitude",
+       "Eerste wet van Newton",
+       "Golfsnelheid"
+      ],
+      "c": 0,
+      "u": "Het juiste begrip is «Recht evenredig»: y = a·x; grafiek is een rechte lijn door de oorsprong.",
+      "d": 2
+     },
+     {
+      "v": "Welke term past bij: \"y = a·x; grafiek is een rechte lijn door de oorsprong\"?",
+      "o": [
+       "Omgekeerd evenredig",
+       "Recht evenredig",
+       "SI-eenheid",
+       "Meetonzekerheid"
+      ],
+      "c": 1,
       "u": "Het juiste begrip is «Recht evenredig»: y = a·x; grafiek is een rechte lijn door de oorsprong.",
       "d": 3
      },
      {
       "v": "Wat betekent «Omgekeerd evenredig»?",
       "o": [
-       "kracht maal verplaatsing (W = F·s)",
-       "gebied waarin een lading een kracht ondervindt",
-       "F = m·a",
-       "y = a/x; het product blijft constant"
+       "de betekenisvolle cijfers in een meetwaarde",
+       "y = a/x; het product blijft constant",
+       "EM-straling; sterk doordringend, weinig ioniserend",
+       "kracht maal verplaatsing (W = F·s)"
+      ],
+      "c": 1,
+      "u": "«Omgekeerd evenredig» betekent: y = a/x; het product blijft constant.",
+      "d": 1
+     },
+     {
+      "v": "Welk begrip hoort bij deze omschrijving: \"y = a/x; het product blijft constant\"?",
+      "o": [
+       "Frequentie",
+       "Isotoop",
+       "Omgekeerd evenredig",
+       "Eerste wet van Newton"
+      ],
+      "c": 2,
+      "u": "Het juiste begrip is «Omgekeerd evenredig»: y = a/x; het product blijft constant.",
+      "d": 2
+     },
+     {
+      "v": "Welke term past bij: \"y = a/x; het product blijft constant\"?",
+      "o": [
+       "Significante cijfers",
+       "Recht evenredig",
+       "Omgekeerd evenredig",
+       "SI-eenheid"
+      ],
+      "c": 2,
+      "u": "Het juiste begrip is «Omgekeerd evenredig»: y = a/x; het product blijft constant.",
+      "d": 3
+     },
+     {
+      "v": "Wat betekent «Meetonzekerheid»?",
+      "o": [
+       "de afstand tussen twee opeenvolgende toppen (m)",
+       "zonder resulterende kracht blijft de snelheid gelijk",
+       "een trilling die energie transporteert zonder massatransport",
+       "de marge waarbinnen de echte waarde ligt"
       ],
       "c": 3,
-      "u": "«Omgekeerd evenredig» betekent: y = a/x; het product blijft constant.",
+      "u": "«Meetonzekerheid» betekent: de marge waarbinnen de echte waarde ligt.",
       "d": 1
      },
      {
       "v": "Welk begrip hoort bij deze omschrijving: \"de marge waarbinnen de echte waarde ligt\"?",
       "o": [
-       "Dosis",
-       "Meetonzekerheid",
-       "Doppler-effect",
-       "Spanning"
+       "Breking",
+       "Wet van Ohm",
+       "Activiteit",
+       "Meetonzekerheid"
       ],
-      "c": 1,
+      "c": 3,
       "u": "Het juiste begrip is «Meetonzekerheid»: de marge waarbinnen de echte waarde ligt.",
       "d": 2
+     },
+     {
+      "v": "Welke term past bij: \"de marge waarbinnen de echte waarde ligt\"?",
+      "o": [
+       "Recht evenredig",
+       "Omgekeerd evenredig",
+       "Meetonzekerheid",
+       "Significante cijfers"
+      ],
+      "c": 2,
+      "u": "Het juiste begrip is «Meetonzekerheid»: de marge waarbinnen de echte waarde ligt.",
+      "d": 3
      }
     ],
     "oe": [
@@ -7841,70 +12805,214 @@ var VAKKEN = [
      {
       "v": "Wat betekent «Golf»?",
       "o": [
+       "elektronen; matig doordringend",
        "een trilling die energie transporteert zonder massatransport",
-       "richtingverandering van een golf bij een grensvlak",
-       "de lading per tijd (I = Q/t, ampère)",
-       "componenten achter elkaar; de stroom is overal gelijk"
+       "straling die atomen ioniseert en cellen kan beschadigen",
+       "de marge waarbinnen de echte waarde ligt"
+      ],
+      "c": 1,
+      "u": "«Golf» betekent: een trilling die energie transporteert zonder massatransport.",
+      "d": 1
+     },
+     {
+      "v": "Welk begrip hoort bij deze omschrijving: \"een trilling die energie transporteert zonder massatransport\"?",
+      "o": [
+       "Amplitude",
+       "Golf",
+       "Omgekeerd evenredig",
+       "Elektrisch vermogen"
+      ],
+      "c": 1,
+      "u": "Het juiste begrip is «Golf»: een trilling die energie transporteert zonder massatransport.",
+      "d": 2
+     },
+     {
+      "v": "Welke term past bij: \"een trilling die energie transporteert zonder massatransport\"?",
+      "o": [
+       "Frequentie",
+       "Golf",
+       "Doppler-effect",
+       "Interferentie"
+      ],
+      "c": 1,
+      "u": "Het juiste begrip is «Golf»: een trilling die energie transporteert zonder massatransport.",
+      "d": 3
+     },
+     {
+      "v": "Wat betekent «Frequentie»?",
+      "o": [
+       "het aantal trillingen per seconde (Hz)",
+       "de geabsorbeerde energie per kilogram (gray)",
+       "componenten achter elkaar; de stroom is overal gelijk",
+       "v = f·λ, de snelheid van de golf (m/s)"
       ],
       "c": 0,
-      "u": "«Golf» betekent: een trilling die energie transporteert zonder massatransport.",
+      "u": "«Frequentie» betekent: het aantal trillingen per seconde (Hz).",
       "d": 1
      },
      {
       "v": "Welk begrip hoort bij deze omschrijving: \"het aantal trillingen per seconde (Hz)\"?",
       "o": [
+       "Activiteit",
        "Frequentie",
-       "Radioactiviteit",
-       "Golflengte",
-       "Resulterende kracht"
+       "Energie",
+       "Alfastraling"
       ],
-      "c": 0,
+      "c": 1,
       "u": "Het juiste begrip is «Frequentie»: het aantal trillingen per seconde (Hz).",
       "d": 2
      },
      {
+      "v": "Welke term past bij: \"het aantal trillingen per seconde (Hz)\"?",
+      "o": [
+       "Doppler-effect",
+       "Amplitude",
+       "Frequentie",
+       "Breking"
+      ],
+      "c": 2,
+      "u": "Het juiste begrip is «Frequentie»: het aantal trillingen per seconde (Hz).",
+      "d": 3
+     },
+     {
+      "v": "Wat betekent «Golflengte»?",
+      "o": [
+       "versterking of verzwakking van overlappende golven",
+       "v = f·λ, de snelheid van de golf (m/s)",
+       "de betekenisvolle cijfers in een meetwaarde",
+       "de afstand tussen twee opeenvolgende toppen (m)"
+      ],
+      "c": 3,
+      "u": "«Golflengte» betekent: de afstand tussen twee opeenvolgende toppen (m).",
+      "d": 1
+     },
+     {
       "v": "Welk begrip hoort bij deze omschrijving: \"de afstand tussen twee opeenvolgende toppen (m)\"?",
       "o": [
-       "Frequentie",
        "Golflengte",
-       "Doppler-effect",
-       "Golf"
+       "Traagheid",
+       "Gammastraling",
+       "Ioniserende straling"
       ],
-      "c": 1,
+      "c": 0,
+      "u": "Het juiste begrip is «Golflengte»: de afstand tussen twee opeenvolgende toppen (m).",
+      "d": 2
+     },
+     {
+      "v": "Welke term past bij: \"de afstand tussen twee opeenvolgende toppen (m)\"?",
+      "o": [
+       "Resonantie",
+       "Frequentie",
+       "Breking",
+       "Golflengte"
+      ],
+      "c": 3,
       "u": "Het juiste begrip is «Golflengte»: de afstand tussen twee opeenvolgende toppen (m).",
       "d": 3
      },
      {
       "v": "Wat betekent «Amplitude»?",
       "o": [
-       "de lading per tijd (I = Q/t, ampère)",
+       "de afstand tussen twee opeenvolgende toppen (m)",
        "de maximale uitwijking van een trilling",
-       "de snelheidsverandering per tijd (a = Δv/Δt)",
-       "eigenschap die elektrische krachten veroorzaakt (C)"
+       "de vectorsom van alle krachten op een object",
+       "de marge waarbinnen de echte waarde ligt"
       ],
       "c": 1,
       "u": "«Amplitude» betekent: de maximale uitwijking van een trilling.",
       "d": 1
      },
      {
-      "v": "Welk begrip hoort bij deze omschrijving: \"v = f·λ, de snelheid van de golf (m/s)\"?",
+      "v": "Welk begrip hoort bij deze omschrijving: \"de maximale uitwijking van een trilling\"?",
       "o": [
-       "Alfastraling",
+       "Ioniserende straling",
+       "Resonantie",
+       "Dosis",
+       "Amplitude"
+      ],
+      "c": 3,
+      "u": "Het juiste begrip is «Amplitude»: de maximale uitwijking van een trilling.",
+      "d": 2
+     },
+     {
+      "v": "Welke term past bij: \"de maximale uitwijking van een trilling\"?",
+      "o": [
        "Golfsnelheid",
-       "Resulterende kracht",
+       "Breking",
+       "Amplitude",
        "Doppler-effect"
       ],
+      "c": 2,
+      "u": "Het juiste begrip is «Amplitude»: de maximale uitwijking van een trilling.",
+      "d": 3
+     },
+     {
+      "v": "Wat betekent «Golfsnelheid»?",
+      "o": [
+       "het aantal trillingen per seconde (Hz)",
+       "v = f·λ, de snelheid van de golf (m/s)",
+       "het vermogen om arbeid te verrichten (joule)",
+       "frequentieverandering door beweging van bron of waarnemer"
+      ],
       "c": 1,
+      "u": "«Golfsnelheid» betekent: v = f·λ, de snelheid van de golf (m/s).",
+      "d": 1
+     },
+     {
+      "v": "Welk begrip hoort bij deze omschrijving: \"v = f·λ, de snelheid van de golf (m/s)\"?",
+      "o": [
+       "Significante cijfers",
+       "Resulterende kracht",
+       "Golfsnelheid",
+       "Wet van Ohm"
+      ],
+      "c": 2,
       "u": "Het juiste begrip is «Golfsnelheid»: v = f·λ, de snelheid van de golf (m/s).",
       "d": 2
      },
      {
+      "v": "Welke term past bij: \"v = f·λ, de snelheid van de golf (m/s)\"?",
+      "o": [
+       "Frequentie",
+       "Golflengte",
+       "Golfsnelheid",
+       "Breking"
+      ],
+      "c": 2,
+      "u": "Het juiste begrip is «Golfsnelheid»: v = f·λ, de snelheid van de golf (m/s).",
+      "d": 3
+     },
+     {
+      "v": "Wat betekent «Interferentie»?",
+      "o": [
+       "versterking of verzwakking van overlappende golven",
+       "EM-straling; sterk doordringend, weinig ioniserend",
+       "de afstand tussen twee opeenvolgende toppen (m)",
+       "de maximale uitwijking van een trilling"
+      ],
+      "c": 0,
+      "u": "«Interferentie» betekent: versterking of verzwakking van overlappende golven.",
+      "d": 1
+     },
+     {
       "v": "Welk begrip hoort bij deze omschrijving: \"versterking of verzwakking van overlappende golven\"?",
       "o": [
-       "Golf",
+       "Serieschakeling",
+       "Versnelling",
        "Interferentie",
-       "Resonantie",
-       "Golfsnelheid"
+       "Isotoop"
+      ],
+      "c": 2,
+      "u": "Het juiste begrip is «Interferentie»: versterking of verzwakking van overlappende golven.",
+      "d": 2
+     },
+     {
+      "v": "Welke term past bij: \"versterking of verzwakking van overlappende golven\"?",
+      "o": [
+       "Golfsnelheid",
+       "Interferentie",
+       "Frequentie",
+       "Amplitude"
       ],
       "c": 1,
       "u": "Het juiste begrip is «Interferentie»: versterking of verzwakking van overlappende golven.",
@@ -7913,34 +13021,106 @@ var VAKKEN = [
      {
       "v": "Wat betekent «Resonantie»?",
       "o": [
-       "v = f·λ, de snelheid van de golf (m/s)",
+       "de afstand tussen twee opeenvolgende toppen (m)",
+       "de snelheidsverandering per tijd (a = Δv/Δt)",
        "sterke versterking bij de eigenfrequentie",
-       "een trilling die energie transporteert zonder massatransport",
-       "eigenschap die elektrische krachten veroorzaakt (C)"
+       "v = f·λ, de snelheid van de golf (m/s)"
       ],
-      "c": 1,
+      "c": 2,
       "u": "«Resonantie» betekent: sterke versterking bij de eigenfrequentie.",
+      "d": 1
+     },
+     {
+      "v": "Welk begrip hoort bij deze omschrijving: \"sterke versterking bij de eigenfrequentie\"?",
+      "o": [
+       "Resonantie",
+       "Breking",
+       "Doppler-effect",
+       "Derde wet van Newton"
+      ],
+      "c": 0,
+      "u": "Het juiste begrip is «Resonantie»: sterke versterking bij de eigenfrequentie.",
+      "d": 2
+     },
+     {
+      "v": "Welke term past bij: \"sterke versterking bij de eigenfrequentie\"?",
+      "o": [
+       "Resonantie",
+       "Interferentie",
+       "Amplitude",
+       "Golf"
+      ],
+      "c": 0,
+      "u": "Het juiste begrip is «Resonantie»: sterke versterking bij de eigenfrequentie.",
+      "d": 3
+     },
+     {
+      "v": "Wat betekent «Doppler-effect»?",
+      "o": [
+       "de tijd waarin de activiteit halveert",
+       "versterking of verzwakking van overlappende golven",
+       "uitzending van straling door onstabiele kernen",
+       "frequentieverandering door beweging van bron of waarnemer"
+      ],
+      "c": 3,
+      "u": "«Doppler-effect» betekent: frequentieverandering door beweging van bron of waarnemer.",
       "d": 1
      },
      {
       "v": "Welk begrip hoort bij deze omschrijving: \"frequentieverandering door beweging van bron of waarnemer\"?",
       "o": [
+       "Vermogen",
+       "Weerstand",
        "Doppler-effect",
-       "Arbeid",
-       "Serieschakeling",
-       "Traagheid"
+       "Stroomsterkte"
       ],
-      "c": 0,
+      "c": 2,
       "u": "Het juiste begrip is «Doppler-effect»: frequentieverandering door beweging van bron of waarnemer.",
       "d": 2
      },
      {
+      "v": "Welke term past bij: \"frequentieverandering door beweging van bron of waarnemer\"?",
+      "o": [
+       "Amplitude",
+       "Interferentie",
+       "Frequentie",
+       "Doppler-effect"
+      ],
+      "c": 3,
+      "u": "Het juiste begrip is «Doppler-effect»: frequentieverandering door beweging van bron of waarnemer.",
+      "d": 3
+     },
+     {
+      "v": "Wat betekent «Breking»?",
+      "o": [
+       "uitzending van straling door onstabiele kernen",
+       "richtingverandering van een golf bij een grensvlak",
+       "straling die atomen ioniseert en cellen kan beschadigen",
+       "de snelheidsverandering per tijd (a = Δv/Δt)"
+      ],
+      "c": 1,
+      "u": "«Breking» betekent: richtingverandering van een golf bij een grensvlak.",
+      "d": 1
+     },
+     {
       "v": "Welk begrip hoort bij deze omschrijving: \"richtingverandering van een golf bij een grensvlak\"?",
       "o": [
-       "Golfsnelheid",
-       "Golflengte",
        "Breking",
-       "Interferentie"
+       "Significante cijfers",
+       "Eerste wet van Newton",
+       "Traagheid"
+      ],
+      "c": 0,
+      "u": "Het juiste begrip is «Breking»: richtingverandering van een golf bij een grensvlak.",
+      "d": 2
+     },
+     {
+      "v": "Welke term past bij: \"richtingverandering van een golf bij een grensvlak\"?",
+      "o": [
+       "Frequentie",
+       "Resonantie",
+       "Breking",
+       "Golf"
       ],
       "c": 2,
       "u": "Het juiste begrip is «Breking»: richtingverandering van een golf bij een grensvlak.",
@@ -8415,33 +13595,105 @@ var VAKKEN = [
      {
       "v": "Wat betekent «Snelheid»?",
       "o": [
-       "het aantal trillingen per seconde (Hz)",
+       "de betekenisvolle cijfers in een meetwaarde",
        "de afgelegde weg per tijd (v = s/t)",
-       "gebied waarin een lading een kracht ondervindt",
-       "componenten naast elkaar; de spanning is gelijk"
+       "het aantal kernontvallen per seconde (becquerel)",
+       "componenten achter elkaar; de stroom is overal gelijk"
       ],
       "c": 1,
       "u": "«Snelheid» betekent: de afgelegde weg per tijd (v = s/t).",
       "d": 1
      },
      {
-      "v": "Welk begrip hoort bij deze omschrijving: \"de snelheidsverandering per tijd (a = Δv/Δt)\"?",
+      "v": "Welk begrip hoort bij deze omschrijving: \"de afgelegde weg per tijd (v = s/t)\"?",
       "o": [
-       "Weerstand",
-       "Versnelling",
-       "Eerste wet van Newton",
-       "Significante cijfers"
+       "Breking",
+       "Stroomsterkte",
+       "Snelheid",
+       "Elektrische lading"
+      ],
+      "c": 2,
+      "u": "Het juiste begrip is «Snelheid»: de afgelegde weg per tijd (v = s/t).",
+      "d": 2
+     },
+     {
+      "v": "Welke term past bij: \"de afgelegde weg per tijd (v = s/t)\"?",
+      "o": [
+       "Energie",
+       "Arbeid",
+       "Snelheid",
+       "Tweede wet van Newton"
+      ],
+      "c": 2,
+      "u": "Het juiste begrip is «Snelheid»: de afgelegde weg per tijd (v = s/t).",
+      "d": 3
+     },
+     {
+      "v": "Wat betekent «Versnelling»?",
+      "o": [
+       "eigenschap die elektrische krachten veroorzaakt (C)",
+       "de snelheidsverandering per tijd (a = Δv/Δt)",
+       "het vermogen om arbeid te verrichten (joule)",
+       "het aantal trillingen per seconde (Hz)"
       ],
       "c": 1,
+      "u": "«Versnelling» betekent: de snelheidsverandering per tijd (a = Δv/Δt).",
+      "d": 1
+     },
+     {
+      "v": "Welk begrip hoort bij deze omschrijving: \"de snelheidsverandering per tijd (a = Δv/Δt)\"?",
+      "o": [
+       "Elektrische lading",
+       "Weerstand",
+       "Versnelling",
+       "Doppler-effect"
+      ],
+      "c": 2,
       "u": "Het juiste begrip is «Versnelling»: de snelheidsverandering per tijd (a = Δv/Δt).",
       "d": 2
      },
      {
+      "v": "Welke term past bij: \"de snelheidsverandering per tijd (a = Δv/Δt)\"?",
+      "o": [
+       "Vermogen",
+       "Arbeid",
+       "Energie",
+       "Versnelling"
+      ],
+      "c": 3,
+      "u": "Het juiste begrip is «Versnelling»: de snelheidsverandering per tijd (a = Δv/Δt).",
+      "d": 3
+     },
+     {
+      "v": "Wat betekent «Resulterende kracht»?",
+      "o": [
+       "gebied waarin een lading een kracht ondervindt",
+       "EM-straling; sterk doordringend, weinig ioniserend",
+       "de vectorsom van alle krachten op een object",
+       "de neiging om de bewegingstoestand te behouden"
+      ],
+      "c": 2,
+      "u": "«Resulterende kracht» betekent: de vectorsom van alle krachten op een object.",
+      "d": 1
+     },
+     {
       "v": "Welk begrip hoort bij deze omschrijving: \"de vectorsom van alle krachten op een object\"?",
       "o": [
+       "Recht evenredig",
+       "Resulterende kracht",
+       "Versnelling",
+       "Weerstand"
+      ],
+      "c": 1,
+      "u": "Het juiste begrip is «Resulterende kracht»: de vectorsom van alle krachten op een object.",
+      "d": 2
+     },
+     {
+      "v": "Welke term past bij: \"de vectorsom van alle krachten op een object\"?",
+      "o": [
+       "Derde wet van Newton",
        "Tweede wet van Newton",
-       "Arbeid",
-       "Eerste wet van Newton",
+       "Energie",
        "Resulterende kracht"
       ],
       "c": 3,
@@ -8451,86 +13703,254 @@ var VAKKEN = [
      {
       "v": "Wat betekent «Eerste wet van Newton»?",
       "o": [
-       "de geabsorbeerde energie per kilogram (gray)",
-       "zonder resulterende kracht blijft de snelheid gelijk",
        "de afstand tussen twee opeenvolgende toppen (m)",
-       "de arbeid per tijd (P = W/t)"
+       "de betekenisvolle cijfers in een meetwaarde",
+       "componenten naast elkaar; de spanning is gelijk",
+       "zonder resulterende kracht blijft de snelheid gelijk"
+      ],
+      "c": 3,
+      "u": "«Eerste wet van Newton» betekent: zonder resulterende kracht blijft de snelheid gelijk.",
+      "d": 1
+     },
+     {
+      "v": "Welk begrip hoort bij deze omschrijving: \"zonder resulterende kracht blijft de snelheid gelijk\"?",
+      "o": [
+       "Eerste wet van Newton",
+       "Amplitude",
+       "Doppler-effect",
+       "Golfsnelheid"
+      ],
+      "c": 0,
+      "u": "Het juiste begrip is «Eerste wet van Newton»: zonder resulterende kracht blijft de snelheid gelijk.",
+      "d": 2
+     },
+     {
+      "v": "Welke term past bij: \"zonder resulterende kracht blijft de snelheid gelijk\"?",
+      "o": [
+       "Snelheid",
+       "Energie",
+       "Eerste wet van Newton",
+       "Traagheid"
+      ],
+      "c": 2,
+      "u": "Het juiste begrip is «Eerste wet van Newton»: zonder resulterende kracht blijft de snelheid gelijk.",
+      "d": 3
+     },
+     {
+      "v": "Wat betekent «Tweede wet van Newton»?",
+      "o": [
+       "de marge waarbinnen de echte waarde ligt",
+       "F = m·a",
+       "eigenschap die elektrische krachten veroorzaakt (C)",
+       "heliumkernen; sterk ioniserend, weinig doordringend"
       ],
       "c": 1,
-      "u": "«Eerste wet van Newton» betekent: zonder resulterende kracht blijft de snelheid gelijk.",
+      "u": "«Tweede wet van Newton» betekent: F = m·a.",
       "d": 1
      },
      {
       "v": "Welk begrip hoort bij deze omschrijving: \"F = m·a\"?",
       "o": [
-       "Doppler-effect",
-       "Ioniserende straling",
-       "Tweede wet van Newton",
-       "Dosis"
+       "Halveringstijd",
+       "SI-eenheid",
+       "Omgekeerd evenredig",
+       "Tweede wet van Newton"
       ],
-      "c": 2,
+      "c": 3,
       "u": "Het juiste begrip is «Tweede wet van Newton»: F = m·a.",
       "d": 2
      },
      {
-      "v": "Welk begrip hoort bij deze omschrijving: \"actie en reactie zijn even groot en tegengesteld\"?",
+      "v": "Welke term past bij: \"F = m·a\"?",
       "o": [
-       "Eerste wet van Newton",
-       "Traagheid",
-       "Derde wet van Newton",
-       "Arbeid"
+       "Vermogen",
+       "Arbeid",
+       "Tweede wet van Newton",
+       "Resulterende kracht"
       ],
       "c": 2,
+      "u": "Het juiste begrip is «Tweede wet van Newton»: F = m·a.",
+      "d": 3
+     },
+     {
+      "v": "Wat betekent «Derde wet van Newton»?",
+      "o": [
+       "de maximale uitwijking van een trilling",
+       "zonder resulterende kracht blijft de snelheid gelijk",
+       "heliumkernen; sterk ioniserend, weinig doordringend",
+       "actie en reactie zijn even groot en tegengesteld"
+      ],
+      "c": 3,
+      "u": "«Derde wet van Newton» betekent: actie en reactie zijn even groot en tegengesteld.",
+      "d": 1
+     },
+     {
+      "v": "Welk begrip hoort bij deze omschrijving: \"actie en reactie zijn even groot en tegengesteld\"?",
+      "o": [
+       "Meetonzekerheid",
+       "Derde wet van Newton",
+       "Halveringstijd",
+       "Dosis"
+      ],
+      "c": 1,
+      "u": "Het juiste begrip is «Derde wet van Newton»: actie en reactie zijn even groot en tegengesteld.",
+      "d": 2
+     },
+     {
+      "v": "Welke term past bij: \"actie en reactie zijn even groot en tegengesteld\"?",
+      "o": [
+       "Derde wet van Newton",
+       "Versnelling",
+       "Traagheid",
+       "Energie"
+      ],
+      "c": 0,
       "u": "Het juiste begrip is «Derde wet van Newton»: actie en reactie zijn even groot en tegengesteld.",
       "d": 3
      },
      {
       "v": "Wat betekent «Traagheid»?",
       "o": [
-       "de betekenisvolle cijfers in een meetwaarde",
-       "de neiging om de bewegingstoestand te behouden",
-       "atoomsoort met gelijk aantal protonen, ander aantal neutronen",
-       "y = a·x; grafiek is een rechte lijn door de oorsprong"
+       "de geabsorbeerde energie per kilogram (gray)",
+       "een trilling die energie transporteert zonder massatransport",
+       "het vermogen om arbeid te verrichten (joule)",
+       "de neiging om de bewegingstoestand te behouden"
+      ],
+      "c": 3,
+      "u": "«Traagheid» betekent: de neiging om de bewegingstoestand te behouden.",
+      "d": 1
+     },
+     {
+      "v": "Welk begrip hoort bij deze omschrijving: \"de neiging om de bewegingstoestand te behouden\"?",
+      "o": [
+       "Traagheid",
+       "Radioactiviteit",
+       "Vermogen",
+       "Gammastraling"
+      ],
+      "c": 0,
+      "u": "Het juiste begrip is «Traagheid»: de neiging om de bewegingstoestand te behouden.",
+      "d": 2
+     },
+     {
+      "v": "Welke term past bij: \"de neiging om de bewegingstoestand te behouden\"?",
+      "o": [
+       "Versnelling",
+       "Traagheid",
+       "Arbeid",
+       "Tweede wet van Newton"
       ],
       "c": 1,
-      "u": "«Traagheid» betekent: de neiging om de bewegingstoestand te behouden.",
+      "u": "Het juiste begrip is «Traagheid»: de neiging om de bewegingstoestand te behouden.",
+      "d": 3
+     },
+     {
+      "v": "Wat betekent «Arbeid»?",
+      "o": [
+       "elektronen; matig doordringend",
+       "U = I·R",
+       "kracht maal verplaatsing (W = F·s)",
+       "de afstand tussen twee opeenvolgende toppen (m)"
+      ],
+      "c": 2,
+      "u": "«Arbeid» betekent: kracht maal verplaatsing (W = F·s).",
       "d": 1
      },
      {
       "v": "Welk begrip hoort bij deze omschrijving: \"kracht maal verplaatsing (W = F·s)\"?",
       "o": [
-       "Dosis",
-       "Derde wet van Newton",
-       "Arbeid",
-       "Activiteit"
+       "Significante cijfers",
+       "Spanning",
+       "Recht evenredig",
+       "Arbeid"
       ],
-      "c": 2,
+      "c": 3,
       "u": "Het juiste begrip is «Arbeid»: kracht maal verplaatsing (W = F·s).",
       "d": 2
      },
      {
-      "v": "Welk begrip hoort bij deze omschrijving: \"het vermogen om arbeid te verrichten (joule)\"?",
+      "v": "Welke term past bij: \"kracht maal verplaatsing (W = F·s)\"?",
       "o": [
-       "Energie",
        "Arbeid",
-       "Vermogen",
-       "Tweede wet van Newton"
+       "Resulterende kracht",
+       "Eerste wet van Newton",
+       "Derde wet van Newton"
       ],
       "c": 0,
+      "u": "Het juiste begrip is «Arbeid»: kracht maal verplaatsing (W = F·s).",
+      "d": 3
+     },
+     {
+      "v": "Wat betekent «Energie»?",
+      "o": [
+       "het vermogen om arbeid te verrichten (joule)",
+       "frequentieverandering door beweging van bron of waarnemer",
+       "componenten achter elkaar; de stroom is overal gelijk",
+       "v = f·λ, de snelheid van de golf (m/s)"
+      ],
+      "c": 0,
+      "u": "«Energie» betekent: het vermogen om arbeid te verrichten (joule).",
+      "d": 1
+     },
+     {
+      "v": "Welk begrip hoort bij deze omschrijving: \"het vermogen om arbeid te verrichten (joule)\"?",
+      "o": [
+       "Activiteit",
+       "Bètastraling",
+       "Energie",
+       "Golf"
+      ],
+      "c": 2,
+      "u": "Het juiste begrip is «Energie»: het vermogen om arbeid te verrichten (joule).",
+      "d": 2
+     },
+     {
+      "v": "Welke term past bij: \"het vermogen om arbeid te verrichten (joule)\"?",
+      "o": [
+       "Snelheid",
+       "Energie",
+       "Traagheid",
+       "Arbeid"
+      ],
+      "c": 1,
       "u": "Het juiste begrip is «Energie»: het vermogen om arbeid te verrichten (joule).",
       "d": 3
      },
      {
       "v": "Wat betekent «Vermogen»?",
       "o": [
-       "gebied waarin een lading een kracht ondervindt",
+       "componenten naast elkaar; de spanning is gelijk",
+       "de afstand tussen twee opeenvolgende toppen (m)",
        "de arbeid per tijd (P = W/t)",
-       "componenten achter elkaar; de stroom is overal gelijk",
-       "de afstand tussen twee opeenvolgende toppen (m)"
+       "sterke versterking bij de eigenfrequentie"
       ],
-      "c": 1,
+      "c": 2,
       "u": "«Vermogen» betekent: de arbeid per tijd (P = W/t).",
       "d": 1
+     },
+     {
+      "v": "Welk begrip hoort bij deze omschrijving: \"de arbeid per tijd (P = W/t)\"?",
+      "o": [
+       "Energie",
+       "Serieschakeling",
+       "Activiteit",
+       "Vermogen"
+      ],
+      "c": 3,
+      "u": "Het juiste begrip is «Vermogen»: de arbeid per tijd (P = W/t).",
+      "d": 2
+     },
+     {
+      "v": "Welke term past bij: \"de arbeid per tijd (P = W/t)\"?",
+      "o": [
+       "Energie",
+       "Vermogen",
+       "Snelheid",
+       "Traagheid"
+      ],
+      "c": 1,
+      "u": "Het juiste begrip is «Vermogen»: de arbeid per tijd (P = W/t).",
+      "d": 3
      }
     ],
     "oe": [
@@ -9035,108 +14455,324 @@ var VAKKEN = [
      {
       "v": "Wat betekent «Elektrische lading»?",
       "o": [
-       "kracht maal verplaatsing (W = F·s)",
-       "het vermogen om arbeid te verrichten (joule)",
        "eigenschap die elektrische krachten veroorzaakt (C)",
-       "richtingverandering van een golf bij een grensvlak"
+       "de snelheidsverandering per tijd (a = Δv/Δt)",
+       "elektronen; matig doordringend",
+       "de geabsorbeerde energie per kilogram (gray)"
       ],
-      "c": 2,
+      "c": 0,
       "u": "«Elektrische lading» betekent: eigenschap die elektrische krachten veroorzaakt (C).",
+      "d": 1
+     },
+     {
+      "v": "Welk begrip hoort bij deze omschrijving: \"eigenschap die elektrische krachten veroorzaakt (C)\"?",
+      "o": [
+       "Elektrische lading",
+       "Alfastraling",
+       "Halveringstijd",
+       "Weerstand"
+      ],
+      "c": 0,
+      "u": "Het juiste begrip is «Elektrische lading»: eigenschap die elektrische krachten veroorzaakt (C).",
+      "d": 2
+     },
+     {
+      "v": "Welke term past bij: \"eigenschap die elektrische krachten veroorzaakt (C)\"?",
+      "o": [
+       "Wet van Ohm",
+       "Elektrische lading",
+       "Elektrisch vermogen",
+       "Elektrisch veld"
+      ],
+      "c": 1,
+      "u": "Het juiste begrip is «Elektrische lading»: eigenschap die elektrische krachten veroorzaakt (C).",
+      "d": 3
+     },
+     {
+      "v": "Wat betekent «Stroomsterkte»?",
+      "o": [
+       "de maximale uitwijking van een trilling",
+       "de lading per tijd (I = Q/t, ampère)",
+       "de energie per lading (volt)",
+       "het vermogen om arbeid te verrichten (joule)"
+      ],
+      "c": 1,
+      "u": "«Stroomsterkte» betekent: de lading per tijd (I = Q/t, ampère).",
       "d": 1
      },
      {
       "v": "Welk begrip hoort bij deze omschrijving: \"de lading per tijd (I = Q/t, ampère)\"?",
       "o": [
-       "Isotoop",
-       "Amplitude",
-       "Serieschakeling",
-       "Stroomsterkte"
+       "Stroomsterkte",
+       "Alfastraling",
+       "Spanning",
+       "Golflengte"
       ],
-      "c": 3,
+      "c": 0,
       "u": "Het juiste begrip is «Stroomsterkte»: de lading per tijd (I = Q/t, ampère).",
       "d": 2
      },
      {
+      "v": "Welke term past bij: \"de lading per tijd (I = Q/t, ampère)\"?",
+      "o": [
+       "Elektrische lading",
+       "Elektrisch veld",
+       "Stroomsterkte",
+       "Spanning"
+      ],
+      "c": 2,
+      "u": "Het juiste begrip is «Stroomsterkte»: de lading per tijd (I = Q/t, ampère).",
+      "d": 3
+     },
+     {
+      "v": "Wat betekent «Spanning»?",
+      "o": [
+       "het aantal kernontvallen per seconde (becquerel)",
+       "de tijd waarin de activiteit halveert",
+       "y = a/x; het product blijft constant",
+       "de energie per lading (volt)"
+      ],
+      "c": 3,
+      "u": "«Spanning» betekent: de energie per lading (volt).",
+      "d": 1
+     },
+     {
       "v": "Welk begrip hoort bij deze omschrijving: \"de energie per lading (volt)\"?",
       "o": [
-       "Elektrisch vermogen",
-       "Serieschakeling",
-       "Parallelschakeling",
+       "Energie",
+       "Omgekeerd evenredig",
+       "Doppler-effect",
        "Spanning"
       ],
       "c": 3,
+      "u": "Het juiste begrip is «Spanning»: de energie per lading (volt).",
+      "d": 2
+     },
+     {
+      "v": "Welke term past bij: \"de energie per lading (volt)\"?",
+      "o": [
+       "Stroomsterkte",
+       "Serieschakeling",
+       "Spanning",
+       "Parallelschakeling"
+      ],
+      "c": 2,
       "u": "Het juiste begrip is «Spanning»: de energie per lading (volt).",
       "d": 3
      },
      {
       "v": "Wat betekent «Weerstand»?",
       "o": [
-       "de afgelegde weg per tijd (v = s/t)",
        "F = m·a",
-       "de mate waarin een geleider de stroom tegenwerkt (ohm)",
-       "het vermogen om arbeid te verrichten (joule)"
+       "heliumkernen; sterk ioniserend, weinig doordringend",
+       "frequentieverandering door beweging van bron of waarnemer",
+       "de mate waarin een geleider de stroom tegenwerkt (ohm)"
+      ],
+      "c": 3,
+      "u": "«Weerstand» betekent: de mate waarin een geleider de stroom tegenwerkt (ohm).",
+      "d": 1
+     },
+     {
+      "v": "Welk begrip hoort bij deze omschrijving: \"de mate waarin een geleider de stroom tegenwerkt (ohm)\"?",
+      "o": [
+       "Interferentie",
+       "Gammastraling",
+       "Weerstand",
+       "Golfsnelheid"
       ],
       "c": 2,
-      "u": "«Weerstand» betekent: de mate waarin een geleider de stroom tegenwerkt (ohm).",
+      "u": "Het juiste begrip is «Weerstand»: de mate waarin een geleider de stroom tegenwerkt (ohm).",
+      "d": 2
+     },
+     {
+      "v": "Welke term past bij: \"de mate waarin een geleider de stroom tegenwerkt (ohm)\"?",
+      "o": [
+       "Stroomsterkte",
+       "Parallelschakeling",
+       "Weerstand",
+       "Elektrische lading"
+      ],
+      "c": 2,
+      "u": "Het juiste begrip is «Weerstand»: de mate waarin een geleider de stroom tegenwerkt (ohm).",
+      "d": 3
+     },
+     {
+      "v": "Wat betekent «Wet van Ohm»?",
+      "o": [
+       "de geabsorbeerde energie per kilogram (gray)",
+       "actie en reactie zijn even groot en tegengesteld",
+       "de arbeid per tijd (P = W/t)",
+       "U = I·R"
+      ],
+      "c": 3,
+      "u": "«Wet van Ohm» betekent: U = I·R.",
       "d": 1
      },
      {
       "v": "Welk begrip hoort bij deze omschrijving: \"U = I·R\"?",
       "o": [
-       "Snelheid",
-       "Ioniserende straling",
-       "Alfastraling",
-       "Wet van Ohm"
+       "Breking",
+       "Wet van Ohm",
+       "Tweede wet van Newton",
+       "Serieschakeling"
       ],
-      "c": 3,
+      "c": 1,
       "u": "Het juiste begrip is «Wet van Ohm»: U = I·R.",
       "d": 2
      },
      {
+      "v": "Welke term past bij: \"U = I·R\"?",
+      "o": [
+       "Elektrische lading",
+       "Wet van Ohm",
+       "Weerstand",
+       "Spanning"
+      ],
+      "c": 1,
+      "u": "Het juiste begrip is «Wet van Ohm»: U = I·R.",
+      "d": 3
+     },
+     {
+      "v": "Wat betekent «Serieschakeling»?",
+      "o": [
+       "y = a/x; het product blijft constant",
+       "uitzending van straling door onstabiele kernen",
+       "componenten achter elkaar; de stroom is overal gelijk",
+       "een trilling die energie transporteert zonder massatransport"
+      ],
+      "c": 2,
+      "u": "«Serieschakeling» betekent: componenten achter elkaar; de stroom is overal gelijk.",
+      "d": 1
+     },
+     {
       "v": "Welk begrip hoort bij deze omschrijving: \"componenten achter elkaar; de stroom is overal gelijk\"?",
       "o": [
-       "Serieschakeling",
-       "Weerstand",
        "Elektrische lading",
-       "Elektrisch veld"
+       "Resulterende kracht",
+       "Serieschakeling",
+       "Golflengte"
       ],
-      "c": 0,
+      "c": 2,
+      "u": "Het juiste begrip is «Serieschakeling»: componenten achter elkaar; de stroom is overal gelijk.",
+      "d": 2
+     },
+     {
+      "v": "Welke term past bij: \"componenten achter elkaar; de stroom is overal gelijk\"?",
+      "o": [
+       "Stroomsterkte",
+       "Serieschakeling",
+       "Elektrische lading",
+       "Spanning"
+      ],
+      "c": 1,
       "u": "Het juiste begrip is «Serieschakeling»: componenten achter elkaar; de stroom is overal gelijk.",
       "d": 3
      },
      {
       "v": "Wat betekent «Parallelschakeling»?",
       "o": [
-       "richtingverandering van een golf bij een grensvlak",
+       "de maximale uitwijking van een trilling",
        "componenten naast elkaar; de spanning is gelijk",
-       "v = f·λ, de snelheid van de golf (m/s)",
-       "gebied waarin een lading een kracht ondervindt"
+       "de afgelegde weg per tijd (v = s/t)",
+       "eigenschap die elektrische krachten veroorzaakt (C)"
       ],
       "c": 1,
       "u": "«Parallelschakeling» betekent: componenten naast elkaar; de spanning is gelijk.",
       "d": 1
      },
      {
+      "v": "Welk begrip hoort bij deze omschrijving: \"componenten naast elkaar; de spanning is gelijk\"?",
+      "o": [
+       "Doppler-effect",
+       "Golf",
+       "Parallelschakeling",
+       "Vermogen"
+      ],
+      "c": 2,
+      "u": "Het juiste begrip is «Parallelschakeling»: componenten naast elkaar; de spanning is gelijk.",
+      "d": 2
+     },
+     {
+      "v": "Welke term past bij: \"componenten naast elkaar; de spanning is gelijk\"?",
+      "o": [
+       "Elektrische lading",
+       "Spanning",
+       "Stroomsterkte",
+       "Parallelschakeling"
+      ],
+      "c": 3,
+      "u": "Het juiste begrip is «Parallelschakeling»: componenten naast elkaar; de spanning is gelijk.",
+      "d": 3
+     },
+     {
+      "v": "Wat betekent «Elektrisch veld»?",
+      "o": [
+       "het aantal trillingen per seconde (Hz)",
+       "het aantal kernontvallen per seconde (becquerel)",
+       "gebied waarin een lading een kracht ondervindt",
+       "componenten naast elkaar; de spanning is gelijk"
+      ],
+      "c": 2,
+      "u": "«Elektrisch veld» betekent: gebied waarin een lading een kracht ondervindt.",
+      "d": 1
+     },
+     {
       "v": "Welk begrip hoort bij deze omschrijving: \"gebied waarin een lading een kracht ondervindt\"?",
       "o": [
-       "SI-eenheid",
+       "Isotoop",
        "Elektrisch veld",
-       "Arbeid",
-       "Elektrisch vermogen"
+       "Elektrisch vermogen",
+       "Arbeid"
       ],
       "c": 1,
       "u": "Het juiste begrip is «Elektrisch veld»: gebied waarin een lading een kracht ondervindt.",
       "d": 2
      },
      {
+      "v": "Welke term past bij: \"gebied waarin een lading een kracht ondervindt\"?",
+      "o": [
+       "Elektrisch veld",
+       "Elektrische lading",
+       "Wet van Ohm",
+       "Elektrisch vermogen"
+      ],
+      "c": 0,
+      "u": "Het juiste begrip is «Elektrisch veld»: gebied waarin een lading een kracht ondervindt.",
+      "d": 3
+     },
+     {
+      "v": "Wat betekent «Elektrisch vermogen»?",
+      "o": [
+       "P = U·I",
+       "richtingverandering van een golf bij een grensvlak",
+       "de maximale uitwijking van een trilling",
+       "de afstand tussen twee opeenvolgende toppen (m)"
+      ],
+      "c": 0,
+      "u": "«Elektrisch vermogen» betekent: P = U·I.",
+      "d": 1
+     },
+     {
       "v": "Welk begrip hoort bij deze omschrijving: \"P = U·I\"?",
+      "o": [
+       "Recht evenredig",
+       "Versnelling",
+       "Dosis",
+       "Elektrisch vermogen"
+      ],
+      "c": 3,
+      "u": "Het juiste begrip is «Elektrisch vermogen»: P = U·I.",
+      "d": 2
+     },
+     {
+      "v": "Welke term past bij: \"P = U·I\"?",
       "o": [
        "Elektrische lading",
        "Elektrisch veld",
-       "Elektrisch vermogen",
-       "Parallelschakeling"
+       "Serieschakeling",
+       "Elektrisch vermogen"
       ],
-      "c": 2,
+      "c": 3,
       "u": "Het juiste begrip is «Elektrisch vermogen»: P = U·I.",
       "d": 3
      }
@@ -9628,85 +15264,265 @@ var VAKKEN = [
      {
       "v": "Wat betekent «Radioactiviteit»?",
       "o": [
-       "de marge waarbinnen de echte waarde ligt",
-       "de afstand tussen twee opeenvolgende toppen (m)",
+       "kracht maal verplaatsing (W = F·s)",
+       "componenten naast elkaar; de spanning is gelijk",
        "uitzending van straling door onstabiele kernen",
-       "frequentieverandering door beweging van bron of waarnemer"
+       "de maximale uitwijking van een trilling"
       ],
       "c": 2,
       "u": "«Radioactiviteit» betekent: uitzending van straling door onstabiele kernen.",
       "d": 1
      },
      {
-      "v": "Welk begrip hoort bij deze omschrijving: \"de tijd waarin de activiteit halveert\"?",
+      "v": "Welk begrip hoort bij deze omschrijving: \"uitzending van straling door onstabiele kernen\"?",
       "o": [
-       "Arbeid",
-       "Omgekeerd evenredig",
-       "Weerstand",
-       "Halveringstijd"
+       "Versnelling",
+       "Traagheid",
+       "Dosis",
+       "Radioactiviteit"
       ],
       "c": 3,
+      "u": "Het juiste begrip is «Radioactiviteit»: uitzending van straling door onstabiele kernen.",
+      "d": 2
+     },
+     {
+      "v": "Welke term past bij: \"uitzending van straling door onstabiele kernen\"?",
+      "o": [
+       "Halveringstijd",
+       "Alfastraling",
+       "Radioactiviteit",
+       "Dosis"
+      ],
+      "c": 2,
+      "u": "Het juiste begrip is «Radioactiviteit»: uitzending van straling door onstabiele kernen.",
+      "d": 3
+     },
+     {
+      "v": "Wat betekent «Halveringstijd»?",
+      "o": [
+       "de tijd waarin de activiteit halveert",
+       "y = a/x; het product blijft constant",
+       "straling die atomen ioniseert en cellen kan beschadigen",
+       "actie en reactie zijn even groot en tegengesteld"
+      ],
+      "c": 0,
+      "u": "«Halveringstijd» betekent: de tijd waarin de activiteit halveert.",
+      "d": 1
+     },
+     {
+      "v": "Welk begrip hoort bij deze omschrijving: \"de tijd waarin de activiteit halveert\"?",
+      "o": [
+       "Dosis",
+       "Halveringstijd",
+       "Doppler-effect",
+       "Ioniserende straling"
+      ],
+      "c": 1,
       "u": "Het juiste begrip is «Halveringstijd»: de tijd waarin de activiteit halveert.",
       "d": 2
      },
      {
-      "v": "Welk begrip hoort bij deze omschrijving: \"het aantal kernontvallen per seconde (becquerel)\"?",
+      "v": "Welke term past bij: \"de tijd waarin de activiteit halveert\"?",
       "o": [
        "Gammastraling",
-       "Activiteit",
        "Ioniserende straling",
-       "Halveringstijd"
+       "Halveringstijd",
+       "Bètastraling"
+      ],
+      "c": 2,
+      "u": "Het juiste begrip is «Halveringstijd»: de tijd waarin de activiteit halveert.",
+      "d": 3
+     },
+     {
+      "v": "Wat betekent «Activiteit»?",
+      "o": [
+       "sterke versterking bij de eigenfrequentie",
+       "P = U·I",
+       "het aantal kernontvallen per seconde (becquerel)",
+       "U = I·R"
+      ],
+      "c": 2,
+      "u": "«Activiteit» betekent: het aantal kernontvallen per seconde (becquerel).",
+      "d": 1
+     },
+     {
+      "v": "Welk begrip hoort bij deze omschrijving: \"het aantal kernontvallen per seconde (becquerel)\"?",
+      "o": [
+       "Bètastraling",
+       "Activiteit",
+       "Dosis",
+       "Gammastraling"
       ],
       "c": 1,
+      "u": "Het juiste begrip is «Activiteit»: het aantal kernontvallen per seconde (becquerel).",
+      "d": 2
+     },
+     {
+      "v": "Welke term past bij: \"het aantal kernontvallen per seconde (becquerel)\"?",
+      "o": [
+       "Dosis",
+       "Ioniserende straling",
+       "Gammastraling",
+       "Activiteit"
+      ],
+      "c": 3,
       "u": "Het juiste begrip is «Activiteit»: het aantal kernontvallen per seconde (becquerel).",
       "d": 3
      },
      {
       "v": "Wat betekent «Alfastraling»?",
       "o": [
-       "straling die atomen ioniseert en cellen kan beschadigen",
        "heliumkernen; sterk ioniserend, weinig doordringend",
-       "EM-straling; sterk doordringend, weinig ioniserend",
-       "de marge waarbinnen de echte waarde ligt"
+       "richtingverandering van een golf bij een grensvlak",
+       "het vermogen om arbeid te verrichten (joule)",
+       "componenten achter elkaar; de stroom is overal gelijk"
       ],
-      "c": 1,
+      "c": 0,
       "u": "«Alfastraling» betekent: heliumkernen; sterk ioniserend, weinig doordringend.",
+      "d": 1
+     },
+     {
+      "v": "Welk begrip hoort bij deze omschrijving: \"heliumkernen; sterk ioniserend, weinig doordringend\"?",
+      "o": [
+       "Alfastraling",
+       "Traagheid",
+       "Isotoop",
+       "Stroomsterkte"
+      ],
+      "c": 0,
+      "u": "Het juiste begrip is «Alfastraling»: heliumkernen; sterk ioniserend, weinig doordringend.",
+      "d": 2
+     },
+     {
+      "v": "Welke term past bij: \"heliumkernen; sterk ioniserend, weinig doordringend\"?",
+      "o": [
+       "Dosis",
+       "Ioniserende straling",
+       "Alfastraling",
+       "Bètastraling"
+      ],
+      "c": 2,
+      "u": "Het juiste begrip is «Alfastraling»: heliumkernen; sterk ioniserend, weinig doordringend.",
+      "d": 3
+     },
+     {
+      "v": "Wat betekent «Bètastraling»?",
+      "o": [
+       "elektronen; matig doordringend",
+       "EM-straling; sterk doordringend, weinig ioniserend",
+       "F = m·a",
+       "actie en reactie zijn even groot en tegengesteld"
+      ],
+      "c": 0,
+      "u": "«Bètastraling» betekent: elektronen; matig doordringend.",
       "d": 1
      },
      {
       "v": "Welk begrip hoort bij deze omschrijving: \"elektronen; matig doordringend\"?",
       "o": [
-       "Doppler-effect",
-       "Vermogen",
+       "Weerstand",
        "Bètastraling",
-       "Stroomsterkte"
+       "Elektrische lading",
+       "Interferentie"
       ],
-      "c": 2,
+      "c": 1,
       "u": "Het juiste begrip is «Bètastraling»: elektronen; matig doordringend.",
       "d": 2
      },
      {
-      "v": "Welk begrip hoort bij deze omschrijving: \"EM-straling; sterk doordringend, weinig ioniserend\"?",
+      "v": "Welke term past bij: \"elektronen; matig doordringend\"?",
       "o": [
-       "Gammastraling",
        "Bètastraling",
-       "Ioniserende straling",
-       "Dosis"
+       "Gammastraling",
+       "Radioactiviteit",
+       "Halveringstijd"
       ],
       "c": 0,
+      "u": "Het juiste begrip is «Bètastraling»: elektronen; matig doordringend.",
+      "d": 3
+     },
+     {
+      "v": "Wat betekent «Gammastraling»?",
+      "o": [
+       "de mate waarin een geleider de stroom tegenwerkt (ohm)",
+       "de maximale uitwijking van een trilling",
+       "EM-straling; sterk doordringend, weinig ioniserend",
+       "richtingverandering van een golf bij een grensvlak"
+      ],
+      "c": 2,
+      "u": "«Gammastraling» betekent: EM-straling; sterk doordringend, weinig ioniserend.",
+      "d": 1
+     },
+     {
+      "v": "Welk begrip hoort bij deze omschrijving: \"EM-straling; sterk doordringend, weinig ioniserend\"?",
+      "o": [
+       "Eerste wet van Newton",
+       "Gammastraling",
+       "Golf",
+       "Tweede wet van Newton"
+      ],
+      "c": 1,
+      "u": "Het juiste begrip is «Gammastraling»: EM-straling; sterk doordringend, weinig ioniserend.",
+      "d": 2
+     },
+     {
+      "v": "Welke term past bij: \"EM-straling; sterk doordringend, weinig ioniserend\"?",
+      "o": [
+       "Dosis",
+       "Activiteit",
+       "Gammastraling",
+       "Isotoop"
+      ],
+      "c": 2,
       "u": "Het juiste begrip is «Gammastraling»: EM-straling; sterk doordringend, weinig ioniserend.",
       "d": 3
      },
      {
       "v": "Wat betekent «Ioniserende straling»?",
       "o": [
+       "sterke versterking bij de eigenfrequentie",
+       "eigenschap die elektrische krachten veroorzaakt (C)",
        "straling die atomen ioniseert en cellen kan beschadigen",
-       "P = U·I",
-       "y = a/x; het product blijft constant",
-       "de snelheidsverandering per tijd (a = Δv/Δt)"
+       "de geabsorbeerde energie per kilogram (gray)"
       ],
-      "c": 0,
+      "c": 2,
       "u": "«Ioniserende straling» betekent: straling die atomen ioniseert en cellen kan beschadigen.",
+      "d": 1
+     },
+     {
+      "v": "Welk begrip hoort bij deze omschrijving: \"straling die atomen ioniseert en cellen kan beschadigen\"?",
+      "o": [
+       "Snelheid",
+       "Ioniserende straling",
+       "Significante cijfers",
+       "Resulterende kracht"
+      ],
+      "c": 1,
+      "u": "Het juiste begrip is «Ioniserende straling»: straling die atomen ioniseert en cellen kan beschadigen.",
+      "d": 2
+     },
+     {
+      "v": "Welke term past bij: \"straling die atomen ioniseert en cellen kan beschadigen\"?",
+      "o": [
+       "Dosis",
+       "Bètastraling",
+       "Ioniserende straling",
+       "Activiteit"
+      ],
+      "c": 2,
+      "u": "Het juiste begrip is «Ioniserende straling»: straling die atomen ioniseert en cellen kan beschadigen.",
+      "d": 3
+     },
+     {
+      "v": "Wat betekent «Dosis»?",
+      "o": [
+       "straling die atomen ioniseert en cellen kan beschadigen",
+       "het vermogen om arbeid te verrichten (joule)",
+       "de geabsorbeerde energie per kilogram (gray)",
+       "de energie per lading (volt)"
+      ],
+      "c": 2,
+      "u": "«Dosis» betekent: de geabsorbeerde energie per kilogram (gray).",
       "d": 1
      },
      {
@@ -9715,19 +15531,55 @@ var VAKKEN = [
        "Dosis",
        "Halveringstijd",
        "Gammastraling",
-       "Breking"
+       "SI-eenheid"
       ],
       "c": 0,
       "u": "Het juiste begrip is «Dosis»: de geabsorbeerde energie per kilogram (gray).",
       "d": 2
      },
      {
+      "v": "Welke term past bij: \"de geabsorbeerde energie per kilogram (gray)\"?",
+      "o": [
+       "Radioactiviteit",
+       "Activiteit",
+       "Dosis",
+       "Ioniserende straling"
+      ],
+      "c": 2,
+      "u": "Het juiste begrip is «Dosis»: de geabsorbeerde energie per kilogram (gray).",
+      "d": 3
+     },
+     {
+      "v": "Wat betekent «Isotoop»?",
+      "o": [
+       "atoomsoort met gelijk aantal protonen, ander aantal neutronen",
+       "de mate waarin een geleider de stroom tegenwerkt (ohm)",
+       "frequentieverandering door beweging van bron of waarnemer",
+       "de marge waarbinnen de echte waarde ligt"
+      ],
+      "c": 0,
+      "u": "«Isotoop» betekent: atoomsoort met gelijk aantal protonen, ander aantal neutronen.",
+      "d": 1
+     },
+     {
       "v": "Welk begrip hoort bij deze omschrijving: \"atoomsoort met gelijk aantal protonen, ander aantal neutronen\"?",
       "o": [
-       "Halveringstijd",
+       "Parallelschakeling",
+       "Doppler-effect",
+       "Serieschakeling",
+       "Isotoop"
+      ],
+      "c": 3,
+      "u": "Het juiste begrip is «Isotoop»: atoomsoort met gelijk aantal protonen, ander aantal neutronen.",
+      "d": 2
+     },
+     {
+      "v": "Welke term past bij: \"atoomsoort met gelijk aantal protonen, ander aantal neutronen\"?",
+      "o": [
+       "Activiteit",
        "Isotoop",
-       "Radioactiviteit",
-       "Bètastraling"
+       "Alfastraling",
+       "Gammastraling"
       ],
       "c": 1,
       "u": "Het juiste begrip is «Isotoop»: atoomsoort met gelijk aantal protonen, ander aantal neutronen.",
@@ -10050,62 +15902,182 @@ var VAKKEN = [
      {
       "v": "Wat betekent «Rechtsvorm»?",
       "o": [
-       "besloten vennootschap met beperkt aansprakelijke aandeelhouders",
-       "een overzicht van bezittingen, schulden en eigen vermogen",
-       "de juridische vorm van een onderneming",
-       "de groep klanten waarop een onderneming zich richt"
+       "de waardedaling van een vast actief over de tijd",
+       "onderneming met één eigenaar die hoofdelijk aansprakelijk is",
+       "de eigen omzet als deel van de totale marktomzet",
+       "de juridische vorm van een onderneming"
       ],
-      "c": 2,
+      "c": 3,
       "u": "«Rechtsvorm» betekent: de juridische vorm van een onderneming.",
+      "d": 1
+     },
+     {
+      "v": "Welk begrip hoort bij deze omschrijving: \"de juridische vorm van een onderneming\"?",
+      "o": [
+       "Eenmanszaak",
+       "Doelgroep",
+       "Debiteuren",
+       "Rechtsvorm"
+      ],
+      "c": 3,
+      "u": "Het juiste begrip is «Rechtsvorm»: de juridische vorm van een onderneming.",
+      "d": 2
+     },
+     {
+      "v": "Welke term past bij: \"de juridische vorm van een onderneming\"?",
+      "o": [
+       "Aansprakelijkheid",
+       "Rechtsvorm",
+       "Eenmanszaak",
+       "Aandeel"
+      ],
+      "c": 1,
+      "u": "Het juiste begrip is «Rechtsvorm»: de juridische vorm van een onderneming.",
+      "d": 3
+     },
+     {
+      "v": "Wat betekent «Eenmanszaak»?",
+      "o": [
+       "onderneming met één eigenaar die hoofdelijk aansprakelijk is",
+       "het opdelen van de markt in groepen klanten",
+       "de vier P's: prijs, product, plaats en promotie",
+       "de waardedaling van een vast actief over de tijd"
+      ],
+      "c": 0,
+      "u": "«Eenmanszaak» betekent: onderneming met één eigenaar die hoofdelijk aansprakelijk is.",
       "d": 1
      },
      {
       "v": "Welk begrip hoort bij deze omschrijving: \"onderneming met één eigenaar die hoofdelijk aansprakelijk is\"?",
       "o": [
-       "Vreemd vermogen",
-       "Liquiditeit",
        "Eenmanszaak",
-       "Solvabiliteit"
+       "Marktsegmentatie",
+       "Investeren",
+       "Marketingmix"
       ],
-      "c": 2,
+      "c": 0,
       "u": "Het juiste begrip is «Eenmanszaak»: onderneming met één eigenaar die hoofdelijk aansprakelijk is.",
       "d": 2
      },
      {
+      "v": "Welke term past bij: \"onderneming met één eigenaar die hoofdelijk aansprakelijk is\"?",
+      "o": [
+       "Eenmanszaak",
+       "Rechtsvorm",
+       "Aansprakelijkheid",
+       "Aandeel"
+      ],
+      "c": 0,
+      "u": "Het juiste begrip is «Eenmanszaak»: onderneming met één eigenaar die hoofdelijk aansprakelijk is.",
+      "d": 3
+     },
+     {
+      "v": "Wat betekent «BV»?",
+      "o": [
+       "kosten die meebewegen met de productieomvang",
+       "de mate waarin je op tijd kunt betalen",
+       "de eigen omzet als deel van de totale marktomzet",
+       "besloten vennootschap met beperkt aansprakelijke aandeelhouders"
+      ],
+      "c": 3,
+      "u": "«BV» betekent: besloten vennootschap met beperkt aansprakelijke aandeelhouders.",
+      "d": 1
+     },
+     {
       "v": "Welk begrip hoort bij deze omschrijving: \"besloten vennootschap met beperkt aansprakelijke aandeelhouders\"?",
       "o": [
-       "Aansprakelijkheid",
-       "BV",
+       "Debiteuren",
        "Aandeel",
-       "Eenmanszaak"
+       "BV",
+       "Variabele kosten"
       ],
-      "c": 1,
+      "c": 2,
+      "u": "Het juiste begrip is «BV»: besloten vennootschap met beperkt aansprakelijke aandeelhouders.",
+      "d": 2
+     },
+     {
+      "v": "Welke term past bij: \"besloten vennootschap met beperkt aansprakelijke aandeelhouders\"?",
+      "o": [
+       "Eenmanszaak",
+       "Rechtsvorm",
+       "BV",
+       "Aansprakelijkheid"
+      ],
+      "c": 2,
       "u": "Het juiste begrip is «BV»: besloten vennootschap met beperkt aansprakelijke aandeelhouders.",
       "d": 3
      },
      {
       "v": "Wat betekent «Aansprakelijkheid»?",
       "o": [
-       "een bewijs van deelname in het eigen vermogen van een bv of nv",
-       "de opbrengsten min de kosten",
        "de mate waarin je met privévermogen instaat voor schulden",
-       "het opdelen van de markt in groepen klanten"
+       "besloten vennootschap met beperkt aansprakelijke aandeelhouders",
+       "de vier P's: prijs, product, plaats en promotie",
+       "onderneming met één eigenaar die hoofdelijk aansprakelijk is"
       ],
-      "c": 2,
+      "c": 0,
       "u": "«Aansprakelijkheid» betekent: de mate waarin je met privévermogen instaat voor schulden.",
+      "d": 1
+     },
+     {
+      "v": "Welk begrip hoort bij deze omschrijving: \"de mate waarin je met privévermogen instaat voor schulden\"?",
+      "o": [
+       "Constante kosten",
+       "Debiteuren",
+       "Aandeel",
+       "Aansprakelijkheid"
+      ],
+      "c": 3,
+      "u": "Het juiste begrip is «Aansprakelijkheid»: de mate waarin je met privévermogen instaat voor schulden.",
+      "d": 2
+     },
+     {
+      "v": "Welke term past bij: \"de mate waarin je met privévermogen instaat voor schulden\"?",
+      "o": [
+       "Aansprakelijkheid",
+       "Rechtsvorm",
+       "Eenmanszaak",
+       "Aandeel"
+      ],
+      "c": 0,
+      "u": "Het juiste begrip is «Aansprakelijkheid»: de mate waarin je met privévermogen instaat voor schulden.",
+      "d": 3
+     },
+     {
+      "v": "Wat betekent «Aandeel»?",
+      "o": [
+       "het geleende vermogen, oftewel de schulden",
+       "de waardedaling van een vast actief over de tijd",
+       "een overzicht van bezittingen, schulden en eigen vermogen",
+       "een bewijs van deelname in het eigen vermogen van een bv of nv"
+      ],
+      "c": 3,
+      "u": "«Aandeel» betekent: een bewijs van deelname in het eigen vermogen van een bv of nv.",
       "d": 1
      },
      {
       "v": "Welk begrip hoort bij deze omschrijving: \"een bewijs van deelname in het eigen vermogen van een bv of nv\"?",
       "o": [
-       "Aandeel",
        "Afschrijving",
-       "Rechtsvorm",
-       "Investeren"
+       "Aandeel",
+       "Debiteuren",
+       "Break-evenafzet"
       ],
-      "c": 0,
+      "c": 1,
       "u": "Het juiste begrip is «Aandeel»: een bewijs van deelname in het eigen vermogen van een bv of nv.",
       "d": 2
+     },
+     {
+      "v": "Welke term past bij: \"een bewijs van deelname in het eigen vermogen van een bv of nv\"?",
+      "o": [
+       "Eenmanszaak",
+       "Aandeel",
+       "BV",
+       "Rechtsvorm"
+      ],
+      "c": 1,
+      "u": "Het juiste begrip is «Aandeel»: een bewijs van deelname in het eigen vermogen van een bv of nv.",
+      "d": 3
      }
     ],
     "oe": [
@@ -10301,9 +16273,9 @@ var VAKKEN = [
      {
       "v": "Wat betekent «Constante kosten»?",
       "o": [
-       "een bewijs van deelname in het eigen vermogen van een bv of nv",
-       "de waardedaling van een vast actief over de tijd",
+       "de kosten die aan één product worden toegerekend",
        "leveranciers die nog betaald moeten worden",
+       "klanten die nog moeten betalen",
        "kosten die gelijk blijven bij meer of minder productie"
       ],
       "c": 3,
@@ -10311,24 +16283,96 @@ var VAKKEN = [
       "d": 1
      },
      {
-      "v": "Welk begrip hoort bij deze omschrijving: \"kosten die meebewegen met de productieomvang\"?",
+      "v": "Welk begrip hoort bij deze omschrijving: \"kosten die gelijk blijven bij meer of minder productie\"?",
       "o": [
-       "Eenmanszaak",
-       "Variabele kosten",
+       "Debiteuren",
+       "Constante kosten",
        "Eigen vermogen",
-       "Kostprijs"
+       "Marketingmix"
       ],
       "c": 1,
+      "u": "Het juiste begrip is «Constante kosten»: kosten die gelijk blijven bij meer of minder productie. Tegenover variabele kosten: constante kosten veranderen niet met de productie.",
+      "d": 2
+     },
+     {
+      "v": "Welke term past bij: \"kosten die gelijk blijven bij meer of minder productie\"?",
+      "o": [
+       "Kostprijs",
+       "Break-evenafzet",
+       "Constante kosten",
+       "Variabele kosten"
+      ],
+      "c": 2,
+      "u": "Het juiste begrip is «Constante kosten»: kosten die gelijk blijven bij meer of minder productie. Tegenover variabele kosten: constante kosten veranderen niet met de productie.",
+      "d": 3
+     },
+     {
+      "v": "Wat betekent «Variabele kosten»?",
+      "o": [
+       "het geleende vermogen, oftewel de schulden",
+       "besloten vennootschap met beperkt aansprakelijke aandeelhouders",
+       "kosten die meebewegen met de productieomvang",
+       "klanten die nog moeten betalen"
+      ],
+      "c": 2,
+      "u": "«Variabele kosten» betekent: kosten die meebewegen met de productieomvang. Tegenover constante kosten: variabele kosten bewegen mee met de productie.",
+      "d": 1
+     },
+     {
+      "v": "Welk begrip hoort bij deze omschrijving: \"kosten die meebewegen met de productieomvang\"?",
+      "o": [
+       "Marketingmix",
+       "Rechtsvorm",
+       "Rentabiliteit",
+       "Variabele kosten"
+      ],
+      "c": 3,
       "u": "Het juiste begrip is «Variabele kosten»: kosten die meebewegen met de productieomvang. Tegenover constante kosten: variabele kosten bewegen mee met de productie.",
       "d": 2
      },
      {
+      "v": "Welke term past bij: \"kosten die meebewegen met de productieomvang\"?",
+      "o": [
+       "Variabele kosten",
+       "Kostprijs",
+       "Constante kosten",
+       "Break-evenafzet"
+      ],
+      "c": 0,
+      "u": "Het juiste begrip is «Variabele kosten»: kosten die meebewegen met de productieomvang. Tegenover constante kosten: variabele kosten bewegen mee met de productie.",
+      "d": 3
+     },
+     {
+      "v": "Wat betekent «Kostprijs»?",
+      "o": [
+       "de kosten die aan één product worden toegerekend",
+       "de verkoopprijs min de variabele kosten per stuk",
+       "het vermogen dat van de eigenaren zelf is",
+       "het geleende vermogen, oftewel de schulden"
+      ],
+      "c": 0,
+      "u": "«Kostprijs» betekent: de kosten die aan één product worden toegerekend.",
+      "d": 1
+     },
+     {
       "v": "Welk begrip hoort bij deze omschrijving: \"de kosten die aan één product worden toegerekend\"?",
       "o": [
-       "Constante kosten",
-       "Break-evenafzet",
        "Kostprijs",
-       "Dekkingsbijdrage"
+       "Break-evenafzet",
+       "Aansprakelijkheid",
+       "Afschrijving"
+      ],
+      "c": 0,
+      "u": "Het juiste begrip is «Kostprijs»: de kosten die aan één product worden toegerekend.",
+      "d": 2
+     },
+     {
+      "v": "Welke term past bij: \"de kosten die aan één product worden toegerekend\"?",
+      "o": [
+       "Constante kosten",
+       "Variabele kosten",
+       "Kostprijs",
+       "Break-evenafzet"
       ],
       "c": 2,
       "u": "Het juiste begrip is «Kostprijs»: de kosten die aan één product worden toegerekend.",
@@ -10337,26 +16381,74 @@ var VAKKEN = [
      {
       "v": "Wat betekent «Break-evenafzet»?",
       "o": [
-       "kosten die meebewegen met de productieomvang",
-       "de afzet waarbij de winst precies nul is",
-       "de mate waarin je met privévermogen instaat voor schulden",
-       "geld voor langere tijd vastleggen in vaste activa"
+       "onderneming met één eigenaar die hoofdelijk aansprakelijk is",
+       "het geleende vermogen, oftewel de schulden",
+       "de groep klanten waarop een onderneming zich richt",
+       "de afzet waarbij de winst precies nul is"
       ],
-      "c": 1,
+      "c": 3,
       "u": "«Break-evenafzet» betekent: de afzet waarbij de winst precies nul is.",
+      "d": 1
+     },
+     {
+      "v": "Welk begrip hoort bij deze omschrijving: \"de afzet waarbij de winst precies nul is\"?",
+      "o": [
+       "Liquiditeit",
+       "Resultatenrekening",
+       "Vreemd vermogen",
+       "Break-evenafzet"
+      ],
+      "c": 3,
+      "u": "Het juiste begrip is «Break-evenafzet»: de afzet waarbij de winst precies nul is.",
+      "d": 2
+     },
+     {
+      "v": "Welke term past bij: \"de afzet waarbij de winst precies nul is\"?",
+      "o": [
+       "Break-evenafzet",
+       "Constante kosten",
+       "Dekkingsbijdrage",
+       "Kostprijs"
+      ],
+      "c": 0,
+      "u": "Het juiste begrip is «Break-evenafzet»: de afzet waarbij de winst precies nul is.",
+      "d": 3
+     },
+     {
+      "v": "Wat betekent «Dekkingsbijdrage»?",
+      "o": [
+       "de verkoopprijs min de variabele kosten per stuk",
+       "de kosten die aan één product worden toegerekend",
+       "een bewijs van deelname in het eigen vermogen van een bv of nv",
+       "de waardedaling van een vast actief over de tijd"
+      ],
+      "c": 0,
+      "u": "«Dekkingsbijdrage» betekent: de verkoopprijs min de variabele kosten per stuk.",
       "d": 1
      },
      {
       "v": "Welk begrip hoort bij deze omschrijving: \"de verkoopprijs min de variabele kosten per stuk\"?",
       "o": [
-       "Dekkingsbijdrage",
-       "Eigen vermogen",
+       "Marketingmix",
        "Constante kosten",
-       "Balans"
+       "Rentabiliteit",
+       "Dekkingsbijdrage"
+      ],
+      "c": 3,
+      "u": "Het juiste begrip is «Dekkingsbijdrage»: de verkoopprijs min de variabele kosten per stuk.",
+      "d": 2
+     },
+     {
+      "v": "Welke term past bij: \"de verkoopprijs min de variabele kosten per stuk\"?",
+      "o": [
+       "Dekkingsbijdrage",
+       "Break-evenafzet",
+       "Variabele kosten",
+       "Kostprijs"
       ],
       "c": 0,
       "u": "Het juiste begrip is «Dekkingsbijdrage»: de verkoopprijs min de variabele kosten per stuk.",
-      "d": 2
+      "d": 3
      }
     ],
     "oe": [
@@ -10553,29 +16645,101 @@ var VAKKEN = [
      {
       "v": "Wat betekent «Marketingmix»?",
       "o": [
+       "de verkoopprijs min de variabele kosten per stuk",
+       "de afzet waarbij de winst precies nul is",
        "de vier P's: prijs, product, plaats en promotie",
-       "de mate waarin je aan alle verplichtingen kunt voldoen",
-       "een overzicht van de opbrengsten en de kosten",
-       "klanten die nog moeten betalen"
+       "het vermogen dat van de eigenaren zelf is"
+      ],
+      "c": 2,
+      "u": "«Marketingmix» betekent: de vier P's: prijs, product, plaats en promotie.",
+      "d": 1
+     },
+     {
+      "v": "Welk begrip hoort bij deze omschrijving: \"de vier P's: prijs, product, plaats en promotie\"?",
+      "o": [
+       "BV",
+       "Marketingmix",
+       "Crediteuren",
+       "Eigen vermogen"
+      ],
+      "c": 1,
+      "u": "Het juiste begrip is «Marketingmix»: de vier P's: prijs, product, plaats en promotie.",
+      "d": 2
+     },
+     {
+      "v": "Welke term past bij: \"de vier P's: prijs, product, plaats en promotie\"?",
+      "o": [
+       "Marktsegmentatie",
+       "Marketingmix",
+       "Marktaandeel",
+       "Doelgroep"
+      ],
+      "c": 1,
+      "u": "Het juiste begrip is «Marketingmix»: de vier P's: prijs, product, plaats en promotie.",
+      "d": 3
+     },
+     {
+      "v": "Wat betekent «Doelgroep»?",
+      "o": [
+       "de groep klanten waarop een onderneming zich richt",
+       "een overzicht van bezittingen, schulden en eigen vermogen",
+       "de vier P's: prijs, product, plaats en promotie",
+       "kosten die meebewegen met de productieomvang"
       ],
       "c": 0,
-      "u": "«Marketingmix» betekent: de vier P's: prijs, product, plaats en promotie.",
+      "u": "«Doelgroep» betekent: de groep klanten waarop een onderneming zich richt.",
       "d": 1
      },
      {
       "v": "Welk begrip hoort bij deze omschrijving: \"de groep klanten waarop een onderneming zich richt\"?",
       "o": [
-       "Doelgroep",
-       "Rentabiliteit",
-       "BV",
-       "Variabele kosten"
+       "Variabele kosten",
+       "Aansprakelijkheid",
+       "Marketingmix",
+       "Doelgroep"
       ],
-      "c": 0,
+      "c": 3,
       "u": "Het juiste begrip is «Doelgroep»: de groep klanten waarop een onderneming zich richt.",
       "d": 2
      },
      {
+      "v": "Welke term past bij: \"de groep klanten waarop een onderneming zich richt\"?",
+      "o": [
+       "Marktaandeel",
+       "Marketingmix",
+       "Doelgroep",
+       "Marktsegmentatie"
+      ],
+      "c": 2,
+      "u": "Het juiste begrip is «Doelgroep»: de groep klanten waarop een onderneming zich richt.",
+      "d": 3
+     },
+     {
+      "v": "Wat betekent «Marktsegmentatie»?",
+      "o": [
+       "het opdelen van de markt in groepen klanten",
+       "geld voor langere tijd vastleggen in vaste activa",
+       "kosten die gelijk blijven bij meer of minder productie",
+       "de kosten die aan één product worden toegerekend"
+      ],
+      "c": 0,
+      "u": "«Marktsegmentatie» betekent: het opdelen van de markt in groepen klanten.",
+      "d": 1
+     },
+     {
       "v": "Welk begrip hoort bij deze omschrijving: \"het opdelen van de markt in groepen klanten\"?",
+      "o": [
+       "Aandeel",
+       "Marktsegmentatie",
+       "Eigen vermogen",
+       "Variabele kosten"
+      ],
+      "c": 1,
+      "u": "Het juiste begrip is «Marktsegmentatie»: het opdelen van de markt in groepen klanten.",
+      "d": 2
+     },
+     {
+      "v": "Welke term past bij: \"het opdelen van de markt in groepen klanten\"?",
       "o": [
        "Marketingmix",
        "Doelgroep",
@@ -10589,14 +16753,38 @@ var VAKKEN = [
      {
       "v": "Wat betekent «Marktaandeel»?",
       "o": [
-       "de juridische vorm van een onderneming",
-       "een overzicht van bezittingen, schulden en eigen vermogen",
-       "de afzet waarbij de winst precies nul is",
-       "de eigen omzet als deel van de totale marktomzet"
+       "de eigen omzet als deel van de totale marktomzet",
+       "het geleende vermogen, oftewel de schulden",
+       "de mate waarin je met privévermogen instaat voor schulden",
+       "klanten die nog moeten betalen"
       ],
-      "c": 3,
+      "c": 0,
       "u": "«Marktaandeel» betekent: de eigen omzet als deel van de totale marktomzet.",
       "d": 1
+     },
+     {
+      "v": "Welk begrip hoort bij deze omschrijving: \"de eigen omzet als deel van de totale marktomzet\"?",
+      "o": [
+       "Investeren",
+       "Winst",
+       "Dekkingsbijdrage",
+       "Marktaandeel"
+      ],
+      "c": 3,
+      "u": "Het juiste begrip is «Marktaandeel»: de eigen omzet als deel van de totale marktomzet.",
+      "d": 2
+     },
+     {
+      "v": "Welke term past bij: \"de eigen omzet als deel van de totale marktomzet\"?",
+      "o": [
+       "Marketingmix",
+       "Marktaandeel",
+       "Marktsegmentatie",
+       "Doelgroep"
+      ],
+      "c": 1,
+      "u": "Het juiste begrip is «Marktaandeel»: de eigen omzet als deel van de totale marktomzet.",
+      "d": 3
      }
     ],
     "oe": [
@@ -10755,9 +16943,9 @@ var VAKKEN = [
      {
       "v": "Wat betekent «Eigen vermogen»?",
       "o": [
+       "de afzet waarbij de winst precies nul is",
        "de groep klanten waarop een onderneming zich richt",
-       "besloten vennootschap met beperkt aansprakelijke aandeelhouders",
-       "een overzicht van bezittingen, schulden en eigen vermogen",
+       "de kosten die aan één product worden toegerekend",
        "het vermogen dat van de eigenaren zelf is"
       ],
       "c": 3,
@@ -10765,24 +16953,96 @@ var VAKKEN = [
       "d": 1
      },
      {
+      "v": "Welk begrip hoort bij deze omschrijving: \"het vermogen dat van de eigenaren zelf is\"?",
+      "o": [
+       "Eigen vermogen",
+       "Aansprakelijkheid",
+       "BV",
+       "Aandeel"
+      ],
+      "c": 0,
+      "u": "Het juiste begrip is «Eigen vermogen»: het vermogen dat van de eigenaren zelf is.",
+      "d": 2
+     },
+     {
+      "v": "Welke term past bij: \"het vermogen dat van de eigenaren zelf is\"?",
+      "o": [
+       "Solvabiliteit",
+       "Liquiditeit",
+       "Eigen vermogen",
+       "Vreemd vermogen"
+      ],
+      "c": 2,
+      "u": "Het juiste begrip is «Eigen vermogen»: het vermogen dat van de eigenaren zelf is.",
+      "d": 3
+     },
+     {
+      "v": "Wat betekent «Vreemd vermogen»?",
+      "o": [
+       "de vier P's: prijs, product, plaats en promotie",
+       "klanten die nog moeten betalen",
+       "het geleende vermogen, oftewel de schulden",
+       "besloten vennootschap met beperkt aansprakelijke aandeelhouders"
+      ],
+      "c": 2,
+      "u": "«Vreemd vermogen» betekent: het geleende vermogen, oftewel de schulden.",
+      "d": 1
+     },
+     {
       "v": "Welk begrip hoort bij deze omschrijving: \"het geleende vermogen, oftewel de schulden\"?",
       "o": [
-       "Aansprakelijkheid",
-       "Vreemd vermogen",
-       "Eenmanszaak",
-       "Kostprijs"
+       "Break-evenafzet",
+       "Marktsegmentatie",
+       "Constante kosten",
+       "Vreemd vermogen"
       ],
-      "c": 1,
+      "c": 3,
       "u": "Het juiste begrip is «Vreemd vermogen»: het geleende vermogen, oftewel de schulden.",
       "d": 2
      },
      {
-      "v": "Welk begrip hoort bij deze omschrijving: \"geld voor langere tijd vastleggen in vaste activa\"?",
+      "v": "Welke term past bij: \"het geleende vermogen, oftewel de schulden\"?",
       "o": [
-       "Vreemd vermogen",
        "Eigen vermogen",
        "Investeren",
-       "Liquiditeit"
+       "Solvabiliteit",
+       "Vreemd vermogen"
+      ],
+      "c": 3,
+      "u": "Het juiste begrip is «Vreemd vermogen»: het geleende vermogen, oftewel de schulden.",
+      "d": 3
+     },
+     {
+      "v": "Wat betekent «Investeren»?",
+      "o": [
+       "de vier P's: prijs, product, plaats en promotie",
+       "geld voor langere tijd vastleggen in vaste activa",
+       "de mate waarin je op tijd kunt betalen",
+       "de groep klanten waarop een onderneming zich richt"
+      ],
+      "c": 1,
+      "u": "«Investeren» betekent: geld voor langere tijd vastleggen in vaste activa.",
+      "d": 1
+     },
+     {
+      "v": "Welk begrip hoort bij deze omschrijving: \"geld voor langere tijd vastleggen in vaste activa\"?",
+      "o": [
+       "Resultatenrekening",
+       "Investeren",
+       "Marketingmix",
+       "Eenmanszaak"
+      ],
+      "c": 1,
+      "u": "Het juiste begrip is «Investeren»: geld voor langere tijd vastleggen in vaste activa.",
+      "d": 2
+     },
+     {
+      "v": "Welke term past bij: \"geld voor langere tijd vastleggen in vaste activa\"?",
+      "o": [
+       "Eigen vermogen",
+       "Vreemd vermogen",
+       "Investeren",
+       "Solvabiliteit"
       ],
       "c": 2,
       "u": "Het juiste begrip is «Investeren»: geld voor langere tijd vastleggen in vaste activa.",
@@ -10791,36 +17051,108 @@ var VAKKEN = [
      {
       "v": "Wat betekent «Liquiditeit»?",
       "o": [
-       "de verhouding van de winst tot het geïnvesteerde vermogen",
        "de mate waarin je op tijd kunt betalen",
-       "de mate waarin je met privévermogen instaat voor schulden",
-       "besloten vennootschap met beperkt aansprakelijke aandeelhouders"
+       "de mate waarin je aan alle verplichtingen kunt voldoen",
+       "de juridische vorm van een onderneming",
+       "de vier P's: prijs, product, plaats en promotie"
       ],
-      "c": 1,
+      "c": 0,
       "u": "«Liquiditeit» betekent: de mate waarin je op tijd kunt betalen.",
+      "d": 1
+     },
+     {
+      "v": "Welk begrip hoort bij deze omschrijving: \"de mate waarin je op tijd kunt betalen\"?",
+      "o": [
+       "Rechtsvorm",
+       "Kostprijs",
+       "Balans",
+       "Liquiditeit"
+      ],
+      "c": 3,
+      "u": "Het juiste begrip is «Liquiditeit»: de mate waarin je op tijd kunt betalen.",
+      "d": 2
+     },
+     {
+      "v": "Welke term past bij: \"de mate waarin je op tijd kunt betalen\"?",
+      "o": [
+       "Eigen vermogen",
+       "Rentabiliteit",
+       "Liquiditeit",
+       "Solvabiliteit"
+      ],
+      "c": 2,
+      "u": "Het juiste begrip is «Liquiditeit»: de mate waarin je op tijd kunt betalen.",
+      "d": 3
+     },
+     {
+      "v": "Wat betekent «Solvabiliteit»?",
+      "o": [
+       "een overzicht van bezittingen, schulden en eigen vermogen",
+       "de afzet waarbij de winst precies nul is",
+       "de mate waarin je aan alle verplichtingen kunt voldoen",
+       "de juridische vorm van een onderneming"
+      ],
+      "c": 2,
+      "u": "«Solvabiliteit» betekent: de mate waarin je aan alle verplichtingen kunt voldoen.",
       "d": 1
      },
      {
       "v": "Welk begrip hoort bij deze omschrijving: \"de mate waarin je aan alle verplichtingen kunt voldoen\"?",
       "o": [
-       "Resultatenrekening",
        "Solvabiliteit",
-       "Dekkingsbijdrage",
-       "Doelgroep"
+       "Winst",
+       "Liquiditeit",
+       "Investeren"
       ],
-      "c": 1,
+      "c": 0,
       "u": "Het juiste begrip is «Solvabiliteit»: de mate waarin je aan alle verplichtingen kunt voldoen.",
       "d": 2
      },
      {
-      "v": "Welk begrip hoort bij deze omschrijving: \"de verhouding van de winst tot het geïnvesteerde vermogen\"?",
+      "v": "Welke term past bij: \"de mate waarin je aan alle verplichtingen kunt voldoen\"?",
       "o": [
        "Liquiditeit",
        "Eigen vermogen",
        "Rentabiliteit",
        "Solvabiliteit"
       ],
+      "c": 3,
+      "u": "Het juiste begrip is «Solvabiliteit»: de mate waarin je aan alle verplichtingen kunt voldoen.",
+      "d": 3
+     },
+     {
+      "v": "Wat betekent «Rentabiliteit»?",
+      "o": [
+       "een overzicht van de opbrengsten en de kosten",
+       "de waardedaling van een vast actief over de tijd",
+       "de verhouding van de winst tot het geïnvesteerde vermogen",
+       "besloten vennootschap met beperkt aansprakelijke aandeelhouders"
+      ],
       "c": 2,
+      "u": "«Rentabiliteit» betekent: de verhouding van de winst tot het geïnvesteerde vermogen.",
+      "d": 1
+     },
+     {
+      "v": "Welk begrip hoort bij deze omschrijving: \"de verhouding van de winst tot het geïnvesteerde vermogen\"?",
+      "o": [
+       "Resultatenrekening",
+       "Crediteuren",
+       "Rentabiliteit",
+       "Aandeel"
+      ],
+      "c": 2,
+      "u": "Het juiste begrip is «Rentabiliteit»: de verhouding van de winst tot het geïnvesteerde vermogen.",
+      "d": 2
+     },
+     {
+      "v": "Welke term past bij: \"de verhouding van de winst tot het geïnvesteerde vermogen\"?",
+      "o": [
+       "Rentabiliteit",
+       "Eigen vermogen",
+       "Liquiditeit",
+       "Investeren"
+      ],
+      "c": 0,
       "u": "Het juiste begrip is «Rentabiliteit»: de verhouding van de winst tot het geïnvesteerde vermogen.",
       "d": 3
      }
@@ -11013,71 +17345,215 @@ var VAKKEN = [
       "v": "Wat betekent «Balans»?",
       "o": [
        "geld voor langere tijd vastleggen in vaste activa",
-       "de verkoopprijs min de variabele kosten per stuk",
        "een overzicht van bezittingen, schulden en eigen vermogen",
-       "de afzet waarbij de winst precies nul is"
+       "de waardedaling van een vast actief over de tijd",
+       "een overzicht van de opbrengsten en de kosten"
       ],
-      "c": 2,
+      "c": 1,
       "u": "«Balans» betekent: een overzicht van bezittingen, schulden en eigen vermogen.",
+      "d": 1
+     },
+     {
+      "v": "Welk begrip hoort bij deze omschrijving: \"een overzicht van bezittingen, schulden en eigen vermogen\"?",
+      "o": [
+       "Break-evenafzet",
+       "Winst",
+       "Investeren",
+       "Balans"
+      ],
+      "c": 3,
+      "u": "Het juiste begrip is «Balans»: een overzicht van bezittingen, schulden en eigen vermogen.",
+      "d": 2
+     },
+     {
+      "v": "Welke term past bij: \"een overzicht van bezittingen, schulden en eigen vermogen\"?",
+      "o": [
+       "Winst",
+       "Resultatenrekening",
+       "Crediteuren",
+       "Balans"
+      ],
+      "c": 3,
+      "u": "Het juiste begrip is «Balans»: een overzicht van bezittingen, schulden en eigen vermogen.",
+      "d": 3
+     },
+     {
+      "v": "Wat betekent «Resultatenrekening»?",
+      "o": [
+       "de afzet waarbij de winst precies nul is",
+       "klanten die nog moeten betalen",
+       "onderneming met één eigenaar die hoofdelijk aansprakelijk is",
+       "een overzicht van de opbrengsten en de kosten"
+      ],
+      "c": 3,
+      "u": "«Resultatenrekening» betekent: een overzicht van de opbrengsten en de kosten.",
       "d": 1
      },
      {
       "v": "Welk begrip hoort bij deze omschrijving: \"een overzicht van de opbrengsten en de kosten\"?",
       "o": [
-       "Break-evenafzet",
        "Resultatenrekening",
-       "Marktaandeel",
-       "Investeren"
+       "Debiteuren",
+       "Eigen vermogen",
+       "Aandeel"
       ],
-      "c": 1,
+      "c": 0,
       "u": "Het juiste begrip is «Resultatenrekening»: een overzicht van de opbrengsten en de kosten.",
       "d": 2
      },
      {
-      "v": "Welk begrip hoort bij deze omschrijving: \"de opbrengsten min de kosten\"?",
+      "v": "Welke term past bij: \"een overzicht van de opbrengsten en de kosten\"?",
       "o": [
-       "Debiteuren",
-       "Winst",
+       "Resultatenrekening",
        "Crediteuren",
+       "Debiteuren",
        "Afschrijving"
       ],
-      "c": 1,
+      "c": 0,
+      "u": "Het juiste begrip is «Resultatenrekening»: een overzicht van de opbrengsten en de kosten.",
+      "d": 3
+     },
+     {
+      "v": "Wat betekent «Winst»?",
+      "o": [
+       "besloten vennootschap met beperkt aansprakelijke aandeelhouders",
+       "kosten die gelijk blijven bij meer of minder productie",
+       "de opbrengsten min de kosten",
+       "onderneming met één eigenaar die hoofdelijk aansprakelijk is"
+      ],
+      "c": 2,
+      "u": "«Winst» betekent: de opbrengsten min de kosten.",
+      "d": 1
+     },
+     {
+      "v": "Welk begrip hoort bij deze omschrijving: \"de opbrengsten min de kosten\"?",
+      "o": [
+       "Winst",
+       "Kostprijs",
+       "Marktsegmentatie",
+       "Aansprakelijkheid"
+      ],
+      "c": 0,
+      "u": "Het juiste begrip is «Winst»: de opbrengsten min de kosten.",
+      "d": 2
+     },
+     {
+      "v": "Welke term past bij: \"de opbrengsten min de kosten\"?",
+      "o": [
+       "Resultatenrekening",
+       "Afschrijving",
+       "Debiteuren",
+       "Winst"
+      ],
+      "c": 3,
       "u": "Het juiste begrip is «Winst»: de opbrengsten min de kosten.",
       "d": 3
      },
      {
       "v": "Wat betekent «Afschrijving»?",
       "o": [
-       "de mate waarin je op tijd kunt betalen",
-       "een overzicht van bezittingen, schulden en eigen vermogen",
-       "de kosten die aan één product worden toegerekend",
-       "de waardedaling van een vast actief over de tijd"
+       "de waardedaling van een vast actief over de tijd",
+       "de verkoopprijs min de variabele kosten per stuk",
+       "onderneming met één eigenaar die hoofdelijk aansprakelijk is",
+       "besloten vennootschap met beperkt aansprakelijke aandeelhouders"
       ],
-      "c": 3,
+      "c": 0,
       "u": "«Afschrijving» betekent: de waardedaling van een vast actief over de tijd.",
+      "d": 1
+     },
+     {
+      "v": "Welk begrip hoort bij deze omschrijving: \"de waardedaling van een vast actief over de tijd\"?",
+      "o": [
+       "Resultatenrekening",
+       "Afschrijving",
+       "Eenmanszaak",
+       "Rentabiliteit"
+      ],
+      "c": 1,
+      "u": "Het juiste begrip is «Afschrijving»: de waardedaling van een vast actief over de tijd.",
+      "d": 2
+     },
+     {
+      "v": "Welke term past bij: \"de waardedaling van een vast actief over de tijd\"?",
+      "o": [
+       "Debiteuren",
+       "Resultatenrekening",
+       "Afschrijving",
+       "Crediteuren"
+      ],
+      "c": 2,
+      "u": "Het juiste begrip is «Afschrijving»: de waardedaling van een vast actief over de tijd.",
+      "d": 3
+     },
+     {
+      "v": "Wat betekent «Debiteuren»?",
+      "o": [
+       "klanten die nog moeten betalen",
+       "de vier P's: prijs, product, plaats en promotie",
+       "de verhouding van de winst tot het geïnvesteerde vermogen",
+       "een bewijs van deelname in het eigen vermogen van een bv of nv"
+      ],
+      "c": 0,
+      "u": "«Debiteuren» betekent: klanten die nog moeten betalen.",
       "d": 1
      },
      {
       "v": "Welk begrip hoort bij deze omschrijving: \"klanten die nog moeten betalen\"?",
       "o": [
-       "Rechtsvorm",
-       "Marktsegmentatie",
+       "Aandeel",
        "Debiteuren",
-       "Dekkingsbijdrage"
+       "Vreemd vermogen",
+       "Break-evenafzet"
       ],
-      "c": 2,
+      "c": 1,
       "u": "Het juiste begrip is «Debiteuren»: klanten die nog moeten betalen.",
       "d": 2
      },
      {
+      "v": "Welke term past bij: \"klanten die nog moeten betalen\"?",
+      "o": [
+       "Crediteuren",
+       "Debiteuren",
+       "Winst",
+       "Resultatenrekening"
+      ],
+      "c": 1,
+      "u": "Het juiste begrip is «Debiteuren»: klanten die nog moeten betalen.",
+      "d": 3
+     },
+     {
+      "v": "Wat betekent «Crediteuren»?",
+      "o": [
+       "leveranciers die nog betaald moeten worden",
+       "de mate waarin je met privévermogen instaat voor schulden",
+       "de afzet waarbij de winst precies nul is",
+       "onderneming met één eigenaar die hoofdelijk aansprakelijk is"
+      ],
+      "c": 0,
+      "u": "«Crediteuren» betekent: leveranciers die nog betaald moeten worden.",
+      "d": 1
+     },
+     {
       "v": "Welk begrip hoort bij deze omschrijving: \"leveranciers die nog betaald moeten worden\"?",
       "o": [
-       "Winst",
-       "Balans",
        "Crediteuren",
-       "Debiteuren"
+       "Marketingmix",
+       "Solvabiliteit",
+       "Marktaandeel"
       ],
-      "c": 2,
+      "c": 0,
+      "u": "Het juiste begrip is «Crediteuren»: leveranciers die nog betaald moeten worden.",
+      "d": 2
+     },
+     {
+      "v": "Welke term past bij: \"leveranciers die nog betaald moeten worden\"?",
+      "o": [
+       "Crediteuren",
+       "Winst",
+       "Debiteuren",
+       "Balans"
+      ],
+      "c": 0,
       "u": "Het juiste begrip is «Crediteuren»: leveranciers die nog betaald moeten worden.",
       "d": 3
      }
@@ -11310,36 +17786,108 @@ var VAKKEN = [
      {
       "v": "Wat betekent «Tenses»?",
       "o": [
-       "houding: serious, ironic, critical…",
-       "tijd winnen zonder stilte",
-       "menselijke trekken aan iets levenloosthe wind whispered",
-       "present simple, continuous, perfect"
+       "Point, Illustration, Explanation",
+       "om herhaling vragen",
+       "present simple, continuous, perfect",
+       "beleefd, geen spreektaal"
+      ],
+      "c": 2,
+      "u": "«Tenses» betekent: present simple, continuous, perfect.",
+      "d": 1
+     },
+     {
+      "v": "Welk begrip hoort bij deze omschrijving: \"present simple, continuous, perfect\"?",
+      "o": [
+       "Tenses",
+       "Present simple",
+       "Simile",
+       "Unknown words"
+      ],
+      "c": 0,
+      "u": "Het juiste begrip is «Tenses»: present simple, continuous, perfect.",
+      "d": 2
+     },
+     {
+      "v": "Welke term past bij: \"present simple, continuous, perfect\"?",
+      "o": [
+       "Present continuous",
+       "-ful, -less",
+       "Passive",
+       "Tenses"
       ],
       "c": 3,
-      "u": "«Tenses» betekent: present simple, continuous, perfect.",
+      "u": "Het juiste begrip is «Tenses»: present simple, continuous, perfect.",
+      "d": 3
+     },
+     {
+      "v": "Wat betekent «Conditionals»?",
+      "o": [
+       "door wiens ogen (first/third person)",
+       "however, although, on the other hand",
+       "introduction, body, conclusion",
+       "if-zinnen: type 0, 1, 2"
+      ],
+      "c": 3,
+      "u": "«Conditionals» betekent: if-zinnen: type 0, 1, 2.",
       "d": 1
      },
      {
       "v": "Welk begrip hoort bij deze omschrijving: \"if-zinnen: type 0, 1, 2\"?",
       "o": [
        "Conditionals",
-       "Samenvatting",
-       "Implicit meaning",
-       "Salutation & closing"
+       "Linking words",
+       "Instemmen",
+       "Tenses"
       ],
       "c": 0,
       "u": "Het juiste begrip is «Conditionals»: if-zinnen: type 0, 1, 2.",
       "d": 2
      },
      {
-      "v": "Welk begrip hoort bij deze omschrijving: \"de handeling ondergaan i.p.v. doen\"?",
+      "v": "Welke term past bij: \"if-zinnen: type 0, 1, 2\"?",
       "o": [
+       "Present simple",
        "Word formation",
-       "re-",
-       "Passive",
-       "Present continuous"
+       "Conditionals",
+       "-ness, -ity"
       ],
       "c": 2,
+      "u": "Het juiste begrip is «Conditionals»: if-zinnen: type 0, 1, 2.",
+      "d": 3
+     },
+     {
+      "v": "Wat betekent «Passive»?",
+      "o": [
+       "globaal lezen vs. gericht zoeken",
+       "de handeling ondergaan i.p.v. doen",
+       "om herhaling vragen",
+       "\"I completely agree\", \"That's a good point\""
+      ],
+      "c": 1,
+      "u": "«Passive» betekent: de handeling ondergaan i.p.v. doen.",
+      "d": 1
+     },
+     {
+      "v": "Welk begrip hoort bij deze omschrijving: \"de handeling ondergaan i.p.v. doen\"?",
+      "o": [
+       "Beleefd oneens",
+       "Passive",
+       "Present continuous",
+       "Contrast"
+      ],
+      "c": 1,
+      "u": "Het juiste begrip is «Passive»: de handeling ondergaan i.p.v. doen.",
+      "d": 2
+     },
+     {
+      "v": "Welke term past bij: \"de handeling ondergaan i.p.v. doen\"?",
+      "o": [
+       "Passive",
+       "-ness, -ity",
+       "Present simple",
+       "Present continuous"
+      ],
+      "c": 0,
       "u": "Het juiste begrip is «Passive»: de handeling ondergaan i.p.v. doen.",
       "d": 3
      },
@@ -11347,32 +17895,104 @@ var VAKKEN = [
       "v": "Wat betekent «Word formation»?",
       "o": [
        "prefixes en suffixes",
-       "de handeling ondergaan i.p.v. doen",
-       "Point, Illustration, Explanation",
-       "markeren structuur (samenvatting, contrast)"
+       "round/flat, dynamic/static",
+       "vol van / zonderuseful, useless",
+       "om herhaling vragen"
       ],
       "c": 0,
       "u": "«Word formation» betekent: prefixes en suffixes.",
       "d": 1
      },
      {
-      "v": "Welk begrip hoort bij deze omschrijving: \"vaste woordcombinaties (make/do)\"?",
+      "v": "Welk begrip hoort bij deze omschrijving: \"prefixes en suffixes\"?",
       "o": [
+       "dynamic",
+       "Word formation",
        "Tone & purpose",
-       "Presentatiestructuur",
-       "Conclusion",
-       "Collocations"
+       "Omniscient"
+      ],
+      "c": 1,
+      "u": "Het juiste begrip is «Word formation»: prefixes en suffixes.",
+      "d": 2
+     },
+     {
+      "v": "Welke term past bij: \"prefixes en suffixes\"?",
+      "o": [
+       "Collocations",
+       "Conditionals",
+       "Present simple",
+       "Word formation"
       ],
       "c": 3,
+      "u": "Het juiste begrip is «Word formation»: prefixes en suffixes.",
+      "d": 3
+     },
+     {
+      "v": "Wat betekent «Collocations»?",
+      "o": [
+       "however, but, although, whereas, on the other hand",
+       "vaste woordcombinaties (make/do)",
+       "Dear Sir/Madam … Yours faithfully",
+       "opnieuwrewrite, rebuild"
+      ],
+      "c": 1,
+      "u": "«Collocations» betekent: vaste woordcombinaties (make/do).",
+      "d": 1
+     },
+     {
+      "v": "Welk begrip hoort bij deze omschrijving: \"vaste woordcombinaties (make/do)\"?",
+      "o": [
+       "Fast speech",
+       "Conditionals",
+       "Collocations",
+       "Present perfect"
+      ],
+      "c": 2,
       "u": "Het juiste begrip is «Collocations»: vaste woordcombinaties (make/do).",
       "d": 2
      },
      {
+      "v": "Welke term past bij: \"vaste woordcombinaties (make/do)\"?",
+      "o": [
+       "Present perfect",
+       "Collocations",
+       "-ness, -ity",
+       "Conditionals"
+      ],
+      "c": 1,
+      "u": "Het juiste begrip is «Collocations»: vaste woordcombinaties (make/do).",
+      "d": 3
+     },
+     {
+      "v": "Wat betekent «Present simple»?",
+      "o": [
+       "if-zinnen: type 0, 1, 2",
+       "markeren structuur (samenvatting, contrast)",
+       "in short, to sum up, all in all",
+       "gewoonte, feitShe works here."
+      ],
+      "c": 3,
+      "u": "«Present simple» betekent: gewoonte, feitShe works here..",
+      "d": 1
+     },
+     {
       "v": "Welk begrip hoort bij deze omschrijving: \"gewoonte, feitShe works here.\"?",
       "o": [
-       "-ful, -less",
+       "Signal phrases",
+       "Present simple",
+       "Presentatiestructuur",
+       "Tone & purpose"
+      ],
+      "c": 1,
+      "u": "Het juiste begrip is «Present simple»: gewoonte, feitShe works here..",
+      "d": 2
+     },
+     {
+      "v": "Welke term past bij: \"gewoonte, feitShe works here.\"?",
+      "o": [
+       "Conditionals",
+       "Word formation",
        "Present continuous",
-       "Collocations",
        "Present simple"
       ],
       "c": 3,
@@ -11382,8 +18002,8 @@ var VAKKEN = [
      {
       "v": "Wat betekent «Present continuous»?",
       "o": [
-       "present simple, continuous, perfect",
-       "moreover, furthermore, in addition, also",
+       "vol van / zonderuseful, useless",
+       "\"Could you repeat that, please?\"",
        "beeld zónder \"like\"/\"as\"time is a thief",
        "nu bezigShe is working now."
       ],
@@ -11392,52 +18012,172 @@ var VAKKEN = [
       "d": 1
      },
      {
-      "v": "Welk begrip hoort bij deze omschrijving: \"verleden met gevolg nuShe has worked here for years.\"?",
+      "v": "Welk begrip hoort bij deze omschrijving: \"nu bezigShe is working now.\"?",
       "o": [
-       "Present perfect",
-       "Conditionals",
-       "Foreshadowing",
+       "Present continuous",
+       "dynamic",
+       "Instemmen",
        "round"
       ],
       "c": 0,
+      "u": "Het juiste begrip is «Present continuous»: nu bezigShe is working now..",
+      "d": 2
+     },
+     {
+      "v": "Welke term past bij: \"nu bezigShe is working now.\"?",
+      "o": [
+       "Present perfect",
+       "Collocations",
+       "Tenses",
+       "Present continuous"
+      ],
+      "c": 3,
+      "u": "Het juiste begrip is «Present continuous»: nu bezigShe is working now..",
+      "d": 3
+     },
+     {
+      "v": "Wat betekent «Present perfect»?",
+      "o": [
+       "\"to sum up\", \"in short\", \"so basically\"",
+       "Dear Sir/Madam … Yours faithfully",
+       "verleden met gevolg nuShe has worked here for years.",
+       "waar verwijst \"it/this/they\" naar?"
+      ],
+      "c": 2,
+      "u": "«Present perfect» betekent: verleden met gevolg nuShe has worked here for years..",
+      "d": 1
+     },
+     {
+      "v": "Welk begrip hoort bij deze omschrijving: \"verleden met gevolg nuShe has worked here for years.\"?",
+      "o": [
+       "Contrast",
+       "Implicit meaning",
+       "Present perfect",
+       "Cause/effect"
+      ],
+      "c": 2,
       "u": "Het juiste begrip is «Present perfect»: verleden met gevolg nuShe has worked here for years..",
       "d": 2
      },
      {
-      "v": "Welk begrip hoort bij deze omschrijving: \"opnieuwrewrite, rebuild\"?",
+      "v": "Welke term past bij: \"verleden met gevolg nuShe has worked here for years.\"?",
       "o": [
        "Present perfect",
-       "Present continuous",
-       "Collocations",
-       "re-"
+       "-ness, -ity",
+       "Passive",
+       "Present simple"
       ],
-      "c": 3,
+      "c": 0,
+      "u": "Het juiste begrip is «Present perfect»: verleden met gevolg nuShe has worked here for years..",
+      "d": 3
+     },
+     {
+      "v": "Wat betekent «re-»?",
+      "o": [
+       "vol van / zonderuseful, useless",
+       "opnieuwrewrite, rebuild",
+       "\"that's why\", \"as a result\"",
+       "moreover, furthermore, in addition, also"
+      ],
+      "c": 1,
+      "u": "«re-» betekent: opnieuwrewrite, rebuild.",
+      "d": 1
+     },
+     {
+      "v": "Welk begrip hoort bij deze omschrijving: \"opnieuwrewrite, rebuild\"?",
+      "o": [
+       "re-",
+       "Skimming & scanning",
+       "Ophelderen",
+       "Cause/effect"
+      ],
+      "c": 0,
+      "u": "Het juiste begrip is «re-»: opnieuwrewrite, rebuild.",
+      "d": 2
+     },
+     {
+      "v": "Welke term past bij: \"opnieuwrewrite, rebuild\"?",
+      "o": [
+       "re-",
+       "Tenses",
+       "Collocations",
+       "-ness, -ity"
+      ],
+      "c": 0,
       "u": "Het juiste begrip is «re-»: opnieuwrewrite, rebuild.",
       "d": 3
      },
      {
       "v": "Wat betekent «-ness, -ity»?",
       "o": [
-       "de strijd die het verhaal drijft",
-       "maakt zelfstandig nw.happiness, ability",
-       "wat bedoeld wordt zonder het te zeggen",
-       "moreover, in addition, furthermore"
+       "\"In my opinion…\", \"I think that…\"",
+       "\"I completely agree\", \"That's a good point\"",
+       "for example, such as, for instance",
+       "maakt zelfstandig nw.happiness, ability"
       ],
-      "c": 1,
+      "c": 3,
       "u": "«-ness, -ity» betekent: maakt zelfstandig nw.happiness, ability.",
+      "d": 1
+     },
+     {
+      "v": "Welk begrip hoort bij deze omschrijving: \"maakt zelfstandig nw.happiness, ability\"?",
+      "o": [
+       "-ness, -ity",
+       "Personification",
+       "Simile",
+       "Present continuous"
+      ],
+      "c": 0,
+      "u": "Het juiste begrip is «-ness, -ity»: maakt zelfstandig nw.happiness, ability.",
+      "d": 2
+     },
+     {
+      "v": "Welke term past bij: \"maakt zelfstandig nw.happiness, ability\"?",
+      "o": [
+       "Tenses",
+       "Word formation",
+       "-ness, -ity",
+       "Passive"
+      ],
+      "c": 2,
+      "u": "Het juiste begrip is «-ness, -ity»: maakt zelfstandig nw.happiness, ability.",
+      "d": 3
+     },
+     {
+      "v": "Wat betekent «-ful, -less»?",
+      "o": [
+       "vol van / zonderuseful, useless",
+       "round/flat, dynamic/static",
+       "\"I see your point, but…\", \"I'm not so sure\"",
+       "waar verwijst \"it/this/they\" naar?"
+      ],
+      "c": 0,
+      "u": "«-ful, -less» betekent: vol van / zonderuseful, useless.",
       "d": 1
      },
      {
       "v": "Welk begrip hoort bij deze omschrijving: \"vol van / zonderuseful, useless\"?",
       "o": [
-       "Present continuous",
-       "Foreshadowing",
-       "-ful, -less",
-       "Simile"
+       "Polite requests",
+       "Signal phrases",
+       "Linking words",
+       "-ful, -less"
       ],
-      "c": 2,
+      "c": 3,
       "u": "Het juiste begrip is «-ful, -less»: vol van / zonderuseful, useless.",
       "d": 2
+     },
+     {
+      "v": "Welke term past bij: \"vol van / zonderuseful, useless\"?",
+      "o": [
+       "-ful, -less",
+       "Passive",
+       "Collocations",
+       "Tenses"
+      ],
+      "c": 0,
+      "u": "Het juiste begrip is «-ful, -less»: vol van / zonderuseful, useless.",
+      "d": 3
      }
     ],
     "oe": [
@@ -11683,32 +18423,104 @@ var VAKKEN = [
      {
       "v": "Wat betekent «Skimming & scanning»?",
       "o": [
-       "\"I would be grateful if…\"",
-       "however, although, on the other hand",
+       "however, but, although, whereas, on the other hand",
+       "metaphor, simile, foreshadowing",
        "globaal lezen vs. gericht zoeken",
-       "de centrale boodschap/idee"
+       "de handeling ondergaan i.p.v. doen"
       ],
       "c": 2,
       "u": "«Skimming & scanning» betekent: globaal lezen vs. gericht zoeken.",
       "d": 1
      },
      {
+      "v": "Welk begrip hoort bij deze omschrijving: \"globaal lezen vs. gericht zoeken\"?",
+      "o": [
+       "Example",
+       "Paragraph (PIE)",
+       "Linking words",
+       "Skimming & scanning"
+      ],
+      "c": 3,
+      "u": "Het juiste begrip is «Skimming & scanning»: globaal lezen vs. gericht zoeken.",
+      "d": 2
+     },
+     {
+      "v": "Welke term past bij: \"globaal lezen vs. gericht zoeken\"?",
+      "o": [
+       "Example",
+       "Skimming & scanning",
+       "Addition",
+       "Unknown words"
+      ],
+      "c": 1,
+      "u": "Het juiste begrip is «Skimming & scanning»: globaal lezen vs. gericht zoeken.",
+      "d": 3
+     },
+     {
+      "v": "Wat betekent «Inference»?",
+      "o": [
+       "opnieuwrewrite, rebuild",
+       "afleiden wat er niet letterlijk staat",
+       "\"I see your point, but…\", \"I'm not so sure\"",
+       "door wiens ogen (first/third person)"
+      ],
+      "c": 1,
+      "u": "«Inference» betekent: afleiden wat er niet letterlijk staat.",
+      "d": 1
+     },
+     {
       "v": "Welk begrip hoort bij deze omschrijving: \"afleiden wat er niet letterlijk staat\"?",
       "o": [
        "Inference",
-       "Salutation & closing",
-       "Signal phrases",
-       "Omniscient"
+       "Simile",
+       "Personification",
+       "Conclusion"
       ],
       "c": 0,
       "u": "Het juiste begrip is «Inference»: afleiden wat er niet letterlijk staat.",
       "d": 2
      },
      {
+      "v": "Welke term past bij: \"afleiden wat er niet letterlijk staat\"?",
+      "o": [
+       "Example",
+       "Skimming & scanning",
+       "Contrast",
+       "Inference"
+      ],
+      "c": 3,
+      "u": "Het juiste begrip is «Inference»: afleiden wat er niet letterlijk staat.",
+      "d": 3
+     },
+     {
+      "v": "Wat betekent «Unknown words»?",
+      "o": [
+       "for example, such as, for instance",
+       "de strijd die het verhaal drijft",
+       "de centrale boodschap/idee",
+       "betekenis raden uit de context"
+      ],
+      "c": 3,
+      "u": "«Unknown words» betekent: betekenis raden uit de context.",
+      "d": 1
+     },
+     {
       "v": "Welk begrip hoort bij deze omschrijving: \"betekenis raden uit de context\"?",
       "o": [
+       "flat",
+       "Mening geven",
        "Tone & purpose",
-       "Inference",
+       "Unknown words"
+      ],
+      "c": 3,
+      "u": "Het juiste begrip is «Unknown words»: betekenis raden uit de context.",
+      "d": 2
+     },
+     {
+      "v": "Welke term past bij: \"betekenis raden uit de context\"?",
+      "o": [
+       "Reference words",
+       "Example",
        "Unknown words",
        "Skimming & scanning"
       ],
@@ -11719,98 +18531,290 @@ var VAKKEN = [
      {
       "v": "Wat betekent «Signal words»?",
       "o": [
-       "moreover, in addition, furthermore",
        "linking words wijzen het verband",
-       "hint naar wat later gebeurtdark clouds gathering",
-       "however, but, although, whereas, on the other hand"
+       "metaphor, simile, foreshadowing",
+       "in short, to sum up, all in all",
+       "houding vs. doel van de schrijver"
+      ],
+      "c": 0,
+      "u": "«Signal words» betekent: linking words wijzen het verband.",
+      "d": 1
+     },
+     {
+      "v": "Welk begrip hoort bij deze omschrijving: \"linking words wijzen het verband\"?",
+      "o": [
+       "Passive",
+       "Signal words",
+       "round",
+       "Literary devices"
       ],
       "c": 1,
-      "u": "«Signal words» betekent: linking words wijzen het verband.",
+      "u": "Het juiste begrip is «Signal words»: linking words wijzen het verband.",
+      "d": 2
+     },
+     {
+      "v": "Welke term past bij: \"linking words wijzen het verband\"?",
+      "o": [
+       "Inference",
+       "Unknown words",
+       "Signal words",
+       "Cause/effect"
+      ],
+      "c": 2,
+      "u": "Het juiste begrip is «Signal words»: linking words wijzen het verband.",
+      "d": 3
+     },
+     {
+      "v": "Wat betekent «Reference words»?",
+      "o": [
+       "\"In my opinion…\", \"I think that…\"",
+       "menselijke trekken aan iets levenloosthe wind whispered",
+       "gewoonte, feitShe works here.",
+       "waar verwijst \"it/this/they\" naar?"
+      ],
+      "c": 3,
+      "u": "«Reference words» betekent: waar verwijst \"it/this/they\" naar?.",
       "d": 1
      },
      {
       "v": "Welk begrip hoort bij deze omschrijving: \"waar verwijst \"it/this/they\" naar?\"?",
       "o": [
-       "Conclusion",
-       "B1-niveau",
-       "flat",
-       "Reference words"
+       "Cause/effect",
+       "Reference words",
+       "Simile",
+       "Implicit meaning"
       ],
-      "c": 3,
+      "c": 1,
       "u": "Het juiste begrip is «Reference words»: waar verwijst \"it/this/they\" naar?.",
       "d": 2
      },
      {
+      "v": "Welke term past bij: \"waar verwijst \"it/this/they\" naar?\"?",
+      "o": [
+       "Reference words",
+       "Example",
+       "Skimming & scanning",
+       "Contrast"
+      ],
+      "c": 0,
+      "u": "Het juiste begrip is «Reference words»: waar verwijst \"it/this/they\" naar?.",
+      "d": 3
+     },
+     {
+      "v": "Wat betekent «Tone & purpose»?",
+      "o": [
+       "de strijd die het verhaal drijft",
+       "houding vs. doel van de schrijver",
+       "betekenis raden uit de context",
+       "\"on the other hand\", \"however\""
+      ],
+      "c": 1,
+      "u": "«Tone & purpose» betekent: houding vs. doel van de schrijver.",
+      "d": 1
+     },
+     {
       "v": "Welk begrip hoort bij deze omschrijving: \"houding vs. doel van de schrijver\"?",
       "o": [
-       "Example",
-       "Addition",
        "Tone & purpose",
-       "Skimming & scanning"
+       "re-",
+       "Passive",
+       "Word formation"
       ],
-      "c": 2,
+      "c": 0,
+      "u": "Het juiste begrip is «Tone & purpose»: houding vs. doel van de schrijver.",
+      "d": 2
+     },
+     {
+      "v": "Welke term past bij: \"houding vs. doel van de schrijver\"?",
+      "o": [
+       "Tone & purpose",
+       "Inference",
+       "Signal words",
+       "Contrast"
+      ],
+      "c": 0,
       "u": "Het juiste begrip is «Tone & purpose»: houding vs. doel van de schrijver.",
       "d": 3
      },
      {
       "v": "Wat betekent «Contrast»?",
       "o": [
-       "focus op kernwoorden",
-       "menselijke trekken aan iets levenloosthe wind whispered",
        "however, but, although, whereas, on the other hand",
-       "present simple, continuous, perfect"
+       "therefore, as a result, because",
+       "\"I completely agree\", \"That's a good point\"",
+       "in short, to sum up, all in all"
+      ],
+      "c": 0,
+      "u": "«Contrast» betekent: however, but, although, whereas, on the other hand.",
+      "d": 1
+     },
+     {
+      "v": "Welk begrip hoort bij deze omschrijving: \"however, but, although, whereas, on the other hand\"?",
+      "o": [
+       "First person (\"I\")",
+       "flat",
+       "Contrast",
+       "Foreshadowing"
       ],
       "c": 2,
-      "u": "«Contrast» betekent: however, but, although, whereas, on the other hand.",
+      "u": "Het juiste begrip is «Contrast»: however, but, although, whereas, on the other hand.",
+      "d": 2
+     },
+     {
+      "v": "Welke term past bij: \"however, but, although, whereas, on the other hand\"?",
+      "o": [
+       "Example",
+       "Conclusion",
+       "Contrast",
+       "Unknown words"
+      ],
+      "c": 2,
+      "u": "Het juiste begrip is «Contrast»: however, but, although, whereas, on the other hand.",
+      "d": 3
+     },
+     {
+      "v": "Wat betekent «Cause/effect»?",
+      "o": [
+       "because, therefore, so, as a result, since",
+       "focus op kernwoorden",
+       "beeld zónder \"like\"/\"as\"time is a thief",
+       "moreover, furthermore, in addition, also"
+      ],
+      "c": 0,
+      "u": "«Cause/effect» betekent: because, therefore, so, as a result, since.",
       "d": 1
      },
      {
       "v": "Welk begrip hoort bij deze omschrijving: \"because, therefore, so, as a result, since\"?",
       "o": [
-       "Beleefd oneens",
-       "Presentatiestructuur",
-       "Present continuous",
-       "Cause/effect"
+       "Present simple",
+       "Cause/effect",
+       "Om herhaling vragen",
+       "Conclusie"
       ],
-      "c": 3,
+      "c": 1,
       "u": "Het juiste begrip is «Cause/effect»: because, therefore, so, as a result, since.",
       "d": 2
      },
      {
-      "v": "Welk begrip hoort bij deze omschrijving: \"moreover, furthermore, in addition, also\"?",
+      "v": "Welke term past bij: \"because, therefore, so, as a result, since\"?",
       "o": [
-       "Cause/effect",
        "Signal words",
-       "Addition",
-       "Tone & purpose"
+       "Cause/effect",
+       "Contrast",
+       "Conclusion"
+      ],
+      "c": 1,
+      "u": "Het juiste begrip is «Cause/effect»: because, therefore, so, as a result, since.",
+      "d": 3
+     },
+     {
+      "v": "Wat betekent «Addition»?",
+      "o": [
+       "\"I would be grateful if…\"",
+       "for example, such as, for instance",
+       "moreover, furthermore, in addition, also",
+       "complex, meerdere kanten"
       ],
       "c": 2,
+      "u": "«Addition» betekent: moreover, furthermore, in addition, also.",
+      "d": 1
+     },
+     {
+      "v": "Welk begrip hoort bij deze omschrijving: \"moreover, furthermore, in addition, also\"?",
+      "o": [
+       "Addition",
+       "Useful phrases",
+       "Narrative perspective",
+       "Literary devices"
+      ],
+      "c": 0,
+      "u": "Het juiste begrip is «Addition»: moreover, furthermore, in addition, also.",
+      "d": 2
+     },
+     {
+      "v": "Welke term past bij: \"moreover, furthermore, in addition, also\"?",
+      "o": [
+       "Reference words",
+       "Conclusion",
+       "Contrast",
+       "Addition"
+      ],
+      "c": 3,
       "u": "Het juiste begrip is «Addition»: moreover, furthermore, in addition, also.",
       "d": 3
      },
      {
       "v": "Wat betekent «Example»?",
       "o": [
-       "beleefd, geen spreektaal",
+       "een personage vertelt; beperkt tot eigen kennis",
        "for example, such as, for instance",
-       "Point, Illustration, Explanation",
-       "opnieuwrewrite, rebuild"
+       "moreover, in addition, furthermore",
+       "verleden met gevolg nuShe has worked here for years."
       ],
       "c": 1,
       "u": "«Example» betekent: for example, such as, for instance.",
       "d": 1
      },
      {
+      "v": "Welk begrip hoort bij deze omschrijving: \"for example, such as, for instance\"?",
+      "o": [
+       "Theme",
+       "Implicit meaning",
+       "B1-niveau",
+       "Example"
+      ],
+      "c": 3,
+      "u": "Het juiste begrip is «Example»: for example, such as, for instance.",
+      "d": 2
+     },
+     {
+      "v": "Welke term past bij: \"for example, such as, for instance\"?",
+      "o": [
+       "Conclusion",
+       "Example",
+       "Signal words",
+       "Reference words"
+      ],
+      "c": 1,
+      "u": "Het juiste begrip is «Example»: for example, such as, for instance.",
+      "d": 3
+     },
+     {
+      "v": "Wat betekent «Conclusion»?",
+      "o": [
+       "linking words wijzen het verband",
+       "markeren structuur (samenvatting, contrast)",
+       "de centrale boodschap/idee",
+       "in short, to sum up, all in all"
+      ],
+      "c": 3,
+      "u": "«Conclusion» betekent: in short, to sum up, all in all.",
+      "d": 1
+     },
+     {
       "v": "Welk begrip hoort bij deze omschrijving: \"in short, to sum up, all in all\"?",
       "o": [
-       "round",
-       "Literary devices",
+       "Foreshadowing",
        "Conclusion",
-       "Ophelderen"
+       "Reference words",
+       "Third person limited"
       ],
-      "c": 2,
+      "c": 1,
       "u": "Het juiste begrip is «Conclusion»: in short, to sum up, all in all.",
       "d": 2
+     },
+     {
+      "v": "Welke term past bij: \"in short, to sum up, all in all\"?",
+      "o": [
+       "Contrast",
+       "Signal words",
+       "Addition",
+       "Conclusion"
+      ],
+      "c": 3,
+      "u": "Het juiste begrip is «Conclusion»: in short, to sum up, all in all.",
+      "d": 3
      }
     ],
     "oe": [
@@ -12072,98 +19076,290 @@ var VAKKEN = [
      {
       "v": "Wat betekent «Gist first»?",
       "o": [
-       "eenvoudig, één trek",
-       "nu bezigShe is working now.",
        "eerste keer: grote lijn, niet elk woord",
-       "een personage vertelt; beperkt tot eigen kennis"
+       "vaste woordcombinaties (make/do)",
+       "for example, such as, for instance",
+       "door wiens ogen (first/third person)"
       ],
-      "c": 2,
+      "c": 0,
       "u": "«Gist first» betekent: eerste keer: grote lijn, niet elk woord.",
+      "d": 1
+     },
+     {
+      "v": "Welk begrip hoort bij deze omschrijving: \"eerste keer: grote lijn, niet elk woord\"?",
+      "o": [
+       "Gist first",
+       "Ophelderen",
+       "First person (\"I\")",
+       "Beleefd oneens"
+      ],
+      "c": 0,
+      "u": "Het juiste begrip is «Gist first»: eerste keer: grote lijn, niet elk woord.",
+      "d": 2
+     },
+     {
+      "v": "Welke term past bij: \"eerste keer: grote lijn, niet elk woord\"?",
+      "o": [
+       "Implicit meaning",
+       "Gist first",
+       "Signal phrases",
+       "Samenvatting"
+      ],
+      "c": 1,
+      "u": "Het juiste begrip is «Gist first»: eerste keer: grote lijn, niet elk woord.",
+      "d": 3
+     },
+     {
+      "v": "Wat betekent «Signal phrases»?",
+      "o": [
+       "houding: serious, ironic, critical…",
+       "markeren structuur (samenvatting, contrast)",
+       "vergelijking met \"like\"/\"as\"as brave as a lion",
+       "menselijke trekken aan iets levenloosthe wind whispered"
+      ],
+      "c": 1,
+      "u": "«Signal phrases» betekent: markeren structuur (samenvatting, contrast).",
       "d": 1
      },
      {
       "v": "Welk begrip hoort bij deze omschrijving: \"markeren structuur (samenvatting, contrast)\"?",
       "o": [
-       "Useful phrases",
-       "Signal phrases",
-       "Literary devices",
-       "Theme"
+       "Skimming & scanning",
+       "Gist first",
+       "Inference",
+       "Signal phrases"
       ],
-      "c": 1,
+      "c": 3,
       "u": "Het juiste begrip is «Signal phrases»: markeren structuur (samenvatting, contrast).",
       "d": 2
      },
      {
-      "v": "Welk begrip hoort bij deze omschrijving: \"houding: serious, ironic, critical…\"?",
+      "v": "Welke term past bij: \"markeren structuur (samenvatting, contrast)\"?",
       "o": [
-       "Tone",
+       "Signal phrases",
        "Fast speech",
-       "Gist first",
+       "Conclusie",
        "Implicit meaning"
       ],
       "c": 0,
+      "u": "Het juiste begrip is «Signal phrases»: markeren structuur (samenvatting, contrast).",
+      "d": 3
+     },
+     {
+      "v": "Wat betekent «Tone»?",
+      "o": [
+       "moreover, in addition, furthermore",
+       "houding: serious, ironic, critical…",
+       "blijft hetzelfde",
+       "introduction, body, conclusion"
+      ],
+      "c": 1,
+      "u": "«Tone» betekent: houding: serious, ironic, critical….",
+      "d": 1
+     },
+     {
+      "v": "Welk begrip hoort bij deze omschrijving: \"houding: serious, ironic, critical…\"?",
+      "o": [
+       "Omniscient",
+       "re-",
+       "Conflict",
+       "Tone"
+      ],
+      "c": 3,
+      "u": "Het juiste begrip is «Tone»: houding: serious, ironic, critical….",
+      "d": 2
+     },
+     {
+      "v": "Welke term past bij: \"houding: serious, ironic, critical…\"?",
+      "o": [
+       "Conclusie",
+       "Tone",
+       "Fast speech",
+       "Gist first"
+      ],
+      "c": 1,
       "u": "Het juiste begrip is «Tone»: houding: serious, ironic, critical….",
       "d": 3
      },
      {
       "v": "Wat betekent «Implicit meaning»?",
       "o": [
-       "\"he/she\"; volgt één personage",
-       "wat bedoeld wordt zonder het te zeggen",
-       "\"to sum up\", \"in short\", \"so basically\"",
-       "\"that's why\", \"as a result\""
+       "\"that's why\", \"as a result\"",
+       "\"on the other hand\", \"however\"",
+       "introduction, body, conclusion",
+       "wat bedoeld wordt zonder het te zeggen"
+      ],
+      "c": 3,
+      "u": "«Implicit meaning» betekent: wat bedoeld wordt zonder het te zeggen.",
+      "d": 1
+     },
+     {
+      "v": "Welk begrip hoort bij deze omschrijving: \"wat bedoeld wordt zonder het te zeggen\"?",
+      "o": [
+       "Third person limited",
+       "dynamic",
+       "Implicit meaning",
+       "Unknown words"
+      ],
+      "c": 2,
+      "u": "Het juiste begrip is «Implicit meaning»: wat bedoeld wordt zonder het te zeggen.",
+      "d": 2
+     },
+     {
+      "v": "Welke term past bij: \"wat bedoeld wordt zonder het te zeggen\"?",
+      "o": [
+       "Gist first",
+       "Implicit meaning",
+       "Signal phrases",
+       "Conclusie"
       ],
       "c": 1,
-      "u": "«Implicit meaning» betekent: wat bedoeld wordt zonder het te zeggen.",
+      "u": "Het juiste begrip is «Implicit meaning»: wat bedoeld wordt zonder het te zeggen.",
+      "d": 3
+     },
+     {
+      "v": "Wat betekent «Fast speech»?",
+      "o": [
+       "hint naar wat later gebeurtdark clouds gathering",
+       "therefore, as a result, because",
+       "focus op kernwoorden",
+       "because, therefore, so, as a result, since"
+      ],
+      "c": 2,
+      "u": "«Fast speech» betekent: focus op kernwoorden.",
       "d": 1
      },
      {
       "v": "Welk begrip hoort bij deze omschrijving: \"focus op kernwoorden\"?",
       "o": [
-       "Unknown words",
-       "Useful phrases",
+       "Salutation & closing",
+       "static",
        "Fast speech",
-       "Conflict"
+       "Polite requests"
       ],
       "c": 2,
       "u": "Het juiste begrip is «Fast speech»: focus op kernwoorden.",
       "d": 2
      },
      {
+      "v": "Welke term past bij: \"focus op kernwoorden\"?",
+      "o": [
+       "Fast speech",
+       "Gist first",
+       "Tone",
+       "Samenvatting"
+      ],
+      "c": 0,
+      "u": "Het juiste begrip is «Fast speech»: focus op kernwoorden.",
+      "d": 3
+     },
+     {
+      "v": "Wat betekent «Samenvatting»?",
+      "o": [
+       "door wiens ogen (first/third person)",
+       "alwetend; kent ieders gedachten",
+       "\"to sum up\", \"in short\", \"so basically\"",
+       "wat bedoeld wordt zonder het te zeggen"
+      ],
+      "c": 2,
+      "u": "«Samenvatting» betekent: \"to sum up\", \"in short\", \"so basically\".",
+      "d": 1
+     },
+     {
       "v": "Welk begrip hoort bij deze omschrijving: \"\"to sum up\", \"in short\", \"so basically\"\"?",
       "o": [
-       "Conclusie",
+       "Passive",
+       "Salutation & closing",
        "Samenvatting",
-       "Fast speech",
-       "Tone"
+       "Addition"
       ],
-      "c": 1,
+      "c": 2,
+      "u": "Het juiste begrip is «Samenvatting»: \"to sum up\", \"in short\", \"so basically\".",
+      "d": 2
+     },
+     {
+      "v": "Welke term past bij: \"\"to sum up\", \"in short\", \"so basically\"\"?",
+      "o": [
+       "Fast speech",
+       "Contrast",
+       "Gist first",
+       "Samenvatting"
+      ],
+      "c": 3,
       "u": "Het juiste begrip is «Samenvatting»: \"to sum up\", \"in short\", \"so basically\".",
       "d": 3
      },
      {
       "v": "Wat betekent «Contrast»?",
       "o": [
-       "beeld zónder \"like\"/\"as\"time is a thief",
-       "focus op kernwoorden",
-       "Dear Sir/Madam … Yours faithfully",
-       "\"on the other hand\", \"however\""
+       "\"on the other hand\", \"however\"",
+       "\"In my opinion…\", \"I think that…\"",
+       "een personage vertelt; beperkt tot eigen kennis",
+       "because, therefore, so, as a result, since"
+      ],
+      "c": 0,
+      "u": "«Contrast» betekent: \"on the other hand\", \"however\".",
+      "d": 1
+     },
+     {
+      "v": "Welk begrip hoort bij deze omschrijving: \"\"on the other hand\", \"however\"\"?",
+      "o": [
+       "First person (\"I\")",
+       "Cause/effect",
+       "Om herhaling vragen",
+       "Contrast"
       ],
       "c": 3,
-      "u": "«Contrast» betekent: \"on the other hand\", \"however\".",
+      "u": "Het juiste begrip is «Contrast»: \"on the other hand\", \"however\".",
+      "d": 2
+     },
+     {
+      "v": "Welke term past bij: \"\"on the other hand\", \"however\"\"?",
+      "o": [
+       "Implicit meaning",
+       "Contrast",
+       "Signal phrases",
+       "Fast speech"
+      ],
+      "c": 1,
+      "u": "Het juiste begrip is «Contrast»: \"on the other hand\", \"however\".",
+      "d": 3
+     },
+     {
+      "v": "Wat betekent «Conclusie»?",
+      "o": [
+       "gewoonte, feitShe works here.",
+       "globaal lezen vs. gericht zoeken",
+       "eerste keer: grote lijn, niet elk woord",
+       "\"that's why\", \"as a result\""
+      ],
+      "c": 3,
+      "u": "«Conclusie» betekent: \"that's why\", \"as a result\".",
       "d": 1
      },
      {
       "v": "Welk begrip hoort bij deze omschrijving: \"\"that's why\", \"as a result\"\"?",
       "o": [
-       "Omniscient",
-       "Character",
-       "Present continuous",
+       "Fillers",
+       "Conditionals",
+       "Contrast",
        "Conclusie"
       ],
       "c": 3,
       "u": "Het juiste begrip is «Conclusie»: \"that's why\", \"as a result\".",
       "d": 2
+     },
+     {
+      "v": "Welke term past bij: \"\"that's why\", \"as a result\"\"?",
+      "o": [
+       "Conclusie",
+       "Implicit meaning",
+       "Gist first",
+       "Signal phrases"
+      ],
+      "c": 0,
+      "u": "Het juiste begrip is «Conclusie»: \"that's why\", \"as a result\".",
+      "d": 3
      }
     ],
     "oe": [
@@ -12335,45 +19531,117 @@ var VAKKEN = [
      {
       "v": "Wat betekent «Presentatiestructuur»?",
       "o": [
-       "\"to sum up\", \"in short\", \"so basically\"",
+       "present simple, continuous, perfect",
        "introduction, body, conclusion",
-       "round/flat, dynamic/static",
-       "markeren structuur (samenvatting, contrast)"
+       "alwetend; kent ieders gedachten",
+       "agreeing, disagreeing, opinion"
       ],
       "c": 1,
       "u": "«Presentatiestructuur» betekent: introduction, body, conclusion.",
       "d": 1
      },
      {
-      "v": "Welk begrip hoort bij deze omschrijving: \"agreeing, disagreeing, opinion\"?",
+      "v": "Welk begrip hoort bij deze omschrijving: \"introduction, body, conclusion\"?",
       "o": [
-       "Samenvatting",
-       "Useful phrases",
-       "Literary devices",
-       "Paragraph (PIE)"
+       "Polite requests",
+       "B1-niveau",
+       "Foreshadowing",
+       "Presentatiestructuur"
       ],
-      "c": 1,
-      "u": "Het juiste begrip is «Useful phrases»: agreeing, disagreeing, opinion.",
+      "c": 3,
+      "u": "Het juiste begrip is «Presentatiestructuur»: introduction, body, conclusion.",
       "d": 2
      },
      {
-      "v": "Welk begrip hoort bij deze omschrijving: \"tijd winnen zonder stilte\"?",
+      "v": "Welke term past bij: \"introduction, body, conclusion\"?",
       "o": [
+       "Presentatiestructuur",
        "Fillers",
-       "B1-niveau",
        "Beleefd oneens",
        "Instemmen"
       ],
       "c": 0,
+      "u": "Het juiste begrip is «Presentatiestructuur»: introduction, body, conclusion.",
+      "d": 3
+     },
+     {
+      "v": "Wat betekent «Useful phrases»?",
+      "o": [
+       "in conclusion, to sum up",
+       "agreeing, disagreeing, opinion",
+       "houding vs. doel van de schrijver",
+       "door wiens ogen (first/third person)"
+      ],
+      "c": 1,
+      "u": "«Useful phrases» betekent: agreeing, disagreeing, opinion.",
+      "d": 1
+     },
+     {
+      "v": "Welk begrip hoort bij deze omschrijving: \"agreeing, disagreeing, opinion\"?",
+      "o": [
+       "Beleefd oneens",
+       "Conclusion",
+       "Useful phrases",
+       "Implicit meaning"
+      ],
+      "c": 2,
+      "u": "Het juiste begrip is «Useful phrases»: agreeing, disagreeing, opinion.",
+      "d": 2
+     },
+     {
+      "v": "Welke term past bij: \"agreeing, disagreeing, opinion\"?",
+      "o": [
+       "Instemmen",
+       "Beleefd oneens",
+       "Useful phrases",
+       "Presentatiestructuur"
+      ],
+      "c": 2,
+      "u": "Het juiste begrip is «Useful phrases»: agreeing, disagreeing, opinion.",
+      "d": 3
+     },
+     {
+      "v": "Wat betekent «Fillers»?",
+      "o": [
+       "tijd winnen zonder stilte",
+       "\"I completely agree\", \"That's a good point\"",
+       "door wiens ogen (first/third person)",
+       "\"to sum up\", \"in short\", \"so basically\""
+      ],
+      "c": 0,
+      "u": "«Fillers» betekent: tijd winnen zonder stilte.",
+      "d": 1
+     },
+     {
+      "v": "Welk begrip hoort bij deze omschrijving: \"tijd winnen zonder stilte\"?",
+      "o": [
+       "Contrast",
+       "Passive",
+       "Fillers",
+       "Implicit meaning"
+      ],
+      "c": 2,
+      "u": "Het juiste begrip is «Fillers»: tijd winnen zonder stilte.",
+      "d": 2
+     },
+     {
+      "v": "Welke term past bij: \"tijd winnen zonder stilte\"?",
+      "o": [
+       "Presentatiestructuur",
+       "Mening geven",
+       "Fillers",
+       "Om herhaling vragen"
+      ],
+      "c": 2,
       "u": "Het juiste begrip is «Fillers»: tijd winnen zonder stilte.",
       "d": 3
      },
      {
       "v": "Wat betekent «B1-niveau»?",
       "o": [
-       "houding vs. doel van de schrijver",
-       "een personage vertelt; beperkt tot eigen kennis",
-       "alwetend; kent ieders gedachten",
+       "de strijd die het verhaal drijft",
+       "waar verwijst \"it/this/they\" naar?",
+       "door wiens ogen (first/third person)",
        "vloeiend genoeg over bekende onderwerpen"
       ],
       "c": 3,
@@ -12381,62 +19649,206 @@ var VAKKEN = [
       "d": 1
      },
      {
+      "v": "Welk begrip hoort bij deze omschrijving: \"vloeiend genoeg over bekende onderwerpen\"?",
+      "o": [
+       "Gist first",
+       "Contrast",
+       "Literary devices",
+       "B1-niveau"
+      ],
+      "c": 3,
+      "u": "Het juiste begrip is «B1-niveau»: vloeiend genoeg over bekende onderwerpen.",
+      "d": 2
+     },
+     {
+      "v": "Welke term past bij: \"vloeiend genoeg over bekende onderwerpen\"?",
+      "o": [
+       "Presentatiestructuur",
+       "Ophelderen",
+       "Mening geven",
+       "B1-niveau"
+      ],
+      "c": 3,
+      "u": "Het juiste begrip is «B1-niveau»: vloeiend genoeg over bekende onderwerpen.",
+      "d": 3
+     },
+     {
+      "v": "Wat betekent «Ophelderen»?",
+      "o": [
+       "om herhaling vragen",
+       "Dear Sir/Madam … Yours faithfully",
+       "betekenis raden uit de context",
+       "hint naar wat later gebeurtdark clouds gathering"
+      ],
+      "c": 0,
+      "u": "«Ophelderen» betekent: om herhaling vragen.",
+      "d": 1
+     },
+     {
       "v": "Welk begrip hoort bij deze omschrijving: \"om herhaling vragen\"?",
       "o": [
-       "Contrast",
-       "Ophelderen",
-       "Fillers",
-       "Useful phrases"
+       "Passive",
+       "-ful, -less",
+       "Implicit meaning",
+       "Ophelderen"
       ],
-      "c": 1,
+      "c": 3,
       "u": "Het juiste begrip is «Ophelderen»: om herhaling vragen.",
       "d": 2
      },
      {
+      "v": "Welke term past bij: \"om herhaling vragen\"?",
+      "o": [
+       "Fillers",
+       "Ophelderen",
+       "Beleefd oneens",
+       "Mening geven"
+      ],
+      "c": 1,
+      "u": "Het juiste begrip is «Ophelderen»: om herhaling vragen.",
+      "d": 3
+     },
+     {
+      "v": "Wat betekent «Mening geven»?",
+      "o": [
+       "Point, Illustration, Explanation",
+       "verbinden en structureren",
+       "blijft hetzelfde",
+       "\"In my opinion…\", \"I think that…\""
+      ],
+      "c": 3,
+      "u": "«Mening geven» betekent: \"In my opinion…\", \"I think that…\".",
+      "d": 1
+     },
+     {
       "v": "Welk begrip hoort bij deze omschrijving: \"\"In my opinion…\", \"I think that…\"\"?",
       "o": [
-       "Om herhaling vragen",
-       "Ophelderen",
-       "Mening geven",
-       "Presentatiestructuur"
+       "Implicit meaning",
+       "Inference",
+       "re-",
+       "Mening geven"
       ],
-      "c": 2,
+      "c": 3,
+      "u": "Het juiste begrip is «Mening geven»: \"In my opinion…\", \"I think that…\".",
+      "d": 2
+     },
+     {
+      "v": "Welke term past bij: \"\"In my opinion…\", \"I think that…\"\"?",
+      "o": [
+       "Useful phrases",
+       "Mening geven",
+       "Presentatiestructuur",
+       "Beleefd oneens"
+      ],
+      "c": 1,
       "u": "Het juiste begrip is «Mening geven»: \"In my opinion…\", \"I think that…\".",
       "d": 3
      },
      {
       "v": "Wat betekent «Instemmen»?",
       "o": [
-       "opnieuwrewrite, rebuild",
-       "moreover, furthermore, in addition, also",
+       "\"In my opinion…\", \"I think that…\"",
        "\"I completely agree\", \"That's a good point\"",
-       "however, although, on the other hand"
+       "however, although, on the other hand",
+       "\"I see your point, but…\", \"I'm not so sure\""
+      ],
+      "c": 1,
+      "u": "«Instemmen» betekent: \"I completely agree\", \"That's a good point\".",
+      "d": 1
+     },
+     {
+      "v": "Welk begrip hoort bij deze omschrijving: \"\"I completely agree\", \"That's a good point\"\"?",
+      "o": [
+       "Tone",
+       "Contrast",
+       "Tenses",
+       "Instemmen"
+      ],
+      "c": 3,
+      "u": "Het juiste begrip is «Instemmen»: \"I completely agree\", \"That's a good point\".",
+      "d": 2
+     },
+     {
+      "v": "Welke term past bij: \"\"I completely agree\", \"That's a good point\"\"?",
+      "o": [
+       "Beleefd oneens",
+       "Useful phrases",
+       "Mening geven",
+       "Instemmen"
+      ],
+      "c": 3,
+      "u": "Het juiste begrip is «Instemmen»: \"I completely agree\", \"That's a good point\".",
+      "d": 3
+     },
+     {
+      "v": "Wat betekent «Beleefd oneens»?",
+      "o": [
+       "however, although, on the other hand",
+       "present simple, continuous, perfect",
+       "\"I see your point, but…\", \"I'm not so sure\"",
+       "nu bezigShe is working now."
       ],
       "c": 2,
-      "u": "«Instemmen» betekent: \"I completely agree\", \"That's a good point\".",
+      "u": "«Beleefd oneens» betekent: \"I see your point, but…\", \"I'm not so sure\".",
       "d": 1
      },
      {
       "v": "Welk begrip hoort bij deze omschrijving: \"\"I see your point, but…\", \"I'm not so sure\"\"?",
       "o": [
+       "Formal register",
+       "Conflict",
        "Beleefd oneens",
-       "Conditionals",
-       "Addition",
-       "round"
+       "Tone & purpose"
       ],
-      "c": 0,
+      "c": 2,
       "u": "Het juiste begrip is «Beleefd oneens»: \"I see your point, but…\", \"I'm not so sure\".",
       "d": 2
      },
      {
-      "v": "Welk begrip hoort bij deze omschrijving: \"\"Could you repeat that, please?\"\"?",
+      "v": "Welke term past bij: \"\"I see your point, but…\", \"I'm not so sure\"\"?",
       "o": [
-       "Instemmen",
-       "Om herhaling vragen",
-       "Presentatiestructuur",
-       "Beleefd oneens"
+       "Fillers",
+       "Beleefd oneens",
+       "B1-niveau",
+       "Ophelderen"
       ],
       "c": 1,
+      "u": "Het juiste begrip is «Beleefd oneens»: \"I see your point, but…\", \"I'm not so sure\".",
+      "d": 3
+     },
+     {
+      "v": "Wat betekent «Om herhaling vragen»?",
+      "o": [
+       "focus op kernwoorden",
+       "\"I see your point, but…\", \"I'm not so sure\"",
+       "Point, Illustration, Explanation",
+       "\"Could you repeat that, please?\""
+      ],
+      "c": 3,
+      "u": "«Om herhaling vragen» betekent: \"Could you repeat that, please?\".",
+      "d": 1
+     },
+     {
+      "v": "Welk begrip hoort bij deze omschrijving: \"\"Could you repeat that, please?\"\"?",
+      "o": [
+       "Gist first",
+       "Om herhaling vragen",
+       "Tenses",
+       "Skimming & scanning"
+      ],
+      "c": 1,
+      "u": "Het juiste begrip is «Om herhaling vragen»: \"Could you repeat that, please?\".",
+      "d": 2
+     },
+     {
+      "v": "Welke term past bij: \"\"Could you repeat that, please?\"\"?",
+      "o": [
+       "Presentatiestructuur",
+       "B1-niveau",
+       "Instemmen",
+       "Om herhaling vragen"
+      ],
+      "c": 3,
       "u": "Het juiste begrip is «Om herhaling vragen»: \"Could you repeat that, please?\".",
       "d": 3
      }
@@ -12625,72 +20037,216 @@ var VAKKEN = [
      {
       "v": "Wat betekent «Formal register»?",
       "o": [
-       "\"I would be grateful if…\"",
+       "globaal lezen vs. gericht zoeken",
+       "linking words wijzen het verband",
        "beleefd, geen spreektaal",
-       "door wiens ogen (first/third person)",
-       "moreover, furthermore, in addition, also"
+       "gewoonte, feitShe works here."
+      ],
+      "c": 2,
+      "u": "«Formal register» betekent: beleefd, geen spreektaal.",
+      "d": 1
+     },
+     {
+      "v": "Welk begrip hoort bij deze omschrijving: \"beleefd, geen spreektaal\"?",
+      "o": [
+       "Simile",
+       "Formal register",
+       "Samenvatting",
+       "Present continuous"
       ],
       "c": 1,
-      "u": "«Formal register» betekent: beleefd, geen spreektaal.",
+      "u": "Het juiste begrip is «Formal register»: beleefd, geen spreektaal.",
+      "d": 2
+     },
+     {
+      "v": "Welke term past bij: \"beleefd, geen spreektaal\"?",
+      "o": [
+       "Cause/effect",
+       "Formal register",
+       "Polite requests",
+       "Addition"
+      ],
+      "c": 1,
+      "u": "Het juiste begrip is «Formal register»: beleefd, geen spreektaal.",
+      "d": 3
+     },
+     {
+      "v": "Wat betekent «Salutation & closing»?",
+      "o": [
+       "eerste keer: grote lijn, niet elk woord",
+       "Dear Sir/Madam … Yours faithfully",
+       "vergelijking met \"like\"/\"as\"as brave as a lion",
+       "verbinden en structureren"
+      ],
+      "c": 1,
+      "u": "«Salutation & closing» betekent: Dear Sir/Madam … Yours faithfully.",
       "d": 1
      },
      {
       "v": "Welk begrip hoort bij deze omschrijving: \"Dear Sir/Madam … Yours faithfully\"?",
       "o": [
-       "static",
-       "Tone",
+       "Collocations",
        "Salutation & closing",
-       "Conflict"
+       "Conclusion",
+       "Useful phrases"
       ],
-      "c": 2,
+      "c": 1,
       "u": "Het juiste begrip is «Salutation & closing»: Dear Sir/Madam … Yours faithfully.",
       "d": 2
      },
      {
+      "v": "Welke term past bij: \"Dear Sir/Madam … Yours faithfully\"?",
+      "o": [
+       "Cause/effect",
+       "Addition",
+       "Salutation & closing",
+       "Contrast"
+      ],
+      "c": 2,
+      "u": "Het juiste begrip is «Salutation & closing»: Dear Sir/Madam … Yours faithfully.",
+      "d": 3
+     },
+     {
+      "v": "Wat betekent «Polite requests»?",
+      "o": [
+       "vaste woordcombinaties (make/do)",
+       "gewoonte, feitShe works here.",
+       "\"I would be grateful if…\"",
+       "prefixes en suffixes"
+      ],
+      "c": 2,
+      "u": "«Polite requests» betekent: \"I would be grateful if…\".",
+      "d": 1
+     },
+     {
       "v": "Welk begrip hoort bij deze omschrijving: \"\"I would be grateful if…\"\"?",
       "o": [
-       "Conclusion",
-       "Linking words",
-       "Contrast",
-       "Polite requests"
+       "Polite requests",
+       "Character",
+       "Example",
+       "Reference words"
       ],
-      "c": 3,
+      "c": 0,
+      "u": "Het juiste begrip is «Polite requests»: \"I would be grateful if…\".",
+      "d": 2
+     },
+     {
+      "v": "Welke term past bij: \"\"I would be grateful if…\"\"?",
+      "o": [
+       "Polite requests",
+       "Formal register",
+       "Paragraph (PIE)",
+       "Linking words"
+      ],
+      "c": 0,
       "u": "Het juiste begrip is «Polite requests»: \"I would be grateful if…\".",
       "d": 3
      },
      {
       "v": "Wat betekent «Paragraph (PIE)»?",
       "o": [
-       "moreover, in addition, furthermore",
-       "\"on the other hand\", \"however\"",
+       "markeren structuur (samenvatting, contrast)",
+       "een personage vertelt; beperkt tot eigen kennis",
        "Point, Illustration, Explanation",
-       "\"I see your point, but…\", \"I'm not so sure\""
+       "beeld zónder \"like\"/\"as\"time is a thief"
       ],
       "c": 2,
       "u": "«Paragraph (PIE)» betekent: Point, Illustration, Explanation.",
       "d": 1
      },
      {
+      "v": "Welk begrip hoort bij deze omschrijving: \"Point, Illustration, Explanation\"?",
+      "o": [
+       "Personification",
+       "Paragraph (PIE)",
+       "Literary devices",
+       "Cause/effect"
+      ],
+      "c": 1,
+      "u": "Het juiste begrip is «Paragraph (PIE)»: Point, Illustration, Explanation.",
+      "d": 2
+     },
+     {
+      "v": "Welke term past bij: \"Point, Illustration, Explanation\"?",
+      "o": [
+       "Linking words",
+       "Conclusion",
+       "Addition",
+       "Paragraph (PIE)"
+      ],
+      "c": 3,
+      "u": "Het juiste begrip is «Paragraph (PIE)»: Point, Illustration, Explanation.",
+      "d": 3
+     },
+     {
+      "v": "Wat betekent «Linking words»?",
+      "o": [
+       "complex, meerdere kanten",
+       "verbinden en structureren",
+       "because, therefore, so, as a result, since",
+       "hint naar wat later gebeurtdark clouds gathering"
+      ],
+      "c": 1,
+      "u": "«Linking words» betekent: verbinden en structureren.",
+      "d": 1
+     },
+     {
       "v": "Welk begrip hoort bij deze omschrijving: \"verbinden en structureren\"?",
       "o": [
-       "Contrast",
-       "Metaphor",
+       "re-",
        "Linking words",
-       "Simile"
+       "Present simple",
+       "Collocations"
       ],
-      "c": 2,
+      "c": 1,
       "u": "Het juiste begrip is «Linking words»: verbinden en structureren.",
       "d": 2
      },
      {
+      "v": "Welke term past bij: \"verbinden en structureren\"?",
+      "o": [
+       "Paragraph (PIE)",
+       "Linking words",
+       "Cause/effect",
+       "Addition"
+      ],
+      "c": 1,
+      "u": "Het juiste begrip is «Linking words»: verbinden en structureren.",
+      "d": 3
+     },
+     {
+      "v": "Wat betekent «Contrast»?",
+      "o": [
+       "however, although, on the other hand",
+       "because, therefore, so, as a result, since",
+       "\"that's why\", \"as a result\"",
+       "markeren structuur (samenvatting, contrast)"
+      ],
+      "c": 0,
+      "u": "«Contrast» betekent: however, although, on the other hand.",
+      "d": 1
+     },
+     {
       "v": "Welk begrip hoort bij deze omschrijving: \"however, although, on the other hand\"?",
       "o": [
-       "Salutation & closing",
-       "Formal register",
-       "Linking words",
-       "Contrast"
+       "Inference",
+       "Contrast",
+       "Conclusion",
+       "Beleefd oneens"
       ],
-      "c": 3,
+      "c": 1,
+      "u": "Het juiste begrip is «Contrast»: however, although, on the other hand.",
+      "d": 2
+     },
+     {
+      "v": "Welke term past bij: \"however, although, on the other hand\"?",
+      "o": [
+       "Salutation & closing",
+       "Contrast",
+       "Formal register",
+       "Polite requests"
+      ],
+      "c": 1,
       "u": "Het juiste begrip is «Contrast»: however, although, on the other hand.",
       "d": 3
      },
@@ -12698,35 +20254,107 @@ var VAKKEN = [
       "v": "Wat betekent «Addition»?",
       "o": [
        "moreover, in addition, furthermore",
-       "gewoonte, feitShe works here.",
-       "focus op kernwoorden",
-       "in conclusion, to sum up"
+       "de centrale boodschap/idee",
+       "eerste keer: grote lijn, niet elk woord",
+       "in short, to sum up, all in all"
       ],
       "c": 0,
       "u": "«Addition» betekent: moreover, in addition, furthermore.",
       "d": 1
      },
      {
-      "v": "Welk begrip hoort bij deze omschrijving: \"therefore, as a result, because\"?",
+      "v": "Welk begrip hoort bij deze omschrijving: \"moreover, in addition, furthermore\"?",
       "o": [
-       "Metaphor",
-       "Tenses",
        "Cause/effect",
-       "Samenvatting"
+       "static",
+       "Instemmen",
+       "Addition"
+      ],
+      "c": 3,
+      "u": "Het juiste begrip is «Addition»: moreover, in addition, furthermore.",
+      "d": 2
+     },
+     {
+      "v": "Welke term past bij: \"moreover, in addition, furthermore\"?",
+      "o": [
+       "Addition",
+       "Polite requests",
+       "Salutation & closing",
+       "Conclusion"
+      ],
+      "c": 0,
+      "u": "Het juiste begrip is «Addition»: moreover, in addition, furthermore.",
+      "d": 3
+     },
+     {
+      "v": "Wat betekent «Cause/effect»?",
+      "o": [
+       "opnieuwrewrite, rebuild",
+       "\"he/she\"; volgt één personage",
+       "therefore, as a result, because",
+       "for example, such as, for instance"
       ],
       "c": 2,
+      "u": "«Cause/effect» betekent: therefore, as a result, because.",
+      "d": 1
+     },
+     {
+      "v": "Welk begrip hoort bij deze omschrijving: \"therefore, as a result, because\"?",
+      "o": [
+       "Collocations",
+       "Cause/effect",
+       "flat",
+       "Conclusie"
+      ],
+      "c": 1,
       "u": "Het juiste begrip is «Cause/effect»: therefore, as a result, because.",
       "d": 2
      },
      {
-      "v": "Welk begrip hoort bij deze omschrijving: \"in conclusion, to sum up\"?",
+      "v": "Welke term past bij: \"therefore, as a result, because\"?",
       "o": [
-       "Polite requests",
        "Conclusion",
-       "Paragraph (PIE)",
-       "Salutation & closing"
+       "Cause/effect",
+       "Salutation & closing",
+       "Linking words"
       ],
       "c": 1,
+      "u": "Het juiste begrip is «Cause/effect»: therefore, as a result, because.",
+      "d": 3
+     },
+     {
+      "v": "Wat betekent «Conclusion»?",
+      "o": [
+       "Point, Illustration, Explanation",
+       "om herhaling vragen",
+       "in conclusion, to sum up",
+       "round/flat, dynamic/static"
+      ],
+      "c": 2,
+      "u": "«Conclusion» betekent: in conclusion, to sum up.",
+      "d": 1
+     },
+     {
+      "v": "Welk begrip hoort bij deze omschrijving: \"in conclusion, to sum up\"?",
+      "o": [
+       "Inference",
+       "Conclusion",
+       "round",
+       "Cause/effect"
+      ],
+      "c": 1,
+      "u": "Het juiste begrip is «Conclusion»: in conclusion, to sum up.",
+      "d": 2
+     },
+     {
+      "v": "Welke term past bij: \"in conclusion, to sum up\"?",
+      "o": [
+       "Conclusion",
+       "Salutation & closing",
+       "Polite requests",
+       "Paragraph (PIE)"
+      ],
+      "c": 0,
       "u": "Het juiste begrip is «Conclusion»: in conclusion, to sum up.",
       "d": 3
      }
@@ -12904,45 +20532,117 @@ var VAKKEN = [
      {
       "v": "Wat betekent «Theme»?",
       "o": [
-       "moreover, in addition, furthermore",
        "de centrale boodschap/idee",
-       "vloeiend genoeg over bekende onderwerpen",
-       "\"that's why\", \"as a result\""
+       "\"I see your point, but…\", \"I'm not so sure\"",
+       "een personage vertelt; beperkt tot eigen kennis",
+       "beeld zónder \"like\"/\"as\"time is a thief"
+      ],
+      "c": 0,
+      "u": "«Theme» betekent: de centrale boodschap/idee.",
+      "d": 1
+     },
+     {
+      "v": "Welk begrip hoort bij deze omschrijving: \"de centrale boodschap/idee\"?",
+      "o": [
+       "Signal words",
+       "Conclusion",
+       "Contrast",
+       "Theme"
+      ],
+      "c": 3,
+      "u": "Het juiste begrip is «Theme»: de centrale boodschap/idee.",
+      "d": 2
+     },
+     {
+      "v": "Welke term past bij: \"de centrale boodschap/idee\"?",
+      "o": [
+       "dynamic",
+       "Theme",
+       "First person (\"I\")",
+       "Metaphor"
       ],
       "c": 1,
-      "u": "«Theme» betekent: de centrale boodschap/idee.",
+      "u": "Het juiste begrip is «Theme»: de centrale boodschap/idee.",
+      "d": 3
+     },
+     {
+      "v": "Wat betekent «Character»?",
+      "o": [
+       "beleefd, geen spreektaal",
+       "round/flat, dynamic/static",
+       "eenvoudig, één trek",
+       "door wiens ogen (first/third person)"
+      ],
+      "c": 1,
+      "u": "«Character» betekent: round/flat, dynamic/static.",
       "d": 1
      },
      {
       "v": "Welk begrip hoort bij deze omschrijving: \"round/flat, dynamic/static\"?",
       "o": [
-       "Signal phrases",
-       "Collocations",
-       "Conditionals",
-       "Character"
+       "Ophelderen",
+       "Character",
+       "Theme",
+       "Samenvatting"
       ],
-      "c": 3,
+      "c": 1,
       "u": "Het juiste begrip is «Character»: round/flat, dynamic/static.",
       "d": 2
      },
      {
-      "v": "Welk begrip hoort bij deze omschrijving: \"door wiens ogen (first/third person)\"?",
+      "v": "Welke term past bij: \"round/flat, dynamic/static\"?",
       "o": [
        "Literary devices",
-       "Omniscient",
-       "Narrative perspective",
-       "dynamic"
+       "Conflict",
+       "Character",
+       "Foreshadowing"
       ],
       "c": 2,
+      "u": "Het juiste begrip is «Character»: round/flat, dynamic/static.",
+      "d": 3
+     },
+     {
+      "v": "Wat betekent «Narrative perspective»?",
+      "o": [
+       "opnieuwrewrite, rebuild",
+       "for example, such as, for instance",
+       "beleefd, geen spreektaal",
+       "door wiens ogen (first/third person)"
+      ],
+      "c": 3,
+      "u": "«Narrative perspective» betekent: door wiens ogen (first/third person).",
+      "d": 1
+     },
+     {
+      "v": "Welk begrip hoort bij deze omschrijving: \"door wiens ogen (first/third person)\"?",
+      "o": [
+       "Conclusion",
+       "Example",
+       "Narrative perspective",
+       "Contrast"
+      ],
+      "c": 2,
+      "u": "Het juiste begrip is «Narrative perspective»: door wiens ogen (first/third person).",
+      "d": 2
+     },
+     {
+      "v": "Welke term past bij: \"door wiens ogen (first/third person)\"?",
+      "o": [
+       "Omniscient",
+       "Narrative perspective",
+       "static",
+       "round"
+      ],
+      "c": 1,
       "u": "Het juiste begrip is «Narrative perspective»: door wiens ogen (first/third person).",
       "d": 3
      },
      {
       "v": "Wat betekent «Conflict»?",
       "o": [
-       "\"he/she\"; volgt één personage",
-       "vloeiend genoeg over bekende onderwerpen",
-       "opnieuwrewrite, rebuild",
+       "linking words wijzen het verband",
+       "maakt zelfstandig nw.happiness, ability",
+       "therefore, as a result, because",
        "de strijd die het verhaal drijft"
       ],
       "c": 3,
@@ -12950,24 +20650,96 @@ var VAKKEN = [
       "d": 1
      },
      {
+      "v": "Welk begrip hoort bij deze omschrijving: \"de strijd die het verhaal drijft\"?",
+      "o": [
+       "Cause/effect",
+       "Conflict",
+       "Tone",
+       "Narrative perspective"
+      ],
+      "c": 1,
+      "u": "Het juiste begrip is «Conflict»: de strijd die het verhaal drijft.",
+      "d": 2
+     },
+     {
+      "v": "Welke term past bij: \"de strijd die het verhaal drijft\"?",
+      "o": [
+       "flat",
+       "Narrative perspective",
+       "Character",
+       "Conflict"
+      ],
+      "c": 3,
+      "u": "Het juiste begrip is «Conflict»: de strijd die het verhaal drijft.",
+      "d": 3
+     },
+     {
+      "v": "Wat betekent «Literary devices»?",
+      "o": [
+       "beleefd, geen spreektaal",
+       "because, therefore, so, as a result, since",
+       "metaphor, simile, foreshadowing",
+       "Dear Sir/Madam … Yours faithfully"
+      ],
+      "c": 2,
+      "u": "«Literary devices» betekent: metaphor, simile, foreshadowing.",
+      "d": 1
+     },
+     {
       "v": "Welk begrip hoort bij deze omschrijving: \"metaphor, simile, foreshadowing\"?",
       "o": [
-       "Literary devices",
-       "Gist first",
-       "static",
-       "Polite requests"
+       "-ful, -less",
+       "Addition",
+       "Reference words",
+       "Literary devices"
       ],
-      "c": 0,
+      "c": 3,
       "u": "Het juiste begrip is «Literary devices»: metaphor, simile, foreshadowing.",
       "d": 2
+     },
+     {
+      "v": "Welke term past bij: \"metaphor, simile, foreshadowing\"?",
+      "o": [
+       "round",
+       "Metaphor",
+       "Literary devices",
+       "static"
+      ],
+      "c": 2,
+      "u": "Het juiste begrip is «Literary devices»: metaphor, simile, foreshadowing.",
+      "d": 3
+     },
+     {
+      "v": "Wat betekent «First person (\"I\")»?",
+      "o": [
+       "een personage vertelt; beperkt tot eigen kennis",
+       "globaal lezen vs. gericht zoeken",
+       "houding: serious, ironic, critical…",
+       "Point, Illustration, Explanation"
+      ],
+      "c": 0,
+      "u": "«First person (\"I\")» betekent: een personage vertelt; beperkt tot eigen kennis.",
+      "d": 1
      },
      {
       "v": "Welk begrip hoort bij deze omschrijving: \"een personage vertelt; beperkt tot eigen kennis\"?",
       "o": [
        "dynamic",
-       "Character",
+       "Contrast",
        "First person (\"I\")",
-       "Personification"
+       "Passive"
+      ],
+      "c": 2,
+      "u": "Het juiste begrip is «First person (\"I\")»: een personage vertelt; beperkt tot eigen kennis.",
+      "d": 2
+     },
+     {
+      "v": "Welke term past bij: \"een personage vertelt; beperkt tot eigen kennis\"?",
+      "o": [
+       "Metaphor",
+       "flat",
+       "First person (\"I\")",
+       "Literary devices"
       ],
       "c": 2,
       "u": "Het juiste begrip is «First person (\"I\")»: een personage vertelt; beperkt tot eigen kennis.",
@@ -12977,69 +20749,213 @@ var VAKKEN = [
       "v": "Wat betekent «Third person limited»?",
       "o": [
        "\"he/she\"; volgt één personage",
-       "linking words wijzen het verband",
-       "prefixes en suffixes",
-       "afleiden wat er niet letterlijk staat"
+       "opnieuwrewrite, rebuild",
+       "verandert door het verhaal",
+       "\"I would be grateful if…\""
       ],
       "c": 0,
       "u": "«Third person limited» betekent: \"he/she\"; volgt één personage.",
       "d": 1
      },
      {
+      "v": "Welk begrip hoort bij deze omschrijving: \"\"he/she\"; volgt één personage\"?",
+      "o": [
+       "Third person limited",
+       "Instemmen",
+       "Paragraph (PIE)",
+       "-ness, -ity"
+      ],
+      "c": 0,
+      "u": "Het juiste begrip is «Third person limited»: \"he/she\"; volgt één personage.",
+      "d": 2
+     },
+     {
+      "v": "Welke term past bij: \"\"he/she\"; volgt één personage\"?",
+      "o": [
+       "flat",
+       "Third person limited",
+       "Personification",
+       "Metaphor"
+      ],
+      "c": 1,
+      "u": "Het juiste begrip is «Third person limited»: \"he/she\"; volgt één personage.",
+      "d": 3
+     },
+     {
+      "v": "Wat betekent «Omniscient»?",
+      "o": [
+       "however, although, on the other hand",
+       "alwetend; kent ieders gedachten",
+       "therefore, as a result, because",
+       "agreeing, disagreeing, opinion"
+      ],
+      "c": 1,
+      "u": "«Omniscient» betekent: alwetend; kent ieders gedachten.",
+      "d": 1
+     },
+     {
       "v": "Welk begrip hoort bij deze omschrijving: \"alwetend; kent ieders gedachten\"?",
       "o": [
-       "Fillers",
-       "Conditionals",
        "Omniscient",
-       "First person (\"I\")"
+       "Signal words",
+       "Tone",
+       "Conclusie"
       ],
-      "c": 2,
+      "c": 0,
       "u": "Het juiste begrip is «Omniscient»: alwetend; kent ieders gedachten.",
       "d": 2
      },
      {
-      "v": "Welk begrip hoort bij deze omschrijving: \"vergelijking met \"like\"/\"as\"as brave as a lion\"?",
+      "v": "Welke term past bij: \"alwetend; kent ieders gedachten\"?",
       "o": [
-       "static",
-       "Theme",
-       "Simile",
-       "Character"
+       "round",
+       "dynamic",
+       "flat",
+       "Omniscient"
+      ],
+      "c": 3,
+      "u": "Het juiste begrip is «Omniscient»: alwetend; kent ieders gedachten.",
+      "d": 3
+     },
+     {
+      "v": "Wat betekent «Simile»?",
+      "o": [
+       "alwetend; kent ieders gedachten",
+       "\"he/she\"; volgt één personage",
+       "vergelijking met \"like\"/\"as\"as brave as a lion",
+       "\"Could you repeat that, please?\""
       ],
       "c": 2,
+      "u": "«Simile» betekent: vergelijking met \"like\"/\"as\"as brave as a lion. Anders dan een metaphor: a simile uses \"like\"/\"as\".",
+      "d": 1
+     },
+     {
+      "v": "Welk begrip hoort bij deze omschrijving: \"vergelijking met \"like\"/\"as\"as brave as a lion\"?",
+      "o": [
+       "Simile",
+       "Formal register",
+       "Polite requests",
+       "Example"
+      ],
+      "c": 0,
+      "u": "Het juiste begrip is «Simile»: vergelijking met \"like\"/\"as\"as brave as a lion. Anders dan een metaphor: a simile uses \"like\"/\"as\".",
+      "d": 2
+     },
+     {
+      "v": "Welke term past bij: \"vergelijking met \"like\"/\"as\"as brave as a lion\"?",
+      "o": [
+       "Metaphor",
+       "Simile",
+       "Omniscient",
+       "Literary devices"
+      ],
+      "c": 1,
       "u": "Het juiste begrip is «Simile»: vergelijking met \"like\"/\"as\"as brave as a lion. Anders dan een metaphor: a simile uses \"like\"/\"as\".",
       "d": 3
      },
      {
       "v": "Wat betekent «Metaphor»?",
       "o": [
-       "prefixes en suffixes",
-       "beeld zónder \"like\"/\"as\"time is a thief",
-       "menselijke trekken aan iets levenloosthe wind whispered",
-       "houding: serious, ironic, critical…"
+       "nu bezigShe is working now.",
+       "houding vs. doel van de schrijver",
+       "if-zinnen: type 0, 1, 2",
+       "beeld zónder \"like\"/\"as\"time is a thief"
       ],
-      "c": 1,
+      "c": 3,
       "u": "«Metaphor» betekent: beeld zónder \"like\"/\"as\"time is a thief. Anders dan een simile: a metaphor omits \"like\"/\"as\".",
+      "d": 1
+     },
+     {
+      "v": "Welk begrip hoort bij deze omschrijving: \"beeld zónder \"like\"/\"as\"time is a thief\"?",
+      "o": [
+       "Metaphor",
+       "dynamic",
+       "static",
+       "Fast speech"
+      ],
+      "c": 0,
+      "u": "Het juiste begrip is «Metaphor»: beeld zónder \"like\"/\"as\"time is a thief. Anders dan een simile: a metaphor omits \"like\"/\"as\".",
+      "d": 2
+     },
+     {
+      "v": "Welke term past bij: \"beeld zónder \"like\"/\"as\"time is a thief\"?",
+      "o": [
+       "Conflict",
+       "Narrative perspective",
+       "dynamic",
+       "Metaphor"
+      ],
+      "c": 3,
+      "u": "Het juiste begrip is «Metaphor»: beeld zónder \"like\"/\"as\"time is a thief. Anders dan een simile: a metaphor omits \"like\"/\"as\".",
+      "d": 3
+     },
+     {
+      "v": "Wat betekent «Personification»?",
+      "o": [
+       "menselijke trekken aan iets levenloosthe wind whispered",
+       "eerste keer: grote lijn, niet elk woord",
+       "houding vs. doel van de schrijver",
+       "door wiens ogen (first/third person)"
+      ],
+      "c": 0,
+      "u": "«Personification» betekent: menselijke trekken aan iets levenloosthe wind whispered.",
       "d": 1
      },
      {
       "v": "Welk begrip hoort bij deze omschrijving: \"menselijke trekken aan iets levenloosthe wind whispered\"?",
       "o": [
-       "-ful, -less",
-       "Passive",
+       "Simile",
+       "Word formation",
        "Personification",
-       "Literary devices"
+       "Tenses"
       ],
       "c": 2,
       "u": "Het juiste begrip is «Personification»: menselijke trekken aan iets levenloosthe wind whispered.",
       "d": 2
      },
      {
+      "v": "Welke term past bij: \"menselijke trekken aan iets levenloosthe wind whispered\"?",
+      "o": [
+       "Narrative perspective",
+       "Personification",
+       "Theme",
+       "dynamic"
+      ],
+      "c": 1,
+      "u": "Het juiste begrip is «Personification»: menselijke trekken aan iets levenloosthe wind whispered.",
+      "d": 3
+     },
+     {
+      "v": "Wat betekent «Foreshadowing»?",
+      "o": [
+       "hint naar wat later gebeurtdark clouds gathering",
+       "in conclusion, to sum up",
+       "however, although, on the other hand",
+       "de centrale boodschap/idee"
+      ],
+      "c": 0,
+      "u": "«Foreshadowing» betekent: hint naar wat later gebeurtdark clouds gathering.",
+      "d": 1
+     },
+     {
       "v": "Welk begrip hoort bij deze omschrijving: \"hint naar wat later gebeurtdark clouds gathering\"?",
       "o": [
+       "static",
        "Foreshadowing",
-       "Conflict",
-       "Simile",
-       "dynamic"
+       "Linking words",
+       "Contrast"
+      ],
+      "c": 1,
+      "u": "Het juiste begrip is «Foreshadowing»: hint naar wat later gebeurtdark clouds gathering.",
+      "d": 2
+     },
+     {
+      "v": "Welke term past bij: \"hint naar wat later gebeurtdark clouds gathering\"?",
+      "o": [
+       "Foreshadowing",
+       "static",
+       "Omniscient",
+       "Conflict"
       ],
       "c": 0,
       "u": "Het juiste begrip is «Foreshadowing»: hint naar wat later gebeurtdark clouds gathering.",
@@ -13048,50 +20964,146 @@ var VAKKEN = [
      {
       "v": "Wat betekent «round»?",
       "o": [
+       "houding vs. doel van de schrijver",
        "however, but, although, whereas, on the other hand",
-       "because, therefore, so, as a result, since",
-       "complex, meerdere kanten",
-       "betekenis raden uit de context"
+       "om herhaling vragen",
+       "complex, meerdere kanten"
       ],
-      "c": 2,
+      "c": 3,
       "u": "«round» betekent: complex, meerdere kanten.",
+      "d": 1
+     },
+     {
+      "v": "Welk begrip hoort bij deze omschrijving: \"complex, meerdere kanten\"?",
+      "o": [
+       "Conflict",
+       "round",
+       "Cause/effect",
+       "Contrast"
+      ],
+      "c": 1,
+      "u": "Het juiste begrip is «round»: complex, meerdere kanten.",
+      "d": 2
+     },
+     {
+      "v": "Welke term past bij: \"complex, meerdere kanten\"?",
+      "o": [
+       "Foreshadowing",
+       "round",
+       "flat",
+       "Simile"
+      ],
+      "c": 1,
+      "u": "Het juiste begrip is «round»: complex, meerdere kanten.",
+      "d": 3
+     },
+     {
+      "v": "Wat betekent «flat»?",
+      "o": [
+       "\"that's why\", \"as a result\"",
+       "in conclusion, to sum up",
+       "present simple, continuous, perfect",
+       "eenvoudig, één trek"
+      ],
+      "c": 3,
+      "u": "«flat» betekent: eenvoudig, één trek.",
       "d": 1
      },
      {
       "v": "Welk begrip hoort bij deze omschrijving: \"eenvoudig, één trek\"?",
       "o": [
-       "Tone & purpose",
-       "Omniscient",
        "Reference words",
+       "flat",
+       "Polite requests",
+       "Narrative perspective"
+      ],
+      "c": 1,
+      "u": "Het juiste begrip is «flat»: eenvoudig, één trek.",
+      "d": 2
+     },
+     {
+      "v": "Welke term past bij: \"eenvoudig, één trek\"?",
+      "o": [
+       "Personification",
+       "Conflict",
+       "round",
        "flat"
       ],
       "c": 3,
       "u": "Het juiste begrip is «flat»: eenvoudig, één trek.",
-      "d": 2
+      "d": 3
+     },
+     {
+      "v": "Wat betekent «dynamic»?",
+      "o": [
+       "however, although, on the other hand",
+       "door wiens ogen (first/third person)",
+       "verandert door het verhaal",
+       "linking words wijzen het verband"
+      ],
+      "c": 2,
+      "u": "«dynamic» betekent: verandert door het verhaal.",
+      "d": 1
      },
      {
       "v": "Welk begrip hoort bij deze omschrijving: \"verandert door het verhaal\"?",
       "o": [
        "dynamic",
-       "Omniscient",
-       "static",
-       "Simile"
+       "re-",
+       "Addition",
+       "Polite requests"
       ],
       "c": 0,
+      "u": "Het juiste begrip is «dynamic»: verandert door het verhaal.",
+      "d": 2
+     },
+     {
+      "v": "Welke term past bij: \"verandert door het verhaal\"?",
+      "o": [
+       "Metaphor",
+       "Personification",
+       "dynamic",
+       "static"
+      ],
+      "c": 2,
       "u": "Het juiste begrip is «dynamic»: verandert door het verhaal.",
       "d": 3
      },
      {
       "v": "Wat betekent «static»?",
       "o": [
-       "hint naar wat later gebeurtdark clouds gathering",
-       "globaal lezen vs. gericht zoeken",
-       "afleiden wat er niet letterlijk staat",
+       "houding vs. doel van de schrijver",
+       "beeld zónder \"like\"/\"as\"time is a thief",
+       "eerste keer: grote lijn, niet elk woord",
        "blijft hetzelfde"
       ],
       "c": 3,
       "u": "«static» betekent: blijft hetzelfde.",
       "d": 1
+     },
+     {
+      "v": "Welk begrip hoort bij deze omschrijving: \"blijft hetzelfde\"?",
+      "o": [
+       "Instemmen",
+       "static",
+       "Contrast",
+       "Conflict"
+      ],
+      "c": 1,
+      "u": "Het juiste begrip is «static»: blijft hetzelfde.",
+      "d": 2
+     },
+     {
+      "v": "Welke term past bij: \"blijft hetzelfde\"?",
+      "o": [
+       "dynamic",
+       "static",
+       "Simile",
+       "First person (\"I\")"
+      ],
+      "c": 1,
+      "u": "Het juiste begrip is «static»: blijft hetzelfde.",
+      "d": 3
      }
     ],
     "oe": [
@@ -13515,86 +21527,254 @@ var VAKKEN = [
      {
       "v": "Wat betekent «Primaire bron»?",
       "o": [
-       "een bron die uit de tijd zelf stamt",
        "de militaire en bestuurlijke leider in de Republiek",
-       "de positie en tijd van de historicus kleuren zijn oordeel",
-       "het beoordelen van de betrouwbaarheid en representativiteit van een bron"
+       "de machtsstrijd tussen de VS en de Sovjet-Unie",
+       "een bron die uit de tijd zelf stamt",
+       "een fundamentele vrijheid van burgers"
+      ],
+      "c": 2,
+      "u": "«Primaire bron» betekent: een bron die uit de tijd zelf stamt. Anders dan een secundaire bron: een primaire bron stamt uit de tijd zelf.",
+      "d": 1
+     },
+     {
+      "v": "Welk begrip hoort bij deze omschrijving: \"een bron die uit de tijd zelf stamt\"?",
+      "o": [
+       "Holocaust",
+       "Primaire bron",
+       "Algemeen kiesrecht",
+       "Bronkritiek"
+      ],
+      "c": 1,
+      "u": "Het juiste begrip is «Primaire bron»: een bron die uit de tijd zelf stamt. Anders dan een secundaire bron: een primaire bron stamt uit de tijd zelf.",
+      "d": 2
+     },
+     {
+      "v": "Welke term past bij: \"een bron die uit de tijd zelf stamt\"?",
+      "o": [
+       "Anachronisme",
+       "Standplaatsgebondenheid",
+       "Continuïteit",
+       "Primaire bron"
+      ],
+      "c": 3,
+      "u": "Het juiste begrip is «Primaire bron»: een bron die uit de tijd zelf stamt. Anders dan een secundaire bron: een primaire bron stamt uit de tijd zelf.",
+      "d": 3
+     },
+     {
+      "v": "Wat betekent «Secundaire bron»?",
+      "o": [
+       "een bron die later is gemaakt op basis van primaire bronnen",
+       "een vaardigheid die je breed kunt inzetten",
+       "een staat die alle terreinen van het leven wil beheersen",
+       "de machtsstrijd tussen de VS en de Sovjet-Unie"
       ],
       "c": 0,
-      "u": "«Primaire bron» betekent: een bron die uit de tijd zelf stamt. Anders dan een secundaire bron: een primaire bron stamt uit de tijd zelf.",
+      "u": "«Secundaire bron» betekent: een bron die later is gemaakt op basis van primaire bronnen. Anders dan een primaire bron: later gemaakt over die tijd.",
       "d": 1
      },
      {
       "v": "Welk begrip hoort bij deze omschrijving: \"een bron die later is gemaakt op basis van primaire bronnen\"?",
       "o": [
-       "Rechtsstaat",
-       "Secundaire bron",
-       "Fascisme",
-       "Imperialisme"
+       "Multiperspectiviteit",
+       "Transferabele vaardigheid",
+       "Standplaatsgebondenheid",
+       "Secundaire bron"
       ],
-      "c": 1,
+      "c": 3,
       "u": "Het juiste begrip is «Secundaire bron»: een bron die later is gemaakt op basis van primaire bronnen. Anders dan een primaire bron: later gemaakt over die tijd.",
       "d": 2
      },
      {
+      "v": "Welke term past bij: \"een bron die later is gemaakt op basis van primaire bronnen\"?",
+      "o": [
+       "Secundaire bron",
+       "Aanleiding",
+       "Anachronisme",
+       "Standplaatsgebondenheid"
+      ],
+      "c": 0,
+      "u": "Het juiste begrip is «Secundaire bron»: een bron die later is gemaakt op basis van primaire bronnen. Anders dan een primaire bron: later gemaakt over die tijd.",
+      "d": 3
+     },
+     {
+      "v": "Wat betekent «Bronkritiek»?",
+      "o": [
+       "het proces waarbij koloniën onafhankelijk worden",
+       "het beoordelen van de betrouwbaarheid en representativiteit van een bron",
+       "de bestuurlijke elite van de steden",
+       "de periode tussen de twee wereldoorlogen"
+      ],
+      "c": 1,
+      "u": "«Bronkritiek» betekent: het beoordelen van de betrouwbaarheid en representativiteit van een bron.",
+      "d": 1
+     },
+     {
       "v": "Welk begrip hoort bij deze omschrijving: \"het beoordelen van de betrouwbaarheid en representativiteit van een bron\"?",
       "o": [
+       "Tolerantie",
+       "Bronkritiek",
        "Primaire bron",
-       "Continuïteit",
-       "Aanleiding",
-       "Bronkritiek"
+       "Holocaust"
       ],
-      "c": 3,
+      "c": 1,
+      "u": "Het juiste begrip is «Bronkritiek»: het beoordelen van de betrouwbaarheid en representativiteit van een bron.",
+      "d": 2
+     },
+     {
+      "v": "Welke term past bij: \"het beoordelen van de betrouwbaarheid en representativiteit van een bron\"?",
+      "o": [
+       "Continuïteit",
+       "Bronkritiek",
+       "Aanleiding",
+       "Primaire bron"
+      ],
+      "c": 1,
       "u": "Het juiste begrip is «Bronkritiek»: het beoordelen van de betrouwbaarheid en representativiteit van een bron.",
       "d": 3
      },
      {
       "v": "Wat betekent «Anachronisme»?",
       "o": [
-       "de scheiding van de wetgevende, uitvoerende en rechterlijke macht",
+       "de systematische massamoord op de Joden",
+       "de directe, kortetermijnvonk van een gebeurtenis",
        "het verleden beoordelen met de normen en kennis van nu",
-       "het proces waarbij koloniën onafhankelijk worden",
-       "een gebeurtenis vanuit meerdere gezichtspunten bekijken"
+       "het streven naar koloniale overheersing"
       ],
-      "c": 1,
+      "c": 2,
       "u": "«Anachronisme» betekent: het verleden beoordelen met de normen en kennis van nu.",
+      "d": 1
+     },
+     {
+      "v": "Welk begrip hoort bij deze omschrijving: \"het verleden beoordelen met de normen en kennis van nu\"?",
+      "o": [
+       "VOC",
+       "Fascisme",
+       "Interbellum",
+       "Anachronisme"
+      ],
+      "c": 3,
+      "u": "Het juiste begrip is «Anachronisme»: het verleden beoordelen met de normen en kennis van nu.",
+      "d": 2
+     },
+     {
+      "v": "Welke term past bij: \"het verleden beoordelen met de normen en kennis van nu\"?",
+      "o": [
+       "Standplaatsgebondenheid",
+       "Secundaire bron",
+       "Primaire bron",
+       "Anachronisme"
+      ],
+      "c": 3,
+      "u": "Het juiste begrip is «Anachronisme»: het verleden beoordelen met de normen en kennis van nu.",
+      "d": 3
+     },
+     {
+      "v": "Wat betekent «Continuïteit»?",
+      "o": [
+       "dat wat door de tijd heen gelijk blijft",
+       "een staat die alle terreinen van het leven wil beheersen",
+       "de directe, kortetermijnvonk van een gebeurtenis",
+       "een staat waarin de macht aan wetten is gebonden"
+      ],
+      "c": 0,
+      "u": "«Continuïteit» betekent: dat wat door de tijd heen gelijk blijft.",
       "d": 1
      },
      {
       "v": "Welk begrip hoort bij deze omschrijving: \"dat wat door de tijd heen gelijk blijft\"?",
       "o": [
-       "Ministeriële verantwoordelijkheid",
+       "Grondrecht",
        "Continuïteit",
-       "Secundaire bron",
-       "Rechtsstaat"
+       "Fascisme",
+       "Primaire bron"
       ],
       "c": 1,
       "u": "Het juiste begrip is «Continuïteit»: dat wat door de tijd heen gelijk blijft.",
       "d": 2
      },
      {
-      "v": "Welk begrip hoort bij deze omschrijving: \"de directe, kortetermijnvonk van een gebeurtenis\"?",
+      "v": "Welke term past bij: \"dat wat door de tijd heen gelijk blijft\"?",
       "o": [
-       "Standplaatsgebondenheid",
+       "Primaire bron",
+       "Continuïteit",
        "Aanleiding",
-       "Anachronisme",
-       "Bronkritiek"
+       "Anachronisme"
       ],
       "c": 1,
+      "u": "Het juiste begrip is «Continuïteit»: dat wat door de tijd heen gelijk blijft.",
+      "d": 3
+     },
+     {
+      "v": "Wat betekent «Aanleiding»?",
+      "o": [
+       "de directe, kortetermijnvonk van een gebeurtenis",
+       "een staat die alle terreinen van het leven wil beheersen",
+       "het verleden beoordelen met de normen en kennis van nu",
+       "stemrecht voor alle volwassenen"
+      ],
+      "c": 0,
+      "u": "«Aanleiding» betekent: de directe, kortetermijnvonk van een gebeurtenis.",
+      "d": 1
+     },
+     {
+      "v": "Welk begrip hoort bij deze omschrijving: \"de directe, kortetermijnvonk van een gebeurtenis\"?",
+      "o": [
+       "Rechtsstaat",
+       "Aanleiding",
+       "Secundaire bron",
+       "Trias politica"
+      ],
+      "c": 1,
+      "u": "Het juiste begrip is «Aanleiding»: de directe, kortetermijnvonk van een gebeurtenis.",
+      "d": 2
+     },
+     {
+      "v": "Welke term past bij: \"de directe, kortetermijnvonk van een gebeurtenis\"?",
+      "o": [
+       "Aanleiding",
+       "Continuïteit",
+       "Anachronisme",
+       "Standplaatsgebondenheid"
+      ],
+      "c": 0,
       "u": "Het juiste begrip is «Aanleiding»: de directe, kortetermijnvonk van een gebeurtenis.",
       "d": 3
      },
      {
       "v": "Wat betekent «Standplaatsgebondenheid»?",
       "o": [
-       "de positie en tijd van de historicus kleuren zijn oordeel",
        "stemrecht op basis van betaalde belasting",
-       "een bron die later is gemaakt op basis van primaire bronnen",
-       "de handelscompagnie met een monopolie op de handel met Azië"
+       "de positie en tijd van de historicus kleuren zijn oordeel",
+       "de machtsstrijd tussen de VS en de Sovjet-Unie",
+       "een vaardigheid die je breed kunt inzetten"
       ],
-      "c": 0,
+      "c": 1,
       "u": "«Standplaatsgebondenheid» betekent: de positie en tijd van de historicus kleuren zijn oordeel.",
       "d": 1
+     },
+     {
+      "v": "Welk begrip hoort bij deze omschrijving: \"de positie en tijd van de historicus kleuren zijn oordeel\"?",
+      "o": [
+       "Nazisme",
+       "Imperialisme",
+       "Fascisme",
+       "Standplaatsgebondenheid"
+      ],
+      "c": 3,
+      "u": "Het juiste begrip is «Standplaatsgebondenheid»: de positie en tijd van de historicus kleuren zijn oordeel.",
+      "d": 2
+     },
+     {
+      "v": "Welke term past bij: \"de positie en tijd van de historicus kleuren zijn oordeel\"?",
+      "o": [
+       "Anachronisme",
+       "Primaire bron",
+       "Secundaire bron",
+       "Standplaatsgebondenheid"
+      ],
+      "c": 3,
+      "u": "Het juiste begrip is «Standplaatsgebondenheid»: de positie en tijd van de historicus kleuren zijn oordeel.",
+      "d": 3
      }
     ],
     "oe": [
@@ -14141,70 +22321,214 @@ var VAKKEN = [
      {
       "v": "Wat betekent «Totalitair regime»?",
       "o": [
-       "de bestuurlijke elite van de steden",
-       "een bron die uit de tijd zelf stamt",
+       "een racistische, totalitaire ideologie",
        "een staat die alle terreinen van het leven wil beheersen",
-       "de systematische massamoord op de Joden"
+       "het streven naar koloniale overheersing",
+       "de bestuurlijke elite van de steden"
       ],
-      "c": 2,
+      "c": 1,
       "u": "«Totalitair regime» betekent: een staat die alle terreinen van het leven wil beheersen.",
+      "d": 1
+     },
+     {
+      "v": "Welk begrip hoort bij deze omschrijving: \"een staat die alle terreinen van het leven wil beheersen\"?",
+      "o": [
+       "Holocaust",
+       "Continuïteit",
+       "Trias politica",
+       "Totalitair regime"
+      ],
+      "c": 3,
+      "u": "Het juiste begrip is «Totalitair regime»: een staat die alle terreinen van het leven wil beheersen.",
+      "d": 2
+     },
+     {
+      "v": "Welke term past bij: \"een staat die alle terreinen van het leven wil beheersen\"?",
+      "o": [
+       "Interbellum",
+       "Dekolonisatie",
+       "Holocaust",
+       "Totalitair regime"
+      ],
+      "c": 3,
+      "u": "Het juiste begrip is «Totalitair regime»: een staat die alle terreinen van het leven wil beheersen.",
+      "d": 3
+     },
+     {
+      "v": "Wat betekent «Fascisme»?",
+      "o": [
+       "het dulden van andere godsdiensten of opvattingen",
+       "een staat waarin de macht aan wetten is gebonden",
+       "het streven naar koloniale overheersing",
+       "een nationalistische, autoritaire ideologie"
+      ],
+      "c": 3,
+      "u": "«Fascisme» betekent: een nationalistische, autoritaire ideologie.",
       "d": 1
      },
      {
       "v": "Welk begrip hoort bij deze omschrijving: \"een nationalistische, autoritaire ideologie\"?",
       "o": [
-       "Interbellum",
-       "Totalitair regime",
+       "Koude Oorlog",
+       "Ministeriële verantwoordelijkheid",
        "Fascisme",
-       "Anachronisme"
+       "Communisme"
       ],
       "c": 2,
       "u": "Het juiste begrip is «Fascisme»: een nationalistische, autoritaire ideologie.",
       "d": 2
      },
      {
+      "v": "Welke term past bij: \"een nationalistische, autoritaire ideologie\"?",
+      "o": [
+       "Communisme",
+       "Fascisme",
+       "Nazisme",
+       "Totalitair regime"
+      ],
+      "c": 1,
+      "u": "Het juiste begrip is «Fascisme»: een nationalistische, autoritaire ideologie.",
+      "d": 3
+     },
+     {
+      "v": "Wat betekent «Nazisme»?",
+      "o": [
+       "een fundamentele vrijheid van burgers",
+       "een racistische, totalitaire ideologie",
+       "een staat die alle terreinen van het leven wil beheersen",
+       "de machtsstrijd tussen de VS en de Sovjet-Unie"
+      ],
+      "c": 1,
+      "u": "«Nazisme» betekent: een racistische, totalitaire ideologie.",
+      "d": 1
+     },
+     {
       "v": "Welk begrip hoort bij deze omschrijving: \"een racistische, totalitaire ideologie\"?",
       "o": [
+       "Nazisme",
+       "Algemeen kiesrecht",
+       "Communisme",
+       "Anachronisme"
+      ],
+      "c": 0,
+      "u": "Het juiste begrip is «Nazisme»: een racistische, totalitaire ideologie.",
+      "d": 2
+     },
+     {
+      "v": "Welke term past bij: \"een racistische, totalitaire ideologie\"?",
+      "o": [
+       "Nazisme",
        "Dekolonisatie",
        "Holocaust",
-       "Interbellum",
-       "Nazisme"
+       "Imperialisme"
       ],
-      "c": 3,
+      "c": 0,
       "u": "Het juiste begrip is «Nazisme»: een racistische, totalitaire ideologie.",
       "d": 3
      },
      {
       "v": "Wat betekent «Communisme»?",
       "o": [
-       "de directe, kortetermijnvonk van een gebeurtenis",
-       "het streven naar koloniale overheersing",
        "een ideologie van gemeenschappelijk bezit",
-       "de handelscompagnie met een monopolie op de handel met Azië"
+       "een staat waarin de macht aan wetten is gebonden",
+       "de systematische massamoord op de Joden",
+       "een vaardigheid die je breed kunt inzetten"
+      ],
+      "c": 0,
+      "u": "«Communisme» betekent: een ideologie van gemeenschappelijk bezit.",
+      "d": 1
+     },
+     {
+      "v": "Welk begrip hoort bij deze omschrijving: \"een ideologie van gemeenschappelijk bezit\"?",
+      "o": [
+       "VOC",
+       "Stadhouder",
+       "Communisme",
+       "Republiek"
       ],
       "c": 2,
-      "u": "«Communisme» betekent: een ideologie van gemeenschappelijk bezit.",
+      "u": "Het juiste begrip is «Communisme»: een ideologie van gemeenschappelijk bezit.",
+      "d": 2
+     },
+     {
+      "v": "Welke term past bij: \"een ideologie van gemeenschappelijk bezit\"?",
+      "o": [
+       "Fascisme",
+       "Dekolonisatie",
+       "Koude Oorlog",
+       "Communisme"
+      ],
+      "c": 3,
+      "u": "Het juiste begrip is «Communisme»: een ideologie van gemeenschappelijk bezit.",
+      "d": 3
+     },
+     {
+      "v": "Wat betekent «Dekolonisatie»?",
+      "o": [
+       "het proces waarbij koloniën onafhankelijk worden",
+       "een vaardigheid die je breed kunt inzetten",
+       "het streven naar koloniale overheersing",
+       "ministers verantwoorden zich aan het parlement"
+      ],
+      "c": 0,
+      "u": "«Dekolonisatie» betekent: het proces waarbij koloniën onafhankelijk worden.",
       "d": 1
      },
      {
       "v": "Welk begrip hoort bij deze omschrijving: \"het proces waarbij koloniën onafhankelijk worden\"?",
       "o": [
-       "Totalitair regime",
-       "Primaire bron",
-       "Censuskiesrecht",
-       "Dekolonisatie"
+       "Rechtsstaat",
+       "Regenten",
+       "Dekolonisatie",
+       "Bronkritiek"
       ],
-      "c": 3,
+      "c": 2,
       "u": "Het juiste begrip is «Dekolonisatie»: het proces waarbij koloniën onafhankelijk worden.",
       "d": 2
      },
      {
+      "v": "Welke term past bij: \"het proces waarbij koloniën onafhankelijk worden\"?",
+      "o": [
+       "Imperialisme",
+       "Interbellum",
+       "Communisme",
+       "Dekolonisatie"
+      ],
+      "c": 3,
+      "u": "Het juiste begrip is «Dekolonisatie»: het proces waarbij koloniën onafhankelijk worden.",
+      "d": 3
+     },
+     {
+      "v": "Wat betekent «Koude Oorlog»?",
+      "o": [
+       "de militaire en bestuurlijke leider in de Republiek",
+       "informatie beoordelen op betrouwbaarheid en herkomst",
+       "de machtsstrijd tussen de VS en de Sovjet-Unie",
+       "een ideologie van gemeenschappelijk bezit"
+      ],
+      "c": 2,
+      "u": "«Koude Oorlog» betekent: de machtsstrijd tussen de VS en de Sovjet-Unie.",
+      "d": 1
+     },
+     {
       "v": "Welk begrip hoort bij deze omschrijving: \"de machtsstrijd tussen de VS en de Sovjet-Unie\"?",
       "o": [
-       "Interbellum",
-       "Totalitair regime",
+       "Grondrecht",
+       "VOC",
        "Koude Oorlog",
-       "Imperialisme"
+       "Anachronisme"
+      ],
+      "c": 2,
+      "u": "Het juiste begrip is «Koude Oorlog»: de machtsstrijd tussen de VS en de Sovjet-Unie.",
+      "d": 2
+     },
+     {
+      "v": "Welke term past bij: \"de machtsstrijd tussen de VS en de Sovjet-Unie\"?",
+      "o": [
+       "Holocaust",
+       "Dekolonisatie",
+       "Koude Oorlog",
+       "Communisme"
       ],
       "c": 2,
       "u": "Het juiste begrip is «Koude Oorlog»: de machtsstrijd tussen de VS en de Sovjet-Unie.",
@@ -14213,36 +22537,108 @@ var VAKKEN = [
      {
       "v": "Wat betekent «Holocaust»?",
       "o": [
-       "dat wat door de tijd heen gelijk blijft",
        "de systematische massamoord op de Joden",
-       "een gebeurtenis vanuit meerdere gezichtspunten bekijken",
-       "stemrecht op basis van betaalde belasting"
+       "het beoordelen van de betrouwbaarheid en representativiteit van een bron",
+       "een staatsvorm zonder monarch",
+       "een staat waarin de macht aan wetten is gebonden"
+      ],
+      "c": 0,
+      "u": "«Holocaust» betekent: de systematische massamoord op de Joden.",
+      "d": 1
+     },
+     {
+      "v": "Welk begrip hoort bij deze omschrijving: \"de systematische massamoord op de Joden\"?",
+      "o": [
+       "Holocaust",
+       "Communisme",
+       "Transferabele vaardigheid",
+       "Algemeen kiesrecht"
+      ],
+      "c": 0,
+      "u": "Het juiste begrip is «Holocaust»: de systematische massamoord op de Joden.",
+      "d": 2
+     },
+     {
+      "v": "Welke term past bij: \"de systematische massamoord op de Joden\"?",
+      "o": [
+       "Dekolonisatie",
+       "Holocaust",
+       "Communisme",
+       "Imperialisme"
       ],
       "c": 1,
-      "u": "«Holocaust» betekent: de systematische massamoord op de Joden.",
+      "u": "Het juiste begrip is «Holocaust»: de systematische massamoord op de Joden.",
+      "d": 3
+     },
+     {
+      "v": "Wat betekent «Interbellum»?",
+      "o": [
+       "de handelscompagnie met een monopolie op de handel met Azië",
+       "de periode tussen de twee wereldoorlogen",
+       "stemrecht voor alle volwassenen",
+       "een staatsvorm zonder monarch"
+      ],
+      "c": 1,
+      "u": "«Interbellum» betekent: de periode tussen de twee wereldoorlogen.",
       "d": 1
      },
      {
       "v": "Welk begrip hoort bij deze omschrijving: \"de periode tussen de twee wereldoorlogen\"?",
       "o": [
-       "Communisme",
-       "Dekolonisatie",
+       "Bronkritiek",
        "Interbellum",
-       "Anachronisme"
+       "Koude Oorlog",
+       "Republiek"
       ],
-      "c": 2,
+      "c": 1,
       "u": "Het juiste begrip is «Interbellum»: de periode tussen de twee wereldoorlogen.",
       "d": 2
      },
      {
+      "v": "Welke term past bij: \"de periode tussen de twee wereldoorlogen\"?",
+      "o": [
+       "Koude Oorlog",
+       "Interbellum",
+       "Imperialisme",
+       "Communisme"
+      ],
+      "c": 1,
+      "u": "Het juiste begrip is «Interbellum»: de periode tussen de twee wereldoorlogen.",
+      "d": 3
+     },
+     {
+      "v": "Wat betekent «Imperialisme»?",
+      "o": [
+       "ministers verantwoorden zich aan het parlement",
+       "het streven naar koloniale overheersing",
+       "het beoordelen van de betrouwbaarheid en representativiteit van een bron",
+       "een ideologie van gemeenschappelijk bezit"
+      ],
+      "c": 1,
+      "u": "«Imperialisme» betekent: het streven naar koloniale overheersing.",
+      "d": 1
+     },
+     {
       "v": "Welk begrip hoort bij deze omschrijving: \"het streven naar koloniale overheersing\"?",
       "o": [
-       "Holocaust",
-       "Interbellum",
-       "Dekolonisatie",
-       "Imperialisme"
+       "Multiperspectiviteit",
+       "Imperialisme",
+       "Bronkritiek",
+       "Fascisme"
       ],
-      "c": 3,
+      "c": 1,
+      "u": "Het juiste begrip is «Imperialisme»: het streven naar koloniale overheersing.",
+      "d": 2
+     },
+     {
+      "v": "Welke term past bij: \"het streven naar koloniale overheersing\"?",
+      "o": [
+       "Interbellum",
+       "Totalitair regime",
+       "Imperialisme",
+       "Communisme"
+      ],
+      "c": 2,
       "u": "Het juiste begrip is «Imperialisme»: het streven naar koloniale overheersing.",
       "d": 3
      }
@@ -14684,44 +23080,116 @@ var VAKKEN = [
      {
       "v": "Wat betekent «Republiek»?",
       "o": [
-       "een bron die uit de tijd zelf stamt",
+       "informatie beoordelen op betrouwbaarheid en herkomst",
+       "de periode tussen de twee wereldoorlogen",
        "een staatsvorm zonder monarch",
-       "de scheiding van de wetgevende, uitvoerende en rechterlijke macht",
-       "het verleden beoordelen met de normen en kennis van nu"
+       "een vaardigheid die je breed kunt inzetten"
       ],
-      "c": 1,
+      "c": 2,
       "u": "«Republiek» betekent: een staatsvorm zonder monarch.",
+      "d": 1
+     },
+     {
+      "v": "Welk begrip hoort bij deze omschrijving: \"een staatsvorm zonder monarch\"?",
+      "o": [
+       "Trias politica",
+       "Primaire bron",
+       "Censuskiesrecht",
+       "Republiek"
+      ],
+      "c": 3,
+      "u": "Het juiste begrip is «Republiek»: een staatsvorm zonder monarch.",
+      "d": 2
+     },
+     {
+      "v": "Welke term past bij: \"een staatsvorm zonder monarch\"?",
+      "o": [
+       "Republiek",
+       "Tolerantie",
+       "VOC",
+       "Regenten"
+      ],
+      "c": 0,
+      "u": "Het juiste begrip is «Republiek»: een staatsvorm zonder monarch.",
+      "d": 3
+     },
+     {
+      "v": "Wat betekent «VOC»?",
+      "o": [
+       "de handelscompagnie met een monopolie op de handel met Azië",
+       "de bestuurlijke elite van de steden",
+       "het proces waarbij koloniën onafhankelijk worden",
+       "informatie beoordelen op betrouwbaarheid en herkomst"
+      ],
+      "c": 0,
+      "u": "«VOC» betekent: de handelscompagnie met een monopolie op de handel met Azië.",
       "d": 1
      },
      {
       "v": "Welk begrip hoort bij deze omschrijving: \"de handelscompagnie met een monopolie op de handel met Azië\"?",
       "o": [
-       "Holocaust",
-       "Totalitair regime",
        "VOC",
-       "Multiperspectiviteit"
+       "Secundaire bron",
+       "Communisme",
+       "Holocaust"
       ],
-      "c": 2,
+      "c": 0,
       "u": "Het juiste begrip is «VOC»: de handelscompagnie met een monopolie op de handel met Azië.",
       "d": 2
      },
      {
+      "v": "Welke term past bij: \"de handelscompagnie met een monopolie op de handel met Azië\"?",
+      "o": [
+       "VOC",
+       "Republiek",
+       "Regenten",
+       "Tolerantie"
+      ],
+      "c": 0,
+      "u": "Het juiste begrip is «VOC»: de handelscompagnie met een monopolie op de handel met Azië.",
+      "d": 3
+     },
+     {
+      "v": "Wat betekent «Regenten»?",
+      "o": [
+       "de bestuurlijke elite van de steden",
+       "informatie beoordelen op betrouwbaarheid en herkomst",
+       "een staat waarin de macht aan wetten is gebonden",
+       "stemrecht op basis van betaalde belasting"
+      ],
+      "c": 0,
+      "u": "«Regenten» betekent: de bestuurlijke elite van de steden.",
+      "d": 1
+     },
+     {
       "v": "Welk begrip hoort bij deze omschrijving: \"de bestuurlijke elite van de steden\"?",
       "o": [
-       "Tolerantie",
+       "Fascisme",
+       "Transferabele vaardigheid",
        "Regenten",
-       "VOC",
-       "Stadhouder"
+       "Tolerantie"
       ],
-      "c": 1,
+      "c": 2,
+      "u": "Het juiste begrip is «Regenten»: de bestuurlijke elite van de steden.",
+      "d": 2
+     },
+     {
+      "v": "Welke term past bij: \"de bestuurlijke elite van de steden\"?",
+      "o": [
+       "Stadhouder",
+       "Republiek",
+       "Tolerantie",
+       "Regenten"
+      ],
+      "c": 3,
       "u": "Het juiste begrip is «Regenten»: de bestuurlijke elite van de steden.",
       "d": 3
      },
      {
       "v": "Wat betekent «Stadhouder»?",
       "o": [
-       "een gebeurtenis vanuit meerdere gezichtspunten bekijken",
-       "een bron die later is gemaakt op basis van primaire bronnen",
+       "het beoordelen van de betrouwbaarheid en representativiteit van een bron",
+       "ministers verantwoorden zich aan het parlement",
        "de machtsstrijd tussen de VS en de Sovjet-Unie",
        "de militaire en bestuurlijke leider in de Republiek"
       ],
@@ -14730,16 +23198,64 @@ var VAKKEN = [
       "d": 1
      },
      {
+      "v": "Welk begrip hoort bij deze omschrijving: \"de militaire en bestuurlijke leider in de Republiek\"?",
+      "o": [
+       "Stadhouder",
+       "Communisme",
+       "Holocaust",
+       "Totalitair regime"
+      ],
+      "c": 0,
+      "u": "Het juiste begrip is «Stadhouder»: de militaire en bestuurlijke leider in de Republiek.",
+      "d": 2
+     },
+     {
+      "v": "Welke term past bij: \"de militaire en bestuurlijke leider in de Republiek\"?",
+      "o": [
+       "Stadhouder",
+       "VOC",
+       "Tolerantie",
+       "Republiek"
+      ],
+      "c": 0,
+      "u": "Het juiste begrip is «Stadhouder»: de militaire en bestuurlijke leider in de Republiek.",
+      "d": 3
+     },
+     {
+      "v": "Wat betekent «Tolerantie»?",
+      "o": [
+       "het proces waarbij koloniën onafhankelijk worden",
+       "een staat die alle terreinen van het leven wil beheersen",
+       "het dulden van andere godsdiensten of opvattingen",
+       "de militaire en bestuurlijke leider in de Republiek"
+      ],
+      "c": 2,
+      "u": "«Tolerantie» betekent: het dulden van andere godsdiensten of opvattingen.",
+      "d": 1
+     },
+     {
       "v": "Welk begrip hoort bij deze omschrijving: \"het dulden van andere godsdiensten of opvattingen\"?",
       "o": [
-       "Continuïteit",
        "Tolerantie",
-       "Standplaatsgebondenheid",
-       "Anachronisme"
+       "Algemeen kiesrecht",
+       "Ministeriële verantwoordelijkheid",
+       "Aanleiding"
       ],
-      "c": 1,
+      "c": 0,
       "u": "Het juiste begrip is «Tolerantie»: het dulden van andere godsdiensten of opvattingen.",
       "d": 2
+     },
+     {
+      "v": "Welke term past bij: \"het dulden van andere godsdiensten of opvattingen\"?",
+      "o": [
+       "Tolerantie",
+       "Regenten",
+       "Republiek",
+       "VOC"
+      ],
+      "c": 0,
+      "u": "Het juiste begrip is «Tolerantie»: het dulden van andere godsdiensten of opvattingen.",
+      "d": 3
      }
     ],
     "oe": [
@@ -14905,70 +23421,214 @@ var VAKKEN = [
      {
       "v": "Wat betekent «Rechtsstaat»?",
       "o": [
-       "stemrecht op basis van betaalde belasting",
-       "de systematische massamoord op de Joden",
        "een staat waarin de macht aan wetten is gebonden",
-       "de scheiding van de wetgevende, uitvoerende en rechterlijke macht"
+       "een ideologie van gemeenschappelijk bezit",
+       "een staat die alle terreinen van het leven wil beheersen",
+       "een vaardigheid die je breed kunt inzetten"
+      ],
+      "c": 0,
+      "u": "«Rechtsstaat» betekent: een staat waarin de macht aan wetten is gebonden.",
+      "d": 1
+     },
+     {
+      "v": "Welk begrip hoort bij deze omschrijving: \"een staat waarin de macht aan wetten is gebonden\"?",
+      "o": [
+       "Rechtsstaat",
+       "Tolerantie",
+       "Multiperspectiviteit",
+       "VOC"
+      ],
+      "c": 0,
+      "u": "Het juiste begrip is «Rechtsstaat»: een staat waarin de macht aan wetten is gebonden.",
+      "d": 2
+     },
+     {
+      "v": "Welke term past bij: \"een staat waarin de macht aan wetten is gebonden\"?",
+      "o": [
+       "Trias politica",
+       "Rechtsstaat",
+       "Algemeen kiesrecht",
+       "Censuskiesrecht"
+      ],
+      "c": 1,
+      "u": "Het juiste begrip is «Rechtsstaat»: een staat waarin de macht aan wetten is gebonden.",
+      "d": 3
+     },
+     {
+      "v": "Wat betekent «Trias politica»?",
+      "o": [
+       "de periode tussen de twee wereldoorlogen",
+       "het streven naar koloniale overheersing",
+       "de scheiding van de wetgevende, uitvoerende en rechterlijke macht",
+       "de machtsstrijd tussen de VS en de Sovjet-Unie"
       ],
       "c": 2,
-      "u": "«Rechtsstaat» betekent: een staat waarin de macht aan wetten is gebonden.",
+      "u": "«Trias politica» betekent: de scheiding van de wetgevende, uitvoerende en rechterlijke macht.",
       "d": 1
      },
      {
       "v": "Welk begrip hoort bij deze omschrijving: \"de scheiding van de wetgevende, uitvoerende en rechterlijke macht\"?",
       "o": [
-       "Primaire bron",
-       "Nazisme",
-       "Grondrecht",
-       "Trias politica"
+       "Trias politica",
+       "Koude Oorlog",
+       "VOC",
+       "Standplaatsgebondenheid"
       ],
-      "c": 3,
+      "c": 0,
       "u": "Het juiste begrip is «Trias politica»: de scheiding van de wetgevende, uitvoerende en rechterlijke macht.",
       "d": 2
      },
      {
-      "v": "Welk begrip hoort bij deze omschrijving: \"een fundamentele vrijheid van burgers\"?",
+      "v": "Welke term past bij: \"de scheiding van de wetgevende, uitvoerende en rechterlijke macht\"?",
       "o": [
-       "Rechtsstaat",
+       "Trias politica",
        "Ministeriële verantwoordelijkheid",
        "Grondrecht",
-       "Trias politica"
+       "Censuskiesrecht"
       ],
-      "c": 2,
+      "c": 0,
+      "u": "Het juiste begrip is «Trias politica»: de scheiding van de wetgevende, uitvoerende en rechterlijke macht.",
+      "d": 3
+     },
+     {
+      "v": "Wat betekent «Grondrecht»?",
+      "o": [
+       "de systematische massamoord op de Joden",
+       "een fundamentele vrijheid van burgers",
+       "een ideologie van gemeenschappelijk bezit",
+       "een bron die later is gemaakt op basis van primaire bronnen"
+      ],
+      "c": 1,
+      "u": "«Grondrecht» betekent: een fundamentele vrijheid van burgers.",
+      "d": 1
+     },
+     {
+      "v": "Welk begrip hoort bij deze omschrijving: \"een fundamentele vrijheid van burgers\"?",
+      "o": [
+       "Grondrecht",
+       "Secundaire bron",
+       "Censuskiesrecht",
+       "Primaire bron"
+      ],
+      "c": 0,
+      "u": "Het juiste begrip is «Grondrecht»: een fundamentele vrijheid van burgers.",
+      "d": 2
+     },
+     {
+      "v": "Welke term past bij: \"een fundamentele vrijheid van burgers\"?",
+      "o": [
+       "Grondrecht",
+       "Algemeen kiesrecht",
+       "Rechtsstaat",
+       "Ministeriële verantwoordelijkheid"
+      ],
+      "c": 0,
       "u": "Het juiste begrip is «Grondrecht»: een fundamentele vrijheid van burgers.",
       "d": 3
      },
      {
       "v": "Wat betekent «Censuskiesrecht»?",
       "o": [
+       "de handelscompagnie met een monopolie op de handel met Azië",
+       "het proces waarbij koloniën onafhankelijk worden",
        "stemrecht op basis van betaalde belasting",
-       "de directe, kortetermijnvonk van een gebeurtenis",
-       "een bron die later is gemaakt op basis van primaire bronnen",
-       "informatie beoordelen op betrouwbaarheid en herkomst"
+       "een nationalistische, autoritaire ideologie"
+      ],
+      "c": 2,
+      "u": "«Censuskiesrecht» betekent: stemrecht op basis van betaalde belasting.",
+      "d": 1
+     },
+     {
+      "v": "Welk begrip hoort bij deze omschrijving: \"stemrecht op basis van betaalde belasting\"?",
+      "o": [
+       "Bronkritiek",
+       "Secundaire bron",
+       "Transferabele vaardigheid",
+       "Censuskiesrecht"
+      ],
+      "c": 3,
+      "u": "Het juiste begrip is «Censuskiesrecht»: stemrecht op basis van betaalde belasting.",
+      "d": 2
+     },
+     {
+      "v": "Welke term past bij: \"stemrecht op basis van betaalde belasting\"?",
+      "o": [
+       "Censuskiesrecht",
+       "Algemeen kiesrecht",
+       "Trias politica",
+       "Rechtsstaat"
       ],
       "c": 0,
-      "u": "«Censuskiesrecht» betekent: stemrecht op basis van betaalde belasting.",
+      "u": "Het juiste begrip is «Censuskiesrecht»: stemrecht op basis van betaalde belasting.",
+      "d": 3
+     },
+     {
+      "v": "Wat betekent «Algemeen kiesrecht»?",
+      "o": [
+       "stemrecht voor alle volwassenen",
+       "een nationalistische, autoritaire ideologie",
+       "een gebeurtenis vanuit meerdere gezichtspunten bekijken",
+       "een bron die later is gemaakt op basis van primaire bronnen"
+      ],
+      "c": 0,
+      "u": "«Algemeen kiesrecht» betekent: stemrecht voor alle volwassenen.",
       "d": 1
      },
      {
       "v": "Welk begrip hoort bij deze omschrijving: \"stemrecht voor alle volwassenen\"?",
       "o": [
+       "Regenten",
        "Algemeen kiesrecht",
-       "Republiek",
-       "Censuskiesrecht",
-       "Bronkritiek"
+       "VOC",
+       "Ministeriële verantwoordelijkheid"
+      ],
+      "c": 1,
+      "u": "Het juiste begrip is «Algemeen kiesrecht»: stemrecht voor alle volwassenen.",
+      "d": 2
+     },
+     {
+      "v": "Welke term past bij: \"stemrecht voor alle volwassenen\"?",
+      "o": [
+       "Algemeen kiesrecht",
+       "Trias politica",
+       "Grondrecht",
+       "Rechtsstaat"
       ],
       "c": 0,
       "u": "Het juiste begrip is «Algemeen kiesrecht»: stemrecht voor alle volwassenen.",
-      "d": 2
+      "d": 3
+     },
+     {
+      "v": "Wat betekent «Ministeriële verantwoordelijkheid»?",
+      "o": [
+       "ministers verantwoorden zich aan het parlement",
+       "de directe, kortetermijnvonk van een gebeurtenis",
+       "een ideologie van gemeenschappelijk bezit",
+       "een staat waarin de macht aan wetten is gebonden"
+      ],
+      "c": 0,
+      "u": "«Ministeriële verantwoordelijkheid» betekent: ministers verantwoorden zich aan het parlement.",
+      "d": 1
      },
      {
       "v": "Welk begrip hoort bij deze omschrijving: \"ministers verantwoorden zich aan het parlement\"?",
       "o": [
        "Ministeriële verantwoordelijkheid",
-       "Algemeen kiesrecht",
+       "Multiperspectiviteit",
+       "Imperialisme",
+       "Tolerantie"
+      ],
+      "c": 0,
+      "u": "Het juiste begrip is «Ministeriële verantwoordelijkheid»: ministers verantwoorden zich aan het parlement.",
+      "d": 2
+     },
+     {
+      "v": "Welke term past bij: \"ministers verantwoorden zich aan het parlement\"?",
+      "o": [
+       "Ministeriële verantwoordelijkheid",
+       "Censuskiesrecht",
        "Grondrecht",
-       "Rechtsstaat"
+       "Algemeen kiesrecht"
       ],
       "c": 0,
       "u": "Het juiste begrip is «Ministeriële verantwoordelijkheid»: ministers verantwoorden zich aan het parlement.",
@@ -15318,34 +23978,106 @@ var VAKKEN = [
      {
       "v": "Wat betekent «Thematische kaart»?",
       "o": [
-       "een niet-willekeurige verdeling over de ruimte",
-       "Normaal Amsterdams Peil, het referentievlak voor hoogte",
-       "economische activiteit buiten de officiële registratie",
-       "een kaart die één onderwerp per gebied toont"
+       "de verhouding tussen de kaart en de werkelijkheid",
+       "een kaart die één onderwerp per gebied toont",
+       "een economisch dominante regio",
+       "de trek van het platteland naar de stad"
+      ],
+      "c": 1,
+      "u": "«Thematische kaart» betekent: een kaart die één onderwerp per gebied toont.",
+      "d": 1
+     },
+     {
+      "v": "Welk begrip hoort bij deze omschrijving: \"een kaart die één onderwerp per gebied toont\"?",
+      "o": [
+       "HDI",
+       "Thematische kaart",
+       "Ontwikkelingsland",
+       "Ruimtelijk patroon"
+      ],
+      "c": 1,
+      "u": "Het juiste begrip is «Thematische kaart»: een kaart die één onderwerp per gebied toont.",
+      "d": 2
+     },
+     {
+      "v": "Welke term past bij: \"een kaart die één onderwerp per gebied toont\"?",
+      "o": [
+       "Ruimtelijk patroon",
+       "Schaalniveau",
+       "Relatieve afstand",
+       "Thematische kaart"
       ],
       "c": 3,
-      "u": "«Thematische kaart» betekent: een kaart die één onderwerp per gebied toont.",
+      "u": "Het juiste begrip is «Thematische kaart»: een kaart die één onderwerp per gebied toont.",
+      "d": 3
+     },
+     {
+      "v": "Wat betekent «Schaal»?",
+      "o": [
+       "de verhouding tussen de kaart en de werkelijkheid",
+       "de trek van het platteland naar de stad",
+       "een economie die op één product leunt",
+       "de overgang van hoge naar lage geboorte- en sterftecijfers"
+      ],
+      "c": 0,
+      "u": "«Schaal» betekent: de verhouding tussen de kaart en de werkelijkheid.",
       "d": 1
      },
      {
       "v": "Welk begrip hoort bij deze omschrijving: \"de verhouding tussen de kaart en de werkelijkheid\"?",
       "o": [
-       "Platentektoniek",
-       "Mitigatie",
-       "Periferie",
-       "Schaal"
+       "Schaal",
+       "Globalisering",
+       "Adaptatie",
+       "Centrum"
       ],
-      "c": 3,
+      "c": 0,
       "u": "Het juiste begrip is «Schaal»: de verhouding tussen de kaart en de werkelijkheid.",
       "d": 2
      },
      {
-      "v": "Welk begrip hoort bij deze omschrijving: \"het niveau lokaal, regionaal, nationaal of mondiaal\"?",
+      "v": "Welke term past bij: \"de verhouding tussen de kaart en de werkelijkheid\"?",
       "o": [
-       "Ruimtelijk patroon",
+       "Schaal",
        "Absolute afstand",
        "Schaalniveau",
-       "Relatieve afstand"
+       "Thematische kaart"
+      ],
+      "c": 0,
+      "u": "Het juiste begrip is «Schaal»: de verhouding tussen de kaart en de werkelijkheid.",
+      "d": 3
+     },
+     {
+      "v": "Wat betekent «Schaalniveau»?",
+      "o": [
+       "de overgang van hoge naar lage geboorte- en sterftecijfers",
+       "de afstand gemeten in kilometers",
+       "een land met een lage HDI",
+       "het niveau lokaal, regionaal, nationaal of mondiaal"
+      ],
+      "c": 3,
+      "u": "«Schaalniveau» betekent: het niveau lokaal, regionaal, nationaal of mondiaal.",
+      "d": 1
+     },
+     {
+      "v": "Welk begrip hoort bij deze omschrijving: \"het niveau lokaal, regionaal, nationaal of mondiaal\"?",
+      "o": [
+       "Periferie",
+       "Adaptatie",
+       "Schaalniveau",
+       "Verwering"
+      ],
+      "c": 2,
+      "u": "Het juiste begrip is «Schaalniveau»: het niveau lokaal, regionaal, nationaal of mondiaal.",
+      "d": 2
+     },
+     {
+      "v": "Welke term past bij: \"het niveau lokaal, regionaal, nationaal of mondiaal\"?",
+      "o": [
+       "Absolute afstand",
+       "Thematische kaart",
+       "Schaalniveau",
+       "Schaal"
       ],
       "c": 2,
       "u": "Het juiste begrip is «Schaalniveau»: het niveau lokaal, regionaal, nationaal of mondiaal.",
@@ -15354,36 +24086,108 @@ var VAKKEN = [
      {
       "v": "Wat betekent «Ruimtelijk patroon»?",
       "o": [
-       "een kaart die één onderwerp per gebied toont",
        "de trek van het platteland naar de stad",
-       "een reden om ergens naartoe te trekken",
-       "een niet-willekeurige verdeling over de ruimte"
+       "een niet-willekeurige verdeling over de ruimte",
+       "een economie die op één product leunt",
+       "de kans op een overstroming maal het gevolg"
+      ],
+      "c": 1,
+      "u": "«Ruimtelijk patroon» betekent: een niet-willekeurige verdeling over de ruimte.",
+      "d": 1
+     },
+     {
+      "v": "Welk begrip hoort bij deze omschrijving: \"een niet-willekeurige verdeling over de ruimte\"?",
+      "o": [
+       "Ruimtelijk patroon",
+       "Randstad",
+       "Ontwikkelingsland",
+       "Schaalniveau"
+      ],
+      "c": 0,
+      "u": "Het juiste begrip is «Ruimtelijk patroon»: een niet-willekeurige verdeling over de ruimte.",
+      "d": 2
+     },
+     {
+      "v": "Welke term past bij: \"een niet-willekeurige verdeling over de ruimte\"?",
+      "o": [
+       "Schaal",
+       "Schaalniveau",
+       "Thematische kaart",
+       "Ruimtelijk patroon"
       ],
       "c": 3,
-      "u": "«Ruimtelijk patroon» betekent: een niet-willekeurige verdeling over de ruimte.",
+      "u": "Het juiste begrip is «Ruimtelijk patroon»: een niet-willekeurige verdeling over de ruimte.",
+      "d": 3
+     },
+     {
+      "v": "Wat betekent «Absolute afstand»?",
+      "o": [
+       "de afstand gemeten in kilometers",
+       "Normaal Amsterdams Peil, het referentievlak voor hoogte",
+       "economische activiteit buiten de officiële registratie",
+       "het niveau lokaal, regionaal, nationaal of mondiaal"
+      ],
+      "c": 0,
+      "u": "«Absolute afstand» betekent: de afstand gemeten in kilometers.",
       "d": 1
      },
      {
       "v": "Welk begrip hoort bij deze omschrijving: \"de afstand gemeten in kilometers\"?",
       "o": [
-       "Ontwikkelingsland",
-       "Schaal",
        "Thematische kaart",
-       "Absolute afstand"
+       "Absolute afstand",
+       "Randstad",
+       "Globalisering"
       ],
-      "c": 3,
+      "c": 1,
       "u": "Het juiste begrip is «Absolute afstand»: de afstand gemeten in kilometers.",
       "d": 2
      },
      {
+      "v": "Welke term past bij: \"de afstand gemeten in kilometers\"?",
+      "o": [
+       "Ruimtelijk patroon",
+       "Absolute afstand",
+       "Relatieve afstand",
+       "Schaal"
+      ],
+      "c": 1,
+      "u": "Het juiste begrip is «Absolute afstand»: de afstand gemeten in kilometers.",
+      "d": 3
+     },
+     {
+      "v": "Wat betekent «Relatieve afstand»?",
+      "o": [
+       "laaggelegen, door dijken omringd en drooggemalen land",
+       "Normaal Amsterdams Peil, het referentievlak voor hoogte",
+       "de kans op een overstroming maal het gevolg",
+       "de afstand gemeten in reistijd of kosten"
+      ],
+      "c": 3,
+      "u": "«Relatieve afstand» betekent: de afstand gemeten in reistijd of kosten.",
+      "d": 1
+     },
+     {
       "v": "Welk begrip hoort bij deze omschrijving: \"de afstand gemeten in reistijd of kosten\"?",
       "o": [
-       "Schaalniveau",
-       "Thematische kaart",
        "Relatieve afstand",
-       "Absolute afstand"
+       "Overstromingsrisico",
+       "Urbanisatie",
+       "Ruimtelijke inrichting"
       ],
-      "c": 2,
+      "c": 0,
+      "u": "Het juiste begrip is «Relatieve afstand»: de afstand gemeten in reistijd of kosten.",
+      "d": 2
+     },
+     {
+      "v": "Welke term past bij: \"de afstand gemeten in reistijd of kosten\"?",
+      "o": [
+       "Schaal",
+       "Ruimtelijk patroon",
+       "Absolute afstand",
+       "Relatieve afstand"
+      ],
+      "c": 3,
       "u": "Het juiste begrip is «Relatieve afstand»: de afstand gemeten in reistijd of kosten.",
       "d": 3
      }
@@ -15620,34 +24424,106 @@ var VAKKEN = [
      {
       "v": "Wat betekent «Globalisering»?",
       "o": [
-       "een reden om ergens naartoe te trekken",
-       "het vasthouden van warmte door broeikasgassen",
-       "de overgang van hoge naar lage geboorte- en sterftecijfers",
-       "de toenemende wereldwijde verwevenheid"
+       "de trek van het platteland naar de stad",
+       "economische activiteit buiten de officiële registratie",
+       "de toenemende wereldwijde verwevenheid",
+       "het beperken van de oorzaak van klimaatverandering"
       ],
-      "c": 3,
+      "c": 2,
       "u": "«Globalisering» betekent: de toenemende wereldwijde verwevenheid.",
+      "d": 1
+     },
+     {
+      "v": "Welk begrip hoort bij deze omschrijving: \"de toenemende wereldwijde verwevenheid\"?",
+      "o": [
+       "Globalisering",
+       "Urbanisatie",
+       "Ontwikkelingsland",
+       "Centrum"
+      ],
+      "c": 0,
+      "u": "Het juiste begrip is «Globalisering»: de toenemende wereldwijde verwevenheid.",
+      "d": 2
+     },
+     {
+      "v": "Welke term past bij: \"de toenemende wereldwijde verwevenheid\"?",
+      "o": [
+       "HDI",
+       "Pushfactor",
+       "Globalisering",
+       "Demografische transitie"
+      ],
+      "c": 2,
+      "u": "Het juiste begrip is «Globalisering»: de toenemende wereldwijde verwevenheid.",
+      "d": 3
+     },
+     {
+      "v": "Wat betekent «Demografische transitie»?",
+      "o": [
+       "de overgang van hoge naar lage geboorte- en sterftecijfers",
+       "een kaart die één onderwerp per gebied toont",
+       "het ter plekke afbreken van gesteente",
+       "de verdeling van de ruimte over functies"
+      ],
+      "c": 0,
+      "u": "«Demografische transitie» betekent: de overgang van hoge naar lage geboorte- en sterftecijfers.",
       "d": 1
      },
      {
       "v": "Welk begrip hoort bij deze omschrijving: \"de overgang van hoge naar lage geboorte- en sterftecijfers\"?",
       "o": [
-       "Informele sector",
+       "Demografische transitie",
+       "Schaal",
        "Ruimtelijk patroon",
-       "Bevolkingsdichtheid",
-       "Demografische transitie"
+       "Overstromingsrisico"
       ],
-      "c": 3,
+      "c": 0,
       "u": "Het juiste begrip is «Demografische transitie»: de overgang van hoge naar lage geboorte- en sterftecijfers.",
       "d": 2
      },
      {
+      "v": "Welke term past bij: \"de overgang van hoge naar lage geboorte- en sterftecijfers\"?",
+      "o": [
+       "Demografische transitie",
+       "Pushfactor",
+       "Pullfactor",
+       "HDI"
+      ],
+      "c": 0,
+      "u": "Het juiste begrip is «Demografische transitie»: de overgang van hoge naar lage geboorte- en sterftecijfers.",
+      "d": 3
+     },
+     {
+      "v": "Wat betekent «Pushfactor»?",
+      "o": [
+       "de toenemende wereldwijde verwevenheid",
+       "het aantal inwoners per vierkante kilometer",
+       "een reden om ergens weg te trekken",
+       "de kans op een overstroming maal het gevolg"
+      ],
+      "c": 2,
+      "u": "«Pushfactor» betekent: een reden om ergens weg te trekken. Tegenover pull: push duwt weg uit het herkomstgebied.",
+      "d": 1
+     },
+     {
       "v": "Welk begrip hoort bij deze omschrijving: \"een reden om ergens weg te trekken\"?",
+      "o": [
+       "Platentektoniek",
+       "Broeikaseffect",
+       "Monocultuur",
+       "Pushfactor"
+      ],
+      "c": 3,
+      "u": "Het juiste begrip is «Pushfactor»: een reden om ergens weg te trekken. Tegenover pull: push duwt weg uit het herkomstgebied.",
+      "d": 2
+     },
+     {
+      "v": "Welke term past bij: \"een reden om ergens weg te trekken\"?",
       "o": [
        "Demografische transitie",
        "Pullfactor",
        "Pushfactor",
-       "Centrum"
+       "Globalisering"
       ],
       "c": 2,
       "u": "Het juiste begrip is «Pushfactor»: een reden om ergens weg te trekken. Tegenover pull: push duwt weg uit het herkomstgebied.",
@@ -15656,50 +24532,146 @@ var VAKKEN = [
      {
       "v": "Wat betekent «Pullfactor»?",
       "o": [
+       "Normaal Amsterdams Peil, het referentievlak voor hoogte",
+       "een niet-willekeurige verdeling over de ruimte",
        "een reden om ergens naartoe te trekken",
-       "de verdeling van de ruimte over functies",
-       "de toenemende wereldwijde verwevenheid",
-       "de overgang van hoge naar lage geboorte- en sterftecijfers"
+       "het ter plekke afbreken van gesteente"
+      ],
+      "c": 2,
+      "u": "«Pullfactor» betekent: een reden om ergens naartoe te trekken. Tegenover push: pull trekt aan naar een gebied.",
+      "d": 1
+     },
+     {
+      "v": "Welk begrip hoort bij deze omschrijving: \"een reden om ergens naartoe te trekken\"?",
+      "o": [
+       "Demografische transitie",
+       "Schaalniveau",
+       "Ruimtelijk patroon",
+       "Pullfactor"
+      ],
+      "c": 3,
+      "u": "Het juiste begrip is «Pullfactor»: een reden om ergens naartoe te trekken. Tegenover push: pull trekt aan naar een gebied.",
+      "d": 2
+     },
+     {
+      "v": "Welke term past bij: \"een reden om ergens naartoe te trekken\"?",
+      "o": [
+       "Pullfactor",
+       "Pushfactor",
+       "Demografische transitie",
+       "Periferie"
       ],
       "c": 0,
-      "u": "«Pullfactor» betekent: een reden om ergens naartoe te trekken. Tegenover push: pull trekt aan naar een gebied.",
+      "u": "Het juiste begrip is «Pullfactor»: een reden om ergens naartoe te trekken. Tegenover push: pull trekt aan naar een gebied.",
+      "d": 3
+     },
+     {
+      "v": "Wat betekent «HDI»?",
+      "o": [
+       "het niveau lokaal, regionaal, nationaal of mondiaal",
+       "een maat voor ontwikkeling: welvaart, levensverwachting en onderwijs",
+       "een economisch afhankelijke randregio",
+       "een kaart die één onderwerp per gebied toont"
+      ],
+      "c": 1,
+      "u": "«HDI» betekent: een maat voor ontwikkeling: welvaart, levensverwachting en onderwijs.",
       "d": 1
      },
      {
       "v": "Welk begrip hoort bij deze omschrijving: \"een maat voor ontwikkeling: welvaart, levensverwachting en onderwijs\"?",
       "o": [
-       "Subductie",
-       "Ruimtelijk patroon",
+       "Broeikaseffect",
        "HDI",
+       "Relatieve afstand",
        "Schaal"
       ],
-      "c": 2,
+      "c": 1,
       "u": "Het juiste begrip is «HDI»: een maat voor ontwikkeling: welvaart, levensverwachting en onderwijs.",
       "d": 2
      },
      {
-      "v": "Welk begrip hoort bij deze omschrijving: \"een economisch dominante regio\"?",
+      "v": "Welke term past bij: \"een maat voor ontwikkeling: welvaart, levensverwachting en onderwijs\"?",
       "o": [
-       "Demografische transitie",
        "Periferie",
-       "Pushfactor",
-       "Centrum"
+       "Demografische transitie",
+       "Globalisering",
+       "HDI"
       ],
       "c": 3,
+      "u": "Het juiste begrip is «HDI»: een maat voor ontwikkeling: welvaart, levensverwachting en onderwijs.",
+      "d": 3
+     },
+     {
+      "v": "Wat betekent «Centrum»?",
+      "o": [
+       "een economisch dominante regio",
+       "de kans op een overstroming maal het gevolg",
+       "de afstand gemeten in kilometers",
+       "het aantal inwoners per vierkante kilometer"
+      ],
+      "c": 0,
+      "u": "«Centrum» betekent: een economisch dominante regio.",
+      "d": 1
+     },
+     {
+      "v": "Welk begrip hoort bij deze omschrijving: \"een economisch dominante regio\"?",
+      "o": [
+       "Verwering",
+       "Centrum",
+       "Thematische kaart",
+       "NAP"
+      ],
+      "c": 1,
+      "u": "Het juiste begrip is «Centrum»: een economisch dominante regio.",
+      "d": 2
+     },
+     {
+      "v": "Welke term past bij: \"een economisch dominante regio\"?",
+      "o": [
+       "Periferie",
+       "Centrum",
+       "Demografische transitie",
+       "Pullfactor"
+      ],
+      "c": 1,
       "u": "Het juiste begrip is «Centrum»: een economisch dominante regio.",
       "d": 3
      },
      {
       "v": "Wat betekent «Periferie»?",
       "o": [
-       "het beperken van de oorzaak van klimaatverandering",
-       "de afstand gemeten in reistijd of kosten",
-       "een reden om ergens weg te trekken",
-       "een economisch afhankelijke randregio"
+       "een kaart die één onderwerp per gebied toont",
+       "de verhouding tussen de kaart en de werkelijkheid",
+       "een economisch afhankelijke randregio",
+       "laaggelegen, door dijken omringd en drooggemalen land"
       ],
-      "c": 3,
+      "c": 2,
       "u": "«Periferie» betekent: een economisch afhankelijke randregio.",
       "d": 1
+     },
+     {
+      "v": "Welk begrip hoort bij deze omschrijving: \"een economisch afhankelijke randregio\"?",
+      "o": [
+       "Informele sector",
+       "Globalisering",
+       "Subductie",
+       "Periferie"
+      ],
+      "c": 3,
+      "u": "Het juiste begrip is «Periferie»: een economisch afhankelijke randregio.",
+      "d": 2
+     },
+     {
+      "v": "Welke term past bij: \"een economisch afhankelijke randregio\"?",
+      "o": [
+       "Periferie",
+       "Globalisering",
+       "Demografische transitie",
+       "Centrum"
+      ],
+      "c": 0,
+      "u": "Het juiste begrip is «Periferie»: een economisch afhankelijke randregio.",
+      "d": 3
      }
     ],
     "oe": [
@@ -15945,34 +24917,106 @@ var VAKKEN = [
      {
       "v": "Wat betekent «Broeikaseffect»?",
       "o": [
-       "de afstand gemeten in reistijd of kosten",
-       "het vasthouden van warmte door broeikasgassen",
-       "de verdeling van de ruimte over functies",
-       "het beperken van de oorzaak van klimaatverandering"
+       "de kans op een overstroming maal het gevolg",
+       "een economisch dominante regio",
+       "het ter plekke afbreken van gesteente",
+       "het vasthouden van warmte door broeikasgassen"
+      ],
+      "c": 3,
+      "u": "«Broeikaseffect» betekent: het vasthouden van warmte door broeikasgassen.",
+      "d": 1
+     },
+     {
+      "v": "Welk begrip hoort bij deze omschrijving: \"het vasthouden van warmte door broeikasgassen\"?",
+      "o": [
+       "Verwering",
+       "Broeikaseffect",
+       "Pullfactor",
+       "Schaal"
       ],
       "c": 1,
-      "u": "«Broeikaseffect» betekent: het vasthouden van warmte door broeikasgassen.",
+      "u": "Het juiste begrip is «Broeikaseffect»: het vasthouden van warmte door broeikasgassen.",
+      "d": 2
+     },
+     {
+      "v": "Welke term past bij: \"het vasthouden van warmte door broeikasgassen\"?",
+      "o": [
+       "Verwering",
+       "Adaptatie",
+       "Broeikaseffect",
+       "Subductie"
+      ],
+      "c": 2,
+      "u": "Het juiste begrip is «Broeikaseffect»: het vasthouden van warmte door broeikasgassen.",
+      "d": 3
+     },
+     {
+      "v": "Wat betekent «Platentektoniek»?",
+      "o": [
+       "het beperken van de oorzaak van klimaatverandering",
+       "de beweging van de platen van de aardkorst",
+       "het onder een andere plaat schuiven van een plaat",
+       "de verdeling van de ruimte over functies"
+      ],
+      "c": 1,
+      "u": "«Platentektoniek» betekent: de beweging van de platen van de aardkorst.",
       "d": 1
      },
      {
       "v": "Welk begrip hoort bij deze omschrijving: \"de beweging van de platen van de aardkorst\"?",
       "o": [
+       "Subductie",
        "Platentektoniek",
-       "Pullfactor",
-       "Ruimtelijk patroon",
-       "Relatieve afstand"
+       "Schaalniveau",
+       "Informele sector"
       ],
-      "c": 0,
+      "c": 1,
       "u": "Het juiste begrip is «Platentektoniek»: de beweging van de platen van de aardkorst.",
       "d": 2
      },
      {
+      "v": "Welke term past bij: \"de beweging van de platen van de aardkorst\"?",
+      "o": [
+       "Mitigatie",
+       "Adaptatie",
+       "Platentektoniek",
+       "Verwering"
+      ],
+      "c": 2,
+      "u": "Het juiste begrip is «Platentektoniek»: de beweging van de platen van de aardkorst.",
+      "d": 3
+     },
+     {
+      "v": "Wat betekent «Subductie»?",
+      "o": [
+       "economische activiteit buiten de officiële registratie",
+       "het onder een andere plaat schuiven van een plaat",
+       "het stedelijke kerngebied van Nederland",
+       "een maat voor ontwikkeling: welvaart, levensverwachting en onderwijs"
+      ],
+      "c": 1,
+      "u": "«Subductie» betekent: het onder een andere plaat schuiven van een plaat.",
+      "d": 1
+     },
+     {
       "v": "Welk begrip hoort bij deze omschrijving: \"het onder een andere plaat schuiven van een plaat\"?",
+      "o": [
+       "Ruimtelijk patroon",
+       "Urbanisatie",
+       "Absolute afstand",
+       "Subductie"
+      ],
+      "c": 3,
+      "u": "Het juiste begrip is «Subductie»: het onder een andere plaat schuiven van een plaat.",
+      "d": 2
+     },
+     {
+      "v": "Welke term past bij: \"het onder een andere plaat schuiven van een plaat\"?",
       "o": [
        "Subductie",
        "Verwering",
        "Mitigatie",
-       "Adaptatie"
+       "Broeikaseffect"
       ],
       "c": 0,
       "u": "Het juiste begrip is «Subductie»: het onder een andere plaat schuiven van een plaat.",
@@ -15981,33 +25025,105 @@ var VAKKEN = [
      {
       "v": "Wat betekent «Mitigatie»?",
       "o": [
-       "het beperken van de oorzaak van klimaatverandering",
-       "de verhouding tussen de kaart en de werkelijkheid",
+       "de afstand gemeten in reistijd of kosten",
+       "een maat voor ontwikkeling: welvaart, levensverwachting en onderwijs",
+       "een economisch afhankelijke randregio",
+       "het beperken van de oorzaak van klimaatverandering"
+      ],
+      "c": 3,
+      "u": "«Mitigatie» betekent: het beperken van de oorzaak van klimaatverandering. Tegenover adaptatie: mitigatie pakt de oorzaak aan, adaptatie de gevolgen.",
+      "d": 1
+     },
+     {
+      "v": "Welk begrip hoort bij deze omschrijving: \"het beperken van de oorzaak van klimaatverandering\"?",
+      "o": [
+       "HDI",
+       "Mitigatie",
+       "Broeikaseffect",
+       "Randstad"
+      ],
+      "c": 1,
+      "u": "Het juiste begrip is «Mitigatie»: het beperken van de oorzaak van klimaatverandering. Tegenover adaptatie: mitigatie pakt de oorzaak aan, adaptatie de gevolgen.",
+      "d": 2
+     },
+     {
+      "v": "Welke term past bij: \"het beperken van de oorzaak van klimaatverandering\"?",
+      "o": [
+       "Platentektoniek",
+       "Mitigatie",
+       "Adaptatie",
+       "Subductie"
+      ],
+      "c": 1,
+      "u": "Het juiste begrip is «Mitigatie»: het beperken van de oorzaak van klimaatverandering. Tegenover adaptatie: mitigatie pakt de oorzaak aan, adaptatie de gevolgen.",
+      "d": 3
+     },
+     {
+      "v": "Wat betekent «Adaptatie»?",
+      "o": [
+       "het aanpassen aan de gevolgen van klimaatverandering",
+       "economische activiteit buiten de officiële registratie",
        "laaggelegen, door dijken omringd en drooggemalen land",
-       "het onder een andere plaat schuiven van een plaat"
+       "de afstand gemeten in kilometers"
       ],
       "c": 0,
-      "u": "«Mitigatie» betekent: het beperken van de oorzaak van klimaatverandering. Tegenover adaptatie: mitigatie pakt de oorzaak aan, adaptatie de gevolgen.",
+      "u": "«Adaptatie» betekent: het aanpassen aan de gevolgen van klimaatverandering. Tegenover mitigatie: adaptatie pakt de gevolgen aan.",
       "d": 1
      },
      {
       "v": "Welk begrip hoort bij deze omschrijving: \"het aanpassen aan de gevolgen van klimaatverandering\"?",
       "o": [
-       "Ruimtelijke inrichting",
-       "Adaptatie",
-       "Polder",
-       "Periferie"
+       "Broeikaseffect",
+       "Absolute afstand",
+       "HDI",
+       "Adaptatie"
       ],
-      "c": 1,
+      "c": 3,
       "u": "Het juiste begrip is «Adaptatie»: het aanpassen aan de gevolgen van klimaatverandering. Tegenover mitigatie: adaptatie pakt de gevolgen aan.",
       "d": 2
      },
      {
+      "v": "Welke term past bij: \"het aanpassen aan de gevolgen van klimaatverandering\"?",
+      "o": [
+       "Subductie",
+       "Mitigatie",
+       "Broeikaseffect",
+       "Adaptatie"
+      ],
+      "c": 3,
+      "u": "Het juiste begrip is «Adaptatie»: het aanpassen aan de gevolgen van klimaatverandering. Tegenover mitigatie: adaptatie pakt de gevolgen aan.",
+      "d": 3
+     },
+     {
+      "v": "Wat betekent «Verwering»?",
+      "o": [
+       "een maat voor ontwikkeling: welvaart, levensverwachting en onderwijs",
+       "het aantal inwoners per vierkante kilometer",
+       "Normaal Amsterdams Peil, het referentievlak voor hoogte",
+       "het ter plekke afbreken van gesteente"
+      ],
+      "c": 3,
+      "u": "«Verwering» betekent: het ter plekke afbreken van gesteente.",
+      "d": 1
+     },
+     {
       "v": "Welk begrip hoort bij deze omschrijving: \"het ter plekke afbreken van gesteente\"?",
       "o": [
-       "Broeikaseffect",
+       "NAP",
+       "Verwering",
+       "Randstad",
+       "Absolute afstand"
+      ],
+      "c": 1,
+      "u": "Het juiste begrip is «Verwering»: het ter plekke afbreken van gesteente.",
+      "d": 2
+     },
+     {
+      "v": "Welke term past bij: \"het ter plekke afbreken van gesteente\"?",
+      "o": [
+       "Adaptatie",
+       "Mitigatie",
        "Subductie",
-       "Platentektoniek",
        "Verwering"
       ],
       "c": 3,
@@ -16253,32 +25369,104 @@ var VAKKEN = [
      {
       "v": "Wat betekent «Ontwikkelingsland»?",
       "o": [
-       "een land met een lage HDI",
-       "de overgang van hoge naar lage geboorte- en sterftecijfers",
-       "een economisch afhankelijke randregio",
-       "een kaart die één onderwerp per gebied toont"
+       "een reden om ergens naartoe te trekken",
+       "het aanpassen aan de gevolgen van klimaatverandering",
+       "het onder een andere plaat schuiven van een plaat",
+       "een land met een lage HDI"
       ],
-      "c": 0,
+      "c": 3,
       "u": "«Ontwikkelingsland» betekent: een land met een lage HDI.",
+      "d": 1
+     },
+     {
+      "v": "Welk begrip hoort bij deze omschrijving: \"een land met een lage HDI\"?",
+      "o": [
+       "Monocultuur",
+       "Verwering",
+       "Ontwikkelingsland",
+       "Schaalniveau"
+      ],
+      "c": 2,
+      "u": "Het juiste begrip is «Ontwikkelingsland»: een land met een lage HDI.",
+      "d": 2
+     },
+     {
+      "v": "Welke term past bij: \"een land met een lage HDI\"?",
+      "o": [
+       "Informele sector",
+       "Ontwikkelingsland",
+       "Monocultuur",
+       "Urbanisatie"
+      ],
+      "c": 1,
+      "u": "Het juiste begrip is «Ontwikkelingsland»: een land met een lage HDI.",
+      "d": 3
+     },
+     {
+      "v": "Wat betekent «Informele sector»?",
+      "o": [
+       "de verdeling van de ruimte over functies",
+       "het aanpassen aan de gevolgen van klimaatverandering",
+       "de afstand gemeten in kilometers",
+       "economische activiteit buiten de officiële registratie"
+      ],
+      "c": 3,
+      "u": "«Informele sector» betekent: economische activiteit buiten de officiële registratie.",
       "d": 1
      },
      {
       "v": "Welk begrip hoort bij deze omschrijving: \"economische activiteit buiten de officiële registratie\"?",
       "o": [
-       "NAP",
-       "Randstad",
+       "Ruimtelijke inrichting",
+       "Informele sector",
        "Urbanisatie",
-       "Informele sector"
+       "Schaal"
       ],
-      "c": 3,
+      "c": 1,
       "u": "Het juiste begrip is «Informele sector»: economische activiteit buiten de officiële registratie.",
       "d": 2
      },
      {
+      "v": "Welke term past bij: \"economische activiteit buiten de officiële registratie\"?",
+      "o": [
+       "Monocultuur",
+       "Bevolkingsdichtheid",
+       "Informele sector",
+       "Ontwikkelingsland"
+      ],
+      "c": 2,
+      "u": "Het juiste begrip is «Informele sector»: economische activiteit buiten de officiële registratie.",
+      "d": 3
+     },
+     {
+      "v": "Wat betekent «Urbanisatie»?",
+      "o": [
+       "de trek van het platteland naar de stad",
+       "het aantal inwoners per vierkante kilometer",
+       "het aanpassen aan de gevolgen van klimaatverandering",
+       "Normaal Amsterdams Peil, het referentievlak voor hoogte"
+      ],
+      "c": 0,
+      "u": "«Urbanisatie» betekent: de trek van het platteland naar de stad.",
+      "d": 1
+     },
+     {
       "v": "Welk begrip hoort bij deze omschrijving: \"de trek van het platteland naar de stad\"?",
       "o": [
-       "Informele sector",
+       "Urbanisatie",
+       "Ruimtelijke inrichting",
+       "Subductie",
+       "Absolute afstand"
+      ],
+      "c": 0,
+      "u": "Het juiste begrip is «Urbanisatie»: de trek van het platteland naar de stad.",
+      "d": 2
+     },
+     {
+      "v": "Welke term past bij: \"de trek van het platteland naar de stad\"?",
+      "o": [
        "Monocultuur",
+       "Informele sector",
        "Ontwikkelingsland",
        "Urbanisatie"
       ],
@@ -16289,26 +25477,74 @@ var VAKKEN = [
      {
       "v": "Wat betekent «Monocultuur»?",
       "o": [
-       "economische activiteit buiten de officiële registratie",
+       "het onder een andere plaat schuiven van een plaat",
+       "een land met een lage HDI",
        "een economie die op één product leunt",
-       "een niet-willekeurige verdeling over de ruimte",
-       "het vasthouden van warmte door broeikasgassen"
+       "Normaal Amsterdams Peil, het referentievlak voor hoogte"
       ],
-      "c": 1,
+      "c": 2,
       "u": "«Monocultuur» betekent: een economie die op één product leunt.",
+      "d": 1
+     },
+     {
+      "v": "Welk begrip hoort bij deze omschrijving: \"een economie die op één product leunt\"?",
+      "o": [
+       "Globalisering",
+       "Subductie",
+       "Bevolkingsdichtheid",
+       "Monocultuur"
+      ],
+      "c": 3,
+      "u": "Het juiste begrip is «Monocultuur»: een economie die op één product leunt.",
+      "d": 2
+     },
+     {
+      "v": "Welke term past bij: \"een economie die op één product leunt\"?",
+      "o": [
+       "Bevolkingsdichtheid",
+       "Ontwikkelingsland",
+       "Urbanisatie",
+       "Monocultuur"
+      ],
+      "c": 3,
+      "u": "Het juiste begrip is «Monocultuur»: een economie die op één product leunt.",
+      "d": 3
+     },
+     {
+      "v": "Wat betekent «Bevolkingsdichtheid»?",
+      "o": [
+       "het aantal inwoners per vierkante kilometer",
+       "de toenemende wereldwijde verwevenheid",
+       "het aanpassen aan de gevolgen van klimaatverandering",
+       "het beperken van de oorzaak van klimaatverandering"
+      ],
+      "c": 0,
+      "u": "«Bevolkingsdichtheid» betekent: het aantal inwoners per vierkante kilometer.",
       "d": 1
      },
      {
       "v": "Welk begrip hoort bij deze omschrijving: \"het aantal inwoners per vierkante kilometer\"?",
       "o": [
-       "Periferie",
+       "Randstad",
+       "Subductie",
+       "Adaptatie",
+       "Bevolkingsdichtheid"
+      ],
+      "c": 3,
+      "u": "Het juiste begrip is «Bevolkingsdichtheid»: het aantal inwoners per vierkante kilometer.",
+      "d": 2
+     },
+     {
+      "v": "Welke term past bij: \"het aantal inwoners per vierkante kilometer\"?",
+      "o": [
        "Urbanisatie",
+       "Informele sector",
        "Bevolkingsdichtheid",
-       "Informele sector"
+       "Ontwikkelingsland"
       ],
       "c": 2,
       "u": "Het juiste begrip is «Bevolkingsdichtheid»: het aantal inwoners per vierkante kilometer.",
-      "d": 2
+      "d": 3
      }
     ],
     "oe": [
@@ -16524,62 +25760,182 @@ var VAKKEN = [
      {
       "v": "Wat betekent «NAP»?",
       "o": [
+       "een economisch afhankelijke randregio",
        "Normaal Amsterdams Peil, het referentievlak voor hoogte",
-       "het aantal inwoners per vierkante kilometer",
-       "een kaart die één onderwerp per gebied toont",
-       "het niveau lokaal, regionaal, nationaal of mondiaal"
+       "een land met een lage HDI",
+       "het stedelijke kerngebied van Nederland"
+      ],
+      "c": 1,
+      "u": "«NAP» betekent: Normaal Amsterdams Peil, het referentievlak voor hoogte.",
+      "d": 1
+     },
+     {
+      "v": "Welk begrip hoort bij deze omschrijving: \"Normaal Amsterdams Peil, het referentievlak voor hoogte\"?",
+      "o": [
+       "Ruimtelijke inrichting",
+       "NAP",
+       "Polder",
+       "Ruimtelijk patroon"
+      ],
+      "c": 1,
+      "u": "Het juiste begrip is «NAP»: Normaal Amsterdams Peil, het referentievlak voor hoogte.",
+      "d": 2
+     },
+     {
+      "v": "Welke term past bij: \"Normaal Amsterdams Peil, het referentievlak voor hoogte\"?",
+      "o": [
+       "Overstromingsrisico",
+       "NAP",
+       "Polder",
+       "Randstad"
+      ],
+      "c": 1,
+      "u": "Het juiste begrip is «NAP»: Normaal Amsterdams Peil, het referentievlak voor hoogte.",
+      "d": 3
+     },
+     {
+      "v": "Wat betekent «Polder»?",
+      "o": [
+       "laaggelegen, door dijken omringd en drooggemalen land",
+       "de toenemende wereldwijde verwevenheid",
+       "het stedelijke kerngebied van Nederland",
+       "een maat voor ontwikkeling: welvaart, levensverwachting en onderwijs"
       ],
       "c": 0,
-      "u": "«NAP» betekent: Normaal Amsterdams Peil, het referentievlak voor hoogte.",
+      "u": "«Polder» betekent: laaggelegen, door dijken omringd en drooggemalen land.",
       "d": 1
      },
      {
       "v": "Welk begrip hoort bij deze omschrijving: \"laaggelegen, door dijken omringd en drooggemalen land\"?",
       "o": [
+       "Platentektoniek",
+       "Ruimtelijke inrichting",
        "Polder",
-       "Schaal",
-       "Relatieve afstand",
-       "Thematische kaart"
+       "Globalisering"
       ],
-      "c": 0,
+      "c": 2,
       "u": "Het juiste begrip is «Polder»: laaggelegen, door dijken omringd en drooggemalen land.",
       "d": 2
      },
      {
-      "v": "Welk begrip hoort bij deze omschrijving: \"de kans op een overstroming maal het gevolg\"?",
+      "v": "Welke term past bij: \"laaggelegen, door dijken omringd en drooggemalen land\"?",
       "o": [
-       "Overstromingsrisico",
        "Polder",
        "Randstad",
-       "NAP"
+       "NAP",
+       "Overstromingsrisico"
       ],
       "c": 0,
+      "u": "Het juiste begrip is «Polder»: laaggelegen, door dijken omringd en drooggemalen land.",
+      "d": 3
+     },
+     {
+      "v": "Wat betekent «Overstromingsrisico»?",
+      "o": [
+       "de trek van het platteland naar de stad",
+       "de toenemende wereldwijde verwevenheid",
+       "de kans op een overstroming maal het gevolg",
+       "het ter plekke afbreken van gesteente"
+      ],
+      "c": 2,
+      "u": "«Overstromingsrisico» betekent: de kans op een overstroming maal het gevolg.",
+      "d": 1
+     },
+     {
+      "v": "Welk begrip hoort bij deze omschrijving: \"de kans op een overstroming maal het gevolg\"?",
+      "o": [
+       "Ruimtelijk patroon",
+       "Overstromingsrisico",
+       "Polder",
+       "Subductie"
+      ],
+      "c": 1,
+      "u": "Het juiste begrip is «Overstromingsrisico»: de kans op een overstroming maal het gevolg.",
+      "d": 2
+     },
+     {
+      "v": "Welke term past bij: \"de kans op een overstroming maal het gevolg\"?",
+      "o": [
+       "Ruimtelijke inrichting",
+       "Overstromingsrisico",
+       "NAP",
+       "Polder"
+      ],
+      "c": 1,
       "u": "Het juiste begrip is «Overstromingsrisico»: de kans op een overstroming maal het gevolg.",
       "d": 3
      },
      {
       "v": "Wat betekent «Randstad»?",
       "o": [
-       "de trek van het platteland naar de stad",
-       "het niveau lokaal, regionaal, nationaal of mondiaal",
-       "laaggelegen, door dijken omringd en drooggemalen land",
-       "het stedelijke kerngebied van Nederland"
+       "het onder een andere plaat schuiven van een plaat",
+       "economische activiteit buiten de officiële registratie",
+       "het stedelijke kerngebied van Nederland",
+       "het niveau lokaal, regionaal, nationaal of mondiaal"
       ],
-      "c": 3,
+      "c": 2,
       "u": "«Randstad» betekent: het stedelijke kerngebied van Nederland.",
+      "d": 1
+     },
+     {
+      "v": "Welk begrip hoort bij deze omschrijving: \"het stedelijke kerngebied van Nederland\"?",
+      "o": [
+       "Randstad",
+       "Subductie",
+       "Pushfactor",
+       "Schaalniveau"
+      ],
+      "c": 0,
+      "u": "Het juiste begrip is «Randstad»: het stedelijke kerngebied van Nederland.",
+      "d": 2
+     },
+     {
+      "v": "Welke term past bij: \"het stedelijke kerngebied van Nederland\"?",
+      "o": [
+       "NAP",
+       "Overstromingsrisico",
+       "Randstad",
+       "Polder"
+      ],
+      "c": 2,
+      "u": "Het juiste begrip is «Randstad»: het stedelijke kerngebied van Nederland.",
+      "d": 3
+     },
+     {
+      "v": "Wat betekent «Ruimtelijke inrichting»?",
+      "o": [
+       "de verdeling van de ruimte over functies",
+       "de overgang van hoge naar lage geboorte- en sterftecijfers",
+       "het ter plekke afbreken van gesteente",
+       "het niveau lokaal, regionaal, nationaal of mondiaal"
+      ],
+      "c": 0,
+      "u": "«Ruimtelijke inrichting» betekent: de verdeling van de ruimte over functies.",
       "d": 1
      },
      {
       "v": "Welk begrip hoort bij deze omschrijving: \"de verdeling van de ruimte over functies\"?",
       "o": [
-       "Ruimtelijke inrichting",
+       "Platentektoniek",
+       "Bevolkingsdichtheid",
        "Urbanisatie",
-       "Relatieve afstand",
-       "Mitigatie"
+       "Ruimtelijke inrichting"
       ],
-      "c": 0,
+      "c": 3,
       "u": "Het juiste begrip is «Ruimtelijke inrichting»: de verdeling van de ruimte over functies.",
       "d": 2
+     },
+     {
+      "v": "Welke term past bij: \"de verdeling van de ruimte over functies\"?",
+      "o": [
+       "Randstad",
+       "NAP",
+       "Ruimtelijke inrichting",
+       "Overstromingsrisico"
+      ],
+      "c": 2,
+      "u": "Het juiste begrip is «Ruimtelijke inrichting»: de verdeling van de ruimte over functies.",
+      "d": 3
      }
     ],
     "oe": [
@@ -16942,34 +26298,106 @@ var VAKKEN = [
      {
       "v": "Wat betekent «Schaarste»?",
       "o": [
-       "werkloosheid door te lage bestedingen",
-       "de schommeling van de economische bedrijvigheid",
        "middelen zijn beperkt ten opzichte van de behoeften",
-       "een verboden prijsafspraak tussen aanbieders"
+       "wat je met je inkomen daadwerkelijk kunt kopen",
+       "het verschil tussen de export en de import",
+       "een gevoel van gemis dat je wilt vervullen"
       ],
-      "c": 2,
+      "c": 0,
       "u": "«Schaarste» betekent: middelen zijn beperkt ten opzichte van de behoeften.",
+      "d": 1
+     },
+     {
+      "v": "Welk begrip hoort bij deze omschrijving: \"middelen zijn beperkt ten opzichte van de behoeften\"?",
+      "o": [
+       "Hoogconjunctuur",
+       "Marginaal",
+       "Marktfalen",
+       "Schaarste"
+      ],
+      "c": 3,
+      "u": "Het juiste begrip is «Schaarste»: middelen zijn beperkt ten opzichte van de behoeften.",
+      "d": 2
+     },
+     {
+      "v": "Welke term past bij: \"middelen zijn beperkt ten opzichte van de behoeften\"?",
+      "o": [
+       "Productiefactoren",
+       "Arbeidsverdeling",
+       "Marginaal",
+       "Schaarste"
+      ],
+      "c": 3,
+      "u": "Het juiste begrip is «Schaarste»: middelen zijn beperkt ten opzichte van de behoeften.",
+      "d": 3
+     },
+     {
+      "v": "Wat betekent «Opportuniteitskosten»?",
+      "o": [
+       "middelen zijn beperkt ten opzichte van de behoeften",
+       "de waarde van het best opgeofferde alternatief",
+       "kosten of baten voor derden buiten de prijs om",
+       "een toename van het reële bbp"
+      ],
+      "c": 1,
+      "u": "«Opportuniteitskosten» betekent: de waarde van het best opgeofferde alternatief.",
       "d": 1
      },
      {
       "v": "Welk begrip hoort bij deze omschrijving: \"de waarde van het best opgeofferde alternatief\"?",
       "o": [
-       "Substituut",
+       "Bbp",
+       "Marginaal",
        "Opportuniteitskosten",
-       "Recessie",
-       "Conjunctuur"
+       "Koopkracht"
       ],
-      "c": 1,
+      "c": 2,
       "u": "Het juiste begrip is «Opportuniteitskosten»: de waarde van het best opgeofferde alternatief.",
       "d": 2
      },
      {
-      "v": "Welk begrip hoort bij deze omschrijving: \"een gevoel van gemis dat je wilt vervullen\"?",
+      "v": "Welke term past bij: \"de waarde van het best opgeofferde alternatief\"?",
       "o": [
        "Opportuniteitskosten",
        "Behoefte",
        "Schaarste",
        "Budget"
+      ],
+      "c": 0,
+      "u": "Het juiste begrip is «Opportuniteitskosten»: de waarde van het best opgeofferde alternatief.",
+      "d": 3
+     },
+     {
+      "v": "Wat betekent «Behoefte»?",
+      "o": [
+       "een verboden prijsafspraak tussen aanbieders",
+       "goederen die de markt niet levert, zoals dijken",
+       "de waarde van het best opgeofferde alternatief",
+       "een gevoel van gemis dat je wilt vervullen"
+      ],
+      "c": 3,
+      "u": "«Behoefte» betekent: een gevoel van gemis dat je wilt vervullen.",
+      "d": 1
+     },
+     {
+      "v": "Welk begrip hoort bij deze omschrijving: \"een gevoel van gemis dat je wilt vervullen\"?",
+      "o": [
+       "Schaarste",
+       "Hoogconjunctuur",
+       "Behoefte",
+       "Bbp"
+      ],
+      "c": 2,
+      "u": "Het juiste begrip is «Behoefte»: een gevoel van gemis dat je wilt vervullen.",
+      "d": 2
+     },
+     {
+      "v": "Welke term past bij: \"een gevoel van gemis dat je wilt vervullen\"?",
+      "o": [
+       "Productiefactoren",
+       "Behoefte",
+       "Ruil",
+       "Schaarste"
       ],
       "c": 1,
       "u": "Het juiste begrip is «Behoefte»: een gevoel van gemis dat je wilt vervullen.",
@@ -16978,62 +26406,182 @@ var VAKKEN = [
      {
       "v": "Wat betekent «Ruil»?",
       "o": [
+       "arbeid, kapitaal, natuur en ondernemerschap",
        "het uitwisselen van goederen of diensten",
-       "de totale waarde van de productie in een land per jaar",
-       "de situatie waarin de markt geen efficiënte uitkomst geeft",
-       "een markt met enkele grote aanbieders"
+       "de overheidsuitgaven zijn groter dan de inkomsten",
+       "veel aanbieders, homogeen product en vrije toetreding"
       ],
-      "c": 0,
+      "c": 1,
       "u": "«Ruil» betekent: het uitwisselen van goederen of diensten.",
+      "d": 1
+     },
+     {
+      "v": "Welk begrip hoort bij deze omschrijving: \"het uitwisselen van goederen of diensten\"?",
+      "o": [
+       "Aanbod",
+       "Ruil",
+       "Recessie",
+       "Handelsbalans"
+      ],
+      "c": 1,
+      "u": "Het juiste begrip is «Ruil»: het uitwisselen van goederen of diensten.",
+      "d": 2
+     },
+     {
+      "v": "Welke term past bij: \"het uitwisselen van goederen of diensten\"?",
+      "o": [
+       "Budget",
+       "Arbeidsverdeling",
+       "Ruil",
+       "Opportuniteitskosten"
+      ],
+      "c": 2,
+      "u": "Het juiste begrip is «Ruil»: het uitwisselen van goederen of diensten.",
+      "d": 3
+     },
+     {
+      "v": "Wat betekent «Arbeidsverdeling»?",
+      "o": [
+       "de hoeveelheid die verkopers willen verkopen bij een prijs",
+       "een aanhoudende stijging van het algemene prijspeil",
+       "een gevoel van gemis dat je wilt vervullen",
+       "taken opsplitsen om efficiënter te produceren"
+      ],
+      "c": 3,
+      "u": "«Arbeidsverdeling» betekent: taken opsplitsen om efficiënter te produceren.",
       "d": 1
      },
      {
       "v": "Welk begrip hoort bij deze omschrijving: \"taken opsplitsen om efficiënter te produceren\"?",
       "o": [
-       "Prijselasticiteit",
+       "Productiefactoren",
        "Arbeidsverdeling",
-       "Subsidie",
-       "Aanbod"
+       "Bbp",
+       "Inflatie"
       ],
       "c": 1,
       "u": "Het juiste begrip is «Arbeidsverdeling»: taken opsplitsen om efficiënter te produceren.",
       "d": 2
      },
      {
+      "v": "Welke term past bij: \"taken opsplitsen om efficiënter te produceren\"?",
+      "o": [
+       "Marginaal",
+       "Productiefactoren",
+       "Schaarste",
+       "Arbeidsverdeling"
+      ],
+      "c": 3,
+      "u": "Het juiste begrip is «Arbeidsverdeling»: taken opsplitsen om efficiënter te produceren.",
+      "d": 3
+     },
+     {
+      "v": "Wat betekent «Productiefactoren»?",
+      "o": [
+       "arbeid, kapitaal, natuur en ondernemerschap",
+       "financiële steun van de overheid",
+       "een vervangend goed voor een ander goed",
+       "een markt met één aanbieder zonder concurrentie"
+      ],
+      "c": 0,
+      "u": "«Productiefactoren» betekent: arbeid, kapitaal, natuur en ondernemerschap.",
+      "d": 1
+     },
+     {
       "v": "Welk begrip hoort bij deze omschrijving: \"arbeid, kapitaal, natuur en ondernemerschap\"?",
       "o": [
-       "Opportuniteitskosten",
-       "Ruil",
        "Productiefactoren",
-       "Behoefte"
+       "Handelsbalans",
+       "Inflatie",
+       "Substituut"
       ],
-      "c": 2,
+      "c": 0,
+      "u": "Het juiste begrip is «Productiefactoren»: arbeid, kapitaal, natuur en ondernemerschap.",
+      "d": 2
+     },
+     {
+      "v": "Welke term past bij: \"arbeid, kapitaal, natuur en ondernemerschap\"?",
+      "o": [
+       "Budget",
+       "Productiefactoren",
+       "Ruil",
+       "Opportuniteitskosten"
+      ],
+      "c": 1,
       "u": "Het juiste begrip is «Productiefactoren»: arbeid, kapitaal, natuur en ondernemerschap.",
       "d": 3
      },
      {
       "v": "Wat betekent «Marginaal»?",
       "o": [
-       "de gevoeligheid van de vraag voor een prijsverandering",
+       "de totale waarde van de productie in een land per jaar",
+       "het uitwisselen van goederen of diensten",
        "de verandering die één extra eenheid veroorzaakt",
-       "de situatie waarin de markt geen efficiënte uitkomst geeft",
-       "een vervangend goed voor een ander goed"
+       "de prijs waarbij vraag en aanbod aan elkaar gelijk zijn"
       ],
-      "c": 1,
+      "c": 2,
       "u": "«Marginaal» betekent: de verandering die één extra eenheid veroorzaakt.",
+      "d": 1
+     },
+     {
+      "v": "Welk begrip hoort bij deze omschrijving: \"de verandering die één extra eenheid veroorzaakt\"?",
+      "o": [
+       "Marginaal",
+       "Conjuncturele werkloosheid",
+       "Aanbod",
+       "Monopolie"
+      ],
+      "c": 0,
+      "u": "Het juiste begrip is «Marginaal»: de verandering die één extra eenheid veroorzaakt.",
+      "d": 2
+     },
+     {
+      "v": "Welke term past bij: \"de verandering die één extra eenheid veroorzaakt\"?",
+      "o": [
+       "Ruil",
+       "Arbeidsverdeling",
+       "Schaarste",
+       "Marginaal"
+      ],
+      "c": 3,
+      "u": "Het juiste begrip is «Marginaal»: de verandering die één extra eenheid veroorzaakt.",
+      "d": 3
+     },
+     {
+      "v": "Wat betekent «Budget»?",
+      "o": [
+       "het bedrag dat je kunt besteden",
+       "de schommeling van de economische bedrijvigheid",
+       "de waarde van het best opgeofferde alternatief",
+       "financiële steun van de overheid"
+      ],
+      "c": 0,
+      "u": "«Budget» betekent: het bedrag dat je kunt besteden.",
       "d": 1
      },
      {
       "v": "Welk begrip hoort bij deze omschrijving: \"het bedrag dat je kunt besteden\"?",
       "o": [
-       "Recessie",
-       "Budget",
-       "Marktfalen",
-       "Opportuniteitskosten"
+       "Kartel",
+       "Behoefte",
+       "Schaarste",
+       "Budget"
       ],
-      "c": 1,
+      "c": 3,
       "u": "Het juiste begrip is «Budget»: het bedrag dat je kunt besteden.",
       "d": 2
+     },
+     {
+      "v": "Welke term past bij: \"het bedrag dat je kunt besteden\"?",
+      "o": [
+       "Budget",
+       "Behoefte",
+       "Schaarste",
+       "Arbeidsverdeling"
+      ],
+      "c": 0,
+      "u": "Het juiste begrip is «Budget»: het bedrag dat je kunt besteden.",
+      "d": 3
      }
     ],
     "oe": [
@@ -17382,105 +26930,321 @@ var VAKKEN = [
      {
       "v": "Wat betekent «Vraag»?",
       "o": [
-       "wat je met je inkomen daadwerkelijk kunt kopen",
-       "de verandering die één extra eenheid veroorzaakt",
        "de hoeveelheid die kopers willen kopen bij een prijs",
-       "taken opsplitsen om efficiënter te produceren"
+       "goederen die de markt niet levert, zoals dijken",
+       "werkloosheid door te lage bestedingen",
+       "de schommeling van de economische bedrijvigheid"
+      ],
+      "c": 0,
+      "u": "«Vraag» betekent: de hoeveelheid die kopers willen kopen bij een prijs.",
+      "d": 1
+     },
+     {
+      "v": "Welk begrip hoort bij deze omschrijving: \"de hoeveelheid die kopers willen kopen bij een prijs\"?",
+      "o": [
+       "Bbp",
+       "Vraag",
+       "Ruil",
+       "Prijselasticiteit"
+      ],
+      "c": 1,
+      "u": "Het juiste begrip is «Vraag»: de hoeveelheid die kopers willen kopen bij een prijs.",
+      "d": 2
+     },
+     {
+      "v": "Welke term past bij: \"de hoeveelheid die kopers willen kopen bij een prijs\"?",
+      "o": [
+       "Monopolie",
+       "Substituut",
+       "Aanbod",
+       "Vraag"
+      ],
+      "c": 3,
+      "u": "Het juiste begrip is «Vraag»: de hoeveelheid die kopers willen kopen bij een prijs.",
+      "d": 3
+     },
+     {
+      "v": "Wat betekent «Aanbod»?",
+      "o": [
+       "de verandering die één extra eenheid veroorzaakt",
+       "het totaal van alle opgebouwde begrotingstekorten",
+       "de hoeveelheid die verkopers willen verkopen bij een prijs",
+       "de prijs waarbij vraag en aanbod aan elkaar gelijk zijn"
       ],
       "c": 2,
-      "u": "«Vraag» betekent: de hoeveelheid die kopers willen kopen bij een prijs.",
+      "u": "«Aanbod» betekent: de hoeveelheid die verkopers willen verkopen bij een prijs.",
       "d": 1
      },
      {
       "v": "Welk begrip hoort bij deze omschrijving: \"de hoeveelheid die verkopers willen verkopen bij een prijs\"?",
       "o": [
-       "Marktfalen",
+       "Substituut",
+       "Conjuncturele werkloosheid",
        "Aanbod",
-       "Hoogconjunctuur",
-       "Substituut"
+       "Ruil"
       ],
-      "c": 1,
+      "c": 2,
       "u": "Het juiste begrip is «Aanbod»: de hoeveelheid die verkopers willen verkopen bij een prijs.",
       "d": 2
      },
      {
-      "v": "Welk begrip hoort bij deze omschrijving: \"de prijs waarbij vraag en aanbod aan elkaar gelijk zijn\"?",
+      "v": "Welke term past bij: \"de hoeveelheid die verkopers willen verkopen bij een prijs\"?",
       "o": [
        "Monopolie",
-       "Substituut",
-       "Marktevenwicht",
-       "Kartel"
+       "Kartel",
+       "Aanbod",
+       "Volkomen concurrentie"
       ],
       "c": 2,
+      "u": "Het juiste begrip is «Aanbod»: de hoeveelheid die verkopers willen verkopen bij een prijs.",
+      "d": 3
+     },
+     {
+      "v": "Wat betekent «Marktevenwicht»?",
+      "o": [
+       "het uitwisselen van goederen of diensten",
+       "een periode van sterke groei en lage werkloosheid",
+       "een gevoel van gemis dat je wilt vervullen",
+       "de prijs waarbij vraag en aanbod aan elkaar gelijk zijn"
+      ],
+      "c": 3,
+      "u": "«Marktevenwicht» betekent: de prijs waarbij vraag en aanbod aan elkaar gelijk zijn.",
+      "d": 1
+     },
+     {
+      "v": "Welk begrip hoort bij deze omschrijving: \"de prijs waarbij vraag en aanbod aan elkaar gelijk zijn\"?",
+      "o": [
+       "Externe effecten",
+       "Behoefte",
+       "Marktevenwicht",
+       "Oligopolie"
+      ],
+      "c": 2,
+      "u": "Het juiste begrip is «Marktevenwicht»: de prijs waarbij vraag en aanbod aan elkaar gelijk zijn.",
+      "d": 2
+     },
+     {
+      "v": "Welke term past bij: \"de prijs waarbij vraag en aanbod aan elkaar gelijk zijn\"?",
+      "o": [
+       "Volkomen concurrentie",
+       "Marktevenwicht",
+       "Prijselasticiteit",
+       "Oligopolie"
+      ],
+      "c": 1,
       "u": "Het juiste begrip is «Marktevenwicht»: de prijs waarbij vraag en aanbod aan elkaar gelijk zijn.",
       "d": 3
      },
      {
       "v": "Wat betekent «Prijselasticiteit»?",
       "o": [
-       "goederen die de markt niet levert, zoals dijken",
        "de gevoeligheid van de vraag voor een prijsverandering",
-       "de overheidsuitgaven zijn groter dan de inkomsten",
-       "het uitwisselen van goederen of diensten"
+       "de verandering die één extra eenheid veroorzaakt",
+       "een vervangend goed voor een ander goed",
+       "de schommeling van de economische bedrijvigheid"
+      ],
+      "c": 0,
+      "u": "«Prijselasticiteit» betekent: de gevoeligheid van de vraag voor een prijsverandering.",
+      "d": 1
+     },
+     {
+      "v": "Welk begrip hoort bij deze omschrijving: \"de gevoeligheid van de vraag voor een prijsverandering\"?",
+      "o": [
+       "Prijselasticiteit",
+       "Inflatie",
+       "Oligopolie",
+       "Staatsschuld"
+      ],
+      "c": 0,
+      "u": "Het juiste begrip is «Prijselasticiteit»: de gevoeligheid van de vraag voor een prijsverandering.",
+      "d": 2
+     },
+     {
+      "v": "Welke term past bij: \"de gevoeligheid van de vraag voor een prijsverandering\"?",
+      "o": [
+       "Kartel",
+       "Prijselasticiteit",
+       "Aanbod",
+       "Oligopolie"
       ],
       "c": 1,
-      "u": "«Prijselasticiteit» betekent: de gevoeligheid van de vraag voor een prijsverandering.",
+      "u": "Het juiste begrip is «Prijselasticiteit»: de gevoeligheid van de vraag voor een prijsverandering.",
+      "d": 3
+     },
+     {
+      "v": "Wat betekent «Volkomen concurrentie»?",
+      "o": [
+       "veel aanbieders, homogeen product en vrije toetreding",
+       "taken opsplitsen om efficiënter te produceren",
+       "wat je met je inkomen daadwerkelijk kunt kopen",
+       "de prijs waarbij vraag en aanbod aan elkaar gelijk zijn"
+      ],
+      "c": 0,
+      "u": "«Volkomen concurrentie» betekent: veel aanbieders, homogeen product en vrije toetreding.",
       "d": 1
      },
      {
       "v": "Welk begrip hoort bij deze omschrijving: \"veel aanbieders, homogeen product en vrije toetreding\"?",
       "o": [
-       "Belasting",
+       "Behoefte",
+       "Subsidie",
        "Volkomen concurrentie",
-       "Economische groei",
-       "Vraag"
+       "Marktevenwicht"
       ],
-      "c": 1,
+      "c": 2,
       "u": "Het juiste begrip is «Volkomen concurrentie»: veel aanbieders, homogeen product en vrije toetreding.",
       "d": 2
      },
      {
+      "v": "Welke term past bij: \"veel aanbieders, homogeen product en vrije toetreding\"?",
+      "o": [
+       "Vraag",
+       "Volkomen concurrentie",
+       "Aanbod",
+       "Marktevenwicht"
+      ],
+      "c": 1,
+      "u": "Het juiste begrip is «Volkomen concurrentie»: veel aanbieders, homogeen product en vrije toetreding.",
+      "d": 3
+     },
+     {
+      "v": "Wat betekent «Monopolie»?",
+      "o": [
+       "het totaal van alle opgebouwde begrotingstekorten",
+       "een markt met één aanbieder zonder concurrentie",
+       "het verschil tussen de export en de import",
+       "een periode van sterke groei en lage werkloosheid"
+      ],
+      "c": 1,
+      "u": "«Monopolie» betekent: een markt met één aanbieder zonder concurrentie.",
+      "d": 1
+     },
+     {
       "v": "Welk begrip hoort bij deze omschrijving: \"een markt met één aanbieder zonder concurrentie\"?",
       "o": [
-       "Substituut",
-       "Aanbod",
+       "Marktevenwicht",
+       "Economische groei",
        "Monopolie",
-       "Oligopolie"
+       "Marginaal"
       ],
       "c": 2,
+      "u": "Het juiste begrip is «Monopolie»: een markt met één aanbieder zonder concurrentie.",
+      "d": 2
+     },
+     {
+      "v": "Welke term past bij: \"een markt met één aanbieder zonder concurrentie\"?",
+      "o": [
+       "Marktevenwicht",
+       "Monopolie",
+       "Volkomen concurrentie",
+       "Vraag"
+      ],
+      "c": 1,
       "u": "Het juiste begrip is «Monopolie»: een markt met één aanbieder zonder concurrentie.",
       "d": 3
      },
      {
       "v": "Wat betekent «Oligopolie»?",
       "o": [
-       "een markt met enkele grote aanbieders",
+       "wat je met je inkomen daadwerkelijk kunt kopen",
        "een toename van het reële bbp",
+       "werkloosheid door te lage bestedingen",
+       "een markt met enkele grote aanbieders"
+      ],
+      "c": 3,
+      "u": "«Oligopolie» betekent: een markt met enkele grote aanbieders.",
+      "d": 1
+     },
+     {
+      "v": "Welk begrip hoort bij deze omschrijving: \"een markt met enkele grote aanbieders\"?",
+      "o": [
+       "Recessie",
+       "Ruil",
+       "Oligopolie",
+       "Marginaal"
+      ],
+      "c": 2,
+      "u": "Het juiste begrip is «Oligopolie»: een markt met enkele grote aanbieders.",
+      "d": 2
+     },
+     {
+      "v": "Welke term past bij: \"een markt met enkele grote aanbieders\"?",
+      "o": [
+       "Marktevenwicht",
+       "Volkomen concurrentie",
+       "Oligopolie",
+       "Substituut"
+      ],
+      "c": 2,
+      "u": "Het juiste begrip is «Oligopolie»: een markt met enkele grote aanbieders.",
+      "d": 3
+     },
+     {
+      "v": "Wat betekent «Kartel»?",
+      "o": [
        "een verboden prijsafspraak tussen aanbieders",
-       "veel aanbieders, homogeen product en vrije toetreding"
+       "een markt met enkele grote aanbieders",
+       "werkloosheid door te lage bestedingen",
+       "het uitwisselen van goederen of diensten"
       ],
       "c": 0,
-      "u": "«Oligopolie» betekent: een markt met enkele grote aanbieders.",
+      "u": "«Kartel» betekent: een verboden prijsafspraak tussen aanbieders.",
       "d": 1
      },
      {
       "v": "Welk begrip hoort bij deze omschrijving: \"een verboden prijsafspraak tussen aanbieders\"?",
       "o": [
+       "Aanbod",
+       "Progressief belastingstelsel",
        "Kartel",
-       "Bbp",
-       "Belasting",
-       "Marktevenwicht"
+       "Recessie"
       ],
-      "c": 0,
+      "c": 2,
       "u": "Het juiste begrip is «Kartel»: een verboden prijsafspraak tussen aanbieders.",
       "d": 2
      },
      {
+      "v": "Welke term past bij: \"een verboden prijsafspraak tussen aanbieders\"?",
+      "o": [
+       "Kartel",
+       "Vraag",
+       "Oligopolie",
+       "Volkomen concurrentie"
+      ],
+      "c": 0,
+      "u": "Het juiste begrip is «Kartel»: een verboden prijsafspraak tussen aanbieders.",
+      "d": 3
+     },
+     {
+      "v": "Wat betekent «Substituut»?",
+      "o": [
+       "stelsel waarin hogere inkomens relatief meer betalen",
+       "werkloosheid door te lage bestedingen",
+       "een aanhoudende stijging van het algemene prijspeil",
+       "een vervangend goed voor een ander goed"
+      ],
+      "c": 3,
+      "u": "«Substituut» betekent: een vervangend goed voor een ander goed.",
+      "d": 1
+     },
+     {
       "v": "Welk begrip hoort bij deze omschrijving: \"een vervangend goed voor een ander goed\"?",
       "o": [
-       "Monopolie",
-       "Aanbod",
+       "Marktfalen",
+       "Vraag",
+       "Substituut",
+       "Monopolie"
+      ],
+      "c": 2,
+      "u": "Het juiste begrip is «Substituut»: een vervangend goed voor een ander goed.",
+      "d": 2
+     },
+     {
+      "v": "Welke term past bij: \"een vervangend goed voor een ander goed\"?",
+      "o": [
        "Marktevenwicht",
+       "Kartel",
+       "Monopolie",
        "Substituut"
       ],
       "c": 3,
@@ -17988,34 +27752,106 @@ var VAKKEN = [
      {
       "v": "Wat betekent «Collectieve goederen»?",
       "o": [
-       "een vervangend goed voor een ander goed",
-       "goederen die de markt niet levert, zoals dijken",
-       "de totale waarde van de productie in een land per jaar",
-       "werkloosheid door te lage bestedingen"
+       "het bedrag dat je kunt besteden",
+       "kosten of baten voor derden buiten de prijs om",
+       "het uitwisselen van goederen of diensten",
+       "goederen die de markt niet levert, zoals dijken"
       ],
-      "c": 1,
+      "c": 3,
       "u": "«Collectieve goederen» betekent: goederen die de markt niet levert, zoals dijken.",
+      "d": 1
+     },
+     {
+      "v": "Welk begrip hoort bij deze omschrijving: \"goederen die de markt niet levert, zoals dijken\"?",
+      "o": [
+       "Vraag",
+       "Hoogconjunctuur",
+       "Externe effecten",
+       "Collectieve goederen"
+      ],
+      "c": 3,
+      "u": "Het juiste begrip is «Collectieve goederen»: goederen die de markt niet levert, zoals dijken.",
+      "d": 2
+     },
+     {
+      "v": "Welke term past bij: \"goederen die de markt niet levert, zoals dijken\"?",
+      "o": [
+       "Collectieve goederen",
+       "Subsidie",
+       "Staatsschuld",
+       "Begrotingstekort"
+      ],
+      "c": 0,
+      "u": "Het juiste begrip is «Collectieve goederen»: goederen die de markt niet levert, zoals dijken.",
+      "d": 3
+     },
+     {
+      "v": "Wat betekent «Belasting»?",
+      "o": [
+       "een verplichte afdracht aan de overheid",
+       "een gevoel van gemis dat je wilt vervullen",
+       "de hoeveelheid die kopers willen kopen bij een prijs",
+       "de totale waarde van de productie in een land per jaar"
+      ],
+      "c": 0,
+      "u": "«Belasting» betekent: een verplichte afdracht aan de overheid.",
       "d": 1
      },
      {
       "v": "Welk begrip hoort bij deze omschrijving: \"een verplichte afdracht aan de overheid\"?",
       "o": [
+       "Kartel",
+       "Recessie",
        "Belasting",
-       "Oligopolie",
-       "Handelsbalans",
-       "Staatsschuld"
+       "Handelsbalans"
       ],
-      "c": 0,
+      "c": 2,
       "u": "Het juiste begrip is «Belasting»: een verplichte afdracht aan de overheid.",
       "d": 2
      },
      {
+      "v": "Welke term past bij: \"een verplichte afdracht aan de overheid\"?",
+      "o": [
+       "Progressief belastingstelsel",
+       "Externe effecten",
+       "Belasting",
+       "Marktfalen"
+      ],
+      "c": 2,
+      "u": "Het juiste begrip is «Belasting»: een verplichte afdracht aan de overheid.",
+      "d": 3
+     },
+     {
+      "v": "Wat betekent «Progressief belastingstelsel»?",
+      "o": [
+       "de hoeveelheid die verkopers willen verkopen bij een prijs",
+       "stelsel waarin hogere inkomens relatief meer betalen",
+       "een gevoel van gemis dat je wilt vervullen",
+       "de waarde van het best opgeofferde alternatief"
+      ],
+      "c": 1,
+      "u": "«Progressief belastingstelsel» betekent: stelsel waarin hogere inkomens relatief meer betalen.",
+      "d": 1
+     },
+     {
       "v": "Welk begrip hoort bij deze omschrijving: \"stelsel waarin hogere inkomens relatief meer betalen\"?",
       "o": [
-       "Begrotingstekort",
-       "Collectieve goederen",
        "Progressief belastingstelsel",
-       "Subsidie"
+       "Monopolie",
+       "Prijselasticiteit",
+       "Koopkracht"
+      ],
+      "c": 0,
+      "u": "Het juiste begrip is «Progressief belastingstelsel»: stelsel waarin hogere inkomens relatief meer betalen.",
+      "d": 2
+     },
+     {
+      "v": "Welke term past bij: \"stelsel waarin hogere inkomens relatief meer betalen\"?",
+      "o": [
+       "Externe effecten",
+       "Begrotingstekort",
+       "Progressief belastingstelsel",
+       "Belasting"
       ],
       "c": 2,
       "u": "Het juiste begrip is «Progressief belastingstelsel»: stelsel waarin hogere inkomens relatief meer betalen.",
@@ -18024,62 +27860,182 @@ var VAKKEN = [
      {
       "v": "Wat betekent «Begrotingstekort»?",
       "o": [
-       "de situatie waarin de markt geen efficiënte uitkomst geeft",
-       "een vervangend goed voor een ander goed",
+       "de prijs waarbij vraag en aanbod aan elkaar gelijk zijn",
+       "arbeid, kapitaal, natuur en ondernemerschap",
        "de overheidsuitgaven zijn groter dan de inkomsten",
-       "veel aanbieders, homogeen product en vrije toetreding"
+       "een aanhoudende stijging van het algemene prijspeil"
       ],
       "c": 2,
       "u": "«Begrotingstekort» betekent: de overheidsuitgaven zijn groter dan de inkomsten.",
       "d": 1
      },
      {
-      "v": "Welk begrip hoort bij deze omschrijving: \"het totaal van alle opgebouwde begrotingstekorten\"?",
+      "v": "Welk begrip hoort bij deze omschrijving: \"de overheidsuitgaven zijn groter dan de inkomsten\"?",
       "o": [
-       "Hoogconjunctuur",
-       "Opportuniteitskosten",
-       "Staatsschuld",
-       "Economische groei"
+       "Begrotingstekort",
+       "Economische groei",
+       "Substituut",
+       "Progressief belastingstelsel"
+      ],
+      "c": 0,
+      "u": "Het juiste begrip is «Begrotingstekort»: de overheidsuitgaven zijn groter dan de inkomsten.",
+      "d": 2
+     },
+     {
+      "v": "Welke term past bij: \"de overheidsuitgaven zijn groter dan de inkomsten\"?",
+      "o": [
+       "Marktfalen",
+       "Begrotingstekort",
+       "Progressief belastingstelsel",
+       "Staatsschuld"
+      ],
+      "c": 1,
+      "u": "Het juiste begrip is «Begrotingstekort»: de overheidsuitgaven zijn groter dan de inkomsten.",
+      "d": 3
+     },
+     {
+      "v": "Wat betekent «Staatsschuld»?",
+      "o": [
+       "een vervangend goed voor een ander goed",
+       "werkloosheid door te lage bestedingen",
+       "het totaal van alle opgebouwde begrotingstekorten",
+       "een periode van twee kwartalen krimp van het bbp"
       ],
       "c": 2,
+      "u": "«Staatsschuld» betekent: het totaal van alle opgebouwde begrotingstekorten.",
+      "d": 1
+     },
+     {
+      "v": "Welk begrip hoort bij deze omschrijving: \"het totaal van alle opgebouwde begrotingstekorten\"?",
+      "o": [
+       "Staatsschuld",
+       "Bbp",
+       "Oligopolie",
+       "Handelsbalans"
+      ],
+      "c": 0,
       "u": "Het juiste begrip is «Staatsschuld»: het totaal van alle opgebouwde begrotingstekorten.",
       "d": 2
      },
      {
+      "v": "Welke term past bij: \"het totaal van alle opgebouwde begrotingstekorten\"?",
+      "o": [
+       "Collectieve goederen",
+       "Progressief belastingstelsel",
+       "Staatsschuld",
+       "Subsidie"
+      ],
+      "c": 2,
+      "u": "Het juiste begrip is «Staatsschuld»: het totaal van alle opgebouwde begrotingstekorten.",
+      "d": 3
+     },
+     {
+      "v": "Wat betekent «Externe effecten»?",
+      "o": [
+       "een toename van het reële bbp",
+       "kosten of baten voor derden buiten de prijs om",
+       "werkloosheid door te lage bestedingen",
+       "financiële steun van de overheid"
+      ],
+      "c": 1,
+      "u": "«Externe effecten» betekent: kosten of baten voor derden buiten de prijs om.",
+      "d": 1
+     },
+     {
       "v": "Welk begrip hoort bij deze omschrijving: \"kosten of baten voor derden buiten de prijs om\"?",
       "o": [
-       "Begrotingstekort",
-       "Subsidie",
-       "Staatsschuld",
-       "Externe effecten"
+       "Prijselasticiteit",
+       "Externe effecten",
+       "Oligopolie",
+       "Conjunctuur"
       ],
-      "c": 3,
+      "c": 1,
+      "u": "Het juiste begrip is «Externe effecten»: kosten of baten voor derden buiten de prijs om.",
+      "d": 2
+     },
+     {
+      "v": "Welke term past bij: \"kosten of baten voor derden buiten de prijs om\"?",
+      "o": [
+       "Progressief belastingstelsel",
+       "Externe effecten",
+       "Marktfalen",
+       "Staatsschuld"
+      ],
+      "c": 1,
       "u": "Het juiste begrip is «Externe effecten»: kosten of baten voor derden buiten de prijs om.",
       "d": 3
      },
      {
       "v": "Wat betekent «Subsidie»?",
       "o": [
-       "een verplichte afdracht aan de overheid",
-       "een markt met één aanbieder zonder concurrentie",
-       "een aanhoudende stijging van het algemene prijspeil",
-       "financiële steun van de overheid"
+       "de gevoeligheid van de vraag voor een prijsverandering",
+       "financiële steun van de overheid",
+       "taken opsplitsen om efficiënter te produceren",
+       "het uitwisselen van goederen of diensten"
       ],
-      "c": 3,
+      "c": 1,
       "u": "«Subsidie» betekent: financiële steun van de overheid.",
+      "d": 1
+     },
+     {
+      "v": "Welk begrip hoort bij deze omschrijving: \"financiële steun van de overheid\"?",
+      "o": [
+       "Subsidie",
+       "Externe effecten",
+       "Handelsbalans",
+       "Behoefte"
+      ],
+      "c": 0,
+      "u": "Het juiste begrip is «Subsidie»: financiële steun van de overheid.",
+      "d": 2
+     },
+     {
+      "v": "Welke term past bij: \"financiële steun van de overheid\"?",
+      "o": [
+       "Subsidie",
+       "Staatsschuld",
+       "Externe effecten",
+       "Marktfalen"
+      ],
+      "c": 0,
+      "u": "Het juiste begrip is «Subsidie»: financiële steun van de overheid.",
+      "d": 3
+     },
+     {
+      "v": "Wat betekent «Marktfalen»?",
+      "o": [
+       "het bedrag dat je kunt besteden",
+       "stelsel waarin hogere inkomens relatief meer betalen",
+       "de situatie waarin de markt geen efficiënte uitkomst geeft",
+       "middelen zijn beperkt ten opzichte van de behoeften"
+      ],
+      "c": 2,
+      "u": "«Marktfalen» betekent: de situatie waarin de markt geen efficiënte uitkomst geeft.",
       "d": 1
      },
      {
       "v": "Welk begrip hoort bij deze omschrijving: \"de situatie waarin de markt geen efficiënte uitkomst geeft\"?",
       "o": [
-       "Prijselasticiteit",
-       "Oligopolie",
-       "Kartel",
-       "Marktfalen"
+       "Conjunctuur",
+       "Handelsbalans",
+       "Marktfalen",
+       "Progressief belastingstelsel"
       ],
-      "c": 3,
+      "c": 2,
       "u": "Het juiste begrip is «Marktfalen»: de situatie waarin de markt geen efficiënte uitkomst geeft.",
       "d": 2
+     },
+     {
+      "v": "Welke term past bij: \"de situatie waarin de markt geen efficiënte uitkomst geeft\"?",
+      "o": [
+       "Collectieve goederen",
+       "Marktfalen",
+       "Externe effecten",
+       "Begrotingstekort"
+      ],
+      "c": 1,
+      "u": "Het juiste begrip is «Marktfalen»: de situatie waarin de markt geen efficiënte uitkomst geeft.",
+      "d": 3
      }
     ],
     "oe": [
@@ -18529,70 +28485,214 @@ var VAKKEN = [
      {
       "v": "Wat betekent «Conjunctuur»?",
       "o": [
-       "financiële steun van de overheid",
+       "de totale waarde van de productie in een land per jaar",
        "de schommeling van de economische bedrijvigheid",
-       "een verboden prijsafspraak tussen aanbieders",
-       "het verschil tussen de export en de import"
+       "een gevoel van gemis dat je wilt vervullen",
+       "wat je met je inkomen daadwerkelijk kunt kopen"
       ],
       "c": 1,
       "u": "«Conjunctuur» betekent: de schommeling van de economische bedrijvigheid.",
       "d": 1
      },
      {
-      "v": "Welk begrip hoort bij deze omschrijving: \"een periode van sterke groei en lage werkloosheid\"?",
+      "v": "Welk begrip hoort bij deze omschrijving: \"de schommeling van de economische bedrijvigheid\"?",
       "o": [
-       "Inflatie",
-       "Hoogconjunctuur",
-       "Kartel",
-       "Belasting"
+       "Bbp",
+       "Conjunctuur",
+       "Koopkracht",
+       "Arbeidsverdeling"
       ],
       "c": 1,
+      "u": "Het juiste begrip is «Conjunctuur»: de schommeling van de economische bedrijvigheid.",
+      "d": 2
+     },
+     {
+      "v": "Welke term past bij: \"de schommeling van de economische bedrijvigheid\"?",
+      "o": [
+       "Recessie",
+       "Conjunctuur",
+       "Hoogconjunctuur",
+       "Economische groei"
+      ],
+      "c": 1,
+      "u": "Het juiste begrip is «Conjunctuur»: de schommeling van de economische bedrijvigheid.",
+      "d": 3
+     },
+     {
+      "v": "Wat betekent «Hoogconjunctuur»?",
+      "o": [
+       "het verschil tussen de export en de import",
+       "een periode van sterke groei en lage werkloosheid",
+       "een markt met één aanbieder zonder concurrentie",
+       "de totale waarde van de productie in een land per jaar"
+      ],
+      "c": 1,
+      "u": "«Hoogconjunctuur» betekent: een periode van sterke groei en lage werkloosheid.",
+      "d": 1
+     },
+     {
+      "v": "Welk begrip hoort bij deze omschrijving: \"een periode van sterke groei en lage werkloosheid\"?",
+      "o": [
+       "Ruil",
+       "Budget",
+       "Hoogconjunctuur",
+       "Handelsbalans"
+      ],
+      "c": 2,
       "u": "Het juiste begrip is «Hoogconjunctuur»: een periode van sterke groei en lage werkloosheid.",
       "d": 2
      },
      {
+      "v": "Welke term past bij: \"een periode van sterke groei en lage werkloosheid\"?",
+      "o": [
+       "Handelsbalans",
+       "Conjunctuur",
+       "Conjuncturele werkloosheid",
+       "Hoogconjunctuur"
+      ],
+      "c": 3,
+      "u": "Het juiste begrip is «Hoogconjunctuur»: een periode van sterke groei en lage werkloosheid.",
+      "d": 3
+     },
+     {
+      "v": "Wat betekent «Recessie»?",
+      "o": [
+       "arbeid, kapitaal, natuur en ondernemerschap",
+       "middelen zijn beperkt ten opzichte van de behoeften",
+       "een periode van sterke groei en lage werkloosheid",
+       "een periode van twee kwartalen krimp van het bbp"
+      ],
+      "c": 3,
+      "u": "«Recessie» betekent: een periode van twee kwartalen krimp van het bbp.",
+      "d": 1
+     },
+     {
       "v": "Welk begrip hoort bij deze omschrijving: \"een periode van twee kwartalen krimp van het bbp\"?",
       "o": [
-       "Hoogconjunctuur",
-       "Economische groei",
-       "Recessie",
-       "Inflatie"
+       "Marginaal",
+       "Vraag",
+       "Marktevenwicht",
+       "Recessie"
       ],
-      "c": 2,
+      "c": 3,
+      "u": "Het juiste begrip is «Recessie»: een periode van twee kwartalen krimp van het bbp.",
+      "d": 2
+     },
+     {
+      "v": "Welke term past bij: \"een periode van twee kwartalen krimp van het bbp\"?",
+      "o": [
+       "Recessie",
+       "Koopkracht",
+       "Inflatie",
+       "Conjunctuur"
+      ],
+      "c": 0,
       "u": "Het juiste begrip is «Recessie»: een periode van twee kwartalen krimp van het bbp.",
       "d": 3
      },
      {
       "v": "Wat betekent «Inflatie»?",
       "o": [
-       "de gevoeligheid van de vraag voor een prijsverandering",
-       "een aanhoudende stijging van het algemene prijspeil",
-       "een markt met één aanbieder zonder concurrentie",
-       "arbeid, kapitaal, natuur en ondernemerschap"
+       "de verandering die één extra eenheid veroorzaakt",
+       "kosten of baten voor derden buiten de prijs om",
+       "een vervangend goed voor een ander goed",
+       "een aanhoudende stijging van het algemene prijspeil"
       ],
-      "c": 1,
+      "c": 3,
       "u": "«Inflatie» betekent: een aanhoudende stijging van het algemene prijspeil.",
+      "d": 1
+     },
+     {
+      "v": "Welk begrip hoort bij deze omschrijving: \"een aanhoudende stijging van het algemene prijspeil\"?",
+      "o": [
+       "Economische groei",
+       "Ruil",
+       "Subsidie",
+       "Inflatie"
+      ],
+      "c": 3,
+      "u": "Het juiste begrip is «Inflatie»: een aanhoudende stijging van het algemene prijspeil.",
+      "d": 2
+     },
+     {
+      "v": "Welke term past bij: \"een aanhoudende stijging van het algemene prijspeil\"?",
+      "o": [
+       "Koopkracht",
+       "Recessie",
+       "Conjuncturele werkloosheid",
+       "Inflatie"
+      ],
+      "c": 3,
+      "u": "Het juiste begrip is «Inflatie»: een aanhoudende stijging van het algemene prijspeil.",
+      "d": 3
+     },
+     {
+      "v": "Wat betekent «Bbp»?",
+      "o": [
+       "werkloosheid door te lage bestedingen",
+       "een gevoel van gemis dat je wilt vervullen",
+       "de totale waarde van de productie in een land per jaar",
+       "wat je met je inkomen daadwerkelijk kunt kopen"
+      ],
+      "c": 2,
+      "u": "«Bbp» betekent: de totale waarde van de productie in een land per jaar.",
       "d": 1
      },
      {
       "v": "Welk begrip hoort bij deze omschrijving: \"de totale waarde van de productie in een land per jaar\"?",
       "o": [
-       "Conjunctuur",
+       "Subsidie",
        "Bbp",
-       "Recessie",
-       "Monopolie"
+       "Prijselasticiteit",
+       "Marktevenwicht"
       ],
       "c": 1,
       "u": "Het juiste begrip is «Bbp»: de totale waarde van de productie in een land per jaar.",
       "d": 2
      },
      {
+      "v": "Welke term past bij: \"de totale waarde van de productie in een land per jaar\"?",
+      "o": [
+       "Inflatie",
+       "Bbp",
+       "Hoogconjunctuur",
+       "Handelsbalans"
+      ],
+      "c": 1,
+      "u": "Het juiste begrip is «Bbp»: de totale waarde van de productie in een land per jaar.",
+      "d": 3
+     },
+     {
+      "v": "Wat betekent «Conjuncturele werkloosheid»?",
+      "o": [
+       "veel aanbieders, homogeen product en vrije toetreding",
+       "werkloosheid door te lage bestedingen",
+       "financiële steun van de overheid",
+       "middelen zijn beperkt ten opzichte van de behoeften"
+      ],
+      "c": 1,
+      "u": "«Conjuncturele werkloosheid» betekent: werkloosheid door te lage bestedingen.",
+      "d": 1
+     },
+     {
       "v": "Welk begrip hoort bij deze omschrijving: \"werkloosheid door te lage bestedingen\"?",
       "o": [
+       "Begrotingstekort",
+       "Marktfalen",
+       "Belasting",
+       "Conjuncturele werkloosheid"
+      ],
+      "c": 3,
+      "u": "Het juiste begrip is «Conjuncturele werkloosheid»: werkloosheid door te lage bestedingen.",
+      "d": 2
+     },
+     {
+      "v": "Welke term past bij: \"werkloosheid door te lage bestedingen\"?",
+      "o": [
+       "Handelsbalans",
        "Bbp",
-       "Inflatie",
        "Conjuncturele werkloosheid",
-       "Economische groei"
+       "Inflatie"
       ],
       "c": 2,
       "u": "Het juiste begrip is «Conjuncturele werkloosheid»: werkloosheid door te lage bestedingen.",
@@ -18602,33 +28702,105 @@ var VAKKEN = [
       "v": "Wat betekent «Koopkracht»?",
       "o": [
        "wat je met je inkomen daadwerkelijk kunt kopen",
-       "de prijs waarbij vraag en aanbod aan elkaar gelijk zijn",
-       "taken opsplitsen om efficiënter te produceren",
-       "een periode van sterke groei en lage werkloosheid"
+       "het verschil tussen de export en de import",
+       "een toename van het reële bbp",
+       "de hoeveelheid die kopers willen kopen bij een prijs"
       ],
       "c": 0,
       "u": "«Koopkracht» betekent: wat je met je inkomen daadwerkelijk kunt kopen.",
       "d": 1
      },
      {
-      "v": "Welk begrip hoort bij deze omschrijving: \"het verschil tussen de export en de import\"?",
+      "v": "Welk begrip hoort bij deze omschrijving: \"wat je met je inkomen daadwerkelijk kunt kopen\"?",
       "o": [
        "Hoogconjunctuur",
-       "Handelsbalans",
-       "Begrotingstekort",
-       "Progressief belastingstelsel"
+       "Arbeidsverdeling",
+       "Staatsschuld",
+       "Koopkracht"
+      ],
+      "c": 3,
+      "u": "Het juiste begrip is «Koopkracht»: wat je met je inkomen daadwerkelijk kunt kopen.",
+      "d": 2
+     },
+     {
+      "v": "Welke term past bij: \"wat je met je inkomen daadwerkelijk kunt kopen\"?",
+      "o": [
+       "Koopkracht",
+       "Conjunctuur",
+       "Inflatie",
+       "Economische groei"
+      ],
+      "c": 0,
+      "u": "Het juiste begrip is «Koopkracht»: wat je met je inkomen daadwerkelijk kunt kopen.",
+      "d": 3
+     },
+     {
+      "v": "Wat betekent «Handelsbalans»?",
+      "o": [
+       "taken opsplitsen om efficiënter te produceren",
+       "het verschil tussen de export en de import",
+       "de schommeling van de economische bedrijvigheid",
+       "het bedrag dat je kunt besteden"
       ],
       "c": 1,
+      "u": "«Handelsbalans» betekent: het verschil tussen de export en de import.",
+      "d": 1
+     },
+     {
+      "v": "Welk begrip hoort bij deze omschrijving: \"het verschil tussen de export en de import\"?",
+      "o": [
+       "Recessie",
+       "Externe effecten",
+       "Handelsbalans",
+       "Marginaal"
+      ],
+      "c": 2,
       "u": "Het juiste begrip is «Handelsbalans»: het verschil tussen de export en de import.",
       "d": 2
      },
      {
-      "v": "Welk begrip hoort bij deze omschrijving: \"een toename van het reële bbp\"?",
+      "v": "Welke term past bij: \"het verschil tussen de export en de import\"?",
       "o": [
        "Recessie",
+       "Handelsbalans",
+       "Hoogconjunctuur",
+       "Conjuncturele werkloosheid"
+      ],
+      "c": 1,
+      "u": "Het juiste begrip is «Handelsbalans»: het verschil tussen de export en de import.",
+      "d": 3
+     },
+     {
+      "v": "Wat betekent «Economische groei»?",
+      "o": [
+       "werkloosheid door te lage bestedingen",
+       "een vervangend goed voor een ander goed",
+       "een toename van het reële bbp",
+       "wat je met je inkomen daadwerkelijk kunt kopen"
+      ],
+      "c": 2,
+      "u": "«Economische groei» betekent: een toename van het reële bbp.",
+      "d": 1
+     },
+     {
+      "v": "Welk begrip hoort bij deze omschrijving: \"een toename van het reële bbp\"?",
+      "o": [
+       "Volkomen concurrentie",
+       "Budget",
+       "Ruil",
+       "Economische groei"
+      ],
+      "c": 3,
+      "u": "Het juiste begrip is «Economische groei»: een toename van het reële bbp.",
+      "d": 2
+     },
+     {
+      "v": "Welke term past bij: \"een toename van het reële bbp\"?",
+      "o": [
+       "Hoogconjunctuur",
        "Economische groei",
-       "Conjuncturele werkloosheid",
-       "Conjunctuur"
+       "Conjunctuur",
+       "Recessie"
       ],
       "c": 1,
       "u": "Het juiste begrip is «Economische groei»: een toename van het reële bbp.",
@@ -18906,86 +29078,254 @@ var VAKKEN = [
      {
       "v": "Wat betekent «Betrouwbaarheid»?",
       "o": [
-       "een concrete gedragsregel",
-       "de mate waarin je meet wat je wilt meten",
-       "een staat die burgers tegen risico's beschermt",
-       "de consistentie van een meting bij herhaling"
+       "de consistentie van een meting bij herhaling",
+       "een samenhang tussen twee variabelen",
+       "een samenhangend geheel van ideeën over de samenleving",
+       "een staat die burgers tegen risico's beschermt"
+      ],
+      "c": 0,
+      "u": "«Betrouwbaarheid» betekent: de consistentie van een meting bij herhaling. Betrouwbaar ≠ valide: consistent meten is niet hetzelfde als het júiste meten.",
+      "d": 1
+     },
+     {
+      "v": "Welk begrip hoort bij deze omschrijving: \"de consistentie van een meting bij herhaling\"?",
+      "o": [
+       "Gezag",
+       "Representativiteit",
+       "Pluriforme samenleving",
+       "Betrouwbaarheid"
       ],
       "c": 3,
-      "u": "«Betrouwbaarheid» betekent: de consistentie van een meting bij herhaling. Betrouwbaar ≠ valide: consistent meten is niet hetzelfde als het júiste meten.",
+      "u": "Het juiste begrip is «Betrouwbaarheid»: de consistentie van een meting bij herhaling. Betrouwbaar ≠ valide: consistent meten is niet hetzelfde als het júiste meten.",
+      "d": 2
+     },
+     {
+      "v": "Welke term past bij: \"de consistentie van een meting bij herhaling\"?",
+      "o": [
+       "Correlatie",
+       "Betrouwbaarheid",
+       "Validiteit",
+       "Representativiteit"
+      ],
+      "c": 1,
+      "u": "Het juiste begrip is «Betrouwbaarheid»: de consistentie van een meting bij herhaling. Betrouwbaar ≠ valide: consistent meten is niet hetzelfde als het júiste meten.",
+      "d": 3
+     },
+     {
+      "v": "Wat betekent «Validiteit»?",
+      "o": [
+       "de mate waarin je meet wat je wilt meten",
+       "een nastrevenswaardig ideaal",
+       "de mate waarin een steekproef de populatie afspiegelt",
+       "het vermogen om het gedrag van anderen te bepalen"
+      ],
+      "c": 0,
+      "u": "«Validiteit» betekent: de mate waarin je meet wat je wilt meten. Valide ≠ betrouwbaar: valide = het juiste meten, betrouwbaar = herhaalbaar.",
       "d": 1
      },
      {
       "v": "Welk begrip hoort bij deze omschrijving: \"de mate waarin je meet wat je wilt meten\"?",
       "o": [
-       "Correlatie",
+       "Coalitie",
+       "Sociale mobiliteit",
        "Validiteit",
-       "Representativiteit",
-       "Norm"
+       "Macht"
       ],
-      "c": 1,
+      "c": 2,
       "u": "Het juiste begrip is «Validiteit»: de mate waarin je meet wat je wilt meten. Valide ≠ betrouwbaar: valide = het juiste meten, betrouwbaar = herhaalbaar.",
       "d": 2
+     },
+     {
+      "v": "Welke term past bij: \"de mate waarin je meet wat je wilt meten\"?",
+      "o": [
+       "Causaliteit",
+       "Correlatie",
+       "Validiteit",
+       "Operationaliseren"
+      ],
+      "c": 2,
+      "u": "Het juiste begrip is «Validiteit»: de mate waarin je meet wat je wilt meten. Valide ≠ betrouwbaar: valide = het juiste meten, betrouwbaar = herhaalbaar.",
+      "d": 3
+     },
+     {
+      "v": "Wat betekent «Representativiteit»?",
+      "o": [
+       "een staatsvorm waarin de macht bij het volk ligt",
+       "zetelverdeling naar rato van de stemmen",
+       "de scheiding van de drie staatsmachten",
+       "de mate waarin een steekproef de populatie afspiegelt"
+      ],
+      "c": 3,
+      "u": "«Representativiteit» betekent: de mate waarin een steekproef de populatie afspiegelt.",
+      "d": 1
      },
      {
       "v": "Welk begrip hoort bij deze omschrijving: \"de mate waarin een steekproef de populatie afspiegelt\"?",
       "o": [
        "Causaliteit",
-       "Betrouwbaarheid",
-       "Correlatie",
-       "Representativiteit"
+       "Representativiteit",
+       "Evenredige vertegenwoordiging",
+       "Coalitie"
       ],
-      "c": 3,
+      "c": 1,
+      "u": "Het juiste begrip is «Representativiteit»: de mate waarin een steekproef de populatie afspiegelt.",
+      "d": 2
+     },
+     {
+      "v": "Welke term past bij: \"de mate waarin een steekproef de populatie afspiegelt\"?",
+      "o": [
+       "Confounder",
+       "Representativiteit",
+       "Betrouwbaarheid",
+       "Validiteit"
+      ],
+      "c": 1,
       "u": "Het juiste begrip is «Representativiteit»: de mate waarin een steekproef de populatie afspiegelt.",
       "d": 3
      },
      {
       "v": "Wat betekent «Correlatie»?",
       "o": [
+       "de scheiding van de drie staatsmachten",
        "een samenhang tussen twee variabelen",
-       "de aanvaarding van gezag als rechtvaardig",
-       "de mate waarin je meet wat je wilt meten",
-       "zetelverdeling naar rato van de stemmen"
+       "het vermogen om het gedrag van anderen te bepalen",
+       "een staat die burgers tegen risico's beschermt"
+      ],
+      "c": 1,
+      "u": "«Correlatie» betekent: een samenhang tussen twee variabelen. Correlatie is geen causaliteit: samen bewegen ≠ elkaar veroorzaken.",
+      "d": 1
+     },
+     {
+      "v": "Welk begrip hoort bij deze omschrijving: \"een samenhang tussen twee variabelen\"?",
+      "o": [
+       "Correlatie",
+       "Socialisatie",
+       "Macht",
+       "Sociale stratificatie"
       ],
       "c": 0,
-      "u": "«Correlatie» betekent: een samenhang tussen twee variabelen. Correlatie is geen causaliteit: samen bewegen ≠ elkaar veroorzaken.",
+      "u": "Het juiste begrip is «Correlatie»: een samenhang tussen twee variabelen. Correlatie is geen causaliteit: samen bewegen ≠ elkaar veroorzaken.",
+      "d": 2
+     },
+     {
+      "v": "Welke term past bij: \"een samenhang tussen twee variabelen\"?",
+      "o": [
+       "Operationaliseren",
+       "Betrouwbaarheid",
+       "Correlatie",
+       "Validiteit"
+      ],
+      "c": 2,
+      "u": "Het juiste begrip is «Correlatie»: een samenhang tussen twee variabelen. Correlatie is geen causaliteit: samen bewegen ≠ elkaar veroorzaken.",
+      "d": 3
+     },
+     {
+      "v": "Wat betekent «Causaliteit»?",
+      "o": [
+       "het aanleren van normen, waarden en rollen",
+       "een oorzaak-gevolgrelatie",
+       "een staatsvorm waarin de macht bij het volk ligt",
+       "de indeling van de samenleving in lagen"
+      ],
+      "c": 1,
+      "u": "«Causaliteit» betekent: een oorzaak-gevolgrelatie.",
       "d": 1
      },
      {
       "v": "Welk begrip hoort bij deze omschrijving: \"een oorzaak-gevolgrelatie\"?",
       "o": [
-       "Macht",
-       "Representativiteit",
-       "Legitimiteit",
-       "Causaliteit"
+       "Causaliteit",
+       "Verzorgingsstaat",
+       "Pluriforme samenleving",
+       "Coalitie"
       ],
-      "c": 3,
+      "c": 0,
       "u": "Het juiste begrip is «Causaliteit»: een oorzaak-gevolgrelatie.",
       "d": 2
      },
      {
-      "v": "Welk begrip hoort bij deze omschrijving: \"een verborgen derde variabele die een schijnverband schept\"?",
+      "v": "Welke term past bij: \"een oorzaak-gevolgrelatie\"?",
       "o": [
+       "Confounder",
        "Operationaliseren",
-       "Correlatie",
-       "Causaliteit",
-       "Confounder"
+       "Betrouwbaarheid",
+       "Causaliteit"
       ],
       "c": 3,
+      "u": "Het juiste begrip is «Causaliteit»: een oorzaak-gevolgrelatie.",
+      "d": 3
+     },
+     {
+      "v": "Wat betekent «Confounder»?",
+      "o": [
+       "de scheiding van de drie staatsmachten",
+       "de consistentie van een meting bij herhaling",
+       "een verborgen derde variabele die een schijnverband schept",
+       "de indeling van de samenleving in lagen"
+      ],
+      "c": 2,
+      "u": "«Confounder» betekent: een verborgen derde variabele die een schijnverband schept.",
+      "d": 1
+     },
+     {
+      "v": "Welk begrip hoort bij deze omschrijving: \"een verborgen derde variabele die een schijnverband schept\"?",
+      "o": [
+       "Confounder",
+       "Ideologie",
+       "Democratie",
+       "Norm"
+      ],
+      "c": 0,
+      "u": "Het juiste begrip is «Confounder»: een verborgen derde variabele die een schijnverband schept.",
+      "d": 2
+     },
+     {
+      "v": "Welke term past bij: \"een verborgen derde variabele die een schijnverband schept\"?",
+      "o": [
+       "Causaliteit",
+       "Confounder",
+       "Operationaliseren",
+       "Representativiteit"
+      ],
+      "c": 1,
       "u": "Het juiste begrip is «Confounder»: een verborgen derde variabele die een schijnverband schept.",
       "d": 3
      },
      {
       "v": "Wat betekent «Operationaliseren»?",
       "o": [
-       "een samenhangend geheel van ideeën over de samenleving",
+       "een staatsvorm waarin de macht bij het volk ligt",
+       "een oorzaak-gevolgrelatie",
        "een begrip meetbaar maken",
-       "een verborgen derde variabele die een schijnverband schept",
-       "de indeling van de samenleving in lagen"
+       "een concrete gedragsregel"
       ],
-      "c": 1,
+      "c": 2,
       "u": "«Operationaliseren» betekent: een begrip meetbaar maken.",
       "d": 1
+     },
+     {
+      "v": "Welk begrip hoort bij deze omschrijving: \"een begrip meetbaar maken\"?",
+      "o": [
+       "Democratie",
+       "Betrouwbaarheid",
+       "Operationaliseren",
+       "Waarde"
+      ],
+      "c": 2,
+      "u": "Het juiste begrip is «Operationaliseren»: een begrip meetbaar maken.",
+      "d": 2
+     },
+     {
+      "v": "Welke term past bij: \"een begrip meetbaar maken\"?",
+      "o": [
+       "Correlatie",
+       "Confounder",
+       "Operationaliseren",
+       "Validiteit"
+      ],
+      "c": 2,
+      "u": "Het juiste begrip is «Operationaliseren»: een begrip meetbaar maken.",
+      "d": 3
      }
     ],
     "oe": [
@@ -19135,9 +29475,9 @@ var VAKKEN = [
      {
       "v": "Wat betekent «Socialisatie»?",
       "o": [
-       "een verborgen derde variabele die een schijnverband schept",
-       "een nastrevenswaardig ideaal",
-       "beweging tussen de sociale lagen",
+       "de mate waarin je meet wat je wilt meten",
+       "een samenhang tussen twee variabelen",
+       "de mate waarin een steekproef de populatie afspiegelt",
        "het aanleren van normen, waarden en rollen"
       ],
       "c": 3,
@@ -19145,24 +29485,96 @@ var VAKKEN = [
       "d": 1
      },
      {
+      "v": "Welk begrip hoort bij deze omschrijving: \"het aanleren van normen, waarden en rollen\"?",
+      "o": [
+       "Legitimiteit",
+       "Validiteit",
+       "Operationaliseren",
+       "Socialisatie"
+      ],
+      "c": 3,
+      "u": "Het juiste begrip is «Socialisatie»: het aanleren van normen, waarden en rollen.",
+      "d": 2
+     },
+     {
+      "v": "Welke term past bij: \"het aanleren van normen, waarden en rollen\"?",
+      "o": [
+       "Deviantie",
+       "Sociale mobiliteit",
+       "Norm",
+       "Socialisatie"
+      ],
+      "c": 3,
+      "u": "Het juiste begrip is «Socialisatie»: het aanleren van normen, waarden en rollen.",
+      "d": 3
+     },
+     {
+      "v": "Wat betekent «Norm»?",
+      "o": [
+       "het vermogen om het gedrag van anderen te bepalen",
+       "beweging tussen de sociale lagen",
+       "een concrete gedragsregel",
+       "het aanleren van normen, waarden en rollen"
+      ],
+      "c": 2,
+      "u": "«Norm» betekent: een concrete gedragsregel.",
+      "d": 1
+     },
+     {
       "v": "Welk begrip hoort bij deze omschrijving: \"een concrete gedragsregel\"?",
       "o": [
        "Norm",
-       "Confounder",
-       "Sociale stratificatie",
-       "Democratie"
+       "Macht",
+       "Ideologie",
+       "Pluriforme samenleving"
       ],
       "c": 0,
       "u": "Het juiste begrip is «Norm»: een concrete gedragsregel.",
       "d": 2
      },
      {
+      "v": "Welke term past bij: \"een concrete gedragsregel\"?",
+      "o": [
+       "Socialisatie",
+       "Verzorgingsstaat",
+       "Norm",
+       "Deviantie"
+      ],
+      "c": 2,
+      "u": "Het juiste begrip is «Norm»: een concrete gedragsregel.",
+      "d": 3
+     },
+     {
+      "v": "Wat betekent «Waarde»?",
+      "o": [
+       "een concrete gedragsregel",
+       "de mate waarin je meet wat je wilt meten",
+       "het aanleren van normen, waarden en rollen",
+       "een nastrevenswaardig ideaal"
+      ],
+      "c": 3,
+      "u": "«Waarde» betekent: een nastrevenswaardig ideaal.",
+      "d": 1
+     },
+     {
       "v": "Welk begrip hoort bij deze omschrijving: \"een nastrevenswaardig ideaal\"?",
       "o": [
        "Waarde",
-       "Sociale mobiliteit",
-       "Sociale stratificatie",
+       "Representativiteit",
+       "Legitimiteit",
        "Norm"
+      ],
+      "c": 0,
+      "u": "Het juiste begrip is «Waarde»: een nastrevenswaardig ideaal.",
+      "d": 2
+     },
+     {
+      "v": "Welke term past bij: \"een nastrevenswaardig ideaal\"?",
+      "o": [
+       "Waarde",
+       "Verzorgingsstaat",
+       "Deviantie",
+       "Socialisatie"
       ],
       "c": 0,
       "u": "Het juiste begrip is «Waarde»: een nastrevenswaardig ideaal.",
@@ -19171,50 +29583,146 @@ var VAKKEN = [
      {
       "v": "Wat betekent «Sociale stratificatie»?",
       "o": [
-       "de indeling van de samenleving in lagen",
-       "een oorzaak-gevolgrelatie",
-       "het aanleren van normen, waarden en rollen",
-       "een verborgen derde variabele die een schijnverband schept"
+       "de aanvaarding van gezag als rechtvaardig",
+       "een samenhangend geheel van ideeën over de samenleving",
+       "zetelverdeling naar rato van de stemmen",
+       "de indeling van de samenleving in lagen"
+      ],
+      "c": 3,
+      "u": "«Sociale stratificatie» betekent: de indeling van de samenleving in lagen.",
+      "d": 1
+     },
+     {
+      "v": "Welk begrip hoort bij deze omschrijving: \"de indeling van de samenleving in lagen\"?",
+      "o": [
+       "Sociale stratificatie",
+       "Sociale mobiliteit",
+       "Gezag",
+       "Betrouwbaarheid"
       ],
       "c": 0,
-      "u": "«Sociale stratificatie» betekent: de indeling van de samenleving in lagen.",
+      "u": "Het juiste begrip is «Sociale stratificatie»: de indeling van de samenleving in lagen.",
+      "d": 2
+     },
+     {
+      "v": "Welke term past bij: \"de indeling van de samenleving in lagen\"?",
+      "o": [
+       "Waarde",
+       "Sociale stratificatie",
+       "Norm",
+       "Socialisatie"
+      ],
+      "c": 1,
+      "u": "Het juiste begrip is «Sociale stratificatie»: de indeling van de samenleving in lagen.",
+      "d": 3
+     },
+     {
+      "v": "Wat betekent «Sociale mobiliteit»?",
+      "o": [
+       "beweging tussen de sociale lagen",
+       "een begrip meetbaar maken",
+       "een verborgen derde variabele die een schijnverband schept",
+       "de mate waarin je meet wat je wilt meten"
+      ],
+      "c": 0,
+      "u": "«Sociale mobiliteit» betekent: beweging tussen de sociale lagen.",
       "d": 1
      },
      {
       "v": "Welk begrip hoort bij deze omschrijving: \"beweging tussen de sociale lagen\"?",
       "o": [
-       "Sociale stratificatie",
        "Sociale mobiliteit",
+       "Correlatie",
        "Causaliteit",
-       "Trias politica"
+       "Gezag"
       ],
-      "c": 1,
+      "c": 0,
       "u": "Het juiste begrip is «Sociale mobiliteit»: beweging tussen de sociale lagen.",
       "d": 2
      },
      {
-      "v": "Welk begrip hoort bij deze omschrijving: \"een staat die burgers tegen risico's beschermt\"?",
+      "v": "Welke term past bij: \"beweging tussen de sociale lagen\"?",
       "o": [
-       "Verzorgingsstaat",
        "Socialisatie",
-       "Deviantie",
+       "Norm",
+       "Sociale mobiliteit",
        "Sociale stratificatie"
       ],
-      "c": 0,
+      "c": 2,
+      "u": "Het juiste begrip is «Sociale mobiliteit»: beweging tussen de sociale lagen.",
+      "d": 3
+     },
+     {
+      "v": "Wat betekent «Verzorgingsstaat»?",
+      "o": [
+       "samenwerkende partijen met samen een meerderheid",
+       "de consistentie van een meting bij herhaling",
+       "een samenhangend geheel van ideeën over de samenleving",
+       "een staat die burgers tegen risico's beschermt"
+      ],
+      "c": 3,
+      "u": "«Verzorgingsstaat» betekent: een staat die burgers tegen risico's beschermt.",
+      "d": 1
+     },
+     {
+      "v": "Welk begrip hoort bij deze omschrijving: \"een staat die burgers tegen risico's beschermt\"?",
+      "o": [
+       "Deviantie",
+       "Sociale mobiliteit",
+       "Pluriforme samenleving",
+       "Verzorgingsstaat"
+      ],
+      "c": 3,
+      "u": "Het juiste begrip is «Verzorgingsstaat»: een staat die burgers tegen risico's beschermt.",
+      "d": 2
+     },
+     {
+      "v": "Welke term past bij: \"een staat die burgers tegen risico's beschermt\"?",
+      "o": [
+       "Waarde",
+       "Norm",
+       "Sociale stratificatie",
+       "Verzorgingsstaat"
+      ],
+      "c": 3,
       "u": "Het juiste begrip is «Verzorgingsstaat»: een staat die burgers tegen risico's beschermt.",
       "d": 3
      },
      {
       "v": "Wat betekent «Deviantie»?",
       "o": [
-       "samenwerkende partijen met samen een meerderheid",
-       "een verborgen derde variabele die een schijnverband schept",
-       "een staatsvorm waarin de macht bij het volk ligt",
-       "gedrag dat afwijkt van de norm"
+       "een concrete gedragsregel",
+       "gedrag dat afwijkt van de norm",
+       "de scheiding van de drie staatsmachten",
+       "de indeling van de samenleving in lagen"
       ],
-      "c": 3,
+      "c": 1,
       "u": "«Deviantie» betekent: gedrag dat afwijkt van de norm.",
       "d": 1
+     },
+     {
+      "v": "Welk begrip hoort bij deze omschrijving: \"gedrag dat afwijkt van de norm\"?",
+      "o": [
+       "Democratie",
+       "Trias politica",
+       "Deviantie",
+       "Confounder"
+      ],
+      "c": 2,
+      "u": "Het juiste begrip is «Deviantie»: gedrag dat afwijkt van de norm.",
+      "d": 2
+     },
+     {
+      "v": "Welke term past bij: \"gedrag dat afwijkt van de norm\"?",
+      "o": [
+       "Socialisatie",
+       "Verzorgingsstaat",
+       "Sociale mobiliteit",
+       "Deviantie"
+      ],
+      "c": 3,
+      "u": "Het juiste begrip is «Deviantie»: gedrag dat afwijkt van de norm.",
+      "d": 3
      }
     ],
     "oe": [
@@ -19376,72 +29884,216 @@ var VAKKEN = [
      {
       "v": "Wat betekent «Democratie»?",
       "o": [
-       "een begrip meetbaar maken",
-       "de aanvaarding van gezag als rechtvaardig",
-       "macht die als legitiem wordt aanvaard",
-       "een staatsvorm waarin de macht bij het volk ligt"
+       "samenwerkende partijen met samen een meerderheid",
+       "de mate waarin een steekproef de populatie afspiegelt",
+       "een staatsvorm waarin de macht bij het volk ligt",
+       "een groep die een gedeeld belang behartigt"
+      ],
+      "c": 2,
+      "u": "«Democratie» betekent: een staatsvorm waarin de macht bij het volk ligt.",
+      "d": 1
+     },
+     {
+      "v": "Welk begrip hoort bij deze omschrijving: \"een staatsvorm waarin de macht bij het volk ligt\"?",
+      "o": [
+       "Verzorgingsstaat",
+       "Socialisatie",
+       "Democratie",
+       "Sociale mobiliteit"
+      ],
+      "c": 2,
+      "u": "Het juiste begrip is «Democratie»: een staatsvorm waarin de macht bij het volk ligt.",
+      "d": 2
+     },
+     {
+      "v": "Welke term past bij: \"een staatsvorm waarin de macht bij het volk ligt\"?",
+      "o": [
+       "Coalitie",
+       "Evenredige vertegenwoordiging",
+       "Trias politica",
+       "Democratie"
       ],
       "c": 3,
-      "u": "«Democratie» betekent: een staatsvorm waarin de macht bij het volk ligt.",
+      "u": "Het juiste begrip is «Democratie»: een staatsvorm waarin de macht bij het volk ligt.",
+      "d": 3
+     },
+     {
+      "v": "Wat betekent «Trias politica»?",
+      "o": [
+       "de indeling van de samenleving in lagen",
+       "het aanleren van normen, waarden en rollen",
+       "de scheiding van de drie staatsmachten",
+       "samenwerkende partijen met samen een meerderheid"
+      ],
+      "c": 2,
+      "u": "«Trias politica» betekent: de scheiding van de drie staatsmachten.",
       "d": 1
      },
      {
       "v": "Welk begrip hoort bij deze omschrijving: \"de scheiding van de drie staatsmachten\"?",
       "o": [
-       "Pluriforme samenleving",
-       "Ideologie",
-       "Macht",
-       "Trias politica"
+       "Trias politica",
+       "Deviantie",
+       "Sociale mobiliteit",
+       "Democratie"
       ],
-      "c": 3,
+      "c": 0,
       "u": "Het juiste begrip is «Trias politica»: de scheiding van de drie staatsmachten.",
       "d": 2
      },
      {
+      "v": "Welke term past bij: \"de scheiding van de drie staatsmachten\"?",
+      "o": [
+       "Ideologie",
+       "Trias politica",
+       "Democratie",
+       "Legitimiteit"
+      ],
+      "c": 1,
+      "u": "Het juiste begrip is «Trias politica»: de scheiding van de drie staatsmachten.",
+      "d": 3
+     },
+     {
+      "v": "Wat betekent «Legitimiteit»?",
+      "o": [
+       "een verborgen derde variabele die een schijnverband schept",
+       "de aanvaarding van gezag als rechtvaardig",
+       "een concrete gedragsregel",
+       "een samenhang tussen twee variabelen"
+      ],
+      "c": 1,
+      "u": "«Legitimiteit» betekent: de aanvaarding van gezag als rechtvaardig.",
+      "d": 1
+     },
+     {
       "v": "Welk begrip hoort bij deze omschrijving: \"de aanvaarding van gezag als rechtvaardig\"?",
       "o": [
-       "Evenredige vertegenwoordiging",
-       "Ideologie",
+       "Macht",
        "Legitimiteit",
-       "Coalitie"
+       "Operationaliseren",
+       "Pluriforme samenleving"
       ],
-      "c": 2,
+      "c": 1,
+      "u": "Het juiste begrip is «Legitimiteit»: de aanvaarding van gezag als rechtvaardig.",
+      "d": 2
+     },
+     {
+      "v": "Welke term past bij: \"de aanvaarding van gezag als rechtvaardig\"?",
+      "o": [
+       "Legitimiteit",
+       "Ideologie",
+       "Coalitie",
+       "Evenredige vertegenwoordiging"
+      ],
+      "c": 0,
       "u": "Het juiste begrip is «Legitimiteit»: de aanvaarding van gezag als rechtvaardig.",
       "d": 3
      },
      {
       "v": "Wat betekent «Ideologie»?",
       "o": [
-       "een concrete gedragsregel",
-       "gedrag dat afwijkt van de norm",
+       "de mate waarin je meet wat je wilt meten",
        "een samenhangend geheel van ideeën over de samenleving",
-       "het vermogen om het gedrag van anderen te bepalen"
+       "een nastrevenswaardig ideaal",
+       "een staat die burgers tegen risico's beschermt"
+      ],
+      "c": 1,
+      "u": "«Ideologie» betekent: een samenhangend geheel van ideeën over de samenleving.",
+      "d": 1
+     },
+     {
+      "v": "Welk begrip hoort bij deze omschrijving: \"een samenhangend geheel van ideeën over de samenleving\"?",
+      "o": [
+       "Ideologie",
+       "Gezag",
+       "Operationaliseren",
+       "Macht"
+      ],
+      "c": 0,
+      "u": "Het juiste begrip is «Ideologie»: een samenhangend geheel van ideeën over de samenleving.",
+      "d": 2
+     },
+     {
+      "v": "Welke term past bij: \"een samenhangend geheel van ideeën over de samenleving\"?",
+      "o": [
+       "Ideologie",
+       "Coalitie",
+       "Evenredige vertegenwoordiging",
+       "Trias politica"
+      ],
+      "c": 0,
+      "u": "Het juiste begrip is «Ideologie»: een samenhangend geheel van ideeën over de samenleving.",
+      "d": 3
+     },
+     {
+      "v": "Wat betekent «Evenredige vertegenwoordiging»?",
+      "o": [
+       "een oorzaak-gevolgrelatie",
+       "een verborgen derde variabele die een schijnverband schept",
+       "zetelverdeling naar rato van de stemmen",
+       "een concrete gedragsregel"
       ],
       "c": 2,
-      "u": "«Ideologie» betekent: een samenhangend geheel van ideeën over de samenleving.",
+      "u": "«Evenredige vertegenwoordiging» betekent: zetelverdeling naar rato van de stemmen.",
       "d": 1
      },
      {
       "v": "Welk begrip hoort bij deze omschrijving: \"zetelverdeling naar rato van de stemmen\"?",
       "o": [
-       "Representativiteit",
-       "Evenredige vertegenwoordiging",
        "Deviantie",
-       "Causaliteit"
+       "Evenredige vertegenwoordiging",
+       "Macht",
+       "Operationaliseren"
       ],
       "c": 1,
       "u": "Het juiste begrip is «Evenredige vertegenwoordiging»: zetelverdeling naar rato van de stemmen.",
       "d": 2
      },
      {
-      "v": "Welk begrip hoort bij deze omschrijving: \"samenwerkende partijen met samen een meerderheid\"?",
+      "v": "Welke term past bij: \"zetelverdeling naar rato van de stemmen\"?",
       "o": [
        "Legitimiteit",
+       "Coalitie",
        "Evenredige vertegenwoordiging",
-       "Trias politica",
-       "Coalitie"
+       "Trias politica"
       ],
-      "c": 3,
+      "c": 2,
+      "u": "Het juiste begrip is «Evenredige vertegenwoordiging»: zetelverdeling naar rato van de stemmen.",
+      "d": 3
+     },
+     {
+      "v": "Wat betekent «Coalitie»?",
+      "o": [
+       "de aanvaarding van gezag als rechtvaardig",
+       "het vermogen om het gedrag van anderen te bepalen",
+       "samenwerkende partijen met samen een meerderheid",
+       "de mate waarin je meet wat je wilt meten"
+      ],
+      "c": 2,
+      "u": "«Coalitie» betekent: samenwerkende partijen met samen een meerderheid.",
+      "d": 1
+     },
+     {
+      "v": "Welk begrip hoort bij deze omschrijving: \"samenwerkende partijen met samen een meerderheid\"?",
+      "o": [
+       "Coalitie",
+       "Macht",
+       "Socialisatie",
+       "Correlatie"
+      ],
+      "c": 0,
+      "u": "Het juiste begrip is «Coalitie»: samenwerkende partijen met samen een meerderheid.",
+      "d": 2
+     },
+     {
+      "v": "Welke term past bij: \"samenwerkende partijen met samen een meerderheid\"?",
+      "o": [
+       "Ideologie",
+       "Coalitie",
+       "Evenredige vertegenwoordiging",
+       "Legitimiteit"
+      ],
+      "c": 1,
       "u": "Het juiste begrip is «Coalitie»: samenwerkende partijen met samen een meerderheid.",
       "d": 3
      }
@@ -19601,49 +30253,145 @@ var VAKKEN = [
       "v": "Wat betekent «Macht»?",
       "o": [
        "het vermogen om het gedrag van anderen te bepalen",
-       "een nastrevenswaardig ideaal",
-       "gedrag dat afwijkt van de norm",
-       "macht die als legitiem wordt aanvaard"
+       "de consistentie van een meting bij herhaling",
+       "een staatsvorm waarin de macht bij het volk ligt",
+       "een begrip meetbaar maken"
       ],
       "c": 0,
       "u": "«Macht» betekent: het vermogen om het gedrag van anderen te bepalen.",
       "d": 1
      },
      {
+      "v": "Welk begrip hoort bij deze omschrijving: \"het vermogen om het gedrag van anderen te bepalen\"?",
+      "o": [
+       "Sociale mobiliteit",
+       "Trias politica",
+       "Macht",
+       "Confounder"
+      ],
+      "c": 2,
+      "u": "Het juiste begrip is «Macht»: het vermogen om het gedrag van anderen te bepalen.",
+      "d": 2
+     },
+     {
+      "v": "Welke term past bij: \"het vermogen om het gedrag van anderen te bepalen\"?",
+      "o": [
+       "Macht",
+       "Gezag",
+       "Belangengroep",
+       "Pluriforme samenleving"
+      ],
+      "c": 0,
+      "u": "Het juiste begrip is «Macht»: het vermogen om het gedrag van anderen te bepalen.",
+      "d": 3
+     },
+     {
+      "v": "Wat betekent «Gezag»?",
+      "o": [
+       "een concrete gedragsregel",
+       "de mate waarin je meet wat je wilt meten",
+       "macht die als legitiem wordt aanvaard",
+       "de scheiding van de drie staatsmachten"
+      ],
+      "c": 2,
+      "u": "«Gezag» betekent: macht die als legitiem wordt aanvaard.",
+      "d": 1
+     },
+     {
       "v": "Welk begrip hoort bij deze omschrijving: \"macht die als legitiem wordt aanvaard\"?",
       "o": [
-       "Belangengroep",
-       "Macht",
-       "Representativiteit",
-       "Gezag"
+       "Sociale mobiliteit",
+       "Gezag",
+       "Deviantie",
+       "Waarde"
       ],
-      "c": 3,
+      "c": 1,
       "u": "Het juiste begrip is «Gezag»: macht die als legitiem wordt aanvaard.",
       "d": 2
      },
      {
+      "v": "Welke term past bij: \"macht die als legitiem wordt aanvaard\"?",
+      "o": [
+       "Gezag",
+       "Belangengroep",
+       "Pluriforme samenleving",
+       "Macht"
+      ],
+      "c": 0,
+      "u": "Het juiste begrip is «Gezag»: macht die als legitiem wordt aanvaard.",
+      "d": 3
+     },
+     {
+      "v": "Wat betekent «Belangengroep»?",
+      "o": [
+       "beweging tussen de sociale lagen",
+       "de aanvaarding van gezag als rechtvaardig",
+       "het vermogen om het gedrag van anderen te bepalen",
+       "een groep die een gedeeld belang behartigt"
+      ],
+      "c": 3,
+      "u": "«Belangengroep» betekent: een groep die een gedeeld belang behartigt.",
+      "d": 1
+     },
+     {
       "v": "Welk begrip hoort bij deze omschrijving: \"een groep die een gedeeld belang behartigt\"?",
       "o": [
-       "Macht",
-       "Pluriforme samenleving",
-       "Belangengroep",
-       "Gezag"
+       "Correlatie",
+       "Deviantie",
+       "Evenredige vertegenwoordiging",
+       "Belangengroep"
       ],
-      "c": 2,
+      "c": 3,
+      "u": "Het juiste begrip is «Belangengroep»: een groep die een gedeeld belang behartigt.",
+      "d": 2
+     },
+     {
+      "v": "Welke term past bij: \"een groep die een gedeeld belang behartigt\"?",
+      "o": [
+       "Gezag",
+       "Pluriforme samenleving",
+       "Macht",
+       "Belangengroep"
+      ],
+      "c": 3,
       "u": "Het juiste begrip is «Belangengroep»: een groep die een gedeeld belang behartigt.",
       "d": 3
      },
      {
       "v": "Wat betekent «Pluriforme samenleving»?",
       "o": [
-       "een oorzaak-gevolgrelatie",
-       "de aanvaarding van gezag als rechtvaardig",
-       "een staat die burgers tegen risico's beschermt",
-       "een samenleving met veel verschillende groepen"
+       "een begrip meetbaar maken",
+       "een samenleving met veel verschillende groepen",
+       "een concrete gedragsregel",
+       "de mate waarin je meet wat je wilt meten"
       ],
-      "c": 3,
+      "c": 1,
       "u": "«Pluriforme samenleving» betekent: een samenleving met veel verschillende groepen.",
       "d": 1
+     },
+     {
+      "v": "Welk begrip hoort bij deze omschrijving: \"een samenleving met veel verschillende groepen\"?",
+      "o": [
+       "Pluriforme samenleving",
+       "Belangengroep",
+       "Deviantie",
+       "Sociale mobiliteit"
+      ],
+      "c": 0,
+      "u": "Het juiste begrip is «Pluriforme samenleving»: een samenleving met veel verschillende groepen.",
+      "d": 2
+     },
+     {
+      "v": "Welke term past bij: \"een samenleving met veel verschillende groepen\"?",
+      "o": [
+       "Macht",
+       "Belangengroep",
+       "Gezag",
+       "Pluriforme samenleving"
+      ],
+      "c": 3,
+      "u": "Het juiste begrip is «Pluriforme samenleving»: een samenleving met veel verschillende groepen.",
+      "d": 3
      }
     ],
     "oe": [
@@ -19767,86 +30515,254 @@ var VAKKEN = [
      {
       "v": "Wat betekent «Modelleercyclus»?",
       "o": [
-       "tabel, grafiek, formule, woorden",
-       "de tweede verschillen zijn gelijk",
-       "één geval dat een bewering weerlegt",
-       "probleem → model → rekenen → terugvertalen"
+       "een functie waarvan de afgeleide de gegeven functie is",
+       "de lengte van één herhaling van een periodieke functie",
+       "probleem → model → rekenen → terugvertalen",
+       "een maximum of minimum van een functie"
       ],
-      "c": 3,
+      "c": 2,
       "u": "«Modelleercyclus» betekent: probleem → model → rekenen → terugvertalen.",
+      "d": 1
+     },
+     {
+      "v": "Welk begrip hoort bij deze omschrijving: \"probleem → model → rekenen → terugvertalen\"?",
+      "o": [
+       "Discriminant",
+       "Modelleercyclus",
+       "Asymptoot",
+       "Gelijkvormig"
+      ],
+      "c": 1,
+      "u": "Het juiste begrip is «Modelleercyclus»: probleem → model → rekenen → terugvertalen.",
+      "d": 2
+     },
+     {
+      "v": "Welke term past bij: \"probleem → model → rekenen → terugvertalen\"?",
+      "o": [
+       "Modelleercyclus",
+       "Tegenvoorbeeld",
+       "Representaties",
+       "Verband herkennen"
+      ],
+      "c": 0,
+      "u": "Het juiste begrip is «Modelleercyclus»: probleem → model → rekenen → terugvertalen.",
+      "d": 3
+     },
+     {
+      "v": "Wat betekent «Representaties»?",
+      "o": [
+       "de verzameling toegestane invoerwaarden",
+       "een hoekmaat waarbij de booglengte gelijk is aan de straal",
+       "tabel, grafiek, formule, woorden",
+       "een grootheid met een lengte en een richting"
+      ],
+      "c": 2,
+      "u": "«Representaties» betekent: tabel, grafiek, formule, woorden.",
       "d": 1
      },
      {
       "v": "Welk begrip hoort bij deze omschrijving: \"tabel, grafiek, formule, woorden\"?",
       "o": [
-       "Interpoleren/extrapoleren",
-       "Modelleercyclus",
-       "Representaties",
-       "Tegenvoorbeeld"
+       "Tegenvoorbeeld",
+       "Amplitude",
+       "Domein",
+       "Representaties"
       ],
-      "c": 2,
+      "c": 3,
       "u": "Het juiste begrip is «Representaties»: tabel, grafiek, formule, woorden.",
       "d": 2
      },
      {
+      "v": "Welke term past bij: \"tabel, grafiek, formule, woorden\"?",
+      "o": [
+       "Kwadratisch",
+       "Interpoleren/extrapoleren",
+       "Lineair",
+       "Representaties"
+      ],
+      "c": 3,
+      "u": "Het juiste begrip is «Representaties»: tabel, grafiek, formule, woorden.",
+      "d": 3
+     },
+     {
+      "v": "Wat betekent «Verband herkennen»?",
+      "o": [
+       "lineair, kwadratisch, exponentieel",
+       "de maximale uitwijking ten opzichte van de evenwichtsstand",
+       "de vloeiende kromme die hoort bij een kwadratische functie",
+       "een functie waarvan de afgeleide de gegeven functie is"
+      ],
+      "c": 0,
+      "u": "«Verband herkennen» betekent: lineair, kwadratisch, exponentieel.",
+      "d": 1
+     },
+     {
       "v": "Welk begrip hoort bij deze omschrijving: \"lineair, kwadratisch, exponentieel\"?",
       "o": [
-       "Tegenvoorbeeld",
-       "Lineair",
-       "Interpoleren/extrapoleren",
+       "Exponentieel verband",
+       "Periode",
+       "Discriminant",
        "Verband herkennen"
       ],
       "c": 3,
+      "u": "Het juiste begrip is «Verband herkennen»: lineair, kwadratisch, exponentieel.",
+      "d": 2
+     },
+     {
+      "v": "Welke term past bij: \"lineair, kwadratisch, exponentieel\"?",
+      "o": [
+       "Interpoleren/extrapoleren",
+       "Tegenvoorbeeld",
+       "Verband herkennen",
+       "Modelleercyclus"
+      ],
+      "c": 2,
       "u": "Het juiste begrip is «Verband herkennen»: lineair, kwadratisch, exponentieel.",
       "d": 3
      },
      {
       "v": "Wat betekent «Interpoleren/extrapoleren»?",
       "o": [
-       "zijde/hoek in willekeurige driehoek",
        "binnen/buiten het meetbereik schatten",
-       "verschuiven en vermenigvuldigen",
-       "gelijke stappen erbij/eraf (+ vast getal)"
+       "dezelfde vorm maar mogelijk een andere grootte",
+       "één geval dat een bewering weerlegt",
+       "een grootheid met een lengte en een richting"
       ],
-      "c": 1,
+      "c": 0,
       "u": "«Interpoleren/extrapoleren» betekent: binnen/buiten het meetbereik schatten.",
+      "d": 1
+     },
+     {
+      "v": "Welk begrip hoort bij deze omschrijving: \"binnen/buiten het meetbereik schatten\"?",
+      "o": [
+       "Helling",
+       "Periode",
+       "Congruent",
+       "Interpoleren/extrapoleren"
+      ],
+      "c": 3,
+      "u": "Het juiste begrip is «Interpoleren/extrapoleren»: binnen/buiten het meetbereik schatten.",
+      "d": 2
+     },
+     {
+      "v": "Welke term past bij: \"binnen/buiten het meetbereik schatten\"?",
+      "o": [
+       "Representaties",
+       "Verband herkennen",
+       "Interpoleren/extrapoleren",
+       "Modelleercyclus"
+      ],
+      "c": 2,
+      "u": "Het juiste begrip is «Interpoleren/extrapoleren»: binnen/buiten het meetbereik schatten.",
+      "d": 3
+     },
+     {
+      "v": "Wat betekent «Tegenvoorbeeld»?",
+      "o": [
+       "de functie die de helling van de grafiek in elk punt geeft",
+       "de oppervlakte tussen een grafiek en de horizontale as",
+       "een verband waarvan de grafiek een parabool is",
+       "één geval dat een bewering weerlegt"
+      ],
+      "c": 3,
+      "u": "«Tegenvoorbeeld» betekent: één geval dat een bewering weerlegt.",
       "d": 1
      },
      {
       "v": "Welk begrip hoort bij deze omschrijving: \"één geval dat een bewering weerlegt\"?",
       "o": [
-       "Representaties",
-       "Interpoleren/extrapoleren",
        "Tegenvoorbeeld",
-       "Kwadratisch"
+       "Verband herkennen",
+       "Vector",
+       "Domein"
       ],
-      "c": 2,
+      "c": 0,
       "u": "Het juiste begrip is «Tegenvoorbeeld»: één geval dat een bewering weerlegt.",
       "d": 2
      },
      {
-      "v": "Welk begrip hoort bij deze omschrijving: \"gelijke stappen erbij/eraf (+ vast getal)\"?",
+      "v": "Welke term past bij: \"één geval dat een bewering weerlegt\"?",
       "o": [
        "Tegenvoorbeeld",
-       "Interpoleren/extrapoleren",
        "Lineair",
-       "Kwadratisch"
+       "Modelleercyclus",
+       "Interpoleren/extrapoleren"
       ],
-      "c": 2,
+      "c": 0,
+      "u": "Het juiste begrip is «Tegenvoorbeeld»: één geval dat een bewering weerlegt.",
+      "d": 3
+     },
+     {
+      "v": "Wat betekent «Lineair»?",
+      "o": [
+       "gelijke stappen erbij/eraf (+ vast getal)",
+       "de lijn die de grafiek in precies één punt raakt",
+       "precies even groot en van dezelfde vorm",
+       "de mate van stijging of daling van een grafiek"
+      ],
+      "c": 0,
+      "u": "«Lineair» betekent: gelijke stappen erbij/eraf (+ vast getal).",
+      "d": 1
+     },
+     {
+      "v": "Welk begrip hoort bij deze omschrijving: \"gelijke stappen erbij/eraf (+ vast getal)\"?",
+      "o": [
+       "Buigpunt",
+       "Lineair",
+       "Parabool",
+       "Straal"
+      ],
+      "c": 1,
+      "u": "Het juiste begrip is «Lineair»: gelijke stappen erbij/eraf (+ vast getal).",
+      "d": 2
+     },
+     {
+      "v": "Welke term past bij: \"gelijke stappen erbij/eraf (+ vast getal)\"?",
+      "o": [
+       "Representaties",
+       "Lineair",
+       "Kwadratisch",
+       "Interpoleren/extrapoleren"
+      ],
+      "c": 1,
       "u": "Het juiste begrip is «Lineair»: gelijke stappen erbij/eraf (+ vast getal).",
       "d": 3
      },
      {
       "v": "Wat betekent «Kwadratisch»?",
       "o": [
-       "tabel, grafiek, formule, woorden",
-       "hoek ↔ verhouding van zijden (SOS-CAS-TOA)",
+       "de verzameling toegestane invoerwaarden",
        "de tweede verschillen zijn gelijk",
-       "lijn die de grafiek nadert maar niet raakt"
+       "de maximale uitwijking ten opzichte van de evenwichtsstand",
+       "een verband met een vaste groeifactor per stap"
       ],
-      "c": 2,
+      "c": 1,
       "u": "«Kwadratisch» betekent: de tweede verschillen zijn gelijk.",
       "d": 1
+     },
+     {
+      "v": "Welk begrip hoort bij deze omschrijving: \"de tweede verschillen zijn gelijk\"?",
+      "o": [
+       "Kwadratisch",
+       "Nulpunt",
+       "Extreem",
+       "Bereik"
+      ],
+      "c": 0,
+      "u": "Het juiste begrip is «Kwadratisch»: de tweede verschillen zijn gelijk.",
+      "d": 2
+     },
+     {
+      "v": "Welke term past bij: \"de tweede verschillen zijn gelijk\"?",
+      "o": [
+       "Interpoleren/extrapoleren",
+       "Kwadratisch",
+       "Modelleercyclus",
+       "Representaties"
+      ],
+      "c": 1,
+      "u": "Het juiste begrip is «Kwadratisch»: de tweede verschillen zijn gelijk.",
+      "d": 3
      }
     ],
     "oe": [
@@ -20019,52 +30935,256 @@ var VAKKEN = [
       "u": "Periode = 2π/b = 2π/3. Grotere b → kortere periode → snellere oscillatie. Amplitude en middellijn veranderen niet door b."
      },
      {
-      "v": "Wat betekent «Functietypen»?",
+      "v": "Wat betekent «Functie»?",
       "o": [
-       "zijde/hoek in willekeurige driehoek",
-       "gelijke stappen erbij/eraf (+ vast getal)",
-       "lineair, kwadratisch, exponentieel, gebroken, wortel",
-       "zijden in een rechthoekige driehoek"
+       "een verband dat bij elke invoer precies één uitvoer geeft",
+       "één geval dat een bewering weerlegt",
+       "een verband waarvan de grafiek een parabool is",
+       "gelijke stappen erbij/eraf (+ vast getal)"
       ],
-      "c": 2,
-      "u": "«Functietypen» betekent: lineair, kwadratisch, exponentieel, gebroken, wortel.",
+      "c": 0,
+      "u": "«Functie» betekent: een verband dat bij elke invoer precies één uitvoer geeft.",
       "d": 1
      },
      {
-      "v": "Welk begrip hoort bij deze omschrijving: \"lijn die de grafiek nadert maar niet raakt\"?",
+      "v": "Welk begrip hoort bij deze omschrijving: \"een verband dat bij elke invoer precies één uitvoer geeft\"?",
       "o": [
-       "Interpoleren/extrapoleren",
-       "Lineair",
-       "Verband herkennen",
-       "Asymptoten"
+       "Tegenvoorbeeld",
+       "Integraal",
+       "Modelleercyclus",
+       "Functie"
       ],
       "c": 3,
-      "u": "Het juiste begrip is «Asymptoten»: lijn die de grafiek nadert maar niet raakt.",
+      "u": "Het juiste begrip is «Functie»: een verband dat bij elke invoer precies één uitvoer geeft.",
       "d": 2
      },
      {
-      "v": "Welk begrip hoort bij deze omschrijving: \"verschuiven en vermenigvuldigen\"?",
+      "v": "Welke term past bij: \"een verband dat bij elke invoer precies één uitvoer geeft\"?",
       "o": [
-       "Transformaties",
-       "Vergelijkingen",
-       "Asymptoten",
-       "Functietypen"
+       "Functie",
+       "Asymptoot",
+       "Nulpunt",
+       "Bereik"
       ],
       "c": 0,
-      "u": "Het juiste begrip is «Transformaties»: verschuiven en vermenigvuldigen.",
+      "u": "Het juiste begrip is «Functie»: een verband dat bij elke invoer precies één uitvoer geeft.",
       "d": 3
      },
      {
-      "v": "Wat betekent «Vergelijkingen»?",
+      "v": "Wat betekent «Nulpunt»?",
       "o": [
-       "algebraïsch of met de GR oplossen",
-       "lineair, kwadratisch, exponentieel",
-       "één geval dat een bewering weerlegt",
-       "verschuiven en vermenigvuldigen"
+       "de uitdrukking die het aantal nulpunten van een parabool bepaalt",
+       "de verzameling toegestane invoerwaarden",
+       "een invoerwaarde waar de grafiek de horizontale as snijdt",
+       "de tweede verschillen zijn gelijk"
+      ],
+      "c": 2,
+      "u": "«Nulpunt» betekent: een invoerwaarde waar de grafiek de horizontale as snijdt.",
+      "d": 1
+     },
+     {
+      "v": "Welk begrip hoort bij deze omschrijving: \"een invoerwaarde waar de grafiek de horizontale as snijdt\"?",
+      "o": [
+       "Lineair",
+       "Domein",
+       "Buigpunt",
+       "Nulpunt"
+      ],
+      "c": 3,
+      "u": "Het juiste begrip is «Nulpunt»: een invoerwaarde waar de grafiek de horizontale as snijdt.",
+      "d": 2
+     },
+     {
+      "v": "Welke term past bij: \"een invoerwaarde waar de grafiek de horizontale as snijdt\"?",
+      "o": [
+       "Discriminant",
+       "Nulpunt",
+       "Domein",
+       "Functie"
+      ],
+      "c": 1,
+      "u": "Het juiste begrip is «Nulpunt»: een invoerwaarde waar de grafiek de horizontale as snijdt.",
+      "d": 3
+     },
+     {
+      "v": "Wat betekent «Discriminant»?",
+      "o": [
+       "het punt waar de grafiek van hol naar bol overgaat",
+       "de verzameling mogelijke uitvoerwaarden",
+       "een verband met een constante toename; de grafiek is een rechte lijn",
+       "de uitdrukking die het aantal nulpunten van een parabool bepaalt"
+      ],
+      "c": 3,
+      "u": "«Discriminant» betekent: de uitdrukking die het aantal nulpunten van een parabool bepaalt.",
+      "d": 1
+     },
+     {
+      "v": "Welk begrip hoort bij deze omschrijving: \"de uitdrukking die het aantal nulpunten van een parabool bepaalt\"?",
+      "o": [
+       "Discriminant",
+       "Lineair",
+       "Raaklijn",
+       "Verband herkennen"
       ],
       "c": 0,
-      "u": "«Vergelijkingen» betekent: algebraïsch of met de GR oplossen.",
+      "u": "Het juiste begrip is «Discriminant»: de uitdrukking die het aantal nulpunten van een parabool bepaalt.",
+      "d": 2
+     },
+     {
+      "v": "Welke term past bij: \"de uitdrukking die het aantal nulpunten van een parabool bepaalt\"?",
+      "o": [
+       "Parabool",
+       "Asymptoot",
+       "Discriminant",
+       "Nulpunt"
+      ],
+      "c": 2,
+      "u": "Het juiste begrip is «Discriminant»: de uitdrukking die het aantal nulpunten van een parabool bepaalt.",
+      "d": 3
+     },
+     {
+      "v": "Wat betekent «Domein»?",
+      "o": [
+       "binnen/buiten het meetbereik schatten",
+       "de verzameling toegestane invoerwaarden",
+       "de uitdrukking die het aantal nulpunten van een parabool bepaalt",
+       "een hoekmaat waarbij de booglengte gelijk is aan de straal"
+      ],
+      "c": 1,
+      "u": "«Domein» betekent: de verzameling toegestane invoerwaarden.",
       "d": 1
+     },
+     {
+      "v": "Welk begrip hoort bij deze omschrijving: \"de verzameling toegestane invoerwaarden\"?",
+      "o": [
+       "Domein",
+       "Tegenvoorbeeld",
+       "Kwadratisch verband",
+       "Gelijkvormig"
+      ],
+      "c": 0,
+      "u": "Het juiste begrip is «Domein»: de verzameling toegestane invoerwaarden.",
+      "d": 2
+     },
+     {
+      "v": "Welke term past bij: \"de verzameling toegestane invoerwaarden\"?",
+      "o": [
+       "Asymptoot",
+       "Parabool",
+       "Domein",
+       "Nulpunt"
+      ],
+      "c": 2,
+      "u": "Het juiste begrip is «Domein»: de verzameling toegestane invoerwaarden.",
+      "d": 3
+     },
+     {
+      "v": "Wat betekent «Bereik»?",
+      "o": [
+       "de vloeiende kromme die hoort bij een kwadratische functie",
+       "een grootheid met een lengte en een richting",
+       "een verband dat bij elke invoer precies één uitvoer geeft",
+       "de verzameling mogelijke uitvoerwaarden"
+      ],
+      "c": 3,
+      "u": "«Bereik» betekent: de verzameling mogelijke uitvoerwaarden.",
+      "d": 1
+     },
+     {
+      "v": "Welk begrip hoort bij deze omschrijving: \"de verzameling mogelijke uitvoerwaarden\"?",
+      "o": [
+       "Modelleercyclus",
+       "Asymptoot",
+       "Raaklijn",
+       "Bereik"
+      ],
+      "c": 3,
+      "u": "Het juiste begrip is «Bereik»: de verzameling mogelijke uitvoerwaarden.",
+      "d": 2
+     },
+     {
+      "v": "Welke term past bij: \"de verzameling mogelijke uitvoerwaarden\"?",
+      "o": [
+       "Nulpunt",
+       "Parabool",
+       "Bereik",
+       "Domein"
+      ],
+      "c": 2,
+      "u": "Het juiste begrip is «Bereik»: de verzameling mogelijke uitvoerwaarden.",
+      "d": 3
+     },
+     {
+      "v": "Wat betekent «Asymptoot»?",
+      "o": [
+       "de verzameling toegestane invoerwaarden",
+       "een lijn die de grafiek steeds dichter nadert maar niet raakt",
+       "een hoekmaat waarbij de booglengte gelijk is aan de straal",
+       "de lijn die de grafiek in precies één punt raakt"
+      ],
+      "c": 1,
+      "u": "«Asymptoot» betekent: een lijn die de grafiek steeds dichter nadert maar niet raakt.",
+      "d": 1
+     },
+     {
+      "v": "Welk begrip hoort bij deze omschrijving: \"een lijn die de grafiek steeds dichter nadert maar niet raakt\"?",
+      "o": [
+       "Asymptoot",
+       "Primitieve",
+       "Buigpunt",
+       "Tegenvoorbeeld"
+      ],
+      "c": 0,
+      "u": "Het juiste begrip is «Asymptoot»: een lijn die de grafiek steeds dichter nadert maar niet raakt.",
+      "d": 2
+     },
+     {
+      "v": "Welke term past bij: \"een lijn die de grafiek steeds dichter nadert maar niet raakt\"?",
+      "o": [
+       "Asymptoot",
+       "Domein",
+       "Bereik",
+       "Nulpunt"
+      ],
+      "c": 0,
+      "u": "Het juiste begrip is «Asymptoot»: een lijn die de grafiek steeds dichter nadert maar niet raakt.",
+      "d": 3
+     },
+     {
+      "v": "Wat betekent «Parabool»?",
+      "o": [
+       "precies even groot en van dezelfde vorm",
+       "de verzameling toegestane invoerwaarden",
+       "de tweede verschillen zijn gelijk",
+       "de vloeiende kromme die hoort bij een kwadratische functie"
+      ],
+      "c": 3,
+      "u": "«Parabool» betekent: de vloeiende kromme die hoort bij een kwadratische functie.",
+      "d": 1
+     },
+     {
+      "v": "Welk begrip hoort bij deze omschrijving: \"de vloeiende kromme die hoort bij een kwadratische functie\"?",
+      "o": [
+       "Congruent",
+       "Parabool",
+       "Modelleercyclus",
+       "Lineair"
+      ],
+      "c": 1,
+      "u": "Het juiste begrip is «Parabool»: de vloeiende kromme die hoort bij een kwadratische functie.",
+      "d": 2
+     },
+     {
+      "v": "Welke term past bij: \"de vloeiende kromme die hoort bij een kwadratische functie\"?",
+      "o": [
+       "Discriminant",
+       "Functie",
+       "Parabool",
+       "Asymptoot"
+      ],
+      "c": 2,
+      "u": "Het juiste begrip is «Parabool»: de vloeiende kromme die hoort bij een kwadratische functie.",
+      "d": 3
      }
     ],
     "oe": [
@@ -20101,20 +31221,32 @@ var VAKKEN = [
     ],
     "begrippen": [
      {
-      "t": "Functietypen",
-      "d": "lineair, kwadratisch, exponentieel, gebroken, wortel"
+      "t": "Functie",
+      "d": "een verband dat bij elke invoer precies één uitvoer geeft"
      },
      {
-      "t": "Asymptoten",
-      "d": "lijn die de grafiek nadert maar niet raakt"
+      "t": "Nulpunt",
+      "d": "een invoerwaarde waar de grafiek de horizontale as snijdt"
      },
      {
-      "t": "Transformaties",
-      "d": "verschuiven en vermenigvuldigen"
+      "t": "Discriminant",
+      "d": "de uitdrukking die het aantal nulpunten van een parabool bepaalt"
      },
      {
-      "t": "Vergelijkingen",
-      "d": "algebraïsch of met de GR oplossen"
+      "t": "Domein",
+      "d": "de verzameling toegestane invoerwaarden"
+     },
+     {
+      "t": "Bereik",
+      "d": "de verzameling mogelijke uitvoerwaarden"
+     },
+     {
+      "t": "Asymptoot",
+      "d": "een lijn die de grafiek steeds dichter nadert maar niet raakt"
+     },
+     {
+      "t": "Parabool",
+      "d": "de vloeiende kromme die hoort bij een kwadratische functie"
      }
     ]
    },
@@ -20203,64 +31335,184 @@ var VAKKEN = [
       "u": "Invullen: uitkomst = r² → op de cirkel. Kleiner → binnen. Groter → buiten."
      },
      {
-      "v": "Wat betekent «Pythagoras»?",
+      "v": "Wat betekent «Lineair verband»?",
       "o": [
-       "lineair, kwadratisch, exponentieel, gebroken, wortel",
-       "zijden in een rechthoekige driehoek",
-       "rc; loodrechte lijnen",
-       "probleem → model → rekenen → terugvertalen"
+       "dezelfde vorm maar mogelijk een andere grootte",
+       "de maximale uitwijking ten opzichte van de evenwichtsstand",
+       "een verband met een constante toename; de grafiek is een rechte lijn",
+       "de verzameling toegestane invoerwaarden"
       ],
-      "c": 1,
-      "u": "«Pythagoras» betekent: zijden in een rechthoekige driehoek.",
+      "c": 2,
+      "u": "«Lineair verband» betekent: een verband met een constante toename; de grafiek is een rechte lijn.",
       "d": 1
      },
      {
-      "v": "Welk begrip hoort bij deze omschrijving: \"hoek ↔ verhouding van zijden (SOS-CAS-TOA)\"?",
+      "v": "Welk begrip hoort bij deze omschrijving: \"een verband met een constante toename; de grafiek is een rechte lijn\"?",
       "o": [
-       "Functietypen",
-       "Hellingen",
-       "Sin, cos, tan",
-       "Vergelijkingen"
+       "Vector",
+       "Bereik",
+       "Kwadratisch verband",
+       "Lineair verband"
       ],
-      "c": 2,
-      "u": "Het juiste begrip is «Sin, cos, tan»: hoek ↔ verhouding van zijden (SOS-CAS-TOA).",
+      "c": 3,
+      "u": "Het juiste begrip is «Lineair verband»: een verband met een constante toename; de grafiek is een rechte lijn.",
       "d": 2
      },
      {
-      "v": "Welk begrip hoort bij deze omschrijving: \"zijde/hoek in willekeurige driehoek\"?",
+      "v": "Welke term past bij: \"een verband met een constante toename; de grafiek is een rechte lijn\"?",
       "o": [
-       "Sin, cos, tan",
-       "Sinusregel",
-       "Hellingen",
-       "Pythagoras"
+       "Periode",
+       "Lineair verband",
+       "Amplitude",
+       "Exponentieel verband"
       ],
       "c": 1,
-      "u": "Het juiste begrip is «Sinusregel»: zijde/hoek in willekeurige driehoek.",
+      "u": "Het juiste begrip is «Lineair verband»: een verband met een constante toename; de grafiek is een rechte lijn.",
       "d": 3
      },
      {
-      "v": "Wat betekent «Cosinusregel»?",
+      "v": "Wat betekent «Exponentieel verband»?",
       "o": [
-       "lineair, kwadratisch, exponentieel",
-       "derde zijde uit twee zijden + ingesloten hoek",
-       "zijden in een rechthoekige driehoek",
-       "rc; loodrechte lijnen"
+       "een maximum of minimum van een functie",
+       "gelijke stappen erbij/eraf (+ vast getal)",
+       "een verband met een vaste groeifactor per stap",
+       "een lijn die de grafiek steeds dichter nadert maar niet raakt"
       ],
-      "c": 1,
-      "u": "«Cosinusregel» betekent: derde zijde uit twee zijden + ingesloten hoek.",
+      "c": 2,
+      "u": "«Exponentieel verband» betekent: een verband met een vaste groeifactor per stap.",
       "d": 1
      },
      {
-      "v": "Welk begrip hoort bij deze omschrijving: \"rc; loodrechte lijnen\"?",
+      "v": "Welk begrip hoort bij deze omschrijving: \"een verband met een vaste groeifactor per stap\"?",
       "o": [
-       "Representaties",
-       "Vergelijkingen",
-       "Hellingen",
-       "Asymptoten"
+       "Primitieve",
+       "Lineair",
+       "Nulpunt",
+       "Exponentieel verband"
+      ],
+      "c": 3,
+      "u": "Het juiste begrip is «Exponentieel verband»: een verband met een vaste groeifactor per stap.",
+      "d": 2
+     },
+     {
+      "v": "Welke term past bij: \"een verband met een vaste groeifactor per stap\"?",
+      "o": [
+       "Exponentieel verband",
+       "Amplitude",
+       "Kwadratisch verband",
+       "Lineair verband"
+      ],
+      "c": 0,
+      "u": "Het juiste begrip is «Exponentieel verband»: een verband met een vaste groeifactor per stap.",
+      "d": 3
+     },
+     {
+      "v": "Wat betekent «Kwadratisch verband»?",
+      "o": [
+       "een verband waarvan de grafiek een parabool is",
+       "een verband met een vaste groeifactor per stap",
+       "precies even groot en van dezelfde vorm",
+       "een invoerwaarde waar de grafiek de horizontale as snijdt"
+      ],
+      "c": 0,
+      "u": "«Kwadratisch verband» betekent: een verband waarvan de grafiek een parabool is.",
+      "d": 1
+     },
+     {
+      "v": "Welk begrip hoort bij deze omschrijving: \"een verband waarvan de grafiek een parabool is\"?",
+      "o": [
+       "Vector",
+       "Modelleercyclus",
+       "Bereik",
+       "Kwadratisch verband"
+      ],
+      "c": 3,
+      "u": "Het juiste begrip is «Kwadratisch verband»: een verband waarvan de grafiek een parabool is.",
+      "d": 2
+     },
+     {
+      "v": "Welke term past bij: \"een verband waarvan de grafiek een parabool is\"?",
+      "o": [
+       "Kwadratisch verband",
+       "Periode",
+       "Exponentieel verband",
+       "Lineair verband"
+      ],
+      "c": 0,
+      "u": "Het juiste begrip is «Kwadratisch verband»: een verband waarvan de grafiek een parabool is.",
+      "d": 3
+     },
+     {
+      "v": "Wat betekent «Periode»?",
+      "o": [
+       "probleem → model → rekenen → terugvertalen",
+       "de lengte van één herhaling van een periodieke functie",
+       "lineair, kwadratisch, exponentieel",
+       "gelijke stappen erbij/eraf (+ vast getal)"
+      ],
+      "c": 1,
+      "u": "«Periode» betekent: de lengte van één herhaling van een periodieke functie.",
+      "d": 1
+     },
+     {
+      "v": "Welk begrip hoort bij deze omschrijving: \"de lengte van één herhaling van een periodieke functie\"?",
+      "o": [
+       "Exponentieel verband",
+       "Periode",
+       "Asymptoot",
+       "Extreem"
+      ],
+      "c": 1,
+      "u": "Het juiste begrip is «Periode»: de lengte van één herhaling van een periodieke functie.",
+      "d": 2
+     },
+     {
+      "v": "Welke term past bij: \"de lengte van één herhaling van een periodieke functie\"?",
+      "o": [
+       "Exponentieel verband",
+       "Amplitude",
+       "Periode",
+       "Kwadratisch verband"
       ],
       "c": 2,
-      "u": "Het juiste begrip is «Hellingen»: rc; loodrechte lijnen.",
+      "u": "Het juiste begrip is «Periode»: de lengte van één herhaling van een periodieke functie.",
+      "d": 3
+     },
+     {
+      "v": "Wat betekent «Amplitude»?",
+      "o": [
+       "de afstand van het middelpunt tot de rand van een cirkel",
+       "de maximale uitwijking ten opzichte van de evenwichtsstand",
+       "gelijke stappen erbij/eraf (+ vast getal)",
+       "de tweede verschillen zijn gelijk"
+      ],
+      "c": 1,
+      "u": "«Amplitude» betekent: de maximale uitwijking ten opzichte van de evenwichtsstand.",
+      "d": 1
+     },
+     {
+      "v": "Welk begrip hoort bij deze omschrijving: \"de maximale uitwijking ten opzichte van de evenwichtsstand\"?",
+      "o": [
+       "Kwadratisch verband",
+       "Vector",
+       "Amplitude",
+       "Straal"
+      ],
+      "c": 2,
+      "u": "Het juiste begrip is «Amplitude»: de maximale uitwijking ten opzichte van de evenwichtsstand.",
       "d": 2
+     },
+     {
+      "v": "Welke term past bij: \"de maximale uitwijking ten opzichte van de evenwichtsstand\"?",
+      "o": [
+       "Kwadratisch verband",
+       "Exponentieel verband",
+       "Amplitude",
+       "Lineair verband"
+      ],
+      "c": 2,
+      "u": "Het juiste begrip is «Amplitude»: de maximale uitwijking ten opzichte van de evenwichtsstand.",
+      "d": 3
      }
     ],
     "oe": [
@@ -20297,24 +31549,24 @@ var VAKKEN = [
     ],
     "begrippen": [
      {
-      "t": "Pythagoras",
-      "d": "zijden in een rechthoekige driehoek"
+      "t": "Lineair verband",
+      "d": "een verband met een constante toename; de grafiek is een rechte lijn"
      },
      {
-      "t": "Sin, cos, tan",
-      "d": "hoek ↔ verhouding van zijden (SOS-CAS-TOA)"
+      "t": "Exponentieel verband",
+      "d": "een verband met een vaste groeifactor per stap"
      },
      {
-      "t": "Sinusregel",
-      "d": "zijde/hoek in willekeurige driehoek"
+      "t": "Kwadratisch verband",
+      "d": "een verband waarvan de grafiek een parabool is"
      },
      {
-      "t": "Cosinusregel",
-      "d": "derde zijde uit twee zijden + ingesloten hoek"
+      "t": "Periode",
+      "d": "de lengte van één herhaling van een periodieke functie"
      },
      {
-      "t": "Hellingen",
-      "d": "rc; loodrechte lijnen"
+      "t": "Amplitude",
+      "d": "de maximale uitwijking ten opzichte van de evenwichtsstand"
      }
     ]
    },
@@ -20392,59 +31644,256 @@ var VAKKEN = [
       "u": "(ln x)' = 1/x voor x > 0. Standaard afleiding. ln is de natuurlijke logaritme met grondtal e."
      },
      {
-      "v": "Wat stelt de afgeleide f'(x) voor op een grafiek?",
+      "v": "Wat betekent «Afgeleide»?",
       "o": [
-       "De helling van de raaklijn aan de grafiek in punt x",
-       "De oppervlakte onder de grafiek",
-       "De y-waarde van de functie",
-       "De afstand tot de x-as"
+       "de tweede verschillen zijn gelijk",
+       "de functie die de helling van de grafiek in elk punt geeft",
+       "een verband met een constante toename; de grafiek is een rechte lijn",
+       "een lijn die de grafiek steeds dichter nadert maar niet raakt"
       ],
-      "c": 0,
-      "u": "f'(x) = helling van de raaklijn in x. Positief: stijgend. Negatief: dalend. Nul: mogelijk extremum."
+      "c": 1,
+      "u": "«Afgeleide» betekent: de functie die de helling van de grafiek in elk punt geeft.",
+      "d": 1
      },
      {
-      "v": "Wat is het verschil tussen gemiddelde en momentane verandering?",
+      "v": "Welk begrip hoort bij deze omschrijving: \"de functie die de helling van de grafiek in elk punt geeft\"?",
       "o": [
-       "Gemiddeld: helling van de lijn tussen twee punten. Momentaan: helling van de raaklijn in één punt (= afgeleide).",
-       "Ze zijn hetzelfde",
-       "Momentaan is altijd groter",
-       "Gemiddeld gebruik je de afgeleide"
+       "Helling",
+       "Afgeleide",
+       "Congruent",
+       "Asymptoot"
       ],
-      "c": 0,
-      "u": "Gemiddelde verandering = (f(b)−f(a))/(b−a). Momentaan = limiet hiervan als het interval naar 0 gaat = f'(x)."
+      "c": 1,
+      "u": "Het juiste begrip is «Afgeleide»: de functie die de helling van de grafiek in elk punt geeft.",
+      "d": 2
      },
      {
-      "v": "Hoe herken je een maximum met de tweede-afgeleide test?",
+      "v": "Welke term past bij: \"de functie die de helling van de grafiek in elk punt geeft\"?",
       "o": [
-       "f'(a) = 0 én f''(a) < 0: bergparabool-achtig, dus maximum",
-       "f'(a) = 0 én f''(a) > 0",
-       "f''(a) = 0",
-       "f(a) is de grootste waarde"
+       "Raaklijn",
+       "Buigpunt",
+       "Afgeleide",
+       "Integraal"
       ],
-      "c": 0,
-      "u": "f'(a) = 0: kandidaat-extremum. f''(a) < 0: concaaf omlaag → maximum. f''(a) > 0: concaaf omhoog → minimum."
+      "c": 2,
+      "u": "Het juiste begrip is «Afgeleide»: de functie die de helling van de grafiek in elk punt geeft.",
+      "d": 3
      },
      {
-      "v": "Wat is een buigpunt?",
+      "v": "Wat betekent «Raaklijn»?",
       "o": [
-       "Een punt waar f''(x) = 0 én van teken wisselt: overgang van concaaf omhoog naar omlaag of andersom",
-       "Een punt waar f'(x) = 0",
-       "Een maximum of minimum",
-       "Een snijpunt met de x-as"
+       "een functie waarvan de afgeleide de gegeven functie is",
+       "de afstand van het middelpunt tot de rand van een cirkel",
+       "de lijn die de grafiek in precies één punt raakt",
+       "een maximum of minimum van een functie"
       ],
-      "c": 0,
-      "u": "Buigpunt: kromming wisselt. f''(x) = 0 is noodzakelijk maar niet voldoende: ook tekenwisseling van f'' vereist."
+      "c": 2,
+      "u": "«Raaklijn» betekent: de lijn die de grafiek in precies één punt raakt.",
+      "d": 1
      },
      {
-      "v": "Wat is de afgeleide van eˣ?",
+      "v": "Welk begrip hoort bij deze omschrijving: \"de lijn die de grafiek in precies één punt raakt\"?",
       "o": [
-       "eˣ (dezelfde functie)",
-       "x·eˣ⁻¹",
-       "e",
-       "1/eˣ"
+       "Raaklijn",
+       "Periode",
+       "Asymptoot",
+       "Vector"
       ],
       "c": 0,
-      "u": "eˣ is de enige functie die zijn eigen afgeleide is. (eˣ)' = eˣ. Bijzondere eigenschap van het getal e."
+      "u": "Het juiste begrip is «Raaklijn»: de lijn die de grafiek in precies één punt raakt.",
+      "d": 2
+     },
+     {
+      "v": "Welke term past bij: \"de lijn die de grafiek in precies één punt raakt\"?",
+      "o": [
+       "Raaklijn",
+       "Afgeleide",
+       "Primitieve",
+       "Extreem"
+      ],
+      "c": 0,
+      "u": "Het juiste begrip is «Raaklijn»: de lijn die de grafiek in precies één punt raakt.",
+      "d": 3
+     },
+     {
+      "v": "Wat betekent «Extreem»?",
+      "o": [
+       "de functie die de helling van de grafiek in elk punt geeft",
+       "een maximum of minimum van een functie",
+       "lineair, kwadratisch, exponentieel",
+       "één geval dat een bewering weerlegt"
+      ],
+      "c": 1,
+      "u": "«Extreem» betekent: een maximum of minimum van een functie.",
+      "d": 1
+     },
+     {
+      "v": "Welk begrip hoort bij deze omschrijving: \"een maximum of minimum van een functie\"?",
+      "o": [
+       "Straal",
+       "Extreem",
+       "Modelleercyclus",
+       "Functie"
+      ],
+      "c": 1,
+      "u": "Het juiste begrip is «Extreem»: een maximum of minimum van een functie.",
+      "d": 2
+     },
+     {
+      "v": "Welke term past bij: \"een maximum of minimum van een functie\"?",
+      "o": [
+       "Primitieve",
+       "Afgeleide",
+       "Extreem",
+       "Integraal"
+      ],
+      "c": 2,
+      "u": "Het juiste begrip is «Extreem»: een maximum of minimum van een functie.",
+      "d": 3
+     },
+     {
+      "v": "Wat betekent «Buigpunt»?",
+      "o": [
+       "het punt waar de grafiek van hol naar bol overgaat",
+       "een verband waarvan de grafiek een parabool is",
+       "lineair, kwadratisch, exponentieel",
+       "de uitdrukking die het aantal nulpunten van een parabool bepaalt"
+      ],
+      "c": 0,
+      "u": "«Buigpunt» betekent: het punt waar de grafiek van hol naar bol overgaat.",
+      "d": 1
+     },
+     {
+      "v": "Welk begrip hoort bij deze omschrijving: \"het punt waar de grafiek van hol naar bol overgaat\"?",
+      "o": [
+       "Buigpunt",
+       "Kwadratisch verband",
+       "Verband herkennen",
+       "Tegenvoorbeeld"
+      ],
+      "c": 0,
+      "u": "Het juiste begrip is «Buigpunt»: het punt waar de grafiek van hol naar bol overgaat.",
+      "d": 2
+     },
+     {
+      "v": "Welke term past bij: \"het punt waar de grafiek van hol naar bol overgaat\"?",
+      "o": [
+       "Extreem",
+       "Afgeleide",
+       "Buigpunt",
+       "Integraal"
+      ],
+      "c": 2,
+      "u": "Het juiste begrip is «Buigpunt»: het punt waar de grafiek van hol naar bol overgaat.",
+      "d": 3
+     },
+     {
+      "v": "Wat betekent «Primitieve»?",
+      "o": [
+       "het punt waar de grafiek van hol naar bol overgaat",
+       "een functie waarvan de afgeleide de gegeven functie is",
+       "de tweede verschillen zijn gelijk",
+       "een verband dat bij elke invoer precies één uitvoer geeft"
+      ],
+      "c": 1,
+      "u": "«Primitieve» betekent: een functie waarvan de afgeleide de gegeven functie is.",
+      "d": 1
+     },
+     {
+      "v": "Welk begrip hoort bij deze omschrijving: \"een functie waarvan de afgeleide de gegeven functie is\"?",
+      "o": [
+       "Primitieve",
+       "Tegenvoorbeeld",
+       "Straal",
+       "Vector"
+      ],
+      "c": 0,
+      "u": "Het juiste begrip is «Primitieve»: een functie waarvan de afgeleide de gegeven functie is.",
+      "d": 2
+     },
+     {
+      "v": "Welke term past bij: \"een functie waarvan de afgeleide de gegeven functie is\"?",
+      "o": [
+       "Integraal",
+       "Extreem",
+       "Primitieve",
+       "Buigpunt"
+      ],
+      "c": 2,
+      "u": "Het juiste begrip is «Primitieve»: een functie waarvan de afgeleide de gegeven functie is.",
+      "d": 3
+     },
+     {
+      "v": "Wat betekent «Integraal»?",
+      "o": [
+       "binnen/buiten het meetbereik schatten",
+       "de verzameling mogelijke uitvoerwaarden",
+       "de oppervlakte tussen een grafiek en de horizontale as",
+       "een lijn die de grafiek steeds dichter nadert maar niet raakt"
+      ],
+      "c": 2,
+      "u": "«Integraal» betekent: de oppervlakte tussen een grafiek en de horizontale as.",
+      "d": 1
+     },
+     {
+      "v": "Welk begrip hoort bij deze omschrijving: \"de oppervlakte tussen een grafiek en de horizontale as\"?",
+      "o": [
+       "Periode",
+       "Exponentieel verband",
+       "Buigpunt",
+       "Integraal"
+      ],
+      "c": 3,
+      "u": "Het juiste begrip is «Integraal»: de oppervlakte tussen een grafiek en de horizontale as.",
+      "d": 2
+     },
+     {
+      "v": "Welke term past bij: \"de oppervlakte tussen een grafiek en de horizontale as\"?",
+      "o": [
+       "Primitieve",
+       "Buigpunt",
+       "Raaklijn",
+       "Integraal"
+      ],
+      "c": 3,
+      "u": "Het juiste begrip is «Integraal»: de oppervlakte tussen een grafiek en de horizontale as.",
+      "d": 3
+     },
+     {
+      "v": "Wat betekent «Helling»?",
+      "o": [
+       "lineair, kwadratisch, exponentieel",
+       "de lengte van één herhaling van een periodieke functie",
+       "de mate van stijging of daling van een grafiek",
+       "precies even groot en van dezelfde vorm"
+      ],
+      "c": 2,
+      "u": "«Helling» betekent: de mate van stijging of daling van een grafiek.",
+      "d": 1
+     },
+     {
+      "v": "Welk begrip hoort bij deze omschrijving: \"de mate van stijging of daling van een grafiek\"?",
+      "o": [
+       "Helling",
+       "Verband herkennen",
+       "Nulpunt",
+       "Radiaal"
+      ],
+      "c": 0,
+      "u": "Het juiste begrip is «Helling»: de mate van stijging of daling van een grafiek.",
+      "d": 2
+     },
+     {
+      "v": "Welke term past bij: \"de mate van stijging of daling van een grafiek\"?",
+      "o": [
+       "Helling",
+       "Raaklijn",
+       "Primitieve",
+       "Extreem"
+      ],
+      "c": 0,
+      "u": "Het juiste begrip is «Helling»: de mate van stijging of daling van een grafiek.",
+      "d": 3
      }
     ],
     "oe": [
@@ -20477,6 +31926,36 @@ var VAKKEN = [
       ],
       "c": 0,
       "u": "(a) f(x) = (2x+1)^(1/2). Kettingregel: f'(x) = 1/2·(2x+1)^(-1/2)·2 = 1 gedeeld door wortel(2x+1).\n(b) f(4) = wortel(9) = 3. f'(4) = 1/wortel(9) = 1/3. Raaklijn: y = 1/3·(x-4) + 3 = 1/3 x + 5/3."
+     }
+    ],
+    "begrippen": [
+     {
+      "t": "Afgeleide",
+      "d": "de functie die de helling van de grafiek in elk punt geeft"
+     },
+     {
+      "t": "Raaklijn",
+      "d": "de lijn die de grafiek in precies één punt raakt"
+     },
+     {
+      "t": "Extreem",
+      "d": "een maximum of minimum van een functie"
+     },
+     {
+      "t": "Buigpunt",
+      "d": "het punt waar de grafiek van hol naar bol overgaat"
+     },
+     {
+      "t": "Primitieve",
+      "d": "een functie waarvan de afgeleide de gegeven functie is"
+     },
+     {
+      "t": "Integraal",
+      "d": "de oppervlakte tussen een grafiek en de horizontale as"
+     },
+     {
+      "t": "Helling",
+      "d": "de mate van stijging of daling van een grafiek"
      }
     ]
    },
@@ -20654,6 +32133,186 @@ var VAKKEN = [
       ],
       "c": 0,
       "u": "Middelpunt = gemiddelde van de coördinaten. Afstand: d = √((x₂−x₁)²+(y₂−y₁)²)."
+     },
+     {
+      "v": "Wat betekent «Vector»?",
+      "o": [
+       "de verzameling mogelijke uitvoerwaarden",
+       "een grootheid met een lengte en een richting",
+       "een hoekmaat waarbij de booglengte gelijk is aan de straal",
+       "de lijn die de grafiek in precies één punt raakt"
+      ],
+      "c": 1,
+      "u": "«Vector» betekent: een grootheid met een lengte en een richting.",
+      "d": 1
+     },
+     {
+      "v": "Welk begrip hoort bij deze omschrijving: \"een grootheid met een lengte en een richting\"?",
+      "o": [
+       "Vector",
+       "Verband herkennen",
+       "Functie",
+       "Lineair verband"
+      ],
+      "c": 0,
+      "u": "Het juiste begrip is «Vector»: een grootheid met een lengte en een richting.",
+      "d": 2
+     },
+     {
+      "v": "Welke term past bij: \"een grootheid met een lengte en een richting\"?",
+      "o": [
+       "Gelijkvormig",
+       "Congruent",
+       "Straal",
+       "Vector"
+      ],
+      "c": 3,
+      "u": "Het juiste begrip is «Vector»: een grootheid met een lengte en een richting.",
+      "d": 3
+     },
+     {
+      "v": "Wat betekent «Straal»?",
+      "o": [
+       "de functie die de helling van de grafiek in elk punt geeft",
+       "precies even groot en van dezelfde vorm",
+       "een verband met een constante toename; de grafiek is een rechte lijn",
+       "de afstand van het middelpunt tot de rand van een cirkel"
+      ],
+      "c": 3,
+      "u": "«Straal» betekent: de afstand van het middelpunt tot de rand van een cirkel.",
+      "d": 1
+     },
+     {
+      "v": "Welk begrip hoort bij deze omschrijving: \"de afstand van het middelpunt tot de rand van een cirkel\"?",
+      "o": [
+       "Functie",
+       "Radiaal",
+       "Straal",
+       "Gelijkvormig"
+      ],
+      "c": 2,
+      "u": "Het juiste begrip is «Straal»: de afstand van het middelpunt tot de rand van een cirkel.",
+      "d": 2
+     },
+     {
+      "v": "Welke term past bij: \"de afstand van het middelpunt tot de rand van een cirkel\"?",
+      "o": [
+       "Congruent",
+       "Gelijkvormig",
+       "Straal",
+       "Radiaal"
+      ],
+      "c": 2,
+      "u": "Het juiste begrip is «Straal»: de afstand van het middelpunt tot de rand van een cirkel.",
+      "d": 3
+     },
+     {
+      "v": "Wat betekent «Congruent»?",
+      "o": [
+       "een maximum of minimum van een functie",
+       "precies even groot en van dezelfde vorm",
+       "een functie waarvan de afgeleide de gegeven functie is",
+       "de oppervlakte tussen een grafiek en de horizontale as"
+      ],
+      "c": 1,
+      "u": "«Congruent» betekent: precies even groot en van dezelfde vorm.",
+      "d": 1
+     },
+     {
+      "v": "Welk begrip hoort bij deze omschrijving: \"precies even groot en van dezelfde vorm\"?",
+      "o": [
+       "Nulpunt",
+       "Congruent",
+       "Discriminant",
+       "Bereik"
+      ],
+      "c": 1,
+      "u": "Het juiste begrip is «Congruent»: precies even groot en van dezelfde vorm.",
+      "d": 2
+     },
+     {
+      "v": "Welke term past bij: \"precies even groot en van dezelfde vorm\"?",
+      "o": [
+       "Radiaal",
+       "Gelijkvormig",
+       "Congruent",
+       "Vector"
+      ],
+      "c": 2,
+      "u": "Het juiste begrip is «Congruent»: precies even groot en van dezelfde vorm.",
+      "d": 3
+     },
+     {
+      "v": "Wat betekent «Gelijkvormig»?",
+      "o": [
+       "de maximale uitwijking ten opzichte van de evenwichtsstand",
+       "gelijke stappen erbij/eraf (+ vast getal)",
+       "dezelfde vorm maar mogelijk een andere grootte",
+       "lineair, kwadratisch, exponentieel"
+      ],
+      "c": 2,
+      "u": "«Gelijkvormig» betekent: dezelfde vorm maar mogelijk een andere grootte.",
+      "d": 1
+     },
+     {
+      "v": "Welk begrip hoort bij deze omschrijving: \"dezelfde vorm maar mogelijk een andere grootte\"?",
+      "o": [
+       "Buigpunt",
+       "Straal",
+       "Gelijkvormig",
+       "Bereik"
+      ],
+      "c": 2,
+      "u": "Het juiste begrip is «Gelijkvormig»: dezelfde vorm maar mogelijk een andere grootte.",
+      "d": 2
+     },
+     {
+      "v": "Welke term past bij: \"dezelfde vorm maar mogelijk een andere grootte\"?",
+      "o": [
+       "Congruent",
+       "Vector",
+       "Straal",
+       "Gelijkvormig"
+      ],
+      "c": 3,
+      "u": "Het juiste begrip is «Gelijkvormig»: dezelfde vorm maar mogelijk een andere grootte.",
+      "d": 3
+     },
+     {
+      "v": "Wat betekent «Radiaal»?",
+      "o": [
+       "een hoekmaat waarbij de booglengte gelijk is aan de straal",
+       "de lengte van één herhaling van een periodieke functie",
+       "de vloeiende kromme die hoort bij een kwadratische functie",
+       "gelijke stappen erbij/eraf (+ vast getal)"
+      ],
+      "c": 0,
+      "u": "«Radiaal» betekent: een hoekmaat waarbij de booglengte gelijk is aan de straal.",
+      "d": 1
+     },
+     {
+      "v": "Welk begrip hoort bij deze omschrijving: \"een hoekmaat waarbij de booglengte gelijk is aan de straal\"?",
+      "o": [
+       "Nulpunt",
+       "Radiaal",
+       "Domein",
+       "Modelleercyclus"
+      ],
+      "c": 1,
+      "u": "Het juiste begrip is «Radiaal»: een hoekmaat waarbij de booglengte gelijk is aan de straal.",
+      "d": 2
+     },
+     {
+      "v": "Welke term past bij: \"een hoekmaat waarbij de booglengte gelijk is aan de straal\"?",
+      "o": [
+       "Gelijkvormig",
+       "Straal",
+       "Radiaal",
+       "Congruent"
+      ],
+      "c": 2,
+      "u": "Het juiste begrip is «Radiaal»: een hoekmaat waarbij de booglengte gelijk is aan de straal.",
+      "d": 3
      }
     ],
     "oe": [
@@ -20686,6 +32345,28 @@ var VAKKEN = [
       ],
       "c": 0,
       "u": "(a) QR² = 64+36-2·8·6·cos(60°) = 100-48 = 52 → QR = 2√13 ≈ 7,21.\n(b) Opp = ½·8·6·sin(60°) = 24·(√3/2) = 12√3 ≈ 20,78 cm²."
+     }
+    ],
+    "begrippen": [
+     {
+      "t": "Vector",
+      "d": "een grootheid met een lengte en een richting"
+     },
+     {
+      "t": "Straal",
+      "d": "de afstand van het middelpunt tot de rand van een cirkel"
+     },
+     {
+      "t": "Congruent",
+      "d": "precies even groot en van dezelfde vorm"
+     },
+     {
+      "t": "Gelijkvormig",
+      "d": "dezelfde vorm maar mogelijk een andere grootte"
+     },
+     {
+      "t": "Radiaal",
+      "d": "een hoekmaat waarbij de booglengte gelijk is aan de straal"
      }
     ]
    }

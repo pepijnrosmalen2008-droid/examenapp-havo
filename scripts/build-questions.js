@@ -64,20 +64,75 @@ const UITLEG={
   'Simile':'Anders dan een metaphor: a simile uses "like"/"as".','Metaphor':'Anders dan een simile: a metaphor omits "like"/"as".',
 };
 
+// ── curated wiskunde-begrippen (samenvattingen zijn formule-zwaar → weinig extractie) ──
+const MT={
+  'Variabele':'een symbool voor een getal dat kan variëren','Vergelijking':'een gelijkheid met een onbekende die je oplost',
+  'Machten':'het herhaald vermenigvuldigen met hetzelfde grondtal','Logaritme':'het antwoord op de vraag: tot welke macht verhef ik het grondtal?',
+  'Permutatie':'een rangschikking waarbij de volgorde meetelt','Combinatie':'een keuze waarbij de volgorde niet meetelt',
+  'Faculteit':'het product van alle gehele getallen tot en met een getal','Functie':'een verband dat bij elke invoer precies één uitvoer geeft',
+  'Lineair verband':'een verband met een constante toename; de grafiek is een rechte lijn','Exponentieel verband':'een verband met een vaste groeifactor per stap',
+  'Kwadratisch verband':'een verband waarvan de grafiek een parabool is','Groeifactor':'het getal waarmee je per tijdstap vermenigvuldigt',
+  'Asymptoot':'een lijn die de grafiek steeds dichter nadert maar niet raakt','Nulpunt':'een invoerwaarde waar de grafiek de horizontale as snijdt',
+  'Domein':'de verzameling toegestane invoerwaarden','Bereik':'de verzameling mogelijke uitvoerwaarden',
+  'Afgeleide':'de functie die de helling van de grafiek in elk punt geeft','Helling':'de mate van stijging of daling van een grafiek',
+  'Differentiequotiënt':'de gemiddelde helling over een interval','Extreem':'een maximum of minimum van een functie',
+  'Raaklijn':'de lijn die de grafiek in precies één punt raakt','Buigpunt':'het punt waar de grafiek van hol naar bol overgaat',
+  'Primitieve':'een functie waarvan de afgeleide de gegeven functie is','Integraal':'de oppervlakte tussen een grafiek en de horizontale as',
+  'Limiet':'de waarde die een functie nadert','Discriminant':'de uitdrukking die het aantal nulpunten van een parabool bepaalt',
+  'Parabool':'de vloeiende kromme die hoort bij een kwadratische functie','Kans':'de verhouding tussen gunstige en mogelijke uitkomsten',
+  'Complement':'de kans dat een gebeurtenis juist niet optreedt','Gemiddelde':'de som van de waarden gedeeld door hun aantal',
+  'Mediaan':'de middelste waarde van een geordende reeks','Standaardafwijking':'een maat voor de spreiding rond het gemiddelde',
+  'Normale verdeling':'een symmetrische, klokvormige kansverdeling','Binomiale verdeling':'de kansverdeling van het aantal successen bij herhaling',
+  'Steekproef':'een deel van de populatie dat je onderzoekt','Significantie':'de mate waarin een resultaat niet op toeval berust',
+  'Periode':'de lengte van één herhaling van een periodieke functie','Amplitude':'de maximale uitwijking ten opzichte van de evenwichtsstand',
+  'Sinus':'in de eenheidscirkel de verticale coördinaat bij een hoek','Cosinus':'in de eenheidscirkel de horizontale coördinaat bij een hoek',
+  'Tangens':'de verhouding van de sinus tot de cosinus','Radiaal':'een hoekmaat waarbij de booglengte gelijk is aan de straal',
+  'Eenheidscirkel':'de cirkel met straal één rond de oorsprong','Vector':'een grootheid met een lengte en een richting',
+  'Inproduct':'een bewerking op twee vectoren die nul is bij loodrechte stand','Normaalvector':'een vector die loodrecht op een vlak of lijn staat',
+  'Straal':'de afstand van het middelpunt tot de rand van een cirkel','Congruent':'precies even groot en van dezelfde vorm','Gelijkvormig':'dezelfde vorm maar mogelijk een andere grootte',
+};
+const MMAP={
+  havo_wa_B:['Variabele','Vergelijking','Machten','Logaritme','Permutatie','Combinatie','Faculteit'],
+  havo_wa_C:['Functie','Lineair verband','Exponentieel verband','Kwadratisch verband','Groeifactor','Asymptoot','Nulpunt','Domein','Bereik'],
+  havo_wa_D:['Afgeleide','Helling','Differentiequotiënt','Extreem','Raaklijn'],
+  havo_wa_E:['Kans','Complement','Gemiddelde','Mediaan','Standaardafwijking','Normale verdeling','Binomiale verdeling','Steekproef'],
+  havo_wb_B:['Functie','Nulpunt','Discriminant','Domein','Bereik','Asymptoot','Parabool'],
+  havo_wb_C:['Lineair verband','Exponentieel verband','Kwadratisch verband','Periode','Amplitude'],
+  havo_wb_D:['Afgeleide','Raaklijn','Extreem','Buigpunt','Primitieve','Integraal','Helling'],
+  havo_wb_E:['Vector','Straal','Congruent','Gelijkvormig','Radiaal'],
+  vwo_wa_B:['Variabele','Machten','Logaritme','Permutatie','Combinatie','Faculteit'],
+  vwo_wa_C:['Functie','Lineair verband','Exponentieel verband','Kwadratisch verband','Periode','Amplitude','Asymptoot'],
+  vwo_wa_D:['Afgeleide','Raaklijn','Extreem','Buigpunt','Helling','Differentiequotiënt'],
+  vwo_wa_E:['Kans','Complement','Normale verdeling','Binomiale verdeling','Standaardafwijking','Gemiddelde','Significantie','Steekproef'],
+  vwo_wb_B:['Functie','Nulpunt','Discriminant','Domein','Bereik','Asymptoot'],
+  vwo_wb_C:['Afgeleide','Raaklijn','Extreem','Buigpunt','Primitieve','Integraal','Limiet'],
+  vwo_wb_D:['Sinus','Cosinus','Tangens','Radiaal','Amplitude','Periode','Eenheidscirkel'],
+  vwo_wb_E:['Vector','Inproduct','Normaalvector','Straal','Congruent','Gelijkvormig'],
+};
+const CURATED={};
+for(const k in MMAP) CURATED[k]=MMAP[k].map(t=>({t,d:MT[t]})).filter(x=>x.d);
+
 // ── generator ──
 function shuffle(a){a=a.slice();for(let i=a.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[a[i],a[j]]=[a[j],a[i]];}return a;}
 function sample(pool,n,excl){const out=[];for(const x of shuffle(pool)){if(out.length>=n)break;if(excl.includes(x)||out.includes(x))continue;out.push(x);}return out;}
 function genQ(pairs, vakPool){
   const vakDefs=vakPool.map(p=>p.d), vakTerms=vakPool.map(p=>p.t), domTerms=pairs.map(p=>p.t), qs=[];
-  pairs.forEach(({t,d},i)=>{
-    const ext=UITLEG[t]?' '+UITLEG[t]:''; const mod=i%3;
-    if(mod===0){const dis=sample(vakDefs,3,[d]);if(dis.length<3)return;const o=shuffle([d,...dis]);qs.push({v:`Wat betekent «${t}»?`,o,c:o.indexOf(d),u:`«${t}» betekent: ${d}.${ext}`,d:1});}
-    else if(mod===1){const dis=sample(vakTerms,3,[t]);if(dis.length<3)return;const o=shuffle([t,...dis]);qs.push({v:`Welk begrip hoort bij deze omschrijving: "${d}"?`,o,c:o.indexOf(t),u:`Het juiste begrip is «${t}»: ${d}.${ext}`,d:2});}
-    else{let dis=sample(domTerms,3,[t]),dd=3;if(dis.length<3){dis=sample(vakTerms,3,[t]);dd=2;}if(dis.length<3)return;const o=shuffle([t,...dis]);qs.push({v:`Welk begrip hoort bij deze omschrijving: "${d}"?`,o,c:o.indexOf(t),u:`Het juiste begrip is «${t}»: ${d}.${ext}`,d:dd});}
+  pairs.forEach(({t,d})=>{
+    const ext=UITLEG[t]?' '+UITLEG[t]:'';
+    const uT=`«${t}» betekent: ${d}.${ext}`, uD=`Het juiste begrip is «${t}»: ${d}.${ext}`;
+    // 1) recall (d1): definitie herkennen bij de term
+    const d1=sample(vakDefs,3,[d]);
+    if(d1.length===3){const o=shuffle([d,...d1]);qs.push({v:`Wat betekent «${t}»?`,o,c:o.indexOf(d),u:uT,d:1});}
+    // 2) herkenning makkelijk (d2): term bij definitie, afleiders uit het hele vak
+    const d2=sample(vakTerms,3,[t]);
+    if(d2.length===3){const o=shuffle([t,...d2]);qs.push({v:`Welk begrip hoort bij deze omschrijving: "${d}"?`,o,c:o.indexOf(t),u:uD,d:2});}
+    // 3) herkenning moeilijk (d3): term bij definitie, afleiders uit HETZELFDE domein (dichtbij)
+    const d3=sample(domTerms,3,[t]);
+    if(d3.length===3){const o=shuffle([t,...d3]);qs.push({v:`Welke term past bij: "${d}"?`,o,c:o.indexOf(t),u:uD,d:3});}
   });
   return qs;
 }
-const isGen=v=>/^Wat betekent «|^Welk begrip hoort bij/.test(v||'');
+const isGen=v=>/^Wat betekent «|^Welk begrip hoort bij|^Welke term past bij/.test(v||'');
 
 // ── kwaliteitsfilter (weggevers/reken) ──
 function lenGiveaway(o,c){const L=o.map(x=>String(x).length),cor=L[c],oth=L.filter((_,i)=>i!==c).sort((a,b)=>b-a);if(cor>=oth[0]*1.5&&cor-oth[0]>=12)return 2;if(cor<=oth[oth.length-1]*0.4&&oth[0]-cor>=20)return 1;return 0;}
@@ -93,8 +148,9 @@ function run(file, name, niveau, pretty){
   for(const vak of V){
     // 1. begrippen per domein bepalen (curated behouden, anders extractie)
     for(const d of vak.domeinen){
-      if(!(d.begrippen&&d.begrippen.length)){
-        const key=niveau+'_'+vak.id+'_'+d.id;
+      const key=niveau+'_'+vak.id+'_'+d.id;
+      if(CURATED[key]){d.begrippen=CURATED[key];curatedDoms++;}
+      else if(!(d.begrippen&&d.begrippen.length)){
         const ex=extract(SAM[key]||d.sam||'');
         if(ex.length>=4){d.begrippen=ex;extractedDoms++;}
       } else curatedDoms++;
