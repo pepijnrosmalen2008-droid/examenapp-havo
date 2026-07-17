@@ -1078,6 +1078,9 @@ function aqpResetDomain(vakId,domeinId){
 // ── ADAPTIEVE MOEILIJKHEID (staircase binnen één sessie) ─────────────
 // Schat de moeilijkheid van een meerkeuzevraag in: 1=makkelijk, 2=gemiddeld, 3=moeilijk.
 function qDiff(q){
+  // Expliciete moeilijkheid (1=makkelijk, 2=gemiddeld, 3=moeilijk) heeft voorrang op de
+  // tekst-heuristiek; zo sluiten gegenereerde begripsvragen betrouwbaar aan op de staircase.
+  if(q&&(q.d===1||q.d===2||q.d===3))return q.d;
   var v=(q&&q.v)||'', t=v+' '+(((q&&q.o)||[]).join(' '));
   var s=2;
   if(/welke formule|met de juiste|hoeveel|wat is de waarde|welk verband/i.test(v))s++;

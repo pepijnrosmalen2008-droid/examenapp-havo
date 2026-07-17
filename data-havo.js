@@ -3189,90 +3189,98 @@ var VAKKEN = [
      {
       "v": "Wat betekent «Hypothese»?",
       "o": [
-       "gebruik zonder uitputting voor latere generaties",
-       "een toetsbare voorspelling van een verwacht verband",
-       "een dun plakje materiaal voor onder de microscoop",
-       "CO2 + water + licht worden glucose + zuurstof"
-      ],
-      "c": 1,
-      "u": "Hypothese: een toetsbare voorspelling van een verwacht verband."
-     },
-     {
-      "v": "Welk begrip hoort bij: \"de factor die je in een proef bewust verandert\"?",
-      "o": [
-       "Mitose",
-       "Specifieke afweer",
-       "Betrouwbaarheid",
-       "Onafhankelijke variabele"
+       "twee hormonen of spieren met een tegengesteld effect",
+       "hormoon dat de bloedglucose verlaagt",
+       "de kleinste eenheid van leven",
+       "een toetsbare voorspelling van een verwacht verband"
       ],
       "c": 3,
-      "u": "Onafhankelijke variabele: de factor die je in een proef bewust verandert."
+      "u": "«Hypothese» betekent: een toetsbare voorspelling van een verwacht verband.",
+      "d": 1
      },
      {
-      "v": "Wat betekent «Afhankelijke variabele»?",
+      "v": "Welk begrip hoort bij deze omschrijving: \"de factor die je in een proef bewust verandert\"?",
       "o": [
-       "alle individuen van één soort in een gebied",
-       "organisme dat dood materiaal afbreekt (bacteriën, schimmels)",
-       "de factor die je meet als gevolg",
-       "een dun plakje materiaal voor onder de microscoop"
+       "Synaps",
+       "Mitose",
+       "Onafhankelijke variabele",
+       "Meiose"
       ],
       "c": 2,
-      "u": "Afhankelijke variabele: de factor die je meet als gevolg."
+      "u": "Het juiste begrip is «Onafhankelijke variabele»: de factor die je in een proef bewust verandert.",
+      "d": 2
      },
      {
-      "v": "Welk begrip hoort bij: \"een proef zonder de onderzochte factor, als vergelijkingspunt\"?",
+      "v": "Welk begrip hoort bij deze omschrijving: \"de factor die je meet als gevolg\"?",
       "o": [
-       "Dominant allel",
        "Controle-experiment",
-       "Antigeen",
-       "Hormoon"
-      ],
-      "c": 1,
-      "u": "Controle-experiment: een proef zonder de onderzochte factor, als vergelijkingspunt."
-     },
-     {
-      "v": "Wat betekent «Betrouwbaarheid»?",
-      "o": [
-       "een levensgemeenschap plus de abiotische omgeving",
-       "energiecentrale die aerobe celademhaling uitvoert (ATP)",
-       "een invloed van levende organismen",
-       "mate waarin herhaalde metingen dezelfde uitkomst geven"
-      ],
-      "c": 3,
-      "u": "Betrouwbaarheid: mate waarin herhaalde metingen dezelfde uitkomst geven."
-     },
-     {
-      "v": "Welk begrip hoort bij: \"mate waarin je meet wat je wilt meten\"?",
-      "o": [
        "Validiteit",
+       "Afhankelijke variabele",
+       "Preparaat"
+      ],
+      "c": 2,
+      "u": "Het juiste begrip is «Afhankelijke variabele»: de factor die je meet als gevolg.",
+      "d": 3
+     },
+     {
+      "v": "Wat betekent «Controle-experiment»?",
+      "o": [
+       "alle individuen van één soort in een gebied",
+       "allel dat alleen homozygoot tot uiting komt",
+       "een proef zonder de onderzochte factor, als vergelijkingspunt",
+       "eiwit dat specifiek aan een antigeen bindt"
+      ],
+      "c": 2,
+      "u": "«Controle-experiment» betekent: een proef zonder de onderzochte factor, als vergelijkingspunt.",
+      "d": 1
+     },
+     {
+      "v": "Welk begrip hoort bij deze omschrijving: \"mate waarin herhaalde metingen dezelfde uitkomst geven\"?",
+      "o": [
+       "Hormoon",
        "Recessief allel",
        "Betrouwbaarheid",
-       "Celkern"
+       "Duurzaamheid"
       ],
-      "c": 0,
-      "u": "Validiteit: mate waarin je meet wat je wilt meten."
+      "c": 2,
+      "u": "Het juiste begrip is «Betrouwbaarheid»: mate waarin herhaalde metingen dezelfde uitkomst geven. Betrouwbaar ≠ valide: een meting kan steeds hetzelfde geven (betrouwbaar) maar tóch het verkeerde meten.",
+      "d": 2
+     },
+     {
+      "v": "Welk begrip hoort bij deze omschrijving: \"mate waarin je meet wat je wilt meten\"?",
+      "o": [
+       "Determineertabel",
+       "Betrouwbaarheid",
+       "Validiteit",
+       "Onafhankelijke variabele"
+      ],
+      "c": 2,
+      "u": "Het juiste begrip is «Validiteit»: mate waarin je meet wat je wilt meten. Valide ≠ betrouwbaar: valide gaat over of je het júíste meet, niet over de herhaalbaarheid.",
+      "d": 3
      },
      {
       "v": "Wat betekent «Determineertabel»?",
       "o": [
-       "hormoon dat de bloedglucose verlaagt",
-       "een zenuwcel die impulsen geleidt",
-       "energiecentrale die aerobe celademhaling uitvoert (ATP)",
-       "een sleutel om organismen op kenmerken te benoemen"
+       "een sleutel om organismen op kenmerken te benoemen",
+       "het constant houden van het interne milieu",
+       "glucose + zuurstof worden CO2 + water + energie (ATP)",
+       "een niet-levende invloed (licht, temperatuur, water)"
       ],
-      "c": 3,
-      "u": "Determineertabel: een sleutel om organismen op kenmerken te benoemen."
+      "c": 0,
+      "u": "«Determineertabel» betekent: een sleutel om organismen op kenmerken te benoemen.",
+      "d": 1
      },
      {
-      "v": "Welk begrip hoort bij: \"een dun plakje materiaal voor onder de microscoop\"?",
+      "v": "Welk begrip hoort bij deze omschrijving: \"een dun plakje materiaal voor onder de microscoop\"?",
       "o": [
-       "Producent",
-       "Preparaat",
-       "Celmembraan",
-       "Ecosysteem"
+       "Vaccinatie",
+       "Aspecifieke afweer",
+       "Mitose",
+       "Preparaat"
       ],
-      "c": 1,
-      "u": "Preparaat: een dun plakje materiaal voor onder de microscoop."
+      "c": 3,
+      "u": "Het juiste begrip is «Preparaat»: een dun plakje materiaal voor onder de microscoop.",
+      "d": 2
      }
     ],
     "oe": [
@@ -3555,156 +3563,170 @@ var VAKKEN = [
      {
       "v": "Wat betekent «Cel»?",
       "o": [
-       "een levensgemeenschap plus de abiotische omgeving",
-       "allel dat het fenotype bepaalt, ook heterozygoot",
+       "de verscheidenheid aan soorten en genen",
+       "alle individuen van één soort in een gebied",
        "de kleinste eenheid van leven",
-       "inbrengen van onschadelijk antigeen om geheugen op te bouwen"
+       "het constant houden van het interne milieu"
       ],
       "c": 2,
-      "u": "Cel: de kleinste eenheid van leven."
+      "u": "«Cel» betekent: de kleinste eenheid van leven.",
+      "d": 1
      },
      {
-      "v": "Welk begrip hoort bij: \"de selectief doorlaatbare grens van een cel\"?",
+      "v": "Welk begrip hoort bij deze omschrijving: \"de selectief doorlaatbare grens van een cel\"?",
       "o": [
-       "Homeostase",
-       "Abiotische factor",
+       "Onafhankelijke variabele",
        "Celmembraan",
-       "Populatie"
-      ],
-      "c": 2,
-      "u": "Celmembraan: de selectief doorlaatbare grens van een cel."
-     },
-     {
-      "v": "Wat betekent «Celkern»?",
-      "o": [
-       "gebruik zonder uitputting voor latere generaties",
-       "de verbinding tussen twee neuronen met neurotransmitters",
-       "organel dat het DNA bevat en de cel aanstuurt",
-       "de factor die je meet als gevolg"
-      ],
-      "c": 2,
-      "u": "Celkern: organel dat het DNA bevat en de cel aanstuurt."
-     },
-     {
-      "v": "Welk begrip hoort bij: \"energiecentrale die aerobe celademhaling uitvoert (ATP)\"?",
-      "o": [
-       "Antigeen",
-       "Mitochondrion",
-       "Validiteit",
-       "Preparaat"
+       "Mutatie",
+       "Mitochondrion"
       ],
       "c": 1,
-      "u": "Mitochondrion: energiecentrale die aerobe celademhaling uitvoert (ATP)."
+      "u": "Het juiste begrip is «Celmembraan»: de selectief doorlaatbare grens van een cel.",
+      "d": 2
      },
      {
-      "v": "Wat betekent «Chloroplast»?",
+      "v": "Welk begrip hoort bij deze omschrijving: \"organel dat het DNA bevat en de cel aanstuurt\"?",
       "o": [
-       "best aangepaste individuen planten zich meer voort",
-       "CO2 + water + licht worden glucose + zuurstof",
-       "alle individuen van één soort in een gebied",
-       "organel waarin fotosynthese plaatsvindt"
+       "Mitochondrion",
+       "Mitose",
+       "Celkern",
+       "Celmembraan"
       ],
-      "c": 3,
-      "u": "Chloroplast: organel waarin fotosynthese plaatsvindt."
+      "c": 2,
+      "u": "Het juiste begrip is «Celkern»: organel dat het DNA bevat en de cel aanstuurt.",
+      "d": 3
      },
      {
-      "v": "Welk begrip hoort bij: \"eiwit dat als biokatalysator een reactie versnelt\"?",
+      "v": "Wat betekent «Mitochondrion»?",
       "o": [
-       "Afhankelijke variabele",
-       "Ecosysteem",
-       "Celmembraan",
+       "gerichte afweer door lymfocyten, met geheugen",
+       "energiecentrale die aerobe celademhaling uitvoert (ATP)",
+       "organisme dat andere organismen eet",
+       "mate waarin je meet wat je wilt meten"
+      ],
+      "c": 1,
+      "u": "«Mitochondrion» betekent: energiecentrale die aerobe celademhaling uitvoert (ATP).",
+      "d": 1
+     },
+     {
+      "v": "Welk begrip hoort bij deze omschrijving: \"organel waarin fotosynthese plaatsvindt\"?",
+      "o": [
+       "Producent",
+       "Chloroplast",
+       "Hormoon",
+       "Homeostase"
+      ],
+      "c": 1,
+      "u": "Het juiste begrip is «Chloroplast»: organel waarin fotosynthese plaatsvindt.",
+      "d": 2
+     },
+     {
+      "v": "Welk begrip hoort bij deze omschrijving: \"eiwit dat als biokatalysator een reactie versnelt\"?",
+      "o": [
+       "Chloroplast",
+       "Recessief allel",
+       "Mutatie",
        "Enzym"
       ],
       "c": 3,
-      "u": "Enzym: eiwit dat als biokatalysator een reactie versnelt."
+      "u": "Het juiste begrip is «Enzym»: eiwit dat als biokatalysator een reactie versnelt.",
+      "d": 3
      },
      {
       "v": "Wat betekent «Fotosynthese»?",
       "o": [
+       "een levensgemeenschap plus de abiotische omgeving",
+       "organisme dat andere organismen eet",
        "CO2 + water + licht worden glucose + zuurstof",
-       "reductiedeling die geslachtscellen vormt (halve chromosoomaantal)",
-       "een toetsbare voorspelling van een verwacht verband",
+       "een chemische boodschapper die via het bloed werkt"
+      ],
+      "c": 2,
+      "u": "«Fotosynthese» betekent: CO2 + water + licht worden glucose + zuurstof.",
+      "d": 1
+     },
+     {
+      "v": "Welk begrip hoort bij deze omschrijving: \"glucose + zuurstof worden CO2 + water + energie (ATP)\"?",
+      "o": [
+       "Duurzaamheid",
+       "Populatie",
+       "Celademhaling",
+       "Antigeen"
+      ],
+      "c": 2,
+      "u": "Het juiste begrip is «Celademhaling»: glucose + zuurstof worden CO2 + water + energie (ATP).",
+      "d": 2
+     },
+     {
+      "v": "Welk begrip hoort bij deze omschrijving: \"molecuul met de erfelijke informatie in genen\"?",
+      "o": [
+       "Celademhaling",
+       "Celmembraan",
+       "Recessief allel",
+       "DNA"
+      ],
+      "c": 3,
+      "u": "Het juiste begrip is «DNA»: molecuul met de erfelijke informatie in genen.",
+      "d": 3
+     },
+     {
+      "v": "Wat betekent «Mitose»?",
+      "o": [
+       "gewone celdeling met twee identieke dochtercellen",
+       "een levensgemeenschap plus de abiotische omgeving",
+       "de selectief doorlaatbare grens van een cel",
        "mate waarin je meet wat je wilt meten"
       ],
       "c": 0,
-      "u": "Fotosynthese: CO2 + water + licht worden glucose + zuurstof."
+      "u": "«Mitose» betekent: gewone celdeling met twee identieke dochtercellen. Let op het verschil met meiose: mitose geeft 2 identieke cellen, meiose 4 met het halve chromosoomaantal.",
+      "d": 1
      },
      {
-      "v": "Welk begrip hoort bij: \"glucose + zuurstof worden CO2 + water + energie (ATP)\"?",
+      "v": "Welk begrip hoort bij deze omschrijving: \"reductiedeling die geslachtscellen vormt (halve chromosoomaantal)\"?",
       "o": [
-       "Duurzaamheid",
-       "Celademhaling",
-       "Onafhankelijke variabele",
-       "Homeostase"
-      ],
-      "c": 1,
-      "u": "Celademhaling: glucose + zuurstof worden CO2 + water + energie (ATP)."
-     },
-     {
-      "v": "Wat betekent «DNA»?",
-      "o": [
-       "allel dat het fenotype bepaalt, ook heterozygoot",
-       "molecuul met de erfelijke informatie in genen",
-       "mate waarin herhaalde metingen dezelfde uitkomst geven",
-       "CO2 + water + licht worden glucose + zuurstof"
-      ],
-      "c": 1,
-      "u": "DNA: molecuul met de erfelijke informatie in genen."
-     },
-     {
-      "v": "Welk begrip hoort bij: \"gewone celdeling met twee identieke dochtercellen\"?",
-      "o": [
-       "Mitose",
-       "Neuron",
-       "Antagonisme",
-       "Betrouwbaarheid"
-      ],
-      "c": 0,
-      "u": "Mitose: gewone celdeling met twee identieke dochtercellen."
-     },
-     {
-      "v": "Wat betekent «Meiose»?",
-      "o": [
-       "reductiedeling die geslachtscellen vormt (halve chromosoomaantal)",
-       "inbrengen van onschadelijk antigeen om geheugen op te bouwen",
-       "organel dat het DNA bevat en de cel aanstuurt",
-       "glucose + zuurstof worden CO2 + water + energie (ATP)"
-      ],
-      "c": 0,
-      "u": "Meiose: reductiedeling die geslachtscellen vormt (halve chromosoomaantal)."
-     },
-     {
-      "v": "Welk begrip hoort bij: \"een verandering in het DNA\"?",
-      "o": [
-       "Ecosysteem",
        "Determineertabel",
-       "Mutatie",
-       "Hormoon"
+       "Vaccinatie",
+       "Meiose",
+       "Voedselketen"
       ],
       "c": 2,
-      "u": "Mutatie: een verandering in het DNA."
+      "u": "Het juiste begrip is «Meiose»: reductiedeling die geslachtscellen vormt (halve chromosoomaantal). Anders dan mitose: meiose halveert het chromosoomaantal en zorgt voor variatie (o.a. crossing-over).",
+      "d": 2
+     },
+     {
+      "v": "Welk begrip hoort bij deze omschrijving: \"een verandering in het DNA\"?",
+      "o": [
+       "Mutatie",
+       "Celkern",
+       "Mitochondrion",
+       "Fotosynthese"
+      ],
+      "c": 0,
+      "u": "Het juiste begrip is «Mutatie»: een verandering in het DNA.",
+      "d": 3
      },
      {
       "v": "Wat betekent «Dominant allel»?",
       "o": [
-       "hormoon dat de bloedglucose verlaagt",
+       "organisme dat andere organismen eet",
        "allel dat het fenotype bepaalt, ook heterozygoot",
-       "organel dat het DNA bevat en de cel aanstuurt",
-       "organisme dat dood materiaal afbreekt (bacteriën, schimmels)"
+       "hormoon dat de bloedglucose verlaagt",
+       "gerichte afweer door lymfocyten, met geheugen"
       ],
       "c": 1,
-      "u": "Dominant allel: allel dat het fenotype bepaalt, ook heterozygoot."
+      "u": "«Dominant allel» betekent: allel dat het fenotype bepaalt, ook heterozygoot. Komt al bij één kopie tot uiting; een recessief allel alleen bij twee kopieën (homozygoot).",
+      "d": 1
      },
      {
-      "v": "Welk begrip hoort bij: \"allel dat alleen homozygoot tot uiting komt\"?",
+      "v": "Welk begrip hoort bij deze omschrijving: \"allel dat alleen homozygoot tot uiting komt\"?",
       "o": [
-       "Antilichaam",
-       "Abiotische factor",
-       "Vaccinatie",
-       "Recessief allel"
+       "Aspecifieke afweer",
+       "Recessief allel",
+       "Controle-experiment",
+       "Draagkracht"
       ],
-      "c": 3,
-      "u": "Recessief allel: allel dat alleen homozygoot tot uiting komt."
+      "c": 1,
+      "u": "Het juiste begrip is «Recessief allel»: allel dat alleen homozygoot tot uiting komt. Komt alleen tot uiting als beide allelen recessief zijn (aa); anders overheerst het dominante allel.",
+      "d": 2
      }
     ],
     "oe": [
@@ -4061,123 +4083,134 @@ var VAKKEN = [
      {
       "v": "Wat betekent «Homeostase»?",
       "o": [
-       "organisme dat andere organismen eet",
-       "mate waarin je meet wat je wilt meten",
        "het constant houden van het interne milieu",
-       "een lichaamsvreemde stof die een afweerreactie opwekt"
-      ],
-      "c": 2,
-      "u": "Homeostase: het constant houden van het interne milieu."
-     },
-     {
-      "v": "Welk begrip hoort bij: \"een chemische boodschapper die via het bloed werkt\"?",
-      "o": [
-       "Celmembraan",
-       "Specifieke afweer",
-       "Natuurlijke selectie",
-       "Hormoon"
-      ],
-      "c": 3,
-      "u": "Hormoon: een chemische boodschapper die via het bloed werkt."
-     },
-     {
-      "v": "Wat betekent «Insuline»?",
-      "o": [
-       "een chemische boodschapper die via het bloed werkt",
-       "een zenuwcel die impulsen geleidt",
-       "algemene eerste verdediging (huid, fagocyten)",
-       "hormoon dat de bloedglucose verlaagt"
-      ],
-      "c": 3,
-      "u": "Insuline: hormoon dat de bloedglucose verlaagt."
-     },
-     {
-      "v": "Welk begrip hoort bij: \"een zenuwcel die impulsen geleidt\"?",
-      "o": [
-       "Voedselketen",
-       "Determineertabel",
-       "Mitose",
-       "Neuron"
-      ],
-      "c": 3,
-      "u": "Neuron: een zenuwcel die impulsen geleidt."
-     },
-     {
-      "v": "Wat betekent «Synaps»?",
-      "o": [
-       "de verbinding tussen twee neuronen met neurotransmitters",
-       "gebruik zonder uitputting voor latere generaties",
-       "een toetsbare voorspelling van een verwacht verband",
-       "CO2 + water + licht worden glucose + zuurstof"
+       "CO2 + water + licht worden glucose + zuurstof",
+       "reductiedeling die geslachtscellen vormt (halve chromosoomaantal)",
+       "mate waarin je meet wat je wilt meten"
       ],
       "c": 0,
-      "u": "Synaps: de verbinding tussen twee neuronen met neurotransmitters."
+      "u": "«Homeostase» betekent: het constant houden van het interne milieu.",
+      "d": 1
      },
      {
-      "v": "Welk begrip hoort bij: \"een lichaamsvreemde stof die een afweerreactie opwekt\"?",
+      "v": "Welk begrip hoort bij deze omschrijving: \"een chemische boodschapper die via het bloed werkt\"?",
       "o": [
-       "Celmembraan",
-       "Antigeen",
-       "Voedselketen",
-       "Celkern"
+       "Recessief allel",
+       "Hormoon",
+       "Meiose",
+       "Draagkracht"
       ],
       "c": 1,
-      "u": "Antigeen: een lichaamsvreemde stof die een afweerreactie opwekt."
+      "u": "Het juiste begrip is «Hormoon»: een chemische boodschapper die via het bloed werkt.",
+      "d": 2
+     },
+     {
+      "v": "Welk begrip hoort bij deze omschrijving: \"hormoon dat de bloedglucose verlaagt\"?",
+      "o": [
+       "Antagonisme",
+       "Antilichaam",
+       "Insuline",
+       "Aspecifieke afweer"
+      ],
+      "c": 2,
+      "u": "Het juiste begrip is «Insuline»: hormoon dat de bloedglucose verlaagt.",
+      "d": 3
+     },
+     {
+      "v": "Wat betekent «Neuron»?",
+      "o": [
+       "een sleutel om organismen op kenmerken te benoemen",
+       "de selectief doorlaatbare grens van een cel",
+       "de factor die je meet als gevolg",
+       "een zenuwcel die impulsen geleidt"
+      ],
+      "c": 3,
+      "u": "«Neuron» betekent: een zenuwcel die impulsen geleidt.",
+      "d": 1
+     },
+     {
+      "v": "Welk begrip hoort bij deze omschrijving: \"de verbinding tussen twee neuronen met neurotransmitters\"?",
+      "o": [
+       "Validiteit",
+       "Cel",
+       "Synaps",
+       "Insuline"
+      ],
+      "c": 2,
+      "u": "Het juiste begrip is «Synaps»: de verbinding tussen twee neuronen met neurotransmitters.",
+      "d": 2
+     },
+     {
+      "v": "Welk begrip hoort bij deze omschrijving: \"een lichaamsvreemde stof die een afweerreactie opwekt\"?",
+      "o": [
+       "Antagonisme",
+       "Neuron",
+       "Antigeen",
+       "Aspecifieke afweer"
+      ],
+      "c": 2,
+      "u": "Het juiste begrip is «Antigeen»: een lichaamsvreemde stof die een afweerreactie opwekt.",
+      "d": 3
      },
      {
       "v": "Wat betekent «Antilichaam»?",
       "o": [
-       "mate waarin je meet wat je wilt meten",
-       "het constant houden van het interne milieu",
-       "molecuul met de erfelijke informatie in genen",
-       "eiwit dat specifiek aan een antigeen bindt"
+       "eiwit dat specifiek aan een antigeen bindt",
+       "reductiedeling die geslachtscellen vormt (halve chromosoomaantal)",
+       "een niet-levende invloed (licht, temperatuur, water)",
+       "mate waarin je meet wat je wilt meten"
       ],
-      "c": 3,
-      "u": "Antilichaam: eiwit dat specifiek aan een antigeen bindt."
+      "c": 0,
+      "u": "«Antilichaam» betekent: eiwit dat specifiek aan een antigeen bindt.",
+      "d": 1
      },
      {
-      "v": "Welk begrip hoort bij: \"gerichte afweer door lymfocyten, met geheugen\"?",
+      "v": "Welk begrip hoort bij deze omschrijving: \"gerichte afweer door lymfocyten, met geheugen\"?",
       "o": [
+       "Biodiversiteit",
+       "Producent",
        "Specifieke afweer",
+       "Mitochondrion"
+      ],
+      "c": 2,
+      "u": "Het juiste begrip is «Specifieke afweer»: gerichte afweer door lymfocyten, met geheugen.",
+      "d": 2
+     },
+     {
+      "v": "Welk begrip hoort bij deze omschrijving: \"algemene eerste verdediging (huid, fagocyten)\"?",
+      "o": [
        "Antilichaam",
-       "Fotosynthese",
-       "Natuurlijke selectie"
+       "Aspecifieke afweer",
+       "Neuron",
+       "Antigeen"
       ],
-      "c": 0,
-      "u": "Specifieke afweer: gerichte afweer door lymfocyten, met geheugen."
+      "c": 1,
+      "u": "Het juiste begrip is «Aspecifieke afweer»: algemene eerste verdediging (huid, fagocyten).",
+      "d": 3
      },
      {
-      "v": "Wat betekent «Aspecifieke afweer»?",
+      "v": "Wat betekent «Vaccinatie»?",
       "o": [
-       "allel dat het fenotype bepaalt, ook heterozygoot",
-       "hormoon dat de bloedglucose verlaagt",
-       "organel dat het DNA bevat en de cel aanstuurt",
-       "algemene eerste verdediging (huid, fagocyten)"
-      ],
-      "c": 3,
-      "u": "Aspecifieke afweer: algemene eerste verdediging (huid, fagocyten)."
-     },
-     {
-      "v": "Welk begrip hoort bij: \"inbrengen van onschadelijk antigeen om geheugen op te bouwen\"?",
-      "o": [
-       "Vaccinatie",
-       "Insuline",
-       "Onafhankelijke variabele",
-       "Neuron"
-      ],
-      "c": 0,
-      "u": "Vaccinatie: inbrengen van onschadelijk antigeen om geheugen op te bouwen."
-     },
-     {
-      "v": "Wat betekent «Antagonisme»?",
-      "o": [
-       "een dun plakje materiaal voor onder de microscoop",
-       "mate waarin je meet wat je wilt meten",
-       "algemene eerste verdediging (huid, fagocyten)",
+       "een chemische boodschapper die via het bloed werkt",
+       "inbrengen van onschadelijk antigeen om geheugen op te bouwen",
+       "mate waarin herhaalde metingen dezelfde uitkomst geven",
        "twee hormonen of spieren met een tegengesteld effect"
       ],
-      "c": 3,
-      "u": "Antagonisme: twee hormonen of spieren met een tegengesteld effect."
+      "c": 1,
+      "u": "«Vaccinatie» betekent: inbrengen van onschadelijk antigeen om geheugen op te bouwen.",
+      "d": 1
+     },
+     {
+      "v": "Welk begrip hoort bij deze omschrijving: \"twee hormonen of spieren met een tegengesteld effect\"?",
+      "o": [
+       "Determineertabel",
+       "Antagonisme",
+       "Biotische factor",
+       "Preparaat"
+      ],
+      "c": 1,
+      "u": "Het juiste begrip is «Antagonisme»: twee hormonen of spieren met een tegengesteld effect.",
+      "d": 2
      }
     ],
     "oe": [
@@ -4481,134 +4514,146 @@ var VAKKEN = [
      {
       "v": "Wat betekent «Populatie»?",
       "o": [
-       "twee hormonen of spieren met een tegengesteld effect",
-       "CO2 + water + licht worden glucose + zuurstof",
+       "de maximale populatiegrootte die een gebied aankan",
        "alle individuen van één soort in een gebied",
-       "gewone celdeling met twee identieke dochtercellen"
+       "eiwit dat als biokatalysator een reactie versnelt",
+       "twee hormonen of spieren met een tegengesteld effect"
       ],
-      "c": 2,
-      "u": "Populatie: alle individuen van één soort in een gebied."
+      "c": 1,
+      "u": "«Populatie» betekent: alle individuen van één soort in een gebied.",
+      "d": 1
      },
      {
-      "v": "Welk begrip hoort bij: \"een levensgemeenschap plus de abiotische omgeving\"?",
+      "v": "Welk begrip hoort bij deze omschrijving: \"een levensgemeenschap plus de abiotische omgeving\"?",
       "o": [
-       "Natuurlijke selectie",
-       "Vaccinatie",
-       "Celademhaling",
+       "Meiose",
+       "Abiotische factor",
+       "Fotosynthese",
        "Ecosysteem"
       ],
       "c": 3,
-      "u": "Ecosysteem: een levensgemeenschap plus de abiotische omgeving."
+      "u": "Het juiste begrip is «Ecosysteem»: een levensgemeenschap plus de abiotische omgeving.",
+      "d": 2
      },
      {
-      "v": "Wat betekent «Biotische factor»?",
-      "o": [
-       "een invloed van levende organismen",
-       "twee hormonen of spieren met een tegengesteld effect",
-       "een dun plakje materiaal voor onder de microscoop",
-       "mate waarin je meet wat je wilt meten"
-      ],
-      "c": 0,
-      "u": "Biotische factor: een invloed van levende organismen."
-     },
-     {
-      "v": "Welk begrip hoort bij: \"een niet-levende invloed (licht, temperatuur, water)\"?",
+      "v": "Welk begrip hoort bij deze omschrijving: \"een invloed van levende organismen\"?",
       "o": [
        "Biotische factor",
-       "Mitochondrion",
-       "Abiotische factor",
-       "Insuline"
+       "Natuurlijke selectie",
+       "Draagkracht",
+       "Consument"
       ],
-      "c": 2,
-      "u": "Abiotische factor: een niet-levende invloed (licht, temperatuur, water)."
+      "c": 0,
+      "u": "Het juiste begrip is «Biotische factor»: een invloed van levende organismen.",
+      "d": 3
      },
      {
-      "v": "Wat betekent «Voedselketen»?",
+      "v": "Wat betekent «Abiotische factor»?",
       "o": [
-       "gerichte afweer door lymfocyten, met geheugen",
-       "een toetsbare voorspelling van een verwacht verband",
-       "de selectief doorlaatbare grens van een cel",
-       "een reeks van eten en gegeten worden"
+       "een niet-levende invloed (licht, temperatuur, water)",
+       "de verscheidenheid aan soorten en genen",
+       "een invloed van levende organismen",
+       "allel dat het fenotype bepaalt, ook heterozygoot"
       ],
-      "c": 3,
-      "u": "Voedselketen: een reeks van eten en gegeten worden."
+      "c": 0,
+      "u": "«Abiotische factor» betekent: een niet-levende invloed (licht, temperatuur, water).",
+      "d": 1
      },
      {
-      "v": "Welk begrip hoort bij: \"organisme dat zelf organische stof maakt (planten)\"?",
+      "v": "Welk begrip hoort bij deze omschrijving: \"een reeks van eten en gegeten worden\"?",
       "o": [
-       "Celmembraan",
+       "Voedselketen",
+       "Populatie",
+       "Controle-experiment",
+       "Draagkracht"
+      ],
+      "c": 0,
+      "u": "Het juiste begrip is «Voedselketen»: een reeks van eten en gegeten worden.",
+      "d": 2
+     },
+     {
+      "v": "Welk begrip hoort bij deze omschrijving: \"organisme dat zelf organische stof maakt (planten)\"?",
+      "o": [
        "Producent",
-       "Afhankelijke variabele",
-       "Determineertabel"
+       "Populatie",
+       "Reducent",
+       "Biodiversiteit"
       ],
-      "c": 1,
-      "u": "Producent: organisme dat zelf organische stof maakt (planten)."
+      "c": 0,
+      "u": "Het juiste begrip is «Producent»: organisme dat zelf organische stof maakt (planten). Maakt zelf organische stof (fotosynthese); een consument eet anderen, een reducent breekt dood materiaal af.",
+      "d": 3
      },
      {
       "v": "Wat betekent «Consument»?",
       "o": [
-       "de verbinding tussen twee neuronen met neurotransmitters",
        "organisme dat andere organismen eet",
-       "allel dat alleen homozygoot tot uiting komt",
-       "inbrengen van onschadelijk antigeen om geheugen op te bouwen"
+       "het constant houden van het interne milieu",
+       "molecuul met de erfelijke informatie in genen",
+       "een sleutel om organismen op kenmerken te benoemen"
       ],
-      "c": 1,
-      "u": "Consument: organisme dat andere organismen eet."
+      "c": 0,
+      "u": "«Consument» betekent: organisme dat andere organismen eet.",
+      "d": 1
      },
      {
-      "v": "Welk begrip hoort bij: \"organisme dat dood materiaal afbreekt (bacteriën, schimmels)\"?",
+      "v": "Welk begrip hoort bij deze omschrijving: \"organisme dat dood materiaal afbreekt (bacteriën, schimmels)\"?",
       "o": [
-       "Cel",
-       "Specifieke afweer",
-       "Ecosysteem",
+       "Abiotische factor",
+       "Homeostase",
+       "Celkern",
        "Reducent"
       ],
       "c": 3,
-      "u": "Reducent: organisme dat dood materiaal afbreekt (bacteriën, schimmels)."
+      "u": "Het juiste begrip is «Reducent»: organisme dat dood materiaal afbreekt (bacteriën, schimmels).",
+      "d": 2
      },
      {
-      "v": "Wat betekent «Draagkracht»?",
+      "v": "Welk begrip hoort bij deze omschrijving: \"de maximale populatiegrootte die een gebied aankan\"?",
       "o": [
-       "de factor die je meet als gevolg",
-       "energiecentrale die aerobe celademhaling uitvoert (ATP)",
-       "de maximale populatiegrootte die een gebied aankan",
-       "een chemische boodschapper die via het bloed werkt"
-      ],
-      "c": 2,
-      "u": "Draagkracht: de maximale populatiegrootte die een gebied aankan."
-     },
-     {
-      "v": "Welk begrip hoort bij: \"best aangepaste individuen planten zich meer voort\"?",
-      "o": [
-       "Enzym",
-       "Homeostase",
-       "Natuurlijke selectie",
-       "Biotische factor"
-      ],
-      "c": 2,
-      "u": "Natuurlijke selectie: best aangepaste individuen planten zich meer voort."
-     },
-     {
-      "v": "Wat betekent «Biodiversiteit»?",
-      "o": [
-       "een toetsbare voorspelling van een verwacht verband",
-       "de verscheidenheid aan soorten en genen",
-       "organisme dat andere organismen eet",
-       "mate waarin je meet wat je wilt meten"
+       "Abiotische factor",
+       "Draagkracht",
+       "Consument",
+       "Producent"
       ],
       "c": 1,
-      "u": "Biodiversiteit: de verscheidenheid aan soorten en genen."
+      "u": "Het juiste begrip is «Draagkracht»: de maximale populatiegrootte die een gebied aankan.",
+      "d": 3
      },
      {
-      "v": "Welk begrip hoort bij: \"gebruik zonder uitputting voor latere generaties\"?",
+      "v": "Wat betekent «Natuurlijke selectie»?",
       "o": [
-       "Natuurlijke selectie",
+       "de selectief doorlaatbare grens van een cel",
+       "een dun plakje materiaal voor onder de microscoop",
+       "een proef zonder de onderzochte factor, als vergelijkingspunt",
+       "best aangepaste individuen planten zich meer voort"
+      ],
+      "c": 3,
+      "u": "«Natuurlijke selectie» betekent: best aangepaste individuen planten zich meer voort.",
+      "d": 1
+     },
+     {
+      "v": "Welk begrip hoort bij deze omschrijving: \"de verscheidenheid aan soorten en genen\"?",
+      "o": [
+       "Abiotische factor",
        "Biodiversiteit",
-       "Aspecifieke afweer",
+       "Hypothese",
+       "Voedselketen"
+      ],
+      "c": 1,
+      "u": "Het juiste begrip is «Biodiversiteit»: de verscheidenheid aan soorten en genen.",
+      "d": 2
+     },
+     {
+      "v": "Welk begrip hoort bij deze omschrijving: \"gebruik zonder uitputting voor latere generaties\"?",
+      "o": [
+       "Populatie",
+       "Natuurlijke selectie",
+       "Consument",
        "Duurzaamheid"
       ],
       "c": 3,
-      "u": "Duurzaamheid: gebruik zonder uitputting voor latere generaties."
+      "u": "Het juiste begrip is «Duurzaamheid»: gebruik zonder uitputting voor latere generaties.",
+      "d": 3
      }
     ],
     "oe": [
@@ -4939,6 +4984,102 @@ var VAKKEN = [
       ],
       "c": 1,
       "u": "Veiligheidsbril beschermt de ogen, het gevoeligste orgaan in het lab. Spatten van zuren, logen of oplosmiddelen kunnen permanent oogletsel veroorzaken."
+     },
+     {
+      "v": "Wat betekent «Mol»?",
+      "o": [
+       "rekeneenheid voor hoeveelheid stof (6,02·10²³ deeltjes)",
+       "reactie met zuurstof waarbij CO2 en water ontstaan",
+       "het opnemen van elektronen",
+       "een stof die H⁺-ionen afstaat"
+      ],
+      "c": 0,
+      "u": "«Mol» betekent: rekeneenheid voor hoeveelheid stof (6,02·10²³ deeltjes).",
+      "d": 1
+     },
+     {
+      "v": "Welk begrip hoort bij deze omschrijving: \"de massa van één mol stof (g/mol)\"?",
+      "o": [
+       "Molaire massa",
+       "Grondstof",
+       "Emissie",
+       "Nauwkeurigheid"
+      ],
+      "c": 0,
+      "u": "Het juiste begrip is «Molaire massa»: de massa van één mol stof (g/mol).",
+      "d": 2
+     },
+     {
+      "v": "Welk begrip hoort bij deze omschrijving: \"hoeveelheid opgeloste stof per liter (mol/L)\"?",
+      "o": [
+       "Concentratie",
+       "Controle-experiment",
+       "Mol",
+       "Zuivere stof"
+      ],
+      "c": 0,
+      "u": "Het juiste begrip is «Concentratie»: hoeveelheid opgeloste stof per liter (mol/L).",
+      "d": 3
+     },
+     {
+      "v": "Wat betekent «Hypothese»?",
+      "o": [
+       "een stof die H⁺-ionen afstaat",
+       "een toetsbare voorspelling",
+       "verbinding uit een zuur en een alcohol (geurstof)",
+       "een geladen atoom of groep atomen"
+      ],
+      "c": 1,
+      "u": "«Hypothese» betekent: een toetsbare voorspelling.",
+      "d": 1
+     },
+     {
+      "v": "Welk begrip hoort bij deze omschrijving: \"een proef zonder de onderzochte factor, als referentie\"?",
+      "o": [
+       "Zuivere stof",
+       "Controle-experiment",
+       "Duurzaamheid",
+       "Metaalbinding"
+      ],
+      "c": 1,
+      "u": "Het juiste begrip is «Controle-experiment»: een proef zonder de onderzochte factor, als referentie.",
+      "d": 2
+     },
+     {
+      "v": "Welk begrip hoort bij deze omschrijving: \"symbool dat het gevaar van een stof aangeeft\"?",
+      "o": [
+       "GHS-pictogram",
+       "Mol",
+       "Controle-experiment",
+       "Zuivere stof"
+      ],
+      "c": 0,
+      "u": "Het juiste begrip is «GHS-pictogram»: symbool dat het gevaar van een stof aangeeft.",
+      "d": 3
+     },
+     {
+      "v": "Wat betekent «Nauwkeurigheid»?",
+      "o": [
+       "de massa van één mol stof (g/mol)",
+       "milieubeoordeling van grondstof tot afval",
+       "een reactie die warmte afgeeft",
+       "hoe dicht een meting bij de werkelijke waarde ligt"
+      ],
+      "c": 3,
+      "u": "«Nauwkeurigheid» betekent: hoe dicht een meting bij de werkelijke waarde ligt.",
+      "d": 1
+     },
+     {
+      "v": "Welk begrip hoort bij deze omschrijving: \"een stof met maar één soort deeltjes\"?",
+      "o": [
+       "Ion",
+       "Atoombinding",
+       "Recycling",
+       "Zuivere stof"
+      ],
+      "c": 3,
+      "u": "Het juiste begrip is «Zuivere stof»: een stof met maar één soort deeltjes.",
+      "d": 2
      }
     ],
     "oe": [
@@ -4977,6 +5118,40 @@ var VAKKEN = [
       ],
       "c": 0,
       "u": "(a) Fout: water aan zuur voegen. Correct: ALTIJD zuur aan water toevoegen. Reden: de oplossing van zuur in water is exotherm. Bij kleine hoeveelheid water op geconcentreerd zuur verhit het mengsel explosief en kan het spatten. Bij zuur in groot volume water wordt de warmte gespreid.\n(b) Geconcentreerd HCl: corrosie-pictogram (bijtend voor huid, ogen en slijmvliezen) + uitroepteken (irriterend, dampen prikkelen luchtwegen). Werken in afzuigkast is verplicht."
+     }
+    ],
+    "begrippen": [
+     {
+      "t": "Mol",
+      "d": "rekeneenheid voor hoeveelheid stof (6,02·10²³ deeltjes)"
+     },
+     {
+      "t": "Molaire massa",
+      "d": "de massa van één mol stof (g/mol)"
+     },
+     {
+      "t": "Concentratie",
+      "d": "hoeveelheid opgeloste stof per liter (mol/L)"
+     },
+     {
+      "t": "Hypothese",
+      "d": "een toetsbare voorspelling"
+     },
+     {
+      "t": "Controle-experiment",
+      "d": "een proef zonder de onderzochte factor, als referentie"
+     },
+     {
+      "t": "GHS-pictogram",
+      "d": "symbool dat het gevaar van een stof aangeeft"
+     },
+     {
+      "t": "Nauwkeurigheid",
+      "d": "hoe dicht een meting bij de werkelijke waarde ligt"
+     },
+     {
+      "t": "Zuivere stof",
+      "d": "een stof met maar één soort deeltjes"
      }
     ]
    },
@@ -5174,6 +5349,114 @@ var VAKKEN = [
       ],
       "c": 0,
       "u": "Grotere moleculen hebben meer elektronen en een groter polariseerbaar elektronenwolk → sterkere tijdelijke dipolen → sterkere Van der Waalskrachten → hoger kookpunt."
+     },
+     {
+      "v": "Wat betekent «Element»?",
+      "o": [
+       "een gas dat warmte vasthoudt, zoals CO2",
+       "een stof met maar één soort deeltjes",
+       "een stof die uit één soort atomen bestaat",
+       "symbool dat het gevaar van een stof aangeeft"
+      ],
+      "c": 2,
+      "u": "«Element» betekent: een stof die uit één soort atomen bestaat.",
+      "d": 1
+     },
+     {
+      "v": "Welk begrip hoort bij deze omschrijving: \"een groepje gebonden atomen\"?",
+      "o": [
+       "Alcohol",
+       "Molecuul",
+       "Hypothese",
+       "Verbranding"
+      ],
+      "c": 1,
+      "u": "Het juiste begrip is «Molecuul»: een groepje gebonden atomen.",
+      "d": 2
+     },
+     {
+      "v": "Welk begrip hoort bij deze omschrijving: \"een geladen atoom of groep atomen\"?",
+      "o": [
+       "Element",
+       "Molecuulformule",
+       "Atoombinding",
+       "Ion"
+      ],
+      "c": 3,
+      "u": "Het juiste begrip is «Ion»: een geladen atoom of groep atomen.",
+      "d": 3
+     },
+     {
+      "v": "Wat betekent «Ionbinding»?",
+      "o": [
+       "reactieve groep die de eigenschappen bepaalt",
+       "verzadigde koolwaterstof met enkele bindingen (CnH2n+2)",
+       "een proef zonder de onderzochte factor, als referentie",
+       "binding tussen tegengesteld geladen ionen"
+      ],
+      "c": 3,
+      "u": "«Ionbinding» betekent: binding tussen tegengesteld geladen ionen.",
+      "d": 1
+     },
+     {
+      "v": "Welk begrip hoort bij deze omschrijving: \"binding met een gedeeld elektronenpaar tussen niet-metalen\"?",
+      "o": [
+       "Redoxreactie",
+       "Base",
+       "Atoombinding",
+       "Grondstof"
+      ],
+      "c": 2,
+      "u": "Het juiste begrip is «Atoombinding»: binding met een gedeeld elektronenpaar tussen niet-metalen.",
+      "d": 2
+     },
+     {
+      "v": "Welk begrip hoort bij deze omschrijving: \"geeft het aantal atomen per soort in een molecuul\"?",
+      "o": [
+       "Ion",
+       "Molecuulformule",
+       "Oplossing",
+       "Molecuul"
+      ],
+      "c": 1,
+      "u": "Het juiste begrip is «Molecuulformule»: geeft het aantal atomen per soort in een molecuul.",
+      "d": 3
+     },
+     {
+      "v": "Wat betekent «Mengsel»?",
+      "o": [
+       "milieubeoordeling van grondstof tot afval",
+       "een reactie die warmte afgeeft",
+       "het afstaan van elektronen",
+       "een combinatie van meerdere stoffen"
+      ],
+      "c": 3,
+      "u": "«Mengsel» betekent: een combinatie van meerdere stoffen.",
+      "d": 1
+     },
+     {
+      "v": "Welk begrip hoort bij deze omschrijving: \"een homogeen mengsel van opgeloste stof en oplosmiddel\"?",
+      "o": [
+       "Additiereactie",
+       "Oplossing",
+       "Zuur",
+       "pH"
+      ],
+      "c": 1,
+      "u": "Het juiste begrip is «Oplossing»: een homogeen mengsel van opgeloste stof en oplosmiddel.",
+      "d": 2
+     },
+     {
+      "v": "Welk begrip hoort bij deze omschrijving: \"positieve ionen in een zee van vrije elektronen\"?",
+      "o": [
+       "Molecuulformule",
+       "Ion",
+       "Metaalbinding",
+       "Mengsel"
+      ],
+      "c": 2,
+      "u": "Het juiste begrip is «Metaalbinding»: positieve ionen in een zee van vrije elektronen.",
+      "d": 3
      }
     ],
     "oe": [
@@ -5216,6 +5499,44 @@ var VAKKEN = [
       ],
       "c": 0,
       "u": "Ionbinding: overdracht van elektronen tussen metaal en niet-metaal. Voorbeeld: NaCl.\nApolair covalent: gelijke elektronegativiteit, gedeeld elektronenpaar. Voorbeeld: H2, Cl2.\nPolair covalent: ongelijke elektronegativiteit, verschoven ladingspaar. Voorbeeld: H2O, HCl."
+     }
+    ],
+    "begrippen": [
+     {
+      "t": "Element",
+      "d": "een stof die uit één soort atomen bestaat"
+     },
+     {
+      "t": "Molecuul",
+      "d": "een groepje gebonden atomen"
+     },
+     {
+      "t": "Ion",
+      "d": "een geladen atoom of groep atomen"
+     },
+     {
+      "t": "Ionbinding",
+      "d": "binding tussen tegengesteld geladen ionen"
+     },
+     {
+      "t": "Atoombinding",
+      "d": "binding met een gedeeld elektronenpaar tussen niet-metalen"
+     },
+     {
+      "t": "Molecuulformule",
+      "d": "geeft het aantal atomen per soort in een molecuul"
+     },
+     {
+      "t": "Mengsel",
+      "d": "een combinatie van meerdere stoffen"
+     },
+     {
+      "t": "Oplossing",
+      "d": "een homogeen mengsel van opgeloste stof en oplosmiddel"
+     },
+     {
+      "t": "Metaalbinding",
+      "d": "positieve ionen in een zee van vrije elektronen"
      }
     ]
    },
@@ -5421,6 +5742,162 @@ var VAKKEN = [
       ],
       "c": 0,
       "u": "Amfoteer: water kan H⁺ afstaan (zuur) of opnemen (base). Aminozuren zijn ook amfoteer: ze bezitten zowel een zure COOH als een basische NH₂ groep."
+     },
+     {
+      "v": "Wat betekent «Chemische reactie»?",
+      "o": [
+       "het opnemen van elektronen",
+       "gebruik zonder uitputting voor de toekomst",
+       "een gas dat warmte vasthoudt, zoals CO2",
+       "omzetting van stoffen tot nieuwe stoffen"
+      ],
+      "c": 3,
+      "u": "«Chemische reactie» betekent: omzetting van stoffen tot nieuwe stoffen.",
+      "d": 1
+     },
+     {
+      "v": "Welk begrip hoort bij deze omschrijving: \"kloppende weergave met formules en coëfficiënten\"?",
+      "o": [
+       "Mengsel",
+       "Reactievergelijking",
+       "Ion",
+       "Metaalbinding"
+      ],
+      "c": 1,
+      "u": "Het juiste begrip is «Reactievergelijking»: kloppende weergave met formules en coëfficiënten.",
+      "d": 2
+     },
+     {
+      "v": "Welk begrip hoort bij deze omschrijving: \"getal dat de molverhouding in een reactie aangeeft\"?",
+      "o": [
+       "Reductie",
+       "Coëfficiënt",
+       "Chemische reactie",
+       "Oxidatie"
+      ],
+      "c": 1,
+      "u": "Het juiste begrip is «Coëfficiënt»: getal dat de molverhouding in een reactie aangeeft.",
+      "d": 3
+     },
+     {
+      "v": "Wat betekent «Exotherm»?",
+      "o": [
+       "een reactie die warmte afgeeft",
+       "het hergebruiken van materialen",
+       "stoffen met dezelfde molecuulformule maar andere structuur",
+       "verbinding uit een zuur en een alcohol (geurstof)"
+      ],
+      "c": 0,
+      "u": "«Exotherm» betekent: een reactie die warmte afgeeft. Tegenovergestelde van endotherm: exotherm geeft warmte áf (ΔH < 0).",
+      "d": 1
+     },
+     {
+      "v": "Welk begrip hoort bij deze omschrijving: \"een reactie die warmte opneemt\"?",
+      "o": [
+       "Endotherm",
+       "Exotherm",
+       "Zuivere stof",
+       "Levenscyclusanalyse"
+      ],
+      "c": 0,
+      "u": "Het juiste begrip is «Endotherm»: een reactie die warmte opneemt. Tegenovergestelde van exotherm: endotherm neemt warmte óp (ΔH > 0).",
+      "d": 2
+     },
+     {
+      "v": "Welk begrip hoort bij deze omschrijving: \"een stof die H⁺-ionen afstaat\"?",
+      "o": [
+       "Zuur",
+       "Redoxreactie",
+       "pH",
+       "Chemische reactie"
+      ],
+      "c": 0,
+      "u": "Het juiste begrip is «Zuur»: een stof die H⁺-ionen afstaat. Volgens Brønsted staat een zuur H⁺ af; een base neemt H⁺ op.",
+      "d": 3
+     },
+     {
+      "v": "Wat betekent «Base»?",
+      "o": [
+       "atomen worden aan een dubbele binding toegevoegd",
+       "verzadigde koolwaterstof met enkele bindingen (CnH2n+2)",
+       "een stof die H⁺-ionen opneemt",
+       "een atoom of groep wordt vervangen door een andere"
+      ],
+      "c": 2,
+      "u": "«Base» betekent: een stof die H⁺-ionen opneemt. Volgens Brønsted neemt een base H⁺ op; een zuur staat H⁺ af.",
+      "d": 1
+     },
+     {
+      "v": "Welk begrip hoort bij deze omschrijving: \"een maat voor de zuurgraad van een oplossing\"?",
+      "o": [
+       "Emissie",
+       "Molecuul",
+       "pH",
+       "Oplossing"
+      ],
+      "c": 2,
+      "u": "Het juiste begrip is «pH»: een maat voor de zuurgraad van een oplossing.",
+      "d": 2
+     },
+     {
+      "v": "Welk begrip hoort bij deze omschrijving: \"reactie van een zuur met een base tot zout en water\"?",
+      "o": [
+       "Zuur",
+       "Chemische reactie",
+       "Katalysator",
+       "Neutralisatie"
+      ],
+      "c": 3,
+      "u": "Het juiste begrip is «Neutralisatie»: reactie van een zuur met een base tot zout en water.",
+      "d": 3
+     },
+     {
+      "v": "Wat betekent «Redoxreactie»?",
+      "o": [
+       "stof die een reactie versnelt zonder verbruikt te worden",
+       "een stof die H⁺-ionen opneemt",
+       "een reactie met overdracht van elektronen",
+       "reactie met zuurstof waarbij CO2 en water ontstaan"
+      ],
+      "c": 2,
+      "u": "«Redoxreactie» betekent: een reactie met overdracht van elektronen.",
+      "d": 1
+     },
+     {
+      "v": "Welk begrip hoort bij deze omschrijving: \"het afstaan van elektronen\"?",
+      "o": [
+       "Oxidatie",
+       "Grondstof",
+       "pH",
+       "Controle-experiment"
+      ],
+      "c": 0,
+      "u": "Het juiste begrip is «Oxidatie»: het afstaan van elektronen. Ezelsbruggetje OIL RIG: Oxidation Is Loss, Reduction Is Gain (van elektronen).",
+      "d": 2
+     },
+     {
+      "v": "Welk begrip hoort bij deze omschrijving: \"het opnemen van elektronen\"?",
+      "o": [
+       "Redoxreactie",
+       "Exotherm",
+       "Endotherm",
+       "Reductie"
+      ],
+      "c": 3,
+      "u": "Het juiste begrip is «Reductie»: het opnemen van elektronen. Ezelsbruggetje OIL RIG: Reduction Is Gain van elektronen — het tegenovergestelde van oxidatie.",
+      "d": 3
+     },
+     {
+      "v": "Wat betekent «Katalysator»?",
+      "o": [
+       "brandstof gemaakt uit biomassa",
+       "symbool dat het gevaar van een stof aangeeft",
+       "een stof met maar één soort deeltjes",
+       "stof die een reactie versnelt zonder verbruikt te worden"
+      ],
+      "c": 3,
+      "u": "«Katalysator» betekent: stof die een reactie versnelt zonder verbruikt te worden.",
+      "d": 1
      }
     ],
     "oe": [
@@ -5503,6 +5980,60 @@ var VAKKEN = [
       ],
       "c": 0,
       "u": "n(NaOH) = 0,1 * 0,020 = 0,002 mol\nHCl + NaOH -> NaCl + H2O (1:1)\nn(HCl) = 0,002 mol\nC(HCl) = 0,002 / 0,025 = 0,08 mol/L"
+     }
+    ],
+    "begrippen": [
+     {
+      "t": "Chemische reactie",
+      "d": "omzetting van stoffen tot nieuwe stoffen"
+     },
+     {
+      "t": "Reactievergelijking",
+      "d": "kloppende weergave met formules en coëfficiënten"
+     },
+     {
+      "t": "Coëfficiënt",
+      "d": "getal dat de molverhouding in een reactie aangeeft"
+     },
+     {
+      "t": "Exotherm",
+      "d": "een reactie die warmte afgeeft"
+     },
+     {
+      "t": "Endotherm",
+      "d": "een reactie die warmte opneemt"
+     },
+     {
+      "t": "Zuur",
+      "d": "een stof die H⁺-ionen afstaat"
+     },
+     {
+      "t": "Base",
+      "d": "een stof die H⁺-ionen opneemt"
+     },
+     {
+      "t": "pH",
+      "d": "een maat voor de zuurgraad van een oplossing"
+     },
+     {
+      "t": "Neutralisatie",
+      "d": "reactie van een zuur met een base tot zout en water"
+     },
+     {
+      "t": "Redoxreactie",
+      "d": "een reactie met overdracht van elektronen"
+     },
+     {
+      "t": "Oxidatie",
+      "d": "het afstaan van elektronen"
+     },
+     {
+      "t": "Reductie",
+      "d": "het opnemen van elektronen"
+     },
+     {
+      "t": "Katalysator",
+      "d": "stof die een reactie versnelt zonder verbruikt te worden"
      }
     ]
    },
@@ -5695,6 +6226,126 @@ var VAKKEN = [
       ],
       "c": 1,
       "u": "In de homologe reeks nemen de Van der Waalskrachten toe met het aantal elektronen (groter molecuul). Meer energie nodig om te verdampen → hoger kookpunt. Alkanen vormen geen waterstofbruggen — dat doen alcoholen wel."
+     },
+     {
+      "v": "Wat betekent «Alkaan»?",
+      "o": [
+       "uitgangsmateriaal voor productie",
+       "een stof met maar één soort deeltjes",
+       "verzadigde koolwaterstof met enkele bindingen (CnH2n+2)",
+       "een groepje gebonden atomen"
+      ],
+      "c": 2,
+      "u": "«Alkaan» betekent: verzadigde koolwaterstof met enkele bindingen (CnH2n+2).",
+      "d": 1
+     },
+     {
+      "v": "Welk begrip hoort bij deze omschrijving: \"koolwaterstof met een dubbele C=C-binding\"?",
+      "o": [
+       "Atoombinding",
+       "Grondstof",
+       "Alkeen",
+       "Zuivere stof"
+      ],
+      "c": 2,
+      "u": "Het juiste begrip is «Alkeen»: koolwaterstof met een dubbele C=C-binding.",
+      "d": 2
+     },
+     {
+      "v": "Welk begrip hoort bij deze omschrijving: \"reactieve groep die de eigenschappen bepaalt\"?",
+      "o": [
+       "Alkaan",
+       "Substitutiereactie",
+       "Verbranding",
+       "Functionele groep"
+      ],
+      "c": 3,
+      "u": "Het juiste begrip is «Functionele groep»: reactieve groep die de eigenschappen bepaalt.",
+      "d": 3
+     },
+     {
+      "v": "Wat betekent «Isomeren»?",
+      "o": [
+       "omzetting van stoffen tot nieuwe stoffen",
+       "een stof die uit één soort atomen bestaat",
+       "een geladen atoom of groep atomen",
+       "stoffen met dezelfde molecuulformule maar andere structuur"
+      ],
+      "c": 3,
+      "u": "«Isomeren» betekent: stoffen met dezelfde molecuulformule maar andere structuur.",
+      "d": 1
+     },
+     {
+      "v": "Welk begrip hoort bij deze omschrijving: \"atomen worden aan een dubbele binding toegevoegd\"?",
+      "o": [
+       "Coëfficiënt",
+       "Atoombinding",
+       "GHS-pictogram",
+       "Additiereactie"
+      ],
+      "c": 3,
+      "u": "Het juiste begrip is «Additiereactie»: atomen worden aan een dubbele binding toegevoegd.",
+      "d": 2
+     },
+     {
+      "v": "Welk begrip hoort bij deze omschrijving: \"een atoom of groep wordt vervangen door een andere\"?",
+      "o": [
+       "Verbranding",
+       "Isomeren",
+       "Substitutiereactie",
+       "Alkaan"
+      ],
+      "c": 2,
+      "u": "Het juiste begrip is «Substitutiereactie»: een atoom of groep wordt vervangen door een andere.",
+      "d": 3
+     },
+     {
+      "v": "Wat betekent «Polymeer»?",
+      "o": [
+       "stof die een reactie versnelt zonder verbruikt te worden",
+       "een geladen atoom of groep atomen",
+       "een groot molecuul opgebouwd uit vele monomeren",
+       "brandstof gemaakt uit biomassa"
+      ],
+      "c": 2,
+      "u": "«Polymeer» betekent: een groot molecuul opgebouwd uit vele monomeren.",
+      "d": 1
+     },
+     {
+      "v": "Welk begrip hoort bij deze omschrijving: \"reactie met zuurstof waarbij CO2 en water ontstaan\"?",
+      "o": [
+       "Isomeren",
+       "Biobrandstof",
+       "GHS-pictogram",
+       "Verbranding"
+      ],
+      "c": 3,
+      "u": "Het juiste begrip is «Verbranding»: reactie met zuurstof waarbij CO2 en water ontstaan.",
+      "d": 2
+     },
+     {
+      "v": "Welk begrip hoort bij deze omschrijving: \"een koolstofverbinding met een OH-groep\"?",
+      "o": [
+       "Isomeren",
+       "Verbranding",
+       "Ester",
+       "Alcohol"
+      ],
+      "c": 3,
+      "u": "Het juiste begrip is «Alcohol»: een koolstofverbinding met een OH-groep.",
+      "d": 3
+     },
+     {
+      "v": "Wat betekent «Ester»?",
+      "o": [
+       "koolwaterstof met een dubbele C=C-binding",
+       "een gas dat warmte vasthoudt, zoals CO2",
+       "verbinding uit een zuur en een alcohol (geurstof)",
+       "binding tussen tegengesteld geladen ionen"
+      ],
+      "c": 2,
+      "u": "«Ester» betekent: verbinding uit een zuur en een alcohol (geurstof).",
+      "d": 1
      }
     ],
     "oe": [
@@ -5757,6 +6408,48 @@ var VAKKEN = [
       ],
       "c": 0,
       "u": "(a) Additie: monomeren met dubbele binding koppelen zonder afvalproduct. Condensatie: monomeren reageren met afsplitsing van klein molecuul (bijv. water).\n(b) Additie: polyetheen (etheen-monomeren). Condensatie: nylon (diaminen + dicarbonzuren, water afsplitsing)."
+     }
+    ],
+    "begrippen": [
+     {
+      "t": "Alkaan",
+      "d": "verzadigde koolwaterstof met enkele bindingen (CnH2n+2)"
+     },
+     {
+      "t": "Alkeen",
+      "d": "koolwaterstof met een dubbele C=C-binding"
+     },
+     {
+      "t": "Functionele groep",
+      "d": "reactieve groep die de eigenschappen bepaalt"
+     },
+     {
+      "t": "Isomeren",
+      "d": "stoffen met dezelfde molecuulformule maar andere structuur"
+     },
+     {
+      "t": "Additiereactie",
+      "d": "atomen worden aan een dubbele binding toegevoegd"
+     },
+     {
+      "t": "Substitutiereactie",
+      "d": "een atoom of groep wordt vervangen door een andere"
+     },
+     {
+      "t": "Polymeer",
+      "d": "een groot molecuul opgebouwd uit vele monomeren"
+     },
+     {
+      "t": "Verbranding",
+      "d": "reactie met zuurstof waarbij CO2 en water ontstaan"
+     },
+     {
+      "t": "Alcohol",
+      "d": "een koolstofverbinding met een OH-groep"
+     },
+     {
+      "t": "Ester",
+      "d": "verbinding uit een zuur en een alcohol (geurstof)"
      }
     ]
    },
@@ -5948,6 +6641,102 @@ var VAKKEN = [
       ],
       "c": 1,
       "u": "Osmose: hoge zout- of suikerconcentratie in het voedsel → waterconcentratie buiten bacteriën is lager dan erin → water stroomt de cel uit → bacteriën plasmolyseren (krimpen) en sterven. Pasteurisatie werkt via hitte, niet osmose."
+     },
+     {
+      "v": "Wat betekent «Duurzaamheid»?",
+      "o": [
+       "de massa van één mol stof (g/mol)",
+       "verbinding uit een zuur en een alcohol (geurstof)",
+       "gebruik zonder uitputting voor de toekomst",
+       "brandstof gemaakt uit biomassa"
+      ],
+      "c": 2,
+      "u": "«Duurzaamheid» betekent: gebruik zonder uitputting voor de toekomst.",
+      "d": 1
+     },
+     {
+      "v": "Welk begrip hoort bij deze omschrijving: \"het hergebruiken van materialen\"?",
+      "o": [
+       "Zuivere stof",
+       "Recycling",
+       "Ion",
+       "Circulaire economie"
+      ],
+      "c": 1,
+      "u": "Het juiste begrip is «Recycling»: het hergebruiken van materialen.",
+      "d": 2
+     },
+     {
+      "v": "Welk begrip hoort bij deze omschrijving: \"een gas dat warmte vasthoudt, zoals CO2\"?",
+      "o": [
+       "Grondstof",
+       "Duurzaamheid",
+       "Broeikasgas",
+       "Emissie"
+      ],
+      "c": 2,
+      "u": "Het juiste begrip is «Broeikasgas»: een gas dat warmte vasthoudt, zoals CO2.",
+      "d": 3
+     },
+     {
+      "v": "Wat betekent «Biobrandstof»?",
+      "o": [
+       "een combinatie van meerdere stoffen",
+       "symbool dat het gevaar van een stof aangeeft",
+       "de uitstoot van stoffen naar het milieu",
+       "brandstof gemaakt uit biomassa"
+      ],
+      "c": 3,
+      "u": "«Biobrandstof» betekent: brandstof gemaakt uit biomassa.",
+      "d": 1
+     },
+     {
+      "v": "Welk begrip hoort bij deze omschrijving: \"milieubeoordeling van grondstof tot afval\"?",
+      "o": [
+       "Levenscyclusanalyse",
+       "Functionele groep",
+       "Duurzaamheid",
+       "Broeikasgas"
+      ],
+      "c": 0,
+      "u": "Het juiste begrip is «Levenscyclusanalyse»: milieubeoordeling van grondstof tot afval.",
+      "d": 2
+     },
+     {
+      "v": "Welk begrip hoort bij deze omschrijving: \"uitgangsmateriaal voor productie\"?",
+      "o": [
+       "Duurzaamheid",
+       "Biobrandstof",
+       "Grondstof",
+       "Levenscyclusanalyse"
+      ],
+      "c": 2,
+      "u": "Het juiste begrip is «Grondstof»: uitgangsmateriaal voor productie.",
+      "d": 3
+     },
+     {
+      "v": "Wat betekent «Emissie»?",
+      "o": [
+       "de uitstoot van stoffen naar het milieu",
+       "een stof die uit één soort atomen bestaat",
+       "koolwaterstof met een dubbele C=C-binding",
+       "het afstaan van elektronen"
+      ],
+      "c": 0,
+      "u": "«Emissie» betekent: de uitstoot van stoffen naar het milieu.",
+      "d": 1
+     },
+     {
+      "v": "Welk begrip hoort bij deze omschrijving: \"materialen blijven in de kringloop\"?",
+      "o": [
+       "Ion",
+       "Circulaire economie",
+       "Emissie",
+       "Endotherm"
+      ],
+      "c": 1,
+      "u": "Het juiste begrip is «Circulaire economie»: materialen blijven in de kringloop.",
+      "d": 2
      }
     ],
     "oe": [
@@ -5986,6 +6775,40 @@ var VAKKEN = [
       ],
       "c": 0,
       "u": "(a) Lage ozon (troposferisch): gevormd door fotochemische reacties van NOx en vluchtige organische verbindingen (VOS, bijv. uit autouitlaten en verfverdamping) onder invloed van zonlicht. Schade: O3 is een sterk oxidant dat longweefsel irriteert en beschadigt, astma verergert en gewassen beschadigt. (b) Stratosfeer: CFK's (uit oude koelmiddelen/spuitbussen) stijgen op en worden door UV-licht gesplitst in Cl-radicalen. Cl• + O3 → ClO + O2 (katalytisch). Dunner ozonlaag → meer UV-B op aardoppervlak → verhoogd risico op huidkanker, oogletsel en schade aan fytoplankton."
+     }
+    ],
+    "begrippen": [
+     {
+      "t": "Duurzaamheid",
+      "d": "gebruik zonder uitputting voor de toekomst"
+     },
+     {
+      "t": "Recycling",
+      "d": "het hergebruiken van materialen"
+     },
+     {
+      "t": "Broeikasgas",
+      "d": "een gas dat warmte vasthoudt, zoals CO2"
+     },
+     {
+      "t": "Biobrandstof",
+      "d": "brandstof gemaakt uit biomassa"
+     },
+     {
+      "t": "Levenscyclusanalyse",
+      "d": "milieubeoordeling van grondstof tot afval"
+     },
+     {
+      "t": "Grondstof",
+      "d": "uitgangsmateriaal voor productie"
+     },
+     {
+      "t": "Emissie",
+      "d": "de uitstoot van stoffen naar het milieu"
+     },
+     {
+      "t": "Circulaire economie",
+      "d": "materialen blijven in de kringloop"
      }
     ]
    }
@@ -6298,6 +7121,66 @@ var VAKKEN = [
       ],
       "c": 0,
       "u": "De ontwerpcyclus begint met een ontwerpvraag en een programma van eisen, gevolgd door ontwerpen, testen en evalueren. Hypothese, meten en conclusie horen bij de onderzoekscyclus."
+     },
+     {
+      "v": "Wat betekent «Significante cijfers»?",
+      "o": [
+       "EM-straling; sterk doordringend, weinig ioniserend",
+       "P = U·I",
+       "de mate waarin een geleider de stroom tegenwerkt (ohm)",
+       "de betekenisvolle cijfers in een meetwaarde"
+      ],
+      "c": 3,
+      "u": "«Significante cijfers» betekent: de betekenisvolle cijfers in een meetwaarde.",
+      "d": 1
+     },
+     {
+      "v": "Welk begrip hoort bij deze omschrijving: \"een internationale standaardeenheid (m, kg, s, A)\"?",
+      "o": [
+       "Ioniserende straling",
+       "Weerstand",
+       "Snelheid",
+       "SI-eenheid"
+      ],
+      "c": 3,
+      "u": "Het juiste begrip is «SI-eenheid»: een internationale standaardeenheid (m, kg, s, A).",
+      "d": 2
+     },
+     {
+      "v": "Welk begrip hoort bij deze omschrijving: \"y = a·x; grafiek is een rechte lijn door de oorsprong\"?",
+      "o": [
+       "Meetonzekerheid",
+       "Recht evenredig",
+       "Omgekeerd evenredig",
+       "SI-eenheid"
+      ],
+      "c": 1,
+      "u": "Het juiste begrip is «Recht evenredig»: y = a·x; grafiek is een rechte lijn door de oorsprong. Grafiek = rechte lijn door de oorsprong; bij omgekeerd evenredig is het product x·y constant.",
+      "d": 3
+     },
+     {
+      "v": "Wat betekent «Omgekeerd evenredig»?",
+      "o": [
+       "U = I·R",
+       "de tijd waarin de activiteit halveert",
+       "het aantal trillingen per seconde (Hz)",
+       "y = a/x; het product blijft constant"
+      ],
+      "c": 3,
+      "u": "«Omgekeerd evenredig» betekent: y = a/x; het product blijft constant. Het product x·y blijft constant (hyperbool); bij recht evenredig is het quotiënt y/x constant.",
+      "d": 1
+     },
+     {
+      "v": "Welk begrip hoort bij deze omschrijving: \"de marge waarbinnen de echte waarde ligt\"?",
+      "o": [
+       "Amplitude",
+       "Stroomsterkte",
+       "Meetonzekerheid",
+       "Snelheid"
+      ],
+      "c": 2,
+      "u": "Het juiste begrip is «Meetonzekerheid»: de marge waarbinnen de echte waarde ligt.",
+      "d": 2
      }
     ],
     "oe": [
@@ -6330,6 +7213,28 @@ var VAKKEN = [
       ],
       "c": 0,
       "u": "(a) Gemiddelde = (12,1 + 12,3 + 12,2 + 12,1 + 12,3) / 5 = 12,2 mm.\n(b) De metingen zijn precies: de spreiding is klein (12,1–12,3 mm). Ze zijn niet nauwkeurig: het gemiddelde (12,2 mm) wijkt sterk af van de werkelijke waarde (14,0 mm). Er is een systematische fout.\n(c) De schuifmaat is verkeerd gekalibreerd (nulpuntfout), of de leerling maakt consequent dezelfde afleesafwijking."
+     }
+    ],
+    "begrippen": [
+     {
+      "t": "Significante cijfers",
+      "d": "de betekenisvolle cijfers in een meetwaarde"
+     },
+     {
+      "t": "SI-eenheid",
+      "d": "een internationale standaardeenheid (m, kg, s, A)"
+     },
+     {
+      "t": "Recht evenredig",
+      "d": "y = a·x; grafiek is een rechte lijn door de oorsprong"
+     },
+     {
+      "t": "Omgekeerd evenredig",
+      "d": "y = a/x; het product blijft constant"
+     },
+     {
+      "t": "Meetonzekerheid",
+      "d": "de marge waarbinnen de echte waarde ligt"
      }
     ]
    },
@@ -6672,6 +7577,114 @@ var VAKKEN = [
       ],
       "c": 0,
       "u": "Een boventoon heeft meer knopen en buiken, dus een kleinere golflengte en (via v = f·λ) een hogere frequentie."
+     },
+     {
+      "v": "Wat betekent «Golf»?",
+      "o": [
+       "een trilling die energie transporteert zonder massatransport",
+       "v = f·λ, de snelheid van de golf (m/s)",
+       "de betekenisvolle cijfers in een meetwaarde",
+       "heliumkernen; sterk ioniserend, weinig doordringend"
+      ],
+      "c": 0,
+      "u": "«Golf» betekent: een trilling die energie transporteert zonder massatransport.",
+      "d": 1
+     },
+     {
+      "v": "Welk begrip hoort bij deze omschrijving: \"het aantal trillingen per seconde (Hz)\"?",
+      "o": [
+       "Alfastraling",
+       "Frequentie",
+       "Gammastraling",
+       "Resulterende kracht"
+      ],
+      "c": 1,
+      "u": "Het juiste begrip is «Frequentie»: het aantal trillingen per seconde (Hz).",
+      "d": 2
+     },
+     {
+      "v": "Welk begrip hoort bij deze omschrijving: \"de afstand tussen twee opeenvolgende toppen (m)\"?",
+      "o": [
+       "Golflengte",
+       "Resonantie",
+       "Doppler-effect",
+       "Breking"
+      ],
+      "c": 0,
+      "u": "Het juiste begrip is «Golflengte»: de afstand tussen twee opeenvolgende toppen (m).",
+      "d": 3
+     },
+     {
+      "v": "Wat betekent «Amplitude»?",
+      "o": [
+       "het aantal kernontvallen per seconde (becquerel)",
+       "y = a/x; het product blijft constant",
+       "EM-straling; sterk doordringend, weinig ioniserend",
+       "de maximale uitwijking van een trilling"
+      ],
+      "c": 3,
+      "u": "«Amplitude» betekent: de maximale uitwijking van een trilling.",
+      "d": 1
+     },
+     {
+      "v": "Welk begrip hoort bij deze omschrijving: \"v = f·λ, de snelheid van de golf (m/s)\"?",
+      "o": [
+       "Interferentie",
+       "Isotoop",
+       "Golfsnelheid",
+       "Elektrisch vermogen"
+      ],
+      "c": 2,
+      "u": "Het juiste begrip is «Golfsnelheid»: v = f·λ, de snelheid van de golf (m/s).",
+      "d": 2
+     },
+     {
+      "v": "Welk begrip hoort bij deze omschrijving: \"versterking of verzwakking van overlappende golven\"?",
+      "o": [
+       "Resonantie",
+       "Interferentie",
+       "Golf",
+       "Doppler-effect"
+      ],
+      "c": 1,
+      "u": "Het juiste begrip is «Interferentie»: versterking of verzwakking van overlappende golven. Golven versterken (in fase) of verzwakken (in tegenfase) elkaar — superpositie.",
+      "d": 3
+     },
+     {
+      "v": "Wat betekent «Resonantie»?",
+      "o": [
+       "U = I·R",
+       "de betekenisvolle cijfers in een meetwaarde",
+       "de marge waarbinnen de echte waarde ligt",
+       "sterke versterking bij de eigenfrequentie"
+      ],
+      "c": 3,
+      "u": "«Resonantie» betekent: sterke versterking bij de eigenfrequentie.",
+      "d": 1
+     },
+     {
+      "v": "Welk begrip hoort bij deze omschrijving: \"frequentieverandering door beweging van bron of waarnemer\"?",
+      "o": [
+       "Serieschakeling",
+       "Doppler-effect",
+       "Arbeid",
+       "Gammastraling"
+      ],
+      "c": 1,
+      "u": "Het juiste begrip is «Doppler-effect»: frequentieverandering door beweging van bron of waarnemer.",
+      "d": 2
+     },
+     {
+      "v": "Welk begrip hoort bij deze omschrijving: \"richtingverandering van een golf bij een grensvlak\"?",
+      "o": [
+       "Doppler-effect",
+       "Golfsnelheid",
+       "Breking",
+       "Interferentie"
+      ],
+      "c": 2,
+      "u": "Het juiste begrip is «Breking»: richtingverandering van een golf bij een grensvlak.",
+      "d": 3
      }
     ],
     "oe": [
@@ -6764,6 +7777,44 @@ var VAKKEN = [
       ],
       "c": 0,
       "u": "sin(theta2) = (1*sin30)/1,5 = 0,5/1,5 = 0,333\ntheta2 = arcsin(0,333) = 19,5 graden"
+     }
+    ],
+    "begrippen": [
+     {
+      "t": "Golf",
+      "d": "een trilling die energie transporteert zonder massatransport"
+     },
+     {
+      "t": "Frequentie",
+      "d": "het aantal trillingen per seconde (Hz)"
+     },
+     {
+      "t": "Golflengte",
+      "d": "de afstand tussen twee opeenvolgende toppen (m)"
+     },
+     {
+      "t": "Amplitude",
+      "d": "de maximale uitwijking van een trilling"
+     },
+     {
+      "t": "Golfsnelheid",
+      "d": "v = f·λ, de snelheid van de golf (m/s)"
+     },
+     {
+      "t": "Interferentie",
+      "d": "versterking of verzwakking van overlappende golven"
+     },
+     {
+      "t": "Resonantie",
+      "d": "sterke versterking bij de eigenfrequentie"
+     },
+     {
+      "t": "Doppler-effect",
+      "d": "frequentieverandering door beweging van bron of waarnemer"
+     },
+     {
+      "t": "Breking",
+      "d": "richtingverandering van een golf bij een grensvlak"
      }
     ]
    },
@@ -7122,6 +8173,126 @@ var VAKKEN = [
       ],
       "c": 0,
       "u": "De gravitatiekracht is omgekeerd kwadratisch met de afstand (FG ~ 1/r²). Bij een dubbele afstand wordt de kracht 2² = 4 keer zo klein."
+     },
+     {
+      "v": "Wat betekent «Snelheid»?",
+      "o": [
+       "de afgelegde weg per tijd (v = s/t)",
+       "de energie per lading (volt)",
+       "de tijd waarin de activiteit halveert",
+       "een trilling die energie transporteert zonder massatransport"
+      ],
+      "c": 0,
+      "u": "«Snelheid» betekent: de afgelegde weg per tijd (v = s/t).",
+      "d": 1
+     },
+     {
+      "v": "Welk begrip hoort bij deze omschrijving: \"de snelheidsverandering per tijd (a = Δv/Δt)\"?",
+      "o": [
+       "Arbeid",
+       "Elektrisch veld",
+       "Versnelling",
+       "Activiteit"
+      ],
+      "c": 2,
+      "u": "Het juiste begrip is «Versnelling»: de snelheidsverandering per tijd (a = Δv/Δt).",
+      "d": 2
+     },
+     {
+      "v": "Welk begrip hoort bij deze omschrijving: \"de vectorsom van alle krachten op een object\"?",
+      "o": [
+       "Snelheid",
+       "Resulterende kracht",
+       "Vermogen",
+       "Traagheid"
+      ],
+      "c": 1,
+      "u": "Het juiste begrip is «Resulterende kracht»: de vectorsom van alle krachten op een object.",
+      "d": 3
+     },
+     {
+      "v": "Wat betekent «Eerste wet van Newton»?",
+      "o": [
+       "zonder resulterende kracht blijft de snelheid gelijk",
+       "de marge waarbinnen de echte waarde ligt",
+       "actie en reactie zijn even groot en tegengesteld",
+       "een trilling die energie transporteert zonder massatransport"
+      ],
+      "c": 0,
+      "u": "«Eerste wet van Newton» betekent: zonder resulterende kracht blijft de snelheid gelijk.",
+      "d": 1
+     },
+     {
+      "v": "Welk begrip hoort bij deze omschrijving: \"F = m·a\"?",
+      "o": [
+       "Tweede wet van Newton",
+       "Ioniserende straling",
+       "Weerstand",
+       "Elektrische lading"
+      ],
+      "c": 0,
+      "u": "Het juiste begrip is «Tweede wet van Newton»: F = m·a.",
+      "d": 2
+     },
+     {
+      "v": "Welk begrip hoort bij deze omschrijving: \"actie en reactie zijn even groot en tegengesteld\"?",
+      "o": [
+       "Versnelling",
+       "Derde wet van Newton",
+       "Eerste wet van Newton",
+       "Vermogen"
+      ],
+      "c": 1,
+      "u": "Het juiste begrip is «Derde wet van Newton»: actie en reactie zijn even groot en tegengesteld.",
+      "d": 3
+     },
+     {
+      "v": "Wat betekent «Traagheid»?",
+      "o": [
+       "richtingverandering van een golf bij een grensvlak",
+       "de neiging om de bewegingstoestand te behouden",
+       "componenten achter elkaar; de stroom is overal gelijk",
+       "y = a/x; het product blijft constant"
+      ],
+      "c": 1,
+      "u": "«Traagheid» betekent: de neiging om de bewegingstoestand te behouden.",
+      "d": 1
+     },
+     {
+      "v": "Welk begrip hoort bij deze omschrijving: \"kracht maal verplaatsing (W = F·s)\"?",
+      "o": [
+       "Arbeid",
+       "Golf",
+       "Wet van Ohm",
+       "Doppler-effect"
+      ],
+      "c": 0,
+      "u": "Het juiste begrip is «Arbeid»: kracht maal verplaatsing (W = F·s).",
+      "d": 2
+     },
+     {
+      "v": "Welk begrip hoort bij deze omschrijving: \"het vermogen om arbeid te verrichten (joule)\"?",
+      "o": [
+       "Traagheid",
+       "Energie",
+       "Vermogen",
+       "Tweede wet van Newton"
+      ],
+      "c": 1,
+      "u": "Het juiste begrip is «Energie»: het vermogen om arbeid te verrichten (joule).",
+      "d": 3
+     },
+     {
+      "v": "Wat betekent «Vermogen»?",
+      "o": [
+       "frequentieverandering door beweging van bron of waarnemer",
+       "het aantal trillingen per seconde (Hz)",
+       "de arbeid per tijd (P = W/t)",
+       "een internationale standaardeenheid (m, kg, s, A)"
+      ],
+      "c": 2,
+      "u": "«Vermogen» betekent: de arbeid per tijd (P = W/t).",
+      "d": 1
      }
     ],
     "oe": [
@@ -7244,6 +8415,48 @@ var VAKKEN = [
       ],
       "c": 0,
       "u": "(a) F = mg = 200*10 = 2000 N\n(b) P = F*v = 2000*2 = 4000 W = 4 kW"
+     }
+    ],
+    "begrippen": [
+     {
+      "t": "Snelheid",
+      "d": "de afgelegde weg per tijd (v = s/t)"
+     },
+     {
+      "t": "Versnelling",
+      "d": "de snelheidsverandering per tijd (a = Δv/Δt)"
+     },
+     {
+      "t": "Resulterende kracht",
+      "d": "de vectorsom van alle krachten op een object"
+     },
+     {
+      "t": "Eerste wet van Newton",
+      "d": "zonder resulterende kracht blijft de snelheid gelijk"
+     },
+     {
+      "t": "Tweede wet van Newton",
+      "d": "F = m·a"
+     },
+     {
+      "t": "Derde wet van Newton",
+      "d": "actie en reactie zijn even groot en tegengesteld"
+     },
+     {
+      "t": "Traagheid",
+      "d": "de neiging om de bewegingstoestand te behouden"
+     },
+     {
+      "t": "Arbeid",
+      "d": "kracht maal verplaatsing (W = F·s)"
+     },
+     {
+      "t": "Energie",
+      "d": "het vermogen om arbeid te verrichten (joule)"
+     },
+     {
+      "t": "Vermogen",
+      "d": "de arbeid per tijd (P = W/t)"
      }
     ]
    },
@@ -7591,6 +8804,114 @@ var VAKKEN = [
       ],
       "c": 0,
       "u": "Bij een NTC (Negative Temperature Coefficient) daalt de weerstand bij hogere temperatuur; daarom gebruikt men hem in thermometers."
+     },
+     {
+      "v": "Wat betekent «Elektrische lading»?",
+      "o": [
+       "componenten achter elkaar; de stroom is overal gelijk",
+       "de neiging om de bewegingstoestand te behouden",
+       "de arbeid per tijd (P = W/t)",
+       "eigenschap die elektrische krachten veroorzaakt (C)"
+      ],
+      "c": 3,
+      "u": "«Elektrische lading» betekent: eigenschap die elektrische krachten veroorzaakt (C).",
+      "d": 1
+     },
+     {
+      "v": "Welk begrip hoort bij deze omschrijving: \"de lading per tijd (I = Q/t, ampère)\"?",
+      "o": [
+       "Radioactiviteit",
+       "Stroomsterkte",
+       "Interferentie",
+       "Spanning"
+      ],
+      "c": 1,
+      "u": "Het juiste begrip is «Stroomsterkte»: de lading per tijd (I = Q/t, ampère).",
+      "d": 2
+     },
+     {
+      "v": "Welk begrip hoort bij deze omschrijving: \"de energie per lading (volt)\"?",
+      "o": [
+       "Elektrisch veld",
+       "Elektrische lading",
+       "Spanning",
+       "Weerstand"
+      ],
+      "c": 2,
+      "u": "Het juiste begrip is «Spanning»: de energie per lading (volt).",
+      "d": 3
+     },
+     {
+      "v": "Wat betekent «Weerstand»?",
+      "o": [
+       "de mate waarin een geleider de stroom tegenwerkt (ohm)",
+       "actie en reactie zijn even groot en tegengesteld",
+       "het aantal trillingen per seconde (Hz)",
+       "v = f·λ, de snelheid van de golf (m/s)"
+      ],
+      "c": 0,
+      "u": "«Weerstand» betekent: de mate waarin een geleider de stroom tegenwerkt (ohm).",
+      "d": 1
+     },
+     {
+      "v": "Welk begrip hoort bij deze omschrijving: \"U = I·R\"?",
+      "o": [
+       "Wet van Ohm",
+       "Elektrische lading",
+       "Alfastraling",
+       "Dosis"
+      ],
+      "c": 0,
+      "u": "Het juiste begrip is «Wet van Ohm»: U = I·R.",
+      "d": 2
+     },
+     {
+      "v": "Welk begrip hoort bij deze omschrijving: \"componenten achter elkaar; de stroom is overal gelijk\"?",
+      "o": [
+       "Stroomsterkte",
+       "Serieschakeling",
+       "Wet van Ohm",
+       "Weerstand"
+      ],
+      "c": 1,
+      "u": "Het juiste begrip is «Serieschakeling»: componenten achter elkaar; de stroom is overal gelijk. In serie is de stroom overal gelijk; in een parallelschakeling is juist de spanning gelijk.",
+      "d": 3
+     },
+     {
+      "v": "Wat betekent «Parallelschakeling»?",
+      "o": [
+       "de arbeid per tijd (P = W/t)",
+       "componenten naast elkaar; de spanning is gelijk",
+       "de energie per lading (volt)",
+       "actie en reactie zijn even groot en tegengesteld"
+      ],
+      "c": 1,
+      "u": "«Parallelschakeling» betekent: componenten naast elkaar; de spanning is gelijk. Parallel: de spanning over elke tak is gelijk; in serie is de stroom overal gelijk.",
+      "d": 1
+     },
+     {
+      "v": "Welk begrip hoort bij deze omschrijving: \"gebied waarin een lading een kracht ondervindt\"?",
+      "o": [
+       "Elektrisch veld",
+       "Omgekeerd evenredig",
+       "Dosis",
+       "Elektrische lading"
+      ],
+      "c": 0,
+      "u": "Het juiste begrip is «Elektrisch veld»: gebied waarin een lading een kracht ondervindt.",
+      "d": 2
+     },
+     {
+      "v": "Welk begrip hoort bij deze omschrijving: \"P = U·I\"?",
+      "o": [
+       "Spanning",
+       "Elektrisch veld",
+       "Parallelschakeling",
+       "Elektrisch vermogen"
+      ],
+      "c": 3,
+      "u": "Het juiste begrip is «Elektrisch vermogen»: P = U·I.",
+      "d": 3
      }
     ],
     "oe": [
@@ -7703,6 +9024,44 @@ var VAKKEN = [
       ],
       "c": 0,
       "u": "(a) F = q*v*B = 1,6*10^-19 * 5*10^6 * 0,01 = 8*10^-15 N\n(b) Cirkelvormige beweging (Lorentzkracht staat altijd loodrecht op de snelheid)."
+     }
+    ],
+    "begrippen": [
+     {
+      "t": "Elektrische lading",
+      "d": "eigenschap die elektrische krachten veroorzaakt (C)"
+     },
+     {
+      "t": "Stroomsterkte",
+      "d": "de lading per tijd (I = Q/t, ampère)"
+     },
+     {
+      "t": "Spanning",
+      "d": "de energie per lading (volt)"
+     },
+     {
+      "t": "Weerstand",
+      "d": "de mate waarin een geleider de stroom tegenwerkt (ohm)"
+     },
+     {
+      "t": "Wet van Ohm",
+      "d": "U = I·R"
+     },
+     {
+      "t": "Serieschakeling",
+      "d": "componenten achter elkaar; de stroom is overal gelijk"
+     },
+     {
+      "t": "Parallelschakeling",
+      "d": "componenten naast elkaar; de spanning is gelijk"
+     },
+     {
+      "t": "Elektrisch veld",
+      "d": "gebied waarin een lading een kracht ondervindt"
+     },
+     {
+      "t": "Elektrisch vermogen",
+      "d": "P = U·I"
      }
     ]
    },
@@ -8049,6 +9408,114 @@ var VAKKEN = [
       ],
       "c": 0,
       "u": "Echografie werkt met geluidsgolven en is daardoor veilig (geen ioniserende straling), al is de beeldkwaliteit lager."
+     },
+     {
+      "v": "Wat betekent «Radioactiviteit»?",
+      "o": [
+       "heliumkernen; sterk ioniserend, weinig doordringend",
+       "uitzending van straling door onstabiele kernen",
+       "de arbeid per tijd (P = W/t)",
+       "de vectorsom van alle krachten op een object"
+      ],
+      "c": 1,
+      "u": "«Radioactiviteit» betekent: uitzending van straling door onstabiele kernen.",
+      "d": 1
+     },
+     {
+      "v": "Welk begrip hoort bij deze omschrijving: \"de tijd waarin de activiteit halveert\"?",
+      "o": [
+       "Halveringstijd",
+       "Parallelschakeling",
+       "Alfastraling",
+       "Derde wet van Newton"
+      ],
+      "c": 0,
+      "u": "Het juiste begrip is «Halveringstijd»: de tijd waarin de activiteit halveert.",
+      "d": 2
+     },
+     {
+      "v": "Welk begrip hoort bij deze omschrijving: \"het aantal kernontvallen per seconde (becquerel)\"?",
+      "o": [
+       "Bètastraling",
+       "Radioactiviteit",
+       "Ioniserende straling",
+       "Activiteit"
+      ],
+      "c": 3,
+      "u": "Het juiste begrip is «Activiteit»: het aantal kernontvallen per seconde (becquerel).",
+      "d": 3
+     },
+     {
+      "v": "Wat betekent «Alfastraling»?",
+      "o": [
+       "een internationale standaardeenheid (m, kg, s, A)",
+       "de lading per tijd (I = Q/t, ampère)",
+       "de betekenisvolle cijfers in een meetwaarde",
+       "heliumkernen; sterk ioniserend, weinig doordringend"
+      ],
+      "c": 3,
+      "u": "«Alfastraling» betekent: heliumkernen; sterk ioniserend, weinig doordringend. Minst doordringend (papier stopt het) maar sterk ioniserend — omgekeerd aan gammastraling.",
+      "d": 1
+     },
+     {
+      "v": "Welk begrip hoort bij deze omschrijving: \"elektronen; matig doordringend\"?",
+      "o": [
+       "Frequentie",
+       "Versnelling",
+       "Bètastraling",
+       "Significante cijfers"
+      ],
+      "c": 2,
+      "u": "Het juiste begrip is «Bètastraling»: elektronen; matig doordringend.",
+      "d": 2
+     },
+     {
+      "v": "Welk begrip hoort bij deze omschrijving: \"EM-straling; sterk doordringend, weinig ioniserend\"?",
+      "o": [
+       "Alfastraling",
+       "Ioniserende straling",
+       "Dosis",
+       "Gammastraling"
+      ],
+      "c": 3,
+      "u": "Het juiste begrip is «Gammastraling»: EM-straling; sterk doordringend, weinig ioniserend. Sterk doordringend (lood/beton nodig) maar weinig ioniserend — omgekeerd aan alfastraling.",
+      "d": 3
+     },
+     {
+      "v": "Wat betekent «Ioniserende straling»?",
+      "o": [
+       "elektronen; matig doordringend",
+       "kracht maal verplaatsing (W = F·s)",
+       "y = a·x; grafiek is een rechte lijn door de oorsprong",
+       "straling die atomen ioniseert en cellen kan beschadigen"
+      ],
+      "c": 3,
+      "u": "«Ioniserende straling» betekent: straling die atomen ioniseert en cellen kan beschadigen.",
+      "d": 1
+     },
+     {
+      "v": "Welk begrip hoort bij deze omschrijving: \"de geabsorbeerde energie per kilogram (gray)\"?",
+      "o": [
+       "Dosis",
+       "Derde wet van Newton",
+       "Meetonzekerheid",
+       "Activiteit"
+      ],
+      "c": 0,
+      "u": "Het juiste begrip is «Dosis»: de geabsorbeerde energie per kilogram (gray).",
+      "d": 2
+     },
+     {
+      "v": "Welk begrip hoort bij deze omschrijving: \"atoomsoort met gelijk aantal protonen, ander aantal neutronen\"?",
+      "o": [
+       "Isotoop",
+       "Gammastraling",
+       "Ioniserende straling",
+       "Bètastraling"
+      ],
+      "c": 0,
+      "u": "Het juiste begrip is «Isotoop»: atoomsoort met gelijk aantal protonen, ander aantal neutronen.",
+      "d": 3
      }
     ],
     "oe": [
@@ -8161,6 +9628,44 @@ var VAKKEN = [
       ],
       "c": 0,
       "u": "(a) Alfa: 4/2He. Bèta-min: 0/-1e. Gamma: 0/0gamma.\n(b) Gammastraling is het meest indringend (elektromagnetisch, doordringt lood en dikke betonwanden)."
+     }
+    ],
+    "begrippen": [
+     {
+      "t": "Radioactiviteit",
+      "d": "uitzending van straling door onstabiele kernen"
+     },
+     {
+      "t": "Halveringstijd",
+      "d": "de tijd waarin de activiteit halveert"
+     },
+     {
+      "t": "Activiteit",
+      "d": "het aantal kernontvallen per seconde (becquerel)"
+     },
+     {
+      "t": "Alfastraling",
+      "d": "heliumkernen; sterk ioniserend, weinig doordringend"
+     },
+     {
+      "t": "Bètastraling",
+      "d": "elektronen; matig doordringend"
+     },
+     {
+      "t": "Gammastraling",
+      "d": "EM-straling; sterk doordringend, weinig ioniserend"
+     },
+     {
+      "t": "Ioniserende straling",
+      "d": "straling die atomen ioniseert en cellen kan beschadigen"
+     },
+     {
+      "t": "Dosis",
+      "d": "de geabsorbeerde energie per kilogram (gray)"
+     },
+     {
+      "t": "Isotoop",
+      "d": "atoomsoort met gelijk aantal protonen, ander aantal neutronen"
      }
     ]
    }
