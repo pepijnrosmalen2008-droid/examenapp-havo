@@ -23,7 +23,7 @@
   <script type="application/ld+json">
   [
     {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[
-      {"@type":"Question","name":"Is Slagio gratis?","acceptedAnswer":{"@type":"Answer","text":"Voor leerlingen is Slagio altijd volledig gratis: oefenen, quizzen, flashcards en oude examens, zonder account en zonder advertenties. Een klas aanmaken met een klascode en de klas-ranglijst zijn ook gratis. Scholen kunnen optioneel een betaalde docentenlaag (Slagio School) nemen met per-leerling voortgang, klas-analytics en rapportage; die is in ontwikkeling als pilot. De leerling betaalt nooit."}},
+      {"@type":"Question","name":"Is Slagio gratis?","acceptedAnswer":{"@type":"Answer","text":"Voor leerlingen is Slagio altijd volledig gratis: oefenen, quizzen, flashcards en oude examens, zonder account en zonder advertenties. Een klas aanmaken met een klascode en de klas-ranglijst zijn ook gratis. Scholen kunnen optioneel een betaalde docentenlaag (Slagio School) nemen met per-leerling voortgang, klas-analytics en rapportage. Dat is één schoolbrede jaarlicentie zonder kosten per leerling: gratis tijdens de pilot dit schooljaar, daarna vanaf 500 euro per jaar voor een kleine school tot 1.500 euro voor een grote scholengemeenschap. De leerling betaalt nooit."}},
       {"@type":"Question","name":"Kunnen leerlingen inloggen met hun schoolaccount?","acceptedAnswer":{"@type":"Answer","text":"Dat is de bedoeling via Kennisnet Entree Federatie: leerlingen en docenten loggen dan in met hun bestaande schoolaccount (single sign-on), zonder een apart wachtwoord. Deze koppeling is in voorbereiding; scholen kunnen zich nu al aanmelden."}},
       {"@type":"Question","name":"Hoe gebruik ik Slagio klassikaal?","acceptedAnswer":{"@type":"Answer","text":"Start een klassen-quiz in Kahoot-stijl: jij opent een sessie, leerlingen doen mee op hun telefoon of laptop, en je ziet live de scores. Daarnaast kunnen leerlingen zelfstandig per domein oefenen en oude examens maken."}},
       {"@type":"Question","name":"Hoe zit het met privacy (AVG)?","acceptedAnswer":{"@type":"Answer","text":"Slagio werkt zonder verplichte persoonsgegevens; oefenen kan volledig anoniem. Bij inloggen via Entree worden pseudonieme leerling-ID's (ECK iD) gebruikt, zodat scholen geen extra persoonsgegevens hoeven te delen."}}
@@ -74,6 +74,22 @@
     .tier.school li::before{content:'✓';color:var(--mu)}
     .tier .tier-foot{margin-top:auto;font-size:12.5px;color:var(--mu)}
     .model-note{max-width:680px;margin:18px auto 0;text-align:center;font-size:13.5px;color:var(--mu);line-height:1.7}
+    /* kostenplaatje */
+    .kost-compare{display:flex;gap:14px;justify-content:center;flex-wrap:wrap;margin-bottom:22px}
+    .kost-anchor{border:1px solid var(--bo);border-radius:12px;padding:14px 18px;min-width:230px;background:var(--s)}
+    .kost-anchor .lbl{font-size:12px;color:var(--mu);margin-bottom:5px}
+    .kost-anchor .val{font-family:var(--font-head);font-size:18px;font-weight:800;color:var(--dk)}
+    .kost-anchor.slagio{border-color:rgba(var(--or-rgb),.45)}
+    .kost-anchor.slagio .val{color:var(--or)}
+    .kost-scroll{overflow-x:auto}
+    .kost-table{width:100%;border-collapse:collapse;background:var(--s);border:1px solid var(--bo);border-radius:14px;overflow:hidden;min-width:520px}
+    .kost-table th,.kost-table td{text-align:left;padding:14px 16px;border-bottom:1px solid var(--bo);font-size:14px;vertical-align:top}
+    .kost-table th{font-size:12px;font-weight:700;color:var(--mu);background:var(--bg)}
+    .kost-table tr:last-child td{border-bottom:none}
+    .kost-table .amt{font-family:var(--font-head);font-weight:800;white-space:nowrap;color:var(--dk)}
+    .kost-table .amt.free{color:var(--or)}
+    .kost-table td:first-child{font-weight:600;color:var(--dk)}
+    .kost-fine{max-width:660px;margin:16px auto 0;text-align:center;font-size:12.5px;color:var(--mu);line-height:1.7}
     /* Entree */
     .entree{background:var(--s);border:1px solid var(--bo);border-radius:16px;padding:30px;margin:52px 0 0}
     .entree-top{display:flex;align-items:baseline;gap:12px;margin-bottom:14px;flex-wrap:wrap}
@@ -155,7 +171,7 @@
       <span class="tier-tag">In ontwikkeling · pilot</span>
       <h3>Slagio School</h3>
       <p class="who">Optioneel, voor de docent / sectie / school</p>
-      <p class="price">Schoollicentie<span> · prijs in overleg</span></p>
+      <p class="price">Schoolbreed<span> · gratis pilot, daarna vanaf €500/jaar</span></p>
       <ul>
         <li>Per-leerling voortgang en examen-gereedheid per klas</li>
         <li>Zie per domein waar de klas vastloopt</li>
@@ -167,6 +183,25 @@
     </div>
   </div>
   <p class="model-note">Zo blijft de kern gratis: geen betaalmuur voor leerlingen, geen advertenties, geen verkoop van gegevens. De docentenlaag, aangevuld met donaties en onderwijsfondsen, draagt de kosten.</p>
+
+  <h2 class="up-h2">Wat kost het?</h2>
+  <p class="up-h2-sub">De leerling betaalt niets. Een school betaalt alleen voor de docentenlaag, en dat is een fractie van een lesmethode.</p>
+  <div class="kost-compare">
+    <div class="kost-anchor"><div class="lbl">Reguliere digitale lesmethode</div><div class="val">± €30 per leerling, per vak</div></div>
+    <div class="kost-anchor slagio"><div class="lbl">Slagio School</div><div class="val">Schoolbreed · leerling €0</div></div>
+  </div>
+  <div class="kost-scroll">
+    <table class="kost-table">
+      <thead><tr><th>Situatie</th><th>Prijs per jaar</th><th>Wat je krijgt</th></tr></thead>
+      <tbody>
+        <tr><td>Pilot dit schooljaar</td><td class="amt free">Gratis</td><td>De volledige docentenlaag, in ruil voor je feedback</td></tr>
+        <tr><td>Eén sectie of kleine school<br>(tot 500 leerlingen)</td><td class="amt">€500</td><td>Schoolbrede licentie, onbeperkt docenten en leerlingen</td></tr>
+        <tr><td>Gemiddelde VO-school<br>(500–1.500 leerlingen)</td><td class="amt">€1.000</td><td>Schoolbrede licentie, onbeperkt docenten en leerlingen</td></tr>
+        <tr><td>Grote scholengemeenschap<br>(meer dan 1.500 leerlingen)</td><td class="amt">€1.500</td><td>Schoolbrede licentie, onbeperkt docenten en leerlingen</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <p class="kost-fine">Eén schoolbrede jaarlicentie, per schooljaar opzegbaar. Er zijn geen kosten per leerling en geen opstartkosten. Leerlingen oefenen altijd gratis, met of zonder licentie. Prijzen zijn indicatief tijdens de pilotfase; het definitieve tarief bepalen we samen met de eerste scholen.</p>
 
   <section class="entree">
     <div class="entree-top">
@@ -197,7 +232,7 @@
   <div class="faq">
     <details open><summary>Is Slagio gratis voor leerlingen?</summary><div class="a">Ja, altijd en volledig. Oefenen, quizzen, flashcards en oude examens zijn voor leerlingen gratis, zonder account en zonder advertenties. Een klas aanmaken en de klas-ranglijst zijn ook gratis. Dit blijft zo; de leerling betaalt nooit.</div></details>
     <details><summary>Hoe blijft Slagio dan gratis? Wat is het verdienmodel?</summary><div class="a">Slagio verkoopt geen toegang tot leerlingen en toont geen advertenties. De kosten worden gedragen door een optionele docentenlaag (Slagio School) die scholen inzicht en regie geeft, aangevuld met donaties en onderwijsfondsen. Zo kan de kern gratis blijven zonder betaalmuur voor de leerling.</div></details>
-    <details><summary>Wat kost Slagio School voor een school?</summary><div class="a">De docentenlaag is in ontwikkeling en start als pilot. De prijs bepalen we in overleg met pilotscholen, passend bij een sectie of hele school. Meld je aan als pilotschool om als eerste mee te doen en mee te denken.</div></details>
+    <details><summary>Wat kost Slagio School voor een school?</summary><div class="a">Één schoolbrede jaarlicentie, geen kosten per leerling: gratis tijdens de pilot dit schooljaar, daarna vanaf €500 per jaar voor een kleine school, €1.000 voor een gemiddelde VO-school en €1.500 voor een grote scholengemeenschap. Onbeperkt docenten en leerlingen, per schooljaar opzegbaar, geen opstartkosten. Leerlingen oefenen altijd gratis. Ter vergelijking: een reguliere digitale lesmethode kost al snel €30 per leerling per vak.</div></details>
     <details><summary>Hoe werkt inloggen via Entree?</summary><div class="a">Via de Kennisnet Entree Federatie loggen leerlingen en docenten in met hun bestaande schoolaccount (single sign-on), zonder apart wachtwoord. Deze koppeling is in voorbereiding; je school kan zich nu al aanmelden zodat je er als eerste bij bent.</div></details>
     <details><summary>Moet de ICT-afdeling iets installeren?</summary><div class="a">Nee. Slagio draait in de browser en als installeerbare webapp (PWA). Er is geen installatie of beheer nodig; je kunt het vandaag nog gebruiken.</div></details>
     <details><summary>Hoe zit het met privacy en de AVG?</summary><div class="a">Oefenen kan volledig anoniem, zonder persoonsgegevens. Bij inloggen via Entree worden pseudonieme leerling-ID's (ECK iD) gebruikt, zodat de school geen extra persoonsgegevens hoeft te delen.</div></details>
