@@ -28,7 +28,7 @@ new Function('SAM_RICH', fs.readFileSync(R('sam-vwo.js'),'utf8'))(SAM);
 // ── extractor ──
 const ENT={'&amp;':'&','&lt;':'<','&gt;':'>','&quot;':'"','&#39;':"'",'&#215;':'×','&#183;':'·','&nbsp;':' '};
 const decode=s=>String(s).replace(/&#(\d+);/g,(_,n)=>String.fromCharCode(+n)).replace(/&[a-z#0-9]+;/gi,e=>ENT[e]||e);
-const strip=h=>decode(String(h).replace(/<[^>]+>/g,'')).replace(/\s+/g,' ').trim();
+const strip=h=>decode(String(h).replace(/<[^>]+>/g,' ')).replace(/\s+/g,' ').trim(); // tag→spatie: voorkomt woord-aan-elkaar bij geneste tags
 const STOP=new Set(['ja','nee','onderwerp','begrip','kern','regel','vorm','functie','type','situatie','verband','as','punt','aspect','techniek','vraag','stap','soort','voorbeeld','informeel','formeel','wil je','naam onbekend','naam bekend']);
 function okPair(t,d){
   if(t.length<3||t.length>44||d.length<12||d.length>130)return false;
@@ -121,11 +121,11 @@ try{
 function shuffle(a){a=a.slice();for(let i=a.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[a[i],a[j]]=[a[j],a[i]];}return a;}
 function sample(pool,n,excl){const out=[];for(const x of shuffle(pool)){if(out.length>=n)break;if(excl.includes(x)||out.includes(x))continue;out.push(x);}return out;}
 function genQ(pairs, vakPool){
-  const vakDefs=vakPool.map(p=>p.d), vakTerms=vakPool.map(p=>p.t), domTerms=pairs.map(p=>p.t), qs=[];
+  const vakDefs=vakPool.map(p=>p.d), vakTerms=vakPool.map(p=>p.t), domTerms=pairs.map(p=>p.t), domDefs=pairs.map(p=>p.d), qs=[];
   pairs.forEach(({t,d})=>{
     const ext=UITLEG[t]?' '+UITLEG[t]:'';
     const uT=`«${t}» betekent: ${d}.${ext}`, uD=`Het juiste begrip is «${t}»: ${d}.${ext}`;
-    // 1) recall (d1): definitie herkennen bij de term
+    // 1) recall makkelijk (d1): definitie herkennen bij de term, afleiders uit het hele vak
     const d1=sample(vakDefs,3,[d]);
     if(d1.length===3){const o=shuffle([d,...d1]);qs.push({v:`Wat betekent «${t}»?`,o,c:o.indexOf(d),u:uT,d:1});}
     // 2) herkenning makkelijk (d2): term bij definitie, afleiders uit het hele vak
@@ -134,10 +134,13 @@ function genQ(pairs, vakPool){
     // 3) herkenning moeilijk (d3): term bij definitie, afleiders uit HETZELFDE domein (dichtbij)
     const d3=sample(domTerms,3,[t]);
     if(d3.length===3){const o=shuffle([t,...d3]);qs.push({v:`Welke term past bij: "${d}"?`,o,c:o.indexOf(t),u:uD,d:3});}
+    // 4) recall moeilijk (d4): definitie herkennen bij de term, afleiders uit HETZELFDE domein (dichtbij)
+    const d4=sample(domDefs,3,[d]);
+    if(d4.length===3){const o=shuffle([d,...d4]);qs.push({v:`Wat houdt «${t}» in?`,o,c:o.indexOf(d),u:uT,d:3});}
   });
   return qs;
 }
-const isGen=v=>/^Wat betekent «|^Welk begrip hoort bij|^Welke term past bij/.test(v||'');
+const isGen=v=>/^Wat betekent «|^Welk begrip hoort bij|^Welke term past bij|^Wat houdt «/.test(v||'');
 
 // ── kwaliteitsfilter (weggevers/reken) ──
 function lenGiveaway(o,c){const L=o.map(x=>String(x).length),cor=L[c],oth=L.filter((_,i)=>i!==c).sort((a,b)=>b-a);if(cor>=oth[0]*1.5&&cor-oth[0]>=12)return 2;if(cor<=oth[oth.length-1]*0.4&&oth[0]-cor>=20)return 1;return 0;}
@@ -159,8 +162,8 @@ function run(file, name, niveau, pretty){
       const addAll=arr=>{for(const b of (arr||[])){const t=(b.t||b[0]||'').toString().trim(), de=(b.d||b[1]||'').toString().trim();if(!t||!de)continue;const k=t.toLowerCase();if(seen.has(k))continue;seen.add(k);merged.push({t,d:de});}};
       addAll(CURATED[key]);
       addAll(d.begrippen);
-      if(merged.length<40) addAll(extract(SAM[key]||d.sam||''));
-      if(merged.length){d.begrippen=merged.slice(0,42); (CURATED[key]?curatedDoms++:extractedDoms++);}
+      addAll(extract(SAM[key]||d.sam||''));   // altijd extractie meenemen (maximaal volume)
+      if(merged.length){d.begrippen=merged.slice(0,64); (CURATED[key]?curatedDoms++:extractedDoms++);}
     }
     // 2. vak-brede pool voor afleiders
     const vakPool=[]; vak.domeinen.forEach(d=>(d.begrippen||[]).forEach(b=>vakPool.push(b)));

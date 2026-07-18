@@ -299,11 +299,11 @@ function _updatePageSEO(level){
   const nivNaam=isHavo?'HAVO':'VWO';
   const url='https://slagio.nl/'+(level||'');
   document.title=level
-    ?`Slagio - ${nivNaam} Examenvoorbereiding 2026 | 2.000+ vragen, eindexamens, studieplan`
+    ?`Slagio - ${nivNaam} Examenvoorbereiding 2026 | 10.000+ vragen, eindexamens, studieplan`
     :'Slagio - Complete HAVO & VWO Examenvoorbereiding 2026';
   const desc=level
-    ?`Gratis ${nivNaam} examenvoorbereiding 2026. 2.000+ oefenvragen per domein, echte CE-eindexamens 2019–2025, persoonlijk studieplan, spaced repetition flashcards en cijfercalculator. Geen account nodig.`
-    :'Kies je niveau: HAVO of VWO. Gratis examenvoorbereiding met 2.000+ oefenvragen, echte eindexamens 2019–2025, studieplan en meer.';
+    ?`Gratis ${nivNaam} examenvoorbereiding 2026. 10.000+ oefenvragen per domein, echte CE-eindexamens 2019–2025, persoonlijk studieplan, spaced repetition flashcards en cijfercalculator. Geen account nodig.`
+    :'Kies je niveau: HAVO of VWO. Gratis examenvoorbereiding met 10.000+ oefenvragen, echte eindexamens 2019–2025, studieplan en meer.';
   const metaDesc=document.querySelector('meta[name="description"]');
   if(metaDesc)metaDesc.content=desc;
   const og=document.querySelector('meta[property="og:url"]');

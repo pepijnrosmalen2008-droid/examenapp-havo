@@ -78,7 +78,7 @@ Hey Reddit,
 Ik heb dit jaar Slagio.nl gebouwd — een gratis examenvoorbereiding-PWA voor HAVO en VWO leerlingen.
 
 Wat het doet:
-- 1.800+ oefenvragen per domein voor 17 vakken (HAVO + VWO)
+- 10.000+ oefenvragen per domein voor 17 vakken (HAVO + VWO)
 - Echte CE-examens 2019–2025 online maken
 - Spaced repetition flashcards
 - Persoonlijk studieplan tot je examendatum
@@ -137,7 +137,7 @@ slagio.nl (link in bio)
 ```
 Hey! Ik zie dat jij al examentips deelt voor HAVO/VWO leerlingen.
 
-Ik heb Slagio.nl gebouwd — gratis oefenplatform met 1.800+ CE-vragen en echte eindexamens.
+Ik heb Slagio.nl gebouwd — gratis oefenplatform met 10.000+ CE-vragen en echte eindexamens.
 Geen betaalmuur, geen account nodig.
 
 Zou je het willen proberen en taggen als je het goed vindt?
