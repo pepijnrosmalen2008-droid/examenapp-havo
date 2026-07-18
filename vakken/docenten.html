@@ -3,12 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Slagio voor docenten &amp; scholen — gratis examentraining in de klas</title>
-  <meta name="description" content="Gebruik Slagio klassikaal: een Kahoot-stijl examenquiz, oefenen per domein en zicht op de klas. Gratis, geen installatie. Inloggen met je schoolaccount via Kennisnet Entree.">
+  <title>Slagio voor docenten &amp; scholen — gratis voor leerlingen, inzicht voor de school</title>
+  <meta name="description" content="Slagio is voor leerlingen altijd gratis. Scholen kunnen optioneel een docentenlaag nemen: per-leerling voortgang, klas-analytics en examen-gereedheid. Klassikaal oefenen, geen installatie, inloggen via Kennisnet Entree.">
   <meta name="robots" content="index, follow">
   <link rel="canonical" href="https://slagio.nl/vakken/docenten.html">
-  <meta property="og:title" content="Slagio voor docenten &amp; scholen — gratis examentraining in de klas">
-  <meta property="og:description" content="Klassikaal oefenen met een examenquiz, per domein, met zicht op de klas. Gratis. Inloggen met je schoolaccount via Entree.">
+  <meta property="og:title" content="Slagio voor docenten &amp; scholen — gratis voor leerlingen, inzicht voor de school">
+  <meta property="og:description" content="Voor leerlingen altijd gratis. Voor scholen een optionele docentenlaag met per-leerling voortgang en klas-analytics. Inloggen via Entree.">
   <meta property="og:url" content="https://slagio.nl/vakken/docenten.html">
   <meta property="og:type" content="website">
   <meta property="og:image" content="https://slagio.nl/icon-512.png">
@@ -23,7 +23,7 @@
   <script type="application/ld+json">
   [
     {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[
-      {"@type":"Question","name":"Is Slagio gratis voor scholen en docenten?","acceptedAnswer":{"@type":"Answer","text":"Ja. Slagio is volledig gratis voor leerlingen, docenten en scholen. Er zijn geen licentiekosten en geen verplichte accounts om te oefenen."}},
+      {"@type":"Question","name":"Is Slagio gratis?","acceptedAnswer":{"@type":"Answer","text":"Voor leerlingen is Slagio altijd volledig gratis: oefenen, quizzen, flashcards en oude examens, zonder account en zonder advertenties. Een klas aanmaken met een klascode en de klas-ranglijst zijn ook gratis. Scholen kunnen optioneel een betaalde docentenlaag (Slagio School) nemen met per-leerling voortgang, klas-analytics en rapportage; die is in ontwikkeling als pilot. De leerling betaalt nooit."}},
       {"@type":"Question","name":"Kunnen leerlingen inloggen met hun schoolaccount?","acceptedAnswer":{"@type":"Answer","text":"Dat is de bedoeling via Kennisnet Entree Federatie: leerlingen en docenten loggen dan in met hun bestaande schoolaccount (single sign-on), zonder een apart wachtwoord. Deze koppeling is in voorbereiding; scholen kunnen zich nu al aanmelden."}},
       {"@type":"Question","name":"Hoe gebruik ik Slagio klassikaal?","acceptedAnswer":{"@type":"Answer","text":"Start een klassen-quiz in Kahoot-stijl: jij opent een sessie, leerlingen doen mee op hun telefoon of laptop, en je ziet live de scores. Daarnaast kunnen leerlingen zelfstandig per domein oefenen en oude examens maken."}},
       {"@type":"Question","name":"Hoe zit het met privacy (AVG)?","acceptedAnswer":{"@type":"Answer","text":"Slagio werkt zonder verplichte persoonsgegevens; oefenen kan volledig anoniem. Bij inloggen via Entree worden pseudonieme leerling-ID's (ECK iD) gebruikt, zodat scholen geen extra persoonsgegevens hoeven te delen."}}
@@ -54,6 +54,24 @@
     .feat-ico{width:44px;height:44px;border-radius:12px;background:rgba(var(--or-rgb),.12);color:var(--or);display:flex;align-items:center;justify-content:center;font-size:22px;margin-bottom:12px}
     .feat h3{font-family:var(--font-head);font-size:16.5px;font-weight:700;margin:0 0 6px}
     .feat p{color:var(--mu);font-size:14px;line-height:1.65;margin:0}
+    /* verdienmodel — twee lagen */
+    .tiers{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:6px}
+    @media(max-width:640px){.tiers{grid-template-columns:1fr}}
+    .tier{background:var(--s);border:1px solid var(--bo);border-radius:18px;padding:26px;box-shadow:var(--rd-shadow-1);position:relative;display:flex;flex-direction:column}
+    .tier.free{border-color:rgba(var(--or-rgb),.4)}
+    .tier-tag{font-size:11px;font-weight:800;text-transform:uppercase;letter-spacing:.06em;padding:4px 11px;border-radius:999px;align-self:flex-start;margin-bottom:12px}
+    .tier.free .tier-tag{color:var(--or);background:var(--orl);border:1px solid rgba(var(--or-rgb),.3)}
+    .tier.school .tier-tag{color:var(--mu);background:var(--bg);border:1px solid var(--bo)}
+    .tier h3{font-family:var(--font-head);font-size:20px;font-weight:800;margin:0 0 2px}
+    .tier .who{color:var(--mu);font-size:13.5px;margin:0 0 16px}
+    .tier .price{font-family:var(--font-head);font-size:26px;font-weight:800;margin:0 0 16px;letter-spacing:-.5px}
+    .tier .price span{font-size:14px;font-weight:600;color:var(--mu)}
+    .tier ul{list-style:none;padding:0;margin:0 0 18px;display:flex;flex-direction:column;gap:9px}
+    .tier li{color:var(--dk);font-size:14px;line-height:1.5;padding-left:26px;position:relative}
+    .tier li::before{content:'✓';position:absolute;left:0;top:0;color:var(--or);font-weight:800}
+    .tier.school li::before{content:'✓';color:var(--mu)}
+    .tier .tier-foot{margin-top:auto;font-size:12.5px;color:var(--mu)}
+    .model-note{max-width:680px;margin:18px auto 0;text-align:center;font-size:13.5px;color:var(--mu);line-height:1.7}
     /* Entree */
     .entree{background:linear-gradient(135deg,rgba(var(--or-rgb),.09),rgba(var(--or-rgb),.03));border:1.5px solid rgba(var(--or-rgb),.32);border-radius:18px;padding:30px;margin:48px 0 0}
     .entree-top{display:flex;align-items:center;gap:14px;margin-bottom:14px;flex-wrap:wrap}
@@ -107,10 +125,10 @@
 
 <div class="up-wrap">
   <div class="up-hero">
-    <h1>Slagio in de klas: <em>gratis examentraining die leerlingen leuk vinden</em></h1>
-    <p class="up-sub">Draai een klassikale examenquiz, laat leerlingen zelfstandig per domein oefenen en houd zicht op wie waar staat. Geen licentie, geen installatie, geen gedoe.</p>
+    <h1>Voor leerlingen <em>altijd 100% gratis</em>. Voor scholen: zicht en regie.</h1>
+    <p class="up-sub">Elke leerling oefent gratis op Slagio, en dat verandert nooit. Scholen kunnen daarbovenop een docentenlaag nemen: per-leerling voortgang, examen-gereedheid per klas en een sectie-rapport. De leerling betaalt nooit; de school kiest zelf.</p>
     <div class="up-hero-btns">
-      <a class="btn-primary" href="mailto:slagiocompany@gmail.com?subject=Slagio%20voor%20onze%20school&body=Hoi%20Slagio%2C%0A%0AWij%20willen%20Slagio%20op%20onze%20school%20gebruiken.%0A%0ASchool%3A%20%0APlaats%3A%20%0AVak(ken)%3A%20%0AAantal%20klassen%2Fleerlingen%3A%20%0A%0AGraag%20meer%20informatie%20over%20inloggen%20via%20Entree.">Meld je school aan →</a>
+      <a class="btn-primary" href="mailto:slagiocompany@gmail.com?subject=Slagio%20School%20-%20interesse&body=Hoi%20Slagio%2C%0A%0AWij%20zijn%20ge%C3%AFnteresseerd%20in%20de%20docentenlaag%20(Slagio%20School).%0A%0ASchool%3A%20%0APlaats%3A%20%0AVak(ken)%3A%20%0AAantal%20klassen%2Fleerlingen%3A%20%0A">Word pilotschool →</a>
       <a class="btn-ghost" href="https://slagio.nl/?utm_source=docenten">Bekijk de app</a>
     </div>
   </div>
@@ -119,12 +137,45 @@
   <p class="up-h2-sub">Alles wat je nodig hebt om een examenles actief en meetbaar te maken.</p>
   <div class="feat-grid">
     <div class="feat"><div class="feat-ico">🎮</div><h3>Klassen-quiz</h3><p>Start een quiz in Kahoot-stijl. Leerlingen doen mee op hun eigen scherm, jij ziet live de scores. Perfect als opwarmer of afsluiting.</p></div>
-    <div class="feat"><div class="feat-ico">🎯</div><h3>Oefenen per domein</h3><p>2.400+ vragen per examendomein, met CE/SE-markering. Zet gericht huiswerk uit op precies de stof die je behandelt.</p></div>
+    <div class="feat"><div class="feat-ico">🎯</div><h3>Oefenen per domein</h3><p>10.000+ oefenvragen over alle examendomeinen, met CE/SE-markering. Zet gericht huiswerk uit op precies de stof die je behandelt.</p></div>
     <div class="feat"><div class="feat-ico">📊</div><h3>Zicht op de klas</h3><p>Zie waar de klas sterk en zwak staat, zodat je je les kunt bijsturen naar de domeinen die de meeste aandacht nodig hebben.</p></div>
     <div class="feat"><div class="feat-ico">🎓</div><h3>Examengericht</h3><p>Echte oude examens, een CE-simulatietoets met normering en een studieplan tot aan de examendatum. Volledig op het CE afgestemd.</p></div>
-    <div class="feat"><div class="feat-ico">💸</div><h3>Volledig gratis</h3><p>Geen licentiekosten, geen abonnement. Slagio blijft gratis voor leerlingen, docenten en scholen.</p></div>
+    <div class="feat"><div class="feat-ico">💸</div><h3>Gratis voor elke leerling</h3><p>Oefenen, quizzen, flashcards, oude examens: voor leerlingen altijd gratis, zonder account. Dat is en blijft het uitgangspunt.</p></div>
     <div class="feat"><div class="feat-ico">⚡</div><h3>Zo te gebruiken</h3><p>Werkt in de browser en als app, zonder installatie of beheer door de ICT-afdeling. Vandaag nog in te zetten.</p></div>
   </div>
+
+  <h2 class="up-h2">Gratis voor de leerling: hoe kan dat?</h2>
+  <p class="up-h2-sub">Slagio verkoopt geen toegang tot leerlingen. Scholen betalen alleen voor de docentenlaag: inzicht en regie.</p>
+  <div class="tiers">
+    <div class="tier free">
+      <span class="tier-tag">Altijd gratis</span>
+      <h3>Slagio</h3>
+      <p class="who">Voor elke leerling, individueel of in de klas</p>
+      <p class="price">€0<span> / voor altijd</span></p>
+      <ul>
+        <li>Alle 10.000+ oefenvragen, per domein CE/SE-gemarkeerd</li>
+        <li>Flashcards, oude examens, CE-simulatietoets, studieplan</li>
+        <li>Gratis klas aanmaken met code + klas-ranglijst</li>
+        <li>Geen account nodig, geen advertenties</li>
+      </ul>
+      <div class="tier-foot">Dit verandert nooit. De leerling betaalt niets.</div>
+    </div>
+    <div class="tier school">
+      <span class="tier-tag">In ontwikkeling · pilot</span>
+      <h3>Slagio School</h3>
+      <p class="who">Optioneel, voor de docent / sectie / school</p>
+      <p class="price">Schoollicentie<span> · prijs in overleg</span></p>
+      <ul>
+        <li>Per-leerling voortgang en examen-gereedheid per klas</li>
+        <li>Zie per domein waar de klas vastloopt</li>
+        <li>Gerichte oefening/huiswerk toewijzen op domein</li>
+        <li>Exporteerbaar sectie- en mentorrapport</li>
+        <li>Inloggen via Entree (schoolaccount, SSO)</li>
+      </ul>
+      <div class="tier-foot">Geeft de school regie en inzicht, nooit een muur voor de leerling.</div>
+    </div>
+  </div>
+  <p class="model-note">Zo blijft Slagio's kern gratis én onderscheidend: geen betaalmuur voor leerlingen, geen advertenties, geen dataverkoop. De docentenlaag (en aanvullend donaties en onderwijsfondsen) draagt de kosten, zodat oefenen gratis kan blijven.</p>
 
   <section class="entree">
     <div class="entree-top">
@@ -154,7 +205,9 @@
 
   <h2 class="up-h2">Veelgestelde vragen</h2>
   <div class="faq">
-    <details open><summary>Is Slagio echt gratis voor scholen?</summary><div class="a">Ja, volledig. Er zijn geen licentiekosten en geen verplichte accounts om te oefenen. Slagio is en blijft gratis voor leerlingen, docenten en scholen.</div></details>
+    <details open><summary>Is Slagio gratis voor leerlingen?</summary><div class="a">Ja, altijd en volledig. Oefenen, quizzen, flashcards en oude examens zijn voor leerlingen gratis, zonder account en zonder advertenties. Een klas aanmaken en de klas-ranglijst zijn ook gratis. Dit blijft zo; de leerling betaalt nooit.</div></details>
+    <details><summary>Hoe blijft Slagio dan gratis? Wat is het verdienmodel?</summary><div class="a">Slagio verkoopt geen toegang tot leerlingen en toont geen advertenties. De kosten worden gedragen door een optionele docentenlaag (Slagio School) die scholen inzicht en regie geeft, aangevuld met donaties en onderwijsfondsen. Zo kan de kern gratis blijven zonder betaalmuur voor de leerling.</div></details>
+    <details><summary>Wat kost Slagio School voor een school?</summary><div class="a">De docentenlaag is in ontwikkeling en start als pilot. De prijs bepalen we in overleg met pilotscholen, passend bij een sectie of hele school. Meld je aan als pilotschool om als eerste mee te doen en mee te denken.</div></details>
     <details><summary>Hoe werkt inloggen via Entree?</summary><div class="a">Via de Kennisnet Entree Federatie loggen leerlingen en docenten in met hun bestaande schoolaccount (single sign-on), zonder apart wachtwoord. Deze koppeling is in voorbereiding; je school kan zich nu al aanmelden zodat je er als eerste bij bent.</div></details>
     <details><summary>Moet de ICT-afdeling iets installeren?</summary><div class="a">Nee. Slagio draait in de browser en als installeerbare webapp (PWA). Er is geen installatie of beheer nodig; je kunt het vandaag nog gebruiken.</div></details>
     <details><summary>Hoe zit het met privacy en de AVG?</summary><div class="a">Oefenen kan volledig anoniem, zonder persoonsgegevens. Bij inloggen via Entree worden pseudonieme leerling-ID's (ECK iD) gebruikt, zodat de school geen extra persoonsgegevens hoeft te delen.</div></details>
@@ -163,9 +216,9 @@
 
   <div class="up-cta">
     <h2>Zet Slagio deze week in je les</h2>
-    <p>Meld je school aan voor klassikaal gebruik en (straks) inloggen via Entree. Of probeer meteen de klassen-quiz met je leerlingen.</p>
-    <a class="btn-primary" href="mailto:slagiocompany@gmail.com?subject=Slagio%20voor%20onze%20school">Meld je school aan →</a>
-    <span class="up-cta-sub">Gratis · geen installatie · geen licentie</span>
+    <p>Leerlingen kunnen vandaag al gratis oefenen. Wil je als docent inzicht en regie? Meld je aan als pilotschool voor Slagio School en denk mee over de docentenlaag.</p>
+    <a class="btn-primary" href="mailto:slagiocompany@gmail.com?subject=Slagio%20School%20-%20pilotschool">Word pilotschool →</a>
+    <span class="up-cta-sub">Gratis voor leerlingen · docentenlaag optioneel · geen installatie</span>
   </div>
 </div>
 
