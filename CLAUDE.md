@@ -28,9 +28,11 @@ Load order matters: `data.js`/`state.js` define globals the later modules use. `
 |---|---|
 | `index.html` | HTML screens + SEO (JSON-LD + `<noscript>`). No app logic, no inline CSS/JS. |
 | `styles.css` | **All** styles (~5200 lines). Mobile overrides live in the `@media(max-width:640px)` block — including `display:none` rules that hide long descriptive text on mobile (`.sh p`, `.di p`, `#home-bento`, …). |
-| `data.js` | `LESMETHODES{}`, an **empty** `SAM_RICH{}`, and the lazy-loaders `ensureLevelData()`/`ensureSamData()`/`samReady()`. ~30 KB (the heavy content is split out per niveau, below). |
+| `data.js` | `LESMETHODES{}`, an **empty** `SAM_RICH{}`, and the lazy-loaders `ensureLevelData()`/`ensureSamData()`/`samReady()` + the per-vak hydration runtime `ensureVakData()`/`__hydrateVak()`/`ensureAllVakData()`/`domCount()`. ~30 KB. |
 | `sam-havo.js` / `sam-vwo.js` | The rich summaries (`SAM_RICH` entries, `Object.assign`ed in). ~440 KB each, **lazy-loaded per niveau** via `ensureSamData()` — NOT on the boot path. Add/replace a summary here, not in `data.js`. |
-| `data-havo.js` / `data-vwo.js` | `VAKKEN[]` / `VAKKEN_VWO[]` — subjects, domains, questions. Lazy-loaded per niveau via `ensureLevelData()`. |
+| `data-havo.js` / `data-vwo.js` | **Source of truth** for `VAKKEN[]` / `VAKKEN_VWO[]` (subjects, domains, questions). Written by `build-questions.js`. **Not shipped to the browser directly** — `split-data.js` derives the shipped artifacts from them. |
+| `data-havo.meta.js` / `data-vwo.meta.js` | **Shipped, generated** by `scripts/split-data.js`: the full structure with per-domain counts (`nSv`/`nOe`/`nBeg`) but **no** question arrays. Loaded by `ensureLevelData()` on niveau-pick (~15/8 KB gz). Do not hand-edit. |
+| `q/<niveau>-<vakId>.js` | **Shipped, generated** per subject: `__hydrateVak(...)` with that vak's `sv`/`oe`/`begrippen` + basic `sam`. Loaded on demand by `ensureVakData()` when a subject is opened. Global features (search) hydrate all via `ensureAllVakData()`. Do not hand-edit. |
 | `state.js` | Global `ST` quiz state, `show()` + hash routing, `APP_LEVEL`/`getVK()`/`lvlCol()`, subject grid, security helpers |
 | `cloud.js` | Supabase init, `trackEvent()`, `_DID` (persistent device id), `cloudSet()`/`cloudGet()` |
 | `profile.js` | Profiel & cijfers (SE grades) |
@@ -127,6 +129,8 @@ Filter buttons must call `render()` with the stored raw data.
 
 ## Adding content
 
-To add questions to a subject, find the vak in `VAKKEN` (HAVO, `data.js` line ~682) or `VAKKEN_VWO` (`data.js` line ~2370) and add to the appropriate domein's `sv` (snelle quiz) or `oe` (oud-examen) array.
+To add questions to a subject, edit the **source** files `data-havo.js` (`VAKKEN[]`) / `data-vwo.js` (`VAKKEN_VWO[]`) — the appropriate domein's `sv` (snelle quiz) or `oe` (oud-examen) array — or (preferred) add begrippen and run `node scripts/build-questions.js`.
+
+**Then always run `node scripts/split-data.js`** to regenerate the shipped `data-*.meta.js` + `q/*.js` from the source, and bump the SW cache. `scripts/smoke.mjs` fails if the meta counts drift out of sync with the source, so CI catches a forgotten split.
 
 To add a new event type to the admin dashboard: add it to the `FEAT` array inside `render()` in `admin.html`.

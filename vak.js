@@ -6,6 +6,8 @@ function openVak(id,_noHash){
   // Samenvattingen (SAM_RICH) worden lazy geladen; wacht erop vóór we de detailpagina
   // (met de samenvatting-tab) opbouwen, anders valt die terug op de basis-sam.
   if(typeof ensureSamData==='function'&&typeof samReady==='function'&&typeof APP_LEVEL!=='undefined'&&!samReady(APP_LEVEL)){ensureSamData(APP_LEVEL,function(){openVak(id,_noHash);});return;}
+  // Vraag-data (sv/oe/begrippen + basis-sam) laadt per vak; hydrateer dit vak vóór opbouw.
+  if(typeof ensureVakData==='function'&&typeof vakHydrated==='function'&&typeof APP_LEVEL!=='undefined'&&!vakHydrated(APP_LEVEL,id)){ensureVakData(APP_LEVEL,id,function(){openVak(id,_noHash);});return;}
   ST.vak=getVK().find(v=>v.id===id);
   // Echte, indexeerbare URL i.p.v. een hash: dezelfde URL als de statische
   // SEO-pagina van dit vak (/vakken/<niveau>-<vak>.html). Zo is de in-app pagina
@@ -677,6 +679,7 @@ function openDomein(domId,_noHash){
   // De samenvatting komt uit SAM_RICH (lazy geladen); wacht erop vóór we renderen,
   // anders valt de samenvatting terug op de basisversie.
   if(typeof ensureSamData==='function'&&typeof samReady==='function'&&typeof APP_LEVEL!=='undefined'&&!samReady(APP_LEVEL)){ensureSamData(APP_LEVEL,function(){openDomein(domId,_noHash);});return;}
+  if(typeof ensureVakData==='function'&&typeof vakHydrated==='function'&&typeof APP_LEVEL!=='undefined'&&!vakHydrated(APP_LEVEL,ST.vak.id)){ensureVakData(APP_LEVEL,ST.vak.id,function(){openDomein(domId,_noHash);});return;}
   const d=ST.vak.domeinen.find(x=>x.id===domId);
   if(!d)return;
   const v=ST.vak;

@@ -706,12 +706,12 @@ function getDailyChallenge(){
     if(d.date===today){
       const vak=getVK().find(v=>v.id===d.vakId);
       const dom=vak&&vak.domeinen.find(x=>x.id===d.domeinId);
-      if(vak&&dom&&dom.sv&&dom.sv.length>=3)return d;
+      if(vak&&dom&&domCount(dom,'sv')>=3)return d;
     }
   }catch(e){}
-  // Pick a fresh challenge from all valid HAVO/VWO domains
+  // Pick a fresh challenge from all valid HAVO/VWO domains (counts uit meta — geen hydratatie nodig)
   const all=[];
-  getVK().forEach(v=>v.domeinen.forEach(d=>{if(d.sv&&d.sv.length>=3)all.push({vak:v,domein:d});}));
+  getVK().forEach(v=>v.domeinen.forEach(d=>{if(domCount(d,'sv')>=3)all.push({vak:v,domein:d});}));
   if(!all.length)return null;
   const pick=all[Math.floor(Math.random()*all.length)];
   const dc={date:today,vakId:pick.vak.id,vakNaam:pick.vak.naam,domeinId:pick.domein.id,domeinNaam:pick.domein.naam,done:false};
@@ -754,10 +754,13 @@ function startDailyChallenge(){
     if(!dc||dc.done)return;
     const vak=getVK().find(v=>v.id===dc.vakId);
     if(!vak){_dcCache=null;localStorage.removeItem(_dcLevelKey());renderDailyChallenge();showToast('Uitdaging vernieuwd - probeer opnieuw!','#f97316');return;}
-    const domein=vak.domeinen.find(d=>d.id===dc.domeinId);
-    if(!domein||!domein.sv||!domein.sv.length){_dcCache=null;localStorage.removeItem(_dcLevelKey());renderDailyChallenge();showToast('Uitdaging vernieuwd - probeer opnieuw!','#f97316');return;}
-    ST.vak=vak;ST.domein=domein;ST.isDailyChallenge=true;
-    startQ('snel');
+    const _go=function(){
+      const domein=vak.domeinen.find(d=>d.id===dc.domeinId);
+      if(!domein||!domCount(domein,'sv')){_dcCache=null;localStorage.removeItem(_dcLevelKey());renderDailyChallenge();showToast('Uitdaging vernieuwd - probeer opnieuw!','#f97316');return;}
+      ST.vak=vak;ST.domein=domein;ST.isDailyChallenge=true;
+      startQ('snel');
+    };
+    if(typeof ensureVakData==='function'&&typeof vakHydrated==='function'&&!vakHydrated(APP_LEVEL,vak.id)){ensureVakData(APP_LEVEL,vak.id,_go);}else{_go();}
   }catch(err){
     console.error('[DC]',err);
     showToast('Kon quiz niet starten: '+err.message,'#ef4444');
@@ -815,7 +818,7 @@ function startStreakQuiz(){
     mijn.forEach(vakId=>{
       const vak=vakArr.find(v=>v.id===vakId);
       if(!vak)return;
-      vak.domeinen?.filter(d=>(d.sv?.length||0)>0).forEach(dom=>{
+      vak.domeinen?.filter(d=>domCount(d,'sv')>0).forEach(dom=>{
         const p=prog[vakId+'_'+dom.id+'_snel'];
         const sc=p?(p.best||0):-1;
         if(sc<lowestScore){lowestScore=sc;bestVak=vakId;bestDom=dom.id;}
@@ -835,8 +838,8 @@ function _showQuickStartSheet(){
   if(document.getElementById('qs-sheet'))return;
   const vakArr=APP_LEVEL==='vwo'?(typeof VAKKEN_VWO!=='undefined'?VAKKEN_VWO:[]):(typeof VAKKEN!=='undefined'?VAKKEN:[]);
   const topVakken=[...vakArr].sort((a,b)=>{
-    const qa=a.domeinen?.reduce((s,d)=>s+(d.sv?.length||0),0)||0;
-    const qb=b.domeinen?.reduce((s,d)=>s+(d.sv?.length||0),0)||0;
+    const qa=a.domeinen?.reduce((s,d)=>s+domCount(d,'sv'),0)||0;
+    const qb=b.domeinen?.reduce((s,d)=>s+domCount(d,'sv'),0)||0;
     return qb-qa;
   }).slice(0,8);
   const el=document.createElement('div');
@@ -864,8 +867,8 @@ function _showQuickStartSheet(){
   document.body.appendChild(el);
   const grid=document.getElementById('qs-grid');
   topVakken.forEach(vak=>{
-    const firstDom=vak.domeinen?.find(d=>(d.sv?.length||0)>0);
-    const qCount=vak.domeinen?.reduce((s,d)=>s+(d.sv?.length||0),0)||0;
+    const firstDom=vak.domeinen?.find(d=>domCount(d,'sv')>0);
+    const qCount=vak.domeinen?.reduce((s,d)=>s+domCount(d,'sv'),0)||0;
     const btn=document.createElement('button');
     btn.className='qs-card';
     btn.innerHTML=`<div class="qs-card-name">${vak.naam}</div><div class="qs-card-sub">${qCount} vragen · direct starten</div>`;

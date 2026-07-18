@@ -60,6 +60,19 @@ try {
   // Informatief, geen build-breuk; de echte regressie-rem is het totaalaantal hierboven.
   const emptyN = h.empty + v.empty;
   emptyN <= 16 ? warn(emptyN + ' domein(en) zonder vragen (verwacht: vaardigheden/keuze)') : bad(emptyN + ' lege domeinen — meer dan verwacht, mogelijk regressie');
+
+  // Meta+split in sync met de volledige bron? (counts kloppen, elk q-bestand bestaat)
+  try {
+    for (const [metaFile, name, lvl, full] of [['data-havo.meta.js','VAKKEN','havo',vk.H],['data-vwo.meta.js','VAKKEN_VWO','vwo',vk.V]]) {
+      const mg = {}; new Function('g', read(metaFile) + `\ng.M=${name};`)(mg);
+      const metaTot = mg.M.reduce((s,vak)=>s+vak.domeinen.reduce((a,d)=>a+(d.nSv||0)+(d.nOe||0),0),0);
+      const fullTot = full.reduce((s,vak)=>s+vak.domeinen.reduce((a,d)=>a+(d.sv||[]).length+(d.oe||[]).length,0),0);
+      if (metaTot !== fullTot) { bad(`${metaFile} counts (${metaTot}) ≠ bron (${fullTot}) — draai split-data.js opnieuw`); }
+      else ok(`${metaFile}: counts in sync (${metaTot})`);
+      const missing = full.filter(vak => !fs.existsSync(path.join(ROOT, 'q', `${lvl}-${vak.id}.js`))).map(v=>v.id);
+      missing.length ? bad(`q-bestanden ontbreken: ${missing.join(', ')}`) : ok(`alle ${full.length} q-bestanden aanwezig (${lvl})`);
+    }
+  } catch (e) { bad('meta/split-controle mislukt: ' + e.message); }
 } catch (e) { bad('VAKKEN laden mislukt: ' + e.message); }
 
 // ── 4. service worker: cache-versie + alle ASSETS bestaan ──

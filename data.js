@@ -29,7 +29,7 @@ function ensureLevelData(level,cb){
   if(_levelDataLoading[level])return;
   _levelDataLoading[level]=true;
   var s=document.createElement('script');
-  s.src='/data-'+level+'.js';
+  s.src='/data-'+level+'.meta.js';   // lichte metadata (structuur + counts); vragen laden per vak
   var done=function(ok){
     _levelDataLoading[level]=false;
     if(ok){try{_processLevelOe(level==='vwo'?VAKKEN_VWO:VAKKEN);}catch(e){}}
@@ -63,4 +63,66 @@ function ensureSamData(level,cb){
   };
   sc.onload=done;sc.onerror=done;
   document.head.appendChild(sc);
+}
+
+// ═══════ VAK-DATA: lazy per-vak laden (q/<niveau>-<vakId>.js) ═══════
+// De meta (hierboven) bevat alleen structuur + counts. De zware vraag-arrays
+// (sv/oe/begrippen) en de basis-samenvatting per domein zitten in een per-vak
+// bestand dat pas laadt wanneer een leerling dat vak opent. Zo downloadt de
+// bezoeker bij niveau-keuze ~15 KB i.p.v. de hele vragenberg.
+function _vakObj(level,vakId){
+  var arr=level==='vwo'?(typeof VAKKEN_VWO!=='undefined'&&VAKKEN_VWO):(typeof VAKKEN!=='undefined'&&VAKKEN);
+  if(!arr)return null;
+  for(var i=0;i<arr.length;i++)if(arr[i].id===vakId)return arr[i];
+  return null;
+}
+function vakHydrated(level,vakId){var v=_vakObj(level,vakId);return !!(v&&v._q);}
+var _vakCbs={},_vakLoading={};
+// wordt aangeroepen door q/<niveau>-<vakId>.js
+function __hydrateVak(level,vakId,payload){
+  var v=_vakObj(level,vakId); if(!v){return;}
+  (v.domeinen||[]).forEach(function(d){
+    var p=payload[d.id]; if(!p)return;
+    if(p.sv)d.sv=p.sv; if(p.oe)d.oe=p.oe; if(p.begrippen)d.begrippen=p.begrippen; if(p.sam)d.sam=p.sam;
+    (d.oe||[]).forEach(function(q){ // jaar/tijdvak afleiden (zoals _processLevelOe)
+      if(!q.jaar){var m=q.bron&&q.bron.match(/(\d{4})\s+Tijdvak\s+(\d)/i);if(m){q.jaar=parseInt(m[1]);q.tijdvak=parseInt(m[2]);}}
+    });
+  });
+  v._q=true;
+}
+function ensureVakData(level,vakId,cb){
+  if(level!=='havo'&&level!=='vwo'){if(cb)cb();return;}
+  if(!_levelLoaded(level)){ensureLevelData(level,function(){ensureVakData(level,vakId,cb);});return;}
+  if(vakHydrated(level,vakId)){if(cb)cb();return;}
+  var key=level+'_'+vakId;
+  if(cb){(_vakCbs[key]=_vakCbs[key]||[]).push(cb);}
+  if(_vakLoading[key])return;
+  _vakLoading[key]=true;
+  var s=document.createElement('script');
+  s.src='/q/'+level+'-'+vakId+'.js';
+  var done=function(ok){
+    _vakLoading[key]=false;
+    var cbs=_vakCbs[key]||[];_vakCbs[key]=[];
+    cbs.forEach(function(f){try{f();}catch(e){}});
+    if(!ok){try{if(window.showToast)showToast('Kon vraagdata niet laden - controleer je verbinding');}catch(e){}}
+  };
+  s.onload=function(){done(true);};s.onerror=function(){done(false);};
+  document.head.appendChild(s);
+}
+// hydrateer álle vakken van een niveau (voor globale features: zoeken, daily challenge-scan)
+function ensureAllVakData(level,cb){
+  if(level!=='havo'&&level!=='vwo'){if(cb)cb();return;}
+  if(!_levelLoaded(level)){ensureLevelData(level,function(){ensureAllVakData(level,cb);});return;}
+  var arr=level==='vwo'?VAKKEN_VWO:VAKKEN,pend=0,fired=false;
+  var fin=function(){if(!fired&&pend===0){fired=true;if(cb)cb();}};
+  arr.forEach(function(v){if(!v._q){pend++;ensureVakData(level,v.id,function(){pend--;fin();});}});
+  fin();
+}
+// telling per domein: gebruikt de meta-count (nSv/nOe/nBeg) als het vak nog niet
+// gehydrateerd is, anders de echte array-lengte. Werkt in beide toestanden.
+function domCount(d,which){
+  if(!d)return 0;
+  var n=d[which==='sv'?'nSv':which==='oe'?'nOe':'nBeg'];
+  if(typeof n==='number')return n;
+  var a=d[which];return (a&&a.length)||0;
 }

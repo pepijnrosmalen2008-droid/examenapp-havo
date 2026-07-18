@@ -372,7 +372,15 @@ function _hl(text,q){
   return (from>0?'…':'')+s.slice(from,i)+'<mark class="sb-res-mark">'+s.slice(i,i+q.length)+'</mark>'+s.slice(i+q.length,i+q.length+55)+(s.length>i+q.length+55?'…':'');
 }
 
+var _deepHydrated=false,_deepHydrating=false,_deepPendingQ='';
 function _showDeepResults(q,rawQ){
+  // Zoeken doorzoekt álle vragen van het niveau; die laden per vak, dus hydrateer
+  // ze eenmalig on-demand. Tot dat klaar is toont de zoeker de al-geladen vakken;
+  // daarna herdraait de zoekopdracht met de volledige set.
+  if(!_deepHydrated&&typeof ensureAllVakData==='function'&&typeof APP_LEVEL!=='undefined'){
+    _deepPendingQ=rawQ;
+    if(!_deepHydrating){_deepHydrating=true;ensureAllVakData(APP_LEVEL,function(){_deepHydrated=true;_deepHydrating=false;if(_deepPendingQ&&_deepPendingQ.trim().length>=2)filterGrid(_deepPendingQ);});}
+  }
   const vakken=getVK();
   const rVak=[],rDom=[];
   _sbData=[];

@@ -97,10 +97,11 @@ function _zkEnsureData(cb){
     s.onerror=()=>{_zoekCeLoaded=true;cb();}; // zonder oud-examens is prima
     document.head.appendChild(s);
   }
-  const ll=(typeof _levelLoaded==='function');
-  const eld=(typeof ensureLevelData==='function');
-  function vwo(){ if(eld&&ll&&!_levelLoaded('vwo'))ensureLevelData('vwo',loadCe); else loadCe(); }
-  function havo(){ if(eld&&ll&&!_levelLoaded('havo'))ensureLevelData('havo',vwo); else vwo(); }
+  // De zoekindex omvat álle vragen + samenvattingen; hydrateer beide niveaus volledig
+  // (per-vak vraagbestanden) zodat sv/oe/sam in de index komen. Alleen bij zoekgebruik.
+  const eav=(typeof ensureAllVakData==='function');
+  function vwo(){ if(eav)ensureAllVakData('vwo',loadCe); else loadCe(); }
+  function havo(){ if(eav)ensureAllVakData('havo',vwo); else vwo(); }
   havo();
 }
 

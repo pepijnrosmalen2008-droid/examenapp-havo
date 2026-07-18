@@ -1,5 +1,5 @@
-const CACHE = 'slagio-v386';
-const ASSETS = ['/', '/index.html', '/over-ons.html', '/faq.html', '/privacy.html', '/styles.css', '/data.js', '/data-havo.js', '/data-vwo.js', '/state.js', '/cloud.js', '/profile.js', '/vak.js', '/quiz.js', '/tools.js', '/sim.js', '/lb.js', '/features.js', '/schedule.js', '/v4.js', '/zoek.js', '/klas.js', '/init.js', '/sam-anim.js', '/sam-clip.js', '/ico-swap.js', '/examens.js', '/ce_data.js', '/manifest.json', '/icon-192.png', '/icon-512.png', '/logo.svg', '/apple-touch-icon.png'];
+const CACHE = 'slagio-v387';
+const ASSETS = ['/', '/index.html', '/over-ons.html', '/faq.html', '/privacy.html', '/styles.css', '/data.js', '/data-havo.meta.js', '/data-vwo.meta.js', '/state.js', '/cloud.js', '/profile.js', '/vak.js', '/quiz.js', '/tools.js', '/sim.js', '/lb.js', '/features.js', '/schedule.js', '/v4.js', '/zoek.js', '/klas.js', '/init.js', '/sam-anim.js', '/sam-clip.js', '/ico-swap.js', '/examens.js', '/ce_data.js', '/manifest.json', '/icon-192.png', '/icon-512.png', '/logo.svg', '/apple-touch-icon.png'];
 
 self.addEventListener('install', e => {
   e.waitUntil(caches.open(CACHE).then(c => c.addAll(ASSETS)));
@@ -39,8 +39,9 @@ self.addEventListener('fetch', e => {
 
   // Grote/zelden wijzigende bestanden (data + media) blijven cache-first: die
   // wil je niet elke load opnieuw downloaden (data-havo.js is ~800 KB).
-  const DATA_FILES = ['/data.js', '/data-havo.js', '/data-vwo.js', '/sam-havo.js', '/sam-vwo.js', '/ce_data.js', '/examens.js'];
-  const isBigData = DATA_FILES.includes(url.pathname);
+  const DATA_FILES = ['/data.js', '/data-havo.meta.js', '/data-vwo.meta.js', '/sam-havo.js', '/sam-vwo.js', '/ce_data.js', '/examens.js'];
+  // Per-vak vraagbestanden (/q/*.js) laden lui en wijzigen zelden: cache-first (SWR).
+  const isBigData = DATA_FILES.includes(url.pathname) || url.pathname.startsWith('/q/');
   const isCode = !isBigData && (url.pathname.endsWith('.js') || url.pathname.endsWith('.css'));
 
   if (isCode) {
