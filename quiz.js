@@ -153,6 +153,22 @@ function toggleFlagQ(){
   if(btn)btn.classList.toggle('flagged',ST.flagged.has(i));
   haptic&&haptic([10]);
 }
+// Errata-lus: leerling meldt een foute vraag. Eén tik → gaat als 'vraag_fout'-event
+// naar het admin-dashboard (Gemelde vragen), waar het gecontroleerd kan worden.
+var _reportedQ=new Set();
+function reportQ(){
+  const q=ST.vragen&&ST.vragen[ST.idx];
+  if(!q){if(typeof showToast==='function')showToast('Geen vraag om te melden','#64748b');return;}
+  const key=((ST.vak&&ST.vak.id)||'')+'|'+((ST.domein&&ST.domein.id)||'')+'|'+((q.v||'').slice(0,60));
+  if(_reportedQ.has(key)){if(typeof showToast==='function')showToast('Deze vraag is al gemeld — bedankt!','#64748b');return;}
+  _reportedQ.add(key);
+  const correct=(q.o&&typeof q.c==='number')?q.o[q.c]:((q.a&&typeof q.c==='number')?q.a[q.c]:null);
+  try{if(typeof trackEvent==='function')trackEvent('vraag_fout',{domein:(ST.domein&&ST.domein.naam)||null,domein_id:(ST.domein&&ST.domein.id)||null,mode:ST.mode||null,vraag:(q.v||'').slice(0,240),correct:correct});}catch(e){}
+  haptic&&haptic([10,30,10]);
+  if(typeof showToast==='function')showToast('Bedankt! We controleren deze vraag. ✓','#22c55e');
+  const btn=document.getElementById('quiz-report-btn');
+  if(btn){btn.classList.add('reported');btn.setAttribute('title','Gemeld — bedankt!');}
+}
 function toonV(){
   const q=ST.vragen[ST.idx];
   const tot=ST.adaptive?ST.aqTarget:ST.vragen.length;

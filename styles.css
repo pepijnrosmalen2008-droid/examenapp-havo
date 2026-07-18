@@ -5159,6 +5159,8 @@ html.dark{
 .qtb-snd,.qtb-flag{color:#fff;display:inline-flex;align-items:center;justify-content:center}
 .qtb-flag.flagged{color:#f43f5e}
 .qtb-flag.flagged svg{fill:#f43f5e}
+#quiz-report-btn.reported{color:#22c55e;opacity:1}
+#quiz-report-btn.reported svg{fill:rgba(34,197,94,.18)}
 
 /* ── Bento stat icons (SVG, replaced 🔥⭐🏅📈 emoji) ─────────────── */
 .bento-si{display:flex;align-items:center;justify-content:center}

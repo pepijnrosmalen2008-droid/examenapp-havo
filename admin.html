@@ -530,6 +530,13 @@ function render(lb, ev, evMissing, ao=[], fb=[], ql=[], ce=[]) {
   });
   const vakAbList=Object.entries(vakAbMap).map(([v,d])=>({vak:v,c:d.c,a:d.a,tot:d.c+d.a,pct:Math.round(d.a/(d.c+d.a)*100)})).filter(d=>d.tot>=2).sort((a,b)=>b.pct-a.pct).slice(0,8);
 
+  // ── Gemelde vragen (errata-lus) ──
+  const errata = ev.filter(e=>e.event_type==='vraag_fout');
+  const errataVakCount = {};
+  errata.forEach(e=>{const v=e.vak_naam||'?';errataVakCount[v]=(errataVakCount[v]||0)+1;});
+  const errataTopVak = Object.entries(errataVakCount).sort((a,b)=>b[1]-a[1]);
+  const _esc = s => String(s==null?'':s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+
   document.getElementById('content').innerHTML = `
 
     <!-- ── Tijdfilter ── -->
@@ -539,6 +546,23 @@ function render(lb, ev, evMissing, ao=[], fb=[], ql=[], ce=[]) {
       <button class="filter-btn ${window._filter==='7d'?'active':''}" onclick="window._filter='7d';render(window._lb,window._ev,window._evMissing,window._ao||[],window._fb||[],window._ql||[],window._ce||[])">Afgelopen 7 dagen</button>
       <button class="filter-btn ${window._filter==='24h'?'active':''}" onclick="window._filter='24h';render(window._lb,window._ev,window._evMissing,window._ao||[],window._fb||[],window._ql||[],window._ce||[])">Afgelopen 24 uur</button>
     </div>
+
+    <!-- ── Gemelde vragen (errata-lus) ── -->
+    <div class="sec">🚩 Gemelde vragen ${errata.length?`<span style="font-size:.8rem;color:var(--red);font-weight:800">${errata.length}</span>`:''}</div>
+    ${errata.length?`
+    <div class="panel">
+      <div class="panel-h">Leerlingen die "fout in deze vraag" meldden — nieuwste eerst</div>
+      <div style="display:flex;flex-wrap:wrap;gap:6px;padding:2px 0 10px">
+        ${errataTopVak.map(([v,n])=>`<span style="background:var(--card2);border:1px solid var(--border);border-radius:8px;padding:4px 9px;font-size:12px;color:var(--muted)"><b style="color:var(--fg)">${_esc(v)}</b> ${n}</span>`).join('')}
+      </div>
+      <div style="display:flex;flex-direction:column;gap:8px;max-height:420px;overflow-y:auto">
+        ${errata.slice(0,60).map(e=>{const m=e.meta||{};const dt=new Date(e.created_at).toLocaleDateString('nl-NL',{day:'numeric',month:'short'});return `<div style="background:var(--card2);border:1px solid var(--border);border-left:3px solid var(--red);border-radius:10px;padding:10px 12px">
+          <div style="font-size:11px;color:var(--muted);margin-bottom:4px"><b style="color:var(--fg)">${_esc(e.vak_naam||'?')}</b>${m.domein?' · '+_esc(m.domein):''}${m.mode?' · '+_esc(m.mode):''} · ${dt}${e.niveau?' · '+_esc(e.niveau):''}</div>
+          <div style="font-size:13px;color:var(--fg);line-height:1.4">${_esc(m.vraag||'(geen vraagtekst meegestuurd)')}</div>
+          ${m.correct!=null?`<div style="font-size:11px;color:var(--green);margin-top:4px">Als juist gemarkeerd: ${_esc(m.correct)}</div>`:''}
+        </div>`;}).join('')}
+      </div>
+    </div>`:`<div class="panel"><div style="padding:14px;color:var(--muted);font-size:13px">Nog geen meldingen. Leerlingen kunnen tijdens een quiz op 🚩 tikken om een foute vraag te melden.</div></div>`}
 
     <!-- ── CE-cijfers ── -->
     ${ce.length?`
