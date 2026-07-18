@@ -86,23 +86,64 @@ async function saveLeaderboardEntry(entry){
   // Klas-ranglijst: tel deze score mee als de leerling in een klas zit.
   try{ if(typeof klasScoreSave==='function') klasScoreSave(entry); }catch(e){}
 }
+// ═══════ LEADERBOARD-BOTS (opvulling) ═══════
+// Twee smaken: accounts die duidelijk bots zijn (robot-namen + robot-avatar,
+// vaak strakke ronde scores) en accounts die op echte leerlingen lijken
+// (gewone naam + dier-avatar). Puur voor opvulling; ze worden lokaal
+// samengevoegd met de echte Supabase-scores en ranken gewoon mee.
+const _BOT_VAKNAAM={nl:'Nederlands',wa:'Wiskunde A',wb:'Wiskunde B',bi:'Biologie',sk:'Scheikunde',na:'Natuurkunde',en:'Engels',ec:'Economie',be:'Bedrijfseconomie',gs:'Geschiedenis',ak:'Aardrijkskunde',mw:'Maatschappijwetenschappen',du:'Duits',fr:'Frans',gr:'Grieks',la:'Latijn',in:'Informatica'};
+function _mkBots(niveau,rows){
+  return rows.map((r,i)=>{
+    const [naam,avatar,score,goed,vak,avgTijd]=r;
+    return{uid:'bot_'+niveau+'_'+i,naam,avatar,animalId:null,stageIdx:null,
+      featuredBadgeId:null,badgeIds:[],vak,vakNaam:_BOT_VAKNAAM[vak]||vak,
+      domeinId:null,domeinNaam:null,score,goed,tot:10,avgTijd,niveau,
+      date:'2026-05-'+String(9+(i%19)).padStart(2,'0'),_bot:true};
+  });
+}
+const LB_BOTS={
+  havo:_mkBots('havo',[
+    ['OefenBot 3000','🤖',940,10,'wa',5],['Sanne','🦊',905,10,'bi',7],
+    ['QuizMachine','⚙️',890,10,'na',4],['Daan','🐼',865,9,'ec',8],
+    ['StudieBot_v2','🤖',850,9,'nl',5],['Fenna','🦉',815,9,'en',9],
+    ['Lucas','🐧',780,9,'gs',10],['ExamenBot','🤖',760,8,'sk',6],
+    ['Noor','🐰',720,8,'ak',11],['Sem','🐨',690,8,'wb',9],
+    ['RoboLeerling','🤖',655,8,'bi',7],['Julia K.','🦋',610,7,'nl',12],
+    ['Bram','🐢',560,7,'en',13],['AI-Tutor','🤖',510,7,'ec',6],
+    ['Milan','🦁',450,6,'gs',12],['Yara','🐝',380,6,'bi',14],
+  ]),
+  vwo:_mkBots('vwo',[
+    ['OefenBot 3000','🤖',945,10,'wb',5],['Thijs','🦊',910,10,'na',7],
+    ['QuizMachine','⚙️',895,10,'sk',4],['Isa','🦉',870,9,'bi',8],
+    ['StudieBot_v2','🤖',855,9,'wa',5],['Lars','🐼',820,9,'ec',9],
+    ['Fenna','🐧',785,9,'gs',10],['ExamenBot','🤖',765,8,'in',6],
+    ['Tess','🐰',725,8,'en',11],['Sven','🐨',695,8,'du',9],
+    ['RoboLeerling','🤖',660,8,'na',7],['Nora','🦋',615,7,'la',12],
+    ['Jesse','🐢',565,7,'gr',13],['AI-Tutor','🤖',515,7,'wa',6],
+    ['Evi','🦁',455,6,'mw',12],['Guus','🐝',385,6,'fr',14],
+  ]),
+};
 async function loadLeaderboardFromSupabase(){
+  let remote=[];
   try{
     const {data,error}=await SB.from('leaderboard').select('*').eq('niveau',APP_LEVEL).order('score',{ascending:false}).limit(200);
-    if(error||!data)return;
-    const remote=data.map(d=>({
-      naam:d.naam,avatar:d.avatar,
-      animalId:d.animal_id||null,stageIdx:d.stage_idx??null,
-      featuredBadgeId:d.featured_badge_id||null,
-      badgeIds:d.badge_ids||[],
-      vak:d.vak,vakNaam:d.vak_naam,
-      domeinId:d.domein_id||null,domeinNaam:d.domein_naam||null,
-      score:d.score,goed:d.correct,tot:d.total,uid:d.user_id,
-      avgTijd:d.avg_tijd||null,niveau:d.niveau,date:d.created_at?.slice(0,10)
-    }));
-    const merged=remote.filter(e=>e.score<=1000&&(e.tot||0)>5).sort((a,b)=>b.score-a.score).slice(0,200);
-    localStorage.setItem(getLbKey(),JSON.stringify(merged));
+    if(!error&&data){
+      remote=data.map(d=>({
+        naam:d.naam,avatar:d.avatar,
+        animalId:d.animal_id||null,stageIdx:d.stage_idx??null,
+        featuredBadgeId:d.featured_badge_id||null,
+        badgeIds:d.badge_ids||[],
+        vak:d.vak,vakNaam:d.vak_naam,
+        domeinId:d.domein_id||null,domeinNaam:d.domein_naam||null,
+        score:d.score,goed:d.correct,tot:d.total,uid:d.user_id,
+        avgTijd:d.avg_tijd||null,niveau:d.niveau,date:d.created_at?.slice(0,10)
+      }));
+    }
   }catch(e){console.warn('leaderboard load error:',e);}
+  // Voeg bots toe als opvulling (altijd, ook als Supabase leeg/onbereikbaar is).
+  const bots=(LB_BOTS[APP_LEVEL]||[]);
+  const merged=[...remote,...bots].filter(e=>e.score<=1000&&(e.tot||0)>5).sort((a,b)=>b.score-a.score).slice(0,200);
+  localStorage.setItem(getLbKey(),JSON.stringify(merged));
 }
 // ═══════ LB PROFILE ═══════
 function getTierLabel(score){

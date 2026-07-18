@@ -387,9 +387,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,700;12..96,800&display=swap" rel="stylesheet">
-<!-- AdSense script wordt dynamisch geladen na cookie-consent -->
-<link rel="stylesheet" href="/styles.css">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,700;12..96,800&display=swap" rel="stylesheet"><link rel="stylesheet" href="/styles.css">
 </head>
 <body>
 <div id="splash-screen" aria-hidden="true">
@@ -839,12 +837,6 @@
   </div>
 
   <!-- Ad -->
-  <div class="ad-wrapper" id="ad-home">
-    <span class="ad-label">Advertentie</span>
-    <div class="ad-slot ad-slot--banner">
-      <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-3580526892359138" data-ad-slot="0000000000" data-ad-format="horizontal" data-full-width-responsive="true"></ins>
-    </div>
-  </div>
 
   <!-- VAKKEN HEADER -->
   <div id="hm-stats-strip-wrap"></div>
@@ -915,8 +907,6 @@
     <span class="footer-sep">·</span>
     <a href="#" onclick="event.preventDefault();show('sc-privacy')">Privacybeleid</a>
     <span class="footer-sep">·</span>
-    <a href="#" onclick="event.preventDefault();cookieReset()">Cookie-instellingen</a>
-    <span class="footer-sep">·</span>
     <a href="https://www.examenblad.nl" target="_blank" rel="noopener">Examenblad.nl</a>
     <span class="footer-sep">·</span>
     <a href="mailto:slagiocompany@gmail.com">Contact &amp; feedback</a>
@@ -981,12 +971,6 @@
   <div class="ibox"><div class="ihd" onclick="tog(this)"><h3>Profielen HAVO</h3><span>▼</span></div>
   <div class="ibd"><ul><li><strong>C&M:</strong> NE, EN, GS/AK, MA, WA/WB + keuzevakken</li><li><strong>E&M:</strong> NE, EN, EC, WA, MA + keuzevakken</li><li><strong>N&G:</strong> NE, EN, BI, SK/NA, WA/WB + keuzevakken</li><li><strong>N&T:</strong> NE, EN, NA, WB, SK/BI + keuzevakken</li></ul></div></div>
   <!-- Ad: info pagina (rustmoment, browsen) -->
-  <div class="ad-wrapper" id="ad-info" style="margin-top:20px">
-    <span class="ad-label">Advertentie</span>
-    <div class="ad-slot ad-slot--banner">
-      <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-3580526892359138" data-ad-slot="0000000000" data-ad-format="auto" data-full-width-responsive="true"></ins>
-    </div>
-  </div>
 </div>
 </div>
 
@@ -1310,12 +1294,6 @@
   </div>
   <div class="rbd" id="rbd"></div>
   <!-- Ad: na quiz resultaat (rustmoment) -->
-  <div class="ad-wrapper" id="ad-results">
-    <span class="ad-label">Advertentie</span>
-    <div class="ad-slot ad-slot--inline">
-      <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-3580526892359138" data-ad-slot="0000000000" data-ad-format="auto" data-full-width-responsive="true"></ins>
-    </div>
-  </div>
   <div id="quiz-next-action"></div>
 <div id="adaptive-res-wrap"></div>
 <div id="chal-result-wrap"></div>
@@ -1657,12 +1635,6 @@
     <div id="actieplan-content"><p class="ap-empty">Laden...</p></div>
   </div>
   <!-- Ad: calculator pagina (rustmoment) -->
-  <div class="ad-wrapper" id="ad-calc" style="margin-top:20px">
-    <span class="ad-label">Advertentie</span>
-    <div class="ad-slot ad-slot--inline">
-      <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-3580526892359138" data-ad-slot="0000000000" data-ad-format="auto" data-full-width-responsive="true"></ins>
-    </div>
-  </div>
 </div>
 </div>
 
@@ -1934,26 +1906,18 @@
   <p>Als je push-meldingen inschakelt, slaat je browser een meldingsvoorkeur op. Bij gebruik van de Chrome PWA (geïnstalleerde app) kan de browser dagelijkse studiherinneringen sturen via de <em>Periodic Background Sync</em>-API. Hierbij worden <strong>geen</strong> persoonlijke gegevens naar externe servers verstuurd - de melding wordt lokaal gegenereerd op basis van je studiestreak en examenrooster. Je kunt meldingen op elk moment uitzetten via je browserinstellingen of via Profiel → Persoonlijke gegevens in de app.</p>
 
   <h3>4. Cookies en advertenties</h3>
-  <p>Wij gebruiken <strong>Google AdSense</strong> om advertenties te tonen. Google kan cookies plaatsen op je apparaat om advertenties te personaliseren. Dit betreft:</p>
-  <ul>
-    <li><strong>Functionele cookies:</strong> om je cookiekeuze te onthouden</li>
-    <li><strong>Advertentiecookies (Google):</strong> voor gepersonaliseerde advertenties, waaronder het DoubleClick-cookie</li>
-    <li><strong>Analytische cookies (Google):</strong> voor anonieme gebruiksstatistieken</li>
-  </ul>
-  <p>Als je cookies <strong>weigert</strong> via onze cookiebanner worden er géén gepersonaliseerde advertenties getoond. Google kan dan nog niet-gepersonaliseerde advertenties tonen op basis van de pagina-inhoud.</p>
-  <p>Je advertentievoorkeuren aanpassen: <a href="https://www.google.com/settings/ads" target="_blank" rel="noopener">Google Advertentie-instellingen</a> of <a href="https://www.aboutads.info/choices/" target="_blank" rel="noopener">aboutads.info</a>. Meer over hoe Google gegevens gebruikt: <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Privacybeleid van Google</a>.</p>
+  <p>Slagio toont <strong>geen advertenties</strong> en plaatst <strong>geen tracking- of advertentiecookies</strong>. We gebruiken ook geen externe analyse- of reclamediensten die je over websites volgen.</p>
+  <p>Je voorkeuren en studievoortgang worden bewaard in de lokale opslag van je eigen browser (localStorage), niet in cookies die naar externe partijen gaan. Daarvoor is geen toestemming via een cookiebanner nodig; je kunt deze gegevens op elk moment wissen via je browserinstellingen of de wis-knoppen in de app.</p>
 
   <h3>5. Derden en verwerkers</h3>
   <ul>
     <li><strong>Supabase Inc.</strong> - cloud-opslag voor accountgegevens (EU-servers); <a href="https://supabase.com/privacy" target="_blank" rel="noopener">privacybeleid Supabase</a></li>
-    <li><strong>Google LLC</strong> - advertenties via AdSense; <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">privacybeleid Google</a></li>
     <li><strong>GitHub Inc.</strong> - hosting van de applicatie; <a href="https://docs.github.com/en/site-policy/privacy-policies/github-privacy-statement" target="_blank" rel="noopener">privacybeleid GitHub</a></li>
   </ul>
   <p>Wij verkopen of delen jouw gegevens nooit met andere partijen dan de bovengenoemde verwerkers, en uitsluitend voor de beschreven doeleinden.</p>
 
   <h3>6. Rechtsgrondslag (AVG/GDPR)</h3>
   <ul>
-    <li><strong>Advertentiecookies:</strong> toestemming (art. 6 lid 1 sub a AVG) - via de cookiebanner, intrekbaar via "Cookie-instellingen" in de footer</li>
     <li><strong>Account &amp; cloud-sync:</strong> uitvoering van een overeenkomst (art. 6 lid 1 sub b AVG) - je geeft deze gegevens vrijwillig bij het aanmaken van een account</li>
     <li><strong>Lokale opslag studiedata:</strong> gerechtvaardigd belang (art. 6 lid 1 sub f AVG) - noodzakelijk voor een werkende studietool; gegevens verlaten je apparaat niet</li>
     <li><strong>VMBO-wachtlijst e-mail:</strong> toestemming (art. 6 lid 1 sub a AVG) - je geeft je e-mailadres vrijwillig op</li>
@@ -1975,12 +1939,12 @@
     <li><strong>Verwijdering ("recht om vergeten te worden"):</strong> verwijder je account via de app of vraag het aan via e-mail; lokale gegevens wis je zelf via de browser</li>
     <li><strong>Beperking van verwerking:</strong> verzoeken om tijdelijke beperking</li>
     <li><strong>Bezwaar:</strong> bezwaar maken tegen verwerking op basis van gerechtvaardigd belang</li>
-    <li><strong>Intrekking toestemming:</strong> cookies: klik op "Cookie-instellingen" in de footer; meldingen: uitzetten via Profiel of browserinstellingen</li>
+    <li><strong>Intrekking toestemming:</strong> meldingen uitzetten via Profiel of browserinstellingen; lokale gegevens wissen via de browser of de wis-knoppen in de app</li>
     <li><strong>Klacht:</strong> je kunt een klacht indienen bij de <a href="https://www.autoriteitpersoonsgegevens.nl" target="_blank" rel="noopener">Autoriteit Persoonsgegevens</a></li>
   </ul>
 
   <h3>9. Minderjarigen</h3>
-  <p>Slagio is bedoeld voor leerlingen in het voortgezet onderwijs (doorgaans 14–18 jaar). Voor het tonen van gepersonaliseerde advertenties aan gebruikers onder de 16 jaar vragen wij toestemming via de cookiebanner. Wij raden minderjarigen aan dit privacybeleid samen met een ouder of verzorger te lezen. Ouders/verzorgers kunnen via <a href="mailto:slagiocompany@gmail.com">slagiocompany@gmail.com</a> verzoeken om verwijdering van gegevens van hun kind.</p>
+  <p>Slagio is bedoeld voor leerlingen in het voortgezet onderwijs (doorgaans 14–18 jaar). We tonen geen advertenties en verzamelen geen gegevens voor reclamedoeleinden. Oefenen kan volledig anoniem, zonder account. Wij raden minderjarigen aan dit privacybeleid samen met een ouder of verzorger te lezen. Ouders/verzorgers kunnen via <a href="mailto:slagiocompany@gmail.com">slagiocompany@gmail.com</a> verzoeken om verwijdering van gegevens van hun kind.</p>
 
   <h3>10. Beveiliging</h3>
   <p>Accountgegevens worden versleuteld opgeslagen en verstuurd via HTTPS. Wachtwoorden worden nooit in leesbare tekst bewaard. Lokale gegevens zijn alleen toegankelijk vanuit de browser van je eigen apparaat.</p>
@@ -1991,20 +1955,6 @@
   <h3>12. Contact</h3>
   <p>Vragen of verzoeken over dit privacybeleid? Stuur een e-mail naar <a href="mailto:slagiocompany@gmail.com">slagiocompany@gmail.com</a>. Wij reageren binnen 5 werkdagen.</p>
 </div>
-</div>
-
-<!-- COOKIE CONSENT BANNER -->
-<div class="cookie-banner" id="cookie-banner">
-  <div class="cookie-inner">
-    <div class="cookie-text">
-      🍪 Wij gebruiken cookies voor advertenties (Google AdSense). Functionele gegevens worden alleen lokaal opgeslagen.
-      <a href="#" onclick="event.preventDefault();show('sc-privacy')">Lees ons privacybeleid</a>
-    </div>
-    <div class="cookie-btns">
-      <button class="cookie-btn cookie-decline" onclick="cookieChoice(false)">Weigeren</button>
-      <button class="cookie-btn cookie-accept" onclick="cookieChoice(true)">Accepteren</button>
-    </div>
-  </div>
 </div>
 
 <!-- NOTIFICATION OPT-IN PROMPT -->

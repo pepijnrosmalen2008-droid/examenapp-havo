@@ -382,8 +382,6 @@ updateLevelChip();
 if(document.getElementById('sc-schedule'))renderSchedule();
 buildRegisterAnimalPicker();
 buildSlaagInputs();
-// Push initial ads op home (na kleine vertraging zodat AdSense geladen is)
-setTimeout(()=>{tryPushAds('sc-home');},1500);
 // Show welcome on first load (sc-welcome is default via class="on")
 // ═══════ BOTTOM NAV ═══════
 function updateBottomNav(id){

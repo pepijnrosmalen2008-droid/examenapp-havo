@@ -164,19 +164,7 @@ h1,h2,h3,h4{font-family:var(--font-head);line-height:1.2;letter-spacing:-.3px}
 .site-footer a:hover{color:var(--or)}
 .footer-sep{margin:0 8px;opacity:.35}
 
-/* ── COOKIE CONSENT ─────────────────────────── */
-.cookie-banner{position:fixed;bottom:0;left:0;right:0;background:var(--s);border-top:1px solid var(--bo);padding:18px 24px;z-index:9999;display:none;animation:slideUp .3s ease;box-shadow:0 -4px 24px rgba(0,0,0,.08)}
-.cookie-banner.show{display:block}
 @keyframes slideUp{from{transform:translateY(100%)}to{transform:translateY(0)}}
-.cookie-inner{max-width:960px;margin:0 auto;display:flex;align-items:center;gap:18px;flex-wrap:wrap}
-.cookie-text{flex:1;min-width:200px;font-size:14px;color:var(--dk);line-height:1.7}
-.cookie-text a{color:var(--or);text-decoration:underline}
-.cookie-btns{display:flex;gap:10px;flex-shrink:0}
-.cookie-btn{padding:10px 22px;border-radius:10px;font-size:14px;font-weight:600;cursor:pointer;border:1px solid var(--bo);font-family:var(--font);transition:all .2s}
-.cookie-accept{background:var(--or);color:#fff;border-color:var(--or)}
-.cookie-accept:hover{opacity:.9;transform:translateY(-1px)}
-.cookie-decline{background:var(--s);color:var(--dk)}
-.cookie-decline:hover{background:var(--bg2)}
 
 /* ── PRIVACY PAGE ───────────────────────────── */
 .privacy-content{padding-top:32px;padding-bottom:48px}
@@ -188,13 +176,6 @@ h1,h2,h3,h4{font-family:var(--font-head);line-height:1.2;letter-spacing:-.3px}
 .privacy-content strong{color:var(--dk)}
 .privacy-content a{color:var(--or);text-decoration:underline}
 
-/* ── ADS (subtiel) ───────────────────────────── */
-.ad-slot{margin:24px auto;max-width:728px;min-height:90px;display:flex;align-items:center;justify-content:center;border-radius:10px;overflow:hidden;opacity:.85;transition:opacity .3s}
-.ad-slot:hover{opacity:1}
-.ad-slot--banner{min-height:90px}
-.ad-slot--inline{min-height:100px;margin:20px auto}
-.ad-label{display:block;text-align:center;font-size:9px;letter-spacing:.8px;text-transform:uppercase;color:var(--mu);opacity:.5;margin-bottom:4px;font-family:var(--font)}
-@media(max-width:580px){.ad-slot{min-height:50px;max-width:320px}.ad-slot--banner{min-height:50px}}
 
 /* ── HOME HERO ZONE (full-bleed dark + animated beams) ─── */
 .hero-zone{position:relative;overflow:hidden;background:linear-gradient(180deg,#08080f 0%,#0d0d1a 100%)}
@@ -2485,13 +2466,6 @@ html.dark .calc-btn{background:#2e3550}
   /* Footer */
   .site-footer{margin-top:32px;padding:20px 0 28px;font-size:12px;margin-bottom:8px}
 
-  /* Cookie banner */
-  .cookie-banner{padding:14px 16px;bottom:0}
-  .cookie-inner{gap:12px}
-  .cookie-text{font-size:13px;min-width:auto}
-  .cookie-btns{width:100%;justify-content:stretch}
-  .cookie-btn{flex:1;padding:10px 14px;font-size:13px;text-align:center;border-radius:10px}
-
   /* Privacy */
   .privacy-content{padding-top:24px}
   .privacy-content h2{font-size:24px}
@@ -2514,9 +2488,6 @@ html.dark .calc-btn{background:#2e3550}
   .level-arrow{bottom:18px;right:18px;font-size:18px}
   .footer-text{font-size:12px;padding:16px 0 28px}
 
-  /* Ads kleiner op mobiel */
-  .ad-wrapper{margin:16px 0}
-  .ad-slot{max-width:100%;min-height:50px}
 
   /* Auth scherm */
   .auth-wrap{padding:20px 16px 90px}

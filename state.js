@@ -112,7 +112,6 @@ function show(id,_noHash){
   // Focus eerste heading voor screenreaders
   try{const _h=_sc.querySelector('h1,h2,h3,[role="heading"]');if(_h){_h.setAttribute('tabindex','-1');_h.focus({preventScroll:true});}}catch(e){}
   updateBottomNav(id);
-  tryPushAds(id);
   // URL bijwerken
   if(!_noHash){
     if(id==='sc-home'){
@@ -148,42 +147,9 @@ function show(id,_noHash){
   }
 }
 // Ads: push ads alleen op rustschermen, nooit tijdens quiz/flashcards
-// ═══════ COOKIE CONSENT & ADS ═══════
-const AD_SCREENS=['sc-home','sc-info','sc-res','sc-schedule','sc-calc'];
-const pushedAds=new Set();
-function getConsent(){return localStorage.getItem('examenapp_cookie_consent');}
-function cookieChoice(accepted){
-  localStorage.setItem('examenapp_cookie_consent',accepted?'accepted':'declined');
-  document.getElementById('cookie-banner').classList.remove('show');
-  if(accepted){loadAdsScript();tryPushAds(document.querySelector('.sc.on')?.id||'sc-home');}
-  else{hideAllAds();}
-}
-function cookieReset(){
-  localStorage.removeItem('examenapp_cookie_consent');
-  document.getElementById('cookie-banner').classList.add('show');
-}
-function hideAllAds(){document.querySelectorAll('.ad-wrapper').forEach(w=>w.style.display='none');}
-function showAllAds(){document.querySelectorAll('.ad-wrapper').forEach(w=>w.style.display='');}
-function loadAdsScript(){
-  if(document.querySelector('script[src*="adsbygoogle"]'))return;
-  const s=document.createElement('script');s.async=true;
-  s.src='https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3580526892359138';
-  s.crossOrigin='anonymous';document.head.appendChild(s);
-}
-function tryPushAds(screenId){
-  if(!AD_SCREENS.includes(screenId))return;
-  if(getConsent()!=='accepted'){hideAllAds();return;}
-  showAllAds();
-  try{const slots=document.querySelectorAll('#'+screenId+' .adsbygoogle');
-  slots.forEach(s=>{if(!pushedAds.has(s)){pushedAds.add(s);(adsbygoogle=window.adsbygoogle||[]).push({});}});}catch(e){}
-}
-// Init cookie consent
-(function(){
-  const c=getConsent();
-  if(!c){setTimeout(()=>{document.getElementById('cookie-banner').classList.add('show');},800);}
-  else if(c==='accepted'){loadAdsScript();}
-  else{hideAllAds();}
-})();
+// ═══════ THEME ═══════
+// Slagio toont geen advertenties en plaatst geen tracking-cookies. Alle
+// gegevens staan lokaal (localStorage); daarvoor is geen cookiebanner nodig.
 const ICON_MOON=`<svg viewBox="0 0 24 24"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>`;
 const ICON_SUN=`<svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>`;
 function toggleDark(){
