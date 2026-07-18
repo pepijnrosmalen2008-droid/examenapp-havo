@@ -537,6 +537,20 @@ function render(lb, ev, evMissing, ao=[], fb=[], ql=[], ce=[]) {
   const errataTopVak = Object.entries(errataVakCount).sort((a,b)=>b[1]-a[1]);
   const _esc = s => String(s==null?'':s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
 
+  // ── Retentie (cohort uit app_open per device/dag) — altijd volledige historie,
+  //    negeert het periodefilter zodat cohorts niet worden afgekapt. ──
+  const _aoAll = window._ao || ao;
+  const DAYMS = 86400000;
+  const _todayIdx = Math.floor(Date.now()/DAYMS);
+  const _devDays = {};
+  _aoAll.forEach(e=>{ const did=e.meta&&e.meta.did; if(!did)return; const day=Math.floor(new Date(e.created_at).getTime()/DAYMS); (_devDays[did]=_devDays[did]||new Set()).add(day); });
+  const _dids = Object.keys(_devDays);
+  const retRows = [1,3,7,14].map(o=>{ let denom=0,num=0; _dids.forEach(did=>{ const days=_devDays[did]; let first=Infinity; days.forEach(d=>{if(d<first)first=d;}); if(_todayIdx-first>=o){ denom++; if(days.has(first+o)) num++; } }); return {o,denom,num,pct:denom?Math.round(num/denom*100):0}; });
+  let arDenom=0, arNum=0;
+  _dids.forEach(did=>{ const days=[..._devDays[did]]; const first=Math.min(...days); if(_todayIdx-first>=1){ arDenom++; if(days.some(d=>d>first)) arNum++; } });
+  const anyReturnPct = arDenom?Math.round(arNum/arDenom*100):0;
+  const totalDevices = _dids.length;
+
   document.getElementById('content').innerHTML = `
 
     <!-- ── Tijdfilter ── -->
@@ -579,6 +593,26 @@ function render(lb, ev, evMissing, ao=[], fb=[], ql=[], ce=[]) {
         ${Object.entries(ce.reduce((m,e)=>{const v=e.meta?.vak_naam||'?';if(!m[v])m[v]=[];m[v].push(e.meta?.cijfer||0);return m;},{})).sort((a,b)=>b[1].length-a[1].length).map(([v,arr])=>{const avg=(arr.reduce((s,c)=>s+c,0)/arr.length).toFixed(1);return `<div style="background:var(--card2);border:1px solid var(--border);border-radius:10px;padding:10px 14px;min-width:140px"><div style="font-size:11px;color:var(--muted);font-weight:700;margin-bottom:4px">${v}</div><div style="font-family:var(--font-head);font-size:22px;font-weight:800;color:${avg>=6?'var(--green)':avg>=5?'var(--yellow)':'var(--red)'}">${avg}</div><div style="font-size:11px;color:var(--muted)">${arr.length} leerling${arr.length!==1?'en':''}</div></div>`;}).join('')}
       </div>
     </div>`:''}
+
+    <!-- ── Retentie (komen leerlingen terug?) ── -->
+    <div class="sec">🔁 Retentie — komen leerlingen terug?</div>
+    ${totalDevices?`
+    <div class="kpi-grid">
+      <div class="kpi c-bl"><div class="kpi-lbl">Unieke devices</div><div class="kpi-val">${totalDevices.toLocaleString()}</div><div class="kpi-sub">met een app-open (hele historie)</div></div>
+      <div class="kpi c-gr"><div class="kpi-lbl">Kwam terug (≥1 dag later)</div><div class="kpi-val">${arDenom?anyReturnPct+'%':'–'}</div><div class="kpi-sub">${arDenom?`${arNum}/${arDenom} devices`:'te weinig historie'}</div></div>
+      ${retRows.slice(0,2).map(r=>`<div class="kpi c-or"><div class="kpi-lbl">D${r.o}-retentie</div><div class="kpi-val">${r.denom?r.pct+'%':'–'}</div><div class="kpi-sub">${r.denom?`${r.num}/${r.denom} actief op dag ${r.o}`:'te weinig historie'}</div></div>`).join('')}
+    </div>
+    <div class="panel" style="margin-top:.6rem">
+      <div class="panel-h">Retentiecurve — % van cohort nog actief N dagen ná het eerste bezoek</div>
+      <div style="display:flex;align-items:flex-end;gap:12px;height:130px;padding:10px 4px 0">
+        ${[{o:0,denom:totalDevices,num:totalDevices,pct:100},...retRows].map(r=>{const h=r.denom?Math.max(2,r.pct):2;return `<div style="flex:1;display:flex;flex-direction:column;align-items:center;justify-content:flex-end;gap:5px;height:100%">
+          <div style="font-size:11px;color:var(--muted);font-weight:800">${r.denom?r.pct+'%':'–'}</div>
+          <div style="width:100%;background:linear-gradient(180deg,var(--blue),var(--purple));border-radius:6px 6px 0 0;height:${h}%;min-height:3px"></div>
+          <div style="font-size:11px;color:var(--muted);font-weight:700">D${r.o}</div>
+        </div>`;}).join('')}
+      </div>
+      <div style="font-size:11px;color:var(--muted);padding:8px 4px 2px">Per dag-offset tellen alleen devices mee die lang genoeg geleden voor het eerst kwamen (geen vertekening door nieuwe bezoekers). Op basis van <code>app_open</code>-events per device (<code>meta.did</code>); volledige historie, negeert het periodefilter.</div>
+    </div>`:`<div class="panel"><div style="padding:14px;color:var(--muted);font-size:13px">Nog te weinig app-open-data met device-id om retentie te berekenen.</div></div>`}
 
     <!-- ── Mastery stats (adaptive engine) ── -->
     ${ql.length?`
