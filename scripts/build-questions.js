@@ -149,6 +149,64 @@ function yearGiveaway(v,o){return /\b(1[5-9]\d\d|20\d\d)\b/.test(v)&&(o||[]).som
 function badness(q){if(!q.o||!q.o.length||typeof q.c!=='number')return 0;let b=0;const c=calcish(q.v,q.o);if(c)b+=c*10;const l=lenGiveaway(q.o,q.c);if(l)b+=l*3;if(yearGiveaway(q.v,q.o))b+=5;if((q.v||'').length>140)b+=1;return b;}
 const FLOOR=10;
 
+// ── QA-gate ─────────────────────────────────────────────────────────────
+// Een steekproef is geen proces. Deze poort keurt de data vóór wegschrijven:
+// structurele fouten in gegenereerde vragen zijn FATAAL (blokkeren de write),
+// verdachte begrippen (aan-elkaar-artefacten, extreem lange tokens) zijn een
+// zichtbare WAARSCHUWING zodat niets stil doorglipt.
+// woord+Woord aan elkaar (elk ≥2 letters) = het extractie-artefact ("feitShe").
+// Zo blijven echte gevallen als "pH" of acroniemen ("mRNA", "EU") buiten schot.
+const _RUNTOGETHER=/[a-zé]{2,}[A-Z][a-zé]{2,}/;
+const _LONG_OK=new Set(['condensatiepolymerisatie','frequentieverandering','frequentieverschuiving','parallellogrammethode','standaardafwijking','bewegingsenergie','zwaarte-energie','verbrandingsenthalpie','elektronenconfiguratie']);
+function qaIssues(V, niveau){
+  const fatal=[], warn=[];
+  for(const vak of V)for(const d of vak.domeinen||[]){
+    for(const b of (d.begrippen||[])){
+      const de=String(b.d||'');
+      if(_RUNTOGETHER.test(de)) warn.push(`${niveau} ${vak.id}/${d.id} begrip «${b.t}» — verdachte def: ${de}`);
+      for(const w of (de.match(/[A-Za-zé]{25,}/g)||[])) if(!_LONG_OK.has(w.toLowerCase())) warn.push(`${niveau} ${vak.id}/${d.id} begrip «${b.t}» — lang token: ${w}`);
+    }
+    for(const q of (d.sv||[])){
+      if(!isGen(q.v))continue;                             // alleen gegenereerde vragen: structuur moet exact kloppen
+      const o=q.o||[], bad=[];
+      if(o.length!==4)bad.push('#opties='+o.length);
+      if(o.some(x=>!String(x==null?'':x).trim()))bad.push('lege optie');
+      if(new Set(o.map(x=>String(x).trim().toLowerCase())).size!==o.length)bad.push('dubbele optie');
+      if(typeof q.c!=='number'||q.c<0||q.c>=o.length)bad.push('c ongeldig');
+      if(!String(q.v||'').trim())bad.push('lege vraag');
+      if(bad.length)fatal.push(`${niveau} ${vak.id}/${d.id} | "${String(q.v).slice(0,44)}" → ${bad.join(', ')}`);
+    }
+  }
+  return {fatal, warn};
+}
+function reportQA(qa, file){
+  if(qa.warn.length){
+    console.log(`  ⚠ ${qa.warn.length} verdachte begrippen (nakijken aanbevolen):`);
+    qa.warn.slice(0,12).forEach(w=>console.log('     '+w));
+    if(qa.warn.length>12)console.log(`     … en ${qa.warn.length-12} meer`);
+  }
+  if(qa.fatal.length){
+    console.error(`\n✖ QA-GATE: ${qa.fatal.length} structurele fout(en) in ${file} — data NIET weggeschreven:`);
+    qa.fatal.slice(0,20).forEach(f=>console.error('   '+f));
+    process.exitCode=1;
+    return false;
+  }
+  return true;
+}
+
+// ── --check: valideer de HUIDIGE data-bestanden zonder te herbouwen (voor CI) ──
+if(process.argv.includes('--check')){
+  let ok=true;
+  for(const [file,name,niveau] of [['data-havo.js','VAKKEN','havo'],['data-vwo.js','VAKKEN_VWO','vwo']]){
+    const V=load(file,name);
+    const qa=qaIssues(V,niveau);
+    console.log(`${file}: ${qa.fatal.length} fataal, ${qa.warn.length} waarschuwing(en)`);
+    if(!reportQA(qa,file))ok=false;
+  }
+  console.log(ok?'\n✓ QA-check geslaagd.':'\n✖ QA-check gefaald.');
+  process.exit(ok?0:1);
+}
+
 // ── run ──
 function run(file, name, niveau, pretty){
   const V=load(file,name);
@@ -184,6 +242,8 @@ function run(file, name, niveau, pretty){
     if(flagged.length){flagged.sort((a,b)=>badness(a)-badness(b));while(keep.length<FLOOR&&flagged.length)keep.push(flagged.shift());removed+=flagged.length;d.sv=keep;}
     if(d.sv.length<FLOOR)low.push(vak.id+'/'+d.id+'='+d.sv.length);
   }
+  // QA-gate: keur vóór wegschrijven. Fatale structuurfouten blokkeren de write.
+  if(!reportQA(qaIssues(V,niveau), file)) return;
   fs.writeFileSync(R(file), `var ${name} = `+(pretty?JSON.stringify(V,null,1):JSON.stringify(V))+';');
   console.log(`\n${file}: ${curatedDoms} curated + ${extractedDoms} geëxtraheerde domeinen | +${gen} term-MC | -${removed} weggevers/reken`);
   if(low.length)console.log('  onder floor '+FLOOR+':', low.join(', '));
