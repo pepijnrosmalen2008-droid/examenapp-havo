@@ -1,2 +1,5 @@
 # Afgeleide concept-graaf (regenereerbaar via curriculum-graph.js concepts)
 concepts-*.json
+
+# Gegenereerde afgeleide-stores (regenereerbaar via de engines)
+generated/

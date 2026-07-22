@@ -310,7 +310,7 @@ Curriculum Engine ──► Knowledge Graph ──┬──► Content Engines �
 - **F1.6** — curriculumlaag compleet voor alle vakken (HAVO → VWO), batchgewijs via de factory.
 - **F1.65 — Semantic Layer** — semantische feiten per concept (pilot Enzym gedaan). Levert reasoning + auto-KU's. Kleinste bewijseenheid: één concept, niet één leerdoel.
 - **F1.7** — review-gates doorlopen: elk vak van `draft` → `reviewed` → `approved`.
-- **F2** — Question Engine: `leerdoel → misconceptie → examenskill → moeilijkheid → vraagtype → vraag`.
+- **F2** — Question Engine: `leerdoel → concepten → misconceptie → examenskill → examengewicht → difficulty → vraag`. **Eerste versie gebouwd** (`scripts/question-engine.js`): query-gedreven selectie (via de Query Engine, engine kiest niet zelf), twee modi (`production`=approved / `test`=reviewed), verbruikt alle metadata-assen en schrijft generatie-specs met provenance naar `knowledge/generated/`. De prozastap (`spec → vraagtekst`) is de pluggable LLM-kern. Bewijst de integratie: `production` op HAVO levert 0 (niets approved) — de gate versoepelt niet om te testen.
 - **F3** — overige Content Engines (Summary tiered, Animation vanuit DSL, Lesson).
 - **F4** — Adaptive Engine op mastery per leerdoel/skill.
 - **Doorlopend** — Validation Engine bewaakt alles.
