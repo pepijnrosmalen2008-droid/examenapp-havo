@@ -150,6 +150,48 @@ try {
     ? ok('authErrMsg: lege fout → veilige fallback') : bad('authErrMsg faalt op lege input');
 } catch (e) { bad('authErrMsg-check mislukt: ' + e.message); }
 
+// 5d. Curriculum Intelligence (F1): leerdoelen + koppeling-sidecar integer.
+group('Curriculum Intelligence (F1)');
+try {
+  const lg = {}; new Function('g', read('knowledge-havo.js') + '\ng.L = LEERDOELEN;')(lg);
+  // verzamel alle geldige leerdoel-id's + controleer id-schema
+  const ids = new Set(); let ldCount = 0, badId = 0, sharedConcept = 0;
+  const conceptOwner = {};
+  for (const [k, v] of Object.entries(lg.L)) {
+    for (const ld of (v.leerdoelen || [])) {
+      ldCount++; ids.add(ld.id);
+      if (!/^[a-z]{2}\.[A-Z]\.\d+$/.test(ld.id)) badId++;
+      for (const c of (ld.concepten || [])) (conceptOwner[c] = conceptOwner[c] || new Set()).add(ld.id);
+    }
+  }
+  ldCount >= 20 ? ok(`${ldCount} leerdoelen (bi-pilot)`) : bad(`te weinig leerdoelen (${ldCount})`);
+  badId === 0 ? ok('alle leerdoel-id\'s volgen vak.domein.volgnr') : bad(`${badId} leerdoel-id's met fout schema`);
+  const shared = Object.entries(conceptOwner).filter(([, s]) => s.size > 1);
+  shared.length === 0 ? ok('geen concept in >1 leerdoel (geen ambiguïteit)') : bad('gedeelde concepten: ' + shared.map(([c]) => c).join(', '));
+
+  // sidecar: elke koppeling verwijst naar bestaand leerdoel; provenance geldig
+  const cg = {}; new Function('g', read('knowledge-koppeling-havo.js') + '\ng.K = LO_KOPPELING;')(cg);
+  const bi = cg.K.bi || {};
+  const entries = Object.values(bi);
+  const badLo = entries.filter(e => !ids.has(e.lo));
+  const badConf = entries.filter(e => typeof e.confidence !== 'number' || e.confidence < 0 || e.confidence > 1);
+  const badSrc = entries.filter(e => !['concept_match', 'fallback', 'manual_override'].includes(e.source));
+  entries.length > 0 ? ok(`sidecar: ${entries.length} koppelingen`) : bad('sidecar leeg');
+  badLo.length === 0 ? ok('alle koppelingen → bestaand leerdoel') : bad(`${badLo.length} koppelingen naar onbekend leerdoel`);
+  badConf.length === 0 ? ok('alle confidence-waarden in [0,1]') : bad(`${badConf.length} ongeldige confidence-waarden`);
+  badSrc.length === 0 ? ok('alle source-waarden geldig') : bad(`${badSrc.length} ongeldige source-waarden`);
+
+  // koppeling in sync met de bron: elke qkey hoort bij een echte bi-vraag, en alle vragen gedekt
+  const vk2 = {}; new Function('g', read('data-havo.js') + '\ng.H = VAKKEN;')(vk2);
+  const biVak = vk2.H.find(v => v.id === 'bi');
+  const qkeys = new Set();
+  for (const d of biVak.domeinen) for (const q of [...(d.sv || []), ...(d.oe || [])]) qkeys.add((q.v || '').slice(0, 80));
+  const orphan = Object.keys(bi).filter(k => !qkeys.has(k));
+  const uncovered = [...qkeys].filter(k => !bi[k]);
+  orphan.length === 0 ? ok('geen wees-koppelingen (sidecar ⊆ bron)') : bad(`${orphan.length} koppelingen zonder vraag — draai tag-leerdoelen.js opnieuw`);
+  uncovered.length === 0 ? ok(`alle ${qkeys.size} bi-vragen gekoppeld`) : bad(`${uncovered.length} bi-vragen zonder koppeling`);
+} catch (e) { bad('F1-integriteitscheck mislukt: ' + e.message); }
+
 // ── uitslag ──
 console.log('\n' + (fails ? '✗ ' + fails + ' van ' + checks + ' checks GEFAALD' : '✓ alle ' + checks + ' checks geslaagd'));
 process.exit(fails ? 1 : 0);

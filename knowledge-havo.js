@@ -82,7 +82,9 @@ Object.assign(LEERDOELEN, {
         id: "bi.M.1", titel: "Bouw en functie van de cel",
         eindterm: "B — cel als bouwsteen", teVerifiëren: true,
         beschrijving: "De kandidaat kan celorganellen en hun functie benoemen en het verschil tussen plantaardige en dierlijke cellen aangeven.",
-        concepten: ["Cel","Celmembraan","Celkern","Mitochondrion","Chloroplast","Ribosoom","Celorganellen","Bladgroenkorrel (plant)"],
+        // NB: 'Ribosoom' is bewust NIET hier maar bij bi.M.5 (eiwitsynthese) als
+        // primaire eigenaar — het was het enige concept dat in twee leerdoelen zat.
+        concepten: ["Cel","Celmembraan","Celkern","Mitochondrion","Chloroplast","Celorganellen","Bladgroenkorrel (plant)"],
         vaardigheid: "beschrijven", examenskill: "bron-interpretatie", examenrelevantie: "hoog",
         veelgemaakteFouten: ["verwart mitochondrion met chloroplast","denkt dat dierlijke cellen een celwand hebben"]
       },
@@ -98,7 +100,7 @@ Object.assign(LEERDOELEN, {
         id: "bi.M.3", titel: "Enzymwerking",
         eindterm: "B — enzymen", teVerifiëren: true,
         beschrijving: "De kandidaat kan de werking van enzymen beschrijven en het effect van temperatuur en pH op de enzymactiviteit uit een grafiek afleiden.",
-        concepten: ["Enzym","Energie"],
+        concepten: ["Enzym","Energie","Denaturatie"],
         vaardigheid: "verklaren", examenskill: "bron-interpretatie", examenrelevantie: "hoog",
         veelgemaakteFouten: ["denkt dat een enzym wordt verbruikt in de reactie","verwart optimumtemperatuur met denaturatie"]
       },
@@ -163,7 +165,7 @@ Object.assign(LEERDOELEN, {
         id: "bi.O.3", titel: "Homeostase en antagonisme",
         eindterm: "C — homeostase", teVerifiëren: true,
         beschrijving: "De kandidaat kan homeostase als het constant houden van het inwendig milieu verklaren en antagonistische regeling herkennen.",
-        concepten: ["Homeostase","Antagonisme"],
+        concepten: ["Homeostase","Antagonisme","Negatieve terugkoppeling"],
         vaardigheid: "verklaren", examenskill: "meerstaps-redeneren", examenrelevantie: "midden",
         veelgemaakteFouten: ["ziet terugkoppeling niet als negatieve feedback"]
       },
@@ -211,8 +213,8 @@ Object.assign(LEERDOELEN, {
       {
         id: "bi.P.1", titel: "Ecosystemen: biotische en abiotische factoren",
         eindterm: "D — ecosysteem", teVerifiëren: true,
-        beschrijving: "De kandidaat kan een ecosysteem beschrijven en biotische en abiotische factoren onderscheiden en aan een situatie koppelen.",
-        concepten: ["Ecosysteem","Biotische factor","Abiotische factor"],
+        beschrijving: "De kandidaat kan een ecosysteem beschrijven, biotische en abiotische factoren onderscheiden en de niche van een soort benoemen.",
+        concepten: ["Ecosysteem","Biotische factor","Abiotische factor","Niche"],
         vaardigheid: "beschrijven", examenskill: "bron-interpretatie", examenrelevantie: "midden",
         veelgemaakteFouten: ["deelt een factor bij de verkeerde categorie in"]
       },

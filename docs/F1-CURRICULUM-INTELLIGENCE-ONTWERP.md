@@ -1,6 +1,6 @@
 # F1 — Curriculum Intelligence Layer · Ontwerpvoorstel
 
-**Status:** ✅ akkoord (4 beslispunten + bronhiërarchie + examenskill-laag) — M1 in uitvoering · **Datum:** 2026-07-22 · **Uitgangspunt:** *"Spec-principes ja, spec-stack nee."*
+**Status:** ✅ akkoord · M1 + coverage-review + M2 uitgevoerd (bi-pilot) · **Datum:** 2026-07-22 · **Uitgangspunt:** *"Spec-principes ja, spec-stack nee."*
 Geen rewrite. Huidige architectuur (statische vanilla-PWA + Supabase, geen build-stap) blijft. Alles hieronder is **additief en omkeerbaar**.
 
 **Goedgekeurde beslissingen (§9):** (1) bronhiërarchie vastgesteld, (2) 4–8 leerdoelen per domein, (3) één primair leerdoel per vraag in F1, (4) pilot = HAVO Biologie. Aanvulling: naast `vaardigheid` (kennisdimensie) komt een **aparte `examenskill`-laag** (examenvaardigheidsdimensie), zodat adaptive learning later kennis- en examenvaardigheidsgaten kan onderscheiden.
@@ -103,28 +103,58 @@ Object.assign(LEERDOELEN, {
 
 ## 3. Koppeling van bestaande vragen
 
-### 3.1 Eén nieuw veld: `lo`
+### 3.1 De koppeling draagt provenance: `lo` + `confidence` + `source`
 
-Elke meerkeuzevraag (`sv`) en oud-examenvraag (`oe`) krijgt optioneel één veld:
+Een koppeling is niet zomaar een leerdoel-id, maar een **beoordeeld feit met herkomst**. Elke koppeling bewaart daarom drie dingen:
 
 ```js
-// vóór:   {v:"…", o:[…], c:0, u:"…", d:2}
-// na:     {v:"…", o:[…], c:0, u:"…", d:2, lo:"bi.M.1"}
+{
+  lo:         "bi.M.3",          // het primaire leerdoel-id
+  confidence: 0.94,              // 0–1: hoe zeker is deze koppeling?
+  source:     "concept_match",   // concept_match | fallback | manual_override
+  via:        "Enzym"            // (optioneel) het beslissende concept, of null
+}
 ```
 
-- **`lo` = leerdoel-id.** Eén vraag → één primair leerdoel (bewust simpel; geen many-to-many in F1).
-- **Optioneel en achterwaarts compatibel.** Vragen zonder `lo` blijven werken; ze tellen als "nog niet gekoppeld". Geen enkele bestaande functie (`aqpSelectQuestions`, `qDiff`, quizrender) hoeft te veranderen — die negeren onbekende velden.
-- **Bron blijft `data-havo.js` / `data-vwo.js`.** Het veld wordt daar toegevoegd; `scripts/split-data.js` neemt het automatisch mee naar de geshipte `q/<lvl>-<vak>.js` (het serialiseert het hele vraag-object). `smoke.mjs` blijft de meta/split-sync bewaken.
+**Waarom confidence + source vanaf dag één** (ook al gebruikt de app ze nog niet):
+- Een latere AI-/adaptive-laag weet dan *welke koppelingen betrouwbaar zijn*. Laag-confidence of `fallback` → **niet gebruiken voor AI-training** en **eerst menselijke review**; hoog-confidence `concept_match` of `manual_override` → bruikbaar.
+- Over twee jaar is nog reconstrueerbaar *waaróm* een vraag aan een leerdoel hangt. Dat is precies de "bewaar bron/prompt/score"-eis uit de Execution Brief, hier in het klein.
 
-### 3.2 Hoe de koppeling tot stand komt (semi-automatisch)
+**Confidence-regels** (deterministisch, uitlegbaar):
 
-Nieuw hulpscript `scripts/tag-leerdoelen.js` (offline, draait naast `build-questions.js`), in drie tot-stand-komingslagen van grof naar fijn:
+| situatie | confidence | source |
+|---|---|---|
+| één leerdoel scoort, geen concurrent | **0.97** | `concept_match` |
+| duidelijke winnaar (grote marge t.o.v. tweede) | **0.80–0.95** | `concept_match` |
+| krappe winst (tweede leerdoel dichtbij) | **0.50–0.75** | `concept_match` |
+| geen concepthit → domein-hoofdleerdoel | **0.30** | `fallback` |
+| handmatig vastgesteld | **1.00** | `manual_override` |
 
-1. **Domein-fallback** — elke vraag in domein `bi_M` krijgt voorlopig het "hoofdleerdoel" van dat domein. Direct 100% dekking, grof.
-2. **Concept-match** — als de vraagtekst/afleiders een `concept` uit een leerdoel bevatten, wint dat specifiekere leerdoel. Veruit de meeste vragen komen zo op het juiste leerdoel (de vragen zijn immers uit begrippen gegenereerd, §`build-questions.js`).
-3. **Handmatige overrides** — een klein `overrides`-mapje (`vraagsleutel → lo`) voor de restgevallen, net zoals de bestaande curated overrides in de vragen-engine.
+Drempel: `confidence < 0.70` = "onzeker" → gemarkeerd voor menselijke review, uitgesloten van AI-training tot bevestigd.
 
-Het script is **idempotent** en **rapporteert** (net als `build-questions.js --check`): per vak hoeveel vragen gekoppeld zijn, en welke leerdoelen 0 vragen hebben.
+### 3.2 Waar de metadata leeft: een **sidecar**, niet op de vraag zelf
+
+De koppelingsmetadata komt in een apart bestand, **niet** als veld in `data-havo.js`:
+
+```
+knowledge-koppeling-havo.js   // LO_KOPPELING["bi"] = { "<qkey>": {lo, confidence, source, via} }
+```
+
+- `qkey` = een stabiele sleutel per vraag (de eerste 80 tekens van `v` — geverifieerd **botsingsvrij** over alle 444 bi-vragen; sluit aan op de bestaande `aqpQKey`-conventie).
+- **Waarom sidecar i.p.v. een veld op de vraag:** `data-havo.js` wordt *gegenereerd* door `build-questions.js`. Een `lo`-veld in de vraag zou bij de volgende contentbuild worden **overschreven**. De sidecar overleeft regeneratie, houdt de vragen én de geshipte `q/*.js` **byte-identiek** (dus **geen** payload-groei en **geen** deploy nodig zolang de app `lo` nog niet gebruikt), en is volledig omkeerbaar (bestand weg = klaar).
+- **Runtime-join later:** wanneer een fase `lo` wél gaat gebruiken, joint de app op dezelfde `qkey` (in-browser triviaal te berekenen). Pas dan wordt de sidecar in `index.html`/`sw.js` opgenomen en volgt een SW-bump.
+
+> Dit wijkt bewust af van de eerdere schets ("veld op de vraag"): de sidecar is robuuster tegen de generatiepijplijn en risicovrij voor de live site. De koppeling blijft conceptueel `Vraag → leerdoel → confidence`, alleen fysiek losgekoppeld.
+
+### 3.3 Hoe de koppeling tot stand komt (semi-automatisch)
+
+Nieuw hulpscript `scripts/tag-leerdoelen.js` (offline, draait naast `build-questions.js`), in drie lagen van grof naar fijn — **cruciaal na de coverage-review (§F1-BIOLOGIE-COVERAGE-REVIEW): match op vraagstam + JUIST antwoord, niet op de afleiders.** De afleiders zijn sibling-begrippen en veroorzaakten anders ~20% misassignments.
+
+1. **Concept-match op stam + juist antwoord** — `sv`: `v` + `o[c]`; `oe`: `v` + `ctx` + `u` (de `o` is bij open vragen leeg). Het leerdoel met de sterkste conceptdekking wint; langere concepten wegen zwaarder. Levert `confidence` + `source: concept_match` + `via` (§3.1).
+2. **Domein-fallback** — geen enkele concepthit → het aangewezen hoofdleerdoel van het domein, met `confidence: 0.30` + `source: fallback`. Bewust láág, zodat het als "onzeker, review nodig" opvalt.
+3. **Handmatige overrides** — een klein, gecureerd `OVERRIDES`-mapje (`qkey → lo`) voor de restambiguïteiten, met `confidence: 1.00` + `source: manual_override`.
+
+Het script is **idempotent** en **rapporteert** (net als `build-questions.js --check`): dekking, gemiddelde confidence, aantal laag-confidence (<0.70), aantal fallback en override, en leerdoelen zonder vragen. Het schrijft **uitsluitend** de sidecar `knowledge-koppeling-havo.js` — nooit `data-havo.js` of `q/*.js`.
 
 ---
 
@@ -228,3 +258,12 @@ Scope zoals afgesproken: *schrijf alleen de pilot-leerdoelen, raak nog geen vrag
 - `knowledge-havo.js` — leerdoelen voor de 4 bi-domeinen (A/M/O/P). **Geen vraag aangeraakt** (geen `lo`-veld geschreven).
 - `scripts/leerdoel-dekking.js` — **dry-run**: matcht bestaande vragen op leerdoelen (concept-match + domein-fallback) en rapporteert dekking **zonder iets te schrijven**.
 - Uitkomst = het dekkingsrapport dat je beoordeelt vóórdat M2 (`lo` daadwerkelijk wegschrijven) begint. Nog geen SW-bump, nog geen push naar `main`.
+
+### M2 — uitgevoerd (bi-pilot)
+
+- **Coverage-review** eerst (`docs/F1-BIOLOGIE-COVERAGE-REVIEW.md`): structuur akkoord, matcher moest bijgesteld.
+- **Conceptopschoning** in `knowledge-havo.js`: `Ribosoom` alleen nog bij `bi.M.5` (primaire eigenaar); `Niche` → `bi.P.1`, `Negatieve terugkoppeling` → `bi.O.3`, `Denaturatie` → `bi.M.3`.
+- **`scripts/tag-leerdoelen.js`** — matcht op vraagstam + juist antwoord (+ begrip-detectie voor definitievragen), met confidence + source + via. 13 curated `OVERRIDES`.
+- **`knowledge-koppeling-havo.js`** (sidecar) — 444 koppelingen: 431 `concept_match`, 13 `manual_override`, 0 `fallback`, gem. confidence **0.947**, 4 laag-confidence (alle inhoudelijk correct). `data-havo.js`/`q/*.js` **byte-identiek** → geen deploy.
+- **smoke.mjs** sectie 5d: bewaakt id-schema, geen gedeelde concepten, en dat elke koppeling → bestaand leerdoel, geldige confidence/source, sidecar ⊆ bron, alle 444 vragen gedekt. 59/59 groen.
+- Nog geen SW-bump / geen `main`: de sidecar wordt nog niet door de app geladen (dat is een latere fase).
