@@ -47,6 +47,11 @@ function contentHash(ld) {
     concepten: [...(ld.concepten || [])].sort(),
     vaardigheid: ld.vaardigheid || '', examenskill: ld.examenskill || '', examenrelevantie: ld.examenrelevantie || '',
     veelgemaakteFouten: [...(ld.veelgemaakteFouten || [])].sort(),
+    // graph-edges + extra bronvelden (source-of-truth, optioneel)
+    voorkennis: [...(ld.voorkennis || [])].sort(),
+    vervolg: [...(ld.vervolg || [])].sort(),
+    voorbeelden: ld.voorbeelden || [],
+    bronnen: ld.bronnen || [],
   };
   return crypto.createHash('sha1').update(JSON.stringify(canon)).digest('hex').slice(0, 12);
 }
@@ -57,7 +62,18 @@ const SCHEMA = {
   examenskills: ['bron-interpretatie', 'data-verwerken', 'meerstaps-redeneren', 'antwoord-formuleren', 'context-transfer'],
   examenrelevantie: ['hoog', 'midden', 'laag'],
   leerdoelenPerDomein: { min: 4, max: 8 },
-  veld: { id: '"<vak>.<domein>.<n>"', titel: 'kort', eindterm: 'verwijzing (teVerifiëren:true tot syllabus-check)', beschrijving: 'De kandidaat kan…', concepten: '[begrippen uit dit domein]', vaardigheid: 'enum', examenskill: 'enum', examenrelevantie: 'enum', veelgemaakteFouten: '[misconcepties]' },
+  veld: {
+    id: '"<vak>.<domein>.<n>"  (STABIELE sleutel; tekst mag evolueren)', titel: 'kort',
+    eindterm: 'verwijzing (teVerifiëren:true tot syllabus-check)', beschrijving: 'De kandidaat kan…',
+    concepten: '[begrippen uit dit domein]', vaardigheid: 'enum', examenskill: 'enum', examenrelevantie: 'enum (=examengewicht)',
+    veelgemaakteFouten: '[misconcepties]',
+    // ── graph-edges + extra bronvelden (optioneel; source-of-truth, GEEN afgeleiden) ──
+    voorkennis: '[leerdoel-ID\'s die eerst nodig zijn] — prerequisite-edges',
+    vervolg: '[leerdoel-ID\'s die hierop voortbouwen] — successor-edges',
+    voorbeelden: '[canonieke voorbeelden]',
+    bronnen: '[{type, ref} — CvTE/syllabus/examenvraag-verwijzingen]',
+  },
+  // NB: afgeleide content (samenvatting/quiz/animatie/lesplan) hoort NOOIT in het leerdoel.
 };
 
 // ── interne bron laden ──
@@ -146,6 +162,13 @@ function validateDraftObj(draft, { silent = false } = {}) {
       const known = begrippenPerDom[domId] || new Set();
       const vreemd = (ld.concepten || []).filter(c => !known.has(String(c).toLowerCase()));
       if (vreemd.length && !silent) console.log(`  · ${ld.id}: ${vreemd.length} concept(en) niet in begrippen (bewuste toevoeging?): ${vreemd.join(', ')}`);
+      // optionele source-velden: als aanwezig, moeten het arrays zijn
+      for (const f of ['voorkennis', 'vervolg', 'voorbeelden', 'bronnen']) {
+        if (ld[f] !== undefined && !Array.isArray(ld[f])) warn(`${ld.id}: ${f} moet een array zijn`);
+      }
+      // HARDE REGEL: geen afgeleide content in het leerdoel (die is disposable, hoort in een aparte store)
+      const derived = ['samenvatting', 'samenvattingen', 'quizvragen', 'flashcards', 'animatie', 'animaties', 'lesplan', 'examenvragen'].filter(f => f in ld);
+      if (derived.length) warn(`${ld.id}: afgeleide velden verboden in leerdoel: ${derived.join(', ')} (hoort in een aparte, regenereerbare store)`);
     }
   }
   return { issues, ids: seen };
