@@ -738,6 +738,759 @@ Object.assign(LEERDOELEN, {
    }
   ]
  },
+ "na_A": {
+  "syllabus": "CE Natuurkunde HAVO — Domein A: Vaardigheden (grootheden, rekenen, meten)",
+  "leerdoelen": [
+   {
+    "id": "na.A.1",
+    "titel": "Grootheden en eenheden",
+    "eindterm": "A — grootheden en eenheden",
+    "teVerifiëren": true,
+    "beschrijving": "De kandidaat kan grootheden en hun SI-eenheden benoemen en correct in berekeningen gebruiken.",
+    "concepten": [
+     "Grootheid",
+     "SI-eenheid"
+    ],
+    "vaardigheid": "onthouden",
+    "examenskill": "antwoord-formuleren",
+    "examenrelevantie": "midden",
+    "veelgemaakteFouten": [
+     "vergeet de eenheid bij het antwoord"
+    ],
+    "_meta": {
+     "version": 1,
+     "reviewStatus": "draft",
+     "lastReviewed": null,
+     "source": "curriculum-factory@1",
+     "created": "2026-07-22",
+     "updated": "2026-07-22",
+     "contentHash": "fecf60de2240"
+    }
+   },
+   {
+    "id": "na.A.2",
+    "titel": "Significante cijfers en rekenregels",
+    "eindterm": "A — significantie",
+    "teVerifiëren": true,
+    "beschrijving": "De kandidaat kan met significante cijfers rekenen volgens de regels voor optellen/aftrekken en vermenigvuldigen/delen.",
+    "concepten": [
+     "Significante cijfers",
+     "Vermenigvuldigen / delen",
+     "Optellen / aftrekken"
+    ],
+    "vaardigheid": "berekenen",
+    "examenskill": "data-verwerken",
+    "examenrelevantie": "hoog",
+    "veelgemaakteFouten": [
+     "rondt tussenresultaten te vroeg af"
+    ],
+    "_meta": {
+     "version": 1,
+     "reviewStatus": "draft",
+     "lastReviewed": null,
+     "source": "curriculum-factory@1",
+     "created": "2026-07-22",
+     "updated": "2026-07-22",
+     "contentHash": "c623222584db"
+    }
+   },
+   {
+    "id": "na.A.3",
+    "titel": "Evenredige verbanden",
+    "eindterm": "A — verbanden",
+    "teVerifiëren": true,
+    "beschrijving": "De kandidaat kan een recht en omgekeerd evenredig verband herkennen en gebruiken.",
+    "concepten": [
+     "Recht evenredig",
+     "Omgekeerd evenredig"
+    ],
+    "vaardigheid": "analyseren",
+    "examenskill": "data-verwerken",
+    "examenrelevantie": "hoog",
+    "veelgemaakteFouten": [
+     "verwart recht en omgekeerd evenredig"
+    ],
+    "_meta": {
+     "version": 1,
+     "reviewStatus": "draft",
+     "lastReviewed": null,
+     "source": "curriculum-factory@1",
+     "created": "2026-07-22",
+     "updated": "2026-07-22",
+     "contentHash": "1faa3f14db6f"
+    }
+   },
+   {
+    "id": "na.A.4",
+    "titel": "Meetonzekerheid en ijken",
+    "eindterm": "A — meten",
+    "teVerifiëren": true,
+    "beschrijving": "De kandidaat kan meetonzekerheid meenemen en het ijken van een meetinstrument uitleggen.",
+    "concepten": [
+     "Meetonzekerheid",
+     "IJken"
+    ],
+    "vaardigheid": "beoordelen",
+    "examenskill": "bron-interpretatie",
+    "examenrelevantie": "midden",
+    "veelgemaakteFouten": [
+     "negeert de meetonzekerheid bij de conclusie"
+    ],
+    "_meta": {
+     "version": 1,
+     "reviewStatus": "draft",
+     "lastReviewed": null,
+     "source": "curriculum-factory@1",
+     "created": "2026-07-22",
+     "updated": "2026-07-22",
+     "contentHash": "3c87eca8d5c2"
+    }
+   }
+  ]
+ },
+ "na_B": {
+  "syllabus": "CE Natuurkunde HAVO — Domein B: Golven (trillingen, golven, geluid)",
+  "leerdoelen": [
+   {
+    "id": "na.B.1",
+    "titel": "Trillingen",
+    "eindterm": "B — trillingen",
+    "teVerifiëren": true,
+    "beschrijving": "De kandidaat kan een trilling beschrijven met amplitude, uitwijking, evenwichtsstand, trillingstijd en frequentie.",
+    "concepten": [
+     "Trilling",
+     "Amplitude",
+     "Uitwijking (u)",
+     "Evenwichtsstand",
+     "Trillingstijd / periode (T)",
+     "Frequentie",
+     "Frequentie (f)"
+    ],
+    "vaardigheid": "beschrijven",
+    "examenskill": "bron-interpretatie",
+    "examenrelevantie": "hoog",
+    "veelgemaakteFouten": [
+     "verwart amplitude en uitwijking"
+    ],
+    "_meta": {
+     "version": 1,
+     "reviewStatus": "draft",
+     "lastReviewed": null,
+     "source": "curriculum-factory@1",
+     "created": "2026-07-22",
+     "updated": "2026-07-22",
+     "contentHash": "8e28110cf033"
+    }
+   },
+   {
+    "id": "na.B.2",
+    "titel": "Golven en golfgrootheden",
+    "eindterm": "B — golven",
+    "teVerifiëren": true,
+    "beschrijving": "De kandidaat kan met golflengte, golfsnelheid en frequentie rekenen (v = f·λ).",
+    "concepten": [
+     "Golf",
+     "Golflengte",
+     "Golfsnelheid",
+     "Geluidssnelheid"
+    ],
+    "vaardigheid": "berekenen",
+    "examenskill": "data-verwerken",
+    "examenrelevantie": "hoog",
+    "veelgemaakteFouten": [
+     "verwart golflengte en amplitude",
+     "vergeet v = f·λ"
+    ],
+    "_meta": {
+     "version": 1,
+     "reviewStatus": "draft",
+     "lastReviewed": null,
+     "source": "curriculum-factory@1",
+     "created": "2026-07-22",
+     "updated": "2026-07-22",
+     "contentHash": "dbb19f5f5ffa"
+    }
+   },
+   {
+    "id": "na.B.3",
+    "titel": "Geluid: grondtoon, boventonen en resonantie",
+    "eindterm": "B — geluid",
+    "teVerifiëren": true,
+    "beschrijving": "De kandidaat kan grondtoon en boventonen onderscheiden en resonantie verklaren.",
+    "concepten": [
+     "Grondtoon",
+     "Boventonen",
+     "Boventoon",
+     "Resonantie"
+    ],
+    "vaardigheid": "verklaren",
+    "examenskill": "meerstaps-redeneren",
+    "examenrelevantie": "midden",
+    "veelgemaakteFouten": [
+     "verwart grondtoon en boventoon"
+    ],
+    "_meta": {
+     "version": 1,
+     "reviewStatus": "draft",
+     "lastReviewed": null,
+     "source": "curriculum-factory@1",
+     "created": "2026-07-22",
+     "updated": "2026-07-22",
+     "contentHash": "b1b0bbb2901b"
+    }
+   },
+   {
+    "id": "na.B.4",
+    "titel": "Golfverschijnselen: breking, spiegeling, interferentie",
+    "eindterm": "B — golfgedrag",
+    "teVerifiëren": true,
+    "beschrijving": "De kandidaat kan breking, spiegeling en interferentie van golven herkennen en verklaren.",
+    "concepten": [
+     "Breking",
+     "Spiegeling",
+     "Interferentie"
+    ],
+    "vaardigheid": "verklaren",
+    "examenskill": "bron-interpretatie",
+    "examenrelevantie": "midden",
+    "veelgemaakteFouten": [
+     "verwart breking en spiegeling"
+    ],
+    "_meta": {
+     "version": 1,
+     "reviewStatus": "draft",
+     "lastReviewed": null,
+     "source": "curriculum-factory@1",
+     "created": "2026-07-22",
+     "updated": "2026-07-22",
+     "contentHash": "c9a70f0ec338"
+    }
+   },
+   {
+    "id": "na.B.5",
+    "titel": "Doppler-effect",
+    "eindterm": "B — doppler",
+    "teVerifiëren": true,
+    "beschrijving": "De kandidaat kan het doppler-effect verklaren bij een bewegende bron of waarnemer.",
+    "concepten": [
+     "Doppler-effect"
+    ],
+    "vaardigheid": "verklaren",
+    "examenskill": "context-transfer",
+    "examenrelevantie": "laag",
+    "veelgemaakteFouten": [
+     "kiest de verkeerde frequentieverandering bij naderen/verwijderen"
+    ],
+    "_meta": {
+     "version": 1,
+     "reviewStatus": "draft",
+     "lastReviewed": null,
+     "source": "curriculum-factory@1",
+     "created": "2026-07-22",
+     "updated": "2026-07-22",
+     "contentHash": "331aca283ba9"
+    }
+   }
+  ]
+ },
+ "na_C": {
+  "syllabus": "CE Natuurkunde HAVO — Domein C: Beweging en wisselwerking (kinematica, krachten, energie)",
+  "leerdoelen": [
+   {
+    "id": "na.C.1",
+    "titel": "Snelheid en versnelling",
+    "eindterm": "C — kinematica",
+    "teVerifiëren": true,
+    "beschrijving": "De kandidaat kan snelheid en versnelling berekenen, ook bij een vrije val.",
+    "concepten": [
+     "Snelheid",
+     "Versnelling",
+     "Vrije val"
+    ],
+    "vaardigheid": "berekenen",
+    "examenskill": "data-verwerken",
+    "examenrelevantie": "hoog",
+    "veelgemaakteFouten": [
+     "verwart snelheid en versnelling"
+    ],
+    "_meta": {
+     "version": 1,
+     "reviewStatus": "draft",
+     "lastReviewed": null,
+     "source": "curriculum-factory@1",
+     "created": "2026-07-22",
+     "updated": "2026-07-22",
+     "contentHash": "4a9feb12dbc6"
+    }
+   },
+   {
+    "id": "na.C.2",
+    "titel": "Krachten herkennen",
+    "eindterm": "C — krachten",
+    "teVerifiëren": true,
+    "beschrijving": "De kandidaat kan de zwaartekracht, normaalkracht, wrijvingskracht, spankracht en de resulterende kracht herkennen en tekenen.",
+    "concepten": [
+     "Resulterende kracht",
+     "Zwaartekracht",
+     "Normaalkracht",
+     "Wrijvingskracht",
+     "Spankracht",
+     "Gewicht"
+    ],
+    "vaardigheid": "toepassen",
+    "examenskill": "bron-interpretatie",
+    "examenrelevantie": "hoog",
+    "veelgemaakteFouten": [
+     "verwart gewicht (kracht) en massa"
+    ],
+    "_meta": {
+     "version": 1,
+     "reviewStatus": "draft",
+     "lastReviewed": null,
+     "source": "curriculum-factory@1",
+     "created": "2026-07-22",
+     "updated": "2026-07-22",
+     "contentHash": "f1760699bc09"
+    }
+   },
+   {
+    "id": "na.C.3",
+    "titel": "Krachten samenstellen en ontbinden",
+    "eindterm": "C — vectoren",
+    "teVerifiëren": true,
+    "beschrijving": "De kandidaat kan krachten die op één lijn, loodrecht of onder een willekeurige hoek staan samenstellen en ontbinden.",
+    "concepten": [
+     "Ontbinden",
+     "Loodrecht",
+     "Willekeurige hoek",
+     "Op één lijn"
+    ],
+    "vaardigheid": "toepassen",
+    "examenskill": "data-verwerken",
+    "examenrelevantie": "midden",
+    "veelgemaakteFouten": [
+     "ontbindt in de verkeerde richtingen"
+    ],
+    "_meta": {
+     "version": 1,
+     "reviewStatus": "draft",
+     "lastReviewed": null,
+     "source": "curriculum-factory@1",
+     "created": "2026-07-22",
+     "updated": "2026-07-22",
+     "contentHash": "c09ad356799d"
+    }
+   },
+   {
+    "id": "na.C.4",
+    "titel": "De wetten van Newton",
+    "eindterm": "C — wetten van Newton",
+    "teVerifiëren": true,
+    "beschrijving": "De kandidaat kan de drie wetten van Newton toepassen, inclusief traagheid en actie = reactie.",
+    "concepten": [
+     "Tweede wet",
+     "Traagheid",
+     "Eerste wet (traagheid)",
+     "Eerste wet van Newton",
+     "Tweede wet van Newton",
+     "Derde wet van Newton",
+     "Derde wet (actie = reactie)"
+    ],
+    "vaardigheid": "toepassen",
+    "examenskill": "meerstaps-redeneren",
+    "examenrelevantie": "hoog",
+    "veelgemaakteFouten": [
+     "past actie = reactie toe op hetzelfde voorwerp"
+    ],
+    "_meta": {
+     "version": 1,
+     "reviewStatus": "draft",
+     "lastReviewed": null,
+     "source": "curriculum-factory@1",
+     "created": "2026-07-22",
+     "updated": "2026-07-22",
+     "contentHash": "af5ff3b7c603"
+    }
+   },
+   {
+    "id": "na.C.5",
+    "titel": "Arbeid, energie en vermogen",
+    "eindterm": "C — energie",
+    "teVerifiëren": true,
+    "beschrijving": "De kandidaat kan arbeid, energie en vermogen berekenen en met de wet van behoud van energie werken.",
+    "concepten": [
+     "Arbeid",
+     "Energie",
+     "Vermogen",
+     "Massa"
+    ],
+    "vaardigheid": "berekenen",
+    "examenskill": "data-verwerken",
+    "examenrelevantie": "hoog",
+    "veelgemaakteFouten": [
+     "verwart arbeid en vermogen"
+    ],
+    "_meta": {
+     "version": 1,
+     "reviewStatus": "draft",
+     "lastReviewed": null,
+     "source": "curriculum-factory@1",
+     "created": "2026-07-22",
+     "updated": "2026-07-22",
+     "contentHash": "6cdc5fdae876"
+    }
+   },
+   {
+    "id": "na.C.6",
+    "titel": "Warmtetransport",
+    "eindterm": "C — warmte",
+    "teVerifiëren": true,
+    "beschrijving": "De kandidaat kan warmtetransport door geleiding, stroming en straling onderscheiden.",
+    "concepten": [
+     "Geleiding",
+     "Stroming",
+     "Straling"
+    ],
+    "vaardigheid": "beschrijven",
+    "examenskill": "context-transfer",
+    "examenrelevantie": "laag",
+    "veelgemaakteFouten": [
+     "verwart de drie vormen van warmtetransport"
+    ],
+    "_meta": {
+     "version": 1,
+     "reviewStatus": "draft",
+     "lastReviewed": null,
+     "source": "curriculum-factory@1",
+     "created": "2026-07-22",
+     "updated": "2026-07-22",
+     "contentHash": "678e30c5d517"
+    }
+   }
+  ]
+ },
+ "na_D": {
+  "syllabus": "CE Natuurkunde HAVO — Domein D: Lading en veld (elektriciteit)",
+  "leerdoelen": [
+   {
+    "id": "na.D.1",
+    "titel": "Stroom, spanning, weerstand en de wet van Ohm",
+    "eindterm": "D — wet van Ohm",
+    "teVerifiëren": true,
+    "beschrijving": "De kandidaat kan met stroomsterkte, spanning en weerstand rekenen via de wet van Ohm.",
+    "concepten": [
+     "Stroomsterkte",
+     "Spanning",
+     "Weerstand",
+     "Wet van Ohm",
+     "Ohmse weerstand"
+    ],
+    "vaardigheid": "berekenen",
+    "examenskill": "data-verwerken",
+    "examenrelevantie": "hoog",
+    "veelgemaakteFouten": [
+     "verwisselt U, I en R in de wet van Ohm"
+    ],
+    "_meta": {
+     "version": 1,
+     "reviewStatus": "draft",
+     "lastReviewed": null,
+     "source": "curriculum-factory@1",
+     "created": "2026-07-22",
+     "updated": "2026-07-22",
+     "contentHash": "469fe07cf0ce"
+    }
+   },
+   {
+    "id": "na.D.2",
+    "titel": "Serie- en parallelschakelingen",
+    "eindterm": "D — schakelingen",
+    "teVerifiëren": true,
+    "beschrijving": "De kandidaat kan de stroom, spanning en vervangingsweerstand in serie- en parallelschakelingen bepalen.",
+    "concepten": [
+     "Serieschakeling",
+     "Parallelschakeling"
+    ],
+    "vaardigheid": "toepassen",
+    "examenskill": "meerstaps-redeneren",
+    "examenrelevantie": "hoog",
+    "veelgemaakteFouten": [
+     "telt parallelweerstanden op alsof ze in serie staan"
+    ],
+    "_meta": {
+     "version": 1,
+     "reviewStatus": "draft",
+     "lastReviewed": null,
+     "source": "curriculum-factory@1",
+     "created": "2026-07-22",
+     "updated": "2026-07-22",
+     "contentHash": "3cbb203ebfd7"
+    }
+   },
+   {
+    "id": "na.D.3",
+    "titel": "Elektrisch vermogen en energie",
+    "eindterm": "D — vermogen",
+    "teVerifiëren": true,
+    "beschrijving": "De kandidaat kan het elektrisch vermogen en de verbruikte energie berekenen.",
+    "concepten": [
+     "Vermogen",
+     "Elektrisch vermogen"
+    ],
+    "vaardigheid": "berekenen",
+    "examenskill": "data-verwerken",
+    "examenrelevantie": "midden",
+    "veelgemaakteFouten": [
+     "verwart vermogen en energie"
+    ],
+    "_meta": {
+     "version": 1,
+     "reviewStatus": "draft",
+     "lastReviewed": null,
+     "source": "curriculum-factory@1",
+     "created": "2026-07-22",
+     "updated": "2026-07-22",
+     "contentHash": "ed1640e0c451"
+    }
+   },
+   {
+    "id": "na.D.4",
+    "titel": "Geleiders, isolatoren en lading",
+    "eindterm": "D — lading en veld",
+    "teVerifiëren": true,
+    "beschrijving": "De kandidaat kan geleiders en isolatoren onderscheiden en elektrische lading en het elektrisch veld beschrijven.",
+    "concepten": [
+     "Geleider",
+     "Isolator",
+     "Elektrische lading",
+     "Elektrisch veld"
+    ],
+    "vaardigheid": "beschrijven",
+    "examenskill": "bron-interpretatie",
+    "examenrelevantie": "midden",
+    "veelgemaakteFouten": [
+     "verwart lading en stroom"
+    ],
+    "_meta": {
+     "version": 1,
+     "reviewStatus": "draft",
+     "lastReviewed": null,
+     "source": "curriculum-factory@1",
+     "created": "2026-07-22",
+     "updated": "2026-07-22",
+     "contentHash": "8427e6b24a1d"
+    }
+   },
+   {
+    "id": "na.D.5",
+    "titel": "Niet-ohmse componenten",
+    "eindterm": "D — componenten",
+    "teVerifiëren": true,
+    "beschrijving": "De kandidaat kan het gedrag van NTC, PTC, LDR en diode/LED verklaren als niet-ohmse weerstand.",
+    "concepten": [
+     "NTC",
+     "PTC",
+     "LDR",
+     "Diode / LED",
+     "Niet-ohmse weerstand"
+    ],
+    "vaardigheid": "verklaren",
+    "examenskill": "bron-interpretatie",
+    "examenrelevantie": "midden",
+    "veelgemaakteFouten": [
+     "denkt dat een NTC een lineaire (ohmse) weerstand is"
+    ],
+    "_meta": {
+     "version": 1,
+     "reviewStatus": "draft",
+     "lastReviewed": null,
+     "source": "curriculum-factory@1",
+     "created": "2026-07-22",
+     "updated": "2026-07-22",
+     "contentHash": "3a7dca0863f0"
+    }
+   },
+   {
+    "id": "na.D.6",
+    "titel": "Veiligheid in huisinstallaties",
+    "eindterm": "D — veiligheid",
+    "teVerifiëren": true,
+    "beschrijving": "De kandidaat kan de functie van een zekering en aardlekschakelaar bij kortsluiting uitleggen.",
+    "concepten": [
+     "Zekering",
+     "Aardlekschakelaar",
+     "Kortsluiting"
+    ],
+    "vaardigheid": "beschrijven",
+    "examenskill": "context-transfer",
+    "examenrelevantie": "laag",
+    "veelgemaakteFouten": [
+     "verwart de functie van zekering en aardlekschakelaar"
+    ],
+    "_meta": {
+     "version": 1,
+     "reviewStatus": "draft",
+     "lastReviewed": null,
+     "source": "curriculum-factory@1",
+     "created": "2026-07-22",
+     "updated": "2026-07-22",
+     "contentHash": "56de04b8300b"
+    }
+   }
+  ]
+ },
+ "na_E": {
+  "syllabus": "CE Natuurkunde HAVO — Domein E: Straling en materie (radioactiviteit, toepassingen)",
+  "leerdoelen": [
+   {
+    "id": "na.E.1",
+    "titel": "Soorten ioniserende straling",
+    "eindterm": "E — soorten straling",
+    "teVerifiëren": true,
+    "beschrijving": "De kandidaat kan alfa-, bèta- en gammastraling onderscheiden naar aard en doordringend vermogen.",
+    "concepten": [
+     "Ioniserende straling",
+     "Alfastraling",
+     "Bètastraling",
+     "Gammastraling",
+     "Alfa (α)",
+     "Bèta (β)",
+     "Gamma (γ)"
+    ],
+    "vaardigheid": "beschrijven",
+    "examenskill": "bron-interpretatie",
+    "examenrelevantie": "hoog",
+    "veelgemaakteFouten": [
+     "verwart het doordringend vermogen van α, β en γ"
+    ],
+    "_meta": {
+     "version": 1,
+     "reviewStatus": "draft",
+     "lastReviewed": null,
+     "source": "curriculum-factory@1",
+     "created": "2026-07-22",
+     "updated": "2026-07-22",
+     "contentHash": "1cbb299e2a7b"
+    }
+   },
+   {
+    "id": "na.E.2",
+    "titel": "Radioactief verval en halveringstijd",
+    "eindterm": "E — verval",
+    "teVerifiëren": true,
+    "beschrijving": "De kandidaat kan met halveringstijd rekenen en alfa- en bètaverval in een vervalreeks beschrijven.",
+    "concepten": [
+     "Radioactiviteit",
+     "Halveringstijd",
+     "Vervalreeks",
+     "Alfaverval",
+     "Bètaverval",
+     "Kernreactie",
+     "Isotoop"
+    ],
+    "vaardigheid": "berekenen",
+    "examenskill": "data-verwerken",
+    "examenrelevantie": "hoog",
+    "veelgemaakteFouten": [
+     "denkt dat na één halveringstijd alle straling weg is"
+    ],
+    "_meta": {
+     "version": 1,
+     "reviewStatus": "draft",
+     "lastReviewed": null,
+     "source": "curriculum-factory@1",
+     "created": "2026-07-22",
+     "updated": "2026-07-22",
+     "contentHash": "5a8c3ba5054b"
+    }
+   },
+   {
+    "id": "na.E.3",
+    "titel": "Activiteit, dosis en afscherming",
+    "eindterm": "E — dosimetrie",
+    "teVerifiëren": true,
+    "beschrijving": "De kandidaat kan activiteit en (stralings)dosis onderscheiden en de rol van afscherming en achtergrondstraling benoemen.",
+    "concepten": [
+     "Activiteit",
+     "Dosis",
+     "Stralingsdosis",
+     "Afscherming",
+     "Achtergrondstraling"
+    ],
+    "vaardigheid": "berekenen",
+    "examenskill": "data-verwerken",
+    "examenrelevantie": "midden",
+    "veelgemaakteFouten": [
+     "verwart activiteit (bron) en dosis (ontvanger)"
+    ],
+    "_meta": {
+     "version": 1,
+     "reviewStatus": "draft",
+     "lastReviewed": null,
+     "source": "curriculum-factory@1",
+     "created": "2026-07-22",
+     "updated": "2026-07-22",
+     "contentHash": "e6d757568bb1"
+    }
+   },
+   {
+    "id": "na.E.4",
+    "titel": "Medische toepassingen van straling",
+    "eindterm": "E — toepassingen",
+    "teVerifiëren": true,
+    "beschrijving": "De kandidaat kan medische beeldvorming (röntgen, echografie, CT, PET) koppelen aan het type straling.",
+    "concepten": [
+     "Röntgenfoto",
+     "Röntgenstraling",
+     "Echografie",
+     "CT-scan",
+     "Nucleair (PET)"
+    ],
+    "vaardigheid": "beschrijven",
+    "examenskill": "context-transfer",
+    "examenrelevantie": "midden",
+    "veelgemaakteFouten": [
+     "denkt dat echografie (geluid) ioniserende straling gebruikt"
+    ],
+    "_meta": {
+     "version": 1,
+     "reviewStatus": "draft",
+     "lastReviewed": null,
+     "source": "curriculum-factory@1",
+     "created": "2026-07-22",
+     "updated": "2026-07-22",
+     "contentHash": "497c07f213ac"
+    }
+   },
+   {
+    "id": "na.E.5",
+    "titel": "Elektromagnetisch spectrum",
+    "eindterm": "E — EM-spectrum",
+    "teVerifiëren": true,
+    "beschrijving": "De kandidaat kan radiogolven, infrarood en ultraviolet in het elektromagnetisch spectrum plaatsen.",
+    "concepten": [
+     "Radiogolven",
+     "Infrarood",
+     "Ultraviolet"
+    ],
+    "vaardigheid": "beschrijven",
+    "examenskill": "bron-interpretatie",
+    "examenrelevantie": "laag",
+    "veelgemaakteFouten": [
+     "verwart de golflengte-volgorde van het spectrum"
+    ],
+    "_meta": {
+     "version": 1,
+     "reviewStatus": "draft",
+     "lastReviewed": null,
+     "source": "curriculum-factory@1",
+     "created": "2026-07-22",
+     "updated": "2026-07-22",
+     "contentHash": "166c613601de"
+    }
+   }
+  ]
+ },
  "sk_A": {
   "syllabus": "CE Scheikunde HAVO — Domein A: Vaardigheden (chemisch rekenen en onderzoek)",
   "leerdoelen": [
