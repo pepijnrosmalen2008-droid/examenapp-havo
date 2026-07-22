@@ -49,12 +49,13 @@ Regels voor de Semantic Layer (klassieke kennisgraaf-discipline): **gesloten pre
 
 *Status:* Semantic Layer = **pilot** (`knowledge/semantic-havo.json`, concept Enzym). `units[]`-veld op het leerdoel blijft gereserveerd — maar KU's worden **gegenereerd uit feiten**, niet met de hand geschreven.
 
-## Vier harde regels
+## Vijf harde regels
 
 1. **Geen afgeleiden in de bron** — samenvatting/quiz/animatie/lesplan horen nooit in een leerdoel (ingest weigert ze).
 2. **Alles regenereerbaar** — elke afgeleide is volledig opnieuw te maken vanuit de Knowledge Layer.
 3. **Generators zijn stateless & immutable** — een engine krijgt alléén `leerdoel v7` en produceert `summary v7`. Geen cache, geen historie, geen mutaties. Rebuilds zijn daardoor triviaal. (Geldt nu al voor tagger/assembler/graph/query — allemaal puur, deterministisch.)
 4. **Alleen `approved` genereert downstream.**
+5. **Query-first** — *iedere nieuwe feature moet eerst als query worden geformuleerd; pas als die query bestaat, mag er een generator of UI bovenop.* Kan een feature niet als query worden uitgedrukt, dan is dat een signaal dat de data of relaties nog niet goed gemodelleerd zijn. Nieuwe functionaliteit wordt zo vaak een **nieuwe query** i.p.v. een nieuwe engine. (Sluit direct aan op: *de kwaliteit van een kennismodel blijkt uit de vragen die je eraan kunt stellen.*)
 
 ## Uniforme engine-interface
 
