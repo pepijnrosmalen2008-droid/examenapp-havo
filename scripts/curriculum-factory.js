@@ -52,6 +52,10 @@ function contentHash(ld) {
     vervolg: [...(ld.vervolg || [])].sort(),
     voorbeelden: ld.voorbeelden || [],
     bronnen: ld.bronnen || [],
+    // forward-compatible: knowledge units, evidence-nodes, typed edges
+    units: ld.units || [],
+    evidence: ld.evidence || [],
+    relaties: ld.relaties || {},
   };
   return crypto.createHash('sha1').update(JSON.stringify(canon)).digest('hex').slice(0, 12);
 }
@@ -72,6 +76,10 @@ const SCHEMA = {
     vervolg: '[leerdoel-ID\'s die hierop voortbouwen] — successor-edges',
     voorbeelden: '[canonieke voorbeelden]',
     bronnen: '[{type, ref} — CvTE/syllabus/examenvraag-verwijzingen]',
+    // ── forward-compatible (optioneel; piloten vóór uitrol) ──
+    units: '[knowledge units: {id, type:definitie|werking|voorwaarden|toepassing|valkuil, tekst}] — atomische kenniseenheden',
+    evidence: '[evidence-node-ID\'s: waarom geloven we dat dit klopt] bv. "evidence.cvte.2025.v17"',
+    relaties: '{typed edges} bv. {often_confused_with:[ids], used_by:[ids], contrasts:[ids]}',
   },
   // NB: afgeleide content (samenvatting/quiz/animatie/lesplan) hoort NOOIT in het leerdoel.
 };
@@ -163,9 +171,14 @@ function validateDraftObj(draft, { silent = false } = {}) {
       const vreemd = (ld.concepten || []).filter(c => !known.has(String(c).toLowerCase()));
       if (vreemd.length && !silent) console.log(`  · ${ld.id}: ${vreemd.length} concept(en) niet in begrippen (bewuste toevoeging?): ${vreemd.join(', ')}`);
       // optionele source-velden: als aanwezig, moeten het arrays zijn
-      for (const f of ['voorkennis', 'vervolg', 'voorbeelden', 'bronnen']) {
+      for (const f of ['voorkennis', 'vervolg', 'voorbeelden', 'bronnen', 'units', 'evidence']) {
         if (ld[f] !== undefined && !Array.isArray(ld[f])) warn(`${ld.id}: ${f} moet een array zijn`);
       }
+      if (ld.relaties !== undefined) {
+        if (typeof ld.relaties !== 'object' || Array.isArray(ld.relaties)) warn(`${ld.id}: relaties moet een object zijn {type:[ids]}`);
+        else for (const [t, v] of Object.entries(ld.relaties)) if (!Array.isArray(v)) warn(`${ld.id}: relaties.${t} moet een array zijn`);
+      }
+      if (ld.units) for (const u of ld.units) if (!u.id || !u.type) warn(`${ld.id}: unit mist id/type`);
       // HARDE REGEL: geen afgeleide content in het leerdoel (die is disposable, hoort in een aparte store)
       const derived = ['samenvatting', 'samenvattingen', 'quizvragen', 'flashcards', 'animatie', 'animaties', 'lesplan', 'examenvragen'].filter(f => f in ld);
       if (derived.length) warn(`${ld.id}: afgeleide velden verboden in leerdoel: ${derived.join(', ')} (hoort in een aparte, regenereerbare store)`);

@@ -3,21 +3,55 @@
 **Status:** vastgesteld · **Doel:** de laag waar de komende jaren niets fundamenteels meer aan hoeft te veranderen.
 De specifieke generators, AI-modellen en prompts zullen veranderen; **deze vijf lagen blijven**. Een architectuur is sterk als ze de techniek die eronder verandert kan overleven.
 
-## De vijf lagen (blijvende architectuur)
+## De lagen (blijvende architectuur)
 
 ```
-1. Knowledge Layer      curriculum: leerdoelen, concepten, misconcepties, examenskills   (source of truth)
-        │
-2. Relationship Layer   de graaf: nodes + edges (leerdoel↔concept↔examen↔domein↔vak)
-        │
-3. Generation Layer     afgeleiden: vragen, samenvattingen, animaties, flashcards, lesplannen
-        │
-4. Validation Layer     review, QA, coverage — én de Curriculum Evolution Engine
-        │
-5. Experience Layer      student, docent, AI-tutor
+5. Experience Layer     student • docent • dashboard • AI-tutor
+        ▲
+4. Query / API Layer    curriculum-query.js — de ENIGE leesweg; geen engine loopt zelf door JSON
+        ▲
+3. Generation Engines   (stateless) summary • quiz • animation • flashcards • lesson • tutor
+        ▲
+2. Validation & Evolution   Validation Engine • Metrics Engine • Evolution Engine   (leest + stelt voor)
+        ▲
+1. Relationship Layer   Knowledge Graph • Concept Graph • Dependency Graph • Evidence Graph
+        ▲
+0. Knowledge Layer      Curriculum Engine • Learning Objectives • Knowledge Units • Evidence   (source of truth)
 ```
 
-Alleen laag 1 wordt handmatig beheerd/gereviewd. Laag 3 is volledig afgeleid en weggooibaar. Laag 4 bewaakt en **stelt voor** (schrijft nooit). De F-fases (F1, F2, …) zijn ontwikkelvolgorde; deze vijf lagen zijn de blijvende structuur.
+Alleen de Knowledge Layer wordt handmatig beheerd/gereviewd. Generation is volledig afgeleid en weggooibaar. Validation/Evolution bewaakt en **stelt voor** (schrijft nooit). De F-fases (F1, F2, …) zijn ontwikkelvolgorde; deze lagen zijn de blijvende structuur.
+
+## De hiërarchie is atomisch
+
+De kleinste eenheid is niet het leerdoel maar het **concept**, en daartussen zit de **Knowledge Unit**:
+
+```
+Vak → Domein → Leerdoel → Knowledge Unit → Concept
+```
+
+- **Concept** = zelfstandig begrip ("osmose").
+- **Knowledge Unit (KU)** = één feit, mechanisme, regel, voorwaarde, toepassing of valkuil over dat concept.
+- **Leerdoel** = verzameling KU's die samen een onderwijsdoel vormen.
+
+Waarom dit de grootste kwaliteitswinst op lange termijn is: je genereert dan niet meer vanuit een grove leerdoelbeschrijving, maar **combineert atomische KU's**. Een 30-sec-samenvatting = alleen de KU's `definitie` + `werking`; een 5-A4 = alle KU's; een quiz over `voorwaarden` = alleen die KU. Geen duplicatie, wél consistentie.
+*Status:* het `units[]`-veld is **gereserveerd** (optioneel, forward-compatible) — eerst piloten op één leerdoel (Osmose), dán uitrollen.
+
+## Vier harde regels
+
+1. **Geen afgeleiden in de bron** — samenvatting/quiz/animatie/lesplan horen nooit in een leerdoel (ingest weigert ze).
+2. **Alles regenereerbaar** — elke afgeleide is volledig opnieuw te maken vanuit de Knowledge Layer.
+3. **Generators zijn stateless & immutable** — een engine krijgt alléén `leerdoel v7` en produceert `summary v7`. Geen cache, geen historie, geen mutaties. Rebuilds zijn daardoor triviaal. (Geldt nu al voor tagger/assembler/graph/query — allemaal puur, deterministisch.)
+4. **Alleen `approved` genereert downstream.**
+
+## Uniforme engine-interface
+
+Elke engine in de Generation/Validation-laag heeft **dezelfde vorm**, waardoor engines uitwisselbaar zijn:
+
+```
+Input:  node-ID  (bv. bi.M.3)  →  [Engine, leest via de Query Layer]  →  Output: nieuwe node(s) + provenance + confidence
+```
+
+`bi.M.3 → Summary Engine → summary.183` · `bi.M.3 → Animation Engine → anim.82`. Verwissel de engine (of het model erachter) en de rest verandert niet.
 
 ## Uniforme engine-interface
 
@@ -51,6 +85,9 @@ Een leerdoel-node:
 | `vervolg` | **edges** → leerdoel-ID's die hierop voortbouwen |
 | `voorbeelden` | canonieke voorbeelden |
 | `bronnen` | `{type, ref}` — CvTE/syllabus/examenvraag-verwijzingen |
+| `units` | *(gereserveerd)* knowledge units — atomische kenniseenheden (§Hiërarchie) |
+| `evidence` | *(gereserveerd)* evidence-node-ID's — **waarom** geloven we dat dit klopt (§Evidence) |
+| `relaties` | *(gereserveerd)* typed edges `{often_confused_with:[…], used_by:[…], contrasts:[…]}` |
 | `_meta` | provenance: `version, reviewStatus, lastReviewed, source, created, updated, contentHash` |
 
 **Opslag:** `knowledge/<niveau>/<vak>.json` (bron) → `curriculum-factory.js assemble` genereert `knowledge-<niveau>.js`. Deterministisch, idempotent, met versiebeheer (content-hash) en diff-rapport. Zie `docs/F1.55-CURRICULUM-FACTORY.md`.
@@ -88,6 +125,21 @@ Daardoor worden vakoverstijgende vragen beantwoordbaar: *"Laat alle leerdoelen z
 | `bouwt-voort-op` | leerdoel → leerdoel | `leerdoel.vervolg` |
 | `toetst` | examenvraag → leerdoel | koppeling-sidecar (`knowledge-koppeling-*.js`) |
 | `voorbeeld-van` | voorbeeld → leerdoel | `leerdoel.voorbeelden` |
+| **typed** (`often_confused_with`, `used_by`, `contrasts`, `analogy_of`, `example_of`, `tested_with`, `requires`, `extends`) | node → node | `leerdoel.relaties` *(gereserveerd)* |
+
+**Typed dependency-edges** maken de tutor mogelijk zónder expliciete programmering: `Genotype --contrasts--> Fenotype` laat de tutor zeggen *"je verwart genotype met fenotype"*; `Mitochondrion --used_by--> Celademhaling` stuurt de leerroute. `voorkennis`/`vervolg` zijn de eerste twee (`requires`/`extends`); `relaties{}` generaliseert dit naar alle types.
+
+### Evidence Graph — *waarom* geloven we dit?
+
+De belangrijkste ontbrekende vraag: waaróm klopt een leerdoel? Elke bewering wordt herleidbaar via **evidence-nodes** (eigen store, gerefereerd vanuit `leerdoel.evidence`):
+
+```
+evidence.cvte.2025.v17            (examen 2025, vraag 17)
+evidence.syllabus.havo.bio.2026.4.2
+evidence.docent.review.81
+```
+
+Niet `bronnen: [...]` als losse strings, maar **nodes** — zodat één examenvraag of syllabus-passage aan meerdere leerdoelen kan hangen, en AI-review kan checken of elke bewering gedekt is (`Evidence Completeness`, §Metrics).
 
 Zodra dit een graaf is, worden vragen beantwoordbaar die niets met generatie te maken hebben:
 
@@ -205,6 +257,22 @@ Een aparte engine die **niets automatisch schrijft** — hij **stelt alleen voor
 - hier ontbreekt een leerdoel volgens de syllabus (zodra de crawler bronnen levert)
 
 Draait nu al en levert echte signalen op (bv. *bi.A.1 heeft 44 vragen → splitsen*; *concept "Denaturatie" heeft 0 vragen*). Menselijke review beslist; de Curriculum Engine voert pas uit na akkoord.
+
+## 6c. Query Engine (de enige leesweg)
+
+`curriculum-query.js` — geen enkele generator loopt zelf door JSON; iedereen leest hierdoorheen. Filters over de graaf mét afgeleide metrics (nVragen, AI-Ready, confidence):
+
+```
+curriculum-query.js havo --gewicht hoog --ai-ready-min 90 --review reviewed --concept energie
+curriculum-query.js havo --misconcepties --concept enzym
+curriculum-query.js havo --gewicht hoog --vragen-max 10        # onderbedeelde high-stakes leerdoelen
+```
+
+`--json` maakt het machine-leesbaar voor andere engines. **Gebouwd en werkend.** Dit is de laag die tussen elke engine en de Knowledge Graph zit.
+
+## 6d. Metrics Engine (KPI's van het curriculum, niet van de leerling)
+
+Bundelt de kwaliteitsmaten van de curriculumlaag zelf: `Coverage · Difficulty · Concept Density · Question Diversity · Example Diversity · Animation/Summary Coverage · Cross-subject Connectivity · Evidence Completeness · Review Debt`. Een deel wordt nu al berekend (dashboard: dekking/AI-Ready; graph: cross-subject; evolve: split/overlap). De Metrics Engine consolideert dit tot één KPI-set die over de tijd te volgen is. *(additief; te bouwen)*
 
 ---
 
