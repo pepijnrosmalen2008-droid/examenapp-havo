@@ -190,6 +190,11 @@ try {
   const uncovered = [...qkeys].filter(k => !bi[k]);
   orphan.length === 0 ? ok('geen wees-koppelingen (sidecar ⊆ bron)') : bad(`${orphan.length} koppelingen zonder vraag — draai tag-leerdoelen.js opnieuw`);
   uncovered.length === 0 ? ok(`alle ${qkeys.size} bi-vragen gekoppeld`) : bad(`${uncovered.length} bi-vragen zonder koppeling`);
+
+  // dashboard laadt de kennislaag
+  const dash = read('curriculum.html');
+  ['/knowledge-havo.js', '/knowledge-koppeling-havo.js', '/data-havo.meta.js'].every(f => dash.includes(f))
+    ? ok('curriculum.html laadt de kennislaag') : bad('curriculum.html mist een kennislaag-script');
 } catch (e) { bad('F1-integriteitscheck mislukt: ' + e.message); }
 
 // ── uitslag ──

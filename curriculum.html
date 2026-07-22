@@ -1,0 +1,252 @@
+<!doctype html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Slagio · Curriculum Dashboard</title>
+<style>
+:root{
+  --bg:#f6f7f9; --card:#fff; --ink:#161a20; --mu:#667085; --line:#e7e9ee;
+  --or:#E85C0D; --ok:#12a150; --warn:#d97706; --bad:#dc2626; --accent:#2563eb;
+  --chip:#eef1f6;
+}
+@media(prefers-color-scheme:dark){
+  :root{--bg:#0e1116;--card:#171b22;--ink:#e8eaed;--mu:#9aa3af;--line:#252a33;--chip:#212632;}
+}
+*{box-sizing:border-box}
+body{margin:0;font:15px/1.5 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;background:var(--bg);color:var(--ink)}
+.wrap{max-width:1180px;margin:0 auto;padding:20px 16px 80px}
+header{display:flex;flex-wrap:wrap;align-items:center;gap:12px;margin-bottom:6px}
+h1{font-size:20px;margin:0;font-weight:800;letter-spacing:-.3px}
+.sub{color:var(--mu);font-size:13px;margin:2px 0 20px}
+.controls{margin-left:auto;display:flex;gap:8px;align-items:center}
+select,button{font:inherit;padding:7px 12px;border:1px solid var(--line);border-radius:9px;background:var(--card);color:var(--ink);cursor:pointer}
+button:hover{border-color:var(--or)}
+.tiles{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:12px;margin-bottom:22px}
+.tile{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:14px 16px}
+.tile .v{font-size:26px;font-weight:800;letter-spacing:-.5px}
+.tile .l{font-size:12px;color:var(--mu);margin-top:2px}
+.tile .v.small{font-size:20px}
+.legend{display:flex;flex-wrap:wrap;gap:14px;font-size:12px;color:var(--mu);margin:0 2px 18px}
+.legend b{color:var(--ink)}
+.dom{background:var(--card);border:1px solid var(--line);border-radius:16px;margin-bottom:18px;overflow:hidden}
+.dom-h{display:flex;flex-wrap:wrap;align-items:baseline;gap:10px 16px;padding:14px 18px;border-bottom:1px solid var(--line)}
+.dom-h .dn{font-weight:800;font-size:16px}
+.dom-h .dm{font-size:12px;color:var(--mu)}
+.dom-h .stat{font-size:12px;color:var(--mu)}
+.dom-h .stat b{color:var(--ink);font-size:14px}
+table{width:100%;border-collapse:collapse;font-size:13.5px}
+th,td{text-align:left;padding:10px 14px;border-bottom:1px solid var(--line);vertical-align:middle}
+th{font-size:11px;text-transform:uppercase;letter-spacing:.4px;color:var(--mu);font-weight:700;background:var(--chip)}
+tr:last-child td{border-bottom:none}
+td.num{text-align:right;font-variant-numeric:tabular-nums;white-space:nowrap}
+.ld-id{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:12px;color:var(--mu)}
+.ld-t{font-weight:600}
+.chips{margin-top:3px;display:flex;gap:5px;flex-wrap:wrap}
+.chip{font-size:10.5px;padding:1px 7px;border-radius:999px;background:var(--chip);color:var(--mu);white-space:nowrap}
+.bar{height:6px;border-radius:4px;background:var(--line);overflow:hidden;min-width:60px;margin-top:4px}
+.bar>i{display:block;height:100%;border-radius:4px}
+.badge{display:inline-block;font-size:11px;font-weight:700;padding:2px 9px;border-radius:999px}
+.b-hoog{background:rgba(220,38,38,.12);color:#dc2626}
+.b-midden{background:rgba(217,119,6,.14);color:#b45309}
+.b-laag{background:rgba(100,116,139,.14);color:#64748b}
+.sig{font-weight:700;font-size:12px;white-space:nowrap}
+.s-gat{color:var(--bad)} .s-dun{color:var(--warn)} .s-moeilijk{color:#b45309} .s-onzeker{color:var(--accent)} .s-ok{color:var(--ok)}
+.muted{color:var(--mu)}
+.note{font-size:12px;color:var(--mu);background:var(--chip);border-radius:10px;padding:10px 14px;margin-top:10px}
+.err{background:rgba(220,38,38,.1);color:#dc2626;border-radius:10px;padding:10px 14px;font-size:13px;margin-bottom:16px}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div>
+      <h1>Curriculum Dashboard</h1>
+      <div class="sub" id="sub">Leerdoelen · dekking · confidence · gaten — pilot HAVO Biologie</div>
+    </div>
+    <div class="controls">
+      <select id="vakSel"></select>
+      <button onclick="loadFout()">↺ Foutratio</button>
+    </div>
+  </header>
+
+  <div id="fouterr"></div>
+  <div class="tiles" id="tiles"></div>
+  <div class="legend">
+    <span><b class="s-ok">●</b> gezond</span>
+    <span><b class="s-dun">●</b> dun (&lt;12 vragen)</span>
+    <span><b class="s-gat">●</b> gat (&lt;6 vragen → uitbreiden)</span>
+    <span><b class="s-onzeker">●</b> onzekere koppeling(en)</span>
+    <span><b class="s-moeilijk">●</b> moeilijk (foutratio &gt;40%)</span>
+    <span class="muted">· <b>Examengewicht</b> = examenrelevantie · <b>Foutratio/Mastery</b> nu op domein-niveau</span>
+  </div>
+  <div id="doms"></div>
+  <div class="note" id="footnote"></div>
+</div>
+
+<!-- Curriculum-databestanden (statisch) -->
+<script src="/data-havo.meta.js"></script>
+<script src="/knowledge-havo.js"></script>
+<script src="/knowledge-koppeling-havo.js"></script>
+<!-- Supabase (optioneel, voor foutratio op domein-niveau) -->
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.101.1/dist/umd/supabase.js" crossorigin="anonymous"></script>
+<script>
+const SB_URL='https://wcfenegohryxhatzxvtw.supabase.co';
+const SB_KEY='eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6IndjZmVuZWdvaHJ5eGhhdHp4dnR3Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODEyODcwMDAsImV4cCI6MjA5Njg2MzAwMH0.B3ygpkosBybQd53VLiRxqIbVxBPWw4V-Nj2IS3k4UFo';
+let SB=null; try{ SB=window.supabase.createClient(SB_URL,SB_KEY); }catch(e){}
+
+const NIVEAU='havo';
+let VAK='bi';           // pilot; selector toont alleen vakken met koppeling
+let FOUT={};            // domein_naam → {fout, mastery, n}
+
+// ── indexen ──
+function leerdoelIndex(){
+  // lo-id → {leerdoel, domId} ; en domId → [leerdoelen]
+  const byId={}, byDom={};
+  for(const [key,val] of Object.entries(window.LEERDOELEN||{})){
+    if(!key.startsWith(VAK+'_'))continue;
+    const domId=key.slice(VAK.length+1);
+    byDom[domId]=val.leerdoelen||[];
+    for(const ld of (val.leerdoelen||[])) byId[ld.id]={ld,domId};
+  }
+  return {byId,byDom};
+}
+function koppelStats(){
+  // lo-id → {n, conf, over, low}
+  const k=(window.LO_KOPPELING&&window.LO_KOPPELING[VAK])||{};
+  const s={};
+  for(const e of Object.values(k)){
+    const t=s[e.lo]=s[e.lo]||{n:0,confSum:0,over:0,low:0};
+    t.n++; t.confSum+=e.confidence;
+    if(e.source==='manual_override')t.over++;
+    if(e.confidence<0.70)t.low++;
+  }
+  for(const t of Object.values(s)) t.conf=t.n?t.confSum/t.n:0;
+  return s;
+}
+function metaVak(){ return (window.VAKKEN||[]).find(v=>v.id===VAK); }
+
+function signaal(n,low,fout){
+  if(n<6) return ['s-gat','🔴 gat'];
+  if(fout!=null&&fout>0.40) return ['s-moeilijk','🔥 moeilijk'];
+  if(low>0) return ['s-onzeker','🟦 onzeker'];
+  if(n<12) return ['s-dun','🟡 dun'];
+  return ['s-ok','🟢 gezond'];
+}
+const pct=x=>Math.round(x*100)+'%';
+const esc=s=>String(s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+
+function render(){
+  const {byId,byDom}=leerdoelIndex();
+  const stats=koppelStats();
+  const mv=metaVak();
+  const domName={}, domTot={};
+  if(mv) for(const d of mv.domeinen){domName[d.id]=d.naam;domTot[d.id]=(d.nSv||0)+(d.nOe||0);}
+
+  // samenvatting
+  let totLd=0,totQ=0,confSum=0,over=0,gaps=0,onzeker=0;
+  for(const [id,t] of Object.entries(stats)){totLd; }
+  const allLd=Object.keys(byId);
+  totLd=allLd.length;
+  for(const id of allLd){
+    const t=stats[id]||{n:0,conf:0,over:0,low:0};
+    totQ+=t.n; confSum+=t.confSum||0; over+=t.over;
+    if(t.n<6)gaps++; if(t.low>0)onzeker++;
+  }
+  const gemConf=totQ?confSum/totQ:0;
+  document.getElementById('tiles').innerHTML=[
+    ['Leerdoelen',totLd,''],
+    ['Gekoppelde vragen',totQ,''],
+    ['Gem. confidence',pct(gemConf),'small'],
+    ['Handmatige overrides',over,''],
+    ['Gaten (&lt;6 vragen)',gaps,''],
+    ['Onzekere leerdoelen',onzeker,''],
+  ].map(([l,v,c])=>`<div class="tile"><div class="v ${c}">${v}</div><div class="l">${l}</div></div>`).join('');
+
+  // per domein
+  const order=Object.keys(byDom).sort();
+  document.getElementById('doms').innerHTML=order.map(domId=>{
+    const lds=byDom[domId];
+    const tagged=lds.reduce((a,ld)=>a+((stats[ld.id]||{}).n||0),0);
+    const total=domTot[domId]||tagged;
+    const fout=FOUT[domName[domId]];
+    const rows=lds.map(ld=>{
+      const t=stats[ld.id]||{n:0,conf:0,over:0,low:0};
+      const [sc,slabel]=signaal(t.n,t.low,fout?fout.fout:null);
+      const rel=ld.examenrelevantie||'laag';
+      const barCol=t.n<6?'var(--bad)':t.n<12?'var(--warn)':'var(--ok)';
+      const confCol=t.conf>=0.9?'var(--ok)':t.conf>=0.75?'var(--warn)':'var(--bad)';
+      return `<tr>
+        <td><div class="ld-t">${esc(ld.titel)}</div><div class="ld-id">${ld.id}</div>
+          <div class="chips"><span class="chip">${esc(ld.vaardigheid||'')}</span><span class="chip">${esc(ld.examenskill||'')}</span></div></td>
+        <td class="num"><b>${t.n}</b><div class="bar"><i style="width:${Math.min(100,t.n/20*100)}%;background:${barCol}"></i></div></td>
+        <td class="num" style="color:${confCol};font-weight:700">${t.n?pct(t.conf):'–'}</td>
+        <td class="num">${t.over||'–'}${t.low?` <span class="s-onzeker" title="laag-confidence koppelingen">·${t.low}⚠</span>`:''}</td>
+        <td class="num">${fout?pct(fout.fout):'<span class="muted">–</span>'}</td>
+        <td class="num">${fout?pct(fout.mastery):'<span class="muted">–</span>'}</td>
+        <td><span class="badge b-${rel}">${rel}</span></td>
+        <td><span class="sig ${sc}">${slabel}</span></td>
+      </tr>`;
+    }).join('');
+    return `<div class="dom">
+      <div class="dom-h">
+        <span class="dn">${domId} · ${esc(domName[domId]||'')}</span>
+        <span class="stat">gekoppeld <b>${tagged}</b>/${total}</span>
+        ${fout?`<span class="stat">foutratio <b>${pct(fout.fout)}</b></span><span class="stat">mastery <b>${pct(fout.mastery)}</b></span><span class="stat">(${fout.n} quizzes)</span>`:`<span class="stat muted">foutratio: laad Supabase</span>`}
+      </div>
+      <table><thead><tr>
+        <th>Leerdoel</th><th class="num">Vragen</th><th class="num">Confidence</th><th class="num">Overrides</th>
+        <th class="num">Foutratio</th><th class="num">Mastery</th><th>Examengewicht</th><th>Signaal</th>
+      </tr></thead><tbody>${rows}</tbody></table>
+    </div>`;
+  }).join('');
+
+  document.getElementById('footnote').innerHTML=
+    `<b>Foutratio &amp; Mastery</b> staan nu op <b>domein-niveau</b> (uit de leaderboard: goed/totaal per domein). `+
+    `Leerdoel-niveau volgt zodra quiz-events een <code>lo</code> dragen — dan splitst deze kolom per leerdoel. `+
+    `De statische kolommen (vragen, confidence, overrides, examengewicht) komen rechtstreeks uit de curriculum-kennislaag.`;
+}
+
+async function loadFout(){
+  const box=document.getElementById('fouterr'); box.innerHTML='';
+  if(!SB){box.innerHTML='<div class="note">Foutratio/mastery niet beschikbaar (Supabase niet bereikbaar). De curriculum-kolommen werken volledig.</div>';return;}
+  try{
+    const {data,error}=await SB.from('leaderboard')
+      .select('vak_naam,domein_naam,correct,total,niveau').eq('niveau',NIVEAU).limit(3000);
+    if(error)throw error;
+    const mv=metaVak(); const vakNaam=mv?mv.naam:'';
+    const agg={};
+    for(const r of (data||[])){
+      if(r.vak_naam!==vakNaam||!r.domein_naam||!r.total)continue;
+      const a=agg[r.domein_naam]=agg[r.domein_naam]||{goed:0,tot:0,n:0};
+      a.goed+=(r.correct||0); a.tot+=(r.total||0); a.n++;
+    }
+    FOUT={};
+    for(const [dn,a] of Object.entries(agg)) if(a.tot) FOUT[dn]={fout:1-a.goed/a.tot,mastery:a.goed/a.tot,n:a.n};
+    render();
+    if(!Object.keys(FOUT).length) box.innerHTML='<div class="err">Nog geen leaderboard-data voor dit vak op domein-niveau.</div>';
+  }catch(e){
+    box.innerHTML='<div class="err">Foutratio niet geladen ('+esc(e.message||e)+'). De statische kolommen werken wel.</div>';
+  }
+}
+
+// ── init ──
+function initSel(){
+  const sel=document.getElementById('vakSel');
+  const vakken=Object.keys(window.LO_KOPPELING||{});
+  const mv=window.VAKKEN||[];
+  sel.innerHTML=vakken.map(id=>{const v=mv.find(x=>x.id===id);return `<option value="${id}">${v?esc(v.naam):id}</option>`}).join('')
+    || '<option>(geen koppeling geladen)</option>';
+  sel.value=VAK; sel.onchange=()=>{VAK=sel.value;render();loadFout();};
+}
+window.addEventListener('DOMContentLoaded',()=>{
+  if(!window.LEERDOELEN||!window.LO_KOPPELING){
+    document.getElementById('doms').innerHTML='<div class="err">Kennislaag niet geladen (knowledge-havo.js / knowledge-koppeling-havo.js).</div>';
+    return;
+  }
+  initSel(); render(); loadFout();
+});
+</script>
+</body>
+</html>
