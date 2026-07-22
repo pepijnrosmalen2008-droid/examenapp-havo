@@ -1,7 +1,9 @@
 # F1 — Curriculum Intelligence Layer · Ontwerpvoorstel
 
-**Status:** ter goedkeuring · **Datum:** 2026-07-22 · **Uitgangspunt:** *"Spec-principes ja, spec-stack nee."*
-Geen rewrite. Huidige architectuur (statische vanilla-PWA + Supabase, geen build-stap) blijft. Alles hieronder is **additief en omkeerbaar**. Er wordt **geen code geschreven** voordat dit ontwerp akkoord is.
+**Status:** ✅ akkoord (4 beslispunten + bronhiërarchie + examenskill-laag) — M1 in uitvoering · **Datum:** 2026-07-22 · **Uitgangspunt:** *"Spec-principes ja, spec-stack nee."*
+Geen rewrite. Huidige architectuur (statische vanilla-PWA + Supabase, geen build-stap) blijft. Alles hieronder is **additief en omkeerbaar**.
+
+**Goedgekeurde beslissingen (§9):** (1) bronhiërarchie vastgesteld, (2) 4–8 leerdoelen per domein, (3) één primair leerdoel per vraag in F1, (4) pilot = HAVO Biologie. Aanvulling: naast `vaardigheid` (kennisdimensie) komt een **aparte `examenskill`-laag** (examenvaardigheidsdimensie), zodat adaptive learning later kennis- en examenvaardigheidsgaten kan onderscheiden.
 
 ---
 
@@ -55,7 +57,8 @@ Object.assign(LEERDOELEN, {
         eindterm: "B1",                     // koppeling naar het examenprogramma
         beschrijving: "De kandidaat kan celorganellen en hun functie benoemen en met elkaar in verband brengen.",
         concepten: ["celmembraan", "mitochondrion", "celkern", "ribosoom"],
-        vaardigheid: "verklaren",           // uit vaste lijst (§2.3)
+        vaardigheid: "verklaren",           // KENNISdimensie — vaste lijst (§2.3)
+        examenskill: "bron-interpretatie",  // EXAMENVAARDIGHEIDSdimensie — vaste lijst (§2.4)
         examenrelevantie: "hoog",           // hoog | midden | laag
         veelgemaakteFouten: [               // voedt later F2 (misconceptie-afleiders)
           "verwart mitochondrion met chloroplast",
@@ -74,13 +77,27 @@ Object.assign(LEERDOELEN, {
 - Alle velden behalve `id`/`titel` zijn optioneel → een leerdoel kan groeien van "alleen titel" naar volledig verrijkt zonder dat er iets breekt.
 - `veelgemaakteFouten` is nu al voorzien maar wordt in F1 nog niet gebruikt — het is de haak voor F2.
 
-### 2.3 Vaste vaardigheden-lijst (klein en examengericht)
+### 2.3 Vaardigheid — de KENNISdimensie (vaste enum)
 
-Eén korte, gedeelde enum i.p.v. vrije tekst, zodat filteren/rapporteren betrouwbaar is:
+*Wat moet je cognitief met de kennis kunnen?* Eén korte, gedeelde enum i.p.v. vrije tekst, zodat filteren/rapporteren betrouwbaar is:
 
 `onthouden · beschrijven · verklaren · toepassen · berekenen · analyseren · beoordelen`
 
 (bewust compact; sluit aan op RTTI/Bloom zonder academische ballast.)
+
+### 2.4 Examenskill — de EXAMENVAARDIGHEIDSdimensie (vaste enum) · **nieuw**
+
+*Op welke examentechniek word je afgerekend, los van of je de stof kent?* Deze laag staat **orthogonaal** op `vaardigheid`: een leerling kan de biologie kennen (vaardigheid oké) maar punten verliezen omdat hij de bron verkeerd leest, stappen niet toont of de verkeerde eenheid gebruikt. Vak-overstijgend, klein gehouden:
+
+| examenskill | wat het toetst |
+|---|---|
+| `bron-interpretatie` | informatie halen uit tekst, grafiek, tabel, afbeelding of microscoopbeeld |
+| `data-verwerken` | rekenen, eenheden, significante cijfers, aflezen/omrekenen |
+| `meerstaps-redeneren` | een oorzaak→gevolg-keten of afleiding in meerdere stappen opbouwen |
+| `antwoord-formuleren` | antwoord geven volgens correctievoorschrift: juiste vakterm, volledige puntdekking |
+| `context-transfer` | bekende stof toepassen op een nieuwe, onbekende examensituatie |
+
+**Waarom apart bewaren:** in een latere fase houdt de Adaptive Learning Engine mastery **per dimensie** bij. Zo kan het systeem onderscheiden tussen *"je kent domein M niet"* (kennisgat → meer uitleg + kennisvragen) en *"je beheerst bron-interpretatie niet"* (examenvaardigheidsgat → gerichte examentraining, ongeacht het vak). Dat onderscheid is precies wat de brief bedoelt met diagnosticeren i.p.v. alleen goed/fout. In F1 leggen we de laag alleen vast; we sturen er nog niet op.
 
 ---
 
@@ -194,11 +211,20 @@ Regels met ⚠ zijn de directe input voor de latere Question Intelligence (F2): 
 
 ---
 
-## 9. Open beslissingen (graag jouw sturing)
+## 9. Beslissingen — vastgesteld ✅
 
-1. **Bron voor de leerdoelen zelf.** Ik stel voor de eindtermen te ontlenen aan het officiële CvTE-examenprogramma/de syllabus per vak (de brief noemt examenblad.nl / CvTE). Akkoord dat ik die als leidend neem, of wil je een eigen indeling?
-2. **Granulariteit.** Richtwaarde: **4–8 leerdoelen per domein**. Fijner = preciezer maar meer redactiewerk. Akkoord met deze bandbreedte?
-3. **Eén of meerdere leerdoelen per vraag.** Ik stel in F1 **één primair leerdoel** per vraag voor (simpel, genoeg voor dekking + diagnose). Many-to-many kan later. Akkoord?
-4. **Pilot-vak.** Voorstel HAVO Biologie (§6). Akkoord, of liever een ander vak?
+1. **Bronhiërarchie voor de leerdoelen** (van leidend naar aanvullend):
+   `CvTE-examenprogramma → officiële syllabus → examenblad.nl → correctievoorschriften oude examens → aanvullende betrouwbare bronnen`.
+   Elk leerdoel krijgt een `eindterm`-verwijzing die op deze bronketen teruggaat. Waar een exacte CvTE-code nog geverifieerd moet worden tegen de definitieve syllabus, is dat als zodanig gemarkeerd (`teVerifiëren: true`) zodat het bij de review opvalt.
+2. **Granulariteit:** 4–8 leerdoelen per domein.
+3. **Koppeling:** één primair leerdoel per vraag in F1; many-to-many bewaard voor een latere fase.
+4. **Pilot-vak:** HAVO Biologie (§6).
+5. **Examenskill-laag:** apart van `vaardigheid` (§2.4), voor latere adaptive learning op kennis- vs. examenvaardigheidsniveau.
 
-Zodra deze vier punten akkoord zijn, begin ik met **M1** (alleen de pilot, geen vraag aangeraakt) en lever ik het dekkingsrapport op voordat er iets naar `lo` wordt geschreven.
+### M1 — status (in uitvoering)
+
+Scope zoals afgesproken: *schrijf alleen de pilot-leerdoelen, raak nog geen vragen aan, maak eerst het dekkingsrapport, geen deploy tot de pilotstructuur is beoordeeld.*
+
+- `knowledge-havo.js` — leerdoelen voor de 4 bi-domeinen (A/M/O/P). **Geen vraag aangeraakt** (geen `lo`-veld geschreven).
+- `scripts/leerdoel-dekking.js` — **dry-run**: matcht bestaande vragen op leerdoelen (concept-match + domein-fallback) en rapporteert dekking **zonder iets te schrijven**.
+- Uitkomst = het dekkingsrapport dat je beoordeelt vóórdat M2 (`lo` daadwerkelijk wegschrijven) begint. Nog geen SW-bump, nog geen push naar `main`.
