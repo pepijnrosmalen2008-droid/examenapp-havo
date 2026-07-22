@@ -1,0 +1,788 @@
+{
+ "sk_A": {
+  "syllabus": "CE Scheikunde HAVO — Domein A: Vaardigheden (chemisch rekenen en onderzoek)",
+  "leerdoelen": [
+   {
+    "id": "sk.A.1",
+    "titel": "Rekenen met mol en concentratie",
+    "eindterm": "A — chemisch rekenen",
+    "teVerifiëren": true,
+    "beschrijving": "De kandidaat kan rekenen met de hoeveelheid stof (mol), molaire massa en concentratie en daarbij de juiste eenheden gebruiken.",
+    "concepten": [
+     "Mol",
+     "Molaire massa",
+     "Concentratie"
+    ],
+    "vaardigheid": "berekenen",
+    "examenskill": "data-verwerken",
+    "examenrelevantie": "hoog",
+    "veelgemaakteFouten": [
+     "verwart mol en molaire massa",
+     "vergeet eenheden of rekent met massa i.p.v. mol"
+    ],
+    "_meta": {
+     "version": 1,
+     "reviewStatus": "draft",
+     "lastReviewed": null,
+     "source": "curriculum-factory@1",
+     "created": "2026-07-22",
+     "updated": "2026-07-22",
+     "contentHash": "adb7e6d2f54c"
+    }
+   },
+   {
+    "id": "sk.A.2",
+    "titel": "Scheidingsmethoden en zuiverheid",
+    "eindterm": "A — stoffen scheiden",
+    "teVerifiëren": true,
+    "beschrijving": "De kandidaat kan een mengsel van een zuivere stof onderscheiden en scheidingsmethoden zoals filtratie toepassen en verklaren.",
+    "concepten": [
+     "Mengsel",
+     "Filtratie",
+     "Zuivere stof"
+    ],
+    "vaardigheid": "toepassen",
+    "examenskill": "bron-interpretatie",
+    "examenrelevantie": "midden",
+    "veelgemaakteFouten": [
+     "denkt dat filtratie opgeloste stoffen scheidt"
+    ],
+    "_meta": {
+     "version": 1,
+     "reviewStatus": "draft",
+     "lastReviewed": null,
+     "source": "curriculum-factory@1",
+     "created": "2026-07-22",
+     "updated": "2026-07-22",
+     "contentHash": "d7b646d590e8"
+    }
+   },
+   {
+    "id": "sk.A.3",
+    "titel": "Onderzoek opzetten en betrouwbaarheid",
+    "eindterm": "A — onderzoeksvaardigheden",
+    "teVerifiëren": true,
+    "beschrijving": "De kandidaat kan een hypothese formuleren, variabelen en een controle-experiment benoemen en de rol van herhaalmetingen en nauwkeurigheid beoordelen.",
+    "concepten": [
+     "Hypothese",
+     "Controle-experiment",
+     "Herhaalmetingen",
+     "Variabelen",
+     "Nauwkeurigheid"
+    ],
+    "vaardigheid": "toepassen",
+    "examenskill": "meerstaps-redeneren",
+    "examenrelevantie": "midden",
+    "veelgemaakteFouten": [
+     "verwart nauwkeurigheid en betrouwbaarheid"
+    ],
+    "_meta": {
+     "version": 1,
+     "reviewStatus": "draft",
+     "lastReviewed": null,
+     "source": "curriculum-factory@1",
+     "created": "2026-07-22",
+     "updated": "2026-07-22",
+     "contentHash": "2f22558e9422"
+    }
+   },
+   {
+    "id": "sk.A.4",
+    "titel": "Veiligheid en gevaarsymbolen",
+    "eindterm": "A — veilig werken",
+    "teVerifiëren": true,
+    "beschrijving": "De kandidaat kan GHS-pictogrammen herkennen en veilig omgaan met stoffen in het practicum.",
+    "concepten": [
+     "GHS-pictogram",
+     "Veiligheid"
+    ],
+    "vaardigheid": "onthouden",
+    "examenskill": "bron-interpretatie",
+    "examenrelevantie": "laag",
+    "veelgemaakteFouten": [
+     "verwisselt GHS-pictogrammen"
+    ],
+    "_meta": {
+     "version": 1,
+     "reviewStatus": "draft",
+     "lastReviewed": null,
+     "source": "curriculum-factory@1",
+     "created": "2026-07-22",
+     "updated": "2026-07-22",
+     "contentHash": "532193026c77"
+    }
+   }
+  ]
+ },
+ "sk_B": {
+  "syllabus": "CE Scheikunde HAVO — Domein B: Stoffen en materialen (atoombouw, binding, oplossen)",
+  "leerdoelen": [
+   {
+    "id": "sk.B.1",
+    "titel": "Atoombouw en elementen",
+    "eindterm": "B — bouw van de stof",
+    "teVerifiëren": true,
+    "beschrijving": "De kandidaat kan de bouw van een atoom beschrijven en elementen plaatsen met behulp van atoombouw.",
+    "concepten": [
+     "Atoom",
+     "Atoombouw",
+     "Element"
+    ],
+    "vaardigheid": "beschrijven",
+    "examenskill": "bron-interpretatie",
+    "examenrelevantie": "hoog",
+    "veelgemaakteFouten": [
+     "verwart atoomnummer en massagetal"
+    ],
+    "_meta": {
+     "version": 1,
+     "reviewStatus": "draft",
+     "lastReviewed": null,
+     "source": "curriculum-factory@1",
+     "created": "2026-07-22",
+     "updated": "2026-07-22",
+     "contentHash": "5a5e273d69ff"
+    }
+   },
+   {
+    "id": "sk.B.2",
+    "titel": "Ionen en ionbinding",
+    "eindterm": "B — ionbinding",
+    "teVerifiëren": true,
+    "beschrijving": "De kandidaat kan het ontstaan van ionen en de ionbinding in zouten verklaren.",
+    "concepten": [
+     "Ion",
+     "Ionbinding"
+    ],
+    "vaardigheid": "verklaren",
+    "examenskill": "meerstaps-redeneren",
+    "examenrelevantie": "hoog",
+    "veelgemaakteFouten": [
+     "verwart kation (positief) en anion (negatief)"
+    ],
+    "_meta": {
+     "version": 1,
+     "reviewStatus": "draft",
+     "lastReviewed": null,
+     "source": "curriculum-factory@1",
+     "created": "2026-07-22",
+     "updated": "2026-07-22",
+     "contentHash": "1f6a6b6faff5"
+    }
+   },
+   {
+    "id": "sk.B.3",
+    "titel": "Moleculen en atoombinding",
+    "eindterm": "B — covalente binding",
+    "teVerifiëren": true,
+    "beschrijving": "De kandidaat kan moleculen en de covalente (atoom)binding beschrijven en molecuulformules lezen.",
+    "concepten": [
+     "Molecuul",
+     "Covalente binding",
+     "Atoombinding",
+     "Molecuulformule"
+    ],
+    "vaardigheid": "beschrijven",
+    "examenskill": "bron-interpretatie",
+    "examenrelevantie": "hoog",
+    "veelgemaakteFouten": [
+     "verwart molecuul- en verhoudingsformule"
+    ],
+    "_meta": {
+     "version": 1,
+     "reviewStatus": "draft",
+     "lastReviewed": null,
+     "source": "curriculum-factory@1",
+     "created": "2026-07-22",
+     "updated": "2026-07-22",
+     "contentHash": "43036437fbca"
+    }
+   },
+   {
+    "id": "sk.B.4",
+    "titel": "Metaalbinding en legeringen",
+    "eindterm": "B — metalen",
+    "teVerifiëren": true,
+    "beschrijving": "De kandidaat kan de metaalbinding en de eigenschappen van legeringen verklaren.",
+    "concepten": [
+     "Metaalbinding",
+     "Legering"
+    ],
+    "vaardigheid": "verklaren",
+    "examenskill": "context-transfer",
+    "examenrelevantie": "midden",
+    "veelgemaakteFouten": [
+     "denkt dat een legering een chemische verbinding is"
+    ],
+    "_meta": {
+     "version": 1,
+     "reviewStatus": "draft",
+     "lastReviewed": null,
+     "source": "curriculum-factory@1",
+     "created": "2026-07-22",
+     "updated": "2026-07-22",
+     "contentHash": "c6409b587508"
+    }
+   },
+   {
+    "id": "sk.B.5",
+    "titel": "Polariteit en intermoleculaire krachten",
+    "eindterm": "B — moleculaire stoffen",
+    "teVerifiëren": true,
+    "beschrijving": "De kandidaat kan polariteit van moleculen en de rol van intermoleculaire krachten bij stofeigenschappen verklaren.",
+    "concepten": [
+     "Polair",
+     "Intermoleculaire krachten"
+    ],
+    "vaardigheid": "verklaren",
+    "examenskill": "meerstaps-redeneren",
+    "examenrelevantie": "hoog",
+    "veelgemaakteFouten": [
+     "verwart intermoleculaire met intramoleculaire binding"
+    ],
+    "_meta": {
+     "version": 1,
+     "reviewStatus": "draft",
+     "lastReviewed": null,
+     "source": "curriculum-factory@1",
+     "created": "2026-07-22",
+     "updated": "2026-07-22",
+     "contentHash": "ed0ab06e38dc"
+    }
+   },
+   {
+    "id": "sk.B.6",
+    "titel": "Mengsels, oplossen en oplosbaarheid",
+    "eindterm": "B — oplossingen en mengsels",
+    "teVerifiëren": true,
+    "beschrijving": "De kandidaat kan een mengsel/oplossing beschrijven en het oplossen van stoffen en verschillen in oplosbaarheid verklaren met polariteit.",
+    "concepten": [
+     "Mengsel",
+     "Oplosbaarheid",
+     "Oplossing",
+     "Oplossen"
+    ],
+    "vaardigheid": "verklaren",
+    "examenskill": "context-transfer",
+    "examenrelevantie": "midden",
+    "veelgemaakteFouten": [
+     "past 'soort lost op in soort' verkeerd om toe"
+    ],
+    "_meta": {
+     "version": 2,
+     "reviewStatus": "draft",
+     "lastReviewed": null,
+     "source": "curriculum-factory@1",
+     "created": "2026-07-22",
+     "updated": "2026-07-22",
+     "contentHash": "405138b64e42"
+    }
+   }
+  ]
+ },
+ "sk_C": {
+  "syllabus": "CE Scheikunde HAVO — Domein C: Chemische processen (reacties, rekenen, zuur-base, redox, snelheid, evenwicht)",
+  "leerdoelen": [
+   {
+    "id": "sk.C.1",
+    "titel": "Reactievergelijkingen kloppend maken",
+    "eindterm": "C — reactievergelijkingen",
+    "teVerifiëren": true,
+    "beschrijving": "De kandidaat kan een reactievergelijking kloppend maken met de juiste coëfficiënten.",
+    "concepten": [
+     "Reactievergelijking",
+     "Coëfficiënt",
+     "Chemische reactie"
+    ],
+    "vaardigheid": "toepassen",
+    "examenskill": "meerstaps-redeneren",
+    "examenrelevantie": "hoog",
+    "veelgemaakteFouten": [
+     "verandert indices in plaats van coëfficiënten"
+    ],
+    "_meta": {
+     "version": 1,
+     "reviewStatus": "draft",
+     "lastReviewed": null,
+     "source": "curriculum-factory@1",
+     "created": "2026-07-22",
+     "updated": "2026-07-22",
+     "contentHash": "15fd115d512c"
+    }
+   },
+   {
+    "id": "sk.C.2",
+    "titel": "Rekenen aan reacties",
+    "eindterm": "C — rekenen aan reacties",
+    "teVerifiëren": true,
+    "beschrijving": "De kandidaat kan met de molverhouding uit een reactievergelijking hoeveelheden berekenen.",
+    "concepten": [
+     "Molverhouding",
+     "Reacties & rekenen"
+    ],
+    "vaardigheid": "berekenen",
+    "examenskill": "data-verwerken",
+    "examenrelevantie": "hoog",
+    "veelgemaakteFouten": [
+     "gebruikt massaverhouding in plaats van molverhouding"
+    ],
+    "_meta": {
+     "version": 1,
+     "reviewStatus": "draft",
+     "lastReviewed": null,
+     "source": "curriculum-factory@1",
+     "created": "2026-07-22",
+     "updated": "2026-07-22",
+     "contentHash": "6350760373bf"
+    }
+   },
+   {
+    "id": "sk.C.3",
+    "titel": "Zuren, basen en pH",
+    "eindterm": "C — zuren en basen",
+    "teVerifiëren": true,
+    "beschrijving": "De kandidaat kan zuren en basen herkennen, pH interpreteren en een neutralisatie beschrijven.",
+    "concepten": [
+     "Zuur",
+     "Base",
+     "pH",
+     "Zuren en basen",
+     "Indicator",
+     "Neutralisatie"
+    ],
+    "vaardigheid": "verklaren",
+    "examenskill": "bron-interpretatie",
+    "examenrelevantie": "hoog",
+    "veelgemaakteFouten": [
+     "denkt dat een hoge pH zuur is"
+    ],
+    "_meta": {
+     "version": 1,
+     "reviewStatus": "draft",
+     "lastReviewed": null,
+     "source": "curriculum-factory@1",
+     "created": "2026-07-22",
+     "updated": "2026-07-22",
+     "contentHash": "64e4d8ab5a5b"
+    }
+   },
+   {
+    "id": "sk.C.4",
+    "titel": "Redoxreacties",
+    "eindterm": "C — redox",
+    "teVerifiëren": true,
+    "beschrijving": "De kandidaat kan oxidatie en reductie herkennen en een redoxreactie beschrijven.",
+    "concepten": [
+     "Oxidatie",
+     "Reductie",
+     "Redoxreactie"
+    ],
+    "vaardigheid": "verklaren",
+    "examenskill": "meerstaps-redeneren",
+    "examenrelevantie": "hoog",
+    "veelgemaakteFouten": [
+     "verwart oxidatie (elektronen afstaan) en reductie (opnemen)"
+    ],
+    "_meta": {
+     "version": 1,
+     "reviewStatus": "draft",
+     "lastReviewed": null,
+     "source": "curriculum-factory@1",
+     "created": "2026-07-22",
+     "updated": "2026-07-22",
+     "contentHash": "52b27a25d3e3"
+    }
+   },
+   {
+    "id": "sk.C.5",
+    "titel": "Energie-effect: endo- en exotherm",
+    "eindterm": "C — energie bij reacties",
+    "teVerifiëren": true,
+    "beschrijving": "De kandidaat kan endotherme en exotherme reacties onderscheiden aan het energie-effect.",
+    "concepten": [
+     "Endotherm",
+     "Exotherm"
+    ],
+    "vaardigheid": "beschrijven",
+    "examenskill": "bron-interpretatie",
+    "examenrelevantie": "midden",
+    "veelgemaakteFouten": [
+     "verwart het teken van het energie-effect"
+    ],
+    "_meta": {
+     "version": 1,
+     "reviewStatus": "draft",
+     "lastReviewed": null,
+     "source": "curriculum-factory@1",
+     "created": "2026-07-22",
+     "updated": "2026-07-22",
+     "contentHash": "71b13f3de0d5"
+    }
+   },
+   {
+    "id": "sk.C.6",
+    "titel": "Reactiesnelheid en katalyse",
+    "eindterm": "C — reactiesnelheid",
+    "teVerifiëren": true,
+    "beschrijving": "De kandidaat kan verklaren hoe concentratie, temperatuur, verdelingsgraad en een katalysator de reactiesnelheid beïnvloeden.",
+    "concepten": [
+     "Reactiesnelheid",
+     "Katalysator",
+     "Hogere concentratie",
+     "Hogere temperatuur",
+     "Grotere verdelingsgraad"
+    ],
+    "vaardigheid": "verklaren",
+    "examenskill": "meerstaps-redeneren",
+    "examenrelevantie": "hoog",
+    "veelgemaakteFouten": [
+     "denkt dat een katalysator in de reactie wordt verbruikt"
+    ],
+    "_meta": {
+     "version": 1,
+     "reviewStatus": "draft",
+     "lastReviewed": null,
+     "source": "curriculum-factory@1",
+     "created": "2026-07-22",
+     "updated": "2026-07-22",
+     "contentHash": "d56f60995ce4"
+    }
+   },
+   {
+    "id": "sk.C.7",
+    "titel": "Chemisch evenwicht",
+    "eindterm": "C — evenwicht",
+    "teVerifiëren": true,
+    "beschrijving": "De kandidaat kan een chemisch evenwicht beschrijven als een dynamische toestand.",
+    "concepten": [
+     "Evenwicht"
+    ],
+    "vaardigheid": "verklaren",
+    "examenskill": "meerstaps-redeneren",
+    "examenrelevantie": "midden",
+    "veelgemaakteFouten": [
+     "denkt dat evenwicht betekent dat de concentraties gelijk zijn"
+    ],
+    "_meta": {
+     "version": 1,
+     "reviewStatus": "draft",
+     "lastReviewed": null,
+     "source": "curriculum-factory@1",
+     "created": "2026-07-22",
+     "updated": "2026-07-22",
+     "contentHash": "57089c60e729"
+    }
+   }
+  ]
+ },
+ "sk_D": {
+  "syllabus": "CE Scheikunde HAVO — Domein D: Koolstofchemie (koolwaterstoffen, functionele groepen, reactietypen, polymeren)",
+  "leerdoelen": [
+   {
+    "id": "sk.D.1",
+    "titel": "Koolwaterstoffen: alkanen en alkenen",
+    "eindterm": "D — koolwaterstoffen",
+    "teVerifiëren": true,
+    "beschrijving": "De kandidaat kan alkanen en alkenen onderscheiden en homologe reeksen herkennen.",
+    "concepten": [
+     "Alkaan",
+     "Alkeen",
+     "Homologe reeksen"
+    ],
+    "vaardigheid": "beschrijven",
+    "examenskill": "bron-interpretatie",
+    "examenrelevantie": "hoog",
+    "veelgemaakteFouten": [
+     "verwart alkaan (verzadigd) en alkeen (onverzadigd)"
+    ],
+    "_meta": {
+     "version": 1,
+     "reviewStatus": "draft",
+     "lastReviewed": null,
+     "source": "curriculum-factory@1",
+     "created": "2026-07-22",
+     "updated": "2026-07-22",
+     "contentHash": "7fc23dc2fe6f"
+    }
+   },
+   {
+    "id": "sk.D.2",
+    "titel": "Functionele groepen herkennen",
+    "eindterm": "D — functionele groepen",
+    "teVerifiëren": true,
+    "beschrijving": "De kandidaat kan functionele groepen zoals de hydroxyl- en carboxylgroep in een structuurformule herkennen.",
+    "concepten": [
+     "Functionele groep",
+     "Functionele groepen",
+     "Alcohol",
+     "−OH",
+     "Carboxylgroep",
+     "−COOH",
+     "−NH₂"
+    ],
+    "vaardigheid": "beschrijven",
+    "examenskill": "bron-interpretatie",
+    "examenrelevantie": "hoog",
+    "veelgemaakteFouten": [
+     "verwart −OH (alcohol) met −COOH (carbonzuur)"
+    ],
+    "_meta": {
+     "version": 1,
+     "reviewStatus": "draft",
+     "lastReviewed": null,
+     "source": "curriculum-factory@1",
+     "created": "2026-07-22",
+     "updated": "2026-07-22",
+     "contentHash": "c7e8db089cca"
+    }
+   },
+   {
+    "id": "sk.D.3",
+    "titel": "Esters en estervorming",
+    "eindterm": "D — esters",
+    "teVerifiëren": true,
+    "beschrijving": "De kandidaat kan de vorming van een ester uit een alcohol en een carbonzuur beschrijven.",
+    "concepten": [
+     "Ester",
+     "−COO−"
+    ],
+    "vaardigheid": "verklaren",
+    "examenskill": "meerstaps-redeneren",
+    "examenrelevantie": "hoog",
+    "veelgemaakteFouten": [
+     "verwisselt het alcohol- en het zuurdeel van de ester"
+    ],
+    "_meta": {
+     "version": 1,
+     "reviewStatus": "draft",
+     "lastReviewed": null,
+     "source": "curriculum-factory@1",
+     "created": "2026-07-22",
+     "updated": "2026-07-22",
+     "contentHash": "9b682109d791"
+    }
+   },
+   {
+    "id": "sk.D.4",
+    "titel": "Isomerie en naamgeving",
+    "eindterm": "D — isomerie",
+    "teVerifiëren": true,
+    "beschrijving": "De kandidaat kan isomeren herkennen en organische stoffen systematisch benoemen.",
+    "concepten": [
+     "Isomerie & naamgeving",
+     "Isomeren"
+    ],
+    "vaardigheid": "toepassen",
+    "examenskill": "meerstaps-redeneren",
+    "examenrelevantie": "midden",
+    "veelgemaakteFouten": [
+     "ziet dezelfde stof (andere weergave) aan voor isomeren"
+    ],
+    "_meta": {
+     "version": 1,
+     "reviewStatus": "draft",
+     "lastReviewed": null,
+     "source": "curriculum-factory@1",
+     "created": "2026-07-22",
+     "updated": "2026-07-22",
+     "contentHash": "90648314e81f"
+    }
+   },
+   {
+    "id": "sk.D.5",
+    "titel": "Reactietypen in de koolstofchemie",
+    "eindterm": "D — reactietypen",
+    "teVerifiëren": true,
+    "beschrijving": "De kandidaat kan additie-, substitutie- en verbrandingsreacties onderscheiden.",
+    "concepten": [
+     "Additiereactie",
+     "Substitutiereactie",
+     "Reactietypen",
+     "Verbranding"
+    ],
+    "vaardigheid": "verklaren",
+    "examenskill": "context-transfer",
+    "examenrelevantie": "hoog",
+    "veelgemaakteFouten": [
+     "verwart additie (dubbele band) en substitutie (verzadigd)"
+    ],
+    "_meta": {
+     "version": 1,
+     "reviewStatus": "draft",
+     "lastReviewed": null,
+     "source": "curriculum-factory@1",
+     "created": "2026-07-22",
+     "updated": "2026-07-22",
+     "contentHash": "ae5b16abb1e3"
+    }
+   },
+   {
+    "id": "sk.D.6",
+    "titel": "Polymeren",
+    "eindterm": "D — polymeren",
+    "teVerifiëren": true,
+    "beschrijving": "De kandidaat kan de vorming van polymeren uit monomeren beschrijven.",
+    "concepten": [
+     "Polymeer",
+     "Polymeren"
+    ],
+    "vaardigheid": "beschrijven",
+    "examenskill": "context-transfer",
+    "examenrelevantie": "midden",
+    "veelgemaakteFouten": [
+     "verwart monomeer en polymeer"
+    ],
+    "_meta": {
+     "version": 1,
+     "reviewStatus": "draft",
+     "lastReviewed": null,
+     "source": "curriculum-factory@1",
+     "created": "2026-07-22",
+     "updated": "2026-07-22",
+     "contentHash": "4e839653a849"
+    }
+   }
+  ]
+ },
+ "sk_E": {
+  "syllabus": "CE Scheikunde HAVO — Domein E: Chemie en samenleving (grondstoffen, milieu, duurzaamheid)",
+  "leerdoelen": [
+   {
+    "id": "sk.E.1",
+    "titel": "Grondstoffen, materialen en industrie",
+    "eindterm": "E — grondstoffen en materialen",
+    "teVerifiëren": true,
+    "beschrijving": "De kandidaat kan de weg van grondstof naar materiaal in de industriële chemie beschrijven.",
+    "concepten": [
+     "Grondstof",
+     "Materialen",
+     "Industriële chemie"
+    ],
+    "vaardigheid": "beschrijven",
+    "examenskill": "context-transfer",
+    "examenrelevantie": "midden",
+    "veelgemaakteFouten": [
+     "verwart grondstof en (eind)materiaal"
+    ],
+    "_meta": {
+     "version": 1,
+     "reviewStatus": "draft",
+     "lastReviewed": null,
+     "source": "curriculum-factory@1",
+     "created": "2026-07-22",
+     "updated": "2026-07-22",
+     "contentHash": "941115d2f8ca"
+    }
+   },
+   {
+    "id": "sk.E.2",
+    "titel": "Milieuproblemen: broeikaseffect, ozon en zure regen",
+    "eindterm": "E — milieu-effecten",
+    "teVerifiëren": true,
+    "beschrijving": "De kandidaat kan de oorzaken van broeikaseffect, aantasting van de ozonlaag en zure regen verklaren.",
+    "concepten": [
+     "Broeikaseffect",
+     "Broeikasgas",
+     "Gat in ozonlaag",
+     "Zure regen",
+     "Emissie",
+     "Milieu"
+    ],
+    "vaardigheid": "verklaren",
+    "examenskill": "context-transfer",
+    "examenrelevantie": "hoog",
+    "veelgemaakteFouten": [
+     "verwart het broeikaseffect met het gat in de ozonlaag"
+    ],
+    "_meta": {
+     "version": 1,
+     "reviewStatus": "draft",
+     "lastReviewed": null,
+     "source": "curriculum-factory@1",
+     "created": "2026-07-22",
+     "updated": "2026-07-22",
+     "contentHash": "da70a66861df"
+    }
+   },
+   {
+    "id": "sk.E.3",
+    "titel": "Duurzaamheid en groene chemie",
+    "eindterm": "E — duurzaamheid",
+    "teVerifiëren": true,
+    "beschrijving": "De kandidaat kan principes van groene chemie, recycling en een circulaire economie beoordelen op duurzaamheid.",
+    "concepten": [
+     "Groene chemie",
+     "Duurzaamheid",
+     "Circulaire economie",
+     "Recycling"
+    ],
+    "vaardigheid": "beoordelen",
+    "examenskill": "context-transfer",
+    "examenrelevantie": "hoog",
+    "veelgemaakteFouten": [
+     "ziet recycling als volledig verliesvrij"
+    ],
+    "_meta": {
+     "version": 1,
+     "reviewStatus": "draft",
+     "lastReviewed": null,
+     "source": "curriculum-factory@1",
+     "created": "2026-07-22",
+     "updated": "2026-07-22",
+     "contentHash": "6383d9f212a5"
+    }
+   },
+   {
+    "id": "sk.E.4",
+    "titel": "Levenscyclusanalyse",
+    "eindterm": "E — levenscyclusanalyse",
+    "teVerifiëren": true,
+    "beschrijving": "De kandidaat kan met een levenscyclusanalyse de milieubelasting van een product over alle fasen beoordelen.",
+    "concepten": [
+     "Levenscyclusanalyse"
+    ],
+    "vaardigheid": "beoordelen",
+    "examenskill": "data-verwerken",
+    "examenrelevantie": "midden",
+    "veelgemaakteFouten": [
+     "kijkt maar naar één fase van de levenscyclus"
+    ],
+    "_meta": {
+     "version": 1,
+     "reviewStatus": "draft",
+     "lastReviewed": null,
+     "source": "curriculum-factory@1",
+     "created": "2026-07-22",
+     "updated": "2026-07-22",
+     "contentHash": "90eed291a828"
+    }
+   },
+   {
+    "id": "sk.E.5",
+    "titel": "Chemie in voeding en energie",
+    "eindterm": "E — toepassingen",
+    "teVerifiëren": true,
+    "beschrijving": "De kandidaat kan chemische aspecten van voedsel en biobrandstoffen in de samenleving beschrijven.",
+    "concepten": [
+     "Voedsel",
+     "Biobrandstof"
+    ],
+    "vaardigheid": "beschrijven",
+    "examenskill": "context-transfer",
+    "examenrelevantie": "laag",
+    "veelgemaakteFouten": [
+     "denkt dat biobrandstof volledig CO₂-vrij is"
+    ],
+    "_meta": {
+     "version": 1,
+     "reviewStatus": "draft",
+     "lastReviewed": null,
+     "source": "curriculum-factory@1",
+     "created": "2026-07-22",
+     "updated": "2026-07-22",
+     "contentHash": "b4e4e8f7f7df"
+    }
+   }
+  ]
+ }
+}

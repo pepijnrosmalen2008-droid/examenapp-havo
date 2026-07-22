@@ -20,16 +20,36 @@
  */
 const fs = require('node:fs');
 const path = require('node:path');
+const crypto = require('node:crypto');
 const ROOT = path.resolve(__dirname, '..');
 const read = f => fs.readFileSync(path.join(ROOT, f), 'utf8');
 const FACT = path.join(ROOT, 'factory');
+const KDIR = niv => path.join(ROOT, 'knowledge', niv);
 
-const [cmd, niveau = 'havo', vakId] = process.argv.slice(2);
-if (!['brief', 'validate'].includes(cmd) || !vakId) {
-  console.error('gebruik: node scripts/curriculum-factory.js <brief|validate> <niveau> <vakId>');
+const argv = process.argv.slice(2);
+const FLAGS = argv.filter(a => a.startsWith('--'));
+const POS = argv.filter(a => !a.startsWith('--'));
+const cmd = POS[0], niveau = POS[1] || 'havo', vakId = POS[2];
+const DRY = FLAGS.includes('--dry-run');
+const needsVak = ['brief', 'validate', 'ingest'];
+if (!['brief', 'validate', 'ingest', 'assemble'].includes(cmd) || (needsVak.includes(cmd) && !vakId)) {
+  console.error('gebruik:\n  curriculum-factory.js brief|validate|ingest <niveau> <vak> [--dry-run]\n  curriculum-factory.js assemble <niveau>');
   process.exit(1);
 }
 if (!fs.existsSync(FACT)) fs.mkdirSync(FACT);
+
+// ── deterministische content-hash (voor versiebeheer/idempotentie) ──
+// Sluit _meta en id uit; volgorde-onafhankelijk voor concepten/veelgemaakteFouten.
+function contentHash(ld) {
+  const canon = {
+    titel: ld.titel || '', eindterm: ld.eindterm || '', teVerifiëren: !!ld.teVerifiëren,
+    beschrijving: ld.beschrijving || '',
+    concepten: [...(ld.concepten || [])].sort(),
+    vaardigheid: ld.vaardigheid || '', examenskill: ld.examenskill || '', examenrelevantie: ld.examenrelevantie || '',
+    veelgemaakteFouten: [...(ld.veelgemaakteFouten || [])].sort(),
+  };
+  return crypto.createHash('sha1').update(JSON.stringify(canon)).digest('hex').slice(0, 12);
+}
 
 // ── schema dat de draft-stap moet volgen (single source of truth) ──
 const SCHEMA = {
@@ -43,8 +63,8 @@ const SCHEMA = {
 // ── interne bron laden ──
 const dg = {};
 new Function('g', read(`data-${niveau}.js`) + `\ng.V=(typeof VAKKEN!=='undefined'?VAKKEN:VAKKEN_VWO);`)(dg);
-const vak = dg.V.find(v => v.id === vakId);
-if (!vak) { console.error(`vak ${vakId} niet in data-${niveau}.js`); process.exit(1); }
+const vak = vakId ? dg.V.find(v => v.id === vakId) : null;
+if (needsVak.includes(cmd) && !vak) { console.error(`vak ${vakId} niet in data-${niveau}.js`); process.exit(1); }
 
 // samenvattingen (optioneel — extra thematische context)
 let SAM = {};
@@ -98,34 +118,139 @@ function briefVak() {
   };
 }
 
-function validateDraft() {
-  const draftFile = path.join(FACT, `draft-${niveau}-${vakId}.json`);
-  if (!fs.existsSync(draftFile)) { console.error(`ontbreekt: factory/draft-${niveau}-${vakId}.json`); process.exit(1); }
-  const draft = JSON.parse(fs.readFileSync(draftFile, 'utf8'));
+// Valideert een draft-object (schema, enums, id-format, referentiële integriteit).
+// Retourneert {issues, ids} en logt. Gedeeld door `validate` én `ingest`.
+function validateDraftObj(draft, { silent = false } = {}) {
   const begrippenPerDom = {};
   for (const d of vak.domeinen) begrippenPerDom[d.id] = new Set((d.begrippen || []).map(b => (b.t || '').toLowerCase()));
-  let issues = 0; const warn = (m) => { issues++; console.log('  ✗ ' + m); };
-  const ok = (m) => console.log('  ✓ ' + m);
+  let issues = 0; const seen = new Set();
+  const warn = (m) => { issues++; if (!silent) console.log('  ✗ ' + m); };
+  const ok = (m) => { if (!silent) console.log('  ✓ ' + m); };
 
   for (const [domKey, block] of Object.entries(draft)) {
     const domId = domKey.split('_')[1] || domKey;
+    const validDom = vak.domeinen.some(d => d.id === domId);
+    if (!validDom) warn(`onbekend domein: ${domKey}`);
     const lds = (block.leerdoelen || []);
     const n = lds.length;
     (n >= SCHEMA.leerdoelenPerDomein.min && n <= SCHEMA.leerdoelenPerDomein.max)
       ? ok(`${domKey}: ${n} leerdoelen (binnen 4–8)`) : warn(`${domKey}: ${n} leerdoelen (buiten 4–8)`);
     for (const ld of lds) {
       if (!/^[a-z]{2}\.[A-Z0-9]+\.\d+$/.test(ld.id || '')) warn(`id fout schema: ${ld.id}`);
+      else if (ld.id.split('.')[1] !== domId) warn(`${ld.id}: domein-deel klopt niet met ${domKey}`);
+      if (seen.has(ld.id)) warn(`dubbele id: ${ld.id}`); seen.add(ld.id);
+      if (!ld.titel) warn(`${ld.id}: titel ontbreekt`);
       if (!SCHEMA.vaardigheden.includes(ld.vaardigheid)) warn(`${ld.id}: vaardigheid '${ld.vaardigheid}' niet in enum`);
       if (!SCHEMA.examenskills.includes(ld.examenskill)) warn(`${ld.id}: examenskill '${ld.examenskill}' niet in enum`);
       if (!SCHEMA.examenrelevantie.includes(ld.examenrelevantie)) warn(`${ld.id}: examenrelevantie ongeldig`);
-      // concepten moeten uit dit domein komen (of een bewuste toevoeging zijn)
       const known = begrippenPerDom[domId] || new Set();
       const vreemd = (ld.concepten || []).filter(c => !known.has(String(c).toLowerCase()));
-      if (vreemd.length) console.log(`  · ${ld.id}: ${vreemd.length} concept(en) niet in begrippen (bewuste toevoeging?): ${vreemd.join(', ')}`);
+      if (vreemd.length && !silent) console.log(`  · ${ld.id}: ${vreemd.length} concept(en) niet in begrippen (bewuste toevoeging?): ${vreemd.join(', ')}`);
     }
   }
-  console.log('\n' + (issues ? `✗ ${issues} schema-issue(s)` : '✓ draft voldoet aan het schema'));
-  process.exit(issues ? 1 : 0);
+  return { issues, ids: seen };
+}
+
+function loadDraft() {
+  const f = path.join(FACT, `draft-${niveau}-${vakId}.json`);
+  if (!fs.existsSync(f)) { console.error(`ontbreekt: factory/draft-${niveau}-${vakId}.json`); process.exit(1); }
+  return JSON.parse(fs.readFileSync(f, 'utf8'));
+}
+
+// ── ASSEMBLE: knowledge/<niveau>/*.json → knowledge-<niveau>.js (deterministisch) ──
+function assemble() {
+  const dir = KDIR(niveau);
+  if (!fs.existsSync(dir)) { console.error(`geen knowledge/${niveau}/`); process.exit(1); }
+  const files = fs.readdirSync(dir).filter(f => f.endsWith('.json')).sort();
+  const merged = {};
+  for (const f of files) {
+    const obj = JSON.parse(fs.readFileSync(path.join(dir, f), 'utf8'));
+    for (const k of Object.keys(obj)) merged[k] = obj[k];
+  }
+  const sorted = {}; for (const k of Object.keys(merged).sort()) sorted[k] = merged[k];
+  const banner = `// ═══════════════════════════════════════════════════════════════════════
+// knowledge-${niveau}.js — GEGENEREERD door curriculum-factory.js (assemble).
+// Bron van waarheid: knowledge/${niveau}/<vak>.json. NIET met de hand bewerken;
+// draai 'curriculum-factory.js ingest' of 'assemble'. Bevat provenance in _meta.
+// ═══════════════════════════════════════════════════════════════════════
+var LEERDOELEN = (typeof LEERDOELEN !== 'undefined' && LEERDOELEN) || {};
+Object.assign(LEERDOELEN, ${JSON.stringify(sorted, null, 1)});
+if (typeof module !== 'undefined' && module.exports) module.exports = { LEERDOELEN };
+`;
+  const out = `knowledge-${niveau}.js`;
+  fs.writeFileSync(path.join(ROOT, out), banner);
+  const nLd = Object.values(sorted).reduce((a, d) => a + (d.leerdoelen || []).length, 0);
+  console.log(`✓ ${out} geassembleerd uit ${files.length} vak(ken): ${Object.keys(sorted).length} domeinen, ${nLd} leerdoelen`);
+}
+
+// ── INGEST: gevalideerde draft → knowledge/<niveau>/<vak>.json (idempotent, versie+provenance) ──
+function ingest() {
+  const draft = loadDraft();
+  console.log(`\n── Validatie ──`);
+  const { issues } = validateDraftObj(draft);
+  if (issues) { console.error(`\n✗ ${issues} schema-issue(s) — ingest afgebroken. Corrigeer de draft.`); process.exit(1); }
+
+  const today = new Date().toISOString().slice(0, 10);
+  const file = path.join(KDIR(niveau), `${vakId}.json`);
+  const existing = fs.existsSync(file) ? JSON.parse(fs.readFileSync(file, 'utf8')) : {};
+  // index bestaande leerdoelen op id (id = STABIELE sleutel; tekst mag evolueren)
+  const exById = {};
+  for (const block of Object.values(existing)) for (const ld of (block.leerdoelen || [])) exById[ld.id] = ld;
+
+  const report = { added: [], changed: [], unchanged: [], kept: [] };
+  const out = {};
+  const draftIds = new Set();
+
+  // merge domeinen uit de draft
+  for (const [domKey, block] of Object.entries(draft)) {
+    const lds = (block.leerdoelen || []).map(ld => {
+      draftIds.add(ld.id);
+      const hash = contentHash(ld);
+      const prev = exById[ld.id];
+      let meta;
+      if (!prev) {
+        meta = { version: 1, reviewStatus: 'draft', lastReviewed: null, source: 'curriculum-factory@1', created: today, updated: today, contentHash: hash };
+        report.added.push(ld.id);
+      } else if (prev._meta && prev._meta.contentHash === hash) {
+        meta = prev._meta; // idempotent: niets veranderd
+        report.unchanged.push(ld.id);
+      } else {
+        const pm = prev._meta || { version: 0, source: 'onbekend', created: today };
+        meta = { version: pm.version + 1, reviewStatus: 'draft', lastReviewed: null, source: 'curriculum-factory@1', created: pm.created, updated: today, contentHash: hash };
+        report.changed.push(`${ld.id} (v${pm.version}→v${meta.version})`);
+      }
+      const { _meta, ...content } = ld; // drop een eventueel meegeleverde _meta
+      return { ...content, _meta: meta };
+    });
+    out[domKey] = { syllabus: block.syllabus || (existing[domKey] && existing[domKey].syllabus) || null, leerdoelen: lds };
+  }
+  // domeinen die alleen in het bestaande bestand zitten → behouden (niet stil verwijderen)
+  for (const [domKey, block] of Object.entries(existing)) {
+    if (out[domKey]) continue;
+    out[domKey] = block;
+    for (const ld of (block.leerdoelen || [])) report.kept.push(ld.id);
+  }
+  // bestaande leerdoelen binnen een draft-domein die niet meer in de draft staan → behouden + flaggen
+  for (const [domKey, block] of Object.entries(draft)) {
+    const ex = existing[domKey]; if (!ex) continue;
+    for (const ld of (ex.leerdoelen || [])) {
+      if (!draftIds.has(ld.id)) { out[domKey].leerdoelen.push(ld); report.kept.push(ld.id + ' (niet in draft)'); }
+    }
+  }
+
+  // ── diff-rapport (vóór schrijven) ──
+  console.log(`\n── Ingest-rapport ${vakId} (${niveau}) ${DRY ? '[DRY-RUN]' : ''} ──`);
+  console.log(`  toegevoegd : ${report.added.length}${report.added.length ? '  ' + report.added.join(', ') : ''}`);
+  console.log(`  gewijzigd  : ${report.changed.length}${report.changed.length ? '  ' + report.changed.join(', ') : ''}`);
+  console.log(`  ongewijzigd: ${report.unchanged.length}`);
+  if (report.kept.length) console.log(`  behouden   : ${report.kept.length}  ${report.kept.join(', ')}`);
+
+  if (DRY) { console.log('\n(DRY-RUN: niets geschreven)'); return; }
+  // deterministisch schrijven: domeinen gesorteerd
+  const sortedOut = {}; for (const k of Object.keys(out).sort()) sortedOut[k] = out[k];
+  fs.writeFileSync(file, JSON.stringify(sortedOut, null, 1));
+  console.log(`\n✓ geschreven: knowledge/${niveau}/${vakId}.json`);
+  assemble();
 }
 
 if (cmd === 'brief') {
@@ -139,5 +264,11 @@ if (cmd === 'brief') {
   for (const d of b.domeinen) console.log(`   [${d.id}] ${d.naam}: ${d.concepten.length} concepten, ${d.misconceptieSignalen.length} mis-signalen, sam:${d.samThema ? 'ja' : 'nee'}`);
   console.log(`\n  → volgende stap: draft leerdoelen volgens de briefing → factory/draft-${niveau}-${vakId}.json → 'validate'`);
 } else if (cmd === 'validate') {
-  validateDraft();
+  const { issues } = validateDraftObj(loadDraft());
+  console.log('\n' + (issues ? `✗ ${issues} schema-issue(s)` : '✓ draft voldoet aan het schema'));
+  process.exit(issues ? 1 : 0);
+} else if (cmd === 'assemble') {
+  assemble();
+} else if (cmd === 'ingest') {
+  ingest();
 }

@@ -99,12 +99,15 @@
     return 0.40 * t.conf + 0.25 * cov + 0.20 * enough + 0.15 * (1 - lowFrac);
   }
   function reviewStatus(ld, t, ai, cov) {
-    if (ld.review) { // handmatig gezet wint
-      const m = { gevalideerd: ['r-val', '🟢 Gevalideerd'], review: ['r-review', '🟡 Review nodig'], concept: ['r-concept', '🔴 Concept'] };
-      return m[ld.review] || m.concept;
+    // Menselijke status (provenance) wint: draft | reviewed | approved
+    const rs = (ld._meta && ld._meta.reviewStatus) || ld.review;
+    if (rs) {
+      const m = { approved: ['r-val', '🟢 Goedgekeurd'], gevalideerd: ['r-val', '🟢 Goedgekeurd'], reviewed: ['r-review', '🟡 Beoordeeld'], draft: ['r-concept', '🔴 Concept'], concept: ['r-concept', '🔴 Concept'] };
+      if (m[rs]) return m[rs];
     }
-    if (!t || t.n < 6 || ai < 0.60) return ['r-concept', '🔴 Concept'];
-    if (t.low > 0 || cov < 0.80 || ai < 0.85) return ['r-review', '🟡 Review nodig'];
+    // fallback: auto-afgeleid uit de metrics
+    if (!t || t.n < 6 || ai < 0.60) return ['r-concept', '🔴 Concept*'];
+    if (t.low > 0 || cov < 0.80 || ai < 0.85) return ['r-review', '🟡 Review*'];
     return ['r-val', '🟢 Gevalideerd*'];
   }
   function signaal(n, low, fout) {
@@ -212,7 +215,7 @@
       <div class="legend">
         <span><b>Syllabus</b> = conceptdekking</span>
         <span><b>AI-Ready</b> = 0.40·conf + 0.25·syllabus + 0.20·genoeg + 0.15·zeker</span>
-        <span><b>Review</b>: 🟢 gevalideerd* / 🟡 review / 🔴 concept (*auto tot menselijke sign-off)</span>
+        <span><b>Review</b>: 🟢 goedgekeurd / 🟡 beoordeeld / 🔴 concept (* = auto-afgeleid, geen menselijke status)</span>
         <span><b>Foutratio</b> nu op domein-niveau</span>
       </div>
       ${doms}

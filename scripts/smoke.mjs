@@ -155,41 +155,60 @@ group('Curriculum Intelligence (F1)');
 try {
   const lg = {}; new Function('g', read('knowledge-havo.js') + '\ng.L = LEERDOELEN;')(lg);
   // verzamel alle geldige leerdoel-id's + controleer id-schema
-  const ids = new Set(); let ldCount = 0, badId = 0, sharedConcept = 0;
-  const conceptOwner = {};
+  const ids = new Set(); let ldCount = 0, badId = 0;
+  const conceptOwner = {}; // per DOMEIN (tagging is domein-gescoped) → concept mag niet in >1 leerdoel binnen 1 domein
   for (const [k, v] of Object.entries(lg.L)) {
     for (const ld of (v.leerdoelen || [])) {
       ldCount++; ids.add(ld.id);
-      if (!/^[a-z]{2}\.[A-Z]\.\d+$/.test(ld.id)) badId++;
-      for (const c of (ld.concepten || [])) (conceptOwner[c] = conceptOwner[c] || new Set()).add(ld.id);
+      if (!/^[a-z]{2}\.[A-Z0-9]+\.\d+$/.test(ld.id)) badId++;
+      for (const c of (ld.concepten || [])) { const key = k + '§' + c; (conceptOwner[key] = conceptOwner[key] || new Set()).add(ld.id); }
     }
   }
-  ldCount >= 20 ? ok(`${ldCount} leerdoelen (bi-pilot)`) : bad(`te weinig leerdoelen (${ldCount})`);
+  ldCount >= 20 ? ok(`${ldCount} leerdoelen (${Object.keys(lg.L).length} domeinen)`) : bad(`te weinig leerdoelen (${ldCount})`);
   badId === 0 ? ok('alle leerdoel-id\'s volgen vak.domein.volgnr') : bad(`${badId} leerdoel-id's met fout schema`);
   const shared = Object.entries(conceptOwner).filter(([, s]) => s.size > 1);
-  shared.length === 0 ? ok('geen concept in >1 leerdoel (geen ambiguïteit)') : bad('gedeelde concepten: ' + shared.map(([c]) => c).join(', '));
+  shared.length === 0 ? ok('geen concept in >1 leerdoel binnen 1 domein (geen ambiguïteit)') : bad('gedeelde concepten (zelfde domein): ' + shared.map(([k]) => k.split('§')[1]).join(', '));
 
-  // sidecar: elke koppeling verwijst naar bestaand leerdoel; provenance geldig
+  // sidecar: elke koppeling verwijst naar bestaand leerdoel; provenance geldig; sync met bron.
+  // Gegeneraliseerd: loop over ALLE getagde vakken (bi, sk, …).
   const cg = {}; new Function('g', read('knowledge-koppeling-havo.js') + '\ng.K = LO_KOPPELING;')(cg);
-  const bi = cg.K.bi || {};
-  const entries = Object.values(bi);
-  const badLo = entries.filter(e => !ids.has(e.lo));
-  const badConf = entries.filter(e => typeof e.confidence !== 'number' || e.confidence < 0 || e.confidence > 1);
-  const badSrc = entries.filter(e => !['concept_match', 'fallback', 'manual_override'].includes(e.source));
-  entries.length > 0 ? ok(`sidecar: ${entries.length} koppelingen`) : bad('sidecar leeg');
-  badLo.length === 0 ? ok('alle koppelingen → bestaand leerdoel') : bad(`${badLo.length} koppelingen naar onbekend leerdoel`);
-  badConf.length === 0 ? ok('alle confidence-waarden in [0,1]') : bad(`${badConf.length} ongeldige confidence-waarden`);
-  badSrc.length === 0 ? ok('alle source-waarden geldig') : bad(`${badSrc.length} ongeldige source-waarden`);
-
-  // koppeling in sync met de bron: elke qkey hoort bij een echte bi-vraag, en alle vragen gedekt
   const vk2 = {}; new Function('g', read('data-havo.js') + '\ng.H = VAKKEN;')(vk2);
-  const biVak = vk2.H.find(v => v.id === 'bi');
-  const qkeys = new Set();
-  for (const d of biVak.domeinen) for (const q of [...(d.sv || []), ...(d.oe || [])]) qkeys.add((q.v || '').slice(0, 80));
-  const orphan = Object.keys(bi).filter(k => !qkeys.has(k));
-  const uncovered = [...qkeys].filter(k => !bi[k]);
-  orphan.length === 0 ? ok('geen wees-koppelingen (sidecar ⊆ bron)') : bad(`${orphan.length} koppelingen zonder vraag — draai tag-leerdoelen.js opnieuw`);
-  uncovered.length === 0 ? ok(`alle ${qkeys.size} bi-vragen gekoppeld`) : bad(`${uncovered.length} bi-vragen zonder koppeling`);
+  const taggedVakken = Object.keys(cg.K);
+  let allProvOk = true, allSyncOk = true, totalKopp = 0;
+  for (const vid of taggedVakken) {
+    const kp = cg.K[vid] || {}; const entries = Object.values(kp); totalKopp += entries.length;
+    const badLo = entries.filter(e => !ids.has(e.lo));
+    const badMeta = entries.filter(e => typeof e.confidence !== 'number' || e.confidence < 0 || e.confidence > 1 || !['concept_match', 'fallback', 'manual_override'].includes(e.source));
+    if (badLo.length || badMeta.length) { allProvOk = false; bad(`${vid}: ${badLo.length} onbekend leerdoel, ${badMeta.length} ongeldige provenance`); }
+    const vk = vk2.H.find(v => v.id === vid);
+    const qkeys = new Set();
+    if (vk) for (const d of vk.domeinen) for (const q of [...(d.sv || []), ...(d.oe || [])]) qkeys.add(d.id + '|' + (q.v || '').slice(0, 80));
+    const orphan = Object.keys(kp).filter(k => !qkeys.has(k));
+    const uncovered = [...qkeys].filter(k => !kp[k]);
+    if (orphan.length || uncovered.length) { allSyncOk = false; bad(`${vid}: ${orphan.length} wees-koppelingen, ${uncovered.length} ongekoppelde vragen`); }
+  }
+  allProvOk ? ok(`sidecar: ${totalKopp} koppelingen (${taggedVakken.join(', ')}) → geldig leerdoel + provenance`) : null;
+  allSyncOk ? ok('sidecar ⊆ bron én alle vragen gedekt (alle getagde vakken)') : null;
+
+  // knowledge-havo.js moet in sync zijn met de JSON-bronnen (assemble is deterministisch)
+  try {
+    const dir = path.join(ROOT, 'knowledge', 'havo');
+    if (fs.existsSync(dir)) {
+      const merged = {};
+      for (const f of fs.readdirSync(dir).filter(x => x.endsWith('.json')).sort()) {
+        const o = JSON.parse(fs.readFileSync(path.join(dir, f), 'utf8'));
+        for (const kk of Object.keys(o)) merged[kk] = o[kk];
+      }
+      const sortedSrc = {}; for (const kk of Object.keys(merged).sort()) sortedSrc[kk] = merged[kk];
+      const inSync = JSON.stringify(sortedSrc) === JSON.stringify(lg.L);
+      inSync ? ok('knowledge-havo.js in sync met knowledge/havo/*.json') : bad('knowledge-havo.js ≠ bron — draai: curriculum-factory.js assemble havo');
+    }
+  } catch (e) { bad('assemble-sync-check mislukt: ' + e.message); }
+
+  // review-status provenance geldig
+  const allLds = Object.values(lg.L).flatMap(v => v.leerdoelen || []);
+  const badReview = allLds.filter(ld => ld._meta && !['draft', 'reviewed', 'approved'].includes(ld._meta.reviewStatus));
+  badReview.length === 0 ? ok('alle _meta.reviewStatus geldig (draft/reviewed/approved)') : bad(`${badReview.length} ongeldige reviewStatus`);
 
   // dashboard laadt de kennislaag
   const dash = read('curriculum.html');

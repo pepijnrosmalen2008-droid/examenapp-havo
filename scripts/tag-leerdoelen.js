@@ -48,7 +48,10 @@ const kg = {}; new Function('g', read(`knowledge-${NIVEAU}.js`) + '\ng.L=LEERDOE
 const vak = dg.V.find(v => v.id === VAKID);
 if (!vak) { console.error(`Vak ${VAKID} niet gevonden`); process.exit(1); }
 
-const qkeyOf = q => (q.v || '').slice(0, 80);
+// Sleutel is domein-gescoped: een vraag hoort bij precies één domein en leerdoelen
+// zijn domein-gescoped. Dit voorkomt botsingen van identieke vragen die als begrip
+// in twee domeinen voorkomen (bv. 'Mengsel' in sk_A én sk_B).
+const qkeyOf = (q, domId) => domId + '|' + (q.v || '').slice(0, 80);
 function esc(s) { return s.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'); }
 function hit(concept, hay) {
   const c = concept.toLowerCase();
@@ -111,7 +114,7 @@ for (const d of vak.domeinen) {
   const fallbackId = lds[0] && lds[0].id;
   for (const q of [...(d.sv || []), ...(d.oe || [])]) {
     stat.n++;
-    const key = qkeyOf(q);
+    const key = qkeyOf(q, d.id);
     const opts = q.o || q.a || [];
     const isOe = (d.oe || []).includes(q);
     // stam + JUIST antwoord (open vraag: stam + context + uitleg; o is leeg)
@@ -120,7 +123,8 @@ for (const d of vak.domeinen) {
       : ((q.v || '') + ' ' + (opts[q.c] || '')).toLowerCase();
 
     let entry;
-    if (OVERRIDES[key]) { entry = { lo: OVERRIDES[key], confidence: 1.0, source: 'manual_override', via: null }; stat.override++; }
+    const ovKey = key.slice(key.indexOf('|') + 1); // OVERRIDES worden op de vraagtekst gematcht (domein-onafhankelijk)
+    if (OVERRIDES[ovKey]) { entry = { lo: OVERRIDES[ovKey], confidence: 1.0, source: 'manual_override', via: null }; stat.override++; }
     else {
       const m = classify(lds, hay, q);
       if (m) { entry = m; stat.concept++; }
@@ -155,6 +159,13 @@ if (review.length) {
 
 // ── schrijven (tenzij --check) ──
 if (!CHECK) {
+  const outFile = `knowledge-koppeling-${NIVEAU}.js`;
+  // MERGE: behoud koppelingen van andere vakken; vervang alleen dit vak. Deterministisch (vakken gesorteerd).
+  let all = {};
+  try { const eg = {}; new Function('g', read(outFile) + '\ng.K=LO_KOPPELING;')(eg); all = eg.K || {}; } catch (e) { /* nieuw bestand */ }
+  all[VAKID] = koppeling;
+  const sorted = {}; for (const k of Object.keys(all).sort()) sorted[k] = all[k];
+  const lines = Object.entries(sorted).map(([vk, kp]) => `LO_KOPPELING[${JSON.stringify(vk)}] = ${JSON.stringify(kp, null, 0)};`).join('\n');
   const banner = `// ═══════════════════════════════════════════════════════════════════════
 // knowledge-koppeling-${NIVEAU}.js — GEGENEREERD door scripts/tag-leerdoelen.js
 // Sidecar: koppelt vragen aan leerdoelen mét provenance. NIET met de hand
@@ -163,12 +174,11 @@ if (!CHECK) {
 // De app gebruikt dit nog niet; opgeslagen voor toekomstige AI/adaptive-processen.
 // ═══════════════════════════════════════════════════════════════════════
 var LO_KOPPELING = (typeof LO_KOPPELING !== 'undefined' && LO_KOPPELING) || {};
-LO_KOPPELING[${JSON.stringify(VAKID)}] = ${JSON.stringify(koppeling, null, 0)};
+${lines}
 if (typeof module !== 'undefined' && module.exports) module.exports = { LO_KOPPELING };
 `;
-  const outFile = `knowledge-koppeling-${NIVEAU}.js`;
   fs.writeFileSync(path.join(ROOT, outFile), banner);
-  console.log(`\n✓ geschreven: ${outFile} (${Object.keys(koppeling).length} koppelingen)`);
+  console.log(`\n✓ geschreven: ${outFile} (${VAKID}: ${Object.keys(koppeling).length} koppelingen; totaal vakken: ${Object.keys(sorted).length})`);
 } else {
   console.log(`\n(--check: sidecar niet geschreven)`);
 }
