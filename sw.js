@@ -1,4 +1,4 @@
-const CACHE = 'slagio-v394';
+const CACHE = 'slagio-v395';
 const ASSETS = ['/', '/index.html', '/over-ons.html', '/faq.html', '/privacy.html', '/styles.css', '/data.js', '/data-havo.meta.js', '/data-vwo.meta.js', '/state.js', '/cloud.js', '/profile.js', '/vak.js', '/quiz.js', '/tools.js', '/sim.js', '/lb.js', '/features.js', '/schedule.js', '/foutenboek.js', '/v4.js', '/zoek.js', '/klas.js', '/init.js', '/sam-anim.js', '/sam-clip.js', '/ico-swap.js', '/examens.js', '/ce_data.js', '/manifest.json', '/icon-192.png', '/icon-512.png', '/logo.svg', '/apple-touch-icon.png'];
 
 self.addEventListener('install', e => {
@@ -42,7 +42,7 @@ self.addEventListener('fetch', e => {
   const DATA_FILES = ['/data.js', '/data-havo.meta.js', '/data-vwo.meta.js', '/sam-havo.js', '/sam-vwo.js', '/ce_data.js', '/examens.js'];
   // Per-vak vraagbestanden (/q/*.js) laden lui en wijzigen zelden: cache-first (SWR).
   // foutenboek-meta-*.js (verrijking, ~110 KB) idem: lui geladen, zelden gewijzigd.
-  const isBigData = DATA_FILES.includes(url.pathname) || url.pathname.startsWith('/q/') || url.pathname.startsWith('/foutenboek-meta-');
+  const isBigData = DATA_FILES.includes(url.pathname) || url.pathname.startsWith('/q/') || url.pathname.startsWith('/foutenboek-meta-') || url.pathname.startsWith('/foutenboek-uitleg-');
   const isCode = !isBigData && (url.pathname.endsWith('.js') || url.pathname.endsWith('.css'));
 
   if (isCode) {

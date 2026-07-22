@@ -3626,6 +3626,20 @@ html.dark .hsd-pill{background:var(--bg2);border-color:var(--bo2)}
 /* Inline "Waarom fout?" in de quiz-feedback */
 .q-why{margin-top:9px;padding:9px 11px;border-radius:10px;background:rgba(99,102,241,.09);border:1px solid rgba(99,102,241,.22);font-size:13px;line-height:1.45;color:var(--dk)}
 .q-why-lbl{font-weight:900;color:#6366f1;margin-right:5px}
+/* Rijke per-afleider uitleg (Sprint 2b) in het Foutenboek */
+.fb-why-rich .fb-opts{display:flex;flex-direction:column;gap:7px;margin-top:9px}
+.fb-opt{padding:8px 10px;border-radius:9px;border:1px solid var(--bo);background:var(--s)}
+.fb-opt-goed{border-color:rgba(34,197,94,.4);background:rgba(34,197,94,.06)}
+.fb-opt-verl{border-color:rgba(245,158,11,.45);background:rgba(245,158,11,.07)}
+.fb-opt-fout{opacity:.9}
+.fb-opt-t{font-size:13px;font-weight:700;color:var(--dk);line-height:1.4}
+.fb-opt-tag{font-size:11px;font-weight:900;margin-right:5px}
+.fb-opt-goed .fb-opt-tag{color:#16a34a}
+.fb-opt-verl .fb-opt-tag{color:#d97706}
+.fb-opt-fout .fb-opt-tag{color:#dc2626}
+.fb-opt-w{font-size:12.5px;line-height:1.45;color:var(--mu);margin-top:3px}
+.fb-herken{margin-top:10px;font-size:13px;line-height:1.45;color:var(--dk)}
+.fb-herken-lbl{font-weight:900;color:#6366f1;margin-right:4px}
 
 /* ── WELKOMST SCHERM MOBIEL ──────────────────────── */
 @media(max-width:640px){

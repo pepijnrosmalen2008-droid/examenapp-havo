@@ -73,6 +73,26 @@ function ensureFbMeta(cb) {
   s.onerror = () => { _fbMetaState = 2; cb && cb(); };   // degradeer: geen verrijking
   document.head.appendChild(s);
 }
+// ─── RIJKE UITLEG (Sprint 2b, lazy, optioneel) ───
+// foutenboek-uitleg-<niveau>.js bestaat pas nadat build-foutenboek-uitleg.js is
+// gedraaid + gecommit. Ontbreekt hij, dan degradeert alles stil naar 2a.
+var _fbUitState = 0; // 0=niet geprobeerd, 1=laden, 2=klaar/faalde
+function ensureFbUitleg(cb) {
+  if (_fbUitState === 2 || typeof FB_UITLEG !== 'undefined') { _fbUitState = 2; cb && cb(); return; }
+  if (_fbUitState === 1) { setTimeout(() => ensureFbUitleg(cb), 120); return; }
+  _fbUitState = 1;
+  const s = document.createElement('script');
+  s.src = 'foutenboek-uitleg-' + (typeof APP_LEVEL !== 'undefined' ? APP_LEVEL : 'havo') + '.js';
+  s.onload = () => { _fbUitState = 2; cb && cb(); };
+  s.onerror = () => { _fbUitState = 2; cb && cb(); };   // bestaat (nog) niet → stil verder
+  document.head.appendChild(s);
+}
+function fbUitlegFor(vakId, domId, v) {
+  if (typeof FB_UITLEG === 'undefined') return null;
+  const vm = FB_UITLEG[vakId]; if (!vm) return null;
+  return vm[fbQkey(domId, v)] || null;
+}
+
 // Geef { lt, m, c } voor een fout, of null als niet betrouwbaar gekoppeld.
 function fbEnrich(vakId, domId, v) {
   if (typeof FB_META === 'undefined' || typeof FB_LO === 'undefined') return null;
@@ -117,7 +137,7 @@ function renderFoutenboek() {
   const stats = document.getElementById('fb-stats');
   if (!wrap) return;
   wrap.innerHTML = `<div class="fb-loading">Foutenboek laden…</div>`;
-  ensureFbMeta(() => _renderFoutenboekInner(wrap, stats));
+  ensureFbMeta(() => ensureFbUitleg(() => _renderFoutenboekInner(wrap, stats)));
 }
 function _renderFoutenboekInner(wrap, stats) {
   const d = _fbLoad();
@@ -172,7 +192,30 @@ function _renderFoutenboekInner(wrap, stats) {
     for (const e of g.items) {
       const st = _fbStatus(e);
       const enr = fbEnrich(e.vakId, e.domId, e.v);
+      const uit = fbUitlegFor(e.vakId, e.domId, e.v);
       const correct = (e.o && typeof e.c === 'number') ? e.o[e.c] : '';
+      // Rijke uitleg (2b) heeft voorrang; anders de misconceptie (2a).
+      let whyHtml = '';
+      if (uit && Array.isArray(uit.opts) && e.o) {
+        const rows = e.o.map((opt, ix) => {
+          const u = uit.opts[ix] || {};
+          const cls = u.juist ? 'fb-opt-goed' : (uit.verleidelijk === ix ? 'fb-opt-verl' : 'fb-opt-fout');
+          const tag = u.juist ? '✓ juist' : (uit.verleidelijk === ix ? '⚠ verleidelijk' : '✗ fout');
+          return `<div class="fb-opt ${cls}"><div class="fb-opt-t"><span class="fb-opt-tag">${tag}</span> ${_fbEsc(opt)}</div>${u.w ? `<div class="fb-opt-w">${_fbEsc(u.w)}</div>` : ''}</div>`;
+        }).join('');
+        whyHtml = `<div class="fb-why fb-why-rich">
+          <div class="fb-why-hdr">💡 Waarom ging dit fout?</div>
+          ${enr ? `<div class="fb-why-lo">${_fbEsc(enr.lt)}</div>` : ''}
+          <div class="fb-opts">${rows}</div>
+          ${uit.herken ? `<div class="fb-herken"><span class="fb-herken-lbl">Zo herken je het:</span> ${_fbEsc(uit.herken)}</div>` : ''}
+        </div>`;
+      } else if (enr) {
+        whyHtml = `<div class="fb-why">
+          <div class="fb-why-hdr">💡 Waarom ging dit fout?</div>
+          <div class="fb-why-lo">${_fbEsc(enr.lt)}</div>
+          ${enr.m ? `<div class="fb-why-m">Let op: ${_fbEsc(enr.m)}</div>` : ''}
+        </div>`;
+      }
       html += `<div class="fb-item fb-item-${st.k}">
         <div class="fb-item-top">
           <span class="fb-dot">${st.dot}</span>
@@ -182,11 +225,7 @@ function _renderFoutenboekInner(wrap, stats) {
         </div>
         <div class="fb-item-v">${_fbEsc(e.v)}</div>
         <div class="fb-item-ans"><span class="fb-ans-lbl">Juist:</span> ${_fbEsc(correct)}</div>
-        ${enr ? `<div class="fb-why">
-          <div class="fb-why-hdr">💡 Waarom ging dit fout?</div>
-          <div class="fb-why-lo">${_fbEsc(enr.lt)}</div>
-          ${enr.m ? `<div class="fb-why-m">Let op: ${_fbEsc(enr.m)}</div>` : ''}
-        </div>` : ''}
+        ${whyHtml}
       </div>`;
     }
     html += `</div>`;

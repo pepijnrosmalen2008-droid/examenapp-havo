@@ -21,12 +21,18 @@ Elke fout wordt automatisch bewaard mét juist antwoord, hoe vaak, wanneer, en �
 
 De misconceptie achter een fout verschijnt nú al in het Foutenboek. In Sprint 2 brengen we hem naar het moment dat het telt: **direct na een fout antwoord in de quiz** — het punt dat een leerling tientallen keren per dag raakt.
 
-- **2a (nu, zonder LLM):** toon de veelgemaakte fout voor dit onderwerp inline onder "Fout", uit de bestaande kennislaag (bi/sk/na).
-- **2b (generatief, vereist een keuze):** per-afleider redenering — *"Waarom is A fout? Waarom is C verleidelijk? Hoe herken je dit volgende keer?"* Dit vereist een LLM. Twee eerlijke paden, geen speculatieve infra:
-  - **Vooraf genereren** bij build-time → statisch meegeleverd (geen runtime-key, geen backend). Past bij het bestaande "prozastap = pluggable LLM"-patroon.
-  - **Supabase Edge Function** als dunne proxy die de key serverside houdt → live/dynamisch, minimale backend.
+- **2a ✅ (live, zonder LLM):** de veelgemaakte fout voor dit onderwerp verschijnt inline onder "Fout" in de quiz, uit de bestaande kennislaag (bi/sk/na).
+- **2b 🔨 (build-time gegenereerd — gekozen pad):** rijke per-afleider uitleg — *"waarom is elke optie fout/juist, welke is verleidelijk, hoe herken je dit?"* — vooraf gegenereerd met een LLM en **statisch meegeleverd**. Geen runtime-key, geen backend, werkt offline. Landt op het **Foutenboek-review-scherm** (mid-quiz blijft de snelle 2a-nudge).
 
-**Wat ziet de leerling nieuw?** (2a) Bij een fout meteen: *"💡 Veelgemaakte fout: verwart onafhankelijke en afhankelijke variabele."*
+**Zo genereer je 2b (lokaal, met je eigen key):**
+```
+ANTHROPIC_API_KEY=sk-... node scripts/build-foutenboek-uitleg.js havo --vak bi --limit 30
+# → schrijft foutenboek-uitleg-havo.js (hervatbaar; herhaal met --limit voor de rest)
+# daarna: SW-cache bumpen + het bestand committen. De app pikt 'm vanzelf op.
+```
+De consumer-code staat al live: zodra `foutenboek-uitleg-havo.js` bestaat, toont het Foutenboek automatisch de rijke uitleg; ontbreekt hij, dan degradeert alles stil naar 2a.
+
+**Wat ziet de leerling nieuw?** (2a, live) Bij een fout meteen: *"💡 Veelgemaakte fout: verwart onafhankelijke en afhankelijke variabele."* — (2b, na generatie) in het Foutenboek per optie waarom die fout/juist is, welke afleider verleidelijk is, en hoe je de valkuil herkent.
 
 ---
 
