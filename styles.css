@@ -3623,6 +3623,9 @@ html.dark .hsd-pill{background:var(--bg2);border-color:var(--bo2)}
 .fb-mastered summary::-webkit-details-marker{display:none}
 .fb-mastered-body{padding:0 16px 14px}
 .fb-mast-item{font-size:12px;color:var(--mu);padding:6px 0;border-top:1px solid var(--bo)}
+/* Inline "Waarom fout?" in de quiz-feedback */
+.q-why{margin-top:9px;padding:9px 11px;border-radius:10px;background:rgba(99,102,241,.09);border:1px solid rgba(99,102,241,.22);font-size:13px;line-height:1.45;color:var(--dk)}
+.q-why-lbl{font-weight:900;color:#6366f1;margin-right:5px}
 
 /* ── WELKOMST SCHERM MOBIEL ──────────────────────── */
 @media(max-width:640px){

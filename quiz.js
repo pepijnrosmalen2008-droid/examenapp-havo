@@ -32,6 +32,7 @@ function startQ(mode){
     if(hasJaar){openOEPicker();return;}
   }
   clearQuizDraft();
+  try{if(typeof ensureFbMeta==='function')ensureFbMeta();}catch(e){} // "Waarom fout?" alvast laden
   ST.mode=mode;
   ST.idx=0;ST.score=0;ST.antwrd=[];ST.tijdPerVraag=[];ST.combo=0;ST.xpThisRound=0;ST.flagged=new Set();
   if(!ST.isDailyChallenge)ST.isDailyChallenge=false;
@@ -375,7 +376,8 @@ function _kiesReveal(gekozen,correct,btns){
     fb.innerHTML=`<div class="fbt"><svg class="fb-ic" viewBox="0 0 24 24" width="19" height="19" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Correct!</div>${_infoBtn}`;
   }else{
     const correctText=q.o[q.c]||'';
-    fb.innerHTML=`<div class="fbt"><svg class="fb-ic" viewBox="0 0 24 24" width="19" height="19" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 6 6 18M6 6l12 12"/></svg>Fout</div><div class="fbtx"><span class="fbtx-juist"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Juist:</span> ${correctText}</div>${_infoBtn}`;
+    const _whyWrong=(typeof fbWhyWrongHTML==='function')?fbWhyWrongHTML(q):'';
+    fb.innerHTML=`<div class="fbt"><svg class="fb-ic" viewBox="0 0 24 24" width="19" height="19" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 6 6 18M6 6l12 12"/></svg>Fout</div><div class="fbtx"><span class="fbtx-juist"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Juist:</span> ${correctText}</div>${_whyWrong}${_infoBtn}`;
   }
   const nxt=document.getElementById('qnxt');
   nxt.style.display='block';
@@ -396,7 +398,8 @@ function tijdOp(){
   const fb=document.getElementById('qfb');
   fb.style.display='block';
   fb.className='qfb fbtm';
-  fb.innerHTML=`<div class="fbt" style="display:inline-flex;align-items:center;gap:7px">${ICO_CLOCK} Tijd is om!</div><div class="fbtx">${q.u}</div>`;
+  const _whyTO=(typeof fbWhyWrongHTML==='function')?fbWhyWrongHTML(q):'';
+  fb.innerHTML=`<div class="fbt" style="display:inline-flex;align-items:center;gap:7px">${ICO_CLOCK} Tijd is om!</div><div class="fbtx">${q.u}</div>${_whyTO}`;
   const nxt=document.getElementById('qnxt');
   nxt.style.display='block';
   nxt.textContent=ST.idx<((ST.adaptive?ST.aqTarget:ST.vragen.length)-1)?'Volgende →':'Bekijk resultaat →';

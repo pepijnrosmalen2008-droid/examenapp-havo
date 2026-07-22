@@ -80,6 +80,17 @@ function fbEnrich(vakId, domId, v) {
   const lo = vm[fbQkey(domId, v)]; if (!lo) return null;
   return FB_LO[lo] || null;
 }
+// Inline "Waarom fout?"-blok voor in de quiz-feedback. Leeg als de vraag niet
+// betrouwbaar gekoppeld is of de meta nog niet geladen is (degradeert stil).
+function fbWhyWrongHTML(q) {
+  if (!q) return '';
+  const vakId = (q._fbVak) || (typeof ST !== 'undefined' && ST.vak && ST.vak.id);
+  const domId = (q._fbDom) || (typeof ST !== 'undefined' && ST.domein && ST.domein.id);
+  if (!vakId || !domId) return '';
+  const enr = fbEnrich(vakId, domId, q.v);
+  if (!enr || !enr.m) return '';
+  return `<div class="q-why"><span class="q-why-lbl">💡 Veelgemaakte fout</span> ${_fbEsc(enr.m)}</div>`;
+}
 
 // ─── STATUS + HULP ───
 function _fbStatus(e) {
@@ -195,6 +206,7 @@ function _renderFoutenboekInner(wrap, stats) {
 // ─── HERHAAL-OEFENING ───
 // Bouwt een snelle quiz uit de opgeslagen fouten. Zonder vakId → alle due fouten.
 function fbOefen(vakId) {
+  ensureFbMeta();                                       // "Waarom fout?" alvast klaarzetten
   const d = _fbLoad(); const now = Date.now();
   let recs = Object.values(d).filter(e => !e.mastered && e.o && typeof e.c === 'number');
   if (vakId) recs = recs.filter(e => e.vakId === vakId);
