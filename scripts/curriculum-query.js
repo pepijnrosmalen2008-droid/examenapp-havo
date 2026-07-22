@@ -106,6 +106,17 @@ const SAVED = {
   'klaar-voor-generatie': { q: 'review=approved AND airready>=90', uitleg: 'mag de Content Factory in' },
 };
 
+if (flag('offlevel')) {
+  // status=off_level — vragen die vermoedelijk niet op dit niveau thuishoren (owner-review).
+  const byReason = {}; let total = 0;
+  for (const [vid, kp] of Object.entries(KOPP)) for (const e of Object.values(kp)) if (e.status === 'off_level') {
+    total++; const r = `${vid} · ${e.offReason || 'onbekend'}`; byReason[r] = (byReason[r] || 0) + 1;
+  }
+  console.log(`\nstatus=off_level: ${total} vraag/vragen (vermoedelijk verkeerd niveau in de bank):`);
+  for (const [r, n] of Object.entries(byReason).sort((a, b) => b[1] - a[1])) console.log(`  ${String(n).padStart(3)}×  ${r}`);
+  console.log(`\n(eigenschap van de VRAAG, lo:null — geen valse leerdoel-koppeling. Voor owner-review.)\n`);
+  process.exit(0);
+}
 if (flag('list')) {
   console.log('\nOpgeslagen queries (--saved <naam>):');
   for (const [n, s] of Object.entries(SAVED)) console.log(`  ${n.padEnd(30)} ${s.uitleg}\n    ${' '.repeat(30)}${s.q}`);

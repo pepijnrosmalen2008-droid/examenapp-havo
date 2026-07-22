@@ -49,13 +49,14 @@ Regels voor de Semantic Layer (klassieke kennisgraaf-discipline): **gesloten pre
 
 *Status:* Semantic Layer = **pilot** (`knowledge/semantic-havo.json`, concept Enzym). `units[]`-veld op het leerdoel blijft gereserveerd — maar KU's worden **gegenereerd uit feiten**, niet met de hand geschreven.
 
-## Vijf harde regels
+## Zes harde regels
 
 1. **Geen afgeleiden in de bron** — samenvatting/quiz/animatie/lesplan horen nooit in een leerdoel (ingest weigert ze).
 2. **Alles regenereerbaar** — elke afgeleide is volledig opnieuw te maken vanuit de Knowledge Layer.
 3. **Generators zijn stateless & immutable** — een engine krijgt alléén `leerdoel v7` en produceert `summary v7`. Geen cache, geen historie, geen mutaties. Rebuilds zijn daardoor triviaal. (Geldt nu al voor tagger/assembler/graph/query — allemaal puur, deterministisch.)
 4. **Alleen `approved` genereert downstream.**
 5. **Query-first** — *iedere nieuwe feature moet eerst als query worden geformuleerd; pas als die query bestaat, mag er een generator of UI bovenop.* Kan een feature niet als query worden uitgedrukt, dan is dat een signaal dat de data of relaties nog niet goed gemodelleerd zijn. Nieuwe functionaliteit wordt zo vaak een **nieuwe query** i.p.v. een nieuwe engine. (Sluit direct aan op: *de kwaliteit van een kennismodel blijkt uit de vragen die je eraan kunt stellen.*)
+6. **Engines kiezen nooit zelf hun input** — een engine verwerkt uitsluitend de output van een query: `engine.run(saved_query="READY_FOR_QUESTION_GENERATION")`. Nooit `for leerdoel in db: if review=='approved'` verspreid over zes engines. De **selectie van werk is gecentraliseerd** in de Query Engine; de Query Engine wordt daarmee een **orchestrator**: `Query → Selectie → Pipeline → Generator → Store`. Elke workflow is hetzelfde patroon (`READY_FOR_GENERATION→Question Engine`, `OUTDATED_SUMMARIES→Summary Engine`, `LOW_CONFIDENCE→Human review`, `OFF_LEVEL→Owner review`).
 
 ## Uniforme engine-interface
 
@@ -233,6 +234,10 @@ draft  →  reviewed  →  approved  →  production
 **Harde regel:**
 
 > **Alleen `approved`-content mag downstream content genereren.**
+
+**Twee-modus-engines (nooit de gate versoepelen om te testen):** een generator heeft een `production`-modus (werkt op `review=approved`) en een `test`-modus (werkt op `review>=reviewed`). Zo test je nooit door de kwaliteitsregel te omzeilen — dat soort uitzondering wordt later ongemerkt permanent. `engine.run(mode, saved_query)` selecteert het werk; de modus bepaalt alleen de review-drempel in die query.
+
+**Vraag-status (los van leerdoel-review):** een koppeling draagt een `status` — `matched` (concept_match/override), `unmatched` (fallback), of `off_level`. Een `off_level`-vraag hoort vermoedelijk niet op dit niveau (bv. VWO-stof in de HAVO-bank) en krijgt **`lo:null`** — géén valse leerdoel-koppeling — plus een `offReason`. Het is een eigenschap van de **vraag**, queryebaar via `curriculum-query.js havo --offlevel` → `OFF_LEVEL → Owner review`.
 
 Een `draft`-leerdoel voedt nooit een generator. Dit voorkomt dat half-gereviewd curriculum slechte samenvattingen/vragen de lucht in duwt.
 

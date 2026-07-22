@@ -177,8 +177,9 @@ try {
   let allProvOk = true, allSyncOk = true, totalKopp = 0;
   for (const vid of taggedVakken) {
     const kp = cg.K[vid] || {}; const entries = Object.values(kp); totalKopp += entries.length;
-    const badLo = entries.filter(e => !ids.has(e.lo));
-    const badMeta = entries.filter(e => typeof e.confidence !== 'number' || e.confidence < 0 || e.confidence > 1 || !['concept_match', 'fallback', 'manual_override'].includes(e.source));
+    // off_level: lo:null is geldig (vraag hoort niet op dit niveau — geen valse koppeling)
+    const badLo = entries.filter(e => e.status !== 'off_level' && !ids.has(e.lo));
+    const badMeta = entries.filter(e => typeof e.confidence !== 'number' || e.confidence < 0 || e.confidence > 1 || !['concept_match', 'fallback', 'manual_override', 'off_level'].includes(e.source));
     if (badLo.length || badMeta.length) { allProvOk = false; bad(`${vid}: ${badLo.length} onbekend leerdoel, ${badMeta.length} ongeldige provenance`); }
     const vk = vk2.H.find(v => v.id === vid);
     const qkeys = new Set();

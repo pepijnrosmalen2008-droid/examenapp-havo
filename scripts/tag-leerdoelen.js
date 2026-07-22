@@ -91,36 +91,45 @@ const OVERRIDES_ALL = {
     'Welk verschijnsel treedt op als golven een smalle opening passeren en uitwaaiere': 'na.B.4',
     'Wat is een echo?': 'na.B.3',
     'Leg uit waarom botten duidelijk zichtbaar zijn op een röntgenfoto.': 'na.B.4',
-    'Wat zegt de impulsstelling (F·Δt = Δp)?': 'na.C.1',
-    'Wat geldt voor de totale impuls van een gesloten systeem (zonder externe krachte': 'na.C.1',
     'Welke formule geeft de afgelegde afstand bij een eenparige beweging?': 'na.C.1',
     'Welke formule geeft de afstand bij een eenparig versnelde beweging vanuit stilst': 'na.C.1',
     'Welke formule geeft de veerkracht?': 'na.C.2',
     'Wanneer is een hefboom in evenwicht?': 'na.C.3',
     'Welke formule geeft de warmte die nodig is om een stof op te warmen?': 'na.C.6',
-    'Welke kracht houdt een voorwerp in een cirkelbaan?': 'na.C.2',
     'Leg uit wat deze grafiek zegt over de veer en noem de bijbehorende natuurkundige': 'na.C.2',
     '(a) Na hoeveel tijd staat de auto stil?\n(b) Welke afstand legt de auto af tijden': 'na.C.1',
-    'Welk principe ligt ten grondslag aan de werking van een transformator?': 'na.D.4',
-    'Wat is de Lorentzkracht op een elektrisch geladen deeltje dat beweegt in een mag': 'na.D.4',
     'Wat is het verschil tussen gelijkstroom (DC) en wisselstroom (AC)?': 'na.D.1',
     'In welke richting loopt de afgesproken stroomrichting?': 'na.D.1',
     'Hoe sluit je een ampèremeter aan in een schakeling?': 'na.D.2',
     'Hoe sluit je een voltmeter aan?': 'na.D.2',
     'Welke formule geeft de verbruikte elektrische energie?': 'na.D.3',
     'Wat is 1 kilowattuur (kWh)?': 'na.D.3',
-    'Hoe wekt een generator elektriciteit op?': 'na.D.4',
     'Hoe wekt een zonnecel elektriciteit op?': 'na.D.4',
     'Leg uit waarom het lampje uitgaat wanneer de schakelaar wordt geopend.': 'na.D.2',
-    '(a) Bereken de Lorentzkracht.\n(b) Wat is de beweging van het elektron in dit vel': 'na.D.4',
     'Bij beta-min-verval verandert het atoomnummer Z met:': 'na.E.2',
-    'Wat is de fotonenergie en hoe hangt die af van de frequentie?': 'na.E.5',
     'Wat is de atoommassa van een element en waaruit bestaat het?': 'na.E.2',
-    'Bij welk proces wordt massa direct omgezet in energie volgens E = mc²?': 'na.E.2',
-    'Wat geldt voor een foton met een kortere golflengte?': 'na.E.5',
-    'Wat is een elektronvolt (eV)?': 'na.E.3',
   },
 };
+
+// Off-level: vragen die vermoedelijk NIET op dit niveau thuishoren (bv. VWO-stof in
+// de HAVO-bank). Ze krijgen status 'off_level' + lo:null — GEEN onjuiste koppeling
+// aan een HAVO-leerdoel. Een eigenschap van de VRAAG, gemeld voor owner-review.
+const OFF_LEVEL_ALL = {
+  na: {
+    'Wat zegt de impulsstelling (F·Δt = Δp)?': 'vwo: impuls',
+    'Wat geldt voor de totale impuls van een gesloten systeem (zonder externe krachte': 'vwo: behoud van impuls',
+    'Welke kracht houdt een voorwerp in een cirkelbaan?': 'vwo: cirkelbeweging',
+    'Welk principe ligt ten grondslag aan de werking van een transformator?': 'vwo: transformator/inductie',
+    'Wat is de Lorentzkracht op een elektrisch geladen deeltje dat beweegt in een mag': 'vwo: Lorentzkracht',
+    '(a) Bereken de Lorentzkracht.\n(b) Wat is de beweging van het elektron in dit vel': 'vwo: Lorentzkracht',
+    'Hoe wekt een generator elektriciteit op?': 'vwo: inductie',
+    'Wat is de fotonenergie en hoe hangt die af van de frequentie?': 'vwo: E=hf',
+    'Bij welk proces wordt massa direct omgezet in energie volgens E = mc²?': 'vwo: E=mc²',
+    'Wat geldt voor een foton met een kortere golflengte?': 'vwo: foton/quantum',
+    'Wat is een elektronvolt (eV)?': 'vwo: elektronvolt',
+  },
+};
+const OFF_LEVEL = OFF_LEVEL_ALL[VAKID] || {};
 const OVERRIDES = OVERRIDES_ALL[VAKID] || {};
 
 // ── laden ──
@@ -188,8 +197,10 @@ function classify(lds, hay, q) {
 }
 
 // ── koppel alle vragen van het vak ──
+// status volgt uit de bron: matched (concept/override) · unmatched (fallback) · off_level
+const STATUS = { concept_match: 'matched', manual_override: 'matched', fallback: 'unmatched', off_level: 'off_level' };
 const koppeling = {};
-const stat = { n: 0, concept: 0, fallback: 0, override: 0, low: 0, confSum: 0, perLd: {} };
+const stat = { n: 0, concept: 0, fallback: 0, override: 0, offlevel: 0, low: 0, confSum: 0, perLd: {} };
 for (const d of vak.domeinen) {
   const lds = domLeerdoelen(d.id);
   const fallbackId = lds[0] && lds[0].id;
@@ -204,16 +215,18 @@ for (const d of vak.domeinen) {
       : ((q.v || '') + ' ' + (opts[q.c] || '')).toLowerCase();
 
     let entry;
-    const ovKey = key.slice(key.indexOf('|') + 1); // OVERRIDES worden op de vraagtekst gematcht (domein-onafhankelijk)
-    if (OVERRIDES[ovKey]) { entry = { lo: OVERRIDES[ovKey], confidence: 1.0, source: 'manual_override', via: null }; stat.override++; }
+    const ovKey = key.slice(key.indexOf('|') + 1); // op vraagtekst gematcht (domein-onafhankelijk)
+    if (OFF_LEVEL[ovKey]) { entry = { lo: null, confidence: 0, source: 'off_level', via: null, offReason: OFF_LEVEL[ovKey] }; stat.offlevel++; }
+    else if (OVERRIDES[ovKey]) { entry = { lo: OVERRIDES[ovKey], confidence: 1.0, source: 'manual_override', via: null }; stat.override++; }
     else {
       const m = classify(lds, hay, q);
       if (m) { entry = m; stat.concept++; }
       else { entry = { lo: fallbackId, confidence: 0.30, source: 'fallback', via: null }; stat.fallback++; }
     }
-    if (entry.confidence < 0.70) stat.low++;
+    entry.status = STATUS[entry.source];
+    if (entry.confidence < 0.70 && entry.status !== 'off_level') stat.low++;
     stat.confSum += entry.confidence;
-    stat.perLd[entry.lo] = (stat.perLd[entry.lo] || 0) + 1;
+    if (entry.lo) stat.perLd[entry.lo] = (stat.perLd[entry.lo] || 0) + 1;
     koppeling[key] = entry;
   }
 }
@@ -222,8 +235,9 @@ for (const d of vak.domeinen) {
 const allLd = [];
 for (const d of vak.domeinen) for (const ld of domLeerdoelen(d.id)) allLd.push(ld.id);
 console.log(`\n═══ Leerdoel-koppeling ${vak.naam} (${NIVEAU}/${VAKID}) ${CHECK ? '[--check, niets geschreven]' : ''} ═══`);
-console.log(`vragen: ${stat.n} · concept_match: ${stat.concept} · fallback: ${stat.fallback} · manual_override: ${stat.override}`);
-console.log(`gem. confidence: ${(stat.confSum / stat.n).toFixed(3)} · laag-confidence (<0.70): ${stat.low}`);
+console.log(`vragen: ${stat.n} · concept_match: ${stat.concept} · fallback: ${stat.fallback} · manual_override: ${stat.override} · off_level: ${stat.offlevel}`);
+const matchedN = stat.n - stat.offlevel;
+console.log(`gem. confidence (excl. off_level): ${(stat.confSum / (matchedN || 1)).toFixed(3)} · laag-confidence (<0.70): ${stat.low}`);
 const zero = allLd.filter(id => !stat.perLd[id]);
 console.log(`leerdoelen zonder vraag: ${zero.length}${zero.length ? ' → ' + zero.join(', ') : ''}`);
 
