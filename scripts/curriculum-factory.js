@@ -29,11 +29,11 @@ const KDIR = niv => path.join(ROOT, 'knowledge', niv);
 const argv = process.argv.slice(2);
 const FLAGS = argv.filter(a => a.startsWith('--'));
 const POS = argv.filter(a => !a.startsWith('--'));
-const cmd = POS[0], niveau = POS[1] || 'havo', vakId = POS[2];
+const cmd = POS[0], niveau = POS[1] || 'havo', vakId = POS[2], reviewArg = POS[3];
 const DRY = FLAGS.includes('--dry-run');
-const needsVak = ['brief', 'validate', 'ingest'];
-if (!['brief', 'validate', 'ingest', 'assemble'].includes(cmd) || (needsVak.includes(cmd) && !vakId)) {
-  console.error('gebruik:\n  curriculum-factory.js brief|validate|ingest <niveau> <vak> [--dry-run]\n  curriculum-factory.js assemble <niveau>');
+const needsVak = ['brief', 'validate', 'ingest', 'review'];
+if (!['brief', 'validate', 'ingest', 'assemble', 'review'].includes(cmd) || (needsVak.includes(cmd) && !vakId)) {
+  console.error('gebruik:\n  curriculum-factory.js brief|validate|ingest <niveau> <vak> [--dry-run]\n  curriculum-factory.js review <niveau> <vak> <draft|reviewed|approved> [--leerdoel <id>]\n  curriculum-factory.js assemble <niveau>');
   process.exit(1);
 }
 if (!fs.existsSync(FACT)) fs.mkdirSync(FACT);
@@ -294,4 +294,21 @@ if (cmd === 'brief') {
   assemble();
 } else if (cmd === 'ingest') {
   ingest();
+} else if (cmd === 'review') {
+  // Review-gate: zet reviewStatus (draft→reviewed→approved). Geen contentwijziging → geen version-bump.
+  if (!['draft', 'reviewed', 'approved'].includes(reviewArg)) { console.error('status moet draft|reviewed|approved zijn'); process.exit(1); }
+  const flIdx = FLAGS.indexOf('--leerdoel'); // niet gebruikt als flag met waarde; lees uit POS na status? gebruik --leerdoel=<id>
+  const onlyLd = (FLAGS.find(f => f.startsWith('--leerdoel=')) || '').split('=')[1] || null;
+  const file = path.join(KDIR(niveau), `${vakId}.json`);
+  if (!fs.existsSync(file)) { console.error(`geen knowledge/${niveau}/${vakId}.json`); process.exit(1); }
+  const data = JSON.parse(fs.readFileSync(file, 'utf8'));
+  const today = new Date().toISOString().slice(0, 10);
+  let n = 0;
+  for (const block of Object.values(data)) for (const ld of (block.leerdoelen || [])) {
+    if (onlyLd && ld.id !== onlyLd) continue;
+    ld._meta = ld._meta || {}; ld._meta.reviewStatus = reviewArg; ld._meta.lastReviewed = today; n++;
+  }
+  console.log(`✓ reviewStatus=${reviewArg} gezet op ${n} leerdoel(en)${onlyLd ? ' (' + onlyLd + ')' : ''} van ${vakId}`);
+  if (!DRY) { const sorted = {}; for (const k of Object.keys(data).sort()) sorted[k] = data[k]; fs.writeFileSync(file, JSON.stringify(sorted, null, 1)); assemble(); }
+  else console.log('(DRY-RUN: niets geschreven)');
 }

@@ -22,25 +22,60 @@ const CHECK = args.includes('--check');
 const NIVEAU = args.find(a => !a.startsWith('--') && ['havo', 'vwo'].includes(a)) || 'havo';
 const VAKID = args.find(a => !a.startsWith('--') && !['havo', 'vwo'].includes(a)) || 'bi';
 
-// ── Handmatige overrides: qkey (eerste 80 tekens van v) → leerdoel-id ──
+// ── Handmatige overrides per vak: qkey-tekst (eerste 80 tekens van v) → leerdoel-id ──
 // Voor restambiguïteiten na matcher + conceptopschoning. source=manual_override, confidence=1.0
-const OVERRIDES = {
-  // Vragen die geen begrip letterlijk noemen (synoniem/context) en daardoor als
-  // fallback vielen. Handmatig beoordeeld o.b.v. het juiste antwoord + uitleg.
-  'Een grafiek toont dat de reactiesnelheid van een enzym stijgt tot 37°C en daarna': 'bi.A.3', // enzym-optimum uit grafiek
-  'Wat is het verschil tussen correlatie en causaliteit?': 'bi.A.4',
-  'Waarom zijn meerdere herhalingen (replicaties) belangrijk in biologisch onderzoe': 'bi.A.2', // betrouwbaarheid
-  '(a) Noem het optimum en beschrijf het verband.\n(b) Verklaar waarom de activiteit': 'bi.A.3', // enzym-grafiek (open)
-  'Welk begrip beschrijft de waarneembare eigenschap van een organisme (bijv. oogkl': 'bi.M.7', // fenotype
-  'Wat is het verschil tussen een prokaryoot en een eukaryoot?': 'bi.M.1',
-  '(a) Geef alle mogelijke genotypen van de kinderen met hun verhouding.\n(b) Welk p': 'bi.M.7', // kruising (open)
-  'Welk orgaan bewaart glycogeen als reservesuiker en speelt een centrale rol in de': 'bi.O.2', // bloedsuikerregulatie (lever)
-  'Welke cellen zijn verantwoordelijk voor het direct doden van met virus geïnfecte': 'bi.O.4', // cytotoxische T-cellen
-  'Welk evolutionair concept stelt dat allelfrequenties constant blijven als er gee': 'bi.P.6', // Hardy-Weinberg
-  'Welk begrip beschrijft de verandering van allelfrequenties door toeval, los van ': 'bi.P.6', // genetische drift
-  'Welke voorwaarde is GEEN vereiste voor Hardy-Weinberg evenwicht?': 'bi.P.6',
-  'Beschrijf het volledige ecologische proces dat leidt tot vissterfte. Noem de rol': 'bi.P.2', // eutrofiëring/nutriënten
+const OVERRIDES_ALL = {
+  bi: {
+    // Vragen die geen begrip letterlijk noemen (synoniem/context) en daardoor als
+    // fallback vielen. Handmatig beoordeeld o.b.v. het juiste antwoord + uitleg.
+    'Een grafiek toont dat de reactiesnelheid van een enzym stijgt tot 37°C en daarna': 'bi.A.3',
+    'Wat is het verschil tussen correlatie en causaliteit?': 'bi.A.4',
+    'Waarom zijn meerdere herhalingen (replicaties) belangrijk in biologisch onderzoe': 'bi.A.2',
+    '(a) Noem het optimum en beschrijf het verband.\n(b) Verklaar waarom de activiteit': 'bi.A.3',
+    'Welk begrip beschrijft de waarneembare eigenschap van een organisme (bijv. oogkl': 'bi.M.7',
+    'Wat is het verschil tussen een prokaryoot en een eukaryoot?': 'bi.M.1',
+    '(a) Geef alle mogelijke genotypen van de kinderen met hun verhouding.\n(b) Welk p': 'bi.M.7',
+    'Welk orgaan bewaart glycogeen als reservesuiker en speelt een centrale rol in de': 'bi.O.2',
+    'Welke cellen zijn verantwoordelijk voor het direct doden van met virus geïnfecte': 'bi.O.4',
+    'Welk evolutionair concept stelt dat allelfrequenties constant blijven als er gee': 'bi.P.6',
+    'Welk begrip beschrijft de verandering van allelfrequenties door toeval, los van ': 'bi.P.6',
+    'Welke voorwaarde is GEEN vereiste voor Hardy-Weinberg evenwicht?': 'bi.P.6',
+    'Beschrijf het volledige ecologische proces dat leidt tot vissterfte. Noem de rol': 'bi.P.2',
+  },
+  sk: {
+    // Scheikunde-review: fallbacks handmatig beoordeeld o.b.v. juist antwoord + uitleg.
+    'Welke variabele verandert de onderzoeker bewust in een experiment?': 'sk.A.3',
+    'Een grafiek toont een rechte lijn door de oorsprong. Welk verband beschrijft dit': 'sk.A.3',
+    'Bij welke handeling in het lab is het essentieel om zuur aan water toe te voegen': 'sk.A.4',
+    'Waarom is het essentieel om meerdere meetpunten te gebruiken bij het opstellen v': 'sk.A.3',
+    'Wat is een significante cijfer en hoeveel significante cijfers heeft het getal 0': 'sk.A.3',
+    '(a) Wat is het equivalentiepunt en hoe herken je het in de grafiek?\n(b) Wat is d': 'sk.A.3',
+    'Wat bepaalt de groepsindeling (kolom) in het periodiek systeem?': 'sk.B.1',
+    'Welke eigenschap van metalen wordt verklaard door de aanwezigheid van vrij beweg': 'sk.B.4',
+    'Welk begrip beschrijft de energie die vrijkomt bij het vormen van 1 mol ionroost': 'sk.B.3',
+    'Wat houdt de stoichiometrie in bij de reactie: N₂ + 3H₂ → 2NH₃?': 'sk.C.2',
+    '(a) Bereken het aantal mol HCl dat wordt gebruikt.\n(b) Bereken de concentratie v': 'sk.C.2',
+    '(a) Hoeveel gram ijzer kan maximaal worden gewonnen uit 480 g Fe2O3?\n(b) Bij 168': 'sk.C.2',
+    '(a) Bereken de molmassa van H2SO4.\n(b) Hoeveel gram is 0,5 mol H2SO4?': 'sk.C.2',
+    'Bereken de concentratie in mol/L.': 'sk.C.2',
+    'Bereken de concentratie van de HCl-oplossing.': 'sk.C.2',
+    'Welk polymerisatietype produceert bij elke koppelingstap een bijproduct (water o': 'sk.D.6',
+    'Welke naam heeft het organisme dat bij de fermentatie (gisting) van suiker ethan': 'sk.D.2',
+    'Welk type reactie ondergaan alkanen met chloorgas bij UV-licht?': 'sk.D.5',
+    'Hoe verandert het kookpunt als men van methaan (CH₄) naar butaan (C₄H₁₀) gaat in': 'sk.D.1',
+    'Welk compromis wordt in het Haber-Bosch-proces gemaakt ten aanzien van temperatu': 'sk.E.1',
+    'Wat is het verschil tussen een thermoplast en een thermoharder?': 'sk.E.1',
+    'Welk effect heeft een toename van CO₂ in de atmosfeer op het klimaat?': 'sk.E.2',
+    'Wat is de hoofdfunctie van de ozonlaag in de stratosfeer?': 'sk.E.2',
+    'Welke eigenschap onderscheidt een thermoplast van een thermoharder?': 'sk.E.1',
+    'Wat verstaat men onder de koolstofkringloop en welke rol speelt fotosynthese daa': 'sk.E.2',
+    'Welk conserveringsmethode werkt via osmose om bacteriën te doden?': 'sk.E.5',
+    'Welk begrip hoort bij deze omschrijving: "Haber-Bosch; compromis rendement/snelh': 'sk.E.1',
+    'Welke term past bij: "Haber-Bosch; compromis rendement/snelheid"?': 'sk.E.1',
+    '(a) Verklaar waardoor "lage ozon" (in steden) wordt gevormd en waarom het schade': 'sk.E.2',
+  },
 };
+const OVERRIDES = OVERRIDES_ALL[VAKID] || {};
 
 // ── laden ──
 const dg = {}; new Function('g', read(`data-${NIVEAU}.js`) + `\ng.V=(typeof VAKKEN!=='undefined'?VAKKEN:VAKKEN_VWO);`)(dg);
