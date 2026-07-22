@@ -188,15 +188,23 @@
     <span class="live-chip">● Live</span>
     <span class="topbar-time" id="clock"></span>
     <button class="tb-btn" onclick="loadAll()">↺ Vernieuwen</button>
+    <button class="tb-btn" id="tab-analytics" onclick="showTab('analytics')">📊 Analytics</button>
+    <button class="tb-btn" id="tab-curriculum" onclick="showTab('curriculum')">📚 Curriculum</button>
     <button class="tb-btn danger" onclick="logout()">Uitloggen</button>
   </div>
 
   <div class="body">
     <div id="content"><div class="loading"><span class="spinner"></span><br><br>Data laden…</div></div>
+    <div id="curr-view" style="display:none"><div class="loading">Curriculum laden…</div></div>
   </div>
 </div>
 
 <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.101.1/dist/umd/supabase.js" crossorigin="anonymous"></script>
+<!-- Curriculum-kennislaag (F1) — voor de Curriculum-tab -->
+<script src="/data-havo.meta.js"></script>
+<script src="/knowledge-havo.js"></script>
+<script src="/knowledge-koppeling-havo.js"></script>
+<script src="/curriculum-dash.js"></script>
 <script>
 const SB = window.supabase.createClient(
   'https://wcfenegohryxhatzxvtw.supabase.co',
@@ -238,6 +246,21 @@ if (authed()) {
 
 window._filter = window._filter || 'all';
 function init() { startClock(); loadAll(); }
+
+// ── Tabs: Analytics ↔ Curriculum ──
+function showTab(which) {
+  const isCur = which === 'curriculum';
+  document.getElementById('content').style.display = isCur ? 'none' : '';
+  document.getElementById('curr-view').style.display = isCur ? '' : 'none';
+  const ta = document.getElementById('tab-analytics'), tc = document.getElementById('tab-curriculum');
+  if (ta) ta.style.fontWeight = isCur ? '' : '800';
+  if (tc) tc.style.fontWeight = isCur ? '800' : '';
+  if (isCur && typeof renderCurriculumInto === 'function') {
+    renderCurriculumInto(document.getElementById('curr-view'), { lb: window._lb || [] });
+  } else if (isCur) {
+    document.getElementById('curr-view').innerHTML = '<div class="loading">Curriculum-kennislaag niet geladen.</div>';
+  }
+}
 
 function startClock() {
   const tick = () => document.getElementById('clock').textContent =
