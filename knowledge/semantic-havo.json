@@ -21,7 +21,10 @@
   "concept.sleutel-slot": { "label": "Sleutel-slotmodel" },
   "concept.cel": { "label": "Cel" },
   "concept.celademhaling": { "label": "Celademhaling" },
-  "concept.spijsvertering": { "label": "Spijsvertering" }
+  "concept.spijsvertering": { "label": "Spijsvertering" },
+  "concept.amylase": { "label": "Amylase" },
+  "concept.zetmeel": { "label": "Zetmeel" },
+  "concept.hormoon": { "label": "Hormoon" }
  },
  "facts": [
   { "s": "concept.enzym", "p": "is_a", "o": "concept.eiwit", "conf": 1.0, "bron": "syllabus" },
@@ -43,6 +46,9 @@
   { "s": "concept.denaturatie", "p": "affects", "o": "concept.actief-centrum", "conf": 0.9, "bron": "handboek" },
   { "s": "concept.enzym", "p": "occurs_in", "o": "concept.cel", "conf": 1.0, "bron": "syllabus" },
   { "s": "concept.celademhaling", "p": "requires", "o": "concept.enzym", "conf": 1.0, "bron": "syllabus" },
-  { "s": "concept.spijsvertering", "p": "requires", "o": "concept.enzym", "conf": 1.0, "bron": "syllabus" }
+  { "s": "concept.spijsvertering", "p": "requires", "o": "concept.enzym", "conf": 1.0, "bron": "syllabus" },
+  { "s": "concept.amylase", "p": "is_a", "o": "concept.enzym", "conf": 1.0, "bron": "handboek" },
+  { "s": "concept.amylase", "p": "affects", "o": "concept.zetmeel", "conf": 0.9, "bron": "handboek" },
+  { "s": "concept.enzym", "p": "often_confused_with", "o": "concept.hormoon", "conf": 0.8, "bron": "docentreview" }
  ]
 }

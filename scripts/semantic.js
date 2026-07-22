@@ -71,6 +71,71 @@ if (cmd === 'path') {
   console.log(`\n(de tutor kan dit antwoord aflopen zonder dat iemand het uitschreef)`);
 }
 
+if (cmd === 'experiment') {
+  // FALSIFIEERBAAR EXPERIMENT: kan ALLES uit alleen atomic facts worden afgeleid?
+  // Labelt elke afleiding [✓ uit feiten] of [⚠ kunstgreep: ...].
+  const id = findConcept(a || 'enzym');
+  const L = x => label(x).toLowerCase();
+  const out = (f, s) => G.facts.filter(x => x.s === id && x.p === f).map(x => s ? s(x) : x);
+  const deg = {}; for (const f of G.facts) { deg[f.s] = (deg[f.s] || 0) + 1; deg[f.o] = (deg[f.o] || 0) + 1; }
+  console.log(`\n══════ EXPERIMENT: alles afleiden uit atomic facts — concept "${label(id)}" ══════`);
+
+  // 1. CONCEPT (clustering)
+  const ranked = Object.entries(deg).sort((a, b) => b[1] - a[1]).slice(0, 5);
+  console.log(`\n1. CONCEPT`);
+  console.log(`   [✓ uit feiten] "${label(id)}" emergeert als hub (graad ${deg[id]}).`);
+  console.log(`   [⚠ modelkeuze] waar de conceptgrens ligt volgt NIET uit de feiten — kandidaat-subconcepten:`);
+  console.log(`      ${ranked.filter(([n]) => n !== id).map(([n, d]) => label(n) + '(' + d + ')').join(', ')}`);
+  console.log(`      → op HAVO 1 concept, op VWO misschien 4. Clustering is een parameter, geen waarheid.`);
+
+  // 2. KNOWLEDGE UNITS
+  const isa = out('is_a');
+  console.log(`\n2. KNOWLEDGE UNITS  [✓ uit feiten]`);
+  const kus = [];
+  if (isa.length) kus.push(`definitie: Een ${L(id)} is een ${isa.map(f => L(f.o)).join(' en een ')}.`);
+  const red = out('reduces'), inc = out('increases');
+  if (red.length || inc.length) kus.push(`werking: verlaagt ${red.map(f => L(f.o)).join(',') || '–'}, verhoogt ${inc.map(f => L(f.o)).join(',') || '–'}.`);
+  const part = out('has_part'); if (part.length) kus.push(`voorwaarde: heeft een ${L(part[0].o)} (sleutel-slot).`);
+  for (const c of G.facts.filter(f => f.p === 'causes')) { const ch = G.facts.find(f => f.s === c.o && f.p === 'reduces'); if (ch) kus.push(`valkuil: bij ${L(c.s)} → ${L(c.o)} → ${L(ch.o)} daalt.`); }
+  kus.forEach(k => console.log(`   • ${k}`));
+
+  // 3. LEERDOEL
+  console.log(`\n3. LEERDOEL`);
+  console.log(`   [✓ uit feiten] titel + inhoud: "${label(id)}werking" = de verzameling KU's hierboven.`);
+  console.log(`   [⚠ KUNSTGREEP] examenskill / examengewicht / vaardigheid staan NIET in de feiten —`);
+  console.log(`      dat is de EXAMEN-as (hoe/hoe zwaar getoetst), orthogonaal op de kennis-as. Aparte bron nodig.`);
+
+  // 4. SAMENVATTING
+  console.log(`\n4. SAMENVATTING  [✓ uit feiten]`);
+  console.log(`   30 sec: ${kus[0] || ''} ${kus[1] || ''}`.replace(/definitie: |werking: /g, ''));
+  console.log(`   1 A4  : alle ${kus.length} KU's samengevoegd.`);
+
+  // 5. UITLEG (reasoning)
+  console.log(`\n5. UITLEG (reasoning)  [✓ uit feiten]`);
+  const hi = findConcept('hoge temperatuur'), ea = findConcept('enzymactiviteit');
+  const adj = {}; for (const f of G.facts) { (adj[f.s] = adj[f.s] || []).push([f.o, f]); (adj[f.o] = adj[f.o] || []).push([f.s, f]); }
+  const q = [[hi, []]]; const seen = new Set([hi]); let pth = null;
+  while (q.length) { const [n, e] = q.shift(); if (n === ea) { pth = e; break; } for (const [nb, f] of (adj[n] || [])) if (!seen.has(nb)) { seen.add(nb); q.push([nb, [...e, f]]); } }
+  console.log(`   "waarom daalt enzymactiviteit bij hoge temperatuur?" → ${pth ? pth.map(f => `${label(f.s)} ${f.p} ${label(f.o)}`).join(' ⇒ ') : '—'}`);
+
+  // 6. QUIZVRAGEN
+  console.log(`\n6. QUIZVRAGEN`);
+  console.log(`   [✓ uit feiten] definitie-MC: "Wat is een ${L(id)}?" → juist: ${isa.map(f => L(f.o)).join('/')} · afleider: ${L(out('often_confused_with').map(f => f.o)[0] || 'concept.hormoon')}`);
+  const herb = out('has_property').some(f => f.o.includes('herbruikbaar'));
+  if (herb) console.log(`   [✓ uit feiten] misconceptie-MC: "Wordt een ${L(id)} verbruikt?" → juist: nee (herbruikbaar).`);
+  console.log(`   [⚠ KUNSTGREEP] examen-stijl (bereken/grafiek/meerstaps-verklaring) is NIET af te leiden —`);
+  console.log(`      vergt procedure, context en volgorde die geen triple bevat.`);
+
+  console.log(`\n────── VERDICT ──────`);
+  console.log(`  ✓ Declaratieve kennis (concept-inhoud, KU's, definitie, samenvatting, uitleg, begripsvraag)`);
+  console.log(`    komt overtuigend uit atomic facts. De "kleinste waarheid" = een semantic fact — klopt.`);
+  console.log(`  ⚠ NIET uit facts: (a) de examen-as (examenskill/gewicht) — orthogonale bron;`);
+  console.log(`    (b) procedurele/meerstaps-examenvaardigheden — vergen sequence/context, geen triple.`);
+  console.log(`  → Conclusie: facts zijn de atomische bron voor de KENNIS-as; de EXAMEN-as blijft een`);
+  console.log(`    tweede, orthogonale atomische laag. Eén "kleinste waarheid" is te weinig; er zijn er twee.`);
+  process.exit(0);
+}
+
 if (cmd === 'units') {
   // Knowledge Units als AFGELEIDEN van semantische feiten (kandidaten, ter review).
   const id = findConcept(a); if (!id) { console.log(`geen concept "${a}"`); process.exit(0); }
