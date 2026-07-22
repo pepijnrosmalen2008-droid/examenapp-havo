@@ -300,9 +300,25 @@ function renderStudieplan(){
     herhaal: ['🔄','Herhalen',      'sp-act-herhaal', 'snel',10],
   };
 
+  // Foutenboek-taak: je due fouten uit Sprint 1, als eerste ding van vandaag.
+  const fbDue=(typeof fbDueCount==='function')?fbDueCount():0;
+  const fbMins=fbDue>0?Math.max(3,Math.round(fbDue*0.7)):0;
+  const fbCardHtml=fbDue>0?`<div class="sp-task-card sp-task-fb">
+    <div class="sp-task-card-left">
+      <div class="sp-task-card-vak">📕 Foutenboek</div>
+      <div class="sp-task-card-dom">${fbDue} ${fbDue===1?'fout om te herhalen':'fouten om te herhalen'}</div>
+      <div class="sp-task-card-meta">
+        <button class="sp-act-btn sp-act-fb" style="padding:4px 10px;font-size:11px" onclick="fbOefen()">📕 Herhaal nu →</button>
+        <span class="sp-task-card-time">~${fbMins} min</span>
+      </div>
+    </div>
+  </div>`:'';
+
   const upcoming=(typeof getUpcomingExams==='function'?getUpcomingExams():[]).filter(e=>e.vakId);
   if(!upcoming.length){
-    el.innerHTML='<div class="sp-empty">Geen aankomende examens.<br>Kies je vakken in het rooster, of vink je herkansing aan.</div>';
+    el.innerHTML=fbCardHtml
+      ?`<div class="sp-vandaag"><div class="sp-vandaag-header"><div class="sp-vandaag-title">📌 Vandaag</div><span class="sp-vandaag-badge">1 open</span></div>${fbCardHtml}</div><div class="sp-empty" style="margin-top:14px">Geen aankomende examens.<br>Kies je vakken in het rooster, of vink je herkansing aan.</div>`
+      :'<div class="sp-empty">Geen aankomende examens.<br>Kies je vakken in het rooster, of vink je herkansing aan.</div>';
     return;
   }
 
@@ -444,11 +460,19 @@ function renderStudieplan(){
       <div class="sp-vandaag-header">
         <div class="sp-vandaag-title">📌 Vandaag</div>
         <div style="display:flex;align-items:center;gap:8px">
-          <span class="sp-task-card-time" style="font-size:12px">~${todayMins} min</span>
-          ${allDoneToday?'<span style="font-size:12px;color:#22c55e;font-weight:700;background:rgba(34,197,94,.12);padding:2px 9px;border-radius:20px;border:1px solid rgba(34,197,94,.2)">✓ Klaar!</span>':`<span class="sp-vandaag-badge">${todayOpenTasks.length} open</span>`}
+          <span class="sp-task-card-time" style="font-size:12px">~${todayMins+fbMins} min</span>
+          ${allDoneToday&&!fbDue?'<span style="font-size:12px;color:#22c55e;font-weight:700;background:rgba(34,197,94,.12);padding:2px 9px;border-radius:20px;border:1px solid rgba(34,197,94,.2)">✓ Klaar!</span>':`<span class="sp-vandaag-badge">${todayOpenTasks.length+(fbDue?1:0)} open</span>`}
         </div>
       </div>
-      ${cards}
+      ${fbCardHtml}${cards}
+    </div>`;
+  } else if(fbCardHtml){
+    vandaagHtml=`<div class="sp-vandaag">
+      <div class="sp-vandaag-header">
+        <div class="sp-vandaag-title">📌 Vandaag</div>
+        <span class="sp-vandaag-badge">1 open</span>
+      </div>
+      ${fbCardHtml}
     </div>`;
   } else if(allPlanTasks.length>0){
     vandaagHtml=`<div class="sp-vandaag" style="text-align:center;padding:18px 16px">
