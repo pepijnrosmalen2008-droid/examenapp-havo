@@ -201,7 +201,17 @@ Gevolg: bij een syllabuswijziging pas je **alleen de Curriculum Engine** aan; al
 
 ---
 
-## 4. Engines (verantwoordelijkheden, niet bestanden)
+## 4. Drie soorten engines (fundamenteel verschillende verantwoordelijkheden)
+
+| Soort | Engines | Doet | Schrijft |
+|---|---|---|---|
+| **Producer** | Curriculum · Question · Summary · Animation · Lesson | maakt iets | naar een store (of de bron, alleen Curriculum) |
+| **Analyzer** | Evaluation · Metrics · Evolution | observeert, oordeelt, **maakt niets** | niets (levert `{score, issues, warnings, metrics}` / voorstellen) |
+| **Orchestrator** | Query | beslist wat wanneer gebeurt | niets (selecteert werk) |
+
+De scheiding is hard: een Analyzer **beslist niet** en muteert niets — hij meet. Beleid ("accepteer als score≥95 en issues=[]") leeft in de **pipeline**, niet in de Analyzer. Zo blijft de evaluator onafhankelijk van welk beleid of AI-model er later draait.
+
+## 4b. Engines (verantwoordelijkheden, niet bestanden)
 
 Denk in verantwoordelijkheden. **Iedere engine leest alleen; alleen de Curriculum Engine schrijft naar de bron.**
 
