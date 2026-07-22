@@ -92,6 +92,64 @@ try {
   }
 } catch (e) { bad('SW-check mislukt: ' + e.message); }
 
+// ── 5. regressie-guards (fixes die stil kunnen terugbreken) ──
+group('Regressie-guards');
+// 5a. Mobiel leaderboard bereikbaar: de sociaal-sectie (route naar leaderboard)
+//     mag op mobiel NIET met display:none verborgen worden.
+try {
+  const css = read('styles.css');
+  // De sectie mág op DESKTOP (min-width) verborgen worden (daar telt de bento-route),
+  // maar NIET met display:none!important en NIET in een mobiel/basis-scope.
+  // Bug-signatuur die we bewaken: een harde !important-hide (zat in de max-width:640-blok).
+  const hardHide = /\.hm-sociaal-section[^{}]*\{[^}]*display\s*:\s*none\s*!important/i.test(css);
+  hardHide ? bad('.hm-sociaal-section wordt met display:none!important verborgen — leaderboard onbereikbaar op mobiel')
+           : ok('.hm-sociaal-section niet hard verborgen (leaderboard bereikbaar op mobiel)');
+  const idx = read('index.html');
+  idx.includes("show('sc-leaderboard')") && idx.includes('hm-soc-lb')
+    ? ok('home heeft leaderboard-knop (.hm-soc-lb)')
+    : bad('leaderboard-knop (.hm-soc-lb) ontbreekt in index.html');
+} catch (e) { bad('CSS/leaderboard-check mislukt: ' + e.message); }
+
+// 5b. Leaderboard-bots: mens-bots hebben een dier-avatar (animalId + stage),
+//     robot-bots houden een emoji-avatar. Dit voedt de "opvulling".
+try {
+  const lg = {};
+  new Function('g', read('lb.js').match(/const _BOT_VAKNAAM=[\s\S]*?const LB_BOTS=\{[\s\S]*?\n\};/)[0] +
+    '\ng.B = LB_BOTS; g.stage = _botStage;')(lg);
+  for (const niveau of ['havo', 'vwo']) {
+    const bots = lg.B[niveau] || [];
+    const human = bots.filter(b => b.animalId);
+    const robot = bots.filter(b => !b.animalId);
+    bots.length >= 12 ? ok(`${niveau}: ${bots.length} bots (opvulling)`) : bad(`${niveau}: te weinig bots (${bots.length})`);
+    human.length >= 5 && human.every(b => b.animalId && b.stageIdx != null && b.avatar == null)
+      ? ok(`${niveau}: ${human.length} mens-bots met dier-avatar + stage`)
+      : bad(`${niveau}: mens-bots missen animalId/stage`);
+    robot.length >= 4 && robot.every(b => b.avatar && b.animalId == null)
+      ? ok(`${niveau}: ${robot.length} robot-bots met emoji-avatar`)
+      : bad(`${niveau}: robot-bots missen emoji-avatar`);
+  }
+  // stage-mapping monotone check
+  lg.stage(950) === 5 && lg.stage(940) === 5 && lg.stage(450) === 2 && lg.stage(100) === 1
+    ? ok('_botStage schaalt score → evolutie-stage')
+    : bad('_botStage geeft onverwachte stage');
+} catch (e) { bad('LB_BOTS-check mislukt: ' + e.message); }
+
+// 5c. Registratie-foutmelding: authErrMsg toont de ECHTE fout i.p.v. hem te
+//     verbergen achter een generieke tekst (anders is registreren "kapot").
+try {
+  const cg = {};
+  new Function('g', read('cloud.js').match(/function authErrMsg[\s\S]*?\n\}/)[0] + '\ng.f = authErrMsg;')(cg);
+  const f = cg.f;
+  f('Email signups are disabled').includes('tijdelijk uit')
+    ? ok('authErrMsg: signups-disabled → duidelijke melding') : bad('authErrMsg mist signups-disabled-melding');
+  f('User already registered').includes('al in gebruik')
+    ? ok('authErrMsg: reeds-geregistreerd → nette melding') : bad('authErrMsg mist already-registered-melding');
+  f('Some weird unexpected error XYZ').includes('XYZ')
+    ? ok('authErrMsg: onbekende fout toont echte tekst') : bad('authErrMsg verbergt onbekende fout (registreren lijkt kapot)');
+  f('') && !f('').includes('undefined')
+    ? ok('authErrMsg: lege fout → veilige fallback') : bad('authErrMsg faalt op lege input');
+} catch (e) { bad('authErrMsg-check mislukt: ' + e.message); }
+
 // ── uitslag ──
 console.log('\n' + (fails ? '✗ ' + fails + ' van ' + checks + ' checks GEFAALD' : '✓ alle ' + checks + ' checks geslaagd'));
 process.exit(fails ? 1 : 0);
