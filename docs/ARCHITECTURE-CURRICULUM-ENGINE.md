@@ -3,6 +3,18 @@
 **Status:** vastgesteld · **Doel:** de laag waar de komende jaren niets fundamenteels meer aan hoeft te veranderen.
 De specifieke generators, AI-modellen en prompts zullen veranderen; **deze vijf lagen blijven**. Een architectuur is sterk als ze de techniek die eronder verandert kan overleven.
 
+## Architectuurfreeze (werkregel — vastgesteld einde architectuurfase)
+
+De fundamentele architectuur is **bevroren**. Zij bestaat uit: de vijf lagen, de drie engine-soorten (Producer / Analyzer / Orchestrator), de Curriculum Engine als source of truth, de Knowledge/Concept/Semantic-graaf, de Review-gates en de zes harde regels.
+
+> **Nieuwe fundamentele architectuur mag alleen veranderen als een concreet probleem aantoonbaar niet oplosbaar is binnen het huidige model.**
+
+De test bij elke voorgestelde nieuwe laag/engine is niet *"is dit eleganter?"* maar:
+
+> **"Verdwijnt er concreet iets moeilijks als we deze laag toevoegen — en past de use case echt niet binnen Producers, Analyzers, Orchestrator, Query Engine, Curriculum Engine en de bestaande graaf?"**
+
+Zo niet, dan is het waarschijnlijk een **variant** van een bestaand type (Producer/Analyzer/Orchestrator/View), geen nieuwe laag. Vanaf hier verschuift de waarde van *architectuur* naar **inhoud**: leerdoelen, semantische feiten, reviewcapaciteit, examenvraag-kwaliteit en syllabusdekking. Dat zijn productie- en kwaliteitsproblemen, geen ontwerpproblemen.
+
 ## De lagen (blijvende architectuur)
 
 ```
