@@ -514,10 +514,15 @@ function authErrMsg(msg){
   if(m.includes('invalid login')||m.includes('invalid credentials'))return'Onjuist e-mailadres of wachtwoord.';
   if(m.includes('email not confirmed'))return'Bevestig eerst je e-mailadres via de mail die je hebt ontvangen.';
   if(m.includes('already registered')||m.includes('user already exists'))return'Dit e-mailadres is al in gebruik.';
+  if(m.includes('signup')&&(m.includes('disabled')||m.includes('not allowed')))return'Registreren staat tijdelijk uit. Probeer het later opnieuw of mail ons via slagiocompany@gmail.com.';
+  if(m.includes('email')&&m.includes('invalid'))return'Dit e-mailadres wordt niet geaccepteerd. Probeer een ander adres.';
+  if(m.includes('captcha'))return'Verificatie mislukt. Ververs de pagina en probeer het opnieuw.';
   if(m.includes('password'))return'Wachtwoord moet minimaal 8 tekens zijn.';
-  if(m.includes('rate limit'))return'Te veel pogingen. Probeer het later opnieuw.';
-  if(m.includes('network')||m.includes('fetch'))return'Geen internetverbinding.';
-  return'Er is iets misgegaan. Probeer het opnieuw.';
+  if(m.includes('rate limit')||m.includes('too many'))return'Te veel pogingen. Probeer het later opnieuw.';
+  if(m.includes('network')||m.includes('fetch')||m.includes('failed to'))return'Geen verbinding met de server. Controleer je internet en probeer opnieuw.';
+  // Onbekende fout: toon de echte melding (ingekort) i.p.v. hem te verbergen —
+  // anders is een serverprobleem niet te onderscheiden van een invoerfout.
+  return'Er ging iets mis: '+String(msg).slice(0,120);
 }
 
 function switchAuthTab(tab){

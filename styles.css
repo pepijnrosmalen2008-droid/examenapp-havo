@@ -5099,9 +5099,9 @@ html.dark{
 @media(max-width:560px){
   .bottom-nav-inner{backdrop-filter:blur(30px) saturate(1.5);-webkit-backdrop-filter:blur(30px) saturate(1.5);box-shadow:0 14px 44px rgba(0,0,0,.2),0 2px 10px rgba(0,0,0,.1),0 1px 0 rgba(255,255,255,.12) inset}
   .hnav,.nav{backdrop-filter:blur(26px) saturate(1.4);-webkit-backdrop-filter:blur(26px) saturate(1.4)}
-  /* minder secties: standalone social-knoppen zijn redundant met de
-     'Sociaal'-cel in de bento → verberg op mobiel voor een rustiger home */
-  .hm-sociaal-section{display:none!important}
+  /* NB: .hm-sociaal-section NIET verbergen op mobiel — de bento (desktop-route
+     naar Sociaal) is op mobiel al verborgen, dus deze knoppen zijn op telefoons
+     de enige weg naar het leaderboard en de groepen. */
   .hm-quick-scroll{margin-top:4px}
 }
 

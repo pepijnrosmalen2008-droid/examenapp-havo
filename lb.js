@@ -92,10 +92,19 @@ async function saveLeaderboardEntry(entry){
 // (gewone naam + dier-avatar). Puur voor opvulling; ze worden lokaal
 // samengevoegd met de echte Supabase-scores en ranken gewoon mee.
 const _BOT_VAKNAAM={nl:'Nederlands',wa:'Wiskunde A',wb:'Wiskunde B',bi:'Biologie',sk:'Scheikunde',na:'Natuurkunde',en:'Engels',ec:'Economie',be:'Bedrijfseconomie',gs:'Geschiedenis',ak:'Aardrijkskunde',mw:'Maatschappijwetenschappen',du:'Duits',fr:'Frans',gr:'Grieks',la:'Latijn',in:'Informatica'};
+// Evolutie-stage die plausibel bij de score past (zoals bij echte leerlingen
+// de stage met XP meegroeit). Max 5 — de allerhoogste stage blijft voor echte
+// toppers.
+function _botStage(score){return score>=900?5:score>=750?4:score>=600?3:score>=450?2:1;}
 function _mkBots(niveau,rows){
   return rows.map((r,i)=>{
-    const [naam,avatar,score,goed,vak,avgTijd]=r;
-    return{uid:'bot_'+niveau+'_'+i,naam,avatar,animalId:null,stageIdx:null,
+    // Mens-achtige bots hebben een animalId (7e veld) → zelfde dier-avatar +
+    // evolutie-stage als echte leerlingprofielen. Robot-bots houden hun
+    // robot-emoji als avatar, zoals de bots van het 2026-leaderboard.
+    const [naam,avatar,score,goed,vak,avgTijd,animalId]=r;
+    return{uid:'bot_'+niveau+'_'+i,naam,
+      avatar:animalId?null:avatar,
+      animalId:animalId||null,stageIdx:animalId?_botStage(score):null,
       featuredBadgeId:null,badgeIds:[],vak,vakNaam:_BOT_VAKNAAM[vak]||vak,
       domeinId:null,domeinNaam:null,score,goed,tot:10,avgTijd,niveau,
       date:'2026-05-'+String(9+(i%19)).padStart(2,'0'),_bot:true};
@@ -103,24 +112,24 @@ function _mkBots(niveau,rows){
 }
 const LB_BOTS={
   havo:_mkBots('havo',[
-    ['OefenBot 3000','🤖',940,10,'wa',5],['Sanne','🦊',905,10,'bi',7],
-    ['QuizMachine','⚙️',890,10,'na',4],['Daan','🐼',865,9,'ec',8],
-    ['StudieBot_v2','🤖',850,9,'nl',5],['Fenna','🦉',815,9,'en',9],
-    ['Lucas','🐧',780,9,'gs',10],['ExamenBot','🤖',760,8,'sk',6],
-    ['Noor','🐰',720,8,'ak',11],['Sem','🐨',690,8,'wb',9],
-    ['RoboLeerling','🤖',655,8,'bi',7],['Julia K.','🦋',610,7,'nl',12],
-    ['Bram','🐢',560,7,'en',13],['AI-Tutor','🤖',510,7,'ec',6],
-    ['Milan','🦁',450,6,'gs',12],['Yara','🐝',380,6,'bi',14],
+    ['OefenBot 3000','🤖',940,10,'wa',5],['Sanne','',905,10,'bi',7,'vos'],
+    ['QuizMachine','⚙️',890,10,'na',4],['Daan','',865,9,'ec',8,'wolf'],
+    ['StudieBot_v2','🤖',850,9,'nl',5],['Fenna','',815,9,'en',9,'uil'],
+    ['Lucas','',780,9,'gs',10,'haai'],['ExamenBot','🤖',760,8,'sk',6],
+    ['Noor','',720,8,'ak',11,'vlinder'],['Sem','',690,8,'wb',9,'tijger'],
+    ['RoboLeerling','🤖',655,8,'bi',7],['Julia K.','',610,7,'nl',12,'eenhoorn'],
+    ['Bram','',560,7,'en',13,'olifant'],['AI-Tutor','🤖',510,7,'ec',6],
+    ['Milan','',450,6,'gs',12,'leeuw'],['Yara','',380,6,'bi',14,'adelaar'],
   ]),
   vwo:_mkBots('vwo',[
-    ['OefenBot 3000','🤖',945,10,'wb',5],['Thijs','🦊',910,10,'na',7],
-    ['QuizMachine','⚙️',895,10,'sk',4],['Isa','🦉',870,9,'bi',8],
-    ['StudieBot_v2','🤖',855,9,'wa',5],['Lars','🐼',820,9,'ec',9],
-    ['Fenna','🐧',785,9,'gs',10],['ExamenBot','🤖',765,8,'in',6],
-    ['Tess','🐰',725,8,'en',11],['Sven','🐨',695,8,'du',9],
-    ['RoboLeerling','🤖',660,8,'na',7],['Nora','🦋',615,7,'la',12],
-    ['Jesse','🐢',565,7,'gr',13],['AI-Tutor','🤖',515,7,'wa',6],
-    ['Evi','🦁',455,6,'mw',12],['Guus','🐝',385,6,'fr',14],
+    ['OefenBot 3000','🤖',945,10,'wb',5],['Thijs','',910,10,'na',7,'wolf'],
+    ['QuizMachine','⚙️',895,10,'sk',4],['Isa','',870,9,'bi',8,'uil'],
+    ['StudieBot_v2','🤖',855,9,'wa',5],['Lars','',820,9,'ec',9,'haai'],
+    ['Fenna','',785,9,'gs',10,'vos'],['ExamenBot','🤖',765,8,'in',6],
+    ['Tess','',725,8,'en',11,'vlinder'],['Sven','',695,8,'du',9,'draak'],
+    ['RoboLeerling','🤖',660,8,'na',7],['Nora','',615,7,'la',12,'eenhoorn'],
+    ['Jesse','',565,7,'gr',13,'octopus'],['AI-Tutor','🤖',515,7,'wa',6],
+    ['Evi','',455,6,'mw',12,'leeuw'],['Guus','',385,6,'fr',14,'adelaar'],
   ]),
 };
 async function loadLeaderboardFromSupabase(){
