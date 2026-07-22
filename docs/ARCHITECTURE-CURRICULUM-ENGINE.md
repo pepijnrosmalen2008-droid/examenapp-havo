@@ -14,27 +14,40 @@ De specifieke generators, AI-modellen en prompts zullen veranderen; **deze vijf 
         ▲
 2. Validation & Evolution   Validation Engine • Metrics Engine • Evolution Engine   (leest + stelt voor)
         ▲
-1. Relationship Layer   Knowledge Graph • Concept Graph • Dependency Graph • Evidence Graph
+1. Relationship Layer   Knowledge Graph • Concept Graph • Semantic Graph • Dependency Graph • Evidence Graph
         ▲
-0. Knowledge Layer      Curriculum Engine • Learning Objectives • Knowledge Units • Evidence   (source of truth)
+0. Knowledge Layer      Curriculum Engine • Learning Objectives • Semantic Facts • Evidence   (source of truth)
 ```
 
 Alleen de Knowledge Layer wordt handmatig beheerd/gereviewd. Generation is volledig afgeleid en weggooibaar. Validation/Evolution bewaakt en **stelt voor** (schrijft nooit). De F-fases (F1, F2, …) zijn ontwikkelvolgorde; deze lagen zijn de blijvende structuur.
 
-## De hiërarchie is atomisch
+## De hiërarchie is atomisch — met een Semantic Layer als fundament
 
-De kleinste eenheid is niet het leerdoel maar het **concept**, en daartussen zit de **Knowledge Unit**:
+Twee views op dezelfde structuur. **Containment** (waar hoort iets bij):
 
 ```
 Vak → Domein → Leerdoel → Knowledge Unit → Concept
 ```
 
-- **Concept** = zelfstandig begrip ("osmose").
-- **Knowledge Unit (KU)** = één feit, mechanisme, regel, voorwaarde, toepassing of valkuil over dat concept.
+**Fundament / afleiding** (waar komt iets vandaan) — dit is de eigenlijke bron-volgorde:
+
+```
+Evidence → Semantic Facts → Concepts → Knowledge Units → Learning Objectives → Content
+```
+
+- **Evidence** = waaróm geloven we het (syllabus/examen/correctievoorschrift/review).
+- **Semantic Fact** = een gecontroleerde triple tussen concept-nodes: `enzym —reduces→ activeringsenergie`. De echte atomische waarheid.
+- **Concept** = zelfstandig begrip ("enzym", "osmose").
+- **Knowledge Unit (KU)** = *afgeleide* — één feit/mechanisme/valkuil in zinsvorm, **volgt uit de semantische feiten** (niet handgeschreven).
 - **Leerdoel** = verzameling KU's die samen een onderwijsdoel vormen.
 
-Waarom dit de grootste kwaliteitswinst op lange termijn is: je genereert dan niet meer vanuit een grove leerdoelbeschrijving, maar **combineert atomische KU's**. Een 30-sec-samenvatting = alleen de KU's `definitie` + `werking`; een 5-A4 = alle KU's; een quiz over `voorwaarden` = alleen die KU. Geen duplicatie, wél consistentie.
-*Status:* het `units[]`-veld is **gereserveerd** (optioneel, forward-compatible) — eerst piloten op één leerdoel (Osmose), dán uitrollen.
+**Waarom de Semantic Layer vóór KU's komt** (bewezen, pilot concept "Enzym", `scripts/semantic.js`):
+1. **Gratis reasoning** — de tutor loopt de graaf af i.p.v. uitleg te lezen: *"waarom daalt enzymactiviteit bij hoge temperatuur?"* → `hoge-temperatuur —causes→ denaturatie —reduces→ enzymactiviteit`. Niemand schreef dat antwoord.
+2. **KU's zijn afgeleiden** — uit 20 feiten over "enzym" ontstaan automatisch de KU's (definitie/werking/voorwaarden/valkuil). Dus KU's mass-authoren zou dubbel werk zijn; je authort **feiten** en genereert KU's.
+
+Regels voor de Semantic Layer (klassieke kennisgraaf-discipline): **gesloten predikaten-vocabulaire** (`is_a, has_part, causes, reduces, requires, affects, occurs_in, often_confused_with, …`) en **concept-ID's als subject/object** (geen free-text triples). Zo blijft de graaf queryebaar en redeneerbaar.
+
+*Status:* Semantic Layer = **pilot** (`knowledge/semantic-havo.json`, concept Enzym). `units[]`-veld op het leerdoel blijft gereserveerd — maar KU's worden **gegenereerd uit feiten**, niet met de hand geschreven.
 
 ## Vier harde regels
 
@@ -286,6 +299,7 @@ Curriculum Engine ──► Knowledge Graph ──┬──► Content Engines �
 ```
 
 - **F1.6** — curriculumlaag compleet voor alle vakken (HAVO → VWO), batchgewijs via de factory.
+- **F1.65 — Semantic Layer** — semantische feiten per concept (pilot Enzym gedaan). Levert reasoning + auto-KU's. Kleinste bewijseenheid: één concept, niet één leerdoel.
 - **F1.7** — review-gates doorlopen: elk vak van `draft` → `reviewed` → `approved`.
 - **F2** — Question Engine: `leerdoel → misconceptie → examenskill → moeilijkheid → vraagtype → vraag`.
 - **F3** — overige Content Engines (Summary tiered, Animation vanuit DSL, Lesson).

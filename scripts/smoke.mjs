@@ -215,6 +215,21 @@ try {
   for (const ld of allLds) for (const f of ['voorkennis', 'vervolg']) for (const ref of (ld[f] || [])) if (!ids.has(ref)) dangling.push(`${ld.id}.${f}→${ref}`);
   dangling.length === 0 ? ok('geen dangling voorkennis/vervolg-edges') : bad(`dangling edges: ${dangling.slice(0, 5).join(', ')}`);
 
+  // semantic layer (pilot): predikaten gesloten + alle nodes resolven + confidence geldig
+  try {
+    const semPath = path.join(ROOT, 'knowledge', 'semantic-havo.json');
+    if (fs.existsSync(semPath)) {
+      const S = JSON.parse(fs.readFileSync(semPath, 'utf8'));
+      const VOCAB = new Set(['is_a', 'has_part', 'part_of', 'binds_to', 'reduces', 'increases', 'affects', 'causes', 'requires', 'used_by', 'occurs_in', 'produces', 'has_property', 'opposite_of', 'often_confused_with', 'analogy_of', 'depends_on', 'results_in']);
+      const badP = S.facts.filter(f => !VOCAB.has(f.p));
+      const badN = S.facts.filter(f => !S.concepts[f.s] || !S.concepts[f.o]);
+      const badC = S.facts.filter(f => typeof f.conf !== 'number' || f.conf < 0 || f.conf > 1);
+      (badP.length || badN.length || badC.length)
+        ? bad(`semantic: ${badP.length} predikaat, ${badN.length} node, ${badC.length} confidence ongeldig`)
+        : ok(`semantic-graaf: ${S.facts.length} feiten, gesloten predikaten + nodes resolven`);
+    }
+  } catch (e) { bad('semantic-check mislukt: ' + e.message); }
+
   // dashboard laadt de kennislaag
   const dash = read('curriculum.html');
   ['/knowledge-havo.js', '/knowledge-koppeling-havo.js', '/data-havo.meta.js'].every(f => dash.includes(f))
