@@ -35,6 +35,7 @@ function startQ(mode){
   ST.mode=mode;
   ST.idx=0;ST.score=0;ST.antwrd=[];ST.tijdPerVraag=[];ST.combo=0;ST.xpThisRound=0;ST.flagged=new Set();
   if(!ST.isDailyChallenge)ST.isDailyChallenge=false;
+  ST.isFoutenboek=false;
   ST.adaptive=false;
   const pool=mode==='snel'?ST.domein.sv:ST.domein.oe;
   if(mode==='snel'){
@@ -360,6 +361,7 @@ function _kiesReveal(gekozen,correct,btns){
   ST.tijdPerVraag.push(tijdOver);
   aqpRecord(ST.vragen[ST.idx], ok?1:0);
   ST.antwrd.push({pts:ok?1:0,chosenText:q.o[chosenOrigIdx],tijdOver});
+  try{if(typeof fbRecord==='function')fbRecord(q,ok,q.o[chosenOrigIdx]);}catch(e){}
   saveQuizDraft();
   btns.forEach((b,i)=>{
     if(i===correct)b.classList.add('correct');
@@ -386,6 +388,7 @@ function tijdOp(){
   ST.tijdPerVraag.push(0);
   aqpRecord(ST.vragen[ST.idx], 0);
   ST.antwrd.push({pts:0,chosenText:'⏱ Tijd was op',tijdOver:0});
+  try{if(typeof fbRecord==='function')fbRecord(q,false,null);}catch(e){}
   saveQuizDraft();
   const correct=ST.shuffleMap.indexOf(q.c);
   const btns=document.querySelectorAll('#snel-area .opt');
@@ -1339,7 +1342,7 @@ function toonRes(){
   try{
     const lbBtn=document.getElementById('lb-res-btn');
     const _regPrompt=document.getElementById('res-register-prompt');
-    if(ST.mode==='snel'){
+    if(ST.mode==='snel'&&!ST.isFoutenboek){
       const goed=ST.antwrd.filter(a=>a.pts===1).length;
       const tijden=ST.tijdPerVraag||[];
       const totalTijd=tijden.reduce((a,b)=>a+b,0);
@@ -1364,14 +1367,14 @@ function toonRes(){
   }catch(e){console.warn('toonRes LB error:',e);}
   // B2: account prompt bottom sheet (first win, anonymous only)
   try{
-    if(!currentUser && ST.mode==='snel' && pct>=0.5 && !localStorage.getItem('slagio_reg_prompted')){
+    if(!currentUser && ST.mode==='snel' && !ST.isFoutenboek && pct>=0.5 && !localStorage.getItem('slagio_reg_prompted')){
       setTimeout(()=>_showRegPrompt(pct),1200);
     }
   }catch(e){}
   // "Eén meer quiz" suggestie
   try{
     const omBox=document.getElementById('one-more-wrap');
-    if(omBox&&ST.mode==='snel'&&ST.vak){
+    if(omBox&&ST.mode==='snel'&&!ST.isFoutenboek&&ST.vak){
       const domeinen=ST.vak.domeinen||[];
       const score=ST.score/ST.vragen.length;
       // Als score <80%: opnieuw hetzelfde domein, anders: volgend domein
@@ -1397,7 +1400,7 @@ function toonRes(){
   try{renderChallengeResult();}catch(e){}
   show('sc-res');
   try{playSound('complete');}catch(e){}
-  if(ST.mode==='snel')setTimeout(()=>showFeedbackPopup('snel'),2500);
+  if(ST.mode==='snel'&&!ST.isFoutenboek)setTimeout(()=>showFeedbackPopup('snel'),2500);
 }
 
 function retryQ(){startQ(ST.mode);}
