@@ -1,22 +1,35 @@
 # Slagio — Curriculum Engine & Knowledge Graph (kernarchitectuur)
 
 **Status:** vastgesteld · **Doel:** de laag waar de komende jaren niets fundamenteels meer aan hoeft te veranderen.
-Content-engines mogen evolueren of vervangen worden; zolang **Curriculum Engine + Knowledge Graph + Validation Engine** stabiel blijven, bouwt de rest van Slagio daar consistent op voort.
+De specifieke generators, AI-modellen en prompts zullen veranderen; **deze vijf lagen blijven**. Een architectuur is sterk als ze de techniek die eronder verandert kan overleven.
+
+## De vijf lagen (blijvende architectuur)
 
 ```
-              Curriculum Engine  (source of truth — enige die schrijft)
-                      │
-                      ▼
-               Knowledge Graph   (nodes + edges)
-                      │
-          ┌───────────┴───────────┐
-          ▼                       ▼
-   Content Engines          Validation Engine   (kwaliteitsmanager)
-          │                       │
-          └───────────┬───────────┘
-                      ▼
-               Student / Docent
+1. Knowledge Layer      curriculum: leerdoelen, concepten, misconcepties, examenskills   (source of truth)
+        │
+2. Relationship Layer   de graaf: nodes + edges (leerdoel↔concept↔examen↔domein↔vak)
+        │
+3. Generation Layer     afgeleiden: vragen, samenvattingen, animaties, flashcards, lesplannen
+        │
+4. Validation Layer     review, QA, coverage — én de Curriculum Evolution Engine
+        │
+5. Experience Layer      student, docent, AI-tutor
 ```
+
+Alleen laag 1 wordt handmatig beheerd/gereviewd. Laag 3 is volledig afgeleid en weggooibaar. Laag 4 bewaakt en **stelt voor** (schrijft nooit). De F-fases (F1, F2, …) zijn ontwikkelvolgorde; deze vijf lagen zijn de blijvende structuur.
+
+## Uniforme engine-interface
+
+Elke engine in laag 3/4 heeft **dezelfde vorm**, waardoor engines uitwisselbaar zijn:
+
+```
+Input:  node-ID  (bv. bi.M.3)
+   ↓    [Engine]  (leest alleen)
+Output: nieuwe node(s) + provenance + confidence
+```
+
+`bi.M.3 → Summary Engine → summary.183` · `bi.M.3 → Animation Engine → anim.82`. Verwissel de engine (of het model erachter) en de rest verandert niet.
 
 ---
 
@@ -30,7 +43,7 @@ Een leerdoel-node:
 |---|---|
 | `id` | **stabiele** sleutel `<vak>.<domein>.<n>` — tekst mag evolueren, ID nooit |
 | `titel`, `beschrijving` | mensleesbaar |
-| `concepten` | begrippen die dit leerdoel dekt |
+| `concepten` | **edges** → concept-nodes (nu als label; concept is een eersteklas node, §2) |
 | `veelgemaakteFouten` | misconcepties (voedt diagnostische vragen) |
 | `examenskill` | examenvaardigheidsdimensie (bron-interpretatie, data-verwerken, …) |
 | `examenrelevantie` | examengewicht (hoog/midden/laag) |
@@ -50,7 +63,21 @@ Een leerdoel-node:
 
 De curriculumlaag is **geen verzameling JSON-bestanden meer, maar een graaf**. De JSON is slechts de opslagvorm; de betekenis is een graaf.
 
-**Nodes:** vakken · domeinen · leerdoelen · concepten · examens
+### Concept = eersteklas node (niet een string)
+
+Een concept is **geen tekst in een leerdoel** maar een eigen node met eigenschappen, gedeeld over vakken. Gegenereerd (afgeleid, regenereerbaar) in `knowledge/concepts-<niveau>.json` door `curriculum-graph.js concepts`:
+
+```
+concept.energie
+  labels:     ["Energie"]            (synoniemen komen hier samen)
+  vakken:     [bi]                    ← wordt [bi, sk] zodra beide 'energie' gebruiken
+  appearsIn:  [bi.M.3]                (gebruikt-edges vanuit leerdoelen)
+  nVragen:    5                       (uit de koppeling-sidecar)
+```
+
+Daardoor worden vakoverstijgende vragen beantwoordbaar: *"Laat alle leerdoelen zien waarin energie voorkomt"* → `curriculum-graph.js query havo energie`. Nu al: 179 concept-nodes, waarvan enkele vak-overstijgend (Hypothese, Variabelen → bi+sk). **Hardening later:** `leerdoel.concepten` migreren van label naar expliciete `concept.<slug>`-ID; de registry levert de map.
+
+**Nodes:** vakken · domeinen · leerdoelen · **concepten** · examens
 **Edges:**
 
 | edge | van → naar | herkomst nu |
@@ -90,6 +117,18 @@ Afgeleiden (allemaal **disposable**, elk in een eigen regenereerbare store met e
 | animatiescripts (DSL) | clip-store | **spec-engine bestaat** (`sam-clip.js`) |
 | lesplannen | lesson-store | nieuw |
 | adaptieve oefensets | runtime | AQP bestaat (`vak.js`) |
+
+**Afgeleiden zijn óók nodes** (geen losse bestanden), elk met provenance die bindt aan de **versie** van het bron-leerdoel:
+
+```
+summary.183
+  van:        bi.M.3 @ v4          ← gebonden aan een specifieke leerdoel-versie
+  door:       Claude 5             op 2028-02-03
+  reviewed:   true
+  confidence: 0.9
+```
+
+Zodra `bi.M.3` naar v5 gaat, ziet de Validation/Evolution Engine meteen: *summary.183 hoort nog bij v4 → verouderd, hergenereren*. Die versie-binding (via `_meta.version` + `contentHash`) is precies waarom afgeleiden nooit in het leerdoel mogen zitten.
 
 Gevolg: bij een syllabuswijziging pas je **alleen de Curriculum Engine** aan; alle afgeleiden worden opnieuw gegenereerd of gecontroleerd. Nooit andersom.
 
@@ -153,6 +192,19 @@ Geen generator maar een **validator**; uiteindelijk de belangrijkste engine, wan
 - Klopt elke `reviewStatus` met de eisen voor die status?
 
 **Nu al deels aanwezig:** `smoke.mjs` (integriteitsguards), het Curriculum Dashboard (dekking/confidence/AI-Ready/review), en `leerdoel-dekking.js`. De Validation Engine is de bundeling hiervan tot één expliciete kwaliteitspoort — en groeit mee zodra de graph-edges en de afgeleide-stores gevuld raken.
+
+## 6b. Curriculum Evolution Engine
+
+Een aparte engine die **niets automatisch schrijft** — hij **stelt alleen voor**. De AI-reviewer van je curriculum (`curriculum-graph.js evolve`). Signalen:
+
+- dit leerdoel heeft inmiddels *N* vragen → misschien splitsen (`split?`)
+- deze twee leerdoelen hebben ~95% conceptoverlap → samenvoegen? (`overlap?`)
+- dit concept komt in geen enkele vraag voor → gat (`gat`)
+- deze prerequisite verwijst naar een niet-bestaand leerdoel (`dangling`)
+- deze samenvatting/animatie is gebaseerd op een oude leerdoel-versie (zodra afgeleide-nodes bestaan)
+- hier ontbreekt een leerdoel volgens de syllabus (zodra de crawler bronnen levert)
+
+Draait nu al en levert echte signalen op (bv. *bi.A.1 heeft 44 vragen → splitsen*; *concept "Denaturatie" heeft 0 vragen*). Menselijke review beslist; de Curriculum Engine voert pas uit na akkoord.
 
 ---
 

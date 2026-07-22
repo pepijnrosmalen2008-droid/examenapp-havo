@@ -210,6 +210,11 @@ try {
   const badReview = allLds.filter(ld => ld._meta && !['draft', 'reviewed', 'approved'].includes(ld._meta.reviewStatus));
   badReview.length === 0 ? ok('alle _meta.reviewStatus geldig (draft/reviewed/approved)') : bad(`${badReview.length} ongeldige reviewStatus`);
 
+  // graaf-integriteit: voorkennis/vervolg-edges mogen niet danglen (naar niet-bestaand leerdoel)
+  const dangling = [];
+  for (const ld of allLds) for (const f of ['voorkennis', 'vervolg']) for (const ref of (ld[f] || [])) if (!ids.has(ref)) dangling.push(`${ld.id}.${f}→${ref}`);
+  dangling.length === 0 ? ok('geen dangling voorkennis/vervolg-edges') : bad(`dangling edges: ${dangling.slice(0, 5).join(', ')}`);
+
   // dashboard laadt de kennislaag
   const dash = read('curriculum.html');
   ['/knowledge-havo.js', '/knowledge-koppeling-havo.js', '/data-havo.meta.js'].every(f => dash.includes(f))
