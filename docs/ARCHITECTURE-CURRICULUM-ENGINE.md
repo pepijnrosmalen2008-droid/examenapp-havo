@@ -271,17 +271,20 @@ Een aparte engine die **niets automatisch schrijft** — hij **stelt alleen voor
 
 Draait nu al en levert echte signalen op (bv. *bi.A.1 heeft 44 vragen → splitsen*; *concept "Denaturatie" heeft 0 vragen*). Menselijke review beslist; de Curriculum Engine voert pas uit na akkoord.
 
-## 6c. Query Engine (de enige leesweg)
+## 6c. Query Engine — interne SQL voor onderwijs (de enige leesweg)
 
-`curriculum-query.js` — geen enkele generator loopt zelf door JSON; iedereen leest hierdoorheen. Filters over de graaf mét afgeleide metrics (nVragen, AI-Ready, confidence):
+Geen enkele generator loopt zelf door JSON; iedereen leest hierdoorheen. Het is geen dashboard maar een **declaratieve querytaal**; dashboards zijn **opgeslagen queries** (`SAVED` in `curriculum-query.js`).
 
 ```
-curriculum-query.js havo --gewicht hoog --ai-ready-min 90 --review reviewed --concept energie
-curriculum-query.js havo --misconcepties --concept enzym
-curriculum-query.js havo --gewicht hoog --vragen-max 10        # onderbedeelde high-stakes leerdoelen
+curriculum-query.js havo --where "gewicht=hoog AND vragen<10 AND review=reviewed"
+curriculum-query.js havo --where "concept=energie AND misconcepties>=1"
+curriculum-query.js havo --saved klaar-voor-generatie      # review=approved AND airready>=90
+curriculum-query.js havo --list                            # alle opgeslagen queries + velden
 ```
 
-`--json` maakt het machine-leesbaar voor andere engines. **Gebouwd en werkend.** Dit is de laag die tussen elke engine en de Knowledge Graph zit.
+Velden: `gewicht · review · vak · vragen · airready · confidence · syllabus · misconcepties · voorbeelden · voorkennis · concept`. Ops: `= != < > <= >= · missing(...) · has(...) · AND / OR`. `--json` voor andere engines.
+
+**Waarom dit het hele systeem test:** *"de kwaliteit van een kennismodel blijkt uit de vragen die je eraan kunt stellen."* Als deze queries nuttige antwoorden geven, kloppen de Knowledge Graph, de Curriculum Layer, de provenance en de relaties — indirect getoetst. Voorbeeld dat de poort zichtbaar maakt: `klaar-voor-generatie` = **0** zolang niets `approved` is. **Content-stores** (summary/animatie/flashcards) bestaan nog niet → `missing(summary)` is bewust altijd waar, zodat de query **de content-backlog toont**. Dashboards = opgeslagen queries; nieuwe inzichten = één regel erbij.
 
 ## 6d. Metrics Engine (KPI's van het curriculum, niet van de leerling)
 

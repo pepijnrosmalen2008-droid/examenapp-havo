@@ -57,7 +57,78 @@ for (const [domKey, block] of Object.entries(LEERDOELEN)) {
   for (const ld of (block.leerdoelen || [])) all.push({ ld, vak, dom: domKey, m: metrics(ld) });
 }
 
-// ── filters toepassen ──
+// ══ Querytaal ("interne SQL voor onderwijs") ══
+// Elk leerdoel → platte, queryebare record. Velden zonder store (summary/animatie/
+// flashcards) staan bewust op 'ontbreekt' — dat maakt de content-backlog zichtbaar.
+function record(r) {
+  const ld = r.ld, m = r.m;
+  return {
+    id: ld.id, titel: ld.titel, vak: r.vak,
+    gewicht: ld.examenrelevantie, review: (ld._meta && ld._meta.reviewStatus) || 'draft',
+    vragen: m.n, airready: m.aiReady, confidence: Math.round(m.conf * 100), syllabus: Math.round(m.cov * 100),
+    misconcepties: (ld.veelgemaakteFouten || []).length,
+    voorbeelden: (ld.voorbeelden || []).length, voorkennis: (ld.voorkennis || []).length,
+    _concepten: (ld.concepten || []).map(norm).join(' | '),
+    // content-stores bestaan nog niet → alles 'ontbreekt' (eerlijk: dit ís de backlog)
+    has_summary: false, has_animatie: false, has_flashcards: false, has_examens: m.n > 0,
+    has_voorbeelden: (ld.voorbeelden || []).length > 0,
+  };
+}
+const FALIAS = { examweight: 'gewicht', questioncount: 'vragen', reviewstatus: 'review', subject: 'vak', misconceptions: 'misconcepties', coverage: 'syllabus', concept: '_concepten' };
+function evalClause(cl, rec) {
+  let m;
+  if (m = cl.match(/^missing\((\w+)\)$/i)) return !rec['has_' + m[1].toLowerCase()];
+  if (m = cl.match(/^has\((\w+)\)$/i)) return !!rec['has_' + m[1].toLowerCase()];
+  m = cl.match(/^(\w+)\s*(<=|>=|!=|=|<|>)\s*(.+)$/); if (!m) return false;
+  let [, f, op, v] = m; f = f.toLowerCase(); f = FALIAS[f] || f; v = v.trim().replace(/^["']|["']$/g, '');
+  let val = rec[f]; if (val === undefined) return false;
+  if (f === '_concepten') return String(val).includes(norm(v)); // concept=... → lidmaatschap
+  const num = parseFloat(v), isNum = !isNaN(num) && typeof val === 'number';
+  const a = isNum ? val : String(val).toLowerCase(), b = isNum ? num : String(v).toLowerCase();
+  return { '=': a == b, '!=': a != b, '<': a < b, '>': a > b, '<=': a <= b, '>=': a >= b }[op];
+}
+const evalExpr = (expr, rec) => expr.split(/\s+OR\s+/i).some(g => g.split(/\s+AND\s+/i).every(c => evalClause(c.trim(), rec)));
+
+// Opgeslagen queries = "het dashboard". Uitbreiden is één regel.
+const SAVED = {
+  // curriculum
+  'dun-vragen': { q: 'vragen<8', uitleg: 'leerdoelen met minder dan 8 vragen' },
+  'geen-voorbeelden': { q: 'voorbeelden=0', uitleg: 'leerdoelen zonder voorbeelden' },
+  'nog-draft': { q: 'review=draft', uitleg: 'nog niet gereviewd' },
+  'lage-ai-ready': { q: 'airready<85', uitleg: 'lage AI-Ready score' },
+  // examen / onderwijs
+  'hoog-gewicht-weinig-vragen': { q: 'gewicht=hoog AND vragen<10', uitleg: 'high-stakes maar onderbedeeld' },
+  'hoog-gewicht-lage-ai': { q: 'gewicht=hoog AND airready<90', uitleg: 'high-stakes maar niet generatie-klaar' },
+  'veel-misconcepties': { q: 'misconcepties>=2', uitleg: 'leerdoelen met ≥2 gedocumenteerde misconcepties' },
+  'onvolledige-syllabusdekking': { q: 'syllabus<100', uitleg: 'niet elk concept door een vraag gedekt' },
+  // content-backlog (stores bestaan nog niet → tonen wat er gegenereerd moet worden)
+  'geen-samenvatting-klaar': { q: 'missing(summary) AND review=approved AND gewicht=hoog', uitleg: 'approved high-stakes zonder samenvatting-view' },
+  'klaar-voor-generatie': { q: 'review=approved AND airready>=90', uitleg: 'mag de Content Factory in' },
+};
+
+if (flag('list')) {
+  console.log('\nOpgeslagen queries (--saved <naam>):');
+  for (const [n, s] of Object.entries(SAVED)) console.log(`  ${n.padEnd(30)} ${s.uitleg}\n    ${' '.repeat(30)}${s.q}`);
+  console.log('\nVelden: gewicht(hoog/midden/laag) review(draft/reviewed/approved) vak vragen airready confidence syllabus misconcepties voorbeelden voorkennis concept');
+  console.log('Ops: = != < > <= >= · missing(summary|animatie|flashcards|examens) · has(...) · AND / OR');
+  console.log('NB: summary/animatie/flashcards hebben nog GEEN store → missing() = altijd waar (dit ís de backlog).\n');
+  process.exit(0);
+}
+const savedName = flag('saved');
+const whereExpr = flag('where') || (savedName && SAVED[savedName] && SAVED[savedName].q);
+if (savedName && !SAVED[savedName]) { console.error(`onbekende saved query: ${savedName} (zie --list)`); process.exit(1); }
+if (whereExpr) {
+  let rows = all.filter(r => evalExpr(String(whereExpr), record(r))).sort((a, b) => b.m.aiReady - a.m.aiReady);
+  if (flag('json')) { console.log(JSON.stringify(rows.map(r => record(r)), null, 1)); process.exit(0); }
+  console.log(`\nquery: ${savedName ? savedName + '  (' + whereExpr + ')' : whereExpr}`);
+  console.log(`${rows.length} leerdoel(en):`);
+  console.log('  ' + 'id'.padEnd(9) + 'gew'.padEnd(7) + 'review'.padEnd(10) + 'vr'.padStart(4) + 'AI'.padStart(5) + 'mis'.padStart(4) + '  titel');
+  for (const r of rows) { const c = record(r); console.log('  ' + c.id.padEnd(9) + (c.gewicht || '').padEnd(7) + c.review.padEnd(10) + String(c.vragen).padStart(4) + (c.airready + '%').padStart(5) + String(c.misconcepties).padStart(4) + '  ' + c.titel); }
+  console.log('');
+  process.exit(0);
+}
+
+// ── (legacy) flag-filters ──
 let rows = all;
 if (flag('vak')) rows = rows.filter(r => r.vak === flag('vak'));
 if (flag('gewicht')) rows = rows.filter(r => r.ld.examenrelevantie === flag('gewicht'));
