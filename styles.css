@@ -3843,7 +3843,7 @@ html.dark .hsd-pill{background:var(--bg2);border-color:var(--bo2)}
 /* ── Mascotte "Vonk" — herbruikbaar, levendig (SVG-animaties, .m-*) ── */
 .m-svg{overflow:visible;display:block}
 /* idle: zachtjes deinen + af en toe een klein huppeltje, in één timeline */
-.m-fig{transform-origin:60px 101px;animation:mIdle 5.6s ease-in-out infinite}
+.m-fig{transform-origin:60px 106px;animation:mIdle 5.6s ease-in-out infinite}
 @keyframes mIdle{
   0%{transform:translateY(0) rotate(-1.2deg)}
   18%{transform:translateY(-3px) rotate(1.2deg)}
@@ -3854,26 +3854,41 @@ html.dark .hsd-pill{background:var(--bg2);border-color:var(--bo2)}
   86%{transform:translateY(0) rotate(0)}
   90%{transform:translateY(-4px)}
   94%,100%{transform:translateY(0) rotate(-1.2deg)}}
-.m-wave{transform-origin:92px 64px;animation:mWave 2.8s ease-in-out infinite}
-@keyframes mWave{0%,66%,100%{transform:rotate(0)}78%{transform:rotate(-26deg)}86%{transform:rotate(10deg)}92%{transform:rotate(-18deg)}}
+.m-wave{transform-origin:86px 76px;animation:mWave 2.8s ease-in-out infinite}
+@keyframes mWave{0%,66%,100%{transform:rotate(0)}78%{transform:rotate(-28deg)}86%{transform:rotate(10deg)}92%{transform:rotate(-18deg)}}
+.m-tail{transform-origin:40px 90px;animation:mTail 1.5s ease-in-out infinite}
+@keyframes mTail{0%,100%{transform:rotate(-9deg)}50%{transform:rotate(9deg)}}
 .m-tassel{transform-origin:60px 16px;animation:mTassel 2.8s ease-in-out infinite}
 @keyframes mTassel{0%,100%{transform:rotate(-6deg)}50%{transform:rotate(8deg)}}
-.m-tuft{transform-origin:60px 32px;animation:mWiggle 3.4s ease-in-out infinite}
-@keyframes mWiggle{0%,100%{transform:rotate(-5deg)}50%{transform:rotate(6deg)}}
+.m-head{transform-origin:60px 62px;animation:mHead 5s ease-in-out infinite}
+@keyframes mHead{0%,100%{transform:rotate(-1.6deg)}50%{transform:rotate(1.6deg)}}
+.m-ear-l{transform-origin:50px 28px;animation:mEar 4.6s ease-in-out infinite}
+.m-ear-r{transform-origin:70px 28px;animation:mEar 4.6s ease-in-out .4s infinite}
+@keyframes mEar{0%,84%,100%{transform:rotate(0)}90%{transform:rotate(-7deg)}95%{transform:rotate(4deg)}}
 .m-pupils{animation:mLook 6.5s ease-in-out infinite}
-@keyframes mLook{0%,22%,100%{transform:translateX(0)}34%,46%{transform:translateX(2.2px)}58%,70%{transform:translateX(-2.2px)}}
-.m-eyes{transform-origin:60px 58px;animation:mBlink 5.2s infinite}
+@keyframes mLook{0%,22%,100%{transform:translateX(0)}34%,46%{transform:translateX(2px)}58%,70%{transform:translateX(-2px)}}
+.m-eyes{transform-origin:60px 40px;animation:mBlink 5.2s infinite}
 @keyframes mBlink{0%,93%,100%{transform:scaleY(1)}96.5%{transform:scaleY(.08)}}
-.m-spark{transform-origin:60px 30px;animation:mSpark 1.8s ease-in-out infinite}
+.m-spark{transform-origin:60px 24px;animation:mSpark 1.8s ease-in-out infinite}
 @keyframes mSpark{0%,100%{opacity:.4;transform:scale(.85) rotate(0)}50%{opacity:1;transform:scale(1.2) rotate(20deg)}}
-.m-shadow{fill:rgba(0,0,0,.16);transform-origin:60px 113px;animation:mShadow 5.6s ease-in-out infinite}
+.m-shadow{fill:rgba(0,0,0,.16);transform-origin:60px 114px;animation:mShadow 5.6s ease-in-out infinite}
 @keyframes mShadow{0%,100%{transform:scaleX(1);opacity:.5}18%,54%{transform:scaleX(.9);opacity:.4}80%{transform:scaleX(1.12);opacity:.28}}
-/* praten: statische mond weg, open mond klappert */
-.m-mouth-talk{opacity:0;transform-origin:60px 80px}
+/* praten: statische mond weg; drie mondvormen wisselen af (realistischer) */
+.m-mouth-talk{opacity:0}
+.m-mouth-talk .mt,.m-mouth-talk .mt-tongue{opacity:0}
 .talking .m-mouth{opacity:0}
-.talking .m-mouth-talk{opacity:1;animation:mTalk .24s ease-in-out infinite}
-@keyframes mTalk{0%,100%{transform:scaleY(.32)}50%{transform:scaleY(1)}}
-@media(prefers-reduced-motion:reduce){.m-fig,.m-wave,.m-tassel,.m-tuft,.m-pupils,.m-eyes,.m-spark,.m-shadow,.talking .m-mouth-talk{animation:none}.talking .m-mouth{opacity:1}.talking .m-mouth-talk{opacity:0}}
+.talking .m-mouth-talk{opacity:1}
+.talking .mt-a{animation:mtA .46s steps(1) infinite}
+.talking .mt-b{animation:mtB .46s steps(1) infinite}
+.talking .mt-c{animation:mtC .46s steps(1) infinite}
+.talking .mt-tongue{animation:mtT .46s steps(1) infinite}
+@keyframes mtC{0%{opacity:1}18%{opacity:0}58%{opacity:1}70%{opacity:0}100%{opacity:0}}
+@keyframes mtA{0%{opacity:0}18%{opacity:1}42%{opacity:0}82%{opacity:1}100%{opacity:1}}
+@keyframes mtB{0%{opacity:0}42%{opacity:1}58%{opacity:0}70%{opacity:1}82%{opacity:0}100%{opacity:0}}
+@keyframes mtT{0%,17%{opacity:0}18%{opacity:1}42%{opacity:0}82%{opacity:1}100%{opacity:1}}
+.talking .m-head{animation:mNod .46s ease-in-out infinite}
+@keyframes mNod{0%,100%{transform:translateY(0) rotate(0)}50%{transform:translateY(1px) rotate(0)}}
+@media(prefers-reduced-motion:reduce){.m-fig,.m-wave,.m-tail,.m-tassel,.m-head,.m-ear-l,.m-ear-r,.m-pupils,.m-eyes,.m-spark,.m-shadow,.talking .mt,.talking .mt-tongue,.talking .m-head{animation:none}.talking .m-mouth{opacity:1}.talking .m-mouth-talk{opacity:0}}
 /* klikbare pagina-verwijzing in Vonk's tekst */
 .vonk-link{color:var(--or);font-weight:800;text-decoration:underline;text-underline-offset:2px;cursor:pointer}
 .vonk-link:hover{filter:brightness(.9)}
