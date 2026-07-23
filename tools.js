@@ -300,44 +300,11 @@ function renderStudieplan(){
     herhaal: ['🔄','Herhalen',      'sp-act-herhaal', 'snel',10],
   };
 
-  // Foutenboek-regel: ALTIJD zichtbaar in het studieplan, met eerlijke staat.
-  // due>0 → rood herhaal-actie · open maar niks due → bijgewerkt · leeg → hint.
+  // Foutenboek-regel: ALTIJD zichtbaar (3 eerlijke staten), één bron in foutenboek.js.
   const fbSt=(typeof fbStats==='function')?fbStats():{total:0,open:0,due:0,mastered:0};
   const fbDue=fbSt.due;
   const fbMins=fbDue>0?Math.max(3,Math.round(fbDue*0.7)):0;
-  let fbCardHtml;
-  if(fbDue>0){
-    fbCardHtml=`<div class="sp-task-card sp-task-fb">
-      <div class="sp-task-card-left">
-        <div class="sp-task-card-vak">📕 Foutenboek</div>
-        <div class="sp-task-card-dom">${fbDue} ${fbDue===1?'fout om te herhalen':'fouten om te herhalen'}</div>
-        <div class="sp-task-card-meta">
-          <button class="sp-act-btn sp-act-fb" style="padding:4px 10px;font-size:11px" onclick="fbOefen()">📕 Herhaal nu →</button>
-          <span class="sp-task-card-time">~${fbMins} min</span>
-        </div>
-      </div>
-    </div>`;
-  }else if(fbSt.open>0){
-    fbCardHtml=`<div class="sp-task-card sp-task-fb-ok">
-      <div class="sp-task-card-left">
-        <div class="sp-task-card-vak">📕 Foutenboek <span style="color:#22c55e">✓</span></div>
-        <div class="sp-task-card-dom">Je fouten zijn bijgewerkt${fbSt.mastered?` — ${fbSt.mastered} beheerst`:''}. Geen herhaling nu.</div>
-        <div class="sp-task-card-meta">
-          <button class="sp-act-btn" style="padding:4px 10px;font-size:11px;background:var(--bg2);border:1px solid var(--bo);color:var(--dk)" onclick="openFoutenboek()">Bekijk →</button>
-        </div>
-      </div>
-    </div>`;
-  }else{
-    fbCardHtml=`<div class="sp-task-card sp-task-fb-empty">
-      <div class="sp-task-card-left">
-        <div class="sp-task-card-vak">📕 Foutenboek</div>
-        <div class="sp-task-card-dom">Foute antwoorden verzamelen we hier, zodat je ze later slim kunt herhalen.</div>
-        <div class="sp-task-card-meta">
-          <button class="sp-act-btn" style="padding:4px 10px;font-size:11px;background:var(--bg2);border:1px solid var(--bo);color:var(--dk)" onclick="openFoutenboek()">Openen →</button>
-        </div>
-      </div>
-    </div>`;
-  }
+  const fbCardHtml=(typeof fbStudieplanRowHTML==='function')?fbStudieplanRowHTML():'';
   const fbBadge=fbDue>0?`<span class="sp-vandaag-badge">${fbDue} open</span>`:'';
 
   const upcoming=(typeof getUpcomingExams==='function'?getUpcomingExams():[]).filter(e=>e.vakId);
@@ -594,6 +561,7 @@ function renderStudieplan(){
   masteryHtml+='</div>';
 
   el.innerHTML=vandaagHtml+summaryHtml+calHtml+masteryHtml;
+  try{if(typeof renderFbStudieplanRow==='function')renderFbStudieplanRow();}catch(e){} // top-container legen (regel zit nu in Vandaag)
   localStorage.setItem('slagio_plan_generated','1');
   if(todayAllTasks.length)setTimeout(()=>document.querySelector('.sp-vandaag')?.scrollIntoView({behavior:'smooth',block:'nearest'}),120);
   const btn=document.getElementById('sp-gen-btn');

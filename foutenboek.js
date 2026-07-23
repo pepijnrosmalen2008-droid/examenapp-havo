@@ -42,6 +42,43 @@ function fbStats() {
   }
   return { total, open, due, mastered };
 }
+// ÉÉN bron voor de Foutenboek-regel in het studieplan (3 eerlijke staten).
+function fbStudieplanRowHTML() {
+  const s = fbStats();
+  if (s.due > 0) {
+    const mins = Math.max(3, Math.round(s.due * 0.7));
+    return `<div class="sp-task-card sp-task-fb"><div class="sp-task-card-left">
+      <div class="sp-task-card-vak">📕 Foutenboek</div>
+      <div class="sp-task-card-dom">${s.due} ${s.due === 1 ? 'fout om te herhalen' : 'fouten om te herhalen'}</div>
+      <div class="sp-task-card-meta">
+        <button class="sp-act-btn sp-act-fb" style="padding:4px 10px;font-size:11px" onclick="fbOefen()">📕 Herhaal nu →</button>
+        <span class="sp-task-card-time">~${mins} min</span>
+      </div></div></div>`;
+  }
+  if (s.open > 0) {
+    return `<div class="sp-task-card sp-task-fb-ok"><div class="sp-task-card-left">
+      <div class="sp-task-card-vak">📕 Foutenboek <span style="color:#22c55e">✓</span></div>
+      <div class="sp-task-card-dom">Je fouten zijn bijgewerkt${s.mastered ? ` — ${s.mastered} beheerst` : ''}. Geen herhaling nu.</div>
+      <div class="sp-task-card-meta"><button class="sp-act-btn" style="padding:4px 10px;font-size:11px;background:var(--bg2);border:1px solid var(--bo);color:var(--dk)" onclick="openFoutenboek()">Bekijk →</button></div>
+    </div></div>`;
+  }
+  return `<div class="sp-task-card sp-task-fb-empty"><div class="sp-task-card-left">
+    <div class="sp-task-card-vak">📕 Foutenboek</div>
+    <div class="sp-task-card-dom">Foute antwoorden verzamelen we hier, zodat je ze later slim kunt herhalen.</div>
+    <div class="sp-task-card-meta"><button class="sp-act-btn" style="padding:4px 10px;font-size:11px;background:var(--bg2);border:1px solid var(--bo);color:var(--dk)" onclick="openFoutenboek()">Openen →</button></div>
+  </div></div>`;
+}
+// Vul de altijd-zichtbare container bovenaan het studieplan. Wanneer het plan al
+// is gegenereerd, zit de regel al ín "Vandaag" → hier dan leeg laten (geen dubbel).
+function renderFbStudieplanRow() {
+  const el = document.getElementById('sp-foutenboek-row');
+  if (!el) return;
+  const content = document.getElementById('studieplan-content');
+  if (content && content.children.length) { el.innerHTML = ''; return; }
+  const s = fbStats();
+  const badge = s.due > 0 ? `<span class="sp-vandaag-badge">${s.due} open</span>` : '';
+  el.innerHTML = `<div class="sp-vandaag" style="margin-bottom:16px"><div class="sp-vandaag-header"><div class="sp-vandaag-title">📌 Vandaag</div>${badge}</div>${fbStudieplanRowHTML()}</div>`;
+}
 
 // ─── CAPTURE: aangeroepen vanuit quiz.js na elk MC-antwoord ───
 // ok=false → fout: opslaan/ophogen, box terug naar 0, meteen due.
