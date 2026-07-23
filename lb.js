@@ -744,6 +744,43 @@ function getVakBestPct(vakId){
   });
   return {pct:count>0?totalPct/count:0,hasData:hasAny};
 }
+
+// ═══════ EXAMENCOACH ═══════
+// Eerlijke, transparante indicatie op basis van je oefenscores per domein.
+// cijfer = 1 + 9·(gem. beheersing) — géén N-term, dus bewust aan de voorzichtige kant.
+// risico = zwakste domein · winst = domein dat het dichtst bij beheersing (85%) zit.
+function examCoachData(vakId){
+  const vak=getVK().find(v=>v.id===vakId);
+  if(!vak||!vak.domeinen)return null;
+  const doms=vak.domeinen.map(d=>{const r=getDomeinBestPct(vakId,d.id);return{id:d.id,naam:d.naam,pct:r.pct,hasData:r.hasData};}).filter(d=>d.hasData);
+  if(doms.length<2)return {vak,enough:false,n:doms.length};
+  const avg=doms.reduce((s,d)=>s+d.pct,0)/doms.length;
+  const cijfer=Math.max(1,Math.min(10,1+9*avg));
+  const sorted=[...doms].sort((a,b)=>a.pct-b.pct);
+  const risico=sorted[0].pct<0.85?sorted[0]:null;
+  const winstCand=doms.filter(d=>d.pct>=0.4&&d.pct<0.85&&(!risico||d.id!==risico.id)).sort((a,b)=>b.pct-a.pct);
+  const winst=winstCand[0]||null;
+  return {vak,enough:true,cijfer,avg,risico,winst,n:doms.length};
+}
+function renderExamCoach(vakId){
+  const el=document.getElementById('res-coach'); if(!el)return;
+  const c=vakId?examCoachData(vakId):null;
+  if(!c){el.innerHTML='';return;}
+  if(!c.enough){
+    el.innerHTML=`<div class="res-coach-card"><div class="rc-hd">🎓 Examencoach</div><div class="rc-sub">Oefen nog een paar domeinen van ${c.vak.naam} — dan geef ik je een betrouwbare cijferinschatting (nu ${c.n} met data).</div></div>`;
+    return;
+  }
+  const cij=c.cijfer.toFixed(1).replace('.',',');
+  const cijColor=c.cijfer<5.45?'#ef4444':c.cijfer<7?'#f59e0b':'#22c55e';
+  el.innerHTML=`<div class="res-coach-card">
+    <div class="rc-hd">🎓 Examencoach</div>
+    <div class="rc-grade">Als het CE morgen was, verwacht ik een <b style="color:${cijColor}">${cij}</b> voor ${c.vak.naam}.</div>
+    <div class="rc-sub">Indicatie op basis van je oefenscores (${c.n} domeinen). Geen garantie — richting, geen voorspelling.</div>
+    ${c.risico?`<div class="rc-row"><span class="rc-ic">⚠️</span><div><b>Grootste risico:</b> ${c.risico.naam} (${Math.round(c.risico.pct*100)}%)<button class="rc-btn" onclick="goToDomein('${vakId}','${c.risico.id}','snel')">Oefen →</button></div></div>`:''}
+    ${c.winst?`<div class="rc-row"><span class="rc-ic">📈</span><div><b>Grootste winst:</b> ${c.winst.naam} (${Math.round(c.winst.pct*100)}%) — bijna beheerst<button class="rc-btn" onclick="goToDomein('${vakId}','${c.winst.id}','snel')">Oefen →</button></div></div>`:''}
+    ${!c.risico&&!c.winst?`<div class="rc-row"><span class="rc-ic">✅</span><div>Je staat er sterk voor — alle geoefende domeinen zijn op niveau.</div></div>`:''}
+  </div>`;
+}
 function trapFocus(el,onEscape){
   const sel='button:not([disabled]),a[href],input,select,textarea,[tabindex]:not([tabindex="-1"])';
   const nodes=[...el.querySelectorAll(sel)];

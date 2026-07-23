@@ -1368,6 +1368,13 @@ function toonRes(){
       if(_regPrompt)_regPrompt.style.display='none';
     }
   }catch(e){console.warn('toonRes LB error:',e);}
+  // Examencoach: cijfer-indicatie + risico/winst na de sessie (elk vak met genoeg data)
+  try{
+    if(typeof renderExamCoach==='function'){
+      if(ST.vak&&(ST.mode==='snel'||ST.mode==='oud'))renderExamCoach(ST.vak.id);
+      else{const _rc=document.getElementById('res-coach');if(_rc)_rc.innerHTML='';}
+    }
+  }catch(e){}
   // B2: account prompt bottom sheet (first win, anonymous only)
   try{
     if(!currentUser && ST.mode==='snel' && !ST.isFoutenboek && pct>=0.5 && !localStorage.getItem('slagio_reg_prompted')){
