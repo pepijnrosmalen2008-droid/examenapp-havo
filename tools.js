@@ -300,25 +300,49 @@ function renderStudieplan(){
     herhaal: ['🔄','Herhalen',      'sp-act-herhaal', 'snel',10],
   };
 
-  // Foutenboek-taak: je due fouten uit Sprint 1, als eerste ding van vandaag.
-  const fbDue=(typeof fbDueCount==='function')?fbDueCount():0;
+  // Foutenboek-regel: ALTIJD zichtbaar in het studieplan, met eerlijke staat.
+  // due>0 → rood herhaal-actie · open maar niks due → bijgewerkt · leeg → hint.
+  const fbSt=(typeof fbStats==='function')?fbStats():{total:0,open:0,due:0,mastered:0};
+  const fbDue=fbSt.due;
   const fbMins=fbDue>0?Math.max(3,Math.round(fbDue*0.7)):0;
-  const fbCardHtml=fbDue>0?`<div class="sp-task-card sp-task-fb">
-    <div class="sp-task-card-left">
-      <div class="sp-task-card-vak">📕 Foutenboek</div>
-      <div class="sp-task-card-dom">${fbDue} ${fbDue===1?'fout om te herhalen':'fouten om te herhalen'}</div>
-      <div class="sp-task-card-meta">
-        <button class="sp-act-btn sp-act-fb" style="padding:4px 10px;font-size:11px" onclick="fbOefen()">📕 Herhaal nu →</button>
-        <span class="sp-task-card-time">~${fbMins} min</span>
+  let fbCardHtml;
+  if(fbDue>0){
+    fbCardHtml=`<div class="sp-task-card sp-task-fb">
+      <div class="sp-task-card-left">
+        <div class="sp-task-card-vak">📕 Foutenboek</div>
+        <div class="sp-task-card-dom">${fbDue} ${fbDue===1?'fout om te herhalen':'fouten om te herhalen'}</div>
+        <div class="sp-task-card-meta">
+          <button class="sp-act-btn sp-act-fb" style="padding:4px 10px;font-size:11px" onclick="fbOefen()">📕 Herhaal nu →</button>
+          <span class="sp-task-card-time">~${fbMins} min</span>
+        </div>
       </div>
-    </div>
-  </div>`:'';
+    </div>`;
+  }else if(fbSt.open>0){
+    fbCardHtml=`<div class="sp-task-card sp-task-fb-ok">
+      <div class="sp-task-card-left">
+        <div class="sp-task-card-vak">📕 Foutenboek <span style="color:#22c55e">✓</span></div>
+        <div class="sp-task-card-dom">Je fouten zijn bijgewerkt${fbSt.mastered?` — ${fbSt.mastered} beheerst`:''}. Geen herhaling nu.</div>
+        <div class="sp-task-card-meta">
+          <button class="sp-act-btn" style="padding:4px 10px;font-size:11px;background:var(--bg2);border:1px solid var(--bo);color:var(--dk)" onclick="openFoutenboek()">Bekijk →</button>
+        </div>
+      </div>
+    </div>`;
+  }else{
+    fbCardHtml=`<div class="sp-task-card sp-task-fb-empty">
+      <div class="sp-task-card-left">
+        <div class="sp-task-card-vak">📕 Foutenboek</div>
+        <div class="sp-task-card-dom">Foute antwoorden verzamelen we hier, zodat je ze later slim kunt herhalen.</div>
+        <div class="sp-task-card-meta">
+          <button class="sp-act-btn" style="padding:4px 10px;font-size:11px;background:var(--bg2);border:1px solid var(--bo);color:var(--dk)" onclick="openFoutenboek()">Openen →</button>
+        </div>
+      </div>
+    </div>`;
+  }
+  const fbBadge=fbDue>0?`<span class="sp-vandaag-badge">${fbDue} open</span>`:'';
 
   const upcoming=(typeof getUpcomingExams==='function'?getUpcomingExams():[]).filter(e=>e.vakId);
   if(!upcoming.length){
-    el.innerHTML=fbCardHtml
-      ?`<div class="sp-vandaag"><div class="sp-vandaag-header"><div class="sp-vandaag-title">📌 Vandaag</div><span class="sp-vandaag-badge">1 open</span></div>${fbCardHtml}</div><div class="sp-empty" style="margin-top:14px">Geen aankomende examens.<br>Kies je vakken in het rooster, of vink je herkansing aan.</div>`
-      :'<div class="sp-empty">Geen aankomende examens.<br>Kies je vakken in het rooster, of vink je herkansing aan.</div>';
+    el.innerHTML=`<div class="sp-vandaag"><div class="sp-vandaag-header"><div class="sp-vandaag-title">📌 Vandaag</div>${fbBadge}</div>${fbCardHtml}</div><div class="sp-empty" style="margin-top:14px">Geen aankomende examens.<br>Kies je vakken in het rooster, of vink je herkansing aan.</div>`;
     return;
   }
 
@@ -466,18 +490,15 @@ function renderStudieplan(){
       </div>
       ${fbCardHtml}${cards}
     </div>`;
-  } else if(fbCardHtml){
+  } else {
+    // Geen plan-taken vandaag: toon de Foutenboek-regel + (bij een vrije dag) een notitie.
+    const vrijNote=allPlanTasks.length>0?`<div style="font-size:13px;color:var(--mu);text-align:center;padding:6px 0 2px">🌴 Verder een vrije dag - goed verdiend!</div>`:'';
     vandaagHtml=`<div class="sp-vandaag">
       <div class="sp-vandaag-header">
         <div class="sp-vandaag-title">📌 Vandaag</div>
-        <span class="sp-vandaag-badge">1 open</span>
+        ${fbBadge}
       </div>
-      ${fbCardHtml}
-    </div>`;
-  } else if(allPlanTasks.length>0){
-    vandaagHtml=`<div class="sp-vandaag" style="text-align:center;padding:18px 16px">
-      <div class="sp-vandaag-title" style="margin-bottom:6px">📌 Vandaag</div>
-      <div style="font-size:13px;color:var(--mu)">🌴 Vrije dag - goed verdiend!</div>
+      ${fbCardHtml}${vrijNote}
     </div>`;
   }
 

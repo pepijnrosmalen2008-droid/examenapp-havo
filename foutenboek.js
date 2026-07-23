@@ -31,6 +31,17 @@ function fbDueCount() {
   for (const k in d) { const e = d[k]; if (!e.mastered && (e.due || 0) <= now) n++; }
   return n;
 }
+// Samenvatting voor bv. het studieplan: { total, open, due, mastered }.
+function fbStats() {
+  const d = _fbLoad(); const now = Date.now();
+  let total = 0, open = 0, due = 0, mastered = 0;
+  for (const k in d) {
+    const e = d[k]; total++;
+    if (e.mastered) mastered++;
+    else { open++; if ((e.due || 0) <= now) due++; }
+  }
+  return { total, open, due, mastered };
+}
 
 // ─── CAPTURE: aangeroepen vanuit quiz.js na elk MC-antwoord ───
 // ok=false → fout: opslaan/ophogen, box terug naar 0, meteen due.
