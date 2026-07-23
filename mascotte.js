@@ -63,6 +63,56 @@ function mascotSVG(mood, size) {
   </svg>`;
 }
 
+// ─── Vonk die van de zijkant binnenglijdt, iets zegt, en weer wegduikt ───
+// Geen vaste widget: hij komt op, praat, en verdwijnt. vonkSay(msg, opts).
+// opts: {mood, side:'left'|'right', size, duration(ms, 0=blijft), once:'sleutel'
+//        (max 1× ooit tonen), action:{label, onclick}}.
+var _vonkTimer = null;
+function vonkSay(msg, opts) {
+  opts = opts || {};
+  if (opts.once) { const k = 'slagio_vonk_' + opts.once; try { if (localStorage.getItem(k)) return; localStorage.setItem(k, '1'); } catch (e) {} }
+  let stage = document.getElementById('vonk-stage');
+  if (!stage) { stage = document.createElement('div'); stage.id = 'vonk-stage'; document.body.appendChild(stage); }
+  const side = opts.side || 'left';
+  const mood = opts.mood || 'blij';
+  const size = opts.size || 92;
+  const act = opts.action ? `<button class="vonk-act">${opts.action.label}</button>` : '';
+  stage.className = 'vonk-stage vonk-' + side;
+  stage.setAttribute('role', 'status'); stage.setAttribute('aria-live', 'polite');
+  stage.innerHTML = `<div class="vonk-peek">
+    <div class="vonk-fig">${mascotSVG(mood, size)}</div>
+    <div class="vonk-say">
+      <button class="vonk-x" aria-label="Sluiten">✕</button>
+      <div class="vonk-say-name">${MASCOT_NAME}</div>
+      <div class="vonk-say-msg">${msg}</div>
+      ${act}
+    </div>
+  </div>`;
+  const close = () => { clearTimeout(_vonkTimer); stage.classList.remove('vonk-in'); setTimeout(() => { if (stage && !stage.classList.contains('vonk-in')) stage.innerHTML = ''; }, 480); };
+  stage._close = close;
+  const xb = stage.querySelector('.vonk-x'); if (xb) xb.onclick = close;
+  const ab = stage.querySelector('.vonk-act');
+  if (ab && opts.action) ab.onclick = () => { try { if (typeof opts.action.onclick === 'function') opts.action.onclick(); else if (typeof opts.action.onclick === 'string') (new Function(opts.action.onclick))(); } catch (e) {} close(); };
+  requestAnimationFrame(() => requestAnimationFrame(() => stage.classList.add('vonk-in')));
+  const dur = (opts.duration != null) ? opts.duration : Math.min(11000, 3600 + msg.replace(/<[^>]+>/g, '').length * 55);
+  clearTimeout(_vonkTimer);
+  if (dur > 0) _vonkTimer = setTimeout(close, dur);
+}
+function vonkHide() { const s = document.getElementById('vonk-stage'); if (s && s._close) s._close(); }
+
+// Centrale uitleg-teksten: Vonk legt features uit, elk max 1× (once-sleutel).
+function vonkOnboard(where) {
+  const T = {
+    home:       { once: 'welkom',     mood: 'blij',    msg: `Hoi, ik ben <b>Vonk</b>, je studiemaatje! Kies een vak en start een quiz — daarna vertel ik je precies hoe je ervoor staat. 👋` },
+    foutenboek: { once: 'foutenboek', mood: 'kijk',    msg: `Elke fout die je maakt bewaar ik hier. Ik plan wanneer je ze het beste opnieuw oefent, zodat de stof blijft hangen. 📕` },
+    studieplan: { once: 'studieplan', mood: 'goed',    msg: `Dit is jouw plan tot het examen. Ik zet elke dag klaar wát je oefent — begin met de rode dingen. 📅` },
+    quiz:       { once: 'quiztip',    mood: 'knipoog', msg: `Tip: hoe sneller je goed antwoordt, hoe meer punten. Maar onthoud: goed gaat vóór snel. 😉` },
+    coach:      { once: 'coachtip',   mood: 'trots',   msg: `Na elke quiz spring ik hier tevoorschijn met je verwachte cijfer en waar de meeste winst zit. Tot zo! ✨` },
+  };
+  const t = T[where]; if (!t) return;
+  vonkSay(t.msg, { mood: t.mood, once: t.once });
+}
+
 // Vonk + spraakbubbel als herbruikbaar blok. opts: {name, size, dark, actionsHTML, fineHTML}
 function mascotBubble(msg, mood, opts) {
   opts = opts || {};

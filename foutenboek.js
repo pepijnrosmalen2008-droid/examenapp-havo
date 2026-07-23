@@ -339,4 +339,8 @@ function fbUpdateBadge() {
     else b.style.display = 'none';
   });
 }
-function openFoutenboek() { show('sc-foutenboek'); renderFoutenboek(); try { trackEvent('foutenboek_open', {}); } catch (e) {} }
+function openFoutenboek() {
+  show('sc-foutenboek'); renderFoutenboek();
+  try { trackEvent('foutenboek_open', {}); } catch (e) {}
+  try { setTimeout(() => { if (typeof vonkOnboard === 'function') vonkOnboard('foutenboek'); }, 750); } catch (e) {}
+}
