@@ -762,36 +762,6 @@ function examCoachData(vakId){
   const winst=winstCand[0]||null;
   return {vak,enough:true,cijfer,avg,risico,winst,n:doms.length};
 }
-// SVG-mascotte "Sam" — jouw examencoach. Stemming stuurt ogen/mond/accent.
-function _coachMascotSVG(mood){
-  const M={
-    trots:{mouth:'M38 64 Q50 78 62 64',accent:'#22c55e',brow:'M34 40 Q39 36 44 39 M56 39 Q61 36 66 40',spark:true},
-    goed: {mouth:'M39 64 Q50 73 61 64',accent:'var(--or)',brow:'',spark:false},
-    laag: {mouth:'M40 68 Q50 62 60 68',accent:'#f59e0b',brow:'M34 41 Q39 39 44 41 M56 41 Q61 39 66 41',spark:false},
-    kijk: {mouth:'M44 66 Q50 70 56 66',accent:'#6366f1',brow:'',spark:false},
-  };
-  const s=M[mood]||M.goed;
-  return `<svg class="coach-svg" viewBox="0 0 100 100" aria-hidden="true">
-    <ellipse class="coach-shadow" cx="50" cy="92" rx="24" ry="5"/>
-    <g class="coach-body">
-      <!-- baret -->
-      <g class="coach-cap"><path d="M50 8 L74 18 L50 28 L26 18 Z" fill="#2b2f45"/><path d="M40 24 v8 q10 6 20 0 v-8" fill="#232739"/><circle cx="74" cy="18" r="2.4" fill="#facc15"/><path d="M74 18 v10" stroke="#facc15" stroke-width="1.6"/></g>
-      <!-- lijf -->
-      <rect x="20" y="30" width="60" height="56" rx="27" fill="url(#coachG)"/>
-      <ellipse cx="31" cy="60" rx="6" ry="7" fill="#fff" opacity=".16"/>
-      <!-- ogen -->
-      <g class="coach-eyes"><circle cx="39" cy="52" r="8.5" fill="#fff"/><circle cx="61" cy="52" r="8.5" fill="#fff"/><circle class="coach-pupil" cx="39" cy="53" r="4" fill="#22263a"/><circle class="coach-pupil" cx="61" cy="53" r="4" fill="#22263a"/><circle cx="40.6" cy="51.4" r="1.3" fill="#fff"/><circle cx="62.6" cy="51.4" r="1.3" fill="#fff"/></g>
-      ${s.brow?`<g stroke="#22263a" stroke-width="2.2" stroke-linecap="round" fill="none">${s.brow}</g>`:''}
-      <!-- blos + mond -->
-      <circle cx="30" cy="63" r="4" fill="#ff8fa3" opacity=".5"/><circle cx="70" cy="63" r="4" fill="#ff8fa3" opacity=".5"/>
-      <path d="${s.mouth}" stroke="#22263a" stroke-width="3" stroke-linecap="round" fill="none"/>
-      <!-- zwaaiarm -->
-      <g class="coach-wave"><rect x="74" y="52" width="9" height="20" rx="4.5" fill="url(#coachG)"/><circle cx="84" cy="50" r="6" fill="url(#coachG)"/></g>
-      ${s.spark?'<g class="coach-spark" fill="#facc15"><path d="M84 20 l1.6 4 4 1.6 -4 1.6 -1.6 4 -1.6 -4 -4 -1.6 4 -1.6 z"/><circle cx="18" cy="34" r="2"/></g>':''}
-    </g>
-    <defs><linearGradient id="coachG" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ff8a3d"/><stop offset="1" stop-color="#e8620d"/></linearGradient></defs>
-  </svg>`;
-}
 function renderExamCoach(vakId){
   const el=document.getElementById('res-coach'); if(!el)return;
   const c=vakId?examCoachData(vakId):null;
@@ -811,11 +781,13 @@ function renderExamCoach(vakId){
     if(c.winst)rows+=`<button class="coach-chip coach-chip-win" onclick="goToDomein('${vakId}','${c.winst.id}','snel')">📈 Winst: ${c.winst.naam} · ${Math.round(c.winst.pct*100)}% <span class="coach-chip-go">oefen →</span></button>`;
     if(!c.risico&&!c.winst)msg+=` Alles wat je oefende staat op niveau. 💪`;
   }
-  el.innerHTML=`<div class="coach-pop coach-mood-${mood}">
+  const naam=(typeof MASCOT_NAME!=='undefined'?MASCOT_NAME:'Vonk')+' · je examencoach';
+  const svg=(typeof mascotSVG==='function')?mascotSVG(mood,84):'';
+  el.innerHTML=`<div class="coach-pop coach-dark coach-mood-${mood}">
     <button class="coach-x" onclick="this.closest('.coach-pop').classList.add('coach-hide')" aria-label="Sluiten">✕</button>
-    <div class="coach-avatar">${_coachMascotSVG(mood)}</div>
+    <div class="coach-avatar">${svg}</div>
     <div class="coach-bubble">
-      <div class="coach-name">Sam · je examencoach</div>
+      <div class="coach-name">${naam}</div>
       <div class="coach-msg">${msg}</div>
       ${rows?`<div class="coach-chips">${rows}</div>`:''}
       ${c.enough?`<div class="coach-fine">Indicatie op je oefenscores (${c.n} domeinen) — richting, geen garantie.</div>`:''}

@@ -204,7 +204,7 @@ function _renderFoutenboekInner(wrap, stats) {
 
   if (!all.length) {
     wrap.innerHTML = `<div class="fb-empty">
-      <div class="fb-empty-ic">📕</div>
+      <div class="fb-empty-ic">${typeof mascotSVG === 'function' ? mascotSVG('blij', 92) : '📕'}</div>
       <h3>Nog geen fouten</h3>
       <p>Zodra je een quizvraag fout hebt, bewaren we die hier — mét waarom het fout ging en wanneer je hem het beste opnieuw kunt oefenen.</p>
       <button class="fb-oefen-btn" onclick="quickOefen()">Start een quiz →</button>
