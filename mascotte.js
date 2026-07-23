@@ -88,7 +88,7 @@ function vonkSay(msg, opts) {
       ${act}
     </div>
   </div>`;
-  const close = () => { clearTimeout(_vonkTimer); stage.classList.remove('vonk-in'); setTimeout(() => { if (stage && !stage.classList.contains('vonk-in')) stage.innerHTML = ''; }, 480); };
+  const close = () => { clearTimeout(_vonkTimer); stage.classList.remove('vonk-in'); if (opts.onClose) { try { opts.onClose(); } catch (e) {} } setTimeout(() => { if (stage && !stage.classList.contains('vonk-in')) stage.innerHTML = ''; }, 480); };
   stage._close = close;
   const xb = stage.querySelector('.vonk-x'); if (xb) xb.onclick = close;
   const ab = stage.querySelector('.vonk-act');
@@ -111,6 +111,47 @@ function vonkOnboard(where) {
   };
   const t = T[where]; if (!t) return;
   vonkSay(t.msg, { mood: t.mood, once: t.once });
+}
+
+// ─── Hoek-Vonk: altijd klein aanwezig; tik → uitleg over dít scherm ───
+var VONK_EXPLAIN = {
+  'sc-home':       { mood: 'blij', msg: `Dit is je startpunt. Kies onderaan een vak om te oefenen, tik op <b>Foutenboek</b> om fouten te herhalen, of open je <b>Studieplan</b>. Na elke quiz vertel ik hoe je ervoor staat!` },
+  'sc-detail':     { mood: 'goed', msg: `Alle domeinen van dit vak. <b>Groen</b> = onder de knie, <b>rood</b> = daar liggen punten. Tik een domein en kies een quiz.` },
+  'sc-qmode':      { mood: 'goed', msg: `Kies hóé je oefent: <b>Snelle quiz</b> (tegen de klok, telt voor het leaderboard) of <b>Oud-examen</b>. Begin gerust met de snelle quiz.` },
+  'sc-studieplan': { mood: 'goed', msg: `Je persoonlijke plan tot het examen. Ik zet per dag klaar wát je oefent — begin met de rode dingen en vink af wat je deed.` },
+  'sc-foutenboek': { mood: 'kijk', msg: `Al je foute antwoorden verzamel ik hier, mét waaróm het fout ging. Ik plan wanneer je ze het best herhaalt — tik <b>Herhaal nu</b>.` },
+  'sc-leaderboard':{ mood: 'trots',msg: `Hier zie je hoe je scoort tegen andere leerlingen. Sneller én accurater = hogere score. Met een account kom je op de lijst.` },
+  'sc-calc':       { mood: 'goed', msg: `Reken uit welk cijfer je nog nodig hebt of wat je gemiddelde wordt. Vul je cijfers in en ik reken mee.` },
+  'sc-profiel':    { mood: 'blij', msg: `Je profiel: je dier-avatar groeit mee met je XP. Hier staan je badges, je streak en je voortgang.` },
+  'sc-schedule':   { mood: 'goed', msg: `Je examenrooster. Vink je vakken (en eventueel herkansingen) aan — daar bouw ik je studieplan op.` },
+  'sc-simtoets':   { mood: 'kijk', msg: `Een volledige oefentoets onder examen-omstandigheden. Ideaal als een examen dichtbij is.` },
+  'sc-groep':      { mood: 'blij', msg: `Je klas of groep: samen oefenen en elkaars voortgang zien.` },
+  'sc-res':        { mood: 'trots',msg: `Je resultaat! Ik laat je verwachte examencijfer zien en waar de meeste winst zit.` },
+};
+function vonkExplain() {
+  const cur = document.querySelector('.sc.on');
+  const id = cur ? cur.id : 'sc-home';
+  const e = VONK_EXPLAIN[id] || { mood: 'kijk', msg: `Ik help je graag! Kijk hier rond en tik ergens — heb je een vraag, dan duik ik op waar ik kan. 😊` };
+  const corner = document.getElementById('vonk-corner');
+  if (corner) corner.style.visibility = 'hidden';
+  vonkSay(e.msg, { mood: e.mood, side: 'right', duration: 0, onClose: () => { if (corner) corner.style.visibility = ''; } });
+}
+// Toont/verbergt de hoek-Vonk per scherm; wordt vanuit show() aangeroepen.
+function updateVonkCorner(id) {
+  id = id || ((document.querySelector('.sc.on') || {}).id);
+  vonkHide(); // sluit een eventuele openstaande bubbel bij schermwissel
+  const HIDE = ['sc-quiz', 'sc-flash', 'sc-qmode', 'sc-welcome', 'sc-race', 'sc-intro', 'sc-auth'];
+  let el = document.getElementById('vonk-corner');
+  if (HIDE.indexOf(id) !== -1) { if (el) el.style.display = 'none'; return; }
+  if (!el) {
+    el = document.createElement('button');
+    el.id = 'vonk-corner'; el.className = 'vonk-corner';
+    el.setAttribute('aria-label', MASCOT_NAME + ' — uitleg over dit scherm');
+    el.innerHTML = `<span class="vonk-corner-fig">${mascotSVG('blij', 58)}</span><span class="vonk-corner-q">?</span>`;
+    el.onclick = vonkExplain;
+    document.body.appendChild(el);
+  }
+  el.style.display = ''; el.style.visibility = '';
 }
 
 // Vonk + spraakbubbel als herbruikbaar blok. opts: {name, size, dark, actionsHTML, fineHTML}

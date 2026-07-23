@@ -112,6 +112,7 @@ function show(id,_noHash){
   // Focus eerste heading voor screenreaders
   try{const _h=_sc.querySelector('h1,h2,h3,[role="heading"]');if(_h){_h.setAttribute('tabindex','-1');_h.focus({preventScroll:true});}}catch(e){}
   updateBottomNav(id);
+  try{if(typeof updateVonkCorner==='function')updateVonkCorner(id);}catch(e){}
   // URL bijwerken
   if(!_noHash){
     if(id==='sc-home'){
