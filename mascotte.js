@@ -21,10 +21,13 @@ function mascotSVG(mood, size) {
   };
   const s = M[mood] || M.blij;
   const pdy = (s.eyeUp ? -2.5 : 0.5);
-  // rechteroog knipoogt (boogje) bij 'knipoog'
-  const rightEye = s.wink
-    ? `<path d="M64 58 Q73 52 82 58" stroke="#232741" stroke-width="3" stroke-linecap="round" fill="none"/>`
-    : `<ellipse cx="73" cy="58" rx="10" ry="11" fill="#fff"/><circle cx="73" cy="${58 + pdy}" r="4.6" fill="#232741"/><circle cx="74.8" cy="${56.2 + pdy}" r="1.7" fill="#fff"/>`;
+  // pupillen in .m-pupils (rondkijken); rechteroog knipoogt bij 'knipoog'
+  const eyesInner = s.wink
+    ? `<ellipse cx="47" cy="58" rx="10" ry="11" fill="#fff"/>
+       <g class="m-pupils"><circle cx="47" cy="${58 + pdy}" r="4.6" fill="#232741"/><circle cx="48.8" cy="${56.2 + pdy}" r="1.7" fill="#fff"/></g>
+       <path d="M64 58 Q73 52 82 58" stroke="#232741" stroke-width="3" stroke-linecap="round" fill="none"/>`
+    : `<ellipse cx="47" cy="58" rx="10" ry="11" fill="#fff"/><ellipse cx="73" cy="58" rx="10" ry="11" fill="#fff"/>
+       <g class="m-pupils"><circle cx="47" cy="${58 + pdy}" r="4.6" fill="#232741"/><circle cx="48.8" cy="${56.2 + pdy}" r="1.7" fill="#fff"/><circle cx="73" cy="${58 + pdy}" r="4.6" fill="#232741"/><circle cx="74.8" cy="${56.2 + pdy}" r="1.7" fill="#fff"/></g>`;
   return `<svg class="m-svg" viewBox="0 0 120 120" width="${size}" height="${size}" role="img" aria-label="${MASCOT_NAME}, de studiemaatje-mascotte">
     <defs>
       <linearGradient id="mBody" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffa860"/><stop offset=".55" stop-color="#f5731a"/><stop offset="1" stop-color="#df560a"/></linearGradient>
@@ -47,13 +50,11 @@ function mascotSVG(mood, size) {
         <path class="m-tassel" d="M60 16 q17 2 16 13" stroke="#facc15" stroke-width="2" fill="none"/>
         <circle class="m-tassel" cx="76" cy="31" r="3.4" fill="#f59e0b"/>
       </g>
-      <g class="m-eyes">
-        <ellipse cx="47" cy="58" rx="10" ry="11" fill="#fff"/><circle cx="47" cy="${58 + pdy}" r="4.6" fill="#232741"/><circle cx="48.8" cy="${56.2 + pdy}" r="1.7" fill="#fff"/>
-        ${rightEye}
-      </g>
+      <g class="m-eyes">${eyesInner}</g>
       ${s.brow ? `<g stroke="#232741" stroke-width="2.4" stroke-linecap="round" fill="none">${s.brow}</g>` : ''}
       <circle cx="34" cy="73" r="7.5" fill="url(#mCheek)"/><circle cx="86" cy="73" r="7.5" fill="url(#mCheek)"/>
-      <path d="${s.mouth}" stroke="#232741" stroke-width="3.4" stroke-linecap="round" fill="none"/>
+      <path class="m-mouth" d="${s.mouth}" stroke="#232741" stroke-width="3.4" stroke-linecap="round" fill="none"/>
+      <g class="m-mouth-talk"><ellipse cx="60" cy="80" rx="7.5" ry="5.6" fill="#3a1f16"/><ellipse cx="60" cy="82.4" rx="3.6" ry="2.4" fill="#ff7a8a"/></g>
       <g class="m-wave">
         <path d="M90 63 q13 -3 17 -17" stroke="url(#mBody)" stroke-width="10" stroke-linecap="round" fill="none"/>
         <circle cx="108" cy="45" r="6.5" fill="url(#mBody)" stroke="#c34d07" stroke-width="1.2"/>
@@ -67,10 +68,34 @@ function mascotSVG(mood, size) {
 // Geen vaste widget: hij komt op, praat, en verdwijnt. vonkSay(msg, opts).
 // opts: {mood, side:'left'|'right', size, duration(ms, 0=blijft), once:'sleutel'
 //        (max 1× ooit tonen), action:{label, onclick}}.
+// Klikbare pagina-verwijzingen in Vonk's tekst. Schrijf {{Label|sleutel}} en
+// het wordt een link die naar dat scherm navigeert.
+var VONK_NAV = {
+  home:        function () { show('sc-home'); },
+  vakken:      function () { show('sc-home'); const g = document.getElementById('vakgrid'); if (g) g.scrollIntoView({ behavior: 'smooth' }); },
+  foutenboek:  function () { if (typeof openFoutenboek === 'function') openFoutenboek(); else show('sc-foutenboek'); },
+  studieplan:  function () { show('sc-studieplan'); if (typeof renderStudieplan === 'function' && localStorage.getItem('slagio_plan_generated')) try { renderStudieplan(); } catch (e) {} },
+  leaderboard: function () { show('sc-leaderboard'); if (typeof renderLeaderboard === 'function') try { renderLeaderboard(); } catch (e) {} },
+  rooster:     function () { show('sc-schedule'); if (typeof renderSchedule === 'function') try { renderSchedule(); } catch (e) {} },
+  cijfers:     function () { show('sc-calc'); if (typeof prefillCalcFromSaved === 'function') setTimeout(prefillCalcFromSaved, 50); },
+  profiel:     function () { if (typeof openProfiel === 'function') openProfiel(); else show('sc-profiel'); },
+  simulatie:   function () { show('sc-simtoets'); },
+  groep:       function () { show('sc-groep'); if (typeof renderGroepScreen === 'function') try { renderGroepScreen(); } catch (e) {} },
+};
+function vonkNav(key) { vonkHide(); const f = VONK_NAV[key]; if (f) try { f(); } catch (e) {} }
+function vonkRenderMsg(msg) {
+  return String(msg).replace(/\{\{([^|}]+)\|([^}]+)\}\}/g, function (_, label, key) {
+    return `<a class="vonk-link" role="button" tabindex="0" onclick="vonkNav('${key.trim()}')">${label}</a>`;
+  });
+}
+function _vonkPlain(msg) { return String(msg).replace(/\{\{([^|}]+)\|[^}]+\}\}/g, '$1').replace(/<[^>]+>/g, ''); }
+
 var _vonkTimer = null;
 function vonkSay(msg, opts) {
   opts = opts || {};
   if (opts.once) { const k = 'slagio_vonk_' + opts.once; try { if (localStorage.getItem(k)) return; localStorage.setItem(k, '1'); } catch (e) {} }
+  const rendered = vonkRenderMsg(msg);
+  const plainLen = _vonkPlain(msg).length;
   let stage = document.getElementById('vonk-stage');
   if (!stage) { stage = document.createElement('div'); stage.id = 'vonk-stage'; document.body.appendChild(stage); }
   const side = opts.side || 'left';
@@ -84,17 +109,20 @@ function vonkSay(msg, opts) {
     <div class="vonk-say">
       <button class="vonk-x" aria-label="Sluiten">✕</button>
       <div class="vonk-say-name">${MASCOT_NAME}</div>
-      <div class="vonk-say-msg">${msg}</div>
+      <div class="vonk-say-msg">${rendered}</div>
       ${act}
     </div>
   </div>`;
-  const close = () => { clearTimeout(_vonkTimer); stage.classList.remove('vonk-in'); if (opts.onClose) { try { opts.onClose(); } catch (e) {} } setTimeout(() => { if (stage && !stage.classList.contains('vonk-in')) stage.innerHTML = ''; }, 480); };
+  const fig = stage.querySelector('.vonk-fig');
+  const close = () => { clearTimeout(_vonkTimer); clearTimeout(stage._talkT); stage.classList.remove('vonk-in'); if (opts.onClose) { try { opts.onClose(); } catch (e) {} } setTimeout(() => { if (stage && !stage.classList.contains('vonk-in')) stage.innerHTML = ''; }, 480); };
   stage._close = close;
   const xb = stage.querySelector('.vonk-x'); if (xb) xb.onclick = close;
   const ab = stage.querySelector('.vonk-act');
   if (ab && opts.action) ab.onclick = () => { try { if (typeof opts.action.onclick === 'function') opts.action.onclick(); else if (typeof opts.action.onclick === 'string') (new Function(opts.action.onclick))(); } catch (e) {} close(); };
   requestAnimationFrame(() => requestAnimationFrame(() => stage.classList.add('vonk-in')));
-  const dur = (opts.duration != null) ? opts.duration : Math.min(11000, 3600 + msg.replace(/<[^>]+>/g, '').length * 55);
+  // Vonk "praat" terwijl de bubbel binnenkomt, en zakt daarna terug in een glimlach.
+  if (fig) { setTimeout(() => fig.classList.add('talking'), 260); stage._talkT = setTimeout(() => fig.classList.remove('talking'), Math.min(5200, 1400 + plainLen * 48)); }
+  const dur = (opts.duration != null) ? opts.duration : Math.min(12000, 4000 + plainLen * 55);
   clearTimeout(_vonkTimer);
   if (dur > 0) _vonkTimer = setTimeout(close, dur);
 }
@@ -103,7 +131,7 @@ function vonkHide() { const s = document.getElementById('vonk-stage'); if (s && 
 // Centrale uitleg-teksten: Vonk legt features uit, elk max 1× (once-sleutel).
 function vonkOnboard(where) {
   const T = {
-    home:       { once: 'welkom',     mood: 'blij',    msg: `Hoi, ik ben <b>Vonk</b>, je studiemaatje! Kies een vak en start een quiz — daarna vertel ik je precies hoe je ervoor staat. 👋` },
+    home:       { once: 'welkom',     mood: 'blij',    msg: `Hoi, ik ben <b>Vonk</b>, je studiemaatje! Kies een {{vak|vakken}} en start een quiz — daarna vertel ik je precies hoe je ervoor staat. 👋` },
     foutenboek: { once: 'foutenboek', mood: 'kijk',    msg: `Elke fout die je maakt bewaar ik hier. Ik plan wanneer je ze het beste opnieuw oefent, zodat de stof blijft hangen. 📕` },
     studieplan: { once: 'studieplan', mood: 'goed',    msg: `Dit is jouw plan tot het examen. Ik zet elke dag klaar wát je oefent — begin met de rode dingen. 📅` },
     quiz:       { once: 'quiztip',    mood: 'knipoog', msg: `Tip: hoe sneller je goed antwoordt, hoe meer punten. Maar onthoud: goed gaat vóór snel. 😉` },
@@ -115,18 +143,18 @@ function vonkOnboard(where) {
 
 // ─── Hoek-Vonk: altijd klein aanwezig; tik → uitleg over dít scherm ───
 var VONK_EXPLAIN = {
-  'sc-home':       { mood: 'blij', msg: `Dit is je startpunt. Kies onderaan een vak om te oefenen, tik op <b>Foutenboek</b> om fouten te herhalen, of open je <b>Studieplan</b>. Na elke quiz vertel ik hoe je ervoor staat!` },
+  'sc-home':       { mood: 'blij', msg: `Dit is je startpunt. Kies onderaan een {{vak|vakken}} om te oefenen, tik op {{Foutenboek|foutenboek}} om fouten te herhalen, of open je {{Studieplan|studieplan}}. Na elke quiz vertel ik hoe je ervoor staat!` },
   'sc-detail':     { mood: 'goed', msg: `Alle domeinen van dit vak. <b>Groen</b> = onder de knie, <b>rood</b> = daar liggen punten. Tik een domein en kies een quiz.` },
-  'sc-qmode':      { mood: 'goed', msg: `Kies hóé je oefent: <b>Snelle quiz</b> (tegen de klok, telt voor het leaderboard) of <b>Oud-examen</b>. Begin gerust met de snelle quiz.` },
-  'sc-studieplan': { mood: 'goed', msg: `Je persoonlijke plan tot het examen. Ik zet per dag klaar wát je oefent — begin met de rode dingen en vink af wat je deed.` },
-  'sc-foutenboek': { mood: 'kijk', msg: `Al je foute antwoorden verzamel ik hier, mét waaróm het fout ging. Ik plan wanneer je ze het best herhaalt — tik <b>Herhaal nu</b>.` },
-  'sc-leaderboard':{ mood: 'trots',msg: `Hier zie je hoe je scoort tegen andere leerlingen. Sneller én accurater = hogere score. Met een account kom je op de lijst.` },
-  'sc-calc':       { mood: 'goed', msg: `Reken uit welk cijfer je nog nodig hebt of wat je gemiddelde wordt. Vul je cijfers in en ik reken mee.` },
+  'sc-qmode':      { mood: 'goed', msg: `Kies hóé je oefent: <b>Snelle quiz</b> (tegen de klok, telt voor het {{leaderboard|leaderboard}}) of <b>Oud-examen</b>. Begin gerust met de snelle quiz.` },
+  'sc-studieplan': { mood: 'goed', msg: `Je persoonlijke plan tot het examen. Ik zet per dag klaar wát je oefent — begin met de rode dingen. Je {{Foutenboek|foutenboek}}-fouten staan er ook bij.` },
+  'sc-foutenboek': { mood: 'kijk', msg: `Al je foute antwoorden verzamel ik hier, mét waaróm het fout ging. Ik plan wanneer je ze het best herhaalt — en zet ze ook in je {{Studieplan|studieplan}}.` },
+  'sc-leaderboard':{ mood: 'trots',msg: `Hier zie je hoe je scoort tegen andere leerlingen. Sneller én accurater = hogere score. Zin om te {{oefenen|vakken}}?` },
+  'sc-calc':       { mood: 'goed', msg: `Reken uit welk cijfer je nog nodig hebt of wat je gemiddelde wordt. Bekijk ook je {{examenrooster|rooster}}.` },
   'sc-profiel':    { mood: 'blij', msg: `Je profiel: je dier-avatar groeit mee met je XP. Hier staan je badges, je streak en je voortgang.` },
-  'sc-schedule':   { mood: 'goed', msg: `Je examenrooster. Vink je vakken (en eventueel herkansingen) aan — daar bouw ik je studieplan op.` },
+  'sc-schedule':   { mood: 'goed', msg: `Je examenrooster. Vink je vakken (en eventueel herkansingen) aan — daar bouw ik je {{Studieplan|studieplan}} op.` },
   'sc-simtoets':   { mood: 'kijk', msg: `Een volledige oefentoets onder examen-omstandigheden. Ideaal als een examen dichtbij is.` },
-  'sc-groep':      { mood: 'blij', msg: `Je klas of groep: samen oefenen en elkaars voortgang zien.` },
-  'sc-res':        { mood: 'trots',msg: `Je resultaat! Ik laat je verwachte examencijfer zien en waar de meeste winst zit.` },
+  'sc-groep':      { mood: 'blij', msg: `Je klas of groep: samen oefenen en elkaars voortgang zien. Vergelijk op het {{leaderboard|leaderboard}}.` },
+  'sc-res':        { mood: 'trots',msg: `Je resultaat! Ik laat je verwachte examencijfer zien en waar de meeste winst zit. Je fouten staan in je {{Foutenboek|foutenboek}}.` },
 };
 function vonkExplain() {
   const cur = document.querySelector('.sc.on');

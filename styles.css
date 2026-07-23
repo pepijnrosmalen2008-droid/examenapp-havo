@@ -3840,21 +3840,43 @@ html.dark .hsd-pill{background:var(--bg2);border-color:var(--bo2)}
 .sp-act-fb{background:linear-gradient(135deg,#ef4444,#f97316);color:#fff;border:none;border-radius:8px;font-weight:800;cursor:pointer}
 .sp-task-fb-ok{border-color:rgba(34,197,94,.3);background:rgba(34,197,94,.04)}
 .sp-task-fb-empty{border-style:dashed}
-/* ── Mascotte "Vonk" — herbruikbaar (SVG-animaties, .m-*) ── */
+/* ── Mascotte "Vonk" — herbruikbaar, levendig (SVG-animaties, .m-*) ── */
 .m-svg{overflow:visible;display:block}
-.m-fig{transform-origin:60px 101px;animation:mBob 2.8s ease-in-out infinite}
-@keyframes mBob{0%,100%{transform:translateY(0) rotate(-1.2deg)}50%{transform:translateY(-3px) rotate(1.2deg)}}
+/* idle: zachtjes deinen + af en toe een klein huppeltje, in één timeline */
+.m-fig{transform-origin:60px 101px;animation:mIdle 5.6s ease-in-out infinite}
+@keyframes mIdle{
+  0%{transform:translateY(0) rotate(-1.2deg)}
+  18%{transform:translateY(-3px) rotate(1.2deg)}
+  36%{transform:translateY(0) rotate(-1.2deg)}
+  54%{transform:translateY(-3px) rotate(1.2deg)}
+  70%{transform:translateY(0) rotate(0)}
+  80%{transform:translateY(-10px) rotate(0)}
+  86%{transform:translateY(0) rotate(0)}
+  90%{transform:translateY(-4px)}
+  94%,100%{transform:translateY(0) rotate(-1.2deg)}}
 .m-wave{transform-origin:92px 64px;animation:mWave 2.8s ease-in-out infinite}
-@keyframes mWave{0%,68%,100%{transform:rotate(0)}80%{transform:rotate(-24deg)}88%{transform:rotate(8deg)}94%{transform:rotate(-16deg)}}
+@keyframes mWave{0%,66%,100%{transform:rotate(0)}78%{transform:rotate(-26deg)}86%{transform:rotate(10deg)}92%{transform:rotate(-18deg)}}
 .m-tassel{transform-origin:60px 16px;animation:mTassel 2.8s ease-in-out infinite}
-@keyframes mTassel{0%,100%{transform:rotate(-5deg)}50%{transform:rotate(7deg)}}
+@keyframes mTassel{0%,100%{transform:rotate(-6deg)}50%{transform:rotate(8deg)}}
+.m-tuft{transform-origin:60px 32px;animation:mWiggle 3.4s ease-in-out infinite}
+@keyframes mWiggle{0%,100%{transform:rotate(-5deg)}50%{transform:rotate(6deg)}}
+.m-pupils{animation:mLook 6.5s ease-in-out infinite}
+@keyframes mLook{0%,22%,100%{transform:translateX(0)}34%,46%{transform:translateX(2.2px)}58%,70%{transform:translateX(-2.2px)}}
 .m-eyes{transform-origin:60px 58px;animation:mBlink 5.2s infinite}
-@keyframes mBlink{0%,95%,100%{transform:scaleY(1)}97.5%{transform:scaleY(.1)}}
+@keyframes mBlink{0%,93%,100%{transform:scaleY(1)}96.5%{transform:scaleY(.08)}}
 .m-spark{transform-origin:60px 30px;animation:mSpark 1.8s ease-in-out infinite}
-@keyframes mSpark{0%,100%{opacity:.4;transform:scale(.85)}50%{opacity:1;transform:scale(1.15)}}
-.m-shadow{fill:rgba(0,0,0,.16);transform-origin:60px 113px;animation:mShadow 2.8s ease-in-out infinite}
-@keyframes mShadow{0%,100%{transform:scaleX(1);opacity:.5}50%{transform:scaleX(.88);opacity:.32}}
-@media(prefers-reduced-motion:reduce){.m-fig,.m-wave,.m-tassel,.m-eyes,.m-spark,.m-shadow{animation:none}}
+@keyframes mSpark{0%,100%{opacity:.4;transform:scale(.85) rotate(0)}50%{opacity:1;transform:scale(1.2) rotate(20deg)}}
+.m-shadow{fill:rgba(0,0,0,.16);transform-origin:60px 113px;animation:mShadow 5.6s ease-in-out infinite}
+@keyframes mShadow{0%,100%{transform:scaleX(1);opacity:.5}18%,54%{transform:scaleX(.9);opacity:.4}80%{transform:scaleX(1.12);opacity:.28}}
+/* praten: statische mond weg, open mond klappert */
+.m-mouth-talk{opacity:0;transform-origin:60px 80px}
+.talking .m-mouth{opacity:0}
+.talking .m-mouth-talk{opacity:1;animation:mTalk .24s ease-in-out infinite}
+@keyframes mTalk{0%,100%{transform:scaleY(.32)}50%{transform:scaleY(1)}}
+@media(prefers-reduced-motion:reduce){.m-fig,.m-wave,.m-tassel,.m-tuft,.m-pupils,.m-eyes,.m-spark,.m-shadow,.talking .m-mouth-talk{animation:none}.talking .m-mouth{opacity:1}.talking .m-mouth-talk{opacity:0}}
+/* klikbare pagina-verwijzing in Vonk's tekst */
+.vonk-link{color:var(--or);font-weight:800;text-decoration:underline;text-underline-offset:2px;cursor:pointer}
+.vonk-link:hover{filter:brightness(.9)}
 
 /* ── Vonk + spraakbubbel (coach-pop) — licht standaard, .coach-dark voor donkere schermen ── */
 .coach-pop{position:relative;display:flex;gap:12px;align-items:flex-start;
