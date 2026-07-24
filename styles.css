@@ -3906,6 +3906,7 @@ html.dark .hsd-pill{background:var(--bg2);border-color:var(--bo2)}
 .dm-btn:hover{transform:translateY(-2px);box-shadow:0 6px 16px rgba(251,140,62,.35)}
 .dm-done{border-color:rgba(34,197,94,.35);background:rgba(34,197,94,.07)}
 .dm-check{font-size:30px;flex-shrink:0}
+.dm-boost{display:inline-block;margin-top:6px;padding:3px 10px;border-radius:20px;background:linear-gradient(135deg,#f59e0b,#f5731a);color:#fff;font-family:var(--font-head);font-weight:900;font-size:11.5px;box-shadow:0 2px 8px rgba(245,115,26,.35)}
 @media(max-width:640px){.dm-title{font-size:15px}.dm-btn{padding:9px 13px;font-size:12.5px}}
 
 /* ── Vonk + spraakbubbel (coach-pop) — licht standaard, .coach-dark voor donkere schermen ── */

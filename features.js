@@ -436,11 +436,53 @@ function dagmissiePick(){
     vonk:'Klaar om te beginnen? Kies een vak en doe je eerste quiz, dan laat ik je zien hoe je ervoor staat.'};
 }
 function dagmissieDone(){try{return localStorage.getItem(DAGMISSIE_DONE_KEY)===_dmToday();}catch(e){return false;}}
-function markDagmissieDone(){try{if(localStorage.getItem(DAGMISSIE_DONE_KEY)!==_dmToday())localStorage.setItem(DAGMISSIE_DONE_KEY,_dmToday());}catch(e){}}
+function markDagmissieDone(){
+  try{
+    if(localStorage.getItem(DAGMISSIE_DONE_KEY)===_dmToday())return; // al beloond vandaag
+    localStorage.setItem(DAGMISSIE_DONE_KEY,_dmToday());
+    dagmissieReward();
+  }catch(e){}
+}
+// ── Vonk-boost: 2× XP tot middernacht ──
+function xpBoostActive(){try{const b=JSON.parse(localStorage.getItem('slagio_boost')||'{}');return b.d===_dmToday()&&Date.now()<(b.until||0);}catch(e){return false;}}
+function _boostEnd(){const e=new Date();e.setHours(23,59,59,999);return e.getTime();}
+function activateXpBoost(){try{localStorage.setItem('slagio_boost',JSON.stringify({d:_dmToday(),until:_boostEnd()}));}catch(e){}}
+// ── Streak-redder: repareert precies één gemiste dag als je terugkomt ──
+function maybeReviveStreak(){
+  try{
+    const s=getStreak(); if(!s.days)s.days=[];
+    const t=new Date();t.setHours(0,0,0,0);
+    const ds=function(n){const d=new Date(t);d.setDate(d.getDate()-n);return d.toISOString().slice(0,10);};
+    const today=ds(0),yest=ds(1),d2=ds(2);
+    if(!s.days.includes(today))s.days.push(today);
+    if(!s.days.includes(yest)&&s.days.includes(d2)){   // alleen gisteren gemist, eergisteren wél
+      s.days.push(yest); s.days.sort();
+      localStorage.setItem('examenapp_streak',JSON.stringify(s));
+      try{if(typeof cloudSet==='function')cloudSet('streak',s);}catch(e){}
+      return calcStreak().current;
+    }
+  }catch(e){}
+  return 0;
+}
+function dagmissieReward(){
+  activateXpBoost();
+  const revived=maybeReviveStreak();
+  try{if(typeof renderDagmissie==='function')renderDagmissie();}catch(e){}
+  try{if(typeof renderStreak==='function')renderStreak();}catch(e){}
+  try{
+    if(typeof vonkSay==='function'){
+      let msg='<b>Missie volbracht!</b> De rest van de dag verdien je <b>dubbele XP</b>. ⚡';
+      if(revived>0)msg+=' En omdat je weer begon, heb ik je streak van <b>'+revived+' dagen</b> gered! 🔥';
+      setTimeout(function(){vonkSay(msg,{mood:'trots',side:'left',duration:0});},1300);
+    }
+  }catch(e){}
+  try{trackEvent('dagmissie_voltooid',{boost:1,streak_gered:revived>0});}catch(e){}
+}
 function renderDagmissie(){
   const box=document.getElementById('dagmissie-home');if(!box)return;
   if(dagmissieDone()){
-    box.innerHTML='<div class="dm-card dm-done"><span class="dm-check">✅</span><div class="dm-body"><div class="dm-title">Dagmissie voltooid!</div><div class="dm-sub">Top bezig. Kom morgen terug voor een nieuwe missie.</div></div></div>';
+    const boost=xpBoostActive()?'<span class="dm-boost">⚡ 2× XP tot middernacht</span>':'';
+    box.innerHTML='<div class="dm-card dm-done"><span class="dm-check">✅</span><div class="dm-body"><div class="dm-title">Dagmissie voltooid!</div><div class="dm-sub">Top bezig. Kom morgen terug voor een nieuwe missie.</div>'+boost+'</div></div>';
     return;
   }
   const m=dagmissiePick();
@@ -476,6 +518,8 @@ function getXPPct(xp){
   return Math.min(Math.round((xp-cur)/(nxt-cur)*100),100);
 }
 function addXP(amount){
+  // Vonk-boost: dubbele XP tot middernacht na het voltooien van de dagmissie.
+  try{if(typeof xpBoostActive==='function'&&xpBoostActive())amount=Math.round(amount*2);}catch(e){}
   try{const t=new Date().toISOString().slice(0,10);const k='slagio_xp_today';const s=JSON.parse(localStorage.getItem(k)||'{}');if(s.d!==t){s.d=t;s.x=0;}s.x=(s.x||0)+amount;localStorage.setItem(k,JSON.stringify(s));}catch(e){}
   const d=getXPData();
   const oldLvl=getLevelForXP(d.xp);
