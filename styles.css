@@ -3843,7 +3843,7 @@ html.dark .hsd-pill{background:var(--bg2);border-color:var(--bo2)}
 /* ── Mascotte "Vonk" — herbruikbaar, levendig (SVG-animaties, .m-*) ── */
 .m-svg{overflow:visible;display:block}
 /* idle: zachtjes deinen + af en toe een klein huppeltje, in één timeline */
-.m-fig{transform-origin:60px 106px;animation:mIdle 5.6s ease-in-out infinite}
+.m-fig{transform-origin:60px 110px;animation:mIdle 5.6s ease-in-out infinite}
 @keyframes mIdle{
   0%{transform:translateY(0) rotate(-1.2deg)}
   18%{transform:translateY(-3px) rotate(1.2deg)}
@@ -3854,22 +3854,22 @@ html.dark .hsd-pill{background:var(--bg2);border-color:var(--bo2)}
   86%{transform:translateY(0) rotate(0)}
   90%{transform:translateY(-4px)}
   94%,100%{transform:translateY(0) rotate(-1.2deg)}}
-.m-wave{transform-origin:86px 76px;animation:mWave 2.8s ease-in-out infinite}
-@keyframes mWave{0%,66%,100%{transform:rotate(0)}78%{transform:rotate(-28deg)}86%{transform:rotate(10deg)}92%{transform:rotate(-18deg)}}
-.m-tail{transform-origin:40px 90px;animation:mTail 1.5s ease-in-out infinite}
-@keyframes mTail{0%,100%{transform:rotate(-9deg)}50%{transform:rotate(9deg)}}
-.m-tassel{transform-origin:60px 16px;animation:mTassel 2.8s ease-in-out infinite}
+.m-wave{transform-origin:80px 82px;animation:mWave 2.8s ease-in-out infinite}
+@keyframes mWave{0%,66%,100%{transform:rotate(0)}78%{transform:rotate(-30deg)}86%{transform:rotate(10deg)}92%{transform:rotate(-20deg)}}
+.m-tail{transform-origin:45px 94px;animation:mTail 1.5s ease-in-out infinite}
+@keyframes mTail{0%,100%{transform:rotate(-10deg)}50%{transform:rotate(10deg)}}
+.m-tassel{transform-origin:60px 15px;animation:mTassel 2.8s ease-in-out infinite}
 @keyframes mTassel{0%,100%{transform:rotate(-6deg)}50%{transform:rotate(8deg)}}
-.m-head{transform-origin:60px 62px;animation:mHead 5s ease-in-out infinite}
+.m-head{transform-origin:60px 66px;animation:mHead 5s ease-in-out infinite}
 @keyframes mHead{0%,100%{transform:rotate(-1.6deg)}50%{transform:rotate(1.6deg)}}
-.m-ear-l{transform-origin:50px 28px;animation:mEar 4.6s ease-in-out infinite}
-.m-ear-r{transform-origin:70px 28px;animation:mEar 4.6s ease-in-out .4s infinite}
-@keyframes mEar{0%,84%,100%{transform:rotate(0)}90%{transform:rotate(-7deg)}95%{transform:rotate(4deg)}}
+.m-ear-l{transform-origin:33px 24px;animation:mEar 4.6s ease-in-out infinite}
+.m-ear-r{transform-origin:87px 24px;animation:mEar 4.6s ease-in-out .4s infinite}
+@keyframes mEar{0%,84%,100%{transform:rotate(0)}90%{transform:rotate(-8deg)}95%{transform:rotate(5deg)}}
 .m-pupils{animation:mLook 6.5s ease-in-out infinite}
 @keyframes mLook{0%,22%,100%{transform:translateX(0)}34%,46%{transform:translateX(2px)}58%,70%{transform:translateX(-2px)}}
 .m-eyes{transform-origin:60px 40px;animation:mBlink 5.2s infinite}
 @keyframes mBlink{0%,93%,100%{transform:scaleY(1)}96.5%{transform:scaleY(.08)}}
-.m-spark{transform-origin:60px 24px;animation:mSpark 1.8s ease-in-out infinite}
+.m-spark{transform-origin:60px 18px;animation:mSpark 1.8s ease-in-out infinite}
 @keyframes mSpark{0%,100%{opacity:.4;transform:scale(.85) rotate(0)}50%{opacity:1;transform:scale(1.2) rotate(20deg)}}
 .m-shadow{fill:rgba(0,0,0,.16);transform-origin:60px 114px;animation:mShadow 5.6s ease-in-out infinite}
 @keyframes mShadow{0%,100%{transform:scaleX(1);opacity:.5}18%,54%{transform:scaleX(.9);opacity:.4}80%{transform:scaleX(1.12);opacity:.28}}

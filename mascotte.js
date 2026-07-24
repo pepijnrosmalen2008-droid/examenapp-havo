@@ -11,75 +11,80 @@ var MASCOT_NAME = 'Vonk';
 // Stemmingen: blij (default) · trots · goed · laag (bemoedigend) · kijk (nieuwsgierig) · knipoog
 function mascotSVG(mood, size) {
   size = size || 96;
-  // gesloten-mond (glimlach) per stemming, onder de snuit (cx60, ~cy60)
+  // Flat-vector vos (Duolingo-stijl). Gesloten glimlach per stemming (cx60, ~cy60).
   const M = {
-    blij:   { mouth: 'M53 59 Q60 66 67 59', brow: '',                                       spark: false, eyeUp: 0, wink: false },
-    trots:  { mouth: 'M51 58 Q60 69 69 58', brow: 'M41 33 Q47 29 53 32 M67 32 Q73 29 79 33', spark: true,  eyeUp: 0, wink: false },
-    goed:   { mouth: 'M54 59 Q60 65 66 59', brow: '',                                       spark: false, eyeUp: 0, wink: false },
-    laag:   { mouth: 'M54 62 Q60 57 66 62', brow: 'M41 35 Q47 32 53 35 M67 35 Q73 32 79 35', spark: false, eyeUp: 0, wink: false },
-    kijk:   { mouth: 'M56 60 Q60 63 64 60', brow: '',                                       spark: false, eyeUp: 1, wink: false },
-    knipoog:{ mouth: 'M53 59 Q60 66 67 59', brow: '',                                       spark: true,  eyeUp: 0, wink: true },
+    blij:   { mouth: 'M53 60 Q60 67 67 60', brow: '',                                       spark: false, eyeUp: 0, wink: false },
+    trots:  { mouth: 'M50 59 Q60 71 70 59', brow: 'M39 30 Q46 25 53 29 M67 29 Q74 25 81 30', spark: true,  eyeUp: 0, wink: false },
+    goed:   { mouth: 'M54 60 Q60 66 66 60', brow: '',                                       spark: false, eyeUp: 0, wink: false },
+    laag:   { mouth: 'M54 63 Q60 58 66 63', brow: 'M39 32 Q46 29 53 32 M67 32 Q74 29 81 32', spark: false, eyeUp: 0, wink: false },
+    kijk:   { mouth: 'M56 61 Q60 64 64 61', brow: '',                                       spark: false, eyeUp: 1, wink: false },
+    knipoog:{ mouth: 'M53 60 Q60 67 67 60', brow: '',                                       spark: true,  eyeUp: 0, wink: true },
   };
   const s = M[mood] || M.blij;
-  const dy = (s.eyeUp ? -2 : 0.5);
-  // ogen op de kop (cx49/71, cy40); rechteroog knipoogt bij 'knipoog'
-  const eye = (cx) => `<ellipse cx="${cx}" cy="40" rx="8" ry="9" fill="#fff"/>`;
-  const pup = (cx) => `<circle cx="${cx}" cy="${40 + dy}" r="3.8" fill="#232741"/><circle cx="${cx + 1.5}" cy="${38.5 + dy}" r="1.4" fill="#fff"/>`;
+  const dy = (s.eyeUp ? -2.6 : 0.9);
+  const eye = (cx) => `<ellipse cx="${cx}" cy="41" rx="9" ry="10.5" fill="#fff"/>`;
+  const pup = (cx) => `<circle cx="${cx}" cy="${41 + dy}" r="5.4" fill="#2e2a39"/><circle cx="${cx + 2.1}" cy="${38.3 + dy}" r="2.2" fill="#fff"/><circle cx="${cx - 1.8}" cy="${43.5 + dy}" r="1.1" fill="#fff" opacity=".85"/>`;
   const eyesInner = s.wink
-    ? `${eye(49)}<g class="m-pupils">${pup(49)}</g><path d="M64 40 Q71 34 78 40" stroke="#232741" stroke-width="2.8" stroke-linecap="round" fill="none"/>`
-    : `${eye(49)}${eye(71)}<g class="m-pupils">${pup(49)}${pup(71)}</g>`;
+    ? `${eye(47)}<g class="m-pupils">${pup(47)}</g><path d="M65 41 Q73 34 81 41" stroke="#2e2a39" stroke-width="3" stroke-linecap="round" fill="none"/>`
+    : `${eye(47)}${eye(73)}<g class="m-pupils">${pup(47)}${pup(73)}</g>`;
+  // palet
+  const OR = '#fb8c3e', SH = '#e9701f', CR = '#fff1dd', DK = '#2e2a39', NO = '#3b2a22';
   return `<svg class="m-svg" viewBox="0 0 120 120" width="${size}" height="${size}" role="img" aria-label="${MASCOT_NAME}, de vos-studiemaatje-mascotte">
-    <defs>
-      <linearGradient id="mBody" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffa860"/><stop offset=".55" stop-color="#f5731a"/><stop offset="1" stop-color="#df560a"/></linearGradient>
-      <linearGradient id="mCap" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#3c4163"/><stop offset="1" stop-color="#242840"/></linearGradient>
-      <radialGradient id="mCheek" cx=".5" cy=".5" r=".5"><stop offset="0" stop-color="#ff8fa3" stop-opacity=".8"/><stop offset="1" stop-color="#ff8fa3" stop-opacity="0"/></radialGradient>
-    </defs>
-    <ellipse class="m-shadow" cx="60" cy="114" rx="29" ry="5.5"/>
+    <defs><radialGradient id="mCheek" cx=".5" cy=".5" r=".5"><stop offset="0" stop-color="#ff8fa3" stop-opacity=".8"/><stop offset="1" stop-color="#ff8fa3" stop-opacity="0"/></radialGradient></defs>
+    <ellipse class="m-shadow" cx="60" cy="115" rx="30" ry="6"/>
     <g class="m-fig">
       <!-- staart -->
-      <g class="m-tail"><path d="M40 94 q-24 6 -25 -13 q-1 -13 12 -13 q-6 15 15 17 z" fill="url(#mBody)" stroke="#c34d07" stroke-width="1.2"/><path d="M18 66 q-8 1 -8 11 q7 6 13 1 q-7 -4 -5 -13z" fill="#ffe9cf"/></g>
+      <g class="m-tail">
+        <path d="M44 96 C22 100 9 89 12 74 C14 63 28 62 31 74 C27 87 34 95 47 92 Z" fill="${OR}"/>
+        <path d="M15 72 C8 74 7 84 13 87 C20 89 24 80 21 73 Z" fill="${CR}"/>
+      </g>
       <!-- pootjes -->
-      <ellipse cx="50" cy="107" rx="8" ry="5.5" fill="#c34d07"/><ellipse cx="70" cy="107" rx="8" ry="5.5" fill="#c34d07"/>
+      <ellipse cx="49" cy="108" rx="8.5" ry="5.5" fill="${SH}"/><ellipse cx="71" cy="108" rx="8.5" ry="5.5" fill="${SH}"/>
       <!-- achter-armpje -->
-      <path d="M34 76 q-9 5 -8 15" stroke="url(#mBody)" stroke-width="8.5" stroke-linecap="round" fill="none"/>
+      <path d="M40 84 C33 88 32 96 37 100" stroke="${OR}" stroke-width="10" stroke-linecap="round" fill="none"/>
+      <circle cx="37" cy="100" r="5.5" fill="${OR}"/>
       <!-- lijf -->
-      <path d="M60 56 C81 56 83 78 81 89 C79 101 69 105 60 105 C51 105 41 101 39 89 C37 78 39 56 60 56Z" fill="url(#mBody)" stroke="#c34d07" stroke-width="1.5"/>
-      <ellipse cx="60" cy="90" rx="14" ry="14" fill="#ffe9cf"/>
+      <path d="M60 64 C76 64 85 77 85 90 C85 104 74 110 60 110 C46 110 35 104 35 90 C35 77 44 64 60 64 Z" fill="${OR}"/>
+      <path d="M60 66 C71 66 79 78 79 92 C79 103 71 107 60 107 C49 107 41 103 41 92 C41 78 49 66 60 66 Z" fill="${CR}"/>
+      <path d="M60 110 C74 110 85 104 85 90 C85 96 82 101 78 104 C72 108 66 109 60 109 C54 109 48 108 42 104 C38 101 35 96 35 90 C35 104 46 110 60 110 Z" fill="${SH}" opacity=".35"/>
       <!-- kop -->
       <g class="m-head">
-        <g class="m-ear-l"><path d="M45 30 L33 5 L58 21 Z" fill="url(#mBody)" stroke="#c34d07" stroke-width="1.2"/><path d="M46 26 L41 13 L54 22 Z" fill="#ffe9cf"/></g>
-        <g class="m-ear-r"><path d="M75 30 L87 5 L62 21 Z" fill="url(#mBody)" stroke="#c34d07" stroke-width="1.2"/><path d="M74 26 L79 13 L66 22 Z" fill="#ffe9cf"/></g>
-        <circle cx="60" cy="42" r="25" fill="url(#mBody)" stroke="#c34d07" stroke-width="1.5"/>
+        <g class="m-ear-l"><path d="M43 27 C33 9 20 8 23 23 C25 33 37 34 43 27 Z" fill="${OR}"/><path d="M40 24 C34 15 28 15 30 23 C31 29 37 29 40 24 Z" fill="${CR}"/></g>
+        <g class="m-ear-r"><path d="M77 27 C87 9 100 8 97 23 C95 33 83 34 77 27 Z" fill="${OR}"/><path d="M80 24 C86 15 92 15 90 23 C89 29 83 29 80 24 Z" fill="${CR}"/></g>
+        <path d="M60 12 C39 12 27 27 27 45 C27 63 40 72 60 72 C80 72 93 63 93 45 C93 27 81 12 60 12 Z" fill="${OR}"/>
+        <ellipse cx="47" cy="30" rx="15" ry="10" fill="#ffb877" opacity=".5"/>
+        <path d="M31 50 C24 55 21 62 27 63 C33 64 36 58 35 53 Z" fill="${CR}"/>
+        <path d="M89 50 C96 55 99 62 93 63 C87 64 84 58 85 53 Z" fill="${CR}"/>
         <g class="m-cap">
-          <path d="M60 6 L86 16 L60 26 L34 16 Z" fill="url(#mCap)"/>
-          <path d="M60 6 L86 16 L60 20 Z" fill="#4c527a" opacity=".55"/>
-          <circle cx="60" cy="16" r="2.4" fill="#facc15"/>
-          <path class="m-tassel" d="M60 16 q16 2 15 12" stroke="#facc15" stroke-width="2" fill="none"/>
-          <circle class="m-tassel" cx="75" cy="30" r="3.2" fill="#f59e0b"/>
+          <path d="M60 3 L89 15 L60 27 L31 15 Z" fill="#2e3350"/>
+          <path d="M60 3 L89 15 L60 20 Z" fill="#3c4374"/>
+          <circle cx="60" cy="15" r="2.5" fill="#facc15"/>
+          <path class="m-tassel" d="M60 15 C74 17 76 24 75 31" stroke="#facc15" stroke-width="2" fill="none"/>
+          <circle class="m-tassel" cx="75" cy="32" r="3.4" fill="#f59e0b"/>
         </g>
-        <!-- snuit -->
-        <ellipse cx="60" cy="55" rx="16" ry="13" fill="#ffe9cf"/>
+        <!-- tweekleurige snuit -->
+        <path d="M35 46 C40 41 47 41 51 45 C55 49 65 49 69 45 C73 41 80 41 85 46 C88 59 76 71 60 71 C44 71 32 59 35 46 Z" fill="${CR}"/>
         <g class="m-eyes">${eyesInner}</g>
-        ${s.brow ? `<g stroke="#232741" stroke-width="2.4" stroke-linecap="round" fill="none">${s.brow}</g>` : ''}
-        <circle cx="38" cy="52" r="6" fill="url(#mCheek)"/><circle cx="82" cy="52" r="6" fill="url(#mCheek)"/>
+        ${s.brow ? `<g stroke="${DK}" stroke-width="2.6" stroke-linecap="round" fill="none">${s.brow}</g>` : ''}
+        <circle cx="36" cy="56" r="6.5" fill="url(#mCheek)"/><circle cx="84" cy="56" r="6.5" fill="url(#mCheek)"/>
         <!-- neusje -->
-        <path d="M56 48 Q60 45 64 48 Q62 53 60 53 Q58 53 56 48Z" fill="#2a1c12"/>
-        <path d="M60 53 v3" stroke="#2a1c12" stroke-width="1.6" stroke-linecap="round"/>
+        <path d="M54 49 Q60 45 66 49 Q64 57 60 58 Q56 57 54 49 Z" fill="${NO}"/>
+        <path d="M60 58 v3" stroke="${NO}" stroke-width="1.8" stroke-linecap="round"/>
         <!-- mond (dicht) + praat-frames -->
-        <path class="m-mouth" d="${s.mouth}" stroke="#232741" stroke-width="3" stroke-linecap="round" fill="none"/>
+        <path class="m-mouth" d="${s.mouth}" stroke="${NO}" stroke-width="3" stroke-linecap="round" fill="none"/>
         <g class="m-mouth-talk">
-          <path class="mt mt-c" d="M55 60 Q60 63 65 60" stroke="#3a1f16" stroke-width="2.6" stroke-linecap="round" fill="none"/>
-          <ellipse class="mt mt-a" cx="60" cy="61" rx="4.6" ry="6.2" fill="#3a1f16"/>
-          <ellipse class="mt mt-b" cx="60" cy="60" rx="8" ry="3" fill="#3a1f16"/>
-          <ellipse class="mt-tongue" cx="60" cy="62.5" rx="3" ry="2" fill="#ff7a8a"/>
+          <path class="mt mt-c" d="M55 61 Q60 64 65 61" stroke="${NO}" stroke-width="2.6" stroke-linecap="round" fill="none"/>
+          <ellipse class="mt mt-a" cx="60" cy="62" rx="4.6" ry="6" fill="${NO}"/>
+          <ellipse class="mt mt-b" cx="60" cy="61" rx="7.5" ry="3" fill="${NO}"/>
+          <ellipse class="mt-tongue" cx="60" cy="63.5" rx="3" ry="2" fill="#ff8a9e"/>
         </g>
       </g>
       <!-- zwaai-armpje -->
       <g class="m-wave">
-        <path d="M84 76 q11 -3 15 -14" stroke="url(#mBody)" stroke-width="8.5" stroke-linecap="round" fill="none"/>
-        <circle cx="100" cy="60" r="6" fill="url(#mBody)" stroke="#c34d07" stroke-width="1.1"/>
+        <path d="M80 82 C89 80 95 71 96 62" stroke="${OR}" stroke-width="10" stroke-linecap="round" fill="none"/>
+        <circle cx="96" cy="60" r="6" fill="${OR}"/>
       </g>
-      ${s.spark ? `<g class="m-spark" fill="#facc15"><path d="M96 12 l2.2 5.4 5.4 2.2 -5.4 2.2 -2.2 5.4 -2.2 -5.4 -5.4 -2.2 5.4 -2.2z"/><circle cx="22" cy="26" r="2.3"/><circle cx="92" cy="36" r="1.7"/></g>` : ''}
+      ${s.spark ? `<g class="m-spark" fill="#facc15"><path d="M99 10 l2.3 5.6 5.6 2.3 -5.6 2.3 -2.3 5.6 -2.3 -5.6 -5.6 -2.3 5.6 -2.3z"/><circle cx="20" cy="24" r="2.4"/><circle cx="96" cy="38" r="1.8"/></g>` : ''}
     </g>
   </svg>`;
 }
