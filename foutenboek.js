@@ -58,7 +58,7 @@ function fbStudieplanRowHTML() {
   if (s.open > 0) {
     return `<div class="sp-task-card sp-task-fb-ok"><div class="sp-task-card-left">
       <div class="sp-task-card-vak">📕 Foutenboek <span style="color:#22c55e">✓</span></div>
-      <div class="sp-task-card-dom">Je fouten zijn bijgewerkt${s.mastered ? ` — ${s.mastered} beheerst` : ''}. Geen herhaling nu.</div>
+      <div class="sp-task-card-dom">Je fouten zijn bijgewerkt${s.mastered ? ` (${s.mastered} beheerst)` : ''}. Geen herhaling nu.</div>
       <div class="sp-task-card-meta"><button class="sp-act-btn" style="padding:4px 10px;font-size:11px;background:var(--bg2);border:1px solid var(--bo);color:var(--dk)" onclick="openFoutenboek()">Bekijk →</button></div>
     </div></div>`;
   }
@@ -206,7 +206,7 @@ function _renderFoutenboekInner(wrap, stats) {
     wrap.innerHTML = `<div class="fb-empty">
       <div class="fb-empty-ic">${typeof mascotSVG === 'function' ? mascotSVG('blij', 92) : '📕'}</div>
       <h3>Nog geen fouten</h3>
-      <p>Zodra je een quizvraag fout hebt, bewaren we die hier — mét waarom het fout ging en wanneer je hem het beste opnieuw kunt oefenen.</p>
+      <p>Zodra je een quizvraag fout hebt, bewaren we die hier, mét waarom het fout ging en wanneer je hem het beste opnieuw kunt oefenen.</p>
       <button class="fb-oefen-btn" onclick="quickOefen()">Start een quiz →</button>
     </div>`;
     return;
@@ -218,7 +218,7 @@ function _renderFoutenboekInner(wrap, stats) {
   if (due.length) {
     html += `<button class="fb-oefen-all" onclick="fbOefen()">🔴 Oefen ${due.length} ${due.length === 1 ? 'fout' : 'fouten'} nu</button>`;
   } else if (open.length) {
-    html += `<div class="fb-allclear">✅ Niets te oefenen op dit moment — kom later terug voor je herhaling.</div>`;
+    html += `<div class="fb-allclear">✅ Niets te oefenen op dit moment. Kom later terug voor je herhaling.</div>`;
   }
 
   // Groepeer open fouten per vak

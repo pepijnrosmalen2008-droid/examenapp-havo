@@ -1,5 +1,5 @@
 // ═══════════════════════════════════════════════════════════════════════
-// mascotte.js — VONK, de mascotte van Slagio.
+// mascotte.js, VONK, de mascotte van Slagio.
 // Herbruikbaar over de hele site: roep mascotSVG(stemming, grootte) aan en
 // plaats het resultaat waar je wilt. mascotBubble() geeft Vonk + spraakbubbel.
 // Eén naam-constante stuurt overal zijn naam.
@@ -107,9 +107,15 @@ var VONK_NAV = {
   simulatie:   function () { show('sc-simtoets'); },
   groep:       function () { show('sc-groep'); if (typeof renderGroepScreen === 'function') try { renderGroepScreen(); } catch (e) {} },
 };
-function vonkNav(key) { vonkHide(); const f = VONK_NAV[key]; if (f) try { f(); } catch (e) {} }
-function vonkRenderMsg(msg) {
+function vonkNav(key) {
+  const f = VONK_NAV[key]; if (!f) return;
+  try { f(); } catch (e) {}
+  // Vonk volgt je mee en legt de nieuwe pagina uit; hij verdwijnt dus niet zomaar.
+  setTimeout(function () { try { vonkExplain(); } catch (e) {} }, 430);
+}
+function vonkRenderMsg(msg, plain) {
   return String(msg).replace(/\{\{([^|}]+)\|([^}]+)\}\}/g, function (_, label, key) {
+    if (plain) return `<b>${label}</b>`;
     return `<a class="vonk-link" role="button" tabindex="0" onclick="vonkNav('${key.trim()}')">${label}</a>`;
   });
 }
@@ -119,7 +125,7 @@ var _vonkTimer = null;
 function vonkSay(msg, opts) {
   opts = opts || {};
   if (opts.once) { const k = 'slagio_vonk_' + opts.once; try { if (localStorage.getItem(k)) return; localStorage.setItem(k, '1'); } catch (e) {} }
-  const rendered = vonkRenderMsg(msg);
+  const rendered = vonkRenderMsg(msg, opts.plainLinks);
   const plainLen = _vonkPlain(msg).length;
   let stage = document.getElementById('vonk-stage');
   if (!stage) { stage = document.createElement('div'); stage.id = 'vonk-stage'; document.body.appendChild(stage); }
@@ -156,9 +162,9 @@ function vonkHide() { const s = document.getElementById('vonk-stage'); if (s && 
 // Centrale uitleg-teksten: Vonk legt features uit, elk max 1× (once-sleutel).
 function vonkOnboard(where) {
   const T = {
-    home:       { once: 'welkom',     mood: 'blij',    msg: `Hoi, ik ben <b>Vonk</b>, je studiemaatje! Kies een {{vak|vakken}} en start een quiz — daarna vertel ik je precies hoe je ervoor staat. 👋` },
+    home:       { once: 'welkom',     mood: 'blij',    msg: `Hoi, ik ben <b>Vonk</b>, je studiemaatje! Kies een {{vak|vakken}} en start een quiz, daarna vertel ik je precies hoe je ervoor staat. 👋` },
     foutenboek: { once: 'foutenboek', mood: 'kijk',    msg: `Elke fout die je maakt bewaar ik hier. Ik plan wanneer je ze het beste opnieuw oefent, zodat de stof blijft hangen. 📕` },
-    studieplan: { once: 'studieplan', mood: 'goed',    msg: `Dit is jouw plan tot het examen. Ik zet elke dag klaar wát je oefent — begin met de rode dingen. 📅` },
+    studieplan: { once: 'studieplan', mood: 'goed',    msg: `Dit is jouw plan tot het examen. Ik zet elke dag klaar wát je oefent, begin met de rode dingen. 📅` },
     quiz:       { once: 'quiztip',    mood: 'knipoog', msg: `Tip: hoe sneller je goed antwoordt, hoe meer punten. Maar onthoud: goed gaat vóór snel. 😉` },
     coach:      { once: 'coachtip',   mood: 'trots',   msg: `Na elke quiz spring ik hier tevoorschijn met je verwachte cijfer en waar de meeste winst zit. Tot zo! ✨` },
   };
@@ -172,13 +178,13 @@ function vonkIntro(force) {
   if (!force) { try { if (localStorage.getItem(VONK_INTRO_DONE)) return; } catch (e) {} }
   try { localStorage.setItem(VONK_INTRO_DONE, '1'); } catch (e) {}
   const steps = [
-    { mood: 'blij',    msg: `Hoi! Ik ben <b>Vonk</b>, je studiemaatje. 🦊 In een paar tips leg ik je alles uit — klaar?` },
+    { mood: 'blij',    msg: `Hoi! Ik ben <b>Vonk</b>, je studiemaatje. 🦊 In een paar tips leg ik je alles uit, klaar?` },
     { mood: 'goed',    msg: `Kies onderaan een {{vak|vakken}}, dan een domein, en start een quiz. Zo simpel begin je met oefenen.` },
     { mood: 'kijk',    msg: `Er zijn twee soorten: de <b>Snelle quiz</b> (tegen de klok, voor punten + het {{leaderboard|leaderboard}}) en <b>Oud-examen</b> met échte examenvragen.` },
     { mood: 'trots',   msg: `Na elke quiz spring ik tevoorschijn met je <b>verwachte examencijfer</b> en waar je de meeste winst haalt. 🎓` },
-    { mood: 'kijk',    msg: `Elke fout onthoud ik in je {{Foutenboek|foutenboek}} — mét waaróm het fout ging — en ik plan wanneer je 'm het best herhaalt.` },
+    { mood: 'kijk',    msg: `Elke fout onthoud ik in je {{Foutenboek|foutenboek}}, mét waaróm het fout ging, en ik plan wanneer je 'm het best herhaalt.` },
     { mood: 'goed',    msg: `In je {{Studieplan|studieplan}} zet ik per dag klaar wát je oefent, helemaal tot je examen.` },
-    { mood: 'trots',   msg: `Elke dag oefenen bouwt je <b>streak</b> en <b>XP</b> op — en je eigen dier-avatar groeit met je mee. 🔥` },
+    { mood: 'trots',   msg: `Elke dag oefenen bouwt je <b>streak</b> en <b>XP</b> op, en je eigen dier-avatar groeit met je mee. 🔥` },
     { mood: 'knipoog', msg: `En zie je mij rechtsonder in de hoek? Tik me op elk scherm aan, dan leg ik uit wat je ziet. Succes! 🚀` },
   ];
   let i = 0;
@@ -186,7 +192,7 @@ function vonkIntro(force) {
     const st = steps[i];
     const last = i === steps.length - 1;
     vonkSay(st.msg, {
-      mood: st.mood, side: 'left', size: 100, duration: 0,
+      mood: st.mood, side: 'left', size: 100, duration: 0, plainLinks: true,
       action: {
         label: last ? 'Aan de slag! 🚀' : 'Volgende →',
         keepOpen: !last,
@@ -203,29 +209,29 @@ var VONK_EXPLAIN = {
   'sc-home':       { mood: 'blij', msg: `Dit is je startpunt. Kies onderaan een {{vak|vakken}} om te oefenen, tik op {{Foutenboek|foutenboek}} om fouten te herhalen, of open je {{Studieplan|studieplan}}. Na elke quiz vertel ik hoe je ervoor staat!` },
   'sc-detail':     { mood: 'goed', msg: `Alle domeinen van dit vak. <b>Groen</b> = onder de knie, <b>rood</b> = daar liggen punten. Tik een domein en kies een quiz.` },
   'sc-qmode':      { mood: 'goed', msg: `Kies hóé je oefent: <b>Snelle quiz</b> (tegen de klok, telt voor het {{leaderboard|leaderboard}}) of <b>Oud-examen</b>. Begin gerust met de snelle quiz.` },
-  'sc-studieplan': { mood: 'goed', msg: `Je persoonlijke plan tot het examen. Ik zet per dag klaar wát je oefent — begin met de rode dingen. Je {{Foutenboek|foutenboek}}-fouten staan er ook bij.` },
-  'sc-foutenboek': { mood: 'kijk', msg: `Al je foute antwoorden verzamel ik hier, mét waaróm het fout ging. Ik plan wanneer je ze het best herhaalt — en zet ze ook in je {{Studieplan|studieplan}}.` },
+  'sc-studieplan': { mood: 'goed', msg: `Je persoonlijke plan tot het examen. Ik zet per dag klaar wát je oefent, begin met de rode dingen. Je {{Foutenboek|foutenboek}}-fouten staan er ook bij.` },
+  'sc-foutenboek': { mood: 'kijk', msg: `Al je foute antwoorden verzamel ik hier, mét waaróm het fout ging. Ik plan wanneer je ze het best herhaalt, en zet ze ook in je {{Studieplan|studieplan}}.` },
   'sc-leaderboard':{ mood: 'trots',msg: `Hier zie je hoe je scoort tegen andere leerlingen. Sneller én accurater = hogere score. Zin om te {{oefenen|vakken}}?` },
   'sc-calc':       { mood: 'goed', msg: `Reken uit welk cijfer je nog nodig hebt of wat je gemiddelde wordt. Bekijk ook je {{examenrooster|rooster}}.` },
   'sc-profiel':    { mood: 'blij', msg: `Je profiel: je dier-avatar groeit mee met je XP. Hier staan je badges, je streak en je voortgang.` },
-  'sc-schedule':   { mood: 'goed', msg: `Je examenrooster. Vink je vakken (en eventueel herkansingen) aan — daar bouw ik je {{Studieplan|studieplan}} op.` },
+  'sc-schedule':   { mood: 'goed', msg: `Je examenrooster. Vink je vakken (en eventueel herkansingen) aan, daar bouw ik je {{Studieplan|studieplan}} op.` },
   'sc-simtoets':   { mood: 'kijk', msg: `Een volledige oefentoets onder examen-omstandigheden. Ideaal als een examen dichtbij is.` },
   'sc-groep':      { mood: 'blij', msg: `Je klas of groep: samen oefenen en elkaars voortgang zien. Vergelijk op het {{leaderboard|leaderboard}}.` },
   'sc-res':        { mood: 'trots',msg: `Je resultaat! Ik laat je verwachte examencijfer zien en waar de meeste winst zit. Je fouten staan in je {{Foutenboek|foutenboek}}.` },
   'sc-leerpad':    { mood: 'goed', msg: `Je leerpad: stap voor stap door de stof van een vak, van makkelijk naar moeilijk. Volg gewoon de route.` },
   'sc-domein':     { mood: 'kijk', msg: `Dit domein in detail: de begrippen, de samenvatting en uitlegvideo's. Lees eerst, oefen daarna.` },
-  'sc-oe-pick':    { mood: 'goed', msg: `Kies een examenjaar en tijdvak — dan oefen je met de échte vragen van dat centraal examen.` },
+  'sc-oe-pick':    { mood: 'goed', msg: `Kies een examenjaar en tijdvak, dan oefen je met de échte vragen van dat centraal examen.` },
   'sc-review':     { mood: 'kijk', msg: `Hier kijk je je antwoorden na met het correctievoorschrift, zodat je precies ziet waar de punten zitten.` },
   'sc-info':       { mood: 'goed', msg: `Alle examenregels op een rij: hoe je slaagt, de N-term, herkansingen en de belangrijke data.` },
   'sc-sociaal':    { mood: 'blij', msg: `Je sociale hub: het {{leaderboard|leaderboard}}, je {{groep|groep}} en samen oefenen.` },
   'sc-klas':       { mood: 'blij', msg: `Je klas: nodig klasgenoten uit, oefen samen en volg elkaars voortgang.` },
-  'sc-examen':     { mood: 'kijk', msg: `De echte examen-PDF's en correctievoorschriften — om te downloaden en mee te oefenen.` },
+  'sc-examen':     { mood: 'kijk', msg: `De echte examen-PDF's en correctievoorschriften, om te downloaden en mee te oefenen.` },
   'sc-zoek':       { mood: 'kijk', msg: `Zoek door álle examens, begrippen en uitleg. Typ een woord en ik vind het voor je.` },
 };
 function vonkExplain() {
   const cur = document.querySelector('.sc.on');
   const id = cur ? cur.id : 'sc-home';
-  const e = VONK_EXPLAIN[id] || { mood: 'kijk', msg: `Ik help je graag! Kijk hier rond en tik ergens — heb je een vraag, dan duik ik op waar ik kan. 😊` };
+  const e = VONK_EXPLAIN[id] || { mood: 'kijk', msg: `Ik help je graag! Kijk hier rond en tik ergens, heb je een vraag, dan duik ik op waar ik kan. 😊` };
   const corner = document.getElementById('vonk-corner');
   if (corner) corner.style.visibility = 'hidden';
   vonkSay(e.msg, { mood: e.mood, side: 'right', duration: 0, onClose: () => { if (corner) corner.style.visibility = ''; } });
@@ -240,7 +246,7 @@ function updateVonkCorner(id) {
   if (!el) {
     el = document.createElement('button');
     el.id = 'vonk-corner'; el.className = 'vonk-corner';
-    el.setAttribute('aria-label', MASCOT_NAME + ' — uitleg over dit scherm');
+    el.setAttribute('aria-label', MASCOT_NAME + ', uitleg over dit scherm');
     el.innerHTML = `<span class="vonk-corner-fig">${mascotSVG('blij', 58)}</span><span class="vonk-corner-q">?</span>`;
     el.onclick = vonkExplain;
     document.body.appendChild(el);

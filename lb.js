@@ -775,7 +775,7 @@ function renderExamCoach(vakId){
     const cijColor=c.cijfer<5.45?'#ef4444':c.cijfer<7?'#f59e0b':'#22c55e';
     mood=c.cijfer>=7?'trots':c.cijfer>=5.45?'goed':'laag';
     const opener=mood==='trots'?'Sterk gedaan! ':mood==='laag'?'':'';
-    const tail=mood==='trots'?' 🎉':mood==='laag'?' We pakken dit samen — stap voor stap.':' Nog een klein zetje.';
+    const tail=mood==='trots'?' 🎉':mood==='laag'?' We pakken dit samen, stap voor stap.':' Nog een klein zetje.';
     msg=`${opener}Als het CE morgen was, zat je op een <b style="color:${cijColor}">${cij}</b> voor <b>${c.vak.naam}</b>.${tail}`;
     if(c.risico)rows+=`<button class="coach-chip coach-chip-risk" onclick="goToDomein('${vakId}','${c.risico.id}','snel')">⚠️ Risico: ${c.risico.naam} · ${Math.round(c.risico.pct*100)}% <span class="coach-chip-go">oefen →</span></button>`;
     if(c.winst)rows+=`<button class="coach-chip coach-chip-win" onclick="goToDomein('${vakId}','${c.winst.id}','snel')">📈 Winst: ${c.winst.naam} · ${Math.round(c.winst.pct*100)}% <span class="coach-chip-go">oefen →</span></button>`;
@@ -790,7 +790,7 @@ function renderExamCoach(vakId){
       <div class="coach-name">${naam}</div>
       <div class="coach-msg">${msg}</div>
       ${rows?`<div class="coach-chips">${rows}</div>`:''}
-      ${c.enough?`<div class="coach-fine">Indicatie op je oefenscores (${c.n} domeinen) — richting, geen garantie.</div>`:''}
+      ${c.enough?`<div class="coach-fine">Indicatie op je oefenscores (${c.n} domeinen). Richting, geen garantie.</div>`:''}
     </div>
   </div>`;
 }
