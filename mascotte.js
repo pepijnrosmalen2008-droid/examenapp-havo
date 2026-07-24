@@ -20,16 +20,34 @@ function mascotSVG(mood, size) {
     kijk:   { mouth: 'M56 61 Q60 64 64 61', brow: '',                                       spark: false, eyeUp: 1, wink: false },
     knipoog:{ mouth: 'M53 60 Q60 67 67 60', brow: '',                                       spark: true,  eyeUp: 0, wink: true },
     feest:  { mouth: 'M49 58 Q60 74 71 58 Q60 63 49 58 Z', brow: '',                         spark: true,  eyeUp: 0, wink: false, cheer: true, filled: true },
+    denk:   { mouth: 'M55 61 Q60 63 65 61', brow: '',                                       spark: false, eyeUp: 1, wink: false, prop: 'think' },
+    oeps:   { mouth: 'M53 63 Q60 57 67 63', brow: 'M39 34 Q46 31 52 34 M68 34 Q75 31 81 34', spark: false, eyeUp: 0, wink: false, prop: 'sweat' },
+    liefde: { mouth: 'M49 58 Q60 73 71 58 Q60 63 49 58 Z', brow: '',                         spark: false, eyeUp: 0, wink: false, filled: true, heartEyes: true, prop: 'hearts' },
+    slaap:  { mouth: 'M56 61 Q60 63 64 61', brow: '',                                       spark: false, eyeUp: 0, wink: false, sleep: true, prop: 'zzz' },
   };
   const s = M[mood] || M.blij;
   const dy = (s.eyeUp ? -2.6 : 0.9);
   const eye = (cx) => `<ellipse cx="${cx}" cy="41" rx="9" ry="10.5" fill="#fff"/>`;
   const pup = (cx) => `<circle cx="${cx}" cy="${41 + dy}" r="5.4" fill="#2e2a39"/><circle cx="${cx + 2.1}" cy="${38.3 + dy}" r="2.2" fill="#fff"/><circle cx="${cx - 1.8}" cy="${43.5 + dy}" r="1.1" fill="#fff" opacity=".85"/>`;
-  const eyesInner = s.wink
+  const heartEye = (cx) => `<path transform="translate(${cx},42)" d="M0 -1 C-2.6 -5 -8 -2.4 -6.4 1.4 C-5.2 4.2 -1.4 6 0 8 C1.4 6 5.2 4.2 6.4 1.4 C8 -2.4 2.6 -5 0 -1 Z" fill="#ff5a7a"/>`;
+  const sleepEye = (cx) => `<path d="M${cx - 7} 41 Q${cx} 47 ${cx + 7} 41" stroke="#2e2a39" stroke-width="3" stroke-linecap="round" fill="none"/>`;
+  const eyesInner = s.heartEyes
+    ? `<g class="m-hearteyes">${heartEye(47)}${heartEye(73)}</g>`
+    : s.sleep
+    ? `${sleepEye(47)}${sleepEye(73)}`
+    : s.wink
     ? `${eye(47)}<g class="m-pupils">${pup(47)}</g><path d="M65 41 Q73 34 81 41" stroke="#2e2a39" stroke-width="3" stroke-linecap="round" fill="none"/>`
     : `${eye(47)}${eye(73)}<g class="m-pupils">${pup(47)}${pup(73)}</g>`;
   // palet
   const OR = '#fb8c3e', SH = '#e9701f', CR = '#fff1dd', DK = '#2e2a39', NO = '#3b2a22';
+  // props (denkwolk / zweetdruppel / hartjes / zzz)
+  const PROPS = {
+    think: `<g class="m-prop m-think"><circle cx="92" cy="34" r="3" fill="#fff" stroke="#d9dee8"/><circle cx="99" cy="27" r="4.5" fill="#fff" stroke="#d9dee8"/><ellipse cx="108" cy="16" rx="11" ry="8" fill="#fff" stroke="#d9dee8"/><text x="108" y="20" font-size="10" font-weight="700" text-anchor="middle" fill="#94a0b8">?</text></g>`,
+    sweat: `<path class="m-prop m-sweat" d="M86 38 C82 45 82 50 86 50 C90 50 90 45 86 38 Z" fill="#7dd3fc"/>`,
+    hearts: `<g class="m-prop m-hearts" fill="#ff6b9d"><path d="M92 26 C90 22 84 24 86 29 C87 32 91 34 92 36 C93 34 97 32 98 29 C100 24 94 22 92 26 Z"/><path d="M26 32 C24.5 29 20 30.5 21.5 34 C22 36 25 37.5 26 39 C27 37.5 30 36 30.5 34 C32 30.5 27.5 29 26 32 Z" opacity=".8"/></g>`,
+    zzz: `<g class="m-prop m-zzz" fill="#94a0b8" font-family="var(--font-head)" font-weight="900"><text x="86" y="26" font-size="10">z</text><text x="94" y="20" font-size="13">Z</text></g>`,
+  };
+  const prop = s.prop ? (PROPS[s.prop] || '') : '';
   return `<svg class="m-svg" viewBox="0 0 120 120" width="${size}" height="${size}" role="img" aria-label="${MASCOT_NAME}, de vos-studiemaatje-mascotte">
     <defs><radialGradient id="mCheek" cx=".5" cy=".5" r=".5"><stop offset="0" stop-color="#ff8fa3" stop-opacity=".8"/><stop offset="1" stop-color="#ff8fa3" stop-opacity="0"/></radialGradient></defs>
     <ellipse class="m-shadow" cx="60" cy="115" rx="30" ry="6"/>
@@ -86,6 +104,7 @@ function mascotSVG(mood, size) {
       ? `<g class="m-cheer-r"><path d="M78 80 C88 71 91 61 88 52" stroke="${OR}" stroke-width="10" stroke-linecap="round" fill="none"/><circle cx="88" cy="50" r="6" fill="${OR}"/></g>`
       : `<g class="m-wave"><path d="M80 82 C89 80 95 71 96 62" stroke="${OR}" stroke-width="10" stroke-linecap="round" fill="none"/><circle cx="96" cy="60" r="6" fill="${OR}"/></g>`}
       ${s.spark ? `<g class="m-spark" fill="#facc15"><path d="M99 10 l2.3 5.6 5.6 2.3 -5.6 2.3 -2.3 5.6 -2.3 -5.6 -5.6 -2.3 5.6 -2.3z"/><circle cx="20" cy="24" r="2.4"/><circle cx="96" cy="38" r="1.8"/></g>` : ''}
+      ${prop}
     </g>
   </svg>`;
 }

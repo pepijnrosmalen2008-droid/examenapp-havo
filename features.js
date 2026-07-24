@@ -554,23 +554,32 @@ function slagioVlagUit(kind){
     ov.innerHTML=
       '<div class="vlag-stage">'+
         '<svg class="vlag-svg" viewBox="0 0 200 240" width="200" height="240" aria-hidden="true">'+
-          '<rect x="40" y="12" width="7" height="214" rx="3.5" fill="#6b5b4a"/>'+
-          '<circle cx="43.5" cy="12" r="7" fill="#caa45a"/>'+
+          '<ellipse cx="100" cy="232" rx="66" ry="7" fill="rgba(0,0,0,.13)"/>'+
+          '<rect x="40" y="12" width="8" height="214" rx="4" fill="#c98f5f"/>'+
+          '<rect x="40.6" y="15" width="3.2" height="206" rx="1.6" fill="#e8c096" opacity=".65"/>'+
+          '<circle cx="44" cy="12" r="7.5" fill="#f5b301"/>'+
+          '<circle cx="41.6" cy="9.6" r="2.4" fill="#ffdb7a"/>'+
+          '<path class="vlag-rope" d="M44 16 q16 44 -3 104 q-9 36 1 92" stroke="#ecd3ab" stroke-width="2.4" fill="none" stroke-linecap="round"/>'+
           '<g class="vlag-raise">'+
             '<g class="vlag-cloth">'+
-              '<rect x="47" y="26" width="98" height="19" fill="#AE1C28"/>'+
-              '<rect x="47" y="45" width="98" height="19" fill="#ffffff"/>'+
-              '<rect x="47" y="64" width="98" height="19" fill="#21468B"/>'+
+              '<clipPath id="vlagClip"><rect x="48" y="26" width="98" height="58" rx="8"/></clipPath>'+
+              '<g clip-path="url(#vlagClip)">'+
+                '<rect x="48" y="26" width="98" height="19.5" fill="#AE1C28"/>'+
+                '<rect x="48" y="45.5" width="98" height="19" fill="#ffffff"/>'+
+                '<rect x="48" y="64.5" width="98" height="19.5" fill="#21468B"/>'+
+              '</g>'+
+              '<rect x="48" y="26" width="98" height="58" rx="8" fill="none" stroke="rgba(0,0,0,.06)" stroke-width="1"/>'+
             '</g>'+
-            '<g class="vlag-bag" transform="translate(43.5,128)">'+
-              '<path d="M0 -6 q22 4 22 26" stroke="#3a3f4b" stroke-width="4" fill="none"/>'+
-              '<rect x="4" y="14" width="46" height="42" rx="11" fill="'+bagCol+'"/>'+
-              '<rect x="4" y="30" width="46" height="15" rx="6" fill="rgba(0,0,0,.16)"/>'+
-              '<rect x="19" y="20" width="16" height="12" rx="4" fill="rgba(255,255,255,.9)"/>'+
+            '<g class="vlag-bag" transform="translate(26,120)">'+
+              '<path d="M18 -2 q6 2 6 10" stroke="#39404e" stroke-width="3.5" fill="none"/>'+
+              '<rect x="0" y="6" width="42" height="46" rx="14" fill="'+bagCol+'"/>'+
+              '<rect x="0" y="26" width="42" height="16" rx="8" fill="rgba(0,0,0,.14)"/>'+
+              '<rect x="13" y="14" width="16" height="13" rx="5" fill="rgba(255,255,255,.92)"/>'+
+              '<path d="M11 6 q10 -7 20 0" stroke="rgba(0,0,0,.16)" stroke-width="2.6" fill="none"/>'+
             '</g>'+
           '</g>'+
         '</svg>'+
-        '<div class="vlag-vonk">'+((typeof mascotSVG==='function')?mascotSVG('feest',96):'')+'</div>'+
+        '<div class="vlag-vonk">'+((typeof mascotSVG==='function')?mascotSVG('feest',98):'')+'</div>'+
         '<div class="vlag-label">'+label+'</div>'+
       '</div>';
     document.body.appendChild(ov);

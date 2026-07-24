@@ -3913,10 +3913,26 @@ html.dark .hsd-pill{background:var(--bg2);border-color:var(--bo2)}
 @keyframes vcFall{0%{transform:translateY(-20px) rotateZ(0);opacity:1}90%{opacity:1}100%{transform:translateY(102vh) rotateZ(560deg);opacity:.4}}
 @keyframes vcPop{from{opacity:0;transform:scale(.7) translateY(10px)}to{opacity:1;transform:none}}
 @media(prefers-reduced-motion:reduce){.m-cheer-l,.m-cheer-r,.vc-vonk,.vc-caption{animation:none}.vc-confetti{display:none}}
+/* extra expressies: hart-ogen, denkwolk, zweet, zzz */
+.m-hearteyes{transform-origin:60px 42px;animation:mHeartBeat .7s ease-in-out infinite}
+@keyframes mHeartBeat{0%,100%{transform:scale(1)}50%{transform:scale(1.13)}}
+.m-hearts{animation:mHearts 1.5s ease-in-out infinite}
+@keyframes mHearts{0%,100%{opacity:.6;transform:translateY(0)}50%{opacity:1;transform:translateY(-3px)}}
+.m-think{transform-origin:100px 20px;animation:mThink 2s ease-in-out infinite}
+@keyframes mThink{0%,100%{opacity:.85;transform:translateY(0) scale(1)}50%{opacity:1;transform:translateY(-2px) scale(1.04)}}
+.m-sweat{animation:mSweat 1.5s ease-in infinite}
+@keyframes mSweat{0%{opacity:0;transform:translateY(-7px)}25%{opacity:1}100%{opacity:.15;transform:translateY(7px)}}
+.m-zzz{animation:mZzz 2.4s ease-in-out infinite}
+@keyframes mZzz{0%{opacity:0;transform:translate(0,4px)}40%{opacity:1}100%{opacity:0;transform:translate(7px,-9px)}}
+@media(prefers-reduced-motion:reduce){.m-hearteyes,.m-hearts,.m-think,.m-sweat,.m-zzz{animation:none}}
+/* hoek-Vonk doet af en toe een speels wiebeltje zodat hij leeft */
+.vonk-corner-fig{display:block;animation:cornerNudge 9s ease-in-out 4s infinite}
+@keyframes cornerNudge{0%,78%,100%{transform:translateY(0) rotate(0)}84%{transform:translateY(-7px) rotate(-7deg)}89%{transform:translateY(0) rotate(5deg)}94%{transform:translateY(-3px) rotate(-3deg)}}
+@media(prefers-reduced-motion:reduce){.vonk-corner-fig{animation:none}}
 /* Vonk hangt de vlag uit (in de "vlag uit"-animatie) */
 .vlag-stage{position:relative}
-.vlag-vonk{position:absolute;left:-14px;bottom:40px;width:96px;height:96px;z-index:3;animation:vlagVonkIn .5s cubic-bezier(.2,1.5,.4,1) both .35s}
-.vlag-vonk .m-svg{width:96px;height:96px}
+.vlag-vonk{position:absolute;left:4px;bottom:30px;width:98px;height:98px;z-index:3;animation:vlagVonkIn .5s cubic-bezier(.2,1.5,.4,1) both .4s}
+.vlag-vonk .m-svg{width:98px;height:98px}
 @keyframes vlagVonkIn{from{opacity:0;transform:translateY(24px) scale(.5)}to{opacity:1;transform:none}}
 .vlag-reduce .vlag-vonk{animation:none}
 
