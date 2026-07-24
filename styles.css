@@ -3929,10 +3929,22 @@ html.dark .hsd-pill{background:var(--bg2);border-color:var(--bo2)}
 .vonk-corner-fig{display:block;animation:cornerNudge 9s ease-in-out 4s infinite}
 @keyframes cornerNudge{0%,78%,100%{transform:translateY(0) rotate(0)}84%{transform:translateY(-7px) rotate(-7deg)}89%{transform:translateY(0) rotate(5deg)}94%{transform:translateY(-3px) rotate(-3deg)}}
 @media(prefers-reduced-motion:reduce){.vonk-corner-fig{animation:none}}
+/* stemming-specifieke lichaamsbeweging (i.p.v. altijd hetzelfde deinen) */
+.m-mood-laag .m-fig,.m-mood-oeps .m-fig{animation:mSad 3.6s ease-in-out infinite}
+@keyframes mSad{0%,100%{transform:translateY(1px) rotate(-1.5deg)}50%{transform:translateY(3px) rotate(1.5deg)}}
+.m-mood-liefde .m-fig{animation:mSway 2.3s ease-in-out infinite}
+@keyframes mSway{0%,100%{transform:rotate(-4deg)}50%{transform:rotate(4deg)}}
+.m-mood-slaap .m-fig{animation:mSleepy 4.4s ease-in-out infinite}
+@keyframes mSleepy{0%,100%{transform:translateY(0) rotate(-1deg)}50%{transform:translateY(2px) rotate(1deg)}}
+.m-mood-denk .m-fig{animation:mPonder 3.2s ease-in-out infinite}
+@keyframes mPonder{0%,100%{transform:rotate(-2deg)}50%{transform:rotate(2deg)}}
+@media(prefers-reduced-motion:reduce){.m-mood-laag .m-fig,.m-mood-oeps .m-fig,.m-mood-liefde .m-fig,.m-mood-slaap .m-fig,.m-mood-denk .m-fig{animation:none}}
 /* Vonk hangt de vlag uit (in de "vlag uit"-animatie) */
 .vlag-stage{position:relative}
-.vlag-vonk{position:absolute;left:4px;bottom:30px;width:98px;height:98px;z-index:3;animation:vlagVonkIn .5s cubic-bezier(.2,1.5,.4,1) both .4s}
+.vlag-vonk{position:absolute;left:2px;bottom:28px;width:98px;height:98px;z-index:3;animation:vlagPull 1.15s ease-in-out both}
 .vlag-vonk .m-svg{width:98px;height:98px}
+/* Vonk trekt ritmisch aan het touw terwijl de vlag rijst */
+@keyframes vlagPull{0%{transform:translateY(0)}10%{transform:translateY(8px)}22%{transform:translateY(0)}34%{transform:translateY(8px)}46%{transform:translateY(0)}58%{transform:translateY(8px)}70%{transform:translateY(0)}100%{transform:translateY(0)}}
 @keyframes vlagVonkIn{from{opacity:0;transform:translateY(24px) scale(.5)}to{opacity:1;transform:none}}
 .vlag-reduce .vlag-vonk{animation:none}
 

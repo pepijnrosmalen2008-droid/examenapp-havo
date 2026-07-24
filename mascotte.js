@@ -13,17 +13,17 @@ function mascotSVG(mood, size) {
   size = size || 96;
   // Flat-vector vos (Duolingo-stijl). Gesloten glimlach per stemming (cx60, ~cy60).
   const M = {
-    blij:   { mouth: 'M53 60 Q60 67 67 60', brow: '',                                       spark: false, eyeUp: 0, wink: false },
-    trots:  { mouth: 'M50 59 Q60 71 70 59', brow: 'M39 30 Q46 25 53 29 M67 29 Q74 25 81 30', spark: true,  eyeUp: 0, wink: false },
-    goed:   { mouth: 'M54 60 Q60 66 66 60', brow: '',                                       spark: false, eyeUp: 0, wink: false },
-    laag:   { mouth: 'M54 63 Q60 58 66 63', brow: 'M39 32 Q46 29 53 32 M67 32 Q74 29 81 32', spark: false, eyeUp: 0, wink: false },
-    kijk:   { mouth: 'M56 61 Q60 64 64 61', brow: '',                                       spark: false, eyeUp: 1, wink: false },
-    knipoog:{ mouth: 'M53 60 Q60 67 67 60', brow: '',                                       spark: true,  eyeUp: 0, wink: true },
-    feest:  { mouth: 'M49 58 Q60 74 71 58 Q60 63 49 58 Z', brow: '',                         spark: true,  eyeUp: 0, wink: false, cheer: true, filled: true },
-    denk:   { mouth: 'M55 61 Q60 63 65 61', brow: '',                                       spark: false, eyeUp: 1, wink: false, prop: 'think' },
-    oeps:   { mouth: 'M53 63 Q60 57 67 63', brow: 'M39 34 Q46 31 52 34 M68 34 Q75 31 81 34', spark: false, eyeUp: 0, wink: false, prop: 'sweat' },
-    liefde: { mouth: 'M49 58 Q60 73 71 58 Q60 63 49 58 Z', brow: '',                         spark: false, eyeUp: 0, wink: false, filled: true, heartEyes: true, prop: 'hearts' },
-    slaap:  { mouth: 'M56 61 Q60 63 64 61', brow: '',                                       spark: false, eyeUp: 0, wink: false, sleep: true, prop: 'zzz' },
+    blij:   { mouth: 'M51 60 Q60 70 69 60', brow: '',                                       arms: 'wave' },
+    trots:  { mouth: 'M48 57 Q60 76 72 57 Q60 63 48 57 Z', brow: 'M39 28 Q46 23 53 27 M67 27 Q74 23 81 28', spark: true, filled: true, arms: 'hips' },
+    goed:   { mouth: 'M53 60 Q60 68 67 60', brow: '',                                       arms: 'wave' },
+    laag:   { mouth: 'M51 65 Q60 55 69 65', brow: 'M38 34 Q46 28 54 34 M66 34 Q74 28 82 34', arms: 'down' },
+    kijk:   { mouth: 'M56 61 Q60 64 64 61', brow: '',                                       eyeUp: 1, arms: 'down' },
+    knipoog:{ mouth: 'M51 60 Q60 70 69 60', brow: '',                                       spark: true, wink: true, arms: 'wave' },
+    feest:  { mouth: 'M47 56 Q60 78 73 56 Q60 63 47 56 Z', brow: '',                         spark: true, filled: true, cheer: true, arms: 'cheer' },
+    denk:   { mouth: 'M55 61 Q60 63 65 61', brow: '',                                       eyeUp: 1, prop: 'think', arms: 'chin' },
+    oeps:   { mouth: 'M53 63 Q60 71 67 63 Q60 66 53 63 Z', brow: 'M38 33 Q46 29 54 33 M66 33 Q74 29 82 33', filled: true, prop: 'sweat', arms: 'down' },
+    liefde: { mouth: 'M47 56 Q60 77 73 56 Q60 63 47 56 Z', brow: '',                         filled: true, heartEyes: true, prop: 'hearts', arms: 'down' },
+    slaap:  { mouth: 'M56 61 Q60 63 64 61', brow: '',                                       sleep: true, prop: 'zzz', arms: 'down' },
   };
   const s = M[mood] || M.blij;
   const dy = (s.eyeUp ? -2.6 : 0.9);
@@ -48,7 +48,24 @@ function mascotSVG(mood, size) {
     zzz: `<g class="m-prop m-zzz" fill="#94a0b8" font-family="var(--font-head)" font-weight="900"><text x="86" y="26" font-size="10">z</text><text x="94" y="20" font-size="13">Z</text></g>`,
   };
   const prop = s.prop ? (PROPS[s.prop] || '') : '';
-  return `<svg class="m-svg" viewBox="0 0 120 120" width="${size}" height="${size}" role="img" aria-label="${MASCOT_NAME}, de vos-studiemaatje-mascotte">
+  // armen per stemming (niet altijd zwaaien)
+  const aDownL = `<path d="M40 84 C33 88 32 96 37 100" stroke="${OR}" stroke-width="10" stroke-linecap="round" fill="none"/><circle cx="37" cy="100" r="5.5" fill="${OR}"/>`;
+  const aDownR = `<path d="M80 84 C87 88 88 96 83 100" stroke="${OR}" stroke-width="10" stroke-linecap="round" fill="none"/><circle cx="83" cy="100" r="5.5" fill="${OR}"/>`;
+  const aWaveR = `<g class="m-wave"><path d="M80 82 C89 80 95 71 96 62" stroke="${OR}" stroke-width="10" stroke-linecap="round" fill="none"/><circle cx="96" cy="60" r="6" fill="${OR}"/></g>`;
+  const aCheerL = `<g class="m-cheer-l"><path d="M42 80 C33 71 30 61 33 52" stroke="${OR}" stroke-width="10" stroke-linecap="round" fill="none"/><circle cx="33" cy="50" r="6" fill="${OR}"/></g>`;
+  const aCheerR = `<g class="m-cheer-r"><path d="M78 80 C88 71 91 61 88 52" stroke="${OR}" stroke-width="10" stroke-linecap="round" fill="none"/><circle cx="88" cy="50" r="6" fill="${OR}"/></g>`;
+  const aHipL = `<path d="M42 82 C34 82 33 90 41 92" stroke="${OR}" stroke-width="10" stroke-linecap="round" fill="none"/><circle cx="42" cy="92" r="5.5" fill="${OR}"/>`;
+  const aHipR = `<path d="M78 82 C86 82 87 90 79 92" stroke="${OR}" stroke-width="10" stroke-linecap="round" fill="none"/><circle cx="78" cy="92" r="5.5" fill="${OR}"/>`;
+  const aChinR = `<path d="M80 82 C87 76 74 70 63 66" stroke="${OR}" stroke-width="9" stroke-linecap="round" fill="none"/><circle cx="61" cy="65" r="5.5" fill="${OR}"/>`;
+  let leftArm, rightArm;
+  switch (s.arms) {
+    case 'cheer': leftArm = aCheerL; rightArm = aCheerR; break;
+    case 'hips':  leftArm = aHipL;  rightArm = aHipR;  break;
+    case 'chin':  leftArm = aDownL; rightArm = aChinR; break;
+    case 'wave':  leftArm = aDownL; rightArm = aWaveR; break;
+    default:      leftArm = aDownL; rightArm = aDownR;
+  }
+  return `<svg class="m-svg m-mood-${mood || 'blij'}" viewBox="0 0 120 120" width="${size}" height="${size}" role="img" aria-label="${MASCOT_NAME}, de vos-studiemaatje-mascotte">
     <defs><radialGradient id="mCheek" cx=".5" cy=".5" r=".5"><stop offset="0" stop-color="#ff8fa3" stop-opacity=".8"/><stop offset="1" stop-color="#ff8fa3" stop-opacity="0"/></radialGradient></defs>
     <ellipse class="m-shadow" cx="60" cy="115" rx="30" ry="6"/>
     <g class="m-fig">
@@ -59,10 +76,8 @@ function mascotSVG(mood, size) {
       </g>
       <!-- pootjes -->
       <ellipse cx="49" cy="108" rx="8.5" ry="5.5" fill="${SH}"/><ellipse cx="71" cy="108" rx="8.5" ry="5.5" fill="${SH}"/>
-      <!-- achter-armpje (juicht omhoog bij 'feest') -->
-      ${s.cheer
-      ? `<g class="m-cheer-l"><path d="M42 80 C33 71 30 61 33 52" stroke="${OR}" stroke-width="10" stroke-linecap="round" fill="none"/><circle cx="33" cy="50" r="6" fill="${OR}"/></g>`
-      : `<path d="M40 84 C33 88 32 96 37 100" stroke="${OR}" stroke-width="10" stroke-linecap="round" fill="none"/><circle cx="37" cy="100" r="5.5" fill="${OR}"/>`}
+      <!-- linkerarm (per stemming) -->
+      ${leftArm}
       <!-- lijf -->
       <path d="M60 64 C76 64 85 77 85 90 C85 104 74 110 60 110 C46 110 35 104 35 90 C35 77 44 64 60 64 Z" fill="${OR}"/>
       <path d="M60 66 C71 66 79 78 79 92 C79 103 71 107 60 107 C49 107 41 103 41 92 C41 78 49 66 60 66 Z" fill="${CR}"/>
@@ -99,10 +114,8 @@ function mascotSVG(mood, size) {
           <ellipse class="mt-tongue" cx="60" cy="63.5" rx="3" ry="2" fill="#ff8a9e"/>
         </g>
       </g>
-      <!-- zwaai-armpje (juicht omhoog bij 'feest') -->
-      ${s.cheer
-      ? `<g class="m-cheer-r"><path d="M78 80 C88 71 91 61 88 52" stroke="${OR}" stroke-width="10" stroke-linecap="round" fill="none"/><circle cx="88" cy="50" r="6" fill="${OR}"/></g>`
-      : `<g class="m-wave"><path d="M80 82 C89 80 95 71 96 62" stroke="${OR}" stroke-width="10" stroke-linecap="round" fill="none"/><circle cx="96" cy="60" r="6" fill="${OR}"/></g>`}
+      <!-- rechterarm (per stemming) -->
+      ${rightArm}
       ${s.spark ? `<g class="m-spark" fill="#facc15"><path d="M99 10 l2.3 5.6 5.6 2.3 -5.6 2.3 -2.3 5.6 -2.3 -5.6 -5.6 -2.3 5.6 -2.3z"/><circle cx="20" cy="24" r="2.4"/><circle cx="96" cy="38" r="1.8"/></g>` : ''}
       ${prop}
     </g>
