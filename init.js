@@ -98,6 +98,8 @@ function obFinish(registered){
   localStorage.setItem('slagio_seen_intro_v2','1');
   localStorage.setItem(TUTO_KEY,'1');
   updateProfileNav();renderXPHome();
+  // Vonk neemt de intro over: loopt alle belangrijke dingen langs.
+  setTimeout(()=>{try{if(typeof vonkIntro==='function')vonkIntro();}catch(e){}},650);
 }
 function showVmboWaitlist(){
   const email=prompt('Laat je e-mailadres achter en we mailen je zodra VMBO-TL live gaat:');
@@ -157,7 +159,7 @@ function dismissIntro(){
   localStorage.setItem('slagio_seen_intro_v2','1');
   updateProfileNav();
   renderXPHome();
-  setTimeout(showTutorial,400);
+  setTimeout(()=>{try{if(typeof vonkIntro==='function')vonkIntro();}catch(e){}},450);
 }
 
 function _introRender(){
@@ -340,7 +342,7 @@ function chooseLevel(level,_noHistory){
   buildGrid();renderStreak();renderFavHome();renderXPHome();renderDailyChallenge();renderHomeStats();renderGreeting();try{renderKlasHome();}catch(e){}
   const _isNew=!localStorage.getItem(OB_KEY)&&!localStorage.getItem('slagio_seen_intro_v2');
   if(_isNew){setTimeout(showOnboarding,300);}
-  else if(!localStorage.getItem(TUTO_KEY)){setTimeout(showTutorial,400);}
+  else if(!localStorage.getItem('slagio_vonk_intro_done')){setTimeout(()=>{try{if(typeof vonkIntro==='function')vonkIntro();}catch(e){}},500);}
   else{showDailyChallengePopup();}
 }
 function updateLevelChip(){

@@ -143,7 +143,7 @@ function vonkSay(msg, opts) {
   stage._close = close;
   const xb = stage.querySelector('.vonk-x'); if (xb) xb.onclick = close;
   const ab = stage.querySelector('.vonk-act');
-  if (ab && opts.action) ab.onclick = () => { try { if (typeof opts.action.onclick === 'function') opts.action.onclick(); else if (typeof opts.action.onclick === 'string') (new Function(opts.action.onclick))(); } catch (e) {} close(); };
+  if (ab && opts.action) ab.onclick = () => { try { if (typeof opts.action.onclick === 'function') opts.action.onclick(); else if (typeof opts.action.onclick === 'string') (new Function(opts.action.onclick))(); } catch (e) {} if (!opts.action.keepOpen) close(); };
   requestAnimationFrame(() => requestAnimationFrame(() => stage.classList.add('vonk-in')));
   // Vonk "praat" terwijl de bubbel binnenkomt, en zakt daarna terug in een glimlach.
   if (fig) { setTimeout(() => fig.classList.add('talking'), 260); stage._talkT = setTimeout(() => fig.classList.remove('talking'), Math.min(5200, 1400 + plainLen * 48)); }
@@ -166,6 +166,38 @@ function vonkOnboard(where) {
   vonkSay(t.msg, { mood: t.mood, once: t.once });
 }
 
+// ─── Vonk-geleide intro voor nieuwe gebruikers (alle belangrijke dingen) ───
+var VONK_INTRO_DONE = 'slagio_vonk_intro_done';
+function vonkIntro(force) {
+  if (!force) { try { if (localStorage.getItem(VONK_INTRO_DONE)) return; } catch (e) {} }
+  try { localStorage.setItem(VONK_INTRO_DONE, '1'); } catch (e) {}
+  const steps = [
+    { mood: 'blij',    msg: `Hoi! Ik ben <b>Vonk</b>, je studiemaatje. 🦊 In een paar tips leg ik je alles uit — klaar?` },
+    { mood: 'goed',    msg: `Kies onderaan een {{vak|vakken}}, dan een domein, en start een quiz. Zo simpel begin je met oefenen.` },
+    { mood: 'kijk',    msg: `Er zijn twee soorten: de <b>Snelle quiz</b> (tegen de klok, voor punten + het {{leaderboard|leaderboard}}) en <b>Oud-examen</b> met échte examenvragen.` },
+    { mood: 'trots',   msg: `Na elke quiz spring ik tevoorschijn met je <b>verwachte examencijfer</b> en waar je de meeste winst haalt. 🎓` },
+    { mood: 'kijk',    msg: `Elke fout onthoud ik in je {{Foutenboek|foutenboek}} — mét waaróm het fout ging — en ik plan wanneer je 'm het best herhaalt.` },
+    { mood: 'goed',    msg: `In je {{Studieplan|studieplan}} zet ik per dag klaar wát je oefent, helemaal tot je examen.` },
+    { mood: 'trots',   msg: `Elke dag oefenen bouwt je <b>streak</b> en <b>XP</b> op — en je eigen dier-avatar groeit met je mee. 🔥` },
+    { mood: 'knipoog', msg: `En zie je mij rechtsonder in de hoek? Tik me op elk scherm aan, dan leg ik uit wat je ziet. Succes! 🚀` },
+  ];
+  let i = 0;
+  const step = () => {
+    const st = steps[i];
+    const last = i === steps.length - 1;
+    vonkSay(st.msg, {
+      mood: st.mood, side: 'left', size: 100, duration: 0,
+      action: {
+        label: last ? 'Aan de slag! 🚀' : 'Volgende →',
+        keepOpen: !last,
+        onclick: () => { if (last) { try { trackEvent('vonk_intro_klaar', {}); } catch (e) {} } else { i++; step(); } },
+      },
+    });
+  };
+  step();
+  try { trackEvent('vonk_intro_start', {}); } catch (e) {}
+}
+
 // ─── Hoek-Vonk: altijd klein aanwezig; tik → uitleg over dít scherm ───
 var VONK_EXPLAIN = {
   'sc-home':       { mood: 'blij', msg: `Dit is je startpunt. Kies onderaan een {{vak|vakken}} om te oefenen, tik op {{Foutenboek|foutenboek}} om fouten te herhalen, of open je {{Studieplan|studieplan}}. Na elke quiz vertel ik hoe je ervoor staat!` },
@@ -180,6 +212,15 @@ var VONK_EXPLAIN = {
   'sc-simtoets':   { mood: 'kijk', msg: `Een volledige oefentoets onder examen-omstandigheden. Ideaal als een examen dichtbij is.` },
   'sc-groep':      { mood: 'blij', msg: `Je klas of groep: samen oefenen en elkaars voortgang zien. Vergelijk op het {{leaderboard|leaderboard}}.` },
   'sc-res':        { mood: 'trots',msg: `Je resultaat! Ik laat je verwachte examencijfer zien en waar de meeste winst zit. Je fouten staan in je {{Foutenboek|foutenboek}}.` },
+  'sc-leerpad':    { mood: 'goed', msg: `Je leerpad: stap voor stap door de stof van een vak, van makkelijk naar moeilijk. Volg gewoon de route.` },
+  'sc-domein':     { mood: 'kijk', msg: `Dit domein in detail: de begrippen, de samenvatting en uitlegvideo's. Lees eerst, oefen daarna.` },
+  'sc-oe-pick':    { mood: 'goed', msg: `Kies een examenjaar en tijdvak — dan oefen je met de échte vragen van dat centraal examen.` },
+  'sc-review':     { mood: 'kijk', msg: `Hier kijk je je antwoorden na met het correctievoorschrift, zodat je precies ziet waar de punten zitten.` },
+  'sc-info':       { mood: 'goed', msg: `Alle examenregels op een rij: hoe je slaagt, de N-term, herkansingen en de belangrijke data.` },
+  'sc-sociaal':    { mood: 'blij', msg: `Je sociale hub: het {{leaderboard|leaderboard}}, je {{groep|groep}} en samen oefenen.` },
+  'sc-klas':       { mood: 'blij', msg: `Je klas: nodig klasgenoten uit, oefen samen en volg elkaars voortgang.` },
+  'sc-examen':     { mood: 'kijk', msg: `De echte examen-PDF's en correctievoorschriften — om te downloaden en mee te oefenen.` },
+  'sc-zoek':       { mood: 'kijk', msg: `Zoek door álle examens, begrippen en uitleg. Typ een woord en ik vind het voor je.` },
 };
 function vonkExplain() {
   const cur = document.querySelector('.sc.on');
@@ -193,7 +234,7 @@ function vonkExplain() {
 function updateVonkCorner(id) {
   id = id || ((document.querySelector('.sc.on') || {}).id);
   vonkHide(); // sluit een eventuele openstaande bubbel bij schermwissel
-  const HIDE = ['sc-quiz', 'sc-flash', 'sc-qmode', 'sc-welcome', 'sc-race', 'sc-intro', 'sc-auth'];
+  const HIDE = ['sc-quiz', 'sc-flash', 'sc-welcome', 'sc-race', 'sc-race-res', 'sc-intro', 'sc-auth', 'sc-reset-pass'];
   let el = document.getElementById('vonk-corner');
   if (HIDE.indexOf(id) !== -1) { if (el) el.style.display = 'none'; return; }
   if (!el) {
