@@ -1368,6 +1368,8 @@ function toonRes(){
       if(_regPrompt)_regPrompt.style.display='none';
     }
   }catch(e){console.warn('toonRes LB error:',e);}
+  // Dagmissie voltooid: elke afgeronde snelle quiz telt als dagmissie van vandaag.
+  try{if(ST.mode==='snel'&&typeof markDagmissieDone==='function')markDagmissieDone();}catch(e){}
   // Examencoach: cijfer-indicatie + risico/winst na de sessie (elk vak met genoeg data)
   try{
     if(typeof renderExamCoach==='function'){

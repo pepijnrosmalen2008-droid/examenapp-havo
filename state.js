@@ -132,7 +132,8 @@ function show(id,_noHash){
     if(!dlist||!dlist.children.length){try{openVak(ST.vak.id,true);}catch(e){}return;}
   }
   if(id==='sc-home'){try{renderComebackCard();}catch(e){}try{renderFeatDisc();}catch(e){}try{renderKlasHome();}catch(e){}
-    try{setTimeout(()=>{if(document.getElementById('sc-home')?.classList.contains('on')&&!document.querySelector('#ctuto-overlay[style*="block"]')&&typeof vonkOnboard==='function')vonkOnboard('home');},2000);}catch(e){}}
+    try{setTimeout(()=>{if(document.getElementById('sc-home')?.classList.contains('on')&&!document.querySelector('#ctuto-overlay[style*="block"]')&&typeof vonkOnboard==='function')vonkOnboard('home');},2000);}catch(e){}
+    try{setTimeout(()=>{if(document.getElementById('sc-home')?.classList.contains('on')&&localStorage.getItem('slagio_vonk_intro_done')&&typeof vonkDagmissie==='function')vonkDagmissie();},2600);}catch(e){}}
   if(id==='sc-schedule'&&localStorage.getItem('slagio_plan_generated')&&!document.getElementById('studieplan-content')?.children.length){try{renderStudieplan();}catch(e){}}
   if(id==='sc-studieplan'){try{spInitPrefs();}catch(e){}if(localStorage.getItem('slagio_plan_generated')){try{renderStudieplan();}catch(e){}}try{if(typeof renderFbStudieplanRow==='function')renderFbStudieplanRow();}catch(e){}try{setTimeout(()=>{if(typeof vonkOnboard==='function')vonkOnboard('studieplan');},900);}catch(e){}}
   // Welcome screen gets its own indigo theme; level pages get their own theme

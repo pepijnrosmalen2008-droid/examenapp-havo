@@ -3893,6 +3893,21 @@ html.dark .hsd-pill{background:var(--bg2);border-color:var(--bo2)}
 .vonk-link{color:var(--or);font-weight:800;text-decoration:underline;text-underline-offset:2px;cursor:pointer}
 .vonk-link:hover{filter:brightness(.9)}
 
+/* ── Dagmissie van Vonk (home) ── */
+.dm-card{display:flex;align-items:center;gap:12px;padding:12px 14px;margin:0 0 12px;border-radius:18px;
+  background:linear-gradient(135deg,rgba(251,140,62,.14),rgba(99,102,241,.10));border:1.5px solid rgba(251,140,62,.3)}
+.dm-vonk{flex-shrink:0;width:54px;height:54px}
+.dm-vonk .m-svg{width:54px;height:54px}
+.dm-body{flex:1;min-width:0}
+.dm-kicker{font-family:var(--font-head);font-weight:900;font-size:10.5px;letter-spacing:.4px;text-transform:uppercase;color:var(--or);margin-bottom:2px}
+.dm-title{font-family:var(--font-head);font-weight:900;font-size:16px;color:var(--dk);line-height:1.2}
+.dm-sub{font-size:12.5px;color:var(--mu);margin-top:2px}
+.dm-btn{flex-shrink:0;padding:10px 15px;border:none;border-radius:12px;background:var(--or);color:#fff;font-family:var(--font-head);font-weight:800;font-size:13px;cursor:pointer;transition:transform .15s,box-shadow .2s}
+.dm-btn:hover{transform:translateY(-2px);box-shadow:0 6px 16px rgba(251,140,62,.35)}
+.dm-done{border-color:rgba(34,197,94,.35);background:rgba(34,197,94,.07)}
+.dm-check{font-size:30px;flex-shrink:0}
+@media(max-width:640px){.dm-title{font-size:15px}.dm-btn{padding:9px 13px;font-size:12.5px}}
+
 /* ── Vonk + spraakbubbel (coach-pop) — licht standaard, .coach-dark voor donkere schermen ── */
 .coach-pop{position:relative;display:flex;gap:12px;align-items:flex-start;
   background:linear-gradient(135deg,rgba(255,138,61,.12),rgba(99,102,241,.08));

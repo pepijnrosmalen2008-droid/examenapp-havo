@@ -388,6 +388,74 @@ function renderDailyGoal(){
     el.textContent=_dgCountdownStr();
   },1000);
 }
+// ═══════ DAGMISSIE ═══════
+// Eén gepersonaliseerde opdracht per dag: due fouten > zwakste domein > streak
+// bewaren > eerste oefening. Roteert per dag; Vonk kondigt 'm aan.
+const DAGMISSIE_DONE_KEY='slagio_dagmissie_done';
+function _dmToday(){return new Date().toISOString().slice(0,10);}
+function _dmDayIndex(){const d=new Date();return Math.floor((d-new Date(d.getFullYear(),0,0))/864e5);}
+function _dmWeakDomains(){
+  const out=[];
+  try{(getVK()||[]).forEach(function(vak){(vak.domeinen||[]).forEach(function(dom){
+    const r=(typeof getDomeinBestPct==='function')?getDomeinBestPct(vak.id,dom.id):{hasData:false};
+    if(r.hasData&&r.pct<0.8)out.push({vakId:vak.id,vakNaam:vak.naam,domId:dom.id,domNaam:dom.naam,pct:r.pct});
+  });});}catch(e){}
+  out.sort(function(a,b){return a.pct-b.pct;});
+  return out;
+}
+function dagmissiePick(){
+  const due=(typeof fbDueCount==='function')?fbDueCount():0;
+  if(due>0)return{type:'foutenboek',ico:'📕',mood:'kijk',
+    title:'Herhaal '+due+' '+(due===1?'fout':'fouten'),
+    sub:'uit je Foutenboek · ~'+Math.max(3,Math.round(due*0.7))+' min',
+    btn:'Herhaal nu',act:'fbOefen()',
+    vonk:'Je hebt '+due+' '+(due===1?'fout':'fouten')+' klaarstaan om te herhalen. Zullen we die even wegwerken?'};
+  const weak=_dmWeakDomains();
+  if(weak.length){
+    const p=weak[_dmDayIndex()%Math.min(weak.length,4)];
+    return{type:'zwak',ico:'🎯',mood:'goed',
+      title:'Oefen '+p.domNaam,
+      sub:p.vakNaam+' · nu '+Math.round(p.pct*100)+'%',
+      btn:'Start quiz',act:"goToDomein('"+p.vakId+"','"+p.domId+"','snel')",
+      vonk:p.domNaam+' ('+p.vakNaam+') kan nog een boost gebruiken. Eén snelle quiz en je staat er beter voor!'};
+  }
+  try{
+    const cur=(typeof calcStreak==='function')?(calcStreak().current||0):0;
+    const s=(typeof getStreak==='function')?getStreak():{days:[]};
+    const practiced=s.days&&s.days.indexOf(_dmToday())>=0;
+    if(cur>0&&!practiced)return{type:'streak',ico:'🔥',mood:'trots',
+      title:'Bewaar je streak',
+      sub:'doe vandaag 1 snelle quiz · streak '+cur,
+      btn:'Oefen nu',act:'quickOefen()',
+      vonk:'Je streak staat op '+cur+' dagen! Doe even één quiz zodat hij niet breekt.'};
+  }catch(e){}
+  return{type:'start',ico:'✨',mood:'blij',
+    title:'Doe je eerste oefening',
+    sub:'kies een vak en start een quiz',
+    btn:'Begin',act:'quickOefen()',
+    vonk:'Klaar om te beginnen? Kies een vak en doe je eerste quiz, dan laat ik je zien hoe je ervoor staat.'};
+}
+function dagmissieDone(){try{return localStorage.getItem(DAGMISSIE_DONE_KEY)===_dmToday();}catch(e){return false;}}
+function markDagmissieDone(){try{if(localStorage.getItem(DAGMISSIE_DONE_KEY)!==_dmToday())localStorage.setItem(DAGMISSIE_DONE_KEY,_dmToday());}catch(e){}}
+function renderDagmissie(){
+  const box=document.getElementById('dagmissie-home');if(!box)return;
+  if(dagmissieDone()){
+    box.innerHTML='<div class="dm-card dm-done"><span class="dm-check">✅</span><div class="dm-body"><div class="dm-title">Dagmissie voltooid!</div><div class="dm-sub">Top bezig. Kom morgen terug voor een nieuwe missie.</div></div></div>';
+    return;
+  }
+  const m=dagmissiePick();
+  const svg=(typeof mascotSVG==='function')?mascotSVG(m.mood,54):('<span class="dm-check">'+m.ico+'</span>');
+  box.innerHTML='<div class="dm-card"><div class="dm-vonk">'+svg+'</div><div class="dm-body"><div class="dm-kicker">🎯 Dagmissie van Vonk</div><div class="dm-title">'+m.title+'</div><div class="dm-sub">'+m.sub+'</div></div><button class="dm-btn" onclick="'+m.act+'">'+m.btn+' →</button></div>';
+}
+// Vonk kondigt de dagmissie 1× per dag aan (niet voor kersverse gebruikers: die krijgen eerst de intro).
+function vonkDagmissie(){
+  if(dagmissieDone())return;
+  try{if(localStorage.getItem('slagio_vonk_dagmissie')===_dmToday())return;localStorage.setItem('slagio_vonk_dagmissie',_dmToday());}catch(e){}
+  const m=dagmissiePick();
+  if(typeof vonkSay!=='function')return;
+  vonkSay('<b>Dagmissie:</b> '+m.vonk,{mood:m.mood,side:'left',duration:0,action:{label:m.btn+' →',onclick:m.act}});
+}
+
 function getXPData(){
   try{
     const fromKey=(JSON.parse(localStorage.getItem(XP_KEY)||'{"xp":0}').xp)||0;
@@ -544,6 +612,7 @@ function renderHomeStats(){
   const box=document.getElementById('home-bento');
   if(!box)return;
   try{if(typeof fbUpdateBadge==='function')setTimeout(fbUpdateBadge,0);}catch(e){}
+  try{if(typeof renderDagmissie==='function')renderDagmissie();}catch(e){}
   // ── Data ──────────────────────────────────────────
   const {current:streak}=calcStreak();
   const xp=getTotalXP();
