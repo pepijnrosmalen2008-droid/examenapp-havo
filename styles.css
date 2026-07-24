@@ -3892,6 +3892,33 @@ html.dark .hsd-pill{background:var(--bg2);border-color:var(--bo2)}
 /* klikbare pagina-verwijzing in Vonk's tekst */
 .vonk-link{color:var(--or);font-weight:800;text-decoration:underline;text-underline-offset:2px;cursor:pointer}
 .vonk-link:hover{filter:brightness(.9)}
+/* juich-armpjes (mood 'feest') */
+.m-cheer-l{transform-origin:40px 80px;animation:mCheer .5s ease-in-out infinite}
+.m-cheer-r{transform-origin:80px 80px;animation:mCheer .5s ease-in-out .13s infinite}
+@keyframes mCheer{0%,100%{transform:translateY(0) rotate(0)}50%{transform:translateY(-3px) rotate(-5deg)}}
+/* Vonk-celebration: juichen met slingers + confetti */
+.vonk-celebrate{position:fixed;inset:0;z-index:9000;display:flex;align-items:center;justify-content:center;overflow:hidden;background:rgba(15,18,32,.30);animation:vcIn .28s ease both}
+.vonk-celebrate.vc-out{animation:vcOut .4s ease forwards}
+@keyframes vcIn{from{opacity:0}to{opacity:1}}
+@keyframes vcOut{to{opacity:0}}
+.vc-stage{position:relative;text-align:center;z-index:2;padding:0 20px}
+.vc-vonk{width:156px;height:156px;margin:0 auto;filter:drop-shadow(0 10px 20px rgba(0,0,0,.3));animation:vcJump .62s cubic-bezier(.3,1.5,.5,1) infinite alternate}
+.vc-vonk .m-svg{width:156px;height:156px}
+@keyframes vcJump{from{transform:translateY(4px) scale(1)}to{transform:translateY(-22px) scale(1.05)}}
+.vc-caption{margin-top:8px;display:inline-block;background:#fff;border-radius:16px;padding:12px 18px;font-family:var(--font-head);font-weight:800;font-size:15px;color:#1f2430;line-height:1.45;box-shadow:0 14px 34px rgba(0,0,0,.28);animation:vcPop .5s cubic-bezier(.2,1.4,.4,1) both .15s}
+.vc-caption b{color:var(--or)}
+.vc-bunting{position:absolute;top:0;left:0;width:100%;height:46px;z-index:1}
+.vc-confetti-wrap{position:absolute;inset:0;overflow:hidden;pointer-events:none;z-index:1}
+.vc-confetti{position:absolute;top:-16px;border-radius:2px;animation-name:vcFall;animation-timing-function:linear;animation-fill-mode:forwards}
+@keyframes vcFall{0%{transform:translateY(-20px) rotateZ(0);opacity:1}90%{opacity:1}100%{transform:translateY(102vh) rotateZ(560deg);opacity:.4}}
+@keyframes vcPop{from{opacity:0;transform:scale(.7) translateY(10px)}to{opacity:1;transform:none}}
+@media(prefers-reduced-motion:reduce){.m-cheer-l,.m-cheer-r,.vc-vonk,.vc-caption{animation:none}.vc-confetti{display:none}}
+/* Vonk hangt de vlag uit (in de "vlag uit"-animatie) */
+.vlag-stage{position:relative}
+.vlag-vonk{position:absolute;left:-14px;bottom:40px;width:96px;height:96px;z-index:3;animation:vlagVonkIn .5s cubic-bezier(.2,1.5,.4,1) both .35s}
+.vlag-vonk .m-svg{width:96px;height:96px}
+@keyframes vlagVonkIn{from{opacity:0;transform:translateY(24px) scale(.5)}to{opacity:1;transform:none}}
+.vlag-reduce .vlag-vonk{animation:none}
 
 /* ── Dagmissie van Vonk (home) ── */
 .dm-card{display:flex;align-items:center;gap:12px;padding:12px 14px;margin:0 0 12px;border-radius:18px;

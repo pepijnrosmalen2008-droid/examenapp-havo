@@ -19,6 +19,7 @@ function mascotSVG(mood, size) {
     laag:   { mouth: 'M54 63 Q60 58 66 63', brow: 'M39 32 Q46 29 53 32 M67 32 Q74 29 81 32', spark: false, eyeUp: 0, wink: false },
     kijk:   { mouth: 'M56 61 Q60 64 64 61', brow: '',                                       spark: false, eyeUp: 1, wink: false },
     knipoog:{ mouth: 'M53 60 Q60 67 67 60', brow: '',                                       spark: true,  eyeUp: 0, wink: true },
+    feest:  { mouth: 'M49 58 Q60 74 71 58 Q60 63 49 58 Z', brow: '',                         spark: true,  eyeUp: 0, wink: false, cheer: true, filled: true },
   };
   const s = M[mood] || M.blij;
   const dy = (s.eyeUp ? -2.6 : 0.9);
@@ -40,9 +41,10 @@ function mascotSVG(mood, size) {
       </g>
       <!-- pootjes -->
       <ellipse cx="49" cy="108" rx="8.5" ry="5.5" fill="${SH}"/><ellipse cx="71" cy="108" rx="8.5" ry="5.5" fill="${SH}"/>
-      <!-- achter-armpje -->
-      <path d="M40 84 C33 88 32 96 37 100" stroke="${OR}" stroke-width="10" stroke-linecap="round" fill="none"/>
-      <circle cx="37" cy="100" r="5.5" fill="${OR}"/>
+      <!-- achter-armpje (juicht omhoog bij 'feest') -->
+      ${s.cheer
+      ? `<g class="m-cheer-l"><path d="M42 80 C33 71 30 61 33 52" stroke="${OR}" stroke-width="10" stroke-linecap="round" fill="none"/><circle cx="33" cy="50" r="6" fill="${OR}"/></g>`
+      : `<path d="M40 84 C33 88 32 96 37 100" stroke="${OR}" stroke-width="10" stroke-linecap="round" fill="none"/><circle cx="37" cy="100" r="5.5" fill="${OR}"/>`}
       <!-- lijf -->
       <path d="M60 64 C76 64 85 77 85 90 C85 104 74 110 60 110 C46 110 35 104 35 90 C35 77 44 64 60 64 Z" fill="${OR}"/>
       <path d="M60 66 C71 66 79 78 79 92 C79 103 71 107 60 107 C49 107 41 103 41 92 C41 78 49 66 60 66 Z" fill="${CR}"/>
@@ -71,7 +73,7 @@ function mascotSVG(mood, size) {
         <path d="M54 49 Q60 45 66 49 Q64 57 60 58 Q56 57 54 49 Z" fill="${NO}"/>
         <path d="M60 58 v3" stroke="${NO}" stroke-width="1.8" stroke-linecap="round"/>
         <!-- mond (dicht) + praat-frames -->
-        <path class="m-mouth" d="${s.mouth}" stroke="${NO}" stroke-width="3" stroke-linecap="round" fill="none"/>
+        <path class="m-mouth" d="${s.mouth}" stroke="${NO}" stroke-width="3" stroke-linecap="round" fill="${s.filled ? NO : 'none'}"/>
         <g class="m-mouth-talk">
           <path class="mt mt-c" d="M55 61 Q60 64 65 61" stroke="${NO}" stroke-width="2.6" stroke-linecap="round" fill="none"/>
           <ellipse class="mt mt-a" cx="60" cy="62" rx="4.6" ry="6" fill="${NO}"/>
@@ -79,11 +81,10 @@ function mascotSVG(mood, size) {
           <ellipse class="mt-tongue" cx="60" cy="63.5" rx="3" ry="2" fill="#ff8a9e"/>
         </g>
       </g>
-      <!-- zwaai-armpje -->
-      <g class="m-wave">
-        <path d="M80 82 C89 80 95 71 96 62" stroke="${OR}" stroke-width="10" stroke-linecap="round" fill="none"/>
-        <circle cx="96" cy="60" r="6" fill="${OR}"/>
-      </g>
+      <!-- zwaai-armpje (juicht omhoog bij 'feest') -->
+      ${s.cheer
+      ? `<g class="m-cheer-r"><path d="M78 80 C88 71 91 61 88 52" stroke="${OR}" stroke-width="10" stroke-linecap="round" fill="none"/><circle cx="88" cy="50" r="6" fill="${OR}"/></g>`
+      : `<g class="m-wave"><path d="M80 82 C89 80 95 71 96 62" stroke="${OR}" stroke-width="10" stroke-linecap="round" fill="none"/><circle cx="96" cy="60" r="6" fill="${OR}"/></g>`}
       ${s.spark ? `<g class="m-spark" fill="#facc15"><path d="M99 10 l2.3 5.6 5.6 2.3 -5.6 2.3 -2.3 5.6 -2.3 -5.6 -5.6 -2.3 5.6 -2.3z"/><circle cx="20" cy="24" r="2.4"/><circle cx="96" cy="38" r="1.8"/></g>` : ''}
     </g>
   </svg>`;
@@ -158,6 +159,35 @@ function vonkSay(msg, opts) {
   if (dur > 0) _vonkTimer = setTimeout(close, dur);
 }
 function vonkHide() { const s = document.getElementById('vonk-stage'); if (s && s._close) s._close(); }
+
+// ─── Feest! Vonk juicht met slingers + confetti (celebration-overlay) ───
+function vonkCelebrate(caption, opts) {
+  opts = opts || {};
+  const old = document.getElementById('vonk-celebrate'); if (old) old.remove();
+  const cols = ['#fb8c3e', '#22c55e', '#6366f1', '#facc15', '#ff6b9d', '#38bdf8'];
+  let confetti = '';
+  for (let i = 0; i < 46; i++) {
+    const l = Math.round(Math.random() * 100), delay = (Math.random() * 0.6).toFixed(2),
+      dur = (1.5 + Math.random() * 1.5).toFixed(2), c = cols[i % cols.length],
+      sz = 6 + Math.round(Math.random() * 6);
+    confetti += `<span class="vc-confetti" style="left:${l}%;background:${c};width:${sz}px;height:${Math.round(sz * .55 + 2)}px;animation-delay:${delay}s;animation-duration:${dur}s"></span>`;
+  }
+  // slinger (bunting) met driehoekige vlaggetjes
+  let flags = '';
+  for (let f = 0; f < 10; f++) { const x = f * 11 + 3; flags += `<polygon points="${x},7 ${x + 8},7 ${x + 4},17" fill="${cols[f % cols.length]}"/>`; }
+  const bunting = `<svg class="vc-bunting" viewBox="0 0 110 22" preserveAspectRatio="none"><path d="M0 7 Q55 14 110 7" stroke="rgba(255,255,255,.5)" stroke-width="1.4" fill="none"/>${flags}</svg>`;
+  const svg = (typeof mascotSVG === 'function') ? mascotSVG('feest', 156) : '🎉';
+  const ov = document.createElement('div');
+  ov.id = 'vonk-celebrate'; ov.className = 'vonk-celebrate'; ov.setAttribute('aria-hidden', 'true');
+  ov.innerHTML = `${bunting}<div class="vc-confetti-wrap">${confetti}</div>
+    <div class="vc-stage"><div class="vc-vonk">${svg}</div>${caption ? `<div class="vc-caption">${caption}</div>` : ''}</div>`;
+  document.body.appendChild(ov);
+  try { if (typeof playSound === 'function') playSound('complete'); } catch (e) {}
+  try { if (typeof haptic === 'function') haptic([30, 40, 30, 40, 80]); } catch (e) {}
+  const kill = () => { ov.classList.add('vc-out'); setTimeout(() => { if (ov.parentNode) ov.remove(); }, 450); };
+  ov.addEventListener('click', kill);
+  setTimeout(kill, opts.duration || 2800);
+}
 
 // Centrale uitleg-teksten: Vonk legt features uit, elk max 1× (once-sleutel).
 function vonkOnboard(where) {

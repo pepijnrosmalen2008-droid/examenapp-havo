@@ -470,11 +470,10 @@ function dagmissieReward(){
   try{if(typeof renderDagmissie==='function')renderDagmissie();}catch(e){}
   try{if(typeof renderStreak==='function')renderStreak();}catch(e){}
   try{
-    if(typeof vonkSay==='function'){
-      let msg='<b>Missie volbracht!</b> De rest van de dag verdien je <b>dubbele XP</b>. ⚡';
-      if(revived>0)msg+=' En omdat je weer begon, heb ik je streak van <b>'+revived+' dagen</b> gered! 🔥';
-      setTimeout(function(){vonkSay(msg,{mood:'trots',side:'left',duration:0});},1300);
-    }
+    let cap='<b>Missie volbracht!</b><br>De hele dag <b>dubbele XP</b> ⚡';
+    if(revived>0)cap+='<br>Streak van <b>'+revived+' dagen</b> gered! 🔥';
+    if(typeof vonkCelebrate==='function')setTimeout(function(){vonkCelebrate(cap);},900);
+    else if(typeof vonkSay==='function')setTimeout(function(){vonkSay(cap.replace(/<br>/g,' '),{mood:'trots',side:'left',duration:0});},1300);
   }catch(e){}
   try{trackEvent('dagmissie_voltooid',{boost:1,streak_gered:revived>0});}catch(e){}
 }
@@ -571,6 +570,7 @@ function slagioVlagUit(kind){
             '</g>'+
           '</g>'+
         '</svg>'+
+        '<div class="vlag-vonk">'+((typeof mascotSVG==='function')?mascotSVG('feest',96):'')+'</div>'+
         '<div class="vlag-label">'+label+'</div>'+
       '</div>';
     document.body.appendChild(ov);
