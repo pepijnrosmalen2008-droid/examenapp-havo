@@ -778,19 +778,21 @@
 
 <!-- FEATURE DISCOVERY (one-time) -->
 <div id="feat-disc-home"></div>
-<!-- QUICK ACCESS CHIPS -->
-<div class="w"><div class="hm-quick-scroll" id="hm-quick-scroll"></div></div>
-<!-- BENTO GRID (stats + quick actions) -->
-<div id="home-bento"></div>
-
-<!-- SOCIAAL SHORTCUTS (mobiel only) -->
-<div class="w hm-sociaal-section">
-  <div class="hm-sociaal-row">
-    <button class="hm-soc-btn hm-soc-lb" onclick="show('sc-leaderboard');renderLeaderboard()"><svg class="hm-soc-ic" viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"/><path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"/><path d="M4 22h16"/><path d="M10 14.66V17c0 .55-.47.98-.97 1.21C7.85 18.75 7 20.24 7 22"/><path d="M14 14.66V17c0 .55.47.98.97 1.21C16.15 18.75 17 20.24 17 22"/><path d="M18 2H6v7a6 6 0 0 0 12 0V2Z"/></svg>Leaderboard</button>
-    <button class="hm-soc-btn hm-soc-grp" onclick="show('sc-groep');renderGroepScreen()"><svg class="hm-soc-ic" viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>Mijn Groep</button>
-    <button class="hm-soc-btn hm-soc-fb" onclick="openFoutenboek()"><span class="hm-fb-badge" id="fb-home-badge" style="display:none">0</span><svg class="hm-soc-ic" viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>Foutenboek</button>
+<!-- SNEL NAAR — één helder menu naar alle pagina's -->
+<div class="w">
+  <div class="hm-menu">
+    <button class="hm-menu-tile" onclick="show('sc-studieplan');renderStudieplan()"><span class="hm-menu-ic">📅</span>Studieplan</button>
+    <button class="hm-menu-tile" onclick="openRapport()"><span class="hm-menu-ic">📊</span>Voortgang</button>
+    <button class="hm-menu-tile" onclick="show('sc-schedule')"><span class="hm-menu-ic">📄</span>Examens</button>
+    <button class="hm-menu-tile" onclick="show('sc-calc');setTimeout(prefillCalcFromSaved,50)"><span class="hm-menu-ic">🧮</span>Cijfers</button>
+    <button class="hm-menu-tile" onclick="openFoutenboek()"><span class="hm-fb-badge" id="fb-home-badge" style="display:none">0</span><span class="hm-menu-ic">📕</span>Foutenboek</button>
+    <button class="hm-menu-tile" onclick="openHerhalen()"><span class="hm-menu-ic">🔄</span>Herhalen</button>
+    <button class="hm-menu-tile" onclick="show('sc-leaderboard');renderLeaderboard()"><span class="hm-menu-ic">🏆</span>Leaderboard</button>
+    <button class="hm-menu-tile" onclick="show('sc-groep');renderGroepScreen()"><span class="hm-menu-ic">👥</span>Groep</button>
   </div>
 </div>
+<!-- BENTO GRID (stats — desktop) -->
+<div id="home-bento"></div>
 
 <div class="w">
 
@@ -808,7 +810,6 @@
     <span class="hsh-sub">Streak, XP en dagelijkse doelen</span>
   </div>
   <div id="xp-home-bar"></div>
-  <div id="daily-goal-home"></div>
   <div id="daily-challenge-home" class="daily-wrap"></div>
   <div id="streak-milestone-banner-home"></div>
   <div id="streak-home"></div>
@@ -1309,14 +1310,11 @@
     <div style="font-size:13px;color:rgba(255,255,255,.6);margin-bottom:12px">Alleen spelers met een account verschijnen op het leaderboard. Gratis aanmelden duurt 30 seconden.</div>
     <button onclick="switchAuthTab&&switchAuthTab('register');show('sc-auth')" style="background:linear-gradient(135deg,#6366f1,#4f46e5);color:#fff;border:none;border-radius:10px;padding:10px 22px;font-size:14px;font-weight:700;cursor:pointer;font-family:var(--font)">Account aanmaken →</button>
   </div>
-  <button class="res-next-dom" id="res-next-dom" onclick="nextDomeinQ()">→ Volgend domein oefenen</button>
+  <button class="res-next-dom" id="res-next-dom" onclick="nextDomeinQ()" style="display:none">→ Volgend domein oefenen</button>
   <div class="rbtns">
     <button class="btnp" onclick="retryQ()"><svg class="ico" viewBox="0 0 24 24" width="1em" height="1em" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M17 2.5 21 6l-4 3.5"/><path d="M3 11V9a4 4 0 0 1 4-4h14"/><path d="M7 21.5 3 18l4-3.5"/><path d="M21 13v2a4 4 0 0 1-4 4H3"/></svg> Opnieuw</button>
-    <button class="chal-daag-btn" onclick="daagUit()">⚔️ Daag een vriend uit</button>
     <button class="lb-res-btn" id="lb-res-btn" onclick="show('sc-leaderboard');renderLeaderboard()"><svg class="ico" viewBox="0 0 24 24" width="1em" height="1em" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 4h10v5a5 5 0 0 1-10 0z"/><path d="M7 6H4v1a3 3 0 0 0 3 3"/><path d="M17 6h3v1a3 3 0 0 1-3 3"/><path d="M12 14v3"/><path d="M8.5 21h7"/><path d="M9.5 21a2.5 2.5 0 0 1 5 0"/></svg> Bekijk leaderboard</button>
-    <button class="btns" onclick="deelScore()"><svg class="ico" viewBox="0 0 24 24" width="1em" height="1em" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 15V4"/><path d="m7.5 8.5 4.5-4.5 4.5 4.5"/><path d="M4 15v3a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-3"/></svg> Deel je score</button>
     <button class="btns" onclick="openReview()"><svg class="ico" viewBox="0 0 24 24" width="1em" height="1em" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 3v5h5"/><path d="M14 3H6v18h12V8z"/><path d="M9 13h6M9 17h6"/></svg> Bekijk antwoorden</button>
-    <button class="btns" onclick="switchMode()"><svg class="ico" viewBox="0 0 24 24" width="1em" height="1em" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M17 2.5 21 6l-4 3.5"/><path d="M3 11V9a4 4 0 0 1 4-4h14"/><path d="M7 21.5 3 18l4-3.5"/><path d="M21 13v2a4 4 0 0 1-4 4H3"/></svg> Andere modus</button>
     <button class="btns" onclick="show('sc-detail')">← Terug naar domeinen</button>
     <button class="btns" onclick="show('sc-home')"><svg class="ico" viewBox="0 0 24 24" width="1em" height="1em" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 10.5 12 3l9 7.5"/><path d="M5 9.5V21h5v-6h4v6h5V9.5"/></svg> Home</button>
   </div>
@@ -1582,7 +1580,6 @@
     <button class="calc-tab" onclick="switchCalc('eind')">Eindcijfer</button>
     <button class="calc-tab" onclick="switchCalc('nterm')">N-term</button>
     <button class="calc-tab" onclick="switchCalc('herk')">Herkansing</button>
-    <button class="calc-tab" onclick="switchCalc('plan')">Actieplan</button>
   </div>
 
   <div id="calc-slaag" class="calc-panel active">
@@ -1636,9 +1633,7 @@
     <div id="herk-result"></div>
   </div>
 
-  <div id="calc-plan" class="calc-panel">
-    <div id="actieplan-content"><p class="ap-empty">Laden...</p></div>
-  </div>
+  <!-- Actieplan is samengevoegd met het Studieplan (cijfer-bewuste prioriteit). -->
   <!-- Ad: calculator pagina (rustmoment) -->
 </div>
 </div>

@@ -273,10 +273,12 @@ if(!window._cdTimer)window._cdTimer=setInterval(updateCountdown,1000);
 
 // ═══════ GRADE CALCULATORS ═══════
 function switchCalc(id){
+  const panel=document.getElementById('calc-'+id);
+  if(!panel)return; // paneel bestaat niet meer (bv. het samengevoegde 'plan')
   document.querySelectorAll('.calc-tab').forEach(t=>t.classList.remove('active'));
   document.querySelectorAll('.calc-panel').forEach(p=>p.classList.remove('active'));
-  document.getElementById('calc-'+id).classList.add('active');
-  event.target.classList.add('active');
+  panel.classList.add('active');
+  if(typeof event!=='undefined'&&event&&event.target&&event.target.classList)event.target.classList.add('active');
   if(id==='slaag')buildSlaagInputs();
   if(id==='eind'){buildEindVakSelect();}
   if(id==='nterm'){buildNtermVakSelect();}

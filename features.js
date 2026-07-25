@@ -485,7 +485,7 @@ function renderDagmissie(){
     return;
   }
   const m=dagmissiePick();
-  const svg=(typeof mascotSVG==='function')?mascotSVG(m.mood,54):('<span class="dm-check">'+m.ico+'</span>');
+  const svg=(typeof mascotSVG==='function')?mascotSVG(m.mood,46):('<span class="dm-check">'+m.ico+'</span>');
   box.innerHTML='<div class="dm-card"><div class="dm-vonk">'+svg+'</div><div class="dm-body"><div class="dm-kicker">🎯 Dagmissie van Vonk</div><div class="dm-title">'+m.title+'</div><div class="dm-sub">'+m.sub+'</div></div><button class="dm-btn" onclick="'+m.act+'">'+m.btn+' →</button></div>';
 }
 // Vonk kondigt de dagmissie 1× per dag aan (niet voor kersverse gebruikers: die krijgen eerst de intro).
@@ -749,23 +749,10 @@ function renderHomeStats(){
         <div class="bento-stat"><div class="bento-si" style="color:var(--mu)"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="22 7 13.5 15.5 8.5 10.5 2 17"/><polyline points="16 7 22 7 22 13"/></svg></div><div class="bento-sv" style="font-size:13px;font-weight:700;color:var(--mu)">Cijfers</div><div class="bento-sl" style="font-size:10px">Voer in →</div></div>
       </div>`;
   const groepCell='';
-  // ── Streak milestone cell (conditional, full-width) ──
-  let smCell='';
-  const nextMile2=getNextStreakMilestone(streak);
-  if(nextMile2){
-    const dLeft=nextMile2-streak;
-    if(dLeft>0&&dLeft<=7){
-      const bMap={7:{e:'⚡',n:'Een week'},14:{e:'💎',n:'Twee weken'},30:{e:'🔮',n:'Een maand'},100:{e:'👑',n:'Legende'},200:{e:'🌌',n:'Onsterfelijk'},300:{e:'⚜️',n:'Grootmeester'},365:{e:'🪐',n:'Heel het jaar'}};
-      const b=bMap[nextMile2]||{e:'🏅',n:nextMile2+' dagen'};
-      const fp=Math.round(Math.min(99,streak/nextMile2*100));
-      smCell=`<div class="bento-cell streak-milestone-banner" style="grid-column:1/-1;border-radius:14px;padding:12px 16px;margin:0">
-        <div class="smb-row"><div class="smb-icon">${ICO_FLAME}</div><div class="smb-text">Nog <strong>${dLeft} dag${dLeft>1?'en':''}</strong> tot je ${b.e} <strong>${b.n}</strong> badge! Oefen vandaag voor dag ${streak+1}.</div></div>
-        <div class="smb-bar-wrap"><div class="smb-bar-fill" style="width:${fp}%"></div></div>
-        <div class="smb-bar-lbl">${streak} / ${nextMile2} dagen</div>
-      </div>`;
-    }
-  }
-  box.innerHTML=`<div class="bento">${streakCell}${lvlCell}${badgeCell}${avgCell}${groepCell}${actCells}${smCell}</div>`;
+  // De weekbadge-teller staat als losse banner (#streak-milestone-banner-home,
+  // via renderStreakMilestoneBanner) — niet nog eens in de bento, anders staat
+  // hij dubbel op de homepagina.
+  box.innerHTML=`<div class="bento">${streakCell}${lvlCell}${badgeCell}${avgCell}${groepCell}${actCells}</div>`;
 }
 
 function renderXPHome(){

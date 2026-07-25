@@ -1213,14 +1213,6 @@ function toonRes(){
       </div>`;
       rbdEl.insertAdjacentElement('afterend',shareCard);
     }
-    // Near-miss nudge
-    const missedCount=tot-Math.round(sc);
-    if(rbdEl&&pct>=0.8&&pct<1&&tot>=4&&missedCount<=2){
-      const nm=document.createElement('div');
-      nm.className='nearmiss-nudge';
-      nm.innerHTML=`<span>Bijna! Nog maar ${missedCount} ${missedCount===1?'fout':'fouten'}...</span><button onclick="retryQ()">Doe het opnieuw →</button>`;
-      rbdEl.insertAdjacentElement('afterend',nm);
-    }
     // Persoonlijk record banner
     if(rbdEl&&_recordResult&&_recordResult.isNewRecord&&sc>0){
       const prevPct=_recordResult.prevBest>0?Math.round(_recordResult.prevBest/_recordResult.total*100):null;
@@ -1232,44 +1224,11 @@ function toonRes(){
       setTimeout(()=>{playSound('levelup');haptic([40,20,80,20,120]);},300);
       if(earnAch('record1'))setTimeout(()=>showAch('🏆','Je eerste persoonlijk record!'),600);
     }
-    // Feature 2: PB banner (for new PB from savePB)
-    if(window._newPB){
-      const pbEl=document.createElement('div');
-      pbEl.className='pb-banner';
-      const oldPctStr=window._oldPB!==null?`<div class="pb-prev">Vorige record: ${Math.round(window._oldPB*100)}% → nu ${Math.round(pct*100)}%</div>`:'';
-      pbEl.innerHTML=`🏆 Nieuw persoonlijk record!${oldPctStr}`;
-      const anchor=document.getElementById('rbd');
-      if(anchor)anchor.insertAdjacentElement('afterend',pbEl);
-    }
-    // Feature 3: Smart next action
-    try{
-      const naEl=document.getElementById('quiz-next-action');
-      if(naEl&&ST.vak&&ST.domein){
-        const na=getSmartNextAction(ST.vak.id,ST.domein.id,pct);
-        if(na){
-          let btnAttr='';
-          if(na.type==='retry')btnAttr=`onclick="retryQ()"`;
-          else if(na.type==='domain')btnAttr=`onclick="openVak('${ST.vak.id}');setTimeout(()=>{const el=document.querySelector('[data-domein-id=\\'${na.domeinId}\\']');if(el)el.scrollIntoView({behavior:'smooth'});},300)"`;
-          else if(na.type==='simtoets')btnAttr=`onclick="openVak('${ST.vak.id}')"`;
-          naEl.innerHTML=`<div class="next-action-card">
-            <div class="na-icon">${na.icon}</div>
-            <div class="na-info"><div class="na-label">${na.label}</div><div class="na-sub">${na.sub}</div></div>
-            <button class="na-btn" ${btnAttr}>Ga →</button>
-          </div>`;
-        }
-      }
-    }catch(e){}
-    // Show "next domain" button if there's a next domain
-    try{
-      const _ndb=document.getElementById('res-next-dom');
-      if(_ndb&&ST.vak&&ST.domein){
-        const _doms=ST.vak.domeinen;
-        const _idx=_doms.findIndex(d=>d.id===ST.domein.id);
-        const _next=_doms[_idx+1];
-        if(_next){_ndb.textContent=`→ Volgend: Domein ${_next.id} - ${_next.naam}`;_ndb.style.display='block';}
-        else _ndb.style.display='none';
-      }
-    }catch(e){}
+    // (Tweede PB-banner + losse "smart next action" + "volgend domein"-knop
+    //  verwijderd: die dubbelden met de record-banner hierboven en met de
+    //  one-more-kaart onderaan. Eén record-banner, één "wat nu"-kaart.)
+    const _ndb=document.getElementById('res-next-dom');if(_ndb)_ndb.style.display='none';
+    const _naEl=document.getElementById('quiz-next-action');if(_naEl)_naEl.innerHTML='';
   }catch(e){console.warn('toonRes display error:',e);}
   // XP reward
   try{
@@ -1485,7 +1444,7 @@ function renderHmQuickChips(){
   const chips=[
     {icon:'📅',label:'Studieplan',fn:()=>show('sc-schedule')},
     {icon:'📊',label:'Voortgang',fn:()=>openRapport()},
-    {icon:'📋',label:'Actieplan',fn:()=>{show('sc-calc');setTimeout(()=>switchCalc('plan'),100);}},
+    {icon:'📋',label:'Studieplan',fn:()=>{show('sc-studieplan');renderStudieplan();}},
     vakNaam
       ?{icon:'📄',label:`${vakNaam} examens`,fn:()=>openLastVakCE()}
       :{icon:'📄',label:'CE-examens',fn:()=>show('sc-schedule')},

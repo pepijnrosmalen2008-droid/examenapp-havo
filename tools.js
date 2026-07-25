@@ -290,6 +290,9 @@ function renderStudieplan(){
   const MN=['jan','feb','mrt','apr','mei','jun','jul','aug','sep','okt','nov','dec'];
   const prefs=spGetPrefs();
   const BUDGET={0:0,1:30,2:50,3:70}; // minuten per dag per intensiteit
+  // Ingevoerde SE-cijfers: het studieplan weegt vakken met een laag cijfer zwaarder
+  // (samengevoegd vanuit het vroegere losse "Actieplan").
+  const spCijfers=(typeof getSavedCijfers==='function')?getSavedCijfers():{};
 
   // [icon, label, cssClass, mode, minutes]
   const ACTS={
@@ -335,11 +338,14 @@ function renderStudieplan(){
   const pool=[];
   Object.values(vakInfo).forEach(({vak,examD,daysLeft,domains})=>{
     const examDateStr=examD.toISOString().slice(0,10);
+    // Cijfer-boost: een laag SE-cijfer tilt alle domeinen van dat vak omhoog.
+    const _gr=spCijfers[vak.id];
+    const gradeBoost=_gr!=null?(_gr<5.5?1.9:_gr<6?1.6:_gr<7?1.3:1):1;
     domains.filter(d=>d.urgency<3).forEach(dom=>{
       spDomActivities(dom,dom.trend).forEach(actKey=>{
         const [,,,mode,mins]=ACTS[actKey];
         const urgFactor=[3,2,1][dom.urgency]??1;
-        const priority=(1-dom.pct)*urgFactor*100/Math.max(1,daysLeft)+(dom.trend==='down'?50:0);
+        const priority=((1-dom.pct)*urgFactor*100/Math.max(1,daysLeft)+(dom.trend==='down'?50:0))*gradeBoost;
         pool.push({priority,vakId:vak.id,vakNaam:vak.naam,domId:dom.id,domNaam:dom.naam,
           actKey,mins,mode,examDateStr,daysLeft,pct:dom.pct,hasData:dom.hasData});
       });
@@ -560,7 +566,47 @@ function renderStudieplan(){
   });
   masteryHtml+='</div>';
 
-  el.innerHTML=vandaagHtml+summaryHtml+calHtml+masteryHtml;
+  // ── Prioriteit op basis van je cijfers (samengevoegd "Actieplan") ──
+  let prioHtml='';
+  const _hasCijfers=Object.keys(spCijfers).length>0;
+  if(!_hasCijfers){
+    prioHtml=`<div class="sp-prio sp-prio-invite" onclick="show('sc-calc');setTimeout(prefillCalcFromSaved,50)">
+      <div class="sp-prio-invite-ic">🧮</div>
+      <div class="sp-prio-invite-body">
+        <div class="sp-prio-invite-t">Voer je cijfers in</div>
+        <div class="sp-prio-invite-s">Dan richt ik je studieplan op de vakken waar je de meeste punten kunt winnen.</div>
+      </div>
+      <span class="sp-prio-invite-go">→</span>
+    </div>`;
+  }else{
+    const _prio=[];
+    getVK().forEach(v=>{
+      const se=spCijfers[v.id]!=null?spCijfers[v.id]:null;
+      const q=(typeof getVakBestPct==='function')?getVakBestPct(v.id):{hasData:false};
+      const qp=q.hasData?q.pct:null;
+      if(se==null&&qp==null)return;
+      const isMust=(se!=null&&se<6)||(qp!=null&&qp<0.5);
+      const isCan=!isMust&&((se!=null&&se<7)||(qp!=null&&qp<0.65));
+      _prio.push({v,se,qp,rank:isMust?0:isCan?1:2});
+    });
+    _prio.sort((a,b)=>a.rank-b.rank||((a.se??10)-(b.se??10)));
+    const _need=_prio.filter(p=>p.rank<2);
+    const _ok=_prio.filter(p=>p.rank===2).length;
+    if(_need.length){
+      const rows=_need.map(p=>{
+        const parts=[];
+        if(p.se!=null)parts.push('SE '+p.se.toFixed(1).replace('.',','));
+        if(p.qp!=null)parts.push('quiz '+Math.round(p.qp*100)+'%');
+        const dot=p.rank===0?'🔴':'🟠';
+        return`<div class="ap-item"><div class="ap-dot" style="background:${p.v.kleur||'var(--or)'}"></div><div class="ap-info"><div class="ap-naam">${dot} ${p.v.naam}</div><div class="ap-detail">${parts.join(' · ')}</div></div><button class="ap-btn" onclick="openVak('${p.v.id}')">Oefen →</button></div>`;
+      }).join('');
+      prioHtml=`<div class="sp-prio"><div class="sp-section-title">📋 Wat heeft prioriteit?</div>${rows}${_ok?`<div class="ap-ontrack">🟢 ${_ok} vak${_ok===1?'':'ken'} op koers</div>`:''}</div>`;
+    }else if(_prio.length){
+      prioHtml=`<div class="sp-prio"><div class="ap-ontrack" style="margin:0">🟢 Al je vakken met cijfers staan op koers. Sterk bezig!</div></div>`;
+    }
+  }
+
+  el.innerHTML=vandaagHtml+prioHtml+summaryHtml+calHtml+masteryHtml;
   try{if(typeof renderFbStudieplanRow==='function')renderFbStudieplanRow();}catch(e){} // top-container legen (regel zit nu in Vandaag)
   localStorage.setItem('slagio_plan_generated','1');
   if(todayAllTasks.length)setTimeout(()=>document.querySelector('.sp-vandaag')?.scrollIntoView({behavior:'smooth',block:'nearest'}),120);

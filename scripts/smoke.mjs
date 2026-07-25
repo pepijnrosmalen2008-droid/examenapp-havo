@@ -105,9 +105,9 @@ try {
   hardHide ? bad('.hm-sociaal-section wordt met display:none!important verborgen — leaderboard onbereikbaar op mobiel')
            : ok('.hm-sociaal-section niet hard verborgen (leaderboard bereikbaar op mobiel)');
   const idx = read('index.html');
-  idx.includes("show('sc-leaderboard')") && idx.includes('hm-soc-lb')
-    ? ok('home heeft leaderboard-knop (.hm-soc-lb)')
-    : bad('leaderboard-knop (.hm-soc-lb) ontbreekt in index.html');
+  idx.includes("show('sc-leaderboard')") && idx.includes('hm-menu')
+    ? ok('home heeft leaderboard-knop in het menu-grid (.hm-menu)')
+    : bad('leaderboard-knop ontbreekt in het home-menu (.hm-menu) in index.html');
 } catch (e) { bad('CSS/leaderboard-check mislukt: ' + e.message); }
 
 // 5b. Leaderboard-bots: mens-bots hebben een dier-avatar (animalId + stage),

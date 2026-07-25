@@ -1563,6 +1563,16 @@ html.dark .qb{background:#2e3550}
 .ap-detail{font-size:11px;color:var(--mu);margin-top:1px}
 .ap-btn{font-size:12px;font-weight:700;padding:5px 12px;border-radius:9px;background:var(--or);color:#fff;border:none;cursor:pointer;white-space:nowrap;font-family:var(--font)}
 .ap-empty{text-align:center;padding:24px;color:var(--mu);font-size:13px;line-height:1.8}
+.ap-ontrack{font-size:12.5px;font-weight:700;color:#16a34a;background:rgba(34,197,94,.09);border:1px solid rgba(34,197,94,.22);border-radius:10px;padding:8px 12px;margin-top:4px}
+/* Cijfer-prioriteit in het studieplan (samengevoegd Actieplan) */
+.sp-prio{margin:4px 0 6px}
+.sp-prio-invite{display:flex;align-items:center;gap:12px;padding:13px 14px;border-radius:16px;border:1px dashed rgba(var(--or-rgb),.4);background:rgba(var(--or-rgb),.06);cursor:pointer;transition:transform .15s}
+.sp-prio-invite:hover{transform:translateY(-2px)}
+.sp-prio-invite-ic{font-size:26px;flex-shrink:0}
+.sp-prio-invite-body{flex:1;min-width:0}
+.sp-prio-invite-t{font-family:var(--font-head);font-weight:900;font-size:15px;color:var(--dk)}
+.sp-prio-invite-s{font-size:12.5px;color:var(--mu);margin-top:1px;line-height:1.4}
+.sp-prio-invite-go{font-family:var(--font-head);font-weight:900;font-size:20px;color:var(--or);flex-shrink:0}
 .ap-slaag-link{display:block;text-align:center;margin-top:16px;padding:11px;border-radius:12px;background:rgba(var(--or-rgb),.1);border:1px solid rgba(var(--or-rgb),.25);color:var(--or);font-size:13px;font-weight:700;cursor:pointer;transition:background .15s}
 .ap-slaag-link:hover{background:rgba(var(--or-rgb),.18)}
 
@@ -3333,6 +3343,15 @@ html.dark .hsd-pill{background:var(--bg2);border-color:var(--bo2)}
 .hm-quick-scroll{display:flex;gap:8px;overflow-x:auto;padding:10px 0 6px;-webkit-overflow-scrolling:touch;scrollbar-width:none}
 .hm-quick-scroll::-webkit-scrollbar{display:none}
 .hm-qchip{flex-shrink:0;display:inline-flex;align-items:center;gap:6px;padding:8px 15px;border-radius:24px;font-size:13px;font-weight:700;cursor:pointer;border:1.5px solid var(--bo);background:var(--s);color:var(--dk);font-family:var(--font);transition:all .18s;white-space:nowrap}
+/* ── Home-menu: één helder grid naar alle pagina's ── */
+.hm-menu{display:grid;grid-template-columns:repeat(4,1fr);gap:9px;margin:2px 0 4px}
+.hm-menu-tile{position:relative;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:5px;padding:13px 6px;border-radius:15px;border:1.5px solid var(--bo);background:var(--s);color:var(--dk);font-family:var(--font-head);font-weight:800;font-size:12px;line-height:1.15;text-align:center;cursor:pointer;transition:transform .15s,border-color .18s,box-shadow .18s}
+.hm-menu-tile:hover{transform:translateY(-2px);border-color:var(--or);box-shadow:0 6px 16px rgba(0,0,0,.08)}
+.hm-menu-tile:active{transform:scale(.96)}
+.hm-menu-ic{font-size:22px;line-height:1}
+.hm-menu-tile .hm-fb-badge{top:6px;right:6px}
+@media(max-width:520px){.hm-menu{grid-template-columns:repeat(4,1fr);gap:7px}.hm-menu-tile{font-size:11px;padding:11px 4px}.hm-menu-ic{font-size:20px}}
+@media(max-width:360px){.hm-menu{grid-template-columns:repeat(3,1fr)}}
 .hm-qchip:hover{border-color:var(--or);color:var(--or);background:rgba(var(--or-rgb),.06);transform:translateY(-1px)}
 .hm-qchip:active{transform:scale(.97)}
 /* ── STATS STRIP (home, boven vakken) ─ */
@@ -3949,14 +3968,14 @@ html.dark .hsd-pill{background:var(--bg2);border-color:var(--bo2)}
 .vlag-reduce .vlag-vonk{animation:none}
 
 /* ── Dagmissie van Vonk (home) ── */
-.dm-card{display:flex;align-items:center;gap:12px;padding:12px 14px;margin:0 0 12px;border-radius:18px;
-  background:linear-gradient(135deg,rgba(251,140,62,.14),rgba(99,102,241,.10));border:1.5px solid rgba(251,140,62,.3)}
-.dm-vonk{flex-shrink:0;width:54px;height:54px}
-.dm-vonk .m-svg{width:54px;height:54px}
+.dm-card{display:flex;align-items:center;gap:11px;padding:11px 13px;margin:0 0 12px;border-radius:16px;
+  background:linear-gradient(135deg,rgba(251,140,62,.09),rgba(99,102,241,.06));border:1px solid var(--bo)}
+.dm-vonk{flex-shrink:0;width:46px;height:46px}
+.dm-vonk .m-svg{width:46px;height:46px}
 .dm-body{flex:1;min-width:0}
-.dm-kicker{font-family:var(--font-head);font-weight:900;font-size:10.5px;letter-spacing:.4px;text-transform:uppercase;color:var(--or);margin-bottom:2px}
-.dm-title{font-family:var(--font-head);font-weight:900;font-size:16px;color:var(--dk);line-height:1.2}
-.dm-sub{font-size:12.5px;color:var(--mu);margin-top:2px}
+.dm-kicker{font-family:var(--font-head);font-weight:900;font-size:10px;letter-spacing:.4px;text-transform:uppercase;color:var(--or);margin-bottom:1px}
+.dm-title{font-family:var(--font-head);font-weight:900;font-size:15px;color:var(--dk);line-height:1.2}
+.dm-sub{font-size:12px;color:var(--mu);margin-top:1px}
 .dm-btn{flex-shrink:0;padding:10px 15px;border:none;border-radius:12px;background:var(--or);color:#fff;font-family:var(--font-head);font-weight:800;font-size:13px;cursor:pointer;transition:transform .15s,box-shadow .2s}
 .dm-btn:hover{transform:translateY(-2px);box-shadow:0 6px 16px rgba(251,140,62,.35)}
 .dm-done{border-color:rgba(34,197,94,.35);background:rgba(34,197,94,.07)}
