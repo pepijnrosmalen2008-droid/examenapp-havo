@@ -575,7 +575,7 @@ async function doRegister(){
   if(!selectedAnimalId){errEl.textContent='Kies eerst je startdier!';errEl.style.display='block';return;}
   btn.disabled=true;btn.textContent='Bezig...';btn.classList.add('loading');
   try{
-    const {data,error}=await SB.auth.signUp({email,password:pass});
+    const {data,error}=await SB.auth.signUp({email,password:pass,options:{emailRedirectTo:'https://slagio.nl'}});
     if(error)throw error;
     const initAvatar=selectedAnimalId?getAnimalEmoji(selectedAnimalId,0):'🐾';
     const prof={naam,avatar:initAvatar,animalId:selectedAnimalId,school:'',klas:'',profiel:''};
