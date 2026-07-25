@@ -566,44 +566,31 @@ function renderStudieplan(){
   });
   masteryHtml+='</div>';
 
-  // ── Prioriteit op basis van je cijfers (samengevoegd "Actieplan") ──
-  let prioHtml='';
+  // ── Vonk stemt het plan af op je cijfers (geïntegreerd, geen los actieplan) ──
   const _hasCijfers=Object.keys(spCijfers).length>0;
+  const _vonkFig=m=>(typeof mascotSVG==='function')?`<div class="sp-vonk-fig">${mascotSVG(m,72)}</div>`:'';
+  let prioHtml='';
   if(!_hasCijfers){
-    prioHtml=`<div class="sp-prio sp-prio-invite" onclick="show('sc-calc');setTimeout(prefillCalcFromSaved,50)">
-      <div class="sp-prio-invite-ic">🧮</div>
-      <div class="sp-prio-invite-body">
-        <div class="sp-prio-invite-t">Voer je cijfers in</div>
-        <div class="sp-prio-invite-s">Dan richt ik je studieplan op de vakken waar je de meeste punten kunt winnen.</div>
+    prioHtml=`<div class="sp-vonk">${_vonkFig('denk')}
+      <div class="sp-vonk-body">
+        <div class="sp-vonk-name">Vonk</div>
+        <div class="sp-vonk-say">Ik ken je cijfers nog niet. Voer ze in bij je profiel, dan maak ik een nauwkeuriger plan dat je stuurt naar de vakken waar je de meeste punten kunt winnen.</div>
+        <button class="sp-vonk-btn" onclick="goToCijferInvoer()">Cijfers invoeren →</button>
       </div>
-      <span class="sp-prio-invite-go">→</span>
     </div>`;
   }else{
-    const _prio=[];
-    getVK().forEach(v=>{
-      const se=spCijfers[v.id]!=null?spCijfers[v.id]:null;
-      const q=(typeof getVakBestPct==='function')?getVakBestPct(v.id):{hasData:false};
-      const qp=q.hasData?q.pct:null;
-      if(se==null&&qp==null)return;
-      const isMust=(se!=null&&se<6)||(qp!=null&&qp<0.5);
-      const isCan=!isMust&&((se!=null&&se<7)||(qp!=null&&qp<0.65));
-      _prio.push({v,se,qp,rank:isMust?0:isCan?1:2});
-    });
-    _prio.sort((a,b)=>a.rank-b.rank||((a.se??10)-(b.se??10)));
-    const _need=_prio.filter(p=>p.rank<2);
-    const _ok=_prio.filter(p=>p.rank===2).length;
-    if(_need.length){
-      const rows=_need.map(p=>{
-        const parts=[];
-        if(p.se!=null)parts.push('SE '+p.se.toFixed(1).replace('.',','));
-        if(p.qp!=null)parts.push('quiz '+Math.round(p.qp*100)+'%');
-        const dot=p.rank===0?'🔴':'🟠';
-        return`<div class="ap-item"><div class="ap-dot" style="background:${p.v.kleur||'var(--or)'}"></div><div class="ap-info"><div class="ap-naam">${dot} ${p.v.naam}</div><div class="ap-detail">${parts.join(' · ')}</div></div><button class="ap-btn" onclick="openVak('${p.v.id}')">Oefen →</button></div>`;
-      }).join('');
-      prioHtml=`<div class="sp-prio"><div class="sp-section-title">📋 Wat heeft prioriteit?</div>${rows}${_ok?`<div class="ap-ontrack">🟢 ${_ok} vak${_ok===1?'':'ken'} op koers</div>`:''}</div>`;
-    }else if(_prio.length){
-      prioHtml=`<div class="sp-prio"><div class="ap-ontrack" style="margin:0">🟢 Al je vakken met cijfers staan op koers. Sterk bezig!</div></div>`;
-    }
+    // Bepaal het zwaarst wegende vak (laagste SE onder de 7) voor een gerichte tip.
+    let _top=null;
+    getVK().forEach(v=>{const se=spCijfers[v.id];if(se!=null&&se<7&&(_top===null||se<_top.se))_top={v,se};});
+    const say=_top
+      ? `Ik heb je plan afgestemd op je cijfers. <strong>${_top.v.naam}</strong> (SE ${_top.se.toFixed(1).replace('.',',')}) weegt nu het zwaarst, dus die zie je vaker terug in je dagtaken.`
+      : `Ik heb je plan afgestemd op je cijfers. Je staat overal ruim voldoende, dus ik houd het plan lekker in balans.`;
+    prioHtml=`<div class="sp-vonk">${_vonkFig(_top?'kijk':'blij')}
+      <div class="sp-vonk-body">
+        <div class="sp-vonk-name">Vonk</div>
+        <div class="sp-vonk-say">${say}</div>
+      </div>
+    </div>`;
   }
 
   el.innerHTML=vandaagHtml+prioHtml+summaryHtml+calHtml+masteryHtml;
