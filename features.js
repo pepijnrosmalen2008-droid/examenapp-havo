@@ -212,7 +212,7 @@ function getLbBadgeOverlay(badgeId,borderColor){
   const b=ALL_BADGES.find(x=>x.id===badgeId);
   if(!b)return'';
   const rarity=b.rarity||'common';
-  return`<div class="lb-av-badge rarity-${rarity}" style="${borderColor?'border-color:'+borderColor:''}" title="${b.label} · ${RARITY_LABEL[rarity]||''}">${b.emoji}</div>`;
+  return`<div class="lb-av-badge no-ico rarity-${rarity}" style="${borderColor?'border-color:'+borderColor:''}" title="${b.label} · ${RARITY_LABEL[rarity]||''}">${b.emoji}</div>`;
 }
 // ── EVOLUTION REVEAL ─────────────────────────────────────────────
 function showEvoReveal(newStage,animalId){
@@ -1059,7 +1059,7 @@ function renderStreak(){
   let badgeHtml='';
   badgeDefs.forEach(b=>{
     const isEarned=!!ach[b.id];
-    badgeHtml+=`<div class="badge-tooltip badge ${isEarned?'earned':'unearned'}" data-tip="${b.tip}">${b.emoji}</div>`;
+    badgeHtml+=`<div class="badge-tooltip badge no-ico ${isEarned?'earned':'unearned'}" data-tip="${b.tip}">${b.emoji}</div>`;
   });
   // Headline
   const todayStr=new Date().toISOString().slice(0,10);

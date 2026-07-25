@@ -755,7 +755,7 @@ function renderProfileBadges(){
     sub.innerHTML=earned.length===0
       ?`<span style="color:var(--mu)">Maak quizzen om badges te verdienen</span>`
       :`<span style="color:var(--mu)">${earned.length} van ${ALL_BADGES.length} behaald · </span>`
-       +(selBadge?`<span style="color:var(--or);font-weight:700">${selBadge.emoji} ${selBadge.label} op avatar</span>`
+       +(selBadge?`<span style="color:var(--or);font-weight:700"><span class="no-ico">${selBadge.emoji}</span> ${selBadge.label} op avatar</span>`
                  :`<span style="color:var(--mu)">Klik een badge om te selecteren</span>`);
   }
   // Feature 6: badge progress data
@@ -823,7 +823,7 @@ function renderProfileBadges(){
             }
           }
           return `<div class="prof-badge-item badge-tooltip" data-tip="${tip}" ${clickAttr}>
-            <div class="prof-badge-circle ${isEarned?'earned rarity-'+b.rarity:'unearned'}${isSelected?' selected':''}">${b.emoji}${isSelected?'<span class="badge-selected-check">✓</span>':''}</div>
+            <div class="prof-badge-circle no-ico ${isEarned?'earned rarity-'+b.rarity:'unearned'}${isSelected?' selected':''}">${b.emoji}${isSelected?'<span class="badge-selected-check">✓</span>':''}</div>
             <div class="prof-badge-lbl ${isEarned?'earned':''}">${b.label}</div>
             ${isEarned?`<div class="prof-badge-rarity rarity-txt-${b.rarity}">${rarityLabel}</div>`:''}
             ${progHtml}

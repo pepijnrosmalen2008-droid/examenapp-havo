@@ -212,7 +212,7 @@ function openLbProfile(naam){
     const achieved=getAchieved();
     const earned=ALL_BADGES.filter(b=>achieved[b.id]);
     if(earned.length){
-      const items=earned.map(b=>`<div class="lbp-badge-item rarity-${b.rarity}" title="${b.label} - ${b.tip}"><span class="lbp-badge-emoji">${b.emoji}</span><span class="lbp-badge-lbl">${b.label}</span></div>`).join('');
+      const items=earned.map(b=>`<div class="lbp-badge-item rarity-${b.rarity}" title="${b.label} - ${b.tip}"><span class="lbp-badge-emoji no-ico">${b.emoji}</span><span class="lbp-badge-lbl">${b.label}</span></div>`).join('');
       badgeSectionHtml=`<p class="lbp-section-title">Jouw badges (${earned.length}/${ALL_BADGES.length})</p><div class="lbp-badges-grid">${items}</div>`;
     }
   } else {
@@ -221,7 +221,7 @@ function openLbProfile(naam){
     if(allBadgeIds.length){
       const earnedBadges=allBadgeIds.map(id=>ALL_BADGES.find(b=>b.id===id)).filter(Boolean);
       if(earnedBadges.length){
-        const items=earnedBadges.map(b=>`<div class="lbp-badge-item rarity-${b.rarity}" title="${b.label} - ${b.tip}"><span class="lbp-badge-emoji">${b.emoji}</span><span class="lbp-badge-lbl">${b.label}</span></div>`).join('');
+        const items=earnedBadges.map(b=>`<div class="lbp-badge-item rarity-${b.rarity}" title="${b.label} - ${b.tip}"><span class="lbp-badge-emoji no-ico">${b.emoji}</span><span class="lbp-badge-lbl">${b.label}</span></div>`).join('');
         badgeSectionHtml=`<p class="lbp-section-title">Badges (${earnedBadges.length})</p><div class="lbp-badges-grid">${items}</div>`;
       }
     } else {
@@ -230,7 +230,7 @@ function openLbProfile(naam){
       if(featB){
         badgeSectionHtml=`<p class="lbp-section-title">Uitgelichte badge</p>
           <div class="lbp-featured-badge rarity-${featB.rarity}">
-            <span style="font-size:30px;line-height:1">${featB.emoji}</span>
+            <span class="no-ico" style="font-size:30px;line-height:1">${featB.emoji}</span>
             <div><div style="font-size:13px;font-weight:700;color:var(--dk)">${featB.label}</div><div style="font-size:11px;color:var(--mu);margin-top:2px">${featB.tip} · <em>${RARITY_LABEL[featB.rarity]||''}</em></div></div>
           </div>`;
       }
