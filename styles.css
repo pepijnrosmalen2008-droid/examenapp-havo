@@ -1692,11 +1692,14 @@ html.dark .qb{background:#2e3550}
 .lb-av-badge.rarity-epic     {border-color:#8B5CF6;box-shadow:0 0 8px 3px rgba(139,92,246,.8)}
 .lb-av-badge.rarity-legendary{border-color:#F59E0B;box-shadow:0 0 10px 4px rgba(245,158,11,.85)}
 .lb-av-badge.rarity-mythic   {border-color:#EF4444;box-shadow:0 0 12px 5px rgba(239,68,68,.85),0 0 18px 7px rgba(245,158,11,.4);animation:mythicGlow 2s ease-in-out infinite}
-.lb-av-badge.rarity-common   {background:linear-gradient(135deg,#e5e7eb,#cbd5e1)}
-.lb-av-badge.rarity-rare     {background:linear-gradient(135deg,#dbeafe,#93c5fd)}
-.lb-av-badge.rarity-epic     {background:linear-gradient(135deg,#ede9fe,#c4b5fd)}
-.lb-av-badge.rarity-legendary{background:linear-gradient(135deg,#fef3c7,#fcd34d)}
-.lb-av-badge.rarity-mythic   {background:linear-gradient(135deg,#fee2e2,#fca5a5)}
+/* ── Badges: schone native emoji (Windows/Apple/Android) — geen custom cirkel/gradient/glow ── */
+.prof-badge-circle{background:transparent!important;border:none!important;box-shadow:none!important;animation:none!important;font-size:38px;filter:drop-shadow(0 2px 3px rgba(0,0,0,.16))}
+.prof-badge-circle.earned{background:transparent!important;border:none!important;box-shadow:none!important}
+.prof-badge-circle.unearned{filter:grayscale(1);opacity:.25}
+.prof-badge-circle.earned:hover{transform:scale(1.16) rotate(-6deg)}
+.prof-badge-circle.selected{outline:3px solid var(--or);outline-offset:2px}
+/* Kleine badge op leaderboard-avatars: schoon rondje met de emoji, geen glow */
+.lb-av-badge{background:var(--s)!important;border:2px solid var(--s)!important;box-shadow:0 1px 3px rgba(0,0,0,.28)!important;animation:none!important}
 .lb-av-badge.rarity-eternal  {animation:eternalGlow 3s linear infinite;border-color:transparent;background:linear-gradient(var(--bg2,#1a1a2e),var(--bg2,#1a1a2e)) padding-box,linear-gradient(var(--a,0deg),#f43f5e,#f97316,#eab308,#22c55e,#06b6d4,#8b5cf6,#f43f5e) border-box;box-shadow:0 0 14px 5px rgba(139,92,246,.6)}
 /* Rarity tekst kleuren */
 .rarity-txt-common   {color:#9CA3AF}

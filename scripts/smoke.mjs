@@ -119,9 +119,10 @@ try {
   for (const niveau of ['havo', 'vwo']) {
     const bots = lg.B[niveau] || [];
     const human = bots.filter(b => b.animalId);
-    bots.length >= 12 ? ok(`${niveau}: ${bots.length} bots (opvulling)`) : bad(`${niveau}: te weinig bots (${bots.length})`);
+    bots.length >= 200 ? ok(`${niveau}: ${bots.length} bots`) : bad(`${niveau}: te weinig bots (${bots.length}, verwacht 200)`);
+    new Set(bots.map(b => b.naam)).size === bots.length ? ok(`${niveau}: alle ${bots.length} bot-namen uniek`) : bad(`${niveau}: dubbele bot-namen`);
     human.length === bots.length && human.every(b => b.animalId && b.stageIdx != null && b.avatar == null)
-      ? ok(`${niveau}: alle ${human.length} bots zijn mens-bots met dier-avatar (geen robot-bots meer)`)
+      ? ok(`${niveau}: alle bots zijn mens-bots met dier-avatar (geen robot-bots)`)
       : bad(`${niveau}: niet alle bots zijn mens-bots met dier-avatar`);
     human.every(b => b.featuredBadgeId && Array.isArray(b.badgeIds) && b.badgeIds.length >= 3)
       ? ok(`${niveau}: mens-bots hebben geloofwaardige badges`)

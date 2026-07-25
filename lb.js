@@ -107,40 +107,35 @@ function _botBadges(score){
   const feat=score>=900?'streak30':score>=800?'combo10':score>=700?'streak14':score>=600?'quiz50':score>=500?'combo5':score>=450?'streak7':'quiz10';
   return{featuredBadgeId:feat,badgeIds:ids};
 }
-function _mkBots(niveau,rows){
-  return rows.map((r,i)=>{
-    // Alle vulbots zijn nu mens-achtig: gewone naam + dier-avatar + evolutie-stage
-    // en een geloofwaardige badge-collectie (net als echte leerlingprofielen).
-    const [naam,avatar,score,goed,vak,avgTijd,animalId]=r;
-    const bdg=animalId?_botBadges(score):{featuredBadgeId:null,badgeIds:[]};
-    return{uid:'bot_'+niveau+'_'+i,naam,
-      avatar:animalId?null:avatar,
-      animalId:animalId||null,stageIdx:animalId?_botStage(score):null,
-      featuredBadgeId:bdg.featuredBadgeId,badgeIds:bdg.badgeIds,vak,vakNaam:_BOT_VAKNAAM[vak]||vak,
-      domeinId:null,domeinNaam:null,score,goed,tot:10,avgTijd,niveau,
-      date:'2026-05-'+String(9+(i%19)).padStart(2,'0'),_bot:true};
-  });
+// Namenpool + dieren voor de vulbots. Alle bots zijn mens-achtig (gewone naam +
+// dier-avatar + badges). Bij >pool-grootte maken achternaam-initialen ze uniek.
+const _BOT_VN=['Noa','Sanne','Emma','Julia','Tess','Anna','Sophie','Lisa','Fenna','Isa','Sara','Eva','Lotte','Roos','Zoë','Nora','Mila','Liv','Yara','Lente','Evi','Lieke','Fleur','Amber','Bente','Nina','Femke','Britt','Iris','Maud','Sofie','Vera','Loïs','Puck','Merel','Fay','Jasmijn','Elin','Guusje','Suus','Hanne','Noor','Milou','Kiki','Saar','Lina','Nour','Amina','Yasmin','Zeynep','Elif','Aya','Maya','Isra','Daan','Sem','Lucas','Milan','Levi','Finn','Luuk','Bram','Thijs','Jesse','Noah','Liam','Lars','Tim','Ruben','Gijs','Sven','Teun','Cas','Tobias','Mees','Stijn','Jens','Thomas','Max','Boaz','Julian','Hugo','Mats','Jort','Tygo','Ties','Siem','Job','Kai','Pim','Bas','Joris','Niek','Koen','Rick','Wout','Floris','Tijn','Sepp','Olivier','Vince','Melle','Dex','Benjamin','Willem','Roan','Aron','Nout','Owen','Senna','Fedde','Dani','Chris','Ivan','Mohammed','Yusuf','Sami','Amir','Adam','Bilal','Youssef','Ayoub','Rayan','Emir','Kaan','Deniz'];
+const _BOT_LI=['V.','B.','K.','M.','D.','S.','J.','H.','W.','R.','T.','L.','P.','G.','vD.','vdB.','dJ.','Z.','N.','C.'];
+const _BOT_DIER=['vos','wolf','uil','haai','vlinder','tijger','eenhoorn','olifant','leeuw','adelaar','draak','octopus'];
+const _BOT_VAK={havo:['nl','wa','wb','bi','sk','na','en','ec','be','gs','ak','mw','du','fr'],
+                vwo:['nl','wa','wb','bi','sk','na','en','ec','be','gs','ak','mw','du','fr','gr','la','in']};
+function _genBots(niveau,count){
+  const vaks=_BOT_VAK[niveau];const used=new Set();const out=[];
+  for(let i=0;i<count;i++){
+    const score=Math.round(985-(i/(count-1))*(985-110));
+    let base=_BOT_VN[i%_BOT_VN.length],naam=base,k=0;
+    while(used.has(naam)){naam=base+' '+(k<_BOT_LI.length?_BOT_LI[k]:'#'+(k+1));k++;}
+    used.add(naam);
+    const bdg=_botBadges(score);
+    out.push({uid:'bot_'+niveau+'_'+i,naam,avatar:null,
+      animalId:_BOT_DIER[i%_BOT_DIER.length],stageIdx:_botStage(score),
+      featuredBadgeId:bdg.featuredBadgeId,badgeIds:bdg.badgeIds,
+      vak:vaks[i%vaks.length],vakNaam:_BOT_VAKNAAM[vaks[i%vaks.length]]||vaks[i%vaks.length],
+      domeinId:null,domeinNaam:null,score,goed:Math.max(4,Math.min(10,Math.round(score/100))),
+      tot:10,avgTijd:Math.round((3+(1000-score)/90)*10)/10,niveau,
+      date:'2026-05-'+String(9+(i%19)).padStart(2,'0'),_bot:true});
+  }
+  return out;
 }
-// Alleen mens-achtige vulbots (gewone naam + dier-avatar). De oude robot-bots
-// (OefenBot/QuizMachine/StudieBot/ExamenBot/RoboLeerling/AI-Tutor) zijn verwijderd
-// omdat ze te herkenbaar bot waren. De top is aangevuld met nieuwe leerlingen.
+// 200 mens-achtige vulbots per niveau (unieke namen, score-spreiding, badges).
 const LB_BOTS={
-  havo:_mkBots('havo',[
-    ['Tijn','',935,10,'wa',5,'draak'],['Sanne','',905,10,'bi',7,'vos'],
-    ['Roos','',885,10,'na',6,'octopus'],['Daan','',865,9,'ec',8,'wolf'],
-    ['Fenna','',815,9,'en',9,'uil'],['Lucas','',780,9,'gs',10,'haai'],
-    ['Noor','',720,8,'ak',11,'vlinder'],['Sem','',690,8,'wb',9,'tijger'],
-    ['Julia K.','',610,7,'nl',12,'eenhoorn'],['Bram','',560,7,'en',13,'olifant'],
-    ['Milan','',450,6,'gs',12,'leeuw'],['Yara','',380,6,'bi',14,'adelaar'],
-  ]),
-  vwo:_mkBots('vwo',[
-    ['Thomas','',945,10,'wb',5,'draak'],['Thijs','',910,10,'na',7,'wolf'],
-    ['Lieke','',885,10,'sk',6,'tijger'],['Isa','',870,9,'bi',8,'uil'],
-    ['Lars','',820,9,'ec',9,'haai'],['Fenna','',785,9,'gs',10,'vos'],
-    ['Tess','',725,8,'en',11,'vlinder'],['Sven','',695,8,'du',9,'octopus'],
-    ['Nora','',615,7,'la',12,'eenhoorn'],['Jesse','',565,7,'gr',13,'leeuw'],
-    ['Evi','',455,6,'mw',12,'adelaar'],['Guus','',385,6,'fr',14,'wolf'],
-  ]),
+  havo:_genBots('havo',200),
+  vwo:_genBots('vwo',200),
 };
 async function loadLeaderboardFromSupabase(){
   let remote=[];
