@@ -110,8 +110,8 @@ try {
     : bad('leaderboard-knop ontbreekt in het home-menu (.hm-menu) in index.html');
 } catch (e) { bad('CSS/leaderboard-check mislukt: ' + e.message); }
 
-// 5b. Leaderboard-bots: mens-bots hebben een dier-avatar (animalId + stage),
-//     robot-bots houden een emoji-avatar. Dit voedt de "opvulling".
+// 5b. Leaderboard-bots: alle vulbots zijn mens-achtig (dier-avatar + stage +
+//     geloofwaardige badges). Robot-bots zijn verwijderd.
 try {
   const lg = {};
   new Function('g', read('lb.js').match(/const _BOT_VAKNAAM=[\s\S]*?const LB_BOTS=\{[\s\S]*?\n\};/)[0] +
@@ -119,14 +119,13 @@ try {
   for (const niveau of ['havo', 'vwo']) {
     const bots = lg.B[niveau] || [];
     const human = bots.filter(b => b.animalId);
-    const robot = bots.filter(b => !b.animalId);
     bots.length >= 12 ? ok(`${niveau}: ${bots.length} bots (opvulling)`) : bad(`${niveau}: te weinig bots (${bots.length})`);
-    human.length >= 5 && human.every(b => b.animalId && b.stageIdx != null && b.avatar == null)
-      ? ok(`${niveau}: ${human.length} mens-bots met dier-avatar + stage`)
-      : bad(`${niveau}: mens-bots missen animalId/stage`);
-    robot.length >= 4 && robot.every(b => b.avatar && b.animalId == null)
-      ? ok(`${niveau}: ${robot.length} robot-bots met emoji-avatar`)
-      : bad(`${niveau}: robot-bots missen emoji-avatar`);
+    human.length === bots.length && human.every(b => b.animalId && b.stageIdx != null && b.avatar == null)
+      ? ok(`${niveau}: alle ${human.length} bots zijn mens-bots met dier-avatar (geen robot-bots meer)`)
+      : bad(`${niveau}: niet alle bots zijn mens-bots met dier-avatar`);
+    human.every(b => b.featuredBadgeId && Array.isArray(b.badgeIds) && b.badgeIds.length >= 3)
+      ? ok(`${niveau}: mens-bots hebben geloofwaardige badges`)
+      : bad(`${niveau}: mens-bots missen badges`);
   }
   // stage-mapping monotone check
   lg.stage(950) === 5 && lg.stage(940) === 5 && lg.stage(450) === 2 && lg.stage(100) === 1
