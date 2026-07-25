@@ -139,6 +139,7 @@ var VONK_NAV = {
   profiel:     function () { if (typeof openProfiel === 'function') openProfiel(); else show('sc-profiel'); },
   simulatie:   function () { show('sc-simtoets'); },
   groep:       function () { show('sc-groep'); if (typeof renderGroepScreen === 'function') try { renderGroepScreen(); } catch (e) {} },
+  herhalen:    function () { if (typeof openHerhalen === 'function') openHerhalen(); else show('sc-herhalen'); },
 };
 function vonkNav(key) {
   const f = VONK_NAV[key]; if (!f) return;
@@ -221,6 +222,18 @@ function vonkCelebrate(caption, opts) {
   setTimeout(kill, opts.duration || 2800);
 }
 
+// ─── Snelle Vonk-reactie (bv. tijdens de quiz): klein, kort, niet-blokkerend ───
+var _vonkReactT = null;
+function vonkReact(mood, text, opts) {
+  opts = opts || {};
+  let el = document.getElementById('vonk-react');
+  if (!el) { el = document.createElement('div'); el.id = 'vonk-react'; el.className = 'vonk-react'; document.body.appendChild(el); }
+  el.innerHTML = `<div class="vr-fig">${mascotSVG(mood || 'blij', 64)}</div>${text ? `<div class="vr-chip">${text}</div>` : ''}`;
+  el.classList.remove('vr-in'); void el.offsetWidth; el.classList.add('vr-in');
+  clearTimeout(_vonkReactT);
+  _vonkReactT = setTimeout(() => { if (el) el.classList.remove('vr-in'); }, opts.duration || 1500);
+}
+
 // Centrale uitleg-teksten: Vonk legt features uit, elk max 1× (once-sleutel).
 function vonkOnboard(where) {
   const T = {
@@ -289,6 +302,7 @@ var VONK_EXPLAIN = {
   'sc-klas':       { mood: 'blij', msg: `Je klas: nodig klasgenoten uit, oefen samen en volg elkaars voortgang.` },
   'sc-examen':     { mood: 'kijk', msg: `De echte examen-PDF's en correctievoorschriften, om te downloaden en mee te oefenen.` },
   'sc-zoek':       { mood: 'kijk', msg: `Zoek door álle examens, begrippen en uitleg. Typ een woord en ik vind het voor je.` },
+  'sc-herhalen':   { mood: 'kijk', msg: `Kennis zakt weg als je 'm niet ophaalt. Ik zet hier op tijd de onderdelen klaar die dreigen weg te zakken, zodat ze blijven zitten.` },
 };
 function vonkExplain() {
   const cur = document.querySelector('.sc.on');

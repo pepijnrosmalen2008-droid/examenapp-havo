@@ -802,6 +802,7 @@
   <!-- DYNAMIC WIDGETS (JS-driven) -->
   <div id="live-count-home"></div>
   <div id="dagmissie-home"></div>
+  <div id="herhaal-home"></div>
   <div class="home-section-header">
     <span class="hsh-title">Jouw voortgang</span>
     <span class="hsh-sub">Streak, XP en dagelijkse doelen</span>
@@ -1961,6 +1962,16 @@
 </div>
 </div>
 
+<!-- HERHAALPLANNING -->
+<div id="sc-herhalen" class="sc">
+<nav class="nav"><div class="nav-inner"><div class="logo" onclick="show('sc-home')"><img src="/icon-192.png" alt="Slagio" style="width:26px;height:26px;border-radius:7px;object-fit:cover;flex-shrink:0">Slagio</div><button class="bk" onclick="show('sc-home')">← Terug</button><button class="theme-btn" onclick="toggleDark()" title="Nachtmodus" style="margin-left:auto"><svg viewBox="0 0 24 24"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg></button></div></nav>
+<div class="w her-wrap">
+  <div class="her-header"><h2>🔁 Herhalen</h2><p>Kennis zakt weg als je 'm niet ophaalt. Ik hou bij wat je oefende en zet hier op tijd de dingen klaar die dreigen weg te zakken.</p></div>
+  <div class="her-vonk-wrap" id="herhaal-vonk"></div>
+  <div id="herhaal-list"></div>
+</div>
+</div>
+
 <!-- FOUTENBOEK 2.0 -->
 <div id="sc-foutenboek" class="sc">
 <nav class="nav"><div class="nav-inner"><div class="logo" onclick="show('sc-home')"><img src="/icon-192.png" alt="Slagio" style="width:26px;height:26px;border-radius:7px;object-fit:cover;flex-shrink:0">Slagio</div><button class="bk" onclick="show('sc-home')">← Terug</button><button class="theme-btn" onclick="toggleDark()" title="Nachtmodus" style="margin-left:auto"><svg viewBox="0 0 24 24"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg></button></div></nav>
@@ -2007,6 +2018,7 @@
 <script defer src="/features.js"></script>
 <script defer src="/schedule.js"></script>
 <script defer src="/foutenboek.js"></script>
+<script defer src="/herhalen.js"></script>
 <script defer src="/v4.js"></script>
 <script defer src="/zoek.js"></script>
 <script defer src="/klas.js"></script>

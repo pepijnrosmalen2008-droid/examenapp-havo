@@ -363,6 +363,12 @@ function _kiesReveal(gekozen,correct,btns){
   aqpRecord(ST.vragen[ST.idx], ok?1:0);
   ST.antwrd.push({pts:ok?1:0,chosenText:q.o[chosenOrigIdx],tijdOver});
   try{if(typeof fbRecord==='function')fbRecord(q,ok,q.o[chosenOrigIdx]);}catch(e){}
+  // Vonk reageert kort: oeps bij fout, feest bij een goede reeks.
+  try{if(typeof vonkReact==='function'){
+    const _pk=a=>a[Math.floor(Math.random()*a.length)];
+    if(!ok)vonkReact('oeps',_pk(['Oeps!','Bijna!','Volgende keer!']));
+    else if(ST.combo>=3)vonkReact('feest',_pk(['Op dreef! 🔥','Goed bezig!','Yes!']));
+  }}catch(e){}
   saveQuizDraft();
   btns.forEach((b,i)=>{
     if(i===correct)b.classList.add('correct');

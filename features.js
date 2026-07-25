@@ -666,6 +666,7 @@ function renderHomeStats(){
   if(!box)return;
   try{if(typeof fbUpdateBadge==='function')setTimeout(fbUpdateBadge,0);}catch(e){}
   try{if(typeof renderDagmissie==='function')renderDagmissie();}catch(e){}
+  try{if(typeof renderHerhaalHomeCard==='function')renderHerhaalHomeCard();}catch(e){}
   // ── Data ──────────────────────────────────────────
   const {current:streak}=calcStreak();
   const xp=getTotalXP();
