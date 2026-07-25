@@ -1675,6 +1675,12 @@ html.dark .qb{background:#2e3550}
 .prof-badge-circle.rarity-legendary{box-shadow:0 0 14px 5px rgba(245,158,11,.8)}
 .prof-badge-circle.rarity-mythic   {box-shadow:0 0 18px 6px rgba(239,68,68,.8),0 0 28px 10px rgba(245,158,11,.4);animation:mythicGlow 2s ease-in-out infinite}
 @keyframes mythicGlow{0%,100%{box-shadow:0 0 18px 6px rgba(239,68,68,.8),0 0 28px 10px rgba(245,158,11,.4)}50%{box-shadow:0 0 24px 9px rgba(239,68,68,.95),0 0 36px 14px rgba(245,158,11,.6)}}
+/* Rarity-achtergronden: elke zeldzaamheid z'n eigen kleur (niet overal geel) */
+.prof-badge-circle.earned.rarity-common   {background:linear-gradient(135deg,#e5e7eb,#cbd5e1);border-color:#9ca3af}
+.prof-badge-circle.earned.rarity-rare     {background:linear-gradient(135deg,#dbeafe,#93c5fd);border-color:#3b82f6}
+.prof-badge-circle.earned.rarity-epic     {background:linear-gradient(135deg,#ede9fe,#c4b5fd);border-color:#8b5cf6}
+.prof-badge-circle.earned.rarity-legendary{background:linear-gradient(135deg,#fef3c7,#fcd34d);border-color:#f59e0b}
+.prof-badge-circle.earned.rarity-mythic   {background:linear-gradient(135deg,#fee2e2,#fca5a5);border-color:#ef4444}
 .prof-badge-circle.rarity-eternal  {animation:eternalGlow 3s linear infinite;border-color:transparent;background:linear-gradient(var(--bg2),var(--bg2)) padding-box,linear-gradient(var(--a,0deg),#f43f5e,#f97316,#eab308,#22c55e,#06b6d4,#8b5cf6,#f43f5e) border-box}
 @property --a{syntax:'<angle>';initial-value:0deg;inherits:false}
 @keyframes eternalGlow{to{--a:360deg}}
@@ -1686,6 +1692,11 @@ html.dark .qb{background:#2e3550}
 .lb-av-badge.rarity-epic     {border-color:#8B5CF6;box-shadow:0 0 8px 3px rgba(139,92,246,.8)}
 .lb-av-badge.rarity-legendary{border-color:#F59E0B;box-shadow:0 0 10px 4px rgba(245,158,11,.85)}
 .lb-av-badge.rarity-mythic   {border-color:#EF4444;box-shadow:0 0 12px 5px rgba(239,68,68,.85),0 0 18px 7px rgba(245,158,11,.4);animation:mythicGlow 2s ease-in-out infinite}
+.lb-av-badge.rarity-common   {background:linear-gradient(135deg,#e5e7eb,#cbd5e1)}
+.lb-av-badge.rarity-rare     {background:linear-gradient(135deg,#dbeafe,#93c5fd)}
+.lb-av-badge.rarity-epic     {background:linear-gradient(135deg,#ede9fe,#c4b5fd)}
+.lb-av-badge.rarity-legendary{background:linear-gradient(135deg,#fef3c7,#fcd34d)}
+.lb-av-badge.rarity-mythic   {background:linear-gradient(135deg,#fee2e2,#fca5a5)}
 .lb-av-badge.rarity-eternal  {animation:eternalGlow 3s linear infinite;border-color:transparent;background:linear-gradient(var(--bg2,#1a1a2e),var(--bg2,#1a1a2e)) padding-box,linear-gradient(var(--a,0deg),#f43f5e,#f97316,#eab308,#22c55e,#06b6d4,#8b5cf6,#f43f5e) border-box;box-shadow:0 0 14px 5px rgba(139,92,246,.6)}
 /* Rarity tekst kleuren */
 .rarity-txt-common   {color:#9CA3AF}
