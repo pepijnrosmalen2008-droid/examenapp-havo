@@ -128,7 +128,7 @@ function _genBots(niveau,count){
       vak:vaks[i%vaks.length],vakNaam:_BOT_VAKNAAM[vaks[i%vaks.length]]||vaks[i%vaks.length],
       domeinId:null,domeinNaam:null,score,goed:Math.max(4,Math.min(10,Math.round(score/100))),
       tot:10,avgTijd:Math.round((3+(1000-score)/90)*10)/10,niveau,
-      date:'2026-05-'+String(9+(i%19)).padStart(2,'0'),_bot:true});
+      date:'2027-05-'+String(9+(i%19)).padStart(2,'0'),_bot:true});
   }
   return out;
 }
@@ -374,7 +374,7 @@ function _renderLbWithData(){
   // Niveau badge + dynamic subtitle
   const badge=document.getElementById('lb-niveau-badge');
   const VAKKEN_LABEL=lbVakFilter==='all'?'Alle vakken':(VAKKEN_MAP[lbVakFilter]?VAKKEN_MAP[lbVakFilter].naam:lbVakFilter);
-  if(badge)badge.textContent=APP_LEVEL.toUpperCase()+' 2026 · '+VAKKEN_LABEL;
+  if(badge)badge.textContent=APP_LEVEL.toUpperCase()+' 2027 · '+VAKKEN_LABEL;
   const subtitleEl=document.getElementById('lb-subtitle');
   const playerCount=[...new Set(all.map(e=>e.uid||e.naam))].length;
   if(subtitleEl){
@@ -598,8 +598,21 @@ function getUpcomingExams(){
     return cands.filter(e=>e.dt>now).sort((a,b)=>a.dt-b.dt);
   }catch(e){return [];}
 }
-// Eerstvolgende voor de countdown-timer
-function getCountdownTarget(){const u=getUpcomingExams();return u.length?u[0]:null;}
+// Eerste kernvak (Nederlands/Engels/wiskunde) van 2027 voor het huidige niveau —
+// de standaard-countdown zodat er nooit een lege "geslaagd-modus" verschijnt.
+function _firstKernvak2027(){
+  if(typeof EXAM_SCHEDULE_2027==='undefined')return null;
+  const KERN=new Set(['nl','en','wa','wb']);
+  const now=new Date();
+  const c=EXAM_SCHEDULE_2027
+    .filter(ex=>(!ex.niveau||ex.niveau===APP_LEVEL)&&ex.vakId&&KERN.has(ex.vakId))
+    .map(ex=>({...ex,dt:new Date(ex.datum+'T'+ex.tijd.split('–')[0]+':00+02:00')}))
+    .filter(e=>e.dt>now).sort((a,b)=>a.dt-b.dt);
+  return c.length?c[0]:null;
+}
+// Eerstvolgende voor de countdown-timer: eigen aankomende examens, anders het
+// eerste kernvak 2027 als standaard (geen geslaagd-modus meer).
+function getCountdownTarget(){const u=getUpcomingExams();if(u.length)return u[0];return _firstKernvak2027();}
 function updateCountdown(){
   const setEl=(id,val)=>{const el=document.getElementById(id);if(el)el.textContent=val;};
   // Apply level glow class

@@ -167,7 +167,7 @@ function _introRender(){
   const dots=document.getElementById('intro-mdots');
   dots.innerHTML=Array.from({length:INTRO_STEPS_N},(_,i)=>`<div class="intro-mdot${i===_introIdx?' on':''}"></div>`).join('');
   const badge=document.getElementById('intro-level-badge');
-  if(badge)badge.textContent=(APP_LEVEL==='havo'?'HAVO':'VWO')+' 2026';
+  if(badge)badge.textContent=(APP_LEVEL==='havo'?'HAVO':'VWO')+' 2027';
   const next=document.getElementById('intro-next-btn');
   const skip=document.getElementById('intro-skip-btn');
   const last=_introIdx===INTRO_STEPS_N-1;
@@ -301,10 +301,10 @@ function _updatePageSEO(level){
   const nivNaam=isHavo?'HAVO':'VWO';
   const url='https://slagio.nl/'+(level||'');
   document.title=level
-    ?`Slagio - ${nivNaam} Examenvoorbereiding 2026 | 10.000+ vragen, eindexamens, studieplan`
-    :'Slagio - Complete HAVO & VWO Examenvoorbereiding 2026';
+    ?`Slagio - ${nivNaam} Examenvoorbereiding 2027 | 10.000+ vragen, eindexamens, studieplan`
+    :'Slagio - Complete HAVO & VWO Examenvoorbereiding 2027';
   const desc=level
-    ?`Gratis ${nivNaam} examenvoorbereiding 2026. 10.000+ oefenvragen per domein, echte CE-eindexamens 2019–2025, persoonlijk studieplan, spaced repetition flashcards en cijfercalculator. Geen account nodig.`
+    ?`Gratis ${nivNaam} examenvoorbereiding 2027. 10.000+ oefenvragen per domein, echte CE-eindexamens 2019–2025, persoonlijk studieplan, spaced repetition flashcards en cijfercalculator. Geen account nodig.`
     :'Kies je niveau: HAVO of VWO. Gratis examenvoorbereiding met 10.000+ oefenvragen, echte eindexamens 2019–2025, studieplan en meer.';
   const metaDesc=document.querySelector('meta[name="description"]');
   if(metaDesc)metaDesc.content=desc;
@@ -333,7 +333,7 @@ function chooseLevel(level,_noHistory){
   renderSchedule();
   // Update intro badge
   const badge=document.getElementById('intro-level-badge');
-  if(badge)badge.textContent=(level==='havo'?'HAVO':'VWO')+' 2026';
+  if(badge)badge.textContent=(level==='havo'?'HAVO':'VWO')+' 2027';
   // Push URL: /havo or /vwo
   if(!_noHistory)history.pushState({level},'','/'+level);
   _updatePageSEO(level);
@@ -347,7 +347,7 @@ function chooseLevel(level,_noHistory){
 }
 function updateLevelChip(){
   const chip=document.getElementById('home-level-chip');
-  if(chip)chip.textContent=(APP_LEVEL==='vwo'?'VWO':'HAVO')+' 2026';
+  if(chip)chip.textContent=(APP_LEVEL==='vwo'?'VWO':'HAVO')+' 2027';
   const badge=document.getElementById('vak-level-badge');
   if(badge)badge.textContent=(APP_LEVEL==='vwo'?'VWO':'HAVO');
 }

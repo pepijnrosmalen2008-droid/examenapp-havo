@@ -125,7 +125,7 @@ const EXAM_SCHEDULE_2027=[
 {datum:'2027-06-01',tijd:'13:30–16:00',vak:'Arabisch / Spaans / Turks',niveau:'vwo'}
 ];
 // Kies de dataset op basis van het gekozen jaar in het rooster-scherm.
-let _schYear=(function(){try{return localStorage.getItem('sch_year')==='2027'?'2027':'2026';}catch(e){return '2026';}})();
+let _schYear=(function(){try{return '2027';}catch(e){return '2027';}})();
 function schData(){return _schYear==='2027'?EXAM_SCHEDULE_2027:EXAM_SCHEDULE;}
 // Bereken de duur uit een tijdvak-string ('09:00–11:30') als er geen duur is opgegeven.
 function _durFromTijd(tijd){
@@ -244,7 +244,7 @@ function renderTijdvak3(){
   el.innerHTML=`<div class="tv3-info">📌 Het <strong>3e tijdvak</strong> (${periode}) wordt door <strong>DUO</strong> per kandidaat ingepland - er is geen openbaar vakkenrooster. Voer hieronder zelf je vak, datum en tijd in; de timer telt er dan naar af.</div>
   <div class="tv3-form">
     <select id="tv3-vak" class="tv3-input"><option value="">— kies vak —</option>${vakken.map(v=>`<option value="${v.id}">${v.naam}</option>`).join('')}</select>
-    <input type="date" id="tv3-datum" class="tv3-input" min="2026-08-01" max="2026-08-31">
+    <input type="date" id="tv3-datum" class="tv3-input" min="2027-08-01" max="2027-08-31">
     <input type="time" id="tv3-tijd" class="tv3-input" value="13:30">
     <button class="tv3-add" onclick="addTV3()">+ Toevoegen</button>
   </div>
