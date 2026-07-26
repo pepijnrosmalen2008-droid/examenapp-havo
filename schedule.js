@@ -213,7 +213,7 @@ function renderSchedule(){
   if(l2){
     if(_schYear==='2027'){
       // Het herkansingsrooster 2027 is nog niet per vak vastgesteld door het CvTE.
-      l2.innerHTML='<div class="tv3-info">📌 Het exacte <strong>herkansingsrooster 2027</strong> (2e tijdvak) is nog niet per vak vastgesteld. De herkansingen vinden plaats in de <strong>week van 16 t/m 25 juni 2027</strong>. Zodra het CvTE de vakdata publiceert, verschijnen ze hier, net als bij 2026.</div>';
+      l2.innerHTML='<div class="tv3-info">📌 Het exacte <strong>herkansingsrooster 2027</strong> (2e tijdvak) is nog niet per vak vastgesteld. De herkansingen vinden plaats in de <strong>week van 16 t/m 25 juni 2027</strong>. Zodra het CvTE de vakdata publiceert, verschijnen ze hier.</div>';
     }else{
       l2.innerHTML='';
       data.forEach(ex=>{
