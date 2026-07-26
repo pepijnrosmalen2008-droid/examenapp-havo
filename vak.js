@@ -3,6 +3,11 @@
 // ICO_STAR gedefinieerd worden), dus deze moet pas bij aanroep evalueren.
 function _ceStatusMap(){return{'CE':{cls:'CE',icon:ICO_DOC,txt:'Centraal Examen'},'SE':{cls:'SE',icon:ICO_DOC,txt:'Schoolexamen'},'CE+SE':{cls:'CESE',icon:ICO_DOC,txt:'CE + Schoolexamen'},'DEELS CE':{cls:'DEELS',icon:ICO_DOC,txt:'Deels CE'},'CE-KERN':{cls:'CE',icon:ICO_STAR,txt:'Kern van het CE'}};}
 function openVak(id,_noHash){
+  // Samenvattingen (SAM_RICH) worden lazy geladen; wacht erop vóór we de detailpagina
+  // (met de samenvatting-tab) opbouwen, anders valt die terug op de basis-sam.
+  if(typeof ensureSamData==='function'&&typeof samReady==='function'&&typeof APP_LEVEL!=='undefined'&&!samReady(APP_LEVEL)){ensureSamData(APP_LEVEL,function(){openVak(id,_noHash);});return;}
+  // Vraag-data (sv/oe/begrippen + basis-sam) laadt per vak; hydrateer dit vak vóór opbouw.
+  if(typeof ensureVakData==='function'&&typeof vakHydrated==='function'&&typeof APP_LEVEL!=='undefined'&&!vakHydrated(APP_LEVEL,id)){ensureVakData(APP_LEVEL,id,function(){openVak(id,_noHash);});return;}
   ST.vak=getVK().find(v=>v.id===id);
   // Echte, indexeerbare URL i.p.v. een hash: dezelfde URL als de statische
   // SEO-pagina van dit vak (/vakken/<niveau>-<vak>.html). Zo is de in-app pagina
@@ -47,13 +52,15 @@ function openVak(id,_noHash){
   metaHtml+='</div>';
   if(ST.vak.youtubeKanaal&&ST.vak.youtubeUrl)metaHtml+=`<a class="yt-card" href="${ST.vak.youtubeUrl}" target="_blank" rel="noopener"><div class="yt-icon"><svg viewBox="0 0 24 24"><path d="M23.5 7s-.3-2-1.2-2.8c-1.1-1.2-2.4-1.2-3-1.3C16.8 2.8 12 2.8 12 2.8s-4.8 0-7.3.1c-.6.1-1.9.1-3 1.3C.8 5 .5 7 .5 7S.2 9.3.2 11.5v2.1c0 2.2.3 4.5.3 4.5s.3 2 1.2 2.8c1.1 1.2 2.6 1.1 3.3 1.2C7.2 22.2 12 22.2 12 22.2s4.8 0 7.3-.2c.6-.1 1.9-.1 3-1.3.9-.8 1.2-2.8 1.2-2.8s.3-2.3.3-4.5v-2.1C23.8 9.3 23.5 7 23.5 7zM9.7 15.5V8.4l8.1 3.6-8.1 3.5z"/></svg></div><div class="yt-info"><span class="yt-label">Aanbevolen YouTube-kanaal</span><span class="yt-name">${ST.vak.youtubeKanaal}</span></div><span class="yt-arr">→</span></a>`;
   // Echte CE-examens archief
-  // EXAMENS_BASE_URL: zet op je eigen Supabase URL na uploaden met upload-examens-supabase.js
+  // EXAMENS_BASE_URL: zet op je eigen Supabase URL nadat de PDF's daar zijn geüpload.
   // Voorbeeld: 'https://xxxx.supabase.co/storage/v1/object/public/examens'
-  // Laat leeg ('') om de AlleExamens.nl fallback te gebruiken.
-  const _EXAMENS_BASE = 'https://sxrjdssmgwwygtskovyc.supabase.co/storage/v1/object/public/examens';
-  const _aeNames={nl:'Nederlands',wa:'Wiskunde A',wb:'Wiskunde B',bi:'Biologie',sk:'Scheikunde',na:'Natuurkunde',en:'Engels',ec:'Economie',be:'Bedrijfseconomie',gs:'Geschiedenis',ak:'Aardrijkskunde',mw:'Maatschappijwetenschappen',de:'Duits',fr:'Frans',la:'Latijn',gr:'Grieks',in:'Informatica'};
-  const _aeLvl=(ST.niveau||'havo').toUpperCase();
-  const _niveau=(ST.niveau||'havo').toLowerCase();
+  // Leeg ('') = AlleExamens.nl gebruiken. De Supabase-bucket bleek de archief-PDF's
+  // niet te bevatten (opgaven/antwoorden gaven 404; alleen de tekstboekje-knop werkte,
+  // want die wees al naar alleexamens.nl) — daarom staat dit nu op de werkende bron.
+  const _EXAMENS_BASE = '';
+  const _aeNames={nl:'Nederlands',wa:'Wiskunde A',wb:'Wiskunde B',bi:'Biologie',sk:'Scheikunde',na:'Natuurkunde',en:'Engels',ec:'Economie',be:'Bedrijfseconomie',gs:'Geschiedenis',ak:'Aardrijkskunde',mw:'Maatschappijwetenschappen',du:'Duits',fr:'Frans',la:'Latijn',gr:'Grieks',in:'Informatica'};
+  const _aeLvl=(APP_LEVEL||'havo').toUpperCase();
+  const _niveau=(APP_LEVEL||'havo').toLowerCase();
   const _aeName=_aeNames[ST.vak.id];
   if(_aeName){
     const _enc=encodeURIComponent(_aeName);
@@ -69,32 +76,38 @@ function openVak(id,_noHash){
       havo:{wa:2017,wb:2017,bi:2024,sk:2024,na:2024,be:2021,gs:2020,ak:2025,ec:2023},
       vwo: {wa:2018,wb:2018,bi:2025,sk:2025,na:2025,gs:2021,ak:2026,ec:2023,mw:2020,la:2017,gr:2017,in:2022}
     };
-    const _svVanaf=((_svData[(ST.niveau||'havo').toLowerCase()])||{})[ST.vak.id]||2019;
+    const _svVanaf=((_svData[(APP_LEVEL||'havo').toLowerCase()])||{})[ST.vak.id]||2019;
     const _svBadge=y=>y>=_svVanaf
       ?`<span style="display:inline-flex;align-items:center;gap:3px;font-size:10px;font-weight:700;padding:2px 7px;border-radius:20px;background:rgba(34,197,94,.12);border:1px solid rgba(34,197,94,.3);color:#22c55e;letter-spacing:.2px;vertical-align:middle">✓ Zelfde syllabus</span>`
       :`<span style="display:inline-flex;align-items:center;gap:3px;font-size:10px;font-weight:700;padding:2px 7px;border-radius:20px;background:rgba(234,179,8,.1);border:1px solid rgba(234,179,8,.3);color:#ca8a04;letter-spacing:.2px;vertical-align:middle" title="Huidig CE-programma geldt v.a. ${_svVanaf} (bron: examenblad.nl). Dit examen kan stof bevatten die niet meer in het syllabus staat, of nieuwe stof missen.">⚠ Ander syllabus (v.a. ${_svVanaf})</span>`;
-    let _ch=`<div class="ce-archief-card" style="margin-top:16px;border-radius:16px;overflow:hidden;border:1.5px solid rgba(var(--or-rgb),.4);background:linear-gradient(135deg,rgba(var(--or-rgb),.08),rgba(var(--or-rgb),.03))"><div style="display:flex;align-items:center;justify-content:space-between;padding:14px 18px;cursor:pointer;gap:10px;user-select:none" onclick="this.closest('.ce-archief-card').classList.toggle('open')"><div style="display:flex;align-items:center;gap:10px"><div style="width:36px;height:36px;border-radius:10px;background:rgba(var(--or-rgb),.18);display:flex;align-items:center;justify-content:center;font-size:18px;flex-shrink:0">📄</div><div><div style="font-size:14px;font-weight:800;color:var(--or)">Echte CE-examens</div><div style="font-size:11px;color:var(--mu);margin-top:1px">${_aeName} · opgaven + antwoorden · 2019–2025</div></div></div><div style="width:28px;height:28px;border-radius:8px;background:rgba(var(--or-rgb),.15);display:flex;align-items:center;justify-content:center;font-size:12px;color:var(--or);flex-shrink:0;transition:transform .22s" class="ce-arr">▼</div></div><div class="ce-archief-body" style="display:none;padding:0 16px 16px">`;
+    let _ch=`<div class="ce-archief-card" style="margin-top:16px;border-radius:16px;overflow:hidden;border:1.5px solid rgba(var(--or-rgb),.4);background:linear-gradient(135deg,rgba(var(--or-rgb),.08),rgba(var(--or-rgb),.03))"><div style="display:flex;align-items:center;justify-content:space-between;padding:14px 18px;cursor:pointer;gap:10px;user-select:none" onclick="this.closest('.ce-archief-card').classList.toggle('open')"><div style="display:flex;align-items:center;gap:10px"><div style="width:36px;height:36px;border-radius:10px;background:rgba(var(--or-rgb),.18);display:flex;align-items:center;justify-content:center;font-size:18px;flex-shrink:0">📄</div><div><div style="font-size:15px;font-weight:800;color:var(--or)">Examensimulatie</div><div style="font-size:11px;color:var(--mu);margin-top:1px">Oefen met echte eindexamens · opgaven, bijlage &amp; antwoordmodel</div></div></div><div style="display:flex;align-items:center;gap:6px;flex-shrink:0"><span style="font-size:11px;font-weight:700;color:var(--or)">Openen</span><div style="width:26px;height:26px;border-radius:8px;background:rgba(var(--or-rgb),.15);display:flex;align-items:center;justify-content:center;font-size:12px;color:var(--or);transition:transform .22s" class="ce-arr">▼</div></div></div><div class="ce-archief-body" style="display:none;padding:0 16px 16px">`;
     _ch+=`<a href="${_bundel}" target="_blank" rel="noopener" class="ce-bundel-btn">📦 Download complete examenbundel - alle jaren in één PDF</a><div style="display:flex;align-items:flex-start;gap:8px;background:rgba(234,179,8,.08);border:1px solid rgba(234,179,8,.3);border-radius:10px;padding:9px 12px;margin-bottom:14px;font-size:12px;color:#ca8a04;line-height:1.5"><span style="font-size:15px;flex-shrink:0">⚠️</span><span><strong>Let op: zeer groot bestand.</strong> Deze PDF bevat alle examenjaren en kan honderden MB's groot zijn. Dit kan je browser of computer tijdelijk laten vastlopen. Download liever de losse examens per jaar hieronder.</span></div>`;
-    const _hasTb=['nl','en','fr','de'].includes(ST.vak.id);
+    // Bijlage per vak: talen → tekstboekje, bèta → uitwerkbijlage, mens & maatschappij → bronnenboekje.
+    const _bijlageCfg={
+      nl:{type:'bijlage',label:'Tekstboekje'},en:{type:'bijlage',label:'Tekstboekje'},du:{type:'bijlage',label:'Tekstboekje'},fr:{type:'bijlage',label:'Tekstboekje'},
+      na:{type:'uitwerkbijlage',label:'Uitwerkbijlage'},sk:{type:'uitwerkbijlage',label:'Uitwerkbijlage'},bi:{type:'uitwerkbijlage',label:'Uitwerkbijlage'},wa:{type:'uitwerkbijlage',label:'Uitwerkbijlage'},wb:{type:'uitwerkbijlage',label:'Uitwerkbijlage'},
+      gs:{type:'bijlage',label:'Bronnenboekje'},ak:{type:'bijlage',label:'Bronnenboekje'},ec:{type:'bijlage',label:'Bronnenboekje'},mw:{type:'bijlage',label:'Bronnenboekje'}
+    };
+    const _bijl=_bijlageCfg[ST.vak.id];
     _jaren.forEach(year=>{
       _ch+=`<div class="ce-jaar-blok"><div class="ce-jaar-lbl" style="display:flex;align-items:center;gap:7px">${year}${year===2020?' (geannuleerd - COVID)':''} ${_svBadge(year)}</div><div class="ce-tv-row">`;
       if(year!==2020){['I','II'].forEach(tv=>{
         const _urlOpg=_mkPdf(year,tv,'opgaven');
         const _urlCv=_mkPdf(year,tv,'correctievoorschrift');
         // Bijlage (tekstboekje) via alleexamens.nl - bevestigd werkend formaat
-        const _urlTb=`https://static.alleexamens.nl/${_aeLvl}/${_enc}/${year}/${tv}/${_enc}/${_enc}%20${year}%20${tv}_bijlage.pdf`;
+        const _urlTb=_bijl?`https://static.alleexamens.nl/${_aeLvl}/${_enc}/${year}/${tv}/${_enc}/${_enc}%20${year}%20${tv}_${_bijl.type}.pdf`:'';
         const _titleOpg=`${_aeName} ${year} Tijdvak ${tv} - Opgaven`;
         const _titleCv=`${_aeName} ${year} Tijdvak ${tv} - Antwoorden`;
-        const _titleTb=`${_aeName} ${year} Tijdvak ${tv} - Tekstboekje`;
+        const _titleTb=`${_aeName} ${year} Tijdvak ${tv} - ${_bijl?_bijl.label:'Bijlage'}`;
         _ch+=`<div class="ce-tv-col"><div class="ce-tv-title">Tijdvak ${tv}</div>`;
         _ch+=`<button class="ce-pdf-btn" onclick="openPdfViewer('${_urlOpg}','${_titleOpg.replace(/'/g,"\\'")}')">📋 Opgaven</button>`;
-        if(_hasTb)_ch+=`<button class="ce-pdf-btn ce-pdf-tb" onclick="openPdfViewer('${_urlTb}','${_titleTb.replace(/'/g,"\\'")}')">📖 Tekstboekje</button>`;
+        if(_bijl)_ch+=`<button class="ce-pdf-btn ce-pdf-tb" onclick="openPdfViewer('${_urlTb}','${_titleTb.replace(/'/g,"\\'")}')">📖 ${_bijl.label}</button>`;
         _ch+=`<button class="ce-pdf-btn ce-pdf-cv" onclick="openPdfViewer('${_urlCv}','${_titleCv.replace(/'/g,"\\'")}')">✅ Antwoorden</button>`;
         _ch+=`</div>`;
       });}
       _ch+=`</div></div>`;
     });
-    _ch+=`<div style="font-size:11px;color:var(--mu);margin-top:10px;padding-top:10px;border-top:1px solid var(--bo)">${_EXAMENS_BASE?'Examens gehost door Slagio':'Examens via <a href="https://www.alleexamens.nl" target="_blank" rel="noopener" style="color:var(--mu)">AlleExamens.nl</a>'} · Syllabus &amp; normering: <a href="https://www.examenblad.nl" target="_blank" rel="noopener" style="color:var(--mu)">Examenblad.nl</a></div></div></div>`;
+    _ch+=`<div style="font-size:11px;color:var(--mu);margin-top:10px;padding-top:10px;border-top:1px solid var(--bo)">Officiële CvTE-eindexamens${_EXAMENS_BASE?' · gehost door Slagio':' · via <a href="https://www.alleexamens.nl" target="_blank" rel="noopener" style="color:var(--mu)">AlleExamens.nl</a>'} · normering &amp; syllabus: <a href="https://www.examenblad.nl" target="_blank" rel="noopener" style="color:var(--mu)">Examenblad.nl</a></div></div></div>`;
     metaHtml+=_ch;
   }
   document.getElementById('dce').insertAdjacentHTML('afterend',metaHtml);
@@ -168,6 +181,7 @@ function openVak(id,_noHash){
     const progHtml=r.hasData?`<div class="dom-progress"><div class="dp-bar"><div class="dp-fill" style="width:${Math.round(r.pct*100)}%"></div></div><span class="dp-txt">${Math.round(r.pct*100)}%${bestChip}${pbChip}</span></div>`:'';
     const _csInfo=d.ceStatus&&_ceStatusMap()[d.ceStatus];
     const csBadge=_csInfo?`<div class="dom-ce-badge dom-ce-${_csInfo.cls}">${_csInfo.icon} ${_csInfo.txt}</div>`:'';
+    const _empty=(!d.sv||!d.sv.length)&&(!d.oe||!d.oe.length);
     const el=document.createElement('div');
     el.className='dc2';
     el.dataset.domeinId=d.id;
@@ -178,7 +192,7 @@ function openVak(id,_noHash){
         <div class="dbtns">
           <button class="fav-btn${isFav(ST.vak.id,d.id)?' active':''}" id="fav-${d.id}" onclick="event.stopPropagation();const on=toggleFav('${ST.vak.id}','${d.id}');this.classList.toggle('active',on)" aria-label="Favoriet">${ICO_STAR}</button>
           <button class="exb" id="exb-${d.id}" onclick="event.stopPropagation();openDomein('${d.id}')">${ICO_CHEVRON} Leerstof</button>
-          <button class="qb" onclick="event.stopPropagation();openQmode('${d.id}')">${ICO_PLAY} Quiz</button>
+          ${_empty?`<span class="dom-soon">🔜 Binnenkort</span>`:`<button class="qb" onclick="event.stopPropagation();openQmode('${d.id}')">${ICO_PLAY} Quiz</button>`}
         </div>
       </div>`;
     dl.appendChild(el);
@@ -220,7 +234,7 @@ function initMf(){
   const vak=ST.vak;
   const el=document.getElementById('methode-filter');
   if(!vak||!el)return;
-  const niveau=(ST.niveau||'havo').toLowerCase();
+  const niveau=(APP_LEVEL||'havo').toLowerCase();
   const vakData=LESMETHODES[vak.id];
   const methodes=vakData?(vakData[niveau]||vakData.havo||[]):[];
   if(!methodes.length){el.style.display='none';return;}
@@ -230,7 +244,7 @@ function initMf(){
     methodes.map(m=>`<option value="${m.id}">${m.naam} · ${m.uitgever}</option>`).join('');
   const hSel=document.getElementById('mf-hoofdstuk');
   hSel.style.display='none';hSel.disabled=true;
-  document.getElementById('mf-chip').style.display='none';
+  var _mfr=document.getElementById("mf-result");if(_mfr)_mfr.style.display="none";
   const saved=_mfLoad(vak.id+'_'+niveau);
   if(saved&&saved.methodeId){
     mSel.value=saved.methodeId;
@@ -246,8 +260,20 @@ function _mfFillHfdst(mid,methodes,reset){
   const m=methodes.find(x=>x.id===mid);
   const hSel=document.getElementById('mf-hoofdstuk');
   if(!m){hSel.style.display='none';return;}
-  hSel.innerHTML='<option value="">— Kies hoofdstuk —</option>'+
-    m.hoofdstukken.map(h=>`<option value="${h.nr}">H${h.nr}: ${h.titel}</option>`).join('');
+  let opts='<option value="">— Kies hoofdstuk —</option>';
+  const hasJaar=m.hoofdstukken.some(h=>h.jaar);
+  if(hasJaar){
+    // Groepeer per leerjaar (hele bovenbouw)
+    const jaren=[...new Set(m.hoofdstukken.map(h=>h.jaar).filter(Boolean))].sort((a,b)=>a-b);
+    jaren.forEach(j=>{
+      opts+=`<optgroup label="Leerjaar ${j}">`;
+      m.hoofdstukken.filter(h=>h.jaar===j).forEach(h=>{opts+=`<option value="${h.nr}">H${h.nr} · ${h.titel}</option>`;});
+      opts+='</optgroup>';
+    });
+  }else{
+    m.hoofdstukken.forEach(h=>{opts+=`<option value="${h.nr}">H${h.nr}: ${h.titel}</option>`;});
+  }
+  hSel.innerHTML=opts;
   hSel.style.display='';hSel.disabled=false;
   if(reset)hSel.value='';
 }
@@ -256,35 +282,51 @@ function _mfApply(mid,hnr,methodes){
   if(!m)return;
   const h=m.hoofdstukken.find(x=>x.nr===hnr);
   if(!h)return;
+  // Visuele filter op de domeinlijst
   document.querySelectorAll('#dlist [data-domein-id]').forEach(el=>{
     el.style.display=h.domeinen.includes(el.dataset.domeinId)?'':'none';
   });
-  const chip=document.getElementById('mf-chip');
-  const txt=document.getElementById('mf-chip-txt');
-  if(chip)chip.style.display='flex';
-  if(txt)txt.textContent=`${m.naam} · H${hnr}: ${h.titel} (domein${h.domeinen.length>1?'en':''} ${h.domeinen.join(', ')})`;
+  // Resultaatpaneel: tik een domein aan om die examenstof te oefenen
+  const res=document.getElementById('mf-result');
+  if(res){
+    const vak=ST.vak;
+    const badges=h.domeinen.map(did=>{
+      const dom=(vak&&vak.domeinen||[]).find(d=>d.id===did);
+      const naam=dom?_esc(dom.naam):'';
+      return `<button class="mf-dom" onclick="openQmode('${did}')"><span class="mf-dom-id">${did}</span><span class="mf-dom-nm">${naam}</span><span class="mf-dom-go">Oefenen →</span></button>`;
+    }).join('');
+    res.innerHTML=`<div class="mf-res-top"><div class="mf-res-hd">`+
+      (h.jaar?`<span class="mf-res-jaar">Leerjaar ${h.jaar}</span>`:'')+
+      `<span class="mf-res-ttl">H${h.nr} · ${_esc(h.titel)}</span></div>`+
+      `<button class="mf-chip-x" onclick="resetMf()" title="Filter wissen" aria-label="Filter wissen">✕</button></div>`+
+      `<div class="mf-res-lbl">Hoort bij examendomein${h.domeinen.length>1?'en':''} — tik om te oefenen:</div>`+
+      `<div class="mf-doms">${badges}</div>`+
+      `<div class="mf-res-note">Indicatief — de hoofdstukindeling kan per editie en school verschillen.</div>`;
+    res.style.display='';
+  }
 }
+function _esc(s){return String(s==null?'':s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));}
 function onMfMethodeChange(){
   const vak=ST.vak;if(!vak)return;
-  const niveau=(ST.niveau||'havo').toLowerCase();
+  const niveau=(APP_LEVEL||'havo').toLowerCase();
   const vakData=LESMETHODES[vak.id];
   const methodes=vakData?(vakData[niveau]||vakData.havo||[]):[];
   const mid=document.getElementById('mf-methode').value;
   if(!mid){resetMf();return;}
   _mfFillHfdst(mid,methodes,true);
-  document.getElementById('mf-chip').style.display='none';
+  var _mfr=document.getElementById("mf-result");if(_mfr)_mfr.style.display="none";
   document.querySelectorAll('#dlist [data-domein-id]').forEach(el=>el.style.display='');
   _mfClear(vak.id+'_'+niveau);
 }
 function onMfHoofdstukChange(){
   const vak=ST.vak;if(!vak)return;
-  const niveau=(ST.niveau||'havo').toLowerCase();
+  const niveau=(APP_LEVEL||'havo').toLowerCase();
   const vakData=LESMETHODES[vak.id];
   const methodes=vakData?(vakData[niveau]||vakData.havo||[]):[];
   const mid=document.getElementById('mf-methode').value;
   const hnr=parseInt(document.getElementById('mf-hoofdstuk').value);
   if(!mid||!hnr){
-    document.getElementById('mf-chip').style.display='none';
+    var _mfr=document.getElementById("mf-result");if(_mfr)_mfr.style.display="none";
     document.querySelectorAll('#dlist [data-domein-id]').forEach(el=>el.style.display='');
     return;
   }
@@ -293,12 +335,12 @@ function onMfHoofdstukChange(){
 }
 function resetMf(){
   const vak=ST.vak;
-  const niveau=(ST.niveau||'havo').toLowerCase();
+  const niveau=(APP_LEVEL||'havo').toLowerCase();
   const mSel=document.getElementById('mf-methode');
   const hSel=document.getElementById('mf-hoofdstuk');
   if(mSel)mSel.value='';
   if(hSel){hSel.innerHTML='<option value="">— Kies hoofdstuk —</option>';hSel.style.display='none';hSel.disabled=true;}
-  document.getElementById('mf-chip').style.display='none';
+  var _mfr=document.getElementById("mf-result");if(_mfr)_mfr.style.display="none";
   document.querySelectorAll('#dlist [data-domein-id]').forEach(el=>el.style.display='');
   if(vak)_mfClear(vak.id+'_'+niveau);
 }
@@ -634,6 +676,10 @@ function printSam() {
 // ═══════ DOMEIN-PAGINA (dedicated leerstof-scherm per domein) ═══════
 function openDomein(domId,_noHash){
   if(!ST.vak)return;
+  // De samenvatting komt uit SAM_RICH (lazy geladen); wacht erop vóór we renderen,
+  // anders valt de samenvatting terug op de basisversie.
+  if(typeof ensureSamData==='function'&&typeof samReady==='function'&&typeof APP_LEVEL!=='undefined'&&!samReady(APP_LEVEL)){ensureSamData(APP_LEVEL,function(){openDomein(domId,_noHash);});return;}
+  if(typeof ensureVakData==='function'&&typeof vakHydrated==='function'&&typeof APP_LEVEL!=='undefined'&&!vakHydrated(APP_LEVEL,ST.vak.id)){ensureVakData(APP_LEVEL,ST.vak.id,function(){openDomein(domId,_noHash);});return;}
   const d=ST.vak.domeinen.find(x=>x.id===domId);
   if(!d)return;
   const v=ST.vak;
@@ -692,7 +738,7 @@ function openDomein(domId,_noHash){
           <div class="tlbl" style="margin-top:14px">CE-onderwerpen</div>
           <div class="ttags">${d.onderwerpen.map(o=>`<span class="tt">${o}</span>`).join('')}</div>
           <div class="tlbl">Samenvatting</div>
-          <div class="sam">${SAM_RICH[v.id+'_'+d.id]||d.sam}</div>
+          <div class="sam">${SAM_RICH[APP_LEVEL+'_'+v.id+'_'+d.id]||d.sam}</div>
           ${d.val&&d.val.length?`<div class="sam-val"><ul>${d.val.map(x=>`<li>${x}</li>`).join('')}</ul></div>`:''}
           ${d.binas&&d.binas.length?`<div class="sam-binas">${d.binas.map(b=>`<span class="sam-binas-tag">${b}</span>`).join('')}</div>`:''}
           <div class="sam-cta"><button class="sam-cta-btn" onclick="openQmode('${d.id}')">${ICO_PLAY} Oefenen op dit domein</button><button class="sam-print-btn" onclick="printSam()">${ICO_DOC} Samenvatting printen</button></div>
@@ -1035,6 +1081,9 @@ function aqpResetDomain(vakId,domeinId){
 // ── ADAPTIEVE MOEILIJKHEID (staircase binnen één sessie) ─────────────
 // Schat de moeilijkheid van een meerkeuzevraag in: 1=makkelijk, 2=gemiddeld, 3=moeilijk.
 function qDiff(q){
+  // Expliciete moeilijkheid (1=makkelijk, 2=gemiddeld, 3=moeilijk) heeft voorrang op de
+  // tekst-heuristiek; zo sluiten gegenereerde begripsvragen betrouwbaar aan op de staircase.
+  if(q&&(q.d===1||q.d===2||q.d===3))return q.d;
   var v=(q&&q.v)||'', t=v+' '+(((q&&q.o)||[]).join(' '));
   var s=2;
   if(/welke formule|met de juiste|hoeveel|wat is de waarde|welk verband/i.test(v))s++;
@@ -1075,6 +1124,10 @@ function aqFill(){
 }
 function renderAdaptiveResults(){
   const wrap=document.getElementById('adaptive-res-wrap');
+  // "Beheersing dit domein"-kaart verwijderd op verzoek — resultaatscherm strakker.
+  if(wrap)wrap.innerHTML='';
+  return;
+  // eslint-disable-next-line no-unreachable
   if(!wrap||!ST||ST.mode!=='snel'||!ST.vak||!ST.domein){if(wrap)wrap.innerHTML='';return;}
   const d=aqpGet();
   const dom=aqpDomainData(d,ST.vak.id,ST.domein.id);

@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Slagio · Curriculum Dashboard</title>
+<style>
+body{margin:0;background:#f6f7f9;color:#161a20;font:15px/1.5 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif}
+@media(prefers-color-scheme:dark){body{background:#0e1116;color:#e8eaed}}
+.wrap{max-width:1180px;margin:0 auto;padding:20px 16px 80px}
+h1{font-size:20px;margin:0 0 2px;font-weight:800;letter-spacing:-.3px}
+.sub{color:#667085;font-size:13px;margin:0 0 20px}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>Curriculum Dashboard</h1>
+  <div class="sub">Leerdoelen · dekking · confidence · AI-Ready · gaten — pilot HAVO Biologie</div>
+  <div id="mount"><div class="sub">Laden…</div></div>
+</div>
+
+<script src="/data-havo.meta.js"></script>
+<script src="/knowledge-havo.js"></script>
+<script src="/knowledge-koppeling-havo.js"></script>
+<script src="/curriculum-dash.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.101.1/dist/umd/supabase.js" crossorigin="anonymous"></script>
+<script>
+const SB_URL='https://wcfenegohryxhatzxvtw.supabase.co';
+const SB_KEY='eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6IndjZmVuZWdvaHJ5eGhhdHp4dnR3Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODEyODcwMDAsImV4cCI6MjA5Njg2MzAwMH0.B3ygpkosBybQd53VLiRxqIbVxBPWw4V-Nj2IS3k4UFo';
+const mount=document.getElementById('mount');
+window.addEventListener('DOMContentLoaded',async()=>{
+  renderCurriculumInto(mount,{});              // eerst statisch renderen
+  try{
+    const SB=window.supabase.createClient(SB_URL,SB_KEY);
+    const {data}=await SB.from('leaderboard').select('vak_naam,domein_naam,correct,total,niveau').eq('niveau','havo').limit(3000);
+    if(data&&data.length) renderCurriculumInto(mount,{lb:data});  // verrijk met foutratio
+  }catch(e){/* statische kolommen werken zonder Supabase */}
+});
+</script>
+</body>
+</html>

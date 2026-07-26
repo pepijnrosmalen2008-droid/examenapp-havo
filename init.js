@@ -98,6 +98,8 @@ function obFinish(registered){
   localStorage.setItem('slagio_seen_intro_v2','1');
   localStorage.setItem(TUTO_KEY,'1');
   updateProfileNav();renderXPHome();
+  // Vonk neemt de intro over: loopt alle belangrijke dingen langs.
+  setTimeout(()=>{try{if(typeof vonkIntro==='function')vonkIntro();}catch(e){}},650);
 }
 function showVmboWaitlist(){
   const email=prompt('Laat je e-mailadres achter en we mailen je zodra VMBO-TL live gaat:');
@@ -157,7 +159,7 @@ function dismissIntro(){
   localStorage.setItem('slagio_seen_intro_v2','1');
   updateProfileNav();
   renderXPHome();
-  setTimeout(showTutorial,400);
+  setTimeout(()=>{try{if(typeof vonkIntro==='function')vonkIntro();}catch(e){}},450);
 }
 
 function _introRender(){
@@ -165,7 +167,7 @@ function _introRender(){
   const dots=document.getElementById('intro-mdots');
   dots.innerHTML=Array.from({length:INTRO_STEPS_N},(_,i)=>`<div class="intro-mdot${i===_introIdx?' on':''}"></div>`).join('');
   const badge=document.getElementById('intro-level-badge');
-  if(badge)badge.textContent=(APP_LEVEL==='havo'?'HAVO':'VWO')+' 2026';
+  if(badge)badge.textContent=(APP_LEVEL==='havo'?'HAVO':'VWO')+' 2027';
   const next=document.getElementById('intro-next-btn');
   const skip=document.getElementById('intro-skip-btn');
   const last=_introIdx===INTRO_STEPS_N-1;
@@ -299,11 +301,11 @@ function _updatePageSEO(level){
   const nivNaam=isHavo?'HAVO':'VWO';
   const url='https://slagio.nl/'+(level||'');
   document.title=level
-    ?`Slagio - ${nivNaam} Examenvoorbereiding 2026 | 2.000+ vragen, eindexamens, studieplan`
-    :'Slagio - Complete HAVO & VWO Examenvoorbereiding 2026';
+    ?`Slagio - ${nivNaam} Examenvoorbereiding 2027 | 10.000+ vragen, eindexamens, studieplan`
+    :'Slagio - Complete HAVO & VWO Examenvoorbereiding 2027';
   const desc=level
-    ?`Gratis ${nivNaam} examenvoorbereiding 2026. 2.000+ oefenvragen per domein, echte CE-eindexamens 2019–2025, persoonlijk studieplan, spaced repetition flashcards en cijfercalculator. Geen account nodig.`
-    :'Kies je niveau: HAVO of VWO. Gratis examenvoorbereiding met 2.000+ oefenvragen, echte eindexamens 2019–2025, studieplan en meer.';
+    ?`Gratis ${nivNaam} examenvoorbereiding 2027. 10.000+ oefenvragen per domein, echte CE-eindexamens 2019–2025, persoonlijk studieplan, spaced repetition flashcards en cijfercalculator. Geen account nodig.`
+    :'Kies je niveau: HAVO of VWO. Gratis examenvoorbereiding met 10.000+ oefenvragen, echte eindexamens 2019–2025, studieplan en meer.';
   const metaDesc=document.querySelector('meta[name="description"]');
   if(metaDesc)metaDesc.content=desc;
   const og=document.querySelector('meta[property="og:url"]');
@@ -322,27 +324,30 @@ function chooseLevel(level,_noHistory){
   APP_LEVEL=level;
   localStorage.setItem('examenapp_level',level);
   applyLevelTheme(level);
+  // Samenvattingen alvast op de achtergrond laden (parallel, blokkeert de grid niet),
+  // zodat ze klaar zijn wanneer een leerling een vak/samenvatting opent.
+  try{if(typeof ensureSamData==='function')ensureSamData(level);}catch(e){}
   updateLevelChip();
   buildGrid();
   buildSlaagInputs();
   renderSchedule();
   // Update intro badge
   const badge=document.getElementById('intro-level-badge');
-  if(badge)badge.textContent=(level==='havo'?'HAVO':'VWO')+' 2026';
+  if(badge)badge.textContent=(level==='havo'?'HAVO':'VWO')+' 2027';
   // Push URL: /havo or /vwo
   if(!_noHistory)history.pushState({level},'','/'+level);
   _updatePageSEO(level);
   // Show intro for first-time users, home for returning users
   show('sc-home');
-  buildGrid();renderStreak();renderFavHome();renderXPHome();renderDailyChallenge();renderHomeStats();renderGreeting();
+  buildGrid();renderStreak();renderFavHome();renderXPHome();renderDailyChallenge();renderHomeStats();renderGreeting();try{renderKlasHome();}catch(e){}
   const _isNew=!localStorage.getItem(OB_KEY)&&!localStorage.getItem('slagio_seen_intro_v2');
   if(_isNew){setTimeout(showOnboarding,300);}
-  else if(!localStorage.getItem(TUTO_KEY)){setTimeout(showTutorial,400);}
+  else if(!localStorage.getItem('slagio_vonk_intro_done')){setTimeout(()=>{try{if(typeof vonkIntro==='function')vonkIntro();}catch(e){}},500);}
   else{showDailyChallengePopup();}
 }
 function updateLevelChip(){
   const chip=document.getElementById('home-level-chip');
-  if(chip)chip.textContent=(APP_LEVEL==='vwo'?'VWO':'HAVO')+' 2026';
+  if(chip)chip.textContent=(APP_LEVEL==='vwo'?'VWO':'HAVO')+' 2027';
   const badge=document.getElementById('vak-level-badge');
   if(badge)badge.textContent=(APP_LEVEL==='vwo'?'VWO':'HAVO');
 }
@@ -379,8 +384,6 @@ updateLevelChip();
 if(document.getElementById('sc-schedule'))renderSchedule();
 buildRegisterAnimalPicker();
 buildSlaagInputs();
-// Push initial ads op home (na kleine vertraging zodat AdSense geladen is)
-setTimeout(()=>{tryPushAds('sc-home');},1500);
 // Show welcome on first load (sc-welcome is default via class="on")
 // ═══════ BOTTOM NAV ═══════
 function updateBottomNav(id){
@@ -408,6 +411,31 @@ function updateBottomNav(id){
     }catch(e){}
   }
 }
+// ── Mobiel menu (bottom-sheet met alle onderdelen) ──
+function openNavSheet(){
+  let ov=document.getElementById('nav-sheet-ov');
+  if(!ov){
+    ov=document.createElement('div');ov.id='nav-sheet-ov';ov.className='nav-sheet-ov';
+    const items=[
+      ['📅','Studieplan',"show('sc-studieplan');renderStudieplan()"],
+      ['📊','Voortgang',"openRapport()"],
+      ['📄','Examens',"show('sc-schedule')"],
+      ['🧮','Cijfers',"show('sc-calc');setTimeout(prefillCalcFromSaved,50)"],
+      ['📕','Foutenboek',"openFoutenboek()"],
+      ['🔄','Herhalen',"openHerhalen()"],
+      ['🏆','Leaderboard',"show('sc-leaderboard');renderLeaderboard()"],
+      ['👥','Groep',"show('sc-groep');renderGroepScreen()"],
+    ];
+    ov.innerHTML='<div class="nav-sheet no-ico" onclick="event.stopPropagation()">'
+      +'<div class="nav-sheet-grip"></div><div class="nav-sheet-title">Menu</div>'
+      +items.map(function(it){return '<button class="nav-sheet-item" onclick="closeNavSheet();'+it[2]+'"><span class="nav-sheet-ic">'+it[0]+'</span><span class="nav-sheet-lbl">'+it[1]+'</span><span class="nav-sheet-go">›</span></button>';}).join('')
+      +'</div>';
+    ov.addEventListener('click',closeNavSheet);
+    document.body.appendChild(ov);
+  }
+  requestAnimationFrame(function(){ov.classList.add('open');});
+}
+function closeNavSheet(){var ov=document.getElementById('nav-sheet-ov');if(ov)ov.classList.remove('open');}
 // Patch show() to update bottom nav (pass all args through)
 const _origShow=show;
 window.show=function(id,_noHash){_origShow(id,_noHash);updateBottomNav(id);};

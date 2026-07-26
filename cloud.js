@@ -1,7 +1,34 @@
 // ═══════ SUPABASE ═══════
 const SUPABASE_URL='https://wcfenegohryxhatzxvtw.supabase.co';
 const SUPABASE_KEY='eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6IndjZmVuZWdvaHJ5eGhhdHp4dnR3Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODEyODcwMDAsImV4cCI6MjA5Njg2MzAwMH0.B3ygpkosBybQd53VLiRxqIbVxBPWw4V-Nj2IS3k4UFo';
-const SB=window.supabase.createClient(SUPABASE_URL,SUPABASE_KEY);
+// Supabase-client. Als de (cross-origin) library niet geladen is — offline, CDN plat,
+// of geblokkeerd door een adblocker — mag de app NIET stuklopen: dan draaien we op een
+// veilige offline-stub zodat alles op lokale data blijft werken (vakken, quiz, samenvattingen).
+function _sbOfflineStub(){
+  var res=function(v){return Promise.resolve(v);};
+  var q={then:function(r){try{r&&r({data:[],error:{message:'offline'}});}catch(e){}return q;},
+         catch:function(){return q;},finally:function(f){try{f&&f();}catch(e){}return q;}};
+  var chain=new Proxy(q,{get:function(t,p){return (p in t)?t[p]:function(){return chain;};}});
+  return {
+    from:function(){return chain;},
+    rpc:function(){return chain;},
+    channel:function(){return {on:function(){return this;},subscribe:function(){return {unsubscribe:function(){}};}};},
+    removeChannel:function(){},
+    auth:{
+      getSession:function(){return res({data:{session:null},error:null});},
+      getUser:function(){return res({data:{user:null},error:null});},
+      onAuthStateChange:function(cb){try{setTimeout(function(){cb&&cb('INITIAL_SESSION',null);},0);}catch(e){}return {data:{subscription:{unsubscribe:function(){}}}};},
+      signInWithPassword:function(){return res({data:{user:null,session:null},error:{message:'Geen internetverbinding'}});},
+      signUp:function(){return res({data:{user:null,session:null},error:{message:'Geen internetverbinding'}});},
+      signOut:function(){return res({error:null});},
+      resetPasswordForEmail:function(){return res({data:{},error:{message:'Geen internetverbinding'}});},
+      updateUser:function(){return res({data:{user:null},error:{message:'Geen internetverbinding'}});}
+    }
+  };
+}
+const _sbLib=window.supabase;
+const SB=(_sbLib&&_sbLib.createClient)?_sbLib.createClient(SUPABASE_URL,SUPABASE_KEY):_sbOfflineStub();
+if(!(_sbLib&&_sbLib.createClient)){try{console.warn('[Slagio] Supabase niet beschikbaar — offline modus; lokale data blijft werken.');}catch(e){}}
 // Persistent device ID - generated once, stored in localStorage
 const _DID=(()=>{try{let id=localStorage.getItem('slagio_did');if(!id){id=(crypto.randomUUID?crypto.randomUUID():'x'+Math.random().toString(36).slice(2)+Date.now().toString(36));localStorage.setItem('slagio_did',id);}return id;}catch(e){return null;}})();
 async function trackEvent(type,meta){
@@ -22,6 +49,38 @@ async function trackEvent(type,meta){
     }).then(()=>{}).catch(()=>{});
   }catch(e){}
 }
+
+// ═══════ FOUT-MONITORING → bestaande events-tabel (geen Supabase-wijziging nodig) ═══════
+// Vangt live JS-fouten, niet-afgehandelde promises en mislukte bron-loads op en logt ze
+// als event_type 'js_error' (in meta). Gededupliceerd + gecapt zodat het nooit spamt.
+(function initErrorMonitor(){
+  var seen={}, sent=0, MAX=12;
+  function report(kind,msg,src,line,col,stack){
+    try{
+      if(sent>=MAX)return;
+      msg=String(msg||'').slice(0,300);
+      var sig=kind+'|'+msg+'|'+(line||0);
+      if(seen[sig])return; seen[sig]=1; sent++;
+      var scr=''; try{var on=document.querySelector('.sc.on');scr=on?on.id:'';}catch(e){}
+      if(typeof trackEvent==='function')trackEvent('js_error',{
+        kind:kind, message:msg,
+        source:String(src||'').replace(location.origin,'').slice(0,140),
+        line:line||null, col:col||null,
+        stack:String(stack||'').slice(0,700),
+        screen:scr, path:location.pathname,
+        online:navigator.onLine, ua:navigator.userAgent.slice(0,170)
+      });
+    }catch(e){}
+  }
+  window.addEventListener('error',function(e){
+    if(e&&e.message)report('error',e.message,e.filename,e.lineno,e.colno,e.error&&e.error.stack);
+    else if(e&&e.target&&(e.target.src||e.target.href))report('resource','bron kon niet laden: '+(e.target.src||e.target.href),e.target.src||e.target.href);
+  },true);
+  window.addEventListener('unhandledrejection',function(e){
+    var r=e&&e.reason; report('promise',(r&&r.message)||String(r),'',null,null,r&&r.stack);
+  });
+})();
+
 // Detecteer herkomst (UTM param > referrer > direct)
 function _getSrc(){
   try{const p=new URLSearchParams(location.search);const utm=p.get('utm_source');if(utm)return utm.toLowerCase();}catch(e){}
@@ -455,10 +514,15 @@ function authErrMsg(msg){
   if(m.includes('invalid login')||m.includes('invalid credentials'))return'Onjuist e-mailadres of wachtwoord.';
   if(m.includes('email not confirmed'))return'Bevestig eerst je e-mailadres via de mail die je hebt ontvangen.';
   if(m.includes('already registered')||m.includes('user already exists'))return'Dit e-mailadres is al in gebruik.';
+  if(m.includes('signup')&&(m.includes('disabled')||m.includes('not allowed')))return'Registreren staat tijdelijk uit. Probeer het later opnieuw of mail ons via slagiocompany@gmail.com.';
+  if(m.includes('email')&&m.includes('invalid'))return'Dit e-mailadres wordt niet geaccepteerd. Probeer een ander adres.';
+  if(m.includes('captcha'))return'Verificatie mislukt. Ververs de pagina en probeer het opnieuw.';
   if(m.includes('password'))return'Wachtwoord moet minimaal 8 tekens zijn.';
-  if(m.includes('rate limit'))return'Te veel pogingen. Probeer het later opnieuw.';
-  if(m.includes('network')||m.includes('fetch'))return'Geen internetverbinding.';
-  return'Er is iets misgegaan. Probeer het opnieuw.';
+  if(m.includes('rate limit')||m.includes('too many'))return'Te veel pogingen. Probeer het later opnieuw.';
+  if(m.includes('network')||m.includes('fetch')||m.includes('failed to'))return'Geen verbinding met de server. Controleer je internet en probeer opnieuw.';
+  // Onbekende fout: toon de echte melding (ingekort) i.p.v. hem te verbergen —
+  // anders is een serverprobleem niet te onderscheiden van een invoerfout.
+  return'Er ging iets mis: '+String(msg).slice(0,120);
 }
 
 function switchAuthTab(tab){
@@ -511,7 +575,7 @@ async function doRegister(){
   if(!selectedAnimalId){errEl.textContent='Kies eerst je startdier!';errEl.style.display='block';return;}
   btn.disabled=true;btn.textContent='Bezig...';btn.classList.add('loading');
   try{
-    const {data,error}=await SB.auth.signUp({email,password:pass});
+    const {data,error}=await SB.auth.signUp({email,password:pass,options:{emailRedirectTo:'https://slagio.nl'}});
     if(error)throw error;
     const initAvatar=selectedAnimalId?getAnimalEmoji(selectedAnimalId,0):'🐾';
     const prof={naam,avatar:initAvatar,animalId:selectedAnimalId,school:'',klas:'',profiel:''};

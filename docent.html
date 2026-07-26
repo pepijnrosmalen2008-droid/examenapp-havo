@@ -1,0 +1,585 @@
+<!doctype html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex">
+<meta name="theme-color" content="#f3f5f9" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0d1016" media="(prefers-color-scheme: dark)">
+<title>Slagio · Docentenportaal</title>
+<link rel="icon" href="/icon-192.png">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@600;700;800;900&display=swap" rel="stylesheet">
+<script>
+  (function(){try{
+    var t=localStorage.getItem('docent_theme');
+    var dark = t ? t==='dark' : matchMedia('(prefers-color-scheme:dark)').matches;
+    if(dark) document.documentElement.classList.add('dark');
+  }catch(e){}})();
+</script>
+<style>
+:root{
+  --or:#f2760c; --or-rgb:242,118,12; --or-2:#f9852a;
+  --fh:'Nunito',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  --font:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;
+  --dk:#1b1f2a; --mu:#697586; --soft:rgba(120,130,150,.055);
+  --red:#e5484d; --amber:#dd8500; --green:#2ba55b;
+  --glass:rgba(255,255,255,.66); --glass-bd:rgba(255,255,255,.85); --glass-hi:rgba(255,255,255,.9);
+  --line:rgba(20,28,44,.08); --stroke:rgba(20,28,44,.06);
+  --shadow:0 10px 30px rgba(16,24,40,.09);
+  --bg1:rgba(var(--or-rgb),.11); --bg2:rgba(99,102,241,.11); --bg-a:#f4f6fa; --bg-b:#e8edf5;
+  --field:rgba(255,255,255,.6);
+}
+html.dark{
+  --dk:#eceef3; --mu:#98a1b0; --soft:rgba(255,255,255,.03);
+  --glass:rgba(26,30,40,.55); --glass-bd:rgba(255,255,255,.1); --glass-hi:rgba(255,255,255,.06);
+  --line:rgba(255,255,255,.08); --stroke:rgba(255,255,255,.06);
+  --shadow:0 14px 38px rgba(0,0,0,.4);
+  --bg1:rgba(var(--or-rgb),.15); --bg2:rgba(99,102,241,.16); --bg-a:#0d1016; --bg-b:#12151d;
+  --field:rgba(255,255,255,.04);
+}
+*{box-sizing:border-box}
+html,body{min-height:100%}
+body{margin:0;font-family:var(--font);color:var(--dk);-webkit-font-smoothing:antialiased;
+  background:
+    radial-gradient(56% 46% at 10% -6%, var(--bg1), transparent 60%),
+    radial-gradient(50% 44% at 106% 8%, var(--bg2), transparent 62%),
+    linear-gradient(180deg, var(--bg-a), var(--bg-b));
+  background-attachment:fixed;}
+.fh,.brand,h1,h2,.stat-n,.pass-n,.risk-gem,.dom-pct,.advies-tx .lbl,th,.kl-naam{font-family:var(--fh)}
+.num{font-variant-numeric:tabular-nums;font-feature-settings:"tnum"}
+a{color:var(--or);text-decoration:none}
+.wrap{max-width:1080px;margin:0 auto;padding:22px 18px 72px}
+
+.glass{background:var(--glass);
+  -webkit-backdrop-filter:blur(20px) saturate(160%);backdrop-filter:blur(20px) saturate(160%);
+  border:1px solid var(--glass-bd);border-radius:20px;
+  box-shadow:var(--shadow),0 1px 0 var(--glass-hi) inset}
+
+.tt{position:fixed;top:15px;right:15px;z-index:50;width:40px;height:40px;padding:0;display:grid;place-items:center;border-radius:13px}
+.tt svg{width:18px;height:18px;color:var(--dk)}
+.tt .ic-sun{display:none}html.dark .tt .ic-sun{display:block}html.dark .tt .ic-moon{display:none}
+
+.btn{border:none;border-radius:12px;padding:10px 15px;font-family:var(--font);font-weight:700;font-size:13px;cursor:pointer;transition:transform .12s ease, filter .15s;color:var(--dk);line-height:1}
+.btn:active{transform:scale(.96)}.btn:disabled{opacity:.55;cursor:default}
+.btn-p{background:linear-gradient(180deg,var(--or-2),var(--or));color:#fff;box-shadow:0 6px 16px rgba(var(--or-rgb),.3),0 1px 0 rgba(255,255,255,.35) inset}
+.btn-p:hover{filter:brightness(1.03)}
+.btn-glass{background:var(--glass);border:1px solid var(--glass-bd);-webkit-backdrop-filter:blur(12px);backdrop-filter:blur(12px)}
+.btn-sm{padding:8px 13px;font-size:12.5px;border-radius:11px}
+
+.top{display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin-bottom:18px}
+.brand{display:flex;align-items:center;gap:11px;font-weight:800;font-size:17px;letter-spacing:-.3px}
+.brand img{width:34px;height:34px;border-radius:10px}
+.brand small{display:block;font-size:11px;font-weight:600;color:var(--mu);letter-spacing:.1px}
+.top-right{margin-left:auto;display:flex;align-items:center;gap:9px;flex-wrap:wrap}
+.klas-pill{padding:9px 14px;font-size:13px;font-weight:700;border-radius:13px}
+.klas-pill b{color:var(--or)}
+.who{font-size:12.5px;color:var(--mu);font-weight:600;padding:0 4px}
+
+/* velden */
+.field{margin-bottom:12px;text-align:left}
+.field label{display:block;font-size:12px;font-weight:700;color:var(--mu);margin-bottom:5px}
+.in{width:100%;padding:12px 13px;border:1px solid var(--glass-bd);border-radius:12px;background:var(--field);color:var(--dk);font-family:var(--font);font-size:14px;font-weight:600;outline:none;transition:border-color .15s, box-shadow .15s}
+.in:focus{border-color:var(--or);box-shadow:0 0 0 4px rgba(var(--or-rgb),.14)}
+select.in{appearance:none;-webkit-appearance:none;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 24 24' fill='none' stroke='%23697586' stroke-width='3'%3E%3Cpath d='M6 9l6 6 6-6'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 13px center;padding-right:34px}
+
+/* gate */
+.gate{max-width:900px;margin:6vh auto 0}
+.gate-head{text-align:center;margin-bottom:26px}
+.gate-head img{width:56px;height:56px;border-radius:16px}
+.gate-head h1{font-size:25px;font-weight:800;letter-spacing:-.6px;margin:15px 0 7px}
+.gate-head p{color:var(--mu);font-size:14px;line-height:1.55;margin:0 auto;max-width:520px}
+.gate-cols{display:grid;grid-template-columns:1.1fr 1fr;gap:14px;align-items:start}
+.pad{padding:24px}
+.pad h2{font-size:16px;font-weight:800;letter-spacing:-.2px;margin:0 0 3px}
+.pad .sub{font-size:12.5px;color:var(--mu);margin:0 0 16px;line-height:1.45}
+.auth-btns{display:flex;gap:9px;margin-top:4px}.auth-btns .btn{flex:1;padding:12px}
+.code-in{width:100%;text-align:center;letter-spacing:6px;font-size:22px;font-weight:800;text-transform:uppercase;padding:15px;border:1px solid var(--glass-bd);border-radius:14px;background:var(--field);color:var(--dk);font-family:var(--fh);margin-bottom:12px;outline:none;transition:border-color .15s, box-shadow .15s}
+.code-in:focus{border-color:var(--or);box-shadow:0 0 0 4px rgba(var(--or-rgb),.14)}
+.msg{font-size:13px;margin-top:12px;min-height:18px;line-height:1.45}.msg.err{color:var(--red)}.msg.info{color:var(--mu)}.msg.ok{color:var(--green)}
+.gate-foot{text-align:center;margin-top:22px;font-size:13px;color:var(--mu)}
+.gate-foot a{font-weight:700}.gate-foot .sep{opacity:.4;margin:0 8px}
+
+/* pilot banner */
+.pilot{display:flex;align-items:center;gap:14px;padding:14px 17px;margin-bottom:16px}
+.pilot-bar{width:4px;align-self:stretch;border-radius:3px;background:linear-gradient(180deg,var(--green),#1f8a4c);flex-shrink:0}
+.pilot-tx{flex:1;font-size:13px;line-height:1.5}
+.pilot-tx b{font-weight:800}
+
+/* nieuwe klas */
+.newklas{padding:22px;margin-bottom:14px}
+.newklas h2{font-size:16px;font-weight:800;letter-spacing:-.2px;margin:0 0 15px}
+.nk-grid{display:grid;grid-template-columns:1.4fr .8fr 1fr auto;gap:10px;align-items:end}
+.nk-grid .field{margin:0}
+.nk-grid .btn{padding:12px 18px;white-space:nowrap}
+@media(max-width:720px){.nk-grid{grid-template-columns:1fr 1fr}.nk-grid .field.wide,.nk-grid .btn{grid-column:1/-1}}
+
+/* klaslijst */
+.klaslijst{display:flex;flex-direction:column;gap:9px}
+.kl-row{display:flex;align-items:center;gap:12px;padding:13px 15px;border-radius:15px;background:var(--soft);border:1px solid var(--stroke)}
+.kl-info{flex:1;min-width:0}
+.kl-naam{font-weight:800;font-size:14.5px;letter-spacing:-.1px}
+.kl-meta{font-size:12px;color:var(--mu);margin-top:2px}
+.kl-code{font-family:var(--fh);font-weight:800;font-size:14px;letter-spacing:2px;color:var(--or);background:var(--field);border:1px solid var(--glass-bd);border-radius:10px;padding:8px 12px;cursor:pointer;transition:filter .15s}
+.kl-code:hover{filter:brightness(1.05)}
+.sec-h{font-size:12px;font-weight:800;text-transform:uppercase;letter-spacing:.5px;color:var(--mu);margin:0 2px 10px}
+
+/* dot */
+.dot{width:8px;height:8px;border-radius:50%;flex-shrink:0;display:inline-block}
+.dg{background:var(--green);box-shadow:0 0 0 3px rgba(43,165,91,.16)}
+.da{background:var(--amber);box-shadow:0 0 0 3px rgba(221,133,0,.16)}
+.dr{background:var(--red);box-shadow:0 0 0 3px rgba(229,72,77,.16)}
+
+/* dashboard */
+.card{padding:21px}
+.card h2{font-size:15px;font-weight:800;letter-spacing:-.2px;margin:0 0 2px}
+.card .sub{font-size:12.5px;color:var(--mu);margin:0 0 15px;line-height:1.45}
+.hero{display:grid;grid-template-columns:1.55fr 1fr;gap:14px;margin-bottom:14px}
+.gereed{padding:21px}
+.gereed h2{font-size:15px;font-weight:800;letter-spacing:-.2px;margin:0}
+.gereed-row{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:15px}
+.stat{border-radius:15px;padding:16px 12px;text-align:center;border:1px solid var(--stroke);background:var(--soft)}
+.stat-n{font-size:31px;font-weight:800;line-height:1;letter-spacing:-1px}
+.stat-l{font-size:11.5px;font-weight:700;margin-top:7px;color:var(--mu);display:flex;align-items:center;justify-content:center;gap:6px}
+.stat.g .stat-n{color:var(--green)}.stat.a .stat-n{color:var(--amber)}.stat.r .stat-n{color:var(--red)}
+.pass{padding:21px;display:flex;flex-direction:column;justify-content:center;color:#fff;position:relative;overflow:hidden;
+  background:linear-gradient(150deg,var(--or-2),var(--or));border:1px solid rgba(255,255,255,.22);border-radius:20px;
+  box-shadow:0 12px 30px rgba(var(--or-rgb),.3),0 1px 0 rgba(255,255,255,.35) inset}
+.pass::before{content:'';position:absolute;inset:0;background:linear-gradient(180deg,rgba(255,255,255,.24),transparent 46%);pointer-events:none}
+.pass-lbl{font-size:12.5px;font-weight:700;opacity:.94}
+.pass-n{font-size:46px;font-weight:800;line-height:1;letter-spacing:-1.5px;margin:5px 0}
+.pass-sub{font-size:12px;opacity:.9}
+.pass-days{margin-top:14px;background:rgba(255,255,255,.18);border-radius:12px;padding:10px 13px;font-size:12.5px;font-weight:700;-webkit-backdrop-filter:blur(4px);backdrop-filter:blur(4px)}
+.advies{display:flex;align-items:stretch;gap:14px;padding:15px 17px;margin-bottom:16px}
+.advies-bar{width:4px;border-radius:3px;background:linear-gradient(180deg,var(--or-2),var(--or));flex-shrink:0}
+.advies-tx{flex:1;font-size:13.5px;line-height:1.5;align-self:center}
+.advies-tx .lbl{display:block;font-weight:800;font-size:10.5px;letter-spacing:.6px;text-transform:uppercase;color:var(--or);margin-bottom:3px}
+.grid{display:grid;grid-template-columns:1.55fr 1fr;gap:14px;align-items:start}
+.col{display:flex;flex-direction:column;gap:14px}
+.risk{display:flex;flex-direction:column;gap:8px}
+.risk-row{display:flex;align-items:center;gap:12px;padding:12px 13px;border-radius:14px;background:var(--soft);border:1px solid var(--stroke)}
+.risk-info{flex:1;min-width:0}
+.risk-naam{font-weight:800;font-size:14px;letter-spacing:-.1px}
+.risk-reason{font-size:12px;color:var(--mu);margin-top:1px}
+.risk-metric{text-align:right;flex-shrink:0}
+.risk-gem{font-weight:800;font-size:15px}
+.growth{font-size:11.5px;font-weight:800}.gr-up{color:var(--green)}.gr-down{color:var(--red)}.gr-flat{color:var(--mu)}
+.empty{color:var(--mu);font-size:13px;margin:2px 0;line-height:1.5}
+.dom{display:flex;flex-direction:column;gap:8px}
+.dom-row{display:flex;align-items:center;gap:11px;padding:12px;border-radius:13px;background:var(--soft);border:1px solid var(--stroke)}
+.dom-info{flex:1;min-width:0}
+.dom-naam{font-size:13.5px;font-weight:700;letter-spacing:-.1px}
+.dom-meta{font-size:11.5px;color:var(--mu);margin-top:1px}
+.dom-pct{font-weight:800;font-size:15px;flex-shrink:0}
+.tbl-wrap{overflow-x:auto;margin:0 -3px}
+table{width:100%;border-collapse:collapse;font-size:13.5px}
+th{text-align:left;font-size:10.5px;font-weight:800;color:var(--mu);text-transform:uppercase;letter-spacing:.4px;padding:9px 10px;border-bottom:1px solid var(--line)}
+td{padding:12px 10px;border-bottom:1px solid var(--line)}tr:last-child td{border-bottom:none}
+tbody tr{transition:background .12s}tbody tr:hover{background:var(--soft)}
+.chip{display:inline-flex;align-items:center;gap:6px;font-size:11px;font-weight:800;border-radius:20px;padding:4px 10px;border:1px solid var(--stroke);background:var(--soft)}
+.ch-g{color:var(--green)}.ch-a{color:var(--amber)}.ch-r{color:var(--red)}
+.footer{margin-top:28px;font-size:12px;color:var(--mu);text-align:center;line-height:1.6}
+
+/* toast */
+#toast{position:fixed;left:50%;bottom:22px;transform:translateX(-50%) translateY(20px);z-index:80;
+  background:var(--dk);color:var(--bg-a);font-size:13px;font-weight:700;padding:11px 18px;border-radius:13px;
+  box-shadow:0 10px 30px rgba(0,0,0,.25);opacity:0;pointer-events:none;transition:opacity .2s, transform .2s}
+#toast.on{opacity:1;transform:translateX(-50%) translateY(0)}
+
+.hidden{display:none!important}
+@media(max-width:820px){.hero,.grid,.gate-cols{grid-template-columns:1fr}}
+@media(max-width:520px){.wrap{padding:18px 13px 60px}.pad{padding:20px}}
+</style>
+</head>
+<body>
+
+<button class="tt btn-glass" onclick="toggleTheme()" aria-label="Wissel licht/donker" title="Licht / donker">
+  <svg class="ic-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8Z"/></svg>
+  <svg class="ic-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4.2"/><path d="M12 2v2.5M12 19.5V22M4.9 4.9l1.8 1.8M17.3 17.3l1.8 1.8M2 12h2.5M19.5 12H22M4.9 19.1l1.8-1.8M17.3 6.7l1.8-1.8"/></svg>
+</button>
+
+<div class="wrap">
+
+  <!-- ══ GATE: inloggen of klas bekijken ══ -->
+  <div id="gate" class="gate hidden">
+    <div class="gate-head">
+      <img src="/icon-192.png" alt="Slagio">
+      <h1>Docentenportaal</h1>
+      <p>Maak je klas aan, deel de code met je leerlingen en volg in één dashboard hoe ze ervoor staan. Tijdens de pilot gratis.</p>
+    </div>
+    <div class="gate-cols">
+      <div class="pad glass">
+        <h2>Log in als docent</h2>
+        <div class="sub">Beheer je klassen en dashboards. Nog geen account? Maak er gratis een aan.</div>
+        <div class="field"><label for="au-email">E-mailadres</label><input id="au-email" class="in" type="email" autocomplete="email" placeholder="jij@school.nl"></div>
+        <div class="field"><label for="au-pw">Wachtwoord</label><input id="au-pw" class="in" type="password" autocomplete="current-password" placeholder="••••••••" onkeydown="if(event.key==='Enter')doLogin()"></div>
+        <div class="auth-btns">
+          <button class="btn btn-p" onclick="doLogin()">Inloggen</button>
+          <button class="btn btn-glass" onclick="doRegister()">Account aanmaken</button>
+        </div>
+        <div id="auth-msg" class="msg info"></div>
+      </div>
+      <div class="pad glass">
+        <h2>Snel een klas bekijken</h2>
+        <div class="sub">Heb je alleen een klascode? Bekijk het dashboard direct — geen account nodig.</div>
+        <input id="code-in" class="code-in" maxlength="6" placeholder="KLASCODE" oninput="this.value=this.value.toUpperCase().replace(/[^A-Z0-9]/g,'')" onkeydown="if(event.key==='Enter')connect()">
+        <button class="btn btn-glass" style="width:100%;padding:13px" onclick="connect()">Dashboard bekijken</button>
+        <div id="connect-msg" class="msg info"></div>
+      </div>
+    </div>
+    <div class="gate-foot">
+      <a onclick="loadDemo()" style="cursor:pointer">Bekijk een voorbeeld</a>
+      <span class="sep">·</span>
+      <a href="/vakken/slagio-school.html">Wat is Slagio School? →</a>
+    </div>
+  </div>
+
+  <!-- ══ PORTAL: mijn klassen (ingelogd) ══ -->
+  <div id="portal" class="hidden">
+    <div class="top">
+      <div class="brand"><img src="/icon-192.png" alt="Slagio"><div>Slagio<small>Docentenportaal</small></div></div>
+      <div class="top-right">
+        <span class="who" id="portal-email"></span>
+        <button class="btn btn-glass" onclick="doLogout()">Uitloggen</button>
+      </div>
+    </div>
+
+    <div class="pilot glass">
+      <div class="pilot-bar"></div>
+      <div class="pilot-tx"><b>Gratis pilot.</b> Je maakt onbeperkt klassen aan en leerlingen oefenen altijd gratis. Meer over de schoollicentie? <a href="/vakken/slagio-school.html">Lees over Slagio School →</a></div>
+    </div>
+
+    <div class="newklas glass">
+      <h2>Nieuwe klas aanmaken</h2>
+      <div class="nk-grid">
+        <div class="field wide"><label for="nk-naam">Naam van de klas</label><input id="nk-naam" class="in" maxlength="40" placeholder="Bijv. 5 HAVO biologie"></div>
+        <div class="field"><label for="nk-niv">Niveau</label><select id="nk-niv" class="in" onchange="fillVak()"><option value="havo">HAVO</option><option value="vwo">VWO</option></select></div>
+        <div class="field"><label for="nk-vak">Vak (optioneel)</label><select id="nk-vak" class="in"></select></div>
+        <button class="btn btn-p" onclick="createClass()">Klas aanmaken</button>
+      </div>
+      <div id="new-msg" class="msg info"></div>
+    </div>
+
+    <div class="sec-h">Mijn klassen</div>
+    <div id="klaslijst" class="klaslijst"><p class="empty">Laden…</p></div>
+
+    <div class="footer">Alleen voornamen en klasgemiddelden. Slagio · <a href="/vakken/slagio-school.html">Over Slagio School</a> · <a href="/">slagio.nl</a></div>
+  </div>
+
+  <!-- ══ DASHBOARD ══ -->
+  <div id="dash" class="hidden">
+    <div class="top">
+      <div class="brand"><img src="/icon-192.png" alt="Slagio"><div>Slagio<small>Docentendashboard</small></div></div>
+      <div class="top-right">
+        <div class="klas-pill glass" id="klas-pill"></div>
+        <button class="btn btn-glass" onclick="refresh()">Vernieuwen</button>
+        <button class="btn btn-glass" onclick="backFromDash()">← Terug</button>
+      </div>
+    </div>
+    <div id="demo-note" class="glass hidden" style="padding:12px 16px;font-size:13px;margin-bottom:16px">
+      <b>Voorbeeldweergave</b> met verzonnen data — zo werkt je dashboard zodra je klas oefent.
+    </div>
+
+    <div id="advies" class="advies glass hidden"><div class="advies-bar"></div><div class="advies-tx" id="advies-tx"></div></div>
+
+    <div class="hero">
+      <div class="gereed glass">
+        <h2>Examen-gereedheid van de klas</h2>
+        <div class="sub">Op basis van scores, groei, oefenvolume en recente activiteit.</div>
+        <div class="gereed-row" id="gereed-row"></div>
+      </div>
+      <div class="pass">
+        <div class="pass-lbl">Verwachte klas-slaagkans</div>
+        <div class="pass-n num" id="pass-n">—</div>
+        <div class="pass-sub">indicatie, geen garantie</div>
+        <div class="pass-days" id="pass-days">—</div>
+      </div>
+    </div>
+
+    <div class="grid">
+      <div class="col">
+        <div class="card glass">
+          <h2>Wie heeft hulp nodig?</h2>
+          <div class="sub">Automatisch bovenaan: laag, weinig geoefend of dalende trend.</div>
+          <div class="risk" id="risk"></div>
+        </div>
+        <div class="card glass">
+          <h2>Alle leerlingen</h2>
+          <div class="tbl-wrap"><table>
+            <thead><tr><th>Leerling</th><th>Status</th><th>Beheersing</th><th>Groei</th><th>Laatst actief</th></tr></thead>
+            <tbody id="roster"></tbody>
+          </table></div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card glass">
+          <h2>Behandel dit als eerste</h2>
+          <div class="sub">De domeinen waar je klas het meest vastloopt.</div>
+          <div class="dom" id="dom"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer">Alleen voornamen en klasgemiddelden. Slagio · <a href="/vakken/slagio-school.html">Over Slagio School</a></div>
+  </div>
+</div>
+
+<div id="toast"></div>
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.101.1/dist/umd/supabase.js"></script>
+<script src="/data-havo.meta.js"></script>
+<script src="/data-vwo.meta.js"></script>
+<script>
+const SUPABASE_URL='https://wcfenegohryxhatzxvtw.supabase.co';
+const SUPABASE_KEY='eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6IndjZmVuZWdvaHJ5eGhhdHp4dnR3Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODEyODcwMDAsImV4cCI6MjA5Njg2MzAwMH0.B3ygpkosBybQd53VLiRxqIbVxBPWw4V-Nj2IS3k4UFo';
+const SB = window.supabase ? window.supabase.createClient(SUPABASE_URL,SUPABASE_KEY) : null;
+let _last=null, _demo=false, _session=null, _viewingDash=false;
+
+function toggleTheme(){
+  const d=document.documentElement.classList.toggle('dark');
+  try{localStorage.setItem('docent_theme',d?'dark':'light');}catch(e){}
+}
+let _tt;
+function toast(t){const el=document.getElementById('toast');el.textContent=t;el.classList.add('on');clearTimeout(_tt);_tt=setTimeout(()=>el.classList.remove('on'),2600);}
+
+const esc=s=>String(s==null?'':s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const pctCol=p=>p>=0.7?'var(--green)':p>=0.5?'var(--amber)':'var(--red)';
+const agoTxt=d=>d==null?'nooit':d<=0?'vandaag':d===1?'gisteren':d<7?d+' dagen':d<14?'1 week':Math.floor(d/7)+' weken';
+const notReady=e=>{const m=String(e?.message||e).toLowerCase();return m.includes('does not exist')||m.includes('could not find')||m.includes('schema cache')||e?.code==='PGRST202';};
+
+function vakList(niv){return (niv==='vwo'?(window.VAKKEN_VWO||[]):(window.VAKKEN||[]));}
+function vakNaam(niv,id){const v=vakList(niv).find(x=>x.id===id);return v?v.naam:(id||'');}
+function fillVak(){
+  const niv=document.getElementById('nk-niv').value;
+  const sel=document.getElementById('nk-vak');
+  sel.innerHTML='<option value="">— Geen specifiek vak —</option>'+vakList(niv).map(v=>`<option value="${esc(v.id)}">${esc(v.naam)}</option>`).join('');
+}
+
+/* ══ SCHERM-ROUTING ══ */
+function showScreen(id){['gate','portal','dash'].forEach(s=>document.getElementById(s).classList.toggle('hidden',s!==id));}
+function route(){
+  if(_viewingDash){showScreen('dash');return;}
+  if(_session){showScreen('portal');document.getElementById('portal-email').textContent=_session.user?.email||'';loadMyClasses();}
+  else showScreen('gate');
+}
+function backFromDash(){_viewingDash=false;_demo=false;route();}
+
+/* ══ AUTH ══ */
+function authErr(e){
+  const m=String(e?.message||e).toLowerCase();
+  if(m.includes('invalid login'))return 'E-mail of wachtwoord klopt niet.';
+  if(m.includes('email not confirmed'))return 'Bevestig eerst je e-mail via de link die we stuurden, log daarna in.';
+  if(m.includes('already registered')||m.includes('already been registered'))return 'Er bestaat al een account met dit e-mailadres. Log in.';
+  if(m.includes('password'))return 'Wachtwoord moet minstens 6 tekens zijn.';
+  return 'Er ging iets mis. Probeer het opnieuw.';
+}
+async function doLogin(){
+  const email=(document.getElementById('au-email').value||'').trim();
+  const pw=document.getElementById('au-pw').value||'';
+  const msg=document.getElementById('auth-msg');msg.className='msg info';
+  if(!email||!pw){msg.className='msg err';msg.textContent='Vul je e-mail en wachtwoord in.';return;}
+  if(!SB){msg.className='msg err';msg.textContent='Geen verbinding. Ververs de pagina.';return;}
+  msg.textContent='Bezig met inloggen…';
+  const {error}=await SB.auth.signInWithPassword({email,password:pw});
+  if(error){msg.className='msg err';msg.textContent=authErr(error);return;}
+  msg.textContent='';/* onAuthStateChange doet de rest */
+}
+async function doRegister(){
+  const email=(document.getElementById('au-email').value||'').trim();
+  const pw=document.getElementById('au-pw').value||'';
+  const msg=document.getElementById('auth-msg');msg.className='msg info';
+  if(!email||pw.length<6){msg.className='msg err';msg.textContent='Vul een e-mail in en kies een wachtwoord van minstens 6 tekens.';return;}
+  if(!SB){msg.className='msg err';msg.textContent='Geen verbinding. Ververs de pagina.';return;}
+  msg.textContent='Account aanmaken…';
+  const {data,error}=await SB.auth.signUp({email,password:pw,options:{emailRedirectTo:location.origin+'/docent.html'}});
+  if(error){msg.className='msg err';msg.textContent=authErr(error);return;}
+  if(data.session){msg.textContent='';/* bevestiging uit → direct ingelogd */}
+  else{msg.className='msg ok';msg.textContent='Account aangemaakt! Check je e-mail om te bevestigen en log daarna hier in.';}
+}
+async function doLogout(){try{await SB.auth.signOut();}catch(e){}_session=null;_viewingDash=false;route();}
+
+/* ══ MIJN KLASSEN ══ */
+async function loadMyClasses(){
+  const box=document.getElementById('klaslijst');if(!box)return;
+  if(!SB){box.innerHTML='<p class="empty">Geen verbinding.</p>';return;}
+  try{
+    const {data,error}=await SB.rpc('klas_mine');
+    if(error)throw error;
+    const rows=data||[];
+    if(!rows.length){box.innerHTML='<p class="empty">Nog geen klassen. Maak hierboven je eerste klas aan — je krijgt meteen een code om te delen met je leerlingen.</p>';return;}
+    box.innerHTML=rows.map(k=>`
+      <div class="kl-row">
+        <div class="kl-info"><div class="kl-naam">${esc(k.naam||'Klas')}</div>
+          <div class="kl-meta">${(k.niveau||'').toUpperCase()}${k.vak_id?' · '+esc(vakNaam(k.niveau,k.vak_id)):''}</div></div>
+        <button class="kl-code" onclick="copyCode('${esc(k.code)}')" title="Kopieer klascode">${esc(k.code)}</button>
+        <button class="btn btn-p btn-sm" onclick="openClass('${esc(k.code)}')">Open dashboard</button>
+      </div>`).join('');
+  }catch(e){
+    if(notReady(e))box.innerHTML='<p class="empty">Nog niet geactiveerd in Supabase. Draai eerst <code>sql/klas-setup.sql</code>.</p>';
+    else box.innerHTML='<p class="empty">Kon je klassen niet laden. Probeer te vernieuwen.</p>';
+  }
+}
+async function createClass(){
+  const naam=(document.getElementById('nk-naam').value||'').trim();
+  const niveau=document.getElementById('nk-niv').value;
+  const vak=document.getElementById('nk-vak').value;
+  const msg=document.getElementById('new-msg');msg.className='msg info';
+  if(!naam){msg.className='msg err';msg.textContent='Geef je klas een naam.';return;}
+  msg.textContent='Aanmaken…';
+  try{
+    const {data,error}=await SB.rpc('klas_create',{p_naam:naam,p_niveau:niveau,p_vak_id:vak});
+    if(error)throw error;
+    const r=Array.isArray(data)?data[0]:data;
+    msg.className='msg ok';msg.textContent='Klas aangemaakt — code '+(r?.code||'')+'. Deel deze met je leerlingen.';
+    document.getElementById('nk-naam').value='';
+    if(r?.code)toast('Klas aangemaakt · code '+r.code);
+    loadMyClasses();
+  }catch(e){
+    msg.className='msg err';
+    if(String(e?.message||e).includes('auth_required'))msg.textContent='Je sessie is verlopen. Log opnieuw in.';
+    else if(notReady(e))msg.innerHTML='Nog niet geactiveerd in Supabase. Draai eerst <code>sql/klas-setup.sql</code>.';
+    else msg.textContent='Kon de klas niet aanmaken. Probeer het opnieuw.';
+  }
+}
+function copyCode(code){try{navigator.clipboard.writeText(code);toast('Code '+code+' gekopieerd');}catch(e){toast('Code: '+code);}}
+function openClass(code){connectCode(code);}
+
+/* ══ DASHBOARD ══ */
+function readiness(s){
+  const g=s.gem??0;
+  const actF=s.laatst_actief_dagen==null?0:s.laatst_actief_dagen<7?1:s.laatst_actief_dagen<14?0.5:0.1;
+  const trend=Math.max(0,Math.min(1,0.5+(s.groei||0)*2.5));
+  const sesF=Math.min(1,(s.sessies||0)/15);
+  let score=0.55*g+0.15*actF+0.15*trend+0.15*sesF;
+  if((s.sessies||0)<3||(s.laatst_actief_dagen!=null&&s.laatst_actief_dagen>=21))score=Math.min(score,0.42);
+  const status=score>=0.68?'g':score>=0.48?'a':'r';
+  let reason;
+  if(s.laatst_actief_dagen==null||s.laatst_actief_dagen>=14)reason='Weinig geoefend ('+agoTxt(s.laatst_actief_dagen)+')';
+  else if(g<0.5)reason='Lage scores (gem '+Math.round(g*100)+'%)';
+  else if((s.groei||0)<-0.03)reason='Dalende trend';
+  else if(status==='g')reason='Op koers';
+  else reason='Wisselende resultaten';
+  return {score,status,reason};
+}
+function growHtml(gr){
+  if(gr==null||Math.abs(gr)<0.01)return '<span class="growth gr-flat">±0%</span>';
+  const up=gr>0;return `<span class="growth ${up?'gr-up':'gr-down'}">${up?'+':'−'}${Math.abs(Math.round(gr*100))}%</span>`;
+}
+function daysToExam(niveau){
+  const d=new Date((niveau==='vwo'?'2027-05-18':'2027-05-14')+'T13:30:00+02:00');
+  return Math.max(0,Math.ceil((d-new Date())/86400000));
+}
+async function connectCode(code){
+  code=(code||'').trim().toUpperCase();
+  const msg=document.getElementById('connect-msg');msg.className='msg info';msg.textContent='';
+  if(code.length<4){msg.className='msg err';msg.textContent='Vul een klascode in (minimaal 4 tekens).';return;}
+  if(!SB){msg.className='msg err';msg.textContent='Kon geen verbinding maken. Ververs de pagina.';return;}
+  msg.textContent='Laden…';
+  try{
+    const {data,error}=await SB.rpc('klas_dashboard',{p_code:code});
+    if(error)throw error;
+    const d=Array.isArray(data)?data[0]:data;
+    if(!d||!d.klas){msg.className='msg err';msg.textContent='Klas niet gevonden. Controleer de code.';return;}
+    _last=code;_demo=false;_viewingDash=true;msg.textContent='';render(d);
+  }catch(e){
+    msg.className='msg err';
+    if(notReady(e))msg.innerHTML='Nog niet geactiveerd in Supabase. Draai eerst <code>sql/klas-setup.sql</code>.';
+    else msg.textContent='Er ging iets mis. Probeer het opnieuw.';
+  }
+}
+function connect(){connectCode(document.getElementById('code-in').value);}
+function refresh(){ if(_demo){loadDemo();return;} if(_last)connectCode(_last); }
+
+function render(d){
+  showScreen('dash');
+  document.getElementById('demo-note').classList.toggle('hidden',!_demo);
+  const k=d.klas;
+  document.getElementById('klas-pill').innerHTML=`${esc(k.naam)} · <b>${esc(k.code||'')}</b>`;
+  const ll=(d.leerlingen||[]).map(s=>({...s,...readiness(s)}));
+  const doms=(d.domeinen||[]).slice().sort((a,b)=>a.gem-b.gem);
+  const cnt={g:0,a:0,r:0};ll.forEach(s=>cnt[s.status]++);
+  document.getElementById('gereed-row').innerHTML=[
+    ['g','dg','Examenklaar',cnt.g],['a','da','Let op',cnt.a],['r','dr','Risico',cnt.r]
+  ].map(x=>`<div class="stat ${x[0]}"><div class="stat-n num">${x[3]}</div><div class="stat-l"><span class="dot ${x[1]}"></span>${x[2]}</div></div>`).join('');
+  const pass=ll.length?Math.round(ll.reduce((a,s)=>a+s.score,0)/ll.length*100):0;
+  document.getElementById('pass-n').textContent=pass+'%';
+  document.getElementById('pass-days').textContent='Nog '+daysToExam(k.niveau)+' dagen tot het examen';
+  const worst=doms[0];
+  const adv=document.getElementById('advies');
+  if(worst){
+    adv.classList.remove('hidden');
+    document.getElementById('advies-tx').innerHTML=`<span class="lbl">Advies</span>De klas loopt het meest vast op <b>${esc(worst.domein)}</b> (${Math.round(worst.gem*100)}%). ${worst.zwak||0} leerling${worst.zwak===1?'':'en'} ${worst.zwak===1?'zit':'zitten'} eronder — behandel dit als eerste en zet de oefenset klaar. ${cnt.r>0?`<b>${cnt.r}</b> leerling${cnt.r===1?'':'en'} ${cnt.r===1?'loopt':'lopen'} risico.`:''}`;
+  } else adv.classList.add('hidden');
+  const risk=ll.filter(s=>s.status!=='g').sort((a,b)=>a.score-b.score).slice(0,8);
+  document.getElementById('risk').innerHTML=risk.length?risk.map(s=>`
+    <div class="risk-row"><span class="dot d${s.status}"></span>
+      <div class="risk-info"><div class="risk-naam">${esc(s.naam)}</div><div class="risk-reason">${esc(s.reason)}</div></div>
+      <div class="risk-metric"><div class="risk-gem num" style="color:${pctCol(s.gem||0)}">${s.gem!=null?Math.round(s.gem*100)+'%':'—'}</div>${growHtml(s.groei)}</div>
+    </div>`).join(''):'<p class="empty">Geen risicoleerlingen — de hele klas zit op koers.</p>';
+  document.getElementById('dom').innerHTML=doms.length?doms.map(dm=>{
+    const dc=dm.gem>=0.7?'dg':dm.gem>=0.5?'da':'dr';
+    return `<div class="dom-row"><span class="dot ${dc}"></span>
+      <div class="dom-info"><div class="dom-naam">${esc(dm.domein)}</div><div class="dom-meta">${esc(dm.vak)} · ${dm.zwak||0} onder 55%</div></div>
+      <div class="dom-pct num" style="color:${pctCol(dm.gem)}">${Math.round(dm.gem*100)}%</div>
+      <button class="btn btn-p btn-sm" onclick="assign(this,'${esc(dm.vak)}','${esc(dm.domein)}')">Zet klaar</button>
+    </div>`;
+  }).join(''):'<p class="empty">Nog geen oefendata.</p>';
+  const rr=ll.slice().sort((a,b)=>a.score-b.score);
+  document.getElementById('roster').innerHTML=rr.length?rr.map(s=>{
+    const chip=s.status==='g'?'ch-g':s.status==='a'?'ch-a':'ch-r';
+    const dotc=s.status==='g'?'dg':s.status==='a'?'da':'dr';
+    const lbl=s.status==='g'?'Klaar':s.status==='a'?'Let op':'Risico';
+    return `<tr><td style="font-weight:700">${esc(s.naam)}</td>
+      <td><span class="chip ${chip}"><span class="dot ${dotc}"></span>${lbl}</span></td>
+      <td class="num" style="font-weight:700;color:${pctCol(s.gem||0)}">${s.gem!=null?Math.round(s.gem*100)+'%':'—'}</td>
+      <td>${growHtml(s.groei)}</td>
+      <td class="num" style="${s.laatst_actief_dagen>=7||s.laatst_actief_dagen==null?'color:var(--red);font-weight:600':''}">${agoTxt(s.laatst_actief_dagen)}</td></tr>`;
+  }).join(''):'<tr><td colspan="5" class="empty">Nog geen leerlingen actief.</td></tr>';
+}
+
+async function assign(btn,vak,domein){
+  btn.disabled=true;const old=btn.textContent;btn.textContent='…';
+  if(_demo){btn.textContent='Klaargezet ✓';btn.classList.remove('btn-p');btn.classList.add('btn-glass');return;}
+  try{
+    const {error}=await SB.rpc('klas_huiswerk_set',{p_code:_last,p_vak:vak,p_domein:domein});
+    if(error)throw error;
+    btn.textContent='Klaargezet ✓';btn.classList.remove('btn-p');btn.classList.add('btn-glass');
+  }catch(e){btn.disabled=false;btn.textContent=old;alert('Kon niet klaarzetten. Draai eerst sql/klas-setup.sql (bevat ook klas_huiswerk_set).');}
+}
+
+function loadDemo(){
+  _demo=true;_viewingDash=true;
+  const namen=['Sanne','Daan','Fenna','Lucas','Noor','Sem','Julia','Bram','Milan','Yara','Tess','Sven','Lars','Isa','Roos','Thijs','Evi','Guus','Nora','Jesse','Kiki','Bas','Lieke','Tijn','Mees','Loïs','Guusje','Finn','Amber'];
+  const ll=namen.map((n,i)=>{
+    const base=Math.max(.26,Math.min(.94,.82-i*0.021+Math.sin(i*1.7)*0.06));
+    const inact=i>=23;
+    return {naam:n,gem:base,sessies:inact?(i%3):Math.max(2,Math.round(20-i*0.55)),
+      laatst_actief_dagen:inact?(9+i%9):(i%6),groei:(Math.sin(i*0.9)*0.16)-(i>20?0.06:0)};
+  });
+  const doms=[
+    {vak:'Wiskunde A',domein:'Statistiek',gem:.41,zwak:17},
+    {vak:'Wiskunde A',domein:'Kansrekening',gem:.58,zwak:11},
+    {vak:'Wiskunde A',domein:'Differentiëren',gem:.68,zwak:7},
+    {vak:'Wiskunde A',domein:'Exponenten',gem:.74,zwak:4},
+    {vak:'Wiskunde A',domein:'Algebra',gem:.82,zwak:2},
+    {vak:'Wiskunde A',domein:'Formules',gem:.88,zwak:1}
+  ];
+  render({klas:{naam:'4 HAVO Wiskunde A',niveau:'havo',vak:'Wiskunde A',code:'DEMO',leden:namen.length},leerlingen:ll,domeinen:doms});
+}
+
+/* ══ BOOT ══ */
+(async function(){
+  fillVak();
+  if(SB){
+    try{const {data}=await SB.auth.getSession();_session=data?.session||null;}catch(e){}
+    SB.auth.onAuthStateChange((_e,s)=>{_session=s;if(!_viewingDash)route();});
+  }
+  const q=new URLSearchParams(location.search);
+  if(q.get('demo')){loadDemo();return;}
+  const c=q.get('code');
+  if(c){document.getElementById('code-in').value=c.toUpperCase();connectCode(c);return;}
+  route();
+})();
+</script>
+</body>
+</html>

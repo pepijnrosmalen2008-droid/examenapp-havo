@@ -833,6 +833,15 @@ function openProfiel(){
   applyAccPrefs();
   show('sc-profiel');
 }
+// Open het profiel en scroll direct naar het SE-cijfer-invoerstuk (import/plakken).
+function goToCijferInvoer(){
+  try{openProfiel();}catch(e){}
+  setTimeout(function(){
+    const el=document.getElementById('imp-panel-unified')||document.getElementById('cijfer-grid');
+    if(el)el.scrollIntoView({behavior:'smooth',block:'center'});
+    const ta=document.getElementById('imp-paste-unified');if(ta)try{ta.focus({preventScroll:true});}catch(_){}
+  },420);
+}
 
 function buildMijnStats(){
   const el=document.getElementById('mijn-stats-content');

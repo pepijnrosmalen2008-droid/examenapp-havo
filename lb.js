@@ -17,20 +17,41 @@
 })();
 
 // ═══════ OFFLINE INDICATOR ═══════
+// Eén niet-blokkerende status-toast (pointer-events:none). Offline blijft staan;
+// "weer online" verschijnt kort en verdwijnt vanzelf. Nooit een heel scherm.
 (function initOfflineBanner(){
-  const banner=document.createElement('div');
-  banner.id='offline-banner';
-  banner.innerHTML='📵 Geen internet - voortgang wordt lokaal opgeslagen';
-  document.body.appendChild(banner);
-  function update(){banner.classList.toggle('show',!navigator.onLine);}
-  window.addEventListener('offline',update);
-  window.addEventListener('online',update);
-  update();
+  const banner=document.getElementById('offline-banner');
+  if(!banner)return;
+  const txt=document.getElementById('offline-banner-text')||banner;
+  let hideT=0;
+  function toast(msg,online){
+    var ico=online?(typeof ICO_CHECK!=='undefined'?ICO_CHECK:''):(typeof ICO_SIGNALOFF!=='undefined'?ICO_SIGNALOFF:'');
+    txt.innerHTML=ico+' '+msg;
+    banner.classList.toggle('online',!!online);
+    banner.classList.add('show');
+    if(hideT){clearTimeout(hideT);hideT=0;}
+    if(online){hideT=setTimeout(()=>banner.classList.remove('show'),3000);}
+  }
+  function hide(){banner.classList.remove('show');if(hideT){clearTimeout(hideT);hideT=0;}}
+  const dismiss=document.getElementById('offline-dismiss');
+  if(dismiss)dismiss.addEventListener('click',hide);
+  window.addEventListener('offline',()=>toast('Geen internet — je voortgang wordt lokaal opgeslagen',false));
+  window.addEventListener('online',()=>toast('Je bent weer online',true));
+  if(!navigator.onLine)toast('Geen internet — je voortgang wordt lokaal opgeslagen',false);
 })();
 
 // ═══════ LEADERBOARD ═══════
 function getLbKey(){return 'examenapp_leaderboard_'+APP_LEVEL;}
 function getLbEntries(){try{return JSON.parse(localStorage.getItem(getLbKey())||'[]');}catch(e){return[];}}
+// Client-side sanity-check: houdt onmogelijke scores uit de gedeelde ranglijst.
+// (Geen vervanging voor Supabase RLS — wél een rem op corruptie door bugs.)
+function _lbEntryValid(e){
+  var s=+e.score, g=+e.goed, t=+e.tot;
+  if(!isFinite(s)||s<0||s>1000)return false;      // max haalbare score is 1000
+  if(!isFinite(t)||t<1||t>60)return false;         // realistisch aantal vragen
+  if(!isFinite(g)||g<0||g>t)return false;          // goed kan niet > totaal
+  return true;
+}
 async function saveLeaderboardEntry(entry){
   entry.niveau=APP_LEVEL;
   if(currentUser)entry.uid=currentUser.id;
@@ -40,8 +61,8 @@ async function saveLeaderboardEntry(entry){
   all.sort((a,b)=>b.score-a.score);
   if(all.length>200)all=all.slice(0,200);
   localStorage.setItem(getLbKey(),JSON.stringify(all));
-  // Save to Supabase global leaderboard (cross-user)
-  if(currentUser){
+  // Save to Supabase global leaderboard (cross-user) — alleen valide scores
+  if(currentUser && _lbEntryValid(entry)){
     const base={
       user_id:currentUser.id,
       naam:entry.naam,avatar:entry.avatar,
@@ -62,24 +83,81 @@ async function saveLeaderboardEntry(entry){
       }else{console.warn('leaderboard save error:',e);}
     }
   }
+  // Klas-ranglijst: tel deze score mee als de leerling in een klas zit.
+  try{ if(typeof klasScoreSave==='function') klasScoreSave(entry); }catch(e){}
 }
+// ═══════ LEADERBOARD-BOTS (opvulling) ═══════
+// Twee smaken: accounts die duidelijk bots zijn (robot-namen + robot-avatar,
+// vaak strakke ronde scores) en accounts die op echte leerlingen lijken
+// (gewone naam + dier-avatar). Puur voor opvulling; ze worden lokaal
+// samengevoegd met de echte Supabase-scores en ranken gewoon mee.
+const _BOT_VAKNAAM={nl:'Nederlands',wa:'Wiskunde A',wb:'Wiskunde B',bi:'Biologie',sk:'Scheikunde',na:'Natuurkunde',en:'Engels',ec:'Economie',be:'Bedrijfseconomie',gs:'Geschiedenis',ak:'Aardrijkskunde',mw:'Maatschappijwetenschappen',du:'Duits',fr:'Frans',gr:'Grieks',la:'Latijn',in:'Informatica'};
+// Evolutie-stage die plausibel bij de score past (zoals bij echte leerlingen
+// de stage met XP meegroeit). Max 5 — de allerhoogste stage blijft voor echte
+// toppers.
+function _botStage(score){return score>=900?5:score>=750?4:score>=600?3:score>=450?2:1;}
+// Geloofwaardige badge-collectie die met de score meegroeit (echte badge-id's).
+function _botBadges(score){
+  const ids=['streak1','quiz1','streak3'];
+  if(score>=450)ids.push('quiz10','combo3','streak7');
+  if(score>=600)ids.push('vakken3','quiz50','dom_1');
+  if(score>=700)ids.push('streak14','combo5');
+  if(score>=800)ids.push('perfect','dom_5','combo10');
+  if(score>=900)ids.push('quiz100','streak30','perfect_3');
+  const feat=score>=900?'streak30':score>=800?'combo10':score>=700?'streak14':score>=600?'quiz50':score>=500?'combo5':score>=450?'streak7':'quiz10';
+  return{featuredBadgeId:feat,badgeIds:ids};
+}
+// Namenpool + dieren voor de vulbots. Alle bots zijn mens-achtig (gewone naam +
+// dier-avatar + badges). Bij >pool-grootte maken achternaam-initialen ze uniek.
+const _BOT_VN=['Noa','Sanne','Emma','Julia','Tess','Anna','Sophie','Lisa','Fenna','Isa','Sara','Eva','Lotte','Roos','Zoë','Nora','Mila','Liv','Yara','Lente','Evi','Lieke','Fleur','Amber','Bente','Nina','Femke','Britt','Iris','Maud','Sofie','Vera','Loïs','Puck','Merel','Fay','Jasmijn','Elin','Guusje','Suus','Hanne','Noor','Milou','Kiki','Saar','Lina','Nour','Amina','Yasmin','Zeynep','Elif','Aya','Maya','Isra','Daan','Sem','Lucas','Milan','Levi','Finn','Luuk','Bram','Thijs','Jesse','Noah','Liam','Lars','Tim','Ruben','Gijs','Sven','Teun','Cas','Tobias','Mees','Stijn','Jens','Thomas','Max','Boaz','Julian','Hugo','Mats','Jort','Tygo','Ties','Siem','Job','Kai','Pim','Bas','Joris','Niek','Koen','Rick','Wout','Floris','Tijn','Sepp','Olivier','Vince','Melle','Dex','Benjamin','Willem','Roan','Aron','Nout','Owen','Senna','Fedde','Dani','Chris','Ivan','Mohammed','Yusuf','Sami','Amir','Adam','Bilal','Youssef','Ayoub','Rayan','Emir','Kaan','Deniz'];
+const _BOT_LI=['V.','B.','K.','M.','D.','S.','J.','H.','W.','R.','T.','L.','P.','G.','vD.','vdB.','dJ.','Z.','N.','C.'];
+const _BOT_DIER=['vos','wolf','uil','haai','vlinder','tijger','eenhoorn','olifant','leeuw','adelaar','draak','octopus'];
+const _BOT_VAK={havo:['nl','wa','wb','bi','sk','na','en','ec','be','gs','ak','mw','du','fr'],
+                vwo:['nl','wa','wb','bi','sk','na','en','ec','be','gs','ak','mw','du','fr','gr','la','in']};
+function _genBots(niveau,count){
+  const vaks=_BOT_VAK[niveau];const used=new Set();const out=[];
+  for(let i=0;i<count;i++){
+    const score=Math.round(985-(i/(count-1))*(985-110));
+    let base=_BOT_VN[i%_BOT_VN.length],naam=base,k=0;
+    while(used.has(naam)){naam=base+' '+(k<_BOT_LI.length?_BOT_LI[k]:'#'+(k+1));k++;}
+    used.add(naam);
+    const bdg=_botBadges(score);
+    out.push({uid:'bot_'+niveau+'_'+i,naam,avatar:null,
+      animalId:_BOT_DIER[i%_BOT_DIER.length],stageIdx:_botStage(score),
+      featuredBadgeId:bdg.featuredBadgeId,badgeIds:bdg.badgeIds,
+      vak:vaks[i%vaks.length],vakNaam:_BOT_VAKNAAM[vaks[i%vaks.length]]||vaks[i%vaks.length],
+      domeinId:null,domeinNaam:null,score,goed:Math.max(4,Math.min(10,Math.round(score/100))),
+      tot:10,avgTijd:Math.round((3+(1000-score)/90)*10)/10,niveau,
+      date:'2027-05-'+String(9+(i%19)).padStart(2,'0'),_bot:true});
+  }
+  return out;
+}
+// 200 mens-achtige vulbots per niveau (unieke namen, score-spreiding, badges).
+const LB_BOTS={
+  havo:_genBots('havo',200),
+  vwo:_genBots('vwo',200),
+};
 async function loadLeaderboardFromSupabase(){
+  let remote=[];
   try{
     const {data,error}=await SB.from('leaderboard').select('*').eq('niveau',APP_LEVEL).order('score',{ascending:false}).limit(200);
-    if(error||!data)return;
-    const remote=data.map(d=>({
-      naam:d.naam,avatar:d.avatar,
-      animalId:d.animal_id||null,stageIdx:d.stage_idx??null,
-      featuredBadgeId:d.featured_badge_id||null,
-      badgeIds:d.badge_ids||[],
-      vak:d.vak,vakNaam:d.vak_naam,
-      domeinId:d.domein_id||null,domeinNaam:d.domein_naam||null,
-      score:d.score,goed:d.correct,tot:d.total,uid:d.user_id,
-      avgTijd:d.avg_tijd||null,niveau:d.niveau,date:d.created_at?.slice(0,10)
-    }));
-    const merged=remote.filter(e=>e.score<=1000&&(e.tot||0)>5).sort((a,b)=>b.score-a.score).slice(0,200);
-    localStorage.setItem(getLbKey(),JSON.stringify(merged));
+    if(!error&&data){
+      remote=data.map(d=>({
+        naam:d.naam,avatar:d.avatar,
+        animalId:d.animal_id||null,stageIdx:d.stage_idx??null,
+        featuredBadgeId:d.featured_badge_id||null,
+        badgeIds:d.badge_ids||[],
+        vak:d.vak,vakNaam:d.vak_naam,
+        domeinId:d.domein_id||null,domeinNaam:d.domein_naam||null,
+        score:d.score,goed:d.correct,tot:d.total,uid:d.user_id,
+        avgTijd:d.avg_tijd||null,niveau:d.niveau,date:d.created_at?.slice(0,10)
+      }));
+    }
   }catch(e){console.warn('leaderboard load error:',e);}
+  // Voeg bots toe als opvulling (altijd, ook als Supabase leeg/onbereikbaar is).
+  const bots=(LB_BOTS[APP_LEVEL]||[]);
+  const merged=[...remote,...bots].filter(e=>e.score<=1000&&(e.tot||0)>5).sort((a,b)=>b.score-a.score).slice(0,200);
+  localStorage.setItem(getLbKey(),JSON.stringify(merged));
 }
 // ═══════ LB PROFILE ═══════
 function getTierLabel(score){
@@ -134,7 +212,7 @@ function openLbProfile(naam){
     const achieved=getAchieved();
     const earned=ALL_BADGES.filter(b=>achieved[b.id]);
     if(earned.length){
-      const items=earned.map(b=>`<div class="lbp-badge-item rarity-${b.rarity}" title="${b.label} - ${b.tip}"><span class="lbp-badge-emoji">${b.emoji}</span><span class="lbp-badge-lbl">${b.label}</span></div>`).join('');
+      const items=earned.map(b=>`<div class="lbp-badge-item rarity-${b.rarity}" title="${b.label} - ${b.tip}"><span class="lbp-badge-emoji no-ico">${b.emoji}</span><span class="lbp-badge-lbl">${b.label}</span></div>`).join('');
       badgeSectionHtml=`<p class="lbp-section-title">Jouw badges (${earned.length}/${ALL_BADGES.length})</p><div class="lbp-badges-grid">${items}</div>`;
     }
   } else {
@@ -143,7 +221,7 @@ function openLbProfile(naam){
     if(allBadgeIds.length){
       const earnedBadges=allBadgeIds.map(id=>ALL_BADGES.find(b=>b.id===id)).filter(Boolean);
       if(earnedBadges.length){
-        const items=earnedBadges.map(b=>`<div class="lbp-badge-item rarity-${b.rarity}" title="${b.label} - ${b.tip}"><span class="lbp-badge-emoji">${b.emoji}</span><span class="lbp-badge-lbl">${b.label}</span></div>`).join('');
+        const items=earnedBadges.map(b=>`<div class="lbp-badge-item rarity-${b.rarity}" title="${b.label} - ${b.tip}"><span class="lbp-badge-emoji no-ico">${b.emoji}</span><span class="lbp-badge-lbl">${b.label}</span></div>`).join('');
         badgeSectionHtml=`<p class="lbp-section-title">Badges (${earnedBadges.length})</p><div class="lbp-badges-grid">${items}</div>`;
       }
     } else {
@@ -152,7 +230,7 @@ function openLbProfile(naam){
       if(featB){
         badgeSectionHtml=`<p class="lbp-section-title">Uitgelichte badge</p>
           <div class="lbp-featured-badge rarity-${featB.rarity}">
-            <span style="font-size:30px;line-height:1">${featB.emoji}</span>
+            <span class="no-ico" style="font-size:30px;line-height:1">${featB.emoji}</span>
             <div><div style="font-size:13px;font-weight:700;color:var(--dk)">${featB.label}</div><div style="font-size:11px;color:var(--mu);margin-top:2px">${featB.tip} · <em>${RARITY_LABEL[featB.rarity]||''}</em></div></div>
           </div>`;
       }
@@ -296,7 +374,7 @@ function _renderLbWithData(){
   // Niveau badge + dynamic subtitle
   const badge=document.getElementById('lb-niveau-badge');
   const VAKKEN_LABEL=lbVakFilter==='all'?'Alle vakken':(VAKKEN_MAP[lbVakFilter]?VAKKEN_MAP[lbVakFilter].naam:lbVakFilter);
-  if(badge)badge.textContent=APP_LEVEL.toUpperCase()+' 2026 · '+VAKKEN_LABEL;
+  if(badge)badge.textContent=APP_LEVEL.toUpperCase()+' 2027 · '+VAKKEN_LABEL;
   const subtitleEl=document.getElementById('lb-subtitle');
   const playerCount=[...new Set(all.map(e=>e.uid||e.naam))].length;
   if(subtitleEl){
@@ -507,12 +585,34 @@ function getUpcomingExams(){
       if(!ex.tijdvak){ if(mijn.includes(key)) cands.push({...ex,dt:new Date(ex.datum+'T'+ex.tijd.split('–')[0]+':00+02:00')}); }
       else if(ex.tijdvak===2){ if(herk.includes(key)) cands.push({...ex,dt:new Date(ex.datum+'T'+ex.tijd.split('–')[0]+':00+02:00')}); }
     });
+    // 1e-tijdvak-examens 2027 meenemen zodat de teller na 2026 doorrolt.
+    if(typeof EXAM_SCHEDULE_2027!=='undefined'){
+      EXAM_SCHEDULE_2027.forEach(ex=>{
+        if(ex.niveau&&ex.niveau!==APP_LEVEL)return;
+        if(ex.vakId&&!niveauVakIds.has(ex.vakId))return;
+        const key=ex.vakId||ex.vak;
+        if(mijn.includes(key)) cands.push({...ex,dt:new Date(ex.datum+'T'+ex.tijd.split('–')[0]+':00+02:00')});
+      });
+    }
     tv3.forEach(e=>cands.push({vak:e.vak,vakId:e.vakId,datum:e.datum,tijd:e.tijd||'13:30',duur:'',tijdvak:3,dt:new Date(e.datum+'T'+(e.tijd||'13:30')+':00+02:00')}));
     return cands.filter(e=>e.dt>now).sort((a,b)=>a.dt-b.dt);
   }catch(e){return [];}
 }
-// Eerstvolgende voor de countdown-timer
-function getCountdownTarget(){const u=getUpcomingExams();return u.length?u[0]:null;}
+// Eerste kernvak (Nederlands/Engels/wiskunde) van 2027 voor het huidige niveau —
+// de standaard-countdown zodat er nooit een lege "geslaagd-modus" verschijnt.
+function _firstKernvak2027(){
+  if(typeof EXAM_SCHEDULE_2027==='undefined')return null;
+  const KERN=new Set(['nl','en','wa','wb']);
+  const now=new Date();
+  const c=EXAM_SCHEDULE_2027
+    .filter(ex=>(!ex.niveau||ex.niveau===APP_LEVEL)&&ex.vakId&&KERN.has(ex.vakId))
+    .map(ex=>({...ex,dt:new Date(ex.datum+'T'+ex.tijd.split('–')[0]+':00+02:00')}))
+    .filter(e=>e.dt>now).sort((a,b)=>a.dt-b.dt);
+  return c.length?c[0]:null;
+}
+// Eerstvolgende voor de countdown-timer: eigen aankomende examens, anders het
+// eerste kernvak 2027 als standaard (geen geslaagd-modus meer).
+function getCountdownTarget(){const u=getUpcomingExams();if(u.length)return u[0];return _firstKernvak2027();}
 function updateCountdown(){
   const setEl=(id,val)=>{const el=document.getElementById(id);if(el)el.textContent=val;};
   // Apply level glow class
@@ -661,6 +761,56 @@ function getVakBestPct(vakId){
     if(r.hasData){hasAny=true;totalPct+=r.pct;count++;}
   });
   return {pct:count>0?totalPct/count:0,hasData:hasAny};
+}
+
+// ═══════ EXAMENCOACH ═══════
+// Eerlijke, transparante indicatie op basis van je oefenscores per domein.
+// cijfer = 1 + 9·(gem. beheersing) — géén N-term, dus bewust aan de voorzichtige kant.
+// risico = zwakste domein · winst = domein dat het dichtst bij beheersing (85%) zit.
+function examCoachData(vakId){
+  const vak=getVK().find(v=>v.id===vakId);
+  if(!vak||!vak.domeinen)return null;
+  const doms=vak.domeinen.map(d=>{const r=getDomeinBestPct(vakId,d.id);return{id:d.id,naam:d.naam,pct:r.pct,hasData:r.hasData};}).filter(d=>d.hasData);
+  if(doms.length<2)return {vak,enough:false,n:doms.length};
+  const avg=doms.reduce((s,d)=>s+d.pct,0)/doms.length;
+  const cijfer=Math.max(1,Math.min(10,1+9*avg));
+  const sorted=[...doms].sort((a,b)=>a.pct-b.pct);
+  const risico=sorted[0].pct<0.85?sorted[0]:null;
+  const winstCand=doms.filter(d=>d.pct>=0.4&&d.pct<0.85&&(!risico||d.id!==risico.id)).sort((a,b)=>b.pct-a.pct);
+  const winst=winstCand[0]||null;
+  return {vak,enough:true,cijfer,avg,risico,winst,n:doms.length};
+}
+function renderExamCoach(vakId){
+  const el=document.getElementById('res-coach'); if(!el)return;
+  const c=vakId?examCoachData(vakId):null;
+  if(!c){el.innerHTML='';return;}
+  let mood,msg,rows='';
+  if(!c.enough){
+    mood='kijk';
+    msg=`Oefen nog een paar domeinen van <b>${c.vak.naam}</b>, dan reken ik je kans uit. Ik hou je in de gaten! 👀`;
+  }else{
+    const cij=c.cijfer.toFixed(1).replace('.',',');
+    const cijColor=c.cijfer<5.45?'#ef4444':c.cijfer<7?'#f59e0b':'#22c55e';
+    mood=c.cijfer>=7?'trots':c.cijfer>=5.45?'goed':'laag';
+    const opener=mood==='trots'?'Sterk gedaan! ':mood==='laag'?'':'';
+    const tail=mood==='trots'?' 🎉':mood==='laag'?' We pakken dit samen, stap voor stap.':' Nog een klein zetje.';
+    msg=`${opener}Als het CE morgen was, zat je op een <b style="color:${cijColor}">${cij}</b> voor <b>${c.vak.naam}</b>.${tail}`;
+    if(c.risico)rows+=`<button class="coach-chip coach-chip-risk" onclick="goToDomein('${vakId}','${c.risico.id}','snel')">⚠️ Risico: ${c.risico.naam} · ${Math.round(c.risico.pct*100)}% <span class="coach-chip-go">oefen →</span></button>`;
+    if(c.winst)rows+=`<button class="coach-chip coach-chip-win" onclick="goToDomein('${vakId}','${c.winst.id}','snel')">📈 Winst: ${c.winst.naam} · ${Math.round(c.winst.pct*100)}% <span class="coach-chip-go">oefen →</span></button>`;
+    if(!c.risico&&!c.winst)msg+=` Alles wat je oefende staat op niveau. 💪`;
+  }
+  const naam=(typeof MASCOT_NAME!=='undefined'?MASCOT_NAME:'Vonk')+' · je examencoach';
+  const svg=(typeof mascotSVG==='function')?mascotSVG(mood,84):'';
+  el.innerHTML=`<div class="coach-pop coach-dark coach-mood-${mood}">
+    <button class="coach-x" onclick="this.closest('.coach-pop').classList.add('coach-hide')" aria-label="Sluiten">✕</button>
+    <div class="coach-avatar">${svg}</div>
+    <div class="coach-bubble">
+      <div class="coach-name">${naam}</div>
+      <div class="coach-msg">${msg}</div>
+      ${rows?`<div class="coach-chips">${rows}</div>`:''}
+      ${c.enough?`<div class="coach-fine">Indicatie op je oefenscores (${c.n} domeinen). Richting, geen garantie.</div>`:''}
+    </div>
+  </div>`;
 }
 function trapFocus(el,onEscape){
   const sel='button:not([disabled]),a[href],input,select,textarea,[tabindex]:not([tabindex="-1"])';

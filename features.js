@@ -16,6 +16,43 @@ const ICO_ZAP=_svg('<polygon points="13 2 4 14 11 14 11 22 20 10 13 10 13 2" fil
 const ICO_VIDEO=_svg('<rect x="3" y="6" width="13" height="12" rx="2"/><path d="m16 10 5-3v10l-5-3z"/>');
 const ICO_LOCK=_svg('<rect x="5" y="11" width="14" height="9" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/>');
 const ICO_REPEAT=_svg('<path d="M17 2.5 21 6l-4 3.5"/><path d="M3 11V9a4 4 0 0 1 4-4h14"/><path d="M7 21.5 3 18l4-3.5"/><path d="M21 13v2a4 4 0 0 1-4 4H3"/>');
+// ── uitgebreide universele iconenset (vervangt OS-emoji's; zelfde lijnstijl) ──
+const ICO_TROPHY=_svg('<path d="M7 4h10v5a5 5 0 0 1-10 0z"/><path d="M7 6H4v1a3 3 0 0 0 3 3"/><path d="M17 6h3v1a3 3 0 0 1-3 3"/><path d="M12 14v3"/><path d="M8.5 21h7"/><path d="M9.5 21a2.5 2.5 0 0 1 5 0"/>');
+const ICO_MEDAL=_svg('<path d="M8.2 3h7.6l-2.3 6.2"/><path d="M8.2 3l2.3 6.2"/><circle cx="12" cy="15" r="5"/><path d="M12 13.2l.9 1.8 2 .3-1.4 1.4.3 2-1.8-1-1.8 1 .3-2L9.1 15.3l2-.3z"/>');
+const ICO_FLAG=_svg('<path d="M5 21V4"/><path d="M5 4h11l-2 4 2 4H5"/>');
+const ICO_USERS=_svg('<path d="M16 19v-1a4 4 0 0 0-4-4H7a4 4 0 0 0-4 4v1"/><circle cx="9.5" cy="8" r="3.3"/><path d="M21 19v-1a4 4 0 0 0-3-3.9"/><path d="M15.5 4.6a3.3 3.3 0 0 1 0 6.4"/>');
+const ICO_USER=_svg('<circle cx="12" cy="8" r="3.6"/><path d="M5 20v-1a5 5 0 0 1 5-5h4a5 5 0 0 1 5 5v1"/>');
+const ICO_CHART=_svg('<path d="M4 21V4"/><path d="M4 21h16"/><rect x="7" y="12" width="3" height="6"/><rect x="12" y="8" width="3" height="10"/><rect x="17" y="14" width="3" height="4"/>');
+const ICO_TREND=_svg('<path d="M3 17l6-6 4 4 8-8"/><path d="M16 7h5v5"/>');
+const ICO_CALENDAR=_svg('<rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 9.5h18"/><path d="M8 3v4"/><path d="M16 3v4"/>');
+const ICO_BELL=_svg('<path d="M18 8a6 6 0 0 0-12 0c0 6-2.5 7.5-3 8h18c-.5-.5-3-2-3-8"/><path d="M10 20a2 2 0 0 0 4 0"/>');
+const ICO_BELLOFF=_svg('<path d="M8.5 4.5A6 6 0 0 1 18 8c0 3 .8 4.9 1.6 6.1"/><path d="M6 8c0 6-2.5 7.5-3 8h13"/><path d="M10 20a2 2 0 0 0 4 0"/><path d="M3 3l18 18"/>');
+const ICO_ALERT=_svg('<path d="M10.3 4 2 18a2 2 0 0 0 1.7 3h16.6A2 2 0 0 0 22 18L13.7 4a2 2 0 0 0-3.4 0z"/><path d="M12 9v4"/><path d="M12 17h.01"/>');
+const ICO_ROCKET=_svg('<path d="M12 15l-3-3a11 11 0 0 1 8-8c1.5 0 3 .3 3 .3s.3 1.5.3 3a11 11 0 0 1-8 8z"/><path d="M9 12H5s.4-2.5 2-4 4-1 4-1"/><path d="M12 15v4s2.5-.4 4-2 1-4 1-4"/><path d="M5 18c-1 1-1.3 3.5-1.3 3.5S6 21.2 7 20"/>');
+const ICO_SEARCH=_svg('<circle cx="11" cy="11" r="7"/><path d="m21 21-4.2-4.2"/>');
+const ICO_GRAD=_svg('<path d="M22 9 12 5 2 9l10 4 10-4z"/><path d="M6 11v5c0 1.4 2.7 2.6 6 2.6s6-1.2 6-2.6v-5"/><path d="M22 9v5"/>');
+const ICO_CARDS=_svg('<rect x="3" y="7" width="13" height="13" rx="2"/><path d="M8 7V6a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2h-1"/>');
+const ICO_EDIT=_svg('<path d="M11 4H5a2 2 0 0 0-2 2v13a2 2 0 0 0 2 2h13a2 2 0 0 0 2-2v-6"/><path d="M17.5 3.5a2.1 2.1 0 0 1 3 3L12 15l-4 1 1-4z"/>');
+const ICO_PHONE=_svg('<rect x="6" y="2" width="12" height="20" rx="2.5"/><path d="M10.5 18h3"/>');
+const ICO_HOME=_svg('<path d="M3 10.5 12 3l9 7.5"/><path d="M5 9.5V21h5v-6h4v6h5V9.5"/>');
+const ICO_THUMB=_svg('<path d="M7 11v9"/><path d="M7 11l4-7a2 2 0 0 1 3 1.7L13 10h5.5a2 2 0 0 1 2 2.3l-1.1 6A2 2 0 0 1 17.4 20H7"/><rect x="3" y="11" width="4" height="9" rx="1"/>');
+const ICO_BOX=_svg('<path d="m12 3 8 4.5v9L12 21l-8-4.5v-9z"/><path d="M4 7.5 12 12l8-4.5"/><path d="M12 12v9"/>');
+const ICO_PIN=_svg('<path d="M9 3h6l-1 7 3 2.5V15H8v-2.5L11 10z"/><path d="M12 15v6"/>');
+const ICO_KEY=_svg('<circle cx="8" cy="15" r="4"/><path d="m10.8 12.2 8-8"/><path d="m16 7 2 2"/><path d="m19 4 2 2"/>');
+const ICO_HELP=_svg('<circle cx="12" cy="12" r="9"/><path d="M9.5 9.5a2.5 2.5 0 0 1 4.6 1.3c0 1.7-2.4 2.2-2.4 3.7"/><path d="M12 17h.01"/>');
+const ICO_SIGNAL=_svg('<path d="M4.5 12.5a10 10 0 0 1 15 0"/><path d="M7.5 15.5a6 6 0 0 1 9 0"/><path d="M12 19h.01"/>');
+const ICO_SIGNALOFF=_svg('<path d="M4.5 12.5a10 10 0 0 1 6-2.9"/><path d="M16.5 11a10 10 0 0 1 3 1.5"/><path d="M9 16a6 6 0 0 1 6.5-.8"/><path d="M12 19h.01"/><path d="M3 3l18 18"/>');
+const ICO_SHIELD=_svg('<path d="M12 3 5 6v5c0 4.5 3 7.6 7 9 4-1.4 7-4.5 7-9V6z"/>');
+const ICO_IDEA=_svg('<path d="M9.5 18h5"/><path d="M10 21h4"/><path d="M12 3a6 6 0 0 0-3.8 10.7c.5.5.8 1.1.8 1.8v.5h6v-.5c0-.7.3-1.3.8-1.8A6 6 0 0 0 12 3z"/>');
+const ICO_CHATBUBBLE=_svg('<path d="M4 5h16v11H10l-4 4V16H4z"/>');
+const ICO_SAVE=_svg('<path d="M5 3h11l3 3v15H5z"/><path d="M8 3v5h7V4"/><rect x="8" y="13" width="8" height="6"/>');
+const ICO_UPLOAD=_svg('<path d="M12 15V4"/><path d="m7.5 8.5 4.5-4.5 4.5 4.5"/><path d="M4 15v3a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-3"/>');
+const ICO_LINK=_svg('<path d="M9.5 14.5 14.5 9.5"/><path d="M11 6.5 12.2 5.3a4 4 0 0 1 5.6 5.6l-1.2 1.2"/><path d="M13 17.5 11.8 18.7a4 4 0 0 1-5.6-5.6l1.2-1.2"/>');
+const ICO_ROBOT=_svg('<rect x="4" y="8" width="16" height="11" rx="2.5"/><path d="M12 8V4.5"/><circle cx="12" cy="3.5" r="1.2"/><circle cx="9" cy="13" r="1.1" fill="currentColor" stroke="none"/><circle cx="15" cy="13" r="1.1" fill="currentColor" stroke="none"/><path d="M9.5 16.5h5"/>');
+const ICO_GLOBE=_svg('<circle cx="12" cy="12" r="9"/><path d="M3 12h18"/><path d="M12 3c2.5 2.4 4 5.6 4 9s-1.5 6.6-4 9c-2.5-2.4-4-5.6-4-9s1.5-6.6 4-9z"/>');
+const ICO_CALC=_svg('<rect x="5" y="3" width="14" height="18" rx="2"/><rect x="8" y="6" width="8" height="3" rx="0.5"/><path d="M8.5 13h.01M12 13h.01M15.5 13h.01M8.5 17h.01M12 17h.01M15.5 17h.01"/>');
+const ICO_MEGA=_svg('<path d="M3 11v2a1 1 0 0 0 1 1h2l5 4V6l-5 4H4a1 1 0 0 0-1 1z"/><path d="M16 8.5a4 4 0 0 1 0 7"/><path d="M18.5 6a7 7 0 0 1 0 12"/>');
+const ICO_BRAIN=_svg('<path d="M12 5a3 3 0 0 0-5.6-1.5A2.8 2.8 0 0 0 4 8a3 3 0 0 0 .5 5.5A3 3 0 0 0 8 18a3 3 0 0 0 4 1V5z"/><path d="M12 5a3 3 0 0 1 5.6-1.5A2.8 2.8 0 0 1 20 8a3 3 0 0 1-.5 5.5A3 3 0 0 1 16 18a3 3 0 0 1-4 1"/>');
 const XP_KEY='slagio_xp';
 const XP_LEVELS=[0,100,500,2000,7500,30000,75000,200000];
 const LEVEL_NAMES=['','Baby','Jong','Tiener','Volwassen','Prime','Goud','Ultiem'];
@@ -175,7 +212,7 @@ function getLbBadgeOverlay(badgeId,borderColor){
   const b=ALL_BADGES.find(x=>x.id===badgeId);
   if(!b)return'';
   const rarity=b.rarity||'common';
-  return`<div class="lb-av-badge rarity-${rarity}" style="${borderColor?'border-color:'+borderColor:''}" title="${b.label} · ${RARITY_LABEL[rarity]||''}">${b.emoji}</div>`;
+  return`<div class="lb-av-badge no-ico rarity-${rarity}" style="${borderColor?'border-color:'+borderColor:''}" title="${b.label} · ${RARITY_LABEL[rarity]||''}">${b.emoji}</div>`;
 }
 // ── EVOLUTION REVEAL ─────────────────────────────────────────────
 function showEvoReveal(newStage,animalId){
@@ -351,6 +388,115 @@ function renderDailyGoal(){
     el.textContent=_dgCountdownStr();
   },1000);
 }
+// ═══════ DAGMISSIE ═══════
+// Eén gepersonaliseerde opdracht per dag: due fouten > zwakste domein > streak
+// bewaren > eerste oefening. Roteert per dag; Vonk kondigt 'm aan.
+const DAGMISSIE_DONE_KEY='slagio_dagmissie_done';
+function _dmToday(){return new Date().toISOString().slice(0,10);}
+function _dmDayIndex(){const d=new Date();return Math.floor((d-new Date(d.getFullYear(),0,0))/864e5);}
+function _dmWeakDomains(){
+  const out=[];
+  try{(getVK()||[]).forEach(function(vak){(vak.domeinen||[]).forEach(function(dom){
+    const r=(typeof getDomeinBestPct==='function')?getDomeinBestPct(vak.id,dom.id):{hasData:false};
+    if(r.hasData&&r.pct<0.8)out.push({vakId:vak.id,vakNaam:vak.naam,domId:dom.id,domNaam:dom.naam,pct:r.pct});
+  });});}catch(e){}
+  out.sort(function(a,b){return a.pct-b.pct;});
+  return out;
+}
+function dagmissiePick(){
+  const due=(typeof fbDueCount==='function')?fbDueCount():0;
+  if(due>0)return{type:'foutenboek',ico:'📕',mood:'kijk',
+    title:'Herhaal '+due+' '+(due===1?'fout':'fouten'),
+    sub:'uit je Foutenboek · ~'+Math.max(3,Math.round(due*0.7))+' min',
+    btn:'Herhaal nu',act:'fbOefen()',
+    vonk:'Je hebt '+due+' '+(due===1?'fout':'fouten')+' klaarstaan om te herhalen. Zullen we die even wegwerken?'};
+  const weak=_dmWeakDomains();
+  if(weak.length){
+    const p=weak[_dmDayIndex()%Math.min(weak.length,4)];
+    return{type:'zwak',ico:'🎯',mood:'goed',
+      title:'Oefen '+p.domNaam,
+      sub:p.vakNaam+' · nu '+Math.round(p.pct*100)+'%',
+      btn:'Start quiz',act:"goToDomein('"+p.vakId+"','"+p.domId+"','snel')",
+      vonk:p.domNaam+' ('+p.vakNaam+') kan nog een boost gebruiken. Eén snelle quiz en je staat er beter voor!'};
+  }
+  try{
+    const cur=(typeof calcStreak==='function')?(calcStreak().current||0):0;
+    const s=(typeof getStreak==='function')?getStreak():{days:[]};
+    const practiced=s.days&&s.days.indexOf(_dmToday())>=0;
+    if(cur>0&&!practiced)return{type:'streak',ico:'🔥',mood:'trots',
+      title:'Bewaar je streak',
+      sub:'doe vandaag 1 snelle quiz · streak '+cur,
+      btn:'Oefen nu',act:'quickOefen()',
+      vonk:'Je streak staat op '+cur+' dagen! Doe even één quiz zodat hij niet breekt.'};
+  }catch(e){}
+  return{type:'start',ico:'✨',mood:'blij',
+    title:'Doe je eerste oefening',
+    sub:'kies een vak en start een quiz',
+    btn:'Begin',act:'quickOefen()',
+    vonk:'Klaar om te beginnen? Kies een vak en doe je eerste quiz, dan laat ik je zien hoe je ervoor staat.'};
+}
+function dagmissieDone(){try{return localStorage.getItem(DAGMISSIE_DONE_KEY)===_dmToday();}catch(e){return false;}}
+function markDagmissieDone(){
+  try{
+    if(localStorage.getItem(DAGMISSIE_DONE_KEY)===_dmToday())return; // al beloond vandaag
+    localStorage.setItem(DAGMISSIE_DONE_KEY,_dmToday());
+    dagmissieReward();
+  }catch(e){}
+}
+// ── Vonk-boost: 2× XP tot middernacht ──
+function xpBoostActive(){try{const b=JSON.parse(localStorage.getItem('slagio_boost')||'{}');return b.d===_dmToday()&&Date.now()<(b.until||0);}catch(e){return false;}}
+function _boostEnd(){const e=new Date();e.setHours(23,59,59,999);return e.getTime();}
+function activateXpBoost(){try{localStorage.setItem('slagio_boost',JSON.stringify({d:_dmToday(),until:_boostEnd()}));}catch(e){}}
+// ── Streak-redder: repareert precies één gemiste dag als je terugkomt ──
+function maybeReviveStreak(){
+  try{
+    const s=getStreak(); if(!s.days)s.days=[];
+    const t=new Date();t.setHours(0,0,0,0);
+    const ds=function(n){const d=new Date(t);d.setDate(d.getDate()-n);return d.toISOString().slice(0,10);};
+    const today=ds(0),yest=ds(1),d2=ds(2);
+    if(!s.days.includes(today))s.days.push(today);
+    if(!s.days.includes(yest)&&s.days.includes(d2)){   // alleen gisteren gemist, eergisteren wél
+      s.days.push(yest); s.days.sort();
+      localStorage.setItem('examenapp_streak',JSON.stringify(s));
+      try{if(typeof cloudSet==='function')cloudSet('streak',s);}catch(e){}
+      return calcStreak().current;
+    }
+  }catch(e){}
+  return 0;
+}
+function dagmissieReward(){
+  activateXpBoost();
+  const revived=maybeReviveStreak();
+  try{if(typeof renderDagmissie==='function')renderDagmissie();}catch(e){}
+  try{if(typeof renderStreak==='function')renderStreak();}catch(e){}
+  try{
+    let cap='<b>Missie volbracht!</b><br>De hele dag <b>dubbele XP</b> ⚡';
+    if(revived>0)cap+='<br>Streak van <b>'+revived+' dagen</b> gered! 🔥';
+    if(typeof vonkCelebrate==='function')setTimeout(function(){vonkCelebrate(cap);},900);
+    else if(typeof vonkSay==='function')setTimeout(function(){vonkSay(cap.replace(/<br>/g,' '),{mood:'trots',side:'left',duration:0});},1300);
+  }catch(e){}
+  try{trackEvent('dagmissie_voltooid',{boost:1,streak_gered:revived>0});}catch(e){}
+}
+function renderDagmissie(){
+  const box=document.getElementById('dagmissie-home');if(!box)return;
+  if(dagmissieDone()){
+    const boost=xpBoostActive()?'<span class="dm-boost">⚡ 2× XP tot middernacht</span>':'';
+    box.innerHTML='<div class="dm-card dm-done"><span class="dm-check">✅</span><div class="dm-body"><div class="dm-title">Dagmissie voltooid!</div><div class="dm-sub">Top bezig. Kom morgen terug voor een nieuwe missie.</div>'+boost+'</div></div>';
+    return;
+  }
+  const m=dagmissiePick();
+  const svg=(typeof mascotSVG==='function')?mascotSVG(m.mood,46):('<span class="dm-check">'+m.ico+'</span>');
+  box.innerHTML='<div class="dm-card"><div class="dm-vonk">'+svg+'</div><div class="dm-body"><div class="dm-kicker">🎯 Dagmissie van Vonk</div><div class="dm-title">'+m.title+'</div><div class="dm-sub">'+m.sub+'</div></div><button class="dm-btn" onclick="'+m.act+'">'+m.btn+' →</button></div>';
+}
+// Vonk kondigt de dagmissie 1× per dag aan (niet voor kersverse gebruikers: die krijgen eerst de intro).
+function vonkDagmissie(){
+  if(dagmissieDone())return;
+  try{if(localStorage.getItem('slagio_vonk_dagmissie')===_dmToday())return;localStorage.setItem('slagio_vonk_dagmissie',_dmToday());}catch(e){}
+  const m=dagmissiePick();
+  if(typeof vonkSay!=='function')return;
+  vonkSay('<b>Dagmissie:</b> '+m.vonk,{mood:m.mood,side:'left',duration:0,action:{label:m.btn+' →',onclick:m.act}});
+}
+
 function getXPData(){
   try{
     const fromKey=(JSON.parse(localStorage.getItem(XP_KEY)||'{"xp":0}').xp)||0;
@@ -371,6 +517,8 @@ function getXPPct(xp){
   return Math.min(Math.round((xp-cur)/(nxt-cur)*100),100);
 }
 function addXP(amount){
+  // Vonk-boost: dubbele XP tot middernacht na het voltooien van de dagmissie.
+  try{if(typeof xpBoostActive==='function'&&xpBoostActive())amount=Math.round(amount*2);}catch(e){}
   try{const t=new Date().toISOString().slice(0,10);const k='slagio_xp_today';const s=JSON.parse(localStorage.getItem(k)||'{}');if(s.d!==t){s.d=t;s.x=0;}s.x=(s.x||0)+amount;localStorage.setItem(k,JSON.stringify(s));}catch(e){}
   const d=getXPData();
   const oldLvl=getLevelForXP(d.xp);
@@ -406,22 +554,32 @@ function slagioVlagUit(kind){
     ov.innerHTML=
       '<div class="vlag-stage">'+
         '<svg class="vlag-svg" viewBox="0 0 200 240" width="200" height="240" aria-hidden="true">'+
-          '<rect x="40" y="12" width="7" height="214" rx="3.5" fill="#6b5b4a"/>'+
-          '<circle cx="43.5" cy="12" r="7" fill="#caa45a"/>'+
+          '<ellipse cx="100" cy="232" rx="66" ry="7" fill="rgba(0,0,0,.13)"/>'+
+          '<rect x="40" y="12" width="8" height="214" rx="4" fill="#c98f5f"/>'+
+          '<rect x="40.6" y="15" width="3.2" height="206" rx="1.6" fill="#e8c096" opacity=".65"/>'+
+          '<circle cx="44" cy="12" r="7.5" fill="#f5b301"/>'+
+          '<circle cx="41.6" cy="9.6" r="2.4" fill="#ffdb7a"/>'+
+          '<path class="vlag-rope" d="M44 16 q16 44 -3 104 q-9 36 1 92" stroke="#ecd3ab" stroke-width="2.4" fill="none" stroke-linecap="round"/>'+
           '<g class="vlag-raise">'+
             '<g class="vlag-cloth">'+
-              '<rect x="47" y="26" width="98" height="19" fill="#AE1C28"/>'+
-              '<rect x="47" y="45" width="98" height="19" fill="#ffffff"/>'+
-              '<rect x="47" y="64" width="98" height="19" fill="#21468B"/>'+
+              '<clipPath id="vlagClip"><rect x="48" y="26" width="98" height="58" rx="8"/></clipPath>'+
+              '<g clip-path="url(#vlagClip)">'+
+                '<rect x="48" y="26" width="98" height="19.5" fill="#AE1C28"/>'+
+                '<rect x="48" y="45.5" width="98" height="19" fill="#ffffff"/>'+
+                '<rect x="48" y="64.5" width="98" height="19.5" fill="#21468B"/>'+
+              '</g>'+
+              '<rect x="48" y="26" width="98" height="58" rx="8" fill="none" stroke="rgba(0,0,0,.06)" stroke-width="1"/>'+
             '</g>'+
-            '<g class="vlag-bag" transform="translate(43.5,128)">'+
-              '<path d="M0 -6 q22 4 22 26" stroke="#3a3f4b" stroke-width="4" fill="none"/>'+
-              '<rect x="4" y="14" width="46" height="42" rx="11" fill="'+bagCol+'"/>'+
-              '<rect x="4" y="30" width="46" height="15" rx="6" fill="rgba(0,0,0,.16)"/>'+
-              '<rect x="19" y="20" width="16" height="12" rx="4" fill="rgba(255,255,255,.9)"/>'+
+            '<g class="vlag-bag" transform="translate(26,120)">'+
+              '<path d="M18 -2 q6 2 6 10" stroke="#39404e" stroke-width="3.5" fill="none"/>'+
+              '<rect x="0" y="6" width="42" height="46" rx="14" fill="'+bagCol+'"/>'+
+              '<rect x="0" y="26" width="42" height="16" rx="8" fill="rgba(0,0,0,.14)"/>'+
+              '<rect x="13" y="14" width="16" height="13" rx="5" fill="rgba(255,255,255,.92)"/>'+
+              '<path d="M11 6 q10 -7 20 0" stroke="rgba(0,0,0,.16)" stroke-width="2.6" fill="none"/>'+
             '</g>'+
           '</g>'+
         '</svg>'+
+        '<div class="vlag-vonk">'+((typeof mascotSVG==='function')?mascotSVG('feest',98):'')+'</div>'+
         '<div class="vlag-label">'+label+'</div>'+
       '</div>';
     document.body.appendChild(ov);
@@ -506,6 +664,9 @@ function renderGreeting(){
 function renderHomeStats(){
   const box=document.getElementById('home-bento');
   if(!box)return;
+  try{if(typeof fbUpdateBadge==='function')setTimeout(fbUpdateBadge,0);}catch(e){}
+  try{if(typeof renderDagmissie==='function')renderDagmissie();}catch(e){}
+  try{if(typeof renderHerhaalHomeCard==='function')renderHerhaalHomeCard();}catch(e){}
   // ── Data ──────────────────────────────────────────
   const {current:streak}=calcStreak();
   const xp=getTotalXP();
@@ -513,24 +674,10 @@ function renderHomeStats(){
   const cijfers=getSavedCijfers();
   const vals=Object.values(cijfers).filter(v=>typeof v==='number'&&v>0);
   const avg=vals.length?vals.reduce((a,b)=>a+b,0)/vals.length:null;
-  // ── Action cells (always shown) ───────────────────
-  const actCells=`
-    <button class="bento-cell bento-act" onclick="show('sc-schedule')" aria-label="Rooster">
-      <svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
-      <span class="bento-al">Rooster</span>
-    </button>
-    <button class="bento-cell bento-act" onclick="show('sc-calc');setTimeout(prefillCalcFromSaved,50)" aria-label="Berekenen">
-      <svg viewBox="0 0 24 24"><rect x="4" y="2" width="16" height="20" rx="2"/><line x1="8" y1="6" x2="16" y2="6"/><line x1="8" y1="10" x2="16" y2="10"/><line x1="8" y1="14" x2="12" y2="14"/></svg>
-      <span class="bento-al">Berekenen</span>
-    </button>
-    <button class="bento-cell bento-act" onclick="show('sc-sociaal')" aria-label="Sociaal">
-      <svg viewBox="0 0 24 24"><circle cx="9" cy="7" r="3"/><path d="M3 21v-2a4 4 0 0 1 4-4h4a4 4 0 0 1 4 4v2"/><circle cx="19" cy="8" r="2"/><path d="M19 14c1.7 0 3 1.3 3 3v1"/></svg>
-      <span class="bento-al">Sociaal</span>
-    </button>
-    <button class="bento-cell bento-act" onclick="show('sc-info')" aria-label="Slaagregels">
-      <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
-      <span class="bento-al">Slaagregels</span>
-    </button>`;
+  // Navigatietegels staan nu in het home-menu (.hm-menu) — niet meer dubbel in de bento.
+  const actCells='';
+  // SE-gemiddelde op de Cijfers-tegel van het home-menu tonen.
+  try{const cs=document.getElementById('hm-cijfer-sub');if(cs)cs.textContent=avg!==null?('gem. '+avg.toFixed(1).replace('.',',')):'';}catch(e){}
   // Dagdoel zit niet meer in de bento — één widget via renderDailyGoal().
   // ── Clear standalone containers (altijd) ──────────
   // daily-goal-home wordt door renderDailyGoal() beheerd (één dagdoel-widget,
@@ -583,23 +730,10 @@ function renderHomeStats(){
         <div class="bento-stat"><div class="bento-si" style="color:var(--mu)"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="22 7 13.5 15.5 8.5 10.5 2 17"/><polyline points="16 7 22 7 22 13"/></svg></div><div class="bento-sv" style="font-size:13px;font-weight:700;color:var(--mu)">Cijfers</div><div class="bento-sl" style="font-size:10px">Voer in →</div></div>
       </div>`;
   const groepCell='';
-  // ── Streak milestone cell (conditional, full-width) ──
-  let smCell='';
-  const nextMile2=getNextStreakMilestone(streak);
-  if(nextMile2){
-    const dLeft=nextMile2-streak;
-    if(dLeft>0&&dLeft<=7){
-      const bMap={7:{e:'⚡',n:'Een week'},14:{e:'💎',n:'Twee weken'},30:{e:'🔮',n:'Een maand'},100:{e:'👑',n:'Legende'},200:{e:'🌌',n:'Onsterfelijk'},300:{e:'⚜️',n:'Grootmeester'},365:{e:'🪐',n:'Heel het jaar'}};
-      const b=bMap[nextMile2]||{e:'🏅',n:nextMile2+' dagen'};
-      const fp=Math.round(Math.min(99,streak/nextMile2*100));
-      smCell=`<div class="bento-cell streak-milestone-banner" style="grid-column:1/-1;border-radius:14px;padding:12px 16px;margin:0">
-        <div class="smb-row"><div class="smb-icon">${ICO_FLAME}</div><div class="smb-text">Nog <strong>${dLeft} dag${dLeft>1?'en':''}</strong> tot je ${b.e} <strong>${b.n}</strong> badge! Oefen vandaag voor dag ${streak+1}.</div></div>
-        <div class="smb-bar-wrap"><div class="smb-bar-fill" style="width:${fp}%"></div></div>
-        <div class="smb-bar-lbl">${streak} / ${nextMile2} dagen</div>
-      </div>`;
-    }
-  }
-  box.innerHTML=`<div class="bento">${streakCell}${lvlCell}${badgeCell}${avgCell}${groepCell}${actCells}${smCell}</div>`;
+  // De weekbadge-teller staat als losse banner (#streak-milestone-banner-home,
+  // via renderStreakMilestoneBanner) — niet nog eens in de bento, anders staat
+  // hij dubbel op de homepagina.
+  box.innerHTML=`<div class="bento">${streakCell}${lvlCell}${badgeCell}${avgCell}${groepCell}${actCells}</div>`;
 }
 
 function renderXPHome(){
@@ -669,12 +803,12 @@ function getDailyChallenge(){
     if(d.date===today){
       const vak=getVK().find(v=>v.id===d.vakId);
       const dom=vak&&vak.domeinen.find(x=>x.id===d.domeinId);
-      if(vak&&dom&&dom.sv&&dom.sv.length>=3)return d;
+      if(vak&&dom&&domCount(dom,'sv')>=3)return d;
     }
   }catch(e){}
-  // Pick a fresh challenge from all valid HAVO/VWO domains
+  // Pick a fresh challenge from all valid HAVO/VWO domains (counts uit meta — geen hydratatie nodig)
   const all=[];
-  getVK().forEach(v=>v.domeinen.forEach(d=>{if(d.sv&&d.sv.length>=3)all.push({vak:v,domein:d});}));
+  getVK().forEach(v=>v.domeinen.forEach(d=>{if(domCount(d,'sv')>=3)all.push({vak:v,domein:d});}));
   if(!all.length)return null;
   const pick=all[Math.floor(Math.random()*all.length)];
   const dc={date:today,vakId:pick.vak.id,vakNaam:pick.vak.naam,domeinId:pick.domein.id,domeinNaam:pick.domein.naam,done:false};
@@ -717,10 +851,13 @@ function startDailyChallenge(){
     if(!dc||dc.done)return;
     const vak=getVK().find(v=>v.id===dc.vakId);
     if(!vak){_dcCache=null;localStorage.removeItem(_dcLevelKey());renderDailyChallenge();showToast('Uitdaging vernieuwd - probeer opnieuw!','#f97316');return;}
-    const domein=vak.domeinen.find(d=>d.id===dc.domeinId);
-    if(!domein||!domein.sv||!domein.sv.length){_dcCache=null;localStorage.removeItem(_dcLevelKey());renderDailyChallenge();showToast('Uitdaging vernieuwd - probeer opnieuw!','#f97316');return;}
-    ST.vak=vak;ST.domein=domein;ST.isDailyChallenge=true;
-    startQ('snel');
+    const _go=function(){
+      const domein=vak.domeinen.find(d=>d.id===dc.domeinId);
+      if(!domein||!domCount(domein,'sv')){_dcCache=null;localStorage.removeItem(_dcLevelKey());renderDailyChallenge();showToast('Uitdaging vernieuwd - probeer opnieuw!','#f97316');return;}
+      ST.vak=vak;ST.domein=domein;ST.isDailyChallenge=true;
+      startQ('snel');
+    };
+    if(typeof ensureVakData==='function'&&typeof vakHydrated==='function'&&!vakHydrated(APP_LEVEL,vak.id)){ensureVakData(APP_LEVEL,vak.id,_go);}else{_go();}
   }catch(err){
     console.error('[DC]',err);
     showToast('Kon quiz niet starten: '+err.message,'#ef4444');
@@ -778,7 +915,7 @@ function startStreakQuiz(){
     mijn.forEach(vakId=>{
       const vak=vakArr.find(v=>v.id===vakId);
       if(!vak)return;
-      vak.domeinen?.filter(d=>(d.sv?.length||0)>0).forEach(dom=>{
+      vak.domeinen?.filter(d=>domCount(d,'sv')>0).forEach(dom=>{
         const p=prog[vakId+'_'+dom.id+'_snel'];
         const sc=p?(p.best||0):-1;
         if(sc<lowestScore){lowestScore=sc;bestVak=vakId;bestDom=dom.id;}
@@ -798,8 +935,8 @@ function _showQuickStartSheet(){
   if(document.getElementById('qs-sheet'))return;
   const vakArr=APP_LEVEL==='vwo'?(typeof VAKKEN_VWO!=='undefined'?VAKKEN_VWO:[]):(typeof VAKKEN!=='undefined'?VAKKEN:[]);
   const topVakken=[...vakArr].sort((a,b)=>{
-    const qa=a.domeinen?.reduce((s,d)=>s+(d.sv?.length||0),0)||0;
-    const qb=b.domeinen?.reduce((s,d)=>s+(d.sv?.length||0),0)||0;
+    const qa=a.domeinen?.reduce((s,d)=>s+domCount(d,'sv'),0)||0;
+    const qb=b.domeinen?.reduce((s,d)=>s+domCount(d,'sv'),0)||0;
     return qb-qa;
   }).slice(0,8);
   const el=document.createElement('div');
@@ -827,8 +964,8 @@ function _showQuickStartSheet(){
   document.body.appendChild(el);
   const grid=document.getElementById('qs-grid');
   topVakken.forEach(vak=>{
-    const firstDom=vak.domeinen?.find(d=>(d.sv?.length||0)>0);
-    const qCount=vak.domeinen?.reduce((s,d)=>s+(d.sv?.length||0),0)||0;
+    const firstDom=vak.domeinen?.find(d=>domCount(d,'sv')>0);
+    const qCount=vak.domeinen?.reduce((s,d)=>s+domCount(d,'sv'),0)||0;
     const btn=document.createElement('button');
     btn.className='qs-card';
     btn.innerHTML=`<div class="qs-card-name">${vak.naam}</div><div class="qs-card-sub">${qCount} vragen · direct starten</div>`;
@@ -922,7 +1059,7 @@ function renderStreak(){
   let badgeHtml='';
   badgeDefs.forEach(b=>{
     const isEarned=!!ach[b.id];
-    badgeHtml+=`<div class="badge-tooltip badge ${isEarned?'earned':'unearned'}" data-tip="${b.tip}">${b.emoji}</div>`;
+    badgeHtml+=`<div class="badge-tooltip badge no-ico ${isEarned?'earned':'unearned'}" data-tip="${b.tip}">${b.emoji}</div>`;
   });
   // Headline
   const todayStr=new Date().toISOString().slice(0,10);

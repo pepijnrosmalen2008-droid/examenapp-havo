@@ -1,0 +1,23 @@
+name: CI
+
+# Kwaliteitspoort: draait bij elke push/PR. Vangt de klasse fouten die een deploy
+# stil kunnen breken — kapotte data, structureel foute gegenereerde vragen,
+# ontbrekende gecachte bestanden of een vergeten SW-cachebump.
+on:
+  push:
+    branches: [main, 'claude/**']
+  pull_request:
+    branches: [main]
+
+jobs:
+  checks:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: QA-gate — valideer de vragen-data (geen structurele fouten)
+        run: node scripts/build-questions.js --check
+      - name: Rooktest — data parseert, assets bestaan, SW-cache gebumpt
+        run: node scripts/smoke.mjs

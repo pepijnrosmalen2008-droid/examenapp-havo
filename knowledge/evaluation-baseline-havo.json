@@ -1,0 +1,376 @@
+{
+ "_meta": {
+  "engine": "evaluation-engine@1",
+  "datum": "2026-07-22",
+  "toelichting": "Bevroren \"vóór\"-meting — onafhankelijke referentie voor latere verbeteringen."
+ },
+ "results": [
+  {
+   "vak": "nl",
+   "naam": "Nederlands",
+   "score": 96.7,
+   "issues": [
+    "duplicate_questions"
+   ],
+   "warnings": [
+    "difficulty_missing"
+   ],
+   "metrics": {
+    "n": 377,
+    "correct_option_distribution": {
+     "A": 0.34,
+     "B": 0.23,
+     "C": 0.2,
+     "D": 0.23
+    },
+    "duplicate_questions": 23,
+    "duplicate_option_rate": 0,
+    "missing_explanation_rate": 0,
+    "difficulty_missing_rate": 0.162,
+    "length_bias_rate": 0.037,
+    "coupling": {
+     "matched": 0,
+     "unmatched": 0,
+     "off_level": 0
+    }
+   }
+  },
+  {
+   "vak": "wa",
+   "naam": "Wiskunde A",
+   "score": 95,
+   "issues": [
+    "answer_position_bias",
+    "duplicate_questions"
+   ],
+   "warnings": [
+    "difficulty_missing"
+   ],
+   "metrics": {
+    "n": 324,
+    "correct_option_distribution": {
+     "A": 0.44,
+     "B": 0.21,
+     "C": 0.18,
+     "D": 0.17
+    },
+    "duplicate_questions": 1,
+    "duplicate_option_rate": 0,
+    "missing_explanation_rate": 0,
+    "difficulty_missing_rate": 0.272,
+    "length_bias_rate": 0.028,
+    "coupling": {
+     "matched": 0,
+     "unmatched": 0,
+     "off_level": 0
+    }
+   }
+  },
+  {
+   "vak": "bi",
+   "naam": "Biologie",
+   "score": 97.5,
+   "issues": [],
+   "warnings": [
+    "difficulty_missing"
+   ],
+   "metrics": {
+    "n": 416,
+    "correct_option_distribution": {
+     "A": 0.35,
+     "B": 0.2,
+     "C": 0.24,
+     "D": 0.21
+    },
+    "duplicate_questions": 0,
+    "duplicate_option_rate": 0,
+    "missing_explanation_rate": 0,
+    "difficulty_missing_rate": 0.106,
+    "length_bias_rate": 0.043,
+    "coupling": {
+     "matched": 416,
+     "unmatched": 0,
+     "off_level": 0
+    }
+   }
+  },
+  {
+   "vak": "sk",
+   "naam": "Scheikunde",
+   "score": 96.9,
+   "issues": [
+    "duplicate_questions"
+   ],
+   "warnings": [
+    "difficulty_missing"
+   ],
+   "metrics": {
+    "n": 408,
+    "correct_option_distribution": {
+     "A": 0.29,
+     "B": 0.29,
+     "C": 0.23,
+     "D": 0.19
+    },
+    "duplicate_questions": 6,
+    "duplicate_option_rate": 0,
+    "missing_explanation_rate": 0,
+    "difficulty_missing_rate": 0.137,
+    "length_bias_rate": 0.049,
+    "coupling": {
+     "matched": 408,
+     "unmatched": 0,
+     "off_level": 0
+    }
+   }
+  },
+  {
+   "vak": "na",
+   "naam": "Natuurkunde",
+   "score": 95.1,
+   "issues": [
+    "answer_position_bias",
+    "duplicate_questions"
+   ],
+   "warnings": [
+    "difficulty_missing",
+    "length_bias",
+    "unmatched_couplings"
+   ],
+   "metrics": {
+    "n": 544,
+    "correct_option_distribution": {
+     "A": 0.43,
+     "B": 0.22,
+     "C": 0.16,
+     "D": 0.18
+    },
+    "duplicate_questions": 6,
+    "duplicate_option_rate": 0,
+    "missing_explanation_rate": 0,
+    "difficulty_missing_rate": 0.243,
+    "length_bias_rate": 0.053,
+    "coupling": {
+     "matched": 529,
+     "unmatched": 5,
+     "off_level": 10
+    }
+   }
+  },
+  {
+   "vak": "be",
+   "naam": "Bedrijfseconomie",
+   "score": 94.8,
+   "issues": [
+    "answer_position_bias",
+    "duplicate_questions"
+   ],
+   "warnings": [
+    "difficulty_missing",
+    "length_bias"
+   ],
+   "metrics": {
+    "n": 236,
+    "correct_option_distribution": {
+     "A": 0.42,
+     "B": 0.22,
+     "C": 0.18,
+     "D": 0.18
+    },
+    "duplicate_questions": 3,
+    "duplicate_option_rate": 0,
+    "missing_explanation_rate": 0,
+    "difficulty_missing_rate": 0.22,
+    "length_bias_rate": 0.089,
+    "coupling": {
+     "matched": 0,
+     "unmatched": 0,
+     "off_level": 0
+    }
+   }
+  },
+  {
+   "vak": "en",
+   "naam": "Engels",
+   "score": 97,
+   "issues": [
+    "duplicate_questions"
+   ],
+   "warnings": [
+    "difficulty_missing"
+   ],
+   "metrics": {
+    "n": 386,
+    "correct_option_distribution": {
+     "A": 0.24,
+     "B": 0.31,
+     "C": 0.24,
+     "D": 0.22
+    },
+    "duplicate_questions": 10,
+    "duplicate_option_rate": 0,
+    "missing_explanation_rate": 0,
+    "difficulty_missing_rate": 0.14,
+    "length_bias_rate": 0.041,
+    "coupling": {
+     "matched": 0,
+     "unmatched": 0,
+     "off_level": 0
+    }
+   }
+  },
+  {
+   "vak": "gs",
+   "naam": "Geschiedenis",
+   "score": 96.4,
+   "issues": [
+    "duplicate_questions"
+   ],
+   "warnings": [
+    "difficulty_missing",
+    "length_bias"
+   ],
+   "metrics": {
+    "n": 532,
+    "correct_option_distribution": {
+     "A": 0.37,
+     "B": 0.21,
+     "C": 0.22,
+     "D": 0.2
+    },
+    "duplicate_questions": 5,
+    "duplicate_option_rate": 0,
+    "missing_explanation_rate": 0,
+    "difficulty_missing_rate": 0.15,
+    "length_bias_rate": 0.066,
+    "coupling": {
+     "matched": 0,
+     "unmatched": 0,
+     "off_level": 0
+    }
+   }
+  },
+  {
+   "vak": "ak",
+   "naam": "Aardrijkskunde",
+   "score": 97.3,
+   "issues": [
+    "duplicate_questions"
+   ],
+   "warnings": [
+    "difficulty_missing"
+   ],
+   "metrics": {
+    "n": 348,
+    "correct_option_distribution": {
+     "A": 0.38,
+     "B": 0.22,
+     "C": 0.18,
+     "D": 0.23
+    },
+    "duplicate_questions": 10,
+    "duplicate_option_rate": 0,
+    "missing_explanation_rate": 0,
+    "difficulty_missing_rate": 0.149,
+    "length_bias_rate": 0.014,
+    "coupling": {
+     "matched": 0,
+     "unmatched": 0,
+     "off_level": 0
+    }
+   }
+  },
+  {
+   "vak": "ec",
+   "naam": "Economie",
+   "score": 96,
+   "issues": [
+    "duplicate_questions"
+   ],
+   "warnings": [
+    "difficulty_missing",
+    "length_bias"
+   ],
+   "metrics": {
+    "n": 673,
+    "correct_option_distribution": {
+     "A": 0.39,
+     "B": 0.18,
+     "C": 0.2,
+     "D": 0.22
+    },
+    "duplicate_questions": 8,
+    "duplicate_option_rate": 0,
+    "missing_explanation_rate": 0,
+    "difficulty_missing_rate": 0.12,
+    "length_bias_rate": 0.119,
+    "coupling": {
+     "matched": 0,
+     "unmatched": 0,
+     "off_level": 0
+    }
+   }
+  },
+  {
+   "vak": "mw",
+   "naam": "Maatschappijwetenschappen",
+   "score": 97.4,
+   "issues": [
+    "duplicate_questions"
+   ],
+   "warnings": [
+    "difficulty_missing",
+    "length_bias"
+   ],
+   "metrics": {
+    "n": 254,
+    "correct_option_distribution": {
+     "A": 0.33,
+     "B": 0.2,
+     "C": 0.21,
+     "D": 0.25
+    },
+    "duplicate_questions": 10,
+    "duplicate_option_rate": 0,
+    "missing_explanation_rate": 0,
+    "difficulty_missing_rate": 0.102,
+    "length_bias_rate": 0.055,
+    "coupling": {
+     "matched": 0,
+     "unmatched": 0,
+     "off_level": 0
+    }
+   }
+  },
+  {
+   "vak": "wb",
+   "naam": "Wiskunde B",
+   "score": 96.7,
+   "issues": [
+    "duplicate_questions"
+   ],
+   "warnings": [
+    "difficulty_missing"
+   ],
+   "metrics": {
+    "n": 228,
+    "correct_option_distribution": {
+     "A": 0.38,
+     "B": 0.24,
+     "C": 0.22,
+     "D": 0.17
+    },
+    "duplicate_questions": 3,
+    "duplicate_option_rate": 0,
+    "missing_explanation_rate": 0,
+    "difficulty_missing_rate": 0.158,
+    "length_bias_rate": 0.039,
+    "coupling": {
+     "matched": 0,
+     "unmatched": 0,
+     "off_level": 0
+    }
+   }
+  }
+ ]
+}

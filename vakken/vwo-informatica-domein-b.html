@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="nl" data-vak="in">
 <head>
-<script>/* Slagio-boot-spa: terugkerende app-gebruiker opent de SPA (nieuwe/zoek-bezoeker en crawler zien de statische pagina) */
-(function(){try{if(!localStorage.getItem("examenapp_level"))return;var id=document.documentElement.getAttribute("data-vak");var m=location.pathname.match(/\/vakken\/(havo|vwo)-.*?(?:-domein-([a-z]))?\.html$/);if(!id||!m)return;location.replace("/?niveau="+m[1]+"&vak="+id+(m[2]?"&domein="+m[2].toUpperCase():""));}catch(e){}})();
+<script>/* Slagio-boot-spa: echte bezoekers openen de vak-pagina in de app (openVak); zoekmachine-crawlers zien de statische SEO-pagina (SEO behouden) */
+(function(){try{if(/bot|crawl|spider|slurp|facebookexternalhit|whatsapp|telegram|slackbot|discord|embedly|quora|pinterest|linkedin|bingpreview/i.test(navigator.userAgent))return;var id=document.documentElement.getAttribute("data-vak");var m=location.pathname.match(/\/vakken\/(havo|vwo)-.*?(?:-domein-([a-z]))?\.html$/);if(!id||!m)return;location.replace("/?niveau="+m[1]+"&vak="+id+(m[2]?"&domein="+m[2].toUpperCase():""));}catch(e){}})();
 </script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -44,7 +44,7 @@
       "name": "Wat zijn de examenvragen over Systemen & Netwerken voor Informatica VWO?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Slagio biedt meer dan 15 oefenvragen specifiek voor Systemen & Netwerken (Informatica VWO), zowel meerkeuze als open CE-stijl vragen met modelantwoord. Alle vragen zijn gebaseerd op de officiële examenprogramma's."
+        "text": "Slagio biedt meer dan 130 oefenvragen specifiek voor Systemen & Netwerken (Informatica VWO), zowel meerkeuze als open CE-stijl vragen met modelantwoord. Alle vragen zijn gebaseerd op de officiële examenprogramma's."
       }
     },
     {
@@ -157,13 +157,13 @@
 
   <div class="card">
     <h2>Veelgestelde vragen</h2>
-    <div class="faq-item"><h3>Wat zijn de examenvragen over Systemen & Netwerken voor Informatica VWO?</h3><p>Slagio biedt meer dan 15 oefenvragen specifiek voor Systemen & Netwerken (Informatica VWO), zowel meerkeuze als open CE-stijl vragen met modelantwoord. Alle vragen zijn gebaseerd op de officiële examenprogramma's.</p></div><div class="faq-item"><h3>Hoe oefen ik domein B (Systemen & Netwerken) voor het Informatica VWO eindexamen?</h3><p>Via Slagio kun je direct starten met een snelle quiz over Systemen & Netwerken, spaced-repetition flashcards leren, of een open CE-vraag beantwoorden en vergelijken met het modelantwoord. Volledig gratis, geen account nodig.</p></div>
+    <div class="faq-item"><h3>Wat zijn de examenvragen over Systemen & Netwerken voor Informatica VWO?</h3><p>Slagio biedt meer dan 130 oefenvragen specifiek voor Systemen & Netwerken (Informatica VWO), zowel meerkeuze als open CE-stijl vragen met modelantwoord. Alle vragen zijn gebaseerd op de officiële examenprogramma's.</p></div><div class="faq-item"><h3>Hoe oefen ik domein B (Systemen & Netwerken) voor het Informatica VWO eindexamen?</h3><p>Via Slagio kun je direct starten met een snelle quiz over Systemen & Netwerken, spaced-repetition flashcards leren, of een open CE-vraag beantwoorden en vergelijken met het modelantwoord. Volledig gratis, geen account nodig.</p></div>
   </div>
 
   <div class="card">
     <h2>Wat kun je oefenen op Slagio?</h2>
     <ul class="domain-list">
-      <li>📝 <strong>Snelle Quiz</strong> — 10 meerkeuze-vragen, 20 seconden per vraag, directe feedback</li>
+      <li>📝 <strong>Snelle Quiz</strong> — 120 meerkeuze-vragen, 20 seconden per vraag, directe feedback</li>
       <li>📄 <strong>Open CE-vragen</strong> — echte examenopgaven met modelantwoord, zelf nakijken</li>
       <li>🃏 <strong>Flashcards</strong> — spaced repetition met SM-2 algoritme per domein</li>
       <li>📊 <strong>Simulatietoets</strong> — volledig CE-examen met timer en automatische cijferberekening</li>

@@ -188,15 +188,23 @@
     <span class="live-chip">● Live</span>
     <span class="topbar-time" id="clock"></span>
     <button class="tb-btn" onclick="loadAll()">↺ Vernieuwen</button>
+    <button class="tb-btn" id="tab-analytics" onclick="showTab('analytics')">📊 Analytics</button>
+    <button class="tb-btn" id="tab-curriculum" onclick="showTab('curriculum')">📚 Curriculum</button>
     <button class="tb-btn danger" onclick="logout()">Uitloggen</button>
   </div>
 
   <div class="body">
     <div id="content"><div class="loading"><span class="spinner"></span><br><br>Data laden…</div></div>
+    <div id="curr-view" style="display:none"><div class="loading">Curriculum laden…</div></div>
   </div>
 </div>
 
 <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.101.1/dist/umd/supabase.js" crossorigin="anonymous"></script>
+<!-- Curriculum-kennislaag (F1) — voor de Curriculum-tab -->
+<script src="/data-havo.meta.js"></script>
+<script src="/knowledge-havo.js"></script>
+<script src="/knowledge-koppeling-havo.js"></script>
+<script src="/curriculum-dash.js"></script>
 <script>
 const SB = window.supabase.createClient(
   'https://wcfenegohryxhatzxvtw.supabase.co',
@@ -238,6 +246,21 @@ if (authed()) {
 
 window._filter = window._filter || 'all';
 function init() { startClock(); loadAll(); }
+
+// ── Tabs: Analytics ↔ Curriculum ──
+function showTab(which) {
+  const isCur = which === 'curriculum';
+  document.getElementById('content').style.display = isCur ? 'none' : '';
+  document.getElementById('curr-view').style.display = isCur ? '' : 'none';
+  const ta = document.getElementById('tab-analytics'), tc = document.getElementById('tab-curriculum');
+  if (ta) ta.style.fontWeight = isCur ? '' : '800';
+  if (tc) tc.style.fontWeight = isCur ? '800' : '';
+  if (isCur && typeof renderCurriculumInto === 'function') {
+    renderCurriculumInto(document.getElementById('curr-view'), { lb: window._lb || [] });
+  } else if (isCur) {
+    document.getElementById('curr-view').innerHTML = '<div class="loading">Curriculum-kennislaag niet geladen.</div>';
+  }
+}
 
 function startClock() {
   const tick = () => document.getElementById('clock').textContent =
@@ -530,6 +553,27 @@ function render(lb, ev, evMissing, ao=[], fb=[], ql=[], ce=[]) {
   });
   const vakAbList=Object.entries(vakAbMap).map(([v,d])=>({vak:v,c:d.c,a:d.a,tot:d.c+d.a,pct:Math.round(d.a/(d.c+d.a)*100)})).filter(d=>d.tot>=2).sort((a,b)=>b.pct-a.pct).slice(0,8);
 
+  // ── Gemelde vragen (errata-lus) ──
+  const errata = ev.filter(e=>e.event_type==='vraag_fout');
+  const errataVakCount = {};
+  errata.forEach(e=>{const v=e.vak_naam||'?';errataVakCount[v]=(errataVakCount[v]||0)+1;});
+  const errataTopVak = Object.entries(errataVakCount).sort((a,b)=>b[1]-a[1]);
+  const _esc = s => String(s==null?'':s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+
+  // ── Retentie (cohort uit app_open per device/dag) — altijd volledige historie,
+  //    negeert het periodefilter zodat cohorts niet worden afgekapt. ──
+  const _aoAll = window._ao || ao;
+  const DAYMS = 86400000;
+  const _todayIdx = Math.floor(Date.now()/DAYMS);
+  const _devDays = {};
+  _aoAll.forEach(e=>{ const did=e.meta&&e.meta.did; if(!did)return; const day=Math.floor(new Date(e.created_at).getTime()/DAYMS); (_devDays[did]=_devDays[did]||new Set()).add(day); });
+  const _dids = Object.keys(_devDays);
+  const retRows = [1,3,7,14].map(o=>{ let denom=0,num=0; _dids.forEach(did=>{ const days=_devDays[did]; let first=Infinity; days.forEach(d=>{if(d<first)first=d;}); if(_todayIdx-first>=o){ denom++; if(days.has(first+o)) num++; } }); return {o,denom,num,pct:denom?Math.round(num/denom*100):0}; });
+  let arDenom=0, arNum=0;
+  _dids.forEach(did=>{ const days=[..._devDays[did]]; const first=Math.min(...days); if(_todayIdx-first>=1){ arDenom++; if(days.some(d=>d>first)) arNum++; } });
+  const anyReturnPct = arDenom?Math.round(arNum/arDenom*100):0;
+  const totalDevices = _dids.length;
+
   document.getElementById('content').innerHTML = `
 
     <!-- ── Tijdfilter ── -->
@@ -539,6 +583,23 @@ function render(lb, ev, evMissing, ao=[], fb=[], ql=[], ce=[]) {
       <button class="filter-btn ${window._filter==='7d'?'active':''}" onclick="window._filter='7d';render(window._lb,window._ev,window._evMissing,window._ao||[],window._fb||[],window._ql||[],window._ce||[])">Afgelopen 7 dagen</button>
       <button class="filter-btn ${window._filter==='24h'?'active':''}" onclick="window._filter='24h';render(window._lb,window._ev,window._evMissing,window._ao||[],window._fb||[],window._ql||[],window._ce||[])">Afgelopen 24 uur</button>
     </div>
+
+    <!-- ── Gemelde vragen (errata-lus) ── -->
+    <div class="sec">🚩 Gemelde vragen ${errata.length?`<span style="font-size:.8rem;color:var(--red);font-weight:800">${errata.length}</span>`:''}</div>
+    ${errata.length?`
+    <div class="panel">
+      <div class="panel-h">Leerlingen die "fout in deze vraag" meldden — nieuwste eerst</div>
+      <div style="display:flex;flex-wrap:wrap;gap:6px;padding:2px 0 10px">
+        ${errataTopVak.map(([v,n])=>`<span style="background:var(--card2);border:1px solid var(--border);border-radius:8px;padding:4px 9px;font-size:12px;color:var(--muted)"><b style="color:var(--fg)">${_esc(v)}</b> ${n}</span>`).join('')}
+      </div>
+      <div style="display:flex;flex-direction:column;gap:8px;max-height:420px;overflow-y:auto">
+        ${errata.slice(0,60).map(e=>{const m=e.meta||{};const dt=new Date(e.created_at).toLocaleDateString('nl-NL',{day:'numeric',month:'short'});return `<div style="background:var(--card2);border:1px solid var(--border);border-left:3px solid var(--red);border-radius:10px;padding:10px 12px">
+          <div style="font-size:11px;color:var(--muted);margin-bottom:4px"><b style="color:var(--fg)">${_esc(e.vak_naam||'?')}</b>${m.domein?' · '+_esc(m.domein):''}${m.mode?' · '+_esc(m.mode):''} · ${dt}${e.niveau?' · '+_esc(e.niveau):''}</div>
+          <div style="font-size:13px;color:var(--fg);line-height:1.4">${_esc(m.vraag||'(geen vraagtekst meegestuurd)')}</div>
+          ${m.correct!=null?`<div style="font-size:11px;color:var(--green);margin-top:4px">Als juist gemarkeerd: ${_esc(m.correct)}</div>`:''}
+        </div>`;}).join('')}
+      </div>
+    </div>`:`<div class="panel"><div style="padding:14px;color:var(--muted);font-size:13px">Nog geen meldingen. Leerlingen kunnen tijdens een quiz op 🚩 tikken om een foute vraag te melden.</div></div>`}
 
     <!-- ── CE-cijfers ── -->
     ${ce.length?`
@@ -555,6 +616,26 @@ function render(lb, ev, evMissing, ao=[], fb=[], ql=[], ce=[]) {
         ${Object.entries(ce.reduce((m,e)=>{const v=e.meta?.vak_naam||'?';if(!m[v])m[v]=[];m[v].push(e.meta?.cijfer||0);return m;},{})).sort((a,b)=>b[1].length-a[1].length).map(([v,arr])=>{const avg=(arr.reduce((s,c)=>s+c,0)/arr.length).toFixed(1);return `<div style="background:var(--card2);border:1px solid var(--border);border-radius:10px;padding:10px 14px;min-width:140px"><div style="font-size:11px;color:var(--muted);font-weight:700;margin-bottom:4px">${v}</div><div style="font-family:var(--font-head);font-size:22px;font-weight:800;color:${avg>=6?'var(--green)':avg>=5?'var(--yellow)':'var(--red)'}">${avg}</div><div style="font-size:11px;color:var(--muted)">${arr.length} leerling${arr.length!==1?'en':''}</div></div>`;}).join('')}
       </div>
     </div>`:''}
+
+    <!-- ── Retentie (komen leerlingen terug?) ── -->
+    <div class="sec">🔁 Retentie — komen leerlingen terug?</div>
+    ${totalDevices?`
+    <div class="kpi-grid">
+      <div class="kpi c-bl"><div class="kpi-lbl">Unieke devices</div><div class="kpi-val">${totalDevices.toLocaleString()}</div><div class="kpi-sub">met een app-open (hele historie)</div></div>
+      <div class="kpi c-gr"><div class="kpi-lbl">Kwam terug (≥1 dag later)</div><div class="kpi-val">${arDenom?anyReturnPct+'%':'–'}</div><div class="kpi-sub">${arDenom?`${arNum}/${arDenom} devices`:'te weinig historie'}</div></div>
+      ${retRows.slice(0,2).map(r=>`<div class="kpi c-or"><div class="kpi-lbl">D${r.o}-retentie</div><div class="kpi-val">${r.denom?r.pct+'%':'–'}</div><div class="kpi-sub">${r.denom?`${r.num}/${r.denom} actief op dag ${r.o}`:'te weinig historie'}</div></div>`).join('')}
+    </div>
+    <div class="panel" style="margin-top:.6rem">
+      <div class="panel-h">Retentiecurve — % van cohort nog actief N dagen ná het eerste bezoek</div>
+      <div style="display:flex;align-items:flex-end;gap:12px;height:130px;padding:10px 4px 0">
+        ${[{o:0,denom:totalDevices,num:totalDevices,pct:100},...retRows].map(r=>{const h=r.denom?Math.max(2,r.pct):2;return `<div style="flex:1;display:flex;flex-direction:column;align-items:center;justify-content:flex-end;gap:5px;height:100%">
+          <div style="font-size:11px;color:var(--muted);font-weight:800">${r.denom?r.pct+'%':'–'}</div>
+          <div style="width:100%;background:linear-gradient(180deg,var(--blue),var(--purple));border-radius:6px 6px 0 0;height:${h}%;min-height:3px"></div>
+          <div style="font-size:11px;color:var(--muted);font-weight:700">D${r.o}</div>
+        </div>`;}).join('')}
+      </div>
+      <div style="font-size:11px;color:var(--muted);padding:8px 4px 2px">Per dag-offset tellen alleen devices mee die lang genoeg geleden voor het eerst kwamen (geen vertekening door nieuwe bezoekers). Op basis van <code>app_open</code>-events per device (<code>meta.did</code>); volledige historie, negeert het periodefilter.</div>
+    </div>`:`<div class="panel"><div style="padding:14px;color:var(--muted);font-size:13px">Nog te weinig app-open-data met device-id om retentie te berekenen.</div></div>`}
 
     <!-- ── Mastery stats (adaptive engine) ── -->
     ${ql.length?`
@@ -1128,5 +1209,6 @@ CREATE POLICY "ev_select" ON events FOR SELECT USING (true);</div>
   window._rt = setTimeout(loadAll, 60000);
 }
 </script>
+<script src="/ico-swap.js"></script>
 </body>
 </html>

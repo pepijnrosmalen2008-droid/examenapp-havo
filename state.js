@@ -112,7 +112,7 @@ function show(id,_noHash){
   // Focus eerste heading voor screenreaders
   try{const _h=_sc.querySelector('h1,h2,h3,[role="heading"]');if(_h){_h.setAttribute('tabindex','-1');_h.focus({preventScroll:true});}}catch(e){}
   updateBottomNav(id);
-  tryPushAds(id);
+  try{if(typeof updateVonkCorner==='function')updateVonkCorner(id);}catch(e){}
   // URL bijwerken
   if(!_noHash){
     if(id==='sc-home'){
@@ -131,9 +131,11 @@ function show(id,_noHash){
     const dlist=document.getElementById('dlist');
     if(!dlist||!dlist.children.length){try{openVak(ST.vak.id,true);}catch(e){}return;}
   }
-  if(id==='sc-home'){try{renderComebackCard();}catch(e){}try{renderFeatDisc();}catch(e){}}
+  if(id==='sc-home'){try{renderComebackCard();}catch(e){}try{renderFeatDisc();}catch(e){}try{renderKlasHome();}catch(e){}
+    try{setTimeout(()=>{if(document.getElementById('sc-home')?.classList.contains('on')&&!document.querySelector('#ctuto-overlay[style*="block"]')&&typeof vonkOnboard==='function')vonkOnboard('home');},2000);}catch(e){}
+    try{setTimeout(()=>{if(document.getElementById('sc-home')?.classList.contains('on')&&localStorage.getItem('slagio_vonk_intro_done')&&typeof vonkDagmissie==='function')vonkDagmissie();},2600);}catch(e){}}
   if(id==='sc-schedule'&&localStorage.getItem('slagio_plan_generated')&&!document.getElementById('studieplan-content')?.children.length){try{renderStudieplan();}catch(e){}}
-  if(id==='sc-studieplan'){try{spInitPrefs();}catch(e){}if(localStorage.getItem('slagio_plan_generated')){try{renderStudieplan();}catch(e){}}}
+  if(id==='sc-studieplan'){try{spInitPrefs();}catch(e){}if(localStorage.getItem('slagio_plan_generated')){try{renderStudieplan();}catch(e){}}try{if(typeof renderFbStudieplanRow==='function')renderFbStudieplanRow();}catch(e){}try{setTimeout(()=>{if(typeof vonkOnboard==='function')vonkOnboard('studieplan');},900);}catch(e){}}
   // Welcome screen gets its own indigo theme; level pages get their own theme
   if(id==='sc-welcome'){
     document.documentElement.classList.remove('level-havo','level-vwo');
@@ -148,42 +150,9 @@ function show(id,_noHash){
   }
 }
 // Ads: push ads alleen op rustschermen, nooit tijdens quiz/flashcards
-// ═══════ COOKIE CONSENT & ADS ═══════
-const AD_SCREENS=['sc-home','sc-info','sc-res','sc-schedule','sc-calc'];
-const pushedAds=new Set();
-function getConsent(){return localStorage.getItem('examenapp_cookie_consent');}
-function cookieChoice(accepted){
-  localStorage.setItem('examenapp_cookie_consent',accepted?'accepted':'declined');
-  document.getElementById('cookie-banner').classList.remove('show');
-  if(accepted){loadAdsScript();tryPushAds(document.querySelector('.sc.on')?.id||'sc-home');}
-  else{hideAllAds();}
-}
-function cookieReset(){
-  localStorage.removeItem('examenapp_cookie_consent');
-  document.getElementById('cookie-banner').classList.add('show');
-}
-function hideAllAds(){document.querySelectorAll('.ad-wrapper').forEach(w=>w.style.display='none');}
-function showAllAds(){document.querySelectorAll('.ad-wrapper').forEach(w=>w.style.display='');}
-function loadAdsScript(){
-  if(document.querySelector('script[src*="adsbygoogle"]'))return;
-  const s=document.createElement('script');s.async=true;
-  s.src='https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3580526892359138';
-  s.crossOrigin='anonymous';document.head.appendChild(s);
-}
-function tryPushAds(screenId){
-  if(!AD_SCREENS.includes(screenId))return;
-  if(getConsent()!=='accepted'){hideAllAds();return;}
-  showAllAds();
-  try{const slots=document.querySelectorAll('#'+screenId+' .adsbygoogle');
-  slots.forEach(s=>{if(!pushedAds.has(s)){pushedAds.add(s);(adsbygoogle=window.adsbygoogle||[]).push({});}});}catch(e){}
-}
-// Init cookie consent
-(function(){
-  const c=getConsent();
-  if(!c){setTimeout(()=>{document.getElementById('cookie-banner').classList.add('show');},800);}
-  else if(c==='accepted'){loadAdsScript();}
-  else{hideAllAds();}
-})();
+// ═══════ THEME ═══════
+// Slagio toont geen advertenties en plaatst geen tracking-cookies. Alle
+// gegevens staan lokaal (localStorage); daarvoor is geen cookiebanner nodig.
 const ICON_MOON=`<svg viewBox="0 0 24 24"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>`;
 const ICON_SUN=`<svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>`;
 function toggleDark(){
@@ -372,7 +341,15 @@ function _hl(text,q){
   return (from>0?'…':'')+s.slice(from,i)+'<mark class="sb-res-mark">'+s.slice(i,i+q.length)+'</mark>'+s.slice(i+q.length,i+q.length+55)+(s.length>i+q.length+55?'…':'');
 }
 
+var _deepHydrated=false,_deepHydrating=false,_deepPendingQ='';
 function _showDeepResults(q,rawQ){
+  // Zoeken doorzoekt álle vragen van het niveau; die laden per vak, dus hydrateer
+  // ze eenmalig on-demand. Tot dat klaar is toont de zoeker de al-geladen vakken;
+  // daarna herdraait de zoekopdracht met de volledige set.
+  if(!_deepHydrated&&typeof ensureAllVakData==='function'&&typeof APP_LEVEL!=='undefined'){
+    _deepPendingQ=rawQ;
+    if(!_deepHydrating){_deepHydrating=true;ensureAllVakData(APP_LEVEL,function(){_deepHydrated=true;_deepHydrating=false;if(_deepPendingQ&&_deepPendingQ.trim().length>=2)filterGrid(_deepPendingQ);});}
+  }
   const vakken=getVK();
   const rVak=[],rDom=[];
   _sbData=[];

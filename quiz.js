@@ -32,9 +32,11 @@ function startQ(mode){
     if(hasJaar){openOEPicker();return;}
   }
   clearQuizDraft();
+  try{if(typeof ensureFbMeta==='function')ensureFbMeta();}catch(e){} // "Waarom fout?" alvast laden
   ST.mode=mode;
   ST.idx=0;ST.score=0;ST.antwrd=[];ST.tijdPerVraag=[];ST.combo=0;ST.xpThisRound=0;ST.flagged=new Set();
   if(!ST.isDailyChallenge)ST.isDailyChallenge=false;
+  ST.isFoutenboek=false;
   ST.adaptive=false;
   const pool=mode==='snel'?ST.domein.sv:ST.domein.oe;
   if(mode==='snel'){
@@ -152,6 +154,22 @@ function toggleFlagQ(){
   const btn=document.getElementById('quiz-flag-btn');
   if(btn)btn.classList.toggle('flagged',ST.flagged.has(i));
   haptic&&haptic([10]);
+}
+// Errata-lus: leerling meldt een foute vraag. Eén tik → gaat als 'vraag_fout'-event
+// naar het admin-dashboard (Gemelde vragen), waar het gecontroleerd kan worden.
+var _reportedQ=new Set();
+function reportQ(){
+  const q=ST.vragen&&ST.vragen[ST.idx];
+  if(!q){if(typeof showToast==='function')showToast('Geen vraag om te melden','#64748b');return;}
+  const key=((ST.vak&&ST.vak.id)||'')+'|'+((ST.domein&&ST.domein.id)||'')+'|'+((q.v||'').slice(0,60));
+  if(_reportedQ.has(key)){if(typeof showToast==='function')showToast('Deze vraag is al gemeld — bedankt!','#64748b');return;}
+  _reportedQ.add(key);
+  const correct=(q.o&&typeof q.c==='number')?q.o[q.c]:((q.a&&typeof q.c==='number')?q.a[q.c]:null);
+  try{if(typeof trackEvent==='function')trackEvent('vraag_fout',{domein:(ST.domein&&ST.domein.naam)||null,domein_id:(ST.domein&&ST.domein.id)||null,mode:ST.mode||null,vraag:(q.v||'').slice(0,240),correct:correct});}catch(e){}
+  haptic&&haptic([10,30,10]);
+  if(typeof showToast==='function')showToast('Bedankt! We controleren deze vraag. ✓','#22c55e');
+  const btn=document.getElementById('quiz-report-btn');
+  if(btn){btn.classList.add('reported');btn.setAttribute('title','Gemeld — bedankt!');}
 }
 function toonV(){
   const q=ST.vragen[ST.idx];
@@ -344,6 +362,13 @@ function _kiesReveal(gekozen,correct,btns){
   ST.tijdPerVraag.push(tijdOver);
   aqpRecord(ST.vragen[ST.idx], ok?1:0);
   ST.antwrd.push({pts:ok?1:0,chosenText:q.o[chosenOrigIdx],tijdOver});
+  try{if(typeof fbRecord==='function')fbRecord(q,ok,q.o[chosenOrigIdx]);}catch(e){}
+  // Vonk reageert kort: oeps bij fout, feest bij een goede reeks.
+  try{if(typeof vonkReact==='function'){
+    const _pk=a=>a[Math.floor(Math.random()*a.length)];
+    if(!ok)vonkReact('oeps',_pk(['Oeps!','Bijna!','Volgende keer!']));
+    else if(ST.combo>=3)vonkReact('feest',_pk(['Op dreef! 🔥','Goed bezig!','Yes!']));
+  }}catch(e){}
   saveQuizDraft();
   btns.forEach((b,i)=>{
     if(i===correct)b.classList.add('correct');
@@ -357,7 +382,8 @@ function _kiesReveal(gekozen,correct,btns){
     fb.innerHTML=`<div class="fbt"><svg class="fb-ic" viewBox="0 0 24 24" width="19" height="19" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Correct!</div>${_infoBtn}`;
   }else{
     const correctText=q.o[q.c]||'';
-    fb.innerHTML=`<div class="fbt"><svg class="fb-ic" viewBox="0 0 24 24" width="19" height="19" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 6 6 18M6 6l12 12"/></svg>Fout</div><div class="fbtx"><span class="fbtx-juist"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Juist:</span> ${correctText}</div>${_infoBtn}`;
+    const _whyWrong=(typeof fbWhyWrongHTML==='function')?fbWhyWrongHTML(q):'';
+    fb.innerHTML=`<div class="fbt"><svg class="fb-ic" viewBox="0 0 24 24" width="19" height="19" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 6 6 18M6 6l12 12"/></svg>Fout</div><div class="fbtx"><span class="fbtx-juist"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Juist:</span> ${correctText}</div>${_whyWrong}${_infoBtn}`;
   }
   const nxt=document.getElementById('qnxt');
   nxt.style.display='block';
@@ -370,6 +396,7 @@ function tijdOp(){
   ST.tijdPerVraag.push(0);
   aqpRecord(ST.vragen[ST.idx], 0);
   ST.antwrd.push({pts:0,chosenText:'⏱ Tijd was op',tijdOver:0});
+  try{if(typeof fbRecord==='function')fbRecord(q,false,null);}catch(e){}
   saveQuizDraft();
   const correct=ST.shuffleMap.indexOf(q.c);
   const btns=document.querySelectorAll('#snel-area .opt');
@@ -377,7 +404,8 @@ function tijdOp(){
   const fb=document.getElementById('qfb');
   fb.style.display='block';
   fb.className='qfb fbtm';
-  fb.innerHTML=`<div class="fbt" style="display:inline-flex;align-items:center;gap:7px">${ICO_CLOCK} Tijd is om!</div><div class="fbtx">${q.u}</div>`;
+  const _whyTO=(typeof fbWhyWrongHTML==='function')?fbWhyWrongHTML(q):'';
+  fb.innerHTML=`<div class="fbt" style="display:inline-flex;align-items:center;gap:7px">${ICO_CLOCK} Tijd is om!</div><div class="fbtx">${q.u}</div>${_whyTO}`;
   const nxt=document.getElementById('qnxt');
   nxt.style.display='block';
   nxt.textContent=ST.idx<((ST.adaptive?ST.aqTarget:ST.vragen.length)-1)?'Volgende →':'Bekijk resultaat →';
@@ -727,7 +755,7 @@ function renderProfileBadges(){
     sub.innerHTML=earned.length===0
       ?`<span style="color:var(--mu)">Maak quizzen om badges te verdienen</span>`
       :`<span style="color:var(--mu)">${earned.length} van ${ALL_BADGES.length} behaald · </span>`
-       +(selBadge?`<span style="color:var(--or);font-weight:700">${selBadge.emoji} ${selBadge.label} op avatar</span>`
+       +(selBadge?`<span style="color:var(--or);font-weight:700"><span class="no-ico">${selBadge.emoji}</span> ${selBadge.label} op avatar</span>`
                  :`<span style="color:var(--mu)">Klik een badge om te selecteren</span>`);
   }
   // Feature 6: badge progress data
@@ -795,7 +823,7 @@ function renderProfileBadges(){
             }
           }
           return `<div class="prof-badge-item badge-tooltip" data-tip="${tip}" ${clickAttr}>
-            <div class="prof-badge-circle ${isEarned?'earned rarity-'+b.rarity:'unearned'}${isSelected?' selected':''}">${b.emoji}${isSelected?'<span class="badge-selected-check">✓</span>':''}</div>
+            <div class="prof-badge-circle no-ico ${isEarned?'earned rarity-'+b.rarity:'unearned'}${isSelected?' selected':''}">${b.emoji}${isSelected?'<span class="badge-selected-check">✓</span>':''}</div>
             <div class="prof-badge-lbl ${isEarned?'earned':''}">${b.label}</div>
             ${isEarned?`<div class="prof-badge-rarity rarity-txt-${b.rarity}">${rarityLabel}</div>`:''}
             ${progHtml}
@@ -990,6 +1018,23 @@ function playSound(type){
         [659,988,1319,1568].forEach((f,i)=>T(ac,f,null,t+i*.08,.24,{type:'triangle',vol:.15,cut:4800,harm:.24,detune:5,rev:true}));
         T(ac,1976,null,t+.34,.4,{type:'sine',vol:.06,rev:true});
         break;
+      // ── Mini-clip (geanimeerde uitleg): subtiele, verhalende geluiden ──
+      case'clipRoll': // laag oplopend 'rollen' terwijl het deeltje de heuvel op klimt
+        T(ac,110,300,t,1.3,{type:'sawtooth',vol:.045,glide:.92,cut:620,q:.5,detune:8});
+        N(ac,t,1.15,{freq:180,vol:.012,q:.4});
+        break;
+      case'clipFail': // zachte dalende 'donk' als het terugrolt
+        T(ac,260,90,t,.5,{type:'sine',vol:.09,glide:.7,cut:520,detune:6});
+        N(ac,t,.14,{freq:150,vol:.03,q:.5});
+        break;
+      case'clipCatalyst': // heldere shimmer wanneer de katalysator-route verschijnt
+        T(ac,784,1568,t,.42,{type:'triangle',vol:.07,glide:.5,cut:6200,harm:.32,detune:6,rev:true});
+        T(ac,1176,2352,t+.06,.40,{type:'sine',vol:.045,glide:.5,rev:true});
+        break;
+      case'clipSuccess': // bevredigend opgelost akkoordje bij het bereiken van de producten
+        [523,784,1047].forEach((f,i)=>T(ac,f,null,t+i*.09,.30,{type:'triangle',vol:.15,cut:4200,harm:.26,detune:5,rev:true}));
+        T(ac,1568,null,t+.28,.5,{type:'sine',vol:.07,rev:true});
+        break;
       default: T(ac,560,860,t,.10,{type:'sine',vol:.09,glide:.4,harm:.16,detune:7,cut:2900});
     }
   }catch(e){}
@@ -1002,8 +1047,7 @@ document.addEventListener('DOMContentLoaded',()=>{
   try{renderDecayAlert();}catch(e){}
   try{renderExamAlert();}catch(e){}
 });
-window.addEventListener('offline',()=>{document.getElementById('offline-banner')?.classList.add('show');});
-window.addEventListener('online',()=>{document.getElementById('offline-banner')?.classList.remove('show');});
+// (offline-/online-indicator wordt centraal beheerd in lb.js — geen dubbele toggles hier)
 
 // ═══════ HAPTIC ═══════
 function haptic(pat){try{if(navigator.vibrate)navigator.vibrate(pat);}catch(e){}}
@@ -1160,72 +1204,19 @@ function toonRes(){
       const emoji=pct>=1?'🌟':pct>=0.9?'🔥':pct>=0.8?'🎯':pct>=0.7?'✅':'💪';
       const msg=pct>=1?'Perfecte score!':pct>=0.9?'Bijna perfect!':pct>=0.8?'Super gedaan!':pct>=0.7?'Goed bezig!':'Kun jij het beter?';
       const cta=pct>=0.8?'Stuur dit naar je klas 👇':'Daag je klas uit 👇';
-      shareCard.innerHTML=`<div style="background:linear-gradient(135deg,rgba(var(--or-rgb),.15),rgba(var(--or-rgb),.06));border:1px solid rgba(var(--or-rgb),.35);border-radius:16px;padding:16px 18px;margin:14px 0 6px;text-align:center">
-        <div style="font-size:28px;margin-bottom:4px">${emoji}</div>
-        <div style="font-size:18px;font-weight:900;color:var(--or);margin-bottom:2px">${pctNum}%</div>
-        <div style="font-size:13px;font-weight:700;color:var(--dk);margin-bottom:2px">${msg}</div>
-        <div style="font-size:12px;color:var(--mu);margin-bottom:12px">${cta}</div>
-        <button onclick="deelScore()" style="background:var(--or);color:#fff;border:none;border-radius:12px;padding:11px 24px;font-size:14px;font-weight:700;cursor:pointer;font-family:var(--font);width:100%;display:flex;align-items:center;justify-content:center;gap:8px"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"/><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"/></svg>Deel met je klas</button>
+      shareCard.innerHTML=`<div style="display:flex;align-items:center;gap:10px;background:linear-gradient(135deg,rgba(var(--or-rgb),.13),rgba(var(--or-rgb),.05));border:1px solid rgba(var(--or-rgb),.3);border-radius:14px;padding:9px 11px;margin:12px 0 4px">
+        <span style="font-size:22px;line-height:1;flex-shrink:0">${emoji}</span>
+        <div style="flex:1;min-width:0;text-align:left"><div style="font-size:13px;font-weight:800;color:var(--or);line-height:1.2">${pctNum}% · ${msg}</div></div>
+        <button onclick="deelScore()" style="background:var(--or);color:#fff;border:none;border-radius:10px;padding:9px 14px;font-size:13px;font-weight:700;cursor:pointer;font-family:var(--font);white-space:nowrap;display:flex;align-items:center;gap:6px;flex-shrink:0"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"/><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"/></svg>Delen</button>
       </div>`;
       rbdEl.insertAdjacentElement('afterend',shareCard);
     }
-    // Near-miss nudge
-    const missedCount=tot-Math.round(sc);
-    if(rbdEl&&pct>=0.8&&pct<1&&tot>=4&&missedCount<=2){
-      const nm=document.createElement('div');
-      nm.className='nearmiss-nudge';
-      nm.innerHTML=`<span>Bijna! Nog maar ${missedCount} ${missedCount===1?'fout':'fouten'}...</span><button onclick="retryQ()">Doe het opnieuw →</button>`;
-      rbdEl.insertAdjacentElement('afterend',nm);
-    }
-    // Persoonlijk record banner
-    if(rbdEl&&_recordResult&&_recordResult.isNewRecord&&sc>0){
-      const prevPct=_recordResult.prevBest>0?Math.round(_recordResult.prevBest/_recordResult.total*100):null;
-      const newPct=Math.round(sc/tot*100);
-      const rec=document.createElement('div');
-      rec.className='record-banner';
-      rec.innerHTML=`🏆 Nieuw persoonlijk record! ${prevPct!==null?prevPct+'% → ':''}<strong>${newPct}%</strong>`;
-      rbdEl.insertAdjacentElement('afterend',rec);
-      setTimeout(()=>{playSound('levelup');haptic([40,20,80,20,120]);},300);
-      if(earnAch('record1'))setTimeout(()=>showAch('🏆','Je eerste persoonlijk record!'),600);
-    }
-    // Feature 2: PB banner (for new PB from savePB)
-    if(window._newPB){
-      const pbEl=document.createElement('div');
-      pbEl.className='pb-banner';
-      const oldPctStr=window._oldPB!==null?`<div class="pb-prev">Vorige record: ${Math.round(window._oldPB*100)}% → nu ${Math.round(pct*100)}%</div>`:'';
-      pbEl.innerHTML=`🏆 Nieuw persoonlijk record!${oldPctStr}`;
-      const anchor=document.getElementById('rbd');
-      if(anchor)anchor.insertAdjacentElement('afterend',pbEl);
-    }
-    // Feature 3: Smart next action
-    try{
-      const naEl=document.getElementById('quiz-next-action');
-      if(naEl&&ST.vak&&ST.domein){
-        const na=getSmartNextAction(ST.vak.id,ST.domein.id,pct);
-        if(na){
-          let btnAttr='';
-          if(na.type==='retry')btnAttr=`onclick="retryQ()"`;
-          else if(na.type==='domain')btnAttr=`onclick="openVak('${ST.vak.id}');setTimeout(()=>{const el=document.querySelector('[data-domein-id=\\'${na.domeinId}\\']');if(el)el.scrollIntoView({behavior:'smooth'});},300)"`;
-          else if(na.type==='simtoets')btnAttr=`onclick="openVak('${ST.vak.id}')"`;
-          naEl.innerHTML=`<div class="next-action-card">
-            <div class="na-icon">${na.icon}</div>
-            <div class="na-info"><div class="na-label">${na.label}</div><div class="na-sub">${na.sub}</div></div>
-            <button class="na-btn" ${btnAttr}>Ga →</button>
-          </div>`;
-        }
-      }
-    }catch(e){}
-    // Show "next domain" button if there's a next domain
-    try{
-      const _ndb=document.getElementById('res-next-dom');
-      if(_ndb&&ST.vak&&ST.domein){
-        const _doms=ST.vak.domeinen;
-        const _idx=_doms.findIndex(d=>d.id===ST.domein.id);
-        const _next=_doms[_idx+1];
-        if(_next){_ndb.textContent=`→ Volgend: Domein ${_next.id} - ${_next.naam}`;_ndb.style.display='block';}
-        else _ndb.style.display='none';
-      }
-    }catch(e){}
+    // (Persoonlijk-record-banner verwijderd op verzoek — minder tegels op het resultaatscherm.)
+    // (Tweede PB-banner + losse "smart next action" + "volgend domein"-knop
+    //  verwijderd: die dubbelden met de record-banner hierboven en met de
+    //  one-more-kaart onderaan. Eén record-banner, één "wat nu"-kaart.)
+    const _ndb=document.getElementById('res-next-dom');if(_ndb)_ndb.style.display='none';
+    const _naEl=document.getElementById('quiz-next-action');if(_naEl)_naEl.innerHTML='';
   }catch(e){console.warn('toonRes display error:',e);}
   // XP reward
   try{
@@ -1307,7 +1298,7 @@ function toonRes(){
   try{
     const lbBtn=document.getElementById('lb-res-btn');
     const _regPrompt=document.getElementById('res-register-prompt');
-    if(ST.mode==='snel'){
+    if(ST.mode==='snel'&&!ST.isFoutenboek){
       const goed=ST.antwrd.filter(a=>a.pts===1).length;
       const tijden=ST.tijdPerVraag||[];
       const totalTijd=tijden.reduce((a,b)=>a+b,0);
@@ -1330,42 +1321,28 @@ function toonRes(){
       if(_regPrompt)_regPrompt.style.display='none';
     }
   }catch(e){console.warn('toonRes LB error:',e);}
+  // Dagmissie voltooid: elke afgeronde snelle quiz telt als dagmissie van vandaag.
+  try{if(ST.mode==='snel'&&typeof markDagmissieDone==='function')markDagmissieDone();}catch(e){}
+  // Examencoach: cijfer-indicatie + risico/winst na de sessie (elk vak met genoeg data)
+  try{
+    if(typeof renderExamCoach==='function'){
+      if(ST.vak&&(ST.mode==='snel'||ST.mode==='oud'))renderExamCoach(ST.vak.id);
+      else{const _rc=document.getElementById('res-coach');if(_rc)_rc.innerHTML='';}
+    }
+  }catch(e){}
   // B2: account prompt bottom sheet (first win, anonymous only)
   try{
-    if(!currentUser && ST.mode==='snel' && pct>=0.5 && !localStorage.getItem('slagio_reg_prompted')){
+    if(!currentUser && ST.mode==='snel' && !ST.isFoutenboek && pct>=0.5 && !localStorage.getItem('slagio_reg_prompted')){
       setTimeout(()=>_showRegPrompt(pct),1200);
     }
   }catch(e){}
-  // "Eén meer quiz" suggestie
-  try{
-    const omBox=document.getElementById('one-more-wrap');
-    if(omBox&&ST.mode==='snel'&&ST.vak){
-      const domeinen=ST.vak.domeinen||[];
-      const score=ST.score/ST.vragen.length;
-      // Als score <80%: opnieuw hetzelfde domein, anders: volgend domein
-      let sugDomein=null,sugLabel='';
-      if(score<0.8){
-        sugDomein=ST.domein;sugLabel='📖 Herhalen';
-      }else{
-        const cur=domeinen.findIndex(d=>d.id===ST.domein.id);
-        const nxt=domeinen.slice(cur+1).find(d=>d.sv&&d.sv.length);
-        if(nxt){sugDomein=nxt;sugLabel='➡️ Volgende domein';}
-      }
-      if(sugDomein){
-        omBox.innerHTML=`<div class="one-more-card" onclick="ST.vak=ST.vak;ST.domein=ST.vak.domeinen.find(d=>d.id==='${sugDomein.id}');startQ('snel')">
-          <div class="one-more-tag">${sugLabel}</div>
-          <div class="one-more-title">${sugDomein.naam}</div>
-          <div class="one-more-sub">${ST.vak.naam} · Snelle Quiz · ${sugDomein.sv?sugDomein.sv.length:0} vragen</div>
-          <div class="one-more-cta">Starten →</div>
-        </div>`;
-      }else{omBox.innerHTML='';}
-    }
-  }catch(e){if(document.getElementById('one-more-wrap'))document.getElementById('one-more-wrap').innerHTML='';}
+  // "Volgende domein"-kaart verwijderd op verzoek — minder tegels op het resultaatscherm.
+  try{const omBox=document.getElementById('one-more-wrap');if(omBox)omBox.innerHTML='';}catch(e){}
   try{renderAdaptiveResults();}catch(e){}
   try{renderChallengeResult();}catch(e){}
   show('sc-res');
   try{playSound('complete');}catch(e){}
-  if(ST.mode==='snel')setTimeout(()=>showFeedbackPopup('snel'),2500);
+  if(ST.mode==='snel'&&!ST.isFoutenboek)setTimeout(()=>showFeedbackPopup('snel'),2500);
 }
 
 function retryQ(){startQ(ST.mode);}
@@ -1432,7 +1409,7 @@ function renderHmQuickChips(){
   const chips=[
     {icon:'📅',label:'Studieplan',fn:()=>show('sc-schedule')},
     {icon:'📊',label:'Voortgang',fn:()=>openRapport()},
-    {icon:'📋',label:'Actieplan',fn:()=>{show('sc-calc');setTimeout(()=>switchCalc('plan'),100);}},
+    {icon:'📋',label:'Studieplan',fn:()=>{show('sc-studieplan');renderStudieplan();}},
     vakNaam
       ?{icon:'📄',label:`${vakNaam} examens`,fn:()=>openLastVakCE()}
       :{icon:'📄',label:'CE-examens',fn:()=>show('sc-schedule')},

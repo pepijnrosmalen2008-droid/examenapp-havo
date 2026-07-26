@@ -290,6 +290,9 @@ function renderStudieplan(){
   const MN=['jan','feb','mrt','apr','mei','jun','jul','aug','sep','okt','nov','dec'];
   const prefs=spGetPrefs();
   const BUDGET={0:0,1:30,2:50,3:70}; // minuten per dag per intensiteit
+  // Ingevoerde SE-cijfers: het studieplan weegt vakken met een laag cijfer zwaarder
+  // (samengevoegd vanuit het vroegere losse "Actieplan").
+  const spCijfers=(typeof getSavedCijfers==='function')?getSavedCijfers():{};
 
   // [icon, label, cssClass, mode, minutes]
   const ACTS={
@@ -300,9 +303,16 @@ function renderStudieplan(){
     herhaal: ['🔄','Herhalen',      'sp-act-herhaal', 'snel',10],
   };
 
+  // Foutenboek-regel: ALTIJD zichtbaar (3 eerlijke staten), één bron in foutenboek.js.
+  const fbSt=(typeof fbStats==='function')?fbStats():{total:0,open:0,due:0,mastered:0};
+  const fbDue=fbSt.due;
+  const fbMins=fbDue>0?Math.max(3,Math.round(fbDue*0.7)):0;
+  const fbCardHtml=(typeof fbStudieplanRowHTML==='function')?fbStudieplanRowHTML():'';
+  const fbBadge=fbDue>0?`<span class="sp-vandaag-badge">${fbDue} open</span>`:'';
+
   const upcoming=(typeof getUpcomingExams==='function'?getUpcomingExams():[]).filter(e=>e.vakId);
   if(!upcoming.length){
-    el.innerHTML='<div class="sp-empty">Geen aankomende examens.<br>Kies je vakken in het rooster, of vink je herkansing aan.</div>';
+    el.innerHTML=`<div class="sp-vandaag"><div class="sp-vandaag-header"><div class="sp-vandaag-title">📌 Vandaag</div>${fbBadge}</div>${fbCardHtml}</div><div class="sp-empty" style="margin-top:14px">Geen aankomende examens.<br>Kies je vakken in het rooster, of vink je herkansing aan.</div>`;
     return;
   }
 
@@ -328,11 +338,14 @@ function renderStudieplan(){
   const pool=[];
   Object.values(vakInfo).forEach(({vak,examD,daysLeft,domains})=>{
     const examDateStr=examD.toISOString().slice(0,10);
+    // Cijfer-boost: een laag SE-cijfer tilt alle domeinen van dat vak omhoog.
+    const _gr=spCijfers[vak.id];
+    const gradeBoost=_gr!=null?(_gr<5.5?1.9:_gr<6?1.6:_gr<7?1.3:1):1;
     domains.filter(d=>d.urgency<3).forEach(dom=>{
       spDomActivities(dom,dom.trend).forEach(actKey=>{
         const [,,,mode,mins]=ACTS[actKey];
         const urgFactor=[3,2,1][dom.urgency]??1;
-        const priority=(1-dom.pct)*urgFactor*100/Math.max(1,daysLeft)+(dom.trend==='down'?50:0);
+        const priority=((1-dom.pct)*urgFactor*100/Math.max(1,daysLeft)+(dom.trend==='down'?50:0))*gradeBoost;
         pool.push({priority,vakId:vak.id,vakNaam:vak.naam,domId:dom.id,domNaam:dom.naam,
           actKey,mins,mode,examDateStr,daysLeft,pct:dom.pct,hasData:dom.hasData});
       });
@@ -444,16 +457,21 @@ function renderStudieplan(){
       <div class="sp-vandaag-header">
         <div class="sp-vandaag-title">📌 Vandaag</div>
         <div style="display:flex;align-items:center;gap:8px">
-          <span class="sp-task-card-time" style="font-size:12px">~${todayMins} min</span>
-          ${allDoneToday?'<span style="font-size:12px;color:#22c55e;font-weight:700;background:rgba(34,197,94,.12);padding:2px 9px;border-radius:20px;border:1px solid rgba(34,197,94,.2)">✓ Klaar!</span>':`<span class="sp-vandaag-badge">${todayOpenTasks.length} open</span>`}
+          <span class="sp-task-card-time" style="font-size:12px">~${todayMins+fbMins} min</span>
+          ${allDoneToday&&!fbDue?'<span style="font-size:12px;color:#22c55e;font-weight:700;background:rgba(34,197,94,.12);padding:2px 9px;border-radius:20px;border:1px solid rgba(34,197,94,.2)">✓ Klaar!</span>':`<span class="sp-vandaag-badge">${todayOpenTasks.length+(fbDue?1:0)} open</span>`}
         </div>
       </div>
-      ${cards}
+      ${fbCardHtml}${cards}
     </div>`;
-  } else if(allPlanTasks.length>0){
-    vandaagHtml=`<div class="sp-vandaag" style="text-align:center;padding:18px 16px">
-      <div class="sp-vandaag-title" style="margin-bottom:6px">📌 Vandaag</div>
-      <div style="font-size:13px;color:var(--mu)">🌴 Vrije dag - goed verdiend!</div>
+  } else {
+    // Geen plan-taken vandaag: toon de Foutenboek-regel + (bij een vrije dag) een notitie.
+    const vrijNote=allPlanTasks.length>0?`<div style="font-size:13px;color:var(--mu);text-align:center;padding:6px 0 2px">🌴 Verder een vrije dag - goed verdiend!</div>`:'';
+    vandaagHtml=`<div class="sp-vandaag">
+      <div class="sp-vandaag-header">
+        <div class="sp-vandaag-title">📌 Vandaag</div>
+        ${fbBadge}
+      </div>
+      ${fbCardHtml}${vrijNote}
     </div>`;
   }
 
@@ -548,7 +566,35 @@ function renderStudieplan(){
   });
   masteryHtml+='</div>';
 
-  el.innerHTML=vandaagHtml+summaryHtml+calHtml+masteryHtml;
+  // ── Vonk stemt het plan af op je cijfers (geïntegreerd, geen los actieplan) ──
+  const _hasCijfers=Object.keys(spCijfers).length>0;
+  const _vonkFig=m=>(typeof mascotSVG==='function')?`<div class="sp-vonk-fig">${mascotSVG(m,72)}</div>`:'';
+  let prioHtml='';
+  if(!_hasCijfers){
+    prioHtml=`<div class="sp-vonk">${_vonkFig('denk')}
+      <div class="sp-vonk-body">
+        <div class="sp-vonk-name">Vonk</div>
+        <div class="sp-vonk-say">Ik ken je cijfers nog niet. Voer ze in bij je profiel, dan maak ik een nauwkeuriger plan dat je stuurt naar de vakken waar je de meeste punten kunt winnen.</div>
+        <button class="sp-vonk-btn" onclick="goToCijferInvoer()">Cijfers invoeren →</button>
+      </div>
+    </div>`;
+  }else{
+    // Bepaal het zwaarst wegende vak (laagste SE onder de 7) voor een gerichte tip.
+    let _top=null;
+    getVK().forEach(v=>{const se=spCijfers[v.id];if(se!=null&&se<7&&(_top===null||se<_top.se))_top={v,se};});
+    const say=_top
+      ? `Ik heb je plan afgestemd op je cijfers. <strong>${_top.v.naam}</strong> (SE ${_top.se.toFixed(1).replace('.',',')}) weegt nu het zwaarst, dus die zie je vaker terug in je dagtaken.`
+      : `Ik heb je plan afgestemd op je cijfers. Je staat overal ruim voldoende, dus ik houd het plan lekker in balans.`;
+    prioHtml=`<div class="sp-vonk">${_vonkFig(_top?'kijk':'blij')}
+      <div class="sp-vonk-body">
+        <div class="sp-vonk-name">Vonk</div>
+        <div class="sp-vonk-say">${say}</div>
+      </div>
+    </div>`;
+  }
+
+  el.innerHTML=vandaagHtml+prioHtml+summaryHtml+calHtml+masteryHtml;
+  try{if(typeof renderFbStudieplanRow==='function')renderFbStudieplanRow();}catch(e){} // top-container legen (regel zit nu in Vandaag)
   localStorage.setItem('slagio_plan_generated','1');
   if(todayAllTasks.length)setTimeout(()=>document.querySelector('.sp-vandaag')?.scrollIntoView({behavior:'smooth',block:'nearest'}),120);
   const btn=document.getElementById('sp-gen-btn');
