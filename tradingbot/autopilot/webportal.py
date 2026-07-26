@@ -29,6 +29,10 @@ log = logging.getLogger("autopilot.portal")
 EQUITY_POINTS = 200  # punten in de curve die naar het portaal gaat
 
 
+class PortalAuthError(RuntimeError):
+    """Supabase weigerde de login (bv. verkeerde credentials of gepauzeerd project)."""
+
+
 class Portal:
     def __init__(self, url: str, anon_key: str, email: str, password: str,
                  session=None):
@@ -40,6 +44,7 @@ class Portal:
         self._token: str | None = None
         self._token_exp = 0.0
         self.user_id: str | None = None
+        self._last_warn = 0.0   # throttle voor herhaalde login-waarschuwingen
 
     # ── auth ──────────────────────────────────────────────────────────
 
@@ -48,7 +53,17 @@ class Portal:
             f"{self.url}/auth/v1/token?grant_type=password",
             json={"email": self.email, "password": self.password},
             headers={"apikey": self.key, "Content-Type": "application/json"}, timeout=10)
-        r.raise_for_status()
+        try:
+            r.raise_for_status()
+        except Exception as e:  # noqa: BLE001 — verrijk met de Supabase-reden
+            reason = ""
+            try:
+                j = r.json()
+                reason = j.get("error_description") or j.get("msg") or j.get("error") or ""
+            except (ValueError, AttributeError):
+                reason = getattr(r, "text", "")[:200]
+            status = getattr(r, "status_code", "?")
+            raise PortalAuthError(f"portaal-login geweigerd ({status}): {reason or e}") from e
         d = r.json()
         self._token = d["access_token"]
         self._token_exp = time.time() + float(d.get("expires_in", 3600)) - 120
@@ -305,6 +320,21 @@ def build_portal() -> Portal | None:
     return Portal(url, key, email, password)
 
 
+def _portal_problem(portal: Portal, what: str, err: Exception) -> None:
+    """Rustig, informatief loggen bij een portaalstoring — geen stacktrace-muur, en
+    nadrukkelijk: de handel gaat gewoon door (het portaal is puur observatie)."""
+    if isinstance(err, PortalAuthError):
+        # verwacht/actiegericht (verkeerde credentials, gepauzeerd project): throttle tot 1×/15 min
+        now = time.time()
+        if now - portal._last_warn > 900:
+            portal._last_warn = now
+            log.warning("webportaal: %s — %s. TRADING DRAAIT NORMAAL DOOR; alleen "
+                        "slagio.nl/bot.html wordt niet bijgewerkt. Controleer BOT_PORTAL_EMAIL/"
+                        "PASSWORD in .env en of het Supabase-project actief is.", what, err)
+    else:
+        log.warning("webportaal: %s (%s); trading gaat door, volgende cycle opnieuw", what, err)
+
+
 def portal_tick(portal: Portal | None, engine, db: Database, cfg, mode: str) -> None:
     """Eén sync-ronde na elke cycle. Mag nooit een exception doorlaten."""
     if portal is None:
@@ -312,8 +342,8 @@ def portal_tick(portal: Portal | None, engine, db: Database, cfg, mode: str) -> 
     bot_id = cfg.bot_id
     try:
         portal.sync_state(build_payload(db, cfg, mode), bot_id)
-    except Exception:  # noqa: BLE001
-        log.exception("portal: state-sync mislukt (volgende cycle opnieuw)")
+    except Exception as e:  # noqa: BLE001
+        _portal_problem(portal, "state-sync mislukt", e)
     try:
         for cmd in portal.pending_commands(bot_id):
             if cmd["command"] == "emergency_stop":
@@ -325,5 +355,5 @@ def portal_tick(portal: Portal | None, engine, db: Database, cfg, mode: str) -> 
             else:
                 log.warning("portal: onbekend commando %r genegeerd", cmd["command"])
                 portal.mark_handled(cmd["id"])
-    except Exception:  # noqa: BLE001
-        log.exception("portal: commando-check mislukt (volgende cycle opnieuw)")
+    except Exception as e:  # noqa: BLE001
+        _portal_problem(portal, "commando-check mislukt", e)
