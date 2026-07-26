@@ -224,6 +224,7 @@ async function _klasProbe(){
   try{ renderKlasHome(); }catch(e){}
 }
 function renderKlasHome(){
+  try{ renderKlasHuiswerk(); }catch(e){}
   const el = document.getElementById('klas-home');
   if(!el) return;
   const k = getActiveKlas();
@@ -243,6 +244,30 @@ function renderKlasHome(){
     el.innerHTML = '';
     if(_klasEnabled === null) _klasProbe();
   }
+}
+
+// ── Huiswerk van de docent (één-klik oefenset) op de home ────────────
+async function renderKlasHuiswerk(){
+  const el = document.getElementById('klas-huiswerk-home');
+  if(!el) return;
+  const k = getActiveKlas();
+  if(!k || !k.id || _klasEnabled===false){ el.innerHTML=''; return; }
+  try{
+    const rows = await _klasRpc('klas_huiswerk_get', { p_klas_id:k.id });
+    if(!rows || !rows.length){ el.innerHTML=''; return; }
+    const hw = Array.isArray(rows)?rows[0]:rows;
+    let act = 'openKlas()';
+    const vakken = (typeof getVK==='function')?getVK():[];
+    const vak = vakken.find(v=>v.naam===hw.vak) || vakken.find(v=>v.id===k.vakId);
+    if(vak){
+      const dom = (vak.domeinen||[]).find(d=>d.naam===hw.domein);
+      act = (dom && typeof goToDomein==='function') ? `goToDomein('${vak.id}','${dom.id}','snel')` : `openVak('${vak.id}')`;
+    }
+    el.innerHTML = `<div class="klas-home-card klas-home-hw" onclick="${act}" role="button" tabindex="0">
+      <div class="klas-home-ico">📌</div>
+      <div class="klas-home-txt"><div class="klas-home-t">Huiswerk van je docent</div><div class="klas-home-s">Oefen ${_esc(hw.domein||hw.vak||'de opgegeven stof')} →</div></div>
+      <div class="klas-home-arr">→</div></div>`;
+  }catch(e){ el.innerHTML=''; }
 }
 
 function _esc(s){ return String(s==null?'':s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c])); }
