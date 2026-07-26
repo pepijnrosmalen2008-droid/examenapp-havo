@@ -139,6 +139,7 @@ function _klasSkeleton(k){
       <div class="klas-code-lbl">Klascode — deel deze met je leerlingen</div>
       <div class="klas-code-big" id="klas-code-big">${k.code}</div>
       <button class="klas-btn klas-btn-ghost" onclick="klasDeel()">📤 Code delen / kopiëren</button>
+      <a class="klas-btn klas-btn-primary" href="/docent.html?code=${encodeURIComponent(k.code)}" target="_blank" rel="noopener" style="display:block;text-align:center;text-decoration:none;margin-top:8px">📊 Open docentendashboard</a>
     </div>` : '';
   return `
   <div class="klas-head">

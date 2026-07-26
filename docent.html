@@ -1,0 +1,313 @@
+<!doctype html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Slagio · Docentendashboard</title>
+<link rel="icon" href="/icon-192.png">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@700;800;900&display=swap" rel="stylesheet">
+<style>
+:root{
+  --or:#f2760c;--or-rgb:242,118,12;
+  --fh:'Nunito',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  --bg:#f4f5f8;--s:#ffffff;--dk:#1e1b2e;--mu:#6b7280;--bo:#e6e6ef;--bg2:#eef0f5;
+  --red:#ef4444;--amber:#f59e0b;--green:#22c55e;--indigo:#6366f1;
+  --font:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;
+}
+@media(prefers-color-scheme:dark){:root{--bg:#0f1117;--s:#171a22;--dk:#f3f4f6;--mu:#9aa1ad;--bo:#272b36;--bg2:#1d2029}}
+*{box-sizing:border-box}
+body{margin:0;font-family:var(--font);background:var(--bg);color:var(--dk);-webkit-font-smoothing:antialiased}
+.brand,.connect h1,.card-h h2,.kpi-val,.heat-pct,.weak-pct,.kpi-val{font-family:var(--fh);letter-spacing:-.2px}
+a{color:var(--or)}
+.wrap{max-width:1140px;margin:0 auto;padding:20px 18px 60px}
+/* top bar */
+.top{display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin-bottom:20px}
+.brand{display:flex;align-items:center;gap:10px;font-weight:800;font-size:17px}
+.brand img{width:32px;height:32px;border-radius:9px}
+.brand small{display:block;font-size:11px;font-weight:600;color:var(--mu);letter-spacing:.3px}
+.top-right{margin-left:auto;display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+.klas-pill{display:flex;align-items:center;gap:8px;background:var(--s);border:1px solid var(--bo);border-radius:12px;padding:8px 12px;font-size:13px;font-weight:700}
+.klas-pill b{color:var(--or)}
+.btn{border:none;border-radius:11px;padding:10px 16px;font-family:var(--font);font-weight:700;font-size:13px;cursor:pointer;transition:transform .12s,filter .15s}
+.btn:active{transform:scale(.97)}
+.btn-p{background:var(--or);color:#fff;box-shadow:0 4px 14px rgba(var(--or-rgb),.3)}
+.btn-g{background:var(--s);color:var(--dk);border:1px solid var(--bo)}
+/* connect card */
+.connect{max-width:440px;margin:8vh auto 0;background:var(--s);border:1px solid var(--bo);border-radius:20px;padding:30px 26px;text-align:center;box-shadow:0 10px 40px rgba(16,24,40,.06)}
+.connect h1{font-size:22px;margin:14px 0 6px}
+.connect p{color:var(--mu);font-size:14px;line-height:1.55;margin:0 0 20px}
+.connect .code-in{width:100%;text-align:center;letter-spacing:4px;font-size:22px;font-weight:800;text-transform:uppercase;padding:14px;border:1.5px solid var(--bo);border-radius:14px;background:var(--bg2);color:var(--dk);font-family:var(--font);margin-bottom:12px;outline:none}
+.connect .code-in:focus{border-color:var(--or)}
+.connect .btn-p{width:100%;padding:14px}
+.connect .demo{margin-top:14px;font-size:13px;color:var(--mu)}
+.connect .demo a{cursor:pointer;font-weight:700}
+.msg{font-size:13px;margin-top:12px;min-height:18px}
+.msg.err{color:var(--red)}
+.msg.info{color:var(--mu)}
+/* KPI row */
+.kpis{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-bottom:16px}
+.kpi{background:var(--s);border:1px solid var(--bo);border-radius:16px;padding:15px 16px;position:relative;overflow:hidden}
+.kpi-lbl{font-size:12px;font-weight:600;color:var(--mu)}
+.kpi-val{font-size:28px;font-weight:800;margin-top:4px;line-height:1}
+.kpi-sub{font-size:11.5px;color:var(--mu);margin-top:5px}
+.kpi-ic{position:absolute;top:14px;right:14px;font-size:20px;opacity:.9}
+/* grid layout */
+.grid{display:grid;grid-template-columns:1.6fr 1fr;gap:16px;align-items:start}
+.card{background:var(--s);border:1px solid var(--bo);border-radius:16px;padding:18px}
+.card-h{display:flex;align-items:center;justify-content:space-between;margin-bottom:4px}
+.card-h h2{font-size:15px;margin:0}
+.card-h .hint{font-size:11.5px;color:var(--mu)}
+.card-sub{font-size:12.5px;color:var(--mu);margin:0 0 14px}
+/* domein heatmap */
+.heat{display:grid;grid-template-columns:repeat(auto-fill,minmax(112px,1fr));gap:8px}
+.heat-cell{border-radius:11px;padding:10px;border:1px solid var(--bo);position:relative;min-height:64px;display:flex;flex-direction:column;justify-content:space-between}
+.heat-vak{font-size:10px;font-weight:700;color:var(--mu);text-transform:uppercase;letter-spacing:.3px}
+.heat-dom{font-size:12px;font-weight:700;line-height:1.2}
+.heat-pct{font-size:16px;font-weight:800;margin-top:3px}
+/* weak list */
+.weak{display:flex;flex-direction:column;gap:9px}
+.weak-row{display:flex;align-items:center;gap:11px;padding:10px 12px;border-radius:12px;background:var(--bg2)}
+.weak-dot{width:9px;height:9px;border-radius:50%;flex-shrink:0}
+.weak-info{flex:1;min-width:0}
+.weak-dom{font-size:13.5px;font-weight:700}
+.weak-meta{font-size:11.5px;color:var(--mu);margin-top:1px}
+.weak-pct{font-weight:800;font-size:15px;flex-shrink:0}
+/* engagement */
+.eng-bar{height:12px;border-radius:8px;background:var(--bg2);overflow:hidden;display:flex;margin:10px 0 8px}
+.eng-fill{background:var(--green);height:100%}
+.eng-legend{display:flex;justify-content:space-between;font-size:12px;color:var(--mu)}
+.eng-legend b{color:var(--dk)}
+.inactief{margin-top:14px}
+.inactief-t{font-size:12px;font-weight:700;color:var(--mu);margin-bottom:7px}
+.chip{display:inline-block;font-size:12px;font-weight:600;background:rgba(239,68,68,.1);color:var(--red);border:1px solid rgba(239,68,68,.25);border-radius:20px;padding:3px 10px;margin:0 5px 6px 0}
+/* activity sparkline */
+.spark{display:flex;align-items:flex-end;gap:4px;height:70px;margin-top:6px}
+.spark-bar{flex:1;background:linear-gradient(180deg,var(--or),#f9a45a);border-radius:4px 4px 0 0;min-height:3px;position:relative}
+.spark-x{display:flex;gap:4px;margin-top:6px}
+.spark-x span{flex:1;text-align:center;font-size:9px;color:var(--mu)}
+/* roster table */
+.tbl-wrap{overflow-x:auto;margin-top:4px}
+table{width:100%;border-collapse:collapse;font-size:13.5px}
+th{text-align:left;font-size:11px;font-weight:700;color:var(--mu);text-transform:uppercase;letter-spacing:.3px;padding:8px 10px;border-bottom:1px solid var(--bo)}
+td{padding:11px 10px;border-bottom:1px solid var(--bo)}
+tr:last-child td{border-bottom:none}
+.st-naam{font-weight:700}
+.st-bar{width:82px;height:7px;border-radius:5px;background:var(--bg2);overflow:hidden;display:inline-block;vertical-align:middle;margin-right:8px}
+.st-bar i{display:block;height:100%;border-radius:5px}
+.st-inact{color:var(--red);font-weight:600}
+.footer{margin-top:26px;font-size:12px;color:var(--mu);text-align:center;line-height:1.6}
+@media(max-width:820px){.kpis{grid-template-columns:repeat(2,1fr)}.grid{grid-template-columns:1fr}}
+.hidden{display:none!important}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <!-- CONNECT -->
+  <div id="connect" class="connect">
+    <img src="/icon-192.png" width="52" height="52" style="border-radius:14px" alt="Slagio">
+    <h1>Docentendashboard</h1>
+    <p>Voer je klascode in om te zien hoe je klas ervoor staat: beheersing per domein, wie oefent, en welke onderwerpen je het beste klassikaal herhaalt.</p>
+    <input id="code-in" class="code-in" maxlength="6" placeholder="KLASCODE" oninput="this.value=this.value.toUpperCase().replace(/[^A-Z0-9]/g,'')">
+    <button class="btn btn-p" onclick="connect()">Dashboard openen →</button>
+    <div id="connect-msg" class="msg info"></div>
+    <div class="demo">Nog geen klas? <a onclick="loadDemo()">Bekijk een voorbeeld →</a></div>
+  </div>
+
+  <!-- DASHBOARD -->
+  <div id="dash" class="hidden">
+    <div class="top">
+      <div class="brand"><img src="/icon-192.png" alt="Slagio"><div>Slagio<small>Docentendashboard</small></div></div>
+      <div class="top-right">
+        <div class="klas-pill" id="klas-pill"></div>
+        <button class="btn btn-g" onclick="refresh()">↻ Vernieuwen</button>
+        <button class="btn btn-g" onclick="location.reload()">Andere klas</button>
+      </div>
+    </div>
+    <div id="demo-note" class="hidden" style="background:rgba(var(--or-rgb),.09);border:1px solid rgba(var(--or-rgb),.3);border-radius:12px;padding:10px 14px;font-size:13px;margin-bottom:16px">
+      👀 <b>Voorbeeldweergave</b> met verzonnen data — zo ziet je dashboard eruit zodra je klas oefent.
+    </div>
+
+    <div class="kpis" id="kpis"></div>
+
+    <div class="grid">
+      <div style="display:flex;flex-direction:column;gap:16px">
+        <div class="card">
+          <div class="card-h"><h2>Beheersing per domein</h2><span class="hint">klasgemiddelde</span></div>
+          <p class="card-sub">Rood = de klas heeft dit domein nog niet onder de knie. Groen = zit goed.</p>
+          <div class="heat" id="heat"></div>
+        </div>
+        <div class="card">
+          <div class="card-h"><h2>Leerlingen</h2><span class="hint" id="roster-count"></span></div>
+          <div class="tbl-wrap"><table>
+            <thead><tr><th>Leerling</th><th>Laatst actief</th><th>Sessies</th><th>Punten</th><th>Beheersing</th></tr></thead>
+            <tbody id="roster"></tbody>
+          </table></div>
+        </div>
+      </div>
+      <div style="display:flex;flex-direction:column;gap:16px">
+        <div class="card">
+          <div class="card-h"><h2>🎯 Klassikaal herhalen</h2></div>
+          <p class="card-sub">De domeinen waar je klas de meeste winst kan pakken.</p>
+          <div class="weak" id="weak"></div>
+        </div>
+        <div class="card">
+          <div class="card-h"><h2>Betrokkenheid</h2><span class="hint">deze week</span></div>
+          <div class="eng-bar"><div class="eng-fill" id="eng-fill"></div></div>
+          <div class="eng-legend"><span><b id="eng-act">0</b> actief</span><span><b id="eng-inact">0</b> inactief</span></div>
+          <div class="inactief" id="inactief-wrap">
+            <div class="inactief-t">Nog niet actief deze week — even aansporen:</div>
+            <div id="inactief"></div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-h"><h2>Activiteit</h2><span class="hint">afgelopen 14 dagen</span></div>
+          <div class="spark" id="spark"></div>
+          <div class="spark-x" id="spark-x"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer">
+      Alleen voornamen en klasgemiddelden worden getoond. Slagio · <a href="/">slagio.nl</a>
+    </div>
+  </div>
+
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.101.1/dist/umd/supabase.js"></script>
+<script>
+const SUPABASE_URL='https://wcfenegohryxhatzxvtw.supabase.co';
+const SUPABASE_KEY='eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6IndjZmVuZWdvaHJ5eGhhdHp4dnR3Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODEyODcwMDAsImV4cCI6MjA5Njg2MzAwMH0.B3ygpkosBybQd53VLiRxqIbVxBPWw4V-Nj2IS3k4UFo';
+const SB = window.supabase ? window.supabase.createClient(SUPABASE_URL,SUPABASE_KEY) : null;
+let _lastCode=null;
+
+function esc(s){return String(s==null?'':s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));}
+function pctCol(p){return p>=0.75?'var(--green)':p>=0.5?'var(--amber)':'var(--red)';}
+function heatBg(p){const a=.14;return p>=0.75?`rgba(34,197,94,${a})`:p>=0.5?`rgba(245,158,11,${a})`:`rgba(239,68,68,${a})`;}
+function agoTxt(d){if(d==null)return '—';if(d<=0)return 'vandaag';if(d===1)return 'gisteren';if(d<7)return d+' dagen';if(d<14)return '1 week';return Math.floor(d/7)+' weken';}
+
+async function connect(){
+  const code=(document.getElementById('code-in').value||'').trim().toUpperCase();
+  const msg=document.getElementById('connect-msg');
+  msg.className='msg info';msg.textContent='';
+  if(code.length<4){msg.className='msg err';msg.textContent='Vul je klascode in (min. 4 tekens).';return;}
+  if(!SB){msg.className='msg err';msg.textContent='Kon geen verbinding maken. Ververs de pagina.';return;}
+  msg.textContent='Laden…';
+  try{
+    const {data,error}=await SB.rpc('klas_dashboard',{p_code:code});
+    if(error) throw error;
+    const d=Array.isArray(data)?data[0]:data;
+    if(!d||!d.klas){msg.className='msg err';msg.textContent='Klas niet gevonden. Controleer de code.';return;}
+    _lastCode=code;
+    render(d,false);
+  }catch(e){
+    const m=String(e?.message||e).toLowerCase();
+    if(m.includes('does not exist')||m.includes('could not find')||m.includes('schema cache')||e?.code==='PGRST202'){
+      msg.className='msg err';
+      msg.innerHTML='Het dashboard is nog niet geactiveerd in Supabase. Draai eerst <code>sql/klas-dashboard.sql</code>.';
+    }else{
+      msg.className='msg err';msg.textContent='Er ging iets mis. Probeer het opnieuw.';
+    }
+  }
+}
+async function refresh(){ if(_lastCode){document.getElementById('code-in').value=_lastCode;connect();} }
+
+function render(d,demo){
+  document.getElementById('connect').classList.add('hidden');
+  document.getElementById('dash').classList.remove('hidden');
+  document.getElementById('demo-note').classList.toggle('hidden',!demo);
+  const k=d.klas;
+  document.getElementById('klas-pill').innerHTML=`${esc(k.naam)} · <b>${esc(k.code||'')}</b>`;
+  // KPIs
+  const gem=k.gem_beheersing!=null?Math.round(k.gem_beheersing*100):'—';
+  const act=(d.leerlingen||[]).filter(s=>s.laatst_actief_dagen!=null&&s.laatst_actief_dagen<7).length;
+  document.getElementById('kpis').innerHTML=[
+    ['👥','Leerlingen',k.leden,'in deze klas'],
+    ['✅','Actief deze week',act+' / '+k.leden,'hebben geoefend'],
+    ['🎯','Gem. beheersing',gem+'%','klasgemiddelde'],
+    ['⚡','Sessies deze week',k.sessies_week??'—','oefensessies']
+  ].map(x=>`<div class="kpi"><div class="kpi-ic">${x[0]}</div><div class="kpi-lbl">${x[1]}</div><div class="kpi-val">${x[2]}</div><div class="kpi-sub">${x[3]}</div></div>`).join('');
+  // Heatmap
+  const doms=(d.domeinen||[]).slice().sort((a,b)=>a.gem-b.gem);
+  document.getElementById('heat').innerHTML = doms.length? doms.map(dm=>`
+    <div class="heat-cell" style="background:${heatBg(dm.gem)};border-color:${pctCol(dm.gem)}33">
+      <div><div class="heat-vak">${esc(dm.vak)}</div><div class="heat-dom">${esc(dm.domein)}</div></div>
+      <div class="heat-pct" style="color:${pctCol(dm.gem)}">${Math.round(dm.gem*100)}%</div>
+    </div>`).join('') : '<p style="color:var(--mu);font-size:13px">Nog geen oefendata. Zodra je klas oefent, verschijnt hier de beheersing per domein.</p>';
+  // Weak list (reteach)
+  const weak=doms.slice(0,5);
+  document.getElementById('weak').innerHTML = weak.length? weak.map(dm=>`
+    <div class="weak-row"><span class="weak-dot" style="background:${pctCol(dm.gem)}"></span>
+      <div class="weak-info"><div class="weak-dom">${esc(dm.domein)}</div><div class="weak-meta">${esc(dm.vak)} · ${dm.zwak||0} leerling${dm.zwak===1?'':'en'} onder 55%</div></div>
+      <div class="weak-pct" style="color:${pctCol(dm.gem)}">${Math.round(dm.gem*100)}%</div>
+    </div>`).join('') : '<p style="color:var(--mu);font-size:13px">Nog geen data.</p>';
+  // Engagement
+  const inact=(d.leerlingen||[]).filter(s=>s.laatst_actief_dagen==null||s.laatst_actief_dagen>=7);
+  const pctAct=k.leden?Math.round(act/k.leden*100):0;
+  document.getElementById('eng-fill').style.width=pctAct+'%';
+  document.getElementById('eng-act').textContent=act;
+  document.getElementById('eng-inact').textContent=inact.length;
+  document.getElementById('inactief-wrap').classList.toggle('hidden',!inact.length);
+  document.getElementById('inactief').innerHTML=inact.slice(0,12).map(s=>`<span class="chip">${esc(s.naam)}</span>`).join('');
+  // Activity sparkline
+  const acts=d.activiteit||[];
+  const max=Math.max(1,...acts.map(a=>a.n));
+  document.getElementById('spark').innerHTML=acts.map(a=>`<div class="spark-bar" title="${a.n} sessies" style="height:${Math.round(a.n/max*100)}%"></div>`).join('');
+  document.getElementById('spark-x').innerHTML=acts.map((a,i)=>`<span>${i%3===0?esc(a.dag||''):''}</span>`).join('');
+  // Roster
+  const ll=(d.leerlingen||[]).slice().sort((a,b)=>(b.punten||0)-(a.punten||0));
+  document.getElementById('roster-count').textContent=ll.length+' leerling'+(ll.length===1?'':'en');
+  document.getElementById('roster').innerHTML = ll.length? ll.map(s=>{
+    const inActive=s.laatst_actief_dagen==null||s.laatst_actief_dagen>=7;
+    const g=s.gem!=null?Math.round(s.gem*100):null;
+    return `<tr>
+      <td class="st-naam">${esc(s.naam)}</td>
+      <td class="${inActive?'st-inact':''}">${agoTxt(s.laatst_actief_dagen)}</td>
+      <td>${s.sessies??0}</td>
+      <td>${s.punten??0}</td>
+      <td>${g!=null?`<span class="st-bar"><i style="width:${g}%;background:${pctCol(s.gem)}"></i></span>${g}%`:'—'}</td>
+    </tr>`;
+  }).join('') : '<tr><td colspan="5" style="color:var(--mu)">Nog geen leerlingen actief.</td></tr>';
+}
+
+// ── DEMO ──────────────────────────────────────────────
+function loadDemo(){
+  const namen=['Sanne','Daan','Fenna','Lucas','Noor','Sem','Julia','Bram','Milan','Yara','Tess','Sven','Lars','Isa','Roos','Thijs','Evi','Guus','Nora','Jesse','Kiki','Bas','Lieke','Tijn'];
+  const ll=namen.map((n,i)=>{
+    const g=Math.max(.28,Math.min(.95, .75 - i*0.02 + (Math.sin(i)*0.08)));
+    const inact=i>=19;
+    return {naam:n, gem:g, sessies: inact?0:Math.max(1,Math.round(22-i*0.7)), punten:Math.round(g*1000-i*12), laatst_actief_dagen: inact?(9+i%5):(i%6)};
+  });
+  const domeinen=[
+    {vak:'Biologie',domein:'Genetica',gem:.41,zwak:9},
+    {vak:'Biologie',domein:'Ecologie',gem:.52,zwak:6},
+    {vak:'Biologie',domein:'Evolutie',gem:.58,zwak:5},
+    {vak:'Biologie',domein:'Stofwisseling',gem:.63,zwak:4},
+    {vak:'Biologie',domein:'Zenuwstelsel',gem:.7,zwak:3},
+    {vak:'Biologie',domein:'Hormonen',gem:.74,zwak:2},
+    {vak:'Biologie',domein:'Voortplanting',gem:.81,zwak:1},
+    {vak:'Biologie',domein:'DNA & eiwitten',gem:.86,zwak:1}
+  ];
+  const dagen=['ma','di','wo','do','vr','za','zo'];
+  const activiteit=Array.from({length:14},(_,i)=>({dag:dagen[i%7],n:Math.round(6+8*Math.abs(Math.sin(i))+(i>10?6:0))}));
+  const gemAll=domeinen.reduce((a,b)=>a+b.gem,0)/domeinen.length;
+  render({
+    klas:{naam:'5 HAVO Biologie',niveau:'havo',vak:'Biologie',code:'DEMO',leden:namen.length,sessies_week:activiteit.slice(-7).reduce((a,b)=>a+b.n,0),gem_beheersing:gemAll},
+    leerlingen:ll, domeinen, activiteit
+  },true);
+}
+
+// auto: ?code=XXX of ?demo=1
+(function(){
+  const q=new URLSearchParams(location.search);
+  if(q.get('demo')){loadDemo();return;}
+  const c=q.get('code');
+  if(c){document.getElementById('code-in').value=c.toUpperCase();connect();}
+  document.getElementById('code-in').addEventListener('keydown',e=>{if(e.key==='Enter')connect();});
+})();
+</script>
+</body>
+</html>
