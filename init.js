@@ -411,6 +411,31 @@ function updateBottomNav(id){
     }catch(e){}
   }
 }
+// ── Mobiel menu (bottom-sheet met alle onderdelen) ──
+function openNavSheet(){
+  let ov=document.getElementById('nav-sheet-ov');
+  if(!ov){
+    ov=document.createElement('div');ov.id='nav-sheet-ov';ov.className='nav-sheet-ov';
+    const items=[
+      ['📅','Studieplan',"show('sc-studieplan');renderStudieplan()"],
+      ['📊','Voortgang',"openRapport()"],
+      ['📄','Examens',"show('sc-schedule')"],
+      ['🧮','Cijfers',"show('sc-calc');setTimeout(prefillCalcFromSaved,50)"],
+      ['📕','Foutenboek',"openFoutenboek()"],
+      ['🔄','Herhalen',"openHerhalen()"],
+      ['🏆','Leaderboard',"show('sc-leaderboard');renderLeaderboard()"],
+      ['👥','Groep',"show('sc-groep');renderGroepScreen()"],
+    ];
+    ov.innerHTML='<div class="nav-sheet no-ico" onclick="event.stopPropagation()">'
+      +'<div class="nav-sheet-grip"></div><div class="nav-sheet-title">Menu</div>'
+      +items.map(function(it){return '<button class="nav-sheet-item" onclick="closeNavSheet();'+it[2]+'"><span class="nav-sheet-ic">'+it[0]+'</span><span class="nav-sheet-lbl">'+it[1]+'</span><span class="nav-sheet-go">›</span></button>';}).join('')
+      +'</div>';
+    ov.addEventListener('click',closeNavSheet);
+    document.body.appendChild(ov);
+  }
+  requestAnimationFrame(function(){ov.classList.add('open');});
+}
+function closeNavSheet(){var ov=document.getElementById('nav-sheet-ov');if(ov)ov.classList.remove('open');}
 // Patch show() to update bottom nav (pass all args through)
 const _origShow=show;
 window.show=function(id,_noHash){_origShow(id,_noHash);updateBottomNav(id);};

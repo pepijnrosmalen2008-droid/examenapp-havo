@@ -2306,7 +2306,8 @@ html.dark .calc-btn{background:#2e3550}
 .bnav-btn{display:flex;flex-direction:column;align-items:center;gap:3px;background:none;border:none;color:var(--mu);font-size:9.5px;font-weight:600;cursor:pointer;padding:7px 12px;border-radius:18px;transition:all .22s cubic-bezier(.34,1.4,.64,1);font-family:var(--font);-webkit-tap-highlight-color:transparent;letter-spacing:.3px;flex:1}
 .bnav-btn .bnav-icon{width:22px;height:22px;display:flex;align-items:center;justify-content:center;transition:transform .22s cubic-bezier(.34,1.4,.64,1)}
 .bnav-btn .bnav-icon svg{width:22px;height:22px;stroke:currentColor;transition:stroke .2s}
-.bnav-btn.active{color:var(--or);background:color-mix(in srgb,var(--or) 10%,transparent);box-shadow:0 0 16px rgba(var(--or-rgb),.18)}
+.bnav-btn.active{color:var(--or);background:color-mix(in srgb,var(--or) 13%,transparent);box-shadow:0 2px 10px rgba(var(--or-rgb),.16)}
+.bnav-btn.active::before{content:'';position:absolute;top:2px;left:50%;transform:translateX(-50%);width:16px;height:3px;border-radius:3px;background:var(--or);box-shadow:0 0 8px rgba(var(--or-rgb),.7)}
 .bnav-btn.active .bnav-icon{transform:scale(1.15)}
 .bnav-btn.active .bnav-icon svg{stroke:var(--or);filter:drop-shadow(0 0 5px rgba(var(--or-rgb),.65))}
 .bnav-btn:active .bnav-icon{transform:scale(0.85)}
@@ -3375,6 +3376,22 @@ html.dark .hsd-pill{background:var(--bg2);border-color:var(--bo2)}
 .hm-menu-tile .hm-fb-badge{top:6px;right:6px}
 @media(max-width:520px){.hm-menu{gap:7px}.hm-menu-tile{min-height:74px;border-radius:16px;font-size:11px;padding:11px 4px}.hm-menu-ic{font-size:21px}}
 @media(max-width:360px){.hm-menu{grid-template-columns:repeat(3,1fr)}}
+/* Menu-knop (mobiel): tegels weg, één knop die de lijst opent */
+.hm-menu-open{display:none;align-items:center;justify-content:center;gap:9px;width:100%;padding:14px;border:1.5px solid var(--bo);border-radius:15px;background:var(--s);color:var(--dk);font-family:var(--font-head);font-weight:800;font-size:14px;cursor:pointer;box-shadow:0 1px 3px rgba(16,24,40,.05);-webkit-tap-highlight-color:transparent}
+.hm-menu-open:active{transform:scale(.98)}
+@media(max-width:640px){.hm-menu{display:none}.hm-menu-open{display:flex}}
+/* Bottom-sheet menu-lijst */
+.nav-sheet-ov{position:fixed;inset:0;z-index:6000;background:rgba(15,15,25,.5);opacity:0;pointer-events:none;transition:opacity .25s;display:flex;align-items:flex-end}
+.nav-sheet-ov.open{opacity:1;pointer-events:all}
+.nav-sheet{width:100%;background:var(--s);border-radius:24px 24px 0 0;padding:10px 14px calc(env(safe-area-inset-bottom,10px) + 16px);transform:translateY(100%);transition:transform .32s cubic-bezier(.34,1.2,.64,1);max-height:82vh;overflow-y:auto;box-shadow:0 -10px 40px rgba(0,0,0,.22)}
+.nav-sheet-ov.open .nav-sheet{transform:none}
+.nav-sheet-grip{width:40px;height:4px;border-radius:2px;background:var(--bo);margin:4px auto 12px}
+.nav-sheet-title{font-family:var(--font-head);font-weight:900;font-size:15px;color:var(--dk);margin:0 6px 8px}
+.nav-sheet-item{display:flex;align-items:center;gap:14px;width:100%;padding:14px 12px;border:none;background:none;border-radius:14px;cursor:pointer;font-family:var(--font-head);font-weight:700;font-size:15px;color:var(--dk);text-align:left;-webkit-tap-highlight-color:transparent}
+.nav-sheet-item:active{background:rgba(var(--or-rgb),.09)}
+.nav-sheet-ic{font-size:22px;width:28px;text-align:center;flex-shrink:0}
+.nav-sheet-lbl{flex:1}
+.nav-sheet-go{color:var(--mu);font-size:22px;font-weight:400;line-height:1}
 .hm-qchip:hover{border-color:var(--or);color:var(--or);background:rgba(var(--or-rgb),.06);transform:translateY(-1px)}
 .hm-qchip:active{transform:scale(.97)}
 /* ── STATS STRIP (home, boven vakken) ─ */
