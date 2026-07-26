@@ -9,10 +9,10 @@
 -- Idempotent: je kunt het veilig opnieuw draaien (tabellen worden niet
 -- overschreven, functies worden vervangen door de nieuwste versie).
 --
--- ⚠️  Draaide je eerder een óudere klas-SQL met andere kolomnamen? Dan zijn
---     de tabellen hieronder leidend. Kloppen je bestaande kolommen niet met
---     deze definities, verwijder die tabellen dan eerst (of hernoem ze) zodat
---     de "create table if not exists" hieronder de juiste vorm neerzet.
+-- ⚠️  VERSE START: dit script gooit bestaande klas-tabellen eerst weg en bouwt
+--     ze opnieuw op in de juiste vorm. Dat WIST bestaande klassen, leden en
+--     scores. Wil je bestaande data juist behouden? Verwijder dan het
+--     "DROP TABLE"-blok hieronder en stem de kolomnamen handmatig af.
 --
 -- Privacy: leerlingen delen alleen de voornaam die ze zelf kiezen. Geen e-mail,
 -- geen user-id in het dashboard. De tabellen staan op slot (RLS aan, geen
@@ -21,6 +21,14 @@
 -- ═══════════════════════════════════════════════════════════════════════
 
 -- ─── 1) TABELLEN ─────────────────────────────────────────────────────────
+-- ⚠️ VERSE START — wist bestaande klas-tabellen (klassen, leden, scores,
+-- huiswerk) zodat ze in de juiste vorm herbouwd worden. Verwijder deze vier
+-- regels als je bestaande data wilt behouden.
+drop table if exists public.klas_huiswerk cascade;
+drop table if exists public.klas_scores   cascade;
+drop table if exists public.klas_leden    cascade;
+drop table if exists public.klassen       cascade;
+
 create table if not exists public.klassen(
   id         uuid primary key default gen_random_uuid(),
   code       text unique not null,
