@@ -70,6 +70,29 @@ alter table public.klas_scores  enable row level security;
 alter table public.klas_huiswerk enable row level security;
 
 
+-- ─── 1b) OUDE FUNCTIES OPRUIMEN ──────────────────────────────────────────
+-- Draaide je eerder een andere klas-SQL, dan bestaan deze functies al, mogelijk
+-- met een ander return-type. "create or replace" kan een return-type niet
+-- wijzigen ("cannot change return type of existing function"), dus verwijderen
+-- we elke bestaande variant eerst. Dit raakt ALLEEN de functies, niet je data.
+do $$
+declare r record;
+begin
+  for r in
+    select p.oid::regprocedure::text as sig
+      from pg_proc p
+      join pg_namespace n on n.oid = p.pronamespace
+     where n.nspname = 'public'
+       and p.proname in (
+         '_klas_gen_code','klas_create','klas_join','klas_info','klas_leaderboard',
+         'klas_score_add','klas_mine','klas_dashboard','klas_huiswerk_set','klas_huiswerk_get'
+       )
+  loop
+    execute 'drop function if exists ' || r.sig || ' cascade';
+  end loop;
+end $$;
+
+
 -- ─── 2) HULPFUNCTIE: unieke klascode (zonder verwarrende tekens) ─────────
 create or replace function public._klas_gen_code()
 returns text language plpgsql as $$
