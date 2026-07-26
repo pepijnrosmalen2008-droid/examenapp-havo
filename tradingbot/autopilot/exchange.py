@@ -180,8 +180,9 @@ class PaperExchange:
         if side == Side.BUY:
             if amount_eur is None:
                 raise ValueError("BUY vereist amount_eur")
-            if amount_eur > eur + 1e-9:
+            if amount_eur > eur + 0.01:  # >1 cent boven het saldo → echt te weinig EUR
                 raise RuntimeError(f"Paper: onvoldoende EUR ({eur:.2f} < {amount_eur:.2f})")
+            amount_eur = min(amount_eur, eur)  # koop hooguit precies je saldo (vangt afrondings-epsilon)
             fill_price = price * (1 + self.slippage)
             fee = amount_eur * self.taker_fee
             asset_amount = (amount_eur - fee) / fill_price

@@ -159,3 +159,16 @@ def test_bot_never_exceeds_capital(db, market):
     # DCA vroeg €500 per pair; risk engine capt op 90% van €100 kapitaal
     spent = sum(o["amount_eur"] or 0 for o in db.recent_orders() if o["side"] == "BUY")
     assert spent <= 100
+
+
+def test_buy_full_cash_not_rejected_by_rounding(db, market):
+    """Bot-cash wordt op 6 decimalen bewaard; 'koop al je cash' mag niet stuk op een
+    afrondings-epsilon (bug die news-koopjes weigerde bij een bijna-volledig belegde bot)."""
+    from autopilot.exchange import PaperExchange
+    from autopilot.models import Side
+    px = PaperExchange(db, market, capital_eur=100.0, taker_fee_pct=0.25, slippage_pct=0.1)
+    db.set_paper_balance("EUR", 23.7617686)          # exact saldo (volledige precisie)
+    # risk levert een op 6 dp afgerond bedrag dat een haar boven het saldo ligt
+    fill = px.place_market_order("BTC-EUR", Side.BUY, amount_eur=23.761769, client_order_id="x1")
+    assert fill["status"] == "closed"
+    assert db.paper_balance("EUR") >= -1e-9          # niet negatief geraakt
