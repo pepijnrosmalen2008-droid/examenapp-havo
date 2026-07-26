@@ -2,7 +2,7 @@
 // Docent maakt een klas → korte code. Leerlingen (anoniem via _DID of
 // ingelogd) sluiten zich aan met de code. Klas-leaderboard telt de scores
 // van de leden op. Alle DB-toegang loopt via SECURITY DEFINER-RPC's in
-// Supabase (zie klas-supabase.sql); tot die er zijn toont de UI "binnenkort".
+// Supabase (zie sql/klas-setup.sql); tot die er zijn toont de UI "binnenkort".
 
 const KLAS_KEY = 'slagio_klas'; // {id,naam,code?,role,naamInKlas,niveau,vakId}
 let _klasEnabled = null;        // null=onbekend, true/false na eerste RPC
