@@ -1204,26 +1204,14 @@ function toonRes(){
       const emoji=pct>=1?'🌟':pct>=0.9?'🔥':pct>=0.8?'🎯':pct>=0.7?'✅':'💪';
       const msg=pct>=1?'Perfecte score!':pct>=0.9?'Bijna perfect!':pct>=0.8?'Super gedaan!':pct>=0.7?'Goed bezig!':'Kun jij het beter?';
       const cta=pct>=0.8?'Stuur dit naar je klas 👇':'Daag je klas uit 👇';
-      shareCard.innerHTML=`<div style="background:linear-gradient(135deg,rgba(var(--or-rgb),.15),rgba(var(--or-rgb),.06));border:1px solid rgba(var(--or-rgb),.35);border-radius:16px;padding:16px 18px;margin:14px 0 6px;text-align:center">
-        <div style="font-size:28px;margin-bottom:4px">${emoji}</div>
-        <div style="font-size:18px;font-weight:900;color:var(--or);margin-bottom:2px">${pctNum}%</div>
-        <div style="font-size:13px;font-weight:700;color:var(--dk);margin-bottom:2px">${msg}</div>
-        <div style="font-size:12px;color:var(--mu);margin-bottom:12px">${cta}</div>
-        <button onclick="deelScore()" style="background:var(--or);color:#fff;border:none;border-radius:12px;padding:11px 24px;font-size:14px;font-weight:700;cursor:pointer;font-family:var(--font);width:100%;display:flex;align-items:center;justify-content:center;gap:8px"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"/><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"/></svg>Deel met je klas</button>
+      shareCard.innerHTML=`<div style="display:flex;align-items:center;gap:10px;background:linear-gradient(135deg,rgba(var(--or-rgb),.13),rgba(var(--or-rgb),.05));border:1px solid rgba(var(--or-rgb),.3);border-radius:14px;padding:9px 11px;margin:12px 0 4px">
+        <span style="font-size:22px;line-height:1;flex-shrink:0">${emoji}</span>
+        <div style="flex:1;min-width:0;text-align:left"><div style="font-size:13px;font-weight:800;color:var(--or);line-height:1.2">${pctNum}% · ${msg}</div></div>
+        <button onclick="deelScore()" style="background:var(--or);color:#fff;border:none;border-radius:10px;padding:9px 14px;font-size:13px;font-weight:700;cursor:pointer;font-family:var(--font);white-space:nowrap;display:flex;align-items:center;gap:6px;flex-shrink:0"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"/><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"/></svg>Delen</button>
       </div>`;
       rbdEl.insertAdjacentElement('afterend',shareCard);
     }
-    // Persoonlijk record banner
-    if(rbdEl&&_recordResult&&_recordResult.isNewRecord&&sc>0){
-      const prevPct=_recordResult.prevBest>0?Math.round(_recordResult.prevBest/_recordResult.total*100):null;
-      const newPct=Math.round(sc/tot*100);
-      const rec=document.createElement('div');
-      rec.className='record-banner';
-      rec.innerHTML=`🏆 Nieuw persoonlijk record! ${prevPct!==null?prevPct+'% → ':''}<strong>${newPct}%</strong>`;
-      rbdEl.insertAdjacentElement('afterend',rec);
-      setTimeout(()=>{playSound('levelup');haptic([40,20,80,20,120]);},300);
-      if(earnAch('record1'))setTimeout(()=>showAch('🏆','Je eerste persoonlijk record!'),600);
-    }
+    // (Persoonlijk-record-banner verwijderd op verzoek — minder tegels op het resultaatscherm.)
     // (Tweede PB-banner + losse "smart next action" + "volgend domein"-knop
     //  verwijderd: die dubbelden met de record-banner hierboven en met de
     //  one-more-kaart onderaan. Eén record-banner, één "wat nu"-kaart.)
@@ -1348,31 +1336,8 @@ function toonRes(){
       setTimeout(()=>_showRegPrompt(pct),1200);
     }
   }catch(e){}
-  // "Eén meer quiz" suggestie
-  try{
-    const omBox=document.getElementById('one-more-wrap');
-    if(omBox&&ST.mode==='snel'&&!ST.isFoutenboek&&ST.vak){
-      const domeinen=ST.vak.domeinen||[];
-      const score=ST.score/ST.vragen.length;
-      // Als score <80%: opnieuw hetzelfde domein, anders: volgend domein
-      let sugDomein=null,sugLabel='';
-      if(score<0.8){
-        sugDomein=ST.domein;sugLabel='📖 Herhalen';
-      }else{
-        const cur=domeinen.findIndex(d=>d.id===ST.domein.id);
-        const nxt=domeinen.slice(cur+1).find(d=>d.sv&&d.sv.length);
-        if(nxt){sugDomein=nxt;sugLabel='➡️ Volgende domein';}
-      }
-      if(sugDomein){
-        omBox.innerHTML=`<div class="one-more-card" onclick="ST.vak=ST.vak;ST.domein=ST.vak.domeinen.find(d=>d.id==='${sugDomein.id}');startQ('snel')">
-          <div class="one-more-tag">${sugLabel}</div>
-          <div class="one-more-title">${sugDomein.naam}</div>
-          <div class="one-more-sub">${ST.vak.naam} · Snelle Quiz · ${sugDomein.sv?sugDomein.sv.length:0} vragen</div>
-          <div class="one-more-cta">Starten →</div>
-        </div>`;
-      }else{omBox.innerHTML='';}
-    }
-  }catch(e){if(document.getElementById('one-more-wrap'))document.getElementById('one-more-wrap').innerHTML='';}
+  // "Volgende domein"-kaart verwijderd op verzoek — minder tegels op het resultaatscherm.
+  try{const omBox=document.getElementById('one-more-wrap');if(omBox)omBox.innerHTML='';}catch(e){}
   try{renderAdaptiveResults();}catch(e){}
   try{renderChallengeResult();}catch(e){}
   show('sc-res');

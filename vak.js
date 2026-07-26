@@ -1124,6 +1124,10 @@ function aqFill(){
 }
 function renderAdaptiveResults(){
   const wrap=document.getElementById('adaptive-res-wrap');
+  // "Beheersing dit domein"-kaart verwijderd op verzoek — resultaatscherm strakker.
+  if(wrap)wrap.innerHTML='';
+  return;
+  // eslint-disable-next-line no-unreachable
   if(!wrap||!ST||ST.mode!=='snel'||!ST.vak||!ST.domein){if(wrap)wrap.innerHTML='';return;}
   const d=aqpGet();
   const dom=aqpDomainData(d,ST.vak.id,ST.domein.id);
