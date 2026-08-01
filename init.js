@@ -339,7 +339,7 @@ function chooseLevel(level,_noHistory){
   _updatePageSEO(level);
   // Show intro for first-time users, home for returning users
   show('sc-home');
-  buildGrid();renderStreak();renderFavHome();renderXPHome();renderDailyChallenge();renderHomeStats();renderGreeting();try{renderKlasHome();}catch(e){}
+  buildGrid();renderStreak();renderFavHome();renderXPHome();renderDailyChallenge();renderHomeStats();renderGreeting();try{renderKlasHome();}catch(e){}try{renderEconHome();}catch(e){}
   const _isNew=!localStorage.getItem(OB_KEY)&&!localStorage.getItem('slagio_seen_intro_v2');
   if(_isNew){setTimeout(showOnboarding,300);}
   else if(!localStorage.getItem('slagio_vonk_intro_done')){setTimeout(()=>{try{if(typeof vonkIntro==='function')vonkIntro();}catch(e){}},500);}
@@ -357,6 +357,8 @@ function updateLevelChip(){
 if(localStorage.getItem('examenapp_level')) applyLevelTheme(APP_LEVEL);
 else document.documentElement.classList.add('level-welcome');
 try{initChallengeOnLoad();}catch(e){}
+try{reconcileCoins();applyStreakFreezes();}catch(e){}
+try{renderEconHome();}catch(e){}
 renderFavHome();
 renderStreak();
 renderXPHome();

@@ -892,8 +892,12 @@ function recordPractice(){
 }
 function calcStreak(){
   const s=getStreak();
-  if(!s.days||!s.days.length)return {current:0,longest:0,total:s.totalQuizzes||0,days:[]};
-  const sorted=[...s.days].sort().reverse();
+  // Bevroren dagen (via streak-freeze) tellen mee als geoefend voor de streak.
+  const frozen=s.frozen||[];
+  const allDays=[...(s.days||[]),...frozen];
+  if(!allDays.length)return {current:0,longest:0,total:s.totalQuizzes||0,days:[],frozen:frozen};
+  const sorted=allDays;                       // Set-lookup hieronder, volgorde irrelevant
+  const practiced=new Set(allDays);
   let current=0;
   const today=new Date();today.setHours(0,0,0,0);
   const check=new Date(today);
@@ -901,14 +905,131 @@ function calcStreak(){
   const todayStr=today.toISOString().slice(0,10);
   const yesterday=new Date(today);yesterday.setDate(yesterday.getDate()-1);
   const yestStr=yesterday.toISOString().slice(0,10);
-  if(!sorted.includes(todayStr)&&!sorted.includes(yestStr))return {current:0,longest:0,total:s.totalQuizzes||0,days:s.days};
-  if(!sorted.includes(todayStr))check.setDate(check.getDate()-1);
+  if(!practiced.has(todayStr)&&!practiced.has(yestStr))return {current:0,longest:0,total:s.totalQuizzes||0,days:s.days||[],frozen:frozen};
+  if(!practiced.has(todayStr))check.setDate(check.getDate()-1);
   for(let i=0;i<60;i++){
     const d=new Date(check);d.setDate(d.getDate()-i);
-    if(sorted.includes(d.toISOString().slice(0,10)))current++;
+    if(practiced.has(d.toISOString().slice(0,10)))current++;
     else break;
   }
-  return {current,total:s.totalQuizzes||0,days:s.days};
+  return {current,total:s.totalQuizzes||0,days:s.days||[],frozen:frozen};
+}
+
+// ═══════ ECONOMIE: munten, streak-freeze & winkeltje ═══════
+// Munten (source of truth = localStorage 'slagio_coins'); gespiegeld naar
+// prof.coins zodat ze via Supabase mee-syncen (zelfde patroon als XP).
+const COINS_KEY='slagio_coins';
+const FREEZE_MAX=2;
+const PRICE_FREEZE=200, PRICE_XPBOOST=150;
+function getCoins(){try{return Math.max(0,parseInt(localStorage.getItem(COINS_KEY)||'0',10)||0);}catch(e){return 0;}}
+function _setCoins(n){
+  n=Math.max(0,Math.round(n));
+  try{localStorage.setItem(COINS_KEY,String(n));}catch(e){}
+  try{if(typeof currentUser!=='undefined'&&currentUser){const p=JSON.parse(localStorage.getItem(PROF_KEY)||'{}');p.coins=n;localStorage.setItem(PROF_KEY,JSON.stringify(p));cloudSet('profiel',p);}}catch(e){}
+  try{renderEconHome();}catch(e){}
+  try{if(typeof renderShop==='function'&&document.getElementById('sc-shop')&&document.getElementById('sc-shop').classList.contains('on'))renderShop();}catch(e){}
+  return n;
+}
+function addCoins(n){return _setCoins(getCoins()+(n||0));}
+function spendCoins(n){const c=getCoins();if(c<n)return false;_setCoins(c-n);return true;}
+// Reconciliatie na cloud-restore: neem de hoogste bekende stand over.
+function reconcileCoins(){try{const p=JSON.parse(localStorage.getItem(PROF_KEY)||'{}');if(typeof p.coins==='number'&&p.coins>getCoins())_setCoins(p.coins);}catch(e){}}
+// Munten toekennen na een quiz: basis + prestatie + perfect-bonus.
+function awardQuizCoins(pct,isPerfect){
+  const c=Math.round(5+Math.max(0,Math.min(1,pct||0))*10)+(isPerfect?10:0);
+  addCoins(c);return c;
+}
+
+// Streak-freezes wonen in het streak-object (s.freezes) → syncen via cloudSet('streak').
+function getFreezes(){try{return Math.max(0,Math.min(FREEZE_MAX,getStreak().freezes||0));}catch(e){return 0;}}
+function setFreezes(n){const s=getStreak();s.freezes=Math.max(0,Math.min(FREEZE_MAX,Math.round(n)));cloudSet('streak',s);try{renderEconHome();}catch(e){}return s.freezes;}
+// Eén keer per app-open: overbrug een gemiste dag met een freeze zodat de streak blijft staan.
+function applyStreakFreezes(){
+  try{
+    const s=getStreak();
+    s.frozen=s.frozen||[];
+    if(!s.days||!s.days.length)return;
+    const practiced=new Set([...s.days,...s.frozen]);
+    const iso=d=>d.toISOString().slice(0,10);
+    const today=new Date();today.setHours(0,0,0,0);
+    const y=new Date(today);y.setDate(y.getDate()-1);
+    const dby=new Date(today);dby.setDate(dby.getDate()-2);
+    const todayStr=iso(today),yStr=iso(y),dbyStr=iso(dby);
+    // Vandaag of gisteren al geoefend → streak veilig, niets te doen.
+    if(practiced.has(todayStr)||practiced.has(yStr))return;
+    // Was er een lopende streak t/m eergisteren én is er een freeze? Overbrug gisteren.
+    if(practiced.has(dbyStr)&&(s.freezes||0)>0){
+      s.frozen.push(yStr);
+      s.freezes=Math.max(0,(s.freezes||0)-1);
+      cloudSet('streak',s);
+      try{if(typeof showToast==='function')showToast('🧊 Streak-freeze gebruikt — je streak is gered!','#38bdf8');}catch(e){}
+      try{trackEvent('streak_freeze_used',{});}catch(e){}
+    }
+  }catch(e){}
+}
+
+// XP-boost token (dubbele XP voor de volgende snelle quiz).
+function getXpBoosts(){try{return Math.max(0,parseInt(localStorage.getItem('slagio_xpboost')||'0',10)||0);}catch(e){return 0;}}
+function _setXpBoosts(n){try{localStorage.setItem('slagio_xpboost',String(Math.max(0,n)));}catch(e){}}
+function consumeXpBoost(){const n=getXpBoosts();if(n<=0)return false;_setXpBoosts(n-1);try{renderEconHome();}catch(e){}return true;}
+
+// ── Winkel-acties ──
+function buyFreeze(){
+  if(getFreezes()>=FREEZE_MAX){showToast('Je hebt al het maximum aan streak-freezes ('+FREEZE_MAX+').','#f59e0b');return;}
+  if(!spendCoins(PRICE_FREEZE)){showToast('Niet genoeg munten. Oefen om er meer te verdienen!','#ef4444');return;}
+  setFreezes(getFreezes()+1);
+  try{playSound&&playSound('coin');}catch(e){}
+  showToast('🧊 Streak-freeze gekocht!','#38bdf8');
+  try{trackEvent('shop_buy',{item:'freeze'});}catch(e){}
+  renderShop();
+}
+function buyXpBoost(){
+  if(!spendCoins(PRICE_XPBOOST)){showToast('Niet genoeg munten. Oefen om er meer te verdienen!','#ef4444');return;}
+  _setXpBoosts(getXpBoosts()+1);
+  showToast('⚡ Dubbele-XP-boost gekocht — telt bij je volgende snelle quiz!','#8b5cf6');
+  try{trackEvent('shop_buy',{item:'xpboost'});}catch(e){}
+  renderEconHome();renderShop();
+}
+
+function openShop(){show('sc-shop');renderShop();}
+function renderEconHome(){
+  const box=document.getElementById('econ-home');
+  if(!box)return;
+  const coins=getCoins(), fr=getFreezes(), boosts=getXpBoosts();
+  box.innerHTML=`<div class="econ-bar">
+    <button class="econ-chip" onclick="openShop()" title="Open het winkeltje">
+      <span class="econ-ic no-ico">🪙</span><b>${coins}</b><span class="econ-lbl">munten</span></button>
+    <button class="econ-chip" onclick="openShop()" title="Streak-freezes beschermen je streak">
+      <span class="econ-ic no-ico">🧊</span><b>${fr}</b><span class="econ-lbl">freeze${fr===1?'':'s'}</span></button>
+    ${boosts>0?`<span class="econ-chip econ-chip-static" title="Dubbele XP klaar voor je volgende quiz"><span class="econ-ic no-ico">⚡</span><b>${boosts}</b><span class="econ-lbl">×2 XP</span></span>`:''}
+    <button class="econ-shop-btn" onclick="openShop()">Winkel →</button>
+  </div>`;
+}
+function renderShop(){
+  const box=document.getElementById('shop-body');
+  if(!box)return;
+  const coins=getCoins(), fr=getFreezes(), boosts=getXpBoosts();
+  const freezeFull=fr>=FREEZE_MAX;
+  const canFreeze=!freezeFull&&coins>=PRICE_FREEZE;
+  const canBoost=coins>=PRICE_XPBOOST;
+  box.innerHTML=`
+    <div class="shop-balance"><span class="econ-ic no-ico">🪙</span> <b>${coins}</b> munten</div>
+    <p class="shop-hint">Verdien munten door quizzen te maken — hoe beter je scoort, hoe meer je krijgt.</p>
+    <div class="shop-item">
+      <div class="shop-ic no-ico">🧊</div>
+      <div class="shop-info"><div class="shop-name">Streak-freeze <span class="shop-have">${fr}/${FREEZE_MAX} in bezit</span></div>
+        <div class="shop-desc">Beschermt je streak als je een dag mist. Wordt automatisch gebruikt.</div></div>
+      <button class="shop-buy${canFreeze?'':' disabled'}" ${canFreeze?'':'disabled'} onclick="buyFreeze()">
+        ${freezeFull?'Vol':`<span class="econ-ic no-ico">🪙</span> ${PRICE_FREEZE}`}</button>
+    </div>
+    <div class="shop-item">
+      <div class="shop-ic no-ico">⚡</div>
+      <div class="shop-info"><div class="shop-name">Dubbele XP ${boosts>0?`<span class="shop-have">${boosts} klaar</span>`:''}</div>
+        <div class="shop-desc">Verdubbelt je XP bij je volgende snelle quiz.</div></div>
+      <button class="shop-buy${canBoost?'':' disabled'}" ${canBoost?'':'disabled'} onclick="buyXpBoost()">
+        <span class="econ-ic no-ico">🪙</span> ${PRICE_XPBOOST}</button>
+    </div>
+    <p class="shop-foot">Meer items volgen — Vonk-outfits en avatar-skins zijn onderweg. 🦊</p>`;
 }
 function startStreakQuiz(){
   const mijn=JSON.parse(localStorage.getItem('examenapp_'+lvlCol('mijnvakken'))||'[]');

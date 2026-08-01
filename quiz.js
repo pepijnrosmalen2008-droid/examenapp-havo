@@ -1150,6 +1150,8 @@ function toonRes(){
   let _recordResult=null;
   try{_recordResult=saveProgress(ST.vak.id,ST.domein.id,ST.mode,sc,tot);}catch(e){}
   try{recordPractice();}catch(e){}
+  // Munten belonen (basis + prestatie + perfect-bonus) + korte feedback
+  try{if(typeof awardQuizCoins==='function'){const _cw=awardQuizCoins(pct,pct>=0.999);window._coinsWon=_cw;setTimeout(()=>{try{showToast('+'+_cw+' munten 🪙','#f5b301');}catch(e){}},950);}}catch(e){}
   // Track quiz voltooid
   try{_flushQBatch();trackEvent('quiz_completed',{vak:ST.vak?.naam,vak_id:ST.vak?.id,domein_id:ST.domein?.id,mode:ST.mode,score:sc,totaal:tot,pct:Math.round(pct*100)});}catch(e){}
   // Feature 2: PB tracking
@@ -1227,6 +1229,9 @@ function toonRes(){
     if(xpEl)xpEl.remove();
     if(ST.mode==='snel'&&ST.xpThisRound>0){
       if(isPerfect)ST.xpThisRound=Math.round(ST.xpThisRound*1.5);
+      // Gekochte dubbele-XP-boost verzilveren (indien in bezit).
+      let _boosted=false;try{if(typeof consumeXpBoost==='function'&&consumeXpBoost()){ST.xpThisRound*=2;_boosted=true;}}catch(e){}
+      if(_boosted){try{showToast('⚡ Dubbele XP toegepast!','#8b5cf6');}catch(e){}}
       const res=addXP(ST.xpThisRound);
       try{
         if(typeof v4AvatarReact==='function'){
