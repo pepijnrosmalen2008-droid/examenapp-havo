@@ -1046,27 +1046,39 @@ function buyTheme(id){
 }
 
 // ── Skins: accessoires voor je avatar en voor Vonk ──
+// Avatar-skins zijn hoofddeksels die op de kop van je dier gaan zitten (als SVG
+// getekend, niet zwevend). De emoji dient alleen als winkel-icoon.
 const COSMETICS_AV=[
-  {id:'av_cap',   naam:'Petje',     emoji:'🧢', prijs:250},
-  {id:'av_crown', naam:'Kroontje',  emoji:'👑', prijs:500},
-  {id:'av_glass', naam:'Zonnebril', emoji:'🕶️', prijs:300},
-  {id:'av_bow',   naam:'Strik',     emoji:'🎀', prijs:250},
-  {id:'av_flower',naam:'Bloem',     emoji:'🌸', prijs:200},
-  {id:'av_star',  naam:'Sterretje', emoji:'⭐', prijs:200},
+  {id:'av_cap',    naam:'Petje',       emoji:'🧢', prijs:250},
+  {id:'av_crown',  naam:'Kroontje',    emoji:'👑', prijs:500},
+  {id:'av_party',  naam:'Feesthoed',   emoji:'🥳', prijs:250},
+  {id:'av_bow',    naam:'Strik',       emoji:'🎀', prijs:250},
+  {id:'av_flower', naam:'Bloem',       emoji:'🌸', prijs:200},
+  {id:'av_beanie', naam:'Muts',        emoji:'🧶', prijs:300},
 ];
 const COSMETICS_VONK=[
   {id:'vk_glass', naam:'Vonk zonnebril', emoji:'🕶️', prijs:300},
   {id:'vk_crown', naam:'Vonk kroon',     emoji:'👑', prijs:600},
   {id:'vk_party', naam:'Vonk feesthoed', emoji:'🥳', prijs:350},
-  {id:'vk_grad',  naam:'Vonk diploma',   emoji:'🎓', prijs:400},
+  {id:'vk_scarf', naam:'Vonk sjaal',     emoji:'🧣', prijs:350},
 ];
+// Hoofddeksels als SVG (viewBox 0 0 100 100), onder-in verankerd zodat ze op de
+// kop rusten wanneer de overlay op de bovenkant van de avatar wordt geplaatst.
+const _AV_SKIN_SVG={
+  av_cap:`<path d="M18 60 Q20 33 50 33 Q80 33 82 60 Z" fill="#2f7ff2"/><path d="M16 60 Q50 54 84 60 L88 69 Q50 63 12 69 Z" fill="#1f5fd0"/><circle cx="50" cy="33" r="3.6" fill="#1f5fd0"/>`,
+  av_crown:`<path d="M20 66 L29 40 L41 56 L50 33 L59 56 L71 40 L80 66 Z" fill="#f5c518" stroke="#d4a017" stroke-width="2"/><rect x="20" y="63" width="60" height="10" rx="3" fill="#e0a90f"/><circle cx="50" cy="37" r="3.2" fill="#ff5a7a"/><circle cx="30" cy="44" r="2.5" fill="#5b8def"/><circle cx="70" cy="44" r="2.5" fill="#5b8def"/>`,
+  av_party:`<path d="M50 16 L69 70 L31 70 Z" fill="#f472b6" stroke="#db2777" stroke-width="2"/><path d="M50 16 L58 38 L42 38 Z" fill="#facc15"/><circle cx="50" cy="15" r="4.6" fill="#facc15"/><circle cx="44" cy="60" r="2.6" fill="#fff" opacity=".85"/><circle cx="57" cy="52" r="2.1" fill="#fff" opacity=".7"/>`,
+  av_bow:`<path d="M50 60 L24 45 Q17 58 24 72 Z" fill="#ff5a7a"/><path d="M50 60 L76 45 Q83 58 76 72 Z" fill="#ff5a7a"/><path d="M50 60 L26 47 Q22 58 26 70 Z" fill="#e5484d" opacity=".35"/><circle cx="50" cy="60" r="7.5" fill="#e5484d"/>`,
+  av_flower:`<g fill="#ff6b9d"><ellipse cx="50" cy="40" rx="10" ry="12"/><ellipse cx="34" cy="54" rx="12" ry="10"/><ellipse cx="66" cy="54" rx="12" ry="10"/><ellipse cx="41" cy="70" rx="10" ry="12"/><ellipse cx="59" cy="70" rx="10" ry="12"/></g><circle cx="50" cy="55" r="8.5" fill="#facc15"/>`,
+  av_beanie:`<path d="M20 60 Q22 32 50 32 Q78 32 80 60 Z" fill="#7c3aed"/><path d="M20 58 Q35 52 50 52 Q65 52 80 58 L80 62 Q50 56 20 62 Z" fill="#5b21b6" opacity=".5"/><rect x="18" y="59" width="64" height="11" rx="5.5" fill="#5b21b6"/><circle cx="50" cy="30" r="5.5" fill="#a78bfa"/>`,
+};
 function _cosmeticById(id){return COSMETICS_AV.concat(COSMETICS_VONK).find(c=>c.id===id)||null;}
 function getOwnedCosmetics(){try{const a=JSON.parse(localStorage.getItem('slagio_cosmetics')||'[]');return Array.isArray(a)?a:[];}catch(e){return [];}}
 function cosmeticOwned(id){return getOwnedCosmetics().includes(id);}
 function getEquippedAv(){try{return localStorage.getItem('slagio_av_skin')||'';}catch(e){return '';}}
 function getEquippedVonk(){try{return localStorage.getItem('slagio_vonk_skin')||'';}catch(e){return '';}}
-// Overlay-emoji voor de speler-avatar (leeg als er niets is uitgerust).
-function avatarSkinHTML(){const id=getEquippedAv();const c=id&&_cosmeticById(id);if(!c)return '';return '<span class="av-skin no-ico">'+c.emoji+'</span>';}
+// Gedragen hoofddeksel voor de speler-avatar: SVG op de bovenkant van de kop.
+function avatarSkinHTML(){const id=getEquippedAv();const svg=id&&_AV_SKIN_SVG[id];if(!svg)return '';return '<span class="av-skin no-ico"><svg viewBox="0 0 100 100" preserveAspectRatio="xMidYMax meet">'+svg+'</svg></span>';}
 function equipCosmetic(id){
   const isVonk=id.indexOf('vk_')===0;
   const key=isVonk?'slagio_vonk_skin':'slagio_av_skin';

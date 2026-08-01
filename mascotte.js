@@ -11,6 +11,10 @@ var MASCOT_NAME = 'Vonk';
 // Stemmingen: blij (default) · trots · goed · laag (bemoedigend) · kijk (nieuwsgierig) · knipoog
 function mascotSVG(mood, size) {
   size = size || 96;
+  // Uitgeruste Vonk-skin (leest de equip live). Kroon/feesthoed vervangen de
+  // standaard afstudeerpet; bril en sjaal komen er bovenop.
+  const _vsk = (typeof getEquippedVonk === 'function') ? getEquippedVonk() : '';
+  const _hideCap = (_vsk === 'vk_crown' || _vsk === 'vk_party');
   // Flat-vector vos (Duolingo-stijl). Gesloten glimlach per stemming (cx60, ~cy60).
   const M = {
     blij:   { mouth: 'M51 60 Q60 70 69 60', brow: '',                                       arms: 'wave' },
@@ -90,13 +94,13 @@ function mascotSVG(mood, size) {
         <ellipse cx="47" cy="30" rx="15" ry="10" fill="#ffb877" opacity=".5"/>
         <path d="M31 50 C24 55 21 62 27 63 C33 64 36 58 35 53 Z" fill="${CR}"/>
         <path d="M89 50 C96 55 99 62 93 63 C87 64 84 58 85 53 Z" fill="${CR}"/>
-        <g class="m-cap">
+        ${_hideCap ? '' : `<g class="m-cap">
           <path d="M60 3 L89 15 L60 27 L31 15 Z" fill="#2e3350"/>
           <path d="M60 3 L89 15 L60 20 Z" fill="#3c4374"/>
           <circle cx="60" cy="15" r="2.5" fill="#facc15"/>
           <path class="m-tassel" d="M60 15 C74 17 76 24 75 31" stroke="#facc15" stroke-width="2" fill="none"/>
           <circle class="m-tassel" cx="75" cy="32" r="3.4" fill="#f59e0b"/>
-        </g>
+        </g>`}
         <!-- tweekleurige snuit -->
         <path d="M35 46 C40 41 47 41 51 45 C55 49 65 49 69 45 C73 41 80 41 85 46 C88 59 76 71 60 71 C44 71 32 59 35 46 Z" fill="${CR}"/>
         <g class="m-eyes">${eyesInner}</g>
@@ -118,22 +122,37 @@ function mascotSVG(mood, size) {
       ${rightArm}
       ${s.spark ? `<g class="m-spark" fill="#facc15"><path d="M99 10 l2.3 5.6 5.6 2.3 -5.6 2.3 -2.3 5.6 -2.3 -5.6 -5.6 -2.3 5.6 -2.3z"/><circle cx="20" cy="24" r="2.4"/><circle cx="96" cy="38" r="1.8"/></g>` : ''}
       ${prop}
-      ${_vonkSkinSVG()}
+      ${_vonkSkinSVG(_vsk)}
     </g>
   </svg>`;
 }
-// Gekochte Vonk-skin als accessoire boven op de mascotte (leest de equip live).
-function _vonkSkinSVG() {
-  var id = (typeof getEquippedVonk === 'function') ? getEquippedVonk() : '';
-  if (!id) return '';
-  var M = {
-    vk_crown: { e: '👑', x: 60, y: 7,  s: 30 },
-    vk_party: { e: '🥳', x: 60, y: 8,  s: 26 },
-    vk_glass: { e: '🕶️', x: 60, y: 45, s: 30 },
-    vk_grad:  { e: '🎓', x: 60, y: 8,  s: 30 }
-  };
-  var c = M[id]; if (!c) return '';
-  return '<text x="' + c.x + '" y="' + c.y + '" font-size="' + c.s + '" text-anchor="middle" dominant-baseline="middle">' + c.e + '</text>';
+// Gekochte Vonk-skin als écht gedragen SVG-accessoire, precies op de anatomie:
+// bril op de ogen (47,41)/(73,41), kroon/feesthoed op de kop, sjaal om de hals.
+function _vonkSkinSVG(id) {
+  if (!id && typeof getEquippedVonk === 'function') id = getEquippedVonk();
+  switch (id) {
+    case 'vk_glass': return `<g class="vk-skin vk-glass">
+      <path d="M35 40 L28 35" stroke="#20242e" stroke-width="2.4" stroke-linecap="round"/>
+      <path d="M85 40 L92 35" stroke="#20242e" stroke-width="2.4" stroke-linecap="round"/>
+      <rect x="36" y="33.5" width="21" height="15" rx="7" fill="#20242e" opacity=".93"/>
+      <rect x="63" y="33.5" width="21" height="15" rx="7" fill="#20242e" opacity=".93"/>
+      <path d="M57 39 Q60 37 63 39" stroke="#20242e" stroke-width="2.6" fill="none"/>
+      <ellipse cx="43" cy="38" rx="3.4" ry="2.1" fill="#fff" opacity=".22"/>
+      <ellipse cx="70" cy="38" rx="3.4" ry="2.1" fill="#fff" opacity=".22"/></g>`;
+    case 'vk_crown': return `<g class="vk-skin vk-crown">
+      <path d="M43 23 L46 12 L53 18 L60 8 L67 18 L74 12 L77 23 Z" fill="#f5c518" stroke="#d4a017" stroke-width="1.3"/>
+      <rect x="43" y="21.5" width="34" height="5.5" rx="2.2" fill="#e0a90f"/>
+      <circle cx="60" cy="10.5" r="1.9" fill="#ff5a7a"/><circle cx="46.5" cy="13.5" r="1.5" fill="#5b8def"/><circle cx="73.5" cy="13.5" r="1.5" fill="#5b8def"/></g>`;
+    case 'vk_party': return `<g class="vk-skin vk-party">
+      <path d="M60 1 L71 23 L49 23 Z" fill="#f472b6" stroke="#db2777" stroke-width="1"/>
+      <path d="M60 1 L65 11 L55 11 Z" fill="#facc15"/>
+      <circle cx="60" cy="1.5" r="2.7" fill="#facc15"/>
+      <circle cx="56" cy="17" r="1.7" fill="#fff" opacity=".85"/><circle cx="64" cy="14" r="1.4" fill="#fff" opacity=".7"/></g>`;
+    case 'vk_scarf': return `<g class="vk-skin vk-scarf">
+      <path d="M42 65 Q60 77 78 65 L78 71 Q60 82 42 71 Z" fill="#e5484d"/>
+      <path d="M68 70 L76 88 L70 89 L64 72 Z" fill="#c93b3f"/></g>`;
+    default: return '';
+  }
 }
 
 // ─── Vonk die van de zijkant binnenglijdt, iets zegt, en weer wegduikt ───
