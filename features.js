@@ -544,6 +544,11 @@ function addXP(amount){
    Eén bold moment; de rest van de UI blijft stil. Reduced-motion: statisch. */
 function slagioVlagUit(kind){
   try{if(typeof playSound==='function')playSound('fanfare');}catch(e){}
+  // Vonk juicht mee bij het grote moment (kort, in de hoek, niet-blokkerend).
+  try{if(typeof vonkReact==='function'){
+    const _vl=kind==='perfect'?'Foutloos! 🌟':(kind==='sim'?'Geslaagd! 🎓':'Level omhoog! 🚀');
+    setTimeout(function(){try{vonkReact('feest',_vl,{duration:2400});}catch(e){}},450);
+  }}catch(e){}
   try{
     const old=document.getElementById('vlag-uit'); if(old)old.remove();
     const reduce=window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)').matches;

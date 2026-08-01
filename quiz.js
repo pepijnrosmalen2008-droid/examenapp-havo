@@ -363,11 +363,14 @@ function _kiesReveal(gekozen,correct,btns){
   aqpRecord(ST.vragen[ST.idx], ok?1:0);
   ST.antwrd.push({pts:ok?1:0,chosenText:q.o[chosenOrigIdx],tijdOver});
   try{if(typeof fbRecord==='function')fbRecord(q,ok,q.o[chosenOrigIdx]);}catch(e){}
-  // Vonk reageert kort: oeps bij fout, feest bij een goede reeks.
+  // Vonk reageert kort: oeps bij fout, feest bij een goede reeks (meer variatie
+  // + sterkere lof naarmate de combo oploopt — Duolingo-stijl).
   try{if(typeof vonkReact==='function'){
     const _pk=a=>a[Math.floor(Math.random()*a.length)];
-    if(!ok)vonkReact('oeps',_pk(['Oeps!','Bijna!','Volgende keer!']));
-    else if(ST.combo>=3)vonkReact('feest',_pk(['Op dreef! 🔥','Goed bezig!','Yes!']));
+    if(!ok)vonkReact('oeps',_pk(['Oeps!','Bijna!','Volgende keer pak je ’m!','Geeft niks, doorgaan!']),{duration:1400});
+    else if(ST.combo>=7)vonkReact('feest',_pk(['Onstopbaar! 🔥',ST.combo+' op rij!','Vlammend! 🔥','Ongelooflijk!']),{duration:1700});
+    else if(ST.combo>=5)vonkReact('feest',_pk(['5 op rij! 🔥','Wat een reeks!','Je bent on fire!']),{duration:1600});
+    else if(ST.combo>=3)vonkReact('feest',_pk(['Op dreef! 🔥','Goed bezig!','Yes!','Lekker bezig!']));
   }}catch(e){}
   saveQuizDraft();
   btns.forEach((b,i)=>{

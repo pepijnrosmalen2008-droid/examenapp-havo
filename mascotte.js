@@ -234,6 +234,31 @@ function vonkReact(mood, text, opts) {
   _vonkReactT = setTimeout(() => { if (el) el.classList.remove('vr-in'); }, opts.duration || 1500);
 }
 
+// ─── Streak-reddernudge: Vonk smeekt je je streak te redden (Duolingo-stijl) ───
+// Toont zich als je een lopende streak hebt maar vandaag nog niet oefende.
+// Max 1× per dag én per sessie. Geeft true terug als hij getoond is.
+function vonkStreakNudge() {
+  try {
+    if (typeof calcStreak !== 'function' || typeof getStreak !== 'function') return false;
+    if (window._vonkNudged) return false;
+    const cur = (calcStreak().current || 0);
+    if (cur < 2) return false;                                  // pas nuttig vanaf 2 dagen
+    const today = new Date().toISOString().slice(0, 10);
+    const days = (getStreak().days) || [];
+    if (days.includes(today)) return false;                     // al geoefend → streak veilig
+    if (!localStorage.getItem('slagio_vonk_intro_done')) return false; // niet tijdens de intro
+    try { if (localStorage.getItem('slagio_vonk_nudge') === today) return false; } catch (e) {}
+    try { localStorage.setItem('slagio_vonk_nudge', today); } catch (e) {}
+    window._vonkNudged = true;
+    vonkSay(`Je <b>${cur}-dagen streak</b> loopt gevaar! 🔥 Eén snelle quiz vandaag en hij blijft staan.`, {
+      mood: 'laag', side: 'left', size: 96, duration: 0, plainLinks: true,
+      action: { label: 'Red mijn streak →', onclick: function () { try { startStreakQuiz(); } catch (e) {} } }
+    });
+    try { trackEvent('vonk_streaknudge', { streak: cur }); } catch (e) {}
+    return true;
+  } catch (e) { return false; }
+}
+
 // Centrale uitleg-teksten: Vonk legt features uit, elk max 1× (once-sleutel).
 function vonkOnboard(where) {
   const T = {

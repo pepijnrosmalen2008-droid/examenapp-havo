@@ -343,7 +343,7 @@ function chooseLevel(level,_noHistory){
   const _isNew=!localStorage.getItem(OB_KEY)&&!localStorage.getItem('slagio_seen_intro_v2');
   if(_isNew){setTimeout(showOnboarding,300);}
   else if(!localStorage.getItem('slagio_vonk_intro_done')){setTimeout(()=>{try{if(typeof vonkIntro==='function')vonkIntro();}catch(e){}},500);}
-  else{showDailyChallengePopup();}
+  else{let _nudged=false;try{if(typeof vonkStreakNudge==='function')_nudged=vonkStreakNudge();}catch(e){}if(!_nudged)showDailyChallengePopup();}
 }
 function updateLevelChip(){
   const chip=document.getElementById('home-level-chip');
