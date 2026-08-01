@@ -1229,8 +1229,11 @@ function toonRes(){
     if(xpEl)xpEl.remove();
     if(ST.mode==='snel'&&ST.xpThisRound>0){
       if(isPerfect)ST.xpThisRound=Math.round(ST.xpThisRound*1.5);
-      // Gekochte dubbele-XP-boost verzilveren (indien in bezit).
-      let _boosted=false;try{if(typeof consumeXpBoost==='function'&&consumeXpBoost()){ST.xpThisRound*=2;_boosted=true;}}catch(e){}
+      // Dubbele-XP-boost verzilveren: 24u-boost heeft voorrang, anders een los token.
+      let _boosted=false;try{
+        if(typeof xpBoostDayActive==='function'&&xpBoostDayActive()){ST.xpThisRound*=2;_boosted=true;}
+        else if(typeof consumeXpBoost==='function'&&consumeXpBoost()){ST.xpThisRound*=2;_boosted=true;}
+      }catch(e){}
       if(_boosted){try{showToast('⚡ Dubbele XP toegepast!','#8b5cf6');}catch(e){}}
       const res=addXP(ST.xpThisRound);
       try{

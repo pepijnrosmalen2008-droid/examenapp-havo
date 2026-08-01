@@ -533,6 +533,8 @@ function addXP(amount){
       cloudSet('profiel',prof);
     }catch(e){}
   }
+  // Weekwedstrijd: tel deze XP mee in je divisie-stand.
+  try{if(typeof leagueAddXP==='function')leagueAddXP(amount);}catch(e){}
   const newLvl=getLevelForXP(d.xp);
   const oldStage=getAnimalStageIdx(d.xp-(amount));
   const newStage=getAnimalStageIdx(d.xp);
@@ -991,45 +993,106 @@ function buyXpBoost(){
   renderEconHome();renderShop();
 }
 
+const PRICE_BOOST_DAY=400, PRICE_MYSTERY=100;
+// 24u dubbele XP
+function xpBoostDayActive(){try{return Date.now()<(parseInt(localStorage.getItem('slagio_xpboost_day')||'0',10)||0);}catch(e){return false;}}
+function buyXpBoostDay(){
+  if(xpBoostDayActive()){showToast('Je 24-uurs boost is al actief.','#f59e0b');return;}
+  if(!spendCoins(PRICE_BOOST_DAY)){showToast('Niet genoeg munten. Oefen om er meer te verdienen!','#ef4444');return;}
+  try{localStorage.setItem('slagio_xpboost_day',String(Date.now()+24*3600000));}catch(e){}
+  try{playSound&&playSound('coin');}catch(e){}
+  showToast('🚀 24 uur lang dubbele XP geactiveerd!','#8b5cf6');
+  try{trackEvent('shop_buy',{item:'xpboost_day'});}catch(e){}
+  renderEconHome();renderShop();
+}
+// Mystery box: willekeurige beloning
+function buyMysteryBox(){
+  if(!spendCoins(PRICE_MYSTERY)){showToast('Niet genoeg munten. Oefen om er meer te verdienen!','#ef4444');return;}
+  const r=Math.random();let msg;
+  if(r<0.10&&getFreezes()<FREEZE_MAX){setFreezes(getFreezes()+1);msg='🧊 een streak-freeze!';}
+  else if(r<0.26){_setXpBoosts(getXpBoosts()+1);msg='⚡ een dubbele-XP-boost!';}
+  else if(r<0.34){addCoins(300);msg='🪙 jackpot — 300 munten!';}
+  else if(r<0.70){const c=80+Math.floor(Math.random()*90);addCoins(c);msg='🪙 '+c+' munten!';}
+  else{const c=20+Math.floor(Math.random()*50);addCoins(c);msg='🪙 '+c+' munten.';}
+  try{playSound&&playSound('coin');}catch(e){}
+  showToast('Mystery box: '+msg,'#f5b301');
+  try{trackEvent('shop_buy',{item:'mystery'});}catch(e){}
+  renderEconHome();renderShop();
+}
+// Thema's: accentkleur van de hele app
+const THEMES=[
+  {id:'oranje',naam:'Klassiek oranje',hex:'#f2760c',rgb:'242,118,12',prijs:0},
+  {id:'paars', naam:'Paars',         hex:'#8b5cf6',rgb:'139,92,246',prijs:300},
+  {id:'blauw', naam:'Oceaanblauw',   hex:'#2f7ff2',rgb:'47,127,242', prijs:300},
+  {id:'roze',  naam:'Roze',          hex:'#ec4899',rgb:'236,72,153', prijs:300},
+  {id:'groen', naam:'Smaragd',       hex:'#10b981',rgb:'16,185,129', prijs:300},
+  {id:'rood',  naam:'Vuurrood',      hex:'#ef4444',rgb:'239,68,68',  prijs:400},
+  {id:'goud',  naam:'Goud',          hex:'#d4a017',rgb:'212,160,23', prijs:600},
+];
+function getOwnedThemes(){try{const a=JSON.parse(localStorage.getItem('slagio_themes')||'[]');return Array.isArray(a)?a:[];}catch(e){return [];}}
+function themeOwned(id){return id==='oranje'||getOwnedThemes().includes(id);}
+function getSelectedTheme(){try{return localStorage.getItem('slagio_theme_sel')||'oranje';}catch(e){return 'oranje';}}
+function applyTheme(){try{const t=THEMES.find(x=>x.id===getSelectedTheme())||THEMES[0];document.documentElement.style.setProperty('--or',t.hex);document.documentElement.style.setProperty('--or-rgb',t.rgb);}catch(e){}}
+function selectTheme(id){if(!themeOwned(id))return;try{localStorage.setItem('slagio_theme_sel',id);}catch(e){}applyTheme();try{renderShop();}catch(e){}}
+function buyTheme(id){
+  const t=THEMES.find(x=>x.id===id);if(!t)return;
+  if(themeOwned(id)){selectTheme(id);return;}
+  if(!spendCoins(t.prijs)){showToast('Niet genoeg munten voor dit thema.','#ef4444');return;}
+  const a=getOwnedThemes();a.push(id);try{localStorage.setItem('slagio_themes',JSON.stringify(a));}catch(e){}
+  try{playSound&&playSound('coin');}catch(e){}
+  selectTheme(id);showToast('🎨 Thema ontgrendeld!','#22c55e');
+  try{trackEvent('shop_buy',{item:'theme',id});}catch(e){}
+}
+
 function openShop(){show('sc-shop');renderShop();}
 function renderEconHome(){
   const box=document.getElementById('econ-home');
   if(!box)return;
-  const coins=getCoins(), fr=getFreezes(), boosts=getXpBoosts();
+  const coins=getCoins(), fr=getFreezes(), boosts=getXpBoosts(), dayOn=xpBoostDayActive();
   box.innerHTML=`<div class="econ-bar">
     <button class="econ-chip" onclick="openShop()" title="Open het winkeltje">
       <span class="econ-ic no-ico">🪙</span><b>${coins}</b><span class="econ-lbl">munten</span></button>
     <button class="econ-chip" onclick="openShop()" title="Streak-freezes beschermen je streak">
       <span class="econ-ic no-ico">🧊</span><b>${fr}</b><span class="econ-lbl">freeze${fr===1?'':'s'}</span></button>
-    ${boosts>0?`<span class="econ-chip econ-chip-static" title="Dubbele XP klaar voor je volgende quiz"><span class="econ-ic no-ico">⚡</span><b>${boosts}</b><span class="econ-lbl">×2 XP</span></span>`:''}
+    ${(dayOn||boosts>0)?`<span class="econ-chip econ-chip-static" title="Dubbele XP actief"><span class="econ-ic no-ico">⚡</span><b>${dayOn?'24u':('×'+boosts)}</b><span class="econ-lbl">×2 XP</span></span>`:''}
     <button class="econ-shop-btn" onclick="openShop()">Winkel →</button>
   </div>`;
 }
 function renderShop(){
   const box=document.getElementById('shop-body');
   if(!box)return;
-  const coins=getCoins(), fr=getFreezes(), boosts=getXpBoosts();
-  const freezeFull=fr>=FREEZE_MAX;
-  const canFreeze=!freezeFull&&coins>=PRICE_FREEZE;
-  const canBoost=coins>=PRICE_XPBOOST;
+  const coins=getCoins(), fr=getFreezes(), boosts=getXpBoosts(), dayOn=xpBoostDayActive();
+  const item=(ic,name,have,desc,price,canBuy,fn,ownedLabel)=>`
+    <div class="shop-item">
+      <div class="shop-ic no-ico">${ic}</div>
+      <div class="shop-info"><div class="shop-name">${name}${have?`<span class="shop-have">${have}</span>`:''}</div>
+        <div class="shop-desc">${desc}</div></div>
+      <button class="shop-buy${canBuy?'':' disabled'}" ${canBuy?'':'disabled'} onclick="${fn}">${ownedLabel||`<span class="econ-ic no-ico">🪙</span> ${price}`}</button>
+    </div>`;
+  const powerups=
+    item('🧊','Streak-freeze',`${fr}/${FREEZE_MAX}`,'Beschermt je streak als je een dag mist. Automatisch ingezet.',PRICE_FREEZE, fr<FREEZE_MAX&&coins>=PRICE_FREEZE,'buyFreeze()', fr>=FREEZE_MAX?'Vol':'')+
+    item('⚡','Dubbele XP',boosts>0?`${boosts} klaar`:'','Verdubbelt je XP bij je volgende snelle quiz.',PRICE_XPBOOST, coins>=PRICE_XPBOOST,'buyXpBoost()','')+
+    item('🚀','24u dubbele XP',dayOn?'actief':'','Alle XP telt 24 uur lang dubbel — ideaal op een oefendag.',PRICE_BOOST_DAY, !dayOn&&coins>=PRICE_BOOST_DAY,'buyXpBoostDay()', dayOn?'Actief':'')+
+    item('🎁','Mystery box','','Een verrassing: munten, een boost of zelfs een streak-freeze.',PRICE_MYSTERY, coins>=PRICE_MYSTERY,'buyMysteryBox()','');
+  const sel=getSelectedTheme();
+  const themes=THEMES.map(t=>{
+    const owned=themeOwned(t.id), active=sel===t.id;
+    const label=active?'In gebruik':(owned?'Kies':`<span class="econ-ic no-ico">🪙</span> ${t.prijs}`);
+    const cls='shop-tbtn'+(active?' shop-tbtn-active':(owned?' shop-tbtn-own':''))+((!owned&&coins<t.prijs)?' disabled':'');
+    return `<div class="shop-theme">
+      <span class="shop-sw" style="background:${t.hex}"></span>
+      <span class="shop-theme-name">${t.naam}</span>
+      <button class="${cls}" ${(!owned&&coins<t.prijs)?'disabled':''} onclick="buyTheme('${t.id}')">${label}</button>
+    </div>`;
+  }).join('');
   box.innerHTML=`
     <div class="shop-balance"><span class="econ-ic no-ico">🪙</span> <b>${coins}</b> munten</div>
     <p class="shop-hint">Verdien munten door quizzen te maken — hoe beter je scoort, hoe meer je krijgt.</p>
-    <div class="shop-item">
-      <div class="shop-ic no-ico">🧊</div>
-      <div class="shop-info"><div class="shop-name">Streak-freeze <span class="shop-have">${fr}/${FREEZE_MAX} in bezit</span></div>
-        <div class="shop-desc">Beschermt je streak als je een dag mist. Wordt automatisch gebruikt.</div></div>
-      <button class="shop-buy${canFreeze?'':' disabled'}" ${canFreeze?'':'disabled'} onclick="buyFreeze()">
-        ${freezeFull?'Vol':`<span class="econ-ic no-ico">🪙</span> ${PRICE_FREEZE}`}</button>
-    </div>
-    <div class="shop-item">
-      <div class="shop-ic no-ico">⚡</div>
-      <div class="shop-info"><div class="shop-name">Dubbele XP ${boosts>0?`<span class="shop-have">${boosts} klaar</span>`:''}</div>
-        <div class="shop-desc">Verdubbelt je XP bij je volgende snelle quiz.</div></div>
-      <button class="shop-buy${canBoost?'':' disabled'}" ${canBoost?'':'disabled'} onclick="buyXpBoost()">
-        <span class="econ-ic no-ico">🪙</span> ${PRICE_XPBOOST}</button>
-    </div>
-    <p class="shop-foot">Meer items volgen — Vonk-outfits en avatar-skins zijn onderweg. 🦊</p>`;
+    <div class="shop-cat">Power-ups</div>
+    ${powerups}
+    <div class="shop-cat">Thema's <span class="shop-cat-sub">— kleur de hele app</span></div>
+    <div class="shop-themes">${themes}</div>
+    <p class="shop-foot">Meer volgt — Vonk-outfits en avatar-skins zijn onderweg. 🦊</p>`;
 }
 function startStreakQuiz(){
   const mijn=JSON.parse(localStorage.getItem('examenapp_'+lvlCol('mijnvakken'))||'[]');

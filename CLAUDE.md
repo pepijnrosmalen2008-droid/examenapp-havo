@@ -16,8 +16,8 @@ The app is **no longer a single inline file**. `index.html` is now a thin shell 
 
 ```
 examens.js → (supabase CDN) → data.js → state.js → cloud.js → profile.js →
-vak.js → quiz.js → tools.js → sim.js → lb.js → features.js → schedule.js →
-v4.js → init.js
+vak.js → quiz.js → tools.js → sim.js → lb.js → features.js → league.js →
+schedule.js → v4.js → init.js
 ```
 
 Load order matters: `data.js`/`state.js` define globals the later modules use. `init.js` runs the startup sequence last. These files share one global scope (no modules/bundler), so a function defined in one file is callable from any later file.
@@ -41,7 +41,8 @@ Load order matters: `data.js`/`state.js` define globals the later modules use. `
 | `tools.js` | Rapport, Studieplan v2, toegankelijkheid, leerpad |
 | `sim.js` | Simulatietoets, examen-modus, Race mode |
 | `lb.js` | Leaderboard, countdown (`getCountdownTarget`), progress tracking, knowledge decay, favorites |
-| `features.js` | XP/levels, toasts, daily challenge, streaks & badges, milestone/PB/comeback cards, "de vlag uit" |
+| `features.js` | XP/levels, toasts, daily challenge, streaks & badges, milestone/PB/comeback cards, "de vlag uit", **economie** (munten, streak-freeze, winkeltje `sc-shop`, thema's) |
+| `league.js` | Weekwedstrijd/divisies (`sc-league`): weekXP via `addXP`, promotie/degradatie, realistische bot-cohort per week |
 | `schedule.js` | `EXAM_SCHEDULE[]`, `renderSchedule()`, grade calculators, flashcards + SM-2 |
 | `v4.js` | Misc v4 additions |
 | `init.js` | Intro modal, tutorial, level select, **INIT (startup)**, bottom nav, multiplayer quiz, flickering grid, push notifications, PWA install banner |
