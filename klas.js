@@ -66,7 +66,7 @@ function _klasStartHtml(){
     <div id="klas-join-err" class="klas-err"></div>
   </div>
   <details class="klas-doc">
-    <summary>Ik ben docent — maak een klas aan</summary>
+    <summary>Ik ben docent - maak een klas aan</summary>
     <div class="klas-doc-body">
       <p class="klas-doc-note">Je hebt een gratis Slagio-account nodig zodat je klas bewaard blijft.</p>
       <label class="klas-lbl" for="klas-new-naam">Naam van de klas</label>
@@ -75,7 +75,7 @@ function _klasStartHtml(){
         <div style="flex:1"><label class="klas-lbl" for="klas-new-niv">Niveau</label>
           <select id="klas-new-niv" class="klas-input"><option value="havo">HAVO</option><option value="vwo">VWO</option></select></div>
         <div style="flex:1"><label class="klas-lbl" for="klas-new-vak">Vak (optioneel)</label>
-          <select id="klas-new-vak" class="klas-input"><option value="">—</option>${vakOpts}</select></div>
+          <select id="klas-new-vak" class="klas-input"><option value="">-</option>${vakOpts}</select></div>
       </div>
       <button class="klas-btn klas-btn-primary" onclick="klasMaak()">Klas aanmaken →</button>
       <div id="klas-new-err" class="klas-err"></div>
@@ -111,7 +111,7 @@ async function klasMaak(){
   const err = document.getElementById('klas-new-err');
   if(err) err.textContent='';
   if(typeof currentUser==='undefined' || !currentUser){
-    if(err) err.innerHTML='Maak eerst een gratis account aan (via <b onclick="openProfiel()" style="cursor:pointer;color:var(--or)">Profiel</b>) — dan blijft je klas bewaard.';
+    if(err) err.innerHTML='Maak eerst een gratis account aan (via <b onclick="openProfiel()" style="cursor:pointer;color:var(--or)">Profiel</b>) - dan blijft je klas bewaard.';
     return;
   }
   const naam = (document.getElementById('klas-new-naam').value||'').trim();
@@ -136,7 +136,7 @@ function _klasSkeleton(k){
   const isDoc = k.role==='docent';
   const codeBlok = isDoc && k.code ? `
     <div class="klas-code-box">
-      <div class="klas-code-lbl">Klascode — deel deze met je leerlingen</div>
+      <div class="klas-code-lbl">Klascode - deel deze met je leerlingen</div>
       <div class="klas-code-big" id="klas-code-big">${k.code}</div>
       <button class="klas-btn klas-btn-ghost" onclick="klasDeel()">📤 Code delen / kopiëren</button>
       <a class="klas-btn klas-btn-primary" href="/docent.html?code=${encodeURIComponent(k.code)}" target="_blank" rel="noopener" style="display:block;text-align:center;text-decoration:none;margin-top:8px">📊 Open docentendashboard</a>

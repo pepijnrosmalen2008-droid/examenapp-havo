@@ -410,7 +410,7 @@
   <button class="sw-banner-reload" onclick="swUpdate()">Herlaad</button>
   <button class="sw-banner-dismiss" onclick="this.closest('#sw-update-banner').classList.remove('show')" aria-label="Melding sluiten">×</button>
 </div>
-<div id="offline-banner" role="status" aria-live="polite"><span id="offline-banner-text">Geen internet — je voortgang wordt lokaal opgeslagen</span><button id="offline-dismiss" type="button" aria-label="Melding sluiten">&times;</button></div>
+<div id="offline-banner" role="status" aria-live="polite"><span id="offline-banner-text">Geen internet - je voortgang wordt lokaal opgeslagen</span><button id="offline-dismiss" type="button" aria-label="Melding sluiten">&times;</button></div>
 <a href="#main-content" class="skip-link">Ga naar inhoud</a>
 
 <!-- CONFIRM DIALOG -->
@@ -778,9 +778,9 @@
 
 <!-- FEATURE DISCOVERY (one-time) -->
 <div id="feat-disc-home"></div>
-<!-- STATS (compact) — staan bóven het menu -->
+<!-- STATS (compact) - staan bóven het menu -->
 <div id="home-bento"></div>
-<!-- SNEL NAAR — één helder menu naar alle pagina's -->
+<!-- SNEL NAAR - één helder menu naar alle pagina's -->
 <div class="w">
   <div class="hm-menu">
     <button class="hm-menu-tile" onclick="show('sc-studieplan');renderStudieplan()"><span class="hm-menu-ic">📅</span>Studieplan</button>
@@ -796,7 +796,7 @@
   </div>
   <button class="hm-menu-open no-ico" onclick="openNavSheet()" aria-label="Open menu">
     <svg viewBox="0 0 24 24" width="19" height="19" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><line x1="4" y1="7" x2="20" y2="7"/><line x1="4" y1="12" x2="20" y2="12"/><line x1="4" y1="17" x2="20" y2="17"/></svg>
-    Menu — alle onderdelen
+    Menu - alle onderdelen
   </button>
 </div>
 
@@ -855,7 +855,7 @@
   <div id="hm-stats-strip-wrap"></div>
   <div class="hm-vakken-hdr">
     <h2 class="hm-vakken-h2">Vakken</h2>
-    <span class="hm-vakken-count" id="vakken-count-badge">—</span>
+    <span class="hm-vakken-count" id="vakken-count-badge">-</span>
   </div>
   <div class="sb-wrap">
     <div class="sb-poda" id="sb-poda">
@@ -942,7 +942,7 @@
 <div class="w zoek-wrap">
   <div class="zoek-hero">
     <h1 class="zoek-h">Doorzoek <em>elk</em> examen, begrip &amp; uitleg</h1>
-    <p class="zoek-sub">Eén zoekbalk over alle CE-examens, oud-examenvragen, begrippen, samenvattingen en oefenvragen — HAVO &amp; VWO.</p>
+    <p class="zoek-sub">Eén zoekbalk over alle CE-examens, oud-examenvragen, begrippen, samenvattingen en oefenvragen - HAVO &amp; VWO.</p>
   </div>
   <div class="zoek-search">
     <div class="zoek-search-inner">
@@ -1074,10 +1074,10 @@
     <div class="mf-body">
       <div class="mf-selects">
         <select id="mf-methode" class="mf-sel" onchange="onMfMethodeChange()">
-          <option value="">— Kies methode —</option>
+          <option value="">- Kies methode -</option>
         </select>
         <select id="mf-hoofdstuk" class="mf-sel" onchange="onMfHoofdstukChange()" disabled style="display:none">
-          <option value="">— Kies hoofdstuk —</option>
+          <option value="">- Kies hoofdstuk -</option>
         </select>
       </div>
       <div class="mf-result" id="mf-result" style="display:none"></div>
@@ -1469,7 +1469,7 @@
 <div class="shop-wrap">
   <div class="shop-head">
     <h2><span class="no-ico">🛒</span> Winkel</h2>
-    <p>Geef je verdiende munten uit. Alles hier is optioneel — oefenen blijft altijd gratis.</p>
+    <p>Geef je verdiende munten uit. Alles hier is optioneel - oefenen blijft altijd gratis.</p>
   </div>
   <div id="shop-body"></div>
 </div>
@@ -1628,7 +1628,7 @@
 
   <div id="calc-eind" class="calc-panel">
     <p style="font-size:12px;color:var(--mu);margin-bottom:14px">Vul je SE-cijfer en CE-cijfer in om je eindcijfer te berekenen - of kies een vak om je opgeslagen SE automatisch in te vullen.</p>
-    <div class="calc-row"><span class="calc-label">Kies vak</span><select id="eind-vak" onchange="prefillEindFromSaved(this.value)" style="padding:7px 10px;border:1px solid var(--bo);border-radius:8px;font-size:13px;background:var(--s);color:var(--dk);font-family:'Nunito',sans-serif;flex:1"><option value="">— handmatig invullen —</option></select></div>
+    <div class="calc-row"><span class="calc-label">Kies vak</span><select id="eind-vak" onchange="prefillEindFromSaved(this.value)" style="padding:7px 10px;border:1px solid var(--bo);border-radius:8px;font-size:13px;background:var(--s);color:var(--dk);font-family:'Nunito',sans-serif;flex:1"><option value="">- handmatig invullen -</option></select></div>
     <div class="calc-row"><span class="calc-label">SE-cijfer</span><input type="number" id="eind-se" class="calc-input" min="1" max="10" step="0.1" placeholder="6.5"></div>
     <div class="calc-row"><span class="calc-label">CE-cijfer</span><input type="number" id="eind-ce" class="calc-input" min="1" max="10" step="0.1" placeholder="7.0"></div>
     <button class="calc-btn" onclick="berekenEind()">Bereken eindcijfer →</button>
@@ -1645,7 +1645,7 @@
     <div class="calc-divider"></div>
     <p style="font-size:13px;font-weight:700;margin-bottom:10px">🎯 Bereken benodigde examen-score</p>
     <p style="font-size:12px;color:var(--mu);margin-bottom:12px">Welke score moet je halen op het examen om een bepaald eindcijfer te halen?</p>
-    <div class="calc-row"><span class="calc-label">Mijn vak (SE)</span><select id="nt-vak" onchange="prefillNtermSE(this.value)" style="padding:7px 10px;border:1px solid var(--bo);border-radius:8px;font-size:13px;background:var(--s);color:var(--dk);font-family:'Nunito',sans-serif;flex:1"><option value="">— kies vak —</option></select></div>
+    <div class="calc-row"><span class="calc-label">Mijn vak (SE)</span><select id="nt-vak" onchange="prefillNtermSE(this.value)" style="padding:7px 10px;border:1px solid var(--bo);border-radius:8px;font-size:13px;background:var(--s);color:var(--dk);font-family:'Nunito',sans-serif;flex:1"><option value="">- kies vak -</option></select></div>
     <div class="calc-row"><span class="calc-label">Mijn SE-cijfer</span><input type="number" id="nt-se" class="calc-input" min="1" max="10" step="0.1" placeholder="6.5"></div>
     <div class="calc-row"><span class="calc-label">Gewenst eindcijfer</span><input type="number" id="nt-doel" class="calc-input" min="1" max="10" step="0.5" value="6" placeholder="6"></div>
     <button class="calc-btn" onclick="berekenBenodigdScore()">Bereken benodigde score →</button>
@@ -1729,7 +1729,7 @@
       <div style="margin:-10px 0 10px"><div style="height:4px;border-radius:2px;background:var(--bo2);overflow:hidden"><div id="reg-pass-strength-fill" style="height:100%;width:0;transition:width .3s,background .3s"></div></div><div id="reg-pass-strength-label" style="font-size:11px;color:var(--mu);margin-top:4px;min-height:16px"></div></div>
       <div class="auth-field"><label>Bevestig wachtwoord</label><input class="auth-input" id="reg-pass-confirm" type="password" placeholder="••••••••" autocomplete="new-password" onkeydown="if(event.key==='Enter')doRegister()"></div>
       <div class="auth-field">
-        <label>Kies je startdier <span style="font-weight:400;text-transform:none;letter-spacing:0">— evolueert met je XP!</span></label>
+        <label>Kies je startdier <span style="font-weight:400;text-transform:none;letter-spacing:0">- evolueert met je XP!</span></label>
         <div class="anim-pick-grid" id="reg-animal-grid"></div>
         <div class="anim-warn"><svg class="ico" viewBox="0 0 24 24" width="1em" height="1em" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10.3 4 2 18a2 2 0 0 0 1.7 3h16.6A2 2 0 0 0 22 18L13.7 4a2 2 0 0 0-3.4 0z"/><path d="M12 9v4"/><path d="M12 17h.01"/></svg> <strong>Let op:</strong> je kunt later niet meer van dier wisselen. Kies dus goed!</div>
       </div>
@@ -2001,7 +2001,7 @@
 <div class="w fb-wrap">
   <div class="fb-header">
     <h2><span class="fb-header-ic">📕</span> Foutenboek</h2>
-    <p>Elke fout die je maakt bewaren we hier — mét waarom het fout ging. Oefen slim precies de dingen die jij nog niet beheerst; goed beantwoorde fouten klimmen omhoog tot ze beheerst zijn.</p>
+    <p>Elke fout die je maakt bewaren we hier - mét waarom het fout ging. Oefen slim precies de dingen die jij nog niet beheerst; goed beantwoorde fouten klimmen omhoog tot ze beheerst zijn.</p>
   </div>
   <div class="fb-stats" id="fb-stats"></div>
   <div id="fb-list"></div>
@@ -2051,7 +2051,7 @@
 <script defer src="/sam-clip.js"></script>
 <script defer src="/ico-swap.js"></script>
 
-<!-- Bottom Navigation (mobile only) — standaard verborgen; verschijnt pas na niveaukeuze via updateBottomNav() -->
+<!-- Bottom Navigation (mobile only) - standaard verborgen; verschijnt pas na niveaukeuze via updateBottomNav() -->
 <nav class="bottom-nav" id="bottom-nav" style="display:none">
   <div class="bottom-nav-inner">
     <button class="bnav-btn active" data-screen="sc-home" onclick="show('sc-home')" aria-label="Home">
@@ -2350,7 +2350,7 @@
   <div class="w" style="padding-top:28px;padding-bottom:80px;max-width:560px">
     <div style="text-align:center;margin-bottom:24px">
       <div style="font-size:52px;margin-bottom:12px" id="sim-res-emoji">🎯</div>
-      <div style="font-family:var(--font-head);font-size:38px;font-weight:900;margin-bottom:4px" id="sim-res-grade">—</div>
+      <div style="font-family:var(--font-head);font-size:38px;font-weight:900;margin-bottom:4px" id="sim-res-grade">-</div>
       <div style="font-size:14px;color:var(--mu)" id="sim-res-label">Geschat CE-cijfer</div>
       <div style="margin-top:12px;font-size:14px;color:var(--mu)" id="sim-res-score"></div>
     </div>

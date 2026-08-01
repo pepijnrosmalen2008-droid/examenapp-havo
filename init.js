@@ -8,7 +8,7 @@ const OB_KEY='slagio_onboard_v3';
 let _obStep=0,_obPickedAnimal=null;
 function showOnboarding(){
   // Slanke flow: start direct bij de mascotte-keuze (het leuke, signature-deel).
-  // Geen feature-tour en geen account-muur vooraf — waarde tonen, niet vertellen.
+  // Geen feature-tour en geen account-muur vooraf - waarde tonen, niet vertellen.
   _obStep=1;_obPickedAnimal=null;
   _obBuildAnimals();
   const prog=document.querySelector('#ob-overlay .ob-progress');

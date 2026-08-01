@@ -20,7 +20,7 @@ button:focus-visible,a:focus-visible{outline:2px solid var(--or,#e8580c);outline
 :root{
   --bg:#f5f6fa;--bg2:#eef0f5;--s:#FFFFFF;--dk:#1a1d26;
   --mu:#5b6270;--bo:#e2e5ed;--bo2:#d1d5e0;
-  /* Neutral accent (no level chosen — welcome screen) */
+  /* Neutral accent (no level chosen - welcome screen) */
   --or:#64748b;--orl:#f1f5f9;--bl:#2563eb;--r:14px;
   --or-rgb:100,116,139;
   --cd-bg1:#0f1118;--cd-bg2:#181c28;--cd-bg3:#141820;
@@ -31,7 +31,7 @@ button:focus-visible,a:focus-visible{outline:2px solid var(--or,#e8580c);outline
   --tt-bg:#f5f6fa;--ce-bg:#f5f6fa;
   --font:'Inter',sans-serif;
   --font-head:'Bricolage Grotesque',sans-serif;
-  /* Search bar — light mode */
+  /* Search bar - light mode */
   --sb-bg:var(--s);--sb-text:var(--dk);--sb-ph:var(--mu);
   --sb-mask-col:var(--s);--sb-dk:transparent;--sb-dk2:rgba(0,0,0,0)
 }
@@ -42,7 +42,7 @@ html.dark{
   --nav-bg:rgba(15,17,24,.95);
   --sam-bg:#0D1E33;--sam-txt:#93BDF5;--sam-h:#C8DFFE;
   --tt-bg:#181c28;--ce-bg:#181c28;
-  /* Search bar — dark mode */
+  /* Search bar - dark mode */
   --sb-bg:#010201;--sb-text:#ffffff;--sb-ph:#9ca3af;
   --sb-mask-col:#010201;--sb-dk:#000000;--sb-dk2:#1c191c
 }
@@ -50,7 +50,7 @@ html.dark{
 /* ══════════════════════════════════════════════
    WELCOME / LEVEL-SELECT REDESIGN
    ══════════════════════════════════════════════ */
-/* Welcome screen — own indigo accent, dual-aura BG handled in #sc-welcome CSS */
+/* Welcome screen - own indigo accent, dual-aura BG handled in #sc-welcome CSS */
 html.level-welcome{
   --or:#6366f1;--orl:rgba(99,102,241,.18);--or-rgb:99,102,241
 }
@@ -181,7 +181,7 @@ h1,h2,h3,h4{font-family:var(--font-head);line-height:1.2;letter-spacing:-.3px}
 .hero-zone{position:relative;overflow:hidden;background:linear-gradient(180deg,#08080f 0%,#0d0d1a 100%)}
 .flicker-canvas{position:absolute;inset:0;width:100%;height:100%;pointer-events:none;z-index:0;opacity:.55}
 .hero-zone::after{content:'';position:absolute;bottom:0;left:0;right:0;height:1px;background:linear-gradient(90deg,transparent,rgba(var(--or-rgb),.35),transparent);pointer-events:none}
-/* Animated light beams — use level color automatically via --or-rgb */
+/* Animated light beams - use level color automatically via --or-rgb */
 .hero-beam{position:absolute;inset:-60%;pointer-events:none;will-change:transform}
 .hb1{background:linear-gradient(108deg,transparent 35%,rgba(var(--or-rgb),.06) 46%,rgba(var(--or-rgb),.18) 50%,rgba(var(--or-rgb),.06) 54%,transparent 65%);filter:blur(22px);animation:hbeam1 11s ease-in-out infinite alternate}
 .hb2{background:linear-gradient(121deg,transparent 28%,rgba(var(--or-rgb),.04) 44%,rgba(var(--or-rgb),.13) 50%,rgba(var(--or-rgb),.04) 56%,transparent 68%);filter:blur(30px);animation:hbeam2 15s ease-in-out infinite alternate}
@@ -207,7 +207,7 @@ h1,h2,h3,h4{font-family:var(--font-head);line-height:1.2;letter-spacing:-.3px}
 @media(max-width:580px){.date-strip{flex-direction:column;gap:8px}}
 
 /* ══════════════════════════════════════════════
-   HOME REDESIGN — nav, hero, quick-links, tijdvak
+   HOME REDESIGN - nav, hero, quick-links, tijdvak
    ══════════════════════════════════════════════ */
 
 /* ── MINIMAL TOP NAV ─────────────────────────── */
@@ -347,7 +347,7 @@ h1,h2,h3,h4{font-family:var(--font-head);line-height:1.2;letter-spacing:-.3px}
 .bento-empty-text{font-size:12px;color:var(--mu);flex:1;line-height:1.4}
 .bento-empty-cta{font-size:12px;font-weight:700;color:var(--or);white-space:nowrap;flex-shrink:0}
 @media(max-width:480px){.bento{grid-template-columns:repeat(2,1fr);gap:6px;padding:8px 12px 14px}.bento-sv{font-size:13px}.bento-si{font-size:15px}.bento-act{padding:10px 4px}}
-/* Compacte stats-tegels bóven het home-menu — een stuk kleiner dan voorheen */
+/* Compacte stats-tegels bóven het home-menu - een stuk kleiner dan voorheen */
 #home-bento .bento{padding:4px 24px 8px;gap:7px}
 #home-bento .bento-cell{min-height:auto}
 #home-bento .bento-stat{padding:7px 8px}
@@ -431,7 +431,7 @@ html:not(.dark) .sb-pink{display:none}
 .sb-ring::before{content:'';position:absolute;width:600px;height:600px;top:50%;left:50%;transform:translate(-50%,-50%) rotate(90deg);background:conic-gradient(rgba(0,0,0,0),color-mix(in srgb,var(--or) 40%,#1a1a2e),rgba(0,0,0,0) 50%,rgba(0,0,0,0) 50%,color-mix(in srgb,var(--or) 40%,#1a1a2e),rgba(0,0,0,0) 100%);filter:brightness(1.35);animation:sbSpin 3s linear infinite}
 @keyframes sbSpin{to{transform:translate(-50%,-50%) rotate(450deg)}}
 /* ── RACE MODE ── */
-/* Race screens always use a dark background — force light text in all color schemes */
+/* Race screens always use a dark background - force light text in all color schemes */
 #sc-race,#sc-race-res{color:#e8ecf4;--tx:#e8ecf4;--tx2:#b0bdd0;--mu:#8a97aa}
 #sc-race{background:linear-gradient(180deg,#0c0d15 0%,#090b11 100%);flex-direction:column;min-height:100vh;padding-bottom:48px}
 #sc-race.on{display:flex}
@@ -1080,7 +1080,7 @@ html.dark .qb{background:#2e3550}
 .ex-rev-bijlage{background:rgba(251,191,36,.06);border:1px solid rgba(251,191,36,.15);border-radius:10px;padding:10px 12px;font-size:12px;color:#fbbf24;margin-bottom:10px;line-height:1.6}
 .ex-done-btn{width:100%;background:rgba(74,222,128,.12);border:1.5px solid rgba(74,222,128,.25);color:#4ade80;border-radius:16px;padding:18px;font-family:var(--font-head);font-size:16px;font-weight:800;cursor:pointer;transition:all .2s;margin-top:10px}
 .ex-done-btn:hover{background:rgba(74,222,128,.2);box-shadow:0 6px 24px rgba(74,222,128,.2)}
-/* Bijlage knoppen — intro + FAB */
+/* Bijlage knoppen - intro + FAB */
 .ex-bijlage-row{display:flex;gap:8px;flex-wrap:wrap;margin:14px 0 4px}
 .ex-bijlage-btn{display:flex;align-items:center;gap:7px;padding:11px 16px;border-radius:12px;border:1.5px solid rgba(249,115,22,.4);background:rgba(249,115,22,.08);color:#fb923c;font-size:13px;font-weight:700;cursor:pointer;font-family:var(--font-head);transition:all .18s}
 .ex-bijlage-btn:hover{background:rgba(249,115,22,.16);border-color:rgba(249,115,22,.7)}
@@ -1091,7 +1091,7 @@ html.dark .qb{background:#2e3550}
 .ex-bijlage-fab-btn:hover{transform:translateY(-2px);box-shadow:0 6px 20px rgba(249,115,22,.55)}
 /* ── LEERPAD ──────────────────────────────────── */
 /* ══════════════════════════════════════════════
-   LEERPAD — FULL REDESIGN (game-map dark theme)
+   LEERPAD - FULL REDESIGN (game-map dark theme)
    ══════════════════════════════════════════════ */
 #sc-leerpad{background:linear-gradient(180deg,#070a12 0%,#0c1020 50%,#08090f 100%);min-height:100vh}
 /* Sticky nav on dark bg */
@@ -1698,7 +1698,7 @@ html.dark .qb{background:#2e3550}
 .lb-av-badge.rarity-epic     {border-color:#8B5CF6;box-shadow:0 0 8px 3px rgba(139,92,246,.8)}
 .lb-av-badge.rarity-legendary{border-color:#F59E0B;box-shadow:0 0 10px 4px rgba(245,158,11,.85)}
 .lb-av-badge.rarity-mythic   {border-color:#EF4444;box-shadow:0 0 12px 5px rgba(239,68,68,.85),0 0 18px 7px rgba(245,158,11,.4);animation:mythicGlow 2s ease-in-out infinite}
-/* ── Badges: schone native emoji (Windows/Apple/Android) — geen custom cirkel/gradient/glow ── */
+/* ── Badges: schone native emoji (Windows/Apple/Android) - geen custom cirkel/gradient/glow ── */
 .prof-badge-circle{background:transparent!important;border:none!important;box-shadow:none!important;animation:none!important;font-size:38px;filter:drop-shadow(0 2px 3px rgba(0,0,0,.16))}
 .prof-badge-circle.earned{background:transparent!important;border:none!important;box-shadow:none!important}
 .prof-badge-circle.unearned{filter:grayscale(1);opacity:.25}
@@ -2162,7 +2162,7 @@ html.dark .calc-btn{background:#2e3550}
 .calc-result-bar-track{flex:1;height:8px;border-radius:4px;background:var(--bo);overflow:hidden}
 .calc-result-bar-fill{height:100%;border-radius:4px;transition:width .5s}
 
-/* ── FLASHCARD v2 — SPACED REPETITION ─────────── */
+/* ── FLASHCARD v2 - SPACED REPETITION ─────────── */
 .fc-card{perspective:800px;width:100%;max-width:480px;margin:0 auto 14px;cursor:pointer;height:210px}
 .fc-inner{position:relative;width:100%;height:100%;transition:transform .45s cubic-bezier(.4,0,.2,1);transform-style:preserve-3d}
 .fc-card.flipped .fc-inner{transform:rotateY(180deg)}
@@ -2577,15 +2577,15 @@ html.dark .calc-btn{background:#2e3550}
 }
 
 /* ══════════════════════════════════════════════
-   MOBILE SIMPLIFICATION — less is more
+   MOBILE SIMPLIFICATION - less is more
    Alles hieronder geldt ALLEEN op mobiel (≤640px)
    Desktop-layout blijft ongewijzigd.
    ══════════════════════════════════════════════ */
 @media(max-width:640px){
 
   /* ── HOME HERO: strak en to-the-point ──────── */
-  .hm-badge{display:none}                       /* "Eindexamen 2026" chip — niet nodig */
-  .hm-sub{display:none}                         /* tagline — h1 zegt genoeg */
+  .hm-badge{display:none}                       /* "Eindexamen 2026" chip - niet nodig */
+  .hm-sub{display:none}                         /* tagline - h1 zegt genoeg */
   .hm-hero-inner{padding:28px 18px 20px;text-align:left}
   .hm-h1{font-size:34px;letter-spacing:-1.8px;margin-bottom:18px}
   #hm-greeting{font-size:15px;margin-bottom:6px}
@@ -2599,18 +2599,18 @@ html.dark .calc-btn{background:#2e3550}
   /* "Snel aan de slag" section header weghalen */
   .hm-hero .home-section-header{display:none}
 
-  /* CTAs: primaire full-width, secundaire (Cijfers) hidden — zit al in bottombar */
+  /* CTAs: primaire full-width, secundaire (Cijfers) hidden - zit al in bottombar */
   .hm-ctas{gap:10px}
   .hm-cta-primary{font-size:16px;padding:16px 24px;border-radius:16px}
   .hm-cta-sec{display:none}
 
   /* ── HOME BODY: verberg clutter ────────────── */
   #home-bento{display:block}                    /* compacte stats-tegels boven het menu (ook mobiel) */
-  #live-count-home{display:none}                /* "X leerlingen oefenen nu" — vanity */
-  #grade-insight-home{display:none}             /* cijferanalyse — zit in Cijfers tab */
-  .hm-tvk{display:none}                        /* tijdvakken strip — zit in Rooster tab */
-  #streak-milestone-banner-home{display:none}   /* streak milestone — te druk */
-  #fav-home{display:none!important}             /* favorieten — te veel ruis */
+  #live-count-home{display:none}                /* "X leerlingen oefenen nu" - vanity */
+  #grade-insight-home{display:none}             /* cijferanalyse - zit in Cijfers tab */
+  .hm-tvk{display:none}                        /* tijdvakken strip - zit in Rooster tab */
+  #streak-milestone-banner-home{display:none}   /* streak milestone - te druk */
+  #fav-home{display:none!important}             /* favorieten - te veel ruis */
 
   /* Section headers: compacter, geen subtitle */
   .home-section-header{margin-bottom:10px;margin-top:4px}
@@ -3775,11 +3775,11 @@ html.dark .hsd-pill{background:var(--bg2);border-color:var(--bo2)}
   /* Quiz antwoord-opties: altijd 1 kolom op mobiel (lange tekst past niet naast elkaar) */
   .qopts{grid-template-columns:1fr!important}
 
-  /* Resultaat-scherm: verberg minder wichtige knoppen — zitten al in navigatie */
+  /* Resultaat-scherm: verberg minder wichtige knoppen - zitten al in navigatie */
   .rbtns>button:nth-child(6){display:none!important}  /* Andere modus */
   .rbtns>button:nth-child(8){display:none!important}  /* Home */
 
-  /* Domein-kaart: verberg "▼ Leerstof" knop op mobiel — kaartbalk is zelf al klikbaar */
+  /* Domein-kaart: verberg "▼ Leerstof" knop op mobiel - kaartbalk is zelf al klikbaar */
   .dbtns .exb{display:none!important}
 }
 /* ── RAPPORT MODAL ──────────────────────────────── */
@@ -3909,7 +3909,7 @@ html.dark .hsd-pill{background:var(--bg2);border-color:var(--bo2)}
 .sp-act-fb{background:linear-gradient(135deg,#ef4444,#f97316);color:#fff;border:none;border-radius:8px;font-weight:800;cursor:pointer}
 .sp-task-fb-ok{border-color:rgba(34,197,94,.3);background:rgba(34,197,94,.04)}
 .sp-task-fb-empty{border-style:dashed}
-/* ── Mascotte "Vonk" — herbruikbaar, levendig (SVG-animaties, .m-*) ── */
+/* ── Mascotte "Vonk" - herbruikbaar, levendig (SVG-animaties, .m-*) ── */
 .m-svg{overflow:visible;display:block}
 /* idle: zachtjes deinen + af en toe een klein huppeltje, in één timeline */
 .m-fig{transform-origin:60px 110px;animation:mIdle 5.6s ease-in-out infinite}
@@ -4067,7 +4067,7 @@ html.dark .hsd-pill{background:var(--bg2);border-color:var(--bo2)}
 .her-card-go{font-family:var(--font-head);font-weight:900;font-size:18px;color:#6366f1;flex-shrink:0}
 @media(max-width:640px){.dm-title{font-size:15px}.dm-btn{padding:9px 13px;font-size:12.5px}}
 
-/* ── Vonk + spraakbubbel (coach-pop) — licht standaard, .coach-dark voor donkere schermen ── */
+/* ── Vonk + spraakbubbel (coach-pop) - licht standaard, .coach-dark voor donkere schermen ── */
 .coach-pop{position:relative;display:flex;gap:12px;align-items:flex-start;
   background:linear-gradient(135deg,rgba(255,138,61,.12),rgba(99,102,241,.08));
   border:1px solid var(--bo);border-radius:20px;padding:14px 16px 15px;margin:16px 0 8px;
@@ -4190,7 +4190,7 @@ html.dark .hsd-pill{background:var(--bg2);border-color:var(--bo2)}
 #sw-update-banner button{padding:5px 14px;border-radius:8px;border:none;cursor:pointer;font-size:12px;font-weight:700}
 #sw-update-banner .sw-banner-reload{background:#fff;color:#f97316}
 #sw-update-banner .sw-banner-dismiss{background:rgba(255,255,255,.2);color:#fff}
-/* (verouderde top-bar variant van #offline-banner verwijderd — botste met de pill-toast
+/* (verouderde top-bar variant van #offline-banner verwijderd - botste met de pill-toast
    hierboven en veroorzaakte een half-zichtbaar, niet-weg-te-klikken blokkerend scherm) */
 
 /* ═══════════════════════════════════════════
@@ -4282,7 +4282,7 @@ html.dark .hsd-pill{background:var(--bg2);border-color:var(--bo2)}
     text-transform:none!important;
     letter-spacing:normal!important;
   }
-  /* "Nog XX dagen" verbergen — cd-box toont al de dagen */
+  /* "Nog XX dagen" verbergen - cd-box toont al de dagen */
   .hm-countdown .cd-title{display:none!important}
   /* cd-sub bevat de datum → klein en gedimpt */
   .hm-countdown .cd-sub{
@@ -4550,7 +4550,7 @@ html.dark .hsd-pill{background:var(--bg2);border-color:var(--bo2)}
   .card-desc{font-size:11px!important;margin-bottom:6px!important;line-height:1.4!important}
 
   /* ═══════════════════════════════════════
-     QUIZ SCREENS — altijd schermvullend
+     QUIZ SCREENS - altijd schermvullend
      (bottom nav al verborgen tijdens quiz)
      ═══════════════════════════════════════ */
 
@@ -4755,7 +4755,7 @@ html.dark .hsd-pill{background:var(--bg2);border-color:var(--bo2)}
 .lb-sc-platina{background:rgba(148,163,184,.18);color:#64748b;border:1px solid rgba(148,163,184,.4)}
 
 /* ═══════════════════════════════════════════════════════════════
-   DESIGN V3 — PREMIUM POLISH LAYER
+   DESIGN V3 - PREMIUM POLISH LAYER
    Pure visuele verfijning bovenop het bestaande systeem.
    Geen functionaliteit, alleen schoonheid, beweging en vreugde.
    ═══════════════════════════════════════════════════════════════ */
@@ -4775,7 +4775,7 @@ html:not(.dark) body{background:linear-gradient(180deg,#f7f7fc 0%,#f5f6fa 340px)
 /* Donkere modus: diepe navy met subtiele gloed bovenin */
 html.dark body{background:radial-gradient(ellipse 120% 60% at 50% -10%,#141828 0%,#0f1118 55%)}
 
-/* ── 2. HERO — AURORA + GRAIN ────────────────────────────────── */
+/* ── 2. HERO - AURORA + GRAIN ────────────────────────────────── */
 .hm-hero{isolation:isolate}
 .hm-hero::before{content:'';position:absolute;inset:-40% -20%;z-index:0;pointer-events:none;
   background:
@@ -4794,13 +4794,13 @@ html.dark body{background:radial-gradient(ellipse 120% 60% at 50% -10%,#141828 0
 /* Headline: levende gradient-shimmer op het accent-woord */
 .hm-h1 em{background:linear-gradient(110deg,var(--or) 20%,color-mix(in srgb,var(--or) 55%,#fff) 42%,var(--or) 60%,color-mix(in srgb,var(--or) 70%,#fff) 80%);background-size:220% 100%;-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;animation:v3shimmer 5.5s ease-in-out infinite}
 @keyframes v3shimmer{0%,100%{background-position:0% 0}50%{background-position:100% 0}}
-/* Greeting prominenter — als chip */
+/* Greeting prominenter - als chip */
 .hm-greeting{display:inline-flex;align-items:center;gap:7px;font-size:13px;font-weight:700;color:rgba(255,255,255,.82);margin-bottom:14px;min-height:20px;letter-spacing:.1px;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.1);border-radius:24px;padding:6px 16px;backdrop-filter:blur(8px)}
 .hm-greeting:empty{display:none}
 .hm-greeting.hm-greeting-warn{color:#fbbf24;background:rgba(251,191,36,.1);border-color:rgba(251,191,36,.3);animation:v3warnpulse 2.4s ease-in-out infinite}
 @keyframes v3warnpulse{0%,100%{box-shadow:0 0 0 0 rgba(251,191,36,0)}50%{box-shadow:0 0 18px 2px rgba(251,191,36,.25)}}
 
-/* ── 3. PRIMAIRE CTA — gradient + shine sweep ────────────────── */
+/* ── 3. PRIMAIRE CTA - gradient + shine sweep ────────────────── */
 .hm-cta-primary{position:relative;overflow:hidden;background:linear-gradient(135deg,var(--or) 0%,color-mix(in srgb,var(--or) 72%,#ffb46b) 100%);box-shadow:0 4px 22px rgba(var(--or-rgb),.5),0 1px 0 rgba(255,255,255,.25) inset}
 .hm-cta-primary::after{content:'';position:absolute;top:-50%;left:-80%;width:50%;height:200%;background:linear-gradient(100deg,transparent,rgba(255,255,255,.35),transparent);transform:skewX(-22deg);animation:v3sweep 3.8s cubic-bezier(.6,0,.3,1) infinite}
 @keyframes v3sweep{0%,55%{left:-80%}85%,100%{left:160%}}
@@ -4808,7 +4808,7 @@ html.dark body{background:radial-gradient(ellipse 120% 60% at 50% -10%,#141828 0
 .hm-cta-primary:active{transform:scale(.96)}
 .hm-cta-primary svg{filter:drop-shadow(0 1px 2px rgba(0,0,0,.2))}
 
-/* ── 4. VAK CARDS — kleur-accent + leven ─────────────────────── */
+/* ── 4. VAK CARDS - kleur-accent + leven ─────────────────────── */
 .card{box-shadow:0 1px 2px rgba(16,24,40,.04),0 4px 16px rgba(16,24,40,.05)}
 html.dark .card{box-shadow:0 1px 2px rgba(0,0,0,.25),0 6px 20px rgba(0,0,0,.22)}
 /* Kleur-accentlijn bovenaan elke kaart */
@@ -4825,13 +4825,13 @@ html.dark .card{box-shadow:0 1px 2px rgba(0,0,0,.25),0 6px 20px rgba(0,0,0,.22)}
 .sg .card:nth-child(n+9){animation-delay:.26s}
 @keyframes v3cardIn{from{opacity:0;transform:translateY(18px) scale(.97)}to{opacity:1;transform:translateY(0) scale(1)}}
 
-/* ── 5. BENTO — glasdiepte + sheen ───────────────────────────── */
+/* ── 5. BENTO - glasdiepte + sheen ───────────────────────────── */
 .bento-cell{backdrop-filter:blur(6px);box-shadow:0 1px 3px rgba(16,24,40,.05)}
 .bento-cell:hover{transform:translateY(-3px) scale(1.02);box-shadow:0 10px 26px rgba(0,0,0,.14)}
 .bento-cell:hover .bento-si{transform:scale(1.2)}
 .bento-si{transition:transform .25s cubic-bezier(.34,1.5,.64,1);display:inline-block}
 
-/* ── 6. QUIZ — juicy antwoorden ──────────────────────────────── */
+/* ── 6. QUIZ - juicy antwoorden ──────────────────────────────── */
 .oA{background:linear-gradient(135deg,#ef4565 0%,#d92b4b 100%);box-shadow:0 3px 14px rgba(233,68,90,.3),0 1px 0 rgba(255,255,255,.18) inset}
 .oB{background:linear-gradient(135deg,#3b76f6 0%,#1d56e0 100%);box-shadow:0 3px 14px rgba(43,98,235,.3),0 1px 0 rgba(255,255,255,.18) inset}
 .oC{background:linear-gradient(135deg,#f0930e 0%,#d97a06 100%);box-shadow:0 3px 14px rgba(222,130,8,.3),0 1px 0 rgba(255,255,255,.18) inset}
@@ -4852,24 +4852,24 @@ html.dark .card{box-shadow:0 1px 2px rgba(0,0,0,.25),0 6px 20px rgba(0,0,0,.22)}
 .nxt{position:relative;overflow:hidden;background:linear-gradient(135deg,var(--or),color-mix(in srgb,var(--or) 70%,#ffb46b))}
 .nxt::after{content:'';position:absolute;top:-50%;left:-80%;width:45%;height:200%;background:linear-gradient(100deg,transparent,rgba(255,255,255,.3),transparent);transform:skewX(-22deg);animation:v3sweep 3.2s cubic-bezier(.6,0,.3,1) infinite}
 
-/* ── 7. BOTTOM NAV — zwevende glasdok ────────────────────────── */
+/* ── 7. BOTTOM NAV - zwevende glasdok ────────────────────────── */
 .bottom-nav-inner{box-shadow:0 12px 40px rgba(0,0,0,.22),0 2px 8px rgba(0,0,0,.12),0 1px 0 rgba(255,255,255,.1) inset;border-color:color-mix(in srgb,var(--bo) 70%,rgba(var(--or-rgb),.2))}
 .bnav-btn{position:relative}
 .bnav-btn.active::before{content:'';position:absolute;top:2px;left:50%;transform:translateX(-50%);width:18px;height:3px;border-radius:99px;background:var(--or);box-shadow:0 0 8px rgba(var(--or-rgb),.8)}
 .bnav-fab{animation:v3fabglow 3.5s ease-in-out infinite}
 @keyframes v3fabglow{0%,100%{box-shadow:0 4px 24px rgba(var(--or-rgb),.55),0 0 0 4px rgba(var(--or-rgb),.15),0 1px 0 rgba(255,255,255,.18) inset}50%{box-shadow:0 4px 32px rgba(var(--or-rgb),.75),0 0 0 7px rgba(var(--or-rgb),.1),0 1px 0 rgba(255,255,255,.18) inset}}
 
-/* ── 8. COUNTDOWN — ademende cijfers ─────────────────────────── */
+/* ── 8. COUNTDOWN - ademende cijfers ─────────────────────────── */
 .hm-countdown .cd-box{transition:transform .25s cubic-bezier(.34,1.4,.64,1),border-color .3s,box-shadow .3s}
 .hm-countdown .cd-box:hover{transform:translateY(-3px)}
 .hm-countdown .cd-val{font-variant-numeric:tabular-nums}
 
-/* ── 9. STREAK & DAILY — vuur en feest ───────────────────────── */
+/* ── 9. STREAK & DAILY - vuur en feest ───────────────────────── */
 .daily-card-badge{animation:v3badgebob 3s ease-in-out infinite}
 @keyframes v3badgebob{0%,100%{transform:translateY(0)}50%{transform:translateY(-2px)}}
 .streak-card{position:relative;overflow:hidden}
 
-/* ── 10. KNOPPEN GLOBAAL — spring-feedback ───────────────────── */
+/* ── 10. KNOPPEN GLOBAAL - spring-feedback ───────────────────── */
 .qb:hover{transform:translateY(-1px);box-shadow:0 4px 14px rgba(var(--or-rgb),.35)}
 .qb:active,.exb:active,.bk:active,.nav-btn:active{transform:scale(.95)}
 .sam-cta-btn:hover{transform:translateY(-1px);box-shadow:0 5px 18px rgba(var(--or-rgb),.4);opacity:1}
@@ -4878,7 +4878,7 @@ html.dark .card{box-shadow:0 1px 2px rgba(0,0,0,.25),0 6px 20px rgba(0,0,0,.22)}
 .hm-soc-btn:hover{transform:translateY(-2px)}
 .hm-soc-btn:active{transform:scale(.96)}
 
-/* ── 11. DETAIL & DOMEINEN — verfijning ──────────────────────── */
+/* ── 11. DETAIL & DOMEINEN - verfijning ──────────────────────── */
 .dc2{transition:border-color .25s,box-shadow .25s,transform .25s}
 .dc2:hover{border-color:rgba(var(--or-rgb),.35);box-shadow:0 6px 24px rgba(var(--or-rgb),.1);transform:translateY(-1px)}
 .dlet{transition:transform .25s cubic-bezier(.34,1.5,.64,1)}
@@ -4886,7 +4886,7 @@ html.dark .card{box-shadow:0 1px 2px rgba(0,0,0,.25),0 6px 20px rgba(0,0,0,.22)}
 .sh{box-shadow:0 1px 3px rgba(16,24,40,.04),0 6px 24px rgba(16,24,40,.04)}
 html.dark .sh{box-shadow:0 4px 24px rgba(0,0,0,.25)}
 
-/* ── 12. RESULTATEN — feestelijke score ──────────────────────── */
+/* ── 12. RESULTATEN - feestelijke score ──────────────────────── */
 .res-xp{position:relative;overflow:hidden}
 .res-xp::before{content:'';position:absolute;top:-60%;left:-30%;width:60%;height:220%;background:linear-gradient(100deg,transparent,rgba(var(--or-rgb),.1),transparent);transform:skewX(-20deg);animation:v3sweep 4.5s cubic-bezier(.6,0,.3,1) infinite}
 .res-xp-num{animation:v3scorein .7s cubic-bezier(.34,1.5,.64,1) both .2s}
@@ -4894,17 +4894,17 @@ html.dark .sh{box-shadow:0 4px 24px rgba(0,0,0,.25)}
 .record-banner,.pb-banner{background:linear-gradient(135deg,rgba(245,158,11,.16),rgba(234,88,12,.1));border:1px solid rgba(245,158,11,.4);border-radius:16px;padding:13px 18px;margin-top:12px;font-weight:800;font-size:14.5px;color:#d97706;text-align:center;animation:comboIn .45s cubic-bezier(.34,1.5,.64,1);box-shadow:0 4px 20px rgba(245,158,11,.18)}
 html.dark .record-banner,html.dark .pb-banner{color:#fbbf24}
 
-/* ── 13. QUIZ-MODE KAARTEN — premium hover ───────────────────── */
+/* ── 13. QUIZ-MODE KAARTEN - premium hover ───────────────────── */
 .qmcd:hover{transform:translateY(-4px) scale(1.01)}
 .qmcd:active{transform:scale(.98)}
 .qmci{transition:transform .3s cubic-bezier(.34,1.5,.64,1),box-shadow .3s}
 .qmcd:hover .qmci{transform:scale(1.12) rotate(-4deg);box-shadow:0 4px 18px var(--qm-glow,rgba(255,255,255,.1))}
 
-/* ── 14. LEADERBOARD — podium glans ──────────────────────────── */
+/* ── 14. LEADERBOARD - podium glans ──────────────────────────── */
 .lb-pod-avatar{transition:transform .3s cubic-bezier(.34,1.4,.64,1)}
 .lb-pod-avatar:hover{transform:scale(1.08) translateY(-2px)}
 
-/* ── 15. TOEGANKELIJKHEID — minder beweging ──────────────────── */
+/* ── 15. TOEGANKELIJKHEID - minder beweging ──────────────────── */
 @media(prefers-reduced-motion:reduce){
   .hm-hero::before,.hm-h1 em,.hm-cta-primary::after,.nxt::after,.qpf,.res-xp::before,
   .bnav-fab,.daily-card-badge,.hm-greeting.hm-greeting-warn,.hero-beam,.qm-orb{animation:none!important}
@@ -4912,7 +4912,7 @@ html.dark .record-banner,html.dark .pb-banner{color:#fbbf24}
   *{transition-duration:.01s!important;scroll-behavior:auto}
 }
 
-/* ── 16. MOBIEL — extra adem en comfort ──────────────────────── */
+/* ── 16. MOBIEL - extra adem en comfort ──────────────────────── */
 @media(max-width:640px){
   .hm-greeting{font-size:12px;padding:5px 13px}
   .card{border-top-width:2.5px}
@@ -4920,11 +4920,11 @@ html.dark .record-banner,html.dark .pb-banner{color:#fbbf24}
 }
 
 /* ═══════════════════════════════════════════════════════════════
-   DESIGN V3b — SCHERM-SPECIFIEKE VERFIJNING
+   DESIGN V3b - SCHERM-SPECIFIEKE VERFIJNING
    Leaderboard, auth, profiel, XP, toasts.
    ═══════════════════════════════════════════════════════════════ */
 
-/* ── LEADERBOARD — een echt podium ───────────────────────────── */
+/* ── LEADERBOARD - een echt podium ───────────────────────────── */
 .lb-pod-avatar.gold{box-shadow:0 0 0 4px rgba(245,158,11,.2),0 6px 24px rgba(245,158,11,.45);animation:v3goldpulse 2.8s ease-in-out infinite}
 @keyframes v3goldpulse{0%,100%{box-shadow:0 0 0 4px rgba(245,158,11,.2),0 6px 24px rgba(245,158,11,.45)}50%{box-shadow:0 0 0 6px rgba(245,158,11,.3),0 8px 34px rgba(245,158,11,.65)}}
 .lb-pod-avatar.silver{box-shadow:0 0 0 3px rgba(156,163,175,.18),0 4px 16px rgba(156,163,175,.35)}
@@ -4942,7 +4942,7 @@ html.dark .record-banner,html.dark .pb-banner{color:#fbbf24}
 .lb-my-score{box-shadow:0 4px 22px rgba(var(--or-rgb),.15)}
 .lb-score-num{font-variant-numeric:tabular-nums}
 
-/* ── AUTH — uitnodigend en premium ───────────────────────────── */
+/* ── AUTH - uitnodigend en premium ───────────────────────────── */
 .auth-card{box-shadow:0 4px 16px rgba(16,24,40,.05),0 16px 48px rgba(16,24,40,.07);position:relative}
 html.dark .auth-card{box-shadow:0 8px 40px rgba(0,0,0,.4)}
 .auth-card::before{content:'';position:absolute;inset:-1px;border-radius:25px;padding:1px;background:linear-gradient(135deg,rgba(var(--or-rgb),.4),transparent 40%,transparent 60%,rgba(var(--or-rgb),.2));-webkit-mask:linear-gradient(#fff 0 0) content-box,linear-gradient(#fff 0 0);-webkit-mask-composite:xor;mask-composite:exclude;pointer-events:none}
@@ -4951,38 +4951,38 @@ html.dark .auth-card{box-shadow:0 8px 40px rgba(0,0,0,.4)}
 .auth-tab.active{box-shadow:0 2px 10px rgba(0,0,0,.1),0 0 0 1px rgba(var(--or-rgb),.15)}
 .auth-input:focus{transform:translateY(-1px)}
 
-/* ── PROFIEL — secties met karakter ──────────────────────────── */
+/* ── PROFIEL - secties met karakter ──────────────────────────── */
 .prof-section{box-shadow:0 1px 3px rgba(16,24,40,.04),0 6px 20px rgba(16,24,40,.04);transition:box-shadow .25s}
 html.dark .prof-section{box-shadow:0 4px 20px rgba(0,0,0,.22)}
 .prof-section:hover{box-shadow:0 2px 6px rgba(16,24,40,.05),0 10px 30px rgba(16,24,40,.07)}
 html.dark .prof-section:hover{box-shadow:0 6px 28px rgba(0,0,0,.3)}
 .pf-save-btn:active{transform:scale(.96)}
 
-/* ── XP & VOORTGANG — levende balken ─────────────────────────── */
+/* ── XP & VOORTGANG - levende balken ─────────────────────────── */
 .xp-bar,.lvl-teaser-fill-inner,.lbp-bar-fill,.bento-dg-bar-fill{position:relative;overflow:hidden}
 .xp-bar::after,.lvl-teaser-fill-inner::after,.bento-dg-bar-fill::after{content:'';position:absolute;top:0;left:-60%;width:50%;height:100%;background:linear-gradient(90deg,transparent,rgba(255,255,255,.4),transparent);animation:xpShimmer 2.6s ease-in-out infinite}
 .lvl-badge{box-shadow:0 2px 8px rgba(var(--or-rgb),.35)}
 
-/* ── TOASTS — zachter en vrolijker ───────────────────────────── */
+/* ── TOASTS - zachter en vrolijker ───────────────────────────── */
 .xp-toast{background:linear-gradient(135deg,#22c55e,#16a34a);box-shadow:0 6px 24px rgba(34,197,94,.5),0 1px 0 rgba(255,255,255,.25) inset;backdrop-filter:blur(8px)}
 
-/* ── HOME SECTIEKOPPEN — duidelijke ritmiek ──────────────────── */
+/* ── HOME SECTIEKOPPEN - duidelijke ritmiek ──────────────────── */
 .home-section-header{position:relative}
 .hsh-title{position:relative}
 .hsh-title::after{content:'';position:absolute;bottom:-4px;left:0;width:26px;height:2.5px;border-radius:99px;background:linear-gradient(90deg,var(--or),transparent)}
 
-/* ── FLASHCARDS — tactiele flip ──────────────────────────────── */
+/* ── FLASHCARDS - tactiele flip ──────────────────────────────── */
 .fc-card{transition:transform .2s cubic-bezier(.34,1.3,.64,1),box-shadow .25s}
 .fc-card:hover{box-shadow:0 14px 44px rgba(0,0,0,.25)}
 
 
-/* ── CONFIRM/MODAL — diepte ──────────────────────────────────── */
+/* ── CONFIRM/MODAL - diepte ──────────────────────────────────── */
 .quit-card,.tuto-card{box-shadow:0 32px 90px rgba(0,0,0,.55),0 0 0 1px rgba(255,255,255,.06)}
 
 /* ── DAGDOEL & QUICK CHIPS ───────────────────────────────────── */
 .hm-quick-scroll button:active{transform:scale(.94)}
 
-/* ── EMPTY STATES — warm in plaats van leeg ──────────────────── */
+/* ── EMPTY STATES - warm in plaats van leeg ──────────────────── */
 .lb-empty-orb{animation:v3orbfloat 4s ease-in-out infinite}
 @keyframes v3orbfloat{0%,100%{transform:translateY(0)}50%{transform:translateY(-6px)}}
 
@@ -4993,7 +4993,7 @@ html.dark .prof-section:hover{box-shadow:0 6px 28px rgba(0,0,0,.3)}
 }
 
 /* ═══════════════════════════════════════════════════════════════
-   DESIGN V4 — LIVING LAYER (hoort bij v4.js)
+   DESIGN V4 - LIVING LAYER (hoort bij v4.js)
    Avatar-leven, scroll-reveals, tilt, marquee, magnetiek.
    ═══════════════════════════════════════════════════════════════ */
 
@@ -5038,7 +5038,7 @@ html.dark .prof-section:hover{box-shadow:0 6px 28px rgba(0,0,0,.3)}
   35%{transform:scaleY(.72) scaleX(1.22) translateY(6%)}
   70%{transform:scaleY(1.08) scaleX(.94) translateY(-4%)}
   100%{transform:scaleY(1) scaleX(1)}}
-/* Wiebel bij hover — blije reactie */
+/* Wiebel bij hover - blije reactie */
 @media(hover:hover){
   .v4-avt:hover svg{animation:v4wiggle .7s cubic-bezier(.34,1.4,.64,1)}
   @keyframes v4wiggle{
@@ -5088,10 +5088,10 @@ html.dark .v4-mq-chip:hover{color:#fff;background:color-mix(in srgb,var(--mqc,#8
 .hm-hero .hsh-title::after{left:50%;transform:translateX(-50%)}
 
 /* ═══════════════════════════════════════════════════════════════
-   V4b — AVATAR STATE-ENGINE + COMPANION + EXAMENPAPIER-TOKENS
+   V4b - AVATAR STATE-ENGINE + COMPANION + EXAMENPAPIER-TOKENS
    ═══════════════════════════════════════════════════════════════ */
 
-/* ── QUIZ-COMPANION — je mascotte leeft mee ──────────────────── */
+/* ── QUIZ-COMPANION - je mascotte leeft mee ──────────────────── */
 #v4-companion{position:fixed;left:12px;bottom:calc(env(safe-area-inset-bottom,0px) + 14px);width:64px;height:64px;z-index:360;pointer-events:none;filter:drop-shadow(0 6px 18px rgba(0,0,0,.5));animation:v4compIn .55s cubic-bezier(.34,1.5,.64,1)}
 #v4-companion .anim-svg-wrap{width:64px;height:64px}
 @keyframes v4compIn{from{opacity:0;transform:translateY(40px) scale(.6)}to{opacity:1;transform:none}}
@@ -5108,13 +5108,13 @@ html.dark .v4-mq-chip:hover{color:#fff;background:color-mix(in srgb,var(--mqc,#8
 /* Correct: vreugdesprong met draai */
 .v4cs-correct svg{animation:v4csCorrect .75s cubic-bezier(.34,1.56,.64,1)!important;transform-origin:50% 100%}
 @keyframes v4csCorrect{0%{transform:scaleY(1)}18%{transform:scaleY(.76) scaleX(1.16)}45%{transform:translateY(-36%) scaleY(1.12) scaleX(.9) rotate(7deg)}70%{transform:translateY(0) scaleY(.92) scaleX(1.07) rotate(-3deg)}100%{transform:none}}
-/* Wrong: milde headshake — aanmoedigend, niet bestraffend */
+/* Wrong: milde headshake - aanmoedigend, niet bestraffend */
 .v4cs-wrong svg{animation:v4csWrong .8s ease-in-out!important;transform-origin:50% 85%}
 @keyframes v4csWrong{0%,100%{transform:rotate(0)}16%{transform:rotate(-9deg) translateX(-3%)}38%{transform:rotate(7deg) translateX(3%)}58%{transform:rotate(-4deg)}78%{transform:rotate(2deg) scaleY(.97)}}
 /* Streak: dubbele opgewonden bounce */
 .v4cs-streak svg{animation:v4csStreak .95s cubic-bezier(.34,1.5,.64,1)!important;transform-origin:50% 100%}
 @keyframes v4csStreak{0%{transform:scaleY(1)}13%{transform:scaleY(.78) scaleX(1.14)}32%{transform:translateY(-30%) rotate(-8deg)}48%{transform:translateY(0) scaleY(.88) scaleX(1.1)}62%{transform:translateY(-20%) rotate(8deg)}78%{transform:translateY(0) scaleY(.93)}100%{transform:none}}
-/* Level-up: aanloop + salto — het hoogtepunt */
+/* Level-up: aanloop + salto - het hoogtepunt */
 .v4cs-levelup svg{animation:v4csLevel 1.25s cubic-bezier(.45,0,.3,1.3)!important;transform-origin:50% 60%}
 @keyframes v4csLevel{0%{transform:scaleY(1)}16%{transform:scaleY(.65) scaleX(1.28) translateY(8%)}45%{transform:translateY(-55%) rotate(-360deg) scale(1.12)}70%{transform:translateY(0) rotate(-360deg) scaleY(.85) scaleX(1.12)}85%{transform:rotate(-360deg) scaleY(1.06)}100%{transform:rotate(-360deg) scaleY(1)}}
 /* Celebrate: feest-bounce ×3 met wiebel */
@@ -5169,7 +5169,7 @@ html.dark .v4-mq-chip:hover{color:#fff;background:color-mix(in srgb,var(--mqc,#8
   .hnav-chip{display:none}
 }
 /* ═══════════════════════════════════════════════════════════════
-   V5 — PER-VAK WERELDEN (lichtgewicht)
+   V5 - PER-VAK WERELDEN (lichtgewicht)
    Eén data-vak-mechanisme. Motief = scrollende achtergrond op het
    vak-hub scherm (geen fixed laag, geen mask → goedkoop te compositen).
    Botten gelijk; alleen palet (--vak-or) + motief verschillen.
@@ -5199,7 +5199,7 @@ html.dark[data-vak] #sc-detail{background:
   radial-gradient(ellipse 120% 55% at 50% -10%,rgba(var(--vak-or-rgb),.26),transparent 62%),
   var(--bg)}
 
-/* ── WISKUNDE A — statistiek/data: ruitjespapier ─────────────── */
+/* ── WISKUNDE A - statistiek/data: ruitjespapier ─────────────── */
 html[data-vak="wa"]{--vak-or:#2563EB;--vak-or-rgb:37,99,235;
   --vw-motif:
     linear-gradient(rgba(37,99,235,.18) 1px,transparent 1px) 0 0/28px 28px,
@@ -5207,20 +5207,20 @@ html[data-vak="wa"]{--vak-or:#2563EB;--vak-or-rgb:37,99,235;
     linear-gradient(rgba(37,99,235,.10) 1px,transparent 1px) 0 0/140px 140px,
     linear-gradient(90deg,rgba(37,99,235,.10) 1px,transparent 1px) 0 0/140px 140px}
 
-/* ── WISKUNDE B — functiecurves & parabolen ──────────────────── */
+/* ── WISKUNDE B - functiecurves & parabolen ──────────────────── */
 html[data-vak="wb"]{--vak-or:#6D28D9;--vak-or-rgb:109,40,217;
   --vw-motif:
     url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='110' height='110'><path d='M0 104 Q55 -8 110 104' fill='none' stroke='rgba(109,40,217,0.24)' stroke-width='2'/><path d='M0 70 Q55 24 110 70' fill='none' stroke='rgba(109,40,217,0.13)' stroke-width='1.6'/></svg>") 0 0/110px 110px}
 
-/* ── SCHEIKUNDE — benzeenringen (moleculen) ──────────────────── */
+/* ── SCHEIKUNDE - benzeenringen (moleculen) ──────────────────── */
 html[data-vak="sk"]{--vak-or:#D97706;--vak-or-rgb:217,119,6;
   --vw-motif:url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='56' height='50'><polygon points='28,4 50,17 50,37 28,50 6,37 6,17' fill='none' stroke='rgba(217,119,6,0.26)' stroke-width='1.7'/><circle cx='28' cy='27' r='2.6' fill='rgba(217,119,6,0.30)'/></svg>") 0 0/56px 50px}
 
-/* ── NATUURKUNDE — golven ────────────────────────────────────── */
+/* ── NATUURKUNDE - golven ────────────────────────────────────── */
 html[data-vak="na"]{--vak-or:#0EA5E9;--vak-or-rgb:14,165,233;
   --vw-motif:url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='72' height='40'><path d='M0 20 Q18 2 36 20 T72 20' fill='none' stroke='rgba(14,165,233,0.28)' stroke-width='2'/><path d='M0 33 Q18 17 36 33 T72 33' fill='none' stroke='rgba(14,165,233,0.14)' stroke-width='1.6'/></svg>") 0 0/72px 40px}
 
-/* ── BIOLOGIE — cellen ───────────────────────────────────────── */
+/* ── BIOLOGIE - cellen ───────────────────────────────────────── */
 html[data-vak="bi"]{--vak-or:#16A34A;--vak-or-rgb:22,163,74;
   --vw-motif:
     radial-gradient(circle at 20% 30%,rgba(22,163,74,.20) 0 10px,transparent 11px),
@@ -5229,47 +5229,47 @@ html[data-vak="bi"]{--vak-or:#16A34A;--vak-or-rgb:22,163,74;
     radial-gradient(circle at 88% 22%,rgba(22,163,74,.17) 0 12px,transparent 13px);
   background-size:170px 170px,210px 210px,150px 150px,190px 190px}
 
-/* ── AARDRIJKSKUNDE — hoogtelijnen ───────────────────────────── */
+/* ── AARDRIJKSKUNDE - hoogtelijnen ───────────────────────────── */
 html[data-vak="ak"]{--vak-or:#059669;--vak-or-rgb:5,150,105;
   --vw-motif:
     repeating-radial-gradient(circle at 25% 35%,transparent 0 16px,rgba(5,150,105,.22) 16px 18px,transparent 18px 34px),
     repeating-radial-gradient(circle at 80% 75%,transparent 0 18px,rgba(5,150,105,.17) 18px 20px,transparent 20px 38px)}
 
-/* ── ECONOMIE — vraag/aanbod-kruis ───────────────────────────── */
+/* ── ECONOMIE - vraag/aanbod-kruis ───────────────────────────── */
 html[data-vak="ec"]{--vak-or:#0891B2;--vak-or-rgb:8,145,178;
   --vw-motif:url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='84' height='84'><path d='M12 72 L72 12' stroke='rgba(8,145,178,0.24)' stroke-width='1.9' fill='none'/><path d='M12 12 L72 72' stroke='rgba(8,145,178,0.15)' stroke-width='1.9' fill='none'/></svg>") 0 0/84px 84px}
 
-/* ── BEDRIJFSECONOMIE — grootboek-kolommen ───────────────────── */
+/* ── BEDRIJFSECONOMIE - grootboek-kolommen ───────────────────── */
 html[data-vak="be"]{--vak-or:#0D9488;--vak-or-rgb:13,148,136;
   --vw-motif:
     repeating-linear-gradient(90deg,transparent 0 50px,rgba(13,148,136,.21) 50px 52px),
     repeating-linear-gradient(0deg,transparent 0 30px,rgba(13,148,136,.11) 30px 31px)}
 
-/* ── GESCHIEDENIS — archiefregels ────────────────────────────── */
+/* ── GESCHIEDENIS - archiefregels ────────────────────────────── */
 html[data-vak="gs"]{--vak-or:#B45309;--vak-or-rgb:180,83,9;
   --vw-motif:
     repeating-linear-gradient(0deg,transparent 0 33px,rgba(180,83,9,.18) 33px 34px),
     radial-gradient(ellipse 60% 40% at 14% 10%,rgba(180,83,9,.12),transparent 70%)}
 
-/* ── MAATSCHAPPIJWETENSCHAPPEN — netwerk ─────────────────────── */
+/* ── MAATSCHAPPIJWETENSCHAPPEN - netwerk ─────────────────────── */
 html[data-vak="mw"]{--vak-or:#DB2777;--vak-or-rgb:219,39,119;
   --vw-motif:url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='72' height='72'><g stroke='rgba(219,39,119,0.20)' stroke-width='1.2'><line x1='14' y1='14' x2='58' y2='44'/><line x1='58' y1='44' x2='22' y2='62'/><line x1='14' y1='14' x2='22' y2='62'/></g><g fill='rgba(219,39,119,0.30)'><circle cx='14' cy='14' r='3.4'/><circle cx='58' cy='44' r='3.4'/><circle cx='22' cy='62' r='3.4'/></g></svg>") 0 0/72px 72px}
 
-/* ── INFORMATICA — circuit ───────────────────────────────────── */
+/* ── INFORMATICA - circuit ───────────────────────────────────── */
 html[data-vak="in"]{--vak-or:#0284C7;--vak-or-rgb:2,132,199;
   --vw-motif:url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='56' height='56'><path d='M0 28h14a4 4 0 004-4V8M28 56V34a4 4 0 014-4h24' fill='none' stroke='rgba(2,132,199,0.22)' stroke-width='1.6'/><circle cx='18' cy='24' r='2.6' fill='rgba(2,132,199,0.32)'/><circle cx='32' cy='30' r='2.6' fill='rgba(2,132,199,0.32)'/></svg>") 0 0/56px 56px}
 
-/* ── GRIEKS — meander ────────────────────────────────────────── */
+/* ── GRIEKS - meander ────────────────────────────────────────── */
 html[data-vak="gr"]{--vak-or:#1D4ED8;--vak-or-rgb:29,78,216;
   --vw-motif:url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='44' height='44'><path d='M5 5h22v22h-13v-11h6' fill='none' stroke='rgba(29,78,216,0.26)' stroke-width='2.3'/></svg>") 0 0/44px 44px}
 
-/* ── LATIJN — klassieke zuilgroeven (Romeinse pilaren) ───────── */
+/* ── LATIJN - klassieke zuilgroeven (Romeinse pilaren) ───────── */
 html[data-vak="la"]{--vak-or:#7C3AED;--vak-or-rgb:124,58,237;
   --vw-motif:
     repeating-linear-gradient(90deg,transparent 0 6px,rgba(124,58,237,.18) 6px 7px,transparent 7px 13px,rgba(124,58,237,.10) 13px 14px,transparent 14px 34px),
     radial-gradient(ellipse 70% 30% at 50% 4%,rgba(124,58,237,.12),transparent 68%)}
 
-/* ── TALEN — typografisch, eigen tongval per taal ────────────── */
+/* ── TALEN - typografisch, eigen tongval per taal ────────────── */
 html[data-vak="nl"]{--vak-or:#E85C0D;--vak-or-rgb:232,92,13;
   --vw-motif:url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='420' height='420'><text x='50%25' y='66%25' font-family='Georgia,serif' font-weight='800' font-size='320' fill='rgba(232,92,13,0.08)' text-anchor='middle'>ij</text></svg>") center 40px/min(78vw,420px) no-repeat}
 html[data-vak="en"]{--vak-or:#4F46E5;--vak-or-rgb:79,70,229;
@@ -5280,7 +5280,7 @@ html[data-vak="fr"]{--vak-or:#BE185D;--vak-or-rgb:190,24,93;
   --vw-motif:url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='420' height='420'><text x='50%25' y='68%25' font-family='Georgia,serif' font-weight='800' font-size='330' fill='rgba(190,24,93,0.08)' text-anchor='middle'>é</text></svg>") center 40px/min(72vw,420px) no-repeat}
 
 /* ═══════════════════════════════════════════════════════════════
-   V7 — SCHERM-WERELDEN (app)
+   V7 - SCHERM-WERELDEN (app)
    Elk bestemmingsscherm een eigen sfeer die bij zijn functie past.
    Eén georkestreerd moment per scherm: accent + atmosfeer. Geen
    versnipperde effecten. Scoped per scherm-ID → geen markup nodig.
@@ -5294,56 +5294,56 @@ html[data-vak="fr"]{--vak-or:#BE185D;--vak-or-rgb:190,24,93;
 #sc-schedule .sched-header h2,
 #sc-groep .grp-header h2{position:relative;display:inline-block}
 
-/* ── LEADERBOARD — kampioenspodium: spotlight & goud ─────────── */
+/* ── LEADERBOARD - kampioenspodium: spotlight & goud ─────────── */
 #sc-leaderboard{--or:#F59E0B;--or-rgb:245,158,11;background:
   conic-gradient(from 180deg at 50% -2%,transparent 42%,rgba(245,158,11,.10) 50%,transparent 58%),
   radial-gradient(ellipse 70% 42% at 50% -6%,rgba(245,158,11,.18),transparent 62%),
   var(--bg)}
 #sc-leaderboard .lb-header h2{text-shadow:0 0 32px rgba(245,158,11,.35)}
 
-/* ── PROFIEL — jouw identiteit: zachte aura om je avatar ─────── */
+/* ── PROFIEL - jouw identiteit: zachte aura om je avatar ─────── */
 #sc-profiel{--or:#8B5CF6;--or-rgb:139,92,246;background:
   radial-gradient(ellipse 64% 40% at 50% 2%,rgba(139,92,246,.16),transparent 60%),
   var(--bg)}
 
-/* ── STUDIEPLAN — planning & structuur: blauwdruk-raster ─────── */
+/* ── STUDIEPLAN - planning & structuur: blauwdruk-raster ─────── */
 #sc-studieplan{--or:#6366F1;--or-rgb:99,102,241;background:
   linear-gradient(rgba(99,102,241,.05) 1px,transparent 1px) 0 0/30px 30px,
   linear-gradient(90deg,rgba(99,102,241,.05) 1px,transparent 1px) 0 0/30px 30px,
   radial-gradient(ellipse 70% 38% at 50% -4%,rgba(99,102,241,.16),transparent 60%),
   var(--bg)}
 
-/* ── CIJFERCALCULATOR — voldoende & precisie: rustig groen ───── */
+/* ── CIJFERCALCULATOR - voldoende & precisie: rustig groen ───── */
 #sc-calc{--or:#10B981;--or-rgb:16,185,129;background:
   radial-gradient(ellipse 66% 38% at 50% -4%,rgba(16,185,129,.15),transparent 60%),
   var(--bg)}
 
-/* ── EXAMENROOSTER — tijd & helderheid: agenda-blauw ─────────── */
+/* ── EXAMENROOSTER - tijd & helderheid: agenda-blauw ─────────── */
 #sc-schedule{--or:#0EA5E9;--or-rgb:14,165,233;background:
   repeating-linear-gradient(90deg,transparent 0 56px,rgba(14,165,233,.05) 56px 57px),
   radial-gradient(ellipse 70% 38% at 50% -4%,rgba(14,165,233,.15),transparent 60%),
   var(--bg)}
 
-/* ── GROEP — samen oefenen: verbonden teal ──────────────────── */
+/* ── GROEP - samen oefenen: verbonden teal ──────────────────── */
 #sc-groep{--or:#14B8A6;--or-rgb:20,184,166;background:
   radial-gradient(ellipse 66% 40% at 50% -4%,rgba(20,184,166,.16),transparent 60%),
   var(--bg)}
 
-/* ── SOCIAAL — de hub: warme community-gloed ────────────────── */
+/* ── SOCIAAL - de hub: warme community-gloed ────────────────── */
 #sc-sociaal{--or:#F43F5E;--or-rgb:244,63,94;background:
   radial-gradient(ellipse 66% 42% at 50% -4%,rgba(244,63,94,.15),transparent 60%),
   var(--bg)}
 
-/* ── FLASHCARDS — geheugen & herhaling: fuchsia focus ───────── */
+/* ── FLASHCARDS - geheugen & herhaling: fuchsia focus ───────── */
 #sc-flash{--or:#C026D3;--or-rgb:192,38,211;background:linear-gradient(180deg,
   color-mix(in srgb,rgba(192,38,211,1) 7%,#0A0C10) 0%,#10131c 100%)}
 
-/* ── REVIEW (foutenoverzicht) — reflectie: gedempt amber ─────── */
+/* ── REVIEW (foutenoverzicht) - reflectie: gedempt amber ─────── */
 #sc-review{--or:#D97706;--or-rgb:217,119,6;background:
   radial-gradient(ellipse 66% 38% at 50% -4%,rgba(217,119,6,.13),transparent 60%),
   var(--bg)}
 
-/* Reduced motion: niets beweegt hier toch — statische sfeer blijft */
+/* Reduced motion: niets beweegt hier toch - statische sfeer blijft */
 
 /* ══════════════════════════════════════════════════════════════════
    MODERN REDESIGN 2026  ·  engagement & depth enhancement layer
@@ -5458,7 +5458,7 @@ html.dark{
 @media(max-width:560px){
   .bottom-nav-inner{backdrop-filter:blur(30px) saturate(1.5);-webkit-backdrop-filter:blur(30px) saturate(1.5);box-shadow:0 14px 44px rgba(0,0,0,.2),0 2px 10px rgba(0,0,0,.1),0 1px 0 rgba(255,255,255,.12) inset}
   .hnav,.nav{backdrop-filter:blur(26px) saturate(1.4);-webkit-backdrop-filter:blur(26px) saturate(1.4)}
-  /* NB: .hm-sociaal-section NIET verbergen op mobiel — de bento (desktop-route
+  /* NB: .hm-sociaal-section NIET verbergen op mobiel - de bento (desktop-route
      naar Sociaal) is op mobiel al verborgen, dus deze knoppen zijn op telefoons
      de enige weg naar het leaderboard en de groepen. */
   .hm-quick-scroll{margin-top:4px}
@@ -5522,7 +5522,7 @@ html.dark{
 }
 
 /* ══════════════════════════════════════════════════════════════════
-   REDESIGN 2026.2  ·  "Examenpapier & De Vlag Uit" — verfijning
+   REDESIGN 2026.2  ·  "Examenpapier & De Vlag Uit" - verfijning
    Doel: AI-tells eruit, premium via rust. Temt delen van de 2026.1-laag.
    Source-order wint; feedback-states (groen/rood) blijven onaangeroerd
    via :not()-scoping zodat kleur betekenis houdt. ═══════════════════ */
@@ -5646,7 +5646,7 @@ html.dark .vd-hero-art{opacity:.17}
 @keyframes amvSway{0%,100%{transform:rotate(-3deg)}50%{transform:rotate(3deg)}}
 /* Goud-rang (25.000 XP): de mascotte verguld tot een gouden vorm */
 .anim-goud{filter:saturate(0) sepia(1) saturate(3.5) hue-rotate(2deg) brightness(1.08) drop-shadow(0 0 7px rgba(247,196,72,.9)) drop-shadow(0 3px 5px rgba(120,80,0,.28))}
-/* Ultiem-rang (30.000 XP): echt ultiem — stralende aura + draaiende lichtstralen */
+/* Ultiem-rang (30.000 XP): echt ultiem - stralende aura + draaiende lichtstralen */
 .anim-ascend{position:relative;filter:drop-shadow(0 0 10px rgba(255,242,190,.95)) drop-shadow(0 0 22px rgba(255,205,90,.55))}
 .anim-ascend::before{content:'';position:absolute;left:50%;top:48%;width:186%;height:186%;transform:translate(-50%,-50%);z-index:-1;pointer-events:none;border-radius:50%;
   background:repeating-conic-gradient(from 0deg,rgba(255,224,130,.5) 0deg 6deg,rgba(255,224,130,0) 6deg 22deg);
@@ -5680,7 +5680,7 @@ html.dark .vd-hero-art{opacity:.17}
 .po-title .ico,.bron-card-title .ico{margin-right:0!important;color:var(--or)}
 
 /* ═══════════════════════════════════════════════════════════════════════
-   PREMIUM DASHBOARD REDESIGN — flagship (scoped to #sc-home)
+   PREMIUM DASHBOARD REDESIGN - flagship (scoped to #sc-home)
    Richting: "premium donker + gamified glow". Eén samenhangende sfeer onder
    de hero, een verzorgd kaart-systeem met diepte, en een opgewaardeerde
    gamification-hub. Alles gescoped op #sc-home zodat de rest van de app
@@ -5841,7 +5841,7 @@ html.dark #sc-home .sg .card:hover{
 html.dark #sc-home .xp-home-lvl::after{background:conic-gradient(from -90deg,
   var(--or) calc(var(--evo-pct,0)*1%),rgba(255,255,255,.08) 0)}
 
-/* ── Bento-actietegels: restraint — neutrale tegel als rust, accent pas bij
+/* ── Bento-actietegels: restraint - neutrale tegel als rust, accent pas bij
    hover. Vier identieke felle accenttegels = ruis; neutralen laten domineren
    (10%-regel). De interactie levert de kleur, niet de ruststand. ────────── */
 #sc-home .bento-act{gap:7px;padding:13px 6px}
@@ -5923,7 +5923,7 @@ html.dark #sc-home .sg .card .cp-bar{background:rgba(255,255,255,.09)}
 }
 
 /* ═══════════════════════════════════════════════════════════════════════
-   VAK-DETAIL — premium cohesie, overflow-fix & mobiele inkorting
+   VAK-DETAIL - premium cohesie, overflow-fix & mobiele inkorting
    ═══════════════════════════════════════════════════════════════════════ */
 /* Flexbox-overflow-fix: de tekstkolom moet kunnen krimpen, anders duwt een
    lange domeintitel de inhoud buiten het kader ("half buiten het vakje"). */
@@ -5932,7 +5932,7 @@ html.dark #sc-home .sg .card .cp-bar{background:rgba(255,255,255,.09)}
 #sc-detail .di h4{overflow-wrap:anywhere;word-break:break-word}
 #sc-detail .dom-ce-badge{max-width:100%;white-space:normal}
 
-/* Kaart-diepte in dark — consistent met het dashboard (premium donker) */
+/* Kaart-diepte in dark - consistent met het dashboard (premium donker) */
 html.dark #sc-detail .dc2,
 html.dark #sc-detail .sh{
   background:linear-gradient(180deg,rgba(255,255,255,.045),rgba(255,255,255,.014));
@@ -5987,7 +5987,7 @@ html.dark #sc-detail .dc2:hover{
 .mf-head-icon{display:inline-flex;align-items:center;color:var(--or)}
 
 /* ═══════════════════════════════════════════════════════════════════════
-   EXAMENZOEKMACHINE — in-app scherm (#sc-zoek)
+   EXAMENZOEKMACHINE - in-app scherm (#sc-zoek)
    ═══════════════════════════════════════════════════════════════════════ */
 #sc-zoek{--zk-ease:cubic-bezier(.16,1,.3,1);position:relative;
   background:radial-gradient(820px 440px at 50% -100px,rgba(var(--or-rgb),.06),transparent 62%),var(--bg)}
@@ -6106,7 +6106,7 @@ html.dark #sc-zoek mark{color:#ffd9c2}
 .zk-recent-chip svg{stroke:var(--mu);flex-shrink:0}
 
 /* ═══════════════════════════════════════════════════════════════════════
-   DOMEIN-PAGINA — dedicated leerstof-scherm per domein (#sc-domein)
+   DOMEIN-PAGINA - dedicated leerstof-scherm per domein (#sc-domein)
    ═══════════════════════════════════════════════════════════════════════ */
 #sc-domein .det-breadcrumb{margin-bottom:16px}
 .dom-hero-card{display:flex;gap:16px;align-items:flex-start;background:var(--s);border:1px solid var(--bo);border-radius:18px;padding:22px;margin-bottom:16px;box-shadow:0 2px 8px rgba(0,0,0,.05)}
@@ -6143,7 +6143,7 @@ html.dark .dom-hero-card{background:linear-gradient(180deg,rgba(255,255,255,.045
 .sam-clip.reduced .sam-clip-caps p{margin:3px 0 3px 20px;font-size:13px;color:var(--mu);font-weight:500;list-style:disc;display:list-item}
 
 /* De clip-choreografie (positie, opacity, teken-effect) wordt volledig door
-   sam-clip.js aangestuurd via requestAnimationFrame — geen CSS-transitions op de
+   sam-clip.js aangestuurd via requestAnimationFrame - geen CSS-transitions op de
    bewegende elementen, zodat elke frame exact wordt geplaatst (vloeiend). */
 .sam-clip svg .ball,.sam-clip svg .glow{will-change:transform}
 .sam-clip .cap-fade{transition:opacity .35s ease}
@@ -6238,3 +6238,8 @@ html.dark .dom-hero-card{background:linear-gradient(180deg,rgba(255,255,255,.045
 .lg-divider span{font-size:10.5px;font-weight:800;text-transform:uppercase;letter-spacing:.5px;padding:2px 12px;border-radius:20px}
 .lg-divider-up span{color:#0f9d58;background:rgba(15,157,88,.12)}
 .lg-divider-dn span{color:#e5484d;background:rgba(229,72,77,.1)}
+
+/* Skins: accessoire-overlay op de avatar + shop-cosmetics */
+.av-wrap{position:relative;display:inline-block;line-height:0}
+.av-skin{position:absolute;top:-7px;right:-9px;font-size:.6em;line-height:1;transform:rotate(13deg);filter:drop-shadow(0 1px 1px rgba(0,0,0,.28));pointer-events:none}
+.shop-cos{font-size:23px;width:28px;text-align:center;flex-shrink:0;line-height:1}

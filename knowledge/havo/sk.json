@@ -1,11 +1,11 @@
 {
  "sk_A": {
-  "syllabus": "CE Scheikunde HAVO — Domein A: Vaardigheden (chemisch rekenen en onderzoek)",
+  "syllabus": "CE Scheikunde HAVO - Domein A: Vaardigheden (chemisch rekenen en onderzoek)",
   "leerdoelen": [
    {
     "id": "sk.A.1",
     "titel": "Rekenen met mol en concentratie",
-    "eindterm": "A — chemisch rekenen",
+    "eindterm": "A - chemisch rekenen",
     "teVerifiëren": true,
     "beschrijving": "De kandidaat kan rekenen met de hoeveelheid stof (mol), molaire massa en concentratie en daarbij de juiste eenheden gebruiken.",
     "concepten": [
@@ -33,7 +33,7 @@
    {
     "id": "sk.A.2",
     "titel": "Scheidingsmethoden en zuiverheid",
-    "eindterm": "A — stoffen scheiden",
+    "eindterm": "A - stoffen scheiden",
     "teVerifiëren": true,
     "beschrijving": "De kandidaat kan een mengsel van een zuivere stof onderscheiden en scheidingsmethoden zoals filtratie toepassen en verklaren.",
     "concepten": [
@@ -60,7 +60,7 @@
    {
     "id": "sk.A.3",
     "titel": "Onderzoek opzetten en betrouwbaarheid",
-    "eindterm": "A — onderzoeksvaardigheden",
+    "eindterm": "A - onderzoeksvaardigheden",
     "teVerifiëren": true,
     "beschrijving": "De kandidaat kan een hypothese formuleren, variabelen en een controle-experiment benoemen en de rol van herhaalmetingen en nauwkeurigheid beoordelen.",
     "concepten": [
@@ -89,7 +89,7 @@
    {
     "id": "sk.A.4",
     "titel": "Veiligheid en gevaarsymbolen",
-    "eindterm": "A — veilig werken",
+    "eindterm": "A - veilig werken",
     "teVerifiëren": true,
     "beschrijving": "De kandidaat kan GHS-pictogrammen herkennen en veilig omgaan met stoffen in het practicum.",
     "concepten": [
@@ -115,12 +115,12 @@
   ]
  },
  "sk_B": {
-  "syllabus": "CE Scheikunde HAVO — Domein B: Stoffen en materialen (atoombouw, binding, oplossen)",
+  "syllabus": "CE Scheikunde HAVO - Domein B: Stoffen en materialen (atoombouw, binding, oplossen)",
   "leerdoelen": [
    {
     "id": "sk.B.1",
     "titel": "Atoombouw en elementen",
-    "eindterm": "B — bouw van de stof",
+    "eindterm": "B - bouw van de stof",
     "teVerifiëren": true,
     "beschrijving": "De kandidaat kan de bouw van een atoom beschrijven en elementen plaatsen met behulp van atoombouw.",
     "concepten": [
@@ -147,7 +147,7 @@
    {
     "id": "sk.B.2",
     "titel": "Ionen en ionbinding",
-    "eindterm": "B — ionbinding",
+    "eindterm": "B - ionbinding",
     "teVerifiëren": true,
     "beschrijving": "De kandidaat kan het ontstaan van ionen en de ionbinding in zouten verklaren.",
     "concepten": [
@@ -173,7 +173,7 @@
    {
     "id": "sk.B.3",
     "titel": "Moleculen en atoombinding",
-    "eindterm": "B — covalente binding",
+    "eindterm": "B - covalente binding",
     "teVerifiëren": true,
     "beschrijving": "De kandidaat kan moleculen en de covalente (atoom)binding beschrijven en molecuulformules lezen.",
     "concepten": [
@@ -201,7 +201,7 @@
    {
     "id": "sk.B.4",
     "titel": "Metaalbinding en legeringen",
-    "eindterm": "B — metalen",
+    "eindterm": "B - metalen",
     "teVerifiëren": true,
     "beschrijving": "De kandidaat kan de metaalbinding en de eigenschappen van legeringen verklaren.",
     "concepten": [
@@ -227,7 +227,7 @@
    {
     "id": "sk.B.5",
     "titel": "Polariteit en intermoleculaire krachten",
-    "eindterm": "B — moleculaire stoffen",
+    "eindterm": "B - moleculaire stoffen",
     "teVerifiëren": true,
     "beschrijving": "De kandidaat kan polariteit van moleculen en de rol van intermoleculaire krachten bij stofeigenschappen verklaren.",
     "concepten": [
@@ -253,7 +253,7 @@
    {
     "id": "sk.B.6",
     "titel": "Mengsels, oplossen en oplosbaarheid",
-    "eindterm": "B — oplossingen en mengsels",
+    "eindterm": "B - oplossingen en mengsels",
     "teVerifiëren": true,
     "beschrijving": "De kandidaat kan een mengsel/oplossing beschrijven en het oplossen van stoffen en verschillen in oplosbaarheid verklaren met polariteit.",
     "concepten": [
@@ -281,12 +281,12 @@
   ]
  },
  "sk_C": {
-  "syllabus": "CE Scheikunde HAVO — Domein C: Chemische processen (reacties, rekenen, zuur-base, redox, snelheid, evenwicht)",
+  "syllabus": "CE Scheikunde HAVO - Domein C: Chemische processen (reacties, rekenen, zuur-base, redox, snelheid, evenwicht)",
   "leerdoelen": [
    {
     "id": "sk.C.1",
     "titel": "Reactievergelijkingen kloppend maken",
-    "eindterm": "C — reactievergelijkingen",
+    "eindterm": "C - reactievergelijkingen",
     "teVerifiëren": true,
     "beschrijving": "De kandidaat kan een reactievergelijking kloppend maken met de juiste coëfficiënten.",
     "concepten": [
@@ -313,7 +313,7 @@
    {
     "id": "sk.C.2",
     "titel": "Rekenen aan reacties",
-    "eindterm": "C — rekenen aan reacties",
+    "eindterm": "C - rekenen aan reacties",
     "teVerifiëren": true,
     "beschrijving": "De kandidaat kan met de molverhouding uit een reactievergelijking hoeveelheden berekenen.",
     "concepten": [
@@ -339,7 +339,7 @@
    {
     "id": "sk.C.3",
     "titel": "Zuren, basen en pH",
-    "eindterm": "C — zuren en basen",
+    "eindterm": "C - zuren en basen",
     "teVerifiëren": true,
     "beschrijving": "De kandidaat kan zuren en basen herkennen, pH interpreteren en een neutralisatie beschrijven.",
     "concepten": [
@@ -369,7 +369,7 @@
    {
     "id": "sk.C.4",
     "titel": "Redoxreacties",
-    "eindterm": "C — redox",
+    "eindterm": "C - redox",
     "teVerifiëren": true,
     "beschrijving": "De kandidaat kan oxidatie en reductie herkennen en een redoxreactie beschrijven.",
     "concepten": [
@@ -396,7 +396,7 @@
    {
     "id": "sk.C.5",
     "titel": "Energie-effect: endo- en exotherm",
-    "eindterm": "C — energie bij reacties",
+    "eindterm": "C - energie bij reacties",
     "teVerifiëren": true,
     "beschrijving": "De kandidaat kan endotherme en exotherme reacties onderscheiden aan het energie-effect.",
     "concepten": [
@@ -422,7 +422,7 @@
    {
     "id": "sk.C.6",
     "titel": "Reactiesnelheid en katalyse",
-    "eindterm": "C — reactiesnelheid",
+    "eindterm": "C - reactiesnelheid",
     "teVerifiëren": true,
     "beschrijving": "De kandidaat kan verklaren hoe concentratie, temperatuur, verdelingsgraad en een katalysator de reactiesnelheid beïnvloeden.",
     "concepten": [
@@ -451,7 +451,7 @@
    {
     "id": "sk.C.7",
     "titel": "Chemisch evenwicht",
-    "eindterm": "C — evenwicht",
+    "eindterm": "C - evenwicht",
     "teVerifiëren": true,
     "beschrijving": "De kandidaat kan een chemisch evenwicht beschrijven als een dynamische toestand.",
     "concepten": [
@@ -476,12 +476,12 @@
   ]
  },
  "sk_D": {
-  "syllabus": "CE Scheikunde HAVO — Domein D: Koolstofchemie (koolwaterstoffen, functionele groepen, reactietypen, polymeren)",
+  "syllabus": "CE Scheikunde HAVO - Domein D: Koolstofchemie (koolwaterstoffen, functionele groepen, reactietypen, polymeren)",
   "leerdoelen": [
    {
     "id": "sk.D.1",
     "titel": "Koolwaterstoffen: alkanen en alkenen",
-    "eindterm": "D — koolwaterstoffen",
+    "eindterm": "D - koolwaterstoffen",
     "teVerifiëren": true,
     "beschrijving": "De kandidaat kan alkanen en alkenen onderscheiden en homologe reeksen herkennen.",
     "concepten": [
@@ -508,7 +508,7 @@
    {
     "id": "sk.D.2",
     "titel": "Functionele groepen herkennen",
-    "eindterm": "D — functionele groepen",
+    "eindterm": "D - functionele groepen",
     "teVerifiëren": true,
     "beschrijving": "De kandidaat kan functionele groepen zoals de hydroxyl- en carboxylgroep in een structuurformule herkennen.",
     "concepten": [
@@ -539,7 +539,7 @@
    {
     "id": "sk.D.3",
     "titel": "Esters en estervorming",
-    "eindterm": "D — esters",
+    "eindterm": "D - esters",
     "teVerifiëren": true,
     "beschrijving": "De kandidaat kan de vorming van een ester uit een alcohol en een carbonzuur beschrijven.",
     "concepten": [
@@ -565,7 +565,7 @@
    {
     "id": "sk.D.4",
     "titel": "Isomerie en naamgeving",
-    "eindterm": "D — isomerie",
+    "eindterm": "D - isomerie",
     "teVerifiëren": true,
     "beschrijving": "De kandidaat kan isomeren herkennen en organische stoffen systematisch benoemen.",
     "concepten": [
@@ -591,7 +591,7 @@
    {
     "id": "sk.D.5",
     "titel": "Reactietypen in de koolstofchemie",
-    "eindterm": "D — reactietypen",
+    "eindterm": "D - reactietypen",
     "teVerifiëren": true,
     "beschrijving": "De kandidaat kan additie-, substitutie- en verbrandingsreacties onderscheiden.",
     "concepten": [
@@ -619,7 +619,7 @@
    {
     "id": "sk.D.6",
     "titel": "Polymeren",
-    "eindterm": "D — polymeren",
+    "eindterm": "D - polymeren",
     "teVerifiëren": true,
     "beschrijving": "De kandidaat kan de vorming van polymeren uit monomeren beschrijven.",
     "concepten": [
@@ -645,12 +645,12 @@
   ]
  },
  "sk_E": {
-  "syllabus": "CE Scheikunde HAVO — Domein E: Chemie en samenleving (grondstoffen, milieu, duurzaamheid)",
+  "syllabus": "CE Scheikunde HAVO - Domein E: Chemie en samenleving (grondstoffen, milieu, duurzaamheid)",
   "leerdoelen": [
    {
     "id": "sk.E.1",
     "titel": "Grondstoffen, materialen en industrie",
-    "eindterm": "E — grondstoffen en materialen",
+    "eindterm": "E - grondstoffen en materialen",
     "teVerifiëren": true,
     "beschrijving": "De kandidaat kan de weg van grondstof naar materiaal in de industriële chemie beschrijven.",
     "concepten": [
@@ -677,7 +677,7 @@
    {
     "id": "sk.E.2",
     "titel": "Milieuproblemen: broeikaseffect, ozon en zure regen",
-    "eindterm": "E — milieu-effecten",
+    "eindterm": "E - milieu-effecten",
     "teVerifiëren": true,
     "beschrijving": "De kandidaat kan de oorzaken van broeikaseffect, aantasting van de ozonlaag en zure regen verklaren.",
     "concepten": [
@@ -707,7 +707,7 @@
    {
     "id": "sk.E.3",
     "titel": "Duurzaamheid en groene chemie",
-    "eindterm": "E — duurzaamheid",
+    "eindterm": "E - duurzaamheid",
     "teVerifiëren": true,
     "beschrijving": "De kandidaat kan principes van groene chemie, recycling en een circulaire economie beoordelen op duurzaamheid.",
     "concepten": [
@@ -735,7 +735,7 @@
    {
     "id": "sk.E.4",
     "titel": "Levenscyclusanalyse",
-    "eindterm": "E — levenscyclusanalyse",
+    "eindterm": "E - levenscyclusanalyse",
     "teVerifiëren": true,
     "beschrijving": "De kandidaat kan met een levenscyclusanalyse de milieubelasting van een product over alle fasen beoordelen.",
     "concepten": [
@@ -760,7 +760,7 @@
    {
     "id": "sk.E.5",
     "titel": "Chemie in voeding en energie",
-    "eindterm": "E — toepassingen",
+    "eindterm": "E - toepassingen",
     "teVerifiëren": true,
     "beschrijving": "De kandidaat kan chemische aspecten van voedsel en biobrandstoffen in de samenleving beschrijven.",
     "concepten": [

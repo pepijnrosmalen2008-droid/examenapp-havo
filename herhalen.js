@@ -1,5 +1,5 @@
 // ═══════════════════════════════════════════════════════════════════════
-// herhalen.js — HERHAALPLANNING (spaced repetition voor ÁLLE geoefende domeinen)
+// herhalen.js - HERHAALPLANNING (spaced repetition voor ÁLLE geoefende domeinen)
 // Bouwt op de bestaande decay-tijdstempels (getDecay in lb.js). Een domein dat
 // je lang niet oefende en/of matig beheerst, zakt weg en komt hier terug om op
 // te frissen. Vonk presenteert het. Geen LLM, puur op bestaande data.

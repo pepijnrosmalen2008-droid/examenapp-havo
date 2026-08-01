@@ -5,7 +5,7 @@
 // curve volgt via getPointAtLength, met fysieke easing). Bijschriften lopen mee.
 // Auto-play bij in-beeld; play/pauze/opnieuw. Progressive enhancement: bij
 // prefers-reduced-motion, geen rAF/SVG-ondersteuning of een fout toont de clip een
-// statisch eindbeeld + alle stappen als tekst (klasse .reduced) — nooit kapot.
+// statisch eindbeeld + alle stappen als tekst (klasse .reduced) - nooit kapot.
 (function () {
   "use strict";
   var reduce = window.matchMedia && matchMedia("(prefers-reduced-motion: reduce)").matches;
@@ -99,12 +99,12 @@
   // beschrijft een clip zich als data: een SVG-scène (met vaste klassen) plus een
   // lijst "tracks" op de tijdlijn. specChoreo() maakt daar een choreo-object van
   // dat het bestaande framework aandrijft. Tracktypes:
-  //   reveal   — teken een pad in (stroke-dashoffset len→0) over [t0,t1]
-  //   fade     — opacity from→to over [t0,t1]
-  //   attr     — numeriek attribuut (bv. r) from→to over [t0,t1]
-  //   moveAlong— .ball/.glow volgt een pad via f-keyframes [[t,fractie,ease]]
-  //   tangent  — raaklijn aan een pad in het volgpunt + richtingslabel per zone
-  //   custom   — ontsnappingsluik: fn(t,ctx)
+  //   reveal   - teken een pad in (stroke-dashoffset len→0) over [t0,t1]
+  //   fade     - opacity from→to over [t0,t1]
+  //   attr     - numeriek attribuut (bv. r) from→to over [t0,t1]
+  //   moveAlong- .ball/.glow volgt een pad via f-keyframes [[t,fractie,ease]]
+  //   tangent  - raaklijn aan een pad in het volgpunt + richtingslabel per zone
+  //   custom   - ontsnappingsluik: fn(t,ctx)
   var EAS = { lin: function (x) { return x; }, out: easeOut, in: easeIn, io: easeInOut };
 
   function piecewise(kfs, t) {
@@ -388,7 +388,7 @@
       toggle();
     });
 
-    // afspeelsnelheid-knop (dynamisch toegevoegd — geen markup-wijziging per clip nodig)
+    // afspeelsnelheid-knop (dynamisch toegevoegd - geen markup-wijziging per clip nodig)
     var bar = clip.querySelector(".sam-clip-bar");
     if (bar) {
       var spBtn = document.createElement("button");

@@ -155,10 +155,10 @@
 
     <div class="result-box">
       <div class="result-label">Jouw CE-cijfer</div>
-      <div class="result-value" id="result-value">—</div>
+      <div class="result-value" id="result-value">-</div>
       <div id="pass-indicator" class="pass-indicator neutral">Vul je gegevens in</div>
       <div class="score-bar-wrap" id="bar-wrap" style="display:none">
-        <div class="score-bar-label"><span>1,0</span><span id="bar-score-label">—</span><span>10,0</span></div>
+        <div class="score-bar-label"><span>1,0</span><span id="bar-score-label">-</span><span>10,0</span></div>
         <div class="score-bar-track"><div class="score-bar-fill" id="score-bar"></div></div>
       </div>
     </div>
@@ -259,7 +259,7 @@
     const barLabel = document.getElementById('bar-score-label');
 
     if (isNaN(behaald) || isNaN(maximaal) || isNaN(nterm) || maximaal <= 0) {
-      resultEl.textContent = '—';
+      resultEl.textContent = '-';
       resultEl.className = 'result-value';
       indicatorEl.textContent = 'Vul je gegevens in';
       indicatorEl.className = 'pass-indicator neutral';

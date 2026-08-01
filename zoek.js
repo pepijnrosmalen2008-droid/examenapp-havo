@@ -1,5 +1,5 @@
 // ═══════════════════════════════════════════════════════════
-//  SLAGIO — EXAMENZOEKMACHINE (in-app)
+//  SLAGIO - EXAMENZOEKMACHINE (in-app)
 //  Client-side full-text zoek over examens, begrippen, uitleg & oefenvragen.
 //  Index wordt lazy opgebouwd bij eerste opening; ce_data.js lazy geladen.
 // ═══════════════════════════════════════════════════════════
@@ -137,7 +137,7 @@ function zoekGoto(niveau,vakId,kind,domId){
     if(window.openVak)openVak(vakId);
     if(kind==='quiz'&&domId){ setTimeout(()=>{try{openQmode(domId);}catch(e){}},70); }
     else if(domId){ setTimeout(()=>{const el=document.querySelector('#dlist [data-domein-id="'+domId+'"]');if(el){el.scrollIntoView({behavior:'smooth',block:'center'});el.classList.add('dc2-flash');setTimeout(()=>el.classList.remove('dc2-flash'),1400);}},260); }
-  }catch(err){ if(window.showToast)showToast('Kon niet openen — probeer opnieuw'); }
+  }catch(err){ if(window.showToast)showToast('Kon niet openen - probeer opnieuw'); }
 }
 
 // ── Render ──
@@ -260,7 +260,7 @@ function _zkEmpty(){
       +'<svg viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>'
       +_zkEsc(q)+'</button>').join('')+'</div></div>';
   }
-  el.innerHTML='<div class="zk-state"><h3>Zoek in de hele kennisbank</h3><p>'+(_zoekIndex?_zoekIndex.length.toLocaleString('nl'):'Duizenden')+' vragen, begrippen en uitleg-fragmenten — HAVO &amp; VWO.</p></div>'+recHtml;
+  el.innerHTML='<div class="zk-state"><h3>Zoek in de hele kennisbank</h3><p>'+(_zoekIndex?_zoekIndex.length.toLocaleString('nl'):'Duizenden')+' vragen, begrippen en uitleg-fragmenten - HAVO &amp; VWO.</p></div>'+recHtml;
   [].forEach.call(el.querySelectorAll('.zk-recent-chip'),c=>c.onclick=()=>{
     const q=document.getElementById('zoek-q');q.value=c.getAttribute('data-q');_zkSearch(q.value);q.focus();});
 }

@@ -1,8 +1,8 @@
 // ═══════ SUPABASE ═══════
 const SUPABASE_URL='https://wcfenegohryxhatzxvtw.supabase.co';
 const SUPABASE_KEY='eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6IndjZmVuZWdvaHJ5eGhhdHp4dnR3Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODEyODcwMDAsImV4cCI6MjA5Njg2MzAwMH0.B3ygpkosBybQd53VLiRxqIbVxBPWw4V-Nj2IS3k4UFo';
-// Supabase-client. Als de (cross-origin) library niet geladen is — offline, CDN plat,
-// of geblokkeerd door een adblocker — mag de app NIET stuklopen: dan draaien we op een
+// Supabase-client. Als de (cross-origin) library niet geladen is - offline, CDN plat,
+// of geblokkeerd door een adblocker - mag de app NIET stuklopen: dan draaien we op een
 // veilige offline-stub zodat alles op lokale data blijft werken (vakken, quiz, samenvattingen).
 function _sbOfflineStub(){
   var res=function(v){return Promise.resolve(v);};
@@ -28,7 +28,7 @@ function _sbOfflineStub(){
 }
 const _sbLib=window.supabase;
 const SB=(_sbLib&&_sbLib.createClient)?_sbLib.createClient(SUPABASE_URL,SUPABASE_KEY):_sbOfflineStub();
-if(!(_sbLib&&_sbLib.createClient)){try{console.warn('[Slagio] Supabase niet beschikbaar — offline modus; lokale data blijft werken.');}catch(e){}}
+if(!(_sbLib&&_sbLib.createClient)){try{console.warn('[Slagio] Supabase niet beschikbaar - offline modus; lokale data blijft werken.');}catch(e){}}
 // Persistent device ID - generated once, stored in localStorage
 const _DID=(()=>{try{let id=localStorage.getItem('slagio_did');if(!id){id=(crypto.randomUUID?crypto.randomUUID():'x'+Math.random().toString(36).slice(2)+Date.now().toString(36));localStorage.setItem('slagio_did',id);}return id;}catch(e){return null;}})();
 async function trackEvent(type,meta){
@@ -520,7 +520,7 @@ function authErrMsg(msg){
   if(m.includes('password'))return'Wachtwoord moet minimaal 8 tekens zijn.';
   if(m.includes('rate limit')||m.includes('too many'))return'Te veel pogingen. Probeer het later opnieuw.';
   if(m.includes('network')||m.includes('fetch')||m.includes('failed to'))return'Geen verbinding met de server. Controleer je internet en probeer opnieuw.';
-  // Onbekende fout: toon de echte melding (ingekort) i.p.v. hem te verbergen —
+  // Onbekende fout: toon de echte melding (ingekort) i.p.v. hem te verbergen -
   // anders is een serverprobleem niet te onderscheiden van een invoerfout.
   return'Er ging iets mis: '+String(msg).slice(0,120);
 }

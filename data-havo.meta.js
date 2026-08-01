@@ -123,7 +123,7 @@ var VAKKEN = [
   "code": "WA",
   "kleur": "#2563EB",
   "beschrijving": "Algebra, verbanden en statistiek op HAVO-niveau.",
-  "ceInfo": "CE = domein B (B1 Rekenen + B2 Algebra incl. logaritmen — telproblemen B3 zijn SE-only), domein C (Verbanden: lineair, exponentieel, kwadratisch én periodiek/sinusoïdaal) en domein E (Statistiek: beschrijvende statistiek, normaalverdeling, hypothesetoets, regressie). Domein D (Verandering/Differentiëren) is uitsluitend SE. Telproblemen (B3) zijn SE. Kansrekening in statistische context (z-scores, normaalverdeling) is CE; uitgebreide kansregels (P(A∩B), binomiale verdeling) zijn SE.",
+  "ceInfo": "CE = domein B (B1 Rekenen + B2 Algebra incl. logaritmen - telproblemen B3 zijn SE-only), domein C (Verbanden: lineair, exponentieel, kwadratisch én periodiek/sinusoïdaal) en domein E (Statistiek: beschrijvende statistiek, normaalverdeling, hypothesetoets, regressie). Domein D (Verandering/Differentiëren) is uitsluitend SE. Telproblemen (B3) zijn SE. Kansrekening in statistische context (z-scores, normaalverdeling) is CE; uitgebreide kansregels (P(A∩B), binomiale verdeling) zijn SE.",
   "exDatum": "2026-05-19",
   "exTijd": "13:30–16:30",
   "exDuur": "3 uur",
@@ -138,7 +138,7 @@ var VAKKEN = [
     "ceStatus": "CE+SE",
     "binas": [],
     "val": [
-     "Modelleeruitkomst niet terugkoppelen naar de context — vertaal het wiskundige antwoord altijd naar de betekenis in de situatie",
+     "Modelleeruitkomst niet terugkoppelen naar de context - vertaal het wiskundige antwoord altijd naar de betekenis in de situatie",
      "Representaties verwarren: tabel = concrete punten, grafiek = visueel patroon, formule = exacte rekenregel voor alle x-waarden"
     ],
     "onderwerpen": [
@@ -157,13 +157,13 @@ var VAKKEN = [
     "val": [
      "Log-regels verwarren: log(a·b) = log a + log b, niet log a · log b",
      "Groeifactor verkeerd bepalen: bij p% groei is g = 1 + p/100, niet g = p/100",
-     "Telproblemen (B3) op het CE toepassen — B3 staat NIET op het CE",
+     "Telproblemen (B3) op het CE toepassen - B3 staat NIET op het CE",
      "Kwadratische vergelijking altijd via abc-formule terwijl ontbinden sneller kan"
     ],
     "onderwerpen": [
      "B1: Rekenen (CE)",
      "B2: Algebra (CE)",
-     "B3: Telproblemen (SE — niet op CE)"
+     "B3: Telproblemen (SE - niet op CE)"
     ],
     "nSv": 51,
     "nOe": 7,
@@ -177,9 +177,9 @@ var VAKKEN = [
     "binas": [],
     "val": [
      "Lineair versus evenredig verwarren: evenredig gaat door oorsprong (b=0), lineair niet per se",
-     "Groeifactor g > 1 is altijd groei, g < 1 is altijd verval — niet omgekeerd",
+     "Groeifactor g > 1 is altijd groei, g < 1 is altijd verval - niet omgekeerd",
      "Asymptoot: exponentieel verval bereikt de x-as nooit",
-     "Rico fout bepalen: Δy in de teller, Δx in de noemer — niet omgedraaid"
+     "Rico fout bepalen: Δy in de teller, Δx in de noemer - niet omgedraaid"
     ],
     "onderwerpen": [
      "C1: Tabellen interpreteren (CE)",
@@ -200,9 +200,9 @@ var VAKKEN = [
     "binas": [],
     "val": [
      "Verschilquotiënt verwarren met de afgeleide: verschilquotiënt is gemiddeld over interval, afgeleide is ogenblikkelijk",
-     "f'(x) = 0 geeft kandidaat-extremen, niet altijd werkelijk extremen — altijd tekenschema maken",
+     "f'(x) = 0 geeft kandidaat-extremen, niet altijd werkelijk extremen - altijd tekenschema maken",
      "Optimalisatie: nevenvoorwaarde vergeten en de formule niet terugbrengen tot één variabele",
-     "Raaklijn: helling is f'(a), niet f(a) — verwar functiewaarde niet met afgeleidwaarde"
+     "Raaklijn: helling is f'(a), niet f(a) - verwar functiewaarde niet met afgeleidwaarde"
     ],
     "onderwerpen": [
      "D1: Gemiddelde verandering: verschilquotiënt (CE)",
@@ -226,7 +226,7 @@ var VAKKEN = [
     "val": [
      "Gemiddelde gebruiken bij uitschieters terwijl mediaan representatiever is",
      "Z-score verkeerd berekenen: z = (x − μ) / σ, niet (μ − x) / σ",
-     "H0 \"bewijzen\" — je kunt H0 alleen verwerpen of niet verwerpen, nooit bewijzen",
+     "H0 \"bewijzen\" - je kunt H0 alleen verwerpen of niet verwerpen, nooit bewijzen",
      "Correlatie als causaliteit interpreteren: r beschrijft samenhang, niet oorzaak en gevolg"
     ],
     "onderwerpen": [
@@ -234,7 +234,7 @@ var VAKKEN = [
      "E2: Normale verdeling: vuistregels en z-scores (CE)",
      "E3: Hypothesetoets: H0, H1, p-waarde en significantieniveau (CE)",
      "E4: Regressie en correlatie: r en R² (CE)",
-     "E5: Kansrekening: P(A), binomiaal (SE — niet op CE)"
+     "E5: Kansrekening: P(A), binomiaal (SE - niet op CE)"
     ],
     "nSv": 83,
     "nOe": 9,
@@ -286,8 +286,8 @@ var VAKKEN = [
     "beschrijving": "Stofwisseling van de cel, zelforganisatie (DNA/erfelijkheid) en selectie op moleculair niveau",
     "ceStatus": "CE",
     "binas": [
-     "Tabel 82 — DNA en nucleïnezuren",
-     "Tabel 65 — Enzymen en actief centrum"
+     "Tabel 82 - DNA en nucleïnezuren",
+     "Tabel 65 - Enzymen en actief centrum"
     ],
     "val": [
      "Mitose en meiose verwarren: mitose voor groei, meiose voor geslachtscellen",
@@ -313,13 +313,13 @@ var VAKKEN = [
     "beschrijving": "Stofwisseling van het organisme, zelfregulatie en afweer",
     "ceStatus": "CE",
     "binas": [
-     "Tabel 83 — Hormonen menselijk lichaam",
-     "Tabel 84 — Afweersysteem"
+     "Tabel 83 - Hormonen menselijk lichaam",
+     "Tabel 84 - Afweersysteem"
     ],
     "val": [
-     "Longslagader bevat zuurstofarm bloed — niet zuurstofrijk",
+     "Longslagader bevat zuurstofarm bloed - niet zuurstofrijk",
      "Insuline en glucagon verwisselen: insuline verlaagt bloedsuiker, glucagon verhoogt",
-     "Aspecifieke afweer heeft geen immunologisch geheugen — specifieke wel",
+     "Aspecifieke afweer heeft geen immunologisch geheugen - specifieke wel",
      "Reflexboog loopt via ruggenmerg, niet via de hersenen"
     ],
     "onderwerpen": [
@@ -340,7 +340,7 @@ var VAKKEN = [
     "beschrijving": "Ecosystemen, soortvorming en evolutie",
     "ceStatus": "CE",
     "binas": [
-     "Tabel 68 — Energiestromen in ecosystemen"
+     "Tabel 68 - Energiestromen in ecosystemen"
     ],
     "val": [
      "10%-regel omdraaien: 10% wordt doorgegeven, 90% gaat verloren als warmte",
@@ -379,7 +379,7 @@ var VAKKEN = [
    {
     "id": "A",
     "naam": "Vaardigheden en onderzoek",
-    "beschrijving": "Scheikundig onderzoek: proefopzet, variabelen, grafieken en veiligheid — verweven door alle CE-onderdelen",
+    "beschrijving": "Scheikundig onderzoek: proefopzet, variabelen, grafieken en veiligheid - verweven door alle CE-onderdelen",
     "ceStatus": "CE+SE",
     "binas": [],
     "val": [
@@ -387,7 +387,7 @@ var VAKKEN = [
      "Conclusie baseren op verwachting i.p.v. op meetdata",
      "Systematische fout verwarren met toevallige fout",
      "Validiteit en betrouwbaarheid door elkaar halen",
-     "Verkeerde scheidingsmethode kiezen: destillatie ≠ filtreren — kies op basis van eigenschap (kookpunt vs. deeltjesgrootte)"
+     "Verkeerde scheidingsmethode kiezen: destillatie ≠ filtreren - kies op basis van eigenschap (kookpunt vs. deeltjesgrootte)"
     ],
     "onderwerpen": [
      "Onderzoeksvraag en hypothese formuleren",
@@ -409,19 +409,19 @@ var VAKKEN = [
     "beschrijving": "Atoomstructuur, bindingen en eigenschappen van stoffen",
     "ceStatus": "CE",
     "binas": [
-     "Tabel 40 — Periodiek systeem der elementen",
-     "Tabel 41 — Elektronenconfiguraties en valentie-elektronen",
-     "Tabel 42 — Bindingstypen en eigenschappen",
-     "Tabel 43 — Vaste-stofstructuren"
+     "Tabel 40 - Periodiek systeem der elementen",
+     "Tabel 41 - Elektronenconfiguraties en valentie-elektronen",
+     "Tabel 42 - Bindingstypen en eigenschappen",
+     "Tabel 43 - Vaste-stofstructuren"
     ],
     "val": [
      "Molecuulpolairiteit alleen afleiden uit bindingen zonder geometrie te controleren (bijv. CO₂ is apolair)",
      "Ionbinding en polaire covalente binding verwisselen",
-     "Waterstofbrug alleen bij water verwachten — ook NH₃ en HF vormen waterstofbruggen",
-     "Atoomstraal: neemt toe naar rechts in periode (fout) — neemt af naar rechts, toe naar beneden",
-     "Elektronegativiteitsverschil <1,7 is altijd ionisch — fout: <1,7 = polair covalent, >1,7 = ionisch",
-     "Ionverbinding geleidt altijd stroom — alleen in gesmolten toestand of waterige oplossing, niet in vaste toestand",
-     "Kristalrooster en moleculaire stof verwarren bij smeltpunt voorspellen — roosterstof heeft veel hoger smeltpunt"
+     "Waterstofbrug alleen bij water verwachten - ook NH₃ en HF vormen waterstofbruggen",
+     "Atoomstraal: neemt toe naar rechts in periode (fout) - neemt af naar rechts, toe naar beneden",
+     "Elektronegativiteitsverschil <1,7 is altijd ionisch - fout: <1,7 = polair covalent, >1,7 = ionisch",
+     "Ionverbinding geleidt altijd stroom - alleen in gesmolten toestand of waterige oplossing, niet in vaste toestand",
+     "Kristalrooster en moleculaire stof verwarren bij smeltpunt voorspellen - roosterstof heeft veel hoger smeltpunt"
     ],
     "onderwerpen": [
      "Atoomstructuur en periodiek systeem",
@@ -441,23 +441,23 @@ var VAKKEN = [
     "beschrijving": "Reacties, evenwicht, zuren en basen, en stoichiometrie",
     "ceStatus": "CE",
     "binas": [
-     "Tabel 28 — Thermodynamica",
-     "Tabel 29 — Reacties",
-     "Tabel 31 — Stoffen en reacties",
-     "Tabel 49 — Zuur-base evenwichten en pKa-waarden",
-     "Tabel 50 — Standaard reductiepotentialen"
+     "Tabel 28 - Thermodynamica",
+     "Tabel 29 - Reacties",
+     "Tabel 31 - Stoffen en reacties",
+     "Tabel 49 - Zuur-base evenwichten en pKa-waarden",
+     "Tabel 50 - Standaard reductiepotentialen"
     ],
     "val": [
-     "Katalysator verschuift het evenwicht — fout: katalysator versnelt alleen, ligging verandert niet",
+     "Katalysator verschuift het evenwicht - fout: katalysator versnelt alleen, ligging verandert niet",
      "Sterk/zwak verwarren met geconcentreerd/verdund zuur",
      "pH van zwak zuur berekenen als ware het sterk zuur",
      "Oxidatie en reductie omdraaien: oxidatie = elektronen afstaan (OIL RIG)",
      "Reactiesnelheid en hoeveelheid product verwarren: snelheid = per tijdseenheid, hoeveelheid = absoluut totaal",
      "Endotherm en exotherm omdraaien: exotherm geeft warmte af (ΔH < 0), endotherm neemt warmte op (ΔH > 0)",
-     "Activeringsenergie aflezen als hoogteverschil reactant–product — fout: Ea = piek minus beginniveau reactanten",
+     "Activeringsenergie aflezen als hoogteverschil reactant–product - fout: Ea = piek minus beginniveau reactanten",
      "K-waarde en reactiesnelheid verwarren: grote K = veel product op evenwicht, niet een snelle reactie",
-     "Katalysator als verbruikt beschouwen — fout: katalysator wordt na de reactie vrijgesteld en hergebruikt",
-     "Massa verdwijnt bij reactie denken — fout: massa blijft altijd behouden (wet van behoud van massa)",
+     "Katalysator als verbruikt beschouwen - fout: katalysator wordt na de reactie vrijgesteld en hergebruikt",
+     "Massa verdwijnt bij reactie denken - fout: massa blijft altijd behouden (wet van behoud van massa)",
      "Mengsel en verbinding door elkaar halen: verbinding heeft vaste samenstelling, mengsel variabele",
      "Rendement en conversie verwarren: conversie = omgezette fractie reactant, rendement = werkelijke vs. theoretische opbrengst"
     ],
@@ -481,8 +481,8 @@ var VAKKEN = [
     "beschrijving": "Organische chemie: koolwaterstofverbindingen, functionele groepen en reacties",
     "ceStatus": "CE",
     "binas": [
-     "Tabel 66 — Functionele groepen organische chemie",
-     "Tabel 67 — Organische reactietypen"
+     "Tabel 66 - Functionele groepen organische chemie",
+     "Tabel 67 - Organische reactietypen"
     ],
     "val": [
      "Additie en substitutie verwisselen: additie bij alkenen (dubbele binding), substitutie bij alkanen",
@@ -512,7 +512,7 @@ var VAKKEN = [
      "CO₂ (broeikasgas) verwarren met CFK's (ozonlaagaantasting): verschillende problemen",
      "Thermoplast en thermoharder verwisselen: thermoplast is smeltbaar en recycleerbaar",
      "Emulgator als conserveringsmiddel beschrijven: emulgator houdt water en vet gemengd",
-     "Haber-Bosch: lage T geeft hogere opbrengst maar te langzame reactie — compromis bij 450°C"
+     "Haber-Bosch: lage T geeft hogere opbrengst maar te langzame reactie - compromis bij 450°C"
     ],
     "onderwerpen": [
      "Groene chemie en duurzaamheid",
@@ -552,7 +552,7 @@ var VAKKEN = [
     "binas": [],
     "val": [
      "OV en AV verwisselen: de onafhankelijke variabele (OV) stel je in, de afhankelijke variabele (AV) meet je",
-     "Conclusie niet koppelen aan hypothese — een conclusie moet expliciet de hypothese bevestigen of verwerpen op basis van de meetdata"
+     "Conclusie niet koppelen aan hypothese - een conclusie moet expliciet de hypothese bevestigen of verwerpen op basis van de meetdata"
     ],
     "onderwerpen": [
      "Onderzoekscyclus: vraagstelling, hypothese, opzet, uitvoering, conclusie",
@@ -571,10 +571,10 @@ var VAKKEN = [
     "beschrijving": "Geluid, licht, elektromagnetisch spectrum en beeldvorming",
     "ceStatus": "CE",
     "binas": [
-     "Tabel 35 — Natuurkundeformules (v = f·λ, breking)",
-     "Tabel 19 — Elektromagnetisch spectrum",
-     "Tabel 18 — Brekingsindices",
-     "Tabel 15 — Geluidssnelheden"
+     "Tabel 35 - Natuurkundeformules (v = f·λ, breking)",
+     "Tabel 19 - Elektromagnetisch spectrum",
+     "Tabel 18 - Brekingsindices",
+     "Tabel 15 - Geluidssnelheden"
     ],
     "onderwerpen": [
      "Golfvergelijking v = f·λ",
@@ -594,26 +594,26 @@ var VAKKEN = [
     "beschrijving": "Krachten, kinematica en energie",
     "ceStatus": "CE",
     "binas": [
-     "Tabel 33 — Warmte en temperatuur",
-     "Tabel 34 — Energie en vermogen",
-     "Tabel 35 — Formules beweging",
-     "Tabel 36 — Krachten",
-     "Tabel 37 — Vectoren",
-     "Tabel 38 — Impuls en energie"
+     "Tabel 33 - Warmte en temperatuur",
+     "Tabel 34 - Energie en vermogen",
+     "Tabel 35 - Formules beweging",
+     "Tabel 36 - Krachten",
+     "Tabel 37 - Vectoren",
+     "Tabel 38 - Impuls en energie"
     ],
     "val": [
-     "(v,t)-grafiek: helling = versnelling, oppervlak = afgelegde weg — niet omdraaien",
+     "(v,t)-grafiek: helling = versnelling, oppervlak = afgelegde weg - niet omdraaien",
      "Versnelling en snelheid verwarren: snelheid in m/s, versnelling in m/s² (verandering per tijdseenheid)",
-     "Vectorrichting negeren bij krachtenontleding — krachten zijn vectoren met richting én grootte",
-     "Resulterende kracht fout bepalen bij hoeken — vectorieel optellen, niet getalsmatig sommeren",
+     "Vectorrichting negeren bij krachtenontleding - krachten zijn vectoren met richting én grootte",
+     "Resulterende kracht fout bepalen bij hoeken - vectorieel optellen, niet getalsmatig sommeren",
      "Actie-reactie verwarren met krachtenevenwicht: actie-reactie werkt op ANDERE objecten, evenwicht op hetzelfde object",
      "Massa en gewicht door elkaar halen: massa in kg (constant), gewicht in N = m·g (afhankelijk van zwaarteveld)",
      "Impuls en kracht verwarren: impuls p = m·v in kg·m/s, kracht F = m·a in N",
      "Impulsbehoud verkeerd toepassen: alleen geldig bij gesloten systeem zonder externe nettokracht",
      "Vermogen en energie verwarren: energie in J (totaal), vermogen in W = J/s (per tijdseenheid)",
-     "Rendement boven 100% accepteren — maximaal 100%, anders rekenfout in teller of noemer",
+     "Rendement boven 100% accepteren - maximaal 100%, anders rekenfout in teller of noemer",
      "Warmte en temperatuur verwarren: temperatuur in K of °C (toestand), warmte in J (energieoverdracht)",
-     "Massa vergeten bij Q = c·m·ΔT — alle drie factoren verplicht, massa in kg"
+     "Massa vergeten bij Q = c·m·ΔT - alle drie factoren verplicht, massa in kg"
     ],
     "onderwerpen": [
      "Kinematische vergelijkingen (constante versnelling)",
@@ -633,11 +633,11 @@ var VAKKEN = [
     "beschrijving": "Elektrische schakelingen, Ohm, vermogen en elektromagnetische inductie",
     "ceStatus": "CE",
     "binas": [
-     "Tabel 30 — Elektrische grootheden"
+     "Tabel 30 - Elektrische grootheden"
     ],
     "val": [
      "Stroom en spanning verwarren: stroomsterkte I in A (ladingen/s), spanning U in V (energieverschil per lading)",
-     "Lading vergeten in Q = I·t — lading Q in coulomb, I in A, t in s",
+     "Lading vergeten in Q = I·t - lading Q in coulomb, I in A, t in s",
      "Serie en parallel door elkaar halen: serie = zelfde stroom, parallel = zelfde spanning",
      "Wet van Ohm omzetten: U = I·R → I = U/R en R = U/I, kies de juiste vorm",
      "Stroomrichting: conventionele stroom van + naar −, elektronen van − naar +",
@@ -661,14 +661,14 @@ var VAKKEN = [
     "beschrijving": "Radioactiviteit, kernreacties en elektromagnetische straling met materie",
     "ceStatus": "CE",
     "binas": [
-     "Tabel 19 — Elektromagnetisch spectrum",
-     "Tabel 25 — Radioactiviteit",
-     "Tabel 26 — Halveringstijd"
+     "Tabel 19 - Elektromagnetisch spectrum",
+     "Tabel 25 - Radioactiviteit",
+     "Tabel 26 - Halveringstijd"
     ],
     "val": [
      "Frequentie en energie omdraaien: hogere frequentie = kortere golflengte = meer energie per foton",
      "Golflengte en frequentie verwisselen: λ = v/f, grotere λ = kleinere f bij gelijke snelheid",
-     "Halveringstijd als lineair behandelen — na 2 × t½ is er nog ¼ over, niet 0 (exponentieel verval)",
+     "Halveringstijd als lineair behandelen - na 2 × t½ is er nog ¼ over, niet 0 (exponentieel verval)",
      "Alfa, beta en gamma verwarren: alfa stopt in papier, beta in aluminium, gamma gedempt door lood"
     ],
     "onderwerpen": [
@@ -799,7 +799,7 @@ var VAKKEN = [
    {
     "id": "A",
     "naam": "Woordenschat & grammatica",
-    "beschrijving": "Engelse woordenschat en grammatica op B1-niveau — basis voor lees-, schrijf- en luistervaardigheid",
+    "beschrijving": "Engelse woordenschat en grammatica op B1-niveau - basis voor lees-, schrijf- en luistervaardigheid",
     "onderwerpen": [
      "Woordbetekenissen uit context afleiden",
      "Collocaties en vaste uitdrukkingen",
@@ -855,7 +855,7 @@ var VAKKEN = [
    {
     "id": "D",
     "naam": "Gespreksvaardigheid",
-    "beschrijving": "Spreken en interacteren in het Engels op B1-niveau — presenteren, discussiëren, reageren (SE)",
+    "beschrijving": "Spreken en interacteren in het Engels op B1-niveau - presenteren, discussiëren, reageren (SE)",
     "onderwerpen": [
      "Presentaties houden in het Engels",
      "Mening geven en onderbouwen",
@@ -873,7 +873,7 @@ var VAKKEN = [
    {
     "id": "E",
     "naam": "Schrijfvaardigheid",
-    "beschrijving": "Schrijven in het Engels op B1-niveau — brieven, e-mails, essays en rapporten (SE)",
+    "beschrijving": "Schrijven in het Engels op B1-niveau - brieven, e-mails, essays en rapporten (SE)",
     "onderwerpen": [
      "Formele brief en zakelijke e-mail in het Engels",
      "Informatief artikel schrijven",
@@ -891,7 +891,7 @@ var VAKKEN = [
    {
     "id": "F",
     "naam": "Literatuur",
-    "beschrijving": "Engelstalige literatuur lezen en analyseren op B1/B2-niveau (SE — schoolexamen)",
+    "beschrijving": "Engelstalige literatuur lezen en analyseren op B1/B2-niveau (SE - schoolexamen)",
     "onderwerpen": [
      "Literaire begrippen in het Engels",
      "Plot, setting, character, theme",
@@ -914,7 +914,7 @@ var VAKKEN = [
   "code": "GS",
   "kleur": "#92400E",
   "beschrijving": "Historisch overzicht en historische contexten op HAVO-niveau.",
-  "ceInfo": "⭐ Domein B (Oriëntatiekennis — de tien tijdvakken) is veruit het belangrijkste voor het centraal examen: dáár gaat het CE vooral over, dus besteed hier de meeste oefentijd aan. Domein A (Historisch besef) levert de denkvaardigheden en bronnenkennis die je daarbij toepast. De domeinen C, D en E zijn uitsluitend schoolexamen (SE).",
+  "ceInfo": "⭐ Domein B (Oriëntatiekennis - de tien tijdvakken) is veruit het belangrijkste voor het centraal examen: dáár gaat het CE vooral over, dus besteed hier de meeste oefentijd aan. Domein A (Historisch besef) levert de denkvaardigheden en bronnenkennis die je daarbij toepast. De domeinen C, D en E zijn uitsluitend schoolexamen (SE).",
   "exDatum": "2026-05-12",
   "exTijd": "09:00–12:00",
   "exDuur": "3 uur",
@@ -925,12 +925,12 @@ var VAKKEN = [
    {
     "id": "A",
     "naam": "Historisch besef",
-    "beschrijving": "Historisch redeneren, tijdsbesef, bronnen en standplaatsgebondenheid — CE-vaardigheden A1–A7",
+    "beschrijving": "Historisch redeneren, tijdsbesef, bronnen en standplaatsgebondenheid - CE-vaardigheden A1–A7",
     "ceStatus": "CE+SE",
     "binas": [],
     "val": [
-     "Aanleiding en oorzaak door elkaar halen — aanleiding is de directe vonk, oorzaak is de structurele factor",
-     "Primaire bronnen als automatisch betrouwbaar beschouwen — elke bron vereist bronkritiek",
+     "Aanleiding en oorzaak door elkaar halen - aanleiding is de directe vonk, oorzaak is de structurele factor",
+     "Primaire bronnen als automatisch betrouwbaar beschouwen - elke bron vereist bronkritiek",
      "Anachronisme begaan: mensen uit het verleden beoordelen met hedendaagse normen"
     ],
     "onderwerpen": [
@@ -949,13 +949,13 @@ var VAKKEN = [
    {
     "id": "B",
     "naam": "Oriëntatiekennis",
-    "beschrijving": "⭐ Veruit het belangrijkste domein voor het centraal examen. De tien tijdvakken van de westerse geschiedenis vormen de kern van de CE-stof — besteed hier de meeste oefentijd aan.",
+    "beschrijving": "⭐ Veruit het belangrijkste domein voor het centraal examen. De tien tijdvakken van de westerse geschiedenis vormen de kern van de CE-stof - besteed hier de meeste oefentijd aan.",
     "ceStatus": "CE-KERN",
     "binas": [],
     "val": [
-     "Tijdvakken door elkaar halen — leer naam, tijdgrens én kenmerkend aspect per tijdvak",
-     "Tijdvakken 1–4 studeren voor het CE — die zijn alleen SE-stof",
-     "Periodisering als vaststaand feit zien — het is een bewuste keuze van historici"
+     "Tijdvakken door elkaar halen - leer naam, tijdgrens én kenmerkend aspect per tijdvak",
+     "Tijdvakken 1–4 studeren voor het CE - die zijn alleen SE-stof",
+     "Periodisering als vaststaand feit zien - het is een bewuste keuze van historici"
     ],
     "onderwerpen": [
      "B1 Tijdvak 1",
@@ -976,12 +976,12 @@ var VAKKEN = [
    {
     "id": "C",
     "naam": "Thema's",
-    "beschrijving": "Schoolkeuzethema's nader uitgewerkt door de school — uitsluitend SE-onderdeel",
+    "beschrijving": "Schoolkeuzethema's nader uitgewerkt door de school - uitsluitend SE-onderdeel",
     "ceStatus": "SE",
     "binas": [],
     "val": [
-     "Thema's als CE-stof beschouwen — dit domein is uitsluitend SE",
-     "Schoolthema vergeten te leren — de school bepaalt zelf welke thema's worden behandeld"
+     "Thema's als CE-stof beschouwen - dit domein is uitsluitend SE",
+     "Schoolthema vergeten te leren - de school bepaalt zelf welke thema's worden behandeld"
     ],
     "onderwerpen": [
      "C1 Thema's (schoolkeuze)"
@@ -993,13 +993,13 @@ var VAKKEN = [
    {
     "id": "D",
     "naam": "Rechtsstaat & parlementaire democratie",
-    "beschrijving": "Beginselen van de rechtsstaat en het functioneren van de parlementaire democratie — uitsluitend SE",
+    "beschrijving": "Beginselen van de rechtsstaat en het functioneren van de parlementaire democratie - uitsluitend SE",
     "ceStatus": "SE",
     "binas": [],
     "val": [
-     "Rechtsstaat en democratie als hetzelfde beschouwen — een rechtsstaat is over rechten, democratie over bestuur",
-     "Trias politica vergeten toe te passen bij voorbeelden — toets altijd: wetgevend, uitvoerend of rechterlijk?",
-     "Machtenscheiding als volledig absoluut zien — er zijn checks and balances, geen totale scheiding"
+     "Rechtsstaat en democratie als hetzelfde beschouwen - een rechtsstaat is over rechten, democratie over bestuur",
+     "Trias politica vergeten toe te passen bij voorbeelden - toets altijd: wetgevend, uitvoerend of rechterlijk?",
+     "Machtenscheiding als volledig absoluut zien - er zijn checks and balances, geen totale scheiding"
     ],
     "onderwerpen": [
      "D1 Beginselen van de rechtsstaat",
@@ -1012,12 +1012,12 @@ var VAKKEN = [
    {
     "id": "E",
     "naam": "Oriëntatie op studie en beroep",
-    "beschrijving": "Historische beroepspraktijk en vervolgorientering — uitsluitend SE",
+    "beschrijving": "Historische beroepspraktijk en vervolgorientering - uitsluitend SE",
     "ceStatus": "SE",
     "binas": [],
     "val": [
-     "Oriëntatie op studie als minder belangrijk zien — het is een officieel onderdeel van het examenprogramma",
-     "Historische vaardigheden als alleen voor historici zien — ze zijn breed inzetbaar"
+     "Oriëntatie op studie als minder belangrijk zien - het is een officieel onderdeel van het examenprogramma",
+     "Historische vaardigheden als alleen voor historici zien - ze zijn breed inzetbaar"
     ],
     "onderwerpen": [
      "E1 Oriëntatie op studie en beroep"
@@ -1380,7 +1380,7 @@ var VAKKEN = [
     "ceStatus": "CE",
     "binas": [],
     "val": [
-     "Variabelen door elkaar halen in een formule — controleer altijd welke letter waarvoor staat",
+     "Variabelen door elkaar halen in een formule - controleer altijd welke letter waarvoor staat",
      "Grafiek verkeerd aflezen: let op de schaal, eenheden en het snijpunt met de assen"
     ],
     "onderwerpen": [
@@ -1400,7 +1400,7 @@ var VAKKEN = [
     "ceStatus": "CE",
     "binas": [],
     "val": [
-     "Fout domein gebruiken bij vergelijkingen — controleer altijd of gevonden oplossingen in het gestelde domein vallen",
+     "Fout domein gebruiken bij vergelijkingen - controleer altijd of gevonden oplossingen in het gestelde domein vallen",
      "Nulpunten verkeerd bepalen: factoren afzonderlijk gelijkstellen aan 0, niet optellen"
     ],
     "onderwerpen": [
@@ -1420,7 +1420,7 @@ var VAKKEN = [
     "ceStatus": "CE",
     "binas": [],
     "val": [
-     "Vectorrichting negeren — vectoren hebben richting én grootte, niet alleen een getal",
+     "Vectorrichting negeren - vectoren hebben richting én grootte, niet alleen een getal",
      "Ruimtelijke schets fout opzetten: teken altijd eerst een schets met correcte oriëntatie"
     ],
     "onderwerpen": [
@@ -1440,7 +1440,7 @@ var VAKKEN = [
     "ceStatus": "CE",
     "binas": [],
     "val": [
-     "Afgeleide verwarren met de functie zelf — f'(x) geeft de helling, niet de y-waarde",
+     "Afgeleide verwarren met de functie zelf - f'(x) geeft de helling, niet de y-waarde",
      "Extremum verkeerd classificeren: gebruik het tekenschema van f'(x) of de tweede afgeleide om max/min te bepalen"
     ],
     "onderwerpen": [
@@ -1460,7 +1460,7 @@ var VAKKEN = [
     "ceStatus": "CE",
     "binas": [],
     "val": [
-     "Vectorrichting negeren bij krachtenontleding — vectoren hebben richting én grootte, niet alleen een getal",
+     "Vectorrichting negeren bij krachtenontleding - vectoren hebben richting én grootte, niet alleen een getal",
      "Ruimtelijke schets fout opzetten: teken altijd eerst een duidelijke schets met juiste oriëntatie van assen en hoeken"
     ],
     "onderwerpen": [

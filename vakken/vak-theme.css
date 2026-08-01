@@ -1,5 +1,5 @@
 /* ═══════════════════════════════════════════════════════════════
-   VAK-THEME — per-vak werelden voor de SEO-vakpagina's
+   VAK-THEME - per-vak werelden voor de SEO-vakpagina's
    Lichtgewicht: alleen CSS-variabelen + één motief-achtergrond.
    Zelfde werelden als in de app; matcht via data-vak op <html>.
    Geen JS, geen externe assets → SEO-snelheid blijft intact.
@@ -37,28 +37,28 @@ html[data-vak] .footer a,html[data-vak] .domain-list strong{color:var(--accent)}
 
 /* ═══ DE WERELDEN ═══════════════════════════════════════════════ */
 
-/* WISKUNDE A — blauwdruk-ruitjes */
+/* WISKUNDE A - blauwdruk-ruitjes */
 html[data-vak="wa"]{--accent:#3B82F6;--accent2:#60A5FA;--accent-rgb:59,130,246;
   --vw-motif:linear-gradient(rgba(59,130,246,.06) 1px,transparent 1px) 0 0/26px 26px,
     linear-gradient(90deg,rgba(59,130,246,.06) 1px,transparent 1px) 0 0/26px 26px,
     linear-gradient(rgba(59,130,246,.03) 1px,transparent 1px) 0 0/130px 130px,
     linear-gradient(90deg,rgba(59,130,246,.03) 1px,transparent 1px) 0 0/130px 130px}
 
-/* WISKUNDE B — functiecurves & parabolen */
+/* WISKUNDE B - functiecurves & parabolen */
 html[data-vak="wb"]{--accent:#7C3AED;--accent2:#A78BFA;--accent-rgb:124,58,237;
   --vw-motif:url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='90' height='90'><path d='M0 84 Q45 -6 90 84' fill='none' stroke='rgba(124,58,237,0.09)' stroke-width='1.6'/><path d='M0 58 Q45 20 90 58' fill='none' stroke='rgba(124,58,237,0.05)' stroke-width='1.3'/></svg>") 0 0/90px 90px,
     linear-gradient(rgba(124,58,237,.03) 1px,transparent 1px) 0 0/90px 90px,
     linear-gradient(90deg,rgba(124,58,237,.03) 1px,transparent 1px) 0 0/90px 90px}
 
-/* SCHEIKUNDE — moleculair rooster */
+/* SCHEIKUNDE - moleculair rooster */
 html[data-vak="sk"]{--accent:#F59E0B;--accent2:#FBBF24;--accent-rgb:245,158,11;
   --vw-motif:url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='54' height='54'><g fill='none' stroke='rgba(245,158,11,0.10)' stroke-width='1.3'><line x1='27' y1='27' x2='0' y2='0'/><line x1='27' y1='27' x2='54' y2='0'/><line x1='27' y1='27' x2='0' y2='54'/><line x1='27' y1='27' x2='54' y2='54'/></g><g fill='rgba(245,158,11,0.16)'><circle cx='27' cy='27' r='3.4'/><circle cx='0' cy='0' r='3'/><circle cx='54' cy='0' r='3'/><circle cx='0' cy='54' r='3'/><circle cx='54' cy='54' r='3'/></g></svg>") 0 0/54px 54px}
 
-/* NATUURKUNDE — golven */
+/* NATUURKUNDE - golven */
 html[data-vak="na"]{--accent:#0EA5E9;--accent2:#38BDF8;--accent-rgb:14,165,233;
   --vw-motif:url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='60' height='30'><path d='M0 15 Q15 1 30 15 T60 15' fill='none' stroke='rgba(14,165,233,0.11)' stroke-width='2'/></svg>") 0 0/60px 30px}
 
-/* BIOLOGIE — cellen */
+/* BIOLOGIE - cellen */
 html[data-vak="bi"]{--accent:#16A34A;--accent2:#4ADE80;--accent-rgb:22,163,74;
   --vw-motif:radial-gradient(circle at 20% 30%,rgba(22,163,74,.07) 0 9px,transparent 10px),
     radial-gradient(circle at 70% 60%,rgba(22,163,74,.05) 0 14px,transparent 15px),
@@ -66,44 +66,44 @@ html[data-vak="bi"]{--accent:#16A34A;--accent2:#4ADE80;--accent-rgb:22,163,74;
     radial-gradient(circle at 88% 22%,rgba(22,163,74,.06) 0 11px,transparent 12px);
   background-size:170px 170px,210px 210px,150px 150px,190px 190px}
 
-/* AARDRIJKSKUNDE — hoogtelijnen */
+/* AARDRIJKSKUNDE - hoogtelijnen */
 html[data-vak="ak"]{--accent:#059669;--accent2:#34D399;--accent-rgb:5,150,105;
   --vw-motif:repeating-radial-gradient(circle at 25% 35%,transparent 0 16px,rgba(5,150,105,.07) 16px 17px,transparent 17px 34px),
     repeating-radial-gradient(circle at 80% 75%,transparent 0 18px,rgba(5,150,105,.06) 18px 19px,transparent 19px 38px)}
 
-/* ECONOMIE — vraag/aanbod-curves */
+/* ECONOMIE - vraag/aanbod-curves */
 html[data-vak="ec"]{--accent:#0891B2;--accent2:#22D3EE;--accent-rgb:8,145,178;
   --vw-motif:repeating-linear-gradient(38deg,transparent 0 30px,rgba(8,145,178,.06) 30px 32px),
     repeating-linear-gradient(-38deg,transparent 0 30px,rgba(8,145,178,.05) 30px 32px)}
 
-/* BEDRIJFSECONOMIE — grootboek-kolommen */
+/* BEDRIJFSECONOMIE - grootboek-kolommen */
 html[data-vak="be"]{--accent:#0D9488;--accent2:#2DD4BF;--accent-rgb:13,148,136;
   --vw-motif:repeating-linear-gradient(90deg,transparent 0 48px,rgba(13,148,136,.06) 48px 50px),
     repeating-linear-gradient(0deg,transparent 0 32px,rgba(13,148,136,.035) 32px 33px)}
 
-/* GESCHIEDENIS — archiefregels */
+/* GESCHIEDENIS - archiefregels */
 html[data-vak="gs"]{--accent:#D97706;--accent2:#F59E0B;--accent-rgb:217,119,6;
   --vw-motif:repeating-linear-gradient(0deg,transparent 0 34px,rgba(217,119,6,.06) 34px 35px),
     radial-gradient(ellipse 60% 40% at 14% 10%,rgba(217,119,6,.05),transparent 70%)}
 
-/* MAATSCHAPPIJWETENSCHAPPEN — netwerk */
+/* MAATSCHAPPIJWETENSCHAPPEN - netwerk */
 html[data-vak="mw"]{--accent:#DB2777;--accent2:#F472B6;--accent-rgb:219,39,119;
   --vw-motif:url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='64' height='64'><g stroke='rgba(219,39,119,0.09)' stroke-width='1'><line x1='12' y1='12' x2='52' y2='40'/><line x1='52' y1='40' x2='20' y2='56'/><line x1='12' y1='12' x2='20' y2='56'/></g><g fill='rgba(219,39,119,0.16)'><circle cx='12' cy='12' r='3'/><circle cx='52' cy='40' r='3'/><circle cx='20' cy='56' r='3'/></g></svg>") 0 0/64px 64px}
 
-/* INFORMATICA — circuit */
+/* INFORMATICA - circuit */
 html[data-vak="in"]{--accent:#0284C7;--accent2:#38BDF8;--accent-rgb:2,132,199;
   --vw-motif:url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='48' height='48'><path d='M0 24h12a4 4 0 004-4V6M24 48V30a4 4 0 014-4h20' fill='none' stroke='rgba(2,132,199,0.10)' stroke-width='1.4'/><circle cx='16' cy='20' r='2.2' fill='rgba(2,132,199,0.18)'/><circle cx='28' cy='26' r='2.2' fill='rgba(2,132,199,0.18)'/></svg>") 0 0/48px 48px}
 
-/* GRIEKS — meander */
+/* GRIEKS - meander */
 html[data-vak="gr"]{--accent:#2563EB;--accent2:#60A5FA;--accent-rgb:37,99,235;
   --vw-motif:url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='40' height='40'><path d='M4 4h20v20h-12v-10h6' fill='none' stroke='rgba(37,99,235,0.10)' stroke-width='2'/></svg>") 0 0/40px 40px}
 
-/* LATIJN — klassieke zuilgroeven */
+/* LATIJN - klassieke zuilgroeven */
 html[data-vak="la"]{--accent:#7C3AED;--accent2:#A78BFA;--accent-rgb:124,58,237;
   --vw-motif:repeating-linear-gradient(90deg,transparent 0 5px,rgba(124,58,237,.06) 5px 6px,transparent 6px 11px,rgba(124,58,237,.03) 11px 12px,transparent 12px 34px),
     radial-gradient(ellipse 70% 30% at 50% 4%,rgba(124,58,237,.06),transparent 68%)}
 
-/* TALEN — typografisch, eigen tongval per taal */
+/* TALEN - typografisch, eigen tongval per taal */
 html[data-vak="nl"]{--accent:#E85C0D;--accent2:#FB923C;--accent-rgb:232,92,13;
   --vw-motif:url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='420' height='420'><text x='50%25' y='66%25' font-family='Georgia,serif' font-weight='800' font-size='320' fill='rgba(232,92,13,0.045)' text-anchor='middle'>ij</text></svg>") center 60px/min(78vw,420px) no-repeat}
 html[data-vak="en"]{--accent:#6366F1;--accent2:#818CF8;--accent-rgb:99,102,241;
@@ -114,7 +114,7 @@ html[data-vak="fr"]{--accent:#DB2777;--accent2:#F472B6;--accent-rgb:219,39,119;
   --vw-motif:url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='420' height='420'><text x='50%25' y='68%25' font-family='Georgia,serif' font-weight='800' font-size='330' fill='rgba(219,39,119,0.045)' text-anchor='middle'>é</text></svg>") center 60px/min(72vw,420px) no-repeat}
 
 /* ═══════════════════════════════════════════════════════════════
-   VAK-EMBLEMEN — een voorwerp dat bij het vak hoort, in de hero.
+   VAK-EMBLEMEN - een voorwerp dat bij het vak hoort, in de hero.
    Lijntekening (SVG), accent-kleur. + per-domein icoontjes.
    ═══════════════════════════════════════════════════════════════ */
 html[data-vak] .header{padding-top:8px}
@@ -130,37 +130,37 @@ html[data-vak] .dom-emoji{flex:0 0 auto;font-size:20px;line-height:1.4;margin-ri
 html[data-vak] .domain-list li a{display:block}
 
 /* ── EMBLEMEN per vak ────────────────────────────────────────── */
-/* Nederlands — open boek */
+/* Nederlands - open boek */
 html[data-vak="nl"]{--vak-emblem:url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64' fill='none' stroke='rgba(232,92,13,0.9)' stroke-width='2.5' stroke-linejoin='round'><path d='M32 18C26 13 16 13 10 15v34c6-2 16-2 22 3 6-5 16-5 22-3V15c-6-2-16-2-22 3z'/><path d='M32 18v34'/></svg>")}
-/* Engels — spraakwolk */
+/* Engels - spraakwolk */
 html[data-vak="en"]{--vak-emblem:url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64' fill='none' stroke='rgba(99,102,241,0.9)' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round'><path d='M52 18a4 4 0 00-4-4H16a4 4 0 00-4 4v20a4 4 0 004 4h6v8l10-8h16a4 4 0 004-4z'/></svg>")}
-/* Duits — dialoog (twee wolken) */
+/* Duits - dialoog (twee wolken) */
 html[data-vak="du"]{--vak-emblem:url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64' fill='none' stroke='rgba(245,158,11,0.9)' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round'><path d='M12 16h26a3 3 0 013 3v12a3 3 0 01-3 3H24l-8 6v-6h-4a3 3 0 01-3-3V19a3 3 0 013-3z'/><path d='M50 30v9a3 3 0 01-3 3h-1v5l-6-5'/></svg>")}
-/* Frans — Eiffeltoren */
+/* Frans - Eiffeltoren */
 html[data-vak="fr"]{--vak-emblem:url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64' fill='none' stroke='rgba(219,39,119,0.9)' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round'><path d='M32 8v46M24 54c2-11 4-17 8-30 4 13 6 19 8 30M20 54h24M26 30h12M28 22h8'/></svg>")}
-/* Wiskunde A — staafdiagram */
+/* Wiskunde A - staafdiagram */
 html[data-vak="wa"]{--vak-emblem:url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64' fill='none' stroke='rgba(59,130,246,0.9)' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round'><path d='M12 10v44h44'/><rect x='18' y='34' width='8' height='18'/><rect x='30' y='24' width='8' height='28'/><rect x='42' y='14' width='8' height='38'/></svg>")}
-/* Wiskunde B — parabool op assen */
+/* Wiskunde B - parabool op assen */
 html[data-vak="wb"]{--vak-emblem:url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64' fill='none' stroke='rgba(109,40,217,0.9)' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round'><path d='M12 8v46h46'/><path d='M16 50 Q33 6 54 50'/></svg>")}
-/* Scheikunde — erlenmeyer */
+/* Scheikunde - erlenmeyer */
 html[data-vak="sk"]{--vak-emblem:url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64' fill='none' stroke='rgba(245,158,11,0.9)' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round'><path d='M26 10h12M28 10v16L14 50a4 4 0 004 6h28a4 4 0 004-6L36 26V10'/><path d='M20 42h24'/><circle cx='28' cy='48' r='1.6' fill='rgba(245,158,11,0.9)' stroke='none'/><circle cx='37' cy='45' r='1.4' fill='rgba(245,158,11,0.9)' stroke='none'/></svg>")}
-/* Natuurkunde — atoom */
+/* Natuurkunde - atoom */
 html[data-vak="na"]{--vak-emblem:url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64' fill='none' stroke='rgba(14,165,233,0.9)' stroke-width='2.5'><circle cx='32' cy='32' r='3.5' fill='rgba(14,165,233,0.9)' stroke='none'/><ellipse cx='32' cy='32' rx='22' ry='9'/><ellipse cx='32' cy='32' rx='22' ry='9' transform='rotate(60 32 32)'/><ellipse cx='32' cy='32' rx='22' ry='9' transform='rotate(120 32 32)'/></svg>")}
-/* Biologie — blad */
+/* Biologie - blad */
 html[data-vak="bi"]{--vak-emblem:url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64' fill='none' stroke='rgba(22,163,74,0.9)' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round'><path d='M50 12C24 12 12 30 12 52c22 0 40-12 40-40z'/><path d='M20 52C28 40 38 30 48 22'/></svg>")}
-/* Aardrijkskunde — globe */
+/* Aardrijkskunde - globe */
 html[data-vak="ak"]{--vak-emblem:url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64' fill='none' stroke='rgba(5,150,105,0.9)' stroke-width='2.5'><circle cx='32' cy='32' r='22'/><ellipse cx='32' cy='32' rx='9' ry='22'/><path d='M10 32h44M15 20h34M15 44h34'/></svg>")}
-/* Economie — vraag/aanbod-kruis */
+/* Economie - vraag/aanbod-kruis */
 html[data-vak="ec"]{--vak-emblem:url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64' fill='none' stroke='rgba(8,145,178,0.9)' stroke-width='2.5' stroke-linecap='round'><path d='M12 10v44h44'/><path d='M18 18 50 50'/><path d='M18 50 50 18'/></svg>")}
-/* Bedrijfseconomie — weegschaal */
+/* Bedrijfseconomie - weegschaal */
 html[data-vak="be"]{--vak-emblem:url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64' fill='none' stroke='rgba(13,148,136,0.9)' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round'><path d='M32 12v40M18 52h28M12 22h40'/><path d='M12 22 6 38h12zM52 22 46 38h12z'/></svg>")}
-/* Geschiedenis — tempelkolommen */
+/* Geschiedenis - tempelkolommen */
 html[data-vak="gs"]{--vak-emblem:url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64' fill='none' stroke='rgba(217,119,6,0.9)' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round'><path d='M10 20 32 10 54 20M12 24h40M16 24v24M27 24v24M37 24v24M48 24v24M12 52h40'/></svg>")}
-/* Maatschappijwetenschappen — netwerk van mensen */
+/* Maatschappijwetenschappen - netwerk van mensen */
 html[data-vak="mw"]{--vak-emblem:url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64' fill='none' stroke='rgba(219,39,119,0.9)' stroke-width='2.5'><circle cx='20' cy='20' r='6'/><circle cx='46' cy='24' r='6'/><circle cx='32' cy='46' r='6'/><path d='M24 25 29 41M41 29 36 41M26 21 40 23' stroke-linecap='round'/></svg>")}
-/* Latijn — Romeinse zuil */
+/* Latijn - Romeinse zuil */
 html[data-vak="la"]{--vak-emblem:url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64' fill='none' stroke='rgba(124,58,237,0.9)' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round'><path d='M20 16h24M22 16c-2 4-2 7 2 7h12c4 0 4-3 2-7M26 23v27M38 23v27M30 23v27M34 23v27M16 50h32'/></svg>")}
-/* Grieks — amfoor */
+/* Grieks - amfoor */
 html[data-vak="gr"]{--vak-emblem:url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64' fill='none' stroke='rgba(37,99,235,0.9)' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round'><path d='M26 12h12M28 12c-9 3-11 11-11 19s7 15 15 15 15-7 15-15-2-16-11-19'/><path d='M28 12c-6 2-8 5-6 9M36 12c6 2 8 5 6 9M30 58h4'/></svg>")}
-/* Informatica — chip */
+/* Informatica - chip */
 html[data-vak="in"]{--vak-emblem:url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64' fill='none' stroke='rgba(2,132,199,0.9)' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round'><rect x='18' y='18' width='28' height='28' rx='3'/><path d='M26 28 22 32 26 36M38 28 42 32 38 36M18 26h-6M18 38h-6M52 26h-6M52 38h-6M26 18v-6M38 18v-6M26 52v-6M38 52v-6'/></svg>")}

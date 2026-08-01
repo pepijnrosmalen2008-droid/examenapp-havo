@@ -1,4 +1,4 @@
-# F1 — Curriculum Intelligence Layer · Ontwerpvoorstel
+# F1 - Curriculum Intelligence Layer · Ontwerpvoorstel
 
 **Status:** ✅ akkoord · M1 + coverage-review + M2 uitgevoerd (bi-pilot) · **Datum:** 2026-07-22 · **Uitgangspunt:** *"Spec-principes ja, spec-stack nee."*
 Geen rewrite. Huidige architectuur (statische vanilla-PWA + Supabase, geen build-stap) blijft. Alles hieronder is **additief en omkeerbaar**.
@@ -19,9 +19,9 @@ Vak → Domein → [NIEUW] Leerdoel → Vraag
 
 Dat levert drie dingen op die de kernbelofte ("precies wat je nodig hebt") mogelijk maken:
 
-1. **Dekkingsinzicht** — per leerdoel zien hoeveel (en hoe goede) vragen er zijn → gaten worden zichtbaar.
-2. **Fijnmazige diagnose** — mastery per leerdoel i.p.v. alleen per domein.
-3. **Gerichte generatie** — F2 (Question Intelligence) kan straks vragen maken *voor een specifiek leerdoel* i.p.v. voor een losse term.
+1. **Dekkingsinzicht** - per leerdoel zien hoeveel (en hoe goede) vragen er zijn → gaten worden zichtbaar.
+2. **Fijnmazige diagnose** - mastery per leerdoel i.p.v. alleen per domein.
+3. **Gerichte generatie** - F2 (Question Intelligence) kan straks vragen maken *voor een specifiek leerdoel* i.p.v. voor een losse term.
 
 Dit ontwerp beschrijft **alleen laag F1** (de kennisstructuur + koppeling). Adaptiviteit-op-leerdoel en generatie zijn latere fases; F1 legt hun fundament.
 
@@ -31,13 +31,13 @@ Dit ontwerp beschrijft **alleen laag F1** (de kennisstructuur + koppeling). Adap
 
 ### 2.1 Waar het leeft
 
-De leerdoelen zijn **redactionele broncontent**, geen gebruikersdata. Ze horen dus thuis in het codebase-artefactenmodel, niet in Supabase — precies zoals `SAM_RICH` (samenvattingen).
+De leerdoelen zijn **redactionele broncontent**, geen gebruikersdata. Ze horen dus thuis in het codebase-artefactenmodel, niet in Supabase - precies zoals `SAM_RICH` (samenvattingen).
 
 Nieuw bestand, lazy-geladen per niveau, exact volgens het bestaande `sam-havo.js`-patroon:
 
 ```
-knowledge-havo.js   // Object.assign(LEERDOELEN, { ... })   — HAVO
-knowledge-vwo.js    // Object.assign(LEERDOELEN, { ... })   — VWO
+knowledge-havo.js   // Object.assign(LEERDOELEN, { ... })   - HAVO
+knowledge-vwo.js    // Object.assign(LEERDOELEN, { ... })   - VWO
 ```
 
 `data.js` krijgt (later, bij implementatie) een lege `const LEERDOELEN = {}` + een lazy-loader `ensureLeerdoelData(niveau)` naar analogie van `ensureSamData()`. Niet op het boot-pad → geen invloed op laadtijd.
@@ -49,7 +49,7 @@ Sleutel = `"<vakId>_<domeinId>"` (zelfde conventie als `SAM_RICH`). Waarde = lij
 ```js
 Object.assign(LEERDOELEN, {
   "bi_M": {
-    syllabus: "CE Biologie HAVO — subdomein B (Molecuul- en celniveau)",
+    syllabus: "CE Biologie HAVO - subdomein B (Molecuul- en celniveau)",
     leerdoelen: [
       {
         id: "bi.M.1",                       // stabiele, unieke id (vak.domein.volgnr)
@@ -57,8 +57,8 @@ Object.assign(LEERDOELEN, {
         eindterm: "B1",                     // koppeling naar het examenprogramma
         beschrijving: "De kandidaat kan celorganellen en hun functie benoemen en met elkaar in verband brengen.",
         concepten: ["celmembraan", "mitochondrion", "celkern", "ribosoom"],
-        vaardigheid: "verklaren",           // KENNISdimensie — vaste lijst (§2.3)
-        examenskill: "bron-interpretatie",  // EXAMENVAARDIGHEIDSdimensie — vaste lijst (§2.4)
+        vaardigheid: "verklaren",           // KENNISdimensie - vaste lijst (§2.3)
+        examenskill: "bron-interpretatie",  // EXAMENVAARDIGHEIDSdimensie - vaste lijst (§2.4)
         examenrelevantie: "hoog",           // hoog | midden | laag
         veelgemaakteFouten: [               // voedt later F2 (misconceptie-afleiders)
           "verwart mitochondrion met chloroplast",
@@ -73,11 +73,11 @@ Object.assign(LEERDOELEN, {
 
 **Ontwerpkeuzes:**
 
-- **Id-schema `vak.domein.volgnr`** (`bi.M.1`) — leesbaar, stabiel, sorteerbaar. Wordt de koppelsleutel op vragen. Id's zijn *append-only*: een leerdoel dat vervalt wordt gemarkeerd, niet hernummerd (anders breken bestaande koppelingen).
+- **Id-schema `vak.domein.volgnr`** (`bi.M.1`) - leesbaar, stabiel, sorteerbaar. Wordt de koppelsleutel op vragen. Id's zijn *append-only*: een leerdoel dat vervalt wordt gemarkeerd, niet hernummerd (anders breken bestaande koppelingen).
 - Alle velden behalve `id`/`titel` zijn optioneel → een leerdoel kan groeien van "alleen titel" naar volledig verrijkt zonder dat er iets breekt.
-- `veelgemaakteFouten` is nu al voorzien maar wordt in F1 nog niet gebruikt — het is de haak voor F2.
+- `veelgemaakteFouten` is nu al voorzien maar wordt in F1 nog niet gebruikt - het is de haak voor F2.
 
-### 2.3 Vaardigheid — de KENNISdimensie (vaste enum)
+### 2.3 Vaardigheid - de KENNISdimensie (vaste enum)
 
 *Wat moet je cognitief met de kennis kunnen?* Eén korte, gedeelde enum i.p.v. vrije tekst, zodat filteren/rapporteren betrouwbaar is:
 
@@ -85,7 +85,7 @@ Object.assign(LEERDOELEN, {
 
 (bewust compact; sluit aan op RTTI/Bloom zonder academische ballast.)
 
-### 2.4 Examenskill — de EXAMENVAARDIGHEIDSdimensie (vaste enum) · **nieuw**
+### 2.4 Examenskill - de EXAMENVAARDIGHEIDSdimensie (vaste enum) · **nieuw**
 
 *Op welke examentechniek word je afgerekend, los van of je de stof kent?* Deze laag staat **orthogonaal** op `vaardigheid`: een leerling kan de biologie kennen (vaardigheid oké) maar punten verliezen omdat hij de bron verkeerd leest, stappen niet toont of de verkeerde eenheid gebruikt. Vak-overstijgend, klein gehouden:
 
@@ -140,7 +140,7 @@ De koppelingsmetadata komt in een apart bestand, **niet** als veld in `data-havo
 knowledge-koppeling-havo.js   // LO_KOPPELING["bi"] = { "<qkey>": {lo, confidence, source, via} }
 ```
 
-- `qkey` = een stabiele sleutel per vraag (de eerste 80 tekens van `v` — geverifieerd **botsingsvrij** over alle 444 bi-vragen; sluit aan op de bestaande `aqpQKey`-conventie).
+- `qkey` = een stabiele sleutel per vraag (de eerste 80 tekens van `v` - geverifieerd **botsingsvrij** over alle 444 bi-vragen; sluit aan op de bestaande `aqpQKey`-conventie).
 - **Waarom sidecar i.p.v. een veld op de vraag:** `data-havo.js` wordt *gegenereerd* door `build-questions.js`. Een `lo`-veld in de vraag zou bij de volgende contentbuild worden **overschreven**. De sidecar overleeft regeneratie, houdt de vragen én de geshipte `q/*.js` **byte-identiek** (dus **geen** payload-groei en **geen** deploy nodig zolang de app `lo` nog niet gebruikt), en is volledig omkeerbaar (bestand weg = klaar).
 - **Runtime-join later:** wanneer een fase `lo` wél gaat gebruiken, joint de app op dezelfde `qkey` (in-browser triviaal te berekenen). Pas dan wordt de sidecar in `index.html`/`sw.js` opgenomen en volgt een SW-bump.
 
@@ -148,13 +148,13 @@ knowledge-koppeling-havo.js   // LO_KOPPELING["bi"] = { "<qkey>": {lo, confidenc
 
 ### 3.3 Hoe de koppeling tot stand komt (semi-automatisch)
 
-Nieuw hulpscript `scripts/tag-leerdoelen.js` (offline, draait naast `build-questions.js`), in drie lagen van grof naar fijn — **cruciaal na de coverage-review (§F1-BIOLOGIE-COVERAGE-REVIEW): match op vraagstam + JUIST antwoord, niet op de afleiders.** De afleiders zijn sibling-begrippen en veroorzaakten anders ~20% misassignments.
+Nieuw hulpscript `scripts/tag-leerdoelen.js` (offline, draait naast `build-questions.js`), in drie lagen van grof naar fijn - **cruciaal na de coverage-review (§F1-BIOLOGIE-COVERAGE-REVIEW): match op vraagstam + JUIST antwoord, niet op de afleiders.** De afleiders zijn sibling-begrippen en veroorzaakten anders ~20% misassignments.
 
-1. **Concept-match op stam + juist antwoord** — `sv`: `v` + `o[c]`; `oe`: `v` + `ctx` + `u` (de `o` is bij open vragen leeg). Het leerdoel met de sterkste conceptdekking wint; langere concepten wegen zwaarder. Levert `confidence` + `source: concept_match` + `via` (§3.1).
-2. **Domein-fallback** — geen enkele concepthit → het aangewezen hoofdleerdoel van het domein, met `confidence: 0.30` + `source: fallback`. Bewust láág, zodat het als "onzeker, review nodig" opvalt.
-3. **Handmatige overrides** — een klein, gecureerd `OVERRIDES`-mapje (`qkey → lo`) voor de restambiguïteiten, met `confidence: 1.00` + `source: manual_override`.
+1. **Concept-match op stam + juist antwoord** - `sv`: `v` + `o[c]`; `oe`: `v` + `ctx` + `u` (de `o` is bij open vragen leeg). Het leerdoel met de sterkste conceptdekking wint; langere concepten wegen zwaarder. Levert `confidence` + `source: concept_match` + `via` (§3.1).
+2. **Domein-fallback** - geen enkele concepthit → het aangewezen hoofdleerdoel van het domein, met `confidence: 0.30` + `source: fallback`. Bewust láág, zodat het als "onzeker, review nodig" opvalt.
+3. **Handmatige overrides** - een klein, gecureerd `OVERRIDES`-mapje (`qkey → lo`) voor de restambiguïteiten, met `confidence: 1.00` + `source: manual_override`.
 
-Het script is **idempotent** en **rapporteert** (net als `build-questions.js --check`): dekking, gemiddelde confidence, aantal laag-confidence (<0.70), aantal fallback en override, en leerdoelen zonder vragen. Het schrijft **uitsluitend** de sidecar `knowledge-koppeling-havo.js` — nooit `data-havo.js` of `q/*.js`.
+Het script is **idempotent** en **rapporteert** (net als `build-questions.js --check`): dekking, gemiddelde confidence, aantal laag-confidence (<0.70), aantal fallback en override, en leerdoelen zonder vragen. Het schrijft **uitsluitend** de sidecar `knowledge-koppeling-havo.js` - nooit `data-havo.js` of `q/*.js`.
 
 ---
 
@@ -166,12 +166,12 @@ De enige Supabase-raakvlakken zijn *observationeel* en passen binnen het bestaan
 
 | Wat | Hoe | Migratie nodig? |
 |---|---|---|
-| Vastleggen wélk leerdoel een leerling fout had | `trackEvent('vraag_fout', {…, lo:'bi.M.1'})` — `events.meta` is al `jsonb` | **Nee** |
+| Vastleggen wélk leerdoel een leerling fout had | `trackEvent('vraag_fout', {…, lo:'bi.M.1'})` - `events.meta` is al `jsonb` | **Nee** |
 | Mastery per leerdoel | client-side in localStorage (`slagio_lo_v1`, naar analogie van `slagio_aqp_v1`), meegesynct via bestaande `cloudSet(lvlCol('progress'))` jsonb-kolom | **Nee** |
 
-Bewust **geen** aparte `mastery_leerdoel`-tabel in F1: het bestaande patroon (client-side voortgang + jsonb-sync) draagt dit prima en houdt de blast-radius nul. Een dedicated tabel is pas nodig als we cross-device/aggregatie-analyse op leerdoelniveau willen — dat is een expliciete latere afweging, geen F1-vereiste.
+Bewust **geen** aparte `mastery_leerdoel`-tabel in F1: het bestaande patroon (client-side voortgang + jsonb-sync) draagt dit prima en houdt de blast-radius nul. Een dedicated tabel is pas nodig als we cross-device/aggregatie-analyse op leerdoelniveau willen - dat is een expliciete latere afweging, geen F1-vereiste.
 
-**Netto: F1 vereist nul schema-migraties.** Dat is opzettelijk — het maakt F1 volledig terugdraaibaar.
+**Netto: F1 vereist nul schema-migraties.** Dat is opzettelijk - het maakt F1 volledig terugdraaibaar.
 
 ---
 
@@ -218,7 +218,7 @@ Pas na een geslaagde pilot bespreken we uitrol naar de overige 27 vakken.
 Het rapport dat F1 verantwoordt en F2 voedt:
 
 ```
-Biologie HAVO — domein M (Molecuul- en celniveau)
+Biologie HAVO - domein M (Molecuul- en celniveau)
 ┌─────────┬────────────────────────────┬────────┬───────────┬─────────────┐
 │ leerdoel│ titel                      │ #vragen│ foutratio │ examenrelev.│
 ├─────────┼────────────────────────────┼────────┼───────────┼─────────────┤
@@ -237,11 +237,11 @@ Regels met ⚠ zijn de directe input voor de latere Question Intelligence (F2): 
 - Geen wijziging aan quizlogica, scoreformule, AQP-adaptiviteit of `qDiff`.
 - Geen nieuwe runtime-dependency, geen build-stap, geen framework.
 - Geen Supabase-schema-migratie.
-- Geen gedragsverandering voor de leerling in F1 — de laag is eerst *observationeel*. Zichtbare leerdoel-features (mastery-badge per leerdoel, gerichte oefensets) zijn een bewuste latere stap, pas nadat de data klopt.
+- Geen gedragsverandering voor de leerling in F1 - de laag is eerst *observationeel*. Zichtbare leerdoel-features (mastery-badge per leerdoel, gerichte oefensets) zijn een bewuste latere stap, pas nadat de data klopt.
 
 ---
 
-## 9. Beslissingen — vastgesteld ✅
+## 9. Beslissingen - vastgesteld ✅
 
 1. **Bronhiërarchie voor de leerdoelen** (van leidend naar aanvullend):
    `CvTE-examenprogramma → officiële syllabus → examenblad.nl → correctievoorschriften oude examens → aanvullende betrouwbare bronnen`.
@@ -251,19 +251,19 @@ Regels met ⚠ zijn de directe input voor de latere Question Intelligence (F2): 
 4. **Pilot-vak:** HAVO Biologie (§6).
 5. **Examenskill-laag:** apart van `vaardigheid` (§2.4), voor latere adaptive learning op kennis- vs. examenvaardigheidsniveau.
 
-### M1 — status (in uitvoering)
+### M1 - status (in uitvoering)
 
 Scope zoals afgesproken: *schrijf alleen de pilot-leerdoelen, raak nog geen vragen aan, maak eerst het dekkingsrapport, geen deploy tot de pilotstructuur is beoordeeld.*
 
-- `knowledge-havo.js` — leerdoelen voor de 4 bi-domeinen (A/M/O/P). **Geen vraag aangeraakt** (geen `lo`-veld geschreven).
-- `scripts/leerdoel-dekking.js` — **dry-run**: matcht bestaande vragen op leerdoelen (concept-match + domein-fallback) en rapporteert dekking **zonder iets te schrijven**.
+- `knowledge-havo.js` - leerdoelen voor de 4 bi-domeinen (A/M/O/P). **Geen vraag aangeraakt** (geen `lo`-veld geschreven).
+- `scripts/leerdoel-dekking.js` - **dry-run**: matcht bestaande vragen op leerdoelen (concept-match + domein-fallback) en rapporteert dekking **zonder iets te schrijven**.
 - Uitkomst = het dekkingsrapport dat je beoordeelt vóórdat M2 (`lo` daadwerkelijk wegschrijven) begint. Nog geen SW-bump, nog geen push naar `main`.
 
-### M2 — uitgevoerd (bi-pilot)
+### M2 - uitgevoerd (bi-pilot)
 
 - **Coverage-review** eerst (`docs/F1-BIOLOGIE-COVERAGE-REVIEW.md`): structuur akkoord, matcher moest bijgesteld.
 - **Conceptopschoning** in `knowledge-havo.js`: `Ribosoom` alleen nog bij `bi.M.5` (primaire eigenaar); `Niche` → `bi.P.1`, `Negatieve terugkoppeling` → `bi.O.3`, `Denaturatie` → `bi.M.3`.
-- **`scripts/tag-leerdoelen.js`** — matcht op vraagstam + juist antwoord (+ begrip-detectie voor definitievragen), met confidence + source + via. 13 curated `OVERRIDES`.
-- **`knowledge-koppeling-havo.js`** (sidecar) — 444 koppelingen: 431 `concept_match`, 13 `manual_override`, 0 `fallback`, gem. confidence **0.947**, 4 laag-confidence (alle inhoudelijk correct). `data-havo.js`/`q/*.js` **byte-identiek** → geen deploy.
+- **`scripts/tag-leerdoelen.js`** - matcht op vraagstam + juist antwoord (+ begrip-detectie voor definitievragen), met confidence + source + via. 13 curated `OVERRIDES`.
+- **`knowledge-koppeling-havo.js`** (sidecar) - 444 koppelingen: 431 `concept_match`, 13 `manual_override`, 0 `fallback`, gem. confidence **0.947**, 4 laag-confidence (alle inhoudelijk correct). `data-havo.js`/`q/*.js` **byte-identiek** → geen deploy.
 - **smoke.mjs** sectie 5d: bewaakt id-schema, geen gedeelde concepten, en dat elke koppeling → bestaand leerdoel, geldige confidence/source, sidecar ⊆ bron, alle 444 vragen gedekt. 59/59 groen.
 - Nog geen SW-bump / geen `main`: de sidecar wordt nog niet door de app geladen (dat is een latere fase).

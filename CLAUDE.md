@@ -4,13 +4,13 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project overview
 
-Slagio (slagio.nl) is a free Dutch HAVO/VWO exam preparation PWA. It is a **static site with no build step** — all code is vanilla HTML/CSS/JS, deployed via GitHub Pages.
+Slagio (slagio.nl) is a free Dutch HAVO/VWO exam preparation PWA. It is a **static site with no build step** - all code is vanilla HTML/CSS/JS, deployed via GitHub Pages.
 
 - **Live URL**: https://slagio.nl (`/havo` and `/vwo` are SPA routes)
 - **Deployment**: `git push origin main` → auto-deploys via GitHub Pages
-- **Default workflow**: push directly to `main` — no build, no feature branches, no PRs. (Automated/agent sessions may be pinned to a feature branch; follow whatever branch the task specifies.)
+- **Default workflow**: push directly to `main` - no build, no feature branches, no PRs. (Automated/agent sessions may be pinned to a feature branch; follow whatever branch the task specifies.)
 
-## Architecture (IMPORTANT — read this)
+## Architecture (IMPORTANT - read this)
 
 The app is **no longer a single inline file**. `index.html` is now a thin shell (~2400 lines) that contains only the HTML screens plus SEO metadata (`<script type="application/ld+json">` blocks and a `<noscript>` SEO body). **All CSS lives in `styles.css`** and **all JS lives in separate module files**, loaded in order at the bottom of `index.html` (~line 1961+):
 
@@ -27,10 +27,10 @@ Load order matters: `data.js`/`state.js` define globals the later modules use. `
 | File | Purpose |
 |---|---|
 | `index.html` | HTML screens + SEO (JSON-LD + `<noscript>`). No app logic, no inline CSS/JS. |
-| `styles.css` | **All** styles (~5200 lines). Mobile overrides live in the `@media(max-width:640px)` block — including `display:none` rules that hide long descriptive text on mobile (`.sh p`, `.di p`, `#home-bento`, …). |
+| `styles.css` | **All** styles (~5200 lines). Mobile overrides live in the `@media(max-width:640px)` block - including `display:none` rules that hide long descriptive text on mobile (`.sh p`, `.di p`, `#home-bento`, …). |
 | `data.js` | `LESMETHODES{}`, an **empty** `SAM_RICH{}`, and the lazy-loaders `ensureLevelData()`/`ensureSamData()`/`samReady()` + the per-vak hydration runtime `ensureVakData()`/`__hydrateVak()`/`ensureAllVakData()`/`domCount()`. ~30 KB. |
-| `sam-havo.js` / `sam-vwo.js` | The rich summaries (`SAM_RICH` entries, `Object.assign`ed in). ~440 KB each, **lazy-loaded per niveau** via `ensureSamData()` — NOT on the boot path. Add/replace a summary here, not in `data.js`. |
-| `data-havo.js` / `data-vwo.js` | **Source of truth** for `VAKKEN[]` / `VAKKEN_VWO[]` (subjects, domains, questions). Written by `build-questions.js`. **Not shipped to the browser directly** — `split-data.js` derives the shipped artifacts from them. |
+| `sam-havo.js` / `sam-vwo.js` | The rich summaries (`SAM_RICH` entries, `Object.assign`ed in). ~440 KB each, **lazy-loaded per niveau** via `ensureSamData()` - NOT on the boot path. Add/replace a summary here, not in `data.js`. |
+| `data-havo.js` / `data-vwo.js` | **Source of truth** for `VAKKEN[]` / `VAKKEN_VWO[]` (subjects, domains, questions). Written by `build-questions.js`. **Not shipped to the browser directly** - `split-data.js` derives the shipped artifacts from them. |
 | `data-havo.meta.js` / `data-vwo.meta.js` | **Shipped, generated** by `scripts/split-data.js`: the full structure with per-domain counts (`nSv`/`nOe`/`nBeg`) but **no** question arrays. Loaded by `ensureLevelData()` on niveau-pick (~15/8 KB gz). Do not hand-edit. |
 | `q/<niveau>-<vakId>.js` | **Shipped, generated** per subject: `__hydrateVak(...)` with that vak's `sv`/`oe`/`begrippen` + basic `sam`. Loaded on demand by `ensureVakData()` when a subject is opened. Global features (search) hydrate all via `ensureAllVakData()`. Do not hand-edit. |
 | `state.js` | Global `ST` quiz state, `show()` + hash routing, `APP_LEVEL`/`getVK()`/`lvlCol()`, subject grid, security helpers |
@@ -52,7 +52,7 @@ Load order matters: `data.js`/`state.js` define globals the later modules use. `
 | `manifest.json` | PWA manifest |
 | `vakken/*.html` | SEO landing pages per subject (no app logic) |
 
-JS sections within each file are delimited by `// ═══════ SECTION NAME ═══════` banners — grep for these to navigate.
+JS sections within each file are delimited by `// ═══════ SECTION NAME ═══════` banners - grep for these to navigate.
 
 ## Deployment rule
 
@@ -93,7 +93,7 @@ pts*50 + Math.round((tijdOver||0)/20*50)  // tijdOver = seconds remaining when a
 
 **Tracking**: `trackEvent(type, meta)` (`cloud.js`) auto-includes `vak_naam` (from `ST.vak`), `niveau`, `naam`, `device`, `did`. Pass only extra data in `meta`.
 
-**Cloud sync**: `cloudSet(col, data)` / `cloudGet(col, def)` (`cloud.js`) — column names correspond to Supabase `profiel` table columns. Progress uses `lvlCol('progress')` → `progress_havo` / `progress_vwo`.
+**Cloud sync**: `cloudSet(col, data)` / `cloudGet(col, def)` (`cloud.js`) - column names correspond to Supabase `profiel` table columns. Progress uses `lvlCol('progress')` → `progress_havo` / `progress_vwo`.
 
 **EXAM_SCHEDULE** (`schedule.js`): Each entry has `{datum, tijd, vak, duur, niveau:'havo'|'vwo', vakId?}`. Both `getCountdownTarget()` (`lb.js`) and `renderSchedule()` (`schedule.js`) filter on `niveau === APP_LEVEL`.
 
@@ -120,17 +120,17 @@ render(lb, ev, evMissing, ao=[], fb=[], ql=[], ce=[])  // single render, rebuild
 ```
 
 **Filter state** (persists across re-renders):
-- `window._filter`: `'all'|'7d'|'24h'` — time filter, applied at top of `render()`
+- `window._filter`: `'all'|'7d'|'24h'` - time filter, applied at top of `render()`
 - `window._fbVak`, `window._fbDomein`: feedback section vak/domein filters
 - Raw data stored as `window._lb`, `window._ev`, `window._ao`, `window._fb`
 
 Filter buttons must call `render()` with the stored raw data.
 
-**Leaderboard filter** (in `loadAll`): `.filter(e => (e.score||0) <= 1000 && (e.total||0) > 5)` — excludes corrupted scores and old 5-question quizzes.
+**Leaderboard filter** (in `loadAll`): `.filter(e => (e.score||0) <= 1000 && (e.total||0) > 5)` - excludes corrupted scores and old 5-question quizzes.
 
 ## Adding content
 
-To add questions to a subject, edit the **source** files `data-havo.js` (`VAKKEN[]`) / `data-vwo.js` (`VAKKEN_VWO[]`) — the appropriate domein's `sv` (snelle quiz) or `oe` (oud-examen) array — or (preferred) add begrippen and run `node scripts/build-questions.js`.
+To add questions to a subject, edit the **source** files `data-havo.js` (`VAKKEN[]`) / `data-vwo.js` (`VAKKEN_VWO[]`) - the appropriate domein's `sv` (snelle quiz) or `oe` (oud-examen) array - or (preferred) add begrippen and run `node scripts/build-questions.js`.
 
 **Then always run `node scripts/split-data.js`** to regenerate the shipped `data-*.meta.js` + `q/*.js` from the source, and bump the SW cache. `scripts/smoke.mjs` fails if the meta counts drift out of sync with the source, so CI catches a forgotten split.
 

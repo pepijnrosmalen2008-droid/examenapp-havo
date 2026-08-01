@@ -1,6 +1,6 @@
 // ═══════ XP & LEVELS ═══════
 // Strakke inline SVG-iconen (Lucide-stijl, 2px stroke, currentColor) ter
-// vervanging van emoji op het dashboard — professioneler & platform-consistent.
+// vervanging van emoji op het dashboard - professioneler & platform-consistent.
 const _svg=(d,extra='')=>`<svg class="ico" viewBox="0 0 24 24" width="1em" height="1em" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" ${extra}>${d}</svg>`;
 const ICO_TARGET=_svg('<circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><circle cx="12" cy="12" r="1.4" fill="currentColor" stroke="none"/>');
 const ICO_CLOCK=_svg('<circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.5 2"/>');
@@ -381,7 +381,7 @@ function renderDailyGoal(){
   }
   const dots=Array.from({length:DG_TARGET},function(_,i){return '<div class="dg-dot'+(i<done?' dg-dot-done':'')+'"></div>';}).join('');
   box.innerHTML='<div class="dg-card"><div class="dg-top"><span class="dg-ico">'+ICO_TARGET+'</span><span class="dg-lbl">Dagdoel <span class="dg-cnt">'+done+'/'+DG_TARGET+'</span></span><span class="dg-timer">'+ICO_CLOCK+'<span id="dg-card-timer">'+_dgCountdownStr()+'</span></span><span class="dg-bonus">+75 XP</span></div><div class="dg-dots">'+dots+'</div><div class="dg-bar-wrap"><div class="dg-bar" style="width:'+Math.round(done/DG_TARGET*100)+'%"></div></div></div>';
-  // Live aftellen tot middernacht — urgentie-element op de dagdoel-kaart.
+  // Live aftellen tot middernacht - urgentie-element op de dagdoel-kaart.
   window._dgTimer=setInterval(function(){
     const el=document.getElementById('dg-card-timer');
     if(!el){clearInterval(window._dgTimer);window._dgTimer=null;return;}
@@ -541,7 +541,7 @@ function addXP(amount){
   return{added:amount,oldLvl,newLvl,leveled:newLvl>oldLvl,totalXP:d.xp,evolved:newStage>oldStage,newStage};
 }
 /* ═══ Signature: "De vlag uit" ═══════════════════════════════════════
-   Het Nederlandse slaag-ritueel — de vlag met de schooltas gaat omhoog.
+   Het Nederlandse slaag-ritueel - de vlag met de schooltas gaat omhoog.
    Speelt op level-up, perfecte score en een geslaagde simulatietoets.
    Eén bold moment; de rest van de UI blijft stil. Reduced-motion: statisch. */
 function slagioVlagUit(kind){
@@ -681,11 +681,11 @@ function renderHomeStats(){
   const cijfers=getSavedCijfers();
   const vals=Object.values(cijfers).filter(v=>typeof v==='number'&&v>0);
   const avg=vals.length?vals.reduce((a,b)=>a+b,0)/vals.length:null;
-  // Navigatietegels staan nu in het home-menu (.hm-menu) — niet meer dubbel in de bento.
+  // Navigatietegels staan nu in het home-menu (.hm-menu) - niet meer dubbel in de bento.
   const actCells='';
   // SE-gemiddelde op de Cijfers-tegel van het home-menu tonen.
   try{const cs=document.getElementById('hm-cijfer-sub');if(cs)cs.textContent=avg!==null?('gem. '+avg.toFixed(1).replace('.',',')):'';}catch(e){}
-  // Dagdoel zit niet meer in de bento — één widget via renderDailyGoal().
+  // Dagdoel zit niet meer in de bento - één widget via renderDailyGoal().
   // ── Clear standalone containers (altijd) ──────────
   // daily-goal-home wordt door renderDailyGoal() beheerd (één dagdoel-widget,
   // niet meer dubbel in de bento). Hier niet wissen.
@@ -738,7 +738,7 @@ function renderHomeStats(){
       </div>`;
   const groepCell='';
   // De weekbadge-teller staat als losse banner (#streak-milestone-banner-home,
-  // via renderStreakMilestoneBanner) — niet nog eens in de bento, anders staat
+  // via renderStreakMilestoneBanner) - niet nog eens in de bento, anders staat
   // hij dubbel op de homepagina.
   box.innerHTML=`<div class="bento">${streakCell}${lvlCell}${badgeCell}${avgCell}${groepCell}${actCells}</div>`;
 }
@@ -758,7 +758,8 @@ function renderXPHome(){
   const nxtThresh=isMaxStage?curThresh+1:ANIM_THRESHOLDS[stageIdx+1];
   const stagePct=isMaxStage?100:Math.round(Math.min(100,(xp-curThresh)/(nxtThresh-curThresh)*100));
   const currentEmoji=animal?animal.s[stageIdx]:'⭐';
-  const currentDisplay=animal?getAnimalDisplay(animal.id,stageIdx,50):`<span style="font-size:30px">⭐</span>`;
+  let currentDisplay=animal?getAnimalDisplay(animal.id,stageIdx,50):`<span style="font-size:30px">⭐</span>`;
+  try{const _sk=avatarSkinHTML();if(_sk)currentDisplay='<span class="av-wrap">'+currentDisplay+_sk+'</span>';}catch(e){}
   const animalName=animal?animal.n:'Avatar';
   const stageName=ANIM_STAGE_NAMES[stageIdx];
   const nextStageName=isMaxStage?null:ANIM_STAGE_NAMES[stageIdx+1];
@@ -813,7 +814,7 @@ function getDailyChallenge(){
       if(vak&&dom&&domCount(dom,'sv')>=3)return d;
     }
   }catch(e){}
-  // Pick a fresh challenge from all valid HAVO/VWO domains (counts uit meta — geen hydratatie nodig)
+  // Pick a fresh challenge from all valid HAVO/VWO domains (counts uit meta - geen hydratatie nodig)
   const all=[];
   getVK().forEach(v=>v.domeinen.forEach(d=>{if(domCount(d,'sv')>=3)all.push({vak:v,domein:d});}));
   if(!all.length)return null;
@@ -964,7 +965,7 @@ function applyStreakFreezes(){
       s.frozen.push(yStr);
       s.freezes=Math.max(0,(s.freezes||0)-1);
       cloudSet('streak',s);
-      try{if(typeof showToast==='function')showToast('🧊 Streak-freeze gebruikt — je streak is gered!','#38bdf8');}catch(e){}
+      try{if(typeof showToast==='function')showToast('🧊 Streak-freeze gebruikt - je streak is gered!','#38bdf8');}catch(e){}
       try{trackEvent('streak_freeze_used',{});}catch(e){}
     }
   }catch(e){}
@@ -988,7 +989,7 @@ function buyFreeze(){
 function buyXpBoost(){
   if(!spendCoins(PRICE_XPBOOST)){showToast('Niet genoeg munten. Oefen om er meer te verdienen!','#ef4444');return;}
   _setXpBoosts(getXpBoosts()+1);
-  showToast('⚡ Dubbele-XP-boost gekocht — telt bij je volgende snelle quiz!','#8b5cf6');
+  showToast('⚡ Dubbele-XP-boost gekocht - telt bij je volgende snelle quiz!','#8b5cf6');
   try{trackEvent('shop_buy',{item:'xpboost'});}catch(e){}
   renderEconHome();renderShop();
 }
@@ -1011,7 +1012,7 @@ function buyMysteryBox(){
   const r=Math.random();let msg;
   if(r<0.10&&getFreezes()<FREEZE_MAX){setFreezes(getFreezes()+1);msg='🧊 een streak-freeze!';}
   else if(r<0.26){_setXpBoosts(getXpBoosts()+1);msg='⚡ een dubbele-XP-boost!';}
-  else if(r<0.34){addCoins(300);msg='🪙 jackpot — 300 munten!';}
+  else if(r<0.34){addCoins(300);msg='🪙 jackpot - 300 munten!';}
   else if(r<0.70){const c=80+Math.floor(Math.random()*90);addCoins(c);msg='🪙 '+c+' munten!';}
   else{const c=20+Math.floor(Math.random()*50);addCoins(c);msg='🪙 '+c+' munten.';}
   try{playSound&&playSound('coin');}catch(e){}
@@ -1044,6 +1045,48 @@ function buyTheme(id){
   try{trackEvent('shop_buy',{item:'theme',id});}catch(e){}
 }
 
+// ── Skins: accessoires voor je avatar en voor Vonk ──
+const COSMETICS_AV=[
+  {id:'av_cap',   naam:'Petje',     emoji:'🧢', prijs:250},
+  {id:'av_crown', naam:'Kroontje',  emoji:'👑', prijs:500},
+  {id:'av_glass', naam:'Zonnebril', emoji:'🕶️', prijs:300},
+  {id:'av_bow',   naam:'Strik',     emoji:'🎀', prijs:250},
+  {id:'av_flower',naam:'Bloem',     emoji:'🌸', prijs:200},
+  {id:'av_star',  naam:'Sterretje', emoji:'⭐', prijs:200},
+];
+const COSMETICS_VONK=[
+  {id:'vk_glass', naam:'Vonk zonnebril', emoji:'🕶️', prijs:300},
+  {id:'vk_crown', naam:'Vonk kroon',     emoji:'👑', prijs:600},
+  {id:'vk_party', naam:'Vonk feesthoed', emoji:'🥳', prijs:350},
+  {id:'vk_grad',  naam:'Vonk diploma',   emoji:'🎓', prijs:400},
+];
+function _cosmeticById(id){return COSMETICS_AV.concat(COSMETICS_VONK).find(c=>c.id===id)||null;}
+function getOwnedCosmetics(){try{const a=JSON.parse(localStorage.getItem('slagio_cosmetics')||'[]');return Array.isArray(a)?a:[];}catch(e){return [];}}
+function cosmeticOwned(id){return getOwnedCosmetics().includes(id);}
+function getEquippedAv(){try{return localStorage.getItem('slagio_av_skin')||'';}catch(e){return '';}}
+function getEquippedVonk(){try{return localStorage.getItem('slagio_vonk_skin')||'';}catch(e){return '';}}
+// Overlay-emoji voor de speler-avatar (leeg als er niets is uitgerust).
+function avatarSkinHTML(){const id=getEquippedAv();const c=id&&_cosmeticById(id);if(!c)return '';return '<span class="av-skin no-ico">'+c.emoji+'</span>';}
+function equipCosmetic(id){
+  const isVonk=id.indexOf('vk_')===0;
+  const key=isVonk?'slagio_vonk_skin':'slagio_av_skin';
+  const cur=isVonk?getEquippedVonk():getEquippedAv();
+  try{localStorage.setItem(key,cur===id?'':id);}catch(e){}       // nogmaals tikken = afzetten
+  try{renderShop();}catch(e){}
+  try{renderXPHome();}catch(e){}
+  try{renderLeagueHome();}catch(e){}
+  try{if(typeof renderProfileAvatar==='function')renderProfileAvatar();}catch(e){}
+}
+function buyCosmetic(id){
+  const c=_cosmeticById(id);if(!c)return;
+  if(cosmeticOwned(id)){equipCosmetic(id);return;}
+  if(!spendCoins(c.prijs)){showToast('Niet genoeg munten voor deze skin.','#ef4444');return;}
+  const a=getOwnedCosmetics();a.push(id);try{localStorage.setItem('slagio_cosmetics',JSON.stringify(a));}catch(e){}
+  try{playSound&&playSound('coin');}catch(e){}
+  equipCosmetic(id);showToast('✨ Skin ontgrendeld en uitgerust!','#22c55e');
+  try{trackEvent('shop_buy',{item:'cosmetic',id});}catch(e){}
+}
+
 function openShop(){show('sc-shop');renderShop();}
 function renderEconHome(){
   const box=document.getElementById('econ-home');
@@ -1072,7 +1115,7 @@ function renderShop(){
   const powerups=
     item('🧊','Streak-freeze',`${fr}/${FREEZE_MAX}`,'Beschermt je streak als je een dag mist. Automatisch ingezet.',PRICE_FREEZE, fr<FREEZE_MAX&&coins>=PRICE_FREEZE,'buyFreeze()', fr>=FREEZE_MAX?'Vol':'')+
     item('⚡','Dubbele XP',boosts>0?`${boosts} klaar`:'','Verdubbelt je XP bij je volgende snelle quiz.',PRICE_XPBOOST, coins>=PRICE_XPBOOST,'buyXpBoost()','')+
-    item('🚀','24u dubbele XP',dayOn?'actief':'','Alle XP telt 24 uur lang dubbel — ideaal op een oefendag.',PRICE_BOOST_DAY, !dayOn&&coins>=PRICE_BOOST_DAY,'buyXpBoostDay()', dayOn?'Actief':'')+
+    item('🚀','24u dubbele XP',dayOn?'actief':'','Alle XP telt 24 uur lang dubbel - ideaal op een oefendag.',PRICE_BOOST_DAY, !dayOn&&coins>=PRICE_BOOST_DAY,'buyXpBoostDay()', dayOn?'Actief':'')+
     item('🎁','Mystery box','','Een verrassing: munten, een boost of zelfs een streak-freeze.',PRICE_MYSTERY, coins>=PRICE_MYSTERY,'buyMysteryBox()','');
   const sel=getSelectedTheme();
   const themes=THEMES.map(t=>{
@@ -1087,12 +1130,28 @@ function renderShop(){
   }).join('');
   box.innerHTML=`
     <div class="shop-balance"><span class="econ-ic no-ico">🪙</span> <b>${coins}</b> munten</div>
-    <p class="shop-hint">Verdien munten door quizzen te maken — hoe beter je scoort, hoe meer je krijgt.</p>
+    <p class="shop-hint">Verdien munten door quizzen te maken - hoe beter je scoort, hoe meer je krijgt.</p>
     <div class="shop-cat">Power-ups</div>
     ${powerups}
-    <div class="shop-cat">Thema's <span class="shop-cat-sub">— kleur de hele app</span></div>
+    <div class="shop-cat">Thema's <span class="shop-cat-sub">kleur de hele app</span></div>
     <div class="shop-themes">${themes}</div>
-    <p class="shop-foot">Meer volgt — Vonk-outfits en avatar-skins zijn onderweg. 🦊</p>`;
+    <div class="shop-cat">Avatar-skins <span class="shop-cat-sub">accessoire voor je dier</span></div>
+    <div class="shop-themes">${_cosList(COSMETICS_AV,getEquippedAv(),coins)}</div>
+    <div class="shop-cat">Vonk-skins <span class="shop-cat-sub">geef Vonk een nieuwe look</span></div>
+    <div class="shop-themes">${_cosList(COSMETICS_VONK,getEquippedVonk(),coins)}</div>
+    <p class="shop-foot">Meer volgt. Nieuwe skins en items voegen we geregeld toe. 🦊</p>`;
+}
+function _cosList(list,equippedId,coins){
+  return list.map(c=>{
+    const owned=cosmeticOwned(c.id), active=equippedId===c.id;
+    const label=active?'Op':(owned?'Draag':`<span class="econ-ic no-ico">🪙</span> ${c.prijs}`);
+    const cls='shop-tbtn'+(active?' shop-tbtn-active':(owned?' shop-tbtn-own':''))+((!owned&&coins<c.prijs)?' disabled':'');
+    return `<div class="shop-theme">
+      <span class="shop-cos no-ico">${c.emoji}</span>
+      <span class="shop-theme-name">${c.naam}</span>
+      <button class="${cls}" ${(!owned&&coins<c.prijs)?'disabled':''} onclick="buyCosmetic('${c.id}')">${label}</button>
+    </div>`;
+  }).join('');
 }
 function startStreakQuiz(){
   const mijn=JSON.parse(localStorage.getItem('examenapp_'+lvlCol('mijnvakken'))||'[]');

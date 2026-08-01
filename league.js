@@ -1,5 +1,5 @@
 // ═══════════════════════════════════════════════════════════════════════
-// league.js — Weekwedstrijd / divisies (Duolingo-stijl)
+// league.js - Weekwedstrijd / divisies (Duolingo-stijl)
 // ───────────────────────────────────────────────────────────────────────
 // Elke week strijd je in een divisie tegen ~29 andere "spelers" (bots die op
 // echte leerlingen lijken: volledige naam, avatar, XP die door de week groeit).
@@ -19,7 +19,8 @@ const LEAGUE_DIVISIONS = [
 const LEAGUE_COHORT = 30;   // jij + 29 bots
 const LEAGUE_PROMO  = 7;    // top-7 promoveert
 const LEAGUE_DEMOTE = 5;    // onderste-5 degradeert
-const _LG_AVATARS = ['🦊','🐺','🦉','🦈','🦋','🐯','🦄','🐘','🦁','🦅','🐲','🐙','🐼','🐨','🐷','🐸','🐵','🐧','🦝','🐹','🐳','🦡'];
+// Bots krijgen een echte app-avatar (zelfde dieren + evolutiestadia als spelers).
+const _LG_DIER = ['adelaar','beer','cactus','draak','eenhoorn','gorilla','haai','leeuw','octopus','olifant','robot','slang','slijm','tijger','uil','vlinder','vos','wolf'];
 
 // ── Namen: realistische, gevarieerde volledige namen ──
 const _LG_VN = ['Sanne','Emma','Julia','Tess','Anna','Sophie','Lisa','Fenna','Isa','Eva','Lotte','Roos','Zoë','Nora','Mila','Yara','Evi','Lieke','Fleur','Amber','Nina','Femke','Britt','Iris','Maud','Vera','Loïs','Merel','Noor','Milou','Saar','Lina','Nour','Amina','Yasmin','Zeynep','Elif','Aya','Maya','Sara','Hanna','Lynn','Fiene','Norah','Sofia','Daan','Sem','Lucas','Milan','Levi','Finn','Luuk','Bram','Thijs','Jesse','Noah','Liam','Lars','Tim','Ruben','Gijs','Sven','Teun','Cas','Mees','Stijn','Jens','Thomas','Max','Boaz','Julian','Hugo','Mats','Jort','Tygo','Siem','Kai','Pim','Bas','Joris','Niek','Koen','Rick','Wout','Floris','Tijn','Vince','Benjamin','Willem','Adam','Youssef','Bilal','Amir','Sami','Yusuf','Rayan','Emir','Kaan','Deniz','Mohammed','Ravi','Sem','Jayden','Dylan'];
@@ -58,7 +59,8 @@ function _lgMakeCohort(division,baseline,seedStr){
     const target=Math.max(60,Math.round(baseline*divMult*factor));
     out.push({
       naam:_lgBotName(rng),
-      av:_LG_AVATARS[Math.floor(rng()*_LG_AVATARS.length)],
+      animalId:_LG_DIER[Math.floor(rng()*_LG_DIER.length)],
+      stage:Math.min(6,1+Math.floor(rng()*4)+Math.floor(division*0.7)),
       target:target,
       front:0.55+rng()*0.95   // hoe vroeg in de week deze speler actief is
     });
@@ -67,6 +69,15 @@ function _lgMakeCohort(division,baseline,seedStr){
 }
 
 function _lgMeName(){try{const p=JSON.parse(localStorage.getItem(PROF_KEY)||'{}');return (p.naam&&p.naam.trim())?p.naam.trim():'Jij';}catch(e){return 'Jij';}}
+function _lgMeAvatar(){try{const p=JSON.parse(localStorage.getItem(PROF_KEY)||'{}');const xp=(typeof getTotalXP==='function')?getTotalXP():0;return {id:p.animalId||null,stage:(typeof getAnimalStageIdx==='function')?getAnimalStageIdx(xp):0};}catch(e){return {id:null,stage:0};}}
+// Rendert de echte app-avatar (SVG/emoji per stadium); valt terug op een ster/vos.
+function _lgAvatar(r){
+  let inner='';
+  if(r.animalId&&typeof getAnimalDisplay==='function'){try{inner=getAnimalDisplay(r.animalId,r.stage||0,26);}catch(e){}}
+  if(!inner)inner='<span style="font-size:22px">'+(r.me?'⭐':'🦊')+'</span>';
+  if(r.me&&typeof avatarSkinHTML==='function'){try{const sk=avatarSkinHTML();if(sk)return '<span class="av-wrap">'+inner+sk+'</span>';}catch(e){}}
+  return inner;
+}
 
 // Zorgt dat de league bij de huidige week hoort; finaliseert de vorige week
 // (promotie/degradatie) als er een nieuwe week is begonnen.
@@ -99,9 +110,10 @@ function _lgStandings(L,progOverride){
   const prog=progOverride!=null?progOverride:_lgWeekProgress();
   const rows=(L.cohort||[]).map(b=>{
     const xp=progOverride===1?b.target:Math.round(b.target*Math.min(1,prog*b.front));
-    return {naam:b.naam,av:b.av,xp:xp,me:false};
+    return {naam:b.naam,animalId:b.animalId,stage:b.stage,xp:xp,me:false};
   });
-  rows.push({naam:_lgMeName(),av:'⭐',xp:L.weekXP||0,me:true});
+  const meAv=_lgMeAvatar();
+  rows.push({naam:_lgMeName(),animalId:meAv.id,stage:meAv.stage,xp:L.weekXP||0,me:true});
   rows.sort((a,b)=>b.xp-a.xp||(a.me?1:-1));
   rows.forEach((r,i)=>r.rank=i+1);
   return rows;
@@ -139,7 +151,7 @@ function renderLeagueHome(){
 }
 function _lgResultBanner(r){
   if(r.promoted)return `<div class="lg-result lg-result-up" onclick="_lgSeen()"><b>Gepromoveerd!</b> Je bent naar de ${LEAGUE_DIVISIONS[r.newDiv].naam}-divisie gestegen. 🎉 <span class="lg-x">✕</span></div>`;
-  if(r.relegated)return `<div class="lg-result lg-result-dn" onclick="_lgSeen()"><b>Gedegradeerd.</b> Je zakt naar de ${LEAGUE_DIVISIONS[r.newDiv].naam}-divisie — deze week pak je 'm terug! <span class="lg-x">✕</span></div>`;
+  if(r.relegated)return `<div class="lg-result lg-result-dn" onclick="_lgSeen()"><b>Gedegradeerd.</b> Je zakt naar de ${LEAGUE_DIVISIONS[r.newDiv].naam}-divisie - deze week pak je 'm terug! <span class="lg-x">✕</span></div>`;
   return `<div class="lg-result lg-result-safe" onclick="_lgSeen()">Je eindigde vorige week <b>#${r.rank}</b> in de ${LEAGUE_DIVISIONS[r.oldDiv].naam}-divisie. <span class="lg-x">✕</span></div>`;
 }
 function _lgSeen(){const L=getLeague();if(L&&L.result){L.result.seen=true;_saveLeague(L);}try{renderLeagueHome();}catch(e){}}
@@ -172,7 +184,7 @@ function _lgListWithDividers(rows){
     const rk=r.rank===1?'🥇':r.rank===2?'🥈':r.rank===3?'🥉':('<span class="lg-rk">'+r.rank+'</span>');
     html+=`<div class="lg-row ${zoneCls}${r.me?' lg-row-me':''}">
       <div class="lg-row-rank no-ico">${rk}</div>
-      <div class="lg-row-av no-ico">${r.me?'⭐':r.av}</div>
+      <div class="lg-row-av no-ico">${_lgAvatar(r)}</div>
       <div class="lg-row-name">${_lgEsc(r.naam)}${r.me?' <span class="lg-you">jij</span>':''}</div>
       <div class="lg-row-xp">${r.xp}<span class="lg-xp-u"> XP</span></div>
     </div>`;

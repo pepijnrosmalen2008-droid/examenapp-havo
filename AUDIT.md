@@ -1,6 +1,6 @@
 # Slagio content-audit
 
-Automatische meting over `data.js` — **geen wijzigingen aangebracht**.
+Automatische meting over `data.js` - **geen wijzigingen aangebracht**.
 
 **Bronketen:** `sv` → snelle quiz · botsrace · multiplayer · daily challenge | `oe` → oud-examen · simulatietoets | `sam` → samenvatting · flashcards (begrippen uit `<strong>`-tags, fallback `onderwerpen`).
 
@@ -46,7 +46,7 @@ Automatische meting over `data.js` — **geen wijzigingen aangebracht**.
 ## Belangrijkste bevindingen
 
 1. **Antwoord-lengte verklapt het juiste antwoord.** Zie kolom *juist=langste*: in de meeste vakken is het correcte antwoord de langste optie (Economie 86%, Maatschappijwetenschappen 82%, Engels 71%, Geschiedenis 67%, Nederlands 66%). Een leerling kan scoren op 'kies de langste' i.p.v. kennis. Werkt door in 4 modi via de gedeelde `sv`-pool.
-2. **Te lange opties.** Kolom *opties >60t* telt vragen met minstens één optie ≥60 tekens — te veel leestijd voor een snelle quiz. De uitleg staat al in `u:`, dus inkorten kan zonder informatieverlies.
-3. **Uitleg-tussen-haakjes.** Kolom *alle-haakjes*: vragen waar álle opties een verklarende '(...)' bevatten — veilig te strippen tot korte, vergelijkbare antwoorden.
+2. **Te lange opties.** Kolom *opties >60t* telt vragen met minstens één optie ≥60 tekens - te veel leestijd voor een snelle quiz. De uitleg staat al in `u:`, dus inkorten kan zonder informatieverlies.
+3. **Uitleg-tussen-haakjes.** Kolom *alle-haakjes*: vragen waar álle opties een verklarende '(...)' bevatten - veilig te strippen tot korte, vergelijkbare antwoorden.
 4. **Structuur is gezond.** Geen kapotte vragen gevonden; de inhoud zelf is in steekproeven feitelijk correct.
 5. **Oud-examenvragen zijn oefenvragen in examenstijl**, geen letterlijke CE-vragen (die zitten als PDF-archief apart). Inhoudelijk plausibel; uitbreiden en variëren is de winst.

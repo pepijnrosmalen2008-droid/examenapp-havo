@@ -26,7 +26,7 @@ var VAKKEN = [
      "Tekstsoorten (betoog, beschouwing, instructie)",
      "Bedoeling en toon van de schrijver"
     ],
-    "sam": "<div class=\"sam-head\">Tekstbegrip</div><ul><li><strong>Hoofdgedachte</strong>: het centrale standpunt of de boodschap van de hele tekst. Staat vaak in inleiding of conclusie. Verschil met onderwerp: het onderwerp is het thema (bijv. \"sociale media\"), de hoofdgedachte is wat de auteur daarover beweert.</li><li><strong>Deelonderwerpen</strong>: elke alinea werkt toe naar de hoofdgedachte. Noteer per alinea de kern om de opbouw zichtbaar te maken.</li><li><strong>Feit vs. mening</strong>: feiten zijn objectief controleerbaar (\"42% van jongeren…\"). Meningen bevatten waardeoordelen: goed, slecht, moeten, onacceptabel. Feiten worden regelmatig ingezet om een mening te ondersteunen.</li></ul><div class=\"sam-head\">Signaalwoorden</div><ul><li><strong>Gevolg/oorzaak</strong>: daardoor, dus, zodat, waardoor, als gevolg hiervan, omdat, doordat</li><li><strong>Tegenstelling</strong>: maar, echter, toch, terwijl, integendeel, daarentegen, in tegenstelling tot</li><li><strong>Toevoeging</strong>: bovendien, daarnaast, ook, verder, tevens, zelfs, niet alleen … maar ook</li><li><strong>Concessie</strong>: weliswaar, hoewel, ondanks, ook al, toegegeven dat</li><li><strong>Opsomming/volgorde</strong>: ten eerste, vervolgens, ten slotte, enerzijds … anderzijds</li></ul><div class=\"sam-head\">Argumentatiestructuur</div><ul><li><strong>Enkelvoudig</strong>: één argument onderbouwt het standpunt direct.</li><li><strong>Meervoudig</strong>: meerdere onafhankelijke argumenten ondersteunen elk afzonderlijk het standpunt. Als je één argument weghaalt, blijven de andere staan.</li><li><strong>Onderschikkend</strong>: een argument wordt zelf onderbouwd door een sub-argument — ketting van redeneringen.</li><li><strong>Concessie en weerlegging</strong>: auteur erkent tegenargument (\"weliswaar klopt X\") maar handhaaft standpunt (\"toch geldt Y\"). Vergroot geloofwaardigheid van het betoog.</li></ul><div class=\"sam-head\">Tekstsoorten en toon</div><ul><li><strong>Betoog</strong>: doel = overtuigen van één standpunt. Bevat stelling, argumenten en conclusie. Eenzijdig van opzet.</li><li><strong>Beschouwing</strong>: verkent vraagstuk van meerdere kanten, geen hard standpunt. Genuanceerder dan betoog.</li><li><strong>Informatieve tekst</strong>: informeren staat centraal, geen standpunt. Feiten en uitleg.</li><li><strong>Toon van de schrijver</strong>: houding zichtbaar in woordkeuze — ironisch, kritisch, enthousiast, zakelijk, sceptisch. Let op bijvoeglijke naamwoorden en retorische vragen.</li></ul><div class=\"sam-onthoud\">Signaalwoorden per relatie: Oorzaak/gevolg: <em>daardoor, omdat, doordat, vandaar, waardoor, dus</em>. Tegenstelling: <em>echter, maar, toch, terwijl, integendeel</em>. Toevoeging: <em>bovendien, ook, tevens, zelfs, niet alleen…maar ook</em>. Opsomming: <em>ten eerste, vervolgens, ten slotte, enerzijds…anderzijds</em>. Concessie: <em>weliswaar, hoewel, ondanks, ook al</em>.</div><div class=\"sam-ce-spot\"><ul><li>\"Welk verband drukt het signaalwoord uit?\" → kijk naar de relatie vóór en ná het woord (oorzaak, gevolg, tegenstelling, toevoeging)</li><li>\"Wat is de hoofdgedachte?\" → zoek de overkoepelende stelling/boodschap over het hele onderwerp, niet een deelargument</li><li>\"Is dit een betoog of beschouwing?\" → betoog: eenzijdig, expliciete stelling. Beschouwing: meerdere kanten, genuanceerd</li><li>\"Welk argumentatieschema?\" → enkelvoudig (één argument), meervoudig (onafhankelijke argumenten), onderschikkend (argument→sub-argument keten)</li><li>\"Welk retorisch middel?\" → concessie, retorische vraag, opsomming, analoog voorbeeld, beroep op autoriteit</li></ul></div>",
+    "sam": "<div class=\"sam-head\">Tekstbegrip</div><ul><li><strong>Hoofdgedachte</strong>: het centrale standpunt of de boodschap van de hele tekst. Staat vaak in inleiding of conclusie. Verschil met onderwerp: het onderwerp is het thema (bijv. \"sociale media\"), de hoofdgedachte is wat de auteur daarover beweert.</li><li><strong>Deelonderwerpen</strong>: elke alinea werkt toe naar de hoofdgedachte. Noteer per alinea de kern om de opbouw zichtbaar te maken.</li><li><strong>Feit vs. mening</strong>: feiten zijn objectief controleerbaar (\"42% van jongeren…\"). Meningen bevatten waardeoordelen: goed, slecht, moeten, onacceptabel. Feiten worden regelmatig ingezet om een mening te ondersteunen.</li></ul><div class=\"sam-head\">Signaalwoorden</div><ul><li><strong>Gevolg/oorzaak</strong>: daardoor, dus, zodat, waardoor, als gevolg hiervan, omdat, doordat</li><li><strong>Tegenstelling</strong>: maar, echter, toch, terwijl, integendeel, daarentegen, in tegenstelling tot</li><li><strong>Toevoeging</strong>: bovendien, daarnaast, ook, verder, tevens, zelfs, niet alleen … maar ook</li><li><strong>Concessie</strong>: weliswaar, hoewel, ondanks, ook al, toegegeven dat</li><li><strong>Opsomming/volgorde</strong>: ten eerste, vervolgens, ten slotte, enerzijds … anderzijds</li></ul><div class=\"sam-head\">Argumentatiestructuur</div><ul><li><strong>Enkelvoudig</strong>: één argument onderbouwt het standpunt direct.</li><li><strong>Meervoudig</strong>: meerdere onafhankelijke argumenten ondersteunen elk afzonderlijk het standpunt. Als je één argument weghaalt, blijven de andere staan.</li><li><strong>Onderschikkend</strong>: een argument wordt zelf onderbouwd door een sub-argument - ketting van redeneringen.</li><li><strong>Concessie en weerlegging</strong>: auteur erkent tegenargument (\"weliswaar klopt X\") maar handhaaft standpunt (\"toch geldt Y\"). Vergroot geloofwaardigheid van het betoog.</li></ul><div class=\"sam-head\">Tekstsoorten en toon</div><ul><li><strong>Betoog</strong>: doel = overtuigen van één standpunt. Bevat stelling, argumenten en conclusie. Eenzijdig van opzet.</li><li><strong>Beschouwing</strong>: verkent vraagstuk van meerdere kanten, geen hard standpunt. Genuanceerder dan betoog.</li><li><strong>Informatieve tekst</strong>: informeren staat centraal, geen standpunt. Feiten en uitleg.</li><li><strong>Toon van de schrijver</strong>: houding zichtbaar in woordkeuze - ironisch, kritisch, enthousiast, zakelijk, sceptisch. Let op bijvoeglijke naamwoorden en retorische vragen.</li></ul><div class=\"sam-onthoud\">Signaalwoorden per relatie: Oorzaak/gevolg: <em>daardoor, omdat, doordat, vandaar, waardoor, dus</em>. Tegenstelling: <em>echter, maar, toch, terwijl, integendeel</em>. Toevoeging: <em>bovendien, ook, tevens, zelfs, niet alleen…maar ook</em>. Opsomming: <em>ten eerste, vervolgens, ten slotte, enerzijds…anderzijds</em>. Concessie: <em>weliswaar, hoewel, ondanks, ook al</em>.</div><div class=\"sam-ce-spot\"><ul><li>\"Welk verband drukt het signaalwoord uit?\" → kijk naar de relatie vóór en ná het woord (oorzaak, gevolg, tegenstelling, toevoeging)</li><li>\"Wat is de hoofdgedachte?\" → zoek de overkoepelende stelling/boodschap over het hele onderwerp, niet een deelargument</li><li>\"Is dit een betoog of beschouwing?\" → betoog: eenzijdig, expliciete stelling. Beschouwing: meerdere kanten, genuanceerd</li><li>\"Welk argumentatieschema?\" → enkelvoudig (één argument), meervoudig (onafhankelijke argumenten), onderschikkend (argument→sub-argument keten)</li><li>\"Welk retorisch middel?\" → concessie, retorische vraag, opsomming, analoog voorbeeld, beroep op autoriteit</li></ul></div>",
     "sv": [
      {
       "v": "Welk tekstueel element is het overkoepelende standpunt of de centrale boodschap die de hele tekst draagt?",
@@ -310,7 +310,7 @@ var VAKKEN = [
        "met \"als\"/\"zoals\"zo sterk als een beer",
        "mening + onderbouwing",
        "wat de schrijver wil bereiken",
-       "\"een BN'er zegt het\" — geen echte deskundige"
+       "\"een BN'er zegt het\" - geen echte deskundige"
       ],
       "c": 2,
       "u": "«Tekstdoel» betekent: wat de schrijver wil bereiken.",
@@ -501,7 +501,7 @@ var VAKKEN = [
       "o": [
        "informeren, overtuigen of activeren",
        "oorzaak-gevolg, tegenstelling, opsomming…",
-       "\"een BN'er zegt het\" — geen echte deskundige",
+       "\"een BN'er zegt het\" - geen echte deskundige",
        "de lezer iets laten doen of tot actie aanzetten"
       ],
       "c": 3,
@@ -883,7 +883,7 @@ var VAKKEN = [
      {
       "v": "Wat betekent «Opsomming»?",
       "o": [
-       "\"een BN'er zegt het\" — geen echte deskundige",
+       "\"een BN'er zegt het\" - geen echte deskundige",
        "aantonen dat een argument niet klopt",
        "ten eerste, bovendien, ook, daarnaast",
        "nevenschikkend of onderschikkend"
@@ -1605,7 +1605,7 @@ var VAKKEN = [
        ""
       ],
       "c": 0,
-      "u": "Ster 1: de inhoud is correct en volledig — je hebt goed onderzoek gedaan. Ster 2: de structuur was duidelijk, ik kon de drie onderdelen goed volgen. Wens: ik zou het fijn vinden als je meer oogcontact maakt — probeer je punten op te sommen en dan omhoog te kijken, in plaats van voor te lezen. Dit vergroot de geloofwaardigheid sterk."
+      "u": "Ster 1: de inhoud is correct en volledig - je hebt goed onderzoek gedaan. Ster 2: de structuur was duidelijk, ik kon de drie onderdelen goed volgen. Wens: ik zou het fijn vinden als je meer oogcontact maakt - probeer je punten op te sommen en dan omhoog te kijken, in plaats van voor te lezen. Dit vergroot de geloofwaardigheid sterk."
      },
      {
       "bron": "HAVO Nederlands SE Luistervaardigheid (geen afbeelding)",
@@ -2134,7 +2134,7 @@ var VAKKEN = [
      {
       "v": "Wat betekent «Structuur»?",
       "o": [
-       "\"een BN'er zegt het\" — geen echte deskundige",
+       "\"een BN'er zegt het\" - geen echte deskundige",
        "een gestructureerde woordenstrijd",
        "inleiding, kern, slot",
        "aantonen dat een argument niet klopt"
@@ -2247,7 +2247,7 @@ var VAKKEN = [
        ""
       ],
       "c": 0,
-      "u": "Goede inleiding bevat: (1) aandachtstrekker (opvallend feit, retorische vraag of anekdote), (2) korte context (wat speelt er?), (3) de expliciete stelling. Voorbeeld: \"Jongeren besteden gemiddeld 7 uur per dag achter schermen — maar hoeveel weten ze werkelijk over hoe media hen beïnvloeden? (aandacht) In een tijd van nepnieuws en filterbubbels is digitale geletterdheid essentieel. (context) Scholen moeten daarom verplichte mediawijsheidsles invoeren. (stelling)\""
+      "u": "Goede inleiding bevat: (1) aandachtstrekker (opvallend feit, retorische vraag of anekdote), (2) korte context (wat speelt er?), (3) de expliciete stelling. Voorbeeld: \"Jongeren besteden gemiddeld 7 uur per dag achter schermen - maar hoeveel weten ze werkelijk over hoe media hen beïnvloeden? (aandacht) In een tijd van nepnieuws en filterbubbels is digitale geletterdheid essentieel. (context) Scholen moeten daarom verplichte mediawijsheidsles invoeren. (stelling)\""
      },
      {
       "bron": "HAVO Nederlands SE Schrijfvaardigheid Brief (geen afbeelding)",
@@ -2257,7 +2257,7 @@ var VAKKEN = [
        ""
       ],
       "c": 0,
-      "u": "Aanhef: \"Geachte heer/mevrouw,\" (of de naam als die bekend is). Eerste alinea — benoem direct je doel en motivatie: \"Graag meld ik mij aan als vrijwilliger in uw bibliotheek, omdat ik het lezen onder jongeren wil bevorderen en ervaring wil opdoen in het klantcontact.\" Afsluiting: \"Ik hoor graag of er mogelijkheden zijn en ben beschikbaar voor een kennismaking. Met vriendelijke groet, [naam].\" Let op: formeel register, volledige zinnen, geen afkortingen."
+      "u": "Aanhef: \"Geachte heer/mevrouw,\" (of de naam als die bekend is). Eerste alinea - benoem direct je doel en motivatie: \"Graag meld ik mij aan als vrijwilliger in uw bibliotheek, omdat ik het lezen onder jongeren wil bevorderen en ervaring wil opdoen in het klantcontact.\" Afsluiting: \"Ik hoor graag of er mogelijkheden zijn en ben beschikbaar voor een kennismaking. Met vriendelijke groet, [naam].\" Let op: formeel register, volledige zinnen, geen afkortingen."
      },
      {
       "bron": "HAVO Nederlands SE Schrijfvaardigheid Brief (geen afbeelding)",
@@ -2267,7 +2267,7 @@ var VAKKEN = [
        ""
       ],
       "c": 0,
-      "u": "Aanhef: \"Geachte heer/mevrouw,\" (of naam als bekend). Eerste alinea: benoem direct het doel — \"Ik schrijf u in verband met ernstige geluidsoverlast die ik al drie weken ondervind van de bouwwerkzaamheden aan de [straatnaam].\" Afsluiting: \"Ik zie uw reactie graag tegemoet. Met vriendelijke groet, [naam].\""
+      "u": "Aanhef: \"Geachte heer/mevrouw,\" (of naam als bekend). Eerste alinea: benoem direct het doel - \"Ik schrijf u in verband met ernstige geluidsoverlast die ik al drie weken ondervind van de bouwwerkzaamheden aan de [straatnaam].\" Afsluiting: \"Ik zie uw reactie graag tegemoet. Met vriendelijke groet, [naam].\""
      }
     ],
     "begrippen": [
@@ -2326,7 +2326,7 @@ var VAKKEN = [
      "Lengte en volledigheid beoordelen",
      "Samenvatting beoordelen op kwaliteit"
     ],
-    "sam": "<div class=\"sam-head\">Samenvatten</div><ul><li><strong>Stap 1 — lees globaal</strong>: bepaal het onderwerp en tekstsoort. Wat is het doel van de tekst?</li><li><strong>Stap 2 — kernzinnen</strong>: noteer per alinea de kernzin (de zin die het hoofdpunt bevat). Laat details, voorbeelden en herhalingen weg.</li><li><strong>Stap 3 — schrijf samen</strong>: verbind de kernzinnen met signaalwoorden. Gebruik eigen woorden — kopieer geen zinnen letterlijk.</li><li><strong>Stap 4 — controleer</strong>: is de hoofdgedachte aanwezig? Staan de verhoudingen goed (geen onnodige details)? Is de samenvatting coherent?</li></ul><div class=\"sam-head\">Beoordeling</div><ul><li><strong>Volledigheid</strong>: zijn alle hoofdpunten aanwezig? Ontbreken er essentiële argumenten of conclusies?</li><li><strong>Beknoptheid</strong>: zijn details en herhalingen weggelaten? Is de samenvatting significant korter dan het origineel?</li><li><strong>Eigen woorden</strong>: is de samenvatting een parafrase of een kopie? Eigen formulering toont begrip.</li><li><strong>Coherentie</strong>: loopt de samenvatting logisch? Zijn verbanden tussen de punten duidelijk gemaakt?</li></ul>",
+    "sam": "<div class=\"sam-head\">Samenvatten</div><ul><li><strong>Stap 1 - lees globaal</strong>: bepaal het onderwerp en tekstsoort. Wat is het doel van de tekst?</li><li><strong>Stap 2 - kernzinnen</strong>: noteer per alinea de kernzin (de zin die het hoofdpunt bevat). Laat details, voorbeelden en herhalingen weg.</li><li><strong>Stap 3 - schrijf samen</strong>: verbind de kernzinnen met signaalwoorden. Gebruik eigen woorden - kopieer geen zinnen letterlijk.</li><li><strong>Stap 4 - controleer</strong>: is de hoofdgedachte aanwezig? Staan de verhoudingen goed (geen onnodige details)? Is de samenvatting coherent?</li></ul><div class=\"sam-head\">Beoordeling</div><ul><li><strong>Volledigheid</strong>: zijn alle hoofdpunten aanwezig? Ontbreken er essentiële argumenten of conclusies?</li><li><strong>Beknoptheid</strong>: zijn details en herhalingen weggelaten? Is de samenvatting significant korter dan het origineel?</li><li><strong>Eigen woorden</strong>: is de samenvatting een parafrase of een kopie? Eigen formulering toont begrip.</li><li><strong>Coherentie</strong>: loopt de samenvatting logisch? Zijn verbanden tussen de punten duidelijk gemaakt?</li></ul>",
     "sv": [
      {
       "v": "Wat is de eerste stap bij het samenvatten van een tekst?",
@@ -2355,7 +2355,7 @@ var VAKKEN = [
       "o": [
        "Te kort",
        "Geen eigen woorden",
-       "Vage formulering — welk idee? Welke reden geeft de auteur?",
+       "Vage formulering - welk idee? Welke reden geeft de auteur?",
        "Geen probleem, dit is een goede samenvatting"
       ],
       "c": 2,
@@ -2529,7 +2529,7 @@ var VAKKEN = [
        "overbodige, herhalende informatie",
        "de mate van formeel taalgebruik",
        "maar, echter, toch, daarentegen",
-       "\"een BN'er zegt het\" — geen echte deskundige"
+       "\"een BN'er zegt het\" - geen echte deskundige"
       ],
       "c": 0,
       "u": "«Redundantie» betekent: overbodige, herhalende informatie.",
@@ -2927,7 +2927,7 @@ var VAKKEN = [
        ""
       ],
       "c": 0,
-      "u": "(1) Volledigheid: ontbreken de oorzaken (droogte, overstromingen), schaal (miljoenen mensen) en gevolgen (politieke spanningen). Verbetering: voeg de hoofdargumenten toe.\n(2) Coherentie: er zijn geen verbanden. Verbetering: gebruik signaalwoorden zoals \"als gevolg van\" en \"waardoor\".\n(3) Beknoptheid: de samenvatting is weliswaar kort maar mist essentiële informatie — te summier is ook een fout. Verbetering: breid de kernpunten uit zonder details toe te voegen."
+      "u": "(1) Volledigheid: ontbreken de oorzaken (droogte, overstromingen), schaal (miljoenen mensen) en gevolgen (politieke spanningen). Verbetering: voeg de hoofdargumenten toe.\n(2) Coherentie: er zijn geen verbanden. Verbetering: gebruik signaalwoorden zoals \"als gevolg van\" en \"waardoor\".\n(3) Beknoptheid: de samenvatting is weliswaar kort maar mist essentiële informatie - te summier is ook een fout. Verbetering: breid de kernpunten uit zonder details toe te voegen."
      },
      {
       "bron": "HAVO Nederlands CE 2023 Tijdvak 1 Samenvatten (geen afbeelding)",
@@ -2996,7 +2996,7 @@ var VAKKEN = [
      "Aanvaardbaarheid van argumentatie beoordelen",
      "Feitelijke vs waarderende argumenten"
     ],
-    "sam": "<div class=\"sam-head\">Standpunt en argumenten</div><ul><li><strong>Standpunt</strong>: de bewering die de schrijver wil verdedigen. Herkenbaar aan: \"ik vind\", \"moet\", \"is goed/slecht\", waarderende taal.</li><li><strong>Argument</strong>: de reden die het standpunt ondersteunt. Signaalwoorden: want, omdat, immers, dus, daarom.</li><li><strong>Subargument</strong>: een argument dat een ander argument ondersteunt (onderschikkende keten).</li></ul><div class=\"sam-head\">Argumentatieschema's (HAVO)</div><ul><li><strong>Oorzaak-gevolg</strong>: A veroorzaakt B. Drogreden: het gevolg kan andere oorzaken hebben.</li><li><strong>Kenmerk</strong>: X heeft eigenschap Y, dus past in categorie Z. Drogreden: de eigenschap klopt niet of is niet relevant.</li><li><strong>Vergelijking</strong>: A is vergelijkbaar met B, dus geldt voor A wat voor B geldt. Drogreden: de situaties wijken op relevante punten af.</li><li><strong>Voorbeeld</strong>: X is een goed voorbeeld van Y, dus geldt Y in het algemeen. Drogreden: overhaaste generalisatie — te weinig voorbeelden.</li><li><strong>Autoriteit</strong>: deskundige Z zegt X. Drogreden: bron is niet deskundig of belanghebbend.</li></ul><div class=\"sam-head\">Drogredenen</div><ul><li><strong>Overhaaste generalisatie</strong>: van één of weinig gevallen een algemene conclusie trekken.</li><li><strong>Cirkelredenering</strong>: het standpunt wordt als bewijs voor zichzelf gebruikt.</li><li><strong>Ad hominem</strong>: de persoon aanvallen in plaats van het argument.</li><li><strong>Vals dilemma</strong>: twee opties presenteren terwijl er meer mogelijk zijn.</li><li><strong>Gezagsdrogreden</strong>: beroep op autoriteit die niet deskundig is op dit gebied.</li></ul>",
+    "sam": "<div class=\"sam-head\">Standpunt en argumenten</div><ul><li><strong>Standpunt</strong>: de bewering die de schrijver wil verdedigen. Herkenbaar aan: \"ik vind\", \"moet\", \"is goed/slecht\", waarderende taal.</li><li><strong>Argument</strong>: de reden die het standpunt ondersteunt. Signaalwoorden: want, omdat, immers, dus, daarom.</li><li><strong>Subargument</strong>: een argument dat een ander argument ondersteunt (onderschikkende keten).</li></ul><div class=\"sam-head\">Argumentatieschema's (HAVO)</div><ul><li><strong>Oorzaak-gevolg</strong>: A veroorzaakt B. Drogreden: het gevolg kan andere oorzaken hebben.</li><li><strong>Kenmerk</strong>: X heeft eigenschap Y, dus past in categorie Z. Drogreden: de eigenschap klopt niet of is niet relevant.</li><li><strong>Vergelijking</strong>: A is vergelijkbaar met B, dus geldt voor A wat voor B geldt. Drogreden: de situaties wijken op relevante punten af.</li><li><strong>Voorbeeld</strong>: X is een goed voorbeeld van Y, dus geldt Y in het algemeen. Drogreden: overhaaste generalisatie - te weinig voorbeelden.</li><li><strong>Autoriteit</strong>: deskundige Z zegt X. Drogreden: bron is niet deskundig of belanghebbend.</li></ul><div class=\"sam-head\">Drogredenen</div><ul><li><strong>Overhaaste generalisatie</strong>: van één of weinig gevallen een algemene conclusie trekken.</li><li><strong>Cirkelredenering</strong>: het standpunt wordt als bewijs voor zichzelf gebruikt.</li><li><strong>Ad hominem</strong>: de persoon aanvallen in plaats van het argument.</li><li><strong>Vals dilemma</strong>: twee opties presenteren terwijl er meer mogelijk zijn.</li><li><strong>Gezagsdrogreden</strong>: beroep op autoriteit die niet deskundig is op dit gebied.</li></ul>",
     "sv": [
      {
       "v": "Wat is een vals dilemma?",
@@ -3018,7 +3018,7 @@ var VAKKEN = [
        "Ze zijn in de praktijk altijd hetzelfde"
       ],
       "c": 0,
-      "u": "Feitelijk: \"Roken verhoogt de kans op longkanker met 25× — dit is meetbaar.\" Waarderend: \"Roken is immoreel.\" Het CE vraagt je dit onderscheid te maken en de aanvaardbaarheid van elk type te beoordelen."
+      "u": "Feitelijk: \"Roken verhoogt de kans op longkanker met 25× - dit is meetbaar.\" Waarderend: \"Roken is immoreel.\" Het CE vraagt je dit onderscheid te maken en de aanvaardbaarheid van elk type te beoordelen."
      },
      {
       "v": "Welk signaalwoord wijst op een argument dat een standpunt ondersteunt?",
@@ -3365,7 +3365,7 @@ var VAKKEN = [
        "argumenten die niet deugen",
        "met \"als\"/\"zoals\"zo sterk als een beer",
        "nevenschikkend of onderschikkend",
-       "\"een BN'er zegt het\" — geen echte deskundige"
+       "\"een BN'er zegt het\" - geen echte deskundige"
       ],
       "c": 2,
       "u": "«Structuur» betekent: nevenschikkend of onderschikkend.",
@@ -3399,7 +3399,7 @@ var VAKKEN = [
       "v": "Wat houdt «Structuur» in?",
       "o": [
        "aantonen dat een argument niet klopt",
-       "\"een BN'er zegt het\" — geen echte deskundige",
+       "\"een BN'er zegt het\" - geen echte deskundige",
        "nevenschikkend of onderschikkend",
        "voorbeeld, autoriteit, gevolg, vergelijking"
       ],
@@ -3449,7 +3449,7 @@ var VAKKEN = [
        "voorbeeld, autoriteit, gevolg, vergelijking",
        "een reden die een standpunt steunt",
        "mening van een deskundige",
-       "\"een BN'er zegt het\" — geen echte deskundige"
+       "\"een BN'er zegt het\" - geen echte deskundige"
       ],
       "c": 0,
       "u": "«Argumentatietypen» betekent: voorbeeld, autoriteit, gevolg, vergelijking.",
@@ -3593,7 +3593,7 @@ var VAKKEN = [
        "de gevolgen van iets",
        "voorbeeld, autoriteit, gevolg, vergelijking",
        "de mening die verdedigd wordt",
-       "\"een BN'er zegt het\" — geen echte deskundige"
+       "\"een BN'er zegt het\" - geen echte deskundige"
       ],
       "c": 0,
       "u": "«Oorzaak-gevolg» betekent: de gevolgen van iets.",
@@ -3640,7 +3640,7 @@ var VAKKEN = [
       "o": [
        "een argument dat niet deugt",
        "een overeenkomstig geval",
-       "\"een BN'er zegt het\" — geen echte deskundige",
+       "\"een BN'er zegt het\" - geen echte deskundige",
        "voorbeeld, autoriteit, gevolg, vergelijking"
       ],
       "c": 1,
@@ -3688,7 +3688,7 @@ var VAKKEN = [
       "o": [
        "je valt de persoon aan i.p.v. het argument",
        "aantonen dat een argument niet klopt",
-       "\"een BN'er zegt het\" — geen echte deskundige",
+       "\"een BN'er zegt het\" - geen echte deskundige",
        "een overeenkomstig geval"
       ],
       "c": 0,
@@ -3699,16 +3699,16 @@ var VAKKEN = [
       "v": "Wat betekent «Autoriteitsdrogreden»?",
       "o": [
        "een woord dat een verband aangeeft",
-       "\"een BN'er zegt het\" — geen echte deskundige",
+       "\"een BN'er zegt het\" - geen echte deskundige",
        "mening van een deskundige",
        "aantonen dat een argument niet klopt"
       ],
       "c": 1,
-      "u": "«Autoriteitsdrogreden» betekent: \"een BN'er zegt het\" — geen echte deskundige.",
+      "u": "«Autoriteitsdrogreden» betekent: \"een BN'er zegt het\" - geen echte deskundige.",
       "d": 1
      },
      {
-      "v": "Welk begrip hoort bij deze omschrijving: \"\"een BN'er zegt het\" — geen echte deskundige\"?",
+      "v": "Welk begrip hoort bij deze omschrijving: \"\"een BN'er zegt het\" - geen echte deskundige\"?",
       "o": [
        "Signaalwoorden",
        "Kernzin",
@@ -3716,11 +3716,11 @@ var VAKKEN = [
        "Autoriteitsdrogreden"
       ],
       "c": 3,
-      "u": "Het juiste begrip is «Autoriteitsdrogreden»: \"een BN'er zegt het\" — geen echte deskundige.",
+      "u": "Het juiste begrip is «Autoriteitsdrogreden»: \"een BN'er zegt het\" - geen echte deskundige.",
       "d": 2
      },
      {
-      "v": "Welke term past bij: \"\"een BN'er zegt het\" — geen echte deskundige\"?",
+      "v": "Welke term past bij: \"\"een BN'er zegt het\" - geen echte deskundige\"?",
       "o": [
        "Structuur",
        "Argumentatietypen",
@@ -3728,7 +3728,7 @@ var VAKKEN = [
        "Drogredenen"
       ],
       "c": 2,
-      "u": "Het juiste begrip is «Autoriteitsdrogreden»: \"een BN'er zegt het\" — geen echte deskundige.",
+      "u": "Het juiste begrip is «Autoriteitsdrogreden»: \"een BN'er zegt het\" - geen echte deskundige.",
       "d": 3
      },
      {
@@ -3736,11 +3736,11 @@ var VAKKEN = [
       "o": [
        "je valt de persoon aan i.p.v. het argument",
        "voorbeeld, autoriteit, gevolg, vergelijking",
-       "\"een BN'er zegt het\" — geen echte deskundige",
+       "\"een BN'er zegt het\" - geen echte deskundige",
        "een reden die een standpunt steunt"
       ],
       "c": 2,
-      "u": "«Autoriteitsdrogreden» betekent: \"een BN'er zegt het\" — geen echte deskundige.",
+      "u": "«Autoriteitsdrogreden» betekent: \"een BN'er zegt het\" - geen echte deskundige.",
       "d": 3
      },
      {
@@ -3943,7 +3943,7 @@ var VAKKEN = [
      },
      {
       "t": "Autoriteitsdrogreden",
-      "d": "\"een BN'er zegt het\" — geen echte deskundige"
+      "d": "\"een BN'er zegt het\" - geen echte deskundige"
      },
      {
       "t": "Overhaaste generalisatie",
@@ -3968,7 +3968,7 @@ var VAKKEN = [
      "Chronologie en tijdsverschijnselen",
      "Poëzie: klank, beeld en structuur"
     ],
-    "sam": "<div class=\"sam-head\">Vertelstandpunt en focalisatie</div><ul><li><strong>Ik-verteller</strong>: personage in het verhaal, eerste persoon. Begrensd perspectief — weet alleen wat hij/zij zelf ervaart. Kan onbetrouwbaar zijn.</li><li><strong>Alwetende (auctoriale) verteller</strong>: staat buiten het verhaal, kent gedachten en gevoelens van alle personages. Derde persoon.</li><li><strong>Personale verteller</strong>: derde persoon, maar perspectief van één personage. Weet alles van dat personage, niets van de rest.</li><li><strong>Focalisatie</strong>: door wiens ogen zien we de wereld? Extern = vanuit buitenaf. Intern = vanuit een personage. Hoeft niet samen te vallen met de verteller.</li></ul><div class=\"sam-head\">Thema, motief en structuur</div><ul><li><strong>Thema</strong>: centrale abstracte boodschap of vraagstuk (eenzaamheid, identiteit, verraad). Pas te benoemen na lezing van het geheel.</li><li><strong>Motief</strong>: concreet terugkerend element (object, situatie, woord) dat het thema symbolisch ondersteunt. Bijv. een gesloten deur als motief bij het thema isolatie.</li><li><strong>Chronologie</strong>: verhaal verloopt in tijdsvolgorde. <strong>Anachronie</strong>: terugblik (analepse/flashback) of vooruitwijzing (prolepse).</li><li><strong>In medias res</strong>: verhaal begint midden in de actie, zonder uitgebreide introductie.</li><li><strong>Retarderende momenten</strong>: opzettelijke vertragingen die spanning opbouwen vlak voor een climax.</li><li><strong>Verteltempo</strong>: samenvatting (versnelt), scene (realtime dialoog), ellips (tijdsprong), stilstand (beschrijving).</li></ul><div class=\"sam-head\">Literaire stromingen</div><ul><li><strong>Romantiek</strong> (vroeg 19e eeuw): verheerlijking van gevoel, natuur en het verre verleden. Afwijzing van industrialisatie en rationalisme. Individualistisch en idealistisch.</li><li><strong>Realisme</strong> (midden–laat 19e eeuw): objectieve weergave van de werkelijkheid inclusief sociale misstanden en armoede. Reactie op de Romantiek.</li><li><strong>Naturalisme</strong>: extreme variant van Realisme. Mensen worden volledig bepaald door milieu en erfelijkheid. Deterministische, sombere kijk.</li><li><strong>Modernisme</strong> (vroeg 20e eeuw): stream of consciousness, fragmentarisch vertellen, nadruk op innerlijk bewustzijn. Twijfel aan vaste waarheden.</li></ul><div class=\"sam-head\">Poëzie</div><ul><li><strong>Metrum</strong>: regelmatig ritme door afwisseling van beklemtoonde en onbeklemtoonde lettergrepen.</li><li><strong>Rijm</strong>: eindrijm (aabb, abab), binnenrijm, alliteratie (herhaalde beginmedeklinker).</li><li><strong>Beeldende middelen</strong>: metafoor (A ís B), vergelijking (A is als B), personificatie (levenloze dingen krijgen menselijke eigenschappen), symbool (concreet object staat voor abstracte waarde).</li></ul>",
+    "sam": "<div class=\"sam-head\">Vertelstandpunt en focalisatie</div><ul><li><strong>Ik-verteller</strong>: personage in het verhaal, eerste persoon. Begrensd perspectief - weet alleen wat hij/zij zelf ervaart. Kan onbetrouwbaar zijn.</li><li><strong>Alwetende (auctoriale) verteller</strong>: staat buiten het verhaal, kent gedachten en gevoelens van alle personages. Derde persoon.</li><li><strong>Personale verteller</strong>: derde persoon, maar perspectief van één personage. Weet alles van dat personage, niets van de rest.</li><li><strong>Focalisatie</strong>: door wiens ogen zien we de wereld? Extern = vanuit buitenaf. Intern = vanuit een personage. Hoeft niet samen te vallen met de verteller.</li></ul><div class=\"sam-head\">Thema, motief en structuur</div><ul><li><strong>Thema</strong>: centrale abstracte boodschap of vraagstuk (eenzaamheid, identiteit, verraad). Pas te benoemen na lezing van het geheel.</li><li><strong>Motief</strong>: concreet terugkerend element (object, situatie, woord) dat het thema symbolisch ondersteunt. Bijv. een gesloten deur als motief bij het thema isolatie.</li><li><strong>Chronologie</strong>: verhaal verloopt in tijdsvolgorde. <strong>Anachronie</strong>: terugblik (analepse/flashback) of vooruitwijzing (prolepse).</li><li><strong>In medias res</strong>: verhaal begint midden in de actie, zonder uitgebreide introductie.</li><li><strong>Retarderende momenten</strong>: opzettelijke vertragingen die spanning opbouwen vlak voor een climax.</li><li><strong>Verteltempo</strong>: samenvatting (versnelt), scene (realtime dialoog), ellips (tijdsprong), stilstand (beschrijving).</li></ul><div class=\"sam-head\">Literaire stromingen</div><ul><li><strong>Romantiek</strong> (vroeg 19e eeuw): verheerlijking van gevoel, natuur en het verre verleden. Afwijzing van industrialisatie en rationalisme. Individualistisch en idealistisch.</li><li><strong>Realisme</strong> (midden–laat 19e eeuw): objectieve weergave van de werkelijkheid inclusief sociale misstanden en armoede. Reactie op de Romantiek.</li><li><strong>Naturalisme</strong>: extreme variant van Realisme. Mensen worden volledig bepaald door milieu en erfelijkheid. Deterministische, sombere kijk.</li><li><strong>Modernisme</strong> (vroeg 20e eeuw): stream of consciousness, fragmentarisch vertellen, nadruk op innerlijk bewustzijn. Twijfel aan vaste waarheden.</li></ul><div class=\"sam-head\">Poëzie</div><ul><li><strong>Metrum</strong>: regelmatig ritme door afwisseling van beklemtoonde en onbeklemtoonde lettergrepen.</li><li><strong>Rijm</strong>: eindrijm (aabb, abab), binnenrijm, alliteratie (herhaalde beginmedeklinker).</li><li><strong>Beeldende middelen</strong>: metafoor (A ís B), vergelijking (A is als B), personificatie (levenloze dingen krijgen menselijke eigenschappen), symbool (concreet object staat voor abstracte waarde).</li></ul>",
     "sv": [
      {
       "v": "Welk vertelstandpunt gebruikt de eerste persoon en heeft een begrensd perspectief beperkt tot eigen ervaringen?",
@@ -5156,7 +5156,7 @@ var VAKKEN = [
   "code": "WA",
   "kleur": "#2563EB",
   "beschrijving": "Algebra, verbanden en statistiek op HAVO-niveau.",
-  "ceInfo": "CE = domein B (B1 Rekenen + B2 Algebra incl. logaritmen — telproblemen B3 zijn SE-only), domein C (Verbanden: lineair, exponentieel, kwadratisch én periodiek/sinusoïdaal) en domein E (Statistiek: beschrijvende statistiek, normaalverdeling, hypothesetoets, regressie). Domein D (Verandering/Differentiëren) is uitsluitend SE. Telproblemen (B3) zijn SE. Kansrekening in statistische context (z-scores, normaalverdeling) is CE; uitgebreide kansregels (P(A∩B), binomiale verdeling) zijn SE.",
+  "ceInfo": "CE = domein B (B1 Rekenen + B2 Algebra incl. logaritmen - telproblemen B3 zijn SE-only), domein C (Verbanden: lineair, exponentieel, kwadratisch én periodiek/sinusoïdaal) en domein E (Statistiek: beschrijvende statistiek, normaalverdeling, hypothesetoets, regressie). Domein D (Verandering/Differentiëren) is uitsluitend SE. Telproblemen (B3) zijn SE. Kansrekening in statistische context (z-scores, normaalverdeling) is CE; uitgebreide kansregels (P(A∩B), binomiale verdeling) zijn SE.",
   "exDatum": "2026-05-19",
   "exTijd": "13:30–16:30",
   "exDuur": "3 uur",
@@ -5171,13 +5171,13 @@ var VAKKEN = [
     "ceStatus": "CE+SE",
     "binas": [],
     "val": [
-     "Modelleeruitkomst niet terugkoppelen naar de context — vertaal het wiskundige antwoord altijd naar de betekenis in de situatie",
+     "Modelleeruitkomst niet terugkoppelen naar de context - vertaal het wiskundige antwoord altijd naar de betekenis in de situatie",
      "Representaties verwarren: tabel = concrete punten, grafiek = visueel patroon, formule = exacte rekenregel voor alle x-waarden"
     ],
     "onderwerpen": [
      "A1: Wiskundige en profielspecifieke vaardigheden (CE+SE)"
     ],
-    "sam": "<div class=\"sam-head\">Wiskundige vaardigheden</div><ul><li><strong>Redeneren</strong>: logische stappen zetten van gegeven informatie naar een conclusie. Tegenvoorbeeld: één geval dat een bewering weerlegt volstaat om aan te tonen dat een bewering niet altijd geldt.</li><li><strong>Modelleren</strong>: een reële situatie vertalen naar een wiskundige formule of grafiek. Daarna berekenen, de uitkomst terugvertalen naar de context en beoordelen of het antwoord realistisch is.</li><li><strong>Abstraheren</strong>: de essentie herkennen, los van de concrete getallen. Bijv. van \"10% rente per jaar\" naar y = a·gˣ voor willekeurige groeifactor g.</li><li><strong>Communiceren</strong>: formules, grafieken en conclusies helder beschrijven. Benoem eenheden en leg de betekenis van symbolen uit in de context.</li></ul><div class=\"sam-head\">Modelleercyclus</div><ul><li><strong>Stap 1 — Situatie begrijpen</strong>: identificeer de variabelen en benoem wat bekend en onbekend is.</li><li><strong>Stap 2 — Formule opstellen</strong>: kies een passend model (lineair, exponentieel). Let op het domein: welke x-waarden zijn realistisch?</li><li><strong>Stap 3 — Berekenen</strong>: gebruik de GR of algebraïsche technieken. Tussenuitkomsten niet afronden.</li><li><strong>Stap 4 — Terugkoppelen</strong>: vertaal de uitkomst terug naar de context. Klopt het antwoord? Zijn de eenheden juist?</li></ul><div class=\"sam-head\">Representaties</div><ul><li><strong>Tabel</strong>: concrete waarden voor specifieke x en y. Gelijke stap in y → lineair. Gelijke factor in y → exponentieel.</li><li><strong>Grafiek</strong>: toont het patroon visueel. Rechte lijn = lineair. Stijgende curve = exponentieel.</li><li><strong>Formule</strong>: rekenregel voor alle waarden. Meest nauwkeurig voor extrapoleren buiten het meetbereik.</li><li><strong>Omzetten</strong>: schakel tussen tabel ↔ grafiek ↔ formule. Bijv. uit twee punten een formule bepalen, of uit een formule een grafiek schetsen.</li></ul>",
+    "sam": "<div class=\"sam-head\">Wiskundige vaardigheden</div><ul><li><strong>Redeneren</strong>: logische stappen zetten van gegeven informatie naar een conclusie. Tegenvoorbeeld: één geval dat een bewering weerlegt volstaat om aan te tonen dat een bewering niet altijd geldt.</li><li><strong>Modelleren</strong>: een reële situatie vertalen naar een wiskundige formule of grafiek. Daarna berekenen, de uitkomst terugvertalen naar de context en beoordelen of het antwoord realistisch is.</li><li><strong>Abstraheren</strong>: de essentie herkennen, los van de concrete getallen. Bijv. van \"10% rente per jaar\" naar y = a·gˣ voor willekeurige groeifactor g.</li><li><strong>Communiceren</strong>: formules, grafieken en conclusies helder beschrijven. Benoem eenheden en leg de betekenis van symbolen uit in de context.</li></ul><div class=\"sam-head\">Modelleercyclus</div><ul><li><strong>Stap 1 - Situatie begrijpen</strong>: identificeer de variabelen en benoem wat bekend en onbekend is.</li><li><strong>Stap 2 - Formule opstellen</strong>: kies een passend model (lineair, exponentieel). Let op het domein: welke x-waarden zijn realistisch?</li><li><strong>Stap 3 - Berekenen</strong>: gebruik de GR of algebraïsche technieken. Tussenuitkomsten niet afronden.</li><li><strong>Stap 4 - Terugkoppelen</strong>: vertaal de uitkomst terug naar de context. Klopt het antwoord? Zijn de eenheden juist?</li></ul><div class=\"sam-head\">Representaties</div><ul><li><strong>Tabel</strong>: concrete waarden voor specifieke x en y. Gelijke stap in y → lineair. Gelijke factor in y → exponentieel.</li><li><strong>Grafiek</strong>: toont het patroon visueel. Rechte lijn = lineair. Stijgende curve = exponentieel.</li><li><strong>Formule</strong>: rekenregel voor alle waarden. Meest nauwkeurig voor extrapoleren buiten het meetbereik.</li><li><strong>Omzetten</strong>: schakel tussen tabel ↔ grafiek ↔ formule. Bijv. uit twee punten een formule bepalen, of uit een formule een grafiek schetsen.</li></ul>",
     "sv": [
      {
       "v": "Welke stap volgt na het berekenen bij de modelleercyclus?",
@@ -5243,7 +5243,7 @@ var VAKKEN = [
        "Om het type verband in een gegeven tabel te bepalen"
       ],
       "c": 0,
-      "u": "Eén tegenvoorbeeld weerlegt een universele bewering. Bijv. \"x² > x voor alle x\" — tegenvoorbeeld: x = 0,5 geeft 0,25 < 0,5. De bewering is dus niet altijd waar."
+      "u": "Eén tegenvoorbeeld weerlegt een universele bewering. Bijv. \"x² > x voor alle x\" - tegenvoorbeeld: x = 0,5 geeft 0,25 < 0,5. De bewering is dus niet altijd waar."
      },
      {
       "v": "Wat is de eerste stap bij het modelleren van een praktijkprobleem?",
@@ -5276,7 +5276,7 @@ var VAKKEN = [
        "extrapoleren buiten het bereik is altijd nauwkeuriger dan binnenin"
       ],
       "c": 0,
-      "u": "Interpoleren: schat een waarde tussen bekende datapunten (betrouwbaar). Extrapoleren: ga voorbij het meetbereik — het model kan daar afwijken van de werkelijkheid."
+      "u": "Interpoleren: schat een waarde tussen bekende datapunten (betrouwbaar). Extrapoleren: ga voorbij het meetbereik - het model kan daar afwijken van de werkelijkheid."
      },
      {
       "v": "Wanneer gebruik je een formule in plaats van een grafiek of tabel?",
@@ -5875,7 +5875,7 @@ var VAKKEN = [
        ""
       ],
       "c": 0,
-      "u": "(a) Lineair verband: voor elke stijging van 5 °C daalt G met 50 m³ — een gelijke absolute verandering. De rc is constant.\n(b) Rc = −50/5 = −10. Via T = 5, G = 180: G = −10T + 230.\n(c) 0 = −10T + 230 → T = 23 °C. Bij 23 °C voorspelt het model nul gasverbruik. Dit is redelijk plausibel voor zomerse temperaturen, maar het model houdt geen rekening met kookgas of warmwaterverbruik — het verbruik zal nooit exact nul zijn."
+      "u": "(a) Lineair verband: voor elke stijging van 5 °C daalt G met 50 m³ - een gelijke absolute verandering. De rc is constant.\n(b) Rc = −50/5 = −10. Via T = 5, G = 180: G = −10T + 230.\n(c) 0 = −10T + 230 → T = 23 °C. Bij 23 °C voorspelt het model nul gasverbruik. Dit is redelijk plausibel voor zomerse temperaturen, maar het model houdt geen rekening met kookgas of warmwaterverbruik - het verbruik zal nooit exact nul zijn."
      },
      {
       "bron": "HAVO Wiskunde A CE 2023 Tijdvak 2 Exponentieel model beoordelen (geen afbeelding)",
@@ -5885,7 +5885,7 @@ var VAKKEN = [
        ""
       ],
       "c": 0,
-      "u": "(a) Controleer de groeifactor: 600/400 = 1,5; 900/600 = 1,5; 1350/900 = 1,5. De verhouding tussen opeenvolgende waarden is steeds 1,5 (constante relatieve stap) → exponentieel verband.\n(b) P(t) = 400 · 1,5^t.\n(c) 400 · 1,5^t > 10000 → 1,5^t > 25 → t > log(25)/log(1,5) ≈ 7,6 jaar → na ruim 7,6 jaar (dus in jaar 8). Betrouwbaarheid: extrapolatie over 8 jaar is riskant — het model veronderstelt een constante groeifactor. In de praktijk treedt verzadiging op als een groot deel van de woningen al panelen heeft."
+      "u": "(a) Controleer de groeifactor: 600/400 = 1,5; 900/600 = 1,5; 1350/900 = 1,5. De verhouding tussen opeenvolgende waarden is steeds 1,5 (constante relatieve stap) → exponentieel verband.\n(b) P(t) = 400 · 1,5^t.\n(c) 400 · 1,5^t > 10000 → 1,5^t > 25 → t > log(25)/log(1,5) ≈ 7,6 jaar → na ruim 7,6 jaar (dus in jaar 8). Betrouwbaarheid: extrapolatie over 8 jaar is riskant - het model veronderstelt een constante groeifactor. In de praktijk treedt verzadiging op als een groot deel van de woningen al panelen heeft."
      },
      {
       "bron": "HAVO Wiskunde A CE 2023 Tijdvak 2 Verbandtype bepalen (geen afbeelding)",
@@ -5958,15 +5958,15 @@ var VAKKEN = [
     "val": [
      "Log-regels verwarren: log(a·b) = log a + log b, niet log a · log b",
      "Groeifactor verkeerd bepalen: bij p% groei is g = 1 + p/100, niet g = p/100",
-     "Telproblemen (B3) op het CE toepassen — B3 staat NIET op het CE",
+     "Telproblemen (B3) op het CE toepassen - B3 staat NIET op het CE",
      "Kwadratische vergelijking altijd via abc-formule terwijl ontbinden sneller kan"
     ],
     "onderwerpen": [
      "B1: Rekenen (CE)",
      "B2: Algebra (CE)",
-     "B3: Telproblemen (SE — niet op CE)"
+     "B3: Telproblemen (SE - niet op CE)"
     ],
-    "sam": "<div class=\"sam-head\">Rekenen (B1 — CE)</div><ul><li><strong>Procenten en verhoudingen</strong>: percentage van een getal: p% van a = (p/100)·a. Verhouding: a op b schrijf je als a:b of a/b. Evenredig: als x verdubbelt, verdubbelt y ook.</li><li><strong>Procentuele verandering</strong>: stijging van p% → nieuw = oud × (1 + p/100). Daling p% → nieuw = oud × (1 − p/100). Omgekeerd: oud = nieuw / groeifactor.</li><li><strong>Eenheden omrekenen</strong>: lengte (km/m/cm/mm), oppervlakte (1 km² = 10⁶ m²), inhoud (1 m³ = 1000 L), snelheid (km/h → m/s: deel door 3,6).</li><li><strong>Benaderend rekenen</strong>: afronden op significante cijfers. Bijv. 3,14159 → 3,14 (3 s.f.). Tussenuitkomsten nooit afronden; alleen het eindantwoord.</li><li><strong>Proportioneel redeneren</strong>: als a/b = c/d dan a·d = b·c (kruisproduct). Bijv. 3 kg voor €4,50 → x kg voor €7,50: x = 3 × 7,50 / 4,50 = 5 kg.</li></ul><div class=\"sam-head\">Algebra (B2 — CE)</div><ul><li><strong>Herleiden</strong>: vereenvoudigen van uitdrukkingen door haakjes uitwerken, gelijknamige termen samenvoegen. Bijv. 3(x+2) − x = 2x + 6.</li><li><strong>Lineaire vergelijking</strong>: ax + b = c → isoleer x. Bijv. 2x + 5 = 11 → x = 3.</li><li><strong>Kwadratische vergelijking</strong>: ax² + bx + c = 0. Oplossen via abc-formule: <span class=\"fm\">x = (−b ± √(b²−4ac)) / 2a</span>. Discriminant D = b²−4ac: D > 0 geeft 2 oplossingen, D = 0 geeft 1, D &lt; 0 geeft geen reële oplossing.</li><li><strong>Ontbinden in factoren</strong>: ax² + bx + c = a(x − x₁)(x − x₂) als x₁ en x₂ bekend zijn.</li></ul><div class=\"sam-head\">Machten en logaritmen (B2 — CE)</div><ul><li><strong>Exponentrekenregels</strong>: <span class=\"fm\">aˣ · aʸ = aˣ⁺ʸ</span>, <span class=\"fm\">aˣ / aʸ = aˣ⁻ʸ</span>, <span class=\"fm\">(aˣ)ʸ = aˣ·ʸ</span>, <span class=\"fm\">a⁰ = 1</span></li><li><strong>Logaritme</strong>: inverse van machtsverheffen met grondtal 10. <span class=\"fm\">log a = x ⟺ 10ˣ = a</span>. Bijv. log 1000 = 3.</li><li><strong>Logaritme rekenregels</strong>: <span class=\"fm\">log(a·b) = log a + log b</span> | <span class=\"fm\">log(a/b) = log a − log b</span> | <span class=\"fm\">log(aⁿ) = n · log a</span></li><li><strong>Wortelschrijfwijze</strong>: <span class=\"fm\">√a = a^(1/2)</span>, <span class=\"fm\">∛a = a^(1/3)</span></li></ul><div class=\"sam-head\">Telproblemen (B3) <span style=\"color:var(--warn);font-size:11px\">⚠️ SE-stof — staat niet op CE</span></div><ul><li><strong>Vermenigvuldigingsprincipe</strong>: als keuze A op m manieren kan en keuze B op n manieren, zijn er m × n combinaties totaal.</li><li><strong>Permutatie</strong>: volgorde telt mee. n! = n × (n−1) × … × 1. Bijv. 3! = 6 volgorden van 3 items.</li><li><strong>Combinatie</strong>: volgorde telt niet. <span class=\"fm\">C(n,k) = n! / (k! · (n−k)!)</span>. Bijv. C(5,2) = 10 manieren om 2 uit 5 te kiezen.</li><li><strong>Nkr vs nCr</strong>: nPr = n!/(n−k)! (met volgorde), nCr = nPr/k! (zonder volgorde). Combinatie is altijd kleiner dan of gelijk aan permutatie.</li></ul>",
+    "sam": "<div class=\"sam-head\">Rekenen (B1 - CE)</div><ul><li><strong>Procenten en verhoudingen</strong>: percentage van een getal: p% van a = (p/100)·a. Verhouding: a op b schrijf je als a:b of a/b. Evenredig: als x verdubbelt, verdubbelt y ook.</li><li><strong>Procentuele verandering</strong>: stijging van p% → nieuw = oud × (1 + p/100). Daling p% → nieuw = oud × (1 − p/100). Omgekeerd: oud = nieuw / groeifactor.</li><li><strong>Eenheden omrekenen</strong>: lengte (km/m/cm/mm), oppervlakte (1 km² = 10⁶ m²), inhoud (1 m³ = 1000 L), snelheid (km/h → m/s: deel door 3,6).</li><li><strong>Benaderend rekenen</strong>: afronden op significante cijfers. Bijv. 3,14159 → 3,14 (3 s.f.). Tussenuitkomsten nooit afronden; alleen het eindantwoord.</li><li><strong>Proportioneel redeneren</strong>: als a/b = c/d dan a·d = b·c (kruisproduct). Bijv. 3 kg voor €4,50 → x kg voor €7,50: x = 3 × 7,50 / 4,50 = 5 kg.</li></ul><div class=\"sam-head\">Algebra (B2 - CE)</div><ul><li><strong>Herleiden</strong>: vereenvoudigen van uitdrukkingen door haakjes uitwerken, gelijknamige termen samenvoegen. Bijv. 3(x+2) − x = 2x + 6.</li><li><strong>Lineaire vergelijking</strong>: ax + b = c → isoleer x. Bijv. 2x + 5 = 11 → x = 3.</li><li><strong>Kwadratische vergelijking</strong>: ax² + bx + c = 0. Oplossen via abc-formule: <span class=\"fm\">x = (−b ± √(b²−4ac)) / 2a</span>. Discriminant D = b²−4ac: D > 0 geeft 2 oplossingen, D = 0 geeft 1, D &lt; 0 geeft geen reële oplossing.</li><li><strong>Ontbinden in factoren</strong>: ax² + bx + c = a(x − x₁)(x − x₂) als x₁ en x₂ bekend zijn.</li></ul><div class=\"sam-head\">Machten en logaritmen (B2 - CE)</div><ul><li><strong>Exponentrekenregels</strong>: <span class=\"fm\">aˣ · aʸ = aˣ⁺ʸ</span>, <span class=\"fm\">aˣ / aʸ = aˣ⁻ʸ</span>, <span class=\"fm\">(aˣ)ʸ = aˣ·ʸ</span>, <span class=\"fm\">a⁰ = 1</span></li><li><strong>Logaritme</strong>: inverse van machtsverheffen met grondtal 10. <span class=\"fm\">log a = x ⟺ 10ˣ = a</span>. Bijv. log 1000 = 3.</li><li><strong>Logaritme rekenregels</strong>: <span class=\"fm\">log(a·b) = log a + log b</span> | <span class=\"fm\">log(a/b) = log a − log b</span> | <span class=\"fm\">log(aⁿ) = n · log a</span></li><li><strong>Wortelschrijfwijze</strong>: <span class=\"fm\">√a = a^(1/2)</span>, <span class=\"fm\">∛a = a^(1/3)</span></li></ul><div class=\"sam-head\">Telproblemen (B3) <span style=\"color:var(--warn);font-size:11px\">⚠️ SE-stof - staat niet op CE</span></div><ul><li><strong>Vermenigvuldigingsprincipe</strong>: als keuze A op m manieren kan en keuze B op n manieren, zijn er m × n combinaties totaal.</li><li><strong>Permutatie</strong>: volgorde telt mee. n! = n × (n−1) × … × 1. Bijv. 3! = 6 volgorden van 3 items.</li><li><strong>Combinatie</strong>: volgorde telt niet. <span class=\"fm\">C(n,k) = n! / (k! · (n−k)!)</span>. Bijv. C(5,2) = 10 manieren om 2 uit 5 te kiezen.</li><li><strong>Nkr vs nCr</strong>: nPr = n!/(n−k)! (met volgorde), nCr = nPr/k! (zonder volgorde). Combinatie is altijd kleiner dan of gelijk aan permutatie.</li></ul>",
     "sv": [
      {
       "v": "Welke rekenregel geldt voor log(a tot de macht n)?",
@@ -6611,7 +6611,7 @@ var VAKKEN = [
        ""
       ],
       "c": 0,
-      "u": "€26 komt overeen met 100% − 14% = 86%. Het gevraagde uurloon is 26 / 0,86 ≈ €30,23, dus €30. Let op: niet ×1,14 — dan reken je 14% óp €26 in plaats van eraf."
+      "u": "€26 komt overeen met 100% − 14% = 86%. Het gevraagde uurloon is 26 / 0,86 ≈ €30,23, dus €30. Let op: niet ×1,14 - dan reken je 14% óp €26 in plaats van eraf."
      },
      {
       "bron": "HAVO Wiskunde A CE 2023 Tijdvak 1 (vraag 5)",
@@ -6677,9 +6677,9 @@ var VAKKEN = [
     "binas": [],
     "val": [
      "Lineair versus evenredig verwarren: evenredig gaat door oorsprong (b=0), lineair niet per se",
-     "Groeifactor g > 1 is altijd groei, g < 1 is altijd verval — niet omgekeerd",
+     "Groeifactor g > 1 is altijd groei, g < 1 is altijd verval - niet omgekeerd",
      "Asymptoot: exponentieel verval bereikt de x-as nooit",
-     "Rico fout bepalen: Δy in de teller, Δx in de noemer — niet omgedraaid"
+     "Rico fout bepalen: Δy in de teller, Δx in de noemer - niet omgedraaid"
     ],
     "onderwerpen": [
      "C1: Tabellen interpreteren (CE)",
@@ -7752,9 +7752,9 @@ var VAKKEN = [
     "binas": [],
     "val": [
      "Verschilquotiënt verwarren met de afgeleide: verschilquotiënt is gemiddeld over interval, afgeleide is ogenblikkelijk",
-     "f'(x) = 0 geeft kandidaat-extremen, niet altijd werkelijk extremen — altijd tekenschema maken",
+     "f'(x) = 0 geeft kandidaat-extremen, niet altijd werkelijk extremen - altijd tekenschema maken",
      "Optimalisatie: nevenvoorwaarde vergeten en de formule niet terugbrengen tot één variabele",
-     "Raaklijn: helling is f'(a), niet f(a) — verwar functiewaarde niet met afgeleidwaarde"
+     "Raaklijn: helling is f'(a), niet f(a) - verwar functiewaarde niet met afgeleidwaarde"
     ],
     "onderwerpen": [
      "D1: Gemiddelde verandering: verschilquotiënt (CE)",
@@ -7765,7 +7765,7 @@ var VAKKEN = [
      "D6: Optimalisatieproblemen in context (CE)",
      "D7: Toenemend/afnemend stijgen en dalen (CE)"
     ],
-    "sam": "<div class=\"sam-head\">Verandering</div><ul><li><strong>Gemiddelde verandering</strong> over [a, b]: Δy/Δx = (f(b) − f(a)) / (b − a). De helling van de koorde tussen twee punten op de grafiek.</li><li><strong>Ogenblikkelijke verandering</strong>: de afgeleide f'(x) — de helling van de raaklijn in één punt. Is de limiet van het verschilquotiënt als Δx → 0.</li><li><strong>Differentieerregel machtsfuncties</strong>: f(x) = axⁿ → f'(x) = n·a·xⁿ⁻¹. Constante: (c)' = 0. Som/verschil: (f ± g)' = f' ± g'.</li><li><strong>Raaklijn</strong> in punt (a, f(a)): y = f'(a)·(x − a) + f(a). Helling = f'(a).</li></ul><div class=\"sam-head\">Extremen en optimalisatie</div><ul><li><strong>Extremen vinden</strong>: stel f'(x) = 0, bepaal x-waarden, maak tekenschema van f'. Van + naar − → maximum. Van − naar + → minimum.</li><li><strong>Tweede afgeleide check (alternatief)</strong>: f''(a) &lt; 0 → maximum; f''(a) &gt; 0 → minimum. Het tekenschema van f' is de standaardmethode voor HAVO.</li><li><strong>Optimalisatiestappen</strong>: (1) stel een formule op voor de te maximaliseren/minimaliseren grootheid, (2) differentieer, (3) stel f'(x) = 0, (4) controleer max/min, (5) bereken de gevraagde waarde.</li><li><strong>Toenemend stijgend</strong>: f'(x) &gt; 0 én f''(x) &gt; 0 — stijging versnelt. <strong>Afnemend stijgend</strong>: f'(x) &gt; 0 én f''(x) &lt; 0 — stijging vlakt af.</li></ul>",
+    "sam": "<div class=\"sam-head\">Verandering</div><ul><li><strong>Gemiddelde verandering</strong> over [a, b]: Δy/Δx = (f(b) − f(a)) / (b − a). De helling van de koorde tussen twee punten op de grafiek.</li><li><strong>Ogenblikkelijke verandering</strong>: de afgeleide f'(x) - de helling van de raaklijn in één punt. Is de limiet van het verschilquotiënt als Δx → 0.</li><li><strong>Differentieerregel machtsfuncties</strong>: f(x) = axⁿ → f'(x) = n·a·xⁿ⁻¹. Constante: (c)' = 0. Som/verschil: (f ± g)' = f' ± g'.</li><li><strong>Raaklijn</strong> in punt (a, f(a)): y = f'(a)·(x − a) + f(a). Helling = f'(a).</li></ul><div class=\"sam-head\">Extremen en optimalisatie</div><ul><li><strong>Extremen vinden</strong>: stel f'(x) = 0, bepaal x-waarden, maak tekenschema van f'. Van + naar − → maximum. Van − naar + → minimum.</li><li><strong>Tweede afgeleide check (alternatief)</strong>: f''(a) &lt; 0 → maximum; f''(a) &gt; 0 → minimum. Het tekenschema van f' is de standaardmethode voor HAVO.</li><li><strong>Optimalisatiestappen</strong>: (1) stel een formule op voor de te maximaliseren/minimaliseren grootheid, (2) differentieer, (3) stel f'(x) = 0, (4) controleer max/min, (5) bereken de gevraagde waarde.</li><li><strong>Toenemend stijgend</strong>: f'(x) &gt; 0 én f''(x) &gt; 0 - stijging versnelt. <strong>Afnemend stijgend</strong>: f'(x) &gt; 0 én f''(x) &lt; 0 - stijging vlakt af.</li></ul>",
     "sv": [
      {
       "v": "Welke differentieerregel gebruik je voor f(x) = ax tot de macht n?",
@@ -8411,7 +8411,7 @@ var VAKKEN = [
     ],
     "oe": [
      {
-      "bron": "HAVO Wiskunde A CE Verandering — extremen (geen afbeelding)",
+      "bron": "HAVO Wiskunde A CE Verandering - extremen (geen afbeelding)",
       "ctx": "Gegeven f(x) = x³ − 6x² + 9x + 1.",
       "v": "(a) Bereken f'(x).\n(b) Bepaal de extremen en hun type.",
       "o": [
@@ -8489,7 +8489,7 @@ var VAKKEN = [
     "val": [
      "Gemiddelde gebruiken bij uitschieters terwijl mediaan representatiever is",
      "Z-score verkeerd berekenen: z = (x − μ) / σ, niet (μ − x) / σ",
-     "H0 \"bewijzen\" — je kunt H0 alleen verwerpen of niet verwerpen, nooit bewijzen",
+     "H0 \"bewijzen\" - je kunt H0 alleen verwerpen of niet verwerpen, nooit bewijzen",
      "Correlatie als causaliteit interpreteren: r beschrijft samenhang, niet oorzaak en gevolg"
     ],
     "onderwerpen": [
@@ -8497,9 +8497,9 @@ var VAKKEN = [
      "E2: Normale verdeling: vuistregels en z-scores (CE)",
      "E3: Hypothesetoets: H0, H1, p-waarde en significantieniveau (CE)",
      "E4: Regressie en correlatie: r en R² (CE)",
-     "E5: Kansrekening: P(A), binomiaal (SE — niet op CE)"
+     "E5: Kansrekening: P(A), binomiaal (SE - niet op CE)"
     ],
-    "sam": "<div class=\"sam-head\">Beschrijvende statistiek</div><ul><li><strong>Gemiddelde (μ of x̄)</strong>: som van waarden / n. Gevoelig voor uitschieters (trekt naar extremen).</li><li><strong>Mediaan</strong>: middelste waarde na sorteren. Bij even n: gemiddelde van de twee middelste. Robuust voor uitschieters.</li><li><strong>Modus</strong>: meest voorkomende waarde. Kan meerdere modi hebben. Bruikbaar voor categorische data.</li><li><strong>Standaardafwijking (σ of s)</strong>: gemiddelde afwijking van het gemiddelde. Grote s = veel spreiding, kleine s = waarden dicht bij het gemiddelde. Berekening: <span class=\"fm\">s = √(Σ(xᵢ−x̄)² / (n−1))</span></li><li><strong>Interkwartielafstand (IQR)</strong>: Q3 − Q1. Spreiding van de middelste 50%. Robuust voor uitschieters.</li><li><strong>Boxplot</strong>: min, Q1, mediaan (Q2), Q3, max. Uitschieters als losse punten buiten 1,5×IQR van Q1/Q3.</li><li><strong>Wanneer mediaan vs. gemiddelde</strong>: bij scheve verdeling of uitschieters → mediaan. Bij symmetrische verdeling → beide gelijk.</li></ul><div class=\"sam-head\">Kansrekening <span style=\"color:var(--warn);font-size:11px\">⚠️ SE-stof — staat niet op CE</span></div><ul><li><strong>Kans</strong>: <span class=\"fm\">P(A) = gunstige uitkomsten / alle mogelijke uitkomsten</span>. Altijd 0 ≤ P(A) ≤ 1. P(A) + P(Ā) = 1 (complement).</li><li><strong>Optelling (SE)</strong>: P(A of B) = P(A) + P(B) − P(A en B). Als A en B onverenigbaar (disjunct): P(A of B) = P(A) + P(B).</li><li><strong>Vermenigvuldiging (SE)</strong>: P(A en B) = P(A) × P(B) als A en B onafhankelijk zijn.</li><li><strong>Stochastische variabele X (SE)</strong>: E(X) = verwachtingswaarde = Σxᵢ·P(X=xᵢ).</li><li><strong>Binomiale verdeling (SE)</strong>: n onafhankelijke proeven, kans p op succes. <span class=\"fm\">P(X=k) = C(n,k)·pᵏ·(1−p)ⁿ⁻ᵏ</span>. E(X) = n·p.</li></ul><div class=\"sam-head\">Normale verdeling</div><ul><li><strong>Vuistregel 68-95-99,7</strong>: μ ± σ bevat ≈68% | μ ± 2σ ≈95% | μ ± 3σ ≈99,7% van de data.</li><li><strong>Z-score</strong>: <span class=\"fm\">z = (x − μ) / σ</span>. Hoeveel standaardafwijkingen wijkt x af van μ? Gebruik normaletabel voor P(X &lt; x).</li><li><strong>Symmetrie</strong>: normaalverdeling is symmetrisch: gemiddelde = mediaan = modus. Kloksymetrisch (bell curve).</li><li><strong>Scheve verdeling</strong>: bij rechtsscheef: gemiddelde > mediaan (uitschieters trekken omhoog). Mediaan dan betere centrale maat.</li></ul><div class=\"sam-head\">Hypothesetoets</div><ul><li><strong>H₀ (nulhypothese)</strong>: status-quo aanname (geen effect/verschil). Bijv. \"gemiddelde = 50\".</li><li><strong>H₁ (alternatieve hypothese)</strong>: wat je wilt aantonen. Bijv. \"gemiddelde ≠ 50\" (tweezijdig) of \"&gt; 50\" (eenzijdig).</li><li><strong>Significantieniveau α</strong>: drempelwaarde (meestal 5%). Als p-waarde &lt; α → H₀ verwerpen.</li><li><strong>p-waarde</strong>: kans dat de gevonden uitkomst optreedt als H₀ waar is. Klein p = onwaarschijnlijk onder H₀ → sterk bewijs tegen H₀. Je bewíjst H₁ nooit met zekerheid.</li><li><strong>Type I fout</strong>: H₀ verwerpen terwijl die waar is (vals alarm). Kans = α. Type II: H₀ niet verwerpen terwijl H₁ waar is (gemiste detectie).</li></ul><div class=\"sam-head\">Regressie en correlatie</div><ul><li><strong>Regressielijn</strong>: <span class=\"fm\">ŷ = a + bx</span>. Beste passende rechte lijn door de punten (kleinste kwadratenmethode). b = richtingscoëfficiënt, a = y-snijpunt.</li><li><strong>Correlatiecoëfficiënt r</strong>: maat voor het lineair verband. −1 ≤ r ≤ 1. r = 1: perfect positief. r = −1: perfect negatief. r ≈ 0: geen lineair verband.</li><li><strong>R² (determinatiecoëfficiënt)</strong>: r². Geeft aan welk deel van de variantie in y wordt verklaard door x. R² = 0,8 → 80% verklaard.</li></ul>",
+    "sam": "<div class=\"sam-head\">Beschrijvende statistiek</div><ul><li><strong>Gemiddelde (μ of x̄)</strong>: som van waarden / n. Gevoelig voor uitschieters (trekt naar extremen).</li><li><strong>Mediaan</strong>: middelste waarde na sorteren. Bij even n: gemiddelde van de twee middelste. Robuust voor uitschieters.</li><li><strong>Modus</strong>: meest voorkomende waarde. Kan meerdere modi hebben. Bruikbaar voor categorische data.</li><li><strong>Standaardafwijking (σ of s)</strong>: gemiddelde afwijking van het gemiddelde. Grote s = veel spreiding, kleine s = waarden dicht bij het gemiddelde. Berekening: <span class=\"fm\">s = √(Σ(xᵢ−x̄)² / (n−1))</span></li><li><strong>Interkwartielafstand (IQR)</strong>: Q3 − Q1. Spreiding van de middelste 50%. Robuust voor uitschieters.</li><li><strong>Boxplot</strong>: min, Q1, mediaan (Q2), Q3, max. Uitschieters als losse punten buiten 1,5×IQR van Q1/Q3.</li><li><strong>Wanneer mediaan vs. gemiddelde</strong>: bij scheve verdeling of uitschieters → mediaan. Bij symmetrische verdeling → beide gelijk.</li></ul><div class=\"sam-head\">Kansrekening <span style=\"color:var(--warn);font-size:11px\">⚠️ SE-stof - staat niet op CE</span></div><ul><li><strong>Kans</strong>: <span class=\"fm\">P(A) = gunstige uitkomsten / alle mogelijke uitkomsten</span>. Altijd 0 ≤ P(A) ≤ 1. P(A) + P(Ā) = 1 (complement).</li><li><strong>Optelling (SE)</strong>: P(A of B) = P(A) + P(B) − P(A en B). Als A en B onverenigbaar (disjunct): P(A of B) = P(A) + P(B).</li><li><strong>Vermenigvuldiging (SE)</strong>: P(A en B) = P(A) × P(B) als A en B onafhankelijk zijn.</li><li><strong>Stochastische variabele X (SE)</strong>: E(X) = verwachtingswaarde = Σxᵢ·P(X=xᵢ).</li><li><strong>Binomiale verdeling (SE)</strong>: n onafhankelijke proeven, kans p op succes. <span class=\"fm\">P(X=k) = C(n,k)·pᵏ·(1−p)ⁿ⁻ᵏ</span>. E(X) = n·p.</li></ul><div class=\"sam-head\">Normale verdeling</div><ul><li><strong>Vuistregel 68-95-99,7</strong>: μ ± σ bevat ≈68% | μ ± 2σ ≈95% | μ ± 3σ ≈99,7% van de data.</li><li><strong>Z-score</strong>: <span class=\"fm\">z = (x − μ) / σ</span>. Hoeveel standaardafwijkingen wijkt x af van μ? Gebruik normaletabel voor P(X &lt; x).</li><li><strong>Symmetrie</strong>: normaalverdeling is symmetrisch: gemiddelde = mediaan = modus. Kloksymetrisch (bell curve).</li><li><strong>Scheve verdeling</strong>: bij rechtsscheef: gemiddelde > mediaan (uitschieters trekken omhoog). Mediaan dan betere centrale maat.</li></ul><div class=\"sam-head\">Hypothesetoets</div><ul><li><strong>H₀ (nulhypothese)</strong>: status-quo aanname (geen effect/verschil). Bijv. \"gemiddelde = 50\".</li><li><strong>H₁ (alternatieve hypothese)</strong>: wat je wilt aantonen. Bijv. \"gemiddelde ≠ 50\" (tweezijdig) of \"&gt; 50\" (eenzijdig).</li><li><strong>Significantieniveau α</strong>: drempelwaarde (meestal 5%). Als p-waarde &lt; α → H₀ verwerpen.</li><li><strong>p-waarde</strong>: kans dat de gevonden uitkomst optreedt als H₀ waar is. Klein p = onwaarschijnlijk onder H₀ → sterk bewijs tegen H₀. Je bewíjst H₁ nooit met zekerheid.</li><li><strong>Type I fout</strong>: H₀ verwerpen terwijl die waar is (vals alarm). Kans = α. Type II: H₀ niet verwerpen terwijl H₁ waar is (gemiste detectie).</li></ul><div class=\"sam-head\">Regressie en correlatie</div><ul><li><strong>Regressielijn</strong>: <span class=\"fm\">ŷ = a + bx</span>. Beste passende rechte lijn door de punten (kleinste kwadratenmethode). b = richtingscoëfficiënt, a = y-snijpunt.</li><li><strong>Correlatiecoëfficiënt r</strong>: maat voor het lineair verband. −1 ≤ r ≤ 1. r = 1: perfect positief. r = −1: perfect negatief. r ≈ 0: geen lineair verband.</li><li><strong>R² (determinatiecoëfficiënt)</strong>: r². Geeft aan welk deel van de variantie in y wordt verklaard door x. R² = 0,8 → 80% verklaard.</li></ul>",
     "sv": [
      {
       "v": "Wat meet de standaardafwijking?",
@@ -9515,7 +9515,7 @@ var VAKKEN = [
        ""
       ],
       "c": 0,
-      "u": "Conclusie I kun je WEL trekken: de boxen overlappen elkaar niet, dus volgens de vuistregel is er een groot verschil. Conclusie II kun je NIET trekken: de mediaan ligt niet in het midden van de box, dus de verdeling is niet symmetrisch — terwijl een normale verdeling juist symmetrisch is."
+      "u": "Conclusie I kun je WEL trekken: de boxen overlappen elkaar niet, dus volgens de vuistregel is er een groot verschil. Conclusie II kun je NIET trekken: de mediaan ligt niet in het midden van de box, dus de verdeling is niet symmetrisch - terwijl een normale verdeling juist symmetrisch is."
      },
      {
       "bron": "HAVO Wiskunde A CE 2024 Tijdvak 1 (vraag 7)",
@@ -9545,7 +9545,7 @@ var VAKKEN = [
        ""
       ],
       "c": 0,
-      "u": "Effectgrootte E = (31,2 − 27,2) / (½·(8,3 + 7,6)) = 4 / 7,95 ≈ 0,50. Omdat 0,4 < 0,50 < 0,8 valt dit in de categorie middelmatig — de conclusie klopt."
+      "u": "Effectgrootte E = (31,2 − 27,2) / (½·(8,3 + 7,6)) = 4 / 7,95 ≈ 0,50. Omdat 0,4 < 0,50 < 0,8 valt dit in de categorie middelmatig - de conclusie klopt."
      },
      {
       "bron": "HAVO Wiskunde A CE 2024 Tijdvak 1 (vraag 16)",
@@ -9565,7 +9565,7 @@ var VAKKEN = [
        ""
       ],
       "c": 0,
-      "u": "Een leerling op een school met weinig klassen per leerjaar heeft een grotere kans om in de steekproef te komen dan een leerling op een school met veel klassen, omdat per school steeds maar één klas per leerjaar wordt getrokken. Niet elke leerling heeft dus dezelfde kans — daarom is de steekproef niet aselect."
+      "u": "Een leerling op een school met weinig klassen per leerjaar heeft een grotere kans om in de steekproef te komen dan een leerling op een school met veel klassen, omdat per school steeds maar één klas per leerjaar wordt getrokken. Niet elke leerling heeft dus dezelfde kans - daarom is de steekproef niet aselect."
      }
     ],
     "begrippen": [
@@ -9722,7 +9722,7 @@ var VAKKEN = [
        "Causaliteit betekent dat twee variabelen negatief samenhangen"
       ],
       "c": 0,
-      "u": "Correlatie: twee grootheden veranderen samen, maar dat bewijst geen oorzaak. Bijv. meer ijsverkoop en meer verdrinkingen in de zomer — beide worden veroorzaakt door warm weer, niet door elkaar."
+      "u": "Correlatie: twee grootheden veranderen samen, maar dat bewijst geen oorzaak. Bijv. meer ijsverkoop en meer verdrinkingen in de zomer - beide worden veroorzaakt door warm weer, niet door elkaar."
      },
      {
       "v": "Een onderzoeker vergeet de temperatuur constant te houden terwijl hij lichtintensiteit varieert. Welk probleem ontstaat hierdoor?",
@@ -10723,7 +10723,7 @@ var VAKKEN = [
        ""
       ],
       "c": 0,
-      "u": "(a) OV: hoeveelheid alcohol. AV: reactietijd.\n(b) Fout 1: geen controlegroep. Verbetering: voeg een groep toe met een niet-alcoholische drank (identiek van uiterlijk). Fout 2: geen voormeting — een baseline reactietijd per persoon is nodig, anders weet je niet hoeveel er veranderd is."
+      "u": "(a) OV: hoeveelheid alcohol. AV: reactietijd.\n(b) Fout 1: geen controlegroep. Verbetering: voeg een groep toe met een niet-alcoholische drank (identiek van uiterlijk). Fout 2: geen voormeting - een baseline reactietijd per persoon is nodig, anders weet je niet hoeveel er veranderd is."
      },
      {
       "bron": "HAVO Biologie CE 2023 Tijdvak 2 Grafiekanalyse enzymen (geen afbeelding)",
@@ -10753,7 +10753,7 @@ var VAKKEN = [
        ""
       ],
       "c": 0,
-      "u": "(a) Tot 0,1% CO2: positief verband — hogere CO2 leidt tot hogere fotosynthesesnelheid. Boven 0,1%: plateau — de snelheid stijgt niet meer.\n(b) CO2 is niet meer de beperkende factor. Een andere factor limiteert de reactiesnelheid.\n(c) Bijv. lichtintensiteit of temperatuur (enzymactiviteit). Dit heet de beperkende factor."
+      "u": "(a) Tot 0,1% CO2: positief verband - hogere CO2 leidt tot hogere fotosynthesesnelheid. Boven 0,1%: plateau - de snelheid stijgt niet meer.\n(b) CO2 is niet meer de beperkende factor. Een andere factor limiteert de reactiesnelheid.\n(c) Bijv. lichtintensiteit of temperatuur (enzymactiviteit). Dit heet de beperkende factor."
      },
      {
       "bron": "HAVO Biologie CE 2024 Tijdvak 1 Conclusievraag (geen afbeelding)",
@@ -10763,7 +10763,7 @@ var VAKKEN = [
        ""
       ],
       "c": 0,
-      "u": "(a) Een vetrijk dieet gedurende drie weken leidt bij ratten tot een significant hogere bloedsuikerspiegel (+25%) vergeleken met ratten op normaal voer.\n(b) Bijv.: ratten zijn geen mensen — de fysiologie verschilt. Of: slechts één vetrijke conditie getest — geen dosis-effect relatie. Of: korte duur van 3 weken — geen langetermijneffecten bekend. Of: genetische variatie in de rattengroep niet gecontroleerd."
+      "u": "(a) Een vetrijk dieet gedurende drie weken leidt bij ratten tot een significant hogere bloedsuikerspiegel (+25%) vergeleken met ratten op normaal voer.\n(b) Bijv.: ratten zijn geen mensen - de fysiologie verschilt. Of: slechts één vetrijke conditie getest - geen dosis-effect relatie. Of: korte duur van 3 weken - geen langetermijneffecten bekend. Of: genetische variatie in de rattengroep niet gecontroleerd."
      }
     ],
     "begrippen": [
@@ -10851,8 +10851,8 @@ var VAKKEN = [
     "beschrijving": "Stofwisseling van de cel, zelforganisatie (DNA/erfelijkheid) en selectie op moleculair niveau",
     "ceStatus": "CE",
     "binas": [
-     "Tabel 82 — DNA en nucleïnezuren",
-     "Tabel 65 — Enzymen en actief centrum"
+     "Tabel 82 - DNA en nucleïnezuren",
+     "Tabel 65 - Enzymen en actief centrum"
     ],
     "val": [
      "Mitose en meiose verwarren: mitose voor groei, meiose voor geslachtscellen",
@@ -12403,13 +12403,13 @@ var VAKKEN = [
     "beschrijving": "Stofwisseling van het organisme, zelfregulatie en afweer",
     "ceStatus": "CE",
     "binas": [
-     "Tabel 83 — Hormonen menselijk lichaam",
-     "Tabel 84 — Afweersysteem"
+     "Tabel 83 - Hormonen menselijk lichaam",
+     "Tabel 84 - Afweersysteem"
     ],
     "val": [
-     "Longslagader bevat zuurstofarm bloed — niet zuurstofrijk",
+     "Longslagader bevat zuurstofarm bloed - niet zuurstofrijk",
      "Insuline en glucagon verwisselen: insuline verlaagt bloedsuiker, glucagon verhoogt",
-     "Aspecifieke afweer heeft geen immunologisch geheugen — specifieke wel",
+     "Aspecifieke afweer heeft geen immunologisch geheugen - specifieke wel",
      "Reflexboog loopt via ruggenmerg, niet via de hersenen"
     ],
     "onderwerpen": [
@@ -12420,7 +12420,7 @@ var VAKKEN = [
      "Zenuwstelsel: neuronen, synaps, reflexbogen",
      "Afweersysteem: specifiek en aspecifiek"
     ],
-    "sam": "<div class=\"sam-head\">Spijsvertering en opname</div><ul><li><strong>Route</strong>: mond → slokdarm → maag → dunne darm → dikke darm → anus. Elke stap breekt voedsel verder af of absorbeert stoffen.</li><li><strong>Mechanische vs. chemische vertering</strong>: mechanisch = kauwen, peristaltiek (spiersamentrekkingen). Chemisch = enzymen breken macromoleculen af tot kleine moleculen die opgenomen kunnen worden.</li><li><strong>Enzymen per locatie</strong>: mond: amylase (speeksel) → zetmeel → maltose. Maag: pepsine (actief bij pH 2) → eiwitten → peptiden. Dunne darm: pancreasenzymen (lipase, amylase, protease) + gal van de lever (emulgeert vet → vergroot oppervlak voor lipase).</li><li><strong>Absorptie</strong>: darmvlokken (villi) + microvilli vergroten oppervlak (~200 m²). Glucose en aminozuren → bloed (poortader naar lever). Vetzuren en glycerol → lymfevaten.</li><li><strong>Dikke darm</strong>: waterabsorptie, vorming van feces. Darmflora fermenteert onverteerbare vezels.</li></ul><div class=\"sam-head\">Gasuitwisseling</div><ul><li><strong>Longblaasjes (alveoli)</strong>: zeer dunne wand (één cellaag), grote totale oppervlakte (~70 m²), rijke bloedvaatbedekking — ideaal voor gasdiffusie.</li><li><strong>Diffusie</strong>: O₂ stroomt van hoge concentratie (alveoli) naar lage concentratie (bloed). CO₂ omgekeerd. Passief transport, altijd van hoog naar laag.</li><li><strong>Hemoglobine</strong>: eiwit in rode bloedcellen. Bij hoge O₂-spanning (longen): bindt O₂ (oxyhemoglobine). Bij lage O₂-spanning (weefsels): geeft O₂ af. CO₂ wordt deels als bicarbonaat (HCO₃⁻) getransporteerd in plasma.</li><li><strong>Sturing ademhaling</strong>: CO₂-concentratie in bloed bepaalt ademfrequentie. Hoge CO₂ → sneller ademen. Aangestuurd vanuit het verlengde merg.</li></ul><div class=\"sam-head\">Bloedsomloop</div><ul><li><strong>Kleine kringloop (longcirculatie)</strong>: rechterboezem → rechterkamer → longslagader → longen (O₂ laden, CO₂ lossen) → longader → linkerboezem.</li><li><strong>Grote kringloop (lichaamscirculatie)</strong>: linkerboezem → linkerkamer → aorta → lichaam (O₂ lossen, CO₂ laden) → holle aders → rechterboezem.</li><li><strong>Hart</strong>: 4 kamers — 2 boezems (ontvangen bloed), 2 kamers (pompen bloed weg). Hartkleppen voorkomen terugstroming. Linkerkamer heeft dikste wand (hogere druk voor grote kringloop).</li><li><strong>Bloedvaten</strong>: slagaders = dikke wand, elastisch, van hart af. Aders = dunner, kleppen tegen terugstroom, naar hart toe. Haarvaten = één cellaag, uitwisseling van O₂, CO₂, glucose, afvalstoffen.</li><li><strong>Bloeddruk</strong>: systolisch (hart samengetrokken) / diastolisch (hart ontspannen). Normaal ≈ 120/80 mmHg. Te hoge druk = risico op hart- en vaatziekten.</li></ul><div class=\"sam-head\">Zelfregulatie en hormonen</div><ul><li><strong>Negatieve terugkoppeling</strong>: effect tegengaat de oorspronkelijke stimulus → homeostase. Klassiek: hoog bloedsuiker → insuline → bloedsuiker daalt → minder insuline nodig.</li><li><strong>Insuline</strong>: bètacellen alvleesklier. Stimuleert glucoseopname door cellen en glycogeenvorming in lever. Bloedsuiker daalt.</li><li><strong>Glucagon</strong>: alfacellen alvleesklier. Glycogeenafbraak in lever → glucose vrij. Bloedsuiker stijgt. Antagonist van insuline.</li><li><strong>ADH (antidiuretisch hormoon)</strong>: hypofyse. Waterterugopname in nieren bij uitdroging. Minder en geconcentreerdere urine. Watergehalte stijgt.</li><li><strong>Adrenaline</strong>: bijniermerg. Verhoogt hartfrequentie, verwijdt luchtwegen, mobiliseert glucose. Vecht-of-vluchtreactie.</li></ul><div class=\"sam-head\">Zenuwstelsel en reflexen</div><ul><li><strong>CZS vs. PZS</strong>: Centraal zenuwstelsel = hersenen + ruggenmerg. Perifeer = alle andere zenuwen.</li><li><strong>Neuron</strong>: dendriet (ontvangen signalen) → cellichaam → axon → synaptische eindknop. Myelineschede versnelt geleiding.</li><li><strong>Synaps</strong>: neurotransmitters worden vrijgelaten uit presynaptische cel, diffunderen over de spleet, binden aan receptoren op de postsynaptische cel.</li><li><strong>Reflexboog</strong>: receptor → sensorisch neuron → schakelende neuron (ruggenmerg) → motorisch neuron → effector (spier/klier). Loopt niet via hersenen: sneller dan bewuste reactie.</li></ul><div class=\"sam-head\">Afweersysteem</div><ul><li><strong>Aspecifieke afweer (1e linie)</strong>: huid (barrière), slijmvliezen, lysozym, macrofagen (fagocytose), ontsteking. Snel, niet gericht op specifiek pathogeen, geen geheugen.</li><li><strong>Specifieke afweer (2e linie)</strong>: gericht op één antigeen. Trager bij eerste contact, sneller bij herinfectie door geheugen.</li><li><strong>B-lymfocyten</strong>: bij activatie → plasmacellen → produceren antilichamen. Antilichamen binden aan het bijpassende antigeen (sleutel-slot) en neutraliseren het.</li><li><strong>T-lymfocyten</strong>: helper-T-cellen activeren B-cellen en andere afweercellen. Cytotoxische T-cellen doden geïnfecteerde lichaamscellen direct.</li><li><strong>Immunologisch geheugen</strong>: na infectie blijven geheugen-B-cellen over. Bij herinfectie: sneller en meer antilichamen → basis van vaccinatie.</li></ul>",
+    "sam": "<div class=\"sam-head\">Spijsvertering en opname</div><ul><li><strong>Route</strong>: mond → slokdarm → maag → dunne darm → dikke darm → anus. Elke stap breekt voedsel verder af of absorbeert stoffen.</li><li><strong>Mechanische vs. chemische vertering</strong>: mechanisch = kauwen, peristaltiek (spiersamentrekkingen). Chemisch = enzymen breken macromoleculen af tot kleine moleculen die opgenomen kunnen worden.</li><li><strong>Enzymen per locatie</strong>: mond: amylase (speeksel) → zetmeel → maltose. Maag: pepsine (actief bij pH 2) → eiwitten → peptiden. Dunne darm: pancreasenzymen (lipase, amylase, protease) + gal van de lever (emulgeert vet → vergroot oppervlak voor lipase).</li><li><strong>Absorptie</strong>: darmvlokken (villi) + microvilli vergroten oppervlak (~200 m²). Glucose en aminozuren → bloed (poortader naar lever). Vetzuren en glycerol → lymfevaten.</li><li><strong>Dikke darm</strong>: waterabsorptie, vorming van feces. Darmflora fermenteert onverteerbare vezels.</li></ul><div class=\"sam-head\">Gasuitwisseling</div><ul><li><strong>Longblaasjes (alveoli)</strong>: zeer dunne wand (één cellaag), grote totale oppervlakte (~70 m²), rijke bloedvaatbedekking - ideaal voor gasdiffusie.</li><li><strong>Diffusie</strong>: O₂ stroomt van hoge concentratie (alveoli) naar lage concentratie (bloed). CO₂ omgekeerd. Passief transport, altijd van hoog naar laag.</li><li><strong>Hemoglobine</strong>: eiwit in rode bloedcellen. Bij hoge O₂-spanning (longen): bindt O₂ (oxyhemoglobine). Bij lage O₂-spanning (weefsels): geeft O₂ af. CO₂ wordt deels als bicarbonaat (HCO₃⁻) getransporteerd in plasma.</li><li><strong>Sturing ademhaling</strong>: CO₂-concentratie in bloed bepaalt ademfrequentie. Hoge CO₂ → sneller ademen. Aangestuurd vanuit het verlengde merg.</li></ul><div class=\"sam-head\">Bloedsomloop</div><ul><li><strong>Kleine kringloop (longcirculatie)</strong>: rechterboezem → rechterkamer → longslagader → longen (O₂ laden, CO₂ lossen) → longader → linkerboezem.</li><li><strong>Grote kringloop (lichaamscirculatie)</strong>: linkerboezem → linkerkamer → aorta → lichaam (O₂ lossen, CO₂ laden) → holle aders → rechterboezem.</li><li><strong>Hart</strong>: 4 kamers - 2 boezems (ontvangen bloed), 2 kamers (pompen bloed weg). Hartkleppen voorkomen terugstroming. Linkerkamer heeft dikste wand (hogere druk voor grote kringloop).</li><li><strong>Bloedvaten</strong>: slagaders = dikke wand, elastisch, van hart af. Aders = dunner, kleppen tegen terugstroom, naar hart toe. Haarvaten = één cellaag, uitwisseling van O₂, CO₂, glucose, afvalstoffen.</li><li><strong>Bloeddruk</strong>: systolisch (hart samengetrokken) / diastolisch (hart ontspannen). Normaal ≈ 120/80 mmHg. Te hoge druk = risico op hart- en vaatziekten.</li></ul><div class=\"sam-head\">Zelfregulatie en hormonen</div><ul><li><strong>Negatieve terugkoppeling</strong>: effect tegengaat de oorspronkelijke stimulus → homeostase. Klassiek: hoog bloedsuiker → insuline → bloedsuiker daalt → minder insuline nodig.</li><li><strong>Insuline</strong>: bètacellen alvleesklier. Stimuleert glucoseopname door cellen en glycogeenvorming in lever. Bloedsuiker daalt.</li><li><strong>Glucagon</strong>: alfacellen alvleesklier. Glycogeenafbraak in lever → glucose vrij. Bloedsuiker stijgt. Antagonist van insuline.</li><li><strong>ADH (antidiuretisch hormoon)</strong>: hypofyse. Waterterugopname in nieren bij uitdroging. Minder en geconcentreerdere urine. Watergehalte stijgt.</li><li><strong>Adrenaline</strong>: bijniermerg. Verhoogt hartfrequentie, verwijdt luchtwegen, mobiliseert glucose. Vecht-of-vluchtreactie.</li></ul><div class=\"sam-head\">Zenuwstelsel en reflexen</div><ul><li><strong>CZS vs. PZS</strong>: Centraal zenuwstelsel = hersenen + ruggenmerg. Perifeer = alle andere zenuwen.</li><li><strong>Neuron</strong>: dendriet (ontvangen signalen) → cellichaam → axon → synaptische eindknop. Myelineschede versnelt geleiding.</li><li><strong>Synaps</strong>: neurotransmitters worden vrijgelaten uit presynaptische cel, diffunderen over de spleet, binden aan receptoren op de postsynaptische cel.</li><li><strong>Reflexboog</strong>: receptor → sensorisch neuron → schakelende neuron (ruggenmerg) → motorisch neuron → effector (spier/klier). Loopt niet via hersenen: sneller dan bewuste reactie.</li></ul><div class=\"sam-head\">Afweersysteem</div><ul><li><strong>Aspecifieke afweer (1e linie)</strong>: huid (barrière), slijmvliezen, lysozym, macrofagen (fagocytose), ontsteking. Snel, niet gericht op specifiek pathogeen, geen geheugen.</li><li><strong>Specifieke afweer (2e linie)</strong>: gericht op één antigeen. Trager bij eerste contact, sneller bij herinfectie door geheugen.</li><li><strong>B-lymfocyten</strong>: bij activatie → plasmacellen → produceren antilichamen. Antilichamen binden aan het bijpassende antigeen (sleutel-slot) en neutraliseren het.</li><li><strong>T-lymfocyten</strong>: helper-T-cellen activeren B-cellen en andere afweercellen. Cytotoxische T-cellen doden geïnfecteerde lichaamscellen direct.</li><li><strong>Immunologisch geheugen</strong>: na infectie blijven geheugen-B-cellen over. Bij herinfectie: sneller en meer antilichamen → basis van vaccinatie.</li></ul>",
     "sv": [
      {
       "v": "Welk regulatiemechanisme tegengaat de oorspronkelijke stimulus en handhaaft zo homeostase (bijv. bloedsuikerregulatie)?",
@@ -13986,7 +13986,7 @@ var VAKKEN = [
     "beschrijving": "Ecosystemen, soortvorming en evolutie",
     "ceStatus": "CE",
     "binas": [
-     "Tabel 68 — Energiestromen in ecosystemen"
+     "Tabel 68 - Energiestromen in ecosystemen"
     ],
     "val": [
      "10%-regel omdraaien: 10% wordt doorgegeven, 90% gaat verloren als warmte",
@@ -14002,7 +14002,7 @@ var VAKKEN = [
      "Darwins evolutietheorie",
      "Hardy-Weinberg evenwicht"
     ],
-    "sam": "<div class=\"sam-head\">Ecosystemen en energie</div><ul><li><strong>10%-regel</strong>: per trofisch niveau wordt circa 10% van de energie doorgegeven; 90% gaat verloren als warmte, beweging en uitscheiding. Daarom zijn voedselketens beperkt tot 4–5 schakels.</li><li><strong>Trofisch niveau</strong>: positie in de voedselketen. Producenten (niveau 1) → herbivoren (niveau 2) → carnivoren (niveau 3) etc.</li><li><strong>Eutrofiering</strong>: hoge concentraties stikstof (N) en fosfaat (P) uit meststoffen → explosieve algenbloei → algen blokkeren zonlicht → waterplanten sterven → bacteriën breken af → zuurstofverbruik stijgt sterk → hypoxie → vissterfte.</li><li><strong>Niche</strong>: de ecologische rol van een soort — wat eet hij, waar leeft hij, wanneer is hij actief. Twee soorten met identieke niche concurreren totdat een soort verdwijnt (competitieve uitsluiting).</li></ul><div class=\"sam-head\">Evolutie</div><ul><li><strong>Darwins vier principes</strong>: (1) variatie in populatie, (2) erfelijkheid (variatie is overdraagbaar), (3) overproductie (meer nakomelingen dan kunnen overleven), (4) natuurlijke selectie (meest geschikte individuen overleven en planten zich voort).</li><li><strong>Allopatrische speciatie</strong>: soortvorming door geografische isolatie. Twee deelpopulaties evolueren onafhankelijk door drift en selectie tot ze niet meer kunnen kruisen.</li><li><strong>Sympatrische speciatie</strong>: soortvorming zonder geografische barrière. Bijv. door ecologische specialisatie of polyploïdie bij planten.</li><li><strong>Genetische drift</strong>: toevalsverandering in allelfrequenties, onafhankelijk van selectiedruk. Sterk in kleine populaties. Bottleneck-effect: populatie krimpt drastisch, weinig genetische variatie over.</li></ul><div class=\"sam-head\">Hardy-Weinberg</div><ul><li><strong>Formule</strong>: <span class=\"fm\">p² + 2pq + q² = 1</span>. p = frequentie dominante allel, q = frequentie recessieve allel. p + q = 1.</li><li><strong>Voorwaarden voor evenwicht</strong>: grote populatie, willekeurige paring, geen selectie, geen mutatie, geen migratie. In de praktijk zijn deze zelden allemaal vervuld.</li><li><strong>Afwijking van HW</strong>: wijst op evolutionaire krachten. Bijv. als q² lager is dan verwacht, wordt het recessieve fenotype geselecteerd tegen.</li><li><strong>Berekening</strong>: als 16% witte vlinders (qq) → q = 0,4 → p = 0,6 → heterozygoten 2pq = 48%.</li></ul>",
+    "sam": "<div class=\"sam-head\">Ecosystemen en energie</div><ul><li><strong>10%-regel</strong>: per trofisch niveau wordt circa 10% van de energie doorgegeven; 90% gaat verloren als warmte, beweging en uitscheiding. Daarom zijn voedselketens beperkt tot 4–5 schakels.</li><li><strong>Trofisch niveau</strong>: positie in de voedselketen. Producenten (niveau 1) → herbivoren (niveau 2) → carnivoren (niveau 3) etc.</li><li><strong>Eutrofiering</strong>: hoge concentraties stikstof (N) en fosfaat (P) uit meststoffen → explosieve algenbloei → algen blokkeren zonlicht → waterplanten sterven → bacteriën breken af → zuurstofverbruik stijgt sterk → hypoxie → vissterfte.</li><li><strong>Niche</strong>: de ecologische rol van een soort - wat eet hij, waar leeft hij, wanneer is hij actief. Twee soorten met identieke niche concurreren totdat een soort verdwijnt (competitieve uitsluiting).</li></ul><div class=\"sam-head\">Evolutie</div><ul><li><strong>Darwins vier principes</strong>: (1) variatie in populatie, (2) erfelijkheid (variatie is overdraagbaar), (3) overproductie (meer nakomelingen dan kunnen overleven), (4) natuurlijke selectie (meest geschikte individuen overleven en planten zich voort).</li><li><strong>Allopatrische speciatie</strong>: soortvorming door geografische isolatie. Twee deelpopulaties evolueren onafhankelijk door drift en selectie tot ze niet meer kunnen kruisen.</li><li><strong>Sympatrische speciatie</strong>: soortvorming zonder geografische barrière. Bijv. door ecologische specialisatie of polyploïdie bij planten.</li><li><strong>Genetische drift</strong>: toevalsverandering in allelfrequenties, onafhankelijk van selectiedruk. Sterk in kleine populaties. Bottleneck-effect: populatie krimpt drastisch, weinig genetische variatie over.</li></ul><div class=\"sam-head\">Hardy-Weinberg</div><ul><li><strong>Formule</strong>: <span class=\"fm\">p² + 2pq + q² = 1</span>. p = frequentie dominante allel, q = frequentie recessieve allel. p + q = 1.</li><li><strong>Voorwaarden voor evenwicht</strong>: grote populatie, willekeurige paring, geen selectie, geen mutatie, geen migratie. In de praktijk zijn deze zelden allemaal vervuld.</li><li><strong>Afwijking van HW</strong>: wijst op evolutionaire krachten. Bijv. als q² lager is dan verwacht, wordt het recessieve fenotype geselecteerd tegen.</li><li><strong>Berekening</strong>: als 16% witte vlinders (qq) → q = 0,4 → p = 0,6 → heterozygoten 2pq = 48%.</li></ul>",
     "sv": [
      {
       "v": "Welk percentage van de energie wordt gemiddeld doorgegeven van het ene naar het volgende trofische niveau in een voedselketen?",
@@ -15386,7 +15386,7 @@ var VAKKEN = [
    {
     "id": "A",
     "naam": "Vaardigheden en onderzoek",
-    "beschrijving": "Scheikundig onderzoek: proefopzet, variabelen, grafieken en veiligheid — verweven door alle CE-onderdelen",
+    "beschrijving": "Scheikundig onderzoek: proefopzet, variabelen, grafieken en veiligheid - verweven door alle CE-onderdelen",
     "ceStatus": "CE+SE",
     "binas": [],
     "val": [
@@ -15394,7 +15394,7 @@ var VAKKEN = [
      "Conclusie baseren op verwachting i.p.v. op meetdata",
      "Systematische fout verwarren met toevallige fout",
      "Validiteit en betrouwbaarheid door elkaar halen",
-     "Verkeerde scheidingsmethode kiezen: destillatie ≠ filtreren — kies op basis van eigenschap (kookpunt vs. deeltjesgrootte)"
+     "Verkeerde scheidingsmethode kiezen: destillatie ≠ filtreren - kies op basis van eigenschap (kookpunt vs. deeltjesgrootte)"
     ],
     "onderwerpen": [
      "Onderzoeksvraag en hypothese formuleren",
@@ -15406,7 +15406,7 @@ var VAKKEN = [
      "Veiligheid in het laboratorium",
      "Mol-berekeningen in onderzoekscontext"
     ],
-    "sam": "<div class=\"sam-head\">Onderzoeksvaardigheden scheikunde</div><ul><li><strong>Hypothese</strong>: voorspelling op basis van een theorie, toetsbaar met een experiment. Formuleer als: \"Als [onafhankelijke variabele verandert], dan [verwacht effect op afhankelijke variabele], omdat [theorie].\"</li><li><strong>Variabelen</strong>: onafhankelijk = de variabele die jij verandert. Afhankelijk = wat je meet. Constant = alles wat je gelijkhoudt om een eerlijke vergelijking te maken.</li><li><strong>Controle-experiment</strong>: identieke opzet maar zonder de onafhankelijke variabele (of op 0 ingesteld). Dient als vergelijkingsreferentie.</li><li><strong>Betrouwbaarheid vs. validiteit</strong>: betrouwbaar = herhaalde metingen geven consistent dezelfde uitkomst. Valide = je meet daadwerkelijk wat je wilt meten.</li></ul><div class=\"sam-head\">Grafieken en meetwaarden</div><ul><li><strong>Lineair verband</strong>: y = ax + b. Helling a = ΔY/ΔX. Doorsnijdt y-as bij b. Bijv. concentratie vs. reactiesnelheid bij lage concentraties.</li><li><strong>Invers verband</strong>: y = a/x, hyperbolisch. Bijv. druk × volume = constant (wet van Boyle).</li><li><strong>Significante cijfers</strong>: bij berekeningen: gebruik het aantal sig. cijfers van de minst nauwkeurige meting. Bijv. 12,3 × 4 = 49 (niet 49,2).</li><li><strong>Eenheden</strong>: altijd vermelden. Mol (mol), concentratie (mol/L of M), massa (g of kg), volume (L of mL), druk (Pa of atm).</li></ul><div class=\"sam-head\">Veiligheid</div><ul><li>GHS-pictogrammen kennen: vlam (ontvlambaar), doodshoofd (giftig), uitroepteken (irriterend), corrosie (bijtend).</li><li>Bij zuur-basewerk: altijd zuur aan water toevoegen (nooit andersom) — exotherme reactie.</li><li>Afzuigkast bij vluchtige/giftige stoffen. Veiligheidsbril altijd.</li></ul>",
+    "sam": "<div class=\"sam-head\">Onderzoeksvaardigheden scheikunde</div><ul><li><strong>Hypothese</strong>: voorspelling op basis van een theorie, toetsbaar met een experiment. Formuleer als: \"Als [onafhankelijke variabele verandert], dan [verwacht effect op afhankelijke variabele], omdat [theorie].\"</li><li><strong>Variabelen</strong>: onafhankelijk = de variabele die jij verandert. Afhankelijk = wat je meet. Constant = alles wat je gelijkhoudt om een eerlijke vergelijking te maken.</li><li><strong>Controle-experiment</strong>: identieke opzet maar zonder de onafhankelijke variabele (of op 0 ingesteld). Dient als vergelijkingsreferentie.</li><li><strong>Betrouwbaarheid vs. validiteit</strong>: betrouwbaar = herhaalde metingen geven consistent dezelfde uitkomst. Valide = je meet daadwerkelijk wat je wilt meten.</li></ul><div class=\"sam-head\">Grafieken en meetwaarden</div><ul><li><strong>Lineair verband</strong>: y = ax + b. Helling a = ΔY/ΔX. Doorsnijdt y-as bij b. Bijv. concentratie vs. reactiesnelheid bij lage concentraties.</li><li><strong>Invers verband</strong>: y = a/x, hyperbolisch. Bijv. druk × volume = constant (wet van Boyle).</li><li><strong>Significante cijfers</strong>: bij berekeningen: gebruik het aantal sig. cijfers van de minst nauwkeurige meting. Bijv. 12,3 × 4 = 49 (niet 49,2).</li><li><strong>Eenheden</strong>: altijd vermelden. Mol (mol), concentratie (mol/L of M), massa (g of kg), volume (L of mL), druk (Pa of atm).</li></ul><div class=\"sam-head\">Veiligheid</div><ul><li>GHS-pictogrammen kennen: vlam (ontvlambaar), doodshoofd (giftig), uitroepteken (irriterend), corrosie (bijtend).</li><li>Bij zuur-basewerk: altijd zuur aan water toevoegen (nooit andersom) - exotherme reactie.</li><li>Afzuigkast bij vluchtige/giftige stoffen. Veiligheidsbril altijd.</li></ul>",
     "sv": [
      {
       "v": "Welke variabele verandert de onderzoeker bewust in een experiment?",
@@ -15472,7 +15472,7 @@ var VAKKEN = [
        "Bij het afwegen van poeders op een weegschaal"
       ],
       "c": 1,
-      "u": "Geconcentreerd zuur aan water: de exotherme oplossing-reactie verwarmt het grote volume water geleidelijk. Andersom (water aan zuur): het kleine volume zuur verhit explosief — spatgevaar met bijtend zuur."
+      "u": "Geconcentreerd zuur aan water: de exotherme oplossing-reactie verwarmt het grote volume water geleidelijk. Andersom (water aan zuur): het kleine volume zuur verhit explosief - spatgevaar met bijtend zuur."
      },
      {
       "v": "Welke eenheid gebruik je voor concentratie in scheikundige berekeningen?",
@@ -16143,7 +16143,7 @@ var VAKKEN = [
        ""
       ],
       "c": 0,
-      "u": "(a) Onafhankelijk: concentratie HCl (mol/L). Afhankelijk: volume gevormd H2-gas in 60 s (mL).\n(b) Bijv.: temperatuur — hogere T geeft meer botsingen boven Ea, verandert de snelheid los van concentratie. Oppervlakte Mg — meer oppervlak = snellere reactie, ongeacht HCl-concentratie. Hoeveelheid Mg-lint — als dit opraakt verandert de snelheid niet door concentratie maar door gebrek aan reactant."
+      "u": "(a) Onafhankelijk: concentratie HCl (mol/L). Afhankelijk: volume gevormd H2-gas in 60 s (mL).\n(b) Bijv.: temperatuur - hogere T geeft meer botsingen boven Ea, verandert de snelheid los van concentratie. Oppervlakte Mg - meer oppervlak = snellere reactie, ongeacht HCl-concentratie. Hoeveelheid Mg-lint - als dit opraakt verandert de snelheid niet door concentratie maar door gebrek aan reactant."
      },
      {
       "jaar": 2024,
@@ -16231,19 +16231,19 @@ var VAKKEN = [
     "beschrijving": "Atoomstructuur, bindingen en eigenschappen van stoffen",
     "ceStatus": "CE",
     "binas": [
-     "Tabel 40 — Periodiek systeem der elementen",
-     "Tabel 41 — Elektronenconfiguraties en valentie-elektronen",
-     "Tabel 42 — Bindingstypen en eigenschappen",
-     "Tabel 43 — Vaste-stofstructuren"
+     "Tabel 40 - Periodiek systeem der elementen",
+     "Tabel 41 - Elektronenconfiguraties en valentie-elektronen",
+     "Tabel 42 - Bindingstypen en eigenschappen",
+     "Tabel 43 - Vaste-stofstructuren"
     ],
     "val": [
      "Molecuulpolairiteit alleen afleiden uit bindingen zonder geometrie te controleren (bijv. CO₂ is apolair)",
      "Ionbinding en polaire covalente binding verwisselen",
-     "Waterstofbrug alleen bij water verwachten — ook NH₃ en HF vormen waterstofbruggen",
-     "Atoomstraal: neemt toe naar rechts in periode (fout) — neemt af naar rechts, toe naar beneden",
-     "Elektronegativiteitsverschil <1,7 is altijd ionisch — fout: <1,7 = polair covalent, >1,7 = ionisch",
-     "Ionverbinding geleidt altijd stroom — alleen in gesmolten toestand of waterige oplossing, niet in vaste toestand",
-     "Kristalrooster en moleculaire stof verwarren bij smeltpunt voorspellen — roosterstof heeft veel hoger smeltpunt"
+     "Waterstofbrug alleen bij water verwachten - ook NH₃ en HF vormen waterstofbruggen",
+     "Atoomstraal: neemt toe naar rechts in periode (fout) - neemt af naar rechts, toe naar beneden",
+     "Elektronegativiteitsverschil <1,7 is altijd ionisch - fout: <1,7 = polair covalent, >1,7 = ionisch",
+     "Ionverbinding geleidt altijd stroom - alleen in gesmolten toestand of waterige oplossing, niet in vaste toestand",
+     "Kristalrooster en moleculaire stof verwarren bij smeltpunt voorspellen - roosterstof heeft veel hoger smeltpunt"
     ],
     "onderwerpen": [
      "Atoomstructuur en periodiek systeem",
@@ -17345,23 +17345,23 @@ var VAKKEN = [
     "beschrijving": "Reacties, evenwicht, zuren en basen, en stoichiometrie",
     "ceStatus": "CE",
     "binas": [
-     "Tabel 28 — Thermodynamica",
-     "Tabel 29 — Reacties",
-     "Tabel 31 — Stoffen en reacties",
-     "Tabel 49 — Zuur-base evenwichten en pKa-waarden",
-     "Tabel 50 — Standaard reductiepotentialen"
+     "Tabel 28 - Thermodynamica",
+     "Tabel 29 - Reacties",
+     "Tabel 31 - Stoffen en reacties",
+     "Tabel 49 - Zuur-base evenwichten en pKa-waarden",
+     "Tabel 50 - Standaard reductiepotentialen"
     ],
     "val": [
-     "Katalysator verschuift het evenwicht — fout: katalysator versnelt alleen, ligging verandert niet",
+     "Katalysator verschuift het evenwicht - fout: katalysator versnelt alleen, ligging verandert niet",
      "Sterk/zwak verwarren met geconcentreerd/verdund zuur",
      "pH van zwak zuur berekenen als ware het sterk zuur",
      "Oxidatie en reductie omdraaien: oxidatie = elektronen afstaan (OIL RIG)",
      "Reactiesnelheid en hoeveelheid product verwarren: snelheid = per tijdseenheid, hoeveelheid = absoluut totaal",
      "Endotherm en exotherm omdraaien: exotherm geeft warmte af (ΔH < 0), endotherm neemt warmte op (ΔH > 0)",
-     "Activeringsenergie aflezen als hoogteverschil reactant–product — fout: Ea = piek minus beginniveau reactanten",
+     "Activeringsenergie aflezen als hoogteverschil reactant–product - fout: Ea = piek minus beginniveau reactanten",
      "K-waarde en reactiesnelheid verwarren: grote K = veel product op evenwicht, niet een snelle reactie",
-     "Katalysator als verbruikt beschouwen — fout: katalysator wordt na de reactie vrijgesteld en hergebruikt",
-     "Massa verdwijnt bij reactie denken — fout: massa blijft altijd behouden (wet van behoud van massa)",
+     "Katalysator als verbruikt beschouwen - fout: katalysator wordt na de reactie vrijgesteld en hergebruikt",
+     "Massa verdwijnt bij reactie denken - fout: massa blijft altijd behouden (wet van behoud van massa)",
      "Mengsel en verbinding door elkaar halen: verbinding heeft vaste samenstelling, mengsel variabele",
      "Rendement en conversie verwarren: conversie = omgezette fractie reactant, rendement = werkelijke vs. theoretische opbrengst"
     ],
@@ -17375,7 +17375,7 @@ var VAKKEN = [
      "Mol, concentratie en stoichiometrie",
      "Verdunning en titratie"
     ],
-    "sam": "<div class=\"sam-head\">Zuren en basen (Brønsted-Lowry)</div><ul><li><strong>Zuur</strong>: protondonor — staat H⁺ af aan een base. Bijv. HCl, HNO₃, CH₃COOH.</li><li><strong>Base</strong>: protonacceptor — neemt H⁺ op. Bijv. NaOH, NH₃, Na₂CO₃.</li><li><strong>Sterk vs. zwak zuur</strong>: sterk (HCl, HNO₃, H₂SO₄) → volledig gedissocieerd in water. Zwak (CH₃COOH, H₂CO₃) → gedeeltelijk gedissocieerd, evenwicht aanwezig.</li><li><strong>Amfoteer</strong>: kan zowel als zuur als base fungeren. Water: H₂O geeft H⁺ (zuur) of neemt H⁺ op (base). Ook HCO₃⁻ en HSO₄⁻ zijn amfoteer.</li><li><strong>pH</strong>: <span class=\"fm\">pH = −log[H₃O⁺]</span>. Elke eenheid pH = factor 10 in [H⁺]. pH &lt; 7 = zuur, pH 7 = neutraal, pH > 7 = basisch. pH + pOH = 14.</li><li><strong>pH berekening sterk zuur</strong>: bijv. 0,01 mol/L HCl → [H⁺] = 0,01 → pH = −log(0,01) = 2.</li><li><strong>Neutralisatie</strong>: zuur + base → zout + water. Bijv. HCl + NaOH → NaCl + H₂O. Equivalentiepunt: n(zuur) = n(base).</li></ul><div class=\"sam-head\">Chemisch evenwicht</div><ul><li><strong>Le Chatelier-principe</strong>: verstoring → evenwicht verschuift om verstoring te compenseren. Meer reactant → meer product. Hogere druk → kant met minder gasmol. Hogere T → richting endotherm. Katalysator: evenwichtsligging verandert NIET, alleen bereikingssnelheid.</li><li><strong>Evenwichtsconstante Kc</strong>: voor A + B ⇌ C + D: <span class=\"fm\">Kc = [C][D] / [A][B]</span>. Groot Kc = evenwicht ligt rechts (veel product). Klein Kc = links (weinig product).</li><li><strong>Katalysator</strong>: verlaagt activeringsenergie voor zowel heen- als terugrichting. Sneller evenwicht bereiken. Reactie-opbrengst verandert niet.</li></ul><div class=\"sam-head\">Reactiesnelheid</div><ul><li><strong>Botsingstheorie</strong>: reactie vindt plaats bij botsing met voldoende energie (≥ activeringsenergie Ea) en juiste oriëntatie.</li><li><strong>Factoren die snelheid verhogen</strong>: hogere T (meer kinetische energie, meer effectieve botsingen), hogere concentratie (meer botsingen per seconde), kleiner deeltjesgrootte (groter reactieoppervlak), katalysator (lagere Ea).</li><li><strong>Reactiediagram</strong>: energiediagram toont reactanten, activeringsenergie (Ea), overgangscomplex (piek) en producten. Exotherm: producten lager dan reactanten (warmte vrij). Endotherm: producten hoger (warmte vereist).</li></ul><div class=\"sam-head\">Redoxreacties</div><ul><li><strong>Oxidatie</strong>: verlies van elektronen (of toename oxidatiegetal). OIL = Oxidation Is Loss.</li><li><strong>Reductie</strong>: opname van elektronen (of afname oxidatiegetal). RIG = Reduction Is Gain.</li><li><strong>Oxidator vs. reductor</strong>: oxidator neemt elektronen op (wordt zelf gereduceerd). Reductor geeft elektronen af (wordt zelf geoxideerd). Ze reageren altijd samen.</li><li><strong>Halfvergelijkingen</strong>: oxidatie en reductie apart uitschrijven. Optellen geeft de nettovergelijking. Elektronen moeten wegvallen.</li><li><strong>Roestvorming</strong>: Fe → Fe²⁺ + 2e⁻ (oxidatie) | O₂ + 4H⁺ + 4e⁻ → 2H₂O (reductie). IJzer is reductor, O₂ is oxidator.</li></ul><div class=\"sam-head\">Stoichiometrie en berekeningen</div><ul><li><strong>Mol</strong>: <span class=\"fm\">n = m / M</span>. Molaire massa M in g/mol (optellen uit PSE).</li><li><strong>Concentratie</strong>: <span class=\"fm\">c = n / V</span>. c in mol/L (M), V in L.</li><li><strong>Verdunning</strong>: <span class=\"fm\">c₁V₁ = c₂V₂</span>. Aantal mol blijft gelijk.</li><li><strong>Stoichiometrie</strong>: coëfficiënten = molverhoudingen. Bijv. N₂ + 3H₂ → 2NH₃: 1 mol N₂ + 3 mol H₂ geeft 2 mol NH₃.</li><li><strong>Rendement</strong>: <span class=\"fm\">η = (werkelijk / theoretisch) × 100%</span>. Oorzaken laag rendement: onvolledige reactie, bijreacties, verlies bij bereiding.</li><li><strong>Titratie</strong>: n(zuur) = c(zuur) × V(zuur). Bij equivalentiepunt: n(zuur) = n(base). Gebruik S-curve om equivalentiepunt te bepalen.</li></ul>",
+    "sam": "<div class=\"sam-head\">Zuren en basen (Brønsted-Lowry)</div><ul><li><strong>Zuur</strong>: protondonor - staat H⁺ af aan een base. Bijv. HCl, HNO₃, CH₃COOH.</li><li><strong>Base</strong>: protonacceptor - neemt H⁺ op. Bijv. NaOH, NH₃, Na₂CO₃.</li><li><strong>Sterk vs. zwak zuur</strong>: sterk (HCl, HNO₃, H₂SO₄) → volledig gedissocieerd in water. Zwak (CH₃COOH, H₂CO₃) → gedeeltelijk gedissocieerd, evenwicht aanwezig.</li><li><strong>Amfoteer</strong>: kan zowel als zuur als base fungeren. Water: H₂O geeft H⁺ (zuur) of neemt H⁺ op (base). Ook HCO₃⁻ en HSO₄⁻ zijn amfoteer.</li><li><strong>pH</strong>: <span class=\"fm\">pH = −log[H₃O⁺]</span>. Elke eenheid pH = factor 10 in [H⁺]. pH &lt; 7 = zuur, pH 7 = neutraal, pH > 7 = basisch. pH + pOH = 14.</li><li><strong>pH berekening sterk zuur</strong>: bijv. 0,01 mol/L HCl → [H⁺] = 0,01 → pH = −log(0,01) = 2.</li><li><strong>Neutralisatie</strong>: zuur + base → zout + water. Bijv. HCl + NaOH → NaCl + H₂O. Equivalentiepunt: n(zuur) = n(base).</li></ul><div class=\"sam-head\">Chemisch evenwicht</div><ul><li><strong>Le Chatelier-principe</strong>: verstoring → evenwicht verschuift om verstoring te compenseren. Meer reactant → meer product. Hogere druk → kant met minder gasmol. Hogere T → richting endotherm. Katalysator: evenwichtsligging verandert NIET, alleen bereikingssnelheid.</li><li><strong>Evenwichtsconstante Kc</strong>: voor A + B ⇌ C + D: <span class=\"fm\">Kc = [C][D] / [A][B]</span>. Groot Kc = evenwicht ligt rechts (veel product). Klein Kc = links (weinig product).</li><li><strong>Katalysator</strong>: verlaagt activeringsenergie voor zowel heen- als terugrichting. Sneller evenwicht bereiken. Reactie-opbrengst verandert niet.</li></ul><div class=\"sam-head\">Reactiesnelheid</div><ul><li><strong>Botsingstheorie</strong>: reactie vindt plaats bij botsing met voldoende energie (≥ activeringsenergie Ea) en juiste oriëntatie.</li><li><strong>Factoren die snelheid verhogen</strong>: hogere T (meer kinetische energie, meer effectieve botsingen), hogere concentratie (meer botsingen per seconde), kleiner deeltjesgrootte (groter reactieoppervlak), katalysator (lagere Ea).</li><li><strong>Reactiediagram</strong>: energiediagram toont reactanten, activeringsenergie (Ea), overgangscomplex (piek) en producten. Exotherm: producten lager dan reactanten (warmte vrij). Endotherm: producten hoger (warmte vereist).</li></ul><div class=\"sam-head\">Redoxreacties</div><ul><li><strong>Oxidatie</strong>: verlies van elektronen (of toename oxidatiegetal). OIL = Oxidation Is Loss.</li><li><strong>Reductie</strong>: opname van elektronen (of afname oxidatiegetal). RIG = Reduction Is Gain.</li><li><strong>Oxidator vs. reductor</strong>: oxidator neemt elektronen op (wordt zelf gereduceerd). Reductor geeft elektronen af (wordt zelf geoxideerd). Ze reageren altijd samen.</li><li><strong>Halfvergelijkingen</strong>: oxidatie en reductie apart uitschrijven. Optellen geeft de nettovergelijking. Elektronen moeten wegvallen.</li><li><strong>Roestvorming</strong>: Fe → Fe²⁺ + 2e⁻ (oxidatie) | O₂ + 4H⁺ + 4e⁻ → 2H₂O (reductie). IJzer is reductor, O₂ is oxidator.</li></ul><div class=\"sam-head\">Stoichiometrie en berekeningen</div><ul><li><strong>Mol</strong>: <span class=\"fm\">n = m / M</span>. Molaire massa M in g/mol (optellen uit PSE).</li><li><strong>Concentratie</strong>: <span class=\"fm\">c = n / V</span>. c in mol/L (M), V in L.</li><li><strong>Verdunning</strong>: <span class=\"fm\">c₁V₁ = c₂V₂</span>. Aantal mol blijft gelijk.</li><li><strong>Stoichiometrie</strong>: coëfficiënten = molverhoudingen. Bijv. N₂ + 3H₂ → 2NH₃: 1 mol N₂ + 3 mol H₂ geeft 2 mol NH₃.</li><li><strong>Rendement</strong>: <span class=\"fm\">η = (werkelijk / theoretisch) × 100%</span>. Oorzaken laag rendement: onvolledige reactie, bijreacties, verlies bij bereiding.</li><li><strong>Titratie</strong>: n(zuur) = c(zuur) × V(zuur). Bij equivalentiepunt: n(zuur) = n(base). Gebruik S-curve om equivalentiepunt te bepalen.</li></ul>",
     "sv": [
      {
       "v": "Welk principe voorspelt dat een evenwicht bij verstoring verschuift om die verstoring te compenseren?",
@@ -18701,8 +18701,8 @@ var VAKKEN = [
     "beschrijving": "Organische chemie: koolwaterstofverbindingen, functionele groepen en reacties",
     "ceStatus": "CE",
     "binas": [
-     "Tabel 66 — Functionele groepen organische chemie",
-     "Tabel 67 — Organische reactietypen"
+     "Tabel 66 - Functionele groepen organische chemie",
+     "Tabel 67 - Organische reactietypen"
     ],
     "val": [
      "Additie en substitutie verwisselen: additie bij alkenen (dubbele binding), substitutie bij alkanen",
@@ -18718,7 +18718,7 @@ var VAKKEN = [
      "Reactietypen: additie, substitutie, esterificatie, hydrolyse",
      "Polymeren (additie- en condensatiepolymerisatie)"
     ],
-    "sam": "<div class=\"sam-head\">Koolwaterstoffen</div><ul><li><strong>Alkanen</strong>: CₙH₂ₙ₊₂, volledig verzadigd (alleen C−C enkelvoudige bindingen). Reactief via substitutie bij UV-licht. Bijv. methaan (CH₄), ethaan (C₂H₆), propaan (C₃H₈).</li><li><strong>Alkenen</strong>: CₙH₂ₙ, bevatten één C=C dubbele binding. Reactief via additie. Bijv. etheen (CH₂=CH₂). Test: broomwater ontkleurt bij additie van Br₂.</li><li><strong>IUPAC-naamgeving</strong>: (1) langste keten = stamnaam, (2) nummer koolstofatomen zodat substituenten laagst mogelijk genummerd zijn, (3) noem substituenten alfabetisch als prefix.</li><li><strong>Structuurisomerie</strong>: zelfde molecuulformule, andere rangschikking van atomen. Bijv. butaan en methylpropaan, beide C₄H₁₀. Andere structuur = andere eigenschappen.</li></ul><div class=\"sam-head\">Functionele groepen</div><ul><li><strong>Alcohol (−OH)</strong>: hogere kookpunten dan alkanen door waterstofbruggen. Primair, secundair, tertiair afhankelijk van positie −OH.</li><li><strong>Carbonzuur (−COOH)</strong>: zuur, protondonor. Bijv. azijnzuur (CH₃COOH). Reageert met alcohol tot ester.</li><li><strong>Amine (−NH₂)</strong>: base, protonacceptor. Bijv. methylamine.</li><li><strong>Ester (−COO−)</strong>: ruiken fruitig. Gevormd via esterificatie van carbonzuur + alcohol.</li><li><strong>Aldehyde (−CHO)</strong>: kan worden geoxideerd tot carbonzuur.</li></ul><div class=\"sam-head\">Reactietypen</div><ul><li><strong>Additie</strong>: reagens wordt toegevoegd aan de dubbele binding. Product is verzadigd. Bijv. CH₂=CH₂ + Br₂ → CH₂Br−CH₂Br.</li><li><strong>Substitutie</strong>: H-atoom vervangen door een ander atoom (bijv. halogeen). Alkanen reageren zo bij UV-licht.</li><li><strong>Esterificatie</strong>: −COOH + −OH ⇌ ester + H₂O. Katalysator H⁺. Omkeerbare reactie — opbrengst verhogen via Le Chatelier (overmaat reactant of water verwijderen).</li><li><strong>Additiepolymerisatie</strong>: alkenen koppelen aaneen door opening van C=C binding. Geen bijproduct. Bijv. etheen → polyetheen (PE).</li><li><strong>Condensatiepolymerisatie</strong>: twee monomeertypen reageren met vorming van een bindend bijproduct (water of HCl). Bijv. nylon (amidebinding), PET (esterbinding).</li></ul>",
+    "sam": "<div class=\"sam-head\">Koolwaterstoffen</div><ul><li><strong>Alkanen</strong>: CₙH₂ₙ₊₂, volledig verzadigd (alleen C−C enkelvoudige bindingen). Reactief via substitutie bij UV-licht. Bijv. methaan (CH₄), ethaan (C₂H₆), propaan (C₃H₈).</li><li><strong>Alkenen</strong>: CₙH₂ₙ, bevatten één C=C dubbele binding. Reactief via additie. Bijv. etheen (CH₂=CH₂). Test: broomwater ontkleurt bij additie van Br₂.</li><li><strong>IUPAC-naamgeving</strong>: (1) langste keten = stamnaam, (2) nummer koolstofatomen zodat substituenten laagst mogelijk genummerd zijn, (3) noem substituenten alfabetisch als prefix.</li><li><strong>Structuurisomerie</strong>: zelfde molecuulformule, andere rangschikking van atomen. Bijv. butaan en methylpropaan, beide C₄H₁₀. Andere structuur = andere eigenschappen.</li></ul><div class=\"sam-head\">Functionele groepen</div><ul><li><strong>Alcohol (−OH)</strong>: hogere kookpunten dan alkanen door waterstofbruggen. Primair, secundair, tertiair afhankelijk van positie −OH.</li><li><strong>Carbonzuur (−COOH)</strong>: zuur, protondonor. Bijv. azijnzuur (CH₃COOH). Reageert met alcohol tot ester.</li><li><strong>Amine (−NH₂)</strong>: base, protonacceptor. Bijv. methylamine.</li><li><strong>Ester (−COO−)</strong>: ruiken fruitig. Gevormd via esterificatie van carbonzuur + alcohol.</li><li><strong>Aldehyde (−CHO)</strong>: kan worden geoxideerd tot carbonzuur.</li></ul><div class=\"sam-head\">Reactietypen</div><ul><li><strong>Additie</strong>: reagens wordt toegevoegd aan de dubbele binding. Product is verzadigd. Bijv. CH₂=CH₂ + Br₂ → CH₂Br−CH₂Br.</li><li><strong>Substitutie</strong>: H-atoom vervangen door een ander atoom (bijv. halogeen). Alkanen reageren zo bij UV-licht.</li><li><strong>Esterificatie</strong>: −COOH + −OH ⇌ ester + H₂O. Katalysator H⁺. Omkeerbare reactie - opbrengst verhogen via Le Chatelier (overmaat reactant of water verwijderen).</li><li><strong>Additiepolymerisatie</strong>: alkenen koppelen aaneen door opening van C=C binding. Geen bijproduct. Bijv. etheen → polyetheen (PE).</li><li><strong>Condensatiepolymerisatie</strong>: twee monomeertypen reageren met vorming van een bindend bijproduct (water of HCl). Bijv. nylon (amidebinding), PET (esterbinding).</li></ul>",
     "sv": [
      {
       "v": "Welke omkeerbare reactie vindt plaats tussen een carbonzuur en een alcohol onder vorming van een ester en water?",
@@ -18734,8 +18734,8 @@ var VAKKEN = [
      {
       "v": "Welk polymerisatietype produceert bij elke koppelingstap een bijproduct (water of HCl)?",
       "o": [
-       "Condensatiepolymerisatie (bijv. nylon, PET — bijproduct H₂O)",
-       "Additiepolymerisatie (bijv. PE, PVC — geen bijproduct)",
+       "Condensatiepolymerisatie (bijv. nylon, PET - bijproduct H₂O)",
+       "Additiepolymerisatie (bijv. PE, PVC - geen bijproduct)",
        "Radicaalpolymerisatie (vrije radicalen, geen bijproduct)",
        "Ringopening-polymerisatie (cyclisch monomeer opent)"
       ],
@@ -18757,9 +18757,9 @@ var VAKKEN = [
       "v": "Welk polymeer is een condensatiepolymeer dat bestaat uit aminozuren en is gevormd via peptidebindingen?",
       "o": [
        "Eiwit (polypeptide)",
-       "Polyetheen (PE) — additiepolymeer",
-       "PVC (polyvinylchloride) — additiepolymeer",
-       "Cellulose — polysaccharide (suikerenopolymeer)"
+       "Polyetheen (PE) - additiepolymeer",
+       "PVC (polyvinylchloride) - additiepolymeer",
+       "Cellulose - polysaccharide (suikerenopolymeer)"
       ],
       "c": 0,
       "u": "Eiwitten zijn natuurlijke condensatiepolymeren. Aminozuren worden verbonden via peptidebindingen (−CO−NH−) waarbij water als bijproduct vrijkomt."
@@ -18846,11 +18846,11 @@ var VAKKEN = [
       "o": [
        "Het kookpunt daalt omdat grotere moleculen lichter zijn",
        "Het kookpunt stijgt omdat grotere moleculen sterkere Van der Waalskrachten hebben",
-       "Het kookpunt blijft gelijk — alleen de viscositeit neemt toe",
+       "Het kookpunt blijft gelijk - alleen de viscositeit neemt toe",
        "Het kookpunt stijgt omdat grotere moleculen waterstofbruggen kunnen vormen"
       ],
       "c": 1,
-      "u": "In de homologe reeks nemen de Van der Waalskrachten toe met het aantal elektronen (groter molecuul). Meer energie nodig om te verdampen → hoger kookpunt. Alkanen vormen geen waterstofbruggen — dat doen alcoholen wel."
+      "u": "In de homologe reeks nemen de Van der Waalskrachten toe met het aantal elektronen (groter molecuul). Meer energie nodig om te verdampen → hoger kookpunt. Alkanen vormen geen waterstofbruggen - dat doen alcoholen wel."
      },
      {
       "v": "Wat betekent «Alkaan»?",
@@ -19968,7 +19968,7 @@ var VAKKEN = [
      "CO₂ (broeikasgas) verwarren met CFK's (ozonlaagaantasting): verschillende problemen",
      "Thermoplast en thermoharder verwisselen: thermoplast is smeltbaar en recycleerbaar",
      "Emulgator als conserveringsmiddel beschrijven: emulgator houdt water en vet gemengd",
-     "Haber-Bosch: lage T geeft hogere opbrengst maar te langzame reactie — compromis bij 450°C"
+     "Haber-Bosch: lage T geeft hogere opbrengst maar te langzame reactie - compromis bij 450°C"
     ],
     "onderwerpen": [
      "Groene chemie en duurzaamheid",
@@ -19980,13 +19980,13 @@ var VAKKEN = [
      "Medicijnen en farmaceutische chemie",
      "Voedselchemie (conservering, additieven)"
     ],
-    "sam": "<div class=\"sam-head\">Industrie en duurzaamheid</div><ul><li><strong>Haber-Bosch</strong>: N₂ + 3H₂ ⇌ 2NH₃. Condities: hoge druk (~200 atm), matige temperatuur (450°C), ijzerkatalysator. Compromis: hoge druk verhoogt opbrengst (Le Chatelier: minder mol gas rechts), maar is duur. Lagere T verhoogt opbrengst maar verlaagt reactiesnelheid — ijzer compenseert.</li><li><strong>Groene chemie (12 principes)</strong>: preventie van afval, atoomeconomie (gebruik alle atomen), minder gevaarlijke stoffen, energie-efficiëntie, hernieuwbare grondstoffen, katalyse.</li><li><strong>Kunststoffen</strong>: thermoplasten (PP, PE, PET) — smeltbaar, recycleerbaar door ↑T. Thermoharders (bakeliet, epoxyhars) — vernetwerkt, niet smeltbaar. Bioplastics uit hernieuwbare grondstoffen (PLA uit maïszetmeel).</li></ul><div class=\"sam-head\">Milieu</div><ul><li><strong>Zuur regen</strong>: SO₂ (verbranding fossiele brandstoffen) en NOₓ (verbrandingsmotoren) reageren in de atmosfeer met water tot H₂SO₃/H₂SO₄ en HNO₃. Schade: verzuring bossen, corrosie gebouwen, verzuring beken.</li><li><strong>Ozonlaag</strong>: O₃ absorbeert UV-B en UV-C straling. CFK's (chloorfluorkoolstofverbindingen) katalytisch afbraak van ozon → ozonlaag wordt dunner → meer UV-B op aardoppervlak → meer huidkanker.</li><li><strong>Broeikasgassen</strong>: CO₂, CH₄, N₂O, waterdamp absorberen infraroodstraling en geven die deels terug naar aarde → opwarming aarde.</li></ul><div class=\"sam-head\">Voedsel en gezondheid</div><ul><li><strong>Conservering</strong>: zout (osmose), suiker (osmose), azijn (lage pH remt bacteriegroei), roken (antimicrobiële verbindingen), diepvriezen (remming enzymactiviteit).</li><li><strong>Additieven</strong>: E-nummers — conserveringsmiddelen (E200-299), antioxidanten (E300-399), emulgatoren (E400-499). Emulgatoren verbinden water en vet via een hydrofiel en hydrofoob deel in dezelfde molecule.</li></ul>",
+    "sam": "<div class=\"sam-head\">Industrie en duurzaamheid</div><ul><li><strong>Haber-Bosch</strong>: N₂ + 3H₂ ⇌ 2NH₃. Condities: hoge druk (~200 atm), matige temperatuur (450°C), ijzerkatalysator. Compromis: hoge druk verhoogt opbrengst (Le Chatelier: minder mol gas rechts), maar is duur. Lagere T verhoogt opbrengst maar verlaagt reactiesnelheid - ijzer compenseert.</li><li><strong>Groene chemie (12 principes)</strong>: preventie van afval, atoomeconomie (gebruik alle atomen), minder gevaarlijke stoffen, energie-efficiëntie, hernieuwbare grondstoffen, katalyse.</li><li><strong>Kunststoffen</strong>: thermoplasten (PP, PE, PET) - smeltbaar, recycleerbaar door ↑T. Thermoharders (bakeliet, epoxyhars) - vernetwerkt, niet smeltbaar. Bioplastics uit hernieuwbare grondstoffen (PLA uit maïszetmeel).</li></ul><div class=\"sam-head\">Milieu</div><ul><li><strong>Zuur regen</strong>: SO₂ (verbranding fossiele brandstoffen) en NOₓ (verbrandingsmotoren) reageren in de atmosfeer met water tot H₂SO₃/H₂SO₄ en HNO₃. Schade: verzuring bossen, corrosie gebouwen, verzuring beken.</li><li><strong>Ozonlaag</strong>: O₃ absorbeert UV-B en UV-C straling. CFK's (chloorfluorkoolstofverbindingen) katalytisch afbraak van ozon → ozonlaag wordt dunner → meer UV-B op aardoppervlak → meer huidkanker.</li><li><strong>Broeikasgassen</strong>: CO₂, CH₄, N₂O, waterdamp absorberen infraroodstraling en geven die deels terug naar aarde → opwarming aarde.</li></ul><div class=\"sam-head\">Voedsel en gezondheid</div><ul><li><strong>Conservering</strong>: zout (osmose), suiker (osmose), azijn (lage pH remt bacteriegroei), roken (antimicrobiële verbindingen), diepvriezen (remming enzymactiviteit).</li><li><strong>Additieven</strong>: E-nummers - conserveringsmiddelen (E200-299), antioxidanten (E300-399), emulgatoren (E400-499). Emulgatoren verbinden water en vet via een hydrofiel en hydrofoob deel in dezelfde molecule.</li></ul>",
     "sv": [
      {
       "v": "Welk compromis wordt in het Haber-Bosch-proces gemaakt ten aanzien van temperatuur?",
       "o": [
-       "Hoge T geeft hogere opbrengst en snellere reactie — geen compromis nodig",
-       "Lage T geeft hogere opbrengst maar langzamere reactie — 450°C is een compromis",
+       "Hoge T geeft hogere opbrengst en snellere reactie - geen compromis nodig",
+       "Lage T geeft hogere opbrengst maar langzamere reactie - 450°C is een compromis",
        "Hoge T is nodig voor Le Chatelier maar maakt de katalysator kapot",
        "Temperatuur heeft geen effect op het evenwicht bij NH3-synthese"
       ],
@@ -20010,7 +20010,7 @@ var VAKKEN = [
        "Thermoplasten zijn altijd doorzichtig; thermoharders zijn altijd gekleurd",
        "Thermoplasten worden zacht bij verhitting en zijn recycleerbaar; thermoharders zijn vernetwerkt en niet smeltbaar",
        "Thermoplasten zijn bioplastics; thermoharders zijn altijd van fossiele grondstoffen",
-       "Er is geen chemisch verschil — alleen de naam verschilt"
+       "Er is geen chemisch verschil - alleen de naam verschilt"
       ],
       "c": 1,
       "u": "Thermoplast (PE, PP, PET): lineaire ketens, smelt bij verhitting → recycleerbaar. Thermoharder (bakeliet, epoxyhars): sterke covalente dwarsverbindingen (vernetting) → smelt niet, alleen verbrandt/verkoolst."
@@ -20112,15 +20112,15 @@ var VAKKEN = [
        "Fotosynthese breekt CO₂ af tot koolstof en zuurstofgas"
       ],
       "c": 1,
-      "u": "Koolstofkringloop: planten nemen CO₂ op via fotosynthese (6CO₂ + 6H₂O → C₆H₁₂O₆ + 6O₂). Dieren eten planten en ademen CO₂ uit. Verbranding van fossiele brandstoffen voegt extra CO₂ toe — dit verstoort de balans en leidt tot klimaatverandering."
+      "u": "Koolstofkringloop: planten nemen CO₂ op via fotosynthese (6CO₂ + 6H₂O → C₆H₁₂O₆ + 6O₂). Dieren eten planten en ademen CO₂ uit. Verbranding van fossiele brandstoffen voegt extra CO₂ toe - dit verstoort de balans en leidt tot klimaatverandering."
      },
      {
       "v": "Welk conserveringsmethode werkt via osmose om bacteriën te doden?",
       "o": [
-       "Verhitting (pasteurisatie) — hoge temperatuur doodt bacteriën",
-       "Toevoegen van zout of suiker — osmose onttrekt water aan bacteriën",
-       "Bestraling met UV-licht — DNA-schade in bacteriën",
-       "Toevoegen van antioxidanten — vrije radicalen worden gebonden"
+       "Verhitting (pasteurisatie) - hoge temperatuur doodt bacteriën",
+       "Toevoegen van zout of suiker - osmose onttrekt water aan bacteriën",
+       "Bestraling met UV-licht - DNA-schade in bacteriën",
+       "Toevoegen van antioxidanten - vrije radicalen worden gebonden"
       ],
       "c": 1,
       "u": "Osmose: hoge zout- of suikerconcentratie in het voedsel → waterconcentratie buiten bacteriën is lager dan erin → water stroomt de cel uit → bacteriën plasmolyseren (krimpen) en sterven. Pasteurisatie werkt via hitte, niet osmose."
@@ -21023,7 +21023,7 @@ var VAKKEN = [
     "binas": [],
     "val": [
      "OV en AV verwisselen: de onafhankelijke variabele (OV) stel je in, de afhankelijke variabele (AV) meet je",
-     "Conclusie niet koppelen aan hypothese — een conclusie moet expliciet de hypothese bevestigen of verwerpen op basis van de meetdata"
+     "Conclusie niet koppelen aan hypothese - een conclusie moet expliciet de hypothese bevestigen of verwerpen op basis van de meetdata"
     ],
     "onderwerpen": [
      "Onderzoekscyclus: vraagstelling, hypothese, opzet, uitvoering, conclusie",
@@ -21032,7 +21032,7 @@ var VAKKEN = [
      "Meten en meetonzekerheid: nauwkeurigheid en precisie",
      "Grafieken: assen, schaal, lijnvorm en verband bepalen"
     ],
-    "sam": "<div class=\"sam-head\">Domein A — Vaardigheden</div><div class=\"sam-section\"><h3>Intuïtieve kern</h3><ul><li>Natuurkunde draait om meten, beschrijven en voorspellen met grootheden, eenheden en formules.</li><li>Een goede meting is reproduceerbaar; een goede grafiek laat het verband tussen twee grootheden direct zien.</li></ul></div><div class=\"sam-section\"><h3>Grootheden, eenheden en SI</h3><ul><li><strong>Grootheid</strong>: een meetbare eigenschap (afstand, massa, tijd). <strong>Eenheid</strong>: de vaste maat ervan (m, kg, s).</li><li><strong>SI-stelsel</strong> — zeven basiseenheden: meter (lengte), kilogram (massa), seconde (tijd), ampère (stroomsterkte), kelvin (temperatuur), mol (hoeveelheid stof) en candela (lichtsterkte).</li><li><strong>Voorvoegsels</strong> staan voor machten van tien: k = 10³, M = 10⁶, m = 10⁻³, µ = 10⁻⁶. Zo is 2,5 km = 2,5·10³ m = 2500 m.</li><li><strong>Wetenschappelijke notatie</strong>: één cijfer vóór de komma maal een macht van tien. Bijvoorbeeld 5 430 000 m = 5,43·10⁶ m en 0,00000341 s = 3,41·10⁻⁶ s.</li></ul></div><div class=\"sam-section\"><h3>Significante cijfers</h3><ul><li>Het aantal significante cijfers geeft de nauwkeurigheid van een meting weer; voorloopnullen tellen niet mee (0,0047 heeft er twee).</li><li><strong>Vermenigvuldigen en delen</strong>: het antwoord krijgt evenveel significante cijfers als de minst nauwkeurige waarde.</li><li><strong>Optellen en aftrekken</strong>: het antwoord krijgt evenveel decimalen als de waarde met de minste decimalen. Zo wordt 2,45 + 3,1 = 5,55 afgerond op 5,6.</li><li>Op het examen telt significantie alleen mee als er expliciet om gevraagd wordt.</li></ul></div><div class=\"sam-section\"><h3>Grafieken en verbanden</h3><ul><li>In een (A,B)-diagram staat A op de verticale as en B op de horizontale as. De <strong>helling</strong> is de verandering van de ene grootheid per eenheid van de andere: in een (x,t)-diagram is de helling de snelheid v = Δx/Δt.</li><li>De <strong>oppervlakte onder de grafiek</strong> heeft betekenis: onder een (v,t)-diagram is dat de afgelegde afstand (x = v·t).</li><li>Veelvoorkomende verbanden: recht evenredig (y = a·x, lijn door de oorsprong), lineair (y = a·x + b), omgekeerd evenredig (y = a/x, hyperbool), kwadratisch (y = a·x², parabool), omgekeerd kwadratisch (y = a/x²) en wortelverband (y = a·√x).</li><li><strong>Coördinatentransformatie</strong>: zet je bijvoorbeeld √x of 1/x op een as, dan wordt een krom verband een rechte lijn — handig om het type verband te bevestigen.</li></ul></div><div class=\"sam-section\"><h3>Onderzoeken en ontwerpen</h3><ul><li><strong>Onderzoekscyclus</strong>: onderzoeksvraag → hypothese → werkplan → meting → verwerking → conclusie die de hypothese toetst. Een onderzoek moet reproduceerbaar zijn.</li><li><strong>Ontwerpcyclus</strong>: ontwerpvraag → programma van eisen → ontwerp en prototype → testen → evalueren en verbeteren (zo nodig opnieuw doorlopen).</li><li><strong>Variabelen</strong>: de onafhankelijke variabele stel je in, de afhankelijke variabele meet je; storende variabelen houd je constant.</li></ul></div><div class=\"sam-section\"><h3>Examenvallen</h3><ul><li>Eenheid vergeten of niet eerst omrekenen naar SI-eenheden vóór je rekent.</li><li>Significantie toepassen terwijl er niet om gevraagd is — of juist vergeten als het wél gevraagd wordt.</li><li>Helling en oppervlakte onder een grafiek door elkaar halen.</li></ul></div>",
+    "sam": "<div class=\"sam-head\">Domein A - Vaardigheden</div><div class=\"sam-section\"><h3>Intuïtieve kern</h3><ul><li>Natuurkunde draait om meten, beschrijven en voorspellen met grootheden, eenheden en formules.</li><li>Een goede meting is reproduceerbaar; een goede grafiek laat het verband tussen twee grootheden direct zien.</li></ul></div><div class=\"sam-section\"><h3>Grootheden, eenheden en SI</h3><ul><li><strong>Grootheid</strong>: een meetbare eigenschap (afstand, massa, tijd). <strong>Eenheid</strong>: de vaste maat ervan (m, kg, s).</li><li><strong>SI-stelsel</strong> - zeven basiseenheden: meter (lengte), kilogram (massa), seconde (tijd), ampère (stroomsterkte), kelvin (temperatuur), mol (hoeveelheid stof) en candela (lichtsterkte).</li><li><strong>Voorvoegsels</strong> staan voor machten van tien: k = 10³, M = 10⁶, m = 10⁻³, µ = 10⁻⁶. Zo is 2,5 km = 2,5·10³ m = 2500 m.</li><li><strong>Wetenschappelijke notatie</strong>: één cijfer vóór de komma maal een macht van tien. Bijvoorbeeld 5 430 000 m = 5,43·10⁶ m en 0,00000341 s = 3,41·10⁻⁶ s.</li></ul></div><div class=\"sam-section\"><h3>Significante cijfers</h3><ul><li>Het aantal significante cijfers geeft de nauwkeurigheid van een meting weer; voorloopnullen tellen niet mee (0,0047 heeft er twee).</li><li><strong>Vermenigvuldigen en delen</strong>: het antwoord krijgt evenveel significante cijfers als de minst nauwkeurige waarde.</li><li><strong>Optellen en aftrekken</strong>: het antwoord krijgt evenveel decimalen als de waarde met de minste decimalen. Zo wordt 2,45 + 3,1 = 5,55 afgerond op 5,6.</li><li>Op het examen telt significantie alleen mee als er expliciet om gevraagd wordt.</li></ul></div><div class=\"sam-section\"><h3>Grafieken en verbanden</h3><ul><li>In een (A,B)-diagram staat A op de verticale as en B op de horizontale as. De <strong>helling</strong> is de verandering van de ene grootheid per eenheid van de andere: in een (x,t)-diagram is de helling de snelheid v = Δx/Δt.</li><li>De <strong>oppervlakte onder de grafiek</strong> heeft betekenis: onder een (v,t)-diagram is dat de afgelegde afstand (x = v·t).</li><li>Veelvoorkomende verbanden: recht evenredig (y = a·x, lijn door de oorsprong), lineair (y = a·x + b), omgekeerd evenredig (y = a/x, hyperbool), kwadratisch (y = a·x², parabool), omgekeerd kwadratisch (y = a/x²) en wortelverband (y = a·√x).</li><li><strong>Coördinatentransformatie</strong>: zet je bijvoorbeeld √x of 1/x op een as, dan wordt een krom verband een rechte lijn - handig om het type verband te bevestigen.</li></ul></div><div class=\"sam-section\"><h3>Onderzoeken en ontwerpen</h3><ul><li><strong>Onderzoekscyclus</strong>: onderzoeksvraag → hypothese → werkplan → meting → verwerking → conclusie die de hypothese toetst. Een onderzoek moet reproduceerbaar zijn.</li><li><strong>Ontwerpcyclus</strong>: ontwerpvraag → programma van eisen → ontwerp en prototype → testen → evalueren en verbeteren (zo nodig opnieuw doorlopen).</li><li><strong>Variabelen</strong>: de onafhankelijke variabele stel je in, de afhankelijke variabele meet je; storende variabelen houd je constant.</li></ul></div><div class=\"sam-section\"><h3>Examenvallen</h3><ul><li>Eenheid vergeten of niet eerst omrekenen naar SI-eenheden vóór je rekent.</li><li>Significantie toepassen terwijl er niet om gevraagd is - of juist vergeten als het wél gevraagd wordt.</li><li>Helling en oppervlakte onder een grafiek door elkaar halen.</li></ul></div>",
     "sv": [
      {
       "v": "Wat is het verschil tussen een onafhankelijke en een afhankelijke variabele?",
@@ -21707,7 +21707,7 @@ var VAKKEN = [
        ""
       ],
       "c": 0,
-      "u": "(a) OV: oppervlakte van het papier (cm²). AV: valtijd (s), waaruit de valsnelheid wordt berekend.\n(b) Massa van het papier constant houden (anders verandert ook de zwaartekracht op het papier) en de valhoogte constant houden (anders is de te meten grootheid niet vergelijkbaar). Tevens: omgevingsluchtbeweging vermijden.\n(c) Door te herhalen en te middelen worden toevallige fouten (willekeurige variatie bij aflezen, kleine luchtbewegingen) verminderd. Systematische fouten — bijv. een constant verkeerde nulinstelling van de stopwatch — worden niet verminderd door herhalen, omdat ze bij elke meting even groot zijn."
+      "u": "(a) OV: oppervlakte van het papier (cm²). AV: valtijd (s), waaruit de valsnelheid wordt berekend.\n(b) Massa van het papier constant houden (anders verandert ook de zwaartekracht op het papier) en de valhoogte constant houden (anders is de te meten grootheid niet vergelijkbaar). Tevens: omgevingsluchtbeweging vermijden.\n(c) Door te herhalen en te middelen worden toevallige fouten (willekeurige variatie bij aflezen, kleine luchtbewegingen) verminderd. Systematische fouten - bijv. een constant verkeerde nulinstelling van de stopwatch - worden niet verminderd door herhalen, omdat ze bij elke meting even groot zijn."
      },
      {
       "bron": "HAVO Natuurkunde CE 2022 Tijdvak 2 Grafiek interpreteren en conclusie (geen afbeelding)",
@@ -21717,7 +21717,7 @@ var VAKKEN = [
        ""
       ],
       "c": 0,
-      "u": "(a) Recht evenredig verband: I is evenredig met U. Formule: U = I · R, oftewel I = U/R.\n(b) R = U/I = 6,0 V / 0,024 A = 250 Ω.\n(c) Mogelijke oorzaken: 1. Toevallige aflezesfout bij de meting (toevallige fout — willekeurig, kan beide kanten op). 2. De draad is opgewarmd bij hogere spanning → weerstand neemt toe → systematische afwijking die bij hogere U steeds groter wordt (systematische fout bij hoge belasting)."
+      "u": "(a) Recht evenredig verband: I is evenredig met U. Formule: U = I · R, oftewel I = U/R.\n(b) R = U/I = 6,0 V / 0,024 A = 250 Ω.\n(c) Mogelijke oorzaken: 1. Toevallige aflezesfout bij de meting (toevallige fout - willekeurig, kan beide kanten op). 2. De draad is opgewarmd bij hogere spanning → weerstand neemt toe → systematische afwijking die bij hogere U steeds groter wordt (systematische fout bij hoge belasting)."
      },
      {
       "bron": "HAVO Natuurkunde CE 2022 Tijdvak 1 Meten en systematische fout (geen afbeelding)",
@@ -21775,10 +21775,10 @@ var VAKKEN = [
     "beschrijving": "Geluid, licht, elektromagnetisch spectrum en beeldvorming",
     "ceStatus": "CE",
     "binas": [
-     "Tabel 35 — Natuurkundeformules (v = f·λ, breking)",
-     "Tabel 19 — Elektromagnetisch spectrum",
-     "Tabel 18 — Brekingsindices",
-     "Tabel 15 — Geluidssnelheden"
+     "Tabel 35 - Natuurkundeformules (v = f·λ, breking)",
+     "Tabel 19 - Elektromagnetisch spectrum",
+     "Tabel 18 - Brekingsindices",
+     "Tabel 15 - Geluidssnelheden"
     ],
     "onderwerpen": [
      "Golfvergelijking v = f·λ",
@@ -21788,7 +21788,7 @@ var VAKKEN = [
      "Brekingsindex",
      "Golflengte en kleur van licht"
     ],
-    "sam": "<div class=\"sam-head\">Domein B — Golven</div><div class=\"sam-section\"><h3>Intuïtieve kern</h3><ul><li>Golven transporteren energie zonder dat materie meebeweegt.</li><li>Frequentie bepaalt toonhoogte; amplitude bepaalt volume of intensiteit.</li></ul></div><div class=\"sam-section\"><h3>Conceptueel model</h3><ul><li>Golfsnelheid: <span class=\"fm\">v = f·λ</span></li><li>Interferentie: golven versterken of verzwakken elkaar.</li><li>Reflectie, breking en absorptie bepalen hoe golven zich voortplanten.</li><li>Resonantie: sterke versterking bij gelijke frequentie.</li></ul></div><div class=\"sam-section\"><h3>Sleutelbegrippen</h3><ul><li><strong>Golfsnelheid (v)</strong>: afstand die een golf per seconde aflegt; v = f·λ, eenheid m/s</li><li><strong>Frequentie (f)</strong>: aantal trillingen per seconde, eenheid Hz</li><li><strong>Golflengte (λ)</strong>: afstand tussen twee opeenvolgende golftoppen, eenheid m</li><li><strong>Amplitude</strong>: maximale uitwijking van een trilling</li><li><strong>Interferentie</strong>: versterking of verzwakking van golven die elkaar overlappen</li><li><strong>Resonantie</strong>: sterke versterking als de aangedreven frequentie gelijk is aan de eigenfrequentie</li><li><strong>Doppler-effect</strong>: frequentieverandering doordat bron of waarnemer beweegt</li></ul></div><div class=\"sam-section\"><h3>CE-laag</h3><p><strong>Verklaren:</strong> Doppler-effect: frequentie verandert door beweging van bron of waarnemer.</p><p><strong>Toepassen:</strong> f = 200 Hz, λ = 1,5 m → v = 300 m/s.</p><p><strong>Analyseren:</strong> Bij resonantie neemt amplitude sterk toe.</p></div><div class=\"sam-section\"><h3>Examenvallen</h3><ul><li>Frequentie verwarren met golfsnelheid.</li><li>Amplitude verwarren met energie.</li></ul></div><div class=\"sam-section\"><h3>Active recall</h3><ul><li>Wat is interferentie?</li><li>Hoe bereken je golfsnelheid?</li><li>Wat gebeurt er bij resonantie?</li></ul></div>",
+    "sam": "<div class=\"sam-head\">Domein B - Golven</div><div class=\"sam-section\"><h3>Intuïtieve kern</h3><ul><li>Golven transporteren energie zonder dat materie meebeweegt.</li><li>Frequentie bepaalt toonhoogte; amplitude bepaalt volume of intensiteit.</li></ul></div><div class=\"sam-section\"><h3>Conceptueel model</h3><ul><li>Golfsnelheid: <span class=\"fm\">v = f·λ</span></li><li>Interferentie: golven versterken of verzwakken elkaar.</li><li>Reflectie, breking en absorptie bepalen hoe golven zich voortplanten.</li><li>Resonantie: sterke versterking bij gelijke frequentie.</li></ul></div><div class=\"sam-section\"><h3>Sleutelbegrippen</h3><ul><li><strong>Golfsnelheid (v)</strong>: afstand die een golf per seconde aflegt; v = f·λ, eenheid m/s</li><li><strong>Frequentie (f)</strong>: aantal trillingen per seconde, eenheid Hz</li><li><strong>Golflengte (λ)</strong>: afstand tussen twee opeenvolgende golftoppen, eenheid m</li><li><strong>Amplitude</strong>: maximale uitwijking van een trilling</li><li><strong>Interferentie</strong>: versterking of verzwakking van golven die elkaar overlappen</li><li><strong>Resonantie</strong>: sterke versterking als de aangedreven frequentie gelijk is aan de eigenfrequentie</li><li><strong>Doppler-effect</strong>: frequentieverandering doordat bron of waarnemer beweegt</li></ul></div><div class=\"sam-section\"><h3>CE-laag</h3><p><strong>Verklaren:</strong> Doppler-effect: frequentie verandert door beweging van bron of waarnemer.</p><p><strong>Toepassen:</strong> f = 200 Hz, λ = 1,5 m → v = 300 m/s.</p><p><strong>Analyseren:</strong> Bij resonantie neemt amplitude sterk toe.</p></div><div class=\"sam-section\"><h3>Examenvallen</h3><ul><li>Frequentie verwarren met golfsnelheid.</li><li>Amplitude verwarren met energie.</li></ul></div><div class=\"sam-section\"><h3>Active recall</h3><ul><li>Wat is interferentie?</li><li>Hoe bereken je golfsnelheid?</li><li>Wat gebeurt er bij resonantie?</li></ul></div>",
     "sv": [
      {
       "v": "Wat is de golfvergelijking?",
@@ -21815,8 +21815,8 @@ var VAKKEN = [
      {
       "v": "Welk golftype heeft de trilling loodrecht op de voortplantingsrichting en kan door het vacuüm?",
       "o": [
-       "Transversale golf (bijv. licht — trilling ⊥ richting)",
-       "Longitudinale golf (bijv. geluid — trilling ‖ richting)",
+       "Transversale golf (bijv. licht - trilling ⊥ richting)",
+       "Longitudinale golf (bijv. geluid - trilling ‖ richting)",
        "Staande golf (superpositie van twee golven)",
        "Dempende golf (amplitude neemt af)"
       ],
@@ -21848,10 +21848,10 @@ var VAKKEN = [
      {
       "v": "Een staande golf ontstaat door superpositie van twee golven. Welke posities hebben altijd amplitude nul?",
       "o": [
-       "Knopen (nodes) — punten met altijd nul amplitude",
-       "Buiken (antinodes) — punten met maximale amplitude",
-       "Golfbuiken — punten in de richting van de golf",
-       "Golftoppen — de hoogste punten van de golf"
+       "Knopen (nodes) - punten met altijd nul amplitude",
+       "Buiken (antinodes) - punten met maximale amplitude",
+       "Golfbuiken - punten in de richting van de golf",
+       "Golftoppen - de hoogste punten van de golf"
       ],
       "c": 0,
       "u": "In een staande golf zijn knopen vaste punten met nul uitwijking (de twee golven heffen elkaar altijd op). Buiken zijn posities met maximale uitwijking."
@@ -22137,7 +22137,7 @@ var VAKKEN = [
      {
       "v": "Wat houdt «Trilling» in?",
       "o": [
-       "de eenvoudigste trilling — één buik en twee knopen, de grootste golflengte.",
+       "de eenvoudigste trilling - één buik en twee knopen, de grootste golflengte.",
        "een heen-en-weer beweging om een evenwichtsstand",
        "het aantal trillingen per seconde (Hz)",
        "de snelheid waarmee geluid zich voortplant"
@@ -22284,7 +22284,7 @@ var VAKKEN = [
        "de maximale uitwijking van een trilling",
        "het terugkaatsen van een golf tegen een oppervlak",
        "een trilling met een veelvoud van de grondfrequentie",
-       "de eenvoudigste trilling — één buik en twee knopen, de grootste golflengte."
+       "de eenvoudigste trilling - één buik en twee knopen, de grootste golflengte."
       ],
       "c": 1,
       "u": "«Spiegeling» betekent: het terugkaatsen van een golf tegen een oppervlak.",
@@ -22533,7 +22533,7 @@ var VAKKEN = [
      {
       "v": "Wat betekent «Interferentie»?",
       "o": [
-       "de eenvoudigste trilling — één buik en twee knopen, de grootste golflengte.",
+       "de eenvoudigste trilling - één buik en twee knopen, de grootste golflengte.",
        "weerstand daalt bij meer licht",
        "een heen-en-weer beweging om een evenwichtsstand",
        "versterking of verzwakking van overlappende golven"
@@ -22667,7 +22667,7 @@ var VAKKEN = [
       "o": [
        "frequentieverandering door beweging van bron of waarnemer",
        "de maximale uitwijking van een trilling",
-       "de eenvoudigste trilling — één buik en twee knopen, de grootste golflengte.",
+       "de eenvoudigste trilling - één buik en twee knopen, de grootste golflengte.",
        "een trilling met een veelvoud van de grondfrequentie"
       ],
       "c": 0,
@@ -22919,15 +22919,15 @@ var VAKKEN = [
       "o": [
        "zonder resulterende kracht blijft een voorwerp in rust of in eenparige beweging.",
        "medische scans",
-       "de eenvoudigste trilling — één buik en twee knopen, de grootste golflengte.",
+       "de eenvoudigste trilling - één buik en twee knopen, de grootste golflengte.",
        "laat stroom maar in één richting door; een led geeft daarbij licht"
       ],
       "c": 2,
-      "u": "«Grondtoon» betekent: de eenvoudigste trilling — één buik en twee knopen, de grootste golflengte..",
+      "u": "«Grondtoon» betekent: de eenvoudigste trilling - één buik en twee knopen, de grootste golflengte..",
       "d": 1
      },
      {
-      "v": "Welk begrip hoort bij deze omschrijving: \"de eenvoudigste trilling — één buik en twee knopen, de grootste golflengte.\"?",
+      "v": "Welk begrip hoort bij deze omschrijving: \"de eenvoudigste trilling - één buik en twee knopen, de grootste golflengte.\"?",
       "o": [
        "Amplitude",
        "Doppler-effect",
@@ -22935,11 +22935,11 @@ var VAKKEN = [
        "Ioniserende straling"
       ],
       "c": 2,
-      "u": "Het juiste begrip is «Grondtoon»: de eenvoudigste trilling — één buik en twee knopen, de grootste golflengte..",
+      "u": "Het juiste begrip is «Grondtoon»: de eenvoudigste trilling - één buik en twee knopen, de grootste golflengte..",
       "d": 2
      },
      {
-      "v": "Welke term past bij: \"de eenvoudigste trilling — één buik en twee knopen, de grootste golflengte.\"?",
+      "v": "Welke term past bij: \"de eenvoudigste trilling - één buik en twee knopen, de grootste golflengte.\"?",
       "o": [
        "Evenwichtsstand",
        "Frequentie",
@@ -22947,19 +22947,19 @@ var VAKKEN = [
        "Geluidssnelheid"
       ],
       "c": 2,
-      "u": "Het juiste begrip is «Grondtoon»: de eenvoudigste trilling — één buik en twee knopen, de grootste golflengte..",
+      "u": "Het juiste begrip is «Grondtoon»: de eenvoudigste trilling - één buik en twee knopen, de grootste golflengte..",
       "d": 3
      },
      {
       "v": "Wat houdt «Grondtoon» in?",
       "o": [
        "de snelheid waarmee geluid zich voortplant",
-       "de eenvoudigste trilling — één buik en twee knopen, de grootste golflengte.",
+       "de eenvoudigste trilling - één buik en twee knopen, de grootste golflengte.",
        "meer knopen en buiken en een kleinere golflengte (hogere frequentie).",
        "v = f·λ, de snelheid van de golf (m/s)"
       ],
       "c": 1,
-      "u": "«Grondtoon» betekent: de eenvoudigste trilling — één buik en twee knopen, de grootste golflengte..",
+      "u": "«Grondtoon» betekent: de eenvoudigste trilling - één buik en twee knopen, de grootste golflengte..",
       "d": 3
      },
      {
@@ -23174,7 +23174,7 @@ var VAKKEN = [
      },
      {
       "t": "Grondtoon",
-      "d": "de eenvoudigste trilling — één buik en twee knopen, de grootste golflengte."
+      "d": "de eenvoudigste trilling - één buik en twee knopen, de grootste golflengte."
      },
      {
       "t": "Boventonen",
@@ -23188,26 +23188,26 @@ var VAKKEN = [
     "beschrijving": "Krachten, kinematica en energie",
     "ceStatus": "CE",
     "binas": [
-     "Tabel 33 — Warmte en temperatuur",
-     "Tabel 34 — Energie en vermogen",
-     "Tabel 35 — Formules beweging",
-     "Tabel 36 — Krachten",
-     "Tabel 37 — Vectoren",
-     "Tabel 38 — Impuls en energie"
+     "Tabel 33 - Warmte en temperatuur",
+     "Tabel 34 - Energie en vermogen",
+     "Tabel 35 - Formules beweging",
+     "Tabel 36 - Krachten",
+     "Tabel 37 - Vectoren",
+     "Tabel 38 - Impuls en energie"
     ],
     "val": [
-     "(v,t)-grafiek: helling = versnelling, oppervlak = afgelegde weg — niet omdraaien",
+     "(v,t)-grafiek: helling = versnelling, oppervlak = afgelegde weg - niet omdraaien",
      "Versnelling en snelheid verwarren: snelheid in m/s, versnelling in m/s² (verandering per tijdseenheid)",
-     "Vectorrichting negeren bij krachtenontleding — krachten zijn vectoren met richting én grootte",
-     "Resulterende kracht fout bepalen bij hoeken — vectorieel optellen, niet getalsmatig sommeren",
+     "Vectorrichting negeren bij krachtenontleding - krachten zijn vectoren met richting én grootte",
+     "Resulterende kracht fout bepalen bij hoeken - vectorieel optellen, niet getalsmatig sommeren",
      "Actie-reactie verwarren met krachtenevenwicht: actie-reactie werkt op ANDERE objecten, evenwicht op hetzelfde object",
      "Massa en gewicht door elkaar halen: massa in kg (constant), gewicht in N = m·g (afhankelijk van zwaarteveld)",
      "Impuls en kracht verwarren: impuls p = m·v in kg·m/s, kracht F = m·a in N",
      "Impulsbehoud verkeerd toepassen: alleen geldig bij gesloten systeem zonder externe nettokracht",
      "Vermogen en energie verwarren: energie in J (totaal), vermogen in W = J/s (per tijdseenheid)",
-     "Rendement boven 100% accepteren — maximaal 100%, anders rekenfout in teller of noemer",
+     "Rendement boven 100% accepteren - maximaal 100%, anders rekenfout in teller of noemer",
      "Warmte en temperatuur verwarren: temperatuur in K of °C (toestand), warmte in J (energieoverdracht)",
-     "Massa vergeten bij Q = c·m·ΔT — alle drie factoren verplicht, massa in kg"
+     "Massa vergeten bij Q = c·m·ΔT - alle drie factoren verplicht, massa in kg"
     ],
     "onderwerpen": [
      "Kinematische vergelijkingen (constante versnelling)",
@@ -23217,7 +23217,7 @@ var VAKKEN = [
      "Kinetische en potentiele energie",
      "Wet van behoud van energie"
     ],
-    "sam": "<div class=\"sam-head\">Domein C — Beweging en wisselwerking</div><div class=\"sam-section\"><h3>Intuïtieve kern</h3><ul><li>Beweging beschrijf je met snelheid en versnelling.</li><li>Krachten veroorzaken veranderingen in beweging.</li></ul></div><div class=\"sam-section\"><h3>Conceptueel model</h3><ul><li>Snelheid: <span class=\"fm\">v = s / t</span></li><li>Versnelling: <span class=\"fm\">a = Δv / Δt</span></li><li>Newton 2: <span class=\"fm\">F = m·a</span></li><li>Actie-reactie: krachten komen altijd in paren.</li></ul></div><div class=\"sam-section\"><h3>Sleutelbegrippen</h3><ul><li><strong>Snelheid (v)</strong>: afgelegde weg per tijdseenheid; v = s/t, eenheid m/s</li><li><strong>Versnelling (a)</strong>: snelheidsverandering per tijdseenheid; a = Δv/Δt, eenheid m/s²</li><li><strong>Resulterende kracht</strong>: vectorsom van alle krachten op een object</li><li><strong>Newton 1</strong>: een object beweegt eenparig als de resulterende kracht nul is</li><li><strong>Newton 2</strong>: F = m·a — versnelling evenredig met kracht, omgekeerd evenredig met massa</li><li><strong>Newton 3</strong>: actie en reactie zijn even groot en tegengesteld gericht</li><li><strong>Traagheid</strong>: neiging van een object om zijn bewegingstoestand te behouden</li></ul></div><div class=\"sam-section\"><h3>CE-laag</h3><p><strong>Verklaren:</strong> Geen resulterende kracht → constante snelheid.</p><p><strong>Toepassen:</strong> m = 5 kg, a = 2 m/s² → F = 10 N.</p><p><strong>Analyseren:</strong> In een v-t grafiek is de helling gelijk aan de versnelling.</p></div><div class=\"sam-section\"><h3>Examenvallen</h3><ul><li>Massa verwarren met gewicht.</li><li>Versnelling verwarren met snelheid.</li></ul></div><div class=\"sam-section\"><h3>Active recall</h3><ul><li>Wat is de resulterende kracht?</li><li>Hoe lees je versnelling af?</li><li>Wat zegt Newton 2?</li></ul></div>",
+    "sam": "<div class=\"sam-head\">Domein C - Beweging en wisselwerking</div><div class=\"sam-section\"><h3>Intuïtieve kern</h3><ul><li>Beweging beschrijf je met snelheid en versnelling.</li><li>Krachten veroorzaken veranderingen in beweging.</li></ul></div><div class=\"sam-section\"><h3>Conceptueel model</h3><ul><li>Snelheid: <span class=\"fm\">v = s / t</span></li><li>Versnelling: <span class=\"fm\">a = Δv / Δt</span></li><li>Newton 2: <span class=\"fm\">F = m·a</span></li><li>Actie-reactie: krachten komen altijd in paren.</li></ul></div><div class=\"sam-section\"><h3>Sleutelbegrippen</h3><ul><li><strong>Snelheid (v)</strong>: afgelegde weg per tijdseenheid; v = s/t, eenheid m/s</li><li><strong>Versnelling (a)</strong>: snelheidsverandering per tijdseenheid; a = Δv/Δt, eenheid m/s²</li><li><strong>Resulterende kracht</strong>: vectorsom van alle krachten op een object</li><li><strong>Newton 1</strong>: een object beweegt eenparig als de resulterende kracht nul is</li><li><strong>Newton 2</strong>: F = m·a - versnelling evenredig met kracht, omgekeerd evenredig met massa</li><li><strong>Newton 3</strong>: actie en reactie zijn even groot en tegengesteld gericht</li><li><strong>Traagheid</strong>: neiging van een object om zijn bewegingstoestand te behouden</li></ul></div><div class=\"sam-section\"><h3>CE-laag</h3><p><strong>Verklaren:</strong> Geen resulterende kracht → constante snelheid.</p><p><strong>Toepassen:</strong> m = 5 kg, a = 2 m/s² → F = 10 N.</p><p><strong>Analyseren:</strong> In een v-t grafiek is de helling gelijk aan de versnelling.</p></div><div class=\"sam-section\"><h3>Examenvallen</h3><ul><li>Massa verwarren met gewicht.</li><li>Versnelling verwarren met snelheid.</li></ul></div><div class=\"sam-section\"><h3>Active recall</h3><ul><li>Wat is de resulterende kracht?</li><li>Hoe lees je versnelling af?</li><li>Wat zegt Newton 2?</li></ul></div>",
     "sv": [
      {
       "v": "Wat is de formule van de tweede wet van Newton?",
@@ -23664,7 +23664,7 @@ var VAKKEN = [
       "v": "Wat betekent «Gewicht»?",
       "o": [
        "elektronen; matig doordringend",
-       "de eenvoudigste trilling — één buik en twee knopen, de grootste golflengte.",
+       "de eenvoudigste trilling - één buik en twee knopen, de grootste golflengte.",
        "aantal trillingen per seconde (Hz)",
        "de zwaartekracht op een voorwerp"
       ],
@@ -25052,11 +25052,11 @@ var VAKKEN = [
     "beschrijving": "Elektrische schakelingen, Ohm, vermogen en elektromagnetische inductie",
     "ceStatus": "CE",
     "binas": [
-     "Tabel 30 — Elektrische grootheden"
+     "Tabel 30 - Elektrische grootheden"
     ],
     "val": [
      "Stroom en spanning verwarren: stroomsterkte I in A (ladingen/s), spanning U in V (energieverschil per lading)",
-     "Lading vergeten in Q = I·t — lading Q in coulomb, I in A, t in s",
+     "Lading vergeten in Q = I·t - lading Q in coulomb, I in A, t in s",
      "Serie en parallel door elkaar halen: serie = zelfde stroom, parallel = zelfde spanning",
      "Wet van Ohm omzetten: U = I·R → I = U/R en R = U/I, kies de juiste vorm",
      "Stroomrichting: conventionele stroom van + naar −, elektronen van − naar +",
@@ -25070,7 +25070,7 @@ var VAKKEN = [
      "Transformator (U1/U2 = n1/n2)",
      "Elektromagnetische inductie"
     ],
-    "sam": "<div class=\"sam-head\">Domein D — Lading en veld</div><div class=\"sam-section\"><h3>Intuïtieve kern</h3><ul><li>Elektrische lading veroorzaakt elektrische krachten.</li><li>Een elektrisch veld geeft aan welke kracht een lading ondervindt.</li></ul></div><div class=\"sam-section\"><h3>Conceptueel model</h3><ul><li>Lading Q in coulomb.</li><li>Stroom: <span class=\"fm\">I = Q / t</span></li><li>Elektrisch veld: kracht per coulomb.</li><li>Spanning: energie per coulomb.</li></ul></div><div class=\"sam-section\"><h3>Sleutelbegrippen</h3><ul><li><strong>Elektrische lading (Q)</strong>: eigenschap van materie die elektrische krachten veroorzaakt; eenheid coulomb (C)</li><li><strong>Elektrische stroom (I)</strong>: lading per tijdseenheid; I = Q/t, eenheid ampère (A)</li><li><strong>Spanning (U)</strong>: elektrisch potentiaalverschil; energie per coulomb, eenheid volt (V)</li><li><strong>Weerstand (R)</strong>: mate waarin een geleider de stroom tegenwerkt; R = U/I, eenheid ohm (Ω)</li><li><strong>Wet van Ohm</strong>: U = I·R — spanning is product van stroom en weerstand</li><li><strong>Elektrisch veld</strong>: ruimte rondom een lading waar een kracht werkt op andere ladingen</li></ul></div><div class=\"sam-section\"><h3>CE-laag</h3><p><strong>Verklaren:</strong> Elektronen bewegen naar de pluspool door aantrekkingskracht.</p><p><strong>Toepassen:</strong> 6 C in 3 s → I = 2 A.</p><p><strong>Analyseren:</strong> In een homogeen veld zijn veldlijnen evenwijdig.</p></div><div class=\"sam-section\"><h3>Examenvallen</h3><ul><li>Plus en min omdraaien.</li><li>Stroomrichting verwarren met elektronenstroom.</li></ul></div><div class=\"sam-section\"><h3>Active recall</h3><ul><li>Wat is elektrische lading?</li><li>Wat is spanning?</li><li>Hoe ziet een homogeen veld eruit?</li></ul></div>",
+    "sam": "<div class=\"sam-head\">Domein D - Lading en veld</div><div class=\"sam-section\"><h3>Intuïtieve kern</h3><ul><li>Elektrische lading veroorzaakt elektrische krachten.</li><li>Een elektrisch veld geeft aan welke kracht een lading ondervindt.</li></ul></div><div class=\"sam-section\"><h3>Conceptueel model</h3><ul><li>Lading Q in coulomb.</li><li>Stroom: <span class=\"fm\">I = Q / t</span></li><li>Elektrisch veld: kracht per coulomb.</li><li>Spanning: energie per coulomb.</li></ul></div><div class=\"sam-section\"><h3>Sleutelbegrippen</h3><ul><li><strong>Elektrische lading (Q)</strong>: eigenschap van materie die elektrische krachten veroorzaakt; eenheid coulomb (C)</li><li><strong>Elektrische stroom (I)</strong>: lading per tijdseenheid; I = Q/t, eenheid ampère (A)</li><li><strong>Spanning (U)</strong>: elektrisch potentiaalverschil; energie per coulomb, eenheid volt (V)</li><li><strong>Weerstand (R)</strong>: mate waarin een geleider de stroom tegenwerkt; R = U/I, eenheid ohm (Ω)</li><li><strong>Wet van Ohm</strong>: U = I·R - spanning is product van stroom en weerstand</li><li><strong>Elektrisch veld</strong>: ruimte rondom een lading waar een kracht werkt op andere ladingen</li></ul></div><div class=\"sam-section\"><h3>CE-laag</h3><p><strong>Verklaren:</strong> Elektronen bewegen naar de pluspool door aantrekkingskracht.</p><p><strong>Toepassen:</strong> 6 C in 3 s → I = 2 A.</p><p><strong>Analyseren:</strong> In een homogeen veld zijn veldlijnen evenwijdig.</p></div><div class=\"sam-section\"><h3>Examenvallen</h3><ul><li>Plus en min omdraaien.</li><li>Stroomrichting verwarren met elektronenstroom.</li></ul></div><div class=\"sam-section\"><h3>Active recall</h3><ul><li>Wat is elektrische lading?</li><li>Wat is spanning?</li><li>Hoe ziet een homogeen veld eruit?</li></ul></div>",
     "sv": [
      {
       "v": "Wat zegt de wet van Ohm?",
@@ -25152,10 +25152,10 @@ var VAKKEN = [
      {
       "v": "Wat is de Lorentzkracht op een elektrisch geladen deeltje dat beweegt in een magneetveld?",
       "o": [
-       "F = q·v·B·sin(θ) — kracht loodrecht op v en B",
-       "F = q·E — kracht in richting van het elektrisch veld",
-       "F = m·a — kracht door versnelling",
-       "F = q·v·B·cos(θ) — kracht evenwijdig aan v"
+       "F = q·v·B·sin(θ) - kracht loodrecht op v en B",
+       "F = q·E - kracht in richting van het elektrisch veld",
+       "F = m·a - kracht door versnelling",
+       "F = q·v·B·cos(θ) - kracht evenwijdig aan v"
       ],
       "c": 0,
       "u": "Lorentzkracht: F = qvB·sin(θ). De kracht staat altijd loodrecht op de snelheid en het magneetveld. Dit veroorzaakt een cirkelbaan. Bij θ = 90°: F = qvB (maximaal)."
@@ -25163,8 +25163,8 @@ var VAKKEN = [
      {
       "v": "Welke wet van Kirchhoff stelt dat de som van alle spanningsverschillen in een gesloten lus gelijk is aan nul?",
       "o": [
-       "Tweede wet van Kirchhoff (spanningswet — KVL)",
-       "Eerste wet van Kirchhoff (stroomwet — KCL)",
+       "Tweede wet van Kirchhoff (spanningswet - KVL)",
+       "Eerste wet van Kirchhoff (stroomwet - KCL)",
        "Wet van Ohm (U = IR)",
        "Wet van Faraday (inductiewet)"
       ],
@@ -25174,7 +25174,7 @@ var VAKKEN = [
      {
       "v": "Wat zijn de drie vormen van de wet van Ohm?",
       "o": [
-       "U = I·R, I = U/R en R = U/I — spanning, stroom en weerstand",
+       "U = I·R, I = U/R en R = U/I - spanning, stroom en weerstand",
        "U = I·R is de enige vorm; de andere volgen niet",
        "P = U·I is een alternatieve vorm van de wet van Ohm",
        "Ohm geldt alleen bij gelijkstroom, niet bij wisselstroom"
@@ -25323,7 +25323,7 @@ var VAKKEN = [
        "een vermogen van 1 kW gedurende één minuut"
       ],
       "c": 0,
-      "u": "1 kWh is de energie die een vermogen van 1 kW in 1 uur verbruikt — een handige eenheid voor elektriciteitsverbruik."
+      "u": "1 kWh is de energie die een vermogen van 1 kW in 1 uur verbruikt - een handige eenheid voor elektriciteitsverbruik."
      },
      {
       "v": "Hoe wekt een generator elektriciteit op?",
@@ -26594,14 +26594,14 @@ var VAKKEN = [
     "beschrijving": "Radioactiviteit, kernreacties en elektromagnetische straling met materie",
     "ceStatus": "CE",
     "binas": [
-     "Tabel 19 — Elektromagnetisch spectrum",
-     "Tabel 25 — Radioactiviteit",
-     "Tabel 26 — Halveringstijd"
+     "Tabel 19 - Elektromagnetisch spectrum",
+     "Tabel 25 - Radioactiviteit",
+     "Tabel 26 - Halveringstijd"
     ],
     "val": [
      "Frequentie en energie omdraaien: hogere frequentie = kortere golflengte = meer energie per foton",
      "Golflengte en frequentie verwisselen: λ = v/f, grotere λ = kleinere f bij gelijke snelheid",
-     "Halveringstijd als lineair behandelen — na 2 × t½ is er nog ¼ over, niet 0 (exponentieel verval)",
+     "Halveringstijd als lineair behandelen - na 2 × t½ is er nog ¼ over, niet 0 (exponentieel verval)",
      "Alfa, beta en gamma verwarren: alfa stopt in papier, beta in aluminium, gamma gedempt door lood"
     ],
     "onderwerpen": [
@@ -26611,7 +26611,7 @@ var VAKKEN = [
      "Ioniserende straling en gezondheid",
      "Elektromagnetische straling en materie (fotonenergie)"
     ],
-    "sam": "<div class=\"sam-head\">Domein E — Straling en materie</div><div class=\"sam-section\"><h3>Intuïtieve kern</h3><ul><li>Straling draagt energie over.</li><li>Ioniserende straling kan cellen beschadigen.</li></ul></div><div class=\"sam-section\"><h3>Conceptueel model</h3><ul><li>Soorten straling: α, β, γ.</li><li>Halveringstijd: tijd waarin activiteit halveert.</li><li>Activiteit: <span class=\"fm\">A = ΔN / Δt</span></li><li>Dosis: energie per kg weefsel.</li></ul></div><div class=\"sam-section\"><h3>Sleutelbegrippen</h3><ul><li><strong>Halveringstijd (T½)</strong>: tijd waarin de activiteit van een radioactieve stof halveert</li><li><strong>Activiteit (A)</strong>: aantal kernontvallen per seconde; eenheid becquerel (Bq)</li><li><strong>Alfa-straling (α)</strong>: heliumkernen; sterk ioniserend, weinig doordringend, gestopt door papier</li><li><strong>Bèta-straling (β)</strong>: elektronen; matig ioniserend, gestopt door aluminium</li><li><strong>Gammastraling (γ)</strong>: elektromagnetische straling; sterk doordringend, weinig ioniserend</li><li><strong>Ioniserende straling</strong>: straling die atomen ioniseert en celbeschadiging kan veroorzaken</li><li><strong>Absorbed dose</strong>: geabsorbeerde energie per kilogram weefsel; eenheid gray (Gy)</li></ul></div><div class=\"sam-section\"><h3>CE-laag</h3><p><strong>Verklaren:</strong> α-straling heeft grote ioniserende werking.</p><p><strong>Toepassen:</strong> Halveringstijd 8 uur → na 16 uur 25% over.</p><p><strong>Analyseren:</strong> γ-straling dringt dieper door dan α en β.</p></div><div class=\"sam-section\"><h3>Examenvallen</h3><ul><li>Halveringstijd verkeerd interpreteren.</li><li>Doordringend vermogen omdraaien.</li></ul></div><div class=\"sam-section\"><h3>Active recall</h3><ul><li>Wat is halveringstijd?</li><li>Wat is het verschil tussen α, β en γ?</li><li>Waarom is ioniserende straling gevaarlijk?</li></ul></div>",
+    "sam": "<div class=\"sam-head\">Domein E - Straling en materie</div><div class=\"sam-section\"><h3>Intuïtieve kern</h3><ul><li>Straling draagt energie over.</li><li>Ioniserende straling kan cellen beschadigen.</li></ul></div><div class=\"sam-section\"><h3>Conceptueel model</h3><ul><li>Soorten straling: α, β, γ.</li><li>Halveringstijd: tijd waarin activiteit halveert.</li><li>Activiteit: <span class=\"fm\">A = ΔN / Δt</span></li><li>Dosis: energie per kg weefsel.</li></ul></div><div class=\"sam-section\"><h3>Sleutelbegrippen</h3><ul><li><strong>Halveringstijd (T½)</strong>: tijd waarin de activiteit van een radioactieve stof halveert</li><li><strong>Activiteit (A)</strong>: aantal kernontvallen per seconde; eenheid becquerel (Bq)</li><li><strong>Alfa-straling (α)</strong>: heliumkernen; sterk ioniserend, weinig doordringend, gestopt door papier</li><li><strong>Bèta-straling (β)</strong>: elektronen; matig ioniserend, gestopt door aluminium</li><li><strong>Gammastraling (γ)</strong>: elektromagnetische straling; sterk doordringend, weinig ioniserend</li><li><strong>Ioniserende straling</strong>: straling die atomen ioniseert en celbeschadiging kan veroorzaken</li><li><strong>Absorbed dose</strong>: geabsorbeerde energie per kilogram weefsel; eenheid gray (Gy)</li></ul></div><div class=\"sam-section\"><h3>CE-laag</h3><p><strong>Verklaren:</strong> α-straling heeft grote ioniserende werking.</p><p><strong>Toepassen:</strong> Halveringstijd 8 uur → na 16 uur 25% over.</p><p><strong>Analyseren:</strong> γ-straling dringt dieper door dan α en β.</p></div><div class=\"sam-section\"><h3>Examenvallen</h3><ul><li>Halveringstijd verkeerd interpreteren.</li><li>Doordringend vermogen omdraaien.</li></ul></div><div class=\"sam-section\"><h3>Active recall</h3><ul><li>Wat is halveringstijd?</li><li>Wat is het verschil tussen α, β en γ?</li><li>Waarom is ioniserende straling gevaarlijk?</li></ul></div>",
     "sv": [
      {
       "v": "Wat is het verschil tussen alfa- beta- en gammastraling?",
@@ -26704,10 +26704,10 @@ var VAKKEN = [
      {
       "v": "Wat is de eenheid van radioactiviteit en wat geeft ze aan?",
       "o": [
-       "Becquerel (Bq) — het aantal kerntransformaties per seconde",
-       "Gray (Gy) — geabsorbeerde stralingsdosis per kg weefsel",
-       "Sievert (Sv) — effectieve dosis rekening houdend met stralingskwaliteit",
-       "Curie (Ci) — verouderde eenheid voor radioactief verval"
+       "Becquerel (Bq) - het aantal kerntransformaties per seconde",
+       "Gray (Gy) - geabsorbeerde stralingsdosis per kg weefsel",
+       "Sievert (Sv) - effectieve dosis rekening houdend met stralingskwaliteit",
+       "Curie (Ci) - verouderde eenheid voor radioactief verval"
       ],
       "c": 0,
       "u": "Activiteit in Bq: 1 Bq = 1 kernverval per seconde. Hoe hoger de activiteit, hoe meer straling per seconde. Gray en sievert meten de biologische effecten van straling."
@@ -26726,9 +26726,9 @@ var VAKKEN = [
      {
       "v": "Welk type straling stopt al in een vel papier of in de dode huidlaag?",
       "o": [
-       "Alfastraling (α — heliumkern, zwaarste deeltje)",
-       "Betastraling (β — elektron, stopt in aluminium)",
-       "Gammastraling (γ — foton, stopt in lood)",
+       "Alfastraling (α - heliumkern, zwaarste deeltje)",
+       "Betastraling (β - elektron, stopt in aluminium)",
+       "Gammastraling (γ - foton, stopt in lood)",
        "Röntgenstraling (stopt in bot of lood)"
       ],
       "c": 0,
@@ -26975,7 +26975,7 @@ var VAKKEN = [
        "de opeenvolging van kernvervallen",
        "de omgezette energie per tijd",
        "gedetailleerd 3D-beeld; hogere stralingsdosis",
-       "de eenvoudigste trilling — één buik en twee knopen, de grootste golflengte."
+       "de eenvoudigste trilling - één buik en twee knopen, de grootste golflengte."
       ],
       "c": 0,
       "u": "«Vervalreeks» betekent: de opeenvolging van kernvervallen.",
@@ -28469,7 +28469,7 @@ var VAKKEN = [
      "Oprichting en beeindiging van organisaties",
      "Continuiteit van de onderneming"
     ],
-    "sam": "<div class=\"sam-head\">Samenlevingsvormen</div><ul><li><strong>Samenwoners</strong>: geen automatische vermogensrechten. Bij overlijden geen erfrecht tenzij notarieel vastgelegd. Schulden van één partner kunnen niet worden verhaald op de ander.</li><li><strong>Gehuwden/geregistreerd partnerschap</strong>: zelfde juridische rechten. Standaard: gemeenschap van goederen (alles samen). Via huwelijkse voorwaarden kan dit worden geregeld (bijv. koude uitsluiting).</li></ul><div class=\"sam-head\">Interestberekening</div><ul><li><strong>Enkelvoudige interest</strong>: R = K₀ · r · t. Rente alleen over de oorspronkelijke hoofdsom. Lineair verloop.</li><li><strong>Samengestelde interest</strong>: <span class=\"fm\">Kₙ = K₀ · (1+r)ⁿ</span>. Rente ook over eerder verdiende rente. Exponentieel verloop — levert over langere periodes veel meer op dan enkelvoudig.</li><li><strong>Regel van 72</strong>: benadering voor verdubbelingstijd: t ≈ 72 / rente%. Bijv. bij 4% rente: 72/4 = 18 jaar om te verdubbelen.</li></ul><div class=\"sam-head\">Rechtsvormen</div><ul><li><strong>Eenmanszaak</strong>: één eigenaar, eenvoudig op te richten, geen startkapitaal vereist. Nadeel: eigenaar is met volledig privévermogen aansprakelijk voor bedrijfsschulden.</li><li><strong>VOF (Vennootschap onder Firma)</strong>: meerdere vennoten, elk onbeperkt en hoofdelijk aansprakelijk. Schuldeiser kan het gehele bedrag van één vennoot opeisen.</li><li><strong>BV (Besloten Vennootschap)</strong>: rechtspersoon. Aansprakelijkheid beperkt tot ingebracht kapitaal. Aandelen niet vrij overdraagbaar. Hogere oprichtingskosten en administratieve verplichtingen.</li><li><strong>NV (Naamloze Vennootschap)</strong>: aandelen vrij verhandelbaar, kan beursgenoteerd zijn. Voor grote bedrijven. Meer regelgeving dan BV.</li><li><strong>Stichting/Vereniging</strong>: geen winststreven. Winst wordt niet uitgekeerd maar herinvesteerd in het doel. Stichting heeft geen leden, vereniging wel.</li><li><strong>Rechtspersoon</strong>: zelfstandige juridische entiteit met eigen rechten en plichten. Kan contracten sluiten, eigenaar zijn van bezit, worden aangeklaagd. BV, NV, stichting, vereniging zijn rechtspersonen. Eenmanszaak en VOF zijn dat niet.</li></ul>",
+    "sam": "<div class=\"sam-head\">Samenlevingsvormen</div><ul><li><strong>Samenwoners</strong>: geen automatische vermogensrechten. Bij overlijden geen erfrecht tenzij notarieel vastgelegd. Schulden van één partner kunnen niet worden verhaald op de ander.</li><li><strong>Gehuwden/geregistreerd partnerschap</strong>: zelfde juridische rechten. Standaard: gemeenschap van goederen (alles samen). Via huwelijkse voorwaarden kan dit worden geregeld (bijv. koude uitsluiting).</li></ul><div class=\"sam-head\">Interestberekening</div><ul><li><strong>Enkelvoudige interest</strong>: R = K₀ · r · t. Rente alleen over de oorspronkelijke hoofdsom. Lineair verloop.</li><li><strong>Samengestelde interest</strong>: <span class=\"fm\">Kₙ = K₀ · (1+r)ⁿ</span>. Rente ook over eerder verdiende rente. Exponentieel verloop - levert over langere periodes veel meer op dan enkelvoudig.</li><li><strong>Regel van 72</strong>: benadering voor verdubbelingstijd: t ≈ 72 / rente%. Bijv. bij 4% rente: 72/4 = 18 jaar om te verdubbelen.</li></ul><div class=\"sam-head\">Rechtsvormen</div><ul><li><strong>Eenmanszaak</strong>: één eigenaar, eenvoudig op te richten, geen startkapitaal vereist. Nadeel: eigenaar is met volledig privévermogen aansprakelijk voor bedrijfsschulden.</li><li><strong>VOF (Vennootschap onder Firma)</strong>: meerdere vennoten, elk onbeperkt en hoofdelijk aansprakelijk. Schuldeiser kan het gehele bedrag van één vennoot opeisen.</li><li><strong>BV (Besloten Vennootschap)</strong>: rechtspersoon. Aansprakelijkheid beperkt tot ingebracht kapitaal. Aandelen niet vrij overdraagbaar. Hogere oprichtingskosten en administratieve verplichtingen.</li><li><strong>NV (Naamloze Vennootschap)</strong>: aandelen vrij verhandelbaar, kan beursgenoteerd zijn. Voor grote bedrijven. Meer regelgeving dan BV.</li><li><strong>Stichting/Vereniging</strong>: geen winststreven. Winst wordt niet uitgekeerd maar herinvesteerd in het doel. Stichting heeft geen leden, vereniging wel.</li><li><strong>Rechtspersoon</strong>: zelfstandige juridische entiteit met eigen rechten en plichten. Kan contracten sluiten, eigenaar zijn van bezit, worden aangeklaagd. BV, NV, stichting, vereniging zijn rechtspersonen. Eenmanszaak en VOF zijn dat niet.</li></ul>",
     "sv": [
      {
       "v": "Welk type rente wordt ook berekend over eerder verdiende rente, wat leidt tot exponentiële groei?",
@@ -28546,7 +28546,7 @@ var VAKKEN = [
        "Een stichting met een commercieel doel"
       ],
       "c": 0,
-      "u": "VOF: geen rechtspersoon. Elke vennoot is hoofdelijk aansprakelijk — een schuldeiser kan de volledige schuld verhalen op elke vennoot afzonderlijk, ook met privévermogen."
+      "u": "VOF: geen rechtspersoon. Elke vennoot is hoofdelijk aansprakelijk - een schuldeiser kan de volledige schuld verhalen op elke vennoot afzonderlijk, ook met privévermogen."
      },
      {
       "v": "Welk begrip beschrijft de overdracht van een schuld als betaalmiddel, waarbij de crediteur zijn vordering verkoopt?",
@@ -29275,7 +29275,7 @@ var VAKKEN = [
      "CAO en arbeidsrecht",
      "Motivatie en beloningsvormen"
     ],
-    "sam": "<div class=\"sam-head\">Organisatiestructuren</div><ul><li><strong>Lijnorganisatie</strong>: duidelijke gezagslijnen van boven naar beneden. Eenvoudig en overzichtelijk. Nadeel: beperkte specialisatie.</li><li><strong>Lijn-staforganisatie</strong>: lijnmanagers hebben bevelsbevoegdheid. Stafeenheden (HR, IT, Financiën) ondersteunen en adviseren maar hebben géén bevelsbevoegdheid over lijnpersoneel.</li><li><strong>Functionele organisatie</strong>: georganiseerd per vakgebied (inkoop, productie, marketing). Hoge specialisatie. Nadeel: silo-denken, moeilijkere coördinatie.</li><li><strong>Matrixorganisatie</strong>: medewerkers hebben twee leidinggevenden — functioneel hoofd én projectleider. Flexibel. Nadeel: rolconflict en onduidelijkheid bij tegengestelde opdrachten.</li><li><strong>Span of control</strong>: het aantal medewerkers dat een leidinggevende aanstuurt. Breed = meer medewerkers per manager (vlakke structuur). Smal = minder medewerkers, meer managementlagen.</li></ul><div class=\"sam-head\">Arbeidsrecht en HR</div><ul><li><strong>Bepaalde tijd</strong>: eindigt automatisch op de einddatum. Maximaal 3 contracten in 3 jaar — daarna automatisch contract voor onbepaalde tijd (ketenregeling).</li><li><strong>Onbepaalde tijd</strong>: sterke ontslagbescherming. Ontslag alleen via UWV (bedrijfseconomisch of langdurige arbeidsongeschiktheid) of rechter (andere gronden).</li><li><strong>Oproepcontract</strong>: werknemer werkt alleen als opgeroepen. Flexibel voor werkgever, onzeker voor werknemer (inkomen wisselt).</li><li><strong>CAO (Collectieve Arbeidsovereenkomst)</strong>: sectorale afspraken over loon, werktijden en arbeidsomstandigheden tussen werkgevers(organisaties) en vakbonden. Individuele contracten mogen gunstiger zijn, niet ongunstiger.</li><li><strong>Drie ontslaggronden</strong>: (1) bedrijfseconomisch (reorganisatie, UWV), (2) disfunctioneren (rechter), (3) verstoorde arbeidsrelatie (rechter). Per grond gelden eigen regels en vergoedingen.</li></ul>",
+    "sam": "<div class=\"sam-head\">Organisatiestructuren</div><ul><li><strong>Lijnorganisatie</strong>: duidelijke gezagslijnen van boven naar beneden. Eenvoudig en overzichtelijk. Nadeel: beperkte specialisatie.</li><li><strong>Lijn-staforganisatie</strong>: lijnmanagers hebben bevelsbevoegdheid. Stafeenheden (HR, IT, Financiën) ondersteunen en adviseren maar hebben géén bevelsbevoegdheid over lijnpersoneel.</li><li><strong>Functionele organisatie</strong>: georganiseerd per vakgebied (inkoop, productie, marketing). Hoge specialisatie. Nadeel: silo-denken, moeilijkere coördinatie.</li><li><strong>Matrixorganisatie</strong>: medewerkers hebben twee leidinggevenden - functioneel hoofd én projectleider. Flexibel. Nadeel: rolconflict en onduidelijkheid bij tegengestelde opdrachten.</li><li><strong>Span of control</strong>: het aantal medewerkers dat een leidinggevende aanstuurt. Breed = meer medewerkers per manager (vlakke structuur). Smal = minder medewerkers, meer managementlagen.</li></ul><div class=\"sam-head\">Arbeidsrecht en HR</div><ul><li><strong>Bepaalde tijd</strong>: eindigt automatisch op de einddatum. Maximaal 3 contracten in 3 jaar - daarna automatisch contract voor onbepaalde tijd (ketenregeling).</li><li><strong>Onbepaalde tijd</strong>: sterke ontslagbescherming. Ontslag alleen via UWV (bedrijfseconomisch of langdurige arbeidsongeschiktheid) of rechter (andere gronden).</li><li><strong>Oproepcontract</strong>: werknemer werkt alleen als opgeroepen. Flexibel voor werkgever, onzeker voor werknemer (inkomen wisselt).</li><li><strong>CAO (Collectieve Arbeidsovereenkomst)</strong>: sectorale afspraken over loon, werktijden en arbeidsomstandigheden tussen werkgevers(organisaties) en vakbonden. Individuele contracten mogen gunstiger zijn, niet ongunstiger.</li><li><strong>Drie ontslaggronden</strong>: (1) bedrijfseconomisch (reorganisatie, UWV), (2) disfunctioneren (rechter), (3) verstoorde arbeidsrelatie (rechter). Per grond gelden eigen regels en vergoedingen.</li></ul>",
     "sv": [
      {
       "v": "Welke organisatievorm heeft gezagslijnen van hoog naar laag, aangevuld met adviserende specialisten zonder bevelsbevoegdheid?",
@@ -29385,7 +29385,7 @@ var VAKKEN = [
        "Externe communicatie"
       ],
       "c": 0,
-      "u": "Formele communicatie: officiële kanalen — vergaderingen, memo's, nieuwsbrieven, functioneringsgesprekken. Informele communicatie: gesprekken bij de koffieautomaat. Beide zijn nodig in een gezonde organisatie."
+      "u": "Formele communicatie: officiële kanalen - vergaderingen, memo's, nieuwsbrieven, functioneringsgesprekken. Informele communicatie: gesprekken bij de koffieautomaat. Beide zijn nodig in een gezonde organisatie."
      },
      {
       "v": "Wat is het tweefactorenmodel van Herzberg?",
@@ -29863,7 +29863,7 @@ var VAKKEN = [
      "Kwantitatief en kwalitatief onderzoek",
      "Marktvormen (monopolie, oligopolie, volkomen concurrentie)"
     ],
-    "sam": "<div class=\"sam-head\">Marketing-mix (4 P's)</div><ul><li><strong>Product</strong>: kwaliteit, design, merk, assortiment, verpakking, garantie. Kern-, tastbaar en uitgebreid product.</li><li><strong>Prijs</strong>: strategie bepaalt positionering. Penetratiestrategie (laag) of afroomstrategie (hoog). Prijs beïnvloedt imago.</li><li><strong>Penetratiestrategie</strong>: lage introductieprijs om snel marktaandeel te veroveren. Geschikt bij prijsgevoelige markt en schaalvoordelen.</li><li><strong>Afroomstrategie (skimming)</strong>: hoge introductieprijs voor early adopters. Daarna stapsgewijze verlaging. Geschikt voor innovatieve producten met weinig concurrentie.</li><li><strong>Plaats</strong>: distributiekanalen en bedrijfskolom. Producent → groothandel → detailhandel → consument. Kortere kolom = meer controle over presentatie en prijs maar hogere distributiekosten.</li><li><strong>Promotie</strong>: communicatiemix: reclame (massamedia), PR (persberichten, events), persoonlijke verkoop, social media, sponsoring.</li></ul><div class=\"sam-head\">Marktonderzoek</div><ul><li><strong>Primair onderzoek</strong>: zelf nieuwe data verzamelen. Enquête (kwantitatief), interview of focusgroep (kwalitatief), observatie. Duurder maar specifiek voor jouw vraagstelling.</li><li><strong>Secundair onderzoek</strong>: bestaande bronnen gebruiken (CBS, brancherapporten, interne verkoopcijfers). Sneller en goedkoper maar minder actueel of specifiek.</li><li><strong>Kwantitatief</strong>: numerieke data (hoeveel, hoe vaak, welk percentage). Statistisch analyseerbaar. Grote steekproef nodig voor betrouwbaarheid.</li><li><strong>Kwalitatief</strong>: diepgaande inzichten in meningen, motivaties en ervaringen. Kleine groep, rijke data. Niet statistisch generaliseerbaar.</li></ul><div class=\"sam-head\">Marktvormen</div><ul><li><strong>Volkomen concurrentie</strong>: veel aanbieders, homogeen product, vrije toe- en uittreding. Prijsstellers zijn prijsnemers (geen invloed op marktprijs).</li><li><strong>Monopolie</strong>: één aanbieder. Geen concurrentie, prijsbepaler, hoge winst maar regulering door overheid mogelijk.</li><li><strong>Oligopolie</strong>: weinig aanbieders (bijv. telecom, energie). Strategische afhankelijkheid — gedrag van één beïnvloedt de anderen. Prijzenoorlogen of stilzwijgende afstemming mogelijk.</li></ul>",
+    "sam": "<div class=\"sam-head\">Marketing-mix (4 P's)</div><ul><li><strong>Product</strong>: kwaliteit, design, merk, assortiment, verpakking, garantie. Kern-, tastbaar en uitgebreid product.</li><li><strong>Prijs</strong>: strategie bepaalt positionering. Penetratiestrategie (laag) of afroomstrategie (hoog). Prijs beïnvloedt imago.</li><li><strong>Penetratiestrategie</strong>: lage introductieprijs om snel marktaandeel te veroveren. Geschikt bij prijsgevoelige markt en schaalvoordelen.</li><li><strong>Afroomstrategie (skimming)</strong>: hoge introductieprijs voor early adopters. Daarna stapsgewijze verlaging. Geschikt voor innovatieve producten met weinig concurrentie.</li><li><strong>Plaats</strong>: distributiekanalen en bedrijfskolom. Producent → groothandel → detailhandel → consument. Kortere kolom = meer controle over presentatie en prijs maar hogere distributiekosten.</li><li><strong>Promotie</strong>: communicatiemix: reclame (massamedia), PR (persberichten, events), persoonlijke verkoop, social media, sponsoring.</li></ul><div class=\"sam-head\">Marktonderzoek</div><ul><li><strong>Primair onderzoek</strong>: zelf nieuwe data verzamelen. Enquête (kwantitatief), interview of focusgroep (kwalitatief), observatie. Duurder maar specifiek voor jouw vraagstelling.</li><li><strong>Secundair onderzoek</strong>: bestaande bronnen gebruiken (CBS, brancherapporten, interne verkoopcijfers). Sneller en goedkoper maar minder actueel of specifiek.</li><li><strong>Kwantitatief</strong>: numerieke data (hoeveel, hoe vaak, welk percentage). Statistisch analyseerbaar. Grote steekproef nodig voor betrouwbaarheid.</li><li><strong>Kwalitatief</strong>: diepgaande inzichten in meningen, motivaties en ervaringen. Kleine groep, rijke data. Niet statistisch generaliseerbaar.</li></ul><div class=\"sam-head\">Marktvormen</div><ul><li><strong>Volkomen concurrentie</strong>: veel aanbieders, homogeen product, vrije toe- en uittreding. Prijsstellers zijn prijsnemers (geen invloed op marktprijs).</li><li><strong>Monopolie</strong>: één aanbieder. Geen concurrentie, prijsbepaler, hoge winst maar regulering door overheid mogelijk.</li><li><strong>Oligopolie</strong>: weinig aanbieders (bijv. telecom, energie). Strategische afhankelijkheid - gedrag van één beïnvloedt de anderen. Prijzenoorlogen of stilzwijgende afstemming mogelijk.</li></ul>",
     "sv": [
      {
       "v": "Wat zijn de vier P's van de marketing-mix?",
@@ -31301,7 +31301,7 @@ var VAKKEN = [
        "Eigen vermogen"
       ],
       "c": 0,
-      "u": "Vaste activa: meer dan 1 jaar in gebruik. Ze worden afgeschreven → boekwaarde daalt jaarlijks. Vlottende activa: voorraden, debiteuren, kas — kortlopend en snel omzetbaar in geld."
+      "u": "Vaste activa: meer dan 1 jaar in gebruik. Ze worden afgeschreven → boekwaarde daalt jaarlijks. Vlottende activa: voorraden, debiteuren, kas - kortlopend en snel omzetbaar in geld."
      },
      {
       "v": "Wat is het werkkapitaal en wat geeft een negatief werkkapitaal aan?",
@@ -31692,7 +31692,7 @@ var VAKKEN = [
    {
     "id": "A",
     "naam": "Woordenschat & grammatica",
-    "beschrijving": "Engelse woordenschat en grammatica op B1-niveau — basis voor lees-, schrijf- en luistervaardigheid",
+    "beschrijving": "Engelse woordenschat en grammatica op B1-niveau - basis voor lees-, schrijf- en luistervaardigheid",
     "onderwerpen": [
      "Woordbetekenissen uit context afleiden",
      "Collocaties en vaste uitdrukkingen",
@@ -31705,7 +31705,7 @@ var VAKKEN = [
      "Synoniem en antonym",
      "Formeel vs. informeel woordgebruik"
     ],
-    "sam": "<div class=\"sam-head\">Woordenschat (B1)</div><ul><li><strong>Context afleiden</strong>: gebruik omringende zinnen om onbekende woorden te begrijpen. Let op signaalwoorden: \"such as\", \"for example\", \"in other words\" = definitie volgt. \"However\", \"but\" = tegenstelling.</li><li><strong>Collocaties</strong>: woorden die vaak samen voorkomen — \"make a decision\" (niet \"do\"), \"do research\" (niet \"make\"), \"take part in\". Leer woorden in combinatie.</li><li><strong>Prefix/suffix</strong>: un- (niet: unhappy), -ful (vol: hopeful), -less (zonder: careless), dis- (niet/het tegenovergestelde: disagree), re- (opnieuw: rebuild), -tion/-sion (zelfstandig naamwoord: decision, nation).</li></ul><div class=\"sam-head\">Grammatica (B1)</div><ul><li><strong>Present perfect vs. simple past</strong>: \"I have seen\" (verleden met verband met nu, resultaat) vs. \"I saw yesterday\" (afgerond moment). Signalen: \"just, already, yet, ever, never, since, for\" = present perfect.</li><li><strong>Conditionals</strong>: type 1 = realistisch (\"If it rains, I will stay home\"). Type 2 = onrealistisch/hypothetisch (\"If I were rich, I would travel\"). Type 3 = verleden hypothetisch (\"If I had studied, I would have passed\").</li><li><strong>Passief</strong>: be + past participle. \"The book was written in 1900.\" Gebruik: als de uitvoerder onbekend of onbelangrijk is, of voor formele/academische stijl.</li><li><strong>Modale werkwoorden</strong>: must/have to (verplichting), should (advies), can/could (vermogen/mogelijkheid), may/might (toestemming/kans), will/would (toekomst/voorwaarde).</li></ul>",
+    "sam": "<div class=\"sam-head\">Woordenschat (B1)</div><ul><li><strong>Context afleiden</strong>: gebruik omringende zinnen om onbekende woorden te begrijpen. Let op signaalwoorden: \"such as\", \"for example\", \"in other words\" = definitie volgt. \"However\", \"but\" = tegenstelling.</li><li><strong>Collocaties</strong>: woorden die vaak samen voorkomen - \"make a decision\" (niet \"do\"), \"do research\" (niet \"make\"), \"take part in\". Leer woorden in combinatie.</li><li><strong>Prefix/suffix</strong>: un- (niet: unhappy), -ful (vol: hopeful), -less (zonder: careless), dis- (niet/het tegenovergestelde: disagree), re- (opnieuw: rebuild), -tion/-sion (zelfstandig naamwoord: decision, nation).</li></ul><div class=\"sam-head\">Grammatica (B1)</div><ul><li><strong>Present perfect vs. simple past</strong>: \"I have seen\" (verleden met verband met nu, resultaat) vs. \"I saw yesterday\" (afgerond moment). Signalen: \"just, already, yet, ever, never, since, for\" = present perfect.</li><li><strong>Conditionals</strong>: type 1 = realistisch (\"If it rains, I will stay home\"). Type 2 = onrealistisch/hypothetisch (\"If I were rich, I would travel\"). Type 3 = verleden hypothetisch (\"If I had studied, I would have passed\").</li><li><strong>Passief</strong>: be + past participle. \"The book was written in 1900.\" Gebruik: als de uitvoerder onbekend of onbelangrijk is, of voor formele/academische stijl.</li><li><strong>Modale werkwoorden</strong>: must/have to (verplichting), should (advies), can/could (vermogen/mogelijkheid), may/might (toestemming/kans), will/would (toekomst/voorwaarde).</li></ul>",
     "sv": [
      {
       "v": "What does the prefix \"un-\" mean in words like \"unhappy\" or \"unusual\"?",
@@ -31727,7 +31727,7 @@ var VAKKEN = [
        "He have never been to London."
       ],
       "c": 1,
-      "u": "\"She has just finished\" is correct — just, already, yet, ever, never, since, for signal the present perfect. \"Last year\" and \"yesterday\" are finished time markers → simple past: \"I visited Paris last year.\""
+      "u": "\"She has just finished\" is correct - just, already, yet, ever, never, since, for signal the present perfect. \"Last year\" and \"yesterday\" are finished time markers → simple past: \"I visited Paris last year.\""
      },
      {
       "v": "Choose the correct conditional: \"If I __ enough money, I __ a new phone.\"",
@@ -32653,7 +32653,7 @@ var VAKKEN = [
        ""
       ],
       "c": 0,
-      "u": "(a) Scientists announced that they had discovered a new species of deep-sea fish. (b) Present perfect (\"have discovered\") shifts to past perfect (\"had discovered\") in reported speech. This backshift happens because reported speech moves the time frame one step back — what was present at the time of speaking becomes past from the reporter's perspective."
+      "u": "(a) Scientists announced that they had discovered a new species of deep-sea fish. (b) Present perfect (\"have discovered\") shifts to past perfect (\"had discovered\") in reported speech. This backshift happens because reported speech moves the time frame one step back - what was present at the time of speaking becomes past from the reporter's perspective."
      },
      {
       "bron": "Artikel",
@@ -32663,7 +32663,7 @@ var VAKKEN = [
        ""
       ],
       "c": 0,
-      "u": "(a) \"are thrown away\" / \"are collected\" / \"sorted\" (elliptical passive) / \"melted down\" / \"turned into\". (b) 1. The focus is on what happens to the bottles, not on who does the action — the agent (consumers, companies, workers) is less important than the process. 2. The passive creates an impersonal, objective tone appropriate for informational writing about environmental processes."
+      "u": "(a) \"are thrown away\" / \"are collected\" / \"sorted\" (elliptical passive) / \"melted down\" / \"turned into\". (b) 1. The focus is on what happens to the bottles, not on who does the action - the agent (consumers, companies, workers) is less important than the process. 2. The passive creates an impersonal, objective tone appropriate for informational writing about environmental processes."
      },
      {
       "bron": "Artikel",
@@ -32767,7 +32767,7 @@ var VAKKEN = [
      "Reference words (pronouns, this/that/these)",
      "Summary and paraphrase skills"
     ],
-    "sam": "<div class=\"sam-head\">Text Comprehension</div><ul><li><strong>Main idea</strong>: the central message or argument of the entire text — not just one paragraph. Often signalled in the title, first paragraph, or final conclusion. Ask: what does the writer want the reader to take away?</li><li><strong>Supporting details</strong>: examples, statistics, expert quotes, anecdotes that back up the main idea. Distinguish between detail (specific) and main idea (general).</li><li><strong>Inference</strong>: reading between the lines. The author implies something without stating it explicitly; the reader uses context and prior knowledge to infer the meaning.</li><li><strong>Skimming vs. scanning</strong>: skimming = reading quickly for general meaning (main idea). Scanning = looking for specific information (a date, a name).</li></ul><div class=\"sam-head\">Writer's Craft</div><ul><li><strong>Tone</strong>: the writer's attitude toward the subject (serious, ironic, humorous, critical, sceptical, sympathetic). Revealed through word choice, not the topic itself.</li><li><strong>Purpose</strong>: what the writer intends to achieve — to inform, to persuade, to entertain, to instruct, or a combination.</li><li><strong>Audience</strong>: who the text is written for. Affects vocabulary level, examples used, and assumed knowledge.</li><li><strong>Hedging language</strong>: writers use \"may\", \"might\", \"could\", \"seems to\", \"suggests\" to indicate uncertainty. This is especially common in academic and scientific texts.</li></ul><div class=\"sam-head\">Language and Structure</div><ul><li><strong>Reference words</strong>: pronouns and phrases that refer to an earlier noun or idea (it, they, this, these, the former, the latter). Always identify what they refer to — this is frequently tested.</li><li><strong>Cohesion markers</strong>: however (contrast) | moreover/furthermore (addition) | therefore/thus (result) | although/even though (concession) | for example/such as (illustration)</li><li><strong>Vocabulary in context</strong>: use surrounding sentences to deduce the meaning of unknown words. Look for synonyms, antonyms, examples, or definitions in the same or nearby sentences.</li><li><strong>Paragraph structure</strong>: topic sentence (main point) + supporting sentences + sometimes a concluding or linking sentence. Identifying topic sentences helps map the whole text quickly.</li></ul>",
+    "sam": "<div class=\"sam-head\">Text Comprehension</div><ul><li><strong>Main idea</strong>: the central message or argument of the entire text - not just one paragraph. Often signalled in the title, first paragraph, or final conclusion. Ask: what does the writer want the reader to take away?</li><li><strong>Supporting details</strong>: examples, statistics, expert quotes, anecdotes that back up the main idea. Distinguish between detail (specific) and main idea (general).</li><li><strong>Inference</strong>: reading between the lines. The author implies something without stating it explicitly; the reader uses context and prior knowledge to infer the meaning.</li><li><strong>Skimming vs. scanning</strong>: skimming = reading quickly for general meaning (main idea). Scanning = looking for specific information (a date, a name).</li></ul><div class=\"sam-head\">Writer's Craft</div><ul><li><strong>Tone</strong>: the writer's attitude toward the subject (serious, ironic, humorous, critical, sceptical, sympathetic). Revealed through word choice, not the topic itself.</li><li><strong>Purpose</strong>: what the writer intends to achieve - to inform, to persuade, to entertain, to instruct, or a combination.</li><li><strong>Audience</strong>: who the text is written for. Affects vocabulary level, examples used, and assumed knowledge.</li><li><strong>Hedging language</strong>: writers use \"may\", \"might\", \"could\", \"seems to\", \"suggests\" to indicate uncertainty. This is especially common in academic and scientific texts.</li></ul><div class=\"sam-head\">Language and Structure</div><ul><li><strong>Reference words</strong>: pronouns and phrases that refer to an earlier noun or idea (it, they, this, these, the former, the latter). Always identify what they refer to - this is frequently tested.</li><li><strong>Cohesion markers</strong>: however (contrast) | moreover/furthermore (addition) | therefore/thus (result) | although/even though (concession) | for example/such as (illustration)</li><li><strong>Vocabulary in context</strong>: use surrounding sentences to deduce the meaning of unknown words. Look for synonyms, antonyms, examples, or definitions in the same or nearby sentences.</li><li><strong>Paragraph structure</strong>: topic sentence (main point) + supporting sentences + sometimes a concluding or linking sentence. Identifying topic sentences helps map the whole text quickly.</li></ul>",
     "sv": [
      {
       "v": "Which word signals a contrast in English?",
@@ -32822,7 +32822,7 @@ var VAKKEN = [
        "Explicit: incorrect information. Implicit: correct information."
       ],
       "c": 0,
-      "u": "Explicit information is directly stated. Implicit information requires inference — the writer hints at something without stating it outright. CE questions often ask about implied meaning."
+      "u": "Explicit information is directly stated. Implicit information requires inference - the writer hints at something without stating it outright. CE questions often ask about implied meaning."
      },
      {
       "v": "What does the word \"however\" at the beginning of a sentence indicate?",
@@ -32838,8 +32838,8 @@ var VAKKEN = [
      {
       "v": "A writer states: \"Many experts believe climate action is urgent.\" What does \"many\" suggest?",
       "o": [
-       "All experts agree — this is a proven fact",
-       "Not all experts agree — the claim is qualified and not absolute",
+       "All experts agree - this is a proven fact",
+       "Not all experts agree - the claim is qualified and not absolute",
        "The writer has personally interviewed all experts",
        "The statement has been proven by scientific research"
       ],
@@ -33638,11 +33638,11 @@ var VAKKEN = [
        ""
       ],
       "c": 0,
-      "u": "(a) Text A is more reliable because: (1) it uses specific statistics and quantifiable data (\"8 million tonnes\", \"90%\"), and (2) it refers to scientific studies, suggesting the claims have been verified by research. Text B uses emotional language without evidence.\n(b) Any one of: emotive language (\"murdering\", \"poisoning\") — creates a strong emotional reaction in the reader; hyperbole (\"destroying our planet\") — exaggerates to emphasise the problem; second person (\"ourselves and our children\") — makes the reader feel personally involved/threatened."
+      "u": "(a) Text A is more reliable because: (1) it uses specific statistics and quantifiable data (\"8 million tonnes\", \"90%\"), and (2) it refers to scientific studies, suggesting the claims have been verified by research. Text B uses emotional language without evidence.\n(b) Any one of: emotive language (\"murdering\", \"poisoning\") - creates a strong emotional reaction in the reader; hyperbole (\"destroying our planet\") - exaggerates to emphasise the problem; second person (\"ourselves and our children\") - makes the reader feel personally involved/threatened."
      },
      {
       "bron": "Artikel",
-      "ctx": "Paragraph from an article about fast fashion:\n\n\"Fast fashion brands release up to 52 micro-seasons per year, encouraging consumers to buy more and discard more. As a result, the fashion industry produces 10% of global carbon emissions — more than international aviation and shipping combined. Furthermore, water consumption for textile production is enormous: it takes 2,700 litres of water to produce a single cotton T-shirt, enough drinking water for one person for 2.5 years.\"",
+      "ctx": "Paragraph from an article about fast fashion:\n\n\"Fast fashion brands release up to 52 micro-seasons per year, encouraging consumers to buy more and discard more. As a result, the fashion industry produces 10% of global carbon emissions - more than international aviation and shipping combined. Furthermore, water consumption for textile production is enormous: it takes 2,700 litres of water to produce a single cotton T-shirt, enough drinking water for one person for 2.5 years.\"",
       "v": "(a) How does the writer structure the argument in this paragraph? Refer to specific words or phrases.\n(b) The writer uses the statistic about a T-shirt and drinking water. What is the effect of presenting the information this way?",
       "o": [
        ""
@@ -33652,13 +33652,13 @@ var VAKKEN = [
      },
      {
       "bron": "Artikel",
-      "ctx": "Concluding paragraph of an opinion piece:\n\n\"It is clear that schools must take responsibility for teaching media literacy. Young people are bombarded with misinformation daily. If they cannot distinguish reliable sources from biased ones, democracy itself is at risk. Teachers, curriculum designers and governments must act — before it is too late.\"",
-      "v": "(a) Is the final sentence (\"Teachers, curriculum designers and governments must act — before it is too late.\") a fact or an opinion? Explain.\n(b) What rhetorical technique does the writer use in the phrase \"before it is too late\", and what effect does it have?",
+      "ctx": "Concluding paragraph of an opinion piece:\n\n\"It is clear that schools must take responsibility for teaching media literacy. Young people are bombarded with misinformation daily. If they cannot distinguish reliable sources from biased ones, democracy itself is at risk. Teachers, curriculum designers and governments must act - before it is too late.\"",
+      "v": "(a) Is the final sentence (\"Teachers, curriculum designers and governments must act - before it is too late.\") a fact or an opinion? Explain.\n(b) What rhetorical technique does the writer use in the phrase \"before it is too late\", and what effect does it have?",
       "o": [
        ""
       ],
       "c": 0,
-      "u": "(a) It is an opinion. It expresses the writer's personal view about what should happen (\"must act\"). It cannot be objectively verified as true or false — it is a recommendation/call to action, not a statement of fact.\n(b) The technique is urgency / apocalyptic language (or: emotive language / implied threat). The effect is to pressure the reader into agreeing: by suggesting that inaction will lead to disaster, the writer creates a sense of crisis that makes the demand feel non-negotiable and immediate."
+      "u": "(a) It is an opinion. It expresses the writer's personal view about what should happen (\"must act\"). It cannot be objectively verified as true or false - it is a recommendation/call to action, not a statement of fact.\n(b) The technique is urgency / apocalyptic language (or: emotive language / implied threat). The effect is to pressure the reader into agreeing: by suggesting that inaction will lead to disaster, the writer creates a sense of crisis that makes the demand feel non-negotiable and immediate."
      }
     ],
     "begrippen": [
@@ -33763,7 +33763,7 @@ var VAKKEN = [
       "u": "\"To sum up\", \"In conclusion\", \"To wrap up\" signal the end/summary. \"Moving on\" = next topic. \"For example\" = illustration. \"On the other hand\" = contrast."
      },
      {
-      "v": "A speaker says: \"Well, the government's plan is just brilliant — if you enjoy waiting five years for results.\" What is the tone?",
+      "v": "A speaker says: \"Well, the government's plan is just brilliant - if you enjoy waiting five years for results.\" What is the tone?",
       "o": [
        "Enthusiastic and supportive",
        "Sarcastic and critical",
@@ -33793,7 +33793,7 @@ var VAKKEN = [
        "Quality"
       ],
       "c": 1,
-      "u": "\"May\" is a modal of possibility — the speaker is not certain. Other hedging words: might, could, seems to, appears to, is believed to. This hedging language is especially common in scientific and journalistic speech."
+      "u": "\"May\" is a modal of possibility - the speaker is not certain. Other hedging words: might, could, seems to, appears to, is believed to. This hedging language is especially common in scientific and journalistic speech."
      },
      {
       "v": "What is a key difference between a documentary and a news report?",
@@ -34401,7 +34401,7 @@ var VAKKEN = [
        ""
       ],
       "c": 0,
-      "u": "(a) Any two from: environmental concerns (reducing carbon footprint), health benefits (lower cholesterol, reduced risk of heart disease), ethical reasons (animal welfare). (b) Balanced/neutral — she presents the drawback (cost and availability) without dismissing it, using hedging language such as \"it's worth noting that…\" or \"some people find that…\". This shows she acknowledges criticism without taking a strong position."
+      "u": "(a) Any two from: environmental concerns (reducing carbon footprint), health benefits (lower cholesterol, reduced risk of heart disease), ethical reasons (animal welfare). (b) Balanced/neutral - she presents the drawback (cost and availability) without dismissing it, using hedging language such as \"it's worth noting that…\" or \"some people find that…\". This shows she acknowledges criticism without taking a strong position."
      },
      {
       "jaar": 2024,
@@ -34413,19 +34413,19 @@ var VAKKEN = [
        ""
       ],
       "c": 0,
-      "u": "(a) Beginning: the student appears nervous and isolated — they film themselves alone in their room, speak quietly, and say \"I'm not sure I can do this.\" By the end: they are laughing with new friends, speaking faster, and say \"I actually love it here.\" (b) Implicit message: studying abroad is challenging at first, but perseverance leads to personal growth and social connection. The vlog implies that discomfort is temporary and worthwhile."
+      "u": "(a) Beginning: the student appears nervous and isolated - they film themselves alone in their room, speak quietly, and say \"I'm not sure I can do this.\" By the end: they are laughing with new friends, speaking faster, and say \"I actually love it here.\" (b) Implicit message: studying abroad is challenging at first, but perseverance leads to personal growth and social connection. The vlog implies that discomfort is temporary and worthwhile."
      },
      {
       "jaar": 2022,
       "tijdvak": 2,
       "bron": "HAVO Engels CE 2022 Tijdvak 2 Luistervaardigheid instructie (geen afbeelding)",
-      "ctx": "You hear a teacher giving instructions for a science experiment:\n\n\"First, put on your safety goggles — that's non-negotiable. Then, carefully pour exactly 20ml of the solution into the beaker. Do NOT heat it above 60 degrees. Finally, record your observations every two minutes.\"",
+      "ctx": "You hear a teacher giving instructions for a science experiment:\n\n\"First, put on your safety goggles - that's non-negotiable. Then, carefully pour exactly 20ml of the solution into the beaker. Do NOT heat it above 60 degrees. Finally, record your observations every two minutes.\"",
       "v": "(a) List the four steps in the correct order.\n(b) Which step does the teacher emphasise most strongly? How do you know?",
       "o": [
        ""
       ],
       "c": 0,
-      "u": "(a) 1. Put on safety goggles. 2. Pour 20ml of solution into the beaker. 3. Do not heat above 60 degrees. 4. Record observations every two minutes. (b) The first step (safety goggles) — emphasised by \"that's non-negotiable\", meaning it is absolutely required. The emphatic language signals that this is the most important instruction."
+      "u": "(a) 1. Put on safety goggles. 2. Pour 20ml of solution into the beaker. 3. Do not heat above 60 degrees. 4. Record observations every two minutes. (b) The first step (safety goggles) - emphasised by \"that's non-negotiable\", meaning it is absolutely required. The emphatic language signals that this is the most important instruction."
      }
     ],
     "begrippen": [
@@ -34478,7 +34478,7 @@ var VAKKEN = [
    {
     "id": "D",
     "naam": "Gespreksvaardigheid",
-    "beschrijving": "Spreken en interacteren in het Engels op B1-niveau — presenteren, discussiëren, reageren (SE)",
+    "beschrijving": "Spreken en interacteren in het Engels op B1-niveau - presenteren, discussiëren, reageren (SE)",
     "onderwerpen": [
      "Presentaties houden in het Engels",
      "Mening geven en onderbouwen",
@@ -34489,7 +34489,7 @@ var VAKKEN = [
      "Vragen stellen en verduidelijking vragen",
      "Vloeiendheid en uitspraak"
     ],
-    "sam": "<div class=\"sam-head\">Spreken (B1)</div><ul><li><strong>Mening geven</strong>: \"I think / I believe / In my opinion / I would argue that…\" Onderbouw altijd: standpunt + reden + voorbeeld.</li><li><strong>Reageren op een argument</strong>: \"That's a good point, but…\" / \"I see what you mean, however…\" / \"I partially agree, although…\" / \"I'm not sure that's the case because…\"</li><li><strong>Vragen stellen</strong>: \"Could you explain what you mean by…?\" / \"Do you mean that…?\" / \"I'm not sure I follow — could you give an example?\"</li><li><strong>Structuur presentatie</strong>: opening (introduce yourself + topic) → kern (3 punten, elk met voorbeeld) → conclusie (samenvatting + eigen mening) → vragen welkom.</li></ul><div class=\"sam-head\">Register en vloeiendheid</div><ul><li><strong>Formeel</strong>: \"I would like to present…\", \"This suggests that…\", geen contracties in formele context.</li><li><strong>Informeel</strong>: \"So basically…\", \"You know what I mean?\", contracties (I'd, you're) OK.</li><li><strong>Vloeiendheid</strong>: gebruik fillers strategisch: \"Well…\", \"Let me think for a moment…\", \"What I'm trying to say is…\". Vermijd lange stiltes.</li><li><strong>Uitspraak tips</strong>: th-klank (think, this), onderscheid tussen short i (sit) en long ee (seat), eindmedeklinkers duidelijk uitspreken.</li></ul>",
+    "sam": "<div class=\"sam-head\">Spreken (B1)</div><ul><li><strong>Mening geven</strong>: \"I think / I believe / In my opinion / I would argue that…\" Onderbouw altijd: standpunt + reden + voorbeeld.</li><li><strong>Reageren op een argument</strong>: \"That's a good point, but…\" / \"I see what you mean, however…\" / \"I partially agree, although…\" / \"I'm not sure that's the case because…\"</li><li><strong>Vragen stellen</strong>: \"Could you explain what you mean by…?\" / \"Do you mean that…?\" / \"I'm not sure I follow - could you give an example?\"</li><li><strong>Structuur presentatie</strong>: opening (introduce yourself + topic) → kern (3 punten, elk met voorbeeld) → conclusie (samenvatting + eigen mening) → vragen welkom.</li></ul><div class=\"sam-head\">Register en vloeiendheid</div><ul><li><strong>Formeel</strong>: \"I would like to present…\", \"This suggests that…\", geen contracties in formele context.</li><li><strong>Informeel</strong>: \"So basically…\", \"You know what I mean?\", contracties (I'd, you're) OK.</li><li><strong>Vloeiendheid</strong>: gebruik fillers strategisch: \"Well…\", \"Let me think for a moment…\", \"What I'm trying to say is…\". Vermijd lange stiltes.</li><li><strong>Uitspraak tips</strong>: th-klank (think, this), onderscheid tussen short i (sit) en long ee (seat), eindmedeklinkers duidelijk uitspreken.</li></ul>",
     "sv": [
      {
       "v": "How should you structure a short English presentation?",
@@ -34540,7 +34540,7 @@ var VAKKEN = [
       "o": [
        "\"I will keep talking until you interrupt me.\"",
        "\"What do you think about that?\" or \"Do you agree?\"",
-       "\"I'm not finished — let me continue.\"",
+       "\"I'm not finished - let me continue.\"",
        "\"The answer is obvious and I've already explained it.\""
       ],
       "c": 1,
@@ -34555,7 +34555,7 @@ var VAKKEN = [
        "\"You are incorrect. The right answer is…\""
       ],
       "c": 1,
-      "u": "\"While I understand your point…\", \"I see what you're saying, but…\", \"That's a valid argument; however…\" These phrases acknowledge the other speaker before contrasting — a key B1 conversation skill."
+      "u": "\"While I understand your point…\", \"I see what you're saying, but…\", \"That's a valid argument; however…\" These phrases acknowledge the other speaker before contrasting - a key B1 conversation skill."
      },
      {
       "v": "A friend says something in English and you didn't catch it. Which response is most appropriate?",
@@ -34566,7 +34566,7 @@ var VAKKEN = [
        "Say nothing and wait for someone else to answer."
       ],
       "c": 1,
-      "u": "\"I'm sorry, could you repeat that?\" / \"Could you say that a bit more slowly?\" / \"I beg your pardon?\" These are polite clarification requests. Using them demonstrates active communication — not weakness."
+      "u": "\"I'm sorry, could you repeat that?\" / \"Could you say that a bit more slowly?\" / \"I beg your pardon?\" These are polite clarification requests. Using them demonstrates active communication - not weakness."
      },
      {
       "v": "Wat betekent «Fillers»?",
@@ -35180,7 +35180,7 @@ var VAKKEN = [
        ""
       ],
       "c": 0,
-      "u": "Model answer: \"That's a great question. I think there are several practical steps people can take. First of all, planning meals in advance and making a shopping list prevents buying more than you need. Furthermore, storing food correctly — for example, keeping herbs in water like flowers — significantly extends their freshness. Finally, learning to use leftovers creatively, such as making soup from vegetable scraps, can dramatically cut waste. In my opinion, these small habits, if widely adopted, could make a real difference.\""
+      "u": "Model answer: \"That's a great question. I think there are several practical steps people can take. First of all, planning meals in advance and making a shopping list prevents buying more than you need. Furthermore, storing food correctly - for example, keeping herbs in water like flowers - significantly extends their freshness. Finally, learning to use leftovers creatively, such as making soup from vegetable scraps, can dramatically cut waste. In my opinion, these small habits, if widely adopted, could make a real difference.\""
      }
     ],
     "begrippen": [
@@ -35237,7 +35237,7 @@ var VAKKEN = [
    {
     "id": "E",
     "naam": "Schrijfvaardigheid",
-    "beschrijving": "Schrijven in het Engels op B1-niveau — brieven, e-mails, essays en rapporten (SE)",
+    "beschrijving": "Schrijven in het Engels op B1-niveau - brieven, e-mails, essays en rapporten (SE)",
     "onderwerpen": [
      "Formele brief en zakelijke e-mail in het Engels",
      "Informatief artikel schrijven",
@@ -35292,7 +35292,7 @@ var VAKKEN = [
        "Problem, Investigation, Evidence"
       ],
       "c": 1,
-      "u": "PIE = Point (topic sentence/claim), Illustration (example, quote, statistic), Explanation (so what? — link back to your thesis). A standard HAVO essay paragraph follows this structure."
+      "u": "PIE = Point (topic sentence/claim), Illustration (example, quote, statistic), Explanation (so what? - link back to your thesis). A standard HAVO essay paragraph follows this structure."
      },
      {
       "v": "Which sentence uses a correct \"although\" construction?",
@@ -35303,7 +35303,7 @@ var VAKKEN = [
        "The weather was bad although, we went outside."
       ],
       "c": 1,
-      "u": "\"Although + clause, main clause.\" No comma after \"Although\". Do NOT combine \"although\" with \"but\" or \"however\" in the same sentence — that is a double connector error."
+      "u": "\"Although + clause, main clause.\" No comma after \"Although\". Do NOT combine \"although\" with \"but\" or \"however\" in the same sentence - that is a double connector error."
      },
      {
       "v": "Which closing phrase is correct for a formal letter where you know the name?",
@@ -35325,7 +35325,7 @@ var VAKKEN = [
        "To define every difficult word in the essay"
       ],
       "c": 1,
-      "u": "Introduction: (1) engage the reader with a hook, (2) introduce the topic briefly, (3) state your thesis — the main argument that the essay will develop and defend. Without a clear thesis, the reader does not know what to expect."
+      "u": "Introduction: (1) engage the reader with a hook, (2) introduce the topic briefly, (3) state your thesis - the main argument that the essay will develop and defend. Without a clear thesis, the reader does not know what to expect."
      },
      {
       "v": "Which is the correct format for a formal English email opening?",
@@ -35851,7 +35851,7 @@ var VAKKEN = [
    {
     "id": "F",
     "naam": "Literatuur",
-    "beschrijving": "Engelstalige literatuur lezen en analyseren op B1/B2-niveau (SE — schoolexamen)",
+    "beschrijving": "Engelstalige literatuur lezen en analyseren op B1/B2-niveau (SE - schoolexamen)",
     "onderwerpen": [
      "Literaire begrippen in het Engels",
      "Plot, setting, character, theme",
@@ -35862,7 +35862,7 @@ var VAKKEN = [
      "Historische en culturele context",
      "Leeslijst Engelstalige werken"
     ],
-    "sam": "<div class=\"sam-head\">Literaire begrippen (B1/B2)</div><ul><li><strong>Plot</strong>: the sequence of events. Structure: exposition (intro) → rising action → climax (turning point) → falling action → resolution.</li><li><strong>Setting</strong>: time and place of the story. Can reflect mood, theme, or character state. A dark forest = danger/unknown.</li><li><strong>Character</strong>: protagonist (main), antagonist (opposition). Round characters = complex, change; flat characters = one-dimensional. Dynamic = changes through the story; static = stays the same.</li><li><strong>Theme</strong>: the central message or idea — not the plot summary. E.g. \"the destructive power of ambition\" (Macbeth), \"loss of innocence\" (Lord of the Flies).</li><li><strong>Conflict</strong>: man vs. man, man vs. society, man vs. nature, man vs. himself. Conflict drives the plot forward.</li></ul><div class=\"sam-head\">Narratief en stijl</div><ul><li><strong>Narrative perspective</strong>: first person (I — subjective, limited) vs. third person limited (he/she — focuses on one character) vs. third person omniscient (narrator knows all).</li><li><strong>Tone</strong>: the author's attitude to the subject — melancholic, ironic, optimistic, angry, nostalgic.</li><li><strong>Metaphor</strong>: \"Life is a journey.\" Simile: \"She ran like the wind.\" Personification: \"The wind howled.\" Symbolism: an object representing an idea (e.g. green light in Gatsby = hope/the American Dream).</li><li><strong>Imagery</strong>: language that creates a vivid mental picture using the senses.</li></ul><div class=\"sam-head\">Leeslijst tips</div><ul><li>Make notes per chapter: plot summary, character development, quotes, themes.</li><li>Spot literary devices as you read — annotate your copy if allowed.</li><li>Know the historical/cultural context: when was it written? What events influenced it?</li></ul>",
+    "sam": "<div class=\"sam-head\">Literaire begrippen (B1/B2)</div><ul><li><strong>Plot</strong>: the sequence of events. Structure: exposition (intro) → rising action → climax (turning point) → falling action → resolution.</li><li><strong>Setting</strong>: time and place of the story. Can reflect mood, theme, or character state. A dark forest = danger/unknown.</li><li><strong>Character</strong>: protagonist (main), antagonist (opposition). Round characters = complex, change; flat characters = one-dimensional. Dynamic = changes through the story; static = stays the same.</li><li><strong>Theme</strong>: the central message or idea - not the plot summary. E.g. \"the destructive power of ambition\" (Macbeth), \"loss of innocence\" (Lord of the Flies).</li><li><strong>Conflict</strong>: man vs. man, man vs. society, man vs. nature, man vs. himself. Conflict drives the plot forward.</li></ul><div class=\"sam-head\">Narratief en stijl</div><ul><li><strong>Narrative perspective</strong>: first person (I - subjective, limited) vs. third person limited (he/she - focuses on one character) vs. third person omniscient (narrator knows all).</li><li><strong>Tone</strong>: the author's attitude to the subject - melancholic, ironic, optimistic, angry, nostalgic.</li><li><strong>Metaphor</strong>: \"Life is a journey.\" Simile: \"She ran like the wind.\" Personification: \"The wind howled.\" Symbolism: an object representing an idea (e.g. green light in Gatsby = hope/the American Dream).</li><li><strong>Imagery</strong>: language that creates a vivid mental picture using the senses.</li></ul><div class=\"sam-head\">Leeslijst tips</div><ul><li>Make notes per chapter: plot summary, character development, quotes, themes.</li><li>Spot literary devices as you read - annotate your copy if allowed.</li><li>Know the historical/cultural context: when was it written? What events influenced it?</li></ul>",
     "sv": [
      {
       "v": "What is the \"theme\" of a literary work?",
@@ -35895,7 +35895,7 @@ var VAKKEN = [
        "The resolution of the main conflict"
       ],
       "c": 1,
-      "u": "Foreshadowing = early clues that hint at future events. Creates suspense and makes the ending feel inevitable. Example: in Romeo and Juliet, Romeo says \"my grave is like to be my wedding bed\" early on — foreshadowing his death."
+      "u": "Foreshadowing = early clues that hint at future events. Creates suspense and makes the ending feel inevitable. Example: in Romeo and Juliet, Romeo says \"my grave is like to be my wedding bed\" early on - foreshadowing his death."
      },
      {
       "v": "Which literary device is used in: \"The classroom was a zoo\"?",
@@ -35906,13 +35906,13 @@ var VAKKEN = [
        "Alliteration"
       ],
       "c": 1,
-      "u": "\"The classroom was a zoo\" is a metaphor — it directly states one thing IS another (without using \"like/as\"). It implies the classroom was chaotic and noisy. A simile would be: \"The classroom was like a zoo.\""
+      "u": "\"The classroom was a zoo\" is a metaphor - it directly states one thing IS another (without using \"like/as\"). It implies the classroom was chaotic and noisy. A simile would be: \"The classroom was like a zoo.\""
      },
      {
       "v": "In a story, what is the \"climax\"?",
       "o": [
        "The opening scene that introduces the characters",
-       "The turning point of highest tension — the decisive moment",
+       "The turning point of highest tension - the decisive moment",
        "The final paragraph where everything is resolved",
        "A technique for describing characters in detail"
       ],
@@ -35933,9 +35933,9 @@ var VAKKEN = [
      {
       "v": "What does \"first person narrative\" mean and what is its main limitation?",
       "o": [
-       "The narrator knows everything about all characters — no limitation",
-       "The story is told using \"I\" — the narrator can only tell what they personally experience or know",
-       "The story is told in chronological order — so flashbacks are not allowed",
+       "The narrator knows everything about all characters - no limitation",
+       "The story is told using \"I\" - the narrator can only tell what they personally experience or know",
+       "The story is told in chronological order - so flashbacks are not allowed",
        "The narrator is always the author of the book"
       ],
       "c": 1,
@@ -36907,13 +36907,13 @@ var VAKKEN = [
       "jaar": 2023,
       "tijdvak": 1,
       "bron": "HAVO Engels CE 2023 Tijdvak 1 Literatuur tekstanalyse (geen afbeelding)",
-      "ctx": "Read the following short extract:\n\n\"The old house stood at the edge of the village like a forgotten memory — windows cracked, garden choked with weeds, the door permanently ajar as if waiting for someone who would never return.\"",
+      "ctx": "Read the following short extract:\n\n\"The old house stood at the edge of the village like a forgotten memory - windows cracked, garden choked with weeds, the door permanently ajar as if waiting for someone who would never return.\"",
       "v": "(a) Identify two literary devices used in this passage and explain their effect.\n(b) What mood does the setting create? Use evidence from the text.",
       "o": [
        ""
       ],
       "c": 0,
-      "u": "(a) 1. Simile: \"like a forgotten memory\" — compares the house to something intangible, suggesting it is abandoned and no longer part of living memory. Effect: creates a sense of loss and neglect. 2. Personification: \"the door permanently ajar as if waiting for someone\" — gives the house human qualities (expectation, longing). Effect: increases the melancholic, ghostly atmosphere. (b) The setting creates a melancholic, eerie mood. Evidence: \"cracked windows\", \"choked with weeds\", \"someone who would never return\" all suggest abandonment, decay, and unfulfilled waiting."
+      "u": "(a) 1. Simile: \"like a forgotten memory\" - compares the house to something intangible, suggesting it is abandoned and no longer part of living memory. Effect: creates a sense of loss and neglect. 2. Personification: \"the door permanently ajar as if waiting for someone\" - gives the house human qualities (expectation, longing). Effect: increases the melancholic, ghostly atmosphere. (b) The setting creates a melancholic, eerie mood. Evidence: \"cracked windows\", \"choked with weeds\", \"someone who would never return\" all suggest abandonment, decay, and unfulfilled waiting."
      },
      {
       "jaar": 2024,
@@ -36925,7 +36925,7 @@ var VAKKEN = [
        ""
       ],
       "c": 0,
-      "u": "(a) The conflict represents the theme of civilisation vs. savagery (or order vs. chaos). Golding explores the idea that without societal rules, human beings naturally revert to violence and tribalism. Ralph symbolises civilised order; Jack symbolises instinct and power. (b) Ralph is a dynamic character — he starts as a confident, optimistic leader but gradually becomes afraid, desperate and disillusioned as the boys abandon his authority. By the end, he is crying over \"the end of innocence\", showing significant psychological change."
+      "u": "(a) The conflict represents the theme of civilisation vs. savagery (or order vs. chaos). Golding explores the idea that without societal rules, human beings naturally revert to violence and tribalism. Ralph symbolises civilised order; Jack symbolises instinct and power. (b) Ralph is a dynamic character - he starts as a confident, optimistic leader but gradually becomes afraid, desperate and disillusioned as the boys abandon his authority. By the end, he is crying over \"the end of innocence\", showing significant psychological change."
      },
      {
       "jaar": 2022,
@@ -36937,7 +36937,7 @@ var VAKKEN = [
        ""
       ],
       "c": 0,
-      "u": "Model (using \"The Outsiders\" by S.E. Hinton): (a) \"The Outsiders\" by S.E. Hinton. The main theme is class conflict and the search for identity — Ponyboy struggles with his identity as a working-class \"greaser\" in a society that judges him by his background. (b) The author uses first-person narrative (Ponyboy is the narrator). This makes the reader sympathise with his perspective and understand his vulnerability and confusion. We only see what Ponyboy sees and feels, which makes his emotional journey very immediate and personal."
+      "u": "Model (using \"The Outsiders\" by S.E. Hinton): (a) \"The Outsiders\" by S.E. Hinton. The main theme is class conflict and the search for identity - Ponyboy struggles with his identity as a working-class \"greaser\" in a society that judges him by his background. (b) The author uses first-person narrative (Ponyboy is the narrator). This makes the reader sympathise with his perspective and understand his vulnerability and confusion. We only see what Ponyboy sees and feels, which makes his emotional journey very immediate and personal."
      }
     ],
     "begrippen": [
@@ -37031,7 +37031,7 @@ var VAKKEN = [
   "code": "GS",
   "kleur": "#92400E",
   "beschrijving": "Historisch overzicht en historische contexten op HAVO-niveau.",
-  "ceInfo": "⭐ Domein B (Oriëntatiekennis — de tien tijdvakken) is veruit het belangrijkste voor het centraal examen: dáár gaat het CE vooral over, dus besteed hier de meeste oefentijd aan. Domein A (Historisch besef) levert de denkvaardigheden en bronnenkennis die je daarbij toepast. De domeinen C, D en E zijn uitsluitend schoolexamen (SE).",
+  "ceInfo": "⭐ Domein B (Oriëntatiekennis - de tien tijdvakken) is veruit het belangrijkste voor het centraal examen: dáár gaat het CE vooral over, dus besteed hier de meeste oefentijd aan. Domein A (Historisch besef) levert de denkvaardigheden en bronnenkennis die je daarbij toepast. De domeinen C, D en E zijn uitsluitend schoolexamen (SE).",
   "exDatum": "2026-05-12",
   "exTijd": "09:00–12:00",
   "exDuur": "3 uur",
@@ -37042,12 +37042,12 @@ var VAKKEN = [
    {
     "id": "A",
     "naam": "Historisch besef",
-    "beschrijving": "Historisch redeneren, tijdsbesef, bronnen en standplaatsgebondenheid — CE-vaardigheden A1–A7",
+    "beschrijving": "Historisch redeneren, tijdsbesef, bronnen en standplaatsgebondenheid - CE-vaardigheden A1–A7",
     "ceStatus": "CE+SE",
     "binas": [],
     "val": [
-     "Aanleiding en oorzaak door elkaar halen — aanleiding is de directe vonk, oorzaak is de structurele factor",
-     "Primaire bronnen als automatisch betrouwbaar beschouwen — elke bron vereist bronkritiek",
+     "Aanleiding en oorzaak door elkaar halen - aanleiding is de directe vonk, oorzaak is de structurele factor",
+     "Primaire bronnen als automatisch betrouwbaar beschouwen - elke bron vereist bronkritiek",
      "Anachronisme begaan: mensen uit het verleden beoordelen met hedendaagse normen"
     ],
     "onderwerpen": [
@@ -37059,7 +37059,7 @@ var VAKKEN = [
      "A6 Oorzaken en gevolgen",
      "A7 Feiten, meningen, standplaatsgebondenheid"
     ],
-    "sam": "<div class=\"sam-head\">A1 Chronologie en tijdsindeling</div><ul><li><strong>Eeuwen</strong>: de 18e eeuw = 1700–1799. Vuistregel: eerste twee cijfers + 1 = de eeuw. 1756 → 18e eeuw. v.C. telt terug: hoe ouder, hoe groter het getal.</li><li><strong>Tijdsbegrippen</strong>: decade (10 jaar), eeuw (100), millennium (1000). Eerste helft vs. tweede helft van een eeuw.</li></ul><div class=\"sam-head\">A2 Tijdvakken en periodisering</div><ul><li><strong>Tien tijdvakken</strong>: van Jagers en boeren (t/m 3000 v.C.) tot Televisie en computer (1950–heden). Ken naam, tijdgrens en kenmerkende aspecten.</li><li><strong>Periodisering is een keuze</strong>: historici bepalen zelf wanneer een periode begint en eindigt — er is geen absolute natuur achter de indeling.</li></ul><div class=\"sam-head\">A3 Continuïteit en verandering</div><ul><li><strong>Continuïteit</strong>: wat bleef gelijk? Bijv. na de Franse Revolutie verdween de monarchie tijdelijk maar sociale ongelijkheid bleef grotendeels intact.</li><li><strong>Verandering</strong>: wat veranderde en hoe snel? Geleidelijk (evolutie) of snel (revolutie)?</li><li>Historici zoeken altijd de spanning tussen continuïteit en verandering.</li></ul><div class=\"sam-head\">A4 Historische betekenis</div><ul><li><strong>Definitie</strong>: hoe belangrijk was een gebeurtenis voor latere ontwikkelingen? Criteria: omvang, duur, diepgang, symbolische waarde.</li><li>Bijv. Reformatie (1517): enorme historische betekenis — religieuze, politieke en culturele gevolgen voor heel Europa.</li></ul><div class=\"sam-head\">A5 Bronnen en onderzoek</div><ul><li><strong>Primaire bron</strong>: gemaakt in de historische periode — dagboek, toespraak, propagandaposter, wet. De maker heeft een standpunt en belang.</li><li><strong>Secundaire bron</strong>: gemaakt ná de periode op basis van primaire bronnen — schoolboek, historische studie, documentaire.</li><li><strong>Bronkritiek</strong>: wie maakte het? Waarom? Voor welk publiek? Wat wordt gezegd — en wat wordt verzwegen (lacune)?</li><li><strong>Multiperspectiviteit</strong>: dezelfde gebeurtenis werd door verschillende actoren anders beleefd. Bijv. VOC: voor Nederlanders handelsgeest, voor Indonesiërs koloniale uitbuiting.</li></ul><div class=\"sam-head\">A6 Oorzaken en gevolgen</div><ul><li><strong>Aanleiding vs. oorzaak</strong>: aanleiding = directe vonk (moord Franz Ferdinand); structurele oorzaak = diepere factor al langer aanwezig (nationalisme, imperialisme).</li><li><strong>Korte vs. lange termijn</strong>: korte termijn = direct merkbaar; lange termijn = pas later zichtbaar.</li><li><strong>Intentie en gevolg</strong>: wat wilde de acteur? Wat was het werkelijke resultaat? Soms onbedoelde gevolgen.</li></ul><div class=\"sam-head\">A7 Feiten, meningen, standplaatsgebondenheid</div><ul><li><strong>Feit</strong>: controleerbaar en verifieerbaar. Bijv. \"De Reformatie begon in 1517.\"</li><li><strong>Mening/interpretatie</strong>: een oordeel of perspectief van een historicus of actor.</li><li><strong>Standplaatsgebondenheid</strong>: de positie, tijd en cultuur van een historicus beïnvloeden zijn vragen, bronkeuze en interpretatie.</li><li><strong>Anachronisme</strong>: iets uit een latere tijd terugprojecteren op het verleden. Bijv. middeleeuwers beoordelen op 21e-eeuwse mensenrechten.</li></ul>",
+    "sam": "<div class=\"sam-head\">A1 Chronologie en tijdsindeling</div><ul><li><strong>Eeuwen</strong>: de 18e eeuw = 1700–1799. Vuistregel: eerste twee cijfers + 1 = de eeuw. 1756 → 18e eeuw. v.C. telt terug: hoe ouder, hoe groter het getal.</li><li><strong>Tijdsbegrippen</strong>: decade (10 jaar), eeuw (100), millennium (1000). Eerste helft vs. tweede helft van een eeuw.</li></ul><div class=\"sam-head\">A2 Tijdvakken en periodisering</div><ul><li><strong>Tien tijdvakken</strong>: van Jagers en boeren (t/m 3000 v.C.) tot Televisie en computer (1950–heden). Ken naam, tijdgrens en kenmerkende aspecten.</li><li><strong>Periodisering is een keuze</strong>: historici bepalen zelf wanneer een periode begint en eindigt - er is geen absolute natuur achter de indeling.</li></ul><div class=\"sam-head\">A3 Continuïteit en verandering</div><ul><li><strong>Continuïteit</strong>: wat bleef gelijk? Bijv. na de Franse Revolutie verdween de monarchie tijdelijk maar sociale ongelijkheid bleef grotendeels intact.</li><li><strong>Verandering</strong>: wat veranderde en hoe snel? Geleidelijk (evolutie) of snel (revolutie)?</li><li>Historici zoeken altijd de spanning tussen continuïteit en verandering.</li></ul><div class=\"sam-head\">A4 Historische betekenis</div><ul><li><strong>Definitie</strong>: hoe belangrijk was een gebeurtenis voor latere ontwikkelingen? Criteria: omvang, duur, diepgang, symbolische waarde.</li><li>Bijv. Reformatie (1517): enorme historische betekenis - religieuze, politieke en culturele gevolgen voor heel Europa.</li></ul><div class=\"sam-head\">A5 Bronnen en onderzoek</div><ul><li><strong>Primaire bron</strong>: gemaakt in de historische periode - dagboek, toespraak, propagandaposter, wet. De maker heeft een standpunt en belang.</li><li><strong>Secundaire bron</strong>: gemaakt ná de periode op basis van primaire bronnen - schoolboek, historische studie, documentaire.</li><li><strong>Bronkritiek</strong>: wie maakte het? Waarom? Voor welk publiek? Wat wordt gezegd - en wat wordt verzwegen (lacune)?</li><li><strong>Multiperspectiviteit</strong>: dezelfde gebeurtenis werd door verschillende actoren anders beleefd. Bijv. VOC: voor Nederlanders handelsgeest, voor Indonesiërs koloniale uitbuiting.</li></ul><div class=\"sam-head\">A6 Oorzaken en gevolgen</div><ul><li><strong>Aanleiding vs. oorzaak</strong>: aanleiding = directe vonk (moord Franz Ferdinand); structurele oorzaak = diepere factor al langer aanwezig (nationalisme, imperialisme).</li><li><strong>Korte vs. lange termijn</strong>: korte termijn = direct merkbaar; lange termijn = pas later zichtbaar.</li><li><strong>Intentie en gevolg</strong>: wat wilde de acteur? Wat was het werkelijke resultaat? Soms onbedoelde gevolgen.</li></ul><div class=\"sam-head\">A7 Feiten, meningen, standplaatsgebondenheid</div><ul><li><strong>Feit</strong>: controleerbaar en verifieerbaar. Bijv. \"De Reformatie begon in 1517.\"</li><li><strong>Mening/interpretatie</strong>: een oordeel of perspectief van een historicus of actor.</li><li><strong>Standplaatsgebondenheid</strong>: de positie, tijd en cultuur van een historicus beïnvloeden zijn vragen, bronkeuze en interpretatie.</li><li><strong>Anachronisme</strong>: iets uit een latere tijd terugprojecteren op het verleden. Bijv. middeleeuwers beoordelen op 21e-eeuwse mensenrechten.</li></ul>",
     "sv": [
      {
       "v": "Welke eeuw hoort bij het jaartal 1756?",
@@ -37103,7 +37103,7 @@ var VAKKEN = [
        "de naam van de belangrijkste betrokken historische persoon"
       ],
       "c": 0,
-      "u": "Historische betekenis: impact op latere ontwikkelingen. Criteria: omvang, duur, diepgang, symbolische waarde. Bijv. Reformatie (1517): enorme betekenis — religieuze, politieke en culturele gevolgen voor heel Europa."
+      "u": "Historische betekenis: impact op latere ontwikkelingen. Criteria: omvang, duur, diepgang, symbolische waarde. Bijv. Reformatie (1517): enorme betekenis - religieuze, politieke en culturele gevolgen voor heel Europa."
      },
      {
       "v": "Wat is het onderscheid tussen primaire en secundaire bron?",
@@ -37114,7 +37114,7 @@ var VAKKEN = [
        "secundaire bronnen zijn alleen nuttig voor de recente geschiedenis"
       ],
       "c": 0,
-      "u": "Primair: dagboek, toespraak, wet — gemaakt door tijdgenoot. Secundair: schoolboek, historische studie — gemaakt ná de gebeurtenis. Primaire bronnen zijn niet automatisch betrouwbaarder; beide vereisen bronkritiek."
+      "u": "Primair: dagboek, toespraak, wet - gemaakt door tijdgenoot. Secundair: schoolboek, historische studie - gemaakt ná de gebeurtenis. Primaire bronnen zijn niet automatisch betrouwbaarder; beide vereisen bronkritiek."
      },
      {
       "v": "Een historicus bekijkt een propagandaposter. Welke vraag stelt hij als eerste bij bronkritiek?",
@@ -37147,7 +37147,7 @@ var VAKKEN = [
        "het gevolg staat al vast zodra de intentie bekend is geworden"
       ],
       "c": 0,
-      "u": "Intentie en gevolg kunnen sterk afwijken. Napoleon wilde een stabiel Europa; het gevolg was dat zijn veroveringen het nationalisme aanwakkerden — wat zijn eigen ondergang versnelde."
+      "u": "Intentie en gevolg kunnen sterk afwijken. Napoleon wilde een stabiel Europa; het gevolg was dat zijn veroveringen het nationalisme aanwakkerden - wat zijn eigen ondergang versnelde."
      },
      {
       "v": "Wat betekent standplaatsgebondenheid in historisch onderzoek?",
@@ -38141,13 +38141,13 @@ var VAKKEN = [
    {
     "id": "B",
     "naam": "Oriëntatiekennis",
-    "beschrijving": "⭐ Veruit het belangrijkste domein voor het centraal examen. De tien tijdvakken van de westerse geschiedenis vormen de kern van de CE-stof — besteed hier de meeste oefentijd aan.",
+    "beschrijving": "⭐ Veruit het belangrijkste domein voor het centraal examen. De tien tijdvakken van de westerse geschiedenis vormen de kern van de CE-stof - besteed hier de meeste oefentijd aan.",
     "ceStatus": "CE-KERN",
     "binas": [],
     "val": [
-     "Tijdvakken door elkaar halen — leer naam, tijdgrens én kenmerkend aspect per tijdvak",
-     "Tijdvakken 1–4 studeren voor het CE — die zijn alleen SE-stof",
-     "Periodisering als vaststaand feit zien — het is een bewuste keuze van historici"
+     "Tijdvakken door elkaar halen - leer naam, tijdgrens én kenmerkend aspect per tijdvak",
+     "Tijdvakken 1–4 studeren voor het CE - die zijn alleen SE-stof",
+     "Periodisering als vaststaand feit zien - het is een bewuste keuze van historici"
     ],
     "onderwerpen": [
      "B1 Tijdvak 1",
@@ -38161,7 +38161,7 @@ var VAKKEN = [
      "B9 Tijdvak 9",
      "B10 Tijdvak 10"
     ],
-    "sam": "<div class=\"sam-head\">Vroege tijdvakken (1–4)</div><ul><li><strong>Tijdvak 1 – Jagers en boeren (tot 3000 v.C.)</strong>: de neolithische revolutie — overgang van nomadisch jagen/verzamelen naar landbouw en vaste nederzettingen; eerste staatsvorming en beschavingen (Mesopotamië, Egypte)</li><li><strong>Tijdvak 2 – Grieken en Romeinen (3000 v.C.–500)</strong>: Griekse democratie in Athene, Grieks-Perzische oorlogen, Hellenisme; Romeinse Republiek en Keizerrijk, verspreiding van het christendom, val van Rome</li><li><strong>Tijdvak 3 – Monniken en ridders (500–1000)</strong>: feodalisme en hofstelsel; verspreiding christendom (missionarissen) en islam; Karel de Grote en het Frankische Rijk; vikingen en invallen</li><li><strong>Tijdvak 4 – Stedelingen en handelaren (1000–1500)</strong>: opkomst van steden en gilden, groei van handel; kruistochten; scholastiek en universiteiten; pest en bevolkingsterugval</li></ul><div class=\"sam-head\">Vroegmoderne tijdvakken (5–6)</div><ul><li><strong>Tijdvak 5 – Ontdekkers en hervormers (1500–1600)</strong>: Renaissance (humanisme, kunst); Reformatie: Luther (1517, 95 stellingen), Calvijn; ontdekkingsreizen van Portugal en Spanje; kolonisatie Amerika</li><li><strong>Tijdvak 6 – Regenten en vorsten (1600–1700)</strong>: absolutisme — Lodewijk XIV (\"L'état c'est moi\"); wetenschappelijke revolutie (Galileo, Newton); Gouden Eeuw Republiek — VOC, handel, kunst</li></ul><div class=\"sam-head\">Moderne tijdvakken (7–10)</div><ul><li><strong>Tijdvak 7 – Pruiken en revoluties (1700–1800)</strong>: Verlichting — rede boven traditie (Voltaire, Rousseau, Montesquieu); Amerikaanse Revolutie (1776); Franse Revolutie (1789) — vrijheid, gelijkheid, broederschap; einde standenmaatschappij</li><li><strong>Tijdvak 8 – Burgers en stoommachines (1800–1900)</strong>: Industriële Revolutie — stoommachine, fabrieksarbeid, urbanisatie; opkomst socialisme en liberalisme; nationalisme en natievorming; kolonialisme en imperialisme in Afrika/Azië</li><li><strong>Tijdvak 9 – Wereldoorlogen (1900–1950)</strong>: WO I — loopgravenoorlog, massavernietiging; interbellum — economische crisis, opkomst fascisme (Mussolini) en nationaalsocialisme (Hitler); WO II — Holocaust, atoombom, bevrijding</li><li><strong>Tijdvak 10 – Televisie en computer (1950–heden)</strong>: Koude Oorlog — VS vs. Sovjet-Unie, NAVO vs. Warschaupact; dekolonisatie van Azië en Afrika; Europese eenwording (EU); val Berlijnse Muur (1989); globalisering en informatietijdperk</li></ul>",
+    "sam": "<div class=\"sam-head\">Vroege tijdvakken (1–4)</div><ul><li><strong>Tijdvak 1 – Jagers en boeren (tot 3000 v.C.)</strong>: de neolithische revolutie - overgang van nomadisch jagen/verzamelen naar landbouw en vaste nederzettingen; eerste staatsvorming en beschavingen (Mesopotamië, Egypte)</li><li><strong>Tijdvak 2 – Grieken en Romeinen (3000 v.C.–500)</strong>: Griekse democratie in Athene, Grieks-Perzische oorlogen, Hellenisme; Romeinse Republiek en Keizerrijk, verspreiding van het christendom, val van Rome</li><li><strong>Tijdvak 3 – Monniken en ridders (500–1000)</strong>: feodalisme en hofstelsel; verspreiding christendom (missionarissen) en islam; Karel de Grote en het Frankische Rijk; vikingen en invallen</li><li><strong>Tijdvak 4 – Stedelingen en handelaren (1000–1500)</strong>: opkomst van steden en gilden, groei van handel; kruistochten; scholastiek en universiteiten; pest en bevolkingsterugval</li></ul><div class=\"sam-head\">Vroegmoderne tijdvakken (5–6)</div><ul><li><strong>Tijdvak 5 – Ontdekkers en hervormers (1500–1600)</strong>: Renaissance (humanisme, kunst); Reformatie: Luther (1517, 95 stellingen), Calvijn; ontdekkingsreizen van Portugal en Spanje; kolonisatie Amerika</li><li><strong>Tijdvak 6 – Regenten en vorsten (1600–1700)</strong>: absolutisme - Lodewijk XIV (\"L'état c'est moi\"); wetenschappelijke revolutie (Galileo, Newton); Gouden Eeuw Republiek - VOC, handel, kunst</li></ul><div class=\"sam-head\">Moderne tijdvakken (7–10)</div><ul><li><strong>Tijdvak 7 – Pruiken en revoluties (1700–1800)</strong>: Verlichting - rede boven traditie (Voltaire, Rousseau, Montesquieu); Amerikaanse Revolutie (1776); Franse Revolutie (1789) - vrijheid, gelijkheid, broederschap; einde standenmaatschappij</li><li><strong>Tijdvak 8 – Burgers en stoommachines (1800–1900)</strong>: Industriële Revolutie - stoommachine, fabrieksarbeid, urbanisatie; opkomst socialisme en liberalisme; nationalisme en natievorming; kolonialisme en imperialisme in Afrika/Azië</li><li><strong>Tijdvak 9 – Wereldoorlogen (1900–1950)</strong>: WO I - loopgravenoorlog, massavernietiging; interbellum - economische crisis, opkomst fascisme (Mussolini) en nationaalsocialisme (Hitler); WO II - Holocaust, atoombom, bevrijding</li><li><strong>Tijdvak 10 – Televisie en computer (1950–heden)</strong>: Koude Oorlog - VS vs. Sovjet-Unie, NAVO vs. Warschaupact; dekolonisatie van Azië en Afrika; Europese eenwording (EU); val Berlijnse Muur (1989); globalisering en informatietijdperk</li></ul>",
     "sv": [
      {
       "v": "Welk tijdvak (1500–1600) kenmerkte zich door de Reformatie en de ontdekkingsreizen?",
@@ -38172,7 +38172,7 @@ var VAKKEN = [
        "Tijdvak 7: Pruiken en revoluties"
       ],
       "c": 0,
-      "u": "Tijdvak 5 (1500–1600): Luther (1517 — 95 stellingen), Calvijn, en de Reformatie. Ontdekkingsreizen van Portugal en Spanje naar Amerika en Azië. Columbus (1492), Magellaan (1519–1522)."
+      "u": "Tijdvak 5 (1500–1600): Luther (1517 - 95 stellingen), Calvijn, en de Reformatie. Ontdekkingsreizen van Portugal en Spanje naar Amerika en Azië. Columbus (1492), Magellaan (1519–1522)."
      },
      {
       "v": "Welk begrip beschrijft een staatsvorm waarbij alle macht bij de vorst is geconcentreerd zonder parlementaire controle?",
@@ -41718,7 +41718,7 @@ var VAKKEN = [
        ""
       ],
       "c": 0,
-      "u": "Uit het affiche blijkt dat de opstand gewelddadig en zonder genade werd neergeslagen. Dat leidde bij het Britse publiek tot meer medelijden met de slaafgemaakten en het besef dat de slavernij onhoudbaar was — waardoor de steun voor de afschaffing toenam."
+      "u": "Uit het affiche blijkt dat de opstand gewelddadig en zonder genade werd neergeslagen. Dat leidde bij het Britse publiek tot meer medelijden met de slaafgemaakten en het besef dat de slavernij onhoudbaar was - waardoor de steun voor de afschaffing toenam."
      },
      {
       "bron": "HAVO Geschiedenis CE 2024 Tijdvak 1 (vraag 14)",
@@ -41748,7 +41748,7 @@ var VAKKEN = [
        ""
       ],
       "c": 0,
-      "u": "De Ostpolitik wilde de relatie tussen de BRD en de DDR/het Oostblok verbeteren. Door Ulbricht (een tegenstander) te vervangen door een voorstander, koos de Sovjet-Unie voor ontspanning tussen de ideologische blokken — precies wat tijdens de détente werd nagestreefd."
+      "u": "De Ostpolitik wilde de relatie tussen de BRD en de DDR/het Oostblok verbeteren. Door Ulbricht (een tegenstander) te vervangen door een voorstander, koos de Sovjet-Unie voor ontspanning tussen de ideologische blokken - precies wat tijdens de détente werd nagestreefd."
      },
      {
       "bron": "HAVO Geschiedenis CE 2024 Tijdvak 1 (vraag 26)",
@@ -42153,17 +42153,17 @@ var VAKKEN = [
    {
     "id": "C",
     "naam": "Thema's",
-    "beschrijving": "Schoolkeuzethema's nader uitgewerkt door de school — uitsluitend SE-onderdeel",
+    "beschrijving": "Schoolkeuzethema's nader uitgewerkt door de school - uitsluitend SE-onderdeel",
     "ceStatus": "SE",
     "binas": [],
     "val": [
-     "Thema's als CE-stof beschouwen — dit domein is uitsluitend SE",
-     "Schoolthema vergeten te leren — de school bepaalt zelf welke thema's worden behandeld"
+     "Thema's als CE-stof beschouwen - dit domein is uitsluitend SE",
+     "Schoolthema vergeten te leren - de school bepaalt zelf welke thema's worden behandeld"
     ],
     "onderwerpen": [
      "C1 Thema's (schoolkeuze)"
     ],
-    "sam": "<div class=\"sam-head\">Thema's — SE-stof</div><ul><li><strong>C1 Schoolkeuzethema's</strong>: de school kiest zelf welke historische thema's worden behandeld. Dit domein wordt uitsluitend getoetst via het schoolexamen (SE), niet via het centraal examen (CE).</li><li><strong>Thema's variëren per school</strong>: raadpleeg het PTA (Programma van Toetsing en Afsluiting) voor de thema's die op jouw school worden behandeld.</li></ul><div class=\"sam-onthoud\">Domein C is uitsluitend SE-stof. De school bepaalt de invulling via het PTA.</div>",
+    "sam": "<div class=\"sam-head\">Thema's - SE-stof</div><ul><li><strong>C1 Schoolkeuzethema's</strong>: de school kiest zelf welke historische thema's worden behandeld. Dit domein wordt uitsluitend getoetst via het schoolexamen (SE), niet via het centraal examen (CE).</li><li><strong>Thema's variëren per school</strong>: raadpleeg het PTA (Programma van Toetsing en Afsluiting) voor de thema's die op jouw school worden behandeld.</li></ul><div class=\"sam-onthoud\">Domein C is uitsluitend SE-stof. De school bepaalt de invulling via het PTA.</div>",
     "sv": [
      {
       "v": "Wat is het doel van thematisch geschiedenisonderwijs?",
@@ -42179,10 +42179,10 @@ var VAKKEN = [
      {
       "v": "Vanaf welke periode werd nationalisme een krachtige politieke beweging in Europa?",
       "o": [
-       "19e eeuw — tijdvak 8: Burgers en stoommachines",
-       "17e eeuw — tijdvak 6: Regenten en vorsten",
-       "15e eeuw — tijdvak 4: Stedelingen en handelaren",
-       "Middeleeuwen — tijdvak 3: Monniken en ridders"
+       "19e eeuw - tijdvak 8: Burgers en stoommachines",
+       "17e eeuw - tijdvak 6: Regenten en vorsten",
+       "15e eeuw - tijdvak 4: Stedelingen en handelaren",
+       "Middeleeuwen - tijdvak 3: Monniken en ridders"
       ],
       "c": 0,
       "u": "Nationalisme groeide sterk in de 19e eeuw (tijdvak 8). De Verlichting (volkssoevereiniteit) en de Franse Revolutie legden de basis. Bijv. de eenwording van Italië en Duitsland (1871) zijn resultaten van nationalistisch streven."
@@ -42832,7 +42832,7 @@ var VAKKEN = [
     ],
     "oe": [
      {
-      "bron": "Thema's — schoolkeuzethema (geen afbeelding)",
+      "bron": "Thema's - schoolkeuzethema (geen afbeelding)",
       "ctx": "Het domein Thema's wordt per school ingevuld. De school kiest thema's die aansluiten bij de historische contexten uit het examenprogramma.",
       "v": "(a) Leg uit waarom domein C (Thema's) per school kan verschillen.\n(b) Hoe kun je je het beste voorbereiden op de SE-toetsen voor domein C?",
       "o": [
@@ -42842,7 +42842,7 @@ var VAKKEN = [
       "u": "(a) De overheid geeft scholen keuzevrijheid voor dit domein. Elke school kiest eigen thema's passend bij de lesmethode en lokale context.\n(b) Raadpleeg het PTA van jouw school voor de specifieke thema's. Maak gebruik van de samenvattingen en oefenmateriaal die jouw school verstrekt."
      },
      {
-      "bron": "Thema's — historische context (geen afbeelding)",
+      "bron": "Thema's - historische context (geen afbeelding)",
       "ctx": "Thema's in het geschiedenisonderwijs verbinden historische perioden met actuele vraagstukken.",
       "v": "(a) Welk voordeel heeft thematisch geschiedenisonderwijs ten opzichte van chronologisch onderwijs?\n(b) Noem een voorbeeld van een thema dat zowel bij tijdvak 6 als tijdvak 9 past.",
       "o": [
@@ -42852,7 +42852,7 @@ var VAKKEN = [
       "u": "(a) Thematisch onderwijs helpt verbanden te zien tussen verschillende perioden. Leerlingen oefenen historisch redeneren door vergelijking van perioden.\n(b) Voorbeelden: nationalisme (opkomst in tijdvak 6–7, extreem in tijdvak 9), macht en onmacht van de staat."
      },
      {
-      "bron": "Thema's — SE-voorbereiding (geen afbeelding)",
+      "bron": "Thema's - SE-voorbereiding (geen afbeelding)",
       "ctx": "Het schoolexamen (SE) voor domein C test of leerlingen de door de school gekozen thema's beheersen.",
       "v": "Beschrijf de aanpak die je gebruikt om je voor te bereiden op een SE-toets over een historisch thema.",
       "o": [
@@ -42916,19 +42916,19 @@ var VAKKEN = [
    {
     "id": "D",
     "naam": "Rechtsstaat & parlementaire democratie",
-    "beschrijving": "Beginselen van de rechtsstaat en het functioneren van de parlementaire democratie — uitsluitend SE",
+    "beschrijving": "Beginselen van de rechtsstaat en het functioneren van de parlementaire democratie - uitsluitend SE",
     "ceStatus": "SE",
     "binas": [],
     "val": [
-     "Rechtsstaat en democratie als hetzelfde beschouwen — een rechtsstaat is over rechten, democratie over bestuur",
-     "Trias politica vergeten toe te passen bij voorbeelden — toets altijd: wetgevend, uitvoerend of rechterlijk?",
-     "Machtenscheiding als volledig absoluut zien — er zijn checks and balances, geen totale scheiding"
+     "Rechtsstaat en democratie als hetzelfde beschouwen - een rechtsstaat is over rechten, democratie over bestuur",
+     "Trias politica vergeten toe te passen bij voorbeelden - toets altijd: wetgevend, uitvoerend of rechterlijk?",
+     "Machtenscheiding als volledig absoluut zien - er zijn checks and balances, geen totale scheiding"
     ],
     "onderwerpen": [
      "D1 Beginselen van de rechtsstaat",
      "D2 Parlementaire democratie in Nederland"
     ],
-    "sam": "<div class=\"sam-head\">D1 Beginselen van de rechtsstaat</div><ul><li><strong>Rechtsstaat</strong>: een staat waarin de macht van de overheid wordt beperkt door het recht. Burgers hebben rechten die de overheid moet respecteren.</li><li><strong>Kernbeginselen</strong>: grondrechten (vrijheid van meningsuiting, godsdienst, privacy), legaliteitsbeginsel (overheid handelt alleen op basis van wettige grondslag), rechtsgelijkheid (iedereen gelijk voor de wet), onafhankelijke rechterlijke macht.</li><li><strong>Trias politica (Montesquieu)</strong>: scheiding van machten in drie takken — wetgevende macht (Staten-Generaal: wetten maken), uitvoerende macht (regering: wetten uitvoeren), rechterlijke macht (rechtbanken: recht spreken).</li></ul><div class=\"sam-head\">D2 Parlementaire democratie</div><ul><li><strong>Democratie</strong>: de bevolking kiest haar vertegenwoordigers via vrije verkiezingen.</li><li><strong>Parlementair stelsel</strong>: de regering is verantwoording verschuldigd aan het parlement. Motie van wantrouwen kan kabinet doen vallen.</li><li><strong>Grondwet</strong>: de hoogste wet van het land. Beschermt grondrechten en regelt staatsinrichting.</li></ul><div class=\"sam-onthoud\">Trias politica = machtenscheiding (Montesquieu). Rechtsstaat = overheid gebonden aan recht. Parlementair stelsel = regering verantwoordelijk aan parlement.</div>",
+    "sam": "<div class=\"sam-head\">D1 Beginselen van de rechtsstaat</div><ul><li><strong>Rechtsstaat</strong>: een staat waarin de macht van de overheid wordt beperkt door het recht. Burgers hebben rechten die de overheid moet respecteren.</li><li><strong>Kernbeginselen</strong>: grondrechten (vrijheid van meningsuiting, godsdienst, privacy), legaliteitsbeginsel (overheid handelt alleen op basis van wettige grondslag), rechtsgelijkheid (iedereen gelijk voor de wet), onafhankelijke rechterlijke macht.</li><li><strong>Trias politica (Montesquieu)</strong>: scheiding van machten in drie takken - wetgevende macht (Staten-Generaal: wetten maken), uitvoerende macht (regering: wetten uitvoeren), rechterlijke macht (rechtbanken: recht spreken).</li></ul><div class=\"sam-head\">D2 Parlementaire democratie</div><ul><li><strong>Democratie</strong>: de bevolking kiest haar vertegenwoordigers via vrije verkiezingen.</li><li><strong>Parlementair stelsel</strong>: de regering is verantwoording verschuldigd aan het parlement. Motie van wantrouwen kan kabinet doen vallen.</li><li><strong>Grondwet</strong>: de hoogste wet van het land. Beschermt grondrechten en regelt staatsinrichting.</li></ul><div class=\"sam-onthoud\">Trias politica = machtenscheiding (Montesquieu). Rechtsstaat = overheid gebonden aan recht. Parlementair stelsel = regering verantwoordelijk aan parlement.</div>",
     "sv": [
      {
       "v": "Wat is de kerndefinitie van een rechtsstaat?",
@@ -42939,7 +42939,7 @@ var VAKKEN = [
        "Een staat zonder grondwet maar met gewoonterecht"
       ],
       "c": 0,
-      "u": "Rechtsstaat: de overheid handelt alleen op basis van wettige grondslag. Burgers hebben rechten die de overheid moet respecteren — ook de staat zelf is aan het recht gebonden. Kernwoord: geen willekeur."
+      "u": "Rechtsstaat: de overheid handelt alleen op basis van wettige grondslag. Burgers hebben rechten die de overheid moet respecteren - ook de staat zelf is aan het recht gebonden. Kernwoord: geen willekeur."
      },
      {
       "v": "Wat beschrijft de trias politica van Montesquieu?",
@@ -42988,10 +42988,10 @@ var VAKKEN = [
      {
       "v": "Welk artikel van de Nederlandse Grondwet bevat het gelijkheidsbeginsel?",
       "o": [
-       "artikel 1 — het discriminatieverbod en gelijkheid voor de wet",
-       "artikel 6 — de vrijheid van godsdienst en levensovertuiging",
-       "artikel 7 — de vrijheid van meningsuiting en drukpers",
-       "artikel 10 — het recht op bescherming van de privacy"
+       "artikel 1 - het discriminatieverbod en gelijkheid voor de wet",
+       "artikel 6 - de vrijheid van godsdienst en levensovertuiging",
+       "artikel 7 - de vrijheid van meningsuiting en drukpers",
+       "artikel 10 - het recht op bescherming van de privacy"
       ],
       "c": 0,
       "u": "Artikel 1 Grondwet: allen die zich in Nederland bevinden worden gelijk behandeld. Discriminatie op grond van godsdienst, levensovertuiging, politieke gezindheid, ras, geslacht of andere gronden is niet toegestaan."
@@ -43005,10 +43005,10 @@ var VAKKEN = [
        "Gewone wetten gelden voor burgers; de Grondwet geldt uitsluitend voor de overheid"
       ],
       "c": 0,
-      "u": "De Grondwet is de hoogste rechtsnorm: wetten die ermee in strijd zijn zijn ongeldig. Wijziging vereist twee parlementaire lezingen met tussenliggende verkiezingen — bewust complex om grondrechten te beschermen."
+      "u": "De Grondwet is de hoogste rechtsnorm: wetten die ermee in strijd zijn zijn ongeldig. Wijziging vereist twee parlementaire lezingen met tussenliggende verkiezingen - bewust complex om grondrechten te beschermen."
      },
      {
-      "v": "Welk begrip beschrijft dat iedereen — rijk of arm, machtig of niet — gelijk is voor de rechter?",
+      "v": "Welk begrip beschrijft dat iedereen - rijk of arm, machtig of niet - gelijk is voor de rechter?",
       "o": [
        "Rechtsgelijkheid",
        "Legaliteitsbeginsel",
@@ -43597,7 +43597,7 @@ var VAKKEN = [
     ],
     "oe": [
      {
-      "bron": "Rechtsstaat & democratie — SE (geen afbeelding)",
+      "bron": "Rechtsstaat & democratie - SE (geen afbeelding)",
       "ctx": "In Nederland zijn de wetgevende, uitvoerende en rechterlijke macht gescheiden. Dit principe, de trias politica, is bedacht door Montesquieu.",
       "v": "(a) Beschrijf de drie machten van de trias politica in het Nederlandse staatsstelsel.\n(b) Leg uit waarom machtenscheiding belangrijk is voor een rechtsstaat.",
       "o": [
@@ -43607,17 +43607,17 @@ var VAKKEN = [
       "u": "(a) Wetgevende macht: Staten-Generaal (Tweede en Eerste Kamer) maakt wetten. Uitvoerende macht: Kabinet voert wetten en beleid uit. Rechterlijke macht: rechtbanken spreken recht, onafhankelijk van politiek.\n(b) Machtenscheiding voorkomt dat één instantie alle macht heeft. Checks and balances zorgen dat de machten elkaar controleren en grondrechten van burgers beschermen."
      },
      {
-      "bron": "Rechtsstaat & democratie — SE (geen afbeelding)",
+      "bron": "Rechtsstaat & democratie - SE (geen afbeelding)",
       "ctx": "Nederland heeft een parlementaire democratie. De Tweede Kamer controleert de regering via debatten, moties en het budgetrecht.",
       "v": "(a) Wat is het verschil tussen wetgevende en uitvoerende macht in Nederland?\n(b) Noem twee manieren waarop de Tweede Kamer de regering controleert.",
       "o": [
        ""
       ],
       "c": 0,
-      "u": "(a) Wetgevende macht (parlement): stelt wetten op en controleert de regering. Uitvoerende macht (kabinet): voert wetten en beleid uit.\n(b) 1. Motie van wantrouwen: meerderheid eist aftreden minister of kabinet. 2. Budgetrecht: Kamer keurt rijksbegroting goed — zonder toestemming geen geld uitgeven."
+      "u": "(a) Wetgevende macht (parlement): stelt wetten op en controleert de regering. Uitvoerende macht (kabinet): voert wetten en beleid uit.\n(b) 1. Motie van wantrouwen: meerderheid eist aftreden minister of kabinet. 2. Budgetrecht: Kamer keurt rijksbegroting goed - zonder toestemming geen geld uitgeven."
      },
      {
-      "bron": "Rechtsstaat & democratie — SE (geen afbeelding)",
+      "bron": "Rechtsstaat & democratie - SE (geen afbeelding)",
       "ctx": "De grondwet beschermt de grondrechten van burgers. Grondrechten zijn onder meer vrijheid van meningsuiting, godsdienstvrijheid en het recht op privacy.",
       "v": "(a) Leg uit wat het legaliteitsbeginsel inhoudt.\n(b) Beschrijf een situatie waarin de overheid een grondrecht mag beperken.",
       "o": [
@@ -43681,17 +43681,17 @@ var VAKKEN = [
    {
     "id": "E",
     "naam": "Oriëntatie op studie en beroep",
-    "beschrijving": "Historische beroepspraktijk en vervolgorientering — uitsluitend SE",
+    "beschrijving": "Historische beroepspraktijk en vervolgorientering - uitsluitend SE",
     "ceStatus": "SE",
     "binas": [],
     "val": [
-     "Oriëntatie op studie als minder belangrijk zien — het is een officieel onderdeel van het examenprogramma",
-     "Historische vaardigheden als alleen voor historici zien — ze zijn breed inzetbaar"
+     "Oriëntatie op studie als minder belangrijk zien - het is een officieel onderdeel van het examenprogramma",
+     "Historische vaardigheden als alleen voor historici zien - ze zijn breed inzetbaar"
     ],
     "onderwerpen": [
      "E1 Oriëntatie op studie en beroep"
     ],
-    "sam": "<div class=\"sam-head\">E1 Oriëntatie op studie en beroep</div><ul><li><strong>Historische beroepen</strong>: historicus (wetenschappelijk onderzoek), leraar geschiedenis, archivaris, conservator (museum), journalist, beleidsmedewerker, erfgoedprofessional.</li><li><strong>Transferabele vaardigheden</strong>: bronkritiek, oorzaak-gevolg redeneren, standplaatsgebondenheid herkennen — bruikbaar in elk beroep.</li><li><strong>Vervolgopleidingen</strong>: WO/HBO Geschiedenis, Erfgoedstudies, Archivistiek, Politicologie, Journalistiek.</li></ul><div class=\"sam-onthoud\">Domein E is SE-stof. Historische vaardigheden (bronkritiek, redeneren, argumenteren) zijn breed inzetbaar in vervolgstudies en beroepen.</div>",
+    "sam": "<div class=\"sam-head\">E1 Oriëntatie op studie en beroep</div><ul><li><strong>Historische beroepen</strong>: historicus (wetenschappelijk onderzoek), leraar geschiedenis, archivaris, conservator (museum), journalist, beleidsmedewerker, erfgoedprofessional.</li><li><strong>Transferabele vaardigheden</strong>: bronkritiek, oorzaak-gevolg redeneren, standplaatsgebondenheid herkennen - bruikbaar in elk beroep.</li><li><strong>Vervolgopleidingen</strong>: WO/HBO Geschiedenis, Erfgoedstudies, Archivistiek, Politicologie, Journalistiek.</li></ul><div class=\"sam-onthoud\">Domein E is SE-stof. Historische vaardigheden (bronkritiek, redeneren, argumenteren) zijn breed inzetbaar in vervolgstudies en beroepen.</div>",
     "sv": [
      {
       "v": "Welke beroepsgroep bewaart en ontsluit historische documenten in een archief?",
@@ -43713,7 +43713,7 @@ var VAKKEN = [
        "Het berekenen van eeuwen bij gegeven jaartallen"
       ],
       "c": 0,
-      "u": "Bronkritiek: wie maakte dit, voor wie, met welk doel? Standplaatsgebondenheid: welk perspectief kleurt dit bericht? Bij fake news en mediabias zijn dit precies de vaardigheden die je nodig hebt — breed toepasbaar in elk beroep en in het dagelijks leven."
+      "u": "Bronkritiek: wie maakte dit, voor wie, met welk doel? Standplaatsgebondenheid: welk perspectief kleurt dit bericht? Bij fake news en mediabias zijn dit precies de vaardigheden die je nodig hebt - breed toepasbaar in elk beroep en in het dagelijks leven."
      },
      {
       "v": "Welke HBO-opleiding sluit het beste aan bij interesse in historische gebouwen en cultuurlandschappen?",
@@ -43757,7 +43757,7 @@ var VAKKEN = [
        "het foutloos kunnen onthouden van alle tijdvakken en jaartallen"
       ],
       "c": 0,
-      "u": "Transferabele vaardigheden \"transfereren\" van het ene domein naar het andere. Bronkritiek, oorzaak-gevolg redeneren en standplaatsgebondenheid zijn nuttig voor journalist, advocaat, beleidsmedewerker, arts en manager. Niet vak-exclusief — dat maakt ze zo waardevol."
+      "u": "Transferabele vaardigheden \"transfereren\" van het ene domein naar het andere. Bronkritiek, oorzaak-gevolg redeneren en standplaatsgebondenheid zijn nuttig voor journalist, advocaat, beleidsmedewerker, arts en manager. Niet vak-exclusief - dat maakt ze zo waardevol."
      },
      {
       "v": "Wat betekent «Transferabele vaardigheid»?",
@@ -44338,27 +44338,27 @@ var VAKKEN = [
     ],
     "oe": [
      {
-      "bron": "Oriëntatie op studie en beroep — SE (geen afbeelding)",
+      "bron": "Oriëntatie op studie en beroep - SE (geen afbeelding)",
       "ctx": "Een historicus bestudeert het verleden via primaire en secundaire bronnen. Historici werken in wetenschappelijk onderzoek, musea, archieven, journalistiek en beleid.",
       "v": "(a) Noem drie beroepen waarbij historische vaardigheden worden gebruikt en leg per beroep uit welke vaardigheid relevant is.\n(b) Welke vaardigheid uit domein A is ook buiten de geschiedeniswetenschap nuttig? Licht toe.",
       "o": [
        ""
       ],
       "c": 0,
-      "u": "(a) Archivaris: bronnen ordenen en bewaren — bronkritiek. Journalist: feiten checken en standplaatsgebondenheid herkennen. Beleidsmedewerker: oorzaken en gevolgen analyseren — historisch redeneren.\n(b) Standplaatsgebondenheid (A7): elk perspectief is gekleurd door positie en achtergrond. Nuttig in media, politiek, recht — overal waar bronnen of standpunten beoordeeld moeten worden."
+      "u": "(a) Archivaris: bronnen ordenen en bewaren - bronkritiek. Journalist: feiten checken en standplaatsgebondenheid herkennen. Beleidsmedewerker: oorzaken en gevolgen analyseren - historisch redeneren.\n(b) Standplaatsgebondenheid (A7): elk perspectief is gekleurd door positie en achtergrond. Nuttig in media, politiek, recht - overal waar bronnen of standpunten beoordeeld moeten worden."
      },
      {
-      "bron": "Oriëntatie op studie en beroep — SE (geen afbeelding)",
+      "bron": "Oriëntatie op studie en beroep - SE (geen afbeelding)",
       "ctx": "Het geschiedenisexamenprogramma omvat vaardigheden als chronologisch redeneren, bronkritiek en het onderscheiden van feiten en meningen.",
       "v": "Leg uit hoe de vaardigheden uit domein A (Historisch besef) bijdragen aan voorbereiding op een vervolgopleiding of beroep.",
       "o": [
        ""
       ],
       "c": 0,
-      "u": "Domein A-vaardigheden zijn transferabel: chronologie helpt bij plannen en overzicht; oorzaak-gevolg redeneren is basis voor probleemanalyse; bronkritiek helpt bij beoordelen van informatie (media literacy); standplaatsgebondenheid maakt bewust van eigen en andermans bias — essentieel in communicatie, zorg, recht en politiek."
+      "u": "Domein A-vaardigheden zijn transferabel: chronologie helpt bij plannen en overzicht; oorzaak-gevolg redeneren is basis voor probleemanalyse; bronkritiek helpt bij beoordelen van informatie (media literacy); standplaatsgebondenheid maakt bewust van eigen en andermans bias - essentieel in communicatie, zorg, recht en politiek."
      },
      {
-      "bron": "Oriëntatie op studie en beroep — SE (geen afbeelding)",
+      "bron": "Oriëntatie op studie en beroep - SE (geen afbeelding)",
       "ctx": "Een student overweegt een opleiding in de richting van geschiedenis of erfgoed.",
       "v": "(a) Noem twee HBO- of WO-opleidingen die aansluiten bij interesse in geschiedenis.\n(b) Welke competentie uit het geschiedenisexamen is het meest waardevol voor een werkgever? Onderbouw je antwoord.",
       "o": [
@@ -44459,7 +44459,7 @@ var VAKKEN = [
      "A1 Geografische benadering",
      "A2 Geografisch onderzoek"
     ],
-    "sam": "<div class=\"sam-head\">A1 Geografische benadering</div><ul><li><strong>Geografische vraag</strong>: richt zich op ruimtelijke verschijnselen — Waar? Waarom daar? Welk patroon?</li><li><strong>Schaalniveaus</strong>: lokaal (buurt/wijk), regionaal (provincie), nationaal (land), mondiaal (wereld). Per niveau andere factoren relevant.</li><li><strong>Absolute vs. relatieve afstand</strong>: absoluut = km/meters; relatief = tijd, kosten, moeite.</li><li><strong>Ruimtelijk patroon</strong>: beschrijf verspreiding (dicht/dun, geconcentreerd/verspreid) vóór je verklaart.</li><li><strong>Thematische kaart</strong>: visualiseert één thema. Legenda altijd eerst lezen.</li></ul><div class=\"sam-head\">A2 Geografisch onderzoek</div><ul><li><strong>Broncombinatie</strong>: kaart + tabel + tekst geeft completer beeld; fouten worden zichtbaar.</li><li><strong>Oorzaak-gevolg</strong>: vanuit fysische (klimaat, reliëf, water) én menselijke factoren (economie, politiek, cultuur).</li><li><strong>Geografische analyse</strong>: 1. Beschrijf het patroon. 2. Verklaar vanuit factoren. 3. Beoordeel samenhangen.</li></ul><div class=\"sam-onthoud\">Geografische vraag = Waar + Waarom. Schaalniveaus: lokaal → mondiaal. Altijd legenda lezen. Beschrijf voor je verklaart. Combineer bronnen voor een volledig beeld.</div>",
+    "sam": "<div class=\"sam-head\">A1 Geografische benadering</div><ul><li><strong>Geografische vraag</strong>: richt zich op ruimtelijke verschijnselen - Waar? Waarom daar? Welk patroon?</li><li><strong>Schaalniveaus</strong>: lokaal (buurt/wijk), regionaal (provincie), nationaal (land), mondiaal (wereld). Per niveau andere factoren relevant.</li><li><strong>Absolute vs. relatieve afstand</strong>: absoluut = km/meters; relatief = tijd, kosten, moeite.</li><li><strong>Ruimtelijk patroon</strong>: beschrijf verspreiding (dicht/dun, geconcentreerd/verspreid) vóór je verklaart.</li><li><strong>Thematische kaart</strong>: visualiseert één thema. Legenda altijd eerst lezen.</li></ul><div class=\"sam-head\">A2 Geografisch onderzoek</div><ul><li><strong>Broncombinatie</strong>: kaart + tabel + tekst geeft completer beeld; fouten worden zichtbaar.</li><li><strong>Oorzaak-gevolg</strong>: vanuit fysische (klimaat, reliëf, water) én menselijke factoren (economie, politiek, cultuur).</li><li><strong>Geografische analyse</strong>: 1. Beschrijf het patroon. 2. Verklaar vanuit factoren. 3. Beoordeel samenhangen.</li></ul><div class=\"sam-onthoud\">Geografische vraag = Waar + Waarom. Schaalniveaus: lokaal → mondiaal. Altijd legenda lezen. Beschrijf voor je verklaart. Combineer bronnen voor een volledig beeld.</div>",
     "sv": [
      {
       "v": "Wat is een geografische vraag?",
@@ -45119,7 +45119,7 @@ var VAKKEN = [
        ""
       ],
       "c": 0,
-      "u": "(a) Bron 1 (RIVM): betrouwbaar — onafhankelijk, wetenschappelijk, gebaseerd op systematische meetdata. Beste primaire bron. Bron 2 (actiegroep): partijdig — heeft belang bij negatief beeld; bruikbaar als achtergrond maar niet als objectieve databron. Bron 3 (gemeente): partijdig — gemeente heeft belang bij positief imago; kan selectief zijn.\n(b) Primaire bron: originele data die je zelf of rechtstreeks verzamelt (bijv. eigen luchtmeting, enquête). Secundaire bron: verwerkte of bewerkte informatie (bijv. het RIVM-rapport dat al meetdata heeft geanalyseerd).\n(c) Kartografische methode: een thematische kaart (choropleet of puntenkaart) met luchtkwaliteitswaarden per gemeente of wijk, zodat ruimtelijke patronen en concentraties zichtbaar worden."
+      "u": "(a) Bron 1 (RIVM): betrouwbaar - onafhankelijk, wetenschappelijk, gebaseerd op systematische meetdata. Beste primaire bron. Bron 2 (actiegroep): partijdig - heeft belang bij negatief beeld; bruikbaar als achtergrond maar niet als objectieve databron. Bron 3 (gemeente): partijdig - gemeente heeft belang bij positief imago; kan selectief zijn.\n(b) Primaire bron: originele data die je zelf of rechtstreeks verzamelt (bijv. eigen luchtmeting, enquête). Secundaire bron: verwerkte of bewerkte informatie (bijv. het RIVM-rapport dat al meetdata heeft geanalyseerd).\n(c) Kartografische methode: een thematische kaart (choropleet of puntenkaart) met luchtkwaliteitswaarden per gemeente of wijk, zodat ruimtelijke patronen en concentraties zichtbaar worden."
      },
      {
       "bron": "HAVO Aardrijkskunde CE 2024 Tijdvak 2 Ruimtelijk redeneren en spreiding (geen afbeelding)",
@@ -46438,7 +46438,7 @@ var VAKKEN = [
      "C2 Samenhangen en verschillen op aarde",
      "C3 De aarde als natuurlijk systeem en lokale effecten"
     ],
-    "sam": "<div class=\"sam-head\">Endogene en exogene processen</div><ul><li><strong>Endogeen</strong>: processen vanuit het binnenste van de aarde — platentektoniek, vulkanisme, aardbevingen.</li><li><strong>Exogeen</strong>: processen van buitenaf — verwering (afbraak ter plekke), erosie (transport), sedimentatie (afzetting).</li><li><strong>Subductiezone</strong>: oceaanplaat duikt onder continent → diepzeetrog, vulkanen, aardbevingen (Ring of Fire).</li><li><strong>Hotspot</strong>: vast hittepunt in de mantel onafhankelijk van plaatgrenzen (Hawaï-eilanden).</li></ul><div class=\"sam-head\">Klimaat en waterkringloop</div><ul><li><strong>Klimaat vs. weer</strong>: klimaat = gemiddeld patroon (30 jaar); weer = dagelijkse toestand.</li><li><strong>Rivierregime</strong>: jaarlijks patroon van waterafvoer. Sneeuwgevoede rivier: piek in voorjaar. Regenrivier: volgt neerslagpatroon.</li><li><strong>Moesson</strong>: seizoensgebonden windpatroon; zomer = vochtig (zee naar land); winter = droog (land naar zee).</li><li><strong>Klimaatverandering</strong>: langetermijnverschuiving door CO₂-uitstoot. Gevolgen: zeespiegelstijging, smeltende gletsjers, extremer weer.</li></ul><div class=\"sam-onthoud\">Endogeen = binnenuit (vulkanen, aardbevingen). Exogeen = van buiten (erosie, sedimentatie). Rivierregime = jaarlijks afvoerpatroon. Klimaat ≠ weer (30 jaar vs. nu).</div>",
+    "sam": "<div class=\"sam-head\">Endogene en exogene processen</div><ul><li><strong>Endogeen</strong>: processen vanuit het binnenste van de aarde - platentektoniek, vulkanisme, aardbevingen.</li><li><strong>Exogeen</strong>: processen van buitenaf - verwering (afbraak ter plekke), erosie (transport), sedimentatie (afzetting).</li><li><strong>Subductiezone</strong>: oceaanplaat duikt onder continent → diepzeetrog, vulkanen, aardbevingen (Ring of Fire).</li><li><strong>Hotspot</strong>: vast hittepunt in de mantel onafhankelijk van plaatgrenzen (Hawaï-eilanden).</li></ul><div class=\"sam-head\">Klimaat en waterkringloop</div><ul><li><strong>Klimaat vs. weer</strong>: klimaat = gemiddeld patroon (30 jaar); weer = dagelijkse toestand.</li><li><strong>Rivierregime</strong>: jaarlijks patroon van waterafvoer. Sneeuwgevoede rivier: piek in voorjaar. Regenrivier: volgt neerslagpatroon.</li><li><strong>Moesson</strong>: seizoensgebonden windpatroon; zomer = vochtig (zee naar land); winter = droog (land naar zee).</li><li><strong>Klimaatverandering</strong>: langetermijnverschuiving door CO₂-uitstoot. Gevolgen: zeespiegelstijging, smeltende gletsjers, extremer weer.</li></ul><div class=\"sam-onthoud\">Endogeen = binnenuit (vulkanen, aardbevingen). Exogeen = van buiten (erosie, sedimentatie). Rivierregime = jaarlijks afvoerpatroon. Klimaat ≠ weer (30 jaar vs. nu).</div>",
     "sv": [
      {
       "v": "Wat is het verschil tussen endogene en exogene processen?",
@@ -48527,7 +48527,7 @@ var VAKKEN = [
        "Trek van bevolking naar platteland"
       ],
       "c": 0,
-      "u": "Verstedelijking = het toenemende aandeel van de bevolking dat in steden woont (vaak als synoniem van urbanisatie gebruikt; strikt omvat verstedelijking óók de ruimtelijke uitbreiding van het stedelijk gebied — zie domein D). Oorzaken: werkgelegenheid, voorzieningen en migratie van platteland naar stad."
+      "u": "Verstedelijking = het toenemende aandeel van de bevolking dat in steden woont (vaak als synoniem van urbanisatie gebruikt; strikt omvat verstedelijking óók de ruimtelijke uitbreiding van het stedelijk gebied - zie domein D). Oorzaken: werkgelegenheid, voorzieningen en migratie van platteland naar stad."
      },
      {
       "v": "Wat is suburbanisatie?",
@@ -49357,7 +49357,7 @@ var VAKKEN = [
      "Bruto Binnenlands Product (BBP) en BBP per hoofd",
      "Lekken en injecties"
     ],
-    "sam": "<div class=\"sam-head\">Domein B — Concept Schaarste</div><div class=\"sam-section\"><h3>Intuïtieve kern</h3><ul><li>Schaarste betekent dat middelen beperkt zijn, terwijl behoeften oneindig zijn.</li><li>Omdat je niet alles kunt hebben, moet je kiezen — en elke keuze heeft een offer.</li></ul></div><div class=\"sam-section\"><h3>Conceptueel model</h3><ul><li><strong>Schaarste:</strong> middelen zijn beperkt, keuzes noodzakelijk.</li><li><strong>Alternatief aanwendbaar:</strong> middelen kunnen voor meerdere doelen worden ingezet.</li><li><strong>Opportuniteitskosten:</strong> waarde van het beste alternatief dat je opgeeft.</li><li><strong>Budgetlijn:</strong> laat zien welke combinaties mogelijk zijn met een budget.</li><li><strong>PMC:</strong> maximale productiecombinaties; verschuift door groei of technologische vooruitgang.</li><li><strong>Welvaart:</strong> mate waarin behoeften worden vervuld.</li></ul></div><div class=\"sam-section\"><h3>Interactieve vragen</h3><div class=\"qa\"><div class=\"q\" data-toggle=\"answer\">Waarom dwingt schaarste tot keuzes?</div><div class=\"hint\">Hint: denk aan beperkte middelen en oneindige behoeften.</div><div class=\"a hidden\">Omdat middelen beperkt zijn en je niet alles tegelijk kunt produceren of consumeren.</div></div><div class=\"qa\"><div class=\"q\" data-toggle=\"answer\">Wat zijn opportuniteitskosten?</div><div class=\"hint\">Hint: het gaat om wat je opgeeft.</div><div class=\"a hidden\">De waarde van het beste alternatief dat je opgeeft bij een keuze.</div></div><div class=\"qa\"><div class=\"q\" data-toggle=\"answer\">Wat betekent een verschuiving van de PMC naar buiten?</div><div class=\"hint\">Hint: meer productie mogelijk.</div><div class=\"a hidden\">Dat de economie kan groeien door meer middelen of betere technologie.</div></div></div><div class=\"sam-section\"><h3>Examenvallen</h3><ul><li>Schaarste verwarren met armoede.</li><li>Opportuniteitskosten zien als geldbedrag i.p.v. waarde van alternatief.</li><li>Budgetlijn verkeerd interpreteren.</li></ul></div>",
+    "sam": "<div class=\"sam-head\">Domein B - Concept Schaarste</div><div class=\"sam-section\"><h3>Intuïtieve kern</h3><ul><li>Schaarste betekent dat middelen beperkt zijn, terwijl behoeften oneindig zijn.</li><li>Omdat je niet alles kunt hebben, moet je kiezen - en elke keuze heeft een offer.</li></ul></div><div class=\"sam-section\"><h3>Conceptueel model</h3><ul><li><strong>Schaarste:</strong> middelen zijn beperkt, keuzes noodzakelijk.</li><li><strong>Alternatief aanwendbaar:</strong> middelen kunnen voor meerdere doelen worden ingezet.</li><li><strong>Opportuniteitskosten:</strong> waarde van het beste alternatief dat je opgeeft.</li><li><strong>Budgetlijn:</strong> laat zien welke combinaties mogelijk zijn met een budget.</li><li><strong>PMC:</strong> maximale productiecombinaties; verschuift door groei of technologische vooruitgang.</li><li><strong>Welvaart:</strong> mate waarin behoeften worden vervuld.</li></ul></div><div class=\"sam-section\"><h3>Interactieve vragen</h3><div class=\"qa\"><div class=\"q\" data-toggle=\"answer\">Waarom dwingt schaarste tot keuzes?</div><div class=\"hint\">Hint: denk aan beperkte middelen en oneindige behoeften.</div><div class=\"a hidden\">Omdat middelen beperkt zijn en je niet alles tegelijk kunt produceren of consumeren.</div></div><div class=\"qa\"><div class=\"q\" data-toggle=\"answer\">Wat zijn opportuniteitskosten?</div><div class=\"hint\">Hint: het gaat om wat je opgeeft.</div><div class=\"a hidden\">De waarde van het beste alternatief dat je opgeeft bij een keuze.</div></div><div class=\"qa\"><div class=\"q\" data-toggle=\"answer\">Wat betekent een verschuiving van de PMC naar buiten?</div><div class=\"hint\">Hint: meer productie mogelijk.</div><div class=\"a hidden\">Dat de economie kan groeien door meer middelen of betere technologie.</div></div></div><div class=\"sam-section\"><h3>Examenvallen</h3><ul><li>Schaarste verwarren met armoede.</li><li>Opportuniteitskosten zien als geldbedrag i.p.v. waarde van alternatief.</li><li>Budgetlijn verkeerd interpreteren.</li></ul></div>",
     "sv": [
      {
       "v": "Wat zijn opportuniteitskosten?",
@@ -49577,7 +49577,7 @@ var VAKKEN = [
        "een vrij goed heeft altijd een lage maar bestaande prijs"
       ],
       "c": 0,
-      "u": "Vrije goederen (lucht, zonlicht, zeewater) zijn niet schaars — er is meer dan genoeg voor iedereen. Economische goederen zijn schaars (beperkt aanbod) en hebben daardoor een prijs."
+      "u": "Vrije goederen (lucht, zonlicht, zeewater) zijn niet schaars - er is meer dan genoeg voor iedereen. Economische goederen zijn schaars (beperkt aanbod) en hebben daardoor een prijs."
      },
      {
       "v": "Wat betekent «Consumptie»?",
@@ -51333,7 +51333,7 @@ var VAKKEN = [
      "Marktfalen: externe effecten en collectieve goederen",
      "Minimumloon en maximumprijs"
     ],
-    "sam": "<div class=\"sam-head\">Domein C — Markt</div><div class=\"sam-section\"><h3>Intuïtieve kern</h3><ul><li>Op de markt komen vraag en aanbod samen.</li><li>De prijs ontstaat door het evenwicht tussen consumenten en producenten.</li></ul></div><div class=\"sam-section\"><h3>Conceptueel model</h3><ul><li><strong>Vraag:</strong> hoeveel consumenten willen kopen bij verschillende prijzen.</li><li><strong>Aanbod:</strong> hoeveel producenten willen leveren.</li><li><strong>Evenwichtsprijs:</strong> prijs waarbij vraag = aanbod.</li><li><strong>Prijsmechanisme:</strong> tekort → prijs stijgt; overschot → prijs daalt.</li><li><strong>Elasticiteit:</strong> meet gevoeligheid van vraag of aanbod.</li><li><strong>Marktvormen:</strong> monopolie, oligopolie, volledige mededinging.</li></ul></div><div class=\"sam-section\"><h3>Interactieve vragen</h3><div class=\"qa\"><div class=\"q\" data-toggle=\"answer\">Wat gebeurt er bij een tekort op de markt?</div><div class=\"hint\">Hint: denk aan concurrentie tussen consumenten.</div><div class=\"a hidden\">De prijs stijgt totdat vraag en aanbod weer in evenwicht zijn.</div></div><div class=\"qa\"><div class=\"q\" data-toggle=\"answer\">Wanneer is vraag inelastisch?</div><div class=\"hint\">Hint: kijk naar de absolute waarde van PED.</div><div class=\"a hidden\">Als de absolute waarde van de prijselasticiteit kleiner is dan 1.</div></div><div class=\"qa\"><div class=\"q\" data-toggle=\"answer\">Wat verschuift de vraagcurve?</div><div class=\"hint\">Hint: niet de prijs zelf.</div><div class=\"a hidden\">Veranderingen in inkomen, voorkeuren, aantal consumenten of prijzen van substituten/complementen.</div></div></div><div class=\"sam-section\"><h3>Examenvallen</h3><ul><li>Vraag- en aanbodcurve omdraaien.</li><li>Denken dat prijsverandering de curve verschuift.</li><li>Elasticiteit verkeerd interpreteren.</li></ul></div>",
+    "sam": "<div class=\"sam-head\">Domein C - Markt</div><div class=\"sam-section\"><h3>Intuïtieve kern</h3><ul><li>Op de markt komen vraag en aanbod samen.</li><li>De prijs ontstaat door het evenwicht tussen consumenten en producenten.</li></ul></div><div class=\"sam-section\"><h3>Conceptueel model</h3><ul><li><strong>Vraag:</strong> hoeveel consumenten willen kopen bij verschillende prijzen.</li><li><strong>Aanbod:</strong> hoeveel producenten willen leveren.</li><li><strong>Evenwichtsprijs:</strong> prijs waarbij vraag = aanbod.</li><li><strong>Prijsmechanisme:</strong> tekort → prijs stijgt; overschot → prijs daalt.</li><li><strong>Elasticiteit:</strong> meet gevoeligheid van vraag of aanbod.</li><li><strong>Marktvormen:</strong> monopolie, oligopolie, volledige mededinging.</li></ul></div><div class=\"sam-section\"><h3>Interactieve vragen</h3><div class=\"qa\"><div class=\"q\" data-toggle=\"answer\">Wat gebeurt er bij een tekort op de markt?</div><div class=\"hint\">Hint: denk aan concurrentie tussen consumenten.</div><div class=\"a hidden\">De prijs stijgt totdat vraag en aanbod weer in evenwicht zijn.</div></div><div class=\"qa\"><div class=\"q\" data-toggle=\"answer\">Wanneer is vraag inelastisch?</div><div class=\"hint\">Hint: kijk naar de absolute waarde van PED.</div><div class=\"a hidden\">Als de absolute waarde van de prijselasticiteit kleiner is dan 1.</div></div><div class=\"qa\"><div class=\"q\" data-toggle=\"answer\">Wat verschuift de vraagcurve?</div><div class=\"hint\">Hint: niet de prijs zelf.</div><div class=\"a hidden\">Veranderingen in inkomen, voorkeuren, aantal consumenten of prijzen van substituten/complementen.</div></div></div><div class=\"sam-section\"><h3>Examenvallen</h3><ul><li>Vraag- en aanbodcurve omdraaien.</li><li>Denken dat prijsverandering de curve verschuift.</li><li>Elasticiteit verkeerd interpreteren.</li></ul></div>",
     "sv": [
      {
       "v": "Welke prijs is bereikt wanneer gevraagde hoeveelheid gelijk is aan aangeboden hoeveelheid?",
@@ -53497,7 +53497,7 @@ var VAKKEN = [
        ""
       ],
       "c": 0,
-      "u": "(1) oligopolie — een beperkt aantal aanbieders. (2) heterogene — er zijn verschillende types (gewone fiets versus mountainbike). (3) substitutie — een huurfiets kan de eigen fiets vervangen."
+      "u": "(1) oligopolie - een beperkt aantal aanbieders. (2) heterogene - er zijn verschillende types (gewone fiets versus mountainbike). (3) substitutie - een huurfiets kan de eigen fiets vervangen."
      },
      {
       "bron": "HAVO Economie CE 2025 Tijdvak 1 (vraag 15)",
@@ -53547,7 +53547,7 @@ var VAKKEN = [
        ""
       ],
       "c": 0,
-      "u": "(1) oligopolie — enkele grote aanbieders met samen een groot marktaandeel. (2) heterogeen — de modellen verschillen in design, vermogen en accu. (3) proportioneel — de marginale kosten zijn constant, dus de variabele kosten stijgen evenredig met de productie."
+      "u": "(1) oligopolie - enkele grote aanbieders met samen een groot marktaandeel. (2) heterogeen - de modellen verschillen in design, vermogen en accu. (3) proportioneel - de marginale kosten zijn constant, dus de variabele kosten stijgen evenredig met de productie."
      },
      {
       "bron": "HAVO Economie CE 2023 Tijdvak 1 (vraag 8)",
@@ -53577,7 +53577,7 @@ var VAKKEN = [
        ""
       ],
       "c": 0,
-      "u": "(1) stijgt. (2) de aanbodlijn (in Nederland). (3) naar links — er zijn minder koks beschikbaar. (4) afname van het totale surplus."
+      "u": "(1) stijgt. (2) de aanbodlijn (in Nederland). (3) naar links - er zijn minder koks beschikbaar. (4) afname van het totale surplus."
      },
      {
       "bron": "HAVO Economie CE 2025 Tijdvak 1, vraag 1 (HA-1210-a-25-1-o)",
@@ -53823,7 +53823,7 @@ var VAKKEN = [
      "Overheidsbegroting: begrotingstekort en staatsschuld",
      "Conjunctuurbeleid en automatische stabilisatoren"
     ],
-    "sam": "<div class=\"sam-head\">Domein D — Overheid en bestuur</div><div class=\"sam-section\"><h3>Intuïtieve kern</h3><ul><li>De overheid grijpt in wanneer de markt faalt.</li><li>Belastingen, subsidies en regels sturen gedrag.</li></ul></div><div class=\"sam-section\"><h3>Conceptueel model</h3><ul><li><strong>Marktfalen:</strong> markt levert geen optimale uitkomst.</li><li><strong>Externe effecten:</strong> kosten/baten voor derden.</li><li><strong>Collectieve goederen:</strong> niet-uitsluitbaar en niet-rivaliserend.</li><li><strong>Belastingen:</strong> beïnvloeden prijzen en gedrag.</li><li><strong>Subsidies:</strong> verlagen kosten en stimuleren productie.</li><li><strong>Begroting:</strong> inkomsten en uitgaven van de overheid.</li></ul></div><div class=\"sam-section\"><h3>Interactieve vragen</h3><div class=\"qa\"><div class=\"q\" data-toggle=\"answer\">Waarom heft de overheid belasting op vervuiling?</div><div class=\"hint\">Hint: denk aan externe effecten.</div><div class=\"a hidden\">Om negatieve externe effecten te verminderen en gedrag te sturen.</div></div><div class=\"qa\"><div class=\"q\" data-toggle=\"answer\">Wat is een collectief goed?</div><div class=\"hint\">Hint: twee eigenschappen.</div><div class=\"a hidden\">Een goed dat niet-uitsluitbaar en niet-rivaliserend is, zoals straatverlichting.</div></div><div class=\"qa\"><div class=\"q\" data-toggle=\"answer\">Wat betekent een begrotingstekort?</div><div class=\"hint\">Hint: vergelijking tussen inkomsten en uitgaven.</div><div class=\"a hidden\">Dat de overheid meer uitgeeft dan er binnenkomt.</div></div></div><div class=\"sam-section\"><h3>Examenvallen</h3><ul><li>Externe effecten verwarren met collectieve goederen.</li><li>Subsidies als 'gratis geld' zien.</li><li>Begrotingstekort verwarren met staatsschuld.</li></ul></div>",
+    "sam": "<div class=\"sam-head\">Domein D - Overheid en bestuur</div><div class=\"sam-section\"><h3>Intuïtieve kern</h3><ul><li>De overheid grijpt in wanneer de markt faalt.</li><li>Belastingen, subsidies en regels sturen gedrag.</li></ul></div><div class=\"sam-section\"><h3>Conceptueel model</h3><ul><li><strong>Marktfalen:</strong> markt levert geen optimale uitkomst.</li><li><strong>Externe effecten:</strong> kosten/baten voor derden.</li><li><strong>Collectieve goederen:</strong> niet-uitsluitbaar en niet-rivaliserend.</li><li><strong>Belastingen:</strong> beïnvloeden prijzen en gedrag.</li><li><strong>Subsidies:</strong> verlagen kosten en stimuleren productie.</li><li><strong>Begroting:</strong> inkomsten en uitgaven van de overheid.</li></ul></div><div class=\"sam-section\"><h3>Interactieve vragen</h3><div class=\"qa\"><div class=\"q\" data-toggle=\"answer\">Waarom heft de overheid belasting op vervuiling?</div><div class=\"hint\">Hint: denk aan externe effecten.</div><div class=\"a hidden\">Om negatieve externe effecten te verminderen en gedrag te sturen.</div></div><div class=\"qa\"><div class=\"q\" data-toggle=\"answer\">Wat is een collectief goed?</div><div class=\"hint\">Hint: twee eigenschappen.</div><div class=\"a hidden\">Een goed dat niet-uitsluitbaar en niet-rivaliserend is, zoals straatverlichting.</div></div><div class=\"qa\"><div class=\"q\" data-toggle=\"answer\">Wat betekent een begrotingstekort?</div><div class=\"hint\">Hint: vergelijking tussen inkomsten en uitgaven.</div><div class=\"a hidden\">Dat de overheid meer uitgeeft dan er binnenkomt.</div></div></div><div class=\"sam-section\"><h3>Examenvallen</h3><ul><li>Externe effecten verwarren met collectieve goederen.</li><li>Subsidies als 'gratis geld' zien.</li><li>Begrotingstekort verwarren met staatsschuld.</li></ul></div>",
     "sv": [
      {
       "v": "Welke drie functies heeft de overheid in de economie (Musgrave)?",
@@ -55911,7 +55911,7 @@ var VAKKEN = [
        ""
       ],
       "c": 0,
-      "u": "Door het bodembedrag van €1.000 krijgen de lagere inkomens (onder €28.571 = 1.000 / 0,035) procentueel méér dan 3,5%, terwijl de hogere inkomens precies 3,5% krijgen. De relatieve inkomensverschillen worden zo kleiner — dat is nivelleren."
+      "u": "Door het bodembedrag van €1.000 krijgen de lagere inkomens (onder €28.571 = 1.000 / 0,035) procentueel méér dan 3,5%, terwijl de hogere inkomens precies 3,5% krijgen. De relatieve inkomensverschillen worden zo kleiner - dat is nivelleren."
      },
      {
       "bron": "HAVO Economie CE 2024 Tijdvak 1 (vraag 11)",
@@ -55921,7 +55921,7 @@ var VAKKEN = [
        ""
       ],
       "c": 0,
-      "u": "(1) sequentieel — de spelers kiezen na elkaar. (2) twee spelers. (3) de aanbieder doet het voorstel. (4) de respondent reageert. (5) accepteren — alleen dan ontvangen beide hun deel."
+      "u": "(1) sequentieel - de spelers kiezen na elkaar. (2) twee spelers. (3) de aanbieder doet het voorstel. (4) de respondent reageert. (5) accepteren - alleen dan ontvangen beide hun deel."
      },
      {
       "bron": "HAVO Economie CE 2024 Tijdvak 1 (vraag 14)",
@@ -55931,7 +55931,7 @@ var VAKKEN = [
        ""
       ],
       "c": 0,
-      "u": "Bijvoorbeeld: Sprinter heeft een afkeer van ongelijkheid en vindt de verdeling oneerlijk, of wil Snel straffen voor het oneerlijke bod — ook al kost het Sprinter zelf de opbrengst."
+      "u": "Bijvoorbeeld: Sprinter heeft een afkeer van ongelijkheid en vindt de verdeling oneerlijk, of wil Snel straffen voor het oneerlijke bod - ook al kost het Sprinter zelf de opbrengst."
      },
      {
       "bron": "HAVO Economie CE 2023 Tijdvak 1 (vraag 1)",
@@ -55941,7 +55941,7 @@ var VAKKEN = [
        ""
       ],
       "c": 0,
-      "u": "(1) sociale verzekering (verplicht voor werknemers). (2) omslagstelsel — de premies betalen de uitkeringen van datzelfde jaar. (3) collectieve dwang ontbreekt bij een individuele aov. (4) averechtse selectie — vooral mensen met een hoog risico verzekeren zich, waardoor de premie hoog wordt."
+      "u": "(1) sociale verzekering (verplicht voor werknemers). (2) omslagstelsel - de premies betalen de uitkeringen van datzelfde jaar. (3) collectieve dwang ontbreekt bij een individuele aov. (4) averechtse selectie - vooral mensen met een hoog risico verzekeren zich, waardoor de premie hoog wordt."
      },
      {
       "bron": "HAVO Economie CE 2023 Tijdvak 1 (vraag 4)",
@@ -55961,7 +55961,7 @@ var VAKKEN = [
        ""
       ],
       "c": 0,
-      "u": "Als de omgeschoolde koks het vereiste niveau niet halen, kunnen ze niet als specialiteitenkok worden ingezet. De investeringskosten van de scholing zijn dan op geen enkele andere manier terug te verdienen — dat zijn verzonken kosten."
+      "u": "Als de omgeschoolde koks het vereiste niveau niet halen, kunnen ze niet als specialiteitenkok worden ingezet. De investeringskosten van de scholing zijn dan op geen enkele andere manier terug te verdienen - dat zijn verzonken kosten."
      },
      {
       "bron": "HAVO Economie CE 2025 Tijdvak 1, vraag 13 (HA-1210-a-25-1-o)",
@@ -56149,7 +56149,7 @@ var VAKKEN = [
      "Monetair beleid: ECB en rente",
      "Wisselkoersen en internationale handel"
     ],
-    "sam": "<div class=\"sam-head\">Domein E — Goede tijden, slechte tijden</div><div class=\"sam-section\"><h3>Intuïtieve kern</h3><ul><li>De economie beweegt in golven: groei, piek, recessie, herstel.</li><li>Inflatie, werkloosheid en groei hangen sterk samen.</li></ul></div><div class=\"sam-section\"><h3>Conceptueel model</h3><ul><li><strong>Conjunctuur:</strong> schommelingen in economische activiteit.</li><li><strong>BBP:</strong> totale waarde van productie.</li><li><strong>Werkloosheid:</strong> frictie, conjunctureel, structureel.</li><li><strong>Inflatie:</strong> stijging van het algemene prijsniveau.</li><li><strong>Monetaire politiek:</strong> ECB stuurt rente.</li><li><strong>Begrotingsbeleid:</strong> overheid stuurt bestedingen.</li></ul></div><div class=\"sam-section\"><h3>Interactieve vragen</h3><div class=\"qa\"><div class=\"q\" data-toggle=\"answer\">Wat gebeurt er bij een renteverlaging?</div><div class=\"hint\">Hint: lenen wordt aantrekkelijker.</div><div class=\"a hidden\">Lenen wordt goedkoper → meer bestedingen → economische groei.</div></div><div class=\"qa\"><div class=\"q\" data-toggle=\"answer\">Wat is het verschil tussen inflatie en koopkracht?</div><div class=\"hint\">Hint: prijzen vs. wat je kunt kopen.</div><div class=\"a hidden\">Inflatie is prijsstijging; koopkracht is hoeveel je met je inkomen kunt kopen.</div></div><div class=\"qa\"><div class=\"q\" data-toggle=\"answer\">Wanneer ontstaat een recessie?</div><div class=\"hint\">Hint: denk aan dalende bestedingen.</div><div class=\"a hidden\">Wanneer bestedingen dalen en productie afneemt.</div></div></div><div class=\"sam-section\"><h3>Examenvallen</h3><ul><li>Inflatie verwarren met duurdere individuele producten.</li><li>Werkloosheidstypes door elkaar halen.</li><li>BBP zien als volledige welvaartsmaat.</li></ul></div>",
+    "sam": "<div class=\"sam-head\">Domein E - Goede tijden, slechte tijden</div><div class=\"sam-section\"><h3>Intuïtieve kern</h3><ul><li>De economie beweegt in golven: groei, piek, recessie, herstel.</li><li>Inflatie, werkloosheid en groei hangen sterk samen.</li></ul></div><div class=\"sam-section\"><h3>Conceptueel model</h3><ul><li><strong>Conjunctuur:</strong> schommelingen in economische activiteit.</li><li><strong>BBP:</strong> totale waarde van productie.</li><li><strong>Werkloosheid:</strong> frictie, conjunctureel, structureel.</li><li><strong>Inflatie:</strong> stijging van het algemene prijsniveau.</li><li><strong>Monetaire politiek:</strong> ECB stuurt rente.</li><li><strong>Begrotingsbeleid:</strong> overheid stuurt bestedingen.</li></ul></div><div class=\"sam-section\"><h3>Interactieve vragen</h3><div class=\"qa\"><div class=\"q\" data-toggle=\"answer\">Wat gebeurt er bij een renteverlaging?</div><div class=\"hint\">Hint: lenen wordt aantrekkelijker.</div><div class=\"a hidden\">Lenen wordt goedkoper → meer bestedingen → economische groei.</div></div><div class=\"qa\"><div class=\"q\" data-toggle=\"answer\">Wat is het verschil tussen inflatie en koopkracht?</div><div class=\"hint\">Hint: prijzen vs. wat je kunt kopen.</div><div class=\"a hidden\">Inflatie is prijsstijging; koopkracht is hoeveel je met je inkomen kunt kopen.</div></div><div class=\"qa\"><div class=\"q\" data-toggle=\"answer\">Wanneer ontstaat een recessie?</div><div class=\"hint\">Hint: denk aan dalende bestedingen.</div><div class=\"a hidden\">Wanneer bestedingen dalen en productie afneemt.</div></div></div><div class=\"sam-section\"><h3>Examenvallen</h3><ul><li>Inflatie verwarren met duurdere individuele producten.</li><li>Werkloosheidstypes door elkaar halen.</li><li>BBP zien als volledige welvaartsmaat.</li></ul></div>",
     "sv": [
      {
       "v": "Wat is het verschil tussen conjuncturele en structurele werkloosheid?",
@@ -58362,7 +58362,7 @@ var VAKKEN = [
        ""
       ],
       "c": 0,
-      "u": "Bijvoorbeeld: belastingen verlagen (zoals loon- of btw-belasting) en overheidsuitgaven of uitkeringen verhogen. Beide stimuleren de bestedingen. Let op: monetair beleid (rente) hoort hier niet bij — dat is van de centrale bank."
+      "u": "Bijvoorbeeld: belastingen verlagen (zoals loon- of btw-belasting) en overheidsuitgaven of uitkeringen verhogen. Beide stimuleren de bestedingen. Let op: monetair beleid (rente) hoort hier niet bij - dat is van de centrale bank."
      },
      {
       "bron": "HAVO Economie CE 2025 Tijdvak 1 (vraag 7)",
@@ -58382,7 +58382,7 @@ var VAKKEN = [
        ""
       ],
       "c": 0,
-      "u": "Door de gratis rechten stijgen de kosten van deze exporteurs minder dan die van hun buitenlandse concurrenten, en blijft de productie in eigen land. Zo beschermt de overheid de eigen productie en werkgelegenheid — dat is protectie."
+      "u": "Door de gratis rechten stijgen de kosten van deze exporteurs minder dan die van hun buitenlandse concurrenten, en blijft de productie in eigen land. Zo beschermt de overheid de eigen productie en werkgelegenheid - dat is protectie."
      },
      {
       "bron": "HAVO Economie CE 2025 Tijdvak 1, vraag 7 (HA-1210-a-25-1-o)",
@@ -58627,7 +58627,7 @@ var VAKKEN = [
      "Operationaliseren van begrippen",
      "Enquête, interview en observatie"
     ],
-    "sam": "<div class=\"sam-head\">Onderzoeksopzet</div><ul><li><strong>Probleemstelling</strong>: de centrale onderzoeksvraag. Deelvragen helpen die te beantwoorden.</li><li><strong>Hypothese</strong>: een verwacht antwoord dat je via onderzoek bevestigt of weerlegt. Formuleer als \"Als X dan Y\" of \"Naarmate X toeneemt, neemt Y toe/af\".</li><li><strong>Operationaliseren</strong>: een abstract begrip meetbaar maken. Bijv. \"welzijn\" = score op een vragenlijst. Essentieel voor valide meting.</li></ul><div class=\"sam-head\">Kwantitatief vs kwalitatief</div><ul><li><strong>Kwantitatief</strong>: cijfers en statistiek. Grote steekproeven. Doel = meten, vergelijken, generaliseren. Bijv. enquête met gesloten vragen.</li><li><strong>Kwalitatief</strong>: verhalen en ervaringen. Kleine, diepgaande steekproeven. Doel = begrijpen en verklaren. Bijv. diepte-interview, observatie.</li><li><strong>Mixed methods</strong>: combinatie van beide — sterker dan elk afzonderlijk.</li></ul><div class=\"sam-head\">Kwaliteit van onderzoek</div><ul><li><strong>Betrouwbaarheid</strong>: herhaald meten geeft dezelfde uitkomst. Is de meting consistent?</li><li><strong>Validiteit</strong>: meet het instrument wat het zou moeten meten?</li><li><strong>Representativiteit</strong>: is de steekproef een goede afspiegeling van de populatie? Willekeurige trekking = minder vertekening.</li><li><strong>Correlatie ≠ causaliteit</strong>: twee verschijnselen gaan samen, maar dat betekent niet dat het één het ander veroorzaakt. Altijd controleren op derde variabelen (confounders).</li></ul>",
+    "sam": "<div class=\"sam-head\">Onderzoeksopzet</div><ul><li><strong>Probleemstelling</strong>: de centrale onderzoeksvraag. Deelvragen helpen die te beantwoorden.</li><li><strong>Hypothese</strong>: een verwacht antwoord dat je via onderzoek bevestigt of weerlegt. Formuleer als \"Als X dan Y\" of \"Naarmate X toeneemt, neemt Y toe/af\".</li><li><strong>Operationaliseren</strong>: een abstract begrip meetbaar maken. Bijv. \"welzijn\" = score op een vragenlijst. Essentieel voor valide meting.</li></ul><div class=\"sam-head\">Kwantitatief vs kwalitatief</div><ul><li><strong>Kwantitatief</strong>: cijfers en statistiek. Grote steekproeven. Doel = meten, vergelijken, generaliseren. Bijv. enquête met gesloten vragen.</li><li><strong>Kwalitatief</strong>: verhalen en ervaringen. Kleine, diepgaande steekproeven. Doel = begrijpen en verklaren. Bijv. diepte-interview, observatie.</li><li><strong>Mixed methods</strong>: combinatie van beide - sterker dan elk afzonderlijk.</li></ul><div class=\"sam-head\">Kwaliteit van onderzoek</div><ul><li><strong>Betrouwbaarheid</strong>: herhaald meten geeft dezelfde uitkomst. Is de meting consistent?</li><li><strong>Validiteit</strong>: meet het instrument wat het zou moeten meten?</li><li><strong>Representativiteit</strong>: is de steekproef een goede afspiegeling van de populatie? Willekeurige trekking = minder vertekening.</li><li><strong>Correlatie ≠ causaliteit</strong>: twee verschijnselen gaan samen, maar dat betekent niet dat het één het ander veroorzaakt. Altijd controleren op derde variabelen (confounders).</li></ul>",
     "sv": [
      {
       "v": "Welk begrip beschrijft het gebruik van meerdere methoden om de validiteit te verhogen?",
@@ -59212,7 +59212,7 @@ var VAKKEN = [
      "Instituties en hun functies",
      "Pluralisme vs elitisme"
     ],
-    "sam": "<div class=\"sam-head\">Sociologische benadering</div><ul><li><strong>Socialisatie</strong>: het proces waarbij individuen normen, waarden en gedragspatronen internaliseren. Primair (gezin), secundair (school, media, werk).</li><li><strong>Sociale cohesie</strong>: verbondenheid en solidariteit in een groep of samenleving. Hoge cohesie → stabiel. Lage cohesie → desintegratie en conflicten.</li><li><strong>Sociale controle</strong>: Formeel (wet, politie, rechter) of informeel (sociale druk, roddel, uitsluiting). Informele controle is in het dagelijks leven vaker effectief.</li><li><strong>Sociale stratificatie</strong>: lagen op basis van inkomen, opleiding en status. Bepaalt kansen en levensstijl. Open systemen laten meer mobiliteit toe dan gesloten.</li><li><strong>Sociologisch perspectief</strong>: verklaar individueel gedrag vanuit sociale structuren en groepsprocessen — niet alleen individuele keuzes.</li></ul><div class=\"sam-head\">Politicologische benadering</div><ul><li><strong>Macht</strong> (Weber): het vermogen anderen te laten handelen ook als ze dat zelf niet willen. Bronnen: geweld, geld, kennis, charisma, legitimiteit.</li><li><strong>Gezag</strong>: macht die als legitiem erkend wordt. Drie typen: traditioneel (traditie/erfopvolging), charismatisch (persoonlijkheid), rationeel-legaal (wet en procedures).</li><li><strong>Besluitvormingsproces</strong>: agendering → formulering → beslissing → uitvoering → evaluatie. Actoren proberen elke fase te beïnvloeden.</li><li><strong>Pluralisme</strong>: macht verspreid over veel groepen. <strong>Elitisme</strong>: macht geconcentreerd bij kleine elite.</li></ul>",
+    "sam": "<div class=\"sam-head\">Sociologische benadering</div><ul><li><strong>Socialisatie</strong>: het proces waarbij individuen normen, waarden en gedragspatronen internaliseren. Primair (gezin), secundair (school, media, werk).</li><li><strong>Sociale cohesie</strong>: verbondenheid en solidariteit in een groep of samenleving. Hoge cohesie → stabiel. Lage cohesie → desintegratie en conflicten.</li><li><strong>Sociale controle</strong>: Formeel (wet, politie, rechter) of informeel (sociale druk, roddel, uitsluiting). Informele controle is in het dagelijks leven vaker effectief.</li><li><strong>Sociale stratificatie</strong>: lagen op basis van inkomen, opleiding en status. Bepaalt kansen en levensstijl. Open systemen laten meer mobiliteit toe dan gesloten.</li><li><strong>Sociologisch perspectief</strong>: verklaar individueel gedrag vanuit sociale structuren en groepsprocessen - niet alleen individuele keuzes.</li></ul><div class=\"sam-head\">Politicologische benadering</div><ul><li><strong>Macht</strong> (Weber): het vermogen anderen te laten handelen ook als ze dat zelf niet willen. Bronnen: geweld, geld, kennis, charisma, legitimiteit.</li><li><strong>Gezag</strong>: macht die als legitiem erkend wordt. Drie typen: traditioneel (traditie/erfopvolging), charismatisch (persoonlijkheid), rationeel-legaal (wet en procedures).</li><li><strong>Besluitvormingsproces</strong>: agendering → formulering → beslissing → uitvoering → evaluatie. Actoren proberen elke fase te beïnvloeden.</li><li><strong>Pluralisme</strong>: macht verspreid over veel groepen. <strong>Elitisme</strong>: macht geconcentreerd bij kleine elite.</li></ul>",
     "sv": [
      {
       "v": "Wat is socialisatie?",
@@ -60318,7 +60318,7 @@ var VAKKEN = [
      "Media en politiek",
      "Europese Unie en nationale soevereiniteit"
     ],
-    "sam": "<div class=\"sam-head\">Democratie en rechtsstaat</div><ul><li><strong>Parlementaire democratie</strong>: burgers kiezen de Tweede Kamer via verkiezingen. Het parlement controleert de uitvoerende macht (kabinet). De regering is afhankelijk van het vertrouwen van de Tweede Kamer.</li><li><strong>Rechtsstaat</strong>: overheid is gebonden aan de wet. Grondrechten beschermen burgers tegen overheidsmacht. Onafhankelijke rechterlijke macht beoordeelt of de wet correct wordt toegepast.</li><li><strong>Klassieke grondrechten</strong>: vrijheidsrechten — overheid onthoudt zich van ingrijpen. Bijv. vrijheid van meningsuiting, godsdienst, vergadering, privacyrecht.</li><li><strong>Sociale grondrechten</strong>: inspanningsverplichtingen — overheid moet actief zorgen voor welzijn. Bijv. recht op onderwijs, huisvesting, gezondheidszorg.</li></ul><div class=\"sam-head\">Politiek systeem</div><ul><li><strong>Trias politica</strong>: scheiding van wetgevende (parlement maakt wetten), uitvoerende (kabinet voert uit) en rechterlijke macht (rechters toetsen). Doel: voorkomen van machtsmisbruik. Checks and balances.</li><li><strong>Coalitievorming</strong>: geen enkele partij haalt een absolute meerderheid (76 zetels). Meerdere partijen onderhandelen over een regeerakkoord. Informateur → formateur → kabinet.</li><li><strong>Lobbyisme</strong>: bedrijven en maatschappelijke organisaties beïnvloeden politieke besluitvorming door informatie te verstrekken, campagnes te voeren of direct contact met politici. Kan wettelijk of onethisch zijn.</li></ul><div class=\"sam-head\">Politieke ideologieën</div><ul><li><strong>Liberalisme</strong>: nadruk op individuele vrijheid, vrije markt, beperkte overheid. Bijv. VVD.</li><li><strong>Sociaal-democratie</strong>: gelijkheid en solidariteit, sterke verzorgingsstaat. Bijv. PvdA/GL.</li><li><strong>Christendemocratie</strong>: gemeenschap, subsidiariteit (overheid springt pas bij als samenleving tekortschiet), solidariteit. Bijv. CDA, CU.</li><li><strong>Populisme</strong>: de volkswil tegenover de gevestigde elite en instituties. Kan zowel links als rechts zijn. Bijv. PVV.</li></ul>",
+    "sam": "<div class=\"sam-head\">Democratie en rechtsstaat</div><ul><li><strong>Parlementaire democratie</strong>: burgers kiezen de Tweede Kamer via verkiezingen. Het parlement controleert de uitvoerende macht (kabinet). De regering is afhankelijk van het vertrouwen van de Tweede Kamer.</li><li><strong>Rechtsstaat</strong>: overheid is gebonden aan de wet. Grondrechten beschermen burgers tegen overheidsmacht. Onafhankelijke rechterlijke macht beoordeelt of de wet correct wordt toegepast.</li><li><strong>Klassieke grondrechten</strong>: vrijheidsrechten - overheid onthoudt zich van ingrijpen. Bijv. vrijheid van meningsuiting, godsdienst, vergadering, privacyrecht.</li><li><strong>Sociale grondrechten</strong>: inspanningsverplichtingen - overheid moet actief zorgen voor welzijn. Bijv. recht op onderwijs, huisvesting, gezondheidszorg.</li></ul><div class=\"sam-head\">Politiek systeem</div><ul><li><strong>Trias politica</strong>: scheiding van wetgevende (parlement maakt wetten), uitvoerende (kabinet voert uit) en rechterlijke macht (rechters toetsen). Doel: voorkomen van machtsmisbruik. Checks and balances.</li><li><strong>Coalitievorming</strong>: geen enkele partij haalt een absolute meerderheid (76 zetels). Meerdere partijen onderhandelen over een regeerakkoord. Informateur → formateur → kabinet.</li><li><strong>Lobbyisme</strong>: bedrijven en maatschappelijke organisaties beïnvloeden politieke besluitvorming door informatie te verstrekken, campagnes te voeren of direct contact met politici. Kan wettelijk of onethisch zijn.</li></ul><div class=\"sam-head\">Politieke ideologieën</div><ul><li><strong>Liberalisme</strong>: nadruk op individuele vrijheid, vrije markt, beperkte overheid. Bijv. VVD.</li><li><strong>Sociaal-democratie</strong>: gelijkheid en solidariteit, sterke verzorgingsstaat. Bijv. PvdA/GL.</li><li><strong>Christendemocratie</strong>: gemeenschap, subsidiariteit (overheid springt pas bij als samenleving tekortschiet), solidariteit. Bijv. CDA, CU.</li><li><strong>Populisme</strong>: de volkswil tegenover de gevestigde elite en instituties. Kan zowel links als rechts zijn. Bijv. PVV.</li></ul>",
     "sv": [
      {
       "v": "Welk type grondrecht verplicht de overheid actief iets te doen (bijv. zorgen voor onderwijs en huisvesting)?",
@@ -62092,7 +62092,7 @@ var VAKKEN = [
     "ceStatus": "CE",
     "binas": [],
     "val": [
-     "Variabelen door elkaar halen in een formule — controleer altijd welke letter waarvoor staat",
+     "Variabelen door elkaar halen in een formule - controleer altijd welke letter waarvoor staat",
      "Grafiek verkeerd aflezen: let op de schaal, eenheden en het snijpunt met de assen"
     ],
     "onderwerpen": [
@@ -62492,7 +62492,7 @@ var VAKKEN = [
        ""
       ],
       "c": 0,
-      "u": "(a) L(t) = 100 · 0,82^t.\n(b) 100 · 0,82^t < 20 → 0,82^t < 0,2. Logaritmeer: t > log(0,2)/log(0,82) = −0,699/−0,086 ≈ 8,1 uur. Na 8,1 uur daalt de lading onder de 20%.\n(c) L(10) = 100 · 0,82^10 ≈ 100 · 0,137 = 13,7% — dus niet 0%. Wiskundig nadert L(t) = 0 alleen als t → ∞: de exponentiële functie bereikt nooit exact nul. De uitspraak van de fabrikant klopt niet: het model voorspelt nooit L = 0. In de praktijk wordt een batterij als \"leeg\" beschouwd bij bijv. 5% of 10%, maar het model steunt de claim van nul niet."
+      "u": "(a) L(t) = 100 · 0,82^t.\n(b) 100 · 0,82^t < 20 → 0,82^t < 0,2. Logaritmeer: t > log(0,2)/log(0,82) = −0,699/−0,086 ≈ 8,1 uur. Na 8,1 uur daalt de lading onder de 20%.\n(c) L(10) = 100 · 0,82^10 ≈ 100 · 0,137 = 13,7% - dus niet 0%. Wiskundig nadert L(t) = 0 alleen als t → ∞: de exponentiële functie bereikt nooit exact nul. De uitspraak van de fabrikant klopt niet: het model voorspelt nooit L = 0. In de praktijk wordt een batterij als \"leeg\" beschouwd bij bijv. 5% of 10%, maar het model steunt de claim van nul niet."
      },
      {
       "bron": "HAVO Wiskunde B CE 2022 Tijdvak 2 Stelsel vergelijkingen (geen afbeelding)",
@@ -62543,7 +62543,7 @@ var VAKKEN = [
     "ceStatus": "CE",
     "binas": [],
     "val": [
-     "Fout domein gebruiken bij vergelijkingen — controleer altijd of gevonden oplossingen in het gestelde domein vallen",
+     "Fout domein gebruiken bij vergelijkingen - controleer altijd of gevonden oplossingen in het gestelde domein vallen",
      "Nulpunten verkeerd bepalen: factoren afzonderlijk gelijkstellen aan 0, niet optellen"
     ],
     "onderwerpen": [
@@ -63257,7 +63257,7 @@ var VAKKEN = [
     "ceStatus": "CE",
     "binas": [],
     "val": [
-     "Vectorrichting negeren — vectoren hebben richting én grootte, niet alleen een getal",
+     "Vectorrichting negeren - vectoren hebben richting én grootte, niet alleen een getal",
      "Ruimtelijke schets fout opzetten: teken altijd eerst een schets met correcte oriëntatie"
     ],
     "onderwerpen": [
@@ -63897,7 +63897,7 @@ var VAKKEN = [
     "ceStatus": "CE",
     "binas": [],
     "val": [
-     "Afgeleide verwarren met de functie zelf — f'(x) geeft de helling, niet de y-waarde",
+     "Afgeleide verwarren met de functie zelf - f'(x) geeft de helling, niet de y-waarde",
      "Extremum verkeerd classificeren: gebruik het tekenschema van f'(x) of de tweede afgeleide om max/min te bepalen"
     ],
     "onderwerpen": [
@@ -64630,7 +64630,7 @@ var VAKKEN = [
     "ceStatus": "CE",
     "binas": [],
     "val": [
-     "Vectorrichting negeren bij krachtenontleding — vectoren hebben richting én grootte, niet alleen een getal",
+     "Vectorrichting negeren bij krachtenontleding - vectoren hebben richting én grootte, niet alleen een getal",
      "Ruimtelijke schets fout opzetten: teken altijd eerst een duidelijke schets met juiste oriëntatie van assen en hoeken"
     ],
     "onderwerpen": [

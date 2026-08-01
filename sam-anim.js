@@ -3,7 +3,7 @@
 // lijnen/curves tekenen zichzelf (stroke-dashoffset), vlakken en labels faden gestaggerd in.
 // Progressive enhancement: bij prefers-reduced-motion, oude browsers of welke fout dan ook
 // blijven de diagrammen gewoon volledig zichtbaar (authored state). Diagrammen worden nooit
-// permanent verborgen — er zijn harde safety-timeouts die alles terugzetten.
+// permanent verborgen - er zijn harde safety-timeouts die alles terugzetten.
 (function () {
   "use strict";
   try {
@@ -41,7 +41,7 @@
       c.fades.forEach(function (el) { el.style.transition = "none"; el.style.opacity = "0"; });
     }
 
-    // Zet alles terug naar de oorspronkelijke (authored) staat — volledig zichtbaar.
+    // Zet alles terug naar de oorspronkelijke (authored) staat - volledig zichtbaar.
     function reveal(fig) {
       var c = fig.__c; if (!c) return;
       c.draws.concat(c.fades).forEach(function (el) {

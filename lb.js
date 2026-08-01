@@ -35,16 +35,16 @@
   function hide(){banner.classList.remove('show');if(hideT){clearTimeout(hideT);hideT=0;}}
   const dismiss=document.getElementById('offline-dismiss');
   if(dismiss)dismiss.addEventListener('click',hide);
-  window.addEventListener('offline',()=>toast('Geen internet — je voortgang wordt lokaal opgeslagen',false));
+  window.addEventListener('offline',()=>toast('Geen internet - je voortgang wordt lokaal opgeslagen',false));
   window.addEventListener('online',()=>toast('Je bent weer online',true));
-  if(!navigator.onLine)toast('Geen internet — je voortgang wordt lokaal opgeslagen',false);
+  if(!navigator.onLine)toast('Geen internet - je voortgang wordt lokaal opgeslagen',false);
 })();
 
 // ═══════ LEADERBOARD ═══════
 function getLbKey(){return 'examenapp_leaderboard_'+APP_LEVEL;}
 function getLbEntries(){try{return JSON.parse(localStorage.getItem(getLbKey())||'[]');}catch(e){return[];}}
 // Client-side sanity-check: houdt onmogelijke scores uit de gedeelde ranglijst.
-// (Geen vervanging voor Supabase RLS — wél een rem op corruptie door bugs.)
+// (Geen vervanging voor Supabase RLS - wél een rem op corruptie door bugs.)
 function _lbEntryValid(e){
   var s=+e.score, g=+e.goed, t=+e.tot;
   if(!isFinite(s)||s<0||s>1000)return false;      // max haalbare score is 1000
@@ -61,7 +61,7 @@ async function saveLeaderboardEntry(entry){
   all.sort((a,b)=>b.score-a.score);
   if(all.length>200)all=all.slice(0,200);
   localStorage.setItem(getLbKey(),JSON.stringify(all));
-  // Save to Supabase global leaderboard (cross-user) — alleen valide scores
+  // Save to Supabase global leaderboard (cross-user) - alleen valide scores
   if(currentUser && _lbEntryValid(entry)){
     const base={
       user_id:currentUser.id,
@@ -93,7 +93,7 @@ async function saveLeaderboardEntry(entry){
 // samengevoegd met de echte Supabase-scores en ranken gewoon mee.
 const _BOT_VAKNAAM={nl:'Nederlands',wa:'Wiskunde A',wb:'Wiskunde B',bi:'Biologie',sk:'Scheikunde',na:'Natuurkunde',en:'Engels',ec:'Economie',be:'Bedrijfseconomie',gs:'Geschiedenis',ak:'Aardrijkskunde',mw:'Maatschappijwetenschappen',du:'Duits',fr:'Frans',gr:'Grieks',la:'Latijn',in:'Informatica'};
 // Evolutie-stage die plausibel bij de score past (zoals bij echte leerlingen
-// de stage met XP meegroeit). Max 5 — de allerhoogste stage blijft voor echte
+// de stage met XP meegroeit). Max 5 - de allerhoogste stage blijft voor echte
 // toppers.
 function _botStage(score){return score>=900?5:score>=750?4:score>=600?3:score>=450?2:1;}
 // Geloofwaardige badge-collectie die met de score meegroeit (echte badge-id's).
@@ -440,7 +440,7 @@ function _renderLbWithData(){
   const niveauChip=(e)=>e.niveau?`<span class="lb-niveau-chip">${e.niveau.toUpperCase()}</span>`:'';
   // Helper: rank colour class
   const rankCls=(r)=>r===1?'top1':r===2?'top2':r===3?'top3':'';
-  // Helper: premium stage chip — Goud (voorlaatste) en Ultiem (hoogste)
+  // Helper: premium stage chip - Goud (voorlaatste) en Ultiem (hoogste)
   const stageBadge=(e)=>{
     const idx=e.stageIdx!=null?e.stageIdx:0;
     const _u=ANIM_THRESHOLDS.length-1;
@@ -598,7 +598,7 @@ function getUpcomingExams(){
     return cands.filter(e=>e.dt>now).sort((a,b)=>a.dt-b.dt);
   }catch(e){return [];}
 }
-// Eerste kernvak (Nederlands/Engels/wiskunde) van 2027 voor het huidige niveau —
+// Eerste kernvak (Nederlands/Engels/wiskunde) van 2027 voor het huidige niveau -
 // de standaard-countdown zodat er nooit een lege "geslaagd-modus" verschijnt.
 function _firstKernvak2027(){
   if(typeof EXAM_SCHEDULE_2027==='undefined')return null;
@@ -765,7 +765,7 @@ function getVakBestPct(vakId){
 
 // ═══════ EXAMENCOACH ═══════
 // Eerlijke, transparante indicatie op basis van je oefenscores per domein.
-// cijfer = 1 + 9·(gem. beheersing) — géén N-term, dus bewust aan de voorzichtige kant.
+// cijfer = 1 + 9·(gem. beheersing) - géén N-term, dus bewust aan de voorzichtige kant.
 // risico = zwakste domein · winst = domein dat het dichtst bij beheersing (85%) zit.
 function examCoachData(vakId){
   const vak=getVK().find(v=>v.id===vakId);

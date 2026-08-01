@@ -118,8 +118,22 @@ function mascotSVG(mood, size) {
       ${rightArm}
       ${s.spark ? `<g class="m-spark" fill="#facc15"><path d="M99 10 l2.3 5.6 5.6 2.3 -5.6 2.3 -2.3 5.6 -2.3 -5.6 -5.6 -2.3 5.6 -2.3z"/><circle cx="20" cy="24" r="2.4"/><circle cx="96" cy="38" r="1.8"/></g>` : ''}
       ${prop}
+      ${_vonkSkinSVG()}
     </g>
   </svg>`;
+}
+// Gekochte Vonk-skin als accessoire boven op de mascotte (leest de equip live).
+function _vonkSkinSVG() {
+  var id = (typeof getEquippedVonk === 'function') ? getEquippedVonk() : '';
+  if (!id) return '';
+  var M = {
+    vk_crown: { e: '👑', x: 60, y: 7,  s: 30 },
+    vk_party: { e: '🥳', x: 60, y: 8,  s: 26 },
+    vk_glass: { e: '🕶️', x: 60, y: 45, s: 30 },
+    vk_grad:  { e: '🎓', x: 60, y: 8,  s: 30 }
+  };
+  var c = M[id]; if (!c) return '';
+  return '<text x="' + c.x + '" y="' + c.y + '" font-size="' + c.s + '" text-anchor="middle" dominant-baseline="middle">' + c.e + '</text>';
 }
 
 // ─── Vonk die van de zijkant binnenglijdt, iets zegt, en weer wegduikt ───
@@ -328,6 +342,8 @@ var VONK_EXPLAIN = {
   'sc-examen':     { mood: 'kijk', msg: `De echte examen-PDF's en correctievoorschriften, om te downloaden en mee te oefenen.` },
   'sc-zoek':       { mood: 'kijk', msg: `Zoek door álle examens, begrippen en uitleg. Typ een woord en ik vind het voor je.` },
   'sc-herhalen':   { mood: 'kijk', msg: `Kennis zakt weg als je 'm niet ophaalt. Ik zet hier op tijd de onderdelen klaar die dreigen weg te zakken, zodat ze blijven zitten.` },
+  'sc-shop':       { mood: 'blij', msg: `Het winkeltje! Met de munten die je verdient door te oefenen koop je <b>streak-freezes</b> (die je streak redden), <b>XP-boosts</b>, <b>thema's</b> die de hele app herkleuren en <b>skins</b> voor je avatar en voor mij. Alles is optioneel, oefenen blijft altijd gratis.` },
+  'sc-league':     { mood: 'trots', msg: `De weekwedstrijd! Je strijdt in je divisie tegen andere leerlingen. Verdien XP door te oefenen en klim omhoog: de top promoveert, de onderste zakken. Elke maandag begint een nieuwe ronde. Zin om te {{oefenen|vakken}}?` },
 };
 function vonkExplain() {
   const cur = document.querySelector('.sc.on');

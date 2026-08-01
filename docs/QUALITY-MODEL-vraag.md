@@ -1,15 +1,15 @@
-# Kwaliteitsmodel — de leervraag
+# Kwaliteitsmodel - de leervraag
 
-**De volgende fundamentele vraag is niet technisch maar onderwijskundig:** wat maakt een leervraag *goed*? Dit model definieert dat expliciet, per dimensie, met de **controlemethode** (regel / model / mens). Zo staat de kwaliteitslat vast — **onafhankelijk van welk AI-model** je later gebruikt. Een generator (mens of LLM) mag veranderen; deze criteria niet.
+**De volgende fundamentele vraag is niet technisch maar onderwijskundig:** wat maakt een leervraag *goed*? Dit model definieert dat expliciet, per dimensie, met de **controlemethode** (regel / model / mens). Zo staat de kwaliteitslat vast - **onafhankelijk van welk AI-model** je later gebruikt. Een generator (mens of LLM) mag veranderen; deze criteria niet.
 
-De Evaluation Engine meet de `regel`-dimensies nu; `model`/`mens` zijn pluggable. De evaluator **beslist niet** — hij levert `{score, issues, warnings, metrics}`; de pipeline past beleid toe.
+De Evaluation Engine meet de `regel`-dimensies nu; `model`/`mens` zijn pluggable. De evaluator **beslist niet** - hij levert `{score, issues, warnings, metrics}`; de pipeline past beleid toe.
 
-## A. Structurele kwaliteit — controle: **regel** (gebouwd)
+## A. Structurele kwaliteit - controle: **regel** (gebouwd)
 
 | # | Dimensie | Criterium | Metric / issue |
 |---|---|---|---|
 | A1 | Eén juist antwoord | precies één geldige, gemarkeerde optie | `invalid_answer` |
-| A2 | Vier opties | 4 antwoordopties (HAVO-conventie) | — |
+| A2 | Vier opties | 4 antwoordopties (HAVO-conventie) | - |
 | A3 | Geen dubbele opties | alle opties uniek (anders ambigu) | `duplicate_options` |
 | A4 | Uitleg aanwezig | niet-triviale `u` (didactische terugkoppeling) | `missing_explanation` |
 | A5 | Moeilijkheid vastgelegd | `d ∈ {1,2,3}` | `difficulty_missing` |
@@ -18,7 +18,7 @@ De Evaluation Engine meet de `regel`-dimensies nu; `model`/`mens` zijn pluggable
 | A8 | Geen duplicaten | geen identieke stam binnen het vak | `duplicate_questions` |
 | A9 | Leerdoel-koppeling | gekoppeld (matched), niet unmatched/off_level | `unmatched_couplings` |
 
-## B. Inhoudelijke kwaliteit — controle: **model + mens** (pluggable, nog niet actief)
+## B. Inhoudelijke kwaliteit - controle: **model + mens** (pluggable, nog niet actief)
 
 | # | Dimensie | Wat het toetst | Controle |
 |---|---|---|---|
@@ -45,4 +45,4 @@ Beleid is verwisselbaar zonder de evaluator aan te raken. De criteria (dit model
 
 ## Baseline
 
-De huidige structurele meting is bevroren als **onafhankelijke referentie** (`knowledge/evaluation-baseline-havo.json`). De evaluator vond die problemen *voordat* er iets is aangepast — bewijs dat hij niet is ontworpen om alleen eigen output goed te keuren. Latere verbeteringen worden meetbaar: *"de score steeg van 95,1 naar X."*
+De huidige structurele meting is bevroren als **onafhankelijke referentie** (`knowledge/evaluation-baseline-havo.json`). De evaluator vond die problemen *voordat* er iets is aangepast - bewijs dat hij niet is ontworpen om alleen eigen output goed te keuren. Latere verbeteringen worden meetbaar: *"de score steeg van 95,1 naar X."*

@@ -1,21 +1,21 @@
-# Slagio Design System — "Examenpapier & De Vlag Uit"
+# Slagio Design System - "Examenpapier & De Vlag Uit"
 
 > Tokensysteem v1. Eerst goedkeuren, dan uitrollen naar alle schermen.
 
 ## Concept
 
 Slagio's wereld is de Nederlandse examenwereld: ruitjespapier, de stopwatch,
-de nakijkpen, de cesuur — en als beloning het enige échte Nederlandse
+de nakijkpen, de cesuur - en als beloning het enige échte Nederlandse
 slagingssymbool: **de vlag met de schooltas eraan**. Het designsysteem beweegt
 van *studeernacht* (donker, gefocust, geconcentreerd) naar *de vlag gaat uit*
 (warm, feestelijk, opgelucht). Elke beloning in de app is een kleine vlag-uit.
 
 Geen van de drie AI-defaultlooks. De identiteit komt uit drie eigen materialen:
-1. **Ruitjespapier** — het grid waarop elke Nederlandse scholier werkt. Subtiele
+1. **Ruitjespapier** - het grid waarop elke Nederlandse scholier werkt. Subtiele
    25–28px ruitlijnen als textuur op hero-/focusvlakken (CSS, bijna gratis).
-2. **De levende mascotte** — het signature-element. Geen decoratie maar een
+2. **De levende mascotte** - het signature-element. Geen decoratie maar een
    metgezel die écht reageert op je voortgang (zie Avatar-states).
-3. **De examenklok** — tijd als materiaal: tabulaire cijfers, de timer-ring,
+3. **De examenklok** - tijd als materiaal: tabulaire cijfers, de timer-ring,
    de countdown. Alle data in mono/tabular zodat cijfers nooit verspringen.
 
 ## Kleurtokens
@@ -34,7 +34,7 @@ bestaande CSS-variabelen (`--or`, `--bg`, …) bij de uitrol.
 
 ## Typografie
 
-- **Display**: Bricolage Grotesque 800–900, krap gespatieerd. Spaarzaam — koppen
+- **Display**: Bricolage Grotesque 800–900, krap gespatieerd. Spaarzaam - koppen
   en getallen die ertoe doen.
 - **Body**: Inter, 15px basis, lijnhoogte 1.7.
 - **Data/utility**: `ui-monospace`-stack met `font-variant-numeric: tabular-nums`
@@ -53,9 +53,9 @@ bestaande CSS-variabelen (`--or`, `--bg`, …) bij de uitrol.
 
 De mascotte zit als **companion** in de quiz (vast, klein, pointer-events:none)
 zodat de reacties zichtbaar zijn op het moment dat ze gebeuren.
-Demo-route: `/index.html?avatardemo=1` — alle states handmatig triggerbaar.
+Demo-route: `/index.html?avatardemo=1` - alle states handmatig triggerbaar.
 
-## Per-vak werelden (uitrolfase — nog niet gebouwd)
+## Per-vak werelden (uitrolfase - nog niet gebouwd)
 
 Mechanisme: `data-vak="<id>"` op de schermwrapper + per vak een tokenset:
 `--vak-c1/-c2` (palet), `--vak-motief` (CSS-achtergrond: blueprint-grid voor

@@ -74,7 +74,7 @@ const EXAM_SCHEDULE=[
 {datum:'2026-06-23',tijd:'13:30–16:30',vak:'Biologie',duur:'3 uur',niveau:'vwo',vakId:'bi',tijdvak:2},
 {datum:'2026-06-23',tijd:'13:30–16:30',vak:'Maatschappijwetenschappen',duur:'3 uur',niveau:'vwo',vakId:'mw',tijdvak:2}
 ];
-// ═══════ EXAMENROOSTER 2027 — 1e tijdvak (CvTE) ═══════
+// ═══════ EXAMENROOSTER 2027 - 1e tijdvak (CvTE) ═══════
 // Alleen tijdvak 1 is per vak vastgesteld; het herkansingsrooster (2e tijdvak)
 // en 3e tijdvak worden pas later per vak/kandidaat bekend (zie renderSchedule).
 const EXAM_SCHEDULE_2027=[
@@ -243,7 +243,7 @@ function renderTijdvak3(){
   }).join('');
   el.innerHTML=`<div class="tv3-info">📌 Het <strong>3e tijdvak</strong> (${periode}) wordt door <strong>DUO</strong> per kandidaat ingepland - er is geen openbaar vakkenrooster. Voer hieronder zelf je vak, datum en tijd in; de timer telt er dan naar af.</div>
   <div class="tv3-form">
-    <select id="tv3-vak" class="tv3-input"><option value="">— kies vak —</option>${vakken.map(v=>`<option value="${v.id}">${v.naam}</option>`).join('')}</select>
+    <select id="tv3-vak" class="tv3-input"><option value="">- kies vak -</option>${vakken.map(v=>`<option value="${v.id}">${v.naam}</option>`).join('')}</select>
     <input type="date" id="tv3-datum" class="tv3-input" min="2027-08-01" max="2027-08-31">
     <input type="time" id="tv3-tijd" class="tv3-input" value="13:30">
     <button class="tv3-add" onclick="addTV3()">+ Toevoegen</button>
@@ -351,7 +351,7 @@ function buildSlaagInputs(){
   box.innerHTML+=`<div style="font-size:11px;color:var(--mu);margin-bottom:8px;display:flex;gap:10px"><span style="flex:1">Vak</span><span style="width:70px;text-align:center">SE</span><span style="width:70px;text-align:center">CE</span></div>`;
   getVK().forEach(v=>{
     const seVal=saved[v.id]!=null?saved[v.id]:'';
-    box.innerHTML+=`<div class="calc-row"><span class="calc-label">${v.naam} <span style="color:var(--mu);font-size:10px">(${v.code})</span></span><input type="number" class="calc-input slaag-se" data-vak="${v.code}" min="1" max="10" step="0.1" placeholder="—" value="${seVal}"><input type="number" class="calc-input slaag-ce" data-vak="${v.code}" min="1" max="10" step="0.1" placeholder="—"></div>`;
+    box.innerHTML+=`<div class="calc-row"><span class="calc-label">${v.naam} <span style="color:var(--mu);font-size:10px">(${v.code})</span></span><input type="number" class="calc-input slaag-se" data-vak="${v.code}" min="1" max="10" step="0.1" placeholder="-" value="${seVal}"><input type="number" class="calc-input slaag-ce" data-vak="${v.code}" min="1" max="10" step="0.1" placeholder="-"></div>`;
   });
 }
 function buildEindVakSelect(){
@@ -381,7 +381,7 @@ function buildHerkSERow(vakId){
   if(!row)return;
   const saved=getSavedCijfers();
   const cij=vakId&&saved[vakId]!=null?saved[vakId]:null;
-  row.innerHTML=`<div class="calc-row"><span class="calc-label">SE-cijfer</span><input type="number" id="herk-se" class="calc-input" min="1" max="10" step="0.1" placeholder="—" value="${cij!=null?cij:''}">${cij!=null?`<span style="font-size:11px;color:#22C55E;font-weight:600;white-space:nowrap">✓ opgeslagen</span>`:''}</div>`;
+  row.innerHTML=`<div class="calc-row"><span class="calc-label">SE-cijfer</span><input type="number" id="herk-se" class="calc-input" min="1" max="10" step="0.1" placeholder="-" value="${cij!=null?cij:''}">${cij!=null?`<span style="font-size:11px;color:#22C55E;font-weight:600;white-space:nowrap">✓ opgeslagen</span>`:''}</div>`;
 }
 function berekenSlaag(){
   const seInputs=document.querySelectorAll('.slaag-se');
@@ -637,7 +637,7 @@ function _parseSamCards(html){
 }
 
 function startFlash(){
-  // Flashcards putten uit de rijke samenvatting (SAM_RICH, lazy geladen) — eerst zeker laden.
+  // Flashcards putten uit de rijke samenvatting (SAM_RICH, lazy geladen) - eerst zeker laden.
   if(typeof ensureSamData==='function'&&typeof samReady==='function'&&typeof APP_LEVEL!=='undefined'&&!samReady(APP_LEVEL)){ensureSamData(APP_LEVEL,startFlash);return;}
   if(ST.vak&&typeof ensureVakData==='function'&&typeof vakHydrated==='function'&&!vakHydrated(APP_LEVEL,ST.vak.id)){ensureVakData(APP_LEVEL,ST.vak.id,startFlash);return;}
   trackEvent('flashcard',{domein:ST.domein?.naam||null});
@@ -798,7 +798,7 @@ function _fcSummary(){
   const today=new Date();
   const dueDates=FC.cards.map(c=>srData[srKey(FC.vakId,FC.domId,c.term)]?.due).filter(Boolean).sort();
   const nextDue=dueDates[0];
-  let nextLabel='—';
+  let nextLabel='-';
   if(nextDue){
     const diff=Math.round((new Date(nextDue)-today)/(1000*60*60*24));
     nextLabel=diff<=0?'Vandaag':diff===1?'Morgen':'Over '+diff+' dagen';

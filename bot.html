@@ -206,13 +206,13 @@ svg { display:block; width:100%; height:auto; touch-action:none }
 
   <div class="hero">
     <div class="lbl">Portefeuille (gesimuleerd)</div>
-    <div class="bal tnum" id="h-balance">—</div>
+    <div class="bal tnum" id="h-balance">-</div>
     <div class="chg" id="h-change"></div>
     <div class="split">
-      <div><div class="k">Belegd</div><div class="v tnum" id="h-invested">—</div></div>
-      <div><div class="k">Cash</div><div class="v tnum" id="h-cash">—</div></div>
-      <div><div class="k">Strategie</div><div class="v" id="h-strat">—</div></div>
-      <div><div class="k">Markten</div><div class="v" id="h-markets">—</div></div>
+      <div><div class="k">Belegd</div><div class="v tnum" id="h-invested">-</div></div>
+      <div><div class="k">Cash</div><div class="v tnum" id="h-cash">-</div></div>
+      <div><div class="k">Strategie</div><div class="v" id="h-strat">-</div></div>
+      <div><div class="k">Markten</div><div class="v" id="h-markets">-</div></div>
     </div>
     <div class="statusline" id="h-status"></div>
     <div class="sub" id="h-updated"></div>
@@ -226,7 +226,7 @@ svg { display:block; width:100%; height:auto; touch-action:none }
   <div class="card">
     <div class="rng" id="ranges"></div>
     <div class="chart-head">
-      <span class="mut" style="font-size:12px" id="ch-range">—</span>
+      <span class="mut" style="font-size:12px" id="ch-range">-</span>
       <span class="d" id="ch-delta"></span>
     </div>
     <div class="chartwrap">
@@ -254,7 +254,7 @@ svg { display:block; width:100%; height:auto; touch-action:none }
   <div class="stopbox">
     <h2 style="margin:0 0 2px;color:var(--down)">⛔ Noodstop</h2>
     <p>Verkoopt <b>alles naar EUR</b> en stopt de bot <b>permanent</b> bij zijn volgende cyclus.
-    Weer aanzetten kan daarna alleen op de machine zelf — bewust niet via deze pagina.</p>
+    Weer aanzetten kan daarna alleen op de machine zelf - bewust niet via deze pagina.</p>
     <div class="row" style="flex-wrap:wrap">
       <input id="stopconfirm" placeholder="typ STOP">
       <button id="stopbtn" disabled>Noodstop</button>
@@ -305,7 +305,7 @@ function enter(){
 async function load(){
   const {data,error}=await SB.from('bot_state').select('bot_id, state, updated_at').order('bot_id');
   if(error){ $('h-status').innerHTML='<span class="down">Kon status niet laden</span>'; return; }
-  if(!data || !data.length){ $('h-balance').textContent='—'; $('h-status').textContent='Nog geen data — draait de bot al met webportaal-sync?'; return; }
+  if(!data || !data.length){ $('h-balance').textContent='-'; $('h-status').textContent='Nog geen data - draait de bot al met webportaal-sync?'; return; }
   BOTS=data;
   if(!SELECTED || !BOTS.find(b=>b.bot_id===SELECTED)) SELECTED=BOTS[0].bot_id;
   renderSwitcher();
@@ -331,22 +331,22 @@ function render(){
   $('h-balance').textContent=eur(s.equity_now);
   const d=s.equity_now-s.day_start, dc=d>=0?'up':'down';
   $('h-change').innerHTML=`<span class="${dc}">${d>=0?'▲':'▼'} ${eur(Math.abs(d))} · ${pct(d/s.day_start*100)} vandaag</span>`;
-  const SNAMES={dca:'DCA — bijkopen & vasthouden', momentum_ma_cross:'Momentum — trend volgen',
-    grid:'Grid — kopen laag / verkopen hoog', cross_sectional:'Rotatie — sterkste coins',
-    vol_target:'Allocatie — risico sturen'};
+  const SNAMES={dca:'DCA - bijkopen & vasthouden', momentum_ma_cross:'Momentum - trend volgen',
+    grid:'Grid - kopen laag / verkopen hoog', cross_sectional:'Rotatie - sterkste coins',
+    vol_target:'Allocatie - risico sturen'};
   $('h-invested').textContent=eur(s.invested||0); $('h-cash').textContent=eur(s.cash);
   $('h-strat').textContent=SNAMES[s.strategy]||s.strategy; $('h-markets').textContent=(s.n_markets??0);
 
   let sc,st;
-  if(s.halted){sc='var(--down)';st='⛔ Gestopt — '+esc(s.halt_reason||'kill switch');}
+  if(s.halted){sc='var(--down)';st='⛔ Gestopt - '+esc(s.halt_reason||'kill switch');}
   else if(s.paused_until){sc='var(--warn)';st='⏸ Dag-pauze tot '+esc(s.paused_until)+' UTC';}
-  else{sc='var(--up)';st='Actief — kill-switches op groen';}
+  else{sc='var(--up)';st='Actief - kill-switches op groen';}
   $('h-status').innerHTML=`<span class="dot" style="background:${sc}"></span><span>${st}</span>`;
   const age=(Date.now()-new Date(s.updated||s._upd).getTime())/60000;
-  $('h-updated').innerHTML=(age>4?'<span class="down">bot lijkt offline — </span>':'')
+  $('h-updated').innerHTML=(age>4?'<span class="down">bot lijkt offline - </span>':'')
     +'laatste update '+Math.max(0,Math.round(age))+' min geleden · ververst ~elke minuut · geen rendementsbelofte';
   const pv=(s.thinking&&s.thinking.provenance)||{};
-  $('h-prov').textContent=pv.code?`code ${pv.code} · config ${pv.config||'—'} · py ${pv.python||'—'} · elke beslissing herleidbaar`:'';
+  $('h-prov').textContent=pv.code?`code ${pv.code} · config ${pv.config||'-'} · py ${pv.python||'-'} · elke beslissing herleidbaar`:'';
 
   renderHealth(); renderThinking(); drawChart(); renderMetrics(); renderHoldings(); renderTrades(); renderBlocks();
 }
@@ -378,13 +378,13 @@ const STRAT_WHY={dca:'Koopt periodiek bij',momentum_ma_cross:'Volgt trends',
   vol_target:'Stuurt op risico',hold:'Handelt alleen op nieuws/events'};
 const PLAIN_STANCE={kopen:'koopt bij',verkopen:'bouwt af',herbalanceren:'herbalanceert',
   cash:'houdt cash aan',wachten:'wacht af',gestopt:'is gestopt',pauze:'pauzeert'};
-const TONE_LABEL={'risk-on':'📈 risk-on','risk-off':'📉 risk-off','gemengd':'⚖️ gemengd','onbekend':'—'};
+const TONE_LABEL={'risk-on':'📈 risk-on','risk-off':'📉 risk-off','gemengd':'⚖️ gemengd','onbekend':'-'};
 function convClass(c){ return c>0.15?'bullish':c<-0.15?'bearish':'neutraal'; }
 
 function renderThinking(){
   const t=STATE.thinking;
   if(!t||!t.latest){
-    $('thinking').innerHTML='<div class="empty">nog geen beoordeling — de bot legt zijn gedachtegang vanaf de eerstvolgende cyclus vast</div>';
+    $('thinking').innerHTML='<div class="empty">nog geen beoordeling - de bot legt zijn gedachtegang vanaf de eerstvolgende cyclus vast</div>';
     return;
   }
   const L=t.latest, mk=L.market||{};
@@ -406,7 +406,7 @@ function renderThinking(){
     <div class="rl">Belangrijkste redenen</div>
     ${reasons.map((r,i)=>`<div class="rz"><span class="n">${i+1}</span>
       <span style="min-width:0"><span class="rb${r.kind==='external'?' ':''}">${esc(r.label)}</span>
-        <span class="rd">— ${esc(r.detail)}</span></span>
+        <span class="rd">- ${esc(r.detail)}</span></span>
       ${r.n_obs?`<span class="rel" title="geleerde precisie over ${r.n_obs} beoordeelde observaties">betrouwbaarheid ${Math.round(r.reliability*100)}%</span>`:''}
     </div>`).join('')}</div>` : '';
 
@@ -468,7 +468,7 @@ const netpct = x => (x>=0?'+':'−')+Math.abs(x*100).toFixed(2)+'%';
 function renderReliability(rel){
   const rows=(rel||[]).filter(r=>r.n>0);
   if(!rows.length) return `<div class="relboard"><div class="rl">Factor-track record</div>
-    <div class="mut" style="font-size:12px">nog te weinig afgerekende observaties — het track record wordt vanaf ~1 dag opgebouwd (forward-only). Elke factor verdient zijn plek op <b>excess-rendement na kosten</b> dat statistisch van ruis te onderscheiden is, niet op accuracy.</div></div>`;
+    <div class="mut" style="font-size:12px">nog te weinig afgerekende observaties - het track record wordt vanaf ~1 dag opgebouwd (forward-only). Elke factor verdient zijn plek op <b>excess-rendement na kosten</b> dat statistisch van ruis te onderscheiden is, niet op accuracy.</div></div>`;
   const RG={bull:'🐂',bear:'🐻',chop:'〰️',onbekend:'?'};
   const DR={'drift-down':'<span class="drift dn" title="concept-drift: edge kantelt neerwaarts">⚠ drift ↓</span>',
     'drift-up':'<span class="drift up" title="concept-drift: edge kantelt opwaarts">⚠ drift ↑</span>'};
@@ -478,20 +478,20 @@ function renderReliability(rel){
       <tbody>${rows.map(r=>{
         const nc=r.net_edge>=0?'pos':'neg', st=esc(r.status||'observeren');
         const sig=r.fdr_significant?' ✓':'';
-        const pv=(r.p_value!=null)?(r.p_value<0.001?'&lt;0.001':r.p_value.toFixed(3)):'—';
+        const pv=(r.p_value!=null)?(r.p_value<0.001?'&lt;0.001':r.p_value.toFixed(3)):'-';
         const rgs=Object.entries(r.regimes||{}).map(([k,v])=>
           `<span class="${v>=0?'p':'n'}">${RG[k]||k} ${netpct(v)}</span>`).join('');
         return `<tr>
           <td>${esc(r.label)}${sig}</td>
-          <td>${r.n} <span class="mut">(${r.n_eff??'—'})</span></td>
-          <td class="${nc}">${r.n>=20?netpct(r.net_edge):'—'}</td>
+          <td>${r.n} <span class="mut">(${r.n_eff??'-'})</span></td>
+          <td class="${nc}">${r.n>=20?netpct(r.net_edge):'-'}</td>
           <td>${pv}</td>
-          <td><span class="rgm">${rgs||'—'}</span></td>
+          <td><span class="rgm">${rgs||'-'}</span></td>
           <td>${DR[r.drift]||'<span class="mut">stabiel</span>'}</td>
           <td><span class="sbadge sb-${st}">${st}</span></td>
         </tr>`;}).join('')}</tbody>
     </table></div>
-    <div class="mut" style="font-size:11px;margin-top:8px">"Excess/obs" = hoeveel de coin het in de factor-richting <b>beter deed dan de gemiddelde coin</b> (opportunity cost), ná kosten. "Obs. (eff.)" = ná overlap-correctie (24u-vensters die elk uur worden gemeten overlappen). "p (FDR)" = de p-waarde; het ✓-vinkje geldt alleen als de factor de <b>Benjamini-Hochberg</b>-correctie over álle factoren overleeft — zo tellen "toevallig significante" niet mee. "Drift" bewaakt (Page-Hinkley) of een edge recent kantelt; een <b>drift ↓</b> haalt het hogere gewicht er direct af. Status <b>actief</b> vereist: significant ná FDR + regime-stabiel + geen neerwaartse drift.</div></div>`;
+    <div class="mut" style="font-size:11px;margin-top:8px">"Excess/obs" = hoeveel de coin het in de factor-richting <b>beter deed dan de gemiddelde coin</b> (opportunity cost), ná kosten. "Obs. (eff.)" = ná overlap-correctie (24u-vensters die elk uur worden gemeten overlappen). "p (FDR)" = de p-waarde; het ✓-vinkje geldt alleen als de factor de <b>Benjamini-Hochberg</b>-correctie over álle factoren overleeft - zo tellen "toevallig significante" niet mee. "Drift" bewaakt (Page-Hinkley) of een edge recent kantelt; een <b>drift ↓</b> haalt het hogere gewicht er direct af. Status <b>actief</b> vereist: significant ná FDR + regime-stabiel + geen neerwaartse drift.</div></div>`;
 }
 
 function renderRead(r){
@@ -517,15 +517,15 @@ function renderRead(r){
 
 function renderMetrics(){
   const m=STATE.metrics||{}, vb=m.vs_benchmark_pct;
-  const f=(x,d,s='')=>x==null?'—':(x.toFixed(d)+s);
+  const f=(x,d,s='')=>x==null?'-':(x.toFixed(d)+s);
   const tiles=[
-    ['t.o.v. vasthouden', vb==null?'—':pct(vb), vb==null?'':(vb>=0?'up':'down')],
+    ['t.o.v. vasthouden', vb==null?'-':pct(vb), vb==null?'':(vb>=0?'up':'down')],
     ['Max drawdown', f(m.max_dd_pct,1,'%'), ''],
     ['Sharpe', f(m.sharpe,2), ''],
     ['Sortino', f(m.sortino,2), ''],
     ['Volatiliteit', f(m.volatility_pct,0,'%'), ''],
     ['Trades', (m.n_trades??0)+'', ''],
-    ['Win-ratio', m.win_rate==null?'—':m.win_rate.toFixed(0)+'% ('+(m.n_closed||0)+')', ''],
+    ['Win-ratio', m.win_rate==null?'-':m.win_rate.toFixed(0)+'% ('+(m.n_closed||0)+')', ''],
     ['Gem. winst / verlies', eur(m.avg_win||0)+' / '+eur(m.avg_loss||0), ''],
   ];
   $('metrics').innerHTML='<div class="mgrid">'+tiles.map(([l,v,c])=>
@@ -595,7 +595,7 @@ function renderTrades(){
 function renderBlocks(){
   const bs=STATE.blocks||[];
   $('blocks').innerHTML = bs.length ? bs.slice(0,12).map(b=>
-    `<div class="blk"><div>${esc(b.pair?base(b.pair):'—')} — ${esc(b.reason)}</div>
+    `<div class="blk"><div>${esc(b.pair?base(b.pair):'-')} - ${esc(b.reason)}</div>
      <div class="t tnum">${fmtWhen(b.t)}</div></div>`).join('')
     : '<div class="empty">geen blokkades</div>';
 }
@@ -675,7 +675,7 @@ function wireHover(){
 $('stopconfirm').addEventListener('input',()=>{ $('stopbtn').disabled=$('stopconfirm').value!=='STOP'; });
 $('stopbtn').onclick=async()=>{ $('stopbtn').disabled=true;
   const {error}=await SB.from('bot_commands').insert({command:'emergency_stop', bot_id:SELECTED});
-  $('stopmsg').textContent=error?'Mislukt: '+error.message:'Noodstop geplaatst — de bot voert hem bij zijn volgende cyclus uit.';
+  $('stopmsg').textContent=error?'Mislukt: '+error.message:'Noodstop geplaatst - de bot voert hem bij zijn volgende cyclus uit.';
   $('stopconfirm').value=''; };
 
 init();

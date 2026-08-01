@@ -1,13 +1,13 @@
 # Design-werknotities (per pass)
 
-## Pass 0 — Stap 0: verkenning & baseline (2026-06-13)
+## Pass 0 - Stap 0: verkenning & baseline (2026-06-13)
 
 **Stack**: vanilla JS PWA, geen build-step, GitHub Pages. index.html (~2.4k regels)
-+ 15 JS-bestanden, styles.css (~4.7k regels, ±400KB raw / ~50KB gzip — groot maar
++ 15 JS-bestanden, styles.css (~4.7k regels, ±400KB raw / ~50KB gzip - groot maar
 niet blokkerend kritiek; opschonen kandidaat voor latere pass). SW cachet alles
 (cache-first), versie-bump per deploy. Routing: `show('sc-X')` + hash.
 
-**Mascotte**: `ANIMAL_EVOLUTIONS` in profile.js — inline SVG-strings, 5+ stadia
+**Mascotte**: `ANIMAL_EVOLUTIONS` in profile.js - inline SVG-strings, 5+ stadia
 per dier, centrale renderfunctie `getAnimalDisplay()`. V4-laag (eerder gebouwd)
 gaf idle-leven: ademen, knipperen, hop, squish.
 
@@ -15,16 +15,16 @@ gaf idle-leven: ademen, knipperen, hop, squish.
 
 **Baseline-meting**: Lighthouse CLI niet beschikbaar op deze machine (geen node).
 Proxy-baseline: preview-rendering 60fps-soepel, geen console-errors, first paint
-direct (statische HTML+CSS). CLS-risico's: geen — alle animatie transform/opacity.
+direct (statische HTML+CSS). CLS-risico's: geen - alle animatie transform/opacity.
 Meet Lighthouse via PageSpeed Insights op slagio.nl na deploy (actie eigenaar of
 latere pass met tooling).
 
-**Gekozen aanpak**: lichtst mogelijke — CSS-variabelen + SVG/CSS-animatie +
+**Gekozen aanpak**: lichtst mogelijke - CSS-variabelen + SVG/CSS-animatie +
 één kleine JS-laag (v4.js). Geen frameworks, geen WebGL nodig: de mascottes zijn
 SVG en animeren GPU-vriendelijk met transform/opacity. Geen nieuwe fonts (mono via
 ui-monospace-stack = 0KB).
 
-## Pass 1 — Avatar-state-engine + quiz-companion + hero-tokens
+## Pass 1 - Avatar-state-engine + quiz-companion + hero-tokens
 
 **Geprobeerd**: state-machine in v4.js (`v4AvatarReact`), companion in sc-quiz,
 event-wiring in quiz.js/features.js, ruitjespapier-textuur in hero, tabulaire
@@ -52,7 +52,7 @@ mono voor countdown/timer, demo-route `?avatardemo=1`.
 **Status**: hero + mascotte-engine af, geverifieerd, gecommit. Wacht op
 akkoord eigenaar voor uitrol (per-vak werelden, overige schermen).
 
-## Pass 2 — Per-vak werelden (data-vak-mechanisme)
+## Pass 2 - Per-vak werelden (data-vak-mechanisme)
 
 **Geprobeerd**: één `data-vak` op <html> (gezet via gewrapte show()/openVak),
 per vak een tokenset: `--vak-or` (accent) + `--vw-motif` (achtergrondmotief).
@@ -63,7 +63,7 @@ en=Th, du=ß, fr=é).
 
 **Gezien (vision-check, screenshots)**:
 1. Eerste versie gebruikte `position:fixed` full-viewport ::before met
-   mask — rasterizer liep vast (en reëel perf-risico: dure composite-laag).
+   mask - rasterizer liep vast (en reëel perf-risico: dure composite-laag).
 2. data-vak werd niet gezet: ST.vak wordt nét ná show() gezet → MutationObserver-
    race. Manueel werkte wel.
 3. bi/gs/wa/sk geverifieerd: elk onmiskenbaar eigen wereld, light+dark,
@@ -82,7 +82,7 @@ representatieve vakken in alle modi. Eén mechanisme; nieuw vak = nieuwe
 tokenset. AA-contrast blijft (tekst op solide kaarten; motief is lage-alpha
 achtergrond). SW v156.
 
-## Pass 3 — Per-vak werelden op de SEO-vakpagina's (170 pagina's)
+## Pass 3 - Per-vak werelden op de SEO-vakpagina's (170 pagina's)
 
 **Geprobeerd**: gedeelde `vakken/vak-theme.css` met dezelfde 17 werelden als
 de app (palet --accent + motief --vw-motif). Python-script injecteert
@@ -94,7 +94,7 @@ CTA accent-gradient + gloed, kaart-accentranden + hover-lift, accent
 domein-links, motief-achtergrond per vak.
 
 **Gezien (vision-check, screenshots)**:
-- scheikunde (desktop): moleculair amber — gloeiende titel/CTA, atoomrooster ✓
+- scheikunde (desktop): moleculair amber - gloeiende titel/CTA, atoomrooster ✓
 - nederlands (desktop): reuze-"ij" typografisch oranje ✓
 - aardrijkskunde (mobiel): hoogtelijnen smaragd, responsive topbalk ✓
 - Injectie correct: ec/bi/la/calculators (overgeslagen) geverifieerd.
@@ -107,7 +107,7 @@ automatisch (fetch-handler) → offline werkt na eerste bezoek.
 **Status**: alle 170 vakpagina's (havo+vwo, hoofd+domein) gethematiseerd
 via één mechanisme. Calculator-/examenrooster-pagina's bewust neutraal.
 
-## Pass 4 — Scherm-werelden in de app (bestemmingsschermen)
+## Pass 4 - Scherm-werelden in de app (bestemmingsschermen)
 
 **Geprobeerd**: elk bestemmingsscherm een eigen sfeer die bij zijn functie
 past, scoped per scherm-ID (geen markup-wijziging, alleen accent + atmosfeer):
@@ -129,7 +129,7 @@ Elk één georkestreerd moment (geen versnippering), botten gelijk.
 Bottom-nav blijft level-accent (constante chrome); schermen zijn de werelden.
 SW v157.
 
-## Pass 5 — Alle vakken écht uniek (gedeelde motieven gedifferentieerd)
+## Pass 5 - Alle vakken écht uniek (gedeelde motieven gedifferentieerd)
 
 Brief-regel: "als de keuze net zo goed bij een ander vak zou passen, is hij
 nog niet specifiek genoeg." Twee paren deelden nog een motief-familie:
@@ -143,7 +143,7 @@ Doorgevoerd in beide bronnen (styles.css + vakken/vak-theme.css).
 van gs), ec diagonale marktcurves ✓. Alle 17 vakken nu uniek motief.
 Dekking bevestigd: alle vak-ids in data.js hebben een wereld. SW v158.
 
-## Pass 6 — Vak-emblemen + per-domein iconen op de vakpagina's
+## Pass 6 - Vak-emblemen + per-domein iconen op de vakpagina's
 
 **Geprobeerd**: thema duidelijker maken met voorwerpen die bij het vak horen.
 - Per vak een lijntekening-embleem in de hero (rechtsboven), accent-kleur,
@@ -167,10 +167,10 @@ Emblemen recognisable + responsive; domein-iconen kloppen inhoudelijk.
 inline emoji → geen extra requests, SEO-snelheid intact. SW v159 (forceert
 verse vak-theme.css voor terugkerende bezoekers).
 
-## Pass 7 — Content-audit (stap 1): antwoordopties snelle quiz
+## Pass 7 - Content-audit (stap 1): antwoordopties snelle quiz
 
 **Bevinding (audit als leerling)**: in de snelle quiz stonden in veel opties
-verklarende haakjes ("Betoog (overtuigen van één standpunt)") — dat maakt
+verklarende haakjes ("Betoog (overtuigen van één standpunt)") - dat maakt
 opties ongelijk lang, geeft het antwoord weg en is langer dan nodig.
 
 **Veilig & geautomatiseerd**: verklarende haakjes uit opties strippen (uitleg
@@ -178,7 +178,7 @@ staat al in u:). 274 vragen / 719 opties in de 13 non-bèta-vakken.
 - Conservatieve regel: alleen (...) met spatie, zónder cijfers/symbolen.
 - Per-vraag vangnet: skip als resultaat leeg/dubbel zou worden (0 gevallen).
 - **Bèta uitgesloten** (Wiskunde A/B, Natuurkunde, Scheikunde, Informatica):
-  daar zijn haakjes vaak notatie — strippen zou "a^(m+n)", "log(n·a)",
+  daar zijn haakjes vaak notatie - strippen zou "a^(m+n)", "log(n·a)",
   "a=(y₂−y₁)/(x₂−x₁)" slópen. Dry-run bevestigde 2 destructieve gevallen →
   alle 5 bèta-vakken handmatig later.
 - Geverifieerd: schijf gestript + geldig, structuur intact (o:[/{v: tellingen
@@ -186,11 +186,11 @@ staat al in u:). 274 vragen / 719 opties in de 13 non-bèta-vakken.
   bèta-notatie aantoonbaar ongewijzigd. Volledig diff-log: CONTENT-FIXES-haakjes.txt.
 
 **Nog te doen (grotere, handmatige stappen)**: lange-zin-antwoorden inkorten
-(de "juist=langste" tell, ~61 vragen in nl alleen al — vereist per-vraag
+(de "juist=langste" tell, ~61 vragen in nl alleen al - vereist per-vraag
 herschrijven met behoud van juistheid); bèta-opties handmatig; validiteit
 samenvattingen/oud-examen/flashcards per vak. SW v160.
 
-## Pass 8 — Content stap A: Nederlands HAVO volledig nagelopen (sjabloon)
+## Pass 8 - Content stap A: Nederlands HAVO volledig nagelopen (sjabloon)
 
 **Audit als leerling, alle 6 domeinen (sv + oud-examen + samenvattingen)**.
 Inhoud bleek feitelijk correct (argumentatieleer, drogredenen, tekstsoorten,
@@ -211,10 +211,10 @@ en volgorde ongewijzigd → juiste antwoord blijft juist. Structuur geverifieerd
 (3) lange juiste antwoorden inkorten tot afleider-niveau, (4) dubbele/kapotte
 oud-examenvragen herstellen. Bèta daarbij: opties handmatig (geen auto-strip).
 
-## Pass 9 — Content stap B: Biologie HAVO nagelopen
+## Pass 9 - Content stap B: Biologie HAVO nagelopen
 
 **Audit als leerling, alle 4 domeinen (A/M/O/P) + oud-examen + samenvattingen.**
-Bevinding: inhoudelijk uitstekend en in betere staat dan Nederlands — geen
+Bevinding: inhoudelijk uitstekend en in betere staat dan Nederlands - geen
 feitelijke fouten. Fotosynthese/celademhaling, DNA-basenparing, Mendel +
 X-gebonden (hemofilie-kruising klopt), hormonen, afweer, 10%-regel,
 eutrofiëring, Hardy-Weinberg (q²=0,16→48% heterozygoot) allemaal correct.
@@ -227,27 +227,27 @@ eutrofiëring, Hardy-Weinberg (q²=0,16→48% heterozygoot) allemaal correct.
 4. Anglicisme "inactivated vaccin" → "geïnactiveerd vaccin".
 
 Compare-vragen (mitose/meiose, dominant/recessief) bewust gelaten: het
-juiste antwoord moet beide kanten noemen — geen giveaway puur door lengte.
+juiste antwoord moet beide kanten noemen - geen giveaway puur door lengte.
 Structuur geverifieerd. SW v162.
 
-## Pass 10 — Content stap C: Geschiedenis HAVO nagelopen (vak compleet)
+## Pass 10 - Content stap C: Geschiedenis HAVO nagelopen (vak compleet)
 
 **Audit als leerling, alle 5 domeinen (A historisch besef, B oriëntatiekennis/
 tijdvakken, C thema's, D rechtsstaat & democratie, E studie/beroep) + oud-examen
-+ samenvattingen.** Feitelijk uitstekend — geen enkele fout in datums,
++ samenvattingen.** Feitelijk uitstekend - geen enkele fout in datums,
 gebeurtenissen of begrippen. Alle 10 tijdvakken kloppen (1492, 1517, 1789,
 1917, 1989, 1991), evenals trias politica, Artikel 1 GW, motie van wantrouwen.
 
 3 giveaway-tells ingekort (enige optie met lange uitleg naast kale afleiders;
 auto-strip sloeg ze over vanwege datums/leestekens):
-1. "Absolutisme (bijv. Lodewijk XIV — L'état c'est moi)" → "Absolutisme"
+1. "Absolutisme (bijv. Lodewijk XIV - L'état c'est moi)" → "Absolutisme"
    (afleiders: Feodalisme/Constitutionalisme/Republikanisme).
 2. "De Franse Revolutie (1789: vrijheid…)" → "De Franse Revolutie (1789)".
 3. "De Holocaust (1941–1945): industriële massamoord…" → "De Holocaust
    (1941–1945)" (parallel met "De Armeense genocide (1915)").
 Volledige uitleg blijft in u:. SW v163.
 
-## Pass 11 — Jaartallen uit antwoordopties (verklappers weg)
+## Pass 11 - Jaartallen uit antwoordopties (verklappers weg)
 
 Gebruiker: jaartal tussen haakjes in een antwoord verraadt soms de hele vraag.
 Strip pure jaartal-haakjes uit ALLEEN de antwoordopties (o:[]); v:/u:/sam/ctx
@@ -265,26 +265,26 @@ VWO Duits 1). Bv. "De Berlijnse Muur (1961–1989)" → "De Berlijnse Muur";
 Geverifieerd: ()-paren −26/−26, uitleg behoudt jaartallen, wiskundenotatie
 onaangeroerd, geen dubbele opties. SW v164.
 
-## Pass 12 — Content stap D: Natuurkunde HAVO nagelopen (eerste bèta-vak)
+## Pass 12 - Content stap D: Natuurkunde HAVO nagelopen (eerste bèta-vak)
 
 **Audit als leerling, alle 5 domeinen (A vaardigheden, B golven, C beweging,
 D lading/veld, E straling) + oud-examen + samenvattingen.** Feitelijk
-uitstekend — geen enkele fout in formules/eenheden/waarden. Geverifieerd o.a.:
+uitstekend - geen enkele fout in formules/eenheden/waarden. Geverifieerd o.a.:
 Ohm R=6,0/0,024=250 Ω, θc=arcsin(1/1,5)≈41,8°, v-t-grafiek totaal 290 m,
 alfa(A−4,Z−2)/bèta-min(Z+1)/gamma, N=N₀(½)^(t/T½), E=h·f, ²³⁸U→²³⁴Th+⁴He,
-3 halveringstijden→1/8, E=mc², Lorentz F=qvB·sinθ — alles klopt.
+3 halveringstijden→1/8, E=mc², Lorentz F=qvB·sinθ - alles klopt.
 
 4 asymmetrische giveaways in opties gefixt (7 opties; auto-strip sloeg bèta
 over):
 1. "v = f maal lambda: golfsnelheid = …" → "v = f maal lambda" (afleiders
    kale formules).
-2. "Frequentie (f blijft gelijk)" e.a. → kale grootheden — haakjes
+2. "Frequentie (f blijft gelijk)" e.a. → kale grootheden - haakjes
    verklapten letterlijk welke onveranderd blijft bij refractie.
 3. "…door zijn beweging: Ek = ½mv²" → "…door zijn beweging".
 4. "U = I maal R: de spanning is…" → "U = I maal R".
 Formules/uitleg blijven in u:. Structuur geverifieerd. SW v165.
 
-## Pass 13 — Formules in BINAS-notatie (leesbaarheid)
+## Pass 13 - Formules in BINAS-notatie (leesbaarheid)
 
 Gebruiker: toon formules zoals in BINAS (gebruiksvriendelijker). Woord-math
 ("half maal m maal v kwadraat", "E = h maal f", "6,022 maal 10 tot de 23ste")
@@ -307,7 +307,7 @@ Bedrijfseconomie, Biologie). Veiligheid: string-literals 13624→13624 (geen
 quote gebroken; binas raakt nooit '/\), structuur intact, rivierdelta's
 behouden. SW v166.
 
-## Pass 14 — BINAS/ScienceData tabelverwijzingen (onderzoek + eerlijke grens)
+## Pass 14 - BINAS/ScienceData tabelverwijzingen (onderzoek + eerlijke grens)
 
 Gebruiker: zet overal bij in welke BINAS/ScienceData-tabel de formules staan;
 haal info van internet. Webonderzoek gedaan (fysikarel, noordhoff, malmberg,
@@ -323,15 +323,15 @@ natuurkundeuitgelegd):
 Veilige stap gedaan: domein Golven (Natuurkunde B) miste binas-veld volledig →
 toegevoegd met onderzoek-bevestigde BINAS-tabellen (35/19/18/15) + ceStatus CE.
 Bestaande binas-arrays (per domein, al getoond onder de samenvatting) NIET
-blind herschreven — mogelijk correct; risico op introduceren van fouten te
+blind herschreven - mogelijk correct; risico op introduceren van fouten te
 groot zonder het fysieke boek. ScienceData-nummers bewust niet verzonnen.
 SW v167. Open: ScienceData-index van eigenaar nodig voor exacte SD-nummers.
 
-## Pass 15 — Content stap E: Scheikunde HAVO nagelopen (compleet)
+## Pass 15 - Content stap E: Scheikunde HAVO nagelopen (compleet)
 
 **Audit als leerling, alle 5 domeinen (A vaardigheden, B stoffen, C processen,
 D koolstofchemie, E chemie/samenleving) + oud-examen + samenvattingen.**
-Feitelijk uitstekend — geen fouten in reactievergelijkingen/formules/waarden.
+Feitelijk uitstekend - geen fouten in reactievergelijkingen/formules/waarden.
 Geverifieerd: CO₂ apolair (lineair), H₂O 104,5° (VSEPR), N≡N 945 kJ/mol,
 pH=−log[H⁺] (0,01→2), titratie 0,113 mol/L, Fe₂O₃-rendement 50%, verbranding
 CH₄+2O₂→CO₂+2H₂O, CFK-ozonafbraak Cl•+O₃→ClO+O₂, Ostwald (platina), PET-ester.
@@ -345,11 +345,11 @@ antwoorden staan bovendien niet allemaal op positie 0.
    verwijderd; juiste richting + "(extra schillen)" behouden.
 Structuur geverifieerd. SW v168.
 
-## Pass 16 — Content stap F: Wiskunde A HAVO nagelopen (compleet)
+## Pass 16 - Content stap F: Wiskunde A HAVO nagelopen (compleet)
 
 **Audit als leerling, alle 5 domeinen (A vaardigheden, B algebra/log, C
 verbanden, D verandering/differentiëren, E statistiek) + oud-examen + sam.**
-Feitelijk uitstekend — geen fouten. Geverifieerd: G=−10T+230 (T=23°C),
+Feitelijk uitstekend - geen fouten. Geverifieerd: G=−10T+230 (T=23°C),
 zonnepanelen 400·1,5^t, abc-formule (3x²−12x+9=0 → x=3/1), decibel (60 dB),
 logregels, differentiëren ((6x³)'=18x²), optimalisatie doos (4×4×2), raaklijn
 y=8x−17, z=(202−181)/7=3,0, wachttijden (gem 9,0 / mediaan 8,5). Distractors
@@ -361,7 +361,7 @@ converteren zou fouten maken ("30 min"→"30 −"). Bewust NIET gedaan. Eén vei
 winst: "plus of min" = altijd ± → 3× omgezet (μ ± 2σ = 181 ± 14). "30 min" en
 "bèta-min" aantoonbaar onaangeroerd. SW v169.
 
-## Pass 17 — Content stap G: Wiskunde B HAVO nagelopen (compleet)
+## Pass 17 - Content stap G: Wiskunde B HAVO nagelopen (compleet)
 
 **Audit als leerling, alle 5 domeinen (A vaardigheden, B functies/grafieken,
 C meetkundige berekeningen, D toegepaste analyse, E meetkunde) + oud-examen.**
@@ -371,14 +371,14 @@ ongelijkheid (−2≤x≤4), vector ∠BAC≈71,6°, cosinusregel (QR=2√13≈7
 kwadraat aanvullen, differentiëren ((eˣ)'=eˣ, kettingregel).
 
 **1 echte fout gevonden + gefixt**: uitleg bij "ligt P op cirkel" was
-tegenstrijdig — zei eerst "P ligt buiten de cirkel", daarna "8 < 9 dus binnen".
+tegenstrijdig - zei eerst "P ligt buiten de cirkel", daarna "8 < 9 dus binnen".
 Correct = binnen (8 < r²=9). Uitleg herschreven met heldere regel (kleiner =
 binnen, gelijk = op, groter = buiten).
 
-Notatie: "(x min a)"/"3x² min 12x" blijven (min-ambiguïteit, zie Pass 16) —
+Notatie: "(x min a)"/"3x² min 12x" blijven (min-ambiguïteit, zie Pass 16) -
 bewust niet geautomatiseerd. SW v170.
 
-## Pass 18 — Content stap H: Engels HAVO nagelopen (compleet)
+## Pass 18 - Content stap H: Engels HAVO nagelopen (compleet)
 
 **Audit als leerling, alle 6 domeinen (A woordenschat/grammatica, B
 leesvaardigheid-CE, C kijk/luister, D gesprek, E schrijven, F literatuur) +
@@ -390,12 +390,12 @@ dynamic/static character, Lord of the Flies/Gatsby-symboliek. Antwoorden mooi
 verdeeld over c:0 en c:1.
 
 **1 echte fout gefixt**: vraag over formele aanhef (naam onbekend) had TWEE
-juiste antwoorden — "Dear Sir/Madam," én afleider "To Whom It May Concern /
+juiste antwoorden - "Dear Sir/Madam," én afleider "To Whom It May Concern /
 Dear Sir/Madam (British)". Afleider vervangen door "Dear Mr Smith," (zuiver
 fout bij onbekende naam; toetst de bekend/onbekend-regel uit de uitleg).
 SW v171.
 
-## Pass 19 — Content stap I: Economie HAVO nagelopen (compleet)
+## Pass 19 - Content stap I: Economie HAVO nagelopen (compleet)
 
 **Audit als leerling, alle 4 CE-domeinen (B Schaarste, C Markt, D Overheid,
 E Goede/slechte tijden) + oud-examen + samenvattingen.** Concepten, formules en
@@ -419,36 +419,36 @@ nominaal, CPI, werkloosheidstypes, betalingsbalans.
   het sterkere patroon elders in dit vak (parens op afleiders, correct = kaal).
 SW v172.
 
-## Pass 20 — Content stap J: Aardrijkskunde HAVO nagelopen (compleet)
+## Pass 20 - Content stap J: Aardrijkskunde HAVO nagelopen (compleet)
 
 **Audit als leerling, alle 5 domeinen (A Vaardigheden, B Wereld, C Aarde,
 D Ontwikkelingsland, E Leefomgeving) + oud-examen (incl. meerdelige a/b/c CE-
 vragen) + samenvattingen.** Sterk geschreven vak: opties symmetrisch (géén
 giveaway-tells), berekeningen kloppen (580.000/2900 = 200 inw/km²), endogeen/
 exogeen, subductie/hotspot/moesson, push-pull, centrum-periferie, demografische
-transitie, HDI/Gini, dijkringen/Ruimte voor de Rivier/NOVI — alles correct.
+transitie, HDI/Gini, dijkringen/Ruimte voor de Rivier/NOVI - alles correct.
 
 **2 fixes:**
 - **Interne inconsistentie (echte fout)**: "verstedelijking" werd in domein D
   (1886) strikt onderscheiden van urbanisatie (verstedelijking = ruimtelijke
   groei, urbanisatie = bevolkingsaandeel), maar in domein E (1911) juist als
-  bevolkingsaandeel-groei gedefinieerd — twee quizantwoorden die elkaar
+  bevolkingsaandeel-groei gedefinieerd - twee quizantwoorden die elkaar
   tegenspreken. E-uitleg overbrugd: synoniemgebruik + strikte ruimtelijke
   betekenis genoemd, met verwijzing naar domein D. Urbanisatie zelf is overal
   consistent (B1841, D1886).
 - **Typo**: "Legendas" → "Legenda's" (examenval domein A).
 SW v173.
 
-## Pass 21 — Content stap K: Bedrijfseconomie HAVO nagelopen (compleet)
+## Pass 21 - Content stap K: Bedrijfseconomie HAVO nagelopen (compleet)
 
 **Audit als leerling, alle 5 domeinen (B Persoon→rechtspersoon, C Interne
 organisatie, D Marketing, E Financieel beleid, F Verslaggeving) + oud-examen
-(meerdelige reken-CE-vragen) + samenvattingen.** Meest rekengevoelige vak —
+(meerdelige reken-CE-vragen) + samenvattingen.** Meest rekengevoelige vak -
 élke berekening nagerekend en kloppend: samengestelde interest (5000·1,03¹⁸ ≈
 8512; regel-van-72-controle 23,4 jr), RTV 9% / REV 19% met positieve hefboom,
 NCW = 20.000·3,993 − 80.000 = −140, lineaire afschrijving 6.000/jr, solvabiliteit
 44,4% & current ratio 1,0, RTV 20%. Rechtsvormen, organisatiestructuren, 4 P's,
-Ansoff/PLC/SWOT, kengetallen — allemaal correct.
+Ansoff/PLC/SWOT, kengetallen - allemaal correct.
 
 **3 fixes:**
 - **Rekenkundige afronding (echte fout)**: break-even 4400/33 = 133,3 stond als
@@ -461,7 +461,7 @@ Ansoff/PLC/SWOT, kengetallen — allemaal correct.
 - **Typo**: "MassaMarketing" → "Massamarketing".
 SW v174.
 
-## Pass 22 — Content stap L: Maatschappijwetenschappen HAVO nagelopen (compleet)
+## Pass 22 - Content stap L: Maatschappijwetenschappen HAVO nagelopen (compleet)
 
 **Audit als leerling, alle 4 CE-domeinen (A Vaardigheden/onderzoek, B Twee
 benaderingen, C Politieke besluitvorming, D Maatschappelijke vraagstukken) +
@@ -487,10 +487,10 @@ SW v175.
 WisA, WisB, EN, EC, AK, BECO, MW). Vakken fundamenteel correct; fixes vooral
 kwaliteit (giveaways, typo's, notatie) met enkele echte fouten per vak.
 
-## Pass 23 — Samenvattingen: Natuurkunde HAVO (bron-materiaal verwerkt)
+## Pass 23 - Samenvattingen: Natuurkunde HAVO (bron-materiaal verwerkt)
 
 Gebruiker levert per-vak samenvattingen aan (eigen/methode-materiaal). Aanpak:
-gebruik als bron, **herschrijf volledig in eigen woorden** (auteursrecht — niet
+gebruik als bron, **herschrijf volledig in eigen woorden** (auteursrecht - niet
 licht parafraseren maar substantieel anders + korter), verdeel over de
 CE-domeinen, in de bestaande sam-section/HTML-opmaak. Formules in BiNaS-notatie
 (superscripts, ·, √, Δ) zoals de rest van Natuurkunde.
@@ -500,18 +500,18 @@ platte-tekst-extractie mist → eigen OMML→tekst converter geschreven (_omml.p
 om formules inline te krijgen. Mapping doc-hoofdstukken → domeinen: H1→A;
 H2.1-2.3→B (golven); H2.4-2.8→E (straling); H3+H5→C (beweging/kracht/energie/
 gravitatie); H6→D (elektriciteit). Bronfout gevonden (constante van Planck als
-J/s i.p.v. J·s) — in herschrijving gecorrigeerd.
+J/s i.p.v. J·s) - in herschrijving gecorrigeerd.
 
 **Domein A vervangen** (calibratie): nieuwe sam met SI-basiseenheden,
 wetenschappelijke notatie, significantieregels, soorten verbanden,
 coördinatentransformatie en onderzoek-/ontwerpcyclus. Gerenderd geverifieerd
 (7 secties, 20 li, superscripts/√/Δ/µ intact). SW v177. B–E volgen na akkoord.
 
-## Pass 24 — Natuurkunde samenvattingen volledig (SAM_RICH na_A..na_E)
+## Pass 24 - Natuurkunde samenvattingen volledig (SAM_RICH na_A..na_E)
 
 Gebruiker wil "een stuk uitgebreider". App heeft daarvoor al `SAM_RICH`
 (data.js) dat `d.sam` overschrijft en in de collapsible Theorie-pane rendert met
-leesvoortgang — rijke opmaak-klassen: sam-formula-box (label/eq/note), sam-table,
+leesvoortgang - rijke opmaak-klassen: sam-formula-box (label/eq/note), sam-table,
 sam-compare, sam-tip/warn, sam-steps. Alle natuurkunde-domeinen als uitgebreide
 SAM_RICH-entries (eigen woorden, formules in eigen box met variabeldefinities):
 - **na_A** Vaardigheden, **na_B** Golven (trillingen/golven/staande golven),
@@ -523,7 +523,7 @@ Bronfouten gecorrigeerd: Planck h in J·s (doc: J/s), tan = overstaand/aanliggen
 Alle 5 gerenderd geverifieerd (sub-tags gebalanceerd, formuleboxen/tabellen/
 compare intact, sleutelformules aanwezig). SW v179.
 
-## Pass 25 — Flashcards uit rijke samenvattingen (schedule.js)
+## Pass 25 - Flashcards uit rijke samenvattingen (schedule.js)
 
 Flashcards werden auto-gegenereerd door `_parseSamCards` uit `d.sam` (alleen
 `<li><strong>term</strong>: def`). Twee aanpassingen zodat de rijke samenvattingen
@@ -536,7 +536,7 @@ Resultaat Natuurkunde: ~120 kaarten (A26/B11/C41/D17/E25). Bonus: verrijkt ook
 flashcards van vakken met formuleboxen/tabellen (wa_B, ec_B, gs_A, nl_A, nl_E,
 bi_A). Logica geverifieerd via standalone parse op SAM_RICH. SW v180.
 
-## Pass 26 — Samenvatting + flashcards Geschiedenis (domein B, tijdvakken)
+## Pass 26 - Samenvatting + flashcards Geschiedenis (domein B, tijdvakken)
 
 Bron: geschiedenis.docx (757 alinea's, alle 10 tijdvakken + 3 historische
 contexten). CE-stof zit in domein B (Oriëntatiekennis = de 10 tijdvakken);
@@ -552,9 +552,9 @@ door de waarde tot één regel te collapsen (re.sub whitespace). Niet gecommit i
 gebroken staat. Voortaan SAM_RICH-HTML als één regel opbouwen (geen rauwe \n).
 Gerenderd geverifieerd: data.js parse-OK, gs_B 10 secties/3 tabellen/108
 begrippen, 108 flashcards live. SW v181. De 3 contexten (Brits Rijk, Duitsland,
-Nederland) nog niet verwerkt — optioneel vervolg.
+Nederland) nog niet verwerkt - optioneel vervolg.
 
-## Pass 27 — Historische contexten toegevoegd aan gs_B (SW v182)
+## Pass 27 - Historische contexten toegevoegd aan gs_B (SW v182)
 
 De 3 HAVO-contexten uit geschiedenis.docx (ch12–14) toegevoegd als extra secties
 in gs_B (CE-domein B): Het Britse Rijk (1585–1900), Duitsland 1918–1991,
@@ -564,7 +564,7 @@ secties; flashcards ~166. Gerenderd geverifieerd: data.js parse-OK (new Function
 geen newline, 13 sam-heads. Geschiedenis CE-stof nu compleet (tijdvakken +
 contexten).
 
-## Pass 23 — Samenvattingen: systematische scan + parity-fix
+## Pass 23 - Samenvattingen: systematische scan + parity-fix
 
 **Scan over alle 112 sam-velden (HAVO + VWO)** via Python: HTML-tagbalans,
 structuurmarkers, woordtelling en tekstdefecten (spatie-voor-punt,
@@ -577,14 +577,14 @@ woordherhaling, komma-zonder-spatie).
   legitieme patronen (math `(x,y)`, `v.Chr`/`n.Chr`, "afstaan aan", "de Broglie")
   bleven 0 echte typo's over. Samenvattingen zijn schoon.
 - **Dunne samenvattingen**: thinste zijn VWO talen-SE-domeinen (literatuur,
-  gespreksvaardigheid) + 2 HAVO GS SE-only domeinen — terecht beknopt.
+  gespreksvaardigheid) + 2 HAVO GS SE-only domeinen - terecht beknopt.
 
-**1 echte gap gefixt**: VWO Engels Literatuur (30w) miste — anders dan de
-zustertalen Duits (51w) en Frans (53w) — de items **Auteurs** en **Stromingen**.
+**1 echte gap gefixt**: VWO Engels Literatuur (30w) miste - anders dan de
+zustertalen Duits (51w) en Frans (53w) - de items **Auteurs** en **Stromingen**.
 Aangevuld op parity: Shakespeare/Austen/Dickens/Orwell/Woolf + Renaissance→
 Postmodernism, met behoud van het unieke Poëzie-analyse-item. SW v176.
 
-## Pass 28 — Oefenvolume opkrikken: Natuurkunde (SW v184)
+## Pass 28 - Oefenvolume opkrikken: Natuurkunde (SW v184)
 
 Kritische review: mediaan ~13 quizvragen per domein = te dun. Gebruiker koos
 "oefenvolume opkrikken". Ik genereer de vragen zelf, gegrond in de rijke
@@ -594,11 +594,11 @@ lengte-symmetrie blijft nodig. Natuurkunde verdubbeld: A 10→25, B/C/D/E elk
 14→29 (66→141). Nieuwe vragen dekken onderbelichte stof per domein. Gerenderd
 geverifieerd (new Function): valide, 0 formaatproblemen, 0 duplicaten.
 
-## Pass 29 — Adaptief leren: difficulty-staircase in de snelle quiz (SW v185)
+## Pass 29 - Adaptief leren: difficulty-staircase in de snelle quiz (SW v185)
 
 Bestond al: AQP weegt vragen op wat je persoonlijk fout doet (cross-sessie). Nieuw:
 binnen-sessie staircase op moeilijkheid. qDiff() schat 1/2/3 in via heuristiek
-(formule/getal/lengte omhoog; "wat is een…"/kort omlaag) — runtime, geen
+(formule/getal/lengte omhoog; "wat is een…"/kort omlaag) - runtime, geen
 datawijziging. aqSetupAdaptive() buckt de pool per niveau (binnen niveau nog
 AQP-weging), start op 2; correct→+1, fout/timeout→−1 (clamp 1..3); aqFill() vult
 lazy bij tot 10. Wiring in quiz.js: startQ (val terug op AQP-selectie bij <2
@@ -607,7 +607,7 @@ voor adaptieve sessies. Algoritme geverifieerd op echte data: alleGoed
 2→3 (tot harde bucket op is, dan terug naar 2), alleFout 2→1, altijd 10 uniek.
 Koppelt aan oefenvolume: meer (en moeilijker) vragen = betere staircase.
 
-## Pass 30 — Verklap-balanceer-pass natuurkunde + geschiedenis (SW v188)
+## Pass 30 - Verklap-balanceer-pass natuurkunde + geschiedenis (SW v188)
 
 Metingscriterium: juist antwoord is uniek de langste optie én ≥8 tekens langer
 dan de op-een-na-langste = "verklap" (giveaway tell; de engine husselt posities
@@ -617,4 +617,4 @@ gelijkgetrokken / juiste antwoord ingekort (detail staat al in u), correct-index
 ongewijzigd, géén nieuwe vragen. NA 44→0, GS 42→0 verklap-vragen. Geverifieerd:
 data.js valide, 141/82 sv onveranderd, 0 kapotte opties, 0 dubbele opties binnen
 een vraag. Let op: "interpoleren/extrapoleren" bestaat ook in wiskunde A (1e
-occurrence) — per-vak scopen bij dit soort fixes. Memory: feedback_answer_option_length.
+occurrence) - per-vak scopen bij dit soort fixes. Memory: feedback_answer_option_length.

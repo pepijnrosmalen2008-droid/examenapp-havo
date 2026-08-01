@@ -7,7 +7,7 @@
   "use strict";
   var W = 'viewBox="0 0 24 24" width="1em" height="1em" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"';
   function s(inner) { return '<svg class="ico" ' + W + ' aria-hidden="true">' + inner + '</svg>'; }
-  // gekleurde variant (statusstippen, medailles) — vaste kleur i.p.v. currentColor
+  // gekleurde variant (statusstippen, medailles) - vaste kleur i.p.v. currentColor
   function c(inner) { return '<svg class="ico" viewBox="0 0 24 24" width="1em" height="1em" aria-hidden="true">' + inner + '</svg>'; }
   var dot = function (col) { return c('<circle cx="12" cy="12" r="7" fill="' + col + '"/>'); };
   var medal = function (col, dk) { return c('<path d="M8 2 6 8" stroke="' + dk + '" stroke-width="2" fill="none" stroke-linecap="round"/><path d="M16 2l2 6" stroke="' + dk + '" stroke-width="2" fill="none" stroke-linecap="round"/><circle cx="12" cy="15" r="6" fill="' + col + '"/><path d="M12 11.5l1.2 2.4 2.6.4-1.9 1.8.4 2.6-2.3-1.2-2.3 1.2.4-2.6L8.2 14.3l2.6-.4z" fill="#fff" opacity=".85"/>'); };
@@ -217,7 +217,7 @@
           for (var j = 0; j < an.length; j++) queue.push(an[j]);
         }
         // textContent-toewijzing verschijnt als childList-mutatie (nieuwe tekst-node),
-        // dus characterData observeren is overbodig — scheelt werk tijdens live timers.
+        // dus characterData observeren is overbodig - scheelt werk tijdens live timers.
         if (!scheduled && queue.length) { scheduled = true; (window.requestAnimationFrame || setTimeout)(flush); }
       });
       mo.observe(document.body, { childList: true, subtree: true });

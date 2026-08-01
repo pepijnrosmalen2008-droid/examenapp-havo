@@ -1,17 +1,17 @@
 // ═══════════════════════════════════════════════════════════════════════
-// knowledge-havo.js — GEGENEREERD door curriculum-factory.js (assemble).
+// knowledge-havo.js - GEGENEREERD door curriculum-factory.js (assemble).
 // Bron van waarheid: knowledge/havo/<vak>.json. NIET met de hand bewerken;
 // draai 'curriculum-factory.js ingest' of 'assemble'. Bevat provenance in _meta.
 // ═══════════════════════════════════════════════════════════════════════
 var LEERDOELEN = (typeof LEERDOELEN !== 'undefined' && LEERDOELEN) || {};
 Object.assign(LEERDOELEN, {
  "bi_A": {
-  "syllabus": "CE Biologie HAVO — Domein A: Vaardigheden (biologisch onderzoek)",
+  "syllabus": "CE Biologie HAVO - Domein A: Vaardigheden (biologisch onderzoek)",
   "leerdoelen": [
    {
     "id": "bi.A.1",
     "titel": "Onderzoek opzetten",
-    "eindterm": "A — onderzoeksvaardigheden",
+    "eindterm": "A - onderzoeksvaardigheden",
     "teVerifiëren": true,
     "beschrijving": "De kandidaat kan een biologisch experiment opzetten: hypothese formuleren en onafhankelijke, afhankelijke en constante variabelen benoemen, inclusief een geschikte controlegroep.",
     "concepten": [
@@ -45,7 +45,7 @@ Object.assign(LEERDOELEN, {
    {
     "id": "bi.A.2",
     "titel": "Betrouwbaarheid en validiteit beoordelen",
-    "eindterm": "A — kwaliteit van onderzoek",
+    "eindterm": "A - kwaliteit van onderzoek",
     "teVerifiëren": true,
     "beschrijving": "De kandidaat kan de betrouwbaarheid en validiteit van een onderzoek beoordelen en de rol van steekproef en placebo herkennen.",
     "concepten": [
@@ -74,7 +74,7 @@ Object.assign(LEERDOELEN, {
    {
     "id": "bi.A.3",
     "titel": "Data verwerken en grafieken lezen",
-    "eindterm": "A — dataverwerking",
+    "eindterm": "A - dataverwerking",
     "teVerifiëren": true,
     "beschrijving": "De kandidaat kan gegevens uit tabellen en grafieken aflezen, spreiding (standaarddeviatie) interpreteren en bijv. fotosynthesesnelheid uit een grafiek afleiden.",
     "concepten": [
@@ -102,7 +102,7 @@ Object.assign(LEERDOELEN, {
    {
     "id": "bi.A.4",
     "titel": "Correlatie versus causaliteit",
-    "eindterm": "A — conclusies trekken",
+    "eindterm": "A - conclusies trekken",
     "teVerifiëren": true,
     "beschrijving": "De kandidaat kan onderscheiden of gegevens een verband (correlatie) of een oorzaak-gevolgrelatie (causaliteit) aantonen.",
     "concepten": [
@@ -127,7 +127,7 @@ Object.assign(LEERDOELEN, {
    {
     "id": "bi.A.5",
     "titel": "Biologisch onderzoeksgereedschap",
-    "eindterm": "A — practicumvaardigheden",
+    "eindterm": "A - practicumvaardigheden",
     "teVerifiëren": true,
     "beschrijving": "De kandidaat kan een determineertabel gebruiken en de functie van een preparaat bij microscopisch onderzoek benoemen.",
     "concepten": [
@@ -153,12 +153,12 @@ Object.assign(LEERDOELEN, {
   ]
  },
  "bi_M": {
-  "syllabus": "CE Biologie HAVO — Molecuul- en celniveau (eiwitsynthese, stofwisseling van de cel, erfelijkheid)",
+  "syllabus": "CE Biologie HAVO - Molecuul- en celniveau (eiwitsynthese, stofwisseling van de cel, erfelijkheid)",
   "leerdoelen": [
    {
     "id": "bi.M.1",
     "titel": "Bouw en functie van de cel",
-    "eindterm": "B — cel als bouwsteen",
+    "eindterm": "B - cel als bouwsteen",
     "teVerifiëren": true,
     "beschrijving": "De kandidaat kan celorganellen en hun functie benoemen en het verschil tussen plantaardige en dierlijke cellen aangeven.",
     "concepten": [
@@ -190,7 +190,7 @@ Object.assign(LEERDOELEN, {
    {
     "id": "bi.M.2",
     "titel": "Transport door het celmembraan",
-    "eindterm": "B — membraantransport",
+    "eindterm": "B - membraantransport",
     "teVerifiëren": true,
     "beschrijving": "De kandidaat kan osmose verklaren en voorspellen hoe water zich via het celmembraan verplaatst bij verschillende concentraties.",
     "concepten": [
@@ -215,7 +215,7 @@ Object.assign(LEERDOELEN, {
    {
     "id": "bi.M.3",
     "titel": "Enzymwerking",
-    "eindterm": "B — enzymen",
+    "eindterm": "B - enzymen",
     "teVerifiëren": true,
     "beschrijving": "De kandidaat kan de werking van enzymen beschrijven en het effect van temperatuur en pH op de enzymactiviteit uit een grafiek afleiden.",
     "concepten": [
@@ -243,7 +243,7 @@ Object.assign(LEERDOELEN, {
    {
     "id": "bi.M.4",
     "titel": "Energiestofwisseling: fotosynthese en celademhaling",
-    "eindterm": "B — assimilatie/dissimilatie",
+    "eindterm": "B - assimilatie/dissimilatie",
     "teVerifiëren": true,
     "beschrijving": "De kandidaat kan fotosynthese en celademhaling als tegengestelde processen beschrijven, met de rol van chloroplast en mitochondrion.",
     "concepten": [
@@ -270,7 +270,7 @@ Object.assign(LEERDOELEN, {
    {
     "id": "bi.M.5",
     "titel": "DNA en eiwitsynthese",
-    "eindterm": "B — eiwitsynthese",
+    "eindterm": "B - eiwitsynthese",
     "teVerifiëren": true,
     "beschrijving": "De kandidaat kan de route van DNA naar eiwit beschrijven (genexpressie) en de rol van chromosoom en ribosoom benoemen.",
     "concepten": [
@@ -300,7 +300,7 @@ Object.assign(LEERDOELEN, {
    {
     "id": "bi.M.6",
     "titel": "Celdeling: mitose en meiose",
-    "eindterm": "B — celdeling",
+    "eindterm": "B - celdeling",
     "teVerifiëren": true,
     "beschrijving": "De kandidaat kan mitose en meiose onderscheiden en het verschil in aantal chromosomen van de dochtercellen aangeven.",
     "concepten": [
@@ -328,7 +328,7 @@ Object.assign(LEERDOELEN, {
    {
     "id": "bi.M.7",
     "titel": "Erfelijkheid: allelen en overerving",
-    "eindterm": "B — genetica",
+    "eindterm": "B - genetica",
     "teVerifiëren": true,
     "beschrijving": "De kandidaat kan met dominante en recessieve allelen een kruisingsschema opstellen en overervingskansen berekenen; de rol van mutatie benoemen.",
     "concepten": [
@@ -358,12 +358,12 @@ Object.assign(LEERDOELEN, {
   ]
  },
  "bi_O": {
-  "syllabus": "CE Biologie HAVO — Orgaan- en organismeniveau (regeling, afweer, transport, spijsvertering)",
+  "syllabus": "CE Biologie HAVO - Orgaan- en organismeniveau (regeling, afweer, transport, spijsvertering)",
   "leerdoelen": [
    {
     "id": "bi.O.1",
     "titel": "Zenuwstelsel en prikkelgeleiding",
-    "eindterm": "C — zenuwstelsel",
+    "eindterm": "C - zenuwstelsel",
     "teVerifiëren": true,
     "beschrijving": "De kandidaat kan de weg van een prikkel door neuron en synaps beschrijven en het verschil tussen een reflex en een bewuste reactie verklaren.",
     "concepten": [
@@ -393,7 +393,7 @@ Object.assign(LEERDOELEN, {
    {
     "id": "bi.O.2",
     "titel": "Hormonale regulatie",
-    "eindterm": "C — hormonale regulatie",
+    "eindterm": "C - hormonale regulatie",
     "teVerifiëren": true,
     "beschrijving": "De kandidaat kan de regulatie van de bloedglucose door insuline en glucagon verklaren en de werking van adrenaline benoemen.",
     "concepten": [
@@ -422,7 +422,7 @@ Object.assign(LEERDOELEN, {
    {
     "id": "bi.O.3",
     "titel": "Homeostase en antagonisme",
-    "eindterm": "C — homeostase",
+    "eindterm": "C - homeostase",
     "teVerifiëren": true,
     "beschrijving": "De kandidaat kan homeostase als het constant houden van het inwendig milieu verklaren en antagonistische regeling herkennen.",
     "concepten": [
@@ -449,7 +449,7 @@ Object.assign(LEERDOELEN, {
    {
     "id": "bi.O.4",
     "titel": "Afweer en immuniteit",
-    "eindterm": "C — afweer",
+    "eindterm": "C - afweer",
     "teVerifiëren": true,
     "beschrijving": "De kandidaat kan specifieke en aspecifieke afweer onderscheiden, de rol van antigeen en antilichaam beschrijven en het effect van vaccinatie verklaren.",
     "concepten": [
@@ -480,7 +480,7 @@ Object.assign(LEERDOELEN, {
    {
     "id": "bi.O.5",
     "titel": "Transport en gasuitwisseling",
-    "eindterm": "C — transport",
+    "eindterm": "C - transport",
     "teVerifiëren": true,
     "beschrijving": "De kandidaat kan de bloedsomloop en de gasuitwisseling in de longen beschrijven en de rol van diffusie daarbij verklaren.",
     "concepten": [
@@ -510,7 +510,7 @@ Object.assign(LEERDOELEN, {
    {
     "id": "bi.O.6",
     "titel": "Spijsvertering en uitscheiding",
-    "eindterm": "C — vertering en uitscheiding",
+    "eindterm": "C - vertering en uitscheiding",
     "teVerifiëren": true,
     "beschrijving": "De kandidaat kan de vertering van voedingsstoffen in het verteringsstelsel beschrijven en de rol van de nieren bij uitscheiding benoemen.",
     "concepten": [
@@ -538,7 +538,7 @@ Object.assign(LEERDOELEN, {
    {
     "id": "bi.O.7",
     "titel": "Beweging: gewrichten en spieren",
-    "eindterm": "C — beweging",
+    "eindterm": "C - beweging",
     "teVerifiëren": true,
     "beschrijving": "De kandidaat kan de werking van een gewricht beschrijven en uitleggen hoe antagonistische spieren samenwerken bij beweging.",
     "concepten": [
@@ -564,12 +564,12 @@ Object.assign(LEERDOELEN, {
   ]
  },
  "bi_P": {
-  "syllabus": "CE Biologie HAVO — Populatie- en ecosysteemniveau (ecologie, evolutie, duurzaamheid)",
+  "syllabus": "CE Biologie HAVO - Populatie- en ecosysteemniveau (ecologie, evolutie, duurzaamheid)",
   "leerdoelen": [
    {
     "id": "bi.P.1",
     "titel": "Ecosystemen: biotische en abiotische factoren",
-    "eindterm": "D — ecosysteem",
+    "eindterm": "D - ecosysteem",
     "teVerifiëren": true,
     "beschrijving": "De kandidaat kan een ecosysteem beschrijven, biotische en abiotische factoren onderscheiden en de niche van een soort benoemen.",
     "concepten": [
@@ -597,7 +597,7 @@ Object.assign(LEERDOELEN, {
    {
     "id": "bi.P.2",
     "titel": "Voedselrelaties en energiedoorgifte",
-    "eindterm": "D — voedselrelaties",
+    "eindterm": "D - voedselrelaties",
     "teVerifiëren": true,
     "beschrijving": "De kandidaat kan voedselketens en -webben analyseren, de rol van producent, consument en reducent benoemen en energiedoorgifte via een piramide van biomassa verklaren.",
     "concepten": [
@@ -630,7 +630,7 @@ Object.assign(LEERDOELEN, {
    {
     "id": "bi.P.3",
     "titel": "Populatiedynamiek en draagkracht",
-    "eindterm": "D — populaties",
+    "eindterm": "D - populaties",
     "teVerifiëren": true,
     "beschrijving": "De kandidaat kan veranderingen in een populatie verklaren en de rol van draagkracht bij begrenzing van populatiegroei uit een grafiek afleiden.",
     "concepten": [
@@ -658,7 +658,7 @@ Object.assign(LEERDOELEN, {
    {
     "id": "bi.P.4",
     "titel": "Relaties tussen soorten",
-    "eindterm": "D — symbiose",
+    "eindterm": "D - symbiose",
     "teVerifiëren": true,
     "beschrijving": "De kandidaat kan vormen van symbiose herkennen en het effect van een exoot op een ecosysteem verklaren.",
     "concepten": [
@@ -684,7 +684,7 @@ Object.assign(LEERDOELEN, {
    {
     "id": "bi.P.5",
     "titel": "Successie en biodiversiteit",
-    "eindterm": "D — successie en duurzaamheid",
+    "eindterm": "D - successie en duurzaamheid",
     "teVerifiëren": true,
     "beschrijving": "De kandidaat kan successie in een ecosysteem beschrijven en de betekenis van biodiversiteit en duurzaamheid verklaren.",
     "concepten": [
@@ -711,7 +711,7 @@ Object.assign(LEERDOELEN, {
    {
     "id": "bi.P.6",
     "titel": "Evolutie en natuurlijke selectie",
-    "eindterm": "D — evolutie",
+    "eindterm": "D - evolutie",
     "teVerifiëren": true,
     "beschrijving": "De kandidaat kan natuurlijke selectie verklaren en het ontstaan van soorten (soortvorming) als gevolg van evolutie beschrijven.",
     "concepten": [
@@ -739,12 +739,12 @@ Object.assign(LEERDOELEN, {
   ]
  },
  "na_A": {
-  "syllabus": "CE Natuurkunde HAVO — Domein A: Vaardigheden (grootheden, rekenen, meten)",
+  "syllabus": "CE Natuurkunde HAVO - Domein A: Vaardigheden (grootheden, rekenen, meten)",
   "leerdoelen": [
    {
     "id": "na.A.1",
     "titel": "Grootheden en eenheden",
-    "eindterm": "A — grootheden en eenheden",
+    "eindterm": "A - grootheden en eenheden",
     "teVerifiëren": true,
     "beschrijving": "De kandidaat kan grootheden en hun SI-eenheden benoemen en correct in berekeningen gebruiken.",
     "concepten": [
@@ -770,7 +770,7 @@ Object.assign(LEERDOELEN, {
    {
     "id": "na.A.2",
     "titel": "Significante cijfers en rekenregels",
-    "eindterm": "A — significantie",
+    "eindterm": "A - significantie",
     "teVerifiëren": true,
     "beschrijving": "De kandidaat kan met significante cijfers rekenen volgens de regels voor optellen/aftrekken en vermenigvuldigen/delen.",
     "concepten": [
@@ -797,7 +797,7 @@ Object.assign(LEERDOELEN, {
    {
     "id": "na.A.3",
     "titel": "Evenredige verbanden",
-    "eindterm": "A — verbanden",
+    "eindterm": "A - verbanden",
     "teVerifiëren": true,
     "beschrijving": "De kandidaat kan een recht en omgekeerd evenredig verband herkennen en gebruiken.",
     "concepten": [
@@ -823,7 +823,7 @@ Object.assign(LEERDOELEN, {
    {
     "id": "na.A.4",
     "titel": "Meetonzekerheid en ijken",
-    "eindterm": "A — meten",
+    "eindterm": "A - meten",
     "teVerifiëren": true,
     "beschrijving": "De kandidaat kan meetonzekerheid meenemen en het ijken van een meetinstrument uitleggen.",
     "concepten": [
@@ -849,7 +849,7 @@ Object.assign(LEERDOELEN, {
    {
     "id": "na.A.5",
     "titel": "Onderzoek doen en grafieken analyseren",
-    "eindterm": "A — onderzoeksvaardigheden",
+    "eindterm": "A - onderzoeksvaardigheden",
     "teVerifiëren": true,
     "beschrijving": "De kandidaat kan een onderzoek opzetten (hypothese, variabelen, controle-experiment), meetfouten beoordelen en gegevens uit een grafiek afleiden (helling, oppervlakte, interpoleren/extrapoleren).",
     "concepten": [
@@ -887,12 +887,12 @@ Object.assign(LEERDOELEN, {
   ]
  },
  "na_B": {
-  "syllabus": "CE Natuurkunde HAVO — Domein B: Golven (trillingen, golven, geluid)",
+  "syllabus": "CE Natuurkunde HAVO - Domein B: Golven (trillingen, golven, geluid)",
   "leerdoelen": [
    {
     "id": "na.B.1",
     "titel": "Trillingen",
-    "eindterm": "B — trillingen",
+    "eindterm": "B - trillingen",
     "teVerifiëren": true,
     "beschrijving": "De kandidaat kan een trilling beschrijven met amplitude, uitwijking, evenwichtsstand, trillingstijd en frequentie.",
     "concepten": [
@@ -923,7 +923,7 @@ Object.assign(LEERDOELEN, {
    {
     "id": "na.B.2",
     "titel": "Golven en golfgrootheden",
-    "eindterm": "B — golven",
+    "eindterm": "B - golven",
     "teVerifiëren": true,
     "beschrijving": "De kandidaat kan met golflengte, golfsnelheid en frequentie rekenen (v = f·λ).",
     "concepten": [
@@ -952,7 +952,7 @@ Object.assign(LEERDOELEN, {
    {
     "id": "na.B.3",
     "titel": "Geluid: grondtoon, boventonen en resonantie",
-    "eindterm": "B — geluid",
+    "eindterm": "B - geluid",
     "teVerifiëren": true,
     "beschrijving": "De kandidaat kan grondtoon en boventonen onderscheiden en resonantie verklaren.",
     "concepten": [
@@ -980,7 +980,7 @@ Object.assign(LEERDOELEN, {
    {
     "id": "na.B.4",
     "titel": "Golfverschijnselen: breking, spiegeling, interferentie",
-    "eindterm": "B — golfgedrag",
+    "eindterm": "B - golfgedrag",
     "teVerifiëren": true,
     "beschrijving": "De kandidaat kan breking, spiegeling en interferentie van golven herkennen en verklaren.",
     "concepten": [
@@ -1007,7 +1007,7 @@ Object.assign(LEERDOELEN, {
    {
     "id": "na.B.5",
     "titel": "Doppler-effect",
-    "eindterm": "B — doppler",
+    "eindterm": "B - doppler",
     "teVerifiëren": true,
     "beschrijving": "De kandidaat kan het doppler-effect verklaren bij een bewegende bron of waarnemer.",
     "concepten": [
@@ -1032,12 +1032,12 @@ Object.assign(LEERDOELEN, {
   ]
  },
  "na_C": {
-  "syllabus": "CE Natuurkunde HAVO — Domein C: Beweging en wisselwerking (kinematica, krachten, energie)",
+  "syllabus": "CE Natuurkunde HAVO - Domein C: Beweging en wisselwerking (kinematica, krachten, energie)",
   "leerdoelen": [
    {
     "id": "na.C.1",
     "titel": "Snelheid en versnelling",
-    "eindterm": "C — kinematica",
+    "eindterm": "C - kinematica",
     "teVerifiëren": true,
     "beschrijving": "De kandidaat kan snelheid en versnelling berekenen, ook bij een vrije val.",
     "concepten": [
@@ -1064,7 +1064,7 @@ Object.assign(LEERDOELEN, {
    {
     "id": "na.C.2",
     "titel": "Krachten herkennen",
-    "eindterm": "C — krachten",
+    "eindterm": "C - krachten",
     "teVerifiëren": true,
     "beschrijving": "De kandidaat kan de zwaartekracht, normaalkracht, wrijvingskracht, spankracht en de resulterende kracht herkennen en tekenen.",
     "concepten": [
@@ -1094,7 +1094,7 @@ Object.assign(LEERDOELEN, {
    {
     "id": "na.C.3",
     "titel": "Krachten samenstellen en ontbinden",
-    "eindterm": "C — vectoren",
+    "eindterm": "C - vectoren",
     "teVerifiëren": true,
     "beschrijving": "De kandidaat kan krachten die op één lijn, loodrecht of onder een willekeurige hoek staan samenstellen en ontbinden.",
     "concepten": [
@@ -1122,7 +1122,7 @@ Object.assign(LEERDOELEN, {
    {
     "id": "na.C.4",
     "titel": "De wetten van Newton",
-    "eindterm": "C — wetten van Newton",
+    "eindterm": "C - wetten van Newton",
     "teVerifiëren": true,
     "beschrijving": "De kandidaat kan de drie wetten van Newton toepassen, inclusief traagheid en actie = reactie.",
     "concepten": [
@@ -1153,7 +1153,7 @@ Object.assign(LEERDOELEN, {
    {
     "id": "na.C.5",
     "titel": "Arbeid, energie en vermogen",
-    "eindterm": "C — energie",
+    "eindterm": "C - energie",
     "teVerifiëren": true,
     "beschrijving": "De kandidaat kan arbeid, energie en vermogen berekenen en met de wet van behoud van energie werken.",
     "concepten": [
@@ -1181,7 +1181,7 @@ Object.assign(LEERDOELEN, {
    {
     "id": "na.C.6",
     "titel": "Warmtetransport",
-    "eindterm": "C — warmte",
+    "eindterm": "C - warmte",
     "teVerifiëren": true,
     "beschrijving": "De kandidaat kan warmtetransport door geleiding, stroming en straling onderscheiden.",
     "concepten": [
@@ -1208,12 +1208,12 @@ Object.assign(LEERDOELEN, {
   ]
  },
  "na_D": {
-  "syllabus": "CE Natuurkunde HAVO — Domein D: Lading en veld (elektriciteit)",
+  "syllabus": "CE Natuurkunde HAVO - Domein D: Lading en veld (elektriciteit)",
   "leerdoelen": [
    {
     "id": "na.D.1",
     "titel": "Stroom, spanning, weerstand en de wet van Ohm",
-    "eindterm": "D — wet van Ohm",
+    "eindterm": "D - wet van Ohm",
     "teVerifiëren": true,
     "beschrijving": "De kandidaat kan met stroomsterkte, spanning en weerstand rekenen via de wet van Ohm.",
     "concepten": [
@@ -1242,7 +1242,7 @@ Object.assign(LEERDOELEN, {
    {
     "id": "na.D.2",
     "titel": "Serie- en parallelschakelingen",
-    "eindterm": "D — schakelingen",
+    "eindterm": "D - schakelingen",
     "teVerifiëren": true,
     "beschrijving": "De kandidaat kan de stroom, spanning en vervangingsweerstand in serie- en parallelschakelingen bepalen.",
     "concepten": [
@@ -1268,7 +1268,7 @@ Object.assign(LEERDOELEN, {
    {
     "id": "na.D.3",
     "titel": "Elektrisch vermogen en energie",
-    "eindterm": "D — vermogen",
+    "eindterm": "D - vermogen",
     "teVerifiëren": true,
     "beschrijving": "De kandidaat kan het elektrisch vermogen en de verbruikte energie berekenen.",
     "concepten": [
@@ -1294,7 +1294,7 @@ Object.assign(LEERDOELEN, {
    {
     "id": "na.D.4",
     "titel": "Geleiders, isolatoren en lading",
-    "eindterm": "D — lading en veld",
+    "eindterm": "D - lading en veld",
     "teVerifiëren": true,
     "beschrijving": "De kandidaat kan geleiders en isolatoren onderscheiden en elektrische lading en het elektrisch veld beschrijven.",
     "concepten": [
@@ -1322,7 +1322,7 @@ Object.assign(LEERDOELEN, {
    {
     "id": "na.D.5",
     "titel": "Niet-ohmse componenten",
-    "eindterm": "D — componenten",
+    "eindterm": "D - componenten",
     "teVerifiëren": true,
     "beschrijving": "De kandidaat kan het gedrag van NTC, PTC, LDR en diode/LED verklaren als niet-ohmse weerstand.",
     "concepten": [
@@ -1351,7 +1351,7 @@ Object.assign(LEERDOELEN, {
    {
     "id": "na.D.6",
     "titel": "Veiligheid in huisinstallaties",
-    "eindterm": "D — veiligheid",
+    "eindterm": "D - veiligheid",
     "teVerifiëren": true,
     "beschrijving": "De kandidaat kan de functie van een zekering en aardlekschakelaar bij kortsluiting uitleggen.",
     "concepten": [
@@ -1378,12 +1378,12 @@ Object.assign(LEERDOELEN, {
   ]
  },
  "na_E": {
-  "syllabus": "CE Natuurkunde HAVO — Domein E: Straling en materie (radioactiviteit, toepassingen)",
+  "syllabus": "CE Natuurkunde HAVO - Domein E: Straling en materie (radioactiviteit, toepassingen)",
   "leerdoelen": [
    {
     "id": "na.E.1",
     "titel": "Soorten ioniserende straling",
-    "eindterm": "E — soorten straling",
+    "eindterm": "E - soorten straling",
     "teVerifiëren": true,
     "beschrijving": "De kandidaat kan alfa-, bèta- en gammastraling onderscheiden naar aard en doordringend vermogen.",
     "concepten": [
@@ -1414,7 +1414,7 @@ Object.assign(LEERDOELEN, {
    {
     "id": "na.E.2",
     "titel": "Radioactief verval en halveringstijd",
-    "eindterm": "E — verval",
+    "eindterm": "E - verval",
     "teVerifiëren": true,
     "beschrijving": "De kandidaat kan met halveringstijd rekenen en alfa- en bètaverval in een vervalreeks beschrijven.",
     "concepten": [
@@ -1445,7 +1445,7 @@ Object.assign(LEERDOELEN, {
    {
     "id": "na.E.3",
     "titel": "Activiteit, dosis en afscherming",
-    "eindterm": "E — dosimetrie",
+    "eindterm": "E - dosimetrie",
     "teVerifiëren": true,
     "beschrijving": "De kandidaat kan activiteit en (stralings)dosis onderscheiden en de rol van afscherming en achtergrondstraling benoemen.",
     "concepten": [
@@ -1474,7 +1474,7 @@ Object.assign(LEERDOELEN, {
    {
     "id": "na.E.4",
     "titel": "Medische toepassingen van straling",
-    "eindterm": "E — toepassingen",
+    "eindterm": "E - toepassingen",
     "teVerifiëren": true,
     "beschrijving": "De kandidaat kan medische beeldvorming (röntgen, echografie, CT, PET) koppelen aan het type straling.",
     "concepten": [
@@ -1503,7 +1503,7 @@ Object.assign(LEERDOELEN, {
    {
     "id": "na.E.5",
     "titel": "Elektromagnetisch spectrum",
-    "eindterm": "E — EM-spectrum",
+    "eindterm": "E - EM-spectrum",
     "teVerifiëren": true,
     "beschrijving": "De kandidaat kan radiogolven, infrarood en ultraviolet in het elektromagnetisch spectrum plaatsen.",
     "concepten": [
@@ -1530,12 +1530,12 @@ Object.assign(LEERDOELEN, {
   ]
  },
  "sk_A": {
-  "syllabus": "CE Scheikunde HAVO — Domein A: Vaardigheden (chemisch rekenen en onderzoek)",
+  "syllabus": "CE Scheikunde HAVO - Domein A: Vaardigheden (chemisch rekenen en onderzoek)",
   "leerdoelen": [
    {
     "id": "sk.A.1",
     "titel": "Rekenen met mol en concentratie",
-    "eindterm": "A — chemisch rekenen",
+    "eindterm": "A - chemisch rekenen",
     "teVerifiëren": true,
     "beschrijving": "De kandidaat kan rekenen met de hoeveelheid stof (mol), molaire massa en concentratie en daarbij de juiste eenheden gebruiken.",
     "concepten": [
@@ -1563,7 +1563,7 @@ Object.assign(LEERDOELEN, {
    {
     "id": "sk.A.2",
     "titel": "Scheidingsmethoden en zuiverheid",
-    "eindterm": "A — stoffen scheiden",
+    "eindterm": "A - stoffen scheiden",
     "teVerifiëren": true,
     "beschrijving": "De kandidaat kan een mengsel van een zuivere stof onderscheiden en scheidingsmethoden zoals filtratie toepassen en verklaren.",
     "concepten": [
@@ -1590,7 +1590,7 @@ Object.assign(LEERDOELEN, {
    {
     "id": "sk.A.3",
     "titel": "Onderzoek opzetten en betrouwbaarheid",
-    "eindterm": "A — onderzoeksvaardigheden",
+    "eindterm": "A - onderzoeksvaardigheden",
     "teVerifiëren": true,
     "beschrijving": "De kandidaat kan een hypothese formuleren, variabelen en een controle-experiment benoemen en de rol van herhaalmetingen en nauwkeurigheid beoordelen.",
     "concepten": [
@@ -1619,7 +1619,7 @@ Object.assign(LEERDOELEN, {
    {
     "id": "sk.A.4",
     "titel": "Veiligheid en gevaarsymbolen",
-    "eindterm": "A — veilig werken",
+    "eindterm": "A - veilig werken",
     "teVerifiëren": true,
     "beschrijving": "De kandidaat kan GHS-pictogrammen herkennen en veilig omgaan met stoffen in het practicum.",
     "concepten": [
@@ -1645,12 +1645,12 @@ Object.assign(LEERDOELEN, {
   ]
  },
  "sk_B": {
-  "syllabus": "CE Scheikunde HAVO — Domein B: Stoffen en materialen (atoombouw, binding, oplossen)",
+  "syllabus": "CE Scheikunde HAVO - Domein B: Stoffen en materialen (atoombouw, binding, oplossen)",
   "leerdoelen": [
    {
     "id": "sk.B.1",
     "titel": "Atoombouw en elementen",
-    "eindterm": "B — bouw van de stof",
+    "eindterm": "B - bouw van de stof",
     "teVerifiëren": true,
     "beschrijving": "De kandidaat kan de bouw van een atoom beschrijven en elementen plaatsen met behulp van atoombouw.",
     "concepten": [
@@ -1677,7 +1677,7 @@ Object.assign(LEERDOELEN, {
    {
     "id": "sk.B.2",
     "titel": "Ionen en ionbinding",
-    "eindterm": "B — ionbinding",
+    "eindterm": "B - ionbinding",
     "teVerifiëren": true,
     "beschrijving": "De kandidaat kan het ontstaan van ionen en de ionbinding in zouten verklaren.",
     "concepten": [
@@ -1703,7 +1703,7 @@ Object.assign(LEERDOELEN, {
    {
     "id": "sk.B.3",
     "titel": "Moleculen en atoombinding",
-    "eindterm": "B — covalente binding",
+    "eindterm": "B - covalente binding",
     "teVerifiëren": true,
     "beschrijving": "De kandidaat kan moleculen en de covalente (atoom)binding beschrijven en molecuulformules lezen.",
     "concepten": [
@@ -1731,7 +1731,7 @@ Object.assign(LEERDOELEN, {
    {
     "id": "sk.B.4",
     "titel": "Metaalbinding en legeringen",
-    "eindterm": "B — metalen",
+    "eindterm": "B - metalen",
     "teVerifiëren": true,
     "beschrijving": "De kandidaat kan de metaalbinding en de eigenschappen van legeringen verklaren.",
     "concepten": [
@@ -1757,7 +1757,7 @@ Object.assign(LEERDOELEN, {
    {
     "id": "sk.B.5",
     "titel": "Polariteit en intermoleculaire krachten",
-    "eindterm": "B — moleculaire stoffen",
+    "eindterm": "B - moleculaire stoffen",
     "teVerifiëren": true,
     "beschrijving": "De kandidaat kan polariteit van moleculen en de rol van intermoleculaire krachten bij stofeigenschappen verklaren.",
     "concepten": [
@@ -1783,7 +1783,7 @@ Object.assign(LEERDOELEN, {
    {
     "id": "sk.B.6",
     "titel": "Mengsels, oplossen en oplosbaarheid",
-    "eindterm": "B — oplossingen en mengsels",
+    "eindterm": "B - oplossingen en mengsels",
     "teVerifiëren": true,
     "beschrijving": "De kandidaat kan een mengsel/oplossing beschrijven en het oplossen van stoffen en verschillen in oplosbaarheid verklaren met polariteit.",
     "concepten": [
@@ -1811,12 +1811,12 @@ Object.assign(LEERDOELEN, {
   ]
  },
  "sk_C": {
-  "syllabus": "CE Scheikunde HAVO — Domein C: Chemische processen (reacties, rekenen, zuur-base, redox, snelheid, evenwicht)",
+  "syllabus": "CE Scheikunde HAVO - Domein C: Chemische processen (reacties, rekenen, zuur-base, redox, snelheid, evenwicht)",
   "leerdoelen": [
    {
     "id": "sk.C.1",
     "titel": "Reactievergelijkingen kloppend maken",
-    "eindterm": "C — reactievergelijkingen",
+    "eindterm": "C - reactievergelijkingen",
     "teVerifiëren": true,
     "beschrijving": "De kandidaat kan een reactievergelijking kloppend maken met de juiste coëfficiënten.",
     "concepten": [
@@ -1843,7 +1843,7 @@ Object.assign(LEERDOELEN, {
    {
     "id": "sk.C.2",
     "titel": "Rekenen aan reacties",
-    "eindterm": "C — rekenen aan reacties",
+    "eindterm": "C - rekenen aan reacties",
     "teVerifiëren": true,
     "beschrijving": "De kandidaat kan met de molverhouding uit een reactievergelijking hoeveelheden berekenen.",
     "concepten": [
@@ -1869,7 +1869,7 @@ Object.assign(LEERDOELEN, {
    {
     "id": "sk.C.3",
     "titel": "Zuren, basen en pH",
-    "eindterm": "C — zuren en basen",
+    "eindterm": "C - zuren en basen",
     "teVerifiëren": true,
     "beschrijving": "De kandidaat kan zuren en basen herkennen, pH interpreteren en een neutralisatie beschrijven.",
     "concepten": [
@@ -1899,7 +1899,7 @@ Object.assign(LEERDOELEN, {
    {
     "id": "sk.C.4",
     "titel": "Redoxreacties",
-    "eindterm": "C — redox",
+    "eindterm": "C - redox",
     "teVerifiëren": true,
     "beschrijving": "De kandidaat kan oxidatie en reductie herkennen en een redoxreactie beschrijven.",
     "concepten": [
@@ -1926,7 +1926,7 @@ Object.assign(LEERDOELEN, {
    {
     "id": "sk.C.5",
     "titel": "Energie-effect: endo- en exotherm",
-    "eindterm": "C — energie bij reacties",
+    "eindterm": "C - energie bij reacties",
     "teVerifiëren": true,
     "beschrijving": "De kandidaat kan endotherme en exotherme reacties onderscheiden aan het energie-effect.",
     "concepten": [
@@ -1952,7 +1952,7 @@ Object.assign(LEERDOELEN, {
    {
     "id": "sk.C.6",
     "titel": "Reactiesnelheid en katalyse",
-    "eindterm": "C — reactiesnelheid",
+    "eindterm": "C - reactiesnelheid",
     "teVerifiëren": true,
     "beschrijving": "De kandidaat kan verklaren hoe concentratie, temperatuur, verdelingsgraad en een katalysator de reactiesnelheid beïnvloeden.",
     "concepten": [
@@ -1981,7 +1981,7 @@ Object.assign(LEERDOELEN, {
    {
     "id": "sk.C.7",
     "titel": "Chemisch evenwicht",
-    "eindterm": "C — evenwicht",
+    "eindterm": "C - evenwicht",
     "teVerifiëren": true,
     "beschrijving": "De kandidaat kan een chemisch evenwicht beschrijven als een dynamische toestand.",
     "concepten": [
@@ -2006,12 +2006,12 @@ Object.assign(LEERDOELEN, {
   ]
  },
  "sk_D": {
-  "syllabus": "CE Scheikunde HAVO — Domein D: Koolstofchemie (koolwaterstoffen, functionele groepen, reactietypen, polymeren)",
+  "syllabus": "CE Scheikunde HAVO - Domein D: Koolstofchemie (koolwaterstoffen, functionele groepen, reactietypen, polymeren)",
   "leerdoelen": [
    {
     "id": "sk.D.1",
     "titel": "Koolwaterstoffen: alkanen en alkenen",
-    "eindterm": "D — koolwaterstoffen",
+    "eindterm": "D - koolwaterstoffen",
     "teVerifiëren": true,
     "beschrijving": "De kandidaat kan alkanen en alkenen onderscheiden en homologe reeksen herkennen.",
     "concepten": [
@@ -2038,7 +2038,7 @@ Object.assign(LEERDOELEN, {
    {
     "id": "sk.D.2",
     "titel": "Functionele groepen herkennen",
-    "eindterm": "D — functionele groepen",
+    "eindterm": "D - functionele groepen",
     "teVerifiëren": true,
     "beschrijving": "De kandidaat kan functionele groepen zoals de hydroxyl- en carboxylgroep in een structuurformule herkennen.",
     "concepten": [
@@ -2069,7 +2069,7 @@ Object.assign(LEERDOELEN, {
    {
     "id": "sk.D.3",
     "titel": "Esters en estervorming",
-    "eindterm": "D — esters",
+    "eindterm": "D - esters",
     "teVerifiëren": true,
     "beschrijving": "De kandidaat kan de vorming van een ester uit een alcohol en een carbonzuur beschrijven.",
     "concepten": [
@@ -2095,7 +2095,7 @@ Object.assign(LEERDOELEN, {
    {
     "id": "sk.D.4",
     "titel": "Isomerie en naamgeving",
-    "eindterm": "D — isomerie",
+    "eindterm": "D - isomerie",
     "teVerifiëren": true,
     "beschrijving": "De kandidaat kan isomeren herkennen en organische stoffen systematisch benoemen.",
     "concepten": [
@@ -2121,7 +2121,7 @@ Object.assign(LEERDOELEN, {
    {
     "id": "sk.D.5",
     "titel": "Reactietypen in de koolstofchemie",
-    "eindterm": "D — reactietypen",
+    "eindterm": "D - reactietypen",
     "teVerifiëren": true,
     "beschrijving": "De kandidaat kan additie-, substitutie- en verbrandingsreacties onderscheiden.",
     "concepten": [
@@ -2149,7 +2149,7 @@ Object.assign(LEERDOELEN, {
    {
     "id": "sk.D.6",
     "titel": "Polymeren",
-    "eindterm": "D — polymeren",
+    "eindterm": "D - polymeren",
     "teVerifiëren": true,
     "beschrijving": "De kandidaat kan de vorming van polymeren uit monomeren beschrijven.",
     "concepten": [
@@ -2175,12 +2175,12 @@ Object.assign(LEERDOELEN, {
   ]
  },
  "sk_E": {
-  "syllabus": "CE Scheikunde HAVO — Domein E: Chemie en samenleving (grondstoffen, milieu, duurzaamheid)",
+  "syllabus": "CE Scheikunde HAVO - Domein E: Chemie en samenleving (grondstoffen, milieu, duurzaamheid)",
   "leerdoelen": [
    {
     "id": "sk.E.1",
     "titel": "Grondstoffen, materialen en industrie",
-    "eindterm": "E — grondstoffen en materialen",
+    "eindterm": "E - grondstoffen en materialen",
     "teVerifiëren": true,
     "beschrijving": "De kandidaat kan de weg van grondstof naar materiaal in de industriële chemie beschrijven.",
     "concepten": [
@@ -2207,7 +2207,7 @@ Object.assign(LEERDOELEN, {
    {
     "id": "sk.E.2",
     "titel": "Milieuproblemen: broeikaseffect, ozon en zure regen",
-    "eindterm": "E — milieu-effecten",
+    "eindterm": "E - milieu-effecten",
     "teVerifiëren": true,
     "beschrijving": "De kandidaat kan de oorzaken van broeikaseffect, aantasting van de ozonlaag en zure regen verklaren.",
     "concepten": [
@@ -2237,7 +2237,7 @@ Object.assign(LEERDOELEN, {
    {
     "id": "sk.E.3",
     "titel": "Duurzaamheid en groene chemie",
-    "eindterm": "E — duurzaamheid",
+    "eindterm": "E - duurzaamheid",
     "teVerifiëren": true,
     "beschrijving": "De kandidaat kan principes van groene chemie, recycling en een circulaire economie beoordelen op duurzaamheid.",
     "concepten": [
@@ -2265,7 +2265,7 @@ Object.assign(LEERDOELEN, {
    {
     "id": "sk.E.4",
     "titel": "Levenscyclusanalyse",
-    "eindterm": "E — levenscyclusanalyse",
+    "eindterm": "E - levenscyclusanalyse",
     "teVerifiëren": true,
     "beschrijving": "De kandidaat kan met een levenscyclusanalyse de milieubelasting van een product over alle fasen beoordelen.",
     "concepten": [
@@ -2290,7 +2290,7 @@ Object.assign(LEERDOELEN, {
    {
     "id": "sk.E.5",
     "titel": "Chemie in voeding en energie",
-    "eindterm": "E — toepassingen",
+    "eindterm": "E - toepassingen",
     "teVerifiëren": true,
     "beschrijving": "De kandidaat kan chemische aspecten van voedsel en biobrandstoffen in de samenleving beschrijven.",
     "concepten": [

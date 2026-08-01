@@ -17,7 +17,7 @@ function openVak(id,_noHash){
     try{history.pushState({vak:id,niv:APP_LEVEL},'',_p);}catch(e){}
   }
   document.getElementById('dtitle').textContent=ST.vak.naam;
-  // Per-vak embleem (klein, solide) + groot hero-watermerk (sfeer) — zelfde icoon
+  // Per-vak embleem (klein, solide) + groot hero-watermerk (sfeer) - zelfde icoon
   const _icoSvg=(typeof VAK_ICONS!=='undefined'&&VAK_ICONS[id])||'<circle cx="12" cy="12" r="4"/>';
   const _emb=document.getElementById('vd-emblem');
   if(_emb)_emb.innerHTML=`<svg viewBox="0 0 24 24">${_icoSvg}</svg>`;
@@ -56,7 +56,7 @@ function openVak(id,_noHash){
   // Voorbeeld: 'https://xxxx.supabase.co/storage/v1/object/public/examens'
   // Leeg ('') = AlleExamens.nl gebruiken. De Supabase-bucket bleek de archief-PDF's
   // niet te bevatten (opgaven/antwoorden gaven 404; alleen de tekstboekje-knop werkte,
-  // want die wees al naar alleexamens.nl) — daarom staat dit nu op de werkende bron.
+  // want die wees al naar alleexamens.nl) - daarom staat dit nu op de werkende bron.
   const _EXAMENS_BASE = '';
   const _aeNames={nl:'Nederlands',wa:'Wiskunde A',wb:'Wiskunde B',bi:'Biologie',sk:'Scheikunde',na:'Natuurkunde',en:'Engels',ec:'Economie',be:'Bedrijfseconomie',gs:'Geschiedenis',ak:'Aardrijkskunde',mw:'Maatschappijwetenschappen',du:'Duits',fr:'Frans',la:'Latijn',gr:'Grieks',in:'Informatica'};
   const _aeLvl=(APP_LEVEL||'havo').toUpperCase();
@@ -240,7 +240,7 @@ function initMf(){
   if(!methodes.length){el.style.display='none';return;}
   el.style.display='';
   const mSel=document.getElementById('mf-methode');
-  mSel.innerHTML='<option value="">— Kies methode —</option>'+
+  mSel.innerHTML='<option value="">- Kies methode -</option>'+
     methodes.map(m=>`<option value="${m.id}">${m.naam} · ${m.uitgever}</option>`).join('');
   const hSel=document.getElementById('mf-hoofdstuk');
   hSel.style.display='none';hSel.disabled=true;
@@ -260,7 +260,7 @@ function _mfFillHfdst(mid,methodes,reset){
   const m=methodes.find(x=>x.id===mid);
   const hSel=document.getElementById('mf-hoofdstuk');
   if(!m){hSel.style.display='none';return;}
-  let opts='<option value="">— Kies hoofdstuk —</option>';
+  let opts='<option value="">- Kies hoofdstuk -</option>';
   const hasJaar=m.hoofdstukken.some(h=>h.jaar);
   if(hasJaar){
     // Groepeer per leerjaar (hele bovenbouw)
@@ -299,9 +299,9 @@ function _mfApply(mid,hnr,methodes){
       (h.jaar?`<span class="mf-res-jaar">Leerjaar ${h.jaar}</span>`:'')+
       `<span class="mf-res-ttl">H${h.nr} · ${_esc(h.titel)}</span></div>`+
       `<button class="mf-chip-x" onclick="resetMf()" title="Filter wissen" aria-label="Filter wissen">✕</button></div>`+
-      `<div class="mf-res-lbl">Hoort bij examendomein${h.domeinen.length>1?'en':''} — tik om te oefenen:</div>`+
+      `<div class="mf-res-lbl">Hoort bij examendomein${h.domeinen.length>1?'en':''} - tik om te oefenen:</div>`+
       `<div class="mf-doms">${badges}</div>`+
-      `<div class="mf-res-note">Indicatief — de hoofdstukindeling kan per editie en school verschillen.</div>`;
+      `<div class="mf-res-note">Indicatief - de hoofdstukindeling kan per editie en school verschillen.</div>`;
     res.style.display='';
   }
 }
@@ -339,7 +339,7 @@ function resetMf(){
   const mSel=document.getElementById('mf-methode');
   const hSel=document.getElementById('mf-hoofdstuk');
   if(mSel)mSel.value='';
-  if(hSel){hSel.innerHTML='<option value="">— Kies hoofdstuk —</option>';hSel.style.display='none';hSel.disabled=true;}
+  if(hSel){hSel.innerHTML='<option value="">- Kies hoofdstuk -</option>';hSel.style.display='none';hSel.disabled=true;}
   var _mfr=document.getElementById("mf-result");if(_mfr)_mfr.style.display="none";
   document.querySelectorAll('#dlist [data-domein-id]').forEach(el=>el.style.display='');
   if(vak)_mfClear(vak.id+'_'+niveau);
@@ -1124,7 +1124,7 @@ function aqFill(){
 }
 function renderAdaptiveResults(){
   const wrap=document.getElementById('adaptive-res-wrap');
-  // "Beheersing dit domein"-kaart verwijderd op verzoek — resultaatscherm strakker.
+  // "Beheersing dit domein"-kaart verwijderd op verzoek - resultaatscherm strakker.
   if(wrap)wrap.innerHTML='';
   return;
   // eslint-disable-next-line no-unreachable

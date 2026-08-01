@@ -115,7 +115,7 @@
     </div>
     <div class="result-box">
       <div class="result-label">Jouw eindcijfer</div>
-      <div class="result-value" id="result-value">—</div>
+      <div class="result-value" id="result-value">-</div>
       <div id="pass-indicator" class="pass-indicator neutral">Vul je cijfers in</div>
       <div class="result-note">Let op: dit is een indicatie per vak. De slaagregels hangen ook van je andere vakken af.</div>
     </div>
@@ -179,7 +179,7 @@
     const indicatorEl = document.getElementById('pass-indicator');
 
     if (isNaN(seRaw) || isNaN(ceRaw)) {
-      resultEl.textContent = '—';
+      resultEl.textContent = '-';
       resultEl.className = 'result-value';
       indicatorEl.textContent = 'Vul beide cijfers in';
       indicatorEl.className = 'pass-indicator neutral';

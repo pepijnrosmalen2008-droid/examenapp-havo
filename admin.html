@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Slagio — Admin Dashboard</title>
+  <title>Slagio - Admin Dashboard</title>
   <meta name="robots" content="noindex, nofollow">
   <link rel="icon" href="/icon-192.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -173,7 +173,7 @@
       <span class="login-dot"></span>
     </div>
     <div class="login-h">Admin Dashboard</div>
-    <p class="login-sub">Alleen voor beheerders — toegang beperkt</p>
+    <p class="login-sub">Alleen voor beheerders - toegang beperkt</p>
     <input type="password" id="pw" class="login-input" placeholder="Wachtwoord" autocomplete="current-password">
     <button class="login-btn" id="login-btn">Inloggen →</button>
     <div class="login-err" id="login-err"></div>
@@ -200,7 +200,7 @@
 </div>
 
 <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.101.1/dist/umd/supabase.js" crossorigin="anonymous"></script>
-<!-- Curriculum-kennislaag (F1) — voor de Curriculum-tab -->
+<!-- Curriculum-kennislaag (F1) - voor de Curriculum-tab -->
 <script src="/data-havo.meta.js"></script>
 <script src="/knowledge-havo.js"></script>
 <script src="/knowledge-koppeling-havo.js"></script>
@@ -390,7 +390,7 @@ function render(lb, ev, evMissing, ao=[], fb=[], ql=[], ce=[]) {
   FEAT.forEach(f=>{
     const vmap={};
     ev.filter(e=>e.event_type===f.key&&e.vak_naam).forEach(e=>{vmap[e.vak_naam]=(vmap[e.vak_naam]||0)+1;});
-    featVakMap[f.key]=Object.entries(vmap).sort((a,b)=>b[1]-a[1]).slice(0,3).map(([v,c])=>v+' ('+c+')').join(', ')||'—';
+    featVakMap[f.key]=Object.entries(vmap).sort((a,b)=>b[1]-a[1]).slice(0,3).map(([v,c])=>v+' ('+c+')').join(', ')||'-';
   });
 
   // ── Device breakdown (feature events) ──
@@ -560,7 +560,7 @@ function render(lb, ev, evMissing, ao=[], fb=[], ql=[], ce=[]) {
   const errataTopVak = Object.entries(errataVakCount).sort((a,b)=>b[1]-a[1]);
   const _esc = s => String(s==null?'':s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
 
-  // ── Retentie (cohort uit app_open per device/dag) — altijd volledige historie,
+  // ── Retentie (cohort uit app_open per device/dag) - altijd volledige historie,
   //    negeert het periodefilter zodat cohorts niet worden afgekapt. ──
   const _aoAll = window._ao || ao;
   const DAYMS = 86400000;
@@ -588,7 +588,7 @@ function render(lb, ev, evMissing, ao=[], fb=[], ql=[], ce=[]) {
     <div class="sec">🚩 Gemelde vragen ${errata.length?`<span style="font-size:.8rem;color:var(--red);font-weight:800">${errata.length}</span>`:''}</div>
     ${errata.length?`
     <div class="panel">
-      <div class="panel-h">Leerlingen die "fout in deze vraag" meldden — nieuwste eerst</div>
+      <div class="panel-h">Leerlingen die "fout in deze vraag" meldden - nieuwste eerst</div>
       <div style="display:flex;flex-wrap:wrap;gap:6px;padding:2px 0 10px">
         ${errataTopVak.map(([v,n])=>`<span style="background:var(--card2);border:1px solid var(--border);border-radius:8px;padding:4px 9px;font-size:12px;color:var(--muted)"><b style="color:var(--fg)">${_esc(v)}</b> ${n}</span>`).join('')}
       </div>
@@ -618,7 +618,7 @@ function render(lb, ev, evMissing, ao=[], fb=[], ql=[], ce=[]) {
     </div>`:''}
 
     <!-- ── Retentie (komen leerlingen terug?) ── -->
-    <div class="sec">🔁 Retentie — komen leerlingen terug?</div>
+    <div class="sec">🔁 Retentie - komen leerlingen terug?</div>
     ${totalDevices?`
     <div class="kpi-grid">
       <div class="kpi c-bl"><div class="kpi-lbl">Unieke devices</div><div class="kpi-val">${totalDevices.toLocaleString()}</div><div class="kpi-sub">met een app-open (hele historie)</div></div>
@@ -626,7 +626,7 @@ function render(lb, ev, evMissing, ao=[], fb=[], ql=[], ce=[]) {
       ${retRows.slice(0,2).map(r=>`<div class="kpi c-or"><div class="kpi-lbl">D${r.o}-retentie</div><div class="kpi-val">${r.denom?r.pct+'%':'–'}</div><div class="kpi-sub">${r.denom?`${r.num}/${r.denom} actief op dag ${r.o}`:'te weinig historie'}</div></div>`).join('')}
     </div>
     <div class="panel" style="margin-top:.6rem">
-      <div class="panel-h">Retentiecurve — % van cohort nog actief N dagen ná het eerste bezoek</div>
+      <div class="panel-h">Retentiecurve - % van cohort nog actief N dagen ná het eerste bezoek</div>
       <div style="display:flex;align-items:flex-end;gap:12px;height:130px;padding:10px 4px 0">
         ${[{o:0,denom:totalDevices,num:totalDevices,pct:100},...retRows].map(r=>{const h=r.denom?Math.max(2,r.pct):2;return `<div style="flex:1;display:flex;flex-direction:column;align-items:center;justify-content:flex-end;gap:5px;height:100%">
           <div style="font-size:11px;color:var(--muted);font-weight:800">${r.denom?r.pct+'%':'–'}</div>
@@ -668,15 +668,15 @@ function render(lb, ev, evMissing, ao=[], fb=[], ql=[], ce=[]) {
     <!-- ── Reset banner ── -->
     <div style="background:rgba(var(--blue-rgb),.07);border:1px solid rgba(var(--blue-rgb),.2);border-radius:11px;padding:.75rem 1.1rem;font-size:.8rem;color:rgba(var(--blue-rgb),.85);display:flex;gap:.7rem;align-items:center;margin-bottom:.75rem">
       <span>🔄</span>
-      <span>Leaderboard <strong>gereset op 1 juni 2026</strong> — start schooljaar 2026–2027. Scores van voorgaande schooljaren zijn gearchiveerd.</span>
+      <span>Leaderboard <strong>gereset op 1 juni 2026</strong> - start schooljaar 2026–2027. Scores van voorgaande schooljaren zijn gearchiveerd.</span>
     </div>
 
     <!-- ── Activatietrechter ── -->
     <div class="sec">🔭 Activatietrechter</div>
     <div class="kpi-grid" style="margin-bottom:.6rem">
-      <div class="kpi c-tl"><div class="kpi-lbl">🔓 Unieke bezoekers</div><div class="kpi-val">${uniqDevTotal||'—'}</div><div class="kpi-sub">Unieke apparaten (app_open)</div></div>
-      <div class="kpi c-bl"><div class="kpi-lbl">📝 Startten een quiz</div><div class="kpi-val">${uniqQuizzers||'—'}</div><div class="kpi-sub">${openToQuizPct}% van bezoekers</div></div>
-      <div class="kpi c-or"><div class="kpi-lbl">👤 Maakten een account</div><div class="kpi-val">${uniqAccounts||'—'}</div><div class="kpi-sub">${accountsPct}% van bezoekers</div></div>
+      <div class="kpi c-tl"><div class="kpi-lbl">🔓 Unieke bezoekers</div><div class="kpi-val">${uniqDevTotal||'-'}</div><div class="kpi-sub">Unieke apparaten (app_open)</div></div>
+      <div class="kpi c-bl"><div class="kpi-lbl">📝 Startten een quiz</div><div class="kpi-val">${uniqQuizzers||'-'}</div><div class="kpi-sub">${openToQuizPct}% van bezoekers</div></div>
+      <div class="kpi c-or"><div class="kpi-lbl">👤 Maakten een account</div><div class="kpi-val">${uniqAccounts||'-'}</div><div class="kpi-sub">${accountsPct}% van bezoekers</div></div>
       <div class="kpi c-gr"><div class="kpi-lbl">📈 Conversie bezoeker → quiz</div>
         <div class="kpi-val">${openToQuizPct}%</div>
         <div style="margin:6px 0 2px"><div style="height:8px;border-radius:4px;background:rgba(255,255,255,.07);overflow:hidden"><div style="width:${openToQuizPct}%;height:100%;background:var(--green);border-radius:4px;transition:width .6s"></div></div></div>
@@ -761,7 +761,7 @@ function render(lb, ev, evMissing, ao=[], fb=[], ql=[], ce=[]) {
           ${hourMap.map((c,h)=>{
             const ht=Math.round((c/maxHour)*112);
             const isPeak=c===maxHour;
-            return `<div class="bar-col" title="${h}:00 — ${c} acties">
+            return `<div class="bar-col" title="${h}:00 - ${c} acties">
               <div class="bar-num" style="font-size:7px">${c||''}</div>
               <div class="bar-bar" style="height:${Math.max(ht,2)}px;${isPeak?'background:var(--or)':''}"></div>
               <div class="bar-lbl">${h}</div>
@@ -815,7 +815,7 @@ function render(lb, ev, evMissing, ao=[], fb=[], ql=[], ce=[]) {
             <span style="font-weight:700;min-width:2rem;text-align:right;color:${col}">${d.pct}%</span>
             <span style="color:var(--muted);font-size:.7rem">${d.a}/${d.tot}</span>
           </div>`;
-        }).join(''):'<span style="color:var(--muted);font-size:.78rem">Nog geen data — verschijnt zodra quizzen worden afgebroken</span>'}
+        }).join(''):'<span style="color:var(--muted);font-size:.78rem">Nog geen data - verschijnt zodra quizzen worden afgebroken</span>'}
       </div>
     </div>
 
@@ -864,7 +864,7 @@ function render(lb, ev, evMissing, ao=[], fb=[], ql=[], ce=[]) {
             <span style="color:var(--muted);font-size:.7rem;min-width:2rem;text-align:right">${pct}%</span>
             <span style="font-weight:700;min-width:1.5rem;text-align:right">${c}</span>
           </div>`;
-        }).join('') : '<span style="color:var(--muted);font-size:.78rem">Nog geen herkomst-data — wordt bijgehouden vanaf de volgende bezoeken</span>'}
+        }).join('') : '<span style="color:var(--muted);font-size:.78rem">Nog geen herkomst-data - wordt bijgehouden vanaf de volgende bezoeken</span>'}
       </div>
       <div class="panel">
         <div class="panel-h">📲 Herkomst top 3 <span>aandeel van totaal bezoek</span></div>
@@ -908,7 +908,7 @@ function render(lb, ev, evMissing, ao=[], fb=[], ql=[], ce=[]) {
     <div class="kpi-grid" style="margin-bottom:.6rem">
       <div class="kpi c-yw">
         <div class="kpi-lbl">⭐ Gem. waardering</div>
-        <div class="kpi-val">${fbOverallAvg ?? '—'}</div>
+        <div class="kpi-val">${fbOverallAvg ?? '-'}</div>
         <div class="kpi-sub">${fbTotal} beoordelingen totaal</div>
       </div>
       ${fbFeatureList.map(([feat,d])=>{
@@ -932,7 +932,7 @@ function render(lb, ev, evMissing, ao=[], fb=[], ql=[], ce=[]) {
           const maxDist=Math.max(...d.dist,1);
           const icon=FEAT.find(f=>f.key===feat)?.icon||'⚡';
           return `<div>
-            <div style="font-size:.78rem;font-weight:700;color:#fff;margin-bottom:.5rem">${icon} ${FB_LABELS[feat]||feat} — ⌀ ${avg}</div>
+            <div style="font-size:.78rem;font-weight:700;color:#fff;margin-bottom:.5rem">${icon} ${FB_LABELS[feat]||feat} - ⌀ ${avg}</div>
             ${[5,4,3,2,1].map(s=>{
               const cnt=d.dist[s-1];
               const pct=Math.round(cnt/maxDist*100);
@@ -947,7 +947,7 @@ function render(lb, ev, evMissing, ao=[], fb=[], ql=[], ce=[]) {
         }).join('')}
       </div>
     </div>` : `<div class="panel" style="margin-bottom:.6rem;text-align:center;color:var(--muted);font-size:.82rem;padding:1.5rem">
-      Nog geen feedback ontvangen — verschijnt zodra leerlingen een quiz of flashcard-sessie afronden.
+      Nog geen feedback ontvangen - verschijnt zodra leerlingen een quiz of flashcard-sessie afronden.
     </div>`}
 
     <!-- ── Platform ── -->
@@ -957,17 +957,17 @@ function render(lb, ev, evMissing, ao=[], fb=[], ql=[], ce=[]) {
     <div class="kpi-grid" style="margin-bottom:.6rem">
       <div class="kpi c-tl">
         <div class="kpi-lbl">📲 Unieke apparaten</div>
-        <div class="kpi-val">${uniqDevTotal||'—'}</div>
+        <div class="kpi-val">${uniqDevTotal||'-'}</div>
         <div class="kpi-sub">${totalVisits} paginabezoeken getrackt${uniqDevTotal===0?' · tracking actief na eerste bezoek':''}</div>
       </div>
       <div class="kpi c-bl">
         <div class="kpi-lbl">📱 Mobiel (uniek)</div>
-        <div class="kpi-val">${uniqDevMob||'—'}</div>
+        <div class="kpi-val">${uniqDevMob||'-'}</div>
         <div class="kpi-sub">${uniqMobPct}% van unieke apparaten${uniqDevPwa>0?' · '+uniqDevPwa+' via PWA':''}</div>
       </div>
       <div class="kpi c-gr">
         <div class="kpi-lbl">🖥️ Desktop (uniek)</div>
-        <div class="kpi-val">${uniqDevDesk||'—'}</div>
+        <div class="kpi-val">${uniqDevDesk||'-'}</div>
         <div class="kpi-sub">${uniqDeskPct}% van unieke apparaten</div>
       </div>
       ${uniqDevTotal>0?`<div class="kpi c-pu">
@@ -1006,13 +1006,13 @@ function render(lb, ev, evMissing, ao=[], fb=[], ql=[], ce=[]) {
         <div style="display:flex;gap:1rem;font-size:.72rem;color:var(--muted)">
           <span><span style="color:var(--blue)">●</span> Mobiel ${mobPct}%</span>
           <span><span style="color:var(--green)">●</span> Desktop ${deskPct}%</span>
-          ${totDev === 0 ? '<span style="font-style:italic">Nog geen data — tracking start nu</span>' : '<span>' + totDev + ' events getrackt</span>'}
+          ${totDev === 0 ? '<span style="font-style:italic">Nog geen data - tracking start nu</span>' : '<span>' + totDev + ' events getrackt</span>'}
         </div>
       </div>
     </div>
 
     <!-- ── Feature gebruik ── -->
-    <div class="sec">Feature gebruik ${evMissing?'<span style="color:var(--yellow);font-weight:400;font-size:.72rem;letter-spacing:0;text-transform:none">⚠ events-tabel ontbreekt — zie setup hieronder</span>':''}</div>
+    <div class="sec">Feature gebruik ${evMissing?'<span style="color:var(--yellow);font-weight:400;font-size:.72rem;letter-spacing:0;text-transform:none">⚠ events-tabel ontbreekt - zie setup hieronder</span>':''}</div>
     ${evMissing ? `
     <div class="warn-banner" style="margin-bottom:.75rem">
       <span>⚠️</span>
@@ -1041,7 +1041,7 @@ CREATE POLICY "ev_select" ON events FOR SELECT USING (true);</div>
       <div class="kpi c-bl"><div class="kpi-lbl">Totaal feature-events</div><div class="kpi-val">${totalEv}</div><div class="kpi-sub">Alle features samen</div></div>
       <div class="kpi c-yw"><div class="kpi-lbl">Events vandaag</div><div class="kpi-val">${ev.filter(e=>e.created_at?.slice(0,10)===today).length}</div><div class="kpi-sub">Alle feature-types</div></div>
       <div class="kpi c-gr"><div class="kpi-lbl">Events deze week</div><div class="kpi-val">${ev.filter(e=>e.created_at?.slice(0,10)>=w7).length}</div><div class="kpi-sub"></div></div>
-      <div class="kpi c-tl"><div class="kpi-lbl">Meest populaire feature</div><div class="kpi-val" style="font-size:1.3rem">${FEAT.sort((a,b)=>evTotals[b.key]-evTotals[a.key])[0]?.label||'—'}</div><div class="kpi-sub">${Math.max(...Object.values(evTotals))} keer gebruikt</div></div>
+      <div class="kpi c-tl"><div class="kpi-lbl">Meest populaire feature</div><div class="kpi-val" style="font-size:1.3rem">${FEAT.sort((a,b)=>evTotals[b.key]-evTotals[a.key])[0]?.label||'-'}</div><div class="kpi-sub">${Math.max(...Object.values(evTotals))} keer gebruikt</div></div>
     </div>
 
     <div class="feat-grid">
@@ -1062,7 +1062,7 @@ CREATE POLICY "ev_select" ON events FOR SELECT USING (true);</div>
     <!-- Bot race breakdown -->
     <div class="row-3" style="margin-top:.6rem">
       <div class="panel">
-        <div class="panel-h">🏁 Bot Race — moeilijkheidsgraad</div>
+        <div class="panel-h">🏁 Bot Race - moeilijkheidsgraad</div>
         ${['easy','medium','hard'].map((d,i)=>{
           const n=raceDiff[d]||0;
           const tot=Object.values(raceDiff).reduce((s,v)=>s+v,0)||1;
@@ -1137,7 +1137,7 @@ CREATE POLICY "ev_select" ON events FOR SELECT USING (true);</div>
               <td>${u.s}</td>
               <td style="color:var(--or);font-weight:700">${u.best}</td>
               <td style="color:var(--muted)">${u.vakken.size}</td>
-              <td style="color:var(--muted);font-size:.72rem">${u.last||'—'}</td>
+              <td style="color:var(--muted);font-size:.72rem">${u.last||'-'}</td>
             </tr>`).join('')}
           </tbody>
         </table>
@@ -1192,13 +1192,13 @@ CREATE POLICY "ev_select" ON events FOR SELECT USING (true);</div>
         <tbody>
           ${lb.map(e=>`<tr>
             <td style="color:var(--muted);font-family:monospace;font-size:.7rem">${e.created_at?.slice(0,16).replace('T',' ')}</td>
-            <td style="font-weight:600">${e.naam||'—'}</td>
+            <td style="font-weight:600">${e.naam||'-'}</td>
             <td><span class="pill ${e.niveau||''}">${(e.niveau||'').toUpperCase()}</span></td>
-            <td>${e.vak_naam||'—'}</td>
-            <td style="color:var(--muted);max-width:140px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">${e.domein_naam||'—'}</td>
+            <td>${e.vak_naam||'-'}</td>
+            <td style="color:var(--muted);max-width:140px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">${e.domein_naam||'-'}</td>
             <td><div class="sbar"><div class="sbar-bg"><div class="sbar-fill" style="width:${(e.score||0)/10}%"></div></div><span style="font-weight:700;min-width:2.2rem;text-align:right">${e.score}</span></div></td>
-            <td style="color:${e.correct===e.total&&e.total>0?'var(--green)':'var(--muted)'}">${e.correct??'—'}/${e.total??'—'}</td>
-            <td style="color:var(--muted);font-family:monospace">${e.avg_tijd?e.avg_tijd.toFixed(1)+'s':'—'}</td>
+            <td style="color:${e.correct===e.total&&e.total>0?'var(--green)':'var(--muted)'}">${e.correct??'-'}/${e.total??'-'}</td>
+            <td style="color:var(--muted);font-family:monospace">${e.avg_tijd?e.avg_tijd.toFixed(1)+'s':'-'}</td>
           </tr>`).join('')}
         </tbody>
       </table>

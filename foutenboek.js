@@ -1,5 +1,5 @@
 // ═══════════════════════════════════════════════════════════════════════
-// foutenboek.js — FOUTENBOEK 2.0
+// foutenboek.js - FOUTENBOEK 2.0
 // Iedere fout van een leerling wordt automatisch opgeslagen mét: vraag, juist
 // antwoord, gekozen antwoord, wanneer, hoe vaak gemaakt, en (waar bekend) het
 // leerdoel + de misconceptie erachter ("waarom ging dit fout?"). Spaced
@@ -19,7 +19,7 @@ function fbQkey(domId, v) { return (domId || '') + '|' + (v || '').slice(0, 80);
 function _fbLoad() { try { return JSON.parse(localStorage.getItem(lvlCol('foutenboek')) || '{}'); } catch (e) { return {}; } }
 function _fbStore(d) { try { localStorage.setItem(lvlCol('foutenboek'), JSON.stringify(d)); } catch (e) {} }
 
-// Aantal open (nog niet beheerste) fouten — voor de badge op de home-knop.
+// Aantal open (nog niet beheerste) fouten - voor de badge op de home-knop.
 function fbOpenCount() {
   const d = _fbLoad(); let n = 0;
   for (const k in d) if (!d[k].mastered) n++;

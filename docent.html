@@ -221,7 +221,7 @@ tbody tr{transition:background .12s}tbody tr:hover{background:var(--soft)}
       </div>
       <div class="pad glass">
         <h2>Snel een klas bekijken</h2>
-        <div class="sub">Heb je alleen een klascode? Bekijk het dashboard direct — geen account nodig.</div>
+        <div class="sub">Heb je alleen een klascode? Bekijk het dashboard direct - geen account nodig.</div>
         <input id="code-in" class="code-in" maxlength="6" placeholder="KLASCODE" oninput="this.value=this.value.toUpperCase().replace(/[^A-Z0-9]/g,'')" onkeydown="if(event.key==='Enter')connect()">
         <button class="btn btn-glass" style="width:100%;padding:13px" onclick="connect()">Dashboard bekijken</button>
         <div id="connect-msg" class="msg info"></div>
@@ -277,7 +277,7 @@ tbody tr{transition:background .12s}tbody tr:hover{background:var(--soft)}
       </div>
     </div>
     <div id="demo-note" class="glass hidden" style="padding:12px 16px;font-size:13px;margin-bottom:16px">
-      <b>Voorbeeldweergave</b> met verzonnen data — zo werkt je dashboard zodra je klas oefent.
+      <b>Voorbeeldweergave</b> met verzonnen data - zo werkt je dashboard zodra je klas oefent.
     </div>
 
     <div id="advies" class="advies glass hidden"><div class="advies-bar"></div><div class="advies-tx" id="advies-tx"></div></div>
@@ -290,9 +290,9 @@ tbody tr{transition:background .12s}tbody tr:hover{background:var(--soft)}
       </div>
       <div class="pass">
         <div class="pass-lbl">Verwachte klas-slaagkans</div>
-        <div class="pass-n num" id="pass-n">—</div>
+        <div class="pass-n num" id="pass-n">-</div>
         <div class="pass-sub">indicatie, geen garantie</div>
-        <div class="pass-days" id="pass-days">—</div>
+        <div class="pass-days" id="pass-days">-</div>
       </div>
     </div>
 
@@ -352,7 +352,7 @@ function vakNaam(niv,id){const v=vakList(niv).find(x=>x.id===id);return v?v.naam
 function fillVak(){
   const niv=document.getElementById('nk-niv').value;
   const sel=document.getElementById('nk-vak');
-  sel.innerHTML='<option value="">— Geen specifiek vak —</option>'+vakList(niv).map(v=>`<option value="${esc(v.id)}">${esc(v.naam)}</option>`).join('');
+  sel.innerHTML='<option value="">- Geen specifiek vak -</option>'+vakList(niv).map(v=>`<option value="${esc(v.id)}">${esc(v.naam)}</option>`).join('');
 }
 
 /* ══ SCHERM-ROUTING ══ */
@@ -406,7 +406,7 @@ async function loadMyClasses(){
     const {data,error}=await SB.rpc('klas_mine');
     if(error)throw error;
     const rows=data||[];
-    if(!rows.length){box.innerHTML='<p class="empty">Nog geen klassen. Maak hierboven je eerste klas aan — je krijgt meteen een code om te delen met je leerlingen.</p>';return;}
+    if(!rows.length){box.innerHTML='<p class="empty">Nog geen klassen. Maak hierboven je eerste klas aan - je krijgt meteen een code om te delen met je leerlingen.</p>';return;}
     box.innerHTML=rows.map(k=>`
       <div class="kl-row">
         <div class="kl-info"><div class="kl-naam">${esc(k.naam||'Klas')}</div>
@@ -430,7 +430,7 @@ async function createClass(){
     const {data,error}=await SB.rpc('klas_create',{p_naam:naam,p_niveau:niveau,p_vak_id:vak});
     if(error)throw error;
     const r=Array.isArray(data)?data[0]:data;
-    msg.className='msg ok';msg.textContent='Klas aangemaakt — code '+(r?.code||'')+'. Deel deze met je leerlingen.';
+    msg.className='msg ok';msg.textContent='Klas aangemaakt - code '+(r?.code||'')+'. Deel deze met je leerlingen.';
     document.getElementById('nk-naam').value='';
     if(r?.code)toast('Klas aangemaakt · code '+r.code);
     loadMyClasses();
@@ -508,14 +508,14 @@ function render(d){
   const adv=document.getElementById('advies');
   if(worst){
     adv.classList.remove('hidden');
-    document.getElementById('advies-tx').innerHTML=`<span class="lbl">Advies</span>De klas loopt het meest vast op <b>${esc(worst.domein)}</b> (${Math.round(worst.gem*100)}%). ${worst.zwak||0} leerling${worst.zwak===1?'':'en'} ${worst.zwak===1?'zit':'zitten'} eronder — behandel dit als eerste en zet de oefenset klaar. ${cnt.r>0?`<b>${cnt.r}</b> leerling${cnt.r===1?'':'en'} ${cnt.r===1?'loopt':'lopen'} risico.`:''}`;
+    document.getElementById('advies-tx').innerHTML=`<span class="lbl">Advies</span>De klas loopt het meest vast op <b>${esc(worst.domein)}</b> (${Math.round(worst.gem*100)}%). ${worst.zwak||0} leerling${worst.zwak===1?'':'en'} ${worst.zwak===1?'zit':'zitten'} eronder - behandel dit als eerste en zet de oefenset klaar. ${cnt.r>0?`<b>${cnt.r}</b> leerling${cnt.r===1?'':'en'} ${cnt.r===1?'loopt':'lopen'} risico.`:''}`;
   } else adv.classList.add('hidden');
   const risk=ll.filter(s=>s.status!=='g').sort((a,b)=>a.score-b.score).slice(0,8);
   document.getElementById('risk').innerHTML=risk.length?risk.map(s=>`
     <div class="risk-row"><span class="dot d${s.status}"></span>
       <div class="risk-info"><div class="risk-naam">${esc(s.naam)}</div><div class="risk-reason">${esc(s.reason)}</div></div>
-      <div class="risk-metric"><div class="risk-gem num" style="color:${pctCol(s.gem||0)}">${s.gem!=null?Math.round(s.gem*100)+'%':'—'}</div>${growHtml(s.groei)}</div>
-    </div>`).join(''):'<p class="empty">Geen risicoleerlingen — de hele klas zit op koers.</p>';
+      <div class="risk-metric"><div class="risk-gem num" style="color:${pctCol(s.gem||0)}">${s.gem!=null?Math.round(s.gem*100)+'%':'-'}</div>${growHtml(s.groei)}</div>
+    </div>`).join(''):'<p class="empty">Geen risicoleerlingen - de hele klas zit op koers.</p>';
   document.getElementById('dom').innerHTML=doms.length?doms.map(dm=>{
     const dc=dm.gem>=0.7?'dg':dm.gem>=0.5?'da':'dr';
     return `<div class="dom-row"><span class="dot ${dc}"></span>
@@ -531,7 +531,7 @@ function render(d){
     const lbl=s.status==='g'?'Klaar':s.status==='a'?'Let op':'Risico';
     return `<tr><td style="font-weight:700">${esc(s.naam)}</td>
       <td><span class="chip ${chip}"><span class="dot ${dotc}"></span>${lbl}</span></td>
-      <td class="num" style="font-weight:700;color:${pctCol(s.gem||0)}">${s.gem!=null?Math.round(s.gem*100)+'%':'—'}</td>
+      <td class="num" style="font-weight:700;color:${pctCol(s.gem||0)}">${s.gem!=null?Math.round(s.gem*100)+'%':'-'}</td>
       <td>${growHtml(s.groei)}</td>
       <td class="num" style="${s.laatst_actief_dagen>=7||s.laatst_actief_dagen==null?'color:var(--red);font-weight:600':''}">${agoTxt(s.laatst_actief_dagen)}</td></tr>`;
   }).join(''):'<tr><td colspan="5" class="empty">Nog geen leerlingen actief.</td></tr>';

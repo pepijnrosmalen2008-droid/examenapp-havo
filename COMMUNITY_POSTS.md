@@ -4,14 +4,14 @@ Plak deze teksten direct. Pas de [HAAKJES] aan waar nodig.
 
 ---
 
-## 1. Scholierennet.nl — Forum per vak
+## 1. Scholierennet.nl - Forum per vak
 
 **Waar posten:**
 Ga naar scholierennet.nl → Scholieren → Vakken → [vak-forum]
 Post in de vakforums van je eigen examenvakken (max 3–5 forums, anders lijkt het spam).
 
 **Titel:**
-`Gratis oefensite voor het CE [VAK] — heeft me echt geholpen`
+`Gratis oefensite voor het CE [VAK] - heeft me echt geholpen`
 
 **Bericht:**
 ```
@@ -36,7 +36,7 @@ Succes met leren!
 
 ---
 
-## 2. Studeersnel.nl — Samenvatting met backlink
+## 2. Studeersnel.nl - Samenvatting met backlink
 
 **Waar posten:**
 Studeersnel.nl → Upload document → Samenvatting maken voor [VAK] [NIVEAU]
@@ -64,18 +64,18 @@ Gratis oefenvragen per domein, echte eindexamens 2019–2025 en flashcards vind 
 
 ---
 
-## 3. Reddit — r/thenetherlands of r/studenten
+## 3. Reddit - r/thenetherlands of r/studenten
 
 **Subreddit:** r/thenetherlands (of zoek naar een NL scholieren-subreddit)
 
 **Titel:**
-`Heb gratis examenhulp gebouwd voor HAVO/VWO leerlingen — feedback welkom`
+`Heb gratis examenhulp gebouwd voor HAVO/VWO leerlingen - feedback welkom`
 
 **Post:**
 ```
 Hey Reddit,
 
-Ik heb dit jaar Slagio.nl gebouwd — een gratis examenvoorbereiding-PWA voor HAVO en VWO leerlingen.
+Ik heb dit jaar Slagio.nl gebouwd - een gratis examenvoorbereiding-PWA voor HAVO en VWO leerlingen.
 
 Wat het doet:
 - 10.000+ oefenvragen per domein voor 17 vakken (HAVO + VWO)
@@ -95,7 +95,7 @@ Ben benieuwd naar feedback, ook als er iets niet werkt of mis is.
 
 ---
 
-## 4. WhatsApp-klassengroep — Kort en direct
+## 4. WhatsApp-klassengroep - Kort en direct
 
 **Stuur dit naar je eigen klassen-/studiegroepapp:**
 
@@ -137,7 +137,7 @@ slagio.nl (link in bio)
 ```
 Hey! Ik zie dat jij al examentips deelt voor HAVO/VWO leerlingen.
 
-Ik heb Slagio.nl gebouwd — gratis oefenplatform met 10.000+ CE-vragen en echte eindexamens.
+Ik heb Slagio.nl gebouwd - gratis oefenplatform met 10.000+ CE-vragen en echte eindexamens.
 Geen betaalmuur, geen account nodig.
 
 Zou je het willen proberen en taggen als je het goed vindt?
@@ -150,9 +150,9 @@ slagio.nl
 
 ## Prioriteitsvolgorde (grootste impact eerst)
 
-1. **Scholierennet.nl forums** — 3–5 vakforums vandaag
-2. **WhatsApp klassengroep** — 1 bericht, direct resultaat
-3. **Studeersnel.nl** — 2 samenvattingen uploaden met backlink
-4. **Instagram DM** — 10–20 kleine accounts benaderen
-5. **Reddit** — 1 post in r/thenetherlands
-6. **TikTok/Reels** — consistentie > 1 post
+1. **Scholierennet.nl forums** - 3–5 vakforums vandaag
+2. **WhatsApp klassengroep** - 1 bericht, direct resultaat
+3. **Studeersnel.nl** - 2 samenvattingen uploaden met backlink
+4. **Instagram DM** - 10–20 kleine accounts benaderen
+5. **Reddit** - 1 post in r/thenetherlands
+6. **TikTok/Reels** - consistentie > 1 post

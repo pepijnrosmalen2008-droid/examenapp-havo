@@ -162,14 +162,14 @@ function reportQ(){
   const q=ST.vragen&&ST.vragen[ST.idx];
   if(!q){if(typeof showToast==='function')showToast('Geen vraag om te melden','#64748b');return;}
   const key=((ST.vak&&ST.vak.id)||'')+'|'+((ST.domein&&ST.domein.id)||'')+'|'+((q.v||'').slice(0,60));
-  if(_reportedQ.has(key)){if(typeof showToast==='function')showToast('Deze vraag is al gemeld — bedankt!','#64748b');return;}
+  if(_reportedQ.has(key)){if(typeof showToast==='function')showToast('Deze vraag is al gemeld - bedankt!','#64748b');return;}
   _reportedQ.add(key);
   const correct=(q.o&&typeof q.c==='number')?q.o[q.c]:((q.a&&typeof q.c==='number')?q.a[q.c]:null);
   try{if(typeof trackEvent==='function')trackEvent('vraag_fout',{domein:(ST.domein&&ST.domein.naam)||null,domein_id:(ST.domein&&ST.domein.id)||null,mode:ST.mode||null,vraag:(q.v||'').slice(0,240),correct:correct});}catch(e){}
   haptic&&haptic([10,30,10]);
   if(typeof showToast==='function')showToast('Bedankt! We controleren deze vraag. ✓','#22c55e');
   const btn=document.getElementById('quiz-report-btn');
-  if(btn){btn.classList.add('reported');btn.setAttribute('title','Gemeld — bedankt!');}
+  if(btn){btn.classList.add('reported');btn.setAttribute('title','Gemeld - bedankt!');}
 }
 function toonV(){
   const q=ST.vragen[ST.idx];
@@ -364,7 +364,7 @@ function _kiesReveal(gekozen,correct,btns){
   ST.antwrd.push({pts:ok?1:0,chosenText:q.o[chosenOrigIdx],tijdOver});
   try{if(typeof fbRecord==='function')fbRecord(q,ok,q.o[chosenOrigIdx]);}catch(e){}
   // Vonk reageert kort: oeps bij fout, feest bij een goede reeks (meer variatie
-  // + sterkere lof naarmate de combo oploopt — Duolingo-stijl).
+  // + sterkere lof naarmate de combo oploopt - Duolingo-stijl).
   try{if(typeof vonkReact==='function'){
     const _pk=a=>a[Math.floor(Math.random()*a.length)];
     if(!ok)vonkReact('oeps',_pk(['Oeps!','Bijna!','Volgende keer pak je ’m!','Geeft niks, doorgaan!']),{duration:1400});
@@ -1050,7 +1050,7 @@ document.addEventListener('DOMContentLoaded',()=>{
   try{renderDecayAlert();}catch(e){}
   try{renderExamAlert();}catch(e){}
 });
-// (offline-/online-indicator wordt centraal beheerd in lb.js — geen dubbele toggles hier)
+// (offline-/online-indicator wordt centraal beheerd in lb.js - geen dubbele toggles hier)
 
 // ═══════ HAPTIC ═══════
 function haptic(pat){try{if(navigator.vibrate)navigator.vibrate(pat);}catch(e){}}
@@ -1072,7 +1072,7 @@ document.addEventListener('click',function(e){
   setTimeout(()=>rip.remove(),600);
 },{passive:true});
 
-// ═══════ UI-GELUID (overal — élke knop/klikbaar element krijgt geluid) ═══════
+// ═══════ UI-GELUID (overal - élke knop/klikbaar element krijgt geluid) ═══════
 let _lastUiSnd=0;
 document.addEventListener('click',function(e){
   if(!_soundOn)return;
@@ -1216,7 +1216,7 @@ function toonRes(){
       </div>`;
       rbdEl.insertAdjacentElement('afterend',shareCard);
     }
-    // (Persoonlijk-record-banner verwijderd op verzoek — minder tegels op het resultaatscherm.)
+    // (Persoonlijk-record-banner verwijderd op verzoek - minder tegels op het resultaatscherm.)
     // (Tweede PB-banner + losse "smart next action" + "volgend domein"-knop
     //  verwijderd: die dubbelden met de record-banner hierboven en met de
     //  one-more-kaart onderaan. Eén record-banner, één "wat nu"-kaart.)
@@ -1347,7 +1347,7 @@ function toonRes(){
       setTimeout(()=>_showRegPrompt(pct),1200);
     }
   }catch(e){}
-  // "Volgende domein"-kaart verwijderd op verzoek — minder tegels op het resultaatscherm.
+  // "Volgende domein"-kaart verwijderd op verzoek - minder tegels op het resultaatscherm.
   try{const omBox=document.getElementById('one-more-wrap');if(omBox)omBox.innerHTML='';}catch(e){}
   try{renderAdaptiveResults();}catch(e){}
   try{renderChallengeResult();}catch(e){}

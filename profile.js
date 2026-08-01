@@ -331,7 +331,7 @@ function getAnimalDisplay(animalId,stageIdx,size){
   const a=getAnimalById(animalId);
   if(!a)return'<span style="font-size:'+size+'px">🐾</span>';
   // Ultiem (laatste rang) krijgt een subtiele klasse-hook voor extra glans
-  // (géén metaal-ring meer — de ultieme vorm onderscheidt zich door zijn eigen art).
+  // (géén metaal-ring meer - de ultieme vorm onderscheidt zich door zijn eigen art).
   // Twee toptiers: Goud (voorlaatste) = vergulde mascotte, Ultiem (laatste) =
   // stralende "ascended" vorm. Beide gebruiken de hoogste art met eigen behandeling.
   const _topIdx=ANIM_THRESHOLDS.length-1;
@@ -548,7 +548,7 @@ function buildCijferGrid(){
     const div=document.createElement('div');
     div.className='cijfer-item';
     div.innerHTML=`<div class="cijfer-vak"><div class="cijfer-dot" style="background:${v.kleur}"></div>${v.naam}</div>
-      <input class="cijfer-input${val?(' has-val'):''}" id="ci-${v.id}" type="number" min="1" max="10" step="0.1" value="${val}" placeholder="—" oninput="this.classList.toggle('has-val',this.value!=='')" />
+      <input class="cijfer-input${val?(' has-val'):''}" id="ci-${v.id}" type="number" min="1" max="10" step="0.1" value="${val}" placeholder="-" oninput="this.classList.toggle('has-val',this.value!=='')" />
       <div class="cijfer-label">SE-cijfer</div>`;
     grid.appendChild(div);
   });

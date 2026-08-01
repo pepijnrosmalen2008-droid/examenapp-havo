@@ -1,5 +1,5 @@
 // ═══════════════════════════════════════════════════════════════════════
-// curriculum-dash.js — gedeelde renderer voor het Curriculum Dashboard (F1.5).
+// curriculum-dash.js - gedeelde renderer voor het Curriculum Dashboard (F1.5).
 // Gebruikt door curriculum.html (standalone) én admin.html (tab). Eén bron.
 //
 // window.renderCurriculumInto(el, { vak, lb })
@@ -11,7 +11,7 @@
 // Leest globals: LEERDOELEN, LO_KOPPELING, VAKKEN (uit data-<niveau>.meta.js).
 //
 // Nieuwe kolommen t.o.v. v1: Syllabus (conceptdekking), AI-Ready (samengesteld),
-// Review (🟢 gevalideerd / 🟡 review nodig / 🔴 concept — auto, of handmatig
+// Review (🟢 gevalideerd / 🟡 review nodig / 🔴 concept - auto, of handmatig
 // via leerdoel.review).
 // ═══════════════════════════════════════════════════════════════════════
 (function () {
@@ -210,7 +210,7 @@
 
     el.innerHTML = `<div class="curd">
       <div class="c-head"><select class="c-sel" data-curd-sel>${selOpts}</select>
-        <span class="muted" style="font-size:12px">pilot — koppeling beschikbaar voor ${vakken.length} vak(ken)</span></div>
+        <span class="muted" style="font-size:12px">pilot - koppeling beschikbaar voor ${vakken.length} vak(ken)</span></div>
       <div class="tiles">${tiles}</div>
       <div class="legend">
         <span><b>Syllabus</b> = conceptdekking</span>

@@ -1,11 +1,11 @@
 {
  "bi_A": {
-  "syllabus": "CE Biologie HAVO — Domein A: Vaardigheden (biologisch onderzoek)",
+  "syllabus": "CE Biologie HAVO - Domein A: Vaardigheden (biologisch onderzoek)",
   "leerdoelen": [
    {
     "id": "bi.A.1",
     "titel": "Onderzoek opzetten",
-    "eindterm": "A — onderzoeksvaardigheden",
+    "eindterm": "A - onderzoeksvaardigheden",
     "teVerifiëren": true,
     "beschrijving": "De kandidaat kan een biologisch experiment opzetten: hypothese formuleren en onafhankelijke, afhankelijke en constante variabelen benoemen, inclusief een geschikte controlegroep.",
     "concepten": [
@@ -39,7 +39,7 @@
    {
     "id": "bi.A.2",
     "titel": "Betrouwbaarheid en validiteit beoordelen",
-    "eindterm": "A — kwaliteit van onderzoek",
+    "eindterm": "A - kwaliteit van onderzoek",
     "teVerifiëren": true,
     "beschrijving": "De kandidaat kan de betrouwbaarheid en validiteit van een onderzoek beoordelen en de rol van steekproef en placebo herkennen.",
     "concepten": [
@@ -68,7 +68,7 @@
    {
     "id": "bi.A.3",
     "titel": "Data verwerken en grafieken lezen",
-    "eindterm": "A — dataverwerking",
+    "eindterm": "A - dataverwerking",
     "teVerifiëren": true,
     "beschrijving": "De kandidaat kan gegevens uit tabellen en grafieken aflezen, spreiding (standaarddeviatie) interpreteren en bijv. fotosynthesesnelheid uit een grafiek afleiden.",
     "concepten": [
@@ -96,7 +96,7 @@
    {
     "id": "bi.A.4",
     "titel": "Correlatie versus causaliteit",
-    "eindterm": "A — conclusies trekken",
+    "eindterm": "A - conclusies trekken",
     "teVerifiëren": true,
     "beschrijving": "De kandidaat kan onderscheiden of gegevens een verband (correlatie) of een oorzaak-gevolgrelatie (causaliteit) aantonen.",
     "concepten": [
@@ -121,7 +121,7 @@
    {
     "id": "bi.A.5",
     "titel": "Biologisch onderzoeksgereedschap",
-    "eindterm": "A — practicumvaardigheden",
+    "eindterm": "A - practicumvaardigheden",
     "teVerifiëren": true,
     "beschrijving": "De kandidaat kan een determineertabel gebruiken en de functie van een preparaat bij microscopisch onderzoek benoemen.",
     "concepten": [
@@ -147,12 +147,12 @@
   ]
  },
  "bi_M": {
-  "syllabus": "CE Biologie HAVO — Molecuul- en celniveau (eiwitsynthese, stofwisseling van de cel, erfelijkheid)",
+  "syllabus": "CE Biologie HAVO - Molecuul- en celniveau (eiwitsynthese, stofwisseling van de cel, erfelijkheid)",
   "leerdoelen": [
    {
     "id": "bi.M.1",
     "titel": "Bouw en functie van de cel",
-    "eindterm": "B — cel als bouwsteen",
+    "eindterm": "B - cel als bouwsteen",
     "teVerifiëren": true,
     "beschrijving": "De kandidaat kan celorganellen en hun functie benoemen en het verschil tussen plantaardige en dierlijke cellen aangeven.",
     "concepten": [
@@ -184,7 +184,7 @@
    {
     "id": "bi.M.2",
     "titel": "Transport door het celmembraan",
-    "eindterm": "B — membraantransport",
+    "eindterm": "B - membraantransport",
     "teVerifiëren": true,
     "beschrijving": "De kandidaat kan osmose verklaren en voorspellen hoe water zich via het celmembraan verplaatst bij verschillende concentraties.",
     "concepten": [
@@ -209,7 +209,7 @@
    {
     "id": "bi.M.3",
     "titel": "Enzymwerking",
-    "eindterm": "B — enzymen",
+    "eindterm": "B - enzymen",
     "teVerifiëren": true,
     "beschrijving": "De kandidaat kan de werking van enzymen beschrijven en het effect van temperatuur en pH op de enzymactiviteit uit een grafiek afleiden.",
     "concepten": [
@@ -237,7 +237,7 @@
    {
     "id": "bi.M.4",
     "titel": "Energiestofwisseling: fotosynthese en celademhaling",
-    "eindterm": "B — assimilatie/dissimilatie",
+    "eindterm": "B - assimilatie/dissimilatie",
     "teVerifiëren": true,
     "beschrijving": "De kandidaat kan fotosynthese en celademhaling als tegengestelde processen beschrijven, met de rol van chloroplast en mitochondrion.",
     "concepten": [
@@ -264,7 +264,7 @@
    {
     "id": "bi.M.5",
     "titel": "DNA en eiwitsynthese",
-    "eindterm": "B — eiwitsynthese",
+    "eindterm": "B - eiwitsynthese",
     "teVerifiëren": true,
     "beschrijving": "De kandidaat kan de route van DNA naar eiwit beschrijven (genexpressie) en de rol van chromosoom en ribosoom benoemen.",
     "concepten": [
@@ -294,7 +294,7 @@
    {
     "id": "bi.M.6",
     "titel": "Celdeling: mitose en meiose",
-    "eindterm": "B — celdeling",
+    "eindterm": "B - celdeling",
     "teVerifiëren": true,
     "beschrijving": "De kandidaat kan mitose en meiose onderscheiden en het verschil in aantal chromosomen van de dochtercellen aangeven.",
     "concepten": [
@@ -322,7 +322,7 @@
    {
     "id": "bi.M.7",
     "titel": "Erfelijkheid: allelen en overerving",
-    "eindterm": "B — genetica",
+    "eindterm": "B - genetica",
     "teVerifiëren": true,
     "beschrijving": "De kandidaat kan met dominante en recessieve allelen een kruisingsschema opstellen en overervingskansen berekenen; de rol van mutatie benoemen.",
     "concepten": [
@@ -352,12 +352,12 @@
   ]
  },
  "bi_O": {
-  "syllabus": "CE Biologie HAVO — Orgaan- en organismeniveau (regeling, afweer, transport, spijsvertering)",
+  "syllabus": "CE Biologie HAVO - Orgaan- en organismeniveau (regeling, afweer, transport, spijsvertering)",
   "leerdoelen": [
    {
     "id": "bi.O.1",
     "titel": "Zenuwstelsel en prikkelgeleiding",
-    "eindterm": "C — zenuwstelsel",
+    "eindterm": "C - zenuwstelsel",
     "teVerifiëren": true,
     "beschrijving": "De kandidaat kan de weg van een prikkel door neuron en synaps beschrijven en het verschil tussen een reflex en een bewuste reactie verklaren.",
     "concepten": [
@@ -387,7 +387,7 @@
    {
     "id": "bi.O.2",
     "titel": "Hormonale regulatie",
-    "eindterm": "C — hormonale regulatie",
+    "eindterm": "C - hormonale regulatie",
     "teVerifiëren": true,
     "beschrijving": "De kandidaat kan de regulatie van de bloedglucose door insuline en glucagon verklaren en de werking van adrenaline benoemen.",
     "concepten": [
@@ -416,7 +416,7 @@
    {
     "id": "bi.O.3",
     "titel": "Homeostase en antagonisme",
-    "eindterm": "C — homeostase",
+    "eindterm": "C - homeostase",
     "teVerifiëren": true,
     "beschrijving": "De kandidaat kan homeostase als het constant houden van het inwendig milieu verklaren en antagonistische regeling herkennen.",
     "concepten": [
@@ -443,7 +443,7 @@
    {
     "id": "bi.O.4",
     "titel": "Afweer en immuniteit",
-    "eindterm": "C — afweer",
+    "eindterm": "C - afweer",
     "teVerifiëren": true,
     "beschrijving": "De kandidaat kan specifieke en aspecifieke afweer onderscheiden, de rol van antigeen en antilichaam beschrijven en het effect van vaccinatie verklaren.",
     "concepten": [
@@ -474,7 +474,7 @@
    {
     "id": "bi.O.5",
     "titel": "Transport en gasuitwisseling",
-    "eindterm": "C — transport",
+    "eindterm": "C - transport",
     "teVerifiëren": true,
     "beschrijving": "De kandidaat kan de bloedsomloop en de gasuitwisseling in de longen beschrijven en de rol van diffusie daarbij verklaren.",
     "concepten": [
@@ -504,7 +504,7 @@
    {
     "id": "bi.O.6",
     "titel": "Spijsvertering en uitscheiding",
-    "eindterm": "C — vertering en uitscheiding",
+    "eindterm": "C - vertering en uitscheiding",
     "teVerifiëren": true,
     "beschrijving": "De kandidaat kan de vertering van voedingsstoffen in het verteringsstelsel beschrijven en de rol van de nieren bij uitscheiding benoemen.",
     "concepten": [
@@ -532,7 +532,7 @@
    {
     "id": "bi.O.7",
     "titel": "Beweging: gewrichten en spieren",
-    "eindterm": "C — beweging",
+    "eindterm": "C - beweging",
     "teVerifiëren": true,
     "beschrijving": "De kandidaat kan de werking van een gewricht beschrijven en uitleggen hoe antagonistische spieren samenwerken bij beweging.",
     "concepten": [
@@ -558,12 +558,12 @@
   ]
  },
  "bi_P": {
-  "syllabus": "CE Biologie HAVO — Populatie- en ecosysteemniveau (ecologie, evolutie, duurzaamheid)",
+  "syllabus": "CE Biologie HAVO - Populatie- en ecosysteemniveau (ecologie, evolutie, duurzaamheid)",
   "leerdoelen": [
    {
     "id": "bi.P.1",
     "titel": "Ecosystemen: biotische en abiotische factoren",
-    "eindterm": "D — ecosysteem",
+    "eindterm": "D - ecosysteem",
     "teVerifiëren": true,
     "beschrijving": "De kandidaat kan een ecosysteem beschrijven, biotische en abiotische factoren onderscheiden en de niche van een soort benoemen.",
     "concepten": [
@@ -591,7 +591,7 @@
    {
     "id": "bi.P.2",
     "titel": "Voedselrelaties en energiedoorgifte",
-    "eindterm": "D — voedselrelaties",
+    "eindterm": "D - voedselrelaties",
     "teVerifiëren": true,
     "beschrijving": "De kandidaat kan voedselketens en -webben analyseren, de rol van producent, consument en reducent benoemen en energiedoorgifte via een piramide van biomassa verklaren.",
     "concepten": [
@@ -624,7 +624,7 @@
    {
     "id": "bi.P.3",
     "titel": "Populatiedynamiek en draagkracht",
-    "eindterm": "D — populaties",
+    "eindterm": "D - populaties",
     "teVerifiëren": true,
     "beschrijving": "De kandidaat kan veranderingen in een populatie verklaren en de rol van draagkracht bij begrenzing van populatiegroei uit een grafiek afleiden.",
     "concepten": [
@@ -652,7 +652,7 @@
    {
     "id": "bi.P.4",
     "titel": "Relaties tussen soorten",
-    "eindterm": "D — symbiose",
+    "eindterm": "D - symbiose",
     "teVerifiëren": true,
     "beschrijving": "De kandidaat kan vormen van symbiose herkennen en het effect van een exoot op een ecosysteem verklaren.",
     "concepten": [
@@ -678,7 +678,7 @@
    {
     "id": "bi.P.5",
     "titel": "Successie en biodiversiteit",
-    "eindterm": "D — successie en duurzaamheid",
+    "eindterm": "D - successie en duurzaamheid",
     "teVerifiëren": true,
     "beschrijving": "De kandidaat kan successie in een ecosysteem beschrijven en de betekenis van biodiversiteit en duurzaamheid verklaren.",
     "concepten": [
@@ -705,7 +705,7 @@
    {
     "id": "bi.P.6",
     "titel": "Evolutie en natuurlijke selectie",
-    "eindterm": "D — evolutie",
+    "eindterm": "D - evolutie",
     "teVerifiëren": true,
     "beschrijving": "De kandidaat kan natuurlijke selectie verklaren en het ontstaan van soorten (soortvorming) als gevolg van evolutie beschrijven.",
     "concepten": [
