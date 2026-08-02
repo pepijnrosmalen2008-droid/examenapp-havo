@@ -1336,6 +1336,106 @@ function quickOefen(){
     }
   },120);
 }
+// ═══════ FASE 2: perfecte-week-kalender, streak-reparatie & avond-urgentie ═══════
+const _FLAME_MINI='<svg class="pw-flame" viewBox="0 0 24 24" width="15" height="15" fill="currentColor" aria-hidden="true"><path d="M12 2c1.6 4 5 5.6 5 9.6a5 5 0 0 1-10 0c0-1.2.4-2 1-2.9.3 1.5 1 2 1.9 2.1-.8-2.4.4-4.7 1.1-5.8Z"/></svg>';
+const PRICE_REPAIR=75; // per gemiste dag
+
+// Ma-zo kalender van DEZE week met rijke states (done/frozen/today/future/missed).
+function _streakWeekHTML(info){
+  const s=getStreak();
+  const frozen=new Set(s.frozen||[]);
+  const done=new Set(info.days||[]);
+  const labels=['ma','di','wo','do','vr','za','zo'];
+  const today=new Date();today.setHours(0,0,0,0);
+  const todayStr=today.toISOString().slice(0,10);
+  const monday=new Date(today);monday.setDate(monday.getDate()-((today.getDay()+6)%7));
+  let cells='';let doneCount=0;
+  for(let i=0;i<7;i++){
+    const d=new Date(monday);d.setDate(d.getDate()+i);
+    const ds=d.toISOString().slice(0,10);
+    const isToday=ds===todayStr, isFuture=d>today;
+    const isDone=done.has(ds), isFrozen=!isDone&&frozen.has(ds);
+    if(isDone||isFrozen)doneCount++;
+    const state=isDone?'done':isFrozen?'frozen':isToday?'today':isFuture?'future':'missed';
+    const inner=isDone?_FLAME_MINI:(isFrozen?(typeof _ico==='function'?_ico('freeze',15):'❄'):'');
+    cells+=`<div class="pw-cell pw-${state}" style="--i:${i}"><div class="pw-pip">${inner}</div><div class="pw-lbl">${labels[i]}</div></div>`;
+  }
+  const perfect=doneCount===7;
+  const caption=perfect?'Perfecte week! Alle zeven dagen.':(doneCount+' / 7 dagen deze week');
+  return {html:`<div class="pw-wrap${perfect?' pw-perfect':''}"><div class="pw-week">${cells}</div><div class="pw-caption">${caption}</div></div>`, perfect, doneCount};
+}
+
+// Detecteer een recent verbroken streak die de moeite van herstellen waard is.
+// Alleen als de streak nu 0 is, de laatste oefendag 2-3 dagen terug lag, en de
+// vorige reeks >=3 was. Auto-freeze dekt al een enkele gemiste dag mét token.
+function _streakBreakInfo(){
+  let info;try{info=calcStreak();}catch(e){return null;}
+  if((info.current||0)>0)return null;
+  const s=getStreak();
+  const set=new Set([...(s.days||[]),...(s.frozen||[])]);
+  if(!set.size)return null;
+  const today=new Date();today.setHours(0,0,0,0);
+  let mostRecent=null,minDiff=1e9;
+  set.forEach(ds=>{const diff=Math.round((today-new Date(ds+'T00:00:00'))/86400000);
+    if(diff>=0&&diff<minDiff){minDiff=diff;mostRecent=ds;}});
+  if(mostRecent==null||minDiff<2||minDiff>3)return null;
+  if(s.repairSig===mostRecent)return null;            // al hersteld/afgewezen
+  let runLen=0;const cur=new Date(mostRecent+'T00:00:00');
+  while(set.has(cur.toISOString().slice(0,10))){runLen++;cur.setDate(cur.getDate()-1);}
+  if(runLen<3)return null;
+  return {runLen, missedDays:minDiff-1, mostRecent};
+}
+function _streakRepairHTML(b){
+  const freeze=(typeof getFreezes==='function')&&getFreezes()>0;
+  const cost=PRICE_REPAIR*b.missedDays;
+  const sub=freeze?'Herstel ’m gratis met een streak-freeze en ga verder waar je was.'
+    :`Herstel ’m voor ${cost} munten — één keer per breuk.`;
+  const btn=freeze?'Gratis herstellen'
+    :`Herstel voor ${cost} ${typeof _ico==='function'?_ico('coin',15):'🪙'}`;
+  return `<div class="streak-repair" role="group" aria-label="Streak herstellen">
+    <div class="streak-repair-ic">${_FLAME_MINI.replace('width="15" height="15"','width="26" height="26"')}<span class="streak-repair-crack"></span></div>
+    <div class="streak-repair-body">
+      <div class="streak-repair-t">Je streak van ${b.runLen} dagen is verbroken</div>
+      <div class="streak-repair-s">${sub}</div>
+      <div class="streak-repair-btns">
+        <button class="streak-repair-yes" onclick="repairStreak()">${btn}</button>
+        <button class="streak-repair-no" onclick="dismissRepair()">Nee, nieuwe start</button>
+      </div>
+    </div>
+  </div>`;
+}
+function repairStreak(){
+  const b=_streakBreakInfo();if(!b)return;
+  const s=getStreak();
+  const freeze=(typeof getFreezes==='function')&&getFreezes()>0;
+  if(freeze){setFreezes(getFreezes()-1);}
+  else{
+    const cost=PRICE_REPAIR*b.missedDays;
+    if(!spendCoins(cost)){showToast('Niet genoeg munten om te herstellen.','#ef4444');try{show('sc-shop');renderShop();}catch(e){}return;}
+  }
+  s.frozen=s.frozen||[];
+  const today=new Date();today.setHours(0,0,0,0);
+  for(let k=1;k<=b.missedDays;k++){const d=new Date(today);d.setDate(d.getDate()-k);s.frozen.push(d.toISOString().slice(0,10));}
+  s.repairSig=b.mostRecent;
+  cloudSet('streak',s);
+  try{playSound('levelup');}catch(e){}
+  try{if(typeof launchConfetti==='function')launchConfetti('gold');}catch(e){}
+  try{if(typeof vonkReact==='function')vonkReact('feest','Streak hersteld!');}catch(e){}
+  let restored=0;try{restored=calcStreak().current;}catch(e){}
+  showToast('🔥 Streak hersteld — '+restored+' dagen!','#22c55e',3000);
+  renderStreak();try{renderEconHome();}catch(e){}
+}
+function dismissRepair(){
+  const b=_streakBreakInfo();if(b){const s=getStreak();s.repairSig=b.mostRecent;cloudSet('streak',s);}
+  renderStreak();
+}
+// Tijd tot middernacht als "Xu Ym".
+function _midnightLeftStr(){
+  const now=new Date();const mid=new Date(now);mid.setHours(24,0,0,0);
+  const ms=mid-now;const h=Math.floor(ms/3600000);const m=Math.floor((ms%3600000)/60000);
+  return h>0?`${h}u ${m}m`:`${m}m`;
+}
+
 function renderStreak(){
   const box=document.getElementById('streak-home');
   const info=calcStreak();
@@ -1353,23 +1453,8 @@ function renderStreak(){
     </div>`;
     return;
   }
-  // 7-day grid
-  const dayLabels=['zo','ma','di','wo','do','vr','za'];
-  let weekHtml='';
-  for(let i=6;i>=0;i--){
-    const d=new Date();d.setDate(d.getDate()-i);
-    const ds=d.toISOString().slice(0,10);
-    const isActive=info.days.includes(ds);
-    const isToday=i===0;
-    let pipClass='streak-day-pip';
-    if(isActive){pipClass+=' active';if(isToday)pipClass+=' is-today';}
-    else if(isToday)pipClass+=' today-empty';
-    const nameClass='streak-day-name'+(isActive?' act':'');
-    weekHtml+=`<div class="streak-day-cell">
-      <div class="${pipClass}">${isActive?'✓':''}</div>
-      <div class="${nameClass}">${dayLabels[d.getDay()]}</div>
-    </div>`;
-  }
+  // Perfecte-week-kalender (ma-zo van deze week)
+  const _wk=_streakWeekHTML(info);
   // Streak milestone achievements (eenmalig)
   if(info.total>=1&&earnAch('streak1'))setTimeout(()=>showAch('🌱','Eerste dag geoefend!'),400);
   if(info.current>=3&&earnAch('streak3'))setTimeout(()=>showAch('🔥','3 dagen op rij - op dreef!'),400);
@@ -1407,7 +1492,12 @@ function renderStreak(){
   // Longest streak stat
   const s=getStreak();
   const longest=s.longestStreak||info.current;
-  box.innerHTML=`<div class="streak-card">
+  // Avond-urgentie: streak leeft, vandaag nog niet geoefend, na 18:00.
+  const _hr=new Date().getHours();
+  const eveningRisk=info.current>=1&&!practicedToday&&_hr>=18;
+  // Reparatie-aanbod bij een recent verbroken streak.
+  let repairHtml='';try{const _b=_streakBreakInfo();if(_b)repairHtml=_streakRepairHTML(_b);}catch(e){}
+  box.innerHTML=repairHtml+`<div class="streak-card">
     <div class="streak-top">
       <div class="streak-flame-wrap">
         <div class="streak-flame-big">${fireEmoji}</div>
@@ -1429,11 +1519,24 @@ function renderStreak(){
         </div>
       </div>
     </div>
-    <div class="streak-week">${weekHtml}</div>
+    ${_wk.html}
     <div class="streak-divider"></div>
     <div class="streak-badges-row">${badgeHtml}</div>
-    ${!practicedToday?`<button class="streak-cta" onclick="startStreakQuiz()">🎯 Oefen vandaag - verleng je streak!</button>`:''}
+    ${eveningRisk?`<div class="streak-urgent">
+        <div class="streak-urgent-flame">${_FLAME_MINI.replace('width="15" height="15"','width="22" height="22"')}</div>
+        <div class="streak-urgent-txt">
+          <div class="streak-urgent-t">Je streak van ${info.current} dag${info.current>1?'en':''} loopt af</div>
+          <div class="streak-urgent-s">Nog <span id="streak-urgent-time">${_midnightLeftStr()}</span> tot middernacht</div>
+        </div>
+        <button class="streak-urgent-btn" onclick="startStreakQuiz()">Red ’m</button>
+      </div>`
+    :(!practicedToday?`<button class="streak-cta" onclick="startStreakQuiz()">🎯 Oefen vandaag - verleng je streak!</button>`:'')}
   </div>`;
+  // Avond-urgentie: werk de resterende tijd elke minuut bij (één timer).
+  if(eveningRisk&&!window._suTick){
+    window._suTick=setInterval(()=>{const el=document.getElementById('streak-urgent-time');
+      if(el)el.textContent=_midnightLeftStr();},60000);
+  }
   // Update longest streak
   if(info.current>longest){s.longestStreak=info.current;cloudSet('streak',s);}
   // Feature 1: streak milestone banner (rendered separately above streak card)

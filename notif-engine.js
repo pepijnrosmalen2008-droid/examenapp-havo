@@ -200,6 +200,9 @@ function renderNotifReturnCard(){
   // Vandaag al weggetikt? Dan niet opnieuw tonen.
   const todayStr=new Date().toISOString().slice(0,10);
   try{if(localStorage.getItem('slagio_return_dismissed')===todayStr)return;}catch(e){}
+  // Bij een verbroken streak neemt de reparatie-kaart (in de streak-kaart) het
+  // over; dan geen tweede terugkeer-kaart tonen.
+  try{if(typeof _streakBreakInfo==='function'&&_streakBreakInfo())return;}catch(e){}
   const ctx=notifContext();
   const n=pickNotif(ctx,{cardOnly:true});
   if(!n)return;
