@@ -37,6 +37,7 @@ function notifContext(){
         ctx.leagueDiv=(LEAGUE_DIVISIONS[L.division]||{}).naam||'';
         ctx.leagueDaysLeft=(typeof _lgDaysLeft==='function')?_lgDaysLeft():null;}}}catch(e){}
   try{ctx.dagmissieOpen=(typeof dagmissieDone==='function')?!dagmissieDone():false;}catch(e){ctx.dagmissieOpen=false;}
+  try{ctx.reason=(JSON.parse(localStorage.getItem('slagio_commit')||'{}').reason)||'';}catch(e){ctx.reason='';}
   return ctx;
 }
 // Dagen sinds laatste oefendag (0 = vandaag geoefend, 1 = gisteren, ...).
@@ -137,10 +138,21 @@ function _notifRules(){return [
     ]},
   { id:'generic', prio:10, card:false, mood:'blij', action:'streak',
     test:c=>true,
-    variants:c=>[
-      {t:`Even oefenen${_nNaam(c)}?`, b:`Vonk heeft een frisse set vragen voor je klaarstaan.`},
-      {t:`Tijd voor een korte quiz`, b:`Klein moment nu, groot verschil op je examen.`},
-    ]},
+    variants:c=>{
+      const base=[
+        {t:`Even oefenen${_nNaam(c)}?`, b:`Vonk heeft een frisse set vragen voor je klaarstaan.`},
+        {t:`Tijd voor een korte quiz`, b:`Klein moment nu, groot verschil op je examen.`},
+      ];
+      // Gepersonaliseerd op de reden die je bij de start koos.
+      const rmap={
+        examen:'Je wilde je examen halen. Vandaag is een goede dag om te oefenen.',
+        cijfer:'Op weg naar dat hogere cijfer - even een korte ronde?',
+        stress:'Even oefenen houdt de examenstress klein. Twee minuten?',
+        bij:'Even bijblijven? Een korte quiz houdt de stof vers.',
+      };
+      if(c.reason&&rmap[c.reason])base.unshift({t:`Kleine stap${_nNaam(c)}`, b:rmap[c.reason]});
+      return base;
+    }},
 ];}
 
 // Prioriteit als getal (rules gebruiken vaste getallen, maar sta functies toe).

@@ -18,8 +18,12 @@ function showOnboarding(){
 }
 function obFinishAndStart(){
   try{obFinish(false);}catch(e){var o=document.getElementById('ob-overlay');if(o)o.style.display='none';}
-  // Niveau → mascotte → direct een vraag (quick-start kiest het vak in één tik).
-  try{startStreakQuiz();}catch(e){}
+  // Niveau → mascotte → commitment (waarom + dagdoel) → eerste oefening (eerste winst).
+  if(typeof showCommit==='function'&&typeof committed==='function'&&!committed()){
+    setTimeout(()=>{try{showCommit();}catch(e){try{startStreakQuiz();}catch(_){}}},350);
+  }else{
+    try{startStreakQuiz();}catch(e){}
+  }
 }
 function _obBuildAnimals(){
   const grid=document.getElementById('ob-animal-grid');

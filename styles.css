@@ -6418,6 +6418,41 @@ html.dark .dom-hero-card{background:linear-gradient(180deg,rgba(255,255,255,.045
 .lgc-skip{position:relative;margin-top:8px;background:none;border:none;color:var(--mu);font-size:13px;font-weight:700;cursor:pointer;font-family:var(--font);padding:6px}
 .lgc-skip:hover{color:var(--dk)}
 @media(prefers-reduced-motion:reduce){.lgc-rays,.lgc-badge,.lg-rush-on .lg-rush-bolt{animation:none}.lgc-card{transition:none;transform:none}}
+/* ── Onboarding-commitment (reden + dagdoel) ── */
+.commit-overlay{position:fixed;inset:0;z-index:9500;display:flex;align-items:center;justify-content:center;padding:22px;
+  background:rgba(12,10,22,.6);backdrop-filter:blur(6px);opacity:0;transition:opacity .28s}
+.commit-overlay.show{opacity:1}
+.commit-card{width:100%;max-width:380px;text-align:center;border-radius:26px;padding:26px 24px 22px;
+  background:var(--s,#fff);border:1px solid var(--bo);box-shadow:0 30px 80px -20px rgba(0,0,0,.55);
+  transform:translateY(16px) scale(.95);transition:transform .38s cubic-bezier(.22,1.2,.36,1)}
+.commit-overlay.show .commit-card{transform:none}
+.commit-vonk{display:grid;place-items:center;height:88px;margin-bottom:2px}
+.commit-vonk .m-svg{width:86px;height:86px}
+.commit-kicker{font-family:var(--font-mono,var(--font));font-size:11.5px;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:var(--or)}
+.commit-title{font-family:var(--font-head,inherit);font-size:22px;font-weight:800;color:var(--dk);margin:6px 0 6px;line-height:1.15}
+.commit-sub{font-size:13.5px;color:var(--mu);margin:0 auto 18px;max-width:32ch;line-height:1.45}
+.commit-chips{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:20px}
+.commit-chip{display:flex;flex-direction:column;align-items:center;gap:7px;padding:15px 8px;border-radius:15px;cursor:pointer;
+  background:var(--soft,rgba(127,127,127,.06));border:2px solid var(--bo);color:var(--dk);font-family:var(--font);font-size:13px;font-weight:700;transition:transform .12s,border-color .15s,background .15s}
+.commit-chip:active{transform:scale(.97)}
+.commit-chip-ic{font-size:26px;line-height:1}
+.commit-chip.sel{border-color:var(--or);background:color-mix(in srgb,var(--or) 12%,transparent)}
+.commit-goals{display:flex;flex-direction:column;gap:10px;margin-bottom:20px}
+.commit-goal{text-align:left;padding:14px 16px;border-radius:15px;cursor:pointer;background:var(--soft,rgba(127,127,127,.06));
+  border:2px solid var(--bo);font-family:var(--font);transition:transform .12s,border-color .15s,background .15s}
+.commit-goal:active{transform:scale(.99)}
+.commit-goal.sel{border-color:var(--or);background:color-mix(in srgb,var(--or) 12%,transparent)}
+.commit-goal-t{font-size:15px;font-weight:800;color:var(--dk);display:flex;align-items:center;gap:8px}
+.commit-goal-s{font-size:12.5px;color:var(--mu);margin-top:2px}
+.commit-rec{font-family:var(--font-mono,var(--font));font-size:9.5px;font-weight:800;letter-spacing:.06em;text-transform:uppercase;
+  color:var(--or);background:color-mix(in srgb,var(--or) 15%,transparent);border-radius:20px;padding:2px 8px}
+.commit-cta{width:100%;border:none;border-radius:14px;padding:14px 0;cursor:pointer;font-family:var(--font);font-size:15px;font-weight:800;color:#fff;
+  background:linear-gradient(135deg,color-mix(in srgb,var(--or) 90%,#000 5%),var(--or));
+  box-shadow:0 8px 22px -6px color-mix(in srgb,var(--or) 55%,transparent);transition:transform .12s,filter .12s,opacity .15s}
+.commit-cta:hover:not(:disabled){filter:brightness(1.05)}
+.commit-cta:active:not(:disabled){transform:scale(.98)}
+.commit-cta:disabled{opacity:.45;cursor:not-allowed}
+@media(prefers-reduced-motion:reduce){.commit-card{transition:none;transform:none}}
 /* Bord */
 .lg-wrap{max-width:640px;margin:0 auto;padding:12px 14px 90px}
 .lg-intro{text-align:center;margin:6px 0 16px}

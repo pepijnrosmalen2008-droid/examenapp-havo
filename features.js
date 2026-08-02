@@ -326,7 +326,12 @@ function showToast(msg,color,dur){
 
 // ═══════ DAILY GOAL ═══════
 const DG_KEY='slagio_daily_goal';
-const DG_TARGET=3;
+const DG_TARGET=3; // standaard; kan overschreven worden via het onboarding-commitment
+// Instelbaar dagdoel: leest de keuze uit slagio_commit (2/3/5), valt terug op 3.
+function getDGTarget(){
+  try{const c=JSON.parse(localStorage.getItem('slagio_commit')||'{}');
+    const g=parseInt(c.goal);return (g>=1&&g<=10)?g:DG_TARGET;}catch(e){return DG_TARGET;}
+}
 function getDailyGoal(){
   const today=new Date().toISOString().slice(0,10);
   try{const d=JSON.parse(localStorage.getItem(DG_KEY)||'{}');if(d.date===today)return d;}catch(e){}
@@ -335,10 +340,11 @@ function getDailyGoal(){
   return d;
 }
 function recordDailyGoal(){
+  const T=getDGTarget();
   const d=getDailyGoal();
   d.done=(d.done||0)+1;
   const wasRewarded=d.rewarded;
-  if(d.done>=DG_TARGET&&!d.rewarded){
+  if(d.done>=T&&!d.rewarded){
     d.rewarded=true;
     localStorage.setItem(DG_KEY,JSON.stringify(d));
     addXP(75);
@@ -352,7 +358,7 @@ function recordDailyGoal(){
       ov.innerHTML=`<div style="background:var(--bg);border-radius:28px;padding:32px 28px;max-width:340px;width:100%;text-align:center;animation:comboIn .45s cubic-bezier(.34,1.2,.64,1)">
         <div style="font-size:52px;margin-bottom:12px">🎯</div>
         <h2 style="font-family:var(--font-head);font-size:26px;font-weight:900;color:var(--or);margin-bottom:8px">Dagdoel bereikt!</h2>
-        <p style="color:var(--mu);font-size:14px;margin-bottom:18px;line-height:1.5">Je hebt vandaag ${DG_TARGET} quizzen voltooid.<br><strong style="color:var(--dk)">+75 XP bonus verdiend!</strong></p>
+        <p style="color:var(--mu);font-size:14px;margin-bottom:18px;line-height:1.5">Je hebt vandaag ${T} quizzen voltooid.<br><strong style="color:var(--dk)">+75 XP bonus verdiend!</strong></p>
         <button onclick="this.closest('div[style]').remove()" style="width:100%;padding:14px;background:var(--or);border:none;border-radius:14px;font-size:15px;font-weight:900;color:#fff;cursor:pointer;font-family:var(--font)">Doorgaan 🔥</button>
       </div>`;
       document.body.appendChild(ov);
@@ -373,14 +379,15 @@ function renderDailyGoal(){
   const box=document.getElementById('daily-goal-home');
   if(!box)return;
   if(window._dgTimer){clearInterval(window._dgTimer);window._dgTimer=null;}
+  const T=getDGTarget();
   const d=getDailyGoal();
-  const done=Math.min(d.done||0,DG_TARGET);
-  if(d.rewarded||done>=DG_TARGET){
-    box.innerHTML='<div class="dg-done">'+ICO_CHECK+' Dagdoel bereikt! <span>'+DG_TARGET+' / '+DG_TARGET+' quizzen</span></div>';
+  const done=Math.min(d.done||0,T);
+  if(d.rewarded||done>=T){
+    box.innerHTML='<div class="dg-done">'+ICO_CHECK+' Dagdoel bereikt! <span>'+T+' / '+T+' quizzen</span></div>';
     return;
   }
-  const dots=Array.from({length:DG_TARGET},function(_,i){return '<div class="dg-dot'+(i<done?' dg-dot-done':'')+'"></div>';}).join('');
-  box.innerHTML='<div class="dg-card"><div class="dg-top"><span class="dg-ico">'+ICO_TARGET+'</span><span class="dg-lbl">Dagdoel <span class="dg-cnt">'+done+'/'+DG_TARGET+'</span></span><span class="dg-timer">'+ICO_CLOCK+'<span id="dg-card-timer">'+_dgCountdownStr()+'</span></span><span class="dg-bonus">+75 XP</span></div><div class="dg-dots">'+dots+'</div><div class="dg-bar-wrap"><div class="dg-bar" style="width:'+Math.round(done/DG_TARGET*100)+'%"></div></div></div>';
+  const dots=Array.from({length:T},function(_,i){return '<div class="dg-dot'+(i<done?' dg-dot-done':'')+'"></div>';}).join('');
+  box.innerHTML='<div class="dg-card"><div class="dg-top"><span class="dg-ico">'+ICO_TARGET+'</span><span class="dg-lbl">Dagdoel <span class="dg-cnt">'+done+'/'+T+'</span></span><span class="dg-timer">'+ICO_CLOCK+'<span id="dg-card-timer">'+_dgCountdownStr()+'</span></span><span class="dg-bonus">+75 XP</span></div><div class="dg-dots">'+dots+'</div><div class="dg-bar-wrap"><div class="dg-bar" style="width:'+Math.round(done/T*100)+'%"></div></div></div>';
   // Live aftellen tot middernacht - urgentie-element op de dagdoel-kaart.
   window._dgTimer=setInterval(function(){
     const el=document.getElementById('dg-card-timer');
@@ -388,6 +395,63 @@ function renderDailyGoal(){
     el.textContent=_dgCountdownStr();
   },1000);
 }
+// ═══════ FASE 4: ONBOARDING-COMMITMENT (reden + dagdoel + eerste winst) ═══════
+// Kort commitment-moment na de mascotte-keuze: waarom oefen je, en hoeveel per
+// dag? Zelfgekozen doelen worden vaker gehaald; de reden komt terug in de
+// notificatie-motor. Sluit af met de eerste oefening (de eerste winst).
+const COMMIT_REASONS=[
+  {id:'examen',ic:'🎓',t:'Mijn examen halen'},
+  {id:'cijfer',ic:'📈',t:'Een hoger cijfer'},
+  {id:'stress',ic:'😌',t:'Minder stress'},
+  {id:'bij',ic:'📚',t:'Bijblijven'},
+];
+const COMMIT_GOALS=[
+  {n:2,t:'Rustig',s:'2 quizzen per dag'},
+  {n:3,t:'Normaal',s:'3 quizzen per dag',rec:true},
+  {n:5,t:'Serieus',s:'5 quizzen per dag'},
+];
+var _commitReason=null,_commitGoal=3,_commitStep=0,_commitDone=null;
+function committed(){try{return !!JSON.parse(localStorage.getItem('slagio_commit')||'{}').done;}catch(e){return false;}}
+function showCommit(onDone){
+  _commitDone=onDone||function(){try{startStreakQuiz();}catch(e){}};
+  _commitReason=null;_commitGoal=3;_commitStep=0;
+  let el=document.getElementById('commit-overlay');
+  if(!el){el=document.createElement('div');el.id='commit-overlay';el.className='commit-overlay';document.body.appendChild(el);}
+  _commitRender();
+  requestAnimationFrame(()=>el.classList.add('show'));
+}
+function _commitRender(){
+  const el=document.getElementById('commit-overlay');if(!el)return;
+  const vonk=(typeof mascotSVG==='function')?mascotSVG(_commitStep===0?'blij':'trots',86):'';
+  let body;
+  if(_commitStep===0){
+    const chips=COMMIT_REASONS.map(r=>`<button class="commit-chip${_commitReason===r.id?' sel':''}" onclick="_commitPickReason('${r.id}')"><span class="commit-chip-ic">${r.ic}</span>${r.t}</button>`).join('');
+    body=`<div class="commit-kicker">Even dit</div>
+      <div class="commit-title">Waarom ga jij oefenen?</div>
+      <div class="commit-sub">Vonk houdt je hieraan - en herinnert je er af en toe aan.</div>
+      <div class="commit-chips">${chips}</div>
+      <button class="commit-cta" id="commit-next" ${_commitReason?'':'disabled'} onclick="_commitStep=1;_commitRender()">Verder</button>`;
+  }else{
+    const chips=COMMIT_GOALS.map(g=>`<button class="commit-goal${_commitGoal===g.n?' sel':''}" onclick="_commitPickGoal(${g.n})"><div class="commit-goal-t">${g.t}${g.rec?' <span class="commit-rec">aanbevolen</span>':''}</div><div class="commit-goal-s">${g.s}</div></button>`).join('');
+    body=`<div class="commit-kicker">Je dagdoel</div>
+      <div class="commit-title">Hoeveel per dag?</div>
+      <div class="commit-sub">Zelfgekozen doelen haal je vaker. Je kunt dit later aanpassen.</div>
+      <div class="commit-goals">${chips}</div>
+      <button class="commit-cta" onclick="_commitFinish()">Start mijn eerste oefening</button>`;
+  }
+  el.innerHTML=`<div class="commit-card"><div class="commit-vonk">${vonk}</div>${body}</div>`;
+}
+function _commitPickReason(id){_commitReason=id;_commitRender();}
+function _commitPickGoal(n){_commitGoal=n;_commitRender();}
+function _commitFinish(){
+  try{localStorage.setItem('slagio_commit',JSON.stringify({reason:_commitReason,goal:_commitGoal,done:true,ts:Date.now()}));}catch(e){}
+  const el=document.getElementById('commit-overlay');
+  if(el){el.classList.remove('show');setTimeout(()=>el.remove(),260);}
+  try{renderDailyGoal();}catch(e){}
+  const fn=_commitDone;_commitDone=null;
+  setTimeout(()=>{try{if(fn)fn();}catch(e){}},280);
+}
+
 // ═══════ DAGMISSIE ═══════
 // Eén gepersonaliseerde opdracht per dag: due fouten > zwakste domein > streak
 // bewaren > eerste oefening. Roteert per dag; Vonk kondigt 'm aan.
