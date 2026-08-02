@@ -1177,7 +1177,7 @@ function toonRes(){
     document.getElementById('remi').textContent=emi;
     document.getElementById('rtit').textContent=tit;
     document.getElementById('rsub').textContent=sub;
-    document.getElementById('rnum').textContent=sc;
+    _qCountUp(document.getElementById('rnum'),sc,850);
     document.getElementById('rden').textContent=`van ${tot}`;
     const circ=2*Math.PI*50;
     setTimeout(()=>{const c=document.getElementById('scirc');if(c){c.style.strokeDashoffset=circ*(1-pct);c.style.transition='stroke-dashoffset 1s ease';}},200);
@@ -1361,6 +1361,15 @@ function toonRes(){
   if(ST.mode==='snel'&&!ST.isFoutenboek)setTimeout(()=>showFeedbackPopup('snel'),2500);
 }
 
+// Duolingo-stijl: getal telt op naar de eindwaarde (ease-out, snapt op .5 exact).
+function _qCountUp(el,target,dur){
+  if(!el)return;target=+target||0;dur=dur||800;
+  var t0=performance.now();
+  var tick=function(now){var p=Math.max(0,Math.min(1,(now-t0)/dur));var e=1-Math.pow(1-p,3);
+    el.textContent=(p<1)?Math.round(target*e):(Math.round(target*10)/10);
+    if(p<1)requestAnimationFrame(tick);};
+  requestAnimationFrame(tick);
+}
 function retryQ(){startQ(ST.mode);}
 function switchMode(){show('sc-qmode');}
 function _showRegPrompt(pct){
