@@ -6597,3 +6597,34 @@ html.dark .dom-hero-card{background:linear-gradient(180deg,rgba(255,255,255,.045
 .vc-result{margin-top:12px}
 .vc-good{background:rgba(34,197,94,.1);border:1px solid rgba(34,197,94,.3);border-radius:13px;padding:13px 15px;font-size:14px;color:var(--dk);line-height:1.5}
 .vc-bad{background:rgba(239,68,68,.07);border:1px solid rgba(239,68,68,.25);border-radius:13px;padding:13px 15px;font-size:13.5px;color:var(--dk);line-height:1.5}
+
+/* ══ Duolingo-stijl 3D-drukknoppen: harde onderrand die fysiek indrukt bij het tikken.
+   Accent-afgeleide onderrand (color-mix) klopt voor HAVO-oranje én VWO-paars. ══ */
+.hm-cta-primary{
+  box-shadow:0 4px 0 color-mix(in srgb,var(--or) 56%,#000), 0 8px 18px rgba(var(--or-rgb),.36), 0 1px 0 rgba(255,255,255,.28) inset !important;
+  transition:transform .09s ease, box-shadow .09s ease !important;
+}
+.hm-cta-primary:active{
+  transform:translateY(4px) !important;
+  box-shadow:0 0 0 color-mix(in srgb,var(--or) 56%,#000), 0 3px 10px rgba(var(--or-rgb),.28), 0 1px 0 rgba(255,255,255,.28) inset !important;
+}
+.btnp{
+  box-shadow:0 5px 0 color-mix(in srgb,var(--or) 54%,#000), 0 9px 20px rgba(232,92,13,.34), 0 1px 0 rgba(255,255,255,.38) inset !important;
+  transition:transform .09s ease, box-shadow .09s ease !important;
+}
+.btnp:active{
+  transform:translateY(5px) !important;
+  box-shadow:0 0 0 color-mix(in srgb,var(--or) 54%,#000), 0 3px 10px rgba(232,92,13,.28), 0 1px 0 rgba(255,255,255,.38) inset !important;
+}
+.btns, .hm-cta-sec{
+  box-shadow:0 4px 0 rgba(0,0,0,.26), 0 5px 14px rgba(0,0,0,.16), 0 1px 0 rgba(255,255,255,.1) inset !important;
+  transition:transform .09s ease, box-shadow .09s ease !important;
+}
+.btns:active, .hm-cta-sec:active{
+  transform:translateY(4px) !important;
+  box-shadow:0 0 0 rgba(0,0,0,.26), 0 2px 8px rgba(0,0,0,.14), 0 1px 0 rgba(255,255,255,.1) inset !important;
+}
+@media(prefers-reduced-motion:reduce){
+  .hm-cta-primary,.btnp,.btns,.hm-cta-sec{transition:none !important}
+  .hm-cta-primary:active,.btnp:active,.btns:active,.hm-cta-sec:active{transform:none !important}
+}
