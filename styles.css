@@ -6241,7 +6241,7 @@ html.dark .dom-hero-card{background:linear-gradient(180deg,rgba(255,255,255,.045
 
 /* Skins: accessoire-overlay op de avatar + shop-cosmetics */
 .av-wrap{position:relative;display:inline-block;line-height:0}
-/* Hoofddeksel zit op de bovenkant van de kop (overlapt, zweeft niet). */
-.av-skin{position:absolute;left:50%;top:0;width:64%;height:64%;transform:translate(-50%,-42%);pointer-events:none;line-height:0;z-index:2}
-.av-skin svg{display:block;width:100%;height:100%;filter:drop-shadow(0 1px 1.5px rgba(0,0,0,.28))}
+/* Accessoire-overlay deelt exact de 60x60-ruimte van de avatar → pixel-perfect. */
+.av-skin{position:absolute;inset:0;pointer-events:none;line-height:0;z-index:2}
+.av-skin svg{display:block;width:100%;height:100%;overflow:visible;filter:drop-shadow(0 .5px 1px rgba(0,0,0,.25))}
 .shop-cos{font-size:23px;width:28px;text-align:center;flex-shrink:0;line-height:1}

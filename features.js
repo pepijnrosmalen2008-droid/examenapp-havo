@@ -759,7 +759,7 @@ function renderXPHome(){
   const stagePct=isMaxStage?100:Math.round(Math.min(100,(xp-curThresh)/(nxtThresh-curThresh)*100));
   const currentEmoji=animal?animal.s[stageIdx]:'⭐';
   let currentDisplay=animal?getAnimalDisplay(animal.id,stageIdx,50):`<span style="font-size:30px">⭐</span>`;
-  try{const _sk=avatarSkinHTML();if(_sk)currentDisplay='<span class="av-wrap">'+currentDisplay+_sk+'</span>';}catch(e){}
+  try{const _sk=avatarSkinHTML(animal&&animal.id,stageIdx);if(_sk)currentDisplay='<span class="av-wrap">'+currentDisplay+_sk+'</span>';}catch(e){}
   const animalName=animal?animal.n:'Avatar';
   const stageName=ANIM_STAGE_NAMES[stageIdx];
   const nextStageName=isMaxStage?null:ANIM_STAGE_NAMES[stageIdx+1];
@@ -1072,13 +1072,31 @@ const _AV_SKIN_SVG={
   av_flower:`<g fill="#ff6b9d"><ellipse cx="50" cy="40" rx="10" ry="12"/><ellipse cx="34" cy="54" rx="12" ry="10"/><ellipse cx="66" cy="54" rx="12" ry="10"/><ellipse cx="41" cy="70" rx="10" ry="12"/><ellipse cx="59" cy="70" rx="10" ry="12"/></g><circle cx="50" cy="55" r="8.5" fill="#facc15"/>`,
   av_beanie:`<path d="M20 60 Q22 32 50 32 Q78 32 80 60 Z" fill="#7c3aed"/><path d="M20 58 Q35 52 50 52 Q65 52 80 58 L80 62 Q50 56 20 62 Z" fill="#5b21b6" opacity=".5"/><rect x="18" y="59" width="64" height="11" rx="5.5" fill="#5b21b6"/><circle cx="50" cy="30" r="5.5" fill="#a78bfa"/>`,
 };
+// Per-dier ankerpunt van de KOP in de 60x60-tekenruimte van de avatar-SVG.
+// {y}=hoogte waar de onderkant van het hoofddeksel rust, {w}=kopbreedte, cx=30.
+// Zo zit een accessoire in exact dezelfde coördinaten als de art → pixel-perfect.
+const _AV_ANCHOR_DEF={y:18,w:28};
+const _AV_ANCHORS={
+  adelaar:{y:20,w:27}, beer:{y:19,w:31}, cactus:{y:24,w:18}, draak:{y:16,w:26},
+  eenhoorn:{y:15,w:25}, gorilla:{y:20,w:31}, haai:{y:18,w:26}, leeuw:{y:17,w:25},
+  octopus:{y:22,w:31}, olifant:{y:18,w:31}, robot:{y:17,w:28}, slang:{y:19,w:21},
+  slijm:{y:22,w:29}, tijger:{y:18,w:30}, uil:{y:17,w:31}, vlinder:{y:21,w:23},
+  vos:{y:18,w:28}, wolf:{y:18,w:28}
+};
 function _cosmeticById(id){return COSMETICS_AV.concat(COSMETICS_VONK).find(c=>c.id===id)||null;}
 function getOwnedCosmetics(){try{const a=JSON.parse(localStorage.getItem('slagio_cosmetics')||'[]');return Array.isArray(a)?a:[];}catch(e){return [];}}
 function cosmeticOwned(id){return getOwnedCosmetics().includes(id);}
 function getEquippedAv(){try{return localStorage.getItem('slagio_av_skin')||'';}catch(e){return '';}}
 function getEquippedVonk(){try{return localStorage.getItem('slagio_vonk_skin')||'';}catch(e){return '';}}
-// Gedragen hoofddeksel voor de speler-avatar: SVG op de bovenkant van de kop.
-function avatarSkinHTML(){const id=getEquippedAv();const svg=id&&_AV_SKIN_SVG[id];if(!svg)return '';return '<span class="av-skin no-ico"><svg viewBox="0 0 100 100" preserveAspectRatio="xMidYMax meet">'+svg+'</svg></span>';}
+// Gedragen accessoire voor de speler-avatar: getekend in de 60x60-ruimte van het
+// dier, op het kop-anker, zodat het exact op elke avatar past en meeschaalt.
+function avatarSkinHTML(animalId,stageIdx){
+  const id=getEquippedAv();const art=id&&_AV_SKIN_SVG[id];if(!art)return '';
+  const A=_AV_ANCHORS[animalId]||_AV_ANCHOR_DEF;
+  const w=A.w, sc=w/100, tx=(30-50*sc).toFixed(2), ty=(A.y-70*sc).toFixed(2);
+  return '<span class="av-skin no-ico"><svg viewBox="0 0 60 60" preserveAspectRatio="xMidYMid meet">'
+    +'<g transform="translate('+tx+' '+ty+') scale('+sc.toFixed(3)+')">'+art+'</g></svg></span>';
+}
 function equipCosmetic(id){
   const isVonk=id.indexOf('vk_')===0;
   const key=isVonk?'slagio_vonk_skin':'slagio_av_skin';

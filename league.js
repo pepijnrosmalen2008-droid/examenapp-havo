@@ -75,7 +75,7 @@ function _lgAvatar(r){
   let inner='';
   if(r.animalId&&typeof getAnimalDisplay==='function'){try{inner=getAnimalDisplay(r.animalId,r.stage||0,26);}catch(e){}}
   if(!inner)inner='<span style="font-size:22px">'+(r.me?'⭐':'🦊')+'</span>';
-  if(r.me&&typeof avatarSkinHTML==='function'){try{const sk=avatarSkinHTML();if(sk)return '<span class="av-wrap">'+inner+sk+'</span>';}catch(e){}}
+  if(r.me&&typeof avatarSkinHTML==='function'){try{const sk=avatarSkinHTML(r.animalId,r.stage);if(sk)return '<span class="av-wrap">'+inner+sk+'</span>';}catch(e){}}
   return inner;
 }
 
@@ -87,6 +87,12 @@ function ensureLeague(){
   if(!L){
     L={week:wid,division:0,weekXP:0,lastWeekXP:0,result:null,cohort:_lgMakeCohort(0,700,wid)};
     _saveLeague(L);return L;
+  }
+  // Migratie: oude cohorts (van vóór de echte avatars) misten animalId → bots
+  // vielen terug op een standaard-vos. Regenereer die in-place (deterministisch).
+  if(L.cohort && L.cohort.length && !L.cohort[0].animalId){
+    L.cohort=_lgMakeCohort(L.division, Math.max(400,L.lastWeekXP||0,700), L.week);
+    _saveLeague(L);
   }
   if(L.week!==wid){
     // Finaliseer: eindstand met bots op hun weekdoel en jouw behaalde weekXP.
