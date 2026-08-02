@@ -6697,3 +6697,45 @@ html.dark .dom-hero-card{background:linear-gradient(180deg,rgba(255,255,255,.045
 #sc-res.on .sring{animation:resItemIn .55s cubic-bezier(.22,1,.36,1) .3s backwards}
 #sc-res.on .rbd{animation:resItemIn .5s cubic-bezier(.22,1,.36,1) .42s backwards}
 @media(prefers-reduced-motion:reduce){#sc-res.on .remi,#sc-res.on #rtit,#sc-res.on #rsub,#sc-res.on .sring,#sc-res.on .rbd{animation:none}}
+
+/* ══════════════════════════════════════════════════════════════════════
+   LIVELINESS-LAAG: elk scherm komt bij binnenkomst georkestreerd tot leven.
+   Werkt omdat `.on` conditioneel de animatie op de kinderen zet, dus die
+   herstart bij élke navigatie naar het scherm (Duolingo-gevoel).
+   ══════════════════════════════════════════════════════════════════════ */
+@keyframes livHero{0%{opacity:0;transform:translateY(20px)}100%{opacity:1;transform:none}}
+@keyframes livRise{0%{opacity:0;transform:translateY(20px) scale(.97)}100%{opacity:1;transform:none}}
+@keyframes livPop{0%{opacity:0;transform:translateY(18px) scale(.78)}60%{opacity:1;transform:translateY(0) scale(1.05)}100%{opacity:1;transform:scale(1)}}
+
+/* Krachtiger schermtransitie voor álle schermen (nadrukkelijker dan voorheen) */
+.sc.on{animation:screenIn .44s cubic-bezier(.22,1,.36,1)}
+@keyframes screenIn{0%{opacity:0;transform:scale(.955) translateY(24px)}100%{opacity:1;transform:scale(1) translateY(0)}}
+
+/* HOME: eigen cascade (screenIn uit; hero → menu-tegels poppen → kaarten stijgen) */
+#sc-home.on{animation:none}
+#sc-home.on .hm-hero{animation:livHero .55s cubic-bezier(.22,1,.36,1) both}
+#sc-home.on .hm-menu-tile{animation:livPop .5s var(--ease-spring,cubic-bezier(.34,1.56,.64,1)) backwards}
+#sc-home.on .hm-menu-tile:nth-child(1){animation-delay:.16s}
+#sc-home.on .hm-menu-tile:nth-child(2){animation-delay:.23s}
+#sc-home.on .hm-menu-tile:nth-child(3){animation-delay:.3s}
+#sc-home.on .hm-menu-tile:nth-child(4){animation-delay:.37s}
+#sc-home.on .hm-menu-open{animation:livRise .5s cubic-bezier(.22,1,.36,1) .44s backwards}
+#sc-home.on #slim-home{animation:livRise .5s cubic-bezier(.22,1,.36,1) .5s backwards}
+#sc-home.on #dagmissie-home{animation:livRise .5s cubic-bezier(.22,1,.36,1) .56s backwards}
+#sc-home.on #streak-home{animation:livRise .52s cubic-bezier(.22,1,.36,1) .62s backwards}
+#sc-home.on #league-home{animation:livRise .52s cubic-bezier(.22,1,.36,1) .68s backwards}
+#sc-home.on #econ-home{animation:livRise .52s cubic-bezier(.22,1,.36,1) .74s backwards}
+
+/* SOCIAAL: hub-kaarten stijgen gestaggerd binnen */
+#sc-sociaal.on .soc-hub-card{animation:livRise .5s cubic-bezier(.22,1,.36,1) backwards}
+#sc-sociaal.on .soc-hub-card:nth-child(1){animation-delay:.08s}
+#sc-sociaal.on .soc-hub-card:nth-child(2){animation-delay:.15s}
+#sc-sociaal.on .soc-hub-card:nth-child(3){animation-delay:.22s}
+#sc-sociaal.on .soc-hub-card:nth-child(4){animation-delay:.29s}
+#sc-sociaal.on .soc-hub-card:nth-child(n+5){animation-delay:.36s}
+
+@media(prefers-reduced-motion:reduce){
+  #sc-home.on .hm-hero,#sc-home.on .hm-menu-tile,#sc-home.on .hm-menu-open,
+  #sc-home.on #slim-home,#sc-home.on #dagmissie-home,#sc-home.on #streak-home,
+  #sc-home.on #league-home,#sc-home.on #econ-home,#sc-sociaal.on .soc-hub-card{animation:none}
+}
