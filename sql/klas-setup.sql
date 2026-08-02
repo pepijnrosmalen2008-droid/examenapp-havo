@@ -93,7 +93,8 @@ begin
      where n.nspname = 'public'
        and p.proname in (
          '_klas_gen_code','klas_create','klas_join','klas_info','klas_leaderboard',
-         'klas_score_add','klas_mine','klas_dashboard','klas_huiswerk_set','klas_huiswerk_get'
+         'klas_score_add','klas_mine','klas_dashboard','klas_huiswerk_set','klas_huiswerk_get',
+         'klas_week'
        )
   loop
     execute 'drop function if exists ' || r.sig || ' cascade';
@@ -302,6 +303,38 @@ language sql security definer set search_path = public as $$
    order by created_at desc limit 5;
 $$;
 grant execute on function public.klas_huiswerk_get(uuid) to anon, authenticated;
+
+
+-- "Klas deze week": gezamenlijke week-XP (sinds maandag), aantal actieve leden
+-- deze week, en de KLAS-STREAK = aantal dagen op rij dat de klas actief was
+-- (eindigend op vandaag of gisteren, net als de persoonlijke streak).
+create or replace function public.klas_week(p_klas_id uuid)
+returns jsonb language sql stable security definer set search_path = public as $$
+  with wk as (
+    select score, did from public.klas_scores
+     where klas_id = p_klas_id and created_at >= date_trunc('week', now())
+  ),
+  days as (
+    select distinct created_at::date d from public.klas_scores
+     where klas_id = p_klas_id and created_at::date <= current_date
+  ),
+  anchor as (
+    select case when exists(select 1 from days where d = current_date)   then current_date
+                when exists(select 1 from days where d = current_date-1) then current_date-1
+                else null end as a
+  ),
+  seq as (
+    select d, (select a from anchor) - (row_number() over (order by d desc) - 1) as expected
+      from days where d <= (select a from anchor)
+  )
+  select jsonb_build_object(
+    'total',        coalesce((select sum(score) from wk), 0),
+    'active_today', exists(select 1 from days where d = current_date),
+    'leden_week',   (select count(distinct did) from wk),
+    'streak',       coalesce((select count(*) from seq where d = expected), 0)
+  );
+$$;
+grant execute on function public.klas_week(uuid) to anon, authenticated;
 
 
 -- ─── KLAAR ───────────────────────────────────────────────────────────────

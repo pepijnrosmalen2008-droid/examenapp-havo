@@ -135,6 +135,7 @@ function _klasSkeleton(k){
     <button class="klas-leave" onclick="klasVerlaat()">${isDoc?'Sluiten':'Verlaten'}</button>
   </div>
   ${codeBlok}
+  <div id="klas-week"></div>
   <div class="klas-lb-head"><span>🏆 Klas-ranglijst</span><span class="klas-lb-sub" id="klas-leden-count"></span></div>
   <div id="klas-lb" class="klas-lb"><div class="klas-empty">Laden…</div></div>`;
 }
@@ -143,11 +144,14 @@ async function _klasLoadDetail(k){
   const lb = document.getElementById('klas-lb');
   const cnt = document.getElementById('klas-leden-count');
   try{
-    const [rows, info] = await Promise.all([
+    const [rows, info, week] = await Promise.all([
       _klasRpc('klas_leaderboard', { p_klas_id:k.id }),
-      _klasRpc('klas_info', { p_klas_id:k.id }).catch(()=>null)
+      _klasRpc('klas_info', { p_klas_id:k.id }).catch(()=>null),
+      _klasRpc('klas_week', { p_klas_id:k.id }).catch(()=>null)
     ]);
-    if(cnt && info){ const i=Array.isArray(info)?info[0]:info; if(i) cnt.textContent = i.leden+' leerling'+(i.leden==1?'':'en'); }
+    const ledenN = info ? ((Array.isArray(info)?info[0]:info)||{}).leden : null;
+    if(cnt && ledenN!=null){ cnt.textContent = ledenN+' leerling'+(ledenN==1?'':'en'); }
+    try{ _klasRenderWeek(week, ledenN); }catch(e){}
     if(!lb) return;
     if(!rows || !rows.length){ lb.innerHTML = '<div class="klas-empty">Nog geen scores. Zodra iemand een quiz doet, verschijnt de ranglijst hier.</div>'; return; }
     const mij = (k.naamInKlas||'').toLowerCase();
@@ -164,6 +168,33 @@ async function _klasLoadDetail(k){
 
 function _klasBinnenkort(){
   return '<div class="klas-empty">De klasfunctie wordt binnenkort geactiveerd. Kom snel terug!</div>';
+}
+
+// ── "Klas deze week": gezamenlijke week-XP + collectief doel + klas-streak ──
+function _klasRenderWeek(week, leden){
+  const box = document.getElementById('klas-week'); if(!box) return;
+  let w = week; if(Array.isArray(w)) w = w[0];
+  if(!w || typeof w !== 'object'){ box.innerHTML=''; return; }
+  const total = Math.max(0, parseInt(w.total)||0);
+  const streak = Math.max(0, parseInt(w.streak)||0);
+  const ledenWeek = Math.max(0, parseInt(w.leden_week)||0);
+  const n = Math.max(1, parseInt(leden)||ledenWeek||1);
+  const goal = Math.max(1000, n*600);
+  const pct = Math.min(100, Math.round(total/goal*100));
+  const fmt = x => x.toLocaleString('nl-NL');
+  const streakLine = streak>0
+    ? `<div class="klas-week-streak"><span class="klas-week-flame">🔥</span> De klas oefende <b>${streak} dag${streak===1?'':'en'}</b> op rij</div>`
+    : `<div class="klas-week-streak klas-week-off">Nog geen klas-streak - laat vandaag iemand oefenen om 'm te starten</div>`;
+  box.innerHTML = `
+  <div class="klas-week-card">
+    <div class="klas-week-top">
+      <span class="klas-week-title">Klas deze week</span>
+      <span class="klas-week-xp">${fmt(total)}<span> XP</span></span>
+    </div>
+    <div class="klas-week-bar"><div class="klas-week-fill" style="width:${pct}%"></div></div>
+    <div class="klas-week-sub">${pct}% van het weekdoel (${fmt(goal)} XP) · ${ledenWeek} actief deze week</div>
+    ${streakLine}
+  </div>`;
 }
 
 // ── Delen / verlaten ─────────────────────────────────────────

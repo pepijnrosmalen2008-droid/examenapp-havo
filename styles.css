@@ -6453,6 +6453,20 @@ html.dark .dom-hero-card{background:linear-gradient(180deg,rgba(255,255,255,.045
 .commit-cta:active:not(:disabled){transform:scale(.98)}
 .commit-cta:disabled{opacity:.45;cursor:not-allowed}
 @media(prefers-reduced-motion:reduce){.commit-card{transition:none;transform:none}}
+/* ── Klas deze week (gezamenlijke week-XP + collectief doel + klas-streak) ── */
+.klas-week-card{border:1px solid var(--bo);border-radius:16px;padding:15px 16px;margin:6px 0 16px;
+  background:linear-gradient(135deg,color-mix(in srgb,var(--or) 9%,var(--s)),var(--s) 70%)}
+.klas-week-top{display:flex;align-items:baseline;justify-content:space-between;gap:12px}
+.klas-week-title{font-family:var(--font-head,inherit);font-size:15px;font-weight:800;color:var(--dk)}
+.klas-week-xp{font-size:20px;font-weight:900;color:var(--or);letter-spacing:-.02em}
+.klas-week-xp span{font-size:12px;font-weight:800;opacity:.75}
+.klas-week-bar{height:9px;border-radius:6px;background:color-mix(in srgb,var(--mu) 16%,transparent);overflow:hidden;margin:11px 0 7px}
+.klas-week-fill{height:100%;border-radius:6px;background:linear-gradient(90deg,#fbbf24,var(--or));transition:width .8s cubic-bezier(.22,1,.36,1)}
+.klas-week-sub{font-size:12px;color:var(--mu)}
+.klas-week-streak{margin-top:11px;padding-top:11px;border-top:1px solid var(--bo);font-size:13px;color:var(--dk);font-weight:600;display:flex;align-items:center;gap:7px}
+.klas-week-streak b{font-weight:800;color:var(--or)}
+.klas-week-flame{font-size:16px;line-height:1}
+.klas-week-off{color:var(--mu);font-weight:500}
 /* Bord */
 .lg-wrap{max-width:640px;margin:0 auto;padding:12px 14px 90px}
 .lg-intro{text-align:center;margin:6px 0 16px}
