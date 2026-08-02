@@ -6415,6 +6415,10 @@ html.dark .dom-hero-card{background:linear-gradient(180deg,rgba(255,255,255,.045
   box-shadow:0 8px 22px -6px color-mix(in srgb,var(--lg-col) 60%,transparent);transition:transform .12s,filter .12s}
 .lgc-cta:hover{filter:brightness(1.05)}
 .lgc-cta:active{transform:scale(.98)}
+.lgc-reward{position:relative;display:inline-flex;align-items:center;gap:7px;margin:0 auto 16px;padding:8px 16px;border-radius:999px;
+  font-size:14px;font-weight:800;color:var(--dk);background:color-mix(in srgb,var(--lg-col) 16%,transparent);
+  border:1px solid color-mix(in srgb,var(--lg-col) 34%,transparent);animation:lgcBadge .5s cubic-bezier(.34,1.7,.5,1) .3s backwards}
+.lgc-reward-ico{display:grid;place-items:center}
 .lgc-skip{position:relative;margin-top:8px;background:none;border:none;color:var(--mu);font-size:13px;font-weight:700;cursor:pointer;font-family:var(--font);padding:6px}
 .lgc-skip:hover{color:var(--dk)}
 @media(prefers-reduced-motion:reduce){.lgc-rays,.lgc-badge,.lg-rush-on .lg-rush-bolt{animation:none}.lgc-card{transition:none;transform:none}}

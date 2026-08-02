@@ -62,10 +62,37 @@ function _lgMakeCohort(division,baseline,seedStr){
       animalId:_LG_DIER[Math.floor(rng()*_LG_DIER.length)],
       stage:Math.min(6,1+Math.floor(rng()*4)+Math.floor(division*0.7)),
       target:target,
-      front:0.55+rng()*0.95   // hoe vroeg in de week deze speler actief is
+      front:0.55+rng()*0.95,  // hoe vroeg in de week deze speler actief is
+      seed:Math.floor(rng()*1e9)  // eigen seed voor de sessie-gedreven XP-groei
     });
   }
   return out;
+}
+// XP van een bot op moment `prog` (0..1 van de week): NIET één vloeiende lijn,
+// maar een reeks losse "oefensessies" op willekeurige momenten (seeded), zodat
+// de XP geleidelijk én grillig groeit - net als echte spelers. Bij prog>=1 = target.
+function _lgBotXP(b,prog){
+  if(prog>=1)return b.target;
+  if(prog<=0)return 0;
+  const seed=(b.seed!=null)?b.seed:_lgHash((b.naam||'')+'|'+(b.target||0));
+  const rng=_lgRng(seed>>>0);
+  const N=6+Math.floor(rng()*10);            // 6..15 sessies deze week
+  const front=Math.max(0.5,b.front||1);
+  let acc=0,tot=0;
+  for(let i=0;i<N;i++){
+    let t=rng();t=Math.pow(t,1/front);       // front>1 → sessies eerder in de week
+    const w=0.4+rng();                       // sessie-grootte varieert
+    tot+=w;if(t<=prog)acc+=w;
+  }
+  return tot>0?Math.round(b.target*acc/tot):0;
+}
+// Echte medespelers uit de cache (zelfde week + divisie), zonder mijzelf.
+function _lgRealRows(L){
+  const c=window._lgRealCache;
+  if(!c||c.week!==L.week||c.division!==L.division||!Array.isArray(c.players))return [];
+  const mine=(typeof _DID!=='undefined')?_DID:null;
+  return c.players.filter(p=>p&&p.did&&p.did!==mine)
+    .map(p=>({naam:p.naam||'Speler',animalId:p.animal_id||null,stage:p.stage||0,xp:Math.max(0,p.xp||0),me:false,real:true}));
 }
 
 function _lgMeName(){try{const p=JSON.parse(localStorage.getItem(PROF_KEY)||'{}');return (p.naam&&p.naam.trim())?p.naam.trim():'Jij';}catch(e){return 'Jij';}}
@@ -101,7 +128,10 @@ function ensureLeague(){
     if(rank<=LEAGUE_PROMO && L.division<LEAGUE_DIVISIONS.length-1){L.division++;promoted=true;}
     else if(rank>(finals.length-LEAGUE_DEMOTE) && L.division>0){L.division--;relegated=true;}
     const baseline=Math.max(400,L.weekXP||0,L.lastWeekXP||0);
-    L.result={rank,promoted,relegated,oldDiv,newDiv:L.division,weekXP:L.weekXP||0,seen:false};
+    // Promotie-beloning: munten die meeschalen met je nieuwe divisie.
+    let reward=0;
+    if(promoted){reward=100+L.division*75;try{if(typeof addCoins==='function')addCoins(reward);}catch(e){}}
+    L.result={rank,promoted,relegated,oldDiv,newDiv:L.division,weekXP:L.weekXP||0,reward,seen:false};
     L.lastWeekXP=L.weekXP||0;
     L.week=wid;L.weekXP=0;
     L.cohort=_lgMakeCohort(L.division,baseline,wid);
@@ -111,12 +141,17 @@ function ensureLeague(){
 }
 
 // Standings van de huidige (of gefinaliseerde) week.
+// Cohort = echte medespelers (uit Supabase, indien beschikbaar) aangevuld met
+// bots tot LEAGUE_COHORT. Zonder backend/echte spelers = enkel bots (als vanouds).
 function _lgStandings(L,progOverride){
   const prog=progOverride!=null?progOverride:_lgWeekProgress();
-  const rows=(L.cohort||[]).map(b=>{
-    const xp=progOverride===1?b.target:Math.round(b.target*Math.min(1,prog*b.front));
-    return {naam:b.naam,animalId:b.animalId,stage:b.stage,xp:xp,me:false};
-  });
+  const real=_lgRealRows(L).slice(0,LEAGUE_COHORT-1);
+  const nBots=Math.max(0,(LEAGUE_COHORT-1)-real.length);
+  const bots=(L.cohort||[]).slice(0,nBots).map(b=>({
+    naam:b.naam,animalId:b.animalId,stage:b.stage,
+    xp:(progOverride===1?b.target:_lgBotXP(b,prog)),me:false
+  }));
+  const rows=[...real,...bots];
   const meAv=_lgMeAvatar();
   rows.push({naam:_lgMeName(),animalId:meAv.id,stage:meAv.stage,xp:L.weekXP||0,me:true});
   rows.sort((a,b)=>b.xp-a.xp||(a.me?1:-1));
@@ -160,6 +195,29 @@ function leagueAddXP(amount){
   L.weekXP=(L.weekXP||0)+delta;
   _saveLeague(L);
   try{renderLeagueHome();}catch(e){}
+  try{leagueSyncAndFetch();}catch(e){}
+}
+
+// ── ECHTE MEDESPELERS: push mijn weekstand en haal de cohort van deze week op. ──
+// Zonder Supabase/RPC's gebeurt er niets (de league blijft dan bots-only).
+var _lgSyncTs=0,_lgSyncing=false;
+function leagueSyncAndFetch(force){
+  if(typeof SB==='undefined'||!SB||typeof _DID==='undefined')return;
+  const now=Date.now();
+  if(!force&&(_lgSyncing||now-_lgSyncTs<45000))return;
+  _lgSyncing=true;_lgSyncTs=now;
+  const L=ensureLeague();const me=_lgMeAvatar();
+  (async()=>{
+    try{
+      await SB.rpc('league_sync',{p_did:_DID,p_naam:_lgMeName(),p_animal:me.id,p_stage:me.stage||0,p_division:L.division,p_week:L.week,p_xp:L.weekXP||0});
+      const {data,error}=await SB.rpc('league_cohort',{p_division:L.division,p_week:L.week});
+      if(!error&&Array.isArray(data)){
+        window._lgRealCache={week:L.week,division:L.division,players:data,ts:Date.now()};
+        try{renderLeagueHome();}catch(e){}
+        try{const sc=document.getElementById('sc-league');if(sc&&sc.classList.contains('on'))renderLeague();}catch(e){}
+      }
+    }catch(e){}finally{_lgSyncing=false;}
+  })();
 }
 
 // ── WEEK-CEREMONIE: de wekelijkse promotie/degradatie-onthulling (één keer). ──
@@ -184,6 +242,7 @@ function showLeagueCeremony(r){
     <div class="lgc-kicker">${up?'Gepromoveerd':'Nieuwe start'}</div>
     <div class="lgc-title">${up?'Welkom in de '+div.naam+'-divisie':'Je zakt naar '+div.naam}</div>
     <div class="lgc-sub">${up?'Je eindigde vorige week #'+r.rank+'. Sterk gewerkt!':'Deze week pak je het terug - jij kan dit.'}</div>
+    ${up&&r.reward>0?`<div class="lgc-reward"><span class="lgc-reward-ico">${typeof _ico==='function'?_ico('coin',20):'🪙'}</span>+${r.reward} munten beloning</div>`:''}
     <button class="lgc-cta" onclick="_lgCeremonyClose(true)">Bekijk mijn divisie</button>
     <button class="lgc-skip" onclick="_lgCeremonyClose(false)">Sluiten</button>
   </div>`;
@@ -233,6 +292,7 @@ function renderLeagueHome(){
     <div class="lg-card-arr">→</div>
   </div>`;
   try{_lgMaybeCeremony();}catch(e){}
+  try{leagueSyncAndFetch();}catch(e){}
 }
 function _lgResultBanner(r){
   if(r.promoted)return `<div class="lg-result lg-result-up" onclick="_lgSeen()"><b>Gepromoveerd!</b> Je bent naar de ${LEAGUE_DIVISIONS[r.newDiv].naam}-divisie gestegen. 🎉 <span class="lg-x">✕</span></div>`;
@@ -248,7 +308,10 @@ function leagueRankInfo(xpGained){
   const L=ensureLeague();
   const div=LEAGUE_DIVISIONS[L.division];
   const prog=_lgWeekProgress();
-  const botXP=(L.cohort||[]).map(b=>Math.round(b.target*Math.min(1,prog*b.front)));
+  // Tegenstanders = echte medespelers (indien beschikbaar) + bots tot de cohortmaat.
+  const real=_lgRealRows(L).slice(0,LEAGUE_COHORT-1).map(r=>r.xp);
+  const nBots=Math.max(0,(LEAGUE_COHORT-1)-real.length);
+  const botXP=[...real,...(L.cohort||[]).slice(0,nBots).map(b=>_lgBotXP(b,prog))];
   const total=botXP.length+1;
   const nowXP=L.weekXP||0;
   const beforeXP=Math.max(0,nowXP-(xpGained||0));
@@ -315,7 +378,7 @@ function renderResultLeague(xpGained){
 }
 
 // ── Volledig bord ──
-function openLeague(){show('sc-league');renderLeague();}
+function openLeague(){show('sc-league');renderLeague();try{leagueSyncAndFetch(true);}catch(e){}}
 function renderLeague(){
   const box=document.getElementById('league-body');
   if(!box)return;
