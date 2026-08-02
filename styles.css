@@ -6305,3 +6305,40 @@ html.dark .dom-hero-card{background:linear-gradient(180deg,rgba(255,255,255,.045
 /* Groep: docent-verwijzing i.p.v. klas-aanmaken */
 .klas-doc-link{font-size:13px;color:var(--mu);text-align:center;margin-top:16px;line-height:1.55}
 .klas-doc-link a{color:var(--or);font-weight:700}
+
+/* ═══ "Vraag het aan Vonk" — fout-coach ═══ */
+.q-vonk-ask{display:inline-flex;align-items:center;gap:7px;margin-top:11px;padding:9px 15px;border:none;border-radius:12px;background:linear-gradient(180deg,#fb8c3e,var(--or));color:#fff;font-family:var(--font);font-weight:800;font-size:13px;cursor:pointer;box-shadow:0 4px 12px rgba(var(--or-rgb),.28);-webkit-tap-highlight-color:transparent}
+.q-vonk-ask:active{transform:scale(.97)}
+
+#vonk-coach{position:fixed;inset:0;z-index:9000;display:none}
+#vonk-coach.on{display:block}
+.vc-back{position:absolute;inset:0;background:rgba(10,15,25,.55);-webkit-backdrop-filter:blur(3px);backdrop-filter:blur(3px)}
+.vc-card{position:absolute;left:50%;bottom:0;transform:translateX(-50%);width:100%;max-width:460px;max-height:92vh;overflow-y:auto;background:var(--s);border-radius:26px 26px 0 0;padding:22px 20px calc(22px + env(safe-area-inset-bottom));box-shadow:0 -12px 40px rgba(0,0,0,.28);animation:vcUp .3s cubic-bezier(.22,1,.36,1)}
+@media(min-width:560px){.vc-card{bottom:auto;top:50%;transform:translate(-50%,-50%);border-radius:24px;max-height:88vh}}
+@keyframes vcUp{from{transform:translate(-50%,36px);opacity:.5}to{transform:translateX(-50%);opacity:1}}
+.vc-x{position:absolute;top:14px;right:14px;width:32px;height:32px;border:none;border-radius:50%;background:rgba(127,127,127,.14);color:var(--mu);font-size:14px;cursor:pointer;z-index:2}
+.vc-head{display:flex;align-items:center;gap:12px;margin-bottom:15px}
+.vc-fox{width:58px;height:58px;flex-shrink:0}.vc-fox svg{width:100%;height:100%;display:block}
+.vc-title{font-family:var(--font-head,inherit);font-size:18px;font-weight:800;color:var(--dk)}
+.vc-sub{font-size:12.5px;color:var(--mu);font-weight:600}
+.vc-q{font-size:14.5px;font-weight:700;color:var(--dk);line-height:1.42;margin-bottom:12px}
+.vc-ans{display:flex;flex-direction:column;gap:7px;margin-bottom:14px}
+.vc-a{display:flex;flex-direction:column;gap:2px;font-size:14px;color:var(--dk);border-radius:12px;padding:9px 13px;border:1px solid var(--bo)}
+.vc-a b{font-size:10px;font-weight:800;text-transform:uppercase;letter-spacing:.5px}
+.vc-a-wrong{background:rgba(239,68,68,.07);border-color:rgba(239,68,68,.25)}.vc-a-wrong b{color:#ef4444}
+.vc-a-right{background:rgba(34,197,94,.08);border-color:rgba(34,197,94,.28)}.vc-a-right b{color:#16a34a}
+.vc-why{background:var(--soft,rgba(127,127,127,.06));border-left:3px solid var(--or);border-radius:0 12px 12px 0;padding:11px 14px;margin-bottom:16px}
+.vc-why-lbl{display:block;font-size:11px;font-weight:800;text-transform:uppercase;letter-spacing:.4px;color:var(--or);margin-bottom:4px}
+.vc-why-tx{font-size:13.5px;color:var(--dk);line-height:1.55}
+.vc-cta{width:100%;padding:14px;border:none;border-radius:14px;background:linear-gradient(180deg,#fb8c3e,var(--or));color:#fff;font-family:var(--font);font-weight:800;font-size:14.5px;cursor:pointer;box-shadow:0 6px 18px rgba(var(--or-rgb),.3);-webkit-tap-highlight-color:transparent}
+.vc-cta:active{transform:scale(.98)}
+.vc-practice-lbl{font-size:11px;font-weight:800;text-transform:uppercase;letter-spacing:.5px;color:var(--or);margin-bottom:8px}
+.vc-opts{display:flex;flex-direction:column;gap:8px;margin-bottom:4px}
+.vc-opt{text-align:left;padding:13px 15px;border:1.5px solid var(--bo);border-radius:13px;background:var(--s);color:var(--dk);font-family:var(--font);font-size:14px;font-weight:600;cursor:pointer;transition:border-color .15s,background .15s;-webkit-tap-highlight-color:transparent}
+.vc-opt:hover:not(:disabled){border-color:var(--or)}
+.vc-opt:disabled{cursor:default}
+.vc-opt-ok{border-color:#22c55e!important;background:rgba(34,197,94,.1)!important;color:#15803d!important;font-weight:800}
+.vc-opt-no{border-color:#ef4444!important;background:rgba(239,68,68,.08)!important;color:#b91c1c!important}
+.vc-result{margin-top:12px}
+.vc-good{background:rgba(34,197,94,.1);border:1px solid rgba(34,197,94,.3);border-radius:13px;padding:13px 15px;font-size:14px;color:var(--dk);line-height:1.5}
+.vc-bad{background:rgba(239,68,68,.07);border:1px solid rgba(239,68,68,.25);border-radius:13px;padding:13px 15px;font-size:13.5px;color:var(--dk);line-height:1.5}

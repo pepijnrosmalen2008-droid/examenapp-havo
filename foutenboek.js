@@ -344,3 +344,109 @@ function openFoutenboek() {
   try { trackEvent('foutenboek_open', {}); } catch (e) {}
   try { setTimeout(() => { if (typeof vonkOnboard === 'function') vonkOnboard('foutenboek'); }, 750); } catch (e) {}
 }
+
+// ═══════════════════════════════════════════════════════════════════════
+// "VRAAG HET AAN VONK" — persoonlijke fout-coach (na een fout).
+// Vonk laat zien waarom het fout ging (voorgegenereerde uitleg/misconceptie),
+// laat je één vergelijkbare vraag oefenen, en markeert het onderwerp als
+// verbeterd (promoveert de foutenboek-entry via SM-2) als je die goed maakt.
+// Geen live AI: alle uitleg is voorgegenereerd → gratis, snel, privacy-vriendelijk.
+// ═══════════════════════════════════════════════════════════════════════
+var _vcCtx = null, _vcCorrectText = '';
+
+function vonkCoachFromQuiz() {
+  try {
+    const q = ST.vragen[ST.idx]; const a = (ST.antwrd && ST.antwrd[ST.idx]) || {};
+    openVonkCoach({ vakId: ST.vak.id, vakNaam: ST.vak.naam, domId: ST.domein.id, domNaam: ST.domein.naam,
+      v: q.v, o: q.o, c: q.c, chosen: a.chosenText, u: q.u });
+  } catch (e) {}
+}
+
+function _vonkSimilarQ(vakId, domId, excludeV) {
+  try {
+    const vakken = (typeof getVK === 'function') ? getVK() : [];
+    const vak = vakken.find(v => v.id === vakId); if (!vak) return null;
+    const dom = (vak.domeinen || []).find(d => d.id === domId); if (!dom) return null;
+    const pool = [].concat(dom.sv || [], dom.oe || [])
+      .filter(q => q && (q.v || '') !== excludeV && (q.a || q.o) && typeof q.c === 'number');
+    if (!pool.length) return null;
+    return pool[Math.floor(Math.random() * pool.length)];
+  } catch (e) { return null; }
+}
+
+function openVonkCoach(ctx) {
+  if (!ctx) return;
+  _vcCtx = ctx;
+  let el = document.getElementById('vonk-coach');
+  if (!el) { el = document.createElement('div'); el.id = 'vonk-coach'; document.body.appendChild(el); }
+  const uit = (typeof fbUitlegFor === 'function' && fbUitlegFor(ctx.vakId, ctx.domId, ctx.v)) || null;
+  const enr = (typeof fbEnrich === 'function' && fbEnrich(ctx.vakId, ctx.domId, ctx.v)) || null;
+  const why = uit || (enr && enr.m) || ctx.u || 'Kijk goed naar het juiste antwoord en waaróm dat klopt. Snap je die stap, dan pak je een vergelijkbare vraag zo.';
+  const juist = ctx.o ? (ctx.o[ctx.c] || '') : '';
+  const fox = (typeof mascotSVG === 'function') ? mascotSVG('kijk', 60) : '🦊';
+  el.innerHTML = `<div class="vc-back" onclick="closeVonkCoach()"></div>
+    <div class="vc-card" role="dialog">
+      <button class="vc-x" onclick="closeVonkCoach()" aria-label="Sluiten">✕</button>
+      <div class="vc-head"><div class="vc-fox">${fox}</div>
+        <div><div class="vc-title">Even samen kijken</div><div class="vc-sub">${_fbEsc(ctx.domNaam || '')}</div></div></div>
+      <div class="vc-body" id="vc-body">
+        <div class="vc-q">${_fbEsc(ctx.v || '')}</div>
+        <div class="vc-ans">
+          <span class="vc-a vc-a-wrong"><b>Jouw antwoord</b>${_fbEsc(ctx.chosen || '—')}</span>
+          <span class="vc-a vc-a-right"><b>Juist</b>${_fbEsc(juist)}</span>
+        </div>
+        <div class="vc-why"><span class="vc-why-lbl">Waarom ging dit fout?</span><span class="vc-why-tx">${_fbEsc(why)}</span></div>
+      </div>
+      <button class="vc-cta" id="vc-cta" onclick="vonkCoachPractice()">Oefen een vergelijkbare vraag →</button>
+    </div>`;
+  requestAnimationFrame(() => el.classList.add('on'));
+  try { trackEvent('vonk_coach_open', { dom: ctx.domId }); } catch (e) {}
+}
+
+function vonkCoachPractice() {
+  const ctx = _vcCtx; if (!ctx) return;
+  const body = document.getElementById('vc-body'); const cta = document.getElementById('vc-cta');
+  const q = _vonkSimilarQ(ctx.vakId, ctx.domId, ctx.v);
+  if (!q) { // geen vraag beschikbaar → deep-link naar het domein
+    if (cta) { cta.textContent = 'Oefen dit domein →'; cta.onclick = function () { closeVonkCoach(); try { if (typeof goToDomein === 'function') goToDomein(ctx.vakId, ctx.domId, 'snel'); else if (typeof openVak === 'function') openVak(ctx.vakId); } catch (e) {} }; }
+    return;
+  }
+  const opts = (q.a || q.o || []).slice(); _vcCorrectText = opts[q.c];
+  const idxs = opts.map((_, i) => i);
+  for (let i = idxs.length - 1; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1)); const t = idxs[i]; idxs[i] = idxs[j]; idxs[j] = t; }
+  body.innerHTML = `<div class="vc-practice-lbl">Vergelijkbare vraag</div>
+    <div class="vc-q">${_fbEsc(q.v || '')}</div>
+    <div class="vc-opts">${idxs.map(i => `<button class="vc-opt" onclick="vonkCoachAnswer(this,${opts[i] === _vcCorrectText ? 1 : 0})">${_fbEsc(opts[i])}</button>`).join('')}</div>
+    <div class="vc-result" id="vc-result"></div>`;
+  if (cta) cta.style.display = 'none';
+}
+
+function vonkCoachAnswer(btn, ok) {
+  const opts = document.querySelectorAll('.vc-opt'); opts.forEach(b => b.disabled = true);
+  const res = document.getElementById('vc-result');
+  if (ok) {
+    btn.classList.add('vc-opt-ok');
+    try { if (typeof fbRecord === 'function') fbRecord({ v: _vcCtx.v, o: _vcCtx.o, c: _vcCtx.c, _fbVak: _vcCtx.vakId, _fbVakNaam: _vcCtx.vakNaam, _fbDom: _vcCtx.domId, _fbDomNaam: _vcCtx.domNaam }, true); } catch (e) {}
+    try { _vonkMarkVerbeterd(_vcCtx.domId); } catch (e) {}
+    if (res) res.innerHTML = `<div class="vc-good">Top! Je snapt het nu. Ik heb <b>${_fbEsc(_vcCtx.domNaam || 'dit onderwerp')}</b> als verbeterd gemarkeerd. ✓</div>`;
+    try { if (typeof vonkReact === 'function') vonkReact('feest', 'Verbeterd!'); } catch (e) {}
+    try { if (typeof playSound === 'function') playSound('correct'); } catch (e) {}
+  } else {
+    btn.classList.add('vc-opt-no');
+    opts.forEach(b => { if (b.textContent === _vcCorrectText) b.classList.add('vc-opt-ok'); });
+    if (res) res.innerHTML = `<div class="vc-bad">Nog niet — het juiste antwoord staat groen. Kijk nog eens naar de uitleg hierboven, je pakt 'm de volgende keer.</div>`;
+    try { if (typeof playSound === 'function') playSound('wrong'); } catch (e) {}
+  }
+}
+
+function _vonkMarkVerbeterd(domId) {
+  try {
+    const t = new Date().toISOString().slice(0, 10); let s = {};
+    try { s = JSON.parse(localStorage.getItem('slagio_verbeterd') || '{}'); } catch (e) {}
+    if (s.d !== t) { s.d = t; s.n = 0; } s.n = (s.n || 0) + 1;
+    localStorage.setItem('slagio_verbeterd', JSON.stringify(s));
+  } catch (e) {}
+  try { trackEvent('vonk_coach_verbeterd', { dom: domId }); } catch (e) {}
+}
+
+function closeVonkCoach() { const el = document.getElementById('vonk-coach'); if (el) el.classList.remove('on'); }
