@@ -6628,3 +6628,42 @@ html.dark .dom-hero-card{background:linear-gradient(180deg,rgba(255,255,255,.045
   .hm-cta-primary,.btnp,.btns,.hm-cta-sec{transition:none !important}
   .hm-cta-primary:active,.btnp:active,.btns:active,.hm-cta-sec:active{transform:none !important}
 }
+
+/* ══ Slim oefenen: home-kaart + Duolingo-stijl intro-overlay ══ */
+.slim-card-home{width:100%;display:flex;align-items:center;gap:13px;margin:0 0 12px;padding:15px 16px;border-radius:18px;cursor:pointer;text-align:left;font-family:var(--font);
+  background:linear-gradient(135deg,color-mix(in srgb,var(--or) 22%,var(--s)),var(--s) 72%);
+  border:1px solid color-mix(in srgb,var(--or) 34%,var(--bo));
+  box-shadow:0 4px 0 color-mix(in srgb,var(--or) 42%,#000), 0 10px 24px -12px rgba(var(--or-rgb),.5);
+  transition:transform .09s ease, box-shadow .09s ease}
+.slim-card-home:active{transform:translateY(4px);box-shadow:0 0 0 color-mix(in srgb,var(--or) 42%,#000),0 4px 12px -8px rgba(var(--or-rgb),.4)}
+.slim-card-spark{flex:none;width:44px;height:44px;border-radius:13px;display:grid;place-items:center;color:#fff;background:linear-gradient(135deg,#fbbf24,var(--or));box-shadow:0 3px 10px rgba(var(--or-rgb),.4)}
+.slim-card-spark svg{animation:slimSpark 2.4s ease-in-out infinite;transform-origin:50% 50%}
+@keyframes slimSpark{0%,100%{transform:scale(1) rotate(0)}50%{transform:scale(1.16) rotate(12deg)}}
+.slim-card-body{flex:1;min-width:0}
+.slim-card-t{display:block;font-family:var(--font-head,inherit);font-size:15.5px;font-weight:800;color:var(--dk)}
+.slim-card-s{display:block;font-size:12.5px;color:var(--mu);margin-top:2px;line-height:1.4}
+.slim-card-go{flex:none;font-size:19px;color:var(--or);font-weight:800}
+.slim-overlay{position:fixed;inset:0;z-index:9450;display:flex;align-items:center;justify-content:center;padding:24px;background:rgba(12,10,20,.6);backdrop-filter:blur(6px);opacity:0;transition:opacity .28s}
+.slim-overlay.show{opacity:1}
+.slim-card{position:relative;width:100%;max-width:360px;text-align:center;border-radius:26px;padding:26px 24px 22px;background:var(--s,#fff);border:1px solid var(--bo);box-shadow:0 30px 80px -20px rgba(0,0,0,.55);transform:translateY(20px) scale(.92);transition:transform .42s cubic-bezier(.22,1.3,.36,1)}
+.slim-overlay.show .slim-card{transform:none}
+.slim-x{position:absolute;top:12px;right:14px;background:none;border:none;color:var(--mu);font-size:14px;cursor:pointer;opacity:.6;padding:5px}
+.slim-x:hover{opacity:1}
+.slim-vonk{display:grid;place-items:center;height:96px;margin-bottom:4px}
+.slim-vonk .m-svg{width:96px;height:96px;animation:slimVonk .6s cubic-bezier(.34,1.6,.5,1) .1s backwards}
+@keyframes slimVonk{0%{transform:scale(0) rotate(-20deg)}100%{transform:scale(1) rotate(0)}}
+.slim-kicker{font-family:var(--font-mono,var(--font));font-size:11px;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:var(--or)}
+.slim-title{font-family:var(--font-head,inherit);font-size:22px;font-weight:800;color:var(--dk);margin:6px 0 16px;line-height:1.15}
+.slim-chips{display:flex;flex-direction:column;gap:10px;margin-bottom:20px}
+.slim-chip{display:flex;align-items:center;gap:12px;padding:12px 15px;border-radius:15px;background:var(--soft,rgba(127,127,127,.06));border:1px solid var(--bo);text-align:left;animation:slimChip .5s cubic-bezier(.22,1.2,.36,1) backwards}
+.slim-chip:nth-child(1){animation-delay:.34s}.slim-chip:nth-child(2){animation-delay:.5s}
+@keyframes slimChip{0%{opacity:0;transform:translateY(10px) scale(.94)}100%{opacity:1;transform:none}}
+.slim-chip-n{font-variant-numeric:tabular-nums;font-family:var(--font-head,inherit);font-size:26px;font-weight:900;line-height:1;min-width:1.4em;text-align:center}
+.slim-chip-fout .slim-chip-n{color:#ef4444}.slim-chip-weak .slim-chip-n{color:var(--or)}
+.slim-chip-l{font-size:13.5px;font-weight:700;color:var(--dk)}
+.slim-start{width:100%;border:none;border-radius:15px;padding:15px 0;cursor:pointer;font-family:var(--font);font-size:15.5px;font-weight:800;color:#fff;
+  background:linear-gradient(135deg,color-mix(in srgb,var(--or) 90%,#000 4%),var(--or));
+  box-shadow:0 4px 0 color-mix(in srgb,var(--or) 55%,#000),0 8px 20px -6px rgba(var(--or-rgb),.55);
+  transition:transform .09s ease,box-shadow .09s ease}
+.slim-start:active{transform:translateY(4px);box-shadow:0 0 0 color-mix(in srgb,var(--or) 55%,#000),0 4px 12px -6px rgba(var(--or-rgb),.5)}
+@media(prefers-reduced-motion:reduce){.slim-card,.slim-vonk .m-svg,.slim-chip,.slim-card-spark svg{animation:none !important;transition:none !important;transform:none !important}}
