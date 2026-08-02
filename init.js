@@ -420,16 +420,15 @@ function openNavSheet(){
   let ov=document.getElementById('nav-sheet-ov');
   if(!ov){
     ov=document.createElement('div');ov.id='nav-sheet-ov';ov.className='nav-sheet-ov';
+    // In-house SVG-iconen (uit features.js) i.p.v. emoji — strakker.
+    const I=(typeof ICO_CALC!=='undefined');
     const items=[
-      ['📅','Studieplan',"show('sc-studieplan');renderStudieplan()"],
-      ['📊','Voortgang',"openRapport()"],
-      ['📄','Examens',"show('sc-schedule')"],
-      ['🧮','Cijfers',"show('sc-calc');setTimeout(prefillCalcFromSaved,50)"],
-      ['📕','Foutenboek',"openFoutenboek()"],
-      ['🔄','Herhalen',"openHerhalen()"],
-      ['🛒','Winkel',"openShop()"],
-      ['🛡️','Divisie',"openLeague()"],
-      ['👥','Groep',"show('sc-groep');renderGroepScreen()"],
+      [I?ICO_CALC:'🧮','Cijfers',"show('sc-calc');setTimeout(prefillCalcFromSaved,50)"],
+      [I?ICO_BOOK:'📕','Foutenboek',"openFoutenboek()"],
+      [I?ICO_REPEAT:'🔄','Herhalen',"openHerhalen()"],
+      [I?ICO_BOX:'🛒','Winkel',"openShop()"],
+      [I?ICO_SHIELD:'🛡️','Divisie',"openLeague()"],
+      [I?ICO_USERS:'👥','Groep',"show('sc-groep');renderGroepScreen()"],
     ];
     ov.innerHTML='<div class="nav-sheet no-ico" onclick="event.stopPropagation()">'
       +'<div class="nav-sheet-grip"></div><div class="nav-sheet-title">Menu</div>'

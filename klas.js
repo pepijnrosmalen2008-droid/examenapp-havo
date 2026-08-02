@@ -65,22 +65,7 @@ function _klasStartHtml(){
     <button class="klas-btn klas-btn-primary" onclick="klasDoeMee()">Meedoen →</button>
     <div id="klas-join-err" class="klas-err"></div>
   </div>
-  <details class="klas-doc">
-    <summary>Ik ben docent - maak een klas aan</summary>
-    <div class="klas-doc-body">
-      <p class="klas-doc-note">Je hebt een gratis Slagio-account nodig zodat je klas bewaard blijft.</p>
-      <label class="klas-lbl" for="klas-new-naam">Naam van de klas</label>
-      <input id="klas-new-naam" class="klas-input" maxlength="40" placeholder="Bijv. 5 HAVO biologie">
-      <div class="klas-row">
-        <div style="flex:1"><label class="klas-lbl" for="klas-new-niv">Niveau</label>
-          <select id="klas-new-niv" class="klas-input"><option value="havo">HAVO</option><option value="vwo">VWO</option></select></div>
-        <div style="flex:1"><label class="klas-lbl" for="klas-new-vak">Vak (optioneel)</label>
-          <select id="klas-new-vak" class="klas-input"><option value="">-</option>${vakOpts}</select></div>
-      </div>
-      <button class="klas-btn klas-btn-primary" onclick="klasMaak()">Klas aanmaken →</button>
-      <div id="klas-new-err" class="klas-err"></div>
-    </div>
-  </details>`;
+  <p class="klas-doc-link">Ben je docent en wil je een klas aanmaken? Dat regel je op <a href="/vakken/slagio-school.html">Slagio School</a> — daar open je het docentenportaal en maak je gratis een klas aan.</p>`;
 }
 
 // ── Leerling sluit zich aan ───────────────────────────────────

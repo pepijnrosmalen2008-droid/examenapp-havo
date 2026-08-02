@@ -326,10 +326,13 @@ function getAnimalEmoji(animalId,totalXP){
   return a.s[Math.min(idx,a.s.length-1)];
 }
 // Geeft HTML terug: SVG voor custom dieren, emoji-span voor normale
-function getAnimalDisplay(animalId,stageIdx,size){
-  size=size||48;
+function getAnimalDisplay(animalId,stageIdx,size,accHTML){
+  size=size||48; accHTML=accHTML||'';
+  // Accessoire wordt BINNEN de wrap gezet zodat het elke transform (idle-
+  // animatie + klik) exact meemaakt. Wrap dan relatief + overflow zichtbaar.
+  const _accExtra=accHTML?';position:relative;overflow:visible':'';
   const a=getAnimalById(animalId);
-  if(!a)return'<span style="font-size:'+size+'px">🐾</span>';
+  if(!a)return'<span style="font-size:'+size+'px'+(accHTML?';position:relative;display:inline-block':'')+'">🐾'+accHTML+'</span>';
   // Ultiem (laatste rang) krijgt een subtiele klasse-hook voor extra glans
   // (géén metaal-ring meer - de ultieme vorm onderscheidt zich door zijn eigen art).
   // Twee toptiers: Goud (voorlaatste) = vergulde mascotte, Ultiem (laatste) =
@@ -343,11 +346,11 @@ function getAnimalDisplay(animalId,stageIdx,size){
   if(a.svg){
     const svgIdx=Math.min(stageIdx,a.svg.length-1);
     if(a.svg[svgIdx]){
-      return'<span class="anim-svg-wrap'+tierCls+moveCls+'" style="width:'+size+'px;height:'+size+'px">'+a.svg[svgIdx]+'</span>';
+      return'<span class="anim-svg-wrap'+tierCls+moveCls+'" style="width:'+size+'px;height:'+size+'px'+_accExtra+'">'+a.svg[svgIdx]+accHTML+'</span>';
     }
   }
   const sIdx=Math.min(stageIdx,a.s.length-1);
-  return'<span style="font-size:'+size+'px;line-height:1">'+a.s[sIdx]+'</span>';
+  return'<span style="font-size:'+size+'px;line-height:1'+(accHTML?';position:relative;display:inline-block':'')+'">'+a.s[sIdx]+accHTML+'</span>';
 }
 function buildRegisterAnimalPicker(){
   const grid=document.getElementById('reg-animal-grid');

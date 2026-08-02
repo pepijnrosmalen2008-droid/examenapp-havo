@@ -785,14 +785,14 @@
   <div class="hm-menu">
     <button class="hm-menu-tile hmc-plan" onclick="show('sc-studieplan');renderStudieplan()"><span class="hm-menu-ic">📅</span>Studieplan</button>
     <button class="hm-menu-tile hmc-prog" onclick="openRapport()"><span class="hm-menu-ic">📊</span>Voortgang</button>
-    <button class="hm-menu-tile hmc-exam" onclick="show('sc-schedule')"><span class="hm-menu-ic">📄</span>Examens</button>
-    <button class="hm-menu-tile hmc-cijf" onclick="show('sc-calc');setTimeout(prefillCalcFromSaved,50)"><span class="hm-menu-ic">🧮</span>Cijfers<span class="hm-menu-sub" id="hm-cijfer-sub"></span></button>
+    <button class="hm-menu-tile hmc-exam" onclick="show('sc-schedule')"><span class="hm-menu-ic">📄</span>Rooster</button>
+    <button class="hm-menu-tile hmc-soc" onclick="show('sc-sociaal')"><span class="hm-menu-ic">🌐</span>Sociaal</button>
   </div>
-  <!-- Overige onderdelen (foutenboek, herhalen, leaderboard, divisie, winkel, groep) achter één menuknop. Leaderboard blijft bereikbaar: show('sc-leaderboard') -->
+  <!-- Overige onderdelen achter één menuknop. Leaderboard zit als Topscores-tab onder Divisie: show('sc-leaderboard') -->
   <button class="hm-menu-open no-ico" onclick="openNavSheet()" aria-label="Open menu">
     <span class="hm-fb-badge" id="fb-home-badge" style="display:none">0</span>
     <svg viewBox="0 0 24 24" width="19" height="19" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><line x1="4" y1="7" x2="20" y2="7"/><line x1="4" y1="12" x2="20" y2="12"/><line x1="4" y1="17" x2="20" y2="17"/></svg>
-    Meer · winkel, divisie, leaderboard &amp; meer
+    Meer · cijfers, foutenboek, winkel &amp; meer
   </button>
 </div>
 
@@ -1428,11 +1428,11 @@
     <div class="soc-hub-sub">Vergelijk je voortgang en speel samen</div>
   </div>
   <div class="soc-hub-cards">
-    <div class="soc-hub-card soc-hub-card-lb" onclick="show('sc-leaderboard');renderLeaderboard()" role="button" tabindex="0">
-      <div class="soc-hub-icon soc-hub-icon-lb"><svg class="ico" viewBox="0 0 24 24" width="1em" height="1em" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 4h10v5a5 5 0 0 1-10 0z"/><path d="M7 6H4v1a3 3 0 0 0 3 3"/><path d="M17 6h3v1a3 3 0 0 1-3 3"/><path d="M12 14v3"/><path d="M8.5 21h7"/><path d="M9.5 21a2.5 2.5 0 0 1 5 0"/></svg></div>
+    <div class="soc-hub-card soc-hub-card-div" onclick="openLeague()" role="button" tabindex="0">
+      <div class="soc-hub-icon soc-hub-icon-div"><svg class="ico" viewBox="0 0 24 24" width="1em" height="1em" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3 5 6v5c0 4.5 3 7.6 7 9 4-1.4 7-4.5 7-9V6z"/></svg></div>
       <div class="soc-hub-body">
-        <div class="soc-hub-card-title">Leaderboard</div>
-        <div class="soc-hub-card-desc">Top 10 van Nederland · Score op nauwkeurigheid &amp; snelheid · Zie wie er bovenaan staat</div>
+        <div class="soc-hub-card-title">Weekwedstrijd</div>
+        <div class="soc-hub-card-desc">Strijd in je divisie · Verdien XP en klim omhoog · Elke week promotie of degradatie</div>
       </div>
       <div class="soc-hub-arrow">›</div>
     </div>
@@ -1440,7 +1440,15 @@
       <div class="soc-hub-icon soc-hub-icon-grp"><svg class="ico" viewBox="0 0 24 24" width="1em" height="1em" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 19v-1a4 4 0 0 0-4-4H7a4 4 0 0 0-4 4v1"/><circle cx="9.5" cy="8" r="3.3"/><path d="M21 19v-1a4 4 0 0 0-3-3.9"/><path d="M15.5 4.6a3.3 3.3 0 0 1 0 6.4"/></svg></div>
       <div class="soc-hub-body">
         <div class="soc-hub-card-title">Mijn Groep</div>
-        <div class="soc-hub-card-desc">Klassikaal scorebord · Nodig vrienden uit via code · Speel samen en vergelijk je resultaten</div>
+        <div class="soc-hub-card-desc">Klassikaal scorebord · Doe mee met de code van je docent · Vergelijk je resultaten</div>
+      </div>
+      <div class="soc-hub-arrow">›</div>
+    </div>
+    <div class="soc-hub-card soc-hub-card-lb" onclick="show('sc-leaderboard');renderLeaderboard()" role="button" tabindex="0">
+      <div class="soc-hub-icon soc-hub-icon-lb"><svg class="ico" viewBox="0 0 24 24" width="1em" height="1em" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 4h10v5a5 5 0 0 1-10 0z"/><path d="M7 6H4v1a3 3 0 0 0 3 3"/><path d="M17 6h3v1a3 3 0 0 1-3 3"/><path d="M12 14v3"/><path d="M8.5 21h7"/><path d="M9.5 21a2.5 2.5 0 0 1 5 0"/></svg></div>
+      <div class="soc-hub-body">
+        <div class="soc-hub-card-title">Topscores</div>
+        <div class="soc-hub-card-desc">Top 10 van Nederland · Score op nauwkeurigheid &amp; snelheid · Zie wie er bovenaan staat</div>
       </div>
       <div class="soc-hub-arrow">›</div>
     </div>

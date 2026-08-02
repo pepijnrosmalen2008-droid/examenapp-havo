@@ -758,8 +758,8 @@ function renderXPHome(){
   const nxtThresh=isMaxStage?curThresh+1:ANIM_THRESHOLDS[stageIdx+1];
   const stagePct=isMaxStage?100:Math.round(Math.min(100,(xp-curThresh)/(nxtThresh-curThresh)*100));
   const currentEmoji=animal?animal.s[stageIdx]:'⭐';
-  let currentDisplay=animal?getAnimalDisplay(animal.id,stageIdx,50):`<span style="font-size:30px">⭐</span>`;
-  try{const _sk=avatarSkinHTML(animal&&animal.id,stageIdx,50);if(_sk)currentDisplay='<span class="av-wrap">'+currentDisplay+_sk+'</span>';}catch(e){}
+  let _acc='';try{_acc=animal?avatarSkinHTML(animal.id,stageIdx):'';}catch(e){}
+  let currentDisplay=animal?getAnimalDisplay(animal.id,stageIdx,50,_acc):`<span style="font-size:30px">⭐</span>`;
   const animalName=animal?animal.n:'Avatar';
   const stageName=ANIM_STAGE_NAMES[stageIdx];
   const nextStageName=isMaxStage?null:ANIM_STAGE_NAMES[stageIdx+1];
@@ -1108,19 +1108,18 @@ function getEquippedAv(){try{return localStorage.getItem('slagio_av_skin')||'';}
 function getEquippedVonk(){try{return localStorage.getItem('slagio_vonk_skin')||'';}catch(e){return '';}}
 // Gedragen accessoire voor de speler-avatar: getekend in de 60x60-ruimte van het
 // dier, op het kop-anker, zodat het exact op elke avatar past en meeschaalt.
-function _avAccOverlay(accId,animalId,stageIdx,size){
+function _avAccOverlay(accId,animalId,stageIdx){
   const art=accId&&_AV_SKIN_SVG[accId];if(!art)return '';
   const A=_AV_ANCHORS[animalId]||_AV_ANCHOR_DEF;
   const w=A.w, sc=w/100, tx=(30-50*sc).toFixed(2), ty=(A.y-70*sc).toFixed(2);
-  // Zelfde idle-beweging als de avatar (bij size>=44), zodat kleren meebewegen.
-  const move=((size||0)>=44&&typeof ANIMAL_MOVE!=='undefined'&&ANIMAL_MOVE[animalId])?(' '+ANIMAL_MOVE[animalId]):'';
-  return '<span class="av-skin no-ico'+move+'"><svg viewBox="0 0 60 60" preserveAspectRatio="xMidYMid meet">'
+  // Wordt binnen de avatar-wrap gezet (via getAnimalDisplay) → erft elke transform.
+  return '<span class="av-skin no-ico"><svg viewBox="0 0 60 60" preserveAspectRatio="xMidYMid meet">'
     +'<g transform="translate('+tx+' '+ty+') scale('+sc.toFixed(3)+')">'+art+'</g></svg></span>';
 }
-function avatarSkinHTML(animalId,stageIdx,size){return _avAccOverlay(getEquippedAv(),animalId,stageIdx,size);}
+function avatarSkinHTML(animalId,stageIdx){return _avAccOverlay(getEquippedAv(),animalId,stageIdx);}
 // Speler-avatar (huidige dier + fase). Voor previews in de winkel.
 function _myAnimal(){try{const p=JSON.parse(localStorage.getItem(PROF_KEY)||'{}');const xp=(typeof getTotalXP==='function')?getTotalXP():0;return {id:p.animalId||'vos',stage:(typeof getAnimalStageIdx==='function')?getAnimalStageIdx(xp):3};}catch(e){return {id:'vos',stage:3};}}
-function avatarPreviewHTML(accId,size){const a=_myAnimal();size=size||120;const base=(typeof getAnimalDisplay==='function')?getAnimalDisplay(a.id,a.stage,size):'';const ov=accId?_avAccOverlay(accId,a.id,a.stage,size):'';return '<span class="av-wrap" style="width:'+size+'px;height:'+size+'px">'+base+ov+'</span>';}
+function avatarPreviewHTML(accId,size){const a=_myAnimal();size=size||120;const ov=accId?_avAccOverlay(accId,a.id,a.stage):'';return (typeof getAnimalDisplay==='function')?getAnimalDisplay(a.id,a.stage,size,ov):'';}
 function vonkPreviewHTML(accId,size){size=size||150;try{if(typeof _VONK_SKIN_PREVIEW!=='undefined')_VONK_SKIN_PREVIEW=accId||'';const svg=(typeof mascotSVG==='function')?mascotSVG('blij',size):'';if(typeof _VONK_SKIN_PREVIEW!=='undefined')_VONK_SKIN_PREVIEW='';return svg;}catch(e){try{_VONK_SKIN_PREVIEW='';}catch(_){}return '';}}
 function equipCosmetic(id){
   const isVonk=id.indexOf('vk_')===0;

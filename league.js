@@ -72,11 +72,10 @@ function _lgMeName(){try{const p=JSON.parse(localStorage.getItem(PROF_KEY)||'{}'
 function _lgMeAvatar(){try{const p=JSON.parse(localStorage.getItem(PROF_KEY)||'{}');const xp=(typeof getTotalXP==='function')?getTotalXP():0;return {id:p.animalId||null,stage:(typeof getAnimalStageIdx==='function')?getAnimalStageIdx(xp):0};}catch(e){return {id:null,stage:0};}}
 // Rendert de echte app-avatar (SVG/emoji per stadium); valt terug op een ster/vos.
 function _lgAvatar(r){
-  let inner='';
-  if(r.animalId&&typeof getAnimalDisplay==='function'){try{inner=getAnimalDisplay(r.animalId,r.stage||0,26);}catch(e){}}
-  if(!inner)inner='<span style="font-size:22px">'+(r.me?'⭐':'🦊')+'</span>';
-  if(r.me&&typeof avatarSkinHTML==='function'){try{const sk=avatarSkinHTML(r.animalId,r.stage,26);if(sk)return '<span class="av-wrap">'+inner+sk+'</span>';}catch(e){}}
-  return inner;
+  let acc='';
+  if(r.me&&typeof avatarSkinHTML==='function'){try{acc=avatarSkinHTML(r.animalId,r.stage);}catch(e){}}
+  if(r.animalId&&typeof getAnimalDisplay==='function'){try{const h=getAnimalDisplay(r.animalId,r.stage||0,26,acc);if(h)return h;}catch(e){}}
+  return '<span style="font-size:22px">'+(r.me?'⭐':'🦊')+'</span>';
 }
 
 // Zorgt dat de league bij de huidige week hoort; finaliseert de vorige week

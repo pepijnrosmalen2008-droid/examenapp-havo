@@ -357,7 +357,7 @@ var VONK_EXPLAIN = {
   'sc-oe-pick':    { mood: 'goed', msg: `Kies een examenjaar en tijdvak, dan oefen je met de échte vragen van dat centraal examen.` },
   'sc-review':     { mood: 'kijk', msg: `Hier kijk je je antwoorden na met het correctievoorschrift, zodat je precies ziet waar de punten zitten.` },
   'sc-info':       { mood: 'goed', msg: `Alle examenregels op een rij: hoe je slaagt, de N-term, herkansingen en de belangrijke data.` },
-  'sc-sociaal':    { mood: 'blij', msg: `Je sociale hub: het {{leaderboard|leaderboard}}, je {{groep|groep}} en samen oefenen.` },
+  'sc-sociaal':    { mood: 'blij', msg: `Je sociale hub: de weekwedstrijd (divisies), je {{groep|groep}} en de topscores. Speel samen en vergelijk je voortgang.` },
   'sc-klas':       { mood: 'blij', msg: `Je klas: nodig klasgenoten uit, oefen samen en volg elkaars voortgang.` },
   'sc-examen':     { mood: 'kijk', msg: `De echte examen-PDF's en correctievoorschriften, om te downloaden en mee te oefenen.` },
   'sc-zoek':       { mood: 'kijk', msg: `Zoek door álle examens, begrippen en uitleg. Typ een woord en ik vind het voor je.` },
