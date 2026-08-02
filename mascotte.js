@@ -7,13 +7,14 @@
 // ═══════════════════════════════════════════════════════════════════════
 
 var MASCOT_NAME = 'Vonk';
+var _VONK_SKIN_PREVIEW = ''; // tijdelijke skin-override voor winkel-previews
 
 // Stemmingen: blij (default) · trots · goed · laag (bemoedigend) · kijk (nieuwsgierig) · knipoog
 function mascotSVG(mood, size) {
   size = size || 96;
-  // Uitgeruste Vonk-skin (leest de equip live). Kroon/feesthoed vervangen de
-  // standaard afstudeerpet; bril en sjaal komen er bovenop.
-  const _vsk = (typeof getEquippedVonk === 'function') ? getEquippedVonk() : '';
+  // Uitgeruste Vonk-skin (leest de equip live, of een preview-override uit de winkel).
+  // Kroon/feesthoed vervangen de standaard afstudeerpet; bril en sjaal komen er bovenop.
+  const _vsk = _VONK_SKIN_PREVIEW || ((typeof getEquippedVonk === 'function') ? getEquippedVonk() : '');
   const _hideCap = (_vsk === 'vk_crown' || _vsk === 'vk_party');
   // Flat-vector vos (Duolingo-stijl). Gesloten glimlach per stemming (cx60, ~cy60).
   const M = {

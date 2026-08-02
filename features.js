@@ -965,7 +965,7 @@ function applyStreakFreezes(){
       s.frozen.push(yStr);
       s.freezes=Math.max(0,(s.freezes||0)-1);
       cloudSet('streak',s);
-      try{if(typeof showToast==='function')showToast('🧊 Streak-freeze gebruikt - je streak is gered!','#38bdf8');}catch(e){}
+      try{if(typeof showToast==='function')showToast('Streak-freeze gebruikt - je streak is gered!','#38bdf8');}catch(e){}
       try{trackEvent('streak_freeze_used',{});}catch(e){}
     }
   }catch(e){}
@@ -982,14 +982,14 @@ function buyFreeze(){
   if(!spendCoins(PRICE_FREEZE)){showToast('Niet genoeg munten. Oefen om er meer te verdienen!','#ef4444');return;}
   setFreezes(getFreezes()+1);
   try{playSound&&playSound('coin');}catch(e){}
-  showToast('🧊 Streak-freeze gekocht!','#38bdf8');
+  showToast('Streak-freeze gekocht!','#38bdf8');
   try{trackEvent('shop_buy',{item:'freeze'});}catch(e){}
   renderShop();
 }
 function buyXpBoost(){
   if(!spendCoins(PRICE_XPBOOST)){showToast('Niet genoeg munten. Oefen om er meer te verdienen!','#ef4444');return;}
   _setXpBoosts(getXpBoosts()+1);
-  showToast('⚡ Dubbele-XP-boost gekocht - telt bij je volgende snelle quiz!','#8b5cf6');
+  showToast('Dubbele-XP-boost gekocht - telt bij je volgende snelle quiz!','#8b5cf6');
   try{trackEvent('shop_buy',{item:'xpboost'});}catch(e){}
   renderEconHome();renderShop();
 }
@@ -1002,7 +1002,7 @@ function buyXpBoostDay(){
   if(!spendCoins(PRICE_BOOST_DAY)){showToast('Niet genoeg munten. Oefen om er meer te verdienen!','#ef4444');return;}
   try{localStorage.setItem('slagio_xpboost_day',String(Date.now()+24*3600000));}catch(e){}
   try{playSound&&playSound('coin');}catch(e){}
-  showToast('🚀 24 uur lang dubbele XP geactiveerd!','#8b5cf6');
+  showToast('24 uur lang dubbele XP geactiveerd!','#8b5cf6');
   try{trackEvent('shop_buy',{item:'xpboost_day'});}catch(e){}
   renderEconHome();renderShop();
 }
@@ -1010,11 +1010,11 @@ function buyXpBoostDay(){
 function buyMysteryBox(){
   if(!spendCoins(PRICE_MYSTERY)){showToast('Niet genoeg munten. Oefen om er meer te verdienen!','#ef4444');return;}
   const r=Math.random();let msg;
-  if(r<0.10&&getFreezes()<FREEZE_MAX){setFreezes(getFreezes()+1);msg='🧊 een streak-freeze!';}
-  else if(r<0.26){_setXpBoosts(getXpBoosts()+1);msg='⚡ een dubbele-XP-boost!';}
-  else if(r<0.34){addCoins(300);msg='🪙 jackpot - 300 munten!';}
-  else if(r<0.70){const c=80+Math.floor(Math.random()*90);addCoins(c);msg='🪙 '+c+' munten!';}
-  else{const c=20+Math.floor(Math.random()*50);addCoins(c);msg='🪙 '+c+' munten.';}
+  if(r<0.10&&getFreezes()<FREEZE_MAX){setFreezes(getFreezes()+1);msg='een streak-freeze!';}
+  else if(r<0.26){_setXpBoosts(getXpBoosts()+1);msg='een dubbele-XP-boost!';}
+  else if(r<0.34){addCoins(300);msg='jackpot - 300 munten!';}
+  else if(r<0.70){const c=80+Math.floor(Math.random()*90);addCoins(c);msg=c+' munten!';}
+  else{const c=20+Math.floor(Math.random()*50);addCoins(c);msg=c+' munten.';}
   try{playSound&&playSound('coin');}catch(e){}
   showToast('Mystery box: '+msg,'#f5b301');
   try{trackEvent('shop_buy',{item:'mystery'});}catch(e){}
@@ -1041,7 +1041,7 @@ function buyTheme(id){
   if(!spendCoins(t.prijs)){showToast('Niet genoeg munten voor dit thema.','#ef4444');return;}
   const a=getOwnedThemes();a.push(id);try{localStorage.setItem('slagio_themes',JSON.stringify(a));}catch(e){}
   try{playSound&&playSound('coin');}catch(e){}
-  selectTheme(id);showToast('🎨 Thema ontgrendeld!','#22c55e');
+  selectTheme(id);showToast('Thema ontgrendeld!','#22c55e');
   try{trackEvent('shop_buy',{item:'theme',id});}catch(e){}
 }
 
@@ -1062,16 +1062,34 @@ const COSMETICS_VONK=[
   {id:'vk_party', naam:'Vonk feesthoed', emoji:'🥳', prijs:350},
   {id:'vk_scarf', naam:'Vonk sjaal',     emoji:'🧣', prijs:350},
 ];
+// Eigen SVG-iconen voor de winkel (viewBox 0 0 32 32) — vervangen de OS-emoji's.
+const _ICO={
+  coin:`<circle cx="16" cy="16" r="12.5" fill="#f6c026"/><circle cx="16" cy="16" r="12.5" fill="none" stroke="#e0a200" stroke-width="2"/><circle cx="16" cy="16" r="8.6" fill="none" stroke="#ffdd77" stroke-width="1.5"/><text x="16" y="20.6" font-size="12.5" font-weight="900" text-anchor="middle" fill="#fff" font-family="Arial,sans-serif">S</text><ellipse cx="12" cy="10.6" rx="3.2" ry="1.8" fill="#fff" opacity=".4"/>`,
+  freeze:`<g stroke="#38bdf8" stroke-width="2.2" stroke-linecap="round" fill="none"><path d="M16 4V28M6.4 10.4 25.6 21.6M25.6 10.4 6.4 21.6"/><path d="M16 8.5 13 5.8M16 8.5 19 5.8M16 23.5 13 26.2M16 23.5 19 26.2M9 12.2 9.3 8.7M9 12.2 5.6 12.6M23 19.8 22.7 23.3M23 19.8 26.4 19.4M23 12.2 22.7 8.7M23 12.2 26.4 12.6M9 19.8 5.6 19.4M9 19.8 9.3 23.3"/></g><circle cx="16" cy="16" r="2.4" fill="#0ea5e9"/>`,
+  bolt:`<path d="M18 3 8 17.5h5.4L11 29l11-15h-6l2-11z" fill="#f6c026" stroke="#e0a200" stroke-width="1.4" stroke-linejoin="round"/>`,
+  rocket:`<path d="M16 3c4.2 3.6 5.7 9.2 4.5 14.8l-1.4 2.7h-6.2l-1.4-2.7C10.3 12.2 11.8 6.6 16 3z" fill="#8b5cf6"/><circle cx="16" cy="12" r="3" fill="#fff"/><circle cx="16" cy="12" r="1.5" fill="#8b5cf6"/><path d="M11.6 18.5 8 22l1 1 3.4-1.6zM20.4 18.5 24 22l-1 1-3.4-1.6z" fill="#7c3aed"/><path d="M13 21h6l-3 6.5z" fill="#fbbf24"/>`,
+  gift:`<rect x="6" y="13" width="20" height="14.5" rx="2.5" fill="#ec4899"/><rect x="6" y="13" width="20" height="4.6" rx="2" fill="#db2777"/><rect x="13.4" y="9" width="5.2" height="18.5" fill="#f9a8d4"/><path d="M16 9C13.4 4.4 7.6 6.6 10.4 9zM16 9C18.6 4.4 24.4 6.6 21.6 9z" fill="#f472b6"/>`,
+};
+// Standalone winkel-icoontjes voor de Vonk-skins (viewBox 0 0 60 60).
+const _VK_ICON={
+  vk_glass:`<rect x="8" y="24" width="18" height="13" rx="6" fill="#20242e"/><rect x="34" y="24" width="18" height="13" rx="6" fill="#20242e"/><path d="M26 29 Q30 26 34 29" stroke="#20242e" stroke-width="2.6" fill="none"/><path d="M8 29 L3 26M52 29 L57 26" stroke="#20242e" stroke-width="2.4" stroke-linecap="round"/><ellipse cx="14" cy="28" rx="3.4" ry="2.1" fill="#fff" opacity=".25"/><ellipse cx="40" cy="28" rx="3.4" ry="2.1" fill="#fff" opacity=".25"/>`,
+  vk_crown:`<path d="M11 44 L17 22 L27 34 L30 15 L33 34 L43 22 L49 44 Z" fill="#f7ce46" stroke="#d99b12" stroke-width="1.9" stroke-linejoin="round"/><rect x="11" y="41" width="38" height="7" rx="3" fill="#edb21f" stroke="#d99b12" stroke-width="1.4"/><circle cx="30" cy="46" r="2.4" fill="#ef4444"/><circle cx="19" cy="46" r="1.9" fill="#3b82f6"/><circle cx="41" cy="46" r="1.9" fill="#22c55e"/>`,
+  vk_party:`<path d="M30 10 L45 47 L15 47 Z" fill="#f472b6" stroke="#db2777" stroke-width="1.9" stroke-linejoin="round"/><path d="M26 25 L34 25 L36 34 L24 34 Z" fill="#facc15"/><circle cx="30" cy="10" r="3.6" fill="#facc15" stroke="#f59e0b" stroke-width="1"/>`,
+  vk_scarf:`<path d="M12 24 Q30 39 48 24 L48 32 Q30 46 12 32 Z" fill="#e5484d"/><path d="M39 31 L49 51 L43 52 L35 33 Z" fill="#c93b3f"/>`,
+};
 // Hoofddeksels als SVG (viewBox 0 0 100 100), onder-in verankerd zodat ze op de
 // kop rusten wanneer de overlay op de bovenkant van de avatar wordt geplaatst.
 const _AV_SKIN_SVG={
-  av_cap:`<path d="M18 60 Q20 33 50 33 Q80 33 82 60 Z" fill="#2f7ff2"/><path d="M16 60 Q50 54 84 60 L88 69 Q50 63 12 69 Z" fill="#1f5fd0"/><circle cx="50" cy="33" r="3.6" fill="#1f5fd0"/>`,
-  av_crown:`<path d="M20 66 L29 40 L41 56 L50 33 L59 56 L71 40 L80 66 Z" fill="#f5c518" stroke="#d4a017" stroke-width="2"/><rect x="20" y="63" width="60" height="10" rx="3" fill="#e0a90f"/><circle cx="50" cy="37" r="3.2" fill="#ff5a7a"/><circle cx="30" cy="44" r="2.5" fill="#5b8def"/><circle cx="70" cy="44" r="2.5" fill="#5b8def"/>`,
-  av_party:`<path d="M50 16 L69 70 L31 70 Z" fill="#f472b6" stroke="#db2777" stroke-width="2"/><path d="M50 16 L58 38 L42 38 Z" fill="#facc15"/><circle cx="50" cy="15" r="4.6" fill="#facc15"/><circle cx="44" cy="60" r="2.6" fill="#fff" opacity=".85"/><circle cx="57" cy="52" r="2.1" fill="#fff" opacity=".7"/>`,
-  av_bow:`<path d="M50 60 L24 45 Q17 58 24 72 Z" fill="#ff5a7a"/><path d="M50 60 L76 45 Q83 58 76 72 Z" fill="#ff5a7a"/><path d="M50 60 L26 47 Q22 58 26 70 Z" fill="#e5484d" opacity=".35"/><circle cx="50" cy="60" r="7.5" fill="#e5484d"/>`,
-  av_flower:`<g fill="#ff6b9d"><ellipse cx="50" cy="40" rx="10" ry="12"/><ellipse cx="34" cy="54" rx="12" ry="10"/><ellipse cx="66" cy="54" rx="12" ry="10"/><ellipse cx="41" cy="70" rx="10" ry="12"/><ellipse cx="59" cy="70" rx="10" ry="12"/></g><circle cx="50" cy="55" r="8.5" fill="#facc15"/>`,
-  av_beanie:`<path d="M20 60 Q22 32 50 32 Q78 32 80 60 Z" fill="#7c3aed"/><path d="M20 58 Q35 52 50 52 Q65 52 80 58 L80 62 Q50 56 20 62 Z" fill="#5b21b6" opacity=".5"/><rect x="18" y="59" width="64" height="11" rx="5.5" fill="#5b21b6"/><circle cx="50" cy="30" r="5.5" fill="#a78bfa"/>`,
+  av_cap:`<path d="M14 63 Q16 29 50 29 Q84 29 86 63 Z" fill="#3b82f6"/><path d="M50 29 Q28 29 18 55 Q16 59 15 63 Q30 34 60 33 Q56 30 50 29Z" fill="#2b6fe0"/><path d="M12 62 Q50 55 88 62 Q90 71 84 72 Q50 64 16 72 Q10 71 12 62Z" fill="#1e5fd0"/><circle cx="50" cy="30" r="4" fill="#1e5fd0"/><ellipse cx="40" cy="42" rx="11" ry="6" fill="#fff" opacity=".18"/>`,
+  av_crown:`<path d="M18 64 L26 39 L39 55 L50 33 L61 55 L74 39 L82 64 Z" fill="#f7ce46" stroke="#d99b12" stroke-width="2.6" stroke-linejoin="round"/><rect x="17" y="61" width="66" height="10" rx="4" fill="#edb21f" stroke="#d99b12" stroke-width="2"/><circle cx="26" cy="39" r="3.4" fill="#fff3c4"/><circle cx="50" cy="33" r="3.8" fill="#fff3c4"/><circle cx="74" cy="39" r="3.4" fill="#fff3c4"/><circle cx="50" cy="66" r="3.4" fill="#ef4444"/><circle cx="33" cy="66" r="2.7" fill="#3b82f6"/><circle cx="67" cy="66" r="2.7" fill="#22c55e"/>`,
+  av_party:`<path d="M50 12 L71 68 L29 68 Z" fill="#f472b6" stroke="#db2777" stroke-width="2.2" stroke-linejoin="round"/><path d="M45 30 L55 30 L57 42 L43 42 Z" fill="#facc15"/><path d="M39 50 L61 50 L64 62 L36 62 Z" fill="#facc15" opacity=".95"/><circle cx="50" cy="12" r="5.4" fill="#facc15" stroke="#f59e0b" stroke-width="1.2"/>`,
+  av_bow:`<path d="M50 61 Q30 44 23 47 Q16 55 21 67 Q30 75 50 61Z" fill="#fb5a7a"/><path d="M50 61 Q70 44 77 47 Q84 55 79 67 Q70 75 50 61Z" fill="#fb5a7a"/><path d="M50 61 Q32 51 24 50 Q29 57 29 61 Q29 66 24 71 Q40 66 50 61Z" fill="#e5344f" opacity=".4"/><rect x="43" y="53" width="14" height="17" rx="5" fill="#e5344f"/><ellipse cx="50" cy="59" rx="4" ry="2" fill="#fff" opacity=".3"/>`,
+  av_flower:`<g><ellipse cx="50" cy="38" rx="10.5" ry="13" fill="#ff7aa8"/><ellipse cx="32" cy="52" rx="13" ry="10.5" fill="#ff7aa8"/><ellipse cx="68" cy="52" rx="13" ry="10.5" fill="#ff7aa8"/><ellipse cx="40" cy="71" rx="10.5" ry="13" fill="#ff6b9d"/><ellipse cx="60" cy="71" rx="10.5" ry="13" fill="#ff6b9d"/></g><circle cx="50" cy="55" r="9" fill="#ffd23f"/><circle cx="50" cy="55" r="9" fill="none" stroke="#f4b400" stroke-width="1.6"/><circle cx="47" cy="52" r="2.4" fill="#fff" opacity=".5"/>`,
+  av_beanie:`<path d="M18 62 Q20 30 50 30 Q80 30 82 62 Z" fill="#7c3aed"/><path d="M50 30 Q28 30 20 56 Q19 59 18 62 Q30 34 60 34 Q56 31 50 30Z" fill="#6d28d9"/><path d="M26 46 Q50 40 74 46" stroke="#6d28d9" stroke-width="3" fill="none"/><rect x="16" y="59" width="68" height="12" rx="6" fill="#5b21b6"/><circle cx="50" cy="27" r="6.2" fill="#c4b5fd"/>`,
 };
+// Klein SVG-icoontje renderen (uit _ICO).
+function _ico(name,size){size=size||18;const d=_ICO[name];if(!d)return '';return '<svg class="uico no-ico" viewBox="0 0 32 32" width="'+size+'" height="'+size+'" style="vertical-align:-.18em">'+d+'</svg>';}
+function _coinPrice(n){return '<span class="price-tag">'+_ico('coin',15)+n+'</span>';}
 // Per-dier ankerpunt van de KOP in de 60x60-tekenruimte van de avatar-SVG.
 // {y}=hoogte waar de onderkant van het hoofddeksel rust, {w}=kopbreedte, cx=30.
 // Zo zit een accessoire in exact dezelfde coördinaten als de art → pixel-perfect.
@@ -1090,13 +1108,18 @@ function getEquippedAv(){try{return localStorage.getItem('slagio_av_skin')||'';}
 function getEquippedVonk(){try{return localStorage.getItem('slagio_vonk_skin')||'';}catch(e){return '';}}
 // Gedragen accessoire voor de speler-avatar: getekend in de 60x60-ruimte van het
 // dier, op het kop-anker, zodat het exact op elke avatar past en meeschaalt.
-function avatarSkinHTML(animalId,stageIdx){
-  const id=getEquippedAv();const art=id&&_AV_SKIN_SVG[id];if(!art)return '';
+function _avAccOverlay(accId,animalId,stageIdx){
+  const art=accId&&_AV_SKIN_SVG[accId];if(!art)return '';
   const A=_AV_ANCHORS[animalId]||_AV_ANCHOR_DEF;
   const w=A.w, sc=w/100, tx=(30-50*sc).toFixed(2), ty=(A.y-70*sc).toFixed(2);
   return '<span class="av-skin no-ico"><svg viewBox="0 0 60 60" preserveAspectRatio="xMidYMid meet">'
     +'<g transform="translate('+tx+' '+ty+') scale('+sc.toFixed(3)+')">'+art+'</g></svg></span>';
 }
+function avatarSkinHTML(animalId,stageIdx){return _avAccOverlay(getEquippedAv(),animalId,stageIdx);}
+// Speler-avatar (huidige dier + fase). Voor previews in de winkel.
+function _myAnimal(){try{const p=JSON.parse(localStorage.getItem(PROF_KEY)||'{}');const xp=(typeof getTotalXP==='function')?getTotalXP():0;return {id:p.animalId||'vos',stage:(typeof getAnimalStageIdx==='function')?getAnimalStageIdx(xp):3};}catch(e){return {id:'vos',stage:3};}}
+function avatarPreviewHTML(accId,size){const a=_myAnimal();size=size||120;const base=(typeof getAnimalDisplay==='function')?getAnimalDisplay(a.id,a.stage,size):'';const ov=accId?_avAccOverlay(accId,a.id,a.stage):'';return '<span class="av-wrap" style="width:'+size+'px;height:'+size+'px">'+base+ov+'</span>';}
+function vonkPreviewHTML(accId,size){size=size||150;try{if(typeof _VONK_SKIN_PREVIEW!=='undefined')_VONK_SKIN_PREVIEW=accId||'';const svg=(typeof mascotSVG==='function')?mascotSVG('blij',size):'';if(typeof _VONK_SKIN_PREVIEW!=='undefined')_VONK_SKIN_PREVIEW='';return svg;}catch(e){try{_VONK_SKIN_PREVIEW='';}catch(_){}return '';}}
 function equipCosmetic(id){
   const isVonk=id.indexOf('vk_')===0;
   const key=isVonk?'slagio_vonk_skin':'slagio_av_skin';
@@ -1113,7 +1136,7 @@ function buyCosmetic(id){
   if(!spendCoins(c.prijs)){showToast('Niet genoeg munten voor deze skin.','#ef4444');return;}
   const a=getOwnedCosmetics();a.push(id);try{localStorage.setItem('slagio_cosmetics',JSON.stringify(a));}catch(e){}
   try{playSound&&playSound('coin');}catch(e){}
-  equipCosmetic(id);showToast('✨ Skin ontgrendeld en uitgerust!','#22c55e');
+  equipCosmetic(id);showToast('Skin ontgrendeld en uitgerust!','#22c55e');
   try{trackEvent('shop_buy',{item:'cosmetic',id});}catch(e){}
 }
 
@@ -1124,64 +1147,89 @@ function renderEconHome(){
   const coins=getCoins(), fr=getFreezes(), boosts=getXpBoosts(), dayOn=xpBoostDayActive();
   box.innerHTML=`<div class="econ-bar">
     <button class="econ-chip" onclick="openShop()" title="Open het winkeltje">
-      <span class="econ-ic no-ico">🪙</span><b>${coins}</b><span class="econ-lbl">munten</span></button>
+      ${_ico('coin',18)}<b>${coins}</b><span class="econ-lbl">munten</span></button>
     <button class="econ-chip" onclick="openShop()" title="Streak-freezes beschermen je streak">
-      <span class="econ-ic no-ico">🧊</span><b>${fr}</b><span class="econ-lbl">freeze${fr===1?'':'s'}</span></button>
-    ${(dayOn||boosts>0)?`<span class="econ-chip econ-chip-static" title="Dubbele XP actief"><span class="econ-ic no-ico">⚡</span><b>${dayOn?'24u':('×'+boosts)}</b><span class="econ-lbl">×2 XP</span></span>`:''}
+      ${_ico('freeze',18)}<b>${fr}</b><span class="econ-lbl">freeze${fr===1?'':'s'}</span></button>
+    ${(dayOn||boosts>0)?`<span class="econ-chip econ-chip-static" title="Dubbele XP actief">${_ico('bolt',18)}<b>${dayOn?'24u':('×'+boosts)}</b><span class="econ-lbl">×2 XP</span></span>`:''}
     <button class="econ-shop-btn" onclick="openShop()">Winkel →</button>
   </div>`;
+}
+// Metadata per winkel-item (power-ups, thema's, skins) → één bron voor tegels + preview.
+function _shopMeta(id){
+  const coins=getCoins();
+  if(id==='freeze')return{cat:'power',naam:'Streak-freeze',prijs:PRICE_FREEZE,ico:_ico('freeze',38),bigIco:'freeze',desc:'Beschermt je streak als je een dag mist. Wordt automatisch ingezet.',full:getFreezes()>=FREEZE_MAX,have:getFreezes()+'/'+FREEZE_MAX,buy:'buyFreeze()',canBuy:getFreezes()<FREEZE_MAX&&coins>=PRICE_FREEZE};
+  if(id==='xpboost')return{cat:'power',naam:'Dubbele XP',prijs:PRICE_XPBOOST,ico:_ico('bolt',38),bigIco:'bolt',desc:'Verdubbelt je XP bij je volgende snelle quiz.',have:getXpBoosts()>0?getXpBoosts()+' klaar':'',buy:'buyXpBoost()',canBuy:coins>=PRICE_XPBOOST};
+  if(id==='boost24')return{cat:'power',naam:'24u dubbele XP',prijs:PRICE_BOOST_DAY,ico:_ico('rocket',38),bigIco:'rocket',desc:'Alle XP telt 24 uur lang dubbel. Ideaal op een oefendag.',active:xpBoostDayActive(),have:xpBoostDayActive()?'Actief':'',buy:'buyXpBoostDay()',canBuy:!xpBoostDayActive()&&coins>=PRICE_BOOST_DAY};
+  if(id==='mystery')return{cat:'power',naam:'Mystery box',prijs:PRICE_MYSTERY,ico:_ico('gift',38),bigIco:'gift',desc:'Een verrassing: munten, een boost of zelfs een streak-freeze.',buy:'buyMysteryBox()',canBuy:coins>=PRICE_MYSTERY};
+  const t=THEMES.find(x=>x.id===id);
+  if(t)return{cat:'theme',naam:t.naam,prijs:t.prijs,hex:t.hex,ico:'<span class="sw-ico" style="background:'+t.hex+'"></span>',desc:'Kleurt de hele app in de kleur '+t.naam.toLowerCase()+'.',owned:themeOwned(id),active:getSelectedTheme()===id,buy:"buyTheme('"+id+"')",canBuy:themeOwned(id)||coins>=t.prijs};
+  const c=_cosmeticById(id);
+  if(c){const isVk=id.indexOf('vk_')===0;
+    const ico=isVk?('<svg class="cos-ico no-ico" viewBox="2 8 56 44">'+_VK_ICON[id]+'</svg>'):('<svg class="cos-ico no-ico" viewBox="8 10 84 66">'+_AV_SKIN_SVG[id]+'</svg>');
+    return{cat:isVk?'vk':'av',naam:c.naam,prijs:c.prijs,ico:ico,desc:isVk?'Zet dit accessoire op Vonk.':'Zet dit accessoire op je eigen avatar.',owned:cosmeticOwned(id),active:(isVk?getEquippedVonk():getEquippedAv())===id,buy:"buyCosmetic('"+id+"')",canBuy:cosmeticOwned(id)||coins>=c.prijs};}
+  return null;
+}
+function _shopTile(id){
+  const m=_shopMeta(id);if(!m)return '';
+  let chip;
+  if(m.active)chip='<span class="st-chip st-on">Op</span>';
+  else if(m.full)chip='<span class="st-chip st-own">Vol</span>';
+  else if(m.owned)chip='<span class="st-chip st-own">In bezit</span>';
+  else chip=_coinPrice(m.prijs);
+  return `<button class="shop-tile${m.active?' shop-tile-on':''}" onclick="openItemPreview('${id}')">
+    <span class="st-ic">${m.ico}</span>
+    <span class="st-name">${m.naam}</span>
+    <span class="st-foot">${chip}</span></button>`;
 }
 function renderShop(){
   const box=document.getElementById('shop-body');
   if(!box)return;
-  const coins=getCoins(), fr=getFreezes(), boosts=getXpBoosts(), dayOn=xpBoostDayActive();
-  const item=(ic,name,have,desc,price,canBuy,fn,ownedLabel)=>`
-    <div class="shop-item">
-      <div class="shop-ic no-ico">${ic}</div>
-      <div class="shop-info"><div class="shop-name">${name}${have?`<span class="shop-have">${have}</span>`:''}</div>
-        <div class="shop-desc">${desc}</div></div>
-      <button class="shop-buy${canBuy?'':' disabled'}" ${canBuy?'':'disabled'} onclick="${fn}">${ownedLabel||`<span class="econ-ic no-ico">🪙</span> ${price}`}</button>
-    </div>`;
-  const powerups=
-    item('🧊','Streak-freeze',`${fr}/${FREEZE_MAX}`,'Beschermt je streak als je een dag mist. Automatisch ingezet.',PRICE_FREEZE, fr<FREEZE_MAX&&coins>=PRICE_FREEZE,'buyFreeze()', fr>=FREEZE_MAX?'Vol':'')+
-    item('⚡','Dubbele XP',boosts>0?`${boosts} klaar`:'','Verdubbelt je XP bij je volgende snelle quiz.',PRICE_XPBOOST, coins>=PRICE_XPBOOST,'buyXpBoost()','')+
-    item('🚀','24u dubbele XP',dayOn?'actief':'','Alle XP telt 24 uur lang dubbel - ideaal op een oefendag.',PRICE_BOOST_DAY, !dayOn&&coins>=PRICE_BOOST_DAY,'buyXpBoostDay()', dayOn?'Actief':'')+
-    item('🎁','Mystery box','','Een verrassing: munten, een boost of zelfs een streak-freeze.',PRICE_MYSTERY, coins>=PRICE_MYSTERY,'buyMysteryBox()','');
-  const sel=getSelectedTheme();
-  const themes=THEMES.map(t=>{
-    const owned=themeOwned(t.id), active=sel===t.id;
-    const label=active?'In gebruik':(owned?'Kies':`<span class="econ-ic no-ico">🪙</span> ${t.prijs}`);
-    const cls='shop-tbtn'+(active?' shop-tbtn-active':(owned?' shop-tbtn-own':''))+((!owned&&coins<t.prijs)?' disabled':'');
-    return `<div class="shop-theme">
-      <span class="shop-sw" style="background:${t.hex}"></span>
-      <span class="shop-theme-name">${t.naam}</span>
-      <button class="${cls}" ${(!owned&&coins<t.prijs)?'disabled':''} onclick="buyTheme('${t.id}')">${label}</button>
-    </div>`;
-  }).join('');
+  const tiles=ids=>ids.map(_shopTile).join('');
   box.innerHTML=`
-    <div class="shop-balance"><span class="econ-ic no-ico">🪙</span> <b>${coins}</b> munten</div>
-    <p class="shop-hint">Verdien munten door quizzen te maken - hoe beter je scoort, hoe meer je krijgt.</p>
+    <div class="shop-balance">${_ico('coin',22)} <b>${getCoins()}</b> munten</div>
+    <p class="shop-hint">Verdien munten door quizzen te maken. Hoe beter je scoort, hoe meer je krijgt. Tik op een item voor een preview.</p>
     <div class="shop-cat">Power-ups</div>
-    ${powerups}
+    <div class="shop-grid">${tiles(['freeze','xpboost','boost24','mystery'])}</div>
     <div class="shop-cat">Thema's <span class="shop-cat-sub">kleur de hele app</span></div>
-    <div class="shop-themes">${themes}</div>
+    <div class="shop-grid">${tiles(THEMES.map(t=>t.id))}</div>
     <div class="shop-cat">Avatar-skins <span class="shop-cat-sub">accessoire voor je dier</span></div>
-    <div class="shop-themes">${_cosList(COSMETICS_AV,getEquippedAv(),coins)}</div>
+    <div class="shop-grid">${tiles(COSMETICS_AV.map(c=>c.id))}</div>
     <div class="shop-cat">Vonk-skins <span class="shop-cat-sub">geef Vonk een nieuwe look</span></div>
-    <div class="shop-themes">${_cosList(COSMETICS_VONK,getEquippedVonk(),coins)}</div>
-    <p class="shop-foot">Meer volgt. Nieuwe skins en items voegen we geregeld toe. 🦊</p>`;
+    <div class="shop-grid">${tiles(COSMETICS_VONK.map(c=>c.id))}</div>
+    <p class="shop-foot">Meer volgt. Nieuwe skins en items voegen we geregeld toe.</p>`;
 }
-function _cosList(list,equippedId,coins){
-  return list.map(c=>{
-    const owned=cosmeticOwned(c.id), active=equippedId===c.id;
-    const label=active?'Op':(owned?'Draag':`<span class="econ-ic no-ico">🪙</span> ${c.prijs}`);
-    const cls='shop-tbtn'+(active?' shop-tbtn-active':(owned?' shop-tbtn-own':''))+((!owned&&coins<c.prijs)?' disabled':'');
-    return `<div class="shop-theme">
-      <span class="shop-cos no-ico">${c.emoji}</span>
-      <span class="shop-theme-name">${c.naam}</span>
-      <button class="${cls}" ${(!owned&&coins<c.prijs)?'disabled':''} onclick="buyCosmetic('${c.id}')">${label}</button>
+// Tik op item → preview (op je eigen avatar / Vonk) met koop- of draagknop.
+function openItemPreview(id){
+  const m=_shopMeta(id);if(!m)return;
+  let preview;
+  if(m.cat==='av')preview=avatarPreviewHTML(id,134);
+  else if(m.cat==='vk')preview='<div class="pv-vonk">'+vonkPreviewHTML(id,152)+'</div>';
+  else if(m.cat==='theme')preview='<span class="pv-swatch" style="background:'+m.hex+'"></span>';
+  else preview='<span class="pv-ico">'+_ico(m.bigIco,76)+'</span>';
+  let btn;
+  if(m.active&&m.cat==='theme')btn='<button class="pv-buy pv-owned" disabled>In gebruik</button>';
+  else if(m.active)btn='<button class="pv-buy pv-owned" onclick="pvAction(\''+id+'\')">Afzetten</button>';
+  else if(m.full)btn='<button class="pv-buy" disabled>Maximum bereikt</button>';
+  else if(m.owned)btn='<button class="pv-buy" onclick="pvAction(\''+id+'\')">'+(m.cat==='theme'?'Gebruiken':'Dragen')+'</button>';
+  else btn='<button class="pv-buy'+(m.canBuy?'':' disabled')+'" '+(m.canBuy?'':'disabled')+' onclick="pvAction(\''+id+'\')">Kopen · '+_coinPrice(m.prijs)+'</button>';
+  let el=document.getElementById('shop-preview');
+  if(!el){el=document.createElement('div');el.id='shop-preview';document.body.appendChild(el);}
+  el.innerHTML=`<div class="pv-back" onclick="closePreview()"></div>
+    <div class="pv-card" role="dialog">
+      <button class="pv-x" onclick="closePreview()" aria-label="Sluiten">✕</button>
+      <div class="pv-stage pv-stage-${m.cat}">${preview}</div>
+      <div class="pv-name">${m.naam}</div>
+      <div class="pv-desc">${m.desc}</div>
+      <div class="pv-foot">${btn}</div>
     </div>`;
-  }).join('');
+  requestAnimationFrame(()=>el.classList.add('on'));
+}
+function closePreview(){const el=document.getElementById('shop-preview');if(el)el.classList.remove('on');}
+function pvAction(id){
+  const m=_shopMeta(id);if(!m)return;
+  try{(new Function(m.buy))();}catch(e){}
+  if(id==='mystery'){closePreview();return;}   // beloning verschijnt als melding
+  openItemPreview(id);                          // ververs met nieuwe staat
 }
 function startStreakQuiz(){
   const mijn=JSON.parse(localStorage.getItem('examenapp_'+lvlCol('mijnvakken'))||'[]');
