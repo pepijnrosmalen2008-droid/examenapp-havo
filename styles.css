@@ -875,11 +875,12 @@ html.dark .qb{background:#2e3550}
 .oC{background:#d97706;color:#fff}
 .oD{background:#16a34a;color:#fff}
 .oi{width:26px;height:26px;border-radius:8px;background:rgba(255,255,255,.2);display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:800;flex-shrink:0;margin-top:1px}
-.opt.correct{background:#22c55e!important;color:#fff;outline:none;transform:scale(1.04);box-shadow:0 8px 32px rgba(34,197,94,0.55);animation:optPop .45s cubic-bezier(.34,1.5,.64,1)}
-@keyframes optPop{0%{transform:scale(1)}40%{transform:scale(1.12)}70%{transform:scale(1.02)}100%{transform:scale(1.04)}}
+.opt.correct{background:#22c55e!important;color:#fff;outline:none;transform:scale(1.04);box-shadow:0 8px 32px rgba(34,197,94,0.55);animation:optPop .52s cubic-bezier(.4,0,.2,1)}
+@keyframes optPop{0%{transform:scale(1)}12%{transform:scale(.955)}42%{transform:scale(1.11)}64%{transform:scale(.998)}82%{transform:scale(1.052)}100%{transform:scale(1.04)}}
 .opt.wrong{opacity:0.35;transform:scale(0.97)}
 .opt.was-correct{background:#22c55e!important;color:#fff;opacity:0.65}
-.qfb{background:rgba(255,255,255,.07);border-radius:14px;padding:14px 18px;margin-bottom:16px;animation:fi .2s}
+.qfb{background:rgba(255,255,255,.07);border-radius:14px;padding:14px 18px;margin-bottom:16px;animation:qfbUp .36s cubic-bezier(.34,1.45,.64,1)}
+@keyframes qfbUp{0%{opacity:0;transform:translateY(14px) scale(.98)}55%{opacity:1;transform:translateY(-2px) scale(1)}100%{opacity:1;transform:translateY(0)}}
 .fbt{font-weight:700;font-size:15px;margin-bottom:3px;font-family:var(--font-head)}
 .fbtx{font-size:13px;color:rgba(255,255,255,.55);line-height:1.6}
 .fbok .fbt{color:#4ADE80}
@@ -6686,3 +6687,13 @@ html.dark .dom-hero-card{background:linear-gradient(180deg,rgba(255,255,255,.045
 .hm-fb-badge{animation:badgeRing 2.2s ease-in-out infinite}
 @keyframes badgeRing{0%,100%{box-shadow:0 0 0 0 rgba(239,68,68,.5)}50%{box-shadow:0 0 0 5px rgba(239,68,68,0)}}
 @media(prefers-reduced-motion:reduce){#sc-leaderboard .lb-row,.hm-fb-badge{animation:none}}
+
+/* ══ Resultaatscherm: georkestreerde entree (Duolingo-cascade) ══ */
+@keyframes resPop{0%{opacity:0;transform:scale(.3)}55%{opacity:1;transform:scale(1.14)}78%{transform:scale(.97)}100%{opacity:1;transform:scale(1)}}
+@keyframes resItemIn{0%{opacity:0;transform:translateY(14px)}100%{opacity:1;transform:none}}
+#sc-res.on .remi{animation:resPop .6s cubic-bezier(.34,1.56,.64,1) .08s backwards}
+#sc-res.on #rtit{animation:resItemIn .5s cubic-bezier(.22,1,.36,1) .18s backwards}
+#sc-res.on #rsub{animation:resItemIn .5s cubic-bezier(.22,1,.36,1) .24s backwards}
+#sc-res.on .sring{animation:resItemIn .55s cubic-bezier(.22,1,.36,1) .3s backwards}
+#sc-res.on .rbd{animation:resItemIn .5s cubic-bezier(.22,1,.36,1) .42s backwards}
+@media(prefers-reduced-motion:reduce){#sc-res.on .remi,#sc-res.on #rtit,#sc-res.on #rsub,#sc-res.on .sring,#sc-res.on .rbd{animation:none}}
