@@ -6290,3 +6290,9 @@ html.dark .dom-hero-card{background:linear-gradient(180deg,rgba(255,255,255,.045
 .pv-buy.disabled{background:var(--bo);color:var(--mu);box-shadow:none;cursor:default}
 .pv-buy.pv-owned{background:var(--s);color:var(--or);border:1.5px solid var(--or);box-shadow:none}
 .pv-buy .price-tag{color:#fff}
+
+/* Segmented control: Weekwedstrijd | Topscores (divisie ↔ leaderboard) */
+.cmp-tabs{display:flex;gap:4px;background:rgba(127,127,127,.1);border:1px solid var(--bo);border-radius:14px;padding:4px;max-width:340px;margin:0 auto 16px}
+.cmp-tab{flex:1;border:none;background:transparent;color:var(--mu);font-family:var(--font-head,inherit);font-weight:800;font-size:13px;padding:9px 10px;border-radius:11px;cursor:pointer;transition:background .15s,color .15s,box-shadow .15s}
+.cmp-tab.on{background:var(--s);color:var(--dk);box-shadow:0 2px 8px rgba(0,0,0,.08)}
+.cmp-tab:not(.on):hover{color:var(--dk)}

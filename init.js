@@ -429,7 +429,6 @@ function openNavSheet(){
       ['🔄','Herhalen',"openHerhalen()"],
       ['🛒','Winkel',"openShop()"],
       ['🛡️','Divisie',"openLeague()"],
-      ['🏆','Leaderboard',"show('sc-leaderboard');renderLeaderboard()"],
       ['👥','Groep',"show('sc-groep');renderGroepScreen()"],
     ];
     ov.innerHTML='<div class="nav-sheet no-ico" onclick="event.stopPropagation()">'
