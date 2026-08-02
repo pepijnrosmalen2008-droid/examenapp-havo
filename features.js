@@ -1512,7 +1512,9 @@ function getSmartNextAction(vakId,domeinId,score){
 // De "Welkom terug!" comeback-popup is bewust weggehaald. Deze stub zorgt dat
 // de bestaande aanroepen (init.js, quiz.js, state.js) veilig blijven werken en
 // dat de container leeg blijft.
+// Terugkeer-kaart: gedelegeerd naar de slimme notificatie-motor (notif-engine.js).
 function renderComebackCard(){
+  try{if(typeof renderNotifReturnCard==='function')return renderNotifReturnCard();}catch(e){}
   const el=document.getElementById('comeback-card-home');
   if(el)el.innerHTML='';
 }

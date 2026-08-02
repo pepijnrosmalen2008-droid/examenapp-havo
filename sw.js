@@ -1,5 +1,5 @@
-const CACHE = 'slagio-v442';
-const ASSETS = ['/', '/index.html', '/over-ons.html', '/faq.html', '/privacy.html', '/styles.css', '/data.js', '/data-havo.meta.js', '/data-vwo.meta.js', '/state.js', '/mascotte.js', '/cloud.js', '/profile.js', '/vak.js', '/quiz.js', '/tools.js', '/sim.js', '/lb.js', '/features.js', '/league.js', '/schedule.js', '/foutenboek.js', '/herhalen.js', '/v4.js', '/zoek.js', '/klas.js', '/init.js', '/sam-anim.js', '/sam-clip.js', '/ico-swap.js', '/examens.js', '/ce_data.js', '/manifest.json', '/icon-192.png', '/icon-512.png', '/logo.svg', '/apple-touch-icon.png'];
+const CACHE = 'slagio-v443';
+const ASSETS = ['/', '/index.html', '/over-ons.html', '/faq.html', '/privacy.html', '/styles.css', '/data.js', '/data-havo.meta.js', '/data-vwo.meta.js', '/state.js', '/mascotte.js', '/cloud.js', '/profile.js', '/vak.js', '/quiz.js', '/tools.js', '/sim.js', '/lb.js', '/features.js', '/league.js', '/schedule.js', '/foutenboek.js', '/herhalen.js', '/v4.js', '/zoek.js', '/klas.js', '/notif-engine.js', '/init.js', '/sam-anim.js', '/sam-clip.js', '/ico-swap.js', '/examens.js', '/ce_data.js', '/manifest.json', '/icon-192.png', '/icon-512.png', '/logo.svg', '/apple-touch-icon.png'];
 
 self.addEventListener('install', e => {
   e.waitUntil(caches.open(CACHE).then(c => c.addAll(ASSETS)));
@@ -118,6 +118,14 @@ async function _triggerDailyNotif() {
     title = `â° Nog ${cfg.examDays} dag${cfg.examDays === 1 ? '' : 'en'}!`;
     body = `Je volgende examen is over ${cfg.examDays} dag${cfg.examDays === 1 ? '' : 'en'}. Vlug even oefenen?`;
     url = '/?start=quiz';
+  }
+
+  // Voorkeur: het slim vooraf berekende bericht van de app (notif-engine.js).
+  // De SW is "dom" en toont precies wat het brein besliste; de teksten hierboven
+  // zijn enkel fallback voor oude configs zonder payload.
+  if (cfg.payload && cfg.payload.title) {
+    title = cfg.payload.title;
+    body = cfg.payload.body || body;
   }
 
   await self.registration.showNotification(title, {

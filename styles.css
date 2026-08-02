@@ -3981,6 +3981,36 @@ html.dark .hsd-pill{background:var(--bg2);border-color:var(--bo2)}
 /* klikbare pagina-verwijzing in Vonk's tekst */
 .vonk-link{color:var(--or);font-weight:800;text-decoration:underline;text-underline-offset:2px;cursor:pointer}
 .vonk-link:hover{filter:brightness(.9)}
+/* ── Terugkeer-kaart (slimme notificatie-motor): Vonk + bericht + één-tik-actie ── */
+#comeback-card-home:empty{display:none}
+.return-card{position:relative;display:flex;gap:14px;align-items:center;
+  background:linear-gradient(135deg,color-mix(in srgb,var(--or) 13%,var(--s)),var(--s) 68%);
+  border:1px solid color-mix(in srgb,var(--or) 32%,var(--bo));border-radius:20px;
+  padding:16px 18px;margin:14px 0 4px;box-shadow:0 12px 30px -16px rgba(0,0,0,.35);
+  animation:rcIn .5s cubic-bezier(.22,1,.36,1) both}
+.return-card.rc-guilt{background:linear-gradient(135deg,color-mix(in srgb,#6b7280 12%,var(--s)),var(--s) 70%);
+  border-color:color-mix(in srgb,#6b7280 26%,var(--bo))}
+@keyframes rcIn{0%{opacity:0;transform:translateY(12px) scale(.97)}100%{opacity:1;transform:none}}
+.return-vonk{flex:none;width:74px;height:74px;display:grid;place-items:center}
+.return-vonk .m-svg{width:74px;height:74px}
+.return-body{flex:1;min-width:0}
+.return-title{font-family:var(--font-head,inherit);font-size:16px;font-weight:800;color:var(--dk);line-height:1.2}
+.return-sub{font-size:13.5px;color:var(--mu);margin-top:3px;line-height:1.45}
+.return-cta{margin-top:12px;display:inline-flex;align-items:center;gap:7px;border:none;border-radius:11px;
+  padding:9px 16px;cursor:pointer;font-family:var(--font);font-size:13.5px;font-weight:800;color:#fff;
+  background:linear-gradient(135deg,color-mix(in srgb,var(--or) 90%,#000 5%),var(--or));
+  box-shadow:0 4px 14px color-mix(in srgb,var(--or) 40%,transparent);transition:transform .12s,filter .12s}
+.return-cta:hover{filter:brightness(1.06)}
+.return-cta:active{transform:scale(.97)}
+.return-card.rc-guilt .return-cta{background:linear-gradient(135deg,color-mix(in srgb,var(--or) 82%,#000 6%),var(--or))}
+.return-cta svg{transition:transform .15s}
+.return-cta:hover svg{transform:translateX(3px)}
+.return-x{position:absolute;top:9px;right:11px;background:none;border:none;cursor:pointer;
+  font-size:14px;line-height:1;color:var(--mu);opacity:.55;padding:5px}
+.return-x:hover{opacity:1}
+@media(max-width:640px){.return-vonk{width:58px;height:58px}.return-vonk .m-svg{width:58px;height:58px}
+  .return-card{padding:14px 15px;gap:11px}.return-title{font-size:15px}}
+@media(prefers-reduced-motion:reduce){.return-card{animation:none}}
 /* juich-armpjes (mood 'feest') */
 .m-cheer-l{transform-origin:40px 80px;animation:mCheer .5s ease-in-out infinite}
 .m-cheer-r{transform-origin:80px 80px;animation:mCheer .5s ease-in-out .13s infinite}

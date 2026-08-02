@@ -881,7 +881,10 @@ function _sendNotifData(reg){
     const tgt=typeof getCountdownTarget==='function'?getCountdownTarget():null;
     let examDays=null;
     if(tgt?.datum){const d=Math.ceil((new Date(tgt.datum)-new Date())/86400000);if(d>0&&d<=30)examDays=d;}
-    reg.active?.postMessage({type:'NOTIF_CONFIG',config:{enabled:true,streak,examDays,lastShown:null}});
+    // Slim, vooraf berekend bericht meesturen: de SW is "dom" en toont precies
+    // dít wanneer periodicSync vuurt (geen dubbele logica in de service worker).
+    let payload=null;try{if(typeof notifPayload==='function')payload=notifPayload();}catch(e){}
+    reg.active?.postMessage({type:'NOTIF_CONFIG',config:{enabled:true,streak,examDays,payload,lastShown:null}});
   }catch{}
 }
 
@@ -901,10 +904,16 @@ function _checkInAppNotif(){
   if(Date.now()-last<20*3600000)return;
   const today=new Date();today.setHours(0,0,0,0);
   const todayStr=today.toISOString().slice(0,10);
-  if((getStreak().days||[]).includes(todayStr))return;
-  const cur=calcStreak().current;if(cur<1)return;
-  const title='Slagio 📚';
-  const body=`Je hebt een streak van ${cur} dag${cur===1?'':'en'}! Oefen vandaag om hem te bewaren. 🔥`;
+  if((getStreak().days||[]).includes(todayStr))return; // al geoefend vandaag
+  // Slim bericht via de motor; alleen sturen als het relevant genoeg is (prio ≥ 35).
+  let title,body;
+  let n=null;try{if(typeof pickNotif==='function')n=pickNotif();}catch(e){}
+  if(n&&n.prio>=35){title='Slagio · '+n.title;body=n.body;}
+  else{
+    const cur=calcStreak().current;if(cur<1)return;
+    title='Slagio 📚';
+    body=`Je hebt een streak van ${cur} dag${cur===1?'':'en'}! Oefen vandaag om hem te bewaren. 🔥`;
+  }
   // Gebruik altijd de SW-route: werkt op iOS standalone én desktop Chrome/Firefox
   _showNotifViaReg(title,body).then(ok=>{
     if(ok)localStorage.setItem('slagio_notif_shown',String(Date.now()));
