@@ -1228,6 +1228,7 @@ function toonRes(){
   try{
     const xpEl=document.getElementById('res-xp-card');
     if(xpEl)xpEl.remove();
+    const _rlEl0=document.getElementById('res-league');if(_rlEl0)_rlEl0.innerHTML='';
     if(ST.mode==='snel'&&ST.xpThisRound>0){
       if(isPerfect)ST.xpThisRound=Math.round(ST.xpThisRound*1.5);
       // Dubbele-XP-boost verzilveren: 24u-boost heeft voorrang, anders een los token.
@@ -1277,6 +1278,8 @@ function toonRes(){
         ${isPerfect?`<div class="perfect-banner">🌟 Perfecte score! +50% XP bonus verdiend!</div>`:''}`;
       const rbdEl2=document.getElementById('rbd');
       if(rbdEl2)rbdEl2.insertAdjacentElement('afterend',card);
+      // Divisie-widget: hoe ben je gestegen na deze quiz? (weekXP is al bijgewerkt in addXP)
+      try{if(typeof renderResultLeague==='function'&&!ST.isFoutenboek)renderResultLeague(res.added);}catch(e){}
       if(res.leveled){setTimeout(()=>{try{slagioVlagUit('levelup');}catch(e){try{launchConfetti();}catch(_){}}},300);setTimeout(()=>playSound('levelup'),400);haptic([50,30,80,30,120]);}
       else if(isPerfect){setTimeout(()=>{try{slagioVlagUit('perfect');}catch(e){}},300);}
       setTimeout(()=>floatXP(res.added),150);

@@ -161,6 +161,77 @@ function _lgResultBanner(r){
 }
 function _lgSeen(){const L=getLeague();if(L&&L.result){L.result.seen=true;_saveLeague(L);}try{renderLeagueHome();}catch(e){}}
 
+// ── Resultaat-widget (na een quiz): hoe ben je gestegen in de divisie? ──
+// weekXP bevat op dit punt AL de zojuist behaalde XP (leagueAddXP loopt in addXP),
+// dus reken de "vorige" stand terug door xpGained af te trekken.
+function leagueRankInfo(xpGained){
+  const L=ensureLeague();
+  const div=LEAGUE_DIVISIONS[L.division];
+  const prog=_lgWeekProgress();
+  const botXP=(L.cohort||[]).map(b=>Math.round(b.target*Math.min(1,prog*b.front)));
+  const total=botXP.length+1;
+  const nowXP=L.weekXP||0;
+  const beforeXP=Math.max(0,nowXP-(xpGained||0));
+  // Rank identiek aan _lgStandings: bij gelijke XP staan bots bóven jou (>=).
+  const rankFor=meXP=>1+botXP.reduce((n,x)=>n+(x>=meXP?1:0),0);
+  const rankNow=rankFor(nowXP);
+  const rankBefore=rankFor(beforeXP);
+  // XP tot de eerstvolgende speler bóven je.
+  const above=botXP.filter(x=>x>nowXP).sort((a,b)=>a-b);
+  const toNext=above.length?(above[0]-nowXP+1):0;
+  return {div,divIndex:L.division,rankNow,rankBefore,total,nowXP,xpGained:xpGained||0,
+    toNext,promo:rankNow<=LEAGUE_PROMO,demote:rankNow>(total-LEAGUE_DEMOTE),climbed:rankBefore-rankNow};
+}
+
+function renderResultLeague(xpGained){
+  const box=document.getElementById('res-league');
+  if(!box)return;
+  let info;try{info=leagueRankInfo(xpGained);}catch(e){box.innerHTML='';return;}
+  const {div,rankNow,rankBefore,total,xpGained:gained,toNext,promo,demote,climbed}=info;
+  const zone=promo?'<span class="rl-zone rl-zone-up">Promotiezone</span>'
+    :(demote?'<span class="rl-zone rl-zone-dn">Degradatiezone</span>':'<span class="rl-zone rl-zone-safe">Veilig</span>');
+  const climbLine=climbed>0
+    ?`<div class="rl-climb rl-climb-up"><span class="rl-arrow">▲</span> ${climbed} plek${climbed===1?'':'ken'} gestegen</div>`
+    :(promo?`<div class="rl-climb rl-climb-hold">Je staat in de promotiezone!</div>`
+      :(toNext>0?`<div class="rl-climb rl-climb-hold">Nog <b>${toNext} XP</b> tot #${rankNow-1}</div>`
+        :`<div class="rl-climb rl-climb-hold">+${gained} XP toegevoegd</div>`));
+  box.innerHTML=`
+  <div class="rl-card" style="--lg-col:${div.kleur}">
+    <div class="rl-head">
+      <span class="rl-badge no-ico">${div.ic}</span>
+      <div class="rl-head-txt">
+        <div class="rl-div">${div.naam}-divisie</div>
+        <div class="rl-sub">Weekwedstrijd${zone}</div>
+      </div>
+      <div class="rl-xp">+${gained}<span>XP</span></div>
+    </div>
+    <div class="rl-rankrow">
+      <div class="rl-rank">#<span class="rl-rank-num">${rankBefore}</span></div>
+      <div class="rl-of">van ${total}</div>
+      ${climbLine}
+    </div>
+    <button class="rl-cta" onclick="openLeague()">Bekijk divisie <span>→</span></button>
+  </div>`;
+  // Rangnummer laten "oplopen" van vorige stand naar nu (met pop bij aankomst).
+  const numEl=box.querySelector('.rl-rank-num');
+  const card=box.querySelector('.rl-card');
+  if(numEl && rankNow!==rankBefore){
+    const from=rankBefore,to=rankNow,steps=Math.abs(from-to);
+    const dur=Math.min(1100,320+steps*130);const t0=performance.now();
+    const tick=now=>{
+      const p=Math.min(1,(now-t0)/dur);
+      const eased=1-Math.pow(1-p,2);
+      const val=Math.round(from+(to-from)*eased);
+      numEl.textContent=val;
+      if(p<1)requestAnimationFrame(tick);
+      else{numEl.textContent=to;card&&card.classList.add('rl-pop');}
+    };
+    setTimeout(()=>requestAnimationFrame(tick),450);
+  }else if(numEl){
+    setTimeout(()=>{card&&card.classList.add('rl-pop');},450);
+  }
+}
+
 // ── Volledig bord ──
 function openLeague(){show('sc-league');renderLeague();}
 function renderLeague(){

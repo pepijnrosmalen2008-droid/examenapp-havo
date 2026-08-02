@@ -3918,17 +3918,25 @@ html.dark .hsd-pill{background:var(--bg2);border-color:var(--bo2)}
 /* ── Mascotte "Vonk" - herbruikbaar, levendig (SVG-animaties, .m-*) ── */
 .m-svg{overflow:visible;display:block}
 /* idle: zachtjes deinen + af en toe een klein huppeltje, in één timeline */
-.m-fig{transform-origin:60px 110px;animation:mIdle 5.6s ease-in-out infinite}
+.m-fig{transform-origin:60px 110px;animation:mIdle 5s ease-in-out infinite}
+/* idle: levendig deinen + squash-and-stretch huppeltjes + kwispel-wiggle (Duolingo-stijl) */
 @keyframes mIdle{
-  0%{transform:translateY(0) rotate(-1.2deg)}
-  18%{transform:translateY(-3px) rotate(1.2deg)}
-  36%{transform:translateY(0) rotate(-1.2deg)}
-  54%{transform:translateY(-3px) rotate(1.2deg)}
-  70%{transform:translateY(0) rotate(0)}
-  80%{transform:translateY(-10px) rotate(0)}
-  86%{transform:translateY(0) rotate(0)}
-  90%{transform:translateY(-4px)}
-  94%,100%{transform:translateY(0) rotate(-1.2deg)}}
+  0%{transform:translateY(0) rotate(-1.6deg) scale(1,1)}
+  9%{transform:translateY(-4px) rotate(1.6deg) scale(.985,1.03)}
+  18%{transform:translateY(0) rotate(-1.6deg) scale(1.02,.98)}
+  27%{transform:translateY(-4px) rotate(1.6deg) scale(.985,1.03)}
+  36%{transform:translateY(0) rotate(0) scale(1.03,.96)}
+  /* grote hop met anticipatie + stretch + landing-squash */
+  42%{transform:translateY(3px) rotate(0) scale(1.09,.89)}
+  53%{transform:translateY(-17px) rotate(-2deg) scale(.9,1.13)}
+  62%{transform:translateY(0) rotate(0) scale(1.12,.86)}
+  68%{transform:translateY(0) rotate(0) scale(1,1)}
+  /* kleine tweede hop + wiggle */
+  74%{transform:translateY(-8px) rotate(3.5deg) scale(.96,1.06)}
+  80%{transform:translateY(0) rotate(0) scale(1.05,.95)}
+  86%{transform:translateY(-2px) rotate(-3deg)}
+  92%{transform:translateY(0) rotate(2.4deg)}
+  100%{transform:translateY(0) rotate(-1.6deg) scale(1,1)}}
 .m-wave{transform-origin:80px 82px;animation:mWave 2.8s ease-in-out infinite}
 @keyframes mWave{0%,66%,100%{transform:rotate(0)}78%{transform:rotate(-30deg)}86%{transform:rotate(10deg)}92%{transform:rotate(-20deg)}}
 .m-tail{transform-origin:45px 94px;animation:mTail 1.5s ease-in-out infinite}
@@ -3946,8 +3954,14 @@ html.dark .hsd-pill{background:var(--bg2);border-color:var(--bo2)}
 @keyframes mBlink{0%,93%,100%{transform:scaleY(1)}96.5%{transform:scaleY(.08)}}
 .m-spark{transform-origin:60px 18px;animation:mSpark 1.8s ease-in-out infinite}
 @keyframes mSpark{0%,100%{opacity:.4;transform:scale(.85) rotate(0)}50%{opacity:1;transform:scale(1.2) rotate(20deg)}}
-.m-shadow{fill:rgba(0,0,0,.16);transform-origin:60px 114px;animation:mShadow 5.6s ease-in-out infinite}
-@keyframes mShadow{0%,100%{transform:scaleX(1);opacity:.5}18%,54%{transform:scaleX(.9);opacity:.4}80%{transform:scaleX(1.12);opacity:.28}}
+.m-shadow{fill:rgba(0,0,0,.16);transform-origin:60px 114px;animation:mShadow 5s ease-in-out infinite}
+@keyframes mShadow{
+  0%,100%{transform:scaleX(1);opacity:.5}
+  9%,27%{transform:scaleX(.93);opacity:.43}
+  42%{transform:scaleX(1.16);opacity:.55}
+  53%{transform:scaleX(.7);opacity:.22}
+  62%{transform:scaleX(1.2);opacity:.55}
+  74%{transform:scaleX(.85);opacity:.34}}
 /* praten: statische mond weg; drie mondvormen wisselen af (realistischer) */
 .m-mouth-talk{opacity:0}
 .m-mouth-talk .mt,.m-mouth-talk .mt-tongue{opacity:0}
@@ -6216,6 +6230,55 @@ html.dark .dom-hero-card{background:linear-gradient(180deg,rgba(255,255,255,.045
 .lg-result-dn{background:rgba(229,72,77,.1);color:var(--dk);border:1px solid rgba(229,72,77,.28)}
 .lg-result-safe{background:rgba(127,127,127,.1);color:var(--dk);border:1px solid var(--bo)}
 .lg-result .lg-x{position:absolute;right:12px;top:50%;transform:translateY(-50%);opacity:.5;font-size:13px}
+/* ── Resultaat-scherm divisie-widget (na een quiz) ── */
+.res-league{max-width:520px;margin:14px auto 0}
+.res-league:empty{display:none}
+.rl-card{position:relative;overflow:hidden;border-radius:20px;padding:16px 16px 14px;
+  background:linear-gradient(150deg,color-mix(in srgb,var(--lg-col,#e8a91d) 20%,var(--s)),var(--s) 62%);
+  border:1px solid color-mix(in srgb,var(--lg-col,#e8a91d) 35%,var(--bo));
+  box-shadow:0 10px 28px color-mix(in srgb,var(--lg-col,#e8a91d) 22%,transparent);
+  animation:rlIn .5s cubic-bezier(.22,1,.36,1) both}
+.rl-card::before{content:'';position:absolute;left:-40%;top:-60%;width:80%;height:140%;
+  background:linear-gradient(90deg,transparent,rgba(255,255,255,.22),transparent);
+  transform:skewX(-18deg);animation:rlShine 1.1s ease .5s both}
+@keyframes rlIn{0%{opacity:0;transform:translateY(14px) scale(.96)}100%{opacity:1;transform:translateY(0) scale(1)}}
+@keyframes rlShine{0%{left:-45%}100%{left:130%}}
+.rl-head{display:flex;align-items:center;gap:12px}
+.rl-badge{width:44px;height:44px;border-radius:13px;display:grid;place-items:center;flex-shrink:0;font-size:25px;line-height:1;
+  background:color-mix(in srgb,var(--lg-col,#e8a91d) 24%,transparent);
+  box-shadow:0 2px 8px color-mix(in srgb,var(--lg-col,#e8a91d) 30%,transparent);
+  animation:rlBadge .6s cubic-bezier(.34,1.56,.64,1) .2s both}
+@keyframes rlBadge{0%{transform:scale(0) rotate(-25deg)}100%{transform:scale(1) rotate(0)}}
+.rl-head-txt{flex:1;min-width:0}
+.rl-div{font-family:var(--font-head,inherit);font-size:16px;font-weight:800;color:var(--dk);line-height:1.1}
+.rl-sub{display:flex;align-items:center;gap:8px;font-size:12px;color:var(--mu);margin-top:3px}
+.rl-zone{font-size:10px;font-weight:800;text-transform:uppercase;letter-spacing:.3px;border-radius:20px;padding:2px 8px}
+.rl-zone-up{color:#0f9d58;background:rgba(15,157,88,.15)}
+.rl-zone-dn{color:#e5484d;background:rgba(229,72,77,.15)}
+.rl-zone-safe{color:var(--mu);background:rgba(127,127,127,.14)}
+.rl-xp{font-size:20px;font-weight:900;color:var(--lg-col,#e8a91d);line-height:1;flex-shrink:0;text-align:right}
+.rl-xp span{display:block;font-size:9.5px;font-weight:800;letter-spacing:1px;opacity:.7;margin-top:1px}
+.rl-rankrow{display:flex;align-items:baseline;gap:8px;margin-top:13px;flex-wrap:wrap}
+.rl-rank{font-family:var(--font-head,inherit);font-size:34px;font-weight:900;color:var(--dk);line-height:1;letter-spacing:-1px}
+.rl-rank-num{display:inline-block;min-width:.7em}
+.rl-of{font-size:13px;color:var(--mu);font-weight:600}
+.rl-card.rl-pop .rl-rank{animation:rlPop .42s cubic-bezier(.34,1.56,.64,1)}
+@keyframes rlPop{0%{transform:scale(1)}45%{transform:scale(1.22)}100%{transform:scale(1)}}
+.rl-climb{margin-left:auto;font-size:13px;font-weight:800;display:flex;align-items:center;gap:5px}
+.rl-climb-up{color:#0f9d58}
+.rl-climb-up .rl-arrow{display:inline-block;animation:rlArrow 1s ease .6s 2}
+@keyframes rlArrow{0%,100%{transform:translateY(0)}50%{transform:translateY(-4px)}}
+.rl-climb-hold{color:var(--mu);font-weight:600}
+.rl-climb-hold b{color:var(--dk);font-weight:800}
+.rl-cta{width:100%;margin-top:14px;border:none;border-radius:12px;padding:11px 0;cursor:pointer;
+  font-family:var(--font);font-size:13.5px;font-weight:800;color:#fff;
+  background:linear-gradient(135deg,color-mix(in srgb,var(--lg-col,#e8a91d) 88%,#000 4%),var(--lg-col,#e8a91d));
+  box-shadow:0 4px 14px color-mix(in srgb,var(--lg-col,#e8a91d) 40%,transparent);transition:transform .12s,filter .12s}
+.rl-cta:hover{filter:brightness(1.05)}
+.rl-cta:active{transform:scale(.98)}
+.rl-cta span{display:inline-block;transition:transform .15s}
+.rl-cta:hover span{transform:translateX(3px)}
+@media(prefers-reduced-motion:reduce){.rl-card,.rl-badge,.rl-card::before,.rl-climb-up .rl-arrow,.rl-card.rl-pop .rl-rank{animation:none}}
 /* Bord */
 .lg-wrap{max-width:640px;margin:0 auto;padding:12px 14px 90px}
 .lg-intro{text-align:center;margin:6px 0 16px}
