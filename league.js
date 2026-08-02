@@ -75,7 +75,7 @@ function _lgAvatar(r){
   let inner='';
   if(r.animalId&&typeof getAnimalDisplay==='function'){try{inner=getAnimalDisplay(r.animalId,r.stage||0,26);}catch(e){}}
   if(!inner)inner='<span style="font-size:22px">'+(r.me?'⭐':'🦊')+'</span>';
-  if(r.me&&typeof avatarSkinHTML==='function'){try{const sk=avatarSkinHTML(r.animalId,r.stage);if(sk)return '<span class="av-wrap">'+inner+sk+'</span>';}catch(e){}}
+  if(r.me&&typeof avatarSkinHTML==='function'){try{const sk=avatarSkinHTML(r.animalId,r.stage,26);if(sk)return '<span class="av-wrap">'+inner+sk+'</span>';}catch(e){}}
   return inner;
 }
 

@@ -783,20 +783,16 @@
 <!-- SNEL NAAR - één helder menu naar alle pagina's -->
 <div class="w">
   <div class="hm-menu">
-    <button class="hm-menu-tile" onclick="show('sc-studieplan');renderStudieplan()"><span class="hm-menu-ic">📅</span>Studieplan</button>
-    <button class="hm-menu-tile" onclick="openRapport()"><span class="hm-menu-ic">📊</span>Voortgang</button>
-    <button class="hm-menu-tile" onclick="show('sc-schedule')"><span class="hm-menu-ic">📄</span>Examens</button>
-    <button class="hm-menu-tile" onclick="show('sc-calc');setTimeout(prefillCalcFromSaved,50)"><span class="hm-menu-ic">🧮</span>Cijfers<span class="hm-menu-sub" id="hm-cijfer-sub"></span></button>
-    <button class="hm-menu-tile" onclick="openFoutenboek()"><span class="hm-fb-badge" id="fb-home-badge" style="display:none">0</span><span class="hm-menu-ic">📕</span>Foutenboek</button>
-    <button class="hm-menu-tile" onclick="openHerhalen()"><span class="hm-menu-ic">🔄</span>Herhalen</button>
-    <button class="hm-menu-tile" onclick="show('sc-leaderboard');renderLeaderboard()"><span class="hm-menu-ic">🏆</span>Leaderboard</button>
-    <button class="hm-menu-tile" onclick="openLeague()"><span class="hm-menu-ic">🛡️</span>Divisie</button>
-    <button class="hm-menu-tile" onclick="openShop()"><span class="hm-menu-ic">🛒</span>Winkel</button>
-    <button class="hm-menu-tile" onclick="show('sc-groep');renderGroepScreen()"><span class="hm-menu-ic">👥</span>Groep</button>
+    <button class="hm-menu-tile hmc-plan" onclick="show('sc-studieplan');renderStudieplan()"><span class="hm-menu-ic">📅</span>Studieplan</button>
+    <button class="hm-menu-tile hmc-prog" onclick="openRapport()"><span class="hm-menu-ic">📊</span>Voortgang</button>
+    <button class="hm-menu-tile hmc-exam" onclick="show('sc-schedule')"><span class="hm-menu-ic">📄</span>Examens</button>
+    <button class="hm-menu-tile hmc-cijf" onclick="show('sc-calc');setTimeout(prefillCalcFromSaved,50)"><span class="hm-menu-ic">🧮</span>Cijfers<span class="hm-menu-sub" id="hm-cijfer-sub"></span></button>
   </div>
+  <!-- Overige onderdelen (foutenboek, herhalen, leaderboard, divisie, winkel, groep) achter één menuknop. Leaderboard blijft bereikbaar: show('sc-leaderboard') -->
   <button class="hm-menu-open no-ico" onclick="openNavSheet()" aria-label="Open menu">
+    <span class="hm-fb-badge" id="fb-home-badge" style="display:none">0</span>
     <svg viewBox="0 0 24 24" width="19" height="19" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><line x1="4" y1="7" x2="20" y2="7"/><line x1="4" y1="12" x2="20" y2="12"/><line x1="4" y1="17" x2="20" y2="17"/></svg>
-    Menu - alle onderdelen
+    Meer · winkel, divisie, leaderboard &amp; meer
   </button>
 </div>
 

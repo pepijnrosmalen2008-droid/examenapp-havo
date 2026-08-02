@@ -105,9 +105,10 @@ try {
   hardHide ? bad('.hm-sociaal-section wordt met display:none!important verborgen — leaderboard onbereikbaar op mobiel')
            : ok('.hm-sociaal-section niet hard verborgen (leaderboard bereikbaar op mobiel)');
   const idx = read('index.html');
-  idx.includes("show('sc-leaderboard')") && idx.includes('hm-menu')
-    ? ok('home heeft leaderboard-knop in het menu-grid (.hm-menu)')
-    : bad('leaderboard-knop ontbreekt in het home-menu (.hm-menu) in index.html');
+  const initjs = read('init.js');
+  idx.includes('hm-menu') && (idx.includes("show('sc-leaderboard')") || initjs.includes("show('sc-leaderboard')"))
+    ? ok('leaderboard bereikbaar vanuit het home-menu of het "Meer"-menu')
+    : bad('leaderboard-knop ontbreekt in het home-menu / Meer-menu');
 } catch (e) { bad('CSS/leaderboard-check mislukt: ' + e.message); }
 
 // 5b. Leaderboard-bots: alle vulbots zijn mens-achtig (dier-avatar + stage +

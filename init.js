@@ -427,6 +427,8 @@ function openNavSheet(){
       ['🧮','Cijfers',"show('sc-calc');setTimeout(prefillCalcFromSaved,50)"],
       ['📕','Foutenboek',"openFoutenboek()"],
       ['🔄','Herhalen',"openHerhalen()"],
+      ['🛒','Winkel',"openShop()"],
+      ['🛡️','Divisie',"openLeague()"],
       ['🏆','Leaderboard',"show('sc-leaderboard');renderLeaderboard()"],
       ['👥','Groep',"show('sc-groep');renderGroepScreen()"],
     ];

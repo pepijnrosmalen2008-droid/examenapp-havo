@@ -3384,12 +3384,18 @@ html.dark .hsd-pill{background:var(--bg2);border-color:var(--bo2)}
 .hm-menu-sub{font-size:10px;font-weight:800;color:var(--or);margin-top:-1px}
 .hm-menu-sub:empty{display:none}
 .hm-menu-tile .hm-fb-badge{top:6px;right:6px}
+/* De 4 primaire tegels krijgen elk een eigen kleur; de rest zit achter "Meer". */
+.hmc-plan{--c:#2f7ff2}.hmc-prog{--c:#1f9d57}.hmc-exam{--c:#8b5cf6}.hmc-cijf{--c:#f2760c}
+.hm-menu-tile[class*="hmc-"]{background:color-mix(in srgb,var(--c) 9%,var(--s));border-color:color-mix(in srgb,var(--c) 26%,var(--bo))}
+.hm-menu-tile[class*="hmc-"] .hm-menu-ic{color:var(--c)}
+.hm-menu-tile[class*="hmc-"]:hover{border-color:var(--c);box-shadow:0 6px 16px color-mix(in srgb,var(--c) 22%,transparent)}
 @media(max-width:520px){.hm-menu{gap:7px}.hm-menu-tile{min-height:74px;border-radius:16px;font-size:11px;padding:11px 4px}.hm-menu-ic{font-size:21px}}
-@media(max-width:360px){.hm-menu{grid-template-columns:repeat(3,1fr)}}
-/* Menu-knop (mobiel): tegels weg, één knop die de lijst opent */
-.hm-menu-open{display:none;align-items:center;justify-content:center;gap:9px;width:100%;padding:14px;border:1.5px solid var(--bo);border-radius:15px;background:var(--s);color:var(--dk);font-family:var(--font-head);font-weight:800;font-size:14px;cursor:pointer;box-shadow:0 1px 3px rgba(16,24,40,.05);-webkit-tap-highlight-color:transparent}
+@media(max-width:380px){.hm-menu{grid-template-columns:repeat(2,1fr)}}
+/* "Meer"-knop: altijd zichtbaar, opent de volledige menulijst */
+.hm-menu-open{position:relative;display:flex;align-items:center;justify-content:center;gap:9px;width:100%;padding:13px;margin-top:8px;border:1.5px solid var(--bo);border-radius:15px;background:var(--s);color:var(--dk);font-family:var(--font-head);font-weight:800;font-size:13.5px;cursor:pointer;box-shadow:0 1px 3px rgba(16,24,40,.05);-webkit-tap-highlight-color:transparent;transition:border-color .18s}
+.hm-menu-open:hover{border-color:var(--or)}
 .hm-menu-open:active{transform:scale(.98)}
-@media(max-width:640px){.hm-menu{display:none}.hm-menu-open{display:flex}}
+.hm-menu-open .hm-fb-badge{position:absolute;top:-6px;right:12px}
 /* Bottom-sheet menu-lijst */
 .nav-sheet-ov{position:fixed;inset:0;z-index:6000;background:rgba(15,15,25,.5);opacity:0;pointer-events:none;transition:opacity .25s;display:flex;align-items:flex-end}
 .nav-sheet-ov.open{opacity:1;pointer-events:all}
@@ -6265,7 +6271,7 @@ html.dark .dom-hero-card{background:linear-gradient(180deg,rgba(255,255,255,.045
 .st-own{color:var(--mu);background:rgba(127,127,127,.14)}
 .sw-ico{width:36px;height:36px;border-radius:50%;display:inline-block;box-shadow:0 2px 7px rgba(0,0,0,.2),0 0 0 1px rgba(0,0,0,.06) inset}
 
-#shop-preview{position:fixed;inset:0;z-index:120;display:none}
+#shop-preview{position:fixed;inset:0;z-index:9000;display:none}
 #shop-preview.on{display:block}
 .pv-back{position:absolute;inset:0;background:rgba(10,15,25,.5);-webkit-backdrop-filter:blur(3px);backdrop-filter:blur(3px)}
 .pv-card{position:absolute;left:50%;bottom:0;transform:translateX(-50%);width:100%;max-width:420px;background:var(--s);border-radius:26px 26px 0 0;padding:26px 22px calc(26px + env(safe-area-inset-bottom));text-align:center;box-shadow:0 -12px 40px rgba(0,0,0,.25);animation:pvUp .28s cubic-bezier(.22,1,.36,1)}
