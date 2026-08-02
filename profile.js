@@ -326,13 +326,13 @@ function getAnimalEmoji(animalId,totalXP){
   return a.s[Math.min(idx,a.s.length-1)];
 }
 // Geeft HTML terug: SVG voor custom dieren, emoji-span voor normale
-function getAnimalDisplay(animalId,stageIdx,size,accHTML){
-  size=size||48; accHTML=accHTML||'';
-  // Accessoire wordt BINNEN de wrap gezet zodat het elke transform (idle-
-  // animatie + klik) exact meemaakt. Wrap dan relatief + overflow zichtbaar.
-  const _accExtra=accHTML?';position:relative;overflow:visible':'';
+function getAnimalDisplay(animalId,stageIdx,size,accSvg){
+  size=size||48; accSvg=accSvg||'';
+  // accSvg is een SVG-<g>-fragment (accessoire) dat we IN dezelfde <svg> van het
+  // dier injecteren, zodat het exact hetzelfde element is dat transformeert →
+  // idle-animatie én klik lopen 100% synchroon, geen aparte compositielaag.
   const a=getAnimalById(animalId);
-  if(!a)return'<span style="font-size:'+size+'px'+(accHTML?';position:relative;display:inline-block':'')+'">🐾'+accHTML+'</span>';
+  if(!a)return'<span style="font-size:'+size+'px">🐾</span>';
   // Ultiem (laatste rang) krijgt een subtiele klasse-hook voor extra glans
   // (géén metaal-ring meer - de ultieme vorm onderscheidt zich door zijn eigen art).
   // Twee toptiers: Goud (voorlaatste) = vergulde mascotte, Ultiem (laatste) =
@@ -346,11 +346,13 @@ function getAnimalDisplay(animalId,stageIdx,size,accHTML){
   if(a.svg){
     const svgIdx=Math.min(stageIdx,a.svg.length-1);
     if(a.svg[svgIdx]){
-      return'<span class="anim-svg-wrap'+tierCls+moveCls+'" style="width:'+size+'px;height:'+size+'px'+_accExtra+'">'+a.svg[svgIdx]+accHTML+'</span>';
+      let svg=a.svg[svgIdx];
+      if(accSvg) svg=svg.replace(/<\/svg>\s*$/i, accSvg+'</svg>');
+      return'<span class="anim-svg-wrap'+tierCls+moveCls+'" style="width:'+size+'px;height:'+size+'px">'+svg+'</span>';
     }
   }
   const sIdx=Math.min(stageIdx,a.s.length-1);
-  return'<span style="font-size:'+size+'px;line-height:1'+(accHTML?';position:relative;display:inline-block':'')+'">'+a.s[sIdx]+accHTML+'</span>';
+  return'<span style="font-size:'+size+'px;line-height:1">'+a.s[sIdx]+'</span>';
 }
 function buildRegisterAnimalPicker(){
   const grid=document.getElementById('reg-animal-grid');

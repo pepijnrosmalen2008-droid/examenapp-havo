@@ -1108,18 +1108,18 @@ function getEquippedAv(){try{return localStorage.getItem('slagio_av_skin')||'';}
 function getEquippedVonk(){try{return localStorage.getItem('slagio_vonk_skin')||'';}catch(e){return '';}}
 // Gedragen accessoire voor de speler-avatar: getekend in de 60x60-ruimte van het
 // dier, op het kop-anker, zodat het exact op elke avatar past en meeschaalt.
-function _avAccOverlay(accId,animalId,stageIdx){
+// Accessoire als SVG-<g>-fragment in de 60x60-ruimte van het dier. Wordt door
+// getAnimalDisplay IN dezelfde <svg> geïnjecteerd → transformeert als één geheel.
+function _avAccGroup(accId,animalId){
   const art=accId&&_AV_SKIN_SVG[accId];if(!art)return '';
   const A=_AV_ANCHORS[animalId]||_AV_ANCHOR_DEF;
   const w=A.w, sc=w/100, tx=(30-50*sc).toFixed(2), ty=(A.y-70*sc).toFixed(2);
-  // Wordt binnen de avatar-wrap gezet (via getAnimalDisplay) → erft elke transform.
-  return '<span class="av-skin no-ico"><svg viewBox="0 0 60 60" preserveAspectRatio="xMidYMid meet">'
-    +'<g transform="translate('+tx+' '+ty+') scale('+sc.toFixed(3)+')">'+art+'</g></svg></span>';
+  return '<g class="av-acc" transform="translate('+tx+' '+ty+') scale('+sc.toFixed(3)+')">'+art+'</g>';
 }
-function avatarSkinHTML(animalId,stageIdx){return _avAccOverlay(getEquippedAv(),animalId,stageIdx);}
+function avatarSkinHTML(animalId,stageIdx){return _avAccGroup(getEquippedAv(),animalId);}
 // Speler-avatar (huidige dier + fase). Voor previews in de winkel.
 function _myAnimal(){try{const p=JSON.parse(localStorage.getItem(PROF_KEY)||'{}');const xp=(typeof getTotalXP==='function')?getTotalXP():0;return {id:p.animalId||'vos',stage:(typeof getAnimalStageIdx==='function')?getAnimalStageIdx(xp):3};}catch(e){return {id:'vos',stage:3};}}
-function avatarPreviewHTML(accId,size){const a=_myAnimal();size=size||120;const ov=accId?_avAccOverlay(accId,a.id,a.stage):'';return (typeof getAnimalDisplay==='function')?getAnimalDisplay(a.id,a.stage,size,ov):'';}
+function avatarPreviewHTML(accId,size){const a=_myAnimal();size=size||120;const ov=accId?_avAccGroup(accId,a.id):'';return (typeof getAnimalDisplay==='function')?getAnimalDisplay(a.id,a.stage,size,ov):'';}
 function vonkPreviewHTML(accId,size){size=size||150;try{if(typeof _VONK_SKIN_PREVIEW!=='undefined')_VONK_SKIN_PREVIEW=accId||'';const svg=(typeof mascotSVG==='function')?mascotSVG('blij',size):'';if(typeof _VONK_SKIN_PREVIEW!=='undefined')_VONK_SKIN_PREVIEW='';return svg;}catch(e){try{_VONK_SKIN_PREVIEW='';}catch(_){}return '';}}
 function equipCosmetic(id){
   const isVonk=id.indexOf('vk_')===0;
