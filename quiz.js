@@ -1278,8 +1278,9 @@ function toonRes(){
         ${isPerfect?`<div class="perfect-banner">🌟 Perfecte score! +50% XP bonus verdiend!</div>`:''}`;
       const rbdEl2=document.getElementById('rbd');
       if(rbdEl2)rbdEl2.insertAdjacentElement('afterend',card);
-      // Divisie-widget: hoe ben je gestegen na deze quiz? (weekXP is al bijgewerkt in addXP)
-      try{if(typeof renderResultLeague==='function'&&!ST.isFoutenboek)renderResultLeague(res.added);}catch(e){}
+      // Divisie-widget: hoe ben je gestegen na deze quiz? (weekXP is al bijgewerkt in addXP;
+      // _lgLastDelta is de werkelijk toegevoegde week-XP - dubbel tijdens een rush-venster.)
+      try{if(typeof renderResultLeague==='function'&&!ST.isFoutenboek)renderResultLeague((typeof _lgLastDelta!=='undefined'&&_lgLastDelta)||res.added);}catch(e){}
       if(res.leveled){setTimeout(()=>{try{slagioVlagUit('levelup');}catch(e){try{launchConfetti();}catch(_){}}},300);setTimeout(()=>playSound('levelup'),400);haptic([50,30,80,30,120]);}
       else if(isPerfect){setTimeout(()=>{try{slagioVlagUit('perfect');}catch(e){}},300);}
       setTimeout(()=>floatXP(res.added),150);

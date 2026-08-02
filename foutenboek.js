@@ -392,7 +392,7 @@ function openVonkCoach(ctx) {
       <div class="vc-body" id="vc-body">
         <div class="vc-q">${_fbEsc(ctx.v || '')}</div>
         <div class="vc-ans">
-          <span class="vc-a vc-a-wrong"><b>Jouw antwoord</b>${_fbEsc(ctx.chosen || '—')}</span>
+          <span class="vc-a vc-a-wrong"><b>Jouw antwoord</b>${_fbEsc(ctx.chosen || '-')}</span>
           <span class="vc-a vc-a-right"><b>Juist</b>${_fbEsc(juist)}</span>
         </div>
         <div class="vc-why"><span class="vc-why-lbl">Waarom ging dit fout?</span><span class="vc-why-tx">${_fbEsc(why)}</span></div>
@@ -434,7 +434,7 @@ function vonkCoachAnswer(btn, ok) {
   } else {
     btn.classList.add('vc-opt-no');
     opts.forEach(b => { if (b.textContent === _vcCorrectText) b.classList.add('vc-opt-ok'); });
-    if (res) res.innerHTML = `<div class="vc-bad">Nog niet — het juiste antwoord staat groen. Kijk nog eens naar de uitleg hierboven, je pakt 'm de volgende keer.</div>`;
+    if (res) res.innerHTML = `<div class="vc-bad">Nog niet - het juiste antwoord staat groen. Kijk nog eens naar de uitleg hierboven, je pakt 'm de volgende keer.</div>`;
     try { if (typeof playSound === 'function') playSound('wrong'); } catch (e) {}
   }
 }

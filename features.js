@@ -1357,12 +1357,12 @@ function _streakWeekHTML(info){
     const isDone=done.has(ds), isFrozen=!isDone&&frozen.has(ds);
     if(isDone||isFrozen)doneCount++;
     const state=isDone?'done':isFrozen?'frozen':isToday?'today':isFuture?'future':'missed';
-    const inner=isDone?_FLAME_MINI:(isFrozen?(typeof _ico==='function'?_ico('freeze',15):'❄'):'');
+    const inner=isDone?_FLAME_MINI:(isFrozen?(typeof _ico==='function'?_ico('freeze',13):'❄'):'');
     cells+=`<div class="pw-cell pw-${state}" style="--i:${i}"><div class="pw-pip">${inner}</div><div class="pw-lbl">${labels[i]}</div></div>`;
   }
   const perfect=doneCount===7;
-  const caption=perfect?'Perfecte week! Alle zeven dagen.':(doneCount+' / 7 dagen deze week');
-  return {html:`<div class="pw-wrap${perfect?' pw-perfect':''}"><div class="pw-week">${cells}</div><div class="pw-caption">${caption}</div></div>`, perfect, doneCount};
+  const label=perfect?'Perfecte week · 7/7':('Deze week · '+doneCount+'/7');
+  return {html:`<div class="pw-wrap${perfect?' pw-perfect':''}"><div class="pw-week">${cells}</div><div class="pw-label-row"><span class="pw-count">${label}</span></div></div>`, perfect, doneCount};
 }
 
 // Detecteer een recent verbroken streak die de moeite van herstellen waard is.
@@ -1389,7 +1389,7 @@ function _streakRepairHTML(b){
   const freeze=(typeof getFreezes==='function')&&getFreezes()>0;
   const cost=PRICE_REPAIR*b.missedDays;
   const sub=freeze?'Herstel ’m gratis met een streak-freeze en ga verder waar je was.'
-    :`Herstel ’m voor ${cost} munten — één keer per breuk.`;
+    :`Herstel ’m voor ${cost} munten - één keer per breuk.`;
   const btn=freeze?'Gratis herstellen'
     :`Herstel voor ${cost} ${typeof _ico==='function'?_ico('coin',15):'🪙'}`;
   return `<div class="streak-repair" role="group" aria-label="Streak herstellen">
@@ -1422,7 +1422,7 @@ function repairStreak(){
   try{if(typeof launchConfetti==='function')launchConfetti('gold');}catch(e){}
   try{if(typeof vonkReact==='function')vonkReact('feest','Streak hersteld!');}catch(e){}
   let restored=0;try{restored=calcStreak().current;}catch(e){}
-  showToast('🔥 Streak hersteld — '+restored+' dagen!','#22c55e',3000);
+  showToast('🔥 Streak hersteld - '+restored+' dagen!','#22c55e',3000);
   renderStreak();try{renderEconHome();}catch(e){}
 }
 function dismissRepair(){

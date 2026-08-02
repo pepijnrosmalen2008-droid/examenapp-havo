@@ -65,7 +65,7 @@ function _klasStartHtml(){
     <button class="klas-btn klas-btn-primary" onclick="klasDoeMee()">Meedoen →</button>
     <div id="klas-join-err" class="klas-err"></div>
   </div>
-  <p class="klas-doc-link">Ben je docent en wil je een klas aanmaken? Dat regel je op <a href="/vakken/slagio-school.html">Slagio School</a> — daar open je het docentenportaal en maak je gratis een klas aan.</p>`;
+  <p class="klas-doc-link">Ben je docent en wil je een klas aanmaken? Dat regel je op <a href="/vakken/slagio-school.html">Slagio School</a>, daar open je het docentenportaal en maak je gratis een klas aan.</p>`;
 }
 
 // ── Leerling sluit zich aan ───────────────────────────────────

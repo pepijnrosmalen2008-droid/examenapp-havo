@@ -124,13 +124,90 @@ function _lgStandings(L,progOverride){
   return rows;
 }
 
-// Aangeroepen vanuit addXP(): telt je XP mee in de weekstand.
+// ── RUSH-VENSTER: dagelijks één uur dubbele week-XP (deterministisch per dag). ──
+// Geeft een reden om nú te openen. Het startuur varieert per dag (seeded), zodat
+// het speciaal blijft, maar is vooraf zichtbaar zodat je het kunt plannen.
+function leagueRushInfo(){
+  const now=new Date();
+  const dayKey=now.toISOString().slice(0,10);
+  const rng=_lgRng(_lgHash('rush|'+dayKey));
+  const startHour=15+Math.floor(rng()*6);            // 15:00–20:00
+  const start=new Date(now);start.setHours(startHour,0,0,0);
+  const end=new Date(start.getTime()+3600000);
+  const active=now>=start&&now<end;
+  const upcoming=now<start;
+  return {active,upcoming,startHour,start,end,
+    minsLeft:active?Math.max(1,Math.ceil((end-now)/60000)):0,
+    startsInMin:upcoming?Math.ceil((start-now)/60000):0};
+}
+// Compacte rush-chip (actief / straks vandaag). Leeg als het venster voorbij is.
+function leagueRushChip(){
+  const r=leagueRushInfo();
+  if(r.active)return `<div class="lg-rush lg-rush-on"><span class="lg-rush-bolt">⚡</span><b>Dubbele XP actief</b><span class="lg-rush-t">nog ${r.minsLeft} min</span></div>`;
+  if(r.upcoming)return `<div class="lg-rush lg-rush-soon"><span class="lg-rush-bolt">⚡</span>Dubbele XP vandaag om <b>${String(r.startHour).padStart(2,'0')}:00</b></div>`;
+  return '';
+}
+
+// Laatst toegevoegde week-XP-delta (na rush-verdubbeling) - voor de resultaat-widget.
+var _lgLastDelta=0;
+// Aangeroepen vanuit addXP(): telt je XP mee in de weekstand (dubbel tijdens rush).
 function leagueAddXP(amount){
   if(!amount)return;
   const L=ensureLeague();
-  L.weekXP=(L.weekXP||0)+amount;
+  let delta=amount;
+  try{if(leagueRushInfo().active)delta=amount*2;}catch(e){}
+  _lgLastDelta=delta;
+  L.weekXP=(L.weekXP||0)+delta;
   _saveLeague(L);
   try{renderLeagueHome();}catch(e){}
+}
+
+// ── WEEK-CEREMONIE: de wekelijkse promotie/degradatie-onthulling (één keer). ──
+var _lgCeremonyDone=false;
+function _lgMaybeCeremony(){
+  if(_lgCeremonyDone)return;
+  const L=getLeague();
+  if(!L||!L.result||L.result.seen)return;
+  if(!L.result.promoted&&!L.result.relegated)return;   // "gelijk gebleven" → kleine banner volstaat
+  _lgCeremonyDone=true;
+  setTimeout(()=>{try{showLeagueCeremony(L.result);}catch(e){}},600);
+}
+function showLeagueCeremony(r){
+  if(document.getElementById('lg-ceremony'))return;
+  const up=!!r.promoted;
+  const div=LEAGUE_DIVISIONS[r.newDiv]||LEAGUE_DIVISIONS[0];
+  const el=document.createElement('div');
+  el.id='lg-ceremony';el.className='lgc-overlay';
+  el.innerHTML=`<div class="lgc-card ${up?'lgc-up':'lgc-dn'}" style="--lg-col:${div.kleur}">
+    <div class="lgc-rays" aria-hidden="true"></div>
+    <div class="lgc-badge no-ico">${div.ic}</div>
+    <div class="lgc-kicker">${up?'Gepromoveerd':'Nieuwe start'}</div>
+    <div class="lgc-title">${up?'Welkom in de '+div.naam+'-divisie':'Je zakt naar '+div.naam}</div>
+    <div class="lgc-sub">${up?'Je eindigde vorige week #'+r.rank+'. Sterk gewerkt!':'Deze week pak je het terug - jij kan dit.'}</div>
+    <button class="lgc-cta" onclick="_lgCeremonyClose(true)">Bekijk mijn divisie</button>
+    <button class="lgc-skip" onclick="_lgCeremonyClose(false)">Sluiten</button>
+  </div>`;
+  document.body.appendChild(el);
+  requestAnimationFrame(()=>el.classList.add('show'));
+  if(up){try{playSound('levelup');}catch(e){}try{if(typeof launchConfetti==='function')launchConfetti('gold');}catch(e){}try{haptic&&haptic([50,30,80,30,120]);}catch(e){}}
+  else{try{playSound('complete');}catch(e){}}
+}
+function _lgCeremonyClose(go){
+  const el=document.getElementById('lg-ceremony');
+  if(el){el.classList.remove('show');setTimeout(()=>el.remove(),260);}
+  try{_lgSeen();}catch(e){}
+  if(go){try{openLeague();}catch(e){}}
+}
+// Finish-urgentie: laatste dag + in promotie-/degradatiezone.
+function _lgFinishBanner(rows){
+  if(_lgDaysLeft()>1)return '';
+  const me=rows.find(r=>r.me);if(!me)return '';
+  const promo=me.rank<=LEAGUE_PROMO, demote=me.rank>(rows.length-LEAGUE_DEMOTE);
+  if(!promo&&!demote)return '';
+  const txt=promo
+    ?`Laatste dag! Je staat <b>#${me.rank}</b> in de promotiezone - houd 'm vast.`
+    :`Laatste dag! Je staat <b>#${me.rank}</b> in de degradatiezone - één sessie kan je redden.`;
+  return `<div class="lg-finish ${promo?'lg-finish-up':'lg-finish-dn'}">${txt}</div>`;
 }
 
 // ── Home-kaart ──
@@ -143,8 +220,10 @@ function renderLeagueHome(){
   const me=rows.find(r=>r.me)||{rank:LEAGUE_COHORT,xp:0};
   const promo=me.rank<=LEAGUE_PROMO, demote=me.rank>(rows.length-LEAGUE_DEMOTE);
   const zone=promo?'<span class="lg-zone lg-zone-up">Promotiezone</span>':(demote?'<span class="lg-zone lg-zone-dn">Degradatiezone</span>':'<span class="lg-zone lg-zone-safe">Veilig</span>');
-  const res=(L.result&&!L.result.seen)?_lgResultBanner(L.result):'';
-  box.innerHTML=`${res}
+  // Promo/degradatie krijgt de ceremonie; alleen "gelijk gebleven" toont hier een banner.
+  const res=(L.result&&!L.result.seen&&!L.result.promoted&&!L.result.relegated)?_lgResultBanner(L.result):'';
+  const rush=leagueRushChip();
+  box.innerHTML=`${res}${rush}
   <div class="lg-card" onclick="openLeague()" role="button" tabindex="0" style="--lg-col:${div.kleur}">
     <div class="lg-badge"><span class="lg-badge-ic no-ico">${div.ic}</span></div>
     <div class="lg-card-body">
@@ -153,6 +232,7 @@ function renderLeagueHome(){
     </div>
     <div class="lg-card-arr">→</div>
   </div>`;
+  try{_lgMaybeCeremony();}catch(e){}
 }
 function _lgResultBanner(r){
   if(r.promoted)return `<div class="lg-result lg-result-up" onclick="_lgSeen()"><b>Gepromoveerd!</b> Je bent naar de ${LEAGUE_DIVISIONS[r.newDiv].naam}-divisie gestegen. 🎉 <span class="lg-x">✕</span></div>`;
@@ -190,6 +270,8 @@ function renderResultLeague(xpGained){
   const {div,rankNow,rankBefore,total,xpGained:gained,toNext,promo,demote,climbed}=info;
   const zone=promo?'<span class="rl-zone rl-zone-up">Promotiezone</span>'
     :(demote?'<span class="rl-zone rl-zone-dn">Degradatiezone</span>':'<span class="rl-zone rl-zone-safe">Veilig</span>');
+  let rushActive=false;try{rushActive=leagueRushInfo().active;}catch(e){}
+  const rushTag=rushActive?'<span class="rl-rush">⚡ ×2</span>':'';
   const climbLine=climbed>0
     ?`<div class="rl-climb rl-climb-up"><span class="rl-arrow">▲</span> ${climbed} plek${climbed===1?'':'ken'} gestegen</div>`
     :(promo?`<div class="rl-climb rl-climb-hold">Je staat in de promotiezone!</div>`
@@ -203,7 +285,7 @@ function renderResultLeague(xpGained){
         <div class="rl-div">${div.naam}-divisie</div>
         <div class="rl-sub">Weekwedstrijd${zone}</div>
       </div>
-      <div class="rl-xp">+${gained}<span>XP</span></div>
+      <div class="rl-xp">${rushTag}+${gained}<span>XP</span></div>
     </div>
     <div class="rl-rankrow">
       <div class="rl-rank">#<span class="rl-rank-num">${rankBefore}</span></div>
@@ -248,7 +330,7 @@ function renderLeague(){
       <div class="lg-hero-name">${div.naam}-divisie</div>
       <div class="lg-hero-sub">Nog ${_lgDaysLeft()} dag${_lgDaysLeft()===1?'':'en'} · top ${LEAGUE_PROMO} promoveert${next?' naar '+next.naam:''}${prev?', onderste '+LEAGUE_DEMOTE+' degradeert':''}</div>
     </div>`;
-  box.innerHTML=hdr+_lgListWithDividers(rows);
+  box.innerHTML=hdr+leagueRushChip()+_lgFinishBanner(rows)+_lgListWithDividers(rows);
 }
 function _lgListWithDividers(rows){
   let html='<div class="lg-list">';
