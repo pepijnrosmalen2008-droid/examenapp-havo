@@ -1523,6 +1523,60 @@ function renderDecayAlert(){
     <div class="hm-decay-chips">${chips}${extra}</div>
   </div>`;
 }
+// ═══════ FASE 4: deelbare resultaatkaart (gebrande afbeelding, niet alleen tekst) ═══════
+function _svgToImg(svg){
+  return new Promise((res,rej)=>{
+    // xmlns toevoegen + data-URI: laadt betrouwbaarder dan een blob-URL.
+    const src=svg.indexOf('xmlns')>=0?svg:svg.replace('<svg ','<svg xmlns="http://www.w3.org/2000/svg" ');
+    const img=new Image();
+    img.onload=()=>res(img);
+    img.onerror=e=>rej(e);
+    img.src='data:image/svg+xml;charset=utf-8,'+encodeURIComponent(src);
+  });
+}
+function _rr(ctx,x,y,w,h,r){ctx.beginPath();ctx.moveTo(x+r,y);ctx.arcTo(x+w,y,x+w,y+h,r);ctx.arcTo(x+w,y+h,x,y+h,r);ctx.arcTo(x,y+h,x,y,r);ctx.arcTo(x,y,x+w,y,r);ctx.closePath();}
+async function _buildShareCard(o){
+  const W=1080,H=1350,cv=document.createElement('canvas');cv.width=W;cv.height=H;
+  const g=cv.getContext('2d');
+  // achtergrond: warme oranje verloop + zachte glow
+  const bg=g.createLinearGradient(0,0,W*0.4,H);bg.addColorStop(0,'#FFA63A');bg.addColorStop(1,'#EF6E12');
+  g.fillStyle=bg;g.fillRect(0,0,W,H);
+  const glow=g.createRadialGradient(W/2,430,60,W/2,430,720);glow.addColorStop(0,'rgba(255,255,255,.25)');glow.addColorStop(1,'rgba(255,255,255,0)');
+  g.fillStyle=glow;g.fillRect(0,0,W,H);
+  g.textAlign='center';
+  // wordmerk
+  g.fillStyle='#fff';g.font='800 74px system-ui,-apple-system,"Segoe UI",Roboto,sans-serif';
+  g.fillText('Slagio',W/2,150);
+  g.font='600 30px system-ui,-apple-system,sans-serif';g.fillStyle='rgba(255,255,255,.82)';
+  g.fillText('eindexamen oefenen',W/2,196);
+  // wit paneel
+  g.save();g.shadowColor='rgba(120,50,0,.28)';g.shadowBlur=50;g.shadowOffsetY=22;
+  g.fillStyle='#fff';_rr(g,80,252,W-160,858,52);g.fill();g.restore();
+  // Vonk (met timeout-race zodat de kaart nooit blijft hangen op de afbeelding)
+  try{const vsvg=(typeof mascotSVG==='function')?mascotSVG(o.mood,320):'';
+    if(vsvg){const img=await Promise.race([_svgToImg(vsvg),new Promise((_,rej)=>setTimeout(()=>rej('timeout'),2500))]);
+      if(img)g.drawImage(img,W/2-165,286,330,330);}}catch(e){}
+  // grote score
+  g.fillStyle='#EE6C10';g.font='900 180px system-ui,-apple-system,sans-serif';
+  g.fillText(o.big,W/2,808);
+  // boodschap
+  g.fillStyle='#1b1712';g.font='800 50px system-ui,-apple-system,sans-serif';
+  g.fillText(o.msg,W/2,884);
+  // vak + modus
+  g.fillStyle='#7a7266';g.font='500 36px system-ui,-apple-system,sans-serif';
+  g.fillText(o.sub,W/2,952);
+  // scheidingslijn + footer binnen paneel
+  g.strokeStyle='rgba(0,0,0,.08)';g.lineWidth=2;g.beginPath();g.moveTo(200,1010);g.lineTo(W-200,1010);g.stroke();
+  g.fillStyle='#EE6C10';g.font='800 34px system-ui,-apple-system,sans-serif';
+  g.fillText('Kun jij het beter?',W/2,1064);
+  // footer op oranje
+  g.fillStyle='#fff';g.font='800 40px system-ui,-apple-system,sans-serif';
+  g.fillText('slagio.nl',W/2,1210);
+  g.font='500 28px system-ui,-apple-system,sans-serif';g.fillStyle='rgba(255,255,255,.85)';
+  g.fillText('gratis oefenen voor je eindexamen',W/2,1256);
+  return cv;
+}
+function _ambassadeur(){if(earnAch('ambassadeur'))setTimeout(()=>showAch('📣','Ambassadeur! Score gedeeld.'),500);}
 async function deelScore(){
   const vakNaam=ST.vak?.naam||'een vak';
   const score=document.getElementById('rnum')?.textContent||'?';
@@ -1531,15 +1585,34 @@ async function deelScore(){
   const pctTxt=pctRaw?` (${pctRaw}%)`:'';
   const modeTxt={snel:'snelle quiz',oud:'open vragen',fc:'flashcards',race:'Bot Race'}[ST.mode]||'quiz';
   const tekst=`${pctRaw>=90?'🌟':pctRaw>=70?'🔥':'💪'} ${score}${total}${pctTxt} op ${vakNaam} ${modeTxt} - kun jij het beter?\nGratis oefenen op slagio.nl`;
-  if(navigator.share){
-    try{
-      await navigator.share({title:'Slagio - Mijn score',text:tekst,url:'https://slagio.nl'});
-      if(earnAch('ambassadeur'))setTimeout(()=>showAch('📣','Ambassadeur! Score gedeeld.'),500);
-    }catch(e){}
-  }else{
-    try{await navigator.clipboard.writeText(tekst);showToast('📋 Score gekopieerd naar klembord!');}
-    catch(e){showToast('slagio.nl');}
-    if(earnAch('ambassadeur'))setTimeout(()=>showAch('📣','Ambassadeur! Score gedeeld.'),500);
+  const mood=pctRaw>=100?'feest':pctRaw>=85?'trots':pctRaw>=65?'blij':'goed';
+  const msg=pctRaw>=100?'Perfecte score!':pctRaw>=90?'Bijna perfect!':pctRaw>=80?'Super gedaan!':pctRaw>=65?'Goed bezig!':'Lekker geoefend!';
+  const big=pctRaw!=null?pctRaw+'%':(score+(total||''));
+  // 1) Beeld-kaart genereren en delen (met tekst + link).
+  let file=null;
+  try{
+    const cv=await _buildShareCard({big,msg,sub:`${vakNaam} · ${modeTxt}`,mood});
+    const blob=await new Promise(r=>cv.toBlob(r,'image/png',0.95));
+    if(blob)file=new File([blob],'slagio-score.png',{type:'image/png'});
+  }catch(e){}
+  if(file&&navigator.canShare&&navigator.canShare({files:[file]})){
+    try{await navigator.share({files:[file],text:tekst});_ambassadeur();return;}
+    catch(e){if(e&&e.name==='AbortError')return;}
   }
+  // 2) Tekst-share (oudere browsers).
+  if(navigator.share){
+    try{await navigator.share({title:'Slagio - Mijn score',text:tekst,url:'https://slagio.nl'});_ambassadeur();return;}
+    catch(e){if(e&&e.name==='AbortError')return;}
+  }
+  // 3) Desktop: kaart downloaden, anders tekst naar klembord.
+  if(file){
+    const url=URL.createObjectURL(file);const a=document.createElement('a');
+    a.href=url;a.download='slagio-score.png';document.body.appendChild(a);a.click();a.remove();
+    setTimeout(()=>URL.revokeObjectURL(url),200);
+    showToast('📸 Kaart opgeslagen - deel \'m met je klas!');_ambassadeur();return;
+  }
+  try{await navigator.clipboard.writeText(tekst);showToast('📋 Score gekopieerd naar klembord!');}
+  catch(e){showToast('slagio.nl');}
+  _ambassadeur();
 }
 
