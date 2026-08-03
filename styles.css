@@ -6809,6 +6809,12 @@ html.dark .dom-hero-card{background:linear-gradient(180deg,rgba(255,255,255,.045
 .m-mood-oeps .m-fig{animation:mStartle .5s cubic-bezier(.34,1.5,.64,1)}
 @keyframes mStartle{0%{transform:translateY(0)}16%{transform:translateY(-9px) scale(1.05,.93)}38%{transform:translateY(-9px)}68%{transform:translateY(0) scale(.97,1.03)}100%{transform:translateY(0)}}
 @media(prefers-reduced-motion:reduce){.m-mood-oeps .m-fig{animation:none}}
+/* Idle geeuw: Vonk geeuwt af en toe als hij rustig staat (leeft meer) */
+.m-yawn{opacity:0}
+.m-mood-blij .m-yawn,.m-mood-goed .m-yawn{animation:mYawn 15s ease-in-out 7s infinite}
+.talking .m-yawn{animation:none!important;opacity:0}
+@keyframes mYawn{0%,84%{opacity:0}88%{opacity:1}92.5%{opacity:1}96%,100%{opacity:0}}
+@media(prefers-reduced-motion:reduce){.m-mood-blij .m-yawn,.m-mood-goed .m-yawn{animation:none}}
 /* Munten-beloning: inbouncende chip + count-up + muntenregen */
 .coin-reward{position:absolute;z-index:9998;transform:translate(-50%,-50%) scale(.4);opacity:0;pointer-events:none;
   display:inline-flex;align-items:center;gap:7px;padding:9px 16px 9px 12px;border-radius:999px;

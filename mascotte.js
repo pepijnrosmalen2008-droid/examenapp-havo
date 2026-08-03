@@ -133,6 +133,12 @@ function mascotSVG(mood, size) {
           <ellipse class="mt mt-b" cx="60" cy="61" rx="7.5" ry="3" fill="${NO}"/>
           <ellipse class="mt-tongue" cx="60" cy="63.5" rx="3" ry="2" fill="#ff8a9e"/>
         </g>
+        <!-- geeuw (idle): crème dekje over de glimlach + wijd open mond -->
+        <g class="m-yawn">
+          <ellipse cx="60" cy="63" rx="10" ry="5.2" fill="${CR}"/>
+          <ellipse cx="60" cy="64" rx="5.4" ry="6.6" fill="${NO}"/>
+          <ellipse cx="60" cy="67" rx="3" ry="2.2" fill="#ff8a9e"/>
+        </g>
       </g>
       <!-- rechterarm (per stemming) -->
       ${rightArm}
