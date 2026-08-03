@@ -3919,50 +3919,42 @@ html.dark .hsd-pill{background:var(--bg2);border-color:var(--bo2)}
 /* ── Mascotte "Vonk" - herbruikbaar, levendig (SVG-animaties, .m-*) ── */
 .m-svg{overflow:visible;display:block}
 /* idle: zachtjes deinen + af en toe een klein huppeltje, in één timeline */
-.m-fig{transform-origin:60px 110px;animation:mIdle 5s ease-in-out infinite}
-/* idle: levendig deinen + squash-and-stretch huppeltjes + kwispel-wiggle (Duolingo-stijl) */
+/* IDLE: natuurlijk levendig - zachte gewichtsverplaatsing + ademen + af en toe
+   één klein, natuurlijk huppeltje. De LEDEMATEN dragen de beweging (armen, oren,
+   staart, kop), niet het uitrekken van het lijf. */
+.m-fig{transform-origin:60px 112px;animation:mIdle 6s ease-in-out infinite}
 @keyframes mIdle{
-  0%{transform:translateY(0) rotate(-1.6deg) scale(1,1)}
-  9%{transform:translateY(-4px) rotate(1.6deg) scale(.985,1.03)}
-  18%{transform:translateY(0) rotate(-1.6deg) scale(1.02,.98)}
-  27%{transform:translateY(-4px) rotate(1.6deg) scale(.985,1.03)}
-  36%{transform:translateY(0) rotate(0) scale(1.03,.96)}
-  /* grote hop met anticipatie + stretch + landing-squash */
-  42%{transform:translateY(3px) rotate(0) scale(1.09,.89)}
-  53%{transform:translateY(-17px) rotate(-2deg) scale(.9,1.13)}
-  62%{transform:translateY(0) rotate(0) scale(1.12,.86)}
-  68%{transform:translateY(0) rotate(0) scale(1,1)}
-  /* kleine tweede hop + wiggle */
-  74%{transform:translateY(-8px) rotate(3.5deg) scale(.96,1.06)}
-  80%{transform:translateY(0) rotate(0) scale(1.05,.95)}
-  86%{transform:translateY(-2px) rotate(-3deg)}
-  92%{transform:translateY(0) rotate(2.4deg)}
-  100%{transform:translateY(0) rotate(-1.6deg) scale(1,1)}}
-.m-wave{transform-origin:80px 82px;animation:mWave 2.8s ease-in-out infinite}
-@keyframes mWave{0%,66%,100%{transform:rotate(0)}78%{transform:rotate(-30deg)}86%{transform:rotate(10deg)}92%{transform:rotate(-20deg)}}
-.m-tail{transform-origin:45px 94px;animation:mTail 1.5s ease-in-out infinite}
-@keyframes mTail{0%,100%{transform:rotate(-10deg)}50%{transform:rotate(10deg)}}
+  0%{transform:translateY(0) rotate(-1.2deg)}
+  22%{transform:translateY(-1.5px) rotate(1.2deg)}
+  44%{transform:translateY(0) rotate(-1deg)}
+  57%{transform:translateY(-6px) rotate(.4deg)}
+  65%{transform:translateY(0) rotate(0)}
+  80%{transform:translateY(-1.5px) rotate(1.1deg)}
+  100%{transform:translateY(0) rotate(-1.2deg)}}
+/* rechterarm zwaait af en toe VOL (Duo-stijl), niet als een metronoom */
+.m-wave{transform-origin:80px 82px;animation:mWave 6s ease-in-out infinite}
+@keyframes mWave{0%,68%,100%{transform:rotate(0)}75%{transform:rotate(-36deg)}81%{transform:rotate(10deg)}87%{transform:rotate(-28deg)}93%{transform:rotate(5deg)}}
+/* linkerarm wiegt zachtjes mee - dus beide armen leven */
+.m-arm-l{transform-origin:40px 84px;animation:mArmL 6s ease-in-out infinite}
+@keyframes mArmL{0%,100%{transform:rotate(0)}30%{transform:rotate(5deg)}62%{transform:rotate(-3deg)}}
+.m-tail{transform-origin:45px 94px;animation:mTail 1.4s ease-in-out infinite}
+@keyframes mTail{0%,100%{transform:rotate(-13deg)}45%{transform:rotate(13deg)}}
 .m-tassel{transform-origin:60px 15px;animation:mTassel 2.8s ease-in-out infinite}
 @keyframes mTassel{0%,100%{transform:rotate(-6deg)}50%{transform:rotate(8deg)}}
-.m-head{transform-origin:60px 66px;animation:mHead 5s ease-in-out infinite}
-@keyframes mHead{0%,100%{transform:rotate(-1.6deg)}50%{transform:rotate(1.6deg)}}
-.m-ear-l{transform-origin:33px 24px;animation:mEar 4.6s ease-in-out infinite}
-.m-ear-r{transform-origin:87px 24px;animation:mEar 4.6s ease-in-out .4s infinite}
-@keyframes mEar{0%,84%,100%{transform:rotate(0)}90%{transform:rotate(-8deg)}95%{transform:rotate(5deg)}}
+/* kop beweegt expressief: kijkt rond en tilt nieuwsgierig */
+.m-head{transform-origin:60px 66px;animation:mHead 7s ease-in-out infinite}
+@keyframes mHead{0%,100%{transform:rotate(-2deg)}18%{transform:rotate(2deg)}34%{transform:rotate(-.5deg) translateX(1.2px)}50%{transform:rotate(1.5deg)}64%{transform:rotate(-3deg)}80%{transform:rotate(.5deg) translateX(-1px)}}
+.m-ear-l{transform-origin:33px 24px;animation:mEar 4.2s ease-in-out infinite}
+.m-ear-r{transform-origin:87px 24px;animation:mEar 4.2s ease-in-out .3s infinite}
+@keyframes mEar{0%,80%,100%{transform:rotate(0)}86%{transform:rotate(-10deg)}92%{transform:rotate(6deg)}}
 .m-pupils{animation:mLook 6.5s ease-in-out infinite}
-@keyframes mLook{0%,22%,100%{transform:translateX(0)}34%,46%{transform:translateX(2px)}58%,70%{transform:translateX(-2px)}}
-.m-eyes{transform-origin:60px 40px;animation:mBlink 5.2s infinite}
-@keyframes mBlink{0%,93%,100%{transform:scaleY(1)}96.5%{transform:scaleY(.08)}}
+@keyframes mLook{0%,20%,100%{transform:translateX(0)}32%,46%{transform:translateX(2.2px)}58%,72%{transform:translateX(-2.2px)}}
+.m-eyes{transform-origin:60px 40px;animation:mBlink 5s infinite}
+@keyframes mBlink{0%,92%,100%{transform:scaleY(1)}95.5%{transform:scaleY(.08)}}
 .m-spark{transform-origin:60px 18px;animation:mSpark 1.8s ease-in-out infinite}
 @keyframes mSpark{0%,100%{opacity:.4;transform:scale(.85) rotate(0)}50%{opacity:1;transform:scale(1.2) rotate(20deg)}}
-.m-shadow{fill:rgba(0,0,0,.16);transform-origin:60px 114px;animation:mShadow 5s ease-in-out infinite}
-@keyframes mShadow{
-  0%,100%{transform:scaleX(1);opacity:.5}
-  9%,27%{transform:scaleX(.93);opacity:.43}
-  42%{transform:scaleX(1.16);opacity:.55}
-  53%{transform:scaleX(.7);opacity:.22}
-  62%{transform:scaleX(1.2);opacity:.55}
-  74%{transform:scaleX(.85);opacity:.34}}
+.m-shadow{fill:rgba(0,0,0,.16);transform-origin:60px 114px;animation:mShadow 6s ease-in-out infinite}
+@keyframes mShadow{0%,100%{transform:scaleX(1);opacity:.5}57%{transform:scaleX(.85);opacity:.35}65%{transform:scaleX(1);opacity:.5}}
 /* praten: statische mond weg; drie mondvormen wisselen af (realistischer) */
 .m-mouth-talk{opacity:0}
 .m-mouth-talk .mt,.m-mouth-talk .mt-tongue{opacity:0}
@@ -3976,9 +3968,26 @@ html.dark .hsd-pill{background:var(--bg2);border-color:var(--bo2)}
 @keyframes mtA{0%{opacity:0}18%{opacity:1}42%{opacity:0}82%{opacity:1}100%{opacity:1}}
 @keyframes mtB{0%{opacity:0}42%{opacity:1}58%{opacity:0}70%{opacity:1}82%{opacity:0}100%{opacity:0}}
 @keyframes mtT{0%,17%{opacity:0}18%{opacity:1}42%{opacity:0}82%{opacity:1}100%{opacity:1}}
-.talking .m-head{animation:mNod .46s ease-in-out infinite}
-@keyframes mNod{0%,100%{transform:translateY(0) rotate(0)}50%{transform:translateY(1px) rotate(0)}}
-@media(prefers-reduced-motion:reduce){.m-fig,.m-wave,.m-tail,.m-tassel,.m-head,.m-ear-l,.m-ear-r,.m-pupils,.m-eyes,.m-spark,.m-shadow,.talking .mt,.talking .mt-tongue,.talking .m-head{animation:none}.talking .m-mouth{opacity:1}.talking .m-mouth-talk{opacity:0}}
+/* PRATEN: Duo-stijl gesticuleren - kop knikt/tilt, lijf leunt mee, BEIDE armen
+   maken kleine handgebaren. Veel levendiger dan een minieme knik. */
+.talking .m-head{animation:mTalkHead .5s ease-in-out infinite}
+@keyframes mTalkHead{0%,100%{transform:translateY(0) rotate(-1.5deg)}25%{transform:translateY(-1px) rotate(1.2deg)}50%{transform:translateY(1px) rotate(0)}75%{transform:translateY(-.5px) rotate(-1deg)}}
+.talking .m-fig{animation:mTalkBody 2.2s ease-in-out infinite}
+@keyframes mTalkBody{0%,100%{transform:translateY(0) rotate(-1deg)}35%{transform:translateY(-1px) rotate(1.5deg)}70%{transform:translateY(0) rotate(-1.5deg)}}
+.talking .m-wave{animation:mTalkGesture 1.4s ease-in-out infinite}
+@keyframes mTalkGesture{0%,100%{transform:rotate(-2deg)}30%{transform:rotate(-17deg)}55%{transform:rotate(-6deg)}80%{transform:rotate(-21deg)}}
+.talking .m-arm-l{animation:mTalkArmL 1.8s ease-in-out infinite}
+@keyframes mTalkArmL{0%,100%{transform:rotate(0)}40%{transform:rotate(9deg)}70%{transform:rotate(2deg)}}
+/* STEMMINGEN: echte lichaamstaal. Feest = echte sprong; verdrietig = inzakken. */
+.m-mood-feest .m-fig{animation:mCelebrate .72s cubic-bezier(.34,1.4,.64,1) infinite}
+@keyframes mCelebrate{0%{transform:translateY(0) scale(1)}24%{transform:translateY(-16px) scale(.96,1.06)}42%{transform:translateY(-16px) rotate(-4deg)}60%{transform:translateY(0) scale(1.08,.9)}74%{transform:translateY(0) scale(1)}100%{transform:translateY(0)}}
+.m-mood-laag .m-fig{animation:mSlump 3.4s ease-in-out infinite}
+@keyframes mSlump{0%,100%{transform:translateY(1.5px)}50%{transform:translateY(3px)}}
+.m-mood-laag .m-head{animation:mSlumpHead 3.4s ease-in-out infinite}
+@keyframes mSlumpHead{0%,100%{transform:translateY(1px) rotate(0)}50%{transform:translateY(2.5px) rotate(-1deg)}}
+.m-mood-laag .m-ear-l{animation:none;transform:rotate(17deg)}
+.m-mood-laag .m-ear-r{animation:none;transform:rotate(-17deg)}
+@media(prefers-reduced-motion:reduce){.m-fig,.m-wave,.m-arm-l,.m-tail,.m-tassel,.m-head,.m-ear-l,.m-ear-r,.m-pupils,.m-eyes,.m-spark,.m-shadow,.m-cheer-l,.m-cheer-r,.talking .mt,.talking .mt-tongue,.talking .m-head,.talking .m-fig,.talking .m-wave,.talking .m-arm-l,.m-mood-feest .m-fig,.m-mood-laag .m-fig,.m-mood-laag .m-head{animation:none}.talking .m-mouth{opacity:1}.talking .m-mouth-talk{opacity:0}}
 /* klikbare pagina-verwijzing in Vonk's tekst */
 .vonk-link{color:var(--or);font-weight:800;text-decoration:underline;text-underline-offset:2px;cursor:pointer}
 .vonk-link:hover{filter:brightness(.9)}

@@ -54,7 +54,7 @@ function mascotSVG(mood, size) {
   };
   const prop = s.prop ? (PROPS[s.prop] || '') : '';
   // armen per stemming (niet altijd zwaaien)
-  const aDownL = `<path d="M40 84 C33 88 32 96 37 100" stroke="${OR}" stroke-width="10" stroke-linecap="round" fill="none"/><circle cx="37" cy="100" r="5.5" fill="${OR}"/>`;
+  const aDownL = `<g class="m-arm-l"><path d="M40 84 C33 88 32 96 37 100" stroke="${OR}" stroke-width="10" stroke-linecap="round" fill="none"/><circle cx="37" cy="100" r="5.5" fill="${OR}"/></g>`;
   const aDownR = `<path d="M80 84 C87 88 88 96 83 100" stroke="${OR}" stroke-width="10" stroke-linecap="round" fill="none"/><circle cx="83" cy="100" r="5.5" fill="${OR}"/>`;
   const aWaveR = `<g class="m-wave"><path d="M80 82 C89 80 95 71 96 62" stroke="${OR}" stroke-width="10" stroke-linecap="round" fill="none"/><circle cx="96" cy="60" r="6" fill="${OR}"/></g>`;
   const aCheerL = `<g class="m-cheer-l"><path d="M42 80 C33 71 30 61 33 52" stroke="${OR}" stroke-width="10" stroke-linecap="round" fill="none"/><circle cx="33" cy="50" r="6" fill="${OR}"/></g>`;
