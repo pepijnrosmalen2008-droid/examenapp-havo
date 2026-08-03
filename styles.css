@@ -6849,18 +6849,6 @@ html.dark .dom-hero-card{background:linear-gradient(180deg,rgba(255,255,255,.045
 .talking .m-yawn{animation:none!important;opacity:0}
 @keyframes mYawn{0%,84%{opacity:0}88%{opacity:1}92.5%{opacity:1}96%,100%{opacity:0}}
 @media(prefers-reduced-motion:reduce){.m-mood-blij .m-yawn,.m-mood-goed .m-yawn{animation:none}}
-/* ══ Vonk-begroeting: de mascotte leeft groot & warm op de home ══ */
-.hm-greet{display:flex;align-items:center;gap:14px;margin:16px 0 4px;padding:16px 18px;border-radius:22px;
-  background:linear-gradient(135deg,rgba(var(--or-rgb),.14),color-mix(in srgb,var(--or) 4%,var(--s)) 70%);
-  border:1px solid color-mix(in srgb,var(--or) 20%,var(--bo));
-  box-shadow:0 2px 12px rgba(0,0,0,.05),0 1px 3px rgba(0,0,0,.04)}
-.hm-greet .hg-vonk{flex:none;width:76px;height:76px;display:grid;place-items:center;filter:drop-shadow(0 4px 10px rgba(0,0,0,.12))}
-.hm-greet .hg-vonk .m-svg{width:76px;height:76px}
-.hm-greet .hg-text{flex:1;min-width:0}
-.hm-greet .hg-hi{font-family:var(--font-head);font-size:22px;font-weight:800;color:var(--dk);line-height:1.15;letter-spacing:-.3px}
-.hm-greet .hg-sub{font-size:14px;color:var(--mu);line-height:1.4;margin-top:3px}
-.hm-greet .hg-sub b{color:var(--or);font-weight:800}
-@media(max-width:400px){.hm-greet .hg-hi{font-size:20px}.hm-greet .hg-vonk,.hm-greet .hg-vonk .m-svg{width:68px;height:68px}}
 /* ══ Eén interactie-taal voor álle tikbare content-kaarten ══
    Vier kaarten drukten verschillend in (scale .97/.98/.99/instant, 4 easings,
    4 duurtijden). Nu exact één taal: zelfde diepte (scale .98), zelfde easing
@@ -6873,6 +6861,9 @@ html.dark .dom-hero-card{background:linear-gradient(180deg,rgba(255,255,255,.045
   transform:scale(.98) !important;
   transition:transform .11s cubic-bezier(.34,1.3,.64,1) !important}
 @media(prefers-reduced-motion:reduce){.card:active,.lg-card:active,.bento-cell:active,.hm-menu-open:active{transform:none !important}}
+/* Home rustiger: het gestreepte "maak je eerste quiz"-blok is dubbelop met de
+   grote CTA erboven - weg ermee voor meer lucht. */
+#sc-home .bento-empty{display:none}
 /* Munten-beloning: inbouncende chip + count-up + muntenregen */
 .coin-reward{position:absolute;z-index:9998;transform:translate(-50%,-50%) scale(.4);opacity:0;pointer-events:none;
   display:inline-flex;align-items:center;gap:7px;padding:9px 16px 9px 12px;border-radius:999px;
