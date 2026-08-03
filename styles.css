@@ -3949,6 +3949,9 @@ html.dark .hsd-pill{background:var(--bg2);border-color:var(--bo2)}
 @keyframes mEar{0%,80%,100%{transform:rotate(0)}86%{transform:rotate(-10deg)}92%{transform:rotate(6deg)}}
 .m-pupils{animation:mLook 6.5s ease-in-out infinite}
 @keyframes mLook{0%,20%,100%{transform:translateX(0)}32%,46%{transform:translateX(2.2px)}58%,72%{transform:translateX(-2.2px)}}
+/* Vonk kijkt naar de actieknop: pupillen glancen omlaag naar de CTA eronder */
+.vonk-has-cta .m-pupils{animation:mLookCta 2.8s ease-in-out 1s infinite}
+@keyframes mLookCta{0%,52%,100%{transform:translate(0,0)}66%,84%{transform:translate(1px,2.7px)}}
 .m-eyes{transform-origin:60px 40px;animation:mBlink 5s infinite}
 @keyframes mBlink{0%,92%,100%{transform:scaleY(1)}95.5%{transform:scaleY(.08)}}
 .m-spark{transform-origin:60px 18px;animation:mSpark 1.8s ease-in-out infinite}
@@ -3987,7 +3990,7 @@ html.dark .hsd-pill{background:var(--bg2);border-color:var(--bo2)}
 @keyframes mSlumpHead{0%,100%{transform:translateY(1px) rotate(0)}50%{transform:translateY(2.5px) rotate(-1deg)}}
 .m-mood-laag .m-ear-l{animation:none;transform:rotate(17deg)}
 .m-mood-laag .m-ear-r{animation:none;transform:rotate(-17deg)}
-@media(prefers-reduced-motion:reduce){.m-fig,.m-wave,.m-arm-l,.m-tail,.m-tassel,.m-head,.m-ear-l,.m-ear-r,.m-pupils,.m-eyes,.m-spark,.m-shadow,.m-cheer-l,.m-cheer-r,.talking .mt,.talking .mt-tongue,.talking .m-head,.talking .m-fig,.talking .m-wave,.talking .m-arm-l,.m-mood-feest .m-fig,.m-mood-laag .m-fig,.m-mood-laag .m-head{animation:none}.talking .m-mouth{opacity:1}.talking .m-mouth-talk{opacity:0}}
+@media(prefers-reduced-motion:reduce){.m-fig,.m-wave,.m-arm-l,.m-tail,.m-tassel,.m-head,.m-ear-l,.m-ear-r,.m-pupils,.m-eyes,.m-spark,.m-shadow,.m-cheer-l,.m-cheer-r,.talking .mt,.talking .mt-tongue,.talking .m-head,.talking .m-fig,.talking .m-wave,.talking .m-arm-l,.m-mood-feest .m-fig,.m-mood-laag .m-fig,.m-mood-laag .m-head,.vonk-has-cta .m-pupils{animation:none}.talking .m-mouth{opacity:1}.talking .m-mouth-talk{opacity:0}}
 /* klikbare pagina-verwijzing in Vonk's tekst */
 .vonk-link{color:var(--or);font-weight:800;text-decoration:underline;text-underline-offset:2px;cursor:pointer}
 .vonk-link:hover{filter:brightness(.9)}

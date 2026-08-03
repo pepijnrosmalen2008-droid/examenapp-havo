@@ -222,10 +222,13 @@ function vonkSay(msg, opts) {
   const mood = opts.mood || 'blij';
   const size = opts.size || 92;
   const act = opts.action ? `<button class="vonk-act">${opts.action.label}</button>` : '';
+  // Denk-beat: Vonk overweegt eerst (denk-pose) en begint daarna pas te praten.
+  const startMood = opts.think ? 'denk' : mood;
+  const figCls = 'vonk-fig' + (opts.action ? ' vonk-has-cta' : '');
   stage.className = 'vonk-stage vonk-' + side;
   stage.setAttribute('role', 'status'); stage.setAttribute('aria-live', 'polite');
   stage.innerHTML = `<div class="vonk-peek">
-    <div class="vonk-fig">${mascotSVG(mood, size)}</div>
+    <div class="${figCls}">${mascotSVG(startMood, size)}</div>
     <div class="vonk-say">
       <button class="vonk-x" aria-label="Sluiten">✕</button>
       <div class="vonk-say-name">${MASCOT_NAME}</div>
@@ -241,7 +244,13 @@ function vonkSay(msg, opts) {
   if (ab && opts.action) ab.onclick = () => { try { if (typeof opts.action.onclick === 'function') opts.action.onclick(); else if (typeof opts.action.onclick === 'string') (new Function(opts.action.onclick))(); } catch (e) {} if (!opts.action.keepOpen) close(); };
   requestAnimationFrame(() => requestAnimationFrame(() => stage.classList.add('vonk-in')));
   // Vonk "praat" terwijl de bubbel binnenkomt, en zakt daarna terug in een glimlach.
-  if (fig) { setTimeout(() => fig.classList.add('talking'), 260); stage._talkT = setTimeout(() => fig.classList.remove('talking'), Math.min(5200, 1400 + plainLen * 48)); }
+  // Met opts.think denkt hij eerst even na (denk-pose) en wisselt dan naar praten.
+  if (fig) {
+    const talkDelay = opts.think ? 900 : 260;
+    if (opts.think) setTimeout(() => { fig.innerHTML = mascotSVG(mood, size); }, talkDelay - 20);
+    setTimeout(() => fig.classList.add('talking'), talkDelay);
+    stage._talkT = setTimeout(() => fig.classList.remove('talking'), talkDelay + Math.min(5200, 1400 + plainLen * 48));
+  }
   const dur = (opts.duration != null) ? opts.duration : Math.min(12000, 4000 + plainLen * 55);
   clearTimeout(_vonkTimer);
   if (dur > 0) _vonkTimer = setTimeout(close, dur);
@@ -416,7 +425,7 @@ function vonkExplain() {
   const e = VONK_EXPLAIN[id] || { mood: 'kijk', msg: `Ik help je graag! Kijk hier rond en tik ergens, heb je een vraag, dan duik ik op waar ik kan. 😊` };
   const corner = document.getElementById('vonk-corner');
   if (corner) corner.style.visibility = 'hidden';
-  vonkSay(e.msg, { mood: e.mood, side: 'right', duration: 0, onClose: () => { if (corner) corner.style.visibility = ''; } });
+  vonkSay(e.msg, { mood: e.mood, side: 'right', duration: 0, think: true, onClose: () => { if (corner) corner.style.visibility = ''; } });
 }
 // Toont/verbergt de hoek-Vonk per scherm; wordt vanuit show() aangeroepen.
 function updateVonkCorner(id) {
