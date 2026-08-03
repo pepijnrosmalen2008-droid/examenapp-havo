@@ -45,6 +45,8 @@ function mascotSVG(mood, size) {
     : `${eye(47)}${eye(73)}<g class="m-pupils">${pup(47)}${pup(73)}</g>`;
   // palet
   const OR = '#fb8c3e', SH = '#e9701f', CR = '#fff1dd', DK = '#2e2a39', NO = '#3b2a22';
+  // Paw = volle oranje poot met een crème kussentje (hoogwaardiger dan een platte cirkel).
+  const paw = (cx, cy, r) => `<ellipse cx="${cx}" cy="${cy}" rx="${r}" ry="${(r * 1.04).toFixed(1)}" fill="${OR}"/><ellipse cx="${cx}" cy="${(cy + r * 0.36).toFixed(1)}" rx="${(r * 0.6).toFixed(1)}" ry="${(r * 0.46).toFixed(1)}" fill="${CR}" opacity=".92"/>`;
   // props (denkwolk / zweetdruppel / hartjes / zzz)
   const PROPS = {
     think: `<g class="m-prop m-think"><circle cx="92" cy="34" r="3" fill="#fff" stroke="#d9dee8"/><circle cx="99" cy="27" r="4.5" fill="#fff" stroke="#d9dee8"/><ellipse cx="108" cy="16" rx="11" ry="8" fill="#fff" stroke="#d9dee8"/><text x="108" y="20" font-size="10" font-weight="700" text-anchor="middle" fill="#94a0b8">?</text></g>`,
@@ -54,14 +56,14 @@ function mascotSVG(mood, size) {
   };
   const prop = s.prop ? (PROPS[s.prop] || '') : '';
   // armen per stemming (niet altijd zwaaien)
-  const aDownL = `<g class="m-arm-l"><path d="M40 84 C33 88 32 96 37 100" stroke="${OR}" stroke-width="10" stroke-linecap="round" fill="none"/><circle cx="37" cy="100" r="5.5" fill="${OR}"/></g>`;
-  const aDownR = `<path d="M80 84 C87 88 88 96 83 100" stroke="${OR}" stroke-width="10" stroke-linecap="round" fill="none"/><circle cx="83" cy="100" r="5.5" fill="${OR}"/>`;
-  const aWaveR = `<g class="m-wave"><path d="M80 82 C89 80 95 71 96 62" stroke="${OR}" stroke-width="10" stroke-linecap="round" fill="none"/><circle cx="96" cy="60" r="6" fill="${OR}"/></g>`;
-  const aCheerL = `<g class="m-cheer-l"><path d="M42 80 C33 71 30 61 33 52" stroke="${OR}" stroke-width="10" stroke-linecap="round" fill="none"/><circle cx="33" cy="50" r="6" fill="${OR}"/></g>`;
-  const aCheerR = `<g class="m-cheer-r"><path d="M78 80 C88 71 91 61 88 52" stroke="${OR}" stroke-width="10" stroke-linecap="round" fill="none"/><circle cx="88" cy="50" r="6" fill="${OR}"/></g>`;
-  const aHipL = `<path d="M42 82 C34 82 33 90 41 92" stroke="${OR}" stroke-width="10" stroke-linecap="round" fill="none"/><circle cx="42" cy="92" r="5.5" fill="${OR}"/>`;
-  const aHipR = `<path d="M78 82 C86 82 87 90 79 92" stroke="${OR}" stroke-width="10" stroke-linecap="round" fill="none"/><circle cx="78" cy="92" r="5.5" fill="${OR}"/>`;
-  const aChinR = `<path d="M80 82 C87 76 74 70 63 66" stroke="${OR}" stroke-width="9" stroke-linecap="round" fill="none"/><circle cx="61" cy="65" r="5.5" fill="${OR}"/>`;
+  const aDownL = `<g class="m-arm-l"><path d="M40 84 C32 88 31 96 37 100" stroke="${OR}" stroke-width="12" stroke-linecap="round" fill="none"/>${paw(37, 100, 6.3)}</g>`;
+  const aDownR = `<path d="M80 84 C88 88 89 96 83 100" stroke="${OR}" stroke-width="12" stroke-linecap="round" fill="none"/>${paw(83, 100, 6.3)}`;
+  const aWaveR = `<g class="m-wave"><path d="M80 82 C90 80 96 71 97 62" stroke="${OR}" stroke-width="12" stroke-linecap="round" fill="none"/>${paw(97, 60, 6.8)}</g>`;
+  const aCheerL = `<g class="m-cheer-l"><path d="M42 80 C32 71 29 61 32 51" stroke="${OR}" stroke-width="12" stroke-linecap="round" fill="none"/>${paw(32, 50, 6.8)}</g>`;
+  const aCheerR = `<g class="m-cheer-r"><path d="M78 80 C89 71 92 61 89 51" stroke="${OR}" stroke-width="12" stroke-linecap="round" fill="none"/>${paw(89, 50, 6.8)}</g>`;
+  const aHipL = `<path d="M42 82 C33 82 32 90 41 92" stroke="${OR}" stroke-width="12" stroke-linecap="round" fill="none"/>${paw(42, 92, 6.3)}`;
+  const aHipR = `<path d="M78 82 C87 82 88 90 79 92" stroke="${OR}" stroke-width="12" stroke-linecap="round" fill="none"/>${paw(78, 92, 6.3)}`;
+  const aChinR = `<path d="M80 82 C88 76 74 70 63 66" stroke="${OR}" stroke-width="10.5" stroke-linecap="round" fill="none"/>${paw(61, 65, 6)}`;
   let leftArm, rightArm;
   switch (s.arms) {
     case 'cheer': leftArm = aCheerL; rightArm = aCheerR; break;
@@ -79,8 +81,9 @@ function mascotSVG(mood, size) {
         <path d="M44 96 C22 100 9 89 12 74 C14 63 28 62 31 74 C27 87 34 95 47 92 Z" fill="${OR}"/>
         <path d="M15 72 C8 74 7 84 13 87 C20 89 24 80 21 73 Z" fill="${CR}"/>
       </g>
-      <!-- pootjes -->
-      <ellipse cx="49" cy="108" rx="8.5" ry="5.5" fill="${SH}"/><ellipse cx="71" cy="108" rx="8.5" ry="5.5" fill="${SH}"/>
+      <!-- voetjes: volle oranje poot met crème kussentje (past bij de handen) -->
+      <ellipse cx="49" cy="109" rx="9.5" ry="6.2" fill="${OR}"/><ellipse cx="49" cy="110.5" rx="5.8" ry="3.4" fill="${CR}" opacity=".92"/>
+      <ellipse cx="71" cy="109" rx="9.5" ry="6.2" fill="${OR}"/><ellipse cx="71" cy="110.5" rx="5.8" ry="3.4" fill="${CR}" opacity=".92"/>
       <!-- linkerarm (per stemming) -->
       ${leftArm}
       <!-- lijf -->
