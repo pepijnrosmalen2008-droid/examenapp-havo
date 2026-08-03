@@ -6864,6 +6864,25 @@ html.dark .dom-hero-card{background:linear-gradient(180deg,rgba(255,255,255,.045
 /* Home rustiger: het gestreepte "maak je eerste quiz"-blok is dubbelop met de
    grote CTA erboven - weg ermee voor meer lucht. */
 #sc-home .bento-empty{display:none}
+/* ══ Statusbalk: 4 grote gamification-kaarten -> 1 slanke tikbare balk ══
+   De home toont alleen nog de kerncijfers; het detail (weekkalender, avatar-
+   evolutie, ranglijst) zit één tik verderop op profiel/shop/divisie. */
+#sc-home #league-home,#sc-home #econ-home,#sc-home #xp-home-bar{display:none}
+.statbar{display:flex;gap:8px;margin:14px 0 4px}
+.sbar-pill{flex:1;min-width:0;display:flex;align-items:center;justify-content:center;gap:7px;padding:12px 6px;border-radius:16px;
+  background:var(--s);border:1px solid var(--bo);cursor:pointer;font-family:var(--font-head);
+  box-shadow:0 2px 8px rgba(0,0,0,.05),0 1px 3px rgba(0,0,0,.04);
+  transition:transform .12s cubic-bezier(.34,1.3,.64,1),box-shadow .15s ease;-webkit-tap-highlight-color:transparent}
+.sbar-pill:active{transform:scale(.96)}
+.sbar-ic{display:inline-flex;align-items:center;flex:none}
+.sbar-ic svg{width:19px;height:19px}
+.sbar-val{font-size:16px;font-weight:800;color:var(--dk);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.sbar-streak .sbar-ic{color:#f97316}
+.sbar-coin .sbar-ic{color:#f5b301}
+.sbar-lvl .sbar-ic{color:#8b5cf6}
+.sbar-div-ic{font-size:18px;line-height:1}
+.sbar-div-name{font-size:13px;font-weight:800;color:var(--dk)}
+@media(prefers-reduced-motion:reduce){.sbar-pill:active{transform:none}}
 /* Munten-beloning: inbouncende chip + count-up + muntenregen */
 .coin-reward{position:absolute;z-index:9998;transform:translate(-50%,-50%) scale(.4);opacity:0;pointer-events:none;
   display:inline-flex;align-items:center;gap:7px;padding:9px 16px 9px 12px;border-radius:999px;

@@ -833,6 +833,7 @@ function openProfiel(){
   buildCijferGrid();
   updateCloudStatusBar();
   buildMijnStats();
+  try{renderStreak();}catch(e){}
   renderProfileBadges();
   renderNotifStatus();
   applyAccPrefs();

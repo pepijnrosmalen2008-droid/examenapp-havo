@@ -806,7 +806,29 @@ function renderGreeting(){
   }
 }
 
+// Compacte statusbalk: streak · munten · level · divisie. Vervangt de vier
+// grote gamification-kaarten; elke pill tikt door naar zijn detailscherm.
+function renderStatBar(){
+  const box=document.getElementById('hm-statbar');
+  if(!box)return;
+  let streak=0,munten=0,lvl=1;
+  try{streak=calcStreak().current||0;}catch(e){}
+  try{munten=getCoins();}catch(e){}
+  try{lvl=getLevelForXP(getTotalXP());}catch(e){}
+  let divIc='🏆',divName='Divisie',divCol='var(--or)';
+  try{const L=ensureLeague();const d=LEAGUE_DIVISIONS[L.division];if(d){divIc=d.ic;divName=d.naam;divCol=d.kleur;}}catch(e){}
+  const flame=(typeof ICO_FLAME!=='undefined')?ICO_FLAME:'🔥';
+  const star=(typeof ICO_STAR!=='undefined')?ICO_STAR:'⭐';
+  const coin=(typeof _ico==='function')?_ico('coin',19):'🪙';
+  box.innerHTML='<div class="statbar">'
+    +'<button class="sbar-pill sbar-streak" onclick="openProfiel()" aria-label="Streak '+streak+' dagen"><span class="sbar-ic">'+flame+'</span><span class="sbar-val">'+streak+'</span></button>'
+    +'<button class="sbar-pill sbar-coin" onclick="openShop()" aria-label="'+munten+' munten"><span class="sbar-ic">'+coin+'</span><span class="sbar-val">'+munten+'</span></button>'
+    +'<button class="sbar-pill sbar-lvl" onclick="openProfiel()" aria-label="Level '+lvl+'"><span class="sbar-ic">'+star+'</span><span class="sbar-val">'+lvl+'</span></button>'
+    +'<button class="sbar-pill sbar-div" onclick="openLeague()" style="--sb-col:'+divCol+'" aria-label="'+divName+'-divisie"><span class="sbar-ic sbar-div-ic no-ico">'+divIc+'</span><span class="sbar-val sbar-div-name">'+divName+'</span></button>'
+    +'</div>';
+}
 function renderHomeStats(){
+  try{renderStatBar();}catch(e){}
   const box=document.getElementById('home-bento');
   if(!box)return;
   try{if(typeof fbUpdateBadge==='function')setTimeout(fbUpdateBadge,0);}catch(e){}
@@ -1282,6 +1304,7 @@ function buyCosmetic(id){
 
 function openShop(){show('sc-shop');renderShop();}
 function renderEconHome(){
+  try{renderStatBar();}catch(e){}
   const box=document.getElementById('econ-home');
   if(!box)return;
   const coins=getCoins(), fr=getFreezes(), boosts=getXpBoosts(), dayOn=xpBoostDayActive();
