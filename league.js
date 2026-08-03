@@ -236,9 +236,11 @@ function showLeagueCeremony(r){
   const div=LEAGUE_DIVISIONS[r.newDiv]||LEAGUE_DIVISIONS[0];
   const el=document.createElement('div');
   el.id='lg-ceremony';el.className='lgc-overlay';
+  const _vonk=(typeof mascotSVG==='function')?mascotSVG(up?'trots':'goed',92):'';
   el.innerHTML=`<div class="lgc-card ${up?'lgc-up':'lgc-dn'}" style="--lg-col:${div.kleur}">
     <div class="lgc-rays" aria-hidden="true"></div>
-    <div class="lgc-badge no-ico">${div.ic}</div>
+    <div class="lgc-vonk">${up?'<span class="lgc-crown" aria-hidden="true">👑</span>':''}${_vonk}<span class="lgc-badge-mini no-ico">${div.ic}</span></div>
+    <div class="lgc-badge no-ico" hidden>${div.ic}</div>
     <div class="lgc-kicker">${up?'Gepromoveerd':'Nieuwe start'}</div>
     <div class="lgc-title">${up?'Welkom in de '+div.naam+'-divisie':'Je zakt naar '+div.naam}</div>
     <div class="lgc-sub">${up?'Je eindigde vorige week #'+r.rank+'. Sterk gewerkt!':'Deze week pak je het terug - jij kan dit.'}</div>

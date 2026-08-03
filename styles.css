@@ -6421,6 +6421,16 @@ html.dark .dom-hero-card{background:linear-gradient(180deg,rgba(255,255,255,.045
   filter:drop-shadow(0 8px 18px color-mix(in srgb,var(--lg-col) 55%,transparent));
   animation:lgcBadge .6s cubic-bezier(.34,1.7,.5,1) .15s backwards}
 @keyframes lgcBadge{0%{transform:scale(0) rotate(-30deg)}100%{transform:scale(1) rotate(0)}}
+/* Vonk viert de promotie mee - trots, met kroon; of bemoedigend bij degradatie */
+.lgc-vonk{position:relative;display:grid;place-items:center;height:96px;margin-bottom:8px}
+.lgc-vonk .m-svg{width:92px;height:92px;animation:lgcVonk .65s cubic-bezier(.34,1.65,.5,1) .12s backwards}
+@keyframes lgcVonk{0%{opacity:0;transform:translateY(30px) scale(.5)}100%{opacity:1;transform:none}}
+.lgc-crown{position:absolute;top:-6px;left:50%;transform:translateX(-50%);font-size:30px;z-index:2;
+  filter:drop-shadow(0 3px 6px rgba(180,120,0,.5));animation:lgcCrown .6s cubic-bezier(.34,1.8,.5,1) .5s backwards}
+@keyframes lgcCrown{0%{opacity:0;transform:translateX(-50%) translateY(14px) rotate(-18deg) scale(.4)}100%{opacity:1;transform:translateX(-50%) translateY(0) rotate(0) scale(1)}}
+.lgc-badge-mini{position:absolute;right:24%;bottom:2px;font-size:34px;line-height:1;z-index:2;
+  filter:drop-shadow(0 4px 10px color-mix(in srgb,var(--lg-col) 55%,transparent));animation:lgcBadge .6s cubic-bezier(.34,1.7,.5,1) .35s backwards}
+@media(prefers-reduced-motion:reduce){.lgc-vonk .m-svg,.lgc-crown,.lgc-badge-mini{animation:none}}
 .lgc-kicker{position:relative;font-family:var(--font-mono,var(--font));font-size:12px;font-weight:800;letter-spacing:.14em;
   text-transform:uppercase;color:var(--lg-col)}
 .lgc-title{position:relative;font-family:var(--font-head,inherit);font-size:23px;font-weight:800;color:var(--dk);
