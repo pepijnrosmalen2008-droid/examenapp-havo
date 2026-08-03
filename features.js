@@ -1480,6 +1480,24 @@ const _FLAME_MINI='<svg class="pw-flame" viewBox="0 0 24 24" width="15" height="
 const PRICE_REPAIR=75; // per gemiste dag
 
 // Ma-zo kalender van DEZE week met rijke states (done/frozen/today/future/missed).
+// Lange-streak-beloning: Vonk warmt zich bij een kampvuur (cozy). Vanaf 14 dagen.
+function _streakCampfireHTML(info){
+  const vonk=(typeof mascotSVG==='function')?mascotSVG('goed',92):'';
+  const fire=`<svg class="sc-fire" viewBox="0 0 64 74" width="64" height="74" aria-hidden="true">
+    <ellipse cx="32" cy="58" rx="27" ry="9" fill="#f59e0b" opacity=".28"/>
+    <rect x="11" y="54" width="42" height="7" rx="3.5" fill="#7c4a24" transform="rotate(-14 32 57)"/>
+    <rect x="11" y="54" width="42" height="7" rx="3.5" fill="#8a5a2e" transform="rotate(14 32 57)"/>
+    <path class="sc-flame sc-flame-o" d="M32 10 C41 24 45 31 45 42 a13 13 0 0 1-26 0 C19 31 23 24 32 10Z" fill="#fb8c3e"/>
+    <path class="sc-flame sc-flame-m" d="M32 22 C38 31 40 35 40 43 a8 8 0 0 1-16 0 C24 35 26 31 32 22Z" fill="#facc15"/>
+    <path class="sc-flame sc-flame-i" d="M32 33 C35 38 36 40 36 43 a4 4 0 0 1-8 0 C28 40 29 38 32 33Z" fill="#fff3c4"/>
+  </svg>`;
+  return `<div class="streak-campfire" role="img" aria-label="Vonk warmt zich bij het kampvuur, ${info.current} dagen streak">
+    <div class="sc-glow"></div>
+    <div class="sc-vonk">${vonk}</div>
+    ${fire}
+    <div class="sc-cap"><b>Lekker warm hier.</b><span>${info.current} dagen op rij - blijf zo doorgaan! 🔥</span></div>
+  </div>`;
+}
 function _streakWeekHTML(info){
   const s=getStreak();
   const frozen=new Set(s.frozen||[]);
@@ -1659,6 +1677,7 @@ function renderStreak(){
         </div>
       </div>
     </div>
+    ${(info.current||0)>=14?_streakCampfireHTML(info):''}
     ${_wk.html}
     <div class="streak-divider"></div>
     <div class="streak-badges-row">${badgeHtml}</div>
