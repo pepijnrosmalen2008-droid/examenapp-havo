@@ -1531,8 +1531,9 @@ function _streakRepairHTML(b){
     :`Herstel ’m voor ${cost} munten - één keer per breuk.`;
   const btn=freeze?'Gratis herstellen'
     :`Herstel voor ${cost} ${typeof _ico==='function'?_ico('coin',15):'🪙'}`;
+  const _sadVonk=(typeof mascotSVG==='function')?mascotSVG('laag',56):_FLAME_MINI.replace('width="15" height="15"','width="26" height="26"');
   return `<div class="streak-repair" role="group" aria-label="Streak herstellen">
-    <div class="streak-repair-ic">${_FLAME_MINI.replace('width="15" height="15"','width="26" height="26"')}<span class="streak-repair-crack"></span></div>
+    <div class="streak-repair-ic streak-repair-vonk">${_sadVonk}<span class="streak-repair-flame">${_FLAME_MINI}<span class="streak-repair-crack"></span></span></div>
     <div class="streak-repair-body">
       <div class="streak-repair-t">Je streak van ${b.runLen} dagen is verbroken</div>
       <div class="streak-repair-s">${sub}</div>

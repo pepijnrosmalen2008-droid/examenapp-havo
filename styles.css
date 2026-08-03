@@ -4067,6 +4067,13 @@ html.dark .hsd-pill{background:var(--bg2);border-color:var(--bo2)}
 .streak-repair-ic{position:relative;flex:none;width:52px;height:52px;border-radius:15px;display:grid;place-items:center;
   background:rgba(249,115,22,.15);color:#f97316}
 .streak-repair-ic .pw-flame{opacity:.55;filter:grayscale(.3)}
+/* Teleurgestelde Vonk bij een verbroken streak - hij treurt met je mee */
+.streak-repair-vonk{width:58px;height:58px;background:none;overflow:visible}
+.streak-repair-vonk .m-svg{width:58px;height:58px}
+.streak-repair-flame{position:absolute;right:-6px;bottom:-4px;width:24px;height:24px;border-radius:50%;display:grid;place-items:center;
+  background:rgba(249,115,22,.16);box-shadow:0 2px 6px rgba(0,0,0,.15),inset 0 0 0 1.5px rgba(249,115,22,.3)}
+.streak-repair-flame .pw-flame,.streak-repair-flame svg{width:14px;height:14px;opacity:.6;filter:grayscale(.3)}
+.streak-repair-flame .streak-repair-crack{left:50%;top:4px;bottom:4px;width:2px;transform:translateX(-50%) rotate(8deg)}
 .streak-repair-crack{position:absolute;left:50%;top:8px;bottom:8px;width:2.5px;transform:translateX(-50%) rotate(8deg);
   background:linear-gradient(var(--s),var(--s));border-radius:2px;box-shadow:0 0 0 1.5px rgba(0,0,0,.06)}
 .streak-repair-body{flex:1;min-width:0}
