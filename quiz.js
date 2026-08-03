@@ -1022,6 +1022,11 @@ function playSound(type){
         [659,988,1319,1568].forEach((f,i)=>T(ac,f,null,t+i*.08,.24,{type:'triangle',vol:.15,cut:4800,harm:.24,detune:5,rev:true}));
         T(ac,1976,null,t+.34,.4,{type:'sine',vol:.06,rev:true});
         break;
+      case'coin': // heldere metalen 'ching' - muntjes die binnenkomen
+        T(ac,1046,1568,t,.09,{type:'triangle',vol:.13,glide:.35,harm:.30,detune:8,rev:true});
+        T(ac,1568,2093,t+.05,.12,{type:'sine',vol:.10,glide:.35,harm:.26,rev:true});
+        N(ac,t,.02,{freq:5200,vol:.03,q:.8});
+        break;
       // ── Mini-clip (geanimeerde uitleg): subtiele, verhalende geluiden ──
       case'clipRoll': // laag oplopend 'rollen' terwijl het deeltje de heuvel op klimt
         T(ac,110,300,t,1.3,{type:'sawtooth',vol:.045,glide:.92,cut:620,q:.5,detune:8});
@@ -1152,7 +1157,7 @@ function toonRes(){
   try{_recordResult=saveProgress(ST.vak.id,ST.domein.id,ST.mode,sc,tot);}catch(e){}
   try{recordPractice();}catch(e){}
   // Munten belonen (basis + prestatie + perfect-bonus) + korte feedback
-  try{if(typeof awardQuizCoins==='function'){const _cw=awardQuizCoins(pct,pct>=0.999);window._coinsWon=_cw;setTimeout(()=>{try{showToast('+'+_cw+' munten 🪙','#f5b301');}catch(e){}},950);}}catch(e){}
+  try{if(typeof awardQuizCoins==='function'){const _cw=awardQuizCoins(pct,pct>=0.999);window._coinsWon=_cw;setTimeout(()=>{try{if(typeof floatCoins==='function')floatCoins(_cw);else showToast('+'+_cw+' munten 🪙','#f5b301');}catch(e){}},1050);}}catch(e){}
   // Track quiz voltooid
   try{_flushQBatch();trackEvent('quiz_completed',{vak:ST.vak?.naam,vak_id:ST.vak?.id,domein_id:ST.domein?.id,mode:ST.mode,score:sc,totaal:tot,pct:Math.round(pct*100)});}catch(e){}
   // Feature 2: PB tracking

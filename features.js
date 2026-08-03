@@ -733,6 +733,46 @@ function floatXP(amount){
   });
   setTimeout(()=>el.remove(),1500);
 }
+// Munten-beloning met "juice": een chip die inbounct + count-up, met een korte
+// muntenregen die eruit spat. Vervangt de kale toast op het resultaatscherm.
+function floatCoins(amount,refEl){
+  amount=Math.max(0,Math.round(amount||0));
+  if(!amount)return;
+  const anchor=refEl||document.getElementById('res-xp-card')||document.getElementById('sc-res');
+  const r=anchor?anchor.getBoundingClientRect():{top:innerHeight*0.34,left:innerWidth/2-70,width:140};
+  const cx=r.left+r.width/2, cy=r.top+window.scrollY-6;
+  const coinIco=(typeof _ico==='function')?_ico('coin',20):'🪙';
+  // De chip
+  const chip=document.createElement('div');
+  chip.className='coin-reward';
+  chip.style.cssText='top:'+cy+'px;left:'+cx+'px';
+  chip.innerHTML='<span class="coin-reward-ic">'+coinIco+'</span><span class="coin-reward-n" data-n="'+amount+'">0</span>';
+  document.body.appendChild(chip);
+  requestAnimationFrame(()=>chip.classList.add('in'));
+  // Muntenregen: kleine sprites die uit de chip spatten
+  const burst=Math.min(9,Math.max(4,Math.round(amount/2)));
+  for(let i=0;i<burst;i++){
+    const s=document.createElement('div');
+    s.className='coin-spark';
+    s.innerHTML=coinIco;
+    const ang=(-90+(Math.random()*140-70))*Math.PI/180;
+    const dist=44+Math.random()*60;
+    s.style.cssText='top:'+cy+'px;left:'+cx+'px;--dx:'+Math.round(Math.cos(ang)*dist)+'px;--dy:'+Math.round(Math.sin(ang)*dist)+'px;--rot:'+Math.round(Math.random()*360-180)+'deg;animation-delay:'+(i*28)+'ms';
+    document.body.appendChild(s);
+    setTimeout(()=>s.remove(),1100+i*28);
+  }
+  try{if(typeof playSound==='function')playSound('coin');}catch(e){}
+  try{if(typeof haptic==='function')haptic(18);}catch(e){}
+  // Count-up in de chip
+  setTimeout(()=>{
+    const sp=chip.querySelector('.coin-reward-n');if(!sp)return;
+    const target=+sp.getAttribute('data-n')||0,t0=performance.now(),dur=620;
+    const tick=now=>{const p=Math.max(0,Math.min(1,(now-t0)/dur));sp.textContent=Math.round(target*(1-Math.pow(1-p,3)));if(p<1)requestAnimationFrame(tick);else sp.textContent=target;};
+    requestAnimationFrame(tick);
+  },260);
+  setTimeout(()=>{chip.classList.add('out');},1500);
+  setTimeout(()=>chip.remove(),1900);
+}
 function renderGreeting(){
   const el=document.getElementById('hm-greeting');
   if(!el)return;
