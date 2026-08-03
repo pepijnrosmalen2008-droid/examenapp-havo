@@ -773,6 +773,36 @@ function floatCoins(amount,refEl){
   setTimeout(()=>{chip.classList.add('out');},1500);
   setTimeout(()=>chip.remove(),1900);
 }
+// Grote, warme Vonk-begroeting bovenaan de home: de mascotte leeft mee met
+// je dagdeel en je streak. Karakter i.p.v. een kaal tekstregeltje.
+function renderHomeGreet(){
+  const el=document.getElementById('hm-greet');
+  if(!el)return;
+  const h=new Date().getHours();
+  const gdag=h<12?'Goedemorgen':h<18?'Goedemiddag':'Goedenavond';
+  let naam='';try{const p=JSON.parse(localStorage.getItem(PROF_KEY)||'{}');naam=p.naam||localStorage.getItem('slagio_naam')||'';}catch(e){}
+  let streak=0,practicedToday=false;
+  try{const s=calcStreak();streak=s.current||0;const t=new Date().toISOString().slice(0,10);practicedToday=(s.days||[]).includes(t);}catch(e){}
+  let mood,hi,sub;
+  const hoi=gdag+(naam?', '+naam:'');
+  if(!practicedToday&&streak>=2){
+    mood='kijk'; hi=hoi+' 👀'; sub='Je <b>'+streak+'-dagen streak</b> loopt nog. Eén snelle quiz en hij blijft staan.';
+  }else if(practicedToday&&streak>=7){
+    mood='trots'; hi=hoi+' 💎'; sub='<b>'+streak+' dagen op rij</b> - je bent niet te stoppen.';
+  }else if(practicedToday&&streak>=3){
+    mood='feest'; hi=hoi+'! 🔥'; sub='<b>'+streak+' dagen op rij</b> - lekker bezig, hou vol!';
+  }else if(practicedToday){
+    mood='blij'; hi=hoi+'!'; sub='Vandaag al geoefend - top gedaan. ✅';
+  }else{
+    mood=(h<12?'blij':h<18?'goed':'goed'); hi=hoi+' 👋';
+    const moti=['Klaar om te knallen?','Eén quiz en je dag is binnen.','Kleine stappen, groot resultaat.','Je toekomstige ik bedankt je alvast.','Waar gaan we vandaag aan werken?'];
+    sub=moti[Math.floor(Date.now()/864e5)%moti.length];
+  }
+  const vonk=(typeof mascotSVG==='function')?mascotSVG(mood,84):'';
+  el.className='hm-greet';
+  el.innerHTML='<div class="hg-vonk">'+vonk+'</div>'
+    +'<div class="hg-text"><div class="hg-hi">'+hi+'</div><div class="hg-sub">'+sub+'</div></div>';
+}
 function renderGreeting(){
   const el=document.getElementById('hm-greeting');
   if(!el)return;
@@ -807,6 +837,7 @@ function renderGreeting(){
 }
 
 function renderHomeStats(){
+  try{renderHomeGreet();}catch(e){}
   const box=document.getElementById('home-bento');
   if(!box)return;
   try{if(typeof fbUpdateBadge==='function')setTimeout(fbUpdateBadge,0);}catch(e){}
