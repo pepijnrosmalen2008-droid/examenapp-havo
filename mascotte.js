@@ -29,9 +29,10 @@ function mascotSVG(mood, size) {
     oeps:   { mouth: 'M53 63 Q60 71 67 63 Q60 66 53 63 Z', brow: 'M38 33 Q46 29 54 33 M66 33 Q74 29 82 33', filled: true, prop: 'sweat', arms: 'down' },
     liefde: { mouth: 'M47 56 Q60 77 73 56 Q60 63 47 56 Z', brow: '',                         filled: true, heartEyes: true, prop: 'hearts', arms: 'down' },
     slaap:  { mouth: 'M56 61 Q60 63 64 61', brow: '',                                       sleep: true, prop: 'zzz', arms: 'down' },
+    lees:   { mouth: 'M56 61 Q60 63 64 61', brow: '',                                       eyeDn: 1, prop: 'book', arms: 'read' },
   };
   const s = M[mood] || M.blij;
-  const dy = (s.eyeUp ? -2.6 : 0.9);
+  const dy = (s.eyeUp ? -2.6 : (s.eyeDn ? 3.4 : 0.9));
   const eye = (cx) => `<ellipse cx="${cx}" cy="41" rx="9" ry="10.5" fill="#fff"/>`;
   const pup = (cx) => `<circle cx="${cx}" cy="${41 + dy}" r="5.4" fill="#2e2a39"/><circle cx="${cx + 2.1}" cy="${38.3 + dy}" r="2.2" fill="#fff"/><circle cx="${cx - 1.8}" cy="${43.5 + dy}" r="1.1" fill="#fff" opacity=".85"/>`;
   const heartEye = (cx) => `<path transform="translate(${cx},42)" d="M0 -1 C-2.6 -5 -8 -2.4 -6.4 1.4 C-5.2 4.2 -1.4 6 0 8 C1.4 6 5.2 4.2 6.4 1.4 C8 -2.4 2.6 -5 0 -1 Z" fill="#ff5a7a"/>`;
@@ -53,6 +54,16 @@ function mascotSVG(mood, size) {
     sweat: `<path class="m-prop m-sweat" d="M86 38 C82 45 82 50 86 50 C90 50 90 45 86 38 Z" fill="#7dd3fc"/>`,
     hearts: `<g class="m-prop m-hearts" fill="#ff6b9d"><path d="M92 26 C90 22 84 24 86 29 C87 32 91 34 92 36 C93 34 97 32 98 29 C100 24 94 22 92 26 Z"/><path d="M26 32 C24.5 29 20 30.5 21.5 34 C22 36 25 37.5 26 39 C27 37.5 30 36 30.5 34 C32 30.5 27.5 29 26 32 Z" opacity=".8"/></g>`,
     zzz: `<g class="m-prop m-zzz" fill="#94a0b8" font-family="var(--font-head)" font-weight="900"><text x="86" y="26" font-size="10">z</text><text x="94" y="20" font-size="13">Z</text></g>`,
+    // Open boekje dat Vonk met beide poten vasthoudt (voor laadschermen).
+    book: `<g class="m-prop m-book">
+      <path d="M40 82 C34 88 38 95 46 97" stroke="${OR}" stroke-width="12" stroke-linecap="round" fill="none"/>
+      <path d="M80 82 C86 88 82 95 74 97" stroke="${OR}" stroke-width="12" stroke-linecap="round" fill="none"/>
+      <path d="M60 84 C51 80 43 81 39 83 L41 100 C45 98 52 98 60 102 Z" fill="#eef2fb" stroke="#c3cad9" stroke-width="1.2"/>
+      <path d="M60 84 C69 80 77 81 81 83 L79 100 C75 98 68 98 60 102 Z" fill="#f8fafd" stroke="#c3cad9" stroke-width="1.2"/>
+      <path d="M60 84 L60 102" stroke="#c3cad9" stroke-width="1.4"/>
+      <g stroke="#d3d9e6" stroke-width="1" stroke-linecap="round" fill="none"><path d="M45 88h10M45 91h9M46 94h8"/><path d="M66 88h10M66 91h9M66 94h8"/></g>
+      ${paw(44, 99, 5.2)}${paw(76, 99, 5.2)}
+    </g>`,
   };
   const prop = s.prop ? (PROPS[s.prop] || '') : '';
   // armen per stemming (niet altijd zwaaien)
@@ -66,6 +77,7 @@ function mascotSVG(mood, size) {
   const aChinR = `<path d="M80 82 C88 76 74 70 63 66" stroke="${OR}" stroke-width="10.5" stroke-linecap="round" fill="none"/>${paw(61, 65, 6)}`;
   let leftArm, rightArm;
   switch (s.arms) {
+    case 'read':  leftArm = ''; rightArm = ''; break; // armen zitten in het boek-prop (bovenlaag)
     case 'cheer': leftArm = aCheerL; rightArm = aCheerR; break;
     case 'hips':  leftArm = aHipL;  rightArm = aHipR;  break;
     case 'chin':  leftArm = aDownL; rightArm = aChinR; break;
@@ -269,6 +281,30 @@ function vonkReact(mood, text, opts) {
   el.classList.remove('vr-in'); void el.offsetWidth; el.classList.add('vr-in');
   clearTimeout(_vonkReactT);
   _vonkReactT = setTimeout(() => { if (el) el.classList.remove('vr-in'); }, opts.duration || 1500);
+}
+
+// ─── Laad-overlay: Vonk leest een boekje terwijl data laadt ───
+// Verschijnt pas na ~200ms zodat snelle (gecachete) loads nooit flitsen.
+var _vlTimer = null;
+function vonkLoading(caption) {
+  clearTimeout(_vlTimer);
+  _vlTimer = setTimeout(function () {
+    let el = document.getElementById('vonk-loading');
+    if (!el) {
+      el = document.createElement('div'); el.id = 'vonk-loading'; el.className = 'vonk-loading';
+      el.setAttribute('role', 'status'); el.setAttribute('aria-live', 'polite');
+      document.body.appendChild(el);
+    }
+    el.innerHTML = '<div class="vl-card"><div class="vl-vonk">' + mascotSVG('lees', 120) + '</div>'
+      + '<div class="vl-cap">' + (caption || 'Even laden…') + '</div>'
+      + '<div class="vl-dots"><span></span><span></span><span></span></div></div>';
+    requestAnimationFrame(function () { el.classList.add('on'); });
+  }, 200);
+}
+function vonkLoadingHide() {
+  clearTimeout(_vlTimer);
+  const el = document.getElementById('vonk-loading');
+  if (el) { el.classList.remove('on'); setTimeout(function () { if (el && !el.classList.contains('on')) el.remove(); }, 260); }
 }
 
 // ─── Streak-reddernudge: Vonk smeekt je je streak te redden (Duolingo-stijl) ───

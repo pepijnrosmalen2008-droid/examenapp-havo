@@ -5,9 +5,10 @@ function _ceStatusMap(){return{'CE':{cls:'CE',icon:ICO_DOC,txt:'Centraal Examen'
 function openVak(id,_noHash){
   // Samenvattingen (SAM_RICH) worden lazy geladen; wacht erop vóór we de detailpagina
   // (met de samenvatting-tab) opbouwen, anders valt die terug op de basis-sam.
-  if(typeof ensureSamData==='function'&&typeof samReady==='function'&&typeof APP_LEVEL!=='undefined'&&!samReady(APP_LEVEL)){ensureSamData(APP_LEVEL,function(){openVak(id,_noHash);});return;}
+  if(typeof ensureSamData==='function'&&typeof samReady==='function'&&typeof APP_LEVEL!=='undefined'&&!samReady(APP_LEVEL)){try{if(typeof vonkLoading==='function')vonkLoading('Samenvattingen laden…');}catch(e){}ensureSamData(APP_LEVEL,function(){openVak(id,_noHash);});return;}
   // Vraag-data (sv/oe/begrippen + basis-sam) laadt per vak; hydrateer dit vak vóór opbouw.
-  if(typeof ensureVakData==='function'&&typeof vakHydrated==='function'&&typeof APP_LEVEL!=='undefined'&&!vakHydrated(APP_LEVEL,id)){ensureVakData(APP_LEVEL,id,function(){openVak(id,_noHash);});return;}
+  if(typeof ensureVakData==='function'&&typeof vakHydrated==='function'&&typeof APP_LEVEL!=='undefined'&&!vakHydrated(APP_LEVEL,id)){try{if(typeof vonkLoading==='function')vonkLoading('Vragen laden…');}catch(e){}ensureVakData(APP_LEVEL,id,function(){openVak(id,_noHash);});return;}
+  try{if(typeof vonkLoadingHide==='function')vonkLoadingHide();}catch(e){}
   ST.vak=getVK().find(v=>v.id===id);
   // Echte, indexeerbare URL i.p.v. een hash: dezelfde URL als de statische
   // SEO-pagina van dit vak (/vakken/<niveau>-<vak>.html). Zo is de in-app pagina
