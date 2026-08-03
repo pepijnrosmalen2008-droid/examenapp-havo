@@ -1052,3 +1052,13 @@ function swUpdate(){
   if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',_wirePwa);
   else _wirePwa();
 })();
+
+// ── Eén tik-haptic voor álle tikbare content-kaarten (zelfde gevoel overal) ──
+// Op 'click' (niet pointerdown) zodat scrollen geen valse trilling geeft.
+document.addEventListener('click', function (e) {
+  const t = e.target;
+  if (!t || !t.closest) return;
+  if (t.closest('.card,.lg-card,.bento-cell,.hm-menu-open')) {
+    try { if (typeof haptic === 'function') haptic(7); } catch (_) {}
+  }
+}, { passive: true });
