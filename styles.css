@@ -6868,6 +6868,11 @@ html.dark .dom-hero-card{background:linear-gradient(180deg,rgba(255,255,255,.045
    De home toont alleen nog de kerncijfers; het detail (weekkalender, avatar-
    evolutie, ranglijst) zit één tik verderop op profiel/shop/divisie. */
 #sc-home #league-home,#sc-home #econ-home,#sc-home #xp-home-bar{display:none}
+/* De oude statistiekenrij (#home-bento) is nu dubbelop met de statusbalk, en de
+   4 navigatietegels (.hm-menu) overlappen met de onderbalk + het Meer-menu.
+   Beide weg = veel minder knoppen, echt rustiger. Alle bestemmingen blijven
+   bereikbaar via de onderbalk en het Meer-menu (Voortgang + Rooster toegevoegd). */
+#sc-home #home-bento,#sc-home .hm-menu{display:none}
 .statbar{display:flex;gap:8px;margin:14px 0 4px}
 .sbar-pill{flex:1;min-width:0;display:flex;align-items:center;justify-content:center;gap:7px;padding:12px 6px;border-radius:16px;
   background:var(--s);border:1px solid var(--bo);cursor:pointer;font-family:var(--font-head);

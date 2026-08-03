@@ -428,6 +428,8 @@ function openNavSheet(){
     const I=(typeof ICO_CALC!=='undefined');
     const items=[
       [I?ICO_CALC:'🧮','Cijfers',"show('sc-calc');setTimeout(prefillCalcFromSaved,50)"],
+      [I?ICO_CHART:'📊','Voortgang',"openRapport()"],
+      [I?ICO_CALENDAR:'📅','Rooster',"show('sc-schedule');renderSchedule()"],
       [I?ICO_BOOK:'📕','Foutenboek',"openFoutenboek()"],
       [I?ICO_REPEAT:'🔄','Herhalen',"openHerhalen()"],
       [I?ICO_BOX:'🛒','Winkel',"openShop()"],
