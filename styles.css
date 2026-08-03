@@ -2309,7 +2309,8 @@ html.dark .calc-btn{background:#2e3550}
 .pwa-banner-title{font-size:14px;font-weight:800;color:var(--dk);margin-bottom:2px}
 .pwa-banner-sub{font-size:12px;color:var(--mu);line-height:1.4}
 .pwa-banner-btns{display:flex;flex-direction:column;gap:6px;flex-shrink:0}
-.pwa-banner-install{padding:9px 16px;border-radius:10px;background:var(--or);color:#fff;border:none;font-size:13px;font-weight:700;cursor:pointer;font-family:var(--font);white-space:nowrap}
+.pwa-banner-install{padding:10px 16px;border-radius:12px;background:linear-gradient(180deg,#fb8c3e,var(--or));color:#fff;border:none;font-size:13px;font-weight:800;cursor:pointer;font-family:var(--font);white-space:nowrap;box-shadow:0 4px 0 color-mix(in srgb,var(--or) 55%,#000),0 8px 16px -6px rgba(var(--or-rgb),.5);transition:transform .09s ease,box-shadow .09s ease}
+.pwa-banner-install:active{transform:translateY(4px);box-shadow:0 0 0 color-mix(in srgb,var(--or) 55%,#000),0 3px 8px -4px rgba(var(--or-rgb),.4)}
 .pwa-banner-dismiss{padding:6px 12px;border-radius:10px;background:transparent;color:var(--mu);border:1px solid var(--bo);font-size:12px;font-weight:600;cursor:pointer;font-family:var(--font);white-space:nowrap}
 .bottom-nav-inner{position:relative;display:flex;justify-content:center;align-items:flex-end;gap:4px;max-width:360px;margin:0 auto;background:color-mix(in srgb,var(--nav-bg) 64%,transparent);backdrop-filter:blur(34px) saturate(190%);-webkit-backdrop-filter:blur(34px) saturate(190%);border:1px solid rgba(255,255,255,.22);border-radius:30px;padding:8px 12px 10px;box-shadow:0 14px 42px rgba(0,0,0,.22),0 1.5px 0 rgba(255,255,255,.45) inset,0 -8px 20px rgba(255,255,255,.05) inset;pointer-events:all;overflow:visible}
 /* Liquid-glass glans bovenaan de pill */
@@ -6217,6 +6218,10 @@ html.dark #sc-zoek mark{color:#ffd9c2}
 .hm-zoek-teaser kbd{font:700 11px var(--font);background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.14);border-radius:6px;padding:2px 8px;color:rgba(255,255,255,.7);flex-shrink:0}
 .hm-zoek-teaser:hover{background:rgba(var(--or-rgb),.12);border-color:rgba(var(--or-rgb),.4);color:#fff}
 .hm-zoek-teaser:hover svg{stroke:var(--or)}
+/* Mobiel: de zoek-teaser is voor de donkere hero bedoeld (witte tekst); op de
+   lichte mobiele body wordt hij onleesbaar én is hij dubbelop met het zoek-icoon
+   in de header. Weglaten = rustiger + geen kapot ogend element. */
+@media(max-width:640px){.hm-zoek-teaser{display:none}}
 .hnav-zoek-btn svg{fill:none}
 
 /* Domein-flash na sprong vanuit zoek */
@@ -6285,7 +6290,8 @@ html.dark .dom-hero-card{background:linear-gradient(180deg,rgba(255,255,255,.045
 .econ-chip-static{cursor:default}
 .econ-chip .econ-lbl{font-size:11.5px;font-weight:700;color:var(--mu)}
 .econ-ic{font-size:16px;line-height:1}
-.econ-shop-btn{margin-left:auto;background:linear-gradient(180deg,#fb8c3e,var(--or));color:#fff;border:none;border-radius:13px;padding:9px 16px;font-size:13px;font-weight:800;cursor:pointer;font-family:var(--font);box-shadow:0 4px 12px rgba(var(--or-rgb),.3);transition:transform .12s}
+.econ-shop-btn{margin-left:auto;background:linear-gradient(180deg,#fb8c3e,var(--or));color:#fff;border:none;border-radius:12px;padding:10px 16px;font-size:13px;font-weight:800;cursor:pointer;font-family:var(--font);box-shadow:0 4px 0 color-mix(in srgb,var(--or) 55%,#000),0 8px 16px -6px rgba(var(--or-rgb),.5);transition:transform .09s ease,box-shadow .09s ease}
+.econ-shop-btn:active{transform:translateY(4px);box-shadow:0 0 0 color-mix(in srgb,var(--or) 55%,#000),0 3px 8px -4px rgba(var(--or-rgb),.4)}
 .econ-shop-btn:active{transform:scale(.96)}
 
 .shop-wrap{max-width:640px;margin:0 auto;padding:16px 16px 90px}
