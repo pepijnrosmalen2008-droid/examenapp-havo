@@ -608,6 +608,40 @@ function addXP(amount){
    Het Nederlandse slaag-ritueel - de vlag met de schooltas gaat omhoog.
    Speelt op level-up, perfecte score en een geslaagde simulatietoets.
    Eén bold moment; de rest van de UI blijft stil. Reduced-motion: statisch. */
+// ═══════ GEORKESTREERD LEVEL-UP-MOMENT (Duolingo-stijl succesbeleving) ═══════
+// Timing-choreografie: scherm dimt → Vonk springt → confetti + geluid + haptic →
+// levelnummer groeit → XP telt op → pas daarná de "Verder"-knop. Voelt als winst.
+function showLevelUp(lvl, lvlName, xpAdded){
+  if(document.getElementById('levelup-overlay'))return;
+  const vonk=(typeof mascotSVG==='function')?mascotSVG('feest',132):'';
+  const el=document.createElement('div');
+  el.id='levelup-overlay';el.className='lvlup-overlay';
+  el.innerHTML='<div class="lvlup-inner">'
+    +'<div class="lvlup-rays" aria-hidden="true"></div>'
+    +'<div class="lvlup-vonk">'+vonk+'</div>'
+    +'<div class="lvlup-kicker">Level up!</div>'
+    +'<div class="lvlup-num">'+lvl+'</div>'
+    +'<div class="lvlup-name">'+(lvlName||('Level '+lvl))+'</div>'
+    +'<div class="lvlup-xp">+<span class="lvlup-xp-n" data-n="'+(xpAdded||0)+'">0</span> XP</div>'
+    +'<button class="lvlup-btn" onclick="_lvlupClose()">Verder</button>'
+    +'</div>';
+  document.body.appendChild(el);
+  requestAnimationFrame(function(){el.classList.add('show');});
+  // Beats: geluid + zwaardere haptic direct, confetti kort erna, tweede burst later.
+  try{if(typeof playSound==='function')playSound('levelup');}catch(e){}
+  try{if(typeof haptic==='function')haptic([40,40,90,40,160]);}catch(e){}
+  setTimeout(function(){try{if(typeof launchConfetti==='function')launchConfetti('gold');}catch(e){}},200);
+  setTimeout(function(){try{if(typeof launchConfetti==='function')launchConfetti();}catch(e){}},560);
+  // XP telt op, ná de nummer-pop.
+  setTimeout(function(){
+    const sp=el.querySelector('.lvlup-xp-n');if(!sp)return;
+    const target=+sp.getAttribute('data-n')||0,t0=performance.now(),dur=750;
+    const tick=function(now){const p=Math.max(0,Math.min(1,(now-t0)/dur));sp.textContent=Math.round(target*(1-Math.pow(1-p,3)));if(p<1)requestAnimationFrame(tick);else sp.textContent=target;};
+    requestAnimationFrame(tick);
+  },820);
+}
+function _lvlupClose(){const el=document.getElementById('levelup-overlay');if(el){el.classList.remove('show');setTimeout(function(){el.remove();},300);}}
+
 function slagioVlagUit(kind){
   try{if(typeof playSound==='function')playSound('fanfare');}catch(e){}
   // Vonk juicht mee bij het grote moment (kort, in de hoek, niet-blokkerend).

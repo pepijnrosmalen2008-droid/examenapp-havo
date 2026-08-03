@@ -1281,7 +1281,7 @@ function toonRes(){
       // Divisie-widget: hoe ben je gestegen na deze quiz? (weekXP is al bijgewerkt in addXP;
       // _lgLastDelta is de werkelijk toegevoegde week-XP - dubbel tijdens een rush-venster.)
       try{if(typeof renderResultLeague==='function'&&!ST.isFoutenboek)renderResultLeague((typeof _lgLastDelta!=='undefined'&&_lgLastDelta)||res.added);}catch(e){}
-      if(res.leveled){setTimeout(()=>{try{slagioVlagUit('levelup');}catch(e){try{launchConfetti();}catch(_){}}},300);setTimeout(()=>playSound('levelup'),400);haptic([50,30,80,30,120]);}
+      if(res.leveled){setTimeout(()=>{try{showLevelUp(res.newLvl,lvlName,res.added);}catch(e){try{slagioVlagUit('levelup');}catch(_){}}},420);}
       else if(isPerfect){setTimeout(()=>{try{slagioVlagUit('perfect');}catch(e){}},300);}
       setTimeout(()=>floatXP(res.added),150);
       // Level teaser - als dichtbij volgend level

@@ -6748,3 +6748,33 @@ html.dark .dom-hero-card{background:linear-gradient(180deg,rgba(255,255,255,.045
   #sc-home.on #slim-home,#sc-home.on #dagmissie-home,#sc-home.on #streak-home,
   #sc-home.on #league-home,#sc-home.on #econ-home,#sc-sociaal.on .soc-hub-card{animation:none}
 }
+
+/* ══════ GEORKESTREERD LEVEL-UP-MOMENT (timing = beleving) ══════ */
+.lvlup-overlay{position:fixed;inset:0;z-index:9600;display:flex;align-items:center;justify-content:center;padding:24px;
+  background:rgba(10,7,20,0);transition:background .45s ease}
+.lvlup-overlay.show{background:rgba(10,7,20,.8)}
+@supports(backdrop-filter:blur(1px)){.lvlup-overlay{backdrop-filter:blur(0);transition:background .45s ease,backdrop-filter .45s ease}.lvlup-overlay.show{backdrop-filter:blur(8px)}}
+.lvlup-inner{position:relative;text-align:center;max-width:340px}
+.lvlup-rays{position:absolute;left:50%;top:40%;width:150vw;height:150vw;max-width:660px;max-height:660px;transform:translate(-50%,-50%);pointer-events:none;
+  background:conic-gradient(from 0deg,rgba(245,183,49,.16),transparent 20deg,rgba(245,183,49,.16) 40deg,transparent 60deg,rgba(245,183,49,.16) 80deg,transparent 100deg,rgba(245,183,49,.16) 120deg,transparent 140deg,rgba(245,183,49,.16) 160deg,transparent 180deg,rgba(245,183,49,.16) 200deg,transparent 220deg,rgba(245,183,49,.16) 240deg,transparent 260deg,rgba(245,183,49,.16) 280deg,transparent 300deg,rgba(245,183,49,.16) 320deg,transparent 340deg);
+  opacity:0;animation:lvlupRays .9s ease .4s forwards,lvlupSpin 16s linear infinite}
+@keyframes lvlupRays{to{opacity:1}}
+@keyframes lvlupSpin{to{transform:translate(-50%,-50%) rotate(360deg)}}
+.lvlup-vonk{position:relative;display:grid;place-items:center;height:132px;margin-bottom:6px}
+.lvlup-vonk .m-svg{width:132px;height:132px;animation:lvlupVonk .7s cubic-bezier(.34,1.6,.5,1) .15s backwards}
+@keyframes lvlupVonk{0%{opacity:0;transform:translateY(46px) scale(.4)}100%{opacity:1;transform:none}}
+.lvlup-kicker{position:relative;font-family:var(--font-mono,var(--font));font-size:13px;font-weight:800;letter-spacing:.18em;text-transform:uppercase;color:#fbbf24;animation:lvlupItem .5s cubic-bezier(.34,1.56,.64,1) .4s backwards}
+.lvlup-num{position:relative;font-family:var(--font-head,inherit);font-size:104px;font-weight:900;line-height:1;color:#fff;letter-spacing:-.04em;text-shadow:0 6px 30px rgba(245,183,49,.6);animation:lvlupNum .75s cubic-bezier(.34,1.7,.5,1) .35s backwards}
+@keyframes lvlupNum{0%{opacity:0;transform:scale(0)}58%{opacity:1;transform:scale(1.22)}78%{transform:scale(.96)}100%{transform:scale(1)}}
+.lvlup-name{position:relative;font-size:20px;font-weight:800;color:#fff;margin-top:2px;animation:lvlupItem .5s cubic-bezier(.22,1,.36,1) .7s backwards}
+.lvlup-xp{position:relative;font-family:var(--font-head,inherit);font-size:22px;font-weight:900;color:#fbbf24;margin-top:10px;animation:lvlupItem .5s cubic-bezier(.22,1,.36,1) .95s backwards}
+.lvlup-xp-n{font-variant-numeric:tabular-nums}
+.lvlup-btn{position:relative;margin-top:26px;border:none;border-radius:15px;padding:15px 44px;cursor:pointer;font-family:var(--font);font-size:16px;font-weight:800;color:#3b2a00;background:linear-gradient(135deg,#fcd34d,#f5b301);box-shadow:0 5px 0 #b9820a,0 12px 26px -6px rgba(245,183,49,.6);animation:lvlupBtn .5s cubic-bezier(.34,1.56,.64,1) 1.6s backwards;transition:transform .08s,box-shadow .08s}
+.lvlup-btn:active{transform:translateY(5px);box-shadow:0 0 0 #b9820a,0 5px 12px -6px rgba(245,183,49,.5)}
+@keyframes lvlupItem{0%{opacity:0;transform:translateY(16px)}100%{opacity:1;transform:none}}
+@keyframes lvlupBtn{0%{opacity:0;transform:translateY(18px) scale(.9)}100%{opacity:1;transform:none}}
+@media(prefers-reduced-motion:reduce){.lvlup-overlay,.lvlup-overlay.show{transition:none}.lvlup-rays,.lvlup-vonk .m-svg,.lvlup-kicker,.lvlup-num,.lvlup-name,.lvlup-xp,.lvlup-btn{animation:none}}
+/* Vonk SCHRIKT bij een fout (mood 'oeps') - eenmalige recoil */
+.m-mood-oeps .m-fig{animation:mStartle .5s cubic-bezier(.34,1.5,.64,1)}
+@keyframes mStartle{0%{transform:translateY(0)}16%{transform:translateY(-9px) scale(1.05,.93)}38%{transform:translateY(-9px)}68%{transform:translateY(0) scale(.97,1.03)}100%{transform:translateY(0)}}
+@media(prefers-reduced-motion:reduce){.m-mood-oeps .m-fig{animation:none}}
