@@ -819,13 +819,27 @@ function renderStatBar(){
   try{const L=ensureLeague();const d=LEAGUE_DIVISIONS[L.division];if(d){divIc=d.ic;divName=d.naam;divCol=d.kleur;}}catch(e){}
   const flame=(typeof ICO_FLAME!=='undefined')?ICO_FLAME:'🔥';
   const star=(typeof ICO_STAR!=='undefined')?ICO_STAR:'⭐';
-  const coin=(typeof _ico==='function')?_ico('coin',19):'🪙';
+  const coin=(typeof _ico==='function')?_ico('coin',20):'🪙';
+  const pill=(cls,go,ic,val,lbl,style)=>'<button class="sbar-pill '+cls+'" onclick="'+go+'"'+(style||'')+' aria-label="'+lbl+' '+val+'">'
+    +'<span class="sbar-top"><span class="sbar-ic">'+ic+'</span><span class="sbar-val">'+val+'</span></span>'
+    +'<span class="sbar-lbl">'+lbl+'</span></button>';
   box.innerHTML='<div class="statbar">'
-    +'<button class="sbar-pill sbar-streak" onclick="openProfiel()" aria-label="Streak '+streak+' dagen"><span class="sbar-ic">'+flame+'</span><span class="sbar-val">'+streak+'</span></button>'
-    +'<button class="sbar-pill sbar-coin" onclick="openShop()" aria-label="'+munten+' munten"><span class="sbar-ic">'+coin+'</span><span class="sbar-val">'+munten+'</span></button>'
-    +'<button class="sbar-pill sbar-lvl" onclick="openProfiel()" aria-label="Level '+lvl+'"><span class="sbar-ic">'+star+'</span><span class="sbar-val">'+lvl+'</span></button>'
-    +'<button class="sbar-pill sbar-div" onclick="openLeague()" style="--sb-col:'+divCol+'" aria-label="'+divName+'-divisie"><span class="sbar-ic sbar-div-ic no-ico">'+divIc+'</span><span class="sbar-val sbar-div-name">'+divName+'</span></button>'
+    +pill('sbar-streak',"statPillGo('streak')",flame,streak,'streak')
+    +pill('sbar-coin',"statPillGo('munten')",coin,munten,'munten')
+    +pill('sbar-lvl',"statPillGo('level')",star,lvl,'level')
+    +pill('sbar-div',"statPillGo('divisie')",'<span class="sbar-div-ic no-ico">'+divIc+'</span>','',divName,' style="--sb-col:'+divCol+'"')
     +'</div>';
+}
+// Tik op een statuspill: ga écht naar de juiste plek (en scroll naar de sectie).
+function statPillGo(what){
+  try{
+    if(what==='munten'){openShop();return;}
+    if(what==='divisie'){openLeague();return;}
+    // streak / level -> profiel, dan scrollen naar de relevante sectie
+    const anchor=(what==='streak')?'#streak-home':'#anim-evo-section';
+    openProfiel();
+    setTimeout(function(){try{const el=document.querySelector(anchor);if(el)el.scrollIntoView({behavior:'smooth',block:'center'});}catch(e){}},420);
+  }catch(e){}
 }
 function renderHomeStats(){
   try{renderStatBar();}catch(e){}
