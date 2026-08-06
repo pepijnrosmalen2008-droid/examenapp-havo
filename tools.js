@@ -280,7 +280,13 @@ function goToDomein(vakId,domeinId,mode){
   else if(mode==='flash')startFlash();
   else openVak(vakId);
 }
+function renderPlanHubBadges(){
+  const setBadge=(id,n)=>{const b=document.getElementById(id);if(!b)return;if(n>0){b.textContent=n>99?'99+':n;b.style.display='';}else{b.style.display='none';}};
+  try{ setBadge('plan-herh-badge', (typeof herhaalDueCount==='function')?herhaalDueCount():0); }catch(e){}
+  try{ const s=(typeof fbStats==='function')?fbStats():{}; setBadge('plan-fb-badge', s.due||0); }catch(e){}
+}
 function renderStudieplan(){
+  try{ renderPlanHubBadges(); }catch(e){}
   const el=document.getElementById('studieplan-content');
   if(!el)return;
   const mijn=getMijnVakken();
