@@ -78,8 +78,29 @@ const ONB_STEPS = [
     body:()=>`<button class="onb-cta onb-cta-big" onclick="onbComplete()">Start met oefenen!</button>` },
 ];
 
+// Bestaande gegevens voorinvullen (voor gebruikers die de app al gebruikten):
+// zo raken ze niets kwijt en zijn hun keuzes al aangevinkt.
+function onbPrefillFromExisting(){
+  try{
+    const lvl=localStorage.getItem('examenapp_level');
+    if(lvl){
+      ONB.data.niveau=lvl;
+      if(typeof APP_LEVEL!=='undefined') APP_LEVEL=lvl;
+      if(typeof applyLevelTheme==='function') applyLevelTheme(lvl);
+      if(typeof ensureLevelData==='function') ensureLevelData(lvl,()=>{ try{ if(document.getElementById('onb')&&ONB_STEPS[ONB.i]&&ONB_STEPS[ONB.i].key==='vakken') onbRender(); }catch(e){} });
+      const mvRaw=localStorage.getItem('examenapp_mijnvakken_'+lvl);
+      if(mvRaw){ try{ const mv=JSON.parse(mvRaw); const arr=Array.isArray(mv)?mv:(mv.list||[]); if(arr.length) ONB.data.vakken=arr.slice(); }catch(e){} }
+    }
+    const p=JSON.parse(localStorage.getItem('examenapp_profiel')||'{}');
+    if(p.klas) ONB.data.klas=p.klas;
+    if(p.profiel) ONB.data.profiel=p.profiel;
+    if(p.animalId) ONB.data.animalId=p.animalId;
+  }catch(e){}
+}
+
 function onbStart(){
   ONB.i=0; ONB.data={ niveau:null, klas:null, profiel:null, vakken:[], animalId:null, cijfers:false, studieplan:false };
+  onbPrefillFromExisting();
   const ov=document.getElementById('onb'); if(!ov)return;
   ov.style.display='flex';
   requestAnimationFrame(()=>ov.classList.add('on'));
@@ -115,8 +136,10 @@ function onbPick(key,val){
   if(key==='niveau'){
     ONB.data.klas=null;
     try{
+      // In-memory zetten + data laden (voedt de vakkenstap), maar NIET persisteren:
+      // pas bij onbComplete wordt examenapp_level opgeslagen. Zo herstart een
+      // reload midden in de intro netjes i.p.v. als "terugkerende gebruiker".
       if(typeof APP_LEVEL!=='undefined') APP_LEVEL=val;
-      localStorage.setItem('examenapp_level',val);
       if(typeof applyLevelTheme==='function') applyLevelTheme(val);
       if(typeof ensureLevelData==='function') ensureLevelData(val,()=>{});
     }catch(e){}

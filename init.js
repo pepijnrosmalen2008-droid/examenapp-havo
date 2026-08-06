@@ -474,6 +474,14 @@ window.show=function(id,_noHash){_origShow(id,_noHash);updateBottomNav(id);};
 
 // Activeer routing na volledig laden
 window.addEventListener('load',()=>{
+  // Eenmalige nieuwe intro (Vonk-gesprek) voor IEDEREEN die 'm nog niet zag -
+  // nieuwe én bestaande gebruikers. Bestaande gegevens (niveau/klas/profiel/
+  // vakken/dier) worden voorgevuld zodat niemand iets kwijtraakt. Daarna wordt
+  // slagio_onboard_v3 gezet en verschijnt de intro nooit meer.
+  if(!localStorage.getItem('slagio_onboard_v3') && typeof onbStart==='function'){
+    setTimeout(onbStart,240);
+    return;
+  }
   // Query-param fallback: ?niveau=havo&vak=bi[&domein=C] → open vak (+ optioneel domein)
   const _qp=new URLSearchParams(location.search);
   const _qniv=_qp.get('niveau'), _qvak=_qp.get('vak'), _qdom=_qp.get('domein');
@@ -505,16 +513,6 @@ window.addEventListener('load',()=>{
   // Hash-routing voor sub-schermen
   if(location.hash&&location.hash.length>1){
     setTimeout(_routeFromHash,120);
-    return;
-  }
-  // Nieuwe gebruiker (geen niveau + onboarding nog niet gedaan): start de nieuwe
-  // intro (Vonk-gesprek). Die vervangt het losse niveau-keuzescherm - de
-  // niveau-stap in de intro is nu de plek waar je HAVO/VWO kiest.
-  if(!localStorage.getItem('examenapp_level')
-     && !localStorage.getItem('slagio_onboard_v3')
-     && !localStorage.getItem('slagio_seen_intro_v2')
-     && typeof onbStart==='function'){
-    setTimeout(onbStart,220);
   }
 });
 
