@@ -404,6 +404,8 @@ function updateBottomNav(id){
   // Update profiel button label: Inloggen vs Profiel
   const lbl=document.getElementById('bnav-profiel-label');
   if(lbl)lbl.textContent=currentUser?'Profiel':'Inloggen';
+  const pbtn=document.getElementById('bnav-profiel-btn');
+  if(pbtn)pbtn.title=currentUser?'Profiel':'Inloggen';
   // Hide bottom nav during quiz/flashcard/qmode
   const hideScreens=['sc-quiz','sc-flash','sc-qmode','sc-welcome','sc-race'];
   const bn=document.getElementById('bottom-nav');
@@ -430,6 +432,10 @@ function toggleSidebar(){
 }
 // Voorkeur direct toepassen (voor de eerste paint, zonder flikker).
 try{if(localStorage.getItem('slagio_sidebar_collapsed')==='1')document.body.classList.add('sidebar-collapsed');}catch(e){}
+// Hover-tooltips op de nav-knoppen (nuttig als de zijbalk is ingeklapt).
+try{document.querySelectorAll('#bottom-nav .bnav-btn,#bottom-nav .snav-btn,#bottom-nav .bnav-fab').forEach(function(b){
+  if(!b.title){var t=b.getAttribute('aria-label')||(b.textContent||'').trim();if(t)b.title=t;}
+});}catch(e){}
 
 // ── Mobiel menu (bottom-sheet met alle onderdelen) ──
 function openNavSheet(){
