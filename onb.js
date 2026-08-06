@@ -30,6 +30,36 @@ const ONB_STEPS = [
   { key:'klas', mood:'goed', type:'single',
     text:'In welke klas zit je nu?',
     body:()=>`<div class="onb-opts">${_onbKlassen().map(([v,lbl])=>`<button class="onb-opt${ONB.data.klas===v?' sel':''}" onclick="onbPick('klas','${v}')"><span class="onb-opt-tx"><span class="onb-opt-main">${lbl}</span></span><span class="onb-opt-check">✓</span></button>`).join('')}</div>` },
+
+  { key:'profiel', mood:'denk', type:'single',
+    text:'Welk <b>profiel</b> volg je?',
+    body:()=>{
+      const P=[['nt','Natuur & Techniek','N&T'],['ng','Natuur & Gezondheid','N&G'],['em','Economie & Maatschappij','E&M'],['cm','Cultuur & Maatschappij','C&M']];
+      return `<div class="onb-opts">${P.map(([v,lbl,ab])=>`<button class="onb-opt${ONB.data.profiel===v?' sel':''}" onclick="onbPick('profiel','${v}')"><span class="onb-opt-tx"><span class="onb-opt-main">${lbl}</span><span class="onb-opt-sub">${ab}</span></span><span class="onb-opt-check">✓</span></button>`).join('')}</div>`;
+    } },
+
+  { key:'vakken', mood:'goed', type:'multi',
+    text:'Kies je <b>examenvakken</b>. Deze zet ik bovenaan je startscherm.',
+    body:()=>{
+      const vk=(typeof getVK==='function')?getVK():[];
+      if(!vk.length) return '<div class="onb-loading">Vakken laden…</div>';
+      return `<div class="onb-vakgrid">${vk.map(v=>`<button class="onb-vak${ONB.data.vakken.includes(v.id)?' sel':''}" onclick="onbToggleVak('${v.id}')" style="--vc:${v.kleur}"><span class="onb-vak-ic"><svg viewBox="0 0 24 24">${(typeof VAK_ICONS!=='undefined'&&VAK_ICONS[v.id])||'<circle cx="12" cy="12" r="4"/>'}</svg></span><span class="onb-vak-nm">${v.naam}</span><span class="onb-vak-ck">✓</span></button>`).join('')}</div>`;
+    } },
+
+  { key:'dier', mood:'blij', type:'single',
+    text:'Kies je <b>maatje</b>. Hij groeit mee met je XP.',
+    body:()=>{
+      const A=(typeof ANIMAL_EVOLUTIONS!=='undefined')?ANIMAL_EVOLUTIONS:[];
+      return `<div class="onb-diergrid">${A.map(a=>`<button class="onb-dier${ONB.data.animalId===a.id?' sel':''}" onclick="onbPick('animalId','${a.id}')"><span class="onb-dier-av">${(typeof getAnimalDisplay==='function')?getAnimalDisplay(a.id,0,44):''}</span><span class="onb-dier-nm">${a.n}</span></button>`).join('')}</div>`;
+    } },
+
+  { key:'uitleg', mood:'trots', type:'info',
+    text:'Zo werkt Slagio - in het kort:',
+    body:()=>`<div class="onb-uitleg">
+      <div class="onb-ul-row"><span class="onb-ul-ic">⚡</span><div><b>Oefen slim</b> - korte quizzen per domein met directe feedback.</div></div>
+      <div class="onb-ul-row"><span class="onb-ul-ic">🔥</span><div><b>Bouw je streak</b> - elke dag oefenen geeft bonus-XP en badges.</div></div>
+      <div class="onb-ul-row"><span class="onb-ul-ic">🏆</span><div><b>Zie je slagingskans</b> - en klim in de wekelijkse divisies.</div></div>
+      <button class="onb-cta" onclick="onbNext()">Duidelijk!</button></div>` },
 ];
 
 function onbStart(){
@@ -55,23 +85,49 @@ function onbRender(first){
   if(foot) foot.style.display=(step.type==='multi')?'flex':'none';
   const skip=document.getElementById('onb-skip');
   if(skip) skip.style.display=step.optional?'':'none';
+  const nxt=document.querySelector('#onb-foot .onb-next');
+  if(nxt) nxt.disabled=(step.key==='vakken'&&ONB.data.vakken.length===0);
   if(!first) _onbSound('swoosh');
 }
 
 function onbPick(key,val){
   ONB.data[key]=val;
-  _onbHaptic([16]); _onbSound('correct');
-  // Bij niveau-wijziging: klas resetten (opties veranderen)
-  if(key==='niveau') ONB.data.klas=null;
-  // Toon selectie meteen
+  _onbHaptic([12,28,18]); _onbSound('correct');
+  // Bij niveau-keuze: klas resetten én meteen de niveau-data laden (voedt de vakkenstap)
+  if(key==='niveau'){
+    ONB.data.klas=null;
+    try{
+      if(typeof APP_LEVEL!=='undefined') APP_LEVEL=val;
+      localStorage.setItem('examenapp_level',val);
+      if(typeof applyLevelTheme==='function') applyLevelTheme(val);
+      if(typeof ensureLevelData==='function') ensureLevelData(val,()=>{});
+    }catch(e){}
+  }
   onbRenderCard();
-  const step=ONB_STEPS[ONB.i];
   const bd=document.getElementById('onb-body');
-  if(bd) bd.querySelectorAll('.onb-opt').forEach(b=>b.classList.remove('sel'));
-  const chosen=bd&&Array.from(bd.querySelectorAll('.onb-opt')).find(b=>b.getAttribute('onclick')&&b.getAttribute('onclick').includes("'"+val+"'"));
-  if(chosen) chosen.classList.add('sel');
-  // Single-select: kort tonen, dan door
-  if(step.type==='single'){ setTimeout(()=>onbNext(),430); }
+  if(bd){
+    bd.querySelectorAll('.onb-opt,.onb-dier').forEach(b=>b.classList.remove('sel'));
+    const chosen=Array.from(bd.querySelectorAll('.onb-opt,.onb-dier')).find(b=>{const oc=b.getAttribute('onclick');return oc&&oc.includes("'"+val+"'");});
+    if(chosen) chosen.classList.add('sel');
+  }
+  // Vonk reageert blij + hopt
+  const vk=document.getElementById('onb-vonk');
+  if(vk&&typeof mascotSVG==='function'){ vk.innerHTML=mascotSVG('feest',118); vk.classList.remove('onb-hop'); void vk.offsetWidth; vk.classList.add('onb-hop'); }
+  const step=ONB_STEPS[ONB.i];
+  if(step.type==='single'){ setTimeout(()=>onbNext(),470); }
+}
+
+function onbToggleVak(id){
+  const arr=ONB.data.vakken, i=arr.indexOf(id);
+  const nowOn=i<0;
+  if(nowOn) arr.push(id); else arr.splice(i,1);
+  _onbHaptic(nowOn?[14]:[8]); _onbSound(nowOn?'correct':'tap');
+  const bd=document.getElementById('onb-body');
+  const btn=bd&&Array.from(bd.querySelectorAll('.onb-vak')).find(b=>{const oc=b.getAttribute('onclick');return oc&&oc.includes("'"+id+"'");});
+  if(btn) btn.classList.toggle('sel',nowOn);
+  onbRenderCard();
+  const nxt=document.querySelector('#onb-foot .onb-next');
+  if(nxt) nxt.disabled=arr.length===0;
 }
 
 function onbNext(){

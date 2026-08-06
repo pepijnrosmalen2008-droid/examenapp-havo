@@ -7076,3 +7076,33 @@ html.dark .dom-hero-card{background:linear-gradient(180deg,rgba(255,255,255,.045
 .onb-next:active{transform:translateY(4px);box-shadow:0 1px 0 color-mix(in srgb,var(--or) 55%,#000)}
 @media(prefers-reduced-motion:reduce){.onb-vonk-in,.onb-bubble.pop,.onb-body.slidein,.onb-card.show,.onb-card-row[style]{animation:none}}
 @media(max-width:400px){.onb-vonk{width:96px;height:96px}.onb-bubble{font-size:14.5px}.onb-opt-main{font-size:16px}}
+
+/* Onboarding - Vonk levendiger + nieuwe stappen */
+.onb-vonk svg{animation:onbBreathe 3.4s ease-in-out infinite}
+@keyframes onbBreathe{0%,100%{transform:translateY(0) rotate(-1deg)}50%{transform:translateY(-5px) rotate(1.5deg)}}
+.onb-vonk.onb-hop{animation:onbHop .55s cubic-bezier(.34,1.5,.5,1)}
+@keyframes onbHop{0%{transform:translateY(0)}28%{transform:translateY(-18px) scale(1.05)}52%{transform:translateY(0)}70%{transform:translateY(-7px)}100%{transform:translateY(0)}}
+.onb-vakgrid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+.onb-vak{position:relative;display:flex;align-items:center;gap:10px;padding:13px;border:2px solid var(--bo);border-radius:15px;background:var(--s);color:var(--dk);cursor:pointer;text-align:left;font-family:var(--font);transition:transform .14s cubic-bezier(.34,1.4,.6,1),border-color .16s,background .16s;-webkit-tap-highlight-color:transparent}
+.onb-vak:active{transform:scale(.97)}
+.onb-vak.sel{border-color:var(--vc,var(--or));background:color-mix(in srgb,var(--vc,var(--or)) 10%,var(--s))}
+.onb-vak-ic{flex-shrink:0;width:34px;height:34px;border-radius:10px;display:flex;align-items:center;justify-content:center;background:color-mix(in srgb,var(--vc,var(--or)) 14%,var(--s))}
+.onb-vak-ic svg{width:20px;height:20px;fill:none;stroke:var(--vc,var(--or));stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.onb-vak-nm{flex:1;min-width:0;font-family:var(--font-head);font-weight:700;font-size:13.5px;line-height:1.15;white-space:normal;overflow-wrap:anywhere}
+.onb-vak-ck{position:absolute;top:6px;right:7px;width:19px;height:19px;border-radius:50%;background:var(--vc,var(--or));color:#fff;display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:800;opacity:0;transform:scale(.4);transition:opacity .16s,transform .2s cubic-bezier(.34,1.6,.5,1)}
+.onb-vak.sel .onb-vak-ck{opacity:1;transform:scale(1)}
+.onb-diergrid{display:grid;grid-template-columns:1fr 1fr 1fr;gap:10px}
+.onb-dier{display:flex;flex-direction:column;align-items:center;gap:5px;padding:12px 6px;border:2px solid var(--bo);border-radius:16px;background:var(--s);color:var(--dk);cursor:pointer;font-family:var(--font);transition:transform .14s cubic-bezier(.34,1.4,.6,1),border-color .16s,background .16s;-webkit-tap-highlight-color:transparent}
+.onb-dier:active{transform:scale(.95)}
+.onb-dier.sel{border-color:var(--or);background:color-mix(in srgb,var(--or) 10%,var(--s));box-shadow:0 4px 14px rgba(var(--or-rgb),.2)}
+.onb-dier-av{width:46px;height:46px;display:flex;align-items:center;justify-content:center}
+.onb-dier-av svg{width:100%;height:100%}
+.onb-dier-nm{font-family:var(--font-head);font-weight:700;font-size:12px}
+.onb-uitleg{display:flex;flex-direction:column;gap:12px}
+.onb-ul-row{display:flex;align-items:flex-start;gap:12px;padding:14px 15px;background:var(--s);border:1.5px solid var(--bo);border-radius:15px;font-size:14px;line-height:1.4;color:var(--dk)}
+.onb-ul-row b{font-weight:800}
+.onb-ul-ic{font-size:22px;line-height:1;flex-shrink:0}
+.onb-uitleg .onb-cta{margin-top:4px}
+.onb-loading{text-align:center;color:var(--mu);padding:30px;font-size:14px}
+.onb-next:disabled{opacity:.4;box-shadow:none;cursor:not-allowed}
+@media(prefers-reduced-motion:reduce){.onb-vonk svg{animation:none}.onb-vonk.onb-hop{animation:none}}
