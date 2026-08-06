@@ -34,7 +34,7 @@ function startQ(mode){
   clearQuizDraft();
   try{if(typeof ensureFbMeta==='function')ensureFbMeta();}catch(e){} // "Waarom fout?" alvast laden
   ST.mode=mode;
-  ST.idx=0;ST.score=0;ST.antwrd=[];ST.tijdPerVraag=[];ST.combo=0;ST.xpThisRound=0;ST.flagged=new Set();
+  ST.idx=0;ST.score=0;ST.antwrd=[];ST.tijdPerVraag=[];ST.combo=0;ST.xpThisRound=0;ST.flagged=new Set();ST._interShown={};
   if(!ST.isDailyChallenge)ST.isDailyChallenge=false;
   ST.isFoutenboek=false;
   ST.adaptive=false;
@@ -137,7 +137,7 @@ function openOEPicker(){
 
 function startOESingle(qIdx){
   ST.mode='oud';
-  ST.idx=0;ST.score=0;ST.antwrd=[];ST.tijdPerVraag=[];ST.combo=0;ST.xpThisRound=0;ST.flagged=new Set();
+  ST.idx=0;ST.score=0;ST.antwrd=[];ST.tijdPerVraag=[];ST.combo=0;ST.xpThisRound=0;ST.flagged=new Set();ST._interShown={};
   ST.vragen=[ST.domein.oe[qIdx]];
   const q=ST.domein.oe[qIdx];
   const jaarLabel=q.jaar?` · ${q.jaar} T${q.tijdvak||1}`:'';
@@ -272,6 +272,11 @@ function toonV(){
 document.addEventListener('keydown',function(e){
   const scQuiz=document.getElementById('sc-quiz');
   if(!scQuiz||!scQuiz.classList.contains('on'))return;
+  // Vonk-tussenkaart open? Enter/Space stuurt de "Ga door"-knop, verder niets.
+  if(window._qInterOpen){
+    if(e.key==='Enter'||e.key===' '){const b=document.querySelector('.qinter-go');if(b){b.click();e.preventDefault();}}
+    return;
+  }
   // Negeer als focus in een input/textarea zit
   if(['INPUT','TEXTAREA','SELECT'].includes(document.activeElement.tagName))return;
   const nxt=document.getElementById('qnxt');
@@ -440,6 +445,11 @@ function beoordeel(pts){
 }
 
 function nextQ(){
+  // Duolingo-stijl: soms een korte Vonk-tussenkaart tonen (combo-bonus / halverwege).
+  try{ if(_maybeQuizInter()) return; }catch(e){}
+  _advanceQ();
+}
+function _advanceQ(){
   ST.idx++;
   if(ST.adaptive){
     if(ST.idx>=ST.aqTarget||(!ST.vragen[ST.idx]&&!aqFill())){toonRes();return;}
@@ -447,6 +457,67 @@ function nextQ(){
   }
   if(ST.idx>=ST.vragen.length)toonRes();
   else toonV();
+}
+
+// ═══════ MID-QUIZ VONK-INTERSTITIAL (Duolingo-stijl pacing) ═══════
+// Verschijnt tussen twee vragen: viert een combo-mijlpaal of het halverwege-punt,
+// deelt een kleine bonus-XP uit en geeft de speler een dopamine-beat + adempauze.
+function _maybeQuizInter(){
+  if(ST.mode!=='snel')return false;                  // alleen snelle quiz
+  const tot=ST.adaptive?ST.aqTarget:ST.vragen.length;
+  const answered=ST.idx+1;                            // aantal beantwoord (idx = zojuist beantwoorde vraag)
+  if(answered>=tot)return false;                      // niet vlak voor het resultaat
+  ST._interShown=ST._interShown||{};
+  const combo=ST.combo||0;
+  if(combo===5&&!ST._interShown.c5){ST._interShown.c5=1;return _showQuizInter({type:'combo',combo:5,bonus:15});}
+  if(combo>=8&&!ST._interShown.c8){ST._interShown.c8=1;return _showQuizInter({type:'combo',combo:combo,bonus:25});}
+  if(answered===Math.floor(tot/2)&&!ST._interShown.half&&!ST._interShown.c5&&!ST._interShown.c8){
+    ST._interShown.half=1;
+    return _showQuizInter({type:'half',perfect:ST.score>=answered,bonus:10});
+  }
+  return false;
+}
+function _showQuizInter(o){
+  const bonus=Math.max(0,o.bonus||0);
+  if(bonus>0)ST.xpThisRound=(ST.xpThisRound||0)+bonus;
+  const _pk=a=>a[Math.floor(Math.random()*a.length)];
+  let mood='feest',head,sub;
+  if(o.type==='combo'){
+    mood='feest';
+    head=`${o.combo} op rij! 🔥`;
+    sub=_pk(['Je bent niet te stoppen!','Wat een reeks, ga zo door!','Vlammend bezig!','Op deze manier haal je alles!']);
+  }else{
+    mood=o.perfect?'trots':'blij';
+    head=o.perfect?'Halverwege en foutloos! ⭐':'Je bent op de helft! 💪';
+    sub=o.perfect?_pk(['Geen enkele fout tot nu toe. Wauw!','Perfect tot hier, hou vol!']):_pk(['Lekker bezig, blijf gaan!','Nog even en je hebt ’m!','De tweede helft haal je ook!']);
+  }
+  const vonk=(typeof mascotSVG==='function')?mascotSVG(mood,150):'';
+  const ov=document.createElement('div');
+  ov.className='qinter-overlay';
+  ov.innerHTML=`<div class="qinter-card">
+    <div class="qinter-burst"></div>
+    <div class="qinter-vonk">${vonk}</div>
+    <div class="qinter-head">${head}</div>
+    <div class="qinter-sub">${sub}</div>
+    ${bonus>0?`<div class="qinter-bonus"><span class="qib-plus">+${bonus}</span> XP bonus</div>`:''}
+    <button class="qinter-go" type="button">Ga door <span aria-hidden="true">→</span></button>
+  </div>`;
+  document.body.appendChild(ov);
+  window._qInterOpen=true;
+  const go=ov.querySelector('.qinter-go');
+  const close=()=>{
+    if(!window._qInterOpen)return;
+    window._qInterOpen=false;
+    ov.classList.add('out');
+    setTimeout(()=>ov.remove(),260);
+    _advanceQ();
+  };
+  go.addEventListener('click',()=>{try{playSound('pop');haptic(10);}catch(e){}close();});
+  requestAnimationFrame(()=>ov.classList.add('in'));
+  try{playSound(o.type==='combo'?'combo':'levelup');}catch(e){}
+  try{haptic([16,34,20]);}catch(e){}
+  if(bonus>0){setTimeout(()=>{try{if(typeof floatXP==='function')floatXP(bonus);}catch(e){}},260);}
+  return true;
 }
 
 // ═══════ PARTICLES ═══════

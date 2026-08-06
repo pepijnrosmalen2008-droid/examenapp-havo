@@ -7127,3 +7127,26 @@ html.dark .dom-hero-card{background:linear-gradient(180deg,rgba(255,255,255,.045
 .coin-fly{position:fixed;z-index:9600;pointer-events:none;will-change:transform,opacity;filter:drop-shadow(0 3px 5px rgba(0,0,0,.35))}
 .coin-fly svg{width:22px;height:22px;display:block}
 @media(prefers-reduced-motion:reduce){.coin-btn.coin-bump{animation:none}.coin-fly{transition:opacity .3s!important;transform:none!important}}
+
+/* ═══ Mid-quiz Vonk-interstitial (Duolingo-stijl pacing tussen vragen) ═══ */
+.qinter-overlay{position:fixed;inset:0;z-index:9650;display:flex;align-items:flex-end;justify-content:center;padding:0;background:rgba(6,8,14,0);transition:background .26s ease;pointer-events:auto}
+.qinter-overlay.in{background:rgba(6,8,14,.62);backdrop-filter:blur(7px);-webkit-backdrop-filter:blur(7px)}
+.qinter-overlay.out{background:rgba(6,8,14,0);backdrop-filter:blur(0)}
+.qinter-card{position:relative;width:100%;max-width:460px;background:linear-gradient(180deg,#141826,#0e1119);border:1px solid rgba(255,255,255,.1);border-bottom:none;border-radius:26px 26px 0 0;padding:26px 24px calc(24px + env(safe-area-inset-bottom,0px));text-align:center;box-shadow:0 -18px 60px rgba(0,0,0,.5);transform:translateY(105%);transition:transform .4s cubic-bezier(.22,1.05,.36,1);overflow:hidden}
+.qinter-overlay.in .qinter-card{transform:translateY(0)}
+.qinter-overlay.out .qinter-card{transform:translateY(105%);transition:transform .24s ease-in}
+.qinter-burst{position:absolute;top:-40px;left:50%;width:280px;height:280px;transform:translateX(-50%);background:radial-gradient(circle,rgba(251,140,62,.34),rgba(251,140,62,0) 62%);pointer-events:none}
+.qinter-vonk{position:relative;display:flex;justify-content:center;margin-bottom:6px}
+.qinter-vonk svg{width:132px;height:132px;filter:drop-shadow(0 8px 20px rgba(0,0,0,.45));animation:qinterPop .5s cubic-bezier(.34,1.6,.5,1)}
+@keyframes qinterPop{0%{transform:scale(.4) translateY(20px);opacity:0}60%{transform:scale(1.08)}100%{transform:scale(1) translateY(0);opacity:1}}
+.qinter-head{position:relative;font-family:var(--font-head);font-weight:900;font-size:23px;color:#fff;letter-spacing:-.3px;line-height:1.15}
+.qinter-sub{position:relative;font-size:14.5px;color:rgba(255,255,255,.66);margin-top:7px;line-height:1.45;font-weight:500}
+.qinter-bonus{position:relative;display:inline-flex;align-items:center;gap:7px;margin-top:16px;padding:9px 18px;background:linear-gradient(135deg,rgba(34,197,94,.22),rgba(16,185,129,.14));border:1px solid rgba(74,222,128,.42);border-radius:999px;color:#86efac;font-family:var(--font-head);font-weight:800;font-size:14px;animation:qinterBonus .5s cubic-bezier(.34,1.7,.5,1) .18s both}
+.qinter-bonus .qib-plus{font-size:18px;color:#4ade80;text-shadow:0 0 12px rgba(74,222,128,.55)}
+@keyframes qinterBonus{0%{transform:scale(.3);opacity:0}55%{transform:scale(1.15)}100%{transform:scale(1);opacity:1}}
+.qinter-go{position:relative;display:block;width:100%;margin-top:20px;padding:16px;background:linear-gradient(135deg,#fb8c3e,#e8580c);border:none;border-radius:16px;color:#fff;font-family:var(--font-head);font-weight:900;font-size:16.5px;cursor:pointer;box-shadow:0 6px 20px rgba(232,88,12,.4);-webkit-tap-highlight-color:transparent;transition:transform .12s cubic-bezier(.34,1.5,.5,1),box-shadow .16s}
+.qinter-go:hover{box-shadow:0 8px 26px rgba(232,88,12,.52)}
+.qinter-go:active{transform:scale(.97)}
+.qinter-go span{display:inline-block;transition:transform .18s}
+.qinter-go:hover span{transform:translateX(3px)}
+@media(prefers-reduced-motion:reduce){.qinter-overlay,.qinter-card,.qinter-vonk svg,.qinter-bonus{transition:none!important;animation:none!important}.qinter-card{transform:none!important}}
