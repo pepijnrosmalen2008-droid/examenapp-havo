@@ -395,8 +395,9 @@ buildSlaagInputs();
 // Show welcome on first load (sc-welcome is default via class="on")
 // ═══════ BOTTOM NAV ═══════
 function updateBottomNav(id){
-  // sc-auth counts as sc-profiel for nav highlighting
-  const activeId=(id==='sc-auth')?'sc-profiel':id;
+  // sc-auth counts as sc-profiel; sociaal-subschermen tellen als sc-sociaal (Wedstrijd)
+  let activeId=(id==='sc-auth')?'sc-profiel':id;
+  if(['sc-league','sc-groep','sc-leaderboard'].includes(id))activeId='sc-sociaal';
   document.querySelectorAll('.bnav-btn').forEach(b=>{
     b.classList.toggle('active',b.dataset.screen===activeId);
   });

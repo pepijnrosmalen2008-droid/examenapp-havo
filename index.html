@@ -1461,7 +1461,7 @@
 <nav class="nav"><div class="nav-inner"><div class="logo" onclick="show('sc-home')"><img src="/icon-192.png" alt="Slagio" style="width:26px;height:26px;border-radius:7px;object-fit:cover;flex-shrink:0">Slagio</div><button class="bk" onclick="show('sc-home')">← Terug</button><button class="theme-btn" onclick="toggleDark()" title="Nachtmodus" style="margin-left:auto"><svg viewBox="0 0 24 24"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg></button></div></nav>
 <div class="w soc-hub-wrap">
   <div class="soc-hub-header">
-    <div class="soc-hub-title">🌐 Sociaal</div>
+    <div class="soc-hub-title"><svg class="ico" viewBox="0 0 24 24" width="1em" height="1em" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="vertical-align:-3px"><path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"/><path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"/><path d="M4 22h16"/><path d="M10 14.66V17c0 .55-.47.98-.97 1.21C7.85 18.75 7 20.24 7 22"/><path d="M14 14.66V17c0 .55.47.98.97 1.21C16.15 18.75 17 20.24 17 22"/><path d="M18 2H6v7a6 6 0 0 0 12 0V2Z"/></svg> Wedstrijd</div>
     <div class="soc-hub-sub">Vergelijk je voortgang en speel samen</div>
   </div>
   <div class="soc-hub-cards">
@@ -2122,8 +2122,8 @@
       </button>
       <span class="bnav-fab-label">Oefen</span>
     </div>
-    <button class="bnav-btn" data-screen="sc-calc" onclick="show('sc-calc');setTimeout(prefillCalcFromSaved,50)" aria-label="Cijfercalculator">
-      <span class="bnav-icon"><svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg></span>Cijfers
+    <button class="bnav-btn" data-screen="sc-sociaal" onclick="show('sc-sociaal')" aria-label="Wedstrijd">
+      <span class="bnav-icon"><svg viewBox="0 0 24 24"><path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"/><path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"/><path d="M4 22h16"/><path d="M10 14.66V17c0 .55-.47.98-.97 1.21C7.85 18.75 7 20.24 7 22"/><path d="M14 14.66V17c0 .55.47.98.97 1.21C16.15 18.75 17 20.24 17 22"/><path d="M18 2H6v7a6 6 0 0 0 12 0V2Z"/></svg></span>Wedstrijd
     </button>
     <button class="bnav-btn" data-screen="sc-profiel" id="bnav-profiel-btn" onclick="openProfiel()" aria-label="Profiel">
       <span class="bnav-icon" id="bnav-profiel-icon"><svg viewBox="0 0 24 24"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg></span><span id="bnav-profiel-label">Profiel</span>
