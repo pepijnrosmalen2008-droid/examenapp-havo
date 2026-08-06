@@ -314,6 +314,8 @@ function filterGrid(query){
     card.style.display=match?'':'none';
     if(match)visible++;
   });
+  // Sectiekoppen verbergen tijdens zoeken (ze horen niet bij een gefilterde lijst).
+  document.querySelectorAll('#vakgrid .vakgrid-section').forEach(h=>{h.style.display=q?'none':'';});
   const nr=document.getElementById('sb-noresult');
   if(nr){
     nr.textContent='';
@@ -538,6 +540,7 @@ function buildGrid(){
   const cijfers=getSavedCijfers();
   const favs=getFavs();
   let vakken=getVK();
+  let _defaultOrder=false, _mijnVakSet=[];
   if(_favOnly){
     vakken=vakken.filter(v=>v.domeinen.some(d=>favs.includes(v.id+'_'+d.id)));
   }
@@ -547,8 +550,29 @@ function buildGrid(){
     vakken=[...vakken].sort((a,b)=>{const pa=getVakBestPct(a.id),pb=getVakBestPct(b.id);return (pa.hasData?pa.pct:-1)-(pb.hasData?pb.pct:-1);});
   }else if(_activeSort==='cijfd'){
     vakken=[...vakken].sort((a,b)=>{const ca=cijfers[a.id]??-1,cb=cijfers[b.id]??-1;return cb-ca;});
+  }else{
+    // Standaardvolgorde: de eigen examenvakken van de leerling eerst (persoonlijker
+    // + minder scrollen langs vakken die je niet volgt). Stabiel: binnen elke groep
+    // blijft de oorspronkelijke volgorde. Geen gekozen vakken -> geen wijziging.
+    try{
+      const mijn=(typeof getMijnVakken==='function')?getMijnVakken():[];
+      if(mijn&&mijn.length){
+        vakken=[...vakken].sort((a,b)=>(mijn.includes(a.id)?0:1)-(mijn.includes(b.id)?0:1));
+        _mijnVakSet=mijn; _defaultOrder=true;
+      }
+    }catch(e){}
   }
+  // Sectiekoppen ("Jouw vakken" / "Andere vakken") alleen bij standaardvolgorde
+  // én als de leerling een deel van de vakken heeft gekozen (niet alle/geen).
+  const _showSections=_defaultOrder&&!_favOnly&&_mijnVakSet.length>0&&_mijnVakSet.length<getVK().length;
+  let _secState=0; // 0=nog niks, 1=in "Jouw vakken", 2=in "Andere vakken"
+  const _addSectionHead=(txt)=>{const h=document.createElement('div');h.className='vakgrid-section';h.textContent=txt;g.appendChild(h);};
   vakken.forEach(v=>{
+    if(_showSections){
+      const _mine=_mijnVakSet.includes(v.id);
+      if(_mine&&_secState===0){_addSectionHead('Jouw vakken');_secState=1;}
+      else if(!_mine&&_secState!==2){_addSectionHead('Andere vakken');_secState=2;}
+    }
     const d=document.createElement('div');
     d.className='card';
     d.style.setProperty('--card-col',v.kleur);
