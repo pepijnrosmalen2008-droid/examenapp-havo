@@ -379,9 +379,11 @@ function _kiesReveal(gekozen,correct,btns){
     else if(ST.combo>=3)vonkReact('feest',_pk(['Op dreef! 🔥','Goed bezig!','Yes!','Lekker bezig!']));
   }}catch(e){}
   saveQuizDraft();
+  // Duolingo-stijl feedback: groen = juist, rood = jouw foute keuze, rest dimt neutraal weg.
   btns.forEach((b,i)=>{
     if(i===correct)b.classList.add('correct');
-    else b.classList.add('wrong');
+    else if(i===gekozen)b.classList.add('wrong');
+    else b.classList.add('faded');
   });
   const fb=document.getElementById('qfb');
   fb.style.display='block';
@@ -410,7 +412,7 @@ function tijdOp(){
   saveQuizDraft();
   const correct=ST.shuffleMap.indexOf(q.c);
   const btns=document.querySelectorAll('#snel-area .opt');
-  btns.forEach((b,i)=>{b.disabled=true;if(i===correct)b.classList.add('correct');else b.classList.add('wrong');});
+  btns.forEach((b,i)=>{b.disabled=true;if(i===correct)b.classList.add('correct');else b.classList.add('faded');});
   const fb=document.getElementById('qfb');
   fb.style.display='block';
   fb.className='qfb fbtm';

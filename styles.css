@@ -865,8 +865,8 @@ html.dark .qb{background:#2e3550}
 .qstp:hover{background:rgba(255,255,255,.16);border-color:rgba(255,255,255,.28);transform:translateY(-1px)}
 .qstp:active{transform:scale(.96)}
 .qstp:hover{background:rgba(255,255,255,.18)}
-.qpb{height:6px;background:rgba(255,255,255,.08);margin:14px 18px 10px;border-radius:3px}
-.qpf{height:100%;background:linear-gradient(90deg, var(--or), #f59e0b);border-radius:3px;transition:width .5s cubic-bezier(.34,1.3,.64,1)}
+.qpb{height:11px;background:rgba(255,255,255,.1);margin:14px 18px 10px;border-radius:99px;box-shadow:inset 0 1px 2px rgba(0,0,0,.35)}
+.qpf{height:100%;background:linear-gradient(90deg, var(--or), #f59e0b);border-radius:99px;transition:width .5s cubic-bezier(.34,1.3,.64,1)}
 .qring{position:relative;width:56px;height:56px;margin:0 auto 8px;filter:drop-shadow(0 0 8px rgba(var(--or-rgb),.6)) drop-shadow(0 0 2px rgba(var(--or-rgb),.4));transition:filter .5s}
 .qring svg{position:absolute;top:0;left:0;width:100%;height:100%;transform:rotate(-90deg);display:block}
 .qring circle{fill:none;stroke-width:4}
@@ -4666,7 +4666,7 @@ html.dark .hsd-pill{background:var(--bg2);border-color:var(--bo2)}
   /* ── QUIZ: native app schermvullend gevoel ── */
   .qtb{padding:8px 14px 0!important;gap:8px!important}
   .qstp{padding:6px 12px!important;font-size:12px!important;border-radius:10px!important}
-  .qpb{margin:6px 14px!important;height:5px!important;border-radius:3px!important}
+  .qpb{margin:6px 14px!important;height:9px!important;border-radius:99px!important}
   .qbody{padding:14px 14px 18px!important;border-radius:22px!important;margin:6px 10px 0!important}
   .qring{width:52px!important;height:52px!important;flex-shrink:0!important}
   .trn{font-size:16px!important}
@@ -4793,7 +4793,7 @@ html.dark .hsd-pill{background:var(--bg2);border-color:var(--bo2)}
     overflow:hidden!important;
   }
   #sc-quiz .qtb{flex-shrink:0;padding:10px 14px 0!important;gap:8px!important}
-  #sc-quiz .qpb{flex-shrink:0;margin:7px 14px 0!important;height:4px!important}
+  #sc-quiz .qpb{flex-shrink:0;margin:7px 14px 0!important;height:9px!important;border-radius:99px!important}
   #sc-quiz .quiz-skeleton{flex:1}
   #sc-quiz .qbody{
     flex:1!important;
@@ -5770,6 +5770,16 @@ html.dark{
   box-shadow:0 1px 2px rgba(11,15,26,.16),0 8px 20px rgba(11,15,26,.18)!important;
 }
 .opt .oi{background:rgba(var(--or-rgb),.16)!important;color:var(--or)!important}
+/* Jouw foute keuze = duidelijk rood (tegenhanger van het groene 'correct'-blok). */
+.opt.wrong{
+  background:linear-gradient(135deg,#f2555f 0%,#dc2f3c 100%)!important;
+  color:#fff!important;border:none!important;opacity:1!important;
+  box-shadow:0 10px 34px rgba(220,38,50,.5),0 0 0 3px rgba(248,113,113,.45),0 1px 0 rgba(255,255,255,.22) inset!important;
+}
+.opt.wrong .oi{background:rgba(255,255,255,.22)!important;color:#fff!important}
+/* De niet-gekozen opties dimmen rustig weg (blijven papier, geen rainbow-modder). */
+.opt.faded{opacity:.4!important;box-shadow:0 1px 2px rgba(11,15,26,.12)!important}
+.opt.faded .oi{opacity:.65}
 .opt.oA:not(.correct):not(.wrong):hover:not(:disabled),
 .opt.oB:not(.correct):not(.wrong):hover:not(:disabled),
 .opt.oC:not(.correct):not(.wrong):hover:not(:disabled),
