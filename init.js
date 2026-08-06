@@ -423,6 +423,14 @@ function updateBottomNav(id){
     }catch(e){}
   }
 }
+// ── Desktop-zijbalk in-/uitklappen (voorkeur onthouden) ──
+function toggleSidebar(){
+  const c=document.body.classList.toggle('sidebar-collapsed');
+  try{localStorage.setItem('slagio_sidebar_collapsed',c?'1':'0');}catch(e){}
+}
+// Voorkeur direct toepassen (voor de eerste paint, zonder flikker).
+try{if(localStorage.getItem('slagio_sidebar_collapsed')==='1')document.body.classList.add('sidebar-collapsed');}catch(e){}
+
 // ── Mobiel menu (bottom-sheet met alle onderdelen) ──
 function openNavSheet(){
   let ov=document.getElementById('nav-sheet-ov');

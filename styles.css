@@ -2335,8 +2335,8 @@ html.dark .calc-btn{background:#2e3550}
 .bnav-fab svg{width:21px;height:21px;fill:#fff;position:relative;z-index:1}
 .bnav-fab:active{transform:scale(.86);box-shadow:0 2px 10px rgba(var(--or-rgb),.35)}
 .bnav-fab-label{font-size:9.5px;font-weight:700;color:var(--or);letter-spacing:.2px}
-/* Zijbalk-merk (alleen zichtbaar op laptop/desktop) */
-.bnav-brand{display:none}
+/* Zijbalk-onderdelen (alleen zichtbaar op laptop/desktop) */
+.bnav-brand,.bnav-head,.snav-section{display:none}
 
 /* ══ LAPTOP/DESKTOP: navigatie als vaste linker zijbalk ══════════════════
    Hergebruikt exact dezelfde nav-knoppen als de mobiele onderbalk, maar
@@ -2371,6 +2371,32 @@ html.dark .calc-btn{background:#2e3550}
   /* Merk zit nu in de zijbalk -> dubbele "Slagio" in de topbalk weghalen */
   .hnav-logo img,.hnav-wordmark{display:none}
   .nav .logo{display:none}
+  /* Kop van de zijbalk: merk + inklap-knop */
+  .bnav-head{display:flex;align-items:center;justify-content:space-between;gap:8px;padding:2px 6px 14px}
+  .bnav-collapse{display:flex;align-items:center;justify-content:center;width:34px;height:34px;flex-shrink:0;border:none;background:transparent;color:var(--mu);border-radius:10px;cursor:pointer;transition:background .15s,color .15s;-webkit-tap-highlight-color:transparent}
+  .bnav-collapse:hover{background:color-mix(in srgb,var(--dk) 6%,transparent);color:var(--dk)}
+  .bnav-collapse svg{width:20px;height:20px;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+  /* Secundaire "Meer"-groep onderaan de zijbalk */
+  .snav-section{display:block;margin-top:12px;padding-top:12px;border-top:1px solid var(--bo)}
+  .snav-label{font-size:11px;font-weight:800;letter-spacing:.7px;text-transform:uppercase;color:var(--mu);padding:2px 14px 8px}
+  .snav-btn{display:flex;align-items:center;gap:14px;width:100%;padding:9px 14px;border:none;background:transparent;color:var(--mu);font-family:var(--font);font-size:13.5px;font-weight:600;border-radius:12px;cursor:pointer;text-align:left;transition:background .15s,color .15s;-webkit-tap-highlight-color:transparent}
+  .snav-btn:hover{background:color-mix(in srgb,var(--dk) 5%,transparent);color:var(--dk)}
+  .snav-ic{display:flex;align-items:center;justify-content:center;width:22px;height:22px;flex-shrink:0}
+  .snav-ic svg{width:20px;height:20px;fill:none;stroke:currentColor;stroke-width:1.9;stroke-linecap:round;stroke-linejoin:round}
+
+  /* ── INGEKLAPTE ZIJBALK (icoon-rail) ────────────────────────── */
+  body.sidebar-collapsed{padding-left:76px}
+  body.sidebar-collapsed .bottom-nav{width:76px}
+  body.sidebar-collapsed .bottom-nav-inner{padding:18px 12px}
+  body.sidebar-collapsed .bnav-head{justify-content:center;padding:2px 0 14px}
+  body.sidebar-collapsed .bnav-brand{display:none}
+  body.sidebar-collapsed .bnav-btn,
+  body.sidebar-collapsed .snav-btn,
+  body.sidebar-collapsed .bnav-fab{font-size:0;justify-content:center;gap:0;padding-left:0;padding-right:0}
+  body.sidebar-collapsed .bnav-fab::after{display:none}
+  body.sidebar-collapsed .snav-label{display:none}
+  body.sidebar-collapsed .snav-section{border-top:1px solid var(--bo);margin-top:10px;padding-top:10px}
+  body.sidebar-collapsed .bnav-collapse svg{transform:scaleX(-1)}
 }
 
 /* ── MOBILE HERO STATS STRIP ─────────────────── */
@@ -6932,6 +6958,9 @@ html.dark .dom-hero-card{background:linear-gradient(180deg,rgba(255,255,255,.045
    Beide weg = veel minder knoppen, echt rustiger. Alle bestemmingen blijven
    bereikbaar via de onderbalk en het Meer-menu (Voortgang + Rooster toegevoegd). */
 #sc-home #home-bento,#sc-home .hm-menu{display:none}
+/* De "Meer"-knop is weg: al die schermen zitten nu in de zijbalk (desktop) en
+   zijn op mobiel bereikbaar via de hubs (Plan/Wedstrijd/Profiel) + statuspills. */
+#sc-home .hm-menu-open{display:none}
 .statbar{display:flex;gap:9px;margin:14px 0 4px}
 .sbar-pill{flex:1;min-width:0;display:flex;flex-direction:column;align-items:center;gap:3px;padding:13px 4px 11px;border-radius:18px;
   background:var(--s);border:1px solid var(--bo);cursor:pointer;font-family:var(--font-head);
