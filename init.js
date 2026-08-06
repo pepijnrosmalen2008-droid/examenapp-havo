@@ -505,6 +505,16 @@ window.addEventListener('load',()=>{
   // Hash-routing voor sub-schermen
   if(location.hash&&location.hash.length>1){
     setTimeout(_routeFromHash,120);
+    return;
+  }
+  // Nieuwe gebruiker (geen niveau + onboarding nog niet gedaan): start de nieuwe
+  // intro (Vonk-gesprek). Die vervangt het losse niveau-keuzescherm - de
+  // niveau-stap in de intro is nu de plek waar je HAVO/VWO kiest.
+  if(!localStorage.getItem('examenapp_level')
+     && !localStorage.getItem('slagio_onboard_v3')
+     && !localStorage.getItem('slagio_seen_intro_v2')
+     && typeof onbStart==='function'){
+    setTimeout(onbStart,220);
   }
 });
 

@@ -60,6 +60,22 @@ const ONB_STEPS = [
       <div class="onb-ul-row"><span class="onb-ul-ic">🔥</span><div><b>Bouw je streak</b> - elke dag oefenen geeft bonus-XP en badges.</div></div>
       <div class="onb-ul-row"><span class="onb-ul-ic">🏆</span><div><b>Zie je slagingskans</b> - en klim in de wekelijkse divisies.</div></div>
       <button class="onb-cta" onclick="onbNext()">Duidelijk!</button></div>` },
+
+  { key:'cijfers', mood:'goed', type:'info', optional:true,
+    text:'Wil je je <b>SE-cijfers</b> invoeren? Dan bereken ik meteen je slagingskans.',
+    body:()=>`<div class="onb-optbtns"><button class="onb-cta" onclick="onbOpt('cijfers',true)">Ja, invoeren</button><button class="onb-later" onclick="onbOpt('cijfers',false)">Later</button></div>` },
+
+  { key:'studieplan', mood:'denk', type:'info', optional:true,
+    text:'Zal ik alvast een <b>studieplan</b> voor je maken op basis van je vakken?',
+    body:()=>`<div class="onb-optbtns"><button class="onb-cta" onclick="onbOpt('studieplan',true)">Ja, maak plan</button><button class="onb-later" onclick="onbOpt('studieplan',false)">Later</button></div>` },
+
+  { key:'account', mood:'blij', type:'info', optional:true,
+    text:'Maak een <b>gratis account</b> om je voortgang te bewaren en mee te doen aan het leaderboard & de divisies.',
+    body:()=>`<div class="onb-optbtns"><button class="onb-cta" onclick="onbOpt('account',true)">Account maken</button><button class="onb-later" onclick="onbOpt('account',false)">Later</button></div>` },
+
+  { key:'klaar', mood:'feest', type:'info',
+    text:'Je bent er helemaal klaar voor! Succes met oefenen - ik sta naast je.',
+    body:()=>`<button class="onb-cta onb-cta-big" onclick="onbComplete()">Start met oefenen!</button>` },
 ];
 
 function onbStart(){
@@ -87,6 +103,8 @@ function onbRender(first){
   if(skip) skip.style.display=step.optional?'':'none';
   const nxt=document.querySelector('#onb-foot .onb-next');
   if(nxt) nxt.disabled=(step.key==='vakken'&&ONB.data.vakken.length===0);
+  // Feestelijk aankomen op het slotscherm
+  if(step.key==='klaar'){ _onbConfetti('gold'); _onbHaptic([16,30,20]); }
   if(!first) _onbSound('swoosh');
 }
 
@@ -153,8 +171,60 @@ function onbRenderCard(){
     +rows.map((r,idx)=>`<div class="onb-card-row"${idx===rows.length-1?' style="--in:1"':''}><span>${r[0]}</span><b>${r[1]}</b></div>`).join('');
 }
 
-function onbFinish(){
-  // (volledige opslag + launch komt in de volgende fase)
-  _onbConfetti('gold'); _onbHaptic([20,40,20]);
-  const ov=document.getElementById('onb'); if(ov){ ov.classList.remove('on'); setTimeout(()=>{ov.style.display='none';},320); }
+// Optionele ja/nee-stappen (cijfers/studieplan/account)
+function onbOpt(key,yes){
+  ONB.data[key]=yes;
+  _onbHaptic(yes?[12,28,18]:[8]); _onbSound(yes?'correct':'tap');
+  onbNext();
+}
+
+// Als onbNext voorbij de laatste stap gaat blijven we op 'klaar' staan.
+function onbFinish(){ /* niet gebruikt - 'klaar' sluit via onbComplete */ }
+
+// Alles opslaan (device-lokaal, blijft zonder account) + de app in.
+function onbComplete(){
+  _onbHaptic([18,40,26,40,60]); _onbSound('levelup');
+  const d=ONB.data;
+  try{
+    // 1. Niveau
+    if(d.niveau){ if(typeof APP_LEVEL!=='undefined') APP_LEVEL=d.niveau; localStorage.setItem('examenapp_level',d.niveau); }
+    // 2. Profiel (klas/profiel/dier) in het profiel-object
+    const PK='examenapp_profiel';
+    const p=JSON.parse(localStorage.getItem(PK)||'{}');
+    if(d.klas) p.klas=d.klas;
+    if(d.profiel) p.profiel=d.profiel;
+    if(d.animalId){ p.animalId=d.animalId; try{ if(typeof getAnimalEmoji==='function') p.avatar=getAnimalEmoji(d.animalId,0); }catch(e){} }
+    localStorage.setItem(PK,JSON.stringify(p));
+    // 3. Examenvakken (voedt "Jouw vakken" op de home)
+    if(d.vakken&&d.vakken.length){
+      try{ if(typeof lvlCol==='function') localStorage.setItem('examenapp_'+lvlCol('mijnvakken'),JSON.stringify(d.vakken)); }catch(e){}
+      try{ if(typeof setMijnVakken==='function') setMijnVakken(d.vakken); }catch(e){}
+    }
+    // 4. Onboarding als voltooid markeren (voorkomt de oude intro)
+    localStorage.setItem('slagio_onboard_v3','1');
+    localStorage.setItem('slagio_seen_intro_v2','1');
+    localStorage.setItem('slagio_vonk_intro_done','1');
+  }catch(e){ console.warn('onbComplete save error',e); }
+
+  _onbConfetti('gold');
+  const ov=document.getElementById('onb'); if(ov){ ov.classList.remove('on'); setTimeout(()=>{ov.style.display='none';},340); }
+
+  // De app volledig opzetten op het gekozen niveau, dan home.
+  try{
+    if(typeof chooseLevel==='function'){ chooseLevel(d.niveau||APP_LEVEL,true); }
+    else if(typeof show==='function'){ show('sc-home'); if(typeof buildGrid==='function')buildGrid(); }
+  }catch(e){ try{show('sc-home');}catch(_){} }
+
+  // Optionele vervolgacties (na een korte adempauze)
+  setTimeout(onbRoutePost,700);
+}
+
+// Routeert naar het eerste gekozen optionele onderdeel (rest blijft in-app bereikbaar).
+function onbRoutePost(){
+  const d=ONB.data;
+  try{
+    if(d.account && typeof show==='function'){ show('sc-auth'); return; }
+    if(d.cijfers){ if(typeof goToCijferInvoer==='function'){ goToCijferInvoer(); return; } if(typeof show==='function'){ show('sc-calc'); if(typeof prefillCalcFromSaved==='function')setTimeout(prefillCalcFromSaved,60); return; } }
+    if(d.studieplan && typeof show==='function'){ show('sc-studieplan'); if(typeof renderStudieplan==='function')renderStudieplan(); return; }
+  }catch(e){}
 }
