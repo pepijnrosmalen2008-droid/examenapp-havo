@@ -7021,3 +7021,58 @@ html.dark .dom-hero-card{background:linear-gradient(180deg,rgba(255,255,255,.045
   22%{opacity:1}
   100%{transform:translate(calc(-50% + var(--dx)),calc(-50% + var(--dy))) scale(1) rotate(var(--rot));opacity:0}}
 @media(prefers-reduced-motion:reduce){.coin-reward{transition:opacity .2s}.coin-reward.in{transform:translate(-50%,-50%)}.coin-reward-ic{animation:none}.coin-spark{display:none}}
+
+/* ═══════════ ONBOARDING v2 (Vonk-gesprek) ═══════════ */
+.onb{position:fixed;inset:0;z-index:9500;display:none;flex-direction:column;
+  background:radial-gradient(125% 78% at 50% -12%,color-mix(in srgb,var(--or) 13%,var(--s)),var(--s) 62%);
+  padding:calc(env(safe-area-inset-top,0px) + 14px) 20px calc(env(safe-area-inset-bottom,0px) + 18px);
+  opacity:0;transition:opacity .3s ease}
+.onb.on{opacity:1}
+.onb-progress{height:12px;border-radius:99px;background:color-mix(in srgb,var(--dk) 10%,var(--s));overflow:hidden;flex-shrink:0;box-shadow:inset 0 1px 2px rgba(0,0,0,.08)}
+.onb-progress-fill{height:100%;width:0;border-radius:99px;background:linear-gradient(90deg,#fb8c3e,var(--or));transition:width .5s cubic-bezier(.34,1.1,.64,1);box-shadow:0 0 10px rgba(var(--or-rgb),.5)}
+.onb-main{flex:1;display:flex;flex-direction:column;justify-content:center;gap:20px;max-width:520px;width:100%;margin:0 auto;overflow-y:auto;padding:18px 0}
+/* Vonk + spraakbubbel */
+.onb-stage{display:flex;align-items:flex-end;gap:12px}
+.onb-vonk{width:118px;height:118px;flex-shrink:0}
+.onb-vonk svg{width:100%;height:100%;filter:drop-shadow(0 8px 18px rgba(0,0,0,.16))}
+.onb-vonk-in{animation:onbVonkIn .5s cubic-bezier(.34,1.5,.5,1) both}
+@keyframes onbVonkIn{0%{transform:translateY(14px) scale(.8);opacity:0}100%{transform:none;opacity:1}}
+.onb-bubble{position:relative;flex:1;background:var(--s);border:1.5px solid var(--bo);border-radius:20px;border-bottom-left-radius:6px;padding:15px 17px;font-size:15.5px;line-height:1.45;color:var(--dk);font-weight:500;box-shadow:0 6px 22px rgba(16,24,40,.09);margin-bottom:14px}
+.onb-bubble b{font-weight:800;color:var(--or)}
+.onb-bubble::before{content:"";position:absolute;left:-9px;bottom:14px;width:16px;height:16px;background:var(--s);border-left:1.5px solid var(--bo);border-bottom:1.5px solid var(--bo);transform:rotate(45deg);border-bottom-left-radius:4px}
+.onb-bubble.pop{animation:onbPop .34s cubic-bezier(.34,1.4,.6,1) both}
+@keyframes onbPop{0%{transform:scale(.94);opacity:0}100%{transform:none;opacity:1}}
+/* Optie-kaarten */
+.onb-body.slidein{animation:onbSlide .34s cubic-bezier(.22,1,.36,1) both}
+@keyframes onbSlide{0%{transform:translateY(12px);opacity:0}100%{transform:none;opacity:1}}
+.onb-opts{display:flex;flex-direction:column;gap:12px}
+.onb-opt{display:flex;align-items:center;gap:12px;width:100%;padding:17px 18px;border:2px solid var(--bo);border-radius:18px;background:var(--s);color:var(--dk);cursor:pointer;text-align:left;font-family:var(--font);
+  box-shadow:0 2px 6px rgba(16,24,40,.05);transition:transform .14s cubic-bezier(.34,1.4,.6,1),border-color .16s,background .16s,box-shadow .16s;-webkit-tap-highlight-color:transparent}
+.onb-opt:hover{border-color:color-mix(in srgb,var(--or) 45%,var(--bo));transform:translateY(-2px)}
+.onb-opt:active{transform:scale(.98)}
+.onb-opt.sel{border-color:var(--or);background:color-mix(in srgb,var(--or) 9%,var(--s));box-shadow:0 4px 16px rgba(var(--or-rgb),.2)}
+.onb-opt-tx{display:flex;flex-direction:column;gap:2px;flex:1;min-width:0}
+.onb-opt-main{font-family:var(--font-head);font-weight:800;font-size:17px}
+.onb-opt-sub{font-size:12.5px;color:var(--mu);font-weight:600}
+.onb-opt-check{flex-shrink:0;width:26px;height:26px;border-radius:50%;background:var(--or);color:#fff;display:flex;align-items:center;justify-content:center;font-size:15px;font-weight:800;opacity:0;transform:scale(.4);transition:opacity .18s,transform .22s cubic-bezier(.34,1.6,.5,1)}
+.onb-opt.sel .onb-opt-check{opacity:1;transform:scale(1)}
+/* Grote 'we gaan'-knop (welkom) */
+.onb-cta{width:100%;padding:16px;border:none;border-radius:16px;background:linear-gradient(180deg,#fb8c3e,var(--or));color:#fff;font-family:var(--font-head);font-weight:800;font-size:17px;cursor:pointer;
+  box-shadow:0 5px 0 color-mix(in srgb,var(--or) 55%,#000),0 10px 22px -6px rgba(var(--or-rgb),.55);transition:transform .09s,box-shadow .09s;-webkit-tap-highlight-color:transparent}
+.onb-cta:active{transform:translateY(4px);box-shadow:0 1px 0 color-mix(in srgb,var(--or) 55%,#000),0 4px 12px -6px rgba(var(--or-rgb),.5)}
+/* Profielkaart (het boekje) */
+.onb-card{flex-shrink:0;max-width:520px;width:100%;margin:0 auto;background:var(--s);border:1.5px solid var(--bo);border-radius:16px;padding:12px 15px;box-shadow:0 4px 16px rgba(16,24,40,.06);display:none}
+.onb-card.show{display:block;animation:onbPop .3s cubic-bezier(.34,1.4,.6,1) both}
+.onb-card-hd{display:flex;align-items:center;gap:7px;font-family:var(--font-head);font-weight:800;font-size:12px;letter-spacing:.4px;text-transform:uppercase;color:var(--mu);margin-bottom:8px}
+.onb-card-row{display:flex;justify-content:space-between;align-items:center;padding:5px 0;font-size:14px;color:var(--mu);border-top:1px dashed var(--bo)}
+.onb-card-row:first-of-type{border-top:none}
+.onb-card-row b{color:var(--dk);font-weight:800}
+.onb-card-row[style]{animation:onbWriteIn .4s cubic-bezier(.22,1,.36,1) both}
+@keyframes onbWriteIn{0%{opacity:0;transform:translateX(-8px)}100%{opacity:1;transform:none}}
+/* Voet */
+.onb-foot{flex-shrink:0;display:flex;gap:12px;max-width:520px;width:100%;margin:0 auto;align-items:center}
+.onb-skip{background:none;border:none;color:var(--mu);font-family:var(--font-head);font-weight:700;font-size:14.5px;cursor:pointer;padding:14px 8px}
+.onb-next{flex:1;padding:16px;border:none;border-radius:16px;background:linear-gradient(180deg,#fb8c3e,var(--or));color:#fff;font-family:var(--font-head);font-weight:800;font-size:16.5px;cursor:pointer;box-shadow:0 5px 0 color-mix(in srgb,var(--or) 55%,#000),0 10px 22px -6px rgba(var(--or-rgb),.5);transition:transform .09s,box-shadow .09s}
+.onb-next:active{transform:translateY(4px);box-shadow:0 1px 0 color-mix(in srgb,var(--or) 55%,#000)}
+@media(prefers-reduced-motion:reduce){.onb-vonk-in,.onb-bubble.pop,.onb-body.slidein,.onb-card.show,.onb-card-row[style]{animation:none}}
+@media(max-width:400px){.onb-vonk{width:96px;height:96px}.onb-bubble{font-size:14.5px}.onb-opt-main{font-size:16px}}

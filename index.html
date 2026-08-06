@@ -1845,6 +1845,23 @@
   </div>
 </div>
 
+<!-- ═══ ONBOARDING v2 (Vonk-gesprek, Duolingo-stijl) ═══ -->
+<div id="onb" class="onb" style="display:none">
+  <div class="onb-progress"><div class="onb-progress-fill" id="onb-progress-fill"></div></div>
+  <div class="onb-main">
+    <div class="onb-stage">
+      <div class="onb-vonk" id="onb-vonk"></div>
+      <div class="onb-bubble" id="onb-bubble"></div>
+    </div>
+    <div class="onb-body" id="onb-body"></div>
+    <div class="onb-card" id="onb-card"></div>
+  </div>
+  <div class="onb-foot" id="onb-foot" style="display:none">
+    <button class="onb-skip" id="onb-skip" onclick="onbSkip()" style="display:none">Overslaan</button>
+    <button class="onb-next" onclick="onbNext()">Doorgaan</button>
+  </div>
+</div>
+
 <!-- PROFIEL -->
 <div id="sc-profiel" class="sc">
 <nav class="nav"><div class="nav-inner"><div class="logo" onclick="show('sc-home')"><img src="/icon-192.png" alt="Slagio" style="width:26px;height:26px;border-radius:7px;object-fit:cover;flex-shrink:0">Slagio</div><button class="bk" onclick="show('sc-home')">← Terug</button><button class="theme-btn" onclick="toggleDark()" title="Nachtmodus" style="margin-left:auto"><svg viewBox="0 0 24 24"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg></button></div></nav>
@@ -2126,6 +2143,7 @@
 <script defer src="/zoek.js"></script>
 <script defer src="/klas.js"></script>
 <script defer src="/notif-engine.js"></script>
+<script defer src="/onb.js"></script>
 <script defer src="/init.js"></script>
 <script defer src="/sam-anim.js"></script>
 <script defer src="/sam-clip.js"></script>
