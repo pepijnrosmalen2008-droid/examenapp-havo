@@ -74,7 +74,9 @@ function renderFbStudieplanRow() {
   const el = document.getElementById('sp-foutenboek-row');
   if (!el) return;
   const content = document.getElementById('studieplan-content');
-  if (content && content.children.length) { el.innerHTML = ''; return; }
+  // Alleen leegmaken als het plan al een echt "Vandaag"-blok bevat (geen dubbel).
+  // Bij de lege staat ("geen examens") heeft content wél tekst maar geen Vandaag.
+  if (content && content.querySelector('.sp-vandaag')) { el.innerHTML = ''; return; }
   const s = fbStats();
   const badge = s.due > 0 ? `<span class="sp-vandaag-badge">${s.due} open</span>` : '';
   el.innerHTML = `<div class="sp-vandaag" style="margin-bottom:16px"><div class="sp-vandaag-header"><div class="sp-vandaag-title">📌 Vandaag</div>${badge}</div>${fbStudieplanRowHTML()}</div>`;

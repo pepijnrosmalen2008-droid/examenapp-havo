@@ -318,7 +318,10 @@ function renderStudieplan(){
 
   const upcoming=(typeof getUpcomingExams==='function'?getUpcomingExams():[]).filter(e=>e.vakId);
   if(!upcoming.length){
-    el.innerHTML=`<div class="sp-vandaag"><div class="sp-vandaag-header"><div class="sp-vandaag-title">📌 Vandaag</div>${fbBadge}</div>${fbCardHtml}</div><div class="sp-empty" style="margin-top:14px">Geen aankomende examens.<br>Kies je vakken in het rooster, of vink je herkansing aan.</div>`;
+    // Geen "Vandaag"-blok hier: de Foutenboek-regel wordt getoond via
+    // #sp-foutenboek-row (anders staat de kaart dubbel).
+    el.innerHTML=`<div class="sp-empty">Geen aankomende examens.<br>Kies je vakken in het rooster, of vink je herkansing aan.</div>`;
+    try{if(typeof renderFbStudieplanRow==='function')renderFbStudieplanRow();}catch(e){}
     return;
   }
 
