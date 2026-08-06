@@ -6963,6 +6963,13 @@ html.dark .dom-hero-card{background:linear-gradient(180deg,rgba(255,255,255,.045
 /* De "Meer"-knop is weg: al die schermen zitten nu in de zijbalk (desktop) en
    zijn op mobiel bereikbaar via de hubs (Plan/Wedstrijd/Profiel) + statuspills. */
 #sc-home .hm-menu-open{display:none}
+/* Home-vakkenraster compact: de beschrijvingszin per vak is op de home ruis
+   (je weet wat de vakken zijn) en maakt de pagina onnodig lang. Hij blijft op
+   de vak-detailpagina en de SEO-pagina's staan - hier weg = korte, scanbare
+   tegels (Duolingo-stijl: icoon + naam + voortgang). */
+#vakgrid .card-desc{display:none}
+#vakgrid .card{padding-top:18px;padding-bottom:16px}
+#vakgrid .card-name{margin-bottom:6px}
 .statbar{display:flex;gap:9px;margin:14px 0 4px}
 .sbar-pill{flex:1;min-width:0;display:flex;flex-direction:column;align-items:center;gap:3px;padding:13px 4px 11px;border-radius:18px;
   background:var(--s);border:1px solid var(--bo);cursor:pointer;font-family:var(--font-head);
