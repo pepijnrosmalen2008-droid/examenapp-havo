@@ -407,7 +407,10 @@ function updateBottomNav(id){
   // Hide bottom nav during quiz/flashcard/qmode
   const hideScreens=['sc-quiz','sc-flash','sc-qmode','sc-welcome','sc-race'];
   const bn=document.getElementById('bottom-nav');
-  if(bn) bn.style.display=hideScreens.includes(id)?'none':'';
+  const navHidden=hideScreens.includes(id);
+  if(bn) bn.style.display=navHidden?'none':'';
+  // Op desktop laat de body-padding de zijbalk-ruimte vrij; tijdens quiz weg.
+  try{document.body.classList.toggle('nav-hidden',navHidden);}catch(e){}
   // Avatar in de profiel-knop van de bottom nav
   const bnavIcon=document.getElementById('bnav-profiel-icon');
   if(bnavIcon&&currentUser){
