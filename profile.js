@@ -837,12 +837,28 @@ function openProfiel(){
   renderProfileBadges();
   renderNotifStatus();
   applyAccPrefs();
+  // Reset naar de eerste tab (zonder scroll-effect - scherm is nog niet zichtbaar).
+  ['ik','cijfers','gegevens'].forEach(k=>{
+    const g=document.getElementById('prof-grp-'+k); if(g)g.classList.toggle('on',k==='ik');
+    const t=document.getElementById('ptab-'+k); if(t)t.classList.toggle('on',k==='ik');
+  });
   show('sc-profiel');
+}
+// Profiel sub-tabs: houdt elke weergave kort i.p.v. één eindeloze scroll.
+function profTab(name){
+  const groups={ik:'prof-grp-ik',cijfers:'prof-grp-cijfers',gegevens:'prof-grp-gegevens'};
+  Object.keys(groups).forEach(k=>{
+    const g=document.getElementById(groups[k]); if(g)g.classList.toggle('on',k===name);
+    const t=document.getElementById('ptab-'+k); if(t)t.classList.toggle('on',k===name);
+  });
+  // Naar boven van het profiel-blok, niet de hele pagina, zodat je de tab meteen ziet.
+  try{const w=document.querySelector('#sc-profiel .prof-tabs');if(w)w.scrollIntoView({behavior:'smooth',block:'start'});}catch(e){}
 }
 // Open het profiel en scroll direct naar het SE-cijfer-invoerstuk (import/plakken).
 function goToCijferInvoer(){
   try{openProfiel();}catch(e){}
   setTimeout(function(){
+    try{profTab('cijfers');}catch(e){}
     const el=document.getElementById('imp-panel-unified')||document.getElementById('cijfer-grid');
     if(el)el.scrollIntoView({behavior:'smooth',block:'center'});
     const ta=document.getElementById('imp-paste-unified');if(ta)try{ta.focus({preventScroll:true});}catch(_){}

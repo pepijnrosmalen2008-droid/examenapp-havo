@@ -1863,6 +1863,15 @@
   <!-- Cloud sync status -->
   <div id="cloud-status-bar"></div>
 
+  <!-- Profiel sub-navigatie: houdt elke weergave kort i.p.v. één lange scroll -->
+  <div class="prof-tabs" role="tablist">
+    <button class="prof-tab on" id="ptab-ik" role="tab" onclick="profTab('ik')">Ik</button>
+    <button class="prof-tab" id="ptab-cijfers" role="tab" onclick="profTab('cijfers')">Cijfers</button>
+    <button class="prof-tab" id="ptab-gegevens" role="tab" onclick="profTab('gegevens')">Gegevens</button>
+  </div>
+
+  <!-- ══ TAB: IK ══ -->
+  <div class="prof-grp on" id="prof-grp-ik">
   <!-- 1. Avatar + evolutie voortgang -->
   <div class="prof-section">
     <div class="prof-section-title">Avatar &amp; voortgang</div>
@@ -1895,7 +1904,42 @@
     <div class="prof-section-sub">Overzicht van al jouw quiz-activiteit</div>
     <div id="mijn-stats-content"><p style="color:var(--mu);font-size:13px">Maak eerst een quiz om statistieken te zien.</p></div>
   </div>
+  </div><!-- /prof-grp-ik -->
 
+  <!-- ══ TAB: CIJFERS ══ -->
+  <div class="prof-grp" id="prof-grp-cijfers">
+  <button class="prof-calc-link" onclick="show('sc-calc');setTimeout(prefillCalcFromSaved,50)">
+    <span class="prof-calc-ic"><svg viewBox="0 0 24 24" width="1em" height="1em" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="2" width="16" height="20" rx="2"/><line x1="8" y1="6" x2="16" y2="6"/><line x1="8" y1="10" x2="10" y2="10"/><line x1="12" y1="10" x2="14" y2="10"/><line x1="16" y1="10" x2="16" y2="10"/><line x1="8" y1="14" x2="10" y2="14"/><line x1="12" y1="14" x2="14" y2="14"/><line x1="8" y1="18" x2="14" y2="18"/></svg></span>
+    <span class="prof-calc-tx"><strong>Cijfercalculator</strong><span>Bereken je slaag-/zakkans en benodigde cijfers</span></span>
+    <span class="prof-calc-go">›</span>
+  </button>
+
+  <!-- 4. SE Cijfers (verplaatst in de Cijfers-tab) -->
+  <div class="prof-section" style="margin-top:14px">
+    <div class="prof-section-title">SE-cijfers</div>
+    <div class="prof-section-sub">Vul je schoolexamencijfers in - gebruikt door de slaag-/zakrekenaars</div>
+    <div class="import-panel show" id="imp-panel-unified" style="display:block">
+      <div class="import-steps">
+        <strong>Importeer vanuit Magister of SomToday</strong>
+        <ol>
+          <li>Open je schoolapp (<strong>magister.net</strong> of <strong>leerling.somtoday.nl</strong>) en log in</li>
+          <li>Ga naar je <strong>cijferoverzicht</strong></li>
+          <li>Selecteer alles op de pagina (<kbd>Ctrl+A</kbd>) en kopieer (<kbd>Ctrl+C</kbd>)</li>
+          <li>Plak de tekst hieronder (<kbd>Ctrl+V</kbd>) en klik op importeer</li>
+        </ol>
+      </div>
+      <textarea class="import-textarea" id="imp-paste-unified" placeholder="Plak hier je gekopieerde cijferpagina..." rows="6"></textarea>
+      <br><button class="import-go-btn" onclick="doImport('unified')">🔍 Analyseer &amp; importeer →</button>
+      <div class="import-result" id="imp-result-unified"></div>
+    </div>
+    <div class="cijfer-grid" id="cijfer-grid"></div>
+    <button class="cijfer-save-btn" onclick="saveCijfers()">Cijfers opslaan</button>
+    <span class="pf-saved" id="cijfer-saved-msg">✓ Opgeslagen</span>
+  </div>
+  </div><!-- /prof-grp-cijfers -->
+
+  <!-- ══ TAB: GEGEVENS ══ -->
+  <div class="prof-grp" id="prof-grp-gegevens">
   <!-- 3. Persoonlijke gegevens -->
   <div class="prof-section">
     <div class="prof-section-title">Persoonlijke gegevens</div>
@@ -1923,29 +1967,7 @@
       <label class="acc-toggle"><input type="checkbox" id="acc-contrast-toggle" onchange="toggleHoogContrast(this.checked)"><span class="acc-slider"></span></label>
     </div>
   </div>
-
-  <!-- 4. SE Cijfers -->
-  <div class="prof-section">
-    <div class="prof-section-title">SE-cijfers</div>
-    <div class="prof-section-sub">Vul je schoolexamencijfers in - gebruikt door de slaag-/zakrekenaars</div>
-    <div class="import-panel show" id="imp-panel-unified" style="display:block">
-      <div class="import-steps">
-        <strong>Importeer vanuit Magister of SomToday</strong>
-        <ol>
-          <li>Open je schoolapp (<strong>magister.net</strong> of <strong>leerling.somtoday.nl</strong>) en log in</li>
-          <li>Ga naar je <strong>cijferoverzicht</strong></li>
-          <li>Selecteer alles op de pagina (<kbd>Ctrl+A</kbd>) en kopieer (<kbd>Ctrl+C</kbd>)</li>
-          <li>Plak de tekst hieronder (<kbd>Ctrl+V</kbd>) en klik op importeer</li>
-        </ol>
-      </div>
-      <textarea class="import-textarea" id="imp-paste-unified" placeholder="Plak hier je gekopieerde cijferpagina..." rows="6"></textarea>
-      <br><button class="import-go-btn" onclick="doImport('unified')">🔍 Analyseer &amp; importeer →</button>
-      <div class="import-result" id="imp-result-unified"></div>
-    </div>
-    <div class="cijfer-grid" id="cijfer-grid"></div>
-    <button class="cijfer-save-btn" onclick="saveCijfers()">Cijfers opslaan</button>
-    <span class="pf-saved" id="cijfer-saved-msg">✓ Opgeslagen</span>
-  </div>
+  </div><!-- /prof-grp-gegevens -->
 </div>
 </div>
 
