@@ -401,6 +401,10 @@ function updateBottomNav(id){
   document.querySelectorAll('.bnav-btn').forEach(b=>{
     b.classList.toggle('active',b.dataset.screen===activeId);
   });
+  // Secundaire "Meer"-items (zijbalk) ook markeren op hun eigen scherm.
+  document.querySelectorAll('.snav-btn').forEach(b=>{
+    b.classList.toggle('active',!!b.dataset.screen&&b.dataset.screen===activeId);
+  });
   // Update profiel button label: Inloggen vs Profiel
   const lbl=document.getElementById('bnav-profiel-label');
   if(lbl)lbl.textContent=currentUser?'Profiel':'Inloggen';
