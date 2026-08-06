@@ -59,6 +59,7 @@ function startQ(mode){
   document.getElementById('qmeta').textContent=`${ST.vak.naam} · D${ST.domein.id}: ${ST.domein.naam} · ${mode==='snel'?'Snelle Quiz':'Oud-examen'}`;
   document.getElementById('sc-quiz').classList.toggle('oud-mode',mode==='oud');
   show('sc-quiz');
+  try{if(typeof renderCoinBtns==='function')renderCoinBtns();}catch(e){}
   playSound('start');
   // Toon skeleton kort terwijl quiz initialiseert
   const skel=document.getElementById('quiz-skeleton');
@@ -1157,7 +1158,12 @@ function toonRes(){
   try{_recordResult=saveProgress(ST.vak.id,ST.domein.id,ST.mode,sc,tot);}catch(e){}
   try{recordPractice();}catch(e){}
   // Munten belonen (basis + prestatie + perfect-bonus) + korte feedback
-  try{if(typeof awardQuizCoins==='function'){const _cw=awardQuizCoins(pct,pct>=0.999);window._coinsWon=_cw;setTimeout(()=>{try{if(typeof floatCoins==='function')floatCoins(_cw);else showToast('+'+_cw+' munten 🪙','#f5b301');}catch(e){}},1050);}}catch(e){}
+  try{if(typeof awardQuizCoins==='function'){const _cw=awardQuizCoins(pct,pct>=0.999);window._coinsWon=_cw;
+    // Muntenknop in de resultaat-topbar op het PRE-award aantal zetten...
+    try{if(typeof renderCoinBtns==='function')renderCoinBtns();const _rn=document.getElementById('res-coin-n');if(_rn&&typeof getCoins==='function')_rn.textContent=Math.max(0,getCoins()-_cw);}catch(e){}
+    // ...en de munten laten opvliegen naar de topbar (Duolingo-stijl).
+    if(_cw>0)setTimeout(()=>{try{if(typeof coinFlyToBar==='function')coinFlyToBar(_cw,document.getElementById('res-coinbtn'));else if(typeof floatCoins==='function')floatCoins(_cw);}catch(e){}},950);
+  }}catch(e){}
   // Track quiz voltooid
   try{_flushQBatch();trackEvent('quiz_completed',{vak:ST.vak?.naam,vak_id:ST.vak?.id,domein_id:ST.domein?.id,mode:ST.mode,score:sc,totaal:tot,pct:Math.round(pct*100)});}catch(e){}
   // Feature 2: PB tracking

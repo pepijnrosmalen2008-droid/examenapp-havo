@@ -773,6 +773,51 @@ function floatCoins(amount,refEl){
   setTimeout(()=>{chip.classList.add('out');},1500);
   setTimeout(()=>chip.remove(),1900);
 }
+
+// Muntenknop in de quiz- en resultaat-topbar bijwerken (icoon + huidig aantal).
+function renderCoinBtns(){
+  const ic=(typeof _ico==='function')?_ico('coin',18):'🪙';
+  const c=(typeof getCoins==='function')?getCoins():0;
+  ['quiz','res'].forEach(pfx=>{
+    const iEl=document.getElementById(pfx+'-coin-ic'); if(iEl)iEl.innerHTML=ic;
+    const nEl=document.getElementById(pfx+'-coin-n'); if(nEl)nEl.textContent=c;
+  });
+}
+
+// Munten vliegen naar de topbar-muntenknop en de teller loopt op (Duolingo-stijl).
+function coinFlyToBar(amount,targetEl){
+  amount=Math.max(0,Math.round(amount||0));
+  const target=targetEl||document.getElementById('res-coinbtn');
+  if(!amount||!target){ try{renderCoinBtns();}catch(e){} return; }
+  const tr=target.getBoundingClientRect();
+  const tx=tr.left+tr.width/2, ty=tr.top+tr.height/2;
+  const anchor=document.getElementById('sc-res')||document.body;
+  const ar=anchor.getBoundingClientRect();
+  const sx=ar.left+ar.width/2, sy=ar.top+Math.min(ar.height*0.34,240);
+  const total=(typeof getCoins==='function')?getCoins():amount; // nieuw totaal (al toegekend)
+  const start=Math.max(0,total-amount);
+  const nEl=document.getElementById('res-coin-n'); if(nEl)nEl.textContent=start;
+  const ic=(typeof _ico==='function')?_ico('coin',22):'🪙';
+  const N=Math.min(14,Math.max(6,Math.round(amount/2)));
+  let arrived=0;
+  for(let i=0;i<N;i++){
+    const s=document.createElement('div'); s.className='coin-fly'; s.innerHTML=ic;
+    const jx=sx+(Math.random()*70-35), jy=sy+(Math.random()*34-17);
+    s.style.cssText='left:'+jx+'px;top:'+jy+'px';
+    document.body.appendChild(s);
+    const delay=i*65;
+    setTimeout(()=>{ s.style.transition='transform .55s cubic-bezier(.5,0,.55,1),opacity .55s'; s.style.transform='translate('+(tx-jx)+'px,'+(ty-jy)+'px) scale(.45)'; s.style.opacity='.35'; },delay+20);
+    setTimeout(()=>{
+      s.remove(); arrived++;
+      const shown=(arrived===N)?total:Math.min(total,Math.round(start+(amount*arrived/N)));
+      if(nEl)nEl.textContent=shown;
+      target.classList.remove('coin-bump'); void target.offsetWidth; target.classList.add('coin-bump');
+      try{if(typeof playSound==='function')playSound('coin');}catch(e){}
+      try{if(typeof haptic==='function')haptic(7);}catch(e){}
+    },delay+560);
+  }
+}
+
 function renderGreeting(){
   const el=document.getElementById('hm-greeting');
   if(!el)return;

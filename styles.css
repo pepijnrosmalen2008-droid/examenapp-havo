@@ -7111,3 +7111,19 @@ html.dark .dom-hero-card{background:linear-gradient(180deg,rgba(255,255,255,.045
 .onb-later{background:none;border:none;color:var(--mu);font-family:var(--font-head);font-weight:700;font-size:14.5px;cursor:pointer;padding:12px;border-radius:12px;transition:background .15s}
 .onb-later:hover{background:color-mix(in srgb,var(--dk) 5%,transparent);color:var(--dk)}
 .onb-cta-big{font-size:18px;padding:18px}
+
+/* ═══ Muntenknop in quiz/resultaat-topbar + munt-vlucht (Duolingo-stijl) ═══ */
+.res-topbar{display:flex;justify-content:flex-end;align-items:center;padding:calc(14px + env(safe-area-inset-top,0px)) 16px 0}
+.coin-btn{display:inline-flex;align-items:center;gap:6px;background:rgba(255,255,255,.09);border:1px solid rgba(255,255,255,.16);border-radius:999px;padding:7px 13px 7px 9px;cursor:pointer;color:#fff;font-family:var(--font-head);font-weight:800;font-size:15px;-webkit-tap-highlight-color:transparent;transition:transform .12s cubic-bezier(.34,1.5,.5,1),background .16s;backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px)}
+.coin-btn:hover{background:rgba(255,255,255,.15)}
+.coin-btn:active{transform:scale(.93)}
+.coin-btn-ic{display:inline-flex;align-items:center;line-height:0}
+.coin-btn-ic svg{width:20px;height:20px}
+.coin-btn-n{min-width:10px;text-align:left;color:#fcd34d;letter-spacing:.2px}
+.coin-btn-qtb{padding:5px 11px 5px 7px;font-size:13.5px;flex-shrink:0}
+.coin-btn-qtb .coin-btn-ic svg{width:17px;height:17px}
+.coin-btn.coin-bump{animation:coinBump .42s cubic-bezier(.34,1.6,.5,1)}
+@keyframes coinBump{0%{transform:scale(1)}40%{transform:scale(1.2)}100%{transform:scale(1)}}
+.coin-fly{position:fixed;z-index:9600;pointer-events:none;will-change:transform,opacity;filter:drop-shadow(0 3px 5px rgba(0,0,0,.35))}
+.coin-fly svg{width:22px;height:22px;display:block}
+@media(prefers-reduced-motion:reduce){.coin-btn.coin-bump{animation:none}.coin-fly{transition:opacity .3s!important;transform:none!important}}
