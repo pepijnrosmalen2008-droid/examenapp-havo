@@ -76,6 +76,44 @@ var VONK_EVENTS = {
   level_up: 'celebrate', promotion: 'proud', evolve: 'evolve', streak: 'proud', greet: 'greet'
 };
 
+// ── INTENT ENGINE ──────────────────────────────────────────────────────────
+// De laag bóven de emotie: Context → Voorspelling → Intentie. Vonk anticipeert
+// i.p.v. alleen te reageren. De intentie stuurt houding + blik van de hoofd-Vonk.
+var VonkCtx = { screen: 'home', qIndex: 0, qTotal: 0, timeLeft: 99, combo: 0, accuracy: 1, promoDist: 99, demoDist: 99, lastQuestion: false };
+function _vonkIntent() {
+  var c = VonkCtx;
+  if (c.screen === 'quiz') {
+    if (c.timeLeft <= 5 && c.timeLeft > 0) return 'warn';       // tijd bijna op → let op de klok
+    if (c.lastQuestion) return 'anticipate';                    // laatste vraag → spanning
+    if (c.combo >= 3) return 'focus';
+    return 'focus';
+  }
+  if (c.promoDist > 0 && c.promoDist <= 2) return 'anticipate'; // dicht bij promotie
+  if (c.demoDist > 0 && c.demoDist <= 2) return 'warn';
+  return 'calm';
+}
+function _vonkApplyIntent() {
+  var intent = _vonkIntent(); VonkFX.intent = intent;
+  var body = VonkFX.primary && VonkFX.primary._body;
+  if (!body) return;
+  switch (intent) {
+    case 'anticipate':   // borst vooruit, blik omhoog naar de knop, gretiger
+      body._intentLean = 0.7; VonkMood.curiosity = Math.max(VonkMood.curiosity, 62); VonkMood.focus = Math.max(VonkMood.focus, 62);
+      body.gazeTo(0, -1.7); break;
+    case 'warn':         // blik op de timer, gespannen
+      body._intentLean = 0.3; VonkMood.focus = Math.max(VonkMood.focus, 78);
+      try { var ring = document.getElementById('qring'); if (ring && typeof body.gazeToEl === 'function') body.gazeToEl(ring); else body.gazeTo(0, 1.4); } catch (e) {}
+      break;
+    case 'focus':        // rustig, geconcentreerd
+      body._intentLean = 0; VonkMood.focus = Math.max(VonkMood.focus, 55); break;
+    default:             // calm
+      body._intentLean = 0;
+  }
+  body.setMood(VonkMood);
+}
+// De app voedt context; Vonk berekent daaruit zijn intentie.
+function vonkContext(patch) { if (patch) for (var k in patch) VonkCtx[k] = patch[k]; try { _vonkApplyIntent(); } catch (e) {} }
+
 // Markeer de op-scherm "hoofd-Vonk" (voor idle-gedrag + gaze).
 function vonkRegister(el) {
   var svg = (typeof _vonkSvgOf === 'function') ? _vonkSvgOf(el) : null;

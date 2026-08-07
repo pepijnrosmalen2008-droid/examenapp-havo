@@ -112,6 +112,8 @@ function show(id,_noHash){
   // Focus eerste heading voor screenreaders
   try{const _h=_sc.querySelector('h1,h2,h3,[role="heading"]');if(_h){_h.setAttribute('tabindex','-1');_h.focus({preventScroll:true});}}catch(e){}
   updateBottomNav(id);
+  // Blijvende quiz-Vonk verbergen zodra we de quiz verlaten + intent-context bijwerken.
+  try{if(id!=='sc-quiz'){if(typeof _hideQuizVonk==='function')_hideQuizVonk();if(typeof vonkContext==='function')vonkContext({screen:id==='sc-res'?'result':id==='sc-league'?'league':'home'});}}catch(e){}
   try{if(typeof updateVonkCorner==='function')updateVonkCorner(id);}catch(e){}
   // URL bijwerken
   if(!_noHash){

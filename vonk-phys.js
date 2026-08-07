@@ -101,6 +101,17 @@ VonkBody.prototype._antic = function (launch) {
   setTimeout(function () { self.y.v = launch; }, 85);
 };
 VonkBody.prototype.gazeTo = function (dx, dy) { this.gazeTarget = _vkClamp(dx, -2.7, 2.7); this._gazeY = _vkClamp(dy || 0, -2.3, 2.3); clearTimeout(this._gzT); var s = this; this._gzT = setTimeout(function () { s.gazeTarget = 0; s._gazeY = 0; }, 2400); };
+// Kijk naar een echt element op het scherm (blik stuurt aandacht).
+VonkBody.prototype.gazeToEl = function (tEl) {
+  try {
+    if (!tEl || !this.svg) return;
+    var r = this.svg.getBoundingClientRect(), t = tEl.getBoundingClientRect();
+    var dx = (t.left + t.width / 2) - (r.left + r.width / 2);
+    var dy = (t.top + t.height / 2) - (r.top + r.height / 2);
+    var mag = Math.hypot(dx, dy) || 1;
+    this.gazeTo(dx / mag * 2.7, dy / mag * 2.3);
+  } catch (e) {}
+};
 VonkBody.prototype.step = function (dt) {
   // Ademen (idle): subtiele sinus, rustiger bij focus.
   this.breathPhase += dt * (1.05 - this._focus * 0.35);
@@ -108,7 +119,7 @@ VonkBody.prototype.step = function (dt) {
   // Lijf-veer + squash&stretch uit verticale snelheid (momentum → vorm).
   var y = _vkStep(this.y, dt);
   var stretch = _vkClamp(-this.y.v * 0.0016, -0.13, 0.17);
-  var post = this.posture * 0.03;
+  var post = (this.posture + (this._intentLean || 0)) * 0.03;   // intentie (bv. anticipatie) → houding
   var sy = 1 + stretch + breath + post;
   var sx = 1 - stretch * 0.85 - breath + post * 0.4;
   // Kop volgt lijf met vertraging (secondary), plus nieuwsgierig kantelen.

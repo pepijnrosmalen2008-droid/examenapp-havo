@@ -60,6 +60,8 @@ function startQ(mode){
   document.getElementById('sc-quiz').classList.toggle('oud-mode',mode==='oud');
   show('sc-quiz');
   try{if(typeof renderCoinBtns==='function')renderCoinBtns();}catch(e){}
+  // Levende quiz-Vonk aan + context voeden (Intent Engine).
+  try{if(typeof _showQuizVonk==='function')_showQuizVonk();if(typeof vonkContext==='function')vonkContext({screen:'quiz',qIndex:0,qTotal:(ST.adaptive?ST.aqTarget:(ST.vragen?ST.vragen.length:0)),combo:0,lastQuestion:false,timeLeft:99});}catch(e){}
   playSound('start');
   // Toon skeleton kort terwijl quiz initialiseert
   const skel=document.getElementById('quiz-skeleton');
@@ -144,6 +146,7 @@ function startOESingle(qIdx){
   document.getElementById('qmeta').textContent=`${ST.vak.naam} · D${ST.domein.id}${jaarLabel}`;
   document.getElementById('sc-quiz').classList.add('oud-mode');
   show('sc-quiz');
+  try{if(typeof _showQuizVonk==='function')_showQuizVonk();if(typeof vonkContext==='function')vonkContext({screen:'quiz',qIndex:0,combo:0,lastQuestion:false,timeLeft:99});}catch(e){}
   toonV();
 }
 
@@ -242,6 +245,8 @@ function toonV(){
     const _qq=document.getElementById('qq');
     if(_qq){_qq.classList.remove('q-enter');void _qq.offsetWidth;_qq.classList.add('q-enter');}
     startTimer(20);
+    // Intent Engine: context van deze vraag (laatste vraag → anticipatie).
+    try{if(typeof vonkContext==='function')vonkContext({screen:'quiz',qIndex:ST.idx,qTotal:tot,combo:ST.combo||0,lastQuestion:ST.idx===(tot-1),timeLeft:20});}catch(e){}
     // Lucky bonus kans per vraag
     maybeGiveLucky();
     // XP Surge kans (1/5, duurt 3 vragen)
@@ -309,6 +314,7 @@ function startTimer(max){
     ST.tijd--;
     t.textContent=ST.tijd;
     c.style.strokeDashoffset=circ*(1-ST.tijd/max);
+    if(ST.tijd<=6){try{if(typeof vonkContext==='function')vonkContext({timeLeft:ST.tijd});}catch(e){}}  // tijd bijna op → Vonk let op de klok
     if(ST.tijd<=5){c.style.stroke='#F87171';document.getElementById('qring').classList.add('timer-urgent');}
     if(ST.tijd<=3&&ST.tijd>0)playSound('tick');
     if(ST.tijd<=0){clearInterval(ST.timer);tijdOp();}
@@ -462,51 +468,67 @@ function _advanceQ(){
   else toonV();
 }
 
-// ═══════ MID-QUIZ VONK-CAMEO (Duolingo-stijl, niet-wegklikbaar) ═══════
-// Vonk komt kort het quizscherm binnen bij een combo-mijlpaal of het halverwege-
-// punt, kondigt het aan + deelt bonus-XP uit, met stevige haptiek. Geen knop,
-// niet wegklikbaar, verdwijnt zelf na ~2s. Blokkeert de quiz niet.
+// ═══════ BLIJVENDE QUIZ-VONK (levende coach in de quiz) ═══════
+// Een kleine, subtiele Vonk linksonder die de hele quiz aanwezig is: reageert op
+// elk antwoord (via de event bus → physics), anticipeert de laatste vraag en let
+// op de klok als de tijd bijna op is. Bij een combo-mijlpaal een grotere reactie
+// + een klein bijschrift met bonus-XP.
+function _ensureQuizVonk(){
+  let el=document.getElementById('quiz-vonk');
+  if(!el){
+    el=document.createElement('div');
+    el.id='quiz-vonk';el.className='quiz-vonk';el.setAttribute('aria-hidden','true');
+    el.innerHTML=`<div class="qv-bubble" id="qv-bubble"></div><div class="qv-fig">${(typeof mascotSVG==='function')?mascotSVG('blij',66):''}</div>`;
+    document.body.appendChild(el);
+  }
+  return el;
+}
+function _showQuizVonk(){
+  const el=_ensureQuizVonk();
+  el.style.display='';
+  requestAnimationFrame(()=>el.classList.add('on'));
+  try{if(typeof vonkRegister==='function')vonkRegister(el.querySelector('.qv-fig'));}catch(e){}
+}
+function _hideQuizVonk(){
+  const el=document.getElementById('quiz-vonk');
+  if(el){el.classList.remove('on');setTimeout(()=>{if(el&&!el.classList.contains('on'))el.style.display='none';},300);}
+}
+function _quizVonkBubble(html,ms){
+  const b=document.getElementById('qv-bubble');
+  if(!b)return;
+  b.innerHTML=html;
+  b.classList.remove('on');void b.offsetWidth;b.classList.add('on');
+  clearTimeout(b._t);b._t=setTimeout(()=>b.classList.remove('on'),ms||2000);
+}
 function _maybeQuizCameo(){
   if(ST.mode!=='snel')return;
   const sc=document.getElementById('sc-quiz');
-  if(!sc||!sc.classList.contains('on'))return;        // alleen als de quiz nog loopt
+  if(!sc||!sc.classList.contains('on'))return;
   const tot=ST.adaptive?ST.aqTarget:ST.vragen.length;
-  if(ST.idx>=tot)return;                               // niet vlak voor het resultaat
+  if(ST.idx>=tot)return;
   ST._interShown=ST._interShown||{};
   const combo=ST.combo||0;
-  if(combo===5&&!ST._interShown.c5){ST._interShown.c5=1;return _quizCameo({combo:5,bonus:15});}
-  if(combo>=8&&!ST._interShown.c8){ST._interShown.c8=1;return _quizCameo({combo:combo,bonus:25});}
+  if(combo===5&&!ST._interShown.c5){ST._interShown.c5=1;return _quizVonkMilestone({combo:5,bonus:15});}
+  if(combo>=8&&!ST._interShown.c8){ST._interShown.c8=1;return _quizVonkMilestone({combo:combo,bonus:25});}
   if(ST.idx===Math.floor(tot/2)&&!ST._interShown.half&&!ST._interShown.c5&&!ST._interShown.c8){
     ST._interShown.half=1;
-    return _quizCameo({half:true,perfect:ST.score>=ST.idx,bonus:10});
+    return _quizVonkMilestone({half:true,perfect:ST.score>=ST.idx,bonus:10});
   }
 }
-function _quizCameo(o){
+function _quizVonkMilestone(o){
   const bonus=Math.max(0,o.bonus||0);
   if(bonus>0)ST.xpThisRound=(ST.xpThisRound||0)+bonus;
   const _pk=a=>a[Math.floor(Math.random()*a.length)];
-  let head,mood='feest';
-  if(o.combo){mood='feest';head='🔥 '+o.combo+' op rij!';}
-  else{mood=o.perfect?'trots':'blij';head=o.perfect?'⭐ Halverwege, foutloos!':'💪 Je bent op de helft!';}
-  const sub=o.combo?_pk(['Niet te stoppen!','Vlammend!','Wat een reeks!']):(o.perfect?'Sterk bezig!':'Blijf gaan!');
-  const sc=document.getElementById('sc-quiz');
-  if(!sc)return;
-  const old=sc.querySelector('.qvonk-cameo');if(old)old.remove();
-  const vonk=(typeof mascotSVG==='function')?mascotSVG(mood,80):'';
-  const el=document.createElement('div');
-  el.className='qvonk-cameo';el.setAttribute('aria-hidden','true');
-  el.innerHTML=`<div class="qvc-vonk">${vonk}</div>
-    <div class="qvc-bubble"><div class="qvc-head">${head}</div><div class="qvc-sub">${sub}</div>${bonus>0?`<div class="qvc-bonus">+${bonus} XP</div>`:''}</div>`;
-  sc.appendChild(el);
-  requestAnimationFrame(()=>el.classList.add('in'));
-  // Via de gedragslaag (event bus): één pipeline, voorspelbaar. Geluid/haptiek
-  // hieronder blijven expliciet, dus silent:true om dubbel afvuren te voorkomen.
-  try{if(typeof vonkEvent==='function')vonkEvent(o.combo>=8?'combo_8':o.combo?'combo_5':'half',{el:el.querySelector('.qvc-vonk'),silent:true});}catch(e){}
+  let head;
+  if(o.combo)head='🔥 '+o.combo+' op rij!';
+  else head=o.perfect?'⭐ Halverwege, foutloos!':'💪 Op de helft!';
+  _showQuizVonk();
+  // Grote reactie via de gedragslaag → physics-impuls op de quiz-Vonk.
+  try{if(typeof vonkEvent==='function')vonkEvent(o.combo>=8?'combo_8':o.combo?'combo_5':'half',{el:document.querySelector('#quiz-vonk .qv-fig'),silent:true});}catch(e){}
+  _quizVonkBubble(`<b>${head}</b>${bonus>0?`<span class="qv-bonus">+${bonus} XP</span>`:''}`,2200);
   try{playSound(o.combo?'combo':'levelup');}catch(e){}
-  try{haptic([18,40,22,40,70]);}catch(e){}                 // stevige haptiek
+  try{haptic([18,40,22,40,70]);}catch(e){}
   if(bonus>0){setTimeout(()=>{try{if(typeof floatXP==='function')floatXP(bonus);}catch(e){}},220);}
-  // Zelf verdwijnen na ~2s (snelle animatie, niet wegklikbaar).
-  setTimeout(()=>{el.classList.remove('in');el.classList.add('out');setTimeout(()=>{if(el.parentNode)el.remove();},320);},1700);
 }
 
 // ═══════ PARTICLES ═══════

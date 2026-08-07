@@ -7383,3 +7383,14 @@ html.dark .dom-hero-card{background:linear-gradient(180deg,rgba(255,255,255,.045
 .m-phys .m-fig,.m-phys .m-head,.m-phys .m-ear-l,.m-phys .m-ear-r,
 .m-phys .m-tail,.m-phys .m-shadow,.m-phys .m-eyes,.m-phys .m-pupils{animation:none !important}
 .m-phys .m-fig,.m-phys .m-head,.m-phys .m-ear-l,.m-phys .m-ear-r,.m-phys .m-tail{will-change:transform}
+
+/* ── Blijvende quiz-Vonk (levende coach linksonder in de quiz) ── */
+.quiz-vonk{position:fixed;left:10px;bottom:calc(12px + env(safe-area-inset-bottom,0px));width:66px;height:66px;z-index:56;pointer-events:none;opacity:0;transform:translateY(14px) scale(.8);transition:opacity .35s ease,transform .45s cubic-bezier(.22,1.3,.36,1)}
+.quiz-vonk.on{opacity:1;transform:none}
+.qv-fig{width:66px;height:66px;filter:drop-shadow(0 5px 12px rgba(0,0,0,.45))}
+.qv-fig .m-svg{width:66px;height:66px;display:block}
+.qv-bubble{position:absolute;left:56px;bottom:40px;min-width:0;white-space:nowrap;background:linear-gradient(180deg,#1c2130,#12151e);border:1px solid rgba(255,255,255,.14);border-radius:14px 14px 14px 4px;padding:8px 12px;font-family:var(--font-head);font-weight:900;font-size:14px;color:#fff;box-shadow:0 8px 24px rgba(0,0,0,.45);opacity:0;transform:translateY(6px) scale(.9);transform-origin:left bottom;transition:opacity .22s ease,transform .3s cubic-bezier(.34,1.6,.5,1)}
+.qv-bubble.on{opacity:1;transform:none}
+.qv-bonus{display:inline-block;margin-left:8px;padding:2px 8px;border-radius:999px;background:linear-gradient(135deg,rgba(34,197,94,.24),rgba(16,185,129,.14));border:1px solid rgba(74,222,128,.45);color:#86efac;font-size:12.5px}
+@media(max-width:640px){.quiz-vonk{width:56px;height:56px}.qv-fig,.qv-fig .m-svg{width:56px;height:56px}.qv-bubble{left:48px;bottom:34px;font-size:13px}}
+@media(prefers-reduced-motion:reduce){.quiz-vonk,.qv-bubble{transition:none!important}}
