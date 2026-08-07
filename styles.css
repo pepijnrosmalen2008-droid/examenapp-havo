@@ -7377,3 +7377,9 @@ html.dark .dom-hero-card{background:linear-gradient(180deg,rgba(255,255,255,.045
 .m-svg[data-energy="lo"] .m-do-happy .m-fig{animation-duration:.9s}
 .m-svg[data-energy="lo"] .m-do-nod .m-head,.m-svg[data-energy="lo"] .m-do-sad .m-fig{animation-duration:1.1s}
 @media(prefers-reduced-motion:reduce){.m-do-yawn .m-yawn,.m-do-yawn .m-head,.m-do-tailflick .m-tail{animation:none!important}}
+
+/* ── Physics-engine: de aangestuurde onderdelen krijgen inline-transforms van
+   de rAF-loop, dus hun CSS-keyframes moeten uit (anders winnen die). ── */
+.m-phys .m-fig,.m-phys .m-head,.m-phys .m-ear-l,.m-phys .m-ear-r,
+.m-phys .m-tail,.m-phys .m-shadow,.m-phys .m-eyes,.m-phys .m-pupils{animation:none !important}
+.m-phys .m-fig,.m-phys .m-head,.m-phys .m-ear-l,.m-phys .m-ear-r,.m-phys .m-tail{will-change:transform}

@@ -20,8 +20,10 @@ var VonkFX = { primary: null, mainUntil: 0, idleT: null, lastEvt: 0 };
 //  enthusiasm = hoe uitbundig (energie van de animaties, idle-tempo)
 //  confidence = hoe zeker (invloed op houding / variant)
 //  empathy    = hoe zorgzaam (stijgt bij fouten → bemoedigend gedrag)
-var VonkMood = { enthusiasm: 55, confidence: 62, empathy: 45 };
-var VONK_MOOD_BASE = { enthusiasm: 50, confidence: 60, empathy: 42 };
+// Mensen lezen gezichten, geen variabelen — vandaar naast de basis-drie ook
+// curiosity/focus/pride, die de fysica sturen (kantelen, rust, houding).
+var VonkMood = { enthusiasm: 55, confidence: 62, empathy: 45, curiosity: 45, focus: 45, pride: 40 };
+var VONK_MOOD_BASE = { enthusiasm: 50, confidence: 60, empathy: 42, curiosity: 45, focus: 45, pride: 40 };
 var _vonkRunWrong = 0, _vonkRunRight = 0;
 function _clamp100(v) { return v < 0 ? 0 : v > 100 ? 100 : v; }
 function vonkMoodBump(d) { if (!d) return; for (var k in VONK_MOOD_BASE) if (d[k] != null) VonkMood[k] = _clamp100(VonkMood[k] + d[k]); }
@@ -36,16 +38,16 @@ setInterval(function () {
 }, 6000);
 // Per-event stemmingseffect.
 var VONK_MOOD_FX = {
-  answer_correct: { enthusiasm: 12, confidence: 6, empathy: -3 },
-  combo_3: { enthusiasm: 15, confidence: 7 },
-  combo_5: { enthusiasm: 23, confidence: 11 },
-  combo_8: { enthusiasm: 30, confidence: 15 },
-  half: { enthusiasm: 8, confidence: 4 },
-  answer_wrong: { enthusiasm: -9, confidence: -12, empathy: 9 },
-  level_up: { enthusiasm: 22, confidence: 13 },
-  promotion: { enthusiasm: 24, confidence: 15 },
-  evolve: { enthusiasm: 32, confidence: 18 },
-  streak: { enthusiasm: 17, confidence: 9 }
+  answer_correct: { enthusiasm: 12, confidence: 6, empathy: -3, pride: 7, curiosity: 3, focus: 4 },
+  combo_3: { enthusiasm: 15, confidence: 7, pride: 8 },
+  combo_5: { enthusiasm: 23, confidence: 11, pride: 14, focus: 6 },
+  combo_8: { enthusiasm: 30, confidence: 15, pride: 20 },
+  half: { enthusiasm: 8, confidence: 4, focus: 6 },
+  answer_wrong: { enthusiasm: -9, confidence: -12, empathy: 9, pride: -8, focus: 10 },
+  level_up: { enthusiasm: 22, confidence: 13, pride: 18 },
+  promotion: { enthusiasm: 24, confidence: 15, pride: 22 },
+  evolve: { enthusiasm: 32, confidence: 18, pride: 26 },
+  streak: { enthusiasm: 17, confidence: 9, pride: 12 }
 };
 // Energie-niveau (voor animatie-tempo/amplitude) uit enthousiasme.
 function _vonkEnergy() { var e = VonkMood.enthusiasm; return e > 70 ? 'hi' : e < 34 ? 'lo' : 'mid'; }
@@ -78,6 +80,8 @@ var VONK_EVENTS = {
 function vonkRegister(el) {
   var svg = (typeof _vonkSvgOf === 'function') ? _vonkSvgOf(el) : null;
   VonkFX.primary = svg || null;
+  // De hoofd-Vonk wordt een fysiek lichaam (ademen/knipperen/rondkijken via physics).
+  try { if (svg && typeof vonkPhysics === 'function') vonkPhysics(svg); } catch (e) {}
   _vonkIdleSchedule();
 }
 function _vonkActiveEl(opts) {
@@ -110,7 +114,11 @@ function vonkEvent(name, opts) {
   else if (stName === 'celebrate' && VonkMood.enthusiasm < 40) anim = 'happy';   // rustiger vieren na een zware reeks
   // Timing-laag: anim + geluid + haptiek starten samen (binnen ~1 frame).
   if (el) { try { el.setAttribute('data-energy', energy); } catch (e) {} }
-  if (el && anim && typeof vonkPlay === 'function') vonkPlay(el, anim, st.dur);
+  // Physics-first: als het kan wordt de Vonk een fysiek lichaam en krijgt hij een
+  // IMPULS (parameters uit de mood). Anders valt hij terug op de CSS-rig-states.
+  var body = (el && typeof vonkPhysics === 'function') ? vonkPhysics(el) : null;
+  if (body) { body.setMood(VonkMood); if (anim) body.impulse(anim); }
+  else if (el && anim && typeof vonkPlay === 'function') vonkPlay(el, anim, st.dur);
   if (st.gaze) vonkGaze(el, opts.gazeTarget || 'cta');
   if (!opts.silent) {
     if (st.sound) { try { if (typeof playSound === 'function') playSound(st.sound); } catch (e) {} }
@@ -171,7 +179,9 @@ function _vonkIdleTick() {
   try {
     var el = VonkFX.primary;
     var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-    if (el && document.body.contains(el) && el.offsetParent !== null && Date.now() > VonkFX.mainUntil && !reduce) {
+    // Fysiek aangestuurde Vonk regelt zijn eigen idle (ademen/knipperen/rondkijken);
+    // de CSS-idle hieronder alleen voor niet-physics Vonks.
+    if (el && !el._body && document.body.contains(el) && el.offsetParent !== null && Date.now() > VonkFX.mainUntil && !reduce) {
       var idleSecs = (Date.now() - VonkFX.lastEvt) / 1000;
       var r = Math.random();
       if (r < 0.40) _vonkBlink(el);                       // 40% knipper
@@ -220,6 +230,7 @@ function vonkTest() {
       '<span style="color:#6b7488">energie: ' + _vonkEnergy() + ' · reeks +' + _vonkRunRight + ' / -' + _vonkRunWrong + '</span>';
   }
   d._mt = setInterval(refresh, 400); refresh();
+  var body = (typeof vonkPhysics === 'function') ? vonkPhysics(stage) : null;  // fysiek lichaam
   var mk = function (label, host, fn, accent) {
     var b = document.createElement('button'); b.textContent = label;
     b.style.cssText = 'padding:8px 13px;border-radius:9px;border:1px solid ' + (accent ? '#e8580c' : '#33384a') + ';background:' + (accent ? '#2a1a10' : '#1c2130') + ';color:#fff;cursor:pointer;font-size:13px;font-weight:600';
@@ -230,9 +241,11 @@ function vonkTest() {
   var btns = d.querySelector('#vt-btns');
   oneShots.forEach(function (s) {
     mk(s, btns, function () {
+      if (s === 'look_cta') { if (body) body.gazeTo(2.5, -1.5); else vonkGaze(stage, moodEl); return; }
       var st = VONK_STATES[s];
-      if (s === 'look_cta') { vonkGaze(stage, moodEl); return; }
-      if (st && st.anim) vonkPlay(stage, st.anim, st.dur);
+      var anim = (st && st.anim) ? st.anim : s;
+      if (body) { body.setMood(VonkMood); body.impulse(anim); }
+      else if (st && st.anim) vonkPlay(stage, st.anim, st.dur);
     });
   });
 }
