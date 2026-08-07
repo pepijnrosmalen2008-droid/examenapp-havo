@@ -1110,7 +1110,48 @@ document.addEventListener('DOMContentLoaded',()=>{
 // (offline-/online-indicator wordt centraal beheerd in lb.js - geen dubbele toggles hier)
 
 // ═══════ HAPTIC ═══════
-function haptic(pat){try{if(navigator.vibrate)navigator.vibrate(pat);}catch(e){}}
+// ═══════ HAPTIEK (Android via Vibration API, iOS via Taptic-hack) ═══════
+// iOS Safari kent geen navigator.vibrate. Een verborgen <label><input switch>
+// geeft daar wél een echte haptische tik via de Taptic Engine - die werkt óók
+// als de telefoon op stil staat. We tikken de switch enkele keren volgens het
+// patroon zodat een reeks (bv. [30,20,60]) meerdere pulsen voelt.
+var _iosHap=null,_isIOSdev=null;
+function _isIOS(){
+  if(_isIOSdev!=null)return _isIOSdev;
+  try{
+    const ua=navigator.userAgent||'';
+    _isIOSdev=/iPhone|iPad|iPod/.test(ua)||(/Macintosh/.test(ua)&&navigator.maxTouchPoints>1);
+  }catch(e){_isIOSdev=false;}
+  return _isIOSdev;
+}
+function _iosHapEl(){
+  if(_iosHap)return _iosHap;
+  try{
+    const lbl=document.createElement('label');
+    lbl.setAttribute('aria-hidden','true');
+    lbl.style.cssText='position:fixed;top:-100px;left:-100px;width:1px;height:1px;opacity:0;pointer-events:none;z-index:-1';
+    const inp=document.createElement('input');
+    inp.type='checkbox';inp.setAttribute('switch','');inp.tabIndex=-1;
+    lbl.appendChild(inp);
+    (document.body||document.documentElement).appendChild(lbl);
+    _iosHap={lbl:lbl,inp:inp};
+  }catch(e){_iosHap=null;}
+  return _iosHap;
+}
+function haptic(pat){
+  // 1) Android / standaard Vibration API.
+  try{ if(navigator.vibrate){ navigator.vibrate(pat); if(!_isIOS()) return; } }catch(e){}
+  // 2) iOS Taptic-fallback via de switch-tik (ook op stil).
+  try{
+    if(!_isIOS())return;
+    const h=_iosHapEl(); if(!h)return;
+    const arr=Array.isArray(pat)?pat:[pat];
+    const pulses=Math.min(5,Math.max(1,Math.ceil(arr.length/2)));  // #tril-segmenten
+    let i=0;
+    const tick=()=>{ try{h.inp.checked=!h.inp.checked;h.lbl.click();}catch(e){} i++; if(i<pulses)setTimeout(tick,80); };
+    tick();
+  }catch(e){}
+}
 
 // ═══════ BUTTON RIPPLE ═══════
 document.addEventListener('click',function(e){

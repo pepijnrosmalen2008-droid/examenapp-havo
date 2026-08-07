@@ -850,25 +850,43 @@ function _chestRoll(){
   return {rare:false,coins:15+Math.floor(Math.random()*36)}; // 15–50
 }
 // De kist-SVG (los zodat de gouden variant dezelfde vorm hergebruikt).
+// Shading-overlays (zwart/wit-alpha) geven 3D-diepte zonder de kleur-override
+// van de gouden variant in de weg te zitten.
 function _chestSVG(){
   return `<svg class="chest-svg" viewBox="0 0 140 124" width="176" height="156" aria-hidden="true">
-    <defs><radialGradient id="chestInGlow" cx="50%" cy="42%" r="62%">
-      <stop offset="0%" stop-color="#fff7db"/><stop offset="42%" stop-color="#ffd76c"/><stop offset="100%" stop-color="#ffd76c" stop-opacity="0"/>
-    </radialGradient></defs>
+    <defs>
+      <radialGradient id="chestInGlow" cx="50%" cy="42%" r="62%">
+        <stop offset="0%" stop-color="#fff7db"/><stop offset="42%" stop-color="#ffd76c"/><stop offset="100%" stop-color="#ffd76c" stop-opacity="0"/>
+      </radialGradient>
+      <linearGradient id="chestShade" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0" stop-color="#ffffff" stop-opacity=".16"/>
+        <stop offset=".42" stop-color="#000000" stop-opacity="0"/>
+        <stop offset="1" stop-color="#000000" stop-opacity=".30"/>
+      </linearGradient>
+      <linearGradient id="chestLidShade" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0" stop-color="#ffffff" stop-opacity=".28"/>
+        <stop offset="1" stop-color="#000000" stop-opacity=".22"/>
+      </linearGradient>
+      <radialGradient id="chestRays" cx="50%" cy="50%" r="50%">
+        <stop offset="0%" stop-color="#fff2b0" stop-opacity=".9"/><stop offset="100%" stop-color="#fff2b0" stop-opacity="0"/>
+      </radialGradient>
+    </defs>
     <ellipse class="chest-shadow" cx="70" cy="114" rx="52" ry="8"/>
     <g class="chest-inside">
+      <ellipse class="chest-rays" cx="70" cy="52" rx="54" ry="30" fill="url(#chestRays)"/>
       <path d="M27 57 h86 v7 a43 9 0 0 1 -86 0 z" fill="#241407"/>
       <ellipse cx="70" cy="57" rx="43" ry="9" fill="#3a2413"/>
       <ellipse class="chest-inglow" cx="70" cy="55" rx="39" ry="13" fill="url(#chestInGlow)"/>
       <g class="chest-coins">
-        <circle cx="53" cy="55" r="7"/><circle cx="70" cy="51" r="8"/><circle cx="87" cy="55" r="7"/>
+        <circle cx="52" cy="56" r="7"/><circle cx="88" cy="56" r="7"/><circle cx="63" cy="52" r="7.5"/><circle cx="78" cy="52" r="7.5"/><circle cx="70" cy="48" r="8"/>
       </g>
     </g>
     <g class="chest-front">
       <rect class="chest-face" x="24" y="59" width="92" height="49" rx="8"/>
-      <rect class="chest-band" x="24" y="67" width="92" height="9"/>
       <rect class="chest-band" x="40" y="59" width="8" height="49"/>
       <rect class="chest-band" x="92" y="59" width="8" height="49"/>
+      <rect class="chest-band" x="24" y="67" width="92" height="9"/>
+      <rect x="24" y="59" width="92" height="49" rx="8" fill="url(#chestShade)"/>
       <rect class="chest-lock" x="62" y="72" width="16" height="22" rx="3"/>
       <circle class="chest-lockhole" cx="70" cy="83" r="3.2"/>
     </g>
@@ -876,7 +894,8 @@ function _chestSVG(){
       <path class="chest-lid-face" d="M22 60 Q70 22 118 60 L118 62 L22 62 Z"/>
       <rect class="chest-band" x="40" y="46" width="8" height="16"/>
       <rect class="chest-band" x="92" y="46" width="8" height="16"/>
-      <path class="chest-lid-shine" d="M28 58 Q70 30 112 58" fill="none"/>
+      <path d="M22 60 Q70 22 118 60 L118 62 L22 62 Z" fill="url(#chestLidShade)"/>
+      <path class="chest-lid-shine" d="M30 57 Q70 30 110 57" fill="none"/>
     </g>
     <g class="chest-sparkles" aria-hidden="true">
       <path class="cs cs1" d="M28 40 l2 5 5 2 -5 2 -2 5 -2 -5 -5 -2 5 -2z"/>
@@ -884,6 +903,25 @@ function _chestSVG(){
       <path class="cs cs3" d="M118 74 l1.3 3.3 3.3 1.3 -3.3 1.3 -1.3 3.3 -1.3 -3.3 -3.3 -1.3 3.3 -1.3z"/>
     </g>
   </svg>`;
+}
+// Munten die uit de kist "spatten" bij het openen (DOM-sprites, boven de kist).
+function _chestCoinBurst(box,rare){
+  try{
+    const r=box.getBoundingClientRect();
+    const cx=r.left+r.width/2, cy=r.top+r.height*0.42;
+    const ic=(typeof _ico==='function')?_ico('coin',20):'🪙';
+    const N=rare?12:9;
+    for(let i=0;i<N;i++){
+      const s=document.createElement('div');s.className='chest-pop-coin';s.innerHTML=ic;
+      s.style.left=cx+'px';s.style.top=cy+'px';
+      document.body.appendChild(s);
+      const ang=-Math.PI/2+(Math.random()-0.5)*1.7, dist=60+Math.random()*95;
+      const dx=Math.cos(ang)*dist, dy=Math.sin(ang)*dist;
+      const delay=i*22;
+      setTimeout(()=>{ s.style.transform='translate('+dx.toFixed(0)+'px,'+dy.toFixed(0)+'px) rotate('+Math.floor(Math.random()*360)+'deg)'; s.style.opacity='0'; },delay+20);
+      setTimeout(()=>s.remove(),delay+720);
+    }
+  }catch(e){}
 }
 // Kistje tonen; 'finish' wordt aangeroepen als de gebruiker het sluit (voor de wachtrij).
 function showChest(finish,ctx){
@@ -913,7 +951,15 @@ function showChest(finish,ctx){
   const box=ov.querySelector('#chest-box');
   const dots=ov.querySelectorAll('#chest-dots span');
   const hint=ov.querySelector('#chest-hint');
-  const close=()=>{ ov.classList.remove('show'); setTimeout(()=>{if(ov.parentNode)ov.remove();},280); finish(); };
+  const close=()=>{
+    ov.classList.remove('show'); setTimeout(()=>{if(ov.parentNode)ov.remove();},280);
+    // Munten uit de kist naar de muntenbalk laten vliegen (net als na de quiz).
+    const coinBtn=document.getElementById('res-coinbtn');
+    if(reward&&!reward.rare&&reward.coins>0&&typeof coinFlyToBar==='function'&&coinBtn){
+      setTimeout(()=>{try{coinFlyToBar(reward.coins,coinBtn);}catch(e){}},240);
+      setTimeout(finish,1250);            // wachten tot de munten geland zijn
+    }else{ finish(); }
+  };
   const tap=()=>{
     if(taps>=NEED)return;
     taps++;
@@ -935,7 +981,9 @@ function _chestBurst(ov,reward,close,hint,box){
     if(hint)hint.style.display='none';
     const dots=ov.querySelector('#chest-dots');if(dots)dots.style.display='none';
     try{playSound(reward.rare?'evolve':'levelup');}catch(e){}
-    try{haptic([50,30,90,30,160]);}catch(e){}
+    // Krachtige openings-haptiek (langere, opbouwende buzz).
+    try{haptic(reward.rare?[60,30,80,30,120,30,220]:[50,30,90,30,170]);}catch(e){}
+    try{const bx=ov.querySelector('#chest-box');if(bx)_chestCoinBurst(bx,reward.rare);}catch(e){}
     try{if(typeof launchConfetti==='function')launchConfetti(reward.rare?'gold':undefined);}catch(e){}
     let revealHtml='';
     if(reward.rare&&reward.item){

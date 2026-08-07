@@ -7187,6 +7187,14 @@ html.dark .dom-hero-card{background:linear-gradient(180deg,rgba(255,255,255,.045
 .chest-opened .chest-inside{opacity:1}
 .chest-inglow{animation:chestInGlow 1.6s ease-in-out infinite}
 @keyframes chestInGlow{0%,100%{opacity:.7}50%{opacity:1}}
+.chest-rays{opacity:0}
+.chest-opened .chest-rays{animation:chestRayPulse 1.8s ease-in-out infinite}
+@keyframes chestRayPulse{0%,100%{opacity:.55;transform:scale(.92)}50%{opacity:.95;transform:scale(1.06)}}
+/* Munten die uit de kist spatten */
+.chest-pop-coin{position:fixed;z-index:9520;pointer-events:none;opacity:1;transition:transform .66s cubic-bezier(.2,.75,.3,1),opacity .66s ease .1s;filter:drop-shadow(0 2px 4px rgba(0,0,0,.4));will-change:transform,opacity}
+.chest-pop-coin svg{width:22px;height:22px;display:block}
+.chest-opened .chest-box{animation:chestOpenPop .5s cubic-bezier(.34,1.5,.5,1)}
+@keyframes chestOpenPop{0%{transform:scale(1)}35%{transform:scale(1.07)}100%{transform:scale(1.04)}}
 /* De deksel scharniert echt open (3D-kanteling naar achteren rond de onderrand) */
 .chest-lid{transform-box:view-box;transform-origin:70px 60px;transition:transform .55s cubic-bezier(.34,1.4,.5,1)}
 .chest-opened .chest-lid{transform:perspective(340px) rotateX(-128deg)}

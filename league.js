@@ -87,12 +87,28 @@ function _lgBotXP(b,prog){
   return tot>0?Math.round(b.target*acc/tot):0;
 }
 // Echte medespelers uit de cache (zelfde week + divisie), zonder mijzelf.
+// Belangrijk: filter óók op mijn NAAM (niet alleen mijn did) en ontdubbel op naam,
+// anders verschijnen mijn eigen entries van andere apparaten/sessies als 'kopieën'
+// van mezelf (bv. meerdere 'Pepijn'-rijen die op mijn avatar lijken).
 function _lgRealRows(L){
   const c=window._lgRealCache;
   if(!c||c.week!==L.week||c.division!==L.division||!Array.isArray(c.players))return [];
   const mine=(typeof _DID!=='undefined')?_DID:null;
-  return c.players.filter(p=>p&&p.did&&p.did!==mine)
-    .map(p=>({naam:p.naam||'Speler',animalId:p.animal_id||null,stage:p.stage||0,xp:Math.max(0,p.xp||0),me:false,real:true}));
+  const myName=(_lgMeName()||'').trim().toLowerCase();
+  const seen={};const out=[];
+  c.players.forEach(p=>{
+    if(!p||!p.did||p.did===mine)return;                       // mijn eigen device
+    const nm=(p.naam||'Speler').trim();
+    const key=nm.toLowerCase();
+    if(myName&&key===myName)return;                           // mijn naam op een ander device
+    if(seen[key]!==undefined){                                // ontdubbel op naam → hoogste XP
+      const ex=out[seen[key]];ex.xp=Math.max(ex.xp,Math.max(0,p.xp||0));
+      return;
+    }
+    seen[key]=out.length;
+    out.push({naam:nm,animalId:p.animal_id||null,stage:p.stage||0,xp:Math.max(0,p.xp||0),me:false,real:true});
+  });
+  return out;
 }
 
 function _lgMeName(){try{const p=JSON.parse(localStorage.getItem(PROF_KEY)||'{}');return (p.naam&&p.naam.trim())?p.naam.trim():'Jij';}catch(e){return 'Jij';}}
