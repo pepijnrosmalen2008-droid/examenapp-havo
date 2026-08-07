@@ -464,7 +464,7 @@ function showLeagueRankUp(info,finish){
   window._lgRankUpFinish=finish;
   document.body.appendChild(el);
   requestAnimationFrame(()=>el.classList.add('show'));
-  try{if(typeof vonkPlay==='function')vonkPlay(el.querySelector('.lgc-vonk'),'jump');}catch(e){}
+  try{if(typeof vonkPlay==='function')vonkEvent('promotion',{el:el.querySelector('.lgc-vonk'),silent:true});}catch(e){}
   try{playSound('complete');}catch(e){}
   // Na een korte beat: de rijen naar hun eindpositie laten schuiven + pijltjes/haptiek.
   setTimeout(()=>{

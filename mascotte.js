@@ -322,7 +322,7 @@ function vonkCelebrate(caption, opts) {
   ov.innerHTML = `${bunting}<div class="vc-confetti-wrap">${confetti}</div>
     <div class="vc-stage"><div class="vc-vonk">${svg}</div>${caption ? `<div class="vc-caption">${caption}</div>` : ''}</div>`;
   document.body.appendChild(ov);
-  try { vonkPlay(ov.querySelector('.vc-vonk'), 'celebrate'); } catch (e) {}
+  try { vonkEvent('level_up',{el:ov.querySelector('.vc-vonk'),silent:true}); } catch (e) {}
   try { if (typeof playSound === 'function') playSound('complete'); } catch (e) {}
   try { if (typeof haptic === 'function') haptic([30, 40, 30, 40, 80]); } catch (e) {}
   const kill = () => { ov.classList.add('vc-out'); setTimeout(() => { if (ov.parentNode) ov.remove(); }, 450); };
@@ -488,6 +488,9 @@ function updateVonkCorner(id) {
     document.body.appendChild(el);
   }
   el.style.display = ''; el.style.visibility = '';
+  // Registreer de hoek-Vonk als de 'hoofd-Vonk' zodat idle (rondkijken/knikken)
+  // en gaze op hem werken.
+  try { if (typeof vonkRegister === 'function') vonkRegister(el.querySelector('.vonk-corner-fig')); } catch (e) {}
 }
 
 // Vonk + spraakbubbel als herbruikbaar blok. opts: {name, size, dark, actionsHTML, fineHTML}
