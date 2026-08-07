@@ -854,7 +854,7 @@ html.dark .qb{background:#2e3550}
 .ps{background:var(--orl);color:var(--or)}
 .po{background:#EDE9FE;color:#7C3AED}
 /* ── QUIZ ─────────────────────────────────────── */
-#sc-quiz{background:linear-gradient(180deg, #0A0C10 0%, #1a1f2e 100%)}
+#sc-quiz{background:linear-gradient(180deg, #0A0C10 0%, #1a1f2e 100%);position:relative}
 .qtb{display:flex;align-items:center;gap:9px;padding:15px 16px 0}
 /* Oefen-modus topbalk: nette bar i.p.v. gekropte tekst links */
 .tb{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:16px 2px 10px}
@@ -7138,54 +7138,77 @@ html.dark .dom-hero-card{background:linear-gradient(180deg,rgba(255,255,255,.045
 .coin-fly svg{width:22px;height:22px;display:block}
 @media(prefers-reduced-motion:reduce){.coin-btn.coin-bump{animation:none}.coin-fly{transition:opacity .3s!important;transform:none!important}}
 
-/* ═══ Mid-quiz Vonk-interstitial (Duolingo-stijl pacing tussen vragen) ═══ */
-.qinter-overlay{position:fixed;inset:0;z-index:9650;display:flex;align-items:flex-end;justify-content:center;padding:0;background:rgba(6,8,14,0);transition:background .26s ease;pointer-events:auto}
-.qinter-overlay.in{background:rgba(6,8,14,.62);backdrop-filter:blur(7px);-webkit-backdrop-filter:blur(7px)}
-.qinter-overlay.out{background:rgba(6,8,14,0);backdrop-filter:blur(0)}
-.qinter-card{position:relative;width:100%;max-width:460px;background:linear-gradient(180deg,#141826,#0e1119);border:1px solid rgba(255,255,255,.1);border-bottom:none;border-radius:26px 26px 0 0;padding:26px 24px calc(24px + env(safe-area-inset-bottom,0px));text-align:center;box-shadow:0 -18px 60px rgba(0,0,0,.5);transform:translateY(105%);transition:transform .4s cubic-bezier(.22,1.05,.36,1);overflow:hidden}
-.qinter-overlay.in .qinter-card{transform:translateY(0)}
-.qinter-overlay.out .qinter-card{transform:translateY(105%);transition:transform .24s ease-in}
-.qinter-burst{position:absolute;top:-40px;left:50%;width:280px;height:280px;transform:translateX(-50%);background:radial-gradient(circle,rgba(251,140,62,.34),rgba(251,140,62,0) 62%);pointer-events:none}
-.qinter-vonk{position:relative;display:flex;justify-content:center;margin-bottom:6px}
-.qinter-vonk svg{width:132px;height:132px;filter:drop-shadow(0 8px 20px rgba(0,0,0,.45));animation:qinterPop .5s cubic-bezier(.34,1.6,.5,1)}
-@keyframes qinterPop{0%{transform:scale(.4) translateY(20px);opacity:0}60%{transform:scale(1.08)}100%{transform:scale(1) translateY(0);opacity:1}}
-.qinter-head{position:relative;font-family:var(--font-head);font-weight:900;font-size:23px;color:#fff;letter-spacing:-.3px;line-height:1.15}
-.qinter-sub{position:relative;font-size:14.5px;color:rgba(255,255,255,.66);margin-top:7px;line-height:1.45;font-weight:500}
-.qinter-bonus{position:relative;display:inline-flex;align-items:center;gap:7px;margin-top:16px;padding:9px 18px;background:linear-gradient(135deg,rgba(34,197,94,.22),rgba(16,185,129,.14));border:1px solid rgba(74,222,128,.42);border-radius:999px;color:#86efac;font-family:var(--font-head);font-weight:800;font-size:14px;animation:qinterBonus .5s cubic-bezier(.34,1.7,.5,1) .18s both}
-.qinter-bonus .qib-plus{font-size:18px;color:#4ade80;text-shadow:0 0 12px rgba(74,222,128,.55)}
-@keyframes qinterBonus{0%{transform:scale(.3);opacity:0}55%{transform:scale(1.15)}100%{transform:scale(1);opacity:1}}
-.qinter-go{position:relative;display:block;width:100%;margin-top:20px;padding:16px;background:linear-gradient(135deg,#fb8c3e,#e8580c);border:none;border-radius:16px;color:#fff;font-family:var(--font-head);font-weight:900;font-size:16.5px;cursor:pointer;box-shadow:0 6px 20px rgba(232,88,12,.4);-webkit-tap-highlight-color:transparent;transition:transform .12s cubic-bezier(.34,1.5,.5,1),box-shadow .16s}
-.qinter-go:hover{box-shadow:0 8px 26px rgba(232,88,12,.52)}
-.qinter-go:active{transform:scale(.97)}
-.qinter-go span{display:inline-block;transition:transform .18s}
-.qinter-go:hover span{transform:translateX(3px)}
-@media(prefers-reduced-motion:reduce){.qinter-overlay,.qinter-card,.qinter-vonk svg,.qinter-bonus{transition:none!important;animation:none!important}.qinter-card{transform:none!important}}
+/* ═══ Mid-quiz Vonk-cameo (niet wegklikbaar, ~2s, komt het quizscherm in) ═══ */
+.qvonk-cameo{position:absolute;left:50%;bottom:calc(20px + env(safe-area-inset-bottom,0px));transform:translate(-50%,140%);z-index:60;display:flex;align-items:flex-end;gap:2px;pointer-events:none;opacity:0;transition:transform .42s cubic-bezier(.22,1.3,.36,1),opacity .3s;max-width:calc(100% - 24px)}
+.qvonk-cameo.in{transform:translate(-50%,0);opacity:1}
+.qvonk-cameo.out{transform:translate(-50%,60%);opacity:0;transition:transform .3s ease-in,opacity .3s}
+.qvc-vonk{flex-shrink:0;filter:drop-shadow(0 6px 16px rgba(0,0,0,.5))}
+.qvc-vonk svg{width:78px;height:78px;display:block;animation:qvcHop .5s cubic-bezier(.34,1.7,.5,1)}
+@keyframes qvcHop{0%{transform:translateY(14px) scale(.7);opacity:0}60%{transform:translateY(-3px) scale(1.06)}100%{transform:translateY(0) scale(1);opacity:1}}
+.qvc-bubble{position:relative;margin-bottom:12px;background:linear-gradient(180deg,#1c2130,#12151e);border:1px solid rgba(255,255,255,.12);border-radius:16px 16px 16px 4px;padding:11px 16px;box-shadow:0 10px 30px rgba(0,0,0,.45);text-align:left}
+.qvc-head{font-family:var(--font-head);font-weight:900;font-size:17px;color:#fff;letter-spacing:-.2px;white-space:nowrap}
+.qvc-sub{font-size:12px;color:rgba(255,255,255,.6);font-weight:600;margin-top:1px}
+.qvc-bonus{display:inline-block;margin-top:6px;padding:3px 10px;background:linear-gradient(135deg,rgba(34,197,94,.24),rgba(16,185,129,.14));border:1px solid rgba(74,222,128,.45);border-radius:999px;color:#86efac;font-family:var(--font-head);font-weight:800;font-size:12.5px;animation:qvcBonus .45s cubic-bezier(.34,1.7,.5,1) .16s both}
+@keyframes qvcBonus{0%{transform:scale(.4);opacity:0}55%{transform:scale(1.14)}100%{transform:scale(1);opacity:1}}
+@media(prefers-reduced-motion:reduce){.qvonk-cameo,.qvc-vonk svg,.qvc-bonus{transition:none!important;animation:none!important}}
 
 /* ═══ Divisie-stijging: groot rangnummer op het promotie-scherm ═══ */
 .lgc-rankbig{position:relative;font-family:var(--font-head);font-weight:900;font-size:44px;color:var(--lg-col,#fb8c3e);line-height:1;margin:4px 0 2px;letter-spacing:-1px}
 .lgc-rankbig .lgc-rankof{font-size:15px;font-weight:800;color:var(--mu);letter-spacing:0}
 .lgc-rankbig.rl-pop{animation:rlPop .45s cubic-bezier(.34,1.56,.64,1)}
 
-/* ═══ Kistje (Duolingo-stijl beloningskist) ═══ */
+/* ═══ Kistje (Duolingo-stijl beloningskist, echte deksel + gouden rare-variant) ═══ */
 .chest-overlay{position:fixed;inset:0;z-index:9500;display:flex;align-items:center;justify-content:center;padding:24px;background:rgba(6,8,14,0);transition:background .28s ease}
 .chest-overlay.show{background:rgba(6,8,14,.72);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px)}
 .chest-inner{position:relative;width:100%;max-width:380px;text-align:center;display:flex;flex-direction:column;align-items:center;gap:2px;transform:translateY(16px) scale(.96);opacity:0;transition:transform .4s cubic-bezier(.22,1.05,.36,1),opacity .3s}
 .chest-overlay.show .chest-inner{transform:none;opacity:1}
 .chest-kicker{font-family:var(--font-head);font-weight:900;font-size:19px;color:#fff;margin-bottom:10px;letter-spacing:-.2px}
-.chest-stage{position:relative;display:grid;place-items:center;height:170px;width:100%}
-.chest-glow{position:absolute;width:230px;height:230px;border-radius:50%;background:radial-gradient(circle,rgba(251,191,36,.4),rgba(251,191,36,0) 62%);animation:chestGlow 2.4s ease-in-out infinite}
+.chest-stage{position:relative;display:grid;place-items:center;height:188px;width:100%}
+.chest-glow{position:absolute;width:240px;height:240px;border-radius:50%;background:radial-gradient(circle,rgba(251,191,36,.4),rgba(251,191,36,0) 62%);animation:chestGlow 2.4s ease-in-out infinite}
+.chest-gold .chest-glow{background:radial-gradient(circle,rgba(255,213,74,.6),rgba(255,213,74,0) 62%)}
 .chest-opened .chest-glow{animation:chestGlowBurst .6s ease-out forwards}
 @keyframes chestGlow{0%,100%{transform:scale(.9);opacity:.7}50%{transform:scale(1.08);opacity:1}}
-@keyframes chestGlowBurst{0%{transform:scale(1);opacity:1}100%{transform:scale(1.8);opacity:0}}
-.chest-box{position:relative;cursor:pointer;-webkit-tap-highlight-color:transparent;transition:transform .12s cubic-bezier(.34,1.5,.5,1);filter:drop-shadow(0 12px 24px rgba(0,0,0,.4));outline:none}
+@keyframes chestGlowBurst{0%{transform:scale(1);opacity:1}100%{transform:scale(1.75);opacity:0}}
+.chest-box{position:relative;cursor:pointer;-webkit-tap-highlight-color:transparent;transition:transform .12s cubic-bezier(.34,1.5,.5,1);filter:drop-shadow(0 12px 24px rgba(0,0,0,.45));outline:none}
 .chest-box:active{transform:scale(.94)}
-.chest-box svg{display:block}
-.chest-lid{transform-origin:60px 46px;transition:transform .4s cubic-bezier(.34,1.5,.5,1)}
-.chest-opened .chest-lid{transform:rotate(-38deg) translateY(-6px)}
-.chest-shake{animation:chestShake .34s cubic-bezier(.36,.07,.19,.97)}
-@keyframes chestShake{0%,100%{transform:translateX(0) rotate(0)}20%{transform:translateX(-5px) rotate(-2deg)}40%{transform:translateX(5px) rotate(2deg)}60%{transform:translateX(-4px) rotate(-1.5deg)}80%{transform:translateX(4px) rotate(1.5deg)}}
-.chest-opened .chest-box{animation:none;transform:scale(1.04)}
-.chest-hint{font-size:14px;color:rgba(255,255,255,.7);margin-top:6px;font-weight:600}
+.chest-svg{display:block;overflow:visible}
+/* Kist-onderdelen (kleur via CSS zodat de gouden variant dezelfde vorm hergebruikt) */
+.chest-shadow{fill:rgba(0,0,0,.32)}
+.chest-face{fill:#b06a20;stroke:#7c4514;stroke-width:2.5}
+.chest-lid-face{fill:#c07a24;stroke:#7c4514;stroke-width:2.5}
+.chest-band{fill:#6f4a26}
+.chest-lock{fill:#ffd66b;stroke:#c99a2e;stroke-width:1.6}
+.chest-lockhole{fill:#7c4514}
+.chest-lid-shine{stroke:#ffe6a8;stroke-width:2.4;opacity:.5}
+.chest-coins circle{fill:#ffd15a;stroke:#e0a200;stroke-width:1.2}
+.chest-face,.chest-lid-face,.chest-band,.chest-lock,.chest-lockhole{transition:fill .4s ease,stroke .4s ease}
+/* Interieur pas zichtbaar als de deksel open is */
+.chest-inside{opacity:0;transition:opacity .3s ease .12s}
+.chest-opened .chest-inside{opacity:1}
+.chest-inglow{animation:chestInGlow 1.6s ease-in-out infinite}
+@keyframes chestInGlow{0%,100%{opacity:.7}50%{opacity:1}}
+/* De deksel scharniert echt open (3D-kanteling naar achteren rond de onderrand) */
+.chest-lid{transform-box:view-box;transform-origin:70px 60px;transition:transform .55s cubic-bezier(.34,1.4,.5,1)}
+.chest-opened .chest-lid{transform:perspective(340px) rotateX(-128deg)}
+.chest-box.chest-wobble{animation:chestWobble .34s cubic-bezier(.36,.07,.19,.97)}
+@keyframes chestWobble{0%,100%{transform:translateX(0) rotate(0)}22%{transform:translateX(-5px) rotate(-2.4deg)}44%{transform:translateX(5px) rotate(2.4deg)}66%{transform:translateX(-4px) rotate(-1.6deg)}84%{transform:translateX(3px) rotate(1.2deg)}}
+.chest-opened .chest-box{transform:scale(1.04)}
+/* Sparkles alleen bij de gouden (rare) variant */
+.chest-sparkles{opacity:0;transition:opacity .3s}
+.chest-sparkles .cs{fill:#fff6c8}
+.chest-gold .chest-sparkles{opacity:1}
+.chest-gold .cs1{animation:chestTwinkle 1.1s ease-in-out infinite}
+.chest-gold .cs2{animation:chestTwinkle 1.1s ease-in-out .35s infinite}
+.chest-gold .cs3{animation:chestTwinkle 1.1s ease-in-out .7s infinite}
+@keyframes chestTwinkle{0%,100%{opacity:.2;transform:scale(.7)}50%{opacity:1;transform:scale(1.15)}}
+/* Gouden variant: recolour de kist */
+.chest-gold .chest-face{fill:#eec031;stroke:#a9781a}
+.chest-gold .chest-lid-face{fill:#f7ce46;stroke:#a9781a}
+.chest-gold .chest-band{fill:#cf9f2b}
+.chest-gold .chest-lock{fill:#fff2c4;stroke:#d9a92e}
+.chest-gold .chest-lockhole{fill:#a9781a}
+.chest-gold .chest-box{filter:drop-shadow(0 12px 30px rgba(240,190,40,.5))}
+.chest-hint{font-size:14px;color:rgba(255,255,255,.7);margin-top:8px;font-weight:600}
 .chest-hint b{color:#fcd34d;font-weight:900}
 .chest-dots{display:flex;gap:9px;justify-content:center;margin-top:12px}
 .chest-dots span{width:11px;height:11px;border-radius:50%;background:rgba(255,255,255,.18);transition:transform .2s cubic-bezier(.34,1.6,.5,1),background .2s}
@@ -7194,9 +7217,30 @@ html.dark .dom-hero-card{background:linear-gradient(180deg,rgba(255,255,255,.045
 .chest-reveal.show{opacity:1;transform:none}
 .chest-rare-tag{font-family:var(--font-head);font-weight:900;font-size:13px;letter-spacing:2px;color:#fbbf24;text-shadow:0 0 14px rgba(251,191,36,.6)}
 .chest-item-ic,.chest-common-ic{display:grid;place-items:center;width:96px;height:96px;border-radius:24px;background:radial-gradient(circle at 50% 35%,rgba(251,191,36,.22),rgba(251,191,36,.06));border:1px solid rgba(251,191,36,.34);margin:4px 0}
+.chest-item-ic-gold{background:radial-gradient(circle at 50% 35%,rgba(255,213,74,.4),rgba(255,213,74,.08));border-color:rgba(255,213,74,.6);box-shadow:0 0 30px rgba(255,213,74,.35)}
 .chest-item-ic svg{width:66px;height:66px}
 .chest-item-nm{font-family:var(--font-head);font-weight:900;font-size:21px;color:#fff}
 .chest-item-sub{font-size:13px;color:rgba(255,255,255,.6);line-height:1.4;max-width:280px}
 .chest-cta{margin-top:16px;width:100%;max-width:280px;padding:15px;background:linear-gradient(135deg,#fb8c3e,#e8580c);border:none;border-radius:16px;color:#fff;font-family:var(--font-head);font-weight:900;font-size:16px;cursor:pointer;box-shadow:0 6px 20px rgba(232,88,12,.4);-webkit-tap-highlight-color:transparent;transition:transform .12s}
 .chest-cta:active{transform:scale(.97)}
-@media(prefers-reduced-motion:reduce){.chest-glow,.chest-shake,.chest-inner,.chest-reveal,.chest-lid{animation:none!important;transition:none!important}.chest-inner,.chest-reveal{transform:none;opacity:1}}
+@media(prefers-reduced-motion:reduce){.chest-glow,.chest-box.chest-wobble,.chest-inner,.chest-reveal,.chest-lid,.chest-inglow,.chest-sparkles .cs{animation:none!important;transition:none!important}.chest-inner,.chest-reveal,.chest-inside{transform:none;opacity:1}.chest-opened .chest-lid{transform:perspective(340px) rotateX(-128deg)}}
+
+/* ═══ Divisie-stijging: geanimeerd leaderboard-stuk (jij stijgt, rest zakt) ═══ */
+.lru-card{max-width:400px!important}
+.lru-badge{font-size:36px;line-height:1;margin-bottom:4px}
+.lru-title{font-family:var(--font-head);font-weight:900;font-size:22px;color:#16a34a;letter-spacing:-.3px;margin:2px 0 4px;display:flex;align-items:center;justify-content:center;gap:7px}
+.lru-title .lru-up-ar{color:#22c55e;animation:lruArrow 1s ease-in-out infinite}
+@keyframes lruArrow{0%,100%{transform:translateY(0)}50%{transform:translateY(-3px)}}
+.lru-list{position:relative;width:100%;overflow:hidden;margin:14px 0 8px}
+.lru-row{box-sizing:border-box;height:52px;margin-bottom:8px;border:1.5px solid var(--bo);box-shadow:0 2px 7px rgba(11,15,26,.09);will-change:transform;transition:transform .72s cubic-bezier(.34,1.22,.5,1),box-shadow .3s,background .3s}
+.lru-rank{display:flex;align-items:center;gap:4px;min-width:46px;justify-content:flex-start;font-family:var(--font-head);font-weight:900;font-size:15px}
+.lru-rk{color:var(--mu)}
+.lru-arw{font-size:13px;line-height:1}
+.lru-up{color:#22c55e}
+.lru-dn{color:#ef4444}
+.lru-me .lru-rk{color:#16a34a}
+/* Bij aankomst: jouw rij groen oplichten, ingehaalde rijen kort rood tikken */
+.lru-go .lru-me{border-color:#22c55e!important;background:rgba(34,197,94,.1)!important;box-shadow:0 0 0 1.5px #22c55e inset,0 6px 18px rgba(34,197,94,.28)!important}
+.lru-go .lru-passed{animation:lruPassed .6s ease}
+@keyframes lruPassed{0%{background:rgba(239,68,68,.14)}100%{background:var(--s)}}
+@media(prefers-reduced-motion:reduce){.lru-row{transition:none!important}.lru-title .lru-up-ar,.lru-go .lru-passed{animation:none!important}}

@@ -340,36 +340,26 @@ function getDailyGoal(){
   localStorage.setItem(DG_KEY,JSON.stringify(d));
   return d;
 }
+// Registreert een afgeronde quiz voor het dagdoel. Geeft true terug als het doel
+// zojuist bereikt is (dan levert dat een KISTJE op - Duolingo-stijl doelbeloning;
+// de kist zelf wordt via de finish-wachtrij getoond, niet hier).
 function recordDailyGoal(){
   const T=getDGTarget();
   const d=getDailyGoal();
   d.done=(d.done||0)+1;
-  const wasRewarded=d.rewarded;
+  let justDone=false;
   if(d.done>=T&&!d.rewarded){
     d.rewarded=true;
     localStorage.setItem(DG_KEY,JSON.stringify(d));
     addXP(75);
     renderXPHome();
-    setTimeout(()=>{
-      launchConfetti('gold');launchConfetti();
-      playSound('levelup');haptic([60,30,80,30,120,30,200]);
-      // Grote viering overlay
-      const ov=document.createElement('div');
-      ov.style.cssText='position:fixed;inset:0;z-index:9700;display:flex;align-items:center;justify-content:center;padding:24px;background:rgba(0,0,0,.55);backdrop-filter:blur(6px)';
-      ov.innerHTML=`<div style="background:var(--bg);border-radius:28px;padding:32px 28px;max-width:340px;width:100%;text-align:center;animation:comboIn .45s cubic-bezier(.34,1.2,.64,1)">
-        <div style="font-size:52px;margin-bottom:12px">🎯</div>
-        <h2 style="font-family:var(--font-head);font-size:26px;font-weight:900;color:var(--or);margin-bottom:8px">Dagdoel bereikt!</h2>
-        <p style="color:var(--mu);font-size:14px;margin-bottom:18px;line-height:1.5">Je hebt vandaag ${T} quizzen voltooid.<br><strong style="color:var(--dk)">+75 XP bonus verdiend!</strong></p>
-        <button onclick="this.closest('div[style]').remove()" style="width:100%;padding:14px;background:var(--or);border:none;border-radius:14px;font-size:15px;font-weight:900;color:#fff;cursor:pointer;font-family:var(--font)">Doorgaan 🔥</button>
-      </div>`;
-      document.body.appendChild(ov);
-      ov.addEventListener('click',e=>{if(e.target===ov)ov.remove();});
-      if(earnAch('daily_goal'))showAch('🎯','Eerste dagdoel bereikt!',90);
-    },500);
+    try{earnAch('daily_goal');}catch(e){}
+    justDone=true;
   } else {
     localStorage.setItem(DG_KEY,JSON.stringify(d));
   }
   renderDailyGoal();
+  return justDone;
 }
 function _dgCountdownStr(){
   const now=new Date(),mn=new Date(now);mn.setHours(23,59,59,999);
@@ -843,13 +833,8 @@ function pqButton(finish,openFn){ window._pqActiveClose=finish; try{openFn();}ca
 // Helper voor zelf-verdwijnende pop-ups: open en ga na 'dur' ms door.
 function pqAuto(finish,dur,openFn){ try{openFn();}catch(e){} setTimeout(finish,dur||2600); }
 
-// ═══════ KISTJE (Duolingo-stijl: 3x tikken, common munten / rare kledingstuk) ═══════
-const CHEST_KEY='slagio_chest_date';
-// Eén kistje per dag: de eerste afgeronde snelle quiz van vandaag levert er een op.
-function chestDueToday(){
-  try{ const today=new Date().toISOString().slice(0,10); return localStorage.getItem(CHEST_KEY)!==today; }catch(e){ return false; }
-}
-function _chestMarkClaimed(){ try{ localStorage.setItem(CHEST_KEY,new Date().toISOString().slice(0,10)); }catch(e){} }
+// ═══════ KISTJE (Duolingo-stijl doelbeloning: 3x tikken, common munten /
+//         rare kledingstuk; bij rare wordt de kist een GOUDEN variant) ═══════
 // Bepaal de beloning: ~16% rare (nog niet-bezeten kledingstuk), anders common (munten).
 function _chestRoll(){
   const rare=Math.random()<0.16;
@@ -864,31 +849,58 @@ function _chestRoll(){
   // Common (of rare zonder resterend kledingstuk): een frisse portie munten.
   return {rare:false,coins:15+Math.floor(Math.random()*36)}; // 15–50
 }
+// De kist-SVG (los zodat de gouden variant dezelfde vorm hergebruikt).
+function _chestSVG(){
+  return `<svg class="chest-svg" viewBox="0 0 140 124" width="176" height="156" aria-hidden="true">
+    <defs><radialGradient id="chestInGlow" cx="50%" cy="42%" r="62%">
+      <stop offset="0%" stop-color="#fff7db"/><stop offset="42%" stop-color="#ffd76c"/><stop offset="100%" stop-color="#ffd76c" stop-opacity="0"/>
+    </radialGradient></defs>
+    <ellipse class="chest-shadow" cx="70" cy="114" rx="52" ry="8"/>
+    <g class="chest-inside">
+      <path d="M27 57 h86 v7 a43 9 0 0 1 -86 0 z" fill="#241407"/>
+      <ellipse cx="70" cy="57" rx="43" ry="9" fill="#3a2413"/>
+      <ellipse class="chest-inglow" cx="70" cy="55" rx="39" ry="13" fill="url(#chestInGlow)"/>
+      <g class="chest-coins">
+        <circle cx="53" cy="55" r="7"/><circle cx="70" cy="51" r="8"/><circle cx="87" cy="55" r="7"/>
+      </g>
+    </g>
+    <g class="chest-front">
+      <rect class="chest-face" x="24" y="59" width="92" height="49" rx="8"/>
+      <rect class="chest-band" x="24" y="67" width="92" height="9"/>
+      <rect class="chest-band" x="40" y="59" width="8" height="49"/>
+      <rect class="chest-band" x="92" y="59" width="8" height="49"/>
+      <rect class="chest-lock" x="62" y="72" width="16" height="22" rx="3"/>
+      <circle class="chest-lockhole" cx="70" cy="83" r="3.2"/>
+    </g>
+    <g class="chest-lid">
+      <path class="chest-lid-face" d="M22 60 Q70 22 118 60 L118 62 L22 62 Z"/>
+      <rect class="chest-band" x="40" y="46" width="8" height="16"/>
+      <rect class="chest-band" x="92" y="46" width="8" height="16"/>
+      <path class="chest-lid-shine" d="M28 58 Q70 30 112 58" fill="none"/>
+    </g>
+    <g class="chest-sparkles" aria-hidden="true">
+      <path class="cs cs1" d="M28 40 l2 5 5 2 -5 2 -2 5 -2 -5 -5 -2 5 -2z"/>
+      <path class="cs cs2" d="M112 34 l1.6 4 4 1.6 -4 1.6 -1.6 4 -1.6 -4 -4 -1.6 4 -1.6z"/>
+      <path class="cs cs3" d="M118 74 l1.3 3.3 3.3 1.3 -3.3 1.3 -1.3 3.3 -1.3 -3.3 -3.3 -1.3 3.3 -1.3z"/>
+    </g>
+  </svg>`;
+}
 // Kistje tonen; 'finish' wordt aangeroepen als de gebruiker het sluit (voor de wachtrij).
-function showChest(finish){
+function showChest(finish,ctx){
   finish=(typeof finish==='function')?finish:function(){};
+  ctx=ctx||{};
   if(document.getElementById('chest-overlay')){finish();return;}
-  _chestMarkClaimed();
   const reward=_chestRoll();
   let taps=0;const NEED=3;
+  const kicker=ctx.goal?'Dagdoel bereikt! 🎯':'Je hebt een kistje verdiend!';
   const ov=document.createElement('div');
   ov.id='chest-overlay';ov.className='chest-overlay';
   ov.innerHTML=`
     <div class="chest-inner">
-      <div class="chest-kicker">Je hebt een kistje verdiend!</div>
+      <div class="chest-kicker">${kicker}</div>
       <div class="chest-stage" id="chest-stage">
         <div class="chest-glow" aria-hidden="true"></div>
-        <div class="chest-box" id="chest-box" role="button" tabindex="0" aria-label="Tik om het kistje te openen">
-          <svg viewBox="0 0 120 100" width="150" height="125" aria-hidden="true">
-            <ellipse cx="60" cy="92" rx="42" ry="7" fill="rgba(0,0,0,.28)"/>
-            <path class="chest-lid" d="M18 46 Q60 14 102 46 L102 52 L18 52 Z" fill="#a9631f" stroke="#7c4514" stroke-width="2"/>
-            <rect x="16" y="50" width="88" height="40" rx="6" fill="#c07d2c" stroke="#7c4514" stroke-width="2"/>
-            <rect x="16" y="58" width="88" height="9" fill="#8a5418"/>
-            <rect x="52" y="52" width="16" height="26" rx="3" fill="#ffd66b" stroke="#c99a2e" stroke-width="1.6"/>
-            <circle cx="60" cy="66" r="3.4" fill="#7c4514"/>
-            <path d="M22 44 Q60 18 98 44" fill="none" stroke="#ffd66b" stroke-width="2.2" opacity=".5"/>
-          </svg>
-        </div>
+        <div class="chest-box" id="chest-box" role="button" tabindex="0" aria-label="Tik om het kistje te openen">${_chestSVG()}</div>
       </div>
       <div class="chest-hint" id="chest-hint">Tik <b>3×</b> om te openen</div>
       <div class="chest-dots" id="chest-dots"><span></span><span></span><span></span></div>
@@ -901,15 +913,14 @@ function showChest(finish){
   const box=ov.querySelector('#chest-box');
   const dots=ov.querySelectorAll('#chest-dots span');
   const hint=ov.querySelector('#chest-hint');
-  const stage=ov.querySelector('#chest-stage');
   const close=()=>{ ov.classList.remove('show'); setTimeout(()=>{if(ov.parentNode)ov.remove();},280); finish(); };
   const tap=()=>{
     if(taps>=NEED)return;
     taps++;
     if(dots[taps-1])dots[taps-1].classList.add('on');
-    stage.classList.remove('chest-shake');void stage.offsetWidth;stage.classList.add('chest-shake');
+    box.classList.remove('chest-wobble');void box.offsetWidth;box.classList.add('chest-wobble');
     try{playSound('tap');}catch(e){}
-    try{haptic(taps>=NEED?[30,20,60]:[14]);}catch(e){}
+    try{haptic(taps>=NEED?[30,25,70,25,120]:[16,10,22]);}catch(e){}   // opbouwende haptiek
     if(taps>=NEED)_chestBurst(ov,reward,close,hint,box);
   };
   box.addEventListener('click',tap);
@@ -917,35 +928,38 @@ function showChest(finish){
   setTimeout(()=>{try{box.focus();}catch(e){}},300);
 }
 function _chestBurst(ov,reward,close,hint,box){
-  ov.classList.add('chest-opened');
-  if(hint)hint.style.display='none';
-  const dots=ov.querySelector('#chest-dots');if(dots)dots.style.display='none';
-  try{playSound(reward.rare?'evolve':'levelup');}catch(e){}
-  try{haptic([40,30,80,30,140]);}catch(e){}
-  try{if(typeof launchConfetti==='function')launchConfetti(reward.rare?'gold':undefined);}catch(e){}
-  // Beloning toekennen
-  let revealHtml='';
-  if(reward.rare&&reward.item){
-    try{ const owned=getOwnedCosmetics(); if(owned.indexOf(reward.item.id)===-1){owned.push(reward.item.id);localStorage.setItem('slagio_cosmetics',JSON.stringify(owned));} }catch(e){}
-    const isVonk=(typeof COSMETICS_VONK!=='undefined')&&COSMETICS_VONK.some(c=>c.id===reward.item.id);
-    const icon=isVonk?(_VK_ICON[reward.item.id]?`<svg viewBox="0 0 60 60" width="66" height="66">${_VK_ICON[reward.item.id]}</svg>`:reward.item.emoji)
-                     :(_AV_SKIN_SVG[reward.item.id]?`<svg viewBox="0 0 100 100" width="70" height="70">${_AV_SKIN_SVG[reward.item.id]}</svg>`:reward.item.emoji);
-    revealHtml=`<div class="chest-rare-tag">✦ ZELDZAAM ✦</div>
-      <div class="chest-item-ic">${icon}</div>
-      <div class="chest-item-nm">${reward.item.naam}</div>
-      <div class="chest-item-sub">Nieuw kledingstuk ontgrendeld! Trek het aan in de winkel.</div>`;
-  }else{
-    try{if(typeof addCoins==='function')addCoins(reward.coins);}catch(e){}
-    const cico=(typeof _ico==='function')?_ico('coin',30):'🪙';
-    revealHtml=`<div class="chest-common-ic">${cico}</div>
-      <div class="chest-item-nm">+${reward.coins} munten</div>
-      <div class="chest-item-sub">Bijgeschreven op je saldo.</div>`;
-    try{if(typeof renderEconHome==='function')renderEconHome();}catch(e){}
-  }
-  const rev=ov.querySelector('#chest-reveal');
-  if(rev){rev.innerHTML=revealHtml;requestAnimationFrame(()=>rev.classList.add('show'));}
-  const cta=ov.querySelector('#chest-cta');
-  if(cta){cta.style.display='';cta.onclick=close;setTimeout(()=>{try{cta.focus();}catch(e){}},260);}
+  // Bij rare: de kist wordt eerst GOUD, dan gaat de deksel open.
+  if(reward.rare&&reward.item){ov.classList.add('chest-gold');try{haptic([30,40,30]);}catch(e){}}
+  setTimeout(()=>{
+    ov.classList.add('chest-opened');
+    if(hint)hint.style.display='none';
+    const dots=ov.querySelector('#chest-dots');if(dots)dots.style.display='none';
+    try{playSound(reward.rare?'evolve':'levelup');}catch(e){}
+    try{haptic([50,30,90,30,160]);}catch(e){}
+    try{if(typeof launchConfetti==='function')launchConfetti(reward.rare?'gold':undefined);}catch(e){}
+    let revealHtml='';
+    if(reward.rare&&reward.item){
+      try{ const owned=getOwnedCosmetics(); if(owned.indexOf(reward.item.id)===-1){owned.push(reward.item.id);localStorage.setItem('slagio_cosmetics',JSON.stringify(owned));} }catch(e){}
+      const isVonk=(typeof COSMETICS_VONK!=='undefined')&&COSMETICS_VONK.some(c=>c.id===reward.item.id);
+      const icon=isVonk?(_VK_ICON[reward.item.id]?`<svg viewBox="0 0 60 60" width="66" height="66">${_VK_ICON[reward.item.id]}</svg>`:reward.item.emoji)
+                       :(_AV_SKIN_SVG[reward.item.id]?`<svg viewBox="0 0 100 100" width="70" height="70">${_AV_SKIN_SVG[reward.item.id]}</svg>`:reward.item.emoji);
+      revealHtml=`<div class="chest-rare-tag">✦ ZELDZAAM ✦</div>
+        <div class="chest-item-ic chest-item-ic-gold">${icon}</div>
+        <div class="chest-item-nm">${reward.item.naam}</div>
+        <div class="chest-item-sub">Nieuw kledingstuk ontgrendeld! Trek het aan in de winkel.</div>`;
+    }else{
+      try{if(typeof addCoins==='function')addCoins(reward.coins);}catch(e){}
+      const cico=(typeof _ico==='function')?_ico('coin',30):'🪙';
+      revealHtml=`<div class="chest-common-ic">${cico}</div>
+        <div class="chest-item-nm">+${reward.coins} munten</div>
+        <div class="chest-item-sub">Bijgeschreven op je saldo.</div>`;
+      try{if(typeof renderEconHome==='function')renderEconHome();}catch(e){}
+    }
+    const rev=ov.querySelector('#chest-reveal');
+    if(rev){rev.innerHTML=revealHtml;requestAnimationFrame(()=>rev.classList.add('show'));}
+    const cta=ov.querySelector('#chest-cta');
+    if(cta){cta.style.display='';cta.onclick=close;setTimeout(()=>{try{cta.focus();}catch(e){}},260);}
+  }, reward.rare&&reward.item?480:0);   // korte gouden-transformatie-beat bij rare
 }
 
 function renderGreeting(){

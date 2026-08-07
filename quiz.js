@@ -272,11 +272,6 @@ function toonV(){
 document.addEventListener('keydown',function(e){
   const scQuiz=document.getElementById('sc-quiz');
   if(!scQuiz||!scQuiz.classList.contains('on'))return;
-  // Vonk-tussenkaart open? Enter/Space stuurt de "Ga door"-knop, verder niets.
-  if(window._qInterOpen){
-    if(e.key==='Enter'||e.key===' '){const b=document.querySelector('.qinter-go');if(b){b.click();e.preventDefault();}}
-    return;
-  }
   // Negeer als focus in een input/textarea zit
   if(['INPUT','TEXTAREA','SELECT'].includes(document.activeElement.tagName))return;
   const nxt=document.getElementById('qnxt');
@@ -353,7 +348,8 @@ function _kiesReveal(gekozen,correct,btns){
     const surgeBonus=_surgeActive?2:1;
     const earned=Math.round(10*mult*(1+streakBonus)*dcBonus*surgeBonus);
     ST.xpThisRound=(ST.xpThisRound||0)+earned;
-    showCombo(ST.combo);
+    // De combo-badge overslaan op de mijlpalen waar de Vonk-cameo het overneemt (5 / 8+).
+    if(ST.combo!==5&&ST.combo<8)showCombo(ST.combo);
     setTimeout(()=>{showXPToast(earned);floatXP(earned);},200);
     // Verlaag surge teller na correcte vraag
     if(_surgeActive){_surgeLeft--;if(_surgeLeft<=0){_surgeActive=false;_removeSurgeBadge();}else{_updateSurgeBadge();}}
@@ -369,14 +365,11 @@ function _kiesReveal(gekozen,correct,btns){
   aqpRecord(ST.vragen[ST.idx], ok?1:0);
   ST.antwrd.push({pts:ok?1:0,chosenText:q.o[chosenOrigIdx],tijdOver});
   try{if(typeof fbRecord==='function')fbRecord(q,ok,q.o[chosenOrigIdx]);}catch(e){}
-  // Vonk reageert kort: oeps bij fout, feest bij een goede reeks (meer variatie
-  // + sterkere lof naarmate de combo oploopt - Duolingo-stijl).
-  try{if(typeof vonkReact==='function'){
+  // Vonk reageert kort bij een FOUT antwoord (de combo-viering doet de in-scherm
+  // Vonk-cameo bij het doorklikken, dus geen dubbele Vonk meer bij een goede reeks).
+  try{if(!ok&&typeof vonkReact==='function'){
     const _pk=a=>a[Math.floor(Math.random()*a.length)];
-    if(!ok)vonkReact('oeps',_pk(['Oeps!','Bijna!','Volgende keer pak je ’m!','Geeft niks, doorgaan!']),{duration:1400});
-    else if(ST.combo>=7)vonkReact('feest',_pk(['Onstopbaar! 🔥',ST.combo+' op rij!','Vlammend! 🔥','Ongelooflijk!']),{duration:1700});
-    else if(ST.combo>=5)vonkReact('feest',_pk(['5 op rij! 🔥','Wat een reeks!','Je bent on fire!']),{duration:1600});
-    else if(ST.combo>=3)vonkReact('feest',_pk(['Op dreef! 🔥','Goed bezig!','Yes!','Lekker bezig!']));
+    vonkReact('oeps',_pk(['Oeps!','Bijna!','Volgende keer pak je ’m!','Geeft niks, doorgaan!']),{duration:1400});
   }}catch(e){}
   saveQuizDraft();
   // Duolingo-stijl feedback: groen = juist, rood = jouw foute keuze, rest dimt neutraal weg.
@@ -447,9 +440,10 @@ function beoordeel(pts){
 }
 
 function nextQ(){
-  // Duolingo-stijl: soms een korte Vonk-tussenkaart tonen (combo-bonus / halverwege).
-  try{ if(_maybeQuizInter()) return; }catch(e){}
   _advanceQ();
+  // Na het doorgaan: soms springt Vonk kort het quizscherm in (niet wegklikbaar,
+  // ~2s, veel haptiek) om een combo/mijlpaal aan te kondigen. Blokkeert niets.
+  try{ _maybeQuizCameo(); }catch(e){}
 }
 function _advanceQ(){
   ST.idx++;
@@ -461,65 +455,48 @@ function _advanceQ(){
   else toonV();
 }
 
-// ═══════ MID-QUIZ VONK-INTERSTITIAL (Duolingo-stijl pacing) ═══════
-// Verschijnt tussen twee vragen: viert een combo-mijlpaal of het halverwege-punt,
-// deelt een kleine bonus-XP uit en geeft de speler een dopamine-beat + adempauze.
-function _maybeQuizInter(){
-  if(ST.mode!=='snel')return false;                  // alleen snelle quiz
+// ═══════ MID-QUIZ VONK-CAMEO (Duolingo-stijl, niet-wegklikbaar) ═══════
+// Vonk komt kort het quizscherm binnen bij een combo-mijlpaal of het halverwege-
+// punt, kondigt het aan + deelt bonus-XP uit, met stevige haptiek. Geen knop,
+// niet wegklikbaar, verdwijnt zelf na ~2s. Blokkeert de quiz niet.
+function _maybeQuizCameo(){
+  if(ST.mode!=='snel')return;
+  const sc=document.getElementById('sc-quiz');
+  if(!sc||!sc.classList.contains('on'))return;        // alleen als de quiz nog loopt
   const tot=ST.adaptive?ST.aqTarget:ST.vragen.length;
-  const answered=ST.idx+1;                            // aantal beantwoord (idx = zojuist beantwoorde vraag)
-  if(answered>=tot)return false;                      // niet vlak voor het resultaat
+  if(ST.idx>=tot)return;                               // niet vlak voor het resultaat
   ST._interShown=ST._interShown||{};
   const combo=ST.combo||0;
-  if(combo===5&&!ST._interShown.c5){ST._interShown.c5=1;return _showQuizInter({type:'combo',combo:5,bonus:15});}
-  if(combo>=8&&!ST._interShown.c8){ST._interShown.c8=1;return _showQuizInter({type:'combo',combo:combo,bonus:25});}
-  if(answered===Math.floor(tot/2)&&!ST._interShown.half&&!ST._interShown.c5&&!ST._interShown.c8){
+  if(combo===5&&!ST._interShown.c5){ST._interShown.c5=1;return _quizCameo({combo:5,bonus:15});}
+  if(combo>=8&&!ST._interShown.c8){ST._interShown.c8=1;return _quizCameo({combo:combo,bonus:25});}
+  if(ST.idx===Math.floor(tot/2)&&!ST._interShown.half&&!ST._interShown.c5&&!ST._interShown.c8){
     ST._interShown.half=1;
-    return _showQuizInter({type:'half',perfect:ST.score>=answered,bonus:10});
+    return _quizCameo({half:true,perfect:ST.score>=ST.idx,bonus:10});
   }
-  return false;
 }
-function _showQuizInter(o){
+function _quizCameo(o){
   const bonus=Math.max(0,o.bonus||0);
   if(bonus>0)ST.xpThisRound=(ST.xpThisRound||0)+bonus;
   const _pk=a=>a[Math.floor(Math.random()*a.length)];
-  let mood='feest',head,sub;
-  if(o.type==='combo'){
-    mood='feest';
-    head=`${o.combo} op rij! 🔥`;
-    sub=_pk(['Je bent niet te stoppen!','Wat een reeks, ga zo door!','Vlammend bezig!','Op deze manier haal je alles!']);
-  }else{
-    mood=o.perfect?'trots':'blij';
-    head=o.perfect?'Halverwege en foutloos! ⭐':'Je bent op de helft! 💪';
-    sub=o.perfect?_pk(['Geen enkele fout tot nu toe. Wauw!','Perfect tot hier, hou vol!']):_pk(['Lekker bezig, blijf gaan!','Nog even en je hebt ’m!','De tweede helft haal je ook!']);
-  }
-  const vonk=(typeof mascotSVG==='function')?mascotSVG(mood,150):'';
-  const ov=document.createElement('div');
-  ov.className='qinter-overlay';
-  ov.innerHTML=`<div class="qinter-card">
-    <div class="qinter-burst"></div>
-    <div class="qinter-vonk">${vonk}</div>
-    <div class="qinter-head">${head}</div>
-    <div class="qinter-sub">${sub}</div>
-    ${bonus>0?`<div class="qinter-bonus"><span class="qib-plus">+${bonus}</span> XP bonus</div>`:''}
-    <button class="qinter-go" type="button">Ga door <span aria-hidden="true">→</span></button>
-  </div>`;
-  document.body.appendChild(ov);
-  window._qInterOpen=true;
-  const go=ov.querySelector('.qinter-go');
-  const close=()=>{
-    if(!window._qInterOpen)return;
-    window._qInterOpen=false;
-    ov.classList.add('out');
-    setTimeout(()=>ov.remove(),260);
-    _advanceQ();
-  };
-  go.addEventListener('click',()=>{try{playSound('pop');haptic(10);}catch(e){}close();});
-  requestAnimationFrame(()=>ov.classList.add('in'));
-  try{playSound(o.type==='combo'?'combo':'levelup');}catch(e){}
-  try{haptic([16,34,20]);}catch(e){}
-  if(bonus>0){setTimeout(()=>{try{if(typeof floatXP==='function')floatXP(bonus);}catch(e){}},260);}
-  return true;
+  let head,mood='feest';
+  if(o.combo){mood='feest';head='🔥 '+o.combo+' op rij!';}
+  else{mood=o.perfect?'trots':'blij';head=o.perfect?'⭐ Halverwege, foutloos!':'💪 Je bent op de helft!';}
+  const sub=o.combo?_pk(['Niet te stoppen!','Vlammend!','Wat een reeks!']):(o.perfect?'Sterk bezig!':'Blijf gaan!');
+  const sc=document.getElementById('sc-quiz');
+  if(!sc)return;
+  const old=sc.querySelector('.qvonk-cameo');if(old)old.remove();
+  const vonk=(typeof mascotSVG==='function')?mascotSVG(mood,80):'';
+  const el=document.createElement('div');
+  el.className='qvonk-cameo';el.setAttribute('aria-hidden','true');
+  el.innerHTML=`<div class="qvc-vonk">${vonk}</div>
+    <div class="qvc-bubble"><div class="qvc-head">${head}</div><div class="qvc-sub">${sub}</div>${bonus>0?`<div class="qvc-bonus">+${bonus} XP</div>`:''}</div>`;
+  sc.appendChild(el);
+  requestAnimationFrame(()=>el.classList.add('in'));
+  try{playSound(o.combo?'combo':'levelup');}catch(e){}
+  try{haptic([18,40,22,40,70]);}catch(e){}                 // stevige haptiek
+  if(bonus>0){setTimeout(()=>{try{if(typeof floatXP==='function')floatXP(bonus);}catch(e){}},220);}
+  // Zelf verdwijnen na ~2s (snelle animatie, niet wegklikbaar).
+  setTimeout(()=>{el.classList.remove('in');el.classList.add('out');setTimeout(()=>{if(el.parentNode)el.remove();},320);},1700);
 }
 
 // ═══════ PARTICLES ═══════
@@ -1245,7 +1222,7 @@ function toonRes(){
   // Rebuild grid and streak to update UI
   try{const g=document.getElementById('vakgrid');if(g){g.innerHTML='';buildGrid();}
   renderStreak();renderFavHome();renderXPHome();renderDailyChallenge();renderDailyGoal();renderLiveCount();renderHomeStats();renderGreeting();try{renderComebackCard();}catch(e){}try{renderFeatDisc();}catch(e){}try{renderHmQuickChips();renderHmStatsStrip();renderDecayAlert();renderExamAlert();}catch(e){}try{renderVandaagWidget();}catch(e){}}catch(e){}
-  try{recordDailyGoal();}catch(e){};
+  let _dgJustDone=false;try{_dgJustDone=recordDailyGoal();}catch(e){};
   const isPerfect=pct===1&&ST.mode==='snel'&&tot>=3;
   // Verzamelbak voor de finish-viermomenten; ze worden ná de render één-voor-één
   // via de pop-up-wachtrij afgespeeld (geen overlap meer).
@@ -1437,8 +1414,8 @@ function toonRes(){
       _RC.reg=pct;
     }
   }catch(e){}
-  // Kistje: één per dag bij de eerste afgeronde snelle quiz (Duolingo-stijl).
-  try{ if(ST.mode==='snel' && !ST.isFoutenboek && typeof chestDueToday==='function' && chestDueToday()) _RC.chest=true; }catch(e){}
+  // Kistje = beloning voor het behalen van je DAGDOEL (Duolingo-stijl doelbeloning).
+  try{ if(_dgJustDone && ST.mode==='snel' && !ST.isFoutenboek) _RC.chest={goal:true}; }catch(e){}
   // "Volgende domein"-kaart verwijderd op verzoek - minder tegels op het resultaatscherm.
   try{const omBox=document.getElementById('one-more-wrap');if(omBox)omBox.innerHTML='';}catch(e){}
   try{renderAdaptiveResults();}catch(e){}
@@ -1462,7 +1439,7 @@ function _runResultChain(rc){
       if(rc.level)pqAdd(fin=>pqButton(fin,()=>{try{showLevelUp(rc.level.lvl,rc.level.name,rc.level.xp);}catch(e){try{slagioVlagUit('levelup');}catch(_){}pqNotifyClose();}}));
       if(rc.evo)pqAdd(fin=>pqButton(fin,()=>showEvoReveal(rc.evo.newStage,rc.evo.animalId)));
       if(rc.rankInfo&&rc.rankInfo.climbed>0)pqAdd(fin=>showLeagueRankUp(rc.rankInfo,fin));
-      if(rc.chest)pqAdd(fin=>showChest(fin));
+      if(rc.chest)pqAdd(fin=>showChest(fin,rc.chest));
       if(rc.reg!=null)pqAdd(fin=>pqButton(fin,()=>_showRegPrompt(rc.reg)));
       if(rc.feedback)pqAdd(fin=>pqAuto(fin,600,()=>{try{showFeedbackPopup('snel');}catch(e){}}));
     }catch(e){}
