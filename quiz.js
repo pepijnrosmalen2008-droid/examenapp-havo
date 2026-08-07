@@ -230,13 +230,17 @@ function toonV(){
     area.innerHTML='';
     idxs.forEach((origIdx,pos)=>{
       const btn=document.createElement('button');
-      btn.className=`opt ${cols[pos]}`;
+      btn.className=`opt ${cols[pos]} opt-enter`;
+      btn.style.setProperty('--oi',pos);           // stagger-index voor de entree
       btn.innerHTML=`<span class="oi">${labs[pos]}</span>${q.o[origIdx]}`;
       btn.dataset.pos=pos;
       btn.dataset.correct=correctPos;
       btn.onclick=function(){kies(parseInt(this.dataset.pos),parseInt(this.dataset.correct));};
       area.appendChild(btn);
     });
+    // Vraag + opties schuiven levendig binnen (motion-systeem: elke vraag "leeft").
+    const _qq=document.getElementById('qq');
+    if(_qq){_qq.classList.remove('q-enter');void _qq.offsetWidth;_qq.classList.add('q-enter');}
     startTimer(20);
     // Lucky bonus kans per vraag
     maybeGiveLucky();
@@ -1196,6 +1200,8 @@ document.addEventListener('click',function(e){
   else if(el.matches('[data-back],.back-btn,.qtb-close,.close,.modal-close,.x-btn,.close-btn')||/sluit|terug|annul|back|close|dismiss/i.test(aria))snd='back';
   // Lichte, tactiele tik op élke UI-interactie (Duolingo-stijl) - ook met geluid uit.
   try{ haptic(snd==='pop'?[11]:snd==='toggle'?[8]:snd==='back'?[7]:6); }catch(_){}
+  // Primaire knoppen: korte pop-overshoot (96%→103%→100%) - Interactie 1.
+  if(snd==='pop'&&!el.matches('.wlc-card,.card')){ el.classList.remove('mo-pop'); void el.offsetWidth; el.classList.add('mo-pop'); setTimeout(()=>el.classList.remove('mo-pop'),260); }
   if(_soundOn)playSound(snd);
 },true);
 
