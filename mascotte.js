@@ -177,6 +177,36 @@ function _vonkSkinSVG(id) {
   }
 }
 
+// ─── Vonk-animatie-API: speel een bewegings-state op een Vonk-instance ───
+// target: element dat een .m-svg bevat (of de .m-svg zelf) of een selector.
+// state: 'happy'|'jump'|'celebrate'|'sad'|'nod'|'think'|'wave'|'run'|'evolve'.
+// ms=0 → blijft doorlopen (bv. 'run'); anders auto-stop na de duur.
+var _VONK_STATE_MS = { happy: 600, jump: 820, celebrate: 1180, sad: 2200, nod: 640, think: 1420, wave: 920, run: 0, evolve: 1520 };
+function _vonkSvgOf(target) {
+  if (typeof target === 'string') target = document.querySelector(target);
+  if (!target) return null;
+  return (target.classList && target.classList.contains('m-svg')) ? target : target.querySelector('.m-svg');
+}
+function _vonkClearStates(svg) {
+  if (!svg) return;
+  Array.prototype.slice.call(svg.classList).forEach(function (c) { if (/^m-do-/.test(c)) svg.classList.remove(c); });
+}
+function vonkPlay(target, state, ms) {
+  try {
+    if (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+    var svg = _vonkSvgOf(target); if (!svg) return;
+    _vonkClearStates(svg);
+    void svg.offsetWidth;                       // herstart de animatie
+    svg.classList.add('m-do-' + state);
+    clearTimeout(svg._vpT);
+    var dur = (ms != null) ? ms : (_VONK_STATE_MS[state] != null ? _VONK_STATE_MS[state] : 800);
+    if (dur > 0) svg._vpT = setTimeout(function () { try { svg.classList.remove('m-do-' + state); } catch (e) {} }, dur + 40);
+  } catch (e) {}
+}
+function vonkStop(target) {
+  try { var svg = _vonkSvgOf(target); if (!svg) return; clearTimeout(svg._vpT); _vonkClearStates(svg); } catch (e) {}
+}
+
 // ─── Vonk die van de zijkant binnenglijdt, iets zegt, en weer wegduikt ───
 // Geen vaste widget: hij komt op, praat, en verdwijnt. vonkSay(msg, opts).
 // opts: {mood, side:'left'|'right', size, duration(ms, 0=blijft), once:'sleutel'
@@ -254,6 +284,8 @@ function _vonkSayRender() {
   const ab = stage.querySelector('.vonk-act');
   if (ab && opts.action) ab.onclick = () => { try { if (typeof opts.action.onclick === 'function') opts.action.onclick(); else if (typeof opts.action.onclick === 'string') (new Function(opts.action.onclick))(); } catch (e) {} if (!opts.action.keepOpen) close(); };
   requestAnimationFrame(() => requestAnimationFrame(() => stage.classList.add('vonk-in')));
+  // Levendige entree: Vonk zwaait/knikt even bij binnenkomst (niet bij 'think').
+  if (fig && !opts.think) { try { vonkPlay(fig, (mood === 'blij' || mood === 'goed' || mood === 'trots') ? 'wave' : 'nod'); } catch (e) {} }
   // Vonk "praat" terwijl de bubbel binnenkomt, en zakt daarna terug in een glimlach.
   // Met opts.think denkt hij eerst even na (denk-pose) en wisselt dan naar praten.
   if (fig) {
@@ -290,6 +322,7 @@ function vonkCelebrate(caption, opts) {
   ov.innerHTML = `${bunting}<div class="vc-confetti-wrap">${confetti}</div>
     <div class="vc-stage"><div class="vc-vonk">${svg}</div>${caption ? `<div class="vc-caption">${caption}</div>` : ''}</div>`;
   document.body.appendChild(ov);
+  try { vonkPlay(ov.querySelector('.vc-vonk'), 'celebrate'); } catch (e) {}
   try { if (typeof playSound === 'function') playSound('complete'); } catch (e) {}
   try { if (typeof haptic === 'function') haptic([30, 40, 30, 40, 80]); } catch (e) {}
   const kill = () => { ov.classList.add('vc-out'); setTimeout(() => { if (ov.parentNode) ov.remove(); }, 450); };
@@ -305,6 +338,7 @@ function vonkReact(mood, text, opts) {
   if (!el) { el = document.createElement('div'); el.id = 'vonk-react'; el.className = 'vonk-react'; document.body.appendChild(el); }
   el.innerHTML = `<div class="vr-fig">${mascotSVG(mood || 'blij', 64)}</div>${text ? `<div class="vr-chip">${text}</div>` : ''}`;
   el.classList.remove('vr-in'); void el.offsetWidth; el.classList.add('vr-in');
+  try { vonkPlay(el.querySelector('.vr-fig'), mood === 'oeps' || mood === 'laag' ? 'sad' : mood === 'feest' ? 'happy' : 'nod'); } catch (e) {}
   clearTimeout(_vonkReactT);
   _vonkReactT = setTimeout(() => { if (el) el.classList.remove('vr-in'); }, opts.duration || 1500);
 }

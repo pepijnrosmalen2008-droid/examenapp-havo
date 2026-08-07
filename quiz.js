@@ -497,6 +497,8 @@ function _quizCameo(o){
     <div class="qvc-bubble"><div class="qvc-head">${head}</div><div class="qvc-sub">${sub}</div>${bonus>0?`<div class="qvc-bonus">+${bonus} XP</div>`:''}</div>`;
   sc.appendChild(el);
   requestAnimationFrame(()=>el.classList.add('in'));
+  // Vonk beweegt echt: springt bij een combo, juicht bij 8+, blij bij halverwege.
+  try{if(typeof vonkPlay==='function')vonkPlay(el.querySelector('.qvc-vonk'), o.combo>=8?'celebrate':o.combo?'jump':'happy');}catch(e){}
   try{playSound(o.combo?'combo':'levelup');}catch(e){}
   try{haptic([18,40,22,40,70]);}catch(e){}                 // stevige haptiek
   if(bonus>0){setTimeout(()=>{try{if(typeof floatXP==='function')floatXP(bonus);}catch(e){}},220);}

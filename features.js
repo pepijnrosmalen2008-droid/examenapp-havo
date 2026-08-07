@@ -618,6 +618,7 @@ function showLevelUp(lvl, lvlName, xpAdded){
     +'</div>';
   document.body.appendChild(el);
   requestAnimationFrame(function(){el.classList.add('show');});
+  try{if(typeof vonkPlay==='function')vonkPlay(el.querySelector('.lvlup-vonk'),'celebrate');}catch(e){}
   // Beats: geluid + zwaardere haptic direct, confetti kort erna, tweede burst later.
   try{if(typeof playSound==='function')playSound('levelup');}catch(e){}
   try{if(typeof haptic==='function')haptic([40,40,90,40,160]);}catch(e){}
@@ -679,6 +680,7 @@ function slagioVlagUit(kind){
         '<div class="vlag-label">'+label+'</div>'+
       '</div>';
     document.body.appendChild(ov);
+    try{if(typeof vonkPlay==='function')vonkPlay(ov.querySelector('.vlag-vonk'),'celebrate');}catch(e){}
     try{if(typeof haptic==='function')haptic([40,40,90]);}catch(e){}
     setTimeout(function(){ov.classList.add('vlag-out');setTimeout(function(){if(ov.parentNode)ov.remove();},560);}, reduce?1500:2500);
   }catch(e){}

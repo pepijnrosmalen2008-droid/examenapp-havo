@@ -7295,3 +7295,68 @@ html.dark .dom-hero-card{background:linear-gradient(180deg,rgba(255,255,255,.045
 .mo-pop{animation:moPop .24s var(--mo-spring,cubic-bezier(.34,1.5,.5,1))}
 @keyframes moPop{0%{transform:scale(.96)}55%{transform:scale(1.03)}100%{transform:scale(1)}}
 @media(prefers-reduced-motion:reduce){.mo-pop{animation:none}}
+
+/* ══════════════════════════════════════════════════════════════════
+   VONK ANIMATIE-STATES  ·  "levende mascotte" (Duolingo-stijl rig)
+   Eenmalige, gechoreografeerde bewegingen met squash-&-stretch en
+   follow-through op oren/staart. Getriggerd via vonkPlay(el,'state').
+   Elke .m-do-<state> op de .m-svg overschrijft de rustige idle-loop.
+   ══════════════════════════════════════════════════════════════════ */
+.m-svg{--vk-e:cubic-bezier(.34,1.4,.5,1)}
+/* HAPPY - korte vreugdesprong (goed antwoord) */
+.m-do-happy .m-fig{animation:mkHappy .55s var(--vk-e)}
+@keyframes mkHappy{0%{transform:translateY(0) scale(1,1)}22%{transform:translateY(-11px) scale(.96,1.07)}46%{transform:translateY(0) scale(1.07,.93)}66%{transform:translateY(-3px) scale(1,1)}100%{transform:translateY(0)}}
+.m-do-happy .m-head{animation:mkHappyHead .55s var(--vk-e)}
+@keyframes mkHappyHead{0%,100%{transform:translateY(0) rotate(0)}40%{transform:translateY(-2px) rotate(3deg)}70%{transform:rotate(-2deg)}}
+.m-do-happy .m-eyes{animation:mkSquint .55s ease}
+@keyframes mkSquint{0%,100%{transform:scaleY(1)}35%,60%{transform:scaleY(.5)}}
+/* JUMP - echte sprong met anticipatie + squash-landing (5-op-rij e.d.) */
+.m-do-jump .m-fig{animation:mkJump .8s cubic-bezier(.3,1.15,.5,1)}
+@keyframes mkJump{0%{transform:translateY(0) scale(1,1)}12%{transform:translateY(4px) scale(1.1,.88)}34%{transform:translateY(-32px) scale(.88,1.16)}52%{transform:translateY(-36px) scale(1,1)}70%{transform:translateY(0) scale(1.15,.83)}84%{transform:translateY(0) scale(.96,1.05)}100%{transform:translateY(0) scale(1,1)}}
+.m-do-jump .m-ear-l{animation:mkJumpEarL .8s ease}
+.m-do-jump .m-ear-r{animation:mkJumpEarR .8s ease}
+@keyframes mkJumpEarL{0%,100%{transform:rotate(0)}34%{transform:rotate(-26deg)}72%{transform:rotate(16deg)}}
+@keyframes mkJumpEarR{0%,100%{transform:rotate(0)}34%{transform:rotate(26deg)}72%{transform:rotate(-16deg)}}
+.m-do-jump .m-tail{animation:mkJumpTail .8s ease}
+@keyframes mkJumpTail{0%,100%{transform:rotate(-13deg)}35%{transform:rotate(30deg)}70%{transform:rotate(-22deg)}}
+/* CELEBRATE - uitbundige feestsprong + wiebel (cameo, level up, divisie) */
+.m-do-celebrate .m-fig{animation:mkCele 1.15s cubic-bezier(.34,1.3,.5,1)}
+@keyframes mkCele{0%{transform:translateY(0) scale(1)}12%{transform:translateY(4px) scale(1.1,.88)}32%{transform:translateY(-30px) scale(.9,1.13) rotate(-7deg)}50%{transform:translateY(-27px) rotate(7deg)}70%{transform:translateY(0) scale(1.16,.84)}84%{transform:translateY(0) scale(.97,1.04) rotate(-2deg)}100%{transform:translateY(0) scale(1)}}
+.m-do-celebrate .m-ear-l{animation:mkJumpEarL 1.15s ease}
+.m-do-celebrate .m-ear-r{animation:mkJumpEarR 1.15s ease}
+.m-do-celebrate .m-tail{animation:mkTailFast .3s ease-in-out 4}
+@keyframes mkTailFast{0%,100%{transform:rotate(-16deg)}50%{transform:rotate(20deg)}}
+.m-do-celebrate .m-eyes{animation:mkSquint 1.15s ease}
+/* SAD - inzakken + oren omlaag (fout antwoord) */
+.m-do-sad .m-fig{animation:mkSad .9s ease forwards}
+@keyframes mkSad{0%{transform:translateY(0) scale(1,1)}40%{transform:translateY(3px) scale(1.04,.95)}100%{transform:translateY(2px) scale(1.02,.97)}}
+.m-do-sad .m-head{animation:mkSadHead .9s ease forwards}
+@keyframes mkSadHead{0%{transform:rotate(0)}100%{transform:translateY(2px) rotate(-6deg)}}
+.m-do-sad .m-ear-l{animation:mkSadEarL .9s ease forwards}
+.m-do-sad .m-ear-r{animation:mkSadEarR .9s ease forwards}
+@keyframes mkSadEarL{0%{transform:rotate(0)}100%{transform:rotate(20deg)}}
+@keyframes mkSadEarR{0%{transform:rotate(0)}100%{transform:rotate(-20deg)}}
+/* NOD - snelle "ja"-knik */
+.m-do-nod .m-head{animation:mkNod .6s ease}
+@keyframes mkNod{0%,100%{transform:rotate(0)}25%{transform:translateY(3px) rotate(0)}50%{transform:translateY(-1px)}75%{transform:translateY(3px)}}
+/* THINK - hoofd kantelt + zachte wiebel */
+.m-do-think .m-head{animation:mkThink 1.4s ease}
+@keyframes mkThink{0%,100%{transform:rotate(0)}30%{transform:rotate(7deg) translateY(-1px)}60%{transform:rotate(6deg)}}
+.m-do-think .m-ear-r{animation:mkEarTwitch 1.4s ease}
+@keyframes mkEarTwitch{0%,60%,100%{transform:rotate(0)}70%{transform:rotate(-14deg)}80%{transform:rotate(8deg)}}
+/* WAVE - grote zwaai (begroeting) */
+.m-do-wave .m-wave{animation:mkWave .9s ease}
+@keyframes mkWave{0%,100%{transform:rotate(0)}20%{transform:rotate(-40deg)}40%{transform:rotate(-12deg)}60%{transform:rotate(-38deg)}80%{transform:rotate(-16deg)}}
+.m-do-wave .m-head{animation:mkHappyHead .9s ease}
+/* RUN - rent (leunt voorover, oren naar achteren) - loop tot verwijderd */
+.m-do-run .m-fig{animation:mkRun .42s ease-in-out infinite}
+@keyframes mkRun{0%,100%{transform:translateY(0) rotate(-6deg)}50%{transform:translateY(-5px) rotate(-9deg)}}
+.m-do-run .m-ear-l{transform:rotate(28deg)}
+.m-do-run .m-ear-r{transform:rotate(-28deg)}
+.m-do-run .m-tail{animation:mkTailFast .34s ease-in-out infinite}
+/* EVOLVE - draai + schaal, het grote moment */
+.m-do-evolve .m-fig{animation:mkEvolve 1.5s cubic-bezier(.34,1.2,.5,1)}
+@keyframes mkEvolve{0%{transform:scale(1) rotate(0)}20%{transform:translateY(4px) scale(1.14,.88)}42%{transform:translateY(-14px) scale(.9,1.16) rotate(180deg)}62%{transform:translateY(-6px) rotate(360deg) scale(1.08)}82%{transform:translateY(0) scale(1.12,.9)}100%{transform:scale(1)}}
+@media(prefers-reduced-motion:reduce){
+  .m-do-happy .m-fig,.m-do-happy .m-head,.m-do-happy .m-eyes,.m-do-jump .m-fig,.m-do-jump .m-ear-l,.m-do-jump .m-ear-r,.m-do-jump .m-tail,.m-do-celebrate .m-fig,.m-do-celebrate .m-ear-l,.m-do-celebrate .m-ear-r,.m-do-celebrate .m-tail,.m-do-celebrate .m-eyes,.m-do-sad .m-fig,.m-do-sad .m-head,.m-do-sad .m-ear-l,.m-do-sad .m-ear-r,.m-do-nod .m-head,.m-do-think .m-head,.m-do-think .m-ear-r,.m-do-wave .m-wave,.m-do-wave .m-head,.m-do-run .m-fig,.m-do-run .m-tail,.m-do-evolve .m-fig{animation:none!important}
+}
