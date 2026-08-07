@@ -260,6 +260,7 @@ function showEvoReveal(newStage,animalId){
 function closeEvoReveal(){
   const modal=document.getElementById('evo-reveal-modal');
   if(modal)modal.classList.remove('open');
+  try{pqNotifyClose();}catch(e){}
 }
 function syncAvatarToProfile(){
   try{
@@ -640,7 +641,7 @@ function showLevelUp(lvl, lvlName, xpAdded){
     requestAnimationFrame(tick);
   },820);
 }
-function _lvlupClose(){const el=document.getElementById('levelup-overlay');if(el){el.classList.remove('show');setTimeout(function(){el.remove();},300);}}
+function _lvlupClose(){const el=document.getElementById('levelup-overlay');if(el){el.classList.remove('show');setTimeout(function(){el.remove();},300);}try{pqNotifyClose();}catch(e){}}
 
 function slagioVlagUit(kind){
   try{if(typeof playSound==='function')playSound('fanfare');}catch(e){}
@@ -816,6 +817,135 @@ function coinFlyToBar(amount,targetEl){
       try{if(typeof haptic==='function')haptic(7);}catch(e){}
     },delay+560);
   }
+}
+
+// ═══════ POP-UP WACHTRIJ (één pop-up tegelijk, Duolingo-stijl reeks) ═══════
+// Grote, blokkerende viermomenten (level up, evolutie, divisie, kistje, prestatie,
+// account) mogen elkaar niet overlappen. Ze worden hier in de wachtrij gezet en
+// één voor één afgespeeld: de volgende start pas als de vorige klaar/gesloten is.
+window.PQ={q:[],busy:false};
+function pqAdd(opener){ if(typeof opener!=='function')return; PQ.q.push(opener); pqPump(); }
+function pqPump(){
+  if(PQ.busy||!PQ.q.length)return;
+  PQ.busy=true;
+  const opener=PQ.q.shift();
+  let fired=false;
+  const finish=()=>{ if(fired)return; fired=true; if(window._pqActiveClose===finish)window._pqActiveClose=null; PQ.busy=false; setTimeout(pqPump,300); };
+  // Vangnet: mocht een pop-up nooit netjes sluiten (bv. ontbrekend element),
+  // na 25s alsnog doorgaan zodat de wachtrij niet vastloopt.
+  setTimeout(()=>{ if(!fired)finish(); },25000);
+  try{ opener(finish); }catch(e){ finish(); }
+}
+// Aangeroepen door de sluit-functies van knop-gesloten pop-ups (levelup/evo/kistje/...).
+function pqNotifyClose(){ if(window._pqActiveClose){ const f=window._pqActiveClose; window._pqActiveClose=null; f(); } }
+// Helper voor knop-gesloten pop-ups: registreer 'finish' als actieve sluiter en open.
+function pqButton(finish,openFn){ window._pqActiveClose=finish; try{openFn();}catch(e){pqNotifyClose();} }
+// Helper voor zelf-verdwijnende pop-ups: open en ga na 'dur' ms door.
+function pqAuto(finish,dur,openFn){ try{openFn();}catch(e){} setTimeout(finish,dur||2600); }
+
+// ═══════ KISTJE (Duolingo-stijl: 3x tikken, common munten / rare kledingstuk) ═══════
+const CHEST_KEY='slagio_chest_date';
+// Eén kistje per dag: de eerste afgeronde snelle quiz van vandaag levert er een op.
+function chestDueToday(){
+  try{ const today=new Date().toISOString().slice(0,10); return localStorage.getItem(CHEST_KEY)!==today; }catch(e){ return false; }
+}
+function _chestMarkClaimed(){ try{ localStorage.setItem(CHEST_KEY,new Date().toISOString().slice(0,10)); }catch(e){} }
+// Bepaal de beloning: ~16% rare (nog niet-bezeten kledingstuk), anders common (munten).
+function _chestRoll(){
+  const rare=Math.random()<0.16;
+  if(rare){
+    try{
+      const all=(typeof COSMETICS_VONK!=='undefined'?COSMETICS_VONK:[]).concat(typeof COSMETICS_AV!=='undefined'?COSMETICS_AV:[]);
+      const owned=(typeof getOwnedCosmetics==='function')?getOwnedCosmetics():[];
+      const locked=all.filter(c=>owned.indexOf(c.id)===-1);
+      if(locked.length){ const pick=locked[Math.floor(Math.random()*locked.length)]; return {rare:true,item:pick}; }
+    }catch(e){}
+  }
+  // Common (of rare zonder resterend kledingstuk): een frisse portie munten.
+  return {rare:false,coins:15+Math.floor(Math.random()*36)}; // 15–50
+}
+// Kistje tonen; 'finish' wordt aangeroepen als de gebruiker het sluit (voor de wachtrij).
+function showChest(finish){
+  finish=(typeof finish==='function')?finish:function(){};
+  if(document.getElementById('chest-overlay')){finish();return;}
+  _chestMarkClaimed();
+  const reward=_chestRoll();
+  let taps=0;const NEED=3;
+  const ov=document.createElement('div');
+  ov.id='chest-overlay';ov.className='chest-overlay';
+  ov.innerHTML=`
+    <div class="chest-inner">
+      <div class="chest-kicker">Je hebt een kistje verdiend!</div>
+      <div class="chest-stage" id="chest-stage">
+        <div class="chest-glow" aria-hidden="true"></div>
+        <div class="chest-box" id="chest-box" role="button" tabindex="0" aria-label="Tik om het kistje te openen">
+          <svg viewBox="0 0 120 100" width="150" height="125" aria-hidden="true">
+            <ellipse cx="60" cy="92" rx="42" ry="7" fill="rgba(0,0,0,.28)"/>
+            <path class="chest-lid" d="M18 46 Q60 14 102 46 L102 52 L18 52 Z" fill="#a9631f" stroke="#7c4514" stroke-width="2"/>
+            <rect x="16" y="50" width="88" height="40" rx="6" fill="#c07d2c" stroke="#7c4514" stroke-width="2"/>
+            <rect x="16" y="58" width="88" height="9" fill="#8a5418"/>
+            <rect x="52" y="52" width="16" height="26" rx="3" fill="#ffd66b" stroke="#c99a2e" stroke-width="1.6"/>
+            <circle cx="60" cy="66" r="3.4" fill="#7c4514"/>
+            <path d="M22 44 Q60 18 98 44" fill="none" stroke="#ffd66b" stroke-width="2.2" opacity=".5"/>
+          </svg>
+        </div>
+      </div>
+      <div class="chest-hint" id="chest-hint">Tik <b>3×</b> om te openen</div>
+      <div class="chest-dots" id="chest-dots"><span></span><span></span><span></span></div>
+      <div class="chest-reveal" id="chest-reveal"></div>
+      <button class="chest-cta" id="chest-cta" style="display:none">Verder</button>
+    </div>`;
+  document.body.appendChild(ov);
+  requestAnimationFrame(()=>ov.classList.add('show'));
+  try{playSound('open');}catch(e){}
+  const box=ov.querySelector('#chest-box');
+  const dots=ov.querySelectorAll('#chest-dots span');
+  const hint=ov.querySelector('#chest-hint');
+  const stage=ov.querySelector('#chest-stage');
+  const close=()=>{ ov.classList.remove('show'); setTimeout(()=>{if(ov.parentNode)ov.remove();},280); finish(); };
+  const tap=()=>{
+    if(taps>=NEED)return;
+    taps++;
+    if(dots[taps-1])dots[taps-1].classList.add('on');
+    stage.classList.remove('chest-shake');void stage.offsetWidth;stage.classList.add('chest-shake');
+    try{playSound('tap');}catch(e){}
+    try{haptic(taps>=NEED?[30,20,60]:[14]);}catch(e){}
+    if(taps>=NEED)_chestBurst(ov,reward,close,hint,box);
+  };
+  box.addEventListener('click',tap);
+  box.addEventListener('keydown',e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();tap();}});
+  setTimeout(()=>{try{box.focus();}catch(e){}},300);
+}
+function _chestBurst(ov,reward,close,hint,box){
+  ov.classList.add('chest-opened');
+  if(hint)hint.style.display='none';
+  const dots=ov.querySelector('#chest-dots');if(dots)dots.style.display='none';
+  try{playSound(reward.rare?'evolve':'levelup');}catch(e){}
+  try{haptic([40,30,80,30,140]);}catch(e){}
+  try{if(typeof launchConfetti==='function')launchConfetti(reward.rare?'gold':undefined);}catch(e){}
+  // Beloning toekennen
+  let revealHtml='';
+  if(reward.rare&&reward.item){
+    try{ const owned=getOwnedCosmetics(); if(owned.indexOf(reward.item.id)===-1){owned.push(reward.item.id);localStorage.setItem('slagio_cosmetics',JSON.stringify(owned));} }catch(e){}
+    const isVonk=(typeof COSMETICS_VONK!=='undefined')&&COSMETICS_VONK.some(c=>c.id===reward.item.id);
+    const icon=isVonk?(_VK_ICON[reward.item.id]?`<svg viewBox="0 0 60 60" width="66" height="66">${_VK_ICON[reward.item.id]}</svg>`:reward.item.emoji)
+                     :(_AV_SKIN_SVG[reward.item.id]?`<svg viewBox="0 0 100 100" width="70" height="70">${_AV_SKIN_SVG[reward.item.id]}</svg>`:reward.item.emoji);
+    revealHtml=`<div class="chest-rare-tag">✦ ZELDZAAM ✦</div>
+      <div class="chest-item-ic">${icon}</div>
+      <div class="chest-item-nm">${reward.item.naam}</div>
+      <div class="chest-item-sub">Nieuw kledingstuk ontgrendeld! Trek het aan in de winkel.</div>`;
+  }else{
+    try{if(typeof addCoins==='function')addCoins(reward.coins);}catch(e){}
+    const cico=(typeof _ico==='function')?_ico('coin',30):'🪙';
+    revealHtml=`<div class="chest-common-ic">${cico}</div>
+      <div class="chest-item-nm">+${reward.coins} munten</div>
+      <div class="chest-item-sub">Bijgeschreven op je saldo.</div>`;
+    try{if(typeof renderEconHome==='function')renderEconHome();}catch(e){}
+  }
+  const rev=ov.querySelector('#chest-reveal');
+  if(rev){rev.innerHTML=revealHtml;requestAnimationFrame(()=>rev.classList.add('show'));}
+  const cta=ov.querySelector('#chest-cta');
+  if(cta){cta.style.display='';cta.onclick=close;setTimeout(()=>{try{cta.focus();}catch(e){}},260);}
 }
 
 function renderGreeting(){

@@ -211,8 +211,19 @@ function vonkRenderMsg(msg, plain) {
 function _vonkPlain(msg) { return String(msg).replace(/\{\{([^|}]+)\|[^}]+\}\}/g, '$1').replace(/<[^>]+>/g, ''); }
 
 var _vonkTimer = null;
+// Vonk mag niet "door een paar berichten heen flitsen" bij het openen: meerdere
+// vonkSay-aanroepen kort na elkaar worden samengevoegd tot één render (de laatste
+// binnen het venster wint), zodat er meteen één juist bericht verschijnt.
+var _vonkSayT = null, _vonkSayPending = null;
 function vonkSay(msg, opts) {
-  opts = opts || {};
+  _vonkSayPending = { msg: msg, opts: opts || {} };
+  clearTimeout(_vonkSayT);
+  _vonkSayT = setTimeout(_vonkSayRender, 120);
+}
+function _vonkSayRender() {
+  const _p = _vonkSayPending; _vonkSayPending = null;
+  if (!_p) return;
+  const msg = _p.msg; const opts = _p.opts || {};
   if (opts.once) { const k = 'slagio_vonk_' + opts.once; try { if (localStorage.getItem(k)) return; localStorage.setItem(k, '1'); } catch (e) {} }
   const rendered = vonkRenderMsg(msg, opts.plainLinks);
   const plainLen = _vonkPlain(msg).length;

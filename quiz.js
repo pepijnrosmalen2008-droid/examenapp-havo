@@ -1244,10 +1244,13 @@ function toonRes(){
   try{const _pbRes=savePB(ST.vak.id,ST.domein.id,pct);if(_pbRes.isNew){window._newPB=true;window._oldPB=_pbRes.prev?_pbRes.prev.score:null;}}catch(e){}
   // Rebuild grid and streak to update UI
   try{const g=document.getElementById('vakgrid');if(g){g.innerHTML='';buildGrid();}
-  renderStreak();renderFavHome();renderXPHome();renderDailyChallenge();renderDailyGoal();renderLiveCount();renderHomeStats();renderGreeting();try{renderComebackCard();}catch(e){}try{renderFeatDisc();}catch(e){}try{renderHmQuickChips();renderHmStatsStrip();renderDecayAlert();renderExamAlert();}catch(e){}try{renderVandaagWidget();}catch(e){}showDailyChallengePopup();}catch(e){}
+  renderStreak();renderFavHome();renderXPHome();renderDailyChallenge();renderDailyGoal();renderLiveCount();renderHomeStats();renderGreeting();try{renderComebackCard();}catch(e){}try{renderFeatDisc();}catch(e){}try{renderHmQuickChips();renderHmStatsStrip();renderDecayAlert();renderExamAlert();}catch(e){}try{renderVandaagWidget();}catch(e){}}catch(e){}
   try{recordDailyGoal();}catch(e){};
   const isPerfect=pct===1&&ST.mode==='snel'&&tot>=3;
-  if(isPerfect&&earnAch('perfect'))setTimeout(()=>showAch('🌟','Perfecte score! Geen enkel fout!',90),800);
+  // Verzamelbak voor de finish-viermomenten; ze worden ná de render één-voor-één
+  // via de pop-up-wachtrij afgespeeld (geen overlap meer).
+  const _RC={};
+  if(isPerfect){try{earnAch('perfect');}catch(e){}_RC.perfect=true;}
   if(isPerfect)checkPerfectCountAch();
   try{
     let emi,tit,sub;
@@ -1364,9 +1367,10 @@ function toonRes(){
       if(rbdEl2)rbdEl2.insertAdjacentElement('afterend',card);
       // Divisie-widget: hoe ben je gestegen na deze quiz? (weekXP is al bijgewerkt in addXP;
       // _lgLastDelta is de werkelijk toegevoegde week-XP - dubbel tijdens een rush-venster.)
-      try{if(typeof renderResultLeague==='function'&&!ST.isFoutenboek)renderResultLeague((typeof _lgLastDelta!=='undefined'&&_lgLastDelta)||res.added);}catch(e){}
-      if(res.leveled){setTimeout(()=>{try{showLevelUp(res.newLvl,lvlName,res.added);}catch(e){try{slagioVlagUit('levelup');}catch(_){}}},420);}
-      else if(isPerfect){setTimeout(()=>{try{slagioVlagUit('perfect');}catch(e){}},300);}
+      const _lgDelta=(typeof _lgLastDelta!=='undefined'&&_lgLastDelta)||res.added;
+      try{if(typeof renderResultLeague==='function'&&!ST.isFoutenboek)renderResultLeague(_lgDelta);}catch(e){}
+      try{if(typeof leagueRankInfo==='function'&&!ST.isFoutenboek)_RC.rankInfo=leagueRankInfo(_lgDelta);}catch(e){}
+      if(res.leveled)_RC.level={lvl:res.newLvl,name:lvlName,xp:res.added};
       setTimeout(()=>floatXP(res.added),150);
       // Level teaser - als dichtbij volgend level
       try{
@@ -1383,10 +1387,7 @@ function toonRes(){
       updateProfileNav();
       if(res.evolved){
         const _p=JSON.parse(localStorage.getItem(PROF_KEY)||'{}');
-        if(_p.animalId){
-          setTimeout(()=>launchConfetti('gold'),600);
-          setTimeout(()=>showEvoReveal(res.newStage,_p.animalId),900);
-        }
+        if(_p.animalId)_RC.evo={newStage:res.newStage,animalId:_p.animalId};
       }
       if(ST.isDailyChallenge){
         try{const _k=_dcLevelKey();const dc=JSON.parse(localStorage.getItem(_k)||'{}');dc.done=true;localStorage.setItem(_k,JSON.stringify(dc));}catch(e){}
@@ -1430,19 +1431,42 @@ function toonRes(){
       else{const _rc=document.getElementById('res-coach');if(_rc)_rc.innerHTML='';}
     }
   }catch(e){}
-  // B2: account prompt bottom sheet (first win, anonymous only)
+  // B2: account prompt bottom sheet (first win, anonymous only) - via de wachtrij
   try{
     if(!currentUser && ST.mode==='snel' && !ST.isFoutenboek && pct>=0.5 && !localStorage.getItem('slagio_reg_prompted')){
-      setTimeout(()=>_showRegPrompt(pct),1200);
+      _RC.reg=pct;
     }
   }catch(e){}
+  // Kistje: één per dag bij de eerste afgeronde snelle quiz (Duolingo-stijl).
+  try{ if(ST.mode==='snel' && !ST.isFoutenboek && typeof chestDueToday==='function' && chestDueToday()) _RC.chest=true; }catch(e){}
   // "Volgende domein"-kaart verwijderd op verzoek - minder tegels op het resultaatscherm.
   try{const omBox=document.getElementById('one-more-wrap');if(omBox)omBox.innerHTML='';}catch(e){}
   try{renderAdaptiveResults();}catch(e){}
   try{renderChallengeResult();}catch(e){}
   show('sc-res');
   try{playSound('complete');}catch(e){}
-  if(ST.mode==='snel'&&!ST.isFoutenboek)setTimeout(()=>showFeedbackPopup('snel'),2500);
+  if(ST.mode==='snel'&&!ST.isFoutenboek)_RC.feedback=true;
+  // Alle viermomenten één-voor-één afspelen (geen overlappende pop-ups meer).
+  try{_runResultChain(_RC);}catch(e){}
+}
+
+// De finish-viermomenten netjes achter elkaar via de pop-up-wachtrij.
+// Volgorde (Duolingo-stijl): perfect -> level up -> evolutie -> divisie-stijging
+// -> kistje -> account -> feedback. Elk wacht tot de vorige gesloten is.
+function _runResultChain(rc){
+  rc=rc||{};
+  // Even wachten zodat het resultaat + de munt-vlucht eerst gezien worden.
+  setTimeout(()=>{
+    try{
+      if(rc.perfect&&!rc.level)pqAdd(fin=>pqAuto(fin,3200,()=>{try{slagioVlagUit('perfect');}catch(e){}}));
+      if(rc.level)pqAdd(fin=>pqButton(fin,()=>{try{showLevelUp(rc.level.lvl,rc.level.name,rc.level.xp);}catch(e){try{slagioVlagUit('levelup');}catch(_){}pqNotifyClose();}}));
+      if(rc.evo)pqAdd(fin=>pqButton(fin,()=>showEvoReveal(rc.evo.newStage,rc.evo.animalId)));
+      if(rc.rankInfo&&rc.rankInfo.climbed>0)pqAdd(fin=>showLeagueRankUp(rc.rankInfo,fin));
+      if(rc.chest)pqAdd(fin=>showChest(fin));
+      if(rc.reg!=null)pqAdd(fin=>pqButton(fin,()=>_showRegPrompt(rc.reg)));
+      if(rc.feedback)pqAdd(fin=>pqAuto(fin,600,()=>{try{showFeedbackPopup('snel');}catch(e){}}));
+    }catch(e){}
+  },1750);
 }
 
 // Duolingo-stijl: getal telt op naar de eindwaarde (ease-out, snapt op .5 exact).
@@ -1471,11 +1495,11 @@ function _showRegPrompt(pct){
         <div style="font-size:19px;font-weight:900;color:var(--or);margin-bottom:4px">${msg} ${pctNum}%</div>
         <div style="font-size:14px;font-weight:700;color:var(--dk,#e2e8f0);margin-bottom:6px">Sla je score op - gratis</div>
         <div style="font-size:13px;color:var(--mu,#94a3b8);margin-bottom:20px">Maak een gratis account en verschijn op het leaderboard. Duurt 30 seconden.</div>
-        <button onclick="(function(){document.getElementById('reg-prompt-sheet')?.remove();switchAuthTab&&switchAuthTab('register');show('sc-auth');})()" style="background:linear-gradient(135deg,#6366f1,#4f46e5);color:#fff;border:none;border-radius:14px;padding:14px 0;font-size:15px;font-weight:700;cursor:pointer;font-family:var(--font);width:100%;margin-bottom:10px">Account aanmaken - gratis →</button>
-        <button onclick="document.getElementById('reg-prompt-sheet')?.remove()" style="background:none;border:none;color:var(--mu,#94a3b8);font-size:13px;cursor:pointer;font-family:var(--font);padding:6px">Niet nu</button>
+        <button onclick="(function(){document.getElementById('reg-prompt-sheet')?.remove();try{pqNotifyClose();}catch(e){}switchAuthTab&&switchAuthTab('register');show('sc-auth');})()" style="background:linear-gradient(135deg,#6366f1,#4f46e5);color:#fff;border:none;border-radius:14px;padding:14px 0;font-size:15px;font-weight:700;cursor:pointer;font-family:var(--font);width:100%;margin-bottom:10px">Account aanmaken - gratis →</button>
+        <button onclick="document.getElementById('reg-prompt-sheet')?.remove();try{pqNotifyClose();}catch(e){}" style="background:none;border:none;color:var(--mu,#94a3b8);font-size:13px;cursor:pointer;font-family:var(--font);padding:6px">Niet nu</button>
       </div>
     </div>`;
-    el.addEventListener('click',e=>{if(e.target===el)el.remove();});
+    el.addEventListener('click',e=>{if(e.target===el){el.remove();try{pqNotifyClose();}catch(_){}}});
     document.body.appendChild(el);
   }catch(e){}
 }

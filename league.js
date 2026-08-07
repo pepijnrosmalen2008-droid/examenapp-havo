@@ -379,6 +379,50 @@ function renderResultLeague(xpGained){
   }
 }
 
+// ── Divisie-stijging: vol scherm ná de finish als je plekken bent gestegen ──
+// (Duolingo-stijl.) 'finish' hoort bij de pop-up-wachtrij en wordt bij sluiten
+// aangeroepen. Toont niets (en roept finish direct aan) als je niet gestegen bent.
+function showLeagueRankUp(info,finish){
+  finish=(typeof finish==='function')?finish:function(){};
+  if(!info||info.climbed<=0||document.getElementById('lg-rankup')){finish();return;}
+  const div=info.div||LEAGUE_DIVISIONS[0];
+  const promo=info.promo;
+  const _vonk=(typeof mascotSVG==='function')?mascotSVG('trots',96):'';
+  const el=document.createElement('div');
+  el.id='lg-rankup';el.className='lgc-overlay';
+  el.innerHTML=`<div class="lgc-card lgc-up" style="--lg-col:${div.kleur}">
+    <div class="lgc-rays" aria-hidden="true"></div>
+    <div class="lgc-vonk">${_vonk}<span class="lgc-badge-mini no-ico">${div.ic}</span></div>
+    <div class="lgc-kicker">${promo?'Promotiezone!':'Je bent gestegen'}</div>
+    <div class="lgc-title">${info.climbed} plek${info.climbed===1?'':'ken'} omhoog</div>
+    <div class="lgc-rankbig">#<span id="lg-ru-num">${info.rankBefore}</span> <span class="lgc-rankof">van ${info.total}</span></div>
+    <div class="lgc-sub">${div.naam}-divisie${promo?' · je staat in de promotiezone, houd deze vast!':' · blijf stijgen naar de top 7.'}</div>
+    <button class="lgc-cta" onclick="_lgRankUpClose(true)">Bekijk mijn divisie</button>
+    <button class="lgc-skip" onclick="_lgRankUpClose(false)">Verder</button>
+  </div>`;
+  window._lgRankUpFinish=finish;window._lgRankUpGo=false;
+  document.body.appendChild(el);
+  requestAnimationFrame(()=>el.classList.add('show'));
+  try{playSound(promo?'levelup':'combo');}catch(e){}
+  try{if(promo&&typeof launchConfetti==='function')launchConfetti('gold');}catch(e){}
+  try{haptic&&haptic([40,25,70]);}catch(e){}
+  // Rangnummer laten teruglopen van vorige stand naar nu.
+  const numEl=el.querySelector('#lg-ru-num');
+  if(numEl){
+    const from=info.rankBefore,to=info.rankNow,steps=Math.abs(from-to);
+    const dur=Math.min(1200,420+steps*140),t0=performance.now();
+    const tick=now=>{const p=Math.min(1,(now-t0)/dur);const e2=1-Math.pow(1-p,2);numEl.textContent=Math.round(from+(to-from)*e2);if(p<1)requestAnimationFrame(tick);else{numEl.textContent=to;el.querySelector('.lgc-rankbig')?.classList.add('rl-pop');}};
+    setTimeout(()=>requestAnimationFrame(tick),480);
+  }
+}
+function _lgRankUpClose(go){
+  const el=document.getElementById('lg-rankup');
+  if(el){el.classList.remove('show');setTimeout(()=>el.remove(),260);}
+  const fin=window._lgRankUpFinish;window._lgRankUpFinish=null;
+  if(go){try{openLeague();}catch(e){}}
+  if(typeof fin==='function'){try{fin();}catch(e){}}
+}
+
 // ── Volledig bord ──
 function openLeague(){show('sc-league');renderLeague();try{leagueSyncAndFetch(true);}catch(e){}}
 function renderLeague(){
