@@ -7360,3 +7360,20 @@ html.dark .dom-hero-card{background:linear-gradient(180deg,rgba(255,255,255,.045
 @media(prefers-reduced-motion:reduce){
   .m-do-happy .m-fig,.m-do-happy .m-head,.m-do-happy .m-eyes,.m-do-jump .m-fig,.m-do-jump .m-ear-l,.m-do-jump .m-ear-r,.m-do-jump .m-tail,.m-do-celebrate .m-fig,.m-do-celebrate .m-ear-l,.m-do-celebrate .m-ear-r,.m-do-celebrate .m-tail,.m-do-celebrate .m-eyes,.m-do-sad .m-fig,.m-do-sad .m-head,.m-do-sad .m-ear-l,.m-do-sad .m-ear-r,.m-do-nod .m-head,.m-do-think .m-head,.m-do-think .m-ear-r,.m-do-wave .m-wave,.m-do-wave .m-head,.m-do-run .m-fig,.m-do-run .m-tail,.m-do-evolve .m-fig{animation:none!important}
 }
+
+/* ── Vonk idle micro-gedrag (kansverdeling) + emotion-energie ── */
+@keyframes mkBlink{0%,100%{transform:scaleY(1)}50%{transform:scaleY(.08)}}
+.m-do-yawn .m-mouth{opacity:0}
+.m-do-yawn .m-yawn{opacity:1;animation:mkYawn 1.25s ease-in-out}
+@keyframes mkYawn{0%,100%{opacity:0;transform:scaleY(.2)}20%,70%{opacity:1;transform:scaleY(1)}}
+.m-do-yawn .m-head{animation:mkYawnHead 1.25s ease-in-out}
+@keyframes mkYawnHead{0%,100%{transform:rotate(0)}30%,60%{transform:rotate(-4deg) translateY(-1px)}}
+.m-do-tailflick .m-tail{animation:mkTailFast .3s ease-in-out 2}
+/* Emotion engine → energie moduleert tempo/amplitude van de rig */
+.m-svg[data-energy="hi"] .m-fig{animation-duration:4.4s}
+.m-svg[data-energy="lo"] .m-fig{animation-duration:7.6s}
+.m-svg[data-energy="hi"] .m-do-happy .m-fig,.m-svg[data-energy="hi"] .m-do-jump .m-fig,.m-svg[data-energy="hi"] .m-do-celebrate .m-fig{animation-duration:.62s}
+.m-svg[data-energy="hi"] .m-do-celebrate .m-fig{animation-duration:1s}
+.m-svg[data-energy="lo"] .m-do-happy .m-fig{animation-duration:.9s}
+.m-svg[data-energy="lo"] .m-do-nod .m-head,.m-svg[data-energy="lo"] .m-do-sad .m-fig{animation-duration:1.1s}
+@media(prefers-reduced-motion:reduce){.m-do-yawn .m-yawn,.m-do-yawn .m-head,.m-do-tailflick .m-tail{animation:none!important}}

@@ -335,6 +335,8 @@ function _kiesReveal(gekozen,correct,btns){
   try{const ms=ST._vraagStartMs?Date.now()-ST._vraagStartMs:null;logQuestion(ST.vak?.id,ST.domein?.id,ST.mode,ST.idx,ok,ms);}catch(e){}
   if(ok){ST.combo=(ST.combo||0)+1;playSound('correct');haptic([14,32,60]);}   // bevredigende oplopende tik
   else{ST.combo=0;playSound('wrong');haptic([90,45,90]);}                      // stevige fout-buzz
+  // Voed de emotion engine (stemming loopt door de sessie; stuurt latere reacties).
+  try{if(typeof vonkEvent==='function')vonkEvent(ok?'answer_correct':'answer_wrong',{silent:true});}catch(e){}
   try{if(typeof v4AvatarReact==='function')v4AvatarReact(ok?(ST.combo>=3?'streak':'correct'):'wrong');}catch(e){}
   // Particles van de geklikte knop
   spawnParticles(btns[gekozen],ok);
