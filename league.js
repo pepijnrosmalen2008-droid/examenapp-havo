@@ -55,7 +55,7 @@ function _lgMakeCohort(division,baseline,seedStr){
   const divMult=Math.pow(1.16,division);
   const out=[];
   for(let i=0;i<LEAGUE_COHORT-1;i++){
-    const factor=0.28+rng()*1.7;
+    const factor=0.3+rng()*2.5;                    // bredere spreiding: sterke koplopers mogelijk
     const target=Math.max(60,Math.round(baseline*divMult*factor));
     out.push({
       naam:_lgBotName(rng),
@@ -153,7 +153,25 @@ function ensureLeague(){
     L.cohort=_lgMakeCohort(L.division,baseline,wid);
     _saveLeague(L);
   }
+  // Houd de bots competitief: schaal hun weekdoelen mee met jouw tempo, zodat een
+  // sterke speler niet in z'n eentje bovenaan staat. Gestage, gecapte opschaling.
+  try{ _lgKeepCompetitive(L); }catch(e){}
   return L;
+}
+// Schaalt de cohort-doelen omhoog wanneer de speler ze voorbij dreigt te rennen,
+// zodat de sterkste bots net bóven je verwachte eind-XP uitkomen (competitie blijft).
+// Alleen omhoog, gecapt per keer, en stopt zodra het sterk genoeg is.
+function _lgKeepCompetitive(L){
+  if(!L||!Array.isArray(L.cohort)||!L.cohort.length)return;
+  const prog=Math.max(0.12,_lgWeekProgress());
+  const projected=(L.weekXP||0)/prog;                 // verwachte eind-XP van de speler
+  if(projected<300)return;                            // rustige starters niet opjagen
+  let topTarget=0;for(const b of L.cohort){if((b.target||0)>topTarget)topTarget=b.target||0;}
+  const want=projected*1.18;                          // sterkste bot ~18% boven mijn verwachting
+  if(topTarget>=want)return;                          // al sterk genoeg
+  const scale=Math.min(1.6, want/Math.max(1,topTarget)); // gestage, gecapte opschaling
+  L.cohort.forEach(b=>{ b.target=Math.round((b.target||0)*scale); });
+  _saveLeague(L);
 }
 
 // Standings van de huidige (of gefinaliseerde) week.

@@ -314,6 +314,7 @@ function startTimer(max){
 function kies(gekozen,correct){
   clearInterval(ST.timer);
   playSound('tap');
+  try{haptic(12);}catch(e){}   // directe tik bij het kiezen (Duolingo-stijl)
   // Immediately disable all buttons + show suspense shimmer on selected
   const btns=document.querySelectorAll('#snel-area .opt');
   btns.forEach(b=>b.disabled=true);
@@ -328,8 +329,8 @@ function _kiesReveal(gekozen,correct,btns){
   ST.score+=ok?1:0;
   // Log per-vraag data voor adaptive engine
   try{const ms=ST._vraagStartMs?Date.now()-ST._vraagStartMs:null;logQuestion(ST.vak?.id,ST.domein?.id,ST.mode,ST.idx,ok,ms);}catch(e){}
-  if(ok){ST.combo=(ST.combo||0)+1;playSound('correct');haptic([20]);}
-  else{ST.combo=0;playSound('wrong');haptic([60,20,60]);}
+  if(ok){ST.combo=(ST.combo||0)+1;playSound('correct');haptic([14,32,60]);}   // bevredigende oplopende tik
+  else{ST.combo=0;playSound('wrong');haptic([90,45,90]);}                      // stevige fout-buzz
   try{if(typeof v4AvatarReact==='function')v4AvatarReact(ok?(ST.combo>=3?'streak':'correct'):'wrong');}catch(e){}
   // Particles van de geklikte knop
   spawnParticles(btns[gekozen],ok);
@@ -1173,20 +1174,19 @@ document.addEventListener('click',function(e){
 // ═══════ UI-GELUID (overal - élke knop/klikbaar element krijgt geluid) ═══════
 let _lastUiSnd=0;
 document.addEventListener('click',function(e){
-  if(!_soundOn)return;
   // Breed vangnet: echte knoppen, links, labels, summary, role=button, alles met onclick,
   // plus de div/span-gebaseerde klikbare patronen in de app.
   const el=e.target.closest('button,a,summary,label,input[type="checkbox"],input[type="radio"],[role="button"],[role="switch"],[onclick],.card,.chip,.qmcd,.opt,.race-opt,.fc-btn,.fc-card,.bnav-btn,.nav-btn,.dock-btn,.tab,.lbl-tab,.seg-btn,.fp-chip,.calc-btn,.hm-ql-btn,.hm-quick-chip,.hnav-icon-btn,.theme-btn,.wlc-theme-btn,.anim-pick-btn');
   if(!el)return;
   if(el.disabled||el.getAttribute('aria-disabled')==='true')return;
   if(el.dataset&&el.dataset.nosound!=null)return;
-  // Elementen met hun eigen feedback-geluid (quiz/flashcard) overslaan.
+  // Elementen met hun eigen feedback (quiz/flashcard) overslaan.
   if(el.closest('.opt,.race-opt,.fc-btn,.fc-card'))return;
   // Geluidstoggle speelt zijn eigen bevestiging.
   if(el.id==='quiz-snd-btn'||el.classList.contains('qtb-snd')||el.classList.contains('snd-toggle-btn'))return;
   // Throttle tegen dubbel-trigger (label→input bubbeling, geneste klikbare elementen).
   const now=performance.now(); if(now-_lastUiSnd<40)return; _lastUiSnd=now;
-  // Semantische routing → passend geluid.
+  // Semantische routing → passend geluid + haptiek.
   const aria=(el.getAttribute('aria-label')||'')+' '+(el.className||'');
   let snd='tap';
   if(el.matches('.hm-cta-primary,.tuto-btn-pri,.ob-btn,.wlc-card,.bnav-fab,.qmcd,.calc-btn,.dc-popup-btn,[type="submit"],.btn-pri,.btn-primary,.primary,.cta'))snd='pop';
@@ -1194,7 +1194,9 @@ document.addEventListener('click',function(e){
   else if(el.matches('.bnav-btn,.nav-btn,.dock-btn,.tab,.lbl-tab,.seg-btn'))snd='nav';
   else if(el.matches('input[type="checkbox"],input[type="radio"],.toggle,.switch,[role="switch"]'))snd='toggle';
   else if(el.matches('[data-back],.back-btn,.qtb-close,.close,.modal-close,.x-btn,.close-btn')||/sluit|terug|annul|back|close|dismiss/i.test(aria))snd='back';
-  playSound(snd);
+  // Lichte, tactiele tik op élke UI-interactie (Duolingo-stijl) - ook met geluid uit.
+  try{ haptic(snd==='pop'?[11]:snd==='toggle'?[8]:snd==='back'?[7]:6); }catch(_){}
+  if(_soundOn)playSound(snd);
 },true);
 
 // ═══════ QUIZ VERLATEN (exit interstitial) ═══════
