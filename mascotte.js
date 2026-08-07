@@ -290,15 +290,74 @@ function _vonkSayRender() {
   // Met opts.think denkt hij eerst even na (denk-pose) en wisselt dan naar praten.
   if (fig) {
     const talkDelay = opts.think ? 900 : 260;
+    const talkDur = Math.min(5200, 1400 + plainLen * 48);
     if (opts.think) setTimeout(() => { fig.innerHTML = mascotSVG(mood, size); }, talkDelay - 20);
-    setTimeout(() => fig.classList.add('talking'), talkDelay);
-    stage._talkT = setTimeout(() => fig.classList.remove('talking'), talkDelay + Math.min(5200, 1400 + plainLen * 48));
+    // Visemes: de mond loopt door mondstanden die uit de tekst zijn afgeleid,
+    // op spreektempo — i.p.v. een generieke praat-lus.
+    setTimeout(() => { try { if (typeof vonkSpeak === 'function') vonkSpeak(fig, msg, talkDur); else fig.classList.add('talking'); } catch (e) { fig.classList.add('talking'); } }, talkDelay);
+    stage._talkT = setTimeout(() => { try { if (typeof vonkSpeakStop === 'function') vonkSpeakStop(fig); else fig.classList.remove('talking'); } catch (e) { fig.classList.remove('talking'); } }, talkDelay + talkDur);
   }
   const dur = (opts.duration != null) ? opts.duration : Math.min(12000, 4000 + plainLen * 55);
   clearTimeout(_vonkTimer);
   if (dur > 0) _vonkTimer = setTimeout(close, dur);
 }
 function vonkHide() { const s = document.getElementById('vonk-stage'); if (s && s._close) s._close(); }
+
+// ─── Visemes: mondstanden gesynchroniseerd met de "gesproken" tekst ───
+// Geen audio → we leiden de mondstanden (dicht/open/wijd/smal) af uit de letters
+// en lopen ze op spreektempo door. Klinkers openen de mond, medeklinkers sluiten
+// hem, spaties = korte rust. Dat leest natuurlijker dan een generieke praat-lus.
+function _vonkVisemeSeq(plain) {
+  var seq = [];
+  for (var i = 0; i < plain.length; i++) {
+    var ch = plain.charAt(i).toLowerCase();
+    if (/\s/.test(ch)) { if (seq.length && seq[seq.length - 1] !== 'rest') seq.push('rest'); continue; }
+    if ('aáàâä'.indexOf(ch) >= 0 || 'oóòôö'.indexOf(ch) >= 0) seq.push('wide');
+    else if ('eéèêë'.indexOf(ch) >= 0) seq.push('open');
+    else if ('iíìïuúùûüy'.indexOf(ch) >= 0) seq.push('narrow');
+    else if (/[a-z]/.test(ch)) seq.push(seq.length % 2 ? 'open' : 'closed');
+    else if (/[.,!?;:]/.test(ch)) { if (seq.length && seq[seq.length - 1] !== 'rest') seq.push('rest'); }
+  }
+  return seq;
+}
+function _vonkVisemeApply(fig, v) {
+  var mtC = fig.querySelector('.mt-c'), mtA = fig.querySelector('.mt-a'), mtB = fig.querySelector('.mt-b'), tongue = fig.querySelector('.mt-tongue');
+  var oC = 0, oA = 0, oB = 0, oT = 0;
+  if (v === 'wide') { oB = 1; oT = 1; }
+  else if (v === 'open') { oA = 1; }
+  else if (v === 'narrow') { oA = 1; }
+  else { oC = 1; }                       // closed / rest → smalle curve
+  if (mtC) mtC.style.opacity = oC; if (mtA) mtA.style.opacity = oA; if (mtB) mtB.style.opacity = oB; if (tongue) tongue.style.opacity = oT;
+  // Smalle klank = mond iets samengeknepen.
+  if (mtA) mtA.style.transform = (v === 'narrow') ? 'scaleX(.6)' : '';
+}
+function vonkSpeak(fig, text, totalMs) {
+  try {
+    if (!fig || !fig.querySelector('.m-mouth-talk')) { if (fig) fig.classList.add('talking'); return; }
+    if (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) { fig.classList.add('talking'); return; }
+    var plain = (typeof _vonkPlain === 'function') ? _vonkPlain(text) : String(text || '');
+    var seq = _vonkVisemeSeq(plain);
+    if (!seq.length) { fig.classList.add('talking'); return; }
+    fig.classList.add('talking', 'm-viseme');
+    var step = Math.max(72, Math.min(150, (totalMs || seq.length * 100) / seq.length));
+    var idx = 0;
+    clearInterval(fig._vsT);
+    _vonkVisemeApply(fig, seq[0]); idx = 1;
+    fig._vsT = setInterval(function () {
+      if (idx >= seq.length) { vonkSpeakStop(fig); return; }
+      _vonkVisemeApply(fig, seq[idx]); idx++;
+    }, step);
+  } catch (e) { try { fig.classList.add('talking'); } catch (_) {} }
+}
+function vonkSpeakStop(fig) {
+  try {
+    if (!fig) return;
+    clearInterval(fig._vsT);
+    fig.classList.remove('m-viseme', 'talking');
+    var mts = fig.querySelectorAll('.mt, .mt-tongue');
+    for (var i = 0; i < mts.length; i++) { mts[i].style.opacity = ''; mts[i].style.transform = ''; }
+  } catch (e) {}
+}
 
 // ─── Feest! Vonk juicht met slingers + confetti (celebration-overlay) ───
 function vonkCelebrate(caption, opts) {

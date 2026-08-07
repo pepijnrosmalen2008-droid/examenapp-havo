@@ -7394,3 +7394,7 @@ html.dark .dom-hero-card{background:linear-gradient(180deg,rgba(255,255,255,.045
 .qv-bonus{display:inline-block;margin-left:8px;padding:2px 8px;border-radius:999px;background:linear-gradient(135deg,rgba(34,197,94,.24),rgba(16,185,129,.14));border:1px solid rgba(74,222,128,.45);color:#86efac;font-size:12.5px}
 @media(max-width:640px){.quiz-vonk{width:56px;height:56px}.qv-fig,.qv-fig .m-svg{width:56px;height:56px}.qv-bubble{left:48px;bottom:34px;font-size:13px}}
 @media(prefers-reduced-motion:reduce){.quiz-vonk,.qv-bubble{transition:none!important}}
+
+/* ── Visemes: JS stuurt de mondstanden, dus de generieke praat-keyframes uit ── */
+.m-viseme .mt,.m-viseme .mt-tongue{animation:none !important}
+.m-viseme .m-mouth{opacity:0}
