@@ -6865,54 +6865,42 @@ html.dark .dom-hero-card{background:linear-gradient(180deg,rgba(255,255,255,.045
 .remi.remi-vonk svg{width:122px;height:122px;filter:drop-shadow(0 10px 20px rgba(0,0,0,.22))}
 @media(max-width:640px){.remi.remi-vonk{margin-bottom:8px}.remi.remi-vonk svg{width:104px;height:104px}}
 
-/* ══ Vonk-intro na de laatste vraag: Duolingo-stijl feest-overgang ══
-   Gekleurd gordijn + roterende zonnestralen + glow, Vonk springt op met
-   squash-and-stretch, sterretjes spatten radiaal weg, een schokgolf-ring
-   pulseert bij de landing; daarna veegt het gordijn omhoog en onthult de score. */
+/* ══ Vonk-intro na de laatste vraag: ingetogen, premium overgang ══
+   Rustige donkere achtergrond + zachte spotlight-gloed, Vonk komt soepel op met
+   een subtiele veer, gedempte confetti valt kalm. Geen zonnestralen, sterren of
+   schokgolven - die oogden goedkoop. De rust en verfijning maken het premium. */
 .vonk-fin-intro{position:fixed;inset:0;z-index:9500;overflow:hidden;pointer-events:none;display:flex;align-items:center;justify-content:center}
-.vfi-panel{position:absolute;inset:0;transform:translateY(0);transition:transform .52s cubic-bezier(.65,0,.35,1);background:linear-gradient(160deg,#3fb964,#22a04e)}
-.vonk-fin-intro.tier-perfect .vfi-panel,.vonk-fin-intro.tier-top .vfi-panel{background:linear-gradient(160deg,#f9a83f,#f2751f)}
-.vonk-fin-intro.tier-good .vfi-panel{background:linear-gradient(160deg,#3fb964,#1f9a4b)}
-.vonk-fin-intro.tier-ok .vfi-panel{background:linear-gradient(160deg,#5b8def,#3f6fd8)}
-.vonk-fin-intro.tier-low .vfi-panel{background:linear-gradient(160deg,#727ead,#4d5680)}
-.vfi-panel::after{content:'';position:absolute;inset:0;background:radial-gradient(circle at 50% 44%,rgba(255,255,255,.20),transparent 60%)}
-/* Zonnestralen achter Vonk (langzaam roterend). */
-.vfi-rays{position:absolute;top:44%;left:50%;width:170vmax;height:170vmax;transform:translate(-50%,-50%);opacity:0;
-  background:repeating-conic-gradient(from 0deg,rgba(255,255,255,.11) 0deg 7deg,transparent 7deg 20deg)}
-.vonk-fin-intro.vfi-in .vfi-rays{opacity:1;transition:opacity .55s ease;animation:vfiSpin 13s linear infinite}
-@keyframes vfiSpin{from{transform:translate(-50%,-50%) rotate(0)}to{transform:translate(-50%,-50%) rotate(360deg)}}
-/* Zachte gloed die Vonk uitlicht. */
-.vfi-glow{position:absolute;top:44%;left:50%;width:64vmax;height:64vmax;transform:translate(-50%,-50%);opacity:0;
-  background:radial-gradient(circle,rgba(255,255,255,.24),transparent 58%)}
-.vonk-fin-intro.vfi-in .vfi-glow{opacity:1;transition:opacity .6s ease .08s}
-/* Schokgolf-ring op het landingsmoment. */
-.vfi-ring{position:absolute;top:44%;left:50%;width:130px;height:130px;border-radius:50%;border:5px solid rgba(255,255,255,.85);transform:translate(-50%,-50%) scale(.3);opacity:0}
-.vonk-fin-intro.vfi-in .vfi-ring{animation:vfiRing .62s cubic-bezier(.22,1,.36,1) .40s forwards}
-@keyframes vfiRing{0%{opacity:.9;transform:translate(-50%,-50%) scale(.3)}100%{opacity:0;transform:translate(-50%,-50%) scale(2.5)}}
-/* Vonk springt op met squash-and-stretch (transform-origin onder = voeten). */
-.vfi-vonk{position:relative;z-index:2;transform:translateY(50px) scale(.4);opacity:0;transform-origin:50% 100%;will-change:transform}
-.vfi-vonk svg{width:180px;height:180px;filter:drop-shadow(0 18px 32px rgba(0,0,0,.34))}
-.vonk-fin-intro.vfi-in .vfi-vonk{animation:vfiPop .74s cubic-bezier(.22,1,.36,1) forwards}
-@keyframes vfiPop{
-  0%{transform:translateY(50px) scale(.4);opacity:0}
-  26%{opacity:1}
-  42%{transform:translateY(-16px) scaleX(.9) scaleY(1.2)}
-  60%{transform:translateY(9px) scaleX(1.12) scaleY(.88)}
-  76%{transform:translateY(-4px) scaleX(.98) scaleY(1.04)}
-  100%{transform:translateY(0) scale(1)}
-}
-/* Sterretjes die radiaal wegspatten. */
-.vfi-sparks{position:absolute;top:44%;left:50%;width:0;height:0;z-index:3}
-.vfi-spark{position:absolute;left:0;top:0;width:var(--sz);height:var(--sz);margin:calc(var(--sz)/-2 - 40px) 0 0 calc(var(--sz)/-2);background:#fff;opacity:0;
-  clip-path:polygon(50% 0,61% 39%,100% 50%,61% 61%,50% 100%,39% 61%,0 50%,39% 39%);
-  transform:rotate(var(--a)) translateX(0) scale(0)}
-.vonk-fin-intro.vfi-in .vfi-spark{animation:vfiSpark .72s ease-out var(--dl) forwards}
-@keyframes vfiSpark{0%{opacity:0;transform:rotate(var(--a)) translateX(0) scale(0)}28%{opacity:1;transform:rotate(var(--a)) translateX(calc(var(--d) * .6)) scale(1.15)}100%{opacity:0;transform:rotate(var(--a)) translateX(var(--d)) scale(.35)}}
-/* Onthulling: gordijn veegt omhoog, Vonk + effecten liften mee weg. */
-.vonk-fin-intro.vfi-reveal .vfi-panel{transform:translateY(-106%)}
-.vonk-fin-intro.vfi-reveal .vfi-vonk{animation:vfiExit .5s cubic-bezier(.6,0,.35,1) forwards}
-@keyframes vfiExit{0%{transform:translateY(0) scale(1);opacity:1}100%{transform:translateY(-118vh) scale(.82);opacity:0}}
-.vonk-fin-intro.vfi-reveal .vfi-rays,.vonk-fin-intro.vfi-reveal .vfi-glow,.vonk-fin-intro.vfi-reveal .vfi-sparks{opacity:0;transition:opacity .3s ease}
+.vonk-fin-intro.tier-perfect{--tc:#ffc800}
+.vonk-fin-intro.tier-top{--tc:#ff9a3c}
+.vonk-fin-intro.tier-good{--tc:#58cc02}
+.vonk-fin-intro.tier-ok{--tc:#1cb0f6}
+.vonk-fin-intro.tier-low{--tc:#8a93a8}
+/* Donkere achtergrond, gelijk aan het resultaatscherm (naadloze overgang). */
+.vfi-panel{position:absolute;inset:0;opacity:0;background:radial-gradient(120% 90% at 50% 40%,#141d2b,#0b111c 70%);transition:opacity .34s ease}
+.vonk-fin-intro.vfi-in .vfi-panel{opacity:1}
+/* Zachte spotlight-gloed die Vonk uitlicht: een brede gedempte tier-gloed plus
+   een warmere, strakkere kern recht achter Vonk zodat de held tegen het donker
+   oplicht (premium, geen felle burst). */
+.vfi-glow{position:absolute;top:43%;left:50%;width:88vmax;height:88vmax;transform:translate(-50%,-50%);opacity:0;transition:opacity .55s ease;
+  background:radial-gradient(circle,color-mix(in srgb,var(--tc,#58cc02) 30%,transparent),transparent 50%)}
+.vonk-fin-intro.vfi-in .vfi-glow{opacity:.6}
+.vfi-glow::after{content:'';position:absolute;top:50%;left:50%;width:34vmax;height:34vmax;transform:translate(-50%,-50%);
+  background:radial-gradient(circle,rgba(255,244,230,.34),transparent 62%)}
+/* Vonk komt soepel op met een subtiele, verfijnde veer (geen overdreven squash). */
+.vfi-vonk{position:relative;z-index:2;transform:translateY(28px) scale(.74);opacity:0;transform-origin:50% 92%;will-change:transform}
+.vfi-vonk svg{width:172px;height:172px;filter:drop-shadow(0 20px 34px rgba(0,0,0,.45))}
+.vonk-fin-intro.vfi-in .vfi-vonk{animation:vfiRise .6s cubic-bezier(.32,1.25,.5,1) forwards}
+@keyframes vfiRise{0%{transform:translateY(28px) scale(.74);opacity:0}55%{opacity:1}78%{transform:translateY(0) scale(1.035)}100%{transform:translateY(0) scale(1)}}
+/* Gedempte confetti die rustig valt (Duolingo-stijl). */
+.vfi-conf-wrap{position:absolute;inset:0;z-index:1;overflow:hidden}
+.vfi-conf{position:absolute;top:-8vh;width:var(--w);height:calc(var(--w) * 1.7);background:var(--c);opacity:0;transform:rotate(var(--rot));
+  animation:vfiConf var(--dur) cubic-bezier(.4,.15,.7,.85) var(--dl) forwards}
+@keyframes vfiConf{0%{opacity:0;transform:translateY(0) rotate(var(--rot))}14%{opacity:.85}88%{opacity:.85}100%{opacity:0;transform:translateY(96vh) rotate(calc(var(--rot) + 260deg))}}
+/* Onthulling: alles vervaagt zacht, Vonk lift een tikje op; het resultaat komt tevoorschijn. */
+.vonk-fin-intro.vfi-reveal .vfi-panel{opacity:0;transition:opacity .4s ease}
+.vonk-fin-intro.vfi-reveal .vfi-glow,.vonk-fin-intro.vfi-reveal .vfi-conf-wrap{opacity:0;transition:opacity .34s ease}
+.vonk-fin-intro.vfi-reveal .vfi-vonk{animation:vfiFadeUp .42s cubic-bezier(.5,0,.4,1) forwards}
+@keyframes vfiFadeUp{0%{transform:translateY(0) scale(1);opacity:1}100%{transform:translateY(-54px) scale(.92);opacity:0}}
 @media(prefers-reduced-motion:reduce){.vonk-fin-intro{display:none}}
 
 /* ══════════════════════════════════════════════════════════════════════
