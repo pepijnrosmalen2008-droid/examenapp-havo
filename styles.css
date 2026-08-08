@@ -6860,6 +6860,27 @@ html.dark .dom-hero-card{background:linear-gradient(180deg,rgba(255,255,255,.045
 #sc-res.on .rbd{animation:resItemIn .5s cubic-bezier(.22,1,.36,1) .42s backwards}
 @media(prefers-reduced-motion:reduce){#sc-res.on .remi,#sc-res.on #rtit,#sc-res.on #rsub,#sc-res.on .sring,#sc-res.on .rbd{animation:none}}
 
+/* ══ Staande Vonk in de resultaat-kop (i.p.v. losse emoji) ══ */
+.remi.remi-vonk{font-size:0;line-height:0;margin-bottom:12px;display:flex;justify-content:center}
+.remi.remi-vonk svg{width:122px;height:122px;filter:drop-shadow(0 10px 20px rgba(0,0,0,.22))}
+@media(max-width:640px){.remi.remi-vonk{margin-bottom:8px}.remi.remi-vonk svg{width:104px;height:104px}}
+
+/* ══ Vonk-intro na de laatste vraag: vrolijke "voorbij-veeg" die de score onthult ══ */
+.vonk-fin-intro{position:fixed;inset:0;z-index:9500;overflow:hidden;pointer-events:none;display:flex;align-items:center;justify-content:center}
+.vfi-panel{position:absolute;inset:0;transform:translateY(0);transition:transform .5s cubic-bezier(.65,0,.35,1);background:linear-gradient(160deg,#3fb964,#22a04e)}
+.vonk-fin-intro.tier-perfect .vfi-panel,.vonk-fin-intro.tier-top .vfi-panel{background:linear-gradient(160deg,#f9a83f,#f2751f)}
+.vonk-fin-intro.tier-good .vfi-panel{background:linear-gradient(160deg,#3fb964,#1f9a4b)}
+.vonk-fin-intro.tier-ok .vfi-panel{background:linear-gradient(160deg,#5b8def,#3f6fd8)}
+.vonk-fin-intro.tier-low .vfi-panel{background:linear-gradient(160deg,#727ead,#4d5680)}
+.vfi-panel::after{content:'';position:absolute;inset:0;background:radial-gradient(circle at 50% 42%,rgba(255,255,255,.22),transparent 62%)}
+.vfi-vonk{position:relative;z-index:1;transform:translateX(-78vw) rotate(-9deg);opacity:0;will-change:transform}
+.vfi-vonk svg{width:168px;height:168px;filter:drop-shadow(0 16px 30px rgba(0,0,0,.32))}
+.vonk-fin-intro.vfi-in .vfi-vonk{animation:vfiEnter .72s cubic-bezier(.34,1.56,.64,1) forwards}
+@keyframes vfiEnter{0%{transform:translateX(-78vw) rotate(-9deg);opacity:0}52%{transform:translateX(0) rotate(4deg);opacity:1}68%{transform:translateX(0) translateY(-14px) rotate(-3deg)}84%{transform:translateX(0) translateY(0) rotate(1deg)}100%{transform:translateX(0) translateY(0) rotate(0);opacity:1}}
+.vonk-fin-intro.vfi-reveal .vfi-panel{transform:translateY(-106%)}
+.vonk-fin-intro.vfi-reveal .vfi-vonk{transition:transform .46s cubic-bezier(.65,0,.35,1),opacity .4s ease;transform:translateY(-118vh) scale(.82);opacity:0}
+@media(prefers-reduced-motion:reduce){.vonk-fin-intro{display:none}}
+
 /* ══════════════════════════════════════════════════════════════════════
    LIVELINESS-LAAG: elk scherm komt bij binnenkomst georkestreerd tot leven.
    Werkt omdat `.on` conditioneel de animatie op de kinderen zet, dus die

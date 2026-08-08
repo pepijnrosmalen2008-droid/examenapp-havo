@@ -1309,8 +1309,9 @@ function toonRes(){
   try{if(typeof awardQuizCoins==='function'){const _cw=awardQuizCoins(pct,pct>=0.999);window._coinsWon=_cw;
     // Muntenknop in de resultaat-topbar op het PRE-award aantal zetten...
     try{if(typeof renderCoinBtns==='function')renderCoinBtns();const _rn=document.getElementById('res-coin-n');if(_rn&&typeof getCoins==='function')_rn.textContent=Math.max(0,getCoins()-_cw);}catch(e){}
-    // ...en de munten laten opvliegen naar de topbar (Duolingo-stijl).
-    if(_cw>0)setTimeout(()=>{try{if(typeof coinFlyToBar==='function')coinFlyToBar(_cw,document.getElementById('res-coinbtn'));else if(typeof floatCoins==='function')floatCoins(_cw);}catch(e){}},950);
+    // ...en de munten laten opvliegen naar de topbar (Duolingo-stijl). Dit
+    // gebeurt pas bij de score-onthulling (ná de Vonk-intro), niet eronder.
+    window._coinFlyN=_cw>0?_cw:0;
   }}catch(e){}
   // Track quiz voltooid
   try{_flushQBatch();trackEvent('quiz_completed',{vak:ST.vak?.naam,vak_id:ST.vak?.id,domein_id:ST.domein?.id,mode:ST.mode,score:sc,totaal:tot,pct:Math.round(pct*100)});}catch(e){}
@@ -1327,21 +1328,35 @@ function toonRes(){
   const _RC={};
   if(isPerfect){try{earnAch('perfect');}catch(e){}_RC.perfect=true;}
   if(isPerfect)checkPerfectCountAch();
+  // Vonk-stemming + kleurtint per resultaat (voor de intro-sweep én de staande Vonk).
+  const _vMood=isPerfect?'feest':(pct>=0.9?'feest':(pct>=0.7?'blij':(pct>=0.5?'goed':'blij')));
+  const _vTier=isPerfect?'perfect':(pct>=0.9?'top':(pct>=0.7?'good':(pct>=0.5?'ok':'low')));
+  let _revealScore=null;
   try{
-    let emi,tit,sub;
-    if(isPerfect){emi='🌟';tit='Perfecte score!';sub='Fenomenaal! Alles goed - jij bent klaar voor het CE!';}
-    else if(pct>=0.9){emi='🏆';tit='Uitstekend!';sub='Je beheerst dit domein helemaal goed.';}
-    else if(pct>=0.7){emi='🎉';tit='Goed gedaan!';sub='Je snapt het meeste - kleine herhaling loont.';}
-    else if(pct>=0.5){emi='📖';tit='Aardig begin';sub='De basis zit erin. Oefen dit domein nog eens.';}
-    else{emi='💪';tit='Blijven oefenen!';sub='Dit domein verdient meer aandacht.';}
-    if(isPerfect)setTimeout(()=>launchConfetti('gold'),400);  // confetti alleen bij een perfecte score (major)
-    document.getElementById('remi').textContent=emi;
+    let tit,sub;
+    if(isPerfect){tit='Perfecte score!';sub='Fenomenaal! Alles goed - jij bent klaar voor het CE!';}
+    else if(pct>=0.9){tit='Uitstekend!';sub='Je beheerst dit domein helemaal goed.';}
+    else if(pct>=0.7){tit='Goed gedaan!';sub='Je snapt het meeste - kleine herhaling loont.';}
+    else if(pct>=0.5){tit='Aardig begin';sub='De basis zit erin. Oefen dit domein nog eens.';}
+    else{tit='Blijven oefenen!';sub='Dit domein verdient meer aandacht.';}
+    // Staande Vonk in de resultaat-kop (i.p.v. een losse emoji).
+    const _remi=document.getElementById('remi');
+    if(_remi){_remi.classList.add('remi-vonk');_remi.innerHTML=(typeof mascotSVG==='function')?mascotSVG(_vMood,128):'🦊';}
     document.getElementById('rtit').textContent=tit;
     document.getElementById('rsub').textContent=sub;
-    _qCountUp(document.getElementById('rnum'),sc,850);
+    // Score-ring leeg zetten zodat de onthulling ná de intro vers oploopt.
+    const _rnEl=document.getElementById('rnum');if(_rnEl)_rnEl.textContent='0';
     document.getElementById('rden').textContent=`van ${tot}`;
     const circ=2*Math.PI*50;
-    setTimeout(()=>{const c=document.getElementById('scirc');if(c){c.style.strokeDashoffset=circ*(1-pct);c.style.transition='stroke-dashoffset 1s ease';}},200);
+    const _sc0=document.getElementById('scirc');if(_sc0){_sc0.style.transition='none';_sc0.style.strokeDashoffset=circ;}
+    // De eigenlijke onthulling (getal telt op, ring vult, munten vliegen op) wordt
+    // ná de Vonk-intro-sweep getriggerd, zodat je het ziet gebeuren op een schoon scherm.
+    _revealScore=()=>{
+      try{_qCountUp(document.getElementById('rnum'),sc,850);}catch(e){}
+      try{const c=document.getElementById('scirc');if(c){c.style.transition='stroke-dashoffset 1s ease';c.style.strokeDashoffset=circ*(1-pct);}}catch(e){}
+      if(isPerfect)try{launchConfetti('gold');}catch(e){}
+      try{const _cw=window._coinFlyN||0;if(_cw>0){if(typeof coinFlyToBar==='function')coinFlyToBar(_cw,document.getElementById('res-coinbtn'));else if(typeof floatCoins==='function')floatCoins(_cw);}}catch(e){}
+    };
     let bdHtml='';
     if(ST.mode==='snel'){
       // Eén rustige compositie: drie beloningspills (wat je zojuist verdiende).
@@ -1465,10 +1480,38 @@ function toonRes(){
   // finish-moment blijven hangen. Een korte na-veeg vangt laat-gemaakte elementen.
   const _sweepFinish=()=>{try{document.querySelectorAll('.app-toast,.speed-badge,.xp-toast,#vonk-react,.vonk-react,.combo-badge').forEach(e=>e.remove());}catch(e){}};
   _sweepFinish();setTimeout(_sweepFinish,260);setTimeout(_sweepFinish,650);
-  try{playSound('complete');}catch(e){}
   if(ST.mode==='snel'&&!ST.isFoutenboek)_RC.feedback=true;
-  // Alle viermomenten één-voor-één afspelen (geen overlappende pop-ups meer).
-  try{_runResultChain(_RC);}catch(e){}
+  // Duolingo-stijl overgang: Vonk komt na de laatste vraag vrolijk voorbij als
+  // "gordijn", onthult dan de score (telling + munten), en pas dáárna spelen de
+  // grote beloningen via de wachtrij. Alles netjes na elkaar, één rustig moment.
+  _vonkFinishIntro(_vMood,_vTier,
+    ()=>{ try{playSound('complete');}catch(e){} if(_revealScore)_revealScore(); },
+    ()=>{ try{_runResultChain(_RC);}catch(e){} }
+  );
+}
+// ── Vonk-intro na de laatste vraag: vrolijke "voorbij-veeg" + score-onthulling ──
+// onReveal() wordt aangeroepen zodra het gordijn de score onthult; onDone() als de
+// intro helemaal klaar is (dan start de beloningsreeks).
+function _vonkFinishIntro(mood,tier,onReveal,onDone){
+  const _go=()=>{try{onReveal&&onReveal();}catch(e){}try{onDone&&onDone();}catch(e){}};
+  // Respecteer reduced-motion of ontbrekende mascotte: direct onthullen, geen sweep.
+  let _reduce=false;try{_reduce=window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)').matches;}catch(e){}
+  if(_reduce||typeof mascotSVG!=='function'){_go();return;}
+  try{document.getElementById('vonk-finish-intro')?.remove();}catch(e){}
+  const ov=document.createElement('div');
+  ov.id='vonk-finish-intro';
+  ov.className='vonk-fin-intro tier-'+(tier||'good');
+  ov.setAttribute('aria-hidden','true');
+  ov.innerHTML=`<div class="vfi-panel"></div><div class="vfi-vonk">${mascotSVG(mood||'feest',168)}</div>`;
+  document.body.appendChild(ov);
+  try{if(typeof haptic==='function')haptic([18,30,12,26,60]);}catch(e){}
+  try{if(typeof vonkPlay==='function')vonkPlay(ov.querySelector('.vfi-vonk'),mood==='feest'?'happy':'nod');}catch(e){}
+  // Fasen sturen we via klassen zodat de CSS-keyframes het werk doen.
+  requestAnimationFrame(()=>ov.classList.add('vfi-in'));
+  let _revealed=false;const _reveal=()=>{if(_revealed)return;_revealed=true;try{onReveal&&onReveal();}catch(e){}};
+  // Gordijn onthult de score halverwege (~820ms), daarna veegt Vonk omhoog weg.
+  setTimeout(()=>{ov.classList.add('vfi-reveal');_reveal();},820);
+  setTimeout(()=>{ try{ov.remove();}catch(e){} try{onDone&&onDone();}catch(e){} },1300);
 }
 
 // De finish-viermomenten netjes achter elkaar via de pop-up-wachtrij.
