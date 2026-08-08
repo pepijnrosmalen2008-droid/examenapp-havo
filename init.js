@@ -410,8 +410,9 @@ function updateBottomNav(id){
   if(lbl)lbl.textContent=currentUser?'Profiel':'Inloggen';
   const pbtn=document.getElementById('bnav-profiel-btn');
   if(pbtn)pbtn.title=currentUser?'Profiel':'Inloggen';
-  // Hide bottom nav during quiz/flashcard/qmode
-  const hideScreens=['sc-quiz','sc-flash','sc-qmode','sc-welcome','sc-race'];
+  // Hide bottom nav during quiz/flashcard/qmode + het resultaat-moment
+  // (finish = één rustige compositie, geen concurrerende navigatiebalk).
+  const hideScreens=['sc-quiz','sc-flash','sc-qmode','sc-welcome','sc-race','sc-res'];
   const bn=document.getElementById('bottom-nav');
   const navHidden=hideScreens.includes(id);
   if(bn) bn.style.display=navHidden?'none':'';

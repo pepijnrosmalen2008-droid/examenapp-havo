@@ -7398,3 +7398,18 @@ html.dark .dom-hero-card{background:linear-gradient(180deg,rgba(255,255,255,.045
 /* ── Visemes: JS stuurt de mondstanden, dus de generieke praat-keyframes uit ── */
 .m-viseme .mt,.m-viseme .mt-tongue{animation:none !important}
 .m-viseme .m-mouth{opacity:0}
+
+/* ══ Finish hercompositie: één rustig moment (3 beloningspills + heldere CTA) ══ */
+.rbd:has(.res-stats){background:none;box-shadow:none;padding:0;margin-bottom:22px}
+.res-stats{display:flex;gap:10px;justify-content:center}
+.res-stat{flex:1;min-width:0;display:flex;flex-direction:column;align-items:center;gap:3px;background:rgba(255,255,255,.06);border:1.5px solid rgba(255,255,255,.12);border-radius:16px;padding:15px 8px;box-shadow:0 4px 14px rgba(0,0,0,.2)}
+.res-stat-ic{display:inline-flex;line-height:0;margin-bottom:2px}
+.res-stat-ic svg{width:22px;height:22px}
+.res-stat-v{font-family:var(--font-head);font-weight:900;font-size:19px;color:#fff;letter-spacing:-.3px;line-height:1;font-variant-numeric:tabular-nums}
+.res-stat-l{font-size:10.5px;font-weight:800;color:rgba(255,255,255,.48);text-transform:uppercase;letter-spacing:.5px}
+/* heldere CTA-hiërarchie: primair groot, één secundair, home als tekstlink */
+.res-cta{gap:12px}
+.res-cta-primary{font-size:17.5px!important;padding:18px!important}
+.res-cta-home{background:none;border:none;color:rgba(255,255,255,.5);font-family:var(--font-head);font-weight:700;font-size:14px;padding:9px;cursor:pointer;transition:color .15s}
+.res-cta-home:hover{color:#fff}
+@media(max-width:640px){.res-stat{padding:13px 6px}.res-stat-v{font-size:17px}}

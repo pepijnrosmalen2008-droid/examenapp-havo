@@ -491,12 +491,13 @@ function dagmissiePick(){
     vonk:'Klaar om te beginnen? Kies een vak en doe je eerste quiz, dan laat ik je zien hoe je ervoor staat.'};
 }
 function dagmissieDone(){try{return localStorage.getItem(DAGMISSIE_DONE_KEY)===_dmToday();}catch(e){return false;}}
-function markDagmissieDone(){
+function markDagmissieDone(silent){
   try{
-    if(localStorage.getItem(DAGMISSIE_DONE_KEY)===_dmToday())return; // al beloond vandaag
+    if(localStorage.getItem(DAGMISSIE_DONE_KEY)===_dmToday())return null; // al beloond vandaag
     localStorage.setItem(DAGMISSIE_DONE_KEY,_dmToday());
-    dagmissieReward();
+    return dagmissieReward(silent)||null;
   }catch(e){}
+  return null;
 }
 // ── Vonk-boost: 2× XP tot middernacht ──
 function xpBoostActive(){try{const b=JSON.parse(localStorage.getItem('slagio_boost')||'{}');return b.d===_dmToday()&&Date.now()<(b.until||0);}catch(e){return false;}}
@@ -519,18 +520,21 @@ function maybeReviveStreak(){
   }catch(e){}
   return 0;
 }
-function dagmissieReward(){
+function dagmissieReward(silent){
   activateXpBoost();
   const revived=maybeReviveStreak();
   try{if(typeof renderDagmissie==='function')renderDagmissie();}catch(e){}
   try{if(typeof renderStreak==='function')renderStreak();}catch(e){}
-  try{
-    let cap='<b>Missie volbracht!</b><br>De hele dag <b>dubbele XP</b> ⚡';
-    if(revived>0)cap+='<br>Streak van <b>'+revived+' dagen</b> gered! 🔥';
+  let cap='<b>Missie volbracht!</b><br>De hele dag <b>dubbele XP</b> ⚡';
+  if(revived>0)cap+='<br>Streak van <b>'+revived+' dagen</b> gered! 🔥';
+  // In de finish-context (silent) niet meteen zelf vieren: de aanroeper speelt
+  // deze viering ná het resultaat af via de pop-up-wachtrij (geen overlap).
+  if(!silent){try{
     if(typeof vonkCelebrate==='function')setTimeout(function(){vonkCelebrate(cap);},900);
     else if(typeof vonkSay==='function')setTimeout(function(){vonkSay(cap.replace(/<br>/g,' '),{mood:'trots',side:'left',duration:0});},1300);
-  }catch(e){}
+  }catch(e){}}
   try{trackEvent('dagmissie_voltooid',{boost:1,streak_gered:revived>0});}catch(e){}
+  return cap;
 }
 function renderDagmissie(){
   const box=document.getElementById('dagmissie-home');if(!box)return;

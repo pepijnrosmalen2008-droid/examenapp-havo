@@ -920,18 +920,35 @@ function renderProfileBadges(){
     </div>`;
   }).join('');
 }
+// Prestatie-toasts spelen één voor één (nooit meer een stapel tegelijk op het
+// finish-scherm). Ze wachten netjes op elkaar via een kleine eigen wachtrij.
+var _achQ=[],_achBusy=false,_achHoldUntil=0;
 function showAch(emoji,txt,offset){
   if(_achShownSession.has(txt))return;
   _achShownSession.add(txt);
-  const top=(offset||130);
+  _achQ.push({emoji,txt});
+  _achPump();
+}
+function _achPump(){
+  if(_achBusy||!_achQ.length)return;
+  // Tijdens het rustige finish-moment de prestatie-toast even vasthouden: hij
+  // onthult zich pas nadat de score-compositie gelezen is (geen botsing). En
+  // zolang de grote beloningen (level up / divisie / kistje) via de wachtrij
+  // spelen, wachten prestatie-toasts netjes tot die reeks klaar is (hiërarchie:
+  // major eerst, dan pas de kleinere prestatie-melding).
+  const _now=Date.now();
+  const _pqBusy=(typeof PQ==='object'&&PQ)&&(PQ.busy||(PQ.q&&PQ.q.length));
+  if(_now<_achHoldUntil||_pqBusy){setTimeout(_achPump,Math.max(400,_achHoldUntil-_now+30));return;}
+  _achBusy=true;
+  const{emoji,txt}=_achQ.shift();
   const el=document.createElement('div');
   el.className='achievement-toast';
-  el.style.top=top+'px';
+  el.style.top='130px';
   el.innerHTML=`<span class="ach-emoji">${emoji}</span><div class="ach-body"><div class="ach-label">Prestatie behaald!</div><div class="ach-text">${txt}</div></div>`;
   document.body.appendChild(el);
-  haptic([35,15,60,15,90]);
-  playSound('badge');
-  setTimeout(()=>{el.classList.add('ach-out');setTimeout(()=>el.remove(),450);},3200);
+  try{haptic([35,15,60,15,90]);}catch(e){}
+  try{playSound('badge');}catch(e){}
+  setTimeout(()=>{el.classList.add('ach-out');setTimeout(()=>{el.remove();_achBusy=false;setTimeout(_achPump,220);},450);},2600);
 }
 function checkComboAch(combo){
   if(combo===3&&earnAch('combo3'))showAch('💥','3 vragen op rij!');
@@ -1273,6 +1290,11 @@ function _showQuitDialog(){
 function toonRes(){
   clearInterval(ST.timer);
   clearQuizDraft();
+  // Finish = één rustige compositie: ruim lingerende quiz-toasts op (bv. de
+  // "Lucky vraag"-toast) en houd nieuwe prestatie-toasts kort vast zodat de
+  // score-compositie eerst gelezen wordt vóór de reveal.
+  try{document.querySelectorAll('.app-toast,.speed-badge,.xp-toast,#vonk-react,.vonk-react').forEach(e=>e.remove());}catch(e){}
+  _achHoldUntil=Date.now()+2500;
   setHotStreak(0);
   _wrongStreak=0;_luckyActive=false;
   _surgeActive=false;_surgeLeft=0;_removeSurgeBadge();
@@ -1312,8 +1334,7 @@ function toonRes(){
     else if(pct>=0.7){emi='🎉';tit='Goed gedaan!';sub='Je snapt het meeste - kleine herhaling loont.';}
     else if(pct>=0.5){emi='📖';tit='Aardig begin';sub='De basis zit erin. Oefen dit domein nog eens.';}
     else{emi='💪';tit='Blijven oefenen!';sub='Dit domein verdient meer aandacht.';}
-    if(isPerfect)setTimeout(()=>launchConfetti('gold'),400);
-    else if(pct>=0.9)setTimeout(()=>launchConfetti(),600);
+    if(isPerfect)setTimeout(()=>launchConfetti('gold'),400);  // confetti alleen bij een perfecte score (major)
     document.getElementById('remi').textContent=emi;
     document.getElementById('rtit').textContent=tit;
     document.getElementById('rsub').textContent=sub;
@@ -1323,14 +1344,15 @@ function toonRes(){
     setTimeout(()=>{const c=document.getElementById('scirc');if(c){c.style.strokeDashoffset=circ*(1-pct);c.style.transition='stroke-dashoffset 1s ease';}},200);
     let bdHtml='';
     if(ST.mode==='snel'){
-      const goed=ST.antwrd.filter(a=>a.pts===1).length;
-      const fout=ST.antwrd.filter(a=>a.pts===0).length;
+      // Eén rustige compositie: drie beloningspills (wat je zojuist verdiende).
       const lbScoreDisplay=ST.antwrd.reduce((sum,a)=>sum+a.pts*50+Math.round((a.tijdOver||0)/20*50),0);
-      const maxLbScore=tot*100;
-      bdHtml=`<div class="rbr"><span>✓ Correct</span><span class="rbc">${goed} / ${tot}</span></div>
-        <div class="rbr"><span>✗ Fout of tijd op</span><span class="rbw">${fout}</span></div>
-        <div class="rbr"><span>Nauwkeurigheid</span><span style="font-weight:600;color:var(--or)">${Math.round(pct*100)}%</span></div>
-        <div class="rbr res-lb-row"><span>🏆 Leaderboardscore</span><span class="res-lb-val">${lbScoreDisplay} <span class="res-lb-max">/ ${maxLbScore}</span></span></div>`;
+      const _si=(n,fb)=>{try{return (typeof _ico==='function')?_ico(n,20):fb;}catch(e){return fb;}};
+      const _trophy='<svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="#fbbf24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 21h8M12 17v4M7 4h10v5a5 5 0 0 1-10 0z"/><path d="M7 6H4v1a3 3 0 0 0 3 3M17 6h3v1a3 3 0 0 1-3 3"/></svg>';
+      bdHtml=`<div class="res-stats">
+        <div class="res-stat"><span class="res-stat-ic">${_si('bolt','⚡')}</span><span class="res-stat-v" id="res-stat-xp">+0</span><span class="res-stat-l">XP</span></div>
+        <div class="res-stat"><span class="res-stat-ic">${_si('coin','🪙')}</span><span class="res-stat-v">+${Math.max(0,window._coinsWon||0)}</span><span class="res-stat-l">munten</span></div>
+        <div class="res-stat"><span class="res-stat-ic">${_trophy}</span><span class="res-stat-v">${lbScoreDisplay}</span><span class="res-stat-l">leaderboard</span></div>
+      </div>`;
     } else {
       const goed=ST.antwrd.filter(a=>a.pts===1).length;
       const deels=ST.antwrd.filter(a=>a.pts===0.5).length;
@@ -1342,21 +1364,7 @@ function toonRes(){
     }
     const rbdEl=document.getElementById('rbd');
     if(rbdEl)rbdEl.innerHTML=bdHtml;
-    // Share card - laat zien bij ≥50%, competitief frame
-    if(rbdEl&&pct>=0.5){
-      const shareCard=document.createElement('div');
-      shareCard.id='share-score-card';
-      const pctNum=Math.round(pct*100);
-      const emoji=pct>=1?'🌟':pct>=0.9?'🔥':pct>=0.8?'🎯':pct>=0.7?'✅':'💪';
-      const msg=pct>=1?'Perfecte score!':pct>=0.9?'Bijna perfect!':pct>=0.8?'Super gedaan!':pct>=0.7?'Goed bezig!':'Kun jij het beter?';
-      const cta=pct>=0.8?'Stuur dit naar je klas 👇':'Daag je klas uit 👇';
-      shareCard.innerHTML=`<div style="display:flex;align-items:center;gap:10px;background:linear-gradient(135deg,rgba(var(--or-rgb),.13),rgba(var(--or-rgb),.05));border:1px solid rgba(var(--or-rgb),.3);border-radius:14px;padding:9px 11px;margin:12px 0 4px">
-        <span style="font-size:22px;line-height:1;flex-shrink:0">${emoji}</span>
-        <div style="flex:1;min-width:0;text-align:left"><div style="font-size:13px;font-weight:800;color:var(--or);line-height:1.2">${pctNum}% · ${msg}</div></div>
-        <button onclick="deelScore()" style="background:var(--or);color:#fff;border:none;border-radius:10px;padding:9px 14px;font-size:13px;font-weight:700;cursor:pointer;font-family:var(--font);white-space:nowrap;display:flex;align-items:center;gap:6px;flex-shrink:0"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"/><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"/></svg>Delen</button>
-      </div>`;
-      rbdEl.insertAdjacentElement('afterend',shareCard);
-    }
+    // (Share-kaart weg uit de gelijktijdige laag - hoort niet in het finish-moment.)
     // (Persoonlijk-record-banner verwijderd op verzoek - minder tegels op het resultaatscherm.)
     // (Tweede PB-banner + losse "smart next action" + "volgend domein"-knop
     //  verwijderd: die dubbelden met de record-banner hierboven en met de
@@ -1376,7 +1384,8 @@ function toonRes(){
         if(typeof xpBoostDayActive==='function'&&xpBoostDayActive()){ST.xpThisRound*=2;_boosted=true;}
         else if(typeof consumeXpBoost==='function'&&consumeXpBoost()){ST.xpThisRound*=2;_boosted=true;}
       }catch(e){}
-      if(_boosted){try{showToast('⚡ Dubbele XP toegepast!','#8b5cf6');}catch(e){}}
+      // (Losse "Dubbele XP toegepast"-toast weg uit het finish-moment: de
+      //  verdubbelde waarde is al zichtbaar in de opgetelde XP-pill.)
       const res=addXP(ST.xpThisRound);
       try{
         if(typeof v4AvatarReact==='function'){
@@ -1384,58 +1393,15 @@ function toonRes(){
           else if(isPerfect)setTimeout(()=>v4AvatarReact('celebrate'),700);
         }
       }catch(e){}
-      const xpPct=getXPPct(res.totalXP);
+      // Compacte compositie: vul de XP-pill i.p.v. een grote avatar/journey-kaart.
+      // Level-up, evolutie en divisie-stijging spelen NA het resultaat via de
+      // wachtrij (major rewards), dus niet tegelijk in dezelfde laag.
       const lvlName=LEVEL_NAMES[res.newLvl]||'Level '+res.newLvl;
-      const curXP=getXPForLevel(res.newLvl);
-      const nxtXP=getXPForLevel(res.newLvl+1)||curXP+1000;
-      const card=document.createElement('div');
-      card.id='res-xp-card';card.className='res-xp';
-      // Build avatar section
-      const _rp=JSON.parse(localStorage.getItem(PROF_KEY)||'{}');
-      const _ra=_rp.animalId?getAnimalById(_rp.animalId):null;
-      const _rsi=getAnimalStageIdx(res.totalXP);
-      const _rsn=_ra&&_ra.lbl?_ra.lbl[_rsi]:ANIM_STAGE_NAMES[_rsi];
-      const _rav=_ra?getAnimalDisplay(_ra.id,_rsi,52):`<span style="font-size:38px">⭐</span>`;
-      // Mini journey (5 dots + connecting lines)
-      let _rj='';
-      for(let _ri=0;_ri<5;_ri++){
-        const _rdone=_ri<_rsi,_rcur=_ri===_rsi;
-        const _rdot=_ra&&(_rdone||_rcur)?getAnimalDisplay(_ra.id,_ri,_rcur?24:18):(_rdone||_rcur?`<span style="font-size:${_rcur?24:18}px">${_ra?(_ra.s[_ri]||'⭐'):'⭐'}</span>`:`<span style="font-size:15px;opacity:.22;filter:grayscale(1)">❓</span>`);
-        _rj+=`<div class="res-xp-jdot">${_rdot}</div>`;
-        if(_ri<4)_rj+=`<div class="res-xp-jline${_rdone?' done':''}"></div>`;
-      }
-      card.innerHTML=`
-        <div class="res-xp-avatar-wrap">
-          <div class="res-xp-avatar-ring">${_rav}</div>
-          <div class="res-xp-avatar-lbl">${_ra?_ra.n:'Avatar'} · ${_rsn}</div>
-        </div>
-        <div class="res-xp-num">+${res.added} XP</div>
-        <div class="res-xp-sub">${ST.isDailyChallenge?'⚡ Dagelijkse uitdaging bonus':''}&nbsp;</div>
-        <div class="res-xp-lvl">Level ${res.newLvl} - ${lvlName} · ${res.totalXP-curXP} / ${nxtXP-curXP} XP</div>
-        <div class="xp-bar-wrap"><div class="xp-bar" style="width:${xpPct}%"></div></div>
-        <div class="res-xp-journey-mini">${_rj}</div>
-        ${res.leveled?`<div class="levelup-banner">🎉 Level up! Je bent nu level ${res.newLvl} - ${lvlName}!</div>`:''}
-        ${isPerfect?`<div class="perfect-banner">🌟 Perfecte score! +50% XP bonus verdiend!</div>`:''}`;
-      const rbdEl2=document.getElementById('rbd');
-      if(rbdEl2)rbdEl2.insertAdjacentElement('afterend',card);
-      // Divisie-widget: hoe ben je gestegen na deze quiz? (weekXP is al bijgewerkt in addXP;
-      // _lgLastDelta is de werkelijk toegevoegde week-XP - dubbel tijdens een rush-venster.)
+      try{const xpv=document.getElementById('res-stat-xp');if(xpv){let _s=0;const _t=res.added;const _iv=setInterval(()=>{_s+=Math.max(1,Math.ceil(_t/16));if(_s>=_t){_s=_t;clearInterval(_iv);}xpv.textContent='+'+_s;},40);}}catch(e){}
       const _lgDelta=(typeof _lgLastDelta!=='undefined'&&_lgLastDelta)||res.added;
-      try{if(typeof renderResultLeague==='function'&&!ST.isFoutenboek)renderResultLeague(_lgDelta);}catch(e){}
       try{if(typeof leagueRankInfo==='function'&&!ST.isFoutenboek)_RC.rankInfo=leagueRankInfo(_lgDelta);}catch(e){}
       if(res.leveled)_RC.level={lvl:res.newLvl,name:lvlName,xp:res.added};
       setTimeout(()=>floatXP(res.added),150);
-      // Level teaser - als dichtbij volgend level
-      try{
-        const xpToNext=nxtXP-res.totalXP;
-        if(!res.leveled&&xpToNext<150){
-          const tPct=Math.round((res.totalXP-curXP)/(nxtXP-curXP)*100);
-          const tsr=document.createElement('div');tsr.className='lvl-teaser';
-          tsr.innerHTML=`<div style="font-size:22px">⭐</div><div class="lvl-teaser-bar"><div class="lvl-teaser-lbl">Nog <strong>${xpToNext} XP</strong> voor level ${res.newLvl+1} - ${LEVEL_NAMES[res.newLvl+1]||'Level '+(res.newLvl+1)}</div><div class="lvl-teaser-fill"><div class="lvl-teaser-fill-inner" style="width:0%" data-target="${tPct}"></div></div></div>`;
-          card.appendChild(tsr);
-          setTimeout(()=>{const fill=tsr.querySelector('.lvl-teaser-fill-inner');if(fill)fill.style.width=fill.dataset.target+'%';},200);
-        }
-      }catch(e){}
       syncAvatarToProfile();
       updateProfileNav();
       if(res.evolved){
@@ -1469,21 +1435,18 @@ function toonRes(){
       const entry={naam,avatar,animalId,stageIdx,featuredBadgeId,badgeIds,vak:ST.vak.id,vakNaam:ST.vak.naam,domeinId:ST.domein.id,domeinNaam:ST.domein.naam,score:lbScore,goed,tot,avgTijd,date:new Date().toISOString().slice(0,10)};
       saveLeaderboardEntry(entry);
       if(lbBtn)lbBtn.style.display='block';
-      if(_regPrompt)_regPrompt.style.display=currentUser?'none':'block';
+      if(_regPrompt)_regPrompt.style.display='none';  // inline weg; account-prompt komt via de wachtrij
     } else {
       if(lbBtn)lbBtn.style.display='none';
       if(_regPrompt)_regPrompt.style.display='none';
     }
   }catch(e){console.warn('toonRes LB error:',e);}
   // Dagmissie voltooid: elke afgeronde snelle quiz telt als dagmissie van vandaag.
-  try{if(ST.mode==='snel'&&typeof markDagmissieDone==='function')markDagmissieDone();}catch(e){}
-  // Examencoach: cijfer-indicatie + risico/winst na de sessie (elk vak met genoeg data)
-  try{
-    if(typeof renderExamCoach==='function'){
-      if(ST.vak&&(ST.mode==='snel'||ST.mode==='oud'))renderExamCoach(ST.vak.id);
-      else{const _rc=document.getElementById('res-coach');if(_rc)_rc.innerHTML='';}
-    }
-  }catch(e){}
+  // Stil afhandelen: de viering speelt ná het resultaat via de wachtrij (geen overlap).
+  try{if(ST.mode==='snel'&&typeof markDagmissieDone==='function'){const _dm=markDagmissieDone(true);if(_dm)_RC.dagmissie=_dm;}}catch(e){}
+  // Examencoach hoort NIET in het finish-moment (concurreert met de kern).
+  // Weggehaald uit de gelijktijdige laag; leeg laten.
+  try{const _rc=document.getElementById('res-coach');if(_rc)_rc.innerHTML='';}catch(e){}
   // B2: account prompt bottom sheet (first win, anonymous only) - via de wachtrij
   try{
     if(!currentUser && ST.mode==='snel' && !ST.isFoutenboek && pct>=0.5 && !localStorage.getItem('slagio_reg_prompted')){
@@ -1497,6 +1460,11 @@ function toonRes(){
   try{renderAdaptiveResults();}catch(e){}
   try{renderChallengeResult();}catch(e){}
   show('sc-res');
+  // Nogmaals opruimen ná de schermwissel: badges/toasts die de laatste vraag nog
+  // net aanmaakte (speed-badge, xp-toast, vonk-react) mogen niet in het rustige
+  // finish-moment blijven hangen. Een korte na-veeg vangt laat-gemaakte elementen.
+  const _sweepFinish=()=>{try{document.querySelectorAll('.app-toast,.speed-badge,.xp-toast,#vonk-react,.vonk-react,.combo-badge').forEach(e=>e.remove());}catch(e){}};
+  _sweepFinish();setTimeout(_sweepFinish,260);setTimeout(_sweepFinish,650);
   try{playSound('complete');}catch(e){}
   if(ST.mode==='snel'&&!ST.isFoutenboek)_RC.feedback=true;
   // Alle viermomenten één-voor-één afspelen (geen overlappende pop-ups meer).
@@ -1516,6 +1484,7 @@ function _runResultChain(rc){
       if(rc.evo)pqAdd(fin=>pqButton(fin,()=>showEvoReveal(rc.evo.newStage,rc.evo.animalId)));
       if(rc.rankInfo&&rc.rankInfo.climbed>0)pqAdd(fin=>showLeagueRankUp(rc.rankInfo,fin));
       if(rc.chest)pqAdd(fin=>showChest(fin,rc.chest));
+      if(rc.dagmissie)pqAdd(fin=>pqAuto(fin,3100,()=>{try{if(typeof vonkCelebrate==='function')vonkCelebrate(rc.dagmissie);}catch(e){}}));
       if(rc.reg!=null)pqAdd(fin=>pqButton(fin,()=>_showRegPrompt(rc.reg)));
       if(rc.feedback)pqAdd(fin=>pqAuto(fin,600,()=>{try{showFeedbackPopup('snel');}catch(e){}}));
     }catch(e){}
