@@ -6860,6 +6860,8 @@ html.dark .dom-hero-card{background:linear-gradient(180deg,rgba(255,255,255,.045
 #sc-res.on .rbd{animation:resItemIn .5s cubic-bezier(.22,1,.36,1) .42s backwards}
 @media(prefers-reduced-motion:reduce){#sc-res.on .remi,#sc-res.on #rtit,#sc-res.on #rsub,#sc-res.on .sring,#sc-res.on .rbd{animation:none}}
 
+/* Lottie-Vonk: laat bewegingen buiten het krappe kader tóch zien (niet afsnijden). */
+.vonk-lottie,.vonk-lottie svg{overflow:visible!important}
 /* ══ Staande Vonk in de resultaat-kop (i.p.v. losse emoji) ══ */
 .remi.remi-vonk{font-size:0;line-height:0;margin-bottom:12px;display:flex;justify-content:center}
 .remi.remi-vonk svg{width:122px;height:122px;filter:drop-shadow(0 10px 20px rgba(0,0,0,.22))}
