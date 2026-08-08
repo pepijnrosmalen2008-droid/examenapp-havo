@@ -1342,7 +1342,11 @@ function toonRes(){
     // Staande Vonk in de resultaat-kop (i.p.v. een losse emoji).
     const _remi=document.getElementById('remi');
     if(_remi){_remi.classList.add('remi-vonk');_remi.innerHTML=(typeof mascotSVG==='function')?mascotSVG(_vMood,128):'🦊';}
-    document.getElementById('rtit').textContent=tit;
+    const _rtitEl=document.getElementById('rtit');
+    if(_rtitEl){_rtitEl.textContent=tit;
+      // Duolingo-stijl: een bold, gekleurde titel (kleur = betekenis per tier).
+      const _titCol=isPerfect?'#ffc800':(pct>=0.9?'#ffb020':(pct>=0.7?'#58cc02':(pct>=0.5?'#1cb0f6':'#ff9600')));
+      _rtitEl.style.color=_titCol;}
     document.getElementById('rsub').textContent=sub;
     // Score-ring leeg zetten zodat de onthulling ná de intro vers oploopt.
     const _rnEl=document.getElementById('rnum');if(_rnEl)_rnEl.textContent='0';
@@ -1356,17 +1360,23 @@ function toonRes(){
       try{const c=document.getElementById('scirc');if(c){c.style.transition='stroke-dashoffset 1s ease';c.style.strokeDashoffset=circ*(1-pct);}}catch(e){}
       if(isPerfect)try{launchConfetti('gold');}catch(e){}
       try{const _cw=window._coinFlyN||0;if(_cw>0){if(typeof coinFlyToBar==='function')coinFlyToBar(_cw,document.getElementById('res-coinbtn'));else if(typeof floatCoins==='function')floatCoins(_cw);}}catch(e){}
+      // Beloningspills één-voor-één laten poppen (Duolingo-stagger) bij de onthulling.
+      try{const _rs=document.querySelector('.res-stats');if(_rs){_rs.classList.remove('rs-reveal');void _rs.offsetWidth;_rs.classList.add('rs-reveal');}}catch(e){}
     };
     let bdHtml='';
     if(ST.mode==='snel'){
       // Eén rustige compositie: drie beloningspills (wat je zojuist verdiende).
       const lbScoreDisplay=ST.antwrd.reduce((sum,a)=>sum+a.pts*50+Math.round((a.tijdOver||0)/20*50),0);
       const _si=(n,fb)=>{try{return (typeof _ico==='function')?_ico(n,20):fb;}catch(e){return fb;}};
-      const _trophy='<svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="#fbbf24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 21h8M12 17v4M7 4h10v5a5 5 0 0 1-10 0z"/><path d="M7 6H4v1a3 3 0 0 0 3 3M17 6h3v1a3 3 0 0 1-3 3"/></svg>';
+      const _trophy='<svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 21h8M12 17v4M7 4h10v5a5 5 0 0 1-10 0z"/><path d="M7 6H4v1a3 3 0 0 0 3 3M17 6h3v1a3 3 0 0 1-3 3"/></svg>';
+      const _bolt='<svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" stroke="none"><path d="M13 2 4 14h6l-1 8 9-12h-6z"/></svg>';
+      const _coin='<svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" stroke="none"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="6.4" fill="rgba(0,0,0,.18)"/><path d="M12 8.2v7.6M9.6 9.6a2.4 2.4 0 0 1 4.8 0M9.6 14.4a2.4 2.4 0 0 0 4.8 0" stroke="rgba(0,0,0,.28)" stroke-width="1.3" fill="none" stroke-linecap="round"/></svg>';
+      // Duolingo-stijl beloningspills: dikke gekleurde rand, label bovenaan in de
+      // themakleur, icoon + groot getal eronder. Elke pill een eigen betekeniskleur.
       bdHtml=`<div class="res-stats">
-        <div class="res-stat"><span class="res-stat-ic">${_si('bolt','⚡')}</span><span class="res-stat-v" id="res-stat-xp">+0</span><span class="res-stat-l">XP</span></div>
-        <div class="res-stat"><span class="res-stat-ic">${_si('coin','🪙')}</span><span class="res-stat-v">+${Math.max(0,window._coinsWon||0)}</span><span class="res-stat-l">munten</span></div>
-        <div class="res-stat"><span class="res-stat-ic">${_trophy}</span><span class="res-stat-v">${lbScoreDisplay}</span><span class="res-stat-l">leaderboard</span></div>
+        <div class="res-stat rs-xp"><span class="res-stat-l">XP</span><span class="res-stat-row"><span class="res-stat-ic">${_bolt}</span><span class="res-stat-v" id="res-stat-xp">+0</span></span></div>
+        <div class="res-stat rs-coin"><span class="res-stat-l">Munten</span><span class="res-stat-row"><span class="res-stat-ic">${_coin}</span><span class="res-stat-v">+${Math.max(0,window._coinsWon||0)}</span></span></div>
+        <div class="res-stat rs-lb"><span class="res-stat-l">Score</span><span class="res-stat-row"><span class="res-stat-ic">${_trophy}</span><span class="res-stat-v">${lbScoreDisplay}</span></span></div>
       </div>`;
     } else {
       const goed=ST.antwrd.filter(a=>a.pts===1).length;

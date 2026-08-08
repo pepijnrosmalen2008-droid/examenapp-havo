@@ -7423,14 +7423,40 @@ html.dark .dom-hero-card{background:linear-gradient(180deg,rgba(255,255,255,.045
 /* ══ Finish hercompositie: één rustig moment (3 beloningspills + heldere CTA) ══ */
 .rbd:has(.res-stats){background:none;box-shadow:none;padding:0;margin-bottom:22px}
 .res-stats{display:flex;gap:10px;justify-content:center}
-.res-stat{flex:1;min-width:0;display:flex;flex-direction:column;align-items:center;gap:3px;background:rgba(255,255,255,.06);border:1.5px solid rgba(255,255,255,.12);border-radius:16px;padding:15px 8px;box-shadow:0 4px 14px rgba(0,0,0,.2)}
-.res-stat-ic{display:inline-flex;line-height:0;margin-bottom:2px}
-.res-stat-ic svg{width:22px;height:22px}
-.res-stat-v{font-family:var(--font-head);font-weight:900;font-size:19px;color:#fff;letter-spacing:-.3px;line-height:1;font-variant-numeric:tabular-nums}
-.res-stat-l{font-size:10.5px;font-weight:800;color:rgba(255,255,255,.48);text-transform:uppercase;letter-spacing:.5px}
+/* Duolingo-stijl beloningspill: dikke gekleurde rand, label bovenaan in de
+   themakleur, icoon + groot getal eronder. Lichte binnen-gloss voor diepte. */
+.res-stat{flex:1;min-width:0;display:flex;flex-direction:column;align-items:center;gap:6px;
+  background:linear-gradient(180deg,color-mix(in srgb,var(--rs-c) 12%,#101825),color-mix(in srgb,var(--rs-c) 4%,#0b111c));
+  border:2.5px solid var(--rs-c);border-radius:16px;padding:9px 6px 11px;
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.12),0 4px 14px rgba(0,0,0,.28)}
+/* Beloningspills onthullen zich één-voor-één (Duolingo-stagger), na het gordijn. */
+.res-stats.rs-reveal .res-stat{animation:rsPop .5s cubic-bezier(.34,1.56,.64,1) backwards}
+.res-stats.rs-reveal .res-stat:nth-child(1){animation-delay:.04s}
+.res-stats.rs-reveal .res-stat:nth-child(2){animation-delay:.17s}
+.res-stats.rs-reveal .res-stat:nth-child(3){animation-delay:.30s}
+@keyframes rsPop{0%{opacity:0;transform:translateY(11px) scale(.84)}60%{opacity:1;transform:translateY(0) scale(1.06)}100%{transform:scale(1)}}
+@media(prefers-reduced-motion:reduce){.res-stats.rs-reveal .res-stat{animation:none}}
+.res-stat-l{font-size:10.5px;font-weight:900;color:var(--rs-c);text-transform:uppercase;letter-spacing:.7px;line-height:1}
+.res-stat-row{display:flex;align-items:center;gap:6px}
+.res-stat-ic{display:inline-flex;line-height:0;color:var(--rs-c)}
+.res-stat-ic svg{width:21px;height:21px}
+.res-stat-v{font-family:var(--font-head);font-weight:900;font-size:21px;color:#fff;letter-spacing:-.3px;line-height:1;font-variant-numeric:tabular-nums}
+.res-stat.rs-xp{--rs-c:#ffc800}
+.res-stat.rs-coin{--rs-c:#f59e0b}
+.res-stat.rs-lb{--rs-c:#34c759}
 /* heldere CTA-hiërarchie: primair groot, één secundair, home als tekstlink */
 .res-cta{gap:12px}
-.res-cta-primary{font-size:17.5px!important;padding:18px!important}
+/* Duolingo-stijl primaire knop: platte kleur met een harde onderrand (3D-druk),
+   dikke bold tekst. Bij indrukken zakt de knop op de rand. */
+.res-cta-primary{font-size:18px!important;padding:16px!important;border-radius:16px!important;
+  background:#fb8c3e!important;border:none!important;text-transform:none;letter-spacing:.2px;
+  box-shadow:0 5px 0 #b45a12,0 9px 18px rgba(232,92,13,.34)!important;transition:transform .08s ease,box-shadow .12s ease!important}
+.res-cta-primary:hover{transform:translateY(-1px)!important;box-shadow:0 6px 0 #b45a12,0 12px 22px rgba(232,92,13,.42)!important}
+.res-cta-primary:active{transform:translateY(4px)!important;box-shadow:0 1px 0 #b45a12,0 3px 8px rgba(232,92,13,.3)!important}
+.res-cta-secondary{border-radius:16px!important;border:2.5px solid rgba(255,255,255,.16)!important;background:rgba(255,255,255,.03)!important;box-shadow:0 4px 0 rgba(0,0,0,.28)!important}
+.res-cta-secondary:active{transform:translateY(3px)!important;box-shadow:0 1px 0 rgba(0,0,0,.28)!important}
 .res-cta-home{background:none;border:none;color:rgba(255,255,255,.5);font-family:var(--font-head);font-weight:700;font-size:14px;padding:9px;cursor:pointer;transition:color .15s}
 .res-cta-home:hover{color:#fff}
-@media(max-width:640px){.res-stat{padding:13px 6px}.res-stat-v{font-size:17px}}
+/* Titel steviger (Duolingo-stijl chunky heading). */
+#rtit{font-weight:900;letter-spacing:-.5px}
+@media(max-width:640px){.res-stat{padding:8px 5px 10px}.res-stat-v{font-size:19px}.res-stat-l{font-size:9.5px}}
