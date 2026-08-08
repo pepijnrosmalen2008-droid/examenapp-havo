@@ -1512,16 +1512,28 @@ function _vonkFinishIntro(mood,tier,onReveal,onDone){
   ov.id='vonk-finish-intro';
   ov.className='vonk-fin-intro tier-'+(tier||'good');
   ov.setAttribute('aria-hidden','true');
-  ov.innerHTML=`<div class="vfi-panel"></div><div class="vfi-vonk">${mascotSVG(mood||'feest',168)}</div>`;
+  // Sterretjes die radiaal uit Vonk spatten (Duolingo-stijl feest-burst).
+  let sparks='';
+  const N=12;
+  for(let i=0;i<N;i++){
+    const ang=Math.round((i/N)*360+(Math.random()*22-11));
+    const dist=Math.round(118+Math.random()*78);
+    const dl=(0.34+Math.random()*0.16).toFixed(2);
+    const sz=Math.round(9+Math.random()*9);
+    sparks+=`<i class="vfi-spark" style="--a:${ang}deg;--d:${dist}px;--dl:${dl}s;--sz:${sz}px"></i>`;
+  }
+  ov.innerHTML=`<div class="vfi-panel"></div><div class="vfi-rays"></div><div class="vfi-glow"></div><div class="vfi-ring"></div><div class="vfi-vonk">${mascotSVG(mood||'feest',180)}</div><div class="vfi-sparks">${sparks}</div>`;
   document.body.appendChild(ov);
-  try{if(typeof haptic==='function')haptic([18,30,12,26,60]);}catch(e){}
+  try{if(typeof haptic==='function')haptic([14,26,10,22,50]);}catch(e){}
   try{if(typeof vonkPlay==='function')vonkPlay(ov.querySelector('.vfi-vonk'),mood==='feest'?'happy':'nod');}catch(e){}
   // Fasen sturen we via klassen zodat de CSS-keyframes het werk doen.
   requestAnimationFrame(()=>ov.classList.add('vfi-in'));
+  // Extra "landings"-tik + geluid op het moment dat Vonk neerkomt (~430ms).
+  setTimeout(()=>{try{if(typeof haptic==='function')haptic([10,20,44]);}catch(e){}try{if(typeof playSound==='function')playSound('pop');}catch(e){}},430);
   let _revealed=false;const _reveal=()=>{if(_revealed)return;_revealed=true;try{onReveal&&onReveal();}catch(e){}};
-  // Gordijn onthult de score halverwege (~820ms), daarna veegt Vonk omhoog weg.
-  setTimeout(()=>{ov.classList.add('vfi-reveal');_reveal();},820);
-  setTimeout(()=>{ try{ov.remove();}catch(e){} try{onDone&&onDone();}catch(e){} },1300);
+  // Gordijn onthult de score (~950ms), daarna veegt Vonk omhoog weg.
+  setTimeout(()=>{ov.classList.add('vfi-reveal');_reveal();},950);
+  setTimeout(()=>{ try{ov.remove();}catch(e){} try{onDone&&onDone();}catch(e){} },1480);
 }
 
 // De finish-viermomenten netjes achter elkaar via de pop-up-wachtrij.
