@@ -19,8 +19,13 @@
 
   function runtimeReady() { return typeof window.lottie !== 'undefined'; }
 
-  // Segmentgrenzen (uit build-vonk-lottie.js): idle 0–90, celebrate 90–150.
-  var SEG = { idle: [0, 90], celebrate: [90, 150] };
+  // Segmentgrenzen komen uit de Lottie-JSON (_segments); dit is de fallback.
+  var DEFAULT_SEG = { idle: [0, 90], celebrate: [90, 150], levelup: [150, 240] };
+  // Easter eggs: soms tijdens idle iets doms/grappigs. (In-beeld-passende set;
+  // 'fall' zit wel in de Lottie maar valt buiten het krappe kader, dus alleen
+  // voor toekomstige ruime idle-plekken — niet in de standaardpool.)
+  var EGGS = ['dizzy', 'yawn', 'trip', 'dance'];
+  var EGG_MIN = 7000, EGG_MAX = 18000; // ms tussen grappen
 
   // De animatie-JSON één keer laden en hergebruiken (SW cachet 'm sowieso).
   function loadJSON(cb) {
@@ -53,6 +58,7 @@
       if (!json || !el.isConnected) return;
       el.innerHTML = '';
       el.style.width = size + 'px'; el.style.height = size + 'px';
+      el._vlSeg = json._segments || DEFAULT_SEG;
       var anim = window.lottie.loadAnimation({
         container: el, renderer: 'svg', loop: true, autoplay: true,
         animationData: JSON.parse(JSON.stringify(json)),
@@ -63,17 +69,45 @@
     });
   }
 
+  // Speel één segment af (loop of eenmalig met terugkeer naar idle). gen = token
+  // zodat een oude 'complete' een nieuwere state niet overschrijft.
+  function playSeg(el, name, thenIdle, gen) {
+    var a = el._vlAnim, seg = el._vlSeg || DEFAULT_SEG, range = seg[name];
+    if (!a || !range) return;
+    if (thenIdle) {
+      a.loop = false;
+      a.playSegments(range, true);
+      var back = function () {
+        a.removeEventListener('complete', back);
+        if (gen !== el._vlGen) return;                         // verouderd → negeren
+        a.loop = true; a.playSegments(seg.idle, true); scheduleEgg(el);
+      };
+      a.addEventListener('complete', back);
+    } else { a.loop = true; a.playSegments(range, true); }
+  }
+
+  // Af en toe (tijdens idle) een willekeurige grap.
+  function scheduleEgg(el) {
+    if (_reduce) return;
+    clearTimeout(el._vlEggT);
+    var gen = el._vlGen;
+    el._vlEggT = setTimeout(function () {
+      if (gen !== el._vlGen || !el.isConnected || !el._vlAnim) return;
+      if (document.hidden) { scheduleEgg(el); return; }        // niet grappen op verborgen tab
+      var seg = el._vlSeg || DEFAULT_SEG;
+      var pool = EGGS.filter(function (n) { return seg[n]; });
+      if (!pool.length) return;
+      playSeg(el, pool[(Math.random() * pool.length) | 0], true, gen);
+    }, EGG_MIN + Math.random() * (EGG_MAX - EGG_MIN));
+  }
+
   // State toepassen op een (ge-upgrade) holder.
   function setState(el, state) {
-    var a = el && el._vlAnim; if (!a) return;
-    if (state === 'celebrate') {
-      a.loop = false;
-      a.playSegments(SEG.celebrate, true);
-      var back = function () { a.removeEventListener('complete', back); a.loop = true; a.playSegments(SEG.idle, true); };
-      a.addEventListener('complete', back);
-    } else {
-      a.loop = true; a.playSegments(SEG.idle, true);
-    }
+    if (!el || !el._vlAnim) return;
+    clearTimeout(el._vlEggT);
+    var gen = (el._vlGen = (el._vlGen || 0) + 1);
+    if (state === 'idle') { playSeg(el, 'idle', false); scheduleEgg(el); }
+    else { playSeg(el, state, true, gen); }                    // moment speelt 1×, daarna idle
   }
 
   // Publieke API: state wisselen op een holder (element of dat een holder bevat).
@@ -93,7 +127,7 @@
   window.upgradeVonkLotties = upgradeAll;
 
   // Opruimen: als een holder uit de DOM verdwijnt, de Lottie-instantie stoppen.
-  function cleanup(el) { if (el && el._vlAnim) { try { el._vlAnim.destroy(); } catch (e) {} el._vlAnim = null; } }
+  function cleanup(el) { if (el) { clearTimeout(el._vlEggT); if (el._vlAnim) { try { el._vlAnim.destroy(); } catch (e) {} el._vlAnim = null; } } }
 
   // Automatisch upgraden + opruimen via observer (dekt alle 31 Vonk-plekken zonder
   // ze los aan te passen: je vervangt mascotSVG(...) door vonkHolder(...) waar gewenst).

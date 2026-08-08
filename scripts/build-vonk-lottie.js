@@ -225,78 +225,130 @@ function layerOf(nm, leavesBackToFront, ks, opts = {}) {
 const P = (a) => a; // positie-array [x,y]
 
 
-// ═══════ SAMENSTELLEN (één laag per bewegend onderdeel) ═══════
-// Tijdlijn (fr=30): idle 0–90 (loop), celebrate 90–150.
-const kP = { a: 1 }, kS = { a: 1 }, kR = { a: 1 };
 function anim(kfs) { return { a: 1, k: kfs }; }
+
+// ═══════ CLIP-SYSTEEM ═══════
+// Elke animatie is een "clip" met per-eigenschap sporen op LOKALE tijd. Clips
+// worden achter elkaar op één tijdlijn geplakt; niet-gebruikte eigenschappen
+// houden hun rust-pose per clip. Elke clip begint én eindigt op rust, zodat de
+// wrapper naadloos naar 'idle' kan terugvallen. Eigenschappen:
+//   cP=ctrl positie [x,y], cS=ctrl schaal [x,y,100], cR=ctrl rotatie,
+//   hR=kop rotatie, aR=zwaai-arm rotatie, tR=staart rotatie,
+//   eS=ogen schaal (knipper), sS=schaduw schaal.
+const REST = { cP: [60, 110], cS: [100, 100, 100], cR: 0, hR: 0, aR: -6, tR: 0, eS: [100, 100, 100], sS: [100, 100, 100] };
+
+// Rust-blink voor idle (ogen dicht rond t=42 en t=86).
+const IDLE_BLINK = [[0, [100, 100, 100]], [40, [100, 100, 100]], [43, [100, 8, 100]], [46, [100, 100, 100]], [84, [100, 100, 100]], [87, [100, 8, 100]], [90, [100, 100, 100]]];
+
+const CLIPS = [
+  { name: 'idle', dur: 90, tr: {
+    cP: [[0, [60, 110]], [45, [60, 108]], [90, [60, 110]]],
+    cS: [[0, [100, 100, 100]], [45, [100.5, 98.5, 100]], [90, [100, 100, 100]]],
+    hR: [[0, 0], [45, -2.2], [90, 0]],
+    aR: [[0, -6], [22, 12], [44, -6], [66, 12], [88, -6], [90, -6]],
+    tR: [[0, 0], [30, 7], [60, -4], [90, 0]],
+    eS: IDLE_BLINK,
+  } },
+  { name: 'celebrate', dur: 60, tr: {
+    cP: [[0, [60, 110]], [18, [60, 84]], [34, [60, 112]], [48, [60, 108.5]], [60, [60, 110]]],
+    cS: [[0, [100, 100, 100]], [14, [89, 113, 100]], [26, [112, 87, 100]], [38, [98, 103, 100]], [60, [100, 100, 100]]],
+    aR: [[0, -6], [14, -22], [28, 14], [42, -22], [60, -6]],
+    hR: [[0, 0], [20, 4], [60, 0]],
+    sS: [[0, [100, 100, 100]], [18, [64, 100, 100]], [34, [110, 100, 100]], [60, [100, 100, 100]]],
+    eS: [[0, [100, 100, 100]], [24, [100, 8, 100]], [28, [100, 100, 100]], [60, [100, 100, 100]]],
+  } },
+  { name: 'levelup', dur: 90, tr: {
+    cP: [[0, [60, 110]], [20, [60, 72]], [45, [60, 72]], [70, [60, 113]], [90, [60, 110]]],
+    cR: [[0, 0], [18, 0], [70, 360], [90, 360]],
+    cS: [[0, [100, 100, 100]], [16, [86, 116, 100]], [30, [110, 90, 100]], [90, [100, 100, 100]]],
+    aR: [[0, -6], [16, -24], [45, -24], [90, -6]],
+    sS: [[0, [100, 100, 100]], [20, [50, 100, 100]], [45, [50, 100, 100]], [70, [112, 100, 100]], [90, [100, 100, 100]]],
+  } },
+  // ── Easter eggs (soms tijdens idle, iets doms/grappigs) ──
+  { name: 'dizzy', dur: 70, tr: {
+    hR: [[0, 0], [12, 16], [26, -16], [40, 12], [54, -10], [70, 0]],
+    cR: [[0, 0], [15, 5], [35, -5], [55, 4], [70, 0]],
+    tR: [[0, 0], [12, 14], [26, -14], [40, 10], [70, 0]],
+  } },
+  { name: 'yawn', dur: 80, tr: {
+    cS: [[0, [100, 100, 100]], [24, [94, 110, 100]], [40, [94, 110, 100]], [56, [110, 92, 100]], [80, [100, 100, 100]]],
+    cP: [[0, [60, 110]], [24, [60, 106]], [40, [60, 106]], [56, [60, 112]], [80, [60, 110]]],
+    hR: [[0, 0], [24, -7], [40, -7], [80, 0]],
+    aR: [[0, -6], [24, -26], [40, -26], [80, -6]],
+    eS: [[0, [100, 100, 100]], [22, [100, 12, 100]], [42, [100, 12, 100]], [58, [100, 100, 100]], [80, [100, 100, 100]]],
+  } },
+  { name: 'trip', dur: 60, tr: {
+    cR: [[0, 0], [10, 20], [22, -6], [34, 10], [46, -3], [60, 0]],
+    cP: [[0, [60, 110]], [10, [64, 110]], [22, [58, 106]], [34, [62, 110]], [60, [60, 110]]],
+    aR: [[0, -6], [10, 22], [22, -22], [60, -6]],
+    hR: [[0, 0], [10, 12], [22, -6], [60, 0]],
+  } },
+  { name: 'fall', dur: 100, tr: {
+    cR: [[0, 0], [16, -46], [52, -46], [66, 9], [82, -3], [100, 0]],
+    cP: [[0, [60, 110]], [16, [55, 113]], [52, [55, 113]], [66, [60, 109]], [100, [60, 110]]],
+    aR: [[0, -6], [16, 26], [52, 26], [66, -14], [100, -6]],
+    sS: [[0, [100, 100, 100]], [16, [118, 100, 100]], [52, [118, 100, 100]], [66, [90, 100, 100]], [100, [100, 100, 100]]],
+    eS: [[0, [100, 100, 100]], [20, [100, 100, 100]], [24, [100, 10, 100]], [50, [100, 10, 100]], [64, [100, 100, 100]], [100, [100, 100, 100]]],
+  } },
+  { name: 'dance', dur: 96, tr: {
+    cP: [[0, [60, 110]], [16, [52, 106]], [32, [60, 110]], [48, [68, 106]], [64, [60, 110]], [80, [52, 106]], [96, [60, 110]]],
+    hR: [[0, 0], [16, 6], [32, 0], [48, -6], [64, 0], [80, 6], [96, 0]],
+    aR: [[0, -6], [16, -18], [32, -6], [48, -18], [64, -6], [80, -18], [96, -6]],
+    tR: [[0, 0], [16, 10], [48, -10], [80, 10], [96, 0]],
+  } },
+];
+
+// Bouw segment-tabel + totale lengte.
+function segments() {
+  let t = 0; const map = {};
+  CLIPS.forEach(c => { map[c.name] = [t, t + c.dur]; t += c.dur; });
+  return { map, total: t };
+}
+// Compileer één eigenschap over alle clips tot een keyframe-lijst.
+function compile(prop) {
+  const isRot = (prop === 'cR' || prop === 'hR' || prop === 'aR' || prop === 'tR');
+  const rest = REST[prop];
+  const kfs = []; let off = 0;
+  CLIPS.forEach(c => {
+    const track = c.tr[prop];
+    if (track) track.forEach(([lt, v]) => kfs.push(isRot ? kfR(off + lt, v) : kf(off + lt, v)));
+    else { kfs.push(isRot ? kfR(off, rest) : kf(off, rest)); kfs.push(isRot ? kfR(off + c.dur, rest) : kf(off + c.dur, rest)); }
+    off += c.dur;
+  });
+  return anim(kfs);
+}
 
 function build() {
   _LIND = 0;
-  // ── null-controller: idle-bob + celebrate-sprong (positie) + squash (schaal) ──
+  const { map, total } = segments();
+  const OP = total + 1;
+
   const ctrl = {
     ddd: 0, ind: ++_LIND, ty: 3, nm: 'ctrl', sr: 1,
-    ks: {
-      o: { a: 0, k: 100 }, r: { a: 0, k: 0 },
-      a: { a: 0, k: [60, 110, 0] },
-      p: anim([kf(0, [60, 110]), kf(45, [60, 108]), kf(90, [60, 110]),
-        kf(108, [60, 84]), kf(124, [60, 112]), kf(138, [60, 108.5]), kf(150, [60, 110])]),
-      s: anim([kf(0, [100, 100, 100]), kf(45, [100.5, 98.5, 100]), kf(90, [100, 100, 100]),
-        kf(104, [89, 113, 100]), kf(116, [112, 87, 100]), kf(128, [98, 103, 100]), kf(150, [100, 100, 100])]),
-    },
-    ao: 0, ip: 0, op: 200, st: 0, bm: 0,
+    ks: { o: { a: 0, k: 100 }, a: { a: 0, k: [60, 110, 0] }, p: compile('cP'), s: compile('cS'), r: compile('cR') },
+    ao: 0, ip: 0, op: OP, st: 0, bm: 0,
   };
   const CTRL = ctrl.ind;
 
-  // Statische onderdeel-lagen (geen eigen animatie): volgen alleen ctrl.
   const feet = layerOf('feet', feetShapes(), {}, { parent: CTRL });
   const armLeft = layerOf('arm_l', armLeftShapes(), {}, { parent: CTRL });
   const body = layerOf('body', bodyShapes(), {}, { parent: CTRL });
+  const tail = layerOf('tail', tailShapes(), { a: { a: 0, k: [30, 80, 0] }, p: { a: 0, k: [30, 80, 0] }, r: compile('tR') }, { parent: CTRL });
+  const head = layerOf('head', headLeaves(), { a: { a: 0, k: [60, 45, 0] }, p: { a: 0, k: [60, 45, 0] }, r: compile('hR') }, { parent: CTRL });
+  const eyes = layerOf('eyes', eyesLeaves(), { a: { a: 0, k: [60, 41, 0] }, p: { a: 0, k: [60, 41, 0] }, s: compile('eS') }, { parent: head.ind });
+  const armWave = layerOf('arm_wave', armWaveShapes(), { a: { a: 0, k: [82, 80, 0] }, p: { a: 0, k: [82, 80, 0] }, r: compile('aR') }, { parent: CTRL });
+  const shadow = layerOf('shadow', [filledEl(60, 115, 30, 6, '#000', 14)], { a: { a: 0, k: [60, 115, 0] }, p: { a: 0, k: [60, 115, 0] }, s: compile('sS') });
 
-  // Staart kwispelt.
-  const tail = layerOf('tail', tailShapes(), {
-    a: { a: 0, k: [30, 80, 0] }, p: { a: 0, k: [30, 80, 0] },
-    r: anim([kfR(0, 0), kfR(30, 7), kfR(60, -4), kfR(90, 0), kfR(118, 14), kfR(150, 0)]),
-  }, { parent: CTRL });
-
-  // Kop kantelt subtiel.
-  const head = layerOf('head', headLeaves(), {
-    a: { a: 0, k: [60, 45, 0] }, p: { a: 0, k: [60, 45, 0] },
-    r: anim([kfR(0, 0), kfR(45, -2.2), kfR(90, 0), kfR(112, 4.5), kfR(150, 0)]),
-  }, { parent: CTRL });
-  const HEAD = head.ind;
-
-  // Ogen knipperen (schaal-Y → 0), volgen de kop.
-  const eyes = layerOf('eyes', eyesLeaves(), {
-    a: { a: 0, k: [60, 41, 0] }, p: { a: 0, k: [60, 41, 0] },
-    s: anim([kf(0, [100, 100, 100]), kf(40, [100, 100, 100]), kf(43, [100, 8, 100]), kf(46, [100, 100, 100]),
-      kf(84, [100, 100, 100]), kf(87, [100, 8, 100]), kf(90, [100, 100, 100]),
-      kf(96, [100, 100, 100]), kf(101, [100, 100, 100]), kf(150, [100, 100, 100])]),
-  }, { parent: HEAD });
-
-  // Rechterarm zwaait (idle) en juicht (celebrate).
-  const armWave = layerOf('arm_wave', armWaveShapes(), {
-    a: { a: 0, k: [82, 80, 0] }, p: { a: 0, k: [82, 80, 0] },
-    r: anim([kfR(0, -6), kfR(22, 12), kfR(44, -6), kfR(66, 12), kfR(88, -6), kfR(90, 0),
-      kfR(104, -22), kfR(118, 14), kfR(132, -22), kfR(150, -6)]),
-  }, { parent: CTRL });
-
-  // Schaduw krimpt bij de sprong (niet geparent → blijft op de grond).
-  const shadow = layerOf('shadow', [filledEl(60, 115, 30, 6, '#000', 14)], {
-    a: { a: 0, k: [60, 115, 0] }, p: { a: 0, k: [60, 115, 0] },
-    s: anim([kf(0, [100, 100, 100]), kf(108, [64, 100, 100]), kf(124, [110, 100, 100]), kf(150, [100, 100, 100])]),
-  });
-
-  // Array-volgorde = z (eerste = bovenop): voor→achter, ctrl (onzichtbaar) laatst.
+  // z-volgorde (eerste = bovenop): voor→achter, ctrl (onzichtbaar) laatst.
   const layers = [armWave, eyes, head, body, armLeft, feet, tail, shadow, ctrl];
+  layers.forEach(L => { L.op = OP; });
 
-  return {
-    v: '5.7.4', fr: 30, ip: 0, op: 151, w: 120, h: 120, nm: 'Vonk', ddd: 0,
-    assets: [], layers,
-    markers: [{ tm: 0, cm: 'idle', dr: 90 }, { tm: 90, cm: 'celebrate', dr: 61 }],
-  };
+  const markers = CLIPS.map(c => ({ tm: map[c.name][0], cm: c.name, dr: c.dur }));
+  return { v: '5.7.4', fr: 30, ip: 0, op: OP, w: 120, h: 120, nm: 'Vonk', ddd: 0, assets: [], layers, markers, _segments: map };
 }
 
 const out = build();
 const dest = path.join(__dirname, '..', 'vonk.lottie.json');
 fs.writeFileSync(dest, JSON.stringify(out));
-console.log('✓ vonk.lottie.json geschreven (' + (JSON.stringify(out).length / 1024).toFixed(1) + ' KB), ' + out.layers.length + ' lagen');
+console.log('✓ vonk.lottie.json (' + (JSON.stringify(out).length / 1024).toFixed(1) + ' KB), ' + out.layers.length + ' lagen, ' + out.markers.length + ' clips');
+Object.keys(out._segments).forEach(k => console.log('   ' + k.padEnd(10) + out._segments[k].join('–')));

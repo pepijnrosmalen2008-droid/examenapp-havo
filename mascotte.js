@@ -375,7 +375,7 @@ function vonkCelebrate(caption, opts) {
   let flags = '';
   for (let f = 0; f < 10; f++) { const x = f * 11 + 3; flags += `<polygon points="${x},7 ${x + 8},7 ${x + 4},17" fill="${cols[f % cols.length]}"/>`; }
   const bunting = `<svg class="vc-bunting" viewBox="0 0 110 22" preserveAspectRatio="none"><path d="M0 7 Q55 14 110 7" stroke="rgba(255,255,255,.5)" stroke-width="1.4" fill="none"/>${flags}</svg>`;
-  const svg = (typeof mascotSVG === 'function') ? mascotSVG('feest', 156) : '🎉';
+  const svg = (typeof vonkHolder === 'function') ? vonkHolder('feest', 156, 'celebrate') : ((typeof mascotSVG === 'function') ? mascotSVG('feest', 156) : '🎉');
   const ov = document.createElement('div');
   ov.id = 'vonk-celebrate'; ov.className = 'vonk-celebrate'; ov.setAttribute('aria-hidden', 'true');
   ov.innerHTML = `${bunting}<div class="vc-confetti-wrap">${confetti}</div>

@@ -608,7 +608,7 @@ function addXP(amount){
 // levelnummer groeit → XP telt op → pas daarná de "Verder"-knop. Voelt als winst.
 function showLevelUp(lvl, lvlName, xpAdded){
   if(document.getElementById('levelup-overlay'))return;
-  const vonk=(typeof mascotSVG==='function')?mascotSVG('feest',132):'';
+  const vonk=(typeof vonkHolder==='function')?vonkHolder('feest',132,'levelup'):((typeof mascotSVG==='function')?mascotSVG('feest',132):'');
   const el=document.createElement('div');
   el.id='levelup-overlay';el.className='lvlup-overlay';
   el.innerHTML='<div class="lvlup-inner">'
@@ -680,7 +680,7 @@ function slagioVlagUit(kind){
             '</g>'+
           '</g>'+
         '</svg>'+
-        '<div class="vlag-vonk">'+((typeof mascotSVG==='function')?mascotSVG('feest',98):'')+'</div>'+
+        '<div class="vlag-vonk">'+((typeof vonkHolder==='function')?vonkHolder('feest',98,'celebrate'):((typeof mascotSVG==='function')?mascotSVG('feest',98):''))+'</div>'+
         '<div class="vlag-label">'+label+'</div>'+
       '</div>';
     document.body.appendChild(ov);
