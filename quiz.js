@@ -1341,7 +1341,7 @@ function toonRes(){
     else{tit='Blijven oefenen!';sub='Dit domein verdient meer aandacht.';}
     // Staande Vonk in de resultaat-kop (i.p.v. een losse emoji).
     const _remi=document.getElementById('remi');
-    if(_remi){_remi.classList.add('remi-vonk');_remi.innerHTML=(typeof mascotSVG==='function')?mascotSVG(_vMood,128):'🦊';}
+    if(_remi){_remi.classList.add('remi-vonk');_remi.innerHTML=(typeof vonkHolder==='function')?vonkHolder(_vMood,128,'idle'):((typeof mascotSVG==='function')?mascotSVG(_vMood,128):'🦊');}
     const _rtitEl=document.getElementById('rtit');
     if(_rtitEl){_rtitEl.textContent=tit;
       // Duolingo-stijl: een bold, gekleurde titel (kleur = betekenis per tier).
@@ -1529,7 +1529,8 @@ function _vonkFinishIntro(mood,tier,onReveal,onDone){
       conf+=`<i class="vfi-conf" style="left:${x}vw;--c:${cols[i%cols.length]};--rot:${rot}deg;--dl:${dl}s;--dur:${dur}s;--w:${w}px;border-radius:${rnd}"></i>`;
     }
   }
-  ov.innerHTML=`<div class="vfi-panel"></div><div class="vfi-glow"></div><div class="vfi-conf-wrap">${conf}</div><div class="vfi-vonk">${mascotSVG(mood||'feest',172)}</div>`;
+  const _vonkFig=(typeof vonkHolder==='function')?vonkHolder(mood||'feest',172,'celebrate'):mascotSVG(mood||'feest',172);
+  ov.innerHTML=`<div class="vfi-panel"></div><div class="vfi-glow"></div><div class="vfi-conf-wrap">${conf}</div><div class="vfi-vonk">${_vonkFig}</div>`;
   document.body.appendChild(ov);
   try{if(typeof haptic==='function')haptic([12,30,55]);}catch(e){}
   try{if(typeof vonkPlay==='function')vonkPlay(ov.querySelector('.vfi-vonk'),mood==='feest'?'happy':'nod');}catch(e){}
