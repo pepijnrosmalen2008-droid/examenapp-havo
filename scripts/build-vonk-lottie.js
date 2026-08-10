@@ -161,14 +161,22 @@ function armWaveShapes() {
     filledEl(97, 60, 6.8, 6.8, OR), filledEl(97, 60.5, 4.1, 3.1, CR, 92),
   ];
 }
-// Kop-onderdelen als platte leaf-lijst (achter→voor); ogen zitten in eigen laag.
-function headLeaves() {
+// Oren als eigen lagen (voor follow-through / gedrag). Elk: oranje buiten + crème binnen.
+function earLeftLeaves() {
   return [
-    // oren (achter de kop): oranje buiten, crème binnen ervoor
     filledPath('M43 27 C33 9 20 8 23 23 C25 33 37 34 43 27 Z', OR),
     filledPath('M40 24 C34 15 28 15 30 23 C31 29 37 29 40 24 Z', CR),
+  ];
+}
+function earRightLeaves() {
+  return [
     filledPath('M77 27 C87 9 100 8 97 23 C95 33 83 34 77 27 Z', OR),
     filledPath('M80 24 C86 15 92 15 90 23 C89 29 83 29 80 24 Z', CR),
+  ];
+}
+// Kop-onderdelen als platte leaf-lijst (achter→voor); oren + ogen zitten in eigen lagen.
+function headLeaves() {
+  return [
     // kop
     filledPath('M60 12 C39 12 27 27 27 45 C27 63 40 72 60 72 C80 72 93 63 93 45 C93 27 81 12 60 12 Z', OR),
     filledEl(47, 30, 15, 10, '#ffb877', 50),
@@ -191,12 +199,18 @@ function headLeaves() {
     strokedPath('M51 60 Q60 70 69 60', NO, 3),
   ];
 }
-// Ogen als platte leaf-lijst (eigen laag met knipper-schaal).
-function eyesLeaves() {
+// Oog-wit (eigen laag met knipper-schaal).
+function eyeWhiteLeaves() {
   return [
     filledEl(47, 41, 9, 10.5, '#fff'), filledEl(73, 41, 9, 10.5, '#fff'),
+  ];
+}
+// Pupillen + glans (eigen laag: knippert mee én kan rondkijken).
+function pupilLeaves() {
+  return [
     filledEl(47, 41.9, 5.4, 5.4, DK), filledEl(73, 41.9, 5.4, 5.4, DK),
     filledEl(49.1, 39.3, 2.2, 2.2, '#fff'), filledEl(75.1, 39.3, 2.2, 2.2, '#fff'),
+    filledEl(45.2, 44.4, 1.1, 1.1, '#fff', 85), filledEl(71.2, 44.4, 1.1, 1.1, '#fff', 85),
   ];
 }
 
@@ -235,40 +249,59 @@ function anim(kfs) { return { a: 1, k: kfs }; }
 //   cP=ctrl positie [x,y], cS=ctrl schaal [x,y,100], cR=ctrl rotatie,
 //   hR=kop rotatie, aR=zwaai-arm rotatie, tR=staart rotatie,
 //   eS=ogen schaal (knipper), sS=schaduw schaal.
-const REST = { cP: [60, 110], cS: [100, 100, 100], cR: 0, hR: 0, aR: -6, tR: 0, eS: [100, 100, 100], sS: [100, 100, 100] };
+const REST = { cP: [60, 110], cS: [100, 100, 100], cR: 0, hR: 0, aR: -6, tR: 0, eS: [100, 100, 100], sS: [100, 100, 100], eLr: 0, eRr: 0, puP: [60, 41] };
 
 // Rust-blink voor idle (ogen dicht rond t=42 en t=86).
 const IDLE_BLINK = [[0, [100, 100, 100]], [40, [100, 100, 100]], [43, [100, 8, 100]], [46, [100, 100, 100]], [84, [100, 100, 100]], [87, [100, 8, 100]], [90, [100, 100, 100]]];
 
 const CLIPS = [
   { name: 'idle', dur: 90, tr: {
-    cP: [[0, [60, 110]], [45, [60, 108]], [90, [60, 110]]],
-    cS: [[0, [100, 100, 100]], [45, [100.5, 98.5, 100]], [90, [100, 100, 100]]],
-    hR: [[0, 0], [45, -2.2], [90, 0]],
-    aR: [[0, -6], [22, 12], [44, -6], [66, 12], [88, -6], [90, -6]],
-    tR: [[0, 0], [30, 7], [60, -4], [90, 0]],
+    // Levendige rust: ademen + subtiele gewichtsverdeling (wiegt licht), kop wiegt
+    // tegen, oogjes kijken even rond, en één oor twitcht — nooit "bevroren".
+    cP: [[0, [60, 110]], [30, [59.4, 108.7]], [60, [60.6, 108.7]], [90, [60, 110]]],
+    cS: [[0, [100, 100, 100]], [45, [101, 98.4, 100]], [90, [100, 100, 100]]],
+    hR: [[0, 0], [30, -1.6], [60, 1.6], [90, 0]],
+    aR: [[0, -6], [22, 11], [44, -6], [66, 11], [88, -6], [90, -6]],
+    tR: [[0, 0], [30, 8], [60, -5], [90, 0]],
     eS: IDLE_BLINK,
+    puP: [[0, [60, 41]], [26, [60, 41]], [34, [62.4, 41.2]], [54, [62.4, 41.2]], [62, [60, 41]], [90, [60, 41]]],
+    eLr: [[0, 0], [48, 0], [52, -8], [57, 3], [62, -1], [90, 0]],
+    eRr: [[0, 0], [66, 0], [70, 6], [75, -2], [80, 0], [90, 0]],
   } },
   { name: 'celebrate', dur: 60, tr: {
-    cP: [[0, [60, 110]], [18, [60, 84]], [34, [60, 112]], [48, [60, 108.5]], [60, [60, 110]]],
-    cS: [[0, [100, 100, 100]], [14, [89, 113, 100]], [26, [112, 87, 100]], [38, [98, 103, 100]], [60, [100, 100, 100]]],
-    aR: [[0, -6], [14, -22], [28, 14], [42, -22], [60, -6]],
-    hR: [[0, 0], [20, 4], [60, 0]],
-    sS: [[0, [100, 100, 100]], [18, [64, 100, 100]], [34, [110, 100, 100]], [60, [100, 100, 100]]],
-    eS: [[0, [100, 100, 100]], [24, [100, 8, 100]], [28, [100, 100, 100]], [60, [100, 100, 100]]],
+    // Anticipatie-hurk → sprong → landing met overshoot en settle. Oren en staart
+    // volgen na (follow-through), oogjes kijken omhoog tijdens de sprong.
+    cP: [[0, [60, 110]], [8, [60, 114]], [17, [60, 82]], [31, [60, 113]], [41, [60, 108]], [49, [60, 111]], [60, [60, 110]]],
+    cS: [[0, [100, 100, 100]], [8, [110, 88, 100]], [17, [88, 114, 100]], [31, [113, 86, 100]], [41, [97, 104, 100]], [52, [101, 99, 100]], [60, [100, 100, 100]]],
+    aR: [[0, -6], [8, 8], [16, -28], [30, 16], [44, -28], [56, -6], [60, -6]],
+    hR: [[0, 0], [8, 7], [17, -5], [40, 4], [60, 0]],
+    tR: [[0, 0], [17, -16], [31, 18], [46, -7], [60, 0]],
+    sS: [[0, [100, 100, 100]], [8, [113, 100, 100]], [17, [58, 100, 100]], [31, [113, 100, 100]], [60, [100, 100, 100]]],
+    eS: [[0, [100, 100, 100]], [29, [100, 100, 100]], [32, [100, 10, 100]], [36, [100, 100, 100]], [60, [100, 100, 100]]],
+    puP: [[0, [60, 41]], [10, [60, 38.3]], [30, [60, 38.3]], [44, [60, 41]], [60, [60, 41]]],
+    eLr: [[0, 0], [8, 6], [17, 20], [33, -12], [46, 5], [60, 0]],
+    eRr: [[0, 0], [8, 6], [17, -20], [33, 12], [46, -5], [60, 0]],
   } },
   { name: 'levelup', dur: 90, tr: {
-    cP: [[0, [60, 110]], [20, [60, 72]], [45, [60, 72]], [70, [60, 113]], [90, [60, 110]]],
-    cR: [[0, 0], [18, 0], [70, 360], [90, 360]],
-    cS: [[0, [100, 100, 100]], [16, [86, 116, 100]], [30, [110, 90, 100]], [90, [100, 100, 100]]],
-    aR: [[0, -6], [16, -24], [45, -24], [90, -6]],
-    sS: [[0, [100, 100, 100]], [20, [50, 100, 100]], [45, [50, 100, 100]], [70, [112, 100, 100]], [90, [100, 100, 100]]],
+    // Diepe hurk → hoge sprong met 360°-spin → landing met settle.
+    cP: [[0, [60, 110]], [11, [60, 116]], [23, [60, 72]], [45, [60, 72]], [65, [60, 114]], [78, [60, 107]], [90, [60, 110]]],
+    cR: [[0, 0], [12, -8], [23, 0], [65, 360], [78, 360], [90, 360]],
+    cS: [[0, [100, 100, 100]], [11, [112, 86, 100]], [23, [86, 116, 100]], [37, [104, 96, 100]], [65, [114, 86, 100]], [78, [97, 103, 100]], [90, [100, 100, 100]]],
+    aR: [[0, -6], [11, 10], [20, -26], [45, -26], [70, -12], [90, -6]],
+    sS: [[0, [100, 100, 100]], [11, [118, 100, 100]], [23, [48, 100, 100]], [45, [48, 100, 100]], [65, [116, 100, 100]], [90, [100, 100, 100]]],
+    puP: [[0, [60, 41]], [16, [60, 38]], [45, [60, 38]], [68, [60, 41]], [90, [60, 41]]],
+    eLr: [[0, 0], [11, 8], [23, 22], [45, 22], [70, -8], [90, 0]],
+    eRr: [[0, 0], [11, 8], [23, 22], [45, 22], [70, -8], [90, 0]],
   } },
   // ── Easter eggs (soms tijdens idle, iets doms/grappigs) ──
   { name: 'dizzy', dur: 70, tr: {
     hR: [[0, 0], [12, 16], [26, -16], [40, 12], [54, -10], [70, 0]],
     cR: [[0, 0], [15, 5], [35, -5], [55, 4], [70, 0]],
     tR: [[0, 0], [12, 14], [26, -14], [40, 10], [70, 0]],
+    // oogjes rollen rond (het "duizelige" effect)
+    puP: [[0, [60, 41]], [12, [62.5, 39.5]], [24, [60, 43]], [36, [57.5, 39.5]], [48, [60, 43]], [60, [61, 40.5]], [70, [60, 41]]],
+    eLr: [[0, 0], [16, 10], [36, -8], [56, 6], [70, 0]],
+    eRr: [[0, 0], [16, -10], [36, 8], [56, -6], [70, 0]],
   } },
   { name: 'yawn', dur: 80, tr: {
     cS: [[0, [100, 100, 100]], [24, [94, 110, 100]], [40, [94, 110, 100]], [56, [110, 92, 100]], [80, [100, 100, 100]]],
@@ -306,7 +339,7 @@ function segments() {
 }
 // Compileer één eigenschap over alle clips tot een keyframe-lijst.
 function compile(prop) {
-  const isRot = (prop === 'cR' || prop === 'hR' || prop === 'aR' || prop === 'tR');
+  const isRot = (prop === 'cR' || prop === 'hR' || prop === 'aR' || prop === 'tR' || prop === 'eLr' || prop === 'eRr');
   const rest = REST[prop];
   const kfs = []; let off = 0;
   CLIPS.forEach(c => {
@@ -335,12 +368,19 @@ function build() {
   const body = layerOf('body', bodyShapes(), {}, { parent: CTRL });
   const tail = layerOf('tail', tailShapes(), { a: { a: 0, k: [30, 80, 0] }, p: { a: 0, k: [30, 80, 0] }, r: compile('tR') }, { parent: CTRL });
   const head = layerOf('head', headLeaves(), { a: { a: 0, k: [60, 45, 0] }, p: { a: 0, k: [60, 45, 0] }, r: compile('hR') }, { parent: CTRL });
-  const eyes = layerOf('eyes', eyesLeaves(), { a: { a: 0, k: [60, 41, 0] }, p: { a: 0, k: [60, 41, 0] }, s: compile('eS') }, { parent: head.ind });
+  const HEAD = head.ind;
+  // Oren als eigen lagen (achter de kop) met follow-through-rotatie, volgen de kop.
+  const earL = layerOf('ear_l', earLeftLeaves(), { a: { a: 0, k: [31, 24, 0] }, p: { a: 0, k: [31, 24, 0] }, r: compile('eLr') }, { parent: HEAD });
+  const earR = layerOf('ear_r', earRightLeaves(), { a: { a: 0, k: [89, 24, 0] }, p: { a: 0, k: [89, 24, 0] }, r: compile('eRr') }, { parent: HEAD });
+  // Oog-wit knippert; pupillen knipperen mee én kijken rond (eigen positie-track).
+  const eyeWhite = layerOf('eye_white', eyeWhiteLeaves(), { a: { a: 0, k: [60, 41, 0] }, p: { a: 0, k: [60, 41, 0] }, s: compile('eS') }, { parent: HEAD });
+  const pupils = layerOf('pupils', pupilLeaves(), { a: { a: 0, k: [60, 41, 0] }, p: compile('puP'), s: compile('eS') }, { parent: HEAD });
   const armWave = layerOf('arm_wave', armWaveShapes(), { a: { a: 0, k: [82, 80, 0] }, p: { a: 0, k: [82, 80, 0] }, r: compile('aR') }, { parent: CTRL });
   const shadow = layerOf('shadow', [filledEl(60, 115, 30, 6, '#000', 14)], { a: { a: 0, k: [60, 115, 0] }, p: { a: 0, k: [60, 115, 0] }, s: compile('sS') });
 
-  // z-volgorde (eerste = bovenop): voor→achter, ctrl (onzichtbaar) laatst.
-  const layers = [armWave, eyes, head, body, armLeft, feet, tail, shadow, ctrl];
+  // z-volgorde (eerste = bovenop): voor→achter. Pupillen vóór oog-wit vóór kop;
+  // oren achter de kop; ctrl (onzichtbaar) laatst.
+  const layers = [armWave, pupils, eyeWhite, head, earL, earR, body, armLeft, feet, tail, shadow, ctrl];
   layers.forEach(L => { L.op = OP; });
 
   const markers = CLIPS.map(c => ({ tm: map[c.name][0], cm: c.name, dr: c.dur }));
