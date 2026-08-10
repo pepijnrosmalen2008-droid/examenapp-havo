@@ -53,10 +53,17 @@ function _saveLeague(L){try{localStorage.setItem('slagio_league',JSON.stringify(
 function _lgMakeCohort(division,baseline,seedStr){
   const rng=_lgRng(_lgHash(seedStr+'|d'+division));
   const divMult=Math.pow(1.16,division);
+  // Beginner-vriendelijk onderaan: Brons/Zilver flink zachter (haalbaar voor
+  // nieuwe leerlingen), Goud+ pas vol competitief. 'ease' verlaagt de doelen in
+  // lage divisies; 'spread' houdt Brons smal (geen uitschieters die wegrennen).
+  const EASE=[0.5,0.72,0.9,1.0,1.08,1.16];
+  const ease=EASE[division]!=null?EASE[division]:1.16;
+  const lo=0.22+division*0.03;
+  const spread=1.35+division*0.42;
   const out=[];
   for(let i=0;i<LEAGUE_COHORT-1;i++){
-    const factor=0.3+rng()*2.5;                    // bredere spreiding: sterke koplopers mogelijk
-    const target=Math.max(60,Math.round(baseline*divMult*factor));
+    const factor=lo+rng()*spread;
+    const target=Math.max(45,Math.round(baseline*divMult*ease*factor));
     out.push({
       naam:_lgBotName(rng),
       animalId:_LG_DIER[Math.floor(rng()*_LG_DIER.length)],
@@ -147,7 +154,7 @@ function ensureLeague(){
     // Promotie-beloning: munten die meeschalen met je nieuwe divisie.
     let reward=0;
     if(promoted){reward=100+L.division*75;try{if(typeof addCoins==='function')addCoins(reward);}catch(e){}}
-    L.result={rank,promoted,relegated,oldDiv,newDiv:L.division,weekXP:L.weekXP||0,reward,seen:false};
+    L.result={rank,total:finals.length,promoted,relegated,oldDiv,newDiv:L.division,weekXP:L.weekXP||0,reward,seen:false};
     L.lastWeekXP=L.weekXP||0;
     L.week=wid;L.weekXP=0;
     L.cohort=_lgMakeCohort(L.division,baseline,wid);
@@ -165,13 +172,37 @@ function _lgKeepCompetitive(L){
   if(!L||!Array.isArray(L.cohort)||!L.cohort.length)return;
   const prog=Math.max(0.12,_lgWeekProgress());
   const projected=(L.weekXP||0)/prog;                 // verwachte eind-XP van de speler
-  if(projected<300)return;                            // rustige starters niet opjagen
+  const div=L.division||0;
+  // Brons = beginners: niet opjagen (een normale starter mág gewoon winnen).
+  // Hoe hoger de divisie, hoe eerder en agressiever de bots meeschalen.
+  const minProj=div===0?900:(div===1?550:300);
+  if(projected<minProj)return;
   let topTarget=0;for(const b of L.cohort){if((b.target||0)>topTarget)topTarget=b.target||0;}
-  const want=projected*1.18;                          // sterkste bot ~18% boven mijn verwachting
+  const lead=div===0?1.0:(div===1?1.08:1.18);         // Brons: hooguit gelijk, niet erboven
+  const want=projected*lead;
   if(topTarget>=want)return;                          // al sterk genoeg
-  const scale=Math.min(1.6, want/Math.max(1,topTarget)); // gestage, gecapte opschaling
+  const scale=Math.min(div===0?1.25:1.6, want/Math.max(1,topTarget)); // gestage, gecapte opschaling
   L.cohort.forEach(b=>{ b.target=Math.round((b.target||0)*scale); });
   _saveLeague(L);
+}
+// Zorg dat GEEN bot op de speler lijkt (geen "jij-bot"): een bot met dezelfde
+// naam of hetzelfde dier als jij krijgt deterministisch een andere naam/dier.
+function _lgDedupeVsMe(bots){
+  try{
+    const myNameLc=(_lgMeName()||'').trim().toLowerCase();
+    const myAv=_lgMeAvatar();
+    bots.forEach((b,i)=>{
+      if((b.naam||'').trim().toLowerCase()===myNameLc){
+        const h=_lgHash((b.naam||'')+'|xn'+i);
+        b.naam=_LG_VN[h%_LG_VN.length]+' '+_LG_AN[(h>>>7)%_LG_AN.length];
+      }
+      if(myAv.id&&b.animalId===myAv.id){
+        const others=_LG_DIER.filter(d=>d!==myAv.id);
+        if(others.length)b.animalId=others[_lgHash((b.naam||'')+'|xd'+i)%others.length];
+      }
+    });
+  }catch(e){}
+  return bots;
 }
 
 // Standings van de huidige (of gefinaliseerde) week.
@@ -181,10 +212,10 @@ function _lgStandings(L,progOverride){
   const prog=progOverride!=null?progOverride:_lgWeekProgress();
   const real=_lgRealRows(L).slice(0,LEAGUE_COHORT-1);
   const nBots=Math.max(0,(LEAGUE_COHORT-1)-real.length);
-  const bots=(L.cohort||[]).slice(0,nBots).map(b=>({
+  const bots=_lgDedupeVsMe((L.cohort||[]).slice(0,nBots).map(b=>({
     naam:b.naam,animalId:b.animalId,stage:b.stage,
     xp:(progOverride===1?b.target:_lgBotXP(b,prog)),me:false
-  }));
+  })));
   const rows=[...real,...bots];
   const meAv=_lgMeAvatar();
   rows.push({naam:_lgMeName(),animalId:meAv.id,stage:meAv.stage,xp:L.weekXP||0,me:true});
@@ -259,25 +290,41 @@ var _lgCeremonyDone=false;
 function _lgMaybeCeremony(){
   if(_lgCeremonyDone)return;
   const L=getLeague();
-  if(!L||!L.result||L.result.seen)return;
-  if(!L.result.promoted&&!L.result.relegated)return;   // "gelijk gebleven" → kleine banner volstaat
+  if(!L||!L.result||L.result.seen)return;              // recap voor ELKE weekafsluiting
   _lgCeremonyDone=true;
   setTimeout(()=>{try{showLeagueCeremony(L.result);}catch(e){}},600);
 }
+// Weekafsluiting-recap: toont prominent hoeveelste je bent geworden + de uitkomst
+// (gepromoveerd / gebleven / gedegradeerd), voor élke week (niet enkel promo/demote).
 function showLeagueCeremony(r){
   if(document.getElementById('lg-ceremony'))return;
-  const up=!!r.promoted;
-  const div=LEAGUE_DIVISIONS[r.newDiv]||LEAGUE_DIVISIONS[0];
+  const up=!!r.promoted, dn=!!r.relegated;
+  const lastDiv=LEAGUE_DIVISIONS[r.oldDiv]||LEAGUE_DIVISIONS[0];
+  const newDiv=LEAGUE_DIVISIONS[r.newDiv]||lastDiv;
+  const showDiv=up?newDiv:lastDiv;
+  const total=r.total||LEAGUE_COHORT;
+  const mood=up?'trots':(dn?'goed':'blij');
+  const _vonk=(typeof vonkHolder==='function')?vonkHolder(mood,92,up?'celebrate':'idle')
+    :((typeof mascotSVG==='function')?mascotSVG(mood,92):'');
+  const medal=r.rank===1?'🥇':(r.rank===2?'🥈':(r.rank===3?'🥉':''));
+  const kicker=up?'Gepromoveerd':(dn?'Gedegradeerd':'Weekafsluiting');
+  const title=up?('Welkom in de '+newDiv.naam+'-divisie! 🎉')
+    :(dn?('Je zakt naar de '+newDiv.naam+'-divisie')
+      :('Je blijft in de '+lastDiv.naam+'-divisie'));
+  const sub=up?'Sterk gewerkt — zo hoog blijven!'
+    :(dn?'Deze week pak je \'m terug — jij kan dit.'
+      :(r.rank<=LEAGUE_PROMO?'Net naast promotie — volgende week pak je \'m!':'Nieuwe week, nieuwe kans om te stijgen.'));
   const el=document.createElement('div');
   el.id='lg-ceremony';el.className='lgc-overlay';
-  const _vonk=(typeof mascotSVG==='function')?mascotSVG(up?'trots':'goed',92):'';
-  el.innerHTML=`<div class="lgc-card ${up?'lgc-up':'lgc-dn'}" style="--lg-col:${div.kleur}">
+  el.innerHTML=`<div class="lgc-card ${up?'lgc-up':(dn?'lgc-dn':'lgc-stay')}" style="--lg-col:${showDiv.kleur}">
     <div class="lgc-rays" aria-hidden="true"></div>
-    <div class="lgc-vonk">${up?'<span class="lgc-crown" aria-hidden="true">👑</span>':''}${_vonk}<span class="lgc-badge-mini no-ico">${div.ic}</span></div>
-    <div class="lgc-badge no-ico" hidden>${div.ic}</div>
-    <div class="lgc-kicker">${up?'Gepromoveerd':'Nieuwe start'}</div>
-    <div class="lgc-title">${up?'Welkom in de '+div.naam+'-divisie':'Je zakt naar '+div.naam}</div>
-    <div class="lgc-sub">${up?'Je eindigde vorige week #'+r.rank+'. Sterk gewerkt!':'Deze week pak je het terug - jij kan dit.'}</div>
+    <div class="lgc-vonk">${up?'<span class="lgc-crown" aria-hidden="true">👑</span>':''}${_vonk}<span class="lgc-badge-mini no-ico">${showDiv.ic}</span></div>
+    <div class="lgc-kicker">${kicker}</div>
+    <div class="lgc-recap-lbl">Je eindigde vorige week</div>
+    <div class="lgc-rankbig">${medal?'<span class="lgc-medal" aria-hidden="true">'+medal+'</span>':''}#${r.rank} <span class="lgc-rankof">van ${total}</span></div>
+    <div class="lgc-recap-meta">${lastDiv.naam}-divisie · <b>${r.weekXP||0} XP</b> deze week</div>
+    <div class="lgc-title">${title}</div>
+    <div class="lgc-sub">${sub}</div>
     ${up&&r.reward>0?`<div class="lgc-reward"><span class="lgc-reward-ico">${typeof _ico==='function'?_ico('coin',20):'🪙'}</span>+${r.reward} munten beloning</div>`:''}
     <button class="lgc-cta" onclick="_lgCeremonyClose(true)">Bekijk mijn divisie</button>
     <button class="lgc-skip" onclick="_lgCeremonyClose(false)">Sluiten</button>
@@ -285,7 +332,8 @@ function showLeagueCeremony(r){
   document.body.appendChild(el);
   requestAnimationFrame(()=>el.classList.add('show'));
   if(up){try{playSound('levelup');}catch(e){}try{if(typeof launchConfetti==='function')launchConfetti('gold');}catch(e){}try{haptic&&haptic([50,30,80,30,120]);}catch(e){}}
-  else{try{playSound('complete');}catch(e){}}
+  else if(dn){try{playSound('complete');}catch(e){}}
+  else{try{playSound('complete');}catch(e){}try{haptic&&haptic([30,20,50]);}catch(e){}}
 }
 function _lgCeremonyClose(go){
   const el=document.getElementById('lg-ceremony');

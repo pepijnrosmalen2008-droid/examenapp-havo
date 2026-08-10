@@ -6584,6 +6584,13 @@ html.dark .dom-hero-card{background:linear-gradient(180deg,rgba(255,255,255,.045
 .lgc-reward-ico{display:grid;place-items:center}
 .lgc-skip{position:relative;margin-top:8px;background:none;border:none;color:var(--mu);font-size:13px;font-weight:700;cursor:pointer;font-family:var(--font);padding:6px}
 .lgc-skip:hover{color:var(--dk)}
+/* Weekafsluiting-recap: prominente eindplaats + samenvatting */
+.lgc-recap-lbl{position:relative;font-size:12.5px;font-weight:700;color:var(--mu);margin-top:4px}
+.lgc-rankbig .lgc-medal{font-size:30px;margin-right:4px;vertical-align:-3px}
+.lgc-recap-meta{position:relative;font-size:13.5px;color:var(--mu);margin:2px 0 4px}
+.lgc-recap-meta b{color:var(--dk)}
+.lgc-stay .lgc-rays{opacity:.16}
+.lgc-vonk .vonk-lottie{width:92px;height:92px}
 @media(prefers-reduced-motion:reduce){.lgc-rays,.lgc-badge,.lg-rush-on .lg-rush-bolt{animation:none}.lgc-card{transition:none;transform:none}}
 /* ── Onboarding-commitment (reden + dagdoel) ── */
 .commit-overlay{position:fixed;inset:0;z-index:9500;display:flex;align-items:center;justify-content:center;padding:22px;
