@@ -6653,6 +6653,26 @@ html.dark .dom-hero-card{background:linear-gradient(180deg,rgba(255,255,255,.045
 .lg-hero-badge{font-size:46px;line-height:1}
 .lg-hero-name{font-family:var(--font-head,inherit);font-size:23px;font-weight:800;margin-top:6px;letter-spacing:-.3px}
 .lg-hero-sub{font-size:12.5px;opacity:.95;margin-top:5px}
+/* Te-winnen-beloningen op de divisiepagina */
+.lg-rewards{display:flex;flex-wrap:wrap;align-items:center;gap:7px;margin:0 0 12px;padding:11px 13px;border-radius:14px;
+  background:var(--s);border:1px solid var(--bo)}
+.lg-rewards-lbl{font-size:11px;font-weight:800;letter-spacing:.05em;text-transform:uppercase;color:var(--mu);margin-right:2px}
+.lg-rw{display:inline-flex;align-items:center;gap:4px;font-size:12.5px;font-weight:800;color:var(--dk);
+  background:color-mix(in srgb,var(--mu) 12%,transparent);border:1px solid var(--bo);border-radius:999px;padding:4px 9px}
+.lg-rw b{font-weight:800;color:var(--mu);font-size:11.5px;margin-right:1px}
+.lg-rw svg{width:14px;height:14px;vertical-align:-2px}
+.lg-rw-promo{background:color-mix(in srgb,var(--or) 15%,transparent);border-color:color-mix(in srgb,var(--or) 34%,transparent)}
+.lg-rw-promo b{color:var(--or)}
+/* Recap-knop (vorige week opnieuw bekijken) */
+.lg-recap-btn{display:flex;align-items:center;gap:8px;width:100%;margin:0 0 12px;padding:12px 14px;cursor:pointer;
+  font-family:var(--font);font-size:13.5px;font-weight:700;color:var(--dk);text-align:left;
+  background:var(--s);border:1px solid var(--bo);border-radius:14px;transition:transform .12s,border-color .15s}
+.lg-recap-btn:hover{border-color:color-mix(in srgb,var(--or) 40%,transparent)}
+.lg-recap-btn:active{transform:scale(.99)}
+.lg-recap-btn b{color:var(--or);font-weight:800}
+.lg-recap-ic{font-size:16px;flex-shrink:0}
+.lg-recap-arr{margin-left:auto;color:var(--mu);font-weight:800}
+.lgc-reward-note{font-size:11.5px;font-weight:700;color:var(--mu);opacity:.85}
 .lg-list{display:flex;flex-direction:column;gap:5px}
 .lg-row{display:flex;align-items:center;gap:12px;background:var(--s);border:1px solid var(--bo);border-radius:13px;padding:10px 13px}
 .lg-row-up{border-color:rgba(15,157,88,.32);background:linear-gradient(90deg,rgba(15,157,88,.06),transparent 40%)}

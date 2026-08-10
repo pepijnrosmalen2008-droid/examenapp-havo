@@ -151,10 +151,13 @@ function ensureLeague(){
     if(rank<=LEAGUE_PROMO && L.division<LEAGUE_DIVISIONS.length-1){L.division++;promoted=true;}
     else if(rank>(finals.length-LEAGUE_DEMOTE) && L.division>0){L.division--;relegated=true;}
     const baseline=Math.max(400,L.weekXP||0,L.lastWeekXP||0);
-    // Promotie-beloning: munten die meeschalen met je nieuwe divisie.
-    let reward=0;
-    if(promoted){reward=100+L.division*75;try{if(typeof addCoins==='function')addCoins(reward);}catch(e){}}
-    L.result={rank,total:finals.length,promoted,relegated,oldDiv,newDiv:L.division,weekXP:L.weekXP||0,reward,seen:false};
+    // Beloning = plaatsbeloning (op basis van je eindplaats in de oude divisie)
+    // + eventuele promotie-bonus (voor je nieuwe divisie). Samen uitgekeerd.
+    const placement=_lgPlacementReward(rank,oldDiv);
+    const promoReward=promoted?_lgPromoReward(L.division):0;
+    const reward=placement+promoReward;
+    if(reward>0){try{if(typeof addCoins==='function')addCoins(reward);}catch(e){}}
+    L.result={rank,total:finals.length,promoted,relegated,oldDiv,newDiv:L.division,weekXP:L.weekXP||0,placement,promoReward,reward,seen:false};
     L.lastWeekXP=L.weekXP||0;
     L.week=wid;L.weekXP=0;
     L.cohort=_lgMakeCohort(L.division,baseline,wid);
@@ -185,6 +188,19 @@ function _lgKeepCompetitive(L){
   L.cohort.forEach(b=>{ b.target=Math.round((b.target||0)*scale); });
   _saveLeague(L);
 }
+// Beloning voor je eindplaats (los van promotie). Top-3 en de promotiezone
+// leveren munten op; schaalt mee met de divisie (hoger = meer). Zo is er élke
+// week iets te winnen, ook als je blijft.
+function _lgPlacementReward(rank, division){
+  const d = division || 0;
+  if (rank === 1) return 60 + d * 40;
+  if (rank <= 3)  return 35 + d * 22;
+  if (rank <= LEAGUE_PROMO) return 15 + d * 10;   // promotiezone
+  return 0;
+}
+// Promotie-bonus (bovenop de plaatsbeloning) voor de zojuist bereikte divisie.
+function _lgPromoReward(newDivision){ return 100 + (newDivision || 0) * 75; }
+
 // Zorg dat GEEN bot op de speler lijkt (geen "jij-bot"): een bot met dezelfde
 // naam of hetzelfde dier als jij krijgt deterministisch een andere naam/dier.
 function _lgDedupeVsMe(bots){
@@ -314,6 +330,9 @@ function showLeagueCeremony(r){
   const sub=up?'Sterk gewerkt — zo hoog blijven!'
     :(dn?'Deze week pak je \'m terug — jij kan dit.'
       :(r.rank<=LEAGUE_PROMO?'Net naast promotie — volgende week pak je \'m!':'Nieuwe week, nieuwe kans om te stijgen.'));
+  const rNote=(r.promoReward>0&&r.placement>0)?'plek #'+r.rank+' + promotie'
+    :(r.promoReward>0?'promotiebonus':'plek #'+r.rank);
+  const coinIco=(typeof _ico==='function')?_ico('coin',20):'🪙';
   const el=document.createElement('div');
   el.id='lg-ceremony';el.className='lgc-overlay';
   el.innerHTML=`<div class="lgc-card ${up?'lgc-up':(dn?'lgc-dn':'lgc-stay')}" style="--lg-col:${showDiv.kleur}">
@@ -325,7 +344,7 @@ function showLeagueCeremony(r){
     <div class="lgc-recap-meta">${lastDiv.naam}-divisie · <b>${r.weekXP||0} XP</b> deze week</div>
     <div class="lgc-title">${title}</div>
     <div class="lgc-sub">${sub}</div>
-    ${up&&r.reward>0?`<div class="lgc-reward"><span class="lgc-reward-ico">${typeof _ico==='function'?_ico('coin',20):'🪙'}</span>+${r.reward} munten beloning</div>`:''}
+    ${r.reward>0?`<div class="lgc-reward"><span class="lgc-reward-ico">${coinIco}</span>+${r.reward} munten <span class="lgc-reward-note">${rNote}</span></div>`:''}
     <button class="lgc-cta" onclick="_lgCeremonyClose(true)">Bekijk mijn divisie</button>
     <button class="lgc-skip" onclick="_lgCeremonyClose(false)">Sluiten</button>
   </div>`;
@@ -547,7 +566,25 @@ function renderLeague(){
       <div class="lg-hero-name">${div.naam}-divisie</div>
       <div class="lg-hero-sub">Nog ${_lgDaysLeft()} dag${_lgDaysLeft()===1?'':'en'} · top ${LEAGUE_PROMO} promoveert${next?' naar '+next.naam:''}${prev?', onderste '+LEAGUE_DEMOTE+' degradeert':''}</div>
     </div>`;
-  box.innerHTML=hdr+leagueRushChip()+_lgFinishBanner(rows)+_lgListWithDividers(rows);
+  // Te winnen deze week: plaatsbeloningen + eventuele promotie-bonus.
+  const coin=(typeof _ico==='function')?_ico('coin',14):'🪙';
+  const rw1=_lgPlacementReward(1,L.division), rw3=_lgPlacementReward(3,L.division), rw7=_lgPlacementReward(LEAGUE_PROMO,L.division);
+  const promoRw=(L.division<LEAGUE_DIVISIONS.length-1)?_lgPromoReward(L.division+1):0;
+  const rewardsRow=`<div class="lg-rewards"><span class="lg-rewards-lbl">Te winnen</span>
+    <span class="lg-rw"><b>🥇</b>${rw1}${coin}</span>
+    <span class="lg-rw"><b>Top&nbsp;3</b>${rw3}${coin}</span>
+    <span class="lg-rw"><b>Top&nbsp;${LEAGUE_PROMO}</b>${rw7}${coin}</span>
+    ${promoRw?`<span class="lg-rw lg-rw-promo"><b>Promotie</b>+${promoRw}${coin}</span>`:''}</div>`;
+  // Knop om de weekafsluiting-recap opnieuw te bekijken.
+  const recapBtn=L.result?`<button class="lg-recap-btn" onclick="_lgShowRecap()"><span class="lg-recap-ic">📊</span>Recap vorige week — je werd <b>#${L.result.rank}</b> van ${L.result.total||LEAGUE_COHORT}<span class="lg-recap-arr">→</span></button>`:'';
+  box.innerHTML=hdr+rewardsRow+recapBtn+leagueRushChip()+_lgFinishBanner(rows)+_lgListWithDividers(rows);
+}
+// Weekafsluiting-recap opnieuw tonen (vanuit de divisie-pagina).
+function _lgShowRecap(){
+  const L=getLeague();
+  if(!L||!L.result)return;
+  try{const ex=document.getElementById('lg-ceremony');if(ex)ex.remove();}catch(e){}
+  try{showLeagueCeremony(L.result);}catch(e){}
 }
 function _lgListWithDividers(rows){
   let html='<div class="lg-list">';
