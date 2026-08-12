@@ -76,8 +76,10 @@ function _saveLeague(L){try{localStorage.setItem(_lgKey(),JSON.stringify(L));}ca
 // Uitzondering: de Legende-divisie is gedeeld → geen offset, één ranglijst voor
 // alle niveaus samen (vergt geen Supabase-wijziging: enkel welk nummer we sturen).
 function _lgSyncDiv(d){
-  if(d===LEAGUE_LEGEND)return d;
-  return (d||0)+((typeof APP_LEVEL!=='undefined'&&APP_LEVEL==='vwo')?100:0);
+  if(d===LEAGUE_LEGEND)return d;   // Legende is gedeeld over alle niveaus
+  var lvl=(typeof APP_LEVEL!=='undefined')?APP_LEVEL:'havo';
+  var off=lvl==='vwo'?100:lvl==='vmbo'?200:0;
+  return (d||0)+off;
 }
 
 function _lgMakeCohort(division,baseline,seedStr){

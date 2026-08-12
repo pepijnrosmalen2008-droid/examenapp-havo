@@ -27,6 +27,13 @@ function openQmode(did){
 function startQ(mode){
   if(mode==='oud')trackEvent('oud_examen_quiz',{vak:ST.vak?.naam||null,domein:ST.domein?.naam||null});
   // If oud-examen mode and domain has year-tagged questions → show picker first
+  // Nog geen vragen voor dit onderdeel (bv. VMBO in opbouw): vriendelijk melden
+  // i.p.v. een lege/kapotte quiz te starten.
+  const _startPool=mode==='snel'?ST.domein.sv:ST.domein.oe;
+  if(!Array.isArray(_startPool)||_startPool.length===0){
+    try{if(typeof showToast==='function')showToast('Voor dit onderdeel komen binnenkort vragen 🔧');}catch(e){}
+    return;
+  }
   if(mode==='oud'){
     const hasJaar=(ST.domein.oe||[]).some(q=>q.jaar);
     if(hasJaar){openOEPicker();return;}

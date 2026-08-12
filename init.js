@@ -290,10 +290,10 @@ function _ctutoRender(){
 // ═══════ LEVEL THEME ═══════
 function applyLevelTheme(level){
   const html=document.documentElement;
-  html.classList.remove('level-havo','level-vwo');
+  html.classList.remove('level-havo','level-vwo','level-vmbo');
   html.classList.add('level-'+level);
-  // Update favicon colour to match level
-  const col=level==='vwo'?'%238b5cf6':'%23E85C0D';
+  // Update favicon colour to match level (vmbo = teal)
+  const col=level==='vwo'?'%238b5cf6':level==='vmbo'?'%230EA5A5':'%23E85C0D';
   const svg=`%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='${col}'/%3E%3Ctext x='16' y='24' font-family='Arial Black,sans-serif' font-size='19' font-weight='900' fill='white' text-anchor='middle'%3ESl%3C/text%3E%3C/svg%3E`;
   const fav=document.querySelector('link[rel="icon"]');
   if(fav)fav.href='data:image/svg+xml,'+svg;
@@ -301,8 +301,7 @@ function applyLevelTheme(level){
 
 // ═══════ LEVEL SELECT ═══════
 function _updatePageSEO(level){
-  const isHavo=level==='havo';
-  const nivNaam=isHavo?'HAVO':'VWO';
+  const nivNaam=level==='havo'?'HAVO':level==='vmbo'?'VMBO GL/TL':'VWO';
   const url='https://slagio.nl/'+(level||'');
   document.title=level
     ?`Slagio - ${nivNaam} Examenvoorbereiding 2027 | 10.000+ vragen, eindexamens, studieplan`
@@ -337,7 +336,7 @@ function chooseLevel(level,_noHistory){
   renderSchedule();
   // Update intro badge
   const badge=document.getElementById('intro-level-badge');
-  if(badge)badge.textContent=(level==='havo'?'HAVO':'VWO')+' 2027';
+  if(badge)badge.textContent=(level==='havo'?'HAVO':level==='vmbo'?'VMBO':'VWO')+' 2027';
   // Push URL: /havo or /vwo
   if(!_noHistory)history.pushState({level},'','/'+level);
   _updatePageSEO(level);
@@ -349,11 +348,12 @@ function chooseLevel(level,_noHistory){
   else if(!localStorage.getItem('slagio_vonk_intro_done')){setTimeout(()=>{try{if(typeof vonkIntro==='function')vonkIntro();}catch(e){}},500);}
   else{let _nudged=false;try{if(typeof vonkStreakNudge==='function')_nudged=vonkStreakNudge();}catch(e){}if(!_nudged)showDailyChallengePopup();}
 }
+function _nivLabel(l){return l==='vwo'?'VWO':l==='vmbo'?'VMBO':'HAVO';}
 function updateLevelChip(){
   const chip=document.getElementById('home-level-chip');
-  if(chip)chip.textContent=(APP_LEVEL==='vwo'?'VWO':'HAVO')+' 2027';
+  if(chip)chip.textContent=_nivLabel(APP_LEVEL)+' 2027';
   const badge=document.getElementById('vak-level-badge');
-  if(badge)badge.textContent=(APP_LEVEL==='vwo'?'VWO':'HAVO');
+  if(badge)badge.textContent=_nivLabel(APP_LEVEL);
 }
 
 // ═══════ INIT ═══════

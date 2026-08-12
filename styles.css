@@ -68,6 +68,13 @@ html.level-vwo{
 html.dark.level-vwo{
   --or:#a78bfa;--orl:#2D1B69;--or-rgb:167,139,250
 }
+html.level-vmbo{
+  --or:#0d9488;--orl:#effbf8;--or-rgb:13,148,136;
+  --cd-bg1:#04211d;--cd-bg2:#06302a;--cd-bg3:#052622
+}
+html.dark.level-vmbo{
+  --or:#2dd4bf;--orl:#0b3b36;--or-rgb:45,212,191
+}
 /* Root-achtergrond: voorkomt witte randen bij snel scrollen / overscroll-bounce
    (de body dekt niet de overscroll-zone; html wél). */
 html{background:var(--bg,#f5f6fa)}
@@ -1819,6 +1826,14 @@ html.dark .qb{background:#2e3550}
 .wlc-card::after{content:'';position:absolute;top:0;left:0;right:0;height:1px;background:linear-gradient(90deg,transparent,rgba(255,255,255,.15),transparent)}
 .wlc-chavo{border-color:rgba(232,92,13,.3);background:linear-gradient(150deg,rgba(232,92,13,.11) 0%,rgba(232,92,13,.04) 100%)}
 .wlc-cvwo{border-color:rgba(139,92,246,.3);background:linear-gradient(150deg,rgba(139,92,246,.11) 0%,rgba(139,92,246,.04) 100%)}
+.wlc-cvmbo{border-color:rgba(13,148,136,.3);background:linear-gradient(150deg,rgba(13,148,136,.11) 0%,rgba(13,148,136,.04) 100%)}
+.wlc-cvmbo:hover,.wlc-cvmbo:focus-visible{border-color:rgba(13,148,136,.7);background:linear-gradient(150deg,rgba(13,148,136,.2) 0%,rgba(13,148,136,.07) 100%);transform:translateY(-7px);box-shadow:0 28px 72px rgba(13,148,136,.28),0 0 0 1px rgba(13,148,136,.18)}
+.wlc-cvmbo:active{transform:scale(.97);transition:transform .1s}
+.wlc-cvmbo .wlc-card-glow{background:radial-gradient(circle at 25% 15%,rgba(13,148,136,.12) 0%,transparent 55%)}
+.wlc-cvmbo .wlc-card-lvl{color:#0d9488;text-shadow:0 0 32px rgba(13,148,136,.5)}
+.wlc-cvmbo .wlc-card-list li::before{content:'✓';color:#0d9488}
+.wlc-cvmbo .wlc-card-btn{color:#0d9488}
+.lc-active.wlc-cvmbo,.lc-active.lc-vmbo{border-color:rgba(13,148,136,.7)!important;box-shadow:0 0 0 2px rgba(13,148,136,.3),0 16px 48px rgba(13,148,136,.22)!important}
 .wlc-chavo:hover,.wlc-chavo:focus-visible{border-color:rgba(232,92,13,.7);background:linear-gradient(150deg,rgba(232,92,13,.2) 0%,rgba(232,92,13,.07) 100%);transform:translateY(-7px);box-shadow:0 28px 72px rgba(232,92,13,.28),0 0 0 1px rgba(232,92,13,.18)}
 .wlc-cvwo:hover,.wlc-cvwo:focus-visible{border-color:rgba(139,92,246,.7);background:linear-gradient(150deg,rgba(139,92,246,.2) 0%,rgba(139,92,246,.07) 100%);transform:translateY(-7px);box-shadow:0 28px 72px rgba(139,92,246,.28),0 0 0 1px rgba(139,92,246,.18)}
 .wlc-chavo:active{transform:scale(.97);transition:transform .1s}

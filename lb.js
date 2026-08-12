@@ -624,6 +624,17 @@ function updateCountdown(){
   const subEl=document.getElementById('cd-sub');
   if(!tgt){
     const now=new Date();
+    // Niveau zonder examenrooster (bv. VMBO in opbouw): geen "geslaagd-modus" tonen.
+    const heeftRooster=(typeof EXAM_SCHEDULE!=='undefined'&&EXAM_SCHEDULE.some(ex=>!ex.niveau||ex.niveau===APP_LEVEL))||(typeof EXAM_SCHEDULE_2027!=='undefined'&&EXAM_SCHEDULE_2027.some(ex=>!ex.niveau||ex.niveau===APP_LEVEL));
+    if(!heeftRooster){
+      setEl('cd-title','Examenrooster volgt');
+      if(labelEl)labelEl.textContent='Aftellen';
+      if(subEl)subEl.textContent='De exacte examendata worden binnenkort toegevoegd';
+      ['cd-d','cd-h','cd-m','cd-s','cd-days-text'].forEach(id=>setEl(id,'–'));
+      if(cdEl){cdEl.classList.remove('cd-panic');cdEl.classList.add('cd-empty');}
+      const panicEl=document.getElementById('cd-panic-msg');if(panicEl)panicEl.style.display='none';
+      return;
+    }
     const nogExamens=EXAM_SCHEDULE.some(ex=>(!ex.niveau||ex.niveau===APP_LEVEL)&&new Date(ex.datum+'T'+ex.tijd.split('–')[0]+':00+02:00')>now);
     if(nogExamens){
       setEl('cd-title','Stel je volgende examen in');

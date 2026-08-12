@@ -52,9 +52,10 @@ function _routeFromPath(){
   const path=location.pathname.replace(/\/$/,'');
   if(path==='/havo'){chooseLevel('havo',true);return;}
   if(path==='/vwo'){chooseLevel('vwo',true);return;}
+  if(path==='/vmbo'){chooseLevel('vmbo',true);return;}
   // Terugkerende gebruiker: direct naar opgeslagen niveau - sla welkomstscherm over
   const saved=localStorage.getItem('examenapp_level');
-  if(saved==='havo'||saved==='vwo'){chooseLevel(saved,true);return;}
+  if(saved==='havo'||saved==='vwo'||saved==='vmbo'){chooseLevel(saved,true);return;}
   // Nieuwe gebruiker: toon niveau-kiezer
   show('sc-welcome',true);
   _updatePageSEO(null);
@@ -90,7 +91,7 @@ function _routeVakkenPath(path){
 window.addEventListener('popstate',()=>{
   const path=location.pathname.replace(/\/$/,'');
   if(_routeVakkenPath(path))return;
-  if(path==='/havo'||path==='/vwo'){_routeFromPath();return;}
+  if(path==='/havo'||path==='/vwo'||path==='/vmbo'){_routeFromPath();return;}
   if(path==='/'||path===''){
     // terug naar niveau-kiezer
     show('sc-welcome',true);
@@ -121,7 +122,7 @@ function show(id,_noHash){
       // Kom je van een echte /vakken/-URL (of oude hash-route), dan moet de
       // adresbalk expliciet terug naar de niveau-pagina - _pushHash('') alleen
       // strippen van de hash is niet genoeg als het pathname zelf afwijkt.
-      const _hp=(APP_LEVEL==='havo'||APP_LEVEL==='vwo')?'/'+APP_LEVEL:'/';
+      const _hp=(APP_LEVEL==='havo'||APP_LEVEL==='vwo'||APP_LEVEL==='vmbo')?'/'+APP_LEVEL:'/';
       if(location.pathname.replace(/\/$/,'')+location.hash!==_hp){
         try{history.pushState(null,'',_hp);}catch(e){}
       }
@@ -244,7 +245,7 @@ const conceptGraph = {
 
 // ═══════ NIVEAU BEHEER ═══════
 let APP_LEVEL=localStorage.getItem('examenapp_level')||'havo';
-function getVK(){var a=APP_LEVEL==='vwo'?(typeof VAKKEN_VWO!=='undefined'?VAKKEN_VWO:null):(typeof VAKKEN!=='undefined'?VAKKEN:null);return a||[];}
+function getVK(){var a=(typeof _levelArr==='function')?_levelArr(APP_LEVEL):(APP_LEVEL==='vwo'?(typeof VAKKEN_VWO!=='undefined'?VAKKEN_VWO:null):(typeof VAKKEN!=='undefined'?VAKKEN:null));return a||[];}
 // Level-specifieke localStorage/Supabase kolomnamen - altijd suffix (_havo / _vwo)
 function lvlCol(col){return col+'_'+APP_LEVEL;}
 // Migreer bestaande HAVO data van oude keys (zonder suffix) naar nieuwe keys (_havo)

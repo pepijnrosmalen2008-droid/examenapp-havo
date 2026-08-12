@@ -20,10 +20,11 @@ function _processLevelOe(arr){
     });
   });
 }
-function _levelLoaded(level){return level==='vwo'?(typeof VAKKEN_VWO!=='undefined'):(typeof VAKKEN!=='undefined');}
-var _levelDataCbs={havo:[],vwo:[]},_levelDataLoading={havo:false,vwo:false};
+function _levelArr(level){return level==='vwo'?(typeof VAKKEN_VWO!=='undefined'&&VAKKEN_VWO):level==='vmbo'?(typeof VAKKEN_VMBO!=='undefined'&&VAKKEN_VMBO):(typeof VAKKEN!=='undefined'&&VAKKEN);}
+function _levelLoaded(level){return !!_levelArr(level);}
+var _levelDataCbs={havo:[],vwo:[],vmbo:[]},_levelDataLoading={havo:false,vwo:false,vmbo:false};
 function ensureLevelData(level,cb){
-  if(level!=='havo'&&level!=='vwo'){if(cb)cb();return;}
+  if(level!=='havo'&&level!=='vwo'&&level!=='vmbo'){if(cb)cb();return;}
   if(_levelLoaded(level)){if(cb)cb();return;}
   if(cb)_levelDataCbs[level].push(cb);
   if(_levelDataLoading[level])return;
@@ -32,7 +33,7 @@ function ensureLevelData(level,cb){
   s.src='/data-'+level+'.meta.js';   // lichte metadata (structuur + counts); vragen laden per vak
   var done=function(ok){
     _levelDataLoading[level]=false;
-    if(ok){try{_processLevelOe(level==='vwo'?VAKKEN_VWO:VAKKEN);}catch(e){}}
+    if(ok){try{_processLevelOe(_levelArr(level));}catch(e){}}
     var cbs=_levelDataCbs[level];_levelDataCbs[level]=[];
     cbs.forEach(function(f){try{f();}catch(e){}});
     if(!ok){try{if(window.showToast)showToast('Kon lesdata niet laden - controleer je verbinding');}catch(e){}}
@@ -71,7 +72,7 @@ function ensureSamData(level,cb){
 // bestand dat pas laadt wanneer een leerling dat vak opent. Zo downloadt de
 // bezoeker bij niveau-keuze ~15 KB i.p.v. de hele vragenberg.
 function _vakObj(level,vakId){
-  var arr=level==='vwo'?(typeof VAKKEN_VWO!=='undefined'&&VAKKEN_VWO):(typeof VAKKEN!=='undefined'&&VAKKEN);
+  var arr=_levelArr(level);
   if(!arr)return null;
   for(var i=0;i<arr.length;i++)if(arr[i].id===vakId)return arr[i];
   return null;
@@ -95,9 +96,15 @@ function __hydrateVak(level,vakId,payload){
   v._q=true;
 }
 function ensureVakData(level,vakId,cb){
-  if(level!=='havo'&&level!=='vwo'){if(cb)cb();return;}
+  if(level!=='havo'&&level!=='vwo'&&level!=='vmbo'){if(cb)cb();return;}
   if(!_levelLoaded(level)){ensureLevelData(level,function(){ensureVakData(level,vakId,cb);});return;}
   if(vakHydrated(level,vakId)){if(cb)cb();return;}
+  // Vak zonder vragen (bv. VMBO in opbouw): er is geen q-bestand. Niet fetchen —
+  // dat zou een 404 + valse "kon niet laden"-toast geven. Markeer als gehydrateerd
+  // met lege arrays zodat downstream-code nooit `undefined` leest en niets crasht.
+  var _vo=_vakObj(level,vakId);
+  if(_vo){var _tot=0;(_vo.domeinen||[]).forEach(function(d){_tot+=(d.nSv||0)+(d.nOe||0)+(d.nBeg||0);});
+    if(_tot===0){(_vo.domeinen||[]).forEach(function(d){if(!d.sv)d.sv=[];if(!d.oe)d.oe=[];if(!d.begrippen)d.begrippen=[];});_vo._q=true;if(cb)cb();return;}}
   var key=level+'_'+vakId;
   if(cb){(_vakCbs[key]=_vakCbs[key]||[]).push(cb);}
   if(_vakLoading[key])return;
@@ -115,9 +122,9 @@ function ensureVakData(level,vakId,cb){
 }
 // hydrateer álle vakken van een niveau (voor globale features: zoeken, daily challenge-scan)
 function ensureAllVakData(level,cb){
-  if(level!=='havo'&&level!=='vwo'){if(cb)cb();return;}
+  if(level!=='havo'&&level!=='vwo'&&level!=='vmbo'){if(cb)cb();return;}
   if(!_levelLoaded(level)){ensureLevelData(level,function(){ensureAllVakData(level,cb);});return;}
-  var arr=level==='vwo'?VAKKEN_VWO:VAKKEN,pend=0,fired=false;
+  var arr=_levelArr(level),pend=0,fired=false;
   var fin=function(){if(!fired&&pend===0){fired=true;if(cb)cb();}};
   arr.forEach(function(v){if(!v._q){pend++;ensureVakData(level,v.id,function(){pend--;fin();});}});
   fin();
