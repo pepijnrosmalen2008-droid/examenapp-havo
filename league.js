@@ -151,13 +151,16 @@ function ensureLeague(){
     if(rank<=LEAGUE_PROMO && L.division<LEAGUE_DIVISIONS.length-1){L.division++;promoted=true;}
     else if(rank>(finals.length-LEAGUE_DEMOTE) && L.division>0){L.division--;relegated=true;}
     const baseline=Math.max(400,L.weekXP||0,L.lastWeekXP||0);
-    // Beloning = plaatsbeloning (op basis van je eindplaats in de oude divisie)
-    // + eventuele promotie-bonus (voor je nieuwe divisie). Samen uitgekeerd.
+    // Beloning = plaatsbeloning (op je eindplaats in de oude divisie) + eventuele
+    // promotie-bonus. Bij top-7 zit dit in een KIST die je zelf opent (munten +
+    // item/power). Zonder kist (rang 8+) worden de munten direct bijgeschreven.
     const placement=_lgPlacementReward(rank,oldDiv);
     const promoReward=promoted?_lgPromoReward(L.division):0;
     const reward=placement+promoReward;
-    if(reward>0){try{if(typeof addCoins==='function')addCoins(reward);}catch(e){}}
-    L.result={rank,total:finals.length,promoted,relegated,oldDiv,newDiv:L.division,weekXP:L.weekXP||0,placement,promoReward,reward,seen:false};
+    const tier=_lgRewardTier(rank);
+    const chest=tier?{tier,coins:reward,claimed:false}:null;
+    if(!chest&&reward>0){try{if(typeof addCoins==='function')addCoins(reward);}catch(e){}}
+    L.result={rank,total:finals.length,promoted,relegated,oldDiv,newDiv:L.division,weekXP:L.weekXP||0,placement,promoReward,reward,chest,seen:false};
     L.lastWeekXP=L.weekXP||0;
     L.week=wid;L.weekXP=0;
     L.cohort=_lgMakeCohort(L.division,baseline,wid);
@@ -200,6 +203,56 @@ function _lgPlacementReward(rank, division){
 }
 // Promotie-bonus (bovenop de plaatsbeloning) voor de zojuist bereikte divisie.
 function _lgPromoReward(newDivision){ return 100 + (newDivision || 0) * 75; }
+// Kist-tier op basis van je eindplaats: top-3 = gouden kist (zeldzaam item),
+// top-7 (promotiezone) = blauwe kist (power-up). Daaronder geen kist.
+function _lgRewardTier(rank){ if(rank>=1&&rank<=3)return 'gold'; if(rank<=LEAGUE_PROMO)return 'blue'; return null; }
+// Ken een power-up toe (voor de blauwe kist) en geef info voor de reveal terug.
+function _lgGrantPower(){
+  const pool=[];
+  try{ if(typeof getFreezes==='function'&&typeof FREEZE_MAX!=='undefined'&&getFreezes()<FREEZE_MAX)pool.push('freeze'); }catch(e){}
+  pool.push('xpboost');
+  try{ if(typeof xpBoostDayActive==='function'&&!xpBoostDayActive())pool.push('boost24'); }catch(e){}
+  const id=pool[Math.floor(Math.random()*pool.length)]||'xpboost';
+  if(id==='freeze'){ try{setFreezes(getFreezes()+1);}catch(e){} return {id,naam:'Streak-freeze',icon:'freeze'}; }
+  if(id==='boost24'){ try{localStorage.setItem('slagio_xpboost_day',String(Date.now()+24*3600000));}catch(e){} return {id,naam:'24u dubbele XP',icon:'rocket'}; }
+  try{const n=(typeof getXpBoosts==='function'?getXpBoosts():0)+1;localStorage.setItem('slagio_xpboost',String(n));}catch(e){}
+  return {id:'xpboost',naam:'Dubbele XP',icon:'bolt'};
+}
+// Open de verdiende week-kist: kent munten + item/power toe en toont de kist-reveal.
+function _lgOpenRewardChest(onClose){
+  onClose=(typeof onClose==='function')?onClose:function(){};
+  const L=getLeague();
+  if(!L||!L.result||!L.result.chest||L.result.chest.claimed){onClose();return;}
+  const ch=L.result.chest;
+  const coins=ch.coins||0;
+  try{ if(coins>0&&typeof addCoins==='function')addCoins(coins); }catch(e){}
+  let item=null, power=null;
+  if(ch.tier==='gold'){
+    try{
+      const all=(typeof COSMETICS_VONK!=='undefined'?COSMETICS_VONK:[]).concat(typeof COSMETICS_AV!=='undefined'?COSMETICS_AV:[]);
+      const owned=(typeof getOwnedCosmetics==='function')?getOwnedCosmetics():[];
+      const locked=all.filter(c=>owned.indexOf(c.id)===-1);
+      if(locked.length){ item=locked[Math.floor(Math.random()*locked.length)];
+        try{owned.push(item.id);localStorage.setItem('slagio_cosmetics',JSON.stringify(owned));}catch(e){} }
+    }catch(e){}
+    if(!item) power=_lgGrantPower();     // alles al in bezit → toch een power-up
+  }else{
+    power=_lgGrantPower();
+  }
+  ch.claimed=true; L.result.chest=ch; _saveLeague(L);
+  const reward={league:true,tier:ch.tier,coins:coins,item:item,power:power};
+  const kicker=ch.tier==='gold'?'Top-3 van je divisie! 🏆':'Promotiezone! 🎖️';
+  try{ showChest(function(){ try{renderLeague&&renderLeague();}catch(e){} try{renderLeagueHome&&renderLeagueHome();}catch(e){} onClose(); },
+    {variant:'chest-league-'+ch.tier, reward:reward, kicker:kicker}); }
+  catch(e){ onClose(); }
+}
+// Vanuit de recap: sluit de recap en open de kist.
+function _lgClaimFromRecap(){
+  const el=document.getElementById('lg-ceremony');
+  if(el){el.classList.remove('show');setTimeout(()=>{if(el.parentNode)el.remove();},220);}
+  try{_lgSeen();}catch(e){}
+  setTimeout(()=>{try{_lgOpenRewardChest();}catch(e){}},240);
+}
 
 // Zorg dat GEEN bot op de speler lijkt (geen "jij-bot"): een bot met dezelfde
 // naam of hetzelfde dier als jij krijgt deterministisch een andere naam/dier.
@@ -333,6 +386,8 @@ function showLeagueCeremony(r){
   const rNote=(r.promoReward>0&&r.placement>0)?'plek #'+r.rank+' + promotie'
     :(r.promoReward>0?'promotiebonus':'plek #'+r.rank);
   const coinIco=(typeof _ico==='function')?_ico('coin',20):'🪙';
+  const hasChest=!!(r.chest&&!r.chest.claimed);
+  const chestGold=hasChest&&r.chest.tier==='gold';
   const el=document.createElement('div');
   el.id='lg-ceremony';el.className='lgc-overlay';
   el.innerHTML=`<div class="lgc-card ${up?'lgc-up':(dn?'lgc-dn':'lgc-stay')}" style="--lg-col:${showDiv.kleur}">
@@ -344,9 +399,12 @@ function showLeagueCeremony(r){
     <div class="lgc-recap-meta">${lastDiv.naam}-divisie · <b>${r.weekXP||0} XP</b> deze week</div>
     <div class="lgc-title">${title}</div>
     <div class="lgc-sub">${sub}</div>
-    ${r.reward>0?`<div class="lgc-reward"><span class="lgc-reward-ico">${coinIco}</span>+${r.reward} munten <span class="lgc-reward-note">${rNote}</span></div>`:''}
-    <button class="lgc-cta" onclick="_lgCeremonyClose(true)">Bekijk mijn divisie</button>
-    <button class="lgc-skip" onclick="_lgCeremonyClose(false)">Sluiten</button>
+    ${hasChest
+      ? `<div class="lgc-chesthint ${chestGold?'lgc-chest-gold':'lgc-chest-blue'}"><span class="lgc-chest-em">🎁</span> Je verdiende een <b>${chestGold?'gouden':'blauwe'} kist</b>${chestGold?' — munten + zeldzaam item':' — munten + power-up'}</div>
+         <button class="lgc-cta" onclick="_lgClaimFromRecap()">Open je kist 🎁</button>`
+      : `${r.reward>0?`<div class="lgc-reward"><span class="lgc-reward-ico">${coinIco}</span>+${r.reward} munten <span class="lgc-reward-note">${rNote}</span></div>`:''}
+         <button class="lgc-cta" onclick="_lgCeremonyClose(true)">Bekijk mijn divisie</button>`}
+    <button class="lgc-skip" onclick="_lgCeremonyClose(false)">${hasChest?'Later':'Sluiten'}</button>
   </div>`;
   document.body.appendChild(el);
   requestAnimationFrame(()=>el.classList.add('show'));
@@ -561,23 +619,29 @@ function renderLeague(){
   const next=LEAGUE_DIVISIONS[L.division+1];
   const prev=LEAGUE_DIVISIONS[L.division-1];
   const hdr=`
-    <div class="lg-hero" style="--lg-col:${div.kleur}">
+    <div class="lg-hero lg-hero-compact" style="--lg-col:${div.kleur}">
       <div class="lg-hero-badge no-ico">${div.ic}</div>
-      <div class="lg-hero-name">${div.naam}-divisie</div>
-      <div class="lg-hero-sub">Nog ${_lgDaysLeft()} dag${_lgDaysLeft()===1?'':'en'} · top ${LEAGUE_PROMO} promoveert${next?' naar '+next.naam:''}${prev?', onderste '+LEAGUE_DEMOTE+' degradeert':''}</div>
+      <div class="lg-hero-txt">
+        <div class="lg-hero-name">${div.naam}-divisie</div>
+        <div class="lg-hero-sub">Nog ${_lgDaysLeft()} dag${_lgDaysLeft()===1?'':'en'} · top ${LEAGUE_PROMO} promoveert${next?' naar '+next.naam:''}${prev?', onderste '+LEAGUE_DEMOTE+' degradeert':''}</div>
+      </div>
     </div>`;
-  // Te winnen deze week: plaatsbeloningen + eventuele promotie-bonus.
-  const coin=(typeof _ico==='function')?_ico('coin',14):'🪙';
+  // Te winnen deze week (compacte strip): kist-beloningen per plek.
+  const coin=(typeof _ico==='function')?_ico('coin',13):'🪙';
   const rw1=_lgPlacementReward(1,L.division), rw3=_lgPlacementReward(3,L.division), rw7=_lgPlacementReward(LEAGUE_PROMO,L.division);
-  const promoRw=(L.division<LEAGUE_DIVISIONS.length-1)?_lgPromoReward(L.division+1):0;
-  const rewardsRow=`<div class="lg-rewards"><span class="lg-rewards-lbl">Te winnen</span>
-    <span class="lg-rw"><b>🥇</b>${rw1}${coin}</span>
-    <span class="lg-rw"><b>Top&nbsp;3</b>${rw3}${coin}</span>
-    <span class="lg-rw"><b>Top&nbsp;${LEAGUE_PROMO}</b>${rw7}${coin}</span>
-    ${promoRw?`<span class="lg-rw lg-rw-promo"><b>Promotie</b>+${promoRw}${coin}</span>`:''}</div>`;
-  // Knop om de weekafsluiting-recap opnieuw te bekijken.
-  const recapBtn=L.result?`<button class="lg-recap-btn" onclick="_lgShowRecap()"><span class="lg-recap-ic">📊</span>Recap vorige week — je werd <b>#${L.result.rank}</b> van ${L.result.total||LEAGUE_COHORT}<span class="lg-recap-arr">→</span></button>`:'';
-  box.innerHTML=hdr+rewardsRow+recapBtn+leagueRushChip()+_lgFinishBanner(rows)+_lgListWithDividers(rows);
+  const rewardsRow=`<div class="lg-rewards"><span class="lg-rewards-lbl">🎁 Kisten</span>
+    <span class="lg-rw lg-rw-gold"><b>Top&nbsp;3</b>${rw3}+${coin}item</span>
+    <span class="lg-rw lg-rw-blue"><b>Top&nbsp;${LEAGUE_PROMO}</b>${rw7}+${coin}power</span></div>`;
+  // Onopgehaalde week-kist? Prominente open-knop. Anders: recap-knop vorige week.
+  const chestUnclaimed=!!(L.result&&L.result.chest&&!L.result.chest.claimed);
+  let topBtn='';
+  if(chestUnclaimed){
+    const gold=L.result.chest.tier==='gold';
+    topBtn=`<button class="lg-chest-btn ${gold?'lg-chest-gold':'lg-chest-blue'}" onclick="_lgOpenRewardChest()"><span class="lg-chest-em">🎁</span><span class="lg-chest-tx">Open je week-kist<small>${gold?'Top-3 · munten + zeldzaam item':'Top-7 · munten + power-up'}</small></span><span class="lg-recap-arr">→</span></button>`;
+  }else if(L.result){
+    topBtn=`<button class="lg-recap-btn" onclick="_lgShowRecap()"><span class="lg-recap-ic">📊</span>Recap vorige week — je werd <b>#${L.result.rank}</b> van ${L.result.total||LEAGUE_COHORT}<span class="lg-recap-arr">→</span></button>`;
+  }
+  box.innerHTML=hdr+topBtn+rewardsRow+leagueRushChip()+_lgFinishBanner(rows)+_lgListWithDividers(rows);
 }
 // Weekafsluiting-recap opnieuw tonen (vanuit de divisie-pagina).
 function _lgShowRecap(){

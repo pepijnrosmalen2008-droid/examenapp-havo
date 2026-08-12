@@ -934,11 +934,11 @@ function showChest(finish,ctx){
   finish=(typeof finish==='function')?finish:function(){};
   ctx=ctx||{};
   if(document.getElementById('chest-overlay')){finish();return;}
-  const reward=_chestRoll();
+  const reward=ctx.reward?ctx.reward:_chestRoll();   // ctx.reward = vooraf bepaalde beloning (bv. league-kist)
   let taps=0;const NEED=3;
-  const kicker=ctx.goal?'Dagdoel bereikt! 🎯':'Je hebt een kistje verdiend!';
+  const kicker=ctx.kicker||(ctx.goal?'Dagdoel bereikt! 🎯':'Je hebt een kistje verdiend!');
   const ov=document.createElement('div');
-  ov.id='chest-overlay';ov.className='chest-overlay';
+  ov.id='chest-overlay';ov.className='chest-overlay'+(ctx.variant?(' '+ctx.variant):'');
   ov.innerHTML=`
     <div class="chest-inner">
       <div class="chest-kicker">${kicker}</div>
@@ -960,8 +960,8 @@ function showChest(finish,ctx){
   const close=()=>{
     ov.classList.remove('show'); setTimeout(()=>{if(ov.parentNode)ov.remove();},280);
     // Munten uit de kist naar de muntenbalk laten vliegen (net als na de quiz).
-    const coinBtn=document.getElementById('res-coinbtn');
-    if(reward&&!reward.rare&&reward.coins>0&&typeof coinFlyToBar==='function'&&coinBtn){
+    const coinBtn=document.getElementById('res-coinbtn')||document.getElementById('econ-coin-btn');
+    if(reward&&reward.coins>0&&typeof coinFlyToBar==='function'&&coinBtn){
       setTimeout(()=>{try{coinFlyToBar(reward.coins,coinBtn);}catch(e){}},240);
       setTimeout(finish,1250);            // wachten tot de munten geland zijn
     }else{ finish(); }
@@ -979,20 +979,43 @@ function showChest(finish,ctx){
   box.addEventListener('keydown',e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();tap();}});
   setTimeout(()=>{try{box.focus();}catch(e){}},300);
 }
+// Onthulling van een league-kist (munten + zeldzaam item óf power-up). De items
+// zelf zijn al toegekend in _lgOpenRewardChest; dit is puur de reveal.
+function _leagueReveal(reward){
+  const cico=(typeof _ico==='function')?_ico('coin',22):'🪙';
+  let head='';
+  if(reward.item){
+    const isVonk=(typeof COSMETICS_VONK!=='undefined')&&COSMETICS_VONK.some(c=>c.id===reward.item.id);
+    const icon=isVonk?(_VK_ICON[reward.item.id]?`<svg viewBox="0 0 60 60" width="60" height="60">${_VK_ICON[reward.item.id]}</svg>`:reward.item.emoji)
+                     :(_AV_SKIN_SVG[reward.item.id]?`<svg viewBox="0 0 100 100" width="64" height="64">${_AV_SKIN_SVG[reward.item.id]}</svg>`:reward.item.emoji);
+    head=`<div class="chest-rare-tag">✦ ZELDZAAM ITEM ✦</div><div class="chest-item-ic chest-item-ic-gold">${icon}</div><div class="chest-item-nm">${reward.item.naam}</div><div class="chest-item-sub">Ontgrendeld — draag het in de winkel.</div>`;
+  }else if(reward.power){
+    const pic=(typeof _ico==='function')?_ico(reward.power.icon,50):'⚡';
+    head=`<div class="chest-rare-tag chest-tag-blue">POWER-UP</div><div class="chest-item-ic chest-item-ic-blue">${pic}</div><div class="chest-item-nm">${reward.power.naam}</div><div class="chest-item-sub">Toegevoegd aan je voorraad.</div>`;
+  }
+  return head+`<div class="chest-league-coins">${cico} +${reward.coins||0} munten</div>`;
+}
 function _chestBurst(ov,reward,close,hint,box){
-  // Bij rare: de kist wordt eerst GOUD, dan gaat de deksel open.
+  // Bij een zeldzaam item: korte gouden-beat vóór de deksel opengaat.
+  const _rareItem=(reward.rare&&reward.item)||(reward.league&&reward.item);
   if(reward.rare&&reward.item){ov.classList.add('chest-gold');try{haptic([30,40,30]);}catch(e){}}
+  else if(_rareItem){try{haptic([30,40,30]);}catch(e){}}
   setTimeout(()=>{
     ov.classList.add('chest-opened');
     if(hint)hint.style.display='none';
     const dots=ov.querySelector('#chest-dots');if(dots)dots.style.display='none';
-    try{playSound(reward.rare?'evolve':'levelup');}catch(e){}
+    // Een gouden league-kist (top-3, zeldzaam item) krijgt dezelfde premium-beat als een rare kist.
+    const _premium=reward.rare||(reward.league&&reward.tier==='gold');
+    try{playSound(_premium?'evolve':'levelup');}catch(e){}
     // Krachtige openings-haptiek (langere, opbouwende buzz).
-    try{haptic(reward.rare?[60,30,80,30,120,30,220]:[50,30,90,30,170]);}catch(e){}
-    try{const bx=ov.querySelector('#chest-box');if(bx)_chestCoinBurst(bx,reward.rare);}catch(e){}
-    try{if(typeof launchConfetti==='function')launchConfetti(reward.rare?'gold':undefined);}catch(e){}
+    try{haptic(_premium?[60,30,80,30,120,30,220]:[50,30,90,30,170]);}catch(e){}
+    try{const bx=ov.querySelector('#chest-box');if(bx)_chestCoinBurst(bx,_premium);}catch(e){}
+    try{if(typeof launchConfetti==='function')launchConfetti(_premium?'gold':undefined);}catch(e){}
     let revealHtml='';
-    if(reward.rare&&reward.item){
+    if(reward.league){
+      revealHtml=_leagueReveal(reward);   // munten + item/power (al toegekend)
+      try{if(typeof renderEconHome==='function')renderEconHome();}catch(e){}
+    }else if(reward.rare&&reward.item){
       try{ const owned=getOwnedCosmetics(); if(owned.indexOf(reward.item.id)===-1){owned.push(reward.item.id);localStorage.setItem('slagio_cosmetics',JSON.stringify(owned));} }catch(e){}
       const isVonk=(typeof COSMETICS_VONK!=='undefined')&&COSMETICS_VONK.some(c=>c.id===reward.item.id);
       const icon=isVonk?(_VK_ICON[reward.item.id]?`<svg viewBox="0 0 60 60" width="66" height="66">${_VK_ICON[reward.item.id]}</svg>`:reward.item.emoji)
@@ -1013,7 +1036,7 @@ function _chestBurst(ov,reward,close,hint,box){
     if(rev){rev.innerHTML=revealHtml;requestAnimationFrame(()=>rev.classList.add('show'));}
     const cta=ov.querySelector('#chest-cta');
     if(cta){cta.style.display='';cta.onclick=close;setTimeout(()=>{try{cta.focus();}catch(e){}},260);}
-  }, reward.rare&&reward.item?480:0);   // korte gouden-transformatie-beat bij rare
+  }, _rareItem?480:0);   // korte gouden-transformatie-beat bij een zeldzaam item
 }
 
 function renderGreeting(){

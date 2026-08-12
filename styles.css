@@ -6653,16 +6653,68 @@ html.dark .dom-hero-card{background:linear-gradient(180deg,rgba(255,255,255,.045
 .lg-hero-badge{font-size:46px;line-height:1}
 .lg-hero-name{font-family:var(--font-head,inherit);font-size:23px;font-weight:800;margin-top:6px;letter-spacing:-.3px}
 .lg-hero-sub{font-size:12.5px;opacity:.95;margin-top:5px}
-/* Te-winnen-beloningen op de divisiepagina */
-.lg-rewards{display:flex;flex-wrap:wrap;align-items:center;gap:7px;margin:0 0 12px;padding:11px 13px;border-radius:14px;
-  background:var(--s);border:1px solid var(--bo)}
-.lg-rewards-lbl{font-size:11px;font-weight:800;letter-spacing:.05em;text-transform:uppercase;color:var(--mu);margin-right:2px}
-.lg-rw{display:inline-flex;align-items:center;gap:4px;font-size:12.5px;font-weight:800;color:var(--dk);
+/* Compacte divisie-header (horizontaal) zodat de ranking sneller in beeld komt */
+.lg-hero-compact{display:flex;align-items:center;gap:14px;text-align:left;padding:13px 16px;margin-bottom:12px}
+.lg-hero-compact .lg-hero-badge{font-size:38px}
+.lg-hero-compact .lg-hero-name{margin-top:0;font-size:20px}
+.lg-hero-txt{min-width:0}
+/* Te-winnen-beloningen: compacte enkele regel (kist-tiers) */
+.lg-rewards{display:flex;flex-wrap:nowrap;align-items:center;gap:7px;margin:0 0 10px;padding:8px 11px;border-radius:12px;
+  background:var(--s);border:1px solid var(--bo);overflow-x:auto;-webkit-overflow-scrolling:touch}
+.lg-rewards-lbl{font-size:11px;font-weight:800;letter-spacing:.03em;color:var(--mu);margin-right:1px;white-space:nowrap;flex-shrink:0}
+.lg-rw{display:inline-flex;align-items:center;gap:3px;font-size:12px;font-weight:800;color:var(--dk);white-space:nowrap;flex-shrink:0;
   background:color-mix(in srgb,var(--mu) 12%,transparent);border:1px solid var(--bo);border-radius:999px;padding:4px 9px}
-.lg-rw b{font-weight:800;color:var(--mu);font-size:11.5px;margin-right:1px}
-.lg-rw svg{width:14px;height:14px;vertical-align:-2px}
-.lg-rw-promo{background:color-mix(in srgb,var(--or) 15%,transparent);border-color:color-mix(in srgb,var(--or) 34%,transparent)}
-.lg-rw-promo b{color:var(--or)}
+.lg-rw b{font-weight:800;color:var(--mu);font-size:11px;margin-right:2px}
+.lg-rw svg{width:13px;height:13px;vertical-align:-2px}
+.lg-rw-gold{background:color-mix(in srgb,#8b5cf6 13%,transparent);border-color:color-mix(in srgb,#8b5cf6 32%,transparent)}
+.lg-rw-gold b{color:#a855f7}
+.lg-rw-blue{background:color-mix(in srgb,#38bdf8 13%,transparent);border-color:color-mix(in srgb,#38bdf8 32%,transparent)}
+.lg-rw-blue b{color:#2b9fe0}
+/* Week-kist openen-knop op de divisiepagina */
+.lg-chest-btn{display:flex;align-items:center;gap:11px;width:100%;margin:0 0 12px;padding:12px 15px;cursor:pointer;text-align:left;
+  color:#fff;font-family:var(--font);border-radius:14px;border:1.5px solid;transition:transform .12s,filter .15s}
+.lg-chest-btn:hover{filter:brightness(1.05)}
+.lg-chest-btn:active{transform:scale(.99)}
+.lg-chest-gold{background:linear-gradient(135deg,#7c3aed,#a855f7);border-color:#c4b5fd;box-shadow:0 8px 22px -8px rgba(139,92,246,.7)}
+.lg-chest-blue{background:linear-gradient(135deg,#1e6fd6,#38bdf8);border-color:#bae6fd;box-shadow:0 8px 22px -8px rgba(43,134,232,.6)}
+.lg-chest-em{font-size:26px;flex-shrink:0}
+.lg-chest-tx{display:flex;flex-direction:column;font-weight:800;font-size:15px;line-height:1.15}
+.lg-chest-tx small{font-weight:600;font-size:11.5px;opacity:.92;margin-top:1px}
+.lg-chest-btn .lg-recap-arr{margin-left:auto;color:#fff;font-weight:800}
+/* League-kist kleurvarianten (top-3 = paars-goud legendarisch, top-7 = blauw) */
+.chest-league-gold .chest-face{fill:#7c3aed;stroke:#5b21b6}
+.chest-league-gold .chest-lid-face{fill:#8b5cf6;stroke:#5b21b6}
+.chest-league-gold .chest-band{fill:#facc15}
+.chest-league-gold .chest-lock{fill:#fde68a;stroke:#eab308}
+.chest-league-gold .chest-lockhole{fill:#a16207}
+.chest-league-gold .chest-glow{background:radial-gradient(circle,rgba(167,139,250,.6),rgba(167,139,250,0) 62%)}
+.chest-league-gold .chest-box{filter:drop-shadow(0 12px 34px rgba(139,92,246,.55))}
+.chest-league-gold .chest-sparkles{opacity:1}
+.chest-league-gold .cs1{animation:chestTwinkle 1.1s ease-in-out infinite}
+.chest-league-gold .cs2{animation:chestTwinkle 1.1s ease-in-out .35s infinite}
+.chest-league-gold .cs3{animation:chestTwinkle 1.1s ease-in-out .7s infinite}
+.chest-league-blue .chest-face{fill:#1e6fd6;stroke:#134b96}
+.chest-league-blue .chest-lid-face{fill:#2b86e8;stroke:#134b96}
+.chest-league-blue .chest-band{fill:#7dd3fc}
+.chest-league-blue .chest-lock{fill:#e0f2fe;stroke:#38bdf8}
+.chest-league-blue .chest-lockhole{fill:#0c4a6e}
+.chest-league-blue .chest-glow{background:radial-gradient(circle,rgba(56,189,248,.5),rgba(56,189,248,0) 62%)}
+.chest-league-blue .chest-box{filter:drop-shadow(0 12px 30px rgba(43,134,232,.5))}
+.chest-league-blue .chest-sparkles{opacity:1}
+.chest-league-blue .cs1,.chest-league-blue .cs2,.chest-league-blue .cs3{fill:#bae6fd;animation:chestTwinkle 1.2s ease-in-out infinite}
+/* League-kist reveal (item/power + munten) */
+.chest-rare-tag.chest-tag-blue{color:#38bdf8;text-shadow:0 0 14px rgba(56,189,248,.6)}
+.chest-item-ic.chest-item-ic-blue{background:radial-gradient(circle at 50% 35%,rgba(56,189,248,.34),rgba(56,189,248,.08));border-color:rgba(56,189,248,.6);box-shadow:0 0 28px rgba(56,189,248,.32)}
+.chest-league-coins{margin-top:10px;font-family:var(--font-head);font-weight:900;font-size:16px;color:#ffce54;display:inline-flex;align-items:center;gap:6px}
+.chest-league-coins svg{width:20px;height:20px}
+/* Recap: kist-hint + Open-je-kist */
+.lgc-chesthint{position:relative;display:inline-flex;align-items:center;gap:7px;margin:2px auto 16px;padding:9px 15px;border-radius:999px;font-size:13px;font-weight:700;color:var(--dk)}
+.lgc-chesthint b{font-weight:900}
+.lgc-chest-em{font-size:17px}
+.lgc-chest-gold{background:color-mix(in srgb,#8b5cf6 16%,transparent);border:1px solid color-mix(in srgb,#8b5cf6 40%,transparent)}
+.lgc-chest-gold b{color:#a855f7}
+.lgc-chest-blue{background:color-mix(in srgb,#38bdf8 16%,transparent);border:1px solid color-mix(in srgb,#38bdf8 40%,transparent)}
+.lgc-chest-blue b{color:#2b9fe0}
 /* Recap-knop (vorige week opnieuw bekijken) */
 .lg-recap-btn{display:flex;align-items:center;gap:8px;width:100%;margin:0 0 12px;padding:12px 14px;cursor:pointer;
   font-family:var(--font);font-size:13.5px;font-weight:700;color:var(--dk);text-align:left;
