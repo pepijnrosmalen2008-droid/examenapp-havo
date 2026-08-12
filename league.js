@@ -19,6 +19,13 @@ const LEAGUE_DIVISIONS = [
 const LEAGUE_COHORT = 30;   // jij + 29 bots
 const LEAGUE_PROMO  = 7;    // top-7 promoveert
 const LEAGUE_DEMOTE = 5;    // onderste-5 degradeert
+// Absoluut XP-plafond per divisie: de sterkste bot (#1) komt hier ~ op uit, de
+// rest zit eronder. Vaste, niveau-onafhankelijke doelen i.p.v. meeschalen met de
+// speler → geen 20k-bots meer in brons; elke divisie voelt als een eigen niveau.
+const LEAGUE_TOP_XP   = [4500, 7500, 18000, 24000, 30000, 38000];
+// Richt-XP rond de promotiedrempel (~plek 7): bepaalt hoe zwaar promoveren voelt.
+const LEAGUE_PROMO_XP = [1100, 2600, 8000, 12000, 16000, 22000];
+function _lgDivTop(d){return LEAGUE_TOP_XP[d]!=null?LEAGUE_TOP_XP[d]:LEAGUE_TOP_XP[LEAGUE_TOP_XP.length-1];}
 // Bots krijgen een echte app-avatar (zelfde dieren + evolutiestadia als spelers).
 const _LG_DIER = ['adelaar','beer','cactus','draak','eenhoorn','gorilla','haai','leeuw','octopus','olifant','robot','slang','slijm','tijger','uil','vlinder','vos','wolf'];
 
@@ -46,29 +53,55 @@ function _lgWeekId(d){return _lgWeekStart(d).toISOString().slice(0,10);}
 function _lgWeekProgress(){const s=_lgWeekStart(new Date());const now=Date.now();return Math.max(0,Math.min(1,(now-s.getTime())/(7*86400000)));}
 function _lgDaysLeft(){const s=_lgWeekStart(new Date());const end=s.getTime()+7*86400000;return Math.max(0,Math.ceil((end-Date.now())/86400000));}
 
-// ── Opslag ──
-function getLeague(){try{return JSON.parse(localStorage.getItem('slagio_league')||'null');}catch(e){return null;}}
-function _saveLeague(L){try{localStorage.setItem('slagio_league',JSON.stringify(L));}catch(e){}}
+// ── Opslag (gescheiden per niveau: havo/vwo hebben een eigen divisie + cohort) ──
+function _lgKey(){return (typeof lvlCol==='function')?lvlCol('slagio_league'):'slagio_league';}
+function getLeague(){
+  try{
+    let raw=localStorage.getItem(_lgKey());
+    if(raw==null){
+      // Migratie: neem de oude niveau-loze league eenmalig over voor dit niveau,
+      // zodat bestaande spelers hun divisie/voortgang niet kwijtraken.
+      const legacy=localStorage.getItem('slagio_league');
+      if(legacy!=null){ try{localStorage.setItem(_lgKey(),legacy);}catch(e){} raw=legacy; }
+    }
+    return JSON.parse(raw||'null');
+  }catch(e){return null;}
+}
+function _saveLeague(L){try{localStorage.setItem(_lgKey(),JSON.stringify(L));}catch(e){}}
+// Server-bucket per niveau: vwo krijgt een divisie-offset zodat echte medespelers
+// van havo/vwo elkaar niet mengen (lokale weergavedivisie blijft gewoon 0..5).
+function _lgSyncDiv(d){return (d||0)+((typeof APP_LEVEL!=='undefined'&&APP_LEVEL==='vwo')?100:0);}
 
 function _lgMakeCohort(division,baseline,seedStr){
-  const rng=_lgRng(_lgHash(seedStr+'|d'+division));
-  const divMult=Math.pow(1.16,division);
-  // Beginner-vriendelijk onderaan: Brons/Zilver flink zachter (haalbaar voor
-  // nieuwe leerlingen), Goud+ pas vol competitief. 'ease' verlaagt de doelen in
-  // lage divisies; 'spread' houdt Brons smal (geen uitschieters die wegrennen).
-  const EASE=[0.5,0.72,0.9,1.0,1.08,1.16];
-  const ease=EASE[division]!=null?EASE[division]:1.16;
-  const lo=0.22+division*0.03;
-  const spread=1.35+division*0.42;
+  // `baseline` (jouw XP) wordt bewust NIET meer gebruikt om de doelen te schalen.
+  // De bots hebben nu absolute, per-divisie doelen (LEAGUE_TOP_XP / _PROMO_XP),
+  // zodat brons nooit meer 20k-bots krijgt en promoveren onderin haalbaar blijft.
+  // Het niveau (havo/vwo) zit in de seed → gescheiden bot-cohorten per niveau.
+  const lvl=(typeof APP_LEVEL!=='undefined')?APP_LEVEL:'havo';
+  const rng=_lgRng(_lgHash(seedStr+'|d'+division+'|'+lvl));
+  const top=_lgDivTop(division);
+  const promo=LEAGUE_PROMO_XP[division]!=null?LEAGUE_PROMO_XP[division]:Math.round(top*0.5);
+  const floor=Math.max(40,Math.round(promo*0.14));
   const out=[];
   for(let i=0;i<LEAGUE_COHORT-1;i++){
-    const factor=lo+rng()*spread;
-    const target=Math.max(45,Math.round(baseline*divMult*ease*factor));
+    const rank=i+1;                                   // 1 = sterkste bot
+    let t;
+    if(rank<=LEAGUE_PROMO){
+      // top (#1) → promotiedrempel (#7): de eerste plekken lopen van het plafond
+      // naar de promotielijn (rang 1 is de "absolute top"-uitschieter).
+      const f=(rank-1)/(LEAGUE_PROMO-1);              // 0..1
+      t=top+(promo-top)*Math.pow(f,0.85);
+    }else{
+      // promotiedrempel → vloer over de resterende plekken (lange, zachte staart).
+      const f=(rank-LEAGUE_PROMO)/((LEAGUE_COHORT-1)-LEAGUE_PROMO); // 0..1
+      t=promo+(floor-promo)*Math.pow(f,0.9);
+    }
+    t=t*(0.93+rng()*0.14);                            // lichte ruis (±7%)
     out.push({
       naam:_lgBotName(rng),
       animalId:_LG_DIER[Math.floor(rng()*_LG_DIER.length)],
       stage:Math.min(6,1+Math.floor(rng()*4)+Math.floor(division*0.7)),
-      target:target,
+      target:Math.min(top,Math.max(floor,Math.round(t))),  // nooit boven het divisieplafond
       front:0.55+rng()*0.95,  // hoe vroeg in de week deze speler actief is
       seed:Math.floor(rng()*1e9)  // eigen seed voor de sessie-gedreven XP-groei
     });
@@ -134,13 +167,21 @@ function ensureLeague(){
   let L=getLeague();
   const wid=_lgWeekId(new Date());
   if(!L){
-    L={week:wid,division:0,weekXP:0,lastWeekXP:0,result:null,cohort:_lgMakeCohort(0,700,wid)};
+    L={week:wid,division:0,weekXP:0,lastWeekXP:0,result:null,cohortVer:2,cohort:_lgMakeCohort(0,0,wid)};
     _saveLeague(L);return L;
   }
   // Migratie: oude cohorts (van vóór de echte avatars) misten animalId → bots
   // vielen terug op een standaard-vos. Regenereer die in-place (deterministisch).
   if(L.cohort && L.cohort.length && !L.cohort[0].animalId){
-    L.cohort=_lgMakeCohort(L.division, Math.max(400,L.lastWeekXP||0,700), L.week);
+    L.cohort=_lgMakeCohort(L.division, 0, L.week);
+    L.cohortVer=2;
+    _saveLeague(L);
+  }
+  // Migratie naar absolute divisiedoelen: oude cohorts schaalden met jouw XP en
+  // konden 20k+ worden. Regenereer eenmalig deze week met de nieuwe gecapte doelen.
+  if(L.cohortVer!==2){
+    L.cohort=_lgMakeCohort(L.division, 0, L.week);
+    L.cohortVer=2;
     _saveLeague(L);
   }
   if(L.week!==wid){
@@ -163,7 +204,7 @@ function ensureLeague(){
     L.result={rank,total:finals.length,promoted,relegated,oldDiv,newDiv:L.division,weekXP:L.weekXP||0,placement,promoReward,reward,chest,seen:false};
     L.lastWeekXP=L.weekXP||0;
     L.week=wid;L.weekXP=0;
-    L.cohort=_lgMakeCohort(L.division,baseline,wid);
+    L.cohort=_lgMakeCohort(L.division,baseline,wid);L.cohortVer=2;
     _saveLeague(L);
   }
   // Houd de bots competitief: schaal hun weekdoelen mee met jouw tempo, zodat een
@@ -184,11 +225,12 @@ function _lgKeepCompetitive(L){
   const minProj=div===0?900:(div===1?550:300);
   if(projected<minProj)return;
   let topTarget=0;for(const b of L.cohort){if((b.target||0)>topTarget)topTarget=b.target||0;}
+  const cap=_lgDivTop(div);                           // hard divisieplafond
   const lead=div===0?1.0:(div===1?1.08:1.18);         // Brons: hooguit gelijk, niet erboven
-  const want=projected*lead;
+  const want=Math.min(projected*lead, cap);           // nooit boven het plafond opjagen
   if(topTarget>=want)return;                          // al sterk genoeg
   const scale=Math.min(div===0?1.25:1.6, want/Math.max(1,topTarget)); // gestage, gecapte opschaling
-  L.cohort.forEach(b=>{ b.target=Math.round((b.target||0)*scale); });
+  L.cohort.forEach(b=>{ b.target=Math.min(cap, Math.round((b.target||0)*scale)); }); // elke bot ≤ plafond
   _saveLeague(L);
 }
 // Beloning voor je eindplaats (los van promotie). Top-3 en de promotiezone
@@ -343,8 +385,9 @@ function leagueSyncAndFetch(force){
   const L=ensureLeague();const me=_lgMeAvatar();
   (async()=>{
     try{
-      await SB.rpc('league_sync',{p_did:_DID,p_naam:_lgMeName(),p_animal:me.id,p_stage:me.stage||0,p_division:L.division,p_week:L.week,p_xp:L.weekXP||0});
-      const {data,error}=await SB.rpc('league_cohort',{p_division:L.division,p_week:L.week});
+      const sdiv=_lgSyncDiv(L.division);
+      await SB.rpc('league_sync',{p_did:_DID,p_naam:_lgMeName(),p_animal:me.id,p_stage:me.stage||0,p_division:sdiv,p_week:L.week,p_xp:L.weekXP||0});
+      const {data,error}=await SB.rpc('league_cohort',{p_division:sdiv,p_week:L.week});
       if(!error&&Array.isArray(data)){
         window._lgRealCache={week:L.week,division:L.division,players:data,ts:Date.now()};
         try{renderLeagueHome();}catch(e){}
