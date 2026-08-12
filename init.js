@@ -392,6 +392,8 @@ updateLevelChip();
 if(document.getElementById('sc-schedule'))renderSchedule();
 buildRegisterAnimalPicker();
 buildSlaagInputs();
+// Home-screen widget-mogelijkheid: app-icoon-badge + snelkoppeling-deeplinks.
+try{if(typeof slagioWidgetInit==='function')slagioWidgetInit();}catch(e){}
 // Show welcome on first load (sc-welcome is default via class="on")
 // ═══════ BOTTOM NAV ═══════
 function updateBottomNav(id){

@@ -983,17 +983,26 @@ function showChest(finish,ctx){
 // zelf zijn al toegekend in _lgOpenRewardChest; dit is puur de reveal.
 function _leagueReveal(reward){
   const cico=(typeof _ico==='function')?_ico('coin',22):'🪙';
+  const isLegend=reward.tier==='legend';
   let head='';
   if(reward.item){
     const isVonk=(typeof COSMETICS_VONK!=='undefined')&&COSMETICS_VONK.some(c=>c.id===reward.item.id);
     const icon=isVonk?(_VK_ICON[reward.item.id]?`<svg viewBox="0 0 60 60" width="60" height="60">${_VK_ICON[reward.item.id]}</svg>`:reward.item.emoji)
                      :(_AV_SKIN_SVG[reward.item.id]?`<svg viewBox="0 0 100 100" width="64" height="64">${_AV_SKIN_SVG[reward.item.id]}</svg>`:reward.item.emoji);
-    head=`<div class="chest-rare-tag">✦ ZELDZAAM ITEM ✦</div><div class="chest-item-ic chest-item-ic-gold">${icon}</div><div class="chest-item-nm">${reward.item.naam}</div><div class="chest-item-sub">Ontgrendeld — draag het in de winkel.</div>`;
+    const tag=isLegend?'<div class="chest-rare-tag chest-tag-legend">👑 LEGENDE-BELONING 👑</div>':'<div class="chest-rare-tag">✦ ZELDZAAM ITEM ✦</div>';
+    const icCls=isLegend?'chest-item-ic-legend':'chest-item-ic-gold';
+    head=`${tag}<div class="chest-item-ic ${icCls}">${icon}</div><div class="chest-item-nm">${reward.item.naam}</div><div class="chest-item-sub">Ontgrendeld — draag het in de winkel.</div>`;
   }else if(reward.power){
     const pic=(typeof _ico==='function')?_ico(reward.power.icon,50):'⚡';
     head=`<div class="chest-rare-tag chest-tag-blue">POWER-UP</div><div class="chest-item-ic chest-item-ic-blue">${pic}</div><div class="chest-item-nm">${reward.power.naam}</div><div class="chest-item-sub">Toegevoegd aan je voorraad.</div>`;
   }
-  return head+`<div class="chest-league-coins">${cico} +${reward.coins||0} munten</div>`;
+  // Legende-kist geeft item én power-up: toon de power-up als bonusregel.
+  let bonus='';
+  if(reward.item&&reward.power){
+    const pic2=(typeof _ico==='function')?_ico(reward.power.icon,18):'⚡';
+    bonus=`<div class="chest-league-bonus">${pic2} + ${reward.power.naam}</div>`;
+  }
+  return head+bonus+`<div class="chest-league-coins">${cico} +${reward.coins||0} munten</div>`;
 }
 function _chestBurst(ov,reward,close,hint,box){
   // Bij een zeldzaam item: korte gouden-beat vóór de deksel opengaat.
@@ -1004,8 +1013,8 @@ function _chestBurst(ov,reward,close,hint,box){
     ov.classList.add('chest-opened');
     if(hint)hint.style.display='none';
     const dots=ov.querySelector('#chest-dots');if(dots)dots.style.display='none';
-    // Een gouden league-kist (top-3, zeldzaam item) krijgt dezelfde premium-beat als een rare kist.
-    const _premium=reward.rare||(reward.league&&reward.tier==='gold');
+    // Een gouden/legende league-kist krijgt dezelfde premium-beat als een rare kist.
+    const _premium=reward.rare||(reward.league&&(reward.tier==='gold'||reward.tier==='legend'));
     try{playSound(_premium?'evolve':'levelup');}catch(e){}
     // Krachtige openings-haptiek (langere, opbouwende buzz).
     try{haptic(_premium?[60,30,80,30,120,30,220]:[50,30,90,30,170]);}catch(e){}

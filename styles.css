@@ -6657,6 +6657,12 @@ html.dark .dom-hero-card{background:linear-gradient(180deg,rgba(255,255,255,.045
 .lg-hero-compact{display:flex;align-items:center;gap:14px;text-align:left;padding:13px 16px;margin-bottom:12px}
 .lg-hero-compact .lg-hero-badge{font-size:38px}
 .lg-hero-compact .lg-hero-name{margin-top:0;font-size:20px}
+/* Legende-hero: het ultieme doel — prismatische, bewegende gloed + kroon-glans */
+.lg-hero-legend{background:linear-gradient(120deg,#4c1d95,#7c3aed 38%,#a855f7 60%,#f0abfc 82%,#fbbf24);background-size:220% 100%;animation:lgLegendShift 7s ease-in-out infinite;
+  box-shadow:0 14px 34px -6px rgba(124,58,237,.6),0 1px 0 rgba(255,255,255,.4) inset}
+.lg-hero-legend::after{content:'';position:absolute;inset:-40% -10%;background:radial-gradient(circle at 30% 20%,rgba(255,255,255,.28),transparent 42%);pointer-events:none}
+.lg-hero-legend .lg-hero-badge{filter:drop-shadow(0 2px 8px rgba(251,191,36,.7))}
+@media (prefers-reduced-motion:reduce){.lg-hero-legend,.lg-chest-legend{animation:none}.chest-league-legend .chest-glow{animation:none}}
 .lg-hero-txt{min-width:0}
 /* Te-winnen-beloningen: compacte enkele regel (kist-tiers) */
 .lg-rewards{display:flex;flex-wrap:nowrap;align-items:center;gap:7px;margin:0 0 10px;padding:8px 11px;border-radius:12px;
@@ -6670,6 +6676,8 @@ html.dark .dom-hero-card{background:linear-gradient(180deg,rgba(255,255,255,.045
 .lg-rw-gold b{color:#a855f7}
 .lg-rw-blue{background:color-mix(in srgb,#38bdf8 13%,transparent);border-color:color-mix(in srgb,#38bdf8 32%,transparent)}
 .lg-rw-blue b{color:#2b9fe0}
+.lg-rw-legend{background:linear-gradient(90deg,color-mix(in srgb,#a78bfa 16%,transparent),color-mix(in srgb,#fbbf24 16%,transparent));border-color:color-mix(in srgb,#a78bfa 40%,transparent)}
+.lg-rw-legend b{color:#9333ea}
 /* Week-kist openen-knop op de divisiepagina */
 .lg-chest-btn{display:flex;align-items:center;gap:11px;width:100%;margin:0 0 12px;padding:12px 15px;cursor:pointer;text-align:left;
   color:#fff;font-family:var(--font);border-radius:14px;border:1.5px solid;transition:transform .12s,filter .15s}
@@ -6677,6 +6685,8 @@ html.dark .dom-hero-card{background:linear-gradient(180deg,rgba(255,255,255,.045
 .lg-chest-btn:active{transform:scale(.99)}
 .lg-chest-gold{background:linear-gradient(135deg,#7c3aed,#a855f7);border-color:#c4b5fd;box-shadow:0 8px 22px -8px rgba(139,92,246,.7)}
 .lg-chest-blue{background:linear-gradient(135deg,#1e6fd6,#38bdf8);border-color:#bae6fd;box-shadow:0 8px 22px -8px rgba(43,134,232,.6)}
+.lg-chest-legend{background:linear-gradient(120deg,#6d28d9,#a855f7 42%,#f0abfc 72%,#fbbf24);background-size:200% 100%;border-color:#fcd34d;box-shadow:0 10px 26px -8px rgba(167,139,250,.75);animation:lgLegendShift 6s ease-in-out infinite}
+@keyframes lgLegendShift{0%,100%{background-position:0% 50%}50%{background-position:100% 50%}}
 .lg-chest-em{font-size:26px;flex-shrink:0}
 .lg-chest-tx{display:flex;flex-direction:column;font-weight:800;font-size:15px;line-height:1.15}
 .lg-chest-tx small{font-weight:600;font-size:11.5px;opacity:.92;margin-top:1px}
@@ -6702,9 +6712,26 @@ html.dark .dom-hero-card{background:linear-gradient(180deg,rgba(255,255,255,.045
 .chest-league-blue .chest-box{filter:drop-shadow(0 12px 30px rgba(43,134,232,.5))}
 .chest-league-blue .chest-sparkles{opacity:1}
 .chest-league-blue .cs1,.chest-league-blue .cs2,.chest-league-blue .cs3{fill:#bae6fd;animation:chestTwinkle 1.2s ease-in-out infinite}
+/* Legende-kist: het ultieme doel — koninklijk paars + goud + prismatische gloed */
+.chest-league-legend .chest-face{fill:#4c1d95;stroke:#2e1065}
+.chest-league-legend .chest-lid-face{fill:#6d28d9;stroke:#2e1065}
+.chest-league-legend .chest-band{fill:#fbbf24}
+.chest-league-legend .chest-lock{fill:#fef3c7;stroke:#f59e0b}
+.chest-league-legend .chest-lockhole{fill:#92400e}
+.chest-league-legend .chest-glow{background:conic-gradient(from 0deg,#f0abfc,#a78bfa,#facc15,#f472b6,#f0abfc);opacity:.5;filter:blur(7px);animation:chestPrism 3.4s linear infinite}
+.chest-league-legend .chest-box{filter:drop-shadow(0 14px 42px rgba(167,139,250,.7))}
+.chest-league-legend .chest-sparkles{opacity:1}
+.chest-league-legend .cs1{fill:#fde68a;animation:chestTwinkle .95s ease-in-out infinite}
+.chest-league-legend .cs2{fill:#f5d0fe;animation:chestTwinkle .95s ease-in-out .3s infinite}
+.chest-league-legend .cs3{fill:#fbbf24;animation:chestTwinkle .95s ease-in-out .6s infinite}
+@keyframes chestPrism{to{transform:rotate(360deg)}}
 /* League-kist reveal (item/power + munten) */
 .chest-rare-tag.chest-tag-blue{color:#38bdf8;text-shadow:0 0 14px rgba(56,189,248,.6)}
 .chest-item-ic.chest-item-ic-blue{background:radial-gradient(circle at 50% 35%,rgba(56,189,248,.34),rgba(56,189,248,.08));border-color:rgba(56,189,248,.6);box-shadow:0 0 28px rgba(56,189,248,.32)}
+.chest-rare-tag.chest-tag-legend{background:linear-gradient(90deg,#f0abfc,#fbbf24,#a78bfa);-webkit-background-clip:text;background-clip:text;color:transparent;text-shadow:none;letter-spacing:2px}
+.chest-item-ic.chest-item-ic-legend{background:radial-gradient(circle at 50% 35%,rgba(167,139,250,.42),rgba(251,191,36,.1));border-color:rgba(251,191,36,.7);box-shadow:0 0 34px rgba(167,139,250,.5)}
+.chest-league-bonus{margin-top:6px;font-family:var(--font-head);font-weight:800;font-size:13px;color:var(--mu);display:inline-flex;align-items:center;gap:6px;opacity:.92}
+.chest-league-bonus svg{width:16px;height:16px}
 .chest-league-coins{margin-top:10px;font-family:var(--font-head);font-weight:900;font-size:16px;color:#ffce54;display:inline-flex;align-items:center;gap:6px}
 .chest-league-coins svg{width:20px;height:20px}
 /* Recap: kist-hint + Open-je-kist */

@@ -26,6 +26,9 @@ const LEAGUE_TOP_XP   = [4500, 7500, 18000, 24000, 30000, 38000];
 // Richt-XP rond de promotiedrempel (~plek 7): bepaalt hoe zwaar promoveren voelt.
 const LEAGUE_PROMO_XP = [1100, 2600, 8000, 12000, 16000, 22000];
 function _lgDivTop(d){return LEAGUE_TOP_XP[d]!=null?LEAGUE_TOP_XP[d]:LEAGUE_TOP_XP[LEAGUE_TOP_XP.length-1];}
+// De hoogste divisie (Legende) is het ULTIEME doel: geen promotie meer, en
+// gedeeld over álle niveaus — havo én vwo strijden hier in dezelfde ranglijst.
+const LEAGUE_LEGEND = LEAGUE_DIVISIONS.length - 1;
 // Bots krijgen een echte app-avatar (zelfde dieren + evolutiestadia als spelers).
 const _LG_DIER = ['adelaar','beer','cactus','draak','eenhoorn','gorilla','haai','leeuw','octopus','olifant','robot','slang','slijm','tijger','uil','vlinder','vos','wolf'];
 
@@ -70,7 +73,12 @@ function getLeague(){
 function _saveLeague(L){try{localStorage.setItem(_lgKey(),JSON.stringify(L));}catch(e){}}
 // Server-bucket per niveau: vwo krijgt een divisie-offset zodat echte medespelers
 // van havo/vwo elkaar niet mengen (lokale weergavedivisie blijft gewoon 0..5).
-function _lgSyncDiv(d){return (d||0)+((typeof APP_LEVEL!=='undefined'&&APP_LEVEL==='vwo')?100:0);}
+// Uitzondering: de Legende-divisie is gedeeld → geen offset, één ranglijst voor
+// alle niveaus samen (vergt geen Supabase-wijziging: enkel welk nummer we sturen).
+function _lgSyncDiv(d){
+  if(d===LEAGUE_LEGEND)return d;
+  return (d||0)+((typeof APP_LEVEL!=='undefined'&&APP_LEVEL==='vwo')?100:0);
+}
 
 function _lgMakeCohort(division,baseline,seedStr){
   // `baseline` (jouw XP) wordt bewust NIET meer gebruikt om de doelen te schalen.
@@ -78,7 +86,11 @@ function _lgMakeCohort(division,baseline,seedStr){
   // zodat brons nooit meer 20k-bots krijgt en promoveren onderin haalbaar blijft.
   // Het niveau (havo/vwo) zit in de seed → gescheiden bot-cohorten per niveau.
   const lvl=(typeof APP_LEVEL!=='undefined')?APP_LEVEL:'havo';
-  const rng=_lgRng(_lgHash(seedStr+'|d'+division+'|'+lvl));
+  // Legende = gedeelde topdivisie: dezelfde bots (toppers van alle niveaus) voor
+  // havo én vwo, dus het niveau valt hier bewust uit de seed. Overige divisies
+  // blijven per niveau gescheiden.
+  const isLegend=division===LEAGUE_LEGEND;
+  const rng=_lgRng(_lgHash(seedStr+'|d'+division+(isLegend?'':'|'+lvl)));
   const top=_lgDivTop(division);
   const promo=LEAGUE_PROMO_XP[division]!=null?LEAGUE_PROMO_XP[division]:Math.round(top*0.5);
   const floor=Math.max(40,Math.round(promo*0.14));
@@ -198,7 +210,7 @@ function ensureLeague(){
     const placement=_lgPlacementReward(rank,oldDiv);
     const promoReward=promoted?_lgPromoReward(L.division):0;
     const reward=placement+promoReward;
-    const tier=_lgRewardTier(rank);
+    const tier=_lgRewardTier(rank,oldDiv);
     const chest=tier?{tier,coins:reward,claimed:false}:null;
     if(!chest&&reward>0){try{if(typeof addCoins==='function')addCoins(reward);}catch(e){}}
     L.result={rank,total:finals.length,promoted,relegated,oldDiv,newDiv:L.division,weekXP:L.weekXP||0,placement,promoReward,reward,chest,seen:false};
@@ -245,9 +257,14 @@ function _lgPlacementReward(rank, division){
 }
 // Promotie-bonus (bovenop de plaatsbeloning) voor de zojuist bereikte divisie.
 function _lgPromoReward(newDivision){ return 100 + (newDivision || 0) * 75; }
-// Kist-tier op basis van je eindplaats: top-3 = gouden kist (zeldzaam item),
-// top-7 (promotiezone) = blauwe kist (power-up). Daaronder geen kist.
-function _lgRewardTier(rank){ if(rank>=1&&rank<=3)return 'gold'; if(rank<=LEAGUE_PROMO)return 'blue'; return null; }
+// Kist-tier op basis van je eindplaats én divisie: top-3 = gouden kist (zeldzaam
+// item), top-7 (promotiezone) = blauwe kist (power-up), daaronder geen kist.
+// In de Legende-divisie wordt top-3 een unieke LEGENDE-kist (item + power-up).
+function _lgRewardTier(rank, division){
+  if(rank>=1&&rank<=3)return (division===LEAGUE_LEGEND)?'legend':'gold';
+  if(rank<=LEAGUE_PROMO)return 'blue';
+  return null;
+}
 // Ken een power-up toe (voor de blauwe kist) en geef info voor de reveal terug.
 function _lgGrantPower(){
   const pool=[];
@@ -269,7 +286,8 @@ function _lgOpenRewardChest(onClose){
   const coins=ch.coins||0;
   try{ if(coins>0&&typeof addCoins==='function')addCoins(coins); }catch(e){}
   let item=null, power=null;
-  if(ch.tier==='gold'){
+  const wantsItem=(ch.tier==='gold'||ch.tier==='legend');
+  if(wantsItem){
     try{
       const all=(typeof COSMETICS_VONK!=='undefined'?COSMETICS_VONK:[]).concat(typeof COSMETICS_AV!=='undefined'?COSMETICS_AV:[]);
       const owned=(typeof getOwnedCosmetics==='function')?getOwnedCosmetics():[];
@@ -277,13 +295,16 @@ function _lgOpenRewardChest(onClose){
       if(locked.length){ item=locked[Math.floor(Math.random()*locked.length)];
         try{owned.push(item.id);localStorage.setItem('slagio_cosmetics',JSON.stringify(owned));}catch(e){} }
     }catch(e){}
-    if(!item) power=_lgGrantPower();     // alles al in bezit → toch een power-up
+    // Legende: altijd óók een power-up bovenop het item. Gold: power-up alleen als
+    // alles al in bezit is (dan is er geen item om te geven).
+    if(ch.tier==='legend'||!item) power=_lgGrantPower();
   }else{
     power=_lgGrantPower();
   }
   ch.claimed=true; L.result.chest=ch; _saveLeague(L);
   const reward={league:true,tier:ch.tier,coins:coins,item:item,power:power};
-  const kicker=ch.tier==='gold'?'Top-3 van je divisie! 🏆':'Promotiezone! 🎖️';
+  const kicker=ch.tier==='legend'?'Legende-divisie! 👑'
+    :(ch.tier==='gold'?'Top-3 van je divisie! 🏆':'Promotiezone! 🎖️');
   try{ showChest(function(){ try{renderLeague&&renderLeague();}catch(e){} try{renderLeagueHome&&renderLeagueHome();}catch(e){} onClose(); },
     {variant:'chest-league-'+ch.tier, reward:reward, kicker:kicker}); }
   catch(e){ onClose(); }
@@ -661,26 +682,40 @@ function renderLeague(){
   const rows=_lgStandings(L);
   const next=LEAGUE_DIVISIONS[L.division+1];
   const prev=LEAGUE_DIVISIONS[L.division-1];
+  const isLegend=L.division===LEAGUE_LEGEND;
+  const daysTxt=`Nog ${_lgDaysLeft()} dag${_lgDaysLeft()===1?'':'en'}`;
+  const heroSub=isLegend
+    ? `${daysTxt} · 👑 het ultieme doel — havo &amp; vwo strijden hier sámen · onderste ${LEAGUE_DEMOTE} degradeert`
+    : `${daysTxt} · top ${LEAGUE_PROMO} promoveert${next?' naar '+next.naam:''}${prev?', onderste '+LEAGUE_DEMOTE+' degradeert':''}`;
   const hdr=`
-    <div class="lg-hero lg-hero-compact" style="--lg-col:${div.kleur}">
+    <div class="lg-hero lg-hero-compact${isLegend?' lg-hero-legend':''}" style="--lg-col:${div.kleur}">
       <div class="lg-hero-badge no-ico">${div.ic}</div>
       <div class="lg-hero-txt">
         <div class="lg-hero-name">${div.naam}-divisie</div>
-        <div class="lg-hero-sub">Nog ${_lgDaysLeft()} dag${_lgDaysLeft()===1?'':'en'} · top ${LEAGUE_PROMO} promoveert${next?' naar '+next.naam:''}${prev?', onderste '+LEAGUE_DEMOTE+' degradeert':''}</div>
+        <div class="lg-hero-sub">${heroSub}</div>
       </div>
     </div>`;
   // Te winnen deze week (compacte strip): kist-beloningen per plek.
   const coin=(typeof _ico==='function')?_ico('coin',13):'🪙';
   const rw1=_lgPlacementReward(1,L.division), rw3=_lgPlacementReward(3,L.division), rw7=_lgPlacementReward(LEAGUE_PROMO,L.division);
-  const rewardsRow=`<div class="lg-rewards"><span class="lg-rewards-lbl">🎁 Kisten</span>
-    <span class="lg-rw lg-rw-gold"><b>Top&nbsp;3</b>${rw3}+${coin}item</span>
-    <span class="lg-rw lg-rw-blue"><b>Top&nbsp;${LEAGUE_PROMO}</b>${rw7}+${coin}power</span></div>`;
+  const rewardsRow=isLegend
+    ? `<div class="lg-rewards"><span class="lg-rewards-lbl">🎁 Kisten</span>
+        <span class="lg-rw lg-rw-legend"><b>Top&nbsp;3</b>${rw3}+${coin}item&nbsp;+&nbsp;power</span>
+        <span class="lg-rw lg-rw-blue"><b>Top&nbsp;${LEAGUE_PROMO}</b>${rw7}+${coin}power</span></div>`
+    : `<div class="lg-rewards"><span class="lg-rewards-lbl">🎁 Kisten</span>
+        <span class="lg-rw lg-rw-gold"><b>Top&nbsp;3</b>${rw3}+${coin}item</span>
+        <span class="lg-rw lg-rw-blue"><b>Top&nbsp;${LEAGUE_PROMO}</b>${rw7}+${coin}power</span></div>`;
   // Onopgehaalde week-kist? Prominente open-knop. Anders: recap-knop vorige week.
   const chestUnclaimed=!!(L.result&&L.result.chest&&!L.result.chest.claimed);
   let topBtn='';
   if(chestUnclaimed){
-    const gold=L.result.chest.tier==='gold';
-    topBtn=`<button class="lg-chest-btn ${gold?'lg-chest-gold':'lg-chest-blue'}" onclick="_lgOpenRewardChest()"><span class="lg-chest-em">🎁</span><span class="lg-chest-tx">Open je week-kist<small>${gold?'Top-3 · munten + zeldzaam item':'Top-7 · munten + power-up'}</small></span><span class="lg-recap-arr">→</span></button>`;
+    const tier=L.result.chest.tier;
+    const btnCls=tier==='legend'?'lg-chest-legend':(tier==='gold'?'lg-chest-gold':'lg-chest-blue');
+    const em=tier==='legend'?'👑':'🎁';
+    const sub=tier==='legend'?'Legende · munten + item + power-up'
+      :(tier==='gold'?'Top-3 · munten + zeldzaam item':'Top-7 · munten + power-up');
+    const label=tier==='legend'?'Open je Legende-kist':'Open je week-kist';
+    topBtn=`<button class="lg-chest-btn ${btnCls}" onclick="_lgOpenRewardChest()"><span class="lg-chest-em">${em}</span><span class="lg-chest-tx">${label}<small>${sub}</small></span><span class="lg-recap-arr">→</span></button>`;
   }else if(L.result){
     topBtn=`<button class="lg-recap-btn" onclick="_lgShowRecap()"><span class="lg-recap-ic">📊</span>Recap vorige week — je werd <b>#${L.result.rank}</b> van ${L.result.total||LEAGUE_COHORT}<span class="lg-recap-arr">→</span></button>`;
   }

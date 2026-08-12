@@ -1,5 +1,5 @@
-const CACHE = 'slagio-v506';
-const ASSETS = ['/', '/index.html', '/over-ons.html', '/faq.html', '/privacy.html', '/styles.css', '/data.js', '/data-havo.meta.js', '/data-vwo.meta.js', '/state.js', '/mascotte.js', '/lottie.min.js', '/vonk-lottie.js', '/vonk.lottie.json', '/vonk-phys.js', '/vonk.js', '/cloud.js', '/profile.js', '/vak.js', '/quiz.js', '/tools.js', '/sim.js', '/lb.js', '/features.js', '/league.js', '/schedule.js', '/foutenboek.js', '/herhalen.js', '/v4.js', '/zoek.js', '/klas.js', '/notif-engine.js', '/onb.js', '/init.js', '/sam-anim.js', '/sam-clip.js', '/ico-swap.js', '/examens.js', '/ce_data.js', '/manifest.json', '/icon-192.png', '/icon-512.png', '/logo.svg', '/apple-touch-icon.png'];
+const CACHE = 'slagio-v507';
+const ASSETS = ['/', '/index.html', '/over-ons.html', '/faq.html', '/privacy.html', '/styles.css', '/data.js', '/data-havo.meta.js', '/data-vwo.meta.js', '/state.js', '/mascotte.js', '/lottie.min.js', '/vonk-lottie.js', '/vonk.lottie.json', '/vonk-phys.js', '/vonk.js', '/cloud.js', '/profile.js', '/vak.js', '/quiz.js', '/tools.js', '/sim.js', '/lb.js', '/features.js', '/league.js', '/schedule.js', '/foutenboek.js', '/herhalen.js', '/v4.js', '/zoek.js', '/klas.js', '/notif-engine.js', '/onb.js', '/widget.js', '/init.js', '/sam-anim.js', '/sam-clip.js', '/ico-swap.js', '/examens.js', '/ce_data.js', '/manifest.json', '/widget/slagio-widget.json', '/widget/slagio-widget-data.json', '/icon-192.png', '/icon-512.png', '/logo.svg', '/apple-touch-icon.png'];
 
 self.addEventListener('install', e => {
   e.waitUntil(caches.open(CACHE).then(c => c.addAll(ASSETS)));
@@ -164,7 +164,29 @@ self.addEventListener('notificationclick', e => {
 self.addEventListener('message', e => {
   if (e.data?.type === 'SKIP_WAITING') self.skipWaiting(); // veilige update: alleen op verzoek
   if (e.data?.type === 'NOTIF_CONFIG') _writeKV('notif', e.data.config);
+  if (e.data?.type === 'WIDGET_DATA') { _lastWidgetData = e.data.data || {}; e.waitUntil(_renderWidgets(_lastWidgetData)); }
 });
+
+// ── PWA WIDGETS (waar ondersteund, bv. het Windows-widgetbord) ─────────────
+// De telefoon-home-screen-badge draait via de Badging API in de app zelf
+// (widget.js). Dit is de standaard-widgetplumbing: de app stuurt verse data via
+// een WIDGET_DATA-bericht; wij renderen die in het Adaptive-Card-sjabloon.
+// Volledig guarded → een no-op op platformen zonder widget-ondersteuning.
+let _lastWidgetData = null;
+async function _renderWidgets(data) {
+  if (!self.widgets || !data) return;
+  try {
+    const installed = await self.widgets.matchAll({});
+    for (const w of installed) {
+      const tmplUrl = w.definition && w.definition.msAcTemplate;
+      if (!tmplUrl) continue;
+      const template = await (await fetch(tmplUrl)).text();
+      await self.widgets.updateByTag(w.definition.tag, { template, data: JSON.stringify(data) });
+    }
+  } catch (e) {}
+}
+self.addEventListener('widgetinstall', e => { e.waitUntil(_renderWidgets(_lastWidgetData || {})); });
+self.addEventListener('widgetresize', e => { e.waitUntil(_renderWidgets(_lastWidgetData || {})); });
 
 // â”€â”€ IndexedDB helpers â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 function _openDB() {

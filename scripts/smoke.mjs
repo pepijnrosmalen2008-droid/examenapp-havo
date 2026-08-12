@@ -238,6 +238,17 @@ try {
     ? ok('curriculum.html laadt de kennislaag') : bad('curriculum.html mist een kennislaag-script');
 } catch (e) { bad('F1-integriteitscheck mislukt: ' + e.message); }
 
+// ── inhoudsvalidatie (meerkeuze-opties, correcte index, open vragen) ──
+group('Inhoud');
+try {
+  const { execFileSync } = await import('node:child_process');
+  execFileSync(process.execPath, [path.join(ROOT, 'scripts', 'validate-content.mjs')], { stdio: 'pipe' });
+  ok('inhoudsvalidatie: geen harde fouten in de vragen');
+} catch (e) {
+  const out = (e.stdout ? e.stdout.toString() : '').split('\n').filter(l => l.includes('Harde fouten')).join(' ');
+  bad('inhoudsvalidatie: harde fouten gevonden (' + (out || 'zie node scripts/validate-content.mjs') + ')');
+}
+
 // ── uitslag ──
 console.log('\n' + (fails ? '✗ ' + fails + ' van ' + checks + ' checks GEFAALD' : '✓ alle ' + checks + ' checks geslaagd'));
 process.exit(fails ? 1 : 0);

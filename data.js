@@ -84,6 +84,10 @@ function __hydrateVak(level,vakId,payload){
   (v.domeinen||[]).forEach(function(d){
     var p=payload[d.id]; if(!p)return;
     if(p.sv)d.sv=p.sv; if(p.oe)d.oe=p.oe; if(p.begrippen)d.begrippen=p.begrippen; if(p.sam)d.sam=p.sam;
+    // Normaliseer de antwoordsleutel: sommige (vooral vwo-bèta) vragen dragen de
+    // opties onder `a` i.p.v. `o`. De quiz-renderer leest `q.o`, dus kopiëren we
+    // `a`→`o` zodat die vragen niet leeg ("undefined") renderen.
+    [d.sv,d.oe].forEach(function(arr){(arr||[]).forEach(function(q){if(q&&q.a&&!q.o)q.o=q.a;});});
     (d.oe||[]).forEach(function(q){ // jaar/tijdvak afleiden (zoals _processLevelOe)
       if(!q.jaar){var m=q.bron&&q.bron.match(/(\d{4})\s+Tijdvak\s+(\d)/i);if(m){q.jaar=parseInt(m[1]);q.tijdvak=parseInt(m[2]);}}
     });
