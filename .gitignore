@@ -16,3 +16,6 @@ _*.txt
 _*.py
 
 _exams/
+
+# Agent working files (reports, test scripts) - not part of the site
+scratchpad/
