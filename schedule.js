@@ -122,7 +122,25 @@ const EXAM_SCHEDULE_2027=[
 {datum:'2027-05-31',tijd:'09:00–12:00',vak:'Filosofie',niveau:'vwo'},
 {datum:'2027-05-31',tijd:'13:30–16:00',vak:'Frans',niveau:'vwo',vakId:'fr'},
 {datum:'2027-06-01',tijd:'09:00–11:30',vak:'Fries / Russisch',niveau:'vwo'},
-{datum:'2027-06-01',tijd:'13:30–16:00',vak:'Arabisch / Spaans / Turks',niveau:'vwo'}
+{datum:'2027-06-01',tijd:'13:30–16:00',vak:'Arabisch / Spaans / Turks',niveau:'vwo'},
+// ── VMBO GL/TL 1e tijdvak 2027 (officieel CvTE-rooster) ──
+{datum:'2027-05-14',tijd:'13:30–15:30',vak:'Nederlands',niveau:'vmbo',vakId:'nl'},
+{datum:'2027-05-18',tijd:'13:30–15:30',vak:'Economie',niveau:'vmbo',vakId:'ec'},
+{datum:'2027-05-19',tijd:'09:00–11:00',vak:'Beeldende vorming',niveau:'vmbo'},
+{datum:'2027-05-19',tijd:'13:30–15:30',vak:'Engels',niveau:'vmbo',vakId:'en'},
+{datum:'2027-05-20',tijd:'09:00–11:00',vak:'Muziek',niveau:'vmbo'},
+{datum:'2027-05-20',tijd:'13:30–15:30',vak:'Wiskunde',niveau:'vmbo',vakId:'wi'},
+{datum:'2027-05-21',tijd:'09:00–11:00',vak:'Aardrijkskunde',niveau:'vmbo',vakId:'ak'},
+{datum:'2027-05-21',tijd:'13:30–15:30',vak:'Frans',niveau:'vmbo',vakId:'fa'},
+{datum:'2027-05-24',tijd:'09:00–11:00',vak:'Duits',niveau:'vmbo',vakId:'du'},
+{datum:'2027-05-24',tijd:'13:30–15:30',vak:'Natuur- en scheikunde II',niveau:'vmbo',vakId:'na2'},
+{datum:'2027-05-25',tijd:'13:30–15:30',vak:'Geschiedenis en staatsinrichting',niveau:'vmbo',vakId:'gs'},
+{datum:'2027-05-26',tijd:'09:00–11:00',vak:'Fries',niveau:'vmbo'},
+{datum:'2027-05-26',tijd:'13:30–15:30',vak:'Biologie',niveau:'vmbo',vakId:'bi'},
+{datum:'2027-05-27',tijd:'09:00–11:00',vak:'Dans / Drama',niveau:'vmbo'},
+{datum:'2027-05-27',tijd:'13:30–15:30',vak:'Natuur- en scheikunde I',niveau:'vmbo',vakId:'na1'},
+{datum:'2027-05-28',tijd:'13:30–15:30',vak:'Maatschappijkunde',niveau:'vmbo',vakId:'ma'},
+{datum:'2027-05-31',tijd:'13:30–15:30',vak:'Arabisch / Spaans / Turks',niveau:'vmbo'}
 ];
 // Kies de dataset op basis van het gekozen jaar in het rooster-scherm.
 let _schYear=(function(){try{return '2027';}catch(e){return '2027';}})();
