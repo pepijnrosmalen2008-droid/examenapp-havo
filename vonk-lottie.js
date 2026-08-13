@@ -51,6 +51,10 @@
   function upgrade(el) {
     if (!el || el._vlDone) return;
     if (_reduce || !runtimeReady()) return;           // fallback: SVG blijft staan
+    // Een uitgeruste Vonk-skin (bril/kroon/sjaal) zit op de SVG-rig, niet in de Lottie.
+    // Heeft de speler er een op, dan laten we de SVG-Vonk (mét skin) staan i.p.v. te
+    // upgraden — anders verdwijnt de gekochte look. De SVG-rig animeert zelf.
+    if (typeof getEquippedVonk === 'function' && getEquippedVonk()) { el._vlDone = true; return; }
     el._vlDone = true;
     var size = parseInt(el.getAttribute('data-vl-size') || '120', 10);
     var state = el.getAttribute('data-vl-state') || 'idle';

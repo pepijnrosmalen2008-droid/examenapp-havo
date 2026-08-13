@@ -305,26 +305,6 @@
         { type: "fade", sel: ".lbl-exp", t: [5.0, 5.8] },
         { type: "fade", sel: ".lbl-factor", t: [7.2, 8.0] }
       ]
-    },
-    // enzym-substraat-cyclus: substraat bindt → reactie → product los → enzym onveranderd → opnieuw
-    enzymcyclus: {
-      duration: 9.8,
-      cues: [0, 1.5, 4.0, 6.2, 7.8],
-      audio: [[1.5, "clipRoll"], [4.0, "clipCatalyst"], [6.2, "clipRoll"], [8.8, "clipSuccess"]],
-      tracks: [
-        { type: "fade", sel: ".sub", t: [1.3, 1.7] },
-        { type: "moveAlong", pathSel: ".path-in", ballSel: ".sub", base: { x: 18, y: 118 }, f: [[1.5, 0, "io"], [3.4, 1, "io"]] },
-        { type: "fade", sel: ".flash", t: [3.6, 4.1] },
-        { type: "fade", sel: ".flash", t: [4.6, 5.2], from: 1, to: 0 },
-        { type: "fade", sel: ".sub", t: [3.7, 4.2], from: 1, to: 0 },
-        { type: "fade", sel: ".prod", t: [4.1, 4.6] },
-        { type: "moveAlong", pathSel: ".path-out", ballSel: ".prod", base: { x: 150, y: 90 }, f: [[4.9, 0, "io"], [6.5, 1, "io"]] },
-        { type: "fade", sel: ".enzym-ring", t: [6.7, 7.5] },
-        { type: "fade", sel: ".lbl-onv", t: [6.9, 7.6] },
-        { type: "fade", sel: ".sub2", t: [7.4, 7.8] },
-        { type: "moveAlong", pathSel: ".path-in", ballSel: ".sub2", base: { x: 18, y: 118 }, f: [[7.6, 0, "io"], [9.3, 1, "io"]] },
-        { type: "fade", sel: ".lbl-reuse", t: [8.1, 8.9] }
-      ]
     }
   };
   for (var _sk in SPECS) CHOREO[_sk] = specChoreo(SPECS[_sk]);
