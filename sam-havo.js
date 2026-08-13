@@ -62,9 +62,25 @@ Object.assign(SAM_RICH,{
 'havo_sk_D':`<div class="sam-intro"><strong>Koolstofchemie</strong> (organische chemie) draait om moleculen met een <strong>koolstofskelet</strong>. Je leert de <strong>homologe reeksen</strong>, de <strong>functionele groepen</strong> die het gedrag bepalen, hoe je verbindingen <strong>benoemt</strong>, en de belangrijkste <strong>reactietypen</strong> tot en met <strong>polymeren</strong>.</div><div class="sam-head">Wat je voor het examen moet kennen</div><table class="sam-table"><thead><tr><th>Onderwerp</th><th>Kern</th></tr></thead><tbody><tr><td>Homologe reeksen</td><td>alkanen, alkenen, alkynen</td></tr><tr><td>Functionele groepen</td><td>alcohol, carbonzuur, amine, ester</td></tr><tr><td>Isomerie &amp; naamgeving</td><td>zelfde formule, andere structuur</td></tr><tr><td>Reactietypen</td><td>additie, substitutie, ester­vorming, hydrolyse</td></tr><tr><td>Polymeren</td><td>additie- en condensatiepolymerisatie</td></tr></tbody></table><div class="sam-head">Homologe reeksen</div><p>Een <strong>homologe reeks</strong> is een rij stoffen met dezelfde algemene formule die telkens één CH₂ verschillen. De naam eindigt op de reeks (-aan, -een, -yn) en begint met het aantal koolstofatomen (meth-, eth-, prop-, but-…).</p><div class="sam-figure"><svg viewBox="0 0 300 96" role="img" aria-label="Alkaan met enkele binding, alkeen met dubbele binding, alkyn met drievoudige binding"><g stroke="var(--dk)" stroke-width="1.6"><g><circle cx="34" cy="46" r="10" fill="var(--or)" opacity=".18"/><circle cx="84" cy="46" r="10" fill="var(--or)" opacity=".18"/><line x1="44" y1="46" x2="74" y2="46"/></g><g><circle cx="132" cy="46" r="10" fill="var(--or)" opacity=".18"/><circle cx="182" cy="46" r="10" fill="var(--or)" opacity=".18"/><line x1="142" y1="42" x2="172" y2="42"/><line x1="142" y1="50" x2="172" y2="50"/></g><g><circle cx="228" cy="46" r="10" fill="var(--or)" opacity=".18"/><circle cx="278" cy="46" r="10" fill="var(--or)" opacity=".18"/><line x1="238" y1="40" x2="268" y2="40"/><line x1="238" y1="46" x2="268" y2="46"/><line x1="238" y1="52" x2="268" y2="52"/></g></g><g font-size="8" font-weight="700" fill="var(--dk)" text-anchor="middle"><text x="59" y="80">alkaan</text><text x="157" y="80">alkeen</text><text x="253" y="80">alkyn</text></g><g font-size="7" fill="var(--mu)" text-anchor="middle"><text x="59" y="90">enkel</text><text x="157" y="90">dubbel</text><text x="253" y="90">drievoudig</text></g></svg><div class="sam-figcap"><strong>Verzadigd of onverzadigd:</strong> een <strong>alkaan</strong> heeft alleen enkele bindingen (verzadigd). Een <strong>alkeen</strong> (dubbele) en <strong>alkyn</strong> (drievoudige binding) zijn onverzadigd en reageren daardoor makkelijker (additie).</div></div><div class="sam-head">Functionele groepen</div><p>Een <strong>functionele groep</strong> is een atoomgroep die de eigenschappen en reacties van het molecuul bepaalt.</p><table class="sam-table"><thead><tr><th>Groep</th><th>Kenmerk</th><th>Stofklasse</th></tr></thead><tbody><tr><td>−OH</td><td>hydroxylgroep</td><td>alcohol</td></tr><tr><td>−COOH</td><td>carboxylgroep</td><td>carbonzuur</td></tr><tr><td>−NH₂</td><td>aminogroep</td><td>amine</td></tr><tr><td>−COO−</td><td>estergroep</td><td>ester</td></tr></tbody></table><div class="sam-tip"><strong>Isomeren</strong> hebben dezelfde molecuulformule maar een andere structuur (bijvoorbeeld een rechte of vertakte keten). Ze zijn verschillende stoffen met verschillende eigenschappen.</div><div class="sam-head">Reactietypen</div><div class="sam-compare"><div class="sam-compare-col"><div class="sam-compare-head">Additie</div><ul><li>aan een dubbele/drievoudige binding</li><li>de binding gaat open, atomen komen erbij</li><li>geen bijproduct</li></ul></div><div class="sam-compare-col"><div class="sam-compare-head">Substitutie</div><ul><li>een atoom wordt vervangen</li><li>bij verzadigde (alkaan-)moleculen</li><li>er ontstaat een bijproduct</li></ul></div></div><div class="sam-figure"><svg viewBox="0 0 300 96" role="img" aria-label="Esterificatie: carbonzuur en alcohol vormen een ester en water"><defs><marker id="ghsD" markerWidth="9" markerHeight="9" refX="5" refY="3" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L7,3 L0,6 Z" fill="var(--or)"/></marker></defs><g font-size="8" font-weight="700" fill="var(--dk)" text-anchor="middle"><rect x="8" y="34" width="74" height="28" rx="6" fill="var(--mu)" opacity=".12" stroke="var(--mu)" stroke-width="1.1"/><text x="45" y="51">carbonzuur</text><text x="96" y="52" font-size="12">+</text><rect x="110" y="34" width="60" height="28" rx="6" fill="var(--mu)" opacity=".12" stroke="var(--mu)" stroke-width="1.1"/><text x="140" y="51">alcohol</text><rect x="212" y="30" width="52" height="24" rx="6" fill="var(--or)" opacity=".18" stroke="var(--or)" stroke-width="1.2"/><text x="238" y="46">ester</text><text x="238" y="70" font-size="7" fill="var(--mu)">+ water</text></g><path d="M172,48 L208,44" stroke="var(--or)" stroke-width="1.6" marker-end="url(#ghsD)"/><text x="190" y="38" font-size="7" fill="var(--or)" text-anchor="middle">⇌</text></svg><div class="sam-figcap"><strong>Esterificatie:</strong> een carbonzuur en een alcohol vormen samen een <strong>ester</strong> en <strong>water</strong> (een condensatiereactie). De omgekeerde reactie, met water, heet <strong>hydrolyse</strong>: de ester wordt weer gesplitst.</div></div><div class="sam-head">Polymeren</div><p>Een <strong>polymeer</strong> is een heel lang molecuul, gebouwd uit vele kleine <strong>monomeren</strong>. Twee manieren:</p><ul><li><strong>Additiepolymerisatie:</strong> monomeren met een dubbele binding koppelen aan elkaar, zonder bijproduct (bv. polyetheen uit etheen).</li><li><strong>Condensatiepolymerisatie:</strong> monomeren koppelen onder afsplitsing van een klein molecuul (meestal water), zoals bij een polyester of nylon.</li></ul><div class="sam-worked"><div class="sam-worked-h">✍️ Voorbeeldopgave 1 - reactietype</div><div class="sam-worked-q">Etheen (C₂H₄) reageert met broom (Br₂) tot dibroomethaan, zonder bijproduct. Welk reactietype is dit?</div><ol class="sam-worked-steps"><li>Etheen heeft een dubbele binding (onverzadigd).</li><li>De dubbele binding gaat open en er komen twee Br-atomen bij.</li><li>Er ontstaat geen bijproduct.</li></ol><div class="sam-worked-ans">✅ Additie: kenmerkend voor onverzadigde moleculen, de dubbele binding gaat open.</div></div><div class="sam-worked"><div class="sam-worked-h">✍️ Voorbeeldopgave 2 - functionele groep</div><div class="sam-worked-q">Een molecuul bevat de groep −COOH. Tot welke stofklasse hoort het, en hoe reageert het met een alcohol?</div><ol class="sam-worked-steps"><li>−COOH is de carboxylgroep → het is een carbonzuur.</li><li>Een carbonzuur reageert met een alcohol.</li><li>Dat geeft een ester + water (esterificatie).</li></ol><div class="sam-worked-ans">✅ Het is een carbonzuur; met een alcohol vormt het via esterificatie een ester en water.</div></div>`,
 });
 
-// bi.M.3 Enzymwerking — proefsnede Content Engine (samenvatting v2). Zie docs/SLICE0-PROEFSNEDE-bi.M.3.md
+// bi.M.3 Enzymwerking — proefsnede Content Engine (samenvatting v2 + diagrammen). Zie docs/SLICE0-PROEFSNEDE-bi.M.3.md
 Object.assign(SAM_RICH,{
 'havo_bi_M3':`<div class="sam-intro"><strong>Enzymen</strong> zijn <strong>eiwitten</strong> die werken als <strong>biokatalysator</strong>: ze <strong>versnellen</strong> een reactie in de cel door de <strong>activeringsenergie</strong> — de startdrempel — te verlagen. Een enzym <strong>levert zelf geen energie</strong> en wordt <strong>niet verbruikt</strong>: het komt onveranderd vrij en werkt opnieuw (<strong>herbruikbaar</strong>).</div>
+
+<div class="sam-figure"><svg viewBox="0 0 300 176" role="img" aria-label="Grafiek van enzymactiviteit tegen temperatuur: de activiteit stijgt tot de optimumtemperatuur en daalt daarna scherp door denaturatie">
+<line x1="42" y1="146" x2="288" y2="146" stroke="var(--mu)" stroke-width="1.4"/>
+<line x1="42" y1="146" x2="42" y2="16" stroke="var(--mu)" stroke-width="1.4"/>
+<text x="286" y="162" font-size="8" fill="var(--mu)" text-anchor="end">temperatuur →</text>
+<text x="30" y="20" font-size="8" fill="var(--mu)" text-anchor="middle" transform="rotate(-90 12 82)">activiteit</text>
+<path d="M52,140 C104,133 150,70 176,46 C192,64 202,126 224,142" fill="none" stroke="var(--or)" stroke-width="2.6" stroke-linecap="round"/>
+<line x1="176" y1="46" x2="176" y2="146" stroke="var(--or)" stroke-width="1" stroke-dasharray="3 3" opacity="0.7"/>
+<circle cx="176" cy="46" r="3.4" fill="var(--or)"/>
+<text x="176" y="38" font-size="8.5" fill="var(--dk)" text-anchor="middle" font-weight="700">optimum</text>
+<text x="176" y="158" font-size="7.5" fill="var(--mu)" text-anchor="middle">~37 °C</text>
+<path d="M247,96 L214,120" stroke="var(--mu)" stroke-width="1" marker-end="url(#ar)"/>
+<defs><marker id="ar" markerWidth="7" markerHeight="7" refX="5" refY="2.5" orient="auto"><path d="M0,0 L5,2.5 L0,5 z" fill="var(--mu)"/></marker></defs>
+<text x="250" y="92" font-size="8.5" fill="var(--dk)" text-anchor="start" font-weight="700">denaturatie</text>
+</svg><div class="sam-figcap"><strong>De belangrijkste examengrafiek.</strong> Stijging → hogere activiteit · top → optimumtemperatuur · scherpe daling ná de top → <strong>denaturatie</strong> (het enzym gaat kapot, niet "op").</div></div>
+
 <div class="sam-head">Wat je voor het examen moet kennen</div>
 <table class="sam-table"><thead><tr><th>Begrip</th><th>Kern</th></tr></thead><tbody>
 <tr><td>Enzym</td><td>Eiwit + biokatalysator; verhoogt de reactiesnelheid. Géén signaalstof (hormoon), géén brandstof.</td></tr>
@@ -75,12 +91,41 @@ Object.assign(SAM_RICH,{
 <tr><td>pH-optimum</td><td>Elk enzym heeft ook een optimale pH (pepsine ~pH&nbsp;2 in de maag, trypsine ~pH&nbsp;8 in de darm). Ver van het optimum daalt de activiteit.</td></tr>
 <tr><td>Herbruikbaar</td><td>Na afloop komt het enzym onveranderd vrij en versnelt het opnieuw. Eén molecuul doet veel reacties.</td></tr>
 </tbody></table>
+
+<div class="sam-figure"><svg viewBox="0 0 300 150" role="img" aria-label="Sleutel-slotmodel: het substraat past precies in het actief centrum van het enzym, een ander molecuul past niet">
+<path d="M40,96 C40,60 74,58 88,58 L104,58 C104,44 128,44 128,58 L150,58 C168,58 168,96 150,96 L128,96 C128,110 104,110 104,96 L88,96 C60,96 40,96 40,96 Z" fill="var(--orl)" stroke="var(--or)" stroke-width="2"/>
+<path d="M104,58 C104,44 128,44 128,58 L128,96 C128,110 104,110 104,96 Z" fill="var(--bg2)" stroke="var(--or)" stroke-width="1.4" stroke-dasharray="3 2"/>
+<text x="92" y="128" font-size="8.5" fill="var(--dk)" text-anchor="middle" font-weight="700">amylase</text>
+<text x="92" y="140" font-size="7.5" fill="var(--mu)" text-anchor="middle">actief centrum</text>
+<path d="M116,66 C116,58 130,58 130,66 L130,88 C130,96 116,96 116,88 Z" fill="#22c55e" stroke="#16a34a" stroke-width="1.4"/>
+<text x="196" y="70" font-size="8.5" fill="#16a34a" text-anchor="start" font-weight="700">✓ zetmeel past</text>
+<rect x="188" y="96" width="26" height="18" rx="3" fill="#ef4444" opacity="0.85"/>
+<circle cx="230" cy="105" r="10" fill="#ef4444" opacity="0.85"/>
+<text x="248" y="108" font-size="8.5" fill="#dc2626" text-anchor="start" font-weight="700">✗ eiwit past niet</text>
+</svg><div class="sam-figcap"><strong>Substraatspecificiteit.</strong> Alleen een substraat met de juiste <em>vorm</em> past in het actief centrum — zoals een sleutel in een slot. Amylase past wél op zetmeel, niet op eiwit.</div></div>
+
+<div class="sam-figure"><svg viewBox="0 0 300 168" role="img" aria-label="Twee enzymen met verschillende pH-optima: pepsine rond pH 2, trypsine rond pH 8">
+<line x1="30" y1="138" x2="288" y2="138" stroke="var(--mu)" stroke-width="1.4"/>
+<line x1="30" y1="138" x2="30" y2="16" stroke="var(--mu)" stroke-width="1.4"/>
+<text x="286" y="154" font-size="8" fill="var(--mu)" text-anchor="end">pH →</text>
+<text x="22" y="20" font-size="8" fill="var(--mu)" text-anchor="middle" transform="rotate(-90 10 78)">activiteit</text>
+<path d="M40,136 C64,120 74,40 88,40 C102,40 112,120 136,136" fill="none" stroke="var(--or)" stroke-width="2.4"/>
+<text x="88" y="34" font-size="8.5" fill="var(--dk)" text-anchor="middle" font-weight="700">pepsine</text>
+<text x="88" y="150" font-size="7.5" fill="var(--mu)" text-anchor="middle">pH 2 (maag)</text>
+<path d="M176,136 C200,120 210,46 224,46 C238,46 248,120 272,136" fill="none" stroke="#2563eb" stroke-width="2.4"/>
+<text x="224" y="40" font-size="8.5" fill="var(--dk)" text-anchor="middle" font-weight="700">trypsine</text>
+<text x="224" y="150" font-size="7.5" fill="var(--mu)" text-anchor="middle">pH 8 (darm)</text>
+</svg><div class="sam-figcap"><strong>pH-optimum.</strong> Net als temperatuur heeft elk enzym een eigen optimale pH. Ver daarvan af daalt de activiteit sterk — daarom werkt maag-enzym pepsine niet in de darm.</div></div>
+
+<div class="sam-tip">In een grafiek met een <strong>piek</strong>: de top is het <strong>optimum</strong> (beste werking), de scherpe daling erná is <strong>denaturatie</strong>. Bij temperatuur is die daling onomkeerbaar — afkoelen brengt de activiteit niet terug.</div>
+
 <div class="sam-head">Denkregels voor het examen</div>
 <ul>
-<li><strong>Grafiek lezen:</strong> stijging → hogere activiteit · top → optimum · scherpe daling ná de top → denaturatie.</li>
 <li>enzym <strong>versnelt</strong> de reactie <strong>≠</strong> enzym <strong>levert</strong> energie</li>
 <li><strong>optimum</strong> (beste werking) <strong>≠</strong> <strong>denaturatie</strong> (structuur/functie kwijt)</li>
 <li>denaturatie: te hoge temperatuur <strong>óf</strong> extreme pH — niet alléén warmte</li>
-<li>enzym <strong>niet verbruikt</strong>: een enkele daling in een grafiek komt door denaturatie, niet door "opraken"</li>
-</ul>`
+<li>enzym <strong>niet verbruikt</strong>: een daling in een grafiek komt door denaturatie, niet door "opraken"</li>
+</ul>
+
+<div class="sam-onthoud">Een enzym herkent zijn substraat aan de <strong>vorm</strong> van het actief centrum (sleutel–slot). Denk dus niet in "één enzym hoort bij één stof", maar in een <strong>passende vorm</strong>.</div>`
 });
