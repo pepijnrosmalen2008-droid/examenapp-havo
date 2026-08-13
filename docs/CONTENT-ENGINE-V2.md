@@ -106,7 +106,7 @@ Tegen het term-varianten-probleem: eerst per concept de **mogelijke leerhandelin
 | Misconceptie | 10% | 10% | 10% |
 | Examenredeneren/bron | 5% | 15% | 15% |
 
-De mix is **beleid in de pipeline**, niet in de analyzer — zo blijft de evaluator model-onafhankelijk.
+De mix is **beleid in de pipeline**, niet in de analyzer — zo blijft de evaluator model-onafhankelijk. De bindende Slice-0-mix voor biologie staat in `SLICE0-DEFINITION-OF-DONE.md` §6.2; **curriculumwaarheid gaat boven de quota** (§6.4).
 
 ### 4.5 Verplicht uitleg-schema
 Elke gegenereerde vraag draagt: `question, options, correctAnswer, explanation{whyCorrect, keyTakeaway, whyDistractorsWrong?}, learningObjective, conceptIds, questionType, difficulty, estimatedTime`. `build-foutenboek-uitleg.js` levert het rijke deel al; de evaluation-engine **weigert** voortaan een vraag waarvan de uitleg neerkomt op "B is correct." (niet elke afleider hoeft een alinea, maar leeg mag nooit).

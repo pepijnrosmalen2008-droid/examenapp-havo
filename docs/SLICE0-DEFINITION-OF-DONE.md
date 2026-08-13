@@ -50,7 +50,7 @@ Legenda meetmethode: **[auto]** = bestaande/uit te breiden engine rekent het uit
 | # | Eis | Meetmethode | Drempel |
 |---|---|---|---|
 | B1 | Dekt alle kernbegrippen van het domein | concept-node-dekking in de tekst **[auto+]** | 100% van de kernconcepten |
-| B2 | Niet oppervlakkiger dan de bestaande `SAM_RICH` | golden-reference-check (lengte, verband-dichtheid, #kernbegrippen) **[auto+]** | ≥ referentie-domein |
+| B2 | Inhoudelijke dekking + detailorde ≥ golden reference (zie §6.3 — **niet** "evenveel verbanden" tellen) | golden-reference-check **[auto+ / mens]** | alle essentiële verbanden gedekt · 100% verplichte kernbegrippen · geen syllabuskennis verloren · geen kunstmatige verlenging |
 | B3 | Geen onnodige opvulling | signaal-op-ruis / herhaalzin-detectie **[auto+]** | pass |
 | B4 | Elke bewering herleidbaar naar een semantic-fact of leerdoel | claim → fact-match **[mens/LLM]** | geen niet-gedekte bewering |
 | B5 | Vaste structuur: kernbegrippen · uitleg · verbanden · voorbeelden · uitzonderingen · examengerichte aandachtspunten | sectie-check **[auto]** | alle secties aanwezig |
@@ -61,7 +61,7 @@ Legenda meetmethode: **[auto]** = bestaande/uit te breiden engine rekent het uit
 | # | Eis | Meetmethode | Drempel |
 |---|---|---|---|
 | C1 | Meerdere leerhandelingen; niet 3× dezelfde definitievraag | leerhandeling-tag + semantische duplicaatdetectie **[auto+]** | ≥3 leerhandelingen aanwezig; 0 bijna-duplicaten |
-| C2 | Voldoende moeilijkheidsspreiding | `difficulty`-verdeling vs. quota-mix **[auto]** | binnen quota (zie CONTENT-ENGINE-V2 §4.4) |
+| C2 | Voldoende spreiding leerhandeling + moeilijkheid | verdeling vs. quota-mix **[auto]** | binnen de quota van §6.2 — **tenzij curriculumwaarheid dat verhindert (§6.4)** |
 | C3 | Goede afleiders; ≥1 afleider = bekende misconceptie waar mogelijk | afleider-oordeel **[mens/LLM]** | pass |
 | C4 | Antwoordopties gelijkwaardig qua lengte/vorm | lengte-bias-check **[auto]** (bestaat) | binnen tolerantie |
 | C5 | Geen hints door formulering | grammaticale/lengte-tells **[auto+]** | pass |
@@ -83,7 +83,7 @@ Legenda meetmethode: **[auto]** = bestaande/uit te breiden engine rekent het uit
 
 | # | Eis | Meetmethode | Drempel |
 |---|---|---|---|
-| E1 | Automatische kwaliteitscheck geslaagd | `evaluation-engine.js` **[auto]** | score ≥ drempel · issues = [] |
+| E1 | Automatische kwaliteitscheck geslaagd (minimumgate, geen gemiddelde) | `evaluation-engine.js` **[auto]** | score ≥ 90 **ÉN** 0 kritieke inhoudelijke issues **ÉN** 0 syllabus-/coveragegaten (zie §6.1) |
 | E2 | Golden-reference-vergelijking samenvatting | B2 **[auto+]** | pass |
 | E3 | Dubbele / semantisch (bijna-)identieke vragen gedetecteerd en weg | duplicaatdetectie **[auto+]** | 0 duplicaten |
 | E4 | Inhoudelijke fouten gedetecteerd | feitcheck **[mens/LLM]** | 0 fouten |
@@ -125,11 +125,49 @@ Volgorde = de pijplijn zelf; per stap: bestaat / minimale nieuwe code.
 
 ---
 
-## 5. Akkoord-checklist (vóór generatie)
+## 5. Akkoord-checklist — VASTGESTELD
 
-- [ ] Domeinkeuze `bi_M` akkoord (of ander domein aanwijzen).
-- [ ] Compleetheidsmatrix §0 (in-scope kolom) akkoord.
-- [ ] Drempels concretiseren waar nu "≥ drempel" staat: **evaluation-score** (bv. ≥90), **quota-mix** per leerhandeling voor biologie, **golden-reference-marges** (lengte/verband-dichtheid).
-- [ ] Bevestigen: leerling-data-lus = fase 2, geen architectuurwijzigingen.
+- [x] Domeinkeuze `bi_M` — akkoord.
+- [x] Compleetheidsmatrix §0 (in-scope kolom) — akkoord.
+- [x] Drempels vastgesteld — zie §6.
+- [x] Leerling-data-lus = fase 2; geen architectuurwijzigingen.
 
-Pas na deze checklist begint de generatie. Daarna beoordelen we het resultaat van dit ene domein kritisch vóór er wordt opgeschaald.
+Generatie mag beginnen. Daarna beoordelen we het resultaat van dit ene domein kritisch vóór er wordt opgeschaald.
+
+---
+
+## 6. Vastgestelde drempels (definitief — bindend voor de generatie)
+
+### 6.1 Evaluatie-gate (minimumgate, geen gemiddelde)
+Een domein haalt `approved`/`live` alleen als **alle drie** waar zijn:
+1. **score ≥ 90**, én
+2. **0 kritieke inhoudelijke issues** (een foutief antwoord, foute uitleg of onjuiste bewering is *kritiek* en kan **nooit** worden gecompenseerd door andere goede items), én
+3. **0 onbeantwoorde syllabus-/coveragegaten**.
+
+De 90 is dus een ondergrens bovenop twee harde nul-eisen — geen gemiddelde dat kritieke fouten verbergt.
+
+### 6.2 Quota-mix biologie (Slice 0) — generatiedoelen, geen natuurwet
+| Leerhandeling | Doel |
+|---|---|
+| Herkennen/definiëren | 15% |
+| Begrijpen | 25% |
+| Toepassen | 25% |
+| Onderscheiden (X vs. Y) | 15% |
+| Misconceptie | 10% |
+| Examenredeneren | 10% |
+
+**Configureerbaar per vak/niveau** — dit is *geen* universele verdeling. Geschiedenis, talen en wiskunde krijgen elk een eigen mix.
+
+### 6.3 Golden-reference (samenvatting) — inhoud, geen getal-target
+De nieuwe samenvatting moet **inhoudelijk** minstens zo goed zijn als de bestaande `SAM_RICH`, aangetoond via:
+- lengteorde ≥ de golden-reference-**ondergrens** (niet exact matchen);
+- **100% van de verplichte kernbegrippen** gedekt;
+- **100% van de essentiële verbanden** gedekt (essentieel = pedagogisch/examenrelevant, niet elk mogelijk verband);
+- geen belangrijke syllabuskennis verloren;
+- **geen kunstmatige uitbreiding** puur om langer/dichter te lijken;
+- inhoudelijke kwaliteit ≥ golden reference.
+
+> Expliciet **niet**: "minstens evenveel expliciete verbanden als de golden reference". Dat zou Claude verleiden verbanden toe te voegen om een getal te halen, ook waar dat pedagogisch niets toevoegt.
+
+### 6.4 Kernregel — curriculumwaarheid staat boven de quota
+De quota (§6.2) zijn **doelen**, geen wet. **Als een leerdoel/de syllabus aantoonbaar geen kwalitatief goede vraag van een bepaald type ondersteunt, mag de engine die quota breken en dít rapporteren — nooit een kunstmatige vraag produceren om een percentage te halen.** Een gerapporteerd, onderbouwd gat is een *pass*; een opgevulde nepvraag is een *fail*. Dit geldt boven elke andere gate in dit document.
