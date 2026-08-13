@@ -434,8 +434,10 @@
   <p>Slagio is te vinden op <a href="https://slagio.nl">slagio.nl</a>, <a href="https://slagio.nl/havo">slagio.nl/havo</a> en <a href="https://slagio.nl/vwo">slagio.nl/vwo</a>. Schakel JavaScript in om de app te gebruiken.</p>
 </noscript>
 <meta name="apple-mobile-web-app-capable" content="yes">
-<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
 <meta name="apple-mobile-web-app-title" content="Slagio">
+<script>/* PWA-standalone detectie (navigator.standalone = betrouwbaar op iOS; display-mode voor de rest). Zet een class op <html> zodat de safe-area-padding alleen in de geïnstalleerde app geldt, niet op de website. */
+(function(){try{var s=(window.navigator.standalone===true)||(window.matchMedia&&matchMedia('(display-mode: standalone)').matches)||(window.matchMedia&&matchMedia('(display-mode: fullscreen)').matches);if(s)document.documentElement.classList.add('pwa-standalone');}catch(e){}})();</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
