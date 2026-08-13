@@ -308,6 +308,26 @@ var VAKKEN = [
     "nBeg": 25
    },
    {
+    "id": "M3",
+    "naam": "Enzymwerking",
+    "beschrijving": "Proefsnede bi.M.3 — de eerste leerdoelmodule volledig door de Content Engine geproduceerd (samenvatting, 8 vragen R1–R5 incl. transfer, diagnostische uitleg). Ter kwaliteitstest vóór opschaling.",
+    "ceStatus": "CE+SE",
+    "binas": "",
+    "val": "",
+    "onderwerpen": [
+     "Wat een enzym is (biokatalysator)",
+     "Activeringsenergie",
+     "Optimumtemperatuur & denaturatie",
+     "pH-optimum",
+     "Substraatspecificiteit",
+     "Herbruikbaarheid",
+     "Transfer: onbekend enzym"
+    ],
+    "nSv": 8,
+    "nOe": 0,
+    "nBeg": 0
+   },
+   {
     "id": "O",
     "naam": "Orgaan- en organismeniveau",
     "beschrijving": "Stofwisseling van het organisme, zelfregulatie en afweer",
