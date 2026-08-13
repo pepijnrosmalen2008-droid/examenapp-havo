@@ -2504,7 +2504,8 @@ html.dark .calc-btn{background:#2e3550}
   .dbtns{gap:5px}
   .exb{padding:5px 10px;font-size:11px;border-radius:6px}
   .qb{padding:7px 12px;font-size:12px;border-radius:8px}
-  .dtop{padding:0 16px 16px}
+  .dtop{padding:0 4px 16px}
+  .dtab-pane{padding:16px 8px 22px}
   .ttags{gap:5px}
   .tt{padding:4px 10px;font-size:11px}
   .sam{padding:12px 14px;font-size:12px;border-radius:10px}

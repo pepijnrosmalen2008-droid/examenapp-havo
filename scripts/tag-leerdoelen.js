@@ -29,14 +29,14 @@ const OVERRIDES_ALL = {
     // Vragen die geen begrip letterlijk noemen (synoniem/context) en daardoor als
     // fallback vielen. Handmatig beoordeeld o.b.v. het juiste antwoord + uitleg.
     // ── bi.M.3 Enzymwerking — proefsnede Content Engine (eigen domein-module M3) ──
-    'Wat is een enzym?': 'bi.M.3',
-    'Hoe zorgt een enzym ervoor dat een reactie sneller verloopt?': 'bi.M.3',
-    'In een grafiek stijgt de enzymactiviteit tot 40 °C en daalt daarna snel naar bij': 'bi.M.3',
-    'Wat is het verschil tussen de optimumtemperatuur en denaturatie van een enzym?': 'bi.M.3',
-    'Een enzym heeft een reactie versneld. Wat gebeurt er daarna met het enzym?': 'bi.M.3',
-    'Amylase breekt zetmeel af, maar heeft geen effect op eiwitten. Hoe komt dat?': 'bi.M.3',
-    'Een onbekend enzym heeft bij 20 °C een lage activiteit, bij 37 °C een hoge activ': 'bi.M.3',
-    'Pepsine (maag) werkt goed bij pH 2 maar niet bij pH 7; trypsine (dunne darm) wer': 'bi.M.3',
+    "Wat is een enzym?": 'bi.M.3',
+    "Hoe zorgt een enzym ervoor dat een reactie sneller verloopt?": 'bi.M.3',
+    "De enzymactiviteit stijgt tot 40 °C en daalt daarna snel. Wat gebeurt er boven 4": 'bi.M.3',
+    "Wat is het verschil tussen de optimumtemperatuur en denaturatie?": 'bi.M.3',
+    "Wat gebeurt er met het enzym nadat het een reactie heeft versneld?": 'bi.M.3',
+    "Amylase breekt zetmeel af, maar niet eiwit. Hoe komt dat?": 'bi.M.3',
+    "Een enzym werkt bij 37 °C, maar na verhitting tot 60 °C niet meer — ook niet na ": 'bi.M.3',
+    "Pepsine werkt goed bij pH 2 (maag), maar niet bij pH 7. Waarom?": 'bi.M.3',
     'Een grafiek toont dat de reactiesnelheid van een enzym stijgt tot 37°C en daarna': 'bi.A.3',
     'Wat is het verschil tussen correlatie en causaliteit?': 'bi.A.4',
     'Waarom zijn meerdere herhalingen (replicaties) belangrijk in biologisch onderzoe': 'bi.A.2',
