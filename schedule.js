@@ -618,15 +618,21 @@ function _parseSamCards(html){
   const cards=[];
   const seen=new Set();
   tmp.querySelectorAll('li').forEach(li=>{
+    if(li.closest('.sam-noflash'))return;                 // expliciete opt-out (bv. denkregels)
     const first=li.querySelector('strong');
     if(!first)return;
     const term=first.textContent.trim();
+    const liText=li.textContent.trim();
     if(!term||term.length<2||term.length>72||seen.has(term))return;
+    // Alleen echte term→definitie-items: het begrip moet vooraan staan en de regel
+    // mag geen vergelijking/denkregel zijn (≠ of =). Zo vallen "enzym versnelt ≠ ..."
+    // -achtige regels weg die anders een losse werkwoord-term opleveren.
+    if(!liText.startsWith(term))return;
+    if(/[≠=]/.test(liText))return;
+    const tidx=liText.indexOf(term);
+    let def=liText.slice(tidx+term.length).replace(/^[\s:,\-–—]+/,'').trim();
+    if(def.length<8)return;                               // te kort = geen echte definitie
     seen.add(term);
-    const full=li.textContent;
-    const tidx=full.indexOf(term);
-    let def=tidx>=0?full.slice(tidx+term.length).replace(/^[\s:,\-–]+/,'').trim():full.trim();
-    if(def.length<5)return;
     if(def.length>220)def=def.slice(0,220).replace(/\s\S+$/,'')+'…';
     cards.push({term,def});
   });

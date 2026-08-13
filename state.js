@@ -2,7 +2,7 @@
 
 // ═══════ STATE ═══════
 // antwrd entries: {pts: 0|0.5|1}
-let ST = {vak:null,domein:null,mode:null,vragen:[],idx:0,score:0,antwrd:[],timer:null,tijd:20,shuffleMap:[],shuffleMaps:[],combo:0,xpThisRound:0,isDailyChallenge:false};
+let ST = {vak:null,domein:null,mode:null,vragen:[],idx:0,score:0,antwrd:[],timer:null,tijd:30,shuffleMap:[],shuffleMaps:[],combo:0,xpThisRound:0,isDailyChallenge:false};
 
 // ═══════ UI HELPERS ═══════
 // ═══════ HASH ROUTING ═══════

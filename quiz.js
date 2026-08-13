@@ -251,7 +251,7 @@ function toonV(){
     // Vraag + opties schuiven levendig binnen (motion-systeem: elke vraag "leeft").
     const _qq=document.getElementById('qq');
     if(_qq){_qq.classList.remove('q-enter');void _qq.offsetWidth;_qq.classList.add('q-enter');}
-    startTimer(20);
+    startTimer(30);
     // Intent Engine: context van deze vraag (laatste vraag → anticipatie).
     try{if(typeof vonkContext==='function')vonkContext({screen:'quiz',qIndex:ST.idx,qTotal:tot,combo:ST.combo||0,lastQuestion:ST.idx===(tot-1),timeLeft:20});}catch(e){}
     // Lucky bonus kans per vraag
@@ -576,8 +576,8 @@ function setHotStreak(combo){
 
 // ═══════ SPEED BONUS ═══════
 function checkSpeedBonus(timeLeft){
-  if(timeLeft<10)return;
-  const bonus=Math.max(1,Math.round((timeLeft-9)*1.8));
+  if(timeLeft<15)return;
+  const bonus=Math.max(1,Math.round((timeLeft-14)*1.25));
   ST.xpThisRound=(ST.xpThisRound||0)+bonus;
   const el=document.createElement('div');
   el.className='speed-badge';
@@ -1373,7 +1373,7 @@ function toonRes(){
     let bdHtml='';
     if(ST.mode==='snel'){
       // Eén rustige compositie: drie beloningspills (wat je zojuist verdiende).
-      const lbScoreDisplay=ST.antwrd.reduce((sum,a)=>sum+a.pts*50+Math.round((a.tijdOver||0)/20*50),0);
+      const lbScoreDisplay=ST.antwrd.reduce((sum,a)=>sum+a.pts*50+Math.round((a.tijdOver||0)/30*50),0);
       const _si=(n,fb)=>{try{return (typeof _ico==='function')?_ico(n,20):fb;}catch(e){return fb;}};
       const _trophy='<svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 21h8M12 17v4M7 4h10v5a5 5 0 0 1-10 0z"/><path d="M7 6H4v1a3 3 0 0 0 3 3M17 6h3v1a3 3 0 0 1-3 3"/></svg>';
       const _bolt='<svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" stroke="none"><path d="M13 2 4 14h6l-1 8 9-12h-6z"/></svg>';
@@ -1454,7 +1454,7 @@ function toonRes(){
       const goed=ST.antwrd.filter(a=>a.pts===1).length;
       const tijden=ST.tijdPerVraag||[];
       const totalTijd=tijden.reduce((a,b)=>a+b,0);
-      const lbScore=ST.antwrd.reduce((sum,a)=>sum+a.pts*50+Math.round((a.tijdOver||0)/20*50),0);
+      const lbScore=ST.antwrd.reduce((sum,a)=>sum+a.pts*50+Math.round((a.tijdOver||0)/30*50),0);
       const avgTijd=tijden.length?Math.round(totalTijd/tijden.length*10)/10:0;
       const prof=JSON.parse(localStorage.getItem(PROF_KEY)||'{}');
       const naam=prof.naam||'Anoniem';

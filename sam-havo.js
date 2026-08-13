@@ -131,7 +131,7 @@ Object.assign(SAM_RICH,{
 <div class="sam-tip">In een grafiek met een <strong>piek</strong>: de top is het <strong>optimum</strong> (beste werking), de scherpe daling erná is <strong>denaturatie</strong>. Bij temperatuur is die daling onomkeerbaar — afkoelen brengt de activiteit niet terug.</div>
 
 <div class="sam-head">Denkregels voor het examen</div>
-<ul>
+<ul class="sam-noflash">
 <li>enzym <strong>versnelt</strong> de reactie <strong>≠</strong> enzym <strong>levert</strong> energie</li>
 <li><strong>optimum</strong> (beste werking) <strong>≠</strong> <strong>denaturatie</strong> (structuur/functie kwijt)</li>
 <li>denaturatie: te hoge temperatuur <strong>óf</strong> extreme pH — niet alléén warmte</li>
