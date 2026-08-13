@@ -305,6 +305,39 @@
         { type: "fade", sel: ".lbl-exp", t: [5.0, 5.8] },
         { type: "fade", sel: ".lbl-factor", t: [7.2, 8.0] }
       ]
+    },
+    // denaturatie: substraat past bij optimum -> hitte -> eiwit ontvouwt (lobben
+    // spreiden) -> actief centrum vervormd -> nieuw substraat past niet meer.
+    denaturatie: {
+      duration: 10.6,
+      cues: [0, 2.6, 4.6, 7.0, 9.0],
+      audio: [[1.3, "clipRoll"], [3.0, "clipSuccess"], [4.9, "clipCatalyst"], [7.4, "clipRoll"], [9.2, "clipCatalyst"]],
+      tracks: [
+        { type: "fade", sel: ".sub", t: [1.1, 1.4] },
+        { type: "moveAlong", pathSel: ".path-fit", ballSel: ".sub", base: { x: 40, y: 152 }, f: [[1.3, 0, "io"], [2.7, 1, "io"]] },
+        { type: "fade", sel: ".rxn", t: [2.9, 3.4] },
+        { type: "fade", sel: ".rxn", t: [3.7, 4.3], from: 1, to: 0 },
+        { type: "fade", sel: ".sub", t: [3.2, 3.9], from: 1, to: 0 },
+        { type: "custom", fn: function (t, ctx) {
+            var svg = ctx.svg;
+            var h = EAS.io(seg(t, 4.6, 7.6));                        // ontvouw-factor 0..1
+            var OFF = [[-24, -9, -20], [24, -11, 20], [-28, 11, -13], [28, 13, 13], [0, 22, 0]];
+            var lobes = svg.querySelectorAll(".lobe");
+            var jit = (t > 3.0 && t < 5.2) ? Math.sin(t * 33) * 1.5 * seg(t, 3.0, 4.4) * (1 - seg(t, 4.8, 5.2)) : 0;
+            for (var i = 0; i < lobes.length; i++) {
+              var o = OFF[i] || [0, 0, 0], cx = +lobes[i].getAttribute("data-cx"), cy = +lobes[i].getAttribute("data-cy");
+              var dx = o[0] * h + (i % 2 ? jit : -jit), dy = o[1] * h;
+              lobes[i].setAttribute("transform", "translate(" + dx.toFixed(1) + "," + dy.toFixed(1) + ") rotate(" + (o[2] * h).toFixed(1) + " " + cx + " " + cy + ")");
+            }
+            var heat = svg.querySelector(".heat"); if (heat) heat.style.opacity = (EAS.out(seg(t, 3.3, 5.0)) * (1 - seg(t, 9.4, 10.4))).toFixed(2);
+            var pocket = svg.querySelector(".pocket"); if (pocket) pocket.style.opacity = (0.6 * (1 - EAS.io(seg(t, 4.8, 6.6)))).toFixed(2);
+            var tv = svg.querySelector(".temp-val"); if (tv) tv.textContent = Math.round(37 + EAS.io(seg(t, 3.0, 7.4)) * (62 - 37)) + "°";
+            var tbg = svg.querySelector(".temp-badge"); if (tbg) tbg.setAttribute("fill", seg(t, 3.0, 7.4) > 0.5 ? "#e5484d" : "#f0a020");
+          } },
+        { type: "fade", sel: ".sub2", t: [7.3, 7.6] },
+        { type: "moveAlong", pathSel: ".path-bounce", ballSel: ".sub2", base: { x: 40, y: 154 }, f: [[7.4, 0, "io"], [8.3, 0.52, "out"], [9.4, 1, "in"]] },
+        { type: "fade", sel: ".nofit", t: [8.5, 9.2] }
+      ]
     }
   };
   for (var _sk in SPECS) CHOREO[_sk] = specChoreo(SPECS[_sk]);
