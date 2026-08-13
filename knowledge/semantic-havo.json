@@ -1,54 +1,761 @@
 {
- "_meta": { "laag": "semantic-facts", "status": "pilot", "concept": "enzym", "reviewStatus": "draft", "bron": "HAVO bio/sk syllabusniveau", "datum": "2026-07-22" },
+ "_meta": {
+  "laag": "semantic-facts",
+  "status": "uitgebreid",
+  "concept": "bi_M (domein)",
+  "reviewStatus": "draft",
+  "bron": "HAVO bio/sk syllabusniveau",
+  "datum": "2026-08-13"
+ },
  "concepts": {
-  "concept.enzym": { "label": "Enzym", "synoniemen": ["biokatalysator"] },
-  "concept.eiwit": { "label": "Eiwit" },
-  "concept.biokatalysator": { "label": "Biokatalysator" },
-  "concept.organische-stof": { "label": "Organische stof" },
-  "concept.activeringsenergie": { "label": "Activeringsenergie" },
-  "concept.actief-centrum": { "label": "Actief centrum" },
-  "concept.substraat": { "label": "Substraat" },
-  "concept.product": { "label": "Product" },
-  "concept.reactiesnelheid": { "label": "Reactiesnelheid" },
-  "concept.enzymactiviteit": { "label": "Enzymactiviteit" },
-  "concept.temperatuur": { "label": "Temperatuur" },
-  "concept.hoge-temperatuur": { "label": "Hoge temperatuur" },
-  "concept.ph": { "label": "pH" },
-  "concept.denaturatie": { "label": "Denaturatie" },
-  "concept.optimumtemperatuur": { "label": "Optimumtemperatuur" },
-  "concept.substraatspecificiteit": { "label": "Substraatspecificiteit" },
-  "concept.herbruikbaar": { "label": "Herbruikbaarheid" },
-  "concept.sleutel-slot": { "label": "Sleutel-slotmodel" },
-  "concept.cel": { "label": "Cel" },
-  "concept.celademhaling": { "label": "Celademhaling" },
-  "concept.spijsvertering": { "label": "Spijsvertering" },
-  "concept.amylase": { "label": "Amylase" },
-  "concept.zetmeel": { "label": "Zetmeel" },
-  "concept.hormoon": { "label": "Hormoon" }
+  "concept.enzym": {
+   "label": "Enzym",
+   "synoniemen": [
+    "biokatalysator"
+   ]
+  },
+  "concept.eiwit": {
+   "label": "Eiwit"
+  },
+  "concept.biokatalysator": {
+   "label": "Biokatalysator"
+  },
+  "concept.organische-stof": {
+   "label": "Organische stof"
+  },
+  "concept.activeringsenergie": {
+   "label": "Activeringsenergie"
+  },
+  "concept.actief-centrum": {
+   "label": "Actief centrum"
+  },
+  "concept.substraat": {
+   "label": "Substraat"
+  },
+  "concept.product": {
+   "label": "Product"
+  },
+  "concept.reactiesnelheid": {
+   "label": "Reactiesnelheid"
+  },
+  "concept.enzymactiviteit": {
+   "label": "Enzymactiviteit"
+  },
+  "concept.temperatuur": {
+   "label": "Temperatuur"
+  },
+  "concept.hoge-temperatuur": {
+   "label": "Hoge temperatuur"
+  },
+  "concept.ph": {
+   "label": "pH"
+  },
+  "concept.denaturatie": {
+   "label": "Denaturatie"
+  },
+  "concept.optimumtemperatuur": {
+   "label": "Optimumtemperatuur"
+  },
+  "concept.substraatspecificiteit": {
+   "label": "Substraatspecificiteit"
+  },
+  "concept.herbruikbaar": {
+   "label": "Herbruikbaarheid"
+  },
+  "concept.sleutel-slot": {
+   "label": "Sleutel-slotmodel"
+  },
+  "concept.cel": {
+   "label": "Cel"
+  },
+  "concept.celademhaling": {
+   "label": "Celademhaling"
+  },
+  "concept.spijsvertering": {
+   "label": "Spijsvertering"
+  },
+  "concept.amylase": {
+   "label": "Amylase"
+  },
+  "concept.zetmeel": {
+   "label": "Zetmeel"
+  },
+  "concept.hormoon": {
+   "label": "Hormoon"
+  },
+  "concept.celkern": {
+   "label": "Celkern",
+   "synoniemen": []
+  },
+  "concept.mitochondrion": {
+   "label": "Mitochondrion",
+   "synoniemen": [
+    "mitochondrium"
+   ]
+  },
+  "concept.chloroplast": {
+   "label": "Chloroplast",
+   "synoniemen": [
+    "bladgroenkorrel"
+   ]
+  },
+  "concept.celorganel": {
+   "label": "Celorganel",
+   "synoniemen": [
+    "organel"
+   ]
+  },
+  "concept.plantencel": {
+   "label": "Plantencel",
+   "synoniemen": []
+  },
+  "concept.dierlijke-cel": {
+   "label": "Dierlijke cel",
+   "synoniemen": [
+    "diercel"
+   ]
+  },
+  "concept.celwand": {
+   "label": "Celwand",
+   "synoniemen": []
+  },
+  "concept.dna": {
+   "label": "DNA",
+   "synoniemen": [
+    "desoxyribonucleïnezuur"
+   ]
+  },
+  "concept.osmose": {
+   "label": "Osmose",
+   "synoniemen": []
+  },
+  "concept.diffusie": {
+   "label": "Diffusie",
+   "synoniemen": []
+  },
+  "concept.transport": {
+   "label": "Transport (celmembraan)",
+   "synoniemen": []
+  },
+  "concept.watertransport": {
+   "label": "Watertransport",
+   "synoniemen": []
+  },
+  "concept.concentratieverschil": {
+   "label": "Concentratieverschil",
+   "synoniemen": []
+  },
+  "concept.fotosynthese": {
+   "label": "Fotosynthese",
+   "synoniemen": []
+  },
+  "concept.glucose": {
+   "label": "Glucose",
+   "synoniemen": []
+  },
+  "concept.zuurstof": {
+   "label": "Zuurstof",
+   "synoniemen": [
+    "O2"
+   ]
+  },
+  "concept.koolstofdioxide": {
+   "label": "Koolstofdioxide",
+   "synoniemen": [
+    "CO2"
+   ]
+  },
+  "concept.gen": {
+   "label": "Gen",
+   "synoniemen": []
+  },
+  "concept.genexpressie": {
+   "label": "Genexpressie",
+   "synoniemen": [
+    "eiwitsynthese"
+   ]
+  },
+  "concept.transcriptie": {
+   "label": "Transcriptie",
+   "synoniemen": []
+  },
+  "concept.translatie": {
+   "label": "Translatie",
+   "synoniemen": []
+  },
+  "concept.ribosoom": {
+   "label": "Ribosoom",
+   "synoniemen": []
+  },
+  "concept.chromosoom": {
+   "label": "Chromosoom",
+   "synoniemen": []
+  },
+  "concept.mrna": {
+   "label": "mRNA",
+   "synoniemen": [
+    "messenger-RNA"
+   ]
+  },
+  "concept.mitose": {
+   "label": "Mitose",
+   "synoniemen": []
+  },
+  "concept.meiose": {
+   "label": "Meiose",
+   "synoniemen": []
+  },
+  "concept.celdeling": {
+   "label": "Celdeling",
+   "synoniemen": []
+  },
+  "concept.lichaamscel": {
+   "label": "Lichaamscel",
+   "synoniemen": [
+    "somatische cel"
+   ]
+  },
+  "concept.geslachtscel": {
+   "label": "Geslachtscel",
+   "synoniemen": [
+    "gameet"
+   ]
+  },
+  "concept.allel": {
+   "label": "Allel",
+   "synoniemen": []
+  },
+  "concept.dominant-allel": {
+   "label": "Dominant allel",
+   "synoniemen": []
+  },
+  "concept.recessief-allel": {
+   "label": "Recessief allel",
+   "synoniemen": []
+  },
+  "concept.genotype": {
+   "label": "Genotype",
+   "synoniemen": []
+  },
+  "concept.fenotype": {
+   "label": "Fenotype",
+   "synoniemen": []
+  },
+  "concept.mutatie": {
+   "label": "Mutatie",
+   "synoniemen": []
+  },
+  "concept.celmembraan": {
+   "label": "Celmembraan",
+   "synoniemen": [
+    "plasmamembraan"
+   ]
+  }
  },
  "facts": [
-  { "s": "concept.enzym", "p": "is_a", "o": "concept.eiwit", "conf": 1.0, "bron": "syllabus" },
-  { "s": "concept.enzym", "p": "is_a", "o": "concept.biokatalysator", "conf": 1.0, "bron": "syllabus" },
-  { "s": "concept.eiwit", "p": "is_a", "o": "concept.organische-stof", "conf": 1.0, "bron": "syllabus" },
-  { "s": "concept.enzym", "p": "reduces", "o": "concept.activeringsenergie", "conf": 1.0, "bron": "syllabus" },
-  { "s": "concept.enzym", "p": "increases", "o": "concept.reactiesnelheid", "conf": 1.0, "bron": "syllabus" },
-  { "s": "concept.enzym", "p": "has_part", "o": "concept.actief-centrum", "conf": 1.0, "bron": "syllabus" },
-  { "s": "concept.substraat", "p": "binds_to", "o": "concept.actief-centrum", "conf": 1.0, "bron": "syllabus" },
-  { "s": "concept.enzym", "p": "produces", "o": "concept.product", "conf": 0.9, "bron": "handboek" },
-  { "s": "concept.enzym", "p": "analogy_of", "o": "concept.sleutel-slot", "conf": 0.9, "bron": "handboek" },
-  { "s": "concept.enzym", "p": "has_property", "o": "concept.substraatspecificiteit", "conf": 1.0, "bron": "syllabus" },
-  { "s": "concept.enzym", "p": "has_property", "o": "concept.herbruikbaar", "conf": 1.0, "bron": "syllabus" },
-  { "s": "concept.temperatuur", "p": "affects", "o": "concept.enzymactiviteit", "conf": 1.0, "bron": "syllabus" },
-  { "s": "concept.ph", "p": "affects", "o": "concept.enzymactiviteit", "conf": 1.0, "bron": "syllabus" },
-  { "s": "concept.enzymactiviteit", "p": "has_property", "o": "concept.optimumtemperatuur", "conf": 1.0, "bron": "syllabus" },
-  { "s": "concept.hoge-temperatuur", "p": "causes", "o": "concept.denaturatie", "conf": 1.0, "bron": "syllabus" },
-  { "s": "concept.denaturatie", "p": "reduces", "o": "concept.enzymactiviteit", "conf": 1.0, "bron": "syllabus" },
-  { "s": "concept.denaturatie", "p": "affects", "o": "concept.actief-centrum", "conf": 0.9, "bron": "handboek" },
-  { "s": "concept.enzym", "p": "occurs_in", "o": "concept.cel", "conf": 1.0, "bron": "syllabus" },
-  { "s": "concept.celademhaling", "p": "requires", "o": "concept.enzym", "conf": 1.0, "bron": "syllabus" },
-  { "s": "concept.spijsvertering", "p": "requires", "o": "concept.enzym", "conf": 1.0, "bron": "syllabus" },
-  { "s": "concept.amylase", "p": "is_a", "o": "concept.enzym", "conf": 1.0, "bron": "handboek" },
-  { "s": "concept.amylase", "p": "affects", "o": "concept.zetmeel", "conf": 0.9, "bron": "handboek" },
-  { "s": "concept.enzym", "p": "often_confused_with", "o": "concept.hormoon", "conf": 0.8, "bron": "docentreview" }
+  {
+   "s": "concept.enzym",
+   "p": "is_a",
+   "o": "concept.eiwit",
+   "conf": 1,
+   "bron": "syllabus"
+  },
+  {
+   "s": "concept.enzym",
+   "p": "is_a",
+   "o": "concept.biokatalysator",
+   "conf": 1,
+   "bron": "syllabus"
+  },
+  {
+   "s": "concept.eiwit",
+   "p": "is_a",
+   "o": "concept.organische-stof",
+   "conf": 1,
+   "bron": "syllabus"
+  },
+  {
+   "s": "concept.enzym",
+   "p": "reduces",
+   "o": "concept.activeringsenergie",
+   "conf": 1,
+   "bron": "syllabus"
+  },
+  {
+   "s": "concept.enzym",
+   "p": "increases",
+   "o": "concept.reactiesnelheid",
+   "conf": 1,
+   "bron": "syllabus"
+  },
+  {
+   "s": "concept.enzym",
+   "p": "has_part",
+   "o": "concept.actief-centrum",
+   "conf": 1,
+   "bron": "syllabus"
+  },
+  {
+   "s": "concept.substraat",
+   "p": "binds_to",
+   "o": "concept.actief-centrum",
+   "conf": 1,
+   "bron": "syllabus"
+  },
+  {
+   "s": "concept.enzym",
+   "p": "produces",
+   "o": "concept.product",
+   "conf": 0.9,
+   "bron": "handboek"
+  },
+  {
+   "s": "concept.enzym",
+   "p": "analogy_of",
+   "o": "concept.sleutel-slot",
+   "conf": 0.9,
+   "bron": "handboek"
+  },
+  {
+   "s": "concept.enzym",
+   "p": "has_property",
+   "o": "concept.substraatspecificiteit",
+   "conf": 1,
+   "bron": "syllabus"
+  },
+  {
+   "s": "concept.enzym",
+   "p": "has_property",
+   "o": "concept.herbruikbaar",
+   "conf": 1,
+   "bron": "syllabus"
+  },
+  {
+   "s": "concept.temperatuur",
+   "p": "affects",
+   "o": "concept.enzymactiviteit",
+   "conf": 1,
+   "bron": "syllabus"
+  },
+  {
+   "s": "concept.ph",
+   "p": "affects",
+   "o": "concept.enzymactiviteit",
+   "conf": 1,
+   "bron": "syllabus"
+  },
+  {
+   "s": "concept.enzymactiviteit",
+   "p": "has_property",
+   "o": "concept.optimumtemperatuur",
+   "conf": 1,
+   "bron": "syllabus"
+  },
+  {
+   "s": "concept.hoge-temperatuur",
+   "p": "causes",
+   "o": "concept.denaturatie",
+   "conf": 1,
+   "bron": "syllabus"
+  },
+  {
+   "s": "concept.denaturatie",
+   "p": "reduces",
+   "o": "concept.enzymactiviteit",
+   "conf": 1,
+   "bron": "syllabus"
+  },
+  {
+   "s": "concept.denaturatie",
+   "p": "affects",
+   "o": "concept.actief-centrum",
+   "conf": 0.9,
+   "bron": "handboek"
+  },
+  {
+   "s": "concept.enzym",
+   "p": "occurs_in",
+   "o": "concept.cel",
+   "conf": 1,
+   "bron": "syllabus"
+  },
+  {
+   "s": "concept.celademhaling",
+   "p": "requires",
+   "o": "concept.enzym",
+   "conf": 1,
+   "bron": "syllabus"
+  },
+  {
+   "s": "concept.spijsvertering",
+   "p": "requires",
+   "o": "concept.enzym",
+   "conf": 1,
+   "bron": "syllabus"
+  },
+  {
+   "s": "concept.amylase",
+   "p": "is_a",
+   "o": "concept.enzym",
+   "conf": 1,
+   "bron": "handboek"
+  },
+  {
+   "s": "concept.amylase",
+   "p": "affects",
+   "o": "concept.zetmeel",
+   "conf": 0.9,
+   "bron": "handboek"
+  },
+  {
+   "s": "concept.enzym",
+   "p": "often_confused_with",
+   "o": "concept.hormoon",
+   "conf": 0.8,
+   "bron": "docentreview"
+  },
+  {
+   "s": "concept.cel",
+   "p": "has_part",
+   "o": "concept.celmembraan",
+   "conf": 1,
+   "bron": "syllabus"
+  },
+  {
+   "s": "concept.cel",
+   "p": "has_part",
+   "o": "concept.celkern",
+   "conf": 1,
+   "bron": "syllabus"
+  },
+  {
+   "s": "concept.cel",
+   "p": "has_part",
+   "o": "concept.mitochondrion",
+   "conf": 1,
+   "bron": "syllabus"
+  },
+  {
+   "s": "concept.mitochondrion",
+   "p": "is_a",
+   "o": "concept.celorganel",
+   "conf": 1,
+   "bron": "syllabus"
+  },
+  {
+   "s": "concept.chloroplast",
+   "p": "is_a",
+   "o": "concept.celorganel",
+   "conf": 1,
+   "bron": "syllabus"
+  },
+  {
+   "s": "concept.celkern",
+   "p": "is_a",
+   "o": "concept.celorganel",
+   "conf": 1,
+   "bron": "syllabus"
+  },
+  {
+   "s": "concept.celkern",
+   "p": "has_part",
+   "o": "concept.dna",
+   "conf": 1,
+   "bron": "syllabus"
+  },
+  {
+   "s": "concept.plantencel",
+   "p": "is_a",
+   "o": "concept.cel",
+   "conf": 1,
+   "bron": "syllabus"
+  },
+  {
+   "s": "concept.dierlijke-cel",
+   "p": "is_a",
+   "o": "concept.cel",
+   "conf": 1,
+   "bron": "syllabus"
+  },
+  {
+   "s": "concept.plantencel",
+   "p": "has_part",
+   "o": "concept.celwand",
+   "conf": 1,
+   "bron": "syllabus"
+  },
+  {
+   "s": "concept.plantencel",
+   "p": "has_part",
+   "o": "concept.chloroplast",
+   "conf": 1,
+   "bron": "syllabus"
+  },
+  {
+   "s": "concept.mitochondrion",
+   "p": "often_confused_with",
+   "o": "concept.chloroplast",
+   "conf": 1,
+   "bron": "misconceptie"
+  },
+  {
+   "s": "concept.plantencel",
+   "p": "often_confused_with",
+   "o": "concept.dierlijke-cel",
+   "conf": 1,
+   "bron": "misconceptie"
+  },
+  {
+   "s": "concept.osmose",
+   "p": "is_a",
+   "o": "concept.diffusie",
+   "conf": 1,
+   "bron": "syllabus"
+  },
+  {
+   "s": "concept.diffusie",
+   "p": "is_a",
+   "o": "concept.transport",
+   "conf": 1,
+   "bron": "syllabus"
+  },
+  {
+   "s": "concept.osmose",
+   "p": "requires",
+   "o": "concept.celmembraan",
+   "conf": 1,
+   "bron": "syllabus"
+  },
+  {
+   "s": "concept.osmose",
+   "p": "produces",
+   "o": "concept.watertransport",
+   "conf": 1,
+   "bron": "syllabus"
+  },
+  {
+   "s": "concept.osmose",
+   "p": "depends_on",
+   "o": "concept.concentratieverschil",
+   "conf": 1,
+   "bron": "syllabus"
+  },
+  {
+   "s": "concept.fotosynthese",
+   "p": "occurs_in",
+   "o": "concept.chloroplast",
+   "conf": 1,
+   "bron": "syllabus"
+  },
+  {
+   "s": "concept.celademhaling",
+   "p": "occurs_in",
+   "o": "concept.mitochondrion",
+   "conf": 1,
+   "bron": "syllabus"
+  },
+  {
+   "s": "concept.fotosynthese",
+   "p": "produces",
+   "o": "concept.glucose",
+   "conf": 1,
+   "bron": "syllabus"
+  },
+  {
+   "s": "concept.fotosynthese",
+   "p": "produces",
+   "o": "concept.zuurstof",
+   "conf": 1,
+   "bron": "syllabus"
+  },
+  {
+   "s": "concept.fotosynthese",
+   "p": "requires",
+   "o": "concept.koolstofdioxide",
+   "conf": 1,
+   "bron": "syllabus"
+  },
+  {
+   "s": "concept.celademhaling",
+   "p": "requires",
+   "o": "concept.zuurstof",
+   "conf": 1,
+   "bron": "syllabus"
+  },
+  {
+   "s": "concept.celademhaling",
+   "p": "produces",
+   "o": "concept.koolstofdioxide",
+   "conf": 1,
+   "bron": "syllabus"
+  },
+  {
+   "s": "concept.fotosynthese",
+   "p": "opposite_of",
+   "o": "concept.celademhaling",
+   "conf": 1,
+   "bron": "syllabus"
+  },
+  {
+   "s": "concept.chromosoom",
+   "p": "has_part",
+   "o": "concept.dna",
+   "conf": 1,
+   "bron": "syllabus"
+  },
+  {
+   "s": "concept.gen",
+   "p": "part_of",
+   "o": "concept.dna",
+   "conf": 1,
+   "bron": "syllabus"
+  },
+  {
+   "s": "concept.genexpressie",
+   "p": "produces",
+   "o": "concept.eiwit",
+   "conf": 1,
+   "bron": "syllabus"
+  },
+  {
+   "s": "concept.transcriptie",
+   "p": "part_of",
+   "o": "concept.genexpressie",
+   "conf": 1,
+   "bron": "syllabus"
+  },
+  {
+   "s": "concept.translatie",
+   "p": "part_of",
+   "o": "concept.genexpressie",
+   "conf": 1,
+   "bron": "syllabus"
+  },
+  {
+   "s": "concept.transcriptie",
+   "p": "occurs_in",
+   "o": "concept.celkern",
+   "conf": 1,
+   "bron": "syllabus"
+  },
+  {
+   "s": "concept.transcriptie",
+   "p": "produces",
+   "o": "concept.mrna",
+   "conf": 1,
+   "bron": "syllabus"
+  },
+  {
+   "s": "concept.translatie",
+   "p": "occurs_in",
+   "o": "concept.ribosoom",
+   "conf": 1,
+   "bron": "syllabus"
+  },
+  {
+   "s": "concept.translatie",
+   "p": "requires",
+   "o": "concept.mrna",
+   "conf": 1,
+   "bron": "syllabus"
+  },
+  {
+   "s": "concept.translatie",
+   "p": "produces",
+   "o": "concept.eiwit",
+   "conf": 1,
+   "bron": "syllabus"
+  },
+  {
+   "s": "concept.transcriptie",
+   "p": "often_confused_with",
+   "o": "concept.translatie",
+   "conf": 1,
+   "bron": "misconceptie"
+  },
+  {
+   "s": "concept.mitose",
+   "p": "is_a",
+   "o": "concept.celdeling",
+   "conf": 1,
+   "bron": "syllabus"
+  },
+  {
+   "s": "concept.meiose",
+   "p": "is_a",
+   "o": "concept.celdeling",
+   "conf": 1,
+   "bron": "syllabus"
+  },
+  {
+   "s": "concept.mitose",
+   "p": "produces",
+   "o": "concept.lichaamscel",
+   "conf": 1,
+   "bron": "syllabus"
+  },
+  {
+   "s": "concept.meiose",
+   "p": "produces",
+   "o": "concept.geslachtscel",
+   "conf": 1,
+   "bron": "syllabus"
+  },
+  {
+   "s": "concept.meiose",
+   "p": "reduces",
+   "o": "concept.chromosoom",
+   "conf": 1,
+   "bron": "syllabus"
+  },
+  {
+   "s": "concept.mitose",
+   "p": "often_confused_with",
+   "o": "concept.meiose",
+   "conf": 1,
+   "bron": "misconceptie"
+  },
+  {
+   "s": "concept.dominant-allel",
+   "p": "is_a",
+   "o": "concept.allel",
+   "conf": 1,
+   "bron": "syllabus"
+  },
+  {
+   "s": "concept.recessief-allel",
+   "p": "is_a",
+   "o": "concept.allel",
+   "conf": 1,
+   "bron": "syllabus"
+  },
+  {
+   "s": "concept.allel",
+   "p": "part_of",
+   "o": "concept.gen",
+   "conf": 1,
+   "bron": "syllabus"
+  },
+  {
+   "s": "concept.fenotype",
+   "p": "depends_on",
+   "o": "concept.genotype",
+   "conf": 1,
+   "bron": "syllabus"
+  },
+  {
+   "s": "concept.genotype",
+   "p": "often_confused_with",
+   "o": "concept.fenotype",
+   "conf": 1,
+   "bron": "misconceptie"
+  },
+  {
+   "s": "concept.mutatie",
+   "p": "affects",
+   "o": "concept.dna",
+   "conf": 1,
+   "bron": "syllabus"
+  }
  ]
 }
