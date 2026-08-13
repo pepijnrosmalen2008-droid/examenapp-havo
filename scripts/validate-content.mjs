@@ -83,10 +83,38 @@ function checkLevel(niveau, vakken) {
   });
 }
 
+// Hand-geschreven VMBO-vraagbestanden (q/vmbo-*.js) draaien via __hydrateVak;
+// we vangen de payload met een stub en valideren elke vraag per domein.
+function checkVmboQ() {
+  const qdir = path.join(ROOT, 'q');
+  if (!fs.existsSync(qdir)) return;
+  const files = fs.readdirSync(qdir).filter(f => /^vmbo-.+\.js$/.test(f));
+  for (const f of files) {
+    const vakId = f.replace(/^vmbo-|\.js$/g, '');
+    let payload = null;
+    try { new Function('__hydrateVak', read('q/' + f))((lvl, vk, p) => { payload = p; }); }
+    catch (e) { err('vmbo/' + vakId, 'q-bestand laadt niet: ' + e.message); continue; }
+    if (!payload) continue;
+    for (const domId of Object.keys(payload)) {
+      ['sv', 'oe'].forEach(soort => {
+        const arr = payload[domId][soort] || [];
+        const seen = new Map();
+        arr.forEach((q, i) => {
+          const loc = `vmbo/${vakId}/${domId}/${soort}[${i}]`;
+          checkQuestion(q, loc);
+          const key = norm(q && q.v);
+          if (key) { if (seen.has(key)) warn(loc, 'dubbele vraag (ook op index ' + seen.get(key) + ')'); else seen.set(key, i); }
+        });
+      });
+    }
+  }
+}
+
 console.log('Inhoudsvalidatie — Slagio oefenvragen\n');
 try {
   checkLevel('havo', load('data-havo.js', 'VAKKEN'));
   checkLevel('vwo', load('data-vwo.js', 'VAKKEN_VWO'));
+  checkVmboQ();
 } catch (e) {
   console.error('KON DATA NIET LADEN: ' + e.message);
   process.exit(1);

@@ -404,8 +404,8 @@ var VAKKEN_VMBO = [
   "naam": "Biologie",
   "code": "BI",
   "kleur": "#2ECC71",
-  "beschrijving": "Cellen, organen, voortplanting, erfelijkheid en ecologie.",
-  "ceInfo": "CE over de biologische exameneenheden: cellen & organen, voortplanting, erfelijkheid, ecologie en gezondheid.",
+  "beschrijving": "Cellen & erfelijkheid, ecologie, het menselijk lichaam en biotechnologie.",
+  "ceInfo": "CE over de exameneenheden BI/K/4 (cellen & erfelijkheid), BI/K/6 (planten, dieren & samenhang), BI/K/9 (het lichaam in werking) en BI/V/1 (biotechnologie, verdieping GL/TL).",
   "exDatum": "2027-05-26",
   "exTijd": "13:30–15:30",
   "exDuur": "2 uur",
@@ -413,57 +413,67 @@ var VAKKEN_VMBO = [
   "domeinen": [
    {
     "id": "A",
-    "naam": "Cellen, organen & stelsels",
-    "beschrijving": "Bouw en werking van het menselijk lichaam.",
+    "naam": "Cellen aan de basis",
+    "code": "BI/K/4",
+    "beschrijving": "Organisatie van cel tot orgaanstelsel, plant- vs. diercel, erfelijkheid en evolutie.",
     "ceStatus": "CE",
     "onderwerpen": [
-     "Cellen, weefsels en organen",
-     "Spijsvertering",
-     "Bloedsomloop en ademhaling"
+     "Cel, weefsel, orgaan en orgaanstelsel",
+     "Verschil plantencel en dierlijke cel",
+     "Chromosomen, DNA, genotype en fenotype",
+     "Monohybride kruisingsschema's",
+     "Natuurlijke selectie en evolutie"
     ],
-    "nSv": 0,
+    "nSv": 14,
     "nOe": 0,
     "nBeg": 0
    },
    {
     "id": "B",
-    "naam": "Voortplanting & erfelijkheid",
-    "beschrijving": "Voortplanting, DNA en overerving.",
+    "naam": "Planten, dieren en hun samenhang",
+    "code": "BI/K/6",
+    "beschrijving": "Ecologie, voedselrelaties, kringlopen en fotosynthese.",
     "ceStatus": "CE",
     "onderwerpen": [
-     "Voortplanting bij de mens",
-     "Erfelijke eigenschappen",
-     "DNA en chromosomen (basis)"
+     "Voedselketens en voedselwebben",
+     "Producenten, consumenten en reducenten",
+     "Koolstof- en stikstofkringloop",
+     "Fotosynthese (grondstoffen en producten)"
     ],
-    "nSv": 0,
+    "nSv": 12,
     "nOe": 0,
     "nBeg": 0
    },
    {
     "id": "C",
-    "naam": "Ecologie",
-    "beschrijving": "Voedselrelaties, kringlopen en milieu.",
+    "naam": "Het lichaam in werking",
+    "code": "BI/K/9",
+    "beschrijving": "Vertering & transport, gaswisseling & uitscheiding, regeling & waarneming.",
     "ceStatus": "CE",
     "onderwerpen": [
-     "Voedselketens en -webben",
-     "Kringlopen",
-     "Mens en milieu"
+     "Vertering en het maag-darmstelsel",
+     "Bloedsomloop en hart",
+     "Gaswisseling in de longen",
+     "Nieren, huid en uitscheiding",
+     "Zenuwstelsel, hormonen en zintuigen (oog)"
     ],
-    "nSv": 0,
+    "nSv": 16,
     "nOe": 0,
     "nBeg": 0
    },
    {
     "id": "D",
-    "naam": "Gezondheid & gedrag",
-    "beschrijving": "Afweer, hormonen, zintuigen en gezond leven.",
+    "naam": "Bio-wetenschappen en maatschappij",
+    "code": "BI/V/1",
+    "beschrijving": "Biotechnologie: gisten, bacteriën, schimmels en genetische modificatie (verdieping GL/TL).",
     "ceStatus": "CE",
     "onderwerpen": [
-     "Afweer en ziekteverwekkers",
-     "Zintuigen en zenuwstelsel",
-     "Gezonde leefstijl"
+     "Biotechnologie in voeding (gist, melkzuurbacteriën)",
+     "Antibiotica uit schimmels",
+     "Genetische modificatie (o.a. insuline)",
+     "Voor- en nadelen van gm-gewassen"
     ],
-    "nSv": 0,
+    "nSv": 8,
     "nOe": 0,
     "nBeg": 0
    }
