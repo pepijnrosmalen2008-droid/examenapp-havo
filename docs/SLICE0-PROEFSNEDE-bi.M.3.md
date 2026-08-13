@@ -187,3 +187,27 @@ Alle gates van de DoD gehaald zonder quota-forcering. **Voorbehoud (mens/eigenaa
 - De **quota** is op leerdoel-niveau te grofmazig; hij hoort domein-breed te gelden (7 leerdoelen samen), niet per leerdoel.
 - **Transfer/examen-items** (contexten uit echte examens) zijn nu licht — bij opschaling zou ik per leerdoel ≥1 echte examen-context willen.
 - De **clip** is nu een SPEC-ontwerp, geen gerenderde clip; de render-kwaliteit moet nog bewezen worden.
+
+---
+
+## v2 — herwerkt na de kritische review (vier engineverbeteringen)
+
+De eigenaar keurde v1 goed als *proof-of-concept*, met de opdracht eerst vier engineverbeteringen in te bouwen en bi.M.3 te herwerken vóór opschaling. Uitgevoerd:
+
+| # | Verbetering | Waar vastgelegd |
+|---|---|---|
+| 1 | **Transfer-vragen** als expliciet type (≥2 concepten, nieuwe context) | DoD **C10** + §6.5 R4–R5; nieuwe vraag 7 (onbekend enzym, meetreeks 20/37/60 °C, onomkeerbaarheid) |
+| 2 | **Afleider-taxonomie** (misconceptie / contextueel / redeneerfout) | DoD **C11**; elke afleider in v2 getagd (12 mis · 5 ctx · 7 rea) |
+| 3 | **Examencontexten** in de dekking (grafiek/bron/experiment/tabel/casus) | DoD **D5/D6**; v2 heeft 5 contexttypen; nieuwe vraag 8 (pH-datatabel, dicht pH-gat) |
+| 4 | **Canonical overclaim-check** (absolute vereenvoudigingen) | `scripts/overclaim-check.js` (NIEUW, twee-lagig HARD/SOFT) + DoD **E6** |
+
+**Canonieke correcties** (in `knowledge/semantic-havo.json → _meta.canoniekeFormuleringen`, bewaakt door E6):
+- Substraatspecificiteit: ~~"past maar bij één type substraat"~~ → "een actief centrum waardoor *bepaalde* substraten passend binden".
+- Denaturatie: ~~"onherstelbaar kapotgaan bij te hoog"~~ → "verandering van de ruimtelijke structuur; *zowel te hoge temperatuur als extreme pH* kan dit veroorzaken".
+- pH toegevoegd aan de semantische graaf (`extreme-ph causes denaturatie`, `optimum-ph`).
+
+**Verificatie:** `overclaim-check` faalt HARD op de oude v1-formuleringen ("precies één" / "alleen zetmeel past") en draait HARD-schoon over de canonieke v2-laag (samenvatting + juiste antwoorden + uitleg); de 3 zachte signalen zijn terechte universalia. `semantic.js validate` groen (75 feiten), `smoke.mjs` 63/63.
+
+**Antwoordposities v2:** A2 B2 C2 D2 (exact gelijk). **Cognitief bereik:** R1–R5 alle aanwezig.
+
+**Nog open vóór opschaling:** clip-renderkwaliteit onbewezen; examencontext nog synthetisch (geen letterlijk oud-examenfragment); toepassen zit iets boven de quota (bewust gemeld conform curriculumwaarheid > quota). **Overige zes leerdoelen van bi_M zijn NIET geproduceerd** — dit blijft één leerdoel, ter beoordeling.

@@ -5,7 +5,23 @@
   "concept": "bi_M (domein)",
   "reviewStatus": "draft",
   "bron": "HAVO bio/sk syllabusniveau",
-  "datum": "2026-08-13"
+  "datum": "2026-08-13",
+  "canoniekeFormuleringen": {
+   "_toelichting": "Precieze bron-van-waarheid voor downstream generatie (samenvatting + vragen). Absolute vereenvoudigingen ('alleen', 'precies één', 'altijd door hoge temperatuur') zijn hier BEWUST vermeden; de didactische HAVO-vereenvoudiging mag pas dáárna, als afgeleide, en nooit als universele regel.",
+   "substraatspecificiteit": {
+    "canoniek": "Een enzym heeft een actief centrum met een vorm en chemische eigenschappen waardoor alleen bepaalde substraten passend kunnen binden.",
+    "havo_vereenvoudiging": "Daarom is een enzym substraatspecifiek: het werkt op zijn eigen substra(a)t(en) en niet zomaar op andere stoffen.",
+    "verboden_overclaim": "Een enzym past bij precies één substraat / één enzym = één substraat."
+   },
+   "denaturatie": {
+    "canoniek": "Denaturatie is een verandering van de ruimtelijke structuur van een eiwit waardoor de functie verloren kan gaan; bij een enzym verliest het actieve centrum daardoor zijn vorm. Zowel een te hoge temperatuur als een extreme pH kan dit veroorzaken.",
+    "havo_vereenvoudiging": "Boven de optimumtemperatuur (of bij een extreme pH) denatureert het enzym en daalt de activiteit sterk.",
+    "verboden_overclaim": "Denaturatie wordt altijd/uitsluitend veroorzaakt door een hoge temperatuur."
+   },
+   "onomkeerbaarheid": {
+    "canoniek": "Denaturatie door een te hoge temperatuur is bij enzymen doorgaans onomkeerbaar: afkoelen herstelt de oorspronkelijke vorm van het actieve centrum niet, dus de activiteit keert niet terug."
+   }
+  }
  },
  "concepts": {
   "concept.enzym": {
@@ -250,6 +266,17 @@
    "synoniemen": [
     "plasmamembraan"
    ]
+  },
+  "concept.extreme-ph": {
+   "label": "Extreme pH",
+   "synoniemen": [
+    "sterk zuur",
+    "sterk basisch"
+   ]
+  },
+  "concept.optimum-ph": {
+   "label": "Optimum-pH",
+   "synoniemen": []
   }
  },
  "facts": [
@@ -355,6 +382,27 @@
    "s": "concept.hoge-temperatuur",
    "p": "causes",
    "o": "concept.denaturatie",
+   "conf": 1,
+   "bron": "syllabus"
+  },
+  {
+   "s": "concept.extreme-ph",
+   "p": "causes",
+   "o": "concept.denaturatie",
+   "conf": 1,
+   "bron": "syllabus"
+  },
+  {
+   "s": "concept.enzymactiviteit",
+   "p": "has_property",
+   "o": "concept.optimum-ph",
+   "conf": 1,
+   "bron": "syllabus"
+  },
+  {
+   "s": "concept.ph",
+   "p": "affects",
+   "o": "concept.optimum-ph",
    "conf": 1,
    "bron": "syllabus"
   },

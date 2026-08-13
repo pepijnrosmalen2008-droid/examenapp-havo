@@ -20,6 +20,8 @@ Een domein is "klaar" als deze matrix voor het domein groen is. De rechterkolom 
 | Verbanden | ✅ produceren | semantic-facts + samenvatting-sectie "verbanden" |
 | Misconcepties | ✅ produceren | `veelgemaakteFouten` → misconceptie-vragen |
 | Examenvragen (examenredeneren) | ✅ produceren | vragen, leerhandeling *exam_reasoning* |
+| Transfer (≥2 concepten, nieuwe context) | ✅ produceren waar zinvol | vragen, leerhandeling *transfer* (C10) |
+| Examencontext (grafiek/bron/experiment/tabel/casus) | ✅ produceren waar zinvol | vraag-context-type (D5) |
 | Oude examens | ➖ koppelen | bestaande `oe`-bank / PDF's — niet genereren |
 | Herhaling | ➖ koppelen | SM-2 / foutenboek bestaan al |
 | Uitleg | ✅ produceren | verplicht uitleg-schema per vraag |
@@ -69,6 +71,8 @@ Legenda meetmethode: **[auto]** = bestaande/uit te breiden engine rekent het uit
 | C7 | Ieder item gekoppeld aan concept + leerdoel + syllabusreferentie | koppeling-sidecar **[auto]** | 100% |
 | C8 | 4 opties · precies 1 juist · geen dubbele/lege opties | `evaluation-engine.js` **[auto]** (bestaat) | 100% |
 | C9 | Juist antwoord niet systematisch op één positie | antwoordpositie-bias-check **[auto]** (bestaat; vond 43%) | binnen tolerantie |
+| C10 | **Transfer-vraag** — waar het leerdoel het ondersteunt ≥1 item dat **≥2 canonieke concepten in een nieuwe context** combineert (niet los reproduceren) | leerhandeling-tag `transfer` + concept-koppeling telt ≥2 **[auto+]** | ≥1 per leerdoel/domein waar zinvol (§6.4: gerapporteerd gat = pass) |
+| C11 | **Afleider-taxonomie** — niet elke vraag leunt uitsluitend op een bekende misconceptie; per afleider een type: `misconceptie` / `contextueel` (waar-maar-niet-hier) / `redeneerfout` | afleider-`type`-veld verplicht; verdeling gemeten **[auto+]** | ≥2 afleidertypen over de vragenset; niet 100% misconceptie |
 
 ### D. Dekking
 
@@ -78,6 +82,8 @@ Legenda meetmethode: **[auto]** = bestaande/uit te breiden engine rekent het uit
 | D2 | Belangrijke concepten meer dan één keer getest, met verschillende leerhandelingen | per-concept vraagtelling × leerhandeling **[auto+]** | kernconcept ≥2 vragen, ≥2 leerhandelingen |
 | D3 | Zwakke/missende leerhandelingen zichtbaar in het dashboard | dashboard-matrix (outputtype × leerhandeling) **[auto+]** | matrix aanwezig |
 | D4 | De compleetheidsmatrix (§0) voor dit domein ingevuld | dashboard **[auto+]** | alle in-scope rijen ✅ |
+| D5 | **Examencontext-dekking** — waar het curriculum het ondersteunt komen bron/grafiek/experiment/tabel/casus als vraagcontext voor, niet alleen kale begripsvragen | context-`type`-veld per vraag; ≥2 contexttypen per domein **[auto+]** | ≥2 contexttypen aanwezig waar zinvol (§6.4) |
+| D6 | **Contextdiversiteit** — niet alle vragen van een leerdoel gebruiken dezelfde situatie/casus | context-hash-telling **[auto+]** | geen enkele context >50% van de items van een leerdoel |
 
 ### E. Evaluatie (de poort naar `live`)
 
@@ -88,6 +94,7 @@ Legenda meetmethode: **[auto]** = bestaande/uit te breiden engine rekent het uit
 | E3 | Dubbele / semantisch (bijna-)identieke vragen gedetecteerd en weg | duplicaatdetectie **[auto+]** | 0 duplicaten |
 | E4 | Inhoudelijke fouten gedetecteerd | feitcheck **[mens/LLM]** | 0 fouten |
 | E5 | **Gate:** pas `live`/`production` als A–E allemaal groen | pipeline-beleid **[auto]** | alle gates pass |
+| E6 | **Canonical overclaim-check** — geen absolute vereenvoudiging ("alleen", "altijd", "nooit", "precies één", "wordt altijd veroorzaakt door") als canonieke waarheid | `overclaim-check.js` **[auto]** (bestaat) | 0 niet-gerechtvaardigde overclaims |
 
 ---
 
@@ -171,3 +178,25 @@ De nieuwe samenvatting moet **inhoudelijk** minstens zo goed zijn als de bestaan
 
 ### 6.4 Kernregel — curriculumwaarheid staat boven de quota
 De quota (§6.2) zijn **doelen**, geen wet. **Als een leerdoel/de syllabus aantoonbaar geen kwalitatief goede vraag van een bepaald type ondersteunt, mag de engine die quota breken en dít rapporteren — nooit een kunstmatige vraag produceren om een percentage te halen.** Een gerapporteerd, onderbouwd gat is een *pass*; een opgevulde nepvraag is een *fail*. Dit geldt boven elke andere gate in dit document.
+
+### 6.5 Cognitief moeilijkheidsmodel (R1–R5) — tijdens de eerste domeinen
+Vervangt "makkelijk/gemiddeld/moeilijk" door een niveauschaal die later een leerpad voedt. Elk item krijgt een `R`-tag naast zijn leerhandeling:
+
+| Niveau | Betekenis | Voorbeeld (enzymen) |
+|---|---|---|
+| **R1** | Herkennen / reproduceren | "Wat is een enzym?" |
+| **R2** | Begrijpen (oorzaak–gevolg) | "Hoe versnelt een enzym een reactie?" |
+| **R3** | Toepassen in een standaardsituatie | "Amylase & zetmeel — waarom geen effect op eiwit?" |
+| **R4** | Combineren (≥2 concepten) | optimum **én** denaturatie in één redenering |
+| **R5** | Transfer / examenredeneren in nieuwe context | onbekend enzym, meetreeks, onomkeerbaarheid afleiden |
+
+Doel per domein: de set dekt **R1 t/m R5** af (niet elk leerdoel hoeft R5 te hebben; het **domein** wel, waar zinvol). R4/R5 zijn precies de "niet te netjes"-vragen: één concept · één misconceptie · één leerhandeling mag niet het hele beeld zijn.
+
+### 6.6 Canonieke precisie — geen overclaim als bron-van-waarheid
+De canonical knowledge layer legt **precieze** formuleringen vast; de didactische HAVO-vereenvoudiging is een **afgeleide**, nooit de canonieke regel. Vastgelegd in `knowledge/semantic-havo.json → _meta.canoniekeFormuleringen`, bewaakt door `overclaim-check.js` (gate E6). Twee correcties uit de bi.M.3-review, bindend:
+
+- **Substraatspecificiteit** — canoniek: *"een actief centrum met een vorm en chemische eigenschappen waardoor alleen bepaalde substraten passend kunnen binden"*. **Verboden overclaim:** "één enzym = precies één substraat".
+- **Denaturatie** — canoniek: *"een verandering van de ruimtelijke structuur waardoor de functie verloren kan gaan; zowel een te hoge temperatuur als een extreme pH kan dit veroorzaken"*. **Verboden overclaim:** "denaturatie wordt altijd door hoge temperatuur veroorzaakt".
+
+### 6.7 Kernprincipe — elke fout heeft diagnostische waarde
+Nooit "Fout, het juiste antwoord is B." Elke afleider draagt: **gekozen fout → vermoedelijke denkfout → het relevante onderscheid → juiste mentale representatie** (de "Koos je X? …"-vorm). Dit is een productdifferentiator van Slagio en een harde eis op elke uitleg (C6), niet alleen een stijlkeuze.
