@@ -12398,659 +12398,3588 @@ var VAKKEN = [
     ]
     ,
     "leerdoelen": [
-   {
-    "id": "M4",
-    "naam": "Fotosynthese & celademhaling",
-    "beschrijving": "Gouden-standaardmodule bi.M.2: hoe planten glucose opbouwen met licht (fotosynthese) en hoe cellen glucose met zuurstof afbreken voor energie (celademhaling), incl. assimilatie/dissimilatie en gisting.",
-    "ceStatus": "CE",
-    "onderwerpen": [
-     "Fotosynthese (opbouw glucose)",
-     "Celademhaling (afbraak glucose)",
-     "Bladgroenkorrel & mitochondrium",
-     "Assimilatie vs dissimilatie",
-     "Anaerobe dissimilatie (gisting)",
-     "Gasuitwisseling & beperkende factoren"
-    ],
-    "sam": "Bij fotosynthese bouwt een plant glucose op uit CO2 en water met behulp van lichtenergie; dit gebeurt in de bladgroenkorrels en levert zuurstof op. Bij celademhaling breken cellen glucose met zuurstof af tot CO2 en water, waarbij energie vrijkomt; dit gebeurt in de mitochondriën. De producten van het ene proces zijn de grondstoffen van het andere. Zonder zuurstof verloopt de afbraak onvolledig (anaerobe dissimilatie of gisting) en levert veel minder energie op.",
-    "begrippen": [
-     {
-      "t": "Fotosynthese",
-      "d": "Opbouw van glucose uit CO2 en water met lichtenergie; gebeurt in de bladgroenkorrels."
-     },
-     {
-      "t": "Celademhaling",
-      "d": "Afbraak van glucose met zuurstof tot CO2 en water, waarbij energie vrijkomt; gebeurt in de mitochondrien."
-     },
-     {
-      "t": "Bladgroenkorrel",
-      "d": "Celorganel met bladgroen waarin de fotosynthese plaatsvindt."
-     },
-     {
-      "t": "Bladgroen",
-      "d": "De groene kleurstof die de lichtenergie voor de fotosynthese opvangt."
-     },
-     {
-      "t": "Glucose",
-      "d": "Energierijke suiker die bij fotosynthese wordt gemaakt en bij celademhaling wordt afgebroken."
-     },
-     {
-      "t": "Mitochondrium",
-      "d": "Celorganel waarin glucose met zuurstof wordt afgebroken en energie vrijkomt."
-     },
-     {
-      "t": "Assimilatie",
-      "d": "Opbouw van complexe stoffen uit eenvoudige, zoals bij de fotosynthese."
-     },
-     {
-      "t": "Dissimilatie",
-      "d": "Afbraak van complexe stoffen waarbij energie vrijkomt, zoals bij de celademhaling."
-     },
-     {
-      "t": "Anaerobe dissimilatie",
-      "d": "Afbraak van glucose zonder zuurstof (gisting); levert veel minder energie, met melkzuur of alcohol als restproduct."
-     },
-     {
-      "t": "Huidmondje",
-      "d": "Opening in het blad waardoor CO2 naar binnen en zuurstof en waterdamp naar buiten gaan."
-     },
-     {
-      "t": "Beperkende factor",
-      "d": "De factor (licht, CO2 of temperatuur) die op dat moment de fotosynthesesnelheid begrenst."
-     },
-     {
-      "t": "Compensatiepunt",
-      "d": "De lichtsterkte waarbij fotosynthese en celademhaling elkaar precies opheffen."
-     }
-    ],
-    "sv": [
-     {
-      "v": "Wat is fotosynthese?",
-      "o": [
-       "De opbouw van glucose uit CO2 en water met lichtenergie",
-       "De afbraak van glucose waarbij warmte en veel energie vrijkomen",
-       "De opname van zuurstof door de wortels",
-       "Het verdampen van water via de bladeren"
-      ],
-      "c": 0,
-      "d": 1,
-      "u": "Fotosynthese is de opbouw van glucose uit CO2 en water met lichtenergie. Koos je 'afbraak van glucose'? Dat is juist celademhaling, het tegenovergestelde. Onthoud: foto = licht, synthese = opbouw.",
-      "uo": [
-       "Klopt: met lichtenergie bouwt de plant glucose op uit CO2 en water.",
-       "Dat is celademhaling (afbraak, energie vrij), juist het omgekeerde van fotosynthese.",
-       "Zuurstofopname hoort bij ademhaling; fotosynthese geeft juist zuurstof af.",
-       "Waterverdamping is verdamping, geen opbouw van glucose."
-      ],
-      "uh": "Foto = licht, synthese = opbouw: glucose maken met licht."
-     },
-     {
-      "v": "Wat gebeurt er bij celademhaling?",
-      "o": [
-       "Er wordt glucose opgebouwd uit koolstofdioxide",
-       "Lichtenergie wordt door bladgroen ingevangen",
-       "Water wordt met behulp van licht gesplitst",
-       "Glucose wordt met zuurstof afgebroken en levert energie"
-      ],
-      "c": 3,
-      "d": 1,
-      "u": "Bij celademhaling wordt glucose met zuurstof afgebroken en komt energie vrij. Koos je 'glucose opbouwen'? Dat is fotosynthese. Onthoud: celademhaling = glucose verbranden voor energie.",
-      "uo": [
-       "Glucose opbouwen is fotosynthese, niet celademhaling.",
-       "Licht invangen hoort bij fotosynthese; celademhaling heeft geen licht nodig.",
-       "Water splitsen met licht hoort bij fotosynthese.",
-       "Klopt: glucose wordt met zuurstof afgebroken en dat levert energie."
-      ],
-      "uh": "Celademhaling = glucose met zuurstof verbranden voor energie."
-     },
-     {
-      "v": "Waar in de cel vindt de fotosynthese plaats?",
-      "o": [
-       "In de celkern met het DNA",
-       "In het mitochondrium",
-       "In de bladgroenkorrel",
-       "In het celmembraan"
-      ],
-      "c": 2,
-      "d": 1,
-      "u": "Onthoud: fotosynthese gebeurt in de bladgroenkorrel (met bladgroen).",
-      "uo": [
-       "De celkern bevat het DNA, niet de fotosynthese.",
-       "Het mitochondrium is juist voor de celademhaling.",
-       "Klopt: de bladgroenkorrel bevat bladgroen en doet de fotosynthese.",
-       "Het celmembraan is de celgrens, geen fotosynthese-plek."
-      ],
-      "uh": "Fotosynthese = in de bladgroenkorrel."
-     },
-     {
-      "v": "Waar vindt de celademhaling vooral plaats?",
-      "o": [
-       "In de bladgroenkorrel",
-       "In het mitochondrium",
-       "In de vacuole",
-       "In de celwand"
-      ],
-      "c": 1,
-      "d": 1,
-      "u": "Onthoud: celademhaling gebeurt in het mitochondrium.",
-      "uo": [
-       "De bladgroenkorrel is voor de fotosynthese.",
-       "Klopt: het mitochondrium breekt glucose met zuurstof af.",
-       "De vacuole is een opslagruimte, geen ademhalingsplek.",
-       "De celwand geeft stevigheid, geen celademhaling."
-      ],
-      "uh": "Celademhaling = in het mitochondrium."
-     },
-     {
-      "v": "Een plant staat in het volledige donker. Wat gebeurt er?",
-      "o": [
-       "Celademhaling gaat door, fotosynthese stopt",
-       "Fotosynthese gaat door, celademhaling stopt",
-       "Beide processen stoppen volledig",
-       "Beide processen gaan gewoon door"
-      ],
-      "c": 0,
-      "d": 2,
-      "u": "Fotosynthese heeft licht nodig en stopt in het donker; celademhaling gaat dag en nacht door. Onthoud: alleen fotosynthese heeft licht nodig.",
-      "uo": [
-       "Klopt: zonder licht geen fotosynthese, maar de celademhaling loopt door.",
-       "Andersom: juist de fotosynthese stopt, niet de celademhaling.",
-       "De celademhaling stopt niet; die gaat continu door.",
-       "Fotosynthese kan niet doorgaan zonder licht."
-      ],
-      "uh": "Alleen fotosynthese heeft licht nodig; ademhaling gaat altijd door."
-     },
-     {
-      "v": "Welke stof vangt het licht op voor de fotosynthese?",
-      "o": [
-       "Zetmeel",
-       "Water",
-       "Zuurstof",
-       "Bladgroen"
-      ],
-      "c": 3,
-      "d": 1,
-      "u": "Onthoud: bladgroen (chlorofyl) vangt het licht op.",
-      "uo": [
-       "Zetmeel is een opslagstof, geen lichtvanger.",
-       "Water is een grondstof, maar vangt geen licht op.",
-       "Zuurstof is een product, geen lichtvanger.",
-       "Klopt: bladgroen vangt de lichtenergie op."
-      ],
-      "uh": "Bladgroen vangt het licht op voor de fotosynthese."
-     },
-     {
-      "v": "Wat zijn de grondstoffen (uitgangsstoffen) van de fotosynthese?",
-      "o": [
-       "Glucose en zuurstof",
-       "Koolstofdioxide en water",
-       "Zuurstof en water",
-       "Glucose en koolstofdioxide"
-      ],
-      "c": 1,
-      "d": 2,
-      "u": "De grondstoffen zijn koolstofdioxide en water; glucose en zuurstof zijn juist de producten. Onthoud: CO2 + water gaan erin, glucose + O2 komen eruit.",
-      "uo": [
-       "Glucose en zuurstof zijn de producten, niet de grondstoffen.",
-       "Klopt: uit CO2 en water bouwt de plant glucose op.",
-       "Zuurstof is een product; water klopt wel, maar zuurstof niet.",
-       "Glucose is een product, geen grondstof."
-      ],
-      "uh": "Fotosynthese: CO2 + water erin, glucose + zuurstof eruit."
-     },
-     {
-      "v": "Wat zijn de eindproducten van de fotosynthese?",
-      "o": [
-       "Koolstofdioxide en water",
-       "Uitsluitend zuurstof en warmte",
-       "Glucose en zuurstof",
-       "Water en losse energie"
-      ],
-      "c": 2,
-      "d": 2,
-      "u": "De producten zijn glucose en zuurstof. Koos je 'CO2 en water'? Dat zijn de producten van de celademhaling. Onthoud: fotosynthese maakt glucose en zuurstof.",
-      "uo": [
-       "CO2 en water zijn de producten van de celademhaling.",
-       "Er komt ook glucose bij; zuurstof alleen is onvolledig.",
-       "Klopt: fotosynthese levert glucose en zuurstof.",
-       "Er ontstaat glucose (energie in een stof), niet losse energie."
-      ],
-      "uh": "Fotosynthese maakt glucose en zuurstof."
-     },
-     {
-      "v": "Wat zijn de eindproducten van de celademhaling?",
-      "o": [
-       "Koolstofdioxide en water",
-       "Glucose en zuurstof",
-       "Alleen glucose",
-       "Bladgroen en water"
-      ],
-      "c": 0,
-      "d": 2,
-      "u": "De producten zijn koolstofdioxide en water (plus energie). Koos je 'glucose en zuurstof'? Dat zijn de producten van de fotosynthese. Onthoud: ademhaling levert CO2 en water.",
-      "uo": [
-       "Klopt: celademhaling levert CO2 en water op, plus energie.",
-       "Glucose en zuurstof zijn juist de grondstoffen van de celademhaling.",
-       "Glucose wordt juist afgebroken, niet gevormd.",
-       "Bladgroen is geen product van de celademhaling."
-      ],
-      "uh": "Celademhaling levert CO2 en water (en energie)."
-     },
-     {
-      "v": "Via welke openingen neemt een blad koolstofdioxide op?",
-      "o": [
-       "De houtvaten",
-       "De bastvaten",
-       "De celkernen",
-       "De huidmondjes"
-      ],
-      "c": 3,
-      "d": 1,
-      "u": "Onthoud: gasuitwisseling gaat via de huidmondjes.",
-      "uo": [
-       "Houtvaten vervoeren water, geen gassen naar buiten.",
-       "Bastvaten vervoeren suikers, geen CO2-opname.",
-       "Celkernen bevatten DNA, geen gasuitwisseling.",
-       "Klopt: via de huidmondjes komt CO2 binnen en gaat O2 naar buiten."
-      ],
-      "uh": "Gasuitwisseling van het blad gaat via de huidmondjes."
-     },
-     {
-      "v": "Waarom noemen we de fotosynthese een vorm van assimilatie?",
-      "o": [
-       "Omdat er ingewikkelde stoffen juist worden afgebroken tot eenvoudige",
-       "Omdat uit eenvoudige stoffen een complexe stof wordt gebouwd",
-       "Omdat er energie bij vrijkomt",
-       "Omdat er zuurstof wordt verbruikt"
-      ],
-      "c": 1,
-      "d": 2,
-      "u": "Assimilatie is opbouw: uit CO2 en water (eenvoudig) wordt glucose (complex) gebouwd. Onthoud: assimilatie = opbouw, dissimilatie = afbraak.",
-      "uo": [
-       "Afbraak hoort bij dissimilatie, niet bij assimilatie.",
-       "Klopt: assimilatie is opbouw van een complexe stof uit eenvoudige.",
-       "Bij assimilatie wordt energie juist vastgelegd, niet vrijgemaakt.",
-       "Fotosynthese verbruikt geen zuurstof; het maakt zuurstof."
-      ],
-      "uh": "Assimilatie = opbouw (fotosynthese); dissimilatie = afbraak."
-     },
-     {
-      "v": "Waarom noemen we de celademhaling een vorm van dissimilatie?",
-      "o": [
-       "Omdat er juist glucose wordt opgebouwd uit koolstofdioxide en water",
-       "Omdat er licht voor nodig is",
-       "Omdat een complexe stof wordt afgebroken en energie vrijkomt",
-       "Omdat het in de bladgroenkorrel gebeurt"
-      ],
-      "c": 2,
-      "d": 2,
-      "u": "Dissimilatie is afbraak met energie: glucose (complex) wordt afgebroken. Onthoud: dissimilatie = afbraak waarbij energie vrijkomt.",
-      "uo": [
-       "Glucose opbouwen is assimilatie, niet dissimilatie.",
-       "Celademhaling heeft geen licht nodig.",
-       "Klopt: een complexe stof wordt afgebroken en er komt energie vrij.",
-       "Celademhaling gebeurt in het mitochondrium, niet de bladgroenkorrel."
-      ],
-      "uh": "Dissimilatie = afbraak van glucose met energie vrij."
-     },
-     {
-      "v": "Waarom kan een plant 's nachts wel ademhalen maar niet fotosynthetiseren?",
-      "o": [
-       "Voor de fotosynthese is licht nodig, voor de celademhaling niet",
-       "De celademhaling heeft juist wel voortdurend licht nodig om te werken",
-       "'s Nachts is er in de plant geen zuurstof",
-       "'s Nachts is er in de plant geen glucose"
-      ],
-      "c": 0,
-      "d": 2,
-      "u": "Fotosynthese heeft licht nodig; celademhaling niet. Onthoud: alleen de fotosynthese is afhankelijk van licht.",
-      "uo": [
-       "Klopt: fotosynthese heeft licht nodig, celademhaling gaat ook zonder licht.",
-       "Andersom: de celademhaling heeft juist geen licht nodig.",
-       "Er is 's nachts wel zuurstof aanwezig voor de ademhaling.",
-       "Er is glucose opgeslagen; daar kan de plant 's nachts op ademhalen."
-      ],
-      "uh": "Alleen fotosynthese heeft licht nodig."
-     },
-     {
-      "v": "Overdag geeft een plant netto zuurstof af, ook al ademt hij ook. Hoe kan dat?",
-      "o": [
-       "Overdag ademt de plant helemaal niet en verbruikt geen zuurstof meer",
-       "Overdag neemt de plant geen CO2 op",
-       "Bij licht stopt de celademhaling",
-       "De fotosynthese verloopt overdag sneller dan de celademhaling"
-      ],
-      "c": 3,
-      "d": 3,
-      "u": "Overdag maakt de fotosynthese meer zuurstof dan de ademhaling verbruikt, dus netto komt er zuurstof vrij. Onthoud: bij fel licht overtreft de fotosynthese de ademhaling.",
-      "uo": [
-       "De plant ademt overdag gewoon door.",
-       "De plant neemt overdag juist CO2 op voor de fotosynthese.",
-       "De celademhaling stopt niet bij licht; die loopt door.",
-       "Klopt: de fotosynthese is overdag sneller, dus netto komt er zuurstof vrij."
-      ],
-      "uh": "Overdag > fotosynthese sneller dan ademhaling: netto zuurstof."
-     },
-     {
-      "v": "Welke gassen wisselt een plant bij fotosynthese met de lucht uit?",
-      "o": [
-       "Neemt zuurstof op, geeft koolstofdioxide af",
-       "Neemt koolstofdioxide op, geeft zuurstof af",
-       "Neemt koolstofdioxide op, geeft koolstofdioxide af",
-       "Neemt zuurstof op, geeft zuurstof af"
-      ],
-      "c": 1,
-      "d": 2,
-      "u": "Bij fotosynthese neemt de plant CO2 op en geeft zuurstof af. Onthoud: CO2 erin, zuurstof eruit (omgekeerd aan ademhaling).",
-      "uo": [
-       "Zuurstof opnemen en CO2 afgeven hoort bij de ademhaling.",
-       "Klopt: de plant neemt CO2 op en geeft zuurstof af.",
-       "De plant geeft bij fotosynthese juist zuurstof af, geen CO2.",
-       "De plant neemt CO2 op, geen zuurstof, en geeft zuurstof af."
-      ],
-      "uh": "Fotosynthese: CO2 opnemen, zuurstof afgeven."
-     },
-     {
-      "v": "Bij fel licht groeit een plant niet harder, ook al is er licht genoeg. Wat kan de beperkende factor zijn?",
-      "o": [
-       "De hoeveelheid koolstofdioxide",
-       "De hoeveelheid licht",
-       "De hoeveelheid bladgroen",
-       "De zwaartekracht"
-      ],
-      "c": 0,
-      "d": 2,
-      "u": "Als licht niet meer beperkt, kan een tekort aan CO2 (of temperatuur) de snelheid begrenzen. Onthoud: de traagste factor bepaalt de fotosynthesesnelheid.",
-      "uo": [
-       "Klopt: als er licht genoeg is, kan CO2 de beperkende factor worden.",
-       "Licht is juist ruim aanwezig, dus dat is niet de beperking.",
-       "Bladgroen is meestal niet de beperkende factor bij fel licht.",
-       "Zwaartekracht speelt geen rol bij de fotosynthesesnelheid."
-      ],
-      "uh": "De traagste factor (licht, CO2, temperatuur) beperkt de snelheid."
-     },
-     {
-      "v": "In welk celorganel wordt glucose met zuurstof afgebroken?",
-      "o": [
-       "De bladgroenkorrel",
-       "De celkern met chromosomen",
-       "Het mitochondrium",
-       "De grote vacuole"
-      ],
-      "c": 2,
-      "d": 1,
-      "u": "Onthoud: het mitochondrium breekt glucose met zuurstof af.",
-      "uo": [
-       "De bladgroenkorrel is voor de fotosynthese, niet de afbraak.",
-       "De celkern bevat het DNA, geen glucose-afbraak.",
-       "Klopt: in het mitochondrium wordt glucose met zuurstof afgebroken.",
-       "De vacuole is opslagruimte, geen afbraakplek."
-      ],
-      "uh": "Glucose-afbraak met zuurstof = in het mitochondrium."
-     },
-     {
-      "v": "Een spier werkt zo hard dat er te weinig zuurstof is. Wat gebeurt er met de glucose-afbraak?",
-      "o": [
-       "De afbraak stopt volledig tot er zuurstof is",
-       "Er treedt anaerobe dissimilatie op, met melkzuur",
-       "De fotosynthese neemt de energie over",
-       "Er komt juist meer energie per glucose vrij"
-      ],
-      "c": 1,
-      "d": 3,
-      "u": "Zonder genoeg zuurstof gaat de cel over op anaerobe dissimilatie; daarbij ontstaat melkzuur en veel minder energie. Onthoud: te weinig zuurstof = onvolledige afbraak, melkzuur.",
-      "uo": [
-       "De afbraak stopt niet; hij gaat anaeroob (zonder zuurstof) verder.",
-       "Klopt: zonder genoeg zuurstof ontstaat melkzuur (anaerobe dissimilatie).",
-       "Spiercellen doen niet aan fotosynthese.",
-       "Anaerobe afbraak levert juist minder energie, niet meer."
-      ],
-      "uh": "Te weinig zuurstof in de spier: anaerobe afbraak, melkzuur."
-     },
-     {
-      "v": "Waarom levert gisting (anaerobe dissimilatie) minder energie dan gewone celademhaling?",
-      "o": [
-       "Omdat er tijdens de gisting helemaal geen nieuwe glucose bij komt",
-       "Omdat het in de bladgroenkorrel gebeurt",
-       "Omdat er licht voor ontbreekt",
-       "Omdat de glucose zonder zuurstof niet volledig wordt afgebroken"
-      ],
-      "c": 3,
-      "d": 2,
-      "u": "Zonder zuurstof wordt glucose maar deels afgebroken, dus komt er minder energie vrij (en blijft melkzuur of alcohol over). Onthoud: geen zuurstof = onvolledige afbraak = minder energie.",
-      "uo": [
-       "Of er glucose bij komt is niet de reden; het gaat om de onvolledige afbraak.",
-       "Gisting gebeurt niet in de bladgroenkorrel.",
-       "Licht speelt geen rol bij de afbraak van glucose.",
-       "Klopt: zonder zuurstof wordt glucose maar deels afgebroken, dus minder energie."
-      ],
-      "uh": "Geen zuurstof: glucose deels afgebroken, dus minder energie."
-     },
-     {
-      "v": "Wat is het gasvormige eindproduct van de fotosynthese?",
-      "o": [
-       "Zuurstof",
-       "Koolstofdioxide",
-       "Waterstof",
-       "Stikstof"
-      ],
-      "c": 0,
-      "d": 1,
-      "u": "Onthoud: fotosynthese geeft zuurstof af.",
-      "uo": [
-       "Klopt: bij de fotosynthese komt zuurstof vrij.",
-       "CO2 is juist een grondstof van de fotosynthese.",
-       "Waterstof komt niet als gas vrij bij de fotosynthese.",
-       "Stikstof speelt geen rol in de fotosynthesevergelijking."
-      ],
-      "uh": "Fotosynthese geeft zuurstof af."
-     },
-     {
-      "v": "Een bont blad maakt op de witte delen (zonder bladgroen) geen zetmeel. Waarom niet?",
-      "o": [
-       "Daar zit geen water in het blad",
-       "Daar zitten geen huidmondjes",
-       "Zonder bladgroen kan daar geen fotosynthese plaatsvinden",
-       "Daar is de zuurstofconcentratie te hoog"
-      ],
-      "c": 2,
-      "d": 2,
-      "u": "Zonder bladgroen wordt er geen licht ingevangen, dus geen fotosynthese en geen zetmeel. Onthoud: geen bladgroen = geen fotosynthese.",
-      "uo": [
-       "Water zit ook in de witte delen; dat is niet de reden.",
-       "Huidmondjes zitten er ook; het gaat om het ontbreken van bladgroen.",
-       "Klopt: zonder bladgroen geen fotosynthese, dus geen zetmeel.",
-       "De zuurstofconcentratie is niet de oorzaak van geen zetmeel."
-      ],
-      "uh": "Geen bladgroen betekent geen fotosynthese, dus geen zetmeel."
-     },
-     {
-      "v": "Bij welk stofwisselingsproces ontstaat het melkzuur in vermoeide spieren?",
-      "o": [
-       "Anaerobe dissimilatie",
-       "Fotosynthese",
-       "Aerobe celademhaling",
-       "Assimilatie van glucose"
-      ],
-      "c": 0,
-      "d": 3,
-      "u": "Melkzuur ontstaat bij anaerobe dissimilatie: glucose-afbraak zonder zuurstof. Onthoud: melkzuur is het teken van afbraak zonder zuurstof.",
-      "uo": [
-       "Klopt: melkzuur ontstaat bij de afbraak van glucose zonder zuurstof.",
-       "Fotosynthese maakt glucose, geen melkzuur.",
-       "Bij aerobe celademhaling (met zuurstof) ontstaat geen melkzuur.",
-       "Assimilatie is opbouw, daarbij ontstaat geen melkzuur."
-      ],
-      "uh": "Melkzuur = glucose-afbraak zonder zuurstof (anaeroob)."
-     },
-     {
-      "v": "Waarom heten fotosynthese en celademhaling elkaars tegengestelde processen?",
-      "o": [
-       "Ze bouwen allebei glucose op",
-       "Ze gebeuren allebei in het mitochondrium",
-       "Ze hebben allebei licht nodig",
-       "De producten van het ene zijn de grondstoffen van het andere"
-      ],
-      "c": 3,
-      "d": 2,
-      "u": "Wat de fotosynthese maakt (glucose, zuurstof) gebruikt de celademhaling, en omgekeerd. Onthoud: de twee processen vullen elkaar aan als een kringloop.",
-      "uo": [
-       "Alleen de fotosynthese bouwt glucose op, de ademhaling breekt het af.",
-       "Fotosynthese gebeurt in de bladgroenkorrel, ademhaling in het mitochondrium.",
-       "Alleen de fotosynthese heeft licht nodig.",
-       "Klopt: glucose en zuurstof uit de fotosynthese zijn de grondstoffen van de ademhaling."
-      ],
-      "uh": "De producten van het ene proces zijn de grondstoffen van het andere."
-     },
-     {
-      "v": "Waar haalt een plant de energie vandaan om glucose te maken?",
-      "o": [
-       "Uit de mineralen in de bodem",
-       "Uit het zonlicht",
-       "Uit de opgenomen zuurstof",
-       "Uit het opgenomen koolstofdioxide"
-      ],
-      "c": 1,
-      "d": 1,
-      "u": "Onthoud: de energie voor de fotosynthese komt uit het zonlicht.",
-      "uo": [
-       "Mineralen zijn bouwstof, geen energiebron voor de fotosynthese.",
-       "Klopt: lichtenergie uit de zon drijft de fotosynthese aan.",
-       "Zuurstof is een product, geen energiebron voor de opbouw.",
-       "CO2 is een grondstof, maar levert niet de energie."
-      ],
-      "uh": "De energie voor de fotosynthese komt uit zonlicht."
-     },
-     {
-      "v": "In het donker geeft een plant koolstofdioxide af. Wat zegt dit over zijn stofwisseling?",
-      "o": [
-       "Er vindt op dat moment fotosynthese plaats",
-       "De plant neemt zuurstof af zonder iets te verbranden",
-       "Op dat moment is alleen de celademhaling actief",
-       "De plant bouwt op dat moment glucose op"
-      ],
-      "c": 2,
-      "d": 3,
-      "u": "CO2 afgeven zonder licht betekent dat alleen de celademhaling loopt (fotosynthese ligt stil). Onthoud: in het donker meet je puur de ademhaling van de plant.",
-      "uo": [
-       "Fotosynthese kan niet in het donker; er is geen licht.",
-       "CO2 afgeven komt juist door het verbranden van glucose.",
-       "Klopt: zonder licht is alleen de celademhaling actief, die geeft CO2 af.",
-       "Glucose opbouwen is fotosynthese, en die ligt in het donker stil."
-      ],
-      "uh": "In het donker: alleen celademhaling, dus CO2 komt vrij."
-     }
-    ],
-    "oe": [
-     {
-      "bron": "Practicum zetmeelproef",
-      "ctx": "Een leerling zet een plant een nacht in het donker, zodat het zetmeel uit de bladeren verdwijnt. Daarna dekt hij een deel van een blad af met zwart papier en zet de plant een dag in het licht. Aan het eind kookt hij het blad, haalt het bladgroen eruit en druppelt er jodium op. Het niet-afgedekte deel wordt blauwzwart, het afgedekte deel niet.",
-      "v": "Verklaar waarom alleen het niet-afgedekte deel van het blad blauwzwart kleurt met jodium.",
-      "o": [
-       ""
-      ],
-      "c": 0,
-      "u": "Jodium kleurt blauwzwart bij zetmeel. Alleen het deel dat licht kreeg, kon fotosynthese uitvoeren en daarbij glucose maken die als zetmeel is opgeslagen; daar kleurt de jodium dus blauwzwart. Het afgedekte deel kreeg geen licht, deed geen fotosynthese en maakte geen zetmeel, dus daar blijft de kleuring uit. (Kernpunten: [1] licht is nodig voor de fotosynthese; [2] alleen waar fotosynthese plaatsvond, is zetmeel gevormd dat met jodium blauwzwart kleurt.)"
-     },
-     {
-      "bron": "Proef met waterpest",
-      "ctx": "Waterpest is een waterplant. Een leerling zet een takje waterpest onder water in een reageerbuis en schijnt er een lamp op. Er stijgen gasbelletjes op vanaf de snijkant. Hoe dichter de lamp bij de plant staat, hoe meer belletjes er per minuut vrijkomen. Bij zeer weinig licht stoppen de belletjes.",
-      "v": "Leg uit welk gas in de belletjes zit en waarom het aantal belletjes toeneemt als de lamp dichterbij komt.",
-      "o": [
-       ""
-      ],
-      "c": 0,
-      "u": "In de belletjes zit zuurstof, een product van de fotosynthese. Hoe dichter de lamp, hoe meer licht de plant krijgt; licht is de grondstof/energiebron voor de fotosynthese, dus de fotosynthesesnelheid neemt toe en er komt meer zuurstof (meer belletjes) per minuut vrij. Bij te weinig licht stopt de fotosynthese en stoppen de belletjes. (Kernpunten: [1] het gas is zuurstof uit de fotosynthese; [2] meer licht betekent een hogere fotosynthesesnelheid, dus meer zuurstof.)"
-     },
-     {
-      "bron": "Gist en brooddeeg",
-      "ctx": "Bij het maken van brood voegt een bakker gist toe aan het deeg. De gistcellen zetten suikers uit het deeg om. In het deeg is weinig zuurstof aanwezig. Tijdens het rijzen wordt het deeg groter en ontstaan er gasbelletjes.",
-      "v": "Leg uit welk proces de gistcellen in het zuurstofarme deeg uitvoeren en waarom het deeg daardoor rijst.",
-      "o": [
-       ""
-      ],
-      "c": 0,
-      "u": "Omdat er weinig zuurstof is, voeren de gistcellen anaerobe dissimilatie (gisting) uit: ze breken de suiker zonder zuurstof af. Daarbij ontstaat koolstofdioxide (en alcohol). Het koolstofdioxidegas vormt belletjes die in het deeg blijven zitten, waardoor het deeg groter wordt (rijst). (Kernpunten: [1] gisting/anaerobe dissimilatie door zuurstoftekort; [2] het gevormde CO2-gas laat het deeg rijzen.)"
-     },
-     {
-      "bron": "Kas en CO2",
-      "ctx": "Een tuinder wil dat zijn tomatenplanten in de kas sneller groeien. De planten staan in fel licht en op een goede temperatuur. Toch groeien ze niet harder. De tuinder besluit extra koolstofdioxide in de kas te blazen, waarna de planten wel sneller groeien.",
-      "v": "Leg met het begrip beperkende factor uit waarom het toevoegen van extra koolstofdioxide de groei versnelt.",
-      "o": [
-       ""
-      ],
-      "c": 0,
-      "u": "De fotosynthesesnelheid wordt bepaald door de factor die het meest tekortschiet (de beperkende factor). Licht en temperatuur waren al ruim voldoende, dus die beperkten niet. Blijkbaar was koolstofdioxide de beperkende factor; door meer CO2 toe te voegen kan de fotosynthese sneller verlopen, waardoor de planten meer glucose maken en harder groeien. (Kernpunten: [1] de beperkende factor begrenst de fotosynthesesnelheid; [2] hier was CO2 beperkend, dus extra CO2 versnelt de fotosynthese en de groei.)"
-     },
-     {
-      "bron": "Plant in een afgesloten pot",
-      "ctx": "Een leerling zet een plant in een goed afgesloten glazen pot met een CO2-meter. Overdag, met de pot in het licht, daalt de gemeten hoeveelheid koolstofdioxide in de pot. 's Nachts, in het donker, stijgt de hoeveelheid koolstofdioxide juist weer.",
-      "v": "Verklaar de daling van het koolstofdioxide overdag en de stijging 's nachts met de processen fotosynthese en celademhaling.",
-      "o": [
-       ""
-      ],
-      "c": 0,
-      "u": "Overdag doet de plant fotosynthese en celademhaling tegelijk, maar de fotosynthese is sneller: er wordt netto CO2 opgenomen, dus de hoeveelheid CO2 in de pot daalt. 's Nachts ligt de fotosynthese stil (geen licht), maar de celademhaling gaat door; daarbij komt CO2 vrij, dus de hoeveelheid CO2 stijgt. (Kernpunten: [1] overdag overheerst de fotosynthese, netto CO2-opname; [2] 's nachts alleen celademhaling, netto CO2-afgifte.)"
-     }
-    ]
-   },
-   {
-    "id": "M3",
-    "naam": "Enzymwerking",
-    "beschrijving": "Gouden-standaardmodule bi.M.3 Enzymwerking, volledig door de Content Engine geproduceerd: hoofdstuk-samenvatting met clips, 25 snelle-quizvragen R1-R3 incl. transfer en diagnostische per-optie-uitleg, plus oud-examenvragen (open, met modelantwoord).",
-    "ceStatus": "CE+SE",
-    "binas": "",
-    "val": "",
-    "onderwerpen": ["Wat een enzym is (biokatalysator)", "Activeringsenergie", "Optimumtemperatuur & denaturatie", "pH-optimum", "Substraatspecificiteit", "Herbruikbaarheid", "Transfer: onbekend enzym"],
-    "sam": "Enzymen zijn eiwitten die als biokatalysator reacties in de cel versnellen door de activeringsenergie te verlagen. Ze leveren zelf geen energie en worden niet verbruikt (herbruikbaar). Elk enzym heeft een actief centrum waardoor bepaalde substraten passend binden (substraatspecifiek). Boven de optimumtemperatuur - of bij een extreme pH - denatureert het enzym: de structuur verandert onomkeerbaar en de activiteit daalt.",
-    "sv": [
-     {"v":"Wat is een enzym?","o":["Een eiwit dat als biokatalysator reacties versnelt","Een hormoon dat een signaal in het lichaam doorgeeft","Een koolhydraat dat de cel van energie voorziet","Een vetmolecuul in het celmembraan"],"c":0,"d":1,"u":"Een enzym is een eiwit dat als biokatalysator reacties versnelt. Koos je 'hormoon'? Beide 'regelen' iets, maar een hormoon geeft een signaal door; een enzym versnelt een reactie. Onthoud: enzym = eiwit dat de reactiesnelheid verhoogt.","uo":["Klopt: een enzym is een eiwit dat als biokatalysator reacties versnelt.","Een hormoon is een signaalstof die een boodschap doorgeeft; een enzym versnelt juist een reactie. Ze worden verward omdat beide 'iets regelen'.","Een koolhydraat is brandstof; een enzym levert géén energie, het verlaagt alleen de reactiedrempel. Daarom is het juiste antwoord het eiwit dat reacties versnelt.","Enzymen zijn eiwitten, geen vetten uit het celmembraan. Het juiste antwoord noemt het eiwit dat reacties versnelt."],"uh":"Enzym = eiwit dat reacties versnelt. Verwar het niet met een hormoon (signaalstof) of een brandstof."},
-     {"v":"Hoe versnelt een enzym een reactie?","o":["Het verwarmt de cel zodat moleculen sneller bewegen","Het levert zelf extra energie aan de reactie","Het maakt meer substraat aan om te reageren","Het verlaagt de activeringsenergie"],"c":3,"d":1,"u":"Een enzym verlaagt de activeringsenergie - de startdrempel van de reactie. Koos je 'levert energie'? Een enzym voegt niets toe; het verlaagt alleen de drempel, daarom gaat de reactie sneller. Onthoud: enzym versnelt is niet hetzelfde als enzym levert energie.","uo":["Een enzym verandert de celtemperatuur niet; het werkt bij de bestaande temperatuur. De snelheidswinst komt doordat het de activeringsenergie verlaagt.","Een enzym levert zélf geen energie - de bekende valkuil. Het verlaagt alleen de startdrempel, dát is het juiste antwoord.","Een enzym maakt geen extra substraat aan om zichzelf te versnellen; het verlaagt de activeringsenergie van de bestaande reactie.","Klopt: het enzym verlaagt de activeringsenergie (de startdrempel), waardoor de reactie sneller gaat zonder extra energie."],"uh":"Een enzym verlaagt de drempel; het levert geen energie."},
-     {"v":"De enzymactiviteit daalt snel boven 40 °C. Wat gebeurt er?","o":["Het substraat raakt op, dus de reactie stopt meteen","Het enzym werkt sneller door de warmte","Het enzym denatureert en verliest zijn vorm","Het enzym wordt in de reactie opgebruikt"],"c":2,"d":2,"u":"Boven de optimumtemperatuur denatureert het enzym: het actief centrum verliest zijn vorm en de activiteit daalt. Koos je 'opgebruikt'? Een enzym is herbruikbaar; de daling komt door denaturatie, niet door opraken. Onthoud: de scherpe daling ná de top in de grafiek = denaturatie.","uo":["Als het substraat op was, zou de daling niet netjes bij de temperatuur horen; de grafiek koppelt de daling aan de warmte, dus het gaat om denaturatie.","Meer warmte is niet altijd sneller: voorbij het optimum keert het effect om doordat het enzym denatureert.","Klopt: boven de optimumtemperatuur denatureert het enzym - het actief centrum verliest zijn vorm en de activiteit daalt.","Een enzym wordt niet verbruikt (het is herbruikbaar); de daling komt door denaturatie, niet door 'opraken'."],"uh":"Scherpe daling ná de top in een temperatuurgrafiek = denaturatie, niet 'opraken'."},
-     {"v":"Wat is het verschil tussen optimum en denaturatie?","o":["Ze betekenen bij een enzym eigenlijk hetzelfde","Optimum = beste werking; denaturatie = kapotte vorm","Bij het optimum denatureert het enzym juist","Denaturatie hoort bij te lage, optimum bij te hoge temperatuur"],"c":1,"d":2,"u":"Het optimum is de temperatuur met de beste werking; denaturatie is de onomkeerbare vormverandering waardoor de functie wegvalt. Koos je 'hetzelfde'? Dat zijn juist tegengestelde dingen. Onthoud: optimum is niet gelijk aan denaturatie; denaturatie kan door te hoge temperatuur óf extreme pH.","uo":["Ze betekenen niet hetzelfde - het zijn juist tegengestelde dingen: goed werken versus kapotgaan.","Klopt: het optimum is de temperatuur met de beste werking; denaturatie is de onomkeerbare vormverandering waardoor de functie wegvalt.","Dit wisselt de begrippen om: bij het optimum werkt het enzym het best, erboven denatureert het (niet andersom).","Denaturatie hoort bij een te hóóg extreem, niet bij te laag; het optimum ligt ertussenin."],"uh":"Optimum = beste werking; denaturatie = kapotte vorm. Tegengesteld."},
-     {"v":"Wat gebeurt er met het enzym ná de reactie?","o":["Het is opgebruikt en verdwijnt uit de cel","Het verandert zelf in het reactieproduct","Het komt vrij en werkt opnieuw","Het valt uiteen in kleinere moleculen"],"c":2,"d":1,"u":"Het enzym komt onveranderd vrij en werkt opnieuw. Koos je 'opgebruikt'? De hardnekkigste enzym-misvatting - juist omdat het niet verandert kan één molecuul heel veel reacties versnellen. Onthoud: een enzym wordt niet verbruikt.","uo":["De bekende misvatting: een enzym raakt niet op. Het doet mee maar verandert zelf niet, dus het komt onveranderd vrij.","Het enzym máákt het product, maar wórdt het niet; het komt onveranderd vrij en werkt opnieuw.","Klopt: het enzym komt onveranderd vrij en werkt opnieuw - daarom kan één molecuul veel reacties versnellen.","Het enzym valt niet uiteen; het substraat wordt omgezet en het enzym blijft heel en herbruikbaar."],"uh":"Een enzym wordt niet verbruikt; het komt onveranderd vrij."},
-     {"v":"Waarom breekt amylase wel zetmeel af, maar geen eiwit?","o":["Eiwitten zijn te klein voor het actief centrum","Zetmeel past qua vorm in het actief centrum","Amylase werkt alleen bij een zeer hoge pH","Amylase is bij eiwit al opgebruikt geraakt"],"c":1,"d":2,"u":"Zetmeel past qua vorm in het actief centrum van amylase; een eiwit past er niet in (substraatspecificiteit). Koos je 'te klein'? Het gaat om de vorm, niet om de grootte. Onthoud: een enzym herkent zijn substraat aan de vorm - denk niet in 'één enzym, één stof', maar in een passende vorm.","uo":["Het gaat niet om grootte maar om vórm: een eiwit past simpelweg niet in het actief centrum van amylase.","Klopt: de vorm van zetmeel past in het actief centrum van amylase; een eiwit past er niet in (substraatspecificiteit).","pH speelt wel een rol bij enzymen, maar verklaart niet waarom amylase wél zetmeel en géén eiwit afbreekt - dat is de vorm.","Amylase raakt niet 'op' bij eiwit; het past er gewoon niet op door de vorm van het actief centrum."],"uh":"Substraatspecificiteit gaat over vórm, niet over grootte."},
-     {"v":"Na verhitting tot 60 °C werkt een enzym niet meer, ook niet na afkoelen. Waarom?","o":["Bij 37 °C is het optimum nog niet bereikt","Het substraat is bij 60 °C opgeraakt","De hoge temperatuur remt het enzym tijdelijk af","Het enzym is gedenatureerd; dat is onomkeerbaar"],"c":3,"d":3,"u":"Bij 60 °C is het enzym gedenatureerd; die vormverandering van het actief centrum is onomkeerbaar, dus afkoelen herstelt de werking niet. Het werkte al goed bij 37 °C, dus de temperatuur zelf is niet de oorzaak - er is iets blijvends veranderd. Onthoud: denaturatie door hitte is geen tijdelijke rem.","uo":["Het enzym wérkte al goed bij 37 °C, dus het optimum wás bereikt; er is iets blijvends veranderd - denaturatie.","Een opgeraakt substraat verklaart niet waarom terugkoelen niet helpt; de kern is de onomkeerbare denaturatie van het enzym.","Denaturatie door hitte is geen tijdelijke rem: de vorm van het actief centrum is kapot en komt niet vanzelf terug.","Klopt: bij 60 °C is het enzym gedenatureerd; die vormverandering is onomkeerbaar, dus afkoelen herstelt de werking niet."],"uh":"Denaturatie door hitte is onomkeerbaar; afkoelen herstelt niet."},
-     {"v":"Pepsine werkt bij pH 2, maar niet bij pH 7. Waarom?","o":["Pepsine heeft een zuur pH-optimum; pH 7 ligt te ver weg","Bij pH 7 is de pepsine opgeraakt","Pepsine werkt alleen bij lichaamstemperatuur, niet bij pH 7","pH heeft geen invloed op enzymen"],"c":0,"d":2,"u":"Elk enzym heeft een eigen optimum-pH; pH 7 ligt te ver van het zure optimum van pepsine (maag ~pH 2), dus het werkt daar bijna niet. Koos je 'opgeraakt'? Weer de verbruikt-misvatting - het enzym raakt niet op, het werkt alleen niet bij deze pH. Onthoud: net als temperatuur heeft pH een optimum.","uo":["Klopt: elk enzym heeft een eigen optimum-pH; pH 7 ligt te ver van het zure optimum van pepsine, dus het werkt daar bijna niet.","Pepsine raakt niet op bij pH 7 (de verbruikt-misvatting); het wérkt daar alleen niet omdat de pH te ver van het optimum ligt.","De vraag varieert de pH, niet de temperatuur; de verklaring moet dus over de pH gaan.","pH heeft juist wél invloed: net als temperatuur heeft elk enzym een optimum-pH waarbuiten de activiteit daalt."],"uh":"pH heeft een optimum, net als temperatuur; ver ervan af daalt de activiteit."},
-     {"v":"Wat betekent het dat een enzym een biokatalysator is?","o":["Het versnelt een reactie zonder zelf verbruikt te worden","Het levert energie voor een reactie","Het is een katalysator van metaal","Het vertraagt een reactie in de cel"],"c":0,"d":1,"u":"Onthoud: bio = in het lichaam, katalysator = versnelt zonder zelf op te raken.","uo":["Klopt: een biokatalysator versnelt en komt onveranderd vrij.","Een enzym levert geen energie; het verlaagt de drempel.","'Bio' betekent van eiwit / in een organisme, niet van metaal.","Een katalysator versnelt juist; vertragen is het tegenovergestelde."],"uh":"Biokatalysator = versnelt een reactie, raakt zelf niet op."},
-     {"v":"Tot welke groep stoffen behoren vrijwel alle enzymen?","o":["Vetten","Koolhydraten","Zouten","Eiwitten"],"c":3,"d":1,"u":"Onthoud: enzymen zijn eiwitten.","uo":["Enzymen zijn geen vetten (die zitten o.a. in het celmembraan).","Koolhydraten zijn brandstof/bouwstof, geen enzymen.","Zouten werken niet als enzym.","Klopt: enzymen zijn opgebouwd uit aminozuren, dus eiwitten."],"uh":"Enzym = eiwit."},
-     {"v":"Hoe heet de plek op het enzym waar het substraat bindt?","o":["Het celmembraan","Het ribosoom","Het actief centrum","De celkern met het DNA erin"],"c":2,"d":1,"u":"Onthoud: het substraat past in het actief centrum.","uo":["Het celmembraan is de celgrens, niet de bindplaats op het enzym.","Een ribosoom maakt eiwitten; niet de bindplaats voor het substraat.","Klopt: het substraat bindt in het actief centrum.","De celkern bevat DNA, niet de bindplaats van het enzym."],"uh":"Substraat bindt in het actief centrum."},
-     {"v":"Waarom kan een kleine hoeveelheid enzym veel substraat omzetten?","o":["Omdat het enzym telkens groter wordt","Omdat het enzym herbruikbaar is en niet opraakt","Omdat het enzym in product verandert","Omdat het enzym energie levert"],"c":1,"d":1,"u":"Onthoud: één enzymmolecuul doet veel reacties achter elkaar.","uo":["Het enzym wordt niet groter; het blijft gelijk.","Klopt: het enzym komt onveranderd vrij en werkt opnieuw.","Het enzym maakt het product, maar wordt het niet.","Een enzym levert geen energie; het is herbruikbaar."],"uh":"Enzym is herbruikbaar, raakt niet op."},
-     {"v":"Bij vaste enzymhoeveelheid en steeds meer substraat vlakt de reactiesnelheid af. Waarom?","o":["Alle actieve centra zijn bezet","Het substraat is op","De enzymen denatureren","De temperatuur in het mengsel daalt"],"c":0,"d":2,"u":"Onthoud: bij verzadiging zijn alle enzymen bezig; meer substraat helpt dan niet.","uo":["Klopt: als alle actieve centra bezet zijn, verhoogt meer substraat de snelheid niet.","Er is juist steeds meer substraat, dat is niet op.","Temperatuur/pH veranderen niet, dus denaturatie is hier niet de oorzaak.","De temperatuur speelt hier geen rol."],"uh":"Snelheid vlakt af = alle enzymen bezet (verzadiging)."},
-     {"v":"Wat is de activeringsenergie van een reactie?","o":["De energie die vrijkomt bij de reactie","De drempel die nodig is om de reactie te starten","De warmte van de cel","De energie in het product"],"c":1,"d":1,"u":"Onthoud: activeringsenergie = startdrempel; het enzym verlaagt die.","uo":["Dat is de uitkomst van de reactie, niet de startdrempel.","Klopt: de activeringsenergie is de drempel om de reactie te starten.","De celtemperatuur is niet de activeringsenergie.","De energie in het product is een uitkomst, geen startdrempel."],"uh":"Activeringsenergie = startdrempel van de reactie."},
-     {"v":"In een energiediagram is de 'berg' met enzym lager dan zonder. Wat betekent dat?","o":["Het enzym verlaagt de activeringsenergie","Het enzym levert extra energie","De reactie geeft minder product","Het enzym verhoogt de temperatuur van de cel"],"c":0,"d":2,"u":"Onthoud: lagere berg = lagere activeringsenergie = snellere reactie.","uo":["Klopt: een lagere berg = lagere startdrempel = snellere reactie.","De berg is de drempel, geen energie die het enzym toevoegt.","De hoeveelheid product verandert niet door een lagere drempel.","De berg gaat over energie, niet over temperatuur."],"uh":"Lagere berg in een energiediagram = lagere activeringsenergie."},
-     {"v":"Wat gebeurt er met de enzymactiviteit bij de mens als de temperatuur van 20 naar 37 °C stijgt?","o":["Die daalt","Die blijft gelijk","Die stijgt","Het enzym denatureert meteen"],"c":2,"d":1,"u":"Onthoud: tot het optimum stijgt de activiteit met de temperatuur.","uo":["Onder het optimum daalt de activiteit niet; ze stijgt.","De activiteit is temperatuurafhankelijk en verandert wel.","Klopt: tot de optimumtemperatuur (~37 °C) neemt de activiteit toe.","Denaturatie treedt pas boven het optimum op, niet bij 37 °C."],"uh":"Tot het optimum: hogere temperatuur = hogere activiteit."},
-     {"v":"Wat betekent 'denatureren' bij een enzym?","o":["Het enzym wordt sneller","Het enzym maakt meer product","Het enzym bindt meer substraat","De ruimtelijke structuur verandert en de functie valt weg"],"c":3,"d":1,"u":"Onthoud: denatureren = vorm/structuur kapot, functie weg.","uo":["Denaturatie maakt het enzym niet sneller; het werkt juist niet meer.","Een gedenatureerd enzym maakt juist geen product meer.","Bij denaturatie kan het substraat juist niet meer binden.","Klopt: de ruimtelijke structuur verandert, het actief centrum verliest zijn vorm."],"uh":"Denatureren = structuur verandert, functie verdwijnt."},
-     {"v":"Bij hoge koorts (42 °C) werken veel enzymen slechter. Wat is de reden?","o":["De enzymen beginnen te denatureren","Er is plotseling te weinig substraat aanwezig","De enzymen worden opgebruikt","De pH wordt te hoog"],"c":0,"d":3,"u":"Onthoud: boven ~37 °C begint denaturatie - daarom is hoge koorts gevaarlijk.","uo":["Klopt: 42 °C ligt boven het optimum, waardoor enzymen denatureren.","De hoeveelheid substraat verandert niet door koorts.","Enzymen worden niet opgebruikt; de oorzaak is denaturatie.","Koorts verandert de temperatuur, niet direct de pH."],"uh":"Boven ~37 °C beginnen enzymen te denatureren."},
-     {"v":"Een wasmiddel met enzymen reinigt goed op 40 °C, maar slecht op 90 °C. Hoe komt dat?","o":["Bij 90 °C is er geen vuil meer","Bij 40 °C werken enzymen niet","Enzymen lossen op in water","Bij 90 °C zijn de enzymen gedenatureerd"],"c":3,"d":3,"u":"Onthoud: te hoge temperatuur denatureert de was-enzymen.","uo":["Vuil verdwijnt niet vanzelf bij 90 °C.","Bij 40 °C werken de enzymen juist goed (rond hun optimum).","Oplossen is niet het punt; ze denatureren door de hitte.","Klopt: bij 90 °C zijn de enzymen gedenatureerd en reinigen ze niet meer."],"uh":"Te heet wassen = was-enzymen denatureren."},
-     {"v":"Wat geldt WEL na denaturatie door hitte, maar NIET bij een tijdelijk te lage temperatuur?","o":["Het enzym werkt daarna weer bij de optimumtemperatuur","Het substraat verandert","De pH verandert","De schade is onomkeerbaar"],"c":3,"d":2,"u":"Onthoud: koude remt tijdelijk; hitte-denaturatie is blijvend.","uo":["Na hitte-denaturatie werkt het enzym niet meer, ook niet bij het optimum.","Het substraat verandert in beide gevallen niet.","De pH verandert hier niet; het gaat om onomkeerbaarheid.","Klopt: hitte-denaturatie is onomkeerbaar; te koud remt slechts tijdelijk."],"uh":"Hitte-denaturatie is onomkeerbaar; kou remt tijdelijk."},
-     {"v":"Enzym X heeft een optimum-pH van 9. In welk milieu werkt het het best?","o":["Zuur","Neutraal","Basisch","Bij elke pH gelijk"],"c":2,"d":2,"u":"Onthoud: pH 9 ligt boven 7, dus basisch.","uo":["pH 9 is niet zuur; zuur is onder pH 7.","pH 9 is niet neutraal; neutraal is pH 7.","Klopt: pH 9 ligt boven 7, dat is basisch.","Enzymactiviteit hangt sterk van de pH af; niet overal gelijk."],"uh":"pH < 7 zuur, 7 neutraal, > 7 basisch."},
-     {"v":"Leg je leverstukjes in waterstofperoxide, dan borrelt het hevig (enzym katalase). Wat toont dit vooral?","o":["Dat de lever waterstofperoxide maakt","Dat het enzym wordt opgebruikt","Dat de temperatuur stijgt","Dat het enzym de afbraak van waterstofperoxide versnelt"],"c":3,"d":3,"u":"Onthoud: het borrelen (zuurstof) laat zien dat het enzym de reactie versnelt.","uo":["De lever maakt het H2O2 niet aan; het enzym breekt het af.","Het enzym raakt niet op; het blijft borrelen zolang er substraat is.","Er ontstaat hooguit wat warmte; het borrelen komt door de versnelde reactie.","Klopt: het vrijkomende gas (zuurstof) toont dat katalase de afbraak versnelt."],"uh":"Borrelen = enzym versnelt de afbraak (zuurstof komt vrij)."},
-     {"v":"Welke uitspraak over enzymen is juist?","o":["Een enzym levert de energie voor een reactie","Een enzym verlaagt de activeringsenergie","Een enzym verhoogt de activeringsenergie","Een enzym stopt reacties"],"c":1,"d":1,"u":"Onthoud: enzym = drempel omlaag, niet energie erbij.","uo":["Een enzym levert geen energie; het verlaagt de drempel.","Klopt: het enzym verlaagt de activeringsenergie.","Het verhoogt de drempel niet; het verlaagt hem juist.","Een enzym versnelt reacties, het stopt ze niet."],"uh":"Enzym verlaagt de activeringsenergie."},
-     {"v":"Lactase splitst lactose, maar niet sacharose. Wat is de beste verklaring?","o":["Sacharose is te groot voor elk enzym","De vorm van lactose past in het actief centrum, die van sacharose niet","Lactase werkt alleen bij een hoge temperatuur","Sacharose bevat geen energie"],"c":1,"d":2,"u":"Onthoud: substraatspecificiteit - de vorm bepaalt wat past.","uo":["Grootte is niet de reden, en 'elk enzym' klopt niet; het gaat om de vorm.","Klopt: door de vorm van het actief centrum past lactose wel en sacharose niet.","Temperatuur is niet de reden dat sacharose niet gesplitst wordt.","Of sacharose energie bevat, verandert niets aan het passen."],"uh":"Specificiteit = de vorm van het actief centrum bepaalt het substraat."},
-     {"v":"In een activiteit–temperatuurgrafiek ligt de piek bij 50 °C. Wat is die 50 °C?","o":["De denaturatietemperatuur","De temperatuur waarbij het enzym stopt","De optimumtemperatuur","De pH van het enzym"],"c":2,"d":2,"u":"Onthoud: de piek in de grafiek = de optimumtemperatuur.","uo":["Denaturatie hoort bij de daling ná de piek, niet bij de piek zelf.","Bij de piek werkt het enzym juist het best, het stopt daar niet.","Klopt: de piek is de temperatuur met de hoogste activiteit, de optimumtemperatuur.","50 °C is een temperatuur, geen pH."],"uh":"Piek in een temperatuurgrafiek = optimumtemperatuur."}
-    ],
-    "oe": [
-     {"jaar":2007,"tijdvak":1,"bron":"CE 2007 T1","ctx":"Kikkers zijn koudbloedige dieren: hun lichaamstemperatuur volgt de temperatuur van de omgeving. In deze examenvraag gaat het om enzymen die in het lichaam van de kikker reacties versnellen. (Context door Slagio kort samengevat; de vraag en het kernantwoord komen uit het echte examen.)","v":"Waardoor werken in de kikkers deze enzymen in de zomer sneller dan in de winter?","o":[""],"c":0,"u":"Doordat het in de zomer warmer is: bij een hogere temperatuur werken enzymen sneller, tot aan hun optimumtemperatuur. (Kernpunt uit het correctievoorschrift: hogere temperatuur in de zomer.)"},
-     {"bron":"Practicum katalase","ctx":"Leverweefsel bevat het enzym katalase, dat waterstofperoxide (H2O2) afbreekt tot water en zuurstof. Een leerling doet in vijf reageerbuizen evenveel waterstofperoxide. In elke buis komt een even groot stukje lever, maar elk stukje is eerst op een andere temperatuur gehouden: 5 °C, 20 °C, 37 °C, 70 °C en 100 °C. Daarna meet de leerling hoeveel zuurstof er per minuut vrijkomt (hoe hevig het borrelt). Bij 37 °C borrelt het het hevigst. Bij 70 °C en 100 °C gebeurt er vrijwel niets meer, ook niet nadat de leverstukjes weer zijn afgekoeld naar 37 °C.","v":"Verklaar waarom bij 70 °C en 100 °C vrijwel geen zuurstof meer vrijkomt, en waarom afkoelen naar 37 °C de werking niet herstelt. Gebruik in je uitleg het begrip denaturatie.","o":[""],"c":0,"u":"Bij 70 °C en 100 °C ligt de temperatuur ver boven de optimumtemperatuur van katalase. Daardoor is het enzym gedenatureerd: de ruimtelijke structuur (en dus de vorm van het actief centrum) is veranderd, zodat het substraat niet meer past en de reactie niet meer versneld wordt. Deze vormverandering is onomkeerbaar, dus na afkoelen naar 37 °C krijgt het enzym zijn oorspronkelijke vorm niet terug en blijft de werking weg. (Kernpunten: [1] boven de optimumtemperatuur treedt denaturatie op / actief centrum verliest zijn vorm; [2] denaturatie is onomkeerbaar, daarom herstelt afkoelen de werking niet.)"},
-     {"bron":"Practicum amylase","ctx":"Amylase is een enzym in speeksel dat zetmeel afbreekt. Zetmeel kleurt blauwzwart met jodium; de afbraakproducten doen dat niet. Een leerling mengt amylase met een zetmeeloplossing en druppelt elke minuut een beetje van het mengsel in jodium. In het begin wordt de druppel blauwzwart, maar na een paar minuten blijft de kleur geelbruin. Als de leerling het experiment herhaalt met amylase dat eerst vijf minuten heeft gekookt, blijft de druppel de hele tijd blauwzwart.","v":"Leg uit waarom de druppel na enkele minuten niet meer blauwzwart wordt bij het gewone amylase, maar wel de hele tijd blauwzwart blijft bij het gekookte amylase.","o":[""],"c":0,"u":"Bij het gewone amylase breekt het enzym het zetmeel af tot kleinere producten. Die producten kleuren niet meer met jodium, dus na enkele minuten is (bijna) al het zetmeel weg en blijft de druppel geelbruin. Het gekookte amylase is door de hoge temperatuur gedenatureerd: het actief centrum heeft zijn vorm verloren, waardoor het zetmeel niet meer kan binden en niet wordt afgebroken. Het zetmeel blijft dan aanwezig, dus de druppel blijft de hele tijd blauwzwart. (Kernpunten: [1] werkend amylase breekt zetmeel af, afbraakproducten kleuren niet met jodium; [2] gekookt amylase is gedenatureerd en breekt geen zetmeel af.)"},
-     {"bron":"Toepassing lactose-vrije melk","ctx":"Sommige mensen kunnen melksuiker (lactose) slecht verteren. De industrie maakt lactose-vrije melk met het enzym lactase, dat lactose splitst in glucose en galactose. In een fabriek zit het lactase vast in kleine bolletjes in een kolom. De melk stroomt langs de bolletjes naar beneden en komt er lactose-vrij uit. De bolletjes met lactase kunnen daarna dagenlang opnieuw worden gebruikt. Lactase splitst wel lactose, maar geen sacharose (gewone suiker).","v":"Leg met de eigenschappen van enzymen uit (a) waarom de bolletjes met lactase steeds opnieuw gebruikt kunnen worden en (b) waarom lactase wel lactose maar geen sacharose splitst.","o":[""],"c":0,"u":"(a) Een enzym is een biokatalysator: het versnelt de reactie maar wordt zelf niet verbruikt en komt na de reactie onveranderd vrij. Daardoor kan hetzelfde lactase telkens opnieuw een lactosemolecuul splitsen, en blijven de bolletjes dagenlang bruikbaar. (b) Enzymen zijn substraatspecifiek: alleen een substraat waarvan de vorm in het actief centrum past, wordt gebonden en omgezet. De vorm van lactose past in het actief centrum van lactase, die van sacharose niet, dus sacharose wordt niet gesplitst. (Kernpunten: [1] enzym wordt niet verbruikt / is herbruikbaar; [2] substraatspecificiteit: alleen de passende vorm bindt in het actief centrum.)"},
-     {"bron":"Grafiek reactiesnelheid","ctx":"Een onderzoeker meet de reactiesnelheid van een enzym bij een vaste hoeveelheid enzym en steeds meer substraat. In het begin stijgt de reactiesnelheid sterk als er meer substraat is. Bij hoge substraatconcentraties stijgt de snelheid niet meer: de grafiek loopt vlak (er ontstaat een plateau). De temperatuur en de pH blijven tijdens de hele proef gelijk.","v":"Leg uit waarom de reactiesnelheid bij hoge substraatconcentraties niet verder toeneemt, ook al is er nog meer substraat aanwezig.","o":[""],"c":0,"u":"Bij hoge substraatconcentraties zijn op elk moment alle actieve centra van de enzymen bezet met substraat; de enzymen werken dan op volle capaciteit (verzadiging). Extra substraat moet wachten tot een actief centrum vrijkomt en kan de snelheid dus niet verder verhogen. Omdat de hoeveelheid enzym vast is, bepaalt die de maximale snelheid. Denaturatie is niet de oorzaak, want temperatuur en pH blijven gelijk. (Kernpunten: [1] alle actieve centra bezet / enzymen verzadigd; [2] de vaste hoeveelheid enzym begrenst de maximale snelheid.)"},
-     {"bron":"Spijsvertering en pH","ctx":"In de maag heerst een zure omgeving (ongeveer pH 2). Daar werkt het eiwitsplitsende enzym pepsine, dat een pH-optimum rond pH 2 heeft. Verderop, in de dunne darm, is het milieu juist basisch (ongeveer pH 8). Daar werkt het eiwitsplitsende enzym trypsine, met een pH-optimum rond pH 8. Als je pepsine in de dunne darm zou brengen, breekt het daar nauwelijks eiwit af.","v":"Leg uit waarom pepsine in de dunne darm nauwelijks eiwit afbreekt, terwijl trypsine daar juist goed werkt. Betrek de pH in je antwoord.","o":[""],"c":0,"u":"Elk enzym heeft een eigen pH-optimum: de pH waarbij het de juiste vorm (met een passend actief centrum) heeft en het best werkt. De pH van de dunne darm (ongeveer 8) ligt ver van het zure optimum van pepsine (ongeveer 2), waardoor pepsine daar zijn goede vorm verliest en nauwelijks eiwit afbreekt. Trypsine heeft juist een optimum rond pH 8, dus in de dunne darm heeft het wel de juiste vorm en werkt het goed. (Kernpunten: [1] pH dunne darm ligt ver van pepsines zure optimum, daardoor werkt pepsine er slecht; [2] pH dunne darm ligt bij trypsines optimum, daardoor werkt trypsine er goed.)"},
-     {"bron":"Enzymen in wasmiddel","ctx":"In veel wasmiddelen zitten enzymen, zoals protease (breekt eiwitvlekken af, bijvoorbeeld bloed en ei) en lipase (breekt vetvlekken af). Op de verpakking staat dat je met dit wasmiddel het best wast op 40 °C. Een gebruiker wast een sterk vervuild kledingstuk juist op 90 °C en merkt dat de eiwitvlekken minder goed verdwijnen dan bij 40 °C.","v":"Verklaar waarom de eiwitvlekken bij 90 °C minder goed verdwijnen dan bij 40 °C, ook al is heter water meestal beter voor het reinigen.","o":[""],"c":0,"u":"De reinigende werking komt hier vooral van de enzymen (protease), die de eiwitvlekken afbreken. Bij ongeveer 40 °C zitten deze enzymen rond hun optimumtemperatuur en werken ze goed. Bij 90 °C ligt de temperatuur ver boven het optimum, waardoor de enzymen denatureren: hun actief centrum verliest zijn vorm en ze kunnen de eiwitvlekken niet meer afbreken. Daarom verdwijnen de eiwitvlekken bij 90 °C juist minder goed. (Kernpunten: [1] bij 40 °C werken de enzymen rond hun optimum; [2] bij 90 °C denatureren de enzymen, waardoor ze de vlekken niet meer afbreken.)"}
-    ],
-    "begrippen": [
-     {"t":"Enzym","d":"Een eiwit dat als biokatalysator een reactie in de cel versnelt zonder zelf verbruikt te worden."},
-     {"t":"Biokatalysator","d":"Een stof die in een organisme een reactie versnelt en er zelf onveranderd uit komt."},
-     {"t":"Activeringsenergie","d":"De energiedrempel die nodig is om een reactie te laten starten; een enzym verlaagt deze."},
-     {"t":"Actief centrum","d":"De plek op het enzym met een specifieke vorm waar het substraat op past en bindt."},
-     {"t":"Substraat","d":"De stof die in het actief centrum past en door het enzym wordt omgezet."},
-     {"t":"Substraatspecificiteit","d":"Een enzym zet vooral die substraten om waarvan de vorm in het actief centrum past."},
-     {"t":"Optimumtemperatuur","d":"De temperatuur waarbij een enzym het snelst werkt; erboven daalt de activiteit."},
-     {"t":"Denaturatie","d":"De onomkeerbare verandering van de ruimtelijke structuur van een enzym, waardoor het actief centrum zijn vorm en functie verliest."},
-     {"t":"pH-optimum","d":"De zuurgraad waarbij een enzym het best werkt; ver daarvan af daalt de activiteit."},
-     {"t":"Herbruikbaarheid","d":"Na de reactie komt het enzym onveranderd vrij, zodat het opnieuw kan werken."}
-    ]
-   }
-    ]
+    {
+     "id": "M1",
+     "naam": "Bouw en functie van de cel",
+     "beschrijving": "Gouden-standaardmodule bi.M.1: de celorganellen en hun functies, plus het verschil tussen een plantencel, een dierlijke cel en een bacteriecel (eukaryoot versus prokaryoot).",
+     "ceStatus": "CE",
+     "onderwerpen": [
+      "Celorganellen en hun functies",
+      "Celmembraan en celkern",
+      "Mitochondrion en bladgroenkorrel",
+      "Ribosoom, vacuole en celwand",
+      "Endoplasmatisch reticulum en golgi-systeem",
+      "Plantencel, diercel en bacteriecel"
+     ],
+     "sam": "Een cel bestaat uit organellen die elk hun eigen taak hebben. Het celmembraan is de selectief doorlaatbare grens, de celkern bevat het DNA en stuurt de cel aan, het mitochondrion levert energie via de celademhaling en de bladgroenkorrel doet de fotosynthese. Ribosomen maken eiwitten, de vacuole slaat op en de celwand geeft stevigheid; het endoplasmatisch reticulum en golgi-systeem verzorgen transport en bewerking. Een plantencel heeft extra een celwand, bladgroenkorrels en een grote vacuole, terwijl een bacteriecel geen celkern heeft (prokaryoot) en plant- en diercellen wel (eukaryoot).",
+     "begrippen": [
+      {
+       "t": "Celmembraan",
+       "d": "De selectief doorlaatbare grens van de cel die regelt welke stoffen erin en eruit gaan."
+      },
+      {
+       "t": "Celkern",
+       "d": "Het organel dat het DNA bevat en de cel aanstuurt."
+      },
+      {
+       "t": "DNA",
+       "d": "Het erfelijke materiaal in de celkern met de instructies voor de cel."
+      },
+      {
+       "t": "Mitochondrion",
+       "d": "Het organel waarin de celademhaling plaatsvindt en energie vrijkomt."
+      },
+      {
+       "t": "Bladgroenkorrel",
+       "d": "Het organel met bladgroen waarin de fotosynthese plaatsvindt; alleen in plantencellen."
+      },
+      {
+       "t": "Ribosoom",
+       "d": "Het organel dat de eiwitten van de cel maakt."
+      },
+      {
+       "t": "Vacuole",
+       "d": "Blaasje voor opslag van vocht en stoffen; groot en centraal in de plantencel."
+      },
+      {
+       "t": "Celwand",
+       "d": "Stevige laag rondom de plantencel die stevigheid geeft; ontbreekt bij dierlijke cellen."
+      },
+      {
+       "t": "Endoplasmatisch reticulum",
+       "d": "Netwerk van kanalen dat stoffen door de cel transporteert."
+      },
+      {
+       "t": "Golgi-systeem",
+       "d": "Organel dat stoffen bewerkt en verpakt voor het transport."
+      },
+      {
+       "t": "Eukaryoot",
+       "d": "Cel met een echte celkern, zoals een planten- of dierlijke cel."
+      },
+      {
+       "t": "Prokaryoot",
+       "d": "Cel zonder celkern, zoals een bacterie; het DNA ligt los in de cel."
+      }
+     ],
+     "sv": [
+      {
+       "v": "Wat is de functie van het celmembraan?",
+       "o": [
+        "Het levert energie voor de cel via de celademhaling in het mitochondrion",
+        "Het vormt de grens en regelt welke stoffen de cel in en uit gaan",
+        "Het bevat het DNA van de cel",
+        "Het geeft de plantencel stevigheid"
+       ],
+       "c": 1,
+       "d": 1,
+       "u": "Onthoud: het celmembraan is de grens die selectief doorlaat wat er in en uit gaat.",
+       "uo": [
+        "De celademhaling en energie horen bij het mitochondrion, niet bij het membraan.",
+        "Klopt: het celmembraan is de grens en laat selectief stoffen door.",
+        "Het DNA zit in de celkern, niet in het celmembraan.",
+        "Stevigheid komt van de celwand (bij planten), niet van het celmembraan."
+       ],
+       "uh": "Celmembraan = selectief doorlaatbare grens."
+      },
+      {
+       "v": "Welk celonderdeel stuurt de cel aan en bevat het erfelijk materiaal?",
+       "o": [
+        "Het mitochondrion",
+        "Het ribosoom",
+        "De celkern",
+        "De vacuole"
+       ],
+       "c": 2,
+       "d": 2,
+       "u": "Onthoud: de celkern bevat het DNA en stuurt de cel aan.",
+       "uo": [
+        "Het mitochondrion levert energie, maar bevat niet het DNA dat de cel aanstuurt.",
+        "Het ribosoom maakt eiwitten en stuurt de cel niet aan.",
+        "Klopt: de celkern bevat het DNA en geeft de cel zijn instructies.",
+        "De vacuole is voor opslag en vocht, niet voor de aansturing."
+       ],
+       "uh": "Celkern = DNA + aansturing van de cel."
+      },
+      {
+       "v": "Wat gebeurt er in het mitochondrion?",
+       "o": [
+        "Celademhaling: glucose wordt met zuurstof afgebroken en levert energie",
+        "Fotosynthese: glucose wordt met licht en water opgebouwd uit koolstofdioxide",
+        "Opslag van vocht en afvalstoffen",
+        "Het opvangen van zonlicht met bladgroen"
+       ],
+       "c": 0,
+       "d": 1,
+       "u": "Onthoud: het mitochondrion doet de celademhaling en levert de energie.",
+       "uo": [
+        "Klopt: in het mitochondrion wordt glucose met zuurstof afgebroken en komt energie vrij.",
+        "Fotosynthese hoort bij de bladgroenkorrel, niet bij het mitochondrion.",
+        "Opslag hoort bij de vacuole, niet bij het mitochondrion.",
+        "Licht opvangen met bladgroen gebeurt in de bladgroenkorrel."
+       ],
+       "uh": "Mitochondrion = celademhaling = energie."
+      },
+      {
+       "v": "Wat is de functie van de bladgroenkorrel?",
+       "o": [
+        "De cel aansturen met behulp van het DNA in de kern",
+        "Eiwitten maken volgens het recept van de celkern",
+        "Energie leveren door de celademhaling",
+        "Fotosynthese: glucose maken met licht"
+       ],
+       "c": 3,
+       "d": 1,
+       "u": "Onthoud: de bladgroenkorrel doet de fotosynthese en zit alleen in plantencellen.",
+       "uo": [
+        "Aansturen met DNA hoort bij de celkern.",
+        "Eiwitten maken hoort bij de ribosomen.",
+        "Energie leveren via celademhaling hoort bij het mitochondrion.",
+        "Klopt: in de bladgroenkorrel maakt de plant glucose met licht (fotosynthese)."
+       ],
+       "uh": "Bladgroenkorrel = fotosynthese, alleen in plantencellen."
+      },
+      {
+       "v": "Welk celonderdeel maakt de eiwitten?",
+       "o": [
+        "De celwand",
+        "De bladgroenkorrel",
+        "Het ribosoom",
+        "Het celmembraan"
+       ],
+       "c": 2,
+       "d": 1,
+       "u": "Onthoud: ribosomen maken de eiwitten van de cel.",
+       "uo": [
+        "De celwand geeft stevigheid, maar maakt geen eiwitten.",
+        "De bladgroenkorrel doet fotosynthese, geen eiwitproductie.",
+        "Klopt: ribosomen maken de eiwitten.",
+        "Het celmembraan is de grens, geen eiwitfabriek."
+       ],
+       "uh": "Ribosoom = eiwitfabriek."
+      },
+      {
+       "v": "Wat is de functie van de vacuole, vooral in een plantencel?",
+       "o": [
+        "Het maken van eiwitten voor de groei",
+        "Opslag van vocht en stoffen; houdt de cel stevig",
+        "Het afbreken van glucose met zuurstof",
+        "Het opvangen van zonlicht met bladgroen voor de fotosynthese"
+       ],
+       "c": 1,
+       "d": 1,
+       "u": "Onthoud: de vacuole slaat vocht en stoffen op en is groot in plantencellen.",
+       "uo": [
+        "Eiwitten maken hoort bij de ribosomen, niet bij de vacuole.",
+        "Klopt: de vacuole slaat vocht en stoffen op en houdt de plantencel stevig.",
+        "Glucose afbreken hoort bij het mitochondrion.",
+        "Licht opvangen hoort bij de bladgroenkorrel."
+       ],
+       "uh": "Vacuole = opslag/vocht, groot bij planten."
+      },
+      {
+       "v": "Waarvoor dient de celwand?",
+       "o": [
+        "Voor de opslag van vocht in de cel",
+        "Voor het opvangen van zonlicht met behulp van bladgroen",
+        "Voor het aansturen van de cel met DNA",
+        "Voor stevigheid; hij zit alleen om plantencellen"
+       ],
+       "c": 3,
+       "d": 1,
+       "u": "Onthoud: de celwand geeft stevigheid en zit alleen om plantencellen.",
+       "uo": [
+        "Opslag van vocht hoort bij de vacuole.",
+        "Licht opvangen hoort bij de bladgroenkorrel.",
+        "Aansturen met DNA hoort bij de celkern.",
+        "Klopt: de celwand geeft stevigheid en zit alleen om plantencellen."
+       ],
+       "uh": "Celwand = stevigheid, alleen bij planten."
+      },
+      {
+       "v": "Welk deel zorgt voor transport en bewerking van stoffen in de cel?",
+       "o": [
+        "Het endoplasmatisch reticulum en het golgi-systeem",
+        "De celwand rondom en het selectief doorlaatbare celmembraan",
+        "De celkern en het DNA",
+        "Het ribosoom en de vacuole"
+       ],
+       "c": 0,
+       "d": 2,
+       "u": "Onthoud: het ER en het golgi-systeem vervoeren en bewerken stoffen in de cel.",
+       "uo": [
+        "Klopt: het endoplasmatisch reticulum en golgi-systeem transporteren en bewerken stoffen.",
+        "Celwand en celmembraan vormen grenzen; ze verzorgen niet het interne transport.",
+        "De celkern met DNA stuurt aan, maar doet niet het transport van stoffen.",
+        "Ribosomen maken eiwitten en de vacuole slaat op; dat is geen transportsysteem."
+       ],
+       "uh": "ER + golgi = transport en bewerking van stoffen."
+      },
+      {
+       "v": "Welke onderdelen vind je wel in een plantencel maar niet in een diercel?",
+       "o": [
+        "Celkern, mitochondriën, ribosomen en celmembraan",
+        "Celmembraan en celkern",
+        "Mitochondriën en celmembraan",
+        "Celwand, bladgroenkorrels en een grote vacuole"
+       ],
+       "c": 3,
+       "d": 2,
+       "u": "Onthoud: alleen plantencellen hebben een celwand, bladgroenkorrels en een grote vacuole.",
+       "uo": [
+        "Celkern, mitochondriën en ribosomen zitten ook in een diercel.",
+        "Celmembraan en celkern heeft een diercel ook.",
+        "Mitochondriën en celmembraan zitten ook in dierlijke cellen.",
+        "Klopt: celwand, bladgroenkorrels en een grote vacuole horen bij de plantencel."
+       ],
+       "uh": "Extra bij planten: celwand, bladgroen, grote vacuole."
+      },
+      {
+       "v": "Wat is een belangrijk verschil tussen een plantencel en een diercel?",
+       "o": [
+        "Alleen de diercel heeft een celkern met daarin het DNA",
+        "Alleen de diercel heeft mitochondriën en levert daarmee energie",
+        "Alleen de plantencel heeft een celwand en bladgroenkorrels",
+        "Alleen de plantencel heeft een celmembraan"
+       ],
+       "c": 2,
+       "d": 2,
+       "u": "Onthoud: de plantencel heeft extra een celwand, bladgroenkorrels en een grote vacuole.",
+       "uo": [
+        "Onjuist: zowel plant- als diercel hebben een celkern.",
+        "Onjuist: beide celtypen hebben mitochondriën.",
+        "Klopt: de plantencel heeft er extra een celwand en bladgroenkorrels bij.",
+        "Onjuist: beide celtypen hebben een celmembraan."
+       ],
+       "uh": "Plantencel extra: celwand + bladgroen + vacuole."
+      },
+      {
+       "v": "Waarin verschilt een bacteriecel van een planten- en dierlijke cel?",
+       "o": [
+        "Een bacteriecel heeft geen celkern (prokaryoot)",
+        "Een bacteriecel heeft altijd bladgroenkorrels",
+        "Een bacteriecel heeft geen celmembraan om zich heen",
+        "Een bacteriecel heeft een veel grotere celkern"
+       ],
+       "c": 0,
+       "d": 2,
+       "u": "Onthoud: een bacteriecel is prokaryoot en heeft geen celkern; plant- en diercel wel (eukaryoot).",
+       "uo": [
+        "Klopt: een bacteriecel heeft geen celkern; het DNA ligt los in de cel (prokaryoot).",
+        "Bacteriën hebben geen bladgroenkorrels als vast kenmerk.",
+        "Een bacteriecel heeft juist wel een celmembraan.",
+        "Een bacteriecel heeft helemaal geen celkern, dus ook geen grotere kern."
+       ],
+       "uh": "Bacterie = prokaryoot: geen celkern."
+      },
+      {
+       "v": "Wat betekent het dat een cel eukaryoot is?",
+       "o": [
+        "De cel heeft geen celkern",
+        "De cel heeft een echte celkern met DNA erin",
+        "De cel heeft altijd een stevige celwand eromheen",
+        "De cel kan geen eiwitten maken"
+       ],
+       "c": 1,
+       "d": 1,
+       "u": "Onthoud: eukaryoot = met celkern (plant en dier); prokaryoot = zonder celkern (bacterie).",
+       "uo": [
+        "Geen celkern hoort juist bij een prokaryoot, zoals een bacterie.",
+        "Klopt: een eukaryote cel heeft een echte celkern met DNA.",
+        "Een celwand hoort niet bij de definitie van eukaryoot; diercellen hebben er geen.",
+        "Eukaryote cellen maken juist wel eiwitten met hun ribosomen."
+       ],
+       "uh": "Eukaryoot = mét celkern."
+      },
+      {
+       "v": "Waar in de cel ligt het DNA bij een plantencel of diercel?",
+       "o": [
+        "In het mitochondrion",
+        "In de vacuole",
+        "In de celkern",
+        "In het celmembraan"
+       ],
+       "c": 2,
+       "d": 1,
+       "u": "Onthoud: bij plant- en diercellen ligt het DNA netjes in de celkern.",
+       "uo": [
+        "Het mitochondrion levert energie; het bewaart niet het hoofd-DNA van de cel.",
+        "De vacuole is voor opslag, niet voor het DNA.",
+        "Klopt: bij eukaryote cellen ligt het DNA in de celkern.",
+        "Het celmembraan is de grens en bevat niet het DNA."
+       ],
+       "uh": "DNA zit in de celkern (bij plant en dier)."
+      },
+      {
+       "v": "Wat betekent 'selectief doorlaatbaar' bij het celmembraan?",
+       "o": [
+        "Het laat alle stoffen zonder onderscheid door",
+        "Het laat sommige stoffen wel door en andere niet",
+        "Het laat helemaal geen stoffen door",
+        "Het laat alleen licht door voor de fotosynthese"
+       ],
+       "c": 1,
+       "d": 2,
+       "u": "Onthoud: selectief doorlaatbaar betekent dat het membraan kiest wat er wel en niet doorgaat.",
+       "uo": [
+        "Als alles zomaar doorging, zou het membraan niets regelen; dat klopt niet.",
+        "Klopt: het membraan laat sommige stoffen door en houdt andere tegen.",
+        "Er gaan wel stoffen doorheen, anders zou de cel geen voeding krijgen.",
+        "Licht doorlaten hoort niet bij de functie van het celmembraan."
+       ],
+       "uh": "Selectief doorlaatbaar = kiezen wat erin en eruit mag."
+      },
+      {
+       "v": "Een spiercel gebruikt veel energie. Van welk organel heeft die cel er daardoor veel?",
+       "o": [
+        "Veel bladgroenkorrels",
+        "Veel grote vacuoles",
+        "Veel celwanden",
+        "Veel mitochondriën"
+       ],
+       "c": 3,
+       "d": 3,
+       "u": "Onthoud: mitochondriën leveren energie, dus energierijke cellen hebben er veel.",
+       "uo": [
+        "Bladgroenkorrels doen fotosynthese en zitten niet in dierlijke spiercellen.",
+        "Vacuoles zijn voor opslag, niet voor het leveren van energie.",
+        "Een dierlijke cel heeft geen celwand.",
+        "Klopt: mitochondriën leveren energie, dus een actieve spiercel heeft er veel."
+       ],
+       "uh": "Veel energie nodig = veel mitochondriën."
+      },
+      {
+       "v": "Waarom kan een menselijke spiercel geen fotosynthese uitvoeren?",
+       "o": [
+        "Omdat een dierlijke cel geen bladgroenkorrels heeft",
+        "Omdat een dierlijke cel geen mitochondriën voor energie heeft",
+        "Omdat een dierlijke cel geen celkern heeft",
+        "Omdat een dierlijke cel geen ribosomen heeft"
+       ],
+       "c": 0,
+       "d": 2,
+       "u": "Onthoud: fotosynthese vereist bladgroenkorrels, en die zitten alleen in plantencellen.",
+       "uo": [
+        "Klopt: dierlijke cellen missen bladgroenkorrels, dus geen fotosynthese.",
+        "Dierlijke cellen hebben juist wel mitochondriën.",
+        "Dierlijke cellen hebben wel degelijk een celkern.",
+        "Dierlijke cellen hebben wel ribosomen om eiwitten te maken."
+       ],
+       "uh": "Geen bladgroenkorrels = geen fotosynthese."
+      },
+      {
+       "v": "Een kliercel maakt heel veel eiwitten. Welke organellen zijn daar dan opvallend veel aanwezig?",
+       "o": [
+        "Veel vacuoles",
+        "Veel celwanden",
+        "Veel ribosomen",
+        "Veel bladgroenkorrels"
+       ],
+       "c": 2,
+       "d": 3,
+       "u": "Onthoud: ribosomen maken eiwitten, dus een eiwitrijke cel heeft er veel.",
+       "uo": [
+        "Vacuoles slaan op, ze maken geen eiwitten.",
+        "Celwanden geven stevigheid en zitten niet in dierlijke kliercellen.",
+        "Klopt: ribosomen maken eiwitten, dus die cel heeft er veel.",
+        "Bladgroenkorrels doen fotosynthese, geen eiwitproductie."
+       ],
+       "uh": "Veel eiwit maken = veel ribosomen."
+      },
+      {
+       "v": "Waardoor blijft een plant stevig staan, ook zonder skelet?",
+       "o": [
+        "Door de vele mitochondriën die in elke cel energie leveren",
+        "Door de celwanden en de gevulde vacuoles die de cellen stevig houden",
+        "Door de celkernen met daarin het erfelijke DNA-materiaal",
+        "Door het bladgroen in de bladeren"
+       ],
+       "c": 1,
+       "d": 2,
+       "u": "Onthoud: celwanden en volle vacuoles maken plantenweefsel stevig (turgor).",
+       "uo": [
+        "Mitochondriën leveren energie, maar geven de plant geen stevigheid.",
+        "Klopt: de celwanden en de met vocht gevulde vacuoles houden de cellen stevig.",
+        "De celkern stuurt de cel aan, maar zorgt niet voor stevigheid.",
+        "Bladgroen vangt licht op, dat geeft geen stevigheid."
+       ],
+       "uh": "Stevig plant = celwand + volle vacuole."
+      },
+      {
+       "v": "Wat doet het golgi-systeem in de cel?",
+       "o": [
+        "Het levert de energie voor de cel via de celademhaling",
+        "Het vangt licht op met bladgroen",
+        "Het bevat het DNA van de cel",
+        "Het bewerkt en verpakt stoffen voor transport"
+       ],
+       "c": 3,
+       "d": 1,
+       "u": "Onthoud: het golgi-systeem bewerkt en verpakt stoffen en werkt samen met het ER.",
+       "uo": [
+        "Energie leveren hoort bij het mitochondrion.",
+        "Licht opvangen hoort bij de bladgroenkorrel.",
+        "Het DNA zit in de celkern.",
+        "Klopt: het golgi-systeem bewerkt en verpakt stoffen voor het transport."
+       ],
+       "uh": "Golgi = stoffen bewerken en verpakken."
+      },
+      {
+       "v": "Welk organel is de 'baas' van de cel en regelt wat er gebeurt?",
+       "o": [
+        "De celkern",
+        "Het ribosoom",
+        "De vacuole",
+        "Het celmembraan"
+       ],
+       "c": 0,
+       "d": 1,
+       "u": "Onthoud: de celkern stuurt de cel aan met de informatie in het DNA.",
+       "uo": [
+        "Klopt: de celkern regelt met het DNA wat er in de cel gebeurt.",
+        "Het ribosoom maakt eiwitten, maar stuurt de cel niet aan.",
+        "De vacuole is voor opslag, niet voor de aansturing.",
+        "Het celmembraan is de grens, geen aansturend organel."
+       ],
+       "uh": "Celkern = de baas van de cel."
+      },
+      {
+       "v": "Welke uitspraak over een bacteriecel klopt?",
+       "o": [
+        "Een bacteriecel is een eukaryote cel met een celkern",
+        "Een bacteriecel heeft dezelfde grote vacuole als een plantencel",
+        "Een bacteriecel heeft geen celkern; het DNA ligt los in de cel",
+        "Een bacteriecel heeft altijd bladgroenkorrels voor fotosynthese"
+       ],
+       "c": 2,
+       "d": 2,
+       "u": "Onthoud: een bacterie is prokaryoot; het DNA ligt los, zonder celkern eromheen.",
+       "uo": [
+        "Onjuist: een bacterie is juist prokaryoot, zonder celkern.",
+        "Een bacterie heeft niet zo'n grote centrale vacuole als een plantencel.",
+        "Klopt: een bacteriecel heeft geen celkern; het DNA ligt los in de cel.",
+        "Bacteriën hebben niet standaard bladgroenkorrels."
+       ],
+       "uh": "Bacterie: los DNA, geen celkern (prokaryoot)."
+      },
+      {
+       "v": "Onder de microscoop zie je een cel zonder celkern, met het DNA los in de cel. Wat is dit?",
+       "o": [
+        "Een plantencel met celwand",
+        "Een bacteriecel (prokaryoot)",
+        "Een diercel met een celkern",
+        "Een bladgroenkorrel"
+       ],
+       "c": 1,
+       "d": 3,
+       "u": "Onthoud: geen celkern en los DNA is typisch voor een bacterie (prokaryoot).",
+       "uo": [
+        "Een plantencel is eukaryoot en heeft juist wel een celkern.",
+        "Klopt: geen celkern met los DNA hoort bij een bacteriecel (prokaryoot).",
+        "Een diercel is eukaryoot en heeft wel een celkern.",
+        "Een bladgroenkorrel is een organel, geen hele cel."
+       ],
+       "uh": "Geen celkern, los DNA = bacterie."
+      },
+      {
+       "v": "Waarom kan een diercel wel groeien maar geen eigen glucose maken uit licht?",
+       "o": [
+        "Omdat een diercel geen celkern en dus geen DNA heeft",
+        "Omdat een diercel geen mitochondriën heeft",
+        "Omdat een diercel geen ribosomen heeft",
+        "Omdat een diercel geen bladgroenkorrels heeft"
+       ],
+       "c": 3,
+       "d": 2,
+       "u": "Onthoud: zonder bladgroenkorrels geen fotosynthese, dus dierlijke cellen halen glucose uit voedsel.",
+       "uo": [
+        "Onjuist: een diercel heeft wel een celkern met DNA.",
+        "Onjuist: een diercel heeft juist wel mitochondriën.",
+        "Onjuist: een diercel heeft wel ribosomen.",
+        "Klopt: een diercel mist bladgroenkorrels, dus geen fotosynthese; glucose komt uit voedsel."
+       ],
+       "uh": "Diercel: geen bladgroen, dus glucose uit voedsel."
+      },
+      {
+       "v": "In welke cel vind je meestal één grote centrale vacuole?",
+       "o": [
+        "In een plantencel",
+        "In een bacteriecel zonder celkern",
+        "In een diercel met veel mitochondriën",
+        "In een ribosoom"
+       ],
+       "c": 0,
+       "d": 1,
+       "u": "Onthoud: de grote centrale vacuole is typisch voor de plantencel.",
+       "uo": [
+        "Klopt: een plantencel heeft meestal één grote centrale vacuole.",
+        "Een bacteriecel heeft niet zo'n grote centrale vacuole.",
+        "Een diercel heeft hooguit kleine vacuoles, geen grote centrale.",
+        "Een ribosoom is een organel, geen cel met een vacuole."
+       ],
+       "uh": "Grote centrale vacuole = plantencel."
+      },
+      {
+       "v": "Bij een proef levert een cel geen energie meer. Welk organel werkt dan waarschijnlijk niet goed?",
+       "o": [
+        "De celwand",
+        "Het celmembraan als grens",
+        "Het mitochondrion",
+        "De vacuole"
+       ],
+       "c": 2,
+       "d": 3,
+       "u": "Onthoud: het mitochondrion levert de energie, dus bij energiegebrek hapert dat organel.",
+       "uo": [
+        "De celwand geeft stevigheid, die levert geen energie.",
+        "Het celmembraan regelt transport over de grens, maar levert niet de energie.",
+        "Klopt: het mitochondrion levert de energie; hapert het, dan valt de energie weg.",
+        "De vacuole slaat op en levert geen energie."
+       ],
+       "uh": "Energie weg? Kijk naar het mitochondrion."
+      }
+     ],
+     "oe": [
+      {
+       "bron": "Microscooppracticum uienvlies en wangslijmvlies",
+       "ctx": "Een leerling bekijkt onder de microscoop twee preparaten. In preparaat A ziet zij rechthoekige cellen met een stevige rand eromheen, groene korrels en één grote ruimte in het midden. In preparaat B ziet zij rondere cellen zonder zo'n stevige rand, zonder groene korrels en met alleen een dunne buitengrens.",
+       "v": "Leg uit welk preparaat plantencellen bevat en welk dierlijke cellen, en noem twee onderdelen waaraan je dat ziet.",
+       "o": [
+        ""
+       ],
+       "c": 0,
+       "u": "Preparaat A bevat plantencellen: de stevige rand is de celwand, de groene korrels zijn de bladgroenkorrels en de grote ruimte in het midden is de grote vacuole; deze onderdelen horen bij plantencellen. Preparaat B bevat dierlijke cellen: die hebben geen celwand, geen bladgroenkorrels en geen grote centrale vacuole, alleen een celmembraan als buitengrens. (Kernpunten: [1] A = plantencel, herkenbaar aan celwand, bladgroenkorrels en grote vacuole; [2] B = diercel, zonder celwand, bladgroen en grote vacuole.)"
+      },
+      {
+       "bron": "Casus spierweefsel en vetweefsel",
+       "ctx": "Een onderzoeker vergelijkt twee soorten dierlijke cellen. In actieve spiercellen telt hij veel meer mitochondriën dan in rustige vetcellen. Spiercellen moeten voortdurend samentrekken en gebruiken daarbij veel energie.",
+       "v": "Leg uit waarom juist spiercellen zoveel mitochondriën bevatten.",
+       "o": [
+        ""
+       ],
+       "c": 0,
+       "u": "Mitochondriën verzorgen de celademhaling, waarbij glucose met zuurstof wordt afgebroken en energie vrijkomt. Spiercellen moeten steeds samentrekken en hebben daarvoor veel energie nodig. Hoe meer mitochondriën, hoe meer energie de cel kan leveren; daarom bevatten actieve spiercellen er veel. (Kernpunten: [1] mitochondriën leveren energie via de celademhaling; [2] spiercellen gebruiken veel energie en hebben er daarom veel.)"
+      },
+      {
+       "bron": "Onderzoek aan bacteriën",
+       "ctx": "Een leerling bekijkt een kleurpreparaat van bacteriën met een sterke microscoop. Zij ziet kleine cellen met een celmembraan, maar geen apart afgescheiden celkern. Het erfelijk materiaal ligt verspreid door de cel.",
+       "v": "Leg uit waarom een bacteriecel prokaryoot wordt genoemd en waarin dit verschilt van een plant- of dierlijke cel.",
+       "o": [
+        ""
+       ],
+       "c": 0,
+       "u": "Een bacteriecel wordt prokaryoot genoemd omdat zij geen celkern heeft: het DNA ligt los verspreid in de cel in plaats van in een aparte kern. Plant- en dierlijke cellen zijn eukaryoot: bij hen ligt het DNA netjes in een echte celkern. Dat is het belangrijkste verschil. (Kernpunten: [1] prokaryoot = zonder celkern, DNA ligt los; [2] plant- en diercel zijn eukaryoot, met het DNA in een celkern.)"
+      },
+      {
+       "bron": "Practicum slappe sla",
+       "ctx": "Een leerling legt slappe slabladeren in water. Na een half uur zijn de bladeren weer stevig en knapperig. Onder de microscoop ziet zij dat de vacuoles in de cellen groter en voller zijn geworden.",
+       "v": "Leg uit hoe de vacuole en de celwand er samen voor zorgen dat de sla weer stevig wordt.",
+       "o": [
+        ""
+       ],
+       "c": 0,
+       "u": "Door het opnemen van water worden de vacuoles voller en groter; ze duwen de celinhoud naar buiten tegen de celwand. De stevige celwand houdt daartegen, waardoor de cel gespannen en stevig wordt (turgor). Samen maken de volle vacuole en de celwand het slablad weer knapperig. (Kernpunten: [1] de vacuole neemt water op en duwt naar buiten; [2] de celwand houdt tegen, zodat de cel stevig wordt.)"
+      },
+      {
+       "bron": "Casus alvleesklier",
+       "ctx": "Cellen in de alvleesklier maken grote hoeveelheden verteringsenzymen. Enzymen zijn eiwitten. Onder de microscoop blijken deze cellen opvallend veel ribosomen en een goed ontwikkeld endoplasmatisch reticulum en golgi-systeem te bevatten.",
+       "v": "Leg uit waarom deze eiwitmakende cellen veel ribosomen en een uitgebreid golgi-systeem hebben.",
+       "o": [
+        ""
+       ],
+       "c": 0,
+       "u": "Ribosomen maken de eiwitten, dus een cel die veel enzymen (eiwitten) produceert heeft veel ribosomen nodig. Het endoplasmatisch reticulum en het golgi-systeem bewerken, verpakken en transporteren die eiwitten daarna naar buiten. Omdat deze cellen veel eiwit maken en afgeven, zijn deze onderdelen sterk ontwikkeld. (Kernpunten: [1] ribosomen maken de eiwitten, dus veel eiwit = veel ribosomen; [2] ER en golgi bewerken en transporteren de gemaakte eiwitten.)"
+      }
+     ]
+    },
+    {
+     "id": "M2",
+     "naam": "Transport door het celmembraan",
+     "beschrijving": "Gouden-standaardmodule bi.M.2: hoe stoffen door het selectief doorlaatbare celmembraan bewegen via diffusie, osmose, passief en actief transport, met hypertoon/hypotoon/isotoon, plasmolyse en turgor.",
+     "ceStatus": "CE",
+     "onderwerpen": [
+      "Selectief doorlaatbaar celmembraan",
+      "Diffusie & concentratiegradient",
+      "Osmose (water)",
+      "Hypertoon, hypotoon, isotoon",
+      "Passief vs actief transport",
+      "Plasmolyse & turgor"
+     ],
+     "sam": "Het celmembraan is selectief doorlaatbaar: het laat sommige stoffen door en andere niet. Bij diffusie verplaatsen deeltjes zich netto van een hoge naar een lage concentratie, tot er evenwicht is. Osmose is de diffusie van water door een selectief doorlaatbaar membraan, naar de kant met meer opgeloste stof (minder water). Passief transport kost geen energie en gaat met de gradient mee; actief transport kost energie (ATP) en gaat tegen de gradient in. In een hypertoon milieu verliest een cel water, in een hypotoon milieu neemt hij water op.",
+     "begrippen": [
+      {
+       "t": "Celmembraan",
+       "d": "Selectief doorlaatbaar laagje rond de cel dat sommige stoffen doorlaat en andere niet."
+      },
+      {
+       "t": "Selectief doorlaatbaar",
+       "d": "Eigenschap van het membraan: het laat bepaalde stoffen door, maar houdt andere tegen."
+      },
+      {
+       "t": "Diffusie",
+       "d": "Netto verplaatsing van deeltjes van een hoge naar een lage concentratie, tot evenwicht."
+      },
+      {
+       "t": "Osmose",
+       "d": "Diffusie van water door een selectief doorlaatbaar membraan, naar de kant met meer opgeloste stof."
+      },
+      {
+       "t": "Concentratiegradient",
+       "d": "Het verschil in concentratie tussen twee plaatsen; stoffen bewegen vanzelf van hoog naar laag."
+      },
+      {
+       "t": "Passief transport",
+       "d": "Transport met de concentratiegradient mee; dit kost de cel geen energie."
+      },
+      {
+       "t": "Actief transport",
+       "d": "Transport tegen de concentratiegradient in; dit kost energie in de vorm van ATP."
+      },
+      {
+       "t": "Hypertoon",
+       "d": "Milieu met meer opgeloste stof dan de cel; de cel verliest water en krimpt."
+      },
+      {
+       "t": "Hypotoon",
+       "d": "Milieu met minder opgeloste stof dan de cel; de cel neemt water op en zwelt."
+      },
+      {
+       "t": "Isotoon",
+       "d": "Milieu met evenveel opgeloste stof als de cel; er is netto geen waterverplaatsing."
+      },
+      {
+       "t": "Plasmolyse",
+       "d": "Het loslaten van het celmembraan van de celwand doordat een plantencel water verliest."
+      },
+      {
+       "t": "Turgor",
+       "d": "De stevigheid van een plantencel doordat de volle vacuole tegen de celwand duwt."
+      }
+     ],
+     "sv": [
+      {
+       "v": "Wat is diffusie?",
+       "o": [
+        "Netto verplaatsing van deeltjes van hoge naar lage concentratie",
+        "De verplaatsing van water tegen de concentratiegradient in met behulp van energie",
+        "Het volledig tegenhouden van alle deeltjes door het celmembraan van de cel",
+        "Het opbouwen van grote moleculen uit kleine bouwstenen binnen in de cel"
+       ],
+       "c": 0,
+       "d": 1,
+       "u": "Onthoud: diffusie is netto verplaatsing van veel naar weinig, tot evenwicht.",
+       "uo": [
+        "Klopt: deeltjes bewegen netto van een hoge naar een lage concentratie.",
+        "Dat is juist actief transport: tegen de gradient in en met energie.",
+        "Diffusie houdt niets tegen; dat is juist de rol van een dicht membraan.",
+        "Moleculen opbouwen is assimilatie, dat heeft niets met diffusie te maken."
+       ],
+       "uh": "Diffusie: van veel naar weinig, vanzelf."
+      },
+      {
+       "v": "Wat is osmose?",
+       "o": [
+        "Diffusie van opgeloste zoutdeeltjes door de stevige celwand van een plant",
+        "Actief transport van water door het membraan met behulp van ATP-energie",
+        "Diffusie van water door een selectief doorlaatbaar membraan",
+        "Het verdampen van water aan het oppervlak van de bladeren van een plant"
+       ],
+       "c": 2,
+       "d": 1,
+       "u": "Onthoud: osmose is diffusie van water door een selectief doorlaatbaar membraan.",
+       "uo": [
+        "Bij osmose beweegt juist het water, niet de opgeloste zoutdeeltjes.",
+        "Osmose kost geen energie; het is een vorm van passief transport.",
+        "Klopt: osmose is de diffusie van water door een selectief doorlaatbaar membraan.",
+        "Verdampen is iets anders dan osmose; osmose gaat door een membraan."
+       ],
+       "uh": "Osmose = diffusie van water."
+      },
+      {
+       "v": "Wat betekent selectief doorlaatbaar bij het celmembraan?",
+       "o": [
+        "Het laat alle stoffen zonder onderscheid ongehinderd door naar binnen",
+        "Het laat sommige stoffen door en andere niet",
+        "Het houdt werkelijk elke stof volledig tegen aan de buitenkant",
+        "Het laat enkel water door en verder geen enkele andere stof"
+       ],
+       "c": 1,
+       "d": 1,
+       "u": "Onthoud: selectief doorlaatbaar betekent kieskeurig: sommige stoffen wel, andere niet.",
+       "uo": [
+        "Nee, een membraan dat alles doorlaat is juist niet selectief.",
+        "Klopt: het membraan laat sommige stoffen door en houdt andere tegen.",
+        "Een membraan dat alles tegenhoudt zou de cel geen voedingsstoffen geven.",
+        "Er gaan ook andere stoffen door dan water; het membraan is kieskeurig."
+       ],
+       "uh": "Selectief = kieskeurig doorlaten."
+      },
+      {
+       "v": "Kost passief transport energie?",
+       "o": [
+        "Ja, er is voortdurend veel ATP-energie voor nodig om het te laten werken",
+        "Nee, het kost geen energie",
+        "Ja, maar alleen wanneer de cel in een hypertoon milieu terechtkomt",
+        "Nee, maar het gaat wel tegen de concentratiegradient in de cel in"
+       ],
+       "c": 1,
+       "d": 1,
+       "u": "Onthoud: passief transport gaat met de gradient mee en kost geen energie.",
+       "uo": [
+        "Nee, ATP is juist nodig bij actief transport, niet bij passief transport.",
+        "Klopt: passief transport gaat met de gradient mee en kost geen energie.",
+        "Passief transport kost ook in een hypertoon milieu geen energie.",
+        "Passief transport gaat juist met de gradient mee, niet ertegenin."
+       ],
+       "uh": "Passief = gratis, met de gradient mee."
+      },
+      {
+       "v": "Wat geldt voor actief transport?",
+       "o": [
+        "Het gaat met de concentratiegradient mee en kost daarom geen energie",
+        "Het is hetzelfde proces als gewone passieve diffusie door het membraan",
+        "Het verplaatst enkel water door een selectief doorlaatbaar membraan",
+        "Het kost energie (ATP) en gaat tegen de concentratiegradient in"
+       ],
+       "c": 3,
+       "d": 1,
+       "u": "Onthoud: actief transport kost ATP en gaat tegen de gradient in.",
+       "uo": [
+        "Met de gradient mee en gratis hoort juist bij passief transport.",
+        "Actief transport verschilt van diffusie: het kost energie en gaat tegenin.",
+        "Water door een membraan is osmose, dat is geen actief transport.",
+        "Klopt: actief transport kost ATP en gaat tegen de concentratiegradient in."
+       ],
+       "uh": "Actief = ATP + tegen de gradient in."
+      },
+      {
+       "v": "Bij osmose gaat het water naar de kant met...",
+       "o": [
+        "minder opgeloste stof (dus met meer water)",
+        "meer opgeloste stof (dus met minder water)",
+        "precies dezelfde hoeveelheid opgeloste stof aan beide kanten",
+        "een hogere temperatuur van de vloeistof aan die kant"
+       ],
+       "c": 1,
+       "d": 1,
+       "u": "Onthoud: water stroomt naar de kant met meer opgeloste stof (weinig water).",
+       "uo": [
+        "Andersom: water gaat juist weg van de kant met veel water.",
+        "Klopt: water gaat naar de kant met meer opgeloste stof, dus minder water.",
+        "Bij gelijke concentratie is er netto geen waterverplaatsing.",
+        "De richting van osmose hangt af van concentratie, niet van temperatuur."
+       ],
+       "uh": "Water gaat naar het zout toe."
+      },
+      {
+       "v": "Wat is een hypertoon milieu voor een cel?",
+       "o": [
+        "Buiten de cel zit meer opgeloste stof dan binnen",
+        "Buiten de cel zit minder opgeloste stof dan binnenin de cel zelf",
+        "Binnen en buiten de cel is de concentratie precies aan elkaar gelijk",
+        "Er zit rondom de cel helemaal geen enkele opgeloste stof meer"
+       ],
+       "c": 0,
+       "d": 1,
+       "u": "Onthoud: hypertoon = buiten meer opgeloste stof, de cel verliest water.",
+       "uo": [
+        "Klopt: hypertoon betekent buiten meer opgeloste stof dan in de cel.",
+        "Minder opgeloste stof buiten hoort juist bij een hypotoon milieu.",
+        "Gelijke concentratie binnen en buiten heet isotoon, niet hypertoon.",
+        "Helemaal geen opgeloste stof zou een sterk hypotoon milieu zijn."
+       ],
+       "uh": "Hyper = buiten veel zout, cel krimpt."
+      },
+      {
+       "v": "Wat is een hypotoon milieu voor een cel?",
+       "o": [
+        "Buiten de cel zit veel meer opgeloste stof dan aan de binnenkant",
+        "Binnen en buiten is de concentratie opgeloste stof aan elkaar gelijk",
+        "Er zit rondom de cel juist heel veel zout in de vloeistof opgelost",
+        "Buiten de cel zit minder opgeloste stof dan binnen"
+       ],
+       "c": 3,
+       "d": 1,
+       "u": "Onthoud: hypotoon = buiten minder opgeloste stof, de cel neemt water op.",
+       "uo": [
+        "Meer opgeloste stof buiten hoort juist bij een hypertoon milieu.",
+        "Gelijke concentratie binnen en buiten heet isotoon, niet hypotoon.",
+        "Veel zout buiten maakt het milieu juist hypertoon voor de cel.",
+        "Klopt: hypotoon betekent buiten minder opgeloste stof dan in de cel."
+       ],
+       "uh": "Hypo = buiten weinig zout, cel zwelt."
+      },
+      {
+       "v": "Wat betekent isotoon?",
+       "o": [
+        "Buiten de cel is de concentratie opgeloste stof veel hoger dan binnen",
+        "Buiten de cel is de concentratie opgeloste stof veel lager dan binnen",
+        "Binnen en buiten de cel is de concentratie gelijk",
+        "De cel neemt voortdurend heel veel extra water uit de omgeving op"
+       ],
+       "c": 2,
+       "d": 1,
+       "u": "Onthoud: isotoon = gelijke concentratie binnen en buiten, netto geen waterstroom.",
+       "uo": [
+        "Hogere concentratie buiten dan binnen heet hypertoon, niet isotoon.",
+        "Lagere concentratie buiten dan binnen heet hypotoon, niet isotoon.",
+        "Klopt: isotoon betekent binnen en buiten evenveel opgeloste stof.",
+        "Bij isotoon is er juist netto geen waterverplaatsing, dus geen opzwelling."
+       ],
+       "uh": "Iso = gelijk, geen netto waterstroom."
+      },
+      {
+       "v": "Wat is plasmolyse?",
+       "o": [
+        "Een plantencel die zoveel water opneemt dat de celwand knapt",
+        "Het celmembraan laat los van de celwand door waterverlies",
+        "Het volledig oplossen van de stevige celwand van een plantencel",
+        "Het samenklonteren van alle bladgroenkorrels midden in de cel"
+       ],
+       "c": 1,
+       "d": 1,
+       "u": "Onthoud: plasmolyse = membraan laat los van de celwand door waterverlies.",
+       "uo": [
+        "Water opnemen tot knappen is het tegenovergestelde van plasmolyse.",
+        "Klopt: bij plasmolyse laat het membraan los van de celwand door waterverlies.",
+        "De celwand blijft juist heel; alleen het membraan trekt zich terug.",
+        "Bladgroenkorrels spelen geen rol bij plasmolyse; het gaat om waterverlies."
+       ],
+       "uh": "Plasmolyse: membraan trekt los, cel droog."
+      },
+      {
+       "v": "Wat is turgor?",
+       "o": [
+        "De stevigheid van een plantencel door de volle vacuole tegen de celwand",
+        "Het volledig loslaten van het membraan van de wand door een groot waterverlies",
+        "Het proces waarbij een cel met behulp van ATP-energie zout naar binnen pompt",
+        "Het krimpen van een dierlijke cel wanneer die in een zoutoplossing wordt gelegd"
+       ],
+       "c": 0,
+       "d": 1,
+       "u": "Onthoud: turgor is de stevigheid door de volle vacuole tegen de celwand.",
+       "uo": [
+        "Klopt: turgor is de stevigheid doordat de volle vacuole tegen de celwand duwt.",
+        "Membraan loslaten door waterverlies is juist plasmolyse, het omgekeerde.",
+        "Zout naar binnen pompen met ATP is actief transport, niet turgor.",
+        "Krimpen in een zoutoplossing hoort bij waterverlies, niet bij turgor."
+       ],
+       "uh": "Turgor = stevige cel, volle vacuole."
+      },
+      {
+       "v": "Je legt een cel in een sterk geconcentreerde zoutoplossing. Wat gebeurt er?",
+       "o": [
+        "De cel neemt water op en zwelt sterk op tot hij bijna knapt",
+        "Er verandert helemaal niets aan de cel, want zout gaat er niet in",
+        "De cel verliest water en krimpt",
+        "De cel gaat met behulp van energie actief het zout naar buiten pompen"
+       ],
+       "c": 2,
+       "d": 2,
+       "u": "Onthoud: in een hypertoon (zout) milieu verliest de cel water en krimpt.",
+       "uo": [
+        "Water opnemen gebeurt juist in een hypotoon milieu, niet in zout water.",
+        "Er verandert wel iets: door osmose stroomt water de cel uit.",
+        "Klopt: het milieu is hypertoon, dus de cel verliest water en krimpt.",
+        "De cel reageert passief via osmose; er wordt geen zout uit gepompt."
+       ],
+       "uh": "Zout buiten: water eruit, cel krimpt."
+      },
+      {
+       "v": "Een dierlijke cel zonder celwand komt in zuiver water. Wat gebeurt er?",
+       "o": [
+        "De cel krimpt in elkaar doordat het water er juist uit stroomt",
+        "Er gebeurt niets, want zuiver water is isotoon met het celvocht",
+        "Het celmembraan laat los, net als bij plasmolyse in een plant",
+        "De cel zwelt op en kan barsten"
+       ],
+       "c": 3,
+       "d": 2,
+       "u": "Onthoud: zuiver water is hypotoon, dus een dierlijke cel zwelt en kan barsten.",
+       "uo": [
+        "Krimpen gebeurt in zout (hypertoon) water, niet in zuiver water.",
+        "Zuiver water is juist hypotoon ten opzichte van het celvocht.",
+        "Plasmolyse hoort bij plantencellen met een celwand, niet hierbij.",
+        "Klopt: door osmose stroomt water naar binnen, de cel zwelt en kan barsten."
+       ],
+       "uh": "Zuiver water: cel zwelt, kan knappen."
+      },
+      {
+       "v": "Een verlepte plant krijgt water en wordt weer stevig. Welk begrip past het best?",
+       "o": [
+        "Turgor",
+        "Plasmolyse",
+        "Actief transport",
+        "Hypertoon milieu"
+       ],
+       "c": 0,
+       "d": 2,
+       "u": "Onthoud: stevigheid door volle cellen die water opnemen heet turgor.",
+       "uo": [
+        "Klopt: de cellen nemen water op, de vacuoles vullen zich en de plant wordt stevig.",
+        "Plasmolyse is juist het tegenovergestelde: cellen die water verliezen.",
+        "Actief transport gaat over stoffen tegen de gradient in, niet over stevigheid.",
+        "Een hypertoon milieu zou de plant juist water laten verliezen."
+       ],
+       "uh": "Water erin, turgor terug, plant stevig."
+      },
+      {
+       "v": "Een plantencel ligt in zeer zout water en het membraan trekt van de wand af. Dit heet...",
+       "o": [
+        "turgor, de cel wordt juist extra stevig en helemaal gevuld",
+        "plasmolyse",
+        "isotonie tussen de cel en zijn directe omgeving",
+        "passieve opname van extra water door de grote vacuole"
+       ],
+       "c": 1,
+       "d": 2,
+       "u": "Onthoud: membraan dat loslaat van de wand door waterverlies heet plasmolyse.",
+       "uo": [
+        "Turgor is stevigheid door volle cellen; hier verliest de cel juist water.",
+        "Klopt: het membraan laat los van de celwand door waterverlies: plasmolyse.",
+        "Isotonie zou geen netto waterstroom geven; hier verliest de cel water.",
+        "De cel neemt geen water op maar verliest het juist in dit zoute milieu."
+       ],
+       "uh": "Membraan los = plasmolyse."
+      },
+      {
+       "v": "Wortelcellen nemen mineralen op terwijl er binnen al meer zit dan in de grond. Hoe kan dat?",
+       "o": [
+        "Door gewone diffusie met de concentratiegradient mee",
+        "Door osmose van water dat de mineralen meesleurt",
+        "Door actief transport, dat kost energie",
+        "Dat kan niet, mineralen bewegen alleen van veel naar weinig"
+       ],
+       "c": 2,
+       "d": 2,
+       "u": "Onthoud: opname tegen de gradient in gaat via actief transport en kost energie.",
+       "uo": [
+        "Diffusie gaat van veel naar weinig; hier wordt juist tegen de gradient in opgenomen.",
+        "Osmose gaat over water, niet over het naar binnen halen van mineralen.",
+        "Klopt: tegen de gradient in kan alleen via actief transport, dat kost energie.",
+        "Het kan wel: met energie kan de cel stoffen tegen de gradient in opnemen."
+       ],
+       "uh": "Tegen de gradient in? Actief, kost ATP."
+      },
+      {
+       "v": "Waarom blijft voedsel in een sterke zout- of suikeroplossing langer goed?",
+       "o": [
+        "Het zout levert de bacterien juist extra voedingsstoffen die hen doden",
+        "Het zout verwarmt de bacteriecellen zo sterk op dat ze afsterven",
+        "De bacterien nemen te veel water op en barsten in de oplossing uit elkaar",
+        "De omgeving is hypertoon, dus bacterien verliezen water en drogen uit"
+       ],
+       "c": 3,
+       "d": 2,
+       "u": "Onthoud: een hypertoon (zout of suiker) milieu onttrekt water aan bacterien.",
+       "uo": [
+        "Zout is geen voedingsstof die bacterien doodt; het gaat om waterverlies.",
+        "Zout verwarmt niets; het conserverende effect komt door osmose.",
+        "Andersom: in zout water verliezen bacterien juist water, ze zwellen niet.",
+        "Klopt: het milieu is hypertoon, bacterien verliezen water en drogen uit."
+       ],
+       "uh": "Zout eromheen: bacterie droogt uit."
+      },
+      {
+       "v": "Zuurstof beweegt van de longblaasjes (veel O2) naar het bloed (weinig O2). Welk transport is dit?",
+       "o": [
+        "Actief transport, want er is ATP-energie voor nodig",
+        "Passief transport (diffusie)",
+        "Osmose, want er verplaatst zich water door het membraan",
+        "Plasmolyse van de cellen in de wand van het longblaasje"
+       ],
+       "c": 1,
+       "d": 2,
+       "u": "Onthoud: beweging van veel naar weinig zonder energie is passief transport (diffusie).",
+       "uo": [
+        "Er is geen ATP nodig: zuurstof gaat vanzelf van veel naar weinig.",
+        "Klopt: van hoge naar lage concentratie zonder energie is diffusie, dus passief.",
+        "Osmose gaat over water; hier verplaatst zich juist het gas zuurstof.",
+        "Plasmolyse hoort bij plantencellen en heeft niets met deze gasstroom te maken."
+       ],
+       "uh": "Gas van veel naar weinig = diffusie."
+      },
+      {
+       "v": "Even later ruik je parfum door de hele kamer. Welk proces zit hierachter?",
+       "o": [
+        "Diffusie: de geurdeeltjes verspreiden zich van veel naar weinig",
+        "Osmose van water door de wanden van de kamer heen naar buiten",
+        "Actief transport van de geurdeeltjes met behulp van veel energie",
+        "Plasmolyse waarbij de geurdeeltjes uit hun celletjes losgelaten worden"
+       ],
+       "c": 0,
+       "d": 2,
+       "u": "Onthoud: verspreiding van veel naar weinig, vanzelf, is diffusie.",
+       "uo": [
+        "Klopt: de geurdeeltjes verspreiden zich van veel naar weinig: diffusie.",
+        "Osmose gaat over water door een membraan, niet over geurdeeltjes in lucht.",
+        "Er is geen energie nodig; de deeltjes verspreiden zich vanzelf.",
+        "Plasmolyse hoort bij plantencellen en verklaart deze geur niet."
+       ],
+       "uh": "Geur door de kamer = diffusie."
+      },
+      {
+       "v": "Slappe sla wordt in koud water weer knapperig. Wat is er in de plantencellen gebeurd?",
+       "o": [
+        "De cellen hebben water verloren en zijn geslonken",
+        "Het membraan is losgelaten van de celwand (plasmolyse)",
+        "De cellen namen water op, de turgor nam toe",
+        "De cellen pompten met energie actief zout naar binnen toe"
+       ],
+       "c": 2,
+       "d": 2,
+       "u": "Onthoud: knapperig worden komt door wateropname en toenemende turgor.",
+       "uo": [
+        "Water verliezen zou de sla juist slapper maken, niet knapperiger.",
+        "Plasmolyse is waterverlies; dat maakt cellen juist slap, niet stevig.",
+        "Klopt: de cellen nemen water op via osmose en de turgor neemt toe.",
+        "Er wordt geen zout gepompt; het gaat om osmose van water naar binnen."
+       ],
+       "uh": "Water in de cel: turgor omhoog, knapperig."
+      },
+      {
+       "v": "Waarom kost actief transport wel energie en passief transport niet?",
+       "o": [
+        "Passief transport gaat tegen de gradient in, dat kost juist moeite",
+        "Actief transport verloopt langzamer dan passief transport door de cel",
+        "Bij passief transport wordt de vloeistof verwarmd, en dat kost geen energie",
+        "Actief gaat tegen de gradient in, passief gaat er met de gradient mee"
+       ],
+       "c": 3,
+       "d": 2,
+       "u": "Onthoud: tegen de gradient in kost energie, met de gradient mee gaat vanzelf.",
+       "uo": [
+        "Andersom: juist actief transport gaat tegen de gradient in en kost energie.",
+        "De snelheid is niet de reden; het gaat om de richting ten opzichte van de gradient.",
+        "Verwarmen is niet de reden; passief gaat gratis omdat het met de gradient mee gaat.",
+        "Klopt: actief gaat tegen de gradient in (kost energie), passief gaat ermee mee."
+       ],
+       "uh": "Tegenin kost, met de stroom mee is gratis."
+      },
+      {
+       "v": "Een zoetwatervis leeft in water met weinig opgeloste stof. Wat is het osmose-probleem?",
+       "o": [
+        "De vis verliest voortdurend water aan het omringende water",
+        "Water stroomt de vis in, want zijn lichaam is hypertoon",
+        "Er gebeurt niets, want het water is isotoon met de vis",
+        "De vis moet met veel energie steeds extra water naar binnen pompen"
+       ],
+       "c": 1,
+       "d": 3,
+       "u": "Onthoud: het lichaam van een zoetwatervis is hypertoon, dus water stroomt naar binnen.",
+       "uo": [
+        "Andersom: het lichaam is hypertoon, dus water stroomt juist naar binnen.",
+        "Klopt: het vislichaam is hypertoon, water stroomt door osmose naar binnen.",
+        "Zoet water heeft minder opgeloste stof dan de vis, dus het is niet isotoon.",
+        "De vis krijgt vanzelf al te veel water binnen; extra oppompen is niet nodig."
+       ],
+       "uh": "Zoetwatervis: hypertoon, water stroomt in."
+      },
+      {
+       "v": "Bij een infuus gebruikt men fysiologisch zout (0,9%) in plaats van zuiver water. Waarom?",
+       "o": [
+        "Zuiver water zou de bloedcellen sterk laten krimpen door waterverlies",
+        "Zuiver water is hypertoon en zou de cellen water laten verliezen",
+        "Zuiver water is hypotoon, waardoor bloedcellen opzwellen en barsten",
+        "Fysiologisch zout is hypertoon, zodat de cellen juist water opnemen"
+       ],
+       "c": 2,
+       "d": 3,
+       "u": "Onthoud: fysiologisch zout is isotoon, zodat bloedcellen niet krimpen of barsten.",
+       "uo": [
+        "In zuiver water zouden bloedcellen juist opzwellen, niet krimpen.",
+        "Zuiver water is hypotoon (weinig opgeloste stof), niet hypertoon.",
+        "Klopt: zuiver water is hypotoon, cellen nemen water op, zwellen en kunnen barsten.",
+        "Fysiologisch zout is juist isotoon, zodat er netto geen water in of uit gaat."
+       ],
+       "uh": "Infuus isotoon: cellen blijven heel."
+      },
+      {
+       "v": "Aardappelstaafjes in zuiver water worden zwaarder, die in sterk zout worden lichter. Verklaring?",
+       "o": [
+        "In zuiver water nemen cellen water op (hypotoon); in zout verliezen ze water",
+        "In zuiver water verliezen de cellen juist water door de lage concentratie",
+        "Het zout wordt actief de aardappelcellen ingepompt en maakt ze daardoor zwaarder",
+        "De aardappel neemt in beide oplossingen precies evenveel water op en af"
+       ],
+       "c": 0,
+       "d": 3,
+       "u": "Onthoud: massa stijgt in hypotoon water (opname) en daalt in hypertoon zout (verlies).",
+       "uo": [
+        "Klopt: zuiver water is hypotoon (opname, zwaarder), zout is hypertoon (verlies, lichter).",
+        "In zuiver water nemen de cellen juist water op; ze verliezen het niet.",
+        "Het gewichtsverschil komt door osmose van water, niet door ingepompt zout.",
+        "De massa verandert wel duidelijk: omhoog in water, omlaag in zout."
+       ],
+       "uh": "Zwaarder in zoet, lichter in zout: osmose."
+      },
+      {
+       "v": "Rode bloedcellen zwellen op en knappen in vloeistof X onder de microscoop. Wat weet je over X?",
+       "o": [
+        "Vloeistof X is hypertoon, er zit veel opgeloste stof in",
+        "Vloeistof X is isotoon met het celvocht van de bloedcellen",
+        "In vloeistof X verliezen de cellen door osmose juist veel water",
+        "Vloeistof X is hypotoon, er zit weinig opgeloste stof in"
+       ],
+       "c": 3,
+       "d": 3,
+       "u": "Onthoud: cellen die opzwellen en barsten liggen in een hypotoon milieu.",
+       "uo": [
+        "In een hypertoon milieu zouden de cellen juist krimpen, niet opzwellen.",
+        "In isotoon milieu blijven de cellen gelijk; ze zwellen dan niet op.",
+        "Waterverlies zou krimpen geven; hier nemen de cellen juist water op.",
+        "Klopt: opzwellen en barsten wijst op een hypotoon milieu met weinig opgeloste stof."
+       ],
+       "uh": "Zwellen en barsten = hypotoon milieu."
+      }
+     ],
+     "oe": [
+      {
+       "bron": "Practicum aardappel en zout",
+       "ctx": "Een leerling snijdt drie even zware aardappelstaafjes en legt ze een uur in respectievelijk zuiver water, een zwakke zoutoplossing en een sterke zoutoplossing. Daarna weegt hij ze opnieuw. Het staafje uit zuiver water is zwaarder geworden, het staafje uit de sterke zoutoplossing is duidelijk lichter geworden.",
+       "v": "Verklaar met de begrippen osmose, hypotoon en hypertoon waarom het staafje in zuiver water zwaarder wordt en het staafje in sterk zout lichter wordt.",
+       "o": [
+        ""
+       ],
+       "c": 0,
+       "u": "Het celmembraan is selectief doorlaatbaar, dus water kan er via osmose doorheen. Zuiver water is hypotoon ten opzichte van de aardappelcellen: er zit buiten minder opgeloste stof dan binnen, dus stroomt water de cellen in en wordt het staafje zwaarder. De sterke zoutoplossing is hypertoon: buiten zit meer opgeloste stof dan binnen, dus stroomt water de cellen uit en wordt het staafje lichter. (Kernpunten: [1] water verplaatst zich door osmose naar de kant met meer opgeloste stof; [2] hypotoon geeft wateropname en gewichtstoename, hypertoon geeft waterverlies en gewichtsafname.)"
+      },
+      {
+       "bron": "Microscoop en zoutoplossing",
+       "ctx": "Onder de microscoop bekijkt een leerling cellen uit een waterpestblad. Eerst liggen de cellen in gewoon slootwater en zijn ze mooi groen en stevig gevuld. Daarna brengt de leerling een druppel geconcentreerde zoutoplossing bij het preparaat. Na enkele minuten ziet hij dat de gekleurde inhoud van de cellen zich terugtrekt van de celwand.",
+       "v": "Leg uit welk verschijnsel de leerling ziet en verklaar met osmose waarom de celinhoud zich van de celwand terugtrekt.",
+       "o": [
+        ""
+       ],
+       "c": 0,
+       "u": "De leerling ziet plasmolyse. De zoutoplossing is hypertoon: buiten de cel zit meer opgeloste stof dan binnen. Door osmose stroomt water via het selectief doorlaatbare membraan de cel uit, naar de kant met meer opgeloste stof. Daardoor krimpt de inhoud met het membraan en laat het membraan los van de stevige celwand. (Kernpunten: [1] hypertoon milieu, water verlaat de cel door osmose; [2] het membraan trekt zich los van de celwand: plasmolyse.)"
+      },
+      {
+       "bron": "Casus infuus in het ziekenhuis",
+       "ctx": "In een ziekenhuis krijgt een patient een infuus. In plaats van zuiver water gebruikt de verpleegkundige een fysiologische zoutoplossing van 0,9%, die dezelfde concentratie opgeloste stof heeft als het bloed. Een leerling vraagt zich af waarom er geen zuiver water wordt ingespoten.",
+       "v": "Leg uit wat er met de rode bloedcellen zou gebeuren als er zuiver water werd ingespoten, en waarom fysiologisch zout dat voorkomt.",
+       "o": [
+        ""
+       ],
+       "c": 0,
+       "u": "Zuiver water is hypotoon ten opzichte van de rode bloedcellen: er zit buiten minder opgeloste stof dan binnen. Door osmose zou water de cellen instromen, waardoor ze opzwellen en kunnen barsten. Fysiologisch zout heeft dezelfde concentratie als het bloed en is dus isotoon: er is netto geen waterverplaatsing, zodat de bloedcellen niet opzwellen of krimpen. (Kernpunten: [1] zuiver water is hypotoon, water stroomt in en de cellen barsten; [2] isotoon fysiologisch zout geeft geen netto waterstroom, de cellen blijven heel.)"
+      },
+      {
+       "bron": "Proef met de wortel en mineralen",
+       "ctx": "Een onderzoeker meet dat in de cellen van een plantenwortel de concentratie kaliumionen veel hoger is dan in het bodemwater eromheen. Toch blijft de wortel nog meer kalium uit de bodem opnemen. Als de wortel wordt afgekoeld en er geen ATP meer beschikbaar is, stopt de opname van kalium.",
+       "v": "Verklaar hoe de wortel kalium tegen de concentratiegradient in kan opnemen en waarom de opname stopt zonder ATP.",
+       "o": [
+        ""
+       ],
+       "c": 0,
+       "u": "In de wortelcel zit al meer kalium dan in de bodem, dus opname gaat tegen de concentratiegradient in. Dat kan niet met passief transport of diffusie (die gaan van veel naar weinig), maar via actief transport. Actief transport kost energie in de vorm van ATP. Zonder ATP heeft de cel geen energie meer om kalium tegen de gradient in te pompen, dus stopt de opname. (Kernpunten: [1] opname tegen de gradient in vereist actief transport; [2] actief transport kost ATP, zonder ATP valt de opname stil.)"
+      },
+      {
+       "bron": "Casus slakken en zout",
+       "ctx": "In de tuin strooit iemand zout op een slak. Een slak heeft een vochtige, naakte huid zonder beschermende celwand of schaal op het lichaam. Kort nadat het zout op de slak ligt, verschrompelt het dier en verliest het veel vocht.",
+       "v": "Leg met de begrippen hypertoon en osmose uit waarom de slak vocht verliest en verschrompelt door het zout.",
+       "o": [
+        ""
+       ],
+       "c": 0,
+       "u": "Door het zout ontstaat rond de vochtige huid van de slak een hypertoon milieu: buiten de cellen zit meer opgeloste stof dan binnen. De celmembranen zijn selectief doorlaatbaar voor water. Door osmose stroomt water uit de cellen naar de zoute buitenkant met meer opgeloste stof. De cellen verliezen zo veel water dat het dier verschrompelt en uitdroogt. (Kernpunten: [1] zout maakt de omgeving hypertoon; [2] water verlaat de cellen door osmose naar de kant met meer opgeloste stof, de slak droogt uit.)"
+      }
+     ]
+    },
+    {
+     "id": "M3",
+     "naam": "Enzymwerking",
+     "beschrijving": "Gouden-standaardmodule bi.M.3 Enzymwerking, volledig door de Content Engine geproduceerd: hoofdstuk-samenvatting met clips, 25 snelle-quizvragen R1-R3 incl. transfer en diagnostische per-optie-uitleg, plus oud-examenvragen (open, met modelantwoord).",
+     "ceStatus": "CE+SE",
+     "binas": "",
+     "val": "",
+     "onderwerpen": [
+      "Wat een enzym is (biokatalysator)",
+      "Activeringsenergie",
+      "Optimumtemperatuur & denaturatie",
+      "pH-optimum",
+      "Substraatspecificiteit",
+      "Herbruikbaarheid",
+      "Transfer: onbekend enzym"
+     ],
+     "sam": "Enzymen zijn eiwitten die als biokatalysator reacties in de cel versnellen door de activeringsenergie te verlagen. Ze leveren zelf geen energie en worden niet verbruikt (herbruikbaar). Elk enzym heeft een actief centrum waardoor bepaalde substraten passend binden (substraatspecifiek). Boven de optimumtemperatuur - of bij een extreme pH - denatureert het enzym: de structuur verandert onomkeerbaar en de activiteit daalt.",
+     "sv": [
+      {
+       "v": "Wat is een enzym?",
+       "o": [
+        "Een eiwit dat als biokatalysator reacties versnelt",
+        "Een hormoon dat een signaal in het lichaam doorgeeft",
+        "Een koolhydraat dat de cel van energie voorziet",
+        "Een vetmolecuul in het celmembraan"
+       ],
+       "c": 0,
+       "d": 1,
+       "u": "Een enzym is een eiwit dat als biokatalysator reacties versnelt. Koos je 'hormoon'? Beide 'regelen' iets, maar een hormoon geeft een signaal door; een enzym versnelt een reactie. Onthoud: enzym = eiwit dat de reactiesnelheid verhoogt.",
+       "uo": [
+        "Klopt: een enzym is een eiwit dat als biokatalysator reacties versnelt.",
+        "Een hormoon is een signaalstof die een boodschap doorgeeft; een enzym versnelt juist een reactie. Ze worden verward omdat beide 'iets regelen'.",
+        "Een koolhydraat is brandstof; een enzym levert géén energie, het verlaagt alleen de reactiedrempel. Daarom is het juiste antwoord het eiwit dat reacties versnelt.",
+        "Enzymen zijn eiwitten, geen vetten uit het celmembraan. Het juiste antwoord noemt het eiwit dat reacties versnelt."
+       ],
+       "uh": "Enzym = eiwit dat reacties versnelt. Verwar het niet met een hormoon (signaalstof) of een brandstof."
+      },
+      {
+       "v": "Hoe versnelt een enzym een reactie?",
+       "o": [
+        "Het verwarmt de cel zodat moleculen sneller bewegen",
+        "Het levert zelf extra energie aan de reactie",
+        "Het maakt meer substraat aan om te reageren",
+        "Het verlaagt de activeringsenergie"
+       ],
+       "c": 3,
+       "d": 1,
+       "u": "Een enzym verlaagt de activeringsenergie - de startdrempel van de reactie. Koos je 'levert energie'? Een enzym voegt niets toe; het verlaagt alleen de drempel, daarom gaat de reactie sneller. Onthoud: enzym versnelt is niet hetzelfde als enzym levert energie.",
+       "uo": [
+        "Een enzym verandert de celtemperatuur niet; het werkt bij de bestaande temperatuur. De snelheidswinst komt doordat het de activeringsenergie verlaagt.",
+        "Een enzym levert zélf geen energie - de bekende valkuil. Het verlaagt alleen de startdrempel, dát is het juiste antwoord.",
+        "Een enzym maakt geen extra substraat aan om zichzelf te versnellen; het verlaagt de activeringsenergie van de bestaande reactie.",
+        "Klopt: het enzym verlaagt de activeringsenergie (de startdrempel), waardoor de reactie sneller gaat zonder extra energie."
+       ],
+       "uh": "Een enzym verlaagt de drempel; het levert geen energie."
+      },
+      {
+       "v": "De enzymactiviteit daalt snel boven 40 °C. Wat gebeurt er?",
+       "o": [
+        "Het substraat raakt op, dus de reactie stopt meteen",
+        "Het enzym werkt sneller door de warmte",
+        "Het enzym denatureert en verliest zijn vorm",
+        "Het enzym wordt in de reactie opgebruikt"
+       ],
+       "c": 2,
+       "d": 2,
+       "u": "Boven de optimumtemperatuur denatureert het enzym: het actief centrum verliest zijn vorm en de activiteit daalt. Koos je 'opgebruikt'? Een enzym is herbruikbaar; de daling komt door denaturatie, niet door opraken. Onthoud: de scherpe daling ná de top in de grafiek = denaturatie.",
+       "uo": [
+        "Als het substraat op was, zou de daling niet netjes bij de temperatuur horen; de grafiek koppelt de daling aan de warmte, dus het gaat om denaturatie.",
+        "Meer warmte is niet altijd sneller: voorbij het optimum keert het effect om doordat het enzym denatureert.",
+        "Klopt: boven de optimumtemperatuur denatureert het enzym - het actief centrum verliest zijn vorm en de activiteit daalt.",
+        "Een enzym wordt niet verbruikt (het is herbruikbaar); de daling komt door denaturatie, niet door 'opraken'."
+       ],
+       "uh": "Scherpe daling ná de top in een temperatuurgrafiek = denaturatie, niet 'opraken'."
+      },
+      {
+       "v": "Wat is het verschil tussen optimum en denaturatie?",
+       "o": [
+        "Ze betekenen bij een enzym eigenlijk hetzelfde",
+        "Optimum = beste werking; denaturatie = kapotte vorm",
+        "Bij het optimum denatureert het enzym juist",
+        "Denaturatie hoort bij te lage, optimum bij te hoge temperatuur"
+       ],
+       "c": 1,
+       "d": 2,
+       "u": "Het optimum is de temperatuur met de beste werking; denaturatie is de onomkeerbare vormverandering waardoor de functie wegvalt. Koos je 'hetzelfde'? Dat zijn juist tegengestelde dingen. Onthoud: optimum is niet gelijk aan denaturatie; denaturatie kan door te hoge temperatuur óf extreme pH.",
+       "uo": [
+        "Ze betekenen niet hetzelfde - het zijn juist tegengestelde dingen: goed werken versus kapotgaan.",
+        "Klopt: het optimum is de temperatuur met de beste werking; denaturatie is de onomkeerbare vormverandering waardoor de functie wegvalt.",
+        "Dit wisselt de begrippen om: bij het optimum werkt het enzym het best, erboven denatureert het (niet andersom).",
+        "Denaturatie hoort bij een te hóóg extreem, niet bij te laag; het optimum ligt ertussenin."
+       ],
+       "uh": "Optimum = beste werking; denaturatie = kapotte vorm. Tegengesteld."
+      },
+      {
+       "v": "Wat gebeurt er met het enzym ná de reactie?",
+       "o": [
+        "Het is opgebruikt en verdwijnt uit de cel",
+        "Het verandert zelf in het reactieproduct",
+        "Het komt vrij en werkt opnieuw",
+        "Het valt uiteen in kleinere moleculen"
+       ],
+       "c": 2,
+       "d": 1,
+       "u": "Het enzym komt onveranderd vrij en werkt opnieuw. Koos je 'opgebruikt'? De hardnekkigste enzym-misvatting - juist omdat het niet verandert kan één molecuul heel veel reacties versnellen. Onthoud: een enzym wordt niet verbruikt.",
+       "uo": [
+        "De bekende misvatting: een enzym raakt niet op. Het doet mee maar verandert zelf niet, dus het komt onveranderd vrij.",
+        "Het enzym máákt het product, maar wórdt het niet; het komt onveranderd vrij en werkt opnieuw.",
+        "Klopt: het enzym komt onveranderd vrij en werkt opnieuw - daarom kan één molecuul veel reacties versnellen.",
+        "Het enzym valt niet uiteen; het substraat wordt omgezet en het enzym blijft heel en herbruikbaar."
+       ],
+       "uh": "Een enzym wordt niet verbruikt; het komt onveranderd vrij."
+      },
+      {
+       "v": "Waarom breekt amylase wel zetmeel af, maar geen eiwit?",
+       "o": [
+        "Eiwitten zijn te klein voor het actief centrum",
+        "Zetmeel past qua vorm in het actief centrum",
+        "Amylase werkt alleen bij een zeer hoge pH",
+        "Amylase is bij eiwit al opgebruikt geraakt"
+       ],
+       "c": 1,
+       "d": 2,
+       "u": "Zetmeel past qua vorm in het actief centrum van amylase; een eiwit past er niet in (substraatspecificiteit). Koos je 'te klein'? Het gaat om de vorm, niet om de grootte. Onthoud: een enzym herkent zijn substraat aan de vorm - denk niet in 'één enzym, één stof', maar in een passende vorm.",
+       "uo": [
+        "Het gaat niet om grootte maar om vórm: een eiwit past simpelweg niet in het actief centrum van amylase.",
+        "Klopt: de vorm van zetmeel past in het actief centrum van amylase; een eiwit past er niet in (substraatspecificiteit).",
+        "pH speelt wel een rol bij enzymen, maar verklaart niet waarom amylase wél zetmeel en géén eiwit afbreekt - dat is de vorm.",
+        "Amylase raakt niet 'op' bij eiwit; het past er gewoon niet op door de vorm van het actief centrum."
+       ],
+       "uh": "Substraatspecificiteit gaat over vórm, niet over grootte."
+      },
+      {
+       "v": "Na verhitting tot 60 °C werkt een enzym niet meer, ook niet na afkoelen. Waarom?",
+       "o": [
+        "Bij 37 °C is het optimum nog niet bereikt",
+        "Het substraat is bij 60 °C opgeraakt",
+        "De hoge temperatuur remt het enzym tijdelijk af",
+        "Het enzym is gedenatureerd; dat is onomkeerbaar"
+       ],
+       "c": 3,
+       "d": 3,
+       "u": "Bij 60 °C is het enzym gedenatureerd; die vormverandering van het actief centrum is onomkeerbaar, dus afkoelen herstelt de werking niet. Het werkte al goed bij 37 °C, dus de temperatuur zelf is niet de oorzaak - er is iets blijvends veranderd. Onthoud: denaturatie door hitte is geen tijdelijke rem.",
+       "uo": [
+        "Het enzym wérkte al goed bij 37 °C, dus het optimum wás bereikt; er is iets blijvends veranderd - denaturatie.",
+        "Een opgeraakt substraat verklaart niet waarom terugkoelen niet helpt; de kern is de onomkeerbare denaturatie van het enzym.",
+        "Denaturatie door hitte is geen tijdelijke rem: de vorm van het actief centrum is kapot en komt niet vanzelf terug.",
+        "Klopt: bij 60 °C is het enzym gedenatureerd; die vormverandering is onomkeerbaar, dus afkoelen herstelt de werking niet."
+       ],
+       "uh": "Denaturatie door hitte is onomkeerbaar; afkoelen herstelt niet."
+      },
+      {
+       "v": "Pepsine werkt bij pH 2, maar niet bij pH 7. Waarom?",
+       "o": [
+        "Pepsine heeft een zuur pH-optimum; pH 7 ligt te ver weg",
+        "Bij pH 7 is de pepsine opgeraakt",
+        "Pepsine werkt alleen bij lichaamstemperatuur, niet bij pH 7",
+        "pH heeft geen invloed op enzymen"
+       ],
+       "c": 0,
+       "d": 2,
+       "u": "Elk enzym heeft een eigen optimum-pH; pH 7 ligt te ver van het zure optimum van pepsine (maag ~pH 2), dus het werkt daar bijna niet. Koos je 'opgeraakt'? Weer de verbruikt-misvatting - het enzym raakt niet op, het werkt alleen niet bij deze pH. Onthoud: net als temperatuur heeft pH een optimum.",
+       "uo": [
+        "Klopt: elk enzym heeft een eigen optimum-pH; pH 7 ligt te ver van het zure optimum van pepsine, dus het werkt daar bijna niet.",
+        "Pepsine raakt niet op bij pH 7 (de verbruikt-misvatting); het wérkt daar alleen niet omdat de pH te ver van het optimum ligt.",
+        "De vraag varieert de pH, niet de temperatuur; de verklaring moet dus over de pH gaan.",
+        "pH heeft juist wél invloed: net als temperatuur heeft elk enzym een optimum-pH waarbuiten de activiteit daalt."
+       ],
+       "uh": "pH heeft een optimum, net als temperatuur; ver ervan af daalt de activiteit."
+      },
+      {
+       "v": "Wat betekent het dat een enzym een biokatalysator is?",
+       "o": [
+        "Het versnelt een reactie zonder zelf verbruikt te worden",
+        "Het levert energie voor een reactie",
+        "Het is een katalysator van metaal",
+        "Het vertraagt een reactie in de cel"
+       ],
+       "c": 0,
+       "d": 1,
+       "u": "Onthoud: bio = in het lichaam, katalysator = versnelt zonder zelf op te raken.",
+       "uo": [
+        "Klopt: een biokatalysator versnelt en komt onveranderd vrij.",
+        "Een enzym levert geen energie; het verlaagt de drempel.",
+        "'Bio' betekent van eiwit / in een organisme, niet van metaal.",
+        "Een katalysator versnelt juist; vertragen is het tegenovergestelde."
+       ],
+       "uh": "Biokatalysator = versnelt een reactie, raakt zelf niet op."
+      },
+      {
+       "v": "Tot welke groep stoffen behoren vrijwel alle enzymen?",
+       "o": [
+        "Vetten",
+        "Koolhydraten",
+        "Zouten",
+        "Eiwitten"
+       ],
+       "c": 3,
+       "d": 1,
+       "u": "Onthoud: enzymen zijn eiwitten.",
+       "uo": [
+        "Enzymen zijn geen vetten (die zitten o.a. in het celmembraan).",
+        "Koolhydraten zijn brandstof/bouwstof, geen enzymen.",
+        "Zouten werken niet als enzym.",
+        "Klopt: enzymen zijn opgebouwd uit aminozuren, dus eiwitten."
+       ],
+       "uh": "Enzym = eiwit."
+      },
+      {
+       "v": "Hoe heet de plek op het enzym waar het substraat bindt?",
+       "o": [
+        "Het celmembraan",
+        "Het ribosoom",
+        "Het actief centrum",
+        "De celkern met het DNA erin"
+       ],
+       "c": 2,
+       "d": 1,
+       "u": "Onthoud: het substraat past in het actief centrum.",
+       "uo": [
+        "Het celmembraan is de celgrens, niet de bindplaats op het enzym.",
+        "Een ribosoom maakt eiwitten; niet de bindplaats voor het substraat.",
+        "Klopt: het substraat bindt in het actief centrum.",
+        "De celkern bevat DNA, niet de bindplaats van het enzym."
+       ],
+       "uh": "Substraat bindt in het actief centrum."
+      },
+      {
+       "v": "Waarom kan een kleine hoeveelheid enzym veel substraat omzetten?",
+       "o": [
+        "Omdat het enzym telkens groter wordt",
+        "Omdat het enzym herbruikbaar is en niet opraakt",
+        "Omdat het enzym in product verandert",
+        "Omdat het enzym energie levert"
+       ],
+       "c": 1,
+       "d": 1,
+       "u": "Onthoud: één enzymmolecuul doet veel reacties achter elkaar.",
+       "uo": [
+        "Het enzym wordt niet groter; het blijft gelijk.",
+        "Klopt: het enzym komt onveranderd vrij en werkt opnieuw.",
+        "Het enzym maakt het product, maar wordt het niet.",
+        "Een enzym levert geen energie; het is herbruikbaar."
+       ],
+       "uh": "Enzym is herbruikbaar, raakt niet op."
+      },
+      {
+       "v": "Bij vaste enzymhoeveelheid en steeds meer substraat vlakt de reactiesnelheid af. Waarom?",
+       "o": [
+        "Alle actieve centra zijn bezet",
+        "Het substraat is op",
+        "De enzymen denatureren",
+        "De temperatuur in het mengsel daalt"
+       ],
+       "c": 0,
+       "d": 2,
+       "u": "Onthoud: bij verzadiging zijn alle enzymen bezig; meer substraat helpt dan niet.",
+       "uo": [
+        "Klopt: als alle actieve centra bezet zijn, verhoogt meer substraat de snelheid niet.",
+        "Er is juist steeds meer substraat, dat is niet op.",
+        "Temperatuur/pH veranderen niet, dus denaturatie is hier niet de oorzaak.",
+        "De temperatuur speelt hier geen rol."
+       ],
+       "uh": "Snelheid vlakt af = alle enzymen bezet (verzadiging)."
+      },
+      {
+       "v": "Wat is de activeringsenergie van een reactie?",
+       "o": [
+        "De energie die vrijkomt bij de reactie",
+        "De drempel die nodig is om de reactie te starten",
+        "De warmte van de cel",
+        "De energie in het product"
+       ],
+       "c": 1,
+       "d": 1,
+       "u": "Onthoud: activeringsenergie = startdrempel; het enzym verlaagt die.",
+       "uo": [
+        "Dat is de uitkomst van de reactie, niet de startdrempel.",
+        "Klopt: de activeringsenergie is de drempel om de reactie te starten.",
+        "De celtemperatuur is niet de activeringsenergie.",
+        "De energie in het product is een uitkomst, geen startdrempel."
+       ],
+       "uh": "Activeringsenergie = startdrempel van de reactie."
+      },
+      {
+       "v": "In een energiediagram is de 'berg' met enzym lager dan zonder. Wat betekent dat?",
+       "o": [
+        "Het enzym verlaagt de activeringsenergie",
+        "Het enzym levert extra energie",
+        "De reactie geeft minder product",
+        "Het enzym verhoogt de temperatuur van de cel"
+       ],
+       "c": 0,
+       "d": 2,
+       "u": "Onthoud: lagere berg = lagere activeringsenergie = snellere reactie.",
+       "uo": [
+        "Klopt: een lagere berg = lagere startdrempel = snellere reactie.",
+        "De berg is de drempel, geen energie die het enzym toevoegt.",
+        "De hoeveelheid product verandert niet door een lagere drempel.",
+        "De berg gaat over energie, niet over temperatuur."
+       ],
+       "uh": "Lagere berg in een energiediagram = lagere activeringsenergie."
+      },
+      {
+       "v": "Wat gebeurt er met de enzymactiviteit bij de mens als de temperatuur van 20 naar 37 °C stijgt?",
+       "o": [
+        "Die daalt",
+        "Die blijft gelijk",
+        "Die stijgt",
+        "Het enzym denatureert meteen"
+       ],
+       "c": 2,
+       "d": 1,
+       "u": "Onthoud: tot het optimum stijgt de activiteit met de temperatuur.",
+       "uo": [
+        "Onder het optimum daalt de activiteit niet; ze stijgt.",
+        "De activiteit is temperatuurafhankelijk en verandert wel.",
+        "Klopt: tot de optimumtemperatuur (~37 °C) neemt de activiteit toe.",
+        "Denaturatie treedt pas boven het optimum op, niet bij 37 °C."
+       ],
+       "uh": "Tot het optimum: hogere temperatuur = hogere activiteit."
+      },
+      {
+       "v": "Wat betekent 'denatureren' bij een enzym?",
+       "o": [
+        "Het enzym wordt sneller",
+        "Het enzym maakt meer product",
+        "Het enzym bindt meer substraat",
+        "De ruimtelijke structuur verandert en de functie valt weg"
+       ],
+       "c": 3,
+       "d": 1,
+       "u": "Onthoud: denatureren = vorm/structuur kapot, functie weg.",
+       "uo": [
+        "Denaturatie maakt het enzym niet sneller; het werkt juist niet meer.",
+        "Een gedenatureerd enzym maakt juist geen product meer.",
+        "Bij denaturatie kan het substraat juist niet meer binden.",
+        "Klopt: de ruimtelijke structuur verandert, het actief centrum verliest zijn vorm."
+       ],
+       "uh": "Denatureren = structuur verandert, functie verdwijnt."
+      },
+      {
+       "v": "Bij hoge koorts (42 °C) werken veel enzymen slechter. Wat is de reden?",
+       "o": [
+        "De enzymen beginnen te denatureren",
+        "Er is plotseling te weinig substraat aanwezig",
+        "De enzymen worden opgebruikt",
+        "De pH wordt te hoog"
+       ],
+       "c": 0,
+       "d": 3,
+       "u": "Onthoud: boven ~37 °C begint denaturatie - daarom is hoge koorts gevaarlijk.",
+       "uo": [
+        "Klopt: 42 °C ligt boven het optimum, waardoor enzymen denatureren.",
+        "De hoeveelheid substraat verandert niet door koorts.",
+        "Enzymen worden niet opgebruikt; de oorzaak is denaturatie.",
+        "Koorts verandert de temperatuur, niet direct de pH."
+       ],
+       "uh": "Boven ~37 °C beginnen enzymen te denatureren."
+      },
+      {
+       "v": "Een wasmiddel met enzymen reinigt goed op 40 °C, maar slecht op 90 °C. Hoe komt dat?",
+       "o": [
+        "Bij 90 °C is er geen vuil meer",
+        "Bij 40 °C werken enzymen niet",
+        "Enzymen lossen op in water",
+        "Bij 90 °C zijn de enzymen gedenatureerd"
+       ],
+       "c": 3,
+       "d": 3,
+       "u": "Onthoud: te hoge temperatuur denatureert de was-enzymen.",
+       "uo": [
+        "Vuil verdwijnt niet vanzelf bij 90 °C.",
+        "Bij 40 °C werken de enzymen juist goed (rond hun optimum).",
+        "Oplossen is niet het punt; ze denatureren door de hitte.",
+        "Klopt: bij 90 °C zijn de enzymen gedenatureerd en reinigen ze niet meer."
+       ],
+       "uh": "Te heet wassen = was-enzymen denatureren."
+      },
+      {
+       "v": "Wat geldt WEL na denaturatie door hitte, maar NIET bij een tijdelijk te lage temperatuur?",
+       "o": [
+        "Het enzym werkt daarna weer bij de optimumtemperatuur",
+        "Het substraat verandert",
+        "De pH verandert",
+        "De schade is onomkeerbaar"
+       ],
+       "c": 3,
+       "d": 2,
+       "u": "Onthoud: koude remt tijdelijk; hitte-denaturatie is blijvend.",
+       "uo": [
+        "Na hitte-denaturatie werkt het enzym niet meer, ook niet bij het optimum.",
+        "Het substraat verandert in beide gevallen niet.",
+        "De pH verandert hier niet; het gaat om onomkeerbaarheid.",
+        "Klopt: hitte-denaturatie is onomkeerbaar; te koud remt slechts tijdelijk."
+       ],
+       "uh": "Hitte-denaturatie is onomkeerbaar; kou remt tijdelijk."
+      },
+      {
+       "v": "Enzym X heeft een optimum-pH van 9. In welk milieu werkt het het best?",
+       "o": [
+        "Zuur",
+        "Neutraal",
+        "Basisch",
+        "Bij elke pH gelijk"
+       ],
+       "c": 2,
+       "d": 2,
+       "u": "Onthoud: pH 9 ligt boven 7, dus basisch.",
+       "uo": [
+        "pH 9 is niet zuur; zuur is onder pH 7.",
+        "pH 9 is niet neutraal; neutraal is pH 7.",
+        "Klopt: pH 9 ligt boven 7, dat is basisch.",
+        "Enzymactiviteit hangt sterk van de pH af; niet overal gelijk."
+       ],
+       "uh": "pH < 7 zuur, 7 neutraal, > 7 basisch."
+      },
+      {
+       "v": "Leg je leverstukjes in waterstofperoxide, dan borrelt het hevig (enzym katalase). Wat toont dit vooral?",
+       "o": [
+        "Dat de lever waterstofperoxide maakt",
+        "Dat het enzym wordt opgebruikt",
+        "Dat de temperatuur stijgt",
+        "Dat het enzym de afbraak van waterstofperoxide versnelt"
+       ],
+       "c": 3,
+       "d": 3,
+       "u": "Onthoud: het borrelen (zuurstof) laat zien dat het enzym de reactie versnelt.",
+       "uo": [
+        "De lever maakt het H2O2 niet aan; het enzym breekt het af.",
+        "Het enzym raakt niet op; het blijft borrelen zolang er substraat is.",
+        "Er ontstaat hooguit wat warmte; het borrelen komt door de versnelde reactie.",
+        "Klopt: het vrijkomende gas (zuurstof) toont dat katalase de afbraak versnelt."
+       ],
+       "uh": "Borrelen = enzym versnelt de afbraak (zuurstof komt vrij)."
+      },
+      {
+       "v": "Welke uitspraak over enzymen is juist?",
+       "o": [
+        "Een enzym levert de energie voor een reactie",
+        "Een enzym verlaagt de activeringsenergie",
+        "Een enzym verhoogt de activeringsenergie",
+        "Een enzym stopt reacties"
+       ],
+       "c": 1,
+       "d": 1,
+       "u": "Onthoud: enzym = drempel omlaag, niet energie erbij.",
+       "uo": [
+        "Een enzym levert geen energie; het verlaagt de drempel.",
+        "Klopt: het enzym verlaagt de activeringsenergie.",
+        "Het verhoogt de drempel niet; het verlaagt hem juist.",
+        "Een enzym versnelt reacties, het stopt ze niet."
+       ],
+       "uh": "Enzym verlaagt de activeringsenergie."
+      },
+      {
+       "v": "Lactase splitst lactose, maar niet sacharose. Wat is de beste verklaring?",
+       "o": [
+        "Sacharose is te groot voor elk enzym",
+        "De vorm van lactose past in het actief centrum, die van sacharose niet",
+        "Lactase werkt alleen bij een hoge temperatuur",
+        "Sacharose bevat geen energie"
+       ],
+       "c": 1,
+       "d": 2,
+       "u": "Onthoud: substraatspecificiteit - de vorm bepaalt wat past.",
+       "uo": [
+        "Grootte is niet de reden, en 'elk enzym' klopt niet; het gaat om de vorm.",
+        "Klopt: door de vorm van het actief centrum past lactose wel en sacharose niet.",
+        "Temperatuur is niet de reden dat sacharose niet gesplitst wordt.",
+        "Of sacharose energie bevat, verandert niets aan het passen."
+       ],
+       "uh": "Specificiteit = de vorm van het actief centrum bepaalt het substraat."
+      },
+      {
+       "v": "In een activiteit–temperatuurgrafiek ligt de piek bij 50 °C. Wat is die 50 °C?",
+       "o": [
+        "De denaturatietemperatuur",
+        "De temperatuur waarbij het enzym stopt",
+        "De optimumtemperatuur",
+        "De pH van het enzym"
+       ],
+       "c": 2,
+       "d": 2,
+       "u": "Onthoud: de piek in de grafiek = de optimumtemperatuur.",
+       "uo": [
+        "Denaturatie hoort bij de daling ná de piek, niet bij de piek zelf.",
+        "Bij de piek werkt het enzym juist het best, het stopt daar niet.",
+        "Klopt: de piek is de temperatuur met de hoogste activiteit, de optimumtemperatuur.",
+        "50 °C is een temperatuur, geen pH."
+       ],
+       "uh": "Piek in een temperatuurgrafiek = optimumtemperatuur."
+      }
+     ],
+     "oe": [
+      {
+       "jaar": 2007,
+       "tijdvak": 1,
+       "bron": "CE 2007 T1",
+       "ctx": "Kikkers zijn koudbloedige dieren: hun lichaamstemperatuur volgt de temperatuur van de omgeving. In deze examenvraag gaat het om enzymen die in het lichaam van de kikker reacties versnellen. (Context door Slagio kort samengevat; de vraag en het kernantwoord komen uit het echte examen.)",
+       "v": "Waardoor werken in de kikkers deze enzymen in de zomer sneller dan in de winter?",
+       "o": [
+        ""
+       ],
+       "c": 0,
+       "u": "Doordat het in de zomer warmer is: bij een hogere temperatuur werken enzymen sneller, tot aan hun optimumtemperatuur. (Kernpunt uit het correctievoorschrift: hogere temperatuur in de zomer.)"
+      },
+      {
+       "bron": "Practicum katalase",
+       "ctx": "Leverweefsel bevat het enzym katalase, dat waterstofperoxide (H2O2) afbreekt tot water en zuurstof. Een leerling doet in vijf reageerbuizen evenveel waterstofperoxide. In elke buis komt een even groot stukje lever, maar elk stukje is eerst op een andere temperatuur gehouden: 5 °C, 20 °C, 37 °C, 70 °C en 100 °C. Daarna meet de leerling hoeveel zuurstof er per minuut vrijkomt (hoe hevig het borrelt). Bij 37 °C borrelt het het hevigst. Bij 70 °C en 100 °C gebeurt er vrijwel niets meer, ook niet nadat de leverstukjes weer zijn afgekoeld naar 37 °C.",
+       "v": "Verklaar waarom bij 70 °C en 100 °C vrijwel geen zuurstof meer vrijkomt, en waarom afkoelen naar 37 °C de werking niet herstelt. Gebruik in je uitleg het begrip denaturatie.",
+       "o": [
+        ""
+       ],
+       "c": 0,
+       "u": "Bij 70 °C en 100 °C ligt de temperatuur ver boven de optimumtemperatuur van katalase. Daardoor is het enzym gedenatureerd: de ruimtelijke structuur (en dus de vorm van het actief centrum) is veranderd, zodat het substraat niet meer past en de reactie niet meer versneld wordt. Deze vormverandering is onomkeerbaar, dus na afkoelen naar 37 °C krijgt het enzym zijn oorspronkelijke vorm niet terug en blijft de werking weg. (Kernpunten: [1] boven de optimumtemperatuur treedt denaturatie op / actief centrum verliest zijn vorm; [2] denaturatie is onomkeerbaar, daarom herstelt afkoelen de werking niet.)"
+      },
+      {
+       "bron": "Practicum amylase",
+       "ctx": "Amylase is een enzym in speeksel dat zetmeel afbreekt. Zetmeel kleurt blauwzwart met jodium; de afbraakproducten doen dat niet. Een leerling mengt amylase met een zetmeeloplossing en druppelt elke minuut een beetje van het mengsel in jodium. In het begin wordt de druppel blauwzwart, maar na een paar minuten blijft de kleur geelbruin. Als de leerling het experiment herhaalt met amylase dat eerst vijf minuten heeft gekookt, blijft de druppel de hele tijd blauwzwart.",
+       "v": "Leg uit waarom de druppel na enkele minuten niet meer blauwzwart wordt bij het gewone amylase, maar wel de hele tijd blauwzwart blijft bij het gekookte amylase.",
+       "o": [
+        ""
+       ],
+       "c": 0,
+       "u": "Bij het gewone amylase breekt het enzym het zetmeel af tot kleinere producten. Die producten kleuren niet meer met jodium, dus na enkele minuten is (bijna) al het zetmeel weg en blijft de druppel geelbruin. Het gekookte amylase is door de hoge temperatuur gedenatureerd: het actief centrum heeft zijn vorm verloren, waardoor het zetmeel niet meer kan binden en niet wordt afgebroken. Het zetmeel blijft dan aanwezig, dus de druppel blijft de hele tijd blauwzwart. (Kernpunten: [1] werkend amylase breekt zetmeel af, afbraakproducten kleuren niet met jodium; [2] gekookt amylase is gedenatureerd en breekt geen zetmeel af.)"
+      },
+      {
+       "bron": "Toepassing lactose-vrije melk",
+       "ctx": "Sommige mensen kunnen melksuiker (lactose) slecht verteren. De industrie maakt lactose-vrije melk met het enzym lactase, dat lactose splitst in glucose en galactose. In een fabriek zit het lactase vast in kleine bolletjes in een kolom. De melk stroomt langs de bolletjes naar beneden en komt er lactose-vrij uit. De bolletjes met lactase kunnen daarna dagenlang opnieuw worden gebruikt. Lactase splitst wel lactose, maar geen sacharose (gewone suiker).",
+       "v": "Leg met de eigenschappen van enzymen uit (a) waarom de bolletjes met lactase steeds opnieuw gebruikt kunnen worden en (b) waarom lactase wel lactose maar geen sacharose splitst.",
+       "o": [
+        ""
+       ],
+       "c": 0,
+       "u": "(a) Een enzym is een biokatalysator: het versnelt de reactie maar wordt zelf niet verbruikt en komt na de reactie onveranderd vrij. Daardoor kan hetzelfde lactase telkens opnieuw een lactosemolecuul splitsen, en blijven de bolletjes dagenlang bruikbaar. (b) Enzymen zijn substraatspecifiek: alleen een substraat waarvan de vorm in het actief centrum past, wordt gebonden en omgezet. De vorm van lactose past in het actief centrum van lactase, die van sacharose niet, dus sacharose wordt niet gesplitst. (Kernpunten: [1] enzym wordt niet verbruikt / is herbruikbaar; [2] substraatspecificiteit: alleen de passende vorm bindt in het actief centrum.)"
+      },
+      {
+       "bron": "Grafiek reactiesnelheid",
+       "ctx": "Een onderzoeker meet de reactiesnelheid van een enzym bij een vaste hoeveelheid enzym en steeds meer substraat. In het begin stijgt de reactiesnelheid sterk als er meer substraat is. Bij hoge substraatconcentraties stijgt de snelheid niet meer: de grafiek loopt vlak (er ontstaat een plateau). De temperatuur en de pH blijven tijdens de hele proef gelijk.",
+       "v": "Leg uit waarom de reactiesnelheid bij hoge substraatconcentraties niet verder toeneemt, ook al is er nog meer substraat aanwezig.",
+       "o": [
+        ""
+       ],
+       "c": 0,
+       "u": "Bij hoge substraatconcentraties zijn op elk moment alle actieve centra van de enzymen bezet met substraat; de enzymen werken dan op volle capaciteit (verzadiging). Extra substraat moet wachten tot een actief centrum vrijkomt en kan de snelheid dus niet verder verhogen. Omdat de hoeveelheid enzym vast is, bepaalt die de maximale snelheid. Denaturatie is niet de oorzaak, want temperatuur en pH blijven gelijk. (Kernpunten: [1] alle actieve centra bezet / enzymen verzadigd; [2] de vaste hoeveelheid enzym begrenst de maximale snelheid.)"
+      },
+      {
+       "bron": "Spijsvertering en pH",
+       "ctx": "In de maag heerst een zure omgeving (ongeveer pH 2). Daar werkt het eiwitsplitsende enzym pepsine, dat een pH-optimum rond pH 2 heeft. Verderop, in de dunne darm, is het milieu juist basisch (ongeveer pH 8). Daar werkt het eiwitsplitsende enzym trypsine, met een pH-optimum rond pH 8. Als je pepsine in de dunne darm zou brengen, breekt het daar nauwelijks eiwit af.",
+       "v": "Leg uit waarom pepsine in de dunne darm nauwelijks eiwit afbreekt, terwijl trypsine daar juist goed werkt. Betrek de pH in je antwoord.",
+       "o": [
+        ""
+       ],
+       "c": 0,
+       "u": "Elk enzym heeft een eigen pH-optimum: de pH waarbij het de juiste vorm (met een passend actief centrum) heeft en het best werkt. De pH van de dunne darm (ongeveer 8) ligt ver van het zure optimum van pepsine (ongeveer 2), waardoor pepsine daar zijn goede vorm verliest en nauwelijks eiwit afbreekt. Trypsine heeft juist een optimum rond pH 8, dus in de dunne darm heeft het wel de juiste vorm en werkt het goed. (Kernpunten: [1] pH dunne darm ligt ver van pepsines zure optimum, daardoor werkt pepsine er slecht; [2] pH dunne darm ligt bij trypsines optimum, daardoor werkt trypsine er goed.)"
+      },
+      {
+       "bron": "Enzymen in wasmiddel",
+       "ctx": "In veel wasmiddelen zitten enzymen, zoals protease (breekt eiwitvlekken af, bijvoorbeeld bloed en ei) en lipase (breekt vetvlekken af). Op de verpakking staat dat je met dit wasmiddel het best wast op 40 °C. Een gebruiker wast een sterk vervuild kledingstuk juist op 90 °C en merkt dat de eiwitvlekken minder goed verdwijnen dan bij 40 °C.",
+       "v": "Verklaar waarom de eiwitvlekken bij 90 °C minder goed verdwijnen dan bij 40 °C, ook al is heter water meestal beter voor het reinigen.",
+       "o": [
+        ""
+       ],
+       "c": 0,
+       "u": "De reinigende werking komt hier vooral van de enzymen (protease), die de eiwitvlekken afbreken. Bij ongeveer 40 °C zitten deze enzymen rond hun optimumtemperatuur en werken ze goed. Bij 90 °C ligt de temperatuur ver boven het optimum, waardoor de enzymen denatureren: hun actief centrum verliest zijn vorm en ze kunnen de eiwitvlekken niet meer afbreken. Daarom verdwijnen de eiwitvlekken bij 90 °C juist minder goed. (Kernpunten: [1] bij 40 °C werken de enzymen rond hun optimum; [2] bij 90 °C denatureren de enzymen, waardoor ze de vlekken niet meer afbreken.)"
+      }
+     ],
+     "begrippen": [
+      {
+       "t": "Enzym",
+       "d": "Een eiwit dat als biokatalysator een reactie in de cel versnelt zonder zelf verbruikt te worden."
+      },
+      {
+       "t": "Biokatalysator",
+       "d": "Een stof die in een organisme een reactie versnelt en er zelf onveranderd uit komt."
+      },
+      {
+       "t": "Activeringsenergie",
+       "d": "De energiedrempel die nodig is om een reactie te laten starten; een enzym verlaagt deze."
+      },
+      {
+       "t": "Actief centrum",
+       "d": "De plek op het enzym met een specifieke vorm waar het substraat op past en bindt."
+      },
+      {
+       "t": "Substraat",
+       "d": "De stof die in het actief centrum past en door het enzym wordt omgezet."
+      },
+      {
+       "t": "Substraatspecificiteit",
+       "d": "Een enzym zet vooral die substraten om waarvan de vorm in het actief centrum past."
+      },
+      {
+       "t": "Optimumtemperatuur",
+       "d": "De temperatuur waarbij een enzym het snelst werkt; erboven daalt de activiteit."
+      },
+      {
+       "t": "Denaturatie",
+       "d": "De onomkeerbare verandering van de ruimtelijke structuur van een enzym, waardoor het actief centrum zijn vorm en functie verliest."
+      },
+      {
+       "t": "pH-optimum",
+       "d": "De zuurgraad waarbij een enzym het best werkt; ver daarvan af daalt de activiteit."
+      },
+      {
+       "t": "Herbruikbaarheid",
+       "d": "Na de reactie komt het enzym onveranderd vrij, zodat het opnieuw kan werken."
+      }
+     ]
+    },
+    {
+     "id": "M4",
+     "naam": "Fotosynthese & celademhaling",
+     "beschrijving": "Gouden-standaardmodule bi.M.2: hoe planten glucose opbouwen met licht (fotosynthese) en hoe cellen glucose met zuurstof afbreken voor energie (celademhaling), incl. assimilatie/dissimilatie en gisting.",
+     "ceStatus": "CE",
+     "onderwerpen": [
+      "Fotosynthese (opbouw glucose)",
+      "Celademhaling (afbraak glucose)",
+      "Bladgroenkorrel & mitochondrium",
+      "Assimilatie vs dissimilatie",
+      "Anaerobe dissimilatie (gisting)",
+      "Gasuitwisseling & beperkende factoren"
+     ],
+     "sam": "Bij fotosynthese bouwt een plant glucose op uit CO2 en water met behulp van lichtenergie; dit gebeurt in de bladgroenkorrels en levert zuurstof op. Bij celademhaling breken cellen glucose met zuurstof af tot CO2 en water, waarbij energie vrijkomt; dit gebeurt in de mitochondriën. De producten van het ene proces zijn de grondstoffen van het andere. Zonder zuurstof verloopt de afbraak onvolledig (anaerobe dissimilatie of gisting) en levert veel minder energie op.",
+     "begrippen": [
+      {
+       "t": "Fotosynthese",
+       "d": "Opbouw van glucose uit CO2 en water met lichtenergie; gebeurt in de bladgroenkorrels."
+      },
+      {
+       "t": "Celademhaling",
+       "d": "Afbraak van glucose met zuurstof tot CO2 en water, waarbij energie vrijkomt; gebeurt in de mitochondrien."
+      },
+      {
+       "t": "Bladgroenkorrel",
+       "d": "Celorganel met bladgroen waarin de fotosynthese plaatsvindt."
+      },
+      {
+       "t": "Bladgroen",
+       "d": "De groene kleurstof die de lichtenergie voor de fotosynthese opvangt."
+      },
+      {
+       "t": "Glucose",
+       "d": "Energierijke suiker die bij fotosynthese wordt gemaakt en bij celademhaling wordt afgebroken."
+      },
+      {
+       "t": "Mitochondrium",
+       "d": "Celorganel waarin glucose met zuurstof wordt afgebroken en energie vrijkomt."
+      },
+      {
+       "t": "Assimilatie",
+       "d": "Opbouw van complexe stoffen uit eenvoudige, zoals bij de fotosynthese."
+      },
+      {
+       "t": "Dissimilatie",
+       "d": "Afbraak van complexe stoffen waarbij energie vrijkomt, zoals bij de celademhaling."
+      },
+      {
+       "t": "Anaerobe dissimilatie",
+       "d": "Afbraak van glucose zonder zuurstof (gisting); levert veel minder energie, met melkzuur of alcohol als restproduct."
+      },
+      {
+       "t": "Huidmondje",
+       "d": "Opening in het blad waardoor CO2 naar binnen en zuurstof en waterdamp naar buiten gaan."
+      },
+      {
+       "t": "Beperkende factor",
+       "d": "De factor (licht, CO2 of temperatuur) die op dat moment de fotosynthesesnelheid begrenst."
+      },
+      {
+       "t": "Compensatiepunt",
+       "d": "De lichtsterkte waarbij fotosynthese en celademhaling elkaar precies opheffen."
+      }
+     ],
+     "sv": [
+      {
+       "v": "Wat is fotosynthese?",
+       "o": [
+        "De opbouw van glucose uit CO2 en water met lichtenergie",
+        "De afbraak van glucose waarbij warmte en veel energie vrijkomen",
+        "De opname van zuurstof door de wortels",
+        "Het verdampen van water via de bladeren"
+       ],
+       "c": 0,
+       "d": 1,
+       "u": "Fotosynthese is de opbouw van glucose uit CO2 en water met lichtenergie. Koos je 'afbraak van glucose'? Dat is juist celademhaling, het tegenovergestelde. Onthoud: foto = licht, synthese = opbouw.",
+       "uo": [
+        "Klopt: met lichtenergie bouwt de plant glucose op uit CO2 en water.",
+        "Dat is celademhaling (afbraak, energie vrij), juist het omgekeerde van fotosynthese.",
+        "Zuurstofopname hoort bij ademhaling; fotosynthese geeft juist zuurstof af.",
+        "Waterverdamping is verdamping, geen opbouw van glucose."
+       ],
+       "uh": "Foto = licht, synthese = opbouw: glucose maken met licht."
+      },
+      {
+       "v": "Wat gebeurt er bij celademhaling?",
+       "o": [
+        "Er wordt glucose opgebouwd uit koolstofdioxide",
+        "Lichtenergie wordt door bladgroen ingevangen",
+        "Water wordt met behulp van licht gesplitst",
+        "Glucose wordt met zuurstof afgebroken en levert energie"
+       ],
+       "c": 3,
+       "d": 1,
+       "u": "Bij celademhaling wordt glucose met zuurstof afgebroken en komt energie vrij. Koos je 'glucose opbouwen'? Dat is fotosynthese. Onthoud: celademhaling = glucose verbranden voor energie.",
+       "uo": [
+        "Glucose opbouwen is fotosynthese, niet celademhaling.",
+        "Licht invangen hoort bij fotosynthese; celademhaling heeft geen licht nodig.",
+        "Water splitsen met licht hoort bij fotosynthese.",
+        "Klopt: glucose wordt met zuurstof afgebroken en dat levert energie."
+       ],
+       "uh": "Celademhaling = glucose met zuurstof verbranden voor energie."
+      },
+      {
+       "v": "Waar in de cel vindt de fotosynthese plaats?",
+       "o": [
+        "In de celkern met het DNA",
+        "In het mitochondrium",
+        "In de bladgroenkorrel",
+        "In het celmembraan"
+       ],
+       "c": 2,
+       "d": 1,
+       "u": "Onthoud: fotosynthese gebeurt in de bladgroenkorrel (met bladgroen).",
+       "uo": [
+        "De celkern bevat het DNA, niet de fotosynthese.",
+        "Het mitochondrium is juist voor de celademhaling.",
+        "Klopt: de bladgroenkorrel bevat bladgroen en doet de fotosynthese.",
+        "Het celmembraan is de celgrens, geen fotosynthese-plek."
+       ],
+       "uh": "Fotosynthese = in de bladgroenkorrel."
+      },
+      {
+       "v": "Waar vindt de celademhaling vooral plaats?",
+       "o": [
+        "In de bladgroenkorrel",
+        "In het mitochondrium",
+        "In de vacuole",
+        "In de celwand"
+       ],
+       "c": 1,
+       "d": 1,
+       "u": "Onthoud: celademhaling gebeurt in het mitochondrium.",
+       "uo": [
+        "De bladgroenkorrel is voor de fotosynthese.",
+        "Klopt: het mitochondrium breekt glucose met zuurstof af.",
+        "De vacuole is een opslagruimte, geen ademhalingsplek.",
+        "De celwand geeft stevigheid, geen celademhaling."
+       ],
+       "uh": "Celademhaling = in het mitochondrium."
+      },
+      {
+       "v": "Een plant staat in het volledige donker. Wat gebeurt er?",
+       "o": [
+        "Celademhaling gaat door, fotosynthese stopt",
+        "Fotosynthese gaat door, celademhaling stopt",
+        "Beide processen stoppen volledig",
+        "Beide processen gaan gewoon door"
+       ],
+       "c": 0,
+       "d": 2,
+       "u": "Fotosynthese heeft licht nodig en stopt in het donker; celademhaling gaat dag en nacht door. Onthoud: alleen fotosynthese heeft licht nodig.",
+       "uo": [
+        "Klopt: zonder licht geen fotosynthese, maar de celademhaling loopt door.",
+        "Andersom: juist de fotosynthese stopt, niet de celademhaling.",
+        "De celademhaling stopt niet; die gaat continu door.",
+        "Fotosynthese kan niet doorgaan zonder licht."
+       ],
+       "uh": "Alleen fotosynthese heeft licht nodig; ademhaling gaat altijd door."
+      },
+      {
+       "v": "Welke stof vangt het licht op voor de fotosynthese?",
+       "o": [
+        "Zetmeel",
+        "Water",
+        "Zuurstof",
+        "Bladgroen"
+       ],
+       "c": 3,
+       "d": 1,
+       "u": "Onthoud: bladgroen (chlorofyl) vangt het licht op.",
+       "uo": [
+        "Zetmeel is een opslagstof, geen lichtvanger.",
+        "Water is een grondstof, maar vangt geen licht op.",
+        "Zuurstof is een product, geen lichtvanger.",
+        "Klopt: bladgroen vangt de lichtenergie op."
+       ],
+       "uh": "Bladgroen vangt het licht op voor de fotosynthese."
+      },
+      {
+       "v": "Wat zijn de grondstoffen (uitgangsstoffen) van de fotosynthese?",
+       "o": [
+        "Glucose en zuurstof",
+        "Koolstofdioxide en water",
+        "Zuurstof en water",
+        "Glucose en koolstofdioxide"
+       ],
+       "c": 1,
+       "d": 2,
+       "u": "De grondstoffen zijn koolstofdioxide en water; glucose en zuurstof zijn juist de producten. Onthoud: CO2 + water gaan erin, glucose + O2 komen eruit.",
+       "uo": [
+        "Glucose en zuurstof zijn de producten, niet de grondstoffen.",
+        "Klopt: uit CO2 en water bouwt de plant glucose op.",
+        "Zuurstof is een product; water klopt wel, maar zuurstof niet.",
+        "Glucose is een product, geen grondstof."
+       ],
+       "uh": "Fotosynthese: CO2 + water erin, glucose + zuurstof eruit."
+      },
+      {
+       "v": "Wat zijn de eindproducten van de fotosynthese?",
+       "o": [
+        "Koolstofdioxide en water",
+        "Uitsluitend zuurstof en warmte",
+        "Glucose en zuurstof",
+        "Water en losse energie"
+       ],
+       "c": 2,
+       "d": 2,
+       "u": "De producten zijn glucose en zuurstof. Koos je 'CO2 en water'? Dat zijn de producten van de celademhaling. Onthoud: fotosynthese maakt glucose en zuurstof.",
+       "uo": [
+        "CO2 en water zijn de producten van de celademhaling.",
+        "Er komt ook glucose bij; zuurstof alleen is onvolledig.",
+        "Klopt: fotosynthese levert glucose en zuurstof.",
+        "Er ontstaat glucose (energie in een stof), niet losse energie."
+       ],
+       "uh": "Fotosynthese maakt glucose en zuurstof."
+      },
+      {
+       "v": "Wat zijn de eindproducten van de celademhaling?",
+       "o": [
+        "Koolstofdioxide en water",
+        "Glucose en zuurstof",
+        "Alleen glucose",
+        "Bladgroen en water"
+       ],
+       "c": 0,
+       "d": 2,
+       "u": "De producten zijn koolstofdioxide en water (plus energie). Koos je 'glucose en zuurstof'? Dat zijn de producten van de fotosynthese. Onthoud: ademhaling levert CO2 en water.",
+       "uo": [
+        "Klopt: celademhaling levert CO2 en water op, plus energie.",
+        "Glucose en zuurstof zijn juist de grondstoffen van de celademhaling.",
+        "Glucose wordt juist afgebroken, niet gevormd.",
+        "Bladgroen is geen product van de celademhaling."
+       ],
+       "uh": "Celademhaling levert CO2 en water (en energie)."
+      },
+      {
+       "v": "Via welke openingen neemt een blad koolstofdioxide op?",
+       "o": [
+        "De houtvaten",
+        "De bastvaten",
+        "De celkernen",
+        "De huidmondjes"
+       ],
+       "c": 3,
+       "d": 1,
+       "u": "Onthoud: gasuitwisseling gaat via de huidmondjes.",
+       "uo": [
+        "Houtvaten vervoeren water, geen gassen naar buiten.",
+        "Bastvaten vervoeren suikers, geen CO2-opname.",
+        "Celkernen bevatten DNA, geen gasuitwisseling.",
+        "Klopt: via de huidmondjes komt CO2 binnen en gaat O2 naar buiten."
+       ],
+       "uh": "Gasuitwisseling van het blad gaat via de huidmondjes."
+      },
+      {
+       "v": "Waarom noemen we de fotosynthese een vorm van assimilatie?",
+       "o": [
+        "Omdat er ingewikkelde stoffen juist worden afgebroken tot eenvoudige",
+        "Omdat uit eenvoudige stoffen een complexe stof wordt gebouwd",
+        "Omdat er energie bij vrijkomt",
+        "Omdat er zuurstof wordt verbruikt"
+       ],
+       "c": 1,
+       "d": 2,
+       "u": "Assimilatie is opbouw: uit CO2 en water (eenvoudig) wordt glucose (complex) gebouwd. Onthoud: assimilatie = opbouw, dissimilatie = afbraak.",
+       "uo": [
+        "Afbraak hoort bij dissimilatie, niet bij assimilatie.",
+        "Klopt: assimilatie is opbouw van een complexe stof uit eenvoudige.",
+        "Bij assimilatie wordt energie juist vastgelegd, niet vrijgemaakt.",
+        "Fotosynthese verbruikt geen zuurstof; het maakt zuurstof."
+       ],
+       "uh": "Assimilatie = opbouw (fotosynthese); dissimilatie = afbraak."
+      },
+      {
+       "v": "Waarom noemen we de celademhaling een vorm van dissimilatie?",
+       "o": [
+        "Omdat er juist glucose wordt opgebouwd uit koolstofdioxide en water",
+        "Omdat er licht voor nodig is",
+        "Omdat een complexe stof wordt afgebroken en energie vrijkomt",
+        "Omdat het in de bladgroenkorrel gebeurt"
+       ],
+       "c": 2,
+       "d": 2,
+       "u": "Dissimilatie is afbraak met energie: glucose (complex) wordt afgebroken. Onthoud: dissimilatie = afbraak waarbij energie vrijkomt.",
+       "uo": [
+        "Glucose opbouwen is assimilatie, niet dissimilatie.",
+        "Celademhaling heeft geen licht nodig.",
+        "Klopt: een complexe stof wordt afgebroken en er komt energie vrij.",
+        "Celademhaling gebeurt in het mitochondrium, niet de bladgroenkorrel."
+       ],
+       "uh": "Dissimilatie = afbraak van glucose met energie vrij."
+      },
+      {
+       "v": "Waarom kan een plant 's nachts wel ademhalen maar niet fotosynthetiseren?",
+       "o": [
+        "Voor de fotosynthese is licht nodig, voor de celademhaling niet",
+        "De celademhaling heeft juist wel voortdurend licht nodig om te werken",
+        "'s Nachts is er in de plant geen zuurstof",
+        "'s Nachts is er in de plant geen glucose"
+       ],
+       "c": 0,
+       "d": 2,
+       "u": "Fotosynthese heeft licht nodig; celademhaling niet. Onthoud: alleen de fotosynthese is afhankelijk van licht.",
+       "uo": [
+        "Klopt: fotosynthese heeft licht nodig, celademhaling gaat ook zonder licht.",
+        "Andersom: de celademhaling heeft juist geen licht nodig.",
+        "Er is 's nachts wel zuurstof aanwezig voor de ademhaling.",
+        "Er is glucose opgeslagen; daar kan de plant 's nachts op ademhalen."
+       ],
+       "uh": "Alleen fotosynthese heeft licht nodig."
+      },
+      {
+       "v": "Overdag geeft een plant netto zuurstof af, ook al ademt hij ook. Hoe kan dat?",
+       "o": [
+        "Overdag ademt de plant helemaal niet en verbruikt geen zuurstof meer",
+        "Overdag neemt de plant geen CO2 op",
+        "Bij licht stopt de celademhaling",
+        "De fotosynthese verloopt overdag sneller dan de celademhaling"
+       ],
+       "c": 3,
+       "d": 3,
+       "u": "Overdag maakt de fotosynthese meer zuurstof dan de ademhaling verbruikt, dus netto komt er zuurstof vrij. Onthoud: bij fel licht overtreft de fotosynthese de ademhaling.",
+       "uo": [
+        "De plant ademt overdag gewoon door.",
+        "De plant neemt overdag juist CO2 op voor de fotosynthese.",
+        "De celademhaling stopt niet bij licht; die loopt door.",
+        "Klopt: de fotosynthese is overdag sneller, dus netto komt er zuurstof vrij."
+       ],
+       "uh": "Overdag > fotosynthese sneller dan ademhaling: netto zuurstof."
+      },
+      {
+       "v": "Welke gassen wisselt een plant bij fotosynthese met de lucht uit?",
+       "o": [
+        "Neemt zuurstof op, geeft koolstofdioxide af",
+        "Neemt koolstofdioxide op, geeft zuurstof af",
+        "Neemt koolstofdioxide op, geeft koolstofdioxide af",
+        "Neemt zuurstof op, geeft zuurstof af"
+       ],
+       "c": 1,
+       "d": 2,
+       "u": "Bij fotosynthese neemt de plant CO2 op en geeft zuurstof af. Onthoud: CO2 erin, zuurstof eruit (omgekeerd aan ademhaling).",
+       "uo": [
+        "Zuurstof opnemen en CO2 afgeven hoort bij de ademhaling.",
+        "Klopt: de plant neemt CO2 op en geeft zuurstof af.",
+        "De plant geeft bij fotosynthese juist zuurstof af, geen CO2.",
+        "De plant neemt CO2 op, geen zuurstof, en geeft zuurstof af."
+       ],
+       "uh": "Fotosynthese: CO2 opnemen, zuurstof afgeven."
+      },
+      {
+       "v": "Bij fel licht groeit een plant niet harder, ook al is er licht genoeg. Wat kan de beperkende factor zijn?",
+       "o": [
+        "De hoeveelheid koolstofdioxide",
+        "De hoeveelheid licht",
+        "De hoeveelheid bladgroen",
+        "De zwaartekracht"
+       ],
+       "c": 0,
+       "d": 2,
+       "u": "Als licht niet meer beperkt, kan een tekort aan CO2 (of temperatuur) de snelheid begrenzen. Onthoud: de traagste factor bepaalt de fotosynthesesnelheid.",
+       "uo": [
+        "Klopt: als er licht genoeg is, kan CO2 de beperkende factor worden.",
+        "Licht is juist ruim aanwezig, dus dat is niet de beperking.",
+        "Bladgroen is meestal niet de beperkende factor bij fel licht.",
+        "Zwaartekracht speelt geen rol bij de fotosynthesesnelheid."
+       ],
+       "uh": "De traagste factor (licht, CO2, temperatuur) beperkt de snelheid."
+      },
+      {
+       "v": "In welk celorganel wordt glucose met zuurstof afgebroken?",
+       "o": [
+        "De bladgroenkorrel",
+        "De celkern met chromosomen",
+        "Het mitochondrium",
+        "De grote vacuole"
+       ],
+       "c": 2,
+       "d": 1,
+       "u": "Onthoud: het mitochondrium breekt glucose met zuurstof af.",
+       "uo": [
+        "De bladgroenkorrel is voor de fotosynthese, niet de afbraak.",
+        "De celkern bevat het DNA, geen glucose-afbraak.",
+        "Klopt: in het mitochondrium wordt glucose met zuurstof afgebroken.",
+        "De vacuole is opslagruimte, geen afbraakplek."
+       ],
+       "uh": "Glucose-afbraak met zuurstof = in het mitochondrium."
+      },
+      {
+       "v": "Een spier werkt zo hard dat er te weinig zuurstof is. Wat gebeurt er met de glucose-afbraak?",
+       "o": [
+        "De afbraak stopt volledig tot er zuurstof is",
+        "Er treedt anaerobe dissimilatie op, met melkzuur",
+        "De fotosynthese neemt de energie over",
+        "Er komt juist meer energie per glucose vrij"
+       ],
+       "c": 1,
+       "d": 3,
+       "u": "Zonder genoeg zuurstof gaat de cel over op anaerobe dissimilatie; daarbij ontstaat melkzuur en veel minder energie. Onthoud: te weinig zuurstof = onvolledige afbraak, melkzuur.",
+       "uo": [
+        "De afbraak stopt niet; hij gaat anaeroob (zonder zuurstof) verder.",
+        "Klopt: zonder genoeg zuurstof ontstaat melkzuur (anaerobe dissimilatie).",
+        "Spiercellen doen niet aan fotosynthese.",
+        "Anaerobe afbraak levert juist minder energie, niet meer."
+       ],
+       "uh": "Te weinig zuurstof in de spier: anaerobe afbraak, melkzuur."
+      },
+      {
+       "v": "Waarom levert gisting (anaerobe dissimilatie) minder energie dan gewone celademhaling?",
+       "o": [
+        "Omdat er tijdens de gisting helemaal geen nieuwe glucose bij komt",
+        "Omdat het in de bladgroenkorrel gebeurt",
+        "Omdat er licht voor ontbreekt",
+        "Omdat de glucose zonder zuurstof niet volledig wordt afgebroken"
+       ],
+       "c": 3,
+       "d": 2,
+       "u": "Zonder zuurstof wordt glucose maar deels afgebroken, dus komt er minder energie vrij (en blijft melkzuur of alcohol over). Onthoud: geen zuurstof = onvolledige afbraak = minder energie.",
+       "uo": [
+        "Of er glucose bij komt is niet de reden; het gaat om de onvolledige afbraak.",
+        "Gisting gebeurt niet in de bladgroenkorrel.",
+        "Licht speelt geen rol bij de afbraak van glucose.",
+        "Klopt: zonder zuurstof wordt glucose maar deels afgebroken, dus minder energie."
+       ],
+       "uh": "Geen zuurstof: glucose deels afgebroken, dus minder energie."
+      },
+      {
+       "v": "Wat is het gasvormige eindproduct van de fotosynthese?",
+       "o": [
+        "Zuurstof",
+        "Koolstofdioxide",
+        "Waterstof",
+        "Stikstof"
+       ],
+       "c": 0,
+       "d": 1,
+       "u": "Onthoud: fotosynthese geeft zuurstof af.",
+       "uo": [
+        "Klopt: bij de fotosynthese komt zuurstof vrij.",
+        "CO2 is juist een grondstof van de fotosynthese.",
+        "Waterstof komt niet als gas vrij bij de fotosynthese.",
+        "Stikstof speelt geen rol in de fotosynthesevergelijking."
+       ],
+       "uh": "Fotosynthese geeft zuurstof af."
+      },
+      {
+       "v": "Een bont blad maakt op de witte delen (zonder bladgroen) geen zetmeel. Waarom niet?",
+       "o": [
+        "Daar zit geen water in het blad",
+        "Daar zitten geen huidmondjes",
+        "Zonder bladgroen kan daar geen fotosynthese plaatsvinden",
+        "Daar is de zuurstofconcentratie te hoog"
+       ],
+       "c": 2,
+       "d": 2,
+       "u": "Zonder bladgroen wordt er geen licht ingevangen, dus geen fotosynthese en geen zetmeel. Onthoud: geen bladgroen = geen fotosynthese.",
+       "uo": [
+        "Water zit ook in de witte delen; dat is niet de reden.",
+        "Huidmondjes zitten er ook; het gaat om het ontbreken van bladgroen.",
+        "Klopt: zonder bladgroen geen fotosynthese, dus geen zetmeel.",
+        "De zuurstofconcentratie is niet de oorzaak van geen zetmeel."
+       ],
+       "uh": "Geen bladgroen betekent geen fotosynthese, dus geen zetmeel."
+      },
+      {
+       "v": "Bij welk stofwisselingsproces ontstaat het melkzuur in vermoeide spieren?",
+       "o": [
+        "Anaerobe dissimilatie",
+        "Fotosynthese",
+        "Aerobe celademhaling",
+        "Assimilatie van glucose"
+       ],
+       "c": 0,
+       "d": 3,
+       "u": "Melkzuur ontstaat bij anaerobe dissimilatie: glucose-afbraak zonder zuurstof. Onthoud: melkzuur is het teken van afbraak zonder zuurstof.",
+       "uo": [
+        "Klopt: melkzuur ontstaat bij de afbraak van glucose zonder zuurstof.",
+        "Fotosynthese maakt glucose, geen melkzuur.",
+        "Bij aerobe celademhaling (met zuurstof) ontstaat geen melkzuur.",
+        "Assimilatie is opbouw, daarbij ontstaat geen melkzuur."
+       ],
+       "uh": "Melkzuur = glucose-afbraak zonder zuurstof (anaeroob)."
+      },
+      {
+       "v": "Waarom heten fotosynthese en celademhaling elkaars tegengestelde processen?",
+       "o": [
+        "Ze bouwen allebei glucose op",
+        "Ze gebeuren allebei in het mitochondrium",
+        "Ze hebben allebei licht nodig",
+        "De producten van het ene zijn de grondstoffen van het andere"
+       ],
+       "c": 3,
+       "d": 2,
+       "u": "Wat de fotosynthese maakt (glucose, zuurstof) gebruikt de celademhaling, en omgekeerd. Onthoud: de twee processen vullen elkaar aan als een kringloop.",
+       "uo": [
+        "Alleen de fotosynthese bouwt glucose op, de ademhaling breekt het af.",
+        "Fotosynthese gebeurt in de bladgroenkorrel, ademhaling in het mitochondrium.",
+        "Alleen de fotosynthese heeft licht nodig.",
+        "Klopt: glucose en zuurstof uit de fotosynthese zijn de grondstoffen van de ademhaling."
+       ],
+       "uh": "De producten van het ene proces zijn de grondstoffen van het andere."
+      },
+      {
+       "v": "Waar haalt een plant de energie vandaan om glucose te maken?",
+       "o": [
+        "Uit de mineralen in de bodem",
+        "Uit het zonlicht",
+        "Uit de opgenomen zuurstof",
+        "Uit het opgenomen koolstofdioxide"
+       ],
+       "c": 1,
+       "d": 1,
+       "u": "Onthoud: de energie voor de fotosynthese komt uit het zonlicht.",
+       "uo": [
+        "Mineralen zijn bouwstof, geen energiebron voor de fotosynthese.",
+        "Klopt: lichtenergie uit de zon drijft de fotosynthese aan.",
+        "Zuurstof is een product, geen energiebron voor de opbouw.",
+        "CO2 is een grondstof, maar levert niet de energie."
+       ],
+       "uh": "De energie voor de fotosynthese komt uit zonlicht."
+      },
+      {
+       "v": "In het donker geeft een plant koolstofdioxide af. Wat zegt dit over zijn stofwisseling?",
+       "o": [
+        "Er vindt op dat moment fotosynthese plaats",
+        "De plant neemt zuurstof af zonder iets te verbranden",
+        "Op dat moment is alleen de celademhaling actief",
+        "De plant bouwt op dat moment glucose op"
+       ],
+       "c": 2,
+       "d": 3,
+       "u": "CO2 afgeven zonder licht betekent dat alleen de celademhaling loopt (fotosynthese ligt stil). Onthoud: in het donker meet je puur de ademhaling van de plant.",
+       "uo": [
+        "Fotosynthese kan niet in het donker; er is geen licht.",
+        "CO2 afgeven komt juist door het verbranden van glucose.",
+        "Klopt: zonder licht is alleen de celademhaling actief, die geeft CO2 af.",
+        "Glucose opbouwen is fotosynthese, en die ligt in het donker stil."
+       ],
+       "uh": "In het donker: alleen celademhaling, dus CO2 komt vrij."
+      }
+     ],
+     "oe": [
+      {
+       "bron": "Practicum zetmeelproef",
+       "ctx": "Een leerling zet een plant een nacht in het donker, zodat het zetmeel uit de bladeren verdwijnt. Daarna dekt hij een deel van een blad af met zwart papier en zet de plant een dag in het licht. Aan het eind kookt hij het blad, haalt het bladgroen eruit en druppelt er jodium op. Het niet-afgedekte deel wordt blauwzwart, het afgedekte deel niet.",
+       "v": "Verklaar waarom alleen het niet-afgedekte deel van het blad blauwzwart kleurt met jodium.",
+       "o": [
+        ""
+       ],
+       "c": 0,
+       "u": "Jodium kleurt blauwzwart bij zetmeel. Alleen het deel dat licht kreeg, kon fotosynthese uitvoeren en daarbij glucose maken die als zetmeel is opgeslagen; daar kleurt de jodium dus blauwzwart. Het afgedekte deel kreeg geen licht, deed geen fotosynthese en maakte geen zetmeel, dus daar blijft de kleuring uit. (Kernpunten: [1] licht is nodig voor de fotosynthese; [2] alleen waar fotosynthese plaatsvond, is zetmeel gevormd dat met jodium blauwzwart kleurt.)"
+      },
+      {
+       "bron": "Proef met waterpest",
+       "ctx": "Waterpest is een waterplant. Een leerling zet een takje waterpest onder water in een reageerbuis en schijnt er een lamp op. Er stijgen gasbelletjes op vanaf de snijkant. Hoe dichter de lamp bij de plant staat, hoe meer belletjes er per minuut vrijkomen. Bij zeer weinig licht stoppen de belletjes.",
+       "v": "Leg uit welk gas in de belletjes zit en waarom het aantal belletjes toeneemt als de lamp dichterbij komt.",
+       "o": [
+        ""
+       ],
+       "c": 0,
+       "u": "In de belletjes zit zuurstof, een product van de fotosynthese. Hoe dichter de lamp, hoe meer licht de plant krijgt; licht is de grondstof/energiebron voor de fotosynthese, dus de fotosynthesesnelheid neemt toe en er komt meer zuurstof (meer belletjes) per minuut vrij. Bij te weinig licht stopt de fotosynthese en stoppen de belletjes. (Kernpunten: [1] het gas is zuurstof uit de fotosynthese; [2] meer licht betekent een hogere fotosynthesesnelheid, dus meer zuurstof.)"
+      },
+      {
+       "bron": "Gist en brooddeeg",
+       "ctx": "Bij het maken van brood voegt een bakker gist toe aan het deeg. De gistcellen zetten suikers uit het deeg om. In het deeg is weinig zuurstof aanwezig. Tijdens het rijzen wordt het deeg groter en ontstaan er gasbelletjes.",
+       "v": "Leg uit welk proces de gistcellen in het zuurstofarme deeg uitvoeren en waarom het deeg daardoor rijst.",
+       "o": [
+        ""
+       ],
+       "c": 0,
+       "u": "Omdat er weinig zuurstof is, voeren de gistcellen anaerobe dissimilatie (gisting) uit: ze breken de suiker zonder zuurstof af. Daarbij ontstaat koolstofdioxide (en alcohol). Het koolstofdioxidegas vormt belletjes die in het deeg blijven zitten, waardoor het deeg groter wordt (rijst). (Kernpunten: [1] gisting/anaerobe dissimilatie door zuurstoftekort; [2] het gevormde CO2-gas laat het deeg rijzen.)"
+      },
+      {
+       "bron": "Kas en CO2",
+       "ctx": "Een tuinder wil dat zijn tomatenplanten in de kas sneller groeien. De planten staan in fel licht en op een goede temperatuur. Toch groeien ze niet harder. De tuinder besluit extra koolstofdioxide in de kas te blazen, waarna de planten wel sneller groeien.",
+       "v": "Leg met het begrip beperkende factor uit waarom het toevoegen van extra koolstofdioxide de groei versnelt.",
+       "o": [
+        ""
+       ],
+       "c": 0,
+       "u": "De fotosynthesesnelheid wordt bepaald door de factor die het meest tekortschiet (de beperkende factor). Licht en temperatuur waren al ruim voldoende, dus die beperkten niet. Blijkbaar was koolstofdioxide de beperkende factor; door meer CO2 toe te voegen kan de fotosynthese sneller verlopen, waardoor de planten meer glucose maken en harder groeien. (Kernpunten: [1] de beperkende factor begrenst de fotosynthesesnelheid; [2] hier was CO2 beperkend, dus extra CO2 versnelt de fotosynthese en de groei.)"
+      },
+      {
+       "bron": "Plant in een afgesloten pot",
+       "ctx": "Een leerling zet een plant in een goed afgesloten glazen pot met een CO2-meter. Overdag, met de pot in het licht, daalt de gemeten hoeveelheid koolstofdioxide in de pot. 's Nachts, in het donker, stijgt de hoeveelheid koolstofdioxide juist weer.",
+       "v": "Verklaar de daling van het koolstofdioxide overdag en de stijging 's nachts met de processen fotosynthese en celademhaling.",
+       "o": [
+        ""
+       ],
+       "c": 0,
+       "u": "Overdag doet de plant fotosynthese en celademhaling tegelijk, maar de fotosynthese is sneller: er wordt netto CO2 opgenomen, dus de hoeveelheid CO2 in de pot daalt. 's Nachts ligt de fotosynthese stil (geen licht), maar de celademhaling gaat door; daarbij komt CO2 vrij, dus de hoeveelheid CO2 stijgt. (Kernpunten: [1] overdag overheerst de fotosynthese, netto CO2-opname; [2] 's nachts alleen celademhaling, netto CO2-afgifte.)"
+      }
+     ]
+    },
+    {
+     "id": "M5",
+     "naam": "DNA en eiwitsynthese",
+     "beschrijving": "Gouden-standaardmodule bi.M.5: hoe DNA (dubbele helix, basenparing A-T en C-G) via transcriptie en translatie eiwitten laat maken, en hoe genexpressie (gen -> eiwit -> eigenschap) de kenmerken van een organisme bepaalt.",
+     "ceStatus": "CE",
+     "onderwerpen": [
+      "DNA als dubbele helix",
+      "Basenparing A-T en C-G",
+      "Gen en chromosoom",
+      "Transcriptie in de celkern",
+      "Translatie bij het ribosoom",
+      "Genexpressie: gen -> eiwit -> eigenschap"
+     ],
+     "sam": "DNA heeft de vorm van een dubbele helix. De basen paren volgens vaste regels: A met T en C met G. Een gen is een stukje DNA met de code voor een eiwit; een chromosoom is sterk opgerold DNA. Een eiwit maken gaat in twee stappen: bij de transcriptie maakt de kern een mRNA-kopie van een gen, en bij de translatie leest het ribosoom dat mRNA af, waarbij elk codon (drie basen) voor een aminozuur codeert. Zo bepaalt DNA via eiwitten de kenmerken van een organisme (genexpressie: gen -> eiwit -> eigenschap).",
+     "begrippen": [
+      {
+       "t": "DNA",
+       "d": "De erfelijke stof in de vorm van een dubbele helix; bevat de code voor de eiwitten van een organisme."
+      },
+      {
+       "t": "Dubbele helix",
+       "d": "De spiraalvorm van twee om elkaar gedraaide DNA-strengen (een gedraaide ladder)."
+      },
+      {
+       "t": "Base",
+       "d": "Een van de bouwstenen A, T, C of G die de code in het DNA vormen."
+      },
+      {
+       "t": "Basenparing",
+       "d": "De vaste koppeling tussen de strengen: A hoort bij T en C hoort bij G."
+      },
+      {
+       "t": "Gen",
+       "d": "Een stukje DNA met de code voor een eiwit."
+      },
+      {
+       "t": "Chromosoom",
+       "d": "Sterk opgerold DNA in de celkern, met daarin veel genen."
+      },
+      {
+       "t": "Eiwitsynthese",
+       "d": "Het maken van een eiwit in twee stappen: transcriptie en translatie."
+      },
+      {
+       "t": "Transcriptie",
+       "d": "Het maken van een mRNA-kopie van een gen; dit gebeurt in de celkern."
+      },
+      {
+       "t": "mRNA",
+       "d": "De kopie van een gen die de code van de kern naar het ribosoom brengt."
+      },
+      {
+       "t": "Translatie",
+       "d": "Het aflezen van het mRNA bij het ribosoom, waarbij het eiwit wordt gebouwd."
+      },
+      {
+       "t": "Codon",
+       "d": "Een drietal basen op het mRNA dat voor een aminozuur codeert."
+      },
+      {
+       "t": "Genexpressie",
+       "d": "Het tot uiting komen van een gen: gen -> eiwit -> eigenschap."
+      }
+     ],
+     "sv": [
+      {
+       "v": "Welke vorm heeft een DNA-molecuul?",
+       "o": [
+        "Een dubbele helix",
+        "Een enkele rechte streng",
+        "Een platte gesloten ring",
+        "Een onregelmatige bol"
+       ],
+       "c": 0,
+       "d": 1,
+       "u": "Onthoud: DNA heeft de vorm van een dubbele helix, een soort gedraaide ladder.",
+       "uo": [
+        "Klopt: DNA is een dubbele helix, twee strengen die om elkaar gedraaid zijn.",
+        "DNA is niet een enkele rechte streng maar twee gedraaide strengen.",
+        "Een platte ring hoort niet bij het DNA in een chromosoom in de kern.",
+        "DNA is geen vormloze bol maar een geordende spiraal."
+       ],
+       "uh": "DNA = dubbele helix (gedraaide ladder)."
+      },
+      {
+       "v": "Welke basen paren in het DNA steeds met elkaar?",
+       "o": [
+        "A met C en G met T",
+        "A met T en C met G",
+        "A met G en C met T",
+        "A met A en ook T met T"
+       ],
+       "c": 1,
+       "d": 1,
+       "u": "Onthoud: in het DNA paart A met T en C met G.",
+       "uo": [
+        "A paart niet met C: de vaste paren zijn A-T en C-G.",
+        "Klopt: A paart met T en C paart met G.",
+        "A paart niet met G: A hoort bij T en C hoort bij G.",
+        "Dezelfde base paart niet met zichzelf; A hoort bij T."
+       ],
+       "uh": "A-T en C-G horen bij elkaar."
+      },
+      {
+       "v": "Wat is een gen?",
+       "o": [
+        "Een heel chromosoom",
+        "Een los aminozuur",
+        "Een stukje DNA met de code voor een eiwit",
+        "Een ribosoom in de celkern"
+       ],
+       "c": 2,
+       "d": 1,
+       "u": "Onthoud: een gen is een stukje DNA met de code voor een eiwit.",
+       "uo": [
+        "Een chromosoom is veel groter: sterk opgerold DNA met heel veel genen.",
+        "Een los aminozuur is een bouwsteen van een eiwit, geen stuk DNA.",
+        "Klopt: een gen is een stukje DNA met de code voor een eiwit.",
+        "Een ribosoom maakt eiwitten, maar is zelf geen stukje DNA."
+       ],
+       "uh": "Gen = stukje DNA = recept voor een eiwit."
+      },
+      {
+       "v": "Wat is een chromosoom?",
+       "o": [
+        "Sterk opgerold DNA",
+        "Een enkel basenpaar",
+        "Een mRNA-kopie",
+        "Een eiwit uit het ribosoom"
+       ],
+       "c": 0,
+       "d": 1,
+       "u": "Onthoud: een chromosoom is sterk opgerold DNA in de celkern.",
+       "uo": [
+        "Klopt: een chromosoom is DNA dat sterk is opgerold.",
+        "Een chromosoom bestaat uit heel veel basenparen, niet uit een enkele.",
+        "Een mRNA-kopie ontstaat pas bij de transcriptie; dat is geen chromosoom.",
+        "Een chromosoom is DNA, geen eiwit uit het ribosoom."
+       ],
+       "uh": "Chromosoom = opgerold DNA."
+      },
+      {
+       "v": "Waar in de cel vindt de transcriptie plaats?",
+       "o": [
+        "Bij het ribosoom",
+        "In het celmembraan",
+        "In de celkern",
+        "In de vacuole"
+       ],
+       "c": 2,
+       "d": 1,
+       "u": "Onthoud: de transcriptie gebeurt in de celkern, waar het DNA ligt.",
+       "uo": [
+        "Bij het ribosoom gebeurt de translatie, niet de transcriptie.",
+        "Het celmembraan is de grens van de cel, geen plek voor transcriptie.",
+        "Klopt: in de celkern wordt van een gen een mRNA-kopie gemaakt.",
+        "De vacuole is opslagruimte, geen plek voor de transcriptie."
+       ],
+       "uh": "Transcriptie = in de kern (bij het DNA)."
+      },
+      {
+       "v": "Waar in de cel vindt de translatie plaats?",
+       "o": [
+        "Bij het ribosoom",
+        "In de celkern",
+        "In een chromosoom",
+        "In het bladgroen"
+       ],
+       "c": 0,
+       "d": 1,
+       "u": "Onthoud: de translatie gebeurt bij het ribosoom.",
+       "uo": [
+        "Klopt: bij het ribosoom wordt het mRNA afgelezen en het eiwit gebouwd.",
+        "In de celkern gebeurt de transcriptie, niet de translatie.",
+        "Een chromosoom is opgerold DNA, geen plek waar eiwitten worden gebouwd.",
+        "Bladgroen hoort bij de fotosynthese, niet bij de eiwitsynthese."
+       ],
+       "uh": "Translatie = bij het ribosoom."
+      },
+      {
+       "v": "Wat maakt de cel bij de transcriptie van een gen?",
+       "o": [
+        "Een tweede DNA-streng",
+        "Een los eiwit",
+        "Een nieuw chromosoom",
+        "Een mRNA-kopie van het gen"
+       ],
+       "c": 3,
+       "d": 1,
+       "u": "Onthoud: bij de transcriptie maakt de kern een mRNA-kopie van een gen.",
+       "uo": [
+        "Er ontstaat geen tweede DNA-streng, maar een mRNA-kopie.",
+        "Het eiwit ontstaat pas later, bij de translatie aan het ribosoom.",
+        "Er wordt geen nieuw chromosoom gemaakt bij de transcriptie.",
+        "Klopt: van het gen wordt een mRNA-kopie gemaakt."
+       ],
+       "uh": "Transcriptie levert een mRNA-kopie op."
+      },
+      {
+       "v": "Hoeveel basen vormen samen een codon?",
+       "o": [
+        "Eén base",
+        "Twee basen",
+        "Drie basen",
+        "Vier of meer basen"
+       ],
+       "c": 2,
+       "d": 1,
+       "u": "Onthoud: een codon bestaat uit drie basen.",
+       "uo": [
+        "Eén base is te weinig; een codon telt er drie.",
+        "Twee basen vormen nog geen codon; het zijn er drie.",
+        "Klopt: een codon bestaat uit drie basen en codeert voor een aminozuur.",
+        "Een codon telt drie basen, niet vier of meer."
+       ],
+       "uh": "Codon = 3 basen."
+      },
+      {
+       "v": "Waarvoor codeert een codon?",
+       "o": [
+        "Voor een aminozuur",
+        "Voor een heel eiwit",
+        "Voor een chromosoom",
+        "Voor een gen"
+       ],
+       "c": 0,
+       "d": 1,
+       "u": "Onthoud: een codon (drie basen) codeert voor een aminozuur.",
+       "uo": [
+        "Klopt: een codon van drie basen codeert voor een aminozuur.",
+        "Een heel eiwit heeft veel codons nodig, niet een enkele.",
+        "Een chromosoom is veel groter dan wat een codon codeert.",
+        "Een gen bestaat uit veel codons; een codon is maar een aminozuur."
+       ],
+       "uh": "1 codon = 1 aminozuur."
+      },
+      {
+       "v": "Waaruit is een eiwit opgebouwd?",
+       "o": [
+        "Uit losse basen",
+        "Uit aan elkaar geregen aminozuren",
+        "Uit glucose-eenheden",
+        "Uit vetzuren"
+       ],
+       "c": 1,
+       "d": 1,
+       "u": "Onthoud: een eiwit is een keten van aan elkaar geregen aminozuren.",
+       "uo": [
+        "Basen horen bij het DNA en mRNA, niet bij de bouw van het eiwit zelf.",
+        "Klopt: een eiwit is een keten van aminozuren.",
+        "Glucose-eenheden vormen zetmeel of glycogeen, geen eiwit.",
+        "Vetzuren horen bij vetten, niet bij eiwitten."
+       ],
+       "uh": "Eiwit = keten van aminozuren."
+      },
+      {
+       "v": "Wat betekent genexpressie?",
+       "o": [
+        "Het volledig kopiëren van een heel chromosoom",
+        "Het delen van een cel",
+        "Het tot uiting komen van een gen",
+        "Het afbreken van een eiwit"
+       ],
+       "c": 2,
+       "d": 1,
+       "u": "Onthoud: genexpressie is het tot uiting komen van een gen: gen -> eiwit -> eigenschap.",
+       "uo": [
+        "Het kopiëren van een chromosoom hoort bij de celdeling, niet bij genexpressie.",
+        "Celdeling is iets anders dan het tot uiting komen van een gen.",
+        "Klopt: genexpressie is het tot uiting komen van een gen (gen -> eiwit -> eigenschap).",
+        "Het afbreken van een eiwit is geen genexpressie."
+       ],
+       "uh": "Genexpressie: gen -> eiwit -> eigenschap."
+      },
+      {
+       "v": "Een DNA-streng heeft de volgorde A-T-C-G. Wat is de volgorde ertegenover?",
+       "o": [
+        "T-A-G-C",
+        "Precies dezelfde: A-T-C-G",
+        "G-C-T-A",
+        "C-G-A-T"
+       ],
+       "c": 0,
+       "d": 2,
+       "u": "Onthoud: tegenover A staat T en tegenover C staat G, dus A-T-C-G wordt T-A-G-C.",
+       "uo": [
+        "Klopt: A-T, T-A, C-G, G-C geeft de tegenoverliggende streng T-A-G-C.",
+        "De tegenoverliggende streng is niet dezelfde; de basen paren juist andersom.",
+        "G-C-T-A klopt niet: tegenover A hoort T, niet G.",
+        "C-G-A-T volgt niet uit de paringsregel A-T en C-G."
+       ],
+       "uh": "Zet elke base om: A wordt T, C wordt G."
+      },
+      {
+       "v": "In een DNA-molecuul is 30% van de basen adenine (A). Hoeveel procent is thymine (T)?",
+       "o": [
+        "15%",
+        "20%",
+        "30%",
+        "60% (het dubbele)"
+       ],
+       "c": 2,
+       "d": 2,
+       "u": "Onthoud: A paart met T, dus er is even veel T als A: ook 30%.",
+       "uo": [
+        "15% klopt niet: T is even veel als A, niet de helft.",
+        "20% klopt niet: T hoort even veel te zijn als A.",
+        "Klopt: A paart met T, dus T is even veel als A: 30%.",
+        "60% klopt niet: T is even veel als A, niet het dubbele."
+       ],
+       "uh": "A paart met T, dus %T = %A."
+      },
+      {
+       "v": "Welke volgorde geeft de weg van gen naar eigenschap goed weer?",
+       "o": [
+        "eerst het eiwit, dan het gen, dan de eigenschap",
+        "gen -> eiwit -> eigenschap",
+        "eigenschap -> gen -> eiwit",
+        "gen -> eigenschap -> eiwit"
+       ],
+       "c": 1,
+       "d": 2,
+       "u": "Onthoud: een gen levert een eiwit, en dat eiwit geeft de eigenschap: gen -> eiwit -> eigenschap.",
+       "uo": [
+        "Het eiwit komt niet vóór het gen; het gen bevat juist de code voor het eiwit.",
+        "Klopt: het gen levert het eiwit, en dat eiwit bepaalt de eigenschap.",
+        "De eigenschap komt niet eerst; die volgt uit het eiwit.",
+        "De eigenschap komt na het eiwit, niet ervoor."
+       ],
+       "uh": "gen -> eiwit -> eigenschap."
+      },
+      {
+       "v": "Een gen bevat de code voor een enzym. Wat maakt de cel op basis van dit gen?",
+       "o": [
+        "Een suiker",
+        "Een compleet nieuw chromosoom",
+        "Een eiwit (het enzym)",
+        "Een vetdruppel"
+       ],
+       "c": 2,
+       "d": 2,
+       "u": "Onthoud: een gen bevat de code voor een eiwit, en enzymen zijn eiwitten.",
+       "uo": [
+        "Een suiker is geen eiwit; een gen codeert voor een eiwit.",
+        "Een gen laat geen nieuw chromosoom maken; het levert een eiwit.",
+        "Klopt: een enzym is een eiwit, en daarvoor bevat het gen de code.",
+        "Een vetdruppel is geen eiwit; een gen codeert voor een eiwit."
+       ],
+       "uh": "Gen -> eiwit; een enzym is een eiwit."
+      },
+      {
+       "v": "Waarom kan het DNA in de kern blijven terwijl het eiwit bij het ribosoom wordt gemaakt?",
+       "o": [
+        "Het DNA verplaatst zelf naar het ribosoom",
+        "Een mRNA-kopie brengt de code naar het ribosoom",
+        "Het chromosoom lost op in het cytoplasma",
+        "Het ribosoom gaat de kern binnen"
+       ],
+       "c": 1,
+       "d": 2,
+       "u": "Onthoud: het mRNA is de kopie die de code van de kern naar het ribosoom brengt.",
+       "uo": [
+        "Het DNA blijft juist in de kern; het verplaatst niet zelf.",
+        "Klopt: het mRNA brengt de code van de kern naar het ribosoom.",
+        "Het chromosoom lost niet op; de code gaat via mRNA naar buiten.",
+        "Het ribosoom gaat de kern niet binnen; het mRNA komt naar het ribosoom."
+       ],
+       "uh": "mRNA is de boodschapper kern -> ribosoom."
+      },
+      {
+       "v": "Een mRNA bevat 30 basen. Voor ongeveer hoeveel aminozuren codeert dit?",
+       "o": [
+        "10 aminozuren",
+        "30 aminozuren, één per base",
+        "90 aminozuren",
+        "3 aminozuren"
+       ],
+       "c": 0,
+       "d": 2,
+       "u": "Onthoud: 3 basen = 1 codon = 1 aminozuur, dus 30 : 3 = 10 aminozuren.",
+       "uo": [
+        "Klopt: 30 basen : 3 per codon = 10 aminozuren.",
+        "Niet één aminozuur per base; drie basen vormen samen één aminozuur.",
+        "90 is te veel: je deelt door 3, je vermenigvuldigt niet.",
+        "3 is te weinig: 30 gedeeld door 3 is 10, niet 3."
+       ],
+       "uh": "Aantal aminozuren = basen : 3."
+      },
+      {
+       "v": "Waarom noemen we een gen het recept voor een eiwit?",
+       "o": [
+        "Omdat het gen zelf een eiwit is",
+        "Omdat het gen de basenvolgorde bevat die de eiwitcode vormt",
+        "Omdat het gen glucose levert",
+        "Omdat het gen in het ribosoom zit"
+       ],
+       "c": 1,
+       "d": 2,
+       "u": "Onthoud: de basenvolgorde in het gen is de code (het recept) voor het eiwit.",
+       "uo": [
+        "Een gen is geen eiwit; het is DNA met de code voor een eiwit.",
+        "Klopt: de basenvolgorde in het gen vormt de code voor het eiwit.",
+        "Een gen levert geen glucose; het bevat de code voor een eiwit.",
+        "Het gen zit in het DNA in de kern, niet in het ribosoom."
+       ],
+       "uh": "De basenvolgorde is het recept."
+      },
+      {
+       "v": "Twee cellen hebben hetzelfde DNA, maar zien er anders uit. Hoe kan dat?",
+       "o": [
+        "De ene cel heeft helemaal geen DNA in de kern",
+        "De ene cel gebruikt andere basen",
+        "Het DNA is in de ene cel een eiwit",
+        "In elke cel komen andere genen tot uiting"
+       ],
+       "c": 3,
+       "d": 2,
+       "u": "Onthoud: in verschillende cellen komen verschillende genen tot uiting (genexpressie).",
+       "uo": [
+        "Elke cel heeft juist DNA in de kern; geen enkele cel mist het.",
+        "De basen zijn hetzelfde; het verschil zit in welke genen tot uiting komen.",
+        "DNA is geen eiwit; het bevat de code voor eiwitten.",
+        "Klopt: in elke cel komen andere genen tot uiting, dus andere eiwitten."
+       ],
+       "uh": "Andere genen actief = ander celtype."
+      },
+      {
+       "v": "Wat is het verschil tussen transcriptie en translatie?",
+       "o": [
+        "Beide maken een DNA-streng",
+        "Transcriptie maakt mRNA in de kern, translatie maakt het eiwit",
+        "Translatie gebeurt vóór de transcriptie",
+        "Transcriptie maakt glucose"
+       ],
+       "c": 1,
+       "d": 2,
+       "u": "Onthoud: transcriptie maakt mRNA in de kern; translatie bouwt het eiwit bij het ribosoom.",
+       "uo": [
+        "Ze maken geen DNA-streng; het gaat om mRNA en een eiwit.",
+        "Klopt: transcriptie maakt mRNA in de kern, translatie het eiwit bij het ribosoom.",
+        "De transcriptie komt juist eerst, dan pas de translatie.",
+        "Transcriptie maakt geen glucose maar een mRNA-kopie."
+       ],
+       "uh": "Transcriptie = mRNA; translatie = eiwit."
+      },
+      {
+       "v": "Welke stof brengt de code van de kern naar het ribosoom?",
+       "o": [
+        "Glucose",
+        "Een chromosoom",
+        "Een los aminozuur",
+        "mRNA"
+       ],
+       "c": 3,
+       "d": 2,
+       "u": "Onthoud: het mRNA brengt de code van de kern naar het ribosoom.",
+       "uo": [
+        "Glucose is een suiker en draagt geen erfelijke code.",
+        "Een chromosoom blijft in de kern; het gaat niet zelf naar het ribosoom.",
+        "Een aminozuur is een bouwsteen van het eiwit, geen codedrager.",
+        "Klopt: het mRNA brengt de code van de kern naar het ribosoom."
+       ],
+       "uh": "mRNA draagt de code naar buiten."
+      },
+      {
+       "v": "Door een fout verandert een codon, waardoor een ander aminozuur wordt ingebouwd. Wat kan het gevolg zijn?",
+       "o": [
+        "Het gen verdwijnt uit de cel",
+        "Het chromosoom wordt korter",
+        "Er ontstaat vanzelf meer glucose",
+        "Het eiwit krijgt een andere bouw en werkt anders"
+       ],
+       "c": 3,
+       "d": 3,
+       "u": "Onthoud: een ander aminozuur kan de bouw van het eiwit veranderen, waardoor het anders werkt.",
+       "uo": [
+        "Het gen verdwijnt niet; er is een base of codon veranderd.",
+        "Het chromosoom wordt niet korter door een veranderd codon.",
+        "Er ontstaat geen glucose; het gaat om de bouw van een eiwit.",
+        "Klopt: een ander aminozuur kan de bouw van het eiwit veranderen, dus de werking."
+       ],
+       "uh": "Ander aminozuur -> andere eiwitbouw."
+      },
+      {
+       "v": "Insuline is een eiwit dat de bloedsuiker regelt. Wat is de rol van het insuline-gen?",
+       "o": [
+        "Het bevat de code om insuline te maken",
+        "Het is zelf het insuline",
+        "Het breekt glucose af",
+        "Het is een codon"
+       ],
+       "c": 0,
+       "d": 3,
+       "u": "Onthoud: het gen bevat de code voor het eiwit insuline, maar is zelf niet het eiwit.",
+       "uo": [
+        "Klopt: het gen bevat de code waarmee de cel het eiwit insuline maakt.",
+        "Het gen is DNA, niet het eiwit insuline zelf.",
+        "Het gen breekt geen glucose af; het levert de code voor een eiwit.",
+        "Een gen bestaat uit veel codons; het is niet een enkel codon."
+       ],
+       "uh": "Gen = code voor het eiwit, niet het eiwit."
+      },
+      {
+       "v": "Een onderzoeker ziet een ribosoom een mRNA aflezen en er aminozuren aan koppelen. Welke stap is dit?",
+       "o": [
+        "De celdeling",
+        "De translatie bij het ribosoom",
+        "De verdubbeling van het chromosoom",
+        "De fotosynthese"
+       ],
+       "c": 1,
+       "d": 3,
+       "u": "Onthoud: het aflezen van mRNA en het koppelen van aminozuren bij het ribosoom is de translatie.",
+       "uo": [
+        "Celdeling is het delen van de cel, niet het aflezen van mRNA.",
+        "Klopt: het aflezen van mRNA en koppelen van aminozuren is de translatie.",
+        "De verdubbeling van het chromosoom is hier niet de eiwitsynthese-stap.",
+        "Fotosynthese is een energieproces, geen eiwitsynthese."
+       ],
+       "uh": "mRNA aflezen bij ribosoom = translatie."
+      },
+      {
+       "v": "Waarom kunnen twee personen met een verschillend gen voor een enzym een ander kenmerk hebben?",
+       "o": [
+        "Omdat genen geen invloed hebben op eiwitten",
+        "Omdat het enzym losstaat van het gen",
+        "Een ander gen geeft een ander eiwit, dus een ander kenmerk",
+        "Omdat kenmerken niet erfelijk zijn"
+       ],
+       "c": 2,
+       "d": 3,
+       "u": "Onthoud: een ander gen geeft een ander eiwit, en dat geeft een ander kenmerk (genexpressie).",
+       "uo": [
+        "Genen bepalen juist via de code welke eiwitten er komen.",
+        "Het enzym is een eiwit dat juist door het gen wordt bepaald.",
+        "Klopt: een ander gen geeft een ander eiwit, dus een ander kenmerk.",
+        "Kenmerken die via genen en eiwitten ontstaan, zijn juist wel erfelijk."
+       ],
+       "uh": "Ander gen -> ander eiwit -> ander kenmerk."
+      }
+     ],
+     "oe": [
+      {
+       "bron": "Fout in het hemoglobine-gen",
+       "ctx": "Hemoglobine is het eiwit in rode bloedcellen dat zuurstof vervoert. Bij sommige mensen is in het gen voor hemoglobine één base veranderd. Daardoor wordt op één plek een ander aminozuur ingebouwd en krijgt het hemoglobine-eiwit een iets andere vorm. De rode bloedcellen worden hierdoor sikkelvormig en vervoeren minder goed zuurstof.",
+       "v": "Leg uit hoe een verandering van één base in het gen kan leiden tot rode bloedcellen die minder goed werken.",
+       "o": [
+        ""
+       ],
+       "c": 0,
+       "u": "Een veranderde base verandert een codon, waardoor bij de translatie een ander aminozuur wordt ingebouwd. Omdat de aminozuurvolgorde de bouw van het eiwit bepaalt, krijgt het hemoglobine een andere vorm en werkt het minder goed, waardoor de rode bloedcellen minder zuurstof kunnen vervoeren. (Kernpunten: [1] een veranderde base geeft een ander codon en dus een ander aminozuur bij de translatie; [2] de aminozuurvolgorde bepaalt de bouw van het eiwit, dus het hemoglobine krijgt een andere vorm en werkt minder goed.)"
+      },
+      {
+       "bron": "Kern en ribosoom gescheiden",
+       "ctx": "Onderzoekers zien dat het DNA van een cel in de celkern blijft, terwijl de eiwitten worden gemaakt bij de ribosomen buiten de kern. In de kern vinden ze naast DNA ook mRNA-moleculen. Buiten de kern, bij de ribosomen, komen die mRNA-moleculen ook voor.",
+       "v": "Leg uit hoe de code van een gen vanuit de kern bij het ribosoom terechtkomt, zonder dat het DNA de kern verlaat.",
+       "o": [
+        ""
+       ],
+       "c": 0,
+       "u": "Bij de transcriptie maakt de cel in de kern een mRNA-kopie van het gen. Dat mRNA verlaat de kern en gaat naar het ribosoom, waar bij de translatie het eiwit wordt gebouwd. Zo komt de code bij het ribosoom terwijl het DNA zelf in de kern kan blijven. (Kernpunten: [1] bij de transcriptie wordt in de kern een mRNA-kopie van het gen gemaakt; [2] dat mRNA gaat naar het ribosoom voor de translatie, dus het DNA hoeft de kern niet te verlaten.)"
+      },
+      {
+       "bron": "Van mRNA naar aminozuren",
+       "ctx": "In een practicum bestudeert een leerling een stukje mRNA dat door een ribosoom wordt afgelezen. Het mRNA-stukje bestaat uit 27 basen. Het ribosoom leest de basen af in groepjes van drie (codons) en koppelt bij elk codon een aminozuur aan de groeiende keten.",
+       "v": "Bereken hoeveel aminozuren dit stukje mRNA oplevert en leg je berekening uit.",
+       "o": [
+        ""
+       ],
+       "c": 0,
+       "u": "Elk codon bestaat uit drie basen en codeert voor één aminozuur. Je deelt daarom het aantal basen door drie: 27 : 3 = 9. Er worden dus 9 aminozuren aan de eiwitketen gekoppeld. (Kernpunten: [1] een codon is drie basen en levert één aminozuur; [2] 27 basen gedeeld door 3 geeft 9 codons, dus 9 aminozuren.)"
+      },
+      {
+       "bron": "Zelfde DNA, andere cellen",
+       "ctx": "Een spiercel en een zenuwcel van dezelfde persoon bevatten hetzelfde DNA en dus dezelfde genen. Toch maken ze verschillende eiwitten, zien ze er heel anders uit en doen ze ander werk in het lichaam.",
+       "v": "Leg uit hoe cellen met hetzelfde DNA toch verschillende eiwitten en verschillende kenmerken kunnen hebben.",
+       "o": [
+        ""
+       ],
+       "c": 0,
+       "u": "In verschillende cellen komen verschillende genen tot uiting (genexpressie): niet in elke cel wordt van elk gen een eiwit gemaakt. Omdat elke cel andere eiwitten maakt, krijgt ze andere kenmerken en een andere taak, ook al is het DNA hetzelfde. (Kernpunten: [1] genexpressie verschilt per cel: er komen andere genen tot uiting; [2] andere eiwitten geven andere kenmerken, ook bij hetzelfde DNA.)"
+      },
+      {
+       "bron": "Basenverhouding in DNA",
+       "ctx": "Van een stukje dubbelstrengs DNA is bekend dat 20% van de basen cytosine (C) is. In het DNA paren de basen steeds volgens vaste regels: A met T en C met G.",
+       "v": "Bereken welk percentage van de basen guanine (G), adenine (A) en thymine (T) is en leg uit hoe je dat weet.",
+       "o": [
+        ""
+       ],
+       "c": 0,
+       "u": "Omdat C met G paart, is er even veel G als C, dus G = 20%. Samen zijn C en G 40%, dus A en T samen 60%. Omdat A met T paart in gelijke aantallen, is A = 30% en T = 30%. (Kernpunten: [1] C paart met G, dus G = 20% en C+G samen 40%; [2] A+T samen 60%, en omdat A met T paart is A = 30% en T = 30%.)"
+      }
+     ]
+    },
+    {
+     "id": "M6",
+     "naam": "Celdeling: mitose en meiose",
+     "beschrijving": "Gouden-standaardmodule bi.M.6: hoe cellen zich delen via mitose (twee identieke cellen voor groei en herstel) en meiose (vier geslachtscellen met het halve aantal chromosomen voor variatie).",
+     "ceStatus": "CE",
+     "onderwerpen": [
+      "DNA-verdubbeling voor de deling",
+      "Mitose (gewone celdeling)",
+      "Meiose (reductiedeling)",
+      "Diploid (2n) en haploid (n)",
+      "Bevruchting herstelt 2n",
+      "Variatie tussen nakomelingen"
+     ],
+     "sam": "Voor elke celdeling wordt het DNA eerst verdubbeld, zodat er genoeg voor beide cellen is. Bij mitose (de gewone celdeling) ontstaan uit een cel twee identieke dochtercellen met hetzelfde aantal chromosomen als de moedercel; dit dient voor groei, herstel en ongeslachtelijke voortplanting. Bij meiose (de reductiedeling) ontstaan vier geslachtscellen met het halve aantal chromosomen: van diploid (2n) naar haploid (n). Bij de bevruchting versmelten twee geslachtscellen, waardoor het aantal weer 2n wordt. Meiose zorgt bovendien voor variatie tussen de nakomelingen.",
+     "begrippen": [
+      {
+       "t": "Celdeling",
+       "d": "Het proces waarbij uit een moedercel nieuwe dochtercellen ontstaan."
+      },
+      {
+       "t": "DNA-verdubbeling",
+       "d": "Het kopieren van al het DNA voordat de cel gaat delen, zodat beide dochtercellen genoeg krijgen."
+      },
+      {
+       "t": "Chromosoom",
+       "d": "Een sterk opgerold pakketje DNA in de celkern dat de erfelijke informatie draagt."
+      },
+      {
+       "t": "Mitose",
+       "d": "De gewone celdeling: uit een cel ontstaan twee identieke dochtercellen met hetzelfde aantal chromosomen."
+      },
+      {
+       "t": "Meiose",
+       "d": "De reductiedeling: uit een cel ontstaan vier geslachtscellen met het halve aantal chromosomen."
+      },
+      {
+       "t": "Diploid (2n)",
+       "d": "Een cel met een dubbel stel chromosomen; dit hebben de gewone lichaamscellen."
+      },
+      {
+       "t": "Haploid (n)",
+       "d": "Een cel met een enkel stel chromosomen; dit hebben de geslachtscellen."
+      },
+      {
+       "t": "Moedercel",
+       "d": "De cel die zich deelt en waaruit de dochtercellen ontstaan."
+      },
+      {
+       "t": "Dochtercel",
+       "d": "Een nieuwe cel die bij een celdeling uit de moedercel is ontstaan."
+      },
+      {
+       "t": "Geslachtscel (gameet)",
+       "d": "Een haploide voortplantingscel (eicel of zaadcel) die door meiose is gevormd."
+      },
+      {
+       "t": "Bevruchting",
+       "d": "Het versmelten van een eicel en een zaadcel, waardoor het aantal chromosomen weer 2n wordt."
+      },
+      {
+       "t": "Variatie",
+       "d": "De verschillen tussen nakomelingen; meiose zorgt hiervoor bij de geslachtelijke voortplanting."
+      }
+     ],
+     "sv": [
+      {
+       "v": "Wat gebeurt er vlak voor een celdeling met het DNA?",
+       "o": [
+        "Het DNA wordt eerst verdubbeld",
+        "Het DNA wordt meteen gehalveerd",
+        "Het DNA lost helemaal op in de cel",
+        "Er komt DNA van een andere cel bij"
+       ],
+       "c": 0,
+       "d": 1,
+       "u": "Onthoud: voor elke deling verdubbelt het DNA eerst, zodat er genoeg voor beide cellen is.",
+       "uo": [
+        "Klopt: het DNA wordt eerst gekopieerd, zodat beide cellen een volledige set krijgen.",
+        "Het DNA halveert niet vooraf; halvering hoort pas bij de meiose zelf.",
+        "Het DNA lost niet op; het wordt juist netjes verdubbeld en verdeeld.",
+        "Er komt geen DNA van buiten bij; de cel kopieert haar eigen DNA."
+       ],
+       "uh": "Eerst kopieren, dan pas delen."
+      },
+      {
+       "v": "Wat is mitose?",
+       "o": [
+        "Een deling tot vier ongelijke geslachtscellen",
+        "De gewone celdeling tot twee identieke cellen",
+        "Het verdubbelen van het DNA in de kern",
+        "Het samensmelten van twee cellen"
+       ],
+       "c": 1,
+       "d": 1,
+       "u": "Onthoud: mitose is de gewone celdeling die twee identieke dochtercellen oplevert.",
+       "uo": [
+        "Vier geslachtscellen horen bij de meiose, niet bij de mitose.",
+        "Klopt: bij mitose ontstaan twee dochtercellen die identiek zijn aan de moedercel.",
+        "DNA-verdubbeling gaat aan de deling vooraf, maar is de deling zelf niet.",
+        "Samensmelten van cellen is bevruchting, geen celdeling."
+       ],
+       "uh": "Mitose = twee identieke cellen."
+      },
+      {
+       "v": "Wat is meiose (reductiedeling)?",
+       "o": [
+        "De gewone lichaamsdeling voor groei en herstel van weefsel",
+        "Het kopieren van het DNA voor de deling",
+        "De deling tot vier cellen met het halve aantal chromosomen",
+        "Het herstellen van beschadigd weefsel"
+       ],
+       "c": 2,
+       "d": 1,
+       "u": "Onthoud: meiose levert vier geslachtscellen op met het halve aantal chromosomen.",
+       "uo": [
+        "Groei en herstel horen bij de mitose, niet bij de reductiedeling.",
+        "DNA-kopieren gaat vooraf aan de deling, maar is de meiose zelf niet.",
+        "Klopt: bij meiose ontstaan vier cellen met het halve aantal chromosomen.",
+        "Weefselherstel gebeurt via mitose, niet via meiose."
+       ],
+       "uh": "Meiose = vier cellen, half aantal."
+      },
+      {
+       "v": "Hoeveel dochtercellen ontstaan er bij mitose uit een cel?",
+       "o": [
+        "Vier dochtercellen",
+        "Drie",
+        "Een",
+        "Twee"
+       ],
+       "c": 3,
+       "d": 1,
+       "u": "Onthoud: mitose levert uit een moedercel twee dochtercellen op.",
+       "uo": [
+        "Vier cellen horen bij de meiose, niet bij de mitose.",
+        "Drie klopt niet; bij mitose deelt de cel in tweeen.",
+        "Een enkele cel is de moedercel zelf, geen resultaat van de deling.",
+        "Klopt: uit een moedercel ontstaan bij mitose twee dochtercellen."
+       ],
+       "uh": "Mitose: 1 wordt 2."
+      },
+      {
+       "v": "Hoeveel cellen ontstaan er bij meiose uit een cel?",
+       "o": [
+        "Vier cellen",
+        "Twee cellen",
+        "Zes verschillende cellen",
+        "Maar een cel"
+       ],
+       "c": 0,
+       "d": 1,
+       "u": "Onthoud: meiose levert uit een cel vier geslachtscellen op.",
+       "uo": [
+        "Klopt: bij meiose ontstaan vier geslachtscellen uit een cel.",
+        "Twee cellen horen bij de mitose, niet bij de meiose.",
+        "Zes is te veel; de meiose eindigt bij vier cellen.",
+        "Een enkele cel is de startcel, geen eindresultaat van de meiose."
+       ],
+       "uh": "Meiose: 1 wordt 4."
+      },
+      {
+       "v": "Wat betekent 'diploid'?",
+       "o": [
+        "Een geslachtscel met een enkel stel chromosomen",
+        "Een cel met een dubbel stel chromosomen",
+        "Een cel zonder chromosomen",
+        "Een cel die zich nooit meer kan delen"
+       ],
+       "c": 1,
+       "d": 1,
+       "u": "Onthoud: diploid (2n) betekent een dubbel stel chromosomen, zoals in lichaamscellen.",
+       "uo": [
+        "Een enkel stel hoort bij haploid; dat zijn juist de geslachtscellen.",
+        "Klopt: diploid betekent een dubbel stel chromosomen (2n).",
+        "Een cel zonder chromosomen bestaat niet als gewone lichaamscel.",
+        "Diploid zegt iets over het aantal stellen, niet over delen."
+       ],
+       "uh": "Diploid = dubbel stel (2n)."
+      },
+      {
+       "v": "Wat betekent 'haploid'?",
+       "o": [
+        "Een dubbel stel chromosomen, zoals in een lichaamscel",
+        "Twee identieke dochtercellen",
+        "Een enkel stel chromosomen",
+        "Het verdubbelde DNA voor de deling"
+       ],
+       "c": 2,
+       "d": 1,
+       "u": "Onthoud: haploid (n) betekent een enkel stel chromosomen, zoals in geslachtscellen.",
+       "uo": [
+        "Een dubbel stel hoort bij diploid; dat zijn juist de lichaamscellen.",
+        "Twee dochtercellen zegt iets over aantal cellen, niet over chromosoomstel.",
+        "Klopt: haploid betekent een enkel stel chromosomen (n).",
+        "Het verdubbelde DNA gaat aan de deling vooraf; dat is geen haploid."
+       ],
+       "uh": "Haploid = enkel stel (n)."
+      },
+      {
+       "v": "Waarvoor dient mitose in het lichaam?",
+       "o": [
+        "Voor het maken van geslachtscellen",
+        "Voor het halveren van het chromosoomaantal",
+        "Voor variatie tussen nakomelingen",
+        "Voor groei en herstel van weefsel"
+       ],
+       "c": 3,
+       "d": 1,
+       "u": "Onthoud: mitose zorgt voor groei, herstel en ongeslachtelijke voortplanting.",
+       "uo": [
+        "Geslachtscellen maken gebeurt via meiose, niet via mitose.",
+        "Halveren van het chromosoomaantal hoort bij de meiose.",
+        "Variatie tussen nakomelingen komt juist door de meiose.",
+        "Klopt: mitose zorgt voor groei en herstel van weefsel."
+       ],
+       "uh": "Mitose = groei en herstel."
+      },
+      {
+       "v": "Waarvoor dient meiose?",
+       "o": [
+        "Voor het maken van geslachtscellen (gameten)",
+        "Voor groei van het lichaam",
+        "Voor het herstellen van beschadigd spierweefsel",
+        "Voor het kopieren van het DNA"
+       ],
+       "c": 0,
+       "d": 1,
+       "u": "Onthoud: meiose maakt geslachtscellen en zorgt voor variatie.",
+       "uo": [
+        "Klopt: meiose vormt de geslachtscellen (gameten).",
+        "Groei van het lichaam gebeurt via mitose, niet via meiose.",
+        "Weefselherstel gebeurt via mitose, niet via meiose.",
+        "DNA-kopieren gaat aan elke deling vooraf; dat is niet het doel van meiose."
+       ],
+       "uh": "Meiose = geslachtscellen maken."
+      },
+      {
+       "v": "Hoe verhouden de dochtercellen bij mitose zich tot de moedercel?",
+       "o": [
+        "Ze hebben elk het halve aantal chromosomen",
+        "Ze zijn genetisch identiek aan de moedercel",
+        "Ze zijn allemaal verschillend",
+        "Ze hebben helemaal geen kern en geen chromosomen"
+       ],
+       "c": 1,
+       "d": 1,
+       "u": "Onthoud: bij mitose zijn de dochtercellen identiek aan de moedercel.",
+       "uo": [
+        "Het halve aantal hoort bij meiose, niet bij mitose.",
+        "Klopt: de dochtercellen zijn genetisch identiek aan de moedercel.",
+        "Verschillende cellen krijg je juist bij de meiose, door variatie.",
+        "De dochtercellen hebben wel degelijk een kern met chromosomen."
+       ],
+       "uh": "Mitose: dochters = kopie van moeder."
+      },
+      {
+       "v": "Bij meiose gaat het chromosoomaantal van diploid (2n) naar...",
+       "o": [
+        "hetzelfde aantal, 2n",
+        "het dubbele aantal chromosomen, 4n",
+        "het halve aantal, haploid (n)",
+        "nul chromosomen"
+       ],
+       "c": 2,
+       "d": 1,
+       "u": "Onthoud: meiose gaat van diploid (2n) naar haploid (n), dus het aantal halveert.",
+       "uo": [
+        "Hetzelfde aantal (2n) hoort bij mitose, niet bij meiose.",
+        "Het aantal verdubbelt niet; het wordt juist gehalveerd.",
+        "Klopt: van diploid (2n) naar haploid (n), het halve aantal.",
+        "Nul chromosomen zou geen werkende geslachtscel opleveren."
+       ],
+       "uh": "Meiose: 2n wordt n."
+      },
+      {
+       "v": "Een huidcel deelt zich om een wondje te dichten. Welke deling is dit?",
+       "o": [
+        "Meiose, want er ontstaan geslachtscellen",
+        "Meiose, want het aantal chromosomen wordt gehalveerd",
+        "Geen van beide, cellen delen niet",
+        "Mitose, want er ontstaan twee identieke cellen"
+       ],
+       "c": 3,
+       "d": 2,
+       "u": "Onthoud: herstel van weefsel gebeurt via mitose met identieke dochtercellen.",
+       "uo": [
+        "Bij wondherstel ontstaan geen geslachtscellen; dat is geen meiose.",
+        "Het aantal chromosomen halveert niet bij herstel; dat hoort bij meiose.",
+        "Cellen delen wel degelijk; anders zou de wond niet dichtgroeien.",
+        "Klopt: herstel gaat via mitose, met twee identieke dochtercellen."
+       ],
+       "uh": "Herstel = mitose."
+      },
+      {
+       "v": "In de eierstok ontstaan eicellen. Welke deling hoort daarbij?",
+       "o": [
+        "Meiose, want geslachtscellen krijgen het halve aantal chromosomen",
+        "Mitose, want de dochtercellen blijven volledig identiek aan elkaar",
+        "Mitose, want dit is voor groei",
+        "Geen deling, eicellen bestaan al vanaf de geboorte"
+       ],
+       "c": 0,
+       "d": 2,
+       "u": "Onthoud: geslachtscellen zoals eicellen ontstaan via meiose met het halve aantal.",
+       "uo": [
+        "Klopt: eicellen zijn geslachtscellen en ontstaan door meiose (n).",
+        "Mitose maakt identieke lichaamscellen, geen haploide eicellen.",
+        "Groei van weefsel gaat via mitose, maar eicellen komen uit meiose.",
+        "Eicellen worden wel degelijk door celdeling gevormd."
+       ],
+       "uh": "Eicel maken = meiose."
+      },
+      {
+       "v": "Een lichaamscel heeft 46 chromosomen. Hoeveel heeft een dochtercel na mitose?",
+       "o": [
+        "23",
+        "46",
+        "92",
+        "Wisselend, soms meer soms minder"
+       ],
+       "c": 1,
+       "d": 2,
+       "u": "Onthoud: na mitose houden de dochtercellen hetzelfde aantal chromosomen (46).",
+       "uo": [
+        "23 is het halve aantal; dat krijg je juist na meiose.",
+        "Klopt: na mitose blijft het aantal gelijk, dus 46 chromosomen.",
+        "92 zou een verdubbeling zijn; dat gebeurt niet als eindresultaat.",
+        "Het aantal is niet wisselend; mitose houdt het aantal netjes gelijk."
+       ],
+       "uh": "Mitose houdt het aantal gelijk."
+      },
+      {
+       "v": "Een lichaamscel heeft 46 chromosomen. Hoeveel heeft een geslachtscel na meiose?",
+       "o": [
+        "46, evenveel als de moedercel",
+        "92, het dubbele",
+        "23, het halve aantal",
+        "0, geen chromosomen"
+       ],
+       "c": 2,
+       "d": 2,
+       "u": "Onthoud: na meiose heeft een geslachtscel het halve aantal, dus 23 chromosomen.",
+       "uo": [
+        "Evenveel (46) hoort bij mitose, niet bij de meiose.",
+        "92 zou een verdubbeling zijn; meiose halveert juist.",
+        "Klopt: meiose halveert het aantal van 46 naar 23 chromosomen.",
+        "Nul chromosomen zou geen werkende geslachtscel opleveren."
+       ],
+       "uh": "Meiose halveert: 46 wordt 23."
+      },
+      {
+       "v": "Waardoor lijken twee dochtercellen na mitose op elkaar?",
+       "o": [
+        "Doordat het DNA na de deling helemaal gehalveerd is",
+        "Doordat ze uit verschillende cellen komen",
+        "Doordat ze geslachtscellen zijn",
+        "Doordat het verdubbelde DNA gelijk verdeeld wordt"
+       ],
+       "c": 3,
+       "d": 2,
+       "u": "Onthoud: bij mitose wordt het gekopieerde DNA gelijk verdeeld, dus de cellen zijn identiek.",
+       "uo": [
+        "Het DNA wordt bij mitose niet gehalveerd; dat hoort bij meiose.",
+        "Beide dochtercellen komen uit dezelfde moedercel, niet uit verschillende.",
+        "Het zijn gewone lichaamscellen, geen geslachtscellen.",
+        "Klopt: het verdubbelde DNA wordt gelijk verdeeld, dus de cellen zijn gelijk."
+       ],
+       "uh": "Gelijk verdeeld DNA = gelijke cellen."
+      },
+      {
+       "v": "Waarom verschillen de kinderen uit een gezin van elkaar?",
+       "o": [
+        "Doordat meiose zorgt voor variatie in geslachtscellen",
+        "Doordat mitose telkens nieuwe combinaties chromosomen maakt",
+        "Doordat lichaamscellen zich anders delen",
+        "Doordat het DNA niet verdubbeld wordt"
+       ],
+       "c": 0,
+       "d": 2,
+       "u": "Onthoud: meiose zorgt voor variatie, waardoor nakomelingen van elkaar verschillen.",
+       "uo": [
+        "Klopt: de meiose brengt variatie aan in de geslachtscellen.",
+        "Mitose maakt juist identieke cellen, geen nieuwe combinaties.",
+        "Lichaamscellen delen niet anders; de variatie zit in de geslachtscellen.",
+        "Het DNA wordt wel verdubbeld; dat is niet de reden voor verschillen."
+       ],
+       "uh": "Variatie komt door meiose."
+      },
+      {
+       "v": "Bij de bevruchting versmelten een eicel (n) en een zaadcel (n). Wat is het resultaat?",
+       "o": [
+        "Een haploide cel met slechts een enkel half stel",
+        "Een diploide cel (2n): het aantal is weer compleet",
+        "Een cel met maar liefst vier volledige stel chromosomen",
+        "Een cel zonder DNA"
+       ],
+       "c": 1,
+       "d": 2,
+       "u": "Onthoud: bij de bevruchting worden twee haploide cellen samen weer diploid (2n).",
+       "uo": [
+        "Het resultaat blijft niet haploid; n plus n wordt samen 2n.",
+        "Klopt: eicel (n) en zaadcel (n) vormen samen een diploide cel (2n).",
+        "Er ontstaan geen vier stel; twee enkele stellen worden een dubbel stel.",
+        "De cel heeft juist het DNA van beide ouders, dus zeker niet zonder DNA."
+       ],
+       "uh": "Bevruchting: n + n = 2n."
+      },
+      {
+       "v": "Waarom moet het chromosoomaantal in geslachtscellen gehalveerd zijn?",
+       "o": [
+        "Omdat geslachtscellen zich niet kunnen delen zonder dit",
+        "Omdat ze anders te klein worden",
+        "Zodat het aantal na de bevruchting weer 2n is",
+        "Zodat er meer variatie ontstaat"
+       ],
+       "c": 2,
+       "d": 2,
+       "u": "Onthoud: de halvering zorgt dat na de bevruchting (n + n) het aantal weer 2n wordt.",
+       "uo": [
+        "Delen is niet de reden; het gaat om het aantal na de bevruchting.",
+        "De grootte is niet de reden; het draait om het chromosoomaantal.",
+        "Klopt: doordat elk n bijdraagt, wordt het samen weer diploid (2n).",
+        "Variatie is een gevolg van meiose, maar niet de reden voor de halvering."
+       ],
+       "uh": "Halveren zodat n + n weer 2n wordt."
+      },
+      {
+       "v": "Een cel verdubbelt haar DNA en deelt daarna in vier cellen met half zoveel chromosomen. Welke deling?",
+       "o": [
+        "Mitose",
+        "DNA-verdubbeling",
+        "Bevruchting",
+        "Meiose"
+       ],
+       "c": 3,
+       "d": 2,
+       "u": "Onthoud: vier cellen met het halve aantal chromosomen wijzen op meiose.",
+       "uo": [
+        "Mitose geeft twee cellen met hetzelfde aantal, niet vier met de helft.",
+        "DNA-verdubbeling is een voorbereiding, geen deling in vier cellen.",
+        "Bevruchting is versmelten, geen deling in vier cellen.",
+        "Klopt: vier cellen met het halve aantal chromosomen is meiose."
+       ],
+       "uh": "Vier cellen, half aantal = meiose."
+      },
+      {
+       "v": "Bij ongeslachtelijke voortplanting ontstaan identieke nakomelingen. Welke deling hoort daarbij?",
+       "o": [
+        "Mitose, de nakomelingen zijn genetisch identiek",
+        "Meiose, want er ontstaan geslachtscellen",
+        "Meiose, met veel onderlinge variatie tussen de nakomelingen",
+        "Bevruchting van twee geslachtscellen"
+       ],
+       "c": 0,
+       "d": 2,
+       "u": "Onthoud: ongeslachtelijke voortplanting gaat via mitose en geeft identieke nakomelingen.",
+       "uo": [
+        "Klopt: mitose geeft identieke cellen, dus identieke nakomelingen.",
+        "Geslachtscellen en meiose horen bij de geslachtelijke voortplanting.",
+        "Variatie via meiose past bij geslachtelijke, niet ongeslachtelijke voortplanting.",
+        "Bevruchting hoort bij geslachtelijke voortplanting, niet bij deze vorm."
+       ],
+       "uh": "Ongeslachtelijk = mitose = identiek."
+      },
+      {
+       "v": "Een bioloog telt in een dochtercel evenveel chromosomen als in de moedercel. Wat concludeert hij?",
+       "o": [
+        "De cel is hoogstwaarschijnlijk door meiose ontstaan",
+        "De cel is door mitose ontstaan",
+        "De cel is een geslachtscel",
+        "Het DNA is niet verdubbeld"
+       ],
+       "c": 1,
+       "d": 3,
+       "u": "Onthoud: gelijk chromosoomaantal wijst op mitose; meiose zou halvering geven.",
+       "uo": [
+        "Meiose zou juist een halvering geven, geen gelijk aantal.",
+        "Klopt: een gelijk aantal chromosomen wijst op mitose.",
+        "Een geslachtscel is haploid; die heeft juist het halve aantal.",
+        "Zonder DNA-verdubbeling zouden de dochtercellen te weinig DNA krijgen."
+       ],
+       "uh": "Gelijk aantal = mitose."
+      },
+      {
+       "v": "In een geslachtscel worden 23 chromosomen geteld, in een lichaamscel 46. Wat toont dit over meiose?",
+       "o": [
+        "Meiose verdubbelt telkens het volledige chromosoomaantal",
+        "Meiose houdt het aantal gelijk",
+        "Meiose halveert het chromosoomaantal van 2n naar n",
+        "Meiose maakt twee identieke cellen"
+       ],
+       "c": 2,
+       "d": 3,
+       "u": "Onthoud: 23 tegenover 46 laat zien dat meiose het aantal halveert (2n naar n).",
+       "uo": [
+        "Verdubbelen klopt niet; 23 is juist minder dan 46.",
+        "Gelijk houden past bij mitose, niet bij deze halvering.",
+        "Klopt: van 46 (2n) naar 23 (n) is een halvering door meiose.",
+        "Twee identieke cellen horen bij mitose, niet bij deze meiose."
+       ],
+       "uh": "23 vs 46 = meiose halveert."
+      },
+      {
+       "v": "Waarom is variatie door meiose gunstig voor een soort?",
+       "o": [
+        "Doordat alle nakomelingen dan volkomen identiek aan elkaar blijven",
+        "Doordat het lichaam sneller groeit",
+        "Doordat wonden sneller helen",
+        "Doordat verschillen de kans vergroten dat sommige zich aanpassen"
+       ],
+       "c": 3,
+       "d": 3,
+       "u": "Onthoud: variatie vergroot de kans dat een deel van de soort zich aanpast aan veranderingen.",
+       "uo": [
+        "Meiose geeft juist verschillen, geen volkomen identieke nakomelingen.",
+        "Sneller groeien hoort bij mitose en is niet het voordeel van variatie.",
+        "Wondheling gaat via mitose en heeft niets met variatie te maken.",
+        "Klopt: door verschillen kunnen sommige nakomelingen beter tegen veranderingen."
+       ],
+       "uh": "Variatie helpt de soort zich aanpassen."
+      },
+      {
+       "v": "Een cel deelt zonder dat het DNA eerst verdubbeld is. Wat gaat er mis?",
+       "o": [
+        "De dochtercellen krijgen te weinig DNA",
+        "De dochtercellen krijgen juist te veel DNA",
+        "Er ontstaan vier gezonde geslachtscellen",
+        "Er verandert niets, dit is normaal"
+       ],
+       "c": 0,
+       "d": 3,
+       "u": "Onthoud: zonder verdubbeling is er te weinig DNA om over twee cellen te verdelen.",
+       "uo": [
+        "Klopt: zonder verdubbeling is er te weinig DNA voor beide dochtercellen.",
+        "Te veel DNA klopt niet; er is juist een tekort zonder de kopie.",
+        "Vier gezonde geslachtscellen ontstaan niet zomaar; er ontbreekt DNA.",
+        "Er verandert wel iets: de verdeling gaat mis zonder de verdubbeling."
+       ],
+       "uh": "Geen verdubbeling = te weinig DNA."
+      }
+     ],
+     "oe": [
+      {
+       "bron": "Wondheling op de huid",
+       "ctx": "Een leerling schaaft zijn knie. Na een paar dagen is de wond dichtgegroeid met nieuwe huidcellen. Onder de microscoop blijkt dat de nieuwe cellen precies hetzelfde aantal chromosomen hebben als de omringende huidcellen.",
+       "v": "Leg uit welke celdeling voor het dichtgroeien van de wond zorgt en waarom de nieuwe cellen hetzelfde aantal chromosomen hebben.",
+       "o": [
+        ""
+       ],
+       "c": 0,
+       "u": "Het dichtgroeien gebeurt door mitose, de gewone celdeling voor groei en herstel. Bij mitose wordt het DNA eerst verdubbeld en daarna gelijk over twee dochtercellen verdeeld, waardoor elke dochtercel evenveel chromosomen krijgt als de moedercel. Daarom hebben de nieuwe huidcellen hetzelfde aantal chromosomen als de cellen eromheen. (Kernpunten: [1] wondherstel gaat via mitose; [2] het verdubbelde DNA wordt gelijk verdeeld, dus het aantal chromosomen blijft gelijk.)"
+      },
+      {
+       "bron": "Chromosomen tellen in cellen",
+       "ctx": "In een practicum bekijkt een leerling twee soorten menselijke cellen onder de microscoop. In een gewone lichaamscel telt zij 46 chromosomen. In een zaadcel telt zij er 23.",
+       "v": "Verklaar met het begrip meiose waarom een zaadcel maar de helft van het aantal chromosomen van een lichaamscel heeft.",
+       "o": [
+        ""
+       ],
+       "c": 0,
+       "u": "Zaadcellen zijn geslachtscellen die door meiose (de reductiedeling) worden gevormd. Bij meiose gaat het chromosoomaantal van diploid (2n) naar haploid (n): het aantal wordt gehalveerd. Daarom bevat een zaadcel 23 chromosomen tegenover 46 in een lichaamscel. (Kernpunten: [1] zaadcellen ontstaan door meiose; [2] meiose halveert het aantal van 2n naar n, dus 46 wordt 23.)"
+      },
+      {
+       "bron": "Van bevruchting tot baby",
+       "ctx": "Bij de bevruchting versmelt een menselijke eicel met 23 chromosomen met een zaadcel met 23 chromosomen. Uit de bevruchte eicel groeit door talloze delingen een compleet kind, waarvan alle lichaamscellen 46 chromosomen bevatten.",
+       "v": "Leg uit hoe het aantal chromosomen bij de bevruchting weer op 46 komt en welke deling daarna voor de groei van het kind zorgt.",
+       "o": [
+        ""
+       ],
+       "c": 0,
+       "u": "Bij de bevruchting versmelten een eicel (n = 23) en een zaadcel (n = 23), waardoor de bevruchte eicel weer diploid wordt met 23 plus 23 is 46 chromosomen. Daarna groeit het kind door mitose: bij die gewone celdeling ontstaan steeds identieke dochtercellen met hetzelfde aantal chromosomen (46). (Kernpunten: [1] bevruchting telt n en n samen tot 2n, dus 46; [2] de groei daarna verloopt via mitose met behoud van 46 chromosomen.)"
+      },
+      {
+       "bron": "Aardbeienplant met uitlopers",
+       "ctx": "Een aardbeienplant maakt uitlopers waaraan nieuwe plantjes groeien. Deze plantjes zijn genetisch precies gelijk aan de moederplant. Een tuinder gebruikt daarnaast ook zaden, die ontstaan na bestuiving en bevruchting en waaruit onderling verschillende plantjes groeien.",
+       "v": "Leg uit welke celdeling bij de uitlopers hoort en waarom de plantjes uit zaad wel van elkaar verschillen.",
+       "o": [
+        ""
+       ],
+       "c": 0,
+       "u": "De plantjes aan de uitlopers ontstaan door ongeslachtelijke voortplanting via mitose; daarbij zijn de dochtercellen identiek, dus de nieuwe plantjes zijn genetisch gelijk aan de moederplant. De plantjes uit zaad ontstaan na bevruchting van geslachtscellen die door meiose zijn gevormd; meiose zorgt voor variatie, waardoor deze plantjes onderling en van de moederplant verschillen. (Kernpunten: [1] uitlopers gaan via mitose en geven identieke nakomelingen; [2] zaad ontstaat via meiose en bevruchting, wat variatie geeft.)"
+      },
+      {
+       "bron": "Deling met gemarkeerd DNA",
+       "ctx": "In een proef markeren onderzoekers al het DNA in een moedercel met een fluorescerende kleurstof. De cel verdubbelt eerst haar DNA en deelt zich daarna een keer. Beide dochtercellen blijken evenveel gemarkeerd DNA te bevatten als de oorspronkelijke moedercel.",
+       "v": "Leg uit waarom het DNA eerst verdubbeld wordt en waarom beide dochtercellen daardoor evenveel DNA hebben als de moedercel.",
+       "o": [
+        ""
+       ],
+       "c": 0,
+       "u": "Voor de deling verdubbelt de cel al haar DNA, zodat er een dubbele hoeveelheid is om te verdelen. Bij deze mitose wordt die dubbele hoeveelheid gelijk over de twee dochtercellen verdeeld, waardoor elke dochtercel evenveel DNA (en evenveel chromosomen) krijgt als de moedercel had. (Kernpunten: [1] DNA-verdubbeling levert genoeg DNA voor twee cellen; [2] het verdubbelde DNA wordt gelijk verdeeld, dus elke dochtercel heeft evenveel als de moedercel.)"
+      }
+     ]
+    }
+   ]
    },
    {
     "id": "O",

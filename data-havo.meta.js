@@ -321,17 +321,35 @@ var VAKKEN = [
     "hasSam": true,
     "leerdoelen": [
      {
-      "id": "M4",
-      "naam": "Fotosynthese & celademhaling",
-      "beschrijving": "Gouden-standaardmodule bi.M.2: hoe planten glucose opbouwen met licht (fotosynthese) en hoe cellen glucose met zuurstof afbreken voor energie (celademhaling), incl. assimilatie/dissimilatie en gisting.",
+      "id": "M1",
+      "naam": "Bouw en functie van de cel",
+      "beschrijving": "Gouden-standaardmodule bi.M.1: de celorganellen en hun functies, plus het verschil tussen een plantencel, een dierlijke cel en een bacteriecel (eukaryoot versus prokaryoot).",
       "ceStatus": "CE",
       "onderwerpen": [
-       "Fotosynthese (opbouw glucose)",
-       "Celademhaling (afbraak glucose)",
-       "Bladgroenkorrel & mitochondrium",
-       "Assimilatie vs dissimilatie",
-       "Anaerobe dissimilatie (gisting)",
-       "Gasuitwisseling & beperkende factoren"
+       "Celorganellen en hun functies",
+       "Celmembraan en celkern",
+       "Mitochondrion en bladgroenkorrel",
+       "Ribosoom, vacuole en celwand",
+       "Endoplasmatisch reticulum en golgi-systeem",
+       "Plantencel, diercel en bacteriecel"
+      ],
+      "nSv": 25,
+      "nOe": 5,
+      "nBeg": 12,
+      "hasSam": true
+     },
+     {
+      "id": "M2",
+      "naam": "Transport door het celmembraan",
+      "beschrijving": "Gouden-standaardmodule bi.M.2: hoe stoffen door het selectief doorlaatbare celmembraan bewegen via diffusie, osmose, passief en actief transport, met hypertoon/hypotoon/isotoon, plasmolyse en turgor.",
+      "ceStatus": "CE",
+      "onderwerpen": [
+       "Selectief doorlaatbaar celmembraan",
+       "Diffusie & concentratiegradient",
+       "Osmose (water)",
+       "Hypertoon, hypotoon, isotoon",
+       "Passief vs actief transport",
+       "Plasmolyse & turgor"
       ],
       "nSv": 25,
       "nOe": 5,
@@ -357,6 +375,60 @@ var VAKKEN = [
       "nSv": 25,
       "nOe": 7,
       "nBeg": 10,
+      "hasSam": true
+     },
+     {
+      "id": "M4",
+      "naam": "Fotosynthese & celademhaling",
+      "beschrijving": "Gouden-standaardmodule bi.M.2: hoe planten glucose opbouwen met licht (fotosynthese) en hoe cellen glucose met zuurstof afbreken voor energie (celademhaling), incl. assimilatie/dissimilatie en gisting.",
+      "ceStatus": "CE",
+      "onderwerpen": [
+       "Fotosynthese (opbouw glucose)",
+       "Celademhaling (afbraak glucose)",
+       "Bladgroenkorrel & mitochondrium",
+       "Assimilatie vs dissimilatie",
+       "Anaerobe dissimilatie (gisting)",
+       "Gasuitwisseling & beperkende factoren"
+      ],
+      "nSv": 25,
+      "nOe": 5,
+      "nBeg": 12,
+      "hasSam": true
+     },
+     {
+      "id": "M5",
+      "naam": "DNA en eiwitsynthese",
+      "beschrijving": "Gouden-standaardmodule bi.M.5: hoe DNA (dubbele helix, basenparing A-T en C-G) via transcriptie en translatie eiwitten laat maken, en hoe genexpressie (gen -> eiwit -> eigenschap) de kenmerken van een organisme bepaalt.",
+      "ceStatus": "CE",
+      "onderwerpen": [
+       "DNA als dubbele helix",
+       "Basenparing A-T en C-G",
+       "Gen en chromosoom",
+       "Transcriptie in de celkern",
+       "Translatie bij het ribosoom",
+       "Genexpressie: gen -> eiwit -> eigenschap"
+      ],
+      "nSv": 25,
+      "nOe": 5,
+      "nBeg": 12,
+      "hasSam": true
+     },
+     {
+      "id": "M6",
+      "naam": "Celdeling: mitose en meiose",
+      "beschrijving": "Gouden-standaardmodule bi.M.6: hoe cellen zich delen via mitose (twee identieke cellen voor groei en herstel) en meiose (vier geslachtscellen met het halve aantal chromosomen voor variatie).",
+      "ceStatus": "CE",
+      "onderwerpen": [
+       "DNA-verdubbeling voor de deling",
+       "Mitose (gewone celdeling)",
+       "Meiose (reductiedeling)",
+       "Diploid (2n) en haploid (n)",
+       "Bevruchting herstelt 2n",
+       "Variatie tussen nakomelingen"
+      ],
+      "nSv": 25,
+      "nOe": 5,
+      "nBeg": 12,
       "hasSam": true
      }
     ]
