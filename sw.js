@@ -1,5 +1,5 @@
-const CACHE = 'slagio-v520';
-const ASSETS = ['/', '/index.html', '/over-ons.html', '/faq.html', '/privacy.html', '/styles.css', '/data.js', '/data-havo.meta.js', '/data-vwo.meta.js', '/data-vmbo.meta.js', '/state.js', '/mascotte.js', '/lottie.min.js', '/vonk-lottie.js', '/vonk.lottie.json', '/vonk-phys.js', '/vonk.js', '/cloud.js', '/profile.js', '/vak.js', '/quiz.js', '/tools.js', '/sim.js', '/lb.js', '/features.js', '/league.js', '/schedule.js', '/foutenboek.js', '/herhalen.js', '/v4.js', '/zoek.js', '/klas.js', '/notif-engine.js', '/onb.js', '/widget.js', '/init.js', '/sam-anim.js', '/sam-clip.js', '/ico-swap.js', '/examens.js', '/ce_data.js', '/manifest.json', '/widget/slagio-widget.json', '/widget/slagio-widget-data.json', '/icon-192.png', '/icon-512.png', '/logo.svg', '/apple-touch-icon.png'];
+const CACHE = 'slagio-v521';
+const ASSETS = ['/', '/index.html', '/over-ons.html', '/faq.html', '/privacy.html', '/styles.css', '/data.js', '/data-havo.meta.js', '/foutenboek-uitleg-havo.js', '/data-vwo.meta.js', '/data-vmbo.meta.js', '/state.js', '/mascotte.js', '/lottie.min.js', '/vonk-lottie.js', '/vonk.lottie.json', '/vonk-phys.js', '/vonk.js', '/cloud.js', '/profile.js', '/vak.js', '/quiz.js', '/tools.js', '/sim.js', '/lb.js', '/features.js', '/league.js', '/schedule.js', '/foutenboek.js', '/herhalen.js', '/v4.js', '/zoek.js', '/klas.js', '/notif-engine.js', '/onb.js', '/widget.js', '/init.js', '/sam-anim.js', '/sam-clip.js', '/ico-swap.js', '/examens.js', '/ce_data.js', '/manifest.json', '/widget/slagio-widget.json', '/widget/slagio-widget-data.json', '/icon-192.png', '/icon-512.png', '/logo.svg', '/apple-touch-icon.png'];
 
 self.addEventListener('install', e => {
   e.waitUntil(caches.open(CACHE).then(c => c.addAll(ASSETS)));
@@ -39,7 +39,7 @@ self.addEventListener('fetch', e => {
 
   // Grote/zelden wijzigende bestanden (data + media) blijven cache-first: die
   // wil je niet elke load opnieuw downloaden (data-havo.js is ~800 KB).
-  const DATA_FILES = ['/data.js', '/data-havo.meta.js', '/data-vwo.meta.js', '/sam-havo.js', '/sam-vwo.js', '/ce_data.js', '/examens.js'];
+  const DATA_FILES = ['/data.js', '/data-havo.meta.js', '/foutenboek-uitleg-havo.js', '/data-vwo.meta.js', '/sam-havo.js', '/sam-vwo.js', '/ce_data.js', '/examens.js'];
   // Per-vak vraagbestanden (/q/*.js) laden lui en wijzigen zelden: cache-first (SWR).
   // foutenboek-meta-*.js (verrijking, ~110 KB) idem: lui geladen, zelden gewijzigd.
   const isBigData = DATA_FILES.includes(url.pathname) || url.pathname.startsWith('/q/') || url.pathname.startsWith('/foutenboek-meta-') || url.pathname.startsWith('/foutenboek-uitleg-');

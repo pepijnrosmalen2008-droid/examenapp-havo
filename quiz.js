@@ -40,6 +40,7 @@ function startQ(mode){
   }
   clearQuizDraft();
   try{if(typeof ensureFbMeta==='function')ensureFbMeta();}catch(e){} // "Waarom fout?" alvast laden
+  try{if(typeof ensureFbUitleg==='function')ensureFbUitleg();}catch(e){} // per-optie-uitleg alvast laden
   ST.mode=mode;
   ST.idx=0;ST.score=0;ST.antwrd=[];ST.tijdPerVraag=[];ST.combo=0;ST.xpThisRound=0;ST.flagged=new Set();ST._interShown={};
   if(!ST.isDailyChallenge)ST.isDailyChallenge=false;
@@ -403,10 +404,14 @@ function _kiesReveal(gekozen,correct,btns){
   fb.className=`qfb ${ok?'fbok':'fbno'}`;
   const _infoBtn=q.u?`<button class="fbt-info-btn" onclick="const t=this.nextElementSibling;const s=this.querySelector('.fib-lbl');t.classList.toggle('show');s.textContent=t.classList.contains('show')?'Verberg uitleg':'Toon uitleg'"><svg class="fib-ic" viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4"/><path d="M12 8h.01"/></svg><span class="fib-lbl">Toon uitleg</span></button><div class="fbt-info-text">${q.u}</div>`:'';
   if(ok){
-    fb.innerHTML=`<div class="fbt"><svg class="fb-ic" viewBox="0 0 24 24" width="19" height="19" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Correct!</div>${_infoBtn}`;
+    const _whyOk=(typeof fbChoiceHTML==='function')?fbChoiceHTML(q,chosenOrigIdx):'';
+    fb.innerHTML=`<div class="fbt"><svg class="fb-ic" viewBox="0 0 24 24" width="19" height="19" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Correct!</div>${_whyOk}${_infoBtn}`;
   }else{
     const correctText=q.o[q.c]||'';
-    const _whyWrong=(typeof fbWhyWrongHTML==='function')?fbWhyWrongHTML(q):'';
+    // Slimme uitleg: bespreekt JOUW gekozen optie + waarom het juiste antwoord klopt.
+    // Valt terug op de leerdoel-generieke "veelgemaakte fout" als er geen per-optie-data is.
+    let _whyWrong=(typeof fbChoiceHTML==='function')?fbChoiceHTML(q,chosenOrigIdx):'';
+    if(!_whyWrong)_whyWrong=(typeof fbWhyWrongHTML==='function')?fbWhyWrongHTML(q):'';
     const _vonkAsk=`<button class="q-vonk-ask" onclick="vonkCoachFromQuiz()"><svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 5h16v11H10l-4 4V16H4z"/></svg>Vraag het aan Vonk</button>`;
     fb.innerHTML=`<div class="fbt"><svg class="fb-ic" viewBox="0 0 24 24" width="19" height="19" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 6 6 18M6 6l12 12"/></svg>Fout</div><div class="fbtx"><span class="fbtx-juist"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Juist:</span> ${correctText}</div>${_whyWrong}${_infoBtn}${_vonkAsk}`;
   }
@@ -429,7 +434,8 @@ function tijdOp(){
   const fb=document.getElementById('qfb');
   fb.style.display='block';
   fb.className='qfb fbtm';
-  const _whyTO=(typeof fbWhyWrongHTML==='function')?fbWhyWrongHTML(q):'';
+  let _whyTO=(typeof fbChoiceHTML==='function')?fbChoiceHTML(q,null):'';
+  if(!_whyTO)_whyTO=(typeof fbWhyWrongHTML==='function')?fbWhyWrongHTML(q):'';
   fb.innerHTML=`<div class="fbt" style="display:inline-flex;align-items:center;gap:7px">${ICO_CLOCK} Tijd is om!</div><div class="fbtx">${q.u}</div>${_whyTO}`;
   const nxt=document.getElementById('qnxt');
   nxt.style.display='block';

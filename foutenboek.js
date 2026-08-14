@@ -162,6 +162,31 @@ function fbWhyWrongHTML(q) {
   return `<div class="q-why"><span class="q-why-lbl">💡 Veelgemaakte fout</span> ${_fbEsc(enr.m)}</div>`;
 }
 
+// Slimme, keuze-specifieke uitleg: bespreekt de DOOR JOU gekozen optie (waarom fout)
+// én waarom het juiste antwoord klopt. Gebruikt FB_UITLEG (per-optie 'w'). chosenIdx
+// = originele optie-index (null = geen keuze, bv. tijd op). Leeg → caller valt terug.
+function fbChoiceHTML(q, chosenIdx) {
+  if (!q) return '';
+  const vakId = (q._fbVak) || (typeof ST !== 'undefined' && ST.vak && ST.vak.id);
+  const domId = (q._fbDom) || (typeof ST !== 'undefined' && ST.domein && ST.domein.id);
+  if (!vakId || !domId) return '';
+  const uit = (typeof fbUitlegFor === 'function') ? fbUitlegFor(vakId, domId, q.v) : null;
+  if (!uit || !Array.isArray(uit.opts)) return '';
+  const cIdx = q.c, opts = q.o || [];
+  const chose = (typeof chosenIdx === 'number' && chosenIdx >= 0 && chosenIdx < uit.opts.length);
+  let html = '<div class="q-why q-why-smart">';
+  if (chose && chosenIdx !== cIdx && uit.opts[chosenIdx]) {
+    html += `<div class="q-why-row q-why-mine"><span class="q-why-lbl q-why-x">Jouw keuze</span><span class="q-why-t"><b>${_fbEsc(opts[chosenIdx] || '')}</b> — ${_fbEsc(uit.opts[chosenIdx].w)}</span></div>`;
+  }
+  if (uit.opts[cIdx]) {
+    const w = (uit.opts[cIdx].w || '').replace(/^Klopt[:!]?\s*/i, '');
+    html += `<div class="q-why-row q-why-good"><span class="q-why-lbl q-why-v">Waarom juist</span><span class="q-why-t">${_fbEsc(w)}</span></div>`;
+  }
+  if (uit.herken) html += `<div class="q-why-row q-why-tip"><span class="q-why-lbl q-why-h">Onthoud</span><span class="q-why-t">${_fbEsc(uit.herken)}</span></div>`;
+  html += '</div>';
+  return html;
+}
+
 // ─── STATUS + HULP ───
 function _fbStatus(e) {
   if (e.mastered) return { k: 'mastered', dot: '🟢', label: 'Beheerst' };
