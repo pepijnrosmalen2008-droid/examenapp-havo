@@ -780,6 +780,9 @@ html.dark .qb{background:#2e3550}
 .sam-check-opt.ck-wrong{background:rgba(239,68,68,.08)!important;border-color:#ef4444!important;color:#dc2626}
 .sam-check-opt.ck-reveal{background:rgba(34,197,94,.07)!important;border-color:#86efac!important}
 .sam-check-fb{font-size:12px;margin-top:8px;padding:7px 10px;border-radius:7px;line-height:1.5;border-left:3px solid transparent}
+.sam-check-head{font-weight:800;margin-bottom:4px}
+.sam-check-fb .q-why-smart{margin-top:6px;text-align:left}
+.sam-check-fb .q-why-row{font-size:12px}
 .sam-check-fb.fb-ok{background:rgba(34,197,94,.09);border-color:#22c55e;color:#15803d}
 .sam-check-fb.fb-err{background:rgba(239,68,68,.07);border-color:#ef4444;color:var(--dk)}
 /* ── Sam: leesvoortgang (fase 4) ── */

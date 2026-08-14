@@ -544,7 +544,11 @@ function initSamInteractive(container, d) {
             if (!ok) ck.querySelectorAll('.sam-check-opt')[ci]?.classList.add('ck-reveal');
             const fb = document.createElement('div');
             fb.className = `sam-check-fb ${ok?'fb-ok':'fb-err'}`;
-            fb.textContent = ok ? '✓ Goed!' : `✗ ${(q.u||'').split('.')[0]||'Niet helemaal'}.`;
+            // Slimme, keuze-specifieke uitleg (zelfde als de hoofd-quiz). sh[i].i = originele optie-index.
+            const chosenOrig = sh[i] ? sh[i].i : q.c;
+            const smart = (typeof fbChoiceHTML === 'function') ? fbChoiceHTML(q, chosenOrig) : '';
+            if (smart) fb.innerHTML = `<div class="sam-check-head">${ok?'✓ Goed!':'✗ Niet helemaal'}</div>${smart}`;
+            else fb.textContent = ok ? '✓ Goed!' : `✗ ${(q.u||'').split('.')[0]||'Niet helemaal'}.`;
             ck.querySelector('.sam-check-opts').after(fb);
           });
         });

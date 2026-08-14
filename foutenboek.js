@@ -167,10 +167,16 @@ function fbWhyWrongHTML(q) {
 // = originele optie-index (null = geen keuze, bv. tijd op). Leeg → caller valt terug.
 function fbChoiceHTML(q, chosenIdx) {
   if (!q) return '';
-  const vakId = (q._fbVak) || (typeof ST !== 'undefined' && ST.vak && ST.vak.id);
-  const domId = (q._fbDom) || (typeof ST !== 'undefined' && ST.domein && ST.domein.id);
-  if (!vakId || !domId) return '';
-  const uit = (typeof fbUitlegFor === 'function') ? fbUitlegFor(vakId, domId, q.v) : null;
+  // 1) Inline op de vraag (uo = per-optie 'waarom', uh = onthoud-tip): laadt altijd
+  //    mee met de vraag, geen apart bestand nodig. 2) anders FB_UITLEG (los bestand).
+  let uit = null;
+  if (Array.isArray(q.uo)) {
+    uit = { opts: q.uo.map((w, i) => ({ w: w, juist: i === q.c })), herken: q.uh || '' };
+  } else {
+    const vakId = (q._fbVak) || (typeof ST !== 'undefined' && ST.vak && ST.vak.id);
+    const domId = (q._fbDom) || (typeof ST !== 'undefined' && ST.domein && ST.domein.id);
+    if (vakId && domId && typeof fbUitlegFor === 'function') uit = fbUitlegFor(vakId, domId, q.v);
+  }
   if (!uit || !Array.isArray(uit.opts)) return '';
   const cIdx = q.c, opts = q.o || [];
   const chose = (typeof chosenIdx === 'number' && chosenIdx >= 0 && chosenIdx < uit.opts.length);
