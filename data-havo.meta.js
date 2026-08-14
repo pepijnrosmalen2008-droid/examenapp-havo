@@ -345,7 +345,7 @@ var VAKKEN = [
       "ceStatus": "CE",
       "onderwerpen": [
        "Selectief doorlaatbaar celmembraan",
-       "Diffusie & concentratiegradient",
+       "Diffusie & concentratiegradiënt",
        "Osmose (water)",
        "Hypertoon, hypotoon, isotoon",
        "Passief vs actief transport",

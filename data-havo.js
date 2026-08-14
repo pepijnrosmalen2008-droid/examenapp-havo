@@ -12790,7 +12790,7 @@ var VAKKEN = [
        "v": "Waardoor blijft een plant stevig staan, ook zonder skelet?",
        "o": [
         "Door de vele mitochondriën die in elke cel energie leveren",
-        "Door de celwanden en de gevulde vacuoles die de cellen stevig houden",
+        "Door de celwanden en de gevulde vacuolen die de cellen stevig houden",
         "Door de celkernen met daarin het erfelijke DNA-materiaal",
         "Door het bladgroen in de bladeren"
        ],
@@ -12799,7 +12799,7 @@ var VAKKEN = [
        "u": "Onthoud: celwanden en volle vacuoles maken plantenweefsel stevig (turgor).",
        "uo": [
         "Mitochondriën leveren energie, maar geven de plant geen stevigheid.",
-        "Klopt: de celwanden en de met vocht gevulde vacuoles houden de cellen stevig.",
+        "Klopt: de celwanden en de met vocht gevulde vacuolen houden de cellen stevig.",
         "De celkern stuurt de cel aan, maar zorgt niet voor stevigheid.",
         "Bladgroen vangt licht op, dat geeft geen stevigheid."
        ],
@@ -12999,13 +12999,13 @@ var VAKKEN = [
      "ceStatus": "CE",
      "onderwerpen": [
       "Selectief doorlaatbaar celmembraan",
-      "Diffusie & concentratiegradient",
+      "Diffusie & concentratiegradiënt",
       "Osmose (water)",
       "Hypertoon, hypotoon, isotoon",
       "Passief vs actief transport",
       "Plasmolyse & turgor"
      ],
-     "sam": "Het celmembraan is selectief doorlaatbaar: het laat sommige stoffen door en andere niet. Bij diffusie verplaatsen deeltjes zich netto van een hoge naar een lage concentratie, tot er evenwicht is. Osmose is de diffusie van water door een selectief doorlaatbaar membraan, naar de kant met meer opgeloste stof (minder water). Passief transport kost geen energie en gaat met de gradient mee; actief transport kost energie (ATP) en gaat tegen de gradient in. In een hypertoon milieu verliest een cel water, in een hypotoon milieu neemt hij water op.",
+     "sam": "Het celmembraan is selectief doorlaatbaar: het laat sommige stoffen door en andere niet. Bij diffusie verplaatsen deeltjes zich netto van een hoge naar een lage concentratie, tot er evenwicht is. Osmose is de diffusie van water door een selectief doorlaatbaar membraan, naar de kant met meer opgeloste stof (minder water). Passief transport kost geen energie en gaat met de gradiënt mee; actief transport kost energie (ATP) en gaat tegen de gradiënt in. In een hypertoon milieu verliest een cel water, in een hypotoon milieu neemt hij water op.",
      "begrippen": [
       {
        "t": "Celmembraan",
@@ -13024,16 +13024,16 @@ var VAKKEN = [
        "d": "Diffusie van water door een selectief doorlaatbaar membraan, naar de kant met meer opgeloste stof."
       },
       {
-       "t": "Concentratiegradient",
+       "t": "Concentratiegradiënt",
        "d": "Het verschil in concentratie tussen twee plaatsen; stoffen bewegen vanzelf van hoog naar laag."
       },
       {
        "t": "Passief transport",
-       "d": "Transport met de concentratiegradient mee; dit kost de cel geen energie."
+       "d": "Transport met de concentratiegradiënt mee; dit kost de cel geen energie."
       },
       {
        "t": "Actief transport",
-       "d": "Transport tegen de concentratiegradient in; dit kost energie in de vorm van ATP."
+       "d": "Transport tegen de concentratiegradiënt in; dit kost energie in de vorm van ATP."
       },
       {
        "t": "Hypertoon",
@@ -13061,7 +13061,7 @@ var VAKKEN = [
        "v": "Wat is diffusie?",
        "o": [
         "Netto verplaatsing van deeltjes van hoge naar lage concentratie",
-        "De verplaatsing van water tegen de concentratiegradient in met behulp van energie",
+        "De verplaatsing van water tegen de concentratiegradiënt in met behulp van energie",
         "Het volledig tegenhouden van alle deeltjes door het celmembraan van de cel",
         "Het opbouwen van grote moleculen uit kleine bouwstenen binnen in de cel"
        ],
@@ -13070,7 +13070,7 @@ var VAKKEN = [
        "u": "Onthoud: diffusie is netto verplaatsing van veel naar weinig, tot evenwicht.",
        "uo": [
         "Klopt: deeltjes bewegen netto van een hoge naar een lage concentratie.",
-        "Dat is juist actief transport: tegen de gradient in en met energie.",
+        "Dat is juist actief transport: tegen de gradiënt in en met energie.",
         "Diffusie houdt niets tegen; dat is juist de rol van een dicht membraan.",
         "Moleculen opbouwen is assimilatie, dat heeft niets met diffusie te maken."
        ],
@@ -13120,37 +13120,37 @@ var VAKKEN = [
         "Ja, er is voortdurend veel ATP-energie voor nodig om het te laten werken",
         "Nee, het kost geen energie",
         "Ja, maar alleen wanneer de cel in een hypertoon milieu terechtkomt",
-        "Nee, maar het gaat wel tegen de concentratiegradient in de cel in"
+        "Nee, maar het gaat wel tegen de concentratiegradiënt in de cel in"
        ],
        "c": 1,
        "d": 1,
-       "u": "Onthoud: passief transport gaat met de gradient mee en kost geen energie.",
+       "u": "Onthoud: passief transport gaat met de gradiënt mee en kost geen energie.",
        "uo": [
         "Nee, ATP is juist nodig bij actief transport, niet bij passief transport.",
-        "Klopt: passief transport gaat met de gradient mee en kost geen energie.",
+        "Klopt: passief transport gaat met de gradiënt mee en kost geen energie.",
         "Passief transport kost ook in een hypertoon milieu geen energie.",
-        "Passief transport gaat juist met de gradient mee, niet ertegenin."
+        "Passief transport gaat juist met de gradiënt mee, niet ertegenin."
        ],
-       "uh": "Passief = gratis, met de gradient mee."
+       "uh": "Passief = gratis, met de gradiënt mee."
       },
       {
        "v": "Wat geldt voor actief transport?",
        "o": [
-        "Het gaat met de concentratiegradient mee en kost daarom geen energie",
+        "Het gaat met de concentratiegradiënt mee en kost daarom geen energie",
         "Het is hetzelfde proces als gewone passieve diffusie door het membraan",
         "Het verplaatst enkel water door een selectief doorlaatbaar membraan",
-        "Het kost energie (ATP) en gaat tegen de concentratiegradient in"
+        "Het kost energie (ATP) en gaat tegen de concentratiegradiënt in"
        ],
        "c": 3,
        "d": 1,
-       "u": "Onthoud: actief transport kost ATP en gaat tegen de gradient in.",
+       "u": "Onthoud: actief transport kost ATP en gaat tegen de gradiënt in.",
        "uo": [
-        "Met de gradient mee en gratis hoort juist bij passief transport.",
+        "Met de gradiënt mee en gratis hoort juist bij passief transport.",
         "Actief transport verschilt van diffusie: het kost energie en gaat tegenin.",
         "Water door een membraan is osmose, dat is geen actief transport.",
-        "Klopt: actief transport kost ATP en gaat tegen de concentratiegradient in."
+        "Klopt: actief transport kost ATP en gaat tegen de concentratiegradiënt in."
        ],
-       "uh": "Actief = ATP + tegen de gradient in."
+       "uh": "Actief = ATP + tegen de gradiënt in."
       },
       {
        "v": "Bij osmose gaat het water naar de kant met...",
@@ -13318,7 +13318,7 @@ var VAKKEN = [
        "uo": [
         "Klopt: de cellen nemen water op, de vacuoles vullen zich en de plant wordt stevig.",
         "Plasmolyse is juist het tegenovergestelde: cellen die water verliezen.",
-        "Actief transport gaat over stoffen tegen de gradient in, niet over stevigheid.",
+        "Actief transport gaat over stoffen tegen de gradiënt in, niet over stevigheid.",
         "Een hypertoon milieu zou de plant juist water laten verliezen."
        ],
        "uh": "Water erin, turgor terug, plant stevig."
@@ -13345,21 +13345,21 @@ var VAKKEN = [
       {
        "v": "Wortelcellen nemen mineralen op terwijl er binnen al meer zit dan in de grond. Hoe kan dat?",
        "o": [
-        "Door gewone diffusie met de concentratiegradient mee",
+        "Door gewone diffusie met de concentratiegradiënt mee",
         "Door osmose van water dat de mineralen meesleurt",
         "Door actief transport, dat kost energie",
         "Dat kan niet, mineralen bewegen alleen van veel naar weinig"
        ],
        "c": 2,
        "d": 2,
-       "u": "Onthoud: opname tegen de gradient in gaat via actief transport en kost energie.",
+       "u": "Onthoud: opname tegen de gradiënt in gaat via actief transport en kost energie.",
        "uo": [
-        "Diffusie gaat van veel naar weinig; hier wordt juist tegen de gradient in opgenomen.",
+        "Diffusie gaat van veel naar weinig; hier wordt juist tegen de gradiënt in opgenomen.",
         "Osmose gaat over water, niet over het naar binnen halen van mineralen.",
-        "Klopt: tegen de gradient in kan alleen via actief transport, dat kost energie.",
-        "Het kan wel: met energie kan de cel stoffen tegen de gradient in opnemen."
+        "Klopt: tegen de gradiënt in kan alleen via actief transport, dat kost energie.",
+        "Het kan wel: met energie kan de cel stoffen tegen de gradiënt in opnemen."
        ],
-       "uh": "Tegen de gradient in? Actief, kost ATP."
+       "uh": "Tegen de gradiënt in? Actief, kost ATP."
       },
       {
        "v": "Waarom blijft voedsel in een sterke zout- of suikeroplossing langer goed?",
@@ -13440,19 +13440,19 @@ var VAKKEN = [
       {
        "v": "Waarom kost actief transport wel energie en passief transport niet?",
        "o": [
-        "Passief transport gaat tegen de gradient in, dat kost juist moeite",
+        "Passief transport gaat tegen de gradiënt in, dat kost juist moeite",
         "Actief transport verloopt langzamer dan passief transport door de cel",
         "Bij passief transport wordt de vloeistof verwarmd, en dat kost geen energie",
-        "Actief gaat tegen de gradient in, passief gaat er met de gradient mee"
+        "Actief gaat tegen de gradiënt in, passief gaat er met de gradiënt mee"
        ],
        "c": 3,
        "d": 2,
-       "u": "Onthoud: tegen de gradient in kost energie, met de gradient mee gaat vanzelf.",
+       "u": "Onthoud: tegen de gradiënt in kost energie, met de gradiënt mee gaat vanzelf.",
        "uo": [
-        "Andersom: juist actief transport gaat tegen de gradient in en kost energie.",
-        "De snelheid is niet de reden; het gaat om de richting ten opzichte van de gradient.",
-        "Verwarmen is niet de reden; passief gaat gratis omdat het met de gradient mee gaat.",
-        "Klopt: actief gaat tegen de gradient in (kost energie), passief gaat ermee mee."
+        "Andersom: juist actief transport gaat tegen de gradiënt in en kost energie.",
+        "De snelheid is niet de reden; het gaat om de richting ten opzichte van de gradiënt.",
+        "Verwarmen is niet de reden; passief gaat gratis omdat het met de gradiënt mee gaat.",
+        "Klopt: actief gaat tegen de gradiënt in (kost energie), passief gaat ermee mee."
        ],
        "uh": "Tegenin kost, met de stroom mee is gratis."
       },
@@ -13567,12 +13567,12 @@ var VAKKEN = [
       {
        "bron": "Proef met de wortel en mineralen",
        "ctx": "Een onderzoeker meet dat in de cellen van een plantenwortel de concentratie kaliumionen veel hoger is dan in het bodemwater eromheen. Toch blijft de wortel nog meer kalium uit de bodem opnemen. Als de wortel wordt afgekoeld en er geen ATP meer beschikbaar is, stopt de opname van kalium.",
-       "v": "Verklaar hoe de wortel kalium tegen de concentratiegradient in kan opnemen en waarom de opname stopt zonder ATP.",
+       "v": "Verklaar hoe de wortel kalium tegen de concentratiegradiënt in kan opnemen en waarom de opname stopt zonder ATP.",
        "o": [
         ""
        ],
        "c": 0,
-       "u": "In de wortelcel zit al meer kalium dan in de bodem, dus opname gaat tegen de concentratiegradient in. Dat kan niet met passief transport of diffusie (die gaan van veel naar weinig), maar via actief transport. Actief transport kost energie in de vorm van ATP. Zonder ATP heeft de cel geen energie meer om kalium tegen de gradient in te pompen, dus stopt de opname. (Kernpunten: [1] opname tegen de gradient in vereist actief transport; [2] actief transport kost ATP, zonder ATP valt de opname stil.)"
+       "u": "In de wortelcel zit al meer kalium dan in de bodem, dus opname gaat tegen de concentratiegradiënt in. Dat kan niet met passief transport of diffusie (die gaan van veel naar weinig), maar via actief transport. Actief transport kost energie in de vorm van ATP. Zonder ATP heeft de cel geen energie meer om kalium tegen de gradiënt in te pompen, dus stopt de opname. (Kernpunten: [1] opname tegen de gradiënt in vereist actief transport; [2] actief transport kost ATP, zonder ATP valt de opname stil.)"
       },
       {
        "bron": "Casus slakken en zout",

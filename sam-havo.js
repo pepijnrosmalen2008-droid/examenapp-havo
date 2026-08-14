@@ -64,6 +64,95 @@ Object.assign(SAM_RICH,{
 
 // bi.M.3 Enzymwerking - hoofdstuk-structuur (begrippenlijst + onderwerpen met beeld). Zie docs/SLICE0-PROEFSNEDE-bi.M.3.md
 Object.assign(SAM_RICH,{
+'havo_bi_M1':`<div class="sam-intro">Alle organismen bestaan uit <strong>cellen</strong>. In een cel doen kleine onderdelen, de <strong>organellen</strong>, elk hun eigen werk. Hieronder eerst een begrippenlijst, daarna drie hoofdstukjes met beeld.</div>
+<table class="sam-table"><thead><tr><th>Onderdeel</th><th>Functie</th></tr></thead><tbody>
+<tr><td><strong>Celmembraan</strong></td><td>grens van de cel; regelt wat er in en uit gaat (selectief doorlaatbaar)</td></tr>
+<tr><td><strong>Celkern</strong></td><td>bevat het DNA en stuurt de cel aan</td></tr>
+<tr><td><strong>Mitochondrion</strong></td><td>celademhaling: levert energie uit glucose</td></tr>
+<tr><td><strong>Bladgroenkorrel</strong></td><td>fotosynthese; alleen in plantencellen</td></tr>
+<tr><td><strong>Ribosoom</strong></td><td>maakt de eiwitten</td></tr>
+<tr><td><strong>Vacuole</strong></td><td>opslag van vocht/stoffen; houdt de plantencel stevig</td></tr>
+<tr><td><strong>Celwand</strong></td><td>stevigheid; alleen om plantencellen</td></tr>
+</tbody></table>
+<div class="sam-chapter">
+<div class="sam-ch-title"><span class="sam-ch-n">1</span> De cel en zijn organellen</div>
+<p>De <strong>celkern</strong> is de baas: daar ligt het DNA. Het <strong>mitochondrion</strong> levert energie (celademhaling), de <strong>ribosomen</strong> maken eiwitten, en het <strong>celmembraan</strong> bepaalt wat de cel in en uit mag.</p>
+<div class="sam-figure"><svg viewBox="0 0 320 180" width="100%" role="img" aria-label="Diercel met celmembraan, celkern, mitochondrien en ribosomen">
+<rect x="18" y="16" width="284" height="148" rx="40" fill="#eef3f8" stroke="#9db4c9" stroke-width="2"/>
+<circle cx="150" cy="92" r="34" fill="#c7b3e0"/><circle cx="150" cy="92" r="12" fill="#8f74b8"/><text x="150" y="140" text-anchor="middle" font-size="11" fill="#6b5090" font-family="sans-serif">celkern</text>
+<ellipse cx="240" cy="60" rx="24" ry="13" fill="#c96a6a"/><text x="240" y="40" text-anchor="middle" font-size="10" fill="#8f3f3f" font-family="sans-serif">mitochondrion</text>
+<ellipse cx="66" cy="118" rx="22" ry="12" fill="#c96a6a"/>
+<circle cx="230" cy="120" r="4" fill="#4ea36b"/><circle cx="245" cy="128" r="4" fill="#4ea36b"/><circle cx="238" cy="110" r="4" fill="#4ea36b"/><text x="240" y="150" text-anchor="middle" font-size="10" fill="#2f7d4f" font-family="sans-serif">ribosomen</text>
+<text x="40" y="30" font-size="10" fill="#5a7085" font-family="sans-serif">celmembraan</text>
+</svg><div class="sam-figcap">Een dierlijke cel met kern, mitochondrien en ribosomen</div></div>
+<div class="sam-onthoud"><strong>Onthoud:</strong> kern = aansturing en DNA, mitochondrion = energie, ribosoom = eiwitten, membraan = grens.</div>
+</div>
+<div class="sam-chapter">
+<div class="sam-ch-title"><span class="sam-ch-n">2</span> Plantencel of dierlijke cel</div>
+<p>Een <strong>plantencel</strong> heeft drie dingen extra die een dierlijke cel niet heeft: een stevige <strong>celwand</strong>, <strong>bladgroenkorrels</strong> voor de fotosynthese, en een grote centrale <strong>vacuole</strong>.</p>
+<div class="sam-figure"><svg viewBox="0 0 320 170" width="100%" role="img" aria-label="Plantencel met celwand, bladgroenkorrels en grote vacuole naast een dierlijke cel">
+<rect x="16" y="24" width="130" height="120" rx="6" fill="#dcefe2" stroke="#4ea36b" stroke-width="4"/><rect x="40" y="55" width="80" height="58" rx="8" fill="#bfe0cc"/><text x="80" y="88" text-anchor="middle" font-size="10" fill="#3c8a58" font-family="sans-serif">vacuole</text>
+<circle cx="34" cy="40" r="6" fill="#4ea36b"/><circle cx="128" cy="128" r="6" fill="#4ea36b"/><text x="80" y="160" text-anchor="middle" font-size="10" fill="#2f7d4f" font-family="sans-serif">plantencel</text>
+<circle cx="238" cy="84" r="54" fill="#eef3f8" stroke="#9db4c9" stroke-width="2"/><circle cx="238" cy="84" r="16" fill="#c7b3e0"/><text x="238" y="160" text-anchor="middle" font-size="10" fill="#5a7085" font-family="sans-serif">dierlijke cel</text>
+</svg><div class="sam-figcap">Plantencel (met celwand, groene korrels, vacuole) vs dierlijke cel</div></div>
+<div class="sam-onthoud"><strong>Onthoud:</strong> celwand + bladgroenkorrels + grote vacuole = alleen bij de plantencel.</div>
+</div>
+<div class="sam-chapter">
+<div class="sam-ch-title"><span class="sam-ch-n">3</span> Met of zonder celkern</div>
+<p>Planten- en dierlijke cellen hebben een echte <strong>celkern</strong> met het DNA erin: dat heet <strong>eukaryoot</strong>. Een <strong>bacteriecel</strong> heeft geen celkern; het DNA ligt los in de cel. Dat heet <strong>prokaryoot</strong>.</p>
+<div class="sam-figure"><svg viewBox="0 0 320 160" width="100%" role="img" aria-label="Eukaryote cel met celkern naast een bacteriecel met los DNA">
+<circle cx="82" cy="78" r="52" fill="#eef3f8" stroke="#9db4c9" stroke-width="2"/><circle cx="82" cy="78" r="18" fill="#c7b3e0"/><text x="82" y="82" text-anchor="middle" font-size="9" fill="#6b5090" font-family="sans-serif">kern</text><text x="82" y="146" text-anchor="middle" font-size="10" fill="#5a7085" font-family="sans-serif">eukaryoot</text>
+<rect x="188" y="44" width="112" height="68" rx="30" fill="#fdeccd" stroke="#d9a441" stroke-width="2"/><path d="M214 78q12-14 24 0t24 0" stroke="#b5772a" stroke-width="3" fill="none"/><text x="244" y="140" text-anchor="middle" font-size="10" fill="#a06a22" font-family="sans-serif">bacterie (prokaryoot)</text>
+</svg><div class="sam-figcap">Eukaryoot = kern aanwezig; prokaryoot (bacterie) = DNA los in de cel</div></div>
+<div class="sam-onthoud"><strong>Onthoud:</strong> eukaryoot = met celkern, prokaryoot (bacterie) = zonder celkern.</div>
+</div>`,
+'havo_bi_M2':`<div class="sam-intro">Het <strong>celmembraan</strong> bepaalt wat de cel in en uit gaat. Stoffen bewegen soms vanzelf (<strong>diffusie</strong> en <strong>osmose</strong>), soms kost het de cel energie (<strong>actief transport</strong>). Hieronder eerst een begrippenlijst, daarna drie hoofdstukjes met beeld.</div>
+<table class="sam-table"><thead><tr><th>Begrip</th><th>Kort</th></tr></thead><tbody>
+<tr><td><strong>Diffusie</strong></td><td>deeltjes bewegen van hoge naar lage concentratie</td></tr>
+<tr><td><strong>Osmose</strong></td><td>diffusie van water door een selectief doorlaatbaar membraan</td></tr>
+<tr><td><strong>Hypertoon</strong></td><td>buiten meer opgeloste stof: de cel verliest water</td></tr>
+<tr><td><strong>Hypotoon</strong></td><td>buiten minder opgeloste stof: de cel neemt water op</td></tr>
+<tr><td><strong>Isotoon</strong></td><td>binnen en buiten gelijk: netto geen waterstroom</td></tr>
+<tr><td><strong>Passief transport</strong></td><td>kost geen energie, met de gradiënt mee</td></tr>
+<tr><td><strong>Actief transport</strong></td><td>kost energie, tegen de gradiënt in</td></tr>
+<tr><td><strong>Turgor</strong></td><td>stevigheid van een plantencel door de volle vacuole</td></tr>
+</tbody></table>
+<div class="sam-chapter">
+<div class="sam-ch-title"><span class="sam-ch-n">1</span> Diffusie en osmose</div>
+<p>Bij <strong>diffusie</strong> verspreiden deeltjes zich vanzelf van veel naar weinig, tot het overal gelijk is. <strong>Osmose</strong> is diffusie van <strong>water</strong> door een selectief doorlaatbaar membraan: het water gaat naar de kant met <strong>meer opgeloste stof</strong> (en dus minder water).</p>
+<div class="sam-figure"><svg viewBox="0 0 320 150" width="100%" role="img" aria-label="Water beweegt door een membraan naar de kant met meer opgeloste stof">
+<rect x="20" y="24" width="280" height="100" rx="8" fill="#eaf4fb" stroke="#8fb8d6" stroke-width="2"/>
+<line x1="160" y1="24" x2="160" y2="124" stroke="#5a7085" stroke-width="2" stroke-dasharray="4 4"/><text x="160" y="140" text-anchor="middle" font-size="9" fill="#5a7085" font-family="sans-serif">membraan</text>
+<circle cx="60" cy="60" r="5" fill="#c96a6a"/><circle cx="95" cy="95" r="5" fill="#c96a6a"/><text x="80" y="44" text-anchor="middle" font-size="10" fill="#8f3f3f" font-family="sans-serif">weinig opgelost</text>
+<circle cx="200" cy="55" r="5" fill="#c96a6a"/><circle cx="235" cy="90" r="5" fill="#c96a6a"/><circle cx="265" cy="60" r="5" fill="#c96a6a"/><circle cx="215" cy="100" r="5" fill="#c96a6a"/><text x="240" y="44" text-anchor="middle" font-size="10" fill="#8f3f3f" font-family="sans-serif">veel opgelost</text>
+<path d="M120 74h80" stroke="#2e7d9a" stroke-width="3" fill="none" marker-end="url(#owa)"/><text x="160" y="68" text-anchor="middle" font-size="10" fill="#2e7d9a" font-family="sans-serif">water</text>
+<defs><marker id="owa" markerWidth="9" markerHeight="9" refX="6" refY="3" orient="auto"><path d="M0 0l6 3-6 3z" fill="#2e7d9a"/></marker></defs>
+</svg><div class="sam-figcap">Bij osmose stroomt water naar de kant met meer opgeloste stof</div></div>
+<div class="sam-onthoud"><strong>Onthoud:</strong> water gaat bij osmose naar de kant met de meeste opgeloste stof.</div>
+</div>
+<div class="sam-chapter">
+<div class="sam-ch-title"><span class="sam-ch-n">2</span> Hypertoon, hypotoon, isotoon</div>
+<p>Ligt een cel in een <strong>hypertoon</strong> milieu (buiten meer opgeloste stof), dan <strong>verliest</strong> ze water en krimpt. In een <strong>hypotoon</strong> milieu <strong>neemt</strong> ze water op en zwelt. Bij <strong>isotoon</strong> is er netto geen waterstroom.</p>
+<div class="sam-figure"><svg viewBox="0 0 320 150" width="100%" role="img" aria-label="Cel in hypotoon zwelt, in isotoon gelijk, in hypertoon krimpt">
+<circle cx="55" cy="66" r="34" fill="#cfe8f5" stroke="#5a9bc0" stroke-width="2"/><path d="M55 32v-12M55 100v12M21 66h-12M89 66h12" stroke="#2e7d9a" stroke-width="2" marker-end="url(#hin)"/><text x="55" y="140" text-anchor="middle" font-size="10" fill="#2e7d9a" font-family="sans-serif">hypotoon (zwelt)</text>
+<circle cx="160" cy="66" r="26" fill="#e6ebef" stroke="#9db4c9" stroke-width="2"/><text x="160" y="140" text-anchor="middle" font-size="10" fill="#5a7085" font-family="sans-serif">isotoon (gelijk)</text>
+<circle cx="265" cy="66" r="18" fill="#f6ddd3" stroke="#c98a6a" stroke-width="2"/><path d="M265 40v-8M265 92v8M239 66h-8M291 66h8" stroke="#b5522f" stroke-width="2" marker-start="url(#hout)"/><text x="265" y="140" text-anchor="middle" font-size="10" fill="#b5522f" font-family="sans-serif">hypertoon (krimpt)</text>
+<defs><marker id="hin" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0 0l6 3-6 3z" fill="#2e7d9a"/></marker><marker id="hout" markerWidth="8" markerHeight="8" refX="2" refY="3" orient="auto"><path d="M6 0l-6 3 6 3z" fill="#b5522f"/></marker></defs>
+</svg><div class="sam-figcap">Hypotoon: water erin. Hypertoon: water eruit. Isotoon: in evenwicht</div></div>
+<div class="sam-onthoud"><strong>Onthoud:</strong> hyperTOON = teveel buiten, cel droogt uit; hypOTOON = weinig buiten, cel zwelt.</div>
+</div>
+<div class="sam-chapter">
+<div class="sam-ch-title"><span class="sam-ch-n">3</span> Passief en actief transport</div>
+<p><strong>Passief transport</strong> (zoals diffusie) gaat vanzelf met de gradiënt mee en kost <strong>geen</strong> energie. <strong>Actief transport</strong> gaat juist tegen de gradiënt in, van weinig naar veel, en kost daarom <strong>energie</strong> (ATP).</p>
+<div class="sam-figure"><svg viewBox="0 0 320 150" width="100%" role="img" aria-label="Passief transport met de gradiënt mee, actief transport tegen de gradiënt in met energie">
+<text x="80" y="26" text-anchor="middle" font-size="11" fill="#2f7d4f" font-family="sans-serif">passief</text>
+<path d="M40 50 L120 50 L120 110" stroke="#cbd5dd" stroke-width="10" fill="none"/><circle cx="52" cy="50" r="7" fill="#4ea36b"/><path d="M64 50h44" stroke="#2f7d4f" stroke-width="3" marker-end="url(#pa)"/><text x="80" y="128" text-anchor="middle" font-size="9" fill="#5a7085" font-family="sans-serif">met de gradiënt mee</text>
+<text x="240" y="26" text-anchor="middle" font-size="11" fill="#b5522f" font-family="sans-serif">actief</text>
+<path d="M200 110 L200 50 L280 50" stroke="#cbd5dd" stroke-width="10" fill="none"/><path d="M208 92v-30" stroke="#b5522f" stroke-width="3" marker-end="url(#aa)"/><text x="243" y="92" font-size="10" fill="#d98a1f" font-family="sans-serif">+ ATP</text><text x="240" y="128" text-anchor="middle" font-size="9" fill="#5a7085" font-family="sans-serif">tegen de gradiënt in</text>
+<defs><marker id="pa" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0 0l6 3-6 3z" fill="#2f7d4f"/></marker><marker id="aa" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0 0l6 3-6 3z" fill="#b5522f"/></marker></defs>
+</svg><div class="sam-figcap">Passief: gratis, met de gradiënt mee. Actief: kost ATP, tegen de gradiënt in</div></div>
+<div class="sam-onthoud"><strong>Onthoud:</strong> tegen de gradiënt in kost energie (actief); met de gradiënt mee is gratis (passief).</div>
+</div>`,
 'havo_bi_M4':`<div class="sam-intro">Planten <strong>maken hun eigen voedsel</strong>. Met <strong>fotosynthese</strong> bouwen ze glucose op uit CO2 en water, met <strong>licht</strong> als energiebron. Alle cellen <strong>verbranden</strong> die glucose weer met zuurstof (<strong>celademhaling</strong>) om er energie uit te halen. Hieronder eerst een begrippenlijst, daarna drie korte hoofdstukjes met beeld.</div>
 <table class="sam-table"><thead><tr><th>Begrip</th><th>Kort</th></tr></thead><tbody>
 <tr><td><strong>Fotosynthese</strong></td><td>glucose maken uit CO2 + water met licht (in de bladgroenkorrel)</td></tr>

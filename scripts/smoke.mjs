@@ -37,7 +37,7 @@ try {
   new Function('g', read('data.js') + '\n' + read('sam-havo.js') + '\n' + read('sam-vwo.js') +
     '\ng.S = SAM_RICH; g.er = typeof ensureSamData; g.sr = typeof samReady;')(g);
   const keys = Object.keys(g.S);
-  keys.length === 145 ? ok('145 samenvattingen (' +
+  keys.length === 147 ? ok('147 samenvattingen (' +
     keys.filter(k => k.startsWith('havo_')).length + ' havo + ' +
     keys.filter(k => k.startsWith('vwo_')).length + ' vwo)') : bad('verwacht 144, kreeg ' + keys.length);
   g.er === 'function' && g.sr === 'function' ? ok('ensureSamData/samReady bestaan') : bad('lazy-loaders ontbreken');
