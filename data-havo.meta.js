@@ -323,7 +323,7 @@ var VAKKEN = [
      "Herbruikbaarheid",
      "Transfer: onbekend enzym"
     ],
-    "nSv": 8,
+    "nSv": 25,
     "nOe": 0,
     "nBeg": 0
    },

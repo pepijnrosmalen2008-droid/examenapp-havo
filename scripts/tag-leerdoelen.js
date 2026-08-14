@@ -22,6 +22,9 @@ const CHECK = args.includes('--check');
 const NIVEAU = args.find(a => !a.startsWith('--') && ['havo', 'vwo'].includes(a)) || 'havo';
 const VAKID = args.find(a => !a.startsWith('--') && !['havo', 'vwo'].includes(a)) || 'bi';
 
+// ── Domein-module → leerdoel (hele module koppelt aan één leerdoel; Content-Engine-modules). ──
+const DOMEIN_LO = { bi: { M3: 'bi.M.3' } };
+
 // ── Handmatige overrides per vak: qkey-tekst (eerste 80 tekens van v) → leerdoel-id ──
 // Voor restambiguïteiten na matcher + conceptopschoning. source=manual_override, confidence=1.0
 const OVERRIDES_ALL = {
@@ -225,7 +228,9 @@ for (const d of vak.domeinen) {
 
     let entry;
     const ovKey = key.slice(key.indexOf('|') + 1); // op vraagtekst gematcht (domein-onafhankelijk)
-    if (OFF_LEVEL[ovKey]) { entry = { lo: null, confidence: 0, source: 'off_level', via: null, offReason: OFF_LEVEL[ovKey] }; stat.offlevel++; }
+    const domLo = (DOMEIN_LO[VAKID] || {})[d.id]; // hele domein-module → één leerdoel (schaalt zonder per-vraag-override)
+    if (domLo) { entry = { lo: domLo, confidence: 1.0, source: 'manual_override', via: 'domein-module' }; stat.override++; }
+    else if (OFF_LEVEL[ovKey]) { entry = { lo: null, confidence: 0, source: 'off_level', via: null, offReason: OFF_LEVEL[ovKey] }; stat.offlevel++; }
     else if (OVERRIDES[ovKey]) { entry = { lo: OVERRIDES[ovKey], confidence: 1.0, source: 'manual_override', via: null }; stat.override++; }
     else {
       const m = classify(lds, hay, q);
