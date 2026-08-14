@@ -259,6 +259,55 @@ Object.assign(SAM_RICH,{
 </svg><div class="sam-figcap">Meiose: 1 cel -> 4 geslachtscellen met het halve aantal chromosomen (n)</div></div>
 <div class="sam-onthoud"><strong>Onthoud:</strong> meiose = 4 cellen, halve chromosoomaantal, voor geslachtscellen en variatie.</div>
 </div>`,
+'havo_bi_M7':`<div class="sam-intro">Kenmerken worden bepaald door <strong>allelen</strong>: varianten van een gen. Met een <strong>kruisingsschema</strong> voorspel je welke kenmerken de nakomelingen krijgen. Hieronder eerst een begrippenlijst, daarna drie hoofdstukjes met beeld.</div>
+<table class="sam-table"><thead><tr><th>Begrip</th><th>Kort</th></tr></thead><tbody>
+<tr><td><strong>Allel</strong></td><td>een variant van een gen</td></tr>
+<tr><td><strong>Dominant (A)</strong></td><td>komt tot uiting zodra het aanwezig is; hoofdletter</td></tr>
+<tr><td><strong>Recessief (a)</strong></td><td>komt alleen tot uiting bij aa; kleine letter</td></tr>
+<tr><td><strong>Genotype</strong></td><td>de allelcombinatie (AA, Aa of aa)</td></tr>
+<tr><td><strong>Fenotype</strong></td><td>het waarneembare kenmerk</td></tr>
+<tr><td><strong>Homozygoot</strong></td><td>twee gelijke allelen (AA of aa)</td></tr>
+<tr><td><strong>Heterozygoot</strong></td><td>twee verschillende allelen (Aa); drager</td></tr>
+<tr><td><strong>Mutatie</strong></td><td>verandering in het DNA die een nieuw allel kan geven</td></tr>
+</tbody></table>
+<div class="sam-chapter">
+<div class="sam-ch-title"><span class="sam-ch-n">1</span> Allelen: dominant en recessief</div>
+<p>Een gen kan in varianten voorkomen: <strong>allelen</strong>. Een <strong>dominant</strong> allel (hoofdletter, A) komt tot uiting zodra het aanwezig is. Een <strong>recessief</strong> allel (kleine letter, a) komt alleen tot uiting als beide allelen recessief zijn (<strong>aa</strong>).</p>
+<div class="sam-figure"><svg viewBox="0 0 320 130" width="100%" role="img" aria-label="Genotypen AA, Aa en aa en welk kenmerk tot uiting komt">
+<g font-family="sans-serif" font-size="13" text-anchor="middle">
+<rect x="20" y="40" width="80" height="40" rx="8" fill="#cfe3f5"/><text x="60" y="58" fill="#2e6da0">AA</text><text x="60" y="100" font-size="10" fill="#2e6da0">dominant kenmerk</text>
+<rect x="120" y="40" width="80" height="40" rx="8" fill="#cfe3f5"/><text x="160" y="58" fill="#2e6da0">Aa</text><text x="160" y="100" font-size="10" fill="#2e6da0">dominant kenmerk</text>
+<rect x="220" y="40" width="80" height="40" rx="8" fill="#f6ddd3"/><text x="260" y="58" fill="#b5522f">aa</text><text x="260" y="100" font-size="10" fill="#b5522f">recessief kenmerk</text>
+</g></svg><div class="sam-figcap">Alleen genotype aa toont het recessieve kenmerk; AA en Aa tonen het dominante</div></div>
+<div class="sam-onthoud"><strong>Onthoud:</strong> dominant = hoofdletter en laat zich meteen zien; recessief kenmerk alleen bij aa.</div>
+</div>
+<div class="sam-chapter">
+<div class="sam-ch-title"><span class="sam-ch-n">2</span> Genotype en fenotype</div>
+<p>Het <strong>genotype</strong> is de allelcombinatie (AA, Aa of aa), het <strong>fenotype</strong> is wat je waarneemt. <strong>Homozygoot</strong> betekent twee gelijke allelen (AA of aa), <strong>heterozygoot</strong> twee verschillende (Aa). Een heterozygoot met een recessief ziekte-allel heet een <strong>drager</strong>.</p>
+<div class="sam-figure"><svg viewBox="0 0 320 120" width="100%" role="img" aria-label="Genotype leidt via allelen tot het waarneembare fenotype">
+<g font-family="sans-serif" font-size="11" text-anchor="middle">
+<rect x="24" y="42" width="96" height="38" rx="8" fill="#c7b3e0"/><text x="72" y="60" fill="#5a3f82">genotype</text><text x="72" y="74" font-size="9" fill="#5a3f82">Aa (heterozygoot)</text>
+<path d="M124 61h48" stroke="#5a7085" stroke-width="2" marker-end="url(#m7a)"/><text x="148" y="52" font-size="9" fill="#5a7085">komt tot uiting</text>
+<rect x="176" y="42" width="120" height="38" rx="8" fill="#d8f0dd"/><text x="236" y="60" fill="#2f7d4f">fenotype</text><text x="236" y="74" font-size="9" fill="#2f7d4f">het zichtbare kenmerk</text>
+</g><defs><marker id="m7a" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0 0l6 3-6 3z" fill="#5a7085"/></marker></defs>
+</svg><div class="sam-figcap">Genotype (allelen) bepaalt het fenotype (het waarneembare kenmerk)</div></div>
+<div class="sam-onthoud"><strong>Onthoud:</strong> genotype = de allelen (AA/Aa/aa); fenotype = wat je ziet. Aa = heterozygoot = drager.</div>
+</div>
+<div class="sam-chapter">
+<div class="sam-ch-title"><span class="sam-ch-n">3</span> Kruisingsschema: nakomelingen voorspellen</div>
+<p>Met een <strong>kruisingsschema</strong> (kruistabel) combineer je de allelen van beide ouders. Bij <strong>Aa x Aa</strong> krijg je AA, Aa, Aa en aa: in het fenotype <strong>3 dominant : 1 recessief</strong>, in het genotype <strong>1 : 2 : 1</strong>.</p>
+<div class="sam-figure"><svg viewBox="0 0 320 170" width="100%" role="img" aria-label="Kruistabel voor Aa maal Aa met uitkomsten AA, Aa, Aa en aa">
+<g font-family="sans-serif" font-size="14" text-anchor="middle">
+<text x="115" y="24" font-size="12" fill="#5a7085">A</text><text x="185" y="24" font-size="12" fill="#5a7085">a</text>
+<text x="66" y="78" font-size="12" fill="#5a7085">A</text><text x="66" y="140" font-size="12" fill="#5a7085">a</text>
+<rect x="82" y="34" width="66" height="56" fill="#cfe3f5" stroke="#fff" stroke-width="3"/><text x="115" y="68" fill="#2e6da0">AA</text>
+<rect x="152" y="34" width="66" height="56" fill="#cfe3f5" stroke="#fff" stroke-width="3"/><text x="185" y="68" fill="#2e6da0">Aa</text>
+<rect x="82" y="90" width="66" height="56" fill="#cfe3f5" stroke="#fff" stroke-width="3"/><text x="115" y="124" fill="#2e6da0">Aa</text>
+<rect x="152" y="90" width="66" height="56" fill="#f6ddd3" stroke="#fff" stroke-width="3"/><text x="185" y="124" fill="#b5522f">aa</text>
+<text x="268" y="70" font-size="11" fill="#2e6da0">3 dominant</text><text x="268" y="120" font-size="11" fill="#b5522f">1 recessief</text>
+</g></svg><div class="sam-figcap">Aa x Aa geeft AA, Aa, Aa, aa: fenotype 3:1, genotype 1:2:1</div></div>
+<div class="sam-onthoud"><strong>Onthoud:</strong> Aa x Aa geeft 3:1 in het fenotype en 1:2:1 in het genotype.</div>
+</div>`,
 'havo_bi_M4':`<div class="sam-intro">Planten <strong>maken hun eigen voedsel</strong>. Met <strong>fotosynthese</strong> bouwen ze glucose op uit CO2 en water, met <strong>licht</strong> als energiebron. Alle cellen <strong>verbranden</strong> die glucose weer met zuurstof (<strong>celademhaling</strong>) om er energie uit te halen. Hieronder eerst een begrippenlijst, daarna drie korte hoofdstukjes met beeld.</div>
 <table class="sam-table"><thead><tr><th>Begrip</th><th>Kort</th></tr></thead><tbody>
 <tr><td><strong>Fotosynthese</strong></td><td>glucose maken uit CO2 + water met licht (in de bladgroenkorrel)</td></tr>
