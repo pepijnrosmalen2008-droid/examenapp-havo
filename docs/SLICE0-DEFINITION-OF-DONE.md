@@ -1,7 +1,7 @@
-# Slice 0 — Definition of Done (één HAVO-biologiedomein)
+# Slice 0 - Definition of Done (één HAVO-biologiedomein)
 
 **Status:** vast te stellen (contract vóór generatie) · **Hoort bij:** `docs/CONTENT-ENGINE-V2.md` · **Scope:** één domein, hele pijplijn, **geen architectuurwijzigingen, geen extra features**.
-**Aanbevolen domein:** `bi_M` — Molecuul- en celniveau (7 leerdoelen). Reden: de semantic-pilot bestaat hier al (concept *Enzym*, `bi.M.3`), de architectuur gebruikt `bi.M.3` als kanoniek voorbeeld, en het domein zit vol clip-waardige processen (enzymwerking, osmose, fotosynthese, eiwitsynthese, mitose).
+**Aanbevolen domein:** `bi_M` - Molecuul- en celniveau (7 leerdoelen). Reden: de semantic-pilot bestaat hier al (concept *Enzym*, `bi.M.3`), de architectuur gebruikt `bi.M.3` als kanoniek voorbeeld, en het domein zit vol clip-waardige processen (enzymwerking, osmose, fotosynthese, eiwitsynthese, mitose).
 
 > **De lat is niet "veel vragen".** De lat is: *een leerling kan van nul naar examenbeheersing binnen dit domein, zonder Slagio te verlaten.* Slice 0 is pas klaar als dat voor één domein aantoonbaar waar is.
 
@@ -22,7 +22,7 @@ Een domein is "klaar" als deze matrix voor het domein groen is. De rechterkolom 
 | Examenvragen (examenredeneren) | ✅ produceren | vragen, leerhandeling *exam_reasoning* |
 | Transfer (≥2 concepten, nieuwe context) | ✅ produceren waar zinvol | vragen, leerhandeling *transfer* (C10) |
 | Examencontext (grafiek/bron/experiment/tabel/casus) | ✅ produceren waar zinvol | vraag-context-type (D5) |
-| Oude examens | ➖ koppelen | bestaande `oe`-bank / PDF's — niet genereren |
+| Oude examens | ➖ koppelen | bestaande `oe`-bank / PDF's - niet genereren |
 | Herhaling | ➖ koppelen | SM-2 / foutenboek bestaan al |
 | Uitleg | ✅ produceren | verplicht uitleg-schema per vraag |
 | Samenvatting | ✅ produceren | **Summary Engine (nieuw, minimaal)** |
@@ -35,7 +35,7 @@ Een domein is "klaar" als deze matrix voor het domein groen is. De rechterkolom 
 
 Legenda meetmethode: **[auto]** = bestaande/uit te breiden engine rekent het uit · **[auto+]** = engine bestaat, kleine uitbreiding nodig · **[mens/LLM]** = inhoudelijk oordeel.
 
-### A. Kennis (canonical knowledge — de bron)
+### A. Kennis (canonical knowledge - de bron)
 
 | # | Eis | Meetmethode | Drempel |
 |---|---|---|---|
@@ -52,7 +52,7 @@ Legenda meetmethode: **[auto]** = bestaande/uit te breiden engine rekent het uit
 | # | Eis | Meetmethode | Drempel |
 |---|---|---|---|
 | B1 | Dekt alle kernbegrippen van het domein | concept-node-dekking in de tekst **[auto+]** | 100% van de kernconcepten |
-| B2 | Inhoudelijke dekking + detailorde ≥ golden reference (zie §6.3 — **niet** "evenveel verbanden" tellen) | golden-reference-check **[auto+ / mens]** | alle essentiële verbanden gedekt · 100% verplichte kernbegrippen · geen syllabuskennis verloren · geen kunstmatige verlenging |
+| B2 | Inhoudelijke dekking + detailorde ≥ golden reference (zie §6.3 - **niet** "evenveel verbanden" tellen) | golden-reference-check **[auto+ / mens]** | alle essentiële verbanden gedekt · 100% verplichte kernbegrippen · geen syllabuskennis verloren · geen kunstmatige verlenging |
 | B3 | Geen onnodige opvulling | signaal-op-ruis / herhaalzin-detectie **[auto+]** | pass |
 | B4 | Elke bewering herleidbaar naar een semantic-fact of leerdoel | claim → fact-match **[mens/LLM]** | geen niet-gedekte bewering |
 | B5 | Vaste structuur: kernbegrippen · uitleg · verbanden · voorbeelden · uitzonderingen · examengerichte aandachtspunten | sectie-check **[auto]** | alle secties aanwezig |
@@ -63,7 +63,7 @@ Legenda meetmethode: **[auto]** = bestaande/uit te breiden engine rekent het uit
 | # | Eis | Meetmethode | Drempel |
 |---|---|---|---|
 | C1 | Meerdere leerhandelingen; niet 3× dezelfde definitievraag | leerhandeling-tag + semantische duplicaatdetectie **[auto+]** | ≥3 leerhandelingen aanwezig; 0 bijna-duplicaten |
-| C2 | Voldoende spreiding leerhandeling + moeilijkheid | verdeling vs. quota-mix **[auto]** | binnen de quota van §6.2 — **tenzij curriculumwaarheid dat verhindert (§6.4)** |
+| C2 | Voldoende spreiding leerhandeling + moeilijkheid | verdeling vs. quota-mix **[auto]** | binnen de quota van §6.2 - **tenzij curriculumwaarheid dat verhindert (§6.4)** |
 | C3 | Goede afleiders; ≥1 afleider = bekende misconceptie waar mogelijk | afleider-oordeel **[mens/LLM]** | pass |
 | C4 | Antwoordopties gelijkwaardig qua lengte/vorm | lengte-bias-check **[auto]** (bestaat) | binnen tolerantie |
 | C5 | Geen hints door formulering | grammaticale/lengte-tells **[auto+]** | pass |
@@ -71,8 +71,8 @@ Legenda meetmethode: **[auto]** = bestaande/uit te breiden engine rekent het uit
 | C7 | Ieder item gekoppeld aan concept + leerdoel + syllabusreferentie | koppeling-sidecar **[auto]** | 100% |
 | C8 | 4 opties · precies 1 juist · geen dubbele/lege opties | `evaluation-engine.js` **[auto]** (bestaat) | 100% |
 | C9 | Juist antwoord niet systematisch op één positie | antwoordpositie-bias-check **[auto]** (bestaat; vond 43%) | binnen tolerantie |
-| C10 | **Transfer-vraag** — waar het leerdoel het ondersteunt ≥1 item dat **≥2 canonieke concepten in een nieuwe context** combineert (niet los reproduceren) | leerhandeling-tag `transfer` + concept-koppeling telt ≥2 **[auto+]** | ≥1 per leerdoel/domein waar zinvol (§6.4: gerapporteerd gat = pass) |
-| C11 | **Afleider-taxonomie** — niet elke vraag leunt uitsluitend op een bekende misconceptie; per afleider een type: `misconceptie` / `contextueel` (waar-maar-niet-hier) / `redeneerfout` | afleider-`type`-veld verplicht; verdeling gemeten **[auto+]** | ≥2 afleidertypen over de vragenset; niet 100% misconceptie |
+| C10 | **Transfer-vraag** - waar het leerdoel het ondersteunt ≥1 item dat **≥2 canonieke concepten in een nieuwe context** combineert (niet los reproduceren) | leerhandeling-tag `transfer` + concept-koppeling telt ≥2 **[auto+]** | ≥1 per leerdoel/domein waar zinvol (§6.4: gerapporteerd gat = pass) |
+| C11 | **Afleider-taxonomie** - niet elke vraag leunt uitsluitend op een bekende misconceptie; per afleider een type: `misconceptie` / `contextueel` (waar-maar-niet-hier) / `redeneerfout` | afleider-`type`-veld verplicht; verdeling gemeten **[auto+]** | ≥2 afleidertypen over de vragenset; niet 100% misconceptie |
 
 ### D. Dekking
 
@@ -82,8 +82,8 @@ Legenda meetmethode: **[auto]** = bestaande/uit te breiden engine rekent het uit
 | D2 | Belangrijke concepten meer dan één keer getest, met verschillende leerhandelingen | per-concept vraagtelling × leerhandeling **[auto+]** | kernconcept ≥2 vragen, ≥2 leerhandelingen |
 | D3 | Zwakke/missende leerhandelingen zichtbaar in het dashboard | dashboard-matrix (outputtype × leerhandeling) **[auto+]** | matrix aanwezig |
 | D4 | De compleetheidsmatrix (§0) voor dit domein ingevuld | dashboard **[auto+]** | alle in-scope rijen ✅ |
-| D5 | **Examencontext-dekking** — waar het curriculum het ondersteunt komen bron/grafiek/experiment/tabel/casus als vraagcontext voor, niet alleen kale begripsvragen | context-`type`-veld per vraag; ≥2 contexttypen per domein **[auto+]** | ≥2 contexttypen aanwezig waar zinvol (§6.4) |
-| D6 | **Contextdiversiteit** — niet alle vragen van een leerdoel gebruiken dezelfde situatie/casus | context-hash-telling **[auto+]** | geen enkele context >50% van de items van een leerdoel |
+| D5 | **Examencontext-dekking** - waar het curriculum het ondersteunt komen bron/grafiek/experiment/tabel/casus als vraagcontext voor, niet alleen kale begripsvragen | context-`type`-veld per vraag; ≥2 contexttypen per domein **[auto+]** | ≥2 contexttypen aanwezig waar zinvol (§6.4) |
+| D6 | **Contextdiversiteit** - niet alle vragen van een leerdoel gebruiken dezelfde situatie/casus | context-hash-telling **[auto+]** | geen enkele context >50% van de items van een leerdoel |
 
 ### E. Evaluatie (de poort naar `live`)
 
@@ -94,7 +94,7 @@ Legenda meetmethode: **[auto]** = bestaande/uit te breiden engine rekent het uit
 | E3 | Dubbele / semantisch (bijna-)identieke vragen gedetecteerd en weg | duplicaatdetectie **[auto+]** | 0 duplicaten |
 | E4 | Inhoudelijke fouten gedetecteerd | feitcheck **[mens/LLM]** | 0 fouten |
 | E5 | **Gate:** pas `live`/`production` als A–E allemaal groen | pipeline-beleid **[auto]** | alle gates pass |
-| E6 | **Canonical overclaim-check** — geen absolute vereenvoudiging ("alleen", "altijd", "nooit", "precies één", "wordt altijd veroorzaakt door") als canonieke waarheid | `overclaim-check.js` **[auto]** (bestaat) | 0 niet-gerechtvaardigde overclaims |
+| E6 | **Canonical overclaim-check** - geen absolute vereenvoudiging ("alleen", "altijd", "nooit", "precies één", "wordt altijd veroorzaakt door") als canonieke waarheid | `overclaim-check.js` **[auto]** (bestaat) | 0 niet-gerechtvaardigde overclaims |
 
 ---
 
@@ -123,27 +123,27 @@ De harde regel blijft: de **evaluation-engine meet, de pipeline beslist** (score
 
 Volgorde = de pijplijn zelf; per stap: bestaat / minimale nieuwe code.
 
-1. **Kennis → approved** — `bi_M` van `reviewed` → `approved` (syllabus-check, A4/A6); semantic-facts uitbreiden van alleen *Enzym* naar alle kernconcepten van bi_M (A3). *Bestaat:* factory, semantic.js. *Nieuw:* niets structureels, wel content (feiten).
-2. **Summary Engine (minimaal, NIEUW)** — `leerdoel(en) bi_M → SAM_RICH`-entry met vaste secties (B5) en golden-reference-bewaking (B2). Kleinste vorm; zelfde uniforme engine-interface.
-3. **Vragen** — `question-engine.js` draaien voor bi_M met de leerhandeling-as + quota (C1/C2) en het verplichte uitleg-schema (C6, via `build-foutenboek-uitleg.js`). *Uitbreiding*, geen nieuwe engine.
-4. **Clip (waar nuttig)** — clip-opportunity-detector over bi_M; voor 1–2 kandidaten (bv. enzymwerking/denaturatie, osmose) een SPEC in `sam-clip.js`. *Nieuw:* de detector (klein); *bestaat:* de render-engine.
-5. **Evaluatie → gate** — `evaluation-engine.js` (uitgebreid met B2/E3/C1) draaien; alles groen ⇒ `approved` ⇒ live.
-6. **Live + meten** — domein zichtbaar met samenvatting + vragen + (eventuele) clip; events meten voor fase 2.
+1. **Kennis → approved** - `bi_M` van `reviewed` → `approved` (syllabus-check, A4/A6); semantic-facts uitbreiden van alleen *Enzym* naar alle kernconcepten van bi_M (A3). *Bestaat:* factory, semantic.js. *Nieuw:* niets structureels, wel content (feiten).
+2. **Summary Engine (minimaal, NIEUW)** - `leerdoel(en) bi_M → SAM_RICH`-entry met vaste secties (B5) en golden-reference-bewaking (B2). Kleinste vorm; zelfde uniforme engine-interface.
+3. **Vragen** - `question-engine.js` draaien voor bi_M met de leerhandeling-as + quota (C1/C2) en het verplichte uitleg-schema (C6, via `build-foutenboek-uitleg.js`). *Uitbreiding*, geen nieuwe engine.
+4. **Clip (waar nuttig)** - clip-opportunity-detector over bi_M; voor 1–2 kandidaten (bv. enzymwerking/denaturatie, osmose) een SPEC in `sam-clip.js`. *Nieuw:* de detector (klein); *bestaat:* de render-engine.
+5. **Evaluatie → gate** - `evaluation-engine.js` (uitgebreid met B2/E3/C1) draaien; alles groen ⇒ `approved` ⇒ live.
+6. **Live + meten** - domein zichtbaar met samenvatting + vragen + (eventuele) clip; events meten voor fase 2.
 
 ---
 
-## 5. Akkoord-checklist — VASTGESTELD
+## 5. Akkoord-checklist - VASTGESTELD
 
-- [x] Domeinkeuze `bi_M` — akkoord.
-- [x] Compleetheidsmatrix §0 (in-scope kolom) — akkoord.
-- [x] Drempels vastgesteld — zie §6.
+- [x] Domeinkeuze `bi_M` - akkoord.
+- [x] Compleetheidsmatrix §0 (in-scope kolom) - akkoord.
+- [x] Drempels vastgesteld - zie §6.
 - [x] Leerling-data-lus = fase 2; geen architectuurwijzigingen.
 
 Generatie mag beginnen. Daarna beoordelen we het resultaat van dit ene domein kritisch vóór er wordt opgeschaald.
 
 ---
 
-## 6. Vastgestelde drempels (definitief — bindend voor de generatie)
+## 6. Vastgestelde drempels (definitief - bindend voor de generatie)
 
 ### 6.1 Evaluatie-gate (minimumgate, geen gemiddelde)
 Een domein haalt `approved`/`live` alleen als **alle drie** waar zijn:
@@ -151,9 +151,9 @@ Een domein haalt `approved`/`live` alleen als **alle drie** waar zijn:
 2. **0 kritieke inhoudelijke issues** (een foutief antwoord, foute uitleg of onjuiste bewering is *kritiek* en kan **nooit** worden gecompenseerd door andere goede items), én
 3. **0 onbeantwoorde syllabus-/coveragegaten**.
 
-De 90 is dus een ondergrens bovenop twee harde nul-eisen — geen gemiddelde dat kritieke fouten verbergt.
+De 90 is dus een ondergrens bovenop twee harde nul-eisen - geen gemiddelde dat kritieke fouten verbergt.
 
-### 6.2 Quota-mix biologie (Slice 0) — generatiedoelen, geen natuurwet
+### 6.2 Quota-mix biologie (Slice 0) - generatiedoelen, geen natuurwet
 | Leerhandeling | Doel |
 |---|---|
 | Herkennen/definiëren | 15% |
@@ -163,9 +163,9 @@ De 90 is dus een ondergrens bovenop twee harde nul-eisen — geen gemiddelde dat
 | Misconceptie | 10% |
 | Examenredeneren | 10% |
 
-**Configureerbaar per vak/niveau** — dit is *geen* universele verdeling. Geschiedenis, talen en wiskunde krijgen elk een eigen mix.
+**Configureerbaar per vak/niveau** - dit is *geen* universele verdeling. Geschiedenis, talen en wiskunde krijgen elk een eigen mix.
 
-### 6.3 Golden-reference (samenvatting) — inhoud, geen getal-target
+### 6.3 Golden-reference (samenvatting) - inhoud, geen getal-target
 De nieuwe samenvatting moet **inhoudelijk** minstens zo goed zijn als de bestaande `SAM_RICH`, aangetoond via:
 - lengteorde ≥ de golden-reference-**ondergrens** (niet exact matchen);
 - **100% van de verplichte kernbegrippen** gedekt;
@@ -176,34 +176,34 @@ De nieuwe samenvatting moet **inhoudelijk** minstens zo goed zijn als de bestaan
 
 > Expliciet **niet**: "minstens evenveel expliciete verbanden als de golden reference". Dat zou Claude verleiden verbanden toe te voegen om een getal te halen, ook waar dat pedagogisch niets toevoegt.
 
-### 6.4 Kernregel — curriculumwaarheid staat boven de quota
-De quota (§6.2) zijn **doelen**, geen wet. **Als een leerdoel/de syllabus aantoonbaar geen kwalitatief goede vraag van een bepaald type ondersteunt, mag de engine die quota breken en dít rapporteren — nooit een kunstmatige vraag produceren om een percentage te halen.** Een gerapporteerd, onderbouwd gat is een *pass*; een opgevulde nepvraag is een *fail*. Dit geldt boven elke andere gate in dit document.
+### 6.4 Kernregel - curriculumwaarheid staat boven de quota
+De quota (§6.2) zijn **doelen**, geen wet. **Als een leerdoel/de syllabus aantoonbaar geen kwalitatief goede vraag van een bepaald type ondersteunt, mag de engine die quota breken en dít rapporteren - nooit een kunstmatige vraag produceren om een percentage te halen.** Een gerapporteerd, onderbouwd gat is een *pass*; een opgevulde nepvraag is een *fail*. Dit geldt boven elke andere gate in dit document.
 
-### 6.5 Cognitief moeilijkheidsmodel (R1–R5) — tijdens de eerste domeinen
+### 6.5 Cognitief moeilijkheidsmodel (R1–R5) - tijdens de eerste domeinen
 Vervangt "makkelijk/gemiddeld/moeilijk" door een niveauschaal die later een leerpad voedt. Elk item krijgt een `R`-tag naast zijn leerhandeling:
 
 | Niveau | Betekenis | Voorbeeld (enzymen) |
 |---|---|---|
 | **R1** | Herkennen / reproduceren | "Wat is een enzym?" |
 | **R2** | Begrijpen (oorzaak–gevolg) | "Hoe versnelt een enzym een reactie?" |
-| **R3** | Toepassen in een standaardsituatie | "Amylase & zetmeel — waarom geen effect op eiwit?" |
+| **R3** | Toepassen in een standaardsituatie | "Amylase & zetmeel - waarom geen effect op eiwit?" |
 | **R4** | Combineren (≥2 concepten) | optimum **én** denaturatie in één redenering |
 | **R5** | Transfer / examenredeneren in nieuwe context | onbekend enzym, meetreeks, onomkeerbaarheid afleiden |
 
 Doel per domein: de set dekt **R1 t/m R5** af (niet elk leerdoel hoeft R5 te hebben; het **domein** wel, waar zinvol). R4/R5 zijn precies de "niet te netjes"-vragen: één concept · één misconceptie · één leerhandeling mag niet het hele beeld zijn.
 
-### 6.6 Canonieke precisie — geen overclaim als bron-van-waarheid
+### 6.6 Canonieke precisie - geen overclaim als bron-van-waarheid
 De canonical knowledge layer legt **precieze** formuleringen vast; de didactische HAVO-vereenvoudiging is een **afgeleide**, nooit de canonieke regel. Vastgelegd in `knowledge/semantic-havo.json → _meta.canoniekeFormuleringen`, bewaakt door `overclaim-check.js` (gate E6). Twee correcties uit de bi.M.3-review, bindend:
 
-- **Substraatspecificiteit** — canoniek: *"een actief centrum met een vorm en chemische eigenschappen waardoor alleen bepaalde substraten passend kunnen binden"*. **Verboden overclaim:** "één enzym = precies één substraat".
-- **Denaturatie** — canoniek: *"een verandering van de ruimtelijke structuur waardoor de functie verloren kan gaan; zowel een te hoge temperatuur als een extreme pH kan dit veroorzaken"*. **Verboden overclaim:** "denaturatie wordt altijd door hoge temperatuur veroorzaakt".
+- **Substraatspecificiteit** - canoniek: *"een actief centrum met een vorm en chemische eigenschappen waardoor alleen bepaalde substraten passend kunnen binden"*. **Verboden overclaim:** "één enzym = precies één substraat".
+- **Denaturatie** - canoniek: *"een verandering van de ruimtelijke structuur waardoor de functie verloren kan gaan; zowel een te hoge temperatuur als een extreme pH kan dit veroorzaken"*. **Verboden overclaim:** "denaturatie wordt altijd door hoge temperatuur veroorzaakt".
 
-### 6.7 Kernprincipe — elke fout heeft diagnostische waarde
+### 6.7 Kernprincipe - elke fout heeft diagnostische waarde
 Nooit "Fout, het juiste antwoord is B." Elke afleider draagt: **gekozen fout → vermoedelijke denkfout → het relevante onderscheid → juiste mentale representatie** (de "Koos je X? …"-vorm). Dit is een productdifferentiator van Slagio en een harde eis op elke uitleg (C6), niet alleen een stijlkeuze.
 
 ---
 
-## 7. De GOUDEN STANDAARD — blueprint voor contentpublicatie
+## 7. De GOUDEN STANDAARD - blueprint voor contentpublicatie
 
 bi.M.3 is de referentie. Elk nieuw leerdoel dat live gaat, moet identiek van vorm zijn en dezelfde poorten halen. Deze sectie is bindend.
 
@@ -227,7 +227,7 @@ De samenvatting volgt de **hoofdstuk-structuur** (§ begrippenlijst + genummerde
 `scripts/validate-goldstandard.mjs` valt de build als één van deze faalt voor een gemarkeerde module:
 - vraag-blueprint compleet (o[4]/c/d/u/uo[4]/uh, geen dubbele opties, stam ≤ 110);
 - **antwoordpositie-balans** (≤ 40% op één positie) en **geen lengte-bias** (juist = langst in ≤ 40%);
-- **geen overclaim** in de canonieke velden (juist antwoord + uo + u) — afleiders mógen fout zijn;
+- **geen overclaim** in de canonieke velden (juist antwoord + uo + u) - afleiders mógen fout zijn;
 - **leerdoel-koppeling** aanwezig en `matched`;
 - R-dekking (1–3) en bankdiepte gerapporteerd (soft).
 
@@ -235,22 +235,22 @@ De samenvatting volgt de **hoofdstuk-structuur** (§ begrippenlijst + genummerde
 Deze kan een script niet garanderen; ze horen expliciet bij de standaard:
 - **Vakinhoudelijke sign-off** door een docent/expert op elke canonieke bewering, elk juist antwoord en elke afleider. Zonder dit: hoogstens "kandidaat-standaard".
 - **Bronherleidbaarheid**: elke canonieke bewering wijst naar CvTE-syllabus/Binas (niet los `bron:"syllabus"`).
-- **Bankdiepte** ≥ 25 vragen per leerdoel (meerdere per R-niveau/subconcept) — anders memoriseerbaar.
+- **Bankdiepte** ≥ 25 vragen per leerdoel (meerdere per R-niveau/subconcept) - anders memoriseerbaar.
 - **Authentieke examencontext**: ≥ 1 echt oud-examen-afgeleid item per domein.
 
 ### 7.4 Live-criterium
 Een leerdoel is **gouden standaard** wanneer 7.2 groen is (auto), 7.3 is afgetekend (mens), en de leerling-lus (§ resultaat/foutenboek/leerpad per subconcept) het beheersingssignaal teruggeeft. Pas dan schaalt de engine het vak-breed uit.
 
-## 8. Echte oud-examenvragen — pijplijn (tekst nu, figuren later)
+## 8. Echte oud-examenvragen - pijplijn (tekst nu, figuren later)
 
 De oud-examenmodus is de moeilijkste oefenvorm en moet echte CE-vragen tonen. Bron van waarheid is officieel CvTE-materiaal (auteursrechtelijk). We reproduceren het **niet** uit het geheugen van een model; het komt altijd uit de echte bron-PDF's.
 
 ### 8.1 Wat nu live is (tekst)
 - **`ce_data.js`** (`CE_OE[vakId]`) bevat echte CE-vragen met `jaar` + `tijdvak` + `bron`. **`ce-oud.js`** ontsluit ze als oud-examen-oefensurface per vak (knop "Echte examenvragen" op de vakpagina), gegroepeerd per jaar, via de bestaande picker (synthetisch `{id:'CE',_ce:true}`-domein). Encoding wordt opgeschoond door `_ceClean()`.
-- De enkele zuivere enzymwerking-HAVO-CE-vraag staat als echte 📋 CE-vraag in `bi.M.3.oe`. (Echte HAVO-examens isoleren enzymwerking zelden; domein-zuivere echte sets zijn daarom klein — vandaar de examen-stijl-oefenvragen als aanvulling.)
+- De enkele zuivere enzymwerking-HAVO-CE-vraag staat als echte 📋 CE-vraag in `bi.M.3.oe`. (Echte HAVO-examens isoleren enzymwerking zelden; domein-zuivere echte sets zijn daarom klein - vandaar de examen-stijl-oefenvragen als aanvulling.)
 
 ### 8.2 Wat de figuur-rijke versie nog nodig heeft
-Het schema is er al klaar voor: een `oe`-vraag ondersteunt `ctx` (contexttekst → `#qctx`) en `fig`/afbeelding (→ `#qfig`), en het volledige-examensysteem **`EXAMENS[vakId]`** (`examens.js`) met PDF-bijlagen + genummerde `vragen` (zie `be`/`nl`/`en` 2025 als referentie). Ontbreekt alleen: de echte figuren + volledige contextteksten + correctievoorschrift-modelantwoorden — die zitten uitsluitend in de bron-PDF's.
+Het schema is er al klaar voor: een `oe`-vraag ondersteunt `ctx` (contexttekst → `#qctx`) en `fig`/afbeelding (→ `#qfig`), en het volledige-examensysteem **`EXAMENS[vakId]`** (`examens.js`) met PDF-bijlagen + genummerde `vragen` (zie `be`/`nl`/`en` 2025 als referentie). Ontbreekt alleen: de echte figuren + volledige contextteksten + correctievoorschrift-modelantwoorden - die zitten uitsluitend in de bron-PDF's.
 
 ### 8.3 Eén-stap-pad zodra de bron bereikbaar is
 1. `node scripts/download-examens.js --vak bi --niveau havo` haalt de officiële opgaven + correctievoorschriften op (AlleExamens.nl; biologie staat al in de manifest). *In de agent-omgeving zijn alleexamens.nl/examenblad.nl/Supabase-storage geblokkeerd (403); draai dit dus in een omgeving mét netwerk, of lever de PDF's aan.*
