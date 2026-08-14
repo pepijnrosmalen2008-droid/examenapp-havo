@@ -22,6 +22,31 @@ function _ceClean(s){
     .trim();
 }
 
+// ── Zelfstandigheidsfilter ───────────────────────────────────
+// De CE_OE-vragen zijn gedistilleerd uit echte examens, maar de originele
+// figuren + contextteksten zijn eruit gehaald. Veel vragen verwijzen naar
+// die weggevallen context (figuur/tabel/casus) en zijn zonder afbeelding
+// niet zelfstandig te maken. Tot de figuren erbij staan tonen we alleen
+// vragen die op zichzelf te beantwoorden zijn. Best-effort heuristiek;
+// bij twijfel filteren we liever te streng dan te ruim.
+const _CE_MEDIA=/\b(figuur|afbeelding|grafiek|tabel|diagram|schema|curve|curven|curves|bron|tekst|artikel|fragment|foto|stamboom|kruisingsschema|formule|proefopstelling|proefopzet|afgebeeld|hierboven|hieronder|bovenstaand|onderstaand|hiernaast|weide|nestje|proefperso|onderzoeker|slangetje|toediening|het onderzoek|dit onderzoek)\b/i;
+const _CE_ANAFOOR=/\b(deze|dit|dezelfde|genoemde|betreffende|dergelijke|zulke|bovengenoemde|voornoemde|voorgaande|zojuist)\b/i;
+const _CE_REF=/\b(de volgende|andere factor|de andere|in ieder geval|het gegeven|gegeven dat|volgens de|de proef\b|de pati[eë]nt|deze pati[eë]nt)\b/i;
+function _ceTrailing(v){const i=v.lastIndexOf('?');if(i<0||i>=v.length-2)return false;const tail=v.slice(i+1).trim();return tail.length>3&&/^[a-zà-ÿ]/.test(tail);}
+function _ceProperNoun(v){
+  const words=v.replace(/[?.,;:]/g,'').split(/\s+/).slice(1); // eerste woord overslaan
+  return words.some(w=>/^[A-Z][a-zà-ÿ]{2,}$/.test(w) && !/^(DNA|RNA|ADH|ATP|EPO|MSUD|GZ|ADI)$/.test(w));
+}
+// True = zelfstandig te maken (mag getoond worden).
+function _ceStandalone(v){
+  if(!v||v.length<15) return false;
+  if(_CE_MEDIA.test(v)||_CE_ANAFOOR.test(v)||_CE_REF.test(v)) return false;
+  if(_ceTrailing(v)) return false;
+  if((v.match(/\?/g)||[]).length>=2) return false;   // samengevoegde meerluik-vragen
+  if(_ceProperNoun(v)) return false;                 // casus-specifieke eigennaam
+  return true;
+}
+
 // Lazy-load ce_data.js (alleen gebruikt door zoek + deze module).
 function _ceEnsure(cb){
   if(typeof CE_OE!=='undefined'){cb();return;}
@@ -36,7 +61,7 @@ function _ceEnsure(cb){
 function ceExamenCount(vakId){
   if(typeof CE_OE==='undefined') return null; // nog niet geladen
   const niv=(APP_LEVEL||'havo');
-  return (CE_OE[vakId]||[]).filter(q=>_ceMatchesNiveau(q,niv)).length;
+  return (CE_OE[vakId]||[]).filter(q=>_ceMatchesNiveau(q,niv)&&_ceStandalone(_ceClean(q.v))).length;
 }
 function _ceMatchesNiveau(q,niv){
   const isVwo=/\(VWO\)/i.test(q.bron||'');
@@ -54,7 +79,7 @@ function openCEExamens(){
       .filter(q=>_ceMatchesNiveau(q,niv))
       .map(q=>({jaar:q.jaar||null,tijdvak:q.tijdvak||1,bron:q.bron||'CE',
                 v:_ceClean(q.v),o:[''],c:0,u:_ceClean(q.u)}))
-      .filter(q=>q.v.length>4);
+      .filter(q=>_ceStandalone(q.v)); // alleen zelfstandige vragen tot de figuren erbij staan
     if(!oe.length){
       if(typeof toast==='function')toast('Nog geen echte examenvragen voor dit vak.');
       return;
