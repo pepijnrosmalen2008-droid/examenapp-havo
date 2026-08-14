@@ -7595,6 +7595,18 @@ html.dark .dom-hero-card{background:linear-gradient(180deg,rgba(255,255,255,.045
 /* ══ Finish hercompositie: één rustig moment (3 beloningspills + heldere CTA) ══ */
 .rbd:has(.res-stats){background:none;box-shadow:none;padding:0;margin-bottom:22px}
 .res-stats{display:flex;gap:10px;justify-content:center}
+.res-mastery{margin:16px auto 0;max-width:360px;background:var(--s);border:1px solid var(--bo);border-radius:14px;padding:13px 15px;text-align:left}
+.res-mastery-h{font-size:13px;font-weight:800;color:var(--dk);margin-bottom:10px;letter-spacing:.01em}
+.rm-row{display:flex;align-items:center;gap:9px;margin:7px 0}
+.rm-lbl{flex-shrink:0;width:118px;font-size:12.5px;font-weight:600;color:var(--dk)}
+.rm-bar{flex:1;height:8px;border-radius:5px;background:var(--bo);overflow:hidden}
+.rm-fill{height:100%;border-radius:5px;transition:width .5s cubic-bezier(.22,1,.36,1)}
+.rm-val{flex-shrink:0;font-size:12.5px;font-weight:800;font-variant-numeric:tabular-nums}
+.rm-ok{color:#16a34a}.rm-low{color:#e8580c}
+.rm-tip{margin-top:10px;font-size:12px;line-height:1.5;color:var(--mu)}
+.rm-tip b{color:var(--dk)}
+.rm-tip-ok{color:#16a34a}
+@media(max-width:640px){.rm-lbl{width:96px;font-size:11.5px}}
 /* Duolingo-stijl beloningspill: dikke gekleurde rand, label bovenaan in de
    themakleur, icoon + groot getal eronder. Lichte binnen-gloss voor diepte. */
 .res-stat{flex:1;min-width:0;display:flex;flex-direction:column;align-items:center;gap:6px;

@@ -384,7 +384,7 @@ function _kiesReveal(gekozen,correct,btns){
   const tijdOver=Math.max(0,ST.tijd);
   ST.tijdPerVraag.push(tijdOver);
   aqpRecord(ST.vragen[ST.idx], ok?1:0);
-  ST.antwrd.push({pts:ok?1:0,chosenText:q.o[chosenOrigIdx],tijdOver});
+  ST.antwrd.push({pts:ok?1:0,chosenText:q.o[chosenOrigIdx],tijdOver,d:q.d||1});
   try{if(typeof fbRecord==='function')fbRecord(q,ok,q.o[chosenOrigIdx]);}catch(e){}
   // Vonk reageert kort bij een FOUT antwoord (de combo-viering doet de in-scherm
   // Vonk-cameo bij het doorklikken, dus geen dubbele Vonk meer bij een goede reeks).
@@ -425,7 +425,7 @@ function tijdOp(){
   if(ST.adaptive)ST.aqLevel=Math.max(1,ST.aqLevel-1);
   ST.tijdPerVraag.push(0);
   aqpRecord(ST.vragen[ST.idx], 0);
-  ST.antwrd.push({pts:0,chosenText:'⏱ Tijd was op',tijdOver:0});
+  ST.antwrd.push({pts:0,chosenText:'⏱ Tijd was op',tijdOver:0,d:q.d||1});
   try{if(typeof fbRecord==='function')fbRecord(q,false,null);}catch(e){}
   saveQuizDraft();
   const correct=ST.shuffleMap.indexOf(q.c);
@@ -1391,6 +1391,20 @@ function toonRes(){
         <div class="res-stat rs-coin"><span class="res-stat-l">Munten</span><span class="res-stat-row"><span class="res-stat-ic">${_coin}</span><span class="res-stat-v">+${Math.max(0,window._coinsWon||0)}</span></span></div>
         <div class="res-stat rs-lb"><span class="res-stat-l">Score</span><span class="res-stat-row"><span class="res-stat-ic">${_trophy}</span><span class="res-stat-v">${lbScoreDisplay}</span></span></div>
       </div>`;
+      // Beheersing per onderdeel (R-niveau): sluit de leerling-lus — wat beheers je, wat moet je herhalen.
+      try{
+        const RL={1:{n:'Begrijpen',c:'#6366f1'},2:{n:'Toepassen',c:'#0d9488'},3:{n:'Transfer & examen',c:'#e8580c'}};
+        const per={};
+        (ST.antwrd||[]).forEach(a=>{const d=a.d||1;(per[d]=per[d]||{g:0,t:0});per[d].t++;if(a.pts===1)per[d].g++;});
+        const keys=Object.keys(per).sort();
+        if(keys.length){
+          const rows=keys.map(d=>{const p=per[d];const pct=Math.round(p.g/p.t*100);const rl=RL[d]||{n:'Niveau '+d,c:'#888'};const ok=pct>=80;
+            return `<div class="rm-row"><span class="rm-lbl">${rl.n}</span><div class="rm-bar"><div class="rm-fill" style="width:${Math.max(6,pct)}%;background:${rl.c}"></div></div><span class="rm-val ${ok?'rm-ok':'rm-low'}">${p.g}/${p.t}</span></div>`;}).join('');
+          const zwak=keys.filter(d=>per[d].g/per[d].t<0.8).map(d=>(RL[d]||{}).n).filter(Boolean);
+          const tip=zwak.length?`<div class="rm-tip">Herhaal vooral: <b>${zwak.join(', ')}</b>. Je foute vragen staan in je foutenboek.</div>`:`<div class="rm-tip rm-tip-ok">Sterk — je beheerst alle niveaus van dit onderdeel.</div>`;
+          bdHtml+=`<div class="res-mastery"><div class="res-mastery-h">Beheersing per onderdeel</div>${rows}${tip}</div>`;
+        }
+      }catch(e){}
     } else {
       const goed=ST.antwrd.filter(a=>a.pts===1).length;
       const deels=ST.antwrd.filter(a=>a.pts===0.5).length;
