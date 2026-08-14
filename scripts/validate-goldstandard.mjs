@@ -102,6 +102,15 @@ for (const t of targets) {
   const posShare = Math.max(...cPos) / (cPos.reduce((a, b) => a + b, 0) || 1);
   if (posShare > MAX_POS_SHARE) hard.push(`antwoordpositie-bias: ${(posShare * 100).toFixed(0)}% op één positie (max ${MAX_POS_SHARE * 100}%)`);
   if (longest / n > MAX_LONGEST) hard.push(`lengte-bias: juist = langste in ${longest}/${n} (max ${Math.round(MAX_LONGEST * 100)}%)`);
+  // begrippen (curated term->definitie: voedt flashcards/SM-2 als eigen pijler)
+  const beg = dom.begrippen || [];
+  if (beg.length < 8) hard.push(`begrippen: ${beg.length} < 8 (curated term->definitie vereist)`);
+  beg.forEach((b, i) => {
+    if (!b || !b.t || !String(b.t).trim()) hard.push(`begrip ${i + 1}: term (t) ontbreekt`);
+    if (!b || !b.d || String(b.d).trim().length < 12) hard.push(`begrip ${i + 1}: definitie (d) te kort/ontbreekt`);
+    overclaims(String((b && b.d) || '')).forEach(m => hard.push(`begrip ${i + 1}: overclaim ${m}`));
+  });
+
   if (![1, 2, 3].every(l => dLevels.has(l))) soft.push(`R-dekking onvolledig: alleen niveaus ${[...dLevels].sort().join(',')} (streef R1-R3)`);
   if (n < MIN_BANK) soft.push(`bankdiepte ${n} < streef ${MIN_BANK} — memoriseerbaar, verdiep de bank`);
 

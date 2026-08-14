@@ -12442,7 +12442,18 @@ var VAKKEN = [
      {"bron":"Spijsvertering en pH","ctx":"In de maag heerst een zure omgeving (ongeveer pH 2). Daar werkt het eiwitsplitsende enzym pepsine, dat een pH-optimum rond pH 2 heeft. Verderop, in de dunne darm, is het milieu juist basisch (ongeveer pH 8). Daar werkt het eiwitsplitsende enzym trypsine, met een pH-optimum rond pH 8. Als je pepsine in de dunne darm zou brengen, breekt het daar nauwelijks eiwit af.","v":"Leg uit waarom pepsine in de dunne darm nauwelijks eiwit afbreekt, terwijl trypsine daar juist goed werkt. Betrek de pH in je antwoord.","o":[""],"c":0,"u":"Elk enzym heeft een eigen pH-optimum: de pH waarbij het de juiste vorm (met een passend actief centrum) heeft en het best werkt. De pH van de dunne darm (ongeveer 8) ligt ver van het zure optimum van pepsine (ongeveer 2), waardoor pepsine daar zijn goede vorm verliest en nauwelijks eiwit afbreekt. Trypsine heeft juist een optimum rond pH 8, dus in de dunne darm heeft het wel de juiste vorm en werkt het goed. (Kernpunten: [1] pH dunne darm ligt ver van pepsines zure optimum, daardoor werkt pepsine er slecht; [2] pH dunne darm ligt bij trypsines optimum, daardoor werkt trypsine er goed.)"},
      {"bron":"Enzymen in wasmiddel","ctx":"In veel wasmiddelen zitten enzymen, zoals protease (breekt eiwitvlekken af, bijvoorbeeld bloed en ei) en lipase (breekt vetvlekken af). Op de verpakking staat dat je met dit wasmiddel het best wast op 40 °C. Een gebruiker wast een sterk vervuild kledingstuk juist op 90 °C en merkt dat de eiwitvlekken minder goed verdwijnen dan bij 40 °C.","v":"Verklaar waarom de eiwitvlekken bij 90 °C minder goed verdwijnen dan bij 40 °C, ook al is heter water meestal beter voor het reinigen.","o":[""],"c":0,"u":"De reinigende werking komt hier vooral van de enzymen (protease), die de eiwitvlekken afbreken. Bij ongeveer 40 °C zitten deze enzymen rond hun optimumtemperatuur en werken ze goed. Bij 90 °C ligt de temperatuur ver boven het optimum, waardoor de enzymen denatureren: hun actief centrum verliest zijn vorm en ze kunnen de eiwitvlekken niet meer afbreken. Daarom verdwijnen de eiwitvlekken bij 90 °C juist minder goed. (Kernpunten: [1] bij 40 °C werken de enzymen rond hun optimum; [2] bij 90 °C denatureren de enzymen, waardoor ze de vlekken niet meer afbreken.)"}
     ],
-    "begrippen": []
+    "begrippen": [
+     {"t":"Enzym","d":"Een eiwit dat als biokatalysator een reactie in de cel versnelt zonder zelf verbruikt te worden."},
+     {"t":"Biokatalysator","d":"Een stof die in een organisme een reactie versnelt en er zelf onveranderd uit komt."},
+     {"t":"Activeringsenergie","d":"De energiedrempel die nodig is om een reactie te laten starten; een enzym verlaagt deze."},
+     {"t":"Actief centrum","d":"De plek op het enzym met een specifieke vorm waar het substraat op past en bindt."},
+     {"t":"Substraat","d":"De stof die in het actief centrum past en door het enzym wordt omgezet."},
+     {"t":"Substraatspecificiteit","d":"Een enzym zet vooral die substraten om waarvan de vorm in het actief centrum past."},
+     {"t":"Optimumtemperatuur","d":"De temperatuur waarbij een enzym het snelst werkt; erboven daalt de activiteit."},
+     {"t":"Denaturatie","d":"De onomkeerbare verandering van de ruimtelijke structuur van een enzym, waardoor het actief centrum zijn vorm en functie verliest."},
+     {"t":"pH-optimum","d":"De zuurgraad waarbij een enzym het best werkt; ver daarvan af daalt de activiteit."},
+     {"t":"Herbruikbaarheid","d":"Na de reactie komt het enzym onveranderd vrij, zodat het opnieuw kan werken."}
+    ]
    },
    {
     "id": "O",

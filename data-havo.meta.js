@@ -325,7 +325,7 @@ var VAKKEN = [
     ],
     "nSv": 25,
     "nOe": 7,
-    "nBeg": 0
+    "nBeg": 10
    },
    {
     "id": "O",
