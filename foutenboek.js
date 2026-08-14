@@ -182,7 +182,7 @@ function fbChoiceHTML(q, chosenIdx) {
   const chose = (typeof chosenIdx === 'number' && chosenIdx >= 0 && chosenIdx < uit.opts.length);
   let html = '<div class="q-why q-why-smart">';
   if (chose && chosenIdx !== cIdx && uit.opts[chosenIdx]) {
-    html += `<div class="q-why-row q-why-mine"><span class="q-why-lbl q-why-x">Jouw keuze</span><span class="q-why-t"><b>${_fbEsc(opts[chosenIdx] || '')}</b> — ${_fbEsc(uit.opts[chosenIdx].w)}</span></div>`;
+    html += `<div class="q-why-row q-why-mine"><span class="q-why-lbl q-why-x">Jouw keuze</span><span class="q-why-t"><b>${_fbEsc(opts[chosenIdx] || '')}</b> - ${_fbEsc(uit.opts[chosenIdx].w)}</span></div>`;
   }
   if (uit.opts[cIdx]) {
     const w = (uit.opts[cIdx].w || '').replace(/^Klopt[:!]?\s*/i, '');
@@ -379,7 +379,7 @@ function openFoutenboek() {
 }
 
 // ═══════════════════════════════════════════════════════════════════════
-// "VRAAG HET AAN VONK" — persoonlijke fout-coach (na een fout).
+// "VRAAG HET AAN VONK" - persoonlijke fout-coach (na een fout).
 // Vonk laat zien waarom het fout ging (voorgegenereerde uitleg/misconceptie),
 // laat je één vergelijkbare vraag oefenen, en markeert het onderwerp als
 // verbeterd (promoveert de foutenboek-entry via SM-2) als je die goed maakt.

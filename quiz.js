@@ -403,17 +403,16 @@ function _kiesReveal(gekozen,correct,btns){
   fb.style.display='block';
   fb.className=`qfb ${ok?'fbok':'fbno'}`;
   const _infoBtn=q.u?`<button class="fbt-info-btn" onclick="const t=this.nextElementSibling;const s=this.querySelector('.fib-lbl');t.classList.toggle('show');s.textContent=t.classList.contains('show')?'Verberg uitleg':'Toon uitleg'"><svg class="fib-ic" viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4"/><path d="M12 8h.01"/></svg><span class="fib-lbl">Toon uitleg</span></button><div class="fbt-info-text">${q.u}</div>`:'';
+  // Slimme per-optie-uitleg (uo). Bestaat die, dan is de losse "Toon uitleg"-knop
+  // dubbel → die tonen we alleen als er GÉÉN slimme uitleg is.
+  const _smart=(typeof fbChoiceHTML==='function')?fbChoiceHTML(q,chosenOrigIdx):'';
   if(ok){
-    const _whyOk=(typeof fbChoiceHTML==='function')?fbChoiceHTML(q,chosenOrigIdx):'';
-    fb.innerHTML=`<div class="fbt"><svg class="fb-ic" viewBox="0 0 24 24" width="19" height="19" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Correct!</div>${_whyOk}${_infoBtn}`;
+    fb.innerHTML=`<div class="fbt"><svg class="fb-ic" viewBox="0 0 24 24" width="19" height="19" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Correct!</div>${_smart||_infoBtn}`;
   }else{
     const correctText=q.o[q.c]||'';
-    // Slimme uitleg: bespreekt JOUW gekozen optie + waarom het juiste antwoord klopt.
-    // Valt terug op de leerdoel-generieke "veelgemaakte fout" als er geen per-optie-data is.
-    let _whyWrong=(typeof fbChoiceHTML==='function')?fbChoiceHTML(q,chosenOrigIdx):'';
-    if(!_whyWrong)_whyWrong=(typeof fbWhyWrongHTML==='function')?fbWhyWrongHTML(q):'';
+    const _why=_smart||((typeof fbWhyWrongHTML==='function'?fbWhyWrongHTML(q):'')+_infoBtn);
     const _vonkAsk=`<button class="q-vonk-ask" onclick="vonkCoachFromQuiz()"><svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 5h16v11H10l-4 4V16H4z"/></svg>Vraag het aan Vonk</button>`;
-    fb.innerHTML=`<div class="fbt"><svg class="fb-ic" viewBox="0 0 24 24" width="19" height="19" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 6 6 18M6 6l12 12"/></svg>Fout</div><div class="fbtx"><span class="fbtx-juist"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Juist:</span> ${correctText}</div>${_whyWrong}${_infoBtn}${_vonkAsk}`;
+    fb.innerHTML=`<div class="fbt"><svg class="fb-ic" viewBox="0 0 24 24" width="19" height="19" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 6 6 18M6 6l12 12"/></svg>Fout</div><div class="fbtx"><span class="fbtx-juist"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Juist:</span> ${correctText}</div>${_why}${_vonkAsk}`;
   }
   const nxt=document.getElementById('qnxt');
   nxt.style.display='block';
@@ -1391,7 +1390,7 @@ function toonRes(){
         <div class="res-stat rs-coin"><span class="res-stat-l">Munten</span><span class="res-stat-row"><span class="res-stat-ic">${_coin}</span><span class="res-stat-v">+${Math.max(0,window._coinsWon||0)}</span></span></div>
         <div class="res-stat rs-lb"><span class="res-stat-l">Score</span><span class="res-stat-row"><span class="res-stat-ic">${_trophy}</span><span class="res-stat-v">${lbScoreDisplay}</span></span></div>
       </div>`;
-      // Beheersing per onderdeel (R-niveau): sluit de leerling-lus — wat beheers je, wat moet je herhalen.
+      // Beheersing per onderdeel (R-niveau): sluit de leerling-lus - wat beheers je, wat moet je herhalen.
       try{
         const RL={1:{n:'Begrijpen',c:'#6366f1'},2:{n:'Toepassen',c:'#0d9488'},3:{n:'Transfer & examen',c:'#e8580c'}};
         const per={};
@@ -1401,7 +1400,7 @@ function toonRes(){
           const rows=keys.map(d=>{const p=per[d];const pct=Math.round(p.g/p.t*100);const rl=RL[d]||{n:'Niveau '+d,c:'#888'};const ok=pct>=80;
             return `<div class="rm-row"><span class="rm-lbl">${rl.n}</span><div class="rm-bar"><div class="rm-fill" style="width:${Math.max(6,pct)}%;background:${rl.c}"></div></div><span class="rm-val ${ok?'rm-ok':'rm-low'}">${p.g}/${p.t}</span></div>`;}).join('');
           const zwak=keys.filter(d=>per[d].g/per[d].t<0.8).map(d=>(RL[d]||{}).n).filter(Boolean);
-          const tip=zwak.length?`<div class="rm-tip">Herhaal vooral: <b>${zwak.join(', ')}</b>. Je foute vragen staan in je foutenboek.</div>`:`<div class="rm-tip rm-tip-ok">Sterk — je beheerst alle niveaus van dit onderdeel.</div>`;
+          const tip=zwak.length?`<div class="rm-tip">Herhaal vooral: <b>${zwak.join(', ')}</b>. Je foute vragen staan in je foutenboek.</div>`:`<div class="rm-tip rm-tip-ok">Sterk - je beheerst alle niveaus van dit onderdeel.</div>`;
           bdHtml+=`<div class="res-mastery"><div class="res-mastery-h">Beheersing per onderdeel</div>${rows}${tip}</div>`;
         }
       }catch(e){}

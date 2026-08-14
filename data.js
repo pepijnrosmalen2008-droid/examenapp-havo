@@ -99,7 +99,7 @@ function ensureVakData(level,vakId,cb){
   if(level!=='havo'&&level!=='vwo'&&level!=='vmbo'){if(cb)cb();return;}
   if(!_levelLoaded(level)){ensureLevelData(level,function(){ensureVakData(level,vakId,cb);});return;}
   if(vakHydrated(level,vakId)){if(cb)cb();return;}
-  // Vak zonder vragen (bv. VMBO in opbouw): er is geen q-bestand. Niet fetchen —
+  // Vak zonder vragen (bv. VMBO in opbouw): er is geen q-bestand. Niet fetchen -
   // dat zou een 404 + valse "kon niet laden"-toast geven. Markeer als gehydrateerd
   // met lege arrays zodat downstream-code nooit `undefined` leest en niets crasht.
   var _vo=_vakObj(level,vakId);

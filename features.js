@@ -991,7 +991,7 @@ function _leagueReveal(reward){
                      :(_AV_SKIN_SVG[reward.item.id]?`<svg viewBox="0 0 100 100" width="64" height="64">${_AV_SKIN_SVG[reward.item.id]}</svg>`:reward.item.emoji);
     const tag=isLegend?'<div class="chest-rare-tag chest-tag-legend">👑 LEGENDE-BELONING 👑</div>':'<div class="chest-rare-tag">✦ ZELDZAAM ITEM ✦</div>';
     const icCls=isLegend?'chest-item-ic-legend':'chest-item-ic-gold';
-    head=`${tag}<div class="chest-item-ic ${icCls}">${icon}</div><div class="chest-item-nm">${reward.item.naam}</div><div class="chest-item-sub">Ontgrendeld — draag het in de winkel.</div>`;
+    head=`${tag}<div class="chest-item-ic ${icCls}">${icon}</div><div class="chest-item-nm">${reward.item.naam}</div><div class="chest-item-sub">Ontgrendeld - draag het in de winkel.</div>`;
   }else if(reward.power){
     const pic=(typeof _ico==='function')?_ico(reward.power.icon,50):'⚡';
     head=`<div class="chest-rare-tag chest-tag-blue">POWER-UP</div><div class="chest-item-ic chest-item-ic-blue">${pic}</div><div class="chest-item-nm">${reward.power.naam}</div><div class="chest-item-sub">Toegevoegd aan je voorraad.</div>`;
@@ -1512,7 +1512,7 @@ const COSMETICS_VONK=[
   {id:'vk_party', naam:'Vonk feesthoed', emoji:'🥳', prijs:350},
   {id:'vk_scarf', naam:'Vonk sjaal',     emoji:'🧣', prijs:350},
 ];
-// Eigen SVG-iconen voor de winkel (viewBox 0 0 32 32) — vervangen de OS-emoji's.
+// Eigen SVG-iconen voor de winkel (viewBox 0 0 32 32) - vervangen de OS-emoji's.
 const _ICO={
   coin:`<circle cx="16" cy="16" r="12.5" fill="#f6c026"/><circle cx="16" cy="16" r="12.5" fill="none" stroke="#e0a200" stroke-width="2"/><circle cx="16" cy="16" r="8.6" fill="none" stroke="#ffdd77" stroke-width="1.5"/><text x="16" y="20.6" font-size="12.5" font-weight="900" text-anchor="middle" fill="#fff" font-family="Arial,sans-serif">S</text><ellipse cx="12" cy="10.6" rx="3.2" ry="1.8" fill="#fff" opacity=".4"/>`,
   freeze:`<g stroke="#38bdf8" stroke-width="2.2" stroke-linecap="round" fill="none"><path d="M16 4V28M6.4 10.4 25.6 21.6M25.6 10.4 6.4 21.6"/><path d="M16 8.5 13 5.8M16 8.5 19 5.8M16 23.5 13 26.2M16 23.5 19 26.2M9 12.2 9.3 8.7M9 12.2 5.6 12.6M23 19.8 22.7 23.3M23 19.8 26.4 19.4M23 12.2 22.7 8.7M23 12.2 26.4 12.6M9 19.8 5.6 19.4M9 19.8 9.3 23.3"/></g><circle cx="16" cy="16" r="2.4" fill="#0ea5e9"/>`,

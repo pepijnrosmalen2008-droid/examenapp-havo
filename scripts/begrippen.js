@@ -1,5 +1,5 @@
 /**
- * begrippen.js — extra curated begrippenbank (term → definitie) per domein.
+ * begrippen.js - extra curated begrippenbank (term → definitie) per domein.
  * Wordt door build-questions.js samengevoegd met de bestaande + geëxtraheerde
  * begrippen. Sleutel = "<niveau>_<vak>_<domein>". Definities kort en formule-vrij.
  */

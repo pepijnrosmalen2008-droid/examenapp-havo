@@ -1,17 +1,17 @@
 #!/usr/bin/env node
 /**
- * build-foutenboek-uitleg.js — Sprint 2b GENERATOR (build-time, pluggable LLM).
+ * build-foutenboek-uitleg.js - Sprint 2b GENERATOR (build-time, pluggable LLM).
  *
  * Genereert per betrouwbaar-gekoppelde meerkeuzevraag een RIJKE uitleg:
  *   - per antwoordoptie: waarom fout / waarom juist
  *   - welke afleider het meest verleidelijk is (en waarom)
  *   - "hoe herken je dit de volgende keer?"
  * en schrijft die STATISCH weg naar foutenboek-uitleg-<niveau>.js. De app laadt
- * dat bestand lui op het Foutenboek-scherm — geen backend, geen runtime-key,
+ * dat bestand lui op het Foutenboek-scherm - geen backend, geen runtime-key,
  * werkt offline. Dit is het "prozastap = pluggable LLM"-patroon uit de
  * Question Engine, nu concreet voor uitleg.
  *
- * DRAAIEN (lokaal, met jouw key — deze sandbox heeft geen netwerk/key):
+ * DRAAIEN (lokaal, met jouw key - deze sandbox heeft geen netwerk/key):
  *   ANTHROPIC_API_KEY=sk-... node scripts/build-foutenboek-uitleg.js havo --vak bi --limit 30
  *   # daarna: node scripts/build-foutenboek-meta.js havo (niet nodig) en SW bumpen,
  *   #         foutenboek-uitleg-havo.js committen. De consumer pikt 'm vanzelf op.
@@ -124,7 +124,7 @@ async function callLLM(s) {
   let ok = 0, fail = 0;
   for (let i = 0; i < batch.length; i++) {
     const s = batch[i];
-    process.stdout.write(`  [${i + 1}/${batch.length}] ${s.vakId} ${s.domId} — ${s.q.v.slice(0, 48)}… `);
+    process.stdout.write(`  [${i + 1}/${batch.length}] ${s.vakId} ${s.domId} - ${s.q.v.slice(0, 48)}… `);
     try {
       const j = await callLLM(s);
       (result[s.vakId] = result[s.vakId] || {})[s.key] = {
@@ -142,7 +142,7 @@ async function callLLM(s) {
   const sorted = {};
   for (const vak of Object.keys(result).sort()) { sorted[vak] = {}; for (const k of Object.keys(result[vak]).sort()) sorted[vak][k] = result[vak][k]; }
   const banner = `// ═══════════════════════════════════════════════════════════════════════
-// foutenboek-uitleg-${niveau}.js — GEGENEREERD door scripts/build-foutenboek-uitleg.js
+// foutenboek-uitleg-${niveau}.js - GEGENEREERD door scripts/build-foutenboek-uitleg.js
 // Rijke per-afleider uitleg bij fouten (Sprint 2b). NIET met de hand bewerken;
 // hertekenen met de generator (build-time LLM). Sleutel = "<domeinId>|<v80>".
 // Waarde: { h, opts:[{w,juist}], verleidelijk?, herken }
@@ -153,6 +153,6 @@ async function callLLM(s) {
   fs.writeFileSync(path.join(ROOT, OUT), banner + body);
 
   const total = Object.values(sorted).reduce((a, m) => a + Object.keys(m).length, 0);
-  console.log(`\n✓ ${OUT} — +${ok} gegenereerd, ${fail} mislukt · ${total} uitleg(gen) totaal`);
+  console.log(`\n✓ ${OUT} - +${ok} gegenereerd, ${fail} mislukt · ${total} uitleg(gen) totaal`);
   console.log(`  volgende: SW-cache bumpen + ${OUT} committen. Herhaal met --limit voor de rest.\n`);
 })();

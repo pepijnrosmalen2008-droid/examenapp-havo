@@ -630,7 +630,7 @@ function _parseSamCards(html){
     if(!liText.startsWith(term))return;
     if(/[≠=]/.test(liText))return;
     const tidx=liText.indexOf(term);
-    let def=liText.slice(tidx+term.length).replace(/^[\s:,\-–—]+/,'').trim();
+    let def=liText.slice(tidx+term.length).replace(/^[\s:,\-–-]+/,'').trim();
     if(def.length<8)return;                               // te kort = geen echte definitie
     seen.add(term);
     if(def.length>220)def=def.slice(0,220).replace(/\s\S+$/,'')+'…';

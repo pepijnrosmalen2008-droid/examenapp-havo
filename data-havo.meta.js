@@ -310,7 +310,7 @@ var VAKKEN = [
    {
     "id": "M3",
     "naam": "Enzymwerking",
-    "beschrijving": "Proefsnede bi.M.3 — de eerste leerdoelmodule volledig door de Content Engine geproduceerd (samenvatting, 8 vragen R1–R5 incl. transfer, diagnostische uitleg). Ter kwaliteitstest vóór opschaling.",
+    "beschrijving": "Gouden-standaardmodule bi.M.3 Enzymwerking, volledig door de Content Engine geproduceerd: hoofdstuk-samenvatting met clips, 25 snelle-quizvragen R1-R3 incl. transfer en diagnostische per-optie-uitleg, plus oud-examenvragen (open, met modelantwoord).",
     "ceStatus": "CE+SE",
     "binas": "",
     "val": "",
@@ -324,7 +324,7 @@ var VAKKEN = [
      "Transfer: onbekend enzym"
     ],
     "nSv": 25,
-    "nOe": 0,
+    "nOe": 6,
     "nBeg": 0
    },
    {

@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 /**
- * build-questions.js — de vragen-engine.
+ * build-questions.js - de vragen-engine.
  *
  * Leidt term-gebaseerde quizvragen + flashcard-begrippen af uit de rijke
  * samenvattingen (SAM_RICH), zodat er geen handmatige vragen meer geschreven
@@ -44,7 +44,7 @@ function extract(html){
   let m,re;
   re=/<div class="sam-definitie-term">(.*?)<\/div><div class="sam-definitie-body">(.*?)<\/div>/g;while(m=re.exec(html))add(m[1],m[2]);
   re=/<tr><td>(.*?)<\/td><td>(.*?)<\/td><\/tr>/g;while(m=re.exec(html))add(m[1],m[2]);
-  re=/<li><strong>(.*?)<\/strong>\s*[:—-]\s*(.*?)<\/li>/g;while(m=re.exec(html))add(m[1],m[2]);
+  re=/<li><strong>(.*?)<\/strong>\s*[:--]\s*(.*?)<\/li>/g;while(m=re.exec(html))add(m[1],m[2]);
   return pairs;
 }
 
@@ -115,7 +115,7 @@ for(const k in MMAP) CURATED[k]=MMAP[k].map(t=>({t,d:MT[t]})).filter(x=>x.d);
 try{
   const EXTRA=require('./begrippen.js');
   for(const k in EXTRA){const arr=(EXTRA[k]||[]).map(p=>Array.isArray(p)?{t:p[0],d:p[1]}:p);CURATED[k]=[...(CURATED[k]||[]),...arr];}
-}catch(e){console.log('(geen begrippen.js gevonden — alleen wiskunde-curated)');}
+}catch(e){console.log('(geen begrippen.js gevonden - alleen wiskunde-curated)');}
 
 // ── generator ──
 function shuffle(a){a=a.slice();for(let i=a.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[a[i],a[j]]=[a[j],a[i]];}return a;}
@@ -163,8 +163,8 @@ function qaIssues(V, niveau){
   for(const vak of V)for(const d of vak.domeinen||[]){
     for(const b of (d.begrippen||[])){
       const de=String(b.d||'');
-      if(_RUNTOGETHER.test(de)) warn.push(`${niveau} ${vak.id}/${d.id} begrip «${b.t}» — verdachte def: ${de}`);
-      for(const w of (de.match(/[A-Za-zé]{25,}/g)||[])) if(!_LONG_OK.has(w.toLowerCase())) warn.push(`${niveau} ${vak.id}/${d.id} begrip «${b.t}» — lang token: ${w}`);
+      if(_RUNTOGETHER.test(de)) warn.push(`${niveau} ${vak.id}/${d.id} begrip «${b.t}» - verdachte def: ${de}`);
+      for(const w of (de.match(/[A-Za-zé]{25,}/g)||[])) if(!_LONG_OK.has(w.toLowerCase())) warn.push(`${niveau} ${vak.id}/${d.id} begrip «${b.t}» - lang token: ${w}`);
     }
     for(const q of (d.sv||[])){
       if(!isGen(q.v))continue;                             // alleen gegenereerde vragen: structuur moet exact kloppen
@@ -186,7 +186,7 @@ function reportQA(qa, file){
     if(qa.warn.length>12)console.log(`     … en ${qa.warn.length-12} meer`);
   }
   if(qa.fatal.length){
-    console.error(`\n✖ QA-GATE: ${qa.fatal.length} structurele fout(en) in ${file} — data NIET weggeschreven:`);
+    console.error(`\n✖ QA-GATE: ${qa.fatal.length} structurele fout(en) in ${file} - data NIET weggeschreven:`);
     qa.fatal.slice(0,20).forEach(f=>console.error('   '+f));
     process.exitCode=1;
     return false;

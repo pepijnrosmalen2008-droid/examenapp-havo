@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 /**
- * evaluation-engine.js — Evaluation Engine (ANALYZER). READ-ONLY, beslist NIET.
+ * evaluation-engine.js - Evaluation Engine (ANALYZER). READ-ONLY, beslist NIET.
  *
  * Meet kwaliteit; beslist niets. Retourneert per vak { score, issues, warnings,
  * metrics }. De PIPELINE beslist daarna (bv. score>=95 AND issues=0), zodat de
@@ -74,7 +74,7 @@ const results = vakken.map(evalVak);
 const BASE = path.join(ROOT, `knowledge/evaluation-baseline-${niveau}.json`);
 
 if (flag('baseline')) {
-  fs.writeFileSync(BASE, JSON.stringify({ _meta: { engine: 'evaluation-engine@1', datum: new Date().toISOString().slice(0, 10), toelichting: 'Bevroren "vóór"-meting — onafhankelijke referentie voor latere verbeteringen.' }, results }, null, 1));
+  fs.writeFileSync(BASE, JSON.stringify({ _meta: { engine: 'evaluation-engine@1', datum: new Date().toISOString().slice(0, 10), toelichting: 'Bevroren "vóór"-meting - onafhankelijke referentie voor latere verbeteringen.' }, results }, null, 1));
   console.log(`✓ baseline vastgelegd: knowledge/evaluation-baseline-${niveau}.json (${results.length} vakken)`);
   process.exit(0);
 }
@@ -84,10 +84,10 @@ let base = null; try { base = JSON.parse(fs.readFileSync(BASE, 'utf8')); } catch
 for (const r of results) {
   const b = base && base.results.find(x => x.vak === r.vak);
   const delta = b ? (r.score - b.score) : null;
-  console.log(`\n═══ ${r.naam} (${niveau}/${r.vak}) — ${r.metrics.n} MC-vragen ═══`);
+  console.log(`\n═══ ${r.naam} (${niveau}/${r.vak}) - ${r.metrics.n} MC-vragen ═══`);
   console.log(`  score: ${r.score}%${delta != null ? `  (baseline ${b.score}% · Δ ${delta >= 0 ? '+' : ''}${rd(delta, 1)})` : ''}`);
-  console.log(`  issues:   ${r.issues.length ? r.issues.join(', ') : '—'}`);
-  console.log(`  warnings: ${r.warnings.length ? r.warnings.join(', ') : '—'}`);
+  console.log(`  issues:   ${r.issues.length ? r.issues.join(', ') : '-'}`);
+  console.log(`  warnings: ${r.warnings.length ? r.warnings.join(', ') : '-'}`);
   console.log(`  antwoordverdeling: A${r.metrics.correct_option_distribution.A} B${r.metrics.correct_option_distribution.B} C${r.metrics.correct_option_distribution.C} D${r.metrics.correct_option_distribution.D} · dubbele vragen ${r.metrics.duplicate_questions} · koppeling m/u/off ${r.metrics.coupling.matched}/${r.metrics.coupling.unmatched}/${r.metrics.coupling.off_level}`);
 }
 console.log(`\n  → de evaluator BESLIST niet. Een pipeline past beleid toe, bv.: accepteer als (score>=95 AND issues=[]); anders → human review.`);

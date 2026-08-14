@@ -1,11 +1,11 @@
-// data-vmbo.meta.js — GESHIPTE metadata voor VMBO GL/TL (gemengde/theoretische
+// data-vmbo.meta.js - GESHIPTE metadata voor VMBO GL/TL (gemengde/theoretische
 // leerweg). Bevat per vak ALLE inhoudelijke examendomeinen (SE + CE) uit de
 // officiële CvTE-examenprogramma's, met per domein de officiële code (bv.
 // "WI/K/4") en ceStatus ("CE+SE" = ook op het centraal examen, "SE" = alleen
 // schoolexamen). De drie algemene vaardigheidsdomeinen K/1 (oriëntatie op leren
 // en werken), K/2 (basisvaardigheden) en K/3 (leervaardigheden) zijn bewust
 // weggelaten: daar maak je geen oefenvragen voor. Vragen (nSv/nOe/nBeg) zijn nog
-// 0 — die komen later via de content-engine. GL en TL delen hetzelfde CE.
+// 0 - die komen later via de content-engine. GL en TL delen hetzelfde CE.
 var VAKKEN_VMBO = [
  {
   "id": "nl", "naam": "Nederlands", "code": "NE", "kleur": "#E85C0D",

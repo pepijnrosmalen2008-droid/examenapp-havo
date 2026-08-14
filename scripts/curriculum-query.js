@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 /**
- * curriculum-query.js — de Query Engine (READ-ONLY).
+ * curriculum-query.js - de Query Engine (READ-ONLY).
  *
  * De enige laag waar engines doorheen lezen; geen enkele generator loopt zelf
  * door JSON-bestanden. Input = filters, output = leerdoel-nodes + afgeleide metrics.
@@ -59,7 +59,7 @@ for (const [domKey, block] of Object.entries(LEERDOELEN)) {
 
 // ══ Querytaal ("interne SQL voor onderwijs") ══
 // Elk leerdoel → platte, queryebare record. Velden zonder store (summary/animatie/
-// flashcards) staan bewust op 'ontbreekt' — dat maakt de content-backlog zichtbaar.
+// flashcards) staan bewust op 'ontbreekt' - dat maakt de content-backlog zichtbaar.
 function record(r) {
   const ld = r.ld, m = r.m;
   return {
@@ -107,14 +107,14 @@ const SAVED = {
 };
 
 if (flag('offlevel')) {
-  // status=off_level — vragen die vermoedelijk niet op dit niveau thuishoren (owner-review).
+  // status=off_level - vragen die vermoedelijk niet op dit niveau thuishoren (owner-review).
   const byReason = {}; let total = 0;
   for (const [vid, kp] of Object.entries(KOPP)) for (const e of Object.values(kp)) if (e.status === 'off_level') {
     total++; const r = `${vid} · ${e.offReason || 'onbekend'}`; byReason[r] = (byReason[r] || 0) + 1;
   }
   console.log(`\nstatus=off_level: ${total} vraag/vragen (vermoedelijk verkeerd niveau in de bank):`);
   for (const [r, n] of Object.entries(byReason).sort((a, b) => b[1] - a[1])) console.log(`  ${String(n).padStart(3)}×  ${r}`);
-  console.log(`\n(eigenschap van de VRAAG, lo:null — geen valse leerdoel-koppeling. Voor owner-review.)\n`);
+  console.log(`\n(eigenschap van de VRAAG, lo:null - geen valse leerdoel-koppeling. Voor owner-review.)\n`);
   process.exit(0);
 }
 if (flag('list')) {

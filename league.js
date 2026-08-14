@@ -27,7 +27,7 @@ const LEAGUE_TOP_XP   = [4500, 7500, 18000, 24000, 30000, 38000];
 const LEAGUE_PROMO_XP = [1100, 2600, 8000, 12000, 16000, 22000];
 function _lgDivTop(d){return LEAGUE_TOP_XP[d]!=null?LEAGUE_TOP_XP[d]:LEAGUE_TOP_XP[LEAGUE_TOP_XP.length-1];}
 // De hoogste divisie (Legende) is het ULTIEME doel: geen promotie meer, en
-// gedeeld over álle niveaus — havo én vwo strijden hier in dezelfde ranglijst.
+// gedeeld over álle niveaus - havo én vwo strijden hier in dezelfde ranglijst.
 const LEAGUE_LEGEND = LEAGUE_DIVISIONS.length - 1;
 // Bots krijgen een echte app-avatar (zelfde dieren + evolutiestadia als spelers).
 const _LG_DIER = ['adelaar','beer','cactus','draak','eenhoorn','gorilla','haai','leeuw','octopus','olifant','robot','slang','slijm','tijger','uil','vlinder','vos','wolf'];
@@ -446,9 +446,9 @@ function showLeagueCeremony(r){
   const title=up?('Welkom in de '+newDiv.naam+'-divisie! 🎉')
     :(dn?('Je zakt naar de '+newDiv.naam+'-divisie')
       :('Je blijft in de '+lastDiv.naam+'-divisie'));
-  const sub=up?'Sterk gewerkt — zo hoog blijven!'
-    :(dn?'Deze week pak je \'m terug — jij kan dit.'
-      :(r.rank<=LEAGUE_PROMO?'Net naast promotie — volgende week pak je \'m!':'Nieuwe week, nieuwe kans om te stijgen.'));
+  const sub=up?'Sterk gewerkt - zo hoog blijven!'
+    :(dn?'Deze week pak je \'m terug - jij kan dit.'
+      :(r.rank<=LEAGUE_PROMO?'Net naast promotie - volgende week pak je \'m!':'Nieuwe week, nieuwe kans om te stijgen.'));
   const rNote=(r.promoReward>0&&r.placement>0)?'plek #'+r.rank+' + promotie'
     :(r.promoReward>0?'promotiebonus':'plek #'+r.rank);
   const coinIco=(typeof _ico==='function')?_ico('coin',20):'🪙';
@@ -466,7 +466,7 @@ function showLeagueCeremony(r){
     <div class="lgc-title">${title}</div>
     <div class="lgc-sub">${sub}</div>
     ${hasChest
-      ? `<div class="lgc-chesthint ${chestGold?'lgc-chest-gold':'lgc-chest-blue'}"><span class="lgc-chest-em">🎁</span> Je verdiende een <b>${chestGold?'gouden':'blauwe'} kist</b>${chestGold?' — munten + zeldzaam item':' — munten + power-up'}</div>
+      ? `<div class="lgc-chesthint ${chestGold?'lgc-chest-gold':'lgc-chest-blue'}"><span class="lgc-chest-em">🎁</span> Je verdiende een <b>${chestGold?'gouden':'blauwe'} kist</b>${chestGold?' - munten + zeldzaam item':' - munten + power-up'}</div>
          <button class="lgc-cta" onclick="_lgClaimFromRecap()">Open je kist 🎁</button>`
       : `${r.reward>0?`<div class="lgc-reward"><span class="lgc-reward-ico">${coinIco}</span>+${r.reward} munten <span class="lgc-reward-note">${rNote}</span></div>`:''}
          <button class="lgc-cta" onclick="_lgCeremonyClose(true)">Bekijk mijn divisie</button>`}
@@ -687,7 +687,7 @@ function renderLeague(){
   const isLegend=L.division===LEAGUE_LEGEND;
   const daysTxt=`Nog ${_lgDaysLeft()} dag${_lgDaysLeft()===1?'':'en'}`;
   const heroSub=isLegend
-    ? `${daysTxt} · 👑 het ultieme doel — havo &amp; vwo strijden hier sámen · onderste ${LEAGUE_DEMOTE} degradeert`
+    ? `${daysTxt} · 👑 het ultieme doel - havo &amp; vwo strijden hier sámen · onderste ${LEAGUE_DEMOTE} degradeert`
     : `${daysTxt} · top ${LEAGUE_PROMO} promoveert${next?' naar '+next.naam:''}${prev?', onderste '+LEAGUE_DEMOTE+' degradeert':''}`;
   const hdr=`
     <div class="lg-hero lg-hero-compact${isLegend?' lg-hero-legend':''}" style="--lg-col:${div.kleur}">
@@ -719,7 +719,7 @@ function renderLeague(){
     const label=tier==='legend'?'Open je Legende-kist':'Open je week-kist';
     topBtn=`<button class="lg-chest-btn ${btnCls}" onclick="_lgOpenRewardChest()"><span class="lg-chest-em">${em}</span><span class="lg-chest-tx">${label}<small>${sub}</small></span><span class="lg-recap-arr">→</span></button>`;
   }else if(L.result){
-    topBtn=`<button class="lg-recap-btn" onclick="_lgShowRecap()"><span class="lg-recap-ic">📊</span>Recap vorige week — je werd <b>#${L.result.rank}</b> van ${L.result.total||LEAGUE_COHORT}<span class="lg-recap-arr">→</span></button>`;
+    topBtn=`<button class="lg-recap-btn" onclick="_lgShowRecap()"><span class="lg-recap-ic">📊</span>Recap vorige week - je werd <b>#${L.result.rank}</b> van ${L.result.total||LEAGUE_COHORT}<span class="lg-recap-arr">→</span></button>`;
   }
   box.innerHTML=hdr+topBtn+rewardsRow+leagueRushChip()+_lgFinishBanner(rows)+_lgListWithDividers(rows);
 }

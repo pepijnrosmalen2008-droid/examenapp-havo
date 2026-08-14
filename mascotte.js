@@ -293,7 +293,7 @@ function _vonkSayRender() {
     const talkDur = Math.min(5200, 1400 + plainLen * 48);
     if (opts.think) setTimeout(() => { fig.innerHTML = mascotSVG(mood, size); }, talkDelay - 20);
     // Visemes: de mond loopt door mondstanden die uit de tekst zijn afgeleid,
-    // op spreektempo — i.p.v. een generieke praat-lus.
+    // op spreektempo - i.p.v. een generieke praat-lus.
     setTimeout(() => { try { if (typeof vonkSpeak === 'function') vonkSpeak(fig, msg, talkDur); else fig.classList.add('talking'); } catch (e) { fig.classList.add('talking'); } }, talkDelay);
     stage._talkT = setTimeout(() => { try { if (typeof vonkSpeakStop === 'function') vonkSpeakStop(fig); else fig.classList.remove('talking'); } catch (e) { fig.classList.remove('talking'); } }, talkDelay + talkDur);
   }

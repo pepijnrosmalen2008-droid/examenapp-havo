@@ -17,7 +17,7 @@
  *   --model <naam>   Anthropic model (standaard: claude-3-haiku-20240307)
  *
  * Omgevingsvariabele:
- *   ANTHROPIC_API_KEY  Verplicht — je Anthropic API-sleutel
+ *   ANTHROPIC_API_KEY  Verplicht - je Anthropic API-sleutel
  *
  * Afhankelijkheden:
  *   npm install @anthropic-ai/sdk   (of: npm install anthropic)
@@ -216,7 +216,7 @@ async function main() {
   }
 
   if (DRY_RUN) {
-    console.log('\n🟡  DRY-RUN modus — geen wijzigingen worden opgeslagen.\n');
+    console.log('\n🟡  DRY-RUN modus - geen wijzigingen worden opgeslagen.\n');
     for (const q of toProcess.slice(0, 5)) {
       console.log(`  [${q.vakId}/${q.domeinId}] ${q.v.slice(0, 60)}…`);
     }

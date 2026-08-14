@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 /**
- * curriculum-graph.js — READ-ONLY graph- & validation/evolution-engine.
+ * curriculum-graph.js - READ-ONLY graph- & validation/evolution-engine.
  *
  * Realiseert twee architectuurpunten:
  *  1. Concept als eersteklas NODE (niet alleen een string in een leerdoel).
@@ -79,7 +79,7 @@ if (cmd === 'concepts') {
     console.log(`  gebruikt in: ${n.appearsIn.join(', ')}`);
   }
 } else if (cmd === 'evolve') {
-  // Curriculum Evolution Engine — signaleert, schrijft niets.
+  // Curriculum Evolution Engine - signaleert, schrijft niets.
   const nodes = buildConcepts();
   const allLd = {}; const domOf = {};
   for (const [domKey, block] of Object.entries(LEERDOELEN)) for (const ld of (block.leerdoelen || [])) { allLd[ld.id] = ld; domOf[ld.id] = domKey; }
@@ -102,15 +102,15 @@ if (cmd === 'concepts') {
   for (const n of Object.values(nodes)) if (n.nVragen === 0) add('gat', `concept "${n.labels[0]}" (${n.appearsIn.join(',')}) heeft 0 gekoppelde vragen`);
   // 4. dangling prerequisites/vervolg (edges naar niet-bestaand leerdoel)
   for (const [id, ld] of Object.entries(allLd)) for (const f of ['voorkennis', 'vervolg']) for (const ref of (ld[f] || [])) if (!allLd[ref]) add('dangling', `${id}.${f} → ${ref} bestaat niet`);
-  // 5. geïsoleerde leerdoelen (geen edges) — informatief zolang edges nog leeg zijn
+  // 5. geïsoleerde leerdoelen (geen edges) - informatief zolang edges nog leeg zijn
   const withEdges = Object.values(allLd).filter(ld => (ld.voorkennis || []).length || (ld.vervolg || []).length).length;
   // 6. eindtermen die nog geverifieerd moeten worden
   const teVer = Object.values(allLd).filter(ld => ld.teVerifiëren).length;
 
-  console.log(`\n═══ Curriculum Evolution — voorstellen (${niveau}) ═══`);
+  console.log(`\n═══ Curriculum Evolution - voorstellen (${niveau}) ═══`);
   console.log(P.length ? P.join('\n') : '  (geen signalen)');
   console.log(`\n  info: ${Object.keys(allLd).length} leerdoelen · ${withEdges} met voorkennis/vervolg-edges · ${teVer} eindtermen teVerifiëren`);
-  console.log(`  (Evolution Engine schrijft niets — dit zijn voorstellen voor menselijke review.)`);
+  console.log(`  (Evolution Engine schrijft niets - dit zijn voorstellen voor menselijke review.)`);
 } else {
   console.error('gebruik: curriculum-graph.js concepts|query|evolve <niveau> [term]');
   process.exit(1);

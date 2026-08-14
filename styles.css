@@ -917,6 +917,9 @@ html.dark .qb{background:#2e3550}
 .nxt{width:100%;background:var(--or);color:#fff;border:none;border-radius:14px;padding:18px;font-family:var(--font-head);font-size:17px;font-weight:700;cursor:pointer;transition:all 0.2s ease;letter-spacing:-.2px;box-shadow:0 4px 18px rgba(232,92,13,0.3)}
 .nxt:hover{background:#d14f09;box-shadow:0 6px 24px rgba(232,92,13,0.4)}
 .nxt:active{transform:scale(0.97)}
+/* Volgende-knop blijft in beeld zodra de uitleg de vraag hoger dan het scherm maakt,
+   zodat je nooit hoeft te scrollen om verder te klikken (compactheid terug). */
+#qnxt{position:sticky;bottom:12px;z-index:6}
 /* open question */
 .open-wrap{grid-column:1/-1}
 .open-input{width:100%;min-height:120px;background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.15);border-radius:14px;padding:16px 18px;font-size:15px;color:#fff;font-family:var(--font);line-height:1.7;resize:vertical;outline:none}
@@ -5734,7 +5737,7 @@ html.dark{
    env(safe-area-inset-bottom). Op toestellen zonder inset is env()=0,
    dus geen verandering. ─────────────────────────────────────────── */
 /* Alle top-elementen van elk scherm onder de notch/statusbalk duwen.
-   Scoping via .pwa-standalone (JS-gezet met navigator.standalone — betrouwbaar op
+   Scoping via .pwa-standalone (JS-gezet met navigator.standalone - betrouwbaar op
    iOS, i.t.t. @media(display-mode:standalone)). De class staat alleen in de
    geïnstalleerde PWA, dus de website blijft onaangeroerd. Op toestellen zonder
    notch is env()=0, dus geen verandering. */
@@ -6699,7 +6702,7 @@ html.dark .dom-hero-card{background:linear-gradient(180deg,rgba(255,255,255,.045
 .lg-hero-compact{display:flex;align-items:center;gap:14px;text-align:left;padding:13px 16px;margin-bottom:12px}
 .lg-hero-compact .lg-hero-badge{font-size:38px}
 .lg-hero-compact .lg-hero-name{margin-top:0;font-size:20px}
-/* Legende-hero: het ultieme doel — prismatische, bewegende gloed + kroon-glans */
+/* Legende-hero: het ultieme doel - prismatische, bewegende gloed + kroon-glans */
 .lg-hero-legend{background:linear-gradient(120deg,#4c1d95,#7c3aed 38%,#a855f7 60%,#f0abfc 82%,#fbbf24);background-size:220% 100%;animation:lgLegendShift 7s ease-in-out infinite;
   box-shadow:0 14px 34px -6px rgba(124,58,237,.6),0 1px 0 rgba(255,255,255,.4) inset}
 .lg-hero-legend::after{content:'';position:absolute;inset:-40% -10%;background:radial-gradient(circle at 30% 20%,rgba(255,255,255,.28),transparent 42%);pointer-events:none}
@@ -6754,7 +6757,7 @@ html.dark .dom-hero-card{background:linear-gradient(180deg,rgba(255,255,255,.045
 .chest-league-blue .chest-box{filter:drop-shadow(0 12px 30px rgba(43,134,232,.5))}
 .chest-league-blue .chest-sparkles{opacity:1}
 .chest-league-blue .cs1,.chest-league-blue .cs2,.chest-league-blue .cs3{fill:#bae6fd;animation:chestTwinkle 1.2s ease-in-out infinite}
-/* Legende-kist: het ultieme doel — koninklijk paars + goud + prismatische gloed */
+/* Legende-kist: het ultieme doel - koninklijk paars + goud + prismatische gloed */
 .chest-league-legend .chest-face{fill:#4c1d95;stroke:#2e1065}
 .chest-league-legend .chest-lid-face{fill:#6d28d9;stroke:#2e1065}
 .chest-league-legend .chest-band{fill:#fbbf24}
@@ -6872,7 +6875,7 @@ html.dark .dom-hero-card{background:linear-gradient(180deg,rgba(255,255,255,.045
 .klas-doc-link{font-size:13px;color:var(--mu);text-align:center;margin-top:16px;line-height:1.55}
 .klas-doc-link a{color:var(--or);font-weight:700}
 
-/* ═══ "Vraag het aan Vonk" — fout-coach ═══ */
+/* ═══ "Vraag het aan Vonk" - fout-coach ═══ */
 .q-vonk-ask{display:inline-flex;align-items:center;gap:7px;margin-top:11px;padding:9px 15px;border:none;border-radius:12px;background:linear-gradient(180deg,#fb8c3e,var(--or));color:#fff;font-family:var(--font);font-weight:800;font-size:13px;cursor:pointer;box-shadow:0 4px 12px rgba(var(--or-rgb),.28);-webkit-tap-highlight-color:transparent}
 .q-vonk-ask:active{transform:scale(.97)}
 

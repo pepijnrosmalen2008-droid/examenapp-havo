@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 /**
- * leerdoel-dekking.js — DRY-RUN dekkingsrapport voor de Curriculum Intelligence
+ * leerdoel-dekking.js - DRY-RUN dekkingsrapport voor de Curriculum Intelligence
  * Layer (F1 / M1). Matcht bestaande vragen op leerdoelen en rapporteert de
  * dekking. Schrijft NIETS: er wordt geen `lo`-veld toegevoegd, geen bestand
  * aangepast. Puur ter beoordeling van de pilotstructuur.
@@ -9,9 +9,9 @@
  *   node scripts/leerdoel-dekking.js havo bi
  *
  * Matchstrategie (grof → fijn), conform het ontwerp §3.2:
- *   1. concept-match  — de vraag/afleiders bevatten een `concept` van een leerdoel
+ *   1. concept-match  - de vraag/afleiders bevatten een `concept` van een leerdoel
  *                       (specifieker leerdoel wint via langere-concept-weging)
- *   2. domein-fallback — geen concepthit → het eerste leerdoel van het domein
+ *   2. domein-fallback - geen concepthit → het eerste leerdoel van het domein
  */
 const fs = require('node:fs');
 const path = require('node:path');
@@ -104,4 +104,4 @@ console.log(`  via domein-fallback    : ${matchedFallback}  (${(100 - pct).toFix
 console.log(`  domeinen zonder leerdoelen: ${noLeerdoelenDom} vragen`);
 console.log(`  leerdoelen met 0 vragen: ${zero.length}${zero.length ? '  → ' + zero.join(', ') : ''}`);
 console.log(`\n  (⚠0 = leerdoel zonder gekoppelde vraag = kandidaat voor F2-generatie)`);
-console.log(`  NB: dit is een dry-run — er is NIETS naar data-${NIVEAU}.js of q/ geschreven.\n`);
+console.log(`  NB: dit is een dry-run - er is NIETS naar data-${NIVEAU}.js of q/ geschreven.\n`);

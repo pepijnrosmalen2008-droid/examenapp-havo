@@ -424,7 +424,7 @@
       toggle();
     }
     if (btn) btn.addEventListener("click", onUserToggle);
-    // De hele scène is tikbaar om te starten/pauzeren — veel vindbaarder dan alleen
+    // De hele scène is tikbaar om te starten/pauzeren - veel vindbaarder dan alleen
     // het knopje, en de redding als autoplay niet vuurt (bv. reduced-motion).
     var svgEl = clip.querySelector("svg");
     if (svgEl) { svgEl.style.cursor = "pointer"; svgEl.addEventListener("click", onUserToggle); }
@@ -446,7 +446,7 @@
       bar.appendChild(spBtn);
     }
 
-    // Autoplay bij in-beeld — maar niet bij reduced-motion (dan alleen op tik).
+    // Autoplay bij in-beeld - maar niet bij reduced-motion (dan alleen op tik).
     // Lagere drempel (0.25) zodat het ook op kleine/hoge schermen betrouwbaar vuurt.
     if (!reduce) {
       if ("IntersectionObserver" in window) {

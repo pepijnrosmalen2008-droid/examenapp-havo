@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 /**
- * curriculum-factory.js — de Curriculum Factory (F1.55).
+ * curriculum-factory.js - de Curriculum Factory (F1.55).
  *
  * Doel: de machine die leerdoelen produceert, i.p.v. ze met de hand te schrijven.
  * De factory automatiseert ALLES rond het schrijven: bron-extractie, briefing,
@@ -72,12 +72,12 @@ const SCHEMA = {
     concepten: '[begrippen uit dit domein]', vaardigheid: 'enum', examenskill: 'enum', examenrelevantie: 'enum (=examengewicht)',
     veelgemaakteFouten: '[misconcepties]',
     // ── graph-edges + extra bronvelden (optioneel; source-of-truth, GEEN afgeleiden) ──
-    voorkennis: '[leerdoel-ID\'s die eerst nodig zijn] — prerequisite-edges',
-    vervolg: '[leerdoel-ID\'s die hierop voortbouwen] — successor-edges',
+    voorkennis: '[leerdoel-ID\'s die eerst nodig zijn] - prerequisite-edges',
+    vervolg: '[leerdoel-ID\'s die hierop voortbouwen] - successor-edges',
     voorbeelden: '[canonieke voorbeelden]',
-    bronnen: '[{type, ref} — CvTE/syllabus/examenvraag-verwijzingen]',
+    bronnen: '[{type, ref} - CvTE/syllabus/examenvraag-verwijzingen]',
     // ── forward-compatible (optioneel; piloten vóór uitrol) ──
-    units: '[knowledge units: {id, type:definitie|werking|voorwaarden|toepassing|valkuil, tekst}] — atomische kenniseenheden',
+    units: '[knowledge units: {id, type:definitie|werking|voorwaarden|toepassing|valkuil, tekst}] - atomische kenniseenheden',
     evidence: '[evidence-node-ID\'s: waarom geloven we dat dit klopt] bv. "evidence.cvte.2025.v17"',
     relaties: '{typed edges} bv. {often_confused_with:[ids], used_by:[ids], contrasts:[ids]}',
   },
@@ -90,7 +90,7 @@ new Function('g', read(`data-${niveau}.js`) + `\ng.V=(typeof VAKKEN!=='undefined
 const vak = vakId ? dg.V.find(v => v.id === vakId) : null;
 if (needsVak.includes(cmd) && !vak) { console.error(`vak ${vakId} niet in data-${niveau}.js`); process.exit(1); }
 
-// samenvattingen (optioneel — extra thematische context)
+// samenvattingen (optioneel - extra thematische context)
 let SAM = {};
 try {
   const sg = {};
@@ -205,7 +205,7 @@ function assemble() {
   }
   const sorted = {}; for (const k of Object.keys(merged).sort()) sorted[k] = merged[k];
   const banner = `// ═══════════════════════════════════════════════════════════════════════
-// knowledge-${niveau}.js — GEGENEREERD door curriculum-factory.js (assemble).
+// knowledge-${niveau}.js - GEGENEREERD door curriculum-factory.js (assemble).
 // Bron van waarheid: knowledge/${niveau}/<vak>.json. NIET met de hand bewerken;
 // draai 'curriculum-factory.js ingest' of 'assemble'. Bevat provenance in _meta.
 // ═══════════════════════════════════════════════════════════════════════
@@ -224,7 +224,7 @@ function ingest() {
   const draft = loadDraft();
   console.log(`\n── Validatie ──`);
   const { issues } = validateDraftObj(draft);
-  if (issues) { console.error(`\n✗ ${issues} schema-issue(s) — ingest afgebroken. Corrigeer de draft.`); process.exit(1); }
+  if (issues) { console.error(`\n✗ ${issues} schema-issue(s) - ingest afgebroken. Corrigeer de draft.`); process.exit(1); }
 
   const today = new Date().toISOString().slice(0, 10);
   const file = path.join(KDIR(niveau), `${vakId}.json`);

@@ -1,4 +1,4 @@
-// vonk.js — Vonk-gedragslaag: state machine + event bus + gaze + idle + testmodus.
+// vonk.js - Vonk-gedragslaag: state machine + event bus + gaze + idle + testmodus.
 // ─────────────────────────────────────────────────────────────────────────────
 // Slagio heeft geen build-step (dus geen Rive-runtime, en een .riv kan niet in
 // code worden ontworpen). Dit realiseert HETZELFDE gedragsmodel als Duolingo's
@@ -20,7 +20,7 @@ var VonkFX = { primary: null, mainUntil: 0, idleT: null, lastEvt: 0 };
 //  enthusiasm = hoe uitbundig (energie van de animaties, idle-tempo)
 //  confidence = hoe zeker (invloed op houding / variant)
 //  empathy    = hoe zorgzaam (stijgt bij fouten → bemoedigend gedrag)
-// Mensen lezen gezichten, geen variabelen — vandaar naast de basis-drie ook
+// Mensen lezen gezichten, geen variabelen - vandaar naast de basis-drie ook
 // curiosity/focus/pride, die de fysica sturen (kantelen, rust, houding).
 var VonkMood = { enthusiasm: 55, confidence: 62, empathy: 45, curiosity: 45, focus: 45, pride: 40 };
 var VONK_MOOD_BASE = { enthusiasm: 50, confidence: 60, empathy: 42, curiosity: 45, focus: 45, pride: 40 };
@@ -245,7 +245,7 @@ function vonkTest() {
   d.style.cssText = 'position:fixed;inset:0;z-index:100000;background:#0e1119;display:flex;flex-direction:column;align-items:center;gap:16px;padding:26px 18px;overflow:auto;font-family:system-ui,sans-serif';
   var events = ['answer_correct', 'answer_wrong', 'combo_5', 'combo_8', 'level_up', 'promotion', 'evolve'];
   d.innerHTML =
-    '<div style="color:#fff;font-weight:800;font-size:18px">Vonk — testmodus</div>' +
+    '<div style="color:#fff;font-weight:800;font-size:18px">Vonk - testmodus</div>' +
     '<div style="color:#8a94a8;font-size:13px;text-align:center;max-width:440px">Idle loopt vanzelf (ademen, knipperen, rondkijken, geeuwen). Simuleer <b>events</b> en let op hoe dezelfde reactie mee-energie krijgt met de stemming.</div>' +
     '<div id="vt-stage" style="width:200px;height:200px;filter:drop-shadow(0 10px 30px rgba(0,0,0,.5))">' + (typeof mascotSVG === 'function' ? mascotSVG('blij', 200) : '') + '</div>' +
     '<div id="vt-mood" style="font-family:ui-monospace,monospace;font-size:12.5px;color:#cbd3e1;background:#141824;border:1px solid #262c3b;border-radius:12px;padding:10px 14px;min-width:260px;text-align:left"></div>' +

@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 /**
- * question-engine.js — eerste echte CONSUMENT van de kennislaag (stap 3).
+ * question-engine.js - eerste echte CONSUMENT van de kennislaag (stap 3).
  * Integratietest: raakt curriculum + concepten + misconcepties + examenskill +
  * examengewicht + reviewstatus + provenance.
  *
@@ -67,8 +67,8 @@ for (const row of selected.slice(0, limit)) {
     misconceptie,
     examenskill: ld.examenskill, vraagvorm: SKILL_FORM[ld.examenskill] || 'meerkeuzevraag',
     examengewicht: ld.examenrelevantie, difficulty: DIFF[ld.examenrelevantie] || 2,
-    opdracht: `Genereer een ${SKILL_FORM[ld.examenskill] || 'vraag'} over "${ld.titel}" (concept: ${(ld.concepten || [])[0] || '—'}) op moeilijkheid ${DIFF[ld.examenrelevantie] || 2}${misconceptie ? `, die de misconceptie "${misconceptie}" ontmaskert` : ''}.`,
-    prozatekst: '[LLM-stap — hier vult de generator de daadwerkelijke vraag + afleiders in]',
+    opdracht: `Genereer een ${SKILL_FORM[ld.examenskill] || 'vraag'} over "${ld.titel}" (concept: ${(ld.concepten || [])[0] || '-'}) op moeilijkheid ${DIFF[ld.examenrelevantie] || 2}${misconceptie ? `, die de misconceptie "${misconceptie}" ontmaskert` : ''}.`,
+    prozatekst: '[LLM-stap - hier vult de generator de daadwerkelijke vraag + afleiders in]',
     _prov: { engine: 'question-engine@1', mode, method: 'spec-only (LLM-kern pluggable)', bronReview: row.review, aiReady: row.airready, datum: today },
   };
   specs.push(spec);
@@ -76,7 +76,7 @@ for (const row of selected.slice(0, limit)) {
 
 console.log(`\n${specs.length} generatie-spec(s) opgebouwd uit de metadata:\n`);
 for (const s of specs) {
-  console.log(`• ${s.leerdoel} v${s.leerdoelVersion} — ${s.titel}  [${s.examenskill}/${s.examengewicht}·diff${s.difficulty}]`);
+  console.log(`• ${s.leerdoel} v${s.leerdoelVersion} - ${s.titel}  [${s.examenskill}/${s.examengewicht}·diff${s.difficulty}]`);
   console.log(`   ${s.opdracht}`);
 }
 
@@ -86,6 +86,6 @@ if (flag('write')) {
   fs.writeFileSync(f, JSON.stringify({ _meta: { engine: 'question-engine@1', mode, datum: today }, specs }, null, 1));
   console.log(`\n✓ store: knowledge/generated/questionspecs-${niveau}.json (${specs.length} specs)`);
 } else {
-  console.log(`\n(dry-run — gebruik --write om naar de question-store te schrijven)`);
+  console.log(`\n(dry-run - gebruik --write om naar de question-store te schrijven)`);
 }
 console.log('');

@@ -1,9 +1,9 @@
 #!/usr/bin/env node
 /* ═══════════════════════════════════════════════════════════════════════════
-   build-vonk-lottie.js — genereert vonk.lottie.json (Bodymovin/Lottie).
+   build-vonk-lottie.js - genereert vonk.lottie.json (Bodymovin/Lottie).
 
    Waarom: de SVG-mascotte (mascotSVG) beweegt alleen via CSS-keyframes op losse
-   onderdelen — beperkt en "houterig". Lottie geeft frame-precieze, vrije
+   onderdelen - beperkt en "houterig". Lottie geeft frame-precieze, vrije
    beweging (squash/stretch, secondary motion, overlap) zoals Duolingo's Rive.
 
    Aanpak: we hergebruiken Vonk's ECHTE geometrie (dezelfde paden/ellipsen als
@@ -257,7 +257,7 @@ const IDLE_BLINK = [[0, [100, 100, 100]], [40, [100, 100, 100]], [43, [100, 8, 1
 const CLIPS = [
   { name: 'idle', dur: 90, tr: {
     // Levendige rust: ademen + subtiele gewichtsverdeling (wiegt licht), kop wiegt
-    // tegen, oogjes kijken even rond, en één oor twitcht — nooit "bevroren".
+    // tegen, oogjes kijken even rond, en één oor twitcht - nooit "bevroren".
     cP: [[0, [60, 110]], [30, [59.4, 108.7]], [60, [60.6, 108.7]], [90, [60, 110]]],
     cS: [[0, [100, 100, 100]], [45, [101, 98.4, 100]], [90, [100, 100, 100]]],
     hR: [[0, 0], [30, -1.6], [60, 1.6], [90, 0]],

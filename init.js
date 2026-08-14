@@ -449,7 +449,7 @@ function openNavSheet(){
   let ov=document.getElementById('nav-sheet-ov');
   if(!ov){
     ov=document.createElement('div');ov.id='nav-sheet-ov';ov.className='nav-sheet-ov';
-    // In-house SVG-iconen (uit features.js) i.p.v. emoji — strakker.
+    // In-house SVG-iconen (uit features.js) i.p.v. emoji - strakker.
     const I=(typeof ICO_CALC!=='undefined');
     const items=[
       [I?ICO_CALC:'🧮','Cijfers',"show('sc-calc');setTimeout(prefillCalcFromSaved,50)"],

@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 /**
- * tag-leerdoelen.js — koppelt bestaande vragen aan leerdoelen (F1 / M2).
+ * tag-leerdoelen.js - koppelt bestaande vragen aan leerdoelen (F1 / M2).
  *
  * Schrijft UITSLUITEND de sidecar `knowledge-koppeling-<niveau>.js` met per vraag:
  *   { lo, confidence, source, via }
@@ -9,7 +9,7 @@
  *   node scripts/tag-leerdoelen.js            # havo bi, schrijft sidecar
  *   node scripts/tag-leerdoelen.js --check    # alleen rapport, schrijft niets
  *
- * Match: vraagstam + JUIST antwoord (niet de afleiders — die zijn sibling-
+ * Match: vraagstam + JUIST antwoord (niet de afleiders - die zijn sibling-
  * begrippen en koppelen anders ~20% fout, zie F1-BIOLOGIE-COVERAGE-REVIEW).
  */
 const fs = require('node:fs');
@@ -31,7 +31,7 @@ const OVERRIDES_ALL = {
   bi: {
     // Vragen die geen begrip letterlijk noemen (synoniem/context) en daardoor als
     // fallback vielen. Handmatig beoordeeld o.b.v. het juiste antwoord + uitleg.
-    // ── bi.M.3 Enzymwerking — proefsnede Content Engine (eigen domein-module M3) ──
+    // ── bi.M.3 Enzymwerking - proefsnede Content Engine (eigen domein-module M3) ──
     "Wat is een enzym?": 'bi.M.3',
     "Hoe versnelt een enzym een reactie?": 'bi.M.3',
     "De enzymactiviteit daalt snel boven 40 °C. Wat gebeurt er?": 'bi.M.3',
@@ -124,7 +124,7 @@ const OVERRIDES_ALL = {
 };
 
 // Off-level: vragen die vermoedelijk NIET op dit niveau thuishoren (bv. VWO-stof in
-// de HAVO-bank). Ze krijgen status 'off_level' + lo:null — GEEN onjuiste koppeling
+// de HAVO-bank). Ze krijgen status 'off_level' + lo:null - GEEN onjuiste koppeling
 // aan een HAVO-leerdoel. Een eigenschap van de VRAAG, gemeld voor owner-review.
 const OFF_LEVEL_ALL = {
   na: {
@@ -259,7 +259,7 @@ console.log(`leerdoelen zonder vraag: ${zero.length}${zero.length ? ' → ' + ze
 const review = Object.entries(koppeling).filter(([, e]) => e.confidence < 0.70)
   .sort((a, b) => a[1].confidence - b[1].confidence);
 if (review.length) {
-  console.log(`\n── Te reviewen (${review.length}, confidence<0.70) — kandidaten voor OVERRIDES/F2 ──`);
+  console.log(`\n── Te reviewen (${review.length}, confidence<0.70) - kandidaten voor OVERRIDES/F2 ──`);
   for (const [key, e] of review.slice(0, 40)) {
     console.log(`  [${e.confidence.toFixed(2)} ${e.source}] → ${e.lo}   "${key.slice(0, 60)}"`);
   }
@@ -276,7 +276,7 @@ if (!CHECK) {
   const sorted = {}; for (const k of Object.keys(all).sort()) sorted[k] = all[k];
   const lines = Object.entries(sorted).map(([vk, kp]) => `LO_KOPPELING[${JSON.stringify(vk)}] = ${JSON.stringify(kp, null, 0)};`).join('\n');
   const banner = `// ═══════════════════════════════════════════════════════════════════════
-// knowledge-koppeling-${NIVEAU}.js — GEGENEREERD door scripts/tag-leerdoelen.js
+// knowledge-koppeling-${NIVEAU}.js - GEGENEREERD door scripts/tag-leerdoelen.js
 // Sidecar: koppelt vragen aan leerdoelen mét provenance. NIET met de hand
 // bewerken. Sleutel = eerste 80 tekens van vraag.v (botsingsvrij geverifieerd).
 // Elke waarde: { lo, confidence (0–1), source: concept_match|fallback|manual_override, via }

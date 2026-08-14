@@ -1,4 +1,4 @@
-// vonk-phys.js — VONK PHYSICS ENGINE
+// vonk-phys.js - VONK PHYSICS ENGINE
 // ─────────────────────────────────────────────────────────────────────────────
 // Maakt van Vonk een fysiek wezen i.p.v. een SVG met keyframes. Eén veer-model
 // (spring physics) levert de 12 klassieke animatieprincipes vanzelf op:

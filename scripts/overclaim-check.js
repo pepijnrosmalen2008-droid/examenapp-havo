@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 /**
- * overclaim-check.js — Canonical Overclaim Check (ANALYZER). READ-ONLY, beslist NIET.
+ * overclaim-check.js - Canonical Overclaim Check (ANALYZER). READ-ONLY, beslist NIET.
  *
  * Engineverbetering #2 (Slice-0 review): een canonical knowledge engine mag geen
  * absolute vereenvoudigingen als universele waarheid de content in laten lekken.
@@ -16,7 +16,7 @@
  * zet de marker  [[overclaim-ok:reden]]  in dezelfde regel/bewering. De linter
  * telt die dan als bewust-gerechtvaardigd (met bron), niet als issue.
  *
- * De check BESLIST niet — hij meet. De pipeline/DoD-gate E6 beslist:
+ * De check BESLIST niet - hij meet. De pipeline/DoD-gate E6 beslist:
  * 0 niet-gerechtvaardigde overclaims ⇒ pass.
  *
  *   node scripts/overclaim-check.js --file <pad>        één bestand (txt/md/html/js/json)
@@ -33,7 +33,7 @@ const niveau = A.find(x => !x.startsWith('--')) || 'havo';
 
 // Twee niveaus. HARD = hoge-precisie dubieuze absoluten die als canonieke waarheid
 // bijna nooit kloppen (gate-blokkerend). SOFT = kwantoren met veel legitieme
-// betekenissen ("alleen"=slechts, "elk enzym heeft een actief centrum"=waar) —
+// betekenissen ("alleen"=slechts, "elk enzym heeft een actief centrum"=waar) -
 // alleen ter review, blokkeren de gate niet. \b-grenzen tegen 'alleenstaand' e.d.
 const HARD = [
   { re: /\bprecies\s+(?:één|een|1)\s+(?:substraat|type|soort|stof|reactie)/i, term: 'precies één X' },
@@ -109,18 +109,18 @@ const okd = all.filter(h => h.severity === 'gerechtvaardigd');
 if (asJSON) { console.log(JSON.stringify({ niveau, targets, hard: over.length, soft: soft.length, gerechtvaardigd: okd.length, hits: all }, null, 1)); process.exit(over.length ? 1 : 0); }
 
 console.log(`\n═══ Overclaim-check ═══  (${targets.length} bron${targets.length === 1 ? '' : 'nen'})`);
-if (!targets.length) { console.log('  (geen bronnen gevonden — nog geen geshipte content voor dit niveau)'); process.exit(0); }
+if (!targets.length) { console.log('  (geen bronnen gevonden - nog geen geshipte content voor dit niveau)'); process.exit(0); }
 if (!over.length) console.log('  ✓ 0 HARDE overclaims (gate E6: pass)');
 for (const h of over) {
   console.log(`  ✗ HARD [${h.term}]  ${h.source}`);
   console.log(`      "${h.zin}"`);
 }
 if (soft.length) {
-  console.log(`\n  ${soft.length} zacht signaal (kwantor met legitieme lezing — ter menselijke review, blokkeert niet):`);
+  console.log(`\n  ${soft.length} zacht signaal (kwantor met legitieme lezing - ter menselijke review, blokkeert niet):`);
   for (const h of soft.slice(0, 12)) console.log(`  · [${h.term}] "${h.zin.slice(0, 90)}"`);
   if (soft.length > 12) console.log(`  · … +${soft.length - 12} meer`);
 }
 if (okd.length) console.log(`\n  · ${okd.length} ontkend/idioom/gemarkeerd → correct, genegeerd`);
 console.log(`\n  Gate E6 = 0 HARDE overclaims. Nu: ${over.length ? over.length + ' hard te herzien ⇒ FAIL' : 'pass'}.`);
-console.log('  → HARD blokkeert; SOFT is een reviewhint. Scan bij voorkeur canonieke velden (samenvatting, juist antwoord, uitleg) — afleiders mógen bewust fout zijn.\n');
+console.log('  → HARD blokkeert; SOFT is een reviewhint. Scan bij voorkeur canonieke velden (samenvatting, juist antwoord, uitleg) - afleiders mógen bewust fout zijn.\n');
 process.exit(over.length ? 1 : 0);

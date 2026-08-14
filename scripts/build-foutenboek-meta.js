@@ -1,16 +1,16 @@
 #!/usr/bin/env node
 /**
- * build-foutenboek-meta.js — genereert de SHIPPED verrijkingslaag voor Foutenboek 2.0.
+ * build-foutenboek-meta.js - genereert de SHIPPED verrijkingslaag voor Foutenboek 2.0.
  *
  * Foutenboek 2.0 slaat iedere fout van een leerling op. Om die fout te verrijken met
  * "waarom ging dit fout?" (leerdoel + misconceptie + concept) heeft de student-app een
  * compacte, lazy-geladen mapping nodig: qkey → { lt, m, c }.
  *
- * Bron (NIET met de hand bewerken — dit is een afgeleide):
+ * Bron (NIET met de hand bewerken - dit is een afgeleide):
  *   - knowledge-koppeling-<niveau>.js  (LO_KOPPELING: vraag → leerdoel, met status)
  *   - knowledge-<niveau>.js            (LEERDOELEN: titel, misconcepties, concepten)
  *
- * Alleen 'matched' koppelingen (concept_match | manual_override) worden verrijkt — die
+ * Alleen 'matched' koppelingen (concept_match | manual_override) worden verrijkt - die
  * hebben een betrouwbaar leerdoel. off_level/fallback → geen verrijking (fout wordt nog
  * steeds opgeslagen in de app, maar zonder "waarom fout").
  *
@@ -66,7 +66,7 @@ for (const vak of Object.keys(META).sort()) {
 }
 
 const banner = `// ═══════════════════════════════════════════════════════════════════════
-// foutenboek-meta-${niveau}.js — GEGENEREERD door scripts/build-foutenboek-meta.js
+// foutenboek-meta-${niveau}.js - GEGENEREERD door scripts/build-foutenboek-meta.js
 // Verrijkingslaag voor Foutenboek 2.0: koppelt een foute vraag aan het leerdoel
 // + de misconceptie erachter ("waarom ging dit fout?"). NIET met de hand bewerken.
 // FB_LO[loId]   = { lt: leerdoel-titel, m?: misconceptie, c?: concept }
@@ -80,4 +80,4 @@ const body = `var FB_LO = (typeof FB_LO !== 'undefined' && FB_LO) || {};\n` +
   Object.entries(sorted).map(([vak, m]) => `FB_META[${JSON.stringify(vak)}] = ${JSON.stringify(m)};`).join('\n') + '\n';
 
 fs.writeFileSync(path.join(ROOT, `foutenboek-meta-${niveau}.js`), banner + body);
-console.log(`✓ foutenboek-meta-${niveau}.js — ${nVerrijkt} verrijkt / ${nTot} koppelingen · vakken: ${Object.keys(sorted).join(', ')}`);
+console.log(`✓ foutenboek-meta-${niveau}.js - ${nVerrijkt} verrijkt / ${nTot} koppelingen · vakken: ${Object.keys(sorted).join(', ')}`);

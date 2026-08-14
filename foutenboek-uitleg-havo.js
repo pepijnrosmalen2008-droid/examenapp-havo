@@ -1,4 +1,4 @@
-// foutenboek-uitleg-havo.js — per-optie-uitleg (schema: {opts:[{w,juist}],verleidelijk,herken}).
+// foutenboek-uitleg-havo.js - per-optie-uitleg (schema: {opts:[{w,juist}],verleidelijk,herken}).
 // Gegenereerd uit de inline uo/uh op de vragen (bi.M.3). Zie scripts/build-foutenboek-uitleg.js voor LLM-generatie.
 var FB_UITLEG = {
  "bi": {
@@ -31,7 +31,7 @@ var FB_UITLEG = {
      "juist": false
     },
     {
-     "w": "Een enzym levert zélf geen energie — de bekende valkuil. Het verlaagt alleen de startdrempel, dát is het juiste antwoord.",
+     "w": "Een enzym levert zélf geen energie - de bekende valkuil. Het verlaagt alleen de startdrempel, dát is het juiste antwoord.",
      "juist": false
     },
     {
@@ -57,7 +57,7 @@ var FB_UITLEG = {
      "juist": false
     },
     {
-     "w": "Klopt: boven de optimumtemperatuur denatureert het enzym — het actief centrum verliest zijn vorm en de activiteit daalt.",
+     "w": "Klopt: boven de optimumtemperatuur denatureert het enzym - het actief centrum verliest zijn vorm en de activiteit daalt.",
      "juist": true
     },
     {
@@ -71,7 +71,7 @@ var FB_UITLEG = {
   "M3|Wat is het verschil tussen optimum en denaturatie?": {
    "opts": [
     {
-     "w": "Ze betekenen niet hetzelfde — het zijn juist tegengestelde dingen: goed werken versus kapotgaan.",
+     "w": "Ze betekenen niet hetzelfde - het zijn juist tegengestelde dingen: goed werken versus kapotgaan.",
      "juist": false
     },
     {
@@ -101,7 +101,7 @@ var FB_UITLEG = {
      "juist": false
     },
     {
-     "w": "Klopt: het enzym komt onveranderd vrij en werkt opnieuw — daarom kan één molecuul veel reacties versnellen.",
+     "w": "Klopt: het enzym komt onveranderd vrij en werkt opnieuw - daarom kan één molecuul veel reacties versnellen.",
      "juist": true
     },
     {
@@ -123,7 +123,7 @@ var FB_UITLEG = {
      "juist": true
     },
     {
-     "w": "pH speelt wel een rol bij enzymen, maar verklaart niet waarom amylase wél zetmeel en géén eiwit afbreekt — dat is de vorm.",
+     "w": "pH speelt wel een rol bij enzymen, maar verklaart niet waarom amylase wél zetmeel en géén eiwit afbreekt - dat is de vorm.",
      "juist": false
     },
     {
@@ -137,7 +137,7 @@ var FB_UITLEG = {
   "M3|Na verhitting tot 60 °C werkt een enzym niet meer, ook niet na afkoelen. Waarom?": {
    "opts": [
     {
-     "w": "Het enzym wérkte al goed bij 37 °C, dus het optimum wás bereikt; er is iets blijvends veranderd — denaturatie.",
+     "w": "Het enzym wérkte al goed bij 37 °C, dus het optimum wás bereikt; er is iets blijvends veranderd - denaturatie.",
      "juist": false
     },
     {

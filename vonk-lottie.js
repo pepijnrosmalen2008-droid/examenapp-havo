@@ -1,5 +1,5 @@
 // ═══════════════════════════════════════════════════════════════════════════
-// vonk-lottie.js — Vonk als Lottie (vrije, frame-precieze beweging) met SVG-fallback.
+// vonk-lottie.js - Vonk als Lottie (vrije, frame-precieze beweging) met SVG-fallback.
 //
 // Werkwijze: overal waar je een levende Vonk wilt, plaats je een "holder" via
 // vonkHolder(mood,size,state). Die bevat standaard de bestaande SVG-Vonk
@@ -23,7 +23,7 @@
   var DEFAULT_SEG = { idle: [0, 90], celebrate: [90, 150], levelup: [150, 240] };
   // Easter eggs: soms tijdens idle iets doms/grappigs. (In-beeld-passende set;
   // 'fall' zit wel in de Lottie maar valt buiten het krappe kader, dus alleen
-  // voor toekomstige ruime idle-plekken — niet in de standaardpool.)
+  // voor toekomstige ruime idle-plekken - niet in de standaardpool.)
   var EGGS = ['dizzy', 'yawn', 'trip', 'dance'];
   var EGG_MIN = 7000, EGG_MAX = 18000; // ms tussen grappen
 
@@ -53,7 +53,7 @@
     if (_reduce || !runtimeReady()) return;           // fallback: SVG blijft staan
     // Een uitgeruste Vonk-skin (bril/kroon/sjaal) zit op de SVG-rig, niet in de Lottie.
     // Heeft de speler er een op, dan laten we de SVG-Vonk (mét skin) staan i.p.v. te
-    // upgraden — anders verdwijnt de gekochte look. De SVG-rig animeert zelf.
+    // upgraden - anders verdwijnt de gekochte look. De SVG-rig animeert zelf.
     if (typeof getEquippedVonk === 'function' && getEquippedVonk()) { el._vlDone = true; return; }
     el._vlDone = true;
     var size = parseInt(el.getAttribute('data-vl-size') || '120', 10);

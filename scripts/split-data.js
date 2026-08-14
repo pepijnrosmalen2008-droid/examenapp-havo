@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 /**
- * split-data.js — splitst de volledige niveau-data op in een lichte metadata-laag
+ * split-data.js - splitst de volledige niveau-data op in een lichte metadata-laag
  * plus zware per-vak vraagbestanden, zodat de browser bij het kiezen van een niveau
  * niet de complete vragenberg hoeft te downloaden.
  *

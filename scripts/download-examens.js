@@ -156,7 +156,7 @@ async function main() {
   if (VAK_FILTER)    console.log(`   → filter: vak=${VAK_FILTER}`);
   if (NIVEAU_FILTER) console.log(`   → filter: niveau=${NIVEAU_FILTER}`);
   if (JAAR_FILTER)   console.log(`   → filter: jaar=${JAAR_FILTER}`);
-  if (DRY_RUN)       console.log('\n🟡  DRY-RUN — geen bestanden worden gedownload\n');
+  if (DRY_RUN)       console.log('\n🟡  DRY-RUN - geen bestanden worden gedownload\n');
 
   if (DRY_RUN) {
     tasks.slice(0, 10).forEach(t => console.log(`  ${t.srcUrl}`));
