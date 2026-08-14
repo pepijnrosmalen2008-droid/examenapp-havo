@@ -324,7 +324,7 @@ var VAKKEN = [
      "Transfer: onbekend enzym"
     ],
     "nSv": 25,
-    "nOe": 6,
+    "nOe": 7,
     "nBeg": 0
    },
    {
