@@ -361,7 +361,10 @@
       clip.classList.add("reduced");
       try { if (choreo) { var c = choreo.build(clip); choreo.staticState(c); } } catch (e) {}
     }
-    if (!choreo || !supported || reduce) { staticFallback(); return; }
+    // Geen rAF/SVG of geen choreo → echt statisch. Bij prefers-reduced-motion
+    // haken we NIET meer volledig af: we starten alleen niet vanzelf, maar de
+    // gebruiker kan wél handmatig afspelen (knop/tik). Anders lijkt de clip stil.
+    if (!choreo || !supported) { staticFallback(); return; }
 
     var ctx = null, raf = 0, last = 0, elapsed = 0, playing = false, finished = false, lastCue = -1;
     var gesture = false, audioFired = 0;   // geluid pas ná een gebruikersklik (autoplay-beleid + niet opdringerig)
@@ -410,7 +413,7 @@
     function toggle() { if (playing) pause(); else start(finished); }
 
     try { ensure(); choreo.render(0, ctx); caption(0); } catch (e) { staticFallback(); return; }
-    if (btn) btn.addEventListener("click", function () {
+    function onUserToggle() {
       if (!gesture) {                        // eerste echte gebruikersinteractie -> geluid mag
         gesture = true;
         if (!finished && elapsed > 0.05 && choreo.audio) { // hervat midden in de clip: al-gepasseerde geluiden overslaan (geen burst)
@@ -419,7 +422,12 @@
         }
       }
       toggle();
-    });
+    }
+    if (btn) btn.addEventListener("click", onUserToggle);
+    // De hele scène is tikbaar om te starten/pauzeren — veel vindbaarder dan alleen
+    // het knopje, en de redding als autoplay niet vuurt (bv. reduced-motion).
+    var svgEl = clip.querySelector("svg");
+    if (svgEl) { svgEl.style.cursor = "pointer"; svgEl.addEventListener("click", onUserToggle); }
 
     // afspeelsnelheid-knop (dynamisch toegevoegd - geen markup-wijziging per clip nodig)
     var bar = clip.querySelector(".sam-clip-bar");
@@ -438,12 +446,16 @@
       bar.appendChild(spBtn);
     }
 
-    if ("IntersectionObserver" in window) {
-      var io = new IntersectionObserver(function (es) {
-        es.forEach(function (e) { if (e.isIntersecting && !clip.__played) { clip.__played = true; io.unobserve(clip); start(true); } });
-      }, { threshold: 0.45 });
-      io.observe(clip);
-    } else { start(true); }
+    // Autoplay bij in-beeld — maar niet bij reduced-motion (dan alleen op tik).
+    // Lagere drempel (0.25) zodat het ook op kleine/hoge schermen betrouwbaar vuurt.
+    if (!reduce) {
+      if ("IntersectionObserver" in window) {
+        var io = new IntersectionObserver(function (es) {
+          es.forEach(function (e) { if (e.isIntersecting && !clip.__played) { clip.__played = true; io.unobserve(clip); start(true); } });
+        }, { threshold: 0.25 });
+        io.observe(clip);
+      } else { start(true); }
+    }
   }
 
   function scan(root) {
