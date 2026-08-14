@@ -1,0 +1,423 @@
+{
+  "id": "M5",
+  "naam": "DNA en eiwitsynthese",
+  "beschrijving": "Gouden-standaardmodule bi.M.5: hoe DNA (dubbele helix, basenparing A-T en C-G) via transcriptie en translatie eiwitten laat maken, en hoe genexpressie (gen -> eiwit -> eigenschap) de kenmerken van een organisme bepaalt.",
+  "ceStatus": "CE",
+  "onderwerpen": [
+    "DNA als dubbele helix",
+    "Basenparing A-T en C-G",
+    "Gen en chromosoom",
+    "Transcriptie in de celkern",
+    "Translatie bij het ribosoom",
+    "Genexpressie: gen -> eiwit -> eigenschap"
+  ],
+  "sam": "DNA heeft de vorm van een dubbele helix. De basen paren volgens vaste regels: A met T en C met G. Een gen is een stukje DNA met de code voor een eiwit; een chromosoom is sterk opgerold DNA. Een eiwit maken gaat in twee stappen: bij de transcriptie maakt de kern een mRNA-kopie van een gen, en bij de translatie leest het ribosoom dat mRNA af, waarbij elk codon (drie basen) voor een aminozuur codeert. Zo bepaalt DNA via eiwitten de kenmerken van een organisme (genexpressie: gen -> eiwit -> eigenschap).",
+  "begrippen": [
+    { "t": "DNA", "d": "De erfelijke stof in de vorm van een dubbele helix; bevat de code voor de eiwitten van een organisme." },
+    { "t": "Dubbele helix", "d": "De spiraalvorm van twee om elkaar gedraaide DNA-strengen (een gedraaide ladder)." },
+    { "t": "Base", "d": "Een van de bouwstenen A, T, C of G die de code in het DNA vormen." },
+    { "t": "Basenparing", "d": "De vaste koppeling tussen de strengen: A hoort bij T en C hoort bij G." },
+    { "t": "Gen", "d": "Een stukje DNA met de code voor een eiwit." },
+    { "t": "Chromosoom", "d": "Sterk opgerold DNA in de celkern, met daarin veel genen." },
+    { "t": "Eiwitsynthese", "d": "Het maken van een eiwit in twee stappen: transcriptie en translatie." },
+    { "t": "Transcriptie", "d": "Het maken van een mRNA-kopie van een gen; dit gebeurt in de celkern." },
+    { "t": "mRNA", "d": "De kopie van een gen die de code van de kern naar het ribosoom brengt." },
+    { "t": "Translatie", "d": "Het aflezen van het mRNA bij het ribosoom, waarbij het eiwit wordt gebouwd." },
+    { "t": "Codon", "d": "Een drietal basen op het mRNA dat voor een aminozuur codeert." },
+    { "t": "Genexpressie", "d": "Het tot uiting komen van een gen: gen -> eiwit -> eigenschap." }
+  ],
+  "sv": [
+    {
+      "v": "Welke vorm heeft een DNA-molecuul?",
+      "o": ["Een dubbele helix", "Een enkele rechte streng", "Een platte gesloten ring", "Een onregelmatige bol"],
+      "c": 0,
+      "d": 1,
+      "u": "Onthoud: DNA heeft de vorm van een dubbele helix, een soort gedraaide ladder.",
+      "uo": [
+        "Klopt: DNA is een dubbele helix, twee strengen die om elkaar gedraaid zijn.",
+        "DNA is niet een enkele rechte streng maar twee gedraaide strengen.",
+        "Een platte ring hoort niet bij het DNA in een chromosoom in de kern.",
+        "DNA is geen vormloze bol maar een geordende spiraal."
+      ],
+      "uh": "DNA = dubbele helix (gedraaide ladder)."
+    },
+    {
+      "v": "Welke basen paren in het DNA steeds met elkaar?",
+      "o": ["A met C en G met T", "A met T en C met G", "A met G en C met T", "A met A en ook T met T"],
+      "c": 1,
+      "d": 1,
+      "u": "Onthoud: in het DNA paart A met T en C met G.",
+      "uo": [
+        "A paart niet met C: de vaste paren zijn A-T en C-G.",
+        "Klopt: A paart met T en C paart met G.",
+        "A paart niet met G: A hoort bij T en C hoort bij G.",
+        "Dezelfde base paart niet met zichzelf; A hoort bij T."
+      ],
+      "uh": "A-T en C-G horen bij elkaar."
+    },
+    {
+      "v": "Wat is een gen?",
+      "o": ["Een heel chromosoom", "Een los aminozuur", "Een stukje DNA met de code voor een eiwit", "Een ribosoom in de celkern"],
+      "c": 2,
+      "d": 1,
+      "u": "Onthoud: een gen is een stukje DNA met de code voor een eiwit.",
+      "uo": [
+        "Een chromosoom is veel groter: sterk opgerold DNA met heel veel genen.",
+        "Een los aminozuur is een bouwsteen van een eiwit, geen stuk DNA.",
+        "Klopt: een gen is een stukje DNA met de code voor een eiwit.",
+        "Een ribosoom maakt eiwitten, maar is zelf geen stukje DNA."
+      ],
+      "uh": "Gen = stukje DNA = recept voor een eiwit."
+    },
+    {
+      "v": "Wat is een chromosoom?",
+      "o": ["Sterk opgerold DNA", "Een enkel basenpaar", "Een mRNA-kopie", "Een eiwit uit het ribosoom"],
+      "c": 0,
+      "d": 1,
+      "u": "Onthoud: een chromosoom is sterk opgerold DNA in de celkern.",
+      "uo": [
+        "Klopt: een chromosoom is DNA dat sterk is opgerold.",
+        "Een chromosoom bestaat uit heel veel basenparen, niet uit een enkele.",
+        "Een mRNA-kopie ontstaat pas bij de transcriptie; dat is geen chromosoom.",
+        "Een chromosoom is DNA, geen eiwit uit het ribosoom."
+      ],
+      "uh": "Chromosoom = opgerold DNA."
+    },
+    {
+      "v": "Waar in de cel vindt de transcriptie plaats?",
+      "o": ["Bij het ribosoom", "In het celmembraan", "In de celkern", "In de vacuole"],
+      "c": 2,
+      "d": 1,
+      "u": "Onthoud: de transcriptie gebeurt in de celkern, waar het DNA ligt.",
+      "uo": [
+        "Bij het ribosoom gebeurt de translatie, niet de transcriptie.",
+        "Het celmembraan is de grens van de cel, geen plek voor transcriptie.",
+        "Klopt: in de celkern wordt van een gen een mRNA-kopie gemaakt.",
+        "De vacuole is opslagruimte, geen plek voor de transcriptie."
+      ],
+      "uh": "Transcriptie = in de kern (bij het DNA)."
+    },
+    {
+      "v": "Waar in de cel vindt de translatie plaats?",
+      "o": ["Bij het ribosoom", "In de celkern", "In een chromosoom", "In het bladgroen"],
+      "c": 0,
+      "d": 1,
+      "u": "Onthoud: de translatie gebeurt bij het ribosoom.",
+      "uo": [
+        "Klopt: bij het ribosoom wordt het mRNA afgelezen en het eiwit gebouwd.",
+        "In de celkern gebeurt de transcriptie, niet de translatie.",
+        "Een chromosoom is opgerold DNA, geen plek waar eiwitten worden gebouwd.",
+        "Bladgroen hoort bij de fotosynthese, niet bij de eiwitsynthese."
+      ],
+      "uh": "Translatie = bij het ribosoom."
+    },
+    {
+      "v": "Wat maakt de cel bij de transcriptie van een gen?",
+      "o": ["Een tweede DNA-streng", "Een los eiwit", "Een nieuw chromosoom", "Een mRNA-kopie van het gen"],
+      "c": 3,
+      "d": 1,
+      "u": "Onthoud: bij de transcriptie maakt de kern een mRNA-kopie van een gen.",
+      "uo": [
+        "Er ontstaat geen tweede DNA-streng, maar een mRNA-kopie.",
+        "Het eiwit ontstaat pas later, bij de translatie aan het ribosoom.",
+        "Er wordt geen nieuw chromosoom gemaakt bij de transcriptie.",
+        "Klopt: van het gen wordt een mRNA-kopie gemaakt."
+      ],
+      "uh": "Transcriptie levert een mRNA-kopie op."
+    },
+    {
+      "v": "Hoeveel basen vormen samen een codon?",
+      "o": ["Eén base", "Twee basen", "Drie basen", "Vier of meer basen"],
+      "c": 2,
+      "d": 1,
+      "u": "Onthoud: een codon bestaat uit drie basen.",
+      "uo": [
+        "Eén base is te weinig; een codon telt er drie.",
+        "Twee basen vormen nog geen codon; het zijn er drie.",
+        "Klopt: een codon bestaat uit drie basen en codeert voor een aminozuur.",
+        "Een codon telt drie basen, niet vier of meer."
+      ],
+      "uh": "Codon = 3 basen."
+    },
+    {
+      "v": "Waarvoor codeert een codon?",
+      "o": ["Voor een aminozuur", "Voor een heel eiwit", "Voor een chromosoom", "Voor een gen"],
+      "c": 0,
+      "d": 1,
+      "u": "Onthoud: een codon (drie basen) codeert voor een aminozuur.",
+      "uo": [
+        "Klopt: een codon van drie basen codeert voor een aminozuur.",
+        "Een heel eiwit heeft veel codons nodig, niet een enkele.",
+        "Een chromosoom is veel groter dan wat een codon codeert.",
+        "Een gen bestaat uit veel codons; een codon is maar een aminozuur."
+      ],
+      "uh": "1 codon = 1 aminozuur."
+    },
+    {
+      "v": "Waaruit is een eiwit opgebouwd?",
+      "o": ["Uit losse basen", "Uit aan elkaar geregen aminozuren", "Uit glucose-eenheden", "Uit vetzuren"],
+      "c": 1,
+      "d": 1,
+      "u": "Onthoud: een eiwit is een keten van aan elkaar geregen aminozuren.",
+      "uo": [
+        "Basen horen bij het DNA en mRNA, niet bij de bouw van het eiwit zelf.",
+        "Klopt: een eiwit is een keten van aminozuren.",
+        "Glucose-eenheden vormen zetmeel of glycogeen, geen eiwit.",
+        "Vetzuren horen bij vetten, niet bij eiwitten."
+      ],
+      "uh": "Eiwit = keten van aminozuren."
+    },
+    {
+      "v": "Wat betekent genexpressie?",
+      "o": ["Het volledig kopiëren van een heel chromosoom", "Het delen van een cel", "Het tot uiting komen van een gen", "Het afbreken van een eiwit"],
+      "c": 2,
+      "d": 1,
+      "u": "Onthoud: genexpressie is het tot uiting komen van een gen: gen -> eiwit -> eigenschap.",
+      "uo": [
+        "Het kopiëren van een chromosoom hoort bij de celdeling, niet bij genexpressie.",
+        "Celdeling is iets anders dan het tot uiting komen van een gen.",
+        "Klopt: genexpressie is het tot uiting komen van een gen (gen -> eiwit -> eigenschap).",
+        "Het afbreken van een eiwit is geen genexpressie."
+      ],
+      "uh": "Genexpressie: gen -> eiwit -> eigenschap."
+    },
+    {
+      "v": "Een DNA-streng heeft de volgorde A-T-C-G. Wat is de volgorde ertegenover?",
+      "o": ["T-A-G-C", "Precies dezelfde: A-T-C-G", "G-C-T-A", "C-G-A-T"],
+      "c": 0,
+      "d": 2,
+      "u": "Onthoud: tegenover A staat T en tegenover C staat G, dus A-T-C-G wordt T-A-G-C.",
+      "uo": [
+        "Klopt: A-T, T-A, C-G, G-C geeft de tegenoverliggende streng T-A-G-C.",
+        "De tegenoverliggende streng is niet dezelfde; de basen paren juist andersom.",
+        "G-C-T-A klopt niet: tegenover A hoort T, niet G.",
+        "C-G-A-T volgt niet uit de paringsregel A-T en C-G."
+      ],
+      "uh": "Zet elke base om: A wordt T, C wordt G."
+    },
+    {
+      "v": "In een DNA-molecuul is 30% van de basen adenine (A). Hoeveel procent is thymine (T)?",
+      "o": ["15%", "20%", "30%", "60% (het dubbele)"],
+      "c": 2,
+      "d": 2,
+      "u": "Onthoud: A paart met T, dus er is even veel T als A: ook 30%.",
+      "uo": [
+        "15% klopt niet: T is even veel als A, niet de helft.",
+        "20% klopt niet: T hoort even veel te zijn als A.",
+        "Klopt: A paart met T, dus T is even veel als A: 30%.",
+        "60% klopt niet: T is even veel als A, niet het dubbele."
+      ],
+      "uh": "A paart met T, dus %T = %A."
+    },
+    {
+      "v": "Welke volgorde geeft de weg van gen naar eigenschap goed weer?",
+      "o": ["eerst het eiwit, dan het gen, dan de eigenschap", "gen -> eiwit -> eigenschap", "eigenschap -> gen -> eiwit", "gen -> eigenschap -> eiwit"],
+      "c": 1,
+      "d": 2,
+      "u": "Onthoud: een gen levert een eiwit, en dat eiwit geeft de eigenschap: gen -> eiwit -> eigenschap.",
+      "uo": [
+        "Het eiwit komt niet vóór het gen; het gen bevat juist de code voor het eiwit.",
+        "Klopt: het gen levert het eiwit, en dat eiwit bepaalt de eigenschap.",
+        "De eigenschap komt niet eerst; die volgt uit het eiwit.",
+        "De eigenschap komt na het eiwit, niet ervoor."
+      ],
+      "uh": "gen -> eiwit -> eigenschap."
+    },
+    {
+      "v": "Een gen bevat de code voor een enzym. Wat maakt de cel op basis van dit gen?",
+      "o": ["Een suiker", "Een compleet nieuw chromosoom", "Een eiwit (het enzym)", "Een vetdruppel"],
+      "c": 2,
+      "d": 2,
+      "u": "Onthoud: een gen bevat de code voor een eiwit, en enzymen zijn eiwitten.",
+      "uo": [
+        "Een suiker is geen eiwit; een gen codeert voor een eiwit.",
+        "Een gen laat geen nieuw chromosoom maken; het levert een eiwit.",
+        "Klopt: een enzym is een eiwit, en daarvoor bevat het gen de code.",
+        "Een vetdruppel is geen eiwit; een gen codeert voor een eiwit."
+      ],
+      "uh": "Gen -> eiwit; een enzym is een eiwit."
+    },
+    {
+      "v": "Waarom kan het DNA in de kern blijven terwijl het eiwit bij het ribosoom wordt gemaakt?",
+      "o": ["Het DNA verplaatst zelf naar het ribosoom", "Een mRNA-kopie brengt de code naar het ribosoom", "Het chromosoom lost op in het cytoplasma", "Het ribosoom gaat de kern binnen"],
+      "c": 1,
+      "d": 2,
+      "u": "Onthoud: het mRNA is de kopie die de code van de kern naar het ribosoom brengt.",
+      "uo": [
+        "Het DNA blijft juist in de kern; het verplaatst niet zelf.",
+        "Klopt: het mRNA brengt de code van de kern naar het ribosoom.",
+        "Het chromosoom lost niet op; de code gaat via mRNA naar buiten.",
+        "Het ribosoom gaat de kern niet binnen; het mRNA komt naar het ribosoom."
+      ],
+      "uh": "mRNA is de boodschapper kern -> ribosoom."
+    },
+    {
+      "v": "Een mRNA bevat 30 basen. Voor ongeveer hoeveel aminozuren codeert dit?",
+      "o": ["10 aminozuren", "30 aminozuren, één per base", "90 aminozuren", "3 aminozuren"],
+      "c": 0,
+      "d": 2,
+      "u": "Onthoud: 3 basen = 1 codon = 1 aminozuur, dus 30 : 3 = 10 aminozuren.",
+      "uo": [
+        "Klopt: 30 basen : 3 per codon = 10 aminozuren.",
+        "Niet één aminozuur per base; drie basen vormen samen één aminozuur.",
+        "90 is te veel: je deelt door 3, je vermenigvuldigt niet.",
+        "3 is te weinig: 30 gedeeld door 3 is 10, niet 3."
+      ],
+      "uh": "Aantal aminozuren = basen : 3."
+    },
+    {
+      "v": "Waarom noemen we een gen het recept voor een eiwit?",
+      "o": ["Omdat het gen zelf een eiwit is", "Omdat het gen de basenvolgorde bevat die de eiwitcode vormt", "Omdat het gen glucose levert", "Omdat het gen in het ribosoom zit"],
+      "c": 1,
+      "d": 2,
+      "u": "Onthoud: de basenvolgorde in het gen is de code (het recept) voor het eiwit.",
+      "uo": [
+        "Een gen is geen eiwit; het is DNA met de code voor een eiwit.",
+        "Klopt: de basenvolgorde in het gen vormt de code voor het eiwit.",
+        "Een gen levert geen glucose; het bevat de code voor een eiwit.",
+        "Het gen zit in het DNA in de kern, niet in het ribosoom."
+      ],
+      "uh": "De basenvolgorde is het recept."
+    },
+    {
+      "v": "Twee cellen hebben hetzelfde DNA, maar zien er anders uit. Hoe kan dat?",
+      "o": ["De ene cel heeft helemaal geen DNA in de kern", "De ene cel gebruikt andere basen", "Het DNA is in de ene cel een eiwit", "In elke cel komen andere genen tot uiting"],
+      "c": 3,
+      "d": 2,
+      "u": "Onthoud: in verschillende cellen komen verschillende genen tot uiting (genexpressie).",
+      "uo": [
+        "Elke cel heeft juist DNA in de kern; geen enkele cel mist het.",
+        "De basen zijn hetzelfde; het verschil zit in welke genen tot uiting komen.",
+        "DNA is geen eiwit; het bevat de code voor eiwitten.",
+        "Klopt: in elke cel komen andere genen tot uiting, dus andere eiwitten."
+      ],
+      "uh": "Andere genen actief = ander celtype."
+    },
+    {
+      "v": "Wat is het verschil tussen transcriptie en translatie?",
+      "o": ["Beide maken een DNA-streng", "Transcriptie maakt mRNA in de kern, translatie maakt het eiwit", "Translatie gebeurt vóór de transcriptie", "Transcriptie maakt glucose"],
+      "c": 1,
+      "d": 2,
+      "u": "Onthoud: transcriptie maakt mRNA in de kern; translatie bouwt het eiwit bij het ribosoom.",
+      "uo": [
+        "Ze maken geen DNA-streng; het gaat om mRNA en een eiwit.",
+        "Klopt: transcriptie maakt mRNA in de kern, translatie het eiwit bij het ribosoom.",
+        "De transcriptie komt juist eerst, dan pas de translatie.",
+        "Transcriptie maakt geen glucose maar een mRNA-kopie."
+      ],
+      "uh": "Transcriptie = mRNA; translatie = eiwit."
+    },
+    {
+      "v": "Welke stof brengt de code van de kern naar het ribosoom?",
+      "o": ["Glucose", "Een chromosoom", "Een los aminozuur", "mRNA"],
+      "c": 3,
+      "d": 2,
+      "u": "Onthoud: het mRNA brengt de code van de kern naar het ribosoom.",
+      "uo": [
+        "Glucose is een suiker en draagt geen erfelijke code.",
+        "Een chromosoom blijft in de kern; het gaat niet zelf naar het ribosoom.",
+        "Een aminozuur is een bouwsteen van het eiwit, geen codedrager.",
+        "Klopt: het mRNA brengt de code van de kern naar het ribosoom."
+      ],
+      "uh": "mRNA draagt de code naar buiten."
+    },
+    {
+      "v": "Door een fout verandert een codon, waardoor een ander aminozuur wordt ingebouwd. Wat kan het gevolg zijn?",
+      "o": ["Het gen verdwijnt uit de cel", "Het chromosoom wordt korter", "Er ontstaat vanzelf meer glucose", "Het eiwit krijgt een andere bouw en werkt anders"],
+      "c": 3,
+      "d": 3,
+      "u": "Onthoud: een ander aminozuur kan de bouw van het eiwit veranderen, waardoor het anders werkt.",
+      "uo": [
+        "Het gen verdwijnt niet; er is een base of codon veranderd.",
+        "Het chromosoom wordt niet korter door een veranderd codon.",
+        "Er ontstaat geen glucose; het gaat om de bouw van een eiwit.",
+        "Klopt: een ander aminozuur kan de bouw van het eiwit veranderen, dus de werking."
+      ],
+      "uh": "Ander aminozuur -> andere eiwitbouw."
+    },
+    {
+      "v": "Insuline is een eiwit dat de bloedsuiker regelt. Wat is de rol van het insuline-gen?",
+      "o": ["Het bevat de code om insuline te maken", "Het is zelf het insuline", "Het breekt glucose af", "Het is een codon"],
+      "c": 0,
+      "d": 3,
+      "u": "Onthoud: het gen bevat de code voor het eiwit insuline, maar is zelf niet het eiwit.",
+      "uo": [
+        "Klopt: het gen bevat de code waarmee de cel het eiwit insuline maakt.",
+        "Het gen is DNA, niet het eiwit insuline zelf.",
+        "Het gen breekt geen glucose af; het levert de code voor een eiwit.",
+        "Een gen bestaat uit veel codons; het is niet een enkel codon."
+      ],
+      "uh": "Gen = code voor het eiwit, niet het eiwit."
+    },
+    {
+      "v": "Een onderzoeker ziet een ribosoom een mRNA aflezen en er aminozuren aan koppelen. Welke stap is dit?",
+      "o": ["De celdeling", "De translatie bij het ribosoom", "De verdubbeling van het chromosoom", "De fotosynthese"],
+      "c": 1,
+      "d": 3,
+      "u": "Onthoud: het aflezen van mRNA en het koppelen van aminozuren bij het ribosoom is de translatie.",
+      "uo": [
+        "Celdeling is het delen van de cel, niet het aflezen van mRNA.",
+        "Klopt: het aflezen van mRNA en koppelen van aminozuren is de translatie.",
+        "De verdubbeling van het chromosoom is hier niet de eiwitsynthese-stap.",
+        "Fotosynthese is een energieproces, geen eiwitsynthese."
+      ],
+      "uh": "mRNA aflezen bij ribosoom = translatie."
+    },
+    {
+      "v": "Waarom kunnen twee personen met een verschillend gen voor een enzym een ander kenmerk hebben?",
+      "o": ["Omdat genen geen invloed hebben op eiwitten", "Omdat het enzym losstaat van het gen", "Een ander gen geeft een ander eiwit, dus een ander kenmerk", "Omdat kenmerken niet erfelijk zijn"],
+      "c": 2,
+      "d": 3,
+      "u": "Onthoud: een ander gen geeft een ander eiwit, en dat geeft een ander kenmerk (genexpressie).",
+      "uo": [
+        "Genen bepalen juist via de code welke eiwitten er komen.",
+        "Het enzym is een eiwit dat juist door het gen wordt bepaald.",
+        "Klopt: een ander gen geeft een ander eiwit, dus een ander kenmerk.",
+        "Kenmerken die via genen en eiwitten ontstaan, zijn juist wel erfelijk."
+      ],
+      "uh": "Ander gen -> ander eiwit -> ander kenmerk."
+    }
+  ],
+  "oe": [
+    {
+      "bron": "Fout in het hemoglobine-gen",
+      "ctx": "Hemoglobine is het eiwit in rode bloedcellen dat zuurstof vervoert. Bij sommige mensen is in het gen voor hemoglobine één base veranderd. Daardoor wordt op één plek een ander aminozuur ingebouwd en krijgt het hemoglobine-eiwit een iets andere vorm. De rode bloedcellen worden hierdoor sikkelvormig en vervoeren minder goed zuurstof.",
+      "v": "Leg uit hoe een verandering van één base in het gen kan leiden tot rode bloedcellen die minder goed werken.",
+      "o": [""],
+      "c": 0,
+      "u": "Een veranderde base verandert een codon, waardoor bij de translatie een ander aminozuur wordt ingebouwd. Omdat de aminozuurvolgorde de bouw van het eiwit bepaalt, krijgt het hemoglobine een andere vorm en werkt het minder goed, waardoor de rode bloedcellen minder zuurstof kunnen vervoeren. (Kernpunten: [1] een veranderde base geeft een ander codon en dus een ander aminozuur bij de translatie; [2] de aminozuurvolgorde bepaalt de bouw van het eiwit, dus het hemoglobine krijgt een andere vorm en werkt minder goed.)"
+    },
+    {
+      "bron": "Kern en ribosoom gescheiden",
+      "ctx": "Onderzoekers zien dat het DNA van een cel in de celkern blijft, terwijl de eiwitten worden gemaakt bij de ribosomen buiten de kern. In de kern vinden ze naast DNA ook mRNA-moleculen. Buiten de kern, bij de ribosomen, komen die mRNA-moleculen ook voor.",
+      "v": "Leg uit hoe de code van een gen vanuit de kern bij het ribosoom terechtkomt, zonder dat het DNA de kern verlaat.",
+      "o": [""],
+      "c": 0,
+      "u": "Bij de transcriptie maakt de cel in de kern een mRNA-kopie van het gen. Dat mRNA verlaat de kern en gaat naar het ribosoom, waar bij de translatie het eiwit wordt gebouwd. Zo komt de code bij het ribosoom terwijl het DNA zelf in de kern kan blijven. (Kernpunten: [1] bij de transcriptie wordt in de kern een mRNA-kopie van het gen gemaakt; [2] dat mRNA gaat naar het ribosoom voor de translatie, dus het DNA hoeft de kern niet te verlaten.)"
+    },
+    {
+      "bron": "Van mRNA naar aminozuren",
+      "ctx": "In een practicum bestudeert een leerling een stukje mRNA dat door een ribosoom wordt afgelezen. Het mRNA-stukje bestaat uit 27 basen. Het ribosoom leest de basen af in groepjes van drie (codons) en koppelt bij elk codon een aminozuur aan de groeiende keten.",
+      "v": "Bereken hoeveel aminozuren dit stukje mRNA oplevert en leg je berekening uit.",
+      "o": [""],
+      "c": 0,
+      "u": "Elk codon bestaat uit drie basen en codeert voor één aminozuur. Je deelt daarom het aantal basen door drie: 27 : 3 = 9. Er worden dus 9 aminozuren aan de eiwitketen gekoppeld. (Kernpunten: [1] een codon is drie basen en levert één aminozuur; [2] 27 basen gedeeld door 3 geeft 9 codons, dus 9 aminozuren.)"
+    },
+    {
+      "bron": "Zelfde DNA, andere cellen",
+      "ctx": "Een spiercel en een zenuwcel van dezelfde persoon bevatten hetzelfde DNA en dus dezelfde genen. Toch maken ze verschillende eiwitten, zien ze er heel anders uit en doen ze ander werk in het lichaam.",
+      "v": "Leg uit hoe cellen met hetzelfde DNA toch verschillende eiwitten en verschillende kenmerken kunnen hebben.",
+      "o": [""],
+      "c": 0,
+      "u": "In verschillende cellen komen verschillende genen tot uiting (genexpressie): niet in elke cel wordt van elk gen een eiwit gemaakt. Omdat elke cel andere eiwitten maakt, krijgt ze andere kenmerken en een andere taak, ook al is het DNA hetzelfde. (Kernpunten: [1] genexpressie verschilt per cel: er komen andere genen tot uiting; [2] andere eiwitten geven andere kenmerken, ook bij hetzelfde DNA.)"
+    },
+    {
+      "bron": "Basenverhouding in DNA",
+      "ctx": "Van een stukje dubbelstrengs DNA is bekend dat 20% van de basen cytosine (C) is. In het DNA paren de basen steeds volgens vaste regels: A met T en C met G.",
+      "v": "Bereken welk percentage van de basen guanine (G), adenine (A) en thymine (T) is en leg uit hoe je dat weet.",
+      "o": [""],
+      "c": 0,
+      "u": "Omdat C met G paart, is er even veel G als C, dus G = 20%. Samen zijn C en G 40%, dus A en T samen 60%. Omdat A met T paart in gelijke aantallen, is A = 30% en T = 30%. (Kernpunten: [1] C paart met G, dus G = 20% en C+G samen 40%; [2] A+T samen 60%, en omdat A met T paart is A = 30% en T = 30%.)"
+    }
+  ]
+}
