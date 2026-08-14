@@ -200,3 +200,43 @@ De canonical knowledge layer legt **precieze** formuleringen vast; de didactisch
 
 ### 6.7 Kernprincipe — elke fout heeft diagnostische waarde
 Nooit "Fout, het juiste antwoord is B." Elke afleider draagt: **gekozen fout → vermoedelijke denkfout → het relevante onderscheid → juiste mentale representatie** (de "Koos je X? …"-vorm). Dit is een productdifferentiator van Slagio en een harde eis op elke uitleg (C6), niet alleen een stijlkeuze.
+
+---
+
+## 7. De GOUDEN STANDAARD — blueprint voor contentpublicatie
+
+bi.M.3 is de referentie. Elk nieuw leerdoel dat live gaat, moet identiek van vorm zijn en dezelfde poorten halen. Deze sectie is bindend.
+
+### 7.1 Vraag-blueprint (schema per meerkeuzevraag)
+```
+{ v, o[4], c, d, u, uo[4], uh }
+```
+| Veld | Betekenis | Eis |
+|---|---|---|
+| `v` | vraagstam | ≤ 110 tekens, één heldere vraag |
+| `o` | 4 opties | niet-leeg, uniek; afleiders = echte fouten (misconceptie/contextueel/redeneerfout) |
+| `c` | index juist antwoord | 0..3; juist ≠ systematisch langst |
+| `d` | R-niveau | 1 (herkennen/begrijpen) · 2 (toepassen/onderscheiden) · 3 (transfer/examenredeneren) |
+| `u` | takeaway | "Onthoud: …"-kernregel |
+| `uo` | **4 per-optie-uitleg** | elk niet-leeg; de door de leerling gekozen optie wordt besproken t.o.v. het juiste antwoord (de slimme uitleg) |
+| `uh` | onthoud-tip | hoe herken je deze valkuil de volgende keer |
+
+De samenvatting volgt de **hoofdstuk-structuur** (§ begrippenlijst + genummerde onderwerpen met beeld/clip per onderwerp), met precieze canonieke formuleringen (§6.6) en diagrammen/clip alleen waar ze leerwaarde toevoegen.
+
+### 7.2 Automatisch afgedwongen (blokkerend in `smoke.mjs` → CI)
+`scripts/validate-goldstandard.mjs` valt de build als één van deze faalt voor een gemarkeerde module:
+- vraag-blueprint compleet (o[4]/c/d/u/uo[4]/uh, geen dubbele opties, stam ≤ 110);
+- **antwoordpositie-balans** (≤ 40% op één positie) en **geen lengte-bias** (juist = langst in ≤ 40%);
+- **geen overclaim** in de canonieke velden (juist antwoord + uo + u) — afleiders mógen fout zijn;
+- **leerdoel-koppeling** aanwezig en `matched`;
+- R-dekking (1–3) en bankdiepte gerapporteerd (soft).
+
+### 7.3 Nog handmatig vereist (vóór het "gouden" stempel)
+Deze kan een script niet garanderen; ze horen expliciet bij de standaard:
+- **Vakinhoudelijke sign-off** door een docent/expert op elke canonieke bewering, elk juist antwoord en elke afleider. Zonder dit: hoogstens "kandidaat-standaard".
+- **Bronherleidbaarheid**: elke canonieke bewering wijst naar CvTE-syllabus/Binas (niet los `bron:"syllabus"`).
+- **Bankdiepte** ≥ 25 vragen per leerdoel (meerdere per R-niveau/subconcept) — anders memoriseerbaar.
+- **Authentieke examencontext**: ≥ 1 echt oud-examen-afgeleid item per domein.
+
+### 7.4 Live-criterium
+Een leerdoel is **gouden standaard** wanneer 7.2 groen is (auto), 7.3 is afgetekend (mens), en de leerling-lus (§ resultaat/foutenboek/leerpad per subconcept) het beheersingssignaal teruggeeft. Pas dan schaalt de engine het vak-breed uit.

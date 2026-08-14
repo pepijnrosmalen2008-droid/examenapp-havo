@@ -249,6 +249,17 @@ try {
   bad('inhoudsvalidatie: harde fouten gevonden (' + (out || 'zie node scripts/validate-content.mjs') + ')');
 }
 
+// ── gouden-standaard-poort (gepubliceerde referentiemodules) ──
+group('Gouden standaard');
+try {
+  const { execFileSync } = await import('node:child_process');
+  execFileSync(process.execPath, [path.join(ROOT, 'scripts', 'validate-goldstandard.mjs')], { stdio: 'pipe' });
+  ok('gouden-standaard-modules: alle harde poorten gehaald');
+} catch (e) {
+  const out = (e.stdout ? e.stdout.toString() : '').split('\n').filter(l => l.includes('HARD')).slice(0, 3).join(' | ');
+  bad('gouden-standaard-poort GEFAALD (' + (out || 'zie node scripts/validate-goldstandard.mjs') + ')');
+}
+
 // ── uitslag ──
 console.log('\n' + (fails ? '✗ ' + fails + ' van ' + checks + ' checks GEFAALD' : '✓ alle ' + checks + ' checks geslaagd'));
 process.exit(fails ? 1 : 0);
