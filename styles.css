@@ -721,6 +721,11 @@ html.dark .qb{background:#2e3550}
 .sam-intro strong{color:var(--or)}
 .sam .sam-intro + .sam-head{border-top:none;padding-top:0;margin-top:0}
 /* ── Sam: eigen SVG-figuur ── */
+.sam-chapter{margin:22px 0 6px}
+.sam-ch-title{display:flex;align-items:center;gap:10px;font-size:16.5px;font-weight:800;color:var(--dk);line-height:1.25;margin:0 0 10px;padding-bottom:8px;border-bottom:1.5px solid var(--bo)}
+.sam-ch-n{flex-shrink:0;width:24px;height:24px;display:grid;place-items:center;border-radius:8px;background:var(--or);color:#fff;font-size:13px;font-weight:800}
+.sam-chapter>p{margin:0 0 10px}
+@media(max-width:640px){.sam-ch-title{font-size:15px}}
 .sam-figure{margin:16px 0 18px;background:var(--bg2);border:1px solid var(--bo);border-radius:14px;padding:18px 14px 14px;text-align:center}
 .sam-figure svg{max-width:100%;height:auto;display:block;margin:0 auto;overflow:visible}
 .sam-figure svg text{font-family:var(--font,system-ui,sans-serif)}
