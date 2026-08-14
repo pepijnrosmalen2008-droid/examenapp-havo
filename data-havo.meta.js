@@ -430,6 +430,24 @@ var VAKKEN = [
       "nOe": 5,
       "nBeg": 12,
       "hasSam": true
+     },
+     {
+      "id": "M7",
+      "naam": "Erfelijkheid: allelen en overerving",
+      "beschrijving": "Gouden-standaardmodule bi.M.7: allelen, dominant en recessief, genotype en fenotype, en het voorspellen van nakomelingen met een kruisingsschema.",
+      "ceStatus": "CE",
+      "onderwerpen": [
+       "Allelen (varianten van een gen)",
+       "Dominant en recessief",
+       "Genotype en fenotype",
+       "Homozygoot en heterozygoot",
+       "Kruisingsschema en verhoudingen",
+       "Mutatie als bron van nieuwe allelen"
+      ],
+      "nSv": 25,
+      "nOe": 5,
+      "nBeg": 12,
+      "hasSam": true
      }
     ]
    },
