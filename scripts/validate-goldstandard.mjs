@@ -63,7 +63,9 @@ let hardTotal = 0, softTotal = 0;
 for (const t of targets) {
   const VAKKEN = load(`data-${t.niveau}.js`, t.niveau === 'havo' ? 'VAKKEN' : 'VAKKEN_VWO');
   const vak = VAKKEN.find(v => v.id === t.vak);
-  const dom = vak && vak.domeinen.find(d => d.id === t.dom);
+  // Zoek eerst als top-level domein, anders als leerdoel binnen een domein.
+  let dom = vak && vak.domeinen.find(d => d.id === t.dom);
+  if (vak && !dom) for (const D of vak.domeinen) { const ld = (D.leerdoelen || []).find(l => l.id === t.dom); if (ld) { dom = ld; break; } }
   const hard = [], soft = [];
   if (!dom) { console.log(`\n═══ ${t.niveau}/${t.vak}/${t.dom} — NIET GEVONDEN ═══`); hardTotal++; continue; }
   const sv = dom.sv || [];

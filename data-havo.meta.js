@@ -28,7 +28,8 @@ var VAKKEN = [
     ],
     "nSv": 88,
     "nOe": 5,
-    "nBeg": 19
+    "nBeg": 19,
+    "hasSam": true
    },
    {
     "id": "B",
@@ -45,7 +46,8 @@ var VAKKEN = [
     ],
     "nSv": 32,
     "nOe": 3,
-    "nBeg": 6
+    "nBeg": 6,
+    "hasSam": true
    },
    {
     "id": "C",
@@ -62,7 +64,8 @@ var VAKKEN = [
     ],
     "nSv": 47,
     "nOe": 4,
-    "nBeg": 10
+    "nBeg": 10,
+    "hasSam": true
    },
    {
     "id": "D",
@@ -79,7 +82,8 @@ var VAKKEN = [
     ],
     "nSv": 49,
     "nOe": 3,
-    "nBeg": 10
+    "nBeg": 10,
+    "hasSam": true
    },
    {
     "id": "E",
@@ -96,7 +100,8 @@ var VAKKEN = [
     ],
     "nSv": 71,
     "nOe": 5,
-    "nBeg": 15
+    "nBeg": 15,
+    "hasSam": true
    },
    {
     "id": "F",
@@ -113,7 +118,8 @@ var VAKKEN = [
     ],
     "nSv": 90,
     "nOe": 3,
-    "nBeg": 19
+    "nBeg": 19,
+    "hasSam": true
    }
   ]
  },
@@ -146,7 +152,8 @@ var VAKKEN = [
     ],
     "nSv": 58,
     "nOe": 3,
-    "nBeg": 12
+    "nBeg": 12,
+    "hasSam": true
    },
    {
     "id": "B",
@@ -167,7 +174,8 @@ var VAKKEN = [
     ],
     "nSv": 51,
     "nOe": 7,
-    "nBeg": 8
+    "nBeg": 8,
+    "hasSam": true
    },
    {
     "id": "C",
@@ -190,7 +198,8 @@ var VAKKEN = [
     ],
     "nSv": 77,
     "nOe": 8,
-    "nBeg": 15
+    "nBeg": 15,
+    "hasSam": true
    },
    {
     "id": "D",
@@ -215,7 +224,8 @@ var VAKKEN = [
     ],
     "nSv": 55,
     "nOe": 3,
-    "nBeg": 9
+    "nBeg": 9,
+    "hasSam": true
    },
    {
     "id": "E",
@@ -238,7 +248,8 @@ var VAKKEN = [
     ],
     "nSv": 83,
     "nOe": 9,
-    "nBeg": 15
+    "nBeg": 15,
+    "hasSam": true
    }
   ]
  },
@@ -278,7 +289,8 @@ var VAKKEN = [
     ],
     "nSv": 88,
     "nOe": 5,
-    "nBeg": 19
+    "nBeg": 19,
+    "hasSam": true
    },
    {
     "id": "M",
@@ -305,27 +317,31 @@ var VAKKEN = [
     ],
     "nSv": 111,
     "nOe": 10,
-    "nBeg": 25
-   },
-   {
-    "id": "M3",
-    "naam": "Enzymwerking",
-    "beschrijving": "Gouden-standaardmodule bi.M.3 Enzymwerking, volledig door de Content Engine geproduceerd: hoofdstuk-samenvatting met clips, 25 snelle-quizvragen R1-R3 incl. transfer en diagnostische per-optie-uitleg, plus oud-examenvragen (open, met modelantwoord).",
-    "ceStatus": "CE+SE",
-    "binas": "",
-    "val": "",
-    "onderwerpen": [
-     "Wat een enzym is (biokatalysator)",
-     "Activeringsenergie",
-     "Optimumtemperatuur & denaturatie",
-     "pH-optimum",
-     "Substraatspecificiteit",
-     "Herbruikbaarheid",
-     "Transfer: onbekend enzym"
-    ],
-    "nSv": 25,
-    "nOe": 7,
-    "nBeg": 10
+    "nBeg": 25,
+    "hasSam": true,
+    "leerdoelen": [
+     {
+      "id": "M3",
+      "naam": "Enzymwerking",
+      "beschrijving": "Gouden-standaardmodule bi.M.3 Enzymwerking, volledig door de Content Engine geproduceerd: hoofdstuk-samenvatting met clips, 25 snelle-quizvragen R1-R3 incl. transfer en diagnostische per-optie-uitleg, plus oud-examenvragen (open, met modelantwoord).",
+      "ceStatus": "CE+SE",
+      "binas": "",
+      "val": "",
+      "onderwerpen": [
+       "Wat een enzym is (biokatalysator)",
+       "Activeringsenergie",
+       "Optimumtemperatuur & denaturatie",
+       "pH-optimum",
+       "Substraatspecificiteit",
+       "Herbruikbaarheid",
+       "Transfer: onbekend enzym"
+      ],
+      "nSv": 25,
+      "nOe": 7,
+      "nBeg": 10,
+      "hasSam": true
+     }
+    ]
    },
    {
     "id": "O",
@@ -352,7 +368,8 @@ var VAKKEN = [
     ],
     "nSv": 116,
     "nOe": 6,
-    "nBeg": 27
+    "nBeg": 27,
+    "hasSam": true
    },
    {
     "id": "P",
@@ -378,7 +395,8 @@ var VAKKEN = [
     ],
     "nSv": 101,
     "nOe": 7,
-    "nBeg": 22
+    "nBeg": 22,
+    "hasSam": true
    }
   ]
  },
@@ -421,7 +439,8 @@ var VAKKEN = [
     ],
     "nSv": 61,
     "nOe": 3,
-    "nBeg": 13
+    "nBeg": 13,
+    "hasSam": true
    },
    {
     "id": "B",
@@ -453,7 +472,8 @@ var VAKKEN = [
     ],
     "nSv": 82,
     "nOe": 4,
-    "nBeg": 17
+    "nBeg": 17,
+    "hasSam": true
    },
    {
     "id": "C",
@@ -493,7 +513,8 @@ var VAKKEN = [
     ],
     "nSv": 96,
     "nOe": 8,
-    "nBeg": 22
+    "nBeg": 22,
+    "hasSam": true
    },
    {
     "id": "D",
@@ -520,7 +541,8 @@ var VAKKEN = [
     ],
     "nSv": 92,
     "nOe": 6,
-    "nBeg": 20
+    "nBeg": 20,
+    "hasSam": true
    },
    {
     "id": "E",
@@ -546,7 +568,8 @@ var VAKKEN = [
     ],
     "nSv": 77,
     "nOe": 3,
-    "nBeg": 16
+    "nBeg": 16,
+    "hasSam": true
    }
   ]
  },
@@ -583,7 +606,8 @@ var VAKKEN = [
     ],
     "nSv": 57,
     "nOe": 3,
-    "nBeg": 9
+    "nBeg": 9,
+    "hasSam": true
    },
    {
     "id": "B",
@@ -606,7 +630,8 @@ var VAKKEN = [
     ],
     "nSv": 104,
     "nOe": 9,
-    "nBeg": 19
+    "nBeg": 19,
+    "hasSam": true
    },
    {
     "id": "C",
@@ -645,7 +670,8 @@ var VAKKEN = [
     ],
     "nSv": 135,
     "nOe": 12,
-    "nBeg": 27
+    "nBeg": 27,
+    "hasSam": true
    },
    {
     "id": "D",
@@ -673,7 +699,8 @@ var VAKKEN = [
     ],
     "nSv": 112,
     "nOe": 11,
-    "nBeg": 21
+    "nBeg": 21,
+    "hasSam": true
    },
    {
     "id": "E",
@@ -700,7 +727,8 @@ var VAKKEN = [
     ],
     "nSv": 136,
     "nOe": 11,
-    "nBeg": 27
+    "nBeg": 27,
+    "hasSam": true
    }
   ]
  },
@@ -732,7 +760,8 @@ var VAKKEN = [
     ],
     "nSv": 60,
     "nOe": 3,
-    "nBeg": 12
+    "nBeg": 12,
+    "hasSam": true
    },
    {
     "id": "C",
@@ -748,7 +777,8 @@ var VAKKEN = [
     ],
     "nSv": 43,
     "nOe": 3,
-    "nBeg": 8
+    "nBeg": 8,
+    "hasSam": true
    },
    {
     "id": "D",
@@ -765,7 +795,8 @@ var VAKKEN = [
     ],
     "nSv": 55,
     "nOe": 3,
-    "nBeg": 11
+    "nBeg": 11,
+    "hasSam": true
    },
    {
     "id": "E",
@@ -781,7 +812,8 @@ var VAKKEN = [
     ],
     "nSv": 44,
     "nOe": 3,
-    "nBeg": 9
+    "nBeg": 9,
+    "hasSam": true
    },
    {
     "id": "F",
@@ -798,7 +830,8 @@ var VAKKEN = [
     ],
     "nSv": 34,
     "nOe": 3,
-    "nBeg": 6
+    "nBeg": 6,
+    "hasSam": true
    }
   ]
  },
@@ -834,7 +867,8 @@ var VAKKEN = [
     ],
     "nSv": 76,
     "nOe": 7,
-    "nBeg": 16
+    "nBeg": 16,
+    "hasSam": true
    },
    {
     "id": "B",
@@ -852,7 +886,8 @@ var VAKKEN = [
     ],
     "nSv": 69,
     "nOe": 7,
-    "nBeg": 15
+    "nBeg": 15,
+    "hasSam": true
    },
    {
     "id": "C",
@@ -870,7 +905,8 @@ var VAKKEN = [
     ],
     "nSv": 55,
     "nOe": 3,
-    "nBeg": 11
+    "nBeg": 11,
+    "hasSam": true
    },
    {
     "id": "D",
@@ -888,7 +924,8 @@ var VAKKEN = [
     ],
     "nSv": 55,
     "nOe": 3,
-    "nBeg": 12
+    "nBeg": 12,
+    "hasSam": true
    },
    {
     "id": "E",
@@ -906,7 +943,8 @@ var VAKKEN = [
     ],
     "nSv": 44,
     "nOe": 3,
-    "nBeg": 9
+    "nBeg": 9,
+    "hasSam": true
    },
    {
     "id": "F",
@@ -924,7 +962,8 @@ var VAKKEN = [
     ],
     "nSv": 87,
     "nOe": 3,
-    "nBeg": 20
+    "nBeg": 20,
+    "hasSam": true
    }
   ]
  },
@@ -964,7 +1003,8 @@ var VAKKEN = [
     ],
     "nSv": 77,
     "nOe": 12,
-    "nBeg": 13
+    "nBeg": 13,
+    "hasSam": true
    },
    {
     "id": "B",
@@ -991,7 +1031,8 @@ var VAKKEN = [
     ],
     "nSv": 289,
     "nOe": 29,
-    "nBeg": 64
+    "nBeg": 64,
+    "hasSam": true
    },
    {
     "id": "C",
@@ -1008,7 +1049,8 @@ var VAKKEN = [
     ],
     "nSv": 56,
     "nOe": 3,
-    "nBeg": 12
+    "nBeg": 12,
+    "hasSam": true
    },
    {
     "id": "D",
@@ -1027,7 +1069,8 @@ var VAKKEN = [
     ],
     "nSv": 56,
     "nOe": 3,
-    "nBeg": 12
+    "nBeg": 12,
+    "hasSam": true
    },
    {
     "id": "E",
@@ -1044,7 +1087,8 @@ var VAKKEN = [
     ],
     "nSv": 54,
     "nOe": 3,
-    "nBeg": 12
+    "nBeg": 12,
+    "hasSam": true
    }
   ]
  },
@@ -1088,7 +1132,8 @@ var VAKKEN = [
     ],
     "nSv": 54,
     "nOe": 3,
-    "nBeg": 11
+    "nBeg": 11,
+    "hasSam": true
    },
    {
     "id": "B",
@@ -1117,7 +1162,8 @@ var VAKKEN = [
     ],
     "nSv": 89,
     "nOe": 7,
-    "nBeg": 19
+    "nBeg": 19,
+    "hasSam": true
    },
    {
     "id": "C",
@@ -1146,7 +1192,8 @@ var VAKKEN = [
     ],
     "nSv": 82,
     "nOe": 7,
-    "nBeg": 18
+    "nBeg": 18,
+    "hasSam": true
    },
    {
     "id": "D",
@@ -1174,7 +1221,8 @@ var VAKKEN = [
     ],
     "nSv": 66,
     "nOe": 6,
-    "nBeg": 14
+    "nBeg": 14,
+    "hasSam": true
    },
    {
     "id": "E",
@@ -1202,7 +1250,8 @@ var VAKKEN = [
     ],
     "nSv": 57,
     "nOe": 8,
-    "nBeg": 12
+    "nBeg": 12,
+    "hasSam": true
    }
   ]
  },
@@ -1236,7 +1285,8 @@ var VAKKEN = [
     ],
     "nSv": 148,
     "nOe": 7,
-    "nBeg": 32
+    "nBeg": 32,
+    "hasSam": true
    },
    {
     "id": "C",
@@ -1254,7 +1304,8 @@ var VAKKEN = [
     ],
     "nSv": 176,
     "nOe": 22,
-    "nBeg": 39
+    "nBeg": 39,
+    "hasSam": true
    },
    {
     "id": "D",
@@ -1272,7 +1323,8 @@ var VAKKEN = [
     ],
     "nSv": 168,
     "nOe": 16,
-    "nBeg": 37
+    "nBeg": 37,
+    "hasSam": true
    },
    {
     "id": "E",
@@ -1290,7 +1342,8 @@ var VAKKEN = [
     ],
     "nSv": 181,
     "nOe": 13,
-    "nBeg": 40
+    "nBeg": 40,
+    "hasSam": true
    }
   ]
  },
@@ -1323,7 +1376,8 @@ var VAKKEN = [
     ],
     "nSv": 42,
     "nOe": 3,
-    "nBeg": 9
+    "nBeg": 9,
+    "hasSam": true
    },
    {
     "id": "B",
@@ -1340,7 +1394,8 @@ var VAKKEN = [
     ],
     "nSv": 82,
     "nOe": 3,
-    "nBeg": 19
+    "nBeg": 19,
+    "hasSam": true
    },
    {
     "id": "C",
@@ -1358,7 +1413,8 @@ var VAKKEN = [
     ],
     "nSv": 59,
     "nOe": 3,
-    "nBeg": 13
+    "nBeg": 13,
+    "hasSam": true
    },
    {
     "id": "D",
@@ -1375,7 +1431,8 @@ var VAKKEN = [
     ],
     "nSv": 71,
     "nOe": 3,
-    "nBeg": 16
+    "nBeg": 16,
+    "hasSam": true
    }
   ]
  },
@@ -1411,7 +1468,8 @@ var VAKKEN = [
     ],
     "nSv": 31,
     "nOe": 3,
-    "nBeg": 7
+    "nBeg": 7,
+    "hasSam": true
    },
    {
     "id": "B",
@@ -1431,7 +1489,8 @@ var VAKKEN = [
     ],
     "nSv": 52,
     "nOe": 3,
-    "nBeg": 11
+    "nBeg": 11,
+    "hasSam": true
    },
    {
     "id": "C",
@@ -1451,7 +1510,8 @@ var VAKKEN = [
     ],
     "nSv": 46,
     "nOe": 3,
-    "nBeg": 10
+    "nBeg": 10,
+    "hasSam": true
    },
    {
     "id": "D",
@@ -1471,7 +1531,8 @@ var VAKKEN = [
     ],
     "nSv": 53,
     "nOe": 3,
-    "nBeg": 12
+    "nBeg": 12,
+    "hasSam": true
    },
    {
     "id": "E",
@@ -1494,7 +1555,8 @@ var VAKKEN = [
     ],
     "nSv": 46,
     "nOe": 3,
-    "nBeg": 8
+    "nBeg": 8,
+    "hasSam": true
    }
   ]
  }

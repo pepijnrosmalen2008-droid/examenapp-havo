@@ -1161,6 +1161,24 @@
 </div>
 </div>
 
+<!-- LEERDOELEN (scherm 2: domein → leerdoelen) -->
+<div id="sc-leerdoelen" class="sc">
+<nav class="nav">
+  <div class="nav-inner">
+    <div class="logo" onclick="show('sc-home')"><img src="/icon-192.png" alt="Slagio" style="width:26px;height:26px;border-radius:7px;object-fit:cover;flex-shrink:0">Slagio</div>
+    <button class="bk" onclick="backFromDomein()">← Terug</button>
+    <span class="hbg" id="ld-level-badge" style="margin-left:auto">HAVO</span>
+    <button class="theme-btn" onclick="toggleDark()" title="Nachtmodus" id="theme-btn-ld"><svg viewBox="0 0 24 24"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg></button>
+  </div>
+</nav>
+<div class="w" style="padding-top:24px;padding-bottom:60px">
+  <div class="det-breadcrumb" id="ld-breadcrumb"></div>
+  <h2 class="ld-screen-title" id="ld-title">Leerdoelen</h2>
+  <p class="ld-screen-sub" id="ld-sub"></p>
+  <div id="ld-list" class="ld-list"></div>
+</div>
+</div>
+
 <!-- QUIZ MODE -->
 <div id="sc-qmode" class="sc">
 <div class="qm-bg"><div class="qm-orb qm-orb-1"></div><div class="qm-orb qm-orb-2"></div><div class="qm-orb qm-orb-3"></div><div class="qm-grid"></div><div class="qm-vignette"></div></div>

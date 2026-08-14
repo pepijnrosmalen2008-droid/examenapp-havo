@@ -630,6 +630,29 @@ html:not(.dark) .sb-gl6::before{filter:brightness(1.0)}
 .ce strong{color:var(--dk)}
 .dl{display:flex;flex-direction:column;gap:10px;margin-bottom:40px}
 .dc2{border:1px solid var(--bo);border-radius:16px;overflow:hidden;background:var(--s)}
+/* ═══════ LEERDOELEN (scherm 2: domein → leerdoelen) ═══════ */
+.dom-ld-count{font-size:12.5px;color:var(--tx);opacity:.62;margin:5px 0 2px;font-weight:600}
+.dom-ld-gold{color:#c79a1e;opacity:1}
+.ld-screen-title{font-family:var(--font-head);font-size:23px;font-weight:800;margin:12px 0 3px;color:var(--tx)}
+.ld-screen-sub{color:var(--tx);opacity:.6;margin:0 0 18px;font-size:14px}
+.ld-list{display:flex;flex-direction:column;gap:12px}
+.ld-card{border:1px solid var(--bo);border-radius:16px;background:var(--s);padding:16px 18px;cursor:pointer;transition:transform .12s ease,box-shadow .12s ease,border-color .12s ease}
+.ld-card:hover{transform:translateY(-2px);box-shadow:0 10px 30px rgba(0,0,0,.13);border-color:var(--or)}
+.ld-card:active{transform:translateY(0)}
+.ld-card.gold{border-color:#d4af37}
+.ld-card-head{display:flex;gap:13px;align-items:flex-start}
+.ld-card-id{flex:0 0 auto;width:40px;height:40px;border-radius:11px;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:14px;font-family:var(--font-head)}
+.ld-card-main{min-width:0;flex:1}
+.ld-card-main h4{margin:2px 0 3px;font-size:16px;font-weight:700;color:var(--tx);display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+.ld-card-main p{margin:0;font-size:13px;line-height:1.5;color:var(--tx);opacity:.62}
+.ld-gold-badge{font-size:11px;font-weight:700;background:rgba(212,175,55,.18);color:#c79a1e;padding:2px 8px;border-radius:999px;white-space:nowrap}
+.ld-pills{display:flex;flex-wrap:wrap;gap:6px;margin-top:12px}
+.ld-pill{font-size:11.5px;font-weight:600;padding:4px 10px;border-radius:999px;border:1px solid var(--bo);white-space:nowrap}
+.ld-pill.on{background:var(--orl);color:var(--or);border-color:transparent}
+.ld-pill.off{color:var(--tx);opacity:.42}
+.ld-prog{height:5px;border-radius:3px;background:var(--bo);margin-top:12px;overflow:hidden}
+.ld-prog-bar{height:100%;background:var(--or);border-radius:3px}
+.ld-mixed{border-style:dashed}
 .dh{display:flex;align-items:center;gap:12px;padding:16px 20px;cursor:pointer;transition:all .2s}
 .dh:hover{background:var(--bg2)}
 .dlet{width:38px;height:38px;border-radius:10px;display:flex;align-items:center;justify-content:center;font-family:var(--font-head);font-weight:800;font-size:16px;flex-shrink:0}

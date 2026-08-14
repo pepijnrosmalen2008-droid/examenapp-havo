@@ -36,16 +36,25 @@ function split(srcFile, name, level, pretty) {
     const payload = {};                     // domId -> {sv,oe,begrippen}
     // velden die pas nodig zijn bij het openen van een vak → naar het q-bestand
     const HEAVY = new Set(['sv', 'oe', 'begrippen', 'sam']);
-    mv.domeinen = (vak.domeinen || []).map(dom => {
-      const md = {};
-      for (const k in dom) if (!HEAVY.has(k)) md[k] = dom[k];
-      const sv = dom.sv || [], oe = dom.oe || [], beg = dom.begrippen || [];
+    // Splitst één domein- of leerdoel-object: zware velden → payload[id], lichte + counts → meta.
+    const splitNode = (node, md) => {
+      for (const k in node) if (!HEAVY.has(k) && k !== 'leerdoelen') md[k] = node[k];
+      const sv = node.sv || [], oe = node.oe || [], beg = node.begrippen || [];
       md.nSv = sv.length; md.nOe = oe.length; md.nBeg = beg.length;
+      if (node.sam) md.hasSam = true;   // lichte vlag zodat de status-badge werkt vóór hydratie
       metaQ += sv.length + oe.length;
       const p = {};
       if (sv.length) p.sv = sv; if (oe.length) p.oe = oe; if (beg.length) p.begrippen = beg;
-      if (dom.sam) p.sam = dom.sam;
-      if (Object.keys(p).length) payload[dom.id] = p;
+      if (node.sam) p.sam = node.sam;
+      if (Object.keys(p).length) payload[node.id] = p;
+      return md;
+    };
+    mv.domeinen = (vak.domeinen || []).map(dom => {
+      const md = splitNode(dom, {});
+      // leerdoelen: elk als eigen payload-entry (flat, op leerdoel-id), lichte meta onder het domein
+      if (Array.isArray(dom.leerdoelen) && dom.leerdoelen.length) {
+        md.leerdoelen = dom.leerdoelen.map(ld => splitNode(ld, {}));
+      }
       return md;
     });
     // schrijf per-vak vraagbestand

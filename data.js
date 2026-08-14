@@ -82,7 +82,7 @@ var _vakCbs={},_vakLoading={};
 // wordt aangeroepen door q/<niveau>-<vakId>.js
 function __hydrateVak(level,vakId,payload){
   var v=_vakObj(level,vakId); if(!v){return;}
-  (v.domeinen||[]).forEach(function(d){
+  function _reattach(d){
     var p=payload[d.id]; if(!p)return;
     if(p.sv)d.sv=p.sv; if(p.oe)d.oe=p.oe; if(p.begrippen)d.begrippen=p.begrippen; if(p.sam)d.sam=p.sam;
     // Normaliseer de antwoordsleutel: sommige (vooral vwo-bèta) vragen dragen de
@@ -92,6 +92,10 @@ function __hydrateVak(level,vakId,payload){
     (d.oe||[]).forEach(function(q){ // jaar/tijdvak afleiden (zoals _processLevelOe)
       if(!q.jaar){var m=q.bron&&q.bron.match(/(\d{4})\s+Tijdvak\s+(\d)/i);if(m){q.jaar=parseInt(m[1]);q.tijdvak=parseInt(m[2]);}}
     });
+  }
+  (v.domeinen||[]).forEach(function(d){
+    _reattach(d);
+    (d.leerdoelen||[]).forEach(_reattach); // leerdoelen dragen dezelfde 4 pijlers als een domein
   });
   v._q=true;
 }

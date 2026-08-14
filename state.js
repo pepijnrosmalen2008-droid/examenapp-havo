@@ -246,6 +246,29 @@ const conceptGraph = {
 // ═══════ NIVEAU BEHEER ═══════
 let APP_LEVEL=localStorage.getItem('examenapp_level')||'havo';
 function getVK(){var a=(typeof _levelArr==='function')?_levelArr(APP_LEVEL):(APP_LEVEL==='vwo'?(typeof VAKKEN_VWO!=='undefined'?VAKKEN_VWO:null):(typeof VAKKEN!=='undefined'?VAKKEN:null));return a||[];}
+// Vind een domein OF leerdoel (zelfde vorm: sam/sv/oe/begrippen) op id binnen een vak.
+// Leerdoelen nesten onder een domein in `domein.leerdoelen[]`; alle studie-code leest
+// ST.domein, dus een leerdoel gedraagt zich als een domein zodra het daarin staat.
+function duFind(vak,id){
+  if(!vak)return null;
+  for(var i=0;i<(vak.domeinen||[]).length;i++){
+    var d=vak.domeinen[i];
+    if(d.id===id)return d;
+    var ld=(d.leerdoelen||[]).find(function(l){return l.id===id;});
+    if(ld)return ld;
+  }
+  return null;
+}
+// Is dit id een leerdoel (genest), en zo ja: geef het ouderdomein terug.
+function duParent(vak,id){
+  if(!vak)return null;
+  for(var i=0;i<(vak.domeinen||[]).length;i++){
+    var d=vak.domeinen[i];
+    if((d.leerdoelen||[]).some(function(l){return l.id===id;}))return d;
+  }
+  return null;
+}
+function duIsLeerdoel(vak,id){return !!duParent(vak,id);}
 // Level-specifieke localStorage/Supabase kolomnamen - altijd suffix (_havo / _vwo)
 function lvlCol(col){return col+'_'+APP_LEVEL;}
 // Migreer bestaande HAVO data van oude keys (zonder suffix) naar nieuwe keys (_havo)

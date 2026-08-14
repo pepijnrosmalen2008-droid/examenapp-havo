@@ -848,7 +848,7 @@ function lpStartOefenen(domeinId){
 
 function lpStartFlash(domeinId){
   if(!ST.vak)return;
-  ST.domein=ST.vak.domeinen.find(d=>d.id===domeinId);
+  ST.domein=(typeof duFind==='function')?duFind(ST.vak,domeinId):ST.vak.domeinen.find(d=>d.id===domeinId);
   if(!ST.domein)return;
   show('sc-flash');
   startFlash();

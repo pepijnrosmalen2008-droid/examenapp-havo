@@ -213,8 +213,11 @@ function classify(lds, hay, q) {
 const STATUS = { concept_match: 'matched', manual_override: 'matched', fallback: 'unmatched', off_level: 'off_level' };
 const koppeling = {};
 const stat = { n: 0, concept: 0, fallback: 0, override: 0, offlevel: 0, low: 0, confSum: 0, perLd: {} };
-for (const d of vak.domeinen) {
-  const lds = domLeerdoelen(d.id);
+// Vlak domeinen + hun leerdoelen uit: een leerdoel draagt eigen vragen en wordt
+// op zijn eigen id gekoppeld (knowledge-leerdoelen komen van het ouderdomein).
+const _nodes = vak.domeinen.flatMap(dom => [dom, ...(dom.leerdoelen || [])].map(d => ({ d, parent: dom })));
+for (const { d, parent } of _nodes) {
+  const lds = domLeerdoelen(parent.id);
   const fallbackId = lds[0] && lds[0].id;
   for (const q of [...(d.sv || []), ...(d.oe || [])]) {
     stat.n++;

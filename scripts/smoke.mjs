@@ -184,7 +184,7 @@ try {
     if (badLo.length || badMeta.length) { allProvOk = false; bad(`${vid}: ${badLo.length} onbekend leerdoel, ${badMeta.length} ongeldige provenance`); }
     const vk = vk2.H.find(v => v.id === vid);
     const qkeys = new Set();
-    if (vk) for (const d of vk.domeinen) for (const q of [...(d.sv || []), ...(d.oe || [])]) qkeys.add(d.id + '|' + (q.v || '').slice(0, 80));
+    if (vk) for (const dom of vk.domeinen) for (const d of [dom, ...(dom.leerdoelen || [])]) for (const q of [...(d.sv || []), ...(d.oe || [])]) qkeys.add(d.id + '|' + (q.v || '').slice(0, 80));
     const orphan = Object.keys(kp).filter(k => !qkeys.has(k));
     const uncovered = [...qkeys].filter(k => !kp[k]);
     if (orphan.length || uncovered.length) { allSyncOk = false; bad(`${vid}: ${orphan.length} wees-koppelingen, ${uncovered.length} ongekoppelde vragen`); }

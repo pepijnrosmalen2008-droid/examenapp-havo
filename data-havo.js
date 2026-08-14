@@ -12396,7 +12396,8 @@ var VAKKEN = [
       "d": "fotosynthese: legt lichtenergie vast"
      }
     ]
-   },
+    ,
+    "leerdoelen": [
    {
     "id": "M3",
     "naam": "Enzymwerking",
@@ -12453,6 +12454,8 @@ var VAKKEN = [
      {"t":"Denaturatie","d":"De onomkeerbare verandering van de ruimtelijke structuur van een enzym, waardoor het actief centrum zijn vorm en functie verliest."},
      {"t":"pH-optimum","d":"De zuurgraad waarbij een enzym het best werkt; ver daarvan af daalt de activiteit."},
      {"t":"Herbruikbaarheid","d":"Na de reactie komt het enzym onveranderd vrij, zodat het opnieuw kan werken."}
+    ]
+   }
     ]
    },
    {

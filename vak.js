@@ -183,10 +183,24 @@ function openVak(id,_noHash){
     const _csInfo=d.ceStatus&&_ceStatusMap()[d.ceStatus];
     const csBadge=_csInfo?`<div class="dom-ce-badge dom-ce-${_csInfo.cls}">${_csInfo.icon} ${_csInfo.txt}</div>`:'';
     const _empty=(!d.sv||!d.sv.length)&&(!d.oe||!d.oe.length);
+    const _hasLd=d.leerdoelen&&d.leerdoelen.length;
     const el=document.createElement('div');
     el.className='dc2';
     el.dataset.domeinId=d.id;
-    el.innerHTML=`
+    if(_hasLd){
+      // Domein met leerdoelen → tik opent scherm 2 (leerdoellijst), niet direct de leerstof.
+      const _n=d.leerdoelen.length;
+      el.innerHTML=`
+      <div class="dh" onclick="openLeerdoelen('${d.id}')">
+        <div class="dlet" style="background:${ST.vak.kleur}22;color:${ST.vak.kleur}">${d.id}</div>
+        <div class="di"><h4>Domein ${d.id}: ${d.naam}${decayDot}</h4>${csBadge}<p>${d.beschrijving}</p><div class="dom-ld-count">${_n} leerdoel${_n===1?'':'en'}${_gold(d)?` · <span class="dom-ld-gold">🥇 ${_gold(d)} goud</span>`:''}</div>${progHtml}</div>
+        <div class="dbtns">
+          <button class="fav-btn${isFav(ST.vak.id,d.id)?' active':''}" id="fav-${d.id}" onclick="event.stopPropagation();const on=toggleFav('${ST.vak.id}','${d.id}');this.classList.toggle('active',on)" aria-label="Favoriet">${ICO_STAR}</button>
+          <button class="qb" onclick="event.stopPropagation();openLeerdoelen('${d.id}')">${ICO_CHEVRON} Leerdoelen</button>
+        </div>
+      </div>`;
+    }else{
+      el.innerHTML=`
       <div class="dh" onclick="openDomein('${d.id}')">
         <div class="dlet" style="background:${ST.vak.kleur}22;color:${ST.vak.kleur}">${d.id}</div>
         <div class="di"><h4>Domein ${d.id}: ${d.naam}${decayDot}</h4>${csBadge}<p>${d.beschrijving}</p>${progHtml}</div>
@@ -196,6 +210,7 @@ function openVak(id,_noHash){
           ${_empty?`<span class="dom-soon">🔜 Binnenkort</span>`:`<button class="qb" onclick="event.stopPropagation();openQmode('${d.id}')">${ICO_PLAY} Quiz</button>`}
         </div>
       </div>`;
+    }
     dl.appendChild(el);
   });
   initMf();
@@ -692,6 +707,67 @@ function printSam() {
   setTimeout(() => w.print(), 300);
 }
 
+// ═══════ LEERDOEL-STATUS + LEERDOEL-SCHERM (scherm 2) ═══════
+// 4-pijler-status van een leerdoel (spiegelt validate-goldstandard: content,
+// vragen>=25, begrippen>=8; oud-examen apart want figuren zijn extern geblokkeerd).
+// Werkt op zowel de lichte meta (nSv/hasSam) als het gehydrateerde object.
+function _ldStatus(ld){
+  const nSv=(ld.sv&&ld.sv.length)||ld.nSv||0;
+  const nBeg=(ld.begrippen&&ld.begrippen.length)||ld.nBeg||0;
+  const nOe=(ld.oe&&ld.oe.length)||ld.nOe||0;
+  const samKey=APP_LEVEL+'_'+ST.vak.id+'_'+ld.id;
+  const content=!!ld.hasSam||(typeof SAM_RICH!=='undefined'&&!!SAM_RICH[samKey])||((ld.sam||'').length>150);
+  const vragen=nSv>=25, begrippen=nBeg>=8, examen=nOe>0;
+  return {content,vragen,begrippen,examen,nSv,nBeg,nOe,gold:content&&vragen&&begrippen};
+}
+function _gold(d){return (d.leerdoelen||[]).filter(l=>_ldStatus(l).gold).length;}
+function _ldPill(ok,label){return `<span class="ld-pill ${ok?'on':'off'}">${ok?'✓':'○'} ${label}</span>`;}
+
+function openLeerdoelen(domId,_noHash){
+  if(!ST.vak)return;
+  if(typeof ensureSamData==='function'&&typeof samReady==='function'&&typeof APP_LEVEL!=='undefined'&&!samReady(APP_LEVEL)){ensureSamData(APP_LEVEL,function(){openLeerdoelen(domId,_noHash);});return;}
+  if(typeof ensureVakData==='function'&&typeof vakHydrated==='function'&&typeof APP_LEVEL!=='undefined'&&!vakHydrated(APP_LEVEL,ST.vak.id)){ensureVakData(APP_LEVEL,ST.vak.id,function(){openLeerdoelen(domId,_noHash);});return;}
+  const v=ST.vak;
+  const d=v.domeinen.find(x=>x.id===domId);
+  if(!d||!(d.leerdoelen&&d.leerdoelen.length))return;
+  ST.domein=d;
+  if(!_noHash){try{history.pushState({domLd:domId,vak:v.id,niv:APP_LEVEL},'','#leerdoelen='+v.id+'.'+domId);}catch(e){}}
+
+  const bc=document.getElementById('ld-breadcrumb');
+  if(bc)bc.innerHTML=`<span class="det-bc-home" onclick="show('sc-home')"><svg class="ico" viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 10.5 12 3l9 7.5"/><path d="M5 9.5V21h14V9.5"/></svg> Home</span><span class="det-bc-sep">›</span><span class="det-bc-home" onclick="backFromDomein()" style="cursor:pointer">${v.naam}</span><span class="det-bc-sep">›</span><span class="det-bc-cur">Domein ${d.id}</span>`;
+  const titleEl=document.getElementById('ld-title'); if(titleEl)titleEl.textContent=`Domein ${d.id}: ${d.naam}`;
+  const subEl=document.getElementById('ld-sub'); if(subEl)subEl.textContent=`Kies een leerdoel om te leren en te oefenen`;
+
+  const list=document.getElementById('ld-list');
+  let html='';
+  d.leerdoelen.forEach(ld=>{
+    const s=_ldStatus(ld);
+    const pct=(typeof getDomeinBestPct==='function')?getDomeinBestPct(v.id,ld.id):0;
+    html+=`<div class="ld-card${s.gold?' gold':''}" onclick="openDomein('${ld.id}')">
+      <div class="ld-card-head">
+        <div class="ld-card-id" style="background:${v.kleur}22;color:${v.kleur}">${ld.id}</div>
+        <div class="ld-card-main">
+          <h4>${ld.naam}${s.gold?' <span class="ld-gold-badge">🥇 Goud</span>':''}</h4>
+          <p>${ld.beschrijving||''}</p>
+        </div>
+      </div>
+      <div class="ld-pills">${_ldPill(s.content,'Uitleg')}${_ldPill(s.vragen,s.nSv+' vragen')}${_ldPill(s.begrippen,s.nBeg+' begrippen')}${_ldPill(s.examen,'Oud-examen')}</div>
+      ${pct>0?`<div class="ld-prog"><div class="ld-prog-bar" style="width:${pct}%"></div></div>`:''}
+    </div>`;
+  });
+  // "hele domein gemengd oefenen" (de bestaande bulk-bank van het domein zelf)
+  const domN=(d.sv||[]).length||d.nSv||0;
+  if(domN>0){
+    html+=`<div class="ld-card ld-mixed" onclick="openQmode('${d.id}')">
+      <div class="ld-card-head">
+        <div class="ld-card-id" style="background:${v.kleur}18;color:${v.kleur}">∑</div>
+        <div class="ld-card-main"><h4>Hele domein gemengd</h4><p>Alle ${domN} vragen van domein ${d.id} door elkaar</p></div>
+      </div></div>`;
+  }
+  if(list)list.innerHTML=html;
+  show('sc-leerdoelen',true);
+}
+
 // ═══════ DOMEIN-PAGINA (dedicated leerstof-scherm per domein) ═══════
 function openDomein(domId,_noHash){
   if(!ST.vak)return;
@@ -699,20 +775,29 @@ function openDomein(domId,_noHash){
   // anders valt de samenvatting terug op de basisversie.
   if(typeof ensureSamData==='function'&&typeof samReady==='function'&&typeof APP_LEVEL!=='undefined'&&!samReady(APP_LEVEL)){ensureSamData(APP_LEVEL,function(){openDomein(domId,_noHash);});return;}
   if(typeof ensureVakData==='function'&&typeof vakHydrated==='function'&&typeof APP_LEVEL!=='undefined'&&!vakHydrated(APP_LEVEL,ST.vak.id)){ensureVakData(APP_LEVEL,ST.vak.id,function(){openDomein(domId,_noHash);});return;}
-  const d=ST.vak.domeinen.find(x=>x.id===domId);
+  const d=(typeof duFind==='function')?duFind(ST.vak,domId):ST.vak.domeinen.find(x=>x.id===domId);
   if(!d)return;
   const v=ST.vak;
   ST.domein=d;
+  const _isLd=(typeof duIsLeerdoel==='function')&&duIsLeerdoel(v,domId);
   // Echte, indexeerbare URL i.p.v. een hash: dezelfde URL als de statische
-  // SEO-landingspagina van dit domein. Zo is de in-app pagina deelbaar en
-  // valt hij samen met wat Google indexeert; herladen serveert de SEO-pagina.
+  // SEO-landingspagina van dit domein. Leerdoelen hebben (nog) geen SEO-pagina,
+  // dus die routeren we via een hash i.p.v. een 404-pushState.
   if(!_noHash){
-    const _p='/vakken/'+APP_LEVEL+'-'+(_VAK_SLUG[v.id]||v.id)+'-domein-'+domId.toLowerCase()+'.html';
+    const _p=_isLd
+      ? '#leerdoel='+v.id+'.'+domId
+      : '/vakken/'+APP_LEVEL+'-'+(_VAK_SLUG[v.id]||v.id)+'-domein-'+domId.toLowerCase()+'.html';
     try{history.pushState({dom:domId,vak:v.id,niv:APP_LEVEL},'',_p);}catch(e){}
   }
 
   const bc=document.getElementById('dom-breadcrumb');
-  if(bc)bc.innerHTML=`<span class="det-bc-home" onclick="show('sc-home')"><svg class="ico" viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 10.5 12 3l9 7.5"/><path d="M5 9.5V21h14V9.5"/></svg> Home</span><span class="det-bc-sep">›</span><span class="det-bc-home" onclick="backFromDomein()" style="cursor:pointer">${v.naam}</span><span class="det-bc-sep">›</span><span class="det-bc-cur">Domein ${d.id}</span>`;
+  if(bc){
+    const _parent=_isLd?duParent(v,domId):null;
+    const _mid=_isLd
+      ? `<span class="det-bc-sep">›</span><span class="det-bc-home" onclick="openLeerdoelen('${_parent.id}')" style="cursor:pointer">Domein ${_parent.id}</span><span class="det-bc-sep">›</span><span class="det-bc-cur">${d.naam}</span>`
+      : `<span class="det-bc-sep">›</span><span class="det-bc-cur">Domein ${d.id}</span>`;
+    bc.innerHTML=`<span class="det-bc-home" onclick="show('sc-home')"><svg class="ico" viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 10.5 12 3l9 7.5"/><path d="M5 9.5V21h14V9.5"/></svg> Home</span><span class="det-bc-sep">›</span><span class="det-bc-home" onclick="backFromDomein()" style="cursor:pointer">${v.naam}</span>${_mid}`;
+  }
 
   const lvlBadge=document.getElementById('dom-level-badge');
   if(lvlBadge)lvlBadge.textContent=APP_LEVEL==='vwo'?'VWO':'HAVO';

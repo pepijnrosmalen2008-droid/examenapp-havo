@@ -1,7 +1,8 @@
 // ═══════ QUIZ MODE ═══════
 function openQmode(did){
-  ST.domein=ST.vak.domeinen.find(d=>d.id===did);
-  document.getElementById('qmsub').textContent=`${ST.vak.naam} · Domein ${ST.domein.id}: ${ST.domein.naam}`;
+  ST.domein=(typeof duFind==='function')?duFind(ST.vak,did):ST.vak.domeinen.find(d=>d.id===did);
+  const _isLd=(typeof duIsLeerdoel==='function')&&duIsLeerdoel(ST.vak,did);
+  document.getElementById('qmsub').textContent=_isLd?`${ST.vak.naam} · ${ST.domein.naam}`:`${ST.vak.naam} · Domein ${ST.domein.id}: ${ST.domein.naam}`;
   // Toon resume-chip als er een opgeslagen quiz is voor dit domein
   const resumeEl=document.getElementById('qm-resume');
   if(resumeEl){
