@@ -153,6 +153,112 @@ Object.assign(SAM_RICH,{
 </svg><div class="sam-figcap">Passief: gratis, met de gradiënt mee. Actief: kost ATP, tegen de gradiënt in</div></div>
 <div class="sam-onthoud"><strong>Onthoud:</strong> tegen de gradiënt in kost energie (actief); met de gradiënt mee is gratis (passief).</div>
 </div>`,
+'havo_bi_M5':`<div class="sam-intro">In het <strong>DNA</strong> ligt de erfelijke code. Een <strong>gen</strong> is het recept voor een <strong>eiwit</strong>, en eiwitten bepalen je kenmerken. Hieronder eerst een begrippenlijst, daarna drie hoofdstukjes met beeld.</div>
+<table class="sam-table"><thead><tr><th>Begrip</th><th>Kort</th></tr></thead><tbody>
+<tr><td><strong>DNA</strong></td><td>de erfelijke code, in de vorm van een dubbele helix</td></tr>
+<tr><td><strong>Basenparing</strong></td><td>A paart met T, en C paart met G</td></tr>
+<tr><td><strong>Gen</strong></td><td>een stukje DNA met de code voor een eiwit</td></tr>
+<tr><td><strong>Chromosoom</strong></td><td>sterk opgerold DNA</td></tr>
+<tr><td><strong>Transcriptie</strong></td><td>in de kern wordt een mRNA-kopie van een gen gemaakt</td></tr>
+<tr><td><strong>Translatie</strong></td><td>bij het ribosoom wordt het mRNA vertaald in een eiwit</td></tr>
+<tr><td><strong>Codon</strong></td><td>drie basen die coderen voor een aminozuur</td></tr>
+<tr><td><strong>Genexpressie</strong></td><td>het tot uiting komen van een gen (gen -> eiwit -> kenmerk)</td></tr>
+</tbody></table>
+<div class="sam-chapter">
+<div class="sam-ch-title"><span class="sam-ch-n">1</span> DNA en basenparing</div>
+<p>Het <strong>DNA</strong> heeft de vorm van een <strong>dubbele helix</strong>, een gedraaide ladder. De sporten zijn <strong>basenparen</strong>: <strong>A</strong> paart altijd met <strong>T</strong>, en <strong>C</strong> met <strong>G</strong>. Daardoor ligt de ene streng vast zodra je de andere kent.</p>
+<div class="sam-figure"><svg viewBox="0 0 320 170" width="100%" role="img" aria-label="DNA-ladder met basenparen A-T en C-G">
+<line x1="90" y1="20" x2="90" y2="150" stroke="#5a7085" stroke-width="4"/><line x1="230" y1="20" x2="230" y2="150" stroke="#5a7085" stroke-width="4"/>
+<g font-family="sans-serif" font-size="12" text-anchor="middle">
+<rect x="98" y="30" width="54" height="18" rx="4" fill="#cfe3f5"/><rect x="168" y="30" width="54" height="18" rx="4" fill="#f6ddd3"/><text x="125" y="43" fill="#2e6da0">A</text><text x="195" y="43" fill="#b5522f">T</text>
+<rect x="98" y="58" width="54" height="18" rx="4" fill="#d8f0dd"/><rect x="168" y="58" width="54" height="18" rx="4" fill="#f3e6c0"/><text x="125" y="71" fill="#2f7d4f">C</text><text x="195" y="71" fill="#a6801f">G</text>
+<rect x="98" y="86" width="54" height="18" rx="4" fill="#f6ddd3"/><rect x="168" y="86" width="54" height="18" rx="4" fill="#cfe3f5"/><text x="125" y="99" fill="#b5522f">T</text><text x="195" y="99" fill="#2e6da0">A</text>
+<rect x="98" y="114" width="54" height="18" rx="4" fill="#f3e6c0"/><rect x="168" y="114" width="54" height="18" rx="4" fill="#d8f0dd"/><text x="125" y="127" fill="#a6801f">G</text><text x="195" y="127" fill="#2f7d4f">C</text>
+</g></svg><div class="sam-figcap">A paart met T, C paart met G: de twee strengen passen op elkaar</div></div>
+<div class="sam-onthoud"><strong>Onthoud:</strong> A-T en C-G. Als de ene streng bekend is, ligt de andere vast.</div>
+</div>
+<div class="sam-chapter">
+<div class="sam-ch-title"><span class="sam-ch-n">2</span> Van gen naar eiwit</div>
+<p>Bij <strong>transcriptie</strong> maakt de cel in de <strong>kern</strong> een <strong>mRNA</strong>-kopie van een gen. Dat mRNA gaat naar een <strong>ribosoom</strong>, waar bij de <strong>translatie</strong> elk <strong>codon</strong> (drie basen) een aminozuur oplevert. De aminozuren vormen samen het eiwit.</p>
+<div class="sam-figure"><svg viewBox="0 0 320 150" width="100%" role="img" aria-label="Van DNA in de kern via mRNA naar een eiwit bij het ribosoom">
+<g font-family="sans-serif" font-size="11" text-anchor="middle">
+<rect x="12" y="50" width="70" height="44" rx="10" fill="#c7b3e0"/><text x="47" y="70" fill="#5a3f82">DNA</text><text x="47" y="84" fill="#5a3f82" font-size="9">(kern)</text>
+<path d="M84 72h34" stroke="#5a7085" stroke-width="2" marker-end="url(#m5a)"/><text x="101" y="62" font-size="9" fill="#5a7085">transcriptie</text>
+<rect x="120" y="54" width="66" height="36" rx="10" fill="#cfe3f5"/><text x="153" y="76" fill="#2e6da0">mRNA</text>
+<path d="M188 72h30" stroke="#5a7085" stroke-width="2" marker-end="url(#m5a)"/>
+<circle cx="240" cy="72" r="24" fill="#d8f0dd"/><text x="240" y="76" fill="#2f7d4f">ribosoom</text>
+<path d="M266 72h30" stroke="#5a7085" stroke-width="2" marker-end="url(#m5a)"/><rect x="288" y="56" width="28" height="32" rx="8" fill="#f3e6c0"/><text x="302" y="112" fill="#a6801f">eiwit</text>
+<text x="240" y="112" font-size="9" fill="#2f7d4f">translatie</text>
+</g><defs><marker id="m5a" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0 0l6 3-6 3z" fill="#5a7085"/></marker></defs>
+</svg><div class="sam-figcap">DNA -> mRNA (transcriptie) -> eiwit bij het ribosoom (translatie)</div></div>
+<div class="sam-onthoud"><strong>Onthoud:</strong> transcriptie = mRNA maken in de kern; translatie = eiwit maken bij het ribosoom.</div>
+</div>
+<div class="sam-chapter">
+<div class="sam-ch-title"><span class="sam-ch-n">3</span> Genexpressie: gen bepaalt kenmerk</div>
+<p>Een gen levert via zijn eiwit een <strong>kenmerk</strong> op. Cellen met hetzelfde DNA kunnen er toch anders uitzien, doordat in elke cel <strong>andere genen tot uiting komen</strong> (genexpressie).</p>
+<div class="sam-figure"><svg viewBox="0 0 320 120" width="100%" role="img" aria-label="Gen leidt tot eiwit dat een kenmerk bepaalt">
+<g font-family="sans-serif" font-size="12" text-anchor="middle">
+<rect x="24" y="44" width="70" height="34" rx="8" fill="#c7b3e0"/><text x="59" y="65" fill="#5a3f82">gen</text>
+<path d="M96 61h42" stroke="#5a7085" stroke-width="2" marker-end="url(#m5b)"/>
+<rect x="140" y="44" width="70" height="34" rx="8" fill="#f3e6c0"/><text x="175" y="65" fill="#a6801f">eiwit</text>
+<path d="M212 61h42" stroke="#5a7085" stroke-width="2" marker-end="url(#m5b)"/>
+<rect x="256" y="44" width="52" height="34" rx="8" fill="#d8f0dd"/><text x="282" y="65" fill="#2f7d4f">kenmerk</text>
+</g><defs><marker id="m5b" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0 0l6 3-6 3z" fill="#5a7085"/></marker></defs>
+</svg><div class="sam-figcap">gen -> eiwit -> kenmerk; welk gen aanstaat verschilt per cel</div></div>
+<div class="sam-onthoud"><strong>Onthoud:</strong> gen -> eiwit -> eigenschap. Verschillende cellen zetten verschillende genen aan.</div>
+</div>`,
+'havo_bi_M6':`<div class="sam-intro">Cellen delen zich. Bij <strong>mitose</strong> ontstaan twee <strong>identieke</strong> cellen; bij <strong>meiose</strong> ontstaan vier geslachtscellen met het <strong>halve</strong> aantal chromosomen. Hieronder eerst een begrippenlijst, daarna drie hoofdstukjes met beeld.</div>
+<table class="sam-table"><thead><tr><th>Begrip</th><th>Kort</th></tr></thead><tbody>
+<tr><td><strong>Mitose</strong></td><td>gewone celdeling: 1 cel -> 2 identieke cellen (groei/herstel)</td></tr>
+<tr><td><strong>Meiose</strong></td><td>reductiedeling: 1 cel -> 4 cellen met het halve aantal chromosomen</td></tr>
+<tr><td><strong>Diploïd (2n)</strong></td><td>dubbel stel chromosomen (lichaamscel)</td></tr>
+<tr><td><strong>Haploïd (n)</strong></td><td>enkel stel chromosomen (geslachtscel)</td></tr>
+<tr><td><strong>Geslachtscel</strong></td><td>eicel of zaadcel, ontstaat door meiose</td></tr>
+<tr><td><strong>Bevruchting</strong></td><td>eicel (n) + zaadcel (n) -> 2n, aantal weer compleet</td></tr>
+<tr><td><strong>DNA-verdubbeling</strong></td><td>vlak voor elke deling verdubbelt het DNA eerst</td></tr>
+</tbody></table>
+<div class="sam-chapter">
+<div class="sam-ch-title"><span class="sam-ch-n">1</span> Eerst verdubbelt het DNA</div>
+<p>Voor elke celdeling wordt het <strong>DNA eerst verdubbeld</strong>. Zo is er genoeg materiaal om over de dochtercellen te verdelen. Gebeurt dat niet, dan krijgen de dochtercellen te weinig DNA.</p>
+<div class="sam-figure"><svg viewBox="0 0 320 120" width="100%" role="img" aria-label="Een cel verdubbelt eerst haar DNA voor de deling">
+<g font-family="sans-serif" font-size="11" text-anchor="middle">
+<circle cx="70" cy="60" r="36" fill="#eef3f8" stroke="#9db4c9" stroke-width="2"/><rect x="60" y="50" width="6" height="20" fill="#8f74b8"/><text x="70" y="108" fill="#5a7085">1 chromosoom</text>
+<path d="M116 60h44" stroke="#5a7085" stroke-width="2" marker-end="url(#m6a)"/><text x="138" y="50" fill="#5a7085">verdubbelt</text>
+<circle cx="216" cy="60" r="36" fill="#eef3f8" stroke="#9db4c9" stroke-width="2"/><rect x="204" y="50" width="6" height="20" fill="#8f74b8"/><rect x="214" y="50" width="6" height="20" fill="#8f74b8"/><text x="216" y="108" fill="#5a7085">verdubbeld (klaar voor deling)</text>
+</g><defs><marker id="m6a" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0 0l6 3-6 3z" fill="#5a7085"/></marker></defs>
+</svg><div class="sam-figcap">Zonder DNA-verdubbeling vooraf krijgen de dochtercellen te weinig DNA</div></div>
+<div class="sam-onthoud"><strong>Onthoud:</strong> elke deling begint met een verdubbeling van het DNA.</div>
+</div>
+<div class="sam-chapter">
+<div class="sam-ch-title"><span class="sam-ch-n">2</span> Mitose: twee identieke cellen</div>
+<p>Bij <strong>mitose</strong> ontstaan uit één cel <strong>twee dochtercellen</strong> die genetisch <strong>identiek</strong> zijn aan de moedercel en hetzelfde aantal chromosomen hebben. Mitose zorgt voor <strong>groei en herstel</strong>.</p>
+<div class="sam-figure"><svg viewBox="0 0 320 120" width="100%" role="img" aria-label="Mitose: een moedercel deelt in twee identieke cellen met gelijk chromosoomaantal">
+<g font-family="sans-serif" font-size="10" text-anchor="middle">
+<circle cx="52" cy="60" r="30" fill="#eef3f8" stroke="#9db4c9" stroke-width="2"/><rect x="43" y="52" width="5" height="16" fill="#8f74b8"/><rect x="53" y="52" width="5" height="16" fill="#c96a6a"/><text x="52" y="104" fill="#5a7085">2n</text>
+<path d="M88 60h40" stroke="#5a7085" stroke-width="2" marker-end="url(#m6b)"/>
+<circle cx="180" cy="34" r="24" fill="#dcefe2" stroke="#4ea36b" stroke-width="2"/><rect x="172" y="28" width="5" height="14" fill="#8f74b8"/><rect x="181" y="28" width="5" height="14" fill="#c96a6a"/>
+<circle cx="180" cy="90" r="24" fill="#dcefe2" stroke="#4ea36b" stroke-width="2"/><rect x="172" y="84" width="5" height="14" fill="#8f74b8"/><rect x="181" y="84" width="5" height="14" fill="#c96a6a"/>
+<text x="250" y="64" fill="#2f7d4f">2 identieke cellen (2n)</text>
+</g><defs><marker id="m6b" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0 0l6 3-6 3z" fill="#5a7085"/></marker></defs>
+</svg><div class="sam-figcap">Mitose: 1 cel -> 2 identieke cellen met hetzelfde aantal chromosomen</div></div>
+<div class="sam-onthoud"><strong>Onthoud:</strong> mitose = 2 identieke cellen, gelijk chromosoomaantal, voor groei en herstel.</div>
+</div>
+<div class="sam-chapter">
+<div class="sam-ch-title"><span class="sam-ch-n">3</span> Meiose: vier cellen met het halve aantal</div>
+<p>Bij <strong>meiose</strong> ontstaan uit één cel <strong>vier geslachtscellen</strong> met het <strong>halve</strong> aantal chromosomen (van 2n naar n). Bij de <strong>bevruchting</strong> (n + n) wordt het aantal weer 2n. Meiose zorgt ook voor <strong>variatie</strong> tussen nakomelingen.</p>
+<div class="sam-figure"><svg viewBox="0 0 320 130" width="100%" role="img" aria-label="Meiose: een cel deelt in vier geslachtscellen met het halve aantal chromosomen">
+<g font-family="sans-serif" font-size="10" text-anchor="middle">
+<circle cx="46" cy="64" r="28" fill="#eef3f8" stroke="#9db4c9" stroke-width="2"/><rect x="38" y="56" width="5" height="16" fill="#8f74b8"/><rect x="48" y="56" width="5" height="16" fill="#c96a6a"/><text x="46" y="108" fill="#5a7085">2n</text>
+<path d="M80 64h34" stroke="#5a7085" stroke-width="2" marker-end="url(#m6c)"/>
+<circle cx="150" cy="26" r="16" fill="#fdeccd" stroke="#d9a441" stroke-width="2"/><rect x="148" y="20" width="4" height="12" fill="#8f74b8"/>
+<circle cx="150" cy="66" r="16" fill="#fdeccd" stroke="#d9a441" stroke-width="2"/><rect x="148" y="60" width="4" height="12" fill="#c96a6a"/>
+<circle cx="150" cy="106" r="16" fill="#fdeccd" stroke="#d9a441" stroke-width="2"/><rect x="148" y="100" width="4" height="12" fill="#8f74b8"/>
+<circle cx="196" cy="46" r="16" fill="#fdeccd" stroke="#d9a441" stroke-width="2"/><rect x="194" y="40" width="4" height="12" fill="#c96a6a"/>
+<text x="262" y="70" fill="#a06a22">4 geslachtscellen (n)</text>
+</g><defs><marker id="m6c" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0 0l6 3-6 3z" fill="#5a7085"/></marker></defs>
+</svg><div class="sam-figcap">Meiose: 1 cel -> 4 geslachtscellen met het halve aantal chromosomen (n)</div></div>
+<div class="sam-onthoud"><strong>Onthoud:</strong> meiose = 4 cellen, halve chromosoomaantal, voor geslachtscellen en variatie.</div>
+</div>`,
 'havo_bi_M4':`<div class="sam-intro">Planten <strong>maken hun eigen voedsel</strong>. Met <strong>fotosynthese</strong> bouwen ze glucose op uit CO2 en water, met <strong>licht</strong> als energiebron. Alle cellen <strong>verbranden</strong> die glucose weer met zuurstof (<strong>celademhaling</strong>) om er energie uit te halen. Hieronder eerst een begrippenlijst, daarna drie korte hoofdstukjes met beeld.</div>
 <table class="sam-table"><thead><tr><th>Begrip</th><th>Kort</th></tr></thead><tbody>
 <tr><td><strong>Fotosynthese</strong></td><td>glucose maken uit CO2 + water met licht (in de bladgroenkorrel)</td></tr>
