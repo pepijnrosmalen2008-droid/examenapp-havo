@@ -240,3 +240,19 @@ Deze kan een script niet garanderen; ze horen expliciet bij de standaard:
 
 ### 7.4 Live-criterium
 Een leerdoel is **gouden standaard** wanneer 7.2 groen is (auto), 7.3 is afgetekend (mens), en de leerling-lus (§ resultaat/foutenboek/leerpad per subconcept) het beheersingssignaal teruggeeft. Pas dan schaalt de engine het vak-breed uit.
+
+## 8. Echte oud-examenvragen — pijplijn (tekst nu, figuren later)
+
+De oud-examenmodus is de moeilijkste oefenvorm en moet echte CE-vragen tonen. Bron van waarheid is officieel CvTE-materiaal (auteursrechtelijk). We reproduceren het **niet** uit het geheugen van een model; het komt altijd uit de echte bron-PDF's.
+
+### 8.1 Wat nu live is (tekst)
+- **`ce_data.js`** (`CE_OE[vakId]`) bevat echte CE-vragen met `jaar` + `tijdvak` + `bron`. **`ce-oud.js`** ontsluit ze als oud-examen-oefensurface per vak (knop "Echte examenvragen" op de vakpagina), gegroepeerd per jaar, via de bestaande picker (synthetisch `{id:'CE',_ce:true}`-domein). Encoding wordt opgeschoond door `_ceClean()`.
+- De enkele zuivere enzymwerking-HAVO-CE-vraag staat als echte 📋 CE-vraag in `bi.M.3.oe`. (Echte HAVO-examens isoleren enzymwerking zelden; domein-zuivere echte sets zijn daarom klein — vandaar de examen-stijl-oefenvragen als aanvulling.)
+
+### 8.2 Wat de figuur-rijke versie nog nodig heeft
+Het schema is er al klaar voor: een `oe`-vraag ondersteunt `ctx` (contexttekst → `#qctx`) en `fig`/afbeelding (→ `#qfig`), en het volledige-examensysteem **`EXAMENS[vakId]`** (`examens.js`) met PDF-bijlagen + genummerde `vragen` (zie `be`/`nl`/`en` 2025 als referentie). Ontbreekt alleen: de echte figuren + volledige contextteksten + correctievoorschrift-modelantwoorden — die zitten uitsluitend in de bron-PDF's.
+
+### 8.3 Eén-stap-pad zodra de bron bereikbaar is
+1. `node scripts/download-examens.js --vak bi --niveau havo` haalt de officiële opgaven + correctievoorschriften op (AlleExamens.nl; biologie staat al in de manifest). *In de agent-omgeving zijn alleexamens.nl/examenblad.nl/Supabase-storage geblokkeerd (403); draai dit dus in een omgeving mét netwerk, of lever de PDF's aan.*
+2. Figuren croppen en hosten (zelfde Supabase-storage-patroon als de bestaande examens).
+3. Vragen structureren in `EXAMENS[bi]` (volledig examen) en/of de enzym-relevante in `bi.M.3.oe` met `jaar`/`tijdvak`/`bron`/`ctx`/`fig`/`u` (modelantwoord uit het correctievoorschrift).

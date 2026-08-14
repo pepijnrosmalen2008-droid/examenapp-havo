@@ -135,7 +135,7 @@ function openOEPicker(){
     html+='</div>';
   }
   document.getElementById('oep-list').innerHTML=html;
-  document.getElementById('oep-title').textContent=`${ST.vak.naam} · Domein ${ST.domein.id}: ${ST.domein.naam}`;
+  document.getElementById('oep-title').textContent=ST.domein._ce?`${ST.vak.naam} · Echte CE-examenvragen`:`${ST.vak.naam} · Domein ${ST.domein.id}: ${ST.domein.naam}`;
   document.getElementById('oep-count').textContent=oe.length+' '+(oe.length===1?'vraag':'vragen');
   document.getElementById('oep-back-btn').onclick=()=>show('sc-qmode');
   // Attach clicks
@@ -151,7 +151,7 @@ function startOESingle(qIdx){
   ST.vragen=[ST.domein.oe[qIdx]];
   const q=ST.domein.oe[qIdx];
   const jaarLabel=q.jaar?` · ${q.jaar} T${q.tijdvak||1}`:'';
-  document.getElementById('qmeta').textContent=`${ST.vak.naam} · D${ST.domein.id}${jaarLabel}`;
+  document.getElementById('qmeta').textContent=ST.domein._ce?`${ST.vak.naam}${jaarLabel}`:`${ST.vak.naam} · D${ST.domein.id}${jaarLabel}`;
   document.getElementById('sc-quiz').classList.add('oud-mode');
   show('sc-quiz');
   try{if(typeof _showQuizVonk==='function')_showQuizVonk();if(typeof vonkContext==='function')vonkContext({screen:'quiz',qIndex:0,combo:0,lastQuestion:false,timeLeft:99});}catch(e){}

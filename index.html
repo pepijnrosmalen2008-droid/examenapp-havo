@@ -1080,6 +1080,14 @@
     </div>
     <div class="exam-entry-arr">→</div>
   </button>
+  <button class="exam-entry-btn ce-entry-btn" onclick="openCEExamens()" id="ce-entry-btn" style="display:none">
+    <div class="exam-entry-icon"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h16v16H4z"/><path d="M8 8h8M8 12h8M8 16h5"/></svg></div>
+    <div class="exam-entry-text">
+      <div class="exam-entry-title">Echte examenvragen</div>
+      <div class="exam-entry-sub" id="ce-entry-sub">Officiële CE-vragen · per jaar</div>
+    </div>
+    <div class="exam-entry-arr">→</div>
+  </button>
   <div class="progress-overview" id="progress-overview" style="display:none">
     <div class="po-title"><svg class="ico" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="vertical-align:-2px;margin-right:5px"><path d="M3 3v18h18"/><rect x="7" y="11" width="3" height="6" rx="1"/><rect x="13" y="7" width="3" height="10" rx="1"/></svg>Jouw voortgang <button class="po-reset" id="reset-progress" onclick="resetVakProgress()">Wissen</button></div>
     <div class="po-grid" id="po-grid"></div>
@@ -2164,6 +2172,7 @@
 <script defer src="/herhalen.js"></script>
 <script defer src="/v4.js"></script>
 <script defer src="/zoek.js"></script>
+<script defer src="/ce-oud.js"></script>
 <script defer src="/klas.js"></script>
 <script defer src="/notif-engine.js"></script>
 <script defer src="/onb.js"></script>

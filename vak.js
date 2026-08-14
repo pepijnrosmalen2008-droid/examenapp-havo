@@ -214,6 +214,20 @@ function openVak(id,_noHash){
       _exBtn.style.display = 'none';
     }
   }
+  // Echte CE-examenvragen (uit ce_data.js) - toon zodra er echte vragen voor dit vak zijn
+  const _ceBtn = document.getElementById('ce-entry-btn');
+  const _ceSub = document.getElementById('ce-entry-sub');
+  if(_ceBtn && typeof ceExamenCount==='function'){
+    const _setCe=()=>{
+      if(!ST.vak)return;
+      const n=ceExamenCount(ST.vak.id);
+      if(n&&n>0){_ceBtn.style.display='';if(_ceSub)_ceSub.textContent=`${n} officiële CE-vragen · per jaar`;}
+      else _ceBtn.style.display='none';
+    };
+    _ceBtn.style.display='none';
+    if(typeof CE_OE!=='undefined')_setCe();
+    else if(typeof _ceEnsure==='function')_ceEnsure(_setCe);
+  }
   show('sc-detail');
   // Deep-link: als ?domein=X is meegegeven, open dat domein automatisch
   try{
