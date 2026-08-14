@@ -64,6 +64,50 @@ Object.assign(SAM_RICH,{
 
 // bi.M.3 Enzymwerking - hoofdstuk-structuur (begrippenlijst + onderwerpen met beeld). Zie docs/SLICE0-PROEFSNEDE-bi.M.3.md
 Object.assign(SAM_RICH,{
+'havo_bi_M4':`<div class="sam-intro">Planten <strong>maken hun eigen voedsel</strong>. Met <strong>fotosynthese</strong> bouwen ze glucose op uit CO2 en water, met <strong>licht</strong> als energiebron. Alle cellen <strong>verbranden</strong> die glucose weer met zuurstof (<strong>celademhaling</strong>) om er energie uit te halen. Hieronder eerst een begrippenlijst, daarna drie korte hoofdstukjes met beeld.</div>
+<table class="sam-table"><thead><tr><th>Begrip</th><th>Kort</th></tr></thead><tbody>
+<tr><td><strong>Fotosynthese</strong></td><td>glucose maken uit CO2 + water met licht (in de bladgroenkorrel)</td></tr>
+<tr><td><strong>Celademhaling</strong></td><td>glucose met zuurstof afbreken tot CO2 + water; levert energie (in het mitochondrium)</td></tr>
+<tr><td><strong>Bladgroen</strong></td><td>groene kleurstof die het licht opvangt</td></tr>
+<tr><td><strong>Assimilatie</strong></td><td>opbouw van een complexe stof, zoals bij de fotosynthese</td></tr>
+<tr><td><strong>Dissimilatie</strong></td><td>afbraak waarbij energie vrijkomt, zoals bij de celademhaling</td></tr>
+<tr><td><strong>Anaerobe dissimilatie</strong></td><td>afbraak zonder zuurstof (gisting); veel minder energie, met melkzuur of alcohol</td></tr>
+<tr><td><strong>Huidmondje</strong></td><td>opening in het blad voor de gasuitwisseling</td></tr>
+<tr><td><strong>Beperkende factor</strong></td><td>licht, CO2 of temperatuur die de fotosynthesesnelheid begrenst</td></tr>
+</tbody></table>
+<div class="sam-chapter">
+<div class="sam-ch-title"><span class="sam-ch-n">1</span> Fotosynthese: voedsel maken met licht</div>
+<p>In de <strong>bladgroenkorrels</strong> vangt <strong>bladgroen</strong> het zonlicht op. Met die energie bouwt de plant uit <strong>koolstofdioxide</strong> en <strong>water</strong> de suiker <strong>glucose</strong>. Daarbij komt <strong>zuurstof</strong> vrij. De gassen gaan via de <strong>huidmondjes</strong> het blad in en uit.</p>
+<div class="sam-figure"><svg viewBox="0 0 320 170" width="100%" role="img" aria-label="Fotosynthese: CO2 en water plus licht worden glucose en zuurstof">
+<circle cx="40" cy="34" r="16" fill="#f6c443"/><g stroke="#f6c443" stroke-width="3" stroke-linecap="round"><path d="M40 8v-6"/><path d="M40 66v-6"/><path d="M14 34h-6"/><path d="M66 34h6"/><path d="M22 16l-4-4"/><path d="M58 16l4-4"/></g>
+<rect x="108" y="46" width="104" height="78" rx="16" fill="#4ea36b"/><ellipse cx="160" cy="85" rx="30" ry="20" fill="#3c8a58"/><text x="160" y="90" text-anchor="middle" font-size="12" fill="#fff" font-family="sans-serif">blad</text>
+<text x="30" y="96" font-size="12" fill="#555" font-family="sans-serif">CO2</text><text x="30" y="118" font-size="12" fill="#555" font-family="sans-serif">H2O</text>
+<g stroke="#8a8" stroke-width="2" fill="none" marker-end="url(#ar)"><path d="M60 92h44"/><path d="M60 114h44"/></g>
+<text x="240" y="72" font-size="12" fill="#2f7d4f" font-family="sans-serif">glucose</text><text x="248" y="112" font-size="12" fill="#2f7d4f" font-family="sans-serif">O2</text>
+<g stroke="#2f7d4f" stroke-width="2" fill="none" marker-end="url(#ar2)"><path d="M216 68h20"/><path d="M216 108h24"/></g>
+<defs><marker id="ar" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0 0l6 3-6 3z" fill="#8a8"/></marker><marker id="ar2" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0 0l6 3-6 3z" fill="#2f7d4f"/></marker></defs>
+</svg><div class="sam-figcap">6 CO2 + 6 H2O + lichtenergie &rarr; glucose + 6 O2</div></div>
+<div class="sam-onthoud"><strong>Onthoud:</strong> foto = licht, synthese = opbouw. Fotosynthese heeft licht nodig en gebeurt alleen bij daglicht.</div>
+</div>
+<div class="sam-chapter">
+<div class="sam-ch-title"><span class="sam-ch-n">2</span> Celademhaling: energie uit glucose</div>
+<p>Elke cel haalt energie uit glucose door die in het <strong>mitochondrium</strong> met <strong>zuurstof</strong> af te breken tot <strong>koolstofdioxide</strong> en <strong>water</strong>. Dit heet <strong>dissimilatie</strong> en gebeurt <strong>dag en nacht</strong>, ook bij planten.</p>
+<div class="sam-figure"><svg viewBox="0 0 320 150" width="100%" role="img" aria-label="Celademhaling: glucose en zuurstof worden koolstofdioxide, water en energie">
+<ellipse cx="160" cy="75" rx="58" ry="40" fill="#c96a6a"/><path d="M120 75q20-18 40 0t40 0" stroke="#8f3f3f" stroke-width="3" fill="none"/><text x="160" y="118" text-anchor="middle" font-size="11" fill="#8f3f3f" font-family="sans-serif">mitochondrium</text>
+<text x="20" y="66" font-size="12" fill="#555" font-family="sans-serif">glucose</text><text x="34" y="96" font-size="12" fill="#555" font-family="sans-serif">O2</text>
+<g stroke="#a88" stroke-width="2" fill="none" marker-end="url(#br)"><path d="M64 62h34"/><path d="M52 92h46"/></g>
+<text x="238" y="52" font-size="12" fill="#b5522f" font-family="sans-serif">CO2</text><text x="240" y="82" font-size="12" fill="#b5522f" font-family="sans-serif">H2O</text><text x="236" y="112" font-size="12" fill="#d98a1f" font-family="sans-serif">energie</text>
+<g stroke="#b5522f" stroke-width="2" fill="none" marker-end="url(#br2)"><path d="M220 48h16"/><path d="M220 78h16"/></g><path d="M220 108h14" stroke="#d98a1f" stroke-width="2" fill="none" marker-end="url(#br3)"/>
+<defs><marker id="br" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0 0l6 3-6 3z" fill="#a88"/></marker><marker id="br2" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0 0l6 3-6 3z" fill="#b5522f"/></marker><marker id="br3" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0 0l6 3-6 3z" fill="#d98a1f"/></marker></defs>
+</svg><div class="sam-figcap">glucose + 6 O2 &rarr; 6 CO2 + 6 H2O + energie</div></div>
+<div class="sam-onthoud"><strong>Onthoud:</strong> celademhaling is het spiegelbeeld van de fotosynthese. De producten van het ene proces zijn de grondstoffen van het andere.</div>
+</div>
+<div class="sam-chapter">
+<div class="sam-ch-title"><span class="sam-ch-n">3</span> Met of zonder zuurstof: gisting</div>
+<p>Is er te weinig zuurstof (bijvoorbeeld in een hardwerkende spier of bij gistcellen in deeg), dan breekt de cel glucose <strong>onvolledig</strong> af: <strong>anaerobe dissimilatie</strong> of <strong>gisting</strong>. Dat levert <strong>veel minder energie</strong>, met <strong>melkzuur</strong> (spier) of <strong>alcohol + CO2</strong> (gist) als restproduct.</p>
+<div class="sam-tip">In een grafiek van fotosynthese tegen lichtsterkte heet het punt waar fotosynthese en celademhaling elkaar precies opheffen het <strong>compensatiepunt</strong>: netto wisselt de plant dan geen gas uit.</div>
+<div class="sam-onthoud"><strong>Onthoud:</strong> geen zuurstof betekent onvolledige afbraak, dus minder energie en een restproduct (melkzuur of alcohol).</div>
+</div>`,
 'havo_bi_M3':`<div class="sam-intro"><strong>Enzymen</strong> zijn <strong>eiwitten</strong> die reacties in de cel <strong>versnellen</strong>. Deze samenvatting bestaat uit een <strong>begrippenlijst</strong> en daarna vier korte hoofdstukjes met de bijbehorende beelden.</div>
 
 <div class="sam-head">Begrippenlijst</div>

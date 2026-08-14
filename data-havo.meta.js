@@ -321,6 +321,24 @@ var VAKKEN = [
     "hasSam": true,
     "leerdoelen": [
      {
+      "id": "M4",
+      "naam": "Fotosynthese & celademhaling",
+      "beschrijving": "Gouden-standaardmodule bi.M.2: hoe planten glucose opbouwen met licht (fotosynthese) en hoe cellen glucose met zuurstof afbreken voor energie (celademhaling), incl. assimilatie/dissimilatie en gisting.",
+      "ceStatus": "CE",
+      "onderwerpen": [
+       "Fotosynthese (opbouw glucose)",
+       "Celademhaling (afbraak glucose)",
+       "Bladgroenkorrel & mitochondrium",
+       "Assimilatie vs dissimilatie",
+       "Anaerobe dissimilatie (gisting)",
+       "Gasuitwisseling & beperkende factoren"
+      ],
+      "nSv": 25,
+      "nOe": 5,
+      "nBeg": 12,
+      "hasSam": true
+     },
+     {
       "id": "M3",
       "naam": "Enzymwerking",
       "beschrijving": "Gouden-standaardmodule bi.M.3 Enzymwerking, volledig door de Content Engine geproduceerd: hoofdstuk-samenvatting met clips, 25 snelle-quizvragen R1-R3 incl. transfer en diagnostische per-optie-uitleg, plus oud-examenvragen (open, met modelantwoord).",
