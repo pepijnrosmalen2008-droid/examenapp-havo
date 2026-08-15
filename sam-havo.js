@@ -349,6 +349,8 @@ Object.assign(SAM_RICH,{
 <tr><td><strong>Synaps</strong></td><td>contactplek tussen twee zenuwcellen (chemische overdracht)</td></tr>
 <tr><td><strong>Reflex</strong></td><td>snelle, onbewuste reactie via het ruggenmerg</td></tr>
 <tr><td><strong>Centraal zenuwstelsel</strong></td><td>de hersenen en het ruggenmerg</td></tr>
+<tr><td><strong>Myelineschede</strong></td><td>isolatielaagje om het axon dat de impuls sneller maakt</td></tr>
+<tr><td><strong>Animaal / autonoom</strong></td><td>animaal = bewuste (willekeurige) bewegingen, autonoom = onbewuste processen</td></tr>
 </tbody></table>
 <div class="sam-chapter">
 <div class="sam-ch-title"><span class="sam-ch-n">1</span> De zenuwcel (neuron)</div>

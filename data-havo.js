@@ -16590,7 +16590,8 @@ var VAKKEN = [
        "De impuls en de synaps",
        "Reflex en reflexboog",
        "Centraal zenuwstelsel",
-       "Zenuwstelsel versus hormoonstelsel"
+       "Zenuwstelsel versus hormoonstelsel",
+       "Myelineschede en animaal/autonoom zenuwstelsel"
       ],
       "sam": "Het zenuwstelsel vangt prikkels op en regelt daar snel reacties op. Een zenuwcel (neuron) geleidt een impuls, een elektrisch signaal, via de dendrieten naar het cellichaam en via het axon weg. Tussen twee neuronen zit een synaps, waar het signaal met neurotransmitters (chemisch) in een richting wordt overgedragen. Een reflex is een snelle, onbewuste reactie via de reflexboog: receptor, sensorisch neuron, schakelcel in het ruggenmerg, motorisch neuron, effector. Het zenuwstelsel werkt snel en kort; het hormoonstelsel juist traag en langdurig.",
       "begrippen": [
@@ -16641,6 +16642,14 @@ var VAKKEN = [
        {
         "t": "Centraal zenuwstelsel",
         "d": "De hersenen en het ruggenmerg samen."
+       },
+       {
+        "t": "Myelineschede",
+        "d": "Isolatielaagje om veel axonen dat de impuls sneller laat gaan."
+       },
+       {
+        "t": "Autonoom zenuwstelsel",
+        "d": "Deel van het zenuwstelsel dat onbewuste processen regelt, zoals hartslag en spijsvertering."
        }
       ],
       "sv": [
@@ -17118,6 +17127,63 @@ var VAKKEN = [
          "De dikte van de zenuw is niet de reden dat het zenuwstelsel sneller is."
         ],
         "uh": "Impuls = snel elektrisch; hormonen = traag via het bloed."
+       },
+       {
+        "v": "Wat doet de myelineschede, het isolatielaagje om veel axonen?",
+        "o": [
+         "Ze maakt de neurotransmitters aan die in de synaps nodig zijn",
+         "Ze versnelt de impuls door het axon te isoleren",
+         "Ze verandert het axon in een dendriet die signalen opvangt",
+         "Ze verbindt de spier rechtstreeks met het centrale zenuwstelsel"
+        ],
+        "c": 1,
+        "d": 2,
+        "u": "De myelineschede isoleert het axon, waardoor de impuls er sneller doorheen gaat. Onthoud: myeline = isolatie = snellere impuls.",
+        "uo": [
+         "Neurotransmitters horen bij de synaps, niet bij de functie van de myelineschede.",
+         "Klopt: de myelineschede isoleert het axon, zodat de impuls sneller gaat.",
+         "De myelineschede verandert een axon niet in een dendriet.",
+         "De myelineschede verbindt geen spier met het zenuwstelsel."
+        ],
+        "uh": "Myelineschede isoleert het axon: snellere impuls."
+       },
+       {
+        "v": "Wat regelt het autonome (onwillekeurige) deel van het zenuwstelsel?",
+        "o": [
+         "De bewuste, willekeurige bewegingen van je armen en benen",
+         "Het bewust onthouden van namen en gebeurtenissen",
+         "Onbewuste processen zoals je hartslag en spijsvertering",
+         "Het opzettelijk aanspannen van een spier in je hand"
+        ],
+        "c": 2,
+        "d": 2,
+        "u": "Het autonome zenuwstelsel regelt onbewuste (onwillekeurige) processen zoals hartslag, ademhaling en spijsvertering. Onthoud: autonoom = automatisch, zonder nadenken.",
+        "uo": [
+         "Bewuste bewegingen horen bij het animale (willekeurige) zenuwstelsel.",
+         "Bewust onthouden hoort bij de hersenen, niet bij het autonome zenuwstelsel.",
+         "Klopt: het autonome zenuwstelsel regelt onbewuste processen zoals hartslag en spijsvertering.",
+         "Een spier opzettelijk aanspannen is juist willekeurig, dus animaal."
+        ],
+        "uh": "Autonoom = onbewuste processen (hartslag, spijsvertering)."
+       },
+       {
+        "v": "Welk deel van het zenuwstelsel gebruik je voor bewuste, willekeurige bewegingen?",
+        "o": [
+         "Het autonome zenuwstelsel dat alles automatisch regelt",
+         "De onwillekeurige reflexen die via het ruggenmerg lopen",
+         "Alleen de neurotransmitters in de synapsen",
+         "Het animale (willekeurige) zenuwstelsel"
+        ],
+        "c": 3,
+        "d": 1,
+        "u": "Bewuste, willekeurige bewegingen regel je met het animale zenuwstelsel. Onthoud: animaal = willekeurig (bewust), autonoom = onwillekeurig (onbewust).",
+        "uo": [
+         "Het autonome zenuwstelsel regelt juist de onbewuste processen.",
+         "Reflexen zijn juist onwillekeurig; die gebruik je niet voor bewuste bewegingen.",
+         "Neurotransmitters dragen signalen over, maar vormen niet het willekeurige deel.",
+         "Klopt: het animale (willekeurige) zenuwstelsel regelt bewuste bewegingen."
+        ],
+        "uh": "Animaal = willekeurig (bewust); autonoom = onwillekeurig (onbewust)."
        }
       ],
       "oe": [

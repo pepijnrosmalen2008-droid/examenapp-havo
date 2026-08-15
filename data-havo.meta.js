@@ -490,11 +490,12 @@ var VAKKEN = [
        "De impuls en de synaps",
        "Reflex en reflexboog",
        "Centraal zenuwstelsel",
-       "Zenuwstelsel versus hormoonstelsel"
+       "Zenuwstelsel versus hormoonstelsel",
+       "Myelineschede en animaal/autonoom zenuwstelsel"
       ],
-      "nSv": 25,
+      "nSv": 28,
       "nOe": 5,
-      "nBeg": 12,
+      "nBeg": 14,
       "hasSam": true
      }
     ]
