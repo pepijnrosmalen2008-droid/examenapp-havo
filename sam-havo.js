@@ -178,23 +178,41 @@ Object.assign(SAM_RICH,{
 <div class="sam-onthoud"><strong>Onthoud:</strong> A-T en C-G. Als de ene streng bekend is, ligt de andere vast.</div>
 </div>
 <div class="sam-chapter">
-<div class="sam-ch-title"><span class="sam-ch-n">2</span> Van gen naar eiwit</div>
-<p>Bij <strong>transcriptie</strong> maakt de cel in de <strong>kern</strong> een <strong>mRNA</strong>-kopie van een gen. Dat mRNA gaat naar een <strong>ribosoom</strong>, waar bij de <strong>translatie</strong> elk <strong>codon</strong> (drie basen) een aminozuur oplevert. De aminozuren vormen samen het eiwit.</p>
-<div class="sam-figure"><svg viewBox="0 0 320 150" width="100%" role="img" aria-label="Van DNA in de kern via mRNA naar een eiwit bij het ribosoom">
+<div class="sam-ch-title"><span class="sam-ch-n">2</span> Transcriptie: van DNA naar mRNA</div>
+<p>Het DNA blijft veilig in de <strong>kern</strong>. Om een eiwit te maken, kopieert de cel eerst het gen naar een <strong>mRNA</strong> (boodschapper-RNA). Dat heet <strong>transcriptie</strong>. Het mRNA is een enkele streng die de basenvolgorde van het gen overneemt en, anders dan het DNA, de <strong>kern uit</strong> kan naar het ribosoom. Zo blijft het originele DNA veilig binnen.</p>
+<div class="sam-figure"><svg viewBox="0 0 320 150" width="100%" role="img" aria-label="Van het dubbelstrengs DNA in de kern wordt een enkelstrengs mRNA-kopie gemaakt die de kern uit gaat">
 <g font-family="sans-serif" font-size="11" text-anchor="middle">
-<rect x="12" y="50" width="70" height="44" rx="10" fill="#c7b3e0"/><text x="47" y="70" fill="#5a3f82">DNA</text><text x="47" y="84" fill="#5a3f82" font-size="9">(kern)</text>
-<path d="M84 72h34" stroke="#5a7085" stroke-width="2" marker-end="url(#m5a)"/><text x="101" y="62" font-size="9" fill="#5a7085">transcriptie</text>
-<rect x="120" y="54" width="66" height="36" rx="10" fill="#cfe3f5"/><text x="153" y="76" fill="#2e6da0">mRNA</text>
-<path d="M188 72h30" stroke="#5a7085" stroke-width="2" marker-end="url(#m5a)"/>
-<circle cx="240" cy="72" r="24" fill="#d8f0dd"/><text x="240" y="76" fill="#2f7d4f">ribosoom</text>
-<path d="M266 72h30" stroke="#5a7085" stroke-width="2" marker-end="url(#m5a)"/><rect x="288" y="56" width="28" height="32" rx="8" fill="#f3e6c0"/><text x="302" y="112" fill="#a6801f">eiwit</text>
-<text x="240" y="112" font-size="9" fill="#2f7d4f">translatie</text>
-</g><defs><marker id="m5a" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0 0l6 3-6 3z" fill="#5a7085"/></marker></defs>
-</svg><div class="sam-figcap">DNA -> mRNA (transcriptie) -> eiwit bij het ribosoom (translatie)</div></div>
-<div class="sam-onthoud"><strong>Onthoud:</strong> transcriptie = mRNA maken in de kern; translatie = eiwit maken bij het ribosoom.</div>
+<ellipse cx="80" cy="75" rx="72" ry="60" fill="#efeaf7" stroke="#b7a3d6" stroke-width="2"/><text x="80" y="24" fill="#8a74b8" font-size="10">celkern</text>
+<line x1="46" y1="52" x2="46" y2="104" stroke="#8f74b8" stroke-width="4"/><line x1="60" y1="52" x2="60" y2="104" stroke="#8f74b8" stroke-width="4"/><text x="53" y="120" fill="#5a3f82" font-size="9">DNA</text>
+<rect x="90" y="62" width="10" height="26" rx="3" fill="#3f9bd0"/><text x="95" y="120" fill="#2e6da0" font-size="9">mRNA</text>
+<path d="M112 75h44" stroke="#5a7085" stroke-width="2" marker-end="url(#m5t)"/><text x="150" y="64" font-size="9" fill="#5a7085">de kern uit</text>
+<rect x="176" y="60" width="12" height="30" rx="3" fill="#3f9bd0"/><text x="212" y="79" font-size="10" fill="#2e6da0">naar ribosoom</text>
+</g><defs><marker id="m5t" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0 0l6 3-6 3z" fill="#5a7085"/></marker></defs>
+</svg><div class="sam-figcap">Transcriptie: van het gen wordt een mRNA-kopie gemaakt die de kern uit gaat</div></div>
+<div class="sam-onthoud"><strong>Onthoud:</strong> transcriptie = het gen kopieren naar mRNA in de kern; mRNA is de boodschapper die de code naar buiten brengt.</div>
 </div>
 <div class="sam-chapter">
-<div class="sam-ch-title"><span class="sam-ch-n">3</span> Genexpressie: gen bepaalt kenmerk</div>
+<div class="sam-ch-title"><span class="sam-ch-n">3</span> Translatie: van mRNA naar eiwit</div>
+<p>Bij het <strong>ribosoom</strong> wordt het mRNA in stukjes van drie basen gelezen: <strong>codons</strong>. Elk codon codeert voor precies één <strong>aminozuur</strong>. Het ribosoom rijgt de aminozuren in volgorde aan elkaar tot een <strong>eiwit</strong>. Zo bepaalt de basenvolgorde van het mRNA de volgorde van de aminozuren, en dus welk eiwit ontstaat.</p>
+<div class="sam-figure"><svg viewBox="0 0 320 165" width="100%" role="img" aria-label="Het mRNA wordt in codons van drie basen gelezen; elk codon levert een aminozuur, samen het eiwit">
+<g font-family="sans-serif" font-size="11" text-anchor="middle">
+<text x="160" y="16" font-size="10" fill="#2e6da0">mRNA, gelezen per codon (3 basen)</text>
+<rect x="10" y="24" width="66" height="26" rx="5" fill="#cfe3f5"/><text x="43" y="42" fill="#2e6da0">A U G</text>
+<rect x="82" y="24" width="66" height="26" rx="5" fill="#d8f0dd"/><text x="115" y="42" fill="#2f7d4f">G C U</text>
+<rect x="154" y="24" width="66" height="26" rx="5" fill="#f3e6c0"/><text x="187" y="42" fill="#a6801f">A A G</text>
+<rect x="226" y="24" width="66" height="26" rx="5" fill="#f6ddd3"/><text x="259" y="42" fill="#b5522f">U U C</text>
+<path d="M43 52v22" stroke="#5a7085" stroke-width="2" marker-end="url(#m5c)"/><path d="M115 52v22" stroke="#5a7085" stroke-width="2" marker-end="url(#m5c)"/><path d="M187 52v22" stroke="#5a7085" stroke-width="2" marker-end="url(#m5c)"/><path d="M259 52v22" stroke="#5a7085" stroke-width="2" marker-end="url(#m5c)"/>
+<line x1="43" y1="98" x2="259" y2="98" stroke="#c9a24a" stroke-width="4"/>
+<circle cx="43" cy="98" r="15" fill="#e7d59a" stroke="#c9a24a" stroke-width="2"/><circle cx="115" cy="98" r="15" fill="#e7d59a" stroke="#c9a24a" stroke-width="2"/><circle cx="187" cy="98" r="15" fill="#e7d59a" stroke="#c9a24a" stroke-width="2"/><circle cx="259" cy="98" r="15" fill="#e7d59a" stroke="#c9a24a" stroke-width="2"/>
+<text x="43" y="102" font-size="9" fill="#8a6a1a">az1</text><text x="115" y="102" font-size="9" fill="#8a6a1a">az2</text><text x="187" y="102" font-size="9" fill="#8a6a1a">az3</text><text x="259" y="102" font-size="9" fill="#8a6a1a">az4</text>
+<text x="160" y="132" font-size="10" fill="#a6801f">de aminozuren (az) vormen samen het eiwit</text>
+<text x="160" y="150" font-size="9" fill="#5a7085">1 codon (3 basen) = 1 aminozuur</text>
+</g><defs><marker id="m5c" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0 0l6 3-6 3z" fill="#5a7085"/></marker></defs>
+</svg><div class="sam-figcap">Elk codon van drie basen levert een aminozuur; samen vormen ze het eiwit</div></div>
+<div class="sam-onthoud"><strong>Onthoud:</strong> 1 codon = 3 basen = 1 aminozuur; de codons achter elkaar bepalen de volgorde van de aminozuren in het eiwit.</div>
+</div>
+<div class="sam-chapter">
+<div class="sam-ch-title"><span class="sam-ch-n">4</span> Genexpressie: gen bepaalt kenmerk</div>
 <p>Een gen levert via zijn eiwit een <strong>kenmerk</strong> op. Cellen met hetzelfde DNA kunnen er toch anders uitzien, doordat in elke cel <strong>andere genen tot uiting komen</strong> (genexpressie).</p>
 <div class="sam-figure"><svg viewBox="0 0 320 120" width="100%" role="img" aria-label="Gen leidt tot eiwit dat een kenmerk bepaalt">
 <g font-family="sans-serif" font-size="12" text-anchor="middle">
@@ -244,7 +262,20 @@ Object.assign(SAM_RICH,{
 <div class="sam-onthoud"><strong>Onthoud:</strong> mitose = 2 identieke cellen, gelijk chromosoomaantal, voor groei en herstel.</div>
 </div>
 <div class="sam-chapter">
-<div class="sam-ch-title"><span class="sam-ch-n">3</span> Meiose: vier cellen met het halve aantal</div>
+<div class="sam-ch-title"><span class="sam-ch-n">3</span> De fasen van de mitose</div>
+<p>De mitose verloopt in vier fasen. <strong>Profase:</strong> de chromosomen worden zichtbaar (opgerold) en het kernmembraan verdwijnt. <strong>Metafase:</strong> de chromosomen gaan in het midden (de equator) op een rij staan. <strong>Anafase:</strong> de chromosoomhelften worden naar de tegenovergestelde polen getrokken. <strong>Telofase:</strong> bij elke pool vormt zich een nieuwe kern, daarna deelt de cel in tweeen (celdeling).</p>
+<div class="sam-figure"><svg viewBox="0 0 320 130" width="100%" role="img" aria-label="De vier fasen van de mitose: profase, metafase, anafase en telofase">
+<g font-family="sans-serif" font-size="10" text-anchor="middle">
+<circle cx="44" cy="52" r="27" fill="#eef3f8" stroke="#9db4c9" stroke-width="2"/><rect x="34" y="44" width="5" height="16" rx="2" fill="#8f74b8"/><rect x="52" y="46" width="5" height="16" rx="2" fill="#c96a6a"/><text x="44" y="96" fill="#5a7085">Profase</text><text x="44" y="110" font-size="8" fill="#8394a3">chromosomen zichtbaar</text>
+<circle cx="122" cy="52" r="27" fill="#eef3f8" stroke="#9db4c9" stroke-width="2"/><line x1="122" y1="28" x2="122" y2="76" stroke="#b7c4cf" stroke-width="1" stroke-dasharray="3 3"/><rect x="115" y="42" width="5" height="16" rx="2" fill="#8f74b8"/><rect x="124" y="42" width="5" height="16" rx="2" fill="#c96a6a"/><text x="122" y="96" fill="#5a7085">Metafase</text><text x="122" y="110" font-size="8" fill="#8394a3">in het midden op een rij</text>
+<circle cx="200" cy="52" r="27" fill="#eef3f8" stroke="#9db4c9" stroke-width="2"/><rect x="182" y="44" width="5" height="15" rx="2" fill="#8f74b8"/><rect x="213" y="44" width="5" height="15" rx="2" fill="#c96a6a"/><path d="M192 52h-14" stroke="#b5522f" stroke-width="1.5" marker-end="url(#m6f)"/><path d="M208 52h14" stroke="#b5522f" stroke-width="1.5" marker-end="url(#m6f)"/><text x="200" y="96" fill="#5a7085">Anafase</text><text x="200" y="110" font-size="8" fill="#8394a3">helften uit elkaar</text>
+<circle cx="268" cy="52" r="19" fill="#dcefe2" stroke="#4ea36b" stroke-width="2"/><circle cx="300" cy="52" r="19" fill="#dcefe2" stroke="#4ea36b" stroke-width="2"/><rect x="266" y="46" width="4" height="12" rx="2" fill="#8f74b8"/><rect x="298" y="46" width="4" height="12" rx="2" fill="#c96a6a"/><text x="284" y="96" fill="#5a7085">Telofase</text><text x="284" y="110" font-size="8" fill="#8394a3">twee nieuwe cellen</text>
+</g><defs><marker id="m6f" markerWidth="7" markerHeight="7" refX="5" refY="3" orient="auto"><path d="M0 0l5 3-5 3z" fill="#b5522f"/></marker></defs>
+</svg><div class="sam-figcap">Profase -> Metafase -> Anafase -> Telofase: van zichtbare chromosomen tot twee nieuwe cellen</div></div>
+<div class="sam-onthoud"><strong>Onthoud (PMAT):</strong> Profase (zichtbaar), Metafase (in het midden), Anafase (uit elkaar), Telofase (twee kernen, cel deelt).</div>
+</div>
+<div class="sam-chapter">
+<div class="sam-ch-title"><span class="sam-ch-n">4</span> Meiose: vier cellen met het halve aantal</div>
 <p>Bij <strong>meiose</strong> ontstaan uit één cel <strong>vier geslachtscellen</strong> met het <strong>halve</strong> aantal chromosomen (van 2n naar n). Bij de <strong>bevruchting</strong> (n + n) wordt het aantal weer 2n. Meiose zorgt ook voor <strong>variatie</strong> tussen nakomelingen.</p>
 <div class="sam-figure"><svg viewBox="0 0 320 130" width="100%" role="img" aria-label="Meiose: een cel deelt in vier geslachtscellen met het halve aantal chromosomen">
 <g font-family="sans-serif" font-size="10" text-anchor="middle">
