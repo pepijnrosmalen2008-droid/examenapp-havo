@@ -477,7 +477,27 @@ var VAKKEN = [
     "nSv": 116,
     "nOe": 6,
     "nBeg": 27,
-    "hasSam": true
+    "hasSam": true,
+    "leerdoelen": [
+     {
+      "id": "O1",
+      "naam": "Zenuwstelsel en prikkelgeleiding",
+      "beschrijving": "Gouden-standaardmodule bi.O.1: neuronen en de impuls, de synaps, de reflexboog, en het verschil tussen regeling door zenuwen en door hormonen.",
+      "ceStatus": "CE",
+      "onderwerpen": [
+       "Neuron: dendriet, cellichaam, axon",
+       "Soorten neuronen (sensorisch/motorisch/schakel)",
+       "De impuls en de synaps",
+       "Reflex en reflexboog",
+       "Centraal zenuwstelsel",
+       "Zenuwstelsel versus hormoonstelsel"
+      ],
+      "nSv": 25,
+      "nOe": 5,
+      "nBeg": 12,
+      "hasSam": true
+     }
+    ]
    },
    {
     "id": "P",

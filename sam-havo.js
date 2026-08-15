@@ -339,6 +339,60 @@ Object.assign(SAM_RICH,{
 </g></svg><div class="sam-figcap">Aa x Aa geeft AA, Aa, Aa, aa: fenotype 3:1, genotype 1:2:1</div></div>
 <div class="sam-onthoud"><strong>Onthoud:</strong> Aa x Aa geeft 3:1 in het fenotype en 1:2:1 in het genotype.</div>
 </div>`,
+'havo_bi_O1':`<div class="sam-intro">Het <strong>zenuwstelsel</strong> vangt prikkels op en regelt daar razendsnel reacties op. Dat gebeurt met <strong>zenuwcellen</strong> die elektrische signalen doorgeven. Hieronder eerst een begrippenlijst, daarna drie hoofdstukjes met beeld.</div>
+<table class="sam-table"><thead><tr><th>Begrip</th><th>Kort</th></tr></thead><tbody>
+<tr><td><strong>Neuron</strong></td><td>een zenuwcel die impulsen (elektrische signalen) geleidt</td></tr>
+<tr><td><strong>Dendriet / axon</strong></td><td>dendriet vangt signalen op, het axon voert de impuls weg</td></tr>
+<tr><td><strong>Impuls</strong></td><td>elektrisch signaal langs de zenuwcel</td></tr>
+<tr><td><strong>Sensorisch neuron</strong></td><td>voert prikkels van een zintuig naar binnen</td></tr>
+<tr><td><strong>Motorisch neuron</strong></td><td>stuurt een signaal naar een spier of klier</td></tr>
+<tr><td><strong>Synaps</strong></td><td>contactplek tussen twee zenuwcellen (chemische overdracht)</td></tr>
+<tr><td><strong>Reflex</strong></td><td>snelle, onbewuste reactie via het ruggenmerg</td></tr>
+<tr><td><strong>Centraal zenuwstelsel</strong></td><td>de hersenen en het ruggenmerg</td></tr>
+</tbody></table>
+<div class="sam-chapter">
+<div class="sam-ch-title"><span class="sam-ch-n">1</span> De zenuwcel (neuron)</div>
+<p>Een <strong>neuron</strong> vangt signalen op met zijn <strong>dendrieten</strong>, verwerkt ze in het <strong>cellichaam</strong> en stuurt de <strong>impuls</strong> via het lange <strong>axon</strong> door naar de volgende cel. De impuls is een <strong>elektrisch</strong> signaal.</p>
+<div class="sam-figure"><svg viewBox="0 0 320 150" width="100%" role="img" aria-label="Een neuron met dendrieten, cellichaam en een lang axon">
+<g font-family="sans-serif" font-size="10" text-anchor="middle">
+<g stroke="#5a7085" stroke-width="3" fill="none" stroke-linecap="round"><path d="M60 75l-30-24M60 75l-32-2M60 75l-28 24"/></g>
+<circle cx="76" cy="75" r="20" fill="#8f74b8"/><circle cx="76" cy="75" r="8" fill="#5a3f82"/>
+<line x1="96" y1="75" x2="256" y2="75" stroke="#5a7085" stroke-width="6" stroke-linecap="round"/>
+<g stroke="#5a7085" stroke-width="3" fill="none" stroke-linecap="round"><path d="M256 75l24-16M256 75l26 0M256 75l24 16"/></g>
+<path d="M120 60h60" stroke="#d9a441" stroke-width="2.5" fill="none" marker-end="url(#o1a)"/><text x="150" y="52" fill="#b5772a">impuls</text>
+<text x="30" y="112" fill="#5a3f82">dendrieten</text><text x="88" y="112" fill="#5a3f82">cellichaam</text><text x="185" y="94" fill="#5a7085">axon</text>
+</g><defs><marker id="o1a" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0 0l6 3-6 3z" fill="#d9a441"/></marker></defs>
+</svg><div class="sam-figcap">De impuls gaat via de dendrieten naar het cellichaam en via het axon weg</div></div>
+<div class="sam-onthoud"><strong>Onthoud:</strong> dendriet vangt op, cellichaam verwerkt, axon voert de impuls weg.</div>
+</div>
+<div class="sam-chapter">
+<div class="sam-ch-title"><span class="sam-ch-n">2</span> De synaps</div>
+<p>Tussen twee zenuwcellen zit een kleine ruimte: de <strong>synaps</strong>. Daar springt het elektrische signaal niet over, maar geeft de zendende cel <strong>neurotransmitters</strong> af (chemisch). Alleen de ontvangende cel vangt ze op, daarom gaat het signaal maar <strong>een kant op</strong>.</p>
+<div class="sam-figure"><svg viewBox="0 0 320 140" width="100%" role="img" aria-label="Twee zenuwcellen met een synaps waar neurotransmitters het signaal in een richting overbrengen">
+<g font-family="sans-serif" font-size="10" text-anchor="middle">
+<line x1="20" y1="60" x2="130" y2="60" stroke="#5a7085" stroke-width="6" stroke-linecap="round"/><path d="M130 44a20 20 0 0 1 0 32z" fill="#8f74b8"/>
+<circle cx="168" cy="52" r="4" fill="#4ea36b"/><circle cx="182" cy="64" r="4" fill="#4ea36b"/><circle cx="170" cy="72" r="4" fill="#4ea36b"/>
+<path d="M205 44a20 20 0 0 0 0 32z" fill="#c96a6a"/><line x1="225" y1="60" x2="300" y2="60" stroke="#5a7085" stroke-width="6" stroke-linecap="round"/>
+<path d="M148 60h48" stroke="#2e7d9a" stroke-width="2.5" fill="none" marker-end="url(#o1s)"/>
+<text x="70" y="92" fill="#5a3f82">cel A (zender)</text><text x="265" y="92" fill="#8f3f3f">cel B (ontvanger)</text><text x="182" y="34" fill="#2f7d4f">neurotransmitters</text>
+</g><defs><marker id="o1s" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0 0l6 3-6 3z" fill="#2e7d9a"/></marker></defs>
+</svg><div class="sam-figcap">In de synaps dragen neurotransmitters het signaal van cel A naar cel B over</div></div>
+<div class="sam-onthoud"><strong>Onthoud:</strong> langs de zenuw elektrisch, in de synaps chemisch, en maar een kant op.</div>
+</div>
+<div class="sam-chapter">
+<div class="sam-ch-title"><span class="sam-ch-n">3</span> De reflexboog</div>
+<p>Een <strong>reflex</strong> is een snelle, onbewuste reactie. Het signaal loopt via de <strong>reflexboog</strong>: een <strong>receptor</strong> vangt de prikkel op, een <strong>sensorisch</strong> neuron brengt hem naar het <strong>ruggenmerg</strong>, een <strong>schakelcel</strong> geeft hem door aan een <strong>motorisch</strong> neuron, en dat laat de <strong>effector</strong> (spier) reageren, buiten de hersenen om.</p>
+<div class="sam-figure"><svg viewBox="0 0 320 150" width="100%" role="img" aria-label="De reflexboog van receptor via het ruggenmerg naar de spier">
+<g font-family="sans-serif" font-size="9" text-anchor="middle">
+<circle cx="40" cy="110" r="16" fill="#c96a6a"/><text x="40" y="113" fill="#fff">huid</text><text x="40" y="140" fill="#8f3f3f">receptor</text>
+<rect x="140" y="30" width="40" height="80" rx="10" fill="#8f74b8"/><text x="160" y="70" fill="#fff" transform="rotate(-90 160 70)">ruggenmerg</text>
+<circle cx="280" cy="110" r="16" fill="#4ea36b"/><text x="280" y="113" fill="#fff">spier</text><text x="280" y="140" fill="#2f7d4f">effector</text>
+<path d="M55 104q45 -40 84 -40" stroke="#2e6da0" stroke-width="2.5" fill="none" marker-end="url(#o1r)"/><text x="92" y="58" fill="#2e6da0">sensorisch</text>
+<path d="M181 64q45 0 84 40" stroke="#b5522f" stroke-width="2.5" fill="none" marker-end="url(#o1r2)"/><text x="232" y="58" fill="#b5522f">motorisch</text>
+</g><defs><marker id="o1r" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0 0l6 3-6 3z" fill="#2e6da0"/></marker><marker id="o1r2" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0 0l6 3-6 3z" fill="#b5522f"/></marker></defs>
+</svg><div class="sam-figcap">Reflexboog: receptor -> sensorisch neuron -> ruggenmerg -> motorisch neuron -> effector</div></div>
+<div class="sam-onthoud"><strong>Onthoud:</strong> een reflex loopt via het ruggenmerg (niet de hersenen) en is daardoor supersnel.</div>
+</div>`,
 'havo_bi_M4':`<div class="sam-intro">Planten <strong>maken hun eigen voedsel</strong>. Met <strong>fotosynthese</strong> bouwen ze glucose op uit CO2 en water, met <strong>licht</strong> als energiebron. Alle cellen <strong>verbranden</strong> die glucose weer met zuurstof (<strong>celademhaling</strong>) om er energie uit te halen. Hieronder eerst een begrippenlijst, daarna drie korte hoofdstukjes met beeld.</div>
 <table class="sam-table"><thead><tr><th>Begrip</th><th>Kort</th></tr></thead><tbody>
 <tr><td><strong>Fotosynthese</strong></td><td>glucose maken uit CO2 + water met licht (in de bladgroenkorrel)</td></tr>
