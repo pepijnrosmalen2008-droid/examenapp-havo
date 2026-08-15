@@ -395,6 +395,58 @@ Object.assign(SAM_RICH,{
 </svg><div class="sam-figcap">Reflexboog: receptor -> sensorisch neuron -> ruggenmerg -> motorisch neuron -> effector</div></div>
 <div class="sam-onthoud"><strong>Onthoud:</strong> een reflex loopt via het ruggenmerg (niet de hersenen) en is daardoor supersnel.</div>
 </div>`,
+'havo_bi_O2':`<div class="sam-intro">Naast de zenuwen regelt je lichaam ook met <strong>hormonen</strong>. Dat zijn stoffen die een <strong>hormoonklier</strong> aan het <strong>bloed</strong> afgeeft. Hormoonregeling is <strong>trager</strong> dan zenuwregeling, maar werkt <strong>langer door</strong>. Hieronder eerst een begrippenlijst, daarna drie hoofdstukjes met beeld.</div>
+<table class="sam-table"><thead><tr><th>Begrip</th><th>Kort</th></tr></thead><tbody>
+<tr><td><strong>Hormoon</strong></td><td>een stof die een klier aan het bloed afgeeft om een proces te regelen</td></tr>
+<tr><td><strong>Hormoonklier</strong></td><td>een orgaan dat hormonen maakt (bijv. alvleesklier, bijnier)</td></tr>
+<tr><td><strong>Doelorgaan</strong></td><td>het orgaan waar een hormoon werkt (het heeft de juiste receptoren)</td></tr>
+<tr><td><strong>Insuline</strong></td><td>verlaagt de bloedsuikerspiegel (glucose de cellen in, lever slaat glycogeen op)</td></tr>
+<tr><td><strong>Glucagon</strong></td><td>verhoogt de bloedsuikerspiegel (lever zet glycogeen om in glucose)</td></tr>
+<tr><td><strong>Alvleesklier</strong></td><td>maakt insuline en glucagon</td></tr>
+<tr><td><strong>Adrenaline</strong></td><td>vecht-of-vluchthormoon uit de bijnier (hart sneller, meer glucose)</td></tr>
+<tr><td><strong>Antagonisten</strong></td><td>twee hormonen met tegengestelde werking (insuline en glucagon)</td></tr>
+<tr><td><strong>Glycogeen</strong></td><td>opslagvorm van glucose in de lever en spieren</td></tr>
+<tr><td><strong>Diabetes</strong></td><td>ziekte waarbij de bloedsuiker niet goed geregeld wordt (te weinig insuline)</td></tr>
+</tbody></table>
+<div class="sam-chapter">
+<div class="sam-ch-title"><span class="sam-ch-n">1</span> Hormonen reizen via het bloed</div>
+<p>Een <strong>hormoonklier</strong> geeft een hormoon af aan het <strong>bloed</strong>. Zo komt het overal, maar het werkt alleen op zijn <strong>doelorgaan</strong>: het orgaan met de juiste <strong>receptoren</strong>. Omdat het via het bloed gaat, is hormoonregeling <strong>traag</strong>, maar de werking houdt <strong>lang</strong> aan.</p>
+<div class="sam-figure"><svg viewBox="0 0 320 150" width="100%" role="img" aria-label="Een hormoonklier geeft een hormoon af aan het bloed dat naar het doelorgaan reist">
+<g font-family="sans-serif" font-size="10" text-anchor="middle">
+<circle cx="46" cy="70" r="22" fill="#c98a3f"/><text x="46" y="73" fill="#fff">klier</text><text x="46" y="112" fill="#9a6524">hormoonklier</text>
+<rect x="80" y="62" width="160" height="16" rx="8" fill="#c96a6a"/><text x="160" y="52" fill="#8f3f3f">bloedbaan</text>
+<circle cx="110" cy="70" r="5" fill="#3f7d9a"/><circle cx="150" cy="70" r="5" fill="#3f7d9a"/><circle cx="190" cy="70" r="5" fill="#3f7d9a"/><text x="150" y="98" fill="#2e6d8a">hormoon</text>
+<circle cx="274" cy="70" r="22" fill="#4ea36b"/><text x="274" y="73" fill="#fff">orgaan</text><text x="274" y="112" fill="#2f7d4f">doelorgaan</text>
+</g></svg><div class="sam-figcap">De klier geeft het hormoon aan het bloed af, dat het naar het doelorgaan brengt</div></div>
+<div class="sam-onthoud"><strong>Onthoud:</strong> hormonen gaan via het bloed, werken alleen op hun doelorgaan, traag maar langdurig.</div>
+</div>
+<div class="sam-chapter">
+<div class="sam-ch-title"><span class="sam-ch-n">2</span> De bloedsuiker in balans</div>
+<p>De <strong>alvleesklier</strong> houdt je <strong>bloedsuiker</strong> stabiel met twee tegengestelde hormonen (<strong>antagonisten</strong>). Is de bloedsuiker <strong>hoog</strong> (na eten), dan komt <strong>insuline</strong> vrij: glucose gaat de cellen in en de lever slaat het op als <strong>glycogeen</strong>. Is de bloedsuiker <strong>laag</strong>, dan komt <strong>glucagon</strong> vrij: de lever zet glycogeen weer om in glucose.</p>
+<div class="sam-figure"><svg viewBox="0 0 320 150" width="100%" role="img" aria-label="Insuline verlaagt en glucagon verhoogt de bloedsuikerspiegel">
+<g font-family="sans-serif" font-size="10" text-anchor="middle">
+<line x1="30" y1="75" x2="290" y2="75" stroke="#9aa7b3" stroke-width="1.5" stroke-dasharray="4 3"/><text x="300" y="79" text-anchor="end" fill="#6b7885">normaal</text>
+<rect x="70" y="34" width="34" height="41" rx="4" fill="#3f8fc9"/><text x="87" y="26" fill="#2e6d9a">hoog</text>
+<path d="M120 50h40" stroke="#3f8fc9" stroke-width="2.5" fill="none" marker-end="url(#o2i)"/><text x="140" y="42" fill="#2e6d9a">insuline</text>
+<rect x="216" y="75" width="34" height="41" rx="4" fill="#c96a6a"/><text x="233" y="130" fill="#8f3f3f">laag</text>
+<path d="M200 100h-40" stroke="#c96a6a" stroke-width="2.5" fill="none" marker-end="url(#o2g)"/><text x="180" y="118" fill="#8f3f3f">glucagon</text>
+</g><defs><marker id="o2i" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0 0l6 3-6 3z" fill="#3f8fc9"/></marker><marker id="o2g" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0 0l6 3-6 3z" fill="#c96a6a"/></marker></defs>
+</svg><div class="sam-figcap">Insuline duwt een hoge bloedsuiker omlaag, glucagon tilt een lage weer omhoog</div></div>
+<div class="sam-onthoud"><strong>Onthoud:</strong> insuline verlaagt, glucagon verhoogt. Ze zijn elkaars tegenpolen.</div>
+</div>
+<div class="sam-chapter">
+<div class="sam-ch-title"><span class="sam-ch-n">3</span> Adrenaline: vecht of vlucht</div>
+<p>Bij <strong>schrik</strong> of <strong>inspanning</strong> geeft de <strong>bijnier</strong> snel <strong>adrenaline</strong> af. Je lichaam maakt zich klaar om te <strong>vechten of vluchten</strong>: je <strong>hart klopt sneller</strong>, je <strong>ademt sneller</strong> en er komt extra <strong>glucose</strong> vrij als brandstof voor de spieren.</p>
+<div class="sam-figure"><svg viewBox="0 0 320 150" width="100%" role="img" aria-label="Adrenaline uit de bijnier laat het hart sneller kloppen en maakt glucose vrij">
+<g font-family="sans-serif" font-size="10" text-anchor="middle">
+<path d="M40 60c0-14 22-14 22 0 0 12-22 24-22 24s-22-12-22-24c0-14 22-14 22 0z" fill="#c96a6a" transform="translate(6 0)"/><text x="46" y="112" fill="#8f3f3f">bijnier</text>
+<path d="M84 62h58" stroke="#d9a441" stroke-width="2.5" fill="none" marker-end="url(#o2a)"/><text x="112" y="54" fill="#b5772a">adrenaline</text>
+<circle cx="180" cy="40" r="4" fill="#8f3f3f"/><circle cx="200" cy="40" r="6" fill="#8f3f3f"/><circle cx="222" cy="40" r="8" fill="#8f3f3f"/><text x="200" y="24" fill="#8f3f3f">hart sneller</text>
+<circle cx="180" cy="90" r="5" fill="#3f8f5f"/><circle cx="200" cy="90" r="5" fill="#3f8f5f"/><circle cx="220" cy="90" r="5" fill="#3f8f5f"/><text x="248" y="94" text-anchor="start" fill="#2f7d4f">meer glucose</text>
+</g><defs><marker id="o2a" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0 0l6 3-6 3z" fill="#d9a441"/></marker></defs>
+</svg><div class="sam-figcap">Adrenaline uit de bijnier: hart en ademhaling omhoog, extra glucose voor de spieren</div></div>
+<div class="sam-onthoud"><strong>Onthoud:</strong> adrenaline = vecht-of-vlucht: snel klaar voor actie, hart sneller en meer brandstof.</div>
+</div>`,
 'havo_bi_M4':`<div class="sam-intro">Planten <strong>maken hun eigen voedsel</strong>. Met <strong>fotosynthese</strong> bouwen ze glucose op uit CO2 en water, met <strong>licht</strong> als energiebron. Alle cellen <strong>verbranden</strong> die glucose weer met zuurstof (<strong>celademhaling</strong>) om er energie uit te halen. Hieronder eerst een begrippenlijst, daarna drie korte hoofdstukjes met beeld.</div>
 <table class="sam-table"><thead><tr><th>Begrip</th><th>Kort</th></tr></thead><tbody>
 <tr><td><strong>Fotosynthese</strong></td><td>glucose maken uit CO2 + water met licht (in de bladgroenkorrel)</td></tr>

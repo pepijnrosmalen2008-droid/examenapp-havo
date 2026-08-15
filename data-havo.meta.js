@@ -497,6 +497,24 @@ var VAKKEN = [
       "nOe": 5,
       "nBeg": 14,
       "hasSam": true
+     },
+     {
+      "id": "O2",
+      "naam": "Hormonale regulatie",
+      "beschrijving": "Gouden-standaardmodule bi.O.2: hormonen als trage, langdurige regeling via het bloed, met insuline, glucagon en adrenaline en de regeling van de bloedsuiker.",
+      "ceStatus": "CE",
+      "onderwerpen": [
+       "Hormoon en hormoonklier",
+       "Regeling via het bloed (traag en langdurig)",
+       "Insuline en glucagon",
+       "Bloedsuikerregeling en glycogeen",
+       "Adrenaline (vecht of vlucht)",
+       "Doelorgaan en receptoren"
+      ],
+      "nSv": 25,
+      "nOe": 5,
+      "nBeg": 12,
+      "hasSam": true
      }
     ]
    },

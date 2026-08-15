@@ -17238,6 +17238,600 @@ var VAKKEN = [
         "u": "Prikkels uit de benen moeten via het ruggenmerg omhoog naar de hersenen om als gevoel te worden waargenomen, en opdrachten voor beweging moeten via het ruggenmerg omlaag naar de beenspieren. Door de beschadiging worden deze zenuwbanen onderbroken: de prikkels bereiken de hersenen niet meer (geen gevoel) en de opdrachten bereiken de spieren niet meer (geen beweging). (Kernpunten: [1] sensorische prikkels bereiken de hersenen niet meer, dus geen gevoel; [2] motorische opdrachten bereiken de spieren niet meer, dus geen beweging.)"
        }
       ]
+     },
+     {
+      "id": "O2",
+      "naam": "Hormonale regulatie",
+      "beschrijving": "Gouden-standaardmodule bi.O.2: hormonen als trage, langdurige regeling via het bloed, met insuline, glucagon en adrenaline en de regeling van de bloedsuiker.",
+      "ceStatus": "CE",
+      "onderwerpen": [
+       "Hormoon en hormoonklier",
+       "Regeling via het bloed (traag en langdurig)",
+       "Insuline en glucagon",
+       "Bloedsuikerregeling en glycogeen",
+       "Adrenaline (vecht of vlucht)",
+       "Doelorgaan en receptoren"
+      ],
+      "sam": "Hormonen zijn chemische boodschapperstoffen die door hormoonklieren worden gemaakt en via het bloed door het lichaam gaan. Ze werken traag maar langdurig, en alleen op doelorganen met de juiste receptoren. De alvleesklier maakt insuline (verlaagt de bloedsuiker door glucose als glycogeen op te slaan) en glucagon (verhoogt de bloedsuiker weer); die twee zijn tegenwerkers en houden samen de bloedsuiker in balans. De bijnier maakt adrenaline, dat het lichaam bij schrik of inspanning klaarmaakt voor actie.",
+      "begrippen": [
+       {
+        "t": "Hormoon",
+        "d": "Chemische boodschapperstof die via het bloed werkt, traag en langdurig."
+       },
+       {
+        "t": "Hormoonklier",
+        "d": "Orgaan dat een hormoon maakt en aan het bloed afgeeft."
+       },
+       {
+        "t": "Bloedsuikerspiegel",
+        "d": "De hoeveelheid glucose (suiker) in het bloed."
+       },
+       {
+        "t": "Insuline",
+        "d": "Hormoon uit de alvleesklier dat de bloedsuiker verlaagt."
+       },
+       {
+        "t": "Glucagon",
+        "d": "Hormoon uit de alvleesklier dat de bloedsuiker verhoogt."
+       },
+       {
+        "t": "Adrenaline",
+        "d": "Hormoon uit de bijnier dat het lichaam klaarmaakt voor actie."
+       },
+       {
+        "t": "Alvleesklier",
+        "d": "Orgaan dat de hormonen insuline en glucagon maakt."
+       },
+       {
+        "t": "Bijnier",
+        "d": "Hormoonklier bij de nier die adrenaline maakt."
+       },
+       {
+        "t": "Glycogeen",
+        "d": "Reservesuiker die in de lever wordt opgeslagen."
+       },
+       {
+        "t": "Doelorgaan",
+        "d": "Orgaan waarop een bepaald hormoon werkt, doordat het de juiste receptoren heeft."
+       },
+       {
+        "t": "Diabetes",
+        "d": "Ziekte waarbij te weinig insuline de bloedsuiker te hoog laat blijven."
+       },
+       {
+        "t": "Antagonisten",
+        "d": "Hormonen die elkaar tegenwerken, zoals insuline en glucagon."
+       }
+      ],
+      "sv": [
+       {
+        "v": "Wat is een hormoon?",
+        "o": [
+         "Een chemische boodschapperstof in het bloed",
+         "Een elektrisch signaal dat langs een zenuwcel wordt geleid",
+         "Een spier die op commando van de hersenen samentrekt",
+         "Een verteringssap dat voedsel in de darm afbreekt"
+        ],
+        "c": 0,
+        "d": 1,
+        "u": "Een hormoon is een chemische boodschapperstof die via het bloed werkt. Koos je 'elektrisch signaal'? Dat is een impuls van een zenuw, niet een hormoon. Onthoud: hormoon = chemische boodschapper via het bloed.",
+        "uo": [
+         "Klopt: een hormoon is een chemische boodschapperstof die via het bloed werkt.",
+         "Een elektrisch signaal langs een zenuwcel is een impuls, geen hormoon.",
+         "Een spier is een effector, geen hormoon.",
+         "Een verteringssap hoort bij de spijsvertering, niet bij de hormonen."
+        ],
+        "uh": "Hormoon = chemische boodschapperstof via het bloed."
+       },
+       {
+        "v": "Waardoor worden hormonen door het lichaam vervoerd?",
+        "o": [
+         "Door de zenuwen als een elektrische impuls",
+         "Door de lucht in de longblaasjes",
+         "Door het bloed",
+         "Door de spieren die samentrekken"
+        ],
+        "c": 2,
+        "d": 1,
+        "u": "Hormonen worden met het bloed door het lichaam vervoerd. Onthoud: hormonen reizen via het bloed, impulsen via de zenuwen.",
+        "uo": [
+         "Zenuwen geleiden impulsen, geen hormonen.",
+         "De longblaasjes zijn voor de gasuitwisseling, niet voor hormoontransport.",
+         "Klopt: hormonen worden met het bloed vervoerd.",
+         "Spieren voeren bewegingen uit, ze vervoeren geen hormonen."
+        ],
+        "uh": "Hormonen reizen via het bloed."
+       },
+       {
+        "v": "Welk orgaan maakt insuline en glucagon?",
+        "o": [
+         "De lever die ook glycogeen opslaat",
+         "De alvleesklier",
+         "De nieren die afvalstoffen uit het bloed filteren",
+         "De schildklier in de hals"
+        ],
+        "c": 1,
+        "d": 1,
+        "u": "De alvleesklier maakt insuline en glucagon. Onthoud: alvleesklier regelt de bloedsuiker met twee hormonen.",
+        "uo": [
+         "De lever slaat glycogeen op, maar maakt insuline en glucagon niet.",
+         "Klopt: de alvleesklier maakt insuline en glucagon.",
+         "De nieren filteren afval, ze maken deze hormonen niet.",
+         "De schildklier maakt een ander hormoon, niet insuline of glucagon."
+        ],
+        "uh": "Alvleesklier maakt insuline en glucagon."
+       },
+       {
+        "v": "Wat doet insuline met de bloedsuikerspiegel?",
+        "o": [
+         "Insuline verhoogt de bloedsuiker flink na het eten",
+         "Insuline heeft geen enkele invloed op de bloedsuiker",
+         "Insuline verandert de suiker in een hormoon",
+         "Insuline verlaagt de bloedsuiker"
+        ],
+        "c": 3,
+        "d": 1,
+        "u": "Insuline verlaagt de bloedsuiker, onder andere door glucose als glycogeen op te laten slaan. Onthoud: insuline omlaag, glucagon omhoog.",
+        "uo": [
+         "Insuline verhoogt de bloedsuiker niet; glucagon doet dat.",
+         "Insuline heeft juist wel invloed: het verlaagt de bloedsuiker.",
+         "Insuline maakt van suiker geen hormoon.",
+         "Klopt: insuline verlaagt de bloedsuiker."
+        ],
+        "uh": "Insuline verlaagt de bloedsuiker."
+       },
+       {
+        "v": "Wat doet glucagon met de bloedsuikerspiegel?",
+        "o": [
+         "Glucagon verhoogt de bloedsuiker",
+         "Glucagon verlaagt de bloedsuiker net als insuline",
+         "Glucagon stopt de bloedsomloop in de lever",
+         "Glucagon maakt van suiker een spiereiwit"
+        ],
+        "c": 0,
+        "d": 1,
+        "u": "Glucagon verhoogt de bloedsuiker door glycogeen weer in glucose om te zetten. Onthoud: glucagon omhoog, insuline omlaag.",
+        "uo": [
+         "Klopt: glucagon verhoogt de bloedsuiker.",
+         "Glucagon verlaagt de suiker niet; dat is juist insuline.",
+         "Glucagon stopt de bloedsomloop niet.",
+         "Glucagon maakt geen spiereiwit van suiker."
+        ],
+        "uh": "Glucagon verhoogt de bloedsuiker."
+       },
+       {
+        "v": "Je bloedsuiker is hoog na een maaltijd. Welk hormoon komt er dan vooral vrij?",
+        "o": [
+         "Adrenaline uit de bijnier bij schrik",
+         "Insuline",
+         "Glucagon dat de suiker juist verhoogt",
+         "Groeihormoon voor de lengtegroei"
+        ],
+        "c": 1,
+        "d": 2,
+        "u": "Bij een hoge bloedsuiker komt insuline vrij om die te verlagen. Onthoud: hoge suiker vraagt om insuline.",
+        "uo": [
+         "Adrenaline hoort bij schrik en inspanning, niet bij een volle maaltijd.",
+         "Klopt: bij een hoge bloedsuiker komt insuline vrij om die te verlagen.",
+         "Glucagon verhoogt de suiker juist; dat is hier niet nodig.",
+         "Groeihormoon regelt de groei, niet de bloedsuiker na een maaltijd."
+        ],
+        "uh": "Hoge bloedsuiker: insuline verlaagt hem."
+       },
+       {
+        "v": "Je hebt lang niet gegeten en je bloedsuiker daalt. Welk hormoon helpt dit herstellen?",
+        "o": [
+         "Insuline dat de suiker juist verlaagt",
+         "Adrenaline dat de spijsvertering remt",
+         "Glucagon",
+         "Het hormoon melatonine voor de slaap"
+        ],
+        "c": 2,
+        "d": 2,
+        "u": "Bij een lage bloedsuiker komt glucagon vrij om die te verhogen. Onthoud: lage suiker vraagt om glucagon.",
+        "uo": [
+         "Insuline verlaagt de suiker juist; dat maakt het probleem erger.",
+         "Adrenaline is niet het hormoon dat een lage bloedsuiker herstelt.",
+         "Klopt: glucagon verhoogt de bloedsuiker weer.",
+         "Melatonine regelt de slaap, niet de bloedsuiker."
+        ],
+        "uh": "Lage bloedsuiker: glucagon verhoogt hem."
+       },
+       {
+        "v": "Welk hormoon komt vooral vrij bij schrik of inspanning?",
+        "o": [
+         "Insuline dat de bloedsuiker verlaagt",
+         "Glucagon uit de alvleesklier",
+         "Het schildklierhormoon voor de stofwisseling",
+         "Adrenaline"
+        ],
+        "c": 3,
+        "d": 1,
+        "u": "Bij schrik of inspanning komt adrenaline vrij, dat het lichaam klaarmaakt voor actie. Onthoud: adrenaline is het vecht-of-vluchthormoon.",
+        "uo": [
+         "Insuline hoort bij het verlagen van de bloedsuiker, niet bij schrik.",
+         "Glucagon verhoogt de suiker, maar is niet het schrikhormoon.",
+         "Het schildklierhormoon regelt de stofwisseling, niet de schrikreactie.",
+         "Klopt: adrenaline komt vrij bij schrik of inspanning."
+        ],
+        "uh": "Adrenaline = vecht-of-vluchthormoon."
+       },
+       {
+        "v": "Wat is een effect van adrenaline?",
+        "o": [
+         "Het hart gaat sneller kloppen",
+         "De spijsvertering wordt juist extra gestimuleerd",
+         "De bloedsuiker daalt sterk tot onder normaal",
+         "Je valt er rustig van in slaap"
+        ],
+        "c": 0,
+        "d": 2,
+        "u": "Adrenaline maakt je klaar voor actie: je hart klopt sneller en er komt meer glucose vrij. Onthoud: adrenaline versnelt het hart en levert energie.",
+        "uo": [
+         "Klopt: door adrenaline gaat het hart sneller kloppen.",
+         "De spijsvertering wordt bij adrenaline juist geremd, niet gestimuleerd.",
+         "De bloedsuiker stijgt bij adrenaline juist, hij daalt niet.",
+         "Van adrenaline word je juist alerter, niet slaperig."
+        ],
+        "uh": "Adrenaline: hart sneller, meer energie klaar."
+       },
+       {
+        "v": "Hoe werkt regeling door hormonen vergeleken met die door zenuwen?",
+        "o": [
+         "Sneller en korter dan de zenuwen",
+         "Trager, maar langduriger",
+         "Precies even snel als de zenuwen",
+         "Alleen tijdens de slaap actief"
+        ],
+        "c": 1,
+        "d": 1,
+        "u": "Hormonen werken trager maar langduriger dan zenuwen. Onthoud: zenuwen snel en kort, hormonen traag en lang.",
+        "uo": [
+         "Hormonen werken juist trager en langer dan zenuwen, niet sneller.",
+         "Klopt: hormonen werken trager, maar hun effect houdt langer aan.",
+         "Hormonen werken niet even snel als zenuwen; ze zijn trager.",
+         "Hormonen werken de hele dag, niet alleen tijdens de slaap."
+        ],
+        "uh": "Hormonen: traag en langdurig."
+       },
+       {
+        "v": "Waarom werkt een hormoon maar op bepaalde organen (doelorganen)?",
+        "o": [
+         "Het hormoon wordt maar naar een orgaan gestuurd door de zenuwen",
+         "Elk orgaan maakt zijn eigen hormoon aan",
+         "Alleen cellen met de juiste receptor reageren erop",
+         "Het bloed gaat maar langs een enkel orgaan"
+        ],
+        "c": 2,
+        "d": 3,
+        "u": "Een hormoon gaat overal met het bloed mee, maar alleen cellen met de juiste receptor reageren erop. Onthoud: de receptor bepaalt op welk orgaan een hormoon werkt.",
+        "uo": [
+         "Hormonen worden niet door zenuwen gestuurd; ze gaan via het bloed.",
+         "Niet elk orgaan maakt hormonen; het gaat om welke cellen reageren.",
+         "Klopt: alleen cellen met de juiste receptor reageren op het hormoon.",
+         "Het bloed gaat langs alle organen, niet maar langs een."
+        ],
+        "uh": "Alleen cellen met de juiste receptor reageren op een hormoon."
+       },
+       {
+        "v": "Hoe heet een orgaan dat hormonen maakt?",
+        "o": [
+         "Een zenuwknoop in het ruggenmerg",
+         "Een bloedvat met kleppen",
+         "Een spiergroep in de arm",
+         "Een hormoonklier"
+        ],
+        "c": 3,
+        "d": 1,
+        "u": "Een orgaan dat hormonen maakt en aan het bloed afgeeft, heet een hormoonklier. Onthoud: hormoonklieren maken hormonen.",
+        "uo": [
+         "Een zenuwknoop hoort bij het zenuwstelsel, niet bij hormonen.",
+         "Een bloedvat vervoert bloed, het maakt geen hormonen.",
+         "Een spiergroep beweegt, hij maakt geen hormonen.",
+         "Klopt: een hormoonklier maakt hormonen."
+        ],
+        "uh": "Hormoonklier = orgaan dat hormonen maakt."
+       },
+       {
+        "v": "Iemand maakt te weinig insuline aan. Wat gebeurt er met de bloedsuiker?",
+        "o": [
+         "Die blijft te hoog",
+         "Die daalt tot gevaarlijk lage waarden",
+         "Die verandert helemaal niet meer",
+         "Die wordt door de zenuwen verlaagd"
+        ],
+        "c": 0,
+        "d": 2,
+        "u": "Zonder genoeg insuline wordt de bloedsuiker niet verlaagd en blijft die te hoog: dat is diabetes. Onthoud: te weinig insuline betekent een te hoge bloedsuiker.",
+        "uo": [
+         "Klopt: zonder genoeg insuline blijft de bloedsuiker te hoog.",
+         "De bloedsuiker daalt juist niet; hij blijft te hoog.",
+         "De bloedsuiker verandert wel: zonder insuline blijft hij te hoog.",
+         "Zenuwen verlagen de bloedsuiker niet; dat doet insuline."
+        ],
+        "uh": "Te weinig insuline: bloedsuiker blijft te hoog (diabetes)."
+       },
+       {
+        "v": "Iemand met diabetes spuit insuline na een suikerrijke maaltijd. Waarom?",
+        "o": [
+         "Om de bloedsuiker juist verder te verhogen",
+         "Om de hoge bloedsuiker te verlagen",
+         "Om meer adrenaline te laten vrijkomen",
+         "Om de spijsvertering sneller te maken"
+        ],
+        "c": 1,
+        "d": 3,
+        "u": "Na een suikerrijke maaltijd stijgt de bloedsuiker; met insuline wordt die weer verlaagd omdat het eigen lichaam te weinig insuline maakt. Onthoud: insuline spuiten verlaagt de hoge bloedsuiker.",
+        "uo": [
+         "Insuline spuiten verhoogt de suiker niet; het verlaagt hem juist.",
+         "Klopt: de gespoten insuline verlaagt de hoge bloedsuiker.",
+         "Insuline laat geen adrenaline vrijkomen.",
+         "Insuline versnelt de spijsvertering niet; het regelt de bloedsuiker."
+        ],
+        "uh": "Insuline spuiten verlaagt de te hoge bloedsuiker."
+       },
+       {
+        "v": "Insuline en glucagon werken tegengesteld. Wat betekent dat?",
+        "o": [
+         "Ze doen allebei precies hetzelfde met de bloedsuiker",
+         "Ze worden allebei alleen in de lever gemaakt",
+         "De een verlaagt en de ander verhoogt de bloedsuiker",
+         "Ze werken allebei alleen tijdens het slapen"
+        ],
+        "c": 2,
+        "d": 3,
+        "u": "Tegengesteld betekent hier: insuline verlaagt de bloedsuiker en glucagon verhoogt hem. Samen houden ze de suiker in balans. Onthoud: insuline omlaag, glucagon omhoog: tegenwerkers.",
+        "uo": [
+         "Ze doen niet hetzelfde; ze werken juist tegengesteld.",
+         "Ze worden in de alvleesklier gemaakt, niet in de lever.",
+         "Klopt: de een verlaagt en de ander verhoogt de bloedsuiker.",
+         "Ze werken de hele dag, niet alleen tijdens het slapen."
+        ],
+        "uh": "Insuline verlaagt, glucagon verhoogt: tegenwerkers."
+       },
+       {
+        "v": "Waar wordt adrenaline gemaakt?",
+        "o": [
+         "In de alvleesklier bij de maag",
+         "In de schildklier in je hals",
+         "In de lever naast de maag",
+         "In de bijnier"
+        ],
+        "c": 3,
+        "d": 1,
+        "u": "Adrenaline wordt gemaakt in de bijnier. Onthoud: de bijnier zit op de nier en maakt adrenaline.",
+        "uo": [
+         "De alvleesklier maakt insuline en glucagon, geen adrenaline.",
+         "De schildklier maakt een ander hormoon, geen adrenaline.",
+         "De lever slaat glycogeen op, maar maakt geen adrenaline.",
+         "Klopt: adrenaline wordt in de bijnier gemaakt."
+        ],
+        "uh": "Adrenaline komt uit de bijnier."
+       },
+       {
+        "v": "Wat is glycogeen?",
+        "o": [
+         "Opgeslagen reservesuiker in de lever",
+         "Een hormoon dat de bloedsuiker verhoogt",
+         "Een zenuwcel die suiker doorgeeft",
+         "Een afvalstof die de nieren uitfilteren"
+        ],
+        "c": 0,
+        "d": 1,
+        "u": "Glycogeen is reservesuiker die in de lever wordt opgeslagen. Onthoud: insuline slaat glucose op als glycogeen, glucagon haalt het er weer uit.",
+        "uo": [
+         "Klopt: glycogeen is opgeslagen reservesuiker in de lever.",
+         "Glycogeen is een opslagstof, geen hormoon.",
+         "Glycogeen is geen zenuwcel.",
+         "Glycogeen is geen afvalstof; het is reservesuiker."
+        ],
+        "uh": "Glycogeen = reservesuiker in de lever."
+       },
+       {
+        "v": "Insuline zorgt ervoor dat de lever glucose omzet in welke stof?",
+        "o": [
+         "nog meer losse glucose in het bloed",
+         "glycogeen",
+         "adrenaline voor de spieren",
+         "een verteringssap voor de darm"
+        ],
+        "c": 1,
+        "d": 2,
+        "u": "Insuline laat de lever glucose opslaan als glycogeen, waardoor de bloedsuiker daalt. Onthoud: insuline zet glucose om in glycogeen.",
+        "uo": [
+         "Insuline maakt niet meer losse glucose; het slaat glucose juist op.",
+         "Klopt: de lever zet glucose onder invloed van insuline om in glycogeen.",
+         "Insuline maakt geen adrenaline aan.",
+         "Een verteringssap heeft hier niets mee te maken."
+        ],
+        "uh": "Insuline: glucose wordt glycogeen (opslag)."
+       },
+       {
+        "v": "Bij glucagon zet de lever glycogeen juist weer om in welke stof?",
+        "o": [
+         "een eiwit voor de spieropbouw",
+         "insuline dat de suiker verlaagt",
+         "glucose",
+         "vet dat wordt opgeslagen"
+        ],
+        "c": 2,
+        "d": 2,
+        "u": "Glucagon laat de lever glycogeen weer omzetten in glucose, waardoor de bloedsuiker stijgt. Onthoud: glucagon haalt glucose uit het opgeslagen glycogeen.",
+        "uo": [
+         "Er ontstaat geen spiereiwit; het glycogeen wordt weer glucose.",
+         "Glucagon maakt geen insuline aan.",
+         "Klopt: glucagon zet glycogeen weer om in glucose.",
+         "Er wordt geen vet gemaakt; het glycogeen wordt glucose."
+        ],
+        "uh": "Glucagon: glycogeen wordt weer glucose."
+       },
+       {
+        "v": "Bij schrik komt er meer glucose vrij en gaat je hart sneller. Welk hormoon regelt dit?",
+        "o": [
+         "Insuline dat de bloedsuiker juist verlaagt",
+         "Glucagon uit de schildklier",
+         "Het slaaphormoon melatonine",
+         "Adrenaline"
+        ],
+        "c": 3,
+        "d": 3,
+        "u": "Adrenaline maakt bij schrik meer glucose vrij en laat het hart sneller kloppen, klaar voor actie. Onthoud: adrenaline levert snel energie en versnelt het hart.",
+        "uo": [
+         "Insuline verlaagt de bloedsuiker juist; dat past niet bij schrik.",
+         "Glucagon komt uit de alvleesklier, niet uit de schildklier, en is niet het schrikhormoon.",
+         "Melatonine regelt de slaap, niet de schrikreactie.",
+         "Klopt: adrenaline regelt de snelle reactie bij schrik."
+        ],
+        "uh": "Adrenaline: bij schrik meer energie en sneller hart."
+       },
+       {
+        "v": "Waarom voel je een hormoon niet meteen, maar wel lang?",
+        "o": [
+         "Het gaat traag via het bloed en werkt lang door",
+         "Het gaat als een snelle vonk door de zenuwen",
+         "Het werkt maar heel even, net als een reflex",
+         "Het wordt meteen weer afgebroken in de lever"
+        ],
+        "c": 0,
+        "d": 2,
+        "u": "Een hormoon reist traag met het bloed en blijft daarna nog een tijd werken. Onthoud: hormonen zijn traag op gang maar langdurig.",
+        "uo": [
+         "Klopt: een hormoon gaat traag via het bloed en werkt lang door.",
+         "Een snelle vonk door de zenuwen hoort bij een impuls, niet bij een hormoon.",
+         "Een hormoon werkt juist lang, niet heel even zoals een reflex.",
+         "Een hormoon wordt niet meteen afgebroken; het werkt langdurig."
+        ],
+        "uh": "Hormoon: traag op gang, lang werkzaam."
+       },
+       {
+        "v": "Welke uitspraak over hormonen klopt?",
+        "o": [
+         "Ze worden via de zenuwen als impuls verstuurd",
+         "Ze worden via het bloed vervoerd",
+         "Ze werken alleen op de spier die ze aanraakt",
+         "Ze worden in de longen gemaakt bij het ademen"
+        ],
+        "c": 1,
+        "d": 1,
+        "u": "Hormonen worden via het bloed vervoerd naar hun doelorganen. Onthoud: hormonen reizen door het bloed.",
+        "uo": [
+         "Impulsen gaan via de zenuwen; hormonen gaan via het bloed.",
+         "Klopt: hormonen worden via het bloed vervoerd.",
+         "Hormonen raken geen spier aan; ze werken via receptoren op doelcellen.",
+         "Hormonen worden door hormoonklieren gemaakt, niet in de longen."
+        ],
+        "uh": "Hormonen worden via het bloed vervoerd."
+       },
+       {
+        "v": "Waarom is de alvleesklier belangrijk voor de bloedsuiker?",
+        "o": [
+         "Hij pompt het bloed met suiker rond",
+         "Hij filtert de suiker uit het bloed weg",
+         "Hij maakt insuline en glucagon",
+         "Hij slaat alle suiker op als spierweefsel"
+        ],
+        "c": 2,
+        "d": 2,
+        "u": "De alvleesklier maakt insuline en glucagon, de twee hormonen die de bloedsuiker regelen. Onthoud: de alvleesklier stuurt de bloedsuiker met twee tegenwerkende hormonen.",
+        "uo": [
+         "Het hart pompt het bloed rond, niet de alvleesklier.",
+         "De nieren filteren het bloed, de alvleesklier doet dat niet.",
+         "Klopt: de alvleesklier maakt insuline en glucagon.",
+         "Suiker wordt als glycogeen in de lever opgeslagen, niet als spierweefsel."
+        ],
+        "uh": "Alvleesklier maakt insuline en glucagon voor de bloedsuiker."
+       },
+       {
+        "v": "Welk hormoon verhoogt de bloedsuiker?",
+        "o": [
+         "Insuline uit de alvleesklier",
+         "Het schildklierhormoon",
+         "Melatonine voor de nachtrust",
+         "Glucagon"
+        ],
+        "c": 3,
+        "d": 1,
+        "u": "Glucagon verhoogt de bloedsuiker. Onthoud: glucagon omhoog, insuline omlaag.",
+        "uo": [
+         "Insuline verlaagt de bloedsuiker juist.",
+         "Het schildklierhormoon regelt de stofwisseling, niet direct de bloedsuiker.",
+         "Melatonine regelt de slaap.",
+         "Klopt: glucagon verhoogt de bloedsuiker."
+        ],
+        "uh": "Glucagon verhoogt de bloedsuiker."
+       },
+       {
+        "v": "Waarom werken insuline en glucagon samen goed?",
+        "o": [
+         "Ze houden samen de bloedsuiker in balans",
+         "Ze verhogen allebei tegelijk de bloedsuiker",
+         "Ze verlagen allebei tegelijk de bloedsuiker",
+         "Ze schakelen de bloedsomloop om de beurt uit"
+        ],
+        "c": 0,
+        "d": 2,
+        "u": "Doordat insuline verlaagt en glucagon verhoogt, houden ze de bloedsuiker samen netjes in balans. Onthoud: twee tegenwerkers samen zorgen voor een stabiele bloedsuiker.",
+        "uo": [
+         "Klopt: samen houden ze de bloedsuiker in balans.",
+         "Ze verhogen niet allebei; insuline verlaagt juist.",
+         "Ze verlagen niet allebei; glucagon verhoogt juist.",
+         "Ze schakelen de bloedsomloop niet uit."
+        ],
+        "uh": "Insuline en glucagon houden samen de bloedsuiker in balans."
+       }
+      ],
+      "oe": [
+       {
+        "bron": "Bloedsuiker na het eten",
+        "ctx": "Na een maaltijd met veel suiker stijgt de hoeveelheid glucose in het bloed. Bij een gezond persoon zakt de bloedsuiker daarna binnen een uur weer naar een normale waarde.",
+        "v": "Leg uit welk hormoon de bloedsuiker na de maaltijd weer laat dalen en hoe dat hormoon dat doet.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "Na de maaltijd geeft de alvleesklier insuline af. Insuline zorgt ervoor dat lichaamscellen glucose opnemen en dat de lever glucose opslaat als glycogeen. Daardoor daalt de hoeveelheid glucose in het bloed weer naar normaal. (Kernpunten: [1] insuline uit de alvleesklier wordt afgegeven; [2] insuline laat cellen glucose opnemen en de lever glucose als glycogeen opslaan, waardoor de bloedsuiker daalt.)"
+       },
+       {
+        "bron": "Diabetes",
+        "ctx": "Bij iemand met diabetes maakt de alvleesklier te weinig insuline aan. Na een maaltijd blijft de bloedsuiker van deze persoon veel te hoog. De persoon spuit daarom zelf insuline.",
+        "v": "Verklaar waarom de bloedsuiker zonder insuline te hoog blijft en waarom het spuiten van insuline helpt.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "Insuline is nodig om de bloedsuiker te verlagen. Bij te weinig insuline nemen de cellen te weinig glucose op en slaat de lever te weinig glucose op als glycogeen, waardoor de bloedsuiker te hoog blijft. Door insuline te spuiten wordt die taak overgenomen: de cellen nemen weer glucose op en de bloedsuiker daalt. (Kernpunten: [1] zonder insuline wordt de glucose niet opgenomen/opgeslagen, dus de bloedsuiker blijft hoog; [2] gespoten insuline verlaagt de bloedsuiker alsnog.)"
+       },
+       {
+        "bron": "Schrik en adrenaline",
+        "ctx": "Iemand schrikt van een harde knal. Onmiddellijk gaat zijn hart sneller kloppen, komt er extra glucose in het bloed en zijn zijn spieren gespannen, klaar om weg te rennen.",
+        "v": "Leg uit welk hormoon deze reactie veroorzaakt, waar het wordt gemaakt en waarom deze reactie nuttig is.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "De reactie wordt veroorzaakt door adrenaline, dat in de bijnier wordt gemaakt. Adrenaline laat het hart sneller kloppen en maakt extra glucose vrij, zodat de spieren snel energie hebben. Dat is nuttig omdat het lichaam zo klaar is om te vechten of te vluchten bij gevaar. (Kernpunten: [1] adrenaline uit de bijnier; [2] het maakt het lichaam klaar voor actie, vecht of vlucht, door hart en energie op te voeren.)"
+       },
+       {
+        "bron": "Twee tegenwerkers",
+        "ctx": "De bloedsuiker van een gezond mens blijft gedurende de dag ongeveer gelijk, ook al eet iemand soms veel en soms lang niets. De alvleesklier maakt hiervoor twee hormonen: insuline en glucagon.",
+        "v": "Leg uit hoe insuline en glucagon samen de bloedsuiker ongeveer gelijk houden.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "Als de bloedsuiker te hoog is (na het eten) geeft de alvleesklier insuline af, dat de bloedsuiker verlaagt door glucose op te laten slaan als glycogeen. Als de bloedsuiker te laag is (lang niet gegeten) geeft de alvleesklier glucagon af, dat de bloedsuiker verhoogt door glycogeen weer om te zetten in glucose. Omdat de een verlaagt en de ander verhoogt, blijft de bloedsuiker in balans. (Kernpunten: [1] insuline verlaagt bij een hoge bloedsuiker; [2] glucagon verhoogt bij een lage bloedsuiker; samen houden ze de bloedsuiker stabiel.)"
+       },
+       {
+        "bron": "Hormoon of zenuw",
+        "ctx": "Het lichaam regelt processen op twee manieren: met het zenuwstelsel en met hormonen. Bij het ene systeem gaat het signaal razendsnel en is het snel weer voorbij, bij het andere komt het langzaam op gang maar werkt het lang door.",
+        "v": "Leg uit waarom hormonale regeling trager op gang komt en langer werkt dan regeling door het zenuwstelsel.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "Hormonen worden door hormoonklieren aan het bloed afgegeven en met de bloedstroom door het lichaam vervoerd; dat kost tijd, dus het effect komt traag op gang. Omdat het hormoon een tijd in het bloed blijft en op de doelcellen blijft werken, houdt het effect lang aan. Bij het zenuwstelsel gaat het signaal als een snelle elektrische impuls langs de zenuw en is het meteen weer voorbij. (Kernpunten: [1] hormonen gaan traag via het bloed, dus langzaam op gang; [2] ze blijven langer in het bloed werken, dus langdurig, anders dan de snelle, korte impuls van een zenuw.)"
+       }
+      ]
      }
     ],
     "beschrijving": "Stofwisseling van het organisme, zelfregulatie en afweer",
