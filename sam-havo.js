@@ -78,7 +78,7 @@ Object.assign(SAM_RICH,{
 <div class="sam-ch-title"><span class="sam-ch-n">1</span> De cel en zijn organellen</div>
 <p>De <strong>celkern</strong> is de baas: daar ligt het DNA. Het <strong>mitochondrion</strong> levert energie (celademhaling), de <strong>ribosomen</strong> maken eiwitten, en het <strong>celmembraan</strong> bepaalt wat de cel in en uit mag.</p>
 <div class="sam-figure"><svg viewBox="0 0 320 180" width="100%" role="img" aria-label="Diercel met celmembraan, celkern, mitochondrien en ribosomen">
-<rect x="18" y="16" width="284" height="148" rx="40" fill="#eef3f8" stroke="#9db4c9" stroke-width="2"/>
+<rect x="18" y="16" width="284" height="148" rx="40" fill="#d6e5f2" stroke="#9db4c9" stroke-width="2"/>
 <circle cx="150" cy="92" r="34" fill="#c7b3e0"/><circle cx="150" cy="92" r="12" fill="#8f74b8"/><text x="150" y="140" text-anchor="middle" font-size="11" fill="#6b5090" font-family="sans-serif">celkern</text>
 <ellipse cx="240" cy="60" rx="24" ry="13" fill="#c96a6a"/><text x="240" y="40" text-anchor="middle" font-size="10" fill="#8f3f3f" font-family="sans-serif">mitochondrion</text>
 <ellipse cx="66" cy="118" rx="22" ry="12" fill="#c96a6a"/>
@@ -91,9 +91,9 @@ Object.assign(SAM_RICH,{
 <div class="sam-ch-title"><span class="sam-ch-n">2</span> Plantencel of dierlijke cel</div>
 <p>Een <strong>plantencel</strong> heeft drie dingen extra die een dierlijke cel niet heeft: een stevige <strong>celwand</strong>, <strong>bladgroenkorrels</strong> voor de fotosynthese, en een grote centrale <strong>vacuole</strong>.</p>
 <div class="sam-figure"><svg viewBox="0 0 320 170" width="100%" role="img" aria-label="Plantencel met celwand, bladgroenkorrels en grote vacuole naast een dierlijke cel">
-<rect x="16" y="24" width="130" height="120" rx="6" fill="#dcefe2" stroke="#4ea36b" stroke-width="4"/><rect x="40" y="55" width="80" height="58" rx="8" fill="#bfe0cc"/><text x="80" y="88" text-anchor="middle" font-size="10" fill="#3c8a58" font-family="sans-serif">vacuole</text>
+<rect x="16" y="24" width="130" height="120" rx="6" fill="#b3ddc4" stroke="#4ea36b" stroke-width="4"/><rect x="40" y="55" width="80" height="58" rx="8" fill="#9bd0af"/><text x="80" y="88" text-anchor="middle" font-size="10" fill="#3c8a58" font-family="sans-serif">vacuole</text>
 <circle cx="34" cy="40" r="6" fill="#4ea36b"/><circle cx="128" cy="128" r="6" fill="#4ea36b"/><text x="80" y="160" text-anchor="middle" font-size="10" fill="#2f7d4f" font-family="sans-serif">plantencel</text>
-<circle cx="238" cy="84" r="54" fill="#eef3f8" stroke="#9db4c9" stroke-width="2"/><circle cx="238" cy="84" r="16" fill="#c7b3e0"/><text x="238" y="160" text-anchor="middle" font-size="10" fill="#5a7085" font-family="sans-serif">dierlijke cel</text>
+<circle cx="238" cy="84" r="54" fill="#d6e5f2" stroke="#9db4c9" stroke-width="2"/><circle cx="238" cy="84" r="16" fill="#c7b3e0"/><text x="238" y="160" text-anchor="middle" font-size="10" fill="#5a7085" font-family="sans-serif">dierlijke cel</text>
 </svg><div class="sam-figcap">Plantencel (met celwand, groene korrels, vacuole) vs dierlijke cel</div></div>
 <div class="sam-onthoud"><strong>Onthoud:</strong> celwand + bladgroenkorrels + grote vacuole = alleen bij de plantencel.</div>
 </div>
@@ -101,8 +101,8 @@ Object.assign(SAM_RICH,{
 <div class="sam-ch-title"><span class="sam-ch-n">3</span> Met of zonder celkern</div>
 <p>Planten- en dierlijke cellen hebben een echte <strong>celkern</strong> met het DNA erin: dat heet <strong>eukaryoot</strong>. Een <strong>bacteriecel</strong> heeft geen celkern; het DNA ligt los in de cel. Dat heet <strong>prokaryoot</strong>.</p>
 <div class="sam-figure"><svg viewBox="0 0 320 160" width="100%" role="img" aria-label="Eukaryote cel met celkern naast een bacteriecel met los DNA">
-<circle cx="82" cy="78" r="52" fill="#eef3f8" stroke="#9db4c9" stroke-width="2"/><circle cx="82" cy="78" r="18" fill="#c7b3e0"/><text x="82" y="82" text-anchor="middle" font-size="9" fill="#6b5090" font-family="sans-serif">kern</text><text x="82" y="146" text-anchor="middle" font-size="10" fill="#5a7085" font-family="sans-serif">eukaryoot</text>
-<rect x="188" y="44" width="112" height="68" rx="30" fill="#fdeccd" stroke="#d9a441" stroke-width="2"/><path d="M214 78q12-14 24 0t24 0" stroke="#b5772a" stroke-width="3" fill="none"/><text x="244" y="140" text-anchor="middle" font-size="10" fill="#a06a22" font-family="sans-serif">bacterie (prokaryoot)</text>
+<circle cx="82" cy="78" r="52" fill="#d6e5f2" stroke="#9db4c9" stroke-width="2"/><circle cx="82" cy="78" r="18" fill="#c7b3e0"/><text x="82" y="82" text-anchor="middle" font-size="9" fill="#6b5090" font-family="sans-serif">kern</text><text x="82" y="146" text-anchor="middle" font-size="10" fill="#5a7085" font-family="sans-serif">eukaryoot</text>
+<rect x="188" y="44" width="112" height="68" rx="30" fill="#f5d493" stroke="#d9a441" stroke-width="2"/><path d="M214 78q12-14 24 0t24 0" stroke="#b5772a" stroke-width="3" fill="none"/><text x="244" y="140" text-anchor="middle" font-size="10" fill="#a06a22" font-family="sans-serif">bacterie (prokaryoot)</text>
 </svg><div class="sam-figcap">Eukaryoot = kern aanwezig; prokaryoot (bacterie) = DNA los in de cel</div></div>
 <div class="sam-onthoud"><strong>Onthoud:</strong> eukaryoot = met celkern, prokaryoot (bacterie) = zonder celkern.</div>
 </div>`,
@@ -121,7 +121,7 @@ Object.assign(SAM_RICH,{
 <div class="sam-ch-title"><span class="sam-ch-n">1</span> Diffusie en osmose</div>
 <p>Bij <strong>diffusie</strong> verspreiden deeltjes zich vanzelf van veel naar weinig, tot het overal gelijk is. <strong>Osmose</strong> is diffusie van <strong>water</strong> door een selectief doorlaatbaar membraan: het water gaat naar de kant met <strong>meer opgeloste stof</strong> (en dus minder water).</p>
 <div class="sam-figure"><svg viewBox="0 0 320 150" width="100%" role="img" aria-label="Water beweegt door een membraan naar de kant met meer opgeloste stof">
-<rect x="20" y="24" width="280" height="100" rx="8" fill="#eaf4fb" stroke="#8fb8d6" stroke-width="2"/>
+<rect x="20" y="24" width="280" height="100" rx="8" fill="#cfe5f4" stroke="#8fb8d6" stroke-width="2"/>
 <line x1="160" y1="24" x2="160" y2="124" stroke="#5a7085" stroke-width="2" stroke-dasharray="4 4"/><text x="160" y="140" text-anchor="middle" font-size="9" fill="#5a7085" font-family="sans-serif">membraan</text>
 <circle cx="60" cy="60" r="5" fill="#c96a6a"/><circle cx="95" cy="95" r="5" fill="#c96a6a"/><text x="80" y="44" text-anchor="middle" font-size="10" fill="#8f3f3f" font-family="sans-serif">weinig opgelost</text>
 <circle cx="200" cy="55" r="5" fill="#c96a6a"/><circle cx="235" cy="90" r="5" fill="#c96a6a"/><circle cx="265" cy="60" r="5" fill="#c96a6a"/><circle cx="215" cy="100" r="5" fill="#c96a6a"/><text x="240" y="44" text-anchor="middle" font-size="10" fill="#8f3f3f" font-family="sans-serif">veel opgelost</text>
@@ -134,9 +134,9 @@ Object.assign(SAM_RICH,{
 <div class="sam-ch-title"><span class="sam-ch-n">2</span> Hypertoon, hypotoon, isotoon</div>
 <p>Ligt een cel in een <strong>hypertoon</strong> milieu (buiten meer opgeloste stof), dan <strong>verliest</strong> ze water en krimpt. In een <strong>hypotoon</strong> milieu <strong>neemt</strong> ze water op en zwelt. Bij <strong>isotoon</strong> is er netto geen waterstroom.</p>
 <div class="sam-figure"><svg viewBox="0 0 320 150" width="100%" role="img" aria-label="Cel in hypotoon zwelt, in isotoon gelijk, in hypertoon krimpt">
-<circle cx="55" cy="66" r="34" fill="#cfe8f5" stroke="#5a9bc0" stroke-width="2"/><path d="M55 32v-12M55 100v12M21 66h-12M89 66h12" stroke="#2e7d9a" stroke-width="2" marker-end="url(#hin)"/><text x="55" y="140" text-anchor="middle" font-size="10" fill="#2e7d9a" font-family="sans-serif">hypotoon (zwelt)</text>
-<circle cx="160" cy="66" r="26" fill="#e6ebef" stroke="#9db4c9" stroke-width="2"/><text x="160" y="140" text-anchor="middle" font-size="10" fill="#5a7085" font-family="sans-serif">isotoon (gelijk)</text>
-<circle cx="265" cy="66" r="18" fill="#f6ddd3" stroke="#c98a6a" stroke-width="2"/><path d="M265 40v-8M265 92v8M239 66h-8M291 66h8" stroke="#b5522f" stroke-width="2" marker-start="url(#hout)"/><text x="265" y="140" text-anchor="middle" font-size="10" fill="#b5522f" font-family="sans-serif">hypertoon (krimpt)</text>
+<circle cx="55" cy="66" r="34" fill="#a6d4ea" stroke="#5a9bc0" stroke-width="2"/><path d="M55 32v-12M55 100v12M21 66h-12M89 66h12" stroke="#2e7d9a" stroke-width="2" marker-end="url(#hin)"/><text x="55" y="140" text-anchor="middle" font-size="10" fill="#2e7d9a" font-family="sans-serif">hypotoon (zwelt)</text>
+<circle cx="160" cy="66" r="26" fill="#cdd7de" stroke="#9db4c9" stroke-width="2"/><text x="160" y="140" text-anchor="middle" font-size="10" fill="#5a7085" font-family="sans-serif">isotoon (gelijk)</text>
+<circle cx="265" cy="66" r="18" fill="#eebda6" stroke="#c98a6a" stroke-width="2"/><path d="M265 40v-8M265 92v8M239 66h-8M291 66h8" stroke="#b5522f" stroke-width="2" marker-start="url(#hout)"/><text x="265" y="140" text-anchor="middle" font-size="10" fill="#b5522f" font-family="sans-serif">hypertoon (krimpt)</text>
 <defs><marker id="hin" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0 0l6 3-6 3z" fill="#2e7d9a"/></marker><marker id="hout" markerWidth="8" markerHeight="8" refX="2" refY="3" orient="auto"><path d="M6 0l-6 3 6 3z" fill="#b5522f"/></marker></defs>
 </svg><div class="sam-figcap">Hypotoon: water erin. Hypertoon: water eruit. Isotoon: in evenwicht</div></div>
 <div class="sam-onthoud"><strong>Onthoud:</strong> hyperTOON = teveel buiten, cel droogt uit; hypOTOON = weinig buiten, cel zwelt.</div>
@@ -146,9 +146,9 @@ Object.assign(SAM_RICH,{
 <p><strong>Passief transport</strong> (zoals diffusie) gaat vanzelf met de gradiënt mee en kost <strong>geen</strong> energie. <strong>Actief transport</strong> gaat juist tegen de gradiënt in, van weinig naar veel, en kost daarom <strong>energie</strong> (ATP).</p>
 <div class="sam-figure"><svg viewBox="0 0 320 150" width="100%" role="img" aria-label="Passief transport met de gradiënt mee, actief transport tegen de gradiënt in met energie">
 <text x="80" y="26" text-anchor="middle" font-size="11" fill="#2f7d4f" font-family="sans-serif">passief</text>
-<path d="M40 50 L120 50 L120 110" stroke="#cbd5dd" stroke-width="10" fill="none"/><circle cx="52" cy="50" r="7" fill="#4ea36b"/><path d="M64 50h44" stroke="#2f7d4f" stroke-width="3" marker-end="url(#pa)"/><text x="80" y="128" text-anchor="middle" font-size="9" fill="#5a7085" font-family="sans-serif">met de gradiënt mee</text>
+<path d="M40 50 L120 50 L120 110" stroke="#aebdc8" stroke-width="10" fill="none"/><circle cx="52" cy="50" r="7" fill="#4ea36b"/><path d="M64 50h44" stroke="#2f7d4f" stroke-width="3" marker-end="url(#pa)"/><text x="80" y="128" text-anchor="middle" font-size="9" fill="#5a7085" font-family="sans-serif">met de gradiënt mee</text>
 <text x="240" y="26" text-anchor="middle" font-size="11" fill="#b5522f" font-family="sans-serif">actief</text>
-<path d="M200 110 L200 50 L280 50" stroke="#cbd5dd" stroke-width="10" fill="none"/><path d="M208 92v-30" stroke="#b5522f" stroke-width="3" marker-end="url(#aa)"/><text x="243" y="92" font-size="10" fill="#d98a1f" font-family="sans-serif">+ ATP</text><text x="240" y="128" text-anchor="middle" font-size="9" fill="#5a7085" font-family="sans-serif">tegen de gradiënt in</text>
+<path d="M200 110 L200 50 L280 50" stroke="#aebdc8" stroke-width="10" fill="none"/><path d="M208 92v-30" stroke="#b5522f" stroke-width="3" marker-end="url(#aa)"/><text x="243" y="92" font-size="10" fill="#d98a1f" font-family="sans-serif">+ ATP</text><text x="240" y="128" text-anchor="middle" font-size="9" fill="#5a7085" font-family="sans-serif">tegen de gradiënt in</text>
 <defs><marker id="pa" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0 0l6 3-6 3z" fill="#2f7d4f"/></marker><marker id="aa" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0 0l6 3-6 3z" fill="#b5522f"/></marker></defs>
 </svg><div class="sam-figcap">Passief: gratis, met de gradiënt mee. Actief: kost ATP, tegen de gradiënt in</div></div>
 <div class="sam-onthoud"><strong>Onthoud:</strong> tegen de gradiënt in kost energie (actief); met de gradiënt mee is gratis (passief).</div>
@@ -170,10 +170,10 @@ Object.assign(SAM_RICH,{
 <div class="sam-figure"><svg viewBox="0 0 320 170" width="100%" role="img" aria-label="DNA-ladder met basenparen A-T en C-G">
 <line x1="90" y1="20" x2="90" y2="150" stroke="#5a7085" stroke-width="4"/><line x1="230" y1="20" x2="230" y2="150" stroke="#5a7085" stroke-width="4"/>
 <g font-family="sans-serif" font-size="12" text-anchor="middle">
-<rect x="98" y="30" width="54" height="18" rx="4" fill="#cfe3f5"/><rect x="168" y="30" width="54" height="18" rx="4" fill="#f6ddd3"/><text x="125" y="43" fill="#2e6da0">A</text><text x="195" y="43" fill="#b5522f">T</text>
-<rect x="98" y="58" width="54" height="18" rx="4" fill="#d8f0dd"/><rect x="168" y="58" width="54" height="18" rx="4" fill="#f3e6c0"/><text x="125" y="71" fill="#2f7d4f">C</text><text x="195" y="71" fill="#a6801f">G</text>
-<rect x="98" y="86" width="54" height="18" rx="4" fill="#f6ddd3"/><rect x="168" y="86" width="54" height="18" rx="4" fill="#cfe3f5"/><text x="125" y="99" fill="#b5522f">T</text><text x="195" y="99" fill="#2e6da0">A</text>
-<rect x="98" y="114" width="54" height="18" rx="4" fill="#f3e6c0"/><rect x="168" y="114" width="54" height="18" rx="4" fill="#d8f0dd"/><text x="125" y="127" fill="#a6801f">G</text><text x="195" y="127" fill="#2f7d4f">C</text>
+<rect x="98" y="30" width="54" height="18" rx="4" fill="#a6cbea"/><rect x="168" y="30" width="54" height="18" rx="4" fill="#eebda6"/><text x="125" y="43" fill="#2e6da0">A</text><text x="195" y="43" fill="#b5522f">T</text>
+<rect x="98" y="58" width="54" height="18" rx="4" fill="#a9d9bb"/><rect x="168" y="58" width="54" height="18" rx="4" fill="#e6cd86"/><text x="125" y="71" fill="#2f7d4f">C</text><text x="195" y="71" fill="#a6801f">G</text>
+<rect x="98" y="86" width="54" height="18" rx="4" fill="#eebda6"/><rect x="168" y="86" width="54" height="18" rx="4" fill="#a6cbea"/><text x="125" y="99" fill="#b5522f">T</text><text x="195" y="99" fill="#2e6da0">A</text>
+<rect x="98" y="114" width="54" height="18" rx="4" fill="#e6cd86"/><rect x="168" y="114" width="54" height="18" rx="4" fill="#a9d9bb"/><text x="125" y="127" fill="#a6801f">G</text><text x="195" y="127" fill="#2f7d4f">C</text>
 </g></svg><div class="sam-figcap">A paart met T, C paart met G: de twee strengen passen op elkaar</div></div>
 <div class="sam-onthoud"><strong>Onthoud:</strong> A-T en C-G. Als de ene streng bekend is, ligt de andere vast.</div>
 </div>
@@ -182,7 +182,7 @@ Object.assign(SAM_RICH,{
 <p>Het DNA blijft veilig in de <strong>kern</strong>. Om een eiwit te maken, kopieert de cel eerst het gen naar een <strong>mRNA</strong> (boodschapper-RNA). Dat heet <strong>transcriptie</strong>. Het mRNA is een enkele streng die de basenvolgorde van het gen overneemt en, anders dan het DNA, de <strong>kern uit</strong> kan naar het ribosoom. Zo blijft het originele DNA veilig binnen.</p>
 <div class="sam-figure"><svg viewBox="0 0 320 150" width="100%" role="img" aria-label="Van het dubbelstrengs DNA in de kern wordt een enkelstrengs mRNA-kopie gemaakt die de kern uit gaat">
 <g font-family="sans-serif" font-size="11" text-anchor="middle">
-<ellipse cx="80" cy="75" rx="72" ry="60" fill="#efeaf7" stroke="#b7a3d6" stroke-width="2"/><text x="80" y="24" fill="#8a74b8" font-size="10">celkern</text>
+<ellipse cx="80" cy="75" rx="72" ry="60" fill="#dacbee" stroke="#b7a3d6" stroke-width="2"/><text x="80" y="24" fill="#8a74b8" font-size="10">celkern</text>
 <line x1="46" y1="52" x2="46" y2="104" stroke="#8f74b8" stroke-width="4"/><line x1="60" y1="52" x2="60" y2="104" stroke="#8f74b8" stroke-width="4"/><text x="53" y="120" fill="#5a3f82" font-size="9">DNA</text>
 <rect x="90" y="62" width="10" height="26" rx="3" fill="#3f9bd0"/><text x="95" y="120" fill="#2e6da0" font-size="9">mRNA</text>
 <path d="M112 75h44" stroke="#5a7085" stroke-width="2" marker-end="url(#m5t)"/><text x="150" y="64" font-size="9" fill="#5a7085">de kern uit</text>
@@ -197,13 +197,13 @@ Object.assign(SAM_RICH,{
 <div class="sam-figure"><svg viewBox="0 0 320 165" width="100%" role="img" aria-label="Het mRNA wordt in codons van drie basen gelezen; elk codon levert een aminozuur, samen het eiwit">
 <g font-family="sans-serif" font-size="11" text-anchor="middle">
 <text x="160" y="16" font-size="10" fill="#2e6da0">mRNA, gelezen per codon (3 basen)</text>
-<rect x="10" y="24" width="66" height="26" rx="5" fill="#cfe3f5"/><text x="43" y="42" fill="#2e6da0">A U G</text>
-<rect x="82" y="24" width="66" height="26" rx="5" fill="#d8f0dd"/><text x="115" y="42" fill="#2f7d4f">G C U</text>
-<rect x="154" y="24" width="66" height="26" rx="5" fill="#f3e6c0"/><text x="187" y="42" fill="#a6801f">A A G</text>
-<rect x="226" y="24" width="66" height="26" rx="5" fill="#f6ddd3"/><text x="259" y="42" fill="#b5522f">U U C</text>
+<rect x="10" y="24" width="66" height="26" rx="5" fill="#a6cbea"/><text x="43" y="42" fill="#2e6da0">A U G</text>
+<rect x="82" y="24" width="66" height="26" rx="5" fill="#a9d9bb"/><text x="115" y="42" fill="#2f7d4f">G C U</text>
+<rect x="154" y="24" width="66" height="26" rx="5" fill="#e6cd86"/><text x="187" y="42" fill="#a6801f">A A G</text>
+<rect x="226" y="24" width="66" height="26" rx="5" fill="#eebda6"/><text x="259" y="42" fill="#b5522f">U U C</text>
 <path d="M43 52v22" stroke="#5a7085" stroke-width="2" marker-end="url(#m5c)"/><path d="M115 52v22" stroke="#5a7085" stroke-width="2" marker-end="url(#m5c)"/><path d="M187 52v22" stroke="#5a7085" stroke-width="2" marker-end="url(#m5c)"/><path d="M259 52v22" stroke="#5a7085" stroke-width="2" marker-end="url(#m5c)"/>
 <line x1="43" y1="98" x2="259" y2="98" stroke="#c9a24a" stroke-width="4"/>
-<circle cx="43" cy="98" r="15" fill="#e7d59a" stroke="#c9a24a" stroke-width="2"/><circle cx="115" cy="98" r="15" fill="#e7d59a" stroke="#c9a24a" stroke-width="2"/><circle cx="187" cy="98" r="15" fill="#e7d59a" stroke="#c9a24a" stroke-width="2"/><circle cx="259" cy="98" r="15" fill="#e7d59a" stroke="#c9a24a" stroke-width="2"/>
+<circle cx="43" cy="98" r="15" fill="#d6ba5e" stroke="#c9a24a" stroke-width="2"/><circle cx="115" cy="98" r="15" fill="#d6ba5e" stroke="#c9a24a" stroke-width="2"/><circle cx="187" cy="98" r="15" fill="#d6ba5e" stroke="#c9a24a" stroke-width="2"/><circle cx="259" cy="98" r="15" fill="#d6ba5e" stroke="#c9a24a" stroke-width="2"/>
 <text x="43" y="102" font-size="9" fill="#8a6a1a">az1</text><text x="115" y="102" font-size="9" fill="#8a6a1a">az2</text><text x="187" y="102" font-size="9" fill="#8a6a1a">az3</text><text x="259" y="102" font-size="9" fill="#8a6a1a">az4</text>
 <text x="160" y="132" font-size="10" fill="#a6801f">de aminozuren (az) vormen samen het eiwit</text>
 <text x="160" y="150" font-size="9" fill="#5a7085">1 codon (3 basen) = 1 aminozuur</text>
@@ -218,9 +218,9 @@ Object.assign(SAM_RICH,{
 <g font-family="sans-serif" font-size="12" text-anchor="middle">
 <rect x="24" y="44" width="70" height="34" rx="8" fill="#c7b3e0"/><text x="59" y="65" fill="#5a3f82">gen</text>
 <path d="M96 61h42" stroke="#5a7085" stroke-width="2" marker-end="url(#m5b)"/>
-<rect x="140" y="44" width="70" height="34" rx="8" fill="#f3e6c0"/><text x="175" y="65" fill="#a6801f">eiwit</text>
+<rect x="140" y="44" width="70" height="34" rx="8" fill="#e6cd86"/><text x="175" y="65" fill="#a6801f">eiwit</text>
 <path d="M212 61h42" stroke="#5a7085" stroke-width="2" marker-end="url(#m5b)"/>
-<rect x="256" y="44" width="52" height="34" rx="8" fill="#d8f0dd"/><text x="282" y="65" fill="#2f7d4f">kenmerk</text>
+<rect x="256" y="44" width="52" height="34" rx="8" fill="#a9d9bb"/><text x="282" y="65" fill="#2f7d4f">kenmerk</text>
 </g><defs><marker id="m5b" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0 0l6 3-6 3z" fill="#5a7085"/></marker></defs>
 </svg><div class="sam-figcap">gen -> eiwit -> kenmerk; welk gen aanstaat verschilt per cel</div></div>
 <div class="sam-onthoud"><strong>Onthoud:</strong> gen -> eiwit -> eigenschap. Verschillende cellen zetten verschillende genen aan.</div>
@@ -240,9 +240,9 @@ Object.assign(SAM_RICH,{
 <p>Voor elke celdeling wordt het <strong>DNA eerst verdubbeld</strong>. Zo is er genoeg materiaal om over de dochtercellen te verdelen. Gebeurt dat niet, dan krijgen de dochtercellen te weinig DNA.</p>
 <div class="sam-figure"><svg viewBox="0 0 320 120" width="100%" role="img" aria-label="Een cel verdubbelt eerst haar DNA voor de deling">
 <g font-family="sans-serif" font-size="11" text-anchor="middle">
-<circle cx="70" cy="60" r="36" fill="#eef3f8" stroke="#9db4c9" stroke-width="2"/><rect x="60" y="50" width="6" height="20" fill="#8f74b8"/><text x="70" y="108" fill="#5a7085">1 chromosoom</text>
+<circle cx="70" cy="60" r="36" fill="#d6e5f2" stroke="#9db4c9" stroke-width="2"/><rect x="60" y="50" width="6" height="20" fill="#8f74b8"/><text x="70" y="108" fill="#5a7085">1 chromosoom</text>
 <path d="M116 60h44" stroke="#5a7085" stroke-width="2" marker-end="url(#m6a)"/><text x="138" y="50" fill="#5a7085">verdubbelt</text>
-<circle cx="216" cy="60" r="36" fill="#eef3f8" stroke="#9db4c9" stroke-width="2"/><rect x="204" y="50" width="6" height="20" fill="#8f74b8"/><rect x="214" y="50" width="6" height="20" fill="#8f74b8"/><text x="216" y="108" fill="#5a7085">verdubbeld (klaar voor deling)</text>
+<circle cx="216" cy="60" r="36" fill="#d6e5f2" stroke="#9db4c9" stroke-width="2"/><rect x="204" y="50" width="6" height="20" fill="#8f74b8"/><rect x="214" y="50" width="6" height="20" fill="#8f74b8"/><text x="216" y="108" fill="#5a7085">verdubbeld (klaar voor deling)</text>
 </g><defs><marker id="m6a" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0 0l6 3-6 3z" fill="#5a7085"/></marker></defs>
 </svg><div class="sam-figcap">Zonder DNA-verdubbeling vooraf krijgen de dochtercellen te weinig DNA</div></div>
 <div class="sam-onthoud"><strong>Onthoud:</strong> elke deling begint met een verdubbeling van het DNA.</div>
@@ -252,10 +252,10 @@ Object.assign(SAM_RICH,{
 <p>Bij <strong>mitose</strong> ontstaan uit één cel <strong>twee dochtercellen</strong> die genetisch <strong>identiek</strong> zijn aan de moedercel en hetzelfde aantal chromosomen hebben. Mitose zorgt voor <strong>groei en herstel</strong>.</p>
 <div class="sam-figure"><svg viewBox="0 0 320 120" width="100%" role="img" aria-label="Mitose: een moedercel deelt in twee identieke cellen met gelijk chromosoomaantal">
 <g font-family="sans-serif" font-size="10" text-anchor="middle">
-<circle cx="52" cy="60" r="30" fill="#eef3f8" stroke="#9db4c9" stroke-width="2"/><rect x="43" y="52" width="5" height="16" fill="#8f74b8"/><rect x="53" y="52" width="5" height="16" fill="#c96a6a"/><text x="52" y="104" fill="#5a7085">2n</text>
+<circle cx="52" cy="60" r="30" fill="#d6e5f2" stroke="#9db4c9" stroke-width="2"/><rect x="43" y="52" width="5" height="16" fill="#8f74b8"/><rect x="53" y="52" width="5" height="16" fill="#c96a6a"/><text x="52" y="104" fill="#5a7085">2n</text>
 <path d="M88 60h40" stroke="#5a7085" stroke-width="2" marker-end="url(#m6b)"/>
-<circle cx="180" cy="34" r="24" fill="#dcefe2" stroke="#4ea36b" stroke-width="2"/><rect x="172" y="28" width="5" height="14" fill="#8f74b8"/><rect x="181" y="28" width="5" height="14" fill="#c96a6a"/>
-<circle cx="180" cy="90" r="24" fill="#dcefe2" stroke="#4ea36b" stroke-width="2"/><rect x="172" y="84" width="5" height="14" fill="#8f74b8"/><rect x="181" y="84" width="5" height="14" fill="#c96a6a"/>
+<circle cx="180" cy="34" r="24" fill="#b3ddc4" stroke="#4ea36b" stroke-width="2"/><rect x="172" y="28" width="5" height="14" fill="#8f74b8"/><rect x="181" y="28" width="5" height="14" fill="#c96a6a"/>
+<circle cx="180" cy="90" r="24" fill="#b3ddc4" stroke="#4ea36b" stroke-width="2"/><rect x="172" y="84" width="5" height="14" fill="#8f74b8"/><rect x="181" y="84" width="5" height="14" fill="#c96a6a"/>
 <text x="250" y="64" fill="#2f7d4f">2 identieke cellen (2n)</text>
 </g><defs><marker id="m6b" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0 0l6 3-6 3z" fill="#5a7085"/></marker></defs>
 </svg><div class="sam-figcap">Mitose: 1 cel -> 2 identieke cellen met hetzelfde aantal chromosomen</div></div>
@@ -266,10 +266,10 @@ Object.assign(SAM_RICH,{
 <p>De mitose verloopt in vier fasen. <strong>Profase:</strong> de chromosomen worden zichtbaar (opgerold) en het kernmembraan verdwijnt. <strong>Metafase:</strong> de chromosomen gaan in het midden (de equator) op een rij staan. <strong>Anafase:</strong> de chromosoomhelften worden naar de tegenovergestelde polen getrokken. <strong>Telofase:</strong> bij elke pool vormt zich een nieuwe kern, daarna deelt de cel in tweeen (celdeling).</p>
 <div class="sam-figure"><svg viewBox="0 0 320 130" width="100%" role="img" aria-label="De vier fasen van de mitose: profase, metafase, anafase en telofase">
 <g font-family="sans-serif" font-size="10" text-anchor="middle">
-<circle cx="44" cy="52" r="27" fill="#eef3f8" stroke="#9db4c9" stroke-width="2"/><rect x="34" y="44" width="5" height="16" rx="2" fill="#8f74b8"/><rect x="52" y="46" width="5" height="16" rx="2" fill="#c96a6a"/><text x="44" y="96" fill="#5a7085">Profase</text><text x="44" y="110" font-size="8" fill="#8394a3">chromosomen zichtbaar</text>
-<circle cx="122" cy="52" r="27" fill="#eef3f8" stroke="#9db4c9" stroke-width="2"/><line x1="122" y1="28" x2="122" y2="76" stroke="#b7c4cf" stroke-width="1" stroke-dasharray="3 3"/><rect x="115" y="42" width="5" height="16" rx="2" fill="#8f74b8"/><rect x="124" y="42" width="5" height="16" rx="2" fill="#c96a6a"/><text x="122" y="96" fill="#5a7085">Metafase</text><text x="122" y="110" font-size="8" fill="#8394a3">in het midden op een rij</text>
-<circle cx="200" cy="52" r="27" fill="#eef3f8" stroke="#9db4c9" stroke-width="2"/><rect x="182" y="44" width="5" height="15" rx="2" fill="#8f74b8"/><rect x="213" y="44" width="5" height="15" rx="2" fill="#c96a6a"/><path d="M192 52h-14" stroke="#b5522f" stroke-width="1.5" marker-end="url(#m6f)"/><path d="M208 52h14" stroke="#b5522f" stroke-width="1.5" marker-end="url(#m6f)"/><text x="200" y="96" fill="#5a7085">Anafase</text><text x="200" y="110" font-size="8" fill="#8394a3">helften uit elkaar</text>
-<circle cx="268" cy="52" r="19" fill="#dcefe2" stroke="#4ea36b" stroke-width="2"/><circle cx="300" cy="52" r="19" fill="#dcefe2" stroke="#4ea36b" stroke-width="2"/><rect x="266" y="46" width="4" height="12" rx="2" fill="#8f74b8"/><rect x="298" y="46" width="4" height="12" rx="2" fill="#c96a6a"/><text x="284" y="96" fill="#5a7085">Telofase</text><text x="284" y="110" font-size="8" fill="#8394a3">twee nieuwe cellen</text>
+<circle cx="44" cy="52" r="27" fill="#d6e5f2" stroke="#9db4c9" stroke-width="2"/><rect x="34" y="44" width="5" height="16" rx="2" fill="#8f74b8"/><rect x="52" y="46" width="5" height="16" rx="2" fill="#c96a6a"/><text x="44" y="96" fill="#5a7085">Profase</text><text x="44" y="110" font-size="8" fill="#8394a3">chromosomen zichtbaar</text>
+<circle cx="122" cy="52" r="27" fill="#d6e5f2" stroke="#9db4c9" stroke-width="2"/><line x1="122" y1="28" x2="122" y2="76" stroke="#b7c4cf" stroke-width="1" stroke-dasharray="3 3"/><rect x="115" y="42" width="5" height="16" rx="2" fill="#8f74b8"/><rect x="124" y="42" width="5" height="16" rx="2" fill="#c96a6a"/><text x="122" y="96" fill="#5a7085">Metafase</text><text x="122" y="110" font-size="8" fill="#8394a3">in het midden op een rij</text>
+<circle cx="200" cy="52" r="27" fill="#d6e5f2" stroke="#9db4c9" stroke-width="2"/><rect x="182" y="44" width="5" height="15" rx="2" fill="#8f74b8"/><rect x="213" y="44" width="5" height="15" rx="2" fill="#c96a6a"/><path d="M192 52h-14" stroke="#b5522f" stroke-width="1.5" marker-end="url(#m6f)"/><path d="M208 52h14" stroke="#b5522f" stroke-width="1.5" marker-end="url(#m6f)"/><text x="200" y="96" fill="#5a7085">Anafase</text><text x="200" y="110" font-size="8" fill="#8394a3">helften uit elkaar</text>
+<circle cx="268" cy="52" r="19" fill="#b3ddc4" stroke="#4ea36b" stroke-width="2"/><circle cx="300" cy="52" r="19" fill="#b3ddc4" stroke="#4ea36b" stroke-width="2"/><rect x="266" y="46" width="4" height="12" rx="2" fill="#8f74b8"/><rect x="298" y="46" width="4" height="12" rx="2" fill="#c96a6a"/><text x="284" y="96" fill="#5a7085">Telofase</text><text x="284" y="110" font-size="8" fill="#8394a3">twee nieuwe cellen</text>
 </g><defs><marker id="m6f" markerWidth="7" markerHeight="7" refX="5" refY="3" orient="auto"><path d="M0 0l5 3-5 3z" fill="#b5522f"/></marker></defs>
 </svg><div class="sam-figcap">Profase -> Metafase -> Anafase -> Telofase: van zichtbare chromosomen tot twee nieuwe cellen</div></div>
 <div class="sam-onthoud"><strong>Onthoud (PMAT):</strong> Profase (zichtbaar), Metafase (in het midden), Anafase (uit elkaar), Telofase (twee kernen, cel deelt).</div>
@@ -279,12 +279,12 @@ Object.assign(SAM_RICH,{
 <p>Bij <strong>meiose</strong> ontstaan uit één cel <strong>vier geslachtscellen</strong> met het <strong>halve</strong> aantal chromosomen (van 2n naar n). Bij de <strong>bevruchting</strong> (n + n) wordt het aantal weer 2n. Meiose zorgt ook voor <strong>variatie</strong> tussen nakomelingen.</p>
 <div class="sam-figure"><svg viewBox="0 0 320 130" width="100%" role="img" aria-label="Meiose: een cel deelt in vier geslachtscellen met het halve aantal chromosomen">
 <g font-family="sans-serif" font-size="10" text-anchor="middle">
-<circle cx="46" cy="64" r="28" fill="#eef3f8" stroke="#9db4c9" stroke-width="2"/><rect x="38" y="56" width="5" height="16" fill="#8f74b8"/><rect x="48" y="56" width="5" height="16" fill="#c96a6a"/><text x="46" y="108" fill="#5a7085">2n</text>
+<circle cx="46" cy="64" r="28" fill="#d6e5f2" stroke="#9db4c9" stroke-width="2"/><rect x="38" y="56" width="5" height="16" fill="#8f74b8"/><rect x="48" y="56" width="5" height="16" fill="#c96a6a"/><text x="46" y="108" fill="#5a7085">2n</text>
 <path d="M80 64h34" stroke="#5a7085" stroke-width="2" marker-end="url(#m6c)"/>
-<circle cx="150" cy="26" r="16" fill="#fdeccd" stroke="#d9a441" stroke-width="2"/><rect x="148" y="20" width="4" height="12" fill="#8f74b8"/>
-<circle cx="150" cy="66" r="16" fill="#fdeccd" stroke="#d9a441" stroke-width="2"/><rect x="148" y="60" width="4" height="12" fill="#c96a6a"/>
-<circle cx="150" cy="106" r="16" fill="#fdeccd" stroke="#d9a441" stroke-width="2"/><rect x="148" y="100" width="4" height="12" fill="#8f74b8"/>
-<circle cx="196" cy="46" r="16" fill="#fdeccd" stroke="#d9a441" stroke-width="2"/><rect x="194" y="40" width="4" height="12" fill="#c96a6a"/>
+<circle cx="150" cy="26" r="16" fill="#f5d493" stroke="#d9a441" stroke-width="2"/><rect x="148" y="20" width="4" height="12" fill="#8f74b8"/>
+<circle cx="150" cy="66" r="16" fill="#f5d493" stroke="#d9a441" stroke-width="2"/><rect x="148" y="60" width="4" height="12" fill="#c96a6a"/>
+<circle cx="150" cy="106" r="16" fill="#f5d493" stroke="#d9a441" stroke-width="2"/><rect x="148" y="100" width="4" height="12" fill="#8f74b8"/>
+<circle cx="196" cy="46" r="16" fill="#f5d493" stroke="#d9a441" stroke-width="2"/><rect x="194" y="40" width="4" height="12" fill="#c96a6a"/>
 <text x="262" y="70" fill="#a06a22">4 geslachtscellen (n)</text>
 </g><defs><marker id="m6c" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0 0l6 3-6 3z" fill="#5a7085"/></marker></defs>
 </svg><div class="sam-figcap">Meiose: 1 cel -> 4 geslachtscellen met het halve aantal chromosomen (n)</div></div>
@@ -306,9 +306,9 @@ Object.assign(SAM_RICH,{
 <p>Een gen kan in varianten voorkomen: <strong>allelen</strong>. Een <strong>dominant</strong> allel (hoofdletter, A) komt tot uiting zodra het aanwezig is. Een <strong>recessief</strong> allel (kleine letter, a) komt alleen tot uiting als beide allelen recessief zijn (<strong>aa</strong>).</p>
 <div class="sam-figure"><svg viewBox="0 0 320 130" width="100%" role="img" aria-label="Genotypen AA, Aa en aa en welk kenmerk tot uiting komt">
 <g font-family="sans-serif" font-size="13" text-anchor="middle">
-<rect x="20" y="40" width="80" height="40" rx="8" fill="#cfe3f5"/><text x="60" y="58" fill="#2e6da0">AA</text><text x="60" y="100" font-size="10" fill="#2e6da0">dominant kenmerk</text>
-<rect x="120" y="40" width="80" height="40" rx="8" fill="#cfe3f5"/><text x="160" y="58" fill="#2e6da0">Aa</text><text x="160" y="100" font-size="10" fill="#2e6da0">dominant kenmerk</text>
-<rect x="220" y="40" width="80" height="40" rx="8" fill="#f6ddd3"/><text x="260" y="58" fill="#b5522f">aa</text><text x="260" y="100" font-size="10" fill="#b5522f">recessief kenmerk</text>
+<rect x="20" y="40" width="80" height="40" rx="8" fill="#a6cbea"/><text x="60" y="58" fill="#2e6da0">AA</text><text x="60" y="100" font-size="10" fill="#2e6da0">dominant kenmerk</text>
+<rect x="120" y="40" width="80" height="40" rx="8" fill="#a6cbea"/><text x="160" y="58" fill="#2e6da0">Aa</text><text x="160" y="100" font-size="10" fill="#2e6da0">dominant kenmerk</text>
+<rect x="220" y="40" width="80" height="40" rx="8" fill="#eebda6"/><text x="260" y="58" fill="#b5522f">aa</text><text x="260" y="100" font-size="10" fill="#b5522f">recessief kenmerk</text>
 </g></svg><div class="sam-figcap">Alleen genotype aa toont het recessieve kenmerk; AA en Aa tonen het dominante</div></div>
 <div class="sam-onthoud"><strong>Onthoud:</strong> dominant = hoofdletter en laat zich meteen zien; recessief kenmerk alleen bij aa.</div>
 </div>
@@ -319,7 +319,7 @@ Object.assign(SAM_RICH,{
 <g font-family="sans-serif" font-size="11" text-anchor="middle">
 <rect x="24" y="42" width="96" height="38" rx="8" fill="#c7b3e0"/><text x="72" y="60" fill="#5a3f82">genotype</text><text x="72" y="74" font-size="9" fill="#5a3f82">Aa (heterozygoot)</text>
 <path d="M124 61h48" stroke="#5a7085" stroke-width="2" marker-end="url(#m7a)"/><text x="148" y="52" font-size="9" fill="#5a7085">komt tot uiting</text>
-<rect x="176" y="42" width="120" height="38" rx="8" fill="#d8f0dd"/><text x="236" y="60" fill="#2f7d4f">fenotype</text><text x="236" y="74" font-size="9" fill="#2f7d4f">het zichtbare kenmerk</text>
+<rect x="176" y="42" width="120" height="38" rx="8" fill="#a9d9bb"/><text x="236" y="60" fill="#2f7d4f">fenotype</text><text x="236" y="74" font-size="9" fill="#2f7d4f">het zichtbare kenmerk</text>
 </g><defs><marker id="m7a" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0 0l6 3-6 3z" fill="#5a7085"/></marker></defs>
 </svg><div class="sam-figcap">Genotype (allelen) bepaalt het fenotype (het waarneembare kenmerk)</div></div>
 <div class="sam-onthoud"><strong>Onthoud:</strong> genotype = de allelen (AA/Aa/aa); fenotype = wat je ziet. Aa = heterozygoot = drager.</div>
@@ -331,10 +331,10 @@ Object.assign(SAM_RICH,{
 <g font-family="sans-serif" font-size="14" text-anchor="middle">
 <text x="115" y="24" font-size="12" fill="#5a7085">A</text><text x="185" y="24" font-size="12" fill="#5a7085">a</text>
 <text x="66" y="78" font-size="12" fill="#5a7085">A</text><text x="66" y="140" font-size="12" fill="#5a7085">a</text>
-<rect x="82" y="34" width="66" height="56" fill="#cfe3f5" stroke="#fff" stroke-width="3"/><text x="115" y="68" fill="#2e6da0">AA</text>
-<rect x="152" y="34" width="66" height="56" fill="#cfe3f5" stroke="#fff" stroke-width="3"/><text x="185" y="68" fill="#2e6da0">Aa</text>
-<rect x="82" y="90" width="66" height="56" fill="#cfe3f5" stroke="#fff" stroke-width="3"/><text x="115" y="124" fill="#2e6da0">Aa</text>
-<rect x="152" y="90" width="66" height="56" fill="#f6ddd3" stroke="#fff" stroke-width="3"/><text x="185" y="124" fill="#b5522f">aa</text>
+<rect x="82" y="34" width="66" height="56" fill="#a6cbea" stroke="#fff" stroke-width="3"/><text x="115" y="68" fill="#2e6da0">AA</text>
+<rect x="152" y="34" width="66" height="56" fill="#a6cbea" stroke="#fff" stroke-width="3"/><text x="185" y="68" fill="#2e6da0">Aa</text>
+<rect x="82" y="90" width="66" height="56" fill="#a6cbea" stroke="#fff" stroke-width="3"/><text x="115" y="124" fill="#2e6da0">Aa</text>
+<rect x="152" y="90" width="66" height="56" fill="#eebda6" stroke="#fff" stroke-width="3"/><text x="185" y="124" fill="#b5522f">aa</text>
 <text x="268" y="70" font-size="11" fill="#2e6da0">3 dominant</text><text x="268" y="120" font-size="11" fill="#b5522f">1 recessief</text>
 </g></svg><div class="sam-figcap">Aa x Aa geeft AA, Aa, Aa, aa: fenotype 3:1, genotype 1:2:1</div></div>
 <div class="sam-onthoud"><strong>Onthoud:</strong> Aa x Aa geeft 3:1 in het fenotype en 1:2:1 in het genotype.</div>
