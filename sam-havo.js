@@ -664,6 +664,61 @@ Object.assign(SAM_RICH,{
 </svg><div class="sam-figcap">De nier filtert afval uit het bloed: schoon bloed terug, ureum verlaat het lichaam als urine</div></div>
 <div class="sam-onthoud"><strong>Onthoud:</strong> nieren verteren niet, ze filteren afval uit het bloed (uitscheiding).</div>
 </div>`,
+'havo_bi_O7':`<div class="sam-intro">Je <strong>skelet</strong> geeft steun, en op de plekken waar botten kunnen bewegen zit een <strong>gewricht</strong>. <strong>Spieren</strong> kunnen alleen <strong>trekken</strong>, dus werken ze in tegengestelde paren: de <strong>antagonisten</strong>. Hieronder eerst een begrippenlijst, daarna drie hoofdstukjes met beeld.</div>
+<table class="sam-table"><thead><tr><th>Begrip</th><th>Kort</th></tr></thead><tbody>
+<tr><td><strong>Skelet</strong></td><td>alle botten samen, geeft steun en bescherming</td></tr>
+<tr><td><strong>Gewricht</strong></td><td>een beweegbare verbinding tussen twee botten</td></tr>
+<tr><td><strong>Scharniergewricht</strong></td><td>buigt één richting op (elleboog, knie)</td></tr>
+<tr><td><strong>Kogelgewricht</strong></td><td>draait alle kanten op (schouder, heup)</td></tr>
+<tr><td><strong>Kraakbeen</strong></td><td>dempt de schokken tussen de botten</td></tr>
+<tr><td><strong>Gewrichtsband</strong></td><td>houdt de botten van een gewricht bij elkaar</td></tr>
+<tr><td><strong>Pees</strong></td><td>verbindt een spier met een bot</td></tr>
+<tr><td><strong>Samentrekken</strong></td><td>de spier wordt korter en dikker en trekt</td></tr>
+<tr><td><strong>Antagonisten</strong></td><td>twee spieren met tegengestelde werking (buig- en strekspier)</td></tr>
+</tbody></table>
+<div class="sam-chapter">
+<div class="sam-ch-title"><span class="sam-ch-n">1</span> Het gewricht en zijn onderdelen</div>
+<p>Een <strong>gewricht</strong> is een beweegbare verbinding tussen botten. <strong>Kraakbeen</strong> op de uiteinden <strong>dempt</strong> de schokken, een <strong>gewrichtsband</strong> houdt de botten <strong>bij elkaar</strong>, en een <strong>pees</strong> verbindt de <strong>spier</strong> met het bot. Verwar ze niet: band houdt bot aan bot, pees houdt spier aan bot.</p>
+<div class="sam-figure"><svg viewBox="0 0 320 140" width="100%" role="img" aria-label="Een gewricht met kraakbeen tussen de botten, een gewrichtsband en een pees naar de spier">
+<g font-family="sans-serif" font-size="9" text-anchor="middle">
+<rect x="60" y="18" width="26" height="44" rx="8" fill="#e8e0d0" stroke="#b9a888"/><rect x="60" y="80" width="26" height="44" rx="8" fill="#e8e0d0" stroke="#b9a888"/><text x="73" y="12" fill="#8a7a55">bot</text>
+<rect x="58" y="64" width="30" height="6" rx="3" fill="#7fbf9f"/><rect x="58" y="72" width="30" height="6" rx="3" fill="#7fbf9f"/><text x="118" y="72" text-anchor="start" fill="#2f7d4f">kraakbeen</text>
+<path d="M56 30q-10 37 0 74" stroke="#c98a5f" stroke-width="4" fill="none"/><text x="30" y="70" fill="#8a5a2f">band</text>
+<rect x="150" y="40" width="60" height="44" rx="14" fill="#c96a6a"/><text x="180" y="66" fill="#fff">spier</text>
+<path d="M120 88q18 6 30 -4" stroke="#8f6f3f" stroke-width="4" fill="none"/><text x="128" y="108" fill="#7a5a2a">pees</text>
+</g></svg><div class="sam-figcap">Kraakbeen dempt, de gewrichtsband houdt bot aan bot, de pees verbindt spier en bot</div></div>
+<div class="sam-onthoud"><strong>Onthoud:</strong> band = bot aan bot, pees = spier aan bot, kraakbeen = schokdemper.</div>
+</div>
+<div class="sam-chapter">
+<div class="sam-ch-title"><span class="sam-ch-n">2</span> Een spier kan alleen trekken</div>
+<p>Als een spier <strong>samentrekt</strong>, wordt hij <strong>korter en dikker</strong> en <strong>trekt</strong> hij aan het bot. Een spier kan <strong>nooit duwen</strong> en zichzelf niet verlengen. Daarom kan een spier het bot na een beweging niet terugduwen: dat moet een <strong>tweede</strong> spier doen.</p>
+<div class="sam-figure"><svg viewBox="0 0 320 130" width="100%" role="img" aria-label="Een ontspannen spier is lang en dun, een samengetrokken spier is kort en dik en trekt aan het bot">
+<g font-family="sans-serif" font-size="9" text-anchor="middle">
+<text x="70" y="20" fill="#5a6b7a">ontspannen</text>
+<rect x="40" y="34" width="60" height="16" rx="8" fill="#d79a9a"/><rect x="100" y="30" width="10" height="24" rx="3" fill="#e8e0d0" stroke="#b9a888"/>
+<text x="250" y="20" fill="#8f3f3f">samengetrokken</text>
+<rect x="214" y="72" width="40" height="26" rx="13" fill="#c96a6a"/><rect x="254" y="68" width="10" height="34" rx="3" fill="#e8e0d0" stroke="#b9a888"/>
+<path d="M214 85h-14" stroke="#b5522f" stroke-width="2.5" fill="none" marker-end="url(#o7t)"/><text x="188" y="80" text-anchor="end" fill="#8f3f3f">trekt</text>
+</g><defs><marker id="o7t" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0 0l6 3-6 3z" fill="#b5522f"/></marker></defs>
+</svg><div class="sam-figcap">Ontspannen: lang en dun. Samengetrokken: kort en dik, en de spier trekt aan het bot</div></div>
+<div class="sam-onthoud"><strong>Onthoud:</strong> samentrekken = korter, dikker, trekken. Duwen kan een spier niet.</div>
+</div>
+<div class="sam-chapter">
+<div class="sam-ch-title"><span class="sam-ch-n">3</span> Antagonisten: buigen en strekken</div>
+<p>Omdat een spier alleen trekt, werken spieren in <strong>tegengestelde paren</strong>: de <strong>antagonisten</strong>. Om de arm te <strong>buigen</strong> trekt de <strong>buigspier</strong> samen en <strong>ontspant</strong> de strekspier. Om te <strong>strekken</strong> is het net andersom. Eén spier kan dus nooit zelf zowel buigen als strekken.</p>
+<div class="sam-figure"><svg viewBox="0 0 320 140" width="100%" role="img" aria-label="Bij buigen trekt de buigspier samen en ontspant de strekspier, bij strekken andersom">
+<g font-family="sans-serif" font-size="9" text-anchor="middle">
+<text x="80" y="16" fill="#8f3f3f">buigen</text>
+<line x1="50" y1="30" x2="50" y2="80" stroke="#b9a888" stroke-width="7" stroke-linecap="round"/><line x1="50" y1="80" x2="88" y2="52" stroke="#b9a888" stroke-width="7" stroke-linecap="round"/>
+<path d="M44 34q-8 20 30 20" stroke="#c96a6a" stroke-width="6" fill="none"/><text x="30" y="52" text-anchor="end" fill="#8f3f3f">buig</text>
+<path d="M56 34q10 24 30 20" stroke="#d7b0b0" stroke-width="4" fill="none"/>
+<text x="240" y="16" fill="#2f7d4f">strekken</text>
+<line x1="210" y1="30" x2="210" y2="80" stroke="#b9a888" stroke-width="7" stroke-linecap="round"/><line x1="210" y1="80" x2="250" y2="104" stroke="#b9a888" stroke-width="7" stroke-linecap="round"/>
+<path d="M216 34q10 40 34 60" stroke="#4ea36b" stroke-width="6" fill="none"/><text x="272" y="70" text-anchor="start" fill="#2f7d4f">strek</text>
+<path d="M204 34q-8 30 24 54" stroke="#bfe0cb" stroke-width="4" fill="none"/>
+</g></svg><div class="sam-figcap">Buigen: buigspier trekt, strekspier ontspant. Strekken: strekspier trekt, buigspier ontspant</div></div>
+<div class="sam-onthoud"><strong>Onthoud:</strong> antagonisten wisselen af: de een trekt terwijl de ander ontspant.</div>
+</div>`,
 'havo_bi_M4':`<div class="sam-intro">Planten <strong>maken hun eigen voedsel</strong>. Met <strong>fotosynthese</strong> bouwen ze glucose op uit CO2 en water, met <strong>licht</strong> als energiebron. Alle cellen <strong>verbranden</strong> die glucose weer met zuurstof (<strong>celademhaling</strong>) om er energie uit te halen. Hieronder eerst een begrippenlijst, daarna drie korte hoofdstukjes met beeld.</div>
 <table class="sam-table"><thead><tr><th>Begrip</th><th>Kort</th></tr></thead><tbody>
 <tr><td><strong>Fotosynthese</strong></td><td>glucose maken uit CO2 + water met licht (in de bladgroenkorrel)</td></tr>

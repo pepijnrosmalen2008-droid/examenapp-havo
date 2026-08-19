@@ -590,6 +590,24 @@ var VAKKEN = [
       "nOe": 5,
       "nBeg": 12,
       "hasSam": true
+     },
+     {
+      "id": "O7",
+      "naam": "Beweging: gewrichten en spieren",
+      "beschrijving": "Gouden-standaardmodule bi.O.7: het skelet en gewrichten, pezen en gewrichtsbanden, en hoe antagonistische spieren (buigspier en strekspier) samenwerken bij beweging.",
+      "ceStatus": "CE",
+      "onderwerpen": [
+       "Skelet: steun en bescherming",
+       "Gewricht als beweegbare verbinding",
+       "Kraakbeen, gewrichtsband en pees",
+       "Spieren kunnen alleen samentrekken",
+       "Antagonisten: buigspier en strekspier",
+       "Voorbeeld: buigen en strekken van de arm"
+      ],
+      "nSv": 25,
+      "nOe": 5,
+      "nBeg": 12,
+      "hasSam": true
      }
     ]
    },

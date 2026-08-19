@@ -20091,6 +20091,570 @@ var VAKKEN = [
         "antwoord": "Goed kauwen is mechanische vertering: het maakt het voedsel in kleinere stukjes. Daardoor krijgt het voedsel een groter oppervlak. Verteringsenzymen kunnen dan op een groter oppervlak tegelijk werken, waardoor de chemische vertering sneller en vollediger verloopt."
        }
       ]
+     },
+     {
+      "id": "O7",
+      "naam": "Beweging: gewrichten en spieren",
+      "beschrijving": "Gouden-standaardmodule bi.O.7: het skelet en gewrichten, pezen en gewrichtsbanden, en hoe antagonistische spieren (buigspier en strekspier) samenwerken bij beweging.",
+      "ceStatus": "CE",
+      "onderwerpen": [
+       "Skelet: steun en bescherming",
+       "Gewricht als beweegbare verbinding",
+       "Kraakbeen, gewrichtsband en pees",
+       "Spieren kunnen alleen samentrekken",
+       "Antagonisten: buigspier en strekspier",
+       "Voorbeeld: buigen en strekken van de arm"
+      ],
+      "sam": "Je botten vormen samen het skelet, dat je lichaam steun en bescherming geeft. Op plaatsen waar botten kunnen bewegen zit een gewricht. Kraakbeen zorgt voor demping, een gewrichtsband houdt de botten bij elkaar en een pees verbindt een spier met een bot. Spieren kunnen alleen samentrekken (trekken), niet duwen. Daarom werken ze in paren die tegengesteld werken: de antagonisten. Om je arm te buigen trekt de buigspier samen; om hem te strekken trekt de strekspier samen. Een spier kan dus nooit zelf zowel buigen als strekken.",
+      "begrippen": [
+       {
+        "t": "Skelet",
+        "d": "alle botten samen, geeft steun en bescherming"
+       },
+       {
+        "t": "Gewricht",
+        "d": "een beweegbare verbinding tussen twee botten"
+       },
+       {
+        "t": "Scharniergewricht",
+        "d": "gewricht dat maar één richting op buigt, zoals de elleboog"
+       },
+       {
+        "t": "Kogelgewricht",
+        "d": "gewricht dat alle kanten op kan draaien, zoals de schouder"
+       },
+       {
+        "t": "Kraakbeen",
+        "d": "veerkrachtig materiaal dat schokken in een gewricht dempt"
+       },
+       {
+        "t": "Gewrichtsband",
+        "d": "stevige band die de botten in een gewricht bij elkaar houdt"
+       },
+       {
+        "t": "Pees",
+        "d": "stevig weefsel dat een spier met een bot verbindt"
+       },
+       {
+        "t": "Spier",
+        "d": "weefsel dat kan samentrekken en zo beweging maakt"
+       },
+       {
+        "t": "Samentrekken",
+        "d": "korter en dikker worden van een spier, waardoor hij trekt"
+       },
+       {
+        "t": "Buigspier",
+        "d": "spier die een gewricht buigt als hij samentrekt"
+       },
+       {
+        "t": "Strekspier",
+        "d": "spier die een gewricht strekt als hij samentrekt"
+       },
+       {
+        "t": "Antagonisten",
+        "d": "twee spieren met een tegengestelde werking, zoals buig- en strekspier"
+       }
+      ],
+      "sv": [
+       {
+        "v": "Wat is de functie van het skelet?",
+        "o": [
+         "Steun en bescherming geven",
+         "Het bloed rondpompen door het hele lichaam",
+         "Voedsel afbreken tot kleine bouwstenen",
+         "Zuurstof opnemen in de longblaasjes"
+        ],
+        "c": 0,
+        "d": 1,
+        "u": "Het skelet geeft het lichaam steun en beschermt organen.",
+        "uo": [
+         "Klopt: steun en bescherming.",
+         "Pompen doet het hart.",
+         "Afbreken doet het verteringsstelsel.",
+         "Zuurstof opnemen doen de longen."
+        ],
+        "uh": "Skelet = steun en bescherming."
+       },
+       {
+        "v": "Wat is een gewricht?",
+        "o": [
+         "Een spier die een bot kan buigen",
+         "Een beweegbare verbinding tussen botten",
+         "Een pees die de spier aan het bot vastmaakt",
+         "Een band die de spier omhult"
+        ],
+        "c": 1,
+        "d": 1,
+        "u": "Een gewricht is een plek waar twee botten beweegbaar met elkaar zijn verbonden.",
+        "uo": [
+         "Een spier is geen gewricht.",
+         "Klopt: een beweegbare verbinding tussen botten.",
+         "Dat is een pees, geen gewricht.",
+         "Dat is geen gewricht."
+        ],
+        "uh": "Gewricht = beweegbare verbinding tussen botten."
+       },
+       {
+        "v": "Wat verbindt een spier met een bot?",
+        "o": [
+         "Een gewrichtsband tussen twee botten",
+         "Het kraakbeen in het gewricht",
+         "Een pees",
+         "De gewrichtsholte"
+        ],
+        "c": 2,
+        "d": 1,
+        "u": "Een pees is het stevige weefsel dat een spier aan een bot vastmaakt.",
+        "uo": [
+         "Een gewrichtsband verbindt botten, geen spier met bot.",
+         "Kraakbeen dempt schokken, het verbindt niet.",
+         "Klopt: een pees verbindt spier en bot.",
+         "De gewrichtsholte is geen verbinding."
+        ],
+        "uh": "Pees = verbindt spier met bot."
+       },
+       {
+        "v": "Wat houdt de botten in een gewricht bij elkaar?",
+        "o": [
+         "Een pees die naar de spier loopt",
+         "Het kraakbeen dat de schokken opvangt",
+         "De buigspier van het gewricht",
+         "Een gewrichtsband"
+        ],
+        "c": 3,
+        "d": 1,
+        "u": "Een gewrichtsband is de stevige band die de botten van een gewricht bij elkaar houdt.",
+        "uo": [
+         "Een pees verbindt spier met bot, niet bot met bot.",
+         "Kraakbeen dempt, het houdt niet vast.",
+         "Een spier houdt de botten niet bij elkaar.",
+         "Klopt: de gewrichtsband houdt de botten bij elkaar."
+        ],
+        "uh": "Gewrichtsband = houdt de botten bij elkaar."
+       },
+       {
+        "v": "Wat is de functie van kraakbeen in een gewricht?",
+        "o": [
+         "Schokken dempen",
+         "De botten stevig aan elkaar vastmaken",
+         "De spier aan het bot verbinden",
+         "Het bloed door het gewricht pompen"
+        ],
+        "c": 0,
+        "d": 2,
+        "u": "Kraakbeen is veerkrachtig en dempt de schokken tussen de botten in een gewricht.",
+        "uo": [
+         "Klopt: kraakbeen dempt de schokken.",
+         "Vastmaken doet de gewrichtsband.",
+         "Verbinden van spier en bot doet de pees.",
+         "Er wordt geen bloed door het gewricht gepompt."
+        ],
+        "uh": "Kraakbeen = schokdemper in het gewricht."
+       },
+       {
+        "v": "Wat kan een spier zelf doen?",
+        "o": [
+         "Zowel trekken als duwen",
+         "Alleen samentrekken",
+         "Alleen duwen tegen het bot",
+         "Zichzelf uit zichzelf verlengen"
+        ],
+        "c": 1,
+        "d": 2,
+        "u": "Een spier kan alleen samentrekken (trekken); duwen of zichzelf verlengen kan hij niet.",
+        "uo": [
+         "Duwen kan een spier niet.",
+         "Klopt: een spier kan alleen samentrekken.",
+         "Duwen kan een spier niet.",
+         "Zichzelf verlengen kan een spier niet."
+        ],
+        "uh": "Een spier kan alleen trekken (samentrekken), niet duwen."
+       },
+       {
+        "v": "Waarom zijn er twee spieren nodig om een arm te buigen en te strekken?",
+        "o": [
+         "Omdat het gewricht anders te snel slijt",
+         "Omdat een enkele spier daarvoor veel te zwaar zou worden",
+         "Omdat een spier alleen kan trekken en niet duwen",
+         "Omdat de botten anders niet groeien"
+        ],
+        "c": 2,
+        "d": 3,
+        "u": "Een spier kan alleen trekken, dus je hebt een tweede, tegengestelde spier nodig om terug te bewegen.",
+        "uo": [
+         "Slijtage is niet de reden.",
+         "Het gewicht van de spier is niet de reden.",
+         "Klopt: trekken kan wel, duwen niet, dus twee spieren.",
+         "Botgroei staat hier los van."
+        ],
+        "uh": "Spier trekt alleen, dus twee spieren voor heen en terug."
+       },
+       {
+        "v": "Wat zijn antagonisten bij beweging?",
+        "o": [
+         "Twee botten die tegen elkaar schuren",
+         "Twee gewrichtsbanden om één gewricht",
+         "Twee pezen die aan hetzelfde bot vastzitten in het gewricht",
+         "Twee spieren met een tegengestelde werking"
+        ],
+        "c": 3,
+        "d": 2,
+        "u": "Antagonisten zijn twee spieren die tegengesteld werken, zoals de buigspier en de strekspier.",
+        "uo": [
+         "Botten die schuren zijn geen antagonisten.",
+         "Twee banden zijn geen antagonisten.",
+         "Twee pezen zijn geen antagonisten.",
+         "Klopt: twee spieren met tegengestelde werking."
+        ],
+        "uh": "Antagonisten = twee spieren die tegengesteld werken."
+       },
+       {
+        "v": "Wat doet de buigspier als hij samentrekt?",
+        "o": [
+         "Hij buigt het gewricht",
+         "Hij strekt het gewricht juist",
+         "Hij houdt het gewricht stijf op zijn plek",
+         "Hij duwt het bot naar buiten"
+        ],
+        "c": 0,
+        "d": 2,
+        "u": "Als de buigspier samentrekt, buigt het gewricht (bijvoorbeeld je arm gaat omhoog).",
+        "uo": [
+         "Klopt: de buigspier buigt het gewricht.",
+         "Strekken doet juist de strekspier.",
+         "De buigspier zet het gewricht in beweging, hij houdt het niet stijf.",
+         "Een spier duwt niet."
+        ],
+        "uh": "Buigspier samentrekken = gewricht buigt."
+       },
+       {
+        "v": "Wat doet de strekspier als hij samentrekt?",
+        "o": [
+         "Hij buigt het gewricht juist",
+         "Hij strekt het gewricht",
+         "Hij ontspant het hele gewricht",
+         "Hij duwt de buigspier omhoog"
+        ],
+        "c": 1,
+        "d": 2,
+        "u": "Als de strekspier samentrekt, strekt het gewricht (bijvoorbeeld je arm gaat recht).",
+        "uo": [
+         "Buigen doet juist de buigspier.",
+         "Klopt: de strekspier strekt het gewricht.",
+         "Samentrekken is niet ontspannen.",
+         "Een spier duwt niet."
+        ],
+        "uh": "Strekspier samentrekken = gewricht strekt."
+       },
+       {
+        "v": "Wat gebeurt er met de strekspier terwijl de buigspier de arm buigt?",
+        "o": [
+         "Hij trekt tegelijk ook samen",
+         "Hij verandert in een pees",
+         "Hij ontspant",
+         "Hij houdt de arm gestrekt"
+        ],
+        "c": 2,
+        "d": 3,
+        "u": "Terwijl de buigspier samentrekt, ontspant de strekspier zodat de arm kan buigen.",
+        "uo": [
+         "Als beide zouden trekken, zou de arm niet bewegen.",
+         "Een spier verandert niet in een pees.",
+         "Klopt: de strekspier ontspant bij het buigen.",
+         "Bij het buigen wordt de arm juist niet gestrekt gehouden."
+        ],
+        "uh": "Buigen: buigspier trekt, strekspier ontspant."
+       },
+       {
+        "v": "Kan één spier zowel buigen als strekken?",
+        "o": [
+         "Ja, als de spier maar sterk genoeg getraind is",
+         "Ja, dat doet elke spier vanzelf",
+         "Ja, als er genoeg kraakbeen is",
+         "Nee, daarvoor zijn twee tegengestelde spieren nodig"
+        ],
+        "c": 3,
+        "d": 3,
+        "u": "Een spier kan alleen trekken, dus buigen en strekken vragen twee tegengestelde spieren.",
+        "uo": [
+         "Kracht verandert dit niet; een spier trekt maar één kant op.",
+         "Geen enkele spier doet beide alleen.",
+         "Kraakbeen speelt hier geen rol.",
+         "Klopt: twee tegengestelde spieren nodig."
+        ],
+        "uh": "Eén spier trekt maar één kant op: buigen en strekken vraagt twee."
+       },
+       {
+        "v": "Welk soort gewricht is de elleboog?",
+        "o": [
+         "Een scharniergewricht",
+         "Een kogelgewricht dat alle kanten op draait",
+         "Een gewricht dat helemaal niet beweegt",
+         "Een gewricht zonder kraakbeen"
+        ],
+        "c": 0,
+        "d": 2,
+        "u": "De elleboog is een scharniergewricht: het buigt en strekt in één richting.",
+        "uo": [
+         "Klopt: de elleboog is een scharniergewricht.",
+         "De schouder is een kogelgewricht, de elleboog niet.",
+         "De elleboog beweegt wel degelijk.",
+         "Ook de elleboog heeft kraakbeen."
+        ],
+        "uh": "Elleboog = scharniergewricht (één richting)."
+       },
+       {
+        "v": "Welk soort gewricht is de schouder?",
+        "o": [
+         "Een scharniergewricht dat één kant op buigt",
+         "Een kogelgewricht",
+         "Een gewricht dat vastzit en niet beweegt",
+         "Een gewricht zonder gewrichtsband"
+        ],
+        "c": 1,
+        "d": 2,
+        "u": "De schouder is een kogelgewricht: het kan alle kanten op draaien.",
+        "uo": [
+         "Een scharniergewricht buigt maar één kant op, de schouder meer.",
+         "Klopt: de schouder is een kogelgewricht.",
+         "De schouder beweegt juist heel veel.",
+         "Ook de schouder heeft gewrichtsbanden."
+        ],
+        "uh": "Schouder = kogelgewricht (alle kanten op)."
+       },
+       {
+        "v": "Waarom heb je in een gewricht kraakbeen nodig?",
+        "o": [
+         "Om de spier aan het bot te verbinden",
+         "Om het bloed sneller door het gewricht heen rond te pompen",
+         "Om de botten soepel en gedempt te laten bewegen",
+         "Om de botten aan elkaar vast te lijmen"
+        ],
+        "c": 2,
+        "d": 3,
+        "u": "Kraakbeen is glad en veerkrachtig, zodat de botten soepel over elkaar bewegen en schokken worden gedempt.",
+        "uo": [
+         "Verbinden van spier en bot doet de pees.",
+         "Kraakbeen pompt geen bloed.",
+         "Klopt: kraakbeen zorgt voor soepel en gedempt bewegen.",
+         "Vastmaken doet de gewrichtsband, niet het kraakbeen."
+        ],
+        "uh": "Kraakbeen = soepel bewegen en schokken dempen."
+       },
+       {
+        "v": "Wat betekent samentrekken van een spier?",
+        "o": [
+         "De spier wordt langer en dunner",
+         "De spier verandert in kraakbeen",
+         "De spier duwt het bot met kracht van zich af",
+         "De spier wordt korter en dikker en trekt"
+        ],
+        "c": 3,
+        "d": 2,
+        "u": "Bij samentrekken wordt een spier korter en dikker, waardoor hij aan het bot trekt.",
+        "uo": [
+         "Bij samentrekken wordt de spier juist korter, niet langer.",
+         "Een spier wordt geen kraakbeen.",
+         "Een spier duwt niet, hij trekt.",
+         "Klopt: korter en dikker, en de spier trekt."
+        ],
+        "uh": "Samentrekken = korter en dikker, de spier trekt."
+       },
+       {
+        "v": "Je strekt je arm. Welke spier trekt daarvoor samen?",
+        "o": [
+         "De strekspier",
+         "De buigspier die de arm juist buigt",
+         "Allebei de spieren tegelijk even hard",
+         "De pees die aan het bot vastzit"
+        ],
+        "c": 0,
+        "d": 3,
+        "u": "Om te strekken trekt de strekspier samen, terwijl de buigspier ontspant.",
+        "uo": [
+         "Klopt: de strekspier trekt samen om te strekken.",
+         "De buigspier buigt juist.",
+         "Als beide even hard trekken, beweegt de arm niet.",
+         "Een pees is geen spier en trekt niet zelf samen."
+        ],
+        "uh": "Strekken = strekspier trekt, buigspier ontspant."
+       },
+       {
+        "v": "Waarom kan een spier een bot niet terugduwen na het buigen?",
+        "o": [
+         "Omdat de pees tussen de spier en het bot te kort is",
+         "Omdat een spier alleen kan trekken",
+         "Omdat het kraakbeen in de weg zit",
+         "Omdat het bot te zwaar is"
+        ],
+        "c": 1,
+        "d": 3,
+        "u": "Een spier kan alleen trekken; om terug te bewegen moet de tegengestelde spier trekken.",
+        "uo": [
+         "De peeslengte is niet de reden.",
+         "Klopt: een spier trekt alleen, duwen kan niet.",
+         "Kraakbeen zit niet in de weg.",
+         "Het gewicht van het bot is niet de reden."
+        ],
+        "uh": "Een spier duwt nooit, hij trekt alleen."
+       },
+       {
+        "v": "Welke twee spieren zijn antagonisten in de bovenarm?",
+        "o": [
+         "Twee buigspieren naast elkaar",
+         "De pees en de gewrichtsband",
+         "De buigspier en de strekspier",
+         "Het kraakbeen en het bot in het midden van het gewricht"
+        ],
+        "c": 2,
+        "d": 2,
+        "u": "In de bovenarm zijn de buigspier en de strekspier antagonisten: ze werken tegengesteld.",
+        "uo": [
+         "Twee buigspieren werken niet tegengesteld.",
+         "Een pees en band zijn geen spieren.",
+         "Klopt: buigspier en strekspier zijn antagonisten.",
+         "Kraakbeen en bot zijn geen spieren."
+        ],
+        "uh": "Bovenarm: buigspier en strekspier zijn antagonisten."
+       },
+       {
+        "v": "Wat gebeurt er als beide antagonisten tegelijk even hard samentrekken?",
+        "o": [
+         "De arm beweegt heel snel",
+         "De arm buigt automatisch",
+         "De spieren veranderen in botten",
+         "Het gewricht blijft stil staan"
+        ],
+        "c": 3,
+        "d": 3,
+        "u": "Als de buig- en strekspier even hard trekken, heffen ze elkaar op en blijft het gewricht stil.",
+        "uo": [
+         "Bij tegengesteld even hard trekken beweegt er juist niets.",
+         "De arm buigt dan juist niet.",
+         "Spieren veranderen niet in botten.",
+         "Klopt: ze heffen elkaar op, het gewricht staat stil."
+        ],
+        "uh": "Beide antagonisten even hard = gewricht staat stil."
+       },
+       {
+        "v": "Waarvoor dient een gewrichtsband precies?",
+        "o": [
+         "De botten van een gewricht bijeen houden",
+         "De spier vanuit zichzelf laten samentrekken en ontspannen",
+         "De schokken in het gewricht dempen",
+         "De spier met het bot verbinden"
+        ],
+        "c": 0,
+        "d": 2,
+        "u": "De gewrichtsband houdt de botten van een gewricht stevig bij elkaar zodat het niet uit de kom schiet.",
+        "uo": [
+         "Klopt: de band houdt de botten bijeen.",
+         "Samentrekken doet de spier zelf.",
+         "Dempen doet het kraakbeen.",
+         "Verbinden van spier en bot doet de pees."
+        ],
+        "uh": "Gewrichtsband = houdt de botten bijeen."
+       },
+       {
+        "v": "Welke uitspraak over spieren klopt?",
+        "o": [
+         "Een spier kan zowel trekken als duwen",
+         "Een spier kan alleen trekken, dus werkt in een paar",
+         "Een spier kan zichzelf strekken",
+         "Een spier verbindt rechtstreeks twee botten met elkaar"
+        ],
+        "c": 1,
+        "d": 2,
+        "u": "Een spier kan alleen trekken; daarom werken spieren in tegengestelde paren (antagonisten).",
+        "uo": [
+         "Duwen kan een spier niet.",
+         "Klopt: alleen trekken, dus in een paar.",
+         "Zichzelf strekken kan een spier niet.",
+         "Botten verbinden doet de gewrichtsband, niet de spier."
+        ],
+        "uh": "Spier trekt alleen, dus werkt in een antagonistenpaar."
+       },
+       {
+        "v": "Iemand tilt een boodschappentas op door de arm te buigen. Welke spier trekt samen?",
+        "o": [
+         "De strekspier die de arm juist strekt",
+         "De pees aan de onderarm",
+         "De buigspier",
+         "De gewrichtsband van de elleboog"
+        ],
+        "c": 2,
+        "d": 3,
+        "u": "Om de arm te buigen en de tas op te tillen trekt de buigspier samen; de strekspier ontspant.",
+        "uo": [
+         "De strekspier strekt juist.",
+         "Een pees trekt niet zelf samen.",
+         "Klopt: de buigspier buigt de arm om te tillen.",
+         "Een gewrichtsband trekt niet samen."
+        ],
+        "uh": "Arm buigen om te tillen = buigspier trekt samen."
+       },
+       {
+        "v": "Waarom kan de elleboog niet alle kanten op draaien zoals de schouder?",
+        "o": [
+         "Omdat de elleboog geen kraakbeen heeft",
+         "Omdat de elleboog helemaal geen eigen spieren zou hebben",
+         "Omdat de elleboog vastzit aan het bot",
+         "Omdat de elleboog een scharniergewricht is"
+        ],
+        "c": 3,
+        "d": 3,
+        "u": "De elleboog is een scharniergewricht en buigt daarom maar in één richting, anders dan het kogelgewricht van de schouder.",
+        "uo": [
+         "De elleboog heeft wel kraakbeen.",
+         "De elleboog heeft wel spieren.",
+         "Elk gewricht zit aan botten vast, dat is niet de reden.",
+         "Klopt: als scharniergewricht buigt hij maar één kant op."
+        ],
+        "uh": "Elleboog = scharnier (één richting), schouder = kogel (alle kanten)."
+       },
+       {
+        "v": "Wat is de taak van een pees bij het bewegen?",
+        "o": [
+         "De trekkracht van de spier op het bot overbrengen",
+         "Het gewricht als een stevige band bijeen houden",
+         "De schokken tussen de botten in het gewricht dempen",
+         "De botten van het skelet zelf laten groeien"
+        ],
+        "c": 0,
+        "d": 3,
+        "u": "De pees brengt de trekkracht van de samentrekkende spier over op het bot, waardoor het gewricht beweegt.",
+        "uo": [
+         "Klopt: de pees geeft de trekkracht door aan het bot.",
+         "Bijeen houden doet de gewrichtsband.",
+         "Dempen doet het kraakbeen.",
+         "Botgroei is geen taak van de pees."
+        ],
+        "uh": "Pees = brengt de trekkracht van de spier over op het bot."
+       }
+      ],
+      "oe": [
+       {
+        "vraag": "Leg uit waarom er twee spieren nodig zijn om je arm te buigen en te strekken.",
+        "antwoord": "Een spier kan alleen samentrekken, oftewel trekken, en niet duwen. Om de arm te buigen trekt de buigspier samen. Om de arm daarna weer te strekken kan diezelfde spier niet terugduwen; daarvoor moet de strekspier samentrekken. Omdat de twee spieren tegengesteld werken, heten ze antagonisten."
+       },
+       {
+        "vraag": "Beschrijf de functie van de pees, de gewrichtsband en het kraakbeen in en rond een gewricht.",
+        "antwoord": "De pees verbindt een spier met een bot, zodat de trekkracht van de spier op het bot wordt overgebracht. De gewrichtsband houdt de twee botten van het gewricht bij elkaar. Het kraakbeen bedekt de uiteinden van de botten en dempt de schokken, zodat de botten soepel over elkaar bewegen."
+       },
+       {
+        "vraag": "Leg uit wat er gebeurt met de buigspier en de strekspier als je je arm strekt.",
+        "antwoord": "Bij het strekken trekt de strekspier samen: hij wordt korter en dikker en trekt aan het bot, waardoor de arm zich strekt. Tegelijk ontspant de buigspier, zodat hij het strekken niet tegenwerkt. De twee spieren werken dus altijd tegengesteld."
+       },
+       {
+        "vraag": "Leg uit waarom een spier een bot niet kan terugduwen na een beweging.",
+        "antwoord": "Een spier kan alleen samentrekken en zo trekken; hij kan zichzelf niet verlengen of duwen. Daardoor kan een spier een bot niet terugduwen. De terugbeweging moet daarom worden gemaakt door de tegengestelde spier, die op zijn beurt samentrekt en trekt."
+       },
+       {
+        "vraag": "Wat is het verschil tussen een scharniergewricht en een kogelgewricht? Geef van elk een voorbeeld.",
+        "antwoord": "Een scharniergewricht kan maar in één richting buigen en strekken, zoals de elleboog of de knie. Een kogelgewricht kan alle kanten op draaien, zoals de schouder of de heup. Het verschil zit in de vorm van de botuiteinden en dus in de bewegingsvrijheid."
+       }
+      ]
      }
     ],
     "beschrijving": "Stofwisseling van het organisme, zelfregulatie en afweer",
