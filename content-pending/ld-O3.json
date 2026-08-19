@@ -1,0 +1,566 @@
+{
+  "id": "O3",
+  "naam": "Homeostase en antagonisme",
+  "beschrijving": "Gouden-standaardmodule bi.O.3: homeostase als het constant houden van het inwendig milieu, negatieve terugkoppeling, antagonistische regeling en toepassingen op temperatuur- en waterregeling.",
+  "ceStatus": "CE",
+  "onderwerpen": [
+    "Homeostase: constant inwendig milieu",
+    "Waarom homeostase nodig is (enzymen/cellen)",
+    "Negatieve terugkoppeling (feedback)",
+    "Setpoint / normwaarde",
+    "Antagonisme: twee tegengestelde regelingen",
+    "Temperatuurregeling (zweten, rillen, bloedvaten)",
+    "Waterhuishouding en nieren (ADH)",
+    "Receptor, verwerkingscentrum, effector"
+  ],
+  "sam": "Homeostase betekent dat je lichaam het inwendig milieu (temperatuur, bloedsuiker, watergehalte) zo constant mogelijk houdt. Dat gebeurt met negatieve terugkoppeling: een afwijking van de normwaarde wordt gemeten en juist tegengewerkt. Vaak werken twee tegengestelde regelingen samen (antagonisme), zoals insuline en glucagon bij de bloedsuiker, of zweten en rillen bij de temperatuur. Zo blijven cellen en enzymen goed werken.",
+  "begrippen": [
+    {
+      "t": "Homeostase",
+      "d": "het constant houden van het inwendig milieu van het lichaam"
+    },
+    {
+      "t": "Inwendig milieu",
+      "d": "de omgeving van de cellen: weefselvloeistof en bloed"
+    },
+    {
+      "t": "Negatieve terugkoppeling",
+      "d": "een afwijking van de normwaarde wordt gemeten en tegengewerkt"
+    },
+    {
+      "t": "Normwaarde",
+      "d": "de streefwaarde waar het lichaam op probeert te blijven (setpoint)"
+    },
+    {
+      "t": "Antagonisme",
+      "d": "twee regelingen of hormonen met een tegengestelde werking"
+    },
+    {
+      "t": "Receptor",
+      "d": "meet de afwijking (bijvoorbeeld een temperatuur- of glucosesensor)"
+    },
+    {
+      "t": "Effector",
+      "d": "voert de reactie uit die de afwijking corrigeert (spier of klier)"
+    },
+    {
+      "t": "Thermoregulatie",
+      "d": "het constant houden van de lichaamstemperatuur rond 37 graden"
+    },
+    {
+      "t": "Zweten",
+      "d": "afgeven van warmte door verdamping als je te warm wordt"
+    },
+    {
+      "t": "Rillen",
+      "d": "spiertrillingen die warmte maken als je te koud wordt"
+    },
+    {
+      "t": "ADH",
+      "d": "hormoon dat de nieren meer water laat terughalen bij watertekort"
+    },
+    {
+      "t": "Osmoregulatie",
+      "d": "het constant houden van het water- en zoutgehalte van het lichaam"
+    }
+  ],
+  "sv": [
+    {
+      "v": "Wat betekent homeostase?",
+      "o": [
+        "Het inwendig milieu constant houden",
+        "Het lichaam laten groeien door celdeling en eiwitopbouw in weefsels",
+        "Alle afvalstoffen tegelijk uit het bloed verwijderen via de nieren",
+        "Zo snel mogelijk energie maken uit glucose in de spiercellen"
+      ],
+      "c": 0,
+      "d": 1,
+      "u": "Homeostase = het inwendig milieu (temperatuur, bloedsuiker, water) stabiel houden.",
+      "uo": [
+        "Klopt: constant houden van het inwendig milieu.",
+        "Nee, dat is groei, niet homeostase.",
+        "Uitscheiding is iets anders dan homeostase.",
+        "Dat is celademhaling, niet homeostase."
+      ],
+      "uh": "Homeostase = alles binnen het lichaam stabiel houden."
+    },
+    {
+      "v": "Wat is het inwendig milieu?",
+      "o": [
+        "De lucht en temperatuur buiten het lichaam waarin je leeft",
+        "De omgeving van de cellen",
+        "De inhoud van de darmen waar het voedsel wordt verteerd",
+        "Alleen de vloeistof binnen in elke afzonderlijke lichaamscel"
+      ],
+      "c": 1,
+      "d": 1,
+      "u": "Het inwendig milieu is de omgeving van de cellen: weefselvloeistof en bloed.",
+      "uo": [
+        "Dat is juist het uitwendig milieu.",
+        "Klopt: het milieu rondom de cellen.",
+        "De darminhoud hoort bij de buitenwereld.",
+        "Dat is het milieu binnen de cel, niet eromheen."
+      ],
+      "uh": "Inwendig milieu = weefselvloeistof en bloed rond de cellen."
+    },
+    {
+      "v": "Waarom is homeostase belangrijk voor je cellen?",
+      "o": [
+        "Zo kunnen de cellen sneller en vaker delen dan normaal",
+        "Dan hoeven de cellen geen zuurstof meer op te nemen",
+        "Enzymen werken dan het beste",
+        "Cellen kunnen dan zonder voeding heel lang blijven leven"
+      ],
+      "c": 2,
+      "d": 2,
+      "u": "Bij een stabiele temperatuur en pH werken enzymen en cellen optimaal.",
+      "uo": [
+        "Homeostase gaat over stabiliteit, niet over sneller delen.",
+        "Cellen blijven gewoon zuurstof nodig hebben.",
+        "Klopt: stabiele omstandigheden = optimale enzymwerking.",
+        "Voeding blijft altijd nodig."
+      ],
+      "uh": "Stabiel milieu = enzymen werken optimaal."
+    },
+    {
+      "v": "Wat is negatieve terugkoppeling?",
+      "o": [
+        "Een afwijking wordt juist steeds verder versterkt en vergroot",
+        "Het lichaam reageert helemaal niet op een verandering",
+        "Twee organen nemen elkaars taken volledig van elkaar over",
+        "Een afwijking wordt tegengewerkt"
+      ],
+      "c": 3,
+      "d": 2,
+      "u": "Bij negatieve terugkoppeling wordt een afwijking van de normwaarde tegengewerkt.",
+      "uo": [
+        "Dat is juist positieve terugkoppeling.",
+        "Er wordt wel degelijk gereageerd.",
+        "Dat is geen terugkoppeling.",
+        "Klopt: de afwijking wordt gecorrigeerd."
+      ],
+      "uh": "Negatieve terugkoppeling = afwijking tegenwerken, terug naar normaal."
+    },
+    {
+      "v": "Wat is de normwaarde?",
+      "o": [
+        "De streefwaarde van het lichaam",
+        "De hoogste waarde die het lichaam nog net kan overleven",
+        "De waarde die alleen tijdens zware inspanning wordt bereikt",
+        "Een waarde die per persoon elke dag heel sterk verschilt"
+      ],
+      "c": 0,
+      "d": 1,
+      "u": "De normwaarde (setpoint) is de waarde waar het lichaam op probeert te blijven.",
+      "uo": [
+        "Klopt: de streef- of setpointwaarde.",
+        "Het is de streefwaarde, niet de grenswaarde.",
+        "Nee, het is de gewone streefwaarde in rust en actie.",
+        "De normwaarde is juist vrij stabiel."
+      ],
+      "uh": "Normwaarde = het setpoint waar het lichaam naartoe regelt."
+    },
+    {
+      "v": "Wat betekent antagonisme bij regeling?",
+      "o": [
+        "Twee processen die precies hetzelfde doen en elkaar versterken",
+        "Twee tegengestelde werkingen",
+        "Een proces dat maar in een enkele richting kan werken",
+        "Een regeling die alleen door de zenuwen wordt gestuurd"
+      ],
+      "c": 1,
+      "d": 2,
+      "u": "Antagonisme = twee regelingen of hormonen met tegengestelde werking.",
+      "uo": [
+        "Nee, antagonisten werken juist tegengesteld.",
+        "Klopt: tegengestelde werkingen die elkaar in balans houden.",
+        "Antagonisme betekent twee richtingen, niet een.",
+        "Antagonisme gaat over de werking, niet over zenuw of hormoon."
+      ],
+      "uh": "Antagonisme = tegenwerken, zoals insuline en glucagon."
+    },
+    {
+      "v": "Welk paar hormonen is een voorbeeld van antagonisme?",
+      "o": [
+        "Insuline en het hormoon adrenaline uit de bijnier",
+        "Twee moleculen insuline die samen worden afgegeven",
+        "Insuline en glucagon",
+        "Adrenaline en het spijsverteringsenzym amylase"
+      ],
+      "c": 2,
+      "d": 2,
+      "u": "Insuline verlaagt en glucagon verhoogt de bloedsuiker: echte antagonisten.",
+      "uo": [
+        "Adrenaline en insuline vormen niet het standaardpaar.",
+        "Twee keer insuline is geen tegengestelde werking.",
+        "Klopt: insuline en glucagon werken tegengesteld.",
+        "Amylase is een enzym, geen hormoon."
+      ],
+      "uh": "Insuline omlaag, glucagon omhoog: het klassieke antagonistenpaar."
+    },
+    {
+      "v": "Wat gebeurt er bij thermoregulatie als je het te warm krijgt?",
+      "o": [
+        "Je gaat rillen om extra lichaamswarmte te maken",
+        "Je bloedvaten in de huid worden juist nauwer",
+        "Je lichaamstemperatuur stijgt ongeremd verder door",
+        "Je gaat zweten"
+      ],
+      "c": 3,
+      "d": 2,
+      "u": "Bij warmte geeft het lichaam warmte af door te zweten en de huidvaten te verwijden.",
+      "uo": [
+        "Rillen maakt juist warmte, dat is bij kou.",
+        "Bij warmte gaan de vaten juist wijder open.",
+        "De regeling voorkomt juist verder stijgen.",
+        "Klopt: zweten geeft warmte af door verdamping."
+      ],
+      "uh": "Te warm = zweten en bloedvaten wijder om warmte kwijt te raken."
+    },
+    {
+      "v": "Wat gebeurt er als je het te koud krijgt?",
+      "o": [
+        "Je gaat rillen",
+        "Je huid gaat juist heel sterk zweten om af te koelen",
+        "De bloedvaten in de huid worden veel wijder open gezet",
+        "Je stopt volledig met het verbranden van voedingsstoffen"
+      ],
+      "c": 0,
+      "d": 2,
+      "u": "Bij kou maakt het lichaam warmte door te rillen en houdt warmte vast met nauwe huidvaten.",
+      "uo": [
+        "Klopt: rillen (spiertrillingen) maakt warmte.",
+        "Zweten koelt af, dat wil je bij kou juist niet.",
+        "Bij kou gaan de vaten juist nauwer, niet wijder.",
+        "Verbranding gaat juist door om warmte te maken."
+      ],
+      "uh": "Te koud = rillen en bloedvaten nauwer om warmte vast te houden."
+    },
+    {
+      "v": "Rond welke temperatuur houdt je lichaam zich stabiel?",
+      "o": [
+        "Rond de 30 graden, net als de gemiddelde kamertemperatuur",
+        "37 graden",
+        "Precies gelijk aan de temperatuur van de omgeving buiten",
+        "Rond de 42 graden, want dan werken enzymen het snelst"
+      ],
+      "c": 1,
+      "d": 1,
+      "u": "De lichaamstemperatuur wordt rond 37 graden gehouden.",
+      "uo": [
+        "30 graden is te laag voor het lichaam.",
+        "Klopt: ongeveer 37 graden.",
+        "Het lichaam regelt juist onafhankelijk van buiten.",
+        "42 graden is gevaarlijk hoog, geen normwaarde."
+      ],
+      "uh": "Lichaamstemperatuur = ongeveer 37 graden."
+    },
+    {
+      "v": "Welk hormoon regelt hoeveel water de nieren terughalen?",
+      "o": [
+        "Insuline, dat ook de hoeveelheid water in het bloed bepaalt",
+        "Glucagon, dat de nieren aanzet tot meer wateropname",
+        "ADH",
+        "Adrenaline, dat vooral het watergehalte van de darm regelt"
+      ],
+      "c": 2,
+      "d": 2,
+      "u": "ADH laat de nieren meer water terughalen als er een watertekort is.",
+      "uo": [
+        "Insuline regelt de bloedsuiker, niet het water.",
+        "Glucagon regelt de bloedsuiker, niet het water.",
+        "Klopt: ADH regelt de wateropname in de nieren.",
+        "Adrenaline is het vecht-of-vluchthormoon."
+      ],
+      "uh": "ADH = antidiuretisch hormoon, houdt water vast in de nieren."
+    },
+    {
+      "v": "Je hebt weinig gedronken. Wat doet je lichaam?",
+      "o": [
+        "Juist heel veel water uitplassen om ruimte te maken",
+        "Extra zout aan de urine toevoegen om af te koelen",
+        "Niets, want het watergehalte wordt niet geregeld",
+        "Meer water terughalen"
+      ],
+      "c": 3,
+      "d": 3,
+      "u": "Bij watertekort komt er meer ADH vrij, zodat de nieren meer water terughalen (weinig, geconcentreerde urine).",
+      "uo": [
+        "Uitplassen bij tekort zou het tekort erger maken.",
+        "Zout uitscheiden koelt niet af en helpt hier niet.",
+        "Het watergehalte wordt juist wel geregeld.",
+        "Klopt: water vasthouden bij een tekort."
+      ],
+      "uh": "Weinig drinken = meer ADH = water vasthouden, weinig urine."
+    },
+    {
+      "v": "Je hebt veel gedronken. Wat gebeurt er?",
+      "o": [
+        "Je plast meer uit",
+        "Je gaat juist water vasthouden om het bloed te verdunnen",
+        "Je krijgt automatisch een veel te hoge bloedsuiker",
+        "Je lichaamstemperatuur daalt sterk door het extra water"
+      ],
+      "c": 0,
+      "d": 2,
+      "u": "Bij wateroverschot komt er minder ADH vrij, zodat je meer (verdunde) urine uitplast.",
+      "uo": [
+        "Klopt: overtollig water wordt uitgeplast.",
+        "Vasthouden bij overschot zou verkeerd zijn.",
+        "Drinken heeft geen direct effect op de bloedsuiker.",
+        "De temperatuur wordt apart geregeld."
+      ],
+      "uh": "Veel drinken = minder ADH = veel dunne urine."
+    },
+    {
+      "v": "Welk orgaan meet en corrigeert het watergehalte van het bloed?",
+      "o": [
+        "De lever, die het overtollige water opslaat als glycogeen",
+        "De nieren",
+        "De longen, die het water via de uitademing verwijderen",
+        "De maag, die water direct uit het voedsel opneemt"
+      ],
+      "c": 1,
+      "d": 2,
+      "u": "De nieren regelen het water- en zoutgehalte van het bloed (osmoregulatie).",
+      "uo": [
+        "De lever slaat glucose op, geen water als glycogeen.",
+        "Klopt: de nieren regelen de waterhuishouding.",
+        "De longen spelen maar een kleine rol bij water.",
+        "De maag regelt de waterbalans niet."
+      ],
+      "uh": "Nieren = het regelorgaan voor water en zout."
+    },
+    {
+      "v": "Welke volgorde hoort bij een terugkoppeling?",
+      "o": [
+        "Effector, dan pas de receptor, en helemaal geen centrum",
+        "Alleen een effector die uit zichzelf blijft reageren",
+        "Receptor, centrum, effector",
+        "Een centrum dat zonder meting direct de effector aanstuurt"
+      ],
+      "c": 2,
+      "d": 3,
+      "u": "Een receptor meet, het verwerkingscentrum vergelijkt met de norm, de effector corrigeert.",
+      "uo": [
+        "De receptor meet eerst, daarna pas de effector.",
+        "Zonder meting is er geen goede regeling.",
+        "Klopt: meten, vergelijken, corrigeren.",
+        "Zonder meting weet het centrum de afwijking niet."
+      ],
+      "uh": "Regelkring: receptor meet, centrum vergelijkt, effector corrigeert."
+    },
+    {
+      "v": "Waarom heet het negatieve terugkoppeling?",
+      "o": [
+        "Omdat het lichaam er altijd zieker van wordt op de lange duur",
+        "Omdat er alleen negatieve stoffen bij worden gebruikt",
+        "Omdat de reactie de afwijking juist groter maakt",
+        "De afwijking wordt tegengewerkt"
+      ],
+      "c": 3,
+      "d": 2,
+      "u": "Negatief betekent dat de reactie tegen de afwijking in gaat en die opheft.",
+      "uo": [
+        "Het maakt je juist niet ziek, het houdt je stabiel.",
+        "Negatief slaat op de richting, niet op de stoffen.",
+        "Dat is juist positieve terugkoppeling.",
+        "Klopt: de reactie werkt de afwijking tegen."
+      ],
+      "uh": "Negatief = tegen de afwijking in, terug naar de norm."
+    },
+    {
+      "v": "Wat is een voorbeeld van homeostase?",
+      "o": [
+        "Een stabiele bloedsuiker",
+        "De groei van je lengte in de loop van vele jaren",
+        "Het aanleren van een nieuwe vaardigheid door oefening",
+        "Het uitvallen van je melktanden op jonge leeftijd"
+      ],
+      "c": 0,
+      "d": 1,
+      "u": "Een stabiel gehouden bloedsuiker is een klassiek voorbeeld van homeostase.",
+      "uo": [
+        "Klopt: bloedsuiker stabiel houden is homeostase.",
+        "Groei is een blijvende verandering, geen stabiliteit.",
+        "Leren is geen homeostatisch proces.",
+        "Tandwisseling is ontwikkeling, geen homeostase."
+      ],
+      "uh": "Homeostase = stabiel houden, zoals de bloedsuiker."
+    },
+    {
+      "v": "Welke rol speelt een effector bij regeling?",
+      "o": [
+        "Hij meet als enige de afwijking van de normwaarde",
+        "Hij voert de correctie uit",
+        "Hij vergelijkt de meting met de streefwaarde in de hersenen",
+        "Hij slaat de meetgegevens op voor later gebruik"
+      ],
+      "c": 1,
+      "d": 2,
+      "u": "De effector (spier of klier) voert de reactie uit die de afwijking corrigeert.",
+      "uo": [
+        "Meten doet de receptor, niet de effector.",
+        "Klopt: de effector corrigeert (bijv. zweetklier of spier).",
+        "Vergelijken doet het verwerkingscentrum.",
+        "Opslaan is geen taak in de regelkring."
+      ],
+      "uh": "Effector = de uitvoerder van de correctie."
+    },
+    {
+      "v": "Bij koorts is de normwaarde tijdelijk hoger. Wat doet je lichaam dan eerst?",
+      "o": [
+        "Meteen flink zweten om zo snel mogelijk af te koelen",
+        "De bloedvaten in de huid heel wijd openzetten",
+        "Rillen om op te warmen",
+        "Stoppen met alle warmteproductie in de spieren"
+      ],
+      "c": 2,
+      "d": 3,
+      "u": "Bij koorts ligt de normwaarde hoger, dus je lichaam voelt zich te koud en gaat rillen om op te warmen.",
+      "uo": [
+        "Zweten koelt af, dat wil je bij een hogere norm juist niet.",
+        "Wijde vaten geven warmte af, verkeerde richting.",
+        "Klopt: je lichaam werkt naar de hogere norm toe door te rillen.",
+        "Warmteproductie is juist nodig om de norm te halen."
+      ],
+      "uh": "Koorts = hogere norm, dus eerst rillen om op te warmen."
+    },
+    {
+      "v": "Wat gebeurt er als de bloedsuiker te hoog is?",
+      "o": [
+        "Glucagon verlaagt de bloedsuiker weer naar de norm",
+        "Er komt adrenaline vrij om de suiker verder te verhogen",
+        "Het lichaam doet niets en wacht tot het vanzelf zakt",
+        "Insuline verlaagt hem"
+      ],
+      "c": 3,
+      "d": 2,
+      "u": "Bij een te hoge bloedsuiker komt insuline vrij dat hem verlaagt: negatieve terugkoppeling.",
+      "uo": [
+        "Glucagon verhoogt juist, dat past niet.",
+        "Adrenaline verhoogt juist de bloedsuiker.",
+        "Het lichaam corrigeert wel degelijk actief.",
+        "Klopt: insuline verlaagt de bloedsuiker."
+      ],
+      "uh": "Te hoog = insuline verlaagt (negatieve terugkoppeling)."
+    },
+    {
+      "v": "Waarom werkt homeostase vaak met twee antagonisten?",
+      "o": [
+        "Zo kun je beide kanten op corrigeren",
+        "Omdat een enkel hormoon nooit door het bloed kan reizen",
+        "Omdat het lichaam alleen bij hoge waarden hoeft in te grijpen",
+        "Omdat twee hormonen altijd samen precies hetzelfde doen"
+      ],
+      "c": 0,
+      "d": 3,
+      "u": "Met twee tegengestelde regelingen kan het lichaam een waarde zowel verhogen als verlagen.",
+      "uo": [
+        "Klopt: omhoog en omlaag bijsturen kan alleen met twee kanten.",
+        "Een enkel hormoon reist prima door het bloed.",
+        "Ook bij lage waarden is ingrijpen nodig.",
+        "Antagonisten doen juist het tegenovergestelde."
+      ],
+      "uh": "Twee antagonisten = zowel omhoog als omlaag kunnen bijsturen."
+    },
+    {
+      "v": "Wat is osmoregulatie?",
+      "o": [
+        "Het regelen van de lichaamstemperatuur rond 37 graden",
+        "Het water- en zoutgehalte regelen",
+        "Het opbouwen van glucose uit CO2 en licht in de cel",
+        "Het transport van zuurstof door de rode bloedcellen"
+      ],
+      "c": 1,
+      "d": 1,
+      "u": "Osmoregulatie = het constant houden van het water- en zoutgehalte.",
+      "uo": [
+        "Dat is thermoregulatie, niet osmoregulatie.",
+        "Klopt: water en zout in balans houden.",
+        "Dat is fotosynthese.",
+        "Dat is zuurstoftransport, iets anders."
+      ],
+      "uh": "Osmoregulatie = water en zout stabiel houden."
+    },
+    {
+      "v": "Iemand zweet veel op een hete dag. Wat regelt het lichaam daarna?",
+      "o": [
+        "Het gaat juist nog veel meer water uitplassen dan normaal",
+        "Het verhoogt meteen de bloedsuiker met glucagon",
+        "Het houdt meer water vast",
+        "Het verlaagt de lichaamstemperatuur ver onder de norm"
+      ],
+      "c": 2,
+      "d": 3,
+      "u": "Door zweten verlies je water, dus komt er meer ADH vrij en houden de nieren water vast.",
+      "uo": [
+        "Meer uitplassen zou het waterverlies erger maken.",
+        "Bloedsuiker staat hier los van het zweten.",
+        "Klopt: waterverlies wordt gecompenseerd door vasthouden.",
+        "De temperatuur wordt naar de norm geregeld, niet eronder."
+      ],
+      "uh": "Veel zweten = waterverlies = meer ADH = water vasthouden."
+    },
+    {
+      "v": "Welke uitspraak over homeostase klopt?",
+      "o": [
+        "Ze zorgt dat alle waarden in het lichaam voortdurend stijgen",
+        "Ze werkt alleen tijdens het slapen en verder nooit overdag",
+        "Ze is bij de mens volledig uitgeschakeld tijdens inspanning",
+        "Ze houdt waarden rond een normwaarde"
+      ],
+      "c": 3,
+      "d": 2,
+      "u": "Homeostase houdt waarden schommelend rond een normwaarde stabiel.",
+      "uo": [
+        "Stabiel houden is niet hetzelfde als steeds stijgen.",
+        "Homeostase werkt dag en nacht door.",
+        "Juist bij inspanning is regeling extra actief.",
+        "Klopt: waarden blijven rond het setpoint."
+      ],
+      "uh": "Homeostase = schommelen rond de normwaarde, altijd actief."
+    },
+    {
+      "v": "Waarom is negatieve terugkoppeling belangrijk voor homeostase?",
+      "o": [
+        "Ze houdt waarden bij de norm",
+        "Ze laat elke waarde in het lichaam ongeremd blijven stijgen",
+        "Ze schakelt de receptoren tijdens rust volledig uit",
+        "Ze zorgt dat twee organen elkaars taak overnemen"
+      ],
+      "c": 0,
+      "d": 3,
+      "u": "Negatieve terugkoppeling werkt afwijkingen tegen, zodat waarden rond de normwaarde blijven.",
+      "uo": [
+        "Klopt: afwijkingen worden gecorrigeerd naar de norm.",
+        "Ongeremd stijgen is juist wat wordt voorkomen.",
+        "Receptoren blijven juist meten, ook in rust.",
+        "Dat is geen terugkoppeling."
+      ],
+      "uh": "Negatieve terugkoppeling houdt waarden bij het setpoint."
+    }
+  ],
+  "oe": [
+    {
+      "vraag": "Leg uit wat wordt bedoeld met homeostase en geef een voorbeeld.",
+      "antwoord": "Homeostase is het constant houden van het inwendig milieu van het lichaam. Een voorbeeld is het stabiel houden van de bloedsuikerspiegel of de lichaamstemperatuur rond 37 graden."
+    },
+    {
+      "vraag": "Leg uit hoe negatieve terugkoppeling ervoor zorgt dat de lichaamstemperatuur stabiel blijft.",
+      "antwoord": "Een receptor meet de temperatuur. Bij een te hoge temperatuur zorgt het lichaam voor warmteafgifte (zweten, bloedvaten wijder), bij een te lage voor warmteproductie (rillen, bloedvaten nauwer). De afwijking wordt zo steeds tegengewerkt, waardoor de temperatuur terugkeert naar de normwaarde."
+    },
+    {
+      "vraag": "Waarom spreken we bij insuline en glucagon van antagonisme?",
+      "antwoord": "Insuline en glucagon hebben een tegengestelde werking: insuline verlaagt de bloedsuiker en glucagon verhoogt hem. Doordat ze in tegengestelde richting werken, kan het lichaam de bloedsuiker zowel omlaag als omhoog bijsturen."
+    },
+    {
+      "vraag": "Leg uit wat er met de urine gebeurt als iemand een hele dag weinig heeft gedronken.",
+      "antwoord": "Bij watertekort komt er meer ADH vrij. De nieren halen daardoor meer water terug uit de voorurine. De persoon plast weinig en geconcentreerde (donkere) urine uit, zodat het water in het lichaam blijft."
+    },
+    {
+      "vraag": "Noem de drie onderdelen van een regelkring en beschrijf kort hun functie.",
+      "antwoord": "De receptor meet de waarde en de afwijking van de norm. Het verwerkingscentrum vergelijkt de meting met de normwaarde. De effector (een spier of klier) voert de reactie uit die de afwijking corrigeert."
+    }
+  ]
+}

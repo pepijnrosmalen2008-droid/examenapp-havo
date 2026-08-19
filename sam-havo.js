@@ -447,6 +447,59 @@ Object.assign(SAM_RICH,{
 </svg><div class="sam-figcap">Adrenaline uit de bijnier: hart en ademhaling omhoog, extra glucose voor de spieren</div></div>
 <div class="sam-onthoud"><strong>Onthoud:</strong> adrenaline = vecht-of-vlucht: snel klaar voor actie, hart sneller en meer brandstof.</div>
 </div>`,
+'havo_bi_O3':`<div class="sam-intro"><strong>Homeostase</strong> betekent dat je lichaam het <strong>inwendig milieu</strong> (temperatuur, bloedsuiker, watergehalte) zo <strong>constant</strong> mogelijk houdt. Dat lukt met <strong>negatieve terugkoppeling</strong> en vaak met twee tegengestelde regelingen (<strong>antagonisme</strong>). Hieronder eerst een begrippenlijst, daarna drie hoofdstukjes met beeld.</div>
+<table class="sam-table"><thead><tr><th>Begrip</th><th>Kort</th></tr></thead><tbody>
+<tr><td><strong>Homeostase</strong></td><td>het inwendig milieu van het lichaam constant houden</td></tr>
+<tr><td><strong>Inwendig milieu</strong></td><td>de omgeving van de cellen: weefselvloeistof en bloed</td></tr>
+<tr><td><strong>Normwaarde</strong></td><td>de streefwaarde (setpoint) waar het lichaam op mikt</td></tr>
+<tr><td><strong>Negatieve terugkoppeling</strong></td><td>een afwijking wordt gemeten en juist tegengewerkt</td></tr>
+<tr><td><strong>Receptor / effector</strong></td><td>receptor meet de afwijking, effector voert de correctie uit</td></tr>
+<tr><td><strong>Antagonisme</strong></td><td>twee regelingen of hormonen met tegengestelde werking</td></tr>
+<tr><td><strong>Thermoregulatie</strong></td><td>de lichaamstemperatuur rond 37 graden houden</td></tr>
+<tr><td><strong>ADH</strong></td><td>hormoon dat de nieren meer water laat terughalen bij een tekort</td></tr>
+<tr><td><strong>Osmoregulatie</strong></td><td>het water- en zoutgehalte van het lichaam constant houden</td></tr>
+</tbody></table>
+<div class="sam-chapter">
+<div class="sam-ch-title"><span class="sam-ch-n">1</span> Negatieve terugkoppeling</div>
+<p>Bij <strong>negatieve terugkoppeling</strong> meet een <strong>receptor</strong> een waarde. Het <strong>verwerkingscentrum</strong> vergelijkt die met de <strong>normwaarde</strong>. Wijkt de waarde af, dan zet een <strong>effector</strong> de correctie in gang die de afwijking juist <strong>tegenwerkt</strong>. Zo blijft de waarde rond het setpoint schommelen.</p>
+<div class="sam-figure"><svg viewBox="0 0 320 150" width="100%" role="img" aria-label="Regelkring met receptor, verwerkingscentrum en effector rond een normwaarde">
+<g font-family="sans-serif" font-size="9" text-anchor="middle">
+<rect x="24" y="60" width="66" height="34" rx="8" fill="#3f8fc9"/><text x="57" y="81" fill="#fff">receptor</text>
+<rect x="127" y="60" width="66" height="34" rx="8" fill="#8f74b8"/><text x="160" y="77" fill="#fff">centrum</text><text x="160" y="89" fill="#e8def7">(norm)</text>
+<rect x="230" y="60" width="66" height="34" rx="8" fill="#4ea36b"/><text x="263" y="81" fill="#fff">effector</text>
+<path d="M90 77h33" stroke="#5a7085" stroke-width="2.5" fill="none" marker-end="url(#o3a)"/>
+<path d="M193 77h33" stroke="#5a7085" stroke-width="2.5" fill="none" marker-end="url(#o3a)"/>
+<path d="M263 96v22H57V96" stroke="#c96a6a" stroke-width="2.5" fill="none" stroke-dasharray="5 3" marker-end="url(#o3b)"/><text x="160" y="134" fill="#8f3f3f">tegenwerken (negatief)</text>
+</g><defs><marker id="o3a" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0 0l6 3-6 3z" fill="#5a7085"/></marker><marker id="o3b" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0 0l6 3-6 3z" fill="#c96a6a"/></marker></defs>
+</svg><div class="sam-figcap">Receptor meet, centrum vergelijkt met de norm, effector corrigeert de afwijking</div></div>
+<div class="sam-onthoud"><strong>Onthoud:</strong> meten, vergelijken, corrigeren. De reactie gaat tegen de afwijking in.</div>
+</div>
+<div class="sam-chapter">
+<div class="sam-ch-title"><span class="sam-ch-n">2</span> Temperatuur in balans</div>
+<p><strong>Thermoregulatie</strong> houdt je temperatuur rond <strong>37 graden</strong> met twee tegengestelde regelingen. Word je te <strong>warm</strong>, dan geef je warmte af: je gaat <strong>zweten</strong> en de bloedvaten in de huid worden <strong>wijder</strong>. Word je te <strong>koud</strong>, dan maak je warmte: je gaat <strong>rillen</strong> en de vaten worden <strong>nauwer</strong> om warmte vast te houden.</p>
+<div class="sam-figure"><svg viewBox="0 0 320 150" width="100%" role="img" aria-label="Bij warmte zweten en wijde vaten, bij kou rillen en nauwe vaten, rond de norm van 37 graden">
+<g font-family="sans-serif" font-size="9" text-anchor="middle">
+<line x1="30" y1="75" x2="290" y2="75" stroke="#9aa7b3" stroke-width="1.5" stroke-dasharray="4 3"/><text x="300" y="79" text-anchor="end" fill="#6b7885">37 C</text>
+<rect x="70" y="40" width="30" height="35" rx="4" fill="#c96a6a"/><text x="85" y="32" fill="#8f3f3f">warm</text>
+<path d="M115 52h34" stroke="#3f8fc9" stroke-width="2.5" fill="none" marker-end="url(#o3t)"/><text x="132" y="46" fill="#2e6d9a">zweten</text>
+<rect x="220" y="75" width="30" height="35" rx="4" fill="#3f8fc9"/><text x="235" y="124" fill="#2e6d9a">koud</text>
+<path d="M205 96h-34" stroke="#c96a6a" stroke-width="2.5" fill="none" marker-end="url(#o3t2)"/><text x="188" y="112" fill="#8f3f3f">rillen</text>
+</g><defs><marker id="o3t" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0 0l6 3-6 3z" fill="#3f8fc9"/></marker><marker id="o3t2" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0 0l6 3-6 3z" fill="#c96a6a"/></marker></defs>
+</svg><div class="sam-figcap">Te warm: zweten koelt af. Te koud: rillen warmt op. Samen houden ze 37 graden vast</div></div>
+<div class="sam-onthoud"><strong>Onthoud:</strong> zweten en rillen zijn antagonisten die de temperatuur rond 37 graden houden.</div>
+</div>
+<div class="sam-chapter">
+<div class="sam-ch-title"><span class="sam-ch-n">3</span> Water in balans</div>
+<p>De <strong>nieren</strong> regelen je water- en zoutgehalte (<strong>osmoregulatie</strong>). Heb je een <strong>watertekort</strong> (weinig gedronken, veel gezweet), dan komt er meer <strong>ADH</strong> vrij en halen de nieren meer water terug: je plast <strong>weinig, donkere</strong> urine. Heb je juist veel gedronken, dan komt er minder ADH vrij en plas je <strong>veel, lichte</strong> urine.</p>
+<div class="sam-figure"><svg viewBox="0 0 320 150" width="100%" role="img" aria-label="Bij watertekort veel ADH en weinig urine, bij wateroverschot weinig ADH en veel urine">
+<g font-family="sans-serif" font-size="9" text-anchor="middle">
+<path d="M60 44c-16 22-16 40 0 40 16 0 16-18 0-40z" fill="#c98a3f"/><text x="60" y="100" fill="#9a6524">tekort</text><text x="60" y="112" fill="#9a6524">veel ADH</text>
+<path d="M120 64h44" stroke="#5a7085" stroke-width="2.5" fill="none" marker-end="url(#o3w)"/><text x="142" y="56" fill="#5a7085">nieren</text>
+<path d="M200 50c-14 20-14 34 0 34 14 0 14-14 0-34z" fill="#3f8fc9" transform="scale(0.7) translate(90 20)"/><text x="248" y="94" fill="#2e6d9a">weinig urine</text>
+</g><defs><marker id="o3w" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0 0l6 3-6 3z" fill="#5a7085"/></marker></defs>
+</svg><div class="sam-figcap">Bij een watertekort houdt ADH water vast, zodat je weinig en geconcentreerde urine plast</div></div>
+<div class="sam-onthoud"><strong>Onthoud:</strong> weinig water = meer ADH = water vasthouden. Veel water = minder ADH = veel plassen.</div>
+</div>`,
 'havo_bi_M4':`<div class="sam-intro">Planten <strong>maken hun eigen voedsel</strong>. Met <strong>fotosynthese</strong> bouwen ze glucose op uit CO2 en water, met <strong>licht</strong> als energiebron. Alle cellen <strong>verbranden</strong> die glucose weer met zuurstof (<strong>celademhaling</strong>) om er energie uit te halen. Hieronder eerst een begrippenlijst, daarna drie korte hoofdstukjes met beeld.</div>
 <table class="sam-table"><thead><tr><th>Begrip</th><th>Kort</th></tr></thead><tbody>
 <tr><td><strong>Fotosynthese</strong></td><td>glucose maken uit CO2 + water met licht (in de bladgroenkorrel)</td></tr>

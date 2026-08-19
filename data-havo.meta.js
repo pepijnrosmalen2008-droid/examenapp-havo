@@ -515,6 +515,26 @@ var VAKKEN = [
       "nOe": 5,
       "nBeg": 12,
       "hasSam": true
+     },
+     {
+      "id": "O3",
+      "naam": "Homeostase en antagonisme",
+      "beschrijving": "Gouden-standaardmodule bi.O.3: homeostase als het constant houden van het inwendig milieu, negatieve terugkoppeling, antagonistische regeling en toepassingen op temperatuur- en waterregeling.",
+      "ceStatus": "CE",
+      "onderwerpen": [
+       "Homeostase: constant inwendig milieu",
+       "Waarom homeostase nodig is (enzymen/cellen)",
+       "Negatieve terugkoppeling (feedback)",
+       "Setpoint / normwaarde",
+       "Antagonisme: twee tegengestelde regelingen",
+       "Temperatuurregeling (zweten, rillen, bloedvaten)",
+       "Waterhuishouding en nieren (ADH)",
+       "Receptor, verwerkingscentrum, effector"
+      ],
+      "nSv": 25,
+      "nOe": 5,
+      "nBeg": 12,
+      "hasSam": true
      }
     ]
    },
