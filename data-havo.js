@@ -18963,6 +18963,570 @@ var VAKKEN = [
         "antwoord": "Bij actieve immuniteit maakt het lichaam zelf antilichamen aan, bijvoorbeeld na een ziekte of na een vaccinatie. Bij passieve immuniteit krijg je kant-en-klare antilichamen die je niet zelf hebt gemaakt, bijvoorbeeld een baby die antilichamen via de moedermelk binnenkrijgt. Actieve immuniteit houdt langer aan, passieve is tijdelijk."
        }
       ]
+     },
+     {
+      "id": "O5",
+      "naam": "Transport en gasuitwisseling",
+      "beschrijving": "Gouden-standaardmodule bi.O.5: de dubbele bloedsomloop, hart en bloedvaten (slagader, ader, haarvat), de gasuitwisseling in de longblaasjes en de rol van diffusie.",
+      "ceStatus": "CE",
+      "onderwerpen": [
+       "Dubbele bloedsomloop (long- en lichaamscircuit)",
+       "Hart: boezems en kamers, kleppen",
+       "Bloedvaten: slagader, ader, haarvat",
+       "Zuurstofrijk en zuurstofarm bloed",
+       "Gasuitwisseling in de longblaasjes",
+       "Diffusie van hoge naar lage concentratie"
+      ],
+      "sam": "Je bloed vervoert stoffen door je hele lichaam. Het hart pompt het rond via twee circuits: het longcircuit (hart naar longen en terug) en het lichaamscircuit (hart naar de rest van het lichaam en terug). Slagaders voeren bloed van het hart af, aders voeren het naar het hart toe, en in de dunne haarvaten worden stoffen uitgewisseld. In de longblaasjes gebeurt de gasuitwisseling: zuurstof gaat het bloed in en koolstofdioxide gaat eruit, allebei door diffusie van een hoge naar een lage concentratie.",
+      "begrippen": [
+       {
+        "t": "Bloedsomloop",
+        "d": "het rondpompen van bloed door hart en bloedvaten"
+       },
+       {
+        "t": "Hart",
+        "d": "de spier die het bloed rondpompt, met boezems en kamers"
+       },
+       {
+        "t": "Slagader",
+        "d": "bloedvat dat bloed van het hart af voert, met een dikke wand"
+       },
+       {
+        "t": "Ader",
+        "d": "bloedvat dat bloed naar het hart toe voert, met kleppen"
+       },
+       {
+        "t": "Haarvat",
+        "d": "heel dun bloedvat waar stoffen worden uitgewisseld"
+       },
+       {
+        "t": "Longcircuit",
+        "d": "de kleine bloedsomloop tussen hart en longen"
+       },
+       {
+        "t": "Lichaamscircuit",
+        "d": "de grote bloedsomloop tussen hart en de rest van het lichaam"
+       },
+       {
+        "t": "Longblaasje",
+        "d": "klein blaasje in de long waar gasuitwisseling plaatsvindt"
+       },
+       {
+        "t": "Gasuitwisseling",
+        "d": "opname van zuurstof en afgifte van koolstofdioxide in de longen"
+       },
+       {
+        "t": "Diffusie",
+        "d": "verplaatsing van stof van een hoge naar een lage concentratie"
+       },
+       {
+        "t": "Zuurstofrijk bloed",
+        "d": "bloed met veel zuurstof, komt uit de longen"
+       },
+       {
+        "t": "Klep",
+        "d": "structuur die het bloed maar één kant op laat stromen"
+       }
+      ],
+      "sv": [
+       {
+        "v": "Wat is de functie van de bloedsomloop?",
+        "o": [
+         "Stoffen door het hele lichaam vervoeren",
+         "Het voedsel in de darm afbreken tot kleine deeltjes",
+         "Alle ziekteverwekkers herkennen en onthouden voor later",
+         "De lichaamstemperatuur meten en doorgeven aan de hersenen"
+        ],
+        "c": 0,
+        "d": 1,
+        "u": "De bloedsomloop vervoert stoffen zoals zuurstof, voeding en afval door het lichaam.",
+        "uo": [
+         "Klopt: transport van stoffen door het lichaam.",
+         "Dat is vertering, niet de bloedsomloop.",
+         "Dat is de afweer.",
+         "Dat is de temperatuurregeling."
+        ],
+        "uh": "Bloedsomloop = transport van stoffen door het lichaam."
+       },
+       {
+        "v": "Wat pompt het bloed rond?",
+        "o": [
+         "De longen",
+         "Het hart",
+         "De lever",
+         "De nieren"
+        ],
+        "c": 1,
+        "d": 1,
+        "u": "Het hart is de spier die het bloed door het lichaam pompt.",
+        "uo": [
+         "De longen doen de gasuitwisseling, niet het pompen.",
+         "Klopt: het hart pompt het bloed rond.",
+         "De lever pompt geen bloed.",
+         "De nieren regelen water, ze pompen niet."
+        ],
+        "uh": "Het hart = de pomp van de bloedsomloop."
+       },
+       {
+        "v": "Welk bloedvat voert bloed van het hart af?",
+        "o": [
+         "De ader, die het bloed juist terugbrengt",
+         "Het haarvat waar stoffen worden uitgewisseld",
+         "De slagader",
+         "Het longblaasje in de long"
+        ],
+        "c": 2,
+        "d": 1,
+        "u": "Een slagader voert bloed van het hart af en heeft daarom een dikke, sterke wand.",
+        "uo": [
+         "De ader voert juist naar het hart toe.",
+         "Het haarvat is voor uitwisseling, niet voor aanvoer.",
+         "Klopt: de slagader voert van het hart af.",
+         "Een longblaasje is geen bloedvat."
+        ],
+        "uh": "Slagader = van het hart Af."
+       },
+       {
+        "v": "Welk bloedvat voert bloed naar het hart toe?",
+        "o": [
+         "De slagader, die juist van het hart af gaat",
+         "Het haarvat dat stoffen uitwisselt in het weefsel",
+         "Het longblaasje diep in de long",
+         "De ader"
+        ],
+        "c": 3,
+        "d": 1,
+        "u": "Een ader voert bloed naar het hart toe en heeft kleppen die terugstromen tegengaan.",
+        "uo": [
+         "De slagader gaat juist van het hart af.",
+         "Het haarvat is voor uitwisseling, niet voor aanvoer naar het hart.",
+         "Een longblaasje is geen bloedvat.",
+         "Klopt: de ader voert naar het hart toe."
+        ],
+        "uh": "Ader = nAAr het hart toe (met kleppen)."
+       },
+       {
+        "v": "Waar worden stoffen tussen bloed en weefsel uitgewisseld?",
+        "o": [
+         "In de haarvaten",
+         "In de dikke slagaders vlak bij het hart",
+         "In de grote aders met hun kleppen",
+         "In de holle kamers van het hart zelf"
+        ],
+        "c": 0,
+        "d": 2,
+        "u": "Haarvaten zijn zo dun dat stoffen er makkelijk doorheen kunnen: daar gebeurt de uitwisseling.",
+        "uo": [
+         "Klopt: in de dunne haarvaten worden stoffen uitgewisseld.",
+         "Slagaders vervoeren, ze wisselen niet uit.",
+         "Aders vervoeren terug, ze wisselen niet uit.",
+         "In het hart wordt niet uitgewisseld, daar wordt gepompt."
+        ],
+        "uh": "Haarvat = dun bloedvat waar uitwisseling gebeurt."
+       },
+       {
+        "v": "Uit welke twee circuits bestaat de dubbele bloedsomloop?",
+        "o": [
+         "Het maag- en het darmcircuit voor de vertering",
+         "Het long- en het lichaamscircuit",
+         "Het zenuw- en het hormooncircuit van de regeling",
+         "Het huid- en het spiercircuit voor de warmte"
+        ],
+        "c": 1,
+        "d": 2,
+        "u": "De dubbele bloedsomloop bestaat uit het longcircuit (hart-longen) en het lichaamscircuit (hart-rest).",
+        "uo": [
+         "Maag en darm horen bij de vertering.",
+         "Klopt: het longcircuit en het lichaamscircuit.",
+         "Zenuwen en hormonen horen bij de regeling.",
+         "Huid en spieren zijn geen aparte circuits."
+        ],
+        "uh": "Dubbele bloedsomloop = longcircuit + lichaamscircuit."
+       },
+       {
+        "v": "Wat doet het longcircuit?",
+        "o": [
+         "Het brengt bloed naar alle spieren en organen",
+         "Het verteert het voedsel in de dunne darm",
+         "Het pompt bloed tussen hart en longen",
+         "Het filtert afvalstoffen uit het bloed in de nieren"
+        ],
+        "c": 2,
+        "d": 2,
+        "u": "In het longcircuit stroomt bloed van het hart naar de longen en weer terug.",
+        "uo": [
+         "Dat is juist het lichaamscircuit.",
+         "Vertering hoort niet bij de bloedsomloop.",
+         "Klopt: het longcircuit loopt tussen hart en longen.",
+         "Filtering gebeurt in de nieren, niet in het longcircuit."
+        ],
+        "uh": "Longcircuit = hart naar longen en terug."
+       },
+       {
+        "v": "Wat doet het lichaamscircuit?",
+        "o": [
+         "Het pompt bloed alleen tussen hart en longen",
+         "Het maakt in de longen zuurstof aan",
+         "Het houdt de bloedsuiker op peil met insuline",
+         "Het brengt bloed naar de rest van het lichaam"
+        ],
+        "c": 3,
+        "d": 2,
+        "u": "In het lichaamscircuit stroomt bloed van het hart naar alle organen en weer terug.",
+        "uo": [
+         "Dat is juist het longcircuit.",
+         "De longen maken geen zuurstof aan, ze nemen het op.",
+         "De bloedsuiker hoort bij de hormonale regeling.",
+         "Klopt: het lichaamscircuit gaat naar de rest van het lichaam."
+        ],
+        "uh": "Lichaamscircuit = hart naar de rest van het lichaam en terug."
+       },
+       {
+        "v": "Waar vindt de gasuitwisseling in de longen plaats?",
+        "o": [
+         "In de longblaasjes",
+         "In de dikke wand van de slagaders",
+         "In de holle kamers van het hart",
+         "In de kleppen van de grote aders"
+        ],
+        "c": 0,
+        "d": 1,
+        "u": "De gasuitwisseling gebeurt in de longblaasjes, die dunwandig zijn en veel oppervlak hebben.",
+        "uo": [
+         "Klopt: gasuitwisseling gebeurt in de longblaasjes.",
+         "Slagaders vervoeren bloed, ze wisselen geen gas uit.",
+         "In het hart wordt gepompt, niet uitgewisseld.",
+         "Kleppen sturen de stroomrichting, ze wisselen geen gas uit."
+        ],
+        "uh": "Gasuitwisseling = in de longblaasjes."
+       },
+       {
+        "v": "Welk gas gaat in de longen het bloed in?",
+        "o": [
+         "Koolstofdioxide dat het lichaam juist wil kwijtraken",
+         "Zuurstof",
+         "Stikstof dat als brandstof wordt gebruikt",
+         "Waterdamp uit de uitgeademde lucht"
+        ],
+        "c": 1,
+        "d": 1,
+        "u": "In de longblaasjes gaat zuurstof het bloed in en koolstofdioxide het bloed uit.",
+        "uo": [
+         "Koolstofdioxide gaat juist het bloed uit.",
+         "Klopt: zuurstof gaat het bloed in.",
+         "Stikstof wordt niet als brandstof opgenomen.",
+         "Waterdamp is niet het gas dat wordt opgenomen."
+        ],
+        "uh": "In de longen: zuurstof het bloed IN."
+       },
+       {
+        "v": "Welk gas gaat in de longen het bloed uit?",
+        "o": [
+         "Zuurstof, dat juist het bloed in gaat",
+         "Alleen stikstof uit de ademlucht",
+         "Koolstofdioxide",
+         "Glucose dat als afval wordt uitgeademd"
+        ],
+        "c": 2,
+        "d": 1,
+        "u": "Koolstofdioxide is een afvalstof en gaat in de longblaasjes van het bloed naar de lucht.",
+        "uo": [
+         "Zuurstof gaat juist het bloed in.",
+         "Stikstof speelt hierbij geen rol.",
+         "Klopt: koolstofdioxide gaat het bloed uit.",
+         "Glucose wordt niet uitgeademd."
+        ],
+        "uh": "In de longen: koolstofdioxide het bloed UIT."
+       },
+       {
+        "v": "Hoe verplaatst zuurstof zich van de longblaasjes naar het bloed?",
+        "o": [
+         "Door actief pompen tegen de concentratie in met energie",
+         "Doordat het hart de zuurstof rechtstreeks aanzuigt",
+         "Doordat een klep de zuurstof naar binnen duwt",
+         "Door diffusie van hoge naar lage concentratie"
+        ],
+        "c": 3,
+        "d": 2,
+        "u": "Er is veel zuurstof in het longblaasje en weinig in het bloed, dus zuurstof diffundeert naar het bloed.",
+        "uo": [
+         "Het is geen actief transport, maar diffusie.",
+         "Het hart zuigt geen zuurstof aan.",
+         "Kleppen sturen bloed, niet de diffusie van gas.",
+         "Klopt: diffusie loopt van hoge naar lage concentratie."
+        ],
+        "uh": "Gasuitwisseling = diffusie van hoog naar laag."
+       },
+       {
+        "v": "Welke kant op gaat diffusie altijd?",
+        "o": [
+         "Van hoge naar lage concentratie",
+         "Van lage naar hoge concentratie, tegen het verschil in",
+         "Altijd precies richting het hart toe",
+         "Altijd van de longen naar de darmen"
+        ],
+        "c": 0,
+        "d": 2,
+        "u": "Diffusie loopt altijd van een plek met veel stof naar een plek met weinig stof.",
+        "uo": [
+         "Klopt: van hoge naar lage concentratie.",
+         "Diffusie loopt juist andersom, van hoog naar laag.",
+         "De richting hangt af van de concentratie, niet van het hart.",
+         "De richting hangt af van de concentratie, niet van organen."
+        ],
+        "uh": "Diffusie = altijd van veel naar weinig."
+       },
+       {
+        "v": "Waarom heeft een slagader een dikke, sterke wand?",
+        "o": [
+         "Omdat er heel langzaam bloed doorheen sijpelt",
+         "Omdat het bloed er onder hoge druk doorheen gaat",
+         "Omdat er stoffen doorheen moeten worden uitgewisseld",
+         "Omdat er kleppen voor de terugstroom in zitten"
+        ],
+        "c": 1,
+        "d": 3,
+        "u": "Vlak na het hart is de bloeddruk hoog, dus de slagaderwand moet dik en sterk zijn.",
+        "uo": [
+         "Het bloed gaat er juist snel en onder druk doorheen.",
+         "Klopt: de hoge druk vraagt een dikke, sterke wand.",
+         "Uitwisseling gebeurt in haarvaten, niet in slagaders.",
+         "Kleppen zitten in aders, niet in slagaders."
+        ],
+        "uh": "Slagader dik en sterk = hoge druk vlak na het hart."
+       },
+       {
+        "v": "Waarom zitten er kleppen in de aders?",
+        "o": [
+         "Om stoffen sneller uit te wisselen met het weefsel",
+         "Om de gasuitwisseling in de longen te regelen",
+         "Om te voorkomen dat het bloed terugstroomt",
+         "Om de bloeddruk in de slagaders te verhogen"
+        ],
+        "c": 2,
+        "d": 3,
+        "u": "In de aders is de druk laag; kleppen zorgen dat het bloed maar één kant op stroomt, naar het hart.",
+        "uo": [
+         "Uitwisseling gebeurt in haarvaten, niet door kleppen.",
+         "Kleppen regelen geen gasuitwisseling.",
+         "Klopt: kleppen voorkomen terugstromen van het bloed.",
+         "Kleppen verhogen de druk niet."
+        ],
+        "uh": "Aderkleppen = bloed maar één kant op, naar het hart."
+       },
+       {
+        "v": "Zuurstofrijk bloed komt vooral uit welk deel van de bloedsomloop?",
+        "o": [
+         "Uit de spieren na zware inspanning",
+         "Uit de darmen na een maaltijd",
+         "Uit de nieren na het filteren",
+         "Uit de longen"
+        ],
+        "c": 3,
+        "d": 2,
+        "u": "In de longen neemt het bloed zuurstof op, dus daar wordt het zuurstofrijk.",
+        "uo": [
+         "In de spieren wordt zuurstof juist verbruikt.",
+         "In de darmen komt voeding bij, geen zuurstof.",
+         "In de nieren wordt gefilterd, geen zuurstof opgenomen.",
+         "Klopt: in de longen wordt het bloed zuurstofrijk."
+        ],
+        "uh": "Zuurstofrijk bloed = net uit de longen."
+       },
+       {
+        "v": "Waarom is het handig dat er heel veel longblaasjes zijn?",
+        "o": [
+         "Zo is er veel oppervlak voor gasuitwisseling",
+         "Zo wordt het hart minder zwaar belast bij het pompen",
+         "Zo kan er meer voedsel worden verteerd",
+         "Zo stroomt het bloed langzamer door het lichaam"
+        ],
+        "c": 0,
+        "d": 3,
+        "u": "Veel longblaasjes geven samen een enorm oppervlak, waardoor er veel gas tegelijk kan worden uitgewisseld.",
+        "uo": [
+         "Klopt: veel blaasjes geven veel uitwisselingsoppervlak.",
+         "Longblaasjes helpen bij gas, niet bij de pompbelasting.",
+         "Longblaasjes verteren geen voedsel.",
+         "Ze veranderen de stroomsnelheid van het bloed niet."
+        ],
+        "uh": "Veel longblaasjes = groot oppervlak = veel gasuitwisseling."
+       },
+       {
+        "v": "Iemand ademt in. In welke richting gaat de zuurstof daarna?",
+        "o": [
+         "Van het bloed terug naar de longblaasjes",
+         "Van de longblaasjes naar het bloed",
+         "Van het bloed rechtstreeks naar de darmen",
+         "Van de spieren naar de longblaasjes"
+        ],
+        "c": 1,
+        "d": 3,
+        "u": "Na inademen zit er veel zuurstof in het longblaasje en weinig in het bloed, dus zuurstof gaat naar het bloed.",
+        "uo": [
+         "Dat zou tegen het concentratieverschil in zijn.",
+         "Klopt: van veel (blaasje) naar weinig (bloed).",
+         "Zuurstof gaat eerst het bloed in, niet naar de darmen.",
+         "De richting is juist naar het bloed toe."
+        ],
+        "uh": "Ingeademde zuurstof = longblaasje naar bloed (diffusie)."
+       },
+       {
+        "v": "Wat gebeurt er met het bloed als het door het longcircuit is gegaan?",
+        "o": [
+         "Het is zuurstofarm geworden",
+         "Het bevat opeens veel voedingsstoffen",
+         "Het is zuurstofrijk geworden",
+         "Het is volledig gefilterd van afvalstoffen"
+        ],
+        "c": 2,
+        "d": 3,
+        "u": "In de longen neemt het bloed zuurstof op, dus na het longcircuit is het zuurstofrijk.",
+        "uo": [
+         "Het wordt juist zuurstofrijk, niet -arm.",
+         "Voeding komt bij in de darmen, niet in de longen.",
+         "Klopt: na de longen is het bloed zuurstofrijk.",
+         "Filteren gebeurt in de nieren, niet in het longcircuit."
+        ],
+        "uh": "Na het longcircuit = zuurstofrijk bloed."
+       },
+       {
+        "v": "Welke uitspraak over slagaders en aders klopt?",
+        "o": [
+         "Beide voeren bloed van het hart af",
+         "Beide zitten vol kleppen tegen terugstroom",
+         "Aders hebben altijd de dikste wand van alle vaten",
+         "Slagaders van het hart af, aders naar het hart toe"
+        ],
+        "c": 3,
+        "d": 2,
+        "u": "Slagaders voeren bloed van het hart af, aders voeren het naar het hart toe.",
+        "uo": [
+         "Aders voeren juist naar het hart toe.",
+         "Vooral aders hebben kleppen, slagaders niet.",
+         "Juist slagaders hebben de dikste wand.",
+         "Klopt: slagader af, ader toe."
+        ],
+        "uh": "Slagader Af, ader nAAr het hart toe."
+       },
+       {
+        "v": "Waarom kan zuurstof zonder energie het bloed in?",
+        "o": [
+         "Omdat diffusie vanzelf van hoog naar laag verloopt",
+         "Omdat het hart de zuurstof actief naar binnen pompt",
+         "Omdat de longblaasjes de zuurstof met kracht wegduwen",
+         "Omdat een klep de zuurstof tegenhoudt en verzamelt"
+        ],
+        "c": 0,
+        "d": 3,
+        "u": "Diffusie kost geen energie: de zuurstof verplaatst zich vanzelf van veel naar weinig.",
+        "uo": [
+         "Klopt: diffusie verloopt vanzelf, zonder energie.",
+         "Het hart pompt bloed, niet losse zuurstof.",
+         "De blaasjes duwen niets weg, het is diffusie.",
+         "Een klep verzamelt geen zuurstof."
+        ],
+        "uh": "Diffusie kost geen energie: vanzelf van hoog naar laag."
+       },
+       {
+        "v": "In de haarvaten bij een spier gaat zuurstof welke kant op?",
+        "o": [
+         "Van de spiercellen terug naar het bloed",
+         "Van het bloed naar de spiercellen",
+         "Van het bloed rechtstreeks naar de longen",
+         "Van de spiercellen naar de darmen"
+        ],
+        "c": 1,
+        "d": 3,
+        "u": "De spier verbruikt zuurstof, dus daar is weinig zuurstof: het diffundeert van het bloed naar de spier.",
+        "uo": [
+         "In de spier is juist weinig zuurstof, het gaat er naartoe.",
+         "Klopt: van veel (bloed) naar weinig (spier).",
+         "Bij de spier gaat zuurstof niet naar de longen.",
+         "Zuurstof gaat naar de spiercellen, niet naar de darmen."
+        ],
+        "uh": "Bij een spier: zuurstof van bloed naar de cel (diffusie)."
+       },
+       {
+        "v": "Wat is de rol van diffusie bij de gasuitwisseling?",
+        "o": [
+         "Ze pompt het bloed met kracht door de longen",
+         "Ze verhoogt de bloeddruk in de slagaders",
+         "Ze laat gassen vanzelf de goede kant op stromen",
+         "Ze filtert afvalstoffen uit het bloed"
+        ],
+        "c": 2,
+        "d": 2,
+        "u": "Door diffusie gaan zuurstof en koolstofdioxide vanzelf naar de plek met de lagere concentratie.",
+        "uo": [
+         "Pompen doet het hart, niet diffusie.",
+         "Diffusie verhoogt geen bloeddruk.",
+         "Klopt: diffusie laat gassen vanzelf de goede kant op gaan.",
+         "Filteren gebeurt in de nieren."
+        ],
+        "uh": "Diffusie stuurt het gas vanzelf naar de lage concentratie."
+       },
+       {
+        "v": "Welke uitspraak over de bloedsomloop klopt?",
+        "o": [
+         "Long- en lichaamscircuit zijn hetzelfde circuit",
+         "Slagaders voeren bloed altijd naar het hart toe",
+         "Diffusie gaat van lage naar hoge concentratie",
+         "Het longcircuit gaat naar de longen, het lichaamscircuit naar de rest"
+        ],
+        "c": 3,
+        "d": 2,
+        "u": "Het longcircuit verbindt hart en longen; het lichaamscircuit verbindt hart en de rest van het lichaam.",
+        "uo": [
+         "Het zijn juist twee verschillende circuits.",
+         "Slagaders voeren juist van het hart af.",
+         "Diffusie gaat juist van hoog naar laag.",
+         "Klopt: longcircuit naar de longen, lichaamscircuit naar de rest."
+        ],
+        "uh": "Longcircuit = longen, lichaamscircuit = de rest van het lichaam."
+       },
+       {
+        "v": "Waarom raakt het lichaamscircuit meer organen dan het longcircuit?",
+        "o": [
+         "Het longcircuit gaat alleen naar de longen en terug",
+         "Het longcircuit raakt juist elk orgaan van het lichaam aan",
+         "Beide circuits gaan naar precies dezelfde organen",
+         "Het lichaamscircuit gaat alleen naar het hart zelf"
+        ],
+        "c": 0,
+        "d": 3,
+        "u": "Het longcircuit verbindt alleen hart en longen; het lichaamscircuit voorziet alle andere organen.",
+        "uo": [
+         "Klopt: het longcircuit blijft beperkt tot de longen.",
+         "Elk orgaan raken doet juist het lichaamscircuit.",
+         "De circuits gaan naar verschillende delen.",
+         "Het lichaamscircuit gaat juist naar veel organen."
+        ],
+        "uh": "Longcircuit = alleen longen; lichaamscircuit = alle andere organen."
+       }
+      ],
+      "oe": [
+       {
+        "vraag": "Leg uit waarom een slagader een dikkere wand heeft dan een ader.",
+        "antwoord": "Een slagader voert bloed van het hart af. Vlak na het hart is de bloeddruk hoog, dus de wand moet dik en sterk zijn om die druk te weerstaan. In een ader is de druk veel lager, dus die heeft een dunnere wand, met kleppen om terugstromen tegen te gaan."
+       },
+       {
+        "vraag": "Beschrijf de weg van het bloed door het longcircuit en leg uit wat er met de zuurstof gebeurt.",
+        "antwoord": "In het longcircuit stroomt zuurstofarm bloed van het hart naar de longen. In de longblaasjes neemt het bloed door diffusie zuurstof op en geeft het koolstofdioxide af. Het nu zuurstofrijke bloed stroomt terug naar het hart, dat het via het lichaamscircuit door het lichaam pompt."
+       },
+       {
+        "vraag": "Leg uit hoe zuurstof zonder energie van de longblaasjes naar het bloed komt.",
+        "antwoord": "In het longblaasje zit veel zuurstof en in het langsstromende bloed weinig. Door dit concentratieverschil diffundeert de zuurstof vanzelf van het blaasje naar het bloed. Diffusie loopt altijd van een hoge naar een lage concentratie en kost geen energie."
+       },
+       {
+        "vraag": "Waarom is het belangrijk dat de longen uit heel veel kleine longblaasjes bestaan?",
+        "antwoord": "Veel kleine longblaasjes hebben samen een enorm oppervlak. Hoe groter het oppervlak, hoe meer zuurstof en koolstofdioxide er tegelijk door diffusie kunnen worden uitgewisseld. Zo krijgt het lichaam snel genoeg zuurstof binnen."
+       },
+       {
+        "vraag": "Leg uit welke kant zuurstof op diffundeert in de haarvaten bij een werkende spier.",
+        "antwoord": "Een werkende spier verbruikt veel zuurstof, dus er is weinig zuurstof in de spiercellen. In het bloed van de haarvaten is meer zuurstof. Daardoor diffundeert de zuurstof van het bloed naar de spiercellen, van de hoge naar de lage concentratie."
+       }
+      ]
      }
     ],
     "beschrijving": "Stofwisseling van het organisme, zelfregulatie en afweer",

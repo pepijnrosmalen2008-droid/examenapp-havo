@@ -552,6 +552,61 @@ Object.assign(SAM_RICH,{
 </svg><div class="sam-figcap">Vaccin bouwt geheugencellen op, zodat de echte besmetting later snel wordt afgeslagen</div></div>
 <div class="sam-onthoud"><strong>Onthoud:</strong> vaccin = onschadelijk antigeen, bouwt geheugen op, tweede keer reageer je snel.</div>
 </div>`,
+'havo_bi_O5':`<div class="sam-intro">Je <strong>bloed</strong> vervoert stoffen door je hele lichaam. Het <strong>hart</strong> pompt het rond via twee circuits, en in de <strong>longblaasjes</strong> gebeurt de <strong>gasuitwisseling</strong> door <strong>diffusie</strong>. Hieronder eerst een begrippenlijst, daarna drie hoofdstukjes met beeld.</div>
+<table class="sam-table"><thead><tr><th>Begrip</th><th>Kort</th></tr></thead><tbody>
+<tr><td><strong>Bloedsomloop</strong></td><td>het rondpompen van bloed door hart en bloedvaten</td></tr>
+<tr><td><strong>Longcircuit</strong></td><td>de kleine bloedsomloop tussen hart en longen</td></tr>
+<tr><td><strong>Lichaamscircuit</strong></td><td>de grote bloedsomloop tussen hart en de rest van het lichaam</td></tr>
+<tr><td><strong>Slagader</strong></td><td>voert bloed van het hart af, dikke wand (hoge druk)</td></tr>
+<tr><td><strong>Ader</strong></td><td>voert bloed naar het hart toe, met kleppen</td></tr>
+<tr><td><strong>Haarvat</strong></td><td>heel dun bloedvat waar stoffen worden uitgewisseld</td></tr>
+<tr><td><strong>Longblaasje</strong></td><td>klein blaasje in de long waar gasuitwisseling gebeurt</td></tr>
+<tr><td><strong>Gasuitwisseling</strong></td><td>zuurstof het bloed in, koolstofdioxide het bloed uit</td></tr>
+<tr><td><strong>Diffusie</strong></td><td>verplaatsing van stof van een hoge naar een lage concentratie</td></tr>
+</tbody></table>
+<div class="sam-chapter">
+<div class="sam-ch-title"><span class="sam-ch-n">1</span> De dubbele bloedsomloop</div>
+<p>Het <strong>hart</strong> pompt het bloed via twee circuits. In het <strong>longcircuit</strong> gaat het naar de <strong>longen</strong> en terug (daar wordt het zuurstofrijk). In het <strong>lichaamscircuit</strong> gaat het naar de <strong>rest van het lichaam</strong> en terug. Verwar de twee niet: longcircuit is klein (alleen de longen), lichaamscircuit is groot (alle andere organen).</p>
+<div class="sam-figure"><svg viewBox="0 0 320 150" width="100%" role="img" aria-label="Het hart pompt bloed via het longcircuit naar de longen en via het lichaamscircuit naar de rest van het lichaam">
+<g font-family="sans-serif" font-size="10" text-anchor="middle">
+<rect x="132" y="58" width="56" height="40" rx="8" fill="#c96a6a"/><text x="160" y="82" fill="#fff">hart</text>
+<ellipse cx="70" cy="42" rx="34" ry="20" fill="#8fb0c9"/><text x="70" y="46" fill="#22485f">longen</text>
+<ellipse cx="250" cy="108" rx="40" ry="20" fill="#4ea36b"/><text x="250" y="112" fill="#fff">lichaam</text>
+<path d="M132 66q-40 -10 -62 -12" stroke="#3f6d8a" stroke-width="2.5" fill="none" marker-end="url(#o5a)"/>
+<path d="M70 62q30 8 62 22" stroke="#b5522f" stroke-width="2.5" fill="none" marker-end="url(#o5b)"/>
+<text x="96" y="24" fill="#3f6d8a">longcircuit</text>
+<path d="M188 92q34 6 58 14" stroke="#b5522f" stroke-width="2.5" fill="none" marker-end="url(#o5b)"/>
+<path d="M250 88q-40 -6 -62 -20" stroke="#3f6d8a" stroke-width="2.5" fill="none" marker-end="url(#o5a)"/>
+<text x="230" y="132" fill="#2f7d4f">lichaamscircuit</text>
+</g><defs><marker id="o5a" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0 0l6 3-6 3z" fill="#3f6d8a"/></marker><marker id="o5b" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0 0l6 3-6 3z" fill="#b5522f"/></marker></defs>
+</svg><div class="sam-figcap">Longcircuit: hart naar longen en terug. Lichaamscircuit: hart naar de rest en terug</div></div>
+<div class="sam-onthoud"><strong>Onthoud:</strong> longcircuit = alleen de longen, lichaamscircuit = de rest van het lichaam.</div>
+</div>
+<div class="sam-chapter">
+<div class="sam-ch-title"><span class="sam-ch-n">2</span> Slagader, ader en haarvat</div>
+<p>Een <strong>slagader</strong> voert bloed <strong>van het hart af</strong> onder hoge druk, dus heeft een <strong>dikke wand</strong>. Een <strong>ader</strong> voert bloed <strong>naar het hart toe</strong> en heeft <strong>kleppen</strong> tegen terugstromen. Daartussen liggen de heel dunne <strong>haarvaten</strong>, waar de stoffen worden <strong>uitgewisseld</strong>.</p>
+<div class="sam-figure"><svg viewBox="0 0 320 140" width="100%" role="img" aria-label="Slagader met dikke wand, dunne haarvaten voor uitwisseling, en ader met kleppen">
+<g font-family="sans-serif" font-size="9" text-anchor="middle">
+<rect x="20" y="52" width="80" height="30" rx="14" fill="#c96a6a"/><rect x="20" y="60" width="80" height="14" fill="#f0dede"/><text x="60" y="100" fill="#8f3f3f">slagader (dik)</text>
+<path d="M100 67h30M130 60l-8 7 8 7" stroke="#b5522f" stroke-width="2" fill="none"/>
+<path d="M138 67c14 -10 28 10 42 0s28 10 42 0" stroke="#7a8a5a" stroke-width="2.5" fill="none"/><text x="160" y="46" fill="#5a6b3a">haarvaten</text>
+<rect x="220" y="56" width="80" height="22" rx="10" fill="#8fb0c9"/><path d="M244 56l0 22M244 67l8 -6M244 67l8 6" stroke="#3f6d8a" stroke-width="1.5" fill="none"/><text x="260" y="98" fill="#22485f">ader (kleppen)</text>
+</g></svg><div class="sam-figcap">Slagader dik (hoge druk), haarvaten dun (uitwisseling), ader met kleppen (terug naar het hart)</div></div>
+<div class="sam-onthoud"><strong>Onthoud:</strong> slagader Af, ader nAAr het hart toe, uitwisseling in de dunne haarvaten.</div>
+</div>
+<div class="sam-chapter">
+<div class="sam-ch-title"><span class="sam-ch-n">3</span> Gasuitwisseling en diffusie</div>
+<p>In de <strong>longblaasjes</strong> gebeurt de <strong>gasuitwisseling</strong>. Er zit veel <strong>zuurstof</strong> in het blaasje en weinig in het bloed, dus zuurstof gaat door <strong>diffusie</strong> het bloed <strong>in</strong>. Voor <strong>koolstofdioxide</strong> is het net andersom: dat gaat het bloed <strong>uit</strong>. Diffusie loopt altijd van een <strong>hoge</strong> naar een <strong>lage</strong> concentratie en kost geen energie.</p>
+<div class="sam-figure"><svg viewBox="0 0 320 140" width="100%" role="img" aria-label="In het longblaasje diffundeert zuurstof naar het bloed en koolstofdioxide naar het blaasje">
+<g font-family="sans-serif" font-size="9" text-anchor="middle">
+<circle cx="90" cy="70" r="44" fill="#eaf2f6" stroke="#8fb0c9"/><text x="90" y="70" fill="#22485f">longblaasje</text><text x="90" y="84" fill="#3f6d8a">veel O2</text>
+<rect x="196" y="40" width="30" height="60" rx="6" fill="#c96a6a"/><text x="211" y="116" fill="#8f3f3f">bloed</text><text x="211" y="34" fill="#8f3f3f">weinig O2</text>
+<path d="M136 58h56" stroke="#3f8f5f" stroke-width="2.5" fill="none" marker-end="url(#o5o)"/><text x="164" y="50" fill="#2f7d4f">O2 in</text>
+<path d="M192 86h-56" stroke="#8f6f3f" stroke-width="2.5" fill="none" marker-end="url(#o5c)"/><text x="164" y="102" fill="#7a5a2a">CO2 uit</text>
+</g><defs><marker id="o5o" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0 0l6 3-6 3z" fill="#3f8f5f"/></marker><marker id="o5c" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0 0l6 3-6 3z" fill="#8f6f3f"/></marker></defs>
+</svg><div class="sam-figcap">Zuurstof diffundeert van het blaasje (veel) naar het bloed (weinig); koolstofdioxide de andere kant op</div></div>
+<div class="sam-onthoud"><strong>Onthoud:</strong> in de longen gaat zuurstof het bloed in en koolstofdioxide eruit, door diffusie van hoog naar laag.</div>
+</div>`,
 'havo_bi_M4':`<div class="sam-intro">Planten <strong>maken hun eigen voedsel</strong>. Met <strong>fotosynthese</strong> bouwen ze glucose op uit CO2 en water, met <strong>licht</strong> als energiebron. Alle cellen <strong>verbranden</strong> die glucose weer met zuurstof (<strong>celademhaling</strong>) om er energie uit te halen. Hieronder eerst een begrippenlijst, daarna drie korte hoofdstukjes met beeld.</div>
 <table class="sam-table"><thead><tr><th>Begrip</th><th>Kort</th></tr></thead><tbody>
 <tr><td><strong>Fotosynthese</strong></td><td>glucose maken uit CO2 + water met licht (in de bladgroenkorrel)</td></tr>

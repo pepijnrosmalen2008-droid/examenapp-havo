@@ -554,6 +554,24 @@ var VAKKEN = [
       "nOe": 5,
       "nBeg": 12,
       "hasSam": true
+     },
+     {
+      "id": "O5",
+      "naam": "Transport en gasuitwisseling",
+      "beschrijving": "Gouden-standaardmodule bi.O.5: de dubbele bloedsomloop, hart en bloedvaten (slagader, ader, haarvat), de gasuitwisseling in de longblaasjes en de rol van diffusie.",
+      "ceStatus": "CE",
+      "onderwerpen": [
+       "Dubbele bloedsomloop (long- en lichaamscircuit)",
+       "Hart: boezems en kamers, kleppen",
+       "Bloedvaten: slagader, ader, haarvat",
+       "Zuurstofrijk en zuurstofarm bloed",
+       "Gasuitwisseling in de longblaasjes",
+       "Diffusie van hoge naar lage concentratie"
+      ],
+      "nSv": 25,
+      "nOe": 5,
+      "nBeg": 12,
+      "hasSam": true
      }
     ]
    },

@@ -1,7 +1,7 @@
 {
-  "total": 278,
+  "total": 303,
   "perVak": {
-    "havo/bi": 278
+    "havo/bi": 303
   },
   "perLeerdoel": {
     "havo/bi/M1": 25,
@@ -14,17 +14,18 @@
     "havo/bi/O1": 28,
     "havo/bi/O2": 25,
     "havo/bi/O3": 25,
-    "havo/bi/O4": 25
+    "havo/bi/O4": 25,
+    "havo/bi/O5": 25
   },
   "rVerdeling": {
-    "1": 114,
-    "2": 115,
-    "3": 49
+    "1": 121,
+    "2": 125,
+    "3": 57
   },
   "posVerdeling": [
-    73,
-    69,
-    70,
-    66
+    80,
+    75,
+    76,
+    72
   ]
 }
