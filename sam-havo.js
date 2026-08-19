@@ -607,6 +607,63 @@ Object.assign(SAM_RICH,{
 </svg><div class="sam-figcap">Zuurstof diffundeert van het blaasje (veel) naar het bloed (weinig); koolstofdioxide de andere kant op</div></div>
 <div class="sam-onthoud"><strong>Onthoud:</strong> in de longen gaat zuurstof het bloed in en koolstofdioxide eruit, door diffusie van hoog naar laag.</div>
 </div>`,
+'havo_bi_O6':`<div class="sam-intro">Bij de <strong>spijsvertering</strong> wordt voedsel afgebroken tot stoffen die klein genoeg zijn om in het <strong>bloed</strong> te worden opgenomen. <strong>Uitscheiding</strong> is iets anders: de <strong>nieren</strong> halen afvalstoffen uit het bloed. Hieronder eerst een begrippenlijst, daarna drie hoofdstukjes met beeld.</div>
+<table class="sam-table"><thead><tr><th>Begrip</th><th>Kort</th></tr></thead><tbody>
+<tr><td><strong>Spijsvertering</strong></td><td>voedsel afbreken tot stoffen die opgenomen kunnen worden</td></tr>
+<tr><td><strong>Mechanische vertering</strong></td><td>het voedsel fysiek kleiner maken (kauwen, malen)</td></tr>
+<tr><td><strong>Chemische vertering</strong></td><td>stoffen afbreken met verteringsenzymen</td></tr>
+<tr><td><strong>Verteringsstelsel</strong></td><td>mond, slokdarm, maag, dunne darm, dikke darm</td></tr>
+<tr><td><strong>Maag</strong></td><td>mengt het voedsel en begint de eiwitvertering</td></tr>
+<tr><td><strong>Dunne darm</strong></td><td>vertering rondt af en stoffen worden opgenomen (resorptie)</td></tr>
+<tr><td><strong>Dikke darm</strong></td><td>hier wordt vooral water opgenomen</td></tr>
+<tr><td><strong>Uitscheiding</strong></td><td>afvalstoffen uit het bloed verwijderen</td></tr>
+<tr><td><strong>Nieren</strong></td><td>filteren afval (ureum) uit het bloed en maken urine</td></tr>
+</tbody></table>
+<div class="sam-chapter">
+<div class="sam-ch-title"><span class="sam-ch-n">1</span> Mechanisch en chemisch</div>
+<p>Voedsel wordt op twee manieren verteerd. <strong>Mechanisch</strong>: het wordt <strong>fysiek kleiner</strong> gemaakt door kauwen en malen. <strong>Chemisch</strong>: <strong>enzymen</strong> breken de grote stoffen af tot kleine <strong>bouwstenen</strong>. Verwar ze niet: mechanisch verandert de vorm, chemisch verandert de stof zelf. Kleiner voedsel geeft de enzymen bovendien meer oppervlak.</p>
+<div class="sam-figure"><svg viewBox="0 0 320 140" width="100%" role="img" aria-label="Mechanische vertering maakt een grote brok kleiner, chemische vertering knipt met enzymen de stof in bouwstenen">
+<g font-family="sans-serif" font-size="9" text-anchor="middle">
+<rect x="24" y="46" width="40" height="40" rx="6" fill="#c98a5f"/><text x="44" y="104" fill="#8a5a2f">grote brok</text>
+<path d="M74 66h26" stroke="#5a7085" stroke-width="2.5" fill="none" marker-end="url(#o6m)"/><text x="87" y="58" fill="#5a7085">kauwen</text>
+<g fill="#c98a5f"><rect x="112" y="50" width="16" height="16" rx="3"/><rect x="112" y="70" width="16" height="16" rx="3"/><rect x="132" y="60" width="16" height="16" rx="3"/></g><text x="130" y="104" fill="#8a5a2f">kleiner</text>
+<path d="M158 66h26" stroke="#4ea36b" stroke-width="2.5" fill="none" marker-end="url(#o6c)"/><text x="171" y="58" fill="#2f7d4f">enzym</text>
+<g fill="#4ea36b"><circle cx="206" cy="54" r="5"/><circle cx="222" cy="66" r="5"/><circle cx="206" cy="78" r="5"/><circle cx="240" cy="58" r="5"/><circle cx="256" cy="72" r="5"/></g><text x="232" y="104" fill="#2f7d4f">bouwstenen</text>
+</g><defs><marker id="o6m" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0 0l6 3-6 3z" fill="#5a7085"/></marker><marker id="o6c" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0 0l6 3-6 3z" fill="#4ea36b"/></marker></defs>
+</svg><div class="sam-figcap">Mechanisch maakt de brok kleiner, daarna knippen enzymen (chemisch) de stof tot bouwstenen</div></div>
+<div class="sam-onthoud"><strong>Onthoud:</strong> mechanisch = fysiek kleiner (kauwen), chemisch = afbreken met enzymen.</div>
+</div>
+<div class="sam-chapter">
+<div class="sam-ch-title"><span class="sam-ch-n">2</span> De weg door het verteringsstelsel</div>
+<p>Het voedsel gaat van de <strong>mond</strong> via de slokdarm naar de <strong>maag</strong> (mengen, eiwitvertering start), dan naar de <strong>dunne darm</strong> (vertering af, stoffen worden <strong>opgenomen</strong> in het bloed) en ten slotte de <strong>dikke darm</strong> (vooral <strong>water</strong> opnemen). De verteerde stoffen gaan het bloed in en worden naar de cellen vervoerd.</p>
+<div class="sam-figure"><svg viewBox="0 0 320 130" width="100%" role="img" aria-label="De route van het voedsel: mond, maag, dunne darm, dikke darm">
+<g font-family="sans-serif" font-size="9" text-anchor="middle">
+<circle cx="36" cy="40" r="16" fill="#c96a6a"/><text x="36" y="43" fill="#fff">mond</text>
+<rect x="88" y="26" width="34" height="30" rx="8" fill="#c98a5f"/><text x="105" y="45" fill="#fff">maag</text>
+<rect x="150" y="26" width="40" height="30" rx="8" fill="#4ea36b"/><text x="170" y="41" fill="#fff">dunne</text><text x="170" y="51" fill="#e7f2ea">(opname)</text>
+<rect x="218" y="26" width="40" height="30" rx="8" fill="#8fb0c9"/><text x="238" y="41" fill="#fff">dikke</text><text x="238" y="51" fill="#eaf2f6">(water)</text>
+<g stroke="#5a7085" stroke-width="2" fill="none"><path d="M52 40h34" marker-end="url(#o6r)"/><path d="M122 41h26" marker-end="url(#o6r)"/><path d="M190 41h26" marker-end="url(#o6r)"/></g>
+<path d="M170 58v18h-134" stroke="#b5522f" stroke-width="2" fill="none" stroke-dasharray="4 3" marker-end="url(#o6b)"/><text x="150" y="90" fill="#8f3f3f">opgenomen stoffen naar het bloed</text>
+</g><defs><marker id="o6r" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0 0l6 3-6 3z" fill="#5a7085"/></marker><marker id="o6b" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0 0l6 3-6 3z" fill="#b5522f"/></marker></defs>
+</svg><div class="sam-figcap">Mond, maag, dunne darm (opname), dikke darm (water); de stoffen gaan het bloed in</div></div>
+<div class="sam-onthoud"><strong>Onthoud:</strong> volgorde mond, maag, dunne darm, dikke darm; opname vooral in de dunne darm.</div>
+</div>
+<div class="sam-chapter">
+<div class="sam-ch-title"><span class="sam-ch-n">3</span> Uitscheiding door de nieren</div>
+<p><strong>Uitscheiding</strong> is niet hetzelfde als vertering. De <strong>nieren</strong> verteren geen voedsel: ze <strong>filteren</strong> afvalstoffen zoals <strong>ureum</strong> uit het bloed en maken daar <strong>urine</strong> van. Zo blijft het bloed schoon. Vertering breekt voedsel af, uitscheiding verwijdert afval.</p>
+<div class="sam-figure"><svg viewBox="0 0 320 130" width="100%" role="img" aria-label="De nier filtert afvalstoffen uit het bloed en maakt urine">
+<g font-family="sans-serif" font-size="9" text-anchor="middle">
+<rect x="20" y="40" width="70" height="18" rx="9" fill="#c96a6a"/><text x="55" y="30" fill="#8f3f3f">bloed met afval</text>
+<circle cx="40" cy="49" r="3" fill="#7a5a2a"/><circle cx="62" cy="49" r="3" fill="#7a5a2a"/><circle cx="80" cy="49" r="3" fill="#7a5a2a"/>
+<path d="M118 40c-16 22-16 40 0 46 16 -6 16-24 0-46z" fill="#8f74b8"/><text x="118" y="102" fill="#5a3f82">nier</text>
+<path d="M90 49h20" stroke="#5a7085" stroke-width="2.5" fill="none" marker-end="url(#o6n)"/>
+<rect x="150" y="40" width="70" height="18" rx="9" fill="#c96a6a"/><text x="185" y="30" fill="#8f3f3f">schoon bloed</text>
+<path d="M136 49h12" stroke="#5a7085" stroke-width="2.5" fill="none" marker-end="url(#o6n)"/>
+<path d="M118 88v14h40" stroke="#d9a441" stroke-width="2.5" fill="none" marker-end="url(#o6u)"/><text x="196" y="106" fill="#b5772a">urine (ureum)</text>
+</g><defs><marker id="o6n" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0 0l6 3-6 3z" fill="#5a7085"/></marker><marker id="o6u" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0 0l6 3-6 3z" fill="#d9a441"/></marker></defs>
+</svg><div class="sam-figcap">De nier filtert afval uit het bloed: schoon bloed terug, ureum verlaat het lichaam als urine</div></div>
+<div class="sam-onthoud"><strong>Onthoud:</strong> nieren verteren niet, ze filteren afval uit het bloed (uitscheiding).</div>
+</div>`,
 'havo_bi_M4':`<div class="sam-intro">Planten <strong>maken hun eigen voedsel</strong>. Met <strong>fotosynthese</strong> bouwen ze glucose op uit CO2 en water, met <strong>licht</strong> als energiebron. Alle cellen <strong>verbranden</strong> die glucose weer met zuurstof (<strong>celademhaling</strong>) om er energie uit te halen. Hieronder eerst een begrippenlijst, daarna drie korte hoofdstukjes met beeld.</div>
 <table class="sam-table"><thead><tr><th>Begrip</th><th>Kort</th></tr></thead><tbody>
 <tr><td><strong>Fotosynthese</strong></td><td>glucose maken uit CO2 + water met licht (in de bladgroenkorrel)</td></tr>

@@ -572,6 +572,24 @@ var VAKKEN = [
       "nOe": 5,
       "nBeg": 12,
       "hasSam": true
+     },
+     {
+      "id": "O6",
+      "naam": "Spijsvertering en uitscheiding",
+      "beschrijving": "Gouden-standaardmodule bi.O.6: mechanische en chemische vertering, het verteringsstelsel, opname in de dunne darm, en de rol van de nieren bij uitscheiding.",
+      "ceStatus": "CE",
+      "onderwerpen": [
+       "Spijsvertering: voedsel afbreken tot opneembare stoffen",
+       "Mechanische vertering (kauwen, malen)",
+       "Chemische vertering (enzymen)",
+       "Verteringsstelsel: mond, maag, dunne en dikke darm",
+       "Opname (resorptie) in de dunne darm",
+       "Uitscheiding en de nieren"
+      ],
+      "nSv": 25,
+      "nOe": 5,
+      "nBeg": 12,
+      "hasSam": true
      }
     ]
    },
