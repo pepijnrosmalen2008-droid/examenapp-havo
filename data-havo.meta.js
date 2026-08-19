@@ -535,6 +535,25 @@ var VAKKEN = [
       "nOe": 5,
       "nBeg": 12,
       "hasSam": true
+     },
+     {
+      "id": "O4",
+      "naam": "Afweer en immuniteit",
+      "beschrijving": "Gouden-standaardmodule bi.O.4: aspecifieke en specifieke afweer, antigeen en antilichaam, fagocyten en lymfocyten, geheugencellen en vaccinatie, actieve en passieve immuniteit.",
+      "ceStatus": "CE",
+      "onderwerpen": [
+       "Afweer tegen ziekteverwekkers",
+       "Aspecifieke afweer (huid, slijmvlies, fagocyten, koorts)",
+       "Specifieke afweer (lymfocyten, antilichamen)",
+       "Antigeen en antilichaam",
+       "Geheugencellen en de tweede reactie",
+       "Vaccinatie",
+       "Actieve en passieve immuniteit"
+      ],
+      "nSv": 25,
+      "nOe": 5,
+      "nBeg": 12,
+      "hasSam": true
      }
     ]
    },

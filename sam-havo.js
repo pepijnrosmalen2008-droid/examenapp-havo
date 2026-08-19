@@ -500,6 +500,58 @@ Object.assign(SAM_RICH,{
 </svg><div class="sam-figcap">Bij een watertekort houdt ADH water vast, zodat je weinig en geconcentreerde urine plast</div></div>
 <div class="sam-onthoud"><strong>Onthoud:</strong> weinig water = meer ADH = water vasthouden. Veel water = minder ADH = veel plassen.</div>
 </div>`,
+'havo_bi_O4':`<div class="sam-intro">Je <strong>afweer</strong> beschermt je tegen <strong>ziekteverwekkers</strong>. Er zijn twee soorten: de <strong>aspecifieke</strong> afweer (snel, tegen alles) en de <strong>specifieke</strong> afweer (gericht, met geheugen). Hieronder eerst een begrippenlijst, daarna drie hoofdstukjes met beeld.</div>
+<table class="sam-table"><thead><tr><th>Begrip</th><th>Kort</th></tr></thead><tbody>
+<tr><td><strong>Afweer</strong></td><td>de verdediging van het lichaam tegen ziekteverwekkers</td></tr>
+<tr><td><strong>Aspecifieke afweer</strong></td><td>snel en tegen alle indringers, zonder geheugen (huid, fagocyten, koorts)</td></tr>
+<tr><td><strong>Specifieke afweer</strong></td><td>gericht tegen een bepaalde ziekteverwekker, met geheugen</td></tr>
+<tr><td><strong>Antigeen</strong></td><td>herkenningsstof op een ziekteverwekker</td></tr>
+<tr><td><strong>Antilichaam</strong></td><td>eiwit dat precies op een antigeen past en de indringer onschadelijk maakt</td></tr>
+<tr><td><strong>Fagocyt</strong></td><td>witte bloedcel die ziekteverwekkers opeet (aspecifiek)</td></tr>
+<tr><td><strong>Lymfocyt</strong></td><td>witte bloedcel die antilichamen maakt (specifiek)</td></tr>
+<tr><td><strong>Geheugencel</strong></td><td>blijft na een infectie achter en versnelt de tweede reactie</td></tr>
+<tr><td><strong>Vaccinatie</strong></td><td>onschadelijke antigenen inspuiten om geheugen op te bouwen</td></tr>
+<tr><td><strong>Actief / passief</strong></td><td>actief = zelf antilichamen maken, passief = kant-en-klaar krijgen</td></tr>
+</tbody></table>
+<div class="sam-chapter">
+<div class="sam-ch-title"><span class="sam-ch-n">1</span> Antigeen en antilichaam</div>
+<p>Op elke <strong>ziekteverwekker</strong> zit een <strong>antigeen</strong>: een herkenningsstof. Je specifieke afweer maakt daar een <strong>antilichaam</strong> bij, een eiwit dat als een <strong>sleutel op een slot</strong> precies op dat antigeen past. Het antilichaam bindt eraan en maakt de indringer <strong>onschadelijk</strong>. Verwar ze niet: het antigeen zit op de indringer, het antilichaam maakt jij.</p>
+<div class="sam-figure"><svg viewBox="0 0 320 150" width="100%" role="img" aria-label="Een antilichaam past als sleutel op slot precies op het antigeen van een ziekteverwekker">
+<g font-family="sans-serif" font-size="9" text-anchor="middle">
+<circle cx="80" cy="80" r="34" fill="#c96a6a"/><text x="80" y="126" fill="#8f3f3f">ziekteverwekker</text>
+<path d="M104 66l14 -6 0 6 8 0 0 8 -8 0 0 6z" fill="#7a2f2f"/><text x="120" y="44" fill="#8f3f3f">antigeen</text>
+<path d="M214 60l-14 6 0 -6 -8 0 0 -8 8 0 0 -6z" fill="#3f7d9a"/>
+<rect x="214" y="52" width="60" height="24" rx="6" fill="#4e8fb0"/><text x="244" y="68" fill="#fff">antilichaam</text>
+<text x="176" y="96" fill="#5a7085">past precies</text>
+</g></svg><div class="sam-figcap">Het antilichaam past als sleutel-op-slot op het antigeen van de ziekteverwekker</div></div>
+<div class="sam-onthoud"><strong>Onthoud:</strong> antigeen = op de indringer, antilichaam = door jou gemaakt en past erop.</div>
+</div>
+<div class="sam-chapter">
+<div class="sam-ch-title"><span class="sam-ch-n">2</span> Aspecifiek en specifiek</div>
+<p>De <strong>aspecifieke</strong> afweer werkt <strong>snel</strong> en tegen <strong>alle</strong> indringers: de <strong>huid</strong> en slijmvliezen houden veel tegen, <strong>fagocyten</strong> eten indringers op en <strong>koorts</strong> remt ze. Ze bouwt <strong>geen geheugen</strong> op. De <strong>specifieke</strong> afweer is <strong>gericht</strong>: <strong>lymfocyten</strong> maken antilichamen tegen één ziekteverwekker en laten <strong>geheugencellen</strong> achter.</p>
+<div class="sam-figure"><svg viewBox="0 0 320 150" width="100%" role="img" aria-label="Aspecifieke afweer snel en ongericht, specifieke afweer gericht met geheugen">
+<g font-family="sans-serif" font-size="9" text-anchor="middle">
+<rect x="16" y="30" width="130" height="94" rx="10" fill="#e7efe9" stroke="#4ea36b"/><text x="81" y="48" fill="#2f7d4f" font-size="10">aspecifiek</text>
+<text x="81" y="66" fill="#3a6b52">huid en slijmvlies</text><text x="81" y="82" fill="#3a6b52">fagocyten (opeten)</text><text x="81" y="98" fill="#3a6b52">koorts</text><text x="81" y="116" fill="#8f3f3f">geen geheugen</text>
+<rect x="174" y="30" width="130" height="94" rx="10" fill="#eae7f2" stroke="#8f74b8"/><text x="239" y="48" fill="#5a3f82" font-size="10">specifiek</text>
+<text x="239" y="66" fill="#4a3568">lymfocyten</text><text x="239" y="82" fill="#4a3568">antilichamen</text><text x="239" y="98" fill="#4a3568">gericht</text><text x="239" y="116" fill="#2f7d4f">wel geheugen</text>
+</g></svg><div class="sam-figcap">Aspecifiek: snel en tegen alles, geen geheugen. Specifiek: gericht, met geheugencellen</div></div>
+<div class="sam-onthoud"><strong>Onthoud:</strong> aspecifiek = snel en tegen alles zonder geheugen, specifiek = gericht met geheugen.</div>
+</div>
+<div class="sam-chapter">
+<div class="sam-ch-title"><span class="sam-ch-n">3</span> Vaccinatie en geheugen</div>
+<p>Bij <strong>vaccinatie</strong> krijg je <strong>onschadelijke antigenen</strong> ingespoten. Te zwak om je ziek te maken, maar genoeg om je specifieke afweer <strong>geheugencellen</strong> te laten opbouwen. Kom je de echte ziekteverwekker later tegen, dan reageren die geheugencellen <strong>snel</strong> en maak je vlug veel antilichamen, vaak <strong>voordat</strong> je ziek wordt.</p>
+<div class="sam-figure"><svg viewBox="0 0 320 150" width="100%" role="img" aria-label="Vaccinatie bouwt geheugencellen op zodat de tweede reactie op de echte ziekteverwekker snel is">
+<g font-family="sans-serif" font-size="9" text-anchor="middle">
+<path d="M30 44l18 0 0 -6 8 8 -8 8 0 -6 -18 0z" fill="#8f74b8"/><text x="40" y="70" fill="#5a3f82">vaccin</text>
+<circle cx="120" cy="46" r="14" fill="#4ea36b"/><text x="120" y="49" fill="#fff">geheugen</text><text x="120" y="74" fill="#2f7d4f">cellen blijven</text>
+<path d="M150 46h30" stroke="#5a7085" stroke-width="2.5" fill="none" marker-end="url(#o4v)"/>
+<circle cx="210" cy="46" r="14" fill="#c96a6a"/><text x="210" y="49" fill="#fff">echt</text><text x="210" y="74" fill="#8f3f3f">besmetting</text>
+<path d="M226 46h30" stroke="#d9a441" stroke-width="2.5" fill="none" marker-end="url(#o4v2)"/><text x="285" y="49" fill="#2f7d4f">snel!</text>
+</g><defs><marker id="o4v" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0 0l6 3-6 3z" fill="#5a7085"/></marker><marker id="o4v2" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0 0l6 3-6 3z" fill="#d9a441"/></marker></defs>
+</svg><div class="sam-figcap">Vaccin bouwt geheugencellen op, zodat de echte besmetting later snel wordt afgeslagen</div></div>
+<div class="sam-onthoud"><strong>Onthoud:</strong> vaccin = onschadelijk antigeen, bouwt geheugen op, tweede keer reageer je snel.</div>
+</div>`,
 'havo_bi_M4':`<div class="sam-intro">Planten <strong>maken hun eigen voedsel</strong>. Met <strong>fotosynthese</strong> bouwen ze glucose op uit CO2 en water, met <strong>licht</strong> als energiebron. Alle cellen <strong>verbranden</strong> die glucose weer met zuurstof (<strong>celademhaling</strong>) om er energie uit te halen. Hieronder eerst een begrippenlijst, daarna drie korte hoofdstukjes met beeld.</div>
 <table class="sam-table"><thead><tr><th>Begrip</th><th>Kort</th></tr></thead><tbody>
 <tr><td><strong>Fotosynthese</strong></td><td>glucose maken uit CO2 + water met licht (in de bladgroenkorrel)</td></tr>

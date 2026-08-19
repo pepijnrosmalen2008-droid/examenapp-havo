@@ -1,0 +1,565 @@
+{
+  "id": "O4",
+  "naam": "Afweer en immuniteit",
+  "beschrijving": "Gouden-standaardmodule bi.O.4: aspecifieke en specifieke afweer, antigeen en antilichaam, fagocyten en lymfocyten, geheugencellen en vaccinatie, actieve en passieve immuniteit.",
+  "ceStatus": "CE",
+  "onderwerpen": [
+    "Afweer tegen ziekteverwekkers",
+    "Aspecifieke afweer (huid, slijmvlies, fagocyten, koorts)",
+    "Specifieke afweer (lymfocyten, antilichamen)",
+    "Antigeen en antilichaam",
+    "Geheugencellen en de tweede reactie",
+    "Vaccinatie",
+    "Actieve en passieve immuniteit"
+  ],
+  "sam": "Je afweer beschermt je tegen ziekteverwekkers. De aspecifieke afweer werkt snel en tegen alles: de huid en slijmvliezen houden veel tegen, en fagocyten eten binnengedrongen ziekteverwekkers op. De specifieke afweer is gericht: lymfocyten maken antilichamen die precies op het antigeen van een bepaalde ziekteverwekker passen. Na een infectie blijven er geheugencellen achter, zodat je bij een tweede besmetting sneller reageert. Bij vaccinatie krijg je onschadelijke antigenen ingespoten, zodat je geheugencellen opbouwt zonder ziek te worden.",
+  "begrippen": [
+    {
+      "t": "Afweer",
+      "d": "de verdediging van het lichaam tegen ziekteverwekkers"
+    },
+    {
+      "t": "Ziekteverwekker",
+      "d": "een organisme dat een ziekte kan veroorzaken, zoals een bacterie of virus"
+    },
+    {
+      "t": "Aspecifieke afweer",
+      "d": "snelle afweer tegen alle indringers, zonder geheugen (huid, fagocyten)"
+    },
+    {
+      "t": "Specifieke afweer",
+      "d": "gerichte afweer tegen een bepaalde ziekteverwekker, met geheugen"
+    },
+    {
+      "t": "Antigeen",
+      "d": "een herkenningsstof op een ziekteverwekker"
+    },
+    {
+      "t": "Antilichaam",
+      "d": "een eiwit dat precies op een bepaald antigeen past en het onschadelijk maakt"
+    },
+    {
+      "t": "Fagocyt",
+      "d": "witte bloedcel die ziekteverwekkers opeet (aspecifiek)"
+    },
+    {
+      "t": "Lymfocyt",
+      "d": "witte bloedcel die antilichamen maakt (specifiek)"
+    },
+    {
+      "t": "Geheugencel",
+      "d": "cel die na een infectie achterblijft en een tweede reactie versnelt"
+    },
+    {
+      "t": "Vaccinatie",
+      "d": "inspuiten van onschadelijke antigenen om geheugencellen op te bouwen"
+    },
+    {
+      "t": "Actieve immuniteit",
+      "d": "je maakt zelf antilichamen aan (na ziekte of vaccinatie)"
+    },
+    {
+      "t": "Passieve immuniteit",
+      "d": "je krijgt kant-en-klare antilichamen, bijvoorbeeld via moedermelk"
+    }
+  ],
+  "sv": [
+    {
+      "v": "Wat is afweer?",
+      "o": [
+        "De verdediging tegen ziekteverwekkers",
+        "Het opnemen van voedingsstoffen uit het voedsel in de darm",
+        "Het vervoeren van zuurstof door de rode bloedcellen",
+        "Het regelen van de bloedsuiker met insuline en glucagon"
+      ],
+      "c": 0,
+      "d": 1,
+      "u": "Afweer is de verdediging van het lichaam tegen ziekteverwekkers.",
+      "uo": [
+        "Klopt: bescherming tegen ziekteverwekkers.",
+        "Dat is vertering, geen afweer.",
+        "Dat is transport, geen afweer.",
+        "Dat is hormonale regeling, geen afweer."
+      ],
+      "uh": "Afweer = je lichaam beschermen tegen ziekteverwekkers."
+    },
+    {
+      "v": "Wat is een antigeen?",
+      "o": [
+        "Een eiwit dat het lichaam maakt om indringers onschadelijk te maken",
+        "Een herkenningsstof op een ziekteverwekker",
+        "Een witte bloedcel die ziekteverwekkers helemaal opeet",
+        "Een cel die na een infectie voor snelle afweer achterblijft"
+      ],
+      "c": 1,
+      "d": 1,
+      "u": "Een antigeen is de herkenningsstof op een ziekteverwekker.",
+      "uo": [
+        "Dat is juist een antilichaam.",
+        "Klopt: het antigeen is de herkenningsstof op de indringer.",
+        "Dat is een fagocyt.",
+        "Dat is een geheugencel."
+      ],
+      "uh": "Antigeen = herkenningsstof OP de ziekteverwekker."
+    },
+    {
+      "v": "Wat is een antilichaam?",
+      "o": [
+        "Een herkenningsstof die op de ziekteverwekker zelf zit",
+        "Een suiker die de ziekteverwekker als voedsel gebruikt",
+        "Een eiwit dat precies op een antigeen past",
+        "Een deel van de celwand van een bacterie"
+      ],
+      "c": 2,
+      "d": 1,
+      "u": "Een antilichaam is een eiwit dat precies op een bepaald antigeen past en het onschadelijk maakt.",
+      "uo": [
+        "Dat is juist het antigeen, niet het antilichaam.",
+        "Een antilichaam is geen suiker maar een eiwit.",
+        "Klopt: een antilichaam past precies op een antigeen.",
+        "Een antilichaam hoort bij het lichaam, niet bij de bacterie."
+      ],
+      "uh": "Antilichaam = eiwit dat PAST op een antigeen."
+    },
+    {
+      "v": "Wat is het verschil tussen een antigeen en een antilichaam?",
+      "o": [
+        "Een fagocyt eet beide op",
+        "Ze zijn precies hetzelfde en wisselbaar in de afweer",
+        "Beide worden door de huid tegengehouden voor ze binnenkomen",
+        "Antigeen zit op de indringer, antilichaam maakt het lichaam"
+      ],
+      "c": 3,
+      "d": 2,
+      "u": "Het antigeen zit op de ziekteverwekker; het antilichaam wordt door het lichaam gemaakt en past erop.",
+      "uo": [
+        "Dit legt het verschil niet uit.",
+        "Ze zijn juist tegengesteld: herkenningsstof versus passend eiwit.",
+        "Dit gaat over de huid, niet over het verschil.",
+        "Klopt: antigeen op de indringer, antilichaam door het lichaam."
+      ],
+      "uh": "Antigeen = op de indringer; antilichaam = door jou gemaakt, past erop."
+    },
+    {
+      "v": "Welke afweer werkt snel en tegen alle indringers?",
+      "o": [
+        "De aspecifieke afweer",
+        "De specifieke afweer met gerichte antilichamen tegen één soort",
+        "Alleen de geheugencellen van een eerdere infectie",
+        "Uitsluitend de antilichamen uit een vaccinatie"
+      ],
+      "c": 0,
+      "d": 2,
+      "u": "De aspecifieke afweer werkt snel en tegen alle ziekteverwekkers, zonder onderscheid.",
+      "uo": [
+        "Klopt: aspecifiek werkt snel en tegen alles.",
+        "De specifieke afweer is juist gericht en trager.",
+        "Geheugencellen horen bij de specifieke afweer.",
+        "Vaccinatie werkt via de specifieke afweer."
+      ],
+      "uh": "Aspecifiek = snel en tegen alles, zonder geheugen."
+    },
+    {
+      "v": "Welke afweer is gericht tegen één bepaalde ziekteverwekker?",
+      "o": [
+        "De aspecifieke afweer via de huid en fagocyten",
+        "De specifieke afweer",
+        "Alleen koorts die het hele lichaam opwarmt",
+        "De algemene barrière van huid en slijmvlies samen"
+      ],
+      "c": 1,
+      "d": 2,
+      "u": "De specifieke afweer richt zich met antilichamen op het antigeen van één bepaalde ziekteverwekker.",
+      "uo": [
+        "Aspecifiek is juist ongericht.",
+        "Klopt: specifiek is gericht op één ziekteverwekker.",
+        "Koorts is aspecifiek en niet gericht.",
+        "Huid en slijmvlies zijn aspecifiek."
+      ],
+      "uh": "Specifiek = gericht op één ziekteverwekker, met antilichamen."
+    },
+    {
+      "v": "Wat doet een fagocyt?",
+      "o": [
+        "Hij maakt antilichamen op maat voor elke indringer",
+        "Hij onthoudt de ziekteverwekker voor later",
+        "Hij eet ziekteverwekkers op",
+        "Hij vormt de buitenste laag van je huid"
+      ],
+      "c": 2,
+      "d": 1,
+      "u": "Een fagocyt is een witte bloedcel die ziekteverwekkers opeet (aspecifiek).",
+      "uo": [
+        "Antilichamen maken doen lymfocyten, niet fagocyten.",
+        "Onthouden doen geheugencellen.",
+        "Klopt: een fagocyt eet indringers op.",
+        "De huid is geen fagocyt."
+      ],
+      "uh": "Fagocyt = witte bloedcel die indringers opeet."
+    },
+    {
+      "v": "Welke cel maakt antilichamen?",
+      "o": [
+        "De fagocyt die de indringer juist opeet",
+        "De rode bloedcel die zuurstof vervoert",
+        "De huidcel aan de buitenkant van het lichaam",
+        "De lymfocyt"
+      ],
+      "c": 3,
+      "d": 1,
+      "u": "Lymfocyten zijn de witte bloedcellen die antilichamen maken (specifieke afweer).",
+      "uo": [
+        "De fagocyt eet op, maar maakt geen antilichamen.",
+        "Rode bloedcellen doen aan zuurstoftransport.",
+        "Huidcellen maken geen antilichamen.",
+        "Klopt: lymfocyten maken antilichamen."
+      ],
+      "uh": "Lymfocyt = maakt antilichamen (specifiek)."
+    },
+    {
+      "v": "Wat is een geheugencel?",
+      "o": [
+        "Een cel die na een infectie achterblijft",
+        "Een cel die zuurstof opslaat voor zware inspanning",
+        "Een cel die alleen in de hersenen herinneringen bewaart",
+        "Een cel die de huid stevig en waterdicht maakt"
+      ],
+      "c": 0,
+      "d": 1,
+      "u": "Een geheugencel blijft na een infectie achter en zorgt voor een snelle tweede reactie.",
+      "uo": [
+        "Klopt: geheugencellen blijven na een infectie achter.",
+        "Geheugencellen slaan geen zuurstof op.",
+        "Deze geheugencellen zitten in het afweersysteem, niet in de hersenen.",
+        "Dat heeft niets met de huid te maken."
+      ],
+      "uh": "Geheugencel = onthoudt de ziekteverwekker voor een snelle tweede reactie."
+    },
+    {
+      "v": "Waarom word je bij een tweede besmetting met dezelfde ziekteverwekker vaak niet meer ziek?",
+      "o": [
+        "De huid is dan dikker geworden dan de eerste keer",
+        "Geheugencellen laten je heel snel antilichamen maken",
+        "Je fagocyten zijn permanent uitgeschakeld door de eerste infectie",
+        "De ziekteverwekker verandert altijd in een onschadelijke soort"
+      ],
+      "c": 1,
+      "d": 3,
+      "u": "Door geheugencellen maakt je specifieke afweer bij een tweede besmetting sneller en meer antilichamen, vaak voor je ziek wordt.",
+      "uo": [
+        "De huid verandert hier niet door.",
+        "Klopt: geheugencellen versnellen de tweede reactie.",
+        "Fagocyten blijven gewoon werken.",
+        "De ziekteverwekker wordt niet vanzelf onschadelijk."
+      ],
+      "uh": "Tweede keer sneller = geheugencellen maken vlug antilichamen."
+    },
+    {
+      "v": "Wat gebeurt er bij vaccinatie?",
+      "o": [
+        "Je krijgt kant-en-klare antilichamen die snel weer verdwijnen",
+        "Je fagocyten worden uit je bloed verwijderd",
+        "Je krijgt onschadelijke antigenen zodat je geheugencellen opbouwt",
+        "Je huid wordt behandeld zodat er niets meer doorheen kan"
+      ],
+      "c": 2,
+      "d": 2,
+      "u": "Bij vaccinatie krijg je onschadelijke antigenen, zodat je specifieke afweer geheugencellen aanmaakt zonder dat je ziek wordt.",
+      "uo": [
+        "Kant-en-klare antilichamen horen bij passieve immuniteit, niet bij vaccinatie.",
+        "Vaccinatie verwijdert geen fagocyten.",
+        "Klopt: onschadelijke antigenen bouwen geheugen op.",
+        "Vaccinatie werkt niet via de huid."
+      ],
+      "uh": "Vaccinatie = onschadelijk antigeen inspuiten, geheugen opbouwen."
+    },
+    {
+      "v": "Waarom word je van een vaccinatie zelf niet ziek?",
+      "o": [
+        "Omdat je huid het vaccin meteen weer afstoot",
+        "Omdat er levende, sterke ziekteverwekkers in zitten",
+        "Omdat je er direct koorts van krijgt die alles doodt",
+        "Omdat het antigeen onschadelijk of verzwakt is"
+      ],
+      "c": 3,
+      "d": 3,
+      "u": "Een vaccin bevat verzwakte of onschadelijke antigenen: genoeg om geheugen op te bouwen, te weinig om ziek te worden.",
+      "uo": [
+        "De huid speelt hier geen rol.",
+        "Juist geen sterke levende ziekteverwekkers.",
+        "Koorts is niet de reden dat je niet ziek wordt.",
+        "Klopt: het antigeen is onschadelijk of verzwakt."
+      ],
+      "uh": "Vaccin = verzwakt antigeen: wel geheugen, geen ziekte."
+    },
+    {
+      "v": "Wat is actieve immuniteit?",
+      "o": [
+        "Je maakt zelf antilichamen aan",
+        "Je krijgt kant-en-klare antilichamen van iemand anders",
+        "Je bent immuun zonder dat er ooit afweer bij komt kijken",
+        "Je huid houdt in je eentje alle ziekteverwekkers tegen"
+      ],
+      "c": 0,
+      "d": 2,
+      "u": "Bij actieve immuniteit maakt je lichaam zelf antilichamen aan, na een ziekte of vaccinatie.",
+      "uo": [
+        "Klopt: je maakt zelf antilichamen.",
+        "Kant-en-klaar krijgen is juist passieve immuniteit.",
+        "Immuniteit ontstaat juist door afweer.",
+        "De huid alleen geeft geen immuniteit."
+      ],
+      "uh": "Actieve immuniteit = zelf antilichamen maken."
+    },
+    {
+      "v": "Wat is passieve immuniteit?",
+      "o": [
+        "Je maakt na een vaccinatie zelf antilichamen aan",
+        "Je krijgt kant-en-klare antilichamen",
+        "Je bouwt geheugencellen op na een echte infectie",
+        "Je fagocyten eten voortaan sneller ziekteverwekkers op"
+      ],
+      "c": 1,
+      "d": 2,
+      "u": "Bij passieve immuniteit krijg je kant-en-klare antilichamen, bijvoorbeeld een baby via de moedermelk.",
+      "uo": [
+        "Zelf aanmaken is juist actieve immuniteit.",
+        "Klopt: je krijgt kant-en-klare antilichamen.",
+        "Geheugencellen opbouwen is actieve immuniteit.",
+        "Dit gaat over antilichamen krijgen, niet over fagocyten."
+      ],
+      "uh": "Passieve immuniteit = kant-en-klare antilichamen krijgen."
+    },
+    {
+      "v": "Een baby krijgt via de moedermelk antilichamen binnen. Welke immuniteit is dat?",
+      "o": [
+        "Actieve immuniteit, want de baby maakt ze zelf",
+        "Aspecifieke afweer via de huid van de baby",
+        "Passieve immuniteit",
+        "Geen immuniteit, want antilichamen werken niet bij baby's"
+      ],
+      "c": 2,
+      "d": 3,
+      "u": "De baby krijgt kant-en-klare antilichamen binnen zonder ze zelf te maken: dat is passieve immuniteit.",
+      "uo": [
+        "De baby maakt ze niet zelf, dus niet actief.",
+        "Dit gaat via de melk, niet via de huid.",
+        "Klopt: kant-en-klare antilichamen krijgen is passief.",
+        "Antilichamen beschermen de baby juist wel."
+      ],
+      "uh": "Antilichamen krijgen zonder zelf maken = passieve immuniteit."
+    },
+    {
+      "v": "Waarom bouwt de aspecifieke afweer geen geheugen op?",
+      "o": [
+        "Omdat zij traag en heel precies gericht werkt",
+        "Omdat zij alleen uit antilichamen bestaat",
+        "Omdat zij pas na een vaccinatie op gang komt",
+        "Omdat zij tegen alle indringers hetzelfde reageert"
+      ],
+      "c": 3,
+      "d": 3,
+      "u": "De aspecifieke afweer reageert op elke indringer hetzelfde en herkent geen specifieke ziekteverwekker, dus bouwt zij geen geheugen op.",
+      "uo": [
+        "Aspecifiek is juist snel en ongericht.",
+        "Aspecifiek werkt met o.a. fagocyten, niet met antilichamen.",
+        "Aspecifiek werkt altijd, ook zonder vaccinatie.",
+        "Klopt: zonder herkenning van een specifieke soort geen geheugen."
+      ],
+      "uh": "Geen herkenning van een soort = geen geheugen (aspecifiek)."
+    },
+    {
+      "v": "Welke barrière hoort bij de aspecifieke afweer?",
+      "o": [
+        "De huid en slijmvliezen",
+        "Antilichamen die op één antigeen passen",
+        "Geheugencellen van een eerdere ziekte",
+        "Lymfocyten die gericht reageren"
+      ],
+      "c": 0,
+      "d": 1,
+      "u": "De huid en slijmvliezen zijn een aspecifieke barrière die veel ziekteverwekkers tegenhoudt.",
+      "uo": [
+        "Klopt: huid en slijmvlies zijn een aspecifieke barrière.",
+        "Antilichamen horen bij de specifieke afweer.",
+        "Geheugencellen horen bij de specifieke afweer.",
+        "Lymfocyten horen bij de specifieke afweer."
+      ],
+      "uh": "Huid en slijmvlies = aspecifieke eerste barrière."
+    },
+    {
+      "v": "Hoe helpt koorts bij de afweer?",
+      "o": [
+        "Koorts maakt extra antilichamen op maat aan",
+        "Een hogere temperatuur remt veel ziekteverwekkers",
+        "Koorts sluit de huid volledig af voor indringers",
+        "Koorts verandert je bloedgroep tijdelijk"
+      ],
+      "c": 1,
+      "d": 2,
+      "u": "Koorts (een hogere lichaamstemperatuur) remt de groei van veel ziekteverwekkers en hoort bij de aspecifieke afweer.",
+      "uo": [
+        "Antilichamen maken lymfocyten, niet de koorts zelf.",
+        "Klopt: warmte remt veel ziekteverwekkers.",
+        "Koorts sluit de huid niet af.",
+        "Je bloedgroep verandert niet door koorts."
+      ],
+      "uh": "Koorts = warmer lichaam remt ziekteverwekkers (aspecifiek)."
+    },
+    {
+      "v": "Een antilichaam past op de ene ziekteverwekker wel en op de andere niet. Hoe komt dat?",
+      "o": [
+        "De huid laat maar één soort antilichaam door",
+        "Antilichamen passen op elke ziekteverwekker even goed",
+        "Elk antilichaam past maar op een bepaald antigeen",
+        "Fagocyten bepalen op welke soort een antilichaam past"
+      ],
+      "c": 2,
+      "d": 3,
+      "u": "Een antilichaam heeft een vorm die alleen op een bepaald antigeen past, zoals een sleutel op een slot.",
+      "uo": [
+        "De huid bepaalt dit niet.",
+        "Juist niet: het past maar op één bepaald antigeen.",
+        "Klopt: elk antilichaam past maar op een bepaald antigeen.",
+        "De vorm bepaalt de match, niet de fagocyt."
+      ],
+      "uh": "Antilichaam past als sleutel-slot op een bepaald antigeen."
+    },
+    {
+      "v": "Iemand is gevaccineerd tegen een ziekte en komt die later tegen. Wat gebeurt er?",
+      "o": [
+        "Er is niets veranderd sinds de vaccinatie",
+        "De persoon wordt juist extra ziek door het vaccin",
+        "De aspecifieke afweer valt volledig uit",
+        "De geheugencellen zorgen voor een snelle afweer"
+      ],
+      "c": 3,
+      "d": 3,
+      "u": "Door de vaccinatie zijn er geheugencellen, die bij de echte besmetting snel antilichamen laten maken, vaak voor de persoon ziek wordt.",
+      "uo": [
+        "De vaccinatie heeft juist geheugencellen opgeleverd.",
+        "Het vaccin maakt niet extra ziek.",
+        "De aspecifieke afweer blijft gewoon werken.",
+        "Klopt: geheugencellen zorgen voor een snelle reactie."
+      ],
+      "uh": "Gevaccineerd + echte besmetting = geheugencellen reageren snel."
+    },
+    {
+      "v": "Welke cellen horen bij de specifieke afweer?",
+      "o": [
+        "Lymfocyten en geheugencellen",
+        "Rode bloedcellen die zuurstof vervoeren",
+        "Alleen de dode cellen van de opperhuid",
+        "Uitsluitend de cellen van de slijmvliezen"
+      ],
+      "c": 0,
+      "d": 2,
+      "u": "Lymfocyten (antilichamen) en geheugencellen horen bij de gerichte, specifieke afweer.",
+      "uo": [
+        "Klopt: lymfocyten en geheugencellen zijn specifiek.",
+        "Rode bloedcellen doen aan transport, niet aan afweer.",
+        "De opperhuid is aspecifiek.",
+        "Slijmvliezen zijn aspecifiek."
+      ],
+      "uh": "Specifiek = lymfocyten + geheugencellen."
+    },
+    {
+      "v": "Waarom werkt een vaccin tegen de ene ziekte niet tegen een andere ziekte?",
+      "o": [
+        "Omdat een vaccin altijd tegen alle ziekten tegelijk werkt",
+        "Omdat elk vaccin een ander antigeen bevat",
+        "Omdat de huid per ziekte anders reageert",
+        "Omdat vaccins alleen de aspecifieke afweer aanzetten"
+      ],
+      "c": 1,
+      "d": 3,
+      "u": "Een vaccin bouwt geheugen op tegen het specifieke antigeen dat erin zit; een andere ziekte heeft een ander antigeen.",
+      "uo": [
+        "Een vaccin werkt juist gericht, niet tegen alles.",
+        "Klopt: het geheugen past bij het antigeen in dat vaccin.",
+        "De huid bepaalt dit niet.",
+        "Vaccins werken via de specifieke afweer, niet de aspecifieke."
+      ],
+      "uh": "Vaccin = geheugen tegen één antigeen; andere ziekte, ander antigeen."
+    },
+    {
+      "v": "Wat doen antilichamen met een ziekteverwekker?",
+      "o": [
+        "Ze geven de ziekteverwekker juist extra voedsel",
+        "Ze veranderen hem in een lichaamscel",
+        "Ze maken hem onschadelijk",
+        "Ze vervoeren hem veilig door het hele lichaam"
+      ],
+      "c": 2,
+      "d": 1,
+      "u": "Antilichamen binden aan het antigeen en maken de ziekteverwekker onschadelijk.",
+      "uo": [
+        "Ze voeden de ziekteverwekker niet.",
+        "Ze veranderen hem niet in een lichaamscel.",
+        "Klopt: ze maken de ziekteverwekker onschadelijk.",
+        "Ze verspreiden hem niet, ze schakelen hem uit."
+      ],
+      "uh": "Antilichamen binden aan het antigeen en schakelen de indringer uit."
+    },
+    {
+      "v": "Welke uitspraak over de afweer klopt?",
+      "o": [
+        "Aspecifieke afweer bouwt net als vaccinatie geheugen op",
+        "Antigeen en antilichaam zijn twee woorden voor hetzelfde",
+        "Fagocyten maken de antilichamen aan",
+        "Specifieke afweer werkt gericht en met geheugen"
+      ],
+      "c": 3,
+      "d": 2,
+      "u": "De specifieke afweer werkt gericht op één ziekteverwekker en bouwt geheugen op; de aspecifieke niet.",
+      "uo": [
+        "Aspecifiek bouwt juist geen geheugen op.",
+        "Antigeen en antilichaam zijn juist tegengesteld.",
+        "Antilichamen maken lymfocyten, niet fagocyten.",
+        "Klopt: specifiek is gericht en heeft geheugen."
+      ],
+      "uh": "Specifiek = gericht + geheugen; aspecifiek = snel + geen geheugen."
+    },
+    {
+      "v": "Waarom is de eerste keer dat je een ziekteverwekker tegenkomt de reactie trager dan de tweede keer?",
+      "o": [
+        "Er zijn nog geen geheugencellen voor die ziekteverwekker",
+        "De huid is de eerste keer nog niet aangelegd",
+        "De aspecifieke afweer werkt de eerste keer niet",
+        "Antilichamen bestaan de eerste keer nog helemaal niet"
+      ],
+      "c": 0,
+      "d": 3,
+      "u": "De eerste keer moet de specifieke afweer de juiste lymfocyten nog opbouwen; pas daarna zijn er geheugencellen die de tweede keer versnellen.",
+      "uo": [
+        "Klopt: geheugencellen ontbreken nog bij de eerste besmetting.",
+        "De huid is er de eerste keer ook al.",
+        "De aspecifieke afweer werkt de eerste keer wel.",
+        "Antilichamen kunnen wel, maar het opbouwen kost tijd."
+      ],
+      "uh": "Eerste keer traag = geheugencellen moeten nog worden opgebouwd."
+    }
+  ],
+  "oe": [
+    {
+      "vraag": "Leg uit wat het verschil is tussen aspecifieke en specifieke afweer.",
+      "antwoord": "De aspecifieke afweer werkt snel en tegen alle ziekteverwekkers zonder onderscheid, bijvoorbeeld via de huid, slijmvliezen en fagocyten, en bouwt geen geheugen op. De specifieke afweer is gericht tegen een bepaalde ziekteverwekker: lymfocyten maken antilichamen die op het antigeen passen, en er blijven geheugencellen achter."
+    },
+    {
+      "vraag": "Leg uit waarom je van een vaccinatie zelf meestal niet ziek wordt, maar er later wel beschermd door bent.",
+      "antwoord": "Een vaccin bevat verzwakte of onschadelijke antigenen. Die zijn te zwak om je ziek te maken, maar wel genoeg om de specifieke afweer aan te zetten. Je maakt antilichamen en geheugencellen aan. Kom je de echte ziekteverwekker later tegen, dan reageren de geheugencellen snel en word je niet of nauwelijks ziek."
+    },
+    {
+      "vraag": "Beschrijf de rol van een antigeen en een antilichaam in de afweer.",
+      "antwoord": "Een antigeen is een herkenningsstof op de ziekteverwekker. De specifieke afweer maakt daar een antilichaam bij: een eiwit dat precies op dat antigeen past. Het antilichaam bindt aan het antigeen en maakt de ziekteverwekker onschadelijk."
+    },
+    {
+      "vraag": "Waarom verloopt de afweer bij een tweede besmetting met dezelfde ziekteverwekker sneller dan bij de eerste?",
+      "antwoord": "Bij de eerste besmetting moet de specifieke afweer de juiste lymfocyten nog opbouwen, wat tijd kost. Daarbij ontstaan geheugencellen die achterblijven. Bij een tweede besmetting laten die geheugencellen heel snel veel antilichamen maken, vaak voordat je ziek wordt."
+    },
+    {
+      "vraag": "Leg het verschil uit tussen actieve en passieve immuniteit, met van elk een voorbeeld.",
+      "antwoord": "Bij actieve immuniteit maakt het lichaam zelf antilichamen aan, bijvoorbeeld na een ziekte of na een vaccinatie. Bij passieve immuniteit krijg je kant-en-klare antilichamen die je niet zelf hebt gemaakt, bijvoorbeeld een baby die antilichamen via de moedermelk binnenkrijgt. Actieve immuniteit houdt langer aan, passieve is tijdelijk."
+    }
+  ]
+}
