@@ -1,0 +1,564 @@
+{
+  "id": "C6",
+  "naam": "Warmtetransport",
+  "beschrijving": "Gouden-standaardmodule na.C.6: de drie vormen van warmtetransport (geleiding, stroming en straling) onderscheiden en herkennen, en weten hoe isolatie werkt.",
+  "ceStatus": "CE",
+  "onderwerpen": [
+    "Geleiding: warmte door een vaste stof",
+    "Stroming: warmte met een bewegend gas of vloeistof",
+    "Straling: warmte zonder tussenstof",
+    "Geleiders en isolatoren",
+    "De drie vormen onderscheiden",
+    "Isolatie in de praktijk"
+  ],
+  "sam": "Warmte gaat altijd van warm naar koud, en dat kan op drie manieren. Bij geleiding gaat de warmte door een vaste stof, van molecuul naar molecuul, zonder dat de stof zelf verplaatst. Metalen zijn goede geleiders; hout, kunststof en lucht zijn slechte geleiders (isolatoren). Bij stroming verplaatst de warmte mee met een bewegend gas of een bewegende vloeistof: warme lucht en warm water stijgen op en koude zakt. Bij straling gaat de warmte als straling door de ruimte, zonder tussenstof; zo bereikt de warmte van de zon de aarde door het vacuüm van de ruimte. Deze drie vormen worden vaak verward. Isolatie werkt door ze tegen te gaan: dubbel glas met een vacuüm of stilstaande lucht ertussen stopt geleiding en stroming, en een reflecterende laag kaatst straling terug.",
+  "begrippen": [
+    {
+      "t": "Warmtetransport",
+      "d": "het verplaatsen van warmte van warm naar koud"
+    },
+    {
+      "t": "Geleiding",
+      "d": "warmtetransport door een vaste stof, van molecuul naar molecuul"
+    },
+    {
+      "t": "Stroming",
+      "d": "warmtetransport dat meebeweegt met een gas of vloeistof"
+    },
+    {
+      "t": "Straling",
+      "d": "warmtetransport zonder tussenstof, als straling door de ruimte"
+    },
+    {
+      "t": "Geleider",
+      "d": "een stof die warmte goed doorgeeft, zoals metaal"
+    },
+    {
+      "t": "Isolator",
+      "d": "een stof die warmte slecht doorgeeft, zoals hout of lucht"
+    },
+    {
+      "t": "Convectie",
+      "d": "een andere naam voor warmtetransport door stroming"
+    },
+    {
+      "t": "Infraroodstraling",
+      "d": "de warmtestraling die voorwerpen uitzenden"
+    },
+    {
+      "t": "Warmte",
+      "d": "energie die van een warm naar een koud voorwerp stroomt"
+    },
+    {
+      "t": "Temperatuur",
+      "d": "een maat voor hoe warm of koud iets is"
+    },
+    {
+      "t": "Vacuüm",
+      "d": "een ruimte zonder stof; stopt geleiding en stroming"
+    },
+    {
+      "t": "Isolatie",
+      "d": "het tegenhouden van warmtetransport"
+    }
+  ],
+  "sv": [
+    {
+      "v": "Welke kant gaat warmte altijd op?",
+      "o": [
+        "Van warm naar koud",
+        "Van koud naar warm",
+        "Altijd omhoog",
+        "Altijd naar het zwaarste voorwerp"
+      ],
+      "c": 0,
+      "d": 1,
+      "u": "Warmte stroomt altijd van een warm naar een koud voorwerp.",
+      "uo": [
+        "Klopt: van warm naar koud.",
+        "Niet van koud naar warm vanzelf.",
+        "Niet altijd omhoog.",
+        "Niet naar het zwaarste."
+      ],
+      "uh": "Warmte gaat van warm naar koud."
+    },
+    {
+      "v": "Wat is geleiding?",
+      "o": [
+        "Warmte met een bewegend gas",
+        "Warmte door een vaste stof",
+        "Warmte zonder tussenstof",
+        "Warmte die verdwijnt"
+      ],
+      "c": 1,
+      "d": 2,
+      "u": "Bij geleiding gaat de warmte door een vaste stof, van molecuul naar molecuul.",
+      "uo": [
+        "Dat is stroming.",
+        "Klopt: door een vaste stof.",
+        "Dat is straling.",
+        "Warmte verdwijnt niet."
+      ],
+      "uh": "Geleiding = warmte door een vaste stof."
+    },
+    {
+      "v": "Wat is stroming (convectie)?",
+      "o": [
+        "Warmte door een vaste stof",
+        "Warmte zonder tussenstof",
+        "Warmte die meebeweegt met een gas of vloeistof",
+        "Warmte die stilstaat volgens de natuurkunde"
+      ],
+      "c": 2,
+      "d": 2,
+      "u": "Bij stroming verplaatst de warmte mee met een bewegend gas of een bewegende vloeistof.",
+      "uo": [
+        "Dat is geleiding.",
+        "Dat is straling.",
+        "Klopt: mee met een gas of vloeistof.",
+        "Bij stroming beweegt het juist."
+      ],
+      "uh": "Stroming = warmte met een bewegend gas of vloeistof."
+    },
+    {
+      "v": "Wat is straling?",
+      "o": [
+        "Warmte door een vaste stof",
+        "Warmte met een bewegend gas",
+        "Warmte die alleen bij metaal werkt",
+        "Warmte zonder tussenstof"
+      ],
+      "c": 3,
+      "d": 2,
+      "u": "Bij straling gaat de warmte als straling door de ruimte, zonder tussenstof.",
+      "uo": [
+        "Dat is geleiding.",
+        "Dat is stroming.",
+        "Straling werkt ook zonder metaal.",
+        "Klopt: zonder tussenstof."
+      ],
+      "uh": "Straling = warmte zonder tussenstof."
+    },
+    {
+      "v": "Hoe bereikt de warmte van de zon de aarde?",
+      "o": [
+        "Door straling",
+        "Door geleiding",
+        "Door stroming",
+        "Door een draad"
+      ],
+      "c": 0,
+      "d": 3,
+      "u": "Tussen de zon en de aarde is vacuüm, dus geleiding en stroming kunnen niet; de warmte komt door straling.",
+      "uo": [
+        "Klopt: door straling, dwars door het vacuüm.",
+        "Geleiding vraagt een vaste stof.",
+        "Stroming vraagt een gas of vloeistof.",
+        "Er loopt geen draad naar de zon."
+      ],
+      "uh": "Zonnewarmte bereikt de aarde door straling."
+    },
+    {
+      "v": "Welke stof is een goede warmtegeleider?",
+      "o": [
+        "Hout",
+        "Metaal",
+        "Lucht",
+        "Kunststof"
+      ],
+      "c": 1,
+      "d": 2,
+      "u": "Metalen geleiden warmte goed; hout, lucht en kunststof zijn juist isolatoren.",
+      "uo": [
+        "Hout is een isolator.",
+        "Klopt: metaal geleidt goed.",
+        "Lucht is een isolator.",
+        "Kunststof is een isolator."
+      ],
+      "uh": "Metaal = goede geleider."
+    },
+    {
+      "v": "Wat is een isolator?",
+      "o": [
+        "Een stof die warmte goed doorgeeft",
+        "Een bewegend gas in deze situatie hier",
+        "Een stof die warmte slecht doorgeeft",
+        "Een soort straling"
+      ],
+      "c": 2,
+      "d": 2,
+      "u": "Een isolator geeft warmte slecht door, zoals hout, kunststof of stilstaande lucht.",
+      "uo": [
+        "Dat is een geleider.",
+        "Dat is stroming.",
+        "Klopt: geeft warmte slecht door.",
+        "Dat is straling."
+      ],
+      "uh": "Isolator = geeft warmte slecht door."
+    },
+    {
+      "v": "Waarom voelt een metalen deurklink kouder aan dan een houten?",
+      "o": [
+        "Metaal is altijd echt kouder",
+        "Hout straalt warmte uit",
+        "Hout geleidt beter in deze situatie hier",
+        "Metaal geleidt de warmte sneller weg"
+      ],
+      "c": 3,
+      "d": 3,
+      "u": "Metaal geleidt de warmte van je hand snel weg, dus het voelt kouder, ook al is de temperatuur gelijk.",
+      "uo": [
+        "De temperatuur is vaak gelijk.",
+        "Dat verklaart het koude gevoel niet.",
+        "Hout geleidt juist slechter.",
+        "Klopt: metaal voert je warmte snel af."
+      ],
+      "uh": "Metaal voert warmte snel af, dus het voelt kouder."
+    },
+    {
+      "v": "Waarom stijgt warme lucht op?",
+      "o": [
+        "Warme lucht is lichter en stijgt door stroming",
+        "Warme lucht is zwaarder volgens de natuurkunde",
+        "Warme lucht straalt naar boven",
+        "Warme lucht geleidt omhoog"
+      ],
+      "c": 0,
+      "d": 3,
+      "u": "Warme lucht zet uit en is lichter, dus stijgt op; koude lucht zakt. Dat is warmtetransport door stroming.",
+      "uo": [
+        "Klopt: lichter, dus stijgt (stroming).",
+        "Warme lucht is juist lichter.",
+        "Dit is stroming, geen straling.",
+        "Dit is stroming, geen geleiding."
+      ],
+      "uh": "Warme lucht stijgt op: stroming."
+    },
+    {
+      "v": "Hoe stopt dubbel glas met vacuüm ertussen het warmteverlies?",
+      "o": [
+        "Het glas straalt meer warmte uit",
+        "Het vacuüm stopt geleiding en stroming",
+        "Het vacuüm geleidt heel goed in dit geval",
+        "Het glas laat alle warmte door"
+      ],
+      "c": 1,
+      "d": 3,
+      "u": "In een vacuüm zitten geen moleculen, dus kunnen geleiding en stroming er niet plaatsvinden.",
+      "uo": [
+        "Dat zou juist warmte verliezen.",
+        "Klopt: geen stof, dus geen geleiding of stroming.",
+        "Vacuüm geleidt juist niet.",
+        "Dan zou isolatie niet werken."
+      ],
+      "uh": "Vacuüm stopt geleiding en stroming."
+    },
+    {
+      "v": "Waarmee kaats je warmtestraling terug?",
+      "o": [
+        "Met een zwart oppervlak",
+        "Met een dikke houten plaat",
+        "Met een reflecterende (glimmende) laag",
+        "Met stilstaande lucht in deze situatie hier"
+      ],
+      "c": 2,
+      "d": 2,
+      "u": "Een reflecterende, glimmende laag kaatst warmtestraling terug, zoals de folie van een reddingsdeken.",
+      "uo": [
+        "Zwart neemt straling juist op.",
+        "Hout stopt vooral geleiding, niet straling.",
+        "Klopt: een glimmende laag kaatst straling terug.",
+        "Lucht stopt vooral geleiding en stroming."
+      ],
+      "uh": "Glimmende laag kaatst warmtestraling terug."
+    },
+    {
+      "v": "Een pan op een hete plaat wordt vanonder warm. Welk transport is dat?",
+      "o": [
+        "Stroming",
+        "Straling",
+        "Verdamping",
+        "Geleiding"
+      ],
+      "c": 3,
+      "d": 3,
+      "u": "De warmte gaat door de vaste bodem van de pan van molecuul naar molecuul: geleiding.",
+      "uo": [
+        "Stroming zou met een gas of vloeistof zijn.",
+        "Straling zou zonder contact zijn.",
+        "Verdamping is geen warmtetransportvorm hier.",
+        "Klopt: door de vaste bodem, dus geleiding."
+      ],
+      "uh": "Warmte door een vaste pan = geleiding."
+    },
+    {
+      "v": "Je voelt de warmte van een kampvuur op afstand. Welk transport is dat vooral?",
+      "o": [
+        "Straling",
+        "Geleiding",
+        "Stroming door de grond",
+        "Verdamping"
+      ],
+      "c": 0,
+      "d": 3,
+      "u": "Op afstand raak je het vuur niet aan; de warmte bereikt je vooral door straling.",
+      "uo": [
+        "Klopt: straling bereikt je zonder contact.",
+        "Geleiding vraagt aanraking.",
+        "De warmte komt niet via de grond.",
+        "Verdamping is hier niet het punt."
+      ],
+      "uh": "Warmte op afstand voelen = straling."
+    },
+    {
+      "v": "Wat hebben de drie vormen van warmtetransport gemeen?",
+      "o": [
+        "Ze hebben allemaal een vaste stof nodig",
+        "Ze verplaatsen warmte van warm naar koud",
+        "Ze werken alleen in vacuüm bij dit voorwerp",
+        "Ze maken warmte uit het niets"
+      ],
+      "c": 1,
+      "d": 2,
+      "u": "Geleiding, stroming en straling verplaatsen alle drie warmte van een warm naar een koud gebied.",
+      "uo": [
+        "Alleen geleiding vraagt een vaste stof.",
+        "Klopt: alle drie verplaatsen warmte van warm naar koud.",
+        "In vacuüm blijft alleen straling over, dat werkt daar in vacuüm.",
+        "Ze maken geen warmte uit niets."
+      ],
+      "uh": "Alle drie: warmte van warm naar koud."
+    },
+    {
+      "v": "Welke vorm van warmtetransport werkt NIET in vacuüm?",
+      "o": [
+        "Alleen straling",
+        "Geen enkele",
+        "Geleiding en stroming",
+        "Alle drie in dit geval"
+      ],
+      "c": 2,
+      "d": 3,
+      "u": "Geleiding en stroming hebben stof nodig; in vacuüm blijft alleen straling over.",
+      "uo": [
+        "Straling gaat juist wel door vacuüm.",
+        "Straling werkt wel.",
+        "Klopt: geleiding en stroming werken niet in vacuüm.",
+        "Niet alle drie werken in vacuüm."
+      ],
+      "uh": "In vacuüm: alleen straling."
+    },
+    {
+      "v": "Waarom voelt een wollen trui warm aan?",
+      "o": [
+        "Wol geleidt de warmte snel weg",
+        "Wol maakt zelf warmte in deze situatie hier",
+        "Wol straalt veel warmte uit",
+        "De stilstaande lucht in de wol isoleert"
+      ],
+      "c": 3,
+      "d": 3,
+      "u": "Tussen de wolvezels zit stilstaande lucht, een goede isolator, die je lichaamswarmte vasthoudt.",
+      "uo": [
+        "Wol geleidt juist slecht.",
+        "Wol maakt zelf geen warmte.",
+        "Uitstralen is niet de reden.",
+        "Klopt: stilstaande lucht isoleert."
+      ],
+      "uh": "Stilstaande lucht in wol isoleert."
+    },
+    {
+      "v": "Wat is warmte?",
+      "o": [
+        "Energie die van warm naar koud stroomt",
+        "De massa van een voorwerp bij dit voorwerp",
+        "De snelheid van een voorwerp",
+        "De kracht op een voorwerp"
+      ],
+      "c": 0,
+      "d": 1,
+      "u": "Warmte is energie die van een warm naar een koud voorwerp stroomt.",
+      "uo": [
+        "Klopt: energie van warm naar koud.",
+        "Massa is geen warmte.",
+        "Snelheid is geen warmte.",
+        "Kracht is geen warmte."
+      ],
+      "uh": "Warmte = energie van warm naar koud."
+    },
+    {
+      "v": "In een radiator warmt de lucht in de kamer op. Welk transport verspreidt de warmte door de kamer?",
+      "o": [
+        "Geleiding",
+        "Stroming",
+        "Straling",
+        "Verdamping"
+      ],
+      "c": 1,
+      "d": 3,
+      "u": "De warme lucht bij de radiator stijgt op en verspreidt zich door de kamer: warmtetransport door stroming.",
+      "uo": [
+        "Geleiding zou door een vaste stof zijn.",
+        "Klopt: opstijgende warme lucht is stroming.",
+        "Straling verwarmt vooral wat er recht tegenover staat.",
+        "Verdamping is hier niet de hoofdvorm."
+      ],
+      "uh": "Warme lucht die rondgaat = stroming."
+    },
+    {
+      "v": "Wat is infraroodstraling?",
+      "o": [
+        "Een bewegend gas volgens de natuurkunde",
+        "Warmte door een metaal",
+        "De warmtestraling die voorwerpen uitzenden",
+        "Een soort geleiding"
+      ],
+      "c": 2,
+      "d": 2,
+      "u": "Infraroodstraling is de onzichtbare warmtestraling die warme voorwerpen uitzenden.",
+      "uo": [
+        "Dat is stroming.",
+        "Dat is geleiding.",
+        "Klopt: de warmtestraling van voorwerpen.",
+        "Straling is geen geleiding."
+      ],
+      "uh": "Infraroodstraling = warmtestraling van voorwerpen."
+    },
+    {
+      "v": "Waarom dragen mensen in de woestijn vaak lichte kleding?",
+      "o": [
+        "Lichte kleuren geleiden beter",
+        "Lichte kleuren maken warmte in deze situatie hier",
+        "Lichte kleuren stromen sneller",
+        "Lichte kleuren kaatsen de zonnestraling terug"
+      ],
+      "c": 3,
+      "d": 3,
+      "u": "Een lichte, glimmende kleur kaatst de warmtestraling van de zon terug, zodat je minder opwarmt.",
+      "uo": [
+        "Kleur heeft weinig met geleiding te maken.",
+        "Kleding maakt zelf geen warmte.",
+        "Stroming is hier niet het punt.",
+        "Klopt: licht kaatst de zonnestraling terug."
+      ],
+      "uh": "Lichte kleur kaatst zonnestraling terug."
+    },
+    {
+      "v": "Welke stof geleidt warmte het slechtst?",
+      "o": [
+        "Stilstaande lucht",
+        "IJzer in dit geval",
+        "Koper",
+        "Aluminium"
+      ],
+      "c": 0,
+      "d": 2,
+      "u": "Stilstaande lucht is een isolator; de metalen ijzer, koper en aluminium geleiden juist goed.",
+      "uo": [
+        "Klopt: stilstaande lucht geleidt slecht.",
+        "IJzer geleidt goed.",
+        "Koper geleidt goed.",
+        "Aluminium geleidt goed."
+      ],
+      "uh": "Stilstaande lucht = slechte geleider (isolator)."
+    },
+    {
+      "v": "Waarom werkt een thermosfles zo goed?",
+      "o": [
+        "Het glas maakt zelf warmte volgens de natuurkunde",
+        "Vacuüm stopt geleiding en stroming, glimmen stopt straling",
+        "Het metaal geleidt de warmte naar binnen",
+        "De lucht stroomt vrij rond"
+      ],
+      "c": 1,
+      "d": 3,
+      "u": "Een thermosfles heeft een vacuümwand tegen geleiding en stroming, en een spiegelende laag tegen straling.",
+      "uo": [
+        "De fles maakt geen warmte.",
+        "Klopt: vacuüm en spiegel stoppen alle drie de vormen.",
+        "Er is juist geen geleiding gewenst.",
+        "De lucht stroomt juist niet, dat is de bedoeling."
+      ],
+      "uh": "Thermosfles: vacuüm plus spiegel tegen alle drie."
+    },
+    {
+      "v": "Wat gebeurt er met de warmte als je twee voorwerpen van verschillende temperatuur tegen elkaar legt?",
+      "o": [
+        "Warmte stroomt van koud naar warm",
+        "Er gebeurt niets volgens de natuurkunde",
+        "Warmte stroomt van het warme naar het koude",
+        "Beide worden warmer"
+      ],
+      "c": 2,
+      "d": 2,
+      "u": "Warmte gaat door geleiding van het warme naar het koude voorwerp tot ze even warm zijn.",
+      "uo": [
+        "Niet van koud naar warm vanzelf.",
+        "Er stroomt juist warmte.",
+        "Klopt: van warm naar koud.",
+        "Het koude wordt warmer, het warme kouder."
+      ],
+      "uh": "Aanraking: warmte stroomt van warm naar koud."
+    },
+    {
+      "v": "Welke maatregel gaat vooral warmtetransport door straling tegen?",
+      "o": [
+        "Een laag stilstaande lucht",
+        "Een dikke metalen plaat in dit geval",
+        "Een bewegende luchtstroom",
+        "Een spiegelende laag aanbrengen"
+      ],
+      "c": 3,
+      "d": 3,
+      "u": "Een spiegelende laag kaatst warmtestraling terug en gaat zo vooral straling tegen.",
+      "uo": [
+        "Stilstaande lucht stopt vooral geleiding en stroming.",
+        "Metaal geleidt juist goed.",
+        "Bewegende lucht geeft juist stroming.",
+        "Klopt: een spiegelende laag stopt straling."
+      ],
+      "uh": "Spiegel tegen straling; lucht tegen geleiding/stroming."
+    },
+    {
+      "v": "Bij welke vorm van warmtetransport verplaatst de stof zelf mee?",
+      "o": [
+        "Bij stroming",
+        "Bij geleiding, want daar schuiven de moleculen mee",
+        "Bij straling, want die neemt lucht mee",
+        "Bij geen enkele vorm van warmtetransport"
+      ],
+      "c": 0,
+      "d": 3,
+      "u": "Bij stroming beweegt het gas of de vloeistof zelf mee met de warmte; bij geleiding en straling niet.",
+      "uo": [
+        "Klopt: bij stroming beweegt de stof zelf mee.",
+        "Bij geleiding blijven de moleculen op hun plaats.",
+        "Straling neemt geen lucht mee.",
+        "Bij stroming beweegt de stof wel degelijk mee."
+      ],
+      "uh": "Alleen bij stroming beweegt de stof zelf mee."
+    }
+  ],
+  "oe": [
+    {
+      "vraag": "Noem de drie vormen van warmtetransport en leg van elk kort uit hoe de warmte zich verplaatst.",
+      "antwoord": "Bij geleiding gaat de warmte door een vaste stof, van molecuul naar molecuul, zonder dat de stof zelf verplaatst. Bij stroming verplaatst de warmte mee met een bewegend gas of een bewegende vloeistof, zoals opstijgende warme lucht. Bij straling gaat de warmte als straling door de ruimte, zonder tussenstof."
+    },
+    {
+      "vraag": "Leg uit waarom de warmte van de zon de aarde alleen door straling kan bereiken.",
+      "antwoord": "Tussen de zon en de aarde bevindt zich het vacuüm van de ruimte, waarin geen stof zit. Geleiding heeft een vaste stof nodig en stroming heeft een gas of vloeistof nodig, dus die kunnen in vacuüm niet werken. Alleen straling gaat door het vacuüm, dus zo bereikt de zonnewarmte de aarde."
+    },
+    {
+      "vraag": "Leg uit waarom een metalen voorwerp kouder aanvoelt dan een houten voorwerp bij dezelfde temperatuur.",
+      "antwoord": "Metaal is een goede warmtegeleider en voert de warmte van je hand snel af. Hout is een isolator en geleidt die warmte veel langzamer. Omdat het metaal je handwarmte sneller wegneemt, voelt het kouder aan, ook al hebben beide voorwerpen dezelfde temperatuur."
+    },
+    {
+      "vraag": "Leg uit hoe dubbel glas met een vacuüm ertussen warmteverlies tegengaat.",
+      "antwoord": "In het vacuüm tussen de twee glasplaten zitten geen moleculen. Daardoor kan er geen geleiding plaatsvinden, want daar is een stof voor nodig, en ook geen stroming, want daar is een bewegend gas of vloeistof voor nodig. Zo houdt het vacuüm de warmte binnen."
+    },
+    {
+      "vraag": "Leg uit hoe een thermosfles alle drie de vormen van warmtetransport tegengaat.",
+      "antwoord": "Een thermosfles heeft een dubbele wand met een vacuüm ertussen. Dat vacuüm stopt de geleiding en de stroming, omdat daar stof voor nodig is. De binnenwand is spiegelend, waardoor de warmtestraling wordt teruggekaatst. Zo worden geleiding, stroming en straling alle drie tegengegaan en blijft de inhoud lang warm of koud."
+    }
+  ]
+}

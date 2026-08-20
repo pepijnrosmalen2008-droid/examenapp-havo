@@ -1,0 +1,564 @@
+{
+  "id": "C3",
+  "naam": "Krachten samenstellen en ontbinden",
+  "beschrijving": "Gouden-standaardmodule na.C.3: krachten die op één lijn, loodrecht of onder een willekeurige hoek staan samenstellen tot een resulterende kracht, en een kracht ontbinden in componenten.",
+  "ceStatus": "CE",
+  "onderwerpen": [
+    "Samenstellen tot een resulterende kracht",
+    "Krachten op één lijn: optellen of aftrekken",
+    "Loodrechte krachten: stelling van Pythagoras",
+    "Willekeurige hoek: parallellogrammethode",
+    "Ontbinden in componenten",
+    "Ontbinden op een helling"
+  ],
+  "sam": "Meerdere krachten op een voorwerp kun je vervangen door één resulterende kracht: dat heet samenstellen. Staan de krachten op één lijn, dan tel je krachten in dezelfde richting op en trek je tegengestelde krachten van elkaar af. Staan twee krachten loodrecht op elkaar, dan vind je de resulterende kracht met de stelling van Pythagoras. Staan de krachten onder een willekeurige hoek, dan gebruik je de parallellogrammethode: je tekent een parallellogram met de twee krachten als zijden, en de diagonaal is de resulterende kracht. Het omgekeerde heet ontbinden: je splitst één kracht in twee componenten in gekozen richtingen. Een klassiek voorbeeld is een voorwerp op een helling: je ontbindt de zwaartekracht in een component langs de helling (die het voorwerp laat glijden) en een component loodrecht op de helling (die op het oppervlak drukt). Let goed op de richtingen waarin je ontbindt, anders krijg je de verkeerde componenten.",
+  "begrippen": [
+    {
+      "t": "Samenstellen",
+      "d": "meerdere krachten vervangen door één resulterende kracht"
+    },
+    {
+      "t": "Ontbinden",
+      "d": "één kracht splitsen in twee componenten in gekozen richtingen"
+    },
+    {
+      "t": "Resulterende kracht",
+      "d": "de ene kracht die alle krachten samen vervangt"
+    },
+    {
+      "t": "Component",
+      "d": "een deel van een kracht in een bepaalde richting"
+    },
+    {
+      "t": "Parallellogrammethode",
+      "d": "twee krachten samenstellen via een parallellogram; de diagonaal is de resultante"
+    },
+    {
+      "t": "Op één lijn",
+      "d": "krachten met dezelfde of tegengestelde richting"
+    },
+    {
+      "t": "Loodrecht",
+      "d": "onder een hoek van 90 graden"
+    },
+    {
+      "t": "Diagonaal",
+      "d": "de lijn dwars door het parallellogram; de resulterende kracht"
+    },
+    {
+      "t": "Stelling van Pythagoras",
+      "d": "voor loodrechte krachten: de resultante is de wortel van de som van de kwadraten"
+    },
+    {
+      "t": "Helling",
+      "d": "een schuin vlak waarop krachten worden ontbonden"
+    },
+    {
+      "t": "Kop-staartmethode",
+      "d": "krachten samenstellen door de pijlen achter elkaar te tekenen"
+    },
+    {
+      "t": "Vectorpijl",
+      "d": "de pijl waarmee je een kracht met grootte en richting tekent"
+    }
+  ],
+  "sv": [
+    {
+      "v": "Wat is krachten samenstellen?",
+      "o": [
+        "Meerdere krachten vervangen door één resulterende kracht",
+        "Een kracht splitsen in twee delen",
+        "Een kracht in newton omzetten bij dit voorwerp op de helling",
+        "De massa van een voorwerp bepalen"
+      ],
+      "c": 0,
+      "d": 2,
+      "u": "Samenstellen is meerdere krachten vervangen door één kracht die hetzelfde effect heeft: de resulterende kracht.",
+      "uo": [
+        "Klopt: vervangen door één resulterende kracht.",
+        "Dat is juist ontbinden.",
+        "Dat is geen samenstellen.",
+        "Dat is massa bepalen."
+      ],
+      "uh": "Samenstellen = alle krachten samen als één."
+    },
+    {
+      "v": "Wat is krachten ontbinden?",
+      "o": [
+        "Meerdere krachten optellen tot één",
+        "Eén kracht splitsen in twee componenten",
+        "Een kracht in kilogram omzetten",
+        "De snelheid berekenen bij dit voorwerp op de helling"
+      ],
+      "c": 1,
+      "d": 2,
+      "u": "Ontbinden is het omgekeerde van samenstellen: je splitst één kracht in twee componenten.",
+      "uo": [
+        "Dat is juist samenstellen.",
+        "Klopt: één kracht splitsen in componenten.",
+        "Dat is geen ontbinden.",
+        "Dat is een snelheidsberekening."
+      ],
+      "uh": "Ontbinden = één kracht splitsen in componenten."
+    },
+    {
+      "v": "Twee krachten van 3 N en 4 N wijzen dezelfde kant op. Wat is de resulterende kracht?",
+      "o": [
+        "1 N",
+        "12 N",
+        "7 N",
+        "5 N"
+      ],
+      "c": 2,
+      "d": 2,
+      "u": "Krachten in dezelfde richting tel je op: 3 plus 4 is 7 N.",
+      "uo": [
+        "1 N is het verschil, bij tegengestelde richting.",
+        "12 is de vermenigvuldiging.",
+        "Klopt: 3 plus 4 is 7 N.",
+        "5 hoort bij loodrechte krachten."
+      ],
+      "uh": "Zelfde richting: optellen."
+    },
+    {
+      "v": "Twee krachten van 7 N en 4 N wijzen tegengesteld. Wat is de resulterende kracht?",
+      "o": [
+        "11 N",
+        "28 N",
+        "0 N",
+        "3 N"
+      ],
+      "c": 3,
+      "d": 2,
+      "u": "Tegengestelde krachten trek je af: 7 min 4 is 3 N.",
+      "uo": [
+        "11 is de optelling, bij dezelfde richting.",
+        "28 is de vermenigvuldiging.",
+        "0 zou alleen bij gelijke krachten.",
+        "Klopt: 7 min 4 is 3 N."
+      ],
+      "uh": "Tegengesteld: aftrekken."
+    },
+    {
+      "v": "Twee krachten van 3 N en 4 N staan loodrecht op elkaar. Wat is de resulterende kracht?",
+      "o": [
+        "5 N",
+        "7 N",
+        "1 N",
+        "12 N"
+      ],
+      "c": 0,
+      "d": 3,
+      "u": "Bij loodrechte krachten gebruik je Pythagoras: de wortel van 3 kwadraat plus 4 kwadraat is 5 N.",
+      "uo": [
+        "Klopt: wortel van 9 plus 16 is wortel 25 is 5 N.",
+        "7 zou optellen zijn, maar dat mag niet bij loodrecht.",
+        "1 zou aftrekken zijn.",
+        "12 is de vermenigvuldiging."
+      ],
+      "uh": "Loodrecht: Pythagoras (hier 5 N)."
+    },
+    {
+      "v": "Welke methode gebruik je bij krachten onder een willekeurige hoek?",
+      "o": [
+        "Gewoon optellen",
+        "De parallellogrammethode",
+        "De massa vermenigvuldigen",
+        "De snelheid delen"
+      ],
+      "c": 1,
+      "d": 2,
+      "u": "Bij een willekeurige hoek teken je een parallellogram; de diagonaal is de resulterende kracht.",
+      "uo": [
+        "Zomaar optellen mag niet bij een hoek.",
+        "Klopt: de parallellogrammethode.",
+        "Massa hoort hier niet bij.",
+        "Snelheid hoort hier niet bij."
+      ],
+      "uh": "Willekeurige hoek: parallellogrammethode."
+    },
+    {
+      "v": "Wat is de diagonaal in de parallellogrammethode?",
+      "o": [
+        "De grootste van de twee krachten",
+        "De massa",
+        "De resulterende kracht",
+        "De snelheid"
+      ],
+      "c": 2,
+      "d": 2,
+      "u": "In de parallellogrammethode is de diagonaal de resulterende kracht van de twee krachten.",
+      "uo": [
+        "Het is niet zomaar de grootste kracht.",
+        "Massa hoort hier niet bij.",
+        "Klopt: de diagonaal is de resultante.",
+        "Snelheid hoort hier niet bij."
+      ],
+      "uh": "Diagonaal = resulterende kracht."
+    },
+    {
+      "v": "Wat is een component van een kracht?",
+      "o": [
+        "De hele resulterende kracht",
+        "De massa van het voorwerp",
+        "De tijd van de beweging bij dit voorwerp op de helling",
+        "Een deel van de kracht in een bepaalde richting"
+      ],
+      "c": 3,
+      "d": 2,
+      "u": "Een component is het deel van een kracht dat in een bepaalde richting werkt.",
+      "uo": [
+        "De component is een deel, niet het geheel.",
+        "Massa is geen component.",
+        "Tijd is geen component.",
+        "Klopt: een deel in een bepaalde richting."
+      ],
+      "uh": "Component = deel van een kracht in een richting."
+    },
+    {
+      "v": "Waarin ontbind je de zwaartekracht bij een voorwerp op een helling?",
+      "o": [
+        "Langs de helling en loodrecht op de helling",
+        "Alleen naar beneden bij dit voorwerp op de helling",
+        "In snelheid en tijd",
+        "In massa en gewicht"
+      ],
+      "c": 0,
+      "d": 3,
+      "u": "Op een helling splits je de zwaartekracht in een component langs de helling en een loodrecht op de helling.",
+      "uo": [
+        "Klopt: langs en loodrecht op de helling.",
+        "Alleen naar beneden is niet ontbinden.",
+        "Snelheid en tijd zijn geen componenten.",
+        "Massa en gewicht zijn geen componenten."
+      ],
+      "uh": "Op een helling: langs en loodrecht ontbinden."
+    },
+    {
+      "v": "Welke component laat een voorwerp langs de helling glijden?",
+      "o": [
+        "De component loodrecht op de helling",
+        "De component langs de helling",
+        "De normaalkracht",
+        "De spankracht"
+      ],
+      "c": 1,
+      "d": 3,
+      "u": "De component van de zwaartekracht langs de helling trekt het voorwerp naar beneden langs het vlak.",
+      "uo": [
+        "De loodrechte component drukt op het vlak.",
+        "Klopt: de component langs de helling.",
+        "De normaalkracht drukt loodrecht, niet langs.",
+        "Er is geen touw in het spel."
+      ],
+      "uh": "Langs-de-helling-component laat glijden."
+    },
+    {
+      "v": "Welke component drukt op het hellingsoppervlak?",
+      "o": [
+        "De component langs de helling",
+        "De wrijvingskracht",
+        "De component loodrecht op de helling",
+        "De spankracht bij dit voorwerp op de helling"
+      ],
+      "c": 2,
+      "d": 3,
+      "u": "De component van de zwaartekracht loodrecht op de helling drukt het voorwerp tegen het oppervlak.",
+      "uo": [
+        "De component langs de helling laat juist glijden.",
+        "Wrijving is een aparte kracht.",
+        "Klopt: de loodrechte component drukt op het vlak.",
+        "Er is geen touw in het spel."
+      ],
+      "uh": "Loodrechte component drukt op het vlak."
+    },
+    {
+      "v": "Wat mag je NIET doen bij twee krachten onder een hoek?",
+      "o": [
+        "Een parallellogram tekenen",
+        "De diagonaal bepalen bij dit voorwerp op de helling",
+        "De richtingen goed tekenen",
+        "De grootten zomaar bij elkaar optellen"
+      ],
+      "c": 3,
+      "d": 3,
+      "u": "Bij een hoek mag je de grootten niet zomaar optellen; je moet de parallellogrammethode gebruiken.",
+      "uo": [
+        "Een parallellogram tekenen is juist goed.",
+        "De diagonaal bepalen is juist goed.",
+        "Richtingen goed tekenen is juist goed.",
+        "Klopt: zomaar optellen mag niet bij een hoek."
+      ],
+      "uh": "Bij een hoek niet zomaar optellen."
+    },
+    {
+      "v": "Wat is de resulterende kracht van twee even grote tegengestelde krachten?",
+      "o": [
+        "Nul",
+        "Twee keer zo groot",
+        "De helft",
+        "Gelijk aan één kracht"
+      ],
+      "c": 0,
+      "d": 2,
+      "u": "Twee even grote krachten in tegengestelde richting heffen elkaar op: de resultante is nul.",
+      "uo": [
+        "Klopt: ze heffen elkaar op, resultante nul.",
+        "Ze tellen niet op.",
+        "De helft klopt niet.",
+        "Er blijft niets over."
+      ],
+      "uh": "Gelijk en tegengesteld = resultante nul."
+    },
+    {
+      "v": "Hoe teken je krachten samen met de kop-staartmethode?",
+      "o": [
+        "De pijlen over elkaar heen",
+        "De pijlen achter elkaar tekenen",
+        "Alleen de grootste pijl",
+        "De pijlen weglaten van het voorwerp"
+      ],
+      "c": 1,
+      "d": 2,
+      "u": "Bij de kop-staartmethode zet je de staart van de tweede pijl aan de kop van de eerste; de resultante loopt van begin tot eind.",
+      "uo": [
+        "Over elkaar heen is niet de methode.",
+        "Klopt: de pijlen achter elkaar.",
+        "Alleen de grootste is fout.",
+        "Zonder pijlen kun je niet samenstellen."
+      ],
+      "uh": "Kop-staart: pijlen achter elkaar."
+    },
+    {
+      "v": "Waarom moet je bij ontbinden goed op de richtingen letten?",
+      "o": [
+        "Anders verandert de massa van het voorwerp",
+        "Anders wordt het voorwerp warmer",
+        "Anders krijg je de verkeerde componenten",
+        "Anders verdwijnt de zwaartekracht"
+      ],
+      "c": 2,
+      "d": 3,
+      "u": "De componenten hangen af van de gekozen richtingen; kies je die verkeerd, dan kloppen de componenten niet.",
+      "uo": [
+        "De massa verandert niet.",
+        "De temperatuur verandert niet.",
+        "Klopt: verkeerde richtingen geven verkeerde componenten.",
+        "De zwaartekracht blijft."
+      ],
+      "uh": "Verkeerde richting = verkeerde componenten."
+    },
+    {
+      "v": "Twee krachten van 5 N en 5 N wijzen dezelfde kant op. Wat is de resultante?",
+      "o": [
+        "0 N van het voorwerp",
+        "5 N",
+        "25 N",
+        "10 N"
+      ],
+      "c": 3,
+      "d": 2,
+      "u": "Zelfde richting: 5 plus 5 is 10 N.",
+      "uo": [
+        "0 zou bij tegengesteld zijn.",
+        "5 is maar één kracht.",
+        "25 is de vermenigvuldiging.",
+        "Klopt: 5 plus 5 is 10 N."
+      ],
+      "uh": "Zelfde richting: optellen."
+    },
+    {
+      "v": "Wat is de resulterende kracht?",
+      "o": [
+        "De ene kracht die alle krachten samen vervangt",
+        "De kleinste kracht",
+        "De massa maal g van het voorwerp in deze situatie hier",
+        "De snelheid maal de tijd"
+      ],
+      "c": 0,
+      "d": 1,
+      "u": "De resulterende kracht is de enkele kracht die het effect van alle krachten samen weergeeft.",
+      "uo": [
+        "Klopt: de kracht die alle krachten vervangt.",
+        "Het is niet de kleinste kracht.",
+        "Dat is de zwaartekracht.",
+        "Dat is een afstand."
+      ],
+      "uh": "Resulterende kracht = alle krachten samen als één."
+    },
+    {
+      "v": "Op een steilere helling wordt de component langs de helling:",
+      "o": [
+        "Kleiner",
+        "Groter",
+        "Nul",
+        "Precies de zwaartekracht"
+      ],
+      "c": 1,
+      "d": 3,
+      "u": "Hoe steiler de helling, hoe groter de component van de zwaartekracht langs de helling, dus hoe sterker het glijdt.",
+      "uo": [
+        "Steiler maakt hem juist groter, niet kleiner.",
+        "Klopt: steiler geeft een grotere component langs de helling.",
+        "Nul zou een vlakke ondergrond zijn.",
+        "Alleen bij een verticale wand is hij gelijk aan Fz."
+      ],
+      "uh": "Steiler = grotere component langs de helling."
+    },
+    {
+      "v": "Waarvoor gebruik je de stelling van Pythagoras bij krachten?",
+      "o": [
+        "Voor krachten op één lijn",
+        "Voor het meten van massa bij dit voorwerp op de helling",
+        "Voor de resultante van twee loodrechte krachten",
+        "Voor het berekenen van tijd"
+      ],
+      "c": 2,
+      "d": 2,
+      "u": "Bij twee loodrechte krachten vind je de resultante met Pythagoras: wortel van de som van de kwadraten.",
+      "uo": [
+        "Op één lijn tel je gewoon op of af.",
+        "Massa meet je niet zo.",
+        "Klopt: voor loodrechte krachten.",
+        "Tijd bereken je niet zo."
+      ],
+      "uh": "Pythagoras: resultante van loodrechte krachten."
+    },
+    {
+      "v": "Wat is het verschil tussen samenstellen en ontbinden?",
+      "o": [
+        "Ze zijn precies hetzelfde bij dit voorwerp op de helling",
+        "Samenstellen splitst, ontbinden voegt samen",
+        "Beide veranderen de massa",
+        "Samenstellen voegt samen, ontbinden splitst"
+      ],
+      "c": 3,
+      "d": 3,
+      "u": "Samenstellen maakt van meerdere krachten één; ontbinden maakt van één kracht meerdere componenten.",
+      "uo": [
+        "Ze zijn juist elkaars omgekeerde.",
+        "Dit is precies omgedraaid.",
+        "De massa verandert niet.",
+        "Klopt: samenstellen voegt samen, ontbinden splitst."
+      ],
+      "uh": "Samenstellen voegt samen, ontbinden splitst."
+    },
+    {
+      "v": "Drie krachten op een voorwerp geven samen resultante nul. Wat geldt er?",
+      "o": [
+        "Het voorwerp is in evenwicht",
+        "Het voorwerp versnelt sterk",
+        "De massa is nul van het voorwerp",
+        "Er werkt geen zwaartekracht"
+      ],
+      "c": 0,
+      "d": 3,
+      "u": "Als alle krachten samen nul opleveren, is het voorwerp in evenwicht.",
+      "uo": [
+        "Klopt: resultante nul betekent evenwicht.",
+        "Zonder resultante versnelt het niet.",
+        "De massa staat hier los van.",
+        "De zwaartekracht kan gewoon werken, maar wordt opgeheven."
+      ],
+      "uh": "Resultante nul = evenwicht."
+    },
+    {
+      "v": "Hoe teken je de resultante in een parallellogram?",
+      "o": [
+        "Als een van de twee zijden",
+        "Als de diagonaal vanuit het gezamenlijke beginpunt",
+        "Als een cirkel van het voorwerp in deze situatie hier",
+        "Als een horizontale lijn"
+      ],
+      "c": 1,
+      "d": 2,
+      "u": "De resultante is de diagonaal van het parallellogram, getekend vanuit het gemeenschappelijke aangrijpingspunt.",
+      "uo": [
+        "Een zijde is een van de oorspronkelijke krachten.",
+        "Klopt: de diagonaal vanuit het beginpunt.",
+        "Een cirkel is geen kracht.",
+        "Niet per se horizontaal."
+      ],
+      "uh": "Resultante = diagonaal vanuit het beginpunt."
+    },
+    {
+      "v": "Een kracht recht omhoog en een kracht recht omlaag zijn even groot. Resultante?",
+      "o": [
+        "Twee keer omhoog",
+        "Twee keer omlaag",
+        "Nul",
+        "Loodrecht opzij"
+      ],
+      "c": 2,
+      "d": 2,
+      "u": "Even grote krachten omhoog en omlaag zijn tegengesteld en heffen elkaar op: resultante nul.",
+      "uo": [
+        "Ze tellen niet op tot omhoog.",
+        "Ze tellen niet op tot omlaag.",
+        "Klopt: ze heffen elkaar op.",
+        "De resultante gaat niet opzij."
+      ],
+      "uh": "Even groot en tegengesteld = nul."
+    },
+    {
+      "v": "Wat gebeurt er met de component loodrecht op de helling als de helling steiler wordt?",
+      "o": [
+        "Die wordt groter",
+        "Die blijft de hele zwaartekracht",
+        "Die wordt oneindig groot",
+        "Die wordt kleiner"
+      ],
+      "c": 3,
+      "d": 3,
+      "u": "Hoe steiler de helling, hoe kleiner de loodrechte component wordt (en hoe groter de component langs de helling).",
+      "uo": [
+        "Hij wordt juist kleiner, niet groter.",
+        "Alleen bij een vlakke ondergrond is hij gelijk aan Fz.",
+        "Hij wordt niet oneindig.",
+        "Klopt: steiler geeft een kleinere loodrechte component."
+      ],
+      "uh": "Steiler = kleinere loodrechte component."
+    },
+    {
+      "v": "Waarom vervang je meerdere krachten door één resulterende kracht?",
+      "o": [
+        "Om het effect van alle krachten in één keer te bekijken",
+        "Om de massa te verhogen van het voorwerp in deze situatie hier",
+        "Om de tijd te verkorten",
+        "Om de temperatuur te meten"
+      ],
+      "c": 0,
+      "d": 2,
+      "u": "Met de resulterende kracht kun je in één keer zien of en hoe een voorwerp versnelt.",
+      "uo": [
+        "Klopt: het totale effect in één kracht.",
+        "De massa verandert niet.",
+        "Tijd verandert niet.",
+        "Temperatuur hoort hier niet bij."
+      ],
+      "uh": "Resulterende kracht toont het totale effect."
+    }
+  ],
+  "oe": [
+    {
+      "vraag": "Leg uit hoe je twee krachten samenstelt die op één lijn liggen.",
+      "antwoord": "Als twee krachten op één lijn liggen, kijk je naar hun richting. Wijzen ze dezelfde kant op, dan tel je hun grootten op. Wijzen ze tegengesteld, dan trek je de kleinste van de grootste af. De resulterende kracht wijst in de richting van de grootste kracht."
+    },
+    {
+      "vraag": "Twee krachten van 6 N en 8 N staan loodrecht op elkaar. Bereken de resulterende kracht.",
+      "antwoord": "Bij loodrechte krachten gebruik je de stelling van Pythagoras. De resultante is de wortel van 6 kwadraat plus 8 kwadraat, dus de wortel van 36 plus 64 is de wortel van 100, wat 10 N is."
+    },
+    {
+      "vraag": "Leg uit hoe je met de parallellogrammethode de resulterende kracht van twee krachten onder een hoek vindt.",
+      "antwoord": "Je tekent de twee krachten vanuit hetzelfde beginpunt, elk met hun eigen grootte en richting. Daarna maak je het parallellogram af door bij elke pijl een evenwijdige lijn te tekenen. De diagonaal van het parallellogram, vanuit het beginpunt, is de resulterende kracht."
+    },
+    {
+      "vraag": "Leg uit in welke twee componenten je de zwaartekracht ontbindt bij een voorwerp op een helling en wat elke component doet.",
+      "antwoord": "Je ontbindt de zwaartekracht in een component langs de helling en een component loodrecht op de helling. De component langs de helling trekt het voorwerp naar beneden langs het vlak en laat het glijden. De component loodrecht op de helling drukt het voorwerp tegen het oppervlak."
+    },
+    {
+      "vraag": "Leg uit waarom een voorwerp op een steilere helling sneller gaat glijden.",
+      "antwoord": "Als de helling steiler wordt, wordt de component van de zwaartekracht langs de helling groter. Deze component trekt het voorwerp naar beneden langs het vlak. Hoe groter die component, hoe sterker het voorwerp naar beneden wordt getrokken en hoe sneller het gaat glijden. Tegelijk wordt de loodrechte component juist kleiner."
+    }
+  ]
+}

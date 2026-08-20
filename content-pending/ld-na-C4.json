@@ -1,0 +1,564 @@
+{
+  "id": "C4",
+  "naam": "De wetten van Newton",
+  "beschrijving": "Gouden-standaardmodule na.C.4: de drie wetten van Newton toepassen, inclusief traagheid (eerste wet), F = m maal a (tweede wet) en actie = reactie (derde wet), met de nadruk dat actie en reactie op verschillende voorwerpen werken.",
+  "ceStatus": "CE",
+  "onderwerpen": [
+    "Eerste wet: traagheid",
+    "Tweede wet: F = m maal a",
+    "Derde wet: actie = reactie",
+    "Actie en reactie op verschillende voorwerpen",
+    "Resulterende kracht en versnelling",
+    "Massa als maat voor traagheid"
+  ],
+  "sam": "De drie wetten van Newton beschrijven hoe krachten en beweging samenhangen. De eerste wet, de traagheidswet, zegt dat een voorwerp zonder resulterende kracht in rust blijft of met constante snelheid rechtdoor beweegt. Traagheid betekent dat een voorwerp zijn bewegingstoestand vasthoudt; hoe groter de massa, hoe groter de traagheid. De tweede wet zegt dat een resulterende kracht een versnelling geeft: F resulterend is gelijk aan massa maal versnelling. Bij dezelfde kracht versnelt een zwaarder voorwerp minder. De derde wet is actie is reactie: oefent voorwerp A een kracht uit op voorwerp B, dan oefent B een even grote, tegengestelde kracht uit op A. Het allerbelangrijkste: actie en reactie werken op twee verschillende voorwerpen. Je mag ze dus nooit bij elkaar optellen op hetzelfde voorwerp.",
+  "begrippen": [
+    {
+      "t": "Eerste wet van Newton",
+      "d": "zonder resulterende kracht blijft een voorwerp in rust of eenparige beweging"
+    },
+    {
+      "t": "Traagheid",
+      "d": "de neiging van een voorwerp om zijn bewegingstoestand te behouden"
+    },
+    {
+      "t": "Tweede wet van Newton",
+      "d": "een resulterende kracht geeft een versnelling: F = m maal a"
+    },
+    {
+      "t": "Derde wet van Newton",
+      "d": "actie is reactie: krachten op twee voorwerpen zijn even groot en tegengesteld"
+    },
+    {
+      "t": "Actiekracht",
+      "d": "de kracht die voorwerp A op voorwerp B uitoefent"
+    },
+    {
+      "t": "Reactiekracht",
+      "d": "de even grote, tegengestelde kracht van B op A"
+    },
+    {
+      "t": "Resulterende kracht",
+      "d": "de som van alle krachten op een voorwerp"
+    },
+    {
+      "t": "Versnelling",
+      "d": "de snelheidsverandering per tijd (m/s2)"
+    },
+    {
+      "t": "Massa",
+      "d": "de hoeveelheid materie; maat voor de traagheid (kg)"
+    },
+    {
+      "t": "Bewegingstoestand",
+      "d": "of een voorwerp stilstaat of met welke snelheid het beweegt"
+    },
+    {
+      "t": "Rust",
+      "d": "de toestand waarbij een voorwerp stilstaat"
+    },
+    {
+      "t": "Eenparige beweging",
+      "d": "beweging met een constante snelheid"
+    }
+  ],
+  "sv": [
+    {
+      "v": "Wat zegt de eerste wet van Newton?",
+      "o": [
+        "Zonder resulterende kracht blijft een voorwerp in rust of eenparige beweging",
+        "Een kracht geeft altijd een versnelling",
+        "Actie is reactie volgens de wet",
+        "Zwaardere voorwerpen vallen sneller"
+      ],
+      "c": 0,
+      "d": 2,
+      "u": "De eerste wet (traagheidswet) zegt: zonder resulterende kracht verandert de bewegingstoestand niet.",
+      "uo": [
+        "Klopt: zonder resulterende kracht geen verandering.",
+        "Dat is de tweede wet.",
+        "Dat is de derde wet.",
+        "Dat is onjuist in vacuüm."
+      ],
+      "uh": "Eerste wet = traagheid: geen kracht, geen verandering."
+    },
+    {
+      "v": "Wat is traagheid?",
+      "o": [
+        "De kracht van een touw volgens de wet",
+        "De neiging om de bewegingstoestand te behouden",
+        "De snelheid per seconde",
+        "De temperatuur van een voorwerp"
+      ],
+      "c": 1,
+      "d": 2,
+      "u": "Traagheid is de neiging van een voorwerp om zijn bewegingstoestand vast te houden.",
+      "uo": [
+        "Dat is de spankracht.",
+        "Klopt: bewegingstoestand behouden.",
+        "Dat is versnelling.",
+        "Dat is temperatuur."
+      ],
+      "uh": "Traagheid = bewegingstoestand vasthouden."
+    },
+    {
+      "v": "Wat zegt de tweede wet van Newton?",
+      "o": [
+        "Zonder kracht geen beweging",
+        "Actie is reactie volgens de wet",
+        "Een resulterende kracht geeft een versnelling",
+        "Alle voorwerpen zijn even zwaar"
+      ],
+      "c": 2,
+      "d": 2,
+      "u": "De tweede wet: F resulterend is massa maal versnelling, dus een kracht geeft een versnelling.",
+      "uo": [
+        "Dat is een verkeerde weergave van de eerste wet.",
+        "Dat is de derde wet.",
+        "Klopt: een resulterende kracht geeft versnelling.",
+        "Dat is onjuist."
+      ],
+      "uh": "Tweede wet: F = m maal a."
+    },
+    {
+      "v": "Wat is de formule van de tweede wet van Newton?",
+      "o": [
+        "F = m gedeeld door a",
+        "F = m plus a",
+        "F = a gedeeld door m",
+        "F = m maal a"
+      ],
+      "c": 3,
+      "d": 1,
+      "u": "De tweede wet is F resulterend is gelijk aan massa maal versnelling.",
+      "uo": [
+        "Delen klopt niet.",
+        "Optellen klopt niet.",
+        "Verkeerd om gedeeld.",
+        "Klopt: F = m maal a."
+      ],
+      "uh": "F = m maal a."
+    },
+    {
+      "v": "Wat zegt de derde wet van Newton?",
+      "o": [
+        "Actie is reactie",
+        "Zonder kracht geen versnelling",
+        "Zwaarder valt sneller",
+        "Snelheid is versnelling"
+      ],
+      "c": 0,
+      "d": 1,
+      "u": "De derde wet: als A een kracht op B uitoefent, oefent B een even grote, tegengestelde kracht op A uit.",
+      "uo": [
+        "Klopt: actie is reactie.",
+        "Dat is de eerste wet.",
+        "Dat is onjuist.",
+        "Dat is onjuist."
+      ],
+      "uh": "Derde wet: actie is reactie."
+    },
+    {
+      "v": "Waar werken actie en reactie op?",
+      "o": [
+        "Op hetzelfde voorwerp",
+        "Op twee verschillende voorwerpen",
+        "Alleen op de zwaarste",
+        "Nergens op volgens de wet"
+      ],
+      "c": 1,
+      "d": 3,
+      "u": "Actie en reactie werken altijd op twee verschillende voorwerpen; daarom heffen ze elkaar niet op.",
+      "uo": [
+        "Juist niet op hetzelfde voorwerp.",
+        "Klopt: op twee verschillende voorwerpen.",
+        "Ze werken op beide voorwerpen.",
+        "Ze werken wel degelijk ergens op."
+      ],
+      "uh": "Actie en reactie: op verschillende voorwerpen."
+    },
+    {
+      "v": "Waarom heffen actie en reactie elkaar niet op?",
+      "o": [
+        "Omdat ze niet even groot zijn",
+        "Omdat de massa nul is volgens de wet",
+        "Omdat ze op verschillende voorwerpen werken",
+        "Omdat er geen zwaartekracht is"
+      ],
+      "c": 2,
+      "d": 3,
+      "u": "Actie en reactie zijn even groot en tegengesteld, maar werken op verschillende voorwerpen, dus je telt ze niet bij elkaar op.",
+      "uo": [
+        "Ze zijn juist even groot.",
+        "De massa is niet nul.",
+        "Klopt: verschillende voorwerpen, dus geen optellen.",
+        "De zwaartekracht speelt hier geen rol."
+      ],
+      "uh": "Verschillende voorwerpen: dus geen opheffen."
+    },
+    {
+      "v": "Een auto zonder resulterende kracht rijdt op een rechte weg. Wat gebeurt er?",
+      "o": [
+        "Hij versnelt volgens de wet",
+        "Hij stopt meteen",
+        "Hij gaat achteruit",
+        "Hij blijft met constante snelheid rijden"
+      ],
+      "c": 3,
+      "d": 2,
+      "u": "Zonder resulterende kracht verandert de snelheid niet: de auto rijdt met constante snelheid rechtdoor.",
+      "uo": [
+        "Zonder kracht versnelt hij niet.",
+        "Hij stopt niet zomaar.",
+        "Hij gaat niet achteruit.",
+        "Klopt: constante snelheid (eerste wet)."
+      ],
+      "uh": "Geen resulterende kracht = constante snelheid."
+    },
+    {
+      "v": "Dezelfde kracht werkt op een zware en een lichte kar. Welke versnelt meer?",
+      "o": [
+        "De lichte kar",
+        "De zware kar",
+        "Beide even veel",
+        "Geen van beide"
+      ],
+      "c": 0,
+      "d": 3,
+      "u": "Uit F = m maal a volgt: bij dezelfde kracht heeft de kleinste massa de grootste versnelling.",
+      "uo": [
+        "Klopt: de lichte kar versnelt meer.",
+        "De zware kar versnelt juist minder.",
+        "Ze verschillen in massa, dus niet gelijk.",
+        "Beide versnellen wel."
+      ],
+      "uh": "Bij dezelfde F: kleinere massa versnelt meer."
+    },
+    {
+      "v": "Wat is de eenheid van de versnelling in F = m maal a?",
+      "o": [
+        "newton",
+        "m/s2",
+        "kilogram",
+        "joule"
+      ],
+      "c": 1,
+      "d": 1,
+      "u": "De versnelling a heeft de eenheid meter per seconde per seconde (m/s2).",
+      "uo": [
+        "Newton is de kracht.",
+        "Klopt: m/s2.",
+        "Kilogram is de massa.",
+        "Joule is energie."
+      ],
+      "uh": "Versnelling in m/s2."
+    },
+    {
+      "v": "Een resulterende kracht van 10 N werkt op een massa van 2 kg. Wat is de versnelling?",
+      "o": [
+        "20 m/s2",
+        "8 m/s2",
+        "5 m/s2",
+        "0,2 m/s2"
+      ],
+      "c": 2,
+      "d": 3,
+      "u": "Uit F = m maal a volgt a = F gedeeld door m = 10 gedeeld door 2 is 5 m/s2.",
+      "uo": [
+        "20 is de vermenigvuldiging.",
+        "8 is het verschil.",
+        "Klopt: 10 gedeeld door 2 is 5 m/s2.",
+        "0,2 is verkeerd om gedeeld."
+      ],
+      "uh": "a = F gedeeld door m, hier 10 / 2 = 5."
+    },
+    {
+      "v": "Waarom schiet je naar voren als een bus plotseling remt?",
+      "o": [
+        "Omdat de bus je naar voren duwt",
+        "Omdat de zwaartekracht groter wordt",
+        "Omdat je massa toeneemt volgens de wet",
+        "Door traagheid wil je lichaam doorbewegen"
+      ],
+      "c": 3,
+      "d": 3,
+      "u": "Je lichaam houdt door traagheid zijn snelheid vast, terwijl de bus vertraagt, dus je beweegt naar voren.",
+      "uo": [
+        "De bus duwt je niet naar voren.",
+        "De zwaartekracht verandert niet.",
+        "Je massa verandert niet.",
+        "Klopt: traagheid laat je doorbewegen."
+      ],
+      "uh": "Remmen plus traagheid = je schiet naar voren."
+    },
+    {
+      "v": "Welke wet gebruik je om te verklaren dat een raket vooruit gaat door gas naar achteren te stoten?",
+      "o": [
+        "De derde wet (actie is reactie)",
+        "De eerste wet volgens de wet",
+        "De wet van behoud van massa",
+        "De wet van Ohm"
+      ],
+      "c": 0,
+      "d": 3,
+      "u": "De raket duwt gas naar achteren (actie); het gas duwt de raket even hard naar voren (reactie).",
+      "uo": [
+        "Klopt: actie is reactie.",
+        "De eerste wet gaat over geen kracht.",
+        "Dat is een andere wet.",
+        "De wet van Ohm hoort bij elektriciteit."
+      ],
+      "uh": "Raket vooruit = actie-reactie (derde wet)."
+    },
+    {
+      "v": "Wat gebeurt er als de resulterende kracht op een voorwerp niet nul is?",
+      "o": [
+        "Het blijft altijd stil",
+        "Het versnelt",
+        "De massa verandert",
+        "Er verandert niets"
+      ],
+      "c": 1,
+      "d": 2,
+      "u": "Volgens de tweede wet geeft een resulterende kracht die niet nul is een versnelling.",
+      "uo": [
+        "Het blijft niet stil bij een kracht.",
+        "Klopt: het versnelt.",
+        "De massa verandert niet.",
+        "Er verandert wel iets."
+      ],
+      "uh": "Resulterende kracht niet nul = versnelling."
+    },
+    {
+      "v": "Waarvoor is massa een maat in de wetten van Newton?",
+      "o": [
+        "Voor de snelheid",
+        "Voor de temperatuur",
+        "Voor de traagheid",
+        "Voor de tijd"
+      ],
+      "c": 2,
+      "d": 2,
+      "u": "De massa is een maat voor de traagheid: hoe groter de massa, hoe moeilijker de bewegingstoestand te veranderen is.",
+      "uo": [
+        "Massa is niet de snelheid.",
+        "Massa is niet de temperatuur.",
+        "Klopt: massa is een maat voor traagheid.",
+        "Massa is niet de tijd."
+      ],
+      "uh": "Massa = maat voor traagheid."
+    },
+    {
+      "v": "Je duwt tegen een muur. Wat doet de muur volgens de derde wet?",
+      "o": [
+        "Hij duwt niets terug",
+        "Hij trekt je aan van dit voorwerp",
+        "Hij wordt zwaarder",
+        "Hij duwt even hard terug"
+      ],
+      "c": 3,
+      "d": 3,
+      "u": "Volgens de derde wet duwt de muur met een even grote, tegengestelde kracht terug op jou.",
+      "uo": [
+        "Er is wel een reactiekracht.",
+        "De muur trekt je niet aan.",
+        "De massa verandert niet.",
+        "Klopt: de muur duwt even hard terug."
+      ],
+      "uh": "Duwen tegen een muur: de muur duwt terug."
+    },
+    {
+      "v": "Een voorwerp beweegt met constante snelheid. Wat geldt voor de resulterende kracht?",
+      "o": [
+        "Die is nul",
+        "Die is heel groot",
+        "Die is gelijk aan de massa",
+        "Die is negatief"
+      ],
+      "c": 0,
+      "d": 2,
+      "u": "Bij een constante snelheid is er geen versnelling, dus is de resulterende kracht nul (eerste wet).",
+      "uo": [
+        "Klopt: resulterende kracht nul.",
+        "Groot zou juist versnelling geven.",
+        "Kracht is niet gelijk aan massa.",
+        "De resultante is nul, niet negatief."
+      ],
+      "uh": "Constante snelheid = resulterende kracht nul."
+    },
+    {
+      "v": "Waarom is de fout om actie en reactie op te tellen?",
+      "o": [
+        "Ze zijn niet even groot",
+        "Ze werken op verschillende voorwerpen",
+        "Ze wijzen dezelfde kant op",
+        "Ze bestaan niet echt bij deze beweging"
+      ],
+      "c": 1,
+      "d": 3,
+      "u": "Actie en reactie werken op verschillende voorwerpen; je telt alleen krachten op hetzelfde voorwerp bij elkaar.",
+      "uo": [
+        "Ze zijn juist even groot.",
+        "Klopt: verschillende voorwerpen, dus niet optellen.",
+        "Ze wijzen juist tegengesteld.",
+        "Ze bestaan wel degelijk."
+      ],
+      "uh": "Optel alleen krachten op hetzelfde voorwerp."
+    },
+    {
+      "v": "Welke wet verklaart dat een bal blijft liggen tot je hem schopt?",
+      "o": [
+        "De tweede wet",
+        "De derde wet van dit voorwerp",
+        "De eerste wet (traagheid)",
+        "De wet van Ohm"
+      ],
+      "c": 2,
+      "d": 2,
+      "u": "Zonder resulterende kracht blijft de bal in rust: dat is de eerste wet.",
+      "uo": [
+        "De tweede wet gaat over versnellen.",
+        "De derde wet gaat over actie-reactie.",
+        "Klopt: de eerste wet (traagheid).",
+        "De wet van Ohm hoort bij stroom."
+      ],
+      "uh": "Stilliggen zonder kracht = eerste wet."
+    },
+    {
+      "v": "Twee schaatsers duwen elkaar af. Wat gebeurt er?",
+      "o": [
+        "Alleen de zwaarste beweegt",
+        "Er gebeurt niets van dit voorwerp",
+        "Ze botsen weer terug",
+        "Ze bewegen allebei naar achteren"
+      ],
+      "c": 3,
+      "d": 3,
+      "u": "Door actie is reactie duwen ze elkaar even hard weg, dus schuiven ze allebei naar achteren.",
+      "uo": [
+        "Beide bewegen, de lichtste wel harder.",
+        "Er gebeurt wel iets.",
+        "Ze botsen niet vanzelf terug.",
+        "Klopt: allebei naar achteren (actie-reactie)."
+      ],
+      "uh": "Elkaar afduwen: allebei terug (actie-reactie)."
+    },
+    {
+      "v": "Hoe groter de massa bij dezelfde resulterende kracht, hoe...",
+      "o": [
+        "kleiner de versnelling",
+        "groter de versnelling",
+        "hoger de temperatuur",
+        "korter de tijd van dit voorwerp"
+      ],
+      "c": 0,
+      "d": 3,
+      "u": "Uit a = F gedeeld door m volgt: bij dezelfde kracht geeft een grotere massa een kleinere versnelling.",
+      "uo": [
+        "Klopt: grotere massa, kleinere versnelling.",
+        "Grotere massa geeft juist minder versnelling.",
+        "Temperatuur hoort hier niet bij.",
+        "Tijd hoort hier niet bij."
+      ],
+      "uh": "Grotere massa = kleinere versnelling (zelfde F)."
+    },
+    {
+      "v": "Wat is de bewegingstoestand van een voorwerp?",
+      "o": [
+        "De temperatuur ervan",
+        "Of het stilstaat of met welke snelheid het beweegt",
+        "De kleur ervan volgens de wet",
+        "De massa ervan"
+      ],
+      "c": 1,
+      "d": 1,
+      "u": "De bewegingstoestand geeft aan of een voorwerp stilstaat of met welke snelheid en richting het beweegt.",
+      "uo": [
+        "Temperatuur is geen bewegingstoestand.",
+        "Klopt: stilstaan of bewegen met een snelheid.",
+        "Kleur is geen bewegingstoestand.",
+        "Massa is geen bewegingstoestand."
+      ],
+      "uh": "Bewegingstoestand = stilstaan of met welke snelheid."
+    },
+    {
+      "v": "Een boek ligt stil op tafel. Wat is de reactiekracht op de zwaartekracht van de aarde op het boek?",
+      "o": [
+        "De normaalkracht van de tafel",
+        "De wrijvingskracht",
+        "De aantrekking van het boek op de aarde",
+        "De spankracht volgens de wet"
+      ],
+      "c": 2,
+      "d": 3,
+      "u": "De reactie op de zwaartekracht van de aarde op het boek is de even grote aantrekking van het boek op de aarde (ander voorwerp).",
+      "uo": [
+        "De normaalkracht is een aparte kracht, geen reactie hierop.",
+        "Wrijving speelt hier niet.",
+        "Klopt: het boek trekt even hard aan de aarde.",
+        "Er is geen touw."
+      ],
+      "uh": "Reactie op zwaartekracht aarde-boek = boek trekt aan aarde."
+    },
+    {
+      "v": "Welke wet gebruik je om een versnelling uit een kracht te berekenen?",
+      "o": [
+        "De eerste wet",
+        "De derde wet",
+        "De wet van behoud van energie",
+        "De tweede wet van Newton"
+      ],
+      "c": 3,
+      "d": 2,
+      "u": "Met de tweede wet, F = m maal a, reken je de versnelling uit een resulterende kracht.",
+      "uo": [
+        "De eerste wet gaat over geen kracht.",
+        "De derde wet gaat over actie-reactie.",
+        "Dat is een andere wet.",
+        "Klopt: de tweede wet."
+      ],
+      "uh": "Versnelling uit kracht = tweede wet (F = m maal a)."
+    },
+    {
+      "v": "Waarom versnelt een voorwerp niet als alle krachten elkaar opheffen?",
+      "o": [
+        "Omdat de resulterende kracht dan nul is",
+        "Omdat de massa dan nul is",
+        "Omdat er geen zwaartekracht is",
+        "Omdat de tijd stilstaat van dit voorwerp"
+      ],
+      "c": 0,
+      "d": 3,
+      "u": "Heffen alle krachten elkaar op, dan is de resulterende kracht nul en volgens de tweede wet is de versnelling dan ook nul.",
+      "uo": [
+        "Klopt: resulterende kracht nul, dus geen versnelling.",
+        "De massa is niet nul.",
+        "De zwaartekracht kan gewoon werken.",
+        "De tijd staat niet stil."
+      ],
+      "uh": "Krachten opgeheven = resulterende nul = geen versnelling."
+    }
+  ],
+  "oe": [
+    {
+      "vraag": "Leg de eerste wet van Newton uit en geef een voorbeeld uit het dagelijks leven.",
+      "antwoord": "De eerste wet, de traagheidswet, zegt dat een voorwerp zonder resulterende kracht in rust blijft of met constante snelheid rechtdoor beweegt. Een voorbeeld: als een bus plotseling remt, schiet je naar voren, omdat je lichaam door traagheid zijn snelheid wil vasthouden terwijl de bus vertraagt."
+    },
+    {
+      "vraag": "Een resulterende kracht van 12 N werkt op een voorwerp van 3 kg. Bereken de versnelling.",
+      "antwoord": "Volgens de tweede wet van Newton geldt F = m maal a, dus a = F gedeeld door m. Hier is a = 12 gedeeld door 3 = 4 m/s2. Het voorwerp versnelt met 4 meter per seconde per seconde."
+    },
+    {
+      "vraag": "Leg uit waarom actie en reactie elkaar niet opheffen, ook al zijn ze even groot en tegengesteld.",
+      "antwoord": "Actie en reactie zijn even groot en tegengesteld, maar ze werken op twee verschillende voorwerpen. Als A een kracht op B uitoefent, werkt de reactie van B op A. Omdat de krachten op verschillende voorwerpen aangrijpen, mag je ze niet bij elkaar optellen; ze heffen elkaar dus niet op."
+    },
+    {
+      "vraag": "Leg met de tweede wet van Newton uit waarom een zwaarder voorwerp bij dezelfde kracht minder versnelt.",
+      "antwoord": "De tweede wet is F = m maal a, dus a = F gedeeld door m. Bij dezelfde resulterende kracht F geldt: hoe groter de massa m, hoe kleiner de versnelling a. Een zwaarder voorwerp heeft meer traagheid en versnelt daarom minder bij dezelfde kracht."
+    },
+    {
+      "vraag": "Leg met de derde wet van Newton uit hoe een raket vooruitkomt.",
+      "antwoord": "Een raket stoot verbrand gas met grote kracht naar achteren; dat is de actiekracht. Volgens de derde wet oefent het gas een even grote, tegengestelde kracht uit op de raket, naar voren; dat is de reactiekracht. Omdat deze reactiekracht op de raket werkt, versnelt de raket vooruit."
+    }
+  ]
+}

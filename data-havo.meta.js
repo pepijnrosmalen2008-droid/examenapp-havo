@@ -1113,7 +1113,117 @@ var VAKKEN = [
     "nSv": 135,
     "nOe": 12,
     "nBeg": 27,
-    "hasSam": true
+    "hasSam": true,
+    "leerdoelen": [
+     {
+      "id": "C1",
+      "naam": "Snelheid en versnelling",
+      "beschrijving": "Gouden-standaardmodule na.C.1: snelheid en versnelling berekenen en het verschil ertussen begrijpen, inclusief de vrije val met valversnelling g.",
+      "ceStatus": "CE",
+      "onderwerpen": [
+       "Snelheid: v = s / t",
+       "Versnelling: a = verandering van snelheid per tijd",
+       "Verschil tussen snelheid en versnelling",
+       "Eenparige en eenparig versnelde beweging",
+       "Vrije val en valversnelling g",
+       "Diagrammen: (x,t) en (v,t)"
+      ],
+      "nSv": 25,
+      "nOe": 5,
+      "nBeg": 12,
+      "hasSam": true
+     },
+     {
+      "id": "C2",
+      "naam": "Krachten herkennen",
+      "beschrijving": "Gouden-standaardmodule na.C.2: de zwaartekracht, normaalkracht, wrijvingskracht en spankracht herkennen en tekenen, de resulterende kracht bepalen, en het verschil tussen gewicht (kracht) en massa.",
+      "ceStatus": "CE",
+      "onderwerpen": [
+       "Kracht als vector (grootte, richting, aangrijpingspunt)",
+       "Zwaartekracht: Fz = m maal g",
+       "Verschil gewicht (kracht) en massa",
+       "Normaalkracht en wrijvingskracht",
+       "Spankracht",
+       "Resulterende kracht en evenwicht"
+      ],
+      "nSv": 25,
+      "nOe": 5,
+      "nBeg": 12,
+      "hasSam": true
+     },
+     {
+      "id": "C3",
+      "naam": "Krachten samenstellen en ontbinden",
+      "beschrijving": "Gouden-standaardmodule na.C.3: krachten die op één lijn, loodrecht of onder een willekeurige hoek staan samenstellen tot een resulterende kracht, en een kracht ontbinden in componenten.",
+      "ceStatus": "CE",
+      "onderwerpen": [
+       "Samenstellen tot een resulterende kracht",
+       "Krachten op één lijn: optellen of aftrekken",
+       "Loodrechte krachten: stelling van Pythagoras",
+       "Willekeurige hoek: parallellogrammethode",
+       "Ontbinden in componenten",
+       "Ontbinden op een helling"
+      ],
+      "nSv": 25,
+      "nOe": 5,
+      "nBeg": 12,
+      "hasSam": true
+     },
+     {
+      "id": "C4",
+      "naam": "De wetten van Newton",
+      "beschrijving": "Gouden-standaardmodule na.C.4: de drie wetten van Newton toepassen, inclusief traagheid (eerste wet), F = m maal a (tweede wet) en actie = reactie (derde wet), met de nadruk dat actie en reactie op verschillende voorwerpen werken.",
+      "ceStatus": "CE",
+      "onderwerpen": [
+       "Eerste wet: traagheid",
+       "Tweede wet: F = m maal a",
+       "Derde wet: actie = reactie",
+       "Actie en reactie op verschillende voorwerpen",
+       "Resulterende kracht en versnelling",
+       "Massa als maat voor traagheid"
+      ],
+      "nSv": 25,
+      "nOe": 5,
+      "nBeg": 12,
+      "hasSam": true
+     },
+     {
+      "id": "C5",
+      "naam": "Arbeid, energie en vermogen",
+      "beschrijving": "Gouden-standaardmodule na.C.5: arbeid, energie en vermogen berekenen, werken met de wet van behoud van energie, en het verschil tussen arbeid en vermogen.",
+      "ceStatus": "CE",
+      "onderwerpen": [
+       "Arbeid: W = F maal s",
+       "Energievormen (kinetisch, zwaarte)",
+       "Wet van behoud van energie",
+       "Vermogen: P = W gedeeld door t",
+       "Verschil arbeid en vermogen",
+       "Rendement"
+      ],
+      "nSv": 25,
+      "nOe": 5,
+      "nBeg": 12,
+      "hasSam": true
+     },
+     {
+      "id": "C6",
+      "naam": "Warmtetransport",
+      "beschrijving": "Gouden-standaardmodule na.C.6: de drie vormen van warmtetransport (geleiding, stroming en straling) onderscheiden en herkennen, en weten hoe isolatie werkt.",
+      "ceStatus": "CE",
+      "onderwerpen": [
+       "Geleiding: warmte door een vaste stof",
+       "Stroming: warmte met een bewegend gas of vloeistof",
+       "Straling: warmte zonder tussenstof",
+       "Geleiders en isolatoren",
+       "De drie vormen onderscheiden",
+       "Isolatie in de praktijk"
+      ],
+      "nSv": 25,
+      "nOe": 5,
+      "nBeg": 12,
+      "hasSam": true
+     }
+    ]
    },
    {
     "id": "D",

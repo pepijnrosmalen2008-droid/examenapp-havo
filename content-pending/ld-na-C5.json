@@ -1,0 +1,564 @@
+{
+  "id": "C5",
+  "naam": "Arbeid, energie en vermogen",
+  "beschrijving": "Gouden-standaardmodule na.C.5: arbeid, energie en vermogen berekenen, werken met de wet van behoud van energie, en het verschil tussen arbeid en vermogen.",
+  "ceStatus": "CE",
+  "onderwerpen": [
+    "Arbeid: W = F maal s",
+    "Energievormen (kinetisch, zwaarte)",
+    "Wet van behoud van energie",
+    "Vermogen: P = W gedeeld door t",
+    "Verschil arbeid en vermogen",
+    "Rendement"
+  ],
+  "sam": "Arbeid, energie en vermogen horen bij elkaar. Arbeid is de energie die een kracht toevoegt door een voorwerp te verplaatsen: W is kracht maal verplaatsing, met eenheid joule. Energie is het vermogen om arbeid te verrichten en heeft dezelfde eenheid, joule. Belangrijke energievormen zijn de kinetische energie (bewegingsenergie, een half maal massa maal snelheid in het kwadraat) en de zwaarte-energie (massa maal g maal hoogte). Volgens de wet van behoud van energie gaat energie nooit verloren; ze verandert alleen van vorm. Vermogen is iets anders dan arbeid. Het vermogen zegt hoe snel je arbeid levert: het is de arbeid gedeeld door de tijd, met eenheid watt. Twee machines kunnen dezelfde arbeid leveren, maar de snelste heeft het grootste vermogen. Verwar arbeid (totale energie in joule) dus niet met vermogen (energie per seconde in watt). Het rendement geeft aan welk deel van de toegevoerde energie nuttig wordt gebruikt.",
+  "begrippen": [
+    {
+      "t": "Arbeid",
+      "d": "de energie die een kracht toevoegt: W = F maal s; eenheid joule"
+    },
+    {
+      "t": "Energie",
+      "d": "het vermogen om arbeid te verrichten; eenheid joule (J)"
+    },
+    {
+      "t": "Vermogen",
+      "d": "de arbeid per tijd: P = W gedeeld door t; eenheid watt (W)"
+    },
+    {
+      "t": "Joule",
+      "d": "de eenheid van arbeid en energie (J)"
+    },
+    {
+      "t": "Watt",
+      "d": "de eenheid van vermogen (W = J/s)"
+    },
+    {
+      "t": "Kinetische energie",
+      "d": "bewegingsenergie: Ek = een half maal m maal v in het kwadraat"
+    },
+    {
+      "t": "Zwaarte-energie",
+      "d": "energie door hoogte: Ez = m maal g maal h"
+    },
+    {
+      "t": "Wet van behoud van energie",
+      "d": "energie gaat niet verloren, maar verandert van vorm"
+    },
+    {
+      "t": "Rendement",
+      "d": "het deel van de energie dat nuttig wordt gebruikt, in procenten"
+    },
+    {
+      "t": "Kracht",
+      "d": "de kracht die de arbeid levert, in de bewegingsrichting (N)"
+    },
+    {
+      "t": "Verplaatsing",
+      "d": "de afgelegde weg in de richting van de kracht (m)"
+    },
+    {
+      "t": "Energievorm",
+      "d": "een soort energie, zoals beweging, warmte of hoogte"
+    }
+  ],
+  "sv": [
+    {
+      "v": "Hoe bereken je arbeid?",
+      "o": [
+        "Kracht maal verplaatsing",
+        "Kracht gedeeld door tijd",
+        "Massa maal snelheid in dit geval",
+        "Kracht plus verplaatsing"
+      ],
+      "c": 0,
+      "d": 2,
+      "u": "Arbeid is W = F maal s, de kracht maal de verplaatsing in de richting van de kracht.",
+      "uo": [
+        "Klopt: kracht maal verplaatsing.",
+        "Dat is vermogen.",
+        "Dat is impuls.",
+        "Optellen klopt niet."
+      ],
+      "uh": "Arbeid W = F maal s."
+    },
+    {
+      "v": "Wat is de eenheid van arbeid en energie?",
+      "o": [
+        "Watt",
+        "Joule",
+        "Newton",
+        "Kilogram"
+      ],
+      "c": 1,
+      "d": 1,
+      "u": "Arbeid en energie meet je in joule (J).",
+      "uo": [
+        "Watt is vermogen.",
+        "Klopt: joule.",
+        "Newton is kracht.",
+        "Kilogram is massa."
+      ],
+      "uh": "Arbeid en energie in joule."
+    },
+    {
+      "v": "Hoe bereken je vermogen?",
+      "o": [
+        "Kracht maal afstand",
+        "Massa maal g in dit geval",
+        "Arbeid gedeeld door tijd",
+        "Snelheid maal tijd"
+      ],
+      "c": 2,
+      "d": 2,
+      "u": "Vermogen is P = W gedeeld door t, de arbeid per tijd.",
+      "uo": [
+        "Dat is arbeid.",
+        "Dat is zwaartekracht.",
+        "Klopt: arbeid gedeeld door tijd.",
+        "Dat is afstand."
+      ],
+      "uh": "Vermogen P = W gedeeld door t."
+    },
+    {
+      "v": "Wat is de eenheid van vermogen?",
+      "o": [
+        "Joule",
+        "Newton",
+        "Meter",
+        "Watt"
+      ],
+      "c": 3,
+      "d": 1,
+      "u": "Vermogen meet je in watt (W), gelijk aan joule per seconde.",
+      "uo": [
+        "Joule is energie.",
+        "Newton is kracht.",
+        "Meter is afstand.",
+        "Klopt: watt."
+      ],
+      "uh": "Vermogen in watt (W)."
+    },
+    {
+      "v": "Wat is het verschil tussen arbeid en vermogen?",
+      "o": [
+        "Arbeid is energie, vermogen is energie per seconde",
+        "Ze zijn precies hetzelfde",
+        "Arbeid is per seconde, vermogen is totaal",
+        "Beide zijn een kracht van dit voorwerp"
+      ],
+      "c": 0,
+      "d": 3,
+      "u": "Arbeid is de totale energie (joule); vermogen is hoe snel je die levert (joule per seconde, watt).",
+      "uo": [
+        "Klopt: arbeid is energie, vermogen is per seconde.",
+        "Ze verschillen juist.",
+        "Dit is precies omgekeerd.",
+        "Geen van beide is een kracht."
+      ],
+      "uh": "Arbeid = energie (J), vermogen = per seconde (W)."
+    },
+    {
+      "v": "Wat is kinetische energie?",
+      "o": [
+        "Energie door hoogte",
+        "Bewegingsenergie",
+        "Warmte-energie",
+        "Chemische energie"
+      ],
+      "c": 1,
+      "d": 1,
+      "u": "Kinetische energie is de energie die een voorwerp heeft door zijn beweging.",
+      "uo": [
+        "Dat is zwaarte-energie.",
+        "Klopt: bewegingsenergie.",
+        "Dat is warmte.",
+        "Dat is chemische energie."
+      ],
+      "uh": "Kinetische energie = bewegingsenergie."
+    },
+    {
+      "v": "Wat is de formule voor kinetische energie?",
+      "o": [
+        "m maal g maal h",
+        "F maal s van dit voorwerp",
+        "Een half maal m maal v in het kwadraat",
+        "P maal t"
+      ],
+      "c": 2,
+      "d": 2,
+      "u": "De kinetische energie is Ek = een half maal massa maal snelheid in het kwadraat.",
+      "uo": [
+        "Dat is zwaarte-energie.",
+        "Dat is arbeid.",
+        "Klopt: een half maal m maal v kwadraat.",
+        "Dat is arbeid via vermogen."
+      ],
+      "uh": "Ek = een half maal m maal v kwadraat."
+    },
+    {
+      "v": "Wat is de formule voor zwaarte-energie?",
+      "o": [
+        "Een half maal m maal v kwadraat",
+        "F gedeeld door t",
+        "m gedeeld door v",
+        "m maal g maal h"
+      ],
+      "c": 3,
+      "d": 2,
+      "u": "De zwaarte-energie is Ez = massa maal g maal hoogte.",
+      "uo": [
+        "Dat is kinetische energie.",
+        "Dat is vermogen-achtig.",
+        "Dat is onjuist.",
+        "Klopt: m maal g maal h."
+      ],
+      "uh": "Ez = m maal g maal h."
+    },
+    {
+      "v": "Wat zegt de wet van behoud van energie?",
+      "o": [
+        "Energie gaat niet verloren, maar verandert van vorm",
+        "Energie verdwijnt bij wrijving",
+        "Energie ontstaat uit het niets",
+        "Energie is altijd nul van dit voorwerp"
+      ],
+      "c": 0,
+      "d": 2,
+      "u": "Volgens de wet van behoud van energie blijft de totale energie gelijk; ze verandert alleen van vorm.",
+      "uo": [
+        "Klopt: energie verandert van vorm, gaat niet verloren.",
+        "Bij wrijving wordt het warmte, niet weg.",
+        "Energie ontstaat niet uit niets.",
+        "Energie is niet altijd nul."
+      ],
+      "uh": "Energie gaat niet verloren, verandert van vorm."
+    },
+    {
+      "v": "Een kracht van 20 N verplaatst een voorwerp 3 m. Hoeveel arbeid is dat?",
+      "o": [
+        "23 J",
+        "60 J",
+        "6,7 J",
+        "17 J"
+      ],
+      "c": 1,
+      "d": 2,
+      "u": "W = F maal s = 20 maal 3 = 60 J.",
+      "uo": [
+        "23 is de optelling.",
+        "Klopt: 20 maal 3 is 60 J.",
+        "6,7 is verkeerd gedeeld.",
+        "17 is het verschil."
+      ],
+      "uh": "W = F maal s, hier 20 maal 3 = 60 J."
+    },
+    {
+      "v": "Een machine levert 600 J in 3 s. Wat is het vermogen?",
+      "o": [
+        "1800 W",
+        "603 W",
+        "200 W",
+        "2 W"
+      ],
+      "c": 2,
+      "d": 3,
+      "u": "P = W gedeeld door t = 600 gedeeld door 3 = 200 W.",
+      "uo": [
+        "1800 is de vermenigvuldiging.",
+        "603 is de optelling.",
+        "Klopt: 600 gedeeld door 3 is 200 W.",
+        "2 is verkeerd."
+      ],
+      "uh": "P = W gedeeld door t, hier 600 / 3 = 200 W."
+    },
+    {
+      "v": "Twee liften brengen dezelfde last even hoog, maar lift A doet het sneller. Wat geldt?",
+      "o": [
+        "Lift A doet minder arbeid",
+        "Lift A doet meer arbeid in dit geval",
+        "Beide hebben nul vermogen",
+        "Lift A heeft een groter vermogen"
+      ],
+      "c": 3,
+      "d": 3,
+      "u": "Dezelfde arbeid in minder tijd betekent een groter vermogen (P = W gedeeld door t).",
+      "uo": [
+        "De arbeid is juist gelijk.",
+        "De arbeid is gelijk, niet meer.",
+        "Ze hebben wel vermogen.",
+        "Klopt: sneller bij zelfde arbeid = groter vermogen."
+      ],
+      "uh": "Zelfde arbeid, sneller = groter vermogen."
+    },
+    {
+      "v": "Wat gebeurt er met de zwaarte-energie als een bal valt?",
+      "o": [
+        "Ze wordt kinetische energie",
+        "Ze verdwijnt volledig",
+        "Ze wordt groter in dit geval",
+        "Ze blijft gelijk"
+      ],
+      "c": 0,
+      "d": 3,
+      "u": "Bij het vallen zet zwaarte-energie zich om in kinetische energie; de totale energie blijft gelijk.",
+      "uo": [
+        "Klopt: zwaarte-energie wordt bewegingsenergie.",
+        "Ze verdwijnt niet, ze verandert van vorm.",
+        "De zwaarte-energie neemt juist af.",
+        "De zwaarte-energie daalt terwijl de bal valt."
+      ],
+      "uh": "Vallen: zwaarte-energie wordt kinetische energie."
+    },
+    {
+      "v": "Wat is rendement?",
+      "o": [
+        "De totale toegevoerde energie",
+        "Het deel van de energie dat nuttig wordt gebruikt",
+        "De massa maal g van dit voorwerp",
+        "De snelheid per seconde"
+      ],
+      "c": 1,
+      "d": 2,
+      "u": "Het rendement geeft aan welk deel van de toegevoerde energie nuttig wordt gebruikt, in procenten.",
+      "uo": [
+        "Dat is de toegevoerde energie zelf.",
+        "Klopt: het nuttige deel van de energie.",
+        "Dat is een kracht.",
+        "Dat is versnelling."
+      ],
+      "uh": "Rendement = nuttig deel van de energie."
+    },
+    {
+      "v": "Wat heeft meer kinetische energie: een snelle of een langzame auto van dezelfde massa?",
+      "o": [
+        "De langzame auto",
+        "Beide gelijk",
+        "De snelle auto",
+        "Geen van beide"
+      ],
+      "c": 2,
+      "d": 3,
+      "u": "Kinetische energie hangt af van v in het kwadraat, dus de snellere auto heeft veel meer kinetische energie.",
+      "uo": [
+        "De langzame heeft juist minder.",
+        "Ze verschillen in snelheid, dus niet gelijk.",
+        "Klopt: de snelle auto heeft meer.",
+        "Beide bewegen, dus beide hebben energie."
+      ],
+      "uh": "Meer snelheid = veel meer kinetische energie."
+    },
+    {
+      "v": "Waar wordt de energie van wrijving in omgezet?",
+      "o": [
+        "In hoogte",
+        "In massa",
+        "In tijd in dit geval",
+        "In warmte"
+      ],
+      "c": 3,
+      "d": 2,
+      "u": "Wrijving zet bewegingsenergie om in warmte; de energie gaat niet verloren.",
+      "uo": [
+        "Niet in hoogte.",
+        "Niet in massa.",
+        "Niet in tijd.",
+        "Klopt: in warmte."
+      ],
+      "uh": "Wrijving maakt warmte (geen energie weg)."
+    },
+    {
+      "v": "Wat is energie?",
+      "o": [
+        "Het vermogen om arbeid te verrichten",
+        "De kracht per seconde",
+        "De massa van een voorwerp",
+        "De temperatuur volgens de berekening hier"
+      ],
+      "c": 0,
+      "d": 1,
+      "u": "Energie is het vermogen om arbeid te verrichten, met eenheid joule.",
+      "uo": [
+        "Klopt: het vermogen om arbeid te verrichten.",
+        "Dat lijkt op vermogen, niet energie.",
+        "Massa is geen energie.",
+        "Temperatuur is geen energie."
+      ],
+      "uh": "Energie = het vermogen om arbeid te doen (J)."
+    },
+    {
+      "v": "Een lamp gebruikt 60 J per seconde. Wat is het vermogen?",
+      "o": [
+        "60 J",
+        "60 W",
+        "1 W",
+        "3600 W"
+      ],
+      "c": 1,
+      "d": 2,
+      "u": "60 joule per seconde is een vermogen van 60 watt.",
+      "uo": [
+        "Joule is energie, niet vermogen.",
+        "Klopt: 60 J per seconde is 60 W.",
+        "1 W is te weinig.",
+        "3600 zou per uur zijn."
+      ],
+      "uh": "Joule per seconde = watt."
+    },
+    {
+      "v": "Waarom mag je arbeid en vermogen niet verwarren?",
+      "o": [
+        "Ze hebben dezelfde eenheid",
+        "Beide zijn een kracht van dit voorwerp",
+        "Arbeid is totale energie, vermogen is per seconde",
+        "Vermogen is altijd groter"
+      ],
+      "c": 2,
+      "d": 3,
+      "u": "Arbeid is de totale geleverde energie (joule); vermogen is hoe snel je die levert (watt). Verschillende grootheden en eenheden.",
+      "uo": [
+        "Ze hebben juist verschillende eenheden.",
+        "Geen van beide is een kracht.",
+        "Klopt: arbeid totaal, vermogen per seconde.",
+        "Vermogen is niet altijd groter."
+      ],
+      "uh": "Arbeid (J) versus vermogen (W): niet hetzelfde."
+    },
+    {
+      "v": "Een voorwerp ligt hoog op een plank. Welke energievorm heeft het vooral?",
+      "o": [
+        "Kinetische energie",
+        "Warmte",
+        "Geluid",
+        "Zwaarte-energie"
+      ],
+      "c": 3,
+      "d": 2,
+      "u": "Door zijn hoogte heeft het voorwerp zwaarte-energie, ook als het stilligt.",
+      "uo": [
+        "Het beweegt niet, dus geen kinetische energie.",
+        "Er is geen sprake van warmte.",
+        "Er is geen geluid.",
+        "Klopt: zwaarte-energie door de hoogte."
+      ],
+      "uh": "Hoog en stil = zwaarte-energie."
+    },
+    {
+      "v": "Bij welke situatie is er geen arbeid, ook al werkt er een kracht?",
+      "o": [
+        "Als het voorwerp niet verplaatst",
+        "Als de kracht heel groot is",
+        "Als het voorwerp snel beweegt",
+        "Als de massa groot is in dit geval"
+      ],
+      "c": 0,
+      "d": 3,
+      "u": "Arbeid is kracht maal verplaatsing; zonder verplaatsing is de arbeid nul, hoe groot de kracht ook is.",
+      "uo": [
+        "Klopt: geen verplaatsing, geen arbeid.",
+        "Een grote kracht zonder verplaatsing geeft nog geen arbeid.",
+        "Snelle beweging betekent juist wel arbeid.",
+        "Massa bepaalt de arbeid niet direct."
+      ],
+      "uh": "Geen verplaatsing = geen arbeid."
+    },
+    {
+      "v": "Een pomp met een hoger rendement...",
+      "o": [
+        "verspilt meer energie volgens de berekening hier",
+        "gebruikt een groter deel van de energie nuttig",
+        "levert altijd meer arbeid",
+        "heeft geen energie nodig"
+      ],
+      "c": 1,
+      "d": 3,
+      "u": "Een hoger rendement betekent dat een groter deel van de toegevoerde energie nuttig wordt gebruikt en minder als warmte verloren gaat.",
+      "uo": [
+        "Hoger rendement verspilt juist minder.",
+        "Klopt: meer van de energie wordt nuttig gebruikt.",
+        "Rendement gaat over efficiëntie, niet totale arbeid.",
+        "Ook een efficiënte pomp heeft energie nodig."
+      ],
+      "uh": "Hoger rendement = meer nuttig, minder verspild."
+    },
+    {
+      "v": "Een steen van 2 kg valt. Waar komt de kinetische energie vandaan?",
+      "o": [
+        "Uit warmte in dit geval",
+        "Uit geluid",
+        "Uit de zwaarte-energie",
+        "Uit chemische energie"
+      ],
+      "c": 2,
+      "d": 3,
+      "u": "Tijdens de val zet de zwaarte-energie zich om in kinetische energie, volgens behoud van energie.",
+      "uo": [
+        "Niet uit warmte.",
+        "Niet uit geluid.",
+        "Klopt: uit de zwaarte-energie.",
+        "Niet uit chemische energie."
+      ],
+      "uh": "Vallen: zwaarte-energie wordt kinetische energie."
+    },
+    {
+      "v": "Welke grootheid vertelt hoe snel energie wordt geleverd?",
+      "o": [
+        "Arbeid",
+        "Massa",
+        "Verplaatsing",
+        "Vermogen"
+      ],
+      "c": 3,
+      "d": 2,
+      "u": "Het vermogen geeft aan hoeveel arbeid (energie) er per seconde wordt geleverd.",
+      "uo": [
+        "Arbeid is de totale energie.",
+        "Massa is hoeveelheid materie.",
+        "Verplaatsing is een afstand.",
+        "Klopt: vermogen is energie per seconde."
+      ],
+      "uh": "Vermogen = hoe snel energie geleverd wordt."
+    },
+    {
+      "v": "Een kracht duwt een kar 5 m vooruit. Daarna staat de kar 10 s stil. Hoeveel arbeid tijdens het stilstaan?",
+      "o": [
+        "Nul",
+        "400 J",
+        "40 J",
+        "10 J"
+      ],
+      "c": 0,
+      "d": 3,
+      "u": "Tijdens het stilstaan is er geen verplaatsing, dus is de arbeid nul, ongeacht de tijd.",
+      "uo": [
+        "Klopt: geen verplaatsing, dus geen arbeid.",
+        "400 J was de arbeid tijdens het duwen.",
+        "40 is de kracht, niet de arbeid.",
+        "10 is de tijd, niet de arbeid."
+      ],
+      "uh": "Stilstaan = geen verplaatsing = geen arbeid."
+    }
+  ],
+  "oe": [
+    {
+      "vraag": "Leg het verschil uit tussen arbeid en vermogen, met van elk de eenheid.",
+      "antwoord": "Arbeid is de energie die een kracht toevoegt door een voorwerp te verplaatsen: W = F maal s, met eenheid joule (J). Vermogen is hoe snel die arbeid wordt geleverd: P = W gedeeld door t, met eenheid watt (W), gelijk aan joule per seconde. Twee machines kunnen dezelfde arbeid leveren, maar de snelste heeft het grootste vermogen."
+    },
+    {
+      "vraag": "Een kracht van 25 N verplaatst een kist 4 m. Bereken de arbeid.",
+      "antwoord": "De arbeid is W = F maal s = 25 maal 4 = 100 J. De kracht levert dus 100 joule arbeid."
+    },
+    {
+      "vraag": "Leg met de wet van behoud van energie uit wat er met de energie gebeurt als een bal van een hoogte valt.",
+      "antwoord": "Bovenaan heeft de bal zwaarte-energie (m maal g maal h). Tijdens het vallen neemt de hoogte af en de snelheid toe, waardoor de zwaarte-energie zich omzet in kinetische energie (een half maal m maal v kwadraat). De totale energie blijft gelijk: er gaat geen energie verloren, ze verandert alleen van vorm."
+    },
+    {
+      "vraag": "Een motor levert 900 J arbeid in 3 s. Bereken het vermogen.",
+      "antwoord": "Het vermogen is P = W gedeeld door t = 900 gedeeld door 3 = 300 W. De motor heeft dus een vermogen van 300 watt."
+    },
+    {
+      "vraag": "Leg uit waarom er geen arbeid wordt verricht als je een zware koffer stil vasthoudt, ook al kost het je moeite.",
+      "antwoord": "Arbeid in natuurkundige zin is kracht maal verplaatsing. Als je de koffer stil vasthoudt, is er geen verplaatsing. Daardoor is de arbeid nul, hoe groot de kracht ook is die je levert. Je spieren gebruiken wel energie, maar er wordt geen arbeid aan de koffer verricht."
+    }
+  ]
+}
