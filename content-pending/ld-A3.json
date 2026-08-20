@@ -1,0 +1,564 @@
+{
+  "id": "A3",
+  "naam": "Data verwerken en grafieken lezen",
+  "beschrijving": "Gouden-standaardmodule bi.A.3: gegevens uit tabellen en grafieken aflezen, as-eenheden juist lezen, spreiding (standaarddeviatie) interpreteren en niet concluderen buiten het meetbereik.",
+  "ceStatus": "CE",
+  "onderwerpen": [
+    "Grafiek lezen: assen en as-eenheden",
+    "Aflezen van een waarde",
+    "Tabellen aflezen",
+    "Gemiddelde en spreiding",
+    "Standaarddeviatie",
+    "Meetbereik: niet extrapoleren"
+  ],
+  "sam": "Bij het lezen van een grafiek kijk je eerst naar de assen: wat staat er op de x-as en de y-as, en in welke eenheid? Verkeerd lezen van de as-eenheden is een veelgemaakte fout. Om een waarde af te lezen ga je vanaf een x-waarde omhoog tot de lijn en dan naar de y-as. Uit meerdere metingen bereken je het gemiddelde. De spreiding laat zien hoe ver de metingen uit elkaar liggen; de standaarddeviatie is daar een maat voor. Een kleine standaarddeviatie betekent dat de metingen dicht bij elkaar liggen. Let op het meetbereik: conclusies trekken buiten de gemeten waarden (extrapoleren) is onzeker, want daar heb je geen metingen.",
+  "begrippen": [
+    {
+      "t": "Grafiek",
+      "d": "een figuur die het verband tussen twee grootheden toont"
+    },
+    {
+      "t": "X-as",
+      "d": "de horizontale as, vaak de onafhankelijke variabele"
+    },
+    {
+      "t": "Y-as",
+      "d": "de verticale as, vaak de afhankelijke variabele"
+    },
+    {
+      "t": "As-eenheid",
+      "d": "de grootheid en eenheid die op een as staan"
+    },
+    {
+      "t": "Meetpunt",
+      "d": "een gemeten waarde in een grafiek of tabel"
+    },
+    {
+      "t": "Tabel",
+      "d": "een geordend overzicht van meetwaarden in rijen en kolommen"
+    },
+    {
+      "t": "Gemiddelde",
+      "d": "de som van de waarden gedeeld door het aantal"
+    },
+    {
+      "t": "Spreiding",
+      "d": "hoe ver de metingen uit elkaar liggen"
+    },
+    {
+      "t": "Standaarddeviatie",
+      "d": "een maat voor de spreiding rond het gemiddelde"
+    },
+    {
+      "t": "Meetbereik",
+      "d": "het gebied van waarden waarin je hebt gemeten"
+    },
+    {
+      "t": "Extrapoleren",
+      "d": "een uitspraak doen buiten het meetbereik"
+    },
+    {
+      "t": "Trend",
+      "d": "de algemene richting van een verband in een grafiek"
+    }
+  ],
+  "sv": [
+    {
+      "v": "Waar kijk je als eerste naar bij een grafiek?",
+      "o": [
+        "Naar de assen en hun eenheden",
+        "Naar de kleur van de lijn",
+        "Naar de titel van het boek",
+        "Naar de naam van de onderzoeker"
+      ],
+      "c": 0,
+      "d": 2,
+      "u": "Kijk eerst wat er op de x-as en y-as staat en in welke eenheid, anders lees je verkeerd af.",
+      "uo": [
+        "Klopt: eerst de assen en hun eenheden.",
+        "De kleur is niet het belangrijkste.",
+        "De boektitel is niet relevant.",
+        "De naam is niet relevant."
+      ],
+      "uh": "Lees eerst de assen en de eenheden."
+    },
+    {
+      "v": "Wat staat meestal op de x-as?",
+      "o": [
+        "De afhankelijke variabele",
+        "De onafhankelijke variabele",
+        "De standaarddeviatie van de metingen",
+        "De titel van de grafiek"
+      ],
+      "c": 1,
+      "d": 2,
+      "u": "Op de x-as staat meestal de onafhankelijke variabele, wat je zelf varieert.",
+      "uo": [
+        "De afhankelijke variabele staat meestal op de y-as.",
+        "Klopt: de onafhankelijke variabele.",
+        "De standaarddeviatie is geen as.",
+        "De titel is geen as-inhoud."
+      ],
+      "uh": "X-as = meestal de onafhankelijke variabele."
+    },
+    {
+      "v": "Wat staat meestal op de y-as?",
+      "o": [
+        "De onafhankelijke variabele",
+        "De naam van de onderzoeker",
+        "De afhankelijke variabele",
+        "De datum van de meting"
+      ],
+      "c": 2,
+      "d": 2,
+      "u": "Op de y-as staat meestal de afhankelijke variabele, wat je meet.",
+      "uo": [
+        "Die staat meestal op de x-as.",
+        "De naam is geen as-inhoud.",
+        "Klopt: de afhankelijke variabele.",
+        "De datum is geen as-inhoud."
+      ],
+      "uh": "Y-as = meestal de afhankelijke variabele."
+    },
+    {
+      "v": "Hoe lees je bij een x-waarde de bijbehorende y-waarde af?",
+      "o": [
+        "Je raadt de waarde zonder te kijken",
+        "Je leest alleen de titel boven de grafiek",
+        "Je pakt een willekeurig getal",
+        "Je gaat omhoog naar de lijn en dan naar de y-as"
+      ],
+      "c": 3,
+      "d": 2,
+      "u": "Vanaf de x-waarde ga je verticaal omhoog tot de lijn en dan horizontaal naar de y-as.",
+      "uo": [
+        "Raden is geen aflezen.",
+        "De titel geeft geen waarde.",
+        "Een willekeurig getal is fout.",
+        "Klopt: omhoog naar de lijn, dan naar de y-as."
+      ],
+      "uh": "Aflezen: omhoog naar de lijn, dan naar de y-as."
+    },
+    {
+      "v": "Wat is een veelgemaakte fout bij grafieken lezen?",
+      "o": [
+        "De as-eenheden verkeerd lezen",
+        "Eerst naar de assen kijken",
+        "Het gemiddelde berekenen",
+        "De meetlijn in de grafiek netjes volgen"
+      ],
+      "c": 0,
+      "d": 2,
+      "u": "Een veelgemaakte fout is de eenheid op een as over het hoofd zien, waardoor je de waarde verkeerd afleest.",
+      "uo": [
+        "Klopt: as-eenheden verkeerd lezen is een klassieke fout.",
+        "Eerst naar de assen kijken is juist goed.",
+        "Het gemiddelde berekenen is geen fout.",
+        "De lijn volgen is juist goed."
+      ],
+      "uh": "Let op de as-eenheden om fouten te voorkomen."
+    },
+    {
+      "v": "Wat is het gemiddelde van een reeks metingen?",
+      "o": [
+        "Het grootste getal",
+        "De som gedeeld door het aantal",
+        "Het kleinste getal",
+        "Het middelste meetpunt op de x-as"
+      ],
+      "c": 1,
+      "d": 1,
+      "u": "Het gemiddelde is de som van alle waarden gedeeld door het aantal metingen.",
+      "uo": [
+        "Dat is het maximum, niet het gemiddelde.",
+        "Klopt: som gedeeld door het aantal.",
+        "Dat is het minimum.",
+        "Dat is niet hoe je een gemiddelde berekent."
+      ],
+      "uh": "Gemiddelde = som / aantal."
+    },
+    {
+      "v": "Wat is de standaarddeviatie een maat voor?",
+      "o": [
+        "De titel die boven de grafiek staat",
+        "De onafhankelijke variabele",
+        "De spreiding rond het gemiddelde",
+        "Het aantal assen in de grafiek"
+      ],
+      "c": 2,
+      "d": 2,
+      "u": "De standaarddeviatie geeft aan hoe ver de metingen gemiddeld van het gemiddelde af liggen: de spreiding.",
+      "uo": [
+        "Dat is geen standaarddeviatie.",
+        "Dat is een variabele, geen spreidingsmaat.",
+        "Klopt: de spreiding rond het gemiddelde.",
+        "Het gaat niet over het aantal assen."
+      ],
+      "uh": "Standaarddeviatie = maat voor de spreiding."
+    },
+    {
+      "v": "Wat betekent een kleine standaarddeviatie?",
+      "o": [
+        "De metingen liggen ver uit elkaar",
+        "De grafiek heeft helemaal geen assen",
+        "Er is maar één meting gedaan",
+        "De metingen liggen dicht bij elkaar"
+      ],
+      "c": 3,
+      "d": 3,
+      "u": "Een kleine standaarddeviatie betekent dat de metingen dicht bij het gemiddelde liggen, dus weinig spreiding.",
+      "uo": [
+        "Ver uit elkaar hoort bij een grote standaarddeviatie.",
+        "Assen hebben er niets mee te maken.",
+        "Je hebt meerdere metingen nodig voor spreiding.",
+        "Klopt: dicht bij elkaar, weinig spreiding."
+      ],
+      "uh": "Kleine standaarddeviatie = metingen dicht bij elkaar."
+    },
+    {
+      "v": "Wat betekent een grote standaarddeviatie?",
+      "o": [
+        "De metingen liggen ver uit elkaar",
+        "De metingen liggen dicht bij elkaar",
+        "Er is geen gemiddelde te berekenen",
+        "De grafiek is fout getekend"
+      ],
+      "c": 0,
+      "d": 3,
+      "u": "Een grote standaarddeviatie betekent dat de metingen ver van het gemiddelde liggen: veel spreiding.",
+      "uo": [
+        "Klopt: ver uit elkaar, veel spreiding.",
+        "Dicht bij elkaar hoort bij een kleine standaarddeviatie.",
+        "Een gemiddelde is er nog steeds.",
+        "De grafiek hoeft niet fout te zijn."
+      ],
+      "uh": "Grote standaarddeviatie = veel spreiding."
+    },
+    {
+      "v": "Wat is het meetbereik?",
+      "o": [
+        "De kleur van de meetlijn",
+        "Het gebied van waarden waarin je hebt gemeten",
+        "De naam die bij de x-as hoort",
+        "Het aantal onderzoekers"
+      ],
+      "c": 1,
+      "d": 2,
+      "u": "Het meetbereik is het gebied van waarden waarbinnen je metingen hebt gedaan.",
+      "uo": [
+        "De kleur is niet het meetbereik.",
+        "Klopt: het gebied waarin je hebt gemeten.",
+        "Dat is een as-naam.",
+        "Dat is niet het meetbereik."
+      ],
+      "uh": "Meetbereik = het gebied waarin je hebt gemeten."
+    },
+    {
+      "v": "Waarom is een conclusie buiten het meetbereik onzeker?",
+      "o": [
+        "Omdat de grafiek daar mooier is",
+        "Omdat het gemiddelde daar stijgt",
+        "Omdat je daar geen metingen hebt",
+        "Omdat de assen daar helemaal verdwijnen"
+      ],
+      "c": 2,
+      "d": 3,
+      "u": "Buiten het gemeten gebied heb je geen data, dus je weet niet of het verband daar nog geldt.",
+      "uo": [
+        "Uiterlijk zegt niets over zekerheid.",
+        "Het gemiddelde is niet de reden.",
+        "Klopt: buiten het bereik zijn er geen metingen.",
+        "De assen verdwijnen niet."
+      ],
+      "uh": "Buiten het meetbereik: geen data, dus onzeker."
+    },
+    {
+      "v": "Wat is extrapoleren?",
+      "o": [
+        "Een waarde aflezen binnen het bereik",
+        "Het gemiddelde berekenen",
+        "De assen van de grafiek benoemen",
+        "Een uitspraak doen buiten het meetbereik"
+      ],
+      "c": 3,
+      "d": 2,
+      "u": "Extrapoleren is het doortrekken van een verband buiten het gebied waar je hebt gemeten.",
+      "uo": [
+        "Dat is aflezen binnen het bereik.",
+        "Dat is een berekening, geen extrapolatie.",
+        "Dat is de assen benoemen.",
+        "Klopt: buiten het meetbereik uitspraken doen."
+      ],
+      "uh": "Extrapoleren = buiten het meetbereik doortrekken."
+    },
+    {
+      "v": "Wat is een trend in een grafiek?",
+      "o": [
+        "De algemene richting van het verband",
+        "De exacte waarde van één punt",
+        "De titel die boven de grafiek staat",
+        "De naam van de onderzoeker"
+      ],
+      "c": 0,
+      "d": 1,
+      "u": "Een trend is de algemene richting: stijgend, dalend of vlak.",
+      "uo": [
+        "Klopt: de algemene richting.",
+        "Dat is één los punt, geen trend.",
+        "Dat is de titel.",
+        "Dat is de naam."
+      ],
+      "uh": "Trend = de algemene richting (stijgen/dalen/vlak)."
+    },
+    {
+      "v": "In een grafiek stijgt de lijn steeds. Wat is de trend?",
+      "o": [
+        "Dalend",
+        "Stijgend",
+        "Vlak",
+        "Er is geen trend"
+      ],
+      "c": 1,
+      "d": 1,
+      "u": "Een lijn die blijft omhooggaan, laat een stijgende trend zien.",
+      "uo": [
+        "Dalend zou omlaag gaan.",
+        "Klopt: de lijn stijgt.",
+        "Vlak zou horizontaal zijn.",
+        "Er is wel degelijk een trend."
+      ],
+      "uh": "Omhoog = stijgende trend."
+    },
+    {
+      "v": "Hoe lees je de fotosynthesesnelheid uit een grafiek af?",
+      "o": [
+        "Je raadt zomaar een willekeurig getal",
+        "Je kijkt naar de kleur",
+        "Je leest de gemeten waarde op de y-as af",
+        "Je gebruikt de titel als getal"
+      ],
+      "c": 2,
+      "d": 3,
+      "u": "De fotosynthesesnelheid staat als afhankelijke variabele op de y-as; die lees je bij de juiste x-waarde af.",
+      "uo": [
+        "Raden is geen aflezen.",
+        "De kleur geeft geen waarde.",
+        "Klopt: aflezen op de y-as bij de x-waarde.",
+        "De titel is geen getal."
+      ],
+      "uh": "Fotosynthesesnelheid = van de y-as aflezen."
+    },
+    {
+      "v": "Waarom bereken je een gemiddelde uit meerdere metingen?",
+      "o": [
+        "Om de grafiek kleiner te maken",
+        "Om de assen uit de grafiek te verwijderen",
+        "Om maar één meting te hoeven doen",
+        "Om toeval van losse metingen te verminderen"
+      ],
+      "c": 3,
+      "d": 2,
+      "u": "Een gemiddelde van meerdere metingen ligt dichter bij de werkelijkheid dan een enkele meting.",
+      "uo": [
+        "Het gaat niet om de grootte van de grafiek.",
+        "De assen blijven.",
+        "Je doet juist meerdere metingen.",
+        "Klopt: het gemiddelde vermindert de invloed van toeval."
+      ],
+      "uh": "Gemiddelde vermindert de invloed van toeval."
+    },
+    {
+      "v": "Een tabel toont per temperatuur een meetwaarde. Wat is een tabel?",
+      "o": [
+        "Een geordend overzicht van meetwaarden",
+        "Een nepbehandeling zonder stof",
+        "De verwachting die je van tevoren opstelt",
+        "De titel van de grafiek"
+      ],
+      "c": 0,
+      "d": 1,
+      "u": "Een tabel is een geordend overzicht van meetwaarden in rijen en kolommen.",
+      "uo": [
+        "Klopt: een geordend overzicht van meetwaarden.",
+        "Dat is een placebo.",
+        "Dat is de hypothese.",
+        "Dat is de grafiektitel."
+      ],
+      "uh": "Tabel = geordend overzicht van meetwaarden."
+    },
+    {
+      "v": "Waarom moet je de eenheid op een as controleren?",
+      "o": [
+        "Anders wordt de hele grafiek een stuk kleiner",
+        "Anders lees je de waarde verkeerd af",
+        "Anders verdwijnt het gemiddelde",
+        "Anders krijg je een controlegroep"
+      ],
+      "c": 1,
+      "d": 3,
+      "u": "Zonder de eenheid weet je niet wat een getal betekent, dus kun je de waarde verkeerd aflezen.",
+      "uo": [
+        "De grootte verandert niet.",
+        "Klopt: zonder de eenheid lees je verkeerd af.",
+        "Het gemiddelde blijft.",
+        "Er ontstaat geen controlegroep."
+      ],
+      "uh": "Controleer de eenheid, anders lees je fout af."
+    },
+    {
+      "v": "Twee metingen: 20 en 22 graden. Wat is het gemiddelde?",
+      "o": [
+        "42 graden",
+        "Het verschil van 2 graden tussen de metingen",
+        "21 graden",
+        "20 graden"
+      ],
+      "c": 2,
+      "d": 2,
+      "u": "Het gemiddelde is (20 + 22) gedeeld door 2, dus 21 graden.",
+      "uo": [
+        "42 is de som, niet het gemiddelde.",
+        "2 is het verschil, niet het gemiddelde.",
+        "Klopt: (20 + 22) / 2 = 21.",
+        "20 is het laagste getal, niet het gemiddelde."
+      ],
+      "uh": "Gemiddelde = som / aantal, hier 21."
+    },
+    {
+      "v": "Wat kun je NIET zeker zeggen op basis van een grafiek?",
+      "o": [
+        "Een afgelezen waarde binnen het bereik",
+        "De trend van de meetlijn",
+        "Het gemiddelde van de meetpunten",
+        "Wat er gebeurt buiten het meetbereik"
+      ],
+      "c": 3,
+      "d": 3,
+      "u": "Buiten het gemeten gebied heb je geen data, dus daar kun je geen zekere uitspraak over doen.",
+      "uo": [
+        "Binnen het bereik kun je aflezen.",
+        "De trend kun je binnen het bereik zien.",
+        "Het gemiddelde kun je berekenen.",
+        "Klopt: buiten het meetbereik weet je het niet zeker."
+      ],
+      "uh": "Buiten het meetbereik: geen zekere uitspraak."
+    },
+    {
+      "v": "Wat betekent een vlakke lijn in een grafiek?",
+      "o": [
+        "De waarde verandert niet",
+        "De waarde stijgt snel",
+        "De waarde daalt snel",
+        "De grafiek is helemaal fout getekend"
+      ],
+      "c": 0,
+      "d": 1,
+      "u": "Een horizontale (vlakke) lijn betekent dat de gemeten waarde gelijk blijft.",
+      "uo": [
+        "Klopt: de waarde blijft gelijk.",
+        "Bij stijgen gaat de lijn omhoog.",
+        "Bij dalen gaat de lijn omlaag.",
+        "De grafiek hoeft niet fout te zijn."
+      ],
+      "uh": "Vlakke lijn = de waarde verandert niet."
+    },
+    {
+      "v": "Waarom teken je meetpunten met foutbalken (spreiding)?",
+      "o": [
+        "Om de grafiek te versieren",
+        "Om te tonen hoe zeker de metingen zijn",
+        "Om de x-as van de grafiek te verlengen",
+        "Om de titel groter te maken"
+      ],
+      "c": 1,
+      "d": 3,
+      "u": "Foutbalken tonen de spreiding, zodat je ziet hoe betrouwbaar elk meetpunt is.",
+      "uo": [
+        "Ze zijn geen versiering.",
+        "Klopt: ze tonen de spreiding en zekerheid.",
+        "Ze verlengen de as niet.",
+        "Ze veranderen de titel niet."
+      ],
+      "uh": "Foutbalken tonen de spreiding van de metingen."
+    },
+    {
+      "v": "Wat doe je bij het aflezen van een tabel?",
+      "o": [
+        "De kleur van de tabel meten",
+        "De grafiek negeren en gokken",
+        "De juiste rij en kolom opzoeken",
+        "De titel van de tabel als waarde nemen"
+      ],
+      "c": 2,
+      "d": 2,
+      "u": "In een tabel zoek je de juiste rij en kolom om de bijbehorende meetwaarde te vinden.",
+      "uo": [
+        "De kleur meet je niet.",
+        "Gokken is geen aflezen.",
+        "Klopt: de juiste rij en kolom opzoeken.",
+        "De titel is geen meetwaarde."
+      ],
+      "uh": "Tabel aflezen = juiste rij en kolom."
+    },
+    {
+      "v": "Welke uitspraak over grafieken lezen klopt?",
+      "o": [
+        "Concludeer altijd buiten het meetbereik",
+        "Een enkele meting is altijd genoeg",
+        "De kleur bepaalt de waarde",
+        "Lees eerst de assen en hun eenheden"
+      ],
+      "c": 3,
+      "d": 2,
+      "u": "Begin met de assen en eenheden lezen; concludeer niet buiten het meetbereik en steun niet op één meting.",
+      "uo": [
+        "Buiten het meetbereik concluderen is juist onzeker.",
+        "Eén meting is meestal niet genoeg.",
+        "De kleur bepaalt de waarde niet.",
+        "Klopt: begin bij de assen en eenheden."
+      ],
+      "uh": "Eerst assen en eenheden, blijf binnen het meetbereik."
+    },
+    {
+      "v": "Twee onderzoekers meten dezelfde plant. De spreiding is klein. Wat betekent dat?",
+      "o": [
+        "De metingen liggen dicht bij elkaar",
+        "De metingen liggen ver uit elkaar",
+        "Er is helemaal niet gemeten",
+        "De grafiek heeft helemaal geen y-as"
+      ],
+      "c": 0,
+      "d": 3,
+      "u": "Een kleine spreiding betekent dat de metingen dicht bij elkaar liggen, dus goed reproduceerbaar.",
+      "uo": [
+        "Klopt: kleine spreiding = dicht bij elkaar.",
+        "Ver uit elkaar hoort bij grote spreiding.",
+        "Er is wel gemeten.",
+        "De y-as is er wel."
+      ],
+      "uh": "Kleine spreiding = metingen dicht bij elkaar."
+    }
+  ],
+  "oe": [
+    {
+      "vraag": "Leg uit waarom je bij een grafiek eerst naar de assen en hun eenheden kijkt.",
+      "antwoord": "De assen vertellen welke grootheid je afleest en in welke eenheid. Als je de eenheid over het hoofd ziet, lees je de waarde verkeerd af. Daarom kijk je eerst wat er op de x-as en de y-as staat en in welke eenheid, voordat je een waarde afleest."
+    },
+    {
+      "vraag": "Leg uit hoe je bij een gegeven x-waarde de bijbehorende y-waarde uit een grafiek afleest.",
+      "antwoord": "Je zoekt de x-waarde op de horizontale as. Vanaf dat punt ga je verticaal omhoog tot je de lijn of het meetpunt raakt. Vanaf daar ga je horizontaal naar de y-as en leest daar de bijbehorende waarde af, in de eenheid van de y-as."
+    },
+    {
+      "vraag": "Leg uit wat een grote en een kleine standaarddeviatie zeggen over de metingen.",
+      "antwoord": "De standaarddeviatie is een maat voor de spreiding rond het gemiddelde. Een kleine standaarddeviatie betekent dat de metingen dicht bij het gemiddelde liggen en dus dicht bij elkaar. Een grote standaarddeviatie betekent dat de metingen ver van het gemiddelde en dus ver uit elkaar liggen."
+    },
+    {
+      "vraag": "Leg uit waarom je geen conclusie mag trekken buiten het meetbereik van een grafiek.",
+      "antwoord": "Buiten het meetbereik heb je geen metingen gedaan. Je weet dus niet of het verband dat je binnen het bereik ziet, daar ook nog geldt. Een uitspraak doen buiten het gemeten gebied heet extrapoleren en is onzeker, omdat er geen gegevens zijn die de conclusie ondersteunen."
+    },
+    {
+      "vraag": "Leg uit waarom je uit meerdere metingen een gemiddelde berekent in plaats van één meting te gebruiken.",
+      "antwoord": "Een enkele meting kan toevallig afwijken van de werkelijke waarde. Door meerdere metingen te doen en het gemiddelde te berekenen, verminder je de invloed van dat toeval. Het gemiddelde ligt dan dichter bij de werkelijke waarde en de conclusie is betrouwbaarder."
+    }
+  ]
+}

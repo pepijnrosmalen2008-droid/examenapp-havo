@@ -9650,6 +9650,2828 @@ var VAKKEN = [
    {
     "id": "A",
     "naam": "Vaardigheden en onderzoek",
+    "leerdoelen": [
+     {
+      "id": "A1",
+      "naam": "Onderzoek opzetten",
+      "beschrijving": "Gouden-standaardmodule bi.A.1: een biologisch experiment opzetten met een toetsbare hypothese, de onafhankelijke, afhankelijke en constante variabelen, en een controlegroep.",
+      "ceStatus": "CE",
+      "onderwerpen": [
+       "Hypothese als toetsbare verwachting",
+       "Onafhankelijke variabele (wat je verandert)",
+       "Afhankelijke variabele (wat je meet)",
+       "Constante variabelen (wat je gelijk houdt)",
+       "Controlegroep en controle-experiment",
+       "Eerlijke vergelijking"
+      ],
+      "sam": "Bij het opzetten van een experiment begin je met een toetsbare hypothese: een verwachting die je met metingen kunt controleren. Je onderscheidt drie soorten variabelen. De onafhankelijke variabele is wat de onderzoeker zelf verandert, de mogelijke oorzaak. De afhankelijke variabele is wat je meet, het gevolg. De constante variabelen houd je gelijk, zodat het verschil in de meting alleen door de onafhankelijke variabele kan komen: een eerlijke vergelijking. Om zeker te weten dat het effect door je behandeling komt, gebruik je een controlegroep: een groep zonder de behandeling waarmee je vergelijkt.",
+      "begrippen": [
+       {
+        "t": "Hypothese",
+        "d": "een toetsbare verwachting die je met een experiment kunt controleren"
+       },
+       {
+        "t": "Onafhankelijke variabele",
+        "d": "wat de onderzoeker zelf verandert (de mogelijke oorzaak)"
+       },
+       {
+        "t": "Afhankelijke variabele",
+        "d": "wat je meet in het experiment (het gevolg)"
+       },
+       {
+        "t": "Constante variabele",
+        "d": "een factor die je gelijk houdt voor een eerlijke vergelijking"
+       },
+       {
+        "t": "Controlegroep",
+        "d": "een groep zonder de behandeling om mee te vergelijken"
+       },
+       {
+        "t": "Controle-experiment",
+        "d": "een experiment dat controleert of het effect echt door de behandeling komt"
+       },
+       {
+        "t": "Experiment",
+        "d": "een proef waarmee je een hypothese toetst"
+       },
+       {
+        "t": "Variabele",
+        "d": "een factor in een onderzoek die kan veranderen"
+       },
+       {
+        "t": "Meetwaarde",
+        "d": "een gemeten getal in een experiment"
+       },
+       {
+        "t": "Onderzoeksvraag",
+        "d": "de vraag die je met het onderzoek wilt beantwoorden"
+       },
+       {
+        "t": "Proefopzet",
+        "d": "de manier waarop je het experiment inricht"
+       },
+       {
+        "t": "Herhaling",
+        "d": "het experiment vaker doen om toeval uit te sluiten"
+       }
+      ],
+      "sv": [
+       {
+        "v": "Wat is een hypothese?",
+        "o": [
+         "Een toetsbare verwachting",
+         "Een meetwaarde die je opschrijft",
+         "Het antwoord dat altijd al vaststaat",
+         "De naam van een meetinstrument"
+        ],
+        "c": 0,
+        "d": 1,
+        "u": "Een hypothese is een verwachting die je met een experiment kunt toetsen.",
+        "uo": [
+         "Klopt: een toetsbare verwachting.",
+         "Dat is een meetwaarde, geen hypothese.",
+         "Een hypothese staat juist nog niet vast.",
+         "Dat is een instrument, geen hypothese."
+        ],
+        "uh": "Hypothese = toetsbare verwachting."
+       },
+       {
+        "v": "Wat is de onafhankelijke variabele?",
+        "o": [
+         "Wat je meet als resultaat",
+         "Wat de onderzoeker zelf verandert",
+         "Een factor die je gelijk houdt",
+         "Het getal dat toevallig uit de meting komt rollen"
+        ],
+        "c": 1,
+        "d": 2,
+        "u": "De onafhankelijke variabele is wat de onderzoeker bewust verandert: de mogelijke oorzaak.",
+        "uo": [
+         "Dat is de afhankelijke variabele.",
+         "Klopt: wat de onderzoeker zelf verandert.",
+         "Dat is een constante variabele.",
+         "Een meetgetal is geen variabele die je instelt."
+        ],
+        "uh": "Onafhankelijk = wat jij zelf verandert."
+       },
+       {
+        "v": "Wat is de afhankelijke variabele?",
+        "o": [
+         "Wat de onderzoeker zelf instelt",
+         "Een factor die je constant houdt",
+         "Wat je meet",
+         "De hypothese van het onderzoek"
+        ],
+        "c": 2,
+        "d": 2,
+        "u": "De afhankelijke variabele is wat je meet: het gevolg dat afhangt van wat je verandert.",
+        "uo": [
+         "Dat is de onafhankelijke variabele.",
+         "Dat is een constante variabele.",
+         "Klopt: wat je meet, het gevolg.",
+         "Een hypothese is geen variabele."
+        ],
+        "uh": "Afhankelijk = wat je meet (het gevolg)."
+       },
+       {
+        "v": "Wat is een constante variabele?",
+        "o": [
+         "Wat je bewust verandert",
+         "Wat je aan het eind meet",
+         "De verwachting die je vooraf hebt opgesteld",
+         "Een factor die je gelijk houdt"
+        ],
+        "c": 3,
+        "d": 2,
+        "u": "Constante variabelen houd je gelijk, zodat de vergelijking eerlijk blijft.",
+        "uo": [
+         "Dat is de onafhankelijke variabele.",
+         "Dat is de afhankelijke variabele.",
+         "Dat is de hypothese.",
+         "Klopt: een factor die je gelijk houdt."
+        ],
+        "uh": "Constant = gelijk houden voor een eerlijke vergelijking."
+       },
+       {
+        "v": "Waarvoor dient een controlegroep?",
+        "o": [
+         "Om mee te vergelijken",
+         "Om het experiment sneller te maken",
+         "Om de hypothese te verzinnen",
+         "Om de meetlat af te lezen"
+        ],
+        "c": 0,
+        "d": 2,
+        "u": "Een controlegroep krijgt niet de behandeling, zodat je kunt vergelijken en het effect ziet.",
+        "uo": [
+         "Klopt: de controlegroep is de vergelijkingsgroep.",
+         "Een controlegroep is niet voor snelheid.",
+         "De hypothese bedenk je vooraf zelf.",
+         "Een controlegroep is geen meetinstrument."
+        ],
+        "uh": "Controlegroep = de groep om mee te vergelijken."
+       },
+       {
+        "v": "Waarom houd je constante variabelen gelijk?",
+        "o": [
+         "Om de uitkomst van de meting toevalliger te maken",
+         "Om het verschil alleen door de behandeling te laten komen",
+         "Om meer variabelen tegelijk te veranderen",
+         "Om de hypothese overbodig te maken"
+        ],
+        "c": 1,
+        "d": 3,
+        "u": "Door alles behalve de onafhankelijke variabele gelijk te houden, weet je dat een verschil door die variabele komt.",
+        "uo": [
+         "Constant houden maakt de meting juist eerlijker.",
+         "Klopt: zo komt het verschil alleen door de behandeling.",
+         "Je verandert juist maar één ding tegelijk.",
+         "De hypothese blijft gewoon nodig."
+        ],
+        "uh": "Constant houden = eerlijke vergelijking, één oorzaak."
+       },
+       {
+        "v": "Een onderzoeker test of meer licht planten sneller laat groeien. Wat is de onafhankelijke variabele?",
+        "o": [
+         "De groeisnelheid van de plant",
+         "De soort plant",
+         "De hoeveelheid licht",
+         "De temperatuur van de kamer"
+        ],
+        "c": 2,
+        "d": 3,
+        "u": "De hoeveelheid licht wordt bewust veranderd, dus dat is de onafhankelijke variabele.",
+        "uo": [
+         "De groeisnelheid is wat je meet, dus afhankelijk.",
+         "De plantensoort houd je gelijk (constant).",
+         "Klopt: de hoeveelheid licht wordt veranderd.",
+         "De temperatuur houd je gelijk."
+        ],
+        "uh": "Wat je zelf instelt = onafhankelijke variabele."
+       },
+       {
+        "v": "In datzelfde onderzoek: wat is de afhankelijke variabele?",
+        "o": [
+         "De hoeveelheid licht",
+         "De grootte van de pot",
+         "De soort plant die in de proef wordt gebruikt",
+         "De groeisnelheid van de plant"
+        ],
+        "c": 3,
+        "d": 3,
+        "u": "De groeisnelheid is wat je meet en hangt af van het licht, dus dat is de afhankelijke variabele.",
+        "uo": [
+         "Het licht wordt ingesteld, dus onafhankelijk.",
+         "De potgrootte houd je gelijk.",
+         "De plantensoort houd je gelijk.",
+         "Klopt: de groeisnelheid is wat je meet."
+        ],
+        "uh": "Wat je meet = afhankelijke variabele."
+       },
+       {
+        "v": "Wat is een goede hypothese voor dit onderzoek?",
+        "o": [
+         "Meer licht laat de plant sneller groeien",
+         "Planten zijn groen van kleur",
+         "Een lampje kost veel stroom",
+         "De onderzoeker in het lab heet toevallig Sam"
+        ],
+        "c": 0,
+        "d": 2,
+        "u": "Een goede hypothese is een toetsbare verwachting over het verband tussen licht en groei.",
+        "uo": [
+         "Klopt: een toetsbare verwachting over licht en groei.",
+         "Dat is een feit, geen toetsbare verwachting over dit onderzoek.",
+         "Dat gaat niet over de groei van de plant.",
+         "Dat is geen wetenschappelijke verwachting."
+        ],
+        "uh": "Hypothese = toetsbare verwachting over het verband."
+       },
+       {
+        "v": "Waarom is een controlegroep belangrijk?",
+        "o": [
+         "Met een controlegroep hoef je niet te meten",
+         "Zonder controlegroep weet je niet of het effect door de behandeling komt",
+         "Een controlegroep vervangt de hele hypothese",
+         "Een controlegroep maakt de plant groter"
+        ],
+        "c": 1,
+        "d": 3,
+        "u": "De controlegroep laat zien wat er zonder behandeling gebeurt, zodat je het effect kunt toeschrijven aan de behandeling.",
+        "uo": [
+         "Je moet nog steeds meten.",
+         "Klopt: zonder controlegroep mis je de vergelijking.",
+         "De hypothese blijft nodig.",
+         "De controlegroep beïnvloedt de behandelgroep niet."
+        ],
+        "uh": "Controlegroep = weet zeker dat het effect van de behandeling komt."
+       },
+       {
+        "v": "Wat verander je in een goed experiment tegelijk?",
+        "o": [
+         "Alle variabelen tegelijk",
+         "Zoveel mogelijk dingen door elkaar",
+         "Maar één variabele",
+         "Niets, je meet alleen"
+        ],
+        "c": 2,
+        "d": 2,
+        "u": "Je verandert maar één variabele (de onafhankelijke) en houdt de rest gelijk, zodat je het effect kunt toeschrijven.",
+        "uo": [
+         "Alles tegelijk maakt de conclusie onmogelijk.",
+         "Door elkaar veranderen geeft geen eerlijk resultaat.",
+         "Klopt: verander maar één variabele tegelijk.",
+         "Je verandert wel degelijk iets: de onafhankelijke variabele."
+        ],
+        "uh": "Verander één variabele tegelijk."
+       },
+       {
+        "v": "Wat is de rol van een controle-experiment?",
+        "o": [
+         "Het maakt de gemeten waarden kunstmatig hoger",
+         "Het vervangt de onderzoeksvraag",
+         "Het bepaalt de kleur van de plant",
+         "Het controleert of het effect echt door de behandeling komt"
+        ],
+        "c": 3,
+        "d": 2,
+        "u": "Een controle-experiment toont wat er zonder de behandeling gebeurt, ter vergelijking met het echte experiment.",
+        "uo": [
+         "Het verandert de meetwaarden niet kunstmatig.",
+         "De onderzoeksvraag blijft bestaan.",
+         "Het bepaalt geen kleur.",
+         "Klopt: het controleert of het effect van de behandeling komt."
+        ],
+        "uh": "Controle-experiment = vergelijking zonder behandeling."
+       },
+       {
+        "v": "Wat is een onderzoeksvraag?",
+        "o": [
+         "De vraag die je met het onderzoek wilt beantwoorden",
+         "Het gemeten getal helemaal aan het eind van de proef",
+         "Een factor die je gelijk houdt",
+         "Het meetinstrument dat je gebruikt"
+        ],
+        "c": 0,
+        "d": 1,
+        "u": "De onderzoeksvraag is de vraag waar het onderzoek een antwoord op moet geven.",
+        "uo": [
+         "Klopt: de vraag die je wilt beantwoorden.",
+         "Dat is een meetwaarde.",
+         "Dat is een constante variabele.",
+         "Dat is een instrument."
+        ],
+        "uh": "Onderzoeksvraag = wat je wilt weten."
+       },
+       {
+        "v": "Waarom herhaal je een experiment meerdere keren?",
+        "o": [
+         "Om het duurder te maken",
+         "Om toeval uit te sluiten",
+         "Om de hypothese te veranderen",
+         "Om minder te hoeven meten"
+        ],
+        "c": 1,
+        "d": 3,
+        "u": "Door te herhalen zie je of een resultaat steeds terugkomt, zodat het niet op toeval berust.",
+        "uo": [
+         "Herhalen is niet bedoeld om het duurder te maken.",
+         "Klopt: herhalen sluit toeval uit.",
+         "De hypothese verander je niet zomaar.",
+         "Je meet juist vaker, niet minder."
+        ],
+        "uh": "Herhalen = toeval uitsluiten."
+       },
+       {
+        "v": "Een goede proefopzet zorgt vooral dat je conclusie:",
+        "o": [
+         "toevallig tot stand komt",
+         "los staat van de metingen",
+         "betrouwbaar en eerlijk is",
+         "de opgestelde hypothese volledig negeert"
+        ],
+        "c": 2,
+        "d": 2,
+        "u": "Met een goede proefopzet (één variabele, controlegroep, herhaling) wordt je conclusie eerlijk en betrouwbaar.",
+        "uo": [
+         "Een goede opzet vermindert juist toeval.",
+         "De conclusie steunt juist op de metingen.",
+         "Klopt: een goede opzet maakt de conclusie eerlijk en betrouwbaar.",
+         "De conclusie toetst juist de hypothese."
+        ],
+        "uh": "Goede proefopzet = eerlijke, betrouwbare conclusie."
+       },
+       {
+        "v": "Welke variabele is het gevolg dat je meet?",
+        "o": [
+         "De onafhankelijke variabele",
+         "De constante variabele",
+         "De controlegroep",
+         "De afhankelijke variabele"
+        ],
+        "c": 3,
+        "d": 1,
+        "u": "De afhankelijke variabele is het gevolg dat je meet en dat afhangt van de onafhankelijke variabele.",
+        "uo": [
+         "Die stel je juist zelf in.",
+         "Die houd je gelijk.",
+         "Een controlegroep is geen variabele.",
+         "Klopt: de afhankelijke variabele meet je."
+        ],
+        "uh": "Het gevolg dat je meet = afhankelijk."
+       },
+       {
+        "v": "Wat is het verschil tussen de onafhankelijke en de afhankelijke variabele?",
+        "o": [
+         "De ene verander je, de andere meet je",
+         "Ze zijn precies hetzelfde",
+         "Beide variabelen houd je tijdens de proef constant",
+         "Beide zijn de hypothese"
+        ],
+        "c": 0,
+        "d": 3,
+        "u": "De onafhankelijke variabele verander je zelf; de afhankelijke variabele meet je als gevolg.",
+        "uo": [
+         "Klopt: veranderen versus meten.",
+         "Ze verschillen juist.",
+         "De onafhankelijke houd je niet constant.",
+         "Geen van beide is de hypothese."
+        ],
+        "uh": "Onafhankelijk = veranderen, afhankelijk = meten."
+       },
+       {
+        "v": "In een medicijnproef krijgt de ene groep het medicijn. Wat is de andere groep?",
+        "o": [
+         "De onafhankelijke variabele",
+         "De controlegroep",
+         "De hypothese",
+         "De meetwaarde"
+        ],
+        "c": 1,
+        "d": 2,
+        "u": "De groep zonder medicijn is de controlegroep, waarmee je het effect van het medicijn vergelijkt.",
+        "uo": [
+         "Dat is geen variabele maar een groep.",
+         "Klopt: de groep zonder behandeling is de controlegroep.",
+         "Dat is de verwachting, geen groep.",
+         "Dat is een getal, geen groep."
+        ],
+        "uh": "Groep zonder behandeling = controlegroep."
+       },
+       {
+        "v": "Waarom mag je maar één variabele tegelijk veranderen?",
+        "o": [
+         "Anders duurt het hele experiment veel te lang",
+         "Anders is de hypothese fout",
+         "Anders weet je niet welke factor het effect gaf",
+         "Anders wordt de plant te groot"
+        ],
+        "c": 2,
+        "d": 3,
+        "u": "Verander je meerdere dingen tegelijk, dan kun je niet zeggen welke factor het gemeten effect heeft veroorzaakt.",
+        "uo": [
+         "Het gaat niet om de tijd.",
+         "De hypothese wordt er niet fout van.",
+         "Klopt: anders is de oorzaak niet aan te wijzen.",
+         "De plantgrootte is niet de reden."
+        ],
+        "uh": "Eén variabele tegelijk = oorzaak aanwijsbaar."
+       },
+       {
+        "v": "Wat hoort er bij een goede proefopzet?",
+        "o": [
+         "Meerdere variabelen door elkaar veranderen",
+         "Geen enkele meting doen",
+         "De hypothese weglaten",
+         "Een controlegroep en constante variabelen"
+        ],
+        "c": 3,
+        "d": 2,
+        "u": "Een goede proefopzet heeft een controlegroep, constant gehouden variabelen en herhaling.",
+        "uo": [
+         "Door elkaar veranderen is juist fout.",
+         "Meten is juist nodig.",
+         "De hypothese hoort er juist bij.",
+         "Klopt: controlegroep en constante variabelen horen erbij."
+        ],
+        "uh": "Goede opzet = controlegroep + constanten + herhaling."
+       },
+       {
+        "v": "Wat toets je met een experiment?",
+        "o": [
+         "De hypothese",
+         "De kleur van het lab",
+         "De naam van de onderzoeker",
+         "Het weer buiten"
+        ],
+        "c": 0,
+        "d": 1,
+        "u": "Met een experiment toets je of de hypothese klopt.",
+        "uo": [
+         "Klopt: je toetst de hypothese.",
+         "De labkleur is niet het doel.",
+         "De naam is niet het doel.",
+         "Het weer is niet het doel."
+        ],
+        "uh": "Experiment = de hypothese toetsen."
+       },
+       {
+        "v": "Wat is een meetwaarde?",
+        "o": [
+         "De verwachting vooraf",
+         "Een gemeten getal",
+         "De factor die je gelijk houdt",
+         "De onderzoeksvraag"
+        ],
+        "c": 1,
+        "d": 1,
+        "u": "Een meetwaarde is een getal dat je tijdens het experiment meet.",
+        "uo": [
+         "Dat is de hypothese.",
+         "Klopt: een gemeten getal.",
+         "Dat is een constante variabele.",
+         "Dat is de onderzoeksvraag."
+        ],
+        "uh": "Meetwaarde = een gemeten getal."
+       },
+       {
+        "v": "Een onderzoeker verandert de temperatuur en meet de ademhaling van vissen. Wat houd je gelijk?",
+        "o": [
+         "De temperatuur van het water",
+         "De ademhaling van de vissen",
+         "De hoeveelheid water en het aantal vissen",
+         "De onderzoeksvraag van het hele experiment"
+        ],
+        "c": 2,
+        "d": 3,
+        "u": "Alles behalve de onafhankelijke variabele (temperatuur) houd je gelijk, zoals de hoeveelheid water en het aantal vissen.",
+        "uo": [
+         "De temperatuur verander je juist.",
+         "De ademhaling meet je juist.",
+         "Klopt: hoeveelheid water en aantal vissen houd je constant.",
+         "De onderzoeksvraag is geen variabele om gelijk te houden."
+        ],
+        "uh": "Constant = alles behalve wat je verandert of meet."
+       },
+       {
+        "v": "Waarom begin je een onderzoek met een hypothese?",
+        "o": [
+         "Om meteen de conclusie van tevoren al te weten",
+         "Om geen metingen te hoeven doen",
+         "Om de controlegroep te vervangen",
+         "Om een toetsbare verwachting te hebben"
+        ],
+        "c": 3,
+        "d": 2,
+        "u": "De hypothese geeft een toetsbare verwachting waar je het experiment op richt.",
+        "uo": [
+         "De conclusie ken je vooraf nog niet.",
+         "Metingen blijven nodig.",
+         "De hypothese vervangt geen controlegroep.",
+         "Klopt: een toetsbare verwachting om te onderzoeken."
+        ],
+        "uh": "Hypothese = de toetsbare verwachting om mee te starten."
+       },
+       {
+        "v": "Welke uitspraak over variabelen klopt?",
+        "o": [
+         "Onafhankelijk verander je, afhankelijk meet je, constant houd je gelijk",
+         "Alle variabelen meet je pas helemaal aan het eind",
+         "Alle variabelen verander je tegelijk",
+         "Variabelen spelen geen rol in onderzoek"
+        ],
+        "c": 0,
+        "d": 2,
+        "u": "De onafhankelijke variabele verander je, de afhankelijke meet je, en de constante variabelen houd je gelijk.",
+        "uo": [
+         "Klopt: veranderen, meten, gelijk houden.",
+         "Alleen de afhankelijke meet je.",
+         "Je verandert er maar één tegelijk.",
+         "Variabelen zijn juist de kern van onderzoek."
+        ],
+        "uh": "Onafhankelijk veranderen, afhankelijk meten, constant gelijk houden."
+       }
+      ],
+      "oe": [
+       {
+        "vraag": "Leg uit wat een hypothese is en geef een voorbeeld voor een onderzoek naar licht en plantengroei.",
+        "antwoord": "Een hypothese is een toetsbare verwachting die je met een experiment kunt controleren. Voor een onderzoek naar licht en plantengroei kan de hypothese zijn: als een plant meer licht krijgt, dan groeit hij sneller. Deze verwachting kun je toetsen door de hoeveelheid licht te veranderen en de groei te meten."
+       },
+       {
+        "vraag": "Leg uit wat het verschil is tussen de onafhankelijke en de afhankelijke variabele.",
+        "antwoord": "De onafhankelijke variabele is de factor die de onderzoeker zelf verandert, de mogelijke oorzaak. De afhankelijke variabele is de factor die je meet, het gevolg dat afhangt van de onafhankelijke variabele. In een lichtonderzoek is de hoeveelheid licht onafhankelijk en de groeisnelheid afhankelijk."
+       },
+       {
+        "vraag": "Leg uit waarom je constante variabelen gelijk houdt in een experiment.",
+        "antwoord": "Je houdt alle factoren behalve de onafhankelijke variabele gelijk, zodat een verschil in de meting alleen kan komen door de variabele die je hebt veranderd. Zo maak je een eerlijke vergelijking en kun je het effect toeschrijven aan de juiste oorzaak."
+       },
+       {
+        "vraag": "Leg uit waarom een controlegroep nodig is in een experiment.",
+        "antwoord": "Een controlegroep krijgt niet de behandeling. Door de behandelde groep met de controlegroep te vergelijken, weet je wat er zonder behandeling zou gebeuren. Alleen zo kun je zeker weten dat een gemeten effect echt door de behandeling komt en niet door iets anders."
+       },
+       {
+        "vraag": "Leg uit waarom een onderzoeker een experiment meerdere keren herhaalt.",
+        "antwoord": "Door een experiment vaker uit te voeren kun je zien of een resultaat steeds terugkomt. Als het resultaat elke keer hetzelfde is, berust het niet op toeval en is de conclusie betrouwbaarder. Een enkele meting kan namelijk toevallig afwijken."
+       }
+      ]
+     },
+     {
+      "id": "A2",
+      "naam": "Betrouwbaarheid en validiteit beoordelen",
+      "beschrijving": "Gouden-standaardmodule bi.A.2: het verschil tussen betrouwbaarheid (steeds hetzelfde resultaat) en validiteit (meet je het juiste), en de rol van steekproef en placebo.",
+      "ceStatus": "CE",
+      "onderwerpen": [
+       "Betrouwbaarheid: reproduceerbaar resultaat",
+       "Validiteit: meet je wat je wilt meten",
+       "Verschil betrouwbaar en valide",
+       "Steekproef en steekproefgrootte",
+       "Representatieve steekproef",
+       "Placebo en het placebo-effect"
+      ],
+      "sam": "Bij het beoordelen van een onderzoek let je op twee dingen. Betrouwbaarheid gaat over of je bij herhaling steeds hetzelfde resultaat krijgt: is de uitkomst reproduceerbaar? Validiteit gaat over of je meet wat je echt wilt meten: meet je het juiste? Dit zijn twee verschillende dingen; een meting kan betrouwbaar zijn maar toch het verkeerde meten. Een steekproef is het deel van de groep dat je onderzoekt. Een grotere en representatieve steekproef maakt het onderzoek betrouwbaarder; een te kleine steekproef is een beperking. Bij medicijnonderzoek geef je de controlegroep een placebo, een nepbehandeling zonder werkzame stof, zodat je het echte effect kunt scheiden van het placebo-effect.",
+      "begrippen": [
+       {
+        "t": "Betrouwbaarheid",
+        "d": "of je bij herhaling steeds hetzelfde resultaat krijgt"
+       },
+       {
+        "t": "Validiteit",
+        "d": "of je meet wat je echt wilt meten"
+       },
+       {
+        "t": "Steekproef",
+        "d": "het deel van de groep dat je onderzoekt"
+       },
+       {
+        "t": "Steekproefgrootte",
+        "d": "hoeveel individuen er in de steekproef zitten"
+       },
+       {
+        "t": "Representatief",
+        "d": "de steekproef lijkt goed op de hele groep"
+       },
+       {
+        "t": "Placebo",
+        "d": "een nepbehandeling zonder werkzame stof"
+       },
+       {
+        "t": "Placebo-effect",
+        "d": "verbetering doordat iemand denkt behandeld te worden"
+       },
+       {
+        "t": "Reproduceerbaar",
+        "d": "een resultaat dat bij herhaling opnieuw ontstaat"
+       },
+       {
+        "t": "Meetfout",
+        "d": "een afwijking tussen de meting en de echte waarde"
+       },
+       {
+        "t": "Nauwkeurigheid",
+        "d": "hoe dicht een meting bij de echte waarde ligt"
+       },
+       {
+        "t": "Controlegroep",
+        "d": "de vergelijkingsgroep zonder de echte behandeling"
+       },
+       {
+        "t": "Vertekening",
+        "d": "een systematische scheefheid in de resultaten"
+       }
+      ],
+      "sv": [
+       {
+        "v": "Wat betekent betrouwbaarheid van een onderzoek?",
+        "o": [
+         "Dat je steeds hetzelfde resultaat krijgt",
+         "Dat je het juiste onderwerp meet",
+         "Dat de steekproef heel klein is",
+         "Dat je de meting maar één enkele keer uitvoert"
+        ],
+        "c": 0,
+        "d": 2,
+        "u": "Betrouwbaarheid gaat over of het resultaat bij herhaling steeds hetzelfde is.",
+        "uo": [
+         "Klopt: steeds hetzelfde resultaat bij herhaling.",
+         "Dat is validiteit.",
+         "Een kleine steekproef maakt het juist minder betrouwbaar.",
+         "Betrouwbaarheid vraagt juist herhaling."
+        ],
+        "uh": "Betrouwbaar = steeds hetzelfde resultaat."
+       },
+       {
+        "v": "Wat betekent validiteit van een onderzoek?",
+        "o": [
+         "Dat je steeds hetzelfde krijgt",
+         "Dat je meet wat je wilt meten",
+         "Dat je heel vaak herhaalt",
+         "Dat de steekproef groot is"
+        ],
+        "c": 1,
+        "d": 2,
+        "u": "Validiteit gaat over of je echt meet wat je wilt onderzoeken.",
+        "uo": [
+         "Dat is betrouwbaarheid.",
+         "Klopt: je meet het juiste.",
+         "Herhalen hoort bij betrouwbaarheid.",
+         "Steekproefgrootte hoort bij betrouwbaarheid."
+        ],
+        "uh": "Valide = je meet het juiste."
+       },
+       {
+        "v": "Wat is het verschil tussen betrouwbaarheid en validiteit?",
+        "o": [
+         "De twee begrippen betekenen precies hetzelfde",
+         "Beide gaan alleen over de steekproef",
+         "Betrouwbaar is herhaalbaar, valide is het juiste meten",
+         "Beide gaan over de grootte van de groep"
+        ],
+        "c": 2,
+        "d": 3,
+        "u": "Betrouwbaarheid gaat over herhaalbaarheid, validiteit over of je het juiste meet. Dat zijn twee dingen.",
+        "uo": [
+         "Ze verschillen juist.",
+         "Ze gaan over meer dan de steekproef.",
+         "Klopt: herhaalbaar versus het juiste meten.",
+         "Ze gaan niet alleen over de groepsgrootte."
+        ],
+        "uh": "Betrouwbaar = herhaalbaar, valide = het juiste."
+       },
+       {
+        "v": "Wat is een steekproef?",
+        "o": [
+         "De hele populatie tegelijk",
+         "Een nepbehandeling zonder stof",
+         "De verwachting die je van tevoren opstelt",
+         "Het deel van de groep dat je onderzoekt"
+        ],
+        "c": 3,
+        "d": 1,
+        "u": "Een steekproef is het deel van de groep dat je daadwerkelijk onderzoekt.",
+        "uo": [
+         "De hele populatie is geen steekproef.",
+         "Dat is een placebo.",
+         "Dat is de hypothese.",
+         "Klopt: het onderzochte deel van de groep."
+        ],
+        "uh": "Steekproef = het onderzochte deel van de groep."
+       },
+       {
+        "v": "Waarom is een grotere steekproef meestal beter?",
+        "o": [
+         "Omdat het resultaat dan betrouwbaarder is",
+         "Omdat je dan minder hoeft te meten",
+         "Omdat de validiteit dan verdwijnt",
+         "Omdat de invloed van toeval dan juist groter wordt"
+        ],
+        "c": 0,
+        "d": 2,
+        "u": "Bij een grotere steekproef telt toeval minder mee, dus wordt het resultaat betrouwbaarder.",
+        "uo": [
+         "Klopt: groter is betrouwbaarder.",
+         "Je meet juist meer.",
+         "De validiteit verdwijnt niet.",
+         "Toeval wordt juist kleiner."
+        ],
+        "uh": "Grotere steekproef = betrouwbaarder."
+       },
+       {
+        "v": "Wat is een placebo?",
+        "o": [
+         "Een groep zonder deelnemers",
+         "Een nepbehandeling zonder werkzame stof",
+         "Een heel grote steekproef",
+         "Een tweede hypothese naast de eerste"
+        ],
+        "c": 1,
+        "d": 1,
+        "u": "Een placebo is een nepbehandeling zonder werkzame stof, die eruitziet als de echte behandeling.",
+        "uo": [
+         "Een placebo is geen lege groep.",
+         "Klopt: een nepbehandeling zonder werkzame stof.",
+         "Een placebo is geen steekproef.",
+         "Een placebo is geen hypothese."
+        ],
+        "uh": "Placebo = nepbehandeling zonder werkzame stof."
+       },
+       {
+        "v": "Waarom gebruik je een placebo in een medicijnonderzoek?",
+        "o": [
+         "Om de steekproef kleiner te maken",
+         "Om de hypothese te vervangen",
+         "Om het echte effect van het placebo-effect te scheiden",
+         "Om zo snel mogelijk klaar te zijn met de proef"
+        ],
+        "c": 2,
+        "d": 3,
+        "u": "Met een placebo kun je zien wat er gebeurt zonder werkzame stof, zodat je het echte effect apart kunt aantonen.",
+        "uo": [
+         "De steekproef wordt er niet kleiner van.",
+         "De hypothese blijft nodig.",
+         "Klopt: zo scheid je het echte effect van het placebo-effect.",
+         "Snelheid is niet de reden."
+        ],
+        "uh": "Placebo = echt effect scheiden van het placebo-effect."
+       },
+       {
+        "v": "Een onderzoek meet iets steeds precies hetzelfde, maar meet het verkeerde. Wat klopt er?",
+        "o": [
+         "Het is valide maar niet betrouwbaar",
+         "Het onderzoek is op allebei de punten goed",
+         "Het is allebei fout",
+         "Het is betrouwbaar maar niet valide"
+        ],
+        "c": 3,
+        "d": 3,
+        "u": "Steeds hetzelfde resultaat betekent betrouwbaar; maar het verkeerde meten betekent niet valide.",
+        "uo": [
+         "Het meet juist het verkeerde, dus niet valide.",
+         "Het is niet valide.",
+         "Het is wel betrouwbaar.",
+         "Klopt: betrouwbaar (herhaalbaar) maar niet valide."
+        ],
+        "uh": "Betrouwbaar kan zonder valide te zijn."
+       },
+       {
+        "v": "Wat is een te kleine steekproef?",
+        "o": [
+         "Een beperking van het onderzoek",
+         "Een sterk punt van het onderzoek",
+         "Een bewijs dat het klopt",
+         "De hypothese van het onderzoek"
+        ],
+        "c": 0,
+        "d": 2,
+        "u": "Een te kleine steekproef maakt de uitkomst minder betrouwbaar en is dus een beperking die je moet noemen.",
+        "uo": [
+         "Klopt: het is een beperking.",
+         "Een te kleine steekproef is geen sterk punt.",
+         "Het is geen bewijs, juist een zwakte.",
+         "Het is geen hypothese."
+        ],
+        "uh": "Te kleine steekproef = een beperking om te noemen."
+       },
+       {
+        "v": "Wat betekent een representatieve steekproef?",
+        "o": [
+         "De steekproef is zo klein mogelijk",
+         "De steekproef lijkt op de hele groep",
+         "De steekproef is een nepbehandeling",
+         "De steekproef bevat uitsluitend zieke mensen"
+        ],
+        "c": 1,
+        "d": 2,
+        "u": "Een representatieve steekproef lijkt qua samenstelling op de hele groep, zodat de conclusie voor iedereen geldt.",
+        "uo": [
+         "Klein is niet hetzelfde als representatief.",
+         "Klopt: de steekproef lijkt op de hele groep.",
+         "Dat is een placebo.",
+         "Alleen zieken is juist niet representatief."
+        ],
+        "uh": "Representatief = de steekproef lijkt op de hele groep."
+       },
+       {
+        "v": "Hoe maak je een onderzoek betrouwbaarder?",
+        "o": [
+         "Door de steekproef veel kleiner te maken",
+         "Door maar één meting te doen",
+         "Door vaker te meten en herhalen",
+         "Door de hypothese te schrappen"
+        ],
+        "c": 2,
+        "d": 2,
+        "u": "Door vaker te meten en te herhalen zie je of het resultaat steeds terugkomt, wat de betrouwbaarheid verhoogt.",
+        "uo": [
+         "Kleiner maakt het juist minder betrouwbaar.",
+         "Eén meting is minder betrouwbaar.",
+         "Klopt: vaker meten en herhalen.",
+         "De hypothese blijft nodig."
+        ],
+        "uh": "Vaker meten en herhalen = betrouwbaarder."
+       },
+       {
+        "v": "Een onderzoeker meet lengte maar wil intelligentie onderzoeken. Wat mankeert er?",
+        "o": [
+         "De betrouwbaarheid ontbreekt",
+         "De steekproef is te groot",
+         "Er is niets mis",
+         "De validiteit ontbreekt"
+        ],
+        "c": 3,
+        "d": 3,
+        "u": "Lengte meten terwijl je intelligentie wilt weten betekent dat je het verkeerde meet: de validiteit ontbreekt.",
+        "uo": [
+         "Het kan best steeds hetzelfde meten, dus betrouwbaar.",
+         "De steekproefgrootte is niet het probleem.",
+         "Er is wel iets mis: het verkeerde wordt gemeten.",
+         "Klopt: hij meet het verkeerde, dus niet valide."
+        ],
+        "uh": "Het verkeerde meten = probleem met validiteit."
+       },
+       {
+        "v": "Wat is het placebo-effect?",
+        "o": [
+         "Verbetering doordat iemand denkt behandeld te zijn",
+         "Een meetfout in het instrument",
+         "De grootte van de steekproef",
+         "Een tweede controlegroep in het onderzoek"
+        ],
+        "c": 0,
+        "d": 2,
+        "u": "Het placebo-effect is de verbetering die optreedt doordat iemand gelooft dat hij behandeld wordt.",
+        "uo": [
+         "Klopt: verbetering door het geloof in de behandeling.",
+         "Dat is een meetfout, iets anders.",
+         "Dat is de steekproefgrootte.",
+         "Dat is geen tweede controlegroep."
+        ],
+        "uh": "Placebo-effect = beter voelen door het geloof erin."
+       },
+       {
+        "v": "Welke uitspraak over betrouwbaarheid en validiteit klopt?",
+        "o": [
+         "Betrouwbaar betekent automatisch valide",
+         "Een meting kan betrouwbaar zijn zonder valide",
+         "Valide betekent automatisch betrouwbaar",
+         "Ze hebben helemaal niets met onderzoek te maken"
+        ],
+        "c": 1,
+        "d": 3,
+        "u": "Een meting kan steeds hetzelfde geven (betrouwbaar) en toch het verkeerde meten (niet valide).",
+        "uo": [
+         "Betrouwbaar is niet automatisch valide.",
+         "Klopt: betrouwbaar kan zonder valide.",
+         "Valide is niet automatisch betrouwbaar.",
+         "Ze zijn juist kern van onderzoek beoordelen."
+        ],
+        "uh": "Betrouwbaar en valide zijn niet hetzelfde."
+       },
+       {
+        "v": "Waarom noem je een te kleine steekproef als beperking?",
+        "o": [
+         "Omdat de uitkomst dan zeker klopt",
+         "Omdat de validiteit van het onderzoek dan stijgt",
+         "Omdat de uitkomst dan minder betrouwbaar is",
+         "Omdat je dan sneller klaar bent"
+        ],
+        "c": 2,
+        "d": 3,
+        "u": "Bij een kleine steekproef telt toeval zwaar mee, dus is de uitkomst minder betrouwbaar; dat is een beperking.",
+        "uo": [
+         "Klein maakt het juist onzekerder.",
+         "De validiteit stijgt er niet door.",
+         "Klopt: kleine steekproef = minder betrouwbaar.",
+         "Snelheid is niet het punt."
+        ],
+        "uh": "Kleine steekproef is een beperking (minder betrouwbaar)."
+       },
+       {
+        "v": "Wat is nauwkeurigheid van een meting?",
+        "o": [
+         "Hoe groot de steekproef is",
+         "Of je het juiste onderwerp meet",
+         "De verwachting die je van tevoren hebt opgesteld",
+         "Hoe dicht de meting bij de echte waarde ligt"
+        ],
+        "c": 3,
+        "d": 1,
+        "u": "Nauwkeurigheid geeft aan hoe dicht een meting bij de werkelijke waarde ligt.",
+        "uo": [
+         "Dat is de steekproefgrootte.",
+         "Dat is validiteit.",
+         "Dat is de hypothese.",
+         "Klopt: dicht bij de echte waarde."
+        ],
+        "uh": "Nauwkeurig = dicht bij de echte waarde."
+       },
+       {
+        "v": "Waarom krijgt de controlegroep bij een medicijnproef vaak een placebo?",
+        "o": [
+         "Zodat het verschil met de echte pil zichtbaar wordt",
+         "Zodat de steekproef kleiner wordt",
+         "Zodat je geen metingen hoeft te doen",
+         "Zodat de opgestelde hypothese helemaal verdwijnt"
+        ],
+        "c": 0,
+        "d": 3,
+        "u": "Met een placebo lijkt de controlegroep op de behandelgroep, zodat alleen de werkzame stof het verschil maakt.",
+        "uo": [
+         "Klopt: zo zie je het effect van de werkzame stof.",
+         "De steekproef wordt niet kleiner.",
+         "Meten blijft nodig.",
+         "De hypothese blijft."
+        ],
+        "uh": "Placebo maakt het effect van de werkzame stof zichtbaar."
+       },
+       {
+        "v": "Een test geeft elke keer een ander resultaat bij dezelfde persoon. Wat mankeert er?",
+        "o": [
+         "De validiteit is juist perfect",
+         "De betrouwbaarheid ontbreekt",
+         "De steekproef is te groot",
+         "Er is niets mis"
+        ],
+        "c": 1,
+        "d": 3,
+        "u": "Steeds een ander resultaat bij hetzelfde geval betekent dat de test niet reproduceerbaar en dus niet betrouwbaar is.",
+        "uo": [
+         "Je kunt niets over validiteit zeggen als het onbetrouwbaar is.",
+         "Klopt: geen herhaalbaar resultaat, dus niet betrouwbaar.",
+         "De steekproefgrootte is niet het punt.",
+         "Er is wel iets mis."
+        ],
+        "uh": "Wisselende resultaten = niet betrouwbaar."
+       },
+       {
+        "v": "Wat is reproduceerbaar?",
+        "o": [
+         "Een resultaat dat je maar één keer krijgt",
+         "Een nepbehandeling zonder stof",
+         "Een resultaat dat bij herhaling terugkomt",
+         "De grootte van de onderzochte groep mensen"
+        ],
+        "c": 2,
+        "d": 1,
+        "u": "Reproduceerbaar betekent dat je hetzelfde resultaat krijgt als je het onderzoek herhaalt.",
+        "uo": [
+         "Eén keer is niet reproduceerbaar.",
+         "Dat is een placebo.",
+         "Klopt: terugkomend bij herhaling.",
+         "Dat is de steekproefgrootte."
+        ],
+        "uh": "Reproduceerbaar = komt bij herhaling terug."
+       },
+       {
+        "v": "Waarom moet een steekproef representatief zijn?",
+        "o": [
+         "Zodat de steekproef zo klein mogelijk is",
+         "Zodat je geen controlegroep nodig hebt",
+         "Zodat de validiteit van het onderzoek verdwijnt",
+         "Zodat de conclusie voor de hele groep geldt"
+        ],
+        "c": 3,
+        "d": 3,
+        "u": "Als de steekproef op de hele groep lijkt, geldt de conclusie ook voor die hele groep.",
+        "uo": [
+         "Klein is niet het doel.",
+         "Een controlegroep kan nog steeds nodig zijn.",
+         "De validiteit verdwijnt niet.",
+         "Klopt: dan geldt de conclusie breed."
+        ],
+        "uh": "Representatief = conclusie geldt voor de hele groep."
+       },
+       {
+        "v": "Wat is een meetfout?",
+        "o": [
+         "Een afwijking tussen meting en echte waarde",
+         "De grootte van de steekproef",
+         "Een nepbehandeling zonder werkzame stof erin",
+         "De hypothese van het onderzoek"
+        ],
+        "c": 0,
+        "d": 1,
+        "u": "Een meetfout is het verschil tussen wat je meet en de werkelijke waarde.",
+        "uo": [
+         "Klopt: het verschil met de echte waarde.",
+         "Dat is de steekproefgrootte.",
+         "Dat is een placebo.",
+         "Dat is de hypothese."
+        ],
+        "uh": "Meetfout = verschil tussen meting en echte waarde."
+       },
+       {
+        "v": "Een onderzoek is goed herhaalbaar en meet precies het juiste. Hoe noem je dat?",
+        "o": [
+         "Alleen betrouwbaar",
+         "Zowel betrouwbaar als valide",
+         "Het onderzoek is alleen valide en verder niks",
+         "Geen van beide"
+        ],
+        "c": 1,
+        "d": 3,
+        "u": "Herhaalbaar betekent betrouwbaar en het juiste meten betekent valide, dus het is allebei.",
+        "uo": [
+         "Het is meer dan alleen betrouwbaar.",
+         "Klopt: allebei goed.",
+         "Het is meer dan alleen valide.",
+         "Het voldoet juist aan beide."
+        ],
+        "uh": "Herhaalbaar en het juiste = betrouwbaar en valide."
+       },
+       {
+        "v": "Waarom is een enkele meting risicovol voor een conclusie?",
+        "o": [
+         "Omdat één enkele meting altijd meteen klopt",
+         "Omdat de validiteit dan stijgt",
+         "Omdat toeval de uitkomst kan vertekenen",
+         "Omdat de steekproef dan groot is"
+        ],
+        "c": 2,
+        "d": 2,
+        "u": "Een enkele meting kan toevallig afwijken, dus is een conclusie op één meting onbetrouwbaar.",
+        "uo": [
+         "Eén meting hoeft niet te kloppen.",
+         "De validiteit stijgt er niet door.",
+         "Klopt: toeval kan één meting vertekenen.",
+         "Eén meting maakt de steekproef juist klein."
+        ],
+        "uh": "Eén meting = te veel kans op toeval."
+       },
+       {
+        "v": "Wat is vertekening in een onderzoek?",
+        "o": [
+         "Een grote steekproef van veel deelnemers",
+         "Een nepbehandeling zonder stof",
+         "Een correcte meetwaarde",
+         "Een systematische scheefheid in de resultaten"
+        ],
+        "c": 3,
+        "d": 2,
+        "u": "Vertekening is een systematische fout die de resultaten steeds dezelfde kant op scheeftrekt.",
+        "uo": [
+         "Dat is de steekproefgrootte.",
+         "Dat is een placebo.",
+         "Vertekening is juist geen correcte waarde.",
+         "Klopt: een systematische scheefheid."
+        ],
+        "uh": "Vertekening = systematische scheefheid."
+       },
+       {
+        "v": "Welke maatregel verhoogt vooral de betrouwbaarheid?",
+        "o": [
+         "De meting vaak herhalen",
+         "Het verkeerde onderwerp meten",
+         "De steekproef verkleinen",
+         "De hypothese weglaten"
+        ],
+        "c": 0,
+        "d": 2,
+        "u": "Vaak herhalen laat zien of het resultaat stabiel is, wat de betrouwbaarheid verhoogt.",
+        "uo": [
+         "Klopt: herhalen verhoogt de betrouwbaarheid.",
+         "Het verkeerde meten raakt de validiteit, niet positief.",
+         "Verkleinen maakt het minder betrouwbaar.",
+         "De hypothese blijft nodig."
+        ],
+        "uh": "Herhalen verhoogt de betrouwbaarheid."
+       }
+      ],
+      "oe": [
+       {
+        "vraag": "Leg het verschil uit tussen betrouwbaarheid en validiteit van een onderzoek.",
+        "antwoord": "Betrouwbaarheid gaat over of je bij herhaling steeds hetzelfde resultaat krijgt: is de uitkomst reproduceerbaar? Validiteit gaat over of je meet wat je echt wilt meten: meet je het juiste? Een onderzoek kan betrouwbaar zijn (steeds hetzelfde) maar toch niet valide (het meet het verkeerde)."
+       },
+       {
+        "vraag": "Leg uit waarom een grotere en representatieve steekproef een onderzoek betrouwbaarder maakt.",
+        "antwoord": "In een grotere steekproef telt het toeval van losse gevallen minder zwaar mee, dus komt de gemiddelde uitkomst dichter bij de werkelijkheid. Als de steekproef bovendien representatief is, lijkt hij op de hele groep, zodat de conclusie ook voor die hele groep geldt."
+       },
+       {
+        "vraag": "Leg uit waarom je bij een medicijnonderzoek een placebo gebruikt.",
+        "antwoord": "De controlegroep krijgt een placebo: een nepbehandeling zonder werkzame stof die eruitziet als het echte medicijn. Zo kun je het echte effect van het medicijn scheiden van het placebo-effect, de verbetering die alleen ontstaat doordat mensen denken dat ze behandeld worden."
+       },
+       {
+        "vraag": "Een test geeft bij dezelfde persoon steeds een andere uitkomst. Leg uit wat er met de betrouwbaarheid aan de hand is.",
+        "antwoord": "Als een test bij hetzelfde geval steeds een andere uitkomst geeft, is het resultaat niet reproduceerbaar. Dat betekent dat de test niet betrouwbaar is. Je kunt dan niet op de uitkomst vertrouwen, want herhaling geeft geen stabiel resultaat."
+       },
+       {
+        "vraag": "Leg uit waarom een te kleine steekproef een beperking van een onderzoek is.",
+        "antwoord": "Bij een kleine steekproef telt het toeval van enkele individuen zwaar mee, waardoor de uitkomst sterk kan afwijken van de werkelijkheid. De conclusie is daardoor minder betrouwbaar en geldt mogelijk niet voor de hele groep. Daarom moet je een te kleine steekproef als beperking noemen."
+       }
+      ]
+     },
+     {
+      "id": "A3",
+      "naam": "Data verwerken en grafieken lezen",
+      "beschrijving": "Gouden-standaardmodule bi.A.3: gegevens uit tabellen en grafieken aflezen, as-eenheden juist lezen, spreiding (standaarddeviatie) interpreteren en niet concluderen buiten het meetbereik.",
+      "ceStatus": "CE",
+      "onderwerpen": [
+       "Grafiek lezen: assen en as-eenheden",
+       "Aflezen van een waarde",
+       "Tabellen aflezen",
+       "Gemiddelde en spreiding",
+       "Standaarddeviatie",
+       "Meetbereik: niet extrapoleren"
+      ],
+      "sam": "Bij het lezen van een grafiek kijk je eerst naar de assen: wat staat er op de x-as en de y-as, en in welke eenheid? Verkeerd lezen van de as-eenheden is een veelgemaakte fout. Om een waarde af te lezen ga je vanaf een x-waarde omhoog tot de lijn en dan naar de y-as. Uit meerdere metingen bereken je het gemiddelde. De spreiding laat zien hoe ver de metingen uit elkaar liggen; de standaarddeviatie is daar een maat voor. Een kleine standaarddeviatie betekent dat de metingen dicht bij elkaar liggen. Let op het meetbereik: conclusies trekken buiten de gemeten waarden (extrapoleren) is onzeker, want daar heb je geen metingen.",
+      "begrippen": [
+       {
+        "t": "Grafiek",
+        "d": "een figuur die het verband tussen twee grootheden toont"
+       },
+       {
+        "t": "X-as",
+        "d": "de horizontale as, vaak de onafhankelijke variabele"
+       },
+       {
+        "t": "Y-as",
+        "d": "de verticale as, vaak de afhankelijke variabele"
+       },
+       {
+        "t": "As-eenheid",
+        "d": "de grootheid en eenheid die op een as staan"
+       },
+       {
+        "t": "Meetpunt",
+        "d": "een gemeten waarde in een grafiek of tabel"
+       },
+       {
+        "t": "Tabel",
+        "d": "een geordend overzicht van meetwaarden in rijen en kolommen"
+       },
+       {
+        "t": "Gemiddelde",
+        "d": "de som van de waarden gedeeld door het aantal"
+       },
+       {
+        "t": "Spreiding",
+        "d": "hoe ver de metingen uit elkaar liggen"
+       },
+       {
+        "t": "Standaarddeviatie",
+        "d": "een maat voor de spreiding rond het gemiddelde"
+       },
+       {
+        "t": "Meetbereik",
+        "d": "het gebied van waarden waarin je hebt gemeten"
+       },
+       {
+        "t": "Extrapoleren",
+        "d": "een uitspraak doen buiten het meetbereik"
+       },
+       {
+        "t": "Trend",
+        "d": "de algemene richting van een verband in een grafiek"
+       }
+      ],
+      "sv": [
+       {
+        "v": "Waar kijk je als eerste naar bij een grafiek?",
+        "o": [
+         "Naar de assen en hun eenheden",
+         "Naar de kleur van de lijn",
+         "Naar de titel van het boek",
+         "Naar de naam van de onderzoeker"
+        ],
+        "c": 0,
+        "d": 2,
+        "u": "Kijk eerst wat er op de x-as en y-as staat en in welke eenheid, anders lees je verkeerd af.",
+        "uo": [
+         "Klopt: eerst de assen en hun eenheden.",
+         "De kleur is niet het belangrijkste.",
+         "De boektitel is niet relevant.",
+         "De naam is niet relevant."
+        ],
+        "uh": "Lees eerst de assen en de eenheden."
+       },
+       {
+        "v": "Wat staat meestal op de x-as?",
+        "o": [
+         "De afhankelijke variabele",
+         "De onafhankelijke variabele",
+         "De standaarddeviatie van de metingen",
+         "De titel van de grafiek"
+        ],
+        "c": 1,
+        "d": 2,
+        "u": "Op de x-as staat meestal de onafhankelijke variabele, wat je zelf varieert.",
+        "uo": [
+         "De afhankelijke variabele staat meestal op de y-as.",
+         "Klopt: de onafhankelijke variabele.",
+         "De standaarddeviatie is geen as.",
+         "De titel is geen as-inhoud."
+        ],
+        "uh": "X-as = meestal de onafhankelijke variabele."
+       },
+       {
+        "v": "Wat staat meestal op de y-as?",
+        "o": [
+         "De onafhankelijke variabele",
+         "De naam van de onderzoeker",
+         "De afhankelijke variabele",
+         "De datum van de meting"
+        ],
+        "c": 2,
+        "d": 2,
+        "u": "Op de y-as staat meestal de afhankelijke variabele, wat je meet.",
+        "uo": [
+         "Die staat meestal op de x-as.",
+         "De naam is geen as-inhoud.",
+         "Klopt: de afhankelijke variabele.",
+         "De datum is geen as-inhoud."
+        ],
+        "uh": "Y-as = meestal de afhankelijke variabele."
+       },
+       {
+        "v": "Hoe lees je bij een x-waarde de bijbehorende y-waarde af?",
+        "o": [
+         "Je raadt de waarde zonder te kijken",
+         "Je leest alleen de titel boven de grafiek",
+         "Je pakt een willekeurig getal",
+         "Je gaat omhoog naar de lijn en dan naar de y-as"
+        ],
+        "c": 3,
+        "d": 2,
+        "u": "Vanaf de x-waarde ga je verticaal omhoog tot de lijn en dan horizontaal naar de y-as.",
+        "uo": [
+         "Raden is geen aflezen.",
+         "De titel geeft geen waarde.",
+         "Een willekeurig getal is fout.",
+         "Klopt: omhoog naar de lijn, dan naar de y-as."
+        ],
+        "uh": "Aflezen: omhoog naar de lijn, dan naar de y-as."
+       },
+       {
+        "v": "Wat is een veelgemaakte fout bij grafieken lezen?",
+        "o": [
+         "De as-eenheden verkeerd lezen",
+         "Eerst naar de assen kijken",
+         "Het gemiddelde berekenen",
+         "De meetlijn in de grafiek netjes volgen"
+        ],
+        "c": 0,
+        "d": 2,
+        "u": "Een veelgemaakte fout is de eenheid op een as over het hoofd zien, waardoor je de waarde verkeerd afleest.",
+        "uo": [
+         "Klopt: as-eenheden verkeerd lezen is een klassieke fout.",
+         "Eerst naar de assen kijken is juist goed.",
+         "Het gemiddelde berekenen is geen fout.",
+         "De lijn volgen is juist goed."
+        ],
+        "uh": "Let op de as-eenheden om fouten te voorkomen."
+       },
+       {
+        "v": "Wat is het gemiddelde van een reeks metingen?",
+        "o": [
+         "Het grootste getal",
+         "De som gedeeld door het aantal",
+         "Het kleinste getal",
+         "Het middelste meetpunt op de x-as"
+        ],
+        "c": 1,
+        "d": 1,
+        "u": "Het gemiddelde is de som van alle waarden gedeeld door het aantal metingen.",
+        "uo": [
+         "Dat is het maximum, niet het gemiddelde.",
+         "Klopt: som gedeeld door het aantal.",
+         "Dat is het minimum.",
+         "Dat is niet hoe je een gemiddelde berekent."
+        ],
+        "uh": "Gemiddelde = som / aantal."
+       },
+       {
+        "v": "Wat is de standaarddeviatie een maat voor?",
+        "o": [
+         "De titel die boven de grafiek staat",
+         "De onafhankelijke variabele",
+         "De spreiding rond het gemiddelde",
+         "Het aantal assen in de grafiek"
+        ],
+        "c": 2,
+        "d": 2,
+        "u": "De standaarddeviatie geeft aan hoe ver de metingen gemiddeld van het gemiddelde af liggen: de spreiding.",
+        "uo": [
+         "Dat is geen standaarddeviatie.",
+         "Dat is een variabele, geen spreidingsmaat.",
+         "Klopt: de spreiding rond het gemiddelde.",
+         "Het gaat niet over het aantal assen."
+        ],
+        "uh": "Standaarddeviatie = maat voor de spreiding."
+       },
+       {
+        "v": "Wat betekent een kleine standaarddeviatie?",
+        "o": [
+         "De metingen liggen ver uit elkaar",
+         "De grafiek heeft helemaal geen assen",
+         "Er is maar één meting gedaan",
+         "De metingen liggen dicht bij elkaar"
+        ],
+        "c": 3,
+        "d": 3,
+        "u": "Een kleine standaarddeviatie betekent dat de metingen dicht bij het gemiddelde liggen, dus weinig spreiding.",
+        "uo": [
+         "Ver uit elkaar hoort bij een grote standaarddeviatie.",
+         "Assen hebben er niets mee te maken.",
+         "Je hebt meerdere metingen nodig voor spreiding.",
+         "Klopt: dicht bij elkaar, weinig spreiding."
+        ],
+        "uh": "Kleine standaarddeviatie = metingen dicht bij elkaar."
+       },
+       {
+        "v": "Wat betekent een grote standaarddeviatie?",
+        "o": [
+         "De metingen liggen ver uit elkaar",
+         "De metingen liggen dicht bij elkaar",
+         "Er is geen gemiddelde te berekenen",
+         "De grafiek is fout getekend"
+        ],
+        "c": 0,
+        "d": 3,
+        "u": "Een grote standaarddeviatie betekent dat de metingen ver van het gemiddelde liggen: veel spreiding.",
+        "uo": [
+         "Klopt: ver uit elkaar, veel spreiding.",
+         "Dicht bij elkaar hoort bij een kleine standaarddeviatie.",
+         "Een gemiddelde is er nog steeds.",
+         "De grafiek hoeft niet fout te zijn."
+        ],
+        "uh": "Grote standaarddeviatie = veel spreiding."
+       },
+       {
+        "v": "Wat is het meetbereik?",
+        "o": [
+         "De kleur van de meetlijn",
+         "Het gebied van waarden waarin je hebt gemeten",
+         "De naam die bij de x-as hoort",
+         "Het aantal onderzoekers"
+        ],
+        "c": 1,
+        "d": 2,
+        "u": "Het meetbereik is het gebied van waarden waarbinnen je metingen hebt gedaan.",
+        "uo": [
+         "De kleur is niet het meetbereik.",
+         "Klopt: het gebied waarin je hebt gemeten.",
+         "Dat is een as-naam.",
+         "Dat is niet het meetbereik."
+        ],
+        "uh": "Meetbereik = het gebied waarin je hebt gemeten."
+       },
+       {
+        "v": "Waarom is een conclusie buiten het meetbereik onzeker?",
+        "o": [
+         "Omdat de grafiek daar mooier is",
+         "Omdat het gemiddelde daar stijgt",
+         "Omdat je daar geen metingen hebt",
+         "Omdat de assen daar helemaal verdwijnen"
+        ],
+        "c": 2,
+        "d": 3,
+        "u": "Buiten het gemeten gebied heb je geen data, dus je weet niet of het verband daar nog geldt.",
+        "uo": [
+         "Uiterlijk zegt niets over zekerheid.",
+         "Het gemiddelde is niet de reden.",
+         "Klopt: buiten het bereik zijn er geen metingen.",
+         "De assen verdwijnen niet."
+        ],
+        "uh": "Buiten het meetbereik: geen data, dus onzeker."
+       },
+       {
+        "v": "Wat is extrapoleren?",
+        "o": [
+         "Een waarde aflezen binnen het bereik",
+         "Het gemiddelde berekenen",
+         "De assen van de grafiek benoemen",
+         "Een uitspraak doen buiten het meetbereik"
+        ],
+        "c": 3,
+        "d": 2,
+        "u": "Extrapoleren is het doortrekken van een verband buiten het gebied waar je hebt gemeten.",
+        "uo": [
+         "Dat is aflezen binnen het bereik.",
+         "Dat is een berekening, geen extrapolatie.",
+         "Dat is de assen benoemen.",
+         "Klopt: buiten het meetbereik uitspraken doen."
+        ],
+        "uh": "Extrapoleren = buiten het meetbereik doortrekken."
+       },
+       {
+        "v": "Wat is een trend in een grafiek?",
+        "o": [
+         "De algemene richting van het verband",
+         "De exacte waarde van één punt",
+         "De titel die boven de grafiek staat",
+         "De naam van de onderzoeker"
+        ],
+        "c": 0,
+        "d": 1,
+        "u": "Een trend is de algemene richting: stijgend, dalend of vlak.",
+        "uo": [
+         "Klopt: de algemene richting.",
+         "Dat is één los punt, geen trend.",
+         "Dat is de titel.",
+         "Dat is de naam."
+        ],
+        "uh": "Trend = de algemene richting (stijgen/dalen/vlak)."
+       },
+       {
+        "v": "In een grafiek stijgt de lijn steeds. Wat is de trend?",
+        "o": [
+         "Dalend",
+         "Stijgend",
+         "Vlak",
+         "Er is geen trend"
+        ],
+        "c": 1,
+        "d": 1,
+        "u": "Een lijn die blijft omhooggaan, laat een stijgende trend zien.",
+        "uo": [
+         "Dalend zou omlaag gaan.",
+         "Klopt: de lijn stijgt.",
+         "Vlak zou horizontaal zijn.",
+         "Er is wel degelijk een trend."
+        ],
+        "uh": "Omhoog = stijgende trend."
+       },
+       {
+        "v": "Hoe lees je de fotosynthesesnelheid uit een grafiek af?",
+        "o": [
+         "Je raadt zomaar een willekeurig getal",
+         "Je kijkt naar de kleur",
+         "Je leest de gemeten waarde op de y-as af",
+         "Je gebruikt de titel als getal"
+        ],
+        "c": 2,
+        "d": 3,
+        "u": "De fotosynthesesnelheid staat als afhankelijke variabele op de y-as; die lees je bij de juiste x-waarde af.",
+        "uo": [
+         "Raden is geen aflezen.",
+         "De kleur geeft geen waarde.",
+         "Klopt: aflezen op de y-as bij de x-waarde.",
+         "De titel is geen getal."
+        ],
+        "uh": "Fotosynthesesnelheid = van de y-as aflezen."
+       },
+       {
+        "v": "Waarom bereken je een gemiddelde uit meerdere metingen?",
+        "o": [
+         "Om de grafiek kleiner te maken",
+         "Om de assen uit de grafiek te verwijderen",
+         "Om maar één meting te hoeven doen",
+         "Om toeval van losse metingen te verminderen"
+        ],
+        "c": 3,
+        "d": 2,
+        "u": "Een gemiddelde van meerdere metingen ligt dichter bij de werkelijkheid dan een enkele meting.",
+        "uo": [
+         "Het gaat niet om de grootte van de grafiek.",
+         "De assen blijven.",
+         "Je doet juist meerdere metingen.",
+         "Klopt: het gemiddelde vermindert de invloed van toeval."
+        ],
+        "uh": "Gemiddelde vermindert de invloed van toeval."
+       },
+       {
+        "v": "Een tabel toont per temperatuur een meetwaarde. Wat is een tabel?",
+        "o": [
+         "Een geordend overzicht van meetwaarden",
+         "Een nepbehandeling zonder stof",
+         "De verwachting die je van tevoren opstelt",
+         "De titel van de grafiek"
+        ],
+        "c": 0,
+        "d": 1,
+        "u": "Een tabel is een geordend overzicht van meetwaarden in rijen en kolommen.",
+        "uo": [
+         "Klopt: een geordend overzicht van meetwaarden.",
+         "Dat is een placebo.",
+         "Dat is de hypothese.",
+         "Dat is de grafiektitel."
+        ],
+        "uh": "Tabel = geordend overzicht van meetwaarden."
+       },
+       {
+        "v": "Waarom moet je de eenheid op een as controleren?",
+        "o": [
+         "Anders wordt de hele grafiek een stuk kleiner",
+         "Anders lees je de waarde verkeerd af",
+         "Anders verdwijnt het gemiddelde",
+         "Anders krijg je een controlegroep"
+        ],
+        "c": 1,
+        "d": 3,
+        "u": "Zonder de eenheid weet je niet wat een getal betekent, dus kun je de waarde verkeerd aflezen.",
+        "uo": [
+         "De grootte verandert niet.",
+         "Klopt: zonder de eenheid lees je verkeerd af.",
+         "Het gemiddelde blijft.",
+         "Er ontstaat geen controlegroep."
+        ],
+        "uh": "Controleer de eenheid, anders lees je fout af."
+       },
+       {
+        "v": "Twee metingen: 20 en 22 graden. Wat is het gemiddelde?",
+        "o": [
+         "42 graden",
+         "Het verschil van 2 graden tussen de metingen",
+         "21 graden",
+         "20 graden"
+        ],
+        "c": 2,
+        "d": 2,
+        "u": "Het gemiddelde is (20 + 22) gedeeld door 2, dus 21 graden.",
+        "uo": [
+         "42 is de som, niet het gemiddelde.",
+         "2 is het verschil, niet het gemiddelde.",
+         "Klopt: (20 + 22) / 2 = 21.",
+         "20 is het laagste getal, niet het gemiddelde."
+        ],
+        "uh": "Gemiddelde = som / aantal, hier 21."
+       },
+       {
+        "v": "Wat kun je NIET zeker zeggen op basis van een grafiek?",
+        "o": [
+         "Een afgelezen waarde binnen het bereik",
+         "De trend van de meetlijn",
+         "Het gemiddelde van de meetpunten",
+         "Wat er gebeurt buiten het meetbereik"
+        ],
+        "c": 3,
+        "d": 3,
+        "u": "Buiten het gemeten gebied heb je geen data, dus daar kun je geen zekere uitspraak over doen.",
+        "uo": [
+         "Binnen het bereik kun je aflezen.",
+         "De trend kun je binnen het bereik zien.",
+         "Het gemiddelde kun je berekenen.",
+         "Klopt: buiten het meetbereik weet je het niet zeker."
+        ],
+        "uh": "Buiten het meetbereik: geen zekere uitspraak."
+       },
+       {
+        "v": "Wat betekent een vlakke lijn in een grafiek?",
+        "o": [
+         "De waarde verandert niet",
+         "De waarde stijgt snel",
+         "De waarde daalt snel",
+         "De grafiek is helemaal fout getekend"
+        ],
+        "c": 0,
+        "d": 1,
+        "u": "Een horizontale (vlakke) lijn betekent dat de gemeten waarde gelijk blijft.",
+        "uo": [
+         "Klopt: de waarde blijft gelijk.",
+         "Bij stijgen gaat de lijn omhoog.",
+         "Bij dalen gaat de lijn omlaag.",
+         "De grafiek hoeft niet fout te zijn."
+        ],
+        "uh": "Vlakke lijn = de waarde verandert niet."
+       },
+       {
+        "v": "Waarom teken je meetpunten met foutbalken (spreiding)?",
+        "o": [
+         "Om de grafiek te versieren",
+         "Om te tonen hoe zeker de metingen zijn",
+         "Om de x-as van de grafiek te verlengen",
+         "Om de titel groter te maken"
+        ],
+        "c": 1,
+        "d": 3,
+        "u": "Foutbalken tonen de spreiding, zodat je ziet hoe betrouwbaar elk meetpunt is.",
+        "uo": [
+         "Ze zijn geen versiering.",
+         "Klopt: ze tonen de spreiding en zekerheid.",
+         "Ze verlengen de as niet.",
+         "Ze veranderen de titel niet."
+        ],
+        "uh": "Foutbalken tonen de spreiding van de metingen."
+       },
+       {
+        "v": "Wat doe je bij het aflezen van een tabel?",
+        "o": [
+         "De kleur van de tabel meten",
+         "De grafiek negeren en gokken",
+         "De juiste rij en kolom opzoeken",
+         "De titel van de tabel als waarde nemen"
+        ],
+        "c": 2,
+        "d": 2,
+        "u": "In een tabel zoek je de juiste rij en kolom om de bijbehorende meetwaarde te vinden.",
+        "uo": [
+         "De kleur meet je niet.",
+         "Gokken is geen aflezen.",
+         "Klopt: de juiste rij en kolom opzoeken.",
+         "De titel is geen meetwaarde."
+        ],
+        "uh": "Tabel aflezen = juiste rij en kolom."
+       },
+       {
+        "v": "Welke uitspraak over grafieken lezen klopt?",
+        "o": [
+         "Concludeer altijd buiten het meetbereik",
+         "Een enkele meting is altijd genoeg",
+         "De kleur bepaalt de waarde",
+         "Lees eerst de assen en hun eenheden"
+        ],
+        "c": 3,
+        "d": 2,
+        "u": "Begin met de assen en eenheden lezen; concludeer niet buiten het meetbereik en steun niet op één meting.",
+        "uo": [
+         "Buiten het meetbereik concluderen is juist onzeker.",
+         "Eén meting is meestal niet genoeg.",
+         "De kleur bepaalt de waarde niet.",
+         "Klopt: begin bij de assen en eenheden."
+        ],
+        "uh": "Eerst assen en eenheden, blijf binnen het meetbereik."
+       },
+       {
+        "v": "Twee onderzoekers meten dezelfde plant. De spreiding is klein. Wat betekent dat?",
+        "o": [
+         "De metingen liggen dicht bij elkaar",
+         "De metingen liggen ver uit elkaar",
+         "Er is helemaal niet gemeten",
+         "De grafiek heeft helemaal geen y-as"
+        ],
+        "c": 0,
+        "d": 3,
+        "u": "Een kleine spreiding betekent dat de metingen dicht bij elkaar liggen, dus goed reproduceerbaar.",
+        "uo": [
+         "Klopt: kleine spreiding = dicht bij elkaar.",
+         "Ver uit elkaar hoort bij grote spreiding.",
+         "Er is wel gemeten.",
+         "De y-as is er wel."
+        ],
+        "uh": "Kleine spreiding = metingen dicht bij elkaar."
+       }
+      ],
+      "oe": [
+       {
+        "vraag": "Leg uit waarom je bij een grafiek eerst naar de assen en hun eenheden kijkt.",
+        "antwoord": "De assen vertellen welke grootheid je afleest en in welke eenheid. Als je de eenheid over het hoofd ziet, lees je de waarde verkeerd af. Daarom kijk je eerst wat er op de x-as en de y-as staat en in welke eenheid, voordat je een waarde afleest."
+       },
+       {
+        "vraag": "Leg uit hoe je bij een gegeven x-waarde de bijbehorende y-waarde uit een grafiek afleest.",
+        "antwoord": "Je zoekt de x-waarde op de horizontale as. Vanaf dat punt ga je verticaal omhoog tot je de lijn of het meetpunt raakt. Vanaf daar ga je horizontaal naar de y-as en leest daar de bijbehorende waarde af, in de eenheid van de y-as."
+       },
+       {
+        "vraag": "Leg uit wat een grote en een kleine standaarddeviatie zeggen over de metingen.",
+        "antwoord": "De standaarddeviatie is een maat voor de spreiding rond het gemiddelde. Een kleine standaarddeviatie betekent dat de metingen dicht bij het gemiddelde liggen en dus dicht bij elkaar. Een grote standaarddeviatie betekent dat de metingen ver van het gemiddelde en dus ver uit elkaar liggen."
+       },
+       {
+        "vraag": "Leg uit waarom je geen conclusie mag trekken buiten het meetbereik van een grafiek.",
+        "antwoord": "Buiten het meetbereik heb je geen metingen gedaan. Je weet dus niet of het verband dat je binnen het bereik ziet, daar ook nog geldt. Een uitspraak doen buiten het gemeten gebied heet extrapoleren en is onzeker, omdat er geen gegevens zijn die de conclusie ondersteunen."
+       },
+       {
+        "vraag": "Leg uit waarom je uit meerdere metingen een gemiddelde berekent in plaats van één meting te gebruiken.",
+        "antwoord": "Een enkele meting kan toevallig afwijken van de werkelijke waarde. Door meerdere metingen te doen en het gemiddelde te berekenen, verminder je de invloed van dat toeval. Het gemiddelde ligt dan dichter bij de werkelijke waarde en de conclusie is betrouwbaarder."
+       }
+      ]
+     },
+     {
+      "id": "A4",
+      "naam": "Correlatie versus causaliteit",
+      "beschrijving": "Gouden-standaardmodule bi.A.4: het verschil tussen een verband (correlatie) en een oorzaak-gevolgrelatie (causaliteit), en waarom een correlatie geen oorzaak bewijst.",
+      "ceStatus": "CE",
+      "onderwerpen": [
+       "Correlatie: twee dingen veranderen samen",
+       "Causaliteit: oorzaak en gevolg",
+       "Correlatie bewijst geen causaliteit",
+       "Derde factor en schijnverband",
+       "Experiment om oorzaak aan te tonen",
+       "Valkuil: oorzaak uit één correlatie"
+      ],
+      "sam": "Een correlatie is een verband: twee dingen veranderen samen. Causaliteit is een oorzaak-gevolgrelatie: het ene ding veroorzaakt het andere. Het is een veelgemaakte fout om uit een correlatie meteen een oorzaak te concluderen. Twee dingen kunnen namelijk samen veranderen zonder dat het ene het andere veroorzaakt. Vaak is er een derde factor die beide beïnvloedt; dan is er een schijnverband. Een bekend voorbeeld: de verkoop van ijs en het aantal verdrinkingen stijgen samen, maar de een veroorzaakt de ander niet. De derde factor is warm weer. Om echt aan te tonen dat het ene het andere veroorzaakt, heb je een experiment nodig met een controlegroep, waarin je maar één variabele verandert.",
+      "begrippen": [
+       {
+        "t": "Correlatie",
+        "d": "een verband waarbij twee dingen samen veranderen"
+       },
+       {
+        "t": "Causaliteit",
+        "d": "een oorzaak-gevolgrelatie tussen twee dingen"
+       },
+       {
+        "t": "Oorzaak",
+        "d": "datgene wat een gevolg teweegbrengt"
+       },
+       {
+        "t": "Gevolg",
+        "d": "datgene wat door een oorzaak wordt veroorzaakt"
+       },
+       {
+        "t": "Verband",
+        "d": "een samenhang tussen twee grootheden"
+       },
+       {
+        "t": "Derde factor",
+        "d": "een verborgen factor die twee dingen samen beïnvloedt"
+       },
+       {
+        "t": "Schijnverband",
+        "d": "een verband dat geen oorzaak-gevolg is"
+       },
+       {
+        "t": "Toeval",
+        "d": "een samenhang die door kans ontstaat, zonder oorzaak"
+       },
+       {
+        "t": "Experiment",
+        "d": "een proef waarmee je een oorzaak kunt aantonen"
+       },
+       {
+        "t": "Controlegroep",
+        "d": "de vergelijkingsgroep zonder de behandeling"
+       },
+       {
+        "t": "Aanwijzing",
+        "d": "een gegeven dat een verband suggereert maar niet bewijst"
+       },
+       {
+        "t": "Voorspelling",
+        "d": "een verwachting over wat er zal gebeuren"
+       }
+      ],
+      "sv": [
+       {
+        "v": "Wat is een correlatie?",
+        "o": [
+         "Een verband waarbij twee dingen samen veranderen",
+         "Een bewijs dat het ene het andere veroorzaakt",
+         "Een proef met een controlegroep erbij",
+         "De verwachting die je van tevoren opstelt in het onderzoek"
+        ],
+        "c": 0,
+        "d": 2,
+        "u": "Een correlatie is een verband: twee dingen veranderen samen, zonder dat dit een oorzaak bewijst.",
+        "uo": [
+         "Klopt: twee dingen veranderen samen.",
+         "Een correlatie bewijst juist geen oorzaak.",
+         "Dat is een experiment.",
+         "Dat is de hypothese."
+        ],
+        "uh": "Correlatie = samen veranderen (nog geen oorzaak)."
+       },
+       {
+        "v": "Wat is causaliteit?",
+        "o": [
+         "Twee dingen die toevallig samen veranderen",
+         "Een oorzaak-gevolgrelatie",
+         "De grootte van de steekproef",
+         "Een verband zonder betekenis"
+        ],
+        "c": 1,
+        "d": 2,
+        "u": "Causaliteit betekent dat het ene ding het andere echt veroorzaakt: oorzaak en gevolg.",
+        "uo": [
+         "Samen veranderen is correlatie, niet per se oorzaak.",
+         "Klopt: een oorzaak-gevolgrelatie.",
+         "Dat is de steekproefgrootte.",
+         "Causaliteit is juist een betekenisvol verband."
+        ],
+        "uh": "Causaliteit = oorzaak en gevolg."
+       },
+       {
+        "v": "Bewijst een correlatie een oorzaak?",
+        "o": [
+         "Ja, een correlatie bewijst altijd meteen de oorzaak",
+         "Ja, als de steekproef klein is",
+         "Nee, een correlatie bewijst geen oorzaak",
+         "Ja, want alles hangt samen"
+        ],
+        "c": 2,
+        "d": 3,
+        "u": "Twee dingen kunnen samen veranderen zonder dat het ene het andere veroorzaakt, dus een correlatie bewijst geen oorzaak.",
+        "uo": [
+         "Een correlatie bewijst juist niet meteen een oorzaak.",
+         "Een kleine steekproef bewijst al helemaal niets.",
+         "Klopt: correlatie is geen bewijs van oorzaak.",
+         "Samenhang is nog geen oorzaak."
+        ],
+        "uh": "Correlatie bewijst geen causaliteit."
+       },
+       {
+        "v": "Wat is een derde factor?",
+        "o": [
+         "Het gemeten getal aan het eind",
+         "De titel van het onderzoek in dit onderzoek",
+         "De verwachting die je van tevoren opstelt",
+         "Een verborgen factor die beide beïnvloedt"
+        ],
+        "c": 3,
+        "d": 2,
+        "u": "Een derde factor is een verborgen oorzaak die twee dingen tegelijk beïnvloedt, waardoor ze samen lijken te veranderen.",
+        "uo": [
+         "Dat is een meetwaarde.",
+         "Dat is de titel.",
+         "Dat is de hypothese.",
+         "Klopt: een verborgen factor die beide beïnvloedt."
+        ],
+        "uh": "Derde factor = verborgen oorzaak achter een schijnverband."
+       },
+       {
+        "v": "Ijsverkoop en verdrinkingen stijgen samen. Wat is de beste verklaring?",
+        "o": [
+         "Warm weer beïnvloedt allebei",
+         "IJs eten laat mensen verdrinken",
+         "Verdrinken zorgt voor meer ijsverkoop",
+         "Er is geen enkel verband"
+        ],
+        "c": 0,
+        "d": 3,
+        "u": "Warm weer is de derde factor: het verhoogt zowel de ijsverkoop als het zwemmen (en dus verdrinkingen).",
+        "uo": [
+         "Klopt: warm weer beïnvloedt beide (derde factor).",
+         "IJs eten veroorzaakt geen verdrinking.",
+         "Verdrinken verkoopt geen ijs.",
+         "Er is wel een verband, maar via een derde factor."
+        ],
+        "uh": "Zoek de derde factor bij een schijnverband."
+       },
+       {
+        "v": "Wat is een schijnverband?",
+        "o": [
+         "Een bewezen oorzaak-gevolgrelatie",
+         "Een verband dat geen oorzaak-gevolg is",
+         "Een grote steekproef van veel mensen",
+         "Een nepbehandeling zonder stof in dit onderzoek"
+        ],
+        "c": 1,
+        "d": 2,
+        "u": "Bij een schijnverband lijken twee dingen samen te hangen, maar veroorzaakt het ene het andere niet.",
+        "uo": [
+         "Dat is juist causaliteit.",
+         "Klopt: een verband zonder oorzaak-gevolg.",
+         "Dat is de steekproefgrootte.",
+         "Dat is een placebo."
+        ],
+        "uh": "Schijnverband = samen veranderen, geen oorzaak."
+       },
+       {
+        "v": "Hoe kun je wel een oorzaak-gevolgrelatie aantonen?",
+        "o": [
+         "Door alleen een correlatie te meten",
+         "Door de steekproef te verkleinen",
+         "Door een experiment met een controlegroep",
+         "Door de opgestelde hypothese helemaal weg te laten"
+        ],
+        "c": 2,
+        "d": 3,
+        "u": "In een experiment verander je één variabele en vergelijk je met een controlegroep, zodat je oorzaak en gevolg kunt vaststellen.",
+        "uo": [
+         "Een correlatie alleen bewijst geen oorzaak.",
+         "Verkleinen helpt niet.",
+         "Klopt: een experiment met controlegroep toont oorzaak.",
+         "De hypothese blijft nodig."
+        ],
+        "uh": "Oorzaak aantonen = experiment met controlegroep."
+       },
+       {
+        "v": "Wat is de valkuil bij correlatie?",
+        "o": [
+         "Eerst de assen van de grafiek lezen",
+         "Een controlegroep gebruiken",
+         "Meerdere keren meten",
+         "Meteen een oorzaak concluderen"
+        ],
+        "c": 3,
+        "d": 2,
+        "u": "De valkuil is uit een correlatie meteen concluderen dat het ene het andere veroorzaakt.",
+        "uo": [
+         "Assen lezen is juist goed.",
+         "Een controlegroep is juist goed.",
+         "Herhalen is juist goed.",
+         "Klopt: meteen een oorzaak concluderen is de valkuil."
+        ],
+        "uh": "Valkuil: van correlatie meteen naar oorzaak springen."
+       },
+       {
+        "v": "Wat is een oorzaak?",
+        "o": [
+         "Datgene wat een gevolg teweegbrengt",
+         "Het getal dat je aan het eind meet",
+         "De verwachting vooraf in dit onderzoek",
+         "De grootte van de groep"
+        ],
+        "c": 0,
+        "d": 1,
+        "u": "Een oorzaak is datgene wat een gevolg teweegbrengt.",
+        "uo": [
+         "Klopt: brengt het gevolg teweeg.",
+         "Dat is een meetwaarde.",
+         "Dat is de hypothese.",
+         "Dat is de steekproefgrootte."
+        ],
+        "uh": "Oorzaak = brengt het gevolg teweeg."
+       },
+       {
+        "v": "Wat is een gevolg?",
+        "o": [
+         "De onafhankelijke variabele",
+         "Datgene wat door een oorzaak ontstaat",
+         "De titel die boven de grafiek staat",
+         "De naam van de onderzoeker in dit onderzoek"
+        ],
+        "c": 1,
+        "d": 1,
+        "u": "Een gevolg is datgene wat door een oorzaak wordt veroorzaakt.",
+        "uo": [
+         "De onafhankelijke variabele is eerder de oorzaak.",
+         "Klopt: ontstaat door de oorzaak.",
+         "Dat is de titel.",
+         "Dat is de naam."
+        ],
+        "uh": "Gevolg = ontstaat door de oorzaak."
+       },
+       {
+        "v": "Twee grootheden hangen samen door puur toeval. Wat is dat?",
+        "o": [
+         "Een bewezen oorzaak",
+         "Een controlegroep in het onderzoek",
+         "Een schijnverband door toeval",
+         "Een nauwkeurige meting"
+        ],
+        "c": 2,
+        "d": 3,
+        "u": "Soms hangen twee dingen door louter kans samen; dat is een schijnverband dat door toeval ontstaat.",
+        "uo": [
+         "Toeval bewijst geen oorzaak.",
+         "Dat is geen controlegroep.",
+         "Klopt: een toevallig schijnverband.",
+         "Toeval zegt niets over nauwkeurigheid."
+        ],
+        "uh": "Toeval kan een schijnverband geven."
+       },
+       {
+        "v": "Waarom heb je een controlegroep nodig om een oorzaak aan te tonen?",
+        "o": [
+         "Om de steekproef kleiner te maken",
+         "Om de hypothese te vervangen",
+         "Om zo snel mogelijk klaar te zijn met de proef",
+         "Om te vergelijken met en zonder de behandeling"
+        ],
+        "c": 3,
+        "d": 3,
+        "u": "Alleen door te vergelijken met een groep zonder behandeling weet je of het effect echt door de behandeling komt.",
+        "uo": [
+         "De steekproef wordt niet kleiner.",
+         "De hypothese blijft.",
+         "Snelheid is niet de reden.",
+         "Klopt: vergelijken met en zonder behandeling."
+        ],
+        "uh": "Controlegroep = vergelijken om oorzaak vast te stellen."
+       },
+       {
+        "v": "Wat mag je NIET zonder meer concluderen uit een correlatie?",
+        "o": [
+         "Dat het ene het andere veroorzaakt",
+         "Dat er tussen de twee een verband is",
+         "Dat de grootheden samen veranderen",
+         "Dat er een grafiek van te maken is"
+        ],
+        "c": 0,
+        "d": 3,
+        "u": "Een correlatie laat een verband zien, maar je mag daar niet zomaar een oorzaak uit afleiden.",
+        "uo": [
+         "Klopt: een oorzaak mag je er niet zomaar uit afleiden.",
+         "Een verband mag je wel vaststellen.",
+         "Samen veranderen zie je juist in een correlatie.",
+         "Een grafiek kun je gewoon maken."
+        ],
+        "uh": "Uit correlatie geen oorzaak concluderen."
+       },
+       {
+        "v": "Wat is het verschil tussen correlatie en causaliteit?",
+        "o": [
+         "Ze betekenen precies hetzelfde",
+         "Correlatie is samen veranderen, causaliteit is oorzaak-gevolg",
+         "Beide begrippen bewijzen samen een oorzaak",
+         "Beide gaan over de steekproef"
+        ],
+        "c": 1,
+        "d": 3,
+        "u": "Correlatie is een verband; causaliteit is een oorzaak-gevolgrelatie. Een correlatie hoeft geen causaliteit te zijn.",
+        "uo": [
+         "Ze verschillen juist.",
+         "Klopt: samen veranderen versus oorzaak-gevolg.",
+         "Alleen causaliteit gaat over oorzaak.",
+         "Ze gaan niet over de steekproef."
+        ],
+        "uh": "Correlatie = verband, causaliteit = oorzaak-gevolg."
+       },
+       {
+        "v": "Meer studeren hangt samen met hogere cijfers. Wat toont dit direct aan?",
+        "o": [
+         "Zeker een oorzaak",
+         "Een controlegroep",
+         "Een correlatie",
+         "Een meetfout"
+        ],
+        "c": 2,
+        "d": 3,
+        "u": "Je ziet dat twee dingen samen veranderen: een correlatie. Voor een oorzaak is meer bewijs nodig.",
+        "uo": [
+         "Een oorzaak is hiermee nog niet bewezen.",
+         "Dat is geen controlegroep.",
+         "Klopt: het toont een correlatie.",
+         "Dat is geen meetfout."
+        ],
+        "uh": "Samen veranderen toont een correlatie, geen oorzaak."
+       },
+       {
+        "v": "Wat kan een correlatie veroorzaken zonder dat A B veroorzaakt?",
+        "o": [
+         "Een grote controlegroep",
+         "Een nauwkeurige meting",
+         "Een tweede hypothese naast de eerste",
+         "Een derde factor die beide beïnvloedt"
+        ],
+        "c": 3,
+        "d": 3,
+        "u": "Een derde factor kan zowel A als B beïnvloeden, waardoor A en B samen veranderen zonder onderling oorzaak-gevolg.",
+        "uo": [
+         "Een controlegroep veroorzaakt geen schijnverband.",
+         "Nauwkeurigheid is niet de oorzaak.",
+         "Een hypothese veroorzaakt geen verband.",
+         "Klopt: een derde factor kan beide beïnvloeden."
+        ],
+        "uh": "Een derde factor kan A en B samen bewegen."
+       },
+       {
+        "v": "Wat is een verband?",
+        "o": [
+         "Een samenhang tussen twee grootheden",
+         "De titel van de grafiek",
+         "Een nepbehandeling zonder werkzame stof",
+         "De naam van de x-as"
+        ],
+        "c": 0,
+        "d": 1,
+        "u": "Een verband is een samenhang tussen twee grootheden, zoals je in een correlatie ziet.",
+        "uo": [
+         "Klopt: een samenhang tussen twee grootheden.",
+         "Dat is de titel.",
+         "Dat is een placebo.",
+         "Dat is een as-naam."
+        ],
+        "uh": "Verband = samenhang tussen twee grootheden."
+       },
+       {
+        "v": "Waarom is één correlatie te weinig voor een oorzaakclaim?",
+        "o": [
+         "Omdat correlaties in het echt niet bestaan",
+         "Omdat er een derde factor of toeval kan spelen",
+         "Omdat een grafiek altijd klopt",
+         "Omdat de steekproef altijd groot is"
+        ],
+        "c": 1,
+        "d": 3,
+        "u": "Achter een correlatie kan een derde factor of toeval zitten, dus één correlatie bewijst geen oorzaak.",
+        "uo": [
+         "Correlaties bestaan wel.",
+         "Klopt: derde factor of toeval kan meespelen.",
+         "Een grafiek klopt niet altijd.",
+         "De steekproef is niet altijd groot."
+        ],
+        "uh": "Achter een correlatie kan toeval of een derde factor zitten."
+       },
+       {
+        "v": "Welke uitspraak klopt?",
+        "o": [
+         "Correlatie is hetzelfde als causaliteit",
+         "Causaliteit is zwakker dan correlatie",
+         "Correlatie bewijst geen causaliteit",
+         "Correlatie betekent geen verband"
+        ],
+        "c": 2,
+        "d": 2,
+        "u": "Een correlatie laat een verband zien, maar bewijst geen oorzaak-gevolgrelatie.",
+        "uo": [
+         "Ze zijn niet hetzelfde.",
+         "Causaliteit is juist een sterker soort uitspraak.",
+         "Klopt: correlatie bewijst geen causaliteit.",
+         "Correlatie is juist wel een verband."
+        ],
+        "uh": "Correlatie bewijst geen causaliteit."
+       },
+       {
+        "v": "Hoe kun je een derde factor uitsluiten?",
+        "o": [
+         "Door de correlatie sterker te maken",
+         "Door minder te meten",
+         "Door de hypothese te schrappen",
+         "Met een goed opgezet experiment"
+        ],
+        "c": 3,
+        "d": 3,
+        "u": "In een experiment houd je andere factoren constant en gebruik je een controlegroep, zodat een derde factor het resultaat niet vertekent.",
+        "uo": [
+         "Een sterkere correlatie blijft een correlatie.",
+         "Minder meten helpt niet.",
+         "De hypothese blijft nodig.",
+         "Klopt: een experiment sluit een derde factor uit."
+        ],
+        "uh": "Experiment sluit een derde factor uit."
+       },
+       {
+        "v": "Twee dingen dalen samen. Wat weet je zeker?",
+        "o": [
+         "Er is een correlatie",
+         "Het ene veroorzaakt het andere",
+         "Er is een controlegroep",
+         "De meting is fout"
+        ],
+        "c": 0,
+        "d": 2,
+        "u": "Samen dalen is ook een correlatie; over oorzaak weet je nog niets zeker.",
+        "uo": [
+         "Klopt: er is een correlatie.",
+         "Een oorzaak is niet zeker.",
+         "Dat is geen controlegroep.",
+         "De meting hoeft niet fout te zijn."
+        ],
+        "uh": "Samen bewegen (op of neer) = correlatie."
+       },
+       {
+        "v": "Wat is een aanwijzing in onderzoek?",
+        "o": [
+         "Een bewezen oorzaak-gevolgrelatie",
+         "Een gegeven dat een verband suggereert maar niet bewijst",
+         "De grootte van de steekproef",
+         "De titel die boven de grafiek staat"
+        ],
+        "c": 1,
+        "d": 2,
+        "u": "Een aanwijzing wijst op een mogelijk verband, maar is nog geen bewijs van een oorzaak.",
+        "uo": [
+         "Een aanwijzing is nog geen bewijs.",
+         "Klopt: suggereert een verband, bewijst niets.",
+         "Dat is de steekproefgrootte.",
+         "Dat is de titel."
+        ],
+        "uh": "Aanwijzing = suggestie, geen bewijs."
+       },
+       {
+        "v": "Waarom is de stap van correlatie naar oorzaak zo verleidelijk maar fout?",
+        "o": [
+         "Omdat correlaties in het echt niet bestaan",
+         "Omdat een grafiek altijd een oorzaak toont",
+         "Omdat samen veranderen lijkt op oorzaak, maar het niet is",
+         "Omdat oorzaak en gevolg hetzelfde zijn"
+        ],
+        "c": 2,
+        "d": 3,
+        "u": "Twee dingen die samen veranderen lijken op oorzaak en gevolg, maar er kan een derde factor of toeval achter zitten.",
+        "uo": [
+         "Correlaties bestaan wel.",
+         "Een grafiek toont niet vanzelf een oorzaak.",
+         "Klopt: het lijkt erop, maar het is geen bewijs.",
+         "Oorzaak en gevolg zijn niet hetzelfde."
+        ],
+        "uh": "Samen veranderen lijkt op oorzaak, maar bewijst het niet."
+       },
+       {
+        "v": "Wat heb je nodig om van correlatie naar causaliteit te gaan?",
+        "o": [
+         "Alleen een grotere grafiek",
+         "Alleen een mooiere tabel met de gegevens",
+         "Alleen een tweede correlatie",
+         "Een experiment met controlegroep"
+        ],
+        "c": 3,
+        "d": 3,
+        "u": "Om oorzaak-gevolg vast te stellen heb je een experiment nodig waarin je één variabele verandert en met een controlegroep vergelijkt.",
+        "uo": [
+         "Een grotere grafiek bewijst niets.",
+         "Een mooiere tabel bewijst niets.",
+         "Nog een correlatie blijft correlatie.",
+         "Klopt: een experiment met controlegroep."
+        ],
+        "uh": "Causaliteit vraagt een experiment met controlegroep."
+       },
+       {
+        "v": "Welke uitspraak over een derde factor klopt?",
+        "o": [
+         "Hij kan twee dingen samen laten veranderen",
+         "Hij is altijd de gemeten variabele",
+         "Hij bewijst de oorzaak-gevolgrelatie",
+         "Hij is gelijk aan de titel van de grafiek"
+        ],
+        "c": 0,
+        "d": 2,
+        "u": "Een derde factor beïnvloedt twee grootheden tegelijk, waardoor ze samen veranderen zonder onderling oorzaak-gevolg.",
+        "uo": [
+         "Klopt: hij beweegt twee dingen tegelijk.",
+         "Hij is juist vaak verborgen.",
+         "Hij bewijst geen oorzaak, hij verklaart het schijnverband.",
+         "Hij is niet de titel."
+        ],
+        "uh": "Derde factor beweegt twee grootheden tegelijk."
+       }
+      ],
+      "oe": [
+       {
+        "vraag": "Leg het verschil uit tussen correlatie en causaliteit.",
+        "antwoord": "Een correlatie is een verband waarbij twee dingen samen veranderen. Causaliteit is een oorzaak-gevolgrelatie: het ene ding veroorzaakt het andere. Bij een correlatie veranderen twee dingen samen, maar dat betekent nog niet dat het ene het andere veroorzaakt."
+       },
+       {
+        "vraag": "Leg uit waarom je uit een correlatie niet zomaar een oorzaak mag concluderen.",
+        "antwoord": "Twee dingen kunnen samen veranderen zonder dat het ene het andere veroorzaakt. Vaak is er een derde factor die beide beïnvloedt, of het is toeval. Daarom is een correlatie alleen geen bewijs van een oorzaak-gevolgrelatie; je zou een verkeerde conclusie kunnen trekken."
+       },
+       {
+        "vraag": "Leg met het voorbeeld van ijsverkoop en verdrinkingen uit wat een derde factor is.",
+        "antwoord": "De verkoop van ijs en het aantal verdrinkingen stijgen in de zomer allebei. Toch veroorzaakt ijs eten geen verdrinkingen. De derde factor is warm weer: bij warm weer wordt er meer ijs verkocht en gaan meer mensen zwemmen, waardoor er ook meer verdrinkingen zijn. De derde factor beïnvloedt dus beide."
+       },
+       {
+        "vraag": "Leg uit hoe je wel een oorzaak-gevolgrelatie kunt aantonen.",
+        "antwoord": "Om een oorzaak aan te tonen doe je een experiment. Je verandert maar één variabele, houdt de rest constant en vergelijkt met een controlegroep die de behandeling niet krijgt. Als alleen de behandelde groep het effect vertoont, kun je concluderen dat de behandeling de oorzaak is."
+       },
+       {
+        "vraag": "Iemand ziet dat mensen die meer koffie drinken vaker slecht slapen, en concludeert dat koffie slecht slapen veroorzaakt. Leg uit wat er mis is met deze redenering.",
+        "antwoord": "De persoon ziet een correlatie: koffie drinken en slecht slapen komen samen voor. Maar dat bewijst nog geen oorzaak. Er kan een derde factor zijn, bijvoorbeeld stress, die zowel meer koffie drinken als slechter slapen veroorzaakt. Om te bewijzen dat koffie de oorzaak is, is een experiment met een controlegroep nodig."
+       }
+      ]
+     },
+     {
+      "id": "A5",
+      "naam": "Biologisch onderzoeksgereedschap",
+      "beschrijving": "Gouden-standaardmodule bi.A.5: het gebruik van een determineertabel om een soort op naam te brengen, en de functie van een preparaat bij microscopisch onderzoek.",
+      "ceStatus": "CE",
+      "onderwerpen": [
+       "Determineren: een soort op naam brengen",
+       "Determineertabel met keuzes op kenmerken",
+       "Juiste tak kiezen",
+       "Preparaat maken",
+       "Microscoop en vergroting",
+       "Objectglas en dekglas"
+      ],
+      "sam": "Om een onbekend organisme op naam te brengen gebruik je een determineertabel. Bij elke stap kies je uit twee mogelijkheden op basis van een kenmerk, bijvoorbeeld wel of geen vleugels. Je volgt de tabel stap voor stap tot je bij de naam van de soort uitkomt. Kies je een verkeerde tak, dan kom je bij een verkeerde naam uit; goed op de kenmerken letten is dus belangrijk. Voor microscopisch onderzoek maak je een preparaat: een dun plakje materiaal op een objectglas, afgedekt met een dekglas, zodat het licht erdoorheen kan en je het onder de microscoop kunt bekijken. De totale vergroting van een microscoop is de vergroting van het objectief maal die van het oculair.",
+      "begrippen": [
+       {
+        "t": "Determineertabel",
+        "d": "een tabel met keuzes om een soort op naam te brengen"
+       },
+       {
+        "t": "Determineren",
+        "d": "een organisme met kenmerken op naam brengen"
+       },
+       {
+        "t": "Kenmerk",
+        "d": "een eigenschap waarmee je soorten kunt onderscheiden"
+       },
+       {
+        "t": "Preparaat",
+        "d": "een dun plakje materiaal om onder de microscoop te bekijken"
+       },
+       {
+        "t": "Microscoop",
+        "d": "een instrument dat kleine dingen sterk vergroot"
+       },
+       {
+        "t": "Objectglas",
+        "d": "het glaasje waarop je het preparaat legt"
+       },
+       {
+        "t": "Dekglas",
+        "d": "het dunne glaasje dat je over het preparaat legt"
+       },
+       {
+        "t": "Vergroting",
+        "d": "hoeveel keer groter iets onder de microscoop lijkt"
+       },
+       {
+        "t": "Objectief",
+        "d": "de lens dicht bij het preparaat in de microscoop"
+       },
+       {
+        "t": "Oculair",
+        "d": "de lens waar je doorheen kijkt in de microscoop"
+       },
+       {
+        "t": "Loep",
+        "d": "een handvergrootglas voor een kleine vergroting"
+       },
+       {
+        "t": "Coupe",
+        "d": "een heel dun sneetje weefsel voor een preparaat"
+       }
+      ],
+      "sv": [
+       {
+        "v": "Waarvoor gebruik je een determineertabel?",
+        "o": [
+         "Om een soort op naam te brengen",
+         "Om het bloed van een dier te meten",
+         "Om de bloedsuiker te regelen met insuline",
+         "Om de temperatuur van de bodem te meten"
+        ],
+        "c": 0,
+        "d": 1,
+        "u": "Met een determineertabel breng je een onbekend organisme stap voor stap op naam.",
+        "uo": [
+         "Klopt: een soort op naam brengen.",
+         "Dat is geen determineren.",
+         "Dat is hormonale regeling.",
+         "Dat is een abiotische meting."
+        ],
+        "uh": "Determineertabel = een soort op naam brengen."
+       },
+       {
+        "v": "Hoe werkt een determineertabel?",
+        "o": [
+         "Je meet steeds de temperatuur",
+         "Je kiest bij elke stap op een kenmerk",
+         "Je raadt de naam van de soort meteen",
+         "Je telt het aantal individuen"
+        ],
+        "c": 1,
+        "d": 2,
+        "u": "Bij elke stap kies je uit twee mogelijkheden op basis van een kenmerk, tot je bij de naam uitkomt.",
+        "uo": [
+         "Je meet geen temperatuur bij determineren.",
+         "Klopt: bij elke stap kies je op een kenmerk.",
+         "Raden is geen determineren.",
+         "Je telt geen individuen."
+        ],
+        "uh": "Determineren = per stap kiezen op een kenmerk."
+       },
+       {
+        "v": "Wat gebeurt er als je in de determineertabel een verkeerde tak kiest?",
+        "o": [
+         "Je komt bij de juiste naam uit",
+         "De tabel telt het aantal individuen in het gebied",
+         "Je komt bij een verkeerde naam uit",
+         "De microscoop vergroot meer"
+        ],
+        "c": 2,
+        "d": 3,
+        "u": "Kies je op een verkeerd kenmerk de verkeerde tak, dan leidt de tabel je naar de verkeerde soortnaam.",
+        "uo": [
+         "Bij een verkeerde tak kom je juist verkeerd uit.",
+         "De tabel telt geen individuen.",
+         "Klopt: een verkeerde tak geeft een verkeerde naam.",
+         "De microscoop staat hier los van."
+        ],
+        "uh": "Verkeerde tak = verkeerde naam."
+       },
+       {
+        "v": "Wat is een preparaat?",
+        "o": [
+         "Een grote steekproef van veel mensen",
+         "De verwachting van het onderzoek",
+         "Een determineertabel met keuzes",
+         "Een dun plakje materiaal onder de microscoop"
+        ],
+        "c": 3,
+        "d": 1,
+        "u": "Een preparaat is een dun plakje materiaal dat je onder de microscoop bekijkt.",
+        "uo": [
+         "Dat is een steekproef.",
+         "Dat is de hypothese.",
+         "Dat is een determineertabel.",
+         "Klopt: een dun plakje materiaal voor de microscoop."
+        ],
+        "uh": "Preparaat = dun plakje materiaal voor de microscoop."
+       },
+       {
+        "v": "Waarom moet een preparaat dun zijn?",
+        "o": [
+         "Zodat het licht er doorheen kan",
+         "Zodat het preparaat een stuk zwaarder wordt",
+         "Zodat het meer kleur krijgt",
+         "Zodat het langer meegaat"
+        ],
+        "c": 0,
+        "d": 3,
+        "u": "Een dun preparaat laat het licht van de microscoop erdoorheen, zodat je de cellen kunt zien.",
+        "uo": [
+         "Klopt: dun laat het licht erdoor.",
+         "Gewicht is niet het punt.",
+         "Kleur is niet de reden.",
+         "Houdbaarheid is niet de reden."
+        ],
+        "uh": "Dun preparaat = licht kan erdoorheen."
+       },
+       {
+        "v": "Waarop leg je een preparaat?",
+        "o": [
+         "Op een dekglas",
+         "Op een objectglas",
+         "Op de determineertabel",
+         "Op het oculair"
+        ],
+        "c": 1,
+        "d": 1,
+        "u": "Het preparaat leg je op een objectglas en dek je af met een dekglas.",
+        "uo": [
+         "Het dekglas komt er juist bovenop.",
+         "Klopt: op het objectglas.",
+         "Een tabel is geen ondergrond.",
+         "Het oculair is de kijklens."
+        ],
+        "uh": "Preparaat op het objectglas, dekglas erop."
+       },
+       {
+        "v": "Wat leg je over het preparaat heen?",
+        "o": [
+         "Een objectglas",
+         "De determineertabel",
+         "Een dekglas",
+         "Een loep"
+        ],
+        "c": 2,
+        "d": 1,
+        "u": "Over het preparaat leg je een dun dekglas, zodat het plat en beschermd ligt.",
+        "uo": [
+         "Het objectglas ligt er juist onder.",
+         "Een tabel leg je er niet op.",
+         "Klopt: het dekglas komt erbovenop.",
+         "Een loep is geen dekglas."
+        ],
+        "uh": "Dekglas komt over het preparaat."
+       },
+       {
+        "v": "Wat doet een microscoop?",
+        "o": [
+         "De bloedsuiker regelen",
+         "Soorten op naam brengen",
+         "De temperatuur van de omgeving meten",
+         "Kleine dingen sterk vergroten"
+        ],
+        "c": 3,
+        "d": 1,
+        "u": "Een microscoop vergroot kleine dingen sterk, zodat je bijvoorbeeld cellen kunt zien.",
+        "uo": [
+         "Dat doet een hormoon, niet een microscoop.",
+         "Dat doet een determineertabel.",
+         "Dat doet een thermometer.",
+         "Klopt: kleine dingen sterk vergroten."
+        ],
+        "uh": "Microscoop = sterk vergroten."
+       },
+       {
+        "v": "Hoe bereken je de totale vergroting van een microscoop?",
+        "o": [
+         "Objectief maal oculair",
+         "Objectief plus oculair optellen",
+         "Alleen het objectief tellen",
+         "Alleen het oculair tellen"
+        ],
+        "c": 0,
+        "d": 2,
+        "u": "De totale vergroting is de vergroting van het objectief vermenigvuldigd met die van het oculair.",
+        "uo": [
+         "Klopt: objectief maal oculair.",
+         "Je telt ze niet op, je vermenigvuldigt.",
+         "Beide lenzen tellen mee.",
+         "Beide lenzen tellen mee."
+        ],
+        "uh": "Totale vergroting = objectief × oculair."
+       },
+       {
+        "v": "Het objectief vergroot 10x en het oculair 10x. Wat is de totale vergroting?",
+        "o": [
+         "20 keer",
+         "100 keer",
+         "10 keer",
+         "Een vergroting van maar 1 keer"
+        ],
+        "c": 1,
+        "d": 2,
+        "u": "Je vermenigvuldigt: 10 maal 10 is 100 keer.",
+        "uo": [
+         "20 is de optelling, niet het product.",
+         "Klopt: 10 maal 10 is 100.",
+         "10 is maar één lens.",
+         "1 keer is geen vergroting."
+        ],
+        "uh": "10 × 10 = 100 keer vergroting."
+       },
+       {
+        "v": "Wat is de functie van het objectief?",
+        "o": [
+         "De lens waar je doorheen kijkt",
+         "Het glaasje onder het preparaat",
+         "De lens dicht bij het preparaat",
+         "De handvergroter buiten de microscoop"
+        ],
+        "c": 2,
+        "d": 2,
+        "u": "Het objectief is de lens vlak boven het preparaat die het beeld het eerst vergroot.",
+        "uo": [
+         "Dat is het oculair.",
+         "Dat is het objectglas.",
+         "Klopt: de lens dicht bij het preparaat.",
+         "Dat is een loep."
+        ],
+        "uh": "Objectief = lens dicht bij het preparaat."
+       },
+       {
+        "v": "Wat is het oculair?",
+        "o": [
+         "Het glaasje onder het preparaat",
+         "De determineertabel",
+         "Een handvergrootglas",
+         "De lens waar je doorheen kijkt"
+        ],
+        "c": 3,
+        "d": 2,
+        "u": "Het oculair is de lens boven in de microscoop waar je met je oog doorheen kijkt.",
+        "uo": [
+         "Dat is het objectglas.",
+         "Dat is een tabel.",
+         "Dat is een loep.",
+         "Klopt: de kijklens bovenin."
+        ],
+        "uh": "Oculair = de lens waar je doorheen kijkt."
+       },
+       {
+        "v": "Welk kenmerk zou in een determineertabel kunnen staan?",
+        "o": [
+         "Wel of geen vleugels",
+         "De naam van de onderzoeker",
+         "De datum van vandaag",
+         "De titel van het boek"
+        ],
+        "c": 0,
+        "d": 2,
+        "u": "Kenmerken zijn eigenschappen waarmee je soorten onderscheidt, zoals wel of geen vleugels.",
+        "uo": [
+         "Klopt: wel of geen vleugels is een kenmerk.",
+         "De naam is geen kenmerk van de soort.",
+         "De datum is geen kenmerk.",
+         "De titel is geen kenmerk."
+        ],
+        "uh": "Kenmerk = eigenschap om soorten te onderscheiden."
+       },
+       {
+        "v": "Waarom let je goed op de kenmerken bij het determineren?",
+        "o": [
+         "Anders wordt de microscoop kapot",
+         "Anders kom je bij een verkeerde soort uit",
+         "Anders daalt de bloedsuikerspiegel in je bloed",
+         "Anders verdwijnt het preparaat"
+        ],
+        "c": 1,
+        "d": 3,
+        "u": "Een verkeerd kenmerk leidt naar de verkeerde tak en dus naar een verkeerde soortnaam.",
+        "uo": [
+         "De microscoop gaat er niet van kapot.",
+         "Klopt: verkeerd kenmerk geeft een verkeerde soort.",
+         "De bloedsuiker staat hier los van.",
+         "Het preparaat verdwijnt niet."
+        ],
+        "uh": "Goed op kenmerken letten = juiste soortnaam."
+       },
+       {
+        "v": "Wat is determineren?",
+        "o": [
+         "Het bloed van een dier nauwkeurig meten",
+         "De temperatuur van water regelen",
+         "Een organisme op naam brengen met kenmerken",
+         "Een grafiek tekenen van de groei"
+        ],
+        "c": 2,
+        "d": 1,
+        "u": "Determineren is een organisme op naam brengen aan de hand van zijn kenmerken.",
+        "uo": [
+         "Dat is geen determineren.",
+         "Dat is temperatuurregeling.",
+         "Klopt: op naam brengen met kenmerken.",
+         "Dat is data verwerken."
+        ],
+        "uh": "Determineren = op naam brengen met kenmerken."
+       },
+       {
+        "v": "Waarvoor gebruik je een loep?",
+        "o": [
+         "Voor het regelen van de hormonen in het lichaam",
+         "Voor het meten van de bloeddruk",
+         "Voor het tekenen van een grafiek",
+         "Voor een kleine vergroting in de hand"
+        ],
+        "c": 3,
+        "d": 1,
+        "u": "Een loep is een handvergrootglas voor een kleine vergroting, handig in het veld.",
+        "uo": [
+         "Een loep regelt geen hormonen.",
+         "Een loep meet geen bloeddruk.",
+         "Een loep tekent geen grafiek.",
+         "Klopt: een kleine vergroting in de hand."
+        ],
+        "uh": "Loep = handvergrootglas, kleine vergroting."
+       },
+       {
+        "v": "Waarom gebruik je een microscoop en niet een loep voor cellen?",
+        "o": [
+         "Omdat een microscoop veel sterker vergroot",
+         "Omdat een loep veel zwaarder is dan een microscoop",
+         "Omdat een loep licht maakt",
+         "Omdat een microscoop de soort benoemt"
+        ],
+        "c": 0,
+        "d": 3,
+        "u": "Cellen zijn zo klein dat je een sterke vergroting nodig hebt; een loep vergroot te weinig.",
+        "uo": [
+         "Klopt: een microscoop vergroot veel sterker.",
+         "Gewicht is niet de reden.",
+         "Een loep maakt geen licht.",
+         "Namen geven doet de determineertabel."
+        ],
+        "uh": "Cellen zien = microscoop (sterke vergroting)."
+       },
+       {
+        "v": "Een dun sneetje weefsel voor een preparaat heet ook wel:",
+        "o": [
+         "Een oculair",
+         "Een coupe",
+         "Een determineertabel",
+         "Een steekproef"
+        ],
+        "c": 1,
+        "d": 2,
+        "u": "Een coupe is een heel dun sneetje weefsel dat je als preparaat onder de microscoop legt.",
+        "uo": [
+         "Dat is een kijklens.",
+         "Klopt: een dun sneetje heet een coupe.",
+         "Dat is een tabel.",
+         "Dat is een deel van een groep."
+        ],
+        "uh": "Coupe = dun sneetje weefsel voor een preparaat."
+       },
+       {
+        "v": "Welke volgorde klopt bij het maken van een preparaat?",
+        "o": [
+         "Dekglas eerst, dan het materiaal erop",
+         "Het materiaal op het oculair van de microscoop leggen",
+         "Materiaal op objectglas, dan dekglas erop",
+         "Materiaal in de determineertabel leggen"
+        ],
+        "c": 2,
+        "d": 2,
+        "u": "Je legt het dunne materiaal op het objectglas en dekt het daarna af met een dekglas.",
+        "uo": [
+         "Het dekglas komt juist als laatste.",
+         "Het oculair is de kijklens, geen ondergrond.",
+         "Klopt: materiaal op het objectglas, dekglas erop.",
+         "Een tabel is geen ondergrond."
+        ],
+        "uh": "Objectglas met materiaal, dan dekglas erop."
+       },
+       {
+        "v": "Wat is een objectglas?",
+        "o": [
+         "De lens waar je doorheen kijkt",
+         "De determineertabel met keuzes op kenmerken",
+         "Een handvergrootglas",
+         "Het glaasje waarop het preparaat ligt"
+        ],
+        "c": 3,
+        "d": 1,
+        "u": "Het objectglas is het glaasje waarop je het preparaat legt.",
+        "uo": [
+         "Dat is het oculair.",
+         "Dat is een determineertabel.",
+         "Dat is een loep.",
+         "Klopt: het glaasje onder het preparaat."
+        ],
+        "uh": "Objectglas = glaasje onder het preparaat."
+       },
+       {
+        "v": "Waarvoor dient het dekglas?",
+        "o": [
+         "Het houdt het preparaat plat en beschermd",
+         "Het vergroot het beeld het meest",
+         "Het brengt de soort op naam",
+         "Het meet de totale vergroting van de microscoop"
+        ],
+        "c": 0,
+        "d": 2,
+        "u": "Het dekglas houdt het preparaat plat en beschermt het, zodat het beeld scherp blijft.",
+        "uo": [
+         "Klopt: het houdt het plat en beschermd.",
+         "Vergroten doet het objectief.",
+         "Namen geven doet de determineertabel.",
+         "Meten doet het dekglas niet."
+        ],
+        "uh": "Dekglas = houdt het preparaat plat en beschermd."
+       },
+       {
+        "v": "Waarom is een determineertabel handig?",
+        "o": [
+         "Je regelt er de bloedsuiker mee",
+         "Je brengt stap voor stap een soort op naam",
+         "Je vergroot er de cellen mee onder de lens",
+         "Je meet er de temperatuur mee"
+        ],
+        "c": 1,
+        "d": 2,
+        "u": "Met een determineertabel kom je via keuzes op kenmerken stap voor stap bij de juiste soortnaam.",
+        "uo": [
+         "Bloedsuiker regelen doet een hormoon.",
+         "Klopt: stap voor stap naar de soortnaam.",
+         "Vergroten doet een microscoop.",
+         "Meten doet een thermometer."
+        ],
+        "uh": "Determineertabel = stap voor stap naar de soortnaam."
+       },
+       {
+        "v": "Je bekijkt met een 40x objectief en een 10x oculair. Wat is de vergroting?",
+        "o": [
+         "50 keer",
+         "30 keer",
+         "400 keer",
+         "Een vergroting van maar 4 keer"
+        ],
+        "c": 2,
+        "d": 3,
+        "u": "Vermenigvuldig: 40 maal 10 is 400 keer.",
+        "uo": [
+         "50 is de optelling, niet het product.",
+         "30 is het verschil, niet het product.",
+         "Klopt: 40 maal 10 is 400.",
+         "4 keer klopt niet."
+        ],
+        "uh": "40 × 10 = 400 keer."
+       },
+       {
+        "v": "Welke uitspraak over onderzoeksgereedschap klopt?",
+        "o": [
+         "Een microscoop brengt een soort op naam",
+         "Een preparaat vergroot helemaal uit zichzelf",
+         "Een loep vervangt de hele microscoop",
+         "Een determineertabel brengt een soort op naam"
+        ],
+        "c": 3,
+        "d": 2,
+        "u": "Een determineertabel gebruik je om op naam te brengen; een microscoop gebruik je om te vergroten.",
+        "uo": [
+         "De microscoop vergroot, hij benoemt niet.",
+         "Een preparaat vergroot niet uit zichzelf.",
+         "Een loep vergroot minder dan een microscoop.",
+         "Klopt: de determineertabel brengt op naam."
+        ],
+        "uh": "Determineertabel benoemt, microscoop vergroot."
+       },
+       {
+        "v": "Wat heb je nodig om cellen van een uienrokje te bekijken?",
+        "o": [
+         "Een preparaat en een microscoop",
+         "Een determineertabel en een loep",
+         "Een thermometer en een grafiek",
+         "Een controlegroep en een placebo"
+        ],
+        "c": 0,
+        "d": 3,
+        "u": "Je maakt een dun preparaat van het uienrokje en bekijkt dat onder de microscoop.",
+        "uo": [
+         "Klopt: een preparaat onder de microscoop.",
+         "Een tabel en loep zijn hiervoor niet genoeg.",
+         "Die horen bij data en temperatuur.",
+         "Die horen bij een medicijnproef."
+        ],
+        "uh": "Cellen bekijken = preparaat + microscoop."
+       }
+      ],
+      "oe": [
+       {
+        "vraag": "Leg uit hoe je met een determineertabel een onbekend organisme op naam brengt.",
+        "antwoord": "Bij een determineertabel kies je bij elke stap uit twee mogelijkheden op basis van een kenmerk van het organisme, bijvoorbeeld wel of geen vleugels. De keuze verwijst je naar een volgende stap. Zo werk je de tabel af tot je bij de naam van de soort uitkomt."
+       },
+       {
+        "vraag": "Leg uit waarom je goed op de kenmerken moet letten bij het determineren.",
+        "antwoord": "Bij elke stap in de determineertabel bepaalt een kenmerk welke tak je volgt. Als je een kenmerk verkeerd beoordeelt, kies je de verkeerde tak. Dan volg je een verkeerd deel van de tabel en kom je bij een verkeerde soortnaam uit. Nauwkeurig op de kenmerken letten is dus belangrijk."
+       },
+       {
+        "vraag": "Leg uit wat een preparaat is en waarom het dun moet zijn.",
+        "antwoord": "Een preparaat is een dun plakje materiaal dat je onder de microscoop bekijkt. Het moet dun zijn zodat het licht van de microscoop er doorheen kan. Alleen dan zie je de cellen of de structuur duidelijk; bij een te dik preparaat komt er geen licht doorheen en zie je niets."
+       },
+       {
+        "vraag": "Leg uit hoe je een preparaat maakt en welke glaasjes je gebruikt.",
+        "antwoord": "Je legt een dun plakje materiaal op een objectglas. Daarna leg je er voorzichtig een dun dekglas overheen, zodat het materiaal plat en beschermd ligt. Zo kun je het preparaat op de tafel van de microscoop leggen en bekijken."
+       },
+       {
+        "vraag": "Leg uit hoe je de totale vergroting van een microscoop berekent en geef een voorbeeld.",
+        "antwoord": "De totale vergroting is de vergroting van het objectief vermenigvuldigd met die van het oculair. Als het objectief 40 keer vergroot en het oculair 10 keer, dan is de totale vergroting 40 maal 10, dus 400 keer."
+       }
+      ]
+     }
+    ],
     "beschrijving": "Biologisch onderzoek: variabelen, experimenten opzetten, grafieken interpreteren en conclusies trekken (verweven door alle CE-onderdelen)",
     "ceStatus": "CE+SE",
     "binas": [],

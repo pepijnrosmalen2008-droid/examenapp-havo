@@ -1,9 +1,14 @@
 {
-  "total": 503,
+  "total": 628,
   "perVak": {
-    "havo/bi": 503
+    "havo/bi": 628
   },
   "perLeerdoel": {
+    "havo/bi/A1": 25,
+    "havo/bi/A2": 25,
+    "havo/bi/A3": 25,
+    "havo/bi/A4": 25,
+    "havo/bi/A5": 25,
     "havo/bi/M1": 25,
     "havo/bi/M2": 25,
     "havo/bi/M3": 25,
@@ -26,14 +31,14 @@
     "havo/bi/P6": 25
   },
   "rVerdeling": {
-    "1": 164,
-    "2": 213,
-    "3": 126
+    "1": 190,
+    "2": 267,
+    "3": 171
   },
   "posVerdeling": [
-    136,
-    123,
-    124,
-    120
+    171,
+    153,
+    154,
+    150
   ]
 }

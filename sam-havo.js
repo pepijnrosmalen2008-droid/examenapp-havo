@@ -1007,6 +1007,238 @@ Object.assign(SAM_RICH,{
 </svg><div class="sam-figcap">Gescheiden groepen evolueren apart en kunnen twee nieuwe soorten worden</div></div>
 <div class="sam-onthoud"><strong>Onthoud:</strong> gescheiden populaties evolueren apart tot nieuwe soorten.</div>
 </div>`,
+'havo_bi_A1':`<div class="sam-intro">Een goed experiment begint met een toetsbare <strong>hypothese</strong> en de juiste <strong>variabelen</strong>. Je verandert er één (<strong>onafhankelijk</strong>), meet één (<strong>afhankelijk</strong>) en houdt de rest gelijk (<strong>constant</strong>). Een <strong>controlegroep</strong> maakt de vergelijking eerlijk. Hieronder eerst een begrippenlijst, daarna drie hoofdstukjes met beeld.</div>
+<table class="sam-table"><thead><tr><th>Begrip</th><th>Kort</th></tr></thead><tbody>
+<tr><td><strong>Hypothese</strong></td><td>een toetsbare verwachting</td></tr>
+<tr><td><strong>Onafhankelijke variabele</strong></td><td>wat je zelf verandert (de oorzaak)</td></tr>
+<tr><td><strong>Afhankelijke variabele</strong></td><td>wat je meet (het gevolg)</td></tr>
+<tr><td><strong>Constante variabele</strong></td><td>wat je gelijk houdt voor een eerlijke vergelijking</td></tr>
+<tr><td><strong>Controlegroep</strong></td><td>de groep zonder behandeling om mee te vergelijken</td></tr>
+<tr><td><strong>Herhaling</strong></td><td>vaker meten om toeval uit te sluiten</td></tr>
+</tbody></table>
+<div class="sam-chapter">
+<div class="sam-ch-title"><span class="sam-ch-n">1</span> De drie soorten variabelen</div>
+<p>Je verandert bewust <strong>één</strong> ding: de <strong>onafhankelijke</strong> variabele (de oorzaak). Je <strong>meet</strong> het gevolg: de <strong>afhankelijke</strong> variabele. Al het andere houd je <strong>gelijk</strong>: de <strong>constante</strong> variabelen. Zo weet je dat een verschil in de meting door je behandeling komt.</p>
+<div class="sam-figure"><svg viewBox="0 0 320 120" width="100%" role="img" aria-label="Onafhankelijke variabele verander je, afhankelijke meet je, constante houd je gelijk">
+<g font-family="sans-serif" font-size="9" text-anchor="middle">
+<rect x="14" y="40" width="90" height="40" rx="8" fill="#c98a5f"/><text x="59" y="58" fill="#fff">verander je</text><text x="59" y="98" fill="#8a5a2f">onafhankelijk</text>
+<path d="M104 60h30" stroke="#5a7085" stroke-width="2.5" fill="none" marker-end="url(#a1a)"/>
+<rect x="134" y="40" width="80" height="40" rx="8" fill="#4ea36b"/><text x="174" y="58" fill="#fff">meet je</text><text x="174" y="98" fill="#2f7d4f">afhankelijk</text>
+<rect x="234" y="40" width="72" height="40" rx="8" fill="#8fb0c9"/><text x="270" y="58" fill="#22485f">gelijk</text><text x="270" y="98" fill="#2e6d8a">constant</text>
+</g><defs><marker id="a1a" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0 0l6 3-6 3z" fill="#5a7085"/></marker></defs>
+</svg><div class="sam-figcap">Onafhankelijk = veranderen, afhankelijk = meten, constant = gelijk houden</div></div>
+<div class="sam-onthoud"><strong>Onthoud:</strong> verander één, meet één, houd de rest gelijk.</div>
+</div>
+<div class="sam-chapter">
+<div class="sam-ch-title"><span class="sam-ch-n">2</span> De controlegroep</div>
+<p>Een <strong>controlegroep</strong> krijgt <strong>niet</strong> de behandeling. Door de behandelde groep met de controlegroep te vergelijken, zie je wat er zonder behandeling gebeurt. Alleen zo weet je zeker dat een gemeten effect echt door de <strong>behandeling</strong> komt.</p>
+<div class="sam-figure"><svg viewBox="0 0 320 110" width="100%" role="img" aria-label="De behandelgroep krijgt de behandeling, de controlegroep niet, om te vergelijken">
+<g font-family="sans-serif" font-size="9" text-anchor="middle">
+<rect x="24" y="30" width="110" height="54" rx="10" fill="#e7efe9" stroke="#4ea36b"/><text x="79" y="50" fill="#2f7d4f">behandelgroep</text><text x="79" y="70" fill="#3a6b52">krijgt de pil</text>
+<text x="160" y="60" fill="#5a7085">vs</text>
+<rect x="186" y="30" width="110" height="54" rx="10" fill="#eef0f2" stroke="#9aa7b3"/><text x="241" y="50" fill="#5a6b7a">controlegroep</text><text x="241" y="70" fill="#6b7885">geen pil</text>
+</g></svg><div class="sam-figcap">Vergelijk de behandelde groep met de controlegroep om het effect te zien</div></div>
+<div class="sam-onthoud"><strong>Onthoud:</strong> de controlegroep is de vergelijking zonder behandeling.</div>
+</div>
+<div class="sam-chapter">
+<div class="sam-ch-title"><span class="sam-ch-n">3</span> Eerlijk en herhaald</div>
+<p>Verander <strong>maar één</strong> variabele tegelijk, anders weet je niet welke factor het effect gaf. En <strong>herhaal</strong> de meting, zodat je ziet of het resultaat steeds terugkomt en niet op <strong>toeval</strong> berust.</p>
+<div class="sam-figure"><svg viewBox="0 0 320 110" width="100%" role="img" aria-label="Verander één variabele en herhaal de meting om toeval uit te sluiten">
+<g font-family="sans-serif" font-size="9" text-anchor="middle">
+<circle cx="70" cy="55" r="26" fill="#c98a5f"/><text x="70" y="52" fill="#fff">1 ding</text><text x="70" y="64" fill="#fff">tegelijk</text>
+<path d="M104 55h34" stroke="#5a7085" stroke-width="2" fill="none" marker-end="url(#a1h)"/>
+<g fill="#4ea36b"><circle cx="170" cy="40" r="8"/><circle cx="200" cy="40" r="8"/><circle cx="230" cy="40" r="8"/><circle cx="260" cy="40" r="8"/></g><text x="215" y="78" fill="#2f7d4f">herhaal en vergelijk</text>
+</g><defs><marker id="a1h" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0 0l6 3-6 3z" fill="#5a7085"/></marker></defs>
+</svg><div class="sam-figcap">Verander één variabele en herhaal, zodat toeval de conclusie niet vertekent</div></div>
+<div class="sam-onthoud"><strong>Onthoud:</strong> één variabele tegelijk, en herhalen tegen toeval.</div>
+</div>`,
+'havo_bi_A2':`<div class="sam-intro">Bij het beoordelen van een onderzoek let je op twee dingen. <strong>Betrouwbaarheid</strong>: krijg je bij herhaling steeds hetzelfde? <strong>Validiteit</strong>: meet je wel het <strong>juiste</strong>? Dat zijn twee verschillende dingen. Hieronder eerst een begrippenlijst, daarna drie hoofdstukjes met beeld.</div>
+<table class="sam-table"><thead><tr><th>Begrip</th><th>Kort</th></tr></thead><tbody>
+<tr><td><strong>Betrouwbaarheid</strong></td><td>bij herhaling steeds hetzelfde resultaat</td></tr>
+<tr><td><strong>Validiteit</strong></td><td>meet je wat je echt wilt meten</td></tr>
+<tr><td><strong>Steekproef</strong></td><td>het deel van de groep dat je onderzoekt</td></tr>
+<tr><td><strong>Representatief</strong></td><td>de steekproef lijkt op de hele groep</td></tr>
+<tr><td><strong>Placebo</strong></td><td>een nepbehandeling zonder werkzame stof</td></tr>
+<tr><td><strong>Placebo-effect</strong></td><td>beter voelen doordat je denkt behandeld te zijn</td></tr>
+</tbody></table>
+<div class="sam-chapter">
+<div class="sam-ch-title"><span class="sam-ch-n">1</span> Betrouwbaar en valide</div>
+<p><strong>Betrouwbaar</strong> betekent: steeds <strong>hetzelfde</strong> resultaat bij herhaling. <strong>Valide</strong> betekent: je meet het <strong>juiste</strong>. Denk aan een dartbord: alle pijltjes dicht bij elkaar is betrouwbaar; dicht bij de <strong>roos</strong> is valide. Een meting kan betrouwbaar zijn maar toch het verkeerde meten.</p>
+<div class="sam-figure"><svg viewBox="0 0 320 120" width="100%" role="img" aria-label="Dartbord: betrouwbaar is dicht bij elkaar, valide is dicht bij de roos">
+<g font-family="sans-serif" font-size="9" text-anchor="middle">
+<circle cx="80" cy="56" r="34" fill="none" stroke="#9aa7b3"/><circle cx="80" cy="56" r="18" fill="none" stroke="#9aa7b3"/><circle cx="80" cy="56" r="4" fill="#c96a6a"/>
+<g fill="#3f8fc9"><circle cx="104" cy="30" r="3"/><circle cx="108" cy="34" r="3"/><circle cx="101" cy="27" r="3"/></g>
+<text x="80" y="106" fill="#5a6b7a">betrouwbaar, niet valide</text>
+<circle cx="240" cy="56" r="34" fill="none" stroke="#9aa7b3"/><circle cx="240" cy="56" r="18" fill="none" stroke="#9aa7b3"/><circle cx="240" cy="56" r="4" fill="#c96a6a"/>
+<g fill="#4ea36b"><circle cx="240" cy="56" r="3"/><circle cx="244" cy="53" r="3"/><circle cx="237" cy="59" r="3"/></g>
+<text x="240" y="106" fill="#2f7d4f">betrouwbaar en valide</text>
+</g></svg><div class="sam-figcap">Dicht bij elkaar = betrouwbaar; ook dicht bij de roos = valide</div></div>
+<div class="sam-onthoud"><strong>Onthoud:</strong> betrouwbaar = herhaalbaar, valide = het juiste meten.</div>
+</div>
+<div class="sam-chapter">
+<div class="sam-ch-title"><span class="sam-ch-n">2</span> De steekproef</div>
+<p>Een <strong>steekproef</strong> is het deel van de groep dat je onderzoekt. Een <strong>grotere</strong> en <strong>representatieve</strong> steekproef (die op de hele groep lijkt) maakt het onderzoek betrouwbaarder. Een <strong>te kleine</strong> steekproef is een beperking, want dan telt toeval zwaar mee.</p>
+<div class="sam-figure"><svg viewBox="0 0 320 110" width="100%" role="img" aria-label="Een steekproef is een deel van de hele groep en moet representatief zijn">
+<g font-family="sans-serif" font-size="9" text-anchor="middle">
+<circle cx="90" cy="55" r="42" fill="#eaf2f6" stroke="#3f8fc9"/><text x="90" y="30" fill="#2e6d8a">hele groep</text>
+<g fill="#3f8fc9"><circle cx="78" cy="55" r="5"/><circle cx="98" cy="50" r="5"/><circle cx="88" cy="70" r="5"/></g>
+<path d="M136 55h30" stroke="#5a7085" stroke-width="2" fill="none" marker-end="url(#a2s)"/><text x="150" y="44" fill="#5a7085">steekproef</text>
+<circle cx="210" cy="55" r="22" fill="#e7efe9" stroke="#4ea36b"/><g fill="#4ea36b"><circle cx="203" cy="55" r="5"/><circle cx="217" cy="52" r="5"/></g>
+<text x="265" y="58" text-anchor="start" fill="#2f7d4f">deel van de groep</text>
+</g><defs><marker id="a2s" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0 0l6 3-6 3z" fill="#5a7085"/></marker></defs>
+</svg><div class="sam-figcap">De steekproef is een deel van de hele groep en moet erop lijken (representatief)</div></div>
+<div class="sam-onthoud"><strong>Onthoud:</strong> grotere en representatieve steekproef = betrouwbaarder.</div>
+</div>
+<div class="sam-chapter">
+<div class="sam-ch-title"><span class="sam-ch-n">3</span> De placebo</div>
+<p>Bij een medicijnproef krijgt de controlegroep een <strong>placebo</strong>: een <strong>nepbehandeling</strong> zonder werkzame stof die eruitziet als het echte medicijn. Zo kun je het <strong>echte effect</strong> scheiden van het <strong>placebo-effect</strong>: beter voelen alleen doordat je denkt behandeld te zijn.</p>
+<div class="sam-figure"><svg viewBox="0 0 320 100" width="100%" role="img" aria-label="Echte pil met werkzame stof versus placebo zonder werkzame stof">
+<g font-family="sans-serif" font-size="9" text-anchor="middle">
+<ellipse cx="80" cy="45" rx="30" ry="16" fill="#4ea36b"/><circle cx="80" cy="45" r="5" fill="#2f7d4f"/><text x="80" y="80" fill="#2f7d4f">echte pil (stof)</text>
+<ellipse cx="240" cy="45" rx="30" ry="16" fill="#eef0f2" stroke="#9aa7b3"/><text x="240" y="80" fill="#5a6b7a">placebo (geen stof)</text>
+</g></svg><div class="sam-figcap">De placebo lijkt op het medicijn maar mist de werkzame stof</div></div>
+<div class="sam-onthoud"><strong>Onthoud:</strong> placebo = nepbehandeling, scheidt het echte effect van het placebo-effect.</div>
+</div>`,
+'havo_bi_A3':`<div class="sam-intro">Bij een <strong>grafiek</strong> kijk je eerst naar de <strong>assen</strong> en hun <strong>eenheden</strong>. Daarna lees je een waarde af, bereken je een <strong>gemiddelde</strong> en beoordeel je de <strong>spreiding</strong>. En je concludeert nooit buiten het <strong>meetbereik</strong>. Hieronder eerst een begrippenlijst, daarna drie hoofdstukjes met beeld.</div>
+<table class="sam-table"><thead><tr><th>Begrip</th><th>Kort</th></tr></thead><tbody>
+<tr><td><strong>As-eenheid</strong></td><td>de grootheid en eenheid op een as (eerst lezen)</td></tr>
+<tr><td><strong>Aflezen</strong></td><td>omhoog naar de lijn, dan naar de y-as</td></tr>
+<tr><td><strong>Gemiddelde</strong></td><td>de som gedeeld door het aantal</td></tr>
+<tr><td><strong>Spreiding</strong></td><td>hoe ver de metingen uit elkaar liggen</td></tr>
+<tr><td><strong>Standaarddeviatie</strong></td><td>een maat voor de spreiding rond het gemiddelde</td></tr>
+<tr><td><strong>Meetbereik</strong></td><td>het gebied waarin je hebt gemeten (niet buiten concluderen)</td></tr>
+</tbody></table>
+<div class="sam-chapter">
+<div class="sam-ch-title"><span class="sam-ch-n">1</span> Assen lezen en aflezen</div>
+<p>Kijk eerst wat er op de <strong>x-as</strong> en <strong>y-as</strong> staat en in welke <strong>eenheid</strong>: de eenheid over het hoofd zien is een klassieke fout. Om af te lezen ga je vanaf een <strong>x-waarde</strong> omhoog tot de lijn en dan naar de <strong>y-as</strong>.</p>
+<div class="sam-figure"><svg viewBox="0 0 320 120" width="100%" role="img" aria-label="Aflezen: vanaf de x-waarde omhoog naar de lijn en dan naar de y-as">
+<g font-family="sans-serif" font-size="9">
+<line x1="50" y1="100" x2="300" y2="100" stroke="#9aa7b3"/><line x1="50" y1="100" x2="50" y2="16" stroke="#9aa7b3"/>
+<text x="290" y="114" fill="#6b7885">x-as</text><text x="20" y="24" fill="#6b7885">y-as</text>
+<path d="M50 96C120 92 160 60 300 30" stroke="#2e6d9a" stroke-width="2.5" fill="none"/>
+<path d="M170 100v-45h-120" stroke="#d9a441" stroke-width="2" fill="none" stroke-dasharray="4 3"/>
+<circle cx="170" cy="55" r="3.5" fill="#c96a6a"/>
+<text x="170" y="114" text-anchor="middle" fill="#b5772a">x</text><text x="34" y="58" fill="#b5772a">y</text>
+</g></svg><div class="sam-figcap">Vanaf de x-waarde omhoog naar de lijn en dan horizontaal naar de y-as</div></div>
+<div class="sam-onthoud"><strong>Onthoud:</strong> eerst de eenheden, dan omhoog naar de lijn en naar de y-as.</div>
+</div>
+<div class="sam-chapter">
+<div class="sam-ch-title"><span class="sam-ch-n">2</span> Gemiddelde en spreiding</div>
+<p>Uit meerdere metingen bereken je het <strong>gemiddelde</strong> (som gedeeld door aantal). De <strong>spreiding</strong> laat zien hoe ver de metingen uit elkaar liggen; de <strong>standaarddeviatie</strong> is daar de maat voor. <strong>Klein</strong> = metingen dicht bij elkaar, <strong>groot</strong> = ver uit elkaar.</p>
+<div class="sam-figure"><svg viewBox="0 0 320 110" width="100%" role="img" aria-label="Kleine spreiding: metingen dicht bij elkaar; grote spreiding: ver uit elkaar">
+<g font-family="sans-serif" font-size="9" text-anchor="middle">
+<line x1="20" y1="45" x2="150" y2="45" stroke="#9aa7b3"/><g fill="#4ea36b"><circle cx="80" cy="45" r="3"/><circle cx="86" cy="45" r="3"/><circle cx="74" cy="45" r="3"/><circle cx="90" cy="45" r="3"/></g><text x="85" y="72" fill="#2f7d4f">kleine spreiding</text>
+<line x1="170" y1="45" x2="300" y2="45" stroke="#9aa7b3"/><g fill="#c96a6a"><circle cx="180" cy="45" r="3"/><circle cx="215" cy="45" r="3"/><circle cx="250" cy="45" r="3"/><circle cx="288" cy="45" r="3"/></g><text x="235" y="72" fill="#8f3f3f">grote spreiding</text>
+</g></svg><div class="sam-figcap">Kleine standaarddeviatie: dicht bij elkaar. Grote: ver uit elkaar</div></div>
+<div class="sam-onthoud"><strong>Onthoud:</strong> kleine standaarddeviatie = metingen dicht bij elkaar.</div>
+</div>
+<div class="sam-chapter">
+<div class="sam-ch-title"><span class="sam-ch-n">3</span> Binnen het meetbereik blijven</div>
+<p>Het <strong>meetbereik</strong> is het gebied waarin je hebt gemeten. Een conclusie <strong>buiten</strong> dat gebied (<strong>extrapoleren</strong>) is onzeker, want daar heb je geen data. Blijf dus met je conclusie binnen de gemeten waarden.</p>
+<div class="sam-figure"><svg viewBox="0 0 320 110" width="100%" role="img" aria-label="Binnen het meetbereik zijn er metingen, daarbuiten niet">
+<g font-family="sans-serif" font-size="9">
+<line x1="40" y1="90" x2="300" y2="90" stroke="#9aa7b3"/><line x1="40" y1="90" x2="40" y2="16" stroke="#9aa7b3"/>
+<rect x="60" y="20" width="120" height="70" fill="#e7efe9" opacity="0.6"/><text x="120" y="14" text-anchor="middle" fill="#2f7d4f">meetbereik</text>
+<g fill="#2e6d9a"><circle cx="75" cy="70" r="3"/><circle cx="105" cy="58" r="3"/><circle cx="140" cy="46" r="3"/><circle cx="170" cy="40" r="3"/></g>
+<path d="M180 40l70 -24" stroke="#c96a6a" stroke-width="2" stroke-dasharray="4 3"/><text x="250" y="14" text-anchor="middle" fill="#8f3f3f">onzeker</text>
+</g></svg><div class="sam-figcap">Binnen het meetbereik heb je data; daarbuiten (gestippeld) is de conclusie onzeker</div></div>
+<div class="sam-onthoud"><strong>Onthoud:</strong> concludeer niet buiten het meetbereik.</div>
+</div>`,
+'havo_bi_A4':`<div class="sam-intro">Een <strong>correlatie</strong> is een verband: twee dingen veranderen samen. <strong>Causaliteit</strong> is oorzaak-gevolg. Een correlatie <strong>bewijst geen</strong> oorzaak: er kan een <strong>derde factor</strong> of toeval achter zitten. Hieronder eerst een begrippenlijst, daarna drie hoofdstukjes met beeld.</div>
+<table class="sam-table"><thead><tr><th>Begrip</th><th>Kort</th></tr></thead><tbody>
+<tr><td><strong>Correlatie</strong></td><td>twee dingen veranderen samen (een verband)</td></tr>
+<tr><td><strong>Causaliteit</strong></td><td>een oorzaak-gevolgrelatie</td></tr>
+<tr><td><strong>Derde factor</strong></td><td>verborgen factor die beide beïnvloedt</td></tr>
+<tr><td><strong>Schijnverband</strong></td><td>een verband dat geen oorzaak-gevolg is</td></tr>
+<tr><td><strong>Experiment</strong></td><td>toont oorzaak aan met een controlegroep</td></tr>
+<tr><td><strong>Aanwijzing</strong></td><td>suggereert een verband, bewijst het niet</td></tr>
+</tbody></table>
+<div class="sam-chapter">
+<div class="sam-ch-title"><span class="sam-ch-n">1</span> Correlatie is geen oorzaak</div>
+<p>Bij een <strong>correlatie</strong> veranderen twee dingen <strong>samen</strong>. Maar samen veranderen bewijst niet dat het ene het andere <strong>veroorzaakt</strong>. De grote valkuil is: uit een correlatie meteen een <strong>oorzaak</strong> concluderen.</p>
+<div class="sam-figure"><svg viewBox="0 0 320 100" width="100%" role="img" aria-label="A en B veranderen samen, maar dat bewijst niet dat A B veroorzaakt">
+<g font-family="sans-serif" font-size="10" text-anchor="middle">
+<circle cx="70" cy="50" r="22" fill="#3f8fc9"/><text x="70" y="54" fill="#fff">A</text>
+<circle cx="180" cy="50" r="22" fill="#c98a5f"/><text x="180" y="54" fill="#fff">B</text>
+<path d="M94 44q42 -16 64 0" stroke="#5a7085" stroke-width="2" stroke-dasharray="4 3" fill="none"/><text x="126" y="24" fill="#5a7085">samen</text>
+<path d="M94 56q42 16 64 0" stroke="#c96a6a" stroke-width="2" fill="none" marker-end="url(#a4x)"/><text x="250" y="54" text-anchor="start" fill="#8f3f3f">geen bewijs</text>
+</g><defs><marker id="a4x" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0 0l6 3-6 3z" fill="#c96a6a"/></marker></defs>
+</svg><div class="sam-figcap">A en B veranderen samen, maar dat bewijst nog niet dat A B veroorzaakt</div></div>
+<div class="sam-onthoud"><strong>Onthoud:</strong> correlatie bewijst geen causaliteit.</div>
+</div>
+<div class="sam-chapter">
+<div class="sam-ch-title"><span class="sam-ch-n">2</span> De derde factor</div>
+<p>Vaak zit er een <strong>derde factor</strong> achter die <strong>beide</strong> beïnvloedt: een <strong>schijnverband</strong>. Voorbeeld: ijsverkoop en verdrinkingen stijgen samen, maar de een veroorzaakt de ander niet. De derde factor is <strong>warm weer</strong>, dat allebei verhoogt.</p>
+<div class="sam-figure"><svg viewBox="0 0 320 110" width="100%" role="img" aria-label="Warm weer beïnvloedt zowel ijsverkoop als verdrinkingen">
+<g font-family="sans-serif" font-size="9" text-anchor="middle">
+<rect x="120" y="14" width="80" height="26" rx="8" fill="#d9a441"/><text x="160" y="31" fill="#fff">warm weer</text>
+<path d="M135 40l-60 40" stroke="#5a7085" stroke-width="2" fill="none" marker-end="url(#a4d)"/>
+<path d="M185 40l60 40" stroke="#5a7085" stroke-width="2" fill="none" marker-end="url(#a4d)"/>
+<rect x="20" y="82" width="90" height="24" rx="8" fill="#3f8fc9"/><text x="65" y="99" fill="#fff">ijsverkoop</text>
+<rect x="210" y="82" width="90" height="24" rx="8" fill="#c96a6a"/><text x="255" y="99" fill="#fff">verdrinkingen</text>
+</g><defs><marker id="a4d" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0 0l6 3-6 3z" fill="#5a7085"/></marker></defs>
+</svg><div class="sam-figcap">Warm weer (derde factor) verhoogt zowel ijsverkoop als verdrinkingen</div></div>
+<div class="sam-onthoud"><strong>Onthoud:</strong> zoek de derde factor achter een schijnverband.</div>
+</div>
+<div class="sam-chapter">
+<div class="sam-ch-title"><span class="sam-ch-n">3</span> Oorzaak aantonen met een experiment</div>
+<p>Om echt een <strong>oorzaak</strong> aan te tonen, doe je een <strong>experiment</strong>: je verandert <strong>één</strong> variabele, houdt de rest gelijk en vergelijkt met een <strong>controlegroep</strong>. Zo sluit je een derde factor uit en weet je of het effect echt door de behandeling komt.</p>
+<div class="sam-figure"><svg viewBox="0 0 320 100" width="100%" role="img" aria-label="Een experiment met controlegroep toont oorzaak aan">
+<g font-family="sans-serif" font-size="9" text-anchor="middle">
+<text x="70" y="20" fill="#5a7085">correlatie</text><circle cx="70" cy="50" r="20" fill="#8fb0c9"/><text x="70" y="54" fill="#22485f">verband</text>
+<path d="M96 50h48" stroke="#4ea36b" stroke-width="2.5" fill="none" marker-end="url(#a4e)"/><text x="120" y="40" fill="#2f7d4f">experiment</text>
+<text x="250" y="20" fill="#5a7085">causaliteit</text><circle cx="250" cy="50" r="20" fill="#4ea36b"/><text x="250" y="54" fill="#fff">oorzaak</text>
+</g><defs><marker id="a4e" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0 0l6 3-6 3z" fill="#4ea36b"/></marker></defs>
+</svg><div class="sam-figcap">Van correlatie naar causaliteit kom je alleen via een experiment met controlegroep</div></div>
+<div class="sam-onthoud"><strong>Onthoud:</strong> oorzaak aantonen = experiment met controlegroep.</div>
+</div>`,
+'havo_bi_A5':`<div class="sam-intro">Twee stukken gereedschap. Een <strong>determineertabel</strong> brengt een soort <strong>op naam</strong> via keuzes op <strong>kenmerken</strong>. Een <strong>preparaat</strong> onder de <strong>microscoop</strong> laat kleine dingen zoals cellen zien. Hieronder eerst een begrippenlijst, daarna drie hoofdstukjes met beeld.</div>
+<table class="sam-table"><thead><tr><th>Begrip</th><th>Kort</th></tr></thead><tbody>
+<tr><td><strong>Determineertabel</strong></td><td>keuzes op kenmerken om een soort op naam te brengen</td></tr>
+<tr><td><strong>Kenmerk</strong></td><td>eigenschap om soorten te onderscheiden</td></tr>
+<tr><td><strong>Preparaat</strong></td><td>dun plakje materiaal voor de microscoop</td></tr>
+<tr><td><strong>Objectglas / dekglas</strong></td><td>het preparaat ligt op het objectglas, dekglas erop</td></tr>
+<tr><td><strong>Microscoop</strong></td><td>vergroot kleine dingen sterk</td></tr>
+<tr><td><strong>Vergroting</strong></td><td>objectief maal oculair</td></tr>
+</tbody></table>
+<div class="sam-chapter">
+<div class="sam-ch-title"><span class="sam-ch-n">1</span> De determineertabel</div>
+<p>Bij een <strong>determineertabel</strong> kies je bij elke stap uit twee mogelijkheden op basis van een <strong>kenmerk</strong>, zoals wel of geen vleugels. Je volgt de tabel tot je bij de <strong>naam</strong> uitkomt. Kies je een <strong>verkeerde tak</strong>, dan kom je bij een verkeerde soort uit.</p>
+<div class="sam-figure"><svg viewBox="0 0 320 110" width="100%" role="img" aria-label="Een determineertabel splitst bij elke stap op een kenmerk tot je bij de soortnaam komt">
+<g font-family="sans-serif" font-size="9" text-anchor="middle">
+<circle cx="50" cy="55" r="14" fill="#8f74b8"/><text x="50" y="58" fill="#fff">start</text>
+<path d="M64 48l40 -22M64 62l40 22" stroke="#5a7085" stroke-width="2" fill="none"/><text x="86" y="24" fill="#5a6b7a">vleugels?</text>
+<circle cx="130" cy="26" r="12" fill="#4ea36b"/><circle cx="130" cy="84" r="12" fill="#c98a5f"/>
+<path d="M142 26h34" stroke="#5a7085" stroke-width="2" fill="none" marker-end="url(#a5t)"/><text x="210" y="30" fill="#2f7d4f">soort A</text>
+<path d="M142 84h34" stroke="#5a7085" stroke-width="2" fill="none" marker-end="url(#a5t)"/><text x="210" y="88" fill="#8a5a2f">soort B</text>
+</g><defs><marker id="a5t" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0 0l6 3-6 3z" fill="#5a7085"/></marker></defs>
+</svg><div class="sam-figcap">Elke stap splitst op een kenmerk; de juiste tak leidt naar de juiste soort</div></div>
+<div class="sam-onthoud"><strong>Onthoud:</strong> per stap kiezen op een kenmerk; verkeerde tak = verkeerde naam.</div>
+</div>
+<div class="sam-chapter">
+<div class="sam-ch-title"><span class="sam-ch-n">2</span> Een preparaat maken</div>
+<p>Voor de microscoop maak je een <strong>preparaat</strong>: een <strong>dun</strong> plakje materiaal op een <strong>objectglas</strong>, afgedekt met een <strong>dekglas</strong>. Dun is belangrijk, want dan kan het <strong>licht</strong> erdoorheen en zie je de cellen.</p>
+<div class="sam-figure"><svg viewBox="0 0 320 100" width="100%" role="img" aria-label="Een preparaat: dun materiaal op het objectglas met een dekglas erover">
+<g font-family="sans-serif" font-size="9" text-anchor="middle">
+<rect x="70" y="58" width="180" height="10" rx="2" fill="#cdd7de"/><text x="160" y="86" fill="#5a6b7a">objectglas</text>
+<rect x="120" y="50" width="80" height="6" rx="2" fill="#e6b95a"/><text x="160" y="40" fill="#b5772a">materiaal (dun)</text>
+<rect x="112" y="44" width="96" height="4" rx="2" fill="#9ec6de"/><text x="250" y="48" text-anchor="start" fill="#2e6d8a">dekglas</text>
+</g></svg><div class="sam-figcap">Dun materiaal op het objectglas, met een dekglas erover, zodat licht erdoorheen kan</div></div>
+<div class="sam-onthoud"><strong>Onthoud:</strong> dun preparaat op het objectglas, dekglas erop.</div>
+</div>
+<div class="sam-chapter">
+<div class="sam-ch-title"><span class="sam-ch-n">3</span> Vergroting van de microscoop</div>
+<p>De <strong>microscoop</strong> vergroot met twee lenzen: het <strong>objectief</strong> (dicht bij het preparaat) en het <strong>oculair</strong> (waar je doorheen kijkt). De <strong>totale vergroting</strong> is objectief <strong>maal</strong> oculair. Dus 40x objectief en 10x oculair geeft 400x.</p>
+<div class="sam-figure"><svg viewBox="0 0 320 100" width="100%" role="img" aria-label="Totale vergroting is objectief maal oculair, bijvoorbeeld 40 keer 10 is 400">
+<g font-family="sans-serif" font-size="10" text-anchor="middle">
+<rect x="30" y="36" width="70" height="30" rx="8" fill="#8f74b8"/><text x="65" y="50" fill="#fff">objectief</text><text x="65" y="80" fill="#5a3f82">40x</text>
+<text x="120" y="56" fill="#5a7085" font-size="16">×</text>
+<rect x="140" y="36" width="70" height="30" rx="8" fill="#3f8fc9"/><text x="175" y="50" fill="#fff">oculair</text><text x="175" y="80" fill="#2e6d8a">10x</text>
+<text x="230" y="56" fill="#5a7085" font-size="16">=</text>
+<rect x="250" y="36" width="60" height="30" rx="8" fill="#4ea36b"/><text x="280" y="55" fill="#fff">400x</text>
+</g></svg><div class="sam-figcap">Totale vergroting = objectief maal oculair, hier 40 maal 10 is 400 keer</div></div>
+<div class="sam-onthoud"><strong>Onthoud:</strong> totale vergroting = objectief × oculair.</div>
+</div>`,
 'havo_bi_M4':`<div class="sam-intro">Planten <strong>maken hun eigen voedsel</strong>. Met <strong>fotosynthese</strong> bouwen ze glucose op uit CO2 en water, met <strong>licht</strong> als energiebron. Alle cellen <strong>verbranden</strong> die glucose weer met zuurstof (<strong>celademhaling</strong>) om er energie uit te halen. Hieronder eerst een begrippenlijst, daarna drie korte hoofdstukjes met beeld.</div>
 <table class="sam-table"><thead><tr><th>Begrip</th><th>Kort</th></tr></thead><tbody>
 <tr><td><strong>Fotosynthese</strong></td><td>glucose maken uit CO2 + water met licht (in de bladgroenkorrel)</td></tr>

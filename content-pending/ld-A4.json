@@ -1,0 +1,564 @@
+{
+  "id": "A4",
+  "naam": "Correlatie versus causaliteit",
+  "beschrijving": "Gouden-standaardmodule bi.A.4: het verschil tussen een verband (correlatie) en een oorzaak-gevolgrelatie (causaliteit), en waarom een correlatie geen oorzaak bewijst.",
+  "ceStatus": "CE",
+  "onderwerpen": [
+    "Correlatie: twee dingen veranderen samen",
+    "Causaliteit: oorzaak en gevolg",
+    "Correlatie bewijst geen causaliteit",
+    "Derde factor en schijnverband",
+    "Experiment om oorzaak aan te tonen",
+    "Valkuil: oorzaak uit één correlatie"
+  ],
+  "sam": "Een correlatie is een verband: twee dingen veranderen samen. Causaliteit is een oorzaak-gevolgrelatie: het ene ding veroorzaakt het andere. Het is een veelgemaakte fout om uit een correlatie meteen een oorzaak te concluderen. Twee dingen kunnen namelijk samen veranderen zonder dat het ene het andere veroorzaakt. Vaak is er een derde factor die beide beïnvloedt; dan is er een schijnverband. Een bekend voorbeeld: de verkoop van ijs en het aantal verdrinkingen stijgen samen, maar de een veroorzaakt de ander niet. De derde factor is warm weer. Om echt aan te tonen dat het ene het andere veroorzaakt, heb je een experiment nodig met een controlegroep, waarin je maar één variabele verandert.",
+  "begrippen": [
+    {
+      "t": "Correlatie",
+      "d": "een verband waarbij twee dingen samen veranderen"
+    },
+    {
+      "t": "Causaliteit",
+      "d": "een oorzaak-gevolgrelatie tussen twee dingen"
+    },
+    {
+      "t": "Oorzaak",
+      "d": "datgene wat een gevolg teweegbrengt"
+    },
+    {
+      "t": "Gevolg",
+      "d": "datgene wat door een oorzaak wordt veroorzaakt"
+    },
+    {
+      "t": "Verband",
+      "d": "een samenhang tussen twee grootheden"
+    },
+    {
+      "t": "Derde factor",
+      "d": "een verborgen factor die twee dingen samen beïnvloedt"
+    },
+    {
+      "t": "Schijnverband",
+      "d": "een verband dat geen oorzaak-gevolg is"
+    },
+    {
+      "t": "Toeval",
+      "d": "een samenhang die door kans ontstaat, zonder oorzaak"
+    },
+    {
+      "t": "Experiment",
+      "d": "een proef waarmee je een oorzaak kunt aantonen"
+    },
+    {
+      "t": "Controlegroep",
+      "d": "de vergelijkingsgroep zonder de behandeling"
+    },
+    {
+      "t": "Aanwijzing",
+      "d": "een gegeven dat een verband suggereert maar niet bewijst"
+    },
+    {
+      "t": "Voorspelling",
+      "d": "een verwachting over wat er zal gebeuren"
+    }
+  ],
+  "sv": [
+    {
+      "v": "Wat is een correlatie?",
+      "o": [
+        "Een verband waarbij twee dingen samen veranderen",
+        "Een bewijs dat het ene het andere veroorzaakt",
+        "Een proef met een controlegroep erbij",
+        "De verwachting die je van tevoren opstelt in het onderzoek"
+      ],
+      "c": 0,
+      "d": 2,
+      "u": "Een correlatie is een verband: twee dingen veranderen samen, zonder dat dit een oorzaak bewijst.",
+      "uo": [
+        "Klopt: twee dingen veranderen samen.",
+        "Een correlatie bewijst juist geen oorzaak.",
+        "Dat is een experiment.",
+        "Dat is de hypothese."
+      ],
+      "uh": "Correlatie = samen veranderen (nog geen oorzaak)."
+    },
+    {
+      "v": "Wat is causaliteit?",
+      "o": [
+        "Twee dingen die toevallig samen veranderen",
+        "Een oorzaak-gevolgrelatie",
+        "De grootte van de steekproef",
+        "Een verband zonder betekenis"
+      ],
+      "c": 1,
+      "d": 2,
+      "u": "Causaliteit betekent dat het ene ding het andere echt veroorzaakt: oorzaak en gevolg.",
+      "uo": [
+        "Samen veranderen is correlatie, niet per se oorzaak.",
+        "Klopt: een oorzaak-gevolgrelatie.",
+        "Dat is de steekproefgrootte.",
+        "Causaliteit is juist een betekenisvol verband."
+      ],
+      "uh": "Causaliteit = oorzaak en gevolg."
+    },
+    {
+      "v": "Bewijst een correlatie een oorzaak?",
+      "o": [
+        "Ja, een correlatie bewijst altijd meteen de oorzaak",
+        "Ja, als de steekproef klein is",
+        "Nee, een correlatie bewijst geen oorzaak",
+        "Ja, want alles hangt samen"
+      ],
+      "c": 2,
+      "d": 3,
+      "u": "Twee dingen kunnen samen veranderen zonder dat het ene het andere veroorzaakt, dus een correlatie bewijst geen oorzaak.",
+      "uo": [
+        "Een correlatie bewijst juist niet meteen een oorzaak.",
+        "Een kleine steekproef bewijst al helemaal niets.",
+        "Klopt: correlatie is geen bewijs van oorzaak.",
+        "Samenhang is nog geen oorzaak."
+      ],
+      "uh": "Correlatie bewijst geen causaliteit."
+    },
+    {
+      "v": "Wat is een derde factor?",
+      "o": [
+        "Het gemeten getal aan het eind",
+        "De titel van het onderzoek in dit onderzoek",
+        "De verwachting die je van tevoren opstelt",
+        "Een verborgen factor die beide beïnvloedt"
+      ],
+      "c": 3,
+      "d": 2,
+      "u": "Een derde factor is een verborgen oorzaak die twee dingen tegelijk beïnvloedt, waardoor ze samen lijken te veranderen.",
+      "uo": [
+        "Dat is een meetwaarde.",
+        "Dat is de titel.",
+        "Dat is de hypothese.",
+        "Klopt: een verborgen factor die beide beïnvloedt."
+      ],
+      "uh": "Derde factor = verborgen oorzaak achter een schijnverband."
+    },
+    {
+      "v": "Ijsverkoop en verdrinkingen stijgen samen. Wat is de beste verklaring?",
+      "o": [
+        "Warm weer beïnvloedt allebei",
+        "IJs eten laat mensen verdrinken",
+        "Verdrinken zorgt voor meer ijsverkoop",
+        "Er is geen enkel verband"
+      ],
+      "c": 0,
+      "d": 3,
+      "u": "Warm weer is de derde factor: het verhoogt zowel de ijsverkoop als het zwemmen (en dus verdrinkingen).",
+      "uo": [
+        "Klopt: warm weer beïnvloedt beide (derde factor).",
+        "IJs eten veroorzaakt geen verdrinking.",
+        "Verdrinken verkoopt geen ijs.",
+        "Er is wel een verband, maar via een derde factor."
+      ],
+      "uh": "Zoek de derde factor bij een schijnverband."
+    },
+    {
+      "v": "Wat is een schijnverband?",
+      "o": [
+        "Een bewezen oorzaak-gevolgrelatie",
+        "Een verband dat geen oorzaak-gevolg is",
+        "Een grote steekproef van veel mensen",
+        "Een nepbehandeling zonder stof in dit onderzoek"
+      ],
+      "c": 1,
+      "d": 2,
+      "u": "Bij een schijnverband lijken twee dingen samen te hangen, maar veroorzaakt het ene het andere niet.",
+      "uo": [
+        "Dat is juist causaliteit.",
+        "Klopt: een verband zonder oorzaak-gevolg.",
+        "Dat is de steekproefgrootte.",
+        "Dat is een placebo."
+      ],
+      "uh": "Schijnverband = samen veranderen, geen oorzaak."
+    },
+    {
+      "v": "Hoe kun je wel een oorzaak-gevolgrelatie aantonen?",
+      "o": [
+        "Door alleen een correlatie te meten",
+        "Door de steekproef te verkleinen",
+        "Door een experiment met een controlegroep",
+        "Door de opgestelde hypothese helemaal weg te laten"
+      ],
+      "c": 2,
+      "d": 3,
+      "u": "In een experiment verander je één variabele en vergelijk je met een controlegroep, zodat je oorzaak en gevolg kunt vaststellen.",
+      "uo": [
+        "Een correlatie alleen bewijst geen oorzaak.",
+        "Verkleinen helpt niet.",
+        "Klopt: een experiment met controlegroep toont oorzaak.",
+        "De hypothese blijft nodig."
+      ],
+      "uh": "Oorzaak aantonen = experiment met controlegroep."
+    },
+    {
+      "v": "Wat is de valkuil bij correlatie?",
+      "o": [
+        "Eerst de assen van de grafiek lezen",
+        "Een controlegroep gebruiken",
+        "Meerdere keren meten",
+        "Meteen een oorzaak concluderen"
+      ],
+      "c": 3,
+      "d": 2,
+      "u": "De valkuil is uit een correlatie meteen concluderen dat het ene het andere veroorzaakt.",
+      "uo": [
+        "Assen lezen is juist goed.",
+        "Een controlegroep is juist goed.",
+        "Herhalen is juist goed.",
+        "Klopt: meteen een oorzaak concluderen is de valkuil."
+      ],
+      "uh": "Valkuil: van correlatie meteen naar oorzaak springen."
+    },
+    {
+      "v": "Wat is een oorzaak?",
+      "o": [
+        "Datgene wat een gevolg teweegbrengt",
+        "Het getal dat je aan het eind meet",
+        "De verwachting vooraf in dit onderzoek",
+        "De grootte van de groep"
+      ],
+      "c": 0,
+      "d": 1,
+      "u": "Een oorzaak is datgene wat een gevolg teweegbrengt.",
+      "uo": [
+        "Klopt: brengt het gevolg teweeg.",
+        "Dat is een meetwaarde.",
+        "Dat is de hypothese.",
+        "Dat is de steekproefgrootte."
+      ],
+      "uh": "Oorzaak = brengt het gevolg teweeg."
+    },
+    {
+      "v": "Wat is een gevolg?",
+      "o": [
+        "De onafhankelijke variabele",
+        "Datgene wat door een oorzaak ontstaat",
+        "De titel die boven de grafiek staat",
+        "De naam van de onderzoeker in dit onderzoek"
+      ],
+      "c": 1,
+      "d": 1,
+      "u": "Een gevolg is datgene wat door een oorzaak wordt veroorzaakt.",
+      "uo": [
+        "De onafhankelijke variabele is eerder de oorzaak.",
+        "Klopt: ontstaat door de oorzaak.",
+        "Dat is de titel.",
+        "Dat is de naam."
+      ],
+      "uh": "Gevolg = ontstaat door de oorzaak."
+    },
+    {
+      "v": "Twee grootheden hangen samen door puur toeval. Wat is dat?",
+      "o": [
+        "Een bewezen oorzaak",
+        "Een controlegroep in het onderzoek",
+        "Een schijnverband door toeval",
+        "Een nauwkeurige meting"
+      ],
+      "c": 2,
+      "d": 3,
+      "u": "Soms hangen twee dingen door louter kans samen; dat is een schijnverband dat door toeval ontstaat.",
+      "uo": [
+        "Toeval bewijst geen oorzaak.",
+        "Dat is geen controlegroep.",
+        "Klopt: een toevallig schijnverband.",
+        "Toeval zegt niets over nauwkeurigheid."
+      ],
+      "uh": "Toeval kan een schijnverband geven."
+    },
+    {
+      "v": "Waarom heb je een controlegroep nodig om een oorzaak aan te tonen?",
+      "o": [
+        "Om de steekproef kleiner te maken",
+        "Om de hypothese te vervangen",
+        "Om zo snel mogelijk klaar te zijn met de proef",
+        "Om te vergelijken met en zonder de behandeling"
+      ],
+      "c": 3,
+      "d": 3,
+      "u": "Alleen door te vergelijken met een groep zonder behandeling weet je of het effect echt door de behandeling komt.",
+      "uo": [
+        "De steekproef wordt niet kleiner.",
+        "De hypothese blijft.",
+        "Snelheid is niet de reden.",
+        "Klopt: vergelijken met en zonder behandeling."
+      ],
+      "uh": "Controlegroep = vergelijken om oorzaak vast te stellen."
+    },
+    {
+      "v": "Wat mag je NIET zonder meer concluderen uit een correlatie?",
+      "o": [
+        "Dat het ene het andere veroorzaakt",
+        "Dat er tussen de twee een verband is",
+        "Dat de grootheden samen veranderen",
+        "Dat er een grafiek van te maken is"
+      ],
+      "c": 0,
+      "d": 3,
+      "u": "Een correlatie laat een verband zien, maar je mag daar niet zomaar een oorzaak uit afleiden.",
+      "uo": [
+        "Klopt: een oorzaak mag je er niet zomaar uit afleiden.",
+        "Een verband mag je wel vaststellen.",
+        "Samen veranderen zie je juist in een correlatie.",
+        "Een grafiek kun je gewoon maken."
+      ],
+      "uh": "Uit correlatie geen oorzaak concluderen."
+    },
+    {
+      "v": "Wat is het verschil tussen correlatie en causaliteit?",
+      "o": [
+        "Ze betekenen precies hetzelfde",
+        "Correlatie is samen veranderen, causaliteit is oorzaak-gevolg",
+        "Beide begrippen bewijzen samen een oorzaak",
+        "Beide gaan over de steekproef"
+      ],
+      "c": 1,
+      "d": 3,
+      "u": "Correlatie is een verband; causaliteit is een oorzaak-gevolgrelatie. Een correlatie hoeft geen causaliteit te zijn.",
+      "uo": [
+        "Ze verschillen juist.",
+        "Klopt: samen veranderen versus oorzaak-gevolg.",
+        "Alleen causaliteit gaat over oorzaak.",
+        "Ze gaan niet over de steekproef."
+      ],
+      "uh": "Correlatie = verband, causaliteit = oorzaak-gevolg."
+    },
+    {
+      "v": "Meer studeren hangt samen met hogere cijfers. Wat toont dit direct aan?",
+      "o": [
+        "Zeker een oorzaak",
+        "Een controlegroep",
+        "Een correlatie",
+        "Een meetfout"
+      ],
+      "c": 2,
+      "d": 3,
+      "u": "Je ziet dat twee dingen samen veranderen: een correlatie. Voor een oorzaak is meer bewijs nodig.",
+      "uo": [
+        "Een oorzaak is hiermee nog niet bewezen.",
+        "Dat is geen controlegroep.",
+        "Klopt: het toont een correlatie.",
+        "Dat is geen meetfout."
+      ],
+      "uh": "Samen veranderen toont een correlatie, geen oorzaak."
+    },
+    {
+      "v": "Wat kan een correlatie veroorzaken zonder dat A B veroorzaakt?",
+      "o": [
+        "Een grote controlegroep",
+        "Een nauwkeurige meting",
+        "Een tweede hypothese naast de eerste",
+        "Een derde factor die beide beïnvloedt"
+      ],
+      "c": 3,
+      "d": 3,
+      "u": "Een derde factor kan zowel A als B beïnvloeden, waardoor A en B samen veranderen zonder onderling oorzaak-gevolg.",
+      "uo": [
+        "Een controlegroep veroorzaakt geen schijnverband.",
+        "Nauwkeurigheid is niet de oorzaak.",
+        "Een hypothese veroorzaakt geen verband.",
+        "Klopt: een derde factor kan beide beïnvloeden."
+      ],
+      "uh": "Een derde factor kan A en B samen bewegen."
+    },
+    {
+      "v": "Wat is een verband?",
+      "o": [
+        "Een samenhang tussen twee grootheden",
+        "De titel van de grafiek",
+        "Een nepbehandeling zonder werkzame stof",
+        "De naam van de x-as"
+      ],
+      "c": 0,
+      "d": 1,
+      "u": "Een verband is een samenhang tussen twee grootheden, zoals je in een correlatie ziet.",
+      "uo": [
+        "Klopt: een samenhang tussen twee grootheden.",
+        "Dat is de titel.",
+        "Dat is een placebo.",
+        "Dat is een as-naam."
+      ],
+      "uh": "Verband = samenhang tussen twee grootheden."
+    },
+    {
+      "v": "Waarom is één correlatie te weinig voor een oorzaakclaim?",
+      "o": [
+        "Omdat correlaties in het echt niet bestaan",
+        "Omdat er een derde factor of toeval kan spelen",
+        "Omdat een grafiek altijd klopt",
+        "Omdat de steekproef altijd groot is"
+      ],
+      "c": 1,
+      "d": 3,
+      "u": "Achter een correlatie kan een derde factor of toeval zitten, dus één correlatie bewijst geen oorzaak.",
+      "uo": [
+        "Correlaties bestaan wel.",
+        "Klopt: derde factor of toeval kan meespelen.",
+        "Een grafiek klopt niet altijd.",
+        "De steekproef is niet altijd groot."
+      ],
+      "uh": "Achter een correlatie kan toeval of een derde factor zitten."
+    },
+    {
+      "v": "Welke uitspraak klopt?",
+      "o": [
+        "Correlatie is hetzelfde als causaliteit",
+        "Causaliteit is zwakker dan correlatie",
+        "Correlatie bewijst geen causaliteit",
+        "Correlatie betekent geen verband"
+      ],
+      "c": 2,
+      "d": 2,
+      "u": "Een correlatie laat een verband zien, maar bewijst geen oorzaak-gevolgrelatie.",
+      "uo": [
+        "Ze zijn niet hetzelfde.",
+        "Causaliteit is juist een sterker soort uitspraak.",
+        "Klopt: correlatie bewijst geen causaliteit.",
+        "Correlatie is juist wel een verband."
+      ],
+      "uh": "Correlatie bewijst geen causaliteit."
+    },
+    {
+      "v": "Hoe kun je een derde factor uitsluiten?",
+      "o": [
+        "Door de correlatie sterker te maken",
+        "Door minder te meten",
+        "Door de hypothese te schrappen",
+        "Met een goed opgezet experiment"
+      ],
+      "c": 3,
+      "d": 3,
+      "u": "In een experiment houd je andere factoren constant en gebruik je een controlegroep, zodat een derde factor het resultaat niet vertekent.",
+      "uo": [
+        "Een sterkere correlatie blijft een correlatie.",
+        "Minder meten helpt niet.",
+        "De hypothese blijft nodig.",
+        "Klopt: een experiment sluit een derde factor uit."
+      ],
+      "uh": "Experiment sluit een derde factor uit."
+    },
+    {
+      "v": "Twee dingen dalen samen. Wat weet je zeker?",
+      "o": [
+        "Er is een correlatie",
+        "Het ene veroorzaakt het andere",
+        "Er is een controlegroep",
+        "De meting is fout"
+      ],
+      "c": 0,
+      "d": 2,
+      "u": "Samen dalen is ook een correlatie; over oorzaak weet je nog niets zeker.",
+      "uo": [
+        "Klopt: er is een correlatie.",
+        "Een oorzaak is niet zeker.",
+        "Dat is geen controlegroep.",
+        "De meting hoeft niet fout te zijn."
+      ],
+      "uh": "Samen bewegen (op of neer) = correlatie."
+    },
+    {
+      "v": "Wat is een aanwijzing in onderzoek?",
+      "o": [
+        "Een bewezen oorzaak-gevolgrelatie",
+        "Een gegeven dat een verband suggereert maar niet bewijst",
+        "De grootte van de steekproef",
+        "De titel die boven de grafiek staat"
+      ],
+      "c": 1,
+      "d": 2,
+      "u": "Een aanwijzing wijst op een mogelijk verband, maar is nog geen bewijs van een oorzaak.",
+      "uo": [
+        "Een aanwijzing is nog geen bewijs.",
+        "Klopt: suggereert een verband, bewijst niets.",
+        "Dat is de steekproefgrootte.",
+        "Dat is de titel."
+      ],
+      "uh": "Aanwijzing = suggestie, geen bewijs."
+    },
+    {
+      "v": "Waarom is de stap van correlatie naar oorzaak zo verleidelijk maar fout?",
+      "o": [
+        "Omdat correlaties in het echt niet bestaan",
+        "Omdat een grafiek altijd een oorzaak toont",
+        "Omdat samen veranderen lijkt op oorzaak, maar het niet is",
+        "Omdat oorzaak en gevolg hetzelfde zijn"
+      ],
+      "c": 2,
+      "d": 3,
+      "u": "Twee dingen die samen veranderen lijken op oorzaak en gevolg, maar er kan een derde factor of toeval achter zitten.",
+      "uo": [
+        "Correlaties bestaan wel.",
+        "Een grafiek toont niet vanzelf een oorzaak.",
+        "Klopt: het lijkt erop, maar het is geen bewijs.",
+        "Oorzaak en gevolg zijn niet hetzelfde."
+      ],
+      "uh": "Samen veranderen lijkt op oorzaak, maar bewijst het niet."
+    },
+    {
+      "v": "Wat heb je nodig om van correlatie naar causaliteit te gaan?",
+      "o": [
+        "Alleen een grotere grafiek",
+        "Alleen een mooiere tabel met de gegevens",
+        "Alleen een tweede correlatie",
+        "Een experiment met controlegroep"
+      ],
+      "c": 3,
+      "d": 3,
+      "u": "Om oorzaak-gevolg vast te stellen heb je een experiment nodig waarin je één variabele verandert en met een controlegroep vergelijkt.",
+      "uo": [
+        "Een grotere grafiek bewijst niets.",
+        "Een mooiere tabel bewijst niets.",
+        "Nog een correlatie blijft correlatie.",
+        "Klopt: een experiment met controlegroep."
+      ],
+      "uh": "Causaliteit vraagt een experiment met controlegroep."
+    },
+    {
+      "v": "Welke uitspraak over een derde factor klopt?",
+      "o": [
+        "Hij kan twee dingen samen laten veranderen",
+        "Hij is altijd de gemeten variabele",
+        "Hij bewijst de oorzaak-gevolgrelatie",
+        "Hij is gelijk aan de titel van de grafiek"
+      ],
+      "c": 0,
+      "d": 2,
+      "u": "Een derde factor beïnvloedt twee grootheden tegelijk, waardoor ze samen veranderen zonder onderling oorzaak-gevolg.",
+      "uo": [
+        "Klopt: hij beweegt twee dingen tegelijk.",
+        "Hij is juist vaak verborgen.",
+        "Hij bewijst geen oorzaak, hij verklaart het schijnverband.",
+        "Hij is niet de titel."
+      ],
+      "uh": "Derde factor beweegt twee grootheden tegelijk."
+    }
+  ],
+  "oe": [
+    {
+      "vraag": "Leg het verschil uit tussen correlatie en causaliteit.",
+      "antwoord": "Een correlatie is een verband waarbij twee dingen samen veranderen. Causaliteit is een oorzaak-gevolgrelatie: het ene ding veroorzaakt het andere. Bij een correlatie veranderen twee dingen samen, maar dat betekent nog niet dat het ene het andere veroorzaakt."
+    },
+    {
+      "vraag": "Leg uit waarom je uit een correlatie niet zomaar een oorzaak mag concluderen.",
+      "antwoord": "Twee dingen kunnen samen veranderen zonder dat het ene het andere veroorzaakt. Vaak is er een derde factor die beide beïnvloedt, of het is toeval. Daarom is een correlatie alleen geen bewijs van een oorzaak-gevolgrelatie; je zou een verkeerde conclusie kunnen trekken."
+    },
+    {
+      "vraag": "Leg met het voorbeeld van ijsverkoop en verdrinkingen uit wat een derde factor is.",
+      "antwoord": "De verkoop van ijs en het aantal verdrinkingen stijgen in de zomer allebei. Toch veroorzaakt ijs eten geen verdrinkingen. De derde factor is warm weer: bij warm weer wordt er meer ijs verkocht en gaan meer mensen zwemmen, waardoor er ook meer verdrinkingen zijn. De derde factor beïnvloedt dus beide."
+    },
+    {
+      "vraag": "Leg uit hoe je wel een oorzaak-gevolgrelatie kunt aantonen.",
+      "antwoord": "Om een oorzaak aan te tonen doe je een experiment. Je verandert maar één variabele, houdt de rest constant en vergelijkt met een controlegroep die de behandeling niet krijgt. Als alleen de behandelde groep het effect vertoont, kun je concluderen dat de behandeling de oorzaak is."
+    },
+    {
+      "vraag": "Iemand ziet dat mensen die meer koffie drinken vaker slecht slapen, en concludeert dat koffie slecht slapen veroorzaakt. Leg uit wat er mis is met deze redenering.",
+      "antwoord": "De persoon ziet een correlatie: koffie drinken en slecht slapen komen samen voor. Maar dat bewijst nog geen oorzaak. Er kan een derde factor zijn, bijvoorbeeld stress, die zowel meer koffie drinken als slechter slapen veroorzaakt. Om te bewijzen dat koffie de oorzaak is, is een experiment met een controlegroep nodig."
+    }
+  ]
+}

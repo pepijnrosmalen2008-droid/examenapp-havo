@@ -1,0 +1,564 @@
+{
+  "id": "A5",
+  "naam": "Biologisch onderzoeksgereedschap",
+  "beschrijving": "Gouden-standaardmodule bi.A.5: het gebruik van een determineertabel om een soort op naam te brengen, en de functie van een preparaat bij microscopisch onderzoek.",
+  "ceStatus": "CE",
+  "onderwerpen": [
+    "Determineren: een soort op naam brengen",
+    "Determineertabel met keuzes op kenmerken",
+    "Juiste tak kiezen",
+    "Preparaat maken",
+    "Microscoop en vergroting",
+    "Objectglas en dekglas"
+  ],
+  "sam": "Om een onbekend organisme op naam te brengen gebruik je een determineertabel. Bij elke stap kies je uit twee mogelijkheden op basis van een kenmerk, bijvoorbeeld wel of geen vleugels. Je volgt de tabel stap voor stap tot je bij de naam van de soort uitkomt. Kies je een verkeerde tak, dan kom je bij een verkeerde naam uit; goed op de kenmerken letten is dus belangrijk. Voor microscopisch onderzoek maak je een preparaat: een dun plakje materiaal op een objectglas, afgedekt met een dekglas, zodat het licht erdoorheen kan en je het onder de microscoop kunt bekijken. De totale vergroting van een microscoop is de vergroting van het objectief maal die van het oculair.",
+  "begrippen": [
+    {
+      "t": "Determineertabel",
+      "d": "een tabel met keuzes om een soort op naam te brengen"
+    },
+    {
+      "t": "Determineren",
+      "d": "een organisme met kenmerken op naam brengen"
+    },
+    {
+      "t": "Kenmerk",
+      "d": "een eigenschap waarmee je soorten kunt onderscheiden"
+    },
+    {
+      "t": "Preparaat",
+      "d": "een dun plakje materiaal om onder de microscoop te bekijken"
+    },
+    {
+      "t": "Microscoop",
+      "d": "een instrument dat kleine dingen sterk vergroot"
+    },
+    {
+      "t": "Objectglas",
+      "d": "het glaasje waarop je het preparaat legt"
+    },
+    {
+      "t": "Dekglas",
+      "d": "het dunne glaasje dat je over het preparaat legt"
+    },
+    {
+      "t": "Vergroting",
+      "d": "hoeveel keer groter iets onder de microscoop lijkt"
+    },
+    {
+      "t": "Objectief",
+      "d": "de lens dicht bij het preparaat in de microscoop"
+    },
+    {
+      "t": "Oculair",
+      "d": "de lens waar je doorheen kijkt in de microscoop"
+    },
+    {
+      "t": "Loep",
+      "d": "een handvergrootglas voor een kleine vergroting"
+    },
+    {
+      "t": "Coupe",
+      "d": "een heel dun sneetje weefsel voor een preparaat"
+    }
+  ],
+  "sv": [
+    {
+      "v": "Waarvoor gebruik je een determineertabel?",
+      "o": [
+        "Om een soort op naam te brengen",
+        "Om het bloed van een dier te meten",
+        "Om de bloedsuiker te regelen met insuline",
+        "Om de temperatuur van de bodem te meten"
+      ],
+      "c": 0,
+      "d": 1,
+      "u": "Met een determineertabel breng je een onbekend organisme stap voor stap op naam.",
+      "uo": [
+        "Klopt: een soort op naam brengen.",
+        "Dat is geen determineren.",
+        "Dat is hormonale regeling.",
+        "Dat is een abiotische meting."
+      ],
+      "uh": "Determineertabel = een soort op naam brengen."
+    },
+    {
+      "v": "Hoe werkt een determineertabel?",
+      "o": [
+        "Je meet steeds de temperatuur",
+        "Je kiest bij elke stap op een kenmerk",
+        "Je raadt de naam van de soort meteen",
+        "Je telt het aantal individuen"
+      ],
+      "c": 1,
+      "d": 2,
+      "u": "Bij elke stap kies je uit twee mogelijkheden op basis van een kenmerk, tot je bij de naam uitkomt.",
+      "uo": [
+        "Je meet geen temperatuur bij determineren.",
+        "Klopt: bij elke stap kies je op een kenmerk.",
+        "Raden is geen determineren.",
+        "Je telt geen individuen."
+      ],
+      "uh": "Determineren = per stap kiezen op een kenmerk."
+    },
+    {
+      "v": "Wat gebeurt er als je in de determineertabel een verkeerde tak kiest?",
+      "o": [
+        "Je komt bij de juiste naam uit",
+        "De tabel telt het aantal individuen in het gebied",
+        "Je komt bij een verkeerde naam uit",
+        "De microscoop vergroot meer"
+      ],
+      "c": 2,
+      "d": 3,
+      "u": "Kies je op een verkeerd kenmerk de verkeerde tak, dan leidt de tabel je naar de verkeerde soortnaam.",
+      "uo": [
+        "Bij een verkeerde tak kom je juist verkeerd uit.",
+        "De tabel telt geen individuen.",
+        "Klopt: een verkeerde tak geeft een verkeerde naam.",
+        "De microscoop staat hier los van."
+      ],
+      "uh": "Verkeerde tak = verkeerde naam."
+    },
+    {
+      "v": "Wat is een preparaat?",
+      "o": [
+        "Een grote steekproef van veel mensen",
+        "De verwachting van het onderzoek",
+        "Een determineertabel met keuzes",
+        "Een dun plakje materiaal onder de microscoop"
+      ],
+      "c": 3,
+      "d": 1,
+      "u": "Een preparaat is een dun plakje materiaal dat je onder de microscoop bekijkt.",
+      "uo": [
+        "Dat is een steekproef.",
+        "Dat is de hypothese.",
+        "Dat is een determineertabel.",
+        "Klopt: een dun plakje materiaal voor de microscoop."
+      ],
+      "uh": "Preparaat = dun plakje materiaal voor de microscoop."
+    },
+    {
+      "v": "Waarom moet een preparaat dun zijn?",
+      "o": [
+        "Zodat het licht er doorheen kan",
+        "Zodat het preparaat een stuk zwaarder wordt",
+        "Zodat het meer kleur krijgt",
+        "Zodat het langer meegaat"
+      ],
+      "c": 0,
+      "d": 3,
+      "u": "Een dun preparaat laat het licht van de microscoop erdoorheen, zodat je de cellen kunt zien.",
+      "uo": [
+        "Klopt: dun laat het licht erdoor.",
+        "Gewicht is niet het punt.",
+        "Kleur is niet de reden.",
+        "Houdbaarheid is niet de reden."
+      ],
+      "uh": "Dun preparaat = licht kan erdoorheen."
+    },
+    {
+      "v": "Waarop leg je een preparaat?",
+      "o": [
+        "Op een dekglas",
+        "Op een objectglas",
+        "Op de determineertabel",
+        "Op het oculair"
+      ],
+      "c": 1,
+      "d": 1,
+      "u": "Het preparaat leg je op een objectglas en dek je af met een dekglas.",
+      "uo": [
+        "Het dekglas komt er juist bovenop.",
+        "Klopt: op het objectglas.",
+        "Een tabel is geen ondergrond.",
+        "Het oculair is de kijklens."
+      ],
+      "uh": "Preparaat op het objectglas, dekglas erop."
+    },
+    {
+      "v": "Wat leg je over het preparaat heen?",
+      "o": [
+        "Een objectglas",
+        "De determineertabel",
+        "Een dekglas",
+        "Een loep"
+      ],
+      "c": 2,
+      "d": 1,
+      "u": "Over het preparaat leg je een dun dekglas, zodat het plat en beschermd ligt.",
+      "uo": [
+        "Het objectglas ligt er juist onder.",
+        "Een tabel leg je er niet op.",
+        "Klopt: het dekglas komt erbovenop.",
+        "Een loep is geen dekglas."
+      ],
+      "uh": "Dekglas komt over het preparaat."
+    },
+    {
+      "v": "Wat doet een microscoop?",
+      "o": [
+        "De bloedsuiker regelen",
+        "Soorten op naam brengen",
+        "De temperatuur van de omgeving meten",
+        "Kleine dingen sterk vergroten"
+      ],
+      "c": 3,
+      "d": 1,
+      "u": "Een microscoop vergroot kleine dingen sterk, zodat je bijvoorbeeld cellen kunt zien.",
+      "uo": [
+        "Dat doet een hormoon, niet een microscoop.",
+        "Dat doet een determineertabel.",
+        "Dat doet een thermometer.",
+        "Klopt: kleine dingen sterk vergroten."
+      ],
+      "uh": "Microscoop = sterk vergroten."
+    },
+    {
+      "v": "Hoe bereken je de totale vergroting van een microscoop?",
+      "o": [
+        "Objectief maal oculair",
+        "Objectief plus oculair optellen",
+        "Alleen het objectief tellen",
+        "Alleen het oculair tellen"
+      ],
+      "c": 0,
+      "d": 2,
+      "u": "De totale vergroting is de vergroting van het objectief vermenigvuldigd met die van het oculair.",
+      "uo": [
+        "Klopt: objectief maal oculair.",
+        "Je telt ze niet op, je vermenigvuldigt.",
+        "Beide lenzen tellen mee.",
+        "Beide lenzen tellen mee."
+      ],
+      "uh": "Totale vergroting = objectief × oculair."
+    },
+    {
+      "v": "Het objectief vergroot 10x en het oculair 10x. Wat is de totale vergroting?",
+      "o": [
+        "20 keer",
+        "100 keer",
+        "10 keer",
+        "Een vergroting van maar 1 keer"
+      ],
+      "c": 1,
+      "d": 2,
+      "u": "Je vermenigvuldigt: 10 maal 10 is 100 keer.",
+      "uo": [
+        "20 is de optelling, niet het product.",
+        "Klopt: 10 maal 10 is 100.",
+        "10 is maar één lens.",
+        "1 keer is geen vergroting."
+      ],
+      "uh": "10 × 10 = 100 keer vergroting."
+    },
+    {
+      "v": "Wat is de functie van het objectief?",
+      "o": [
+        "De lens waar je doorheen kijkt",
+        "Het glaasje onder het preparaat",
+        "De lens dicht bij het preparaat",
+        "De handvergroter buiten de microscoop"
+      ],
+      "c": 2,
+      "d": 2,
+      "u": "Het objectief is de lens vlak boven het preparaat die het beeld het eerst vergroot.",
+      "uo": [
+        "Dat is het oculair.",
+        "Dat is het objectglas.",
+        "Klopt: de lens dicht bij het preparaat.",
+        "Dat is een loep."
+      ],
+      "uh": "Objectief = lens dicht bij het preparaat."
+    },
+    {
+      "v": "Wat is het oculair?",
+      "o": [
+        "Het glaasje onder het preparaat",
+        "De determineertabel",
+        "Een handvergrootglas",
+        "De lens waar je doorheen kijkt"
+      ],
+      "c": 3,
+      "d": 2,
+      "u": "Het oculair is de lens boven in de microscoop waar je met je oog doorheen kijkt.",
+      "uo": [
+        "Dat is het objectglas.",
+        "Dat is een tabel.",
+        "Dat is een loep.",
+        "Klopt: de kijklens bovenin."
+      ],
+      "uh": "Oculair = de lens waar je doorheen kijkt."
+    },
+    {
+      "v": "Welk kenmerk zou in een determineertabel kunnen staan?",
+      "o": [
+        "Wel of geen vleugels",
+        "De naam van de onderzoeker",
+        "De datum van vandaag",
+        "De titel van het boek"
+      ],
+      "c": 0,
+      "d": 2,
+      "u": "Kenmerken zijn eigenschappen waarmee je soorten onderscheidt, zoals wel of geen vleugels.",
+      "uo": [
+        "Klopt: wel of geen vleugels is een kenmerk.",
+        "De naam is geen kenmerk van de soort.",
+        "De datum is geen kenmerk.",
+        "De titel is geen kenmerk."
+      ],
+      "uh": "Kenmerk = eigenschap om soorten te onderscheiden."
+    },
+    {
+      "v": "Waarom let je goed op de kenmerken bij het determineren?",
+      "o": [
+        "Anders wordt de microscoop kapot",
+        "Anders kom je bij een verkeerde soort uit",
+        "Anders daalt de bloedsuikerspiegel in je bloed",
+        "Anders verdwijnt het preparaat"
+      ],
+      "c": 1,
+      "d": 3,
+      "u": "Een verkeerd kenmerk leidt naar de verkeerde tak en dus naar een verkeerde soortnaam.",
+      "uo": [
+        "De microscoop gaat er niet van kapot.",
+        "Klopt: verkeerd kenmerk geeft een verkeerde soort.",
+        "De bloedsuiker staat hier los van.",
+        "Het preparaat verdwijnt niet."
+      ],
+      "uh": "Goed op kenmerken letten = juiste soortnaam."
+    },
+    {
+      "v": "Wat is determineren?",
+      "o": [
+        "Het bloed van een dier nauwkeurig meten",
+        "De temperatuur van water regelen",
+        "Een organisme op naam brengen met kenmerken",
+        "Een grafiek tekenen van de groei"
+      ],
+      "c": 2,
+      "d": 1,
+      "u": "Determineren is een organisme op naam brengen aan de hand van zijn kenmerken.",
+      "uo": [
+        "Dat is geen determineren.",
+        "Dat is temperatuurregeling.",
+        "Klopt: op naam brengen met kenmerken.",
+        "Dat is data verwerken."
+      ],
+      "uh": "Determineren = op naam brengen met kenmerken."
+    },
+    {
+      "v": "Waarvoor gebruik je een loep?",
+      "o": [
+        "Voor het regelen van de hormonen in het lichaam",
+        "Voor het meten van de bloeddruk",
+        "Voor het tekenen van een grafiek",
+        "Voor een kleine vergroting in de hand"
+      ],
+      "c": 3,
+      "d": 1,
+      "u": "Een loep is een handvergrootglas voor een kleine vergroting, handig in het veld.",
+      "uo": [
+        "Een loep regelt geen hormonen.",
+        "Een loep meet geen bloeddruk.",
+        "Een loep tekent geen grafiek.",
+        "Klopt: een kleine vergroting in de hand."
+      ],
+      "uh": "Loep = handvergrootglas, kleine vergroting."
+    },
+    {
+      "v": "Waarom gebruik je een microscoop en niet een loep voor cellen?",
+      "o": [
+        "Omdat een microscoop veel sterker vergroot",
+        "Omdat een loep veel zwaarder is dan een microscoop",
+        "Omdat een loep licht maakt",
+        "Omdat een microscoop de soort benoemt"
+      ],
+      "c": 0,
+      "d": 3,
+      "u": "Cellen zijn zo klein dat je een sterke vergroting nodig hebt; een loep vergroot te weinig.",
+      "uo": [
+        "Klopt: een microscoop vergroot veel sterker.",
+        "Gewicht is niet de reden.",
+        "Een loep maakt geen licht.",
+        "Namen geven doet de determineertabel."
+      ],
+      "uh": "Cellen zien = microscoop (sterke vergroting)."
+    },
+    {
+      "v": "Een dun sneetje weefsel voor een preparaat heet ook wel:",
+      "o": [
+        "Een oculair",
+        "Een coupe",
+        "Een determineertabel",
+        "Een steekproef"
+      ],
+      "c": 1,
+      "d": 2,
+      "u": "Een coupe is een heel dun sneetje weefsel dat je als preparaat onder de microscoop legt.",
+      "uo": [
+        "Dat is een kijklens.",
+        "Klopt: een dun sneetje heet een coupe.",
+        "Dat is een tabel.",
+        "Dat is een deel van een groep."
+      ],
+      "uh": "Coupe = dun sneetje weefsel voor een preparaat."
+    },
+    {
+      "v": "Welke volgorde klopt bij het maken van een preparaat?",
+      "o": [
+        "Dekglas eerst, dan het materiaal erop",
+        "Het materiaal op het oculair van de microscoop leggen",
+        "Materiaal op objectglas, dan dekglas erop",
+        "Materiaal in de determineertabel leggen"
+      ],
+      "c": 2,
+      "d": 2,
+      "u": "Je legt het dunne materiaal op het objectglas en dekt het daarna af met een dekglas.",
+      "uo": [
+        "Het dekglas komt juist als laatste.",
+        "Het oculair is de kijklens, geen ondergrond.",
+        "Klopt: materiaal op het objectglas, dekglas erop.",
+        "Een tabel is geen ondergrond."
+      ],
+      "uh": "Objectglas met materiaal, dan dekglas erop."
+    },
+    {
+      "v": "Wat is een objectglas?",
+      "o": [
+        "De lens waar je doorheen kijkt",
+        "De determineertabel met keuzes op kenmerken",
+        "Een handvergrootglas",
+        "Het glaasje waarop het preparaat ligt"
+      ],
+      "c": 3,
+      "d": 1,
+      "u": "Het objectglas is het glaasje waarop je het preparaat legt.",
+      "uo": [
+        "Dat is het oculair.",
+        "Dat is een determineertabel.",
+        "Dat is een loep.",
+        "Klopt: het glaasje onder het preparaat."
+      ],
+      "uh": "Objectglas = glaasje onder het preparaat."
+    },
+    {
+      "v": "Waarvoor dient het dekglas?",
+      "o": [
+        "Het houdt het preparaat plat en beschermd",
+        "Het vergroot het beeld het meest",
+        "Het brengt de soort op naam",
+        "Het meet de totale vergroting van de microscoop"
+      ],
+      "c": 0,
+      "d": 2,
+      "u": "Het dekglas houdt het preparaat plat en beschermt het, zodat het beeld scherp blijft.",
+      "uo": [
+        "Klopt: het houdt het plat en beschermd.",
+        "Vergroten doet het objectief.",
+        "Namen geven doet de determineertabel.",
+        "Meten doet het dekglas niet."
+      ],
+      "uh": "Dekglas = houdt het preparaat plat en beschermd."
+    },
+    {
+      "v": "Waarom is een determineertabel handig?",
+      "o": [
+        "Je regelt er de bloedsuiker mee",
+        "Je brengt stap voor stap een soort op naam",
+        "Je vergroot er de cellen mee onder de lens",
+        "Je meet er de temperatuur mee"
+      ],
+      "c": 1,
+      "d": 2,
+      "u": "Met een determineertabel kom je via keuzes op kenmerken stap voor stap bij de juiste soortnaam.",
+      "uo": [
+        "Bloedsuiker regelen doet een hormoon.",
+        "Klopt: stap voor stap naar de soortnaam.",
+        "Vergroten doet een microscoop.",
+        "Meten doet een thermometer."
+      ],
+      "uh": "Determineertabel = stap voor stap naar de soortnaam."
+    },
+    {
+      "v": "Je bekijkt met een 40x objectief en een 10x oculair. Wat is de vergroting?",
+      "o": [
+        "50 keer",
+        "30 keer",
+        "400 keer",
+        "Een vergroting van maar 4 keer"
+      ],
+      "c": 2,
+      "d": 3,
+      "u": "Vermenigvuldig: 40 maal 10 is 400 keer.",
+      "uo": [
+        "50 is de optelling, niet het product.",
+        "30 is het verschil, niet het product.",
+        "Klopt: 40 maal 10 is 400.",
+        "4 keer klopt niet."
+      ],
+      "uh": "40 × 10 = 400 keer."
+    },
+    {
+      "v": "Welke uitspraak over onderzoeksgereedschap klopt?",
+      "o": [
+        "Een microscoop brengt een soort op naam",
+        "Een preparaat vergroot helemaal uit zichzelf",
+        "Een loep vervangt de hele microscoop",
+        "Een determineertabel brengt een soort op naam"
+      ],
+      "c": 3,
+      "d": 2,
+      "u": "Een determineertabel gebruik je om op naam te brengen; een microscoop gebruik je om te vergroten.",
+      "uo": [
+        "De microscoop vergroot, hij benoemt niet.",
+        "Een preparaat vergroot niet uit zichzelf.",
+        "Een loep vergroot minder dan een microscoop.",
+        "Klopt: de determineertabel brengt op naam."
+      ],
+      "uh": "Determineertabel benoemt, microscoop vergroot."
+    },
+    {
+      "v": "Wat heb je nodig om cellen van een uienrokje te bekijken?",
+      "o": [
+        "Een preparaat en een microscoop",
+        "Een determineertabel en een loep",
+        "Een thermometer en een grafiek",
+        "Een controlegroep en een placebo"
+      ],
+      "c": 0,
+      "d": 3,
+      "u": "Je maakt een dun preparaat van het uienrokje en bekijkt dat onder de microscoop.",
+      "uo": [
+        "Klopt: een preparaat onder de microscoop.",
+        "Een tabel en loep zijn hiervoor niet genoeg.",
+        "Die horen bij data en temperatuur.",
+        "Die horen bij een medicijnproef."
+      ],
+      "uh": "Cellen bekijken = preparaat + microscoop."
+    }
+  ],
+  "oe": [
+    {
+      "vraag": "Leg uit hoe je met een determineertabel een onbekend organisme op naam brengt.",
+      "antwoord": "Bij een determineertabel kies je bij elke stap uit twee mogelijkheden op basis van een kenmerk van het organisme, bijvoorbeeld wel of geen vleugels. De keuze verwijst je naar een volgende stap. Zo werk je de tabel af tot je bij de naam van de soort uitkomt."
+    },
+    {
+      "vraag": "Leg uit waarom je goed op de kenmerken moet letten bij het determineren.",
+      "antwoord": "Bij elke stap in de determineertabel bepaalt een kenmerk welke tak je volgt. Als je een kenmerk verkeerd beoordeelt, kies je de verkeerde tak. Dan volg je een verkeerd deel van de tabel en kom je bij een verkeerde soortnaam uit. Nauwkeurig op de kenmerken letten is dus belangrijk."
+    },
+    {
+      "vraag": "Leg uit wat een preparaat is en waarom het dun moet zijn.",
+      "antwoord": "Een preparaat is een dun plakje materiaal dat je onder de microscoop bekijkt. Het moet dun zijn zodat het licht van de microscoop er doorheen kan. Alleen dan zie je de cellen of de structuur duidelijk; bij een te dik preparaat komt er geen licht doorheen en zie je niets."
+    },
+    {
+      "vraag": "Leg uit hoe je een preparaat maakt en welke glaasjes je gebruikt.",
+      "antwoord": "Je legt een dun plakje materiaal op een objectglas. Daarna leg je er voorzichtig een dun dekglas overheen, zodat het materiaal plat en beschermd ligt. Zo kun je het preparaat op de tafel van de microscoop leggen en bekijken."
+    },
+    {
+      "vraag": "Leg uit hoe je de totale vergroting van een microscoop berekent en geef een voorbeeld.",
+      "antwoord": "De totale vergroting is de vergroting van het objectief vermenigvuldigd met die van het oculair. Als het objectief 40 keer vergroot en het oculair 10 keer, dan is de totale vergroting 40 maal 10, dus 400 keer."
+    }
+  ]
+}

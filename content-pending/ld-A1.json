@@ -1,0 +1,564 @@
+{
+  "id": "A1",
+  "naam": "Onderzoek opzetten",
+  "beschrijving": "Gouden-standaardmodule bi.A.1: een biologisch experiment opzetten met een toetsbare hypothese, de onafhankelijke, afhankelijke en constante variabelen, en een controlegroep.",
+  "ceStatus": "CE",
+  "onderwerpen": [
+    "Hypothese als toetsbare verwachting",
+    "Onafhankelijke variabele (wat je verandert)",
+    "Afhankelijke variabele (wat je meet)",
+    "Constante variabelen (wat je gelijk houdt)",
+    "Controlegroep en controle-experiment",
+    "Eerlijke vergelijking"
+  ],
+  "sam": "Bij het opzetten van een experiment begin je met een toetsbare hypothese: een verwachting die je met metingen kunt controleren. Je onderscheidt drie soorten variabelen. De onafhankelijke variabele is wat de onderzoeker zelf verandert, de mogelijke oorzaak. De afhankelijke variabele is wat je meet, het gevolg. De constante variabelen houd je gelijk, zodat het verschil in de meting alleen door de onafhankelijke variabele kan komen: een eerlijke vergelijking. Om zeker te weten dat het effect door je behandeling komt, gebruik je een controlegroep: een groep zonder de behandeling waarmee je vergelijkt.",
+  "begrippen": [
+    {
+      "t": "Hypothese",
+      "d": "een toetsbare verwachting die je met een experiment kunt controleren"
+    },
+    {
+      "t": "Onafhankelijke variabele",
+      "d": "wat de onderzoeker zelf verandert (de mogelijke oorzaak)"
+    },
+    {
+      "t": "Afhankelijke variabele",
+      "d": "wat je meet in het experiment (het gevolg)"
+    },
+    {
+      "t": "Constante variabele",
+      "d": "een factor die je gelijk houdt voor een eerlijke vergelijking"
+    },
+    {
+      "t": "Controlegroep",
+      "d": "een groep zonder de behandeling om mee te vergelijken"
+    },
+    {
+      "t": "Controle-experiment",
+      "d": "een experiment dat controleert of het effect echt door de behandeling komt"
+    },
+    {
+      "t": "Experiment",
+      "d": "een proef waarmee je een hypothese toetst"
+    },
+    {
+      "t": "Variabele",
+      "d": "een factor in een onderzoek die kan veranderen"
+    },
+    {
+      "t": "Meetwaarde",
+      "d": "een gemeten getal in een experiment"
+    },
+    {
+      "t": "Onderzoeksvraag",
+      "d": "de vraag die je met het onderzoek wilt beantwoorden"
+    },
+    {
+      "t": "Proefopzet",
+      "d": "de manier waarop je het experiment inricht"
+    },
+    {
+      "t": "Herhaling",
+      "d": "het experiment vaker doen om toeval uit te sluiten"
+    }
+  ],
+  "sv": [
+    {
+      "v": "Wat is een hypothese?",
+      "o": [
+        "Een toetsbare verwachting",
+        "Een meetwaarde die je opschrijft",
+        "Het antwoord dat altijd al vaststaat",
+        "De naam van een meetinstrument"
+      ],
+      "c": 0,
+      "d": 1,
+      "u": "Een hypothese is een verwachting die je met een experiment kunt toetsen.",
+      "uo": [
+        "Klopt: een toetsbare verwachting.",
+        "Dat is een meetwaarde, geen hypothese.",
+        "Een hypothese staat juist nog niet vast.",
+        "Dat is een instrument, geen hypothese."
+      ],
+      "uh": "Hypothese = toetsbare verwachting."
+    },
+    {
+      "v": "Wat is de onafhankelijke variabele?",
+      "o": [
+        "Wat je meet als resultaat",
+        "Wat de onderzoeker zelf verandert",
+        "Een factor die je gelijk houdt",
+        "Het getal dat toevallig uit de meting komt rollen"
+      ],
+      "c": 1,
+      "d": 2,
+      "u": "De onafhankelijke variabele is wat de onderzoeker bewust verandert: de mogelijke oorzaak.",
+      "uo": [
+        "Dat is de afhankelijke variabele.",
+        "Klopt: wat de onderzoeker zelf verandert.",
+        "Dat is een constante variabele.",
+        "Een meetgetal is geen variabele die je instelt."
+      ],
+      "uh": "Onafhankelijk = wat jij zelf verandert."
+    },
+    {
+      "v": "Wat is de afhankelijke variabele?",
+      "o": [
+        "Wat de onderzoeker zelf instelt",
+        "Een factor die je constant houdt",
+        "Wat je meet",
+        "De hypothese van het onderzoek"
+      ],
+      "c": 2,
+      "d": 2,
+      "u": "De afhankelijke variabele is wat je meet: het gevolg dat afhangt van wat je verandert.",
+      "uo": [
+        "Dat is de onafhankelijke variabele.",
+        "Dat is een constante variabele.",
+        "Klopt: wat je meet, het gevolg.",
+        "Een hypothese is geen variabele."
+      ],
+      "uh": "Afhankelijk = wat je meet (het gevolg)."
+    },
+    {
+      "v": "Wat is een constante variabele?",
+      "o": [
+        "Wat je bewust verandert",
+        "Wat je aan het eind meet",
+        "De verwachting die je vooraf hebt opgesteld",
+        "Een factor die je gelijk houdt"
+      ],
+      "c": 3,
+      "d": 2,
+      "u": "Constante variabelen houd je gelijk, zodat de vergelijking eerlijk blijft.",
+      "uo": [
+        "Dat is de onafhankelijke variabele.",
+        "Dat is de afhankelijke variabele.",
+        "Dat is de hypothese.",
+        "Klopt: een factor die je gelijk houdt."
+      ],
+      "uh": "Constant = gelijk houden voor een eerlijke vergelijking."
+    },
+    {
+      "v": "Waarvoor dient een controlegroep?",
+      "o": [
+        "Om mee te vergelijken",
+        "Om het experiment sneller te maken",
+        "Om de hypothese te verzinnen",
+        "Om de meetlat af te lezen"
+      ],
+      "c": 0,
+      "d": 2,
+      "u": "Een controlegroep krijgt niet de behandeling, zodat je kunt vergelijken en het effect ziet.",
+      "uo": [
+        "Klopt: de controlegroep is de vergelijkingsgroep.",
+        "Een controlegroep is niet voor snelheid.",
+        "De hypothese bedenk je vooraf zelf.",
+        "Een controlegroep is geen meetinstrument."
+      ],
+      "uh": "Controlegroep = de groep om mee te vergelijken."
+    },
+    {
+      "v": "Waarom houd je constante variabelen gelijk?",
+      "o": [
+        "Om de uitkomst van de meting toevalliger te maken",
+        "Om het verschil alleen door de behandeling te laten komen",
+        "Om meer variabelen tegelijk te veranderen",
+        "Om de hypothese overbodig te maken"
+      ],
+      "c": 1,
+      "d": 3,
+      "u": "Door alles behalve de onafhankelijke variabele gelijk te houden, weet je dat een verschil door die variabele komt.",
+      "uo": [
+        "Constant houden maakt de meting juist eerlijker.",
+        "Klopt: zo komt het verschil alleen door de behandeling.",
+        "Je verandert juist maar één ding tegelijk.",
+        "De hypothese blijft gewoon nodig."
+      ],
+      "uh": "Constant houden = eerlijke vergelijking, één oorzaak."
+    },
+    {
+      "v": "Een onderzoeker test of meer licht planten sneller laat groeien. Wat is de onafhankelijke variabele?",
+      "o": [
+        "De groeisnelheid van de plant",
+        "De soort plant",
+        "De hoeveelheid licht",
+        "De temperatuur van de kamer"
+      ],
+      "c": 2,
+      "d": 3,
+      "u": "De hoeveelheid licht wordt bewust veranderd, dus dat is de onafhankelijke variabele.",
+      "uo": [
+        "De groeisnelheid is wat je meet, dus afhankelijk.",
+        "De plantensoort houd je gelijk (constant).",
+        "Klopt: de hoeveelheid licht wordt veranderd.",
+        "De temperatuur houd je gelijk."
+      ],
+      "uh": "Wat je zelf instelt = onafhankelijke variabele."
+    },
+    {
+      "v": "In datzelfde onderzoek: wat is de afhankelijke variabele?",
+      "o": [
+        "De hoeveelheid licht",
+        "De grootte van de pot",
+        "De soort plant die in de proef wordt gebruikt",
+        "De groeisnelheid van de plant"
+      ],
+      "c": 3,
+      "d": 3,
+      "u": "De groeisnelheid is wat je meet en hangt af van het licht, dus dat is de afhankelijke variabele.",
+      "uo": [
+        "Het licht wordt ingesteld, dus onafhankelijk.",
+        "De potgrootte houd je gelijk.",
+        "De plantensoort houd je gelijk.",
+        "Klopt: de groeisnelheid is wat je meet."
+      ],
+      "uh": "Wat je meet = afhankelijke variabele."
+    },
+    {
+      "v": "Wat is een goede hypothese voor dit onderzoek?",
+      "o": [
+        "Meer licht laat de plant sneller groeien",
+        "Planten zijn groen van kleur",
+        "Een lampje kost veel stroom",
+        "De onderzoeker in het lab heet toevallig Sam"
+      ],
+      "c": 0,
+      "d": 2,
+      "u": "Een goede hypothese is een toetsbare verwachting over het verband tussen licht en groei.",
+      "uo": [
+        "Klopt: een toetsbare verwachting over licht en groei.",
+        "Dat is een feit, geen toetsbare verwachting over dit onderzoek.",
+        "Dat gaat niet over de groei van de plant.",
+        "Dat is geen wetenschappelijke verwachting."
+      ],
+      "uh": "Hypothese = toetsbare verwachting over het verband."
+    },
+    {
+      "v": "Waarom is een controlegroep belangrijk?",
+      "o": [
+        "Met een controlegroep hoef je niet te meten",
+        "Zonder controlegroep weet je niet of het effect door de behandeling komt",
+        "Een controlegroep vervangt de hele hypothese",
+        "Een controlegroep maakt de plant groter"
+      ],
+      "c": 1,
+      "d": 3,
+      "u": "De controlegroep laat zien wat er zonder behandeling gebeurt, zodat je het effect kunt toeschrijven aan de behandeling.",
+      "uo": [
+        "Je moet nog steeds meten.",
+        "Klopt: zonder controlegroep mis je de vergelijking.",
+        "De hypothese blijft nodig.",
+        "De controlegroep beïnvloedt de behandelgroep niet."
+      ],
+      "uh": "Controlegroep = weet zeker dat het effect van de behandeling komt."
+    },
+    {
+      "v": "Wat verander je in een goed experiment tegelijk?",
+      "o": [
+        "Alle variabelen tegelijk",
+        "Zoveel mogelijk dingen door elkaar",
+        "Maar één variabele",
+        "Niets, je meet alleen"
+      ],
+      "c": 2,
+      "d": 2,
+      "u": "Je verandert maar één variabele (de onafhankelijke) en houdt de rest gelijk, zodat je het effect kunt toeschrijven.",
+      "uo": [
+        "Alles tegelijk maakt de conclusie onmogelijk.",
+        "Door elkaar veranderen geeft geen eerlijk resultaat.",
+        "Klopt: verander maar één variabele tegelijk.",
+        "Je verandert wel degelijk iets: de onafhankelijke variabele."
+      ],
+      "uh": "Verander één variabele tegelijk."
+    },
+    {
+      "v": "Wat is de rol van een controle-experiment?",
+      "o": [
+        "Het maakt de gemeten waarden kunstmatig hoger",
+        "Het vervangt de onderzoeksvraag",
+        "Het bepaalt de kleur van de plant",
+        "Het controleert of het effect echt door de behandeling komt"
+      ],
+      "c": 3,
+      "d": 2,
+      "u": "Een controle-experiment toont wat er zonder de behandeling gebeurt, ter vergelijking met het echte experiment.",
+      "uo": [
+        "Het verandert de meetwaarden niet kunstmatig.",
+        "De onderzoeksvraag blijft bestaan.",
+        "Het bepaalt geen kleur.",
+        "Klopt: het controleert of het effect van de behandeling komt."
+      ],
+      "uh": "Controle-experiment = vergelijking zonder behandeling."
+    },
+    {
+      "v": "Wat is een onderzoeksvraag?",
+      "o": [
+        "De vraag die je met het onderzoek wilt beantwoorden",
+        "Het gemeten getal helemaal aan het eind van de proef",
+        "Een factor die je gelijk houdt",
+        "Het meetinstrument dat je gebruikt"
+      ],
+      "c": 0,
+      "d": 1,
+      "u": "De onderzoeksvraag is de vraag waar het onderzoek een antwoord op moet geven.",
+      "uo": [
+        "Klopt: de vraag die je wilt beantwoorden.",
+        "Dat is een meetwaarde.",
+        "Dat is een constante variabele.",
+        "Dat is een instrument."
+      ],
+      "uh": "Onderzoeksvraag = wat je wilt weten."
+    },
+    {
+      "v": "Waarom herhaal je een experiment meerdere keren?",
+      "o": [
+        "Om het duurder te maken",
+        "Om toeval uit te sluiten",
+        "Om de hypothese te veranderen",
+        "Om minder te hoeven meten"
+      ],
+      "c": 1,
+      "d": 3,
+      "u": "Door te herhalen zie je of een resultaat steeds terugkomt, zodat het niet op toeval berust.",
+      "uo": [
+        "Herhalen is niet bedoeld om het duurder te maken.",
+        "Klopt: herhalen sluit toeval uit.",
+        "De hypothese verander je niet zomaar.",
+        "Je meet juist vaker, niet minder."
+      ],
+      "uh": "Herhalen = toeval uitsluiten."
+    },
+    {
+      "v": "Een goede proefopzet zorgt vooral dat je conclusie:",
+      "o": [
+        "toevallig tot stand komt",
+        "los staat van de metingen",
+        "betrouwbaar en eerlijk is",
+        "de opgestelde hypothese volledig negeert"
+      ],
+      "c": 2,
+      "d": 2,
+      "u": "Met een goede proefopzet (één variabele, controlegroep, herhaling) wordt je conclusie eerlijk en betrouwbaar.",
+      "uo": [
+        "Een goede opzet vermindert juist toeval.",
+        "De conclusie steunt juist op de metingen.",
+        "Klopt: een goede opzet maakt de conclusie eerlijk en betrouwbaar.",
+        "De conclusie toetst juist de hypothese."
+      ],
+      "uh": "Goede proefopzet = eerlijke, betrouwbare conclusie."
+    },
+    {
+      "v": "Welke variabele is het gevolg dat je meet?",
+      "o": [
+        "De onafhankelijke variabele",
+        "De constante variabele",
+        "De controlegroep",
+        "De afhankelijke variabele"
+      ],
+      "c": 3,
+      "d": 1,
+      "u": "De afhankelijke variabele is het gevolg dat je meet en dat afhangt van de onafhankelijke variabele.",
+      "uo": [
+        "Die stel je juist zelf in.",
+        "Die houd je gelijk.",
+        "Een controlegroep is geen variabele.",
+        "Klopt: de afhankelijke variabele meet je."
+      ],
+      "uh": "Het gevolg dat je meet = afhankelijk."
+    },
+    {
+      "v": "Wat is het verschil tussen de onafhankelijke en de afhankelijke variabele?",
+      "o": [
+        "De ene verander je, de andere meet je",
+        "Ze zijn precies hetzelfde",
+        "Beide variabelen houd je tijdens de proef constant",
+        "Beide zijn de hypothese"
+      ],
+      "c": 0,
+      "d": 3,
+      "u": "De onafhankelijke variabele verander je zelf; de afhankelijke variabele meet je als gevolg.",
+      "uo": [
+        "Klopt: veranderen versus meten.",
+        "Ze verschillen juist.",
+        "De onafhankelijke houd je niet constant.",
+        "Geen van beide is de hypothese."
+      ],
+      "uh": "Onafhankelijk = veranderen, afhankelijk = meten."
+    },
+    {
+      "v": "In een medicijnproef krijgt de ene groep het medicijn. Wat is de andere groep?",
+      "o": [
+        "De onafhankelijke variabele",
+        "De controlegroep",
+        "De hypothese",
+        "De meetwaarde"
+      ],
+      "c": 1,
+      "d": 2,
+      "u": "De groep zonder medicijn is de controlegroep, waarmee je het effect van het medicijn vergelijkt.",
+      "uo": [
+        "Dat is geen variabele maar een groep.",
+        "Klopt: de groep zonder behandeling is de controlegroep.",
+        "Dat is de verwachting, geen groep.",
+        "Dat is een getal, geen groep."
+      ],
+      "uh": "Groep zonder behandeling = controlegroep."
+    },
+    {
+      "v": "Waarom mag je maar één variabele tegelijk veranderen?",
+      "o": [
+        "Anders duurt het hele experiment veel te lang",
+        "Anders is de hypothese fout",
+        "Anders weet je niet welke factor het effect gaf",
+        "Anders wordt de plant te groot"
+      ],
+      "c": 2,
+      "d": 3,
+      "u": "Verander je meerdere dingen tegelijk, dan kun je niet zeggen welke factor het gemeten effect heeft veroorzaakt.",
+      "uo": [
+        "Het gaat niet om de tijd.",
+        "De hypothese wordt er niet fout van.",
+        "Klopt: anders is de oorzaak niet aan te wijzen.",
+        "De plantgrootte is niet de reden."
+      ],
+      "uh": "Eén variabele tegelijk = oorzaak aanwijsbaar."
+    },
+    {
+      "v": "Wat hoort er bij een goede proefopzet?",
+      "o": [
+        "Meerdere variabelen door elkaar veranderen",
+        "Geen enkele meting doen",
+        "De hypothese weglaten",
+        "Een controlegroep en constante variabelen"
+      ],
+      "c": 3,
+      "d": 2,
+      "u": "Een goede proefopzet heeft een controlegroep, constant gehouden variabelen en herhaling.",
+      "uo": [
+        "Door elkaar veranderen is juist fout.",
+        "Meten is juist nodig.",
+        "De hypothese hoort er juist bij.",
+        "Klopt: controlegroep en constante variabelen horen erbij."
+      ],
+      "uh": "Goede opzet = controlegroep + constanten + herhaling."
+    },
+    {
+      "v": "Wat toets je met een experiment?",
+      "o": [
+        "De hypothese",
+        "De kleur van het lab",
+        "De naam van de onderzoeker",
+        "Het weer buiten"
+      ],
+      "c": 0,
+      "d": 1,
+      "u": "Met een experiment toets je of de hypothese klopt.",
+      "uo": [
+        "Klopt: je toetst de hypothese.",
+        "De labkleur is niet het doel.",
+        "De naam is niet het doel.",
+        "Het weer is niet het doel."
+      ],
+      "uh": "Experiment = de hypothese toetsen."
+    },
+    {
+      "v": "Wat is een meetwaarde?",
+      "o": [
+        "De verwachting vooraf",
+        "Een gemeten getal",
+        "De factor die je gelijk houdt",
+        "De onderzoeksvraag"
+      ],
+      "c": 1,
+      "d": 1,
+      "u": "Een meetwaarde is een getal dat je tijdens het experiment meet.",
+      "uo": [
+        "Dat is de hypothese.",
+        "Klopt: een gemeten getal.",
+        "Dat is een constante variabele.",
+        "Dat is de onderzoeksvraag."
+      ],
+      "uh": "Meetwaarde = een gemeten getal."
+    },
+    {
+      "v": "Een onderzoeker verandert de temperatuur en meet de ademhaling van vissen. Wat houd je gelijk?",
+      "o": [
+        "De temperatuur van het water",
+        "De ademhaling van de vissen",
+        "De hoeveelheid water en het aantal vissen",
+        "De onderzoeksvraag van het hele experiment"
+      ],
+      "c": 2,
+      "d": 3,
+      "u": "Alles behalve de onafhankelijke variabele (temperatuur) houd je gelijk, zoals de hoeveelheid water en het aantal vissen.",
+      "uo": [
+        "De temperatuur verander je juist.",
+        "De ademhaling meet je juist.",
+        "Klopt: hoeveelheid water en aantal vissen houd je constant.",
+        "De onderzoeksvraag is geen variabele om gelijk te houden."
+      ],
+      "uh": "Constant = alles behalve wat je verandert of meet."
+    },
+    {
+      "v": "Waarom begin je een onderzoek met een hypothese?",
+      "o": [
+        "Om meteen de conclusie van tevoren al te weten",
+        "Om geen metingen te hoeven doen",
+        "Om de controlegroep te vervangen",
+        "Om een toetsbare verwachting te hebben"
+      ],
+      "c": 3,
+      "d": 2,
+      "u": "De hypothese geeft een toetsbare verwachting waar je het experiment op richt.",
+      "uo": [
+        "De conclusie ken je vooraf nog niet.",
+        "Metingen blijven nodig.",
+        "De hypothese vervangt geen controlegroep.",
+        "Klopt: een toetsbare verwachting om te onderzoeken."
+      ],
+      "uh": "Hypothese = de toetsbare verwachting om mee te starten."
+    },
+    {
+      "v": "Welke uitspraak over variabelen klopt?",
+      "o": [
+        "Onafhankelijk verander je, afhankelijk meet je, constant houd je gelijk",
+        "Alle variabelen meet je pas helemaal aan het eind",
+        "Alle variabelen verander je tegelijk",
+        "Variabelen spelen geen rol in onderzoek"
+      ],
+      "c": 0,
+      "d": 2,
+      "u": "De onafhankelijke variabele verander je, de afhankelijke meet je, en de constante variabelen houd je gelijk.",
+      "uo": [
+        "Klopt: veranderen, meten, gelijk houden.",
+        "Alleen de afhankelijke meet je.",
+        "Je verandert er maar één tegelijk.",
+        "Variabelen zijn juist de kern van onderzoek."
+      ],
+      "uh": "Onafhankelijk veranderen, afhankelijk meten, constant gelijk houden."
+    }
+  ],
+  "oe": [
+    {
+      "vraag": "Leg uit wat een hypothese is en geef een voorbeeld voor een onderzoek naar licht en plantengroei.",
+      "antwoord": "Een hypothese is een toetsbare verwachting die je met een experiment kunt controleren. Voor een onderzoek naar licht en plantengroei kan de hypothese zijn: als een plant meer licht krijgt, dan groeit hij sneller. Deze verwachting kun je toetsen door de hoeveelheid licht te veranderen en de groei te meten."
+    },
+    {
+      "vraag": "Leg uit wat het verschil is tussen de onafhankelijke en de afhankelijke variabele.",
+      "antwoord": "De onafhankelijke variabele is de factor die de onderzoeker zelf verandert, de mogelijke oorzaak. De afhankelijke variabele is de factor die je meet, het gevolg dat afhangt van de onafhankelijke variabele. In een lichtonderzoek is de hoeveelheid licht onafhankelijk en de groeisnelheid afhankelijk."
+    },
+    {
+      "vraag": "Leg uit waarom je constante variabelen gelijk houdt in een experiment.",
+      "antwoord": "Je houdt alle factoren behalve de onafhankelijke variabele gelijk, zodat een verschil in de meting alleen kan komen door de variabele die je hebt veranderd. Zo maak je een eerlijke vergelijking en kun je het effect toeschrijven aan de juiste oorzaak."
+    },
+    {
+      "vraag": "Leg uit waarom een controlegroep nodig is in een experiment.",
+      "antwoord": "Een controlegroep krijgt niet de behandeling. Door de behandelde groep met de controlegroep te vergelijken, weet je wat er zonder behandeling zou gebeuren. Alleen zo kun je zeker weten dat een gemeten effect echt door de behandeling komt en niet door iets anders."
+    },
+    {
+      "vraag": "Leg uit waarom een onderzoeker een experiment meerdere keren herhaalt.",
+      "antwoord": "Door een experiment vaker uit te voeren kun je zien of een resultaat steeds terugkomt. Als het resultaat elke keer hetzelfde is, berust het niet op toeval en is de conclusie betrouwbaarder. Een enkele meting kan namelijk toevallig afwijken."
+    }
+  ]
+}

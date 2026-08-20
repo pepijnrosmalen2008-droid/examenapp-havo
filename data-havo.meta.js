@@ -290,7 +290,99 @@ var VAKKEN = [
     "nSv": 88,
     "nOe": 5,
     "nBeg": 19,
-    "hasSam": true
+    "hasSam": true,
+    "leerdoelen": [
+     {
+      "id": "A1",
+      "naam": "Onderzoek opzetten",
+      "beschrijving": "Gouden-standaardmodule bi.A.1: een biologisch experiment opzetten met een toetsbare hypothese, de onafhankelijke, afhankelijke en constante variabelen, en een controlegroep.",
+      "ceStatus": "CE",
+      "onderwerpen": [
+       "Hypothese als toetsbare verwachting",
+       "Onafhankelijke variabele (wat je verandert)",
+       "Afhankelijke variabele (wat je meet)",
+       "Constante variabelen (wat je gelijk houdt)",
+       "Controlegroep en controle-experiment",
+       "Eerlijke vergelijking"
+      ],
+      "nSv": 25,
+      "nOe": 5,
+      "nBeg": 12,
+      "hasSam": true
+     },
+     {
+      "id": "A2",
+      "naam": "Betrouwbaarheid en validiteit beoordelen",
+      "beschrijving": "Gouden-standaardmodule bi.A.2: het verschil tussen betrouwbaarheid (steeds hetzelfde resultaat) en validiteit (meet je het juiste), en de rol van steekproef en placebo.",
+      "ceStatus": "CE",
+      "onderwerpen": [
+       "Betrouwbaarheid: reproduceerbaar resultaat",
+       "Validiteit: meet je wat je wilt meten",
+       "Verschil betrouwbaar en valide",
+       "Steekproef en steekproefgrootte",
+       "Representatieve steekproef",
+       "Placebo en het placebo-effect"
+      ],
+      "nSv": 25,
+      "nOe": 5,
+      "nBeg": 12,
+      "hasSam": true
+     },
+     {
+      "id": "A3",
+      "naam": "Data verwerken en grafieken lezen",
+      "beschrijving": "Gouden-standaardmodule bi.A.3: gegevens uit tabellen en grafieken aflezen, as-eenheden juist lezen, spreiding (standaarddeviatie) interpreteren en niet concluderen buiten het meetbereik.",
+      "ceStatus": "CE",
+      "onderwerpen": [
+       "Grafiek lezen: assen en as-eenheden",
+       "Aflezen van een waarde",
+       "Tabellen aflezen",
+       "Gemiddelde en spreiding",
+       "Standaarddeviatie",
+       "Meetbereik: niet extrapoleren"
+      ],
+      "nSv": 25,
+      "nOe": 5,
+      "nBeg": 12,
+      "hasSam": true
+     },
+     {
+      "id": "A4",
+      "naam": "Correlatie versus causaliteit",
+      "beschrijving": "Gouden-standaardmodule bi.A.4: het verschil tussen een verband (correlatie) en een oorzaak-gevolgrelatie (causaliteit), en waarom een correlatie geen oorzaak bewijst.",
+      "ceStatus": "CE",
+      "onderwerpen": [
+       "Correlatie: twee dingen veranderen samen",
+       "Causaliteit: oorzaak en gevolg",
+       "Correlatie bewijst geen causaliteit",
+       "Derde factor en schijnverband",
+       "Experiment om oorzaak aan te tonen",
+       "Valkuil: oorzaak uit één correlatie"
+      ],
+      "nSv": 25,
+      "nOe": 5,
+      "nBeg": 12,
+      "hasSam": true
+     },
+     {
+      "id": "A5",
+      "naam": "Biologisch onderzoeksgereedschap",
+      "beschrijving": "Gouden-standaardmodule bi.A.5: het gebruik van een determineertabel om een soort op naam te brengen, en de functie van een preparaat bij microscopisch onderzoek.",
+      "ceStatus": "CE",
+      "onderwerpen": [
+       "Determineren: een soort op naam brengen",
+       "Determineertabel met keuzes op kenmerken",
+       "Juiste tak kiezen",
+       "Preparaat maken",
+       "Microscoop en vergroting",
+       "Objectglas en dekglas"
+      ],
+      "nSv": 25,
+      "nOe": 5,
+      "nBeg": 12,
+      "hasSam": true
+     }
+    ]
    },
    {
     "id": "M",
