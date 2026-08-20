@@ -1,0 +1,564 @@
+{
+  "id": "P3",
+  "naam": "Populatiedynamiek en draagkracht",
+  "beschrijving": "Gouden-standaardmodule bi.P.3: hoe een populatie verandert door geboorte, sterfte en trek, exponentiele groei, en de rol van draagkracht bij het begrenzen van de groei (S-kromme).",
+  "ceStatus": "CE",
+  "onderwerpen": [
+    "Populatie en populatiegrootte",
+    "Geboorte, sterfte, immigratie, emigratie",
+    "Exponentiele groei",
+    "Draagkracht als grens",
+    "Remmende factoren",
+    "Grafiek van populatiegroei (S-kromme)"
+  ],
+  "sam": "Een populatie is het geheel van alle individuen van één soort in een gebied. De grootte verandert door vier dingen: geboorte en immigratie maken de populatie groter, sterfte en emigratie maken hem kleiner. Als er genoeg voedsel en ruimte is, groeit een populatie eerst snel: exponentiele groei, in een grafiek een steile J-vorm. Maar een gebied kan niet oneindig veel individuen onderhouden. Het maximale aantal dat er duurzaam kan leven heet de draagkracht. Als de populatie de draagkracht nadert, remmen factoren als voedseltekort, ruimtegebrek, ziekte en concurrentie de groei af. De grafiek buigt dan af tot een S-kromme rond de draagkracht.",
+  "begrippen": [
+    {
+      "t": "Populatie",
+      "d": "alle individuen van één soort in een gebied"
+    },
+    {
+      "t": "Populatiedynamiek",
+      "d": "de veranderingen in de grootte van een populatie"
+    },
+    {
+      "t": "Draagkracht",
+      "d": "het maximale aantal individuen dat een gebied duurzaam kan onderhouden"
+    },
+    {
+      "t": "Geboorte",
+      "d": "de toename van een populatie door nieuwe individuen"
+    },
+    {
+      "t": "Sterfte",
+      "d": "de afname van een populatie doordat individuen doodgaan"
+    },
+    {
+      "t": "Immigratie",
+      "d": "individuen die het gebied binnenkomen"
+    },
+    {
+      "t": "Emigratie",
+      "d": "individuen die het gebied verlaten"
+    },
+    {
+      "t": "Exponentiele groei",
+      "d": "steeds snellere groei bij voldoende voedsel en ruimte"
+    },
+    {
+      "t": "Remmende factor",
+      "d": "een factor die de groei van een populatie afremt"
+    },
+    {
+      "t": "Concurrentie",
+      "d": "de strijd tussen individuen om voedsel, ruimte of partners"
+    },
+    {
+      "t": "S-kromme",
+      "d": "grafiek waarin de groei afvlakt rond de draagkracht"
+    },
+    {
+      "t": "Populatiegrootte",
+      "d": "het aantal individuen in een populatie"
+    }
+  ],
+  "sv": [
+    {
+      "v": "Wat is een populatie?",
+      "o": [
+        "Alle individuen van één soort in een gebied",
+        "Alle soorten samen die in een gebied leven",
+        "De niet-levende omgeving van een gebied",
+        "Eén enkel dier dat door het gebied trekt"
+      ],
+      "c": 0,
+      "d": 1,
+      "u": "Een populatie is alle individuen van één soort in hetzelfde gebied.",
+      "uo": [
+        "Klopt: alle individuen van één soort.",
+        "Dat is de levensgemeenschap.",
+        "Dat is de biotoop.",
+        "Eén dier is een individu."
+      ],
+      "uh": "Populatie = alle individuen van één soort."
+    },
+    {
+      "v": "Waardoor wordt een populatie groter?",
+      "o": [
+        "Door sterfte en emigratie samen",
+        "Door geboorte en immigratie",
+        "Door een tekort aan voedsel",
+        "Door meer roofdieren in het gebied"
+      ],
+      "c": 1,
+      "d": 2,
+      "u": "Geboorte en immigratie voegen individuen toe, dus daardoor groeit de populatie.",
+      "uo": [
+        "Sterfte en emigratie maken hem juist kleiner.",
+        "Klopt: geboorte en immigratie laten hem groeien.",
+        "Voedseltekort remt de groei.",
+        "Meer roofdieren remmen de groei."
+      ],
+      "uh": "Groter: geboorte + immigratie."
+    },
+    {
+      "v": "Waardoor wordt een populatie kleiner?",
+      "o": [
+        "Door geboorte en immigratie samen",
+        "Door meer voedsel in het gebied",
+        "Door sterfte en emigratie",
+        "Door meer ruimte voor de dieren"
+      ],
+      "c": 2,
+      "d": 2,
+      "u": "Sterfte en emigratie halen individuen weg, dus daardoor krimpt de populatie.",
+      "uo": [
+        "Geboorte en immigratie laten hem juist groeien.",
+        "Meer voedsel laat hem eerder groeien.",
+        "Klopt: sterfte en emigratie maken hem kleiner.",
+        "Meer ruimte remt de groei niet."
+      ],
+      "uh": "Kleiner: sterfte + emigratie."
+    },
+    {
+      "v": "Wat is immigratie?",
+      "o": [
+        "Individuen die doodgaan in het gebied",
+        "Individuen die in het gebied geboren worden",
+        "Individuen die het gebied verlaten",
+        "Individuen die het gebied binnenkomen"
+      ],
+      "c": 3,
+      "d": 1,
+      "u": "Immigratie is het binnenkomen van individuen in een gebied.",
+      "uo": [
+        "Dat is sterfte.",
+        "Dat is geboorte.",
+        "Dat is emigratie.",
+        "Klopt: binnenkomen in het gebied."
+      ],
+      "uh": "Immigratie = binnenkomen (in het gebied)."
+    },
+    {
+      "v": "Wat is emigratie?",
+      "o": [
+        "Individuen die het gebied verlaten",
+        "Individuen die het gebied binnenkomen",
+        "Individuen die geboren worden",
+        "Individuen die doodgaan door ziekte"
+      ],
+      "c": 0,
+      "d": 1,
+      "u": "Emigratie is het vertrekken van individuen uit een gebied.",
+      "uo": [
+        "Klopt: het gebied verlaten.",
+        "Dat is immigratie.",
+        "Dat is geboorte.",
+        "Dat is sterfte."
+      ],
+      "uh": "Emigratie = vertrekken (uit het gebied)."
+    },
+    {
+      "v": "Wat is de draagkracht van een gebied?",
+      "o": [
+        "Het aantal soorten in een gebied",
+        "Het maximale aantal dat er duurzaam kan leven",
+        "De hoeveelheid regen die er valt",
+        "Het aantal roofdieren in het gebied"
+      ],
+      "c": 1,
+      "d": 2,
+      "u": "De draagkracht is het maximale aantal individuen dat een gebied blijvend kan onderhouden.",
+      "uo": [
+        "Dat is de soortenrijkdom, niet de draagkracht.",
+        "Klopt: het maximale aantal dat er duurzaam kan leven.",
+        "Neerslag is niet de draagkracht.",
+        "De draagkracht gaat over aantallen, niet alleen roofdieren."
+      ],
+      "uh": "Draagkracht = maximaal aantal dat een gebied aankan."
+    },
+    {
+      "v": "Wat is exponentiele groei?",
+      "o": [
+        "Groei die precies gelijk blijft per jaar",
+        "Een populatie die steeds kleiner wordt",
+        "Groei die steeds sneller gaat",
+        "Een populatie die helemaal niet verandert"
+      ],
+      "c": 2,
+      "d": 2,
+      "u": "Bij exponentiele groei neemt de populatie steeds sneller toe, zolang er genoeg voedsel en ruimte is.",
+      "uo": [
+        "Bij exponentieel blijft de groei niet gelijk.",
+        "Het is groei, geen afname.",
+        "Klopt: de groei wordt steeds sneller.",
+        "Er verandert juist veel."
+      ],
+      "uh": "Exponentieel = steeds snellere groei."
+    },
+    {
+      "v": "Wat gebeurt er als een populatie de draagkracht nadert?",
+      "o": [
+        "De groei versnelt juist enorm",
+        "De populatie verdwijnt meteen helemaal",
+        "De draagkracht wordt vanzelf oneindig",
+        "De groei vlakt af"
+      ],
+      "c": 3,
+      "d": 3,
+      "u": "Bij de draagkracht remmen factoren als voedseltekort de groei, dus vlakt de groei af.",
+      "uo": [
+        "De groei versnelt juist niet meer.",
+        "De populatie verdwijnt niet meteen.",
+        "De draagkracht wordt niet oneindig.",
+        "Klopt: de groei vlakt af rond de draagkracht."
+      ],
+      "uh": "Bij de draagkracht vlakt de groei af."
+    },
+    {
+      "v": "Welke vorm heeft de grafiek van geremde populatiegroei?",
+      "o": [
+        "Een S-kromme",
+        "Een steeds stijgende rechte lijn",
+        "Een dalende rechte lijn",
+        "Een grafiek die meteen op nul blijft"
+      ],
+      "c": 0,
+      "d": 2,
+      "u": "Geremde groei geeft een S-kromme: eerst snel, dan afvlakkend rond de draagkracht.",
+      "uo": [
+        "Klopt: een S-kromme.",
+        "Een rechte lijn hoort niet bij geremde groei.",
+        "De populatie groeit eerst, hij daalt niet meteen.",
+        "De populatie blijft niet op nul."
+      ],
+      "uh": "Geremde groei = S-kromme."
+    },
+    {
+      "v": "Wat is een remmende factor voor populatiegroei?",
+      "o": [
+        "Heel veel vrije ruimte",
+        "Voedseltekort",
+        "Overvloedig veel voedsel",
+        "Een zacht en mild klimaat"
+      ],
+      "c": 1,
+      "d": 2,
+      "u": "Een remmende factor, zoals voedseltekort, houdt de groei van een populatie tegen.",
+      "uo": [
+        "Veel ruimte remt niet, dat helpt juist.",
+        "Klopt: voedseltekort remt de groei.",
+        "Veel voedsel remt niet, dat helpt juist.",
+        "Een mild klimaat remt de groei niet."
+      ],
+      "uh": "Remmende factor = houdt de groei tegen (bv. voedseltekort)."
+    },
+    {
+      "v": "Waarom kan een populatie niet eindeloos exponentieel blijven groeien?",
+      "o": [
+        "Omdat de dieren dat saai vinden",
+        "Omdat de zon te veel energie geeft",
+        "Omdat voedsel en ruimte beperkt zijn",
+        "Omdat er nooit sterfte optreedt"
+      ],
+      "c": 2,
+      "d": 3,
+      "u": "Voedsel en ruimte zijn beperkt, dus botst de groei op de draagkracht en vlakt hij af.",
+      "uo": [
+        "Dat is geen biologische reden.",
+        "De zon is niet de reden.",
+        "Klopt: beperkt voedsel en ruimte begrenzen de groei.",
+        "Sterfte treedt juist wel op."
+      ],
+      "uh": "Beperkt voedsel en ruimte begrenzen de groei."
+    },
+    {
+      "v": "Wat betekent concurrentie binnen een populatie?",
+      "o": [
+        "Alle dieren delen alles eerlijk",
+        "Het samenwerken van alle individuen",
+        "Het binnenkomen van nieuwe dieren",
+        "De strijd om voedsel, ruimte of partners"
+      ],
+      "c": 3,
+      "d": 2,
+      "u": "Concurrentie is de strijd tussen individuen om schaarse bronnen zoals voedsel en ruimte.",
+      "uo": [
+        "Concurrentie is juist strijd, geen eerlijk delen.",
+        "Concurrentie is geen samenwerking.",
+        "Dat is immigratie.",
+        "Klopt: strijd om voedsel, ruimte of partners."
+      ],
+      "uh": "Concurrentie = strijd om schaarse bronnen."
+    },
+    {
+      "v": "Op de x-as van een populatiegrafiek staat meestal de tijd. Wat staat op de y-as?",
+      "o": [
+        "Het aantal individuen",
+        "De hoeveelheid regen",
+        "De temperatuur van de lucht",
+        "Het aantal soorten in het gebied"
+      ],
+      "c": 0,
+      "d": 2,
+      "u": "Op de y-as staat de populatiegrootte, dus het aantal individuen, tegen de tijd op de x-as.",
+      "uo": [
+        "Klopt: het aantal individuen (populatiegrootte).",
+        "Neerslag staat er niet op.",
+        "Temperatuur staat er niet op.",
+        "Het gaat om één soort, niet het aantal soorten."
+      ],
+      "uh": "Populatiegrafiek: aantal individuen tegen de tijd."
+    },
+    {
+      "v": "De grafiek stijgt eerst snel en vlakt daarna af. Wat betekent de afvlakking?",
+      "o": [
+        "De populatie begint pas net te groeien",
+        "De draagkracht is bijna bereikt",
+        "Er is opeens oneindig veel voedsel",
+        "De tijd loopt in de grafiek achteruit"
+      ],
+      "c": 1,
+      "d": 3,
+      "u": "De afvlakking laat zien dat de populatie de draagkracht nadert en de groei geremd wordt.",
+      "uo": [
+        "De groei begon juist eerder, niet nu pas.",
+        "Klopt: de afvlakking hoort bij de draagkracht.",
+        "Er is juist een tekort dat de groei remt.",
+        "De tijd loopt gewoon vooruit."
+      ],
+      "uh": "Afvlakken in de grafiek = draagkracht bijna bereikt."
+    },
+    {
+      "v": "Wat gebeurt er meestal als een populatie boven de draagkracht komt?",
+      "o": [
+        "De populatie blijft eeuwig zo groot",
+        "De draagkracht stijgt vanzelf mee",
+        "De populatie neemt weer af",
+        "Er verandert helemaal niets meer"
+      ],
+      "c": 2,
+      "d": 3,
+      "u": "Boven de draagkracht is er te weinig voedsel en ruimte, dus stijgt de sterfte en daalt de populatie weer.",
+      "uo": [
+        "Zo groot blijven kan het gebied niet dragen.",
+        "De draagkracht stijgt niet zomaar mee.",
+        "Klopt: door tekorten neemt de populatie weer af.",
+        "Er verandert juist wel iets: de populatie daalt."
+      ],
+      "uh": "Boven de draagkracht daalt de populatie weer."
+    },
+    {
+      "v": "Welke factor verhoogt de sterfte in een populatie?",
+      "o": [
+        "Veel voedsel voor iedereen",
+        "Veel vrije ruimte in het gebied",
+        "Een groot geboorteoverschot",
+        "Een uitbraak van een ziekte"
+      ],
+      "c": 3,
+      "d": 2,
+      "u": "Een ziekte-uitbraak laat meer individuen doodgaan en verhoogt dus de sterfte.",
+      "uo": [
+        "Veel voedsel verhoogt de sterfte niet.",
+        "Veel ruimte verhoogt de sterfte niet.",
+        "Een geboorteoverschot gaat over geboorte, niet sterfte.",
+        "Klopt: een ziekte verhoogt de sterfte."
+      ],
+      "uh": "Ziekte, roofdieren en tekort verhogen de sterfte."
+    },
+    {
+      "v": "Wat is populatiedynamiek?",
+      "o": [
+        "De veranderingen in de grootte van een populatie",
+        "De niet-levende factoren van een gebied",
+        "Het aantal soorten in een ecosysteem",
+        "De rol van een soort in de voedselketen"
+      ],
+      "c": 0,
+      "d": 1,
+      "u": "Populatiedynamiek gaat over hoe de grootte van een populatie in de tijd verandert.",
+      "uo": [
+        "Klopt: de veranderingen in de populatiegrootte.",
+        "Dat zijn abiotische factoren.",
+        "Dat is de soortenrijkdom.",
+        "Dat is de niche."
+      ],
+      "uh": "Populatiedynamiek = veranderingen in de populatiegrootte."
+    },
+    {
+      "v": "Een populatie groeit terwijl er evenveel dieren doodgaan als er geboren worden. Hoe kan dat?",
+      "o": [
+        "Dat kan helemaal niet gebeuren",
+        "Door meer immigratie dan emigratie",
+        "Doordat de dieren groter worden",
+        "Doordat de tijd stilstaat in de grafiek"
+      ],
+      "c": 1,
+      "d": 3,
+      "u": "Als geboorte en sterfte gelijk zijn, kan de populatie toch groeien doordat er meer dieren binnenkomen dan vertrekken.",
+      "uo": [
+        "Het kan wel, via immigratie.",
+        "Klopt: meer immigratie dan emigratie laat hem groeien.",
+        "Groter worden is geen toename van het aantal.",
+        "De tijd staat niet stil."
+      ],
+      "uh": "Ook trek (immigratie/emigratie) verandert een populatie."
+    },
+    {
+      "v": "Wat is de populatiegrootte?",
+      "o": [
+        "De oppervlakte van het gebied",
+        "Het aantal verschillende soorten",
+        "Het aantal individuen in de populatie",
+        "De hoeveelheid voedsel in het gebied"
+      ],
+      "c": 2,
+      "d": 1,
+      "u": "De populatiegrootte is het aantal individuen dat de populatie op dat moment telt.",
+      "uo": [
+        "Dat is de oppervlakte, niet de populatiegrootte.",
+        "Dat is de soortenrijkdom.",
+        "Klopt: het aantal individuen.",
+        "Dat is de voedselvoorraad."
+      ],
+      "uh": "Populatiegrootte = aantal individuen."
+    },
+    {
+      "v": "Waarom remt concurrentie de groei bij een grote populatie sterker?",
+      "o": [
+        "Omdat er dan meer voedsel per dier is",
+        "Omdat de dieren dan kleiner worden",
+        "Omdat de draagkracht dan stijgt",
+        "Omdat er dan meer dieren om dezelfde bronnen strijden"
+      ],
+      "c": 3,
+      "d": 3,
+      "u": "In een grote populatie moeten meer individuen dezelfde beperkte bronnen delen, dus is de concurrentie heviger.",
+      "uo": [
+        "Er is juist minder voedsel per dier.",
+        "Hun grootte is niet de reden.",
+        "De draagkracht stijgt niet mee.",
+        "Klopt: meer dieren strijden om dezelfde bronnen."
+      ],
+      "uh": "Grote populatie = meer concurrentie om dezelfde bronnen."
+    },
+    {
+      "v": "Welke uitspraak over draagkracht klopt?",
+      "o": [
+        "De draagkracht is de grens die een gebied aankan",
+        "De draagkracht is voor elk gebied gelijk",
+        "De draagkracht groeit altijd met de populatie mee",
+        "De draagkracht heeft niets met voedsel te maken"
+      ],
+      "c": 0,
+      "d": 2,
+      "u": "De draagkracht is het maximale aantal dat een gebied duurzaam kan onderhouden, bepaald door voedsel en ruimte.",
+      "uo": [
+        "Klopt: het is de grens die het gebied aankan.",
+        "Elk gebied heeft een eigen draagkracht.",
+        "De draagkracht groeit niet zomaar mee.",
+        "Voedsel bepaalt juist mede de draagkracht."
+      ],
+      "uh": "Draagkracht = grens die het gebied duurzaam aankan."
+    },
+    {
+      "v": "Wat zegt een steile J-vorm in een populatiegrafiek?",
+      "o": [
+        "De populatie is uitgestorven",
+        "De populatie groeit heel snel (exponentieel)",
+        "De populatie blijft precies gelijk",
+        "De draagkracht is al bereikt"
+      ],
+      "c": 1,
+      "d": 3,
+      "u": "Een steile J-vorm hoort bij exponentiele groei: de populatie neemt steeds sneller toe.",
+      "uo": [
+        "Bij uitsterven daalt de lijn juist.",
+        "Klopt: de J-vorm hoort bij snelle, exponentiele groei.",
+        "Bij gelijk blijven is de lijn vlak.",
+        "Bij de draagkracht vlakt de lijn juist af."
+      ],
+      "uh": "J-vorm = exponentiele (steeds snellere) groei."
+    },
+    {
+      "v": "Een gebied krijgt meer voedsel. Wat gebeurt er meestal met de draagkracht?",
+      "o": [
+        "De draagkracht wordt kleiner",
+        "De draagkracht verdwijnt helemaal",
+        "De draagkracht wordt groter",
+        "De draagkracht blijft altijd precies gelijk"
+      ],
+      "c": 2,
+      "d": 3,
+      "u": "Meer voedsel betekent dat het gebied meer individuen kan onderhouden, dus stijgt de draagkracht.",
+      "uo": [
+        "Meer voedsel verlaagt de draagkracht niet.",
+        "De draagkracht verdwijnt niet.",
+        "Klopt: meer voedsel verhoogt de draagkracht.",
+        "De draagkracht kan juist veranderen met het voedsel."
+      ],
+      "uh": "Meer voedsel = hogere draagkracht."
+    },
+    {
+      "v": "Waarom is het fout om bij exponentiele groei de draagkracht te vergeten?",
+      "o": [
+        "Omdat exponentiele groei niet bestaat",
+        "Omdat de draagkracht de groei versnelt",
+        "Omdat een populatie nooit groeit",
+        "Omdat de groei in het echt door de draagkracht wordt geremd"
+      ],
+      "c": 3,
+      "d": 3,
+      "u": "In werkelijkheid loopt exponentiele groei tegen de draagkracht aan, waardoor de groei afvlakt tot een S-kromme.",
+      "uo": [
+        "Exponentiele groei bestaat wel, tijdelijk.",
+        "De draagkracht remt juist, ze versnelt niet.",
+        "Populaties kunnen wel degelijk groeien.",
+        "Klopt: de draagkracht remt de groei uiteindelijk."
+      ],
+      "uh": "Zonder draagkracht mist je waarom de groei afvlakt."
+    },
+    {
+      "v": "Roofdieren eten veel prooidieren. Wat doet dat met de prooipopulatie?",
+      "o": [
+        "Die neemt af",
+        "Die groeit juist sneller dan ooit",
+        "Die blijft altijd precies gelijk",
+        "Die verdwijnt nooit door roofdieren"
+      ],
+      "c": 0,
+      "d": 2,
+      "u": "Roofdieren verhogen de sterfte van de prooi, dus neemt de prooipopulatie af.",
+      "uo": [
+        "Klopt: meer sterfte, dus de prooipopulatie neemt af.",
+        "Meer sterfte laat hem juist niet sneller groeien.",
+        "Hij blijft niet gelijk bij meer sterfte.",
+        "Roofdieren kunnen de prooi juist sterk laten dalen."
+      ],
+      "uh": "Roofdieren verhogen de sterfte van de prooi (remmende factor)."
+    }
+  ],
+  "oe": [
+    {
+      "vraag": "Noem de vier factoren die de grootte van een populatie veranderen en geef aan welke hem groter en welke hem kleiner maken.",
+      "antwoord": "De vier factoren zijn geboorte, sterfte, immigratie en emigratie. Geboorte en immigratie maken de populatie groter, want er komen individuen bij. Sterfte en emigratie maken de populatie kleiner, want er verdwijnen individuen."
+    },
+    {
+      "vraag": "Leg uit wat draagkracht is en waarom een populatie niet oneindig kan groeien.",
+      "antwoord": "De draagkracht is het maximale aantal individuen dat een gebied duurzaam kan onderhouden. Een populatie kan niet oneindig groeien omdat voedsel en ruimte beperkt zijn. Als de populatie de draagkracht nadert, remmen factoren als voedseltekort, ziekte en concurrentie de groei, waardoor die afvlakt."
+    },
+    {
+      "vraag": "Leg uit waarom de grafiek van geremde populatiegroei een S-kromme is.",
+      "antwoord": "In het begin is er veel voedsel en ruimte, dus groeit de populatie snel: de lijn stijgt steil. Naarmate de populatie de draagkracht nadert, gaan remmende factoren de groei tegenhouden en vlakt de lijn af. Zo ontstaat de S-vorm: eerst steil, dan afvlakkend rond de draagkracht."
+    },
+    {
+      "vraag": "Leg uit hoe een populatie kan groeien terwijl er evenveel individuen geboren worden als er sterven.",
+      "antwoord": "De grootte van een populatie hangt niet alleen af van geboorte en sterfte, maar ook van immigratie en emigratie. Als er meer individuen het gebied binnenkomen dan er vertrekken, groeit de populatie, ook al zijn geboorte en sterfte precies gelijk."
+    },
+    {
+      "vraag": "Leg uit wat er gebeurt als een populatie boven de draagkracht van een gebied uitkomt.",
+      "antwoord": "Boven de draagkracht is er te weinig voedsel en ruimte voor alle individuen. Daardoor neemt de concurrentie toe en stijgt de sterfte, terwijl de geboorte kan dalen. De populatie neemt dan weer af tot rond de draagkracht."
+    }
+  ]
+}

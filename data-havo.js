@@ -22240,6 +22240,3392 @@ var VAKKEN = [
    {
     "id": "P",
     "naam": "Populatie- en ecosysteemniveau",
+    "leerdoelen": [
+     {
+      "id": "P1",
+      "naam": "Ecosystemen: biotische en abiotische factoren",
+      "beschrijving": "Gouden-standaardmodule bi.P.1: het ecosysteem als levensgemeenschap plus biotoop, het onderscheid tussen biotische en abiotische factoren, en de niche van een soort.",
+      "ceStatus": "CE",
+      "onderwerpen": [
+       "Ecosysteem: levensgemeenschap plus biotoop",
+       "Biotische factoren (levende omgeving)",
+       "Abiotische factoren (niet-levende omgeving)",
+       "Niche van een soort",
+       "Habitat en levensgemeenschap",
+       "Populatie en soort"
+      ],
+      "sam": "Een ecosysteem bestaat uit een levensgemeenschap (alle organismen samen) en de biotoop (de niet-levende omgeving). De invloeden op een organisme deel je in twee groepen in. Biotische factoren komen van levende organismen, zoals voedsel, concurrentie en vijanden. Abiotische factoren zijn niet-levend, zoals temperatuur, licht, water en bodem. De niche van een soort is de plek en rol die een soort in het ecosysteem heeft: wat het eet, waar het leeft en hoe het zich voortplant. De habitat is de woonplaats van een soort.",
+      "begrippen": [
+       {
+        "t": "Ecosysteem",
+        "d": "een levensgemeenschap samen met de niet-levende omgeving (biotoop)"
+       },
+       {
+        "t": "Levensgemeenschap",
+        "d": "alle organismen van alle soorten samen in een gebied"
+       },
+       {
+        "t": "Biotoop",
+        "d": "de niet-levende omgeving van een ecosysteem"
+       },
+       {
+        "t": "Biotische factor",
+        "d": "een invloed die van levende organismen komt"
+       },
+       {
+        "t": "Abiotische factor",
+        "d": "een niet-levende invloed, zoals temperatuur of licht"
+       },
+       {
+        "t": "Niche",
+        "d": "de plek en rol van een soort in het ecosysteem"
+       },
+       {
+        "t": "Habitat",
+        "d": "de leefomgeving of woonplaats van een soort"
+       },
+       {
+        "t": "Populatie",
+        "d": "alle individuen van één soort in een gebied"
+       },
+       {
+        "t": "Soort",
+        "d": "organismen die zich onderling kunnen voortplanten met vruchtbare nakomelingen"
+       },
+       {
+        "t": "Milieufactor",
+        "d": "een invloed uit de omgeving op een organisme"
+       },
+       {
+        "t": "Aangepast",
+        "d": "goed geschikt om in een bepaalde omgeving te leven"
+       },
+       {
+        "t": "Tolerantie",
+        "d": "de mate waarin een soort een factor kan verdragen"
+       }
+      ],
+      "sv": [
+       {
+        "v": "Waaruit bestaat een ecosysteem?",
+        "o": [
+         "Uit een levensgemeenschap en de biotoop",
+         "Uit alleen de planten die in een gebied groeien",
+         "Uit alleen de niet-levende omgeving van een gebied",
+         "Uit alle individuen van precies één soort"
+        ],
+        "c": 0,
+        "d": 1,
+        "u": "Een ecosysteem is de levensgemeenschap (alle organismen) samen met de biotoop (niet-levende omgeving).",
+        "uo": [
+         "Klopt: levensgemeenschap plus biotoop.",
+         "Ook dieren en andere organismen horen erbij.",
+         "De levende organismen horen er ook bij.",
+         "Dat is een populatie, geen ecosysteem."
+        ],
+        "uh": "Ecosysteem = levensgemeenschap + biotoop."
+       },
+       {
+        "v": "Wat is een biotische factor?",
+        "o": [
+         "Een niet-levende invloed zoals temperatuur of licht",
+         "Een invloed die van levende organismen komt",
+         "De bodem waarop de planten groeien",
+         "De hoeveelheid regen die valt in een gebied"
+        ],
+        "c": 1,
+        "d": 1,
+        "u": "Een biotische factor komt van levende organismen, zoals voedsel, vijanden of concurrentie.",
+        "uo": [
+         "Dat is juist een abiotische factor.",
+         "Klopt: van levende organismen.",
+         "De bodem is abiotisch.",
+         "Regen is abiotisch."
+        ],
+        "uh": "Biotisch = van iets levends."
+       },
+       {
+        "v": "Wat is een abiotische factor?",
+        "o": [
+         "Een vijand die het dier opeet",
+         "De concurrentie om voedsel tussen dieren",
+         "Een niet-levende invloed",
+         "Een ziekteverwekker die een dier aantast"
+        ],
+        "c": 2,
+        "d": 1,
+        "u": "Een abiotische factor is niet-levend, zoals temperatuur, licht, water of bodem.",
+        "uo": [
+         "Een vijand is levend, dus biotisch.",
+         "Concurrentie komt van organismen, dus biotisch.",
+         "Klopt: niet-levend.",
+         "Een ziekteverwekker is levend, dus biotisch."
+        ],
+        "uh": "Abiotisch = niet-levend (temperatuur, licht, water)."
+       },
+       {
+        "v": "Welke van deze is een abiotische factor?",
+        "o": [
+         "De vossen die op de muizen jagen",
+         "De planten die als voedsel dienen",
+         "De bacteriën in de bodem",
+         "De temperatuur van de lucht"
+        ],
+        "c": 3,
+        "d": 2,
+        "u": "Temperatuur is niet-levend en dus een abiotische factor; de andere zijn levende organismen.",
+        "uo": [
+         "Vossen zijn levend, dus biotisch.",
+         "Planten zijn levend, dus biotisch.",
+         "Bacteriën zijn levend, dus biotisch.",
+         "Klopt: temperatuur is abiotisch."
+        ],
+        "uh": "Temperatuur, licht en water zijn abiotisch."
+       },
+       {
+        "v": "Welke van deze is een biotische factor?",
+        "o": [
+         "De hoeveelheid voedsel van andere dieren",
+         "De hoeveelheid zonlicht in het bos",
+         "De zuurgraad (pH) van de bodem",
+         "De temperatuur van het water waarin de soorten leven"
+        ],
+        "c": 0,
+        "d": 2,
+        "u": "Voedsel komt van levende organismen en is dus een biotische factor.",
+        "uo": [
+         "Klopt: voedsel komt van organismen, dus biotisch.",
+         "Zonlicht is abiotisch.",
+         "De pH is abiotisch.",
+         "Temperatuur is abiotisch."
+        ],
+        "uh": "Voedsel, vijanden en concurrentie zijn biotisch."
+       },
+       {
+        "v": "Wat is de niche van een soort?",
+        "o": [
+         "Alleen de temperatuur waarbij de soort leeft",
+         "De plek en rol van de soort in het ecosysteem",
+         "Het totale aantal individuen van de soort",
+         "De niet-levende omgeving van het gebied waar de soort woont"
+        ],
+        "c": 1,
+        "d": 2,
+        "u": "De niche is de plek en rol van een soort: wat het eet, waar het leeft en hoe het zich voortplant.",
+        "uo": [
+         "De niche is meer dan alleen temperatuur.",
+         "Klopt: de plek en rol van de soort.",
+         "Dat is de populatiegrootte, niet de niche.",
+         "Dat is de biotoop, niet de niche."
+        ],
+        "uh": "Niche = plek en rol van een soort in het ecosysteem."
+       },
+       {
+        "v": "Wat is een levensgemeenschap?",
+        "o": [
+         "De niet-levende omgeving van een gebied",
+         "Eén enkele populatie van een soort",
+         "Alle organismen van alle soorten samen",
+         "Alleen de planten in een gebied"
+        ],
+        "c": 2,
+        "d": 2,
+        "u": "Een levensgemeenschap is alle organismen van alle soorten samen in een gebied.",
+        "uo": [
+         "Dat is de biotoop.",
+         "Dat is een populatie.",
+         "Klopt: alle organismen van alle soorten samen.",
+         "Ook dieren en andere organismen horen erbij."
+        ],
+        "uh": "Levensgemeenschap = alle organismen samen."
+       },
+       {
+        "v": "Wat is de biotoop?",
+        "o": [
+         "Alle dieren van een gebied samen",
+         "Alle planten van een gebied samen",
+         "Alle individuen van één soort",
+         "De niet-levende omgeving"
+        ],
+        "c": 3,
+        "d": 2,
+        "u": "De biotoop is de niet-levende omgeving van een ecosysteem, zoals bodem, water en klimaat.",
+        "uo": [
+         "Dieren horen bij de levensgemeenschap.",
+         "Planten horen bij de levensgemeenschap.",
+         "Dat is een populatie.",
+         "Klopt: de niet-levende omgeving."
+        ],
+        "uh": "Biotoop = de niet-levende omgeving."
+       },
+       {
+        "v": "Wat is een populatie?",
+        "o": [
+         "Alle individuen van één soort in een gebied",
+         "Alle soorten samen in een gebied",
+         "De niet-levende omgeving van een gebied",
+         "Een enkel los dier dat rondloopt ergens in het bos"
+        ],
+        "c": 0,
+        "d": 1,
+        "u": "Een populatie is alle individuen van één soort die in hetzelfde gebied leven.",
+        "uo": [
+         "Klopt: alle individuen van één soort.",
+         "Dat is de levensgemeenschap.",
+         "Dat is de biotoop.",
+         "Eén dier is een individu, geen populatie."
+        ],
+        "uh": "Populatie = alle individuen van één soort in een gebied."
+       },
+       {
+        "v": "Iemand noemt de bodem-pH als factor. Is dat biotisch of abiotisch?",
+        "o": [
+         "Biotisch, want planten leven in de bodem",
+         "Abiotisch, want pH is niet-levend",
+         "Biotisch, want bacteriën maken de pH",
+         "Geen van beide, pH telt niet als factor"
+        ],
+        "c": 1,
+        "d": 3,
+        "u": "De zuurgraad van de bodem is een niet-levende eigenschap en dus een abiotische factor.",
+        "uo": [
+         "Dat planten er leven maakt de pH niet levend.",
+         "Klopt: pH is niet-levend, dus abiotisch.",
+         "De pH zelf is niet-levend, ook al beïnvloeden bacteriën hem.",
+         "pH is wel degelijk een milieufactor."
+        ],
+        "uh": "pH van de bodem = abiotisch (niet-levend)."
+       },
+       {
+        "v": "Wat is een habitat?",
+        "o": [
+         "De rol van een soort in de voedselketen",
+         "Het aantal individuen van een soort",
+         "De leefomgeving of woonplaats van een soort",
+         "De niet-levende factoren van het gebied bij elkaar"
+        ],
+        "c": 2,
+        "d": 1,
+        "u": "De habitat is de plek waar een soort leeft, zijn woonplaats.",
+        "uo": [
+         "De rol hoort bij de niche.",
+         "Dat is de populatiegrootte.",
+         "Klopt: de woonplaats van een soort.",
+         "Dat is de biotoop, niet de habitat."
+        ],
+        "uh": "Habitat = de woonplaats van een soort."
+       },
+       {
+        "v": "Welke factor is biotisch?",
+        "o": [
+         "De hoeveelheid neerslag die er in het gebied valt",
+         "De windsnelheid in het gebied",
+         "De temperatuur van de bodem",
+         "De aanwezigheid van roofdieren"
+        ],
+        "c": 3,
+        "d": 2,
+        "u": "Roofdieren zijn levende organismen en vormen dus een biotische factor.",
+        "uo": [
+         "Neerslag is abiotisch.",
+         "Wind is abiotisch.",
+         "Temperatuur is abiotisch.",
+         "Klopt: roofdieren zijn levend, dus biotisch."
+        ],
+        "uh": "Roofdieren en concurrenten zijn biotische factoren."
+       },
+       {
+        "v": "Waarom kan dezelfde soort niet overal leven?",
+        "o": [
+         "Omdat de omgeving niet altijd bij de soort past",
+         "Omdat elke soort werkelijk altijd en overal kan leven",
+         "Omdat de niche in elk gebied hetzelfde is",
+         "Omdat abiotische factoren nergens verschillen"
+        ],
+        "c": 0,
+        "d": 3,
+        "u": "Een soort leeft alleen waar de biotische en abiotische factoren binnen zijn tolerantie passen.",
+        "uo": [
+         "Klopt: de omgeving past niet overal bij de soort.",
+         "Soorten kunnen juist niet overal leven.",
+         "De niche kan per gebied anders ingevuld zijn.",
+         "Abiotische factoren verschillen juist sterk per plek."
+        ],
+        "uh": "Een soort leeft alleen waar de factoren bij hem passen."
+       },
+       {
+        "v": "Wat hoort NIET bij de biotoop?",
+        "o": [
+         "De temperatuur",
+         "De regenwormen",
+         "Het zonlicht dat op het gebied valt gedurende de dag",
+         "Het water"
+        ],
+        "c": 1,
+        "d": 2,
+        "u": "Regenwormen zijn levend en horen bij de levensgemeenschap, niet bij de niet-levende biotoop.",
+        "uo": [
+         "Temperatuur is niet-levend, dus biotoop.",
+         "Klopt: regenwormen zijn levend, dus levensgemeenschap.",
+         "Licht is niet-levend, dus biotoop.",
+         "Water is niet-levend, dus biotoop."
+        ],
+        "uh": "Biotoop = alleen het niet-levende deel."
+       },
+       {
+        "v": "Concurrentie om voedsel tussen twee soorten is welke soort factor?",
+        "o": [
+         "Een abiotische factor",
+         "Een niet-levende factor",
+         "Een biotische factor",
+         "Helemaal geen factor"
+        ],
+        "c": 2,
+        "d": 2,
+        "u": "Concurrentie is een invloed tussen levende organismen en dus een biotische factor.",
+        "uo": [
+         "Concurrentie komt van organismen, niet van niet-levende dingen.",
+         "Het gaat juist om levende organismen.",
+         "Klopt: concurrentie is biotisch.",
+         "Concurrentie is wel degelijk een factor."
+        ],
+        "uh": "Concurrentie tussen organismen = biotisch."
+       },
+       {
+        "v": "Wat bepaalt samen het ecosysteem?",
+        "o": [
+         "Alleen de levende organismen die er in het gebied wonen",
+         "Alleen de niet-levende omgeving",
+         "Alleen de planten en het licht",
+         "De levensgemeenschap en de biotoop samen"
+        ],
+        "c": 3,
+        "d": 1,
+        "u": "Het ecosysteem is de levensgemeenschap en de biotoop samen, met hun onderlinge invloeden.",
+        "uo": [
+         "De niet-levende omgeving hoort er ook bij.",
+         "De organismen horen er ook bij.",
+         "Er hoort veel meer bij dan planten en licht.",
+         "Klopt: levensgemeenschap en biotoop samen."
+        ],
+        "uh": "Ecosysteem = levend en niet-levend samen."
+       },
+       {
+        "v": "Twee soorten hebben dezelfde niche in hetzelfde gebied. Wat gebeurt er waarschijnlijk?",
+        "o": [
+         "Ze gaan concurreren om dezelfde bronnen",
+         "Ze leven probleemloos naast elkaar",
+         "Ze veranderen samen langzaam in precies één nieuwe soort",
+         "Ze hebben geen enkele invloed op elkaar"
+        ],
+        "c": 0,
+        "d": 3,
+        "u": "Bij een gelijke niche gebruiken de soorten dezelfde bronnen, dus ontstaat er concurrentie.",
+        "uo": [
+         "Klopt: gelijke niche geeft concurrentie om dezelfde bronnen.",
+         "Bij een gelijke niche botsen ze juist.",
+         "Ze worden niet zomaar één soort.",
+         "Ze beïnvloeden elkaar juist sterk."
+        ],
+        "uh": "Gelijke niche = concurrentie om dezelfde bronnen."
+       },
+       {
+        "v": "Welke uitspraak over biotische en abiotische factoren klopt?",
+        "o": [
+         "Temperatuur is een biotische factor",
+         "Biotisch is levend, abiotisch is niet-levend",
+         "Roofdieren zijn een abiotische factor",
+         "Beide begrippen betekenen in de biologie precies hetzelfde"
+        ],
+        "c": 1,
+        "d": 2,
+        "u": "Biotische factoren komen van levende organismen; abiotische factoren zijn niet-levend.",
+        "uo": [
+         "Temperatuur is juist abiotisch.",
+         "Klopt: biotisch is levend, abiotisch niet-levend.",
+         "Roofdieren zijn juist biotisch.",
+         "Ze zijn juist elkaars tegengestelde."
+        ],
+        "uh": "Biotisch = levend, abiotisch = niet-levend."
+       },
+       {
+        "v": "Waar hoort licht bij in een ecosysteem?",
+        "o": [
+         "Bij de levensgemeenschap (biotisch)",
+         "Bij de populatie planten",
+         "Bij de biotoop (abiotisch)",
+         "Bij de niche van de dieren"
+        ],
+        "c": 2,
+        "d": 2,
+        "u": "Licht is een niet-levende factor en hoort dus bij de biotoop.",
+        "uo": [
+         "Licht is niet levend.",
+         "Licht is geen populatie.",
+         "Klopt: licht is abiotisch, dus biotoop.",
+         "Licht is geen niche."
+        ],
+        "uh": "Licht = abiotisch, hoort bij de biotoop."
+       },
+       {
+        "v": "Wat betekent het dat een soort goed is aangepast aan zijn omgeving?",
+        "o": [
+         "De soort verandert in zijn eentje de hele biotoop volledig",
+         "De soort heeft geen enkele vijand meer",
+         "De soort telt altijd heel veel individuen",
+         "De soort past goed bij de factoren in die omgeving"
+        ],
+        "c": 3,
+        "d": 3,
+        "u": "Aangepast zijn betekent dat de soort goed geschikt is voor de biotische en abiotische factoren ter plekke.",
+        "uo": [
+         "Aanpassing verandert niet de hele biotoop.",
+         "Aangepast zijn betekent niet vijandloos.",
+         "Aanpassing zegt niets over het exacte aantal.",
+         "Klopt: de soort past goed bij de plaatselijke factoren."
+        ],
+        "uh": "Aangepast = goed geschikt voor de factoren ter plaatse."
+       },
+       {
+        "v": "Ziekte door een bacterie is welke soort factor voor een dier?",
+        "o": [
+         "Biotisch, want een bacterie is levend",
+         "Abiotisch, want ziekte is niet-levend",
+         "Geen factor, ziekte telt niet mee",
+         "Abiotisch, precies zoals de temperatuur van de omgeving"
+        ],
+        "c": 0,
+        "d": 3,
+        "u": "Een bacterie is een levend organisme, dus ziekte door een bacterie is een biotische factor.",
+        "uo": [
+         "Klopt: een bacterie is levend, dus biotisch.",
+         "De bacterie die de ziekte veroorzaakt is levend.",
+         "Ziekte is wel degelijk een factor.",
+         "Anders dan temperatuur is een bacterie levend."
+        ],
+        "uh": "Ziekteverwekker is levend, dus biotisch."
+       },
+       {
+        "v": "Wat is het verschil tussen habitat en niche?",
+        "o": [
+         "De twee begrippen betekenen in de biologie precies hetzelfde",
+         "Habitat is de woonplaats, niche is de rol",
+         "Habitat is de rol, niche is de woonplaats",
+         "Beide gaan alleen over temperatuur"
+        ],
+        "c": 1,
+        "d": 3,
+        "u": "De habitat is waar een soort leeft; de niche is wat de soort doet: zijn plek en rol.",
+        "uo": [
+         "Ze verschillen juist.",
+         "Klopt: habitat = woonplaats, niche = rol.",
+         "Dit is precies omgekeerd.",
+         "Beide gaan over veel meer dan temperatuur."
+        ],
+        "uh": "Habitat = waar, niche = welke rol."
+       },
+       {
+        "v": "Welke reeks bevat alleen abiotische factoren?",
+        "o": [
+         "Licht, roofdieren, water",
+         "Voedsel, concurrentie, vijanden",
+         "Licht, temperatuur, water",
+         "Planten, bacteriën, dieren"
+        ],
+        "c": 2,
+        "d": 2,
+        "u": "Licht, temperatuur en water zijn allemaal niet-levend en dus abiotisch.",
+        "uo": [
+         "Roofdieren zijn levend, dus biotisch.",
+         "Dit zijn allemaal biotische factoren.",
+         "Klopt: alle drie zijn niet-levend.",
+         "Dit zijn allemaal levende organismen."
+        ],
+        "uh": "Abiotisch rijtje: licht, temperatuur, water."
+       },
+       {
+        "v": "Waarom is de niche belangrijk om een soort te begrijpen?",
+        "o": [
+         "Omdat de niche alleen het aantal dieren telt",
+         "Omdat de niche alleen de temperatuur beschrijft",
+         "Omdat de niche voor werkelijk alle soorten volkomen gelijk is",
+         "Omdat de niche laat zien hoe de soort in het ecosysteem past"
+        ],
+        "c": 3,
+        "d": 3,
+        "u": "De niche beschrijft de rol en plek van de soort, en dus hoe die met andere soorten en de omgeving samenhangt.",
+        "uo": [
+         "De niche is meer dan een aantal.",
+         "De niche is meer dan alleen temperatuur.",
+         "Elke soort heeft juist zijn eigen niche.",
+         "Klopt: de niche toont de plek en rol in het geheel."
+        ],
+        "uh": "Niche = hoe een soort in het ecosysteem past."
+       },
+       {
+        "v": "Wat hoort bij de levensgemeenschap van een sloot?",
+        "o": [
+         "De vissen, planten en bacteriën samen",
+         "De temperatuur van het slootwater door het jaar heen",
+         "De hoeveelheid zuurstof die in het water is opgelost",
+         "De zuurgraad van de modder op de bodem"
+        ],
+        "c": 0,
+        "d": 2,
+        "u": "De levensgemeenschap is alle organismen samen; de andere opties zijn niet-levende, abiotische factoren.",
+        "uo": [
+         "Klopt: alle organismen samen vormen de levensgemeenschap.",
+         "Temperatuur is abiotisch, geen levensgemeenschap.",
+         "Zuurstofgehalte is abiotisch.",
+         "Zuurgraad is abiotisch."
+        ],
+        "uh": "Levensgemeenschap = de levende organismen; de rest is abiotisch."
+       }
+      ],
+      "oe": [
+       {
+        "vraag": "Leg uit uit welke twee delen een ecosysteem bestaat.",
+        "antwoord": "Een ecosysteem bestaat uit de levensgemeenschap en de biotoop. De levensgemeenschap is het geheel van alle organismen van alle soorten in een gebied. De biotoop is de niet-levende omgeving, zoals de bodem, het water, het licht en de temperatuur. Samen met hun onderlinge invloeden vormen ze het ecosysteem."
+       },
+       {
+        "vraag": "Leg het verschil uit tussen een biotische en een abiotische factor, met van elk een voorbeeld.",
+        "antwoord": "Een biotische factor is een invloed die van levende organismen komt, bijvoorbeeld voedsel, concurrentie of een roofdier. Een abiotische factor is een niet-levende invloed, bijvoorbeeld temperatuur, licht of water. Het verschil is dus of de factor van iets levends komt of niet."
+       },
+       {
+        "vraag": "Wat wordt bedoeld met de niche van een soort?",
+        "antwoord": "De niche is de plek en rol die een soort in het ecosysteem inneemt. Daarbij hoort wat de soort eet, waar en hoe hij leeft, en hoe hij zich voortplant. Twee soorten met dezelfde niche in hetzelfde gebied gaan met elkaar concurreren om dezelfde bronnen."
+       },
+       {
+        "vraag": "Iemand deelt de zuurgraad van de bodem in als biotische factor. Leg uit waarom dat niet klopt.",
+        "antwoord": "De zuurgraad van de bodem is een niet-levende eigenschap van de omgeving. Biotische factoren komen van levende organismen. Omdat de pH zelf niet leeft, is het een abiotische factor, ook al kunnen organismen de pH wel beïnvloeden."
+       },
+       {
+        "vraag": "Leg uit wat er gebeurt als twee soorten in hetzelfde gebied dezelfde niche hebben.",
+        "antwoord": "Als twee soorten dezelfde niche hebben, gebruiken ze dezelfde bronnen, zoals hetzelfde voedsel en dezelfde ruimte. Daardoor gaan ze met elkaar concurreren. Vaak wint de ene soort en verdwijnt de andere uit dat gebied, of de soorten gaan hun niche iets anders invullen."
+       }
+      ]
+     },
+     {
+      "id": "P2",
+      "naam": "Voedselrelaties en energiedoorgifte",
+      "beschrijving": "Gouden-standaardmodule bi.P.2: voedselketens en voedselwebben, de rol van producent, consument en reducent, en energiedoorgifte via de piramide van biomassa.",
+      "ceStatus": "CE",
+      "onderwerpen": [
+       "Voedselketen en voedselweb",
+       "Producent, consument, reducent",
+       "Herbivoor, carnivoor, omnivoor",
+       "Energiedoorgifte (ongeveer 10 procent per stap)",
+       "Piramide van biomassa",
+       "Nutriënten en de kringloop"
+      ],
+      "sam": "In een voedselketen zie je wie wie eet. De pijl wijst naar het organisme dat eet, want de energie stroomt die kant op. Een producent maakt zelf voedsel met fotosynthese en staat aan het begin. Een consument eet andere organismen; een herbivoor eet planten, een carnivoor eet dieren. Een reducent breekt dode resten af en maakt daarbij nutriënten (voedingsstoffen) vrij die planten weer opnemen: de kringloop. Bij elke stap in de keten gaat veel energie verloren als warmte, ongeveer negentig procent, en gaat maar ongeveer tien procent door naar de volgende. Daarom is er bovenin een keten steeds minder biomassa: dat toont de piramide van biomassa.",
+      "begrippen": [
+       {
+        "t": "Voedselketen",
+        "d": "een reeks organismen die elkaar opeten, van producent tot consument"
+       },
+       {
+        "t": "Voedselweb",
+        "d": "meerdere voedselketens die met elkaar verbonden zijn"
+       },
+       {
+        "t": "Producent",
+        "d": "organisme dat zelf voedsel maakt met fotosynthese, meestal een plant"
+       },
+       {
+        "t": "Consument",
+        "d": "organisme dat andere organismen eet"
+       },
+       {
+        "t": "Reducent",
+        "d": "organisme dat dode resten afbreekt, zoals een bacterie of schimmel"
+       },
+       {
+        "t": "Herbivoor",
+        "d": "planteneter: een dier dat planten eet"
+       },
+       {
+        "t": "Carnivoor",
+        "d": "vleeseter: een dier dat andere dieren eet"
+       },
+       {
+        "t": "Energiedoorgifte",
+        "d": "de doorgave van energie van het ene organisme naar het volgende"
+       },
+       {
+        "t": "Piramide van biomassa",
+        "d": "een figuur die toont dat er bovenin een keten steeds minder biomassa is"
+       },
+       {
+        "t": "Nutriënt",
+        "d": "een voedingsstof die planten uit de bodem opnemen"
+       },
+       {
+        "t": "Biomassa",
+        "d": "de totale massa aan levend materiaal"
+       },
+       {
+        "t": "Kringloop",
+        "d": "het rondgaan van stoffen tussen organismen en de omgeving"
+       }
+      ],
+      "sv": [
+       {
+        "v": "Wat laat een voedselketen zien?",
+        "o": [
+         "Wie wie opeet",
+         "Hoeveel water er in een gebied valt per jaar",
+         "Welke abiotische factoren er in het gebied zijn",
+         "Hoe warm het is op verschillende plekken"
+        ],
+        "c": 0,
+        "d": 1,
+        "u": "Een voedselketen laat zien welke organismen elkaar opeten.",
+        "uo": [
+         "Klopt: wie eet wie.",
+         "Neerslag hoort niet in een voedselketen.",
+         "Dat zijn abiotische factoren, geen voedselketen.",
+         "Temperatuur is geen voedselketen."
+        ],
+        "uh": "Voedselketen = wie eet wie."
+       },
+       {
+        "v": "Wat is een producent?",
+        "o": [
+         "Een dier dat andere dieren opeet in het gebied",
+         "Een plant die zelf voedsel maakt",
+         "Een organisme dat dode resten afbreekt tot nutriënten",
+         "Een dier dat alleen planten eet als voedsel"
+        ],
+        "c": 1,
+        "d": 1,
+        "u": "Een producent maakt zelf voedsel met fotosynthese en staat aan het begin van de keten.",
+        "uo": [
+         "Dat is een consument.",
+         "Klopt: een producent maakt zelf voedsel.",
+         "Dat is een reducent.",
+         "Dat is een herbivoor (consument)."
+        ],
+        "uh": "Producent = maakt zelf voedsel (plant)."
+       },
+       {
+        "v": "Wat is een consument?",
+        "o": [
+         "Een plant die met licht zijn eigen voedsel maakt",
+         "Een bacterie die dode bladeren afbreekt",
+         "Een organisme dat andere organismen eet",
+         "Een niet-levende factor in het ecosysteem"
+        ],
+        "c": 2,
+        "d": 1,
+        "u": "Een consument eet andere organismen; hij maakt niet zelf voedsel.",
+        "uo": [
+         "Dat is een producent.",
+         "Dat is een reducent.",
+         "Klopt: een consument eet andere organismen.",
+         "Een consument is een levend organisme."
+        ],
+        "uh": "Consument = eet andere organismen."
+       },
+       {
+        "v": "Wat doet een reducent?",
+        "o": [
+         "Hij maakt met licht zijn eigen voedsel aan",
+         "Hij eet levende planten en dieren op",
+         "Hij houdt de temperatuur van de bodem stabiel",
+         "Hij breekt dode resten af"
+        ],
+        "c": 3,
+        "d": 1,
+        "u": "Een reducent breekt dode resten af en maakt daarbij nutriënten vrij.",
+        "uo": [
+         "Zelf voedsel maken doet een producent.",
+         "Levende dingen eten doet een consument.",
+         "Een reducent regelt geen temperatuur.",
+         "Klopt: hij breekt dode resten af."
+        ],
+        "uh": "Reducent = breekt dode resten af."
+       },
+       {
+        "v": "Welke organismen zijn typische reducenten?",
+        "o": [
+         "Bacteriën en schimmels",
+         "Grassen en bomen die in het gebied groeien",
+         "Roofdieren die op de toppredator jagen",
+         "De grote planteneters van de savanne"
+        ],
+        "c": 0,
+        "d": 2,
+        "u": "Bacteriën en schimmels zijn reducenten: ze breken dode resten af.",
+        "uo": [
+         "Klopt: bacteriën en schimmels zijn reducenten.",
+         "Grassen en bomen zijn producenten.",
+         "Roofdieren zijn consumenten.",
+         "Grote planteneters zijn consumenten."
+        ],
+        "uh": "Reducenten = bacteriën en schimmels."
+       },
+       {
+        "v": "Waar wijst de pijl in een voedselketen naartoe?",
+        "o": [
+         "Naar het organisme dat gegeten wordt",
+         "Naar het organisme dat eet",
+         "Altijd naar de producent onderaan",
+         "Altijd naar de zon als energiebron"
+        ],
+        "c": 1,
+        "d": 2,
+        "u": "De pijl wijst naar de eter, want de energie stroomt die kant op.",
+        "uo": [
+         "De pijl wijst juist weg van de prooi.",
+         "Klopt: naar de eter, waar de energie heen gaat.",
+         "De pijl gaat juist weg van de producent.",
+         "De pijl wijst niet naar de zon."
+        ],
+        "uh": "Pijl wijst naar de eter (energie stroomt mee)."
+       },
+       {
+        "v": "Wat is een herbivoor?",
+        "o": [
+         "Een dier dat alleen vlees eet als voedsel",
+         "Een organisme dat dode planten afbreekt",
+         "Een planteneter",
+         "Een plant die zelf voedsel produceert met licht"
+        ],
+        "c": 2,
+        "d": 1,
+        "u": "Een herbivoor is een planteneter.",
+        "uo": [
+         "Dat is een carnivoor.",
+         "Dat is een reducent.",
+         "Klopt: een herbivoor eet planten.",
+         "Dat is een producent."
+        ],
+        "uh": "Herbivoor = planteneter."
+       },
+       {
+        "v": "Wat is een carnivoor?",
+        "o": [
+         "Een organisme dat alleen planten eet",
+         "Een plant die dieren vangt en verteert",
+         "Een bacterie die dode dieren afbreekt",
+         "Een vleeseter"
+        ],
+        "c": 3,
+        "d": 1,
+        "u": "Een carnivoor is een vleeseter.",
+        "uo": [
+         "Dat is een herbivoor.",
+         "De meeste carnivoren zijn dieren, geen planten.",
+         "Dat is een reducent.",
+         "Klopt: een carnivoor eet vlees."
+        ],
+        "uh": "Carnivoor = vleeseter."
+       },
+       {
+        "v": "Hoeveel energie gaat er ongeveer door naar de volgende stap in een keten?",
+        "o": [
+         "Ongeveer tien procent",
+         "Ongeveer negentig procent van het totaal",
+         "Bijna honderd procent van alle energie",
+         "Precies de helft van de energie elke keer"
+        ],
+        "c": 0,
+        "d": 2,
+        "u": "Per stap gaat ongeveer tien procent door; de rest gaat verloren als warmte.",
+        "uo": [
+         "Klopt: ongeveer tien procent gaat door.",
+         "Ongeveer negentig procent gaat juist verloren.",
+         "Er gaat juist veel verloren, niet bijna alles door.",
+         "Het is ongeveer tien procent, niet de helft."
+        ],
+        "uh": "Ongeveer 10 procent gaat door, 90 procent verloren."
+       },
+       {
+        "v": "Waarom gaat er energie verloren bij elke stap in de keten?",
+        "o": [
+         "Omdat de zon steeds minder licht geeft",
+         "Omdat organismen energie gebruiken en warmte afgeven",
+         "Omdat de reducenten alle energie opslaan",
+         "Omdat de pijlen de verkeerde kant op wijzen"
+        ],
+        "c": 1,
+        "d": 3,
+        "u": "Organismen gebruiken energie om te leven en geven daarbij warmte af, dus gaat er per stap veel verloren.",
+        "uo": [
+         "De zon heeft hier niets mee te maken.",
+         "Klopt: leven kost energie, die als warmte verdwijnt.",
+         "Reducenten slaan de energie niet op.",
+         "De richting van de pijlen is niet de oorzaak."
+        ],
+        "uh": "Energieverlies = organismen verbruiken energie (warmte)."
+       },
+       {
+        "v": "Wat toont een piramide van biomassa?",
+        "o": [
+         "Dat er bovenin juist steeds meer biomassa is",
+         "Dat alle niveaus precies evenveel biomassa hebben",
+         "Dat er bovenin steeds minder biomassa is",
+         "Dat er alleen producenten in een gebied zijn"
+        ],
+        "c": 2,
+        "d": 2,
+        "u": "Omdat er per stap energie verloren gaat, is er bovenin de keten steeds minder biomassa.",
+        "uo": [
+         "Het is juist andersom: bovenin minder.",
+         "De niveaus verschillen juist sterk.",
+         "Klopt: bovenin steeds minder biomassa.",
+         "Er zijn ook consumenten en reducenten."
+        ],
+        "uh": "Piramide van biomassa: onderaan veel, bovenaan weinig."
+       },
+       {
+        "v": "Wat is een voedselweb?",
+        "o": [
+         "Eén enkele rechte voedselketen",
+         "De niet-levende omgeving van een gebied",
+         "Een lijst met alleen de producenten",
+         "Meerdere ketens die met elkaar verbonden zijn"
+        ],
+        "c": 3,
+        "d": 2,
+        "u": "Een voedselweb bestaat uit veel voedselketens die met elkaar zijn verbonden.",
+        "uo": [
+         "Eén keten is nog geen web.",
+         "Dat is de biotoop.",
+         "Een web bevat veel meer dan producenten.",
+         "Klopt: veel verbonden ketens vormen een web."
+        ],
+        "uh": "Voedselweb = veel verbonden voedselketens."
+       },
+       {
+        "v": "Wat is een nutriënt?",
+        "o": [
+         "Een voedingsstof die planten opnemen",
+         "Een roofdier boven in de keten",
+         "De warmte die vrijkomt bij het leven",
+         "Een plant die zelf voedsel maakt"
+        ],
+        "c": 0,
+        "d": 1,
+        "u": "Een nutriënt is een voedingsstof die planten uit de bodem opnemen.",
+        "uo": [
+         "Klopt: een voedingsstof voor planten.",
+         "Dat is een consument, geen nutriënt.",
+         "Warmte is geen nutriënt.",
+         "Dat is een producent."
+        ],
+        "uh": "Nutriënt = voedingsstof die planten opnemen."
+       },
+       {
+        "v": "Hoe komen nutriënten weer terug in de bodem?",
+        "o": [
+         "Doordat de zon ze aanmaakt in de lucht",
+         "Doordat reducenten dode resten afbreken",
+         "Doordat producenten ze uitscheiden als afval",
+         "Doordat roofdieren ze rechtstreeks maken"
+        ],
+        "c": 1,
+        "d": 3,
+        "u": "Reducenten breken dode resten af en maken daarbij de nutriënten weer vrij voor de planten.",
+        "uo": [
+         "De zon maakt geen nutriënten.",
+         "Klopt: reducenten maken nutriënten vrij.",
+         "Producenten nemen nutriënten juist op.",
+         "Roofdieren maken geen nutriënten."
+        ],
+        "uh": "Reducenten geven nutriënten terug aan de bodem."
+       },
+       {
+        "v": "Een keten is: gras, konijn, vos. Wat is het konijn?",
+        "o": [
+         "Een producent die zelf voedsel maakt",
+         "Een reducent die dood gras afbreekt",
+         "Een consument die de plant eet",
+         "Een abiotische factor van het gebied"
+        ],
+        "c": 2,
+        "d": 2,
+        "u": "Het konijn eet het gras (de producent), dus het konijn is een consument (herbivoor).",
+        "uo": [
+         "De producent is het gras, niet het konijn.",
+         "Het konijn breekt geen dode resten af.",
+         "Klopt: het konijn eet de plant, dus consument.",
+         "Het konijn is een levend organisme."
+        ],
+        "uh": "Wie een ander organisme eet, is een consument."
+       },
+       {
+        "v": "In dezelfde keten (gras, konijn, vos): wat is het gras?",
+        "o": [
+         "Een consument die dieren eet",
+         "Een reducent die afval afbreekt",
+         "Een roofdier boven in de keten",
+         "De producent"
+        ],
+        "c": 3,
+        "d": 2,
+        "u": "Gras maakt zelf voedsel met fotosynthese en is dus de producent, het begin van de keten.",
+        "uo": [
+         "Gras eet geen dieren.",
+         "Gras breekt geen dode resten af.",
+         "Gras is geen roofdier.",
+         "Klopt: gras is de producent."
+        ],
+        "uh": "De plant die zelf voedsel maakt = producent."
+       },
+       {
+        "v": "Waarom zijn er in een gebied meestal weinig toppredatoren?",
+        "o": [
+         "Omdat er bovenin de keten weinig energie over is",
+         "Omdat ze te groot zijn om te bewegen",
+         "Omdat ze geen enkel voedsel nodig hebben",
+         "Omdat ze zelf voedsel maken met licht"
+        ],
+        "c": 0,
+        "d": 3,
+        "u": "Bovenin de keten is er per stap veel energie verloren gegaan, dus is er voor weinig toppredatoren voedsel.",
+        "uo": [
+         "Klopt: bovenin blijft weinig energie over.",
+         "Hun grootte is niet de reden.",
+         "Ook toppredatoren hebben voedsel nodig.",
+         "Toppredatoren maken geen eigen voedsel."
+        ],
+        "uh": "Weinig energie bovenin = weinig toppredatoren."
+       },
+       {
+        "v": "Welke uitspraak over de energiestroom klopt?",
+        "o": [
+         "Energie neemt bij elke stap juist toe",
+         "Energie gaat verloren als warmte per stap",
+         "Energie blijft in de hele keten gelijk",
+         "Energie stroomt van de eter naar de prooi"
+        ],
+        "c": 1,
+        "d": 2,
+        "u": "Bij elke stap gaat energie verloren als warmte, dus stroomt er steeds minder door.",
+        "uo": [
+         "Energie neemt juist af, niet toe.",
+         "Klopt: per stap gaat energie verloren als warmte.",
+         "Energie blijft niet gelijk, er gaat veel verloren.",
+         "Energie stroomt van prooi naar eter."
+        ],
+        "uh": "Energie neemt af per stap (warmteverlies)."
+       },
+       {
+        "v": "Wat gebeurt er met een voedselweb als een soort verdwijnt?",
+        "o": [
+         "Er verandert helemaal niets in het web",
+         "Alleen de producenten worden geraakt",
+         "Andere soorten kunnen er ook door in de knel komen",
+         "Het hele web verandert direct in woestijn"
+        ],
+        "c": 2,
+        "d": 3,
+        "u": "Soorten in een web hangen samen, dus het verdwijnen van één soort raakt vaak ook andere soorten.",
+        "uo": [
+         "Een web is verbonden, dus er verandert wel iets.",
+         "Niet alleen producenten worden geraakt.",
+         "Klopt: andere soorten kunnen ook geraakt worden.",
+         "Er ontstaat niet meteen woestijn."
+        ],
+        "uh": "In een web hangt alles samen: één soort weg raakt meer soorten."
+       },
+       {
+        "v": "Wat is biomassa?",
+        "o": [
+         "De hoeveelheid warmte in een gebied",
+         "Het aantal abiotische factoren samen",
+         "De snelheid waarmee de wind waait",
+         "De totale massa aan levend materiaal"
+        ],
+        "c": 3,
+        "d": 1,
+        "u": "Biomassa is de totale massa aan levend materiaal in een niveau of gebied.",
+        "uo": [
+         "Warmte is geen biomassa.",
+         "Abiotische factoren zijn geen biomassa.",
+         "Windsnelheid is geen biomassa.",
+         "Klopt: totale massa aan levend materiaal."
+        ],
+        "uh": "Biomassa = totale massa levend materiaal."
+       },
+       {
+        "v": "Waarom staan producenten onderaan de piramide van biomassa?",
+        "o": [
+         "Omdat ze de meeste biomassa hebben",
+         "Omdat ze de minste biomassa hebben van allemaal",
+         "Omdat ze bovenaan de keten staan",
+         "Omdat ze dode resten afbreken tot nutriënten"
+        ],
+        "c": 0,
+        "d": 3,
+        "u": "Producenten leveren de basis en hebben de meeste biomassa, dus staan ze onderaan de piramide.",
+        "uo": [
+         "Klopt: producenten hebben de meeste biomassa.",
+         "Ze hebben juist de meeste, niet de minste.",
+         "Producenten staan onderaan, niet bovenaan.",
+         "Afbreken doen reducenten, niet producenten."
+        ],
+        "uh": "Producenten onderaan = de meeste biomassa."
+       },
+       {
+        "v": "Wat verbindt de kringloop van stoffen en de reducenten?",
+        "o": [
+         "Reducenten nemen alle nutriënten voorgoed op",
+         "Reducenten maken nutriënten weer vrij",
+         "Reducenten maken zelf voedsel met licht",
+         "Reducenten stoppen de kringloop volledig"
+        ],
+        "c": 1,
+        "d": 3,
+        "u": "Reducenten breken dode resten af en geven de nutriënten terug, waardoor de kringloop rond blijft gaan.",
+        "uo": [
+         "Ze houden de stoffen niet voorgoed vast.",
+         "Klopt: reducenten maken nutriënten weer vrij.",
+         "Reducenten maken geen eigen voedsel.",
+         "Ze houden de kringloop juist draaiend."
+        ],
+        "uh": "Reducenten sluiten de kringloop: nutriënten terug."
+       },
+       {
+        "v": "Welke volgorde klopt voor een voedselketen?",
+        "o": [
+         "Reducent, consument, producent",
+         "Consument, producent, reducent",
+         "Producent, consument, reducent",
+         "Reducent, producent, consument"
+        ],
+        "c": 2,
+        "d": 2,
+        "u": "Een keten begint bij de producent, dan de consument die eet, en de reducent breekt uiteindelijk de dode resten af.",
+        "uo": [
+         "De reducent staat niet vooraan.",
+         "De producent staat vooraan.",
+         "Klopt: producent, consument, reducent.",
+         "De producent staat vooraan, niet de reducent."
+        ],
+        "uh": "Producent eerst, dan consument, reducent breekt af."
+       },
+       {
+        "v": "Waarom is een lange voedselketen zeldzamer dan een korte?",
+        "o": [
+         "Omdat lange ketens verboden zijn in de natuur",
+         "Omdat producenten geen energie leveren",
+         "Omdat reducenten de keten steeds afkappen",
+         "Omdat er na veel stappen te weinig energie over is"
+        ],
+        "c": 3,
+        "d": 3,
+        "u": "Doordat er per stap veel energie verloren gaat, is er na veel stappen te weinig energie voor nog een niveau.",
+        "uo": [
+         "De natuur verbiedt niets, het gaat om energie.",
+         "Producenten leveren juist de basisenergie.",
+         "Reducenten kappen de keten niet af.",
+         "Klopt: na veel stappen is er te weinig energie."
+        ],
+        "uh": "Energieverlies begrenst de lengte van een keten."
+       },
+       {
+        "v": "Een keten is: gras, konijn, vos. Wat is de vos?",
+        "o": [
+         "De consument bovenaan",
+         "De producent die het voedsel maakt met licht",
+         "De reducent die het dode gras afbreekt",
+         "Een abiotische factor van het weiland"
+        ],
+        "c": 0,
+        "d": 2,
+        "u": "De vos eet het konijn en staat bovenaan deze keten, dus is de vos een consument (carnivoor).",
+        "uo": [
+         "Klopt: de vos eet en staat bovenaan, dus consument.",
+         "De producent is het gras, niet de vos.",
+         "De vos breekt geen dode resten af.",
+         "De vos is een levend organisme."
+        ],
+        "uh": "Wie bovenaan eet, is een consument (carnivoor)."
+       }
+      ],
+      "oe": [
+       {
+        "vraag": "Leg uit wat het verschil is tussen een producent, een consument en een reducent.",
+        "antwoord": "Een producent maakt zelf voedsel met fotosynthese, meestal een plant, en staat aan het begin van de keten. Een consument maakt niet zelf voedsel maar eet andere organismen. Een reducent breekt dode resten af en maakt daarbij nutriënten vrij die de planten weer kunnen opnemen."
+       },
+       {
+        "vraag": "Leg uit waarom er in een voedselketen per stap steeds minder energie beschikbaar is.",
+        "antwoord": "Elk organisme gebruikt energie om te leven, te bewegen en warm te blijven. Die energie gaat als warmte verloren. Daardoor gaat maar ongeveer tien procent van de energie door naar de volgende stap en gaat ongeveer negentig procent verloren. Zo blijft er bovenin de keten steeds minder energie over."
+       },
+       {
+        "vraag": "Leg uit wat de pijlen in een voedselketen betekenen.",
+        "antwoord": "De pijl in een voedselketen wijst naar het organisme dat eet, dus van de prooi naar de eter. De pijl laat zien welke kant de energie op stroomt: van het opgegeten organisme naar het organisme dat het opeet."
+       },
+       {
+        "vraag": "Leg uit waarom een piramide van biomassa breed is aan de onderkant en smal aan de bovenkant.",
+        "antwoord": "Onderaan staan de producenten; die hebben de meeste biomassa. Omdat er bij elke stap energie verloren gaat, is er hogerop steeds minder energie en dus minder biomassa. Daarom wordt de piramide naar boven toe steeds smaller."
+       },
+       {
+        "vraag": "Leg uit welke rol reducenten spelen in de kringloop van stoffen.",
+        "antwoord": "Reducenten, zoals bacteriën en schimmels, breken dode planten en dieren af. Daarbij komen de nutriënten weer vrij in de bodem. Planten nemen die nutriënten op om te groeien. Zo zorgen reducenten dat de stoffen blijven rondgaan in de kringloop."
+       }
+      ]
+     },
+     {
+      "id": "P3",
+      "naam": "Populatiedynamiek en draagkracht",
+      "beschrijving": "Gouden-standaardmodule bi.P.3: hoe een populatie verandert door geboorte, sterfte en trek, exponentiele groei, en de rol van draagkracht bij het begrenzen van de groei (S-kromme).",
+      "ceStatus": "CE",
+      "onderwerpen": [
+       "Populatie en populatiegrootte",
+       "Geboorte, sterfte, immigratie, emigratie",
+       "Exponentiele groei",
+       "Draagkracht als grens",
+       "Remmende factoren",
+       "Grafiek van populatiegroei (S-kromme)"
+      ],
+      "sam": "Een populatie is het geheel van alle individuen van één soort in een gebied. De grootte verandert door vier dingen: geboorte en immigratie maken de populatie groter, sterfte en emigratie maken hem kleiner. Als er genoeg voedsel en ruimte is, groeit een populatie eerst snel: exponentiele groei, in een grafiek een steile J-vorm. Maar een gebied kan niet oneindig veel individuen onderhouden. Het maximale aantal dat er duurzaam kan leven heet de draagkracht. Als de populatie de draagkracht nadert, remmen factoren als voedseltekort, ruimtegebrek, ziekte en concurrentie de groei af. De grafiek buigt dan af tot een S-kromme rond de draagkracht.",
+      "begrippen": [
+       {
+        "t": "Populatie",
+        "d": "alle individuen van één soort in een gebied"
+       },
+       {
+        "t": "Populatiedynamiek",
+        "d": "de veranderingen in de grootte van een populatie"
+       },
+       {
+        "t": "Draagkracht",
+        "d": "het maximale aantal individuen dat een gebied duurzaam kan onderhouden"
+       },
+       {
+        "t": "Geboorte",
+        "d": "de toename van een populatie door nieuwe individuen"
+       },
+       {
+        "t": "Sterfte",
+        "d": "de afname van een populatie doordat individuen doodgaan"
+       },
+       {
+        "t": "Immigratie",
+        "d": "individuen die het gebied binnenkomen"
+       },
+       {
+        "t": "Emigratie",
+        "d": "individuen die het gebied verlaten"
+       },
+       {
+        "t": "Exponentiele groei",
+        "d": "steeds snellere groei bij voldoende voedsel en ruimte"
+       },
+       {
+        "t": "Remmende factor",
+        "d": "een factor die de groei van een populatie afremt"
+       },
+       {
+        "t": "Concurrentie",
+        "d": "de strijd tussen individuen om voedsel, ruimte of partners"
+       },
+       {
+        "t": "S-kromme",
+        "d": "grafiek waarin de groei afvlakt rond de draagkracht"
+       },
+       {
+        "t": "Populatiegrootte",
+        "d": "het aantal individuen in een populatie"
+       }
+      ],
+      "sv": [
+       {
+        "v": "Wat is een populatie?",
+        "o": [
+         "Alle individuen van één soort in een gebied",
+         "Alle soorten samen die in een gebied leven",
+         "De niet-levende omgeving van een gebied",
+         "Eén enkel dier dat door het gebied trekt"
+        ],
+        "c": 0,
+        "d": 1,
+        "u": "Een populatie is alle individuen van één soort in hetzelfde gebied.",
+        "uo": [
+         "Klopt: alle individuen van één soort.",
+         "Dat is de levensgemeenschap.",
+         "Dat is de biotoop.",
+         "Eén dier is een individu."
+        ],
+        "uh": "Populatie = alle individuen van één soort."
+       },
+       {
+        "v": "Waardoor wordt een populatie groter?",
+        "o": [
+         "Door sterfte en emigratie samen",
+         "Door geboorte en immigratie",
+         "Door een tekort aan voedsel",
+         "Door meer roofdieren in het gebied"
+        ],
+        "c": 1,
+        "d": 2,
+        "u": "Geboorte en immigratie voegen individuen toe, dus daardoor groeit de populatie.",
+        "uo": [
+         "Sterfte en emigratie maken hem juist kleiner.",
+         "Klopt: geboorte en immigratie laten hem groeien.",
+         "Voedseltekort remt de groei.",
+         "Meer roofdieren remmen de groei."
+        ],
+        "uh": "Groter: geboorte + immigratie."
+       },
+       {
+        "v": "Waardoor wordt een populatie kleiner?",
+        "o": [
+         "Door geboorte en immigratie samen",
+         "Door meer voedsel in het gebied",
+         "Door sterfte en emigratie",
+         "Door meer ruimte voor de dieren"
+        ],
+        "c": 2,
+        "d": 2,
+        "u": "Sterfte en emigratie halen individuen weg, dus daardoor krimpt de populatie.",
+        "uo": [
+         "Geboorte en immigratie laten hem juist groeien.",
+         "Meer voedsel laat hem eerder groeien.",
+         "Klopt: sterfte en emigratie maken hem kleiner.",
+         "Meer ruimte remt de groei niet."
+        ],
+        "uh": "Kleiner: sterfte + emigratie."
+       },
+       {
+        "v": "Wat is immigratie?",
+        "o": [
+         "Individuen die doodgaan in het gebied",
+         "Individuen die in het gebied geboren worden",
+         "Individuen die het gebied verlaten",
+         "Individuen die het gebied binnenkomen"
+        ],
+        "c": 3,
+        "d": 1,
+        "u": "Immigratie is het binnenkomen van individuen in een gebied.",
+        "uo": [
+         "Dat is sterfte.",
+         "Dat is geboorte.",
+         "Dat is emigratie.",
+         "Klopt: binnenkomen in het gebied."
+        ],
+        "uh": "Immigratie = binnenkomen (in het gebied)."
+       },
+       {
+        "v": "Wat is emigratie?",
+        "o": [
+         "Individuen die het gebied verlaten",
+         "Individuen die het gebied binnenkomen",
+         "Individuen die geboren worden",
+         "Individuen die doodgaan door ziekte"
+        ],
+        "c": 0,
+        "d": 1,
+        "u": "Emigratie is het vertrekken van individuen uit een gebied.",
+        "uo": [
+         "Klopt: het gebied verlaten.",
+         "Dat is immigratie.",
+         "Dat is geboorte.",
+         "Dat is sterfte."
+        ],
+        "uh": "Emigratie = vertrekken (uit het gebied)."
+       },
+       {
+        "v": "Wat is de draagkracht van een gebied?",
+        "o": [
+         "Het aantal soorten in een gebied",
+         "Het maximale aantal dat er duurzaam kan leven",
+         "De hoeveelheid regen die er valt",
+         "Het aantal roofdieren in het gebied"
+        ],
+        "c": 1,
+        "d": 2,
+        "u": "De draagkracht is het maximale aantal individuen dat een gebied blijvend kan onderhouden.",
+        "uo": [
+         "Dat is de soortenrijkdom, niet de draagkracht.",
+         "Klopt: het maximale aantal dat er duurzaam kan leven.",
+         "Neerslag is niet de draagkracht.",
+         "De draagkracht gaat over aantallen, niet alleen roofdieren."
+        ],
+        "uh": "Draagkracht = maximaal aantal dat een gebied aankan."
+       },
+       {
+        "v": "Wat is exponentiele groei?",
+        "o": [
+         "Groei die precies gelijk blijft per jaar",
+         "Een populatie die steeds kleiner wordt",
+         "Groei die steeds sneller gaat",
+         "Een populatie die helemaal niet verandert"
+        ],
+        "c": 2,
+        "d": 2,
+        "u": "Bij exponentiele groei neemt de populatie steeds sneller toe, zolang er genoeg voedsel en ruimte is.",
+        "uo": [
+         "Bij exponentieel blijft de groei niet gelijk.",
+         "Het is groei, geen afname.",
+         "Klopt: de groei wordt steeds sneller.",
+         "Er verandert juist veel."
+        ],
+        "uh": "Exponentieel = steeds snellere groei."
+       },
+       {
+        "v": "Wat gebeurt er als een populatie de draagkracht nadert?",
+        "o": [
+         "De groei versnelt juist enorm",
+         "De populatie verdwijnt meteen helemaal",
+         "De draagkracht wordt vanzelf oneindig",
+         "De groei vlakt af"
+        ],
+        "c": 3,
+        "d": 3,
+        "u": "Bij de draagkracht remmen factoren als voedseltekort de groei, dus vlakt de groei af.",
+        "uo": [
+         "De groei versnelt juist niet meer.",
+         "De populatie verdwijnt niet meteen.",
+         "De draagkracht wordt niet oneindig.",
+         "Klopt: de groei vlakt af rond de draagkracht."
+        ],
+        "uh": "Bij de draagkracht vlakt de groei af."
+       },
+       {
+        "v": "Welke vorm heeft de grafiek van geremde populatiegroei?",
+        "o": [
+         "Een S-kromme",
+         "Een steeds stijgende rechte lijn",
+         "Een dalende rechte lijn",
+         "Een grafiek die meteen op nul blijft"
+        ],
+        "c": 0,
+        "d": 2,
+        "u": "Geremde groei geeft een S-kromme: eerst snel, dan afvlakkend rond de draagkracht.",
+        "uo": [
+         "Klopt: een S-kromme.",
+         "Een rechte lijn hoort niet bij geremde groei.",
+         "De populatie groeit eerst, hij daalt niet meteen.",
+         "De populatie blijft niet op nul."
+        ],
+        "uh": "Geremde groei = S-kromme."
+       },
+       {
+        "v": "Wat is een remmende factor voor populatiegroei?",
+        "o": [
+         "Heel veel vrije ruimte",
+         "Voedseltekort",
+         "Overvloedig veel voedsel",
+         "Een zacht en mild klimaat"
+        ],
+        "c": 1,
+        "d": 2,
+        "u": "Een remmende factor, zoals voedseltekort, houdt de groei van een populatie tegen.",
+        "uo": [
+         "Veel ruimte remt niet, dat helpt juist.",
+         "Klopt: voedseltekort remt de groei.",
+         "Veel voedsel remt niet, dat helpt juist.",
+         "Een mild klimaat remt de groei niet."
+        ],
+        "uh": "Remmende factor = houdt de groei tegen (bv. voedseltekort)."
+       },
+       {
+        "v": "Waarom kan een populatie niet eindeloos exponentieel blijven groeien?",
+        "o": [
+         "Omdat de dieren dat saai vinden",
+         "Omdat de zon te veel energie geeft",
+         "Omdat voedsel en ruimte beperkt zijn",
+         "Omdat er nooit sterfte optreedt"
+        ],
+        "c": 2,
+        "d": 3,
+        "u": "Voedsel en ruimte zijn beperkt, dus botst de groei op de draagkracht en vlakt hij af.",
+        "uo": [
+         "Dat is geen biologische reden.",
+         "De zon is niet de reden.",
+         "Klopt: beperkt voedsel en ruimte begrenzen de groei.",
+         "Sterfte treedt juist wel op."
+        ],
+        "uh": "Beperkt voedsel en ruimte begrenzen de groei."
+       },
+       {
+        "v": "Wat betekent concurrentie binnen een populatie?",
+        "o": [
+         "Alle dieren delen alles eerlijk",
+         "Het samenwerken van alle individuen",
+         "Het binnenkomen van nieuwe dieren",
+         "De strijd om voedsel, ruimte of partners"
+        ],
+        "c": 3,
+        "d": 2,
+        "u": "Concurrentie is de strijd tussen individuen om schaarse bronnen zoals voedsel en ruimte.",
+        "uo": [
+         "Concurrentie is juist strijd, geen eerlijk delen.",
+         "Concurrentie is geen samenwerking.",
+         "Dat is immigratie.",
+         "Klopt: strijd om voedsel, ruimte of partners."
+        ],
+        "uh": "Concurrentie = strijd om schaarse bronnen."
+       },
+       {
+        "v": "Op de x-as van een populatiegrafiek staat meestal de tijd. Wat staat op de y-as?",
+        "o": [
+         "Het aantal individuen",
+         "De hoeveelheid regen",
+         "De temperatuur van de lucht",
+         "Het aantal soorten in het gebied"
+        ],
+        "c": 0,
+        "d": 2,
+        "u": "Op de y-as staat de populatiegrootte, dus het aantal individuen, tegen de tijd op de x-as.",
+        "uo": [
+         "Klopt: het aantal individuen (populatiegrootte).",
+         "Neerslag staat er niet op.",
+         "Temperatuur staat er niet op.",
+         "Het gaat om één soort, niet het aantal soorten."
+        ],
+        "uh": "Populatiegrafiek: aantal individuen tegen de tijd."
+       },
+       {
+        "v": "De grafiek stijgt eerst snel en vlakt daarna af. Wat betekent de afvlakking?",
+        "o": [
+         "De populatie begint pas net te groeien",
+         "De draagkracht is bijna bereikt",
+         "Er is opeens oneindig veel voedsel",
+         "De tijd loopt in de grafiek achteruit"
+        ],
+        "c": 1,
+        "d": 3,
+        "u": "De afvlakking laat zien dat de populatie de draagkracht nadert en de groei geremd wordt.",
+        "uo": [
+         "De groei begon juist eerder, niet nu pas.",
+         "Klopt: de afvlakking hoort bij de draagkracht.",
+         "Er is juist een tekort dat de groei remt.",
+         "De tijd loopt gewoon vooruit."
+        ],
+        "uh": "Afvlakken in de grafiek = draagkracht bijna bereikt."
+       },
+       {
+        "v": "Wat gebeurt er meestal als een populatie boven de draagkracht komt?",
+        "o": [
+         "De populatie blijft eeuwig zo groot",
+         "De draagkracht stijgt vanzelf mee",
+         "De populatie neemt weer af",
+         "Er verandert helemaal niets meer"
+        ],
+        "c": 2,
+        "d": 3,
+        "u": "Boven de draagkracht is er te weinig voedsel en ruimte, dus stijgt de sterfte en daalt de populatie weer.",
+        "uo": [
+         "Zo groot blijven kan het gebied niet dragen.",
+         "De draagkracht stijgt niet zomaar mee.",
+         "Klopt: door tekorten neemt de populatie weer af.",
+         "Er verandert juist wel iets: de populatie daalt."
+        ],
+        "uh": "Boven de draagkracht daalt de populatie weer."
+       },
+       {
+        "v": "Welke factor verhoogt de sterfte in een populatie?",
+        "o": [
+         "Veel voedsel voor iedereen",
+         "Veel vrije ruimte in het gebied",
+         "Een groot geboorteoverschot",
+         "Een uitbraak van een ziekte"
+        ],
+        "c": 3,
+        "d": 2,
+        "u": "Een ziekte-uitbraak laat meer individuen doodgaan en verhoogt dus de sterfte.",
+        "uo": [
+         "Veel voedsel verhoogt de sterfte niet.",
+         "Veel ruimte verhoogt de sterfte niet.",
+         "Een geboorteoverschot gaat over geboorte, niet sterfte.",
+         "Klopt: een ziekte verhoogt de sterfte."
+        ],
+        "uh": "Ziekte, roofdieren en tekort verhogen de sterfte."
+       },
+       {
+        "v": "Wat is populatiedynamiek?",
+        "o": [
+         "De veranderingen in de grootte van een populatie",
+         "De niet-levende factoren van een gebied",
+         "Het aantal soorten in een ecosysteem",
+         "De rol van een soort in de voedselketen"
+        ],
+        "c": 0,
+        "d": 1,
+        "u": "Populatiedynamiek gaat over hoe de grootte van een populatie in de tijd verandert.",
+        "uo": [
+         "Klopt: de veranderingen in de populatiegrootte.",
+         "Dat zijn abiotische factoren.",
+         "Dat is de soortenrijkdom.",
+         "Dat is de niche."
+        ],
+        "uh": "Populatiedynamiek = veranderingen in de populatiegrootte."
+       },
+       {
+        "v": "Een populatie groeit terwijl er evenveel dieren doodgaan als er geboren worden. Hoe kan dat?",
+        "o": [
+         "Dat kan helemaal niet gebeuren",
+         "Door meer immigratie dan emigratie",
+         "Doordat de dieren groter worden",
+         "Doordat de tijd stilstaat in de grafiek"
+        ],
+        "c": 1,
+        "d": 3,
+        "u": "Als geboorte en sterfte gelijk zijn, kan de populatie toch groeien doordat er meer dieren binnenkomen dan vertrekken.",
+        "uo": [
+         "Het kan wel, via immigratie.",
+         "Klopt: meer immigratie dan emigratie laat hem groeien.",
+         "Groter worden is geen toename van het aantal.",
+         "De tijd staat niet stil."
+        ],
+        "uh": "Ook trek (immigratie/emigratie) verandert een populatie."
+       },
+       {
+        "v": "Wat is de populatiegrootte?",
+        "o": [
+         "De oppervlakte van het gebied",
+         "Het aantal verschillende soorten",
+         "Het aantal individuen in de populatie",
+         "De hoeveelheid voedsel in het gebied"
+        ],
+        "c": 2,
+        "d": 1,
+        "u": "De populatiegrootte is het aantal individuen dat de populatie op dat moment telt.",
+        "uo": [
+         "Dat is de oppervlakte, niet de populatiegrootte.",
+         "Dat is de soortenrijkdom.",
+         "Klopt: het aantal individuen.",
+         "Dat is de voedselvoorraad."
+        ],
+        "uh": "Populatiegrootte = aantal individuen."
+       },
+       {
+        "v": "Waarom remt concurrentie de groei bij een grote populatie sterker?",
+        "o": [
+         "Omdat er dan meer voedsel per dier is",
+         "Omdat de dieren dan kleiner worden",
+         "Omdat de draagkracht dan stijgt",
+         "Omdat er dan meer dieren om dezelfde bronnen strijden"
+        ],
+        "c": 3,
+        "d": 3,
+        "u": "In een grote populatie moeten meer individuen dezelfde beperkte bronnen delen, dus is de concurrentie heviger.",
+        "uo": [
+         "Er is juist minder voedsel per dier.",
+         "Hun grootte is niet de reden.",
+         "De draagkracht stijgt niet mee.",
+         "Klopt: meer dieren strijden om dezelfde bronnen."
+        ],
+        "uh": "Grote populatie = meer concurrentie om dezelfde bronnen."
+       },
+       {
+        "v": "Welke uitspraak over draagkracht klopt?",
+        "o": [
+         "De draagkracht is de grens die een gebied aankan",
+         "De draagkracht is voor elk gebied gelijk",
+         "De draagkracht groeit altijd met de populatie mee",
+         "De draagkracht heeft niets met voedsel te maken"
+        ],
+        "c": 0,
+        "d": 2,
+        "u": "De draagkracht is het maximale aantal dat een gebied duurzaam kan onderhouden, bepaald door voedsel en ruimte.",
+        "uo": [
+         "Klopt: het is de grens die het gebied aankan.",
+         "Elk gebied heeft een eigen draagkracht.",
+         "De draagkracht groeit niet zomaar mee.",
+         "Voedsel bepaalt juist mede de draagkracht."
+        ],
+        "uh": "Draagkracht = grens die het gebied duurzaam aankan."
+       },
+       {
+        "v": "Wat zegt een steile J-vorm in een populatiegrafiek?",
+        "o": [
+         "De populatie is uitgestorven",
+         "De populatie groeit heel snel (exponentieel)",
+         "De populatie blijft precies gelijk",
+         "De draagkracht is al bereikt"
+        ],
+        "c": 1,
+        "d": 3,
+        "u": "Een steile J-vorm hoort bij exponentiele groei: de populatie neemt steeds sneller toe.",
+        "uo": [
+         "Bij uitsterven daalt de lijn juist.",
+         "Klopt: de J-vorm hoort bij snelle, exponentiele groei.",
+         "Bij gelijk blijven is de lijn vlak.",
+         "Bij de draagkracht vlakt de lijn juist af."
+        ],
+        "uh": "J-vorm = exponentiele (steeds snellere) groei."
+       },
+       {
+        "v": "Een gebied krijgt meer voedsel. Wat gebeurt er meestal met de draagkracht?",
+        "o": [
+         "De draagkracht wordt kleiner",
+         "De draagkracht verdwijnt helemaal",
+         "De draagkracht wordt groter",
+         "De draagkracht blijft altijd precies gelijk"
+        ],
+        "c": 2,
+        "d": 3,
+        "u": "Meer voedsel betekent dat het gebied meer individuen kan onderhouden, dus stijgt de draagkracht.",
+        "uo": [
+         "Meer voedsel verlaagt de draagkracht niet.",
+         "De draagkracht verdwijnt niet.",
+         "Klopt: meer voedsel verhoogt de draagkracht.",
+         "De draagkracht kan juist veranderen met het voedsel."
+        ],
+        "uh": "Meer voedsel = hogere draagkracht."
+       },
+       {
+        "v": "Waarom is het fout om bij exponentiele groei de draagkracht te vergeten?",
+        "o": [
+         "Omdat exponentiele groei niet bestaat",
+         "Omdat de draagkracht de groei versnelt",
+         "Omdat een populatie nooit groeit",
+         "Omdat de groei in het echt door de draagkracht wordt geremd"
+        ],
+        "c": 3,
+        "d": 3,
+        "u": "In werkelijkheid loopt exponentiele groei tegen de draagkracht aan, waardoor de groei afvlakt tot een S-kromme.",
+        "uo": [
+         "Exponentiele groei bestaat wel, tijdelijk.",
+         "De draagkracht remt juist, ze versnelt niet.",
+         "Populaties kunnen wel degelijk groeien.",
+         "Klopt: de draagkracht remt de groei uiteindelijk."
+        ],
+        "uh": "Zonder draagkracht mist je waarom de groei afvlakt."
+       },
+       {
+        "v": "Roofdieren eten veel prooidieren. Wat doet dat met de prooipopulatie?",
+        "o": [
+         "Die neemt af",
+         "Die groeit juist sneller dan ooit",
+         "Die blijft altijd precies gelijk",
+         "Die verdwijnt nooit door roofdieren"
+        ],
+        "c": 0,
+        "d": 2,
+        "u": "Roofdieren verhogen de sterfte van de prooi, dus neemt de prooipopulatie af.",
+        "uo": [
+         "Klopt: meer sterfte, dus de prooipopulatie neemt af.",
+         "Meer sterfte laat hem juist niet sneller groeien.",
+         "Hij blijft niet gelijk bij meer sterfte.",
+         "Roofdieren kunnen de prooi juist sterk laten dalen."
+        ],
+        "uh": "Roofdieren verhogen de sterfte van de prooi (remmende factor)."
+       }
+      ],
+      "oe": [
+       {
+        "vraag": "Noem de vier factoren die de grootte van een populatie veranderen en geef aan welke hem groter en welke hem kleiner maken.",
+        "antwoord": "De vier factoren zijn geboorte, sterfte, immigratie en emigratie. Geboorte en immigratie maken de populatie groter, want er komen individuen bij. Sterfte en emigratie maken de populatie kleiner, want er verdwijnen individuen."
+       },
+       {
+        "vraag": "Leg uit wat draagkracht is en waarom een populatie niet oneindig kan groeien.",
+        "antwoord": "De draagkracht is het maximale aantal individuen dat een gebied duurzaam kan onderhouden. Een populatie kan niet oneindig groeien omdat voedsel en ruimte beperkt zijn. Als de populatie de draagkracht nadert, remmen factoren als voedseltekort, ziekte en concurrentie de groei, waardoor die afvlakt."
+       },
+       {
+        "vraag": "Leg uit waarom de grafiek van geremde populatiegroei een S-kromme is.",
+        "antwoord": "In het begin is er veel voedsel en ruimte, dus groeit de populatie snel: de lijn stijgt steil. Naarmate de populatie de draagkracht nadert, gaan remmende factoren de groei tegenhouden en vlakt de lijn af. Zo ontstaat de S-vorm: eerst steil, dan afvlakkend rond de draagkracht."
+       },
+       {
+        "vraag": "Leg uit hoe een populatie kan groeien terwijl er evenveel individuen geboren worden als er sterven.",
+        "antwoord": "De grootte van een populatie hangt niet alleen af van geboorte en sterfte, maar ook van immigratie en emigratie. Als er meer individuen het gebied binnenkomen dan er vertrekken, groeit de populatie, ook al zijn geboorte en sterfte precies gelijk."
+       },
+       {
+        "vraag": "Leg uit wat er gebeurt als een populatie boven de draagkracht van een gebied uitkomt.",
+        "antwoord": "Boven de draagkracht is er te weinig voedsel en ruimte voor alle individuen. Daardoor neemt de concurrentie toe en stijgt de sterfte, terwijl de geboorte kan dalen. De populatie neemt dan weer af tot rond de draagkracht."
+       }
+      ]
+     },
+     {
+      "id": "P4",
+      "naam": "Relaties tussen soorten",
+      "beschrijving": "Gouden-standaardmodule bi.P.4: vormen van symbiose (mutualisme, commensalisme en parasitisme), predatie en concurrentie, en het effect van een exoot op een ecosysteem.",
+      "ceStatus": "CE",
+      "onderwerpen": [
+       "Symbiose als langdurig samenleven",
+       "Mutualisme (beide voordeel)",
+       "Commensalisme (een voordeel, ander geen last)",
+       "Parasitisme (parasiet voordeel, gastheer nadeel)",
+       "Predatie en concurrentie",
+       "Exoot en het effect op een ecosysteem"
+      ],
+      "sam": "Soorten hebben allerlei relaties met elkaar. Symbiose is het langdurig samenleven van twee soorten. Er zijn drie vormen. Bij mutualisme hebben beide soorten voordeel, zoals een bij die nectar haalt en de bloem bestuift. Bij commensalisme heeft de ene soort voordeel en de andere geen voordeel maar ook geen nadeel. Bij parasitisme heeft de parasiet voordeel en de gastheer nadeel, want de parasiet leeft ten koste van de gastheer. Daarnaast bestaan predatie (een roofdier eet een prooi) en concurrentie (soorten strijden om dezelfde bronnen). Een exoot is een soort die van elders komt. Zonder natuurlijke vijanden kan een exoot sterk toenemen en inheemse soorten verdringen.",
+      "begrippen": [
+       {
+        "t": "Symbiose",
+        "d": "het langdurig samenleven van twee verschillende soorten"
+       },
+       {
+        "t": "Mutualisme",
+        "d": "samenleven waarbij beide soorten voordeel hebben"
+       },
+       {
+        "t": "Commensalisme",
+        "d": "samenleven waarbij één soort voordeel heeft en de ander geen last"
+       },
+       {
+        "t": "Parasitisme",
+        "d": "samenleven waarbij de parasiet voordeel heeft en de gastheer nadeel"
+       },
+       {
+        "t": "Parasiet",
+        "d": "organisme dat leeft ten koste van een gastheer"
+       },
+       {
+        "t": "Gastheer",
+        "d": "organisme waarop of waarin een parasiet leeft"
+       },
+       {
+        "t": "Predatie",
+        "d": "een roofdier dat een prooidier vangt en opeet"
+       },
+       {
+        "t": "Predator",
+        "d": "een roofdier dat andere dieren als prooi eet"
+       },
+       {
+        "t": "Prooi",
+        "d": "een dier dat door een roofdier wordt gegeten"
+       },
+       {
+        "t": "Concurrentie",
+        "d": "de strijd tussen soorten om dezelfde bronnen"
+       },
+       {
+        "t": "Exoot",
+        "d": "een soort die van nature niet in het gebied thuishoort"
+       },
+       {
+        "t": "Inheemse soort",
+        "d": "een soort die van nature in het gebied voorkomt"
+       }
+      ],
+      "sv": [
+       {
+        "v": "Wat is symbiose?",
+        "o": [
+         "Het langdurig samenleven van twee soorten",
+         "Het eenmalig ontmoeten van twee dieren",
+         "De niet-levende omgeving van een gebied",
+         "Het totale aantal individuen van één enkele soort"
+        ],
+        "c": 0,
+        "d": 1,
+        "u": "Symbiose is het langdurig samenleven van twee verschillende soorten.",
+        "uo": [
+         "Klopt: langdurig samenleven van twee soorten.",
+         "Symbiose is juist langdurig, geen eenmalige ontmoeting.",
+         "Dat is de biotoop.",
+         "Dat is de populatiegrootte."
+        ],
+        "uh": "Symbiose = langdurig samenleven van twee soorten."
+       },
+       {
+        "v": "Wat is mutualisme?",
+        "o": [
+         "Eén soort voordeel, de ander nadeel",
+         "Beide soorten hebben voordeel",
+         "Eén soort voordeel, de ander geen last",
+         "Beide soorten hebben alleen maar nadeel"
+        ],
+        "c": 1,
+        "d": 2,
+        "u": "Bij mutualisme hebben beide soorten voordeel van het samenleven.",
+        "uo": [
+         "Dat is parasitisme.",
+         "Klopt: beide soorten hebben voordeel.",
+         "Dat is commensalisme.",
+         "Bij mutualisme is er juist voordeel voor beide."
+        ],
+        "uh": "Mutualisme = beide voordeel."
+       },
+       {
+        "v": "Wat is parasitisme?",
+        "o": [
+         "Beide soorten hebben er voordeel van de samenwerking",
+         "Geen van beide merkt er iets van",
+         "De parasiet voordeel, de gastheer nadeel",
+         "Beide soorten hebben geen voordeel"
+        ],
+        "c": 2,
+        "d": 2,
+        "u": "Bij parasitisme heeft de parasiet voordeel en de gastheer nadeel.",
+        "uo": [
+         "Dat is mutualisme.",
+         "Bij parasitisme merkt de gastheer er wel iets van.",
+         "Klopt: parasiet voordeel, gastheer nadeel.",
+         "De parasiet heeft juist voordeel."
+        ],
+        "uh": "Parasitisme = parasiet voordeel, gastheer nadeel."
+       },
+       {
+        "v": "Wat is commensalisme?",
+        "o": [
+         "Beide soorten hebben nadeel van elkaar",
+         "De parasiet heeft voordeel over de gastheer",
+         "Beide soorten hebben even veel voordeel",
+         "Eén soort voordeel, de ander geen last"
+        ],
+        "c": 3,
+        "d": 2,
+        "u": "Bij commensalisme heeft de ene soort voordeel en de ander geen voordeel maar ook geen nadeel.",
+        "uo": [
+         "Dat is geen commensalisme.",
+         "Dat is parasitisme.",
+         "Dat is mutualisme.",
+         "Klopt: één voordeel, de ander geen last."
+        ],
+        "uh": "Commensalisme = één voordeel, ander geen last."
+       },
+       {
+        "v": "Een bij haalt nectar en bestuift daarbij de bloem. Welke relatie is dat?",
+        "o": [
+         "Mutualisme",
+         "Parasitisme",
+         "Predatie",
+         "Concurrentie"
+        ],
+        "c": 0,
+        "d": 2,
+        "u": "De bij krijgt nectar en de bloem wordt bestoven: beide hebben voordeel, dus mutualisme.",
+        "uo": [
+         "Klopt: beide voordeel, dus mutualisme.",
+         "Er is geen gastheer met nadeel.",
+         "De bij eet de bloem niet op.",
+         "Ze strijden niet om dezelfde bron."
+        ],
+        "uh": "Bij en bloem = mutualisme (beide voordeel)."
+       },
+       {
+        "v": "Een teek zuigt bloed van een hond. Welke relatie is dat?",
+        "o": [
+         "Mutualisme",
+         "Parasitisme",
+         "Commensalisme",
+         "Predatie"
+        ],
+        "c": 1,
+        "d": 2,
+        "u": "De teek (parasiet) heeft voordeel en de hond (gastheer) nadeel, dus parasitisme.",
+        "uo": [
+         "De hond heeft juist nadeel, geen voordeel.",
+         "Klopt: teek voordeel, hond nadeel, dus parasitisme.",
+         "De hond heeft wel degelijk nadeel.",
+         "De teek eet de hond niet in één keer op."
+        ],
+        "uh": "Teek en hond = parasitisme."
+       },
+       {
+        "v": "Wat is een parasiet?",
+        "o": [
+         "Een roofdier dat andere prooidieren opjaagt en vangt",
+         "Een plant die zelf voedsel maakt",
+         "Een organisme dat leeft ten koste van een gastheer",
+         "Een reducent die dode resten afbreekt"
+        ],
+        "c": 2,
+        "d": 1,
+        "u": "Een parasiet leeft op of in een gastheer en gaat ten koste van die gastheer.",
+        "uo": [
+         "Dat is een predator.",
+         "Dat is een producent.",
+         "Klopt: leeft ten koste van een gastheer.",
+         "Dat is een reducent."
+        ],
+        "uh": "Parasiet = leeft ten koste van een gastheer."
+       },
+       {
+        "v": "Wat is een gastheer?",
+        "o": [
+         "Het roofdier dat de prooi in het gebied vangt",
+         "De soort die zelf voedsel produceert",
+         "De niet-levende omgeving van een gebied",
+         "Het organisme waarop een parasiet leeft"
+        ],
+        "c": 3,
+        "d": 1,
+        "u": "De gastheer is het organisme waarop of waarin een parasiet leeft.",
+        "uo": [
+         "Dat is een predator.",
+         "Dat is een producent.",
+         "Dat is de biotoop.",
+         "Klopt: de gastheer draagt de parasiet."
+        ],
+        "uh": "Gastheer = draagt de parasiet."
+       },
+       {
+        "v": "Wat is predatie?",
+        "o": [
+         "Een roofdier dat een prooi eet",
+         "Twee soorten die elkaar helpen",
+         "Een parasiet die op een gastheer leeft",
+         "Twee soorten die dezelfde bron delen"
+        ],
+        "c": 0,
+        "d": 1,
+        "u": "Bij predatie vangt en eet een roofdier (predator) een prooidier.",
+        "uo": [
+         "Klopt: roofdier eet prooi.",
+         "Dat lijkt op mutualisme, niet op predatie.",
+         "Dat is parasitisme.",
+         "Dat lijkt op concurrentie."
+        ],
+        "uh": "Predatie = roofdier eet prooi."
+       },
+       {
+        "v": "Wat is een exoot?",
+        "o": [
+         "Een soort die er altijd al gewoond heeft",
+         "Een soort die van nature niet in het gebied hoort",
+         "De niet-levende omgeving van een gebied",
+         "Een roofdier dat prooidieren vangt en verorbert"
+        ],
+        "c": 1,
+        "d": 1,
+        "u": "Een exoot is een soort die van elders komt en niet van nature in het gebied thuishoort.",
+        "uo": [
+         "Dat is juist een inheemse soort.",
+         "Klopt: een soort van elders, niet inheems.",
+         "Dat is de biotoop.",
+         "Een exoot is niet per se een roofdier."
+        ],
+        "uh": "Exoot = soort van elders, niet inheems."
+       },
+       {
+        "v": "Waarom kan een exoot een ecosysteem verstoren?",
+        "o": [
+         "Omdat een exoot altijd meteen uitsterft",
+         "Omdat een exoot geen voedsel nodig heeft",
+         "Omdat een exoot vaak geen natuurlijke vijanden heeft",
+         "Omdat een exoot de biotoop van het gebied niet raakt"
+        ],
+        "c": 2,
+        "d": 3,
+        "u": "Zonder natuurlijke vijanden kan een exoot sterk toenemen en inheemse soorten verdringen.",
+        "uo": [
+         "Een exoot sterft niet altijd uit, hij kan juist woekeren.",
+         "Ook een exoot heeft voedsel nodig.",
+         "Klopt: geen natuurlijke vijanden, dus sterke toename.",
+         "Een exoot beïnvloedt het ecosysteem juist sterk."
+        ],
+        "uh": "Exoot zonder vijanden kan woekeren en soorten verdringen."
+       },
+       {
+        "v": "Wat is het verschil tussen een exoot en een inheemse soort?",
+        "o": [
+         "Een exoot is altijd een plant, inheems een dier",
+         "Een exoot is in werkelijkheid altijd een roofdier",
+         "Er is geen enkel verschil tussen die twee",
+         "Een exoot hoort van elders, inheems van nature hier"
+        ],
+        "c": 3,
+        "d": 2,
+        "u": "Een exoot komt van elders en hoort er niet van nature; een inheemse soort komt van nature in het gebied voor.",
+        "uo": [
+         "Een exoot kan ook een dier zijn.",
+         "Een exoot is niet per se een roofdier.",
+         "Er is wel degelijk verschil.",
+         "Klopt: exoot van elders, inheems van nature hier."
+        ],
+        "uh": "Exoot = van elders, inheems = van nature hier."
+       },
+       {
+        "v": "Een vogel bouwt een nest in een boom zonder de boom te schaden. Welke relatie is dat?",
+        "o": [
+         "Commensalisme",
+         "Parasitisme",
+         "Predatie tussen een roofdier en zijn prooi",
+         "Mutualisme"
+        ],
+        "c": 0,
+        "d": 3,
+        "u": "De vogel heeft voordeel (een nestplek) en de boom heeft geen voor- of nadeel: commensalisme.",
+        "uo": [
+         "Klopt: vogel voordeel, boom geen last, dus commensalisme.",
+         "De boom heeft geen nadeel, dus geen parasitisme.",
+         "De vogel eet de boom niet op.",
+         "De boom heeft geen voordeel, dus geen mutualisme."
+        ],
+        "uh": "Voordeel voor één, geen last voor de ander = commensalisme."
+       },
+       {
+        "v": "Wat hebben mutualisme, commensalisme en parasitisme gemeen?",
+        "o": [
+         "Het zijn alle drie roofdier-prooirelaties",
+         "Het zijn alle drie vormen van symbiose",
+         "Ze hebben alle drie nadeel voor beide",
+         "Ze gaan alle drie over abiotische factoren"
+        ],
+        "c": 1,
+        "d": 2,
+        "u": "Mutualisme, commensalisme en parasitisme zijn alle drie vormen van symbiose: langdurig samenleven.",
+        "uo": [
+         "Het zijn geen roofdier-prooirelaties.",
+         "Klopt: het zijn alle drie vormen van symbiose.",
+         "Bij mutualisme is er juist voordeel voor beide.",
+         "Ze gaan over relaties tussen soorten, niet abiotisch."
+        ],
+        "uh": "Mutualisme, commensalisme, parasitisme = vormen van symbiose."
+       },
+       {
+        "v": "Bij welke relatie heeft precies één soort nadeel?",
+        "o": [
+         "Mutualisme",
+         "Commensalisme",
+         "Parasitisme",
+         "Samenwerking zonder contact"
+        ],
+        "c": 2,
+        "d": 2,
+        "u": "Bij parasitisme heeft de gastheer nadeel terwijl de parasiet voordeel heeft.",
+        "uo": [
+         "Bij mutualisme heeft niemand nadeel.",
+         "Bij commensalisme heeft niemand nadeel.",
+         "Klopt: bij parasitisme heeft de gastheer nadeel.",
+         "Dat is geen symbiosevorm met nadeel."
+        ],
+        "uh": "Nadeel voor één = parasitisme."
+       },
+       {
+        "v": "Waarom heeft een exoot vaak een voordeel ten opzichte van inheemse soorten?",
+        "o": [
+         "Omdat de exoot helemaal geen voedsel nodig heeft",
+         "Omdat de exoot kleiner is dan alle andere",
+         "Omdat de exoot geen ruimte inneemt",
+         "Omdat de exoot geen natuurlijke vijanden heeft"
+        ],
+        "c": 3,
+        "d": 3,
+        "u": "Een exoot mist in het nieuwe gebied vaak zijn natuurlijke vijanden, dus kan hij zich sterk uitbreiden.",
+        "uo": [
+         "Ook een exoot eet voedsel.",
+         "De grootte is niet de reden.",
+         "Ook een exoot neemt ruimte in.",
+         "Klopt: geen natuurlijke vijanden geeft een voordeel."
+        ],
+        "uh": "Exoot mist zijn natuurlijke vijanden in het nieuwe gebied."
+       },
+       {
+        "v": "Wat gebeurt er vaak met inheemse soorten als een exoot sterk toeneemt?",
+        "o": [
+         "Ze worden verdrongen",
+         "Ze nemen samen ook toe",
+         "Ze veranderen in de exoot",
+         "Ze krijgen er alleen maar voordeel bij"
+        ],
+        "c": 0,
+        "d": 3,
+        "u": "Een woekerende exoot gebruikt voedsel en ruimte die de inheemse soorten nodig hebben, dus die worden verdrongen.",
+        "uo": [
+         "Klopt: inheemse soorten worden verdrongen.",
+         "Ze nemen juist vaak af.",
+         "Ze veranderen niet in de exoot.",
+         "Ze hebben juist nadeel."
+        ],
+        "uh": "Woekerende exoot verdringt inheemse soorten."
+       },
+       {
+        "v": "Twee vogelsoorten eten precies hetzelfde zaad in hetzelfde gebied. Welke relatie is dat?",
+        "o": [
+         "Mutualisme",
+         "Concurrentie",
+         "Commensalisme",
+         "Predatie"
+        ],
+        "c": 1,
+        "d": 2,
+        "u": "Beide soorten willen dezelfde bron (het zaad), dus is er concurrentie.",
+        "uo": [
+         "Ze helpen elkaar niet, dus geen mutualisme.",
+         "Klopt: strijd om dezelfde bron is concurrentie.",
+         "Er is geen voordeel-zonder-last hier.",
+         "Ze eten elkaar niet op."
+        ],
+        "uh": "Strijd om dezelfde bron = concurrentie."
+       },
+       {
+        "v": "Wat is een predator?",
+        "o": [
+         "Een dier dat door anderen wordt gegeten",
+         "Een plant die zelf voedsel maakt",
+         "Een roofdier dat andere dieren eet",
+         "Een organisme dat dode resten afbreekt"
+        ],
+        "c": 2,
+        "d": 1,
+        "u": "Een predator is een roofdier dat andere dieren (prooien) vangt en opeet.",
+        "uo": [
+         "Dat is de prooi.",
+         "Dat is een producent.",
+         "Klopt: een predator eet andere dieren.",
+         "Dat is een reducent."
+        ],
+        "uh": "Predator = roofdier."
+       },
+       {
+        "v": "Waarom is het onderscheid tussen de symbiosevormen belangrijk?",
+        "o": [
+         "Omdat ze allemaal precies hetzelfde zijn",
+         "Omdat ze alle drie roofdier-prooi zijn",
+         "Omdat ze uitsluitend over planten in het gebied gaan",
+         "Omdat ze verschillen in wie voordeel of nadeel heeft"
+        ],
+        "c": 3,
+        "d": 3,
+        "u": "De vormen verschillen in wie voordeel en wie nadeel heeft, en dat bepaalt het effect op elke soort.",
+        "uo": [
+         "Ze zijn juist niet hetzelfde.",
+         "Het zijn geen roofdier-prooirelaties.",
+         "Ze gaan over allerlei organismen.",
+         "Klopt: ze verschillen in voor- en nadeel per soort."
+        ],
+        "uh": "De vormen verschillen in wie voordeel of nadeel heeft."
+       },
+       {
+        "v": "Bij mutualisme geldt voor de twee soorten:",
+        "o": [
+         "Allebei voordeel",
+         "Allebei nadeel",
+         "Eén voordeel, één nadeel",
+         "Geen van beide iets"
+        ],
+        "c": 0,
+        "d": 1,
+        "u": "Bij mutualisme hebben allebei de soorten voordeel van het samenleven.",
+        "uo": [
+         "Klopt: allebei voordeel.",
+         "Dat past niet bij mutualisme.",
+         "Dat is parasitisme.",
+         "Dat lijkt op commensalisme voor één kant."
+        ],
+        "uh": "Mutualisme = plus voor allebei."
+       },
+       {
+        "v": "Een schoonmakervis eet parasieten van een grote vis, die daar baat bij heeft. Welke relatie?",
+        "o": [
+         "Parasitisme",
+         "Mutualisme",
+         "Predatie op de grote vis",
+         "Concurrentie om voedsel"
+        ],
+        "c": 1,
+        "d": 3,
+        "u": "De schoonmakervis krijgt voedsel en de grote vis raakt parasieten kwijt: beide voordeel, dus mutualisme.",
+        "uo": [
+         "De grote vis heeft juist voordeel, geen nadeel.",
+         "Klopt: beide voordeel, dus mutualisme.",
+         "De schoonmakervis eet de grote vis niet op.",
+         "Ze strijden niet om dezelfde bron."
+        ],
+        "uh": "Beide voordeel = mutualisme."
+       },
+       {
+        "v": "Welke uitspraak over parasitisme klopt?",
+        "o": [
+         "De gastheer heeft in werkelijkheid altijd voordeel",
+         "Beide soorten hebben evenveel voordeel",
+         "De parasiet leeft ten koste van de gastheer",
+         "Er is geen enkel contact tussen de soorten"
+        ],
+        "c": 2,
+        "d": 2,
+        "u": "Bij parasitisme heeft de parasiet voordeel ten koste van de gastheer, die daardoor nadeel ondervindt.",
+        "uo": [
+         "De gastheer heeft juist nadeel.",
+         "Alleen de parasiet heeft voordeel.",
+         "Klopt: de parasiet leeft ten koste van de gastheer.",
+         "Er is juist nauw contact."
+        ],
+        "uh": "Parasiet profiteert ten koste van de gastheer."
+       },
+       {
+        "v": "Wat kan een goede maatregel zijn tegen een schadelijke exoot?",
+        "o": [
+         "De exoot met rust laten en niets doen",
+         "De exoot bijvoeren zodat hij groeit",
+         "Alle inheemse soorten weghalen",
+         "De exoot terugdringen of weghalen"
+        ],
+        "c": 3,
+        "d": 3,
+        "u": "Door de exoot terug te dringen krijgen de inheemse soorten weer ruimte en voedsel.",
+        "uo": [
+         "Niets doen laat de exoot verder woekeren.",
+         "Bijvoeren helpt de exoot juist.",
+         "Inheemse soorten weghalen maakt het juist erger.",
+         "Klopt: de exoot terugdringen helpt het ecosysteem."
+        ],
+        "uh": "Schadelijke exoot terugdringen beschermt inheemse soorten."
+       },
+       {
+        "v": "Een luis leeft in het verenkleed van een vogel en zuigt bloed. Welke relatie is dat?",
+        "o": [
+         "Parasitisme",
+         "Mutualisme met wederzijds voordeel",
+         "Commensalisme zonder enige schade",
+         "Predatie waarbij de vogel wordt opgegeten"
+        ],
+        "c": 0,
+        "d": 3,
+        "u": "De luis (parasiet) heeft voordeel en de vogel (gastheer) nadeel, dus parasitisme.",
+        "uo": [
+         "Klopt: luis voordeel, vogel nadeel, dus parasitisme.",
+         "De vogel heeft juist nadeel, geen voordeel.",
+         "De vogel ondervindt wel degelijk schade.",
+         "De luis eet de vogel niet in zijn geheel op."
+        ],
+        "uh": "Parasiet op gastheer met schade = parasitisme."
+       }
+      ],
+      "oe": [
+       {
+        "vraag": "Leg uit wat symbiose is en noem de drie vormen met hun voor- en nadelen.",
+        "antwoord": "Symbiose is het langdurig samenleven van twee verschillende soorten. Bij mutualisme hebben beide soorten voordeel. Bij commensalisme heeft de ene soort voordeel en de ander geen voordeel maar ook geen nadeel. Bij parasitisme heeft de parasiet voordeel en de gastheer nadeel."
+       },
+       {
+        "vraag": "Leg uit waarom een bij en een bloem een voorbeeld van mutualisme zijn.",
+        "antwoord": "De bij haalt nectar uit de bloem als voedsel; dat is voordeel voor de bij. Terwijl de bij dat doet, blijft er stuifmeel aan hem plakken, waarmee hij de volgende bloem bestuift; dat is voordeel voor de bloem. Omdat beide soorten voordeel hebben, is het mutualisme."
+       },
+       {
+        "vraag": "Leg uit wat een exoot is en waarom een exoot een ecosysteem kan verstoren.",
+        "antwoord": "Een exoot is een soort die van elders komt en niet van nature in het gebied thuishoort. In het nieuwe gebied heeft de exoot vaak geen natuurlijke vijanden. Daardoor kan de exoot zich sterk uitbreiden, veel voedsel en ruimte innemen en de inheemse soorten verdringen."
+       },
+       {
+        "vraag": "Waarom is het belangrijk om onderscheid te maken tussen parasitisme en mutualisme?",
+        "antwoord": "Bij mutualisme hebben beide soorten voordeel, terwijl bij parasitisme de ene soort voordeel heeft ten koste van de andere. Het effect op de gastheer is dus heel verschillend: bij mutualisme geen schade, bij parasitisme wel. Om te begrijpen hoe soorten elkaar beïnvloeden, moet je die vormen onderscheiden."
+       },
+       {
+        "vraag": "Leg uit wat er met inheemse soorten kan gebeuren als een exoot zonder natuurlijke vijanden sterk toeneemt.",
+        "antwoord": "Zonder natuurlijke vijanden kan de exoot sterk in aantal groeien. Hij gebruikt dan voedsel en ruimte die de inheemse soorten ook nodig hebben. Door deze concurrentie kunnen de inheemse soorten in aantal afnemen of zelfs uit het gebied verdwijnen."
+       }
+      ]
+     },
+     {
+      "id": "P5",
+      "naam": "Successie en biodiversiteit",
+      "beschrijving": "Gouden-standaardmodule bi.P.5: successie als reeks opeenvolgende levensgemeenschappen van pioniers tot climaxstadium, en de betekenis van biodiversiteit en duurzaamheid.",
+      "ceStatus": "CE",
+      "onderwerpen": [
+       "Successie als reeks, geen eenmalige gebeurtenis",
+       "Pioniersoorten op kale grond",
+       "Van pioniers via struiken naar bos",
+       "Climaxstadium",
+       "Biodiversiteit en stabiliteit",
+       "Duurzaamheid"
+      ],
+      "sam": "Successie is de geleidelijke opeenvolging van levensgemeenschappen in een gebied. Het is een reeks stappen, geen eenmalige gebeurtenis. Op kale grond vestigen zich eerst pioniersoorten, zoals mossen en grassen. Die veranderen de bodem, waardoor er langzaam andere soorten bij kunnen komen: eerst kruiden en struiken, later bomen. Uiteindelijk ontstaat een stabiel eindstadium, het climaxstadium. Tijdens de successie neemt de biodiversiteit meestal toe. Biodiversiteit is de verscheidenheid aan soorten in een gebied. Een hoge biodiversiteit maakt een ecosysteem stabieler. Duurzaamheid betekent dat we de natuur zo gebruiken dat ze niet uitput en ook voor de toekomst behouden blijft.",
+      "begrippen": [
+       {
+        "t": "Successie",
+        "d": "de geleidelijke opeenvolging van levensgemeenschappen in een gebied"
+       },
+       {
+        "t": "Pioniersoort",
+        "d": "een soort die zich als eerste op kale grond vestigt"
+       },
+       {
+        "t": "Climaxstadium",
+        "d": "het stabiele eindstadium van een successiereeks"
+       },
+       {
+        "t": "Biodiversiteit",
+        "d": "de verscheidenheid aan soorten in een gebied"
+       },
+       {
+        "t": "Soortenrijkdom",
+        "d": "het aantal verschillende soorten in een gebied"
+       },
+       {
+        "t": "Duurzaamheid",
+        "d": "gebruik van de natuur zonder haar uit te putten"
+       },
+       {
+        "t": "Levensgemeenschap",
+        "d": "alle organismen van alle soorten samen in een gebied"
+       },
+       {
+        "t": "Kolonisatie",
+        "d": "het zich vestigen van soorten in een nieuw gebied"
+       },
+       {
+        "t": "Kale grond",
+        "d": "grond zonder planten waar successie kan beginnen"
+       },
+       {
+        "t": "Stabiel ecosysteem",
+        "d": "een ecosysteem dat weinig verandert en verstoring goed opvangt"
+       },
+       {
+        "t": "Uitsterven",
+        "d": "het volledig verdwijnen van een soort"
+       },
+       {
+        "t": "Natuurbeheer",
+        "d": "het beheren van de natuur om soorten en gebieden te behouden"
+       }
+      ],
+      "sv": [
+       {
+        "v": "Wat is successie?",
+        "o": [
+         "De opeenvolging van levensgemeenschappen in een gebied",
+         "Een eenmalige verandering die maar één keer gebeurt",
+         "De niet-levende omgeving van een ecosysteem",
+         "Het totale aantal individuen van één enkele soort samen"
+        ],
+        "c": 0,
+        "d": 2,
+        "u": "Successie is de geleidelijke opeenvolging van levensgemeenschappen: een reeks stappen in de tijd.",
+        "uo": [
+         "Klopt: een opeenvolging van levensgemeenschappen.",
+         "Successie is een reeks, geen eenmalige gebeurtenis.",
+         "Dat is de biotoop.",
+         "Dat is de populatiegrootte."
+        ],
+        "uh": "Successie = opeenvolging van levensgemeenschappen (een reeks)."
+       },
+       {
+        "v": "Is successie een eenmalige gebeurtenis of een reeks?",
+        "o": [
+         "Een eenmalige momentopname",
+         "Een reeks opeenvolgende stappen",
+         "Iets wat helemaal niet verandert",
+         "Een enkele plant die groeit"
+        ],
+        "c": 1,
+        "d": 2,
+        "u": "Successie is een reeks stappen waarin de ene levensgemeenschap de andere opvolgt.",
+        "uo": [
+         "Successie is geen momentopname.",
+         "Klopt: een reeks opeenvolgende stappen.",
+         "Er verandert juist veel.",
+         "Het gaat om hele levensgemeenschappen, niet één plant."
+        ],
+        "uh": "Successie = een reeks, niet eenmalig."
+       },
+       {
+        "v": "Wat is een pioniersoort?",
+        "o": [
+         "De allerlaatste soort die in het climaxstadium overblijft",
+         "Een roofdier boven in de voedselketen",
+         "Een soort die zich als eerste op kale grond vestigt",
+         "Een soort die alleen in een bos leeft"
+        ],
+        "c": 2,
+        "d": 1,
+        "u": "Een pioniersoort vestigt zich als eerste op kale grond, zoals mos of gras.",
+        "uo": [
+         "Pioniers komen juist aan het begin, niet aan het eind.",
+         "Een pionier is niet per se een roofdier.",
+         "Klopt: als eerste op kale grond.",
+         "Pioniers komen juist op kale grond, niet in een bos."
+        ],
+        "uh": "Pioniersoort = komt als eerste op kale grond."
+       },
+       {
+        "v": "Wat is het climaxstadium?",
+        "o": [
+         "De kale grond helemaal aan het begin van de reeks",
+         "De eerste mossen op de rots",
+         "Een gebied zonder enig leven",
+         "Het stabiele eindstadium van de reeks"
+        ],
+        "c": 3,
+        "d": 2,
+        "u": "Het climaxstadium is het stabiele eindstadium van een successiereeks, bijvoorbeeld een volgroeid bos.",
+        "uo": [
+         "Kale grond is juist het begin.",
+         "Mossen horen bij het begin.",
+         "In het climaxstadium is juist veel leven.",
+         "Klopt: het stabiele eindstadium."
+        ],
+        "uh": "Climaxstadium = stabiel eindstadium."
+       },
+       {
+        "v": "Wat gebeurt er meestal met de biodiversiteit tijdens successie?",
+        "o": [
+         "Die neemt toe",
+         "Die verdwijnt helemaal",
+         "Die blijft precies gelijk",
+         "Die daalt steeds verder"
+        ],
+        "c": 0,
+        "d": 2,
+        "u": "Tijdens successie komen er steeds meer soorten bij, dus neemt de biodiversiteit meestal toe.",
+        "uo": [
+         "Klopt: de biodiversiteit neemt meestal toe.",
+         "De biodiversiteit verdwijnt niet.",
+         "Ze blijft juist niet gelijk.",
+         "Ze daalt juist meestal niet."
+        ],
+        "uh": "Tijdens successie neemt de biodiversiteit meestal toe."
+       },
+       {
+        "v": "Wat is biodiversiteit?",
+        "o": [
+         "De niet-levende omgeving van een gebied",
+         "De verscheidenheid aan soorten in een gebied",
+         "Het aantal individuen van één soort",
+         "De hoeveelheid regen die er jaarlijks in het gebied valt"
+        ],
+        "c": 1,
+        "d": 1,
+        "u": "Biodiversiteit is de verscheidenheid aan soorten (en variatie aan leven) in een gebied.",
+        "uo": [
+         "Dat is de biotoop.",
+         "Klopt: de verscheidenheid aan soorten.",
+         "Dat is de populatiegrootte.",
+         "Neerslag is geen biodiversiteit."
+        ],
+        "uh": "Biodiversiteit = verscheidenheid aan soorten."
+       },
+       {
+        "v": "Waarom is een hoge biodiversiteit gunstig voor een ecosysteem?",
+        "o": [
+         "Omdat het ecosysteem dan instabieler wordt",
+         "Omdat er dan maar één soort overblijft",
+         "Omdat het ecosysteem dan stabieler is",
+         "Omdat er dan geen voedselketens meer zijn"
+        ],
+        "c": 2,
+        "d": 3,
+        "u": "Met veel soorten kan een ecosysteem een verstoring beter opvangen, dus is het stabieler.",
+        "uo": [
+         "Meer biodiversiteit maakt het juist stabieler.",
+         "Bij hoge biodiversiteit zijn er juist veel soorten.",
+         "Klopt: veel soorten maken het ecosysteem stabieler.",
+         "Er zijn juist meer voedselketens."
+        ],
+        "uh": "Hoge biodiversiteit = stabieler ecosysteem."
+       },
+       {
+        "v": "Wat betekent duurzaamheid?",
+        "o": [
+         "De natuur zo snel mogelijk opmaken",
+         "Alle bomen in het gebied in één keer tegelijk omkappen",
+         "Alleen naar de winst van vandaag kijken",
+         "De natuur gebruiken zonder haar uit te putten"
+        ],
+        "c": 3,
+        "d": 2,
+        "u": "Duurzaamheid betekent de natuur zo gebruiken dat ze niet uitput en ook voor de toekomst blijft bestaan.",
+        "uo": [
+         "Dat is juist het tegenovergestelde van duurzaam.",
+         "Alles kappen is niet duurzaam.",
+         "Duurzaamheid kijkt juist naar de toekomst.",
+         "Klopt: gebruiken zonder uitputten."
+        ],
+        "uh": "Duurzaamheid = gebruiken zonder uitputten, ook voor later."
+       },
+       {
+        "v": "Wat vestigt zich als eerste op een kale rots?",
+        "o": [
+         "Mossen en korstmossen",
+         "Grote eiken en beuken",
+         "Roofdieren van de savanne",
+         "Volgroeide struiken met bessen"
+        ],
+        "c": 0,
+        "d": 2,
+        "u": "Op kale rots komen eerst pioniersoorten zoals mossen en korstmossen.",
+        "uo": [
+         "Klopt: mossen en korstmossen zijn pioniers.",
+         "Grote bomen komen pas veel later.",
+         "Roofdieren komen niet als eerste.",
+         "Struiken komen pas na de pioniers."
+        ],
+        "uh": "Eerste op kale rots = mossen (pioniers)."
+       },
+       {
+        "v": "Waarom kunnen na de pioniersoorten andere soorten zich vestigen?",
+        "o": [
+         "Omdat de pioniers alle ruimte innemen",
+         "Omdat de pioniers de bodem veranderen",
+         "Omdat de zon dan opeens veel minder gaat schijnen",
+         "Omdat er geen bodem meer nodig is"
+        ],
+        "c": 1,
+        "d": 3,
+        "u": "Pioniersoorten veranderen de bodem, bijvoorbeeld door humusvorming, waardoor andere soorten een kans krijgen.",
+        "uo": [
+         "Ze nemen niet alle ruimte in.",
+         "Klopt: pioniers veranderen de bodem voor anderen.",
+         "De zon is niet de reden.",
+         "Bodem blijft juist nodig."
+        ],
+        "uh": "Pioniers veranderen de bodem, dan komen andere soorten."
+       },
+       {
+        "v": "Welke volgorde klopt voor een successiereeks op kale grond?",
+        "o": [
+         "Eerst het volgroeide bos, dan struiken, dan pas mossen",
+         "Struiken, bos, mossen",
+         "Mossen, struiken, bos",
+         "Bos, mossen, struiken"
+        ],
+        "c": 2,
+        "d": 2,
+        "u": "Eerst pioniers (mossen en grassen), dan kruiden en struiken, ten slotte bos.",
+        "uo": [
+         "Bos komt juist als laatste.",
+         "Mossen komen eerst, niet als laatste.",
+         "Klopt: mossen, dan struiken, dan bos.",
+         "Struiken komen na de mossen, niet na het bos."
+        ],
+        "uh": "Reeks: mossen, struiken, bos."
+       },
+       {
+        "v": "Wat is soortenrijkdom?",
+        "o": [
+         "Het aantal individuen van één soort",
+         "De hoeveelheid biomassa in een gebied",
+         "De niet-levende factoren van het gebied bij elkaar",
+         "Het aantal verschillende soorten in een gebied"
+        ],
+        "c": 3,
+        "d": 1,
+        "u": "Soortenrijkdom is het aantal verschillende soorten dat in een gebied leeft.",
+        "uo": [
+         "Dat is de populatiegrootte.",
+         "Dat is de biomassa.",
+         "Dat zijn abiotische factoren.",
+         "Klopt: het aantal verschillende soorten."
+        ],
+        "uh": "Soortenrijkdom = aantal verschillende soorten."
+       },
+       {
+        "v": "Waarom is een monocultuur (één gewas) kwetsbaar?",
+        "o": [
+         "Omdat de lage biodiversiteit hem instabiel maakt",
+         "Omdat er te veel verschillende soorten zijn",
+         "Omdat er dan veel te veel roofdieren aanwezig zijn",
+         "Omdat er geen abiotische factoren zijn"
+        ],
+        "c": 0,
+        "d": 3,
+        "u": "Met maar één soort is de biodiversiteit laag, dus een ziekte of plaag kan het hele veld treffen.",
+        "uo": [
+         "Klopt: lage biodiversiteit maakt het instabiel.",
+         "Er is juist maar één soort.",
+         "Roofdieren zijn niet de kern van het probleem.",
+         "Er zijn altijd abiotische factoren."
+        ],
+        "uh": "Weinig soorten = laag en kwetsbaar (monocultuur)."
+       },
+       {
+        "v": "Wat is een stabiel ecosysteem?",
+        "o": [
+         "Een ecosysteem met maar één soort",
+         "Een ecosysteem dat verstoring goed opvangt",
+         "Een ecosysteem zonder enig leven",
+         "Een ecosysteem dat elke dag totaal verandert"
+        ],
+        "c": 1,
+        "d": 2,
+        "u": "Een stabiel ecosysteem verandert weinig en kan een verstoring goed opvangen, vaak door hoge biodiversiteit.",
+        "uo": [
+         "Eén soort maakt het juist kwetsbaar.",
+         "Klopt: het vangt verstoring goed op.",
+         "Een stabiel ecosysteem zit vol leven.",
+         "Een stabiel ecosysteem verandert juist weinig."
+        ],
+        "uh": "Stabiel ecosysteem = vangt verstoring goed op."
+       },
+       {
+        "v": "Een bos wordt gekapt en het gebied wordt kaal. Wat gebeurt er daarna meestal?",
+        "o": [
+         "Er blijft voorgoed kale grond over",
+         "Het bos staat de volgende dag weer terug",
+         "Er begint opnieuw een successiereeks",
+         "Er komt nooit meer een plant terug"
+        ],
+        "c": 2,
+        "d": 3,
+        "u": "Op de kale grond vestigen zich weer pioniers, waarna de successie opnieuw begint richting bos.",
+        "uo": [
+         "De grond blijft niet voorgoed kaal.",
+         "Een bos groeit niet in één dag terug.",
+         "Klopt: de successie begint opnieuw.",
+         "Er komen juist weer planten."
+        ],
+        "uh": "Na verstoring begint de successie opnieuw."
+       },
+       {
+        "v": "Waarom is successie een reeks en geen momentopname?",
+        "o": [
+         "Omdat er helemaal niets verandert in het gebied",
+         "Omdat alle soorten tegelijk verschijnen",
+         "Omdat een gebied altijd hetzelfde blijft",
+         "Omdat het gebied stap voor stap verandert"
+        ],
+        "c": 3,
+        "d": 3,
+        "u": "Bij successie volgen levensgemeenschappen elkaar stap voor stap op; dat kost tijd en verloopt in fasen.",
+        "uo": [
+         "Er verandert juist veel.",
+         "De soorten verschijnen juist niet allemaal tegelijk.",
+         "Een gebied verandert juist tijdens successie.",
+         "Klopt: het gebied verandert stap voor stap."
+        ],
+        "uh": "Successie verloopt stap voor stap over de tijd."
+       },
+       {
+        "v": "Wat gebeurt er met de bodem tijdens de successie?",
+        "o": [
+         "De bodem wordt rijker en voedzamer",
+         "De bodem verdwijnt tijdens de successie helemaal",
+         "De bodem blijft altijd kale rots",
+         "De bodem wordt steeds armer"
+        ],
+        "c": 0,
+        "d": 2,
+        "u": "Door dode plantenresten ontstaat humus, waardoor de bodem rijker en voedzamer wordt.",
+        "uo": [
+         "Klopt: de bodem wordt rijker (humusvorming).",
+         "De bodem verdwijnt niet.",
+         "De bodem blijft niet kaal.",
+         "De bodem wordt juist rijker, niet armer."
+        ],
+        "uh": "Tijdens successie wordt de bodem rijker (humus)."
+       },
+       {
+        "v": "Waarom is het beschermen van biodiversiteit belangrijk?",
+        "o": [
+         "Omdat één soort genoeg is voor een ecosysteem",
+         "Omdat veel soorten een ecosysteem stabieler maken",
+         "Omdat de soorten helemaal geen enkele rol spelen",
+         "Omdat biodiversiteit alleen mooi oogt"
+        ],
+        "c": 1,
+        "d": 3,
+        "u": "Veel verschillende soorten maken een ecosysteem stabieler en veerkrachtiger tegen verstoring.",
+        "uo": [
+         "Eén soort maakt het juist kwetsbaar.",
+         "Klopt: veel soorten maken het stabieler.",
+         "Soorten spelen juist belangrijke rollen.",
+         "Biodiversiteit doet meer dan mooi ogen."
+        ],
+        "uh": "Biodiversiteit beschermen = stabieler ecosysteem."
+       },
+       {
+        "v": "Wat is kolonisatie in een successie?",
+        "o": [
+         "Het verdwijnen van alle soorten",
+         "Het in één keer kappen van een heel volgroeid bos",
+         "Het vestigen van soorten in een nieuw gebied",
+         "Het opdrogen van een gebied"
+        ],
+        "c": 2,
+        "d": 2,
+        "u": "Kolonisatie is het zich vestigen van soorten in een nieuw of kaal gebied, het begin van successie.",
+        "uo": [
+         "Kolonisatie is juist het komen van soorten.",
+         "Dat is verstoring, geen kolonisatie.",
+         "Klopt: soorten vestigen zich in een nieuw gebied.",
+         "Opdrogen is geen kolonisatie."
+        ],
+        "uh": "Kolonisatie = soorten vestigen zich in een gebied."
+       },
+       {
+        "v": "Welke uitspraak over duurzaamheid klopt?",
+        "o": [
+         "Duurzaam betekent alles nu zo snel mogelijk opmaken",
+         "Duurzaam betekent de natuur negeren",
+         "Duurzaam is zoveel mogelijk vervuilen",
+         "Duurzaam houdt rekening met de toekomst"
+        ],
+        "c": 3,
+        "d": 2,
+        "u": "Duurzaamheid betekent zo met de natuur omgaan dat ze ook in de toekomst behouden blijft.",
+        "uo": [
+         "Alles opmaken is niet duurzaam.",
+         "Duurzaam negeert de natuur juist niet.",
+         "Vervuilen is niet duurzaam.",
+         "Klopt: duurzaam houdt rekening met de toekomst."
+        ],
+        "uh": "Duurzaam = rekening houden met de toekomst."
+       },
+       {
+        "v": "Waarom neemt het aantal soorten toe naarmate de successie vordert?",
+        "o": [
+         "Omdat de leefomgeving gevarieerder wordt",
+         "Omdat er steeds minder voedsel is",
+         "Omdat de zon boven het gebied helemaal uitgaat",
+         "Omdat alle pioniers doodgaan"
+        ],
+        "c": 0,
+        "d": 3,
+        "u": "Naarmate er meer planten en structuur bijkomen, ontstaan meer leefplekken en dus meer soorten.",
+        "uo": [
+         "Klopt: een gevarieerdere omgeving biedt meer soorten een plek.",
+         "Er komt juist meer voedsel bij.",
+         "De zon gaat niet uit.",
+         "Niet alle pioniers gaan dood."
+        ],
+        "uh": "Meer variatie in leefplekken = meer soorten."
+       },
+       {
+        "v": "Wat is uitsterven van een soort?",
+        "o": [
+         "Het tijdelijk vertrekken uit een gebied",
+         "Het volledig verdwijnen van de soort",
+         "Het aanpassen aan een nieuwe omgeving",
+         "Het toenemen van de populatie"
+        ],
+        "c": 1,
+        "d": 1,
+        "u": "Uitsterven betekent dat een soort helemaal verdwijnt en nergens meer voorkomt.",
+        "uo": [
+         "Uitsterven is meer dan tijdelijk vertrekken.",
+         "Klopt: de soort verdwijnt volledig.",
+         "Dat is aanpassing, geen uitsterven.",
+         "Dat is toename, geen uitsterven."
+        ],
+        "uh": "Uitsterven = de soort verdwijnt helemaal."
+       },
+       {
+        "v": "Waarom is een gevarieerd bos vaak stabieler dan een akker met één gewas?",
+        "o": [
+         "Omdat het bos minder soorten heeft",
+         "Omdat het bos geen bodem nodig heeft",
+         "Omdat het bos een hogere biodiversiteit heeft",
+         "Omdat het bos zelf helemaal geen zonlicht gebruikt"
+        ],
+        "c": 2,
+        "d": 3,
+        "u": "Een bos met veel soorten kan een plaag of ziekte beter opvangen dan een akker met maar één gewas.",
+        "uo": [
+         "Het bos heeft juist meer soorten.",
+         "Ook een bos heeft bodem nodig.",
+         "Klopt: hogere biodiversiteit maakt het stabieler.",
+         "Een bos gebruikt juist veel licht."
+        ],
+        "uh": "Meer soorten (bos) = stabieler dan monocultuur."
+       },
+       {
+        "v": "Wat is natuurbeheer?",
+        "o": [
+         "De natuur volledig aan haar lot overlaten",
+         "Het weghalen van alle inheemse soorten",
+         "Het helemaal volbouwen van elk bestaand natuurgebied",
+         "Het beheren van natuur om soorten te behouden"
+        ],
+        "c": 3,
+        "d": 2,
+        "u": "Natuurbeheer is het bewust beheren van natuurgebieden om soorten en biodiversiteit te behouden.",
+        "uo": [
+         "Aan het lot overlaten is geen beheer.",
+         "Inheemse soorten weghalen is geen natuurbeheer.",
+         "Volbouwen beschermt de natuur niet.",
+         "Klopt: beheren om soorten te behouden."
+        ],
+        "uh": "Natuurbeheer = beheren om soorten te behouden."
+       },
+       {
+        "v": "Na een bosbrand groeit er weer mos op de kale grond. Wat begint er dan?",
+        "o": [
+         "Een nieuwe successie",
+         "Het climaxstadium meteen",
+         "Het uitsterven van alle soorten",
+         "Een blijvend kale vlakte"
+        ],
+        "c": 0,
+        "d": 3,
+        "u": "Op de kale grond na de brand vestigen zich pioniers, dus begint de successie opnieuw.",
+        "uo": [
+         "Klopt: de successie begint opnieuw met pioniers.",
+         "Het climaxstadium komt pas veel later.",
+         "Er beginnen juist weer soorten te groeien.",
+         "De grond blijft niet kaal, er groeit weer mos."
+        ],
+        "uh": "Kale grond met pioniers = start van een nieuwe successie."
+       }
+      ],
+      "oe": [
+       {
+        "vraag": "Leg uit waarom successie een reeks is en geen eenmalige gebeurtenis.",
+        "antwoord": "Bij successie volgen verschillende levensgemeenschappen elkaar in de tijd op. Eerst komen pioniersoorten op kale grond, daarna kruiden en struiken en ten slotte bomen. Elke fase verandert het gebied zodat de volgende fase mogelijk wordt. Het is dus een reeks van opeenvolgende stappen, geen momentopname."
+       },
+       {
+        "vraag": "Beschrijf de successie van kale grond tot een bos.",
+        "antwoord": "Op de kale grond vestigen zich eerst pioniersoorten zoals mossen en grassen. Zij vormen humus, waardoor de bodem rijker wordt. Daarna komen er kruiden en struiken, en later bomen. Uiteindelijk ontstaat een stabiel eindstadium, het climaxstadium, bijvoorbeeld een volgroeid bos."
+       },
+       {
+        "vraag": "Leg uit waarom een hoge biodiversiteit een ecosysteem stabieler maakt.",
+        "antwoord": "In een ecosysteem met veel verschillende soorten zijn er veel voedselrelaties. Als één soort wegvalt of een ziekte optreedt, kunnen andere soorten de rol overnemen of de klap opvangen. Daardoor herstelt het ecosysteem sneller en is het stabieler dan een ecosysteem met weinig soorten."
+       },
+       {
+        "vraag": "Leg uit wat duurzaamheid betekent en geef een voorbeeld.",
+        "antwoord": "Duurzaamheid betekent dat je de natuur zo gebruikt dat ze niet uitput en ook voor toekomstige generaties behouden blijft. Een voorbeeld is een bos zo beheren dat je niet meer bomen kapt dan er aangroeien, zodat het bos blijft bestaan."
+       },
+       {
+        "vraag": "Leg uit waarom een akker met één gewas kwetsbaarder is dan een gevarieerd natuurgebied.",
+        "antwoord": "Een akker met één gewas heeft een lage biodiversiteit. Als er een ziekte of plaag komt die dat gewas treft, kan het hele veld worden aangetast. In een gevarieerd natuurgebied met veel soorten treft een ziekte meestal maar een deel van de soorten, zodat het geheel stabieler blijft."
+       }
+      ]
+     },
+     {
+      "id": "P6",
+      "naam": "Evolutie en natuurlijke selectie",
+      "beschrijving": "Gouden-standaardmodule bi.P.6: variatie en mutatie, natuurlijke selectie, evolutie als verandering van een populatie over generaties, en soortvorming. Nadruk op: populaties evolueren (niet individuen) en niet doelgericht redeneren.",
+      "ceStatus": "CE",
+      "onderwerpen": [
+       "Variatie en mutatie binnen een populatie",
+       "Natuurlijke selectie",
+       "Overleven en voortplanten",
+       "Evolutie: verandering van een populatie",
+       "Populaties veranderen, niet individuen",
+       "Soortvorming"
+      ],
+      "sam": "Binnen een populatie zijn individuen niet allemaal gelijk: er is variatie, die ontstaat door mutaties. Sommige individuen passen door hun eigenschappen beter bij de omgeving. Zij hebben meer kans om te overleven en zich voort te planten en geven hun erfelijke eigenschappen door. Dit heet natuurlijke selectie. In de volgende generaties komt de gunstige eigenschap daardoor vaker voor. Zo verandert de populatie over vele generaties: dat is evolutie. Let op twee dingen. Niet het individu past zich tijdens zijn leven aan, maar de populatie verandert over generaties. En evolutie is niet doelgericht: de variatie is er al door toeval, en de omgeving selecteert daaruit. Als populaties gescheiden raken en apart evolueren, kunnen ze zo verschillen dat er nieuwe soorten ontstaan: soortvorming.",
+      "begrippen": [
+       {
+        "t": "Evolutie",
+        "d": "de verandering van erfelijke eigenschappen van een populatie over generaties"
+       },
+       {
+        "t": "Natuurlijke selectie",
+        "d": "het proces waarbij beter passende individuen meer nakomelingen krijgen"
+       },
+       {
+        "t": "Variatie",
+        "d": "de verschillen tussen individuen binnen een populatie"
+       },
+       {
+        "t": "Mutatie",
+        "d": "een verandering in het DNA die nieuwe variatie kan geven"
+       },
+       {
+        "t": "Aanpassing",
+        "d": "een erfelijke eigenschap waarmee een soort beter past bij de omgeving"
+       },
+       {
+        "t": "Soortvorming",
+        "d": "het ontstaan van nieuwe soorten door evolutie"
+       },
+       {
+        "t": "Erfelijke eigenschap",
+        "d": "een eigenschap die via het DNA wordt doorgegeven"
+       },
+       {
+        "t": "Voortplanting",
+        "d": "het krijgen van nakomelingen die eigenschappen erven"
+       },
+       {
+        "t": "Selectiedruk",
+        "d": "de invloed van de omgeving die bepaalt wie meer nakomelingen krijgt"
+       },
+       {
+        "t": "Generatie",
+        "d": "een opeenvolging van nakomelingen in de tijd"
+       },
+       {
+        "t": "Fossiel",
+        "d": "een bewaard gebleven overblijfsel of afdruk van een organisme"
+       },
+       {
+        "t": "Gemeenschappelijke voorouder",
+        "d": "een soort waaruit meerdere latere soorten zijn ontstaan"
+       }
+      ],
+      "sv": [
+       {
+        "v": "Wat is evolutie?",
+        "o": [
+         "Verandering van een populatie over generaties",
+         "De verandering van één dier tijdens zijn leven",
+         "Het groter worden van een enkel organisme",
+         "Het aantal soorten in een gebied nu"
+        ],
+        "c": 0,
+        "d": 2,
+        "u": "Evolutie is de verandering van de erfelijke eigenschappen van een populatie over vele generaties.",
+        "uo": [
+         "Klopt: een populatie verandert over generaties.",
+         "Eén dier evolueert niet tijdens zijn leven.",
+         "Groter worden is geen evolutie.",
+         "Dat is de soortenrijkdom, niet evolutie."
+        ],
+        "uh": "Evolutie = populatie verandert over generaties."
+       },
+       {
+        "v": "Wat is natuurlijke selectie?",
+        "o": [
+         "Toeval bepaalt alles, helemaal zonder de omgeving",
+         "Beter passende individuen krijgen meer nakomelingen",
+         "Elk individu past zich zelf aan zijn omgeving aan",
+         "Alle individuen overleven precies even goed"
+        ],
+        "c": 1,
+        "d": 2,
+        "u": "Bij natuurlijke selectie hebben beter passende individuen meer kans om te overleven en zich voort te planten.",
+        "uo": [
+         "De omgeving speelt juist een sleutelrol.",
+         "Klopt: beter passende individuen krijgen meer nakomelingen.",
+         "Het individu past zich niet zelf tijdens zijn leven aan.",
+         "Ze overleven juist niet allemaal even goed."
+        ],
+        "uh": "Natuurlijke selectie = beter passend, meer nakomelingen."
+       },
+       {
+        "v": "Wat evolueert er: een individu of een populatie?",
+        "o": [
+         "Een individu tijdens zijn leven",
+         "Een enkel dier dat groter wordt",
+         "Een populatie over generaties",
+         "Alleen de niet-levende omgeving"
+        ],
+        "c": 2,
+        "d": 3,
+        "u": "Niet een individu, maar een populatie verandert over generaties: dat is evolutie.",
+        "uo": [
+         "Een individu evolueert niet tijdens zijn leven.",
+         "Groeien is geen evolutie.",
+         "Klopt: de populatie evolueert over generaties.",
+         "De biotoop evolueert niet."
+        ],
+        "uh": "Populaties evolueren, individuen niet."
+       },
+       {
+        "v": "Waar komt de variatie binnen een populatie vandaan?",
+        "o": [
+         "Van de wil van elk dier",
+         "Van de temperatuur van de lucht",
+         "Van het aantal roofdieren",
+         "Van mutaties in het DNA"
+        ],
+        "c": 3,
+        "d": 2,
+        "u": "Variatie ontstaat door mutaties in het DNA, die nieuwe erfelijke verschillen geven.",
+        "uo": [
+         "Variatie ontstaat niet door wil.",
+         "Temperatuur maakt de erfelijke variatie niet.",
+         "Roofdieren maken de variatie niet.",
+         "Klopt: mutaties in het DNA geven variatie."
+        ],
+        "uh": "Variatie komt door mutaties in het DNA."
+       },
+       {
+        "v": "Wat is variatie in een populatie?",
+        "o": [
+         "De verschillen tussen de individuen",
+         "Dat alle individuen precies gelijk zijn",
+         "Het aantal soorten in een gebied",
+         "De niet-levende factoren samen"
+        ],
+        "c": 0,
+        "d": 1,
+        "u": "Variatie zijn de erfelijke verschillen tussen de individuen binnen een populatie.",
+        "uo": [
+         "Klopt: de verschillen tussen individuen.",
+         "Bij variatie zijn ze juist niet gelijk.",
+         "Dat is de soortenrijkdom.",
+         "Dat zijn abiotische factoren."
+        ],
+        "uh": "Variatie = de verschillen tussen individuen."
+       },
+       {
+        "v": "Waarom is de uitspraak fout dat een dier zich aanpast om te overleven?",
+        "o": [
+         "Omdat aanpassing altijd binnen één leven gebeurt",
+         "Omdat de variatie er al is en de omgeving selecteert",
+         "Omdat evolutie een doel nastreeft",
+         "Omdat de dieren in de populatie nooit doodgaan"
+        ],
+        "c": 1,
+        "d": 3,
+        "u": "De variatie is er al door toeval; de omgeving selecteert daaruit. Evolutie streeft geen doel na.",
+        "uo": [
+         "Evolutie gaat juist over generaties, niet één leven.",
+         "Klopt: de variatie is er al, de omgeving selecteert.",
+         "Evolutie streeft geen doel na.",
+         "Dieren gaan wel degelijk dood."
+        ],
+        "uh": "Niet doelgericht: variatie is er al, omgeving selecteert."
+       },
+       {
+        "v": "Wat is soortvorming?",
+        "o": [
+         "Het groter worden van één dier",
+         "Het uitsterven van alle soorten",
+         "Het ontstaan van nieuwe soorten",
+         "Het aantal individuen van een soort"
+        ],
+        "c": 2,
+        "d": 2,
+        "u": "Soortvorming is het ontstaan van nieuwe soorten doordat populaties apart evolueren.",
+        "uo": [
+         "Groeien is geen soortvorming.",
+         "Dat is uitsterven, het tegenovergestelde.",
+         "Klopt: het ontstaan van nieuwe soorten.",
+         "Dat is de populatiegrootte."
+        ],
+        "uh": "Soortvorming = nieuwe soorten ontstaan."
+       },
+       {
+        "v": "Hoe kan soortvorming ontstaan?",
+        "o": [
+         "Doordat één enkel dier heel snel groter groeit",
+         "Doordat de temperatuur even stijgt",
+         "Doordat alle soorten samensmelten",
+         "Doordat populaties gescheiden apart evolueren"
+        ],
+        "c": 3,
+        "d": 3,
+        "u": "Als populaties van elkaar gescheiden raken, evolueren ze apart en kunnen ze zo verschillen dat het nieuwe soorten worden.",
+        "uo": [
+         "Groei van één dier geeft geen nieuwe soort.",
+         "Een tijdelijke temperatuurstijging is niet genoeg.",
+         "Soorten smelten niet samen tot nieuwe soorten.",
+         "Klopt: gescheiden populaties evolueren apart."
+        ],
+        "uh": "Gescheiden populaties evolueren apart tot nieuwe soorten."
+       },
+       {
+        "v": "Vogels zien opvallende kevers beter dan onopvallende. Wat gebeurt er over generaties?",
+        "o": [
+         "De onopvallende kleur komt vaker voor",
+         "De opvallende kleur wordt juist vaker",
+         "Alle kevers krijgen precies dezelfde kleur",
+         "Er verandert helemaal niets"
+        ],
+        "c": 0,
+        "d": 3,
+        "u": "De onopvallende kevers overleven vaker en planten zich meer voort, dus komt hun kleur in latere generaties vaker voor.",
+        "uo": [
+         "Klopt: de onopvallende kleur wordt vaker.",
+         "De opvallende kevers worden juist vaker opgegeten.",
+         "Er blijft variatie, niet één kleur.",
+         "Er verandert juist iets over generaties."
+        ],
+        "uh": "Wie beter overleeft, geeft zijn kleur vaker door."
+       },
+       {
+        "v": "Wat is een mutatie?",
+        "o": [
+         "Het opeten van een prooi",
+         "Een verandering in het DNA",
+         "De rol van een soort in de keten",
+         "De niet-levende omgeving"
+        ],
+        "c": 1,
+        "d": 1,
+        "u": "Een mutatie is een verandering in het DNA die nieuwe erfelijke variatie kan opleveren.",
+        "uo": [
+         "Dat is predatie.",
+         "Klopt: een verandering in het DNA.",
+         "Dat is de niche.",
+         "Dat is de biotoop."
+        ],
+        "uh": "Mutatie = verandering in het DNA."
+       },
+       {
+        "v": "Wat geven de best passende individuen door aan hun nakomelingen?",
+        "o": [
+         "Hun aangeleerde gedrag van die dag",
+         "Hun leeftijd op dat moment",
+         "Hun erfelijke eigenschappen",
+         "Hun plek in het gebied"
+        ],
+        "c": 2,
+        "d": 2,
+        "u": "Via voortplanting geven individuen hun erfelijke eigenschappen door aan hun nakomelingen.",
+        "uo": [
+         "Aangeleerd gedrag is niet erfelijk.",
+         "Leeftijd wordt niet doorgegeven.",
+         "Klopt: hun erfelijke eigenschappen.",
+         "Een plek wordt niet geërfd."
+        ],
+        "uh": "Doorgegeven wordt alleen wat erfelijk is."
+       },
+       {
+        "v": "Waarom is evolutie niet doelgericht?",
+        "o": [
+         "Omdat soorten een vast plan van tevoren volgen",
+         "Omdat de natuur vooruit denkt",
+         "Omdat dieren kiezen hoe ze veranderen",
+         "Omdat de variatie door toeval ontstaat"
+        ],
+        "c": 3,
+        "d": 3,
+        "u": "De variatie ontstaat door toevallige mutaties; de omgeving selecteert daaruit, zonder vooropgezet doel.",
+        "uo": [
+         "Soorten volgen geen plan.",
+         "De natuur denkt niet vooruit.",
+         "Dieren kiezen hun evolutie niet.",
+         "Klopt: de variatie ontstaat door toeval."
+        ],
+        "uh": "Evolutie heeft geen doel: toeval plus selectie."
+       },
+       {
+        "v": "Wat is een aanpassing in evolutionaire zin?",
+        "o": [
+         "Een erfelijke eigenschap die beter past bij de omgeving",
+         "Een spier die dikker wordt door training",
+         "Een keuze die een dier bewust en met opzet maakt",
+         "Een tijdelijke verandering in één leven"
+        ],
+        "c": 0,
+        "d": 3,
+        "u": "Een aanpassing is een erfelijke eigenschap waarmee een soort beter past bij zijn omgeving.",
+        "uo": [
+         "Klopt: een erfelijke eigenschap die beter past.",
+         "Een getrainde spier is niet erfelijk.",
+         "Evolutie berust niet op bewuste keuze.",
+         "Een tijdelijke verandering is geen evolutionaire aanpassing."
+        ],
+        "uh": "Aanpassing = erfelijke eigenschap die beter past."
+       },
+       {
+        "v": "Wat is selectiedruk?",
+        "o": [
+         "De wil van een dier om te veranderen",
+         "De invloed van de omgeving op wie zich voortplant",
+         "Het aantal soorten in een gebied",
+         "De hoeveelheid regen die er per jaar in het gebied valt"
+        ],
+        "c": 1,
+        "d": 2,
+        "u": "Selectiedruk is de invloed van de omgeving die bepaalt welke individuen meer nakomelingen krijgen.",
+        "uo": [
+         "Het gaat niet om de wil van een dier.",
+         "Klopt: de omgeving bepaalt wie zich voortplant.",
+         "Dat is de soortenrijkdom.",
+         "Neerslag is niet de selectiedruk zelf."
+        ],
+        "uh": "Selectiedruk = invloed van de omgeving op de voortplanting."
+       },
+       {
+        "v": "Wat toont een fossiel?",
+        "o": [
+         "Het huidige aantal dieren van een soort",
+         "De niet-levende omgeving van nu",
+         "Een overblijfsel van een organisme uit het verleden",
+         "De niche en de rol van een nu nog levende soort"
+        ],
+        "c": 2,
+        "d": 1,
+        "u": "Een fossiel is een bewaard gebleven overblijfsel of afdruk van een organisme uit het verleden.",
+        "uo": [
+         "Een fossiel gaat over het verleden, niet nu.",
+         "Een fossiel is niet de omgeving van nu.",
+         "Klopt: een overblijfsel uit het verleden.",
+         "Een fossiel is geen niche."
+        ],
+        "uh": "Fossiel = overblijfsel uit het verleden."
+       },
+       {
+        "v": "Waarom helpen fossielen om evolutie te begrijpen?",
+        "o": [
+         "Ze tonen precies de toekomst van een soort",
+         "Ze bewijzen dat soorten nooit veranderen",
+         "Ze gaan alleen over de niet-levende dingen van vroeger",
+         "Ze laten zien hoe soorten in de tijd veranderden"
+        ],
+        "c": 3,
+        "d": 3,
+        "u": "Fossielen van verschillende ouderdom laten zien hoe soorten in de loop van de tijd zijn veranderd.",
+        "uo": [
+         "Fossielen tonen het verleden, niet de toekomst.",
+         "Ze laten juist zien dat soorten wel veranderen.",
+         "Fossielen gaan over vroegere organismen.",
+         "Klopt: ze tonen verandering door de tijd."
+        ],
+        "uh": "Fossielen tonen verandering van soorten door de tijd."
+       },
+       {
+        "v": "Wat is een gemeenschappelijke voorouder?",
+        "o": [
+         "Een soort waaruit latere soorten zijn ontstaan",
+         "Het jongste dier dat in de populatie is geboren",
+         "De niet-levende omgeving van vroeger",
+         "Een soort die nu nog onveranderd leeft"
+        ],
+        "c": 0,
+        "d": 2,
+        "u": "Een gemeenschappelijke voorouder is een soort waaruit door evolutie meerdere latere soorten zijn ontstaan.",
+        "uo": [
+         "Klopt: een soort waaruit latere soorten ontstonden.",
+         "Dat is geen voorouder.",
+         "Een voorouder is een soort, geen omgeving.",
+         "Een voorouder is juist veranderd in nieuwe soorten."
+        ],
+        "uh": "Gemeenschappelijke voorouder = bron van latere soorten."
+       },
+       {
+        "v": "Welke uitspraak over natuurlijke selectie klopt?",
+        "o": [
+         "Elk individu kiest zijn eigen eigenschappen",
+         "De omgeving bepaalt wie meer nakomelingen krijgt",
+         "Alle individuen planten zich even veel voort",
+         "Selectie werkt alleen op de niet-levende omgeving"
+        ],
+        "c": 1,
+        "d": 2,
+        "u": "De omgeving vormt de selectiedruk en bepaalt zo welke individuen meer nakomelingen krijgen.",
+        "uo": [
+         "Individuen kiezen hun eigenschappen niet.",
+         "Klopt: de omgeving bepaalt wie meer nakomelingen krijgt.",
+         "Ze planten zich juist niet even veel voort.",
+         "Selectie werkt op de individuen, niet op de biotoop."
+        ],
+        "uh": "De omgeving selecteert wie meer nakomelingen krijgt."
+       },
+       {
+        "v": "Een populatie leeft in een steeds kouder wordend gebied. Wat kan er over generaties gebeuren?",
+        "o": [
+         "Elk dier krijgt in zijn leven een dikke vacht",
+         "De hele populatie sterft in werkelijkheid altijd meteen uit",
+         "Dieren met een dikkere vacht worden talrijker",
+         "De temperatuur past zich aan de dieren aan"
+        ],
+        "c": 2,
+        "d": 3,
+        "u": "Dieren die door variatie een dikkere vacht hebben, overleven de kou beter en geven die eigenschap vaker door.",
+        "uo": [
+         "Een individu krijgt niet zomaar erfelijk een dikke vacht.",
+         "De populatie sterft niet per se meteen uit.",
+         "Klopt: dikkere vacht overleeft beter en wordt talrijker.",
+         "De temperatuur past zich niet aan de dieren aan."
+        ],
+        "uh": "Beter passende variant wordt over generaties talrijker."
+       },
+       {
+        "v": "Waarom is variatie nodig voor natuurlijke selectie?",
+        "o": [
+         "Omdat variatie de omgeving van het gebied verandert",
+         "Omdat variatie de dieren doelen geeft",
+         "Omdat variatie soorten laat samensmelten",
+         "Omdat zonder verschillen er niets te selecteren valt"
+        ],
+        "c": 3,
+        "d": 3,
+        "u": "Selectie kan alleen werken als er verschillen tussen individuen zijn; zonder variatie is er niets om uit te kiezen.",
+        "uo": [
+         "Variatie verandert de omgeving niet.",
+         "Variatie geeft geen doelen.",
+         "Variatie laat soorten niet samensmelten.",
+         "Klopt: zonder verschillen valt er niets te selecteren."
+        ],
+        "uh": "Geen variatie, geen selectie."
+       },
+       {
+        "v": "Wat is het verschil tussen groei en evolutie?",
+        "o": [
+         "Groei is één individu, evolutie een populatie",
+         "Groei is een populatie, evolutie een individu",
+         "De twee begrippen betekenen precies hetzelfde",
+         "Beide gebeuren binnen één leven"
+        ],
+        "c": 0,
+        "d": 3,
+        "u": "Groei gebeurt bij één individu tijdens zijn leven; evolutie is verandering van een populatie over generaties.",
+        "uo": [
+         "Klopt: groei is een individu, evolutie een populatie.",
+         "Dit is precies omgekeerd.",
+         "Ze verschillen juist.",
+         "Evolutie duurt juist vele generaties."
+        ],
+        "uh": "Groei = individu, evolutie = populatie over generaties."
+       },
+       {
+        "v": "Hoe wordt een gunstige eigenschap in een populatie steeds algemener?",
+        "o": [
+         "Doordat de omgeving de nieuwe eigenschap zelf maakt",
+         "Doordat de dragers meer nakomelingen krijgen",
+         "Doordat dieren de eigenschap bewust kiezen",
+         "Doordat de eigenschap in één leven ontstaat"
+        ],
+        "c": 1,
+        "d": 3,
+        "u": "Individuen met de gunstige eigenschap overleven en planten zich vaker voort, dus geven ze die vaker door.",
+        "uo": [
+         "De omgeving selecteert, maar maakt de eigenschap niet.",
+         "Klopt: de dragers krijgen meer nakomelingen.",
+         "Er is geen bewuste keuze.",
+         "De eigenschap wordt geërfd, niet in één leven gevormd."
+        ],
+        "uh": "Gunstige eigenschap verspreidt zich via meer nakomelingen."
+       },
+       {
+        "v": "Welke uitspraak over evolutie klopt?",
+        "o": [
+         "Evolutie streeft naar een perfect eindresultaat",
+         "Individuen evolueren tijdens hun eigen leven mee",
+         "Evolutie is verandering van populaties over generaties",
+         "Evolutie gebeurt zonder erfelijke eigenschappen"
+        ],
+        "c": 2,
+        "d": 2,
+        "u": "Evolutie is de verandering van erfelijke eigenschappen van een populatie over vele generaties, zonder vooropgezet doel.",
+        "uo": [
+         "Evolutie streeft geen perfect doel na.",
+         "Individuen evolueren niet tijdens hun leven.",
+         "Klopt: verandering van populaties over generaties.",
+         "Evolutie draait juist om erfelijke eigenschappen."
+        ],
+        "uh": "Evolutie = populaties veranderen over generaties, doelloos."
+       },
+       {
+        "v": "Twee eilanden raken gescheiden en de vogels evolueren apart. Wat kan er ontstaan?",
+        "o": [
+         "Precies dezelfde vogels als vroeger",
+         "Eén dier dat op beide eilanden groeit",
+         "Een niet-levende factor van het eiland",
+         "Twee nieuwe, verschillende soorten"
+        ],
+        "c": 3,
+        "d": 3,
+        "u": "Doordat de gescheiden populaties apart evolueren, kunnen ze zo verschillen dat er twee nieuwe soorten ontstaan.",
+        "uo": [
+         "Ze blijven juist niet precies gelijk.",
+         "Het gaat om populaties, niet één dier.",
+         "Er ontstaat een soort, geen abiotische factor.",
+         "Klopt: er kunnen twee nieuwe soorten ontstaan."
+        ],
+        "uh": "Gescheiden en apart evolueren kan soortvorming geven."
+       },
+       {
+        "v": "Waarom duurt evolutie meestal heel veel generaties?",
+        "o": [
+         "Kleine erfelijke verschuivingen stapelen langzaam op",
+         "Omdat elk dier het bewust heel traag doet",
+         "Omdat de omgeving nooit verandert",
+         "Omdat mutaties helemaal niet bestaan"
+        ],
+        "c": 0,
+        "d": 3,
+        "u": "Evolutie verloopt via kleine verschuivingen in eigenschappen die zich over veel generaties opstapelen.",
+        "uo": [
+         "Klopt: kleine verschuivingen stapelen over generaties op.",
+         "Er is geen bewuste sturing door dieren.",
+         "De omgeving verandert juist wel.",
+         "Mutaties bestaan wel en leveren variatie."
+        ],
+        "uh": "Evolutie = kleine erfelijke verschuivingen over veel generaties."
+       }
+      ],
+      "oe": [
+       {
+        "vraag": "Leg in stappen uit hoe natuurlijke selectie werkt.",
+        "antwoord": "Binnen een populatie is er variatie tussen de individuen, die ontstaat door mutaties. Sommige individuen passen door hun eigenschappen beter bij de omgeving. Zij hebben meer kans om te overleven en zich voort te planten, en geven hun erfelijke eigenschappen door. Daardoor komt de gunstige eigenschap in de volgende generaties vaker voor, en verandert de populatie."
+       },
+       {
+        "vraag": "Leg uit waarom het fout is om te zeggen dat een individu zich aanpast om te overleven.",
+        "antwoord": "Een individu verandert zijn erfelijke eigenschappen niet tijdens zijn leven. De variatie is er al door toevallige mutaties. De omgeving selecteert daaruit de individuen die het beste passen. Evolutie heeft geen doel; het is dus fout om te zeggen dat een dier verandert om te overleven. Niet het individu, maar de populatie verandert over generaties."
+       },
+       {
+        "vraag": "Leg uit waarom variatie een voorwaarde is voor evolutie.",
+        "antwoord": "Natuurlijke selectie werkt alleen als er verschillen tussen individuen zijn. Als alle individuen precies gelijk zijn, is er niets om uit te selecteren en kan de populatie niet veranderen. De variatie, die door mutaties ontstaat, levert de verschillen waarop de selectie kan werken."
+       },
+       {
+        "vraag": "Leg uit hoe uit één populatie twee nieuwe soorten kunnen ontstaan.",
+        "antwoord": "Als een populatie in twee groepen wordt gescheiden, bijvoorbeeld door een rivier of een zee, kunnen de groepen zich niet meer met elkaar voortplanten. In elke groep werkt de natuurlijke selectie apart, met eigen mutaties en een eigen omgeving. Na veel generaties kunnen de groepen zo verschillen dat het aparte soorten zijn geworden: soortvorming."
+       },
+       {
+        "vraag": "Leg uit wat het verschil is tussen de groei van een individu en de evolutie van een populatie.",
+        "antwoord": "Groei is de toename van één individu tijdens zijn eigen leven; dat is geen evolutie. Evolutie is de verandering van erfelijke eigenschappen van een hele populatie over vele generaties. Groei gebeurt dus binnen één leven bij één individu, evolutie over generaties bij een populatie."
+       }
+      ]
+     }
+    ],
     "beschrijving": "Ecosystemen, soortvorming en evolutie",
     "ceStatus": "CE",
     "binas": [

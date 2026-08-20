@@ -1,7 +1,7 @@
 {
-  "total": 353,
+  "total": 503,
   "perVak": {
-    "havo/bi": 353
+    "havo/bi": 503
   },
   "perLeerdoel": {
     "havo/bi/M1": 25,
@@ -17,17 +17,23 @@
     "havo/bi/O4": 25,
     "havo/bi/O5": 25,
     "havo/bi/O6": 25,
-    "havo/bi/O7": 25
+    "havo/bi/O7": 25,
+    "havo/bi/P1": 25,
+    "havo/bi/P2": 25,
+    "havo/bi/P3": 25,
+    "havo/bi/P4": 25,
+    "havo/bi/P5": 25,
+    "havo/bi/P6": 25
   },
   "rVerdeling": {
-    "1": 131,
-    "2": 149,
-    "3": 73
+    "1": 164,
+    "2": 213,
+    "3": 126
   },
   "posVerdeling": [
-    94,
-    87,
-    88,
-    84
+    136,
+    123,
+    124,
+    120
   ]
 }

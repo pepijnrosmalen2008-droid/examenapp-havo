@@ -636,7 +636,117 @@ var VAKKEN = [
     "nSv": 101,
     "nOe": 7,
     "nBeg": 22,
-    "hasSam": true
+    "hasSam": true,
+    "leerdoelen": [
+     {
+      "id": "P1",
+      "naam": "Ecosystemen: biotische en abiotische factoren",
+      "beschrijving": "Gouden-standaardmodule bi.P.1: het ecosysteem als levensgemeenschap plus biotoop, het onderscheid tussen biotische en abiotische factoren, en de niche van een soort.",
+      "ceStatus": "CE",
+      "onderwerpen": [
+       "Ecosysteem: levensgemeenschap plus biotoop",
+       "Biotische factoren (levende omgeving)",
+       "Abiotische factoren (niet-levende omgeving)",
+       "Niche van een soort",
+       "Habitat en levensgemeenschap",
+       "Populatie en soort"
+      ],
+      "nSv": 25,
+      "nOe": 5,
+      "nBeg": 12,
+      "hasSam": true
+     },
+     {
+      "id": "P2",
+      "naam": "Voedselrelaties en energiedoorgifte",
+      "beschrijving": "Gouden-standaardmodule bi.P.2: voedselketens en voedselwebben, de rol van producent, consument en reducent, en energiedoorgifte via de piramide van biomassa.",
+      "ceStatus": "CE",
+      "onderwerpen": [
+       "Voedselketen en voedselweb",
+       "Producent, consument, reducent",
+       "Herbivoor, carnivoor, omnivoor",
+       "Energiedoorgifte (ongeveer 10 procent per stap)",
+       "Piramide van biomassa",
+       "Nutriënten en de kringloop"
+      ],
+      "nSv": 25,
+      "nOe": 5,
+      "nBeg": 12,
+      "hasSam": true
+     },
+     {
+      "id": "P3",
+      "naam": "Populatiedynamiek en draagkracht",
+      "beschrijving": "Gouden-standaardmodule bi.P.3: hoe een populatie verandert door geboorte, sterfte en trek, exponentiele groei, en de rol van draagkracht bij het begrenzen van de groei (S-kromme).",
+      "ceStatus": "CE",
+      "onderwerpen": [
+       "Populatie en populatiegrootte",
+       "Geboorte, sterfte, immigratie, emigratie",
+       "Exponentiele groei",
+       "Draagkracht als grens",
+       "Remmende factoren",
+       "Grafiek van populatiegroei (S-kromme)"
+      ],
+      "nSv": 25,
+      "nOe": 5,
+      "nBeg": 12,
+      "hasSam": true
+     },
+     {
+      "id": "P4",
+      "naam": "Relaties tussen soorten",
+      "beschrijving": "Gouden-standaardmodule bi.P.4: vormen van symbiose (mutualisme, commensalisme en parasitisme), predatie en concurrentie, en het effect van een exoot op een ecosysteem.",
+      "ceStatus": "CE",
+      "onderwerpen": [
+       "Symbiose als langdurig samenleven",
+       "Mutualisme (beide voordeel)",
+       "Commensalisme (een voordeel, ander geen last)",
+       "Parasitisme (parasiet voordeel, gastheer nadeel)",
+       "Predatie en concurrentie",
+       "Exoot en het effect op een ecosysteem"
+      ],
+      "nSv": 25,
+      "nOe": 5,
+      "nBeg": 12,
+      "hasSam": true
+     },
+     {
+      "id": "P5",
+      "naam": "Successie en biodiversiteit",
+      "beschrijving": "Gouden-standaardmodule bi.P.5: successie als reeks opeenvolgende levensgemeenschappen van pioniers tot climaxstadium, en de betekenis van biodiversiteit en duurzaamheid.",
+      "ceStatus": "CE",
+      "onderwerpen": [
+       "Successie als reeks, geen eenmalige gebeurtenis",
+       "Pioniersoorten op kale grond",
+       "Van pioniers via struiken naar bos",
+       "Climaxstadium",
+       "Biodiversiteit en stabiliteit",
+       "Duurzaamheid"
+      ],
+      "nSv": 25,
+      "nOe": 5,
+      "nBeg": 12,
+      "hasSam": true
+     },
+     {
+      "id": "P6",
+      "naam": "Evolutie en natuurlijke selectie",
+      "beschrijving": "Gouden-standaardmodule bi.P.6: variatie en mutatie, natuurlijke selectie, evolutie als verandering van een populatie over generaties, en soortvorming. Nadruk op: populaties evolueren (niet individuen) en niet doelgericht redeneren.",
+      "ceStatus": "CE",
+      "onderwerpen": [
+       "Variatie en mutatie binnen een populatie",
+       "Natuurlijke selectie",
+       "Overleven en voortplanten",
+       "Evolutie: verandering van een populatie",
+       "Populaties veranderen, niet individuen",
+       "Soortvorming"
+      ],
+      "nSv": 25,
+      "nOe": 5,
+      "nBeg": 12,
+      "hasSam": true
+     }
+    ]
    }
   ]
  },

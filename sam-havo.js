@@ -719,6 +719,294 @@ Object.assign(SAM_RICH,{
 </g></svg><div class="sam-figcap">Buigen: buigspier trekt, strekspier ontspant. Strekken: strekspier trekt, buigspier ontspant</div></div>
 <div class="sam-onthoud"><strong>Onthoud:</strong> antagonisten wisselen af: de een trekt terwijl de ander ontspant.</div>
 </div>`,
+'havo_bi_P1':`<div class="sam-intro">Een <strong>ecosysteem</strong> is een <strong>levensgemeenschap</strong> (alle organismen) samen met de <strong>biotoop</strong> (de niet-levende omgeving). De invloeden op een organisme deel je in <strong>biotisch</strong> (levend) en <strong>abiotisch</strong> (niet-levend). Hieronder eerst een begrippenlijst, daarna drie hoofdstukjes met beeld.</div>
+<table class="sam-table"><thead><tr><th>Begrip</th><th>Kort</th></tr></thead><tbody>
+<tr><td><strong>Ecosysteem</strong></td><td>levensgemeenschap plus de niet-levende omgeving (biotoop)</td></tr>
+<tr><td><strong>Levensgemeenschap</strong></td><td>alle organismen van alle soorten samen</td></tr>
+<tr><td><strong>Biotoop</strong></td><td>de niet-levende omgeving van een ecosysteem</td></tr>
+<tr><td><strong>Biotische factor</strong></td><td>een invloed van levende organismen (voedsel, vijand)</td></tr>
+<tr><td><strong>Abiotische factor</strong></td><td>een niet-levende invloed (temperatuur, licht, water)</td></tr>
+<tr><td><strong>Niche</strong></td><td>de plek en rol van een soort in het ecosysteem</td></tr>
+<tr><td><strong>Habitat</strong></td><td>de woonplaats van een soort</td></tr>
+<tr><td><strong>Populatie</strong></td><td>alle individuen van één soort in een gebied</td></tr>
+</tbody></table>
+<div class="sam-chapter">
+<div class="sam-ch-title"><span class="sam-ch-n">1</span> Levensgemeenschap plus biotoop</div>
+<p>Een <strong>ecosysteem</strong> bestaat uit twee delen: de <strong>levensgemeenschap</strong> (alle planten, dieren en andere organismen samen) en de <strong>biotoop</strong> (de niet-levende omgeving zoals bodem, water en klimaat). Samen met hun onderlinge invloeden vormen ze het ecosysteem.</p>
+<div class="sam-figure"><svg viewBox="0 0 320 130" width="100%" role="img" aria-label="Een ecosysteem bestaat uit de levensgemeenschap en de biotoop">
+<g font-family="sans-serif" font-size="10" text-anchor="middle">
+<rect x="20" y="34" width="120" height="62" rx="10" fill="#e7efe9" stroke="#4ea36b"/><text x="80" y="54" fill="#2f7d4f">levensgemeenschap</text><text x="80" y="74" fill="#3a6b52">planten en dieren</text>
+<text x="160" y="70" fill="#5a7085">+</text>
+<rect x="180" y="34" width="120" height="62" rx="10" fill="#eaf2f6" stroke="#3f8fc9"/><text x="240" y="54" fill="#2e6d8a">biotoop</text><text x="240" y="74" fill="#3a6b7a">bodem, water, licht</text>
+</g></svg><div class="sam-figcap">Ecosysteem = de levende organismen (levensgemeenschap) plus de niet-levende biotoop</div></div>
+<div class="sam-onthoud"><strong>Onthoud:</strong> ecosysteem = levensgemeenschap + biotoop.</div>
+</div>
+<div class="sam-chapter">
+<div class="sam-ch-title"><span class="sam-ch-n">2</span> Biotisch of abiotisch</div>
+<p>De invloeden (factoren) op een organisme deel je in twee groepen. <strong>Biotische</strong> factoren komen van <strong>levende</strong> organismen, zoals voedsel, vijanden en concurrentie. <strong>Abiotische</strong> factoren zijn <strong>niet-levend</strong>, zoals temperatuur, licht, water en bodem. Let op: een factor bij de verkeerde groep indelen is een veelgemaakte fout.</p>
+<div class="sam-figure"><svg viewBox="0 0 320 130" width="100%" role="img" aria-label="Biotische factoren zijn levend, abiotische factoren niet-levend">
+<g font-family="sans-serif" font-size="9" text-anchor="middle">
+<rect x="16" y="26" width="130" height="88" rx="10" fill="#e7efe9" stroke="#4ea36b"/><text x="81" y="44" fill="#2f7d4f" font-size="10">biotisch (levend)</text>
+<text x="81" y="64" fill="#3a6b52">voedsel</text><text x="81" y="80" fill="#3a6b52">vijanden</text><text x="81" y="96" fill="#3a6b52">concurrentie</text>
+<rect x="174" y="26" width="130" height="88" rx="10" fill="#eaf2f6" stroke="#3f8fc9"/><text x="239" y="44" fill="#2e6d8a" font-size="10">abiotisch (niet-levend)</text>
+<text x="239" y="64" fill="#3a6b7a">temperatuur</text><text x="239" y="80" fill="#3a6b7a">licht</text><text x="239" y="96" fill="#3a6b7a">water</text>
+</g></svg><div class="sam-figcap">Biotisch komt van iets levends, abiotisch is niet-levend</div></div>
+<div class="sam-onthoud"><strong>Onthoud:</strong> biotisch = levend, abiotisch = niet-levend.</div>
+</div>
+<div class="sam-chapter">
+<div class="sam-ch-title"><span class="sam-ch-n">3</span> Niche en habitat</div>
+<p>De <strong>habitat</strong> is de <strong>woonplaats</strong> van een soort: waar hij leeft. De <strong>niche</strong> is meer: de <strong>plek en rol</strong> in het ecosysteem, dus wat de soort eet, waar hij leeft en hoe hij zich voortplant. Twee soorten met dezelfde niche in hetzelfde gebied gaan met elkaar <strong>concurreren</strong>.</p>
+<div class="sam-figure"><svg viewBox="0 0 320 120" width="100%" role="img" aria-label="Habitat is de woonplaats, niche is de rol van een soort">
+<g font-family="sans-serif" font-size="10" text-anchor="middle">
+<circle cx="78" cy="60" r="34" fill="#c98a5f"/><text x="78" y="58" fill="#fff">waar?</text><text x="78" y="106" fill="#8a5a2f">habitat</text>
+<circle cx="242" cy="60" r="34" fill="#8f74b8"/><text x="242" y="58" fill="#fff">welke rol?</text><text x="242" y="106" fill="#5a3f82">niche</text>
+</g></svg><div class="sam-figcap">Habitat = waar een soort woont; niche = zijn plek en rol in het geheel</div></div>
+<div class="sam-onthoud"><strong>Onthoud:</strong> habitat = waar, niche = welke rol.</div>
+</div>`,
+'havo_bi_P2':`<div class="sam-intro">In een <strong>voedselketen</strong> zie je wie wie eet. De <strong>pijl</strong> wijst naar de eter, want de <strong>energie</strong> stroomt die kant op. Bij elke stap gaat veel energie verloren, dus is er bovenin steeds minder: de <strong>piramide van biomassa</strong>. Hieronder eerst een begrippenlijst, daarna drie hoofdstukjes met beeld.</div>
+<table class="sam-table"><thead><tr><th>Begrip</th><th>Kort</th></tr></thead><tbody>
+<tr><td><strong>Voedselketen</strong></td><td>een reeks organismen die elkaar opeten</td></tr>
+<tr><td><strong>Producent</strong></td><td>maakt zelf voedsel met fotosynthese (plant)</td></tr>
+<tr><td><strong>Consument</strong></td><td>eet andere organismen</td></tr>
+<tr><td><strong>Reducent</strong></td><td>breekt dode resten af (bacterie, schimmel)</td></tr>
+<tr><td><strong>Energiedoorgifte</strong></td><td>per stap gaat ongeveer 90 procent verloren als warmte</td></tr>
+<tr><td><strong>Piramide van biomassa</strong></td><td>bovenin een keten steeds minder biomassa</td></tr>
+<tr><td><strong>Nutriënt</strong></td><td>voedingsstof die planten opnemen</td></tr>
+<tr><td><strong>Kringloop</strong></td><td>reducenten geven nutriënten terug aan de bodem</td></tr>
+</tbody></table>
+<div class="sam-chapter">
+<div class="sam-ch-title"><span class="sam-ch-n">1</span> Producent, consument, reducent</div>
+<p>Een <strong>producent</strong> (plant) maakt zelf voedsel en staat aan het begin. Een <strong>consument</strong> eet andere organismen. Een <strong>reducent</strong> (bacterie of schimmel) breekt dode resten af en maakt daarbij <strong>nutriënten</strong> vrij die de planten weer opnemen.</p>
+<div class="sam-figure"><svg viewBox="0 0 320 120" width="100%" role="img" aria-label="Van producent naar consument, en de reducent breekt dode resten af tot nutriënten">
+<g font-family="sans-serif" font-size="9" text-anchor="middle">
+<circle cx="46" cy="50" r="22" fill="#4ea36b"/><text x="46" y="53" fill="#fff">plant</text><text x="46" y="86" fill="#2f7d4f">producent</text>
+<path d="M70 50h30" stroke="#5a7085" stroke-width="2.5" fill="none" marker-end="url(#p2a)"/>
+<circle cx="128" cy="50" r="22" fill="#c98a5f"/><text x="128" y="53" fill="#fff">dier</text><text x="128" y="86" fill="#8a5a2f">consument</text>
+<path d="M150 62q30 34 60 4" stroke="#8f6f3f" stroke-width="2.5" fill="none" marker-end="url(#p2r)"/>
+<circle cx="230" cy="60" r="22" fill="#8f74b8"/><text x="230" y="63" fill="#fff">afbraak</text><text x="230" y="96" fill="#5a3f82">reducent</text>
+<path d="M230 38q-10 -30 -160 4" stroke="#3f8f5f" stroke-width="2" fill="none" stroke-dasharray="4 3" marker-end="url(#p2n)"/><text x="150" y="18" fill="#2f7d4f">nutriënten terug</text>
+</g><defs><marker id="p2a" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0 0l6 3-6 3z" fill="#5a7085"/></marker><marker id="p2r" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0 0l6 3-6 3z" fill="#8f6f3f"/></marker><marker id="p2n" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0 0l6 3-6 3z" fill="#3f8f5f"/></marker></defs>
+</svg><div class="sam-figcap">Producent naar consument; de reducent breekt af en geeft nutriënten terug aan de plant</div></div>
+<div class="sam-onthoud"><strong>Onthoud:</strong> producent maakt, consument eet, reducent breekt af.</div>
+</div>
+<div class="sam-chapter">
+<div class="sam-ch-title"><span class="sam-ch-n">2</span> De pijl en de energie</div>
+<p>De <strong>pijl</strong> in een voedselketen wijst naar het organisme dat <strong>eet</strong>, want de <strong>energie</strong> stroomt van de prooi naar de eter. Bij elke stap gebruiken organismen energie en geven ze <strong>warmte</strong> af, dus gaat er maar ongeveer <strong>tien procent</strong> door naar de volgende.</p>
+<div class="sam-figure"><svg viewBox="0 0 320 110" width="100%" role="img" aria-label="De pijl wijst naar de eter en per stap gaat energie verloren als warmte">
+<g font-family="sans-serif" font-size="9" text-anchor="middle">
+<text x="40" y="40" fill="#2f7d4f">gras</text><text x="150" y="40" fill="#8a5a2f">konijn</text><text x="270" y="40" fill="#8f3f3f">vos</text>
+<path d="M60 50h60" stroke="#d9a441" stroke-width="3" fill="none" marker-end="url(#p2e)"/>
+<path d="M180 50h60" stroke="#d9a441" stroke-width="3" fill="none" marker-end="url(#p2e)"/>
+<text x="90" y="68" fill="#b5772a">10%</text><text x="210" y="68" fill="#b5772a">10%</text>
+<text x="90" y="92" fill="#8f3f3f">90% warmte</text><text x="210" y="92" fill="#8f3f3f">90% warmte</text>
+</g><defs><marker id="p2e" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0 0l6 3-6 3z" fill="#d9a441"/></marker></defs>
+</svg><div class="sam-figcap">De pijl wijst naar de eter; per stap gaat ongeveer 90 procent verloren als warmte</div></div>
+<div class="sam-onthoud"><strong>Onthoud:</strong> pijl naar de eter, ongeveer 10 procent gaat door.</div>
+</div>
+<div class="sam-chapter">
+<div class="sam-ch-title"><span class="sam-ch-n">3</span> Piramide van biomassa</div>
+<p>Omdat er per stap veel energie verloren gaat, is er hogerop steeds <strong>minder biomassa</strong>. Onderaan staan de <strong>producenten</strong> met de meeste biomassa, bovenaan de toppredatoren met de minste. Daardoor zijn er van de toppredatoren maar weinig.</p>
+<div class="sam-figure"><svg viewBox="0 0 320 120" width="100%" role="img" aria-label="Piramide van biomassa: onderaan veel producenten, bovenaan weinig toppredatoren">
+<g font-family="sans-serif" font-size="9" text-anchor="middle">
+<polygon points="160,20 200,50 120,50" fill="#8f3f3f"/><text x="245" y="40" fill="#8f3f3f">toppredator</text>
+<polygon points="120,52 200,52 224,82 96,82" fill="#c98a5f"/><text x="252" y="72" fill="#8a5a2f">consumenten</text>
+<polygon points="96,84 224,84 250,112 70,112" fill="#4ea36b"/><text x="262" y="102" fill="#2f7d4f">producenten</text>
+</g></svg><div class="sam-figcap">Onderaan veel biomassa (producenten), bovenaan weinig (toppredatoren)</div></div>
+<div class="sam-onthoud"><strong>Onthoud:</strong> piramide van biomassa: onderaan veel, bovenaan weinig.</div>
+</div>`,
+'havo_bi_P3':`<div class="sam-intro">Een <strong>populatie</strong> is alle individuen van één soort in een gebied. De grootte verandert door <strong>geboorte</strong>, <strong>sterfte</strong>, <strong>immigratie</strong> en <strong>emigratie</strong>. Groei botst uiteindelijk op de <strong>draagkracht</strong>: het maximale aantal dat een gebied aankan. Hieronder eerst een begrippenlijst, daarna drie hoofdstukjes met beeld.</div>
+<table class="sam-table"><thead><tr><th>Begrip</th><th>Kort</th></tr></thead><tbody>
+<tr><td><strong>Populatie</strong></td><td>alle individuen van één soort in een gebied</td></tr>
+<tr><td><strong>Geboorte / immigratie</strong></td><td>maken de populatie groter</td></tr>
+<tr><td><strong>Sterfte / emigratie</strong></td><td>maken de populatie kleiner</td></tr>
+<tr><td><strong>Exponentiele groei</strong></td><td>steeds snellere groei (J-vorm)</td></tr>
+<tr><td><strong>Draagkracht</strong></td><td>maximale aantal dat een gebied duurzaam aankan</td></tr>
+<tr><td><strong>Remmende factor</strong></td><td>houdt de groei tegen (voedseltekort, ziekte)</td></tr>
+<tr><td><strong>S-kromme</strong></td><td>groei die afvlakt rond de draagkracht</td></tr>
+<tr><td><strong>Concurrentie</strong></td><td>strijd om voedsel, ruimte of partners</td></tr>
+</tbody></table>
+<div class="sam-chapter">
+<div class="sam-ch-title"><span class="sam-ch-n">1</span> Groter en kleiner</div>
+<p>De grootte van een populatie verandert door vier dingen. <strong>Geboorte</strong> en <strong>immigratie</strong> (binnenkomen) maken hem <strong>groter</strong>. <strong>Sterfte</strong> en <strong>emigratie</strong> (vertrekken) maken hem <strong>kleiner</strong>.</p>
+<div class="sam-figure"><svg viewBox="0 0 320 120" width="100%" role="img" aria-label="Geboorte en immigratie vergroten, sterfte en emigratie verkleinen de populatie">
+<g font-family="sans-serif" font-size="9" text-anchor="middle">
+<circle cx="160" cy="60" r="34" fill="#8fb0c9"/><text x="160" y="63" fill="#22485f">populatie</text>
+<path d="M40 40q50 -6 88 12" stroke="#4ea36b" stroke-width="2.5" fill="none" marker-end="url(#p3p)"/><text x="60" y="30" fill="#2f7d4f">geboorte, immigratie</text>
+<path d="M192 68q50 18 88 12" stroke="#c96a6a" stroke-width="2.5" fill="none" marker-end="url(#p3m)"/><text x="262" y="104" fill="#8f3f3f">sterfte, emigratie</text>
+</g><defs><marker id="p3p" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0 0l6 3-6 3z" fill="#4ea36b"/></marker><marker id="p3m" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0 0l6 3-6 3z" fill="#c96a6a"/></marker></defs>
+</svg><div class="sam-figcap">Geboorte en immigratie erbij, sterfte en emigratie eraf</div></div>
+<div class="sam-onthoud"><strong>Onthoud:</strong> groter = geboorte + immigratie, kleiner = sterfte + emigratie.</div>
+</div>
+<div class="sam-chapter">
+<div class="sam-ch-title"><span class="sam-ch-n">2</span> Groei tot de draagkracht</div>
+<p>Met genoeg voedsel en ruimte groeit een populatie eerst <strong>snel</strong> (exponentieel). Maar het gebied kan niet oneindig veel dragen: het maximum heet de <strong>draagkracht</strong>. Bij de draagkracht remmen factoren de groei af en ontstaat een <strong>S-kromme</strong>.</p>
+<div class="sam-figure"><svg viewBox="0 0 320 130" width="100%" role="img" aria-label="Populatiegroei als S-kromme die afvlakt bij de draagkracht">
+<g font-family="sans-serif" font-size="9">
+<line x1="40" y1="110" x2="300" y2="110" stroke="#9aa7b3"/><line x1="40" y1="110" x2="40" y2="20" stroke="#9aa7b3"/>
+<line x1="40" y1="40" x2="300" y2="40" stroke="#c96a6a" stroke-dasharray="4 3"/><text x="300" y="34" text-anchor="end" fill="#8f3f3f">draagkracht</text>
+<path d="M40 108C120 108 130 50 190 44S280 40 300 40" stroke="#2e6d9a" stroke-width="2.5" fill="none"/>
+<text x="170" y="126" text-anchor="middle" fill="#6b7885">tijd</text>
+</g></svg><div class="sam-figcap">Eerst snelle groei, dan afvlakken rond de draagkracht: de S-kromme</div></div>
+<div class="sam-onthoud"><strong>Onthoud:</strong> groei vlakt af bij de draagkracht (S-kromme).</div>
+</div>
+<div class="sam-chapter">
+<div class="sam-ch-title"><span class="sam-ch-n">3</span> Remmende factoren</div>
+<p>Naarmate een populatie groeit, worden voedsel en ruimte <strong>schaars</strong>. Dan gaan <strong>remmende factoren</strong> werken: voedseltekort, ziekte, roofdieren en <strong>concurrentie</strong>. Die verhogen de sterfte en houden de groei tegen, zodat de populatie rond de draagkracht blijft.</p>
+<div class="sam-figure"><svg viewBox="0 0 320 110" width="100%" role="img" aria-label="Remmende factoren zoals voedseltekort, ziekte en concurrentie houden de groei tegen">
+<g font-family="sans-serif" font-size="9" text-anchor="middle">
+<rect x="120" y="40" width="80" height="30" rx="8" fill="#8fb0c9"/><text x="160" y="60" fill="#22485f">groei</text>
+<path d="M110 55h-40" stroke="#c96a6a" stroke-width="3" fill="none" marker-end="url(#p3r)"/><text x="60" y="40" fill="#8f3f3f">voedseltekort</text><text x="60" y="80" fill="#8f3f3f">ziekte</text>
+<path d="M210 55h40" stroke="#c96a6a" stroke-width="3" fill="none" marker-end="url(#p3r)"/><text x="262" y="40" fill="#8f3f3f">roofdieren</text><text x="262" y="80" fill="#8f3f3f">concurrentie</text>
+</g><defs><marker id="p3r" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0 0l6 3-6 3z" fill="#c96a6a"/></marker></defs>
+</svg><div class="sam-figcap">Voedseltekort, ziekte, roofdieren en concurrentie remmen de groei af</div></div>
+<div class="sam-onthoud"><strong>Onthoud:</strong> remmende factoren houden de groei bij de draagkracht.</div>
+</div>`,
+'havo_bi_P4':`<div class="sam-intro"><strong>Symbiose</strong> is het langdurig samenleven van twee soorten. Er zijn drie vormen, die verschillen in wie <strong>voordeel</strong> of <strong>nadeel</strong> heeft. Daarnaast bestaan predatie, concurrentie en de invloed van een <strong>exoot</strong>. Hieronder eerst een begrippenlijst, daarna drie hoofdstukjes met beeld.</div>
+<table class="sam-table"><thead><tr><th>Begrip</th><th>Kort</th></tr></thead><tbody>
+<tr><td><strong>Symbiose</strong></td><td>het langdurig samenleven van twee soorten</td></tr>
+<tr><td><strong>Mutualisme</strong></td><td>beide soorten voordeel</td></tr>
+<tr><td><strong>Commensalisme</strong></td><td>één voordeel, de ander geen last</td></tr>
+<tr><td><strong>Parasitisme</strong></td><td>parasiet voordeel, gastheer nadeel</td></tr>
+<tr><td><strong>Parasiet / gastheer</strong></td><td>parasiet leeft ten koste van de gastheer</td></tr>
+<tr><td><strong>Predatie</strong></td><td>roofdier eet prooi</td></tr>
+<tr><td><strong>Exoot</strong></td><td>soort die van elders komt, niet inheems</td></tr>
+<tr><td><strong>Inheemse soort</strong></td><td>soort die van nature in het gebied hoort</td></tr>
+</tbody></table>
+<div class="sam-chapter">
+<div class="sam-ch-title"><span class="sam-ch-n">1</span> De drie vormen van symbiose</div>
+<p>Bij <strong>mutualisme</strong> hebben <strong>beide</strong> soorten voordeel (plus/plus), zoals bij en bloem. Bij <strong>commensalisme</strong> heeft er <strong>één</strong> voordeel en de ander geen last (plus/nul). Bij <strong>parasitisme</strong> heeft de parasiet voordeel en de gastheer nadeel (plus/min).</p>
+<div class="sam-figure"><svg viewBox="0 0 320 120" width="100%" role="img" aria-label="Mutualisme plus plus, commensalisme plus nul, parasitisme plus min">
+<g font-family="sans-serif" font-size="10" text-anchor="middle">
+<rect x="14" y="30" width="90" height="66" rx="10" fill="#e7efe9" stroke="#4ea36b"/><text x="59" y="50" fill="#2f7d4f">mutualisme</text><text x="59" y="78" fill="#2f7d4f" font-size="14">+ / +</text>
+<rect x="115" y="30" width="90" height="66" rx="10" fill="#eef0f2" stroke="#9aa7b3"/><text x="160" y="50" fill="#5a6b7a">commensaal</text><text x="160" y="78" fill="#5a6b7a" font-size="14">+ / 0</text>
+<rect x="216" y="30" width="90" height="66" rx="10" fill="#f6eaea" stroke="#c96a6a"/><text x="261" y="50" fill="#8f3f3f">parasitisme</text><text x="261" y="78" fill="#8f3f3f" font-size="14">+ / -</text>
+</g></svg><div class="sam-figcap">Mutualisme (beide voordeel), commensalisme (één voordeel, ander niks), parasitisme (voordeel ten koste van de ander)</div></div>
+<div class="sam-onthoud"><strong>Onthoud:</strong> mutualisme +/+, commensalisme +/0, parasitisme +/-.</div>
+</div>
+<div class="sam-chapter">
+<div class="sam-ch-title"><span class="sam-ch-n">2</span> Parasiet en gastheer</div>
+<p>Bij <strong>parasitisme</strong> leeft de <strong>parasiet</strong> op of in de <strong>gastheer</strong> en profiteert ten koste van hem, zoals een teek op een hond. De parasiet heeft voordeel, de gastheer nadeel. Verwar dit niet met predatie, waarbij een roofdier de prooi in één keer opeet.</p>
+<div class="sam-figure"><svg viewBox="0 0 320 110" width="100%" role="img" aria-label="Een parasiet leeft op de gastheer en heeft voordeel ten koste van de gastheer">
+<g font-family="sans-serif" font-size="9" text-anchor="middle">
+<ellipse cx="120" cy="60" rx="60" ry="30" fill="#c98a5f"/><text x="120" y="63" fill="#fff">gastheer</text><text x="120" y="102" fill="#8a5a2f">nadeel (-)</text>
+<circle cx="150" cy="38" r="9" fill="#8f3f3f"/><text x="196" y="34" text-anchor="start" fill="#8f3f3f">parasiet (+)</text>
+</g></svg><div class="sam-figcap">De parasiet leeft op de gastheer: voordeel voor de parasiet, nadeel voor de gastheer</div></div>
+<div class="sam-onthoud"><strong>Onthoud:</strong> parasiet profiteert ten koste van de gastheer.</div>
+</div>
+<div class="sam-chapter">
+<div class="sam-ch-title"><span class="sam-ch-n">3</span> De exoot</div>
+<p>Een <strong>exoot</strong> is een soort die van <strong>elders</strong> komt en niet van nature in het gebied hoort. In het nieuwe gebied mist de exoot vaak zijn <strong>natuurlijke vijanden</strong>. Daardoor kan hij sterk toenemen (woekeren) en <strong>inheemse soorten verdringen</strong>.</p>
+<div class="sam-figure"><svg viewBox="0 0 320 110" width="100%" role="img" aria-label="Een exoot zonder natuurlijke vijanden neemt sterk toe en verdringt inheemse soorten">
+<g font-family="sans-serif" font-size="9" text-anchor="middle">
+<circle cx="60" cy="55" r="10" fill="#8f3f3f"/><text x="60" y="82" fill="#8f3f3f">exoot</text>
+<path d="M78 55h30" stroke="#8f3f3f" stroke-width="2.5" fill="none" marker-end="url(#p4x)"/>
+<circle cx="150" cy="45" r="8" fill="#8f3f3f"/><circle cx="150" cy="66" r="8" fill="#8f3f3f"/><circle cx="172" cy="55" r="8" fill="#8f3f3f"/><text x="150" y="90" fill="#8f3f3f">woekert</text>
+<path d="M195 55h30" stroke="#5a7085" stroke-width="2.5" fill="none" marker-end="url(#p4d)"/>
+<circle cx="255" cy="55" r="8" fill="#4ea36b" opacity="0.4"/><text x="255" y="82" fill="#2f7d4f">inheems weg</text>
+</g><defs><marker id="p4x" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0 0l6 3-6 3z" fill="#8f3f3f"/></marker><marker id="p4d" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0 0l6 3-6 3z" fill="#5a7085"/></marker></defs>
+</svg><div class="sam-figcap">Zonder vijanden neemt de exoot sterk toe en verdringt de inheemse soorten</div></div>
+<div class="sam-onthoud"><strong>Onthoud:</strong> een exoot zonder vijanden kan inheemse soorten verdringen.</div>
+</div>`,
+'havo_bi_P5':`<div class="sam-intro"><strong>Successie</strong> is de geleidelijke opeenvolging van levensgemeenschappen: een <strong>reeks</strong> stappen, geen eenmalige gebeurtenis. Onderweg neemt de <strong>biodiversiteit</strong> meestal toe. Hieronder eerst een begrippenlijst, daarna drie hoofdstukjes met beeld.</div>
+<table class="sam-table"><thead><tr><th>Begrip</th><th>Kort</th></tr></thead><tbody>
+<tr><td><strong>Successie</strong></td><td>opeenvolging van levensgemeenschappen (een reeks)</td></tr>
+<tr><td><strong>Pioniersoort</strong></td><td>vestigt zich als eerste op kale grond</td></tr>
+<tr><td><strong>Climaxstadium</strong></td><td>het stabiele eindstadium</td></tr>
+<tr><td><strong>Biodiversiteit</strong></td><td>de verscheidenheid aan soorten</td></tr>
+<tr><td><strong>Soortenrijkdom</strong></td><td>het aantal verschillende soorten</td></tr>
+<tr><td><strong>Duurzaamheid</strong></td><td>gebruiken zonder de natuur uit te putten</td></tr>
+<tr><td><strong>Stabiel ecosysteem</strong></td><td>vangt verstoring goed op (hoge biodiversiteit)</td></tr>
+<tr><td><strong>Natuurbeheer</strong></td><td>beheren om soorten te behouden</td></tr>
+</tbody></table>
+<div class="sam-chapter">
+<div class="sam-ch-title"><span class="sam-ch-n">1</span> Successie is een reeks</div>
+<p>Op <strong>kale grond</strong> vestigen zich eerst <strong>pioniersoorten</strong> (mossen, grassen). Die maken de bodem rijker, waardoor er <strong>kruiden en struiken</strong> bijkomen, en later <strong>bomen</strong>. Het stabiele eindstadium heet het <strong>climaxstadium</strong>. Successie is dus een reeks stappen, geen momentopname.</p>
+<div class="sam-figure"><svg viewBox="0 0 320 110" width="100%" role="img" aria-label="Successie van kale grond via mossen en struiken naar bos">
+<g font-family="sans-serif" font-size="9" text-anchor="middle">
+<rect x="20" y="70" width="50" height="12" fill="#c9b48a"/><text x="45" y="98" fill="#8a7a55">kaal</text>
+<circle cx="110" cy="74" r="8" fill="#7fbf6f"/><text x="110" y="98" fill="#2f7d4f">mos</text>
+<path d="M180 76c-6-14 12-14 6 0z" fill="#4ea36b"/><rect x="182" y="70" width="4" height="8" fill="#8a5a2f"/><text x="184" y="98" fill="#2f7d4f">struik</text>
+<path d="M250 74c-10-24 22-24 12 0z" fill="#2f7d4f"/><rect x="254" y="66" width="5" height="14" fill="#7a5a2a"/><text x="256" y="98" fill="#2f7d4f">bos (climax)</text>
+<path d="M62 60h30M138 60h30M212 60h30" stroke="#5a7085" stroke-width="1.5" fill="none" marker-end="url(#p5s)"/>
+</g><defs><marker id="p5s" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0 0l6 3-6 3z" fill="#5a7085"/></marker></defs>
+</svg><div class="sam-figcap">Van kale grond via mossen en struiken naar een bos: het climaxstadium</div></div>
+<div class="sam-onthoud"><strong>Onthoud:</strong> successie is een reeks: kaal, mossen, struiken, bos.</div>
+</div>
+<div class="sam-chapter">
+<div class="sam-ch-title"><span class="sam-ch-n">2</span> Biodiversiteit en stabiliteit</div>
+<p><strong>Biodiversiteit</strong> is de verscheidenheid aan soorten. Een gebied met <strong>veel</strong> soorten kan een verstoring, zoals een ziekte, beter opvangen dan een gebied met <strong>weinig</strong> soorten. Daarom is hoge biodiversiteit <strong>stabieler</strong> dan bijvoorbeeld een akker met één gewas.</p>
+<div class="sam-figure"><svg viewBox="0 0 320 110" width="100%" role="img" aria-label="Veel soorten geven een stabieler ecosysteem dan weinig soorten">
+<g font-family="sans-serif" font-size="9" text-anchor="middle">
+<text x="80" y="20" fill="#8f3f3f">weinig soorten</text>
+<circle cx="80" cy="55" r="12" fill="#c98a5f"/><text x="80" y="90" fill="#8f3f3f">kwetsbaar</text>
+<text x="240" y="20" fill="#2f7d4f">veel soorten</text>
+<circle cx="212" cy="50" r="9" fill="#4ea36b"/><circle cx="240" cy="62" r="9" fill="#8f74b8"/><circle cx="266" cy="48" r="9" fill="#c98a5f"/><circle cx="252" cy="72" r="9" fill="#3f8fc9"/><text x="240" y="94" fill="#2f7d4f">stabiel</text>
+</g></svg><div class="sam-figcap">Weinig soorten = kwetsbaar, veel soorten = stabieler ecosysteem</div></div>
+<div class="sam-onthoud"><strong>Onthoud:</strong> hoge biodiversiteit = stabieler ecosysteem.</div>
+</div>
+<div class="sam-chapter">
+<div class="sam-ch-title"><span class="sam-ch-n">3</span> Duurzaamheid</div>
+<p><strong>Duurzaamheid</strong> betekent de natuur zo gebruiken dat ze <strong>niet uitput</strong> en ook voor de <strong>toekomst</strong> blijft bestaan. Een voorbeeld is niet meer bomen kappen dan er aangroeien. Zo blijven soorten en ecosystemen behouden.</p>
+<div class="sam-figure"><svg viewBox="0 0 320 110" width="100%" role="img" aria-label="Duurzaam gebruik houdt evenwicht tussen gebruik en aangroei">
+<g font-family="sans-serif" font-size="9" text-anchor="middle">
+<path d="M160 22v66" stroke="#9aa7b3" stroke-width="1.5"/>
+<path d="M120 40h-70" stroke="#8a5a2f" stroke-width="6" stroke-linecap="round"/><circle cx="120" cy="40" r="8" fill="#8a5a2f"/><text x="80" y="30" fill="#8a5a2f">kappen</text>
+<path d="M200 70h70" stroke="#4ea36b" stroke-width="6" stroke-linecap="round"/><circle cx="200" cy="70" r="8" fill="#4ea36b"/><text x="238" y="90" fill="#2f7d4f">aangroei</text>
+<text x="160" y="102" fill="#5a7085">in evenwicht</text>
+</g></svg><div class="sam-figcap">Duurzaam: niet meer gebruiken dan er weer aangroeit</div></div>
+<div class="sam-onthoud"><strong>Onthoud:</strong> duurzaam = gebruiken zonder uitputten, ook voor later.</div>
+</div>`,
+'havo_bi_P6':`<div class="sam-intro"><strong>Evolutie</strong> is de verandering van een <strong>populatie</strong> over vele generaties. Ze verloopt via <strong>variatie</strong> en <strong>natuurlijke selectie</strong>. Let op: <strong>populaties</strong> evolueren (niet individuen) en evolutie is <strong>niet doelgericht</strong>. Hieronder eerst een begrippenlijst, daarna drie hoofdstukjes met beeld.</div>
+<table class="sam-table"><thead><tr><th>Begrip</th><th>Kort</th></tr></thead><tbody>
+<tr><td><strong>Evolutie</strong></td><td>verandering van een populatie over generaties</td></tr>
+<tr><td><strong>Variatie</strong></td><td>de verschillen tussen individuen</td></tr>
+<tr><td><strong>Mutatie</strong></td><td>verandering in het DNA die variatie geeft</td></tr>
+<tr><td><strong>Natuurlijke selectie</strong></td><td>beter passende individuen krijgen meer nakomelingen</td></tr>
+<tr><td><strong>Aanpassing</strong></td><td>erfelijke eigenschap die beter past bij de omgeving</td></tr>
+<tr><td><strong>Selectiedruk</strong></td><td>invloed van de omgeving op wie zich voortplant</td></tr>
+<tr><td><strong>Soortvorming</strong></td><td>het ontstaan van nieuwe soorten</td></tr>
+<tr><td><strong>Fossiel</strong></td><td>overblijfsel van een organisme uit het verleden</td></tr>
+</tbody></table>
+<div class="sam-chapter">
+<div class="sam-ch-title"><span class="sam-ch-n">1</span> Variatie en selectie</div>
+<p>Binnen een populatie is er <strong>variatie</strong>: de individuen verschillen, door <strong>mutaties</strong> in het DNA. Sommige passen beter bij de omgeving en overleven vaker. Zij planten zich meer voort en geven hun eigenschappen door: <strong>natuurlijke selectie</strong>. Zo komt de gunstige eigenschap in latere generaties vaker voor.</p>
+<div class="sam-figure"><svg viewBox="0 0 320 110" width="100%" role="img" aria-label="Uit variatie selecteert de omgeving de best passende individuen, die vaker voorkomen in de volgende generatie">
+<g font-family="sans-serif" font-size="9" text-anchor="middle">
+<text x="55" y="18" fill="#5a7085">variatie</text>
+<circle cx="30" cy="45" r="8" fill="#c9b48a"/><circle cx="55" cy="45" r="8" fill="#8a5a2f"/><circle cx="80" cy="45" r="8" fill="#c9b48a"/>
+<path d="M100 45h30" stroke="#5a7085" stroke-width="2" fill="none" marker-end="url(#p6s)"/><text x="115" y="34" fill="#2f7d4f">selectie</text>
+<text x="200" y="18" fill="#5a7085">volgende generatie</text>
+<circle cx="175" cy="45" r="8" fill="#8a5a2f"/><circle cx="200" cy="45" r="8" fill="#8a5a2f"/><circle cx="225" cy="45" r="8" fill="#8a5a2f"/><circle cx="250" cy="45" r="8" fill="#c9b48a"/>
+<text x="160" y="90" text-anchor="middle" fill="#3a6b52">de best passende variant komt vaker voor</text>
+</g><defs><marker id="p6s" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0 0l6 3-6 3z" fill="#5a7085"/></marker></defs>
+</svg><div class="sam-figcap">Uit de variatie selecteert de omgeving; de best passende variant wordt talrijker</div></div>
+<div class="sam-onthoud"><strong>Onthoud:</strong> variatie plus selectie laat de populatie veranderen.</div>
+</div>
+<div class="sam-chapter">
+<div class="sam-ch-title"><span class="sam-ch-n">2</span> Populatie, niet individu, en geen doel</div>
+<p>Twee valkuilen. Ten eerste: niet het <strong>individu</strong> past zich tijdens zijn leven aan, maar de <strong>populatie</strong> verandert over generaties. Ten tweede: evolutie is <strong>niet doelgericht</strong>. De variatie is er al door toeval; de omgeving <strong>selecteert</strong> daaruit. Een dier verandert dus niet met opzet "om te" overleven.</p>
+<div class="sam-figure"><svg viewBox="0 0 320 110" width="100%" role="img" aria-label="Niet het individu maar de populatie evolueert, en niet doelgericht">
+<g font-family="sans-serif" font-size="9" text-anchor="middle">
+<circle cx="70" cy="50" r="20" fill="#c98a5f" opacity="0.4"/><text x="70" y="53" fill="#8a5a2f">individu</text><path d="M46 74l48 -48" stroke="#c96a6a" stroke-width="3"/><text x="70" y="96" fill="#8f3f3f">niet dit</text>
+<rect x="150" y="30" width="150" height="42" rx="10" fill="#e7efe9" stroke="#4ea36b"/><text x="225" y="46" fill="#2f7d4f">populatie</text><text x="225" y="62" fill="#3a6b52">verandert over generaties</text>
+</g></svg><div class="sam-figcap">De populatie evolueert over generaties, niet het losse individu tijdens zijn leven</div></div>
+<div class="sam-onthoud"><strong>Onthoud:</strong> populaties evolueren, niet individuen; en zonder doel.</div>
+</div>
+<div class="sam-chapter">
+<div class="sam-ch-title"><span class="sam-ch-n">3</span> Soortvorming</div>
+<p>Als een populatie in twee groepen wordt <strong>gescheiden</strong>, bijvoorbeeld door een zee, kunnen ze zich niet meer met elkaar voortplanten. Elke groep <strong>evolueert apart</strong>, met eigen mutaties en een eigen omgeving. Na veel generaties kunnen ze zo verschillen dat het <strong>aparte soorten</strong> zijn: soortvorming.</p>
+<div class="sam-figure"><svg viewBox="0 0 320 110" width="100%" role="img" aria-label="Een gescheiden populatie evolueert apart tot twee nieuwe soorten">
+<g font-family="sans-serif" font-size="9" text-anchor="middle">
+<circle cx="50" cy="55" r="16" fill="#8fb0c9"/><text x="50" y="58" fill="#22485f">één</text>
+<path d="M70 45q40 -20 70 -6" stroke="#5a7085" stroke-width="2" fill="none" marker-end="url(#p6a)"/>
+<path d="M70 65q40 20 70 6" stroke="#5a7085" stroke-width="2" fill="none" marker-end="url(#p6a)"/>
+<rect x="150" y="6" width="16" height="98" fill="#3f8fc9" opacity="0.3"/><text x="158" y="102" fill="#2e6d8a">zee</text>
+<circle cx="240" cy="34" r="16" fill="#4ea36b"/><text x="240" y="37" fill="#fff">soort A</text>
+<circle cx="240" cy="80" r="16" fill="#c98a5f"/><text x="240" y="83" fill="#fff">soort B</text>
+</g><defs><marker id="p6a" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0 0l6 3-6 3z" fill="#5a7085"/></marker></defs>
+</svg><div class="sam-figcap">Gescheiden groepen evolueren apart en kunnen twee nieuwe soorten worden</div></div>
+<div class="sam-onthoud"><strong>Onthoud:</strong> gescheiden populaties evolueren apart tot nieuwe soorten.</div>
+</div>`,
 'havo_bi_M4':`<div class="sam-intro">Planten <strong>maken hun eigen voedsel</strong>. Met <strong>fotosynthese</strong> bouwen ze glucose op uit CO2 en water, met <strong>licht</strong> als energiebron. Alle cellen <strong>verbranden</strong> die glucose weer met zuurstof (<strong>celademhaling</strong>) om er energie uit te halen. Hieronder eerst een begrippenlijst, daarna drie korte hoofdstukjes met beeld.</div>
 <table class="sam-table"><thead><tr><th>Begrip</th><th>Kort</th></tr></thead><tbody>
 <tr><td><strong>Fotosynthese</strong></td><td>glucose maken uit CO2 + water met licht (in de bladgroenkorrel)</td></tr>
