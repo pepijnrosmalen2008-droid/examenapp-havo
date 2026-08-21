@@ -1317,7 +1317,9 @@ html.dark .qb{background:#2e3550}
 .sim-info-num{font-size:24px;font-weight:900;color:#818cf8;font-family:var(--font-head)}
 .sim-info-lbl{font-size:10px;color:var(--mu);font-weight:700;text-transform:uppercase;letter-spacing:.6px;margin-top:3px}
 /* Leerpad entry card on detail screen */
-.lp-ec{position:relative;overflow:hidden;border-radius:18px;padding:18px 18px 14px;margin-bottom:16px;cursor:pointer;border:1.5px solid rgba(var(--or-rgb),.28);background:linear-gradient(135deg,var(--cd-bg2),var(--cd-bg1));transition:border-color .22s,box-shadow .22s,transform .22s}
+/* Leerpad-instapkaart tijdelijk verborgen (weinig toegevoegde waarde voor nu). */
+.lp-ec{display:none!important}
+.lp-ec.__show{position:relative;overflow:hidden;border-radius:18px;padding:18px 18px 14px;margin-bottom:16px;cursor:pointer;border:1.5px solid rgba(var(--or-rgb),.28);background:linear-gradient(135deg,var(--cd-bg2),var(--cd-bg1));transition:border-color .22s,box-shadow .22s,transform .22s}
 .lp-ec:hover{border-color:rgba(var(--or-rgb),.55);transform:translateY(-2px);box-shadow:0 8px 32px rgba(var(--or-rgb),.18),0 2px 8px rgba(0,0,0,.12)}
 .lp-ec-glow{position:absolute;top:-60px;right:-40px;width:240px;height:240px;background:radial-gradient(circle,rgba(var(--or-rgb),.18) 0%,transparent 65%);pointer-events:none;transition:opacity .3s}
 .lp-ec:hover .lp-ec-glow{opacity:1.5}
@@ -2784,7 +2786,7 @@ html.dark .calc-btn{background:#2e3550}
 
   /* ── VAK DETAIL EXTRA ───────────────────────── */
   /* Detail tip verbergen (gebruiker snapt het al snel) */
-  #sc-detail .detail-tip{display:none}
+  #sc-detail .detail-tip{padding:10px 13px;font-size:12.5px;margin-bottom:10px}
   /* Leerpad entry card compacter */
   .lp-ec{padding:13px 15px;border-radius:14px;margin-bottom:8px}
   .lp-ec-title{font-size:13px}

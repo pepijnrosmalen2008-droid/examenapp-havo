@@ -26,21 +26,10 @@ function openVak(id,_noHash){
   if(_art)_art.innerHTML=`<svg viewBox="0 0 24 24">${_icoSvg}</svg>`;
   document.getElementById('ddesc').textContent=ST.vak.beschrijving;
   document.getElementById('dce').innerHTML=ST.vak.ceInfo;
-  // Mobiel: lange CE-tekst inklapbaar maken zodat de bovenkant niet overvol is.
+  // CE-info altijd volledig tonen (geen "meer"-inklap): korter en duidelijker,
+  // zonder dat de gebruiker moet klikken. Compacte styling regelt de hoogte.
   const _ceBox=document.querySelector('#sc-detail .ce');
-  if(_ceBox){
-    _ceBox.classList.remove('ce-open','ce-clamped');_ceBox.onclick=null;
-    if(window.innerWidth<=640){
-      _ceBox.classList.add('ce-clamped');
-      requestAnimationFrame(()=>{
-        if(_ceBox.scrollHeight<=_ceBox.clientHeight+2){
-          _ceBox.classList.remove('ce-clamped'); // past al, geen inklap nodig
-        } else {
-          _ceBox.onclick=()=>_ceBox.classList.toggle('ce-open');
-        }
-      });
-    }
-  }
+  if(_ceBox){ _ceBox.classList.remove('ce-open','ce-clamped'); _ceBox.onclick=null; }
   const _bcVak=document.getElementById('det-bc-vak');
   if(_bcVak)_bcVak.textContent=ST.vak.naam;
   // Remove previously injected exam-meta + yt-card + grade-panel + ce-archief-card (avoid stacking on revisit)
