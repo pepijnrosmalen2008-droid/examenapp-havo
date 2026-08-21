@@ -2353,14 +2353,14 @@ html.dark .calc-btn{background:#2e3550}
 .exam-meta{display:flex;gap:10px;flex-wrap:wrap;margin-top:14px}
 .em-chip{font-size:12px;font-weight:600;padding:6px 14px;border-radius:20px;background:var(--bg2);color:var(--mu);display:inline-flex;align-items:center;gap:6px}
 .em-chip.em-date{background:var(--orl);color:var(--or)}
-.yt-card{display:inline-flex;align-items:center;gap:14px;padding:13px 18px;border-radius:14px;background:rgba(255,0,0,.055);border:1px solid rgba(255,0,0,.13);margin-top:16px;text-decoration:none;transition:all .22s cubic-bezier(.34,1.4,.64,1);max-width:100%}
-.yt-card:hover{background:rgba(255,0,0,.1);border-color:rgba(255,0,0,.28);transform:translateY(-2px);box-shadow:0 6px 24px rgba(255,0,0,.1)}
-.yt-icon{width:40px;height:40px;border-radius:10px;background:#FF0000;display:flex;align-items:center;justify-content:center;flex-shrink:0;box-shadow:0 3px 10px rgba(255,0,0,.3)}
-.yt-icon svg{width:22px;height:22px;fill:#fff}
-.yt-info{display:flex;flex-direction:column;gap:2px}
-.yt-label{font-size:10px;font-weight:700;color:rgba(255,0,0,.6);text-transform:uppercase;letter-spacing:.6px}
-.yt-name{font-size:14px;font-weight:700;color:var(--dk)}
-.yt-arr{margin-left:8px;color:rgba(255,0,0,.45);font-size:18px;flex-shrink:0;transition:transform .2s}
+.yt-card{display:flex;align-items:center;gap:10px;padding:9px 12px;border-radius:11px;background:rgba(255,0,0,.05);border:1px solid rgba(255,0,0,.13);margin-top:10px;text-decoration:none;transition:all .22s cubic-bezier(.34,1.4,.64,1);width:100%}
+.yt-card:hover{background:rgba(255,0,0,.1);border-color:rgba(255,0,0,.28)}
+.yt-icon{width:28px;height:28px;border-radius:8px;background:#FF0000;display:flex;align-items:center;justify-content:center;flex-shrink:0}
+.yt-icon svg{width:16px;height:16px;fill:#fff}
+.yt-info{display:flex;align-items:baseline;gap:6px;min-width:0;flex-wrap:wrap}
+.yt-label{font-size:9.5px;font-weight:700;color:rgba(255,0,0,.6);text-transform:uppercase;letter-spacing:.4px}
+.yt-name{font-size:13px;font-weight:700;color:var(--dk)}
+.yt-arr{margin-left:auto;color:rgba(255,0,0,.45);font-size:16px;flex-shrink:0;transition:transform .2s}
 .yt-card:hover .yt-arr{transform:translateX(3px)}
 
 /* ── MOBILE BOTTOM NAV ────────────────────────── */
