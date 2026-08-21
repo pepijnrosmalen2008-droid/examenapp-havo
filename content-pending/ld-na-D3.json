@@ -1,0 +1,564 @@
+{
+ "id": "D3",
+ "naam": "Serie- en parallelschakeling",
+ "beschrijving": "Gouden-standaardmodule na.D.3: het verschil begrijpen tussen serie- en parallelschakelingen en weten hoe stroom, spanning en weerstand zich in elke schakeling gedragen.",
+ "ceStatus": "ce",
+ "onderwerpen": [
+  "Serie versus parallel",
+  "Stroom in serie en parallel",
+  "Spanning in serie en parallel",
+  "Totale weerstand",
+  "Eén onderdeel kapot",
+  "Schakelaars plaatsen"
+ ],
+ "sam": "Onderdelen kun je op twee manieren schakelen. In een serieschakeling staan ze achter elkaar in één stroomweg. Daardoor is de stroom overal in de kring even groot, terwijl de bronspanning zich verdeelt over de onderdelen: samen zijn de deelspanningen de bronspanning. Gaat er één onderdeel kapot, dan is de enige weg onderbroken en gaat alles uit. De totale weerstand wordt in serie groter, want je telt de weerstanden op. In een parallelschakeling heeft elk onderdeel een eigen tak. Over elke tak staat dezelfde spanning, namelijk de volle bronspanning, en de hoofdstroom splitst zich: de takstromen samen zijn de hoofdstroom. Gaat er één tak kapot, dan blijven de andere gewoon werken. De totale weerstand wordt in parallel kleiner, want er komen wegen bij voor de stroom. Daarom zijn de lampen in huis parallel geschakeld: elke lamp krijgt de volle spanning en is los te bedienen met een schakelaar in de eigen tak. Een schakelaar in de hoofdleiding zet juist alles tegelijk uit. Voeg je apparaten parallel toe, dan groeit de hoofdstroom; bij te veel apparaten springt de zekering.",
+ "begrippen": [
+  {
+   "t": "Serieschakeling",
+   "d": "onderdelen achter elkaar in één stroomweg, zonder aftakkingen"
+  },
+  {
+   "t": "Parallelschakeling",
+   "d": "onderdelen elk in een eigen tak, zodat de stroom zich splitst"
+  },
+  {
+   "t": "Hoofdstroom",
+   "d": "de stroom in de hoofdleiding, vóór of na de splitsing van de takken"
+  },
+  {
+   "t": "Takstroom",
+   "d": "de stroom die door één afzonderlijke tak van een parallelschakeling loopt"
+  },
+  {
+   "t": "Deelspanning",
+   "d": "de spanning over één onderdeel in een serieschakeling"
+  },
+  {
+   "t": "Bronspanning",
+   "d": "de totale spanning die de bron levert aan de hele schakeling"
+  },
+  {
+   "t": "Stroom in serie",
+   "d": "in een serieschakeling is de stroom overal in de kring even groot"
+  },
+  {
+   "t": "Spanning in serie",
+   "d": "de bronspanning verdeelt zich over de onderdelen; samen de bronspanning"
+  },
+  {
+   "t": "Spanning in parallel",
+   "d": "over elke tak staat dezelfde spanning: de volle bronspanning"
+  },
+  {
+   "t": "Stroom in parallel",
+   "d": "de hoofdstroom splitst; de takstromen samen zijn de hoofdstroom"
+  },
+  {
+   "t": "Totale weerstand serie",
+   "d": "in serie tel je de weerstanden op, dus de totale weerstand wordt groter"
+  },
+  {
+   "t": "Totale weerstand parallel",
+   "d": "in parallel komen er wegen bij, dus de totale weerstand wordt kleiner"
+  }
+ ],
+ "sv": [
+  {
+   "v": "Wat is een serieschakeling?",
+   "o": [
+    "Onderdelen achter elkaar in één kring",
+    "Onderdelen die elk hun eigen aparte tak naar de bron toe hebben",
+    "Onderdelen die helemaal niet met de spanningsbron verbonden zijn",
+    "Onderdelen die los naast de stroomkring op tafel liggen"
+   ],
+   "c": 0,
+   "d": 1,
+   "u": "In serie staan de onderdelen achter elkaar, in één enkele stroomweg.",
+   "uo": [
+    "Klopt: serie is achter elkaar in één kring.",
+    "Aparte takken horen bij parallel.",
+    "In serie zijn ze wel verbonden met de bron.",
+    "Los ernaast is geen schakeling."
+   ],
+   "uh": "Serie = achter elkaar, één weg."
+  },
+  {
+   "v": "Wat is een parallelschakeling?",
+   "o": [
+    "Onderdelen die allemaal achter elkaar in één enkele kring staan",
+    "Onderdelen elk in een eigen tak",
+    "Onderdelen die zonder enige draad met elkaar verbonden zijn",
+    "Onderdelen die alleen op de min-pool van de bron zitten"
+   ],
+   "c": 1,
+   "d": 1,
+   "u": "In parallel heeft elk onderdeel zijn eigen tak; de stroom splitst zich.",
+   "uo": [
+    "Achter elkaar hoort bij serie.",
+    "Klopt: parallel is elk in een eigen tak.",
+    "Parallel heeft juist wel draden.",
+    "Ze zitten op beide polen, niet alleen de min."
+   ],
+   "uh": "Parallel = aparte takken."
+  },
+  {
+   "v": "In een serieschakeling: wat geldt voor de stroom?",
+   "o": [
+    "In elk onderdeel precies de helft van de vorige waarde",
+    "Het grootst vlak bij de bron en verderop steeds kleiner",
+    "Overal even groot",
+    "In elk onderdeel weer een compleet andere willekeurige waarde"
+   ],
+   "c": 2,
+   "d": 2,
+   "u": "In serie is er één weg, dus de stroom is overal in de kring gelijk.",
+   "uo": [
+    "De stroom halveert niet per onderdeel.",
+    "De stroom hangt niet af van de afstand tot de bron.",
+    "Klopt: in serie is de stroom overal gelijk.",
+    "De stroom is niet willekeurig verschillend."
+   ],
+   "uh": "Serie: stroom overal gelijk."
+  },
+  {
+   "v": "In een serieschakeling: wat geldt voor de spanning?",
+   "o": [
+    "Over elk onderdeel precies dezelfde volledige bronspanning",
+    "Alleen over het eerste onderdeel en verder nergens meer",
+    "Nergens aanwezig zodra er meerdere onderdelen in staan",
+    "Verdeeld over de onderdelen"
+   ],
+   "c": 3,
+   "d": 2,
+   "u": "In serie verdeelt de bronspanning zich over de onderdelen; samen is dat de bronspanning.",
+   "uo": [
+    "Niet elk onderdeel krijgt de volle bronspanning.",
+    "Niet alleen het eerste onderdeel krijgt spanning.",
+    "Er staat wel degelijk spanning over de onderdelen.",
+    "Klopt: de spanning verdeelt zich over de onderdelen."
+   ],
+   "uh": "Serie: bronspanning verdeelt zich."
+  },
+  {
+   "v": "In een parallelschakeling: wat geldt voor de spanning over elke tak?",
+   "o": [
+    "Overal dezelfde (de bronspanning)",
+    "In elke tak precies de helft van de vorige tak zijn spanning",
+    "Alleen in de eerste tak aanwezig en in de rest helemaal niet",
+    "In elke tak weer een andere willekeurige onvoorspelbare waarde"
+   ],
+   "c": 0,
+   "d": 2,
+   "u": "In parallel staat over elke tak dezelfde spanning: de bronspanning.",
+   "uo": [
+    "Klopt: elke tak krijgt de volle bronspanning.",
+    "De spanning halveert niet per tak.",
+    "Elke tak krijgt spanning, niet alleen de eerste.",
+    "De spanning is niet willekeurig verschillend."
+   ],
+   "uh": "Parallel: elke tak dezelfde spanning."
+  },
+  {
+   "v": "In een parallelschakeling: wat geldt voor de stroom?",
+   "o": [
+    "Die is in elke tak precies even groot als de hoofdstroom",
+    "Die splitst zich over de takken",
+    "Die loopt alleen door de eerste tak en verder nergens",
+    "Die verdwijnt zodra er meer dan één tak aanwezig is"
+   ],
+   "c": 1,
+   "d": 2,
+   "u": "In parallel splitst de hoofdstroom zich; samen zijn de takstromen de hoofdstroom.",
+   "uo": [
+    "Elke tak krijgt maar een deel, niet de hele hoofdstroom.",
+    "Klopt: de stroom splitst zich over de takken.",
+    "De stroom loopt door alle takken.",
+    "De stroom verdwijnt niet."
+   ],
+   "uh": "Parallel: hoofdstroom splitst zich."
+  },
+  {
+   "v": "Twee lampjes in serie: één gaat kapot. Wat gebeurt met het andere?",
+   "o": [
+    "Dat blijft gewoon branden alsof er niets is gebeurd",
+    "Dat gaat juist een stuk feller branden dan daarvoor",
+    "Dat gaat ook uit",
+    "Dat begint langzaam aan en uit te knipperen zonder te stoppen"
+   ],
+   "c": 2,
+   "d": 2,
+   "u": "In serie is er één weg; een kapot lampje onderbreekt de kring, dus alles gaat uit.",
+   "uo": [
+    "In serie blijft het andere niet branden.",
+    "Het gaat niet feller, het gaat uit.",
+    "Klopt: de kring is onderbroken, dus beide uit.",
+    "Het knippert niet; de kring is dicht of open."
+   ],
+   "uh": "Serie kapot = alles uit."
+  },
+  {
+   "v": "Twee lampjes parallel: één gaat kapot. Wat gebeurt met het andere?",
+   "o": [
+    "Dat gaat meteen ook uit, net als bij een serieschakeling",
+    "Dat gaat feller branden omdat de hele stroom er nu doorheen moet",
+    "Dat begint uit zichzelf te knipperen zonder duidelijke reden",
+    "Dat blijft branden"
+   ],
+   "c": 3,
+   "d": 2,
+   "u": "In parallel heeft elk lampje een eigen tak; als er één stuk is, blijft de andere werken.",
+   "uo": [
+    "In parallel gaat het andere niet mee uit.",
+    "De spanning blijft gelijk, dus niet feller.",
+    "Het knippert niet zomaar.",
+    "Klopt: de andere tak werkt gewoon door."
+   ],
+   "uh": "Parallel kapot = rest blijft branden."
+  },
+  {
+   "v": "Waarom staan de lampen in huis parallel geschakeld?",
+   "o": [
+    "Zodat ze los te bedienen zijn",
+    "Zodat één kapotte lamp meteen alle andere lampen uitschakelt",
+    "Zodat er veel minder koperdraad nodig is dan bij serie",
+    "Zodat elke lamp maar een klein stukje van de spanning krijgt"
+   ],
+   "c": 0,
+   "d": 3,
+   "u": "Parallel: elke lamp krijgt de volle spanning en werkt los van de andere.",
+   "uo": [
+    "Klopt: los te bedienen en onafhankelijk van elkaar.",
+    "Bij parallel gaan de andere juist niet mee uit.",
+    "Parallel kost juist meer draad.",
+    "Elke lamp krijgt juist de volle spanning."
+   ],
+   "uh": "Huis = parallel: elke lamp los + volle spanning."
+  },
+  {
+   "v": "Serieschakeling: bron 6 V, twee gelijke lampjes. Hoeveel volt staat over elk lampje?",
+   "o": [
+    "6 V, want elk lampje krijgt gewoon de volledige bronspanning",
+    "3 V",
+    "12 V, want de spanningen van de twee lampjes tellen bij de bron op",
+    "0 V, want in serie staat er geen spanning over de lampjes"
+   ],
+   "c": 1,
+   "d": 2,
+   "u": "In serie verdeelt 6 V zich over twee gelijke lampjes: 3 V per lampje.",
+   "uo": [
+    "Niet elk lampje krijgt de volle 6 V.",
+    "Klopt: 6 V verdeeld over twee = 3 V elk.",
+    "De spanning wordt niet groter dan de bron.",
+    "Er staat wel spanning over de lampjes."
+   ],
+   "uh": "Serie: bronspanning eerlijk verdelen."
+  },
+  {
+   "v": "Parallelschakeling: bron 6 V, twee takken. Hoeveel volt staat over elke tak?",
+   "o": [
+    "3 V, want de bronspanning wordt over de twee takken verdeeld",
+    "12 V, want de spanningen van de twee takken tellen bij elkaar op",
+    "6 V",
+    "0 V, want bij parallel staat er geen spanning over de takken"
+   ],
+   "c": 2,
+   "d": 2,
+   "u": "In parallel staat over elke tak de volle bronspanning: 6 V.",
+   "uo": [
+    "De spanning verdeelt zich niet bij parallel.",
+    "De spanning wordt niet groter dan de bron.",
+    "Klopt: elke tak krijgt de volle 6 V.",
+    "Er staat wel spanning over de takken."
+   ],
+   "uh": "Parallel: elke tak = volle bronspanning."
+  },
+  {
+   "v": "Serie: hoofdstroom 0,5 A door de kring. Hoeveel stroom door elk onderdeel?",
+   "o": [
+    "0,25 A, want de stroom wordt over de twee onderdelen verdeeld",
+    "1 A, want de stroom van beide onderdelen telt bij elkaar op",
+    "0 A, want in serie loopt er geen stroom door de onderdelen",
+    "0,5 A"
+   ],
+   "c": 3,
+   "d": 2,
+   "u": "In serie is de stroom overal gelijk: door elk onderdeel loopt 0,5 A.",
+   "uo": [
+    "De stroom splitst niet in serie.",
+    "De stroom telt niet op in serie.",
+    "Er loopt wel stroom door.",
+    "Klopt: overal 0,5 A in serie."
+   ],
+   "uh": "Serie: overal dezelfde stroom."
+  },
+  {
+   "v": "Parallel: de takken voeren 0,3 A en 0,2 A. Hoe groot is de hoofdstroom?",
+   "o": [
+    "0,5 A",
+    "0,1 A, gevonden door de kleinste takstroom van de grootste af te trekken",
+    "0,06 A, gevonden door de twee takstromen met elkaar te vermenigvuldigen",
+    "0,25 A, gevonden door het gemiddelde van de twee takstromen te nemen"
+   ],
+   "c": 0,
+   "d": 3,
+   "u": "In parallel is de hoofdstroom de som van de takstromen: 0,3 + 0,2 = 0,5 A.",
+   "uo": [
+    "Klopt: takstromen optellen: 0,5 A.",
+    "Je telt op, niet aftrekken.",
+    "Je telt op, niet vermenigvuldigen.",
+    "Het gemiddelde is niet de hoofdstroom."
+   ],
+   "uh": "Parallel: hoofdstroom = som van takstromen."
+  },
+  {
+   "v": "Wat gebeurt met de totale weerstand als je onderdelen in serie zet?",
+   "o": [
+    "Die wordt juist kleiner dan de kleinste losse weerstand",
+    "Die wordt groter",
+    "Die blijft precies gelijk aan één losse weerstand",
+    "Die wordt onmiddellijk nul zodra je ze aan elkaar knoopt"
+   ],
+   "c": 1,
+   "d": 3,
+   "u": "In serie tel je de weerstanden op, dus de totale weerstand wordt groter.",
+   "uo": [
+    "In serie wordt R niet kleiner.",
+    "Klopt: in serie tel je op -> groter.",
+    "De totale R blijft niet gelijk.",
+    "De totale R wordt niet nul."
+   ],
+   "uh": "Serie: R optellen -> groter."
+  },
+  {
+   "v": "Wat gebeurt met de totale weerstand als je onderdelen parallel zet?",
+   "o": [
+    "Die wordt groter dan de grootste losse weerstand samen",
+    "Die blijft precies gelijk aan één losse weerstand alleen",
+    "Die wordt kleiner",
+    "Die springt naar oneindig zodra je een tweede tak toevoegt"
+   ],
+   "c": 2,
+   "d": 3,
+   "u": "In parallel komen er wegen bij voor de stroom, dus de totale weerstand wordt kleiner.",
+   "uo": [
+    "Parallel maakt R juist kleiner, niet groter.",
+    "De totale R blijft niet gelijk.",
+    "Klopt: parallel geeft een kleinere totale weerstand.",
+    "De weerstand wordt niet oneindig."
+   ],
+   "uh": "Parallel: meer wegen -> kleinere R."
+  },
+  {
+   "v": "Waarom gaat de zekering eerder stuk als je te veel apparaten parallel aanzet?",
+   "o": [
+    "De spanning van het net wordt veel te hoog voor de zekering",
+    "Elk apparaat krijgt minder stroom, wat de zekering doet smelten",
+    "De totale weerstand wordt te groot voor de bekabeling",
+    "De hoofdstroom wordt te groot"
+   ],
+   "c": 3,
+   "d": 3,
+   "u": "Elk extra apparaat parallel voegt takstroom toe; de hoofdstroom loopt op tot de zekering springt.",
+   "uo": [
+    "De netspanning blijft ongeveer gelijk.",
+    "De apparaten krijgen niet minder stroom.",
+    "De totale weerstand wordt juist kleiner.",
+    "Klopt: de hoofdstroom wordt te groot."
+   ],
+   "uh": "Meer parallel -> grotere hoofdstroom -> zekering."
+  },
+  {
+   "v": "Een schakelaar in de hoofdleiding (voor de splitsing) doet wat met parallelle lampen?",
+   "o": [
+    "Zet ze allemaal tegelijk uit",
+    "Zet alleen het eerste lampje uit en laat de rest branden",
+    "Zet de lampen juist allemaal tegelijk feller aan",
+    "Heeft helemaal geen effect op de parallelle lampen"
+   ],
+   "c": 0,
+   "d": 3,
+   "u": "Een schakelaar voor de splitsing onderbreekt de hoofdstroom, dus alle takken gaan uit.",
+   "uo": [
+    "Klopt: hij schakelt alle takken tegelijk uit.",
+    "Niet alleen het eerste lampje gaat uit.",
+    "Uitschakelen maakt ze niet feller.",
+    "Hij heeft juist effect op alles."
+   ],
+   "uh": "Schakelaar in hoofdleiding = alles uit."
+  },
+  {
+   "v": "Waar zet je een schakelaar om maar één parallelle lamp te bedienen?",
+   "o": [
+    "In de hoofdleiding, vóór de splitsing van de takken",
+    "In die tak zelf",
+    "Parallel over de spanningsbron aan het begin",
+    "Los naast de schakeling zonder verdere verbinding"
+   ],
+   "c": 1,
+   "d": 3,
+   "u": "Een schakelaar in één tak schakelt alleen die tak, zonder de andere te storen.",
+   "uo": [
+    "In de hoofdleiding schakel je alles.",
+    "Klopt: in de tak zelf schakel je alleen die lamp.",
+    "Over de bron schakel je de hele kring.",
+    "Los aangesloten schakelt hij niets."
+   ],
+   "uh": "Schakelaar in de tak = alleen die lamp."
+  },
+  {
+   "v": "Twee lampjes in serie branden zwakker dan één alleen op dezelfde bron. Waarom?",
+   "o": [
+    "Elk lampje krijgt juist meer spanning dan in zijn eentje",
+    "De totale weerstand wordt kleiner, dus loopt er meer stroom",
+    "Elk krijgt minder spanning",
+    "De bron levert bij twee lampjes ineens veel minder volt"
+   ],
+   "c": 2,
+   "d": 3,
+   "u": "In serie verdeelt de spanning zich, dus elk lampje krijgt minder en brandt zwakker.",
+   "uo": [
+    "Elk krijgt juist minder, niet meer spanning.",
+    "De totale weerstand wordt groter, niet kleiner.",
+    "Klopt: elk lampje krijgt minder spanning.",
+    "De bronspanning blijft gelijk."
+   ],
+   "uh": "Serie: spanning verdeeld -> zwakker."
+  },
+  {
+   "v": "Twee lampjes parallel branden even fel als één alleen. Waarom?",
+   "o": [
+    "Elk lampje krijgt maar de helft van de bronspanning",
+    "De hoofdstroom wordt kleiner naarmate je lampen toevoegt",
+    "De bron levert bij twee lampjes automatisch dubbele spanning",
+    "Elk krijgt de volle spanning"
+   ],
+   "c": 3,
+   "d": 3,
+   "u": "In parallel staat over elk lampje de volle bronspanning, dus even fel als één alleen.",
+   "uo": [
+    "Elk krijgt de volle spanning, niet de helft.",
+    "De hoofdstroom wordt juist groter.",
+    "De bronspanning verdubbelt niet.",
+    "Klopt: elk lampje krijgt de volle spanning."
+   ],
+   "uh": "Parallel: volle spanning -> even fel."
+  },
+  {
+   "v": "Je meet in een tak van een parallelschakeling. Waar zet je de ampèremeter?",
+   "o": [
+    "In serie in die tak",
+    "Parallel over die tak, precies zoals je een voltmeter plaatst",
+    "In de hoofdleiding, om zo de hele hoofdstroom te meten",
+    "Los naast de tak zonder hem in de kring op te nemen"
+   ],
+   "c": 0,
+   "d": 3,
+   "u": "Een ampèremeter zet je altijd in serie; in de tak meet hij de takstroom.",
+   "uo": [
+    "Klopt: in serie in die tak.",
+    "Parallel hoort bij de voltmeter.",
+    "In de hoofdleiding meet je de hoofdstroom, niet de takstroom.",
+    "Los aangesloten meet hij niets."
+   ],
+   "uh": "Takstroom = ampèremeter in serie in de tak."
+  },
+  {
+   "v": "Serie: bron 9 V, lampjes van 2 V, 3 V en 4 V. Klopt dat samen?",
+   "o": [
+    "Nee, samen is dat maar 3 V, want je neemt het gemiddelde",
+    "Ja, samen 9 V",
+    "Nee, elk lampje krijgt gewoon de volle 9 V van de bron",
+    "Nee, de spanningen tellen op tot 18 V in plaats van 9 V"
+   ],
+   "c": 1,
+   "d": 3,
+   "u": "In serie is de som van de deelspanningen de bronspanning: 2 + 3 + 4 = 9 V.",
+   "uo": [
+    "Je telt op, je neemt geen gemiddelde.",
+    "Klopt: 2 + 3 + 4 = 9 V, gelijk aan de bron.",
+    "Niet elk lampje krijgt de volle 9 V.",
+    "De som is 9 V, geen 18 V."
+   ],
+   "uh": "Serie: deelspanningen tellen op tot bronspanning."
+  },
+  {
+   "v": "Waarom lopen kerstlampjes-in-serie soms allemaal uit als er één stuk is?",
+   "o": [
+    "De andere lampjes krijgen ineens veel te veel spanning",
+    "De hoofdstroom wordt te groot en blaast de rest op",
+    "De kring is onderbroken",
+    "De bron schakelt zichzelf automatisch helemaal uit"
+   ],
+   "c": 2,
+   "d": 3,
+   "u": "Serie heeft één weg; een kapot lampje onderbreekt die weg, dus alles gaat uit.",
+   "uo": [
+    "De andere krijgen geen extra spanning; er loopt niets.",
+    "De hoofdstroom wordt juist nul.",
+    "Klopt: de enige stroomweg is onderbroken.",
+    "De bron schakelt niet zichzelf uit."
+   ],
+   "uh": "Serie onderbroken = alles uit."
+  },
+  {
+   "v": "Je voegt een lamp toe aan een parallelschakeling. Wat gebeurt met de hoofdstroom?",
+   "o": [
+    "Die wordt kleiner omdat de spanning zich verder verdeelt",
+    "Die blijft precies gelijk, een extra tak verandert niets",
+    "Die wordt nul zodra er een derde tak wordt aangesloten",
+    "Die wordt groter"
+   ],
+   "c": 3,
+   "d": 3,
+   "u": "Een extra tak voegt een extra takstroom toe, dus de hoofdstroom neemt toe.",
+   "uo": [
+    "De spanning verdeelt zich niet bij parallel.",
+    "De hoofdstroom verandert wel.",
+    "De hoofdstroom wordt niet nul.",
+    "Klopt: extra tak geeft extra stroom -> hoofdstroom groter."
+   ],
+   "uh": "Extra parallelle tak -> grotere hoofdstroom."
+  },
+  {
+   "v": "Hoe herken je in een schema een parallelschakeling?",
+   "o": [
+    "De stroom kan zich splitsen bij een knooppunt",
+    "Alle onderdelen liggen keurig achter elkaar in één lus",
+    "Er is maar één mogelijke weg voor de stroom aanwezig",
+    "Er zijn helemaal geen draden tussen de onderdelen te zien"
+   ],
+   "c": 0,
+   "d": 2,
+   "u": "Bij parallel splitst de draad zich in knooppunten; er zijn meerdere wegen naast elkaar.",
+   "uo": [
+    "Klopt: aftakkingen bij knooppunten wijzen op parallel.",
+    "Alles achter elkaar in één lus is juist serie.",
+    "Eén weg is juist serie.",
+    "Er zijn wel draden bij parallel."
+   ],
+   "uh": "Parallel = aftakkingen/knooppunten."
+  }
+ ],
+ "oe": [
+  {
+   "vraag": "Leg uit hoe stroom en spanning zich gedragen in een serieschakeling. Behandel beide apart.",
+   "antwoord": "In een serieschakeling is er maar één stroomweg. Daardoor is de stroom overal in de kring even groot: door elk onderdeel loopt dezelfde stroom. De spanning gedraagt zich anders: de bronspanning verdeelt zich over de onderdelen. Elk onderdeel krijgt een deel van de spanning, en samen zijn die deelspanningen precies gelijk aan de bronspanning."
+  },
+  {
+   "vraag": "Leg uit hoe stroom en spanning zich gedragen in een parallelschakeling. Behandel beide apart.",
+   "antwoord": "In een parallelschakeling heeft elk onderdeel een eigen tak. Over elke tak staat dezelfde spanning, namelijk de volle bronspanning. De stroom gedraagt zich anders: de hoofdstroom splitst zich bij de aftakking over de takken. De takstromen samen zijn precies gelijk aan de hoofdstroom."
+  },
+  {
+   "vraag": "Twee lampjes staan in serie. Eén lampje gaat kapot. Leg uit wat er met het andere lampje gebeurt en waarom.",
+   "antwoord": "Het andere lampje gaat ook uit. In een serieschakeling is er maar één stroomweg. Als een lampje kapotgaat, is die weg onderbroken, en dan kan er nergens meer stroom lopen. Omdat er geen stroom meer is, gaat ook het hele andere lampje uit."
+  },
+  {
+   "vraag": "Leg uit waarom de lampen in een huis parallel geschakeld worden en niet in serie.",
+   "antwoord": "De lampen worden parallel geschakeld zodat elke lamp de volle netspanning krijgt en normaal fel brandt. Bovendien kun je elke lamp apart aan- en uitzetten met een eigen schakelaar in die tak, zonder dat de andere lampen mee uitgaan. Als er één lamp kapotgaat, blijven de andere gewoon branden. Bij een serieschakeling zou juist alles tegelijk uitgaan en zou elke lamp maar een deel van de spanning krijgen."
+  },
+  {
+   "vraag": "In een parallelschakeling meet je in de ene tak 0,4 A en in de andere tak 0,6 A. Bereken de hoofdstroom en leg uit hoe je dat doet.",
+   "antwoord": "De hoofdstroom is de som van de takstromen, omdat de hoofdstroom zich bij de splitsing over de takken verdeelt. Je telt de takstromen op: 0,4 + 0,6 = 1,0 A. De hoofdstroom is dus 1,0 ampère."
+  }
+ ]
+}

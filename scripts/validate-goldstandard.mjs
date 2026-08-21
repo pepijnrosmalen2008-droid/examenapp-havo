@@ -29,7 +29,7 @@ const ROOT = path.resolve(path.dirname(new URL(import.meta.url).pathname), '..')
 const read = f => fs.readFileSync(path.join(ROOT, f), 'utf8');
 
 // Modules die de gouden standaard MOETEN halen (uitbreiden bij elke go-live).
-const GOLDEN = ['M1','M2','M3','M4','M5','M6','M7','O1','O2','O3','O4','O5','O6','O7','P1','P2','P3','P4','P5','P6','A1','A2','A3','A4','A5'].map(dom => ({ niveau: 'havo', vak: 'bi', dom })).concat(["C1","C2","C3","C4","C5","C6"].map(dom => ({ niveau: "havo", vak: "na", dom })));
+const GOLDEN = ['M1','M2','M3','M4','M5','M6','M7','O1','O2','O3','O4','O5','O6','O7','P1','P2','P3','P4','P5','P6','A1','A2','A3','A4','A5'].map(dom => ({ niveau: 'havo', vak: 'bi', dom })).concat(["C1","C2","C3","C4","C5","C6","D1","D2","D3","D4","D5","D6"].map(dom => ({ niveau: "havo", vak: "na", dom })));
 const A = process.argv.slice(2);
 const targets = A.length >= 3 ? [{ niveau: A[0], vak: A[1], dom: A[2] }] : GOLDEN;
 

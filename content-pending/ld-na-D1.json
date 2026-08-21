@@ -1,0 +1,564 @@
+{
+ "id": "D1",
+ "naam": "Stroom, spanning en lading",
+ "beschrijving": "Gouden-standaardmodule na.D.1: begrijpen wat elektrische stroom, spanning en lading zijn, in welke eenheden je ze meet en hoe je ze meet met een ampèremeter en voltmeter.",
+ "ceStatus": "ce",
+ "onderwerpen": [
+  "Stroom als bewegende lading",
+  "Stroomsterkte in ampère",
+  "Spanning in volt",
+  "Ampèremeter en voltmeter aansluiten",
+  "Geleiders en isolatoren",
+  "Gelijkstroom en wisselstroom"
+ ],
+ "sam": "Elektrische stroom is bewegende lading: in een metaaldraad zijn dat de vrije elektronen. De stroomsterkte I zegt hoeveel lading er per seconde langskomt en meet je in ampere (A); 1 A is 1 coulomb per seconde. De spanning U is de duw op die lading, de energie per lading, en meet je in volt (V). Een spanningsbron (batterij, stopcontact) levert die duw. In een gesloten kring gaat de lading rond en wordt niet verbruikt; wat wel verbruikt wordt is energie, die een lampje omzet in licht en warmte. De stroomsterkte meet je met een ampèremeter in serie, de spanning met een voltmeter parallel over een onderdeel. Stoffen die stroom goed doorlaten heten geleiders (metalen zoals koper); stoffen die het tegenhouden heten isolatoren (rubber, glas, droog hout). Daarom zit er koper in een draad en kunststof eromheen. Gelijkstroom (batterij) gaat steeds één kant op; wisselstroom (stopcontact) wisselt snel van richting.",
+ "begrippen": [
+  {
+   "t": "Elektrische stroom",
+   "d": "bewegende lading (elektronen) die door een geleider stroomt"
+  },
+  {
+   "t": "Stroomsterkte (I)",
+   "d": "de hoeveelheid lading die per seconde langskomt, in ampère (A)"
+  },
+  {
+   "t": "Spanning (U)",
+   "d": "de duw op de lading, de energie per lading, in volt (V)"
+  },
+  {
+   "t": "Lading",
+   "d": "een basiseigenschap van deeltjes; elektronen zijn negatief geladen"
+  },
+  {
+   "t": "Ampère (A)",
+   "d": "de eenheid van stroomsterkte; 1 A is 1 coulomb per seconde"
+  },
+  {
+   "t": "Volt (V)",
+   "d": "de eenheid van spanning, de duw die de stroom veroorzaakt"
+  },
+  {
+   "t": "Geleider",
+   "d": "een stof die stroom goed doorlaat, zoals koper en andere metalen"
+  },
+  {
+   "t": "Isolator",
+   "d": "een stof die stroom bijna niet doorlaat, zoals rubber, glas en hout"
+  },
+  {
+   "t": "Ampèremeter",
+   "d": "meter voor de stroomsterkte, die je in serie in de kring zet"
+  },
+  {
+   "t": "Voltmeter",
+   "d": "meter voor de spanning, die je parallel over een onderdeel zet"
+  },
+  {
+   "t": "Gelijkstroom",
+   "d": "stroom die steeds dezelfde kant op gaat, zoals uit een batterij"
+  },
+  {
+   "t": "Wisselstroom",
+   "d": "stroom die snel van richting wisselt, zoals uit het stopcontact"
+  }
+ ],
+ "sv": [
+  {
+   "v": "Wat is elektrische stroom?",
+   "o": [
+    "Bewegende lading door een draad",
+    "De hoeveelheid warmte in een draad zonder dat er iets beweegt",
+    "De spanning die de accu levert wanneer er geen draad is aangesloten",
+    "Het aantal draden dat op een lampje is aangesloten in de schakeling"
+   ],
+   "c": 0,
+   "d": 1,
+   "u": "Stroom is lading (elektronen) die door een geleider beweegt.",
+   "uo": [
+    "Klopt: stroom is bewegende lading.",
+    "Warmte is geen stroom; stroom is lading die beweegt.",
+    "Spanning is de duw, niet de stroom zelf.",
+    "Het aantal draden bepaalt de stroom niet."
+   ],
+   "uh": "Stroom = bewegende lading."
+  },
+  {
+   "v": "In welke eenheid meet je elektrische stroom?",
+   "o": [
+    "Volt (V), dezelfde eenheid als waarin je de spanning uitdrukt",
+    "Ampère (A)",
+    "Ohm, de eenheid die hoort bij de weerstand van een draad",
+    "Watt, de eenheid die je gebruikt voor het vermogen"
+   ],
+   "c": 1,
+   "d": 1,
+   "u": "Stroomsterkte I meet je in ampère (A).",
+   "uo": [
+    "Volt hoort bij spanning, niet stroom.",
+    "Klopt: stroom in ampère.",
+    "Ohm hoort bij weerstand.",
+    "Watt hoort bij vermogen."
+   ],
+   "uh": "Stroom -> ampère (A)."
+  },
+  {
+   "v": "Wat is elektrische spanning?",
+   "o": [
+    "De hoeveelheid lading die per seconde door de draad heen gaat stromen",
+    "De weerstand die de draad biedt aan de stroom die erdoor loopt",
+    "De duw die de lading laat stromen",
+    "De warmte die een lampje afgeeft wanneer de stroom eenmaal loopt"
+   ],
+   "c": 2,
+   "d": 1,
+   "u": "Spanning U is de energie per lading; het is de duw die stroom veroorzaakt.",
+   "uo": [
+    "Dat is stroomsterkte, niet spanning.",
+    "Dat is weerstand, niet spanning.",
+    "Klopt: spanning is de duw.",
+    "Warmte is een gevolg, niet de spanning."
+   ],
+   "uh": "Spanning = de duw (bron)."
+  },
+  {
+   "v": "In welke eenheid meet je spanning?",
+   "o": [
+    "Ampère, dezelfde eenheid die hoort bij de sterkte van de stroom",
+    "Ohm, de eenheid die je gebruikt voor de weerstand van een draad",
+    "Joule, de eenheid waarin je een hoeveelheid energie uitdrukt",
+    "Volt (V)"
+   ],
+   "c": 3,
+   "d": 1,
+   "u": "Spanning U meet je in volt (V).",
+   "uo": [
+    "Ampère hoort bij stroom.",
+    "Ohm hoort bij weerstand.",
+    "Joule hoort bij energie.",
+    "Klopt: spanning in volt."
+   ],
+   "uh": "Spanning -> volt (V)."
+  },
+  {
+   "v": "Waarmee meet je de stroomsterkte in een schakeling?",
+   "o": [
+    "Met een ampèremeter",
+    "Met een voltmeter, hetzelfde meetapparaat dat je voor de spanning pakt",
+    "Met een thermometer die de temperatuur van de draad in de gaten houdt",
+    "Met een weegschaal die de massa van het lampje bepaalt"
+   ],
+   "c": 0,
+   "d": 1,
+   "u": "De stroomsterkte meet je met een ampèremeter.",
+   "uo": [
+    "Klopt: ampèremeter meet stroom.",
+    "Een voltmeter meet spanning, geen stroom.",
+    "Een thermometer meet temperatuur.",
+    "Een weegschaal meet massa."
+   ],
+   "uh": "Ampèremeter -> stroom."
+  },
+  {
+   "v": "Hoe sluit je een ampèremeter aan?",
+   "o": [
+    "Altijd parallel over het lampje, precies zoals je een voltmeter zou plaatsen",
+    "In serie in de kring",
+    "Los ernaast, zonder dat de meter deel uitmaakt van de stroomkring",
+    "Alleen op de plus-pool van de bron, zonder verbinding met de rest"
+   ],
+   "c": 1,
+   "d": 2,
+   "u": "Een ampèremeter zet je in serie, zodat de te meten stroom er doorheen loopt.",
+   "uo": [
+    "Parallel hoort bij de voltmeter, niet de ampèremeter.",
+    "Klopt: ampèremeter in serie.",
+    "Los aangesloten meet hij niets.",
+    "Alleen op de pluspool loopt er geen stroom door."
+   ],
+   "uh": "Ampèremeter = in serie."
+  },
+  {
+   "v": "Hoe sluit je een voltmeter aan?",
+   "o": [
+    "In serie in de kring, op dezelfde manier als je een ampèremeter plaatst",
+    "Alleen op de min-pool van de bron zonder verdere aansluiting",
+    "Parallel over het onderdeel",
+    "Los naast de schakeling, zonder contact met de onderdelen"
+   ],
+   "c": 2,
+   "d": 2,
+   "u": "Een voltmeter zet je parallel over het onderdeel waarvan je de spanning wilt weten.",
+   "uo": [
+    "In serie hoort bij de ampèremeter.",
+    "Alleen op de minpool meet je niets zinnigs.",
+    "Klopt: voltmeter parallel.",
+    "Los aangesloten meet hij geen spanning."
+   ],
+   "uh": "Voltmeter = parallel."
+  },
+  {
+   "v": "Welk symbool en welke eenheid horen bij stroomsterkte?",
+   "o": [
+    "U in volt (V), de symbolen die eigenlijk bij de spanning horen",
+    "R in ohm, de symbolen die je bij de weerstand gebruikt",
+    "P in watt, de symbolen die bij het vermogen passen",
+    "I in ampère (A)"
+   ],
+   "c": 3,
+   "d": 1,
+   "u": "Stroomsterkte: symbool I, eenheid ampère (A).",
+   "uo": [
+    "U in volt hoort bij spanning.",
+    "R in ohm hoort bij weerstand.",
+    "P in watt hoort bij vermogen.",
+    "Klopt: I in ampère."
+   ],
+   "uh": "I -> A (stroom)."
+  },
+  {
+   "v": "Wat is lading?",
+   "o": [
+    "Een basiseigenschap van deeltjes",
+    "De snelheid waarmee een elektron door een geleider heen beweegt",
+    "De hoeveelheid draden die samen een schakeling met elkaar vormen",
+    "De temperatuur die een draad krijgt zodra de stroom eenmaal loopt"
+   ],
+   "c": 0,
+   "d": 1,
+   "u": "Lading is een eigenschap van deeltjes; elektronen zijn negatief geladen.",
+   "uo": [
+    "Klopt: lading is een eigenschap van deeltjes.",
+    "Snelheid is niet hetzelfde als lading.",
+    "Het aantal draden is geen lading.",
+    "Temperatuur is geen lading."
+   ],
+   "uh": "Lading = eigenschap van deeltjes."
+  },
+  {
+   "v": "Welke deeltjes bewegen bij stroom door een metaaldraad?",
+   "o": [
+    "Complete atomen die als geheel door het metaalrooster heen schuiven",
+    "Vrije elektronen",
+    "Alleen de positieve kernen die uit de metaalatomen losgebroken zijn",
+    "Lichtdeeltjes die door de draad heen naar het lampje toe reizen"
+   ],
+   "c": 1,
+   "d": 2,
+   "u": "In een metaal bewegen de vrije elektronen; die dragen de stroom.",
+   "uo": [
+    "Hele atomen bewegen niet mee door het rooster.",
+    "Klopt: vrije elektronen bewegen.",
+    "De kernen blijven op hun plek zitten.",
+    "Lichtdeeltjes dragen geen stroom in een draad."
+   ],
+   "uh": "Metaal: vrije elektronen dragen de stroom."
+  },
+  {
+   "v": "Twee spanningsbronnen: 4,5 V en 9 V. Bij welke is de duw groter?",
+   "o": [
+    "Bij 4,5 V, want een kleiner getal betekent hier een grotere duw",
+    "De duw is bij allebei precies even groot, het getal maakt niet uit",
+    "Bij 9 V",
+    "Dat hangt alleen af van de kleur van de aangesloten draden"
+   ],
+   "c": 2,
+   "d": 2,
+   "u": "Meer volt betekent een grotere duw op de lading.",
+   "uo": [
+    "Kleiner getal is juist minder duw.",
+    "De getallen verschillen, dus de duw ook.",
+    "Klopt: 9 V duwt harder dan 4,5 V.",
+    "De draadkleur doet niet ter zake."
+   ],
+   "uh": "Meer volt = grotere duw."
+  },
+  {
+   "v": "Door een draad gaat 3 A. Wat betekent dat?",
+   "o": [
+    "3 volt spanning over de uiteinden van de draad die is aangesloten",
+    "3 ohm weerstand van de draad waar de stroom doorheen moet",
+    "3 joule energie die het lampje in totaal heeft afgegeven",
+    "3 coulomb lading per seconde"
+   ],
+   "c": 3,
+   "d": 2,
+   "u": "Stroomsterkte is lading per seconde: 3 A = 3 coulomb per seconde.",
+   "uo": [
+    "Ampère is geen volt.",
+    "Ampère is geen ohm.",
+    "Ampère is geen joule.",
+    "Klopt: 3 A is 3 C per seconde."
+   ],
+   "uh": "1 A = 1 coulomb per seconde."
+  },
+  {
+   "v": "Een lampje brandt feller bij meer spanning. Wat gebeurt met de stroom?",
+   "o": [
+    "Die wordt groter",
+    "Die wordt juist kleiner naarmate de spanning verder wordt opgevoerd",
+    "Die blijft altijd exact gelijk, hoe hoog de spanning ook wordt gezet",
+    "Die wordt eerst nul en gaat daarna vanzelf de andere kant op lopen"
+   ],
+   "c": 0,
+   "d": 2,
+   "u": "Bij een lampje met vaste weerstand hoort bij meer spanning ook meer stroom.",
+   "uo": [
+    "Klopt: meer spanning -> meer stroom.",
+    "Minder stroom klopt niet bij een feller lampje.",
+    "Gelijk blijven past niet bij feller branden.",
+    "De stroom keert niet om."
+   ],
+   "uh": "Meer spanning -> meer stroom (vaste R)."
+  },
+  {
+   "v": "Welke stof geleidt stroom het best?",
+   "o": [
+    "Glas, dat je juist gebruikt als het niet mag geleiden",
+    "Koper",
+    "Rubber, waarmee draden vaak worden geïsoleerd tegen aanraking",
+    "Droog hout, dat de stroom vrijwel volledig tegenhoudt"
+   ],
+   "c": 1,
+   "d": 2,
+   "u": "Metalen zoals koper geleiden goed; glas, rubber en hout zijn isolatoren.",
+   "uo": [
+    "Glas is een isolator.",
+    "Klopt: koper is een goede geleider.",
+    "Rubber isoleert juist.",
+    "Droog hout geleidt nauwelijks."
+   ],
+   "uh": "Metalen geleiden; koper is top."
+  },
+  {
+   "v": "Waarom zit er kunststof om een elektriciteitsdraad?",
+   "o": [
+    "Om de stroom sneller door de koperdraad heen te laten stromen",
+    "Om de spanning van de bron flink verder te laten toenemen",
+    "Om te isoleren",
+    "Om extra lading in de draad zelf te kunnen opslaan voor later"
+   ],
+   "c": 2,
+   "d": 2,
+   "u": "De kunststof mantel isoleert, zodat je de draad veilig kunt aanraken.",
+   "uo": [
+    "Kunststof versnelt de stroom niet.",
+    "Het verhoogt de spanning niet.",
+    "Klopt: de mantel isoleert.",
+    "Het slaat geen lading op."
+   ],
+   "uh": "Mantel = isolatie/veiligheid."
+  },
+  {
+   "v": "Een kring is open (schakelaar uit). Wat geldt voor de stroom?",
+   "o": [
+    "De stroom is juist het grootst omdat de kring niet gesloten is",
+    "De stroom loopt gewoon door alsof de schakelaar dicht staat",
+    "De spanning van de bron wordt automatisch precies nul volt",
+    "Er loopt geen stroom"
+   ],
+   "c": 3,
+   "d": 2,
+   "u": "Bij een open kring is de weg onderbroken, dus er loopt geen stroom.",
+   "uo": [
+    "Open betekent juist geen stroom.",
+    "Onderbroken loopt er niets door.",
+    "De bron houdt zijn spanning wel.",
+    "Klopt: open kring, geen stroom."
+   ],
+   "uh": "Open kring = geen stroom."
+  },
+  {
+   "v": "Wat gebeurt met de lading in een gesloten stroomkring?",
+   "o": [
+    "Die blijft rondgaan",
+    "Die wordt in het lampje volledig opgebruikt en verdwijnt daarna",
+    "Die stapelt zich op in de bron tot de kring helemaal verstopt zit",
+    "Die verandert onderweg vanzelf in gloednieuwe lichtdeeltjes"
+   ],
+   "c": 0,
+   "d": 3,
+   "u": "Lading gaat rond; ze wordt niet verbruikt. Wat het lampje verbruikt is energie.",
+   "uo": [
+    "Klopt: de lading blijft rondgaan.",
+    "Lading wordt niet opgebruikt, energie wel.",
+    "Lading hoopt zich niet op in de bron.",
+    "Lading wordt geen licht."
+   ],
+   "uh": "Lading gaat rond; energie wordt verbruikt."
+  },
+  {
+   "v": "De ampèremeter voor en na een lampje geven dezelfde waarde. Waarom?",
+   "o": [
+    "Omdat het lampje de helft van de stroom voorgoed vasthoudt",
+    "Stroom gaat er in serie doorheen",
+    "Omdat een lampje altijd extra stroom aan de kring toevoegt",
+    "Omdat de meters per ongeluk allebei kapot zijn gegaan"
+   ],
+   "c": 1,
+   "d": 3,
+   "u": "In serie is de stroom overal gelijk; er verdwijnt geen stroom in het lampje.",
+   "uo": [
+    "Het lampje houdt geen stroom vast.",
+    "Klopt: in serie is de stroom overal gelijk.",
+    "Een lampje voegt geen stroom toe.",
+    "De meters zijn niet kapot; dit is normaal."
+   ],
+   "uh": "In serie: stroom overal gelijk."
+  },
+  {
+   "v": "Waarom knippert een tl-buis niet zichtbaar op netstroom?",
+   "o": [
+    "Omdat er in het net helemaal geen stroom door de buis loopt",
+    "Omdat netstroom altijd precies één kant op blijft stromen",
+    "De wisselstroom gaat heel snel",
+    "Omdat de buis met een grote batterij van gelijkstroom werkt"
+   ],
+   "c": 2,
+   "d": 3,
+   "u": "Netstroom is wisselstroom die 50 keer per seconde wisselt; te snel voor het oog.",
+   "uo": [
+    "Er loopt wel stroom door de buis.",
+    "Netstroom is wissel-, geen gelijkstroom.",
+    "Klopt: wisselstroom wisselt heel snel.",
+    "Een tl-buis werkt niet op een batterij."
+   ],
+   "uh": "Net = snelle wisselstroom."
+  },
+  {
+   "v": "Wat is het verschil tussen gelijkstroom en wisselstroom?",
+   "o": [
+    "Gelijkstroom heeft altijd een veel hogere spanning dan wisselstroom",
+    "Wisselstroom kan alleen door glas en niet door metaal heen stromen",
+    "Gelijkstroom levert nooit warmte terwijl wisselstroom dat wel doet",
+    "Wisselstroom wisselt van richting"
+   ],
+   "c": 3,
+   "d": 3,
+   "u": "Gelijkstroom (batterij) gaat één kant op; wisselstroom (net) wisselt van richting.",
+   "uo": [
+    "De spanning zegt niets over gelijk/wissel.",
+    "Beide lopen door metaal, niet glas.",
+    "Beide kunnen warmte leveren.",
+    "Klopt: wisselstroom wisselt van richting."
+   ],
+   "uh": "Wisselstroom wisselt richting; gelijkstroom niet."
+  },
+  {
+   "v": "Twee dezelfde lampjes staan in serie op één batterij. Wat geldt voor de stroom?",
+   "o": [
+    "Overal even groot",
+    "In het eerste lampje twee keer zo groot als in het tweede lampje",
+    "In het tweede lampje veel groter omdat het verder van de bron staat",
+    "Bij het ene lampje nul en bij het andere lampje juist maximaal"
+   ],
+   "c": 0,
+   "d": 3,
+   "u": "In een serieschakeling is er maar één weg, dus de stroom is overal gelijk.",
+   "uo": [
+    "Klopt: in serie overal dezelfde stroom.",
+    "De stroom is niet in het eerste lampje dubbel.",
+    "Afstand tot de bron verandert de stroom niet.",
+    "De stroom is nergens nul in een gesloten kring."
+   ],
+   "uh": "Serie = één stroom overal."
+  },
+  {
+   "v": "Waarom zeggen we dat een batterij \"leeg\" raakt?",
+   "o": [
+    "Omdat alle lading uit de batterij voorgoed is weggelekt",
+    "De chemische energie is op",
+    "Omdat er letterlijk lucht in plaats van lading in zit",
+    "Omdat de draden de lading uit de batterij hebben gestolen"
+   ],
+   "c": 1,
+   "d": 3,
+   "u": "Een batterij zet chemische energie om in elektrische energie; op = geen energie meer.",
+   "uo": [
+    "De lading lekt niet weg; de energie raakt op.",
+    "Klopt: de chemische energie is op.",
+    "Er zit geen lucht in de batterij.",
+    "Draden stelen geen lading."
+   ],
+   "uh": "Leeg = chemische energie op."
+  },
+  {
+   "v": "Een draad wordt warm als er stroom door gaat. Waar komt die warmte vandaan?",
+   "o": [
+    "Uit de zon die de draad van buitenaf flink staat op te warmen",
+    "Uit lading die spontaan uit het niets in de draad ontstaat",
+    "Uit botsende elektronen",
+    "Uit koude lucht die langs de buitenkant van de draad stroomt"
+   ],
+   "c": 2,
+   "d": 3,
+   "u": "Bewegende elektronen botsen tegen atomen; die botsingen geven warmte.",
+   "uo": [
+    "De zon is niet de bron van deze warmte.",
+    "Lading ontstaat niet uit het niets.",
+    "Klopt: botsende elektronen geven warmte.",
+    "Koude lucht warmt de draad niet op."
+   ],
+   "uh": "Botsende elektronen -> warmte."
+  },
+  {
+   "v": "Wat gebeurt er met de stroom als je twee gelijke batterijen in serie zet?",
+   "o": [
+    "Er verandert helemaal niets aan de stroom in de schakeling",
+    "De stroom wordt precies de helft van wat één batterij gaf",
+    "De stroom valt volledig weg omdat de bronnen elkaar opheffen",
+    "De spanning en stroom worden groter"
+   ],
+   "c": 3,
+   "d": 3,
+   "u": "Twee batterijen in serie leveren samen meer spanning, dus meer stroom (vaste R).",
+   "uo": [
+    "Er verandert wel iets: de spanning verdubbelt.",
+    "De stroom halveert niet.",
+    "De bronnen heffen elkaar niet op (juist aangesloten).",
+    "Klopt: meer spanning geeft meer stroom."
+   ],
+   "uh": "Batterijen in serie: meer spanning -> meer stroom."
+  },
+  {
+   "v": "Waarom kun je met droge handen veiliger aan een stopcontact zitten dan met natte?",
+   "o": [
+    "Water geleidt de stroom beter",
+    "Omdat droge huid juist een veel betere geleider is dan water",
+    "Omdat nat water de spanning van het stopcontact laat dalen",
+    "Omdat droge handen de stroom sneller door je lichaam sturen"
+   ],
+   "c": 0,
+   "d": 3,
+   "u": "Water geleidt goed; natte handen laten meer stroom door je lichaam gaan (gevaarlijk).",
+   "uo": [
+    "Klopt: water geleidt de stroom beter.",
+    "Droge huid geleidt juist slechter, dat is veiliger.",
+    "Water verlaagt de netspanning niet.",
+    "Droge handen sturen juist minder stroom door."
+   ],
+   "uh": "Nat = betere geleider = gevaarlijker."
+  }
+ ],
+ "oe": [
+  {
+   "vraag": "Leg uit wat het verschil is tussen stroomsterkte en spanning. Gebruik in je uitleg de eenheden.",
+   "antwoord": "Stroomsterkte is de hoeveelheid lading die per seconde door de draad stroomt; je meet die in ampère (A). Spanning is de duw op die lading, de energie per lading; je meet die in volt (V). De spanning van de bron zorgt ervoor dat de lading gaat stromen, en de stroomsterkte zegt hoeveel lading er dan per seconde langskomt."
+  },
+  {
+   "vraag": "Waarom sluit je een ampèremeter in serie aan en een voltmeter parallel? Leg beide apart uit.",
+   "antwoord": "Een ampèremeter meet de stroom die ergens doorheen loopt, dus de meter moet zelf in de kring zitten waar die stroom loopt: in serie. Een voltmeter meet het spanningsverschil over een onderdeel, dus je plaatst hem naast (parallel over) dat onderdeel, zodat hij de twee kanten met elkaar vergelijkt zonder de stroom te onderbreken."
+  },
+  {
+   "vraag": "Een leerling zegt: \"In een lampje wordt de stroom opgebruikt, want daarom brandt het.\" Klopt dit? Verbeter zo nodig.",
+   "antwoord": "Dit klopt niet. De lading wordt niet opgebruikt: die gaat rond en komt aan beide kanten van het lampje even sterk langs (in serie is de stroom overal gelijk). Wat wel verbruikt wordt, is energie: het lampje zet elektrische energie om in licht en warmte. De stroom blijft dus gelijk, maar de energie neemt af."
+  },
+  {
+   "vraag": "Noem het verschil tussen een geleider en een isolator en geef van elk twee voorbeelden.",
+   "antwoord": "Een geleider laat elektrische stroom goed door, doordat er vrije elektronen kunnen bewegen; voorbeelden zijn koper en ijzer. Een isolator laat stroom vrijwel niet door; voorbeelden zijn rubber en glas. Daarom zit er koper in de draad zelf en kunststof of rubber eromheen."
+  },
+  {
+   "vraag": "Leg uit waarom natte handen aan een stopcontact gevaarlijker zijn dan droge handen.",
+   "antwoord": "Water geleidt de stroom veel beter dan droge huid. Met natte handen is je weerstand lager, waardoor er bij dezelfde netspanning een grotere stroom door je lichaam kan lopen. Een grotere stroom door het lichaam is gevaarlijker. Met droge handen is je weerstand hoger en loopt er minder stroom, dus dat is veiliger."
+  }
+ ]
+}

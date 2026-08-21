@@ -1252,7 +1252,117 @@ var VAKKEN = [
     "nSv": 112,
     "nOe": 11,
     "nBeg": 21,
-    "hasSam": true
+    "hasSam": true,
+    "leerdoelen": [
+     {
+      "id": "D1",
+      "naam": "Stroom, spanning en lading",
+      "beschrijving": "Gouden-standaardmodule na.D.1: begrijpen wat elektrische stroom, spanning en lading zijn, in welke eenheden je ze meet en hoe je ze meet met een ampèremeter en voltmeter.",
+      "ceStatus": "ce",
+      "onderwerpen": [
+       "Stroom als bewegende lading",
+       "Stroomsterkte in ampère",
+       "Spanning in volt",
+       "Ampèremeter en voltmeter aansluiten",
+       "Geleiders en isolatoren",
+       "Gelijkstroom en wisselstroom"
+      ],
+      "nSv": 25,
+      "nOe": 5,
+      "nBeg": 12,
+      "hasSam": true
+     },
+     {
+      "id": "D2",
+      "naam": "Weerstand en de wet van Ohm",
+      "beschrijving": "Gouden-standaardmodule na.D.2: weten wat weerstand is, rekenen met de wet van Ohm (U = I x R) en het verschil begrijpen tussen ohmse en niet-ohmse onderdelen.",
+      "ceStatus": "ce",
+      "onderwerpen": [
+       "Weerstand als tegenwerking",
+       "Wet van Ohm: U = I x R",
+       "Rekenen met U, I en R",
+       "(U,I)-grafiek en steilheid",
+       "Ohms versus niet-ohms",
+       "Weerstand van een draad"
+      ],
+      "nSv": 25,
+      "nOe": 5,
+      "nBeg": 12,
+      "hasSam": true
+     },
+     {
+      "id": "D3",
+      "naam": "Serie- en parallelschakeling",
+      "beschrijving": "Gouden-standaardmodule na.D.3: het verschil begrijpen tussen serie- en parallelschakelingen en weten hoe stroom, spanning en weerstand zich in elke schakeling gedragen.",
+      "ceStatus": "ce",
+      "onderwerpen": [
+       "Serie versus parallel",
+       "Stroom in serie en parallel",
+       "Spanning in serie en parallel",
+       "Totale weerstand",
+       "Eén onderdeel kapot",
+       "Schakelaars plaatsen"
+      ],
+      "nSv": 25,
+      "nOe": 5,
+      "nBeg": 12,
+      "hasSam": true
+     },
+     {
+      "id": "D4",
+      "naam": "Vermogen en energie",
+      "beschrijving": "Gouden-standaardmodule na.D.4: rekenen met elektrisch vermogen (P = U x I) en energie (E = P x t), omgaan met de eenheden watt, joule en kWh en energiekosten berekenen.",
+      "ceStatus": "ce",
+      "onderwerpen": [
+       "Vermogen: P = U x I",
+       "Energie: E = P x t",
+       "Eenheden watt, joule en kWh",
+       "Energiekosten berekenen",
+       "Warmteverlies en zuinigheid",
+       "Formules omschrijven"
+      ],
+      "nSv": 25,
+      "nOe": 5,
+      "nBeg": 12,
+      "hasSam": true
+     },
+     {
+      "id": "D5",
+      "naam": "Geleiders, isolatoren en sensoren",
+      "beschrijving": "Gouden-standaardmodule na.D.5: geleiders en isolatoren herkennen en verklaren, en begrijpen hoe niet-ohmse onderdelen werken: gloeilamp, LDR, NTC en diode.",
+      "ceStatus": "ce",
+      "onderwerpen": [
+       "Geleiders en isolatoren",
+       "Vrije elektronen",
+       "Ohms versus niet-ohms",
+       "LDR: lichtsensor",
+       "NTC: temperatuursensor",
+       "Diode en stroomrichting"
+      ],
+      "nSv": 25,
+      "nOe": 5,
+      "nBeg": 12,
+      "hasSam": true
+     },
+     {
+      "id": "D6",
+      "naam": "Elektrische veiligheid",
+      "beschrijving": "Gouden-standaardmodule na.D.6: begrijpen wat kortsluiting en overbelasting zijn en hoe zekeringen, aarding en de aardlekschakelaar mensen en huizen beschermen tegen schokken en brand.",
+      "ceStatus": "ce",
+      "onderwerpen": [
+       "Kortsluiting en overbelasting",
+       "De zekering en automaat",
+       "Aarding en randaarde",
+       "De aardlekschakelaar",
+       "Gevaar van stroom door het lichaam",
+       "Veilig omgaan met het lichtnet"
+      ],
+      "nSv": 25,
+      "nOe": 5,
+      "nBeg": 12,
+      "hasSam": true
+     }
+    ]
    },
    {
     "id": "E",

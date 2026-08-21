@@ -23,7 +23,7 @@ const NIVEAU = args.find(a => !a.startsWith('--') && ['havo', 'vwo'].includes(a)
 const VAKID = args.find(a => !a.startsWith('--') && !['havo', 'vwo'].includes(a)) || 'bi';
 
 // ── Domein-module → leerdoel (hele module koppelt aan één leerdoel; Content-Engine-modules). ──
-const DOMEIN_LO = { bi: { M1: 'bi.M.1', M2: 'bi.M.2', M3: 'bi.M.3', M4: 'bi.M.4', M5: 'bi.M.5', M6: 'bi.M.6', M7: 'bi.M.7', O1: 'bi.O.1', O2: 'bi.O.2', O3: 'bi.O.3', O4: 'bi.O.4', O5: 'bi.O.5', O6: 'bi.O.6', O7: 'bi.O.7', P1: 'bi.P.1', P2: 'bi.P.2', P3: 'bi.P.3', P4: 'bi.P.4', P5: 'bi.P.5', P6: 'bi.P.6', A1: 'bi.A.1', A2: 'bi.A.2', A3: 'bi.A.3', A4: 'bi.A.4', A5: 'bi.A.5' } , na: { C1: 'na.C.1', C2: 'na.C.2', C3: 'na.C.3', C4: 'na.C.4', C5: 'na.C.5', C6: 'na.C.6' } };
+const DOMEIN_LO = { bi: { M1: 'bi.M.1', M2: 'bi.M.2', M3: 'bi.M.3', M4: 'bi.M.4', M5: 'bi.M.5', M6: 'bi.M.6', M7: 'bi.M.7', O1: 'bi.O.1', O2: 'bi.O.2', O3: 'bi.O.3', O4: 'bi.O.4', O5: 'bi.O.5', O6: 'bi.O.6', O7: 'bi.O.7', P1: 'bi.P.1', P2: 'bi.P.2', P3: 'bi.P.3', P4: 'bi.P.4', P5: 'bi.P.5', P6: 'bi.P.6', A1: 'bi.A.1', A2: 'bi.A.2', A3: 'bi.A.3', A4: 'bi.A.4', A5: 'bi.A.5' } , na: { C1: 'na.C.1', C2: 'na.C.2', C3: 'na.C.3', C4: 'na.C.4', C5: 'na.C.5', C6: 'na.C.6', D1: 'na.D.1', D2: 'na.D.2', D3: 'na.D.3', D4: 'na.D.4', D5: 'na.D.5', D6: 'na.D.6' } };
 
 // ── Handmatige overrides per vak: qkey-tekst (eerste 80 tekens van v) → leerdoel-id ──
 // Voor restambiguïteiten na matcher + conceptopschoning. source=manual_override, confidence=1.0
