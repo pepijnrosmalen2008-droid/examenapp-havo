@@ -293,7 +293,7 @@ function applyLevelTheme(level){
   html.classList.remove('level-havo','level-vwo','level-vmbo');
   html.classList.add('level-'+level);
   // Update favicon colour to match level (vmbo = teal)
-  const col=level==='vwo'?'%238b5cf6':level==='vmbo'?'%230EA5A5':'%23E85C0D';
+  const col=level==='vwo'?'%238b5cf6':level==='vmbo'?'%2316a34a':'%232563eb';
   const svg=`%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='${col}'/%3E%3Ctext x='16' y='24' font-family='Arial Black,sans-serif' font-size='19' font-weight='900' fill='white' text-anchor='middle'%3ESl%3C/text%3E%3C/svg%3E`;
   const fav=document.querySelector('link[rel="icon"]');
   if(fav)fav.href='data:image/svg+xml,'+svg;

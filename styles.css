@@ -55,11 +55,11 @@ html.level-welcome{
   --or:#6366f1;--orl:rgba(99,102,241,.18);--or-rgb:99,102,241
 }
 html.level-havo{
-  --or:#e8580c;--orl:#fff4ed;--or-rgb:232,88,12;
-  --cd-bg1:#1a0600;--cd-bg2:#250c00;--cd-bg3:#1c0900
+  --or:#2563eb;--orl:#eff4ff;--or-rgb:37,99,235;
+  --cd-bg1:#030b1c;--cd-bg2:#05132e;--cd-bg3:#040f24
 }
 html.dark.level-havo{
-  --or:#e8580c;--orl:#2A1500
+  --or:#3b82f6;--orl:#0e1f45
 }
 html.level-vwo{
   --or:#8b5cf6;--orl:#f5f3ff;--or-rgb:139,92,246;
@@ -69,11 +69,11 @@ html.dark.level-vwo{
   --or:#a78bfa;--orl:#2D1B69;--or-rgb:167,139,250
 }
 html.level-vmbo{
-  --or:#0d9488;--orl:#effbf8;--or-rgb:13,148,136;
-  --cd-bg1:#04211d;--cd-bg2:#06302a;--cd-bg3:#052622
+  --or:#16a34a;--orl:#ecfdf3;--or-rgb:22,163,74;
+  --cd-bg1:#041b0d;--cd-bg2:#06301a;--cd-bg3:#052414
 }
 html.dark.level-vmbo{
-  --or:#2dd4bf;--orl:#0b3b36;--or-rgb:45,212,191
+  --or:#22c55e;--orl:#0b3b22;--or-rgb:34,197,94
 }
 /* Root-achtergrond: voorkomt witte randen bij snel scrollen / overscroll-bounce
    (de body dekt niet de overscroll-zone; html wél). */
@@ -1858,39 +1858,39 @@ html.dark .qb{background:#2e3550}
 /* cards */
 .wlc-card{position:relative;overflow:hidden;border-radius:24px;padding:32px 28px 28px;cursor:pointer;transition:transform .28s cubic-bezier(.34,1.2,.64,1),box-shadow .28s,border-color .28s,background .28s;border:1.5px solid rgba(255,255,255,.08);background:rgba(255,255,255,.03)}
 .wlc-card::after{content:'';position:absolute;top:0;left:0;right:0;height:1px;background:linear-gradient(90deg,transparent,rgba(255,255,255,.15),transparent)}
-.wlc-chavo{border-color:rgba(232,92,13,.3);background:linear-gradient(150deg,rgba(232,92,13,.11) 0%,rgba(232,92,13,.04) 100%)}
+.wlc-chavo{border-color:rgba(59,130,246,.3);background:linear-gradient(150deg,rgba(59,130,246,.11) 0%,rgba(59,130,246,.04) 100%)}
 .wlc-cvwo{border-color:rgba(139,92,246,.3);background:linear-gradient(150deg,rgba(139,92,246,.11) 0%,rgba(139,92,246,.04) 100%)}
-.wlc-cvmbo{border-color:rgba(13,148,136,.3);background:linear-gradient(150deg,rgba(13,148,136,.11) 0%,rgba(13,148,136,.04) 100%)}
-.wlc-cvmbo:hover,.wlc-cvmbo:focus-visible{border-color:rgba(13,148,136,.7);background:linear-gradient(150deg,rgba(13,148,136,.2) 0%,rgba(13,148,136,.07) 100%);transform:translateY(-7px);box-shadow:0 28px 72px rgba(13,148,136,.28),0 0 0 1px rgba(13,148,136,.18)}
+.wlc-cvmbo{border-color:rgba(34,197,94,.3);background:linear-gradient(150deg,rgba(34,197,94,.11) 0%,rgba(34,197,94,.04) 100%)}
+.wlc-cvmbo:hover,.wlc-cvmbo:focus-visible{border-color:rgba(34,197,94,.7);background:linear-gradient(150deg,rgba(34,197,94,.2) 0%,rgba(34,197,94,.07) 100%);transform:translateY(-7px);box-shadow:0 28px 72px rgba(34,197,94,.28),0 0 0 1px rgba(34,197,94,.18)}
 .wlc-cvmbo:active{transform:scale(.97);transition:transform .1s}
-.wlc-cvmbo .wlc-card-glow{background:radial-gradient(circle at 25% 15%,rgba(13,148,136,.12) 0%,transparent 55%)}
-.wlc-cvmbo .wlc-card-lvl{color:#0d9488;text-shadow:0 0 32px rgba(13,148,136,.5)}
-.wlc-cvmbo .wlc-card-list li::before{content:'✓';color:#0d9488}
-.wlc-cvmbo .wlc-card-btn{color:#0d9488}
-.lc-active.wlc-cvmbo,.lc-active.lc-vmbo{border-color:rgba(13,148,136,.7)!important;box-shadow:0 0 0 2px rgba(13,148,136,.3),0 16px 48px rgba(13,148,136,.22)!important}
-.wlc-chavo:hover,.wlc-chavo:focus-visible{border-color:rgba(232,92,13,.7);background:linear-gradient(150deg,rgba(232,92,13,.2) 0%,rgba(232,92,13,.07) 100%);transform:translateY(-7px);box-shadow:0 28px 72px rgba(232,92,13,.28),0 0 0 1px rgba(232,92,13,.18)}
+.wlc-cvmbo .wlc-card-glow{background:radial-gradient(circle at 25% 15%,rgba(34,197,94,.12) 0%,transparent 55%)}
+.wlc-cvmbo .wlc-card-lvl{color:#22c55e;text-shadow:0 0 32px rgba(34,197,94,.5)}
+.wlc-cvmbo .wlc-card-list li::before{content:'✓';color:#22c55e}
+.wlc-cvmbo .wlc-card-btn{color:#22c55e}
+.lc-active.wlc-cvmbo,.lc-active.lc-vmbo{border-color:rgba(34,197,94,.7)!important;box-shadow:0 0 0 2px rgba(34,197,94,.3),0 16px 48px rgba(34,197,94,.22)!important}
+.wlc-chavo:hover,.wlc-chavo:focus-visible{border-color:rgba(59,130,246,.7);background:linear-gradient(150deg,rgba(59,130,246,.2) 0%,rgba(59,130,246,.07) 100%);transform:translateY(-7px);box-shadow:0 28px 72px rgba(59,130,246,.28),0 0 0 1px rgba(59,130,246,.18)}
 .wlc-cvwo:hover,.wlc-cvwo:focus-visible{border-color:rgba(139,92,246,.7);background:linear-gradient(150deg,rgba(139,92,246,.2) 0%,rgba(139,92,246,.07) 100%);transform:translateY(-7px);box-shadow:0 28px 72px rgba(139,92,246,.28),0 0 0 1px rgba(139,92,246,.18)}
 .wlc-chavo:active{transform:scale(.97);transition:transform .1s}
 .wlc-cvwo:active{transform:scale(.97);transition:transform .1s}
 .wlc-card-glow{position:absolute;inset:-40%;pointer-events:none}
-.wlc-chavo .wlc-card-glow{background:radial-gradient(circle at 25% 15%,rgba(232,92,13,.12) 0%,transparent 55%)}
+.wlc-chavo .wlc-card-glow{background:radial-gradient(circle at 25% 15%,rgba(59,130,246,.12) 0%,transparent 55%)}
 .wlc-cvwo .wlc-card-glow{background:radial-gradient(circle at 25% 15%,rgba(139,92,246,.12) 0%,transparent 55%)}
 .wlc-card-hd{display:flex;align-items:flex-start;justify-content:space-between;margin-bottom:22px}
 .wlc-card-lvl{font-family:var(--font-head);font-size:42px;font-weight:900;letter-spacing:-2px;line-height:1}
-.wlc-chavo .wlc-card-lvl{color:#E85C0D;text-shadow:0 0 32px rgba(232,92,13,.5)}
+.wlc-chavo .wlc-card-lvl{color:#3b82f6;text-shadow:0 0 32px rgba(59,130,246,.5)}
 .wlc-cvwo .wlc-card-lvl{color:#a78bfa;text-shadow:0 0 32px rgba(167,139,250,.5)}
 .wlc-card-pill{font-size:11px;font-weight:700;color:rgba(255,255,255,.3);background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.09);border-radius:20px;padding:4px 11px;white-space:nowrap}
 .wlc-card-list{list-style:none;padding:0;margin:0 0 26px;display:flex;flex-direction:column;gap:10px}
 .wlc-card-list li{font-size:13.5px;color:rgba(255,255,255,.5);font-weight:500;padding-left:20px;position:relative}
 .wlc-card-list li::before{position:absolute;left:0;font-weight:800;font-size:12px}
-.wlc-chavo .wlc-card-list li::before{content:'✓';color:#E85C0D}
+.wlc-chavo .wlc-card-list li::before{content:'✓';color:#3b82f6}
 .wlc-cvwo .wlc-card-list li::before{content:'✓';color:#a78bfa}
 .wlc-card-btn{display:inline-flex;align-items:center;gap:8px;font-family:var(--font-head);font-size:15px;font-weight:800;letter-spacing:.2px;transition:gap .25s}
-.wlc-chavo .wlc-card-btn{color:#E85C0D}
+.wlc-chavo .wlc-card-btn{color:#3b82f6}
 .wlc-cvwo .wlc-card-btn{color:#a78bfa}
 .wlc-card:hover .wlc-card-btn{gap:14px}
 /* lc-active state */
-.lc-active.wlc-chavo,.lc-active.lc-havo{border-color:rgba(232,92,13,.7)!important;box-shadow:0 0 0 2px rgba(232,92,13,.3),0 16px 48px rgba(232,92,13,.22)!important}
+.lc-active.wlc-chavo,.lc-active.lc-havo{border-color:rgba(59,130,246,.7)!important;box-shadow:0 0 0 2px rgba(59,130,246,.3),0 16px 48px rgba(59,130,246,.22)!important}
 .lc-active.wlc-cvwo,.lc-active.lc-vwo{border-color:rgba(139,92,246,.7)!important;box-shadow:0 0 0 2px rgba(139,92,246,.3),0 16px 48px rgba(139,92,246,.22)!important}
 .level-prev-tag{display:inline-block;font-size:10px;font-weight:700;letter-spacing:.5px;text-transform:uppercase;background:rgba(255,255,255,.1);color:rgba(255,255,255,.55);padding:3px 10px;border-radius:20px;margin-top:10px}
 /* VMBO bar */
@@ -1992,7 +1992,7 @@ html.dark .qb{background:#2e3550}
 /* Card lvl number glow pulse */
 .wlc-chavo .wlc-card-lvl{animation:glowPulseO 3s ease-in-out infinite}
 .wlc-cvwo .wlc-card-lvl{animation:glowPulseV 3s ease-in-out infinite}
-@keyframes glowPulseO{0%,100%{text-shadow:0 0 28px rgba(232,92,13,.4)}50%{text-shadow:0 0 56px rgba(232,92,13,.8),0 0 90px rgba(232,92,13,.3)}}
+@keyframes glowPulseO{0%,100%{text-shadow:0 0 28px rgba(59,130,246,.4)}50%{text-shadow:0 0 56px rgba(59,130,246,.8),0 0 90px rgba(59,130,246,.3)}}
 @keyframes glowPulseV{0%,100%{text-shadow:0 0 28px rgba(167,139,250,.4)}50%{text-shadow:0 0 56px rgba(167,139,250,.8),0 0 90px rgba(139,92,246,.3)}}
 
 /* ── SCHEDULE SCREEN ───────────────────────────── */
@@ -2754,11 +2754,15 @@ html.dark .calc-btn{background:#2e3550}
   .daily-wrap{margin-bottom:8px}
 
   /* ── VAK DETAIL (sc-detail): simpeler ───────── */
-  /* Vak-header: compacter */
-  .sh{padding:16px 16px 14px;border-radius:14px;margin-bottom:14px}
-  .sh h2{font-size:20px;margin-bottom:4px}
+  /* Vak-header: compacter, maar met duidelijke titel en leesbare info */
+  .sh{padding:15px 16px 14px;border-radius:14px;margin-bottom:12px}
+  .sh h2{font-size:21px;margin-bottom:4px;line-height:1.1}
   .sh p{display:none}                           /* lange beschrijving verbergen */
-  .ce{padding:9px 12px;font-size:12px;border-radius:8px;margin-top:8px}
+  .ce{padding:10px 13px;font-size:12px;line-height:1.5;border-radius:9px;margin-top:8px}
+  /* Achtergrond-illustratie kleiner zodat de titel niet verdrongen wordt */
+  .vd-hero-art{width:104px;height:104px;top:-6px;right:-6px;opacity:.10}
+  .vd-emblem{width:44px;height:44px;border-radius:13px}
+  .vd-emblem svg{width:22px;height:22px}
 
   /* Domain cards: beschrijving in header weghalen (staat ook open) */
   .di p{display:none}                           /* domein beschrijving in gesloten card */
@@ -2780,17 +2784,23 @@ html.dark .calc-btn{background:#2e3550}
 
   /* ── VAK DETAIL EXTRA ───────────────────────── */
   /* Detail tip verbergen (gebruiker snapt het al snel) */
-  .detail-tip{display:none}
+  #sc-detail .detail-tip{display:none}
   /* Leerpad entry card compacter */
-  .lp-ec{padding:14px 16px;border-radius:14px;margin-bottom:10px}
+  .lp-ec{padding:13px 15px;border-radius:14px;margin-bottom:8px}
   .lp-ec-title{font-size:13px}
   .lp-ec-sub{font-size:11px}
-  .lp-ec-dots{margin-top:8px}
-  /* Simulatietoets en examen entry buttons compacter */
-  .sim-entry-btn,.exam-entry-btn{padding:12px 14px;border-radius:12px;margin-bottom:8px}
-  .sim-entry-icon,.exam-entry-icon{font-size:20px}
+  .lp-ec-dots{margin-top:7px}
+  /* Simulatietoets en examen entry buttons compacter, dichter op elkaar */
+  .sim-entry-btn,.exam-entry-btn{padding:11px 14px;border-radius:12px;margin-bottom:7px}
+  .sim-entry-icon,.exam-entry-icon{font-size:19px}
   .sim-entry-title,.exam-entry-title{font-size:13.5px}
   .sim-entry-sub,.exam-entry-sub{font-size:11px}
+  /* Bronvermelding: compacter kopje, minder gewicht (staat toch dichtgeklapt) */
+  .bron-card{margin-bottom:10px}
+  .bron-card-head{padding:11px 14px}
+  .bron-card-title{font-size:12.5px}
+  /* Sectiekop dichter op de domeinen */
+  #sc-detail .sec-label{margin:6px 0 8px}
   /* Lesmethode filter compacter */
   .meth-filter-wrap{padding:10px 12px;border-radius:12px;margin-bottom:12px}
   /* Domein qb knop: prominenter op mobiel */
@@ -6256,7 +6266,7 @@ html.dark #sc-detail .dc2:hover{
 /* Mobiel: lange CE-tekst inklapbaar (alleen wanneer hij echt overloopt;
    .ce-clamped wordt door openVak() gezet na een overflow-check). */
 @media(max-width:640px){
-  #sc-detail .ce.ce-clamped{position:relative;max-height:4.8em;overflow:hidden;
+  #sc-detail .ce.ce-clamped{position:relative;max-height:7.4em;overflow:hidden;
     cursor:pointer;transition:max-height .35s cubic-bezier(.16,1,.3,1)}
   #sc-detail .ce.ce-clamped::after{content:'⌄ meer';position:absolute;right:0;bottom:0;
     padding:1px 12px 2px 28px;font-size:11px;font-weight:700;color:var(--or);
