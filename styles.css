@@ -1006,8 +1006,8 @@ html.dark .qb{background:#2e3550}
 .pdf-error-btn{margin-top:8px;padding:12px 24px;background:var(--or);border:none;border-radius:12px;color:#fff;font-size:15px;font-weight:700;cursor:pointer;font-family:var(--font-head);transition:all .2s;text-decoration:none;display:inline-block}
 .pdf-error-btn:hover{opacity:.88;transform:translateY(-1px)}
 /* ── EXAMEN MODUS ────────────────────────────── */
-.exam-entry-btn{display:flex;align-items:center;gap:12px;width:100%;padding:13px 16px;border-radius:14px;background:rgba(239,68,68,.07);border:1.5px solid rgba(239,68,68,.22);color:#f87171;font-size:13px;font-weight:700;cursor:pointer;font-family:var(--font-head);transition:all .22s;margin-bottom:14px;text-align:left}
-.exam-entry-btn:hover{background:rgba(239,68,68,.13);border-color:rgba(239,68,68,.45);transform:translateY(-2px);box-shadow:0 6px 18px rgba(239,68,68,.15)}
+.exam-entry-btn{display:flex;align-items:center;gap:12px;width:100%;padding:13px 16px;border-radius:14px;background:rgba(var(--or-rgb),.07);border:1.5px solid rgba(var(--or-rgb),.22);color:var(--or);font-size:13px;font-weight:700;cursor:pointer;font-family:var(--font-head);transition:all .22s;margin-bottom:14px;text-align:left}
+.exam-entry-btn:hover{background:rgba(var(--or-rgb),.13);border-color:rgba(var(--or-rgb),.45);transform:translateY(-2px);box-shadow:0 6px 18px rgba(var(--or-rgb),.15)}
 .exam-entry-icon{font-size:22px;line-height:1;flex-shrink:0}
 .exam-entry-text{flex:1;min-width:0}
 .exam-entry-title{font-size:14px;font-weight:800;letter-spacing:-.2px;margin-bottom:1px}
@@ -1258,13 +1258,13 @@ html.dark .qb{background:#2e3550}
 .lp-card.lp-locked:hover{transform:none!important;border-color:rgba(255,255,255,.07)!important}
 .lp-ring-outer.lp-locked-ring svg .lp-ring-bg{stroke:rgba(255,255,255,.06)}
 /* Simulatietoets entry button */
-.sim-entry-btn{display:flex;align-items:center;gap:12px;width:100%;padding:13px 16px;border-radius:14px;background:rgba(99,102,241,.08);border:1.5px solid rgba(99,102,241,.25);color:#818cf8;font-size:13px;font-weight:700;cursor:pointer;font-family:var(--font-head);transition:all .22s;margin-bottom:14px;text-align:left}
-.sim-entry-btn:hover{background:rgba(99,102,241,.14);border-color:rgba(99,102,241,.45);transform:translateY(-2px);box-shadow:0 6px 18px rgba(99,102,241,.15)}
-.sim-entry-icon{width:36px;height:36px;border-radius:10px;background:rgba(99,102,241,.18);display:flex;align-items:center;justify-content:center;font-size:17px;flex-shrink:0}
+.sim-entry-btn{display:flex;align-items:center;gap:12px;width:100%;padding:13px 16px;border-radius:14px;background:rgba(var(--or-rgb),.08);border:1.5px solid rgba(var(--or-rgb),.25);color:var(--or);font-size:13px;font-weight:700;cursor:pointer;font-family:var(--font-head);transition:all .22s;margin-bottom:14px;text-align:left}
+.sim-entry-btn:hover{background:rgba(var(--or-rgb),.14);border-color:rgba(var(--or-rgb),.45);transform:translateY(-2px);box-shadow:0 6px 18px rgba(var(--or-rgb),.15)}
+.sim-entry-icon{width:36px;height:36px;border-radius:10px;background:rgba(var(--or-rgb),.18);display:flex;align-items:center;justify-content:center;font-size:17px;flex-shrink:0}
 .sim-entry-text{flex:1;min-width:0}
-.sim-entry-title{font-size:13px;font-weight:800;color:#818cf8}
+.sim-entry-title{font-size:13px;font-weight:800;color:var(--or)}
 .sim-entry-sub{font-size:11px;color:var(--mu);font-weight:500;margin-top:1px;font-family:var(--font)}
-.sim-entry-arr{font-size:16px;color:#818cf8;opacity:.6}
+.sim-entry-arr{font-size:16px;color:var(--or);opacity:.6}
 /* Simulatietoets result cards */
 .sim-dom-card{background:var(--s);border:1px solid var(--bo);border-radius:14px;padding:13px 16px;margin-bottom:10px;display:flex;align-items:center;gap:12px}
 .sim-dom-letter{width:34px;height:34px;border-radius:10px;font-size:14px;font-weight:800;display:flex;align-items:center;justify-content:center;flex-shrink:0;font-family:var(--font-head)}
@@ -5992,7 +5992,7 @@ html.dark .vd-hero-art{opacity:.17}
 /* ── Vak-detail: SVG-iconen (emoji-vervangers) nette kleur & uitlijning ─── */
 .lp-ec-icon,.lp-ec-icon-wrap{color:var(--or)}
 .lp-ec-icon{display:inline-flex;align-items:center;justify-content:center}
-.sim-entry-icon{color:#6366f1}
+.sim-entry-icon{color:var(--or)}
 .exam-entry-icon{color:var(--or);display:inline-flex;align-items:center;justify-content:center}
 .dt-icon{color:var(--or);display:inline-flex;align-items:center;justify-content:center}
 .det-bc-home{display:inline-flex;align-items:center;gap:4px}

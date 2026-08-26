@@ -100,7 +100,9 @@ function openVak(id,_noHash){
     _ch+=`<div style="font-size:11px;color:var(--mu);margin-top:10px;padding-top:10px;border-top:1px solid var(--bo)">Officiële CvTE-eindexamens${_EXAMENS_BASE?' · gehost door Slagio':' · via <a href="https://www.alleexamens.nl" target="_blank" rel="noopener" style="color:var(--mu)">AlleExamens.nl</a>'} · normering &amp; syllabus: <a href="https://www.examenblad.nl" target="_blank" rel="noopener" style="color:var(--mu)">Examenblad.nl</a></div></div></div>`;
     metaHtml+=_ch;
   }
-  document.getElementById('dce').insertAdjacentHTML('afterend',metaHtml);
+  // Meta (examendata, YouTube, oude-examens) NIET in de header-kaart proppen:
+  // plaats het als losse blokken ná de header, zodat de bovenkant rustig blijft.
+  (document.querySelector('#sc-detail .sh')||document.getElementById('dce')).insertAdjacentHTML('afterend',metaHtml);
 
   // Grade panel (SE cijfer + benodigde CE)
   const cijfers=getSavedCijfers();
