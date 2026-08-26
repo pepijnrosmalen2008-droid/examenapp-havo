@@ -1006,6 +1006,13 @@ html.dark .qb{background:#2e3550}
 .pdf-error-btn{margin-top:8px;padding:12px 24px;background:var(--or);border:none;border-radius:12px;color:#fff;font-size:15px;font-weight:700;cursor:pointer;font-family:var(--font-head);transition:all .2s;text-decoration:none;display:inline-block}
 .pdf-error-btn:hover{opacity:.88;transform:translateY(-1px)}
 /* ── EXAMEN MODUS ────────────────────────────── */
+/* Oefenen-paneel: bundelt Simulatietoets, Echte examenvragen en Oude examens
+   in één rustige kaart met rijen i.p.v. losse gekleurde kaarten. */
+.oefen-panel{background:#fff;border:1px solid var(--bo);border-radius:16px;overflow:hidden;margin-bottom:14px}
+.oefen-head{padding:13px 16px 3px;font-size:11px;font-weight:700;letter-spacing:.13em;text-transform:uppercase;color:var(--mu)}
+.oefen-panel .sim-entry-btn,.oefen-panel .exam-entry-btn,.oefen-panel .ce-archief-card{border:0!important;border-top:1px solid var(--bo)!important;border-radius:0!important;margin:0!important;box-shadow:none!important;background:transparent!important}
+.oefen-head + .sim-entry-btn,.oefen-head + .exam-entry-btn{border-top:0!important}
+.oefen-panel .sim-entry-btn:hover,.oefen-panel .exam-entry-btn:hover{background:rgba(var(--or-rgb),.04)!important;transform:none!important}
 .exam-entry-btn{display:flex;align-items:center;gap:12px;width:100%;padding:13px 16px;border-radius:14px;background:#fff;border:1px solid var(--bo);color:var(--dk);font-size:13px;font-weight:700;cursor:pointer;font-family:var(--font-head);transition:all .22s;margin-bottom:14px;text-align:left}
 .exam-entry-btn:hover{background:#fff;border-color:var(--or);transform:translateY(-2px);box-shadow:0 8px 18px -8px rgba(0,0,0,.12)}
 .exam-entry-icon{font-size:22px;line-height:1;flex-shrink:0}

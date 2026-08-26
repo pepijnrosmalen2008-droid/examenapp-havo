@@ -40,7 +40,8 @@ function openVak(id,_noHash){
   if(ST.vak.exDuur)metaHtml+=`<span class="em-chip">⏱ ${ST.vak.exDuur}</span>`;
   if(ST.vak.hulpmiddelen)metaHtml+=`<span class="em-chip">📋 ${ST.vak.hulpmiddelen}</span>`;
   metaHtml+='</div>';
-  if(ST.vak.youtubeKanaal&&ST.vak.youtubeUrl)metaHtml+=`<a class="yt-card" href="${ST.vak.youtubeUrl}" target="_blank" rel="noopener"><div class="yt-icon"><svg viewBox="0 0 24 24"><path d="M23.5 7s-.3-2-1.2-2.8c-1.1-1.2-2.4-1.2-3-1.3C16.8 2.8 12 2.8 12 2.8s-4.8 0-7.3.1c-.6.1-1.9.1-3 1.3C.8 5 .5 7 .5 7S.2 9.3.2 11.5v2.1c0 2.2.3 4.5.3 4.5s.3 2 1.2 2.8c1.1 1.2 2.6 1.1 3.3 1.2C7.2 22.2 12 22.2 12 22.2s4.8 0 7.3-.2c.6-.1 1.9-.1 3-1.3.9-.8 1.2-2.8 1.2-2.8s.3-2.3.3-4.5v-2.1C23.8 9.3 23.5 7 23.5 7zM9.7 15.5V8.4l8.1 3.6-8.1 3.5z"/></svg></div><div class="yt-info"><span class="yt-label">Uitleg op YouTube</span><span class="yt-name">${ST.vak.youtubeKanaal}</span></div><span class="yt-arr">→</span></a>`;
+  let ytHtml='';
+  if(ST.vak.youtubeKanaal&&ST.vak.youtubeUrl)ytHtml=`<a class="yt-card" href="${ST.vak.youtubeUrl}" target="_blank" rel="noopener"><div class="yt-icon"><svg viewBox="0 0 24 24"><path d="M23.5 7s-.3-2-1.2-2.8c-1.1-1.2-2.4-1.2-3-1.3C16.8 2.8 12 2.8 12 2.8s-4.8 0-7.3.1c-.6.1-1.9.1-3 1.3C.8 5 .5 7 .5 7S.2 9.3.2 11.5v2.1c0 2.2.3 4.5.3 4.5s.3 2 1.2 2.8c1.1 1.2 2.6 1.1 3.3 1.2C7.2 22.2 12 22.2 12 22.2s4.8 0 7.3-.2c.6-.1 1.9-.1 3-1.3.9-.8 1.2-2.8 1.2-2.8s.3-2.3.3-4.5v-2.1C23.8 9.3 23.5 7 23.5 7zM9.7 15.5V8.4l8.1 3.6-8.1 3.5z"/></svg></div><div class="yt-info"><span class="yt-label">Uitleg op YouTube</span><span class="yt-name">${ST.vak.youtubeKanaal}</span></div><span class="yt-arr">→</span></a>`;
   // Echte CE-examens archief
   // EXAMENS_BASE_URL: zet op je eigen Supabase URL nadat de PDF's daar zijn geüpload.
   // Voorbeeld: 'https://xxxx.supabase.co/storage/v1/object/public/examens'
@@ -98,11 +99,12 @@ function openVak(id,_noHash){
       _ch+=`</div></div>`;
     });
     _ch+=`<div style="font-size:11px;color:var(--mu);margin-top:10px;padding-top:10px;border-top:1px solid var(--bo)">Officiële CvTE-eindexamens${_EXAMENS_BASE?' · gehost door Slagio':' · via <a href="https://www.alleexamens.nl" target="_blank" rel="noopener" style="color:var(--mu)">AlleExamens.nl</a>'} · normering &amp; syllabus: <a href="https://www.examenblad.nl" target="_blank" rel="noopener" style="color:var(--mu)">Examenblad.nl</a></div></div></div>`;
-    metaHtml+=_ch;
+    var _arSlot=document.getElementById('oefen-archief'); if(_arSlot)_arSlot.innerHTML=_ch;
   }
-  // Meta (examendata, YouTube, oude-examens) NIET in de header-kaart proppen:
-  // plaats het als losse blokken ná de header, zodat de bovenkant rustig blijft.
+  // Alleen de examen-meta-chips ná de header; YouTube en oude-examens staan
+  // elders (YouTube onderaan bij bronvermelding, oude-examens in het oefen-paneel).
   (document.querySelector('#sc-detail .sh')||document.getElementById('dce')).insertAdjacentHTML('afterend',metaHtml);
+  var _bc=document.getElementById('bron-card'); if(_bc&&ytHtml)_bc.insertAdjacentHTML('afterend',ytHtml);
 
   // Grade panel (SE cijfer + benodigde CE)
   const cijfers=getSavedCijfers();
