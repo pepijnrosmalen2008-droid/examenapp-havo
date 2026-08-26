@@ -1006,11 +1006,11 @@ html.dark .qb{background:#2e3550}
 .pdf-error-btn{margin-top:8px;padding:12px 24px;background:var(--or);border:none;border-radius:12px;color:#fff;font-size:15px;font-weight:700;cursor:pointer;font-family:var(--font-head);transition:all .2s;text-decoration:none;display:inline-block}
 .pdf-error-btn:hover{opacity:.88;transform:translateY(-1px)}
 /* ── EXAMEN MODUS ────────────────────────────── */
-.exam-entry-btn{display:flex;align-items:center;gap:12px;width:100%;padding:13px 16px;border-radius:14px;background:rgba(var(--or-rgb),.07);border:1.5px solid rgba(var(--or-rgb),.22);color:var(--or);font-size:13px;font-weight:700;cursor:pointer;font-family:var(--font-head);transition:all .22s;margin-bottom:14px;text-align:left}
-.exam-entry-btn:hover{background:rgba(var(--or-rgb),.13);border-color:rgba(var(--or-rgb),.45);transform:translateY(-2px);box-shadow:0 6px 18px rgba(var(--or-rgb),.15)}
+.exam-entry-btn{display:flex;align-items:center;gap:12px;width:100%;padding:13px 16px;border-radius:14px;background:#fff;border:1px solid var(--bo);color:var(--dk);font-size:13px;font-weight:700;cursor:pointer;font-family:var(--font-head);transition:all .22s;margin-bottom:14px;text-align:left}
+.exam-entry-btn:hover{background:#fff;border-color:var(--or);transform:translateY(-2px);box-shadow:0 8px 18px -8px rgba(0,0,0,.12)}
 .exam-entry-icon{font-size:22px;line-height:1;flex-shrink:0}
 .exam-entry-text{flex:1;min-width:0}
-.exam-entry-title{font-size:14px;font-weight:800;letter-spacing:-.2px;margin-bottom:1px}
+.exam-entry-title{font-size:14px;font-weight:800;letter-spacing:-.2px;margin-bottom:1px;color:var(--or)}
 .exam-entry-sub{font-size:11.5px;opacity:.7;font-weight:500}
 .exam-entry-arr{font-size:16px;font-weight:700;flex-shrink:0;opacity:.6}
 /* Examen scherm */
@@ -1258,8 +1258,8 @@ html.dark .qb{background:#2e3550}
 .lp-card.lp-locked:hover{transform:none!important;border-color:rgba(255,255,255,.07)!important}
 .lp-ring-outer.lp-locked-ring svg .lp-ring-bg{stroke:rgba(255,255,255,.06)}
 /* Simulatietoets entry button */
-.sim-entry-btn{display:flex;align-items:center;gap:12px;width:100%;padding:13px 16px;border-radius:14px;background:rgba(var(--or-rgb),.08);border:1.5px solid rgba(var(--or-rgb),.25);color:var(--or);font-size:13px;font-weight:700;cursor:pointer;font-family:var(--font-head);transition:all .22s;margin-bottom:14px;text-align:left}
-.sim-entry-btn:hover{background:rgba(var(--or-rgb),.14);border-color:rgba(var(--or-rgb),.45);transform:translateY(-2px);box-shadow:0 6px 18px rgba(var(--or-rgb),.15)}
+.sim-entry-btn{display:flex;align-items:center;gap:12px;width:100%;padding:13px 16px;border-radius:14px;background:#fff;border:1px solid var(--bo);color:var(--dk);font-size:13px;font-weight:700;cursor:pointer;font-family:var(--font-head);transition:all .22s;margin-bottom:14px;text-align:left}
+.sim-entry-btn:hover{background:#fff;border-color:var(--or);transform:translateY(-2px);box-shadow:0 8px 18px -8px rgba(0,0,0,.12)}
 .sim-entry-icon{width:36px;height:36px;border-radius:10px;background:rgba(var(--or-rgb),.18);display:flex;align-items:center;justify-content:center;font-size:17px;flex-shrink:0}
 .sim-entry-text{flex:1;min-width:0}
 .sim-entry-title{font-size:13px;font-weight:800;color:var(--or)}
@@ -2353,8 +2353,8 @@ html.dark .calc-btn{background:#2e3550}
 .exam-meta{display:flex;gap:10px;flex-wrap:wrap;margin-top:14px}
 .em-chip{font-size:12px;font-weight:600;padding:6px 14px;border-radius:20px;background:var(--bg2);color:var(--mu);display:inline-flex;align-items:center;gap:6px}
 .em-chip.em-date{background:var(--orl);color:var(--or)}
-.yt-card{display:flex;align-items:center;gap:10px;padding:9px 12px;border-radius:11px;background:rgba(255,0,0,.05);border:1px solid rgba(255,0,0,.13);margin-top:10px;text-decoration:none;transition:all .22s cubic-bezier(.34,1.4,.64,1);width:100%}
-.yt-card:hover{background:rgba(255,0,0,.1);border-color:rgba(255,0,0,.28)}
+.yt-card{display:flex;align-items:center;gap:10px;padding:9px 12px;border-radius:11px;background:#fff;border:1px solid var(--bo);margin-top:10px;text-decoration:none;transition:all .22s cubic-bezier(.34,1.4,.64,1);width:100%}
+.yt-card:hover{background:#fff;border-color:var(--bo)}
 .yt-icon{width:28px;height:28px;border-radius:8px;background:#FF0000;display:flex;align-items:center;justify-content:center;flex-shrink:0}
 .yt-icon svg{width:16px;height:16px;fill:#fff}
 .yt-info{display:flex;align-items:baseline;gap:6px;min-width:0;flex-wrap:wrap}
@@ -3449,7 +3449,7 @@ html.dark .hsd-pill{background:var(--bg2);border-color:var(--bo2)}
 .hsh-title{font-weight:700;font-size:15px;color:var(--dk)}
 .hsh-sub{font-size:12px;color:var(--mu)}
 .qmode-desc{font-size:12px;color:var(--mu);margin-top:4px;font-weight:400}
-.detail-tip{display:flex;align-items:flex-start;gap:10px;background:var(--orl);border:1px solid rgba(var(--or-rgb),.2);border-radius:12px;padding:12px 16px;margin-bottom:16px;font-size:13px;color:var(--mu)}
+.detail-tip{display:flex;align-items:flex-start;gap:10px;background:var(--ce-bg);border:1px solid var(--bo);border-radius:12px;padding:12px 16px;margin-bottom:16px;font-size:13px;color:var(--mu)}
 .dt-icon{flex-shrink:0;font-size:16px}
 .lb-scoring-info{background:var(--s);border:1px solid var(--bo);border-radius:12px;overflow:hidden;margin-bottom:16px}
 .lb-scoring-header{padding:12px 16px;cursor:pointer;font-size:13px;font-weight:600;color:var(--dk);display:flex;justify-content:space-between}
