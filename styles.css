@@ -2062,7 +2062,7 @@ html.dark .qb{background:#2e3550}
 .klas-lb-naam{flex:1;font-weight:700;font-size:14.5px;color:var(--dk);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 .klas-lb-pts{flex-shrink:0;font-family:var(--font-head);font-weight:800;font-size:14.5px;color:var(--or);font-variant-numeric:tabular-nums}
 .klas-empty{color:var(--mu);font-size:13.5px;text-align:center;padding:24px 16px;background:var(--s);border:1px dashed var(--bo);border-radius:12px;line-height:1.6}
-.klas-home-card{display:flex;align-items:center;gap:13px;background:var(--s);border:1px solid var(--bo);border-radius:14px;padding:14px 16px;cursor:pointer;box-shadow:var(--rd-shadow-1);transition:transform .18s var(--ease-out),border-color .18s;margin:14px 0}
+.klas-home-card{display:flex;align-items:center;gap:13px;background:var(--s);border:1px solid var(--bo);border-radius:14px;padding:14px 16px;cursor:pointer;box-shadow:var(--rd-shadow-1);transition:transform .18s var(--ease-out),border-color .18s;margin:10px 0}
 .klas-home-card:hover{transform:translateY(-1px);border-color:rgba(var(--or-rgb),.4)}
 .klas-home-hw{border-color:rgba(var(--or-rgb),.35);background:linear-gradient(135deg,rgba(var(--or-rgb),.10),rgba(var(--or-rgb),.03))}
 .klas-home-hw .klas-home-ico{filter:none}
@@ -4329,16 +4329,16 @@ html.dark .hsd-pill{background:var(--bg2);border-color:var(--bo2)}
 .vlag-reduce .vlag-vonk{animation:none}
 
 /* ── Dagmissie van Vonk (home) ── */
-.dm-card{display:flex;align-items:center;gap:11px;padding:11px 13px;margin:0 0 12px;border-radius:16px;
-  background:linear-gradient(135deg,rgba(251,140,62,.09),rgba(99,102,241,.06));border:1px solid var(--bo)}
+.dm-card{display:flex;align-items:center;gap:13px;padding:14px 16px;margin:10px 0;border-radius:14px;
+  background:var(--s);border:1px solid var(--bo);box-shadow:var(--rd-shadow-1)}
 .dm-vonk{flex-shrink:0;width:46px;height:46px}
 .dm-vonk .m-svg{width:46px;height:46px}
 .dm-body{flex:1;min-width:0}
 .dm-kicker{font-family:var(--font-head);font-weight:900;font-size:10px;letter-spacing:.4px;text-transform:uppercase;color:var(--or);margin-bottom:1px}
 .dm-title{font-family:var(--font-head);font-weight:900;font-size:15px;color:var(--dk);line-height:1.2}
 .dm-sub{font-size:12px;color:var(--mu);margin-top:1px}
-.dm-btn{flex-shrink:0;padding:10px 15px;border:none;border-radius:12px;background:var(--or);color:#fff;font-family:var(--font-head);font-weight:800;font-size:13px;cursor:pointer;transition:transform .15s,box-shadow .2s}
-.dm-btn:hover{transform:translateY(-2px);box-shadow:0 6px 16px rgba(251,140,62,.35)}
+.dm-btn{flex-shrink:0;padding:10px 15px;border:1px solid color-mix(in srgb,var(--or) 26%,transparent);border-radius:12px;background:color-mix(in srgb,var(--or) 13%,transparent);color:var(--or);font-family:var(--font-head);font-weight:800;font-size:13px;cursor:pointer;transition:background .2s,transform .12s}
+.dm-btn:hover{background:color-mix(in srgb,var(--or) 18%,transparent)}
 .dm-done{border-color:rgba(34,197,94,.35);background:rgba(34,197,94,.07)}
 .dm-check{font-size:30px;flex-shrink:0}
 .dm-boost{display:inline-block;margin-top:6px;padding:3px 10px;border-radius:20px;background:linear-gradient(135deg,#f59e0b,#f5731a);color:#fff;font-family:var(--font-head);font-weight:900;font-size:11.5px;box-shadow:0 2px 8px rgba(245,115,26,.35)}
@@ -4369,13 +4369,13 @@ html.dark .hsd-pill{background:var(--bg2);border-color:var(--bo2)}
 .her-oefen{flex-shrink:0;padding:8px 14px;border:none;border-radius:10px;background:rgba(99,102,241,.12);color:#6366f1;font-family:var(--font-head);font-weight:800;font-size:13px;cursor:pointer}
 .her-oefen:hover{background:rgba(99,102,241,.2)}
 /* home-kaart */
-.her-card{display:flex;align-items:center;gap:12px;width:100%;text-align:left;padding:12px 14px;margin:0 0 12px;border-radius:18px;border:1.5px solid rgba(99,102,241,.3);background:linear-gradient(135deg,rgba(99,102,241,.12),rgba(139,92,246,.08));cursor:pointer;transition:transform .15s}
-.her-card:hover{transform:translateY(-2px)}
-.her-card-ic{font-size:26px;flex-shrink:0}
+.her-card{display:flex;align-items:center;gap:13px;width:100%;text-align:left;padding:14px 16px;margin:10px 0;border-radius:14px;border:1px solid var(--bo);background:var(--s);box-shadow:var(--rd-shadow-1);cursor:pointer;transition:transform .18s var(--ease-out),border-color .18s}
+.her-card:hover{transform:translateY(-1px);border-color:rgba(var(--or-rgb),.4)}
+.her-card-ic{flex-shrink:0;width:42px;height:42px;border-radius:11px;background:rgba(99,102,241,.14);display:flex;align-items:center;justify-content:center;font-size:21px}
 .her-card-body{flex:1;min-width:0}
-.her-card-t{font-family:var(--font-head);font-weight:900;font-size:15.5px;color:var(--dk)}
-.her-card-s{font-size:12.5px;color:var(--mu);margin-top:1px}
-.her-card-go{font-family:var(--font-head);font-weight:900;font-size:18px;color:#6366f1;flex-shrink:0}
+.her-card-t{font-family:var(--font-head);font-weight:700;font-size:15px;color:var(--dk);line-height:1.2}
+.her-card-s{font-size:12px;color:var(--mu);margin-top:2px}
+.her-card-go{color:var(--mu);font-weight:700;font-size:16px;flex-shrink:0}
 @media(max-width:640px){.dm-title{font-size:15px}.dm-btn{padding:9px 13px;font-size:12.5px}}
 
 /* ── Vonk + spraakbubbel (coach-pop) - licht standaard, .coach-dark voor donkere schermen ── */
@@ -4447,7 +4447,7 @@ html.dark .hsd-pill{background:var(--bg2);border-color:var(--bo2)}
 .sp-check-btn.checked{border-color:#22c55e;background:#22c55e;color:#fff}
 .sp-check-btn svg{width:15px;height:15px;stroke:currentColor;stroke-width:2.5;fill:none;stroke-linecap:round;stroke-linejoin:round}
 /* Homepage vandaag-widget */
-.sp-home-widget{background:linear-gradient(135deg,rgba(var(--or-rgb),.11) 0%,rgba(var(--or-rgb),.04) 100%);border:1px solid rgba(var(--or-rgb),.2);border-radius:18px;overflow:hidden;margin-bottom:4px}
+.sp-home-widget{background:var(--s);border:1px solid var(--bo);border-radius:14px;overflow:hidden;margin:10px 0;box-shadow:var(--rd-shadow-1)}
 .sp-home-widget.sp-urgent{border-color:rgba(239,68,68,.4);animation:spUrgPulse 3s ease-in-out infinite}
 @keyframes spUrgPulse{0%,100%{box-shadow:none}50%{box-shadow:0 0 14px 2px rgba(239,68,68,.2)}}
 .sp-hw-header{display:flex;align-items:center;justify-content:space-between;padding:13px 16px 10px;border-bottom:1px solid rgba(var(--or-rgb),.12)}
@@ -6988,19 +6988,18 @@ html.dark .dom-hero-card{background:linear-gradient(180deg,rgba(255,255,255,.045
 }
 
 /* ══ Slim oefenen: home-kaart + Duolingo-stijl intro-overlay ══ */
-.slim-card-home{width:100%;display:flex;align-items:center;gap:13px;margin:0 0 12px;padding:15px 16px;border-radius:18px;cursor:pointer;text-align:left;font-family:var(--font);
-  background:linear-gradient(135deg,color-mix(in srgb,var(--or) 22%,var(--s)),var(--s) 72%);
-  border:1px solid color-mix(in srgb,var(--or) 34%,var(--bo));
-  box-shadow:0 4px 0 color-mix(in srgb,var(--or) 42%,#000), 0 10px 24px -12px rgba(var(--or-rgb),.5);
-  transition:transform .09s ease, box-shadow .09s ease}
-.slim-card-home:active{transform:translateY(4px);box-shadow:0 0 0 color-mix(in srgb,var(--or) 42%,#000),0 4px 12px -8px rgba(var(--or-rgb),.4)}
-.slim-card-spark{flex:none;width:44px;height:44px;border-radius:13px;display:grid;place-items:center;color:#fff;background:linear-gradient(135deg,#fbbf24,var(--or));box-shadow:0 3px 10px rgba(var(--or-rgb),.4)}
+.slim-card-home{width:100%;display:flex;align-items:center;gap:13px;margin:10px 0;padding:14px 16px;border-radius:14px;cursor:pointer;text-align:left;font-family:var(--font);
+  background:var(--s);border:1px solid var(--bo);box-shadow:var(--rd-shadow-1);
+  transition:transform .18s var(--ease-out),border-color .18s}
+.slim-card-home:hover{transform:translateY(-1px);border-color:rgba(var(--or-rgb),.4)}
+.slim-card-home:active{transform:scale(.99)}
+.slim-card-spark{flex:none;width:42px;height:42px;border-radius:11px;display:grid;place-items:center;color:#fff;background:linear-gradient(135deg,#fbbf24,var(--or));box-shadow:0 3px 10px rgba(var(--or-rgb),.4)}
 .slim-card-spark svg{animation:slimSpark 2.4s ease-in-out infinite;transform-origin:50% 50%}
 @keyframes slimSpark{0%,100%{transform:scale(1) rotate(0)}50%{transform:scale(1.16) rotate(12deg)}}
 .slim-card-body{flex:1;min-width:0}
-.slim-card-t{display:block;font-family:var(--font-head,inherit);font-size:15.5px;font-weight:800;color:var(--dk)}
-.slim-card-s{display:block;font-size:12.5px;color:var(--mu);margin-top:2px;line-height:1.4}
-.slim-card-go{flex:none;font-size:19px;color:var(--or);font-weight:800}
+.slim-card-t{display:block;font-family:var(--font-head,inherit);font-size:15px;font-weight:700;color:var(--dk)}
+.slim-card-s{display:block;font-size:12px;color:var(--mu);margin-top:2px;line-height:1.4}
+.slim-card-go{flex:none;font-size:16px;color:var(--mu);font-weight:700}
 .slim-overlay{position:fixed;inset:0;z-index:9450;display:flex;align-items:center;justify-content:center;padding:24px;background:rgba(12,10,20,.6);backdrop-filter:blur(6px);opacity:0;transition:opacity .28s}
 .slim-overlay.show{opacity:1}
 .slim-card{position:relative;width:100%;max-width:360px;text-align:center;border-radius:26px;padding:26px 24px 22px;background:var(--s,#fff);border:1px solid var(--bo);box-shadow:0 30px 80px -20px rgba(0,0,0,.55);transform:translateY(20px) scale(.92);transition:transform .42s cubic-bezier(.22,1.3,.36,1)}
