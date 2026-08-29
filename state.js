@@ -605,7 +605,7 @@ function buildGrid(){
     const prog=getVakBestPct(v.id);
     const progHtml=prog.hasData
       ?`<div class="card-progress"><div class="cp-bar"><div class="cp-fill" style="width:${Math.round(prog.pct*100)}%"></div></div><span class="cp-pct">${Math.round(prog.pct*100)}%</span></div>`
-      :`<div class="card-progress no-data"><div class="cp-bar"><div class="cp-fill" style="width:0%"></div></div><span class="cp-pct">-</span></div>`;
+      :`<div class="card-progress no-data"><span class="cp-start">Nog niet begonnen</span></div>`;
     const iconPaths=VAK_ICONS[v.id]||'<circle cx="12" cy="12" r="4"/>';
     const cij=cijfers[v.id];
     const cijBadge=cij!=null?`<div class="card-grade-badge ${cij>=7?'grade-green':cij>=5.5?'grade-orange':'grade-red'}">${cij.toFixed(1).replace('.',',')}</div>`:'';
