@@ -858,42 +858,42 @@ var VAKKEN_VMBO = [
       "uh": "Onthoud: «Orgaan» = meerdere weefsels met een taak."
      },
      {
-      "v": "Welk begrip hoort bij: \"organen die samen één functie uitvoeren\"?",
+      "v": "Welk begrip hoort bij: \"het celonderdeel waarin het DNA ligt\"?",
       "o": [
-       "Orgaan",
-       "Orgaanstelsel",
-       "Weefsel",
-       "Cytoplasma"
+       "Cytoplasma",
+       "Celkern",
+       "Celmembraan",
+       "Fenotype"
       ],
       "c": 1,
       "d": 3,
-      "u": "«Orgaanstelsel»: organen die samen één functie uitvoeren.",
+      "u": "«Celkern»: het celonderdeel waarin het DNA ligt.",
       "uo": [
-       "«Orgaan» betekent meerdere weefsels met een taak.",
-       "Klopt, dit is «Orgaanstelsel».",
-       "«Weefsel» betekent groep gelijke cellen.",
-       "«Cytoplasma» betekent vloeistof in de cel."
+       "«Cytoplasma» betekent vloeistof in de cel.",
+       "Klopt, dit is «Celkern».",
+       "«Celmembraan» betekent omhulsel van de cel.",
+       "«Fenotype» betekent zichtbare eigenschappen."
       ],
-      "uh": "Onthoud: «Orgaanstelsel» = samenwerkende organen."
+      "uh": "Onthoud: «Celkern» = bevat het DNA."
      },
      {
-      "v": "Welke term hoort bij \"samenwerkende organen\"?",
+      "v": "Welke term hoort bij \"omhulsel van de cel\"?",
       "o": [
-       "Cytoplasma",
+       "Weefsel",
+       "Vacuole",
        "Celmembraan",
-       "Orgaanstelsel",
-       "Chromosoom"
+       "Bladgroenkorrel"
       ],
       "c": 2,
       "d": 2,
-      "u": "«Orgaanstelsel»: organen die samen één functie uitvoeren.",
+      "u": "«Celmembraan»: het dunne laagje dat de cel omsluit en stoffen doorlaat.",
       "uo": [
-       "«Cytoplasma» betekent vloeistof in de cel.",
-       "«Celmembraan» betekent omhulsel van de cel.",
-       "Klopt, «Orgaanstelsel» past hierbij.",
-       "«Chromosoom» betekent opgerold DNA."
+       "«Weefsel» betekent groep gelijke cellen.",
+       "«Vacuole» betekent vochtblaas in plantencel.",
+       "Klopt, «Celmembraan» past hierbij.",
+       "«Bladgroenkorrel» betekent doet fotosynthese."
       ],
-      "uh": "Onthoud: «Orgaanstelsel» = samenwerkende organen."
+      "uh": "Onthoud: «Celmembraan» = omhulsel van de cel."
      },
      {
       "v": "Wat betekent «Orgaanstelsel»?",
@@ -915,95 +915,38 @@ var VAKKEN_VMBO = [
       "uh": "Onthoud: «Orgaanstelsel» = samenwerkende organen."
      },
      {
-      "v": "Welk begrip hoort bij: \"het dunne laagje dat de cel omsluit en stoffen doorlaat\"?",
+      "v": "Welk begrip hoort bij: \"de stevige buitenlaag om een plantencel\"?",
       "o": [
-       "Celmembraan",
        "Celwand",
-       "Celkern",
-       "Weefsel"
+       "Celmembraan",
+       "Chromosoom",
+       "Fenotype"
       ],
       "c": 0,
       "d": 3,
-      "u": "«Celmembraan»: het dunne laagje dat de cel omsluit en stoffen doorlaat.",
+      "u": "«Celwand»: de stevige buitenlaag om een plantencel.",
       "uo": [
-       "Klopt, dit is «Celmembraan».",
-       "«Celwand» betekent stevige laag bij planten.",
-       "«Celkern» betekent bevat het DNA.",
-       "«Weefsel» betekent groep gelijke cellen."
-      ],
-      "uh": "Onthoud: «Celmembraan» = omhulsel van de cel."
-     },
-     {
-      "v": "Welke term hoort bij \"omhulsel van de cel\"?",
-      "o": [
-       "Weefsel",
-       "Celmembraan",
-       "Vacuole",
-       "Bladgroenkorrel"
-      ],
-      "c": 1,
-      "d": 2,
-      "u": "«Celmembraan»: het dunne laagje dat de cel omsluit en stoffen doorlaat.",
-      "uo": [
-       "«Weefsel» betekent groep gelijke cellen.",
-       "Klopt, «Celmembraan» past hierbij.",
-       "«Vacuole» betekent vochtblaas in plantencel.",
-       "«Bladgroenkorrel» betekent doet fotosynthese."
-      ],
-      "uh": "Onthoud: «Celmembraan» = omhulsel van de cel."
-     },
-     {
-      "v": "Wat betekent «Celmembraan»?",
-      "o": [
-       "de stevige buitenlaag om een plantencel",
-       "het celonderdeel waarin het DNA ligt",
-       "het dunne laagje dat de cel omsluit en stoffen doorlaat",
-       "een groep cellen met dezelfde vorm en functie"
-      ],
-      "c": 2,
-      "d": 1,
-      "u": "«Celmembraan»: het dunne laagje dat de cel omsluit en stoffen doorlaat.",
-      "uo": [
-       "Dat is «Celwand».",
-       "Dat is «Celkern».",
-       "Klopt: omhulsel van de cel.",
-       "Dat is «Weefsel»."
-      ],
-      "uh": "Onthoud: «Celmembraan» = omhulsel van de cel."
-     },
-     {
-      "v": "Welk begrip hoort bij: \"het celonderdeel waarin het DNA ligt\"?",
-      "o": [
-       "Cytoplasma",
-       "Celmembraan",
-       "Fenotype",
-       "Celkern"
-      ],
-      "c": 3,
-      "d": 3,
-      "u": "«Celkern»: het celonderdeel waarin het DNA ligt.",
-      "uo": [
-       "«Cytoplasma» betekent vloeistof in de cel.",
+       "Klopt, dit is «Celwand».",
        "«Celmembraan» betekent omhulsel van de cel.",
-       "«Fenotype» betekent zichtbare eigenschappen.",
-       "Klopt, dit is «Celkern»."
+       "«Chromosoom» betekent opgerold DNA.",
+       "«Fenotype» betekent zichtbare eigenschappen."
       ],
-      "uh": "Onthoud: «Celkern» = bevat het DNA."
+      "uh": "Onthoud: «Celwand» = stevige laag bij planten."
      },
      {
       "v": "Welke term hoort bij \"bevat het DNA\"?",
       "o": [
-       "Celkern",
        "Fenotype",
+       "Celkern",
        "Bladgroenkorrel",
        "DNA"
       ],
-      "c": 0,
+      "c": 1,
       "d": 2,
       "u": "«Celkern»: het celonderdeel waarin het DNA ligt.",
       "uo": [
-       "Klopt, «Celkern» past hierbij.",
        "«Fenotype» betekent zichtbare eigenschappen.",
+       "Klopt, «Celkern» past hierbij.",
        "«Bladgroenkorrel» betekent doet fotosynthese.",
        "«DNA» betekent erfelijke informatie."
       ],
@@ -1013,172 +956,229 @@ var VAKKEN_VMBO = [
       "v": "Wat betekent «Celkern»?",
       "o": [
        "de vloeistof in de cel waarin de onderdelen liggen",
-       "het celonderdeel waarin het DNA ligt",
        "het dunne laagje dat de cel omsluit en stoffen doorlaat",
+       "het celonderdeel waarin het DNA ligt",
        "de waarneembare eigenschappen van een organisme"
       ],
-      "c": 1,
+      "c": 2,
       "d": 1,
       "u": "«Celkern»: het celonderdeel waarin het DNA ligt.",
       "uo": [
        "Dat is «Cytoplasma».",
-       "Klopt: bevat het DNA.",
        "Dat is «Celmembraan».",
+       "Klopt: bevat het DNA.",
        "Dat is «Fenotype»."
       ],
       "uh": "Onthoud: «Celkern» = bevat het DNA."
      },
      {
-      "v": "Welk begrip hoort bij: \"de vloeistof in de cel waarin de onderdelen liggen\"?",
+      "v": "Welk begrip hoort bij: \"een grote blaas met vocht in een plantencel\"?",
       "o": [
-       "Celkern",
-       "Vacuole",
+       "Bladgroenkorrel",
        "Cytoplasma",
-       "Weefsel"
+       "Fenotype",
+       "Vacuole"
       ],
-      "c": 2,
+      "c": 3,
       "d": 3,
-      "u": "«Cytoplasma»: de vloeistof in de cel waarin de onderdelen liggen.",
+      "u": "«Vacuole»: een grote blaas met vocht in een plantencel.",
       "uo": [
-       "«Celkern» betekent bevat het DNA.",
-       "«Vacuole» betekent vochtblaas in plantencel.",
-       "Klopt, dit is «Cytoplasma».",
-       "«Weefsel» betekent groep gelijke cellen."
+       "«Bladgroenkorrel» betekent doet fotosynthese.",
+       "«Cytoplasma» betekent vloeistof in de cel.",
+       "«Fenotype» betekent zichtbare eigenschappen.",
+       "Klopt, dit is «Vacuole»."
       ],
-      "uh": "Onthoud: «Cytoplasma» = vloeistof in de cel."
+      "uh": "Onthoud: «Vacuole» = vochtblaas in plantencel."
      },
      {
       "v": "Welke term hoort bij \"vloeistof in de cel\"?",
       "o": [
+       "Cytoplasma",
        "Weefsel",
        "Bladgroenkorrel",
-       "Natuurlijke selectie",
-       "Cytoplasma"
-      ],
-      "c": 3,
-      "d": 2,
-      "u": "«Cytoplasma»: de vloeistof in de cel waarin de onderdelen liggen.",
-      "uo": [
-       "«Weefsel» betekent groep gelijke cellen.",
-       "«Bladgroenkorrel» betekent doet fotosynthese.",
-       "«Natuurlijke selectie» betekent best aangepasten overleven.",
-       "Klopt, «Cytoplasma» past hierbij."
-      ],
-      "uh": "Onthoud: «Cytoplasma» = vloeistof in de cel."
-     },
-     {
-      "v": "Wat betekent «Cytoplasma»?",
-      "o": [
-       "de vloeistof in de cel waarin de onderdelen liggen",
-       "het celonderdeel waarin het DNA ligt",
-       "een grote blaas met vocht in een plantencel",
-       "een groep cellen met dezelfde vorm en functie"
+       "Natuurlijke selectie"
       ],
       "c": 0,
-      "d": 1,
+      "d": 2,
       "u": "«Cytoplasma»: de vloeistof in de cel waarin de onderdelen liggen.",
       "uo": [
-       "Klopt: vloeistof in de cel.",
-       "Dat is «Celkern».",
-       "Dat is «Vacuole».",
-       "Dat is «Weefsel»."
+       "Klopt, «Cytoplasma» past hierbij.",
+       "«Weefsel» betekent groep gelijke cellen.",
+       "«Bladgroenkorrel» betekent doet fotosynthese.",
+       "«Natuurlijke selectie» betekent best aangepasten overleven."
       ],
       "uh": "Onthoud: «Cytoplasma» = vloeistof in de cel."
-     },
-     {
-      "v": "Welk begrip hoort bij: \"plantencelonderdeel dat de fotosynthese uitvoert\"?",
-      "o": [
-       "Vacuole",
-       "Bladgroenkorrel",
-       "Celwand",
-       "Celkern"
-      ],
-      "c": 1,
-      "d": 3,
-      "u": "«Bladgroenkorrel»: plantencelonderdeel dat de fotosynthese uitvoert.",
-      "uo": [
-       "«Vacuole» betekent vochtblaas in plantencel.",
-       "Klopt, dit is «Bladgroenkorrel».",
-       "«Celwand» betekent stevige laag bij planten.",
-       "«Celkern» betekent bevat het DNA."
-      ],
-      "uh": "Onthoud: «Bladgroenkorrel» = doet fotosynthese."
-     },
-     {
-      "v": "Welk begrip hoort bij: \"de stevige buitenlaag om een plantencel\"?",
-      "o": [
-       "Celmembraan",
-       "Chromosoom",
-       "Celwand",
-       "Fenotype"
-      ],
-      "c": 2,
-      "d": 2,
-      "u": "«Celwand»: de stevige buitenlaag om een plantencel.",
-      "uo": [
-       "«Celmembraan» betekent omhulsel van de cel.",
-       "«Chromosoom» betekent opgerold DNA.",
-       "Klopt, dit is «Celwand».",
-       "«Fenotype» betekent zichtbare eigenschappen."
-      ],
-      "uh": "Onthoud: «Celwand» = stevige laag bij planten."
      },
      {
       "v": "Wat betekent «Celwand»?",
       "o": [
        "het dunne laagje dat de cel omsluit en stoffen doorlaat",
+       "de stevige buitenlaag om een plantencel",
        "een streng van sterk opgerold DNA in de celkern",
-       "de waarneembare eigenschappen van een organisme",
-       "de stevige buitenlaag om een plantencel"
+       "de waarneembare eigenschappen van een organisme"
       ],
-      "c": 3,
+      "c": 1,
       "d": 1,
       "u": "«Celwand»: de stevige buitenlaag om een plantencel.",
       "uo": [
        "Dat is «Celmembraan».",
+       "Klopt: stevige laag bij planten.",
        "Dat is «Chromosoom».",
-       "Dat is «Fenotype».",
-       "Klopt: stevige laag bij planten."
+       "Dat is «Fenotype»."
       ],
       "uh": "Onthoud: «Celwand» = stevige laag bij planten."
      },
      {
-      "v": "Welk begrip hoort bij: \"een grote blaas met vocht in een plantencel\"?",
+      "v": "Welk begrip hoort bij: \"de stof met de erfelijke informatie\"?",
       "o": [
-       "Vacuole",
-       "Bladgroenkorrel",
-       "Cytoplasma",
-       "Fenotype"
+       "Gen",
+       "Chromosoom",
+       "DNA",
+       "Weefsel"
       ],
-      "c": 0,
+      "c": 2,
       "d": 3,
-      "u": "«Vacuole»: een grote blaas met vocht in een plantencel.",
+      "u": "«DNA»: de stof met de erfelijke informatie.",
       "uo": [
-       "Klopt, dit is «Vacuole».",
-       "«Bladgroenkorrel» betekent doet fotosynthese.",
-       "«Cytoplasma» betekent vloeistof in de cel.",
-       "«Fenotype» betekent zichtbare eigenschappen."
+       "«Gen» betekent code voor een eigenschap.",
+       "«Chromosoom» betekent opgerold DNA.",
+       "Klopt, dit is «DNA».",
+       "«Weefsel» betekent groep gelijke cellen."
       ],
-      "uh": "Onthoud: «Vacuole» = vochtblaas in plantencel."
+      "uh": "Onthoud: «DNA» = erfelijke informatie."
      },
      {
       "v": "Welke term hoort bij \"stevige laag bij planten\"?",
       "o": [
        "Chromosoom",
-       "Celwand",
        "Fenotype",
-       "Bladgroenkorrel"
+       "Bladgroenkorrel",
+       "Celwand"
       ],
-      "c": 1,
+      "c": 3,
       "d": 2,
       "u": "«Celwand»: de stevige buitenlaag om een plantencel.",
       "uo": [
        "«Chromosoom» betekent opgerold DNA.",
-       "Klopt, «Celwand» past hierbij.",
        "«Fenotype» betekent zichtbare eigenschappen.",
-       "«Bladgroenkorrel» betekent doet fotosynthese."
+       "«Bladgroenkorrel» betekent doet fotosynthese.",
+       "Klopt, «Celwand» past hierbij."
       ],
       "uh": "Onthoud: «Celwand» = stevige laag bij planten."
+     },
+     {
+      "v": "Wat betekent «Vacuole»?",
+      "o": [
+       "een grote blaas met vocht in een plantencel",
+       "plantencelonderdeel dat de fotosynthese uitvoert",
+       "de vloeistof in de cel waarin de onderdelen liggen",
+       "de waarneembare eigenschappen van een organisme"
+      ],
+      "c": 0,
+      "d": 1,
+      "u": "«Vacuole»: een grote blaas met vocht in een plantencel.",
+      "uo": [
+       "Klopt: vochtblaas in plantencel.",
+       "Dat is «Bladgroenkorrel».",
+       "Dat is «Cytoplasma».",
+       "Dat is «Fenotype»."
+      ],
+      "uh": "Onthoud: «Vacuole» = vochtblaas in plantencel."
+     },
+     {
+      "v": "Welk begrip hoort bij: \"een stukje DNA met de code voor één eigenschap\"?",
+      "o": [
+       "DNA",
+       "Gen",
+       "Chromosoom",
+       "Weefsel"
+      ],
+      "c": 1,
+      "d": 3,
+      "u": "«Gen»: een stukje DNA met de code voor één eigenschap.",
+      "uo": [
+       "«DNA» betekent erfelijke informatie.",
+       "Klopt, dit is «Gen».",
+       "«Chromosoom» betekent opgerold DNA.",
+       "«Weefsel» betekent groep gelijke cellen."
+      ],
+      "uh": "Onthoud: «Gen» = code voor een eigenschap."
+     },
+     {
+      "v": "Welke term hoort bij \"doet fotosynthese\"?",
+      "o": [
+       "Celkern",
+       "Chromosoom",
+       "Bladgroenkorrel",
+       "Natuurlijke selectie"
+      ],
+      "c": 2,
+      "d": 2,
+      "u": "«Bladgroenkorrel»: plantencelonderdeel dat de fotosynthese uitvoert.",
+      "uo": [
+       "«Celkern» betekent bevat het DNA.",
+       "«Chromosoom» betekent opgerold DNA.",
+       "Klopt, «Bladgroenkorrel» past hierbij.",
+       "«Natuurlijke selectie» betekent best aangepasten overleven."
+      ],
+      "uh": "Onthoud: «Bladgroenkorrel» = doet fotosynthese."
+     },
+     {
+      "v": "Wat betekent «DNA»?",
+      "o": [
+       "een stukje DNA met de code voor één eigenschap",
+       "een streng van sterk opgerold DNA in de celkern",
+       "een groep cellen met dezelfde vorm en functie",
+       "de stof met de erfelijke informatie"
+      ],
+      "c": 3,
+      "d": 1,
+      "u": "«DNA»: de stof met de erfelijke informatie.",
+      "uo": [
+       "Dat is «Gen».",
+       "Dat is «Chromosoom».",
+       "Dat is «Weefsel».",
+       "Klopt: erfelijke informatie."
+      ],
+      "uh": "Onthoud: «DNA» = erfelijke informatie."
+     },
+     {
+      "v": "Welk begrip hoort bij: \"de erfelijke aanleg (de genen) van een organisme\"?",
+      "o": [
+       "Genotype",
+       "Fenotype",
+       "DNA",
+       "Weefsel"
+      ],
+      "c": 0,
+      "d": 3,
+      "u": "«Genotype»: de erfelijke aanleg (de genen) van een organisme.",
+      "uo": [
+       "Klopt, dit is «Genotype».",
+       "«Fenotype» betekent zichtbare eigenschappen.",
+       "«DNA» betekent erfelijke informatie.",
+       "«Weefsel» betekent groep gelijke cellen."
+      ],
+      "uh": "Onthoud: «Genotype» = de genen."
+     },
+     {
+      "v": "Welke term hoort bij \"vochtblaas in plantencel\"?",
+      "o": [
+       "Fenotype",
+       "Vacuole",
+       "Celkern",
+       "DNA"
+      ],
+      "c": 1,
+      "d": 2,
+      "u": "«Vacuole»: een grote blaas met vocht in een plantencel.",
+      "uo": [
+       "«Fenotype» betekent zichtbare eigenschappen.",
+       "Klopt, «Vacuole» past hierbij.",
+       "«Celkern» betekent bevat het DNA.",
+       "«DNA» betekent erfelijke informatie."
+      ],
+      "uh": "Onthoud: «Vacuole» = vochtblaas in plantencel."
      }
     ],
     "begrippen": [
@@ -1435,42 +1435,42 @@ var VAKKEN_VMBO = [
       "uh": "Onthoud: «Lederhuid» = laag onder de opperhuid."
      },
      {
-      "v": "Welk begrip hoort bij: \"een hard orgaan dat steun geeft en bloedcellen kan maken\"?",
+      "v": "Welk begrip hoort bij: \"alle botten samen die het lichaam steun en vorm geven\"?",
       "o": [
-       "Kraakbeen",
        "Bot",
        "Skelet",
-       "Ziekteverwekker"
+       "Opperhuid",
+       "Huid"
       ],
       "c": 1,
       "d": 3,
-      "u": "«Bot»: een hard orgaan dat steun geeft en bloedcellen kan maken.",
+      "u": "«Skelet»: alle botten samen die het lichaam steun en vorm geven.",
       "uo": [
-       "«Kraakbeen» betekent buigzaam steunweefsel.",
-       "Klopt, dit is «Bot».",
-       "«Skelet» betekent alle botten samen.",
-       "«Ziekteverwekker» betekent veroorzaakt ziekte."
+       "«Bot» betekent hard steunorgaan.",
+       "Klopt, dit is «Skelet».",
+       "«Opperhuid» betekent buitenste huidlaag.",
+       "«Huid» betekent beschermende bedekking."
       ],
-      "uh": "Onthoud: «Bot» = hard steunorgaan."
+      "uh": "Onthoud: «Skelet» = alle botten samen."
      },
      {
-      "v": "Welk begrip hoort bij: \"de vetlaag onder de lederhuid die warmte vasthoudt\"?",
+      "v": "Welke term hoort bij \"alle botten samen\"?",
       "o": [
-       "Lederhuid",
-       "Talgklier",
-       "Onderhuids bindweefsel",
-       "Bot"
+       "Opperhuid",
+       "Huid",
+       "Skelet",
+       "Ziekteverwekker"
       ],
       "c": 2,
       "d": 2,
-      "u": "«Onderhuids bindweefsel»: de vetlaag onder de lederhuid die warmte vasthoudt.",
+      "u": "«Skelet»: alle botten samen die het lichaam steun en vorm geven.",
       "uo": [
-       "«Lederhuid» betekent laag onder de opperhuid.",
-       "«Talgklier» betekent geeft huidvet af.",
-       "Klopt, dit is «Onderhuids bindweefsel».",
-       "«Bot» betekent hard steunorgaan."
+       "«Opperhuid» betekent buitenste huidlaag.",
+       "«Huid» betekent beschermende bedekking.",
+       "Klopt, «Skelet» past hierbij.",
+       "«Ziekteverwekker» betekent veroorzaakt ziekte."
       ],
-      "uh": "Onthoud: «Onderhuids bindweefsel» = vetlaag, houdt warmte vast."
+      "uh": "Onthoud: «Skelet» = alle botten samen."
      },
      {
       "v": "Wat betekent «Onderhuids bindweefsel»?",
@@ -1492,270 +1492,270 @@ var VAKKEN_VMBO = [
       "uh": "Onthoud: «Onderhuids bindweefsel» = vetlaag, houdt warmte vast."
      },
      {
-      "v": "Welke term hoort bij \"vetlaag, houdt warmte vast\"?",
-      "o": [
-       "Onderhuids bindweefsel",
-       "Talgklier",
-       "Bot",
-       "Steunfunctie"
-      ],
-      "c": 0,
-      "d": 2,
-      "u": "«Onderhuids bindweefsel»: de vetlaag onder de lederhuid die warmte vasthoudt.",
-      "uo": [
-       "Klopt, «Onderhuids bindweefsel» past hierbij.",
-       "«Talgklier» betekent geeft huidvet af.",
-       "«Bot» betekent hard steunorgaan.",
-       "«Steunfunctie» betekent stevigheid en vorm."
-      ],
-      "uh": "Onthoud: «Onderhuids bindweefsel» = vetlaag, houdt warmte vast."
-     },
-     {
-      "v": "Wat betekent «Skelet»?",
-      "o": [
-       "een hard orgaan dat steun geeft en bloedcellen kan maken",
-       "alle botten samen die het lichaam steun en vorm geven",
-       "de buitenste laag van de huid",
-       "het orgaan dat het lichaam bedekt en beschermt"
-      ],
-      "c": 1,
-      "d": 1,
-      "u": "«Skelet»: alle botten samen die het lichaam steun en vorm geven.",
-      "uo": [
-       "Dat is «Bot».",
-       "Klopt: alle botten samen.",
-       "Dat is «Opperhuid».",
-       "Dat is «Huid»."
-      ],
-      "uh": "Onthoud: «Skelet» = alle botten samen."
-     },
-     {
-      "v": "Welk begrip hoort bij: \"alle botten samen die het lichaam steun en vorm geven\"?",
+      "v": "Welk begrip hoort bij: \"een hard orgaan dat steun geeft en bloedcellen kan maken\"?",
       "o": [
        "Bot",
-       "Opperhuid",
+       "Kraakbeen",
        "Skelet",
-       "Huid"
-      ],
-      "c": 2,
-      "d": 2,
-      "u": "«Skelet»: alle botten samen die het lichaam steun en vorm geven.",
-      "uo": [
-       "«Bot» betekent hard steunorgaan.",
-       "«Opperhuid» betekent buitenste huidlaag.",
-       "Klopt, dit is «Skelet».",
-       "«Huid» betekent beschermende bedekking."
-      ],
-      "uh": "Onthoud: «Skelet» = alle botten samen."
-     },
-     {
-      "v": "Wat betekent «Bot»?",
-      "o": [
-       "stevig maar buigzaam steunweefsel, bijvoorbeeld in het oor",
-       "alle botten samen die het lichaam steun en vorm geven",
-       "een micro-organisme dat een ziekte kan veroorzaken",
-       "een hard orgaan dat steun geeft en bloedcellen kan maken"
-      ],
-      "c": 3,
-      "d": 1,
-      "u": "«Bot»: een hard orgaan dat steun geeft en bloedcellen kan maken.",
-      "uo": [
-       "Dat is «Kraakbeen».",
-       "Dat is «Skelet».",
-       "Dat is «Ziekteverwekker».",
-       "Klopt: hard steunorgaan."
-      ],
-      "uh": "Onthoud: «Bot» = hard steunorgaan."
-     },
-     {
-      "v": "Welke term hoort bij \"alle botten samen\"?",
-      "o": [
-       "Skelet",
-       "Opperhuid",
-       "Huid",
        "Ziekteverwekker"
       ],
       "c": 0,
-      "d": 2,
-      "u": "«Skelet»: alle botten samen die het lichaam steun en vorm geven.",
+      "d": 3,
+      "u": "«Bot»: een hard orgaan dat steun geeft en bloedcellen kan maken.",
       "uo": [
-       "Klopt, «Skelet» past hierbij.",
-       "«Opperhuid» betekent buitenste huidlaag.",
-       "«Huid» betekent beschermende bedekking.",
+       "Klopt, dit is «Bot».",
+       "«Kraakbeen» betekent buigzaam steunweefsel.",
+       "«Skelet» betekent alle botten samen.",
        "«Ziekteverwekker» betekent veroorzaakt ziekte."
       ],
-      "uh": "Onthoud: «Skelet» = alle botten samen."
-     },
-     {
-      "v": "Wat betekent «Kraakbeen»?",
-      "o": [
-       "een hard orgaan dat steun geeft en bloedcellen kan maken",
-       "stevig maar buigzaam steunweefsel, bijvoorbeeld in het oor",
-       "huidklier die zweet afgeeft en zo het lichaam koelt",
-       "het afschermen van organen tegen schade van buiten"
-      ],
-      "c": 1,
-      "d": 1,
-      "u": "«Kraakbeen»: stevig maar buigzaam steunweefsel, bijvoorbeeld in het oor.",
-      "uo": [
-       "Dat is «Bot».",
-       "Klopt: buigzaam steunweefsel.",
-       "Dat is «Zweetklier».",
-       "Dat is «Beschermende functie»."
-      ],
-      "uh": "Onthoud: «Kraakbeen» = buigzaam steunweefsel."
+      "uh": "Onthoud: «Bot» = hard steunorgaan."
      },
      {
       "v": "Welke term hoort bij \"hard steunorgaan\"?",
       "o": [
        "Ziekteverwekker",
-       "Zweetklier",
        "Bot",
+       "Zweetklier",
        "Beschermende functie"
       ],
-      "c": 2,
+      "c": 1,
       "d": 2,
       "u": "«Bot»: een hard orgaan dat steun geeft en bloedcellen kan maken.",
       "uo": [
        "«Ziekteverwekker» betekent veroorzaakt ziekte.",
-       "«Zweetklier» betekent geeft zweet af, koelt.",
        "Klopt, «Bot» past hierbij.",
+       "«Zweetklier» betekent geeft zweet af, koelt.",
        "«Beschermende functie» betekent organen afschermen."
       ],
       "uh": "Onthoud: «Bot» = hard steunorgaan."
      },
      {
-      "v": "Wat betekent «Beschermende functie»?",
+      "v": "Wat betekent «Skelet»?",
       "o": [
-       "het geven van stevigheid en vorm aan het lichaam",
-       "de vetlaag onder de lederhuid die warmte vasthoudt",
+       "een hard orgaan dat steun geeft en bloedcellen kan maken",
        "de buitenste laag van de huid",
-       "het afschermen van organen tegen schade van buiten"
+       "alle botten samen die het lichaam steun en vorm geven",
+       "het orgaan dat het lichaam bedekt en beschermt"
       ],
-      "c": 3,
+      "c": 2,
       "d": 1,
-      "u": "«Beschermende functie»: het afschermen van organen tegen schade van buiten.",
+      "u": "«Skelet»: alle botten samen die het lichaam steun en vorm geven.",
       "uo": [
-       "Dat is «Steunfunctie».",
-       "Dat is «Onderhuids bindweefsel».",
+       "Dat is «Bot».",
        "Dat is «Opperhuid».",
-       "Klopt: organen afschermen."
+       "Klopt: alle botten samen.",
+       "Dat is «Huid»."
       ],
-      "uh": "Onthoud: «Beschermende functie» = organen afschermen."
+      "uh": "Onthoud: «Skelet» = alle botten samen."
      },
      {
       "v": "Welk begrip hoort bij: \"stevig maar buigzaam steunweefsel, bijvoorbeeld in het oor\"?",
       "o": [
-       "Kraakbeen",
        "Bot",
        "Zweetklier",
-       "Beschermende functie"
+       "Beschermende functie",
+       "Kraakbeen"
+      ],
+      "c": 3,
+      "d": 3,
+      "u": "«Kraakbeen»: stevig maar buigzaam steunweefsel, bijvoorbeeld in het oor.",
+      "uo": [
+       "«Bot» betekent hard steunorgaan.",
+       "«Zweetklier» betekent geeft zweet af, koelt.",
+       "«Beschermende functie» betekent organen afschermen.",
+       "Klopt, dit is «Kraakbeen»."
+      ],
+      "uh": "Onthoud: «Kraakbeen» = buigzaam steunweefsel."
+     },
+     {
+      "v": "Welke term hoort bij \"buigzaam steunweefsel\"?",
+      "o": [
+       "Kraakbeen",
+       "Zweetklier",
+       "Beschermende functie",
+       "Steunfunctie"
       ],
       "c": 0,
       "d": 2,
       "u": "«Kraakbeen»: stevig maar buigzaam steunweefsel, bijvoorbeeld in het oor.",
       "uo": [
-       "Klopt, dit is «Kraakbeen».",
-       "«Bot» betekent hard steunorgaan.",
-       "«Zweetklier» betekent geeft zweet af, koelt.",
-       "«Beschermende functie» betekent organen afschermen."
-      ],
-      "uh": "Onthoud: «Kraakbeen» = buigzaam steunweefsel."
-     },
-     {
-      "v": "Wat betekent «Steunfunctie»?",
-      "o": [
-       "het afschermen van organen tegen schade van buiten",
-       "het geven van stevigheid en vorm aan het lichaam",
-       "een hard orgaan dat steun geeft en bloedcellen kan maken",
-       "alle botten samen die het lichaam steun en vorm geven"
-      ],
-      "c": 1,
-      "d": 1,
-      "u": "«Steunfunctie»: het geven van stevigheid en vorm aan het lichaam.",
-      "uo": [
-       "Dat is «Beschermende functie».",
-       "Klopt: stevigheid en vorm.",
-       "Dat is «Bot».",
-       "Dat is «Skelet»."
-      ],
-      "uh": "Onthoud: «Steunfunctie» = stevigheid en vorm."
-     },
-     {
-      "v": "Welke term hoort bij \"buigzaam steunweefsel\"?",
-      "o": [
-       "Zweetklier",
-       "Beschermende functie",
-       "Kraakbeen",
-       "Steunfunctie"
-      ],
-      "c": 2,
-      "d": 2,
-      "u": "«Kraakbeen»: stevig maar buigzaam steunweefsel, bijvoorbeeld in het oor.",
-      "uo": [
+       "Klopt, «Kraakbeen» past hierbij.",
        "«Zweetklier» betekent geeft zweet af, koelt.",
        "«Beschermende functie» betekent organen afschermen.",
-       "Klopt, «Kraakbeen» past hierbij.",
        "«Steunfunctie» betekent stevigheid en vorm."
       ],
       "uh": "Onthoud: «Kraakbeen» = buigzaam steunweefsel."
      },
      {
-      "v": "Wat betekent «Talgklier»?",
+      "v": "Wat betekent «Bot»?",
       "o": [
-       "huidklier die zweet afgeeft en zo het lichaam koelt",
-       "het geven van stevigheid en vorm aan het lichaam",
+       "stevig maar buigzaam steunweefsel, bijvoorbeeld in het oor",
        "een hard orgaan dat steun geeft en bloedcellen kan maken",
-       "huidklier die vet afgeeft en de huid soepel houdt"
+       "alle botten samen die het lichaam steun en vorm geven",
+       "een micro-organisme dat een ziekte kan veroorzaken"
       ],
-      "c": 3,
+      "c": 1,
       "d": 1,
-      "u": "«Talgklier»: huidklier die vet afgeeft en de huid soepel houdt.",
+      "u": "«Bot»: een hard orgaan dat steun geeft en bloedcellen kan maken.",
       "uo": [
-       "Dat is «Zweetklier».",
-       "Dat is «Steunfunctie».",
-       "Dat is «Bot».",
-       "Klopt: geeft huidvet af."
+       "Dat is «Kraakbeen».",
+       "Klopt: hard steunorgaan.",
+       "Dat is «Skelet».",
+       "Dat is «Ziekteverwekker»."
       ],
-      "uh": "Onthoud: «Talgklier» = geeft huidvet af."
+      "uh": "Onthoud: «Bot» = hard steunorgaan."
      },
      {
       "v": "Welk begrip hoort bij: \"het afschermen van organen tegen schade van buiten\"?",
       "o": [
-       "Beschermende functie",
        "Steunfunctie",
        "Onderhuids bindweefsel",
+       "Beschermende functie",
        "Opperhuid"
       ],
-      "c": 0,
-      "d": 2,
+      "c": 2,
+      "d": 3,
       "u": "«Beschermende functie»: het afschermen van organen tegen schade van buiten.",
       "uo": [
-       "Klopt, dit is «Beschermende functie».",
        "«Steunfunctie» betekent stevigheid en vorm.",
        "«Onderhuids bindweefsel» betekent vetlaag, houdt warmte vast.",
+       "Klopt, dit is «Beschermende functie».",
        "«Opperhuid» betekent buitenste huidlaag."
       ],
       "uh": "Onthoud: «Beschermende functie» = organen afschermen."
      },
      {
-      "v": "Wat betekent «Zweetklier»?",
+      "v": "Welke term hoort bij \"organen afschermen\"?",
       "o": [
-       "huidklier die vet afgeeft en de huid soepel houdt",
-       "huidklier die zweet afgeeft en zo het lichaam koelt",
-       "de buitenste laag van de huid",
-       "het orgaan dat het lichaam bedekt en beschermt"
+       "Onderhuids bindweefsel",
+       "Opperhuid",
+       "Kraakbeen",
+       "Beschermende functie"
+      ],
+      "c": 3,
+      "d": 2,
+      "u": "«Beschermende functie»: het afschermen van organen tegen schade van buiten.",
+      "uo": [
+       "«Onderhuids bindweefsel» betekent vetlaag, houdt warmte vast.",
+       "«Opperhuid» betekent buitenste huidlaag.",
+       "«Kraakbeen» betekent buigzaam steunweefsel.",
+       "Klopt, «Beschermende functie» past hierbij."
+      ],
+      "uh": "Onthoud: «Beschermende functie» = organen afschermen."
+     },
+     {
+      "v": "Wat betekent «Beschermende functie»?",
+      "o": [
+       "het afschermen van organen tegen schade van buiten",
+       "het geven van stevigheid en vorm aan het lichaam",
+       "de vetlaag onder de lederhuid die warmte vasthoudt",
+       "de buitenste laag van de huid"
+      ],
+      "c": 0,
+      "d": 1,
+      "u": "«Beschermende functie»: het afschermen van organen tegen schade van buiten.",
+      "uo": [
+       "Klopt: organen afschermen.",
+       "Dat is «Steunfunctie».",
+       "Dat is «Onderhuids bindweefsel».",
+       "Dat is «Opperhuid»."
+      ],
+      "uh": "Onthoud: «Beschermende functie» = organen afschermen."
+     },
+     {
+      "v": "Welk begrip hoort bij: \"het geven van stevigheid en vorm aan het lichaam\"?",
+      "o": [
+       "Beschermende functie",
+       "Steunfunctie",
+       "Bot",
+       "Skelet"
       ],
       "c": 1,
-      "d": 1,
-      "u": "«Zweetklier»: huidklier die zweet afgeeft en zo het lichaam koelt.",
+      "d": 3,
+      "u": "«Steunfunctie»: het geven van stevigheid en vorm aan het lichaam.",
       "uo": [
-       "Dat is «Talgklier».",
-       "Klopt: geeft zweet af, koelt.",
-       "Dat is «Opperhuid».",
-       "Dat is «Huid»."
+       "«Beschermende functie» betekent organen afschermen.",
+       "Klopt, dit is «Steunfunctie».",
+       "«Bot» betekent hard steunorgaan.",
+       "«Skelet» betekent alle botten samen."
       ],
-      "uh": "Onthoud: «Zweetklier» = geeft zweet af, koelt."
+      "uh": "Onthoud: «Steunfunctie» = stevigheid en vorm."
+     },
+     {
+      "v": "Welke term hoort bij \"geeft huidvet af\"?",
+      "o": [
+       "Steunfunctie",
+       "Bot",
+       "Talgklier",
+       "Kraakbeen"
+      ],
+      "c": 2,
+      "d": 2,
+      "u": "«Talgklier»: huidklier die vet afgeeft en de huid soepel houdt.",
+      "uo": [
+       "«Steunfunctie» betekent stevigheid en vorm.",
+       "«Bot» betekent hard steunorgaan.",
+       "Klopt, «Talgklier» past hierbij.",
+       "«Kraakbeen» betekent buigzaam steunweefsel."
+      ],
+      "uh": "Onthoud: «Talgklier» = geeft huidvet af."
+     },
+     {
+      "v": "Wat betekent «Steunfunctie»?",
+      "o": [
+       "het afschermen van organen tegen schade van buiten",
+       "een hard orgaan dat steun geeft en bloedcellen kan maken",
+       "alle botten samen die het lichaam steun en vorm geven",
+       "het geven van stevigheid en vorm aan het lichaam"
+      ],
+      "c": 3,
+      "d": 1,
+      "u": "«Steunfunctie»: het geven van stevigheid en vorm aan het lichaam.",
+      "uo": [
+       "Dat is «Beschermende functie».",
+       "Dat is «Bot».",
+       "Dat is «Skelet».",
+       "Klopt: stevigheid en vorm."
+      ],
+      "uh": "Onthoud: «Steunfunctie» = stevigheid en vorm."
+     },
+     {
+      "v": "Welk begrip hoort bij: \"huidklier die vet afgeeft en de huid soepel houdt\"?",
+      "o": [
+       "Talgklier",
+       "Zweetklier",
+       "Steunfunctie",
+       "Bot"
+      ],
+      "c": 0,
+      "d": 3,
+      "u": "«Talgklier»: huidklier die vet afgeeft en de huid soepel houdt.",
+      "uo": [
+       "Klopt, dit is «Talgklier».",
+       "«Zweetklier» betekent geeft zweet af, koelt.",
+       "«Steunfunctie» betekent stevigheid en vorm.",
+       "«Bot» betekent hard steunorgaan."
+      ],
+      "uh": "Onthoud: «Talgklier» = geeft huidvet af."
+     },
+     {
+      "v": "Welke term hoort bij \"veroorzaakt ziekte\"?",
+      "o": [
+       "Skelet",
+       "Ziekteverwekker",
+       "Bot",
+       "Beschermende functie"
+      ],
+      "c": 1,
+      "d": 2,
+      "u": "«Ziekteverwekker»: een micro-organisme dat een ziekte kan veroorzaken.",
+      "uo": [
+       "«Skelet» betekent alle botten samen.",
+       "Klopt, «Ziekteverwekker» past hierbij.",
+       "«Bot» betekent hard steunorgaan.",
+       "«Beschermende functie» betekent organen afschermen."
+      ],
+      "uh": "Onthoud: «Ziekteverwekker» = veroorzaakt ziekte."
      }
     ],
     "begrippen": [
@@ -1827,95 +1827,38 @@ var VAKKEN_VMBO = [
     "nBeg": 0,
     "sv": [
      {
-      "v": "Welk begrip hoort bij: \"een organisme dat zelf voedsel maakt, meestal een plant\"?",
-      "o": [
-       "Producent",
-       "Consument",
-       "Reducent",
-       "Omnivoor"
-      ],
-      "c": 0,
-      "d": 3,
-      "u": "«Producent»: een organisme dat zelf voedsel maakt, meestal een plant.",
-      "uo": [
-       "Klopt, dit is «Producent».",
-       "«Consument» betekent eet andere organismen.",
-       "«Reducent» betekent breekt dood materiaal af.",
-       "«Omnivoor» betekent alleseter."
-      ],
-      "uh": "Onthoud: «Producent» = maakt zelf voedsel."
-     },
-     {
       "v": "Welk begrip hoort bij: \"een reeks organismen die elkaar opeten, van producent naar consument\"?",
       "o": [
-       "Voedselweb",
        "Voedselketen",
+       "Voedselweb",
        "Reducent",
        "Stikstofkringloop"
       ],
-      "c": 1,
-      "d": 2,
+      "c": 0,
+      "d": 3,
       "u": "«Voedselketen»: een reeks organismen die elkaar opeten, van producent naar consument.",
       "uo": [
-       "«Voedselweb» betekent verbonden voedselketens.",
        "Klopt, dit is «Voedselketen».",
+       "«Voedselweb» betekent verbonden voedselketens.",
        "«Reducent» betekent breekt dood materiaal af.",
        "«Stikstofkringloop» betekent stikstof gaat rond."
       ],
       "uh": "Onthoud: «Voedselketen» = wie eet wie, in een lijn."
      },
      {
-      "v": "Wat betekent «Voedselketen»?",
-      "o": [
-       "meerdere voedselketens die met elkaar verbonden zijn",
-       "een organisme dat dood materiaal afbreekt, zoals een schimmel",
-       "een reeks organismen die elkaar opeten, van producent naar consument",
-       "de kringloop waarin stikstof via bacteriën en planten rondgaat"
-      ],
-      "c": 2,
-      "d": 1,
-      "u": "«Voedselketen»: een reeks organismen die elkaar opeten, van producent naar consument.",
-      "uo": [
-       "Dat is «Voedselweb».",
-       "Dat is «Reducent».",
-       "Klopt: wie eet wie, in een lijn.",
-       "Dat is «Stikstofkringloop»."
-      ],
-      "uh": "Onthoud: «Voedselketen» = wie eet wie, in een lijn."
-     },
-     {
-      "v": "Welk begrip hoort bij: \"een organisme dat andere organismen eet\"?",
-      "o": [
-       "Producent",
-       "Reducent",
-       "Omnivoor",
-       "Consument"
-      ],
-      "c": 3,
-      "d": 3,
-      "u": "«Consument»: een organisme dat andere organismen eet.",
-      "uo": [
-       "«Producent» betekent maakt zelf voedsel.",
-       "«Reducent» betekent breekt dood materiaal af.",
-       "«Omnivoor» betekent alleseter.",
-       "Klopt, dit is «Consument»."
-      ],
-      "uh": "Onthoud: «Consument» = eet andere organismen."
-     },
-     {
       "v": "Welke term hoort bij \"wie eet wie, in een lijn\"?",
       "o": [
-       "Voedselketen",
        "Reducent",
+       "Voedselketen",
        "Stikstofkringloop",
        "Koolstofkringloop"
       ],
-      "c": 0,
+      "c": 1,
       "d": 2,
       "u": "«Voedselketen»: een reeks organismen die elkaar opeten, van producent naar consument.",
       "uo": [
-       "Klopt, «Voedselketen» past hierbij.",
        "«Reducent» betekent breekt dood materiaal af.",
+       "Klopt, «Voedselketen» past hierbij.",
        "«Stikstofkringloop» betekent stikstof gaat rond.",
        "«Koolstofkringloop» betekent koolstof gaat rond."
       ],
@@ -1925,39 +1868,20 @@ var VAKKEN_VMBO = [
       "v": "Wat betekent «Voedselweb»?",
       "o": [
        "een reeks organismen die elkaar opeten, van producent naar consument",
-       "meerdere voedselketens die met elkaar verbonden zijn",
        "een dier dat zowel planten als dieren eet",
+       "meerdere voedselketens die met elkaar verbonden zijn",
        "een organisme dat andere organismen eet"
       ],
-      "c": 1,
+      "c": 2,
       "d": 1,
       "u": "«Voedselweb»: meerdere voedselketens die met elkaar verbonden zijn.",
       "uo": [
        "Dat is «Voedselketen».",
-       "Klopt: verbonden voedselketens.",
        "Dat is «Omnivoor».",
+       "Klopt: verbonden voedselketens.",
        "Dat is «Consument»."
       ],
       "uh": "Onthoud: «Voedselweb» = verbonden voedselketens."
-     },
-     {
-      "v": "Welk begrip hoort bij: \"een organisme dat dood materiaal afbreekt, zoals een schimmel\"?",
-      "o": [
-       "Producent",
-       "Consument",
-       "Reducent",
-       "Omnivoor"
-      ],
-      "c": 2,
-      "d": 3,
-      "u": "«Reducent»: een organisme dat dood materiaal afbreekt, zoals een schimmel.",
-      "uo": [
-       "«Producent» betekent maakt zelf voedsel.",
-       "«Consument» betekent eet andere organismen.",
-       "Klopt, dit is «Reducent».",
-       "«Omnivoor» betekent alleseter."
-      ],
-      "uh": "Onthoud: «Reducent» = breekt dood materiaal af."
      },
      {
       "v": "Welk begrip hoort bij: \"meerdere voedselketens die met elkaar verbonden zijn\"?",
@@ -1968,7 +1892,7 @@ var VAKKEN_VMBO = [
        "Voedselweb"
       ],
       "c": 3,
-      "d": 2,
+      "d": 3,
       "u": "«Voedselweb»: meerdere voedselketens die met elkaar verbonden zijn.",
       "uo": [
        "«Voedselketen» betekent wie eet wie, in een lijn.",
@@ -1979,194 +1903,118 @@ var VAKKEN_VMBO = [
       "uh": "Onthoud: «Voedselweb» = verbonden voedselketens."
      },
      {
-      "v": "Wat betekent «Producent»?",
-      "o": [
-       "een organisme dat zelf voedsel maakt, meestal een plant",
-       "een organisme dat andere organismen eet",
-       "een organisme dat dood materiaal afbreekt, zoals een schimmel",
-       "een dier dat zowel planten als dieren eet"
-      ],
-      "c": 0,
-      "d": 1,
-      "u": "«Producent»: een organisme dat zelf voedsel maakt, meestal een plant.",
-      "uo": [
-       "Klopt: maakt zelf voedsel.",
-       "Dat is «Consument».",
-       "Dat is «Reducent».",
-       "Dat is «Omnivoor»."
-      ],
-      "uh": "Onthoud: «Producent» = maakt zelf voedsel."
-     },
-     {
-      "v": "Welk begrip hoort bij: \"een dier dat alleen planten eet\"?",
-      "o": [
-       "Carnivoor",
-       "Herbivoor",
-       "Omnivoor",
-       "Stikstofkringloop"
-      ],
-      "c": 1,
-      "d": 3,
-      "u": "«Herbivoor»: een dier dat alleen planten eet.",
-      "uo": [
-       "«Carnivoor» betekent vleeseter.",
-       "Klopt, dit is «Herbivoor».",
-       "«Omnivoor» betekent alleseter.",
-       "«Stikstofkringloop» betekent stikstof gaat rond."
-      ],
-      "uh": "Onthoud: «Herbivoor» = planteneter."
-     },
-     {
-      "v": "Welke term hoort bij \"verbonden voedselketens\"?",
-      "o": [
-       "Omnivoor",
-       "Consument",
-       "Voedselweb",
-       "Producent"
-      ],
-      "c": 2,
-      "d": 2,
-      "u": "«Voedselweb»: meerdere voedselketens die met elkaar verbonden zijn.",
-      "uo": [
-       "«Omnivoor» betekent alleseter.",
-       "«Consument» betekent eet andere organismen.",
-       "Klopt, «Voedselweb» past hierbij.",
-       "«Producent» betekent maakt zelf voedsel."
-      ],
-      "uh": "Onthoud: «Voedselweb» = verbonden voedselketens."
-     },
-     {
-      "v": "Wat betekent «Consument»?",
-      "o": [
-       "een organisme dat zelf voedsel maakt, meestal een plant",
-       "een organisme dat dood materiaal afbreekt, zoals een schimmel",
-       "een dier dat zowel planten als dieren eet",
-       "een organisme dat andere organismen eet"
-      ],
-      "c": 3,
-      "d": 1,
-      "u": "«Consument»: een organisme dat andere organismen eet.",
-      "uo": [
-       "Dat is «Producent».",
-       "Dat is «Reducent».",
-       "Dat is «Omnivoor».",
-       "Klopt: eet andere organismen."
-      ],
-      "uh": "Onthoud: «Consument» = eet andere organismen."
-     },
-     {
-      "v": "Welk begrip hoort bij: \"een dier dat andere dieren eet\"?",
-      "o": [
-       "Carnivoor",
-       "Herbivoor",
-       "Omnivoor",
-       "Stikstofkringloop"
-      ],
-      "c": 0,
-      "d": 3,
-      "u": "«Carnivoor»: een dier dat andere dieren eet.",
-      "uo": [
-       "Klopt, dit is «Carnivoor».",
-       "«Herbivoor» betekent planteneter.",
-       "«Omnivoor» betekent alleseter.",
-       "«Stikstofkringloop» betekent stikstof gaat rond."
-      ],
-      "uh": "Onthoud: «Carnivoor» = vleeseter."
-     },
-     {
       "v": "Welke term hoort bij \"maakt zelf voedsel\"?",
       "o": [
-       "Omnivoor",
        "Producent",
+       "Omnivoor",
        "Stikstofkringloop",
        "Herbivoor"
       ],
-      "c": 1,
+      "c": 0,
       "d": 2,
       "u": "«Producent»: een organisme dat zelf voedsel maakt, meestal een plant.",
       "uo": [
-       "«Omnivoor» betekent alleseter.",
        "Klopt, «Producent» past hierbij.",
+       "«Omnivoor» betekent alleseter.",
        "«Stikstofkringloop» betekent stikstof gaat rond.",
        "«Herbivoor» betekent planteneter."
       ],
       "uh": "Onthoud: «Producent» = maakt zelf voedsel."
      },
      {
-      "v": "Wat betekent «Reducent»?",
+      "v": "Wat betekent «Producent»?",
       "o": [
-       "een organisme dat zelf voedsel maakt, meestal een plant",
        "een organisme dat andere organismen eet",
+       "een organisme dat zelf voedsel maakt, meestal een plant",
        "een organisme dat dood materiaal afbreekt, zoals een schimmel",
        "een dier dat zowel planten als dieren eet"
       ],
-      "c": 2,
+      "c": 1,
       "d": 1,
-      "u": "«Reducent»: een organisme dat dood materiaal afbreekt, zoals een schimmel.",
+      "u": "«Producent»: een organisme dat zelf voedsel maakt, meestal een plant.",
       "uo": [
-       "Dat is «Producent».",
        "Dat is «Consument».",
-       "Klopt: breekt dood materiaal af.",
+       "Klopt: maakt zelf voedsel.",
+       "Dat is «Reducent».",
        "Dat is «Omnivoor»."
       ],
-      "uh": "Onthoud: «Reducent» = breekt dood materiaal af."
+      "uh": "Onthoud: «Producent» = maakt zelf voedsel."
      },
      {
-      "v": "Welk begrip hoort bij: \"een dier dat zowel planten als dieren eet\"?",
+      "v": "Welk begrip hoort bij: \"een organisme dat zelf voedsel maakt, meestal een plant\"?",
       "o": [
-       "Herbivoor",
-       "Carnivoor",
-       "Stikstofkringloop",
+       "Consument",
+       "Reducent",
+       "Producent",
        "Omnivoor"
       ],
-      "c": 3,
+      "c": 2,
       "d": 3,
-      "u": "«Omnivoor»: een dier dat zowel planten als dieren eet.",
+      "u": "«Producent»: een organisme dat zelf voedsel maakt, meestal een plant.",
       "uo": [
-       "«Herbivoor» betekent planteneter.",
-       "«Carnivoor» betekent vleeseter.",
-       "«Stikstofkringloop» betekent stikstof gaat rond.",
-       "Klopt, dit is «Omnivoor»."
+       "«Consument» betekent eet andere organismen.",
+       "«Reducent» betekent breekt dood materiaal af.",
+       "Klopt, dit is «Producent».",
+       "«Omnivoor» betekent alleseter."
       ],
-      "uh": "Onthoud: «Omnivoor» = alleseter."
+      "uh": "Onthoud: «Producent» = maakt zelf voedsel."
      },
      {
       "v": "Welke term hoort bij \"eet andere organismen\"?",
       "o": [
-       "Consument",
        "Omnivoor",
        "Stikstofkringloop",
-       "Herbivoor"
+       "Herbivoor",
+       "Consument"
       ],
-      "c": 0,
+      "c": 3,
       "d": 2,
       "u": "«Consument»: een organisme dat andere organismen eet.",
       "uo": [
-       "Klopt, «Consument» past hierbij.",
        "«Omnivoor» betekent alleseter.",
        "«Stikstofkringloop» betekent stikstof gaat rond.",
-       "«Herbivoor» betekent planteneter."
+       "«Herbivoor» betekent planteneter.",
+       "Klopt, «Consument» past hierbij."
       ],
       "uh": "Onthoud: «Consument» = eet andere organismen."
      },
      {
-      "v": "Wat betekent «Fotosynthese»?",
+      "v": "Wat betekent «Consument»?",
       "o": [
-       "het vrijmaken van energie uit voedingsstoffen met zuurstof",
-       "het maken van glucose uit koolstofdioxide en water met licht",
+       "een organisme dat andere organismen eet",
        "een organisme dat zelf voedsel maakt, meestal een plant",
-       "de kringloop waarin stikstof via bacteriën en planten rondgaat"
+       "een organisme dat dood materiaal afbreekt, zoals een schimmel",
+       "een dier dat zowel planten als dieren eet"
+      ],
+      "c": 0,
+      "d": 1,
+      "u": "«Consument»: een organisme dat andere organismen eet.",
+      "uo": [
+       "Klopt: eet andere organismen.",
+       "Dat is «Producent».",
+       "Dat is «Reducent».",
+       "Dat is «Omnivoor»."
+      ],
+      "uh": "Onthoud: «Consument» = eet andere organismen."
+     },
+     {
+      "v": "Welk begrip hoort bij: \"een organisme dat andere organismen eet\"?",
+      "o": [
+       "Producent",
+       "Consument",
+       "Reducent",
+       "Omnivoor"
       ],
       "c": 1,
-      "d": 1,
-      "u": "«Fotosynthese»: het maken van glucose uit koolstofdioxide en water met licht.",
+      "d": 3,
+      "u": "«Consument»: een organisme dat andere organismen eet.",
       "uo": [
-       "Dat is «Verbranding».",
-       "Klopt: suiker maken met licht.",
-       "Dat is «Producent».",
-       "Dat is «Stikstofkringloop»."
+       "«Producent» betekent maakt zelf voedsel.",
+       "Klopt, dit is «Consument».",
+       "«Reducent» betekent breekt dood materiaal af.",
+       "«Omnivoor» betekent alleseter."
       ],
-      "uh": "Onthoud: «Fotosynthese» = suiker maken met licht."
+      "uh": "Onthoud: «Consument» = eet andere organismen."
      },
      {
       "v": "Welke term hoort bij \"breekt dood materiaal af\"?",
@@ -2188,137 +2036,289 @@ var VAKKEN_VMBO = [
       "uh": "Onthoud: «Reducent» = breekt dood materiaal af."
      },
      {
+      "v": "Wat betekent «Fotosynthese»?",
+      "o": [
+       "het vrijmaken van energie uit voedingsstoffen met zuurstof",
+       "een organisme dat zelf voedsel maakt, meestal een plant",
+       "de kringloop waarin stikstof via bacteriën en planten rondgaat",
+       "het maken van glucose uit koolstofdioxide en water met licht"
+      ],
+      "c": 3,
+      "d": 1,
+      "u": "«Fotosynthese»: het maken van glucose uit koolstofdioxide en water met licht.",
+      "uo": [
+       "Dat is «Verbranding».",
+       "Dat is «Producent».",
+       "Dat is «Stikstofkringloop».",
+       "Klopt: suiker maken met licht."
+      ],
+      "uh": "Onthoud: «Fotosynthese» = suiker maken met licht."
+     },
+     {
+      "v": "Welk begrip hoort bij: \"een organisme dat dood materiaal afbreekt, zoals een schimmel\"?",
+      "o": [
+       "Reducent",
+       "Producent",
+       "Consument",
+       "Omnivoor"
+      ],
+      "c": 0,
+      "d": 3,
+      "u": "«Reducent»: een organisme dat dood materiaal afbreekt, zoals een schimmel.",
+      "uo": [
+       "Klopt, dit is «Reducent».",
+       "«Producent» betekent maakt zelf voedsel.",
+       "«Consument» betekent eet andere organismen.",
+       "«Omnivoor» betekent alleseter."
+      ],
+      "uh": "Onthoud: «Reducent» = breekt dood materiaal af."
+     },
+     {
+      "v": "Welke term hoort bij \"suiker maken met licht\"?",
+      "o": [
+       "Producent",
+       "Fotosynthese",
+       "Stikstofkringloop",
+       "Koolstofkringloop"
+      ],
+      "c": 1,
+      "d": 2,
+      "u": "«Fotosynthese»: het maken van glucose uit koolstofdioxide en water met licht.",
+      "uo": [
+       "«Producent» betekent maakt zelf voedsel.",
+       "Klopt, «Fotosynthese» past hierbij.",
+       "«Stikstofkringloop» betekent stikstof gaat rond.",
+       "«Koolstofkringloop» betekent koolstof gaat rond."
+      ],
+      "uh": "Onthoud: «Fotosynthese» = suiker maken met licht."
+     },
+     {
       "v": "Wat betekent «Verbranding»?",
       "o": [
        "het maken van glucose uit koolstofdioxide en water met licht",
        "een dier dat andere dieren eet",
-       "een organisme dat dood materiaal afbreekt, zoals een schimmel",
-       "het vrijmaken van energie uit voedingsstoffen met zuurstof"
+       "het vrijmaken van energie uit voedingsstoffen met zuurstof",
+       "een organisme dat dood materiaal afbreekt, zoals een schimmel"
       ],
-      "c": 3,
+      "c": 2,
       "d": 1,
       "u": "«Verbranding»: het vrijmaken van energie uit voedingsstoffen met zuurstof.",
       "uo": [
        "Dat is «Fotosynthese».",
        "Dat is «Carnivoor».",
-       "Dat is «Reducent».",
-       "Klopt: energie vrijmaken met zuurstof."
+       "Klopt: energie vrijmaken met zuurstof.",
+       "Dat is «Reducent»."
       ],
       "uh": "Onthoud: «Verbranding» = energie vrijmaken met zuurstof."
      },
      {
       "v": "Welk begrip hoort bij: \"het maken van glucose uit koolstofdioxide en water met licht\"?",
       "o": [
-       "Fotosynthese",
        "Verbranding",
        "Producent",
-       "Stikstofkringloop"
+       "Stikstofkringloop",
+       "Fotosynthese"
+      ],
+      "c": 3,
+      "d": 3,
+      "u": "«Fotosynthese»: het maken van glucose uit koolstofdioxide en water met licht.",
+      "uo": [
+       "«Verbranding» betekent energie vrijmaken met zuurstof.",
+       "«Producent» betekent maakt zelf voedsel.",
+       "«Stikstofkringloop» betekent stikstof gaat rond.",
+       "Klopt, dit is «Fotosynthese»."
+      ],
+      "uh": "Onthoud: «Fotosynthese» = suiker maken met licht."
+     },
+     {
+      "v": "Welke term hoort bij \"planteneter\"?",
+      "o": [
+       "Herbivoor",
+       "Stikstofkringloop",
+       "Fotosynthese",
+       "Verbranding"
       ],
       "c": 0,
       "d": 2,
-      "u": "«Fotosynthese»: het maken van glucose uit koolstofdioxide en water met licht.",
+      "u": "«Herbivoor»: een dier dat alleen planten eet.",
       "uo": [
-       "Klopt, dit is «Fotosynthese».",
-       "«Verbranding» betekent energie vrijmaken met zuurstof.",
-       "«Producent» betekent maakt zelf voedsel.",
-       "«Stikstofkringloop» betekent stikstof gaat rond."
-      ],
-      "uh": "Onthoud: «Fotosynthese» = suiker maken met licht."
-     },
-     {
-      "v": "Wat betekent «Koolstofkringloop»?",
-      "o": [
-       "de kringloop waarin stikstof via bacteriën en planten rondgaat",
-       "de kringloop waarin koolstof tussen organismen en lucht rondgaat",
-       "een leefgebied met alle organismen en hun omgeving samen",
-       "meerdere voedselketens die met elkaar verbonden zijn"
-      ],
-      "c": 1,
-      "d": 1,
-      "u": "«Koolstofkringloop»: de kringloop waarin koolstof tussen organismen en lucht rondgaat.",
-      "uo": [
-       "Dat is «Stikstofkringloop».",
-       "Klopt: koolstof gaat rond.",
-       "Dat is «Ecosysteem».",
-       "Dat is «Voedselweb»."
-      ],
-      "uh": "Onthoud: «Koolstofkringloop» = koolstof gaat rond."
-     },
-     {
-      "v": "Welke term hoort bij \"suiker maken met licht\"?",
-      "o": [
-       "Producent",
-       "Stikstofkringloop",
-       "Fotosynthese",
-       "Koolstofkringloop"
-      ],
-      "c": 2,
-      "d": 2,
-      "u": "«Fotosynthese»: het maken van glucose uit koolstofdioxide en water met licht.",
-      "uo": [
-       "«Producent» betekent maakt zelf voedsel.",
+       "Klopt, «Herbivoor» past hierbij.",
        "«Stikstofkringloop» betekent stikstof gaat rond.",
-       "Klopt, «Fotosynthese» past hierbij.",
-       "«Koolstofkringloop» betekent koolstof gaat rond."
+       "«Fotosynthese» betekent suiker maken met licht.",
+       "«Verbranding» betekent energie vrijmaken met zuurstof."
       ],
-      "uh": "Onthoud: «Fotosynthese» = suiker maken met licht."
+      "uh": "Onthoud: «Herbivoor» = planteneter."
      },
      {
       "v": "Wat betekent «Stikstofkringloop»?",
       "o": [
        "de kringloop waarin koolstof tussen organismen en lucht rondgaat",
+       "de kringloop waarin stikstof via bacteriën en planten rondgaat",
        "een leefgebied met alle organismen en hun omgeving samen",
-       "meerdere voedselketens die met elkaar verbonden zijn",
-       "de kringloop waarin stikstof via bacteriën en planten rondgaat"
+       "meerdere voedselketens die met elkaar verbonden zijn"
       ],
-      "c": 3,
+      "c": 1,
       "d": 1,
       "u": "«Stikstofkringloop»: de kringloop waarin stikstof via bacteriën en planten rondgaat.",
       "uo": [
        "Dat is «Koolstofkringloop».",
+       "Klopt: stikstof gaat rond.",
        "Dat is «Ecosysteem».",
-       "Dat is «Voedselweb».",
-       "Klopt: stikstof gaat rond."
+       "Dat is «Voedselweb»."
       ],
       "uh": "Onthoud: «Stikstofkringloop» = stikstof gaat rond."
      },
      {
       "v": "Welk begrip hoort bij: \"het vrijmaken van energie uit voedingsstoffen met zuurstof\"?",
       "o": [
-       "Verbranding",
        "Fotosynthese",
        "Carnivoor",
+       "Verbranding",
        "Reducent"
       ],
-      "c": 0,
-      "d": 2,
+      "c": 2,
+      "d": 3,
       "u": "«Verbranding»: het vrijmaken van energie uit voedingsstoffen met zuurstof.",
       "uo": [
-       "Klopt, dit is «Verbranding».",
        "«Fotosynthese» betekent suiker maken met licht.",
        "«Carnivoor» betekent vleeseter.",
+       "Klopt, dit is «Verbranding».",
        "«Reducent» betekent breekt dood materiaal af."
       ],
       "uh": "Onthoud: «Verbranding» = energie vrijmaken met zuurstof."
      },
      {
+      "v": "Welke term hoort bij \"vleeseter\"?",
+      "o": [
+       "Stikstofkringloop",
+       "Fotosynthese",
+       "Verbranding",
+       "Carnivoor"
+      ],
+      "c": 3,
+      "d": 2,
+      "u": "«Carnivoor»: een dier dat andere dieren eet.",
+      "uo": [
+       "«Stikstofkringloop» betekent stikstof gaat rond.",
+       "«Fotosynthese» betekent suiker maken met licht.",
+       "«Verbranding» betekent energie vrijmaken met zuurstof.",
+       "Klopt, «Carnivoor» past hierbij."
+      ],
+      "uh": "Onthoud: «Carnivoor» = vleeseter."
+     },
+     {
       "v": "Wat betekent «Herbivoor»?",
       "o": [
-       "een dier dat andere dieren eet",
        "een dier dat alleen planten eet",
+       "een dier dat andere dieren eet",
        "een dier dat zowel planten als dieren eet",
        "de kringloop waarin stikstof via bacteriën en planten rondgaat"
       ],
-      "c": 1,
+      "c": 0,
       "d": 1,
       "u": "«Herbivoor»: een dier dat alleen planten eet.",
       "uo": [
-       "Dat is «Carnivoor».",
        "Klopt: planteneter.",
+       "Dat is «Carnivoor».",
        "Dat is «Omnivoor».",
        "Dat is «Stikstofkringloop»."
       ],
       "uh": "Onthoud: «Herbivoor» = planteneter."
+     },
+     {
+      "v": "Welk begrip hoort bij: \"de kringloop waarin koolstof tussen organismen en lucht rondgaat\"?",
+      "o": [
+       "Stikstofkringloop",
+       "Koolstofkringloop",
+       "Ecosysteem",
+       "Voedselweb"
+      ],
+      "c": 1,
+      "d": 3,
+      "u": "«Koolstofkringloop»: de kringloop waarin koolstof tussen organismen en lucht rondgaat.",
+      "uo": [
+       "«Stikstofkringloop» betekent stikstof gaat rond.",
+       "Klopt, dit is «Koolstofkringloop».",
+       "«Ecosysteem» betekent organismen plus omgeving.",
+       "«Voedselweb» betekent verbonden voedselketens."
+      ],
+      "uh": "Onthoud: «Koolstofkringloop» = koolstof gaat rond."
+     },
+     {
+      "v": "Welke term hoort bij \"alleseter\"?",
+      "o": [
+       "Stikstofkringloop",
+       "Ecosysteem",
+       "Omnivoor",
+       "Voedselketen"
+      ],
+      "c": 2,
+      "d": 2,
+      "u": "«Omnivoor»: een dier dat zowel planten als dieren eet.",
+      "uo": [
+       "«Stikstofkringloop» betekent stikstof gaat rond.",
+       "«Ecosysteem» betekent organismen plus omgeving.",
+       "Klopt, «Omnivoor» past hierbij.",
+       "«Voedselketen» betekent wie eet wie, in een lijn."
+      ],
+      "uh": "Onthoud: «Omnivoor» = alleseter."
+     },
+     {
+      "v": "Wat betekent «Carnivoor»?",
+      "o": [
+       "een dier dat alleen planten eet",
+       "een dier dat zowel planten als dieren eet",
+       "de kringloop waarin stikstof via bacteriën en planten rondgaat",
+       "een dier dat andere dieren eet"
+      ],
+      "c": 3,
+      "d": 1,
+      "u": "«Carnivoor»: een dier dat andere dieren eet.",
+      "uo": [
+       "Dat is «Herbivoor».",
+       "Dat is «Omnivoor».",
+       "Dat is «Stikstofkringloop».",
+       "Klopt: vleeseter."
+      ],
+      "uh": "Onthoud: «Carnivoor» = vleeseter."
+     },
+     {
+      "v": "Welk begrip hoort bij: \"de kringloop waarin stikstof via bacteriën en planten rondgaat\"?",
+      "o": [
+       "Stikstofkringloop",
+       "Koolstofkringloop",
+       "Ecosysteem",
+       "Voedselweb"
+      ],
+      "c": 0,
+      "d": 3,
+      "u": "«Stikstofkringloop»: de kringloop waarin stikstof via bacteriën en planten rondgaat.",
+      "uo": [
+       "Klopt, dit is «Stikstofkringloop».",
+       "«Koolstofkringloop» betekent koolstof gaat rond.",
+       "«Ecosysteem» betekent organismen plus omgeving.",
+       "«Voedselweb» betekent verbonden voedselketens."
+      ],
+      "uh": "Onthoud: «Stikstofkringloop» = stikstof gaat rond."
+     },
+     {
+      "v": "Welke term hoort bij \"organismen plus omgeving\"?",
+      "o": [
+       "Carnivoor",
+       "Ecosysteem",
+       "Producent",
+       "Voedselketen"
+      ],
+      "c": 1,
+      "d": 2,
+      "u": "«Ecosysteem»: een leefgebied met alle organismen en hun omgeving samen.",
+      "uo": [
+       "«Carnivoor» betekent vleeseter.",
+       "Klopt, «Ecosysteem» past hierbij.",
+       "«Producent» betekent maakt zelf voedsel.",
+       "«Voedselketen» betekent wie eet wie, in een lijn."
+      ],
+      "uh": "Onthoud: «Ecosysteem» = organismen plus omgeving."
      }
     ],
     "begrippen": [
@@ -2392,289 +2392,137 @@ var VAKKEN_VMBO = [
     "nBeg": 0,
     "sv": [
      {
-      "v": "Welk begrip hoort bij: \"grondstoffen steeds opnieuw gebruiken in plaats van weggooien\"?",
-      "o": [
-       "Kringloopdenken",
-       "Duurzaamheid",
-       "Recycling",
-       "Biodiversiteit"
-      ],
-      "c": 0,
-      "d": 3,
-      "u": "«Kringloopdenken»: grondstoffen steeds opnieuw gebruiken in plaats van weggooien.",
-      "uo": [
-       "Klopt, dit is «Kringloopdenken».",
-       "«Duurzaamheid» betekent toekomstbestendig leven.",
-       "«Recycling» betekent afval hergebruiken.",
-       "«Biodiversiteit» betekent soortenrijkdom."
-      ],
-      "uh": "Onthoud: «Kringloopdenken» = grondstoffen hergebruiken."
-     },
-     {
-      "v": "Welk begrip hoort bij: \"het toevoegen van schadelijke stoffen aan lucht, water of bodem\"?",
-      "o": [
-       "Broeikaseffect",
-       "Milieuvervuiling",
-       "Fijnstof",
-       "Biodiversiteit"
-      ],
-      "c": 1,
-      "d": 2,
-      "u": "«Milieuvervuiling»: het toevoegen van schadelijke stoffen aan lucht, water of bodem.",
-      "uo": [
-       "«Broeikaseffect» betekent aarde warmt op.",
-       "Klopt, dit is «Milieuvervuiling».",
-       "«Fijnstof» betekent schadelijke luchtdeeltjes.",
-       "«Biodiversiteit» betekent soortenrijkdom."
-      ],
-      "uh": "Onthoud: «Milieuvervuiling» = schadelijke stoffen lozen."
-     },
-     {
-      "v": "Wat betekent «Milieuvervuiling»?",
-      "o": [
-       "het opwarmen van de aarde door broeikasgassen in de lucht",
-       "kleine zwevende deeltjes in de lucht die schadelijk zijn",
-       "het toevoegen van schadelijke stoffen aan lucht, water of bodem",
-       "de verscheidenheid aan soorten in een gebied"
-      ],
-      "c": 2,
-      "d": 1,
-      "u": "«Milieuvervuiling»: het toevoegen van schadelijke stoffen aan lucht, water of bodem.",
-      "uo": [
-       "Dat is «Broeikaseffect».",
-       "Dat is «Fijnstof».",
-       "Klopt: schadelijke stoffen lozen.",
-       "Dat is «Biodiversiteit»."
-      ],
-      "uh": "Onthoud: «Milieuvervuiling» = schadelijke stoffen lozen."
-     },
-     {
-      "v": "Welke term hoort bij \"schadelijke stoffen lozen\"?",
-      "o": [
-       "Fijnstof",
-       "Biodiversiteit",
-       "Recycling",
-       "Milieuvervuiling"
-      ],
-      "c": 3,
-      "d": 2,
-      "u": "«Milieuvervuiling»: het toevoegen van schadelijke stoffen aan lucht, water of bodem.",
-      "uo": [
-       "«Fijnstof» betekent schadelijke luchtdeeltjes.",
-       "«Biodiversiteit» betekent soortenrijkdom.",
-       "«Recycling» betekent afval hergebruiken.",
-       "Klopt, «Milieuvervuiling» past hierbij."
-      ],
-      "uh": "Onthoud: «Milieuvervuiling» = schadelijke stoffen lozen."
-     },
-     {
-      "v": "Wat betekent «Broeikaseffect»?",
-      "o": [
-       "het opwarmen van de aarde door broeikasgassen in de lucht",
-       "het toevoegen van schadelijke stoffen aan lucht, water of bodem",
-       "afval verwerken tot nieuwe grondstoffen of producten",
-       "een natuurlijke stof waarvan je iets maakt"
-      ],
-      "c": 0,
-      "d": 1,
-      "u": "«Broeikaseffect»: het opwarmen van de aarde door broeikasgassen in de lucht.",
-      "uo": [
-       "Klopt: aarde warmt op.",
-       "Dat is «Milieuvervuiling».",
-       "Dat is «Recycling».",
-       "Dat is «Grondstof»."
-      ],
-      "uh": "Onthoud: «Broeikaseffect» = aarde warmt op."
-     },
-     {
       "v": "Welk begrip hoort bij: \"het opwarmen van de aarde door broeikasgassen in de lucht\"?",
       "o": [
-       "Milieuvervuiling",
        "Broeikaseffect",
+       "Milieuvervuiling",
        "Recycling",
        "Grondstof"
       ],
-      "c": 1,
-      "d": 2,
+      "c": 0,
+      "d": 3,
       "u": "«Broeikaseffect»: het opwarmen van de aarde door broeikasgassen in de lucht.",
       "uo": [
-       "«Milieuvervuiling» betekent schadelijke stoffen lozen.",
        "Klopt, dit is «Broeikaseffect».",
+       "«Milieuvervuiling» betekent schadelijke stoffen lozen.",
        "«Recycling» betekent afval hergebruiken.",
        "«Grondstof» betekent basismateriaal."
       ],
       "uh": "Onthoud: «Broeikaseffect» = aarde warmt op."
      },
      {
-      "v": "Wat betekent «Broeikasgas»?",
-      "o": [
-       "kleine zwevende deeltjes in de lucht die schadelijk zijn",
-       "afval verwerken tot nieuwe grondstoffen of producten",
-       "een gas zoals koolstofdioxide dat warmte vasthoudt",
-       "grondstoffen steeds opnieuw gebruiken in plaats van weggooien"
-      ],
-      "c": 2,
-      "d": 1,
-      "u": "«Broeikasgas»: een gas zoals koolstofdioxide dat warmte vasthoudt.",
-      "uo": [
-       "Dat is «Fijnstof».",
-       "Dat is «Recycling».",
-       "Klopt: gas dat warmte vasthoudt.",
-       "Dat is «Kringloopdenken»."
-      ],
-      "uh": "Onthoud: «Broeikasgas» = gas dat warmte vasthoudt."
-     },
-     {
       "v": "Welke term hoort bij \"aarde warmt op\"?",
       "o": [
        "Recycling",
+       "Broeikaseffect",
        "Grondstof",
-       "Fossiele brandstof",
-       "Broeikaseffect"
+       "Fossiele brandstof"
       ],
-      "c": 3,
+      "c": 1,
       "d": 2,
       "u": "«Broeikaseffect»: het opwarmen van de aarde door broeikasgassen in de lucht.",
       "uo": [
        "«Recycling» betekent afval hergebruiken.",
+       "Klopt, «Broeikaseffect» past hierbij.",
        "«Grondstof» betekent basismateriaal.",
-       "«Fossiele brandstof» betekent olie, gas en kolen.",
-       "Klopt, «Broeikaseffect» past hierbij."
+       "«Fossiele brandstof» betekent olie, gas en kolen."
       ],
       "uh": "Onthoud: «Broeikaseffect» = aarde warmt op."
      },
      {
-      "v": "Wat betekent «Duurzaamheid»?",
+      "v": "Wat betekent «Broeikaseffect»?",
       "o": [
-       "zo leven dat er ook voor de toekomst genoeg overblijft",
-       "grondstoffen steeds opnieuw gebruiken in plaats van weggooien",
-       "brandstof uit resten van organismen, zoals olie en gas",
-       "energie uit bronnen die niet opraken, zoals zon en wind"
+       "het toevoegen van schadelijke stoffen aan lucht, water of bodem",
+       "afval verwerken tot nieuwe grondstoffen of producten",
+       "het opwarmen van de aarde door broeikasgassen in de lucht",
+       "een natuurlijke stof waarvan je iets maakt"
       ],
-      "c": 0,
+      "c": 2,
       "d": 1,
-      "u": "«Duurzaamheid»: zo leven dat er ook voor de toekomst genoeg overblijft.",
+      "u": "«Broeikaseffect»: het opwarmen van de aarde door broeikasgassen in de lucht.",
       "uo": [
-       "Klopt: toekomstbestendig leven.",
-       "Dat is «Kringloopdenken».",
-       "Dat is «Fossiele brandstof».",
-       "Dat is «Duurzame energie»."
+       "Dat is «Milieuvervuiling».",
+       "Dat is «Recycling».",
+       "Klopt: aarde warmt op.",
+       "Dat is «Grondstof»."
       ],
-      "uh": "Onthoud: «Duurzaamheid» = toekomstbestendig leven."
+      "uh": "Onthoud: «Broeikaseffect» = aarde warmt op."
      },
      {
       "v": "Welk begrip hoort bij: \"een gas zoals koolstofdioxide dat warmte vasthoudt\"?",
       "o": [
        "Fijnstof",
-       "Broeikasgas",
        "Recycling",
-       "Kringloopdenken"
+       "Kringloopdenken",
+       "Broeikasgas"
       ],
-      "c": 1,
-      "d": 2,
+      "c": 3,
+      "d": 3,
       "u": "«Broeikasgas»: een gas zoals koolstofdioxide dat warmte vasthoudt.",
       "uo": [
        "«Fijnstof» betekent schadelijke luchtdeeltjes.",
-       "Klopt, dit is «Broeikasgas».",
        "«Recycling» betekent afval hergebruiken.",
-       "«Kringloopdenken» betekent grondstoffen hergebruiken."
+       "«Kringloopdenken» betekent grondstoffen hergebruiken.",
+       "Klopt, dit is «Broeikasgas»."
       ],
       "uh": "Onthoud: «Broeikasgas» = gas dat warmte vasthoudt."
-     },
-     {
-      "v": "Wat betekent «Kringloopdenken»?",
-      "o": [
-       "zo leven dat er ook voor de toekomst genoeg overblijft",
-       "afval verwerken tot nieuwe grondstoffen of producten",
-       "grondstoffen steeds opnieuw gebruiken in plaats van weggooien",
-       "de verscheidenheid aan soorten in een gebied"
-      ],
-      "c": 2,
-      "d": 1,
-      "u": "«Kringloopdenken»: grondstoffen steeds opnieuw gebruiken in plaats van weggooien.",
-      "uo": [
-       "Dat is «Duurzaamheid».",
-       "Dat is «Recycling».",
-       "Klopt: grondstoffen hergebruiken.",
-       "Dat is «Biodiversiteit»."
-      ],
-      "uh": "Onthoud: «Kringloopdenken» = grondstoffen hergebruiken."
      },
      {
       "v": "Welke term hoort bij \"gas dat warmte vasthoudt\"?",
       "o": [
+       "Broeikasgas",
        "Recycling",
        "Kringloopdenken",
-       "Milieuvervuiling",
-       "Broeikasgas"
+       "Milieuvervuiling"
       ],
-      "c": 3,
+      "c": 0,
       "d": 2,
       "u": "«Broeikasgas»: een gas zoals koolstofdioxide dat warmte vasthoudt.",
       "uo": [
+       "Klopt, «Broeikasgas» past hierbij.",
        "«Recycling» betekent afval hergebruiken.",
        "«Kringloopdenken» betekent grondstoffen hergebruiken.",
-       "«Milieuvervuiling» betekent schadelijke stoffen lozen.",
-       "Klopt, «Broeikasgas» past hierbij."
+       "«Milieuvervuiling» betekent schadelijke stoffen lozen."
       ],
       "uh": "Onthoud: «Broeikasgas» = gas dat warmte vasthoudt."
      },
      {
-      "v": "Wat betekent «Recycling»?",
+      "v": "Wat betekent «Broeikasgas»?",
       "o": [
-       "afval verwerken tot nieuwe grondstoffen of producten",
-       "grondstoffen steeds opnieuw gebruiken in plaats van weggooien",
        "kleine zwevende deeltjes in de lucht die schadelijk zijn",
-       "brandstof uit resten van organismen, zoals olie en gas"
+       "een gas zoals koolstofdioxide dat warmte vasthoudt",
+       "afval verwerken tot nieuwe grondstoffen of producten",
+       "grondstoffen steeds opnieuw gebruiken in plaats van weggooien"
       ],
-      "c": 0,
+      "c": 1,
       "d": 1,
-      "u": "«Recycling»: afval verwerken tot nieuwe grondstoffen of producten.",
+      "u": "«Broeikasgas»: een gas zoals koolstofdioxide dat warmte vasthoudt.",
       "uo": [
-       "Klopt: afval hergebruiken.",
-       "Dat is «Kringloopdenken».",
        "Dat is «Fijnstof».",
-       "Dat is «Fossiele brandstof»."
+       "Klopt: gas dat warmte vasthoudt.",
+       "Dat is «Recycling».",
+       "Dat is «Kringloopdenken»."
       ],
-      "uh": "Onthoud: «Recycling» = afval hergebruiken."
+      "uh": "Onthoud: «Broeikasgas» = gas dat warmte vasthoudt."
      },
      {
       "v": "Welk begrip hoort bij: \"zo leven dat er ook voor de toekomst genoeg overblijft\"?",
       "o": [
        "Kringloopdenken",
-       "Duurzaamheid",
        "Fossiele brandstof",
+       "Duurzaamheid",
        "Duurzame energie"
       ],
-      "c": 1,
-      "d": 2,
+      "c": 2,
+      "d": 3,
       "u": "«Duurzaamheid»: zo leven dat er ook voor de toekomst genoeg overblijft.",
       "uo": [
        "«Kringloopdenken» betekent grondstoffen hergebruiken.",
-       "Klopt, dit is «Duurzaamheid».",
        "«Fossiele brandstof» betekent olie, gas en kolen.",
+       "Klopt, dit is «Duurzaamheid».",
        "«Duurzame energie» betekent energie die niet opraakt."
       ],
       "uh": "Onthoud: «Duurzaamheid» = toekomstbestendig leven."
-     },
-     {
-      "v": "Wat betekent «Duurzame energie»?",
-      "o": [
-       "brandstof uit resten van organismen, zoals olie en gas",
-       "kleine zwevende deeltjes in de lucht die schadelijk zijn",
-       "energie uit bronnen die niet opraken, zoals zon en wind",
-       "de verscheidenheid aan soorten in een gebied"
-      ],
-      "c": 2,
-      "d": 1,
-      "u": "«Duurzame energie»: energie uit bronnen die niet opraken, zoals zon en wind.",
-      "uo": [
-       "Dat is «Fossiele brandstof».",
-       "Dat is «Fijnstof».",
-       "Klopt: energie die niet opraakt.",
-       "Dat is «Biodiversiteit»."
-      ],
-      "uh": "Onthoud: «Duurzame energie» = energie die niet opraakt."
      },
      {
       "v": "Welke term hoort bij \"toekomstbestendig leven\"?",
@@ -2696,99 +2544,99 @@ var VAKKEN_VMBO = [
       "uh": "Onthoud: «Duurzaamheid» = toekomstbestendig leven."
      },
      {
-      "v": "Wat betekent «Fossiele brandstof»?",
+      "v": "Wat betekent «Duurzaamheid»?",
       "o": [
+       "zo leven dat er ook voor de toekomst genoeg overblijft",
+       "grondstoffen steeds opnieuw gebruiken in plaats van weggooien",
        "brandstof uit resten van organismen, zoals olie en gas",
-       "energie uit bronnen die niet opraken, zoals zon en wind",
-       "een gas zoals koolstofdioxide dat warmte vasthoudt",
-       "een natuurlijke stof waarvan je iets maakt"
+       "energie uit bronnen die niet opraken, zoals zon en wind"
       ],
       "c": 0,
       "d": 1,
-      "u": "«Fossiele brandstof»: brandstof uit resten van organismen, zoals olie en gas.",
+      "u": "«Duurzaamheid»: zo leven dat er ook voor de toekomst genoeg overblijft.",
       "uo": [
-       "Klopt: olie, gas en kolen.",
-       "Dat is «Duurzame energie».",
-       "Dat is «Broeikasgas».",
-       "Dat is «Grondstof»."
+       "Klopt: toekomstbestendig leven.",
+       "Dat is «Kringloopdenken».",
+       "Dat is «Fossiele brandstof».",
+       "Dat is «Duurzame energie»."
       ],
-      "uh": "Onthoud: «Fossiele brandstof» = olie, gas en kolen."
-     },
-     {
-      "v": "Welke term hoort bij \"grondstoffen hergebruiken\"?",
-      "o": [
-       "Biodiversiteit",
-       "Kringloopdenken",
-       "Duurzame energie",
-       "Broeikasgas"
-      ],
-      "c": 1,
-      "d": 2,
-      "u": "«Kringloopdenken»: grondstoffen steeds opnieuw gebruiken in plaats van weggooien.",
-      "uo": [
-       "«Biodiversiteit» betekent soortenrijkdom.",
-       "Klopt, «Kringloopdenken» past hierbij.",
-       "«Duurzame energie» betekent energie die niet opraakt.",
-       "«Broeikasgas» betekent gas dat warmte vasthoudt."
-      ],
-      "uh": "Onthoud: «Kringloopdenken» = grondstoffen hergebruiken."
-     },
-     {
-      "v": "Wat betekent «Biodiversiteit»?",
-      "o": [
-       "een gas zoals koolstofdioxide dat warmte vasthoudt",
-       "kleine zwevende deeltjes in de lucht die schadelijk zijn",
-       "de verscheidenheid aan soorten in een gebied",
-       "materiaal dat door reducenten wordt afgebroken"
-      ],
-      "c": 2,
-      "d": 1,
-      "u": "«Biodiversiteit»: de verscheidenheid aan soorten in een gebied.",
-      "uo": [
-       "Dat is «Broeikasgas».",
-       "Dat is «Fijnstof».",
-       "Klopt: soortenrijkdom.",
-       "Dat is «Afbreekbaar»."
-      ],
-      "uh": "Onthoud: «Biodiversiteit» = soortenrijkdom."
+      "uh": "Onthoud: «Duurzaamheid» = toekomstbestendig leven."
      },
      {
       "v": "Welk begrip hoort bij: \"afval verwerken tot nieuwe grondstoffen of producten\"?",
       "o": [
        "Kringloopdenken",
+       "Recycling",
        "Fijnstof",
-       "Fossiele brandstof",
-       "Recycling"
+       "Fossiele brandstof"
       ],
-      "c": 3,
-      "d": 2,
+      "c": 1,
+      "d": 3,
       "u": "«Recycling»: afval verwerken tot nieuwe grondstoffen of producten.",
       "uo": [
        "«Kringloopdenken» betekent grondstoffen hergebruiken.",
+       "Klopt, dit is «Recycling».",
        "«Fijnstof» betekent schadelijke luchtdeeltjes.",
-       "«Fossiele brandstof» betekent olie, gas en kolen.",
-       "Klopt, dit is «Recycling»."
+       "«Fossiele brandstof» betekent olie, gas en kolen."
       ],
       "uh": "Onthoud: «Recycling» = afval hergebruiken."
      },
      {
-      "v": "Wat betekent «Afbreekbaar»?",
+      "v": "Welke term hoort bij \"grondstoffen hergebruiken\"?",
       "o": [
-       "materiaal dat door reducenten wordt afgebroken",
-       "afval verwerken tot nieuwe grondstoffen of producten",
+       "Biodiversiteit",
+       "Duurzame energie",
+       "Kringloopdenken",
+       "Broeikasgas"
+      ],
+      "c": 2,
+      "d": 2,
+      "u": "«Kringloopdenken»: grondstoffen steeds opnieuw gebruiken in plaats van weggooien.",
+      "uo": [
+       "«Biodiversiteit» betekent soortenrijkdom.",
+       "«Duurzame energie» betekent energie die niet opraakt.",
+       "Klopt, «Kringloopdenken» past hierbij.",
+       "«Broeikasgas» betekent gas dat warmte vasthoudt."
+      ],
+      "uh": "Onthoud: «Kringloopdenken» = grondstoffen hergebruiken."
+     },
+     {
+      "v": "Wat betekent «Recycling»?",
+      "o": [
        "grondstoffen steeds opnieuw gebruiken in plaats van weggooien",
-       "zo leven dat er ook voor de toekomst genoeg overblijft"
+       "kleine zwevende deeltjes in de lucht die schadelijk zijn",
+       "brandstof uit resten van organismen, zoals olie en gas",
+       "afval verwerken tot nieuwe grondstoffen of producten"
+      ],
+      "c": 3,
+      "d": 1,
+      "u": "«Recycling»: afval verwerken tot nieuwe grondstoffen of producten.",
+      "uo": [
+       "Dat is «Kringloopdenken».",
+       "Dat is «Fijnstof».",
+       "Dat is «Fossiele brandstof».",
+       "Klopt: afval hergebruiken."
+      ],
+      "uh": "Onthoud: «Recycling» = afval hergebruiken."
+     },
+     {
+      "v": "Welk begrip hoort bij: \"energie uit bronnen die niet opraken, zoals zon en wind\"?",
+      "o": [
+       "Duurzame energie",
+       "Fossiele brandstof",
+       "Fijnstof",
+       "Biodiversiteit"
       ],
       "c": 0,
-      "d": 1,
-      "u": "«Afbreekbaar»: materiaal dat door reducenten wordt afgebroken.",
+      "d": 3,
+      "u": "«Duurzame energie»: energie uit bronnen die niet opraken, zoals zon en wind.",
       "uo": [
-       "Klopt: wordt afgebroken.",
-       "Dat is «Recycling».",
-       "Dat is «Kringloopdenken».",
-       "Dat is «Duurzaamheid»."
+       "Klopt, dit is «Duurzame energie».",
+       "«Fossiele brandstof» betekent olie, gas en kolen.",
+       "«Fijnstof» betekent schadelijke luchtdeeltjes.",
+       "«Biodiversiteit» betekent soortenrijkdom."
       ],
-      "uh": "Onthoud: «Afbreekbaar» = wordt afgebroken."
+      "uh": "Onthoud: «Duurzame energie» = energie die niet opraakt."
      },
      {
       "v": "Welke term hoort bij \"afval hergebruiken\"?",
@@ -2810,42 +2658,194 @@ var VAKKEN_VMBO = [
       "uh": "Onthoud: «Recycling» = afval hergebruiken."
      },
      {
-      "v": "Wat betekent «Fijnstof»?",
+      "v": "Wat betekent «Duurzame energie»?",
       "o": [
-       "een gas zoals koolstofdioxide dat warmte vasthoudt",
-       "materiaal dat door reducenten wordt afgebroken",
+       "brandstof uit resten van organismen, zoals olie en gas",
        "kleine zwevende deeltjes in de lucht die schadelijk zijn",
-       "een natuurlijke stof waarvan je iets maakt"
+       "energie uit bronnen die niet opraken, zoals zon en wind",
+       "de verscheidenheid aan soorten in een gebied"
       ],
       "c": 2,
       "d": 1,
+      "u": "«Duurzame energie»: energie uit bronnen die niet opraken, zoals zon en wind.",
+      "uo": [
+       "Dat is «Fossiele brandstof».",
+       "Dat is «Fijnstof».",
+       "Klopt: energie die niet opraakt.",
+       "Dat is «Biodiversiteit»."
+      ],
+      "uh": "Onthoud: «Duurzame energie» = energie die niet opraakt."
+     },
+     {
+      "v": "Welk begrip hoort bij: \"materiaal dat door reducenten wordt afgebroken\"?",
+      "o": [
+       "Recycling",
+       "Kringloopdenken",
+       "Duurzaamheid",
+       "Afbreekbaar"
+      ],
+      "c": 3,
+      "d": 3,
+      "u": "«Afbreekbaar»: materiaal dat door reducenten wordt afgebroken.",
+      "uo": [
+       "«Recycling» betekent afval hergebruiken.",
+       "«Kringloopdenken» betekent grondstoffen hergebruiken.",
+       "«Duurzaamheid» betekent toekomstbestendig leven.",
+       "Klopt, dit is «Afbreekbaar»."
+      ],
+      "uh": "Onthoud: «Afbreekbaar» = wordt afgebroken."
+     },
+     {
+      "v": "Welke term hoort bij \"wordt afgebroken\"?",
+      "o": [
+       "Afbreekbaar",
+       "Kringloopdenken",
+       "Duurzaamheid",
+       "Milieuvervuiling"
+      ],
+      "c": 0,
+      "d": 2,
+      "u": "«Afbreekbaar»: materiaal dat door reducenten wordt afgebroken.",
+      "uo": [
+       "Klopt, «Afbreekbaar» past hierbij.",
+       "«Kringloopdenken» betekent grondstoffen hergebruiken.",
+       "«Duurzaamheid» betekent toekomstbestendig leven.",
+       "«Milieuvervuiling» betekent schadelijke stoffen lozen."
+      ],
+      "uh": "Onthoud: «Afbreekbaar» = wordt afgebroken."
+     },
+     {
+      "v": "Wat betekent «Fossiele brandstof»?",
+      "o": [
+       "energie uit bronnen die niet opraken, zoals zon en wind",
+       "brandstof uit resten van organismen, zoals olie en gas",
+       "een gas zoals koolstofdioxide dat warmte vasthoudt",
+       "een natuurlijke stof waarvan je iets maakt"
+      ],
+      "c": 1,
+      "d": 1,
+      "u": "«Fossiele brandstof»: brandstof uit resten van organismen, zoals olie en gas.",
+      "uo": [
+       "Dat is «Duurzame energie».",
+       "Klopt: olie, gas en kolen.",
+       "Dat is «Broeikasgas».",
+       "Dat is «Grondstof»."
+      ],
+      "uh": "Onthoud: «Fossiele brandstof» = olie, gas en kolen."
+     },
+     {
+      "v": "Welk begrip hoort bij: \"kleine zwevende deeltjes in de lucht die schadelijk zijn\"?",
+      "o": [
+       "Broeikasgas",
+       "Afbreekbaar",
+       "Fijnstof",
+       "Grondstof"
+      ],
+      "c": 2,
+      "d": 3,
       "u": "«Fijnstof»: kleine zwevende deeltjes in de lucht die schadelijk zijn.",
       "uo": [
-       "Dat is «Broeikasgas».",
-       "Dat is «Afbreekbaar».",
-       "Klopt: schadelijke luchtdeeltjes.",
-       "Dat is «Grondstof»."
+       "«Broeikasgas» betekent gas dat warmte vasthoudt.",
+       "«Afbreekbaar» betekent wordt afgebroken.",
+       "Klopt, dit is «Fijnstof».",
+       "«Grondstof» betekent basismateriaal."
       ],
       "uh": "Onthoud: «Fijnstof» = schadelijke luchtdeeltjes."
      },
      {
-      "v": "Welk begrip hoort bij: \"energie uit bronnen die niet opraken, zoals zon en wind\"?",
+      "v": "Welke term hoort bij \"schadelijke luchtdeeltjes\"?",
       "o": [
-       "Fossiele brandstof",
-       "Fijnstof",
-       "Biodiversiteit",
-       "Duurzame energie"
+       "Afbreekbaar",
+       "Grondstof",
+       "Milieuvervuiling",
+       "Fijnstof"
       ],
       "c": 3,
       "d": 2,
-      "u": "«Duurzame energie»: energie uit bronnen die niet opraken, zoals zon en wind.",
+      "u": "«Fijnstof»: kleine zwevende deeltjes in de lucht die schadelijk zijn.",
+      "uo": [
+       "«Afbreekbaar» betekent wordt afgebroken.",
+       "«Grondstof» betekent basismateriaal.",
+       "«Milieuvervuiling» betekent schadelijke stoffen lozen.",
+       "Klopt, «Fijnstof» past hierbij."
+      ],
+      "uh": "Onthoud: «Fijnstof» = schadelijke luchtdeeltjes."
+     },
+     {
+      "v": "Wat betekent «Biodiversiteit»?",
+      "o": [
+       "de verscheidenheid aan soorten in een gebied",
+       "een gas zoals koolstofdioxide dat warmte vasthoudt",
+       "kleine zwevende deeltjes in de lucht die schadelijk zijn",
+       "materiaal dat door reducenten wordt afgebroken"
+      ],
+      "c": 0,
+      "d": 1,
+      "u": "«Biodiversiteit»: de verscheidenheid aan soorten in een gebied.",
+      "uo": [
+       "Klopt: soortenrijkdom.",
+       "Dat is «Broeikasgas».",
+       "Dat is «Fijnstof».",
+       "Dat is «Afbreekbaar»."
+      ],
+      "uh": "Onthoud: «Biodiversiteit» = soortenrijkdom."
+     },
+     {
+      "v": "Welk begrip hoort bij: \"een natuurlijke stof waarvan je iets maakt\"?",
+      "o": [
+       "Fossiele brandstof",
+       "Grondstof",
+       "Afbreekbaar",
+       "Recycling"
+      ],
+      "c": 1,
+      "d": 3,
+      "u": "«Grondstof»: een natuurlijke stof waarvan je iets maakt.",
       "uo": [
        "«Fossiele brandstof» betekent olie, gas en kolen.",
-       "«Fijnstof» betekent schadelijke luchtdeeltjes.",
-       "«Biodiversiteit» betekent soortenrijkdom.",
-       "Klopt, dit is «Duurzame energie»."
+       "Klopt, dit is «Grondstof».",
+       "«Afbreekbaar» betekent wordt afgebroken.",
+       "«Recycling» betekent afval hergebruiken."
       ],
-      "uh": "Onthoud: «Duurzame energie» = energie die niet opraakt."
+      "uh": "Onthoud: «Grondstof» = basismateriaal."
+     },
+     {
+      "v": "Welke term hoort bij \"basismateriaal\"?",
+      "o": [
+       "Afbreekbaar",
+       "Recycling",
+       "Grondstof",
+       "Duurzame energie"
+      ],
+      "c": 2,
+      "d": 2,
+      "u": "«Grondstof»: een natuurlijke stof waarvan je iets maakt.",
+      "uo": [
+       "«Afbreekbaar» betekent wordt afgebroken.",
+       "«Recycling» betekent afval hergebruiken.",
+       "Klopt, «Grondstof» past hierbij.",
+       "«Duurzame energie» betekent energie die niet opraakt."
+      ],
+      "uh": "Onthoud: «Grondstof» = basismateriaal."
+     },
+     {
+      "v": "Wat betekent «Afbreekbaar»?",
+      "o": [
+       "afval verwerken tot nieuwe grondstoffen of producten",
+       "grondstoffen steeds opnieuw gebruiken in plaats van weggooien",
+       "zo leven dat er ook voor de toekomst genoeg overblijft",
+       "materiaal dat door reducenten wordt afgebroken"
+      ],
+      "c": 3,
+      "d": 1,
+      "u": "«Afbreekbaar»: materiaal dat door reducenten wordt afgebroken.",
+      "uo": [
+       "Dat is «Recycling».",
+       "Dat is «Kringloopdenken».",
+       "Dat is «Duurzaamheid».",
+       "Klopt: wordt afgebroken."
+      ],
+      "uh": "Onthoud: «Afbreekbaar» = wordt afgebroken."
      },
      {
       "v": "Wat betekent «Grondstof»?",
@@ -2867,23 +2867,23 @@ var VAKKEN_VMBO = [
       "uh": "Onthoud: «Grondstof» = basismateriaal."
      },
      {
-      "v": "Welke term hoort bij \"energie die niet opraakt\"?",
+      "v": "Welk begrip hoort bij: \"het toevoegen van schadelijke stoffen aan lucht, water of bodem\"?",
       "o": [
+       "Broeikaseffect",
+       "Milieuvervuiling",
        "Fijnstof",
-       "Duurzame energie",
-       "Biodiversiteit",
-       "Duurzaamheid"
+       "Biodiversiteit"
       ],
       "c": 1,
-      "d": 2,
-      "u": "«Duurzame energie»: energie uit bronnen die niet opraken, zoals zon en wind.",
+      "d": 3,
+      "u": "«Milieuvervuiling»: het toevoegen van schadelijke stoffen aan lucht, water of bodem.",
       "uo": [
+       "«Broeikaseffect» betekent aarde warmt op.",
+       "Klopt, dit is «Milieuvervuiling».",
        "«Fijnstof» betekent schadelijke luchtdeeltjes.",
-       "Klopt, «Duurzame energie» past hierbij.",
-       "«Biodiversiteit» betekent soortenrijkdom.",
-       "«Duurzaamheid» betekent toekomstbestendig leven."
+       "«Biodiversiteit» betekent soortenrijkdom."
       ],
-      "uh": "Onthoud: «Duurzame energie» = energie die niet opraakt."
+      "uh": "Onthoud: «Milieuvervuiling» = schadelijke stoffen lozen."
      }
     ],
     "begrippen": [
@@ -3048,78 +3048,40 @@ var VAKKEN_VMBO = [
       "uh": "Onthoud: «Gewrichtsband» = houdt botten bijeen."
      },
      {
-      "v": "Wat betekent «Gewrichtsband»?",
+      "v": "Wat betekent «Pees»?",
       "o": [
-       "stevig weefsel dat een spier aan een bot vastmaakt",
        "stevig weefsel dat botten in een gewricht bij elkaar houdt",
-       "een beweegbare verbinding tussen twee botten",
-       "het omhulsel om een gewricht met smeervloeistof"
+       "stevig weefsel dat een spier aan een bot vastmaakt",
+       "vloeistof die de wrijving in een gewricht verkleint",
+       "een gewricht dat in alle richtingen kan draaien, zoals de schouder"
       ],
       "c": 1,
       "d": 1,
-      "u": "«Gewrichtsband»: stevig weefsel dat botten in een gewricht bij elkaar houdt.",
+      "u": "«Pees»: stevig weefsel dat een spier aan een bot vastmaakt.",
       "uo": [
-       "Dat is «Pees».",
-       "Klopt: houdt botten bijeen.",
-       "Dat is «Gewricht».",
-       "Dat is «Gewrichtskapsel»."
+       "Dat is «Gewrichtsband».",
+       "Klopt: verbindt spier met bot.",
+       "Dat is «Gewrichtssmeer».",
+       "Dat is «Kogelgewricht»."
       ],
-      "uh": "Onthoud: «Gewrichtsband» = houdt botten bijeen."
-     },
-     {
-      "v": "Welk begrip hoort bij: \"een spier die de tegengestelde beweging maakt\"?",
-      "o": [
-       "Buigspier",
-       "Strekspier",
-       "Antagonist",
-       "Gewricht"
-      ],
-      "c": 2,
-      "d": 3,
-      "u": "«Antagonist»: een spier die de tegengestelde beweging maakt.",
-      "uo": [
-       "«Buigspier» betekent buigt een gewricht.",
-       "«Strekspier» betekent strekt een gewricht.",
-       "Klopt, dit is «Antagonist».",
-       "«Gewricht» betekent beweegbare botverbinding."
-      ],
-      "uh": "Onthoud: «Antagonist» = tegenwerkende spier."
+      "uh": "Onthoud: «Pees» = verbindt spier met bot."
      },
      {
       "v": "Welk begrip hoort bij: \"stevig weefsel dat een spier aan een bot vastmaakt\"?",
       "o": [
        "Gewrichtsband",
        "Gewrichtssmeer",
-       "Kogelgewricht",
-       "Pees"
+       "Pees",
+       "Kogelgewricht"
       ],
-      "c": 3,
-      "d": 2,
+      "c": 2,
+      "d": 3,
       "u": "«Pees»: stevig weefsel dat een spier aan een bot vastmaakt.",
       "uo": [
        "«Gewrichtsband» betekent houdt botten bijeen.",
        "«Gewrichtssmeer» betekent vermindert wrijving.",
-       "«Kogelgewricht» betekent draait alle richtingen.",
-       "Klopt, dit is «Pees»."
-      ],
-      "uh": "Onthoud: «Pees» = verbindt spier met bot."
-     },
-     {
-      "v": "Wat betekent «Pees»?",
-      "o": [
-       "stevig weefsel dat een spier aan een bot vastmaakt",
-       "stevig weefsel dat botten in een gewricht bij elkaar houdt",
-       "vloeistof die de wrijving in een gewricht verkleint",
-       "een gewricht dat in alle richtingen kan draaien, zoals de schouder"
-      ],
-      "c": 0,
-      "d": 1,
-      "u": "«Pees»: stevig weefsel dat een spier aan een bot vastmaakt.",
-      "uo": [
-       "Klopt: verbindt spier met bot.",
-       "Dat is «Gewrichtsband».",
-       "Dat is «Gewrichtssmeer».",
-       "Dat is «Kogelgewricht»."
+       "Klopt, dit is «Pees».",
+       "«Kogelgewricht» betekent draait alle richtingen."
       ],
       "uh": "Onthoud: «Pees» = verbindt spier met bot."
      },
@@ -3127,36 +3089,36 @@ var VAKKEN_VMBO = [
       "v": "Welke term hoort bij \"verbindt spier met bot\"?",
       "o": [
        "Gewrichtssmeer",
-       "Pees",
        "Kogelgewricht",
-       "Strekspier"
+       "Strekspier",
+       "Pees"
       ],
-      "c": 1,
+      "c": 3,
       "d": 2,
       "u": "«Pees»: stevig weefsel dat een spier aan een bot vastmaakt.",
       "uo": [
        "«Gewrichtssmeer» betekent vermindert wrijving.",
-       "Klopt, «Pees» past hierbij.",
        "«Kogelgewricht» betekent draait alle richtingen.",
-       "«Strekspier» betekent strekt een gewricht."
+       "«Strekspier» betekent strekt een gewricht.",
+       "Klopt, «Pees» past hierbij."
       ],
       "uh": "Onthoud: «Pees» = verbindt spier met bot."
      },
      {
       "v": "Wat betekent «Spier»?",
       "o": [
+       "een orgaan dat kan samentrekken en zo beweging maakt",
        "stevig weefsel dat een spier aan een bot vastmaakt",
        "een gewricht dat maar in één richting buigt, zoals de knie",
-       "een orgaan dat kan samentrekken en zo beweging maakt",
        "een gewricht dat in alle richtingen kan draaien, zoals de schouder"
       ],
-      "c": 2,
+      "c": 0,
       "d": 1,
       "u": "«Spier»: een orgaan dat kan samentrekken en zo beweging maakt.",
       "uo": [
+       "Klopt: trekt samen, beweegt.",
        "Dat is «Pees».",
        "Dat is «Scharniergewricht».",
-       "Klopt: trekt samen, beweegt.",
        "Dat is «Kogelgewricht»."
       ],
       "uh": "Onthoud: «Spier» = trekt samen, beweegt."
@@ -3165,115 +3127,77 @@ var VAKKEN_VMBO = [
       "v": "Welk begrip hoort bij: \"een orgaan dat kan samentrekken en zo beweging maakt\"?",
       "o": [
        "Pees",
+       "Spier",
        "Scharniergewricht",
-       "Kogelgewricht",
-       "Spier"
+       "Kogelgewricht"
       ],
-      "c": 3,
-      "d": 2,
+      "c": 1,
+      "d": 3,
       "u": "«Spier»: een orgaan dat kan samentrekken en zo beweging maakt.",
       "uo": [
        "«Pees» betekent verbindt spier met bot.",
+       "Klopt, dit is «Spier».",
+       "«Scharniergewricht» betekent buigt één richting.",
+       "«Kogelgewricht» betekent draait alle richtingen."
+      ],
+      "uh": "Onthoud: «Spier» = trekt samen, beweegt."
+     },
+     {
+      "v": "Welke term hoort bij \"trekt samen, beweegt\"?",
+      "o": [
+       "Scharniergewricht",
+       "Kogelgewricht",
+       "Spier",
+       "Gewrichtssmeer"
+      ],
+      "c": 2,
+      "d": 2,
+      "u": "«Spier»: een orgaan dat kan samentrekken en zo beweging maakt.",
+      "uo": [
        "«Scharniergewricht» betekent buigt één richting.",
        "«Kogelgewricht» betekent draait alle richtingen.",
-       "Klopt, dit is «Spier»."
+       "Klopt, «Spier» past hierbij.",
+       "«Gewrichtssmeer» betekent vermindert wrijving."
       ],
       "uh": "Onthoud: «Spier» = trekt samen, beweegt."
      },
      {
       "v": "Wat betekent «Buigspier»?",
       "o": [
-       "een spier die een gewricht buigt",
        "een spier die een gewricht strekt",
        "een gewricht dat maar in één richting buigt, zoals de knie",
-       "het omhulsel om een gewricht met smeervloeistof"
+       "het omhulsel om een gewricht met smeervloeistof",
+       "een spier die een gewricht buigt"
       ],
-      "c": 0,
+      "c": 3,
       "d": 1,
       "u": "«Buigspier»: een spier die een gewricht buigt.",
       "uo": [
-       "Klopt: buigt een gewricht.",
        "Dat is «Strekspier».",
        "Dat is «Scharniergewricht».",
-       "Dat is «Gewrichtskapsel»."
+       "Dat is «Gewrichtskapsel».",
+       "Klopt: buigt een gewricht."
       ],
       "uh": "Onthoud: «Buigspier» = buigt een gewricht."
-     },
-     {
-      "v": "Welke term hoort bij \"trekt samen, beweegt\"?",
-      "o": [
-       "Scharniergewricht",
-       "Spier",
-       "Kogelgewricht",
-       "Gewrichtssmeer"
-      ],
-      "c": 1,
-      "d": 2,
-      "u": "«Spier»: een orgaan dat kan samentrekken en zo beweging maakt.",
-      "uo": [
-       "«Scharniergewricht» betekent buigt één richting.",
-       "Klopt, «Spier» past hierbij.",
-       "«Kogelgewricht» betekent draait alle richtingen.",
-       "«Gewrichtssmeer» betekent vermindert wrijving."
-      ],
-      "uh": "Onthoud: «Spier» = trekt samen, beweegt."
-     },
-     {
-      "v": "Wat betekent «Strekspier»?",
-      "o": [
-       "een spier die een gewricht buigt",
-       "stevig weefsel dat botten in een gewricht bij elkaar houdt",
-       "een spier die een gewricht strekt",
-       "een beweegbare verbinding tussen twee botten"
-      ],
-      "c": 2,
-      "d": 1,
-      "u": "«Strekspier»: een spier die een gewricht strekt.",
-      "uo": [
-       "Dat is «Buigspier».",
-       "Dat is «Gewrichtsband».",
-       "Klopt: strekt een gewricht.",
-       "Dat is «Gewricht»."
-      ],
-      "uh": "Onthoud: «Strekspier» = strekt een gewricht."
      },
      {
       "v": "Welk begrip hoort bij: \"een spier die een gewricht buigt\"?",
       "o": [
+       "Buigspier",
        "Strekspier",
        "Scharniergewricht",
-       "Gewrichtskapsel",
-       "Buigspier"
-      ],
-      "c": 3,
-      "d": 2,
-      "u": "«Buigspier»: een spier die een gewricht buigt.",
-      "uo": [
-       "«Strekspier» betekent strekt een gewricht.",
-       "«Scharniergewricht» betekent buigt één richting.",
-       "«Gewrichtskapsel» betekent omhulsel met smeer.",
-       "Klopt, dit is «Buigspier»."
-      ],
-      "uh": "Onthoud: «Buigspier» = buigt een gewricht."
-     },
-     {
-      "v": "Wat betekent «Antagonist»?",
-      "o": [
-       "een spier die de tegengestelde beweging maakt",
-       "een spier die een gewricht buigt",
-       "een spier die een gewricht strekt",
-       "een beweegbare verbinding tussen twee botten"
+       "Gewrichtskapsel"
       ],
       "c": 0,
-      "d": 1,
-      "u": "«Antagonist»: een spier die de tegengestelde beweging maakt.",
+      "d": 3,
+      "u": "«Buigspier»: een spier die een gewricht buigt.",
       "uo": [
-       "Klopt: tegenwerkende spier.",
-       "Dat is «Buigspier».",
-       "Dat is «Strekspier».",
-       "Dat is «Gewricht»."
+       "Klopt, dit is «Buigspier».",
+       "«Strekspier» betekent strekt een gewricht.",
+       "«Scharniergewricht» betekent buigt één richting.",
+       "«Gewrichtskapsel» betekent omhulsel met smeer."
       ],
-      "uh": "Onthoud: «Antagonist» = tegenwerkende spier."
+      "uh": "Onthoud: «Buigspier» = buigt een gewricht."
      },
      {
       "v": "Welke term hoort bij \"buigt een gewricht\"?",
@@ -3295,23 +3219,23 @@ var VAKKEN_VMBO = [
       "uh": "Onthoud: «Buigspier» = buigt een gewricht."
      },
      {
-      "v": "Wat betekent «Gewrichtskapsel»?",
+      "v": "Wat betekent «Strekspier»?",
       "o": [
-       "stevig weefsel dat botten in een gewricht bij elkaar houdt",
        "een spier die een gewricht buigt",
-       "het omhulsel om een gewricht met smeervloeistof",
-       "een spier die een gewricht strekt"
+       "stevig weefsel dat botten in een gewricht bij elkaar houdt",
+       "een spier die een gewricht strekt",
+       "een beweegbare verbinding tussen twee botten"
       ],
       "c": 2,
       "d": 1,
-      "u": "«Gewrichtskapsel»: het omhulsel om een gewricht met smeervloeistof.",
+      "u": "«Strekspier»: een spier die een gewricht strekt.",
       "uo": [
-       "Dat is «Gewrichtsband».",
        "Dat is «Buigspier».",
-       "Klopt: omhulsel met smeer.",
-       "Dat is «Strekspier»."
+       "Dat is «Gewrichtsband».",
+       "Klopt: strekt een gewricht.",
+       "Dat is «Gewricht»."
       ],
-      "uh": "Onthoud: «Gewrichtskapsel» = omhulsel met smeer."
+      "uh": "Onthoud: «Strekspier» = strekt een gewricht."
      },
      {
       "v": "Welk begrip hoort bij: \"een spier die een gewricht strekt\"?",
@@ -3322,7 +3246,7 @@ var VAKKEN_VMBO = [
        "Strekspier"
       ],
       "c": 3,
-      "d": 2,
+      "d": 3,
       "u": "«Strekspier»: een spier die een gewricht strekt.",
       "uo": [
        "«Buigspier» betekent buigt een gewricht.",
@@ -3333,61 +3257,61 @@ var VAKKEN_VMBO = [
       "uh": "Onthoud: «Strekspier» = strekt een gewricht."
      },
      {
-      "v": "Wat betekent «Gewrichtssmeer»?",
-      "o": [
-       "vloeistof die de wrijving in een gewricht verkleint",
-       "buigzaam steunweefsel dat de botuiteinden bedekt",
-       "een orgaan dat kan samentrekken en zo beweging maakt",
-       "een gewricht dat in alle richtingen kan draaien, zoals de schouder"
-      ],
-      "c": 0,
-      "d": 1,
-      "u": "«Gewrichtssmeer»: vloeistof die de wrijving in een gewricht verkleint.",
-      "uo": [
-       "Klopt: vermindert wrijving.",
-       "Dat is «Kraakbeen».",
-       "Dat is «Spier».",
-       "Dat is «Kogelgewricht»."
-      ],
-      "uh": "Onthoud: «Gewrichtssmeer» = vermindert wrijving."
-     },
-     {
       "v": "Welke term hoort bij \"strekt een gewricht\"?",
       "o": [
-       "Gewrichtsband",
        "Strekspier",
+       "Gewrichtsband",
        "Gewricht",
        "Gewrichtskapsel"
       ],
-      "c": 1,
+      "c": 0,
       "d": 2,
       "u": "«Strekspier»: een spier die een gewricht strekt.",
       "uo": [
-       "«Gewrichtsband» betekent houdt botten bijeen.",
        "Klopt, «Strekspier» past hierbij.",
+       "«Gewrichtsband» betekent houdt botten bijeen.",
        "«Gewricht» betekent beweegbare botverbinding.",
        "«Gewrichtskapsel» betekent omhulsel met smeer."
       ],
       "uh": "Onthoud: «Strekspier» = strekt een gewricht."
      },
      {
-      "v": "Wat betekent «Kraakbeen»?",
+      "v": "Wat betekent «Gewrichtskapsel»?",
       "o": [
-       "vloeistof die de wrijving in een gewricht verkleint",
-       "een gewricht dat maar in één richting buigt, zoals de knie",
-       "buigzaam steunweefsel dat de botuiteinden bedekt",
+       "stevig weefsel dat botten in een gewricht bij elkaar houdt",
+       "het omhulsel om een gewricht met smeervloeistof",
+       "een spier die een gewricht buigt",
        "een spier die een gewricht strekt"
       ],
-      "c": 2,
+      "c": 1,
       "d": 1,
-      "u": "«Kraakbeen»: buigzaam steunweefsel dat de botuiteinden bedekt.",
+      "u": "«Gewrichtskapsel»: het omhulsel om een gewricht met smeervloeistof.",
       "uo": [
-       "Dat is «Gewrichtssmeer».",
-       "Dat is «Scharniergewricht».",
-       "Klopt: bedekt botuiteinden.",
+       "Dat is «Gewrichtsband».",
+       "Klopt: omhulsel met smeer.",
+       "Dat is «Buigspier».",
        "Dat is «Strekspier»."
       ],
-      "uh": "Onthoud: «Kraakbeen» = bedekt botuiteinden."
+      "uh": "Onthoud: «Gewrichtskapsel» = omhulsel met smeer."
+     },
+     {
+      "v": "Welk begrip hoort bij: \"een spier die de tegengestelde beweging maakt\"?",
+      "o": [
+       "Buigspier",
+       "Strekspier",
+       "Antagonist",
+       "Gewricht"
+      ],
+      "c": 2,
+      "d": 3,
+      "u": "«Antagonist»: een spier die de tegengestelde beweging maakt.",
+      "uo": [
+       "«Buigspier» betekent buigt een gewricht.",
+       "«Strekspier» betekent strekt een gewricht.",
+       "Klopt, dit is «Antagonist».",
+       "«Gewricht» betekent beweegbare botverbinding."
+      ],
+      "uh": "Onthoud: «Antagonist» = tegenwerkende spier."
      },
      {
       "v": "Welke term hoort bij \"tegenwerkende spier\"?",
@@ -3409,42 +3333,118 @@ var VAKKEN_VMBO = [
       "uh": "Onthoud: «Antagonist» = tegenwerkende spier."
      },
      {
-      "v": "Wat betekent «Scharniergewricht»?",
+      "v": "Wat betekent «Gewrichtssmeer»?",
       "o": [
-       "een gewricht dat maar in één richting buigt, zoals de knie",
-       "een gewricht dat in alle richtingen kan draaien, zoals de schouder",
-       "stevig weefsel dat botten in een gewricht bij elkaar houdt",
-       "buigzaam steunweefsel dat de botuiteinden bedekt"
+       "vloeistof die de wrijving in een gewricht verkleint",
+       "buigzaam steunweefsel dat de botuiteinden bedekt",
+       "een orgaan dat kan samentrekken en zo beweging maakt",
+       "een gewricht dat in alle richtingen kan draaien, zoals de schouder"
       ],
       "c": 0,
       "d": 1,
+      "u": "«Gewrichtssmeer»: vloeistof die de wrijving in een gewricht verkleint.",
+      "uo": [
+       "Klopt: vermindert wrijving.",
+       "Dat is «Kraakbeen».",
+       "Dat is «Spier».",
+       "Dat is «Kogelgewricht»."
+      ],
+      "uh": "Onthoud: «Gewrichtssmeer» = vermindert wrijving."
+     },
+     {
+      "v": "Welk begrip hoort bij: \"buigzaam steunweefsel dat de botuiteinden bedekt\"?",
+      "o": [
+       "Gewrichtssmeer",
+       "Kraakbeen",
+       "Scharniergewricht",
+       "Strekspier"
+      ],
+      "c": 1,
+      "d": 3,
+      "u": "«Kraakbeen»: buigzaam steunweefsel dat de botuiteinden bedekt.",
+      "uo": [
+       "«Gewrichtssmeer» betekent vermindert wrijving.",
+       "Klopt, dit is «Kraakbeen».",
+       "«Scharniergewricht» betekent buigt één richting.",
+       "«Strekspier» betekent strekt een gewricht."
+      ],
+      "uh": "Onthoud: «Kraakbeen» = bedekt botuiteinden."
+     },
+     {
+      "v": "Welke term hoort bij \"bedekt botuiteinden\"?",
+      "o": [
+       "Scharniergewricht",
+       "Strekspier",
+       "Kraakbeen",
+       "Antagonist"
+      ],
+      "c": 2,
+      "d": 2,
+      "u": "«Kraakbeen»: buigzaam steunweefsel dat de botuiteinden bedekt.",
+      "uo": [
+       "«Scharniergewricht» betekent buigt één richting.",
+       "«Strekspier» betekent strekt een gewricht.",
+       "Klopt, «Kraakbeen» past hierbij.",
+       "«Antagonist» betekent tegenwerkende spier."
+      ],
+      "uh": "Onthoud: «Kraakbeen» = bedekt botuiteinden."
+     },
+     {
+      "v": "Wat betekent «Kraakbeen»?",
+      "o": [
+       "vloeistof die de wrijving in een gewricht verkleint",
+       "een gewricht dat maar in één richting buigt, zoals de knie",
+       "een spier die een gewricht strekt",
+       "buigzaam steunweefsel dat de botuiteinden bedekt"
+      ],
+      "c": 3,
+      "d": 1,
+      "u": "«Kraakbeen»: buigzaam steunweefsel dat de botuiteinden bedekt.",
+      "uo": [
+       "Dat is «Gewrichtssmeer».",
+       "Dat is «Scharniergewricht».",
+       "Dat is «Strekspier».",
+       "Klopt: bedekt botuiteinden."
+      ],
+      "uh": "Onthoud: «Kraakbeen» = bedekt botuiteinden."
+     },
+     {
+      "v": "Welk begrip hoort bij: \"een gewricht dat in alle richtingen kan draaien, zoals de schouder\"?",
+      "o": [
+       "Kogelgewricht",
+       "Scharniergewricht",
+       "Antagonist",
+       "Kraakbeen"
+      ],
+      "c": 0,
+      "d": 3,
+      "u": "«Kogelgewricht»: een gewricht dat in alle richtingen kan draaien, zoals de schouder.",
+      "uo": [
+       "Klopt, dit is «Kogelgewricht».",
+       "«Scharniergewricht» betekent buigt één richting.",
+       "«Antagonist» betekent tegenwerkende spier.",
+       "«Kraakbeen» betekent bedekt botuiteinden."
+      ],
+      "uh": "Onthoud: «Kogelgewricht» = draait alle richtingen."
+     },
+     {
+      "v": "Wat betekent «Scharniergewricht»?",
+      "o": [
+       "een gewricht dat in alle richtingen kan draaien, zoals de schouder",
+       "een gewricht dat maar in één richting buigt, zoals de knie",
+       "stevig weefsel dat botten in een gewricht bij elkaar houdt",
+       "buigzaam steunweefsel dat de botuiteinden bedekt"
+      ],
+      "c": 1,
+      "d": 1,
       "u": "«Scharniergewricht»: een gewricht dat maar in één richting buigt, zoals de knie.",
       "uo": [
-       "Klopt: buigt één richting.",
        "Dat is «Kogelgewricht».",
+       "Klopt: buigt één richting.",
        "Dat is «Gewrichtsband».",
        "Dat is «Kraakbeen»."
       ],
       "uh": "Onthoud: «Scharniergewricht» = buigt één richting."
-     },
-     {
-      "v": "Welk begrip hoort bij: \"het omhulsel om een gewricht met smeervloeistof\"?",
-      "o": [
-       "Gewrichtsband",
-       "Gewrichtskapsel",
-       "Buigspier",
-       "Strekspier"
-      ],
-      "c": 1,
-      "d": 2,
-      "u": "«Gewrichtskapsel»: het omhulsel om een gewricht met smeervloeistof.",
-      "uo": [
-       "«Gewrichtsband» betekent houdt botten bijeen.",
-       "Klopt, dit is «Gewrichtskapsel».",
-       "«Buigspier» betekent buigt een gewricht.",
-       "«Strekspier» betekent strekt een gewricht."
-      ],
-      "uh": "Onthoud: «Gewrichtskapsel» = omhulsel met smeer."
      }
     ],
     "begrippen": [
@@ -3517,23 +3517,23 @@ var VAKKEN_VMBO = [
     "nBeg": 0,
     "sv": [
      {
-      "v": "Welk begrip hoort bij: \"een bloedvat dat bloed van het hart af vervoert\"?",
+      "v": "Welk begrip hoort bij: \"een stof die een reactie zoals vertering versnelt\"?",
       "o": [
-       "Slagader",
-       "Ader",
-       "Haarvat",
-       "Hormoon"
+       "Enzym",
+       "Hormoon",
+       "Zenuwstelsel",
+       "Hart"
       ],
       "c": 0,
       "d": 3,
-      "u": "«Slagader»: een bloedvat dat bloed van het hart af vervoert.",
+      "u": "«Enzym»: een stof die een reactie zoals vertering versnelt.",
       "uo": [
-       "Klopt, dit is «Slagader».",
-       "«Ader» betekent bloed naar het hart toe.",
-       "«Haarvat» betekent uitwisseling van stoffen.",
-       "«Hormoon» betekent regelt via het bloed."
+       "Klopt, dit is «Enzym».",
+       "«Hormoon» betekent regelt via het bloed.",
+       "«Zenuwstelsel» betekent stuurt met prikkels.",
+       "«Hart» betekent pompt het bloed rond."
       ],
-      "uh": "Onthoud: «Slagader» = bloed van het hart af."
+      "uh": "Onthoud: «Enzym» = versnelt een reactie."
      },
      {
       "v": "Welke term hoort bij \"voedsel klein maken\"?",
@@ -3574,40 +3574,40 @@ var VAKKEN_VMBO = [
       "uh": "Onthoud: «Vertering» = voedsel klein maken."
      },
      {
-      "v": "Welk begrip hoort bij: \"een bloedvat dat bloed naar het hart toe vervoert\"?",
+      "v": "Welk begrip hoort bij: \"uitstulping in de dunne darm die voedingsstoffen opneemt\"?",
       "o": [
-       "Slagader",
-       "Haarvat",
+       "Vertering",
        "Nier",
-       "Ader"
+       "Hart",
+       "Darmvlok"
       ],
       "c": 3,
       "d": 3,
-      "u": "«Ader»: een bloedvat dat bloed naar het hart toe vervoert.",
+      "u": "«Darmvlok»: uitstulping in de dunne darm die voedingsstoffen opneemt.",
       "uo": [
-       "«Slagader» betekent bloed van het hart af.",
-       "«Haarvat» betekent uitwisseling van stoffen.",
+       "«Vertering» betekent voedsel klein maken.",
        "«Nier» betekent filtert het bloed.",
-       "Klopt, dit is «Ader»."
+       "«Hart» betekent pompt het bloed rond.",
+       "Klopt, dit is «Darmvlok»."
       ],
-      "uh": "Onthoud: «Ader» = bloed naar het hart toe."
+      "uh": "Onthoud: «Darmvlok» = neemt voeding op."
      },
      {
-      "v": "Welk begrip hoort bij: \"een stof die een reactie zoals vertering versnelt\"?",
+      "v": "Welke term hoort bij \"versnelt een reactie\"?",
       "o": [
        "Enzym",
-       "Hormoon",
        "Zenuwstelsel",
-       "Hart"
+       "Hart",
+       "Zintuig"
       ],
       "c": 0,
       "d": 2,
       "u": "«Enzym»: een stof die een reactie zoals vertering versnelt.",
       "uo": [
-       "Klopt, dit is «Enzym».",
-       "«Hormoon» betekent regelt via het bloed.",
+       "Klopt, «Enzym» past hierbij.",
        "«Zenuwstelsel» betekent stuurt met prikkels.",
-       "«Hart» betekent pompt het bloed rond."
+       "«Hart» betekent pompt het bloed rond.",
+       "«Zintuig» betekent vangt prikkels op."
       ],
       "uh": "Onthoud: «Enzym» = versnelt een reactie."
      },
@@ -3631,42 +3631,42 @@ var VAKKEN_VMBO = [
       "uh": "Onthoud: «Enzym» = versnelt een reactie."
      },
      {
-      "v": "Welk begrip hoort bij: \"een heel dun bloedvat waar uitwisseling van stoffen plaatsvindt\"?",
+      "v": "Welk begrip hoort bij: \"een bloedvat dat bloed naar het hart toe vervoert\"?",
       "o": [
        "Slagader",
-       "Ader",
        "Haarvat",
-       "Longblaasje"
+       "Ader",
+       "Nier"
       ],
       "c": 2,
       "d": 3,
-      "u": "«Haarvat»: een heel dun bloedvat waar uitwisseling van stoffen plaatsvindt.",
+      "u": "«Ader»: een bloedvat dat bloed naar het hart toe vervoert.",
       "uo": [
        "«Slagader» betekent bloed van het hart af.",
-       "«Ader» betekent bloed naar het hart toe.",
-       "Klopt, dit is «Haarvat».",
-       "«Longblaasje» betekent plek van gaswisseling."
+       "«Haarvat» betekent uitwisseling van stoffen.",
+       "Klopt, dit is «Ader».",
+       "«Nier» betekent filtert het bloed."
       ],
-      "uh": "Onthoud: «Haarvat» = uitwisseling van stoffen."
+      "uh": "Onthoud: «Ader» = bloed naar het hart toe."
      },
      {
-      "v": "Welke term hoort bij \"versnelt een reactie\"?",
+      "v": "Welke term hoort bij \"bloed van het hart af\"?",
       "o": [
-       "Zenuwstelsel",
-       "Hart",
+       "Hormoon",
        "Zintuig",
-       "Enzym"
+       "Vertering",
+       "Slagader"
       ],
       "c": 3,
       "d": 2,
-      "u": "«Enzym»: een stof die een reactie zoals vertering versnelt.",
+      "u": "«Slagader»: een bloedvat dat bloed van het hart af vervoert.",
       "uo": [
-       "«Zenuwstelsel» betekent stuurt met prikkels.",
-       "«Hart» betekent pompt het bloed rond.",
+       "«Hormoon» betekent regelt via het bloed.",
        "«Zintuig» betekent vangt prikkels op.",
-       "Klopt, «Enzym» past hierbij."
+       "«Vertering» betekent voedsel klein maken.",
+       "Klopt, «Slagader» past hierbij."
       ],
-      "uh": "Onthoud: «Enzym» = versnelt een reactie."
+      "uh": "Onthoud: «Slagader» = bloed van het hart af."
      },
      {
       "v": "Wat betekent «Darmvlok»?",
@@ -3688,42 +3688,42 @@ var VAKKEN_VMBO = [
       "uh": "Onthoud: «Darmvlok» = neemt voeding op."
      },
      {
-      "v": "Welk begrip hoort bij: \"een stof die via het bloed processen in het lichaam regelt\"?",
+      "v": "Welk begrip hoort bij: \"een heel dun bloedvat waar uitwisseling van stoffen plaatsvindt\"?",
       "o": [
-       "Enzym",
-       "Hormoon",
-       "Zenuwstelsel",
-       "Hart"
+       "Slagader",
+       "Haarvat",
+       "Ader",
+       "Longblaasje"
       ],
       "c": 1,
       "d": 3,
-      "u": "«Hormoon»: een stof die via het bloed processen in het lichaam regelt.",
+      "u": "«Haarvat»: een heel dun bloedvat waar uitwisseling van stoffen plaatsvindt.",
       "uo": [
-       "«Enzym» betekent versnelt een reactie.",
-       "Klopt, dit is «Hormoon».",
-       "«Zenuwstelsel» betekent stuurt met prikkels.",
-       "«Hart» betekent pompt het bloed rond."
+       "«Slagader» betekent bloed van het hart af.",
+       "Klopt, dit is «Haarvat».",
+       "«Ader» betekent bloed naar het hart toe.",
+       "«Longblaasje» betekent plek van gaswisseling."
       ],
-      "uh": "Onthoud: «Hormoon» = regelt via het bloed."
+      "uh": "Onthoud: «Haarvat» = uitwisseling van stoffen."
      },
      {
-      "v": "Welk begrip hoort bij: \"uitstulping in de dunne darm die voedingsstoffen opneemt\"?",
+      "v": "Welke term hoort bij \"bloed naar het hart toe\"?",
       "o": [
-       "Vertering",
        "Nier",
-       "Darmvlok",
+       "Zintuig",
+       "Ader",
        "Hart"
       ],
       "c": 2,
       "d": 2,
-      "u": "«Darmvlok»: uitstulping in de dunne darm die voedingsstoffen opneemt.",
+      "u": "«Ader»: een bloedvat dat bloed naar het hart toe vervoert.",
       "uo": [
-       "«Vertering» betekent voedsel klein maken.",
        "«Nier» betekent filtert het bloed.",
-       "Klopt, dit is «Darmvlok».",
+       "«Zintuig» betekent vangt prikkels op.",
+       "Klopt, «Ader» past hierbij.",
        "«Hart» betekent pompt het bloed rond."
       ],
-      "uh": "Onthoud: «Darmvlok» = neemt voeding op."
+      "uh": "Onthoud: «Ader» = bloed naar het hart toe."
      },
      {
       "v": "Wat betekent «Slagader»?",
@@ -3745,156 +3745,80 @@ var VAKKEN_VMBO = [
       "uh": "Onthoud: «Slagader» = bloed van het hart af."
      },
      {
-      "v": "Welke term hoort bij \"neemt voeding op\"?",
+      "v": "Welk begrip hoort bij: \"klein blaasje in de long waar gaswisseling plaatsvindt\"?",
       "o": [
-       "Darmvlok",
-       "Nier",
-       "Hart",
-       "Zintuig"
+       "Longblaasje",
+       "Haarvat",
+       "Zenuwstelsel",
+       "Ader"
       ],
       "c": 0,
-      "d": 2,
-      "u": "«Darmvlok»: uitstulping in de dunne darm die voedingsstoffen opneemt.",
+      "d": 3,
+      "u": "«Longblaasje»: klein blaasje in de long waar gaswisseling plaatsvindt.",
       "uo": [
-       "Klopt, «Darmvlok» past hierbij.",
-       "«Nier» betekent filtert het bloed.",
-       "«Hart» betekent pompt het bloed rond.",
-       "«Zintuig» betekent vangt prikkels op."
+       "Klopt, dit is «Longblaasje».",
+       "«Haarvat» betekent uitwisseling van stoffen.",
+       "«Zenuwstelsel» betekent stuurt met prikkels.",
+       "«Ader» betekent bloed naar het hart toe."
       ],
-      "uh": "Onthoud: «Darmvlok» = neemt voeding op."
-     },
-     {
-      "v": "Wat betekent «Ader»?",
-      "o": [
-       "een bloedvat dat bloed van het hart af vervoert",
-       "een bloedvat dat bloed naar het hart toe vervoert",
-       "een heel dun bloedvat waar uitwisseling van stoffen plaatsvindt",
-       "een orgaan dat afvalstoffen uit het bloed filtert"
-      ],
-      "c": 1,
-      "d": 1,
-      "u": "«Ader»: een bloedvat dat bloed naar het hart toe vervoert.",
-      "uo": [
-       "Dat is «Slagader».",
-       "Klopt: bloed naar het hart toe.",
-       "Dat is «Haarvat».",
-       "Dat is «Nier»."
-      ],
-      "uh": "Onthoud: «Ader» = bloed naar het hart toe."
-     },
-     {
-      "v": "Welke term hoort bij \"bloed van het hart af\"?",
-      "o": [
-       "Hormoon",
-       "Zintuig",
-       "Slagader",
-       "Vertering"
-      ],
-      "c": 2,
-      "d": 2,
-      "u": "«Slagader»: een bloedvat dat bloed van het hart af vervoert.",
-      "uo": [
-       "«Hormoon» betekent regelt via het bloed.",
-       "«Zintuig» betekent vangt prikkels op.",
-       "Klopt, «Slagader» past hierbij.",
-       "«Vertering» betekent voedsel klein maken."
-      ],
-      "uh": "Onthoud: «Slagader» = bloed van het hart af."
-     },
-     {
-      "v": "Wat betekent «Haarvat»?",
-      "o": [
-       "een bloedvat dat bloed van het hart af vervoert",
-       "een bloedvat dat bloed naar het hart toe vervoert",
-       "klein blaasje in de long waar gaswisseling plaatsvindt",
-       "een heel dun bloedvat waar uitwisseling van stoffen plaatsvindt"
-      ],
-      "c": 3,
-      "d": 1,
-      "u": "«Haarvat»: een heel dun bloedvat waar uitwisseling van stoffen plaatsvindt.",
-      "uo": [
-       "Dat is «Slagader».",
-       "Dat is «Ader».",
-       "Dat is «Longblaasje».",
-       "Klopt: uitwisseling van stoffen."
-      ],
-      "uh": "Onthoud: «Haarvat» = uitwisseling van stoffen."
-     },
-     {
-      "v": "Welke term hoort bij \"bloed naar het hart toe\"?",
-      "o": [
-       "Ader",
-       "Nier",
-       "Zintuig",
-       "Hart"
-      ],
-      "c": 0,
-      "d": 2,
-      "u": "«Ader»: een bloedvat dat bloed naar het hart toe vervoert.",
-      "uo": [
-       "Klopt, «Ader» past hierbij.",
-       "«Nier» betekent filtert het bloed.",
-       "«Zintuig» betekent vangt prikkels op.",
-       "«Hart» betekent pompt het bloed rond."
-      ],
-      "uh": "Onthoud: «Ader» = bloed naar het hart toe."
-     },
-     {
-      "v": "Wat betekent «Hart»?",
-      "o": [
-       "een bloedvat dat bloed van het hart af vervoert",
-       "de spier die het bloed rondpompt",
-       "een bloedvat dat bloed naar het hart toe vervoert",
-       "klein blaasje in de long waar gaswisseling plaatsvindt"
-      ],
-      "c": 1,
-      "d": 1,
-      "u": "«Hart»: de spier die het bloed rondpompt.",
-      "uo": [
-       "Dat is «Slagader».",
-       "Klopt: pompt het bloed rond.",
-       "Dat is «Ader».",
-       "Dat is «Longblaasje»."
-      ],
-      "uh": "Onthoud: «Hart» = pompt het bloed rond."
+      "uh": "Onthoud: «Longblaasje» = plek van gaswisseling."
      },
      {
       "v": "Welke term hoort bij \"uitwisseling van stoffen\"?",
       "o": [
        "Longblaasje",
-       "Hart",
        "Haarvat",
+       "Hart",
        "Zintuig"
       ],
-      "c": 2,
+      "c": 1,
       "d": 2,
       "u": "«Haarvat»: een heel dun bloedvat waar uitwisseling van stoffen plaatsvindt.",
       "uo": [
        "«Longblaasje» betekent plek van gaswisseling.",
-       "«Hart» betekent pompt het bloed rond.",
        "Klopt, «Haarvat» past hierbij.",
+       "«Hart» betekent pompt het bloed rond.",
        "«Zintuig» betekent vangt prikkels op."
       ],
       "uh": "Onthoud: «Haarvat» = uitwisseling van stoffen."
      },
      {
-      "v": "Wat betekent «Gaswisseling»?",
+      "v": "Wat betekent «Ader»?",
       "o": [
-       "het klein maken van voedsel zodat het opgenomen kan worden",
        "een bloedvat dat bloed van het hart af vervoert",
-       "klein blaasje in de long waar gaswisseling plaatsvindt",
-       "de opname van zuurstof en afgifte van koolstofdioxide"
+       "een heel dun bloedvat waar uitwisseling van stoffen plaatsvindt",
+       "een bloedvat dat bloed naar het hart toe vervoert",
+       "een orgaan dat afvalstoffen uit het bloed filtert"
+      ],
+      "c": 2,
+      "d": 1,
+      "u": "«Ader»: een bloedvat dat bloed naar het hart toe vervoert.",
+      "uo": [
+       "Dat is «Slagader».",
+       "Dat is «Haarvat».",
+       "Klopt: bloed naar het hart toe.",
+       "Dat is «Nier»."
+      ],
+      "uh": "Onthoud: «Ader» = bloed naar het hart toe."
+     },
+     {
+      "v": "Welk begrip hoort bij: \"een stof die via het bloed processen in het lichaam regelt\"?",
+      "o": [
+       "Enzym",
+       "Zenuwstelsel",
+       "Hart",
+       "Hormoon"
       ],
       "c": 3,
-      "d": 1,
-      "u": "«Gaswisseling»: de opname van zuurstof en afgifte van koolstofdioxide.",
+      "d": 3,
+      "u": "«Hormoon»: een stof die via het bloed processen in het lichaam regelt.",
       "uo": [
-       "Dat is «Vertering».",
-       "Dat is «Slagader».",
-       "Dat is «Longblaasje».",
-       "Klopt: zuurstof in, CO2 uit."
+       "«Enzym» betekent versnelt een reactie.",
+       "«Zenuwstelsel» betekent stuurt met prikkels.",
+       "«Hart» betekent pompt het bloed rond.",
+       "Klopt, dit is «Hormoon»."
       ],
-      "uh": "Onthoud: «Gaswisseling» = zuurstof in, CO2 uit."
+      "uh": "Onthoud: «Hormoon» = regelt via het bloed."
      },
      {
       "v": "Welke term hoort bij \"pompt het bloed rond\"?",
@@ -3916,99 +3840,175 @@ var VAKKEN_VMBO = [
       "uh": "Onthoud: «Hart» = pompt het bloed rond."
      },
      {
+      "v": "Wat betekent «Hart»?",
+      "o": [
+       "een bloedvat dat bloed van het hart af vervoert",
+       "de spier die het bloed rondpompt",
+       "een bloedvat dat bloed naar het hart toe vervoert",
+       "klein blaasje in de long waar gaswisseling plaatsvindt"
+      ],
+      "c": 1,
+      "d": 1,
+      "u": "«Hart»: de spier die het bloed rondpompt.",
+      "uo": [
+       "Dat is «Slagader».",
+       "Klopt: pompt het bloed rond.",
+       "Dat is «Ader».",
+       "Dat is «Longblaasje»."
+      ],
+      "uh": "Onthoud: «Hart» = pompt het bloed rond."
+     },
+     {
+      "v": "Welk begrip hoort bij: \"een orgaan dat prikkels uit de omgeving opvangt\"?",
+      "o": [
+       "Zenuwstelsel",
+       "Gaswisseling",
+       "Zintuig",
+       "Ader"
+      ],
+      "c": 2,
+      "d": 3,
+      "u": "«Zintuig»: een orgaan dat prikkels uit de omgeving opvangt.",
+      "uo": [
+       "«Zenuwstelsel» betekent stuurt met prikkels.",
+       "«Gaswisseling» betekent zuurstof in, CO2 uit.",
+       "Klopt, dit is «Zintuig».",
+       "«Ader» betekent bloed naar het hart toe."
+      ],
+      "uh": "Onthoud: «Zintuig» = vangt prikkels op."
+     },
+     {
+      "v": "Welke term hoort bij \"plek van gaswisseling\"?",
+      "o": [
+       "Zenuwstelsel",
+       "Ader",
+       "Darmvlok",
+       "Longblaasje"
+      ],
+      "c": 3,
+      "d": 2,
+      "u": "«Longblaasje»: klein blaasje in de long waar gaswisseling plaatsvindt.",
+      "uo": [
+       "«Zenuwstelsel» betekent stuurt met prikkels.",
+       "«Ader» betekent bloed naar het hart toe.",
+       "«Darmvlok» betekent neemt voeding op.",
+       "Klopt, «Longblaasje» past hierbij."
+      ],
+      "uh": "Onthoud: «Longblaasje» = plek van gaswisseling."
+     },
+     {
+      "v": "Wat betekent «Gaswisseling»?",
+      "o": [
+       "de opname van zuurstof en afgifte van koolstofdioxide",
+       "het klein maken van voedsel zodat het opgenomen kan worden",
+       "een bloedvat dat bloed van het hart af vervoert",
+       "klein blaasje in de long waar gaswisseling plaatsvindt"
+      ],
+      "c": 0,
+      "d": 1,
+      "u": "«Gaswisseling»: de opname van zuurstof en afgifte van koolstofdioxide.",
+      "uo": [
+       "Klopt: zuurstof in, CO2 uit.",
+       "Dat is «Vertering».",
+       "Dat is «Slagader».",
+       "Dat is «Longblaasje»."
+      ],
+      "uh": "Onthoud: «Gaswisseling» = zuurstof in, CO2 uit."
+     },
+     {
+      "v": "Welke term hoort bij \"filtert het bloed\"?",
+      "o": [
+       "Slagader",
+       "Nier",
+       "Ader",
+       "Gaswisseling"
+      ],
+      "c": 1,
+      "d": 2,
+      "u": "«Nier»: een orgaan dat afvalstoffen uit het bloed filtert.",
+      "uo": [
+       "«Slagader» betekent bloed van het hart af.",
+       "Klopt, «Nier» past hierbij.",
+       "«Ader» betekent bloed naar het hart toe.",
+       "«Gaswisseling» betekent zuurstof in, CO2 uit."
+      ],
+      "uh": "Onthoud: «Nier» = filtert het bloed."
+     },
+     {
       "v": "Wat betekent «Longblaasje»?",
       "o": [
        "een heel dun bloedvat waar uitwisseling van stoffen plaatsvindt",
-       "klein blaasje in de long waar gaswisseling plaatsvindt",
        "het stelsel dat prikkels doorgeeft en het lichaam stuurt",
+       "klein blaasje in de long waar gaswisseling plaatsvindt",
        "een bloedvat dat bloed naar het hart toe vervoert"
       ],
-      "c": 1,
+      "c": 2,
       "d": 1,
       "u": "«Longblaasje»: klein blaasje in de long waar gaswisseling plaatsvindt.",
       "uo": [
        "Dat is «Haarvat».",
-       "Klopt: plek van gaswisseling.",
        "Dat is «Zenuwstelsel».",
+       "Klopt: plek van gaswisseling.",
        "Dat is «Ader»."
       ],
       "uh": "Onthoud: «Longblaasje» = plek van gaswisseling."
      },
      {
-      "v": "Welk begrip hoort bij: \"de opname van zuurstof en afgifte van koolstofdioxide\"?",
+      "v": "Welke term hoort bij \"stuurt met prikkels\"?",
       "o": [
-       "Vertering",
-       "Slagader",
        "Gaswisseling",
-       "Longblaasje"
+       "Hart",
+       "Darmvlok",
+       "Zenuwstelsel"
       ],
-      "c": 2,
+      "c": 3,
       "d": 2,
-      "u": "«Gaswisseling»: de opname van zuurstof en afgifte van koolstofdioxide.",
+      "u": "«Zenuwstelsel»: het stelsel dat prikkels doorgeeft en het lichaam stuurt.",
       "uo": [
-       "«Vertering» betekent voedsel klein maken.",
-       "«Slagader» betekent bloed van het hart af.",
-       "Klopt, dit is «Gaswisseling».",
-       "«Longblaasje» betekent plek van gaswisseling."
+       "«Gaswisseling» betekent zuurstof in, CO2 uit.",
+       "«Hart» betekent pompt het bloed rond.",
+       "«Darmvlok» betekent neemt voeding op.",
+       "Klopt, «Zenuwstelsel» past hierbij."
       ],
-      "uh": "Onthoud: «Gaswisseling» = zuurstof in, CO2 uit."
+      "uh": "Onthoud: «Zenuwstelsel» = stuurt met prikkels."
      },
      {
       "v": "Wat betekent «Nier»?",
       "o": [
+       "een orgaan dat afvalstoffen uit het bloed filtert",
        "een bloedvat dat bloed van het hart af vervoert",
        "een bloedvat dat bloed naar het hart toe vervoert",
-       "de opname van zuurstof en afgifte van koolstofdioxide",
-       "een orgaan dat afvalstoffen uit het bloed filtert"
+       "de opname van zuurstof en afgifte van koolstofdioxide"
       ],
-      "c": 3,
+      "c": 0,
       "d": 1,
       "u": "«Nier»: een orgaan dat afvalstoffen uit het bloed filtert.",
       "uo": [
+       "Klopt: filtert het bloed.",
        "Dat is «Slagader».",
        "Dat is «Ader».",
-       "Dat is «Gaswisseling».",
-       "Klopt: filtert het bloed."
+       "Dat is «Gaswisseling»."
       ],
       "uh": "Onthoud: «Nier» = filtert het bloed."
      },
      {
-      "v": "Welke term hoort bij \"zuurstof in, CO2 uit\"?",
+      "v": "Welke term hoort bij \"regelt via het bloed\"?",
       "o": [
-       "Gaswisseling",
-       "Slagader",
-       "Longblaasje",
-       "Hart"
-      ],
-      "c": 0,
-      "d": 2,
-      "u": "«Gaswisseling»: de opname van zuurstof en afgifte van koolstofdioxide.",
-      "uo": [
-       "Klopt, «Gaswisseling» past hierbij.",
-       "«Slagader» betekent bloed van het hart af.",
-       "«Longblaasje» betekent plek van gaswisseling.",
-       "«Hart» betekent pompt het bloed rond."
-      ],
-      "uh": "Onthoud: «Gaswisseling» = zuurstof in, CO2 uit."
-     },
-     {
-      "v": "Wat betekent «Zenuwstelsel»?",
-      "o": [
-       "de opname van zuurstof en afgifte van koolstofdioxide",
-       "het stelsel dat prikkels doorgeeft en het lichaam stuurt",
-       "de spier die het bloed rondpompt",
-       "uitstulping in de dunne darm die voedingsstoffen opneemt"
+       "Hart",
+       "Hormoon",
+       "Ader",
+       "Zintuig"
       ],
       "c": 1,
-      "d": 1,
-      "u": "«Zenuwstelsel»: het stelsel dat prikkels doorgeeft en het lichaam stuurt.",
+      "d": 2,
+      "u": "«Hormoon»: een stof die via het bloed processen in het lichaam regelt.",
       "uo": [
-       "Dat is «Gaswisseling».",
-       "Klopt: stuurt met prikkels.",
-       "Dat is «Hart».",
-       "Dat is «Darmvlok»."
+       "«Hart» betekent pompt het bloed rond.",
+       "Klopt, «Hormoon» past hierbij.",
+       "«Ader» betekent bloed naar het hart toe.",
+       "«Zintuig» betekent vangt prikkels op."
       ],
-      "uh": "Onthoud: «Zenuwstelsel» = stuurt met prikkels."
+      "uh": "Onthoud: «Hormoon» = regelt via het bloed."
      }
     ],
     "begrippen": [
@@ -4084,42 +4084,42 @@ var VAKKEN_VMBO = [
     "nBeg": 0,
     "sv": [
      {
-      "v": "Welk begrip hoort bij: \"een schimmel die suiker omzet en deeg laat rijzen\"?",
-      "o": [
-       "Gist",
-       "Melkzuurbacterie",
-       "Schimmel",
-       "Vaccin"
-      ],
-      "c": 0,
-      "d": 3,
-      "u": "«Gist»: een schimmel die suiker omzet en deeg laat rijzen.",
-      "uo": [
-       "Klopt, dit is «Gist».",
-       "«Melkzuurbacterie» betekent maakt yoghurt en kaas.",
-       "«Schimmel» betekent maakt o.a. antibiotica.",
-       "«Vaccin» betekent traint de afweer."
-      ],
-      "uh": "Onthoud: «Gist» = laat deeg rijzen."
-     },
-     {
       "v": "Welk begrip hoort bij: \"het gebruik van organismen om producten te maken\"?",
       "o": [
-       "Genetische modificatie",
        "Biotechnologie",
+       "Genetische modificatie",
        "Antibioticum",
        "Bacterie"
       ],
-      "c": 1,
-      "d": 2,
+      "c": 0,
+      "d": 3,
       "u": "«Biotechnologie»: het gebruik van organismen om producten te maken.",
       "uo": [
-       "«Genetische modificatie» betekent DNA gericht veranderen.",
        "Klopt, dit is «Biotechnologie».",
+       "«Genetische modificatie» betekent DNA gericht veranderen.",
        "«Antibioticum» betekent werkt tegen bacteriën.",
        "«Bacterie» betekent eencellig, geen kern."
       ],
       "uh": "Onthoud: «Biotechnologie» = organismen als fabriekje."
+     },
+     {
+      "v": "Welke term hoort bij \"laat deeg rijzen\"?",
+      "o": [
+       "Vaccin",
+       "Gist",
+       "Genetische modificatie",
+       "Bacterie"
+      ],
+      "c": 1,
+      "d": 2,
+      "u": "«Gist»: een schimmel die suiker omzet en deeg laat rijzen.",
+      "uo": [
+       "«Vaccin» betekent traint de afweer.",
+       "Klopt, «Gist» past hierbij.",
+       "«Genetische modificatie» betekent DNA gericht veranderen.",
+       "«Bacterie» betekent eencellig, geen kern."
+      ],
+      "uh": "Onthoud: «Gist» = laat deeg rijzen."
      },
      {
       "v": "Wat betekent «Biotechnologie»?",
@@ -4141,42 +4141,42 @@ var VAKKEN_VMBO = [
       "uh": "Onthoud: «Biotechnologie» = organismen als fabriekje."
      },
      {
-      "v": "Welk begrip hoort bij: \"een organisme dat stoffen zoals antibiotica kan maken\"?",
+      "v": "Welk begrip hoort bij: \"een schimmel die suiker omzet en deeg laat rijzen\"?",
       "o": [
-       "Bacterie",
-       "Gist",
-       "Genetische modificatie",
-       "Schimmel"
+       "Melkzuurbacterie",
+       "Schimmel",
+       "Vaccin",
+       "Gist"
       ],
       "c": 3,
       "d": 3,
-      "u": "«Schimmel»: een organisme dat stoffen zoals antibiotica kan maken.",
+      "u": "«Gist»: een schimmel die suiker omzet en deeg laat rijzen.",
       "uo": [
-       "«Bacterie» betekent eencellig, geen kern.",
-       "«Gist» betekent laat deeg rijzen.",
-       "«Genetische modificatie» betekent DNA gericht veranderen.",
-       "Klopt, dit is «Schimmel»."
+       "«Melkzuurbacterie» betekent maakt yoghurt en kaas.",
+       "«Schimmel» betekent maakt o.a. antibiotica.",
+       "«Vaccin» betekent traint de afweer.",
+       "Klopt, dit is «Gist»."
       ],
-      "uh": "Onthoud: «Schimmel» = maakt o.a. antibiotica."
+      "uh": "Onthoud: «Gist» = laat deeg rijzen."
      },
      {
-      "v": "Welke term hoort bij \"organismen als fabriekje\"?",
+      "v": "Welke term hoort bij \"suiker omzetten zonder zuurstof\"?",
       "o": [
-       "Biotechnologie",
-       "Antibioticum",
-       "Bacterie",
-       "Insuline"
+       "Gisting",
+       "Gm-gewas",
+       "Schimmel",
+       "Genetische modificatie"
       ],
       "c": 0,
       "d": 2,
-      "u": "«Biotechnologie»: het gebruik van organismen om producten te maken.",
+      "u": "«Gisting»: het omzetten van suiker door micro-organismen zonder zuurstof.",
       "uo": [
-       "Klopt, «Biotechnologie» past hierbij.",
-       "«Antibioticum» betekent werkt tegen bacteriën.",
-       "«Bacterie» betekent eencellig, geen kern.",
-       "«Insuline» betekent hormoon uit gm-bacteriën."
+       "Klopt, «Gisting» past hierbij.",
+       "«Gm-gewas» betekent gewas met veranderd DNA.",
+       "«Schimmel» betekent maakt o.a. antibiotica.",
+       "«Genetische modificatie» betekent DNA gericht veranderen."
       ],
-      "uh": "Onthoud: «Biotechnologie» = organismen als fabriekje."
+      "uh": "Onthoud: «Gisting» = suiker omzetten zonder zuurstof."
      },
      {
       "v": "Wat betekent «Gist»?",
@@ -4198,42 +4198,42 @@ var VAKKEN_VMBO = [
       "uh": "Onthoud: «Gist» = laat deeg rijzen."
      },
      {
-      "v": "Welk begrip hoort bij: \"een eencellig organisme zonder celkern\"?",
-      "o": [
-       "Schimmel",
-       "Gist",
-       "Bacterie",
-       "Genetische modificatie"
-      ],
-      "c": 2,
-      "d": 3,
-      "u": "«Bacterie»: een eencellig organisme zonder celkern.",
-      "uo": [
-       "«Schimmel» betekent maakt o.a. antibiotica.",
-       "«Gist» betekent laat deeg rijzen.",
-       "Klopt, dit is «Bacterie».",
-       "«Genetische modificatie» betekent DNA gericht veranderen."
-      ],
-      "uh": "Onthoud: «Bacterie» = eencellig, geen kern."
-     },
-     {
-      "v": "Welke term hoort bij \"laat deeg rijzen\"?",
+      "v": "Welk begrip hoort bij: \"een stof die bacteriën doodt of hun groei remt\"?",
       "o": [
        "Vaccin",
        "Genetische modificatie",
-       "Bacterie",
-       "Gist"
+       "Antibioticum",
+       "Schimmel"
       ],
-      "c": 3,
-      "d": 2,
-      "u": "«Gist»: een schimmel die suiker omzet en deeg laat rijzen.",
+      "c": 2,
+      "d": 3,
+      "u": "«Antibioticum»: een stof die bacteriën doodt of hun groei remt.",
       "uo": [
        "«Vaccin» betekent traint de afweer.",
        "«Genetische modificatie» betekent DNA gericht veranderen.",
-       "«Bacterie» betekent eencellig, geen kern.",
-       "Klopt, «Gist» past hierbij."
+       "Klopt, dit is «Antibioticum».",
+       "«Schimmel» betekent maakt o.a. antibiotica."
       ],
-      "uh": "Onthoud: «Gist» = laat deeg rijzen."
+      "uh": "Onthoud: «Antibioticum» = werkt tegen bacteriën."
+     },
+     {
+      "v": "Welke term hoort bij \"werkt tegen bacteriën\"?",
+      "o": [
+       "Genetische modificatie",
+       "Schimmel",
+       "Biotechnologie",
+       "Antibioticum"
+      ],
+      "c": 3,
+      "d": 2,
+      "u": "«Antibioticum»: een stof die bacteriën doodt of hun groei remt.",
+      "uo": [
+       "«Genetische modificatie» betekent DNA gericht veranderen.",
+       "«Schimmel» betekent maakt o.a. antibiotica.",
+       "«Biotechnologie» betekent organismen als fabriekje.",
+       "Klopt, «Antibioticum» past hierbij."
+      ],
+      "uh": "Onthoud: «Antibioticum» = werkt tegen bacteriën."
      },
      {
       "v": "Wat betekent «Melkzuurbacterie»?",
@@ -4255,175 +4255,99 @@ var VAKKEN_VMBO = [
       "uh": "Onthoud: «Melkzuurbacterie» = maakt yoghurt en kaas."
      },
      {
-      "v": "Welk begrip hoort bij: \"een bacterie die melk in yoghurt of kaas omzet\"?",
+      "v": "Welk begrip hoort bij: \"een organisme dat stoffen zoals antibiotica kan maken\"?",
       "o": [
+       "Bacterie",
+       "Schimmel",
        "Gist",
-       "Melkzuurbacterie",
-       "Vaccin",
-       "Gm-gewas"
-      ],
-      "c": 1,
-      "d": 2,
-      "u": "«Melkzuurbacterie»: een bacterie die melk in yoghurt of kaas omzet.",
-      "uo": [
-       "«Gist» betekent laat deeg rijzen.",
-       "Klopt, dit is «Melkzuurbacterie».",
-       "«Vaccin» betekent traint de afweer.",
-       "«Gm-gewas» betekent gewas met veranderd DNA."
-      ],
-      "uh": "Onthoud: «Melkzuurbacterie» = maakt yoghurt en kaas."
-     },
-     {
-      "v": "Wat betekent «Gisting»?",
-      "o": [
-       "een gewas met gericht veranderd DNA",
-       "een organisme dat stoffen zoals antibiotica kan maken",
-       "het omzetten van suiker door micro-organismen zonder zuurstof",
-       "het gericht veranderen van het DNA van een organisme"
-      ],
-      "c": 2,
-      "d": 1,
-      "u": "«Gisting»: het omzetten van suiker door micro-organismen zonder zuurstof.",
-      "uo": [
-       "Dat is «Gm-gewas».",
-       "Dat is «Schimmel».",
-       "Klopt: suiker omzetten zonder zuurstof.",
-       "Dat is «Genetische modificatie»."
-      ],
-      "uh": "Onthoud: «Gisting» = suiker omzetten zonder zuurstof."
-     },
-     {
-      "v": "Welke term hoort bij \"maakt yoghurt en kaas\"?",
-      "o": [
-       "Vaccin",
-       "Gm-gewas",
-       "Schimmel",
-       "Melkzuurbacterie"
-      ],
-      "c": 3,
-      "d": 2,
-      "u": "«Melkzuurbacterie»: een bacterie die melk in yoghurt of kaas omzet.",
-      "uo": [
-       "«Vaccin» betekent traint de afweer.",
-       "«Gm-gewas» betekent gewas met veranderd DNA.",
-       "«Schimmel» betekent maakt o.a. antibiotica.",
-       "Klopt, «Melkzuurbacterie» past hierbij."
-      ],
-      "uh": "Onthoud: «Melkzuurbacterie» = maakt yoghurt en kaas."
-     },
-     {
-      "v": "Wat betekent «Antibioticum»?",
-      "o": [
-       "een stof die bacteriën doodt of hun groei remt",
-       "een middel dat je afweer traint tegen een ziekteverwekker",
-       "het gericht veranderen van het DNA van een organisme",
-       "een organisme dat stoffen zoals antibiotica kan maken"
-      ],
-      "c": 0,
-      "d": 1,
-      "u": "«Antibioticum»: een stof die bacteriën doodt of hun groei remt.",
-      "uo": [
-       "Klopt: werkt tegen bacteriën.",
-       "Dat is «Vaccin».",
-       "Dat is «Genetische modificatie».",
-       "Dat is «Schimmel»."
-      ],
-      "uh": "Onthoud: «Antibioticum» = werkt tegen bacteriën."
-     },
-     {
-      "v": "Welke term hoort bij \"suiker omzetten zonder zuurstof\"?",
-      "o": [
-       "Gm-gewas",
-       "Gisting",
-       "Schimmel",
        "Genetische modificatie"
       ],
       "c": 1,
-      "d": 2,
-      "u": "«Gisting»: het omzetten van suiker door micro-organismen zonder zuurstof.",
-      "uo": [
-       "«Gm-gewas» betekent gewas met veranderd DNA.",
-       "Klopt, «Gisting» past hierbij.",
-       "«Schimmel» betekent maakt o.a. antibiotica.",
-       "«Genetische modificatie» betekent DNA gericht veranderen."
-      ],
-      "uh": "Onthoud: «Gisting» = suiker omzetten zonder zuurstof."
-     },
-     {
-      "v": "Wat betekent «Schimmel»?",
-      "o": [
-       "een eencellig organisme zonder celkern",
-       "een schimmel die suiker omzet en deeg laat rijzen",
-       "een organisme dat stoffen zoals antibiotica kan maken",
-       "het gericht veranderen van het DNA van een organisme"
-      ],
-      "c": 2,
-      "d": 1,
+      "d": 3,
       "u": "«Schimmel»: een organisme dat stoffen zoals antibiotica kan maken.",
       "uo": [
-       "Dat is «Bacterie».",
-       "Dat is «Gist».",
-       "Klopt: maakt o.a. antibiotica.",
-       "Dat is «Genetische modificatie»."
+       "«Bacterie» betekent eencellig, geen kern.",
+       "Klopt, dit is «Schimmel».",
+       "«Gist» betekent laat deeg rijzen.",
+       "«Genetische modificatie» betekent DNA gericht veranderen."
       ],
       "uh": "Onthoud: «Schimmel» = maakt o.a. antibiotica."
      },
      {
-      "v": "Welk begrip hoort bij: \"een stof die bacteriën doodt of hun groei remt\"?",
+      "v": "Welke term hoort bij \"maakt o.a. antibiotica\"?",
       "o": [
-       "Vaccin",
        "Genetische modificatie",
+       "Biotechnologie",
        "Schimmel",
-       "Antibioticum"
+       "Vaccin"
+      ],
+      "c": 2,
+      "d": 2,
+      "u": "«Schimmel»: een organisme dat stoffen zoals antibiotica kan maken.",
+      "uo": [
+       "«Genetische modificatie» betekent DNA gericht veranderen.",
+       "«Biotechnologie» betekent organismen als fabriekje.",
+       "Klopt, «Schimmel» past hierbij.",
+       "«Vaccin» betekent traint de afweer."
+      ],
+      "uh": "Onthoud: «Schimmel» = maakt o.a. antibiotica."
+     },
+     {
+      "v": "Wat betekent «Antibioticum»?",
+      "o": [
+       "een middel dat je afweer traint tegen een ziekteverwekker",
+       "het gericht veranderen van het DNA van een organisme",
+       "een organisme dat stoffen zoals antibiotica kan maken",
+       "een stof die bacteriën doodt of hun groei remt"
       ],
       "c": 3,
-      "d": 2,
+      "d": 1,
       "u": "«Antibioticum»: een stof die bacteriën doodt of hun groei remt.",
       "uo": [
-       "«Vaccin» betekent traint de afweer.",
-       "«Genetische modificatie» betekent DNA gericht veranderen.",
-       "«Schimmel» betekent maakt o.a. antibiotica.",
-       "Klopt, dit is «Antibioticum»."
+       "Dat is «Vaccin».",
+       "Dat is «Genetische modificatie».",
+       "Dat is «Schimmel».",
+       "Klopt: werkt tegen bacteriën."
       ],
       "uh": "Onthoud: «Antibioticum» = werkt tegen bacteriën."
      },
      {
-      "v": "Wat betekent «Genetische modificatie»?",
+      "v": "Welk begrip hoort bij: \"een hormoon dat met gm-bacteriën gemaakt kan worden\"?",
       "o": [
-       "het gericht veranderen van het DNA van een organisme",
-       "het gebruik van organismen om producten te maken",
-       "ongevoeligheid van bacteriën voor een antibioticum",
-       "een stof die bacteriën doodt of hun groei remt"
+       "Insuline",
+       "Antibioticum",
+       "Vaccin",
+       "Bacterie"
       ],
       "c": 0,
-      "d": 1,
-      "u": "«Genetische modificatie»: het gericht veranderen van het DNA van een organisme.",
+      "d": 3,
+      "u": "«Insuline»: een hormoon dat met gm-bacteriën gemaakt kan worden.",
       "uo": [
-       "Klopt: DNA gericht veranderen.",
-       "Dat is «Biotechnologie».",
-       "Dat is «Resistentie».",
-       "Dat is «Antibioticum»."
+       "Klopt, dit is «Insuline».",
+       "«Antibioticum» betekent werkt tegen bacteriën.",
+       "«Vaccin» betekent traint de afweer.",
+       "«Bacterie» betekent eencellig, geen kern."
       ],
-      "uh": "Onthoud: «Genetische modificatie» = DNA gericht veranderen."
+      "uh": "Onthoud: «Insuline» = hormoon uit gm-bacteriën."
      },
      {
-      "v": "Welke term hoort bij \"werkt tegen bacteriën\"?",
+      "v": "Welke term hoort bij \"hormoon uit gm-bacteriën\"?",
       "o": [
-       "Genetische modificatie",
-       "Antibioticum",
-       "Schimmel",
+       "Vaccin",
+       "Insuline",
+       "Bacterie",
        "Biotechnologie"
       ],
       "c": 1,
       "d": 2,
-      "u": "«Antibioticum»: een stof die bacteriën doodt of hun groei remt.",
+      "u": "«Insuline»: een hormoon dat met gm-bacteriën gemaakt kan worden.",
       "uo": [
-       "«Genetische modificatie» betekent DNA gericht veranderen.",
-       "Klopt, «Antibioticum» past hierbij.",
-       "«Schimmel» betekent maakt o.a. antibiotica.",
+       "«Vaccin» betekent traint de afweer.",
+       "Klopt, «Insuline» past hierbij.",
+       "«Bacterie» betekent eencellig, geen kern.",
        "«Biotechnologie» betekent organismen als fabriekje."
       ],
-      "uh": "Onthoud: «Antibioticum» = werkt tegen bacteriën."
+      "uh": "Onthoud: «Insuline» = hormoon uit gm-bacteriën."
      },
      {
       "v": "Wat betekent «Insuline»?",
@@ -4445,137 +4369,213 @@ var VAKKEN_VMBO = [
       "uh": "Onthoud: «Insuline» = hormoon uit gm-bacteriën."
      },
      {
-      "v": "Welke term hoort bij \"maakt o.a. antibiotica\"?",
+      "v": "Welk begrip hoort bij: \"een gewas met gericht veranderd DNA\"?",
       "o": [
        "Genetische modificatie",
-       "Biotechnologie",
        "Vaccin",
-       "Schimmel"
+       "Bacterie",
+       "Gm-gewas"
       ],
       "c": 3,
-      "d": 2,
-      "u": "«Schimmel»: een organisme dat stoffen zoals antibiotica kan maken.",
+      "d": 3,
+      "u": "«Gm-gewas»: een gewas met gericht veranderd DNA.",
       "uo": [
        "«Genetische modificatie» betekent DNA gericht veranderen.",
-       "«Biotechnologie» betekent organismen als fabriekje.",
        "«Vaccin» betekent traint de afweer.",
-       "Klopt, «Schimmel» past hierbij."
+       "«Bacterie» betekent eencellig, geen kern.",
+       "Klopt, dit is «Gm-gewas»."
       ],
-      "uh": "Onthoud: «Schimmel» = maakt o.a. antibiotica."
+      "uh": "Onthoud: «Gm-gewas» = gewas met veranderd DNA."
+     },
+     {
+      "v": "Welke term hoort bij \"gewas met veranderd DNA\"?",
+      "o": [
+       "Gm-gewas",
+       "Vaccin",
+       "Bacterie",
+       "Biotechnologie"
+      ],
+      "c": 0,
+      "d": 2,
+      "u": "«Gm-gewas»: een gewas met gericht veranderd DNA.",
+      "uo": [
+       "Klopt, «Gm-gewas» past hierbij.",
+       "«Vaccin» betekent traint de afweer.",
+       "«Bacterie» betekent eencellig, geen kern.",
+       "«Biotechnologie» betekent organismen als fabriekje."
+      ],
+      "uh": "Onthoud: «Gm-gewas» = gewas met veranderd DNA."
      },
      {
       "v": "Wat betekent «Gm-gewas»?",
       "o": [
-       "een gewas met gericht veranderd DNA",
        "het gericht veranderen van het DNA van een organisme",
+       "een gewas met gericht veranderd DNA",
        "een middel dat je afweer traint tegen een ziekteverwekker",
        "een eencellig organisme zonder celkern"
       ],
-      "c": 0,
+      "c": 1,
       "d": 1,
       "u": "«Gm-gewas»: een gewas met gericht veranderd DNA.",
       "uo": [
-       "Klopt: gewas met veranderd DNA.",
        "Dat is «Genetische modificatie».",
+       "Klopt: gewas met veranderd DNA.",
        "Dat is «Vaccin».",
        "Dat is «Bacterie»."
       ],
       "uh": "Onthoud: «Gm-gewas» = gewas met veranderd DNA."
      },
      {
-      "v": "Welk begrip hoort bij: \"het gericht veranderen van het DNA van een organisme\"?",
+      "v": "Welk begrip hoort bij: \"ongevoeligheid van bacteriën voor een antibioticum\"?",
       "o": [
-       "Biotechnologie",
-       "Genetische modificatie",
+       "Antibioticum",
+       "Schimmel",
        "Resistentie",
-       "Antibioticum"
+       "Gisting"
       ],
-      "c": 1,
-      "d": 2,
-      "u": "«Genetische modificatie»: het gericht veranderen van het DNA van een organisme.",
+      "c": 2,
+      "d": 3,
+      "u": "«Resistentie»: ongevoeligheid van bacteriën voor een antibioticum.",
       "uo": [
-       "«Biotechnologie» betekent organismen als fabriekje.",
-       "Klopt, dit is «Genetische modificatie».",
-       "«Resistentie» betekent ongevoelig voor antibiotica.",
-       "«Antibioticum» betekent werkt tegen bacteriën."
+       "«Antibioticum» betekent werkt tegen bacteriën.",
+       "«Schimmel» betekent maakt o.a. antibiotica.",
+       "Klopt, dit is «Resistentie».",
+       "«Gisting» betekent suiker omzetten zonder zuurstof."
       ],
-      "uh": "Onthoud: «Genetische modificatie» = DNA gericht veranderen."
+      "uh": "Onthoud: «Resistentie» = ongevoelig voor antibiotica."
+     },
+     {
+      "v": "Welke term hoort bij \"ongevoelig voor antibiotica\"?",
+      "o": [
+       "Schimmel",
+       "Gisting",
+       "Biotechnologie",
+       "Resistentie"
+      ],
+      "c": 3,
+      "d": 2,
+      "u": "«Resistentie»: ongevoeligheid van bacteriën voor een antibioticum.",
+      "uo": [
+       "«Schimmel» betekent maakt o.a. antibiotica.",
+       "«Gisting» betekent suiker omzetten zonder zuurstof.",
+       "«Biotechnologie» betekent organismen als fabriekje.",
+       "Klopt, «Resistentie» past hierbij."
+      ],
+      "uh": "Onthoud: «Resistentie» = ongevoelig voor antibiotica."
      },
      {
       "v": "Wat betekent «Resistentie»?",
       "o": [
+       "ongevoeligheid van bacteriën voor een antibioticum",
        "een stof die bacteriën doodt of hun groei remt",
        "een organisme dat stoffen zoals antibiotica kan maken",
-       "ongevoeligheid van bacteriën voor een antibioticum",
        "het omzetten van suiker door micro-organismen zonder zuurstof"
       ],
-      "c": 2,
+      "c": 0,
       "d": 1,
       "u": "«Resistentie»: ongevoeligheid van bacteriën voor een antibioticum.",
       "uo": [
+       "Klopt: ongevoelig voor antibiotica.",
        "Dat is «Antibioticum».",
        "Dat is «Schimmel».",
-       "Klopt: ongevoelig voor antibiotica.",
        "Dat is «Gisting»."
       ],
       "uh": "Onthoud: «Resistentie» = ongevoelig voor antibiotica."
      },
      {
-      "v": "Welke term hoort bij \"DNA gericht veranderen\"?",
+      "v": "Welk begrip hoort bij: \"een middel dat je afweer traint tegen een ziekteverwekker\"?",
       "o": [
-       "Resistentie",
        "Antibioticum",
-       "Gm-gewas",
-       "Genetische modificatie"
+       "Vaccin",
+       "Gist",
+       "Biotechnologie"
       ],
-      "c": 3,
-      "d": 2,
-      "u": "«Genetische modificatie»: het gericht veranderen van het DNA van een organisme.",
-      "uo": [
-       "«Resistentie» betekent ongevoelig voor antibiotica.",
-       "«Antibioticum» betekent werkt tegen bacteriën.",
-       "«Gm-gewas» betekent gewas met veranderd DNA.",
-       "Klopt, «Genetische modificatie» past hierbij."
-      ],
-      "uh": "Onthoud: «Genetische modificatie» = DNA gericht veranderen."
-     },
-     {
-      "v": "Wat betekent «Vaccin»?",
-      "o": [
-       "een middel dat je afweer traint tegen een ziekteverwekker",
-       "een stof die bacteriën doodt of hun groei remt",
-       "een schimmel die suiker omzet en deeg laat rijzen",
-       "het gebruik van organismen om producten te maken"
-      ],
-      "c": 0,
-      "d": 1,
+      "c": 1,
+      "d": 3,
       "u": "«Vaccin»: een middel dat je afweer traint tegen een ziekteverwekker.",
       "uo": [
-       "Klopt: traint de afweer.",
-       "Dat is «Antibioticum».",
-       "Dat is «Gist».",
-       "Dat is «Biotechnologie»."
+       "«Antibioticum» betekent werkt tegen bacteriën.",
+       "Klopt, dit is «Vaccin».",
+       "«Gist» betekent laat deeg rijzen.",
+       "«Biotechnologie» betekent organismen als fabriekje."
       ],
       "uh": "Onthoud: «Vaccin» = traint de afweer."
      },
      {
-      "v": "Welk begrip hoort bij: \"een hormoon dat met gm-bacteriën gemaakt kan worden\"?",
+      "v": "Welke term hoort bij \"traint de afweer\"?",
       "o": [
-       "Antibioticum",
-       "Insuline",
+       "Gist",
+       "Biotechnologie",
        "Vaccin",
        "Bacterie"
       ],
-      "c": 1,
+      "c": 2,
       "d": 2,
-      "u": "«Insuline»: een hormoon dat met gm-bacteriën gemaakt kan worden.",
+      "u": "«Vaccin»: een middel dat je afweer traint tegen een ziekteverwekker.",
       "uo": [
-       "«Antibioticum» betekent werkt tegen bacteriën.",
-       "Klopt, dit is «Insuline».",
-       "«Vaccin» betekent traint de afweer.",
+       "«Gist» betekent laat deeg rijzen.",
+       "«Biotechnologie» betekent organismen als fabriekje.",
+       "Klopt, «Vaccin» past hierbij.",
        "«Bacterie» betekent eencellig, geen kern."
       ],
-      "uh": "Onthoud: «Insuline» = hormoon uit gm-bacteriën."
+      "uh": "Onthoud: «Vaccin» = traint de afweer."
+     },
+     {
+      "v": "Wat betekent «Bacterie»?",
+      "o": [
+       "een organisme dat stoffen zoals antibiotica kan maken",
+       "een schimmel die suiker omzet en deeg laat rijzen",
+       "het gericht veranderen van het DNA van een organisme",
+       "een eencellig organisme zonder celkern"
+      ],
+      "c": 3,
+      "d": 1,
+      "u": "«Bacterie»: een eencellig organisme zonder celkern.",
+      "uo": [
+       "Dat is «Schimmel».",
+       "Dat is «Gist».",
+       "Dat is «Genetische modificatie».",
+       "Klopt: eencellig, geen kern."
+      ],
+      "uh": "Onthoud: «Bacterie» = eencellig, geen kern."
+     },
+     {
+      "v": "Welk begrip hoort bij: \"een eencellig organisme zonder celkern\"?",
+      "o": [
+       "Bacterie",
+       "Schimmel",
+       "Gist",
+       "Genetische modificatie"
+      ],
+      "c": 0,
+      "d": 3,
+      "u": "«Bacterie»: een eencellig organisme zonder celkern.",
+      "uo": [
+       "Klopt, dit is «Bacterie».",
+       "«Schimmel» betekent maakt o.a. antibiotica.",
+       "«Gist» betekent laat deeg rijzen.",
+       "«Genetische modificatie» betekent DNA gericht veranderen."
+      ],
+      "uh": "Onthoud: «Bacterie» = eencellig, geen kern."
+     },
+     {
+      "v": "Welke term hoort bij \"eencellig, geen kern\"?",
+      "o": [
+       "Genetische modificatie",
+       "Bacterie",
+       "Biotechnologie",
+       "Vaccin"
+      ],
+      "c": 1,
+      "d": 2,
+      "u": "«Bacterie»: een eencellig organisme zonder celkern.",
+      "uo": [
+       "«Genetische modificatie» betekent DNA gericht veranderen.",
+       "Klopt, «Bacterie» past hierbij.",
+       "«Biotechnologie» betekent organismen als fabriekje.",
+       "«Vaccin» betekent traint de afweer."
+      ],
+      "uh": "Onthoud: «Bacterie» = eencellig, geen kern."
      }
     ],
     "begrippen": [
@@ -4657,7 +4657,562 @@ var VAKKEN_VMBO = [
     ],
     "nSv": 0,
     "nOe": 0,
-    "nBeg": 0
+    "nBeg": 0,
+    "sv": [
+     {
+      "v": "Welk begrip hoort bij: \"hoeveel je met je inkomen kunt kopen\"?",
+      "o": [
+       "Koopkracht",
+       "Reëel inkomen",
+       "Inkomen",
+       "Premie"
+      ],
+      "c": 0,
+      "d": 3,
+      "u": "«Koopkracht»: hoeveel je met je inkomen kunt kopen.",
+      "uo": [
+       "Klopt, dit is «Koopkracht».",
+       "«Reëel inkomen» betekent inkomen na inflatie.",
+       "«Inkomen» betekent geld dat je ontvangt.",
+       "«Premie» betekent bedrag voor verzekering."
+      ],
+      "uh": "Onthoud: «Koopkracht» = wat je inkomen kan kopen."
+     },
+     {
+      "v": "Welke term hoort bij \"geld dat je ontvangt\"?",
+      "o": [
+       "Nominaal inkomen",
+       "Inkomen",
+       "Deflatie",
+       "Indexcijfer"
+      ],
+      "c": 1,
+      "d": 2,
+      "u": "«Inkomen»: het geld dat je ontvangt, bijvoorbeeld loon.",
+      "uo": [
+       "«Nominaal inkomen» betekent inkomen in euro's.",
+       "Klopt, «Inkomen» past hierbij.",
+       "«Deflatie» betekent prijzen dalen.",
+       "«Indexcijfer» betekent verandering t.o.v. basisjaar."
+      ],
+      "uh": "Onthoud: «Inkomen» = geld dat je ontvangt."
+     },
+     {
+      "v": "Wat betekent «Koopkracht»?",
+      "o": [
+       "je inkomen gecorrigeerd voor inflatie",
+       "het geld dat je ontvangt, bijvoorbeeld loon",
+       "hoeveel je met je inkomen kunt kopen",
+       "het bedrag dat je periodiek voor een verzekering betaalt"
+      ],
+      "c": 2,
+      "d": 1,
+      "u": "«Koopkracht»: hoeveel je met je inkomen kunt kopen.",
+      "uo": [
+       "Dat is «Reëel inkomen».",
+       "Dat is «Inkomen».",
+       "Klopt: wat je inkomen kan kopen.",
+       "Dat is «Premie»."
+      ],
+      "uh": "Onthoud: «Koopkracht» = wat je inkomen kan kopen."
+     },
+     {
+      "v": "Welk begrip hoort bij: \"het geld dat je ontvangt, bijvoorbeeld loon\"?",
+      "o": [
+       "Uitgaven",
+       "Koopkracht",
+       "Nominaal inkomen",
+       "Inkomen"
+      ],
+      "c": 3,
+      "d": 3,
+      "u": "«Inkomen»: het geld dat je ontvangt, bijvoorbeeld loon.",
+      "uo": [
+       "«Uitgaven» betekent geld dat je besteedt.",
+       "«Koopkracht» betekent wat je inkomen kan kopen.",
+       "«Nominaal inkomen» betekent inkomen in euro's.",
+       "Klopt, dit is «Inkomen»."
+      ],
+      "uh": "Onthoud: «Inkomen» = geld dat je ontvangt."
+     },
+     {
+      "v": "Welke term hoort bij \"geld dat je besteedt\"?",
+      "o": [
+       "Uitgaven",
+       "Nominaal inkomen",
+       "Deflatie",
+       "Eigen risico"
+      ],
+      "c": 0,
+      "d": 2,
+      "u": "«Uitgaven»: het geld dat je besteedt.",
+      "uo": [
+       "Klopt, «Uitgaven» past hierbij.",
+       "«Nominaal inkomen» betekent inkomen in euro's.",
+       "«Deflatie» betekent prijzen dalen.",
+       "«Eigen risico» betekent schade die je zelf betaalt."
+      ],
+      "uh": "Onthoud: «Uitgaven» = geld dat je besteedt."
+     },
+     {
+      "v": "Wat betekent «Inkomen»?",
+      "o": [
+       "het geld dat je besteedt",
+       "het geld dat je ontvangt, bijvoorbeeld loon",
+       "hoeveel je met je inkomen kunt kopen",
+       "je inkomen in euro's zonder correctie voor inflatie"
+      ],
+      "c": 1,
+      "d": 1,
+      "u": "«Inkomen»: het geld dat je ontvangt, bijvoorbeeld loon.",
+      "uo": [
+       "Dat is «Uitgaven».",
+       "Klopt: geld dat je ontvangt.",
+       "Dat is «Koopkracht».",
+       "Dat is «Nominaal inkomen»."
+      ],
+      "uh": "Onthoud: «Inkomen» = geld dat je ontvangt."
+     },
+     {
+      "v": "Welk begrip hoort bij: \"het geld dat je besteedt\"?",
+      "o": [
+       "Inkomen",
+       "Sparen",
+       "Uitgaven",
+       "Nominaal inkomen"
+      ],
+      "c": 2,
+      "d": 3,
+      "u": "«Uitgaven»: het geld dat je besteedt.",
+      "uo": [
+       "«Inkomen» betekent geld dat je ontvangt.",
+       "«Sparen» betekent geld bewaren.",
+       "Klopt, dit is «Uitgaven».",
+       "«Nominaal inkomen» betekent inkomen in euro's."
+      ],
+      "uh": "Onthoud: «Uitgaven» = geld dat je besteedt."
+     },
+     {
+      "v": "Welke term hoort bij \"geld bewaren\"?",
+      "o": [
+       "Inkomen",
+       "Indexcijfer",
+       "Budget",
+       "Sparen"
+      ],
+      "c": 3,
+      "d": 2,
+      "u": "«Sparen»: geld dat je niet uitgeeft maar bewaart.",
+      "uo": [
+       "«Inkomen» betekent geld dat je ontvangt.",
+       "«Indexcijfer» betekent verandering t.o.v. basisjaar.",
+       "«Budget» betekent overzicht inkomsten en uitgaven.",
+       "Klopt, «Sparen» past hierbij."
+      ],
+      "uh": "Onthoud: «Sparen» = geld bewaren."
+     },
+     {
+      "v": "Wat betekent «Uitgaven»?",
+      "o": [
+       "het geld dat je besteedt",
+       "het geld dat je ontvangt, bijvoorbeeld loon",
+       "geld dat je niet uitgeeft maar bewaart",
+       "je inkomen in euro's zonder correctie voor inflatie"
+      ],
+      "c": 0,
+      "d": 1,
+      "u": "«Uitgaven»: het geld dat je besteedt.",
+      "uo": [
+       "Klopt: geld dat je besteedt.",
+       "Dat is «Inkomen».",
+       "Dat is «Sparen».",
+       "Dat is «Nominaal inkomen»."
+      ],
+      "uh": "Onthoud: «Uitgaven» = geld dat je besteedt."
+     },
+     {
+      "v": "Welk begrip hoort bij: \"geld dat je niet uitgeeft maar bewaart\"?",
+      "o": [
+       "Uitgaven",
+       "Sparen",
+       "Inkomen",
+       "Indexcijfer"
+      ],
+      "c": 1,
+      "d": 3,
+      "u": "«Sparen»: geld dat je niet uitgeeft maar bewaart.",
+      "uo": [
+       "«Uitgaven» betekent geld dat je besteedt.",
+       "Klopt, dit is «Sparen».",
+       "«Inkomen» betekent geld dat je ontvangt.",
+       "«Indexcijfer» betekent verandering t.o.v. basisjaar."
+      ],
+      "uh": "Onthoud: «Sparen» = geld bewaren."
+     },
+     {
+      "v": "Welke term hoort bij \"overzicht inkomsten en uitgaven\"?",
+      "o": [
+       "Inkomen",
+       "Indexcijfer",
+       "Budget",
+       "Uitgaven"
+      ],
+      "c": 2,
+      "d": 2,
+      "u": "«Budget»: een overzicht van verwachte inkomsten en uitgaven.",
+      "uo": [
+       "«Inkomen» betekent geld dat je ontvangt.",
+       "«Indexcijfer» betekent verandering t.o.v. basisjaar.",
+       "Klopt, «Budget» past hierbij.",
+       "«Uitgaven» betekent geld dat je besteedt."
+      ],
+      "uh": "Onthoud: «Budget» = overzicht inkomsten en uitgaven."
+     },
+     {
+      "v": "Wat betekent «Sparen»?",
+      "o": [
+       "het geld dat je besteedt",
+       "het geld dat je ontvangt, bijvoorbeeld loon",
+       "een getal dat een verandering ten opzichte van een basisjaar weergeeft",
+       "geld dat je niet uitgeeft maar bewaart"
+      ],
+      "c": 3,
+      "d": 1,
+      "u": "«Sparen»: geld dat je niet uitgeeft maar bewaart.",
+      "uo": [
+       "Dat is «Uitgaven».",
+       "Dat is «Inkomen».",
+       "Dat is «Indexcijfer».",
+       "Klopt: geld bewaren."
+      ],
+      "uh": "Onthoud: «Sparen» = geld bewaren."
+     },
+     {
+      "v": "Welk begrip hoort bij: \"een overzicht van verwachte inkomsten en uitgaven\"?",
+      "o": [
+       "Budget",
+       "Budgetteren",
+       "Inkomen",
+       "Indexcijfer"
+      ],
+      "c": 0,
+      "d": 3,
+      "u": "«Budget»: een overzicht van verwachte inkomsten en uitgaven.",
+      "uo": [
+       "Klopt, dit is «Budget».",
+       "«Budgetteren» betekent uitgaven plannen.",
+       "«Inkomen» betekent geld dat je ontvangt.",
+       "«Indexcijfer» betekent verandering t.o.v. basisjaar."
+      ],
+      "uh": "Onthoud: «Budget» = overzicht inkomsten en uitgaven."
+     },
+     {
+      "v": "Welke term hoort bij \"uitgaven plannen\"?",
+      "o": [
+       "Eigen risico",
+       "Budgetteren",
+       "Premie",
+       "Deflatie"
+      ],
+      "c": 1,
+      "d": 2,
+      "u": "«Budgetteren»: je uitgaven plannen binnen je inkomen.",
+      "uo": [
+       "«Eigen risico» betekent schade die je zelf betaalt.",
+       "Klopt, «Budgetteren» past hierbij.",
+       "«Premie» betekent bedrag voor verzekering.",
+       "«Deflatie» betekent prijzen dalen."
+      ],
+      "uh": "Onthoud: «Budgetteren» = uitgaven plannen."
+     },
+     {
+      "v": "Wat betekent «Budget»?",
+      "o": [
+       "je uitgaven plannen binnen je inkomen",
+       "het geld dat je ontvangt, bijvoorbeeld loon",
+       "een overzicht van verwachte inkomsten en uitgaven",
+       "een getal dat een verandering ten opzichte van een basisjaar weergeeft"
+      ],
+      "c": 2,
+      "d": 1,
+      "u": "«Budget»: een overzicht van verwachte inkomsten en uitgaven.",
+      "uo": [
+       "Dat is «Budgetteren».",
+       "Dat is «Inkomen».",
+       "Klopt: overzicht inkomsten en uitgaven.",
+       "Dat is «Indexcijfer»."
+      ],
+      "uh": "Onthoud: «Budget» = overzicht inkomsten en uitgaven."
+     },
+     {
+      "v": "Welk begrip hoort bij: \"je uitgaven plannen binnen je inkomen\"?",
+      "o": [
+       "Budget",
+       "Eigen risico",
+       "Premie",
+       "Budgetteren"
+      ],
+      "c": 3,
+      "d": 3,
+      "u": "«Budgetteren»: je uitgaven plannen binnen je inkomen.",
+      "uo": [
+       "«Budget» betekent overzicht inkomsten en uitgaven.",
+       "«Eigen risico» betekent schade die je zelf betaalt.",
+       "«Premie» betekent bedrag voor verzekering.",
+       "Klopt, dit is «Budgetteren»."
+      ],
+      "uh": "Onthoud: «Budgetteren» = uitgaven plannen."
+     },
+     {
+      "v": "Welke term hoort bij \"prijzen stijgen\"?",
+      "o": [
+       "Inflatie",
+       "Uitgaven",
+       "Indexcijfer",
+       "Budget"
+      ],
+      "c": 0,
+      "d": 2,
+      "u": "«Inflatie»: een algemene stijging van de prijzen.",
+      "uo": [
+       "Klopt, «Inflatie» past hierbij.",
+       "«Uitgaven» betekent geld dat je besteedt.",
+       "«Indexcijfer» betekent verandering t.o.v. basisjaar.",
+       "«Budget» betekent overzicht inkomsten en uitgaven."
+      ],
+      "uh": "Onthoud: «Inflatie» = prijzen stijgen."
+     },
+     {
+      "v": "Wat betekent «Budgetteren»?",
+      "o": [
+       "een overzicht van verwachte inkomsten en uitgaven",
+       "je uitgaven plannen binnen je inkomen",
+       "het deel van de schade dat je zelf betaalt",
+       "het bedrag dat je periodiek voor een verzekering betaalt"
+      ],
+      "c": 1,
+      "d": 1,
+      "u": "«Budgetteren»: je uitgaven plannen binnen je inkomen.",
+      "uo": [
+       "Dat is «Budget».",
+       "Klopt: uitgaven plannen.",
+       "Dat is «Eigen risico».",
+       "Dat is «Premie»."
+      ],
+      "uh": "Onthoud: «Budgetteren» = uitgaven plannen."
+     },
+     {
+      "v": "Welk begrip hoort bij: \"een algemene stijging van de prijzen\"?",
+      "o": [
+       "Deflatie",
+       "Uitgaven",
+       "Inflatie",
+       "Indexcijfer"
+      ],
+      "c": 2,
+      "d": 3,
+      "u": "«Inflatie»: een algemene stijging van de prijzen.",
+      "uo": [
+       "«Deflatie» betekent prijzen dalen.",
+       "«Uitgaven» betekent geld dat je besteedt.",
+       "Klopt, dit is «Inflatie».",
+       "«Indexcijfer» betekent verandering t.o.v. basisjaar."
+      ],
+      "uh": "Onthoud: «Inflatie» = prijzen stijgen."
+     },
+     {
+      "v": "Welke term hoort bij \"prijzen dalen\"?",
+      "o": [
+       "Uitgaven",
+       "Indexcijfer",
+       "Budget",
+       "Deflatie"
+      ],
+      "c": 3,
+      "d": 2,
+      "u": "«Deflatie»: een algemene daling van de prijzen.",
+      "uo": [
+       "«Uitgaven» betekent geld dat je besteedt.",
+       "«Indexcijfer» betekent verandering t.o.v. basisjaar.",
+       "«Budget» betekent overzicht inkomsten en uitgaven.",
+       "Klopt, «Deflatie» past hierbij."
+      ],
+      "uh": "Onthoud: «Deflatie» = prijzen dalen."
+     },
+     {
+      "v": "Wat betekent «Inflatie»?",
+      "o": [
+       "een algemene stijging van de prijzen",
+       "een algemene daling van de prijzen",
+       "het geld dat je besteedt",
+       "een getal dat een verandering ten opzichte van een basisjaar weergeeft"
+      ],
+      "c": 0,
+      "d": 1,
+      "u": "«Inflatie»: een algemene stijging van de prijzen.",
+      "uo": [
+       "Klopt: prijzen stijgen.",
+       "Dat is «Deflatie».",
+       "Dat is «Uitgaven».",
+       "Dat is «Indexcijfer»."
+      ],
+      "uh": "Onthoud: «Inflatie» = prijzen stijgen."
+     },
+     {
+      "v": "Welk begrip hoort bij: \"een algemene daling van de prijzen\"?",
+      "o": [
+       "Inflatie",
+       "Deflatie",
+       "Uitgaven",
+       "Indexcijfer"
+      ],
+      "c": 1,
+      "d": 3,
+      "u": "«Deflatie»: een algemene daling van de prijzen.",
+      "uo": [
+       "«Inflatie» betekent prijzen stijgen.",
+       "Klopt, dit is «Deflatie».",
+       "«Uitgaven» betekent geld dat je besteedt.",
+       "«Indexcijfer» betekent verandering t.o.v. basisjaar."
+      ],
+      "uh": "Onthoud: «Deflatie» = prijzen dalen."
+     },
+     {
+      "v": "Welke term hoort bij \"verandering t.o.v. basisjaar\"?",
+      "o": [
+       "Eigen risico",
+       "Premie",
+       "Indexcijfer",
+       "Budgetteren"
+      ],
+      "c": 2,
+      "d": 2,
+      "u": "«Indexcijfer»: een getal dat een verandering ten opzichte van een basisjaar weergeeft.",
+      "uo": [
+       "«Eigen risico» betekent schade die je zelf betaalt.",
+       "«Premie» betekent bedrag voor verzekering.",
+       "Klopt, «Indexcijfer» past hierbij.",
+       "«Budgetteren» betekent uitgaven plannen."
+      ],
+      "uh": "Onthoud: «Indexcijfer» = verandering t.o.v. basisjaar."
+     },
+     {
+      "v": "Wat betekent «Deflatie»?",
+      "o": [
+       "een algemene stijging van de prijzen",
+       "het geld dat je besteedt",
+       "een getal dat een verandering ten opzichte van een basisjaar weergeeft",
+       "een algemene daling van de prijzen"
+      ],
+      "c": 3,
+      "d": 1,
+      "u": "«Deflatie»: een algemene daling van de prijzen.",
+      "uo": [
+       "Dat is «Inflatie».",
+       "Dat is «Uitgaven».",
+       "Dat is «Indexcijfer».",
+       "Klopt: prijzen dalen."
+      ],
+      "uh": "Onthoud: «Deflatie» = prijzen dalen."
+     },
+     {
+      "v": "Welk begrip hoort bij: \"een getal dat een verandering ten opzichte van een basisjaar weergeeft\"?",
+      "o": [
+       "Indexcijfer",
+       "Inflatie",
+       "Eigen risico",
+       "Premie"
+      ],
+      "c": 0,
+      "d": 3,
+      "u": "«Indexcijfer»: een getal dat een verandering ten opzichte van een basisjaar weergeeft.",
+      "uo": [
+       "Klopt, dit is «Indexcijfer».",
+       "«Inflatie» betekent prijzen stijgen.",
+       "«Eigen risico» betekent schade die je zelf betaalt.",
+       "«Premie» betekent bedrag voor verzekering."
+      ],
+      "uh": "Onthoud: «Indexcijfer» = verandering t.o.v. basisjaar."
+     },
+     {
+      "v": "Welke term hoort bij \"bescherming tegen risico\"?",
+      "o": [
+       "Eigen risico",
+       "Verzekering",
+       "Nominaal inkomen",
+       "Budgetteren"
+      ],
+      "c": 1,
+      "d": 2,
+      "u": "«Verzekering»: een afspraak waarbij je premie betaalt tegen financiële risico's.",
+      "uo": [
+       "«Eigen risico» betekent schade die je zelf betaalt.",
+       "Klopt, «Verzekering» past hierbij.",
+       "«Nominaal inkomen» betekent inkomen in euro's.",
+       "«Budgetteren» betekent uitgaven plannen."
+      ],
+      "uh": "Onthoud: «Verzekering» = bescherming tegen risico."
+     }
+    ],
+    "begrippen": [
+     {
+      "t": "Koopkracht",
+      "d": "hoeveel je met je inkomen kunt kopen"
+     },
+     {
+      "t": "Inkomen",
+      "d": "het geld dat je ontvangt, bijvoorbeeld loon"
+     },
+     {
+      "t": "Uitgaven",
+      "d": "het geld dat je besteedt"
+     },
+     {
+      "t": "Sparen",
+      "d": "geld dat je niet uitgeeft maar bewaart"
+     },
+     {
+      "t": "Budget",
+      "d": "een overzicht van verwachte inkomsten en uitgaven"
+     },
+     {
+      "t": "Budgetteren",
+      "d": "je uitgaven plannen binnen je inkomen"
+     },
+     {
+      "t": "Inflatie",
+      "d": "een algemene stijging van de prijzen"
+     },
+     {
+      "t": "Deflatie",
+      "d": "een algemene daling van de prijzen"
+     },
+     {
+      "t": "Indexcijfer",
+      "d": "een getal dat een verandering ten opzichte van een basisjaar weergeeft"
+     },
+     {
+      "t": "Reëel inkomen",
+      "d": "je inkomen gecorrigeerd voor inflatie"
+     },
+     {
+      "t": "Nominaal inkomen",
+      "d": "je inkomen in euro's zonder correctie voor inflatie"
+     },
+     {
+      "t": "Verzekering",
+      "d": "een afspraak waarbij je premie betaalt tegen financiële risico's"
+     },
+     {
+      "t": "Premie",
+      "d": "het bedrag dat je periodiek voor een verzekering betaalt"
+     },
+     {
+      "t": "Eigen risico",
+      "d": "het deel van de schade dat je zelf betaalt"
+     }
+    ],
+    "sam": "<p><b>Koopkracht</b> is hoeveel je met je inkomen kunt kopen. Door <b>inflatie</b> (stijgende prijzen) daalt je koopkracht als je loon niet meestijgt. Met een <b>indexcijfer</b> reken je veranderingen ten opzichte van een basisjaar uit. Een <b>verzekering</b> beschermt je tegen financiële risico's: je betaalt <b>premie</b> en houdt vaak een <b>eigen risico</b>.</p>"
    },
    {
     "id": "B",
@@ -4671,7 +5226,554 @@ var VAKKEN_VMBO = [
     ],
     "nSv": 0,
     "nOe": 0,
-    "nBeg": 0
+    "nBeg": 0,
+    "sv": [
+     {
+      "v": "Welk begrip hoort bij: \"de rechten die een koper heeft\"?",
+      "o": [
+       "Consumentenrecht",
+       "Garantie",
+       "Algemene voorwaarden",
+       "Keurmerk"
+      ],
+      "c": 0,
+      "d": 3,
+      "u": "«Consumentenrecht»: de rechten die een koper heeft.",
+      "uo": [
+       "Klopt, dit is «Consumentenrecht».",
+       "«Garantie» betekent herstel bij een gebrek.",
+       "«Algemene voorwaarden» betekent de kleine lettertjes.",
+       "«Keurmerk» betekent teken van kwaliteit."
+      ],
+      "uh": "Onthoud: «Consumentenrecht» = rechten van de koper."
+     },
+     {
+      "v": "Welke term hoort bij \"rechten van de koper\"?",
+      "o": [
+       "Keurmerk",
+       "Consumentenrecht",
+       "Consumentenorganisatie",
+       "Consumentenbond"
+      ],
+      "c": 1,
+      "d": 2,
+      "u": "«Consumentenrecht»: de rechten die een koper heeft.",
+      "uo": [
+       "«Keurmerk» betekent teken van kwaliteit.",
+       "Klopt, «Consumentenrecht» past hierbij.",
+       "«Consumentenorganisatie» betekent komt op voor kopers.",
+       "«Consumentenbond» betekent test en adviseert."
+      ],
+      "uh": "Onthoud: «Consumentenrecht» = rechten van de koper."
+     },
+     {
+      "v": "Wat betekent «Consumentenrecht»?",
+      "o": [
+       "het recht op herstel of vervanging bij een gebrek",
+       "de regels die bij een koopovereenkomst horen",
+       "de rechten die een koper heeft",
+       "een teken dat een product aan bepaalde eisen voldoet"
+      ],
+      "c": 2,
+      "d": 1,
+      "u": "«Consumentenrecht»: de rechten die een koper heeft.",
+      "uo": [
+       "Dat is «Garantie».",
+       "Dat is «Algemene voorwaarden».",
+       "Klopt: rechten van de koper.",
+       "Dat is «Keurmerk»."
+      ],
+      "uh": "Onthoud: «Consumentenrecht» = rechten van de koper."
+     },
+     {
+      "v": "Welk begrip hoort bij: \"het recht op herstel of vervanging bij een gebrek\"?",
+      "o": [
+       "Retourrecht",
+       "Bedenktijd",
+       "Keurmerk",
+       "Garantie"
+      ],
+      "c": 3,
+      "d": 3,
+      "u": "«Garantie»: het recht op herstel of vervanging bij een gebrek.",
+      "uo": [
+       "«Retourrecht» betekent aankoop terugsturen.",
+       "«Bedenktijd» betekent periode om te annuleren.",
+       "«Keurmerk» betekent teken van kwaliteit.",
+       "Klopt, dit is «Garantie»."
+      ],
+      "uh": "Onthoud: «Garantie» = herstel bij een gebrek."
+     },
+     {
+      "v": "Welke term hoort bij \"herstel bij een gebrek\"?",
+      "o": [
+       "Garantie",
+       "Keurmerk",
+       "Consumentenrecht",
+       "Consument"
+      ],
+      "c": 0,
+      "d": 2,
+      "u": "«Garantie»: het recht op herstel of vervanging bij een gebrek.",
+      "uo": [
+       "Klopt, «Garantie» past hierbij.",
+       "«Keurmerk» betekent teken van kwaliteit.",
+       "«Consumentenrecht» betekent rechten van de koper.",
+       "«Consument» betekent de koper en gebruiker."
+      ],
+      "uh": "Onthoud: «Garantie» = herstel bij een gebrek."
+     },
+     {
+      "v": "Wat betekent «Garantie»?",
+      "o": [
+       "het recht om een aankoop terug te sturen",
+       "het recht op herstel of vervanging bij een gebrek",
+       "de periode waarin je een aankoop mag annuleren",
+       "een teken dat een product aan bepaalde eisen voldoet"
+      ],
+      "c": 1,
+      "d": 1,
+      "u": "«Garantie»: het recht op herstel of vervanging bij een gebrek.",
+      "uo": [
+       "Dat is «Retourrecht».",
+       "Klopt: herstel bij een gebrek.",
+       "Dat is «Bedenktijd».",
+       "Dat is «Keurmerk»."
+      ],
+      "uh": "Onthoud: «Garantie» = herstel bij een gebrek."
+     },
+     {
+      "v": "Welk begrip hoort bij: \"de periode waarin je een aankoop mag annuleren\"?",
+      "o": [
+       "Retourrecht",
+       "Garantie",
+       "Bedenktijd",
+       "Consumentenrecht"
+      ],
+      "c": 2,
+      "d": 3,
+      "u": "«Bedenktijd»: de periode waarin je een aankoop mag annuleren.",
+      "uo": [
+       "«Retourrecht» betekent aankoop terugsturen.",
+       "«Garantie» betekent herstel bij een gebrek.",
+       "Klopt, dit is «Bedenktijd».",
+       "«Consumentenrecht» betekent rechten van de koper."
+      ],
+      "uh": "Onthoud: «Bedenktijd» = periode om te annuleren."
+     },
+     {
+      "v": "Welke term hoort bij \"aankoop terugsturen\"?",
+      "o": [
+       "Klacht",
+       "Consumentenrecht",
+       "Consument",
+       "Retourrecht"
+      ],
+      "c": 3,
+      "d": 2,
+      "u": "«Retourrecht»: het recht om een aankoop terug te sturen.",
+      "uo": [
+       "«Klacht» betekent melding dat iets niet voldoet.",
+       "«Consumentenrecht» betekent rechten van de koper.",
+       "«Consument» betekent de koper en gebruiker.",
+       "Klopt, «Retourrecht» past hierbij."
+      ],
+      "uh": "Onthoud: «Retourrecht» = aankoop terugsturen."
+     },
+     {
+      "v": "Wat betekent «Retourrecht»?",
+      "o": [
+       "het recht om een aankoop terug te sturen",
+       "de periode waarin je een aankoop mag annuleren",
+       "het recht op herstel of vervanging bij een gebrek",
+       "een melding dat een product of dienst niet voldoet"
+      ],
+      "c": 0,
+      "d": 1,
+      "u": "«Retourrecht»: het recht om een aankoop terug te sturen.",
+      "uo": [
+       "Klopt: aankoop terugsturen.",
+       "Dat is «Bedenktijd».",
+       "Dat is «Garantie».",
+       "Dat is «Klacht»."
+      ],
+      "uh": "Onthoud: «Retourrecht» = aankoop terugsturen."
+     },
+     {
+      "v": "Welk begrip hoort bij: \"een organisatie die producten test en consumenten adviseert\"?",
+      "o": [
+       "Consumentenorganisatie",
+       "Consumentenbond",
+       "Bedenktijd",
+       "Klacht"
+      ],
+      "c": 1,
+      "d": 3,
+      "u": "«Consumentenbond»: een organisatie die producten test en consumenten adviseert.",
+      "uo": [
+       "«Consumentenorganisatie» betekent komt op voor kopers.",
+       "Klopt, dit is «Consumentenbond».",
+       "«Bedenktijd» betekent periode om te annuleren.",
+       "«Klacht» betekent melding dat iets niet voldoet."
+      ],
+      "uh": "Onthoud: «Consumentenbond» = test en adviseert."
+     },
+     {
+      "v": "Welke term hoort bij \"periode om te annuleren\"?",
+      "o": [
+       "Garantie",
+       "Consumentenrecht",
+       "Bedenktijd",
+       "Keurmerk"
+      ],
+      "c": 2,
+      "d": 2,
+      "u": "«Bedenktijd»: de periode waarin je een aankoop mag annuleren.",
+      "uo": [
+       "«Garantie» betekent herstel bij een gebrek.",
+       "«Consumentenrecht» betekent rechten van de koper.",
+       "Klopt, «Bedenktijd» past hierbij.",
+       "«Keurmerk» betekent teken van kwaliteit."
+      ],
+      "uh": "Onthoud: «Bedenktijd» = periode om te annuleren."
+     },
+     {
+      "v": "Wat betekent «Bedenktijd»?",
+      "o": [
+       "het recht om een aankoop terug te sturen",
+       "het recht op herstel of vervanging bij een gebrek",
+       "de rechten die een koper heeft",
+       "de periode waarin je een aankoop mag annuleren"
+      ],
+      "c": 3,
+      "d": 1,
+      "u": "«Bedenktijd»: de periode waarin je een aankoop mag annuleren.",
+      "uo": [
+       "Dat is «Retourrecht».",
+       "Dat is «Garantie».",
+       "Dat is «Consumentenrecht».",
+       "Klopt: periode om te annuleren."
+      ],
+      "uh": "Onthoud: «Bedenktijd» = periode om te annuleren."
+     },
+     {
+      "v": "Welk begrip hoort bij: \"een melding dat een product of dienst niet voldoet\"?",
+      "o": [
+       "Klacht",
+       "Garantie",
+       "Retourrecht",
+       "Consumentenrecht"
+      ],
+      "c": 0,
+      "d": 3,
+      "u": "«Klacht»: een melding dat een product of dienst niet voldoet.",
+      "uo": [
+       "Klopt, dit is «Klacht».",
+       "«Garantie» betekent herstel bij een gebrek.",
+       "«Retourrecht» betekent aankoop terugsturen.",
+       "«Consumentenrecht» betekent rechten van de koper."
+      ],
+      "uh": "Onthoud: «Klacht» = melding dat iets niet voldoet."
+     },
+     {
+      "v": "Welke term hoort bij \"melding dat iets niet voldoet\"?",
+      "o": [
+       "Retourrecht",
+       "Klacht",
+       "Consumentenrecht",
+       "Consument"
+      ],
+      "c": 1,
+      "d": 2,
+      "u": "«Klacht»: een melding dat een product of dienst niet voldoet.",
+      "uo": [
+       "«Retourrecht» betekent aankoop terugsturen.",
+       "Klopt, «Klacht» past hierbij.",
+       "«Consumentenrecht» betekent rechten van de koper.",
+       "«Consument» betekent de koper en gebruiker."
+      ],
+      "uh": "Onthoud: «Klacht» = melding dat iets niet voldoet."
+     },
+     {
+      "v": "Wat betekent «Consumentenorganisatie»?",
+      "o": [
+       "een organisatie die producten test en consumenten adviseert",
+       "de afspraak tussen een koper en een verkoper",
+       "een organisatie die opkomt voor kopers",
+       "de periode waarin je een aankoop mag annuleren"
+      ],
+      "c": 2,
+      "d": 1,
+      "u": "«Consumentenorganisatie»: een organisatie die opkomt voor kopers.",
+      "uo": [
+       "Dat is «Consumentenbond».",
+       "Dat is «Koopovereenkomst».",
+       "Klopt: komt op voor kopers.",
+       "Dat is «Bedenktijd»."
+      ],
+      "uh": "Onthoud: «Consumentenorganisatie» = komt op voor kopers."
+     },
+     {
+      "v": "Welk begrip hoort bij: \"een teken dat een product aan bepaalde eisen voldoet\"?",
+      "o": [
+       "Garantie",
+       "Aankoop op afstand",
+       "Consument",
+       "Keurmerk"
+      ],
+      "c": 3,
+      "d": 3,
+      "u": "«Keurmerk»: een teken dat een product aan bepaalde eisen voldoet.",
+      "uo": [
+       "«Garantie» betekent herstel bij een gebrek.",
+       "«Aankoop op afstand» betekent kopen zonder winkel.",
+       "«Consument» betekent de koper en gebruiker.",
+       "Klopt, dit is «Keurmerk»."
+      ],
+      "uh": "Onthoud: «Keurmerk» = teken van kwaliteit."
+     },
+     {
+      "v": "Welke term hoort bij \"teken van kwaliteit\"?",
+      "o": [
+       "Keurmerk",
+       "Aankoop op afstand",
+       "Consument",
+       "Consumentenrecht"
+      ],
+      "c": 0,
+      "d": 2,
+      "u": "«Keurmerk»: een teken dat een product aan bepaalde eisen voldoet.",
+      "uo": [
+       "Klopt, «Keurmerk» past hierbij.",
+       "«Aankoop op afstand» betekent kopen zonder winkel.",
+       "«Consument» betekent de koper en gebruiker.",
+       "«Consumentenrecht» betekent rechten van de koper."
+      ],
+      "uh": "Onthoud: «Keurmerk» = teken van kwaliteit."
+     },
+     {
+      "v": "Wat betekent «Algemene voorwaarden»?",
+      "o": [
+       "de afspraak tussen een koper en een verkoper",
+       "de regels die bij een koopovereenkomst horen",
+       "de rechten die een koper heeft",
+       "een melding dat een product of dienst niet voldoet"
+      ],
+      "c": 1,
+      "d": 1,
+      "u": "«Algemene voorwaarden»: de regels die bij een koopovereenkomst horen.",
+      "uo": [
+       "Dat is «Koopovereenkomst».",
+       "Klopt: de kleine lettertjes.",
+       "Dat is «Consumentenrecht».",
+       "Dat is «Klacht»."
+      ],
+      "uh": "Onthoud: «Algemene voorwaarden» = de kleine lettertjes."
+     },
+     {
+      "v": "Welk begrip hoort bij: \"de afspraak tussen een koper en een verkoper\"?",
+      "o": [
+       "Algemene voorwaarden",
+       "Aankoop op afstand",
+       "Koopovereenkomst",
+       "Klacht"
+      ],
+      "c": 2,
+      "d": 3,
+      "u": "«Koopovereenkomst»: de afspraak tussen een koper en een verkoper.",
+      "uo": [
+       "«Algemene voorwaarden» betekent de kleine lettertjes.",
+       "«Aankoop op afstand» betekent kopen zonder winkel.",
+       "Klopt, dit is «Koopovereenkomst».",
+       "«Klacht» betekent melding dat iets niet voldoet."
+      ],
+      "uh": "Onthoud: «Koopovereenkomst» = afspraak koper-verkoper."
+     },
+     {
+      "v": "Welke term hoort bij \"afspraak koper-verkoper\"?",
+      "o": [
+       "Aankoop op afstand",
+       "Klacht",
+       "Bedenktijd",
+       "Koopovereenkomst"
+      ],
+      "c": 3,
+      "d": 2,
+      "u": "«Koopovereenkomst»: de afspraak tussen een koper en een verkoper.",
+      "uo": [
+       "«Aankoop op afstand» betekent kopen zonder winkel.",
+       "«Klacht» betekent melding dat iets niet voldoet.",
+       "«Bedenktijd» betekent periode om te annuleren.",
+       "Klopt, «Koopovereenkomst» past hierbij."
+      ],
+      "uh": "Onthoud: «Koopovereenkomst» = afspraak koper-verkoper."
+     },
+     {
+      "v": "Wat betekent «Koopovereenkomst»?",
+      "o": [
+       "de afspraak tussen een koper en een verkoper",
+       "de regels die bij een koopovereenkomst horen",
+       "een aankoop via internet, telefoon of post",
+       "een melding dat een product of dienst niet voldoet"
+      ],
+      "c": 0,
+      "d": 1,
+      "u": "«Koopovereenkomst»: de afspraak tussen een koper en een verkoper.",
+      "uo": [
+       "Klopt: afspraak koper-verkoper.",
+       "Dat is «Algemene voorwaarden».",
+       "Dat is «Aankoop op afstand».",
+       "Dat is «Klacht»."
+      ],
+      "uh": "Onthoud: «Koopovereenkomst» = afspraak koper-verkoper."
+     },
+     {
+      "v": "Welke term hoort bij \"de koper en gebruiker\"?",
+      "o": [
+       "Koopovereenkomst",
+       "Consument",
+       "Klacht",
+       "Bedenktijd"
+      ],
+      "c": 1,
+      "d": 2,
+      "u": "«Consument»: iemand die producten of diensten koopt en gebruikt.",
+      "uo": [
+       "«Koopovereenkomst» betekent afspraak koper-verkoper.",
+       "Klopt, «Consument» past hierbij.",
+       "«Klacht» betekent melding dat iets niet voldoet.",
+       "«Bedenktijd» betekent periode om te annuleren."
+      ],
+      "uh": "Onthoud: «Consument» = de koper en gebruiker."
+     },
+     {
+      "v": "Wat betekent «Aankoop op afstand»?",
+      "o": [
+       "de periode waarin je een aankoop mag annuleren",
+       "het recht om een aankoop terug te sturen",
+       "een aankoop via internet, telefoon of post",
+       "iemand die producten of diensten koopt en gebruikt"
+      ],
+      "c": 2,
+      "d": 1,
+      "u": "«Aankoop op afstand»: een aankoop via internet, telefoon of post.",
+      "uo": [
+       "Dat is «Bedenktijd».",
+       "Dat is «Retourrecht».",
+       "Klopt: kopen zonder winkel.",
+       "Dat is «Consument»."
+      ],
+      "uh": "Onthoud: «Aankoop op afstand» = kopen zonder winkel."
+     },
+     {
+      "v": "Wat betekent «Consument»?",
+      "o": [
+       "de afspraak tussen een koper en een verkoper",
+       "een melding dat een product of dienst niet voldoet",
+       "de periode waarin je een aankoop mag annuleren",
+       "iemand die producten of diensten koopt en gebruikt"
+      ],
+      "c": 3,
+      "d": 1,
+      "u": "«Consument»: iemand die producten of diensten koopt en gebruikt.",
+      "uo": [
+       "Dat is «Koopovereenkomst».",
+       "Dat is «Klacht».",
+       "Dat is «Bedenktijd».",
+       "Klopt: de koper en gebruiker."
+      ],
+      "uh": "Onthoud: «Consument» = de koper en gebruiker."
+     },
+     {
+      "v": "Welk begrip hoort bij: \"het recht om een aankoop terug te sturen\"?",
+      "o": [
+       "Retourrecht",
+       "Bedenktijd",
+       "Garantie",
+       "Klacht"
+      ],
+      "c": 0,
+      "d": 3,
+      "u": "«Retourrecht»: het recht om een aankoop terug te sturen.",
+      "uo": [
+       "Klopt, dit is «Retourrecht».",
+       "«Bedenktijd» betekent periode om te annuleren.",
+       "«Garantie» betekent herstel bij een gebrek.",
+       "«Klacht» betekent melding dat iets niet voldoet."
+      ],
+      "uh": "Onthoud: «Retourrecht» = aankoop terugsturen."
+     },
+     {
+      "v": "Welke term hoort bij \"komt op voor kopers\"?",
+      "o": [
+       "Koopovereenkomst",
+       "Consumentenorganisatie",
+       "Bedenktijd",
+       "Algemene voorwaarden"
+      ],
+      "c": 1,
+      "d": 2,
+      "u": "«Consumentenorganisatie»: een organisatie die opkomt voor kopers.",
+      "uo": [
+       "«Koopovereenkomst» betekent afspraak koper-verkoper.",
+       "Klopt, «Consumentenorganisatie» past hierbij.",
+       "«Bedenktijd» betekent periode om te annuleren.",
+       "«Algemene voorwaarden» betekent de kleine lettertjes."
+      ],
+      "uh": "Onthoud: «Consumentenorganisatie» = komt op voor kopers."
+     }
+    ],
+    "begrippen": [
+     {
+      "t": "Consumentenrecht",
+      "d": "de rechten die een koper heeft"
+     },
+     {
+      "t": "Garantie",
+      "d": "het recht op herstel of vervanging bij een gebrek"
+     },
+     {
+      "t": "Retourrecht",
+      "d": "het recht om een aankoop terug te sturen"
+     },
+     {
+      "t": "Bedenktijd",
+      "d": "de periode waarin je een aankoop mag annuleren"
+     },
+     {
+      "t": "Consumentenorganisatie",
+      "d": "een organisatie die opkomt voor kopers"
+     },
+     {
+      "t": "Consumentenbond",
+      "d": "een organisatie die producten test en consumenten adviseert"
+     },
+     {
+      "t": "Klacht",
+      "d": "een melding dat een product of dienst niet voldoet"
+     },
+     {
+      "t": "Keurmerk",
+      "d": "een teken dat een product aan bepaalde eisen voldoet"
+     },
+     {
+      "t": "Algemene voorwaarden",
+      "d": "de regels die bij een koopovereenkomst horen"
+     },
+     {
+      "t": "Koopovereenkomst",
+      "d": "de afspraak tussen een koper en een verkoper"
+     },
+     {
+      "t": "Aankoop op afstand",
+      "d": "een aankoop via internet, telefoon of post"
+     },
+     {
+      "t": "Consument",
+      "d": "iemand die producten of diensten koopt en gebruikt"
+     }
+    ],
+    "sam": "<p>Als koper heb je <b>consumentenrechten</b>, zoals <b>garantie</b> en bij online kopen een <b>bedenktijd</b>. Een <b>consumentenorganisatie</b> zoals de <b>Consumentenbond</b> test producten en helpt bij een <b>klacht</b>. Een <b>keurmerk</b> laat zien dat een product aan bepaalde eisen voldoet.</p>"
    },
    {
     "id": "C",
@@ -4685,7 +5787,554 @@ var VAKKEN_VMBO = [
     ],
     "nSv": 0,
     "nOe": 0,
-    "nBeg": 0
+    "nBeg": 0,
+    "sv": [
+     {
+      "v": "Welk begrip hoort bij: \"je loon vóór aftrek van belasting en premies\"?",
+      "o": [
+       "Brutoloon",
+       "Nettoloon",
+       "Vakbond",
+       "Werkgever"
+      ],
+      "c": 0,
+      "d": 3,
+      "u": "«Brutoloon»: je loon vóór aftrek van belasting en premies.",
+      "uo": [
+       "Klopt, dit is «Brutoloon».",
+       "«Nettoloon» betekent loon na aftrek.",
+       "«Vakbond» betekent komt op voor werknemers.",
+       "«Werkgever» betekent neemt mensen aan."
+      ],
+      "uh": "Onthoud: «Brutoloon» = loon vóór aftrek."
+     },
+     {
+      "v": "Welke term hoort bij \"loon vóór aftrek\"?",
+      "o": [
+       "Vakbond",
+       "Brutoloon",
+       "Werkgever",
+       "Cao"
+      ],
+      "c": 1,
+      "d": 2,
+      "u": "«Brutoloon»: je loon vóór aftrek van belasting en premies.",
+      "uo": [
+       "«Vakbond» betekent komt op voor werknemers.",
+       "Klopt, «Brutoloon» past hierbij.",
+       "«Werkgever» betekent neemt mensen aan.",
+       "«Cao» betekent afspraken over het werk."
+      ],
+      "uh": "Onthoud: «Brutoloon» = loon vóór aftrek."
+     },
+     {
+      "v": "Wat betekent «Brutoloon»?",
+      "o": [
+       "je loon na aftrek van belasting en premies",
+       "een organisatie die opkomt voor werknemers",
+       "je loon vóór aftrek van belasting en premies",
+       "iemand of een bedrijf dat mensen in dienst neemt"
+      ],
+      "c": 2,
+      "d": 1,
+      "u": "«Brutoloon»: je loon vóór aftrek van belasting en premies.",
+      "uo": [
+       "Dat is «Nettoloon».",
+       "Dat is «Vakbond».",
+       "Klopt: loon vóór aftrek.",
+       "Dat is «Werkgever»."
+      ],
+      "uh": "Onthoud: «Brutoloon» = loon vóór aftrek."
+     },
+     {
+      "v": "Welk begrip hoort bij: \"je loon na aftrek van belasting en premies\"?",
+      "o": [
+       "Brutoloon",
+       "Vakbond",
+       "Werkgever",
+       "Nettoloon"
+      ],
+      "c": 3,
+      "d": 3,
+      "u": "«Nettoloon»: je loon na aftrek van belasting en premies.",
+      "uo": [
+       "«Brutoloon» betekent loon vóór aftrek.",
+       "«Vakbond» betekent komt op voor werknemers.",
+       "«Werkgever» betekent neemt mensen aan.",
+       "Klopt, dit is «Nettoloon»."
+      ],
+      "uh": "Onthoud: «Nettoloon» = loon na aftrek."
+     },
+     {
+      "v": "Welke term hoort bij \"loon na aftrek\"?",
+      "o": [
+       "Nettoloon",
+       "Vakbond",
+       "Werkgever",
+       "Cao"
+      ],
+      "c": 0,
+      "d": 2,
+      "u": "«Nettoloon»: je loon na aftrek van belasting en premies.",
+      "uo": [
+       "Klopt, «Nettoloon» past hierbij.",
+       "«Vakbond» betekent komt op voor werknemers.",
+       "«Werkgever» betekent neemt mensen aan.",
+       "«Cao» betekent afspraken over het werk."
+      ],
+      "uh": "Onthoud: «Nettoloon» = loon na aftrek."
+     },
+     {
+      "v": "Wat betekent «Nettoloon»?",
+      "o": [
+       "je loon vóór aftrek van belasting en premies",
+       "je loon na aftrek van belasting en premies",
+       "een organisatie die opkomt voor werknemers",
+       "iemand of een bedrijf dat mensen in dienst neemt"
+      ],
+      "c": 1,
+      "d": 1,
+      "u": "«Nettoloon»: je loon na aftrek van belasting en premies.",
+      "uo": [
+       "Dat is «Brutoloon».",
+       "Klopt: loon na aftrek.",
+       "Dat is «Vakbond».",
+       "Dat is «Werkgever»."
+      ],
+      "uh": "Onthoud: «Nettoloon» = loon na aftrek."
+     },
+     {
+      "v": "Welk begrip hoort bij: \"de belasting en premies die van je loon worden ingehouden\"?",
+      "o": [
+       "Brutoloon",
+       "Werknemer",
+       "Loonheffing",
+       "Arbeidsproductiviteit"
+      ],
+      "c": 2,
+      "d": 3,
+      "u": "«Loonheffing»: de belasting en premies die van je loon worden ingehouden.",
+      "uo": [
+       "«Brutoloon» betekent loon vóór aftrek.",
+       "«Werknemer» betekent werkt in loondienst.",
+       "Klopt, dit is «Loonheffing».",
+       "«Arbeidsproductiviteit» betekent productie per werknemer."
+      ],
+      "uh": "Onthoud: «Loonheffing» = inhoudingen op je loon."
+     },
+     {
+      "v": "Welke term hoort bij \"inhoudingen op je loon\"?",
+      "o": [
+       "Werknemer",
+       "Arbeidsproductiviteit",
+       "Nettoloon",
+       "Loonheffing"
+      ],
+      "c": 3,
+      "d": 2,
+      "u": "«Loonheffing»: de belasting en premies die van je loon worden ingehouden.",
+      "uo": [
+       "«Werknemer» betekent werkt in loondienst.",
+       "«Arbeidsproductiviteit» betekent productie per werknemer.",
+       "«Nettoloon» betekent loon na aftrek.",
+       "Klopt, «Loonheffing» past hierbij."
+      ],
+      "uh": "Onthoud: «Loonheffing» = inhoudingen op je loon."
+     },
+     {
+      "v": "Wat betekent «Arbeidsverdeling»?",
+      "o": [
+       "het opsplitsen van werk in aparte taken",
+       "je toeleggen op één taak of vak",
+       "een organisatie die opkomt voor werknemers",
+       "afspraken over arbeidsvoorwaarden voor een hele bedrijfstak"
+      ],
+      "c": 0,
+      "d": 1,
+      "u": "«Arbeidsverdeling»: het opsplitsen van werk in aparte taken.",
+      "uo": [
+       "Klopt: werk in taken opdelen.",
+       "Dat is «Specialisatie».",
+       "Dat is «Vakbond».",
+       "Dat is «Cao»."
+      ],
+      "uh": "Onthoud: «Arbeidsverdeling» = werk in taken opdelen."
+     },
+     {
+      "v": "Welk begrip hoort bij: \"je toeleggen op één taak of vak\"?",
+      "o": [
+       "Arbeidsverdeling",
+       "Specialisatie",
+       "Cao",
+       "Productiefactor"
+      ],
+      "c": 1,
+      "d": 3,
+      "u": "«Specialisatie»: je toeleggen op één taak of vak.",
+      "uo": [
+       "«Arbeidsverdeling» betekent werk in taken opdelen.",
+       "Klopt, dit is «Specialisatie».",
+       "«Cao» betekent afspraken over het werk.",
+       "«Productiefactor» betekent middel om te produceren."
+      ],
+      "uh": "Onthoud: «Specialisatie» = je op één taak richten."
+     },
+     {
+      "v": "Welke term hoort bij \"werk in taken opdelen\"?",
+      "o": [
+       "Vakbond",
+       "Cao",
+       "Arbeidsverdeling",
+       "Arbeidsproductiviteit"
+      ],
+      "c": 2,
+      "d": 2,
+      "u": "«Arbeidsverdeling»: het opsplitsen van werk in aparte taken.",
+      "uo": [
+       "«Vakbond» betekent komt op voor werknemers.",
+       "«Cao» betekent afspraken over het werk.",
+       "Klopt, «Arbeidsverdeling» past hierbij.",
+       "«Arbeidsproductiviteit» betekent productie per werknemer."
+      ],
+      "uh": "Onthoud: «Arbeidsverdeling» = werk in taken opdelen."
+     },
+     {
+      "v": "Wat betekent «Specialisatie»?",
+      "o": [
+       "het opsplitsen van werk in aparte taken",
+       "afspraken over arbeidsvoorwaarden voor een hele bedrijfstak",
+       "een middel om mee te produceren, zoals arbeid of kapitaal",
+       "je toeleggen op één taak of vak"
+      ],
+      "c": 3,
+      "d": 1,
+      "u": "«Specialisatie»: je toeleggen op één taak of vak.",
+      "uo": [
+       "Dat is «Arbeidsverdeling».",
+       "Dat is «Cao».",
+       "Dat is «Productiefactor».",
+       "Klopt: je op één taak richten."
+      ],
+      "uh": "Onthoud: «Specialisatie» = je op één taak richten."
+     },
+     {
+      "v": "Welk begrip hoort bij: \"iemand die in loondienst werkt\"?",
+      "o": [
+       "Werknemer",
+       "Werkgever",
+       "Vakbond",
+       "Arbeidsproductiviteit"
+      ],
+      "c": 0,
+      "d": 3,
+      "u": "«Werknemer»: iemand die in loondienst werkt.",
+      "uo": [
+       "Klopt, dit is «Werknemer».",
+       "«Werkgever» betekent neemt mensen aan.",
+       "«Vakbond» betekent komt op voor werknemers.",
+       "«Arbeidsproductiviteit» betekent productie per werknemer."
+      ],
+      "uh": "Onthoud: «Werknemer» = werkt in loondienst."
+     },
+     {
+      "v": "Welke term hoort bij \"je op één taak richten\"?",
+      "o": [
+       "Cao",
+       "Specialisatie",
+       "Productiefactor",
+       "Brutoloon"
+      ],
+      "c": 1,
+      "d": 2,
+      "u": "«Specialisatie»: je toeleggen op één taak of vak.",
+      "uo": [
+       "«Cao» betekent afspraken over het werk.",
+       "Klopt, «Specialisatie» past hierbij.",
+       "«Productiefactor» betekent middel om te produceren.",
+       "«Brutoloon» betekent loon vóór aftrek."
+      ],
+      "uh": "Onthoud: «Specialisatie» = je op één taak richten."
+     },
+     {
+      "v": "Wat betekent «Arbeidsproductiviteit»?",
+      "o": [
+       "het opsplitsen van werk in aparte taken",
+       "het wettelijk laagste loon dat betaald mag worden",
+       "de productie per werknemer per tijd",
+       "afspraken over arbeidsvoorwaarden voor een hele bedrijfstak"
+      ],
+      "c": 2,
+      "d": 1,
+      "u": "«Arbeidsproductiviteit»: de productie per werknemer per tijd.",
+      "uo": [
+       "Dat is «Arbeidsverdeling».",
+       "Dat is «Minimumloon».",
+       "Klopt: productie per werknemer.",
+       "Dat is «Cao»."
+      ],
+      "uh": "Onthoud: «Arbeidsproductiviteit» = productie per werknemer."
+     },
+     {
+      "v": "Welk begrip hoort bij: \"iemand of een bedrijf dat mensen in dienst neemt\"?",
+      "o": [
+       "Werknemer",
+       "Vakbond",
+       "Arbeidsproductiviteit",
+       "Werkgever"
+      ],
+      "c": 3,
+      "d": 3,
+      "u": "«Werkgever»: iemand of een bedrijf dat mensen in dienst neemt.",
+      "uo": [
+       "«Werknemer» betekent werkt in loondienst.",
+       "«Vakbond» betekent komt op voor werknemers.",
+       "«Arbeidsproductiviteit» betekent productie per werknemer.",
+       "Klopt, dit is «Werkgever»."
+      ],
+      "uh": "Onthoud: «Werkgever» = neemt mensen aan."
+     },
+     {
+      "v": "Welke term hoort bij \"werkt in loondienst\"?",
+      "o": [
+       "Werknemer",
+       "Vakbond",
+       "Arbeidsproductiviteit",
+       "Cao"
+      ],
+      "c": 0,
+      "d": 2,
+      "u": "«Werknemer»: iemand die in loondienst werkt.",
+      "uo": [
+       "Klopt, «Werknemer» past hierbij.",
+       "«Vakbond» betekent komt op voor werknemers.",
+       "«Arbeidsproductiviteit» betekent productie per werknemer.",
+       "«Cao» betekent afspraken over het werk."
+      ],
+      "uh": "Onthoud: «Werknemer» = werkt in loondienst."
+     },
+     {
+      "v": "Wat betekent «Werknemer»?",
+      "o": [
+       "iemand of een bedrijf dat mensen in dienst neemt",
+       "iemand die in loondienst werkt",
+       "een organisatie die opkomt voor werknemers",
+       "de productie per werknemer per tijd"
+      ],
+      "c": 1,
+      "d": 1,
+      "u": "«Werknemer»: iemand die in loondienst werkt.",
+      "uo": [
+       "Dat is «Werkgever».",
+       "Klopt: werkt in loondienst.",
+       "Dat is «Vakbond».",
+       "Dat is «Arbeidsproductiviteit»."
+      ],
+      "uh": "Onthoud: «Werknemer» = werkt in loondienst."
+     },
+     {
+      "v": "Welk begrip hoort bij: \"afspraken over arbeidsvoorwaarden voor een hele bedrijfstak\"?",
+      "o": [
+       "Minimumloon",
+       "Vakbond",
+       "Cao",
+       "Productiefactor"
+      ],
+      "c": 2,
+      "d": 3,
+      "u": "«Cao»: afspraken over arbeidsvoorwaarden voor een hele bedrijfstak.",
+      "uo": [
+       "«Minimumloon» betekent laagste toegestane loon.",
+       "«Vakbond» betekent komt op voor werknemers.",
+       "Klopt, dit is «Cao».",
+       "«Productiefactor» betekent middel om te produceren."
+      ],
+      "uh": "Onthoud: «Cao» = afspraken over het werk."
+     },
+     {
+      "v": "Welke term hoort bij \"neemt mensen aan\"?",
+      "o": [
+       "Vakbond",
+       "Arbeidsproductiviteit",
+       "Cao",
+       "Werkgever"
+      ],
+      "c": 3,
+      "d": 2,
+      "u": "«Werkgever»: iemand of een bedrijf dat mensen in dienst neemt.",
+      "uo": [
+       "«Vakbond» betekent komt op voor werknemers.",
+       "«Arbeidsproductiviteit» betekent productie per werknemer.",
+       "«Cao» betekent afspraken over het werk.",
+       "Klopt, «Werkgever» past hierbij."
+      ],
+      "uh": "Onthoud: «Werkgever» = neemt mensen aan."
+     },
+     {
+      "v": "Wat betekent «Minimumloon»?",
+      "o": [
+       "het wettelijk laagste loon dat betaald mag worden",
+       "afspraken over arbeidsvoorwaarden voor een hele bedrijfstak",
+       "je toeleggen op één taak of vak",
+       "het opsplitsen van werk in aparte taken"
+      ],
+      "c": 0,
+      "d": 1,
+      "u": "«Minimumloon»: het wettelijk laagste loon dat betaald mag worden.",
+      "uo": [
+       "Klopt: laagste toegestane loon.",
+       "Dat is «Cao».",
+       "Dat is «Specialisatie».",
+       "Dat is «Arbeidsverdeling»."
+      ],
+      "uh": "Onthoud: «Minimumloon» = laagste toegestane loon."
+     },
+     {
+      "v": "Welk begrip hoort bij: \"het wettelijk laagste loon dat betaald mag worden\"?",
+      "o": [
+       "Cao",
+       "Minimumloon",
+       "Specialisatie",
+       "Arbeidsverdeling"
+      ],
+      "c": 1,
+      "d": 3,
+      "u": "«Minimumloon»: het wettelijk laagste loon dat betaald mag worden.",
+      "uo": [
+       "«Cao» betekent afspraken over het werk.",
+       "Klopt, dit is «Minimumloon».",
+       "«Specialisatie» betekent je op één taak richten.",
+       "«Arbeidsverdeling» betekent werk in taken opdelen."
+      ],
+      "uh": "Onthoud: «Minimumloon» = laagste toegestane loon."
+     },
+     {
+      "v": "Welke term hoort bij \"afspraken over het werk\"?",
+      "o": [
+       "Productiefactor",
+       "Werkgever",
+       "Cao",
+       "Specialisatie"
+      ],
+      "c": 2,
+      "d": 2,
+      "u": "«Cao»: afspraken over arbeidsvoorwaarden voor een hele bedrijfstak.",
+      "uo": [
+       "«Productiefactor» betekent middel om te produceren.",
+       "«Werkgever» betekent neemt mensen aan.",
+       "Klopt, «Cao» past hierbij.",
+       "«Specialisatie» betekent je op één taak richten."
+      ],
+      "uh": "Onthoud: «Cao» = afspraken over het werk."
+     },
+     {
+      "v": "Wat betekent «Vakbond»?",
+      "o": [
+       "iemand of een bedrijf dat mensen in dienst neemt",
+       "de productie per werknemer per tijd",
+       "het opsplitsen van werk in aparte taken",
+       "een organisatie die opkomt voor werknemers"
+      ],
+      "c": 3,
+      "d": 1,
+      "u": "«Vakbond»: een organisatie die opkomt voor werknemers.",
+      "uo": [
+       "Dat is «Werkgever».",
+       "Dat is «Arbeidsproductiviteit».",
+       "Dat is «Arbeidsverdeling».",
+       "Klopt: komt op voor werknemers."
+      ],
+      "uh": "Onthoud: «Vakbond» = komt op voor werknemers."
+     },
+     {
+      "v": "Welk begrip hoort bij: \"een organisatie die opkomt voor werknemers\"?",
+      "o": [
+       "Vakbond",
+       "Werkgever",
+       "Arbeidsproductiviteit",
+       "Arbeidsverdeling"
+      ],
+      "c": 0,
+      "d": 3,
+      "u": "«Vakbond»: een organisatie die opkomt voor werknemers.",
+      "uo": [
+       "Klopt, dit is «Vakbond».",
+       "«Werkgever» betekent neemt mensen aan.",
+       "«Arbeidsproductiviteit» betekent productie per werknemer.",
+       "«Arbeidsverdeling» betekent werk in taken opdelen."
+      ],
+      "uh": "Onthoud: «Vakbond» = komt op voor werknemers."
+     },
+     {
+      "v": "Welke term hoort bij \"laagste toegestane loon\"?",
+      "o": [
+       "Specialisatie",
+       "Minimumloon",
+       "Arbeidsverdeling",
+       "Brutoloon"
+      ],
+      "c": 1,
+      "d": 2,
+      "u": "«Minimumloon»: het wettelijk laagste loon dat betaald mag worden.",
+      "uo": [
+       "«Specialisatie» betekent je op één taak richten.",
+       "Klopt, «Minimumloon» past hierbij.",
+       "«Arbeidsverdeling» betekent werk in taken opdelen.",
+       "«Brutoloon» betekent loon vóór aftrek."
+      ],
+      "uh": "Onthoud: «Minimumloon» = laagste toegestane loon."
+     }
+    ],
+    "begrippen": [
+     {
+      "t": "Brutoloon",
+      "d": "je loon vóór aftrek van belasting en premies"
+     },
+     {
+      "t": "Nettoloon",
+      "d": "je loon na aftrek van belasting en premies"
+     },
+     {
+      "t": "Loonheffing",
+      "d": "de belasting en premies die van je loon worden ingehouden"
+     },
+     {
+      "t": "Arbeidsverdeling",
+      "d": "het opsplitsen van werk in aparte taken"
+     },
+     {
+      "t": "Specialisatie",
+      "d": "je toeleggen op één taak of vak"
+     },
+     {
+      "t": "Arbeidsproductiviteit",
+      "d": "de productie per werknemer per tijd"
+     },
+     {
+      "t": "Werknemer",
+      "d": "iemand die in loondienst werkt"
+     },
+     {
+      "t": "Werkgever",
+      "d": "iemand of een bedrijf dat mensen in dienst neemt"
+     },
+     {
+      "t": "Cao",
+      "d": "afspraken over arbeidsvoorwaarden voor een hele bedrijfstak"
+     },
+     {
+      "t": "Minimumloon",
+      "d": "het wettelijk laagste loon dat betaald mag worden"
+     },
+     {
+      "t": "Vakbond",
+      "d": "een organisatie die opkomt voor werknemers"
+     },
+     {
+      "t": "Productiefactor",
+      "d": "een middel om mee te produceren, zoals arbeid of kapitaal"
+     }
+    ],
+    "sam": "<p>Van je <b>brutoloon</b> gaan belasting en premies af; wat overblijft is je <b>nettoloon</b>. Door <b>arbeidsverdeling</b> en <b>specialisatie</b> stijgt de <b>arbeidsproductiviteit</b>: de productie per werknemer. In een <b>cao</b> staan afspraken tussen werkgevers en <b>vakbonden</b> over het werk.</p>"
    },
    {
     "id": "D",
@@ -4699,7 +6348,554 @@ var VAKKEN_VMBO = [
     ],
     "nSv": 0,
     "nOe": 0,
-    "nBeg": 0
+    "nBeg": 0,
+    "sv": [
+     {
+      "v": "Welk begrip hoort bij: \"de totale verkoopopbrengst: prijs maal aantal\"?",
+      "o": [
+       "Omzet",
+       "Winst",
+       "Brutowinst",
+       "Break-even"
+      ],
+      "c": 0,
+      "d": 3,
+      "u": "«Omzet»: de totale verkoopopbrengst: prijs maal aantal.",
+      "uo": [
+       "Klopt, dit is «Omzet».",
+       "«Winst» betekent opbrengst min kosten.",
+       "«Brutowinst» betekent omzet min inkoopwaarde.",
+       "«Break-even» betekent omzet is gelijk aan kosten."
+      ],
+      "uh": "Onthoud: «Omzet» = prijs maal aantal."
+     },
+     {
+      "v": "Welke term hoort bij \"prijs maal aantal\"?",
+      "o": [
+       "Break-even",
+       "Omzet",
+       "Winstmarge",
+       "Variabele kosten"
+      ],
+      "c": 1,
+      "d": 2,
+      "u": "«Omzet»: de totale verkoopopbrengst: prijs maal aantal.",
+      "uo": [
+       "«Break-even» betekent omzet is gelijk aan kosten.",
+       "Klopt, «Omzet» past hierbij.",
+       "«Winstmarge» betekent verkoop min inkoop.",
+       "«Variabele kosten» betekent bewegen mee."
+      ],
+      "uh": "Onthoud: «Omzet» = prijs maal aantal."
+     },
+     {
+      "v": "Wat betekent «Omzet»?",
+      "o": [
+       "het bedrag dat overblijft na aftrek van de kosten",
+       "de omzet min de inkoopwaarde van de verkochte producten",
+       "de totale verkoopopbrengst: prijs maal aantal",
+       "het punt waarop de omzet precies gelijk is aan de kosten"
+      ],
+      "c": 2,
+      "d": 1,
+      "u": "«Omzet»: de totale verkoopopbrengst: prijs maal aantal.",
+      "uo": [
+       "Dat is «Winst».",
+       "Dat is «Brutowinst».",
+       "Klopt: prijs maal aantal.",
+       "Dat is «Break-even»."
+      ],
+      "uh": "Onthoud: «Omzet» = prijs maal aantal."
+     },
+     {
+      "v": "Welk begrip hoort bij: \"de prijs waarvoor je een product verkoopt\"?",
+      "o": [
+       "Inkoopprijs",
+       "Variabele kosten",
+       "Constante kosten",
+       "Verkoopprijs"
+      ],
+      "c": 3,
+      "d": 3,
+      "u": "«Verkoopprijs»: de prijs waarvoor je een product verkoopt.",
+      "uo": [
+       "«Inkoopprijs» betekent prijs bij inkoop.",
+       "«Variabele kosten» betekent bewegen mee.",
+       "«Constante kosten» betekent blijven gelijk.",
+       "Klopt, dit is «Verkoopprijs»."
+      ],
+      "uh": "Onthoud: «Verkoopprijs» = prijs bij verkoop."
+     },
+     {
+      "v": "Welke term hoort bij \"prijs bij verkoop\"?",
+      "o": [
+       "Verkoopprijs",
+       "Variabele kosten",
+       "Constante kosten",
+       "Omzet"
+      ],
+      "c": 0,
+      "d": 2,
+      "u": "«Verkoopprijs»: de prijs waarvoor je een product verkoopt.",
+      "uo": [
+       "Klopt, «Verkoopprijs» past hierbij.",
+       "«Variabele kosten» betekent bewegen mee.",
+       "«Constante kosten» betekent blijven gelijk.",
+       "«Omzet» betekent prijs maal aantal."
+      ],
+      "uh": "Onthoud: «Verkoopprijs» = prijs bij verkoop."
+     },
+     {
+      "v": "Wat betekent «Verkoopprijs»?",
+      "o": [
+       "de prijs die je voor een product betaalt",
+       "de prijs waarvoor je een product verkoopt",
+       "kosten die meebewegen met de productie",
+       "kosten die niet veranderen met de productie"
+      ],
+      "c": 1,
+      "d": 1,
+      "u": "«Verkoopprijs»: de prijs waarvoor je een product verkoopt.",
+      "uo": [
+       "Dat is «Inkoopprijs».",
+       "Klopt: prijs bij verkoop.",
+       "Dat is «Variabele kosten».",
+       "Dat is «Constante kosten»."
+      ],
+      "uh": "Onthoud: «Verkoopprijs» = prijs bij verkoop."
+     },
+     {
+      "v": "Welk begrip hoort bij: \"de prijs die je voor een product betaalt\"?",
+      "o": [
+       "Verkoopprijs",
+       "Constante kosten",
+       "Inkoopprijs",
+       "Kosten"
+      ],
+      "c": 2,
+      "d": 3,
+      "u": "«Inkoopprijs»: de prijs die je voor een product betaalt.",
+      "uo": [
+       "«Verkoopprijs» betekent prijs bij verkoop.",
+       "«Constante kosten» betekent blijven gelijk.",
+       "Klopt, dit is «Inkoopprijs».",
+       "«Kosten» betekent uitgaven om te produceren."
+      ],
+      "uh": "Onthoud: «Inkoopprijs» = prijs bij inkoop."
+     },
+     {
+      "v": "Welke term hoort bij \"prijs bij inkoop\"?",
+      "o": [
+       "Constante kosten",
+       "Kosten",
+       "Omzet",
+       "Inkoopprijs"
+      ],
+      "c": 3,
+      "d": 2,
+      "u": "«Inkoopprijs»: de prijs die je voor een product betaalt.",
+      "uo": [
+       "«Constante kosten» betekent blijven gelijk.",
+       "«Kosten» betekent uitgaven om te produceren.",
+       "«Omzet» betekent prijs maal aantal.",
+       "Klopt, «Inkoopprijs» past hierbij."
+      ],
+      "uh": "Onthoud: «Inkoopprijs» = prijs bij inkoop."
+     },
+     {
+      "v": "Wat betekent «Inkoopprijs»?",
+      "o": [
+       "de prijs die je voor een product betaalt",
+       "de prijs waarvoor je een product verkoopt",
+       "kosten die niet veranderen met de productie",
+       "alles wat je uitgeeft om te produceren"
+      ],
+      "c": 0,
+      "d": 1,
+      "u": "«Inkoopprijs»: de prijs die je voor een product betaalt.",
+      "uo": [
+       "Klopt: prijs bij inkoop.",
+       "Dat is «Verkoopprijs».",
+       "Dat is «Constante kosten».",
+       "Dat is «Kosten»."
+      ],
+      "uh": "Onthoud: «Inkoopprijs» = prijs bij inkoop."
+     },
+     {
+      "v": "Welk begrip hoort bij: \"belasting die je over de verkoopprijs betaalt\"?",
+      "o": [
+       "Winst",
+       "Btw",
+       "Variabele kosten",
+       "Break-even"
+      ],
+      "c": 1,
+      "d": 3,
+      "u": "«Btw»: belasting die je over de verkoopprijs betaalt.",
+      "uo": [
+       "«Winst» betekent opbrengst min kosten.",
+       "Klopt, dit is «Btw».",
+       "«Variabele kosten» betekent bewegen mee.",
+       "«Break-even» betekent omzet is gelijk aan kosten."
+      ],
+      "uh": "Onthoud: «Btw» = belasting op de prijs."
+     },
+     {
+      "v": "Welke term hoort bij \"belasting op de prijs\"?",
+      "o": [
+       "Variabele kosten",
+       "Break-even",
+       "Btw",
+       "Winstmarge"
+      ],
+      "c": 2,
+      "d": 2,
+      "u": "«Btw»: belasting die je over de verkoopprijs betaalt.",
+      "uo": [
+       "«Variabele kosten» betekent bewegen mee.",
+       "«Break-even» betekent omzet is gelijk aan kosten.",
+       "Klopt, «Btw» past hierbij.",
+       "«Winstmarge» betekent verkoop min inkoop."
+      ],
+      "uh": "Onthoud: «Btw» = belasting op de prijs."
+     },
+     {
+      "v": "Wat betekent «Btw»?",
+      "o": [
+       "het bedrag dat overblijft na aftrek van de kosten",
+       "kosten die meebewegen met de productie",
+       "het punt waarop de omzet precies gelijk is aan de kosten",
+       "belasting die je over de verkoopprijs betaalt"
+      ],
+      "c": 3,
+      "d": 1,
+      "u": "«Btw»: belasting die je over de verkoopprijs betaalt.",
+      "uo": [
+       "Dat is «Winst».",
+       "Dat is «Variabele kosten».",
+       "Dat is «Break-even».",
+       "Klopt: belasting op de prijs."
+      ],
+      "uh": "Onthoud: «Btw» = belasting op de prijs."
+     },
+     {
+      "v": "Welk begrip hoort bij: \"het bedrag dat overblijft na aftrek van de kosten\"?",
+      "o": [
+       "Winst",
+       "Omzet",
+       "Brutowinst",
+       "Break-even"
+      ],
+      "c": 0,
+      "d": 3,
+      "u": "«Winst»: het bedrag dat overblijft na aftrek van de kosten.",
+      "uo": [
+       "Klopt, dit is «Winst».",
+       "«Omzet» betekent prijs maal aantal.",
+       "«Brutowinst» betekent omzet min inkoopwaarde.",
+       "«Break-even» betekent omzet is gelijk aan kosten."
+      ],
+      "uh": "Onthoud: «Winst» = opbrengst min kosten."
+     },
+     {
+      "v": "Welke term hoort bij \"opbrengst min kosten\"?",
+      "o": [
+       "Break-even",
+       "Winst",
+       "Winstmarge",
+       "Variabele kosten"
+      ],
+      "c": 1,
+      "d": 2,
+      "u": "«Winst»: het bedrag dat overblijft na aftrek van de kosten.",
+      "uo": [
+       "«Break-even» betekent omzet is gelijk aan kosten.",
+       "Klopt, «Winst» past hierbij.",
+       "«Winstmarge» betekent verkoop min inkoop.",
+       "«Variabele kosten» betekent bewegen mee."
+      ],
+      "uh": "Onthoud: «Winst» = opbrengst min kosten."
+     },
+     {
+      "v": "Wat betekent «Winst»?",
+      "o": [
+       "de totale verkoopopbrengst: prijs maal aantal",
+       "de omzet min de inkoopwaarde van de verkochte producten",
+       "het bedrag dat overblijft na aftrek van de kosten",
+       "het punt waarop de omzet precies gelijk is aan de kosten"
+      ],
+      "c": 2,
+      "d": 1,
+      "u": "«Winst»: het bedrag dat overblijft na aftrek van de kosten.",
+      "uo": [
+       "Dat is «Omzet».",
+       "Dat is «Brutowinst».",
+       "Klopt: opbrengst min kosten.",
+       "Dat is «Break-even»."
+      ],
+      "uh": "Onthoud: «Winst» = opbrengst min kosten."
+     },
+     {
+      "v": "Welk begrip hoort bij: \"alles wat je uitgeeft om te produceren\"?",
+      "o": [
+       "Omzet",
+       "Inkoopprijs",
+       "Verkoopprijs",
+       "Kosten"
+      ],
+      "c": 3,
+      "d": 3,
+      "u": "«Kosten»: alles wat je uitgeeft om te produceren.",
+      "uo": [
+       "«Omzet» betekent prijs maal aantal.",
+       "«Inkoopprijs» betekent prijs bij inkoop.",
+       "«Verkoopprijs» betekent prijs bij verkoop.",
+       "Klopt, dit is «Kosten»."
+      ],
+      "uh": "Onthoud: «Kosten» = uitgaven om te produceren."
+     },
+     {
+      "v": "Welke term hoort bij \"uitgaven om te produceren\"?",
+      "o": [
+       "Kosten",
+       "Inkoopprijs",
+       "Verkoopprijs",
+       "Break-even"
+      ],
+      "c": 0,
+      "d": 2,
+      "u": "«Kosten»: alles wat je uitgeeft om te produceren.",
+      "uo": [
+       "Klopt, «Kosten» past hierbij.",
+       "«Inkoopprijs» betekent prijs bij inkoop.",
+       "«Verkoopprijs» betekent prijs bij verkoop.",
+       "«Break-even» betekent omzet is gelijk aan kosten."
+      ],
+      "uh": "Onthoud: «Kosten» = uitgaven om te produceren."
+     },
+     {
+      "v": "Wat betekent «Kosten»?",
+      "o": [
+       "de totale verkoopopbrengst: prijs maal aantal",
+       "alles wat je uitgeeft om te produceren",
+       "de prijs die je voor een product betaalt",
+       "de prijs waarvoor je een product verkoopt"
+      ],
+      "c": 1,
+      "d": 1,
+      "u": "«Kosten»: alles wat je uitgeeft om te produceren.",
+      "uo": [
+       "Dat is «Omzet».",
+       "Klopt: uitgaven om te produceren.",
+       "Dat is «Inkoopprijs».",
+       "Dat is «Verkoopprijs»."
+      ],
+      "uh": "Onthoud: «Kosten» = uitgaven om te produceren."
+     },
+     {
+      "v": "Welk begrip hoort bij: \"kosten die niet veranderen met de productie\"?",
+      "o": [
+       "Variabele kosten",
+       "Winstmarge",
+       "Constante kosten",
+       "Totale kosten"
+      ],
+      "c": 2,
+      "d": 3,
+      "u": "«Constante kosten»: kosten die niet veranderen met de productie.",
+      "uo": [
+       "«Variabele kosten» betekent bewegen mee.",
+       "«Winstmarge» betekent verkoop min inkoop.",
+       "Klopt, dit is «Constante kosten».",
+       "«Totale kosten» betekent constant plus variabel."
+      ],
+      "uh": "Onthoud: «Constante kosten» = blijven gelijk."
+     },
+     {
+      "v": "Welke term hoort bij \"omzet min inkoopwaarde\"?",
+      "o": [
+       "Omzet",
+       "Kosten",
+       "Totale kosten",
+       "Brutowinst"
+      ],
+      "c": 3,
+      "d": 2,
+      "u": "«Brutowinst»: de omzet min de inkoopwaarde van de verkochte producten.",
+      "uo": [
+       "«Omzet» betekent prijs maal aantal.",
+       "«Kosten» betekent uitgaven om te produceren.",
+       "«Totale kosten» betekent constant plus variabel.",
+       "Klopt, «Brutowinst» past hierbij."
+      ],
+      "uh": "Onthoud: «Brutowinst» = omzet min inkoopwaarde."
+     },
+     {
+      "v": "Wat betekent «Constante kosten»?",
+      "o": [
+       "kosten die niet veranderen met de productie",
+       "kosten die meebewegen met de productie",
+       "het verschil tussen verkoopprijs en inkoopprijs",
+       "de constante kosten plus de variabele kosten"
+      ],
+      "c": 0,
+      "d": 1,
+      "u": "«Constante kosten»: kosten die niet veranderen met de productie.",
+      "uo": [
+       "Klopt: blijven gelijk.",
+       "Dat is «Variabele kosten».",
+       "Dat is «Winstmarge».",
+       "Dat is «Totale kosten»."
+      ],
+      "uh": "Onthoud: «Constante kosten» = blijven gelijk."
+     },
+     {
+      "v": "Welk begrip hoort bij: \"kosten die meebewegen met de productie\"?",
+      "o": [
+       "Constante kosten",
+       "Variabele kosten",
+       "Winstmarge",
+       "Totale kosten"
+      ],
+      "c": 1,
+      "d": 3,
+      "u": "«Variabele kosten»: kosten die meebewegen met de productie.",
+      "uo": [
+       "«Constante kosten» betekent blijven gelijk.",
+       "Klopt, dit is «Variabele kosten».",
+       "«Winstmarge» betekent verkoop min inkoop.",
+       "«Totale kosten» betekent constant plus variabel."
+      ],
+      "uh": "Onthoud: «Variabele kosten» = bewegen mee."
+     },
+     {
+      "v": "Welke term hoort bij \"verkoop min inkoop\"?",
+      "o": [
+       "Verkoopprijs",
+       "Omzet",
+       "Winstmarge",
+       "Kosten"
+      ],
+      "c": 2,
+      "d": 2,
+      "u": "«Winstmarge»: het verschil tussen verkoopprijs en inkoopprijs.",
+      "uo": [
+       "«Verkoopprijs» betekent prijs bij verkoop.",
+       "«Omzet» betekent prijs maal aantal.",
+       "Klopt, «Winstmarge» past hierbij.",
+       "«Kosten» betekent uitgaven om te produceren."
+      ],
+      "uh": "Onthoud: «Winstmarge» = verkoop min inkoop."
+     },
+     {
+      "v": "Wat betekent «Variabele kosten»?",
+      "o": [
+       "kosten die niet veranderen met de productie",
+       "het verschil tussen verkoopprijs en inkoopprijs",
+       "de constante kosten plus de variabele kosten",
+       "kosten die meebewegen met de productie"
+      ],
+      "c": 3,
+      "d": 1,
+      "u": "«Variabele kosten»: kosten die meebewegen met de productie.",
+      "uo": [
+       "Dat is «Constante kosten».",
+       "Dat is «Winstmarge».",
+       "Dat is «Totale kosten».",
+       "Klopt: bewegen mee."
+      ],
+      "uh": "Onthoud: «Variabele kosten» = bewegen mee."
+     },
+     {
+      "v": "Welk begrip hoort bij: \"de constante kosten plus de variabele kosten\"?",
+      "o": [
+       "Totale kosten",
+       "Constante kosten",
+       "Variabele kosten",
+       "Winst"
+      ],
+      "c": 0,
+      "d": 3,
+      "u": "«Totale kosten»: de constante kosten plus de variabele kosten.",
+      "uo": [
+       "Klopt, dit is «Totale kosten».",
+       "«Constante kosten» betekent blijven gelijk.",
+       "«Variabele kosten» betekent bewegen mee.",
+       "«Winst» betekent opbrengst min kosten."
+      ],
+      "uh": "Onthoud: «Totale kosten» = constant plus variabel."
+     },
+     {
+      "v": "Welke term hoort bij \"omzet is gelijk aan kosten\"?",
+      "o": [
+       "Verkoopprijs",
+       "Break-even",
+       "Omzet",
+       "Constante kosten"
+      ],
+      "c": 1,
+      "d": 2,
+      "u": "«Break-even»: het punt waarop de omzet precies gelijk is aan de kosten.",
+      "uo": [
+       "«Verkoopprijs» betekent prijs bij verkoop.",
+       "Klopt, «Break-even» past hierbij.",
+       "«Omzet» betekent prijs maal aantal.",
+       "«Constante kosten» betekent blijven gelijk."
+      ],
+      "uh": "Onthoud: «Break-even» = omzet is gelijk aan kosten."
+     }
+    ],
+    "begrippen": [
+     {
+      "t": "Omzet",
+      "d": "de totale verkoopopbrengst: prijs maal aantal"
+     },
+     {
+      "t": "Verkoopprijs",
+      "d": "de prijs waarvoor je een product verkoopt"
+     },
+     {
+      "t": "Inkoopprijs",
+      "d": "de prijs die je voor een product betaalt"
+     },
+     {
+      "t": "Btw",
+      "d": "belasting die je over de verkoopprijs betaalt"
+     },
+     {
+      "t": "Winst",
+      "d": "het bedrag dat overblijft na aftrek van de kosten"
+     },
+     {
+      "t": "Kosten",
+      "d": "alles wat je uitgeeft om te produceren"
+     },
+     {
+      "t": "Constante kosten",
+      "d": "kosten die niet veranderen met de productie"
+     },
+     {
+      "t": "Variabele kosten",
+      "d": "kosten die meebewegen met de productie"
+     },
+     {
+      "t": "Totale kosten",
+      "d": "de constante kosten plus de variabele kosten"
+     },
+     {
+      "t": "Brutowinst",
+      "d": "de omzet min de inkoopwaarde van de verkochte producten"
+     },
+     {
+      "t": "Winstmarge",
+      "d": "het verschil tussen verkoopprijs en inkoopprijs"
+     },
+     {
+      "t": "Break-even",
+      "d": "het punt waarop de omzet precies gelijk is aan de kosten"
+     }
+    ],
+    "sam": "<p>De <b>omzet</b> is prijs maal aantal. Trek je de <b>kosten</b> ervan af, dan houd je <b>winst</b> over. <b>Constante kosten</b> veranderen niet met de productie, <b>variabele kosten</b> wel. Over de verkoopprijs betaal je <b>btw</b> aan de overheid.</p>"
    },
    {
     "id": "E",
@@ -4713,7 +6909,554 @@ var VAKKEN_VMBO = [
     ],
     "nSv": 0,
     "nOe": 0,
-    "nBeg": 0
+    "nBeg": 0,
+    "sv": [
+     {
+      "v": "Welk begrip hoort bij: \"een verplichte betaling aan de overheid\"?",
+      "o": [
+       "Belasting",
+       "Accijns",
+       "Infrastructuur",
+       "Uitkering"
+      ],
+      "c": 0,
+      "d": 3,
+      "u": "«Belasting»: een verplichte betaling aan de overheid.",
+      "uo": [
+       "Klopt, dit is «Belasting».",
+       "«Accijns» betekent extra belasting op producten.",
+       "«Infrastructuur» betekent wegen en verbindingen.",
+       "«Uitkering» betekent geld bij te weinig inkomen."
+      ],
+      "uh": "Onthoud: «Belasting» = verplichte betaling aan de staat."
+     },
+     {
+      "v": "Welke term hoort bij \"verplichte betaling aan de staat\"?",
+      "o": [
+       "Infrastructuur",
+       "Belasting",
+       "Uitkering",
+       "Begroting"
+      ],
+      "c": 1,
+      "d": 2,
+      "u": "«Belasting»: een verplichte betaling aan de overheid.",
+      "uo": [
+       "«Infrastructuur» betekent wegen en verbindingen.",
+       "Klopt, «Belasting» past hierbij.",
+       "«Uitkering» betekent geld bij te weinig inkomen.",
+       "«Begroting» betekent plan van inkomsten en uitgaven."
+      ],
+      "uh": "Onthoud: «Belasting» = verplichte betaling aan de staat."
+     },
+     {
+      "v": "Wat betekent «Belasting»?",
+      "o": [
+       "extra belasting op producten zoals alcohol en benzine",
+       "voorzieningen zoals wegen, bruggen en spoor",
+       "een verplichte betaling aan de overheid",
+       "geld van de overheid voor wie niet genoeg inkomen heeft"
+      ],
+      "c": 2,
+      "d": 1,
+      "u": "«Belasting»: een verplichte betaling aan de overheid.",
+      "uo": [
+       "Dat is «Accijns».",
+       "Dat is «Infrastructuur».",
+       "Klopt: verplichte betaling aan de staat.",
+       "Dat is «Uitkering»."
+      ],
+      "uh": "Onthoud: «Belasting» = verplichte betaling aan de staat."
+     },
+     {
+      "v": "Welk begrip hoort bij: \"belasting op inkomen of winst\"?",
+      "o": [
+       "Indirecte belasting",
+       "Inkomstenbelasting",
+       "Overheidstaak",
+       "Directe belasting"
+      ],
+      "c": 3,
+      "d": 3,
+      "u": "«Directe belasting»: belasting op inkomen of winst.",
+      "uo": [
+       "«Indirecte belasting» betekent belasting in de prijs.",
+       "«Inkomstenbelasting» betekent belasting over inkomen.",
+       "«Overheidstaak» betekent taak van de overheid.",
+       "Klopt, dit is «Directe belasting»."
+      ],
+      "uh": "Onthoud: «Directe belasting» = belasting op inkomen."
+     },
+     {
+      "v": "Welke term hoort bij \"belasting op inkomen\"?",
+      "o": [
+       "Directe belasting",
+       "Inkomstenbelasting",
+       "Overheidstaak",
+       "Collectieve voorziening"
+      ],
+      "c": 0,
+      "d": 2,
+      "u": "«Directe belasting»: belasting op inkomen of winst.",
+      "uo": [
+       "Klopt, «Directe belasting» past hierbij.",
+       "«Inkomstenbelasting» betekent belasting over inkomen.",
+       "«Overheidstaak» betekent taak van de overheid.",
+       "«Collectieve voorziening» betekent voor iedereen geregeld."
+      ],
+      "uh": "Onthoud: «Directe belasting» = belasting op inkomen."
+     },
+     {
+      "v": "Wat betekent «Directe belasting»?",
+      "o": [
+       "belasting die in de prijs van producten zit",
+       "belasting op inkomen of winst",
+       "belasting die je over je inkomen betaalt",
+       "een taak die de overheid voor de samenleving uitvoert"
+      ],
+      "c": 1,
+      "d": 1,
+      "u": "«Directe belasting»: belasting op inkomen of winst.",
+      "uo": [
+       "Dat is «Indirecte belasting».",
+       "Klopt: belasting op inkomen.",
+       "Dat is «Inkomstenbelasting».",
+       "Dat is «Overheidstaak»."
+      ],
+      "uh": "Onthoud: «Directe belasting» = belasting op inkomen."
+     },
+     {
+      "v": "Welk begrip hoort bij: \"extra belasting op producten zoals alcohol en benzine\"?",
+      "o": [
+       "Belasting",
+       "Uitkering",
+       "Accijns",
+       "Collectieve voorziening"
+      ],
+      "c": 2,
+      "d": 3,
+      "u": "«Accijns»: extra belasting op producten zoals alcohol en benzine.",
+      "uo": [
+       "«Belasting» betekent verplichte betaling aan de staat.",
+       "«Uitkering» betekent geld bij te weinig inkomen.",
+       "Klopt, dit is «Accijns».",
+       "«Collectieve voorziening» betekent voor iedereen geregeld."
+      ],
+      "uh": "Onthoud: «Accijns» = extra belasting op producten."
+     },
+     {
+      "v": "Welke term hoort bij \"belasting over inkomen\"?",
+      "o": [
+       "Accijns",
+       "Overheidstaak",
+       "Indirecte belasting",
+       "Inkomstenbelasting"
+      ],
+      "c": 3,
+      "d": 2,
+      "u": "«Inkomstenbelasting»: belasting die je over je inkomen betaalt.",
+      "uo": [
+       "«Accijns» betekent extra belasting op producten.",
+       "«Overheidstaak» betekent taak van de overheid.",
+       "«Indirecte belasting» betekent belasting in de prijs.",
+       "Klopt, «Inkomstenbelasting» past hierbij."
+      ],
+      "uh": "Onthoud: «Inkomstenbelasting» = belasting over inkomen."
+     },
+     {
+      "v": "Wat betekent «Indirecte belasting»?",
+      "o": [
+       "belasting die in de prijs van producten zit",
+       "belasting op inkomen of winst",
+       "belasting die je over je inkomen betaalt",
+       "een bijdrage van de overheid om iets te stimuleren"
+      ],
+      "c": 0,
+      "d": 1,
+      "u": "«Indirecte belasting»: belasting die in de prijs van producten zit.",
+      "uo": [
+       "Klopt: belasting in de prijs.",
+       "Dat is «Directe belasting».",
+       "Dat is «Inkomstenbelasting».",
+       "Dat is «Subsidie»."
+      ],
+      "uh": "Onthoud: «Indirecte belasting» = belasting in de prijs."
+     },
+     {
+      "v": "Welk begrip hoort bij: \"een bijdrage van de overheid om iets te stimuleren\"?",
+      "o": [
+       "Uitkering",
+       "Subsidie",
+       "Infrastructuur",
+       "Overheidstaak"
+      ],
+      "c": 1,
+      "d": 3,
+      "u": "«Subsidie»: een bijdrage van de overheid om iets te stimuleren.",
+      "uo": [
+       "«Uitkering» betekent geld bij te weinig inkomen.",
+       "Klopt, dit is «Subsidie».",
+       "«Infrastructuur» betekent wegen en verbindingen.",
+       "«Overheidstaak» betekent taak van de overheid."
+      ],
+      "uh": "Onthoud: «Subsidie» = geld om te stimuleren."
+     },
+     {
+      "v": "Welke term hoort bij \"extra belasting op producten\"?",
+      "o": [
+       "Uitkering",
+       "Collectieve voorziening",
+       "Accijns",
+       "Overheidstaak"
+      ],
+      "c": 2,
+      "d": 2,
+      "u": "«Accijns»: extra belasting op producten zoals alcohol en benzine.",
+      "uo": [
+       "«Uitkering» betekent geld bij te weinig inkomen.",
+       "«Collectieve voorziening» betekent voor iedereen geregeld.",
+       "Klopt, «Accijns» past hierbij.",
+       "«Overheidstaak» betekent taak van de overheid."
+      ],
+      "uh": "Onthoud: «Accijns» = extra belasting op producten."
+     },
+     {
+      "v": "Wat betekent «Inkomstenbelasting»?",
+      "o": [
+       "belasting op inkomen of winst",
+       "extra belasting op producten zoals alcohol en benzine",
+       "een taak die de overheid voor de samenleving uitvoert",
+       "belasting die je over je inkomen betaalt"
+      ],
+      "c": 3,
+      "d": 1,
+      "u": "«Inkomstenbelasting»: belasting die je over je inkomen betaalt.",
+      "uo": [
+       "Dat is «Directe belasting».",
+       "Dat is «Accijns».",
+       "Dat is «Overheidstaak».",
+       "Klopt: belasting over inkomen."
+      ],
+      "uh": "Onthoud: «Inkomstenbelasting» = belasting over inkomen."
+     },
+     {
+      "v": "Welk begrip hoort bij: \"geld van de overheid voor wie niet genoeg inkomen heeft\"?",
+      "o": [
+       "Uitkering",
+       "Subsidie",
+       "Infrastructuur",
+       "Collectieve voorziening"
+      ],
+      "c": 0,
+      "d": 3,
+      "u": "«Uitkering»: geld van de overheid voor wie niet genoeg inkomen heeft.",
+      "uo": [
+       "Klopt, dit is «Uitkering».",
+       "«Subsidie» betekent geld om te stimuleren.",
+       "«Infrastructuur» betekent wegen en verbindingen.",
+       "«Collectieve voorziening» betekent voor iedereen geregeld."
+      ],
+      "uh": "Onthoud: «Uitkering» = geld bij te weinig inkomen."
+     },
+     {
+      "v": "Welke term hoort bij \"geld om te stimuleren\"?",
+      "o": [
+       "Infrastructuur",
+       "Subsidie",
+       "Overheidstaak",
+       "Belasting"
+      ],
+      "c": 1,
+      "d": 2,
+      "u": "«Subsidie»: een bijdrage van de overheid om iets te stimuleren.",
+      "uo": [
+       "«Infrastructuur» betekent wegen en verbindingen.",
+       "Klopt, «Subsidie» past hierbij.",
+       "«Overheidstaak» betekent taak van de overheid.",
+       "«Belasting» betekent verplichte betaling aan de staat."
+      ],
+      "uh": "Onthoud: «Subsidie» = geld om te stimuleren."
+     },
+     {
+      "v": "Wat betekent «Accijns»?",
+      "o": [
+       "een verplichte betaling aan de overheid",
+       "geld van de overheid voor wie niet genoeg inkomen heeft",
+       "extra belasting op producten zoals alcohol en benzine",
+       "iets dat de overheid voor iedereen regelt, zoals wegen"
+      ],
+      "c": 2,
+      "d": 1,
+      "u": "«Accijns»: extra belasting op producten zoals alcohol en benzine.",
+      "uo": [
+       "Dat is «Belasting».",
+       "Dat is «Uitkering».",
+       "Klopt: extra belasting op producten.",
+       "Dat is «Collectieve voorziening»."
+      ],
+      "uh": "Onthoud: «Accijns» = extra belasting op producten."
+     },
+     {
+      "v": "Welk begrip hoort bij: \"het overzicht van verwachte inkomsten en uitgaven van de overheid\"?",
+      "o": [
+       "Staatsschuld",
+       "Infrastructuur",
+       "Collectieve voorziening",
+       "Begroting"
+      ],
+      "c": 3,
+      "d": 3,
+      "u": "«Begroting»: het overzicht van verwachte inkomsten en uitgaven van de overheid.",
+      "uo": [
+       "«Staatsschuld» betekent wat de staat heeft geleend.",
+       "«Infrastructuur» betekent wegen en verbindingen.",
+       "«Collectieve voorziening» betekent voor iedereen geregeld.",
+       "Klopt, dit is «Begroting»."
+      ],
+      "uh": "Onthoud: «Begroting» = plan van inkomsten en uitgaven."
+     },
+     {
+      "v": "Welke term hoort bij \"geld bij te weinig inkomen\"?",
+      "o": [
+       "Uitkering",
+       "Infrastructuur",
+       "Collectieve voorziening",
+       "Begroting"
+      ],
+      "c": 0,
+      "d": 2,
+      "u": "«Uitkering»: geld van de overheid voor wie niet genoeg inkomen heeft.",
+      "uo": [
+       "Klopt, «Uitkering» past hierbij.",
+       "«Infrastructuur» betekent wegen en verbindingen.",
+       "«Collectieve voorziening» betekent voor iedereen geregeld.",
+       "«Begroting» betekent plan van inkomsten en uitgaven."
+      ],
+      "uh": "Onthoud: «Uitkering» = geld bij te weinig inkomen."
+     },
+     {
+      "v": "Wat betekent «Collectieve voorziening»?",
+      "o": [
+       "een bijdrage van de overheid om iets te stimuleren",
+       "iets dat de overheid voor iedereen regelt, zoals wegen",
+       "het overzicht van verwachte inkomsten en uitgaven van de overheid",
+       "een taak die de overheid voor de samenleving uitvoert"
+      ],
+      "c": 1,
+      "d": 1,
+      "u": "«Collectieve voorziening»: iets dat de overheid voor iedereen regelt, zoals wegen.",
+      "uo": [
+       "Dat is «Subsidie».",
+       "Klopt: voor iedereen geregeld.",
+       "Dat is «Begroting».",
+       "Dat is «Overheidstaak»."
+      ],
+      "uh": "Onthoud: «Collectieve voorziening» = voor iedereen geregeld."
+     },
+     {
+      "v": "Welk begrip hoort bij: \"het totale bedrag dat de overheid heeft geleend\"?",
+      "o": [
+       "Begroting",
+       "Collectieve voorziening",
+       "Staatsschuld",
+       "Accijns"
+      ],
+      "c": 2,
+      "d": 3,
+      "u": "«Staatsschuld»: het totale bedrag dat de overheid heeft geleend.",
+      "uo": [
+       "«Begroting» betekent plan van inkomsten en uitgaven.",
+       "«Collectieve voorziening» betekent voor iedereen geregeld.",
+       "Klopt, dit is «Staatsschuld».",
+       "«Accijns» betekent extra belasting op producten."
+      ],
+      "uh": "Onthoud: «Staatsschuld» = wat de staat heeft geleend."
+     },
+     {
+      "v": "Welke term hoort bij \"plan van inkomsten en uitgaven\"?",
+      "o": [
+       "Infrastructuur",
+       "Collectieve voorziening",
+       "Subsidie",
+       "Begroting"
+      ],
+      "c": 3,
+      "d": 2,
+      "u": "«Begroting»: het overzicht van verwachte inkomsten en uitgaven van de overheid.",
+      "uo": [
+       "«Infrastructuur» betekent wegen en verbindingen.",
+       "«Collectieve voorziening» betekent voor iedereen geregeld.",
+       "«Subsidie» betekent geld om te stimuleren.",
+       "Klopt, «Begroting» past hierbij."
+      ],
+      "uh": "Onthoud: «Begroting» = plan van inkomsten en uitgaven."
+     },
+     {
+      "v": "Wat betekent «Subsidie»?",
+      "o": [
+       "een bijdrage van de overheid om iets te stimuleren",
+       "geld van de overheid voor wie niet genoeg inkomen heeft",
+       "voorzieningen zoals wegen, bruggen en spoor",
+       "een taak die de overheid voor de samenleving uitvoert"
+      ],
+      "c": 0,
+      "d": 1,
+      "u": "«Subsidie»: een bijdrage van de overheid om iets te stimuleren.",
+      "uo": [
+       "Klopt: geld om te stimuleren.",
+       "Dat is «Uitkering».",
+       "Dat is «Infrastructuur».",
+       "Dat is «Overheidstaak»."
+      ],
+      "uh": "Onthoud: «Subsidie» = geld om te stimuleren."
+     },
+     {
+      "v": "Welk begrip hoort bij: \"voorzieningen zoals wegen, bruggen en spoor\"?",
+      "o": [
+       "Collectieve voorziening",
+       "Infrastructuur",
+       "Inkomstenbelasting",
+       "Overheidstaak"
+      ],
+      "c": 1,
+      "d": 3,
+      "u": "«Infrastructuur»: voorzieningen zoals wegen, bruggen en spoor.",
+      "uo": [
+       "«Collectieve voorziening» betekent voor iedereen geregeld.",
+       "Klopt, dit is «Infrastructuur».",
+       "«Inkomstenbelasting» betekent belasting over inkomen.",
+       "«Overheidstaak» betekent taak van de overheid."
+      ],
+      "uh": "Onthoud: «Infrastructuur» = wegen en verbindingen."
+     },
+     {
+      "v": "Welke term hoort bij \"wat de staat heeft geleend\"?",
+      "o": [
+       "Collectieve voorziening",
+       "Accijns",
+       "Staatsschuld",
+       "Belasting"
+      ],
+      "c": 2,
+      "d": 2,
+      "u": "«Staatsschuld»: het totale bedrag dat de overheid heeft geleend.",
+      "uo": [
+       "«Collectieve voorziening» betekent voor iedereen geregeld.",
+       "«Accijns» betekent extra belasting op producten.",
+       "Klopt, «Staatsschuld» past hierbij.",
+       "«Belasting» betekent verplichte betaling aan de staat."
+      ],
+      "uh": "Onthoud: «Staatsschuld» = wat de staat heeft geleend."
+     },
+     {
+      "v": "Wat betekent «Staatsschuld»?",
+      "o": [
+       "het overzicht van verwachte inkomsten en uitgaven van de overheid",
+       "iets dat de overheid voor iedereen regelt, zoals wegen",
+       "extra belasting op producten zoals alcohol en benzine",
+       "het totale bedrag dat de overheid heeft geleend"
+      ],
+      "c": 3,
+      "d": 1,
+      "u": "«Staatsschuld»: het totale bedrag dat de overheid heeft geleend.",
+      "uo": [
+       "Dat is «Begroting».",
+       "Dat is «Collectieve voorziening».",
+       "Dat is «Accijns».",
+       "Klopt: wat de staat heeft geleend."
+      ],
+      "uh": "Onthoud: «Staatsschuld» = wat de staat heeft geleend."
+     },
+     {
+      "v": "Welk begrip hoort bij: \"een taak die de overheid voor de samenleving uitvoert\"?",
+      "o": [
+       "Overheidstaak",
+       "Collectieve voorziening",
+       "Uitkering",
+       "Infrastructuur"
+      ],
+      "c": 0,
+      "d": 3,
+      "u": "«Overheidstaak»: een taak die de overheid voor de samenleving uitvoert.",
+      "uo": [
+       "Klopt, dit is «Overheidstaak».",
+       "«Collectieve voorziening» betekent voor iedereen geregeld.",
+       "«Uitkering» betekent geld bij te weinig inkomen.",
+       "«Infrastructuur» betekent wegen en verbindingen."
+      ],
+      "uh": "Onthoud: «Overheidstaak» = taak van de overheid."
+     },
+     {
+      "v": "Welke term hoort bij \"wegen en verbindingen\"?",
+      "o": [
+       "Inkomstenbelasting",
+       "Infrastructuur",
+       "Overheidstaak",
+       "Subsidie"
+      ],
+      "c": 1,
+      "d": 2,
+      "u": "«Infrastructuur»: voorzieningen zoals wegen, bruggen en spoor.",
+      "uo": [
+       "«Inkomstenbelasting» betekent belasting over inkomen.",
+       "Klopt, «Infrastructuur» past hierbij.",
+       "«Overheidstaak» betekent taak van de overheid.",
+       "«Subsidie» betekent geld om te stimuleren."
+      ],
+      "uh": "Onthoud: «Infrastructuur» = wegen en verbindingen."
+     }
+    ],
+    "begrippen": [
+     {
+      "t": "Belasting",
+      "d": "een verplichte betaling aan de overheid"
+     },
+     {
+      "t": "Directe belasting",
+      "d": "belasting op inkomen of winst"
+     },
+     {
+      "t": "Indirecte belasting",
+      "d": "belasting die in de prijs van producten zit"
+     },
+     {
+      "t": "Inkomstenbelasting",
+      "d": "belasting die je over je inkomen betaalt"
+     },
+     {
+      "t": "Accijns",
+      "d": "extra belasting op producten zoals alcohol en benzine"
+     },
+     {
+      "t": "Collectieve voorziening",
+      "d": "iets dat de overheid voor iedereen regelt, zoals wegen"
+     },
+     {
+      "t": "Subsidie",
+      "d": "een bijdrage van de overheid om iets te stimuleren"
+     },
+     {
+      "t": "Uitkering",
+      "d": "geld van de overheid voor wie niet genoeg inkomen heeft"
+     },
+     {
+      "t": "Begroting",
+      "d": "het overzicht van verwachte inkomsten en uitgaven van de overheid"
+     },
+     {
+      "t": "Staatsschuld",
+      "d": "het totale bedrag dat de overheid heeft geleend"
+     },
+     {
+      "t": "Infrastructuur",
+      "d": "voorzieningen zoals wegen, bruggen en spoor"
+     },
+     {
+      "t": "Overheidstaak",
+      "d": "een taak die de overheid voor de samenleving uitvoert"
+     }
+    ],
+    "sam": "<p>De <b>overheid</b> heft <b>belasting</b> om <b>collectieve voorzieningen</b> zoals wegen en onderwijs te betalen. <b>Directe belasting</b> gaat over inkomen of winst, <b>indirecte belasting</b> zit in de prijs van producten. Wie te weinig inkomen heeft, kan een <b>uitkering</b> krijgen.</p>"
    },
    {
     "id": "F",
@@ -4729,7 +7472,554 @@ var VAKKEN_VMBO = [
     ],
     "nSv": 0,
     "nOe": 0,
-    "nBeg": 0
+    "nBeg": 0,
+    "sv": [
+     {
+      "v": "Welk begrip hoort bij: \"het invoeren van goederen uit het buitenland\"?",
+      "o": [
+       "Import",
+       "Export",
+       "Wisselkoers",
+       "Handelsbalans"
+      ],
+      "c": 0,
+      "d": 3,
+      "u": "«Import»: het invoeren van goederen uit het buitenland.",
+      "uo": [
+       "Klopt, dit is «Import».",
+       "«Export» betekent uitvoer naar buitenland.",
+       "«Wisselkoers» betekent prijs van een munt.",
+       "«Handelsbalans» betekent export min import."
+      ],
+      "uh": "Onthoud: «Import» = invoer uit buitenland."
+     },
+     {
+      "v": "Welke term hoort bij \"invoer uit buitenland\"?",
+      "o": [
+       "Wisselkoers",
+       "Import",
+       "Handelsbalans",
+       "Globalisering"
+      ],
+      "c": 1,
+      "d": 2,
+      "u": "«Import»: het invoeren van goederen uit het buitenland.",
+      "uo": [
+       "«Wisselkoers» betekent prijs van een munt.",
+       "Klopt, «Import» past hierbij.",
+       "«Handelsbalans» betekent export min import.",
+       "«Globalisering» betekent landen raken verweven."
+      ],
+      "uh": "Onthoud: «Import» = invoer uit buitenland."
+     },
+     {
+      "v": "Wat betekent «Import»?",
+      "o": [
+       "het uitvoeren van goederen naar het buitenland",
+       "de prijs van de ene munt uitgedrukt in de andere",
+       "het invoeren van goederen uit het buitenland",
+       "het verschil tussen de export en de import"
+      ],
+      "c": 2,
+      "d": 1,
+      "u": "«Import»: het invoeren van goederen uit het buitenland.",
+      "uo": [
+       "Dat is «Export».",
+       "Dat is «Wisselkoers».",
+       "Klopt: invoer uit buitenland.",
+       "Dat is «Handelsbalans»."
+      ],
+      "uh": "Onthoud: «Import» = invoer uit buitenland."
+     },
+     {
+      "v": "Welk begrip hoort bij: \"het uitvoeren van goederen naar het buitenland\"?",
+      "o": [
+       "Import",
+       "Wisselkoers",
+       "Handelsbalans",
+       "Export"
+      ],
+      "c": 3,
+      "d": 3,
+      "u": "«Export»: het uitvoeren van goederen naar het buitenland.",
+      "uo": [
+       "«Import» betekent invoer uit buitenland.",
+       "«Wisselkoers» betekent prijs van een munt.",
+       "«Handelsbalans» betekent export min import.",
+       "Klopt, dit is «Export»."
+      ],
+      "uh": "Onthoud: «Export» = uitvoer naar buitenland."
+     },
+     {
+      "v": "Welke term hoort bij \"uitvoer naar buitenland\"?",
+      "o": [
+       "Export",
+       "Wisselkoers",
+       "Handelsbalans",
+       "Globalisering"
+      ],
+      "c": 0,
+      "d": 2,
+      "u": "«Export»: het uitvoeren van goederen naar het buitenland.",
+      "uo": [
+       "Klopt, «Export» past hierbij.",
+       "«Wisselkoers» betekent prijs van een munt.",
+       "«Handelsbalans» betekent export min import.",
+       "«Globalisering» betekent landen raken verweven."
+      ],
+      "uh": "Onthoud: «Export» = uitvoer naar buitenland."
+     },
+     {
+      "v": "Wat betekent «Export»?",
+      "o": [
+       "het invoeren van goederen uit het buitenland",
+       "het uitvoeren van goederen naar het buitenland",
+       "de prijs van de ene munt uitgedrukt in de andere",
+       "het verschil tussen de export en de import"
+      ],
+      "c": 1,
+      "d": 1,
+      "u": "«Export»: het uitvoeren van goederen naar het buitenland.",
+      "uo": [
+       "Dat is «Import».",
+       "Klopt: uitvoer naar buitenland.",
+       "Dat is «Wisselkoers».",
+       "Dat is «Handelsbalans»."
+      ],
+      "uh": "Onthoud: «Export» = uitvoer naar buitenland."
+     },
+     {
+      "v": "Welk begrip hoort bij: \"het verschil tussen de export en de import\"?",
+      "o": [
+       "Wisselkoers",
+       "Ontwikkelingssamenwerking",
+       "Handelsbalans",
+       "Globalisering"
+      ],
+      "c": 2,
+      "d": 3,
+      "u": "«Handelsbalans»: het verschil tussen de export en de import.",
+      "uo": [
+       "«Wisselkoers» betekent prijs van een munt.",
+       "«Ontwikkelingssamenwerking» betekent hulp aan arme landen.",
+       "Klopt, dit is «Handelsbalans».",
+       "«Globalisering» betekent landen raken verweven."
+      ],
+      "uh": "Onthoud: «Handelsbalans» = export min import."
+     },
+     {
+      "v": "Welke term hoort bij \"export min import\"?",
+      "o": [
+       "Ontwikkelingssamenwerking",
+       "Globalisering",
+       "Import",
+       "Handelsbalans"
+      ],
+      "c": 3,
+      "d": 2,
+      "u": "«Handelsbalans»: het verschil tussen de export en de import.",
+      "uo": [
+       "«Ontwikkelingssamenwerking» betekent hulp aan arme landen.",
+       "«Globalisering» betekent landen raken verweven.",
+       "«Import» betekent invoer uit buitenland.",
+       "Klopt, «Handelsbalans» past hierbij."
+      ],
+      "uh": "Onthoud: «Handelsbalans» = export min import."
+     },
+     {
+      "v": "Wat betekent «Handelsbalans»?",
+      "o": [
+       "het verschil tussen de export en de import",
+       "de prijs van de ene munt uitgedrukt in de andere",
+       "hulp aan armere landen om zich te ontwikkelen",
+       "het steeds meer verweven raken van landen wereldwijd"
+      ],
+      "c": 0,
+      "d": 1,
+      "u": "«Handelsbalans»: het verschil tussen de export en de import.",
+      "uo": [
+       "Klopt: export min import.",
+       "Dat is «Wisselkoers».",
+       "Dat is «Ontwikkelingssamenwerking».",
+       "Dat is «Globalisering»."
+      ],
+      "uh": "Onthoud: «Handelsbalans» = export min import."
+     },
+     {
+      "v": "Welk begrip hoort bij: \"de prijs van de ene munt uitgedrukt in de andere\"?",
+      "o": [
+       "Euro",
+       "Wisselkoers",
+       "Interne markt",
+       "Europese Unie"
+      ],
+      "c": 1,
+      "d": 3,
+      "u": "«Wisselkoers»: de prijs van de ene munt uitgedrukt in de andere.",
+      "uo": [
+       "«Euro» betekent de munt van de eurozone.",
+       "Klopt, dit is «Wisselkoers».",
+       "«Interne markt» betekent vrije handel in de EU.",
+       "«Europese Unie» betekent samenwerkende EU-landen."
+      ],
+      "uh": "Onthoud: «Wisselkoers» = prijs van een munt."
+     },
+     {
+      "v": "Welke term hoort bij \"prijs van een munt\"?",
+      "o": [
+       "Interne markt",
+       "Europese Unie",
+       "Wisselkoers",
+       "Import"
+      ],
+      "c": 2,
+      "d": 2,
+      "u": "«Wisselkoers»: de prijs van de ene munt uitgedrukt in de andere.",
+      "uo": [
+       "«Interne markt» betekent vrije handel in de EU.",
+       "«Europese Unie» betekent samenwerkende EU-landen.",
+       "Klopt, «Wisselkoers» past hierbij.",
+       "«Import» betekent invoer uit buitenland."
+      ],
+      "uh": "Onthoud: «Wisselkoers» = prijs van een munt."
+     },
+     {
+      "v": "Wat betekent «Euro»?",
+      "o": [
+       "de prijs van de ene munt uitgedrukt in de andere",
+       "hulp aan armere landen om zich te ontwikkelen",
+       "het steeds meer verweven raken van landen wereldwijd",
+       "de gezamenlijke munt van veel EU-landen"
+      ],
+      "c": 3,
+      "d": 1,
+      "u": "«Euro»: de gezamenlijke munt van veel EU-landen.",
+      "uo": [
+       "Dat is «Wisselkoers».",
+       "Dat is «Ontwikkelingssamenwerking».",
+       "Dat is «Globalisering».",
+       "Klopt: de munt van de eurozone."
+      ],
+      "uh": "Onthoud: «Euro» = de munt van de eurozone."
+     },
+     {
+      "v": "Welk begrip hoort bij: \"de gezamenlijke munt van veel EU-landen\"?",
+      "o": [
+       "Euro",
+       "Wisselkoers",
+       "Ontwikkelingssamenwerking",
+       "Globalisering"
+      ],
+      "c": 0,
+      "d": 3,
+      "u": "«Euro»: de gezamenlijke munt van veel EU-landen.",
+      "uo": [
+       "Klopt, dit is «Euro».",
+       "«Wisselkoers» betekent prijs van een munt.",
+       "«Ontwikkelingssamenwerking» betekent hulp aan arme landen.",
+       "«Globalisering» betekent landen raken verweven."
+      ],
+      "uh": "Onthoud: «Euro» = de munt van de eurozone."
+     },
+     {
+      "v": "Welke term hoort bij \"de munt van de eurozone\"?",
+      "o": [
+       "Ontwikkelingssamenwerking",
+       "Euro",
+       "Globalisering",
+       "Europese Unie"
+      ],
+      "c": 1,
+      "d": 2,
+      "u": "«Euro»: de gezamenlijke munt van veel EU-landen.",
+      "uo": [
+       "«Ontwikkelingssamenwerking» betekent hulp aan arme landen.",
+       "Klopt, «Euro» past hierbij.",
+       "«Globalisering» betekent landen raken verweven.",
+       "«Europese Unie» betekent samenwerkende EU-landen."
+      ],
+      "uh": "Onthoud: «Euro» = de munt van de eurozone."
+     },
+     {
+      "v": "Wat betekent «Europese Unie»?",
+      "o": [
+       "de vrije handel binnen de EU zonder grenzen",
+       "hulp aan armere landen om zich te ontwikkelen",
+       "een samenwerkingsverband van Europese landen",
+       "het steeds meer verweven raken van landen wereldwijd"
+      ],
+      "c": 2,
+      "d": 1,
+      "u": "«Europese Unie»: een samenwerkingsverband van Europese landen.",
+      "uo": [
+       "Dat is «Interne markt».",
+       "Dat is «Ontwikkelingssamenwerking».",
+       "Klopt: samenwerkende EU-landen.",
+       "Dat is «Globalisering»."
+      ],
+      "uh": "Onthoud: «Europese Unie» = samenwerkende EU-landen."
+     },
+     {
+      "v": "Welk begrip hoort bij: \"een samenwerkingsverband van Europese landen\"?",
+      "o": [
+       "Interne markt",
+       "Ontwikkelingssamenwerking",
+       "Globalisering",
+       "Europese Unie"
+      ],
+      "c": 3,
+      "d": 3,
+      "u": "«Europese Unie»: een samenwerkingsverband van Europese landen.",
+      "uo": [
+       "«Interne markt» betekent vrije handel in de EU.",
+       "«Ontwikkelingssamenwerking» betekent hulp aan arme landen.",
+       "«Globalisering» betekent landen raken verweven.",
+       "Klopt, dit is «Europese Unie»."
+      ],
+      "uh": "Onthoud: «Europese Unie» = samenwerkende EU-landen."
+     },
+     {
+      "v": "Welke term hoort bij \"samenwerkende EU-landen\"?",
+      "o": [
+       "Europese Unie",
+       "Ontwikkelingssamenwerking",
+       "Globalisering",
+       "Import"
+      ],
+      "c": 0,
+      "d": 2,
+      "u": "«Europese Unie»: een samenwerkingsverband van Europese landen.",
+      "uo": [
+       "Klopt, «Europese Unie» past hierbij.",
+       "«Ontwikkelingssamenwerking» betekent hulp aan arme landen.",
+       "«Globalisering» betekent landen raken verweven.",
+       "«Import» betekent invoer uit buitenland."
+      ],
+      "uh": "Onthoud: «Europese Unie» = samenwerkende EU-landen."
+     },
+     {
+      "v": "Wat betekent «Interne markt»?",
+      "o": [
+       "handel zonder belemmeringen tussen landen",
+       "de vrije handel binnen de EU zonder grenzen",
+       "een samenwerkingsverband van Europese landen",
+       "de gezamenlijke munt van veel EU-landen"
+      ],
+      "c": 1,
+      "d": 1,
+      "u": "«Interne markt»: de vrije handel binnen de EU zonder grenzen.",
+      "uo": [
+       "Dat is «Vrijhandel».",
+       "Klopt: vrije handel in de EU.",
+       "Dat is «Europese Unie».",
+       "Dat is «Euro»."
+      ],
+      "uh": "Onthoud: «Interne markt» = vrije handel in de EU."
+     },
+     {
+      "v": "Welk begrip hoort bij: \"de vrije handel binnen de EU zonder grenzen\"?",
+      "o": [
+       "Vrijhandel",
+       "Europese Unie",
+       "Interne markt",
+       "Euro"
+      ],
+      "c": 2,
+      "d": 3,
+      "u": "«Interne markt»: de vrije handel binnen de EU zonder grenzen.",
+      "uo": [
+       "«Vrijhandel» betekent handel zonder drempels.",
+       "«Europese Unie» betekent samenwerkende EU-landen.",
+       "Klopt, dit is «Interne markt».",
+       "«Euro» betekent de munt van de eurozone."
+      ],
+      "uh": "Onthoud: «Interne markt» = vrije handel in de EU."
+     },
+     {
+      "v": "Welke term hoort bij \"vrije handel in de EU\"?",
+      "o": [
+       "Euro",
+       "Import",
+       "Globalisering",
+       "Interne markt"
+      ],
+      "c": 3,
+      "d": 2,
+      "u": "«Interne markt»: de vrije handel binnen de EU zonder grenzen.",
+      "uo": [
+       "«Euro» betekent de munt van de eurozone.",
+       "«Import» betekent invoer uit buitenland.",
+       "«Globalisering» betekent landen raken verweven.",
+       "Klopt, «Interne markt» past hierbij."
+      ],
+      "uh": "Onthoud: «Interne markt» = vrije handel in de EU."
+     },
+     {
+      "v": "Wat betekent «Invoerrechten»?",
+      "o": [
+       "belasting op goederen die worden ingevoerd",
+       "eigen bedrijven beschermen tegen buitenlandse concurrentie",
+       "de vrije handel binnen de EU zonder grenzen",
+       "het steeds meer verweven raken van landen wereldwijd"
+      ],
+      "c": 0,
+      "d": 1,
+      "u": "«Invoerrechten»: belasting op goederen die worden ingevoerd.",
+      "uo": [
+       "Klopt: belasting op invoer.",
+       "Dat is «Protectionisme».",
+       "Dat is «Interne markt».",
+       "Dat is «Globalisering»."
+      ],
+      "uh": "Onthoud: «Invoerrechten» = belasting op invoer."
+     },
+     {
+      "v": "Welk begrip hoort bij: \"belasting op goederen die worden ingevoerd\"?",
+      "o": [
+       "Protectionisme",
+       "Invoerrechten",
+       "Interne markt",
+       "Globalisering"
+      ],
+      "c": 1,
+      "d": 3,
+      "u": "«Invoerrechten»: belasting op goederen die worden ingevoerd.",
+      "uo": [
+       "«Protectionisme» betekent eigen markt beschermen.",
+       "Klopt, dit is «Invoerrechten».",
+       "«Interne markt» betekent vrije handel in de EU.",
+       "«Globalisering» betekent landen raken verweven."
+      ],
+      "uh": "Onthoud: «Invoerrechten» = belasting op invoer."
+     },
+     {
+      "v": "Welke term hoort bij \"belasting op invoer\"?",
+      "o": [
+       "Interne markt",
+       "Globalisering",
+       "Invoerrechten",
+       "Import"
+      ],
+      "c": 2,
+      "d": 2,
+      "u": "«Invoerrechten»: belasting op goederen die worden ingevoerd.",
+      "uo": [
+       "«Interne markt» betekent vrije handel in de EU.",
+       "«Globalisering» betekent landen raken verweven.",
+       "Klopt, «Invoerrechten» past hierbij.",
+       "«Import» betekent invoer uit buitenland."
+      ],
+      "uh": "Onthoud: «Invoerrechten» = belasting op invoer."
+     },
+     {
+      "v": "Wat betekent «Ontwikkelingssamenwerking»?",
+      "o": [
+       "het steeds meer verweven raken van landen wereldwijd",
+       "het verschil tussen de export en de import",
+       "belasting op goederen die worden ingevoerd",
+       "hulp aan armere landen om zich te ontwikkelen"
+      ],
+      "c": 3,
+      "d": 1,
+      "u": "«Ontwikkelingssamenwerking»: hulp aan armere landen om zich te ontwikkelen.",
+      "uo": [
+       "Dat is «Globalisering».",
+       "Dat is «Handelsbalans».",
+       "Dat is «Invoerrechten».",
+       "Klopt: hulp aan arme landen."
+      ],
+      "uh": "Onthoud: «Ontwikkelingssamenwerking» = hulp aan arme landen."
+     },
+     {
+      "v": "Welk begrip hoort bij: \"handel zonder belemmeringen tussen landen\"?",
+      "o": [
+       "Vrijhandel",
+       "Protectionisme",
+       "Export",
+       "Import"
+      ],
+      "c": 0,
+      "d": 3,
+      "u": "«Vrijhandel»: handel zonder belemmeringen tussen landen.",
+      "uo": [
+       "Klopt, dit is «Vrijhandel».",
+       "«Protectionisme» betekent eigen markt beschermen.",
+       "«Export» betekent uitvoer naar buitenland.",
+       "«Import» betekent invoer uit buitenland."
+      ],
+      "uh": "Onthoud: «Vrijhandel» = handel zonder drempels."
+     },
+     {
+      "v": "Welke term hoort bij \"handel zonder drempels\"?",
+      "o": [
+       "Export",
+       "Vrijhandel",
+       "Import",
+       "Europese Unie"
+      ],
+      "c": 1,
+      "d": 2,
+      "u": "«Vrijhandel»: handel zonder belemmeringen tussen landen.",
+      "uo": [
+       "«Export» betekent uitvoer naar buitenland.",
+       "Klopt, «Vrijhandel» past hierbij.",
+       "«Import» betekent invoer uit buitenland.",
+       "«Europese Unie» betekent samenwerkende EU-landen."
+      ],
+      "uh": "Onthoud: «Vrijhandel» = handel zonder drempels."
+     }
+    ],
+    "begrippen": [
+     {
+      "t": "Import",
+      "d": "het invoeren van goederen uit het buitenland"
+     },
+     {
+      "t": "Export",
+      "d": "het uitvoeren van goederen naar het buitenland"
+     },
+     {
+      "t": "Handelsbalans",
+      "d": "het verschil tussen de export en de import"
+     },
+     {
+      "t": "Wisselkoers",
+      "d": "de prijs van de ene munt uitgedrukt in de andere"
+     },
+     {
+      "t": "Euro",
+      "d": "de gezamenlijke munt van veel EU-landen"
+     },
+     {
+      "t": "Europese Unie",
+      "d": "een samenwerkingsverband van Europese landen"
+     },
+     {
+      "t": "Interne markt",
+      "d": "de vrije handel binnen de EU zonder grenzen"
+     },
+     {
+      "t": "Invoerrechten",
+      "d": "belasting op goederen die worden ingevoerd"
+     },
+     {
+      "t": "Ontwikkelingssamenwerking",
+      "d": "hulp aan armere landen om zich te ontwikkelen"
+     },
+     {
+      "t": "Vrijhandel",
+      "d": "handel zonder belemmeringen tussen landen"
+     },
+     {
+      "t": "Protectionisme",
+      "d": "eigen bedrijven beschermen tegen buitenlandse concurrentie"
+     },
+     {
+      "t": "Globalisering",
+      "d": "het steeds meer verweven raken van landen wereldwijd"
+     }
+    ],
+    "sam": "<p>Landen handelen met elkaar: <b>import</b> is invoer, <b>export</b> is uitvoer. Voor handel met andere munten geldt een <b>wisselkoers</b>. Binnen de <b>Europese Unie</b> is er een <b>interne markt</b> met vrije handel. <b>Ontwikkelingssamenwerking</b> helpt armere landen vooruit.</p>"
    },
    {
     "id": "G",
@@ -4743,7 +8033,554 @@ var VAKKEN_VMBO = [
     ],
     "nSv": 0,
     "nOe": 0,
-    "nBeg": 0
+    "nBeg": 0,
+    "sv": [
+     {
+      "v": "Welk begrip hoort bij: \"de kosten van schade aan het milieu\"?",
+      "o": [
+       "Milieukosten",
+       "Externe kosten",
+       "Uitputting",
+       "Grondstof"
+      ],
+      "c": 0,
+      "d": 3,
+      "u": "«Milieukosten»: de kosten van schade aan het milieu.",
+      "uo": [
+       "Klopt, dit is «Milieukosten».",
+       "«Externe kosten» betekent samenleving betaalt de schade.",
+       "«Uitputting» betekent grondstoffen raken op.",
+       "«Grondstof» betekent basismateriaal."
+      ],
+      "uh": "Onthoud: «Milieukosten» = kosten van milieuschade."
+     },
+     {
+      "v": "Welke term hoort bij \"kosten van milieuschade\"?",
+      "o": [
+       "Uitputting",
+       "Milieukosten",
+       "Grondstof",
+       "Vervuiler-betaalt-principe"
+      ],
+      "c": 1,
+      "d": 2,
+      "u": "«Milieukosten»: de kosten van schade aan het milieu.",
+      "uo": [
+       "«Uitputting» betekent grondstoffen raken op.",
+       "Klopt, «Milieukosten» past hierbij.",
+       "«Grondstof» betekent basismateriaal.",
+       "«Vervuiler-betaalt-principe» betekent vervuiler betaalt."
+      ],
+      "uh": "Onthoud: «Milieukosten» = kosten van milieuschade."
+     },
+     {
+      "v": "Wat betekent «Milieukosten»?",
+      "o": [
+       "kosten die niet de veroorzaker maar de samenleving draagt",
+       "het opraken van grondstoffen",
+       "de kosten van schade aan het milieu",
+       "een natuurlijke stof waarvan je iets maakt"
+      ],
+      "c": 2,
+      "d": 1,
+      "u": "«Milieukosten»: de kosten van schade aan het milieu.",
+      "uo": [
+       "Dat is «Externe kosten».",
+       "Dat is «Uitputting».",
+       "Klopt: kosten van milieuschade.",
+       "Dat is «Grondstof»."
+      ],
+      "uh": "Onthoud: «Milieukosten» = kosten van milieuschade."
+     },
+     {
+      "v": "Welk begrip hoort bij: \"produceren met zorg voor mens en milieu\"?",
+      "o": [
+       "Circulaire economie",
+       "Externe kosten",
+       "Grondstof",
+       "Duurzaam produceren"
+      ],
+      "c": 3,
+      "d": 3,
+      "u": "«Duurzaam produceren»: produceren met zorg voor mens en milieu.",
+      "uo": [
+       "«Circulaire economie» betekent grondstoffen hergebruiken.",
+       "«Externe kosten» betekent samenleving betaalt de schade.",
+       "«Grondstof» betekent basismateriaal.",
+       "Klopt, dit is «Duurzaam produceren»."
+      ],
+      "uh": "Onthoud: «Duurzaam produceren» = produceren met zorg."
+     },
+     {
+      "v": "Welke term hoort bij \"grondstoffen hergebruiken\"?",
+      "o": [
+       "Circulaire economie",
+       "Grondstof",
+       "Externe kosten",
+       "Duurzame ontwikkeling"
+      ],
+      "c": 0,
+      "d": 2,
+      "u": "«Circulaire economie»: een economie waarin grondstoffen worden hergebruikt.",
+      "uo": [
+       "Klopt, «Circulaire economie» past hierbij.",
+       "«Grondstof» betekent basismateriaal.",
+       "«Externe kosten» betekent samenleving betaalt de schade.",
+       "«Duurzame ontwikkeling» betekent toekomstbestendige groei."
+      ],
+      "uh": "Onthoud: «Circulaire economie» = grondstoffen hergebruiken."
+     },
+     {
+      "v": "Wat betekent «Vervuiler-betaalt-principe»?",
+      "o": [
+       "kosten die niet de veroorzaker maar de samenleving draagt",
+       "wie vervuilt, betaalt zelf de kosten daarvan",
+       "een natuurlijke stof waarvan je iets maakt",
+       "afval verwerken tot nieuwe grondstoffen"
+      ],
+      "c": 1,
+      "d": 1,
+      "u": "«Vervuiler-betaalt-principe»: wie vervuilt, betaalt zelf de kosten daarvan.",
+      "uo": [
+       "Dat is «Externe kosten».",
+       "Klopt: vervuiler betaalt.",
+       "Dat is «Grondstof».",
+       "Dat is «Recycling»."
+      ],
+      "uh": "Onthoud: «Vervuiler-betaalt-principe» = vervuiler betaalt."
+     },
+     {
+      "v": "Welk begrip hoort bij: \"een economie waarin grondstoffen worden hergebruikt\"?",
+      "o": [
+       "Recycling",
+       "Duurzaam produceren",
+       "Circulaire economie",
+       "Grondstof"
+      ],
+      "c": 2,
+      "d": 3,
+      "u": "«Circulaire economie»: een economie waarin grondstoffen worden hergebruikt.",
+      "uo": [
+       "«Recycling» betekent afval hergebruiken.",
+       "«Duurzaam produceren» betekent produceren met zorg.",
+       "Klopt, dit is «Circulaire economie».",
+       "«Grondstof» betekent basismateriaal."
+      ],
+      "uh": "Onthoud: «Circulaire economie» = grondstoffen hergebruiken."
+     },
+     {
+      "v": "Welke term hoort bij \"afval hergebruiken\"?",
+      "o": [
+       "Groene energie",
+       "Uitputting",
+       "Duurzame ontwikkeling",
+       "Recycling"
+      ],
+      "c": 3,
+      "d": 2,
+      "u": "«Recycling»: afval verwerken tot nieuwe grondstoffen.",
+      "uo": [
+       "«Groene energie» betekent energie die niet opraakt.",
+       "«Uitputting» betekent grondstoffen raken op.",
+       "«Duurzame ontwikkeling» betekent toekomstbestendige groei.",
+       "Klopt, «Recycling» past hierbij."
+      ],
+      "uh": "Onthoud: «Recycling» = afval hergebruiken."
+     },
+     {
+      "v": "Wat betekent «Duurzaam produceren»?",
+      "o": [
+       "produceren met zorg voor mens en milieu",
+       "een economie waarin grondstoffen worden hergebruikt",
+       "kosten die niet de veroorzaker maar de samenleving draagt",
+       "een natuurlijke stof waarvan je iets maakt"
+      ],
+      "c": 0,
+      "d": 1,
+      "u": "«Duurzaam produceren»: produceren met zorg voor mens en milieu.",
+      "uo": [
+       "Klopt: produceren met zorg.",
+       "Dat is «Circulaire economie».",
+       "Dat is «Externe kosten».",
+       "Dat is «Grondstof»."
+      ],
+      "uh": "Onthoud: «Duurzaam produceren» = produceren met zorg."
+     },
+     {
+      "v": "Welk begrip hoort bij: \"afval verwerken tot nieuwe grondstoffen\"?",
+      "o": [
+       "Circulaire economie",
+       "Recycling",
+       "Groene energie",
+       "Uitputting"
+      ],
+      "c": 1,
+      "d": 3,
+      "u": "«Recycling»: afval verwerken tot nieuwe grondstoffen.",
+      "uo": [
+       "«Circulaire economie» betekent grondstoffen hergebruiken.",
+       "Klopt, dit is «Recycling».",
+       "«Groene energie» betekent energie die niet opraakt.",
+       "«Uitputting» betekent grondstoffen raken op."
+      ],
+      "uh": "Onthoud: «Recycling» = afval hergebruiken."
+     },
+     {
+      "v": "Welke term hoort bij \"basismateriaal\"?",
+      "o": [
+       "Groene energie",
+       "Recycling",
+       "Grondstof",
+       "Uitputting"
+      ],
+      "c": 2,
+      "d": 2,
+      "u": "«Grondstof»: een natuurlijke stof waarvan je iets maakt.",
+      "uo": [
+       "«Groene energie» betekent energie die niet opraakt.",
+       "«Recycling» betekent afval hergebruiken.",
+       "Klopt, «Grondstof» past hierbij.",
+       "«Uitputting» betekent grondstoffen raken op."
+      ],
+      "uh": "Onthoud: «Grondstof» = basismateriaal."
+     },
+     {
+      "v": "Wat betekent «Recycling»?",
+      "o": [
+       "een economie waarin grondstoffen worden hergebruikt",
+       "energie uit bronnen die niet opraken",
+       "het opraken van grondstoffen",
+       "afval verwerken tot nieuwe grondstoffen"
+      ],
+      "c": 3,
+      "d": 1,
+      "u": "«Recycling»: afval verwerken tot nieuwe grondstoffen.",
+      "uo": [
+       "Dat is «Circulaire economie».",
+       "Dat is «Groene energie».",
+       "Dat is «Uitputting».",
+       "Klopt: afval hergebruiken."
+      ],
+      "uh": "Onthoud: «Recycling» = afval hergebruiken."
+     },
+     {
+      "v": "Welk begrip hoort bij: \"een natuurlijke stof waarvan je iets maakt\"?",
+      "o": [
+       "Grondstof",
+       "Fossiele brandstof",
+       "Groene energie",
+       "Recycling"
+      ],
+      "c": 0,
+      "d": 3,
+      "u": "«Grondstof»: een natuurlijke stof waarvan je iets maakt.",
+      "uo": [
+       "Klopt, dit is «Grondstof».",
+       "«Fossiele brandstof» betekent olie, gas en kolen.",
+       "«Groene energie» betekent energie die niet opraakt.",
+       "«Recycling» betekent afval hergebruiken."
+      ],
+      "uh": "Onthoud: «Grondstof» = basismateriaal."
+     },
+     {
+      "v": "Welke term hoort bij \"grondstoffen raken op\"?",
+      "o": [
+       "Externe kosten",
+       "Uitputting",
+       "Milieukosten",
+       "Recycling"
+      ],
+      "c": 1,
+      "d": 2,
+      "u": "«Uitputting»: het opraken van grondstoffen.",
+      "uo": [
+       "«Externe kosten» betekent samenleving betaalt de schade.",
+       "Klopt, «Uitputting» past hierbij.",
+       "«Milieukosten» betekent kosten van milieuschade.",
+       "«Recycling» betekent afval hergebruiken."
+      ],
+      "uh": "Onthoud: «Uitputting» = grondstoffen raken op."
+     },
+     {
+      "v": "Wat betekent «Grondstof»?",
+      "o": [
+       "brandstof uit resten van organismen, zoals olie en gas",
+       "energie uit bronnen die niet opraken",
+       "een natuurlijke stof waarvan je iets maakt",
+       "afval verwerken tot nieuwe grondstoffen"
+      ],
+      "c": 2,
+      "d": 1,
+      "u": "«Grondstof»: een natuurlijke stof waarvan je iets maakt.",
+      "uo": [
+       "Dat is «Fossiele brandstof».",
+       "Dat is «Groene energie».",
+       "Klopt: basismateriaal.",
+       "Dat is «Recycling»."
+      ],
+      "uh": "Onthoud: «Grondstof» = basismateriaal."
+     },
+     {
+      "v": "Welk begrip hoort bij: \"het opraken van grondstoffen\"?",
+      "o": [
+       "Duurzame ontwikkeling",
+       "Externe kosten",
+       "Milieukosten",
+       "Uitputting"
+      ],
+      "c": 3,
+      "d": 3,
+      "u": "«Uitputting»: het opraken van grondstoffen.",
+      "uo": [
+       "«Duurzame ontwikkeling» betekent toekomstbestendige groei.",
+       "«Externe kosten» betekent samenleving betaalt de schade.",
+       "«Milieukosten» betekent kosten van milieuschade.",
+       "Klopt, dit is «Uitputting»."
+      ],
+      "uh": "Onthoud: «Uitputting» = grondstoffen raken op."
+     },
+     {
+      "v": "Welke term hoort bij \"olie, gas en kolen\"?",
+      "o": [
+       "Fossiele brandstof",
+       "Vervuiler-betaalt-principe",
+       "Consuminderen",
+       "Externe kosten"
+      ],
+      "c": 0,
+      "d": 2,
+      "u": "«Fossiele brandstof»: brandstof uit resten van organismen, zoals olie en gas.",
+      "uo": [
+       "Klopt, «Fossiele brandstof» past hierbij.",
+       "«Vervuiler-betaalt-principe» betekent vervuiler betaalt.",
+       "«Consuminderen» betekent bewust minder gebruiken.",
+       "«Externe kosten» betekent samenleving betaalt de schade."
+      ],
+      "uh": "Onthoud: «Fossiele brandstof» = olie, gas en kolen."
+     },
+     {
+      "v": "Wat betekent «Uitputting»?",
+      "o": [
+       "ontwikkeling die de toekomst niet schaadt",
+       "het opraken van grondstoffen",
+       "kosten die niet de veroorzaker maar de samenleving draagt",
+       "de kosten van schade aan het milieu"
+      ],
+      "c": 1,
+      "d": 1,
+      "u": "«Uitputting»: het opraken van grondstoffen.",
+      "uo": [
+       "Dat is «Duurzame ontwikkeling».",
+       "Klopt: grondstoffen raken op.",
+       "Dat is «Externe kosten».",
+       "Dat is «Milieukosten»."
+      ],
+      "uh": "Onthoud: «Uitputting» = grondstoffen raken op."
+     },
+     {
+      "v": "Welk begrip hoort bij: \"brandstof uit resten van organismen, zoals olie en gas\"?",
+      "o": [
+       "Groene energie",
+       "Vervuiler-betaalt-principe",
+       "Fossiele brandstof",
+       "Consuminderen"
+      ],
+      "c": 2,
+      "d": 3,
+      "u": "«Fossiele brandstof»: brandstof uit resten van organismen, zoals olie en gas.",
+      "uo": [
+       "«Groene energie» betekent energie die niet opraakt.",
+       "«Vervuiler-betaalt-principe» betekent vervuiler betaalt.",
+       "Klopt, dit is «Fossiele brandstof».",
+       "«Consuminderen» betekent bewust minder gebruiken."
+      ],
+      "uh": "Onthoud: «Fossiele brandstof» = olie, gas en kolen."
+     },
+     {
+      "v": "Welke term hoort bij \"energie die niet opraakt\"?",
+      "o": [
+       "Duurzaam produceren",
+       "Consuminderen",
+       "Recycling",
+       "Groene energie"
+      ],
+      "c": 3,
+      "d": 2,
+      "u": "«Groene energie»: energie uit bronnen die niet opraken.",
+      "uo": [
+       "«Duurzaam produceren» betekent produceren met zorg.",
+       "«Consuminderen» betekent bewust minder gebruiken.",
+       "«Recycling» betekent afval hergebruiken.",
+       "Klopt, «Groene energie» past hierbij."
+      ],
+      "uh": "Onthoud: «Groene energie» = energie die niet opraakt."
+     },
+     {
+      "v": "Wat betekent «Duurzame ontwikkeling»?",
+      "o": [
+       "ontwikkeling die de toekomst niet schaadt",
+       "het opraken van grondstoffen",
+       "brandstof uit resten van organismen, zoals olie en gas",
+       "een natuurlijke stof waarvan je iets maakt"
+      ],
+      "c": 0,
+      "d": 1,
+      "u": "«Duurzame ontwikkeling»: ontwikkeling die de toekomst niet schaadt.",
+      "uo": [
+       "Klopt: toekomstbestendige groei.",
+       "Dat is «Uitputting».",
+       "Dat is «Fossiele brandstof».",
+       "Dat is «Grondstof»."
+      ],
+      "uh": "Onthoud: «Duurzame ontwikkeling» = toekomstbestendige groei."
+     },
+     {
+      "v": "Welk begrip hoort bij: \"energie uit bronnen die niet opraken\"?",
+      "o": [
+       "Fossiele brandstof",
+       "Groene energie",
+       "Duurzaam produceren",
+       "Consuminderen"
+      ],
+      "c": 1,
+      "d": 3,
+      "u": "«Groene energie»: energie uit bronnen die niet opraken.",
+      "uo": [
+       "«Fossiele brandstof» betekent olie, gas en kolen.",
+       "Klopt, dit is «Groene energie».",
+       "«Duurzaam produceren» betekent produceren met zorg.",
+       "«Consuminderen» betekent bewust minder gebruiken."
+      ],
+      "uh": "Onthoud: «Groene energie» = energie die niet opraakt."
+     },
+     {
+      "v": "Welke term hoort bij \"bewust minder gebruiken\"?",
+      "o": [
+       "Uitputting",
+       "Groene energie",
+       "Consuminderen",
+       "Milieukosten"
+      ],
+      "c": 2,
+      "d": 2,
+      "u": "«Consuminderen»: bewust minder kopen en gebruiken.",
+      "uo": [
+       "«Uitputting» betekent grondstoffen raken op.",
+       "«Groene energie» betekent energie die niet opraakt.",
+       "Klopt, «Consuminderen» past hierbij.",
+       "«Milieukosten» betekent kosten van milieuschade."
+      ],
+      "uh": "Onthoud: «Consuminderen» = bewust minder gebruiken."
+     },
+     {
+      "v": "Wat betekent «Groene energie»?",
+      "o": [
+       "brandstof uit resten van organismen, zoals olie en gas",
+       "produceren met zorg voor mens en milieu",
+       "bewust minder kopen en gebruiken",
+       "energie uit bronnen die niet opraken"
+      ],
+      "c": 3,
+      "d": 1,
+      "u": "«Groene energie»: energie uit bronnen die niet opraken.",
+      "uo": [
+       "Dat is «Fossiele brandstof».",
+       "Dat is «Duurzaam produceren».",
+       "Dat is «Consuminderen».",
+       "Klopt: energie die niet opraakt."
+      ],
+      "uh": "Onthoud: «Groene energie» = energie die niet opraakt."
+     },
+     {
+      "v": "Welk begrip hoort bij: \"bewust minder kopen en gebruiken\"?",
+      "o": [
+       "Consuminderen",
+       "Duurzaam produceren",
+       "Uitputting",
+       "Groene energie"
+      ],
+      "c": 0,
+      "d": 3,
+      "u": "«Consuminderen»: bewust minder kopen en gebruiken.",
+      "uo": [
+       "Klopt, dit is «Consuminderen».",
+       "«Duurzaam produceren» betekent produceren met zorg.",
+       "«Uitputting» betekent grondstoffen raken op.",
+       "«Groene energie» betekent energie die niet opraakt."
+      ],
+      "uh": "Onthoud: «Consuminderen» = bewust minder gebruiken."
+     },
+     {
+      "v": "Wat betekent «Consuminderen»?",
+      "o": [
+       "produceren met zorg voor mens en milieu",
+       "bewust minder kopen en gebruiken",
+       "het opraken van grondstoffen",
+       "energie uit bronnen die niet opraken"
+      ],
+      "c": 1,
+      "d": 1,
+      "u": "«Consuminderen»: bewust minder kopen en gebruiken.",
+      "uo": [
+       "Dat is «Duurzaam produceren».",
+       "Klopt: bewust minder gebruiken.",
+       "Dat is «Uitputting».",
+       "Dat is «Groene energie»."
+      ],
+      "uh": "Onthoud: «Consuminderen» = bewust minder gebruiken."
+     }
+    ],
+    "begrippen": [
+     {
+      "t": "Milieukosten",
+      "d": "de kosten van schade aan het milieu"
+     },
+     {
+      "t": "Externe kosten",
+      "d": "kosten die niet de veroorzaker maar de samenleving draagt"
+     },
+     {
+      "t": "Vervuiler-betaalt-principe",
+      "d": "wie vervuilt, betaalt zelf de kosten daarvan"
+     },
+     {
+      "t": "Duurzaam produceren",
+      "d": "produceren met zorg voor mens en milieu"
+     },
+     {
+      "t": "Circulaire economie",
+      "d": "een economie waarin grondstoffen worden hergebruikt"
+     },
+     {
+      "t": "Recycling",
+      "d": "afval verwerken tot nieuwe grondstoffen"
+     },
+     {
+      "t": "Grondstof",
+      "d": "een natuurlijke stof waarvan je iets maakt"
+     },
+     {
+      "t": "Uitputting",
+      "d": "het opraken van grondstoffen"
+     },
+     {
+      "t": "Duurzame ontwikkeling",
+      "d": "ontwikkeling die de toekomst niet schaadt"
+     },
+     {
+      "t": "Fossiele brandstof",
+      "d": "brandstof uit resten van organismen, zoals olie en gas"
+     },
+     {
+      "t": "Groene energie",
+      "d": "energie uit bronnen die niet opraken"
+     },
+     {
+      "t": "Consuminderen",
+      "d": "bewust minder kopen en gebruiken"
+     }
+    ],
+    "sam": "<p>Produceren kost niet alleen geld maar ook <b>milieukosten</b>. Bij <b>externe kosten</b> draait de samenleving voor de schade op, tenzij het <b>vervuiler-betaalt-principe</b> geldt. <b>Duurzaam produceren</b> en een <b>circulaire economie</b> beperken de <b>uitputting</b> van grondstoffen.</p>"
    },
    {
     "id": "H",
@@ -4757,7 +8594,554 @@ var VAKKEN_VMBO = [
     ],
     "nSv": 0,
     "nOe": 0,
-    "nBeg": 0
+    "nBeg": 0,
+    "sv": [
+     {
+      "v": "Welk begrip hoort bij: \"de vergoeding voor het lenen of uitlenen van geld\"?",
+      "o": [
+       "Rente",
+       "Aflossing",
+       "Krediet",
+       "Inflatie"
+      ],
+      "c": 0,
+      "d": 3,
+      "u": "«Rente»: de vergoeding voor het lenen of uitlenen van geld.",
+      "uo": [
+       "Klopt, dit is «Rente».",
+       "«Aflossing» betekent lening terugbetalen.",
+       "«Krediet» betekent mogelijkheid om te lenen.",
+       "«Inflatie» betekent prijzen stijgen."
+      ],
+      "uh": "Onthoud: «Rente» = vergoeding voor geld."
+     },
+     {
+      "v": "Welke term hoort bij \"vergoeding voor geld\"?",
+      "o": [
+       "Krediet",
+       "Rente",
+       "Inflatie",
+       "Rentestand"
+      ],
+      "c": 1,
+      "d": 2,
+      "u": "«Rente»: de vergoeding voor het lenen of uitlenen van geld.",
+      "uo": [
+       "«Krediet» betekent mogelijkheid om te lenen.",
+       "Klopt, «Rente» past hierbij.",
+       "«Inflatie» betekent prijzen stijgen.",
+       "«Rentestand» betekent hoogte van de rente."
+      ],
+      "uh": "Onthoud: «Rente» = vergoeding voor geld."
+     },
+     {
+      "v": "Wat betekent «Samengestelde interest»?",
+      "o": [
+       "rente alleen over het oorspronkelijke bedrag",
+       "bezit dat de bank mag verkopen als je niet terugbetaalt",
+       "rente die je ook over eerder ontvangen rente krijgt",
+       "een lening voor een huis met het huis als onderpand"
+      ],
+      "c": 2,
+      "d": 1,
+      "u": "«Samengestelde interest»: rente die je ook over eerder ontvangen rente krijgt.",
+      "uo": [
+       "Dat is «Enkelvoudige interest».",
+       "Dat is «Onderpand».",
+       "Klopt: rente over rente.",
+       "Dat is «Hypotheek»."
+      ],
+      "uh": "Onthoud: «Samengestelde interest» = rente over rente."
+     },
+     {
+      "v": "Welk begrip hoort bij: \"rente alleen over het oorspronkelijke bedrag\"?",
+      "o": [
+       "Samengestelde interest",
+       "Onderpand",
+       "Aflossing",
+       "Enkelvoudige interest"
+      ],
+      "c": 3,
+      "d": 3,
+      "u": "«Enkelvoudige interest»: rente alleen over het oorspronkelijke bedrag.",
+      "uo": [
+       "«Samengestelde interest» betekent rente over rente.",
+       "«Onderpand» betekent zekerheid voor de bank.",
+       "«Aflossing» betekent lening terugbetalen.",
+       "Klopt, dit is «Enkelvoudige interest»."
+      ],
+      "uh": "Onthoud: «Enkelvoudige interest» = rente over startbedrag."
+     },
+     {
+      "v": "Welke term hoort bij \"geld opzijzetten\"?",
+      "o": [
+       "Sparen",
+       "Samengestelde interest",
+       "Rente",
+       "Inflatie"
+      ],
+      "c": 0,
+      "d": 2,
+      "u": "«Sparen»: geld opzijzetten, vaak bij een bank tegen rente.",
+      "uo": [
+       "Klopt, «Sparen» past hierbij.",
+       "«Samengestelde interest» betekent rente over rente.",
+       "«Rente» betekent vergoeding voor geld.",
+       "«Inflatie» betekent prijzen stijgen."
+      ],
+      "uh": "Onthoud: «Sparen» = geld opzijzetten."
+     },
+     {
+      "v": "Wat betekent «Enkelvoudige interest»?",
+      "o": [
+       "rente die je ook over eerder ontvangen rente krijgt",
+       "rente alleen over het oorspronkelijke bedrag",
+       "bezit dat de bank mag verkopen als je niet terugbetaalt",
+       "het terugbetalen van een lening"
+      ],
+      "c": 1,
+      "d": 1,
+      "u": "«Enkelvoudige interest»: rente alleen over het oorspronkelijke bedrag.",
+      "uo": [
+       "Dat is «Samengestelde interest».",
+       "Klopt: rente over startbedrag.",
+       "Dat is «Onderpand».",
+       "Dat is «Aflossing»."
+      ],
+      "uh": "Onthoud: «Enkelvoudige interest» = rente over startbedrag."
+     },
+     {
+      "v": "Welk begrip hoort bij: \"geld opzijzetten, vaak bij een bank tegen rente\"?",
+      "o": [
+       "Lenen",
+       "Samengestelde interest",
+       "Sparen",
+       "Rente"
+      ],
+      "c": 2,
+      "d": 3,
+      "u": "«Sparen»: geld opzijzetten, vaak bij een bank tegen rente.",
+      "uo": [
+       "«Lenen» betekent geld tijdelijk gebruiken.",
+       "«Samengestelde interest» betekent rente over rente.",
+       "Klopt, dit is «Sparen».",
+       "«Rente» betekent vergoeding voor geld."
+      ],
+      "uh": "Onthoud: «Sparen» = geld opzijzetten."
+     },
+     {
+      "v": "Welke term hoort bij \"geld tijdelijk gebruiken\"?",
+      "o": [
+       "Inflatie",
+       "Onderpand",
+       "Rentestand",
+       "Lenen"
+      ],
+      "c": 3,
+      "d": 2,
+      "u": "«Lenen»: geld tijdelijk van een ander gebruiken tegen rente.",
+      "uo": [
+       "«Inflatie» betekent prijzen stijgen.",
+       "«Onderpand» betekent zekerheid voor de bank.",
+       "«Rentestand» betekent hoogte van de rente.",
+       "Klopt, «Lenen» past hierbij."
+      ],
+      "uh": "Onthoud: «Lenen» = geld tijdelijk gebruiken."
+     },
+     {
+      "v": "Wat betekent «Sparen»?",
+      "o": [
+       "geld opzijzetten, vaak bij een bank tegen rente",
+       "geld tijdelijk van een ander gebruiken tegen rente",
+       "rente die je ook over eerder ontvangen rente krijgt",
+       "de vergoeding voor het lenen of uitlenen van geld"
+      ],
+      "c": 0,
+      "d": 1,
+      "u": "«Sparen»: geld opzijzetten, vaak bij een bank tegen rente.",
+      "uo": [
+       "Klopt: geld opzijzetten.",
+       "Dat is «Lenen».",
+       "Dat is «Samengestelde interest».",
+       "Dat is «Rente»."
+      ],
+      "uh": "Onthoud: «Sparen» = geld opzijzetten."
+     },
+     {
+      "v": "Welk begrip hoort bij: \"geld tijdelijk van een ander gebruiken tegen rente\"?",
+      "o": [
+       "Sparen",
+       "Lenen",
+       "Krediet",
+       "Inflatie"
+      ],
+      "c": 1,
+      "d": 3,
+      "u": "«Lenen»: geld tijdelijk van een ander gebruiken tegen rente.",
+      "uo": [
+       "«Sparen» betekent geld opzijzetten.",
+       "Klopt, dit is «Lenen».",
+       "«Krediet» betekent mogelijkheid om te lenen.",
+       "«Inflatie» betekent prijzen stijgen."
+      ],
+      "uh": "Onthoud: «Lenen» = geld tijdelijk gebruiken."
+     },
+     {
+      "v": "Welke term hoort bij \"lening voor een huis\"?",
+      "o": [
+       "Onderpand",
+       "Centrale bank",
+       "Hypotheek",
+       "Rentestand"
+      ],
+      "c": 2,
+      "d": 2,
+      "u": "«Hypotheek»: een lening voor een huis met het huis als onderpand.",
+      "uo": [
+       "«Onderpand» betekent zekerheid voor de bank.",
+       "«Centrale bank» betekent bewaakt het geld.",
+       "Klopt, «Hypotheek» past hierbij.",
+       "«Rentestand» betekent hoogte van de rente."
+      ],
+      "uh": "Onthoud: «Hypotheek» = lening voor een huis."
+     },
+     {
+      "v": "Wat betekent «Hypotheek»?",
+      "o": [
+       "de mogelijkheid om geld te lenen",
+       "bezit dat de bank mag verkopen als je niet terugbetaalt",
+       "de bank die het geldbeleid van een land of de EU bepaalt",
+       "een lening voor een huis met het huis als onderpand"
+      ],
+      "c": 3,
+      "d": 1,
+      "u": "«Hypotheek»: een lening voor een huis met het huis als onderpand.",
+      "uo": [
+       "Dat is «Krediet».",
+       "Dat is «Onderpand».",
+       "Dat is «Centrale bank».",
+       "Klopt: lening voor een huis."
+      ],
+      "uh": "Onthoud: «Hypotheek» = lening voor een huis."
+     },
+     {
+      "v": "Welk begrip hoort bij: \"een lening voor een huis met het huis als onderpand\"?",
+      "o": [
+       "Hypotheek",
+       "Krediet",
+       "Onderpand",
+       "Centrale bank"
+      ],
+      "c": 0,
+      "d": 3,
+      "u": "«Hypotheek»: een lening voor een huis met het huis als onderpand.",
+      "uo": [
+       "Klopt, dit is «Hypotheek».",
+       "«Krediet» betekent mogelijkheid om te lenen.",
+       "«Onderpand» betekent zekerheid voor de bank.",
+       "«Centrale bank» betekent bewaakt het geld."
+      ],
+      "uh": "Onthoud: «Hypotheek» = lening voor een huis."
+     },
+     {
+      "v": "Welke term hoort bij \"hoogte van de rente\"?",
+      "o": [
+       "Enkelvoudige interest",
+       "Rentestand",
+       "Samengestelde interest",
+       "Centrale bank"
+      ],
+      "c": 1,
+      "d": 2,
+      "u": "«Rentestand»: de hoogte van de rente op een bepaald moment.",
+      "uo": [
+       "«Enkelvoudige interest» betekent rente over startbedrag.",
+       "Klopt, «Rentestand» past hierbij.",
+       "«Samengestelde interest» betekent rente over rente.",
+       "«Centrale bank» betekent bewaakt het geld."
+      ],
+      "uh": "Onthoud: «Rentestand» = hoogte van de rente."
+     },
+     {
+      "v": "Wat betekent «Rentestand»?",
+      "o": [
+       "de vergoeding voor het lenen of uitlenen van geld",
+       "rente alleen over het oorspronkelijke bedrag",
+       "de hoogte van de rente op een bepaald moment",
+       "rente die je ook over eerder ontvangen rente krijgt"
+      ],
+      "c": 2,
+      "d": 1,
+      "u": "«Rentestand»: de hoogte van de rente op een bepaald moment.",
+      "uo": [
+       "Dat is «Rente».",
+       "Dat is «Enkelvoudige interest».",
+       "Klopt: hoogte van de rente.",
+       "Dat is «Samengestelde interest»."
+      ],
+      "uh": "Onthoud: «Rentestand» = hoogte van de rente."
+     },
+     {
+      "v": "Welk begrip hoort bij: \"de hoogte van de rente op een bepaald moment\"?",
+      "o": [
+       "Rente",
+       "Enkelvoudige interest",
+       "Samengestelde interest",
+       "Rentestand"
+      ],
+      "c": 3,
+      "d": 3,
+      "u": "«Rentestand»: de hoogte van de rente op een bepaald moment.",
+      "uo": [
+       "«Rente» betekent vergoeding voor geld.",
+       "«Enkelvoudige interest» betekent rente over startbedrag.",
+       "«Samengestelde interest» betekent rente over rente.",
+       "Klopt, dit is «Rentestand»."
+      ],
+      "uh": "Onthoud: «Rentestand» = hoogte van de rente."
+     },
+     {
+      "v": "Welke term hoort bij \"lening terugbetalen\"?",
+      "o": [
+       "Aflossing",
+       "Krediet",
+       "Centrale bank",
+       "Rentestand"
+      ],
+      "c": 0,
+      "d": 2,
+      "u": "«Aflossing»: het terugbetalen van een lening.",
+      "uo": [
+       "Klopt, «Aflossing» past hierbij.",
+       "«Krediet» betekent mogelijkheid om te lenen.",
+       "«Centrale bank» betekent bewaakt het geld.",
+       "«Rentestand» betekent hoogte van de rente."
+      ],
+      "uh": "Onthoud: «Aflossing» = lening terugbetalen."
+     },
+     {
+      "v": "Wat betekent «Aflossing»?",
+      "o": [
+       "de vergoeding voor het lenen of uitlenen van geld",
+       "het terugbetalen van een lening",
+       "de mogelijkheid om geld te lenen",
+       "de bank die het geldbeleid van een land of de EU bepaalt"
+      ],
+      "c": 1,
+      "d": 1,
+      "u": "«Aflossing»: het terugbetalen van een lening.",
+      "uo": [
+       "Dat is «Rente».",
+       "Klopt: lening terugbetalen.",
+       "Dat is «Krediet».",
+       "Dat is «Centrale bank»."
+      ],
+      "uh": "Onthoud: «Aflossing» = lening terugbetalen."
+     },
+     {
+      "v": "Welk begrip hoort bij: \"het terugbetalen van een lening\"?",
+      "o": [
+       "Rente",
+       "Krediet",
+       "Aflossing",
+       "Centrale bank"
+      ],
+      "c": 2,
+      "d": 3,
+      "u": "«Aflossing»: het terugbetalen van een lening.",
+      "uo": [
+       "«Rente» betekent vergoeding voor geld.",
+       "«Krediet» betekent mogelijkheid om te lenen.",
+       "Klopt, dit is «Aflossing».",
+       "«Centrale bank» betekent bewaakt het geld."
+      ],
+      "uh": "Onthoud: «Aflossing» = lening terugbetalen."
+     },
+     {
+      "v": "Welke term hoort bij \"zekerheid voor de bank\"?",
+      "o": [
+       "Krediet",
+       "Centrale bank",
+       "Rentestand",
+       "Onderpand"
+      ],
+      "c": 3,
+      "d": 2,
+      "u": "«Onderpand»: bezit dat de bank mag verkopen als je niet terugbetaalt.",
+      "uo": [
+       "«Krediet» betekent mogelijkheid om te lenen.",
+       "«Centrale bank» betekent bewaakt het geld.",
+       "«Rentestand» betekent hoogte van de rente.",
+       "Klopt, «Onderpand» past hierbij."
+      ],
+      "uh": "Onthoud: «Onderpand» = zekerheid voor de bank."
+     },
+     {
+      "v": "Wat betekent «Onderpand»?",
+      "o": [
+       "bezit dat de bank mag verkopen als je niet terugbetaalt",
+       "een lening voor een huis met het huis als onderpand",
+       "de mogelijkheid om geld te lenen",
+       "de bank die het geldbeleid van een land of de EU bepaalt"
+      ],
+      "c": 0,
+      "d": 1,
+      "u": "«Onderpand»: bezit dat de bank mag verkopen als je niet terugbetaalt.",
+      "uo": [
+       "Klopt: zekerheid voor de bank.",
+       "Dat is «Hypotheek».",
+       "Dat is «Krediet».",
+       "Dat is «Centrale bank»."
+      ],
+      "uh": "Onthoud: «Onderpand» = zekerheid voor de bank."
+     },
+     {
+      "v": "Welk begrip hoort bij: \"bezit dat de bank mag verkopen als je niet terugbetaalt\"?",
+      "o": [
+       "Hypotheek",
+       "Onderpand",
+       "Krediet",
+       "Centrale bank"
+      ],
+      "c": 1,
+      "d": 3,
+      "u": "«Onderpand»: bezit dat de bank mag verkopen als je niet terugbetaalt.",
+      "uo": [
+       "«Hypotheek» betekent lening voor een huis.",
+       "Klopt, dit is «Onderpand».",
+       "«Krediet» betekent mogelijkheid om te lenen.",
+       "«Centrale bank» betekent bewaakt het geld."
+      ],
+      "uh": "Onthoud: «Onderpand» = zekerheid voor de bank."
+     },
+     {
+      "v": "Welke term hoort bij \"mogelijkheid om te lenen\"?",
+      "o": [
+       "Centrale bank",
+       "Sparen",
+       "Krediet",
+       "Inflatie"
+      ],
+      "c": 2,
+      "d": 2,
+      "u": "«Krediet»: de mogelijkheid om geld te lenen.",
+      "uo": [
+       "«Centrale bank» betekent bewaakt het geld.",
+       "«Sparen» betekent geld opzijzetten.",
+       "Klopt, «Krediet» past hierbij.",
+       "«Inflatie» betekent prijzen stijgen."
+      ],
+      "uh": "Onthoud: «Krediet» = mogelijkheid om te lenen."
+     },
+     {
+      "v": "Wat betekent «Krediet»?",
+      "o": [
+       "geld tijdelijk van een ander gebruiken tegen rente",
+       "de bank die het geldbeleid van een land of de EU bepaalt",
+       "geld opzijzetten, vaak bij een bank tegen rente",
+       "de mogelijkheid om geld te lenen"
+      ],
+      "c": 3,
+      "d": 1,
+      "u": "«Krediet»: de mogelijkheid om geld te lenen.",
+      "uo": [
+       "Dat is «Lenen».",
+       "Dat is «Centrale bank».",
+       "Dat is «Sparen».",
+       "Klopt: mogelijkheid om te lenen."
+      ],
+      "uh": "Onthoud: «Krediet» = mogelijkheid om te lenen."
+     },
+     {
+      "v": "Welk begrip hoort bij: \"de mogelijkheid om geld te lenen\"?",
+      "o": [
+       "Krediet",
+       "Lenen",
+       "Centrale bank",
+       "Sparen"
+      ],
+      "c": 0,
+      "d": 3,
+      "u": "«Krediet»: de mogelijkheid om geld te lenen.",
+      "uo": [
+       "Klopt, dit is «Krediet».",
+       "«Lenen» betekent geld tijdelijk gebruiken.",
+       "«Centrale bank» betekent bewaakt het geld.",
+       "«Sparen» betekent geld opzijzetten."
+      ],
+      "uh": "Onthoud: «Krediet» = mogelijkheid om te lenen."
+     },
+     {
+      "v": "Welke term hoort bij \"prijzen stijgen\"?",
+      "o": [
+       "Onderpand",
+       "Inflatie",
+       "Krediet",
+       "Samengestelde interest"
+      ],
+      "c": 1,
+      "d": 2,
+      "u": "«Inflatie»: een algemene stijging van de prijzen.",
+      "uo": [
+       "«Onderpand» betekent zekerheid voor de bank.",
+       "Klopt, «Inflatie» past hierbij.",
+       "«Krediet» betekent mogelijkheid om te lenen.",
+       "«Samengestelde interest» betekent rente over rente."
+      ],
+      "uh": "Onthoud: «Inflatie» = prijzen stijgen."
+     }
+    ],
+    "begrippen": [
+     {
+      "t": "Rente",
+      "d": "de vergoeding voor het lenen of uitlenen van geld"
+     },
+     {
+      "t": "Samengestelde interest",
+      "d": "rente die je ook over eerder ontvangen rente krijgt"
+     },
+     {
+      "t": "Enkelvoudige interest",
+      "d": "rente alleen over het oorspronkelijke bedrag"
+     },
+     {
+      "t": "Sparen",
+      "d": "geld opzijzetten, vaak bij een bank tegen rente"
+     },
+     {
+      "t": "Lenen",
+      "d": "geld tijdelijk van een ander gebruiken tegen rente"
+     },
+     {
+      "t": "Hypotheek",
+      "d": "een lening voor een huis met het huis als onderpand"
+     },
+     {
+      "t": "Centrale bank",
+      "d": "de bank die het geldbeleid van een land of de EU bepaalt"
+     },
+     {
+      "t": "Rentestand",
+      "d": "de hoogte van de rente op een bepaald moment"
+     },
+     {
+      "t": "Aflossing",
+      "d": "het terugbetalen van een lening"
+     },
+     {
+      "t": "Onderpand",
+      "d": "bezit dat de bank mag verkopen als je niet terugbetaalt"
+     },
+     {
+      "t": "Krediet",
+      "d": "de mogelijkheid om geld te lenen"
+     },
+     {
+      "t": "Inflatie",
+      "d": "een algemene stijging van de prijzen"
+     }
+    ],
+    "sam": "<p>Wie geld leent of uitleent, betaalt of ontvangt <b>rente</b>. Bij <b>samengestelde interest</b> krijg je ook rente over eerder ontvangen rente. Een <b>hypotheek</b> is een lening voor een huis met het huis als <b>onderpand</b>. De <b>centrale bank</b> bewaakt de waarde van het geld.</p>"
    },
    {
     "id": "I",
@@ -4771,7 +9155,554 @@ var VAKKEN_VMBO = [
     ],
     "nSv": 0,
     "nOe": 0,
-    "nBeg": 0
+    "nBeg": 0,
+    "sv": [
+     {
+      "v": "Welk begrip hoort bij: \"geld dat je uitgeeft aan bedrijfsmiddelen\"?",
+      "o": [
+       "Investering",
+       "Startkapitaal",
+       "Concurrent",
+       "Doelgroep"
+      ],
+      "c": 0,
+      "d": 3,
+      "u": "«Investering»: geld dat je uitgeeft aan bedrijfsmiddelen.",
+      "uo": [
+       "Klopt, dit is «Investering».",
+       "«Startkapitaal» betekent geld om te starten.",
+       "«Concurrent» betekent rivaal op de markt.",
+       "«Doelgroep» betekent jouw klanten."
+      ],
+      "uh": "Onthoud: «Investering» = geld in bedrijfsmiddelen."
+     },
+     {
+      "v": "Welke term hoort bij \"start een bedrijf\"?",
+      "o": [
+       "Risico",
+       "Ondernemer",
+       "Startkapitaal",
+       "Ondernemingsplan"
+      ],
+      "c": 1,
+      "d": 2,
+      "u": "«Ondernemer»: iemand die een bedrijf start en er risico mee neemt.",
+      "uo": [
+       "«Risico» betekent kans op verlies.",
+       "Klopt, «Ondernemer» past hierbij.",
+       "«Startkapitaal» betekent geld om te starten.",
+       "«Ondernemingsplan» betekent plan voor je bedrijf."
+      ],
+      "uh": "Onthoud: «Ondernemer» = start een bedrijf."
+     },
+     {
+      "v": "Wat betekent «Ondernemingsplan»?",
+      "o": [
+       "onderzoek naar klanten en concurrenten",
+       "de kans dat iets misgaat en je geld verliest",
+       "een plan waarin je je bedrijf uitwerkt",
+       "het verschil tussen verkoopprijs en kostprijs"
+      ],
+      "c": 2,
+      "d": 1,
+      "u": "«Ondernemingsplan»: een plan waarin je je bedrijf uitwerkt.",
+      "uo": [
+       "Dat is «Marktonderzoek».",
+       "Dat is «Risico».",
+       "Klopt: plan voor je bedrijf.",
+       "Dat is «Winstmarge»."
+      ],
+      "uh": "Onthoud: «Ondernemingsplan» = plan voor je bedrijf."
+     },
+     {
+      "v": "Welk begrip hoort bij: \"de groep klanten die je wilt bereiken\"?",
+      "o": [
+       "Concurrent",
+       "Risico",
+       "Kostprijs",
+       "Doelgroep"
+      ],
+      "c": 3,
+      "d": 3,
+      "u": "«Doelgroep»: de groep klanten die je wilt bereiken.",
+      "uo": [
+       "«Concurrent» betekent rivaal op de markt.",
+       "«Risico» betekent kans op verlies.",
+       "«Kostprijs» betekent kosten per product.",
+       "Klopt, dit is «Doelgroep»."
+      ],
+      "uh": "Onthoud: «Doelgroep» = jouw klanten."
+     },
+     {
+      "v": "Welke term hoort bij \"jouw klanten\"?",
+      "o": [
+       "Doelgroep",
+       "Risico",
+       "Kostprijs",
+       "Winstmarge"
+      ],
+      "c": 0,
+      "d": 2,
+      "u": "«Doelgroep»: de groep klanten die je wilt bereiken.",
+      "uo": [
+       "Klopt, «Doelgroep» past hierbij.",
+       "«Risico» betekent kans op verlies.",
+       "«Kostprijs» betekent kosten per product.",
+       "«Winstmarge» betekent verkoopprijs min kostprijs."
+      ],
+      "uh": "Onthoud: «Doelgroep» = jouw klanten."
+     },
+     {
+      "v": "Wat betekent «Startkapitaal»?",
+      "o": [
+       "geld dat je uitgeeft aan bedrijfsmiddelen",
+       "het geld dat je nodig hebt om te beginnen",
+       "het verschil tussen verkoopprijs en kostprijs",
+       "de juridische vorm van een bedrijf, zoals een eenmanszaak"
+      ],
+      "c": 1,
+      "d": 1,
+      "u": "«Startkapitaal»: het geld dat je nodig hebt om te beginnen.",
+      "uo": [
+       "Dat is «Investering».",
+       "Klopt: geld om te starten.",
+       "Dat is «Winstmarge».",
+       "Dat is «Rechtsvorm»."
+      ],
+      "uh": "Onthoud: «Startkapitaal» = geld om te starten."
+     },
+     {
+      "v": "Welk begrip hoort bij: \"een ander bedrijf dat hetzelfde aanbiedt\"?",
+      "o": [
+       "Doelgroep",
+       "Ondernemingsplan",
+       "Concurrent",
+       "Ondernemer"
+      ],
+      "c": 2,
+      "d": 3,
+      "u": "«Concurrent»: een ander bedrijf dat hetzelfde aanbiedt.",
+      "uo": [
+       "«Doelgroep» betekent jouw klanten.",
+       "«Ondernemingsplan» betekent plan voor je bedrijf.",
+       "Klopt, dit is «Concurrent».",
+       "«Ondernemer» betekent start een bedrijf."
+      ],
+      "uh": "Onthoud: «Concurrent» = rivaal op de markt."
+     },
+     {
+      "v": "Welke term hoort bij \"rivaal op de markt\"?",
+      "o": [
+       "Ondernemingsplan",
+       "Ondernemer",
+       "Kostprijs",
+       "Concurrent"
+      ],
+      "c": 3,
+      "d": 2,
+      "u": "«Concurrent»: een ander bedrijf dat hetzelfde aanbiedt.",
+      "uo": [
+       "«Ondernemingsplan» betekent plan voor je bedrijf.",
+       "«Ondernemer» betekent start een bedrijf.",
+       "«Kostprijs» betekent kosten per product.",
+       "Klopt, «Concurrent» past hierbij."
+      ],
+      "uh": "Onthoud: «Concurrent» = rivaal op de markt."
+     },
+     {
+      "v": "Wat betekent «Investering»?",
+      "o": [
+       "geld dat je uitgeeft aan bedrijfsmiddelen",
+       "het geld dat je nodig hebt om te beginnen",
+       "een ander bedrijf dat hetzelfde aanbiedt",
+       "de groep klanten die je wilt bereiken"
+      ],
+      "c": 0,
+      "d": 1,
+      "u": "«Investering»: geld dat je uitgeeft aan bedrijfsmiddelen.",
+      "uo": [
+       "Klopt: geld in bedrijfsmiddelen.",
+       "Dat is «Startkapitaal».",
+       "Dat is «Concurrent».",
+       "Dat is «Doelgroep»."
+      ],
+      "uh": "Onthoud: «Investering» = geld in bedrijfsmiddelen."
+     },
+     {
+      "v": "Welk begrip hoort bij: \"de kosten per product\"?",
+      "o": [
+       "Winstmarge",
+       "Kostprijs",
+       "Risico",
+       "Doelgroep"
+      ],
+      "c": 1,
+      "d": 3,
+      "u": "«Kostprijs»: de kosten per product.",
+      "uo": [
+       "«Winstmarge» betekent verkoopprijs min kostprijs.",
+       "Klopt, dit is «Kostprijs».",
+       "«Risico» betekent kans op verlies.",
+       "«Doelgroep» betekent jouw klanten."
+      ],
+      "uh": "Onthoud: «Kostprijs» = kosten per product."
+     },
+     {
+      "v": "Welke term hoort bij \"kosten per product\"?",
+      "o": [
+       "Risico",
+       "Doelgroep",
+       "Kostprijs",
+       "Concurrent"
+      ],
+      "c": 2,
+      "d": 2,
+      "u": "«Kostprijs»: de kosten per product.",
+      "uo": [
+       "«Risico» betekent kans op verlies.",
+       "«Doelgroep» betekent jouw klanten.",
+       "Klopt, «Kostprijs» past hierbij.",
+       "«Concurrent» betekent rivaal op de markt."
+      ],
+      "uh": "Onthoud: «Kostprijs» = kosten per product."
+     },
+     {
+      "v": "Wat betekent «Marktonderzoek»?",
+      "o": [
+       "de groep klanten die je wilt bereiken",
+       "geld dat je uitgeeft aan bedrijfsmiddelen",
+       "de juridische vorm van een bedrijf, zoals een eenmanszaak",
+       "onderzoek naar klanten en concurrenten"
+      ],
+      "c": 3,
+      "d": 1,
+      "u": "«Marktonderzoek»: onderzoek naar klanten en concurrenten.",
+      "uo": [
+       "Dat is «Doelgroep».",
+       "Dat is «Investering».",
+       "Dat is «Rechtsvorm».",
+       "Klopt: onderzoek naar de markt."
+      ],
+      "uh": "Onthoud: «Marktonderzoek» = onderzoek naar de markt."
+     },
+     {
+      "v": "Welk begrip hoort bij: \"het verschil tussen verkoopprijs en kostprijs\"?",
+      "o": [
+       "Winstmarge",
+       "Kostprijs",
+       "Ondernemingsplan",
+       "Ondernemer"
+      ],
+      "c": 0,
+      "d": 3,
+      "u": "«Winstmarge»: het verschil tussen verkoopprijs en kostprijs.",
+      "uo": [
+       "Klopt, dit is «Winstmarge».",
+       "«Kostprijs» betekent kosten per product.",
+       "«Ondernemingsplan» betekent plan voor je bedrijf.",
+       "«Ondernemer» betekent start een bedrijf."
+      ],
+      "uh": "Onthoud: «Winstmarge» = verkoopprijs min kostprijs."
+     },
+     {
+      "v": "Welke term hoort bij \"verkoopprijs min kostprijs\"?",
+      "o": [
+       "Ondernemingsplan",
+       "Winstmarge",
+       "Ondernemer",
+       "Doelgroep"
+      ],
+      "c": 1,
+      "d": 2,
+      "u": "«Winstmarge»: het verschil tussen verkoopprijs en kostprijs.",
+      "uo": [
+       "«Ondernemingsplan» betekent plan voor je bedrijf.",
+       "Klopt, «Winstmarge» past hierbij.",
+       "«Ondernemer» betekent start een bedrijf.",
+       "«Doelgroep» betekent jouw klanten."
+      ],
+      "uh": "Onthoud: «Winstmarge» = verkoopprijs min kostprijs."
+     },
+     {
+      "v": "Wat betekent «Doelgroep»?",
+      "o": [
+       "een ander bedrijf dat hetzelfde aanbiedt",
+       "de kans dat iets misgaat en je geld verliest",
+       "de groep klanten die je wilt bereiken",
+       "de kosten per product"
+      ],
+      "c": 2,
+      "d": 1,
+      "u": "«Doelgroep»: de groep klanten die je wilt bereiken.",
+      "uo": [
+       "Dat is «Concurrent».",
+       "Dat is «Risico».",
+       "Klopt: jouw klanten.",
+       "Dat is «Kostprijs»."
+      ],
+      "uh": "Onthoud: «Doelgroep» = jouw klanten."
+     },
+     {
+      "v": "Welk begrip hoort bij: \"de kans dat iets misgaat en je geld verliest\"?",
+      "o": [
+       "Financiering",
+       "Ondernemingsplan",
+       "Ondernemer",
+       "Risico"
+      ],
+      "c": 3,
+      "d": 3,
+      "u": "«Risico»: de kans dat iets misgaat en je geld verliest.",
+      "uo": [
+       "«Financiering» betekent hoe je aan geld komt.",
+       "«Ondernemingsplan» betekent plan voor je bedrijf.",
+       "«Ondernemer» betekent start een bedrijf.",
+       "Klopt, dit is «Risico»."
+      ],
+      "uh": "Onthoud: «Risico» = kans op verlies."
+     },
+     {
+      "v": "Welke term hoort bij \"kans op verlies\"?",
+      "o": [
+       "Risico",
+       "Ondernemingsplan",
+       "Ondernemer",
+       "Rechtsvorm"
+      ],
+      "c": 0,
+      "d": 2,
+      "u": "«Risico»: de kans dat iets misgaat en je geld verliest.",
+      "uo": [
+       "Klopt, «Risico» past hierbij.",
+       "«Ondernemingsplan» betekent plan voor je bedrijf.",
+       "«Ondernemer» betekent start een bedrijf.",
+       "«Rechtsvorm» betekent juridische vorm."
+      ],
+      "uh": "Onthoud: «Risico» = kans op verlies."
+     },
+     {
+      "v": "Wat betekent «Concurrent»?",
+      "o": [
+       "de groep klanten die je wilt bereiken",
+       "een ander bedrijf dat hetzelfde aanbiedt",
+       "een plan waarin je je bedrijf uitwerkt",
+       "iemand die een bedrijf start en er risico mee neemt"
+      ],
+      "c": 1,
+      "d": 1,
+      "u": "«Concurrent»: een ander bedrijf dat hetzelfde aanbiedt.",
+      "uo": [
+       "Dat is «Doelgroep».",
+       "Klopt: rivaal op de markt.",
+       "Dat is «Ondernemingsplan».",
+       "Dat is «Ondernemer»."
+      ],
+      "uh": "Onthoud: «Concurrent» = rivaal op de markt."
+     },
+     {
+      "v": "Welk begrip hoort bij: \"de juridische vorm van een bedrijf, zoals een eenmanszaak\"?",
+      "o": [
+       "Ondernemingsplan",
+       "Startkapitaal",
+       "Rechtsvorm",
+       "Ondernemer"
+      ],
+      "c": 2,
+      "d": 3,
+      "u": "«Rechtsvorm»: de juridische vorm van een bedrijf, zoals een eenmanszaak.",
+      "uo": [
+       "«Ondernemingsplan» betekent plan voor je bedrijf.",
+       "«Startkapitaal» betekent geld om te starten.",
+       "Klopt, dit is «Rechtsvorm».",
+       "«Ondernemer» betekent start een bedrijf."
+      ],
+      "uh": "Onthoud: «Rechtsvorm» = juridische vorm."
+     },
+     {
+      "v": "Welke term hoort bij \"juridische vorm\"?",
+      "o": [
+       "Startkapitaal",
+       "Ondernemer",
+       "Concurrent",
+       "Rechtsvorm"
+      ],
+      "c": 3,
+      "d": 2,
+      "u": "«Rechtsvorm»: de juridische vorm van een bedrijf, zoals een eenmanszaak.",
+      "uo": [
+       "«Startkapitaal» betekent geld om te starten.",
+       "«Ondernemer» betekent start een bedrijf.",
+       "«Concurrent» betekent rivaal op de markt.",
+       "Klopt, «Rechtsvorm» past hierbij."
+      ],
+      "uh": "Onthoud: «Rechtsvorm» = juridische vorm."
+     },
+     {
+      "v": "Wat betekent «Kostprijs»?",
+      "o": [
+       "de kosten per product",
+       "het verschil tussen verkoopprijs en kostprijs",
+       "de kans dat iets misgaat en je geld verliest",
+       "de groep klanten die je wilt bereiken"
+      ],
+      "c": 0,
+      "d": 1,
+      "u": "«Kostprijs»: de kosten per product.",
+      "uo": [
+       "Klopt: kosten per product.",
+       "Dat is «Winstmarge».",
+       "Dat is «Risico».",
+       "Dat is «Doelgroep»."
+      ],
+      "uh": "Onthoud: «Kostprijs» = kosten per product."
+     },
+     {
+      "v": "Wat betekent «Winstmarge»?",
+      "o": [
+       "de kosten per product",
+       "het verschil tussen verkoopprijs en kostprijs",
+       "een plan waarin je je bedrijf uitwerkt",
+       "iemand die een bedrijf start en er risico mee neemt"
+      ],
+      "c": 1,
+      "d": 1,
+      "u": "«Winstmarge»: het verschil tussen verkoopprijs en kostprijs.",
+      "uo": [
+       "Dat is «Kostprijs».",
+       "Klopt: verkoopprijs min kostprijs.",
+       "Dat is «Ondernemingsplan».",
+       "Dat is «Ondernemer»."
+      ],
+      "uh": "Onthoud: «Winstmarge» = verkoopprijs min kostprijs."
+     },
+     {
+      "v": "Wat betekent «Risico»?",
+      "o": [
+       "de manier waarop je aan geld voor je bedrijf komt",
+       "een plan waarin je je bedrijf uitwerkt",
+       "de kans dat iets misgaat en je geld verliest",
+       "iemand die een bedrijf start en er risico mee neemt"
+      ],
+      "c": 2,
+      "d": 1,
+      "u": "«Risico»: de kans dat iets misgaat en je geld verliest.",
+      "uo": [
+       "Dat is «Financiering».",
+       "Dat is «Ondernemingsplan».",
+       "Klopt: kans op verlies.",
+       "Dat is «Ondernemer»."
+      ],
+      "uh": "Onthoud: «Risico» = kans op verlies."
+     },
+     {
+      "v": "Welk begrip hoort bij: \"een plan waarin je je bedrijf uitwerkt\"?",
+      "o": [
+       "Marktonderzoek",
+       "Risico",
+       "Winstmarge",
+       "Ondernemingsplan"
+      ],
+      "c": 3,
+      "d": 3,
+      "u": "«Ondernemingsplan»: een plan waarin je je bedrijf uitwerkt.",
+      "uo": [
+       "«Marktonderzoek» betekent onderzoek naar de markt.",
+       "«Risico» betekent kans op verlies.",
+       "«Winstmarge» betekent verkoopprijs min kostprijs.",
+       "Klopt, dit is «Ondernemingsplan»."
+      ],
+      "uh": "Onthoud: «Ondernemingsplan» = plan voor je bedrijf."
+     },
+     {
+      "v": "Welke term hoort bij \"plan voor je bedrijf\"?",
+      "o": [
+       "Ondernemingsplan",
+       "Risico",
+       "Winstmarge",
+       "Doelgroep"
+      ],
+      "c": 0,
+      "d": 2,
+      "u": "«Ondernemingsplan»: een plan waarin je je bedrijf uitwerkt.",
+      "uo": [
+       "Klopt, «Ondernemingsplan» past hierbij.",
+       "«Risico» betekent kans op verlies.",
+       "«Winstmarge» betekent verkoopprijs min kostprijs.",
+       "«Doelgroep» betekent jouw klanten."
+      ],
+      "uh": "Onthoud: «Ondernemingsplan» = plan voor je bedrijf."
+     },
+     {
+      "v": "Wat betekent «Ondernemer»?",
+      "o": [
+       "de kans dat iets misgaat en je geld verliest",
+       "iemand die een bedrijf start en er risico mee neemt",
+       "het geld dat je nodig hebt om te beginnen",
+       "een plan waarin je je bedrijf uitwerkt"
+      ],
+      "c": 1,
+      "d": 1,
+      "u": "«Ondernemer»: iemand die een bedrijf start en er risico mee neemt.",
+      "uo": [
+       "Dat is «Risico».",
+       "Klopt: start een bedrijf.",
+       "Dat is «Startkapitaal».",
+       "Dat is «Ondernemingsplan»."
+      ],
+      "uh": "Onthoud: «Ondernemer» = start een bedrijf."
+     }
+    ],
+    "begrippen": [
+     {
+      "t": "Ondernemer",
+      "d": "iemand die een bedrijf start en er risico mee neemt"
+     },
+     {
+      "t": "Ondernemingsplan",
+      "d": "een plan waarin je je bedrijf uitwerkt"
+     },
+     {
+      "t": "Startkapitaal",
+      "d": "het geld dat je nodig hebt om te beginnen"
+     },
+     {
+      "t": "Investering",
+      "d": "geld dat je uitgeeft aan bedrijfsmiddelen"
+     },
+     {
+      "t": "Marktonderzoek",
+      "d": "onderzoek naar klanten en concurrenten"
+     },
+     {
+      "t": "Doelgroep",
+      "d": "de groep klanten die je wilt bereiken"
+     },
+     {
+      "t": "Concurrent",
+      "d": "een ander bedrijf dat hetzelfde aanbiedt"
+     },
+     {
+      "t": "Kostprijs",
+      "d": "de kosten per product"
+     },
+     {
+      "t": "Winstmarge",
+      "d": "het verschil tussen verkoopprijs en kostprijs"
+     },
+     {
+      "t": "Financiering",
+      "d": "de manier waarop je aan geld voor je bedrijf komt"
+     },
+     {
+      "t": "Risico",
+      "d": "de kans dat iets misgaat en je geld verliest"
+     },
+     {
+      "t": "Rechtsvorm",
+      "d": "de juridische vorm van een bedrijf, zoals een eenmanszaak"
+     }
+    ],
+    "sam": "<p>Een <b>ondernemer</b> start een bedrijf en neemt <b>risico</b>. In een <b>ondernemingsplan</b> werk je je idee uit: <b>doelgroep</b>, <b>marktonderzoek</b>, <b>startkapitaal</b> en de <b>kostprijs</b>. De <b>rechtsvorm</b> bepaalt onder meer wie aansprakelijk is.</p>"
    }
   ]
  },

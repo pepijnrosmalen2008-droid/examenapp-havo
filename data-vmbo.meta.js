@@ -809,9 +809,10 @@ var VAKKEN_VMBO = [
      "Inflatie en indexcijfers",
      "Verzekeringen"
     ],
-    "nSv": 0,
+    "nSv": 26,
     "nOe": 0,
-    "nBeg": 0
+    "nBeg": 14,
+    "hasSam": true
    },
    {
     "id": "B",
@@ -823,9 +824,10 @@ var VAKKEN_VMBO = [
      "Consumentenrechten",
      "Consumentenorganisaties"
     ],
-    "nSv": 0,
+    "nSv": 26,
     "nOe": 0,
-    "nBeg": 0
+    "nBeg": 12,
+    "hasSam": true
    },
    {
     "id": "C",
@@ -837,9 +839,10 @@ var VAKKEN_VMBO = [
      "Brutoloon en nettoloon",
      "Arbeidsverdeling en productiviteit"
     ],
-    "nSv": 0,
+    "nSv": 26,
     "nOe": 0,
-    "nBeg": 0
+    "nBeg": 12,
+    "hasSam": true
    },
    {
     "id": "D",
@@ -851,9 +854,10 @@ var VAKKEN_VMBO = [
      "Verkoopprijs, omzet en btw",
      "Kosten en winst"
     ],
-    "nSv": 0,
+    "nSv": 26,
     "nOe": 0,
-    "nBeg": 0
+    "nBeg": 12,
+    "hasSam": true
    },
    {
     "id": "E",
@@ -865,9 +869,10 @@ var VAKKEN_VMBO = [
      "Belastingen",
      "Taken van de overheid"
     ],
-    "nSv": 0,
+    "nSv": 26,
     "nOe": 0,
-    "nBeg": 0
+    "nBeg": 12,
+    "hasSam": true
    },
    {
     "id": "F",
@@ -881,9 +886,10 @@ var VAKKEN_VMBO = [
      "De Europese Unie",
      "Ontwikkelingssamenwerking"
     ],
-    "nSv": 0,
+    "nSv": 26,
     "nOe": 0,
-    "nBeg": 0
+    "nBeg": 12,
+    "hasSam": true
    },
    {
     "id": "G",
@@ -895,9 +901,10 @@ var VAKKEN_VMBO = [
      "Milieukosten",
      "Duurzaam produceren en consumeren"
     ],
-    "nSv": 0,
+    "nSv": 26,
     "nOe": 0,
-    "nBeg": 0
+    "nBeg": 12,
+    "hasSam": true
    },
    {
     "id": "H",
@@ -909,9 +916,10 @@ var VAKKEN_VMBO = [
      "Samengestelde interest (rente-op-rente)",
      "De rol van de centrale bank"
     ],
-    "nSv": 0,
+    "nSv": 26,
     "nOe": 0,
-    "nBeg": 0
+    "nBeg": 12,
+    "hasSam": true
    },
    {
     "id": "I",
@@ -923,9 +931,10 @@ var VAKKEN_VMBO = [
      "Ondernemingsplan",
      "Kosten, prijs en winst van een bedrijf"
     ],
-    "nSv": 0,
+    "nSv": 26,
     "nOe": 0,
-    "nBeg": 0
+    "nBeg": 12,
+    "hasSam": true
    }
   ]
  },

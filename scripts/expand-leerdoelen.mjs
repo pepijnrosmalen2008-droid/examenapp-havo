@@ -88,7 +88,7 @@ function genBank(concepten) {
     // TEMPLATE A-dichtbij (d3) - definitie → term met VERWARBARE afleiders (opties = termen)
     if (close.length >= 1) {
       const chosen = [...close, ...far].slice(0, 3);
-      if (chosen.length === 3) push({ _t: 'A3', stem: `Welk begrip hoort bij: "${c.d}"?`, correctOpt: c.t, correctUo: `Klopt, dit is «${c.t}».`, distrs: termDistr(chosen), u, uh, d: close.length >= 2 ? 3 : 2 });
+      if (chosen.length === 3) push({ _t: 'A3', stem: `Welk begrip hoort bij: "${c.d}"?`, correctOpt: c.t, correctUo: `Klopt, dit is «${c.t}».`, distrs: termDistr(chosen), u, uh, d: 3 });
     }
     // TEMPLATE A-ver (d2) - definitie → term via de KORTE kern (korte stam + andere set)
     {
@@ -106,26 +106,21 @@ function genBank(concepten) {
   return cand.filter(q => { if (q.stem.length > MAX_STEM) return false; const k = q.stem.toLowerCase(); if (seen.has(k)) return false; seen.add(k); return true; });
 }
 
-/** Selecteer + balanceer tot een gouden bank (positie ≤40%, lengte-bias ≤40%, R1-R3, ≥25). */
+/** Selecteer + balanceer tot een gouden bank (positie ≤40%, lengte-bias <40%, R1-R3, ≥25). */
 function balance(cand, target = 26) {
   target = Math.max(target, 25);
-  const longestCap = Math.floor(0.35 * target); // ruim onder de 40%-poort
-  // d-gemengde volgorde (round-robin over R-niveaus zodat 1,2,3 aanwezig zijn),
-  // en binnen die volgorde 'correct = langste' vragen begrensd tot de cap.
-  const byD = { 1: [], 2: [], 3: [] };
-  cand.forEach(q => byD[q.d].push(q));
-  const order = [];
-  let more = true;
-  while (more) { more = false; for (const d of [3, 2, 1]) { if (byD[d].length) { order.push(byD[d].shift()); more = true; } } }
-  const picked = [], reserve = []; let longestN = 0;
-  for (const q of order) {
-    if (picked.length >= target) { reserve.push(q); continue; }
-    if (q.isLongest && longestN >= longestCap) { reserve.push(q); continue; }
-    picked.push(q); if (q.isLongest) longestN++;
+  // d-gemengde volgorde (round-robin over R-niveaus zodat 1,2,3 aanwezig zijn).
+  const dOrder = arr => { const byD = { 1: [], 2: [], 3: [] }; arr.forEach(q => byD[q.d].push(q)); const out = []; let more = true; while (more) { more = false; for (const d of [3, 2, 1]) if (byD[d].length) { out.push(byD[d].shift()); more = true; } } return out; };
+  const nonL = dOrder(cand.filter(q => !q.isLongest));
+  const lng = dOrder(cand.filter(q => q.isLongest));
+  // Neem eerst niet-langste vragen; vul aan met langste zolang de lengte-bias < 40% blijft.
+  const picked = nonL.slice(0, target);
+  let longestN = 0;
+  for (const q of lng) {
+    if (picked.length >= target) break;
+    const n = picked.length + 1, k = longestN + 1;
+    if (k / n < 0.40) { picked.push(q); longestN++; }
   }
-  // aanvullen tot minimaal 25 als de cap te streng was (blijft < 40%)
-  while (picked.length < 25 && reserve.length) picked.push(reserve.shift());
-
   // positie-balans: round-robin doelposities 0..3
   return picked.map((q, i) => {
     const pl = place(q.correctOpt, q.correctUo, q.distrs, i % 4);
