@@ -57,12 +57,15 @@ function split(srcFile, name, level, pretty) {
       }
       return md;
     });
-    // schrijf per-vak vraagbestand
-    const body = `__hydrateVak(${JSON.stringify(level)},${JSON.stringify(vak.id)},${JSON.stringify(payload)});`;
-    const qf = `q/${level}-${vak.id}.js`;
-    fs.writeFileSync(R(qf), body);
-    qBytes += Buffer.byteLength(body);
-    manifest.push(qf);
+    // schrijf per-vak vraagbestand - alleen als er echt vraagdata is (vakken in
+    // opbouw krijgen 0 counts en dus géén q-bestand; de app fetcht dat dan ook niet)
+    if (Object.keys(payload).length) {
+      const body = `__hydrateVak(${JSON.stringify(level)},${JSON.stringify(vak.id)},${JSON.stringify(payload)});`;
+      const qf = `q/${level}-${vak.id}.js`;
+      fs.writeFileSync(R(qf), body);
+      qBytes += Buffer.byteLength(body);
+      manifest.push(qf);
+    }
     return mv;
   });
 
@@ -76,7 +79,10 @@ function split(srcFile, name, level, pretty) {
 
 const m1 = split('data-havo.js', 'VAKKEN', 'havo', true);
 const m2 = split('data-vwo.js', 'VAKKEN_VWO', 'vwo', false);
+// VMBO: bron aanwezig zodra data-vmbo.js bestaat (vakken in opbouw → 0 counts, geen q-bestand).
+let m3 = [];
+if (fs.existsSync(R('data-vmbo.js'))) m3 = split('data-vmbo.js', 'VAKKEN_VMBO', 'vmbo', true);
 
 // manifest voor de SW (welke q-bestanden bestaan er)
-fs.writeFileSync(R('q/manifest.json'), JSON.stringify([...m1, ...m2]));
+fs.writeFileSync(R('q/manifest.json'), JSON.stringify([...m1, ...m2, ...m3]));
 console.log('\nKlaar. Vergeet niet de SW-cache te bumpen en data-*.meta.js in ASSETS te zetten.');

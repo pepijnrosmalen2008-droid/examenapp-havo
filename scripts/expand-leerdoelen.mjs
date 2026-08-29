@@ -204,7 +204,7 @@ const SELFTEST = {
 };
 
 // ── data-integratie: upsert leerdoelen in data-<niveau>.js ──
-const DATA = { havo: { file: 'data-havo.js', name: 'VAKKEN', pretty: 1 }, vwo: { file: 'data-vwo.js', name: 'VAKKEN_VWO', pretty: 0 } };
+const DATA = { havo: { file: 'data-havo.js', name: 'VAKKEN', pretty: 1 }, vwo: { file: 'data-vwo.js', name: 'VAKKEN_VWO', pretty: 0 }, vmbo: { file: 'data-vmbo.js', name: 'VAKKEN_VMBO', pretty: 1 } };
 function loadVakken(niveau) { const d = DATA[niveau]; const g = {}; new Function('g', fs.readFileSync(path.join(ROOT, d.file), 'utf8') + `\ng.V=${d.name};`)(g); return g.V; }
 function writeVakken(niveau, V) { const d = DATA[niveau]; fs.writeFileSync(path.join(ROOT, d.file), `var ${d.name} = ` + JSON.stringify(V, null, d.pretty) + ';'); }
 
@@ -225,7 +225,7 @@ async function runSpecFile(specfile, write) {
     const r = goldenSelfCheck(ld);
     results.push({ spec, ld, r });
     hardTotal += r.hard.length;
-    console.log(`\n═══ ${spec.niveau}/${spec.vak}/${spec.leerdoel} - ${spec.naam} (${r.n} vragen · R${r.dLevels.join('')} · pos ${(r.posShare * 100).toFixed(0)}% · len ${(r.longestRatio * 100).toFixed(0)}%) ═══`);
+    console.log(`\n═══ ${spec.niveau}/${spec.vak}/${spec.leerdoel || spec.domein} - ${spec.naam} (${r.n} vragen · R${r.dLevels.join('')} · pos ${(r.posShare * 100).toFixed(0)}% · len ${(r.longestRatio * 100).toFixed(0)}%) ═══`);
     if (!r.hard.length) console.log('  ✓ gouden-standaard-poorten gehaald');
     r.hard.forEach(m => console.log('  ✗ HARD  ' + m));
     r.soft.forEach(m => console.log('  · soft  ' + m));
@@ -242,10 +242,19 @@ async function runSpecFile(specfile, write) {
       if (!vak) { console.error(`✗ vak ${spec.vak} niet gevonden in ${niveau}`); process.exit(1); }
       const dom = (vak.domeinen || []).find(d => d.id === spec.domein);
       if (!dom) { console.error(`✗ domein ${spec.domein} niet gevonden in ${spec.vak}`); process.exit(1); }
-      dom.leerdoelen = dom.leerdoelen || [];
-      const i = dom.leerdoelen.findIndex(l => l.id === spec.leerdoel);
-      if (i >= 0) dom.leerdoelen[i] = ld; else dom.leerdoelen.push(ld);
-      reg.push(`${spec.niveau} ${spec.vak} ${spec.leerdoel}`);
+      if (spec.leerdoel) {
+        // leerdoel-modus (havo/vwo): upsert als sub-leerdoel
+        dom.leerdoelen = dom.leerdoelen || [];
+        const i = dom.leerdoelen.findIndex(l => l.id === spec.leerdoel);
+        if (i >= 0) dom.leerdoelen[i] = ld; else dom.leerdoelen.push(ld);
+        reg.push(`${spec.niveau} ${spec.vak} ${spec.leerdoel}`);
+      } else {
+        // domein-modus (vmbo): hang de bank direct onder het domein
+        dom.sv = ld.sv; dom.begrippen = ld.begrippen;
+        if (spec.sam) dom.sam = spec.sam;
+        if (spec.oe) dom.oe = spec.oe;
+        reg.push(`${spec.niveau} ${spec.vak} domein ${spec.domein}`);
+      }
     }
     writeVakken(niveau, V);
     console.log(`\n✓ ${niveau}: ${perNiveau[niveau].length} leerdoel(en) geschreven naar ${DATA[niveau].file}`);
