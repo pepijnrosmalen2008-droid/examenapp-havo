@@ -773,6 +773,22 @@ function getVakBestPct(vakId){
   });
   return {pct:count>0?totalPct/count:0,hasData:hasAny};
 }
+// Echte voortgang over het HELE vak: gemiddelde beheersing over alle domeinen
+// (nog niet geoefende domeinen tellen als 0). Zo geeft de balk weer hoeveel van
+// het vak je al beheerst - en loopt hij gelijk met de domeinbolletjes eronder.
+// (getVakBestPct hierboven blijft 'gemiddelde over geoefende domeinen' voor de
+// cijfer-/coach-schatting, die je niet wil straffen voor nog-niet-gedane stof.)
+function getVakCoverage(vakId){
+  const vak=getVK().find(v=>v.id===vakId);
+  if(!vak||!vak.domeinen||!vak.domeinen.length)return {pct:0,hasData:false,done:0,started:0,total:0};
+  let sum=0,done=0,started=0,any=false;
+  vak.domeinen.forEach(d=>{
+    const r=getDomeinBestPct(vakId,d.id);
+    sum+=r.pct;
+    if(r.hasData){any=true;if(r.pct>=0.7)done++;else started++;}
+  });
+  return {pct:sum/vak.domeinen.length,hasData:any,done,started,total:vak.domeinen.length};
+}
 
 // ═══════ EXAMENCOACH ═══════
 // Eerlijke, transparante indicatie op basis van je oefenscores per domein.

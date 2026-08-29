@@ -602,7 +602,7 @@ function buildGrid(){
     const d=document.createElement('div');
     d.className='card';
     d.style.setProperty('--card-col',v.kleur);
-    const prog=getVakBestPct(v.id);
+    const prog=getVakCoverage(v.id);
     const progHtml=prog.hasData
       ?`<div class="card-progress"><div class="cp-bar"><div class="cp-fill" style="width:${Math.round(prog.pct*100)}%"></div></div><span class="cp-pct">${Math.round(prog.pct*100)}%</span></div>`
       :`<div class="card-progress no-data"><span class="cp-start">Nog niet begonnen</span></div>`;
