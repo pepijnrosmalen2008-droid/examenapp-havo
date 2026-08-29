@@ -24,6 +24,7 @@ function page(v) {
   const accent = v.kleur || '#16a34a';
   const doms = v.domeinen || [];
   const ceDoms = doms.filter(d => (d.ceStatus || '').includes('CE'));
+  const nQ = doms.reduce((s, d) => s + (d.nSv || 0), 0);   // echte, geshipte oefenvragen
   const naam = v.naam;
   const emoji = EMOJI[v.id] || '📘';
 
@@ -137,7 +138,9 @@ ${JSON.stringify(faqJson, null, 2)}
   <div class="stats">
     <div class="stat"><div class="stat-number">${doms.length}</div><div class="stat-label">Examendomeinen</div></div>
     <div class="stat"><div class="stat-number">${ceDoms.length}</div><div class="stat-label">CE-domeinen</div></div>
-    <div class="stat"><div class="stat-number">Gratis</div><div class="stat-label">Geen account</div></div>
+    ${nQ > 0
+      ? `<div class="stat"><div class="stat-number">${nQ}+</div><div class="stat-label">Oefenvragen</div></div>`
+      : `<div class="stat"><div class="stat-number">Gratis</div><div class="stat-label">Geen account</div></div>`}
   </div>
 
   <div style="text-align:center">
@@ -166,7 +169,9 @@ ${domList}
       <div class="feature"><div class="feature-icon">📊</div><div class="feature-title">Voortgang</div><p>Zie per domein hoe je ervoor staat</p></div>
       <div class="feature"><div class="feature-icon">📄</div><div class="feature-title">Examenstof</div><p>Alle CE- en SE-domeinen</p></div>
     </div>
-    <div class="note">De oefenvragen voor VMBO GL/TL worden op dit moment toegevoegd. De examenstructuur, domeinen en data hierboven zijn al volledig beschikbaar in de app.</div>
+    ${nQ > 0
+      ? `<div class="note">${nQ}+ oefenvragen met per-optie-uitleg en flashcards staan klaar in de app. Meer vragen en oude examens komen er doorlopend bij.</div>`
+      : `<div class="note">De oefenvragen voor VMBO GL/TL worden op dit moment toegevoegd. De examenstructuur, domeinen en data hierboven zijn al volledig beschikbaar in de app.</div>`}
   </div>
 
   <div style="text-align:center;margin-top:1rem">
