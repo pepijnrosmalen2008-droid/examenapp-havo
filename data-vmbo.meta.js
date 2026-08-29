@@ -417,9 +417,10 @@ var VAKKEN_VMBO = [
      "Faseovergangen",
      "Temperatuur-tijdgrafieken"
     ],
-    "nSv": 0,
+    "nSv": 26,
     "nOe": 0,
-    "nBeg": 0
+    "nBeg": 14,
+    "hasSam": true
    },
    {
     "id": "B",
@@ -432,9 +433,10 @@ var VAKKEN_VMBO = [
      "Wet van Ohm: U = I × R",
      "Vermogen P = U × I en energie E = P × t"
     ],
-    "nSv": 0,
+    "nSv": 26,
     "nOe": 0,
-    "nBeg": 0
+    "nBeg": 12,
+    "hasSam": true
    },
    {
     "id": "C",
@@ -447,9 +449,10 @@ var VAKKEN_VMBO = [
      "Isolatie",
      "Q = c × m × ΔT"
     ],
-    "nSv": 0,
+    "nSv": 26,
     "nOe": 0,
-    "nBeg": 0
+    "nBeg": 12,
+    "hasSam": true
    },
    {
     "id": "D",
@@ -462,9 +465,10 @@ var VAKKEN_VMBO = [
      "Lichtbreking",
      "Beeldvorming"
     ],
-    "nSv": 0,
+    "nSv": 26,
     "nOe": 0,
-    "nBeg": 0
+    "nBeg": 12,
+    "hasSam": true
    },
    {
     "id": "E",
@@ -477,9 +481,10 @@ var VAKKEN_VMBO = [
      "Amplitude",
      "Geluidssnelheid en echopeiling"
     ],
-    "nSv": 0,
+    "nSv": 26,
     "nOe": 0,
-    "nBeg": 0
+    "nBeg": 12,
+    "hasSam": true
    },
    {
     "id": "F",
@@ -492,9 +497,10 @@ var VAKKEN_VMBO = [
      "Hefbomen: M = F × r",
      "Snelheid s = v × t, remweg en stopafstand"
     ],
-    "nSv": 0,
+    "nSv": 26,
     "nOe": 0,
-    "nBeg": 0
+    "nBeg": 12,
+    "hasSam": true
    },
    {
     "id": "G",
@@ -506,9 +512,10 @@ var VAKKEN_VMBO = [
      "Atomen en moleculen",
      "Eigenschappen van materialen"
     ],
-    "nSv": 0,
+    "nSv": 26,
     "nOe": 0,
-    "nBeg": 0
+    "nBeg": 12,
+    "hasSam": true
    },
    {
     "id": "H",
@@ -521,9 +528,10 @@ var VAKKEN_VMBO = [
      "Toepassingen en risico's",
      "Bescherming"
     ],
-    "nSv": 0,
+    "nSv": 26,
     "nOe": 0,
-    "nBeg": 0
+    "nBeg": 12,
+    "hasSam": true
    },
    {
     "id": "I",
@@ -960,9 +968,10 @@ var VAKKEN_VMBO = [
      "Waarden en normen door de tijd",
      "Cultuur en religie"
     ],
-    "nSv": 0,
+    "nSv": 26,
     "nOe": 0,
-    "nBeg": 0
+    "nBeg": 12,
+    "hasSam": true
    },
    {
     "id": "B",
@@ -976,9 +985,10 @@ var VAKKEN_VMBO = [
      "Eerste en Tweede Kamer",
      "Het ontstaan van de verzorgingsstaat"
     ],
-    "nSv": 0,
+    "nSv": 26,
     "nOe": 0,
-    "nBeg": 0
+    "nBeg": 12,
+    "hasSam": true
    },
    {
     "id": "C",
@@ -990,9 +1000,10 @@ var VAKKEN_VMBO = [
      "Industriële revolutie",
      "Arbeid en de sociale kwestie"
     ],
-    "nSv": 0,
+    "nSv": 26,
     "nOe": 0,
-    "nBeg": 0
+    "nBeg": 12,
+    "hasSam": true
    },
    {
     "id": "D",
@@ -1004,9 +1015,10 @@ var VAKKEN_VMBO = [
      "Sociale wetten",
      "De verzorgingsstaat na 1945"
     ],
-    "nSv": 0,
+    "nSv": 26,
     "nOe": 0,
-    "nBeg": 0
+    "nBeg": 12,
+    "hasSam": true
    },
    {
     "id": "E",
@@ -1018,9 +1030,10 @@ var VAKKEN_VMBO = [
      "Ontzuiling en emancipatie",
      "Jongerencultuur en protest"
     ],
-    "nSv": 0,
+    "nSv": 26,
     "nOe": 0,
-    "nBeg": 0
+    "nBeg": 12,
+    "hasSam": true
    },
    {
     "id": "F",
@@ -1032,9 +1045,10 @@ var VAKKEN_VMBO = [
      "Nederlands-Indië",
      "Onafhankelijkheid van Indonesië en Suriname"
     ],
-    "nSv": 0,
+    "nSv": 26,
     "nOe": 0,
-    "nBeg": 0
+    "nBeg": 12,
+    "hasSam": true
    },
    {
     "id": "G",
@@ -1049,9 +1063,10 @@ var VAKKEN_VMBO = [
      "Koude Oorlog: NAVO vs. Warschaupact",
      "Val van de Muur en dekolonisatie"
     ],
-    "nSv": 0,
+    "nSv": 26,
     "nOe": 0,
-    "nBeg": 0
+    "nBeg": 14,
+    "hasSam": true
    },
    {
     "id": "H",
@@ -1063,9 +1078,10 @@ var VAKKEN_VMBO = [
      "Europese samenwerking (EU)",
      "Globalisering"
     ],
-    "nSv": 0,
+    "nSv": 26,
     "nOe": 0,
-    "nBeg": 0
+    "nBeg": 12,
+    "hasSam": true
    },
    {
     "id": "I",
@@ -1226,9 +1242,10 @@ var VAKKEN_VMBO = [
      "De route van een wetsvoorstel",
      "Besluitvorming en belangengroepen"
     ],
-    "nSv": 0,
+    "nSv": 26,
     "nOe": 0,
-    "nBeg": 0
+    "nBeg": 14,
+    "hasSam": true
    },
    {
     "id": "B",
@@ -1241,9 +1258,10 @@ var VAKKEN_VMBO = [
      "Werkgevers, werknemers en vakbonden",
      "Inkomen en sociale zekerheid"
     ],
-    "nSv": 0,
+    "nSv": 26,
     "nOe": 0,
-    "nBeg": 0
+    "nBeg": 12,
+    "hasSam": true
    },
    {
     "id": "C",
@@ -1255,9 +1273,10 @@ var VAKKEN_VMBO = [
      "Cultuur en identiteit",
      "Discriminatie en integratie"
     ],
-    "nSv": 0,
+    "nSv": 26,
     "nOe": 0,
-    "nBeg": 0
+    "nBeg": 12,
+    "hasSam": true
    },
    {
     "id": "D",
@@ -1271,9 +1290,10 @@ var VAKKEN_VMBO = [
      "Rechten van verdachten",
      "Soorten straffen"
     ],
-    "nSv": 0,
+    "nSv": 26,
     "nOe": 0,
-    "nBeg": 0
+    "nBeg": 14,
+    "hasSam": true
    },
    {
     "id": "E",
@@ -1287,9 +1307,10 @@ var VAKKEN_VMBO = [
      "Censuur",
      "De multiculturele samenleving"
     ],
-    "nSv": 0,
+    "nSv": 26,
     "nOe": 0,
-    "nBeg": 0
+    "nBeg": 12,
+    "hasSam": true
    },
    {
     "id": "F",
@@ -1301,9 +1322,10 @@ var VAKKEN_VMBO = [
      "Digitalisering",
      "Privacy en sociale media"
     ],
-    "nSv": 0,
+    "nSv": 26,
     "nOe": 0,
-    "nBeg": 0
+    "nBeg": 12,
+    "hasSam": true
    },
    {
     "id": "G",

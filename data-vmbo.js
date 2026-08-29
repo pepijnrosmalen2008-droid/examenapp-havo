@@ -419,7 +419,562 @@ var VAKKEN_VMBO = [
     ],
     "nSv": 0,
     "nOe": 0,
-    "nBeg": 0
+    "nBeg": 0,
+    "sv": [
+     {
+      "v": "Welk begrip hoort bij: \"de hoeveelheid stof, in kilogram of gram\"?",
+      "o": [
+       "Massa",
+       "Volume",
+       "Dichtheid",
+       "Gas"
+      ],
+      "c": 0,
+      "d": 3,
+      "u": "«Massa»: de hoeveelheid stof, in kilogram of gram.",
+      "uo": [
+       "Klopt, dit is «Massa».",
+       "«Volume» betekent ingenomen ruimte.",
+       "«Dichtheid» betekent massa per volume.",
+       "«Gas» betekent vult de ruimte."
+      ],
+      "uh": "Onthoud: «Massa» = hoeveelheid stof."
+     },
+     {
+      "v": "Welke term hoort bij \"massa per volume\"?",
+      "o": [
+       "Gas",
+       "Dichtheid",
+       "Kookpunt",
+       "Verdampen"
+      ],
+      "c": 1,
+      "d": 2,
+      "u": "«Dichtheid»: de massa per volume van een stof.",
+      "uo": [
+       "«Gas» betekent vult de ruimte.",
+       "Klopt, «Dichtheid» past hierbij.",
+       "«Kookpunt» betekent kooktemperatuur.",
+       "«Verdampen» betekent vloeibaar wordt gas."
+      ],
+      "uh": "Onthoud: «Dichtheid» = massa per volume."
+     },
+     {
+      "v": "Wat betekent «Dichtheid»?",
+      "o": [
+       "de hoeveelheid stof, in kilogram of gram",
+       "de ruimte die een stof inneemt",
+       "de massa per volume van een stof",
+       "een stof die de hele beschikbare ruimte vult"
+      ],
+      "c": 2,
+      "d": 1,
+      "u": "«Dichtheid»: de massa per volume van een stof.",
+      "uo": [
+       "Dat is «Massa».",
+       "Dat is «Volume».",
+       "Klopt: massa per volume.",
+       "Dat is «Gas»."
+      ],
+      "uh": "Onthoud: «Dichtheid» = massa per volume."
+     },
+     {
+      "v": "Welk begrip hoort bij: \"de ruimte die een stof inneemt\"?",
+      "o": [
+       "Massa",
+       "Dichtheid",
+       "Gas",
+       "Volume"
+      ],
+      "c": 3,
+      "d": 3,
+      "u": "«Volume»: de ruimte die een stof inneemt.",
+      "uo": [
+       "«Massa» betekent hoeveelheid stof.",
+       "«Dichtheid» betekent massa per volume.",
+       "«Gas» betekent vult de ruimte.",
+       "Klopt, dit is «Volume»."
+      ],
+      "uh": "Onthoud: «Volume» = ingenomen ruimte."
+     },
+     {
+      "v": "Welke term hoort bij \"hoeveelheid stof\"?",
+      "o": [
+       "Massa",
+       "Gas",
+       "Smeltpunt",
+       "Temperatuur-tijdgrafiek"
+      ],
+      "c": 0,
+      "d": 2,
+      "u": "«Massa»: de hoeveelheid stof, in kilogram of gram.",
+      "uo": [
+       "Klopt, «Massa» past hierbij.",
+       "«Gas» betekent vult de ruimte.",
+       "«Smeltpunt» betekent smelttemperatuur.",
+       "«Temperatuur-tijdgrafiek» betekent temperatuur tegen tijd."
+      ],
+      "uh": "Onthoud: «Massa» = hoeveelheid stof."
+     },
+     {
+      "v": "Wat betekent «Massa»?",
+      "o": [
+       "de ruimte die een stof inneemt",
+       "de hoeveelheid stof, in kilogram of gram",
+       "de massa per volume van een stof",
+       "een stof die de hele beschikbare ruimte vult"
+      ],
+      "c": 1,
+      "d": 1,
+      "u": "«Massa»: de hoeveelheid stof, in kilogram of gram.",
+      "uo": [
+       "Dat is «Volume».",
+       "Klopt: hoeveelheid stof.",
+       "Dat is «Dichtheid».",
+       "Dat is «Gas»."
+      ],
+      "uh": "Onthoud: «Massa» = hoeveelheid stof."
+     },
+     {
+      "v": "Welk begrip hoort bij: \"de overgang van vast naar vloeibaar\"?",
+      "o": [
+       "Stollen",
+       "Kookpunt",
+       "Smelten",
+       "Vaste stof"
+      ],
+      "c": 2,
+      "d": 3,
+      "u": "«Smelten»: de overgang van vast naar vloeibaar.",
+      "uo": [
+       "«Stollen» betekent vloeibaar wordt vast.",
+       "«Kookpunt» betekent kooktemperatuur.",
+       "Klopt, dit is «Smelten».",
+       "«Vaste stof» betekent vaste vorm."
+      ],
+      "uh": "Onthoud: «Smelten» = vast wordt vloeibaar."
+     },
+     {
+      "v": "Welke term hoort bij \"ingenomen ruimte\"?",
+      "o": [
+       "Gas",
+       "Smelten",
+       "Faseovergang",
+       "Volume"
+      ],
+      "c": 3,
+      "d": 2,
+      "u": "«Volume»: de ruimte die een stof inneemt.",
+      "uo": [
+       "«Gas» betekent vult de ruimte.",
+       "«Smelten» betekent vast wordt vloeibaar.",
+       "«Faseovergang» betekent wisseling van fase.",
+       "Klopt, «Volume» past hierbij."
+      ],
+      "uh": "Onthoud: «Volume» = ingenomen ruimte."
+     },
+     {
+      "v": "Wat betekent «Volume»?",
+      "o": [
+       "de ruimte die een stof inneemt",
+       "de hoeveelheid stof, in kilogram of gram",
+       "de massa per volume van een stof",
+       "een stof die de hele beschikbare ruimte vult"
+      ],
+      "c": 0,
+      "d": 1,
+      "u": "«Volume»: de ruimte die een stof inneemt.",
+      "uo": [
+       "Klopt: ingenomen ruimte.",
+       "Dat is «Massa».",
+       "Dat is «Dichtheid».",
+       "Dat is «Gas»."
+      ],
+      "uh": "Onthoud: «Volume» = ingenomen ruimte."
+     },
+     {
+      "v": "Welk begrip hoort bij: \"de overgang van vloeibaar naar vast\"?",
+      "o": [
+       "Smelten",
+       "Stollen",
+       "Kookpunt",
+       "Vaste stof"
+      ],
+      "c": 1,
+      "d": 3,
+      "u": "«Stollen»: de overgang van vloeibaar naar vast.",
+      "uo": [
+       "«Smelten» betekent vast wordt vloeibaar.",
+       "Klopt, dit is «Stollen».",
+       "«Kookpunt» betekent kooktemperatuur.",
+       "«Vaste stof» betekent vaste vorm."
+      ],
+      "uh": "Onthoud: «Stollen» = vloeibaar wordt vast."
+     },
+     {
+      "v": "Welke term hoort bij \"vast wordt vloeibaar\"?",
+      "o": [
+       "Kookpunt",
+       "Vaste stof",
+       "Smelten",
+       "Condenseren"
+      ],
+      "c": 2,
+      "d": 2,
+      "u": "«Smelten»: de overgang van vast naar vloeibaar.",
+      "uo": [
+       "«Kookpunt» betekent kooktemperatuur.",
+       "«Vaste stof» betekent vaste vorm.",
+       "Klopt, «Smelten» past hierbij.",
+       "«Condenseren» betekent gas wordt vloeibaar."
+      ],
+      "uh": "Onthoud: «Smelten» = vast wordt vloeibaar."
+     },
+     {
+      "v": "Wat betekent «Smelten»?",
+      "o": [
+       "de overgang van vloeibaar naar vast",
+       "de temperatuur waarbij een stof kookt",
+       "een stof met een vaste vorm en een vast volume",
+       "de overgang van vast naar vloeibaar"
+      ],
+      "c": 3,
+      "d": 1,
+      "u": "«Smelten»: de overgang van vast naar vloeibaar.",
+      "uo": [
+       "Dat is «Stollen».",
+       "Dat is «Kookpunt».",
+       "Dat is «Vaste stof».",
+       "Klopt: vast wordt vloeibaar."
+      ],
+      "uh": "Onthoud: «Smelten» = vast wordt vloeibaar."
+     },
+     {
+      "v": "Welk begrip hoort bij: \"de overgang van vloeibaar naar gas\"?",
+      "o": [
+       "Verdampen",
+       "Condenseren",
+       "Gas",
+       "Kookpunt"
+      ],
+      "c": 0,
+      "d": 3,
+      "u": "«Verdampen»: de overgang van vloeibaar naar gas.",
+      "uo": [
+       "Klopt, dit is «Verdampen».",
+       "«Condenseren» betekent gas wordt vloeibaar.",
+       "«Gas» betekent vult de ruimte.",
+       "«Kookpunt» betekent kooktemperatuur."
+      ],
+      "uh": "Onthoud: «Verdampen» = vloeibaar wordt gas."
+     },
+     {
+      "v": "Welke term hoort bij \"vloeibaar wordt vast\"?",
+      "o": [
+       "Kookpunt",
+       "Stollen",
+       "Vaste stof",
+       "Condenseren"
+      ],
+      "c": 1,
+      "d": 2,
+      "u": "«Stollen»: de overgang van vloeibaar naar vast.",
+      "uo": [
+       "«Kookpunt» betekent kooktemperatuur.",
+       "Klopt, «Stollen» past hierbij.",
+       "«Vaste stof» betekent vaste vorm.",
+       "«Condenseren» betekent gas wordt vloeibaar."
+      ],
+      "uh": "Onthoud: «Stollen» = vloeibaar wordt vast."
+     },
+     {
+      "v": "Wat betekent «Stollen»?",
+      "o": [
+       "de overgang van vast naar vloeibaar",
+       "de temperatuur waarbij een stof kookt",
+       "de overgang van vloeibaar naar vast",
+       "een stof met een vaste vorm en een vast volume"
+      ],
+      "c": 2,
+      "d": 1,
+      "u": "«Stollen»: de overgang van vloeibaar naar vast.",
+      "uo": [
+       "Dat is «Smelten».",
+       "Dat is «Kookpunt».",
+       "Klopt: vloeibaar wordt vast.",
+       "Dat is «Vaste stof»."
+      ],
+      "uh": "Onthoud: «Stollen» = vloeibaar wordt vast."
+     },
+     {
+      "v": "Welk begrip hoort bij: \"de overgang van gas naar vloeibaar\"?",
+      "o": [
+       "Verdampen",
+       "Temperatuur-tijdgrafiek",
+       "Gas",
+       "Condenseren"
+      ],
+      "c": 3,
+      "d": 3,
+      "u": "«Condenseren»: de overgang van gas naar vloeibaar.",
+      "uo": [
+       "«Verdampen» betekent vloeibaar wordt gas.",
+       "«Temperatuur-tijdgrafiek» betekent temperatuur tegen tijd.",
+       "«Gas» betekent vult de ruimte.",
+       "Klopt, dit is «Condenseren»."
+      ],
+      "uh": "Onthoud: «Condenseren» = gas wordt vloeibaar."
+     },
+     {
+      "v": "Welke term hoort bij \"gas wordt vloeibaar\"?",
+      "o": [
+       "Condenseren",
+       "Temperatuur-tijdgrafiek",
+       "Gas",
+       "Stollen"
+      ],
+      "c": 0,
+      "d": 2,
+      "u": "«Condenseren»: de overgang van gas naar vloeibaar.",
+      "uo": [
+       "Klopt, «Condenseren» past hierbij.",
+       "«Temperatuur-tijdgrafiek» betekent temperatuur tegen tijd.",
+       "«Gas» betekent vult de ruimte.",
+       "«Stollen» betekent vloeibaar wordt vast."
+      ],
+      "uh": "Onthoud: «Condenseren» = gas wordt vloeibaar."
+     },
+     {
+      "v": "Wat betekent «Verdampen»?",
+      "o": [
+       "de overgang van gas naar vloeibaar",
+       "de overgang van vloeibaar naar gas",
+       "een stof die de hele beschikbare ruimte vult",
+       "de temperatuur waarbij een stof kookt"
+      ],
+      "c": 1,
+      "d": 1,
+      "u": "«Verdampen»: de overgang van vloeibaar naar gas.",
+      "uo": [
+       "Dat is «Condenseren».",
+       "Klopt: vloeibaar wordt gas.",
+       "Dat is «Gas».",
+       "Dat is «Kookpunt»."
+      ],
+      "uh": "Onthoud: «Verdampen» = vloeibaar wordt gas."
+     },
+     {
+      "v": "Welk begrip hoort bij: \"de temperatuur waarbij een stof smelt\"?",
+      "o": [
+       "Kookpunt",
+       "Gas",
+       "Smeltpunt",
+       "Condenseren"
+      ],
+      "c": 2,
+      "d": 3,
+      "u": "«Smeltpunt»: de temperatuur waarbij een stof smelt.",
+      "uo": [
+       "«Kookpunt» betekent kooktemperatuur.",
+       "«Gas» betekent vult de ruimte.",
+       "Klopt, dit is «Smeltpunt».",
+       "«Condenseren» betekent gas wordt vloeibaar."
+      ],
+      "uh": "Onthoud: «Smeltpunt» = smelttemperatuur."
+     },
+     {
+      "v": "Welke term hoort bij \"smelttemperatuur\"?",
+      "o": [
+       "Gas",
+       "Condenseren",
+       "Stollen",
+       "Smeltpunt"
+      ],
+      "c": 3,
+      "d": 2,
+      "u": "«Smeltpunt»: de temperatuur waarbij een stof smelt.",
+      "uo": [
+       "«Gas» betekent vult de ruimte.",
+       "«Condenseren» betekent gas wordt vloeibaar.",
+       "«Stollen» betekent vloeibaar wordt vast.",
+       "Klopt, «Smeltpunt» past hierbij."
+      ],
+      "uh": "Onthoud: «Smeltpunt» = smelttemperatuur."
+     },
+     {
+      "v": "Wat betekent «Condenseren»?",
+      "o": [
+       "de overgang van gas naar vloeibaar",
+       "de overgang van vloeibaar naar gas",
+       "een grafiek van de temperatuur tegen de tijd bij verwarmen",
+       "een stof die de hele beschikbare ruimte vult"
+      ],
+      "c": 0,
+      "d": 1,
+      "u": "«Condenseren»: de overgang van gas naar vloeibaar.",
+      "uo": [
+       "Klopt: gas wordt vloeibaar.",
+       "Dat is «Verdampen».",
+       "Dat is «Temperatuur-tijdgrafiek».",
+       "Dat is «Gas»."
+      ],
+      "uh": "Onthoud: «Condenseren» = gas wordt vloeibaar."
+     },
+     {
+      "v": "Welk begrip hoort bij: \"de temperatuur waarbij een stof kookt\"?",
+      "o": [
+       "Smeltpunt",
+       "Kookpunt",
+       "Volume",
+       "Verdampen"
+      ],
+      "c": 1,
+      "d": 3,
+      "u": "«Kookpunt»: de temperatuur waarbij een stof kookt.",
+      "uo": [
+       "«Smeltpunt» betekent smelttemperatuur.",
+       "Klopt, dit is «Kookpunt».",
+       "«Volume» betekent ingenomen ruimte.",
+       "«Verdampen» betekent vloeibaar wordt gas."
+      ],
+      "uh": "Onthoud: «Kookpunt» = kooktemperatuur."
+     },
+     {
+      "v": "Welke term hoort bij \"kooktemperatuur\"?",
+      "o": [
+       "Volume",
+       "Verdampen",
+       "Kookpunt",
+       "Smelten"
+      ],
+      "c": 2,
+      "d": 2,
+      "u": "«Kookpunt»: de temperatuur waarbij een stof kookt.",
+      "uo": [
+       "«Volume» betekent ingenomen ruimte.",
+       "«Verdampen» betekent vloeibaar wordt gas.",
+       "Klopt, «Kookpunt» past hierbij.",
+       "«Smelten» betekent vast wordt vloeibaar."
+      ],
+      "uh": "Onthoud: «Kookpunt» = kooktemperatuur."
+     },
+     {
+      "v": "Wat betekent «Smeltpunt»?",
+      "o": [
+       "de temperatuur waarbij een stof kookt",
+       "een stof die de hele beschikbare ruimte vult",
+       "de overgang van gas naar vloeibaar",
+       "de temperatuur waarbij een stof smelt"
+      ],
+      "c": 3,
+      "d": 1,
+      "u": "«Smeltpunt»: de temperatuur waarbij een stof smelt.",
+      "uo": [
+       "Dat is «Kookpunt».",
+       "Dat is «Gas».",
+       "Dat is «Condenseren».",
+       "Klopt: smelttemperatuur."
+      ],
+      "uh": "Onthoud: «Smeltpunt» = smelttemperatuur."
+     },
+     {
+      "v": "Welk begrip hoort bij: \"een stof die vloeit en de vorm van de bak aanneemt\"?",
+      "o": [
+       "Vloeistof",
+       "Vaste stof",
+       "Gas",
+       "Kookpunt"
+      ],
+      "c": 0,
+      "d": 3,
+      "u": "«Vloeistof»: een stof die vloeit en de vorm van de bak aanneemt.",
+      "uo": [
+       "Klopt, dit is «Vloeistof».",
+       "«Vaste stof» betekent vaste vorm.",
+       "«Gas» betekent vult de ruimte.",
+       "«Kookpunt» betekent kooktemperatuur."
+      ],
+      "uh": "Onthoud: «Vloeistof» = neemt vorm van de bak aan."
+     },
+     {
+      "v": "Welke term hoort bij \"neemt vorm van de bak aan\"?",
+      "o": [
+       "Kookpunt",
+       "Vloeistof",
+       "Verdampen",
+       "Faseovergang"
+      ],
+      "c": 1,
+      "d": 2,
+      "u": "«Vloeistof»: een stof die vloeit en de vorm van de bak aanneemt.",
+      "uo": [
+       "«Kookpunt» betekent kooktemperatuur.",
+       "Klopt, «Vloeistof» past hierbij.",
+       "«Verdampen» betekent vloeibaar wordt gas.",
+       "«Faseovergang» betekent wisseling van fase."
+      ],
+      "uh": "Onthoud: «Vloeistof» = neemt vorm van de bak aan."
+     }
+    ],
+    "begrippen": [
+     {
+      "t": "Dichtheid",
+      "d": "de massa per volume van een stof"
+     },
+     {
+      "t": "Massa",
+      "d": "de hoeveelheid stof, in kilogram of gram"
+     },
+     {
+      "t": "Volume",
+      "d": "de ruimte die een stof inneemt"
+     },
+     {
+      "t": "Faseovergang",
+      "d": "de overgang van de ene fase naar de andere"
+     },
+     {
+      "t": "Smelten",
+      "d": "de overgang van vast naar vloeibaar"
+     },
+     {
+      "t": "Stollen",
+      "d": "de overgang van vloeibaar naar vast"
+     },
+     {
+      "t": "Verdampen",
+      "d": "de overgang van vloeibaar naar gas"
+     },
+     {
+      "t": "Condenseren",
+      "d": "de overgang van gas naar vloeibaar"
+     },
+     {
+      "t": "Smeltpunt",
+      "d": "de temperatuur waarbij een stof smelt"
+     },
+     {
+      "t": "Kookpunt",
+      "d": "de temperatuur waarbij een stof kookt"
+     },
+     {
+      "t": "Vaste stof",
+      "d": "een stof met een vaste vorm en een vast volume"
+     },
+     {
+      "t": "Vloeistof",
+      "d": "een stof die vloeit en de vorm van de bak aanneemt"
+     },
+     {
+      "t": "Gas",
+      "d": "een stof die de hele beschikbare ruimte vult"
+     },
+     {
+      "t": "Temperatuur-tijdgrafiek",
+      "d": "een grafiek van de temperatuur tegen de tijd bij verwarmen"
+     }
+    ],
+    "sam": "<p>De <b>dichtheid</b> is de massa per volume van een stof. Bij een <b>faseovergang</b> gaat een stof van vast naar vloeibaar (<b>smelten</b>) of van vloeibaar naar gas (<b>verdampen</b>). Een <b>temperatuur-tijdgrafiek</b> laat zien hoe de temperatuur tijdens verwarmen verandert.</p>"
    },
    {
     "id": "B",
@@ -434,7 +989,554 @@ var VAKKEN_VMBO = [
     ],
     "nSv": 0,
     "nOe": 0,
-    "nBeg": 0
+    "nBeg": 0,
+    "sv": [
+     {
+      "v": "Welk begrip hoort bij: \"de hoeveelheid lading die per seconde stroomt, in ampère\"?",
+      "o": [
+       "Stroomsterkte",
+       "Spanning",
+       "Weerstand",
+       "Elektrische energie"
+      ],
+      "c": 0,
+      "d": 3,
+      "u": "«Stroomsterkte»: de hoeveelheid lading die per seconde stroomt, in ampère.",
+      "uo": [
+       "Klopt, dit is «Stroomsterkte».",
+       "«Spanning» betekent de elektrische duw.",
+       "«Weerstand» betekent werkt de stroom tegen.",
+       "«Elektrische energie» betekent gebruikte energie."
+      ],
+      "uh": "Onthoud: «Stroomsterkte» = lading per seconde."
+     },
+     {
+      "v": "Welke term hoort bij \"lading per seconde\"?",
+      "o": [
+       "Elektrische energie",
+       "Stroomsterkte",
+       "Wet van Ohm",
+       "Zekering"
+      ],
+      "c": 1,
+      "d": 2,
+      "u": "«Stroomsterkte»: de hoeveelheid lading die per seconde stroomt, in ampère.",
+      "uo": [
+       "«Elektrische energie» betekent gebruikte energie.",
+       "Klopt, «Stroomsterkte» past hierbij.",
+       "«Wet van Ohm» betekent U is I maal R.",
+       "«Zekering» betekent beveiliging tegen te veel stroom."
+      ],
+      "uh": "Onthoud: «Stroomsterkte» = lading per seconde."
+     },
+     {
+      "v": "Wat betekent «Stroomsterkte»?",
+      "o": [
+       "de duw die de stroom veroorzaakt, in volt",
+       "de mate waarin een component de stroom tegenwerkt, in ohm",
+       "de hoeveelheid lading die per seconde stroomt, in ampère",
+       "de energie die een apparaat gebruikt in een bepaalde tijd"
+      ],
+      "c": 2,
+      "d": 1,
+      "u": "«Stroomsterkte»: de hoeveelheid lading die per seconde stroomt, in ampère.",
+      "uo": [
+       "Dat is «Spanning».",
+       "Dat is «Weerstand».",
+       "Klopt: lading per seconde.",
+       "Dat is «Elektrische energie»."
+      ],
+      "uh": "Onthoud: «Stroomsterkte» = lading per seconde."
+     },
+     {
+      "v": "Welk begrip hoort bij: \"de duw die de stroom veroorzaakt, in volt\"?",
+      "o": [
+       "Stroomsterkte",
+       "Weerstand",
+       "Elektrische energie",
+       "Spanning"
+      ],
+      "c": 3,
+      "d": 3,
+      "u": "«Spanning»: de duw die de stroom veroorzaakt, in volt.",
+      "uo": [
+       "«Stroomsterkte» betekent lading per seconde.",
+       "«Weerstand» betekent werkt de stroom tegen.",
+       "«Elektrische energie» betekent gebruikte energie.",
+       "Klopt, dit is «Spanning»."
+      ],
+      "uh": "Onthoud: «Spanning» = de elektrische duw."
+     },
+     {
+      "v": "Welke term hoort bij \"de elektrische duw\"?",
+      "o": [
+       "Spanning",
+       "Elektrische energie",
+       "Wet van Ohm",
+       "Zekering"
+      ],
+      "c": 0,
+      "d": 2,
+      "u": "«Spanning»: de duw die de stroom veroorzaakt, in volt.",
+      "uo": [
+       "Klopt, «Spanning» past hierbij.",
+       "«Elektrische energie» betekent gebruikte energie.",
+       "«Wet van Ohm» betekent U is I maal R.",
+       "«Zekering» betekent beveiliging tegen te veel stroom."
+      ],
+      "uh": "Onthoud: «Spanning» = de elektrische duw."
+     },
+     {
+      "v": "Wat betekent «Spanning»?",
+      "o": [
+       "de hoeveelheid lading die per seconde stroomt, in ampère",
+       "de duw die de stroom veroorzaakt, in volt",
+       "de mate waarin een component de stroom tegenwerkt, in ohm",
+       "de energie die een apparaat gebruikt in een bepaalde tijd"
+      ],
+      "c": 1,
+      "d": 1,
+      "u": "«Spanning»: de duw die de stroom veroorzaakt, in volt.",
+      "uo": [
+       "Dat is «Stroomsterkte».",
+       "Klopt: de elektrische duw.",
+       "Dat is «Weerstand».",
+       "Dat is «Elektrische energie»."
+      ],
+      "uh": "Onthoud: «Spanning» = de elektrische duw."
+     },
+     {
+      "v": "Welk begrip hoort bij: \"de mate waarin een component de stroom tegenwerkt, in ohm\"?",
+      "o": [
+       "Stroomsterkte",
+       "Spanning",
+       "Weerstand",
+       "Parallelschakeling"
+      ],
+      "c": 2,
+      "d": 3,
+      "u": "«Weerstand»: de mate waarin een component de stroom tegenwerkt, in ohm.",
+      "uo": [
+       "«Stroomsterkte» betekent lading per seconde.",
+       "«Spanning» betekent de elektrische duw.",
+       "Klopt, dit is «Weerstand».",
+       "«Parallelschakeling» betekent takken naast elkaar."
+      ],
+      "uh": "Onthoud: «Weerstand» = werkt de stroom tegen."
+     },
+     {
+      "v": "Welke term hoort bij \"werkt de stroom tegen\"?",
+      "o": [
+       "Parallelschakeling",
+       "Geleider",
+       "Kortsluiting",
+       "Weerstand"
+      ],
+      "c": 3,
+      "d": 2,
+      "u": "«Weerstand»: de mate waarin een component de stroom tegenwerkt, in ohm.",
+      "uo": [
+       "«Parallelschakeling» betekent takken naast elkaar.",
+       "«Geleider» betekent laat stroom door.",
+       "«Kortsluiting» betekent te weinig weerstand.",
+       "Klopt, «Weerstand» past hierbij."
+      ],
+      "uh": "Onthoud: «Weerstand» = werkt de stroom tegen."
+     },
+     {
+      "v": "Wat betekent «Serieschakeling»?",
+      "o": [
+       "een schakeling waarin de stroom maar één weg heeft",
+       "een schakeling met meerdere takken naast elkaar",
+       "het verband tussen spanning, stroom en weerstand (U = I × R)",
+       "de energie die per seconde wordt omgezet, in watt"
+      ],
+      "c": 0,
+      "d": 1,
+      "u": "«Serieschakeling»: een schakeling waarin de stroom maar één weg heeft.",
+      "uo": [
+       "Klopt: één stroomweg.",
+       "Dat is «Parallelschakeling».",
+       "Dat is «Wet van Ohm».",
+       "Dat is «Vermogen»."
+      ],
+      "uh": "Onthoud: «Serieschakeling» = één stroomweg."
+     },
+     {
+      "v": "Welk begrip hoort bij: \"het verband tussen spanning, stroom en weerstand (U = I × R)\"?",
+      "o": [
+       "Vermogen",
+       "Wet van Ohm",
+       "Parallelschakeling",
+       "Serieschakeling"
+      ],
+      "c": 1,
+      "d": 3,
+      "u": "«Wet van Ohm»: het verband tussen spanning, stroom en weerstand (U = I × R).",
+      "uo": [
+       "«Vermogen» betekent energie per seconde.",
+       "Klopt, dit is «Wet van Ohm».",
+       "«Parallelschakeling» betekent takken naast elkaar.",
+       "«Serieschakeling» betekent één stroomweg."
+      ],
+      "uh": "Onthoud: «Wet van Ohm» = U is I maal R."
+     },
+     {
+      "v": "Welke term hoort bij \"U is I maal R\"?",
+      "o": [
+       "Parallelschakeling",
+       "Serieschakeling",
+       "Wet van Ohm",
+       "Stroomsterkte"
+      ],
+      "c": 2,
+      "d": 2,
+      "u": "«Wet van Ohm»: het verband tussen spanning, stroom en weerstand (U = I × R).",
+      "uo": [
+       "«Parallelschakeling» betekent takken naast elkaar.",
+       "«Serieschakeling» betekent één stroomweg.",
+       "Klopt, «Wet van Ohm» past hierbij.",
+       "«Stroomsterkte» betekent lading per seconde."
+      ],
+      "uh": "Onthoud: «Wet van Ohm» = U is I maal R."
+     },
+     {
+      "v": "Wat betekent «Parallelschakeling»?",
+      "o": [
+       "een schakeling waarin de stroom maar één weg heeft",
+       "de mate waarin een component de stroom tegenwerkt, in ohm",
+       "een beveiliging die de stroom onderbreekt bij te veel stroom",
+       "een schakeling met meerdere takken naast elkaar"
+      ],
+      "c": 3,
+      "d": 1,
+      "u": "«Parallelschakeling»: een schakeling met meerdere takken naast elkaar.",
+      "uo": [
+       "Dat is «Serieschakeling».",
+       "Dat is «Weerstand».",
+       "Dat is «Zekering».",
+       "Klopt: takken naast elkaar."
+      ],
+      "uh": "Onthoud: «Parallelschakeling» = takken naast elkaar."
+     },
+     {
+      "v": "Welk begrip hoort bij: \"een schakeling waarin de stroom maar één weg heeft\"?",
+      "o": [
+       "Serieschakeling",
+       "Parallelschakeling",
+       "Wet van Ohm",
+       "Vermogen"
+      ],
+      "c": 0,
+      "d": 3,
+      "u": "«Serieschakeling»: een schakeling waarin de stroom maar één weg heeft.",
+      "uo": [
+       "Klopt, dit is «Serieschakeling».",
+       "«Parallelschakeling» betekent takken naast elkaar.",
+       "«Wet van Ohm» betekent U is I maal R.",
+       "«Vermogen» betekent energie per seconde."
+      ],
+      "uh": "Onthoud: «Serieschakeling» = één stroomweg."
+     },
+     {
+      "v": "Welke term hoort bij \"één stroomweg\"?",
+      "o": [
+       "Wet van Ohm",
+       "Serieschakeling",
+       "Vermogen",
+       "Elektrische energie"
+      ],
+      "c": 1,
+      "d": 2,
+      "u": "«Serieschakeling»: een schakeling waarin de stroom maar één weg heeft.",
+      "uo": [
+       "«Wet van Ohm» betekent U is I maal R.",
+       "Klopt, «Serieschakeling» past hierbij.",
+       "«Vermogen» betekent energie per seconde.",
+       "«Elektrische energie» betekent gebruikte energie."
+      ],
+      "uh": "Onthoud: «Serieschakeling» = één stroomweg."
+     },
+     {
+      "v": "Wat betekent «Vermogen»?",
+      "o": [
+       "de energie die een apparaat gebruikt in een bepaalde tijd",
+       "een verbinding met heel weinig weerstand",
+       "de energie die per seconde wordt omgezet, in watt",
+       "een beveiliging die de stroom onderbreekt bij te veel stroom"
+      ],
+      "c": 2,
+      "d": 1,
+      "u": "«Vermogen»: de energie die per seconde wordt omgezet, in watt.",
+      "uo": [
+       "Dat is «Elektrische energie».",
+       "Dat is «Kortsluiting».",
+       "Klopt: energie per seconde.",
+       "Dat is «Zekering»."
+      ],
+      "uh": "Onthoud: «Vermogen» = energie per seconde."
+     },
+     {
+      "v": "Welk begrip hoort bij: \"de energie die per seconde wordt omgezet, in watt\"?",
+      "o": [
+       "Elektrische energie",
+       "Kortsluiting",
+       "Zekering",
+       "Vermogen"
+      ],
+      "c": 3,
+      "d": 3,
+      "u": "«Vermogen»: de energie die per seconde wordt omgezet, in watt.",
+      "uo": [
+       "«Elektrische energie» betekent gebruikte energie.",
+       "«Kortsluiting» betekent te weinig weerstand.",
+       "«Zekering» betekent beveiliging tegen te veel stroom.",
+       "Klopt, dit is «Vermogen»."
+      ],
+      "uh": "Onthoud: «Vermogen» = energie per seconde."
+     },
+     {
+      "v": "Welke term hoort bij \"energie per seconde\"?",
+      "o": [
+       "Vermogen",
+       "Kortsluiting",
+       "Zekering",
+       "Stroomsterkte"
+      ],
+      "c": 0,
+      "d": 2,
+      "u": "«Vermogen»: de energie die per seconde wordt omgezet, in watt.",
+      "uo": [
+       "Klopt, «Vermogen» past hierbij.",
+       "«Kortsluiting» betekent te weinig weerstand.",
+       "«Zekering» betekent beveiliging tegen te veel stroom.",
+       "«Stroomsterkte» betekent lading per seconde."
+      ],
+      "uh": "Onthoud: «Vermogen» = energie per seconde."
+     },
+     {
+      "v": "Wat betekent «Geleider»?",
+      "o": [
+       "een materiaal dat de stroom niet doorlaat",
+       "een materiaal dat de stroom goed doorlaat",
+       "een verbinding met heel weinig weerstand",
+       "een beveiliging die de stroom onderbreekt bij te veel stroom"
+      ],
+      "c": 1,
+      "d": 1,
+      "u": "«Geleider»: een materiaal dat de stroom goed doorlaat.",
+      "uo": [
+       "Dat is «Isolator».",
+       "Klopt: laat stroom door.",
+       "Dat is «Kortsluiting».",
+       "Dat is «Zekering»."
+      ],
+      "uh": "Onthoud: «Geleider» = laat stroom door."
+     },
+     {
+      "v": "Welk begrip hoort bij: \"een materiaal dat de stroom goed doorlaat\"?",
+      "o": [
+       "Isolator",
+       "Kortsluiting",
+       "Geleider",
+       "Zekering"
+      ],
+      "c": 2,
+      "d": 3,
+      "u": "«Geleider»: een materiaal dat de stroom goed doorlaat.",
+      "uo": [
+       "«Isolator» betekent laat geen stroom door.",
+       "«Kortsluiting» betekent te weinig weerstand.",
+       "Klopt, dit is «Geleider».",
+       "«Zekering» betekent beveiliging tegen te veel stroom."
+      ],
+      "uh": "Onthoud: «Geleider» = laat stroom door."
+     },
+     {
+      "v": "Welke term hoort bij \"laat stroom door\"?",
+      "o": [
+       "Kortsluiting",
+       "Zekering",
+       "Stroomsterkte",
+       "Geleider"
+      ],
+      "c": 3,
+      "d": 2,
+      "u": "«Geleider»: een materiaal dat de stroom goed doorlaat.",
+      "uo": [
+       "«Kortsluiting» betekent te weinig weerstand.",
+       "«Zekering» betekent beveiliging tegen te veel stroom.",
+       "«Stroomsterkte» betekent lading per seconde.",
+       "Klopt, «Geleider» past hierbij."
+      ],
+      "uh": "Onthoud: «Geleider» = laat stroom door."
+     },
+     {
+      "v": "Wat betekent «Isolator»?",
+      "o": [
+       "een materiaal dat de stroom niet doorlaat",
+       "een materiaal dat de stroom goed doorlaat",
+       "een verbinding met heel weinig weerstand",
+       "een beveiliging die de stroom onderbreekt bij te veel stroom"
+      ],
+      "c": 0,
+      "d": 1,
+      "u": "«Isolator»: een materiaal dat de stroom niet doorlaat.",
+      "uo": [
+       "Klopt: laat geen stroom door.",
+       "Dat is «Geleider».",
+       "Dat is «Kortsluiting».",
+       "Dat is «Zekering»."
+      ],
+      "uh": "Onthoud: «Isolator» = laat geen stroom door."
+     },
+     {
+      "v": "Welk begrip hoort bij: \"een materiaal dat de stroom niet doorlaat\"?",
+      "o": [
+       "Geleider",
+       "Isolator",
+       "Kortsluiting",
+       "Zekering"
+      ],
+      "c": 1,
+      "d": 3,
+      "u": "«Isolator»: een materiaal dat de stroom niet doorlaat.",
+      "uo": [
+       "«Geleider» betekent laat stroom door.",
+       "Klopt, dit is «Isolator».",
+       "«Kortsluiting» betekent te weinig weerstand.",
+       "«Zekering» betekent beveiliging tegen te veel stroom."
+      ],
+      "uh": "Onthoud: «Isolator» = laat geen stroom door."
+     },
+     {
+      "v": "Welke term hoort bij \"laat geen stroom door\"?",
+      "o": [
+       "Kortsluiting",
+       "Zekering",
+       "Isolator",
+       "Stroomsterkte"
+      ],
+      "c": 2,
+      "d": 2,
+      "u": "«Isolator»: een materiaal dat de stroom niet doorlaat.",
+      "uo": [
+       "«Kortsluiting» betekent te weinig weerstand.",
+       "«Zekering» betekent beveiliging tegen te veel stroom.",
+       "Klopt, «Isolator» past hierbij.",
+       "«Stroomsterkte» betekent lading per seconde."
+      ],
+      "uh": "Onthoud: «Isolator» = laat geen stroom door."
+     },
+     {
+      "v": "Wat betekent «Kortsluiting»?",
+      "o": [
+       "een beveiliging die de stroom onderbreekt bij te veel stroom",
+       "een schakeling met meerdere takken naast elkaar",
+       "een schakeling waarin de stroom maar één weg heeft",
+       "een verbinding met heel weinig weerstand"
+      ],
+      "c": 3,
+      "d": 1,
+      "u": "«Kortsluiting»: een verbinding met heel weinig weerstand.",
+      "uo": [
+       "Dat is «Zekering».",
+       "Dat is «Parallelschakeling».",
+       "Dat is «Serieschakeling».",
+       "Klopt: te weinig weerstand."
+      ],
+      "uh": "Onthoud: «Kortsluiting» = te weinig weerstand."
+     },
+     {
+      "v": "Welk begrip hoort bij: \"een verbinding met heel weinig weerstand\"?",
+      "o": [
+       "Kortsluiting",
+       "Zekering",
+       "Parallelschakeling",
+       "Serieschakeling"
+      ],
+      "c": 0,
+      "d": 3,
+      "u": "«Kortsluiting»: een verbinding met heel weinig weerstand.",
+      "uo": [
+       "Klopt, dit is «Kortsluiting».",
+       "«Zekering» betekent beveiliging tegen te veel stroom.",
+       "«Parallelschakeling» betekent takken naast elkaar.",
+       "«Serieschakeling» betekent één stroomweg."
+      ],
+      "uh": "Onthoud: «Kortsluiting» = te weinig weerstand."
+     },
+     {
+      "v": "Welke term hoort bij \"te weinig weerstand\"?",
+      "o": [
+       "Parallelschakeling",
+       "Kortsluiting",
+       "Serieschakeling",
+       "Stroomsterkte"
+      ],
+      "c": 1,
+      "d": 2,
+      "u": "«Kortsluiting»: een verbinding met heel weinig weerstand.",
+      "uo": [
+       "«Parallelschakeling» betekent takken naast elkaar.",
+       "Klopt, «Kortsluiting» past hierbij.",
+       "«Serieschakeling» betekent één stroomweg.",
+       "«Stroomsterkte» betekent lading per seconde."
+      ],
+      "uh": "Onthoud: «Kortsluiting» = te weinig weerstand."
+     }
+    ],
+    "begrippen": [
+     {
+      "t": "Stroomsterkte",
+      "d": "de hoeveelheid lading die per seconde stroomt, in ampère"
+     },
+     {
+      "t": "Spanning",
+      "d": "de duw die de stroom veroorzaakt, in volt"
+     },
+     {
+      "t": "Weerstand",
+      "d": "de mate waarin een component de stroom tegenwerkt, in ohm"
+     },
+     {
+      "t": "Wet van Ohm",
+      "d": "het verband tussen spanning, stroom en weerstand (U = I × R)"
+     },
+     {
+      "t": "Serieschakeling",
+      "d": "een schakeling waarin de stroom maar één weg heeft"
+     },
+     {
+      "t": "Parallelschakeling",
+      "d": "een schakeling met meerdere takken naast elkaar"
+     },
+     {
+      "t": "Vermogen",
+      "d": "de energie die per seconde wordt omgezet, in watt"
+     },
+     {
+      "t": "Elektrische energie",
+      "d": "de energie die een apparaat gebruikt in een bepaalde tijd"
+     },
+     {
+      "t": "Geleider",
+      "d": "een materiaal dat de stroom goed doorlaat"
+     },
+     {
+      "t": "Isolator",
+      "d": "een materiaal dat de stroom niet doorlaat"
+     },
+     {
+      "t": "Kortsluiting",
+      "d": "een verbinding met heel weinig weerstand"
+     },
+     {
+      "t": "Zekering",
+      "d": "een beveiliging die de stroom onderbreekt bij te veel stroom"
+     }
+    ],
+    "sam": "<p>In een stroomkring hoort bij een <b>spanning</b> een <b>stroomsterkte</b> en een <b>weerstand</b>, verbonden door de <b>wet van Ohm</b> (U = I × R). In een <b>serieschakeling</b> heeft de stroom één weg, in een <b>parallelschakeling</b> meerdere. Het <b>vermogen</b> is de energie per seconde.</p>"
    },
    {
     "id": "C",
@@ -449,7 +1551,554 @@ var VAKKEN_VMBO = [
     ],
     "nSv": 0,
     "nOe": 0,
-    "nBeg": 0
+    "nBeg": 0,
+    "sv": [
+     {
+      "v": "Welk begrip hoort bij: \"warmtetransport doordat een vloeistof of gas beweegt\"?",
+      "o": [
+       "Warmtestroming",
+       "Warmtegeleiding",
+       "Warmtestraling",
+       "Warmtegeleider"
+      ],
+      "c": 0,
+      "d": 3,
+      "u": "«Warmtestroming»: warmtetransport doordat een vloeistof of gas beweegt.",
+      "uo": [
+       "Klopt, dit is «Warmtestroming».",
+       "«Warmtegeleiding» betekent warmte door een stof.",
+       "«Warmtestraling» betekent warmte via straling.",
+       "«Warmtegeleider» betekent laat warmte door."
+      ],
+      "uh": "Onthoud: «Warmtestroming» = warmte met bewegende stof."
+     },
+     {
+      "v": "Welke term hoort bij \"warmte met bewegende stof\"?",
+      "o": [
+       "Warmtegeleider",
+       "Warmtestroming",
+       "Convectie",
+       "Rendement"
+      ],
+      "c": 1,
+      "d": 2,
+      "u": "«Warmtestroming»: warmtetransport doordat een vloeistof of gas beweegt.",
+      "uo": [
+       "«Warmtegeleider» betekent laat warmte door.",
+       "Klopt, «Warmtestroming» past hierbij.",
+       "«Convectie» betekent stroming van warmte.",
+       "«Rendement» betekent nuttig deel van de energie."
+      ],
+      "uh": "Onthoud: «Warmtestroming» = warmte met bewegende stof."
+     },
+     {
+      "v": "Wat betekent «Warmtestroming»?",
+      "o": [
+       "warmtetransport door een stof zonder dat de stof zelf beweegt",
+       "warmtetransport via straling, zonder tussenstof",
+       "warmtetransport doordat een vloeistof of gas beweegt",
+       "een materiaal dat warmte goed doorlaat"
+      ],
+      "c": 2,
+      "d": 1,
+      "u": "«Warmtestroming»: warmtetransport doordat een vloeistof of gas beweegt.",
+      "uo": [
+       "Dat is «Warmtegeleiding».",
+       "Dat is «Warmtestraling».",
+       "Klopt: warmte met bewegende stof.",
+       "Dat is «Warmtegeleider»."
+      ],
+      "uh": "Onthoud: «Warmtestroming» = warmte met bewegende stof."
+     },
+     {
+      "v": "Welk begrip hoort bij: \"warmtetransport via straling, zonder tussenstof\"?",
+      "o": [
+       "Warmtegeleiding",
+       "Warmtestroming",
+       "Warmtegeleider",
+       "Warmtestraling"
+      ],
+      "c": 3,
+      "d": 3,
+      "u": "«Warmtestraling»: warmtetransport via straling, zonder tussenstof.",
+      "uo": [
+       "«Warmtegeleiding» betekent warmte door een stof.",
+       "«Warmtestroming» betekent warmte met bewegende stof.",
+       "«Warmtegeleider» betekent laat warmte door.",
+       "Klopt, dit is «Warmtestraling»."
+      ],
+      "uh": "Onthoud: «Warmtestraling» = warmte via straling."
+     },
+     {
+      "v": "Welke term hoort bij \"warmte via straling\"?",
+      "o": [
+       "Warmtestraling",
+       "Warmtegeleider",
+       "Convectie",
+       "Rendement"
+      ],
+      "c": 0,
+      "d": 2,
+      "u": "«Warmtestraling»: warmtetransport via straling, zonder tussenstof.",
+      "uo": [
+       "Klopt, «Warmtestraling» past hierbij.",
+       "«Warmtegeleider» betekent laat warmte door.",
+       "«Convectie» betekent stroming van warmte.",
+       "«Rendement» betekent nuttig deel van de energie."
+      ],
+      "uh": "Onthoud: «Warmtestraling» = warmte via straling."
+     },
+     {
+      "v": "Wat betekent «Warmtestraling»?",
+      "o": [
+       "warmtetransport door een stof zonder dat de stof zelf beweegt",
+       "warmtetransport via straling, zonder tussenstof",
+       "warmtetransport doordat een vloeistof of gas beweegt",
+       "een materiaal dat warmte goed doorlaat"
+      ],
+      "c": 1,
+      "d": 1,
+      "u": "«Warmtestraling»: warmtetransport via straling, zonder tussenstof.",
+      "uo": [
+       "Dat is «Warmtegeleiding».",
+       "Klopt: warmte via straling.",
+       "Dat is «Warmtestroming».",
+       "Dat is «Warmtegeleider»."
+      ],
+      "uh": "Onthoud: «Warmtestraling» = warmte via straling."
+     },
+     {
+      "v": "Welk begrip hoort bij: \"het tegenhouden van warmtetransport\"?",
+      "o": [
+       "Warmtegeleiding",
+       "Rendement",
+       "Isolatie",
+       "Convectie"
+      ],
+      "c": 2,
+      "d": 3,
+      "u": "«Isolatie»: het tegenhouden van warmtetransport.",
+      "uo": [
+       "«Warmtegeleiding» betekent warmte door een stof.",
+       "«Rendement» betekent nuttig deel van de energie.",
+       "Klopt, dit is «Isolatie».",
+       "«Convectie» betekent stroming van warmte."
+      ],
+      "uh": "Onthoud: «Isolatie» = warmte tegenhouden."
+     },
+     {
+      "v": "Welke term hoort bij \"warmte tegenhouden\"?",
+      "o": [
+       "Rendement",
+       "Convectie",
+       "Warmtestroming",
+       "Isolatie"
+      ],
+      "c": 3,
+      "d": 2,
+      "u": "«Isolatie»: het tegenhouden van warmtetransport.",
+      "uo": [
+       "«Rendement» betekent nuttig deel van de energie.",
+       "«Convectie» betekent stroming van warmte.",
+       "«Warmtestroming» betekent warmte met bewegende stof.",
+       "Klopt, «Isolatie» past hierbij."
+      ],
+      "uh": "Onthoud: «Isolatie» = warmte tegenhouden."
+     },
+     {
+      "v": "Wat betekent «Isolatie»?",
+      "o": [
+       "het tegenhouden van warmtetransport",
+       "warmtetransport door een stof zonder dat de stof zelf beweegt",
+       "het deel van de energie dat nuttig wordt gebruikt",
+       "een andere naam voor warmtestroming in vloeistof of gas"
+      ],
+      "c": 0,
+      "d": 1,
+      "u": "«Isolatie»: het tegenhouden van warmtetransport.",
+      "uo": [
+       "Klopt: warmte tegenhouden.",
+       "Dat is «Warmtegeleiding».",
+       "Dat is «Rendement».",
+       "Dat is «Convectie»."
+      ],
+      "uh": "Onthoud: «Isolatie» = warmte tegenhouden."
+     },
+     {
+      "v": "Welk begrip hoort bij: \"een stof die je verbrandt om energie te krijgen\"?",
+      "o": [
+       "Zuurstof",
+       "Brandstof",
+       "Rendement",
+       "Soortelijke warmte"
+      ],
+      "c": 1,
+      "d": 3,
+      "u": "«Brandstof»: een stof die je verbrandt om energie te krijgen.",
+      "uo": [
+       "«Zuurstof» betekent nodig voor verbranden.",
+       "Klopt, dit is «Brandstof».",
+       "«Rendement» betekent nuttig deel van de energie.",
+       "«Soortelijke warmte» betekent warmte per kg per graad."
+      ],
+      "uh": "Onthoud: «Brandstof» = stof die je verbrandt."
+     },
+     {
+      "v": "Welke term hoort bij \"reactie met zuurstof\"?",
+      "o": [
+       "Zuurstof",
+       "Brandstof",
+       "Verbranding",
+       "Warmtegeleiding"
+      ],
+      "c": 2,
+      "d": 2,
+      "u": "«Verbranding»: een reactie met zuurstof waarbij warmte vrijkomt.",
+      "uo": [
+       "«Zuurstof» betekent nodig voor verbranden.",
+       "«Brandstof» betekent stof die je verbrandt.",
+       "Klopt, «Verbranding» past hierbij.",
+       "«Warmtegeleiding» betekent warmte door een stof."
+      ],
+      "uh": "Onthoud: «Verbranding» = reactie met zuurstof."
+     },
+     {
+      "v": "Wat betekent «Brandstof»?",
+      "o": [
+       "het gas dat nodig is voor verbranding",
+       "het deel van de energie dat nuttig wordt gebruikt",
+       "de warmte om één kilogram van een stof één graad op te warmen",
+       "een stof die je verbrandt om energie te krijgen"
+      ],
+      "c": 3,
+      "d": 1,
+      "u": "«Brandstof»: een stof die je verbrandt om energie te krijgen.",
+      "uo": [
+       "Dat is «Zuurstof».",
+       "Dat is «Rendement».",
+       "Dat is «Soortelijke warmte».",
+       "Klopt: stof die je verbrandt."
+      ],
+      "uh": "Onthoud: «Brandstof» = stof die je verbrandt."
+     },
+     {
+      "v": "Welk begrip hoort bij: \"het gas dat nodig is voor verbranding\"?",
+      "o": [
+       "Zuurstof",
+       "Brandstof",
+       "Rendement",
+       "Convectie"
+      ],
+      "c": 0,
+      "d": 3,
+      "u": "«Zuurstof»: het gas dat nodig is voor verbranding.",
+      "uo": [
+       "Klopt, dit is «Zuurstof».",
+       "«Brandstof» betekent stof die je verbrandt.",
+       "«Rendement» betekent nuttig deel van de energie.",
+       "«Convectie» betekent stroming van warmte."
+      ],
+      "uh": "Onthoud: «Zuurstof» = nodig voor verbranden."
+     },
+     {
+      "v": "Welke term hoort bij \"stof die je verbrandt\"?",
+      "o": [
+       "Rendement",
+       "Brandstof",
+       "Soortelijke warmte",
+       "Warmtegeleider"
+      ],
+      "c": 1,
+      "d": 2,
+      "u": "«Brandstof»: een stof die je verbrandt om energie te krijgen.",
+      "uo": [
+       "«Rendement» betekent nuttig deel van de energie.",
+       "Klopt, «Brandstof» past hierbij.",
+       "«Soortelijke warmte» betekent warmte per kg per graad.",
+       "«Warmtegeleider» betekent laat warmte door."
+      ],
+      "uh": "Onthoud: «Brandstof» = stof die je verbrandt."
+     },
+     {
+      "v": "Wat betekent «Zuurstof»?",
+      "o": [
+       "een stof die je verbrandt om energie te krijgen",
+       "het deel van de energie dat nuttig wordt gebruikt",
+       "het gas dat nodig is voor verbranding",
+       "een andere naam voor warmtestroming in vloeistof of gas"
+      ],
+      "c": 2,
+      "d": 1,
+      "u": "«Zuurstof»: het gas dat nodig is voor verbranding.",
+      "uo": [
+       "Dat is «Brandstof».",
+       "Dat is «Rendement».",
+       "Klopt: nodig voor verbranden.",
+       "Dat is «Convectie»."
+      ],
+      "uh": "Onthoud: «Zuurstof» = nodig voor verbranden."
+     },
+     {
+      "v": "Welk begrip hoort bij: \"een materiaal dat warmte goed doorlaat\"?",
+      "o": [
+       "Warmte-isolator",
+       "Isolatie",
+       "Convectie",
+       "Warmtegeleider"
+      ],
+      "c": 3,
+      "d": 3,
+      "u": "«Warmtegeleider»: een materiaal dat warmte goed doorlaat.",
+      "uo": [
+       "«Warmte-isolator» betekent houdt warmte tegen.",
+       "«Isolatie» betekent warmte tegenhouden.",
+       "«Convectie» betekent stroming van warmte.",
+       "Klopt, dit is «Warmtegeleider»."
+      ],
+      "uh": "Onthoud: «Warmtegeleider» = laat warmte door."
+     },
+     {
+      "v": "Welke term hoort bij \"nodig voor verbranden\"?",
+      "o": [
+       "Zuurstof",
+       "Rendement",
+       "Convectie",
+       "Warmtegeleiding"
+      ],
+      "c": 0,
+      "d": 2,
+      "u": "«Zuurstof»: het gas dat nodig is voor verbranding.",
+      "uo": [
+       "Klopt, «Zuurstof» past hierbij.",
+       "«Rendement» betekent nuttig deel van de energie.",
+       "«Convectie» betekent stroming van warmte.",
+       "«Warmtegeleiding» betekent warmte door een stof."
+      ],
+      "uh": "Onthoud: «Zuurstof» = nodig voor verbranden."
+     },
+     {
+      "v": "Wat betekent «Warmtegeleider»?",
+      "o": [
+       "een materiaal dat warmte slecht doorlaat",
+       "een materiaal dat warmte goed doorlaat",
+       "het tegenhouden van warmtetransport",
+       "een andere naam voor warmtestroming in vloeistof of gas"
+      ],
+      "c": 1,
+      "d": 1,
+      "u": "«Warmtegeleider»: een materiaal dat warmte goed doorlaat.",
+      "uo": [
+       "Dat is «Warmte-isolator».",
+       "Klopt: laat warmte door.",
+       "Dat is «Isolatie».",
+       "Dat is «Convectie»."
+      ],
+      "uh": "Onthoud: «Warmtegeleider» = laat warmte door."
+     },
+     {
+      "v": "Welk begrip hoort bij: \"het deel van de energie dat nuttig wordt gebruikt\"?",
+      "o": [
+       "Soortelijke warmte",
+       "Warmte-isolator",
+       "Rendement",
+       "Brandstof"
+      ],
+      "c": 2,
+      "d": 3,
+      "u": "«Rendement»: het deel van de energie dat nuttig wordt gebruikt.",
+      "uo": [
+       "«Soortelijke warmte» betekent warmte per kg per graad.",
+       "«Warmte-isolator» betekent houdt warmte tegen.",
+       "Klopt, dit is «Rendement».",
+       "«Brandstof» betekent stof die je verbrandt."
+      ],
+      "uh": "Onthoud: «Rendement» = nuttig deel van de energie."
+     },
+     {
+      "v": "Welke term hoort bij \"nuttig deel van de energie\"?",
+      "o": [
+       "Warmte-isolator",
+       "Brandstof",
+       "Zuurstof",
+       "Rendement"
+      ],
+      "c": 3,
+      "d": 2,
+      "u": "«Rendement»: het deel van de energie dat nuttig wordt gebruikt.",
+      "uo": [
+       "«Warmte-isolator» betekent houdt warmte tegen.",
+       "«Brandstof» betekent stof die je verbrandt.",
+       "«Zuurstof» betekent nodig voor verbranden.",
+       "Klopt, «Rendement» past hierbij."
+      ],
+      "uh": "Onthoud: «Rendement» = nuttig deel van de energie."
+     },
+     {
+      "v": "Wat betekent «Warmte-isolator»?",
+      "o": [
+       "een materiaal dat warmte slecht doorlaat",
+       "een materiaal dat warmte goed doorlaat",
+       "het tegenhouden van warmtetransport",
+       "een reactie met zuurstof waarbij warmte vrijkomt"
+      ],
+      "c": 0,
+      "d": 1,
+      "u": "«Warmte-isolator»: een materiaal dat warmte slecht doorlaat.",
+      "uo": [
+       "Klopt: houdt warmte tegen.",
+       "Dat is «Warmtegeleider».",
+       "Dat is «Isolatie».",
+       "Dat is «Verbranding»."
+      ],
+      "uh": "Onthoud: «Warmte-isolator» = houdt warmte tegen."
+     },
+     {
+      "v": "Welk begrip hoort bij: \"een andere naam voor warmtestroming in vloeistof of gas\"?",
+      "o": [
+       "Warmtestroming",
+       "Convectie",
+       "Warmte-isolator",
+       "Zuurstof"
+      ],
+      "c": 1,
+      "d": 3,
+      "u": "«Convectie»: een andere naam voor warmtestroming in vloeistof of gas.",
+      "uo": [
+       "«Warmtestroming» betekent warmte met bewegende stof.",
+       "Klopt, dit is «Convectie».",
+       "«Warmte-isolator» betekent houdt warmte tegen.",
+       "«Zuurstof» betekent nodig voor verbranden."
+      ],
+      "uh": "Onthoud: «Convectie» = stroming van warmte."
+     },
+     {
+      "v": "Welke term hoort bij \"stroming van warmte\"?",
+      "o": [
+       "Warmte-isolator",
+       "Zuurstof",
+       "Convectie",
+       "Soortelijke warmte"
+      ],
+      "c": 2,
+      "d": 2,
+      "u": "«Convectie»: een andere naam voor warmtestroming in vloeistof of gas.",
+      "uo": [
+       "«Warmte-isolator» betekent houdt warmte tegen.",
+       "«Zuurstof» betekent nodig voor verbranden.",
+       "Klopt, «Convectie» past hierbij.",
+       "«Soortelijke warmte» betekent warmte per kg per graad."
+      ],
+      "uh": "Onthoud: «Convectie» = stroming van warmte."
+     },
+     {
+      "v": "Wat betekent «Rendement»?",
+      "o": [
+       "de warmte om één kilogram van een stof één graad op te warmen",
+       "een materiaal dat warmte slecht doorlaat",
+       "een stof die je verbrandt om energie te krijgen",
+       "het deel van de energie dat nuttig wordt gebruikt"
+      ],
+      "c": 3,
+      "d": 1,
+      "u": "«Rendement»: het deel van de energie dat nuttig wordt gebruikt.",
+      "uo": [
+       "Dat is «Soortelijke warmte».",
+       "Dat is «Warmte-isolator».",
+       "Dat is «Brandstof».",
+       "Klopt: nuttig deel van de energie."
+      ],
+      "uh": "Onthoud: «Rendement» = nuttig deel van de energie."
+     },
+     {
+      "v": "Welk begrip hoort bij: \"warmtetransport door een stof zonder dat de stof zelf beweegt\"?",
+      "o": [
+       "Warmtegeleiding",
+       "Warmtestroming",
+       "Warmtestraling",
+       "Warmtegeleider"
+      ],
+      "c": 0,
+      "d": 3,
+      "u": "«Warmtegeleiding»: warmtetransport door een stof zonder dat de stof zelf beweegt.",
+      "uo": [
+       "Klopt, dit is «Warmtegeleiding».",
+       "«Warmtestroming» betekent warmte met bewegende stof.",
+       "«Warmtestraling» betekent warmte via straling.",
+       "«Warmtegeleider» betekent laat warmte door."
+      ],
+      "uh": "Onthoud: «Warmtegeleiding» = warmte door een stof."
+     },
+     {
+      "v": "Welke term hoort bij \"warmte door een stof\"?",
+      "o": [
+       "Warmtegeleider",
+       "Warmtegeleiding",
+       "Zuurstof",
+       "Brandstof"
+      ],
+      "c": 1,
+      "d": 2,
+      "u": "«Warmtegeleiding»: warmtetransport door een stof zonder dat de stof zelf beweegt.",
+      "uo": [
+       "«Warmtegeleider» betekent laat warmte door.",
+       "Klopt, «Warmtegeleiding» past hierbij.",
+       "«Zuurstof» betekent nodig voor verbranden.",
+       "«Brandstof» betekent stof die je verbrandt."
+      ],
+      "uh": "Onthoud: «Warmtegeleiding» = warmte door een stof."
+     }
+    ],
+    "begrippen": [
+     {
+      "t": "Warmtegeleiding",
+      "d": "warmtetransport door een stof zonder dat de stof zelf beweegt"
+     },
+     {
+      "t": "Warmtestroming",
+      "d": "warmtetransport doordat een vloeistof of gas beweegt"
+     },
+     {
+      "t": "Warmtestraling",
+      "d": "warmtetransport via straling, zonder tussenstof"
+     },
+     {
+      "t": "Isolatie",
+      "d": "het tegenhouden van warmtetransport"
+     },
+     {
+      "t": "Verbranding",
+      "d": "een reactie met zuurstof waarbij warmte vrijkomt"
+     },
+     {
+      "t": "Brandstof",
+      "d": "een stof die je verbrandt om energie te krijgen"
+     },
+     {
+      "t": "Zuurstof",
+      "d": "het gas dat nodig is voor verbranding"
+     },
+     {
+      "t": "Soortelijke warmte",
+      "d": "de warmte om één kilogram van een stof één graad op te warmen"
+     },
+     {
+      "t": "Warmtegeleider",
+      "d": "een materiaal dat warmte goed doorlaat"
+     },
+     {
+      "t": "Warmte-isolator",
+      "d": "een materiaal dat warmte slecht doorlaat"
+     },
+     {
+      "t": "Rendement",
+      "d": "het deel van de energie dat nuttig wordt gebruikt"
+     },
+     {
+      "t": "Convectie",
+      "d": "een andere naam voor warmtestroming in vloeistof of gas"
+     }
+    ],
+    "sam": "<p>Warmte gaat over door <b>geleiding</b>, <b>stroming</b> of <b>straling</b>. Met <b>isolatie</b> houd je warmtetransport tegen. Bij <b>verbranding</b> reageert een <b>brandstof</b> met <b>zuurstof</b> en komt er warmte vrij. De <b>soortelijke warmte</b> zegt hoeveel warmte een stof nodig heeft om op te warmen.</p>"
    },
    {
     "id": "D",
@@ -464,7 +2113,554 @@ var VAKKEN_VMBO = [
     ],
     "nSv": 0,
     "nOe": 0,
-    "nBeg": 0
+    "nBeg": 0,
+    "sv": [
+     {
+      "v": "Welk begrip hoort bij: \"een rechte lijn die de richting van het licht aangeeft\"?",
+      "o": [
+       "Lichtstraal",
+       "Lichtbreking",
+       "Brandpunt",
+       "Holle lens"
+      ],
+      "c": 0,
+      "d": 3,
+      "u": "«Lichtstraal»: een rechte lijn die de richting van het licht aangeeft.",
+      "uo": [
+       "Klopt, dit is «Lichtstraal».",
+       "«Lichtbreking» betekent licht verandert richting.",
+       "«Brandpunt» betekent punt waar licht samenkomt.",
+       "«Holle lens» betekent spreidt licht."
+      ],
+      "uh": "Onthoud: «Lichtstraal» = richting van licht."
+     },
+     {
+      "v": "Welke term hoort bij \"licht kaatst terug\"?",
+      "o": [
+       "Lens",
+       "Spiegeling",
+       "Lichtstraal",
+       "Beeld"
+      ],
+      "c": 1,
+      "d": 2,
+      "u": "«Spiegeling»: het terugkaatsen van licht door een spiegel.",
+      "uo": [
+       "«Lens» betekent bundelt of spreidt licht.",
+       "Klopt, «Spiegeling» past hierbij.",
+       "«Lichtstraal» betekent richting van licht.",
+       "«Beeld» betekent afbeelding via lens/spiegel."
+      ],
+      "uh": "Onthoud: «Spiegeling» = licht kaatst terug."
+     },
+     {
+      "v": "Wat betekent «Lichtstraal»?",
+      "o": [
+       "het veranderen van richting van licht bij overgang naar een andere stof",
+       "het punt waar een bolle lens evenwijdige stralen samenbrengt",
+       "een rechte lijn die de richting van het licht aangeeft",
+       "een lens die lichtstralen uit elkaar laat gaan"
+      ],
+      "c": 2,
+      "d": 1,
+      "u": "«Lichtstraal»: een rechte lijn die de richting van het licht aangeeft.",
+      "uo": [
+       "Dat is «Lichtbreking».",
+       "Dat is «Brandpunt».",
+       "Klopt: richting van licht.",
+       "Dat is «Holle lens»."
+      ],
+      "uh": "Onthoud: «Lichtstraal» = richting van licht."
+     },
+     {
+      "v": "Welk begrip hoort bij: \"het terugkaatsen van licht door een spiegel\"?",
+      "o": [
+       "Lichtbreking",
+       "Lens",
+       "Lichtstraal",
+       "Spiegeling"
+      ],
+      "c": 3,
+      "d": 3,
+      "u": "«Spiegeling»: het terugkaatsen van licht door een spiegel.",
+      "uo": [
+       "«Lichtbreking» betekent licht verandert richting.",
+       "«Lens» betekent bundelt of spreidt licht.",
+       "«Lichtstraal» betekent richting van licht.",
+       "Klopt, dit is «Spiegeling»."
+      ],
+      "uh": "Onthoud: «Spiegeling» = licht kaatst terug."
+     },
+     {
+      "v": "Welke term hoort bij \"bundelt of spreidt licht\"?",
+      "o": [
+       "Lens",
+       "Invalshoek",
+       "Brandpunt",
+       "Terugkaatsing"
+      ],
+      "c": 0,
+      "d": 2,
+      "u": "«Lens»: een doorzichtig voorwerp dat licht bundelt of spreidt.",
+      "uo": [
+       "Klopt, «Lens» past hierbij.",
+       "«Invalshoek» betekent hoek van inval.",
+       "«Brandpunt» betekent punt waar licht samenkomt.",
+       "«Terugkaatsing» betekent licht weerkaatst."
+      ],
+      "uh": "Onthoud: «Lens» = bundelt of spreidt licht."
+     },
+     {
+      "v": "Wat betekent «Spiegeling»?",
+      "o": [
+       "het veranderen van richting van licht bij overgang naar een andere stof",
+       "het terugkaatsen van licht door een spiegel",
+       "een doorzichtig voorwerp dat licht bundelt of spreidt",
+       "een rechte lijn die de richting van het licht aangeeft"
+      ],
+      "c": 1,
+      "d": 1,
+      "u": "«Spiegeling»: het terugkaatsen van licht door een spiegel.",
+      "uo": [
+       "Dat is «Lichtbreking».",
+       "Klopt: licht kaatst terug.",
+       "Dat is «Lens».",
+       "Dat is «Lichtstraal»."
+      ],
+      "uh": "Onthoud: «Spiegeling» = licht kaatst terug."
+     },
+     {
+      "v": "Welk begrip hoort bij: \"een doorzichtig voorwerp dat licht bundelt of spreidt\"?",
+      "o": [
+       "Bolle lens",
+       "Holle lens",
+       "Lens",
+       "Invalshoek"
+      ],
+      "c": 2,
+      "d": 3,
+      "u": "«Lens»: een doorzichtig voorwerp dat licht bundelt of spreidt.",
+      "uo": [
+       "«Bolle lens» betekent brengt licht samen.",
+       "«Holle lens» betekent spreidt licht.",
+       "Klopt, dit is «Lens».",
+       "«Invalshoek» betekent hoek van inval."
+      ],
+      "uh": "Onthoud: «Lens» = bundelt of spreidt licht."
+     },
+     {
+      "v": "Welke term hoort bij \"brengt licht samen\"?",
+      "o": [
+       "Spiegeling",
+       "Lichtstraal",
+       "Beeld",
+       "Bolle lens"
+      ],
+      "c": 3,
+      "d": 2,
+      "u": "«Bolle lens»: een lens die lichtstralen bij elkaar brengt.",
+      "uo": [
+       "«Spiegeling» betekent licht kaatst terug.",
+       "«Lichtstraal» betekent richting van licht.",
+       "«Beeld» betekent afbeelding via lens/spiegel.",
+       "Klopt, «Bolle lens» past hierbij."
+      ],
+      "uh": "Onthoud: «Bolle lens» = brengt licht samen."
+     },
+     {
+      "v": "Wat betekent «Bolle lens»?",
+      "o": [
+       "een lens die lichtstralen bij elkaar brengt",
+       "een lens die lichtstralen uit elkaar laat gaan",
+       "het terugkaatsen van licht door een spiegel",
+       "een rechte lijn die de richting van het licht aangeeft"
+      ],
+      "c": 0,
+      "d": 1,
+      "u": "«Bolle lens»: een lens die lichtstralen bij elkaar brengt.",
+      "uo": [
+       "Klopt: brengt licht samen.",
+       "Dat is «Holle lens».",
+       "Dat is «Spiegeling».",
+       "Dat is «Lichtstraal»."
+      ],
+      "uh": "Onthoud: «Bolle lens» = brengt licht samen."
+     },
+     {
+      "v": "Welk begrip hoort bij: \"een lens die lichtstralen bij elkaar brengt\"?",
+      "o": [
+       "Holle lens",
+       "Bolle lens",
+       "Spiegeling",
+       "Lichtstraal"
+      ],
+      "c": 1,
+      "d": 3,
+      "u": "«Bolle lens»: een lens die lichtstralen bij elkaar brengt.",
+      "uo": [
+       "«Holle lens» betekent spreidt licht.",
+       "Klopt, dit is «Bolle lens».",
+       "«Spiegeling» betekent licht kaatst terug.",
+       "«Lichtstraal» betekent richting van licht."
+      ],
+      "uh": "Onthoud: «Bolle lens» = brengt licht samen."
+     },
+     {
+      "v": "Welke term hoort bij \"spreidt licht\"?",
+      "o": [
+       "Spiegeling",
+       "Lichtstraal",
+       "Holle lens",
+       "Beeld"
+      ],
+      "c": 2,
+      "d": 2,
+      "u": "«Holle lens»: een lens die lichtstralen uit elkaar laat gaan.",
+      "uo": [
+       "«Spiegeling» betekent licht kaatst terug.",
+       "«Lichtstraal» betekent richting van licht.",
+       "Klopt, «Holle lens» past hierbij.",
+       "«Beeld» betekent afbeelding via lens/spiegel."
+      ],
+      "uh": "Onthoud: «Holle lens» = spreidt licht."
+     },
+     {
+      "v": "Wat betekent «Holle lens»?",
+      "o": [
+       "een lens die lichtstralen bij elkaar brengt",
+       "het terugkaatsen van licht door een spiegel",
+       "een rechte lijn die de richting van het licht aangeeft",
+       "een lens die lichtstralen uit elkaar laat gaan"
+      ],
+      "c": 3,
+      "d": 1,
+      "u": "«Holle lens»: een lens die lichtstralen uit elkaar laat gaan.",
+      "uo": [
+       "Dat is «Bolle lens».",
+       "Dat is «Spiegeling».",
+       "Dat is «Lichtstraal».",
+       "Klopt: spreidt licht."
+      ],
+      "uh": "Onthoud: «Holle lens» = spreidt licht."
+     },
+     {
+      "v": "Welk begrip hoort bij: \"een lens die lichtstralen uit elkaar laat gaan\"?",
+      "o": [
+       "Holle lens",
+       "Bolle lens",
+       "Spiegeling",
+       "Lichtstraal"
+      ],
+      "c": 0,
+      "d": 3,
+      "u": "«Holle lens»: een lens die lichtstralen uit elkaar laat gaan.",
+      "uo": [
+       "Klopt, dit is «Holle lens».",
+       "«Bolle lens» betekent brengt licht samen.",
+       "«Spiegeling» betekent licht kaatst terug.",
+       "«Lichtstraal» betekent richting van licht."
+      ],
+      "uh": "Onthoud: «Holle lens» = spreidt licht."
+     },
+     {
+      "v": "Welke term hoort bij \"punt waar licht samenkomt\"?",
+      "o": [
+       "Invalshoek",
+       "Brandpunt",
+       "Beeld",
+       "Reëel beeld"
+      ],
+      "c": 1,
+      "d": 2,
+      "u": "«Brandpunt»: het punt waar een bolle lens evenwijdige stralen samenbrengt.",
+      "uo": [
+       "«Invalshoek» betekent hoek van inval.",
+       "Klopt, «Brandpunt» past hierbij.",
+       "«Beeld» betekent afbeelding via lens/spiegel.",
+       "«Reëel beeld» betekent op te vangen op scherm."
+      ],
+      "uh": "Onthoud: «Brandpunt» = punt waar licht samenkomt."
+     },
+     {
+      "v": "Wat betekent «Beeld»?",
+      "o": [
+       "een beeld dat je op een scherm kunt opvangen",
+       "een beeld dat je niet kunt opvangen, zoals in een spiegel",
+       "de afbeelding die door een lens of spiegel ontstaat",
+       "het weerkaatsen van licht tegen een oppervlak"
+      ],
+      "c": 2,
+      "d": 1,
+      "u": "«Beeld»: de afbeelding die door een lens of spiegel ontstaat.",
+      "uo": [
+       "Dat is «Reëel beeld».",
+       "Dat is «Virtueel beeld».",
+       "Klopt: afbeelding via lens/spiegel.",
+       "Dat is «Terugkaatsing»."
+      ],
+      "uh": "Onthoud: «Beeld» = afbeelding via lens/spiegel."
+     },
+     {
+      "v": "Welk begrip hoort bij: \"het punt waar een bolle lens evenwijdige stralen samenbrengt\"?",
+      "o": [
+       "Bolle lens",
+       "Invalshoek",
+       "Beeld",
+       "Brandpunt"
+      ],
+      "c": 3,
+      "d": 3,
+      "u": "«Brandpunt»: het punt waar een bolle lens evenwijdige stralen samenbrengt.",
+      "uo": [
+       "«Bolle lens» betekent brengt licht samen.",
+       "«Invalshoek» betekent hoek van inval.",
+       "«Beeld» betekent afbeelding via lens/spiegel.",
+       "Klopt, dit is «Brandpunt»."
+      ],
+      "uh": "Onthoud: «Brandpunt» = punt waar licht samenkomt."
+     },
+     {
+      "v": "Welke term hoort bij \"afbeelding via lens/spiegel\"?",
+      "o": [
+       "Beeld",
+       "Terugkaatsing",
+       "Invalshoek",
+       "Holle lens"
+      ],
+      "c": 0,
+      "d": 2,
+      "u": "«Beeld»: de afbeelding die door een lens of spiegel ontstaat.",
+      "uo": [
+       "Klopt, «Beeld» past hierbij.",
+       "«Terugkaatsing» betekent licht weerkaatst.",
+       "«Invalshoek» betekent hoek van inval.",
+       "«Holle lens» betekent spreidt licht."
+      ],
+      "uh": "Onthoud: «Beeld» = afbeelding via lens/spiegel."
+     },
+     {
+      "v": "Wat betekent «Reëel beeld»?",
+      "o": [
+       "een beeld dat je niet kunt opvangen, zoals in een spiegel",
+       "een beeld dat je op een scherm kunt opvangen",
+       "een lens die lichtstralen bij elkaar brengt",
+       "een doorzichtig voorwerp dat licht bundelt of spreidt"
+      ],
+      "c": 1,
+      "d": 1,
+      "u": "«Reëel beeld»: een beeld dat je op een scherm kunt opvangen.",
+      "uo": [
+       "Dat is «Virtueel beeld».",
+       "Klopt: op te vangen op scherm.",
+       "Dat is «Bolle lens».",
+       "Dat is «Lens»."
+      ],
+      "uh": "Onthoud: «Reëel beeld» = op te vangen op scherm."
+     },
+     {
+      "v": "Welk begrip hoort bij: \"de afbeelding die door een lens of spiegel ontstaat\"?",
+      "o": [
+       "Reëel beeld",
+       "Virtueel beeld",
+       "Beeld",
+       "Terugkaatsing"
+      ],
+      "c": 2,
+      "d": 3,
+      "u": "«Beeld»: de afbeelding die door een lens of spiegel ontstaat.",
+      "uo": [
+       "«Reëel beeld» betekent op te vangen op scherm.",
+       "«Virtueel beeld» betekent niet op te vangen.",
+       "Klopt, dit is «Beeld».",
+       "«Terugkaatsing» betekent licht weerkaatst."
+      ],
+      "uh": "Onthoud: «Beeld» = afbeelding via lens/spiegel."
+     },
+     {
+      "v": "Welke term hoort bij \"op te vangen op scherm\"?",
+      "o": [
+       "Bolle lens",
+       "Lens",
+       "Lichtstraal",
+       "Reëel beeld"
+      ],
+      "c": 3,
+      "d": 2,
+      "u": "«Reëel beeld»: een beeld dat je op een scherm kunt opvangen.",
+      "uo": [
+       "«Bolle lens» betekent brengt licht samen.",
+       "«Lens» betekent bundelt of spreidt licht.",
+       "«Lichtstraal» betekent richting van licht.",
+       "Klopt, «Reëel beeld» past hierbij."
+      ],
+      "uh": "Onthoud: «Reëel beeld» = op te vangen op scherm."
+     },
+     {
+      "v": "Wat betekent «Invalshoek»?",
+      "o": [
+       "de hoek waaronder licht op een oppervlak valt",
+       "het weerkaatsen van licht tegen een oppervlak",
+       "het terugkaatsen van licht door een spiegel",
+       "een rechte lijn die de richting van het licht aangeeft"
+      ],
+      "c": 0,
+      "d": 1,
+      "u": "«Invalshoek»: de hoek waaronder licht op een oppervlak valt.",
+      "uo": [
+       "Klopt: hoek van inval.",
+       "Dat is «Terugkaatsing».",
+       "Dat is «Spiegeling».",
+       "Dat is «Lichtstraal»."
+      ],
+      "uh": "Onthoud: «Invalshoek» = hoek van inval."
+     },
+     {
+      "v": "Welk begrip hoort bij: \"een beeld dat je op een scherm kunt opvangen\"?",
+      "o": [
+       "Virtueel beeld",
+       "Reëel beeld",
+       "Bolle lens",
+       "Lens"
+      ],
+      "c": 1,
+      "d": 3,
+      "u": "«Reëel beeld»: een beeld dat je op een scherm kunt opvangen.",
+      "uo": [
+       "«Virtueel beeld» betekent niet op te vangen.",
+       "Klopt, dit is «Reëel beeld».",
+       "«Bolle lens» betekent brengt licht samen.",
+       "«Lens» betekent bundelt of spreidt licht."
+      ],
+      "uh": "Onthoud: «Reëel beeld» = op te vangen op scherm."
+     },
+     {
+      "v": "Welke term hoort bij \"hoek van inval\"?",
+      "o": [
+       "Spiegeling",
+       "Lichtstraal",
+       "Invalshoek",
+       "Holle lens"
+      ],
+      "c": 2,
+      "d": 2,
+      "u": "«Invalshoek»: de hoek waaronder licht op een oppervlak valt.",
+      "uo": [
+       "«Spiegeling» betekent licht kaatst terug.",
+       "«Lichtstraal» betekent richting van licht.",
+       "Klopt, «Invalshoek» past hierbij.",
+       "«Holle lens» betekent spreidt licht."
+      ],
+      "uh": "Onthoud: «Invalshoek» = hoek van inval."
+     },
+     {
+      "v": "Wat betekent «Terugkaatsing»?",
+      "o": [
+       "het terugkaatsen van licht door een spiegel",
+       "de afbeelding die door een lens of spiegel ontstaat",
+       "de hoek waaronder licht op een oppervlak valt",
+       "het weerkaatsen van licht tegen een oppervlak"
+      ],
+      "c": 3,
+      "d": 1,
+      "u": "«Terugkaatsing»: het weerkaatsen van licht tegen een oppervlak.",
+      "uo": [
+       "Dat is «Spiegeling».",
+       "Dat is «Beeld».",
+       "Dat is «Invalshoek».",
+       "Klopt: licht weerkaatst."
+      ],
+      "uh": "Onthoud: «Terugkaatsing» = licht weerkaatst."
+     },
+     {
+      "v": "Welk begrip hoort bij: \"de hoek waaronder licht op een oppervlak valt\"?",
+      "o": [
+       "Invalshoek",
+       "Terugkaatsing",
+       "Spiegeling",
+       "Lichtstraal"
+      ],
+      "c": 0,
+      "d": 3,
+      "u": "«Invalshoek»: de hoek waaronder licht op een oppervlak valt.",
+      "uo": [
+       "Klopt, dit is «Invalshoek».",
+       "«Terugkaatsing» betekent licht weerkaatst.",
+       "«Spiegeling» betekent licht kaatst terug.",
+       "«Lichtstraal» betekent richting van licht."
+      ],
+      "uh": "Onthoud: «Invalshoek» = hoek van inval."
+     },
+     {
+      "v": "Welk begrip hoort bij: \"het veranderen van richting van licht bij overgang naar een andere stof\"?",
+      "o": [
+       "Spiegeling",
+       "Lichtbreking",
+       "Beeld",
+       "Brandpunt"
+      ],
+      "c": 1,
+      "d": 3,
+      "u": "«Lichtbreking»: het veranderen van richting van licht bij overgang naar een andere stof.",
+      "uo": [
+       "«Spiegeling» betekent licht kaatst terug.",
+       "Klopt, dit is «Lichtbreking».",
+       "«Beeld» betekent afbeelding via lens/spiegel.",
+       "«Brandpunt» betekent punt waar licht samenkomt."
+      ],
+      "uh": "Onthoud: «Lichtbreking» = licht verandert richting."
+     }
+    ],
+    "begrippen": [
+     {
+      "t": "Lichtstraal",
+      "d": "een rechte lijn die de richting van het licht aangeeft"
+     },
+     {
+      "t": "Spiegeling",
+      "d": "het terugkaatsen van licht door een spiegel"
+     },
+     {
+      "t": "Lichtbreking",
+      "d": "het veranderen van richting van licht bij overgang naar een andere stof"
+     },
+     {
+      "t": "Lens",
+      "d": "een doorzichtig voorwerp dat licht bundelt of spreidt"
+     },
+     {
+      "t": "Bolle lens",
+      "d": "een lens die lichtstralen bij elkaar brengt"
+     },
+     {
+      "t": "Holle lens",
+      "d": "een lens die lichtstralen uit elkaar laat gaan"
+     },
+     {
+      "t": "Brandpunt",
+      "d": "het punt waar een bolle lens evenwijdige stralen samenbrengt"
+     },
+     {
+      "t": "Beeld",
+      "d": "de afbeelding die door een lens of spiegel ontstaat"
+     },
+     {
+      "t": "Reëel beeld",
+      "d": "een beeld dat je op een scherm kunt opvangen"
+     },
+     {
+      "t": "Virtueel beeld",
+      "d": "een beeld dat je niet kunt opvangen, zoals in een spiegel"
+     },
+     {
+      "t": "Invalshoek",
+      "d": "de hoek waaronder licht op een oppervlak valt"
+     },
+     {
+      "t": "Terugkaatsing",
+      "d": "het weerkaatsen van licht tegen een oppervlak"
+     }
+    ],
+    "sam": "<p>Licht gaat rechtdoor tot het wordt <b>teruggekaatst</b> of <b>gebroken</b>. Een <b>bolle lens</b> bundelt licht in het <b>brandpunt</b>, een <b>holle lens</b> spreidt het. Zo ontstaat een <b>beeld</b> dat <b>reëel</b> (op te vangen) of <b>virtueel</b> (zoals in een spiegel) is.</p>"
    },
    {
     "id": "E",
@@ -479,7 +2675,554 @@ var VAKKEN_VMBO = [
     ],
     "nSv": 0,
     "nOe": 0,
-    "nBeg": 0
+    "nBeg": 0,
+    "sv": [
+     {
+      "v": "Welk begrip hoort bij: \"trillingen die zich door een stof voortplanten\"?",
+      "o": [
+       "Geluid",
+       "Trilling",
+       "Trillingstijd",
+       "Frequentie"
+      ],
+      "c": 0,
+      "d": 3,
+      "u": "«Geluid»: trillingen die zich door een stof voortplanten.",
+      "uo": [
+       "Klopt, dit is «Geluid».",
+       "«Trilling» betekent heen en weer bewegen.",
+       "«Trillingstijd» betekent tijd van één trilling.",
+       "«Frequentie» betekent trillingen per seconde."
+      ],
+      "uh": "Onthoud: «Geluid» = voortplantende trillingen."
+     },
+     {
+      "v": "Welke term hoort bij \"voortplantende trillingen\"?",
+      "o": [
+       "Trillingstijd",
+       "Geluid",
+       "Frequentie",
+       "Decibel"
+      ],
+      "c": 1,
+      "d": 2,
+      "u": "«Geluid»: trillingen die zich door een stof voortplanten.",
+      "uo": [
+       "«Trillingstijd» betekent tijd van één trilling.",
+       "Klopt, «Geluid» past hierbij.",
+       "«Frequentie» betekent trillingen per seconde.",
+       "«Decibel» betekent eenheid van sterkte."
+      ],
+      "uh": "Onthoud: «Geluid» = voortplantende trillingen."
+     },
+     {
+      "v": "Wat betekent «Trilling»?",
+      "o": [
+       "het aantal trillingen per seconde, in hertz",
+       "het voorwerp dat het geluid maakt",
+       "een heen-en-weergaande beweging",
+       "de eenheid van geluidssterkte"
+      ],
+      "c": 2,
+      "d": 1,
+      "u": "«Trilling»: een heen-en-weergaande beweging.",
+      "uo": [
+       "Dat is «Frequentie».",
+       "Dat is «Geluidsbron».",
+       "Klopt: heen en weer bewegen.",
+       "Dat is «Decibel»."
+      ],
+      "uh": "Onthoud: «Trilling» = heen en weer bewegen."
+     },
+     {
+      "v": "Welk begrip hoort bij: \"een heen-en-weergaande beweging\"?",
+      "o": [
+       "Frequentie",
+       "Geluidsbron",
+       "Decibel",
+       "Trilling"
+      ],
+      "c": 3,
+      "d": 3,
+      "u": "«Trilling»: een heen-en-weergaande beweging.",
+      "uo": [
+       "«Frequentie» betekent trillingen per seconde.",
+       "«Geluidsbron» betekent maakt het geluid.",
+       "«Decibel» betekent eenheid van sterkte.",
+       "Klopt, dit is «Trilling»."
+      ],
+      "uh": "Onthoud: «Trilling» = heen en weer bewegen."
+     },
+     {
+      "v": "Welke term hoort bij \"heen en weer bewegen\"?",
+      "o": [
+       "Trilling",
+       "Geluidsbron",
+       "Decibel",
+       "Geluid"
+      ],
+      "c": 0,
+      "d": 2,
+      "u": "«Trilling»: een heen-en-weergaande beweging.",
+      "uo": [
+       "Klopt, «Trilling» past hierbij.",
+       "«Geluidsbron» betekent maakt het geluid.",
+       "«Decibel» betekent eenheid van sterkte.",
+       "«Geluid» betekent voortplantende trillingen."
+      ],
+      "uh": "Onthoud: «Trilling» = heen en weer bewegen."
+     },
+     {
+      "v": "Wat betekent «Frequentie»?",
+      "o": [
+       "de tijd van één volledige trilling",
+       "het aantal trillingen per seconde, in hertz",
+       "een heen-en-weergaande beweging",
+       "trillingen die zich door een stof voortplanten"
+      ],
+      "c": 1,
+      "d": 1,
+      "u": "«Frequentie»: het aantal trillingen per seconde, in hertz.",
+      "uo": [
+       "Dat is «Trillingstijd».",
+       "Klopt: trillingen per seconde.",
+       "Dat is «Trilling».",
+       "Dat is «Geluid»."
+      ],
+      "uh": "Onthoud: «Frequentie» = trillingen per seconde."
+     },
+     {
+      "v": "Welk begrip hoort bij: \"het aantal trillingen per seconde, in hertz\"?",
+      "o": [
+       "Trillingstijd",
+       "Trilling",
+       "Frequentie",
+       "Geluid"
+      ],
+      "c": 2,
+      "d": 3,
+      "u": "«Frequentie»: het aantal trillingen per seconde, in hertz.",
+      "uo": [
+       "«Trillingstijd» betekent tijd van één trilling.",
+       "«Trilling» betekent heen en weer bewegen.",
+       "Klopt, dit is «Frequentie».",
+       "«Geluid» betekent voortplantende trillingen."
+      ],
+      "uh": "Onthoud: «Frequentie» = trillingen per seconde."
+     },
+     {
+      "v": "Welke term hoort bij \"trillingen per seconde\"?",
+      "o": [
+       "Trilling",
+       "Geluid",
+       "Geluidssnelheid",
+       "Frequentie"
+      ],
+      "c": 3,
+      "d": 2,
+      "u": "«Frequentie»: het aantal trillingen per seconde, in hertz.",
+      "uo": [
+       "«Trilling» betekent heen en weer bewegen.",
+       "«Geluid» betekent voortplantende trillingen.",
+       "«Geluidssnelheid» betekent snelheid van geluid.",
+       "Klopt, «Frequentie» past hierbij."
+      ],
+      "uh": "Onthoud: «Frequentie» = trillingen per seconde."
+     },
+     {
+      "v": "Wat betekent «Trillingstijd»?",
+      "o": [
+       "de tijd van één volledige trilling",
+       "het aantal trillingen per seconde, in hertz",
+       "geluid dat terugkaatst en je opnieuw hoort",
+       "de eenheid van geluidssterkte"
+      ],
+      "c": 0,
+      "d": 1,
+      "u": "«Trillingstijd»: de tijd van één volledige trilling.",
+      "uo": [
+       "Klopt: tijd van één trilling.",
+       "Dat is «Frequentie».",
+       "Dat is «Echo».",
+       "Dat is «Decibel»."
+      ],
+      "uh": "Onthoud: «Trillingstijd» = tijd van één trilling."
+     },
+     {
+      "v": "Welk begrip hoort bij: \"de grootte van de uitwijking van een trilling\"?",
+      "o": [
+       "Frequentie",
+       "Amplitude",
+       "Geluidsbron",
+       "Geluidssnelheid"
+      ],
+      "c": 1,
+      "d": 3,
+      "u": "«Amplitude»: de grootte van de uitwijking van een trilling.",
+      "uo": [
+       "«Frequentie» betekent trillingen per seconde.",
+       "Klopt, dit is «Amplitude».",
+       "«Geluidsbron» betekent maakt het geluid.",
+       "«Geluidssnelheid» betekent snelheid van geluid."
+      ],
+      "uh": "Onthoud: «Amplitude» = grootte van de uitwijking."
+     },
+     {
+      "v": "Welke term hoort bij \"grootte van de uitwijking\"?",
+      "o": [
+       "Geluidsbron",
+       "Geluidssnelheid",
+       "Amplitude",
+       "Echo"
+      ],
+      "c": 2,
+      "d": 2,
+      "u": "«Amplitude»: de grootte van de uitwijking van een trilling.",
+      "uo": [
+       "«Geluidsbron» betekent maakt het geluid.",
+       "«Geluidssnelheid» betekent snelheid van geluid.",
+       "Klopt, «Amplitude» past hierbij.",
+       "«Echo» betekent teruggekaatst geluid."
+      ],
+      "uh": "Onthoud: «Amplitude» = grootte van de uitwijking."
+     },
+     {
+      "v": "Wat betekent «Geluidssterkte»?",
+      "o": [
+       "hoe hoog of laag een toon klinkt; hangt af van de frequentie",
+       "de tijd van één volledige trilling",
+       "de eenheid van geluidssterkte",
+       "hoe hard een geluid klinkt; hangt af van de amplitude"
+      ],
+      "c": 3,
+      "d": 1,
+      "u": "«Geluidssterkte»: hoe hard een geluid klinkt; hangt af van de amplitude.",
+      "uo": [
+       "Dat is «Toonhoogte».",
+       "Dat is «Trillingstijd».",
+       "Dat is «Decibel».",
+       "Klopt: hard of zacht, via amplitude."
+      ],
+      "uh": "Onthoud: «Geluidssterkte» = hard of zacht, via amplitude."
+     },
+     {
+      "v": "Welk begrip hoort bij: \"hoe hoog of laag een toon klinkt; hangt af van de frequentie\"?",
+      "o": [
+       "Toonhoogte",
+       "Geluidssterkte",
+       "Trilling",
+       "Geluid"
+      ],
+      "c": 0,
+      "d": 3,
+      "u": "«Toonhoogte»: hoe hoog of laag een toon klinkt; hangt af van de frequentie.",
+      "uo": [
+       "Klopt, dit is «Toonhoogte».",
+       "«Geluidssterkte» betekent hard of zacht, via amplitude.",
+       "«Trilling» betekent heen en weer bewegen.",
+       "«Geluid» betekent voortplantende trillingen."
+      ],
+      "uh": "Onthoud: «Toonhoogte» = hoog of laag, via frequentie."
+     },
+     {
+      "v": "Welke term hoort bij \"hoog of laag, via frequentie\"?",
+      "o": [
+       "Trilling",
+       "Toonhoogte",
+       "Geluid",
+       "Geluidssnelheid"
+      ],
+      "c": 1,
+      "d": 2,
+      "u": "«Toonhoogte»: hoe hoog of laag een toon klinkt; hangt af van de frequentie.",
+      "uo": [
+       "«Trilling» betekent heen en weer bewegen.",
+       "Klopt, «Toonhoogte» past hierbij.",
+       "«Geluid» betekent voortplantende trillingen.",
+       "«Geluidssnelheid» betekent snelheid van geluid."
+      ],
+      "uh": "Onthoud: «Toonhoogte» = hoog of laag, via frequentie."
+     },
+     {
+      "v": "Wat betekent «Geluidssnelheid»?",
+      "o": [
+       "geluid dat terugkaatst en je opnieuw hoort",
+       "de tijd van één volledige trilling",
+       "de snelheid waarmee geluid zich voortplant",
+       "de grootte van de uitwijking van een trilling"
+      ],
+      "c": 2,
+      "d": 1,
+      "u": "«Geluidssnelheid»: de snelheid waarmee geluid zich voortplant.",
+      "uo": [
+       "Dat is «Echo».",
+       "Dat is «Trillingstijd».",
+       "Klopt: snelheid van geluid.",
+       "Dat is «Amplitude»."
+      ],
+      "uh": "Onthoud: «Geluidssnelheid» = snelheid van geluid."
+     },
+     {
+      "v": "Welk begrip hoort bij: \"geluid dat terugkaatst en je opnieuw hoort\"?",
+      "o": [
+       "Echopeiling",
+       "Geluidssterkte",
+       "Decibel",
+       "Echo"
+      ],
+      "c": 3,
+      "d": 3,
+      "u": "«Echo»: geluid dat terugkaatst en je opnieuw hoort.",
+      "uo": [
+       "«Echopeiling» betekent afstand meten met echo.",
+       "«Geluidssterkte» betekent hard of zacht, via amplitude.",
+       "«Decibel» betekent eenheid van sterkte.",
+       "Klopt, dit is «Echo»."
+      ],
+      "uh": "Onthoud: «Echo» = teruggekaatst geluid."
+     },
+     {
+      "v": "Welke term hoort bij \"hard of zacht, via amplitude\"?",
+      "o": [
+       "Geluidssterkte",
+       "Trillingstijd",
+       "Decibel",
+       "Geluidssnelheid"
+      ],
+      "c": 0,
+      "d": 2,
+      "u": "«Geluidssterkte»: hoe hard een geluid klinkt; hangt af van de amplitude.",
+      "uo": [
+       "Klopt, «Geluidssterkte» past hierbij.",
+       "«Trillingstijd» betekent tijd van één trilling.",
+       "«Decibel» betekent eenheid van sterkte.",
+       "«Geluidssnelheid» betekent snelheid van geluid."
+      ],
+      "uh": "Onthoud: «Geluidssterkte» = hard of zacht, via amplitude."
+     },
+     {
+      "v": "Wat betekent «Echo»?",
+      "o": [
+       "het meten van een afstand met teruggekaatst geluid",
+       "geluid dat terugkaatst en je opnieuw hoort",
+       "hoe hard een geluid klinkt; hangt af van de amplitude",
+       "de eenheid van geluidssterkte"
+      ],
+      "c": 1,
+      "d": 1,
+      "u": "«Echo»: geluid dat terugkaatst en je opnieuw hoort.",
+      "uo": [
+       "Dat is «Echopeiling».",
+       "Klopt: teruggekaatst geluid.",
+       "Dat is «Geluidssterkte».",
+       "Dat is «Decibel»."
+      ],
+      "uh": "Onthoud: «Echo» = teruggekaatst geluid."
+     },
+     {
+      "v": "Welk begrip hoort bij: \"het meten van een afstand met teruggekaatst geluid\"?",
+      "o": [
+       "Echo",
+       "Amplitude",
+       "Echopeiling",
+       "Trillingstijd"
+      ],
+      "c": 2,
+      "d": 3,
+      "u": "«Echopeiling»: het meten van een afstand met teruggekaatst geluid.",
+      "uo": [
+       "«Echo» betekent teruggekaatst geluid.",
+       "«Amplitude» betekent grootte van de uitwijking.",
+       "Klopt, dit is «Echopeiling».",
+       "«Trillingstijd» betekent tijd van één trilling."
+      ],
+      "uh": "Onthoud: «Echopeiling» = afstand meten met echo."
+     },
+     {
+      "v": "Welke term hoort bij \"teruggekaatst geluid\"?",
+      "o": [
+       "Geluidssterkte",
+       "Decibel",
+       "Trillingstijd",
+       "Echo"
+      ],
+      "c": 3,
+      "d": 2,
+      "u": "«Echo»: geluid dat terugkaatst en je opnieuw hoort.",
+      "uo": [
+       "«Geluidssterkte» betekent hard of zacht, via amplitude.",
+       "«Decibel» betekent eenheid van sterkte.",
+       "«Trillingstijd» betekent tijd van één trilling.",
+       "Klopt, «Echo» past hierbij."
+      ],
+      "uh": "Onthoud: «Echo» = teruggekaatst geluid."
+     },
+     {
+      "v": "Wat betekent «Geluidsbron»?",
+      "o": [
+       "het voorwerp dat het geluid maakt",
+       "trillingen die zich door een stof voortplanten",
+       "hoe hoog of laag een toon klinkt; hangt af van de frequentie",
+       "de grootte van de uitwijking van een trilling"
+      ],
+      "c": 0,
+      "d": 1,
+      "u": "«Geluidsbron»: het voorwerp dat het geluid maakt.",
+      "uo": [
+       "Klopt: maakt het geluid.",
+       "Dat is «Geluid».",
+       "Dat is «Toonhoogte».",
+       "Dat is «Amplitude»."
+      ],
+      "uh": "Onthoud: «Geluidsbron» = maakt het geluid."
+     },
+     {
+      "v": "Welk begrip hoort bij: \"de eenheid van geluidssterkte\"?",
+      "o": [
+       "Geluidssterkte",
+       "Decibel",
+       "Toonhoogte",
+       "Trillingstijd"
+      ],
+      "c": 1,
+      "d": 3,
+      "u": "«Decibel»: de eenheid van geluidssterkte.",
+      "uo": [
+       "«Geluidssterkte» betekent hard of zacht, via amplitude.",
+       "Klopt, dit is «Decibel».",
+       "«Toonhoogte» betekent hoog of laag, via frequentie.",
+       "«Trillingstijd» betekent tijd van één trilling."
+      ],
+      "uh": "Onthoud: «Decibel» = eenheid van sterkte."
+     },
+     {
+      "v": "Welke term hoort bij \"afstand meten met echo\"?",
+      "o": [
+       "Amplitude",
+       "Trillingstijd",
+       "Echopeiling",
+       "Geluid"
+      ],
+      "c": 2,
+      "d": 2,
+      "u": "«Echopeiling»: het meten van een afstand met teruggekaatst geluid.",
+      "uo": [
+       "«Amplitude» betekent grootte van de uitwijking.",
+       "«Trillingstijd» betekent tijd van één trilling.",
+       "Klopt, «Echopeiling» past hierbij.",
+       "«Geluid» betekent voortplantende trillingen."
+      ],
+      "uh": "Onthoud: «Echopeiling» = afstand meten met echo."
+     },
+     {
+      "v": "Wat betekent «Decibel»?",
+      "o": [
+       "hoe hard een geluid klinkt; hangt af van de amplitude",
+       "hoe hoog of laag een toon klinkt; hangt af van de frequentie",
+       "de tijd van één volledige trilling",
+       "de eenheid van geluidssterkte"
+      ],
+      "c": 3,
+      "d": 1,
+      "u": "«Decibel»: de eenheid van geluidssterkte.",
+      "uo": [
+       "Dat is «Geluidssterkte».",
+       "Dat is «Toonhoogte».",
+       "Dat is «Trillingstijd».",
+       "Klopt: eenheid van sterkte."
+      ],
+      "uh": "Onthoud: «Decibel» = eenheid van sterkte."
+     },
+     {
+      "v": "Welke term hoort bij \"eenheid van sterkte\"?",
+      "o": [
+       "Decibel",
+       "Toonhoogte",
+       "Trillingstijd",
+       "Geluidsbron"
+      ],
+      "c": 0,
+      "d": 2,
+      "u": "«Decibel»: de eenheid van geluidssterkte.",
+      "uo": [
+       "Klopt, «Decibel» past hierbij.",
+       "«Toonhoogte» betekent hoog of laag, via frequentie.",
+       "«Trillingstijd» betekent tijd van één trilling.",
+       "«Geluidsbron» betekent maakt het geluid."
+      ],
+      "uh": "Onthoud: «Decibel» = eenheid van sterkte."
+     },
+     {
+      "v": "Welk begrip hoort bij: \"de tijd van één volledige trilling\"?",
+      "o": [
+       "Frequentie",
+       "Trillingstijd",
+       "Echo",
+       "Decibel"
+      ],
+      "c": 1,
+      "d": 3,
+      "u": "«Trillingstijd»: de tijd van één volledige trilling.",
+      "uo": [
+       "«Frequentie» betekent trillingen per seconde.",
+       "Klopt, dit is «Trillingstijd».",
+       "«Echo» betekent teruggekaatst geluid.",
+       "«Decibel» betekent eenheid van sterkte."
+      ],
+      "uh": "Onthoud: «Trillingstijd» = tijd van één trilling."
+     }
+    ],
+    "begrippen": [
+     {
+      "t": "Geluid",
+      "d": "trillingen die zich door een stof voortplanten"
+     },
+     {
+      "t": "Trilling",
+      "d": "een heen-en-weergaande beweging"
+     },
+     {
+      "t": "Frequentie",
+      "d": "het aantal trillingen per seconde, in hertz"
+     },
+     {
+      "t": "Trillingstijd",
+      "d": "de tijd van één volledige trilling"
+     },
+     {
+      "t": "Amplitude",
+      "d": "de grootte van de uitwijking van een trilling"
+     },
+     {
+      "t": "Toonhoogte",
+      "d": "hoe hoog of laag een toon klinkt; hangt af van de frequentie"
+     },
+     {
+      "t": "Geluidssterkte",
+      "d": "hoe hard een geluid klinkt; hangt af van de amplitude"
+     },
+     {
+      "t": "Geluidssnelheid",
+      "d": "de snelheid waarmee geluid zich voortplant"
+     },
+     {
+      "t": "Echo",
+      "d": "geluid dat terugkaatst en je opnieuw hoort"
+     },
+     {
+      "t": "Echopeiling",
+      "d": "het meten van een afstand met teruggekaatst geluid"
+     },
+     {
+      "t": "Geluidsbron",
+      "d": "het voorwerp dat het geluid maakt"
+     },
+     {
+      "t": "Decibel",
+      "d": "de eenheid van geluidssterkte"
+     }
+    ],
+    "sam": "<p><b>Geluid</b> bestaat uit <b>trillingen</b> die zich door een stof voortplanten. De <b>frequentie</b> (trillingen per seconde) bepaalt de <b>toonhoogte</b>, de <b>amplitude</b> de <b>geluidssterkte</b>. Met teruggekaatst geluid (een <b>echo</b>) kun je met <b>echopeiling</b> afstanden meten.</p>"
    },
    {
     "id": "F",
@@ -494,7 +3237,554 @@ var VAKKEN_VMBO = [
     ],
     "nSv": 0,
     "nOe": 0,
-    "nBeg": 0
+    "nBeg": 0,
+    "sv": [
+     {
+      "v": "Welk begrip hoort bij: \"een duw of trek die een voorwerp kan vervormen of versnellen\"?",
+      "o": [
+       "Kracht",
+       "Moment",
+       "Zwaartekracht",
+       "Newton"
+      ],
+      "c": 0,
+      "d": 3,
+      "u": "«Kracht»: een duw of trek die een voorwerp kan vervormen of versnellen.",
+      "uo": [
+       "Klopt, dit is «Kracht».",
+       "«Moment» betekent draai-effect van kracht.",
+       "«Zwaartekracht» betekent aantrekking van de aarde.",
+       "«Newton» betekent eenheid van kracht."
+      ],
+      "uh": "Onthoud: «Kracht» = duw of trek."
+     },
+     {
+      "v": "Welke term hoort bij \"duw of trek\"?",
+      "o": [
+       "Newton",
+       "Kracht",
+       "Resultante",
+       "Draaipunt"
+      ],
+      "c": 1,
+      "d": 2,
+      "u": "«Kracht»: een duw of trek die een voorwerp kan vervormen of versnellen.",
+      "uo": [
+       "«Newton» betekent eenheid van kracht.",
+       "Klopt, «Kracht» past hierbij.",
+       "«Resultante» betekent som van de krachten.",
+       "«Draaipunt» betekent punt van draaien."
+      ],
+      "uh": "Onthoud: «Kracht» = duw of trek."
+     },
+     {
+      "v": "Wat betekent «Zwaartekracht»?",
+      "o": [
+       "een duw of trek die een voorwerp kan vervormen of versnellen",
+       "de afstand die je aflegt tijdens het remmen",
+       "de kracht waarmee de aarde aan massa trekt",
+       "een kracht die beweging tegenwerkt"
+      ],
+      "c": 2,
+      "d": 1,
+      "u": "«Zwaartekracht»: de kracht waarmee de aarde aan massa trekt.",
+      "uo": [
+       "Dat is «Kracht».",
+       "Dat is «Remweg».",
+       "Klopt: aantrekking van de aarde.",
+       "Dat is «Wrijvingskracht»."
+      ],
+      "uh": "Onthoud: «Zwaartekracht» = aantrekking van de aarde."
+     },
+     {
+      "v": "Welk begrip hoort bij: \"de kracht waarmee de aarde aan massa trekt\"?",
+      "o": [
+       "Kracht",
+       "Remweg",
+       "Wrijvingskracht",
+       "Zwaartekracht"
+      ],
+      "c": 3,
+      "d": 3,
+      "u": "«Zwaartekracht»: de kracht waarmee de aarde aan massa trekt.",
+      "uo": [
+       "«Kracht» betekent duw of trek.",
+       "«Remweg» betekent afstand tijdens remmen.",
+       "«Wrijvingskracht» betekent werkt beweging tegen.",
+       "Klopt, dit is «Zwaartekracht»."
+      ],
+      "uh": "Onthoud: «Zwaartekracht» = aantrekking van de aarde."
+     },
+     {
+      "v": "Welke term hoort bij \"aantrekking van de aarde\"?",
+      "o": [
+       "Zwaartekracht",
+       "Remweg",
+       "Wrijvingskracht",
+       "Newton"
+      ],
+      "c": 0,
+      "d": 2,
+      "u": "«Zwaartekracht»: de kracht waarmee de aarde aan massa trekt.",
+      "uo": [
+       "Klopt, «Zwaartekracht» past hierbij.",
+       "«Remweg» betekent afstand tijdens remmen.",
+       "«Wrijvingskracht» betekent werkt beweging tegen.",
+       "«Newton» betekent eenheid van kracht."
+      ],
+      "uh": "Onthoud: «Zwaartekracht» = aantrekking van de aarde."
+     },
+     {
+      "v": "Wat betekent «Newton»?",
+      "o": [
+       "het draai-effect van een kracht: kracht maal arm",
+       "de eenheid van kracht",
+       "de kracht waarmee de aarde aan massa trekt",
+       "een duw of trek die een voorwerp kan vervormen of versnellen"
+      ],
+      "c": 1,
+      "d": 1,
+      "u": "«Newton»: de eenheid van kracht.",
+      "uo": [
+       "Dat is «Moment».",
+       "Klopt: eenheid van kracht.",
+       "Dat is «Zwaartekracht».",
+       "Dat is «Kracht»."
+      ],
+      "uh": "Onthoud: «Newton» = eenheid van kracht."
+     },
+     {
+      "v": "Welk begrip hoort bij: \"de eenheid van kracht\"?",
+      "o": [
+       "Moment",
+       "Zwaartekracht",
+       "Newton",
+       "Kracht"
+      ],
+      "c": 2,
+      "d": 3,
+      "u": "«Newton»: de eenheid van kracht.",
+      "uo": [
+       "«Moment» betekent draai-effect van kracht.",
+       "«Zwaartekracht» betekent aantrekking van de aarde.",
+       "Klopt, dit is «Newton».",
+       "«Kracht» betekent duw of trek."
+      ],
+      "uh": "Onthoud: «Newton» = eenheid van kracht."
+     },
+     {
+      "v": "Welke term hoort bij \"eenheid van kracht\"?",
+      "o": [
+       "Zwaartekracht",
+       "Kracht",
+       "Wrijvingskracht",
+       "Newton"
+      ],
+      "c": 3,
+      "d": 2,
+      "u": "«Newton»: de eenheid van kracht.",
+      "uo": [
+       "«Zwaartekracht» betekent aantrekking van de aarde.",
+       "«Kracht» betekent duw of trek.",
+       "«Wrijvingskracht» betekent werkt beweging tegen.",
+       "Klopt, «Newton» past hierbij."
+      ],
+      "uh": "Onthoud: «Newton» = eenheid van kracht."
+     },
+     {
+      "v": "Wat betekent «Resultante»?",
+      "o": [
+       "de som van alle krachten op een voorwerp",
+       "de toestand waarin de krachten elkaar opheffen",
+       "de kracht waarmee de aarde aan massa trekt",
+       "een duw of trek die een voorwerp kan vervormen of versnellen"
+      ],
+      "c": 0,
+      "d": 1,
+      "u": "«Resultante»: de som van alle krachten op een voorwerp.",
+      "uo": [
+       "Klopt: som van de krachten.",
+       "Dat is «Evenwicht».",
+       "Dat is «Zwaartekracht».",
+       "Dat is «Kracht»."
+      ],
+      "uh": "Onthoud: «Resultante» = som van de krachten."
+     },
+     {
+      "v": "Welk begrip hoort bij: \"de som van alle krachten op een voorwerp\"?",
+      "o": [
+       "Evenwicht",
+       "Resultante",
+       "Zwaartekracht",
+       "Kracht"
+      ],
+      "c": 1,
+      "d": 3,
+      "u": "«Resultante»: de som van alle krachten op een voorwerp.",
+      "uo": [
+       "«Evenwicht» betekent krachten heffen elkaar op.",
+       "Klopt, dit is «Resultante».",
+       "«Zwaartekracht» betekent aantrekking van de aarde.",
+       "«Kracht» betekent duw of trek."
+      ],
+      "uh": "Onthoud: «Resultante» = som van de krachten."
+     },
+     {
+      "v": "Welke term hoort bij \"som van de krachten\"?",
+      "o": [
+       "Zwaartekracht",
+       "Kracht",
+       "Resultante",
+       "Moment"
+      ],
+      "c": 2,
+      "d": 2,
+      "u": "«Resultante»: de som van alle krachten op een voorwerp.",
+      "uo": [
+       "«Zwaartekracht» betekent aantrekking van de aarde.",
+       "«Kracht» betekent duw of trek.",
+       "Klopt, «Resultante» past hierbij.",
+       "«Moment» betekent draai-effect van kracht."
+      ],
+      "uh": "Onthoud: «Resultante» = som van de krachten."
+     },
+     {
+      "v": "Wat betekent «Evenwicht»?",
+      "o": [
+       "de som van alle krachten op een voorwerp",
+       "de reactieafstand plus de remweg",
+       "het draai-effect van een kracht: kracht maal arm",
+       "de toestand waarin de krachten elkaar opheffen"
+      ],
+      "c": 3,
+      "d": 1,
+      "u": "«Evenwicht»: de toestand waarin de krachten elkaar opheffen.",
+      "uo": [
+       "Dat is «Resultante».",
+       "Dat is «Stopafstand».",
+       "Dat is «Moment».",
+       "Klopt: krachten heffen elkaar op."
+      ],
+      "uh": "Onthoud: «Evenwicht» = krachten heffen elkaar op."
+     },
+     {
+      "v": "Welk begrip hoort bij: \"de toestand waarin de krachten elkaar opheffen\"?",
+      "o": [
+       "Evenwicht",
+       "Resultante",
+       "Stopafstand",
+       "Moment"
+      ],
+      "c": 0,
+      "d": 3,
+      "u": "«Evenwicht»: de toestand waarin de krachten elkaar opheffen.",
+      "uo": [
+       "Klopt, dit is «Evenwicht».",
+       "«Resultante» betekent som van de krachten.",
+       "«Stopafstand» betekent reactieafstand plus remweg.",
+       "«Moment» betekent draai-effect van kracht."
+      ],
+      "uh": "Onthoud: «Evenwicht» = krachten heffen elkaar op."
+     },
+     {
+      "v": "Welke term hoort bij \"krachten heffen elkaar op\"?",
+      "o": [
+       "Stopafstand",
+       "Evenwicht",
+       "Moment",
+       "Remweg"
+      ],
+      "c": 1,
+      "d": 2,
+      "u": "«Evenwicht»: de toestand waarin de krachten elkaar opheffen.",
+      "uo": [
+       "«Stopafstand» betekent reactieafstand plus remweg.",
+       "Klopt, «Evenwicht» past hierbij.",
+       "«Moment» betekent draai-effect van kracht.",
+       "«Remweg» betekent afstand tijdens remmen."
+      ],
+      "uh": "Onthoud: «Evenwicht» = krachten heffen elkaar op."
+     },
+     {
+      "v": "Wat betekent «Draaipunt»?",
+      "o": [
+       "een staaf die om een draaipunt draait om kracht te vergroten",
+       "de reactieafstand plus de remweg",
+       "het vaste punt waar een hefboom omheen draait",
+       "het draai-effect van een kracht: kracht maal arm"
+      ],
+      "c": 2,
+      "d": 1,
+      "u": "«Draaipunt»: het vaste punt waar een hefboom omheen draait.",
+      "uo": [
+       "Dat is «Hefboom».",
+       "Dat is «Stopafstand».",
+       "Klopt: punt van draaien.",
+       "Dat is «Moment»."
+      ],
+      "uh": "Onthoud: «Draaipunt» = punt van draaien."
+     },
+     {
+      "v": "Welk begrip hoort bij: \"een staaf die om een draaipunt draait om kracht te vergroten\"?",
+      "o": [
+       "Draaipunt",
+       "Moment",
+       "Resultante",
+       "Hefboom"
+      ],
+      "c": 3,
+      "d": 3,
+      "u": "«Hefboom»: een staaf die om een draaipunt draait om kracht te vergroten.",
+      "uo": [
+       "«Draaipunt» betekent punt van draaien.",
+       "«Moment» betekent draai-effect van kracht.",
+       "«Resultante» betekent som van de krachten.",
+       "Klopt, dit is «Hefboom»."
+      ],
+      "uh": "Onthoud: «Hefboom» = staaf om een draaipunt."
+     },
+     {
+      "v": "Welke term hoort bij \"staaf om een draaipunt\"?",
+      "o": [
+       "Hefboom",
+       "Resultante",
+       "Evenwicht",
+       "Newton"
+      ],
+      "c": 0,
+      "d": 2,
+      "u": "«Hefboom»: een staaf die om een draaipunt draait om kracht te vergroten.",
+      "uo": [
+       "Klopt, «Hefboom» past hierbij.",
+       "«Resultante» betekent som van de krachten.",
+       "«Evenwicht» betekent krachten heffen elkaar op.",
+       "«Newton» betekent eenheid van kracht."
+      ],
+      "uh": "Onthoud: «Hefboom» = staaf om een draaipunt."
+     },
+     {
+      "v": "Wat betekent «Moment»?",
+      "o": [
+       "een duw of trek die een voorwerp kan vervormen of versnellen",
+       "het draai-effect van een kracht: kracht maal arm",
+       "de eenheid van kracht",
+       "de kracht waarmee de aarde aan massa trekt"
+      ],
+      "c": 1,
+      "d": 1,
+      "u": "«Moment»: het draai-effect van een kracht: kracht maal arm.",
+      "uo": [
+       "Dat is «Kracht».",
+       "Klopt: draai-effect van kracht.",
+       "Dat is «Newton».",
+       "Dat is «Zwaartekracht»."
+      ],
+      "uh": "Onthoud: «Moment» = draai-effect van kracht."
+     },
+     {
+      "v": "Welk begrip hoort bij: \"het vaste punt waar een hefboom omheen draait\"?",
+      "o": [
+       "Hefboom",
+       "Stopafstand",
+       "Draaipunt",
+       "Moment"
+      ],
+      "c": 2,
+      "d": 3,
+      "u": "«Draaipunt»: het vaste punt waar een hefboom omheen draait.",
+      "uo": [
+       "«Hefboom» betekent staaf om een draaipunt.",
+       "«Stopafstand» betekent reactieafstand plus remweg.",
+       "Klopt, dit is «Draaipunt».",
+       "«Moment» betekent draai-effect van kracht."
+      ],
+      "uh": "Onthoud: «Draaipunt» = punt van draaien."
+     },
+     {
+      "v": "Welke term hoort bij \"punt van draaien\"?",
+      "o": [
+       "Stopafstand",
+       "Moment",
+       "Remweg",
+       "Draaipunt"
+      ],
+      "c": 3,
+      "d": 2,
+      "u": "«Draaipunt»: het vaste punt waar een hefboom omheen draait.",
+      "uo": [
+       "«Stopafstand» betekent reactieafstand plus remweg.",
+       "«Moment» betekent draai-effect van kracht.",
+       "«Remweg» betekent afstand tijdens remmen.",
+       "Klopt, «Draaipunt» past hierbij."
+      ],
+      "uh": "Onthoud: «Draaipunt» = punt van draaien."
+     },
+     {
+      "v": "Wat betekent «Remweg»?",
+      "o": [
+       "de afstand die je aflegt tijdens het remmen",
+       "de reactieafstand plus de remweg",
+       "de tijd tussen iets zien en erop reageren",
+       "een duw of trek die een voorwerp kan vervormen of versnellen"
+      ],
+      "c": 0,
+      "d": 1,
+      "u": "«Remweg»: de afstand die je aflegt tijdens het remmen.",
+      "uo": [
+       "Klopt: afstand tijdens remmen.",
+       "Dat is «Stopafstand».",
+       "Dat is «Reactietijd».",
+       "Dat is «Kracht»."
+      ],
+      "uh": "Onthoud: «Remweg» = afstand tijdens remmen."
+     },
+     {
+      "v": "Welk begrip hoort bij: \"het draai-effect van een kracht: kracht maal arm\"?",
+      "o": [
+       "Kracht",
+       "Moment",
+       "Newton",
+       "Zwaartekracht"
+      ],
+      "c": 1,
+      "d": 3,
+      "u": "«Moment»: het draai-effect van een kracht: kracht maal arm.",
+      "uo": [
+       "«Kracht» betekent duw of trek.",
+       "Klopt, dit is «Moment».",
+       "«Newton» betekent eenheid van kracht.",
+       "«Zwaartekracht» betekent aantrekking van de aarde."
+      ],
+      "uh": "Onthoud: «Moment» = draai-effect van kracht."
+     },
+     {
+      "v": "Welke term hoort bij \"draai-effect van kracht\"?",
+      "o": [
+       "Newton",
+       "Zwaartekracht",
+       "Moment",
+       "Wrijvingskracht"
+      ],
+      "c": 2,
+      "d": 2,
+      "u": "«Moment»: het draai-effect van een kracht: kracht maal arm.",
+      "uo": [
+       "«Newton» betekent eenheid van kracht.",
+       "«Zwaartekracht» betekent aantrekking van de aarde.",
+       "Klopt, «Moment» past hierbij.",
+       "«Wrijvingskracht» betekent werkt beweging tegen."
+      ],
+      "uh": "Onthoud: «Moment» = draai-effect van kracht."
+     },
+     {
+      "v": "Wat betekent «Reactietijd»?",
+      "o": [
+       "de afstand die je aflegt tijdens het remmen",
+       "de toestand waarin de krachten elkaar opheffen",
+       "de som van alle krachten op een voorwerp",
+       "de tijd tussen iets zien en erop reageren"
+      ],
+      "c": 3,
+      "d": 1,
+      "u": "«Reactietijd»: de tijd tussen iets zien en erop reageren.",
+      "uo": [
+       "Dat is «Remweg».",
+       "Dat is «Evenwicht».",
+       "Dat is «Resultante».",
+       "Klopt: tijd van zien tot reageren."
+      ],
+      "uh": "Onthoud: «Reactietijd» = tijd van zien tot reageren."
+     },
+     {
+      "v": "Welk begrip hoort bij: \"de afstand die je aflegt tijdens het remmen\"?",
+      "o": [
+       "Remweg",
+       "Stopafstand",
+       "Reactietijd",
+       "Kracht"
+      ],
+      "c": 0,
+      "d": 3,
+      "u": "«Remweg»: de afstand die je aflegt tijdens het remmen.",
+      "uo": [
+       "Klopt, dit is «Remweg».",
+       "«Stopafstand» betekent reactieafstand plus remweg.",
+       "«Reactietijd» betekent tijd van zien tot reageren.",
+       "«Kracht» betekent duw of trek."
+      ],
+      "uh": "Onthoud: «Remweg» = afstand tijdens remmen."
+     },
+     {
+      "v": "Welke term hoort bij \"afstand tijdens remmen\"?",
+      "o": [
+       "Kracht",
+       "Remweg",
+       "Zwaartekracht",
+       "Evenwicht"
+      ],
+      "c": 1,
+      "d": 2,
+      "u": "«Remweg»: de afstand die je aflegt tijdens het remmen.",
+      "uo": [
+       "«Kracht» betekent duw of trek.",
+       "Klopt, «Remweg» past hierbij.",
+       "«Zwaartekracht» betekent aantrekking van de aarde.",
+       "«Evenwicht» betekent krachten heffen elkaar op."
+      ],
+      "uh": "Onthoud: «Remweg» = afstand tijdens remmen."
+     }
+    ],
+    "begrippen": [
+     {
+      "t": "Kracht",
+      "d": "een duw of trek die een voorwerp kan vervormen of versnellen"
+     },
+     {
+      "t": "Zwaartekracht",
+      "d": "de kracht waarmee de aarde aan massa trekt"
+     },
+     {
+      "t": "Newton",
+      "d": "de eenheid van kracht"
+     },
+     {
+      "t": "Resultante",
+      "d": "de som van alle krachten op een voorwerp"
+     },
+     {
+      "t": "Evenwicht",
+      "d": "de toestand waarin de krachten elkaar opheffen"
+     },
+     {
+      "t": "Hefboom",
+      "d": "een staaf die om een draaipunt draait om kracht te vergroten"
+     },
+     {
+      "t": "Draaipunt",
+      "d": "het vaste punt waar een hefboom omheen draait"
+     },
+     {
+      "t": "Moment",
+      "d": "het draai-effect van een kracht: kracht maal arm"
+     },
+     {
+      "t": "Remweg",
+      "d": "de afstand die je aflegt tijdens het remmen"
+     },
+     {
+      "t": "Reactietijd",
+      "d": "de tijd tussen iets zien en erop reageren"
+     },
+     {
+      "t": "Stopafstand",
+      "d": "de reactieafstand plus de remweg"
+     },
+     {
+      "t": "Wrijvingskracht",
+      "d": "een kracht die beweging tegenwerkt"
+     }
+    ],
+    "sam": "<p>Een <b>kracht</b> is een duw of trek, gemeten in <b>newton</b>. Meerdere krachten vormen samen de <b>resultante</b>; heffen ze elkaar op, dan is er <b>evenwicht</b>. Een <b>hefboom</b> vergroot kracht rond een <b>draaipunt</b>. Je <b>stopafstand</b> is de reactieafstand plus de <b>remweg</b>.</p>"
    },
    {
     "id": "G",
@@ -508,7 +3798,554 @@ var VAKKEN_VMBO = [
     ],
     "nSv": 0,
     "nOe": 0,
-    "nBeg": 0
+    "nBeg": 0,
+    "sv": [
+     {
+      "v": "Welk begrip hoort bij: \"het kleinste deeltje van een element\"?",
+      "o": [
+       "Atoom",
+       "Molecuul",
+       "Ion",
+       "Scheiden"
+      ],
+      "c": 0,
+      "d": 3,
+      "u": "«Atoom»: het kleinste deeltje van een element.",
+      "uo": [
+       "Klopt, dit is «Atoom».",
+       "«Molecuul» betekent groepje atomen.",
+       "«Ion» betekent geladen atoom.",
+       "«Scheiden» betekent mengsel uit elkaar halen."
+      ],
+      "uh": "Onthoud: «Atoom» = kleinste deeltje."
+     },
+     {
+      "v": "Welke term hoort bij \"kleinste deeltje\"?",
+      "o": [
+       "Ion",
+       "Atoom",
+       "Scheiden",
+       "Proton"
+      ],
+      "c": 1,
+      "d": 2,
+      "u": "«Atoom»: het kleinste deeltje van een element.",
+      "uo": [
+       "«Ion» betekent geladen atoom.",
+       "Klopt, «Atoom» past hierbij.",
+       "«Scheiden» betekent mengsel uit elkaar halen.",
+       "«Proton» betekent positief deeltje in de kern."
+      ],
+      "uh": "Onthoud: «Atoom» = kleinste deeltje."
+     },
+     {
+      "v": "Wat betekent «Atoom»?",
+      "o": [
+       "een groepje atomen dat aan elkaar zit",
+       "een atoom met een elektrische lading",
+       "het kleinste deeltje van een element",
+       "een mengsel uit elkaar halen in zuivere stoffen"
+      ],
+      "c": 2,
+      "d": 1,
+      "u": "«Atoom»: het kleinste deeltje van een element.",
+      "uo": [
+       "Dat is «Molecuul».",
+       "Dat is «Ion».",
+       "Klopt: kleinste deeltje.",
+       "Dat is «Scheiden»."
+      ],
+      "uh": "Onthoud: «Atoom» = kleinste deeltje."
+     },
+     {
+      "v": "Welk begrip hoort bij: \"een groepje atomen dat aan elkaar zit\"?",
+      "o": [
+       "Atoom",
+       "Ion",
+       "Scheiden",
+       "Molecuul"
+      ],
+      "c": 3,
+      "d": 3,
+      "u": "«Molecuul»: een groepje atomen dat aan elkaar zit.",
+      "uo": [
+       "«Atoom» betekent kleinste deeltje.",
+       "«Ion» betekent geladen atoom.",
+       "«Scheiden» betekent mengsel uit elkaar halen.",
+       "Klopt, dit is «Molecuul»."
+      ],
+      "uh": "Onthoud: «Molecuul» = groepje atomen."
+     },
+     {
+      "v": "Welke term hoort bij \"groepje atomen\"?",
+      "o": [
+       "Molecuul",
+       "Ion",
+       "Scheiden",
+       "Element"
+      ],
+      "c": 0,
+      "d": 2,
+      "u": "«Molecuul»: een groepje atomen dat aan elkaar zit.",
+      "uo": [
+       "Klopt, «Molecuul» past hierbij.",
+       "«Ion» betekent geladen atoom.",
+       "«Scheiden» betekent mengsel uit elkaar halen.",
+       "«Element» betekent één soort atomen."
+      ],
+      "uh": "Onthoud: «Molecuul» = groepje atomen."
+     },
+     {
+      "v": "Wat betekent «Molecuul»?",
+      "o": [
+       "het kleinste deeltje van een element",
+       "een groepje atomen dat aan elkaar zit",
+       "een atoom met een elektrische lading",
+       "een mengsel uit elkaar halen in zuivere stoffen"
+      ],
+      "c": 1,
+      "d": 1,
+      "u": "«Molecuul»: een groepje atomen dat aan elkaar zit.",
+      "uo": [
+       "Dat is «Atoom».",
+       "Klopt: groepje atomen.",
+       "Dat is «Ion».",
+       "Dat is «Scheiden»."
+      ],
+      "uh": "Onthoud: «Molecuul» = groepje atomen."
+     },
+     {
+      "v": "Welk begrip hoort bij: \"een stof die uit één soort atomen bestaat\"?",
+      "o": [
+       "Verbinding",
+       "Elektron",
+       "Element",
+       "Mengsel"
+      ],
+      "c": 2,
+      "d": 3,
+      "u": "«Element»: een stof die uit één soort atomen bestaat.",
+      "uo": [
+       "«Verbinding» betekent meerdere soorten atomen.",
+       "«Elektron» betekent negatief deeltje.",
+       "Klopt, dit is «Element».",
+       "«Mengsel» betekent deeltjes door elkaar."
+      ],
+      "uh": "Onthoud: «Element» = één soort atomen."
+     },
+     {
+      "v": "Welke term hoort bij \"één soort atomen\"?",
+      "o": [
+       "Elektron",
+       "Mengsel",
+       "Scheiden",
+       "Element"
+      ],
+      "c": 3,
+      "d": 2,
+      "u": "«Element»: een stof die uit één soort atomen bestaat.",
+      "uo": [
+       "«Elektron» betekent negatief deeltje.",
+       "«Mengsel» betekent deeltjes door elkaar.",
+       "«Scheiden» betekent mengsel uit elkaar halen.",
+       "Klopt, «Element» past hierbij."
+      ],
+      "uh": "Onthoud: «Element» = één soort atomen."
+     },
+     {
+      "v": "Wat betekent «Element»?",
+      "o": [
+       "een stof die uit één soort atomen bestaat",
+       "een stof die uit meerdere soorten atomen bestaat",
+       "een negatief geladen deeltje om de kern",
+       "een stof die uit meerdere soorten deeltjes door elkaar bestaat"
+      ],
+      "c": 0,
+      "d": 1,
+      "u": "«Element»: een stof die uit één soort atomen bestaat.",
+      "uo": [
+       "Klopt: één soort atomen.",
+       "Dat is «Verbinding».",
+       "Dat is «Elektron».",
+       "Dat is «Mengsel»."
+      ],
+      "uh": "Onthoud: «Element» = één soort atomen."
+     },
+     {
+      "v": "Welk begrip hoort bij: \"een stof die uit meerdere soorten deeltjes door elkaar bestaat\"?",
+      "o": [
+       "Zuivere stof",
+       "Mengsel",
+       "Elektron",
+       "Verbinding"
+      ],
+      "c": 1,
+      "d": 3,
+      "u": "«Mengsel»: een stof die uit meerdere soorten deeltjes door elkaar bestaat.",
+      "uo": [
+       "«Zuivere stof» betekent één soort deeltjes.",
+       "Klopt, dit is «Mengsel».",
+       "«Elektron» betekent negatief deeltje.",
+       "«Verbinding» betekent meerdere soorten atomen."
+      ],
+      "uh": "Onthoud: «Mengsel» = deeltjes door elkaar."
+     },
+     {
+      "v": "Welke term hoort bij \"deeltjes door elkaar\"?",
+      "o": [
+       "Elektron",
+       "Verbinding",
+       "Mengsel",
+       "Scheiden"
+      ],
+      "c": 2,
+      "d": 2,
+      "u": "«Mengsel»: een stof die uit meerdere soorten deeltjes door elkaar bestaat.",
+      "uo": [
+       "«Elektron» betekent negatief deeltje.",
+       "«Verbinding» betekent meerdere soorten atomen.",
+       "Klopt, «Mengsel» past hierbij.",
+       "«Scheiden» betekent mengsel uit elkaar halen."
+      ],
+      "uh": "Onthoud: «Mengsel» = deeltjes door elkaar."
+     },
+     {
+      "v": "Wat betekent «Zuivere stof»?",
+      "o": [
+       "een stof die uit meerdere soorten deeltjes door elkaar bestaat",
+       "een negatief geladen deeltje om de kern",
+       "het midden van een atoom met protonen en neutronen",
+       "een stof die uit één soort deeltjes bestaat"
+      ],
+      "c": 3,
+      "d": 1,
+      "u": "«Zuivere stof»: een stof die uit één soort deeltjes bestaat.",
+      "uo": [
+       "Dat is «Mengsel».",
+       "Dat is «Elektron».",
+       "Dat is «Atoomkern».",
+       "Klopt: één soort deeltjes."
+      ],
+      "uh": "Onthoud: «Zuivere stof» = één soort deeltjes."
+     },
+     {
+      "v": "Welk begrip hoort bij: \"een negatief geladen deeltje om de kern\"?",
+      "o": [
+       "Elektron",
+       "Proton",
+       "Neutron",
+       "Zuivere stof"
+      ],
+      "c": 0,
+      "d": 3,
+      "u": "«Elektron»: een negatief geladen deeltje om de kern.",
+      "uo": [
+       "Klopt, dit is «Elektron».",
+       "«Proton» betekent positief deeltje in de kern.",
+       "«Neutron» betekent ongeladen deeltje.",
+       "«Zuivere stof» betekent één soort deeltjes."
+      ],
+      "uh": "Onthoud: «Elektron» = negatief deeltje."
+     },
+     {
+      "v": "Welke term hoort bij \"negatief deeltje\"?",
+      "o": [
+       "Zuivere stof",
+       "Elektron",
+       "Atoom",
+       "Scheiden"
+      ],
+      "c": 1,
+      "d": 2,
+      "u": "«Elektron»: een negatief geladen deeltje om de kern.",
+      "uo": [
+       "«Zuivere stof» betekent één soort deeltjes.",
+       "Klopt, «Elektron» past hierbij.",
+       "«Atoom» betekent kleinste deeltje.",
+       "«Scheiden» betekent mengsel uit elkaar halen."
+      ],
+      "uh": "Onthoud: «Elektron» = negatief deeltje."
+     },
+     {
+      "v": "Wat betekent «Atoomkern»?",
+      "o": [
+       "een negatief geladen deeltje om de kern",
+       "een atoom met een elektrische lading",
+       "het midden van een atoom met protonen en neutronen",
+       "een stof die uit meerdere soorten deeltjes door elkaar bestaat"
+      ],
+      "c": 2,
+      "d": 1,
+      "u": "«Atoomkern»: het midden van een atoom met protonen en neutronen.",
+      "uo": [
+       "Dat is «Elektron».",
+       "Dat is «Ion».",
+       "Klopt: midden van het atoom.",
+       "Dat is «Mengsel»."
+      ],
+      "uh": "Onthoud: «Atoomkern» = midden van het atoom."
+     },
+     {
+      "v": "Welk begrip hoort bij: \"een positief geladen deeltje in de kern\"?",
+      "o": [
+       "Neutron",
+       "Elektron",
+       "Atoom",
+       "Proton"
+      ],
+      "c": 3,
+      "d": 3,
+      "u": "«Proton»: een positief geladen deeltje in de kern.",
+      "uo": [
+       "«Neutron» betekent ongeladen deeltje.",
+       "«Elektron» betekent negatief deeltje.",
+       "«Atoom» betekent kleinste deeltje.",
+       "Klopt, dit is «Proton»."
+      ],
+      "uh": "Onthoud: «Proton» = positief deeltje in de kern."
+     },
+     {
+      "v": "Welke term hoort bij \"positief deeltje in de kern\"?",
+      "o": [
+       "Proton",
+       "Atoom",
+       "Molecuul",
+       "Zuivere stof"
+      ],
+      "c": 0,
+      "d": 2,
+      "u": "«Proton»: een positief geladen deeltje in de kern.",
+      "uo": [
+       "Klopt, «Proton» past hierbij.",
+       "«Atoom» betekent kleinste deeltje.",
+       "«Molecuul» betekent groepje atomen.",
+       "«Zuivere stof» betekent één soort deeltjes."
+      ],
+      "uh": "Onthoud: «Proton» = positief deeltje in de kern."
+     },
+     {
+      "v": "Wat betekent «Elektron»?",
+      "o": [
+       "een positief geladen deeltje in de kern",
+       "een negatief geladen deeltje om de kern",
+       "een ongeladen deeltje in de kern",
+       "een stof die uit één soort deeltjes bestaat"
+      ],
+      "c": 1,
+      "d": 1,
+      "u": "«Elektron»: een negatief geladen deeltje om de kern.",
+      "uo": [
+       "Dat is «Proton».",
+       "Klopt: negatief deeltje.",
+       "Dat is «Neutron».",
+       "Dat is «Zuivere stof»."
+      ],
+      "uh": "Onthoud: «Elektron» = negatief deeltje."
+     },
+     {
+      "v": "Welk begrip hoort bij: \"een ongeladen deeltje in de kern\"?",
+      "o": [
+       "Proton",
+       "Elektron",
+       "Neutron",
+       "Verbinding"
+      ],
+      "c": 2,
+      "d": 3,
+      "u": "«Neutron»: een ongeladen deeltje in de kern.",
+      "uo": [
+       "«Proton» betekent positief deeltje in de kern.",
+       "«Elektron» betekent negatief deeltje.",
+       "Klopt, dit is «Neutron».",
+       "«Verbinding» betekent meerdere soorten atomen."
+      ],
+      "uh": "Onthoud: «Neutron» = ongeladen deeltje."
+     },
+     {
+      "v": "Welke term hoort bij \"ongeladen deeltje\"?",
+      "o": [
+       "Verbinding",
+       "Zuivere stof",
+       "Element",
+       "Neutron"
+      ],
+      "c": 3,
+      "d": 2,
+      "u": "«Neutron»: een ongeladen deeltje in de kern.",
+      "uo": [
+       "«Verbinding» betekent meerdere soorten atomen.",
+       "«Zuivere stof» betekent één soort deeltjes.",
+       "«Element» betekent één soort atomen.",
+       "Klopt, «Neutron» past hierbij."
+      ],
+      "uh": "Onthoud: «Neutron» = ongeladen deeltje."
+     },
+     {
+      "v": "Wat betekent «Proton»?",
+      "o": [
+       "een positief geladen deeltje in de kern",
+       "een ongeladen deeltje in de kern",
+       "een negatief geladen deeltje om de kern",
+       "het kleinste deeltje van een element"
+      ],
+      "c": 0,
+      "d": 1,
+      "u": "«Proton»: een positief geladen deeltje in de kern.",
+      "uo": [
+       "Klopt: positief deeltje in de kern.",
+       "Dat is «Neutron».",
+       "Dat is «Elektron».",
+       "Dat is «Atoom»."
+      ],
+      "uh": "Onthoud: «Proton» = positief deeltje in de kern."
+     },
+     {
+      "v": "Welk begrip hoort bij: \"een atoom met een elektrische lading\"?",
+      "o": [
+       "Atoom",
+       "Ion",
+       "Atoomkern",
+       "Scheiden"
+      ],
+      "c": 1,
+      "d": 3,
+      "u": "«Ion»: een atoom met een elektrische lading.",
+      "uo": [
+       "«Atoom» betekent kleinste deeltje.",
+       "Klopt, dit is «Ion».",
+       "«Atoomkern» betekent midden van het atoom.",
+       "«Scheiden» betekent mengsel uit elkaar halen."
+      ],
+      "uh": "Onthoud: «Ion» = geladen atoom."
+     },
+     {
+      "v": "Welke term hoort bij \"geladen atoom\"?",
+      "o": [
+       "Atoomkern",
+       "Scheiden",
+       "Ion",
+       "Neutron"
+      ],
+      "c": 2,
+      "d": 2,
+      "u": "«Ion»: een atoom met een elektrische lading.",
+      "uo": [
+       "«Atoomkern» betekent midden van het atoom.",
+       "«Scheiden» betekent mengsel uit elkaar halen.",
+       "Klopt, «Ion» past hierbij.",
+       "«Neutron» betekent ongeladen deeltje."
+      ],
+      "uh": "Onthoud: «Ion» = geladen atoom."
+     },
+     {
+      "v": "Wat betekent «Neutron»?",
+      "o": [
+       "een positief geladen deeltje in de kern",
+       "een negatief geladen deeltje om de kern",
+       "een stof die uit meerdere soorten atomen bestaat",
+       "een ongeladen deeltje in de kern"
+      ],
+      "c": 3,
+      "d": 1,
+      "u": "«Neutron»: een ongeladen deeltje in de kern.",
+      "uo": [
+       "Dat is «Proton».",
+       "Dat is «Elektron».",
+       "Dat is «Verbinding».",
+       "Klopt: ongeladen deeltje."
+      ],
+      "uh": "Onthoud: «Neutron» = ongeladen deeltje."
+     },
+     {
+      "v": "Wat betekent «Ion»?",
+      "o": [
+       "een atoom met een elektrische lading",
+       "het kleinste deeltje van een element",
+       "het midden van een atoom met protonen en neutronen",
+       "een mengsel uit elkaar halen in zuivere stoffen"
+      ],
+      "c": 0,
+      "d": 1,
+      "u": "«Ion»: een atoom met een elektrische lading.",
+      "uo": [
+       "Klopt: geladen atoom.",
+       "Dat is «Atoom».",
+       "Dat is «Atoomkern».",
+       "Dat is «Scheiden»."
+      ],
+      "uh": "Onthoud: «Ion» = geladen atoom."
+     },
+     {
+      "v": "Wat betekent «Scheiden»?",
+      "o": [
+       "een stof die uit meerdere soorten deeltjes door elkaar bestaat",
+       "een mengsel uit elkaar halen in zuivere stoffen",
+       "een ongeladen deeltje in de kern",
+       "een atoom met een elektrische lading"
+      ],
+      "c": 1,
+      "d": 1,
+      "u": "«Scheiden»: een mengsel uit elkaar halen in zuivere stoffen.",
+      "uo": [
+       "Dat is «Mengsel».",
+       "Klopt: mengsel uit elkaar halen.",
+       "Dat is «Neutron».",
+       "Dat is «Ion»."
+      ],
+      "uh": "Onthoud: «Scheiden» = mengsel uit elkaar halen."
+     }
+    ],
+    "begrippen": [
+     {
+      "t": "Atoom",
+      "d": "het kleinste deeltje van een element"
+     },
+     {
+      "t": "Molecuul",
+      "d": "een groepje atomen dat aan elkaar zit"
+     },
+     {
+      "t": "Element",
+      "d": "een stof die uit één soort atomen bestaat"
+     },
+     {
+      "t": "Verbinding",
+      "d": "een stof die uit meerdere soorten atomen bestaat"
+     },
+     {
+      "t": "Zuivere stof",
+      "d": "een stof die uit één soort deeltjes bestaat"
+     },
+     {
+      "t": "Mengsel",
+      "d": "een stof die uit meerdere soorten deeltjes door elkaar bestaat"
+     },
+     {
+      "t": "Atoomkern",
+      "d": "het midden van een atoom met protonen en neutronen"
+     },
+     {
+      "t": "Elektron",
+      "d": "een negatief geladen deeltje om de kern"
+     },
+     {
+      "t": "Proton",
+      "d": "een positief geladen deeltje in de kern"
+     },
+     {
+      "t": "Neutron",
+      "d": "een ongeladen deeltje in de kern"
+     },
+     {
+      "t": "Ion",
+      "d": "een atoom met een elektrische lading"
+     },
+     {
+      "t": "Scheiden",
+      "d": "een mengsel uit elkaar halen in zuivere stoffen"
+     }
+    ],
+    "sam": "<p>Alle stoffen bestaan uit <b>atomen</b>. Zitten atomen aan elkaar, dan vormen ze een <b>molecuul</b>. Een <b>element</b> bestaat uit één soort atomen, een <b>verbinding</b> uit meerdere. Een <b>zuivere stof</b> heeft één soort deeltjes; een <b>mengsel</b> meerdere.</p>"
    },
    {
     "id": "H",
@@ -523,7 +4360,554 @@ var VAKKEN_VMBO = [
     ],
     "nSv": 0,
     "nOe": 0,
-    "nBeg": 0
+    "nBeg": 0,
+    "sv": [
+     {
+      "v": "Welk begrip hoort bij: \"energie die zich door de ruimte verplaatst als golven of deeltjes\"?",
+      "o": [
+       "Straling",
+       "Radioactiviteit",
+       "Dosis",
+       "Geigerteller"
+      ],
+      "c": 0,
+      "d": 3,
+      "u": "«Straling»: energie die zich door de ruimte verplaatst als golven of deeltjes.",
+      "uo": [
+       "Klopt, dit is «Straling».",
+       "«Radioactiviteit» betekent kernen zenden straling uit.",
+       "«Dosis» betekent hoeveelheid straling.",
+       "«Geigerteller» betekent meet straling."
+      ],
+      "uh": "Onthoud: «Straling» = energie door de ruimte."
+     },
+     {
+      "v": "Welke term hoort bij \"energie door de ruimte\"?",
+      "o": [
+       "Dosis",
+       "Straling",
+       "Geigerteller",
+       "Alfastraling"
+      ],
+      "c": 1,
+      "d": 2,
+      "u": "«Straling»: energie die zich door de ruimte verplaatst als golven of deeltjes.",
+      "uo": [
+       "«Dosis» betekent hoeveelheid straling.",
+       "Klopt, «Straling» past hierbij.",
+       "«Geigerteller» betekent meet straling.",
+       "«Alfastraling» betekent zware geladen deeltjes."
+      ],
+      "uh": "Onthoud: «Straling» = energie door de ruimte."
+     },
+     {
+      "v": "Wat betekent «Radioactiviteit»?",
+      "o": [
+       "energie die zich door de ruimte verplaatst als golven of deeltjes",
+       "straling die deeltjes geladen kan maken",
+       "het uitzenden van straling door onstabiele kernen",
+       "de tijd waarin de helft van de kernen vervalt"
+      ],
+      "c": 2,
+      "d": 1,
+      "u": "«Radioactiviteit»: het uitzenden van straling door onstabiele kernen.",
+      "uo": [
+       "Dat is «Straling».",
+       "Dat is «Ioniserende straling».",
+       "Klopt: kernen zenden straling uit.",
+       "Dat is «Halveringstijd»."
+      ],
+      "uh": "Onthoud: «Radioactiviteit» = kernen zenden straling uit."
+     },
+     {
+      "v": "Welk begrip hoort bij: \"het uitzenden van straling door onstabiele kernen\"?",
+      "o": [
+       "Straling",
+       "Ioniserende straling",
+       "Halveringstijd",
+       "Radioactiviteit"
+      ],
+      "c": 3,
+      "d": 3,
+      "u": "«Radioactiviteit»: het uitzenden van straling door onstabiele kernen.",
+      "uo": [
+       "«Straling» betekent energie door de ruimte.",
+       "«Ioniserende straling» betekent maakt deeltjes geladen.",
+       "«Halveringstijd» betekent tijd tot de helft vervalt.",
+       "Klopt, dit is «Radioactiviteit»."
+      ],
+      "uh": "Onthoud: «Radioactiviteit» = kernen zenden straling uit."
+     },
+     {
+      "v": "Welke term hoort bij \"kernen zenden straling uit\"?",
+      "o": [
+       "Radioactiviteit",
+       "Ioniserende straling",
+       "Halveringstijd",
+       "Besmetting"
+      ],
+      "c": 0,
+      "d": 2,
+      "u": "«Radioactiviteit»: het uitzenden van straling door onstabiele kernen.",
+      "uo": [
+       "Klopt, «Radioactiviteit» past hierbij.",
+       "«Ioniserende straling» betekent maakt deeltjes geladen.",
+       "«Halveringstijd» betekent tijd tot de helft vervalt.",
+       "«Besmetting» betekent radioactief materiaal aan je."
+      ],
+      "uh": "Onthoud: «Radioactiviteit» = kernen zenden straling uit."
+     },
+     {
+      "v": "Wat betekent «Betastraling»?",
+      "o": [
+       "straling van zware, positief geladen deeltjes",
+       "straling van snelle elektronen",
+       "zeer doordringende straling zonder lading",
+       "radioactief materiaal op of in het lichaam"
+      ],
+      "c": 1,
+      "d": 1,
+      "u": "«Betastraling»: straling van snelle elektronen.",
+      "uo": [
+       "Dat is «Alfastraling».",
+       "Klopt: snelle elektronen.",
+       "Dat is «Gammastraling».",
+       "Dat is «Besmetting»."
+      ],
+      "uh": "Onthoud: «Betastraling» = snelle elektronen."
+     },
+     {
+      "v": "Welk begrip hoort bij: \"straling van zware, positief geladen deeltjes\"?",
+      "o": [
+       "Betastraling",
+       "Gammastraling",
+       "Alfastraling",
+       "Besmetting"
+      ],
+      "c": 2,
+      "d": 3,
+      "u": "«Alfastraling»: straling van zware, positief geladen deeltjes.",
+      "uo": [
+       "«Betastraling» betekent snelle elektronen.",
+       "«Gammastraling» betekent doordringend, geen lading.",
+       "Klopt, dit is «Alfastraling».",
+       "«Besmetting» betekent radioactief materiaal aan je."
+      ],
+      "uh": "Onthoud: «Alfastraling» = zware geladen deeltjes."
+     },
+     {
+      "v": "Welke term hoort bij \"zware geladen deeltjes\"?",
+      "o": [
+       "Besmetting",
+       "Straling",
+       "Geigerteller",
+       "Alfastraling"
+      ],
+      "c": 3,
+      "d": 2,
+      "u": "«Alfastraling»: straling van zware, positief geladen deeltjes.",
+      "uo": [
+       "«Besmetting» betekent radioactief materiaal aan je.",
+       "«Straling» betekent energie door de ruimte.",
+       "«Geigerteller» betekent meet straling.",
+       "Klopt, «Alfastraling» past hierbij."
+      ],
+      "uh": "Onthoud: «Alfastraling» = zware geladen deeltjes."
+     },
+     {
+      "v": "Wat betekent «Gammastraling»?",
+      "o": [
+       "zeer doordringende straling zonder lading",
+       "straling van zware, positief geladen deeltjes",
+       "straling van snelle elektronen",
+       "radioactief materiaal op of in het lichaam"
+      ],
+      "c": 0,
+      "d": 1,
+      "u": "«Gammastraling»: zeer doordringende straling zonder lading.",
+      "uo": [
+       "Klopt: doordringend, geen lading.",
+       "Dat is «Alfastraling».",
+       "Dat is «Betastraling».",
+       "Dat is «Besmetting»."
+      ],
+      "uh": "Onthoud: «Gammastraling» = doordringend, geen lading."
+     },
+     {
+      "v": "Welk begrip hoort bij: \"straling van snelle elektronen\"?",
+      "o": [
+       "Alfastraling",
+       "Betastraling",
+       "Gammastraling",
+       "Besmetting"
+      ],
+      "c": 1,
+      "d": 3,
+      "u": "«Betastraling»: straling van snelle elektronen.",
+      "uo": [
+       "«Alfastraling» betekent zware geladen deeltjes.",
+       "Klopt, dit is «Betastraling».",
+       "«Gammastraling» betekent doordringend, geen lading.",
+       "«Besmetting» betekent radioactief materiaal aan je."
+      ],
+      "uh": "Onthoud: «Betastraling» = snelle elektronen."
+     },
+     {
+      "v": "Welke term hoort bij \"snelle elektronen\"?",
+      "o": [
+       "Besmetting",
+       "Straling",
+       "Betastraling",
+       "Geigerteller"
+      ],
+      "c": 2,
+      "d": 2,
+      "u": "«Betastraling»: straling van snelle elektronen.",
+      "uo": [
+       "«Besmetting» betekent radioactief materiaal aan je.",
+       "«Straling» betekent energie door de ruimte.",
+       "Klopt, «Betastraling» past hierbij.",
+       "«Geigerteller» betekent meet straling."
+      ],
+      "uh": "Onthoud: «Betastraling» = snelle elektronen."
+     },
+     {
+      "v": "Wat betekent «Ioniserende straling»?",
+      "o": [
+       "energie die zich door de ruimte verplaatst als golven of deeltjes",
+       "zeer doordringende straling zonder lading",
+       "straling van zware, positief geladen deeltjes",
+       "straling die deeltjes geladen kan maken"
+      ],
+      "c": 3,
+      "d": 1,
+      "u": "«Ioniserende straling»: straling die deeltjes geladen kan maken.",
+      "uo": [
+       "Dat is «Straling».",
+       "Dat is «Gammastraling».",
+       "Dat is «Alfastraling».",
+       "Klopt: maakt deeltjes geladen."
+      ],
+      "uh": "Onthoud: «Ioniserende straling» = maakt deeltjes geladen."
+     },
+     {
+      "v": "Welk begrip hoort bij: \"radioactief materiaal op of in het lichaam\"?",
+      "o": [
+       "Besmetting",
+       "Bestraling",
+       "Radioactiviteit",
+       "Straling"
+      ],
+      "c": 0,
+      "d": 3,
+      "u": "«Besmetting»: radioactief materiaal op of in het lichaam.",
+      "uo": [
+       "Klopt, dit is «Besmetting».",
+       "«Bestraling» betekent straling van buitenaf.",
+       "«Radioactiviteit» betekent kernen zenden straling uit.",
+       "«Straling» betekent energie door de ruimte."
+      ],
+      "uh": "Onthoud: «Besmetting» = radioactief materiaal aan je."
+     },
+     {
+      "v": "Welke term hoort bij \"tijd tot de helft vervalt\"?",
+      "o": [
+       "Betastraling",
+       "Halveringstijd",
+       "Geigerteller",
+       "Ioniserende straling"
+      ],
+      "c": 1,
+      "d": 2,
+      "u": "«Halveringstijd»: de tijd waarin de helft van de kernen vervalt.",
+      "uo": [
+       "«Betastraling» betekent snelle elektronen.",
+       "Klopt, «Halveringstijd» past hierbij.",
+       "«Geigerteller» betekent meet straling.",
+       "«Ioniserende straling» betekent maakt deeltjes geladen."
+      ],
+      "uh": "Onthoud: «Halveringstijd» = tijd tot de helft vervalt."
+     },
+     {
+      "v": "Wat betekent «Besmetting»?",
+      "o": [
+       "blootstelling aan straling van buitenaf",
+       "het uitzenden van straling door onstabiele kernen",
+       "radioactief materiaal op of in het lichaam",
+       "energie die zich door de ruimte verplaatst als golven of deeltjes"
+      ],
+      "c": 2,
+      "d": 1,
+      "u": "«Besmetting»: radioactief materiaal op of in het lichaam.",
+      "uo": [
+       "Dat is «Bestraling».",
+       "Dat is «Radioactiviteit».",
+       "Klopt: radioactief materiaal aan je.",
+       "Dat is «Straling»."
+      ],
+      "uh": "Onthoud: «Besmetting» = radioactief materiaal aan je."
+     },
+     {
+      "v": "Welk begrip hoort bij: \"blootstelling aan straling van buitenaf\"?",
+      "o": [
+       "Besmetting",
+       "Radioactiviteit",
+       "Straling",
+       "Bestraling"
+      ],
+      "c": 3,
+      "d": 3,
+      "u": "«Bestraling»: blootstelling aan straling van buitenaf.",
+      "uo": [
+       "«Besmetting» betekent radioactief materiaal aan je.",
+       "«Radioactiviteit» betekent kernen zenden straling uit.",
+       "«Straling» betekent energie door de ruimte.",
+       "Klopt, dit is «Bestraling»."
+      ],
+      "uh": "Onthoud: «Bestraling» = straling van buitenaf."
+     },
+     {
+      "v": "Welke term hoort bij \"radioactief materiaal aan je\"?",
+      "o": [
+       "Besmetting",
+       "Radioactiviteit",
+       "Straling",
+       "Ioniserende straling"
+      ],
+      "c": 0,
+      "d": 2,
+      "u": "«Besmetting»: radioactief materiaal op of in het lichaam.",
+      "uo": [
+       "Klopt, «Besmetting» past hierbij.",
+       "«Radioactiviteit» betekent kernen zenden straling uit.",
+       "«Straling» betekent energie door de ruimte.",
+       "«Ioniserende straling» betekent maakt deeltjes geladen."
+      ],
+      "uh": "Onthoud: «Besmetting» = radioactief materiaal aan je."
+     },
+     {
+      "v": "Wat betekent «Bestraling»?",
+      "o": [
+       "radioactief materiaal op of in het lichaam",
+       "blootstelling aan straling van buitenaf",
+       "het uitzenden van straling door onstabiele kernen",
+       "energie die zich door de ruimte verplaatst als golven of deeltjes"
+      ],
+      "c": 1,
+      "d": 1,
+      "u": "«Bestraling»: blootstelling aan straling van buitenaf.",
+      "uo": [
+       "Dat is «Besmetting».",
+       "Klopt: straling van buitenaf.",
+       "Dat is «Radioactiviteit».",
+       "Dat is «Straling»."
+      ],
+      "uh": "Onthoud: «Bestraling» = straling van buitenaf."
+     },
+     {
+      "v": "Welk begrip hoort bij: \"het tegenhouden van straling met een laag materiaal\"?",
+      "o": [
+       "Halveringstijd",
+       "Gammastraling",
+       "Afscherming",
+       "Betastraling"
+      ],
+      "c": 2,
+      "d": 3,
+      "u": "«Afscherming»: het tegenhouden van straling met een laag materiaal.",
+      "uo": [
+       "«Halveringstijd» betekent tijd tot de helft vervalt.",
+       "«Gammastraling» betekent doordringend, geen lading.",
+       "Klopt, dit is «Afscherming».",
+       "«Betastraling» betekent snelle elektronen."
+      ],
+      "uh": "Onthoud: «Afscherming» = straling tegenhouden."
+     },
+     {
+      "v": "Welke term hoort bij \"straling van buitenaf\"?",
+      "o": [
+       "Radioactiviteit",
+       "Straling",
+       "Ioniserende straling",
+       "Bestraling"
+      ],
+      "c": 3,
+      "d": 2,
+      "u": "«Bestraling»: blootstelling aan straling van buitenaf.",
+      "uo": [
+       "«Radioactiviteit» betekent kernen zenden straling uit.",
+       "«Straling» betekent energie door de ruimte.",
+       "«Ioniserende straling» betekent maakt deeltjes geladen.",
+       "Klopt, «Bestraling» past hierbij."
+      ],
+      "uh": "Onthoud: «Bestraling» = straling van buitenaf."
+     },
+     {
+      "v": "Wat betekent «Dosis»?",
+      "o": [
+       "de hoeveelheid ontvangen straling",
+       "de tijd waarin de helft van de kernen vervalt",
+       "het tegenhouden van straling met een laag materiaal",
+       "een apparaat dat straling meet"
+      ],
+      "c": 0,
+      "d": 1,
+      "u": "«Dosis»: de hoeveelheid ontvangen straling.",
+      "uo": [
+       "Klopt: hoeveelheid straling.",
+       "Dat is «Halveringstijd».",
+       "Dat is «Afscherming».",
+       "Dat is «Geigerteller»."
+      ],
+      "uh": "Onthoud: «Dosis» = hoeveelheid straling."
+     },
+     {
+      "v": "Welk begrip hoort bij: \"de hoeveelheid ontvangen straling\"?",
+      "o": [
+       "Halveringstijd",
+       "Dosis",
+       "Afscherming",
+       "Geigerteller"
+      ],
+      "c": 1,
+      "d": 3,
+      "u": "«Dosis»: de hoeveelheid ontvangen straling.",
+      "uo": [
+       "«Halveringstijd» betekent tijd tot de helft vervalt.",
+       "Klopt, dit is «Dosis».",
+       "«Afscherming» betekent straling tegenhouden.",
+       "«Geigerteller» betekent meet straling."
+      ],
+      "uh": "Onthoud: «Dosis» = hoeveelheid straling."
+     },
+     {
+      "v": "Welke term hoort bij \"straling tegenhouden\"?",
+      "o": [
+       "Gammastraling",
+       "Betastraling",
+       "Afscherming",
+       "Straling"
+      ],
+      "c": 2,
+      "d": 2,
+      "u": "«Afscherming»: het tegenhouden van straling met een laag materiaal.",
+      "uo": [
+       "«Gammastraling» betekent doordringend, geen lading.",
+       "«Betastraling» betekent snelle elektronen.",
+       "Klopt, «Afscherming» past hierbij.",
+       "«Straling» betekent energie door de ruimte."
+      ],
+      "uh": "Onthoud: «Afscherming» = straling tegenhouden."
+     },
+     {
+      "v": "Wat betekent «Geigerteller»?",
+      "o": [
+       "de hoeveelheid ontvangen straling",
+       "straling die deeltjes geladen kan maken",
+       "zeer doordringende straling zonder lading",
+       "een apparaat dat straling meet"
+      ],
+      "c": 3,
+      "d": 1,
+      "u": "«Geigerteller»: een apparaat dat straling meet.",
+      "uo": [
+       "Dat is «Dosis».",
+       "Dat is «Ioniserende straling».",
+       "Dat is «Gammastraling».",
+       "Klopt: meet straling."
+      ],
+      "uh": "Onthoud: «Geigerteller» = meet straling."
+     },
+     {
+      "v": "Welk begrip hoort bij: \"een apparaat dat straling meet\"?",
+      "o": [
+       "Geigerteller",
+       "Dosis",
+       "Ioniserende straling",
+       "Gammastraling"
+      ],
+      "c": 0,
+      "d": 3,
+      "u": "«Geigerteller»: een apparaat dat straling meet.",
+      "uo": [
+       "Klopt, dit is «Geigerteller».",
+       "«Dosis» betekent hoeveelheid straling.",
+       "«Ioniserende straling» betekent maakt deeltjes geladen.",
+       "«Gammastraling» betekent doordringend, geen lading."
+      ],
+      "uh": "Onthoud: «Geigerteller» = meet straling."
+     },
+     {
+      "v": "Welke term hoort bij \"hoeveelheid straling\"?",
+      "o": [
+       "Afscherming",
+       "Dosis",
+       "Geigerteller",
+       "Besmetting"
+      ],
+      "c": 1,
+      "d": 2,
+      "u": "«Dosis»: de hoeveelheid ontvangen straling.",
+      "uo": [
+       "«Afscherming» betekent straling tegenhouden.",
+       "Klopt, «Dosis» past hierbij.",
+       "«Geigerteller» betekent meet straling.",
+       "«Besmetting» betekent radioactief materiaal aan je."
+      ],
+      "uh": "Onthoud: «Dosis» = hoeveelheid straling."
+     }
+    ],
+    "begrippen": [
+     {
+      "t": "Straling",
+      "d": "energie die zich door de ruimte verplaatst als golven of deeltjes"
+     },
+     {
+      "t": "Radioactiviteit",
+      "d": "het uitzenden van straling door onstabiele kernen"
+     },
+     {
+      "t": "Alfastraling",
+      "d": "straling van zware, positief geladen deeltjes"
+     },
+     {
+      "t": "Betastraling",
+      "d": "straling van snelle elektronen"
+     },
+     {
+      "t": "Gammastraling",
+      "d": "zeer doordringende straling zonder lading"
+     },
+     {
+      "t": "Ioniserende straling",
+      "d": "straling die deeltjes geladen kan maken"
+     },
+     {
+      "t": "Halveringstijd",
+      "d": "de tijd waarin de helft van de kernen vervalt"
+     },
+     {
+      "t": "Besmetting",
+      "d": "radioactief materiaal op of in het lichaam"
+     },
+     {
+      "t": "Bestraling",
+      "d": "blootstelling aan straling van buitenaf"
+     },
+     {
+      "t": "Afscherming",
+      "d": "het tegenhouden van straling met een laag materiaal"
+     },
+     {
+      "t": "Dosis",
+      "d": "de hoeveelheid ontvangen straling"
+     },
+     {
+      "t": "Geigerteller",
+      "d": "een apparaat dat straling meet"
+     }
+    ],
+    "sam": "<p><b>Radioactiviteit</b> is het uitzenden van <b>straling</b> door onstabiele kernen. Er zijn drie soorten: <b>alfa</b>, <b>bèta</b> en <b>gamma</b>. <b>Ioniserende straling</b> kan schadelijk zijn; met <b>afscherming</b> en afstand bescherm je jezelf. De <b>halveringstijd</b> zegt hoe snel de straling afneemt.</p>"
    },
    {
     "id": "I",
@@ -9730,7 +14114,554 @@ var VAKKEN_VMBO = [
     ],
     "nSv": 0,
     "nOe": 0,
-    "nBeg": 0
+    "nBeg": 0,
+    "sv": [
+     {
+      "v": "Welk begrip hoort bij: \"de gewoonten, gebruiken en waarden van een groep\"?",
+      "o": [
+       "Cultuur",
+       "Mentaliteit",
+       "Tolerantie",
+       "Traditie"
+      ],
+      "c": 0,
+      "d": 3,
+      "u": "«Cultuur»: de gewoonten, gebruiken en waarden van een groep.",
+      "uo": [
+       "Klopt, dit is «Cultuur».",
+       "«Mentaliteit» betekent manier van denken.",
+       "«Tolerantie» betekent anderen verdragen.",
+       "«Traditie» betekent overgeleverde gewoonte."
+      ],
+      "uh": "Onthoud: «Cultuur» = gewoonten en waarden."
+     },
+     {
+      "v": "Welke term hoort bij \"gewoonten en waarden\"?",
+      "o": [
+       "Tolerantie",
+       "Cultuur",
+       "Traditie",
+       "Identiteit"
+      ],
+      "c": 1,
+      "d": 2,
+      "u": "«Cultuur»: de gewoonten, gebruiken en waarden van een groep.",
+      "uo": [
+       "«Tolerantie» betekent anderen verdragen.",
+       "Klopt, «Cultuur» past hierbij.",
+       "«Traditie» betekent overgeleverde gewoonte.",
+       "«Identiteit» betekent gevoel van erbij horen."
+      ],
+      "uh": "Onthoud: «Cultuur» = gewoonten en waarden."
+     },
+     {
+      "v": "Wat betekent «Cultuur»?",
+      "o": [
+       "de manier van denken van mensen in een bepaalde tijd",
+       "het verdragen van andere meningen en geloven",
+       "de gewoonten, gebruiken en waarden van een groep",
+       "een gewoonte die van generatie op generatie overgaat"
+      ],
+      "c": 2,
+      "d": 1,
+      "u": "«Cultuur»: de gewoonten, gebruiken en waarden van een groep.",
+      "uo": [
+       "Dat is «Mentaliteit».",
+       "Dat is «Tolerantie».",
+       "Klopt: gewoonten en waarden.",
+       "Dat is «Traditie»."
+      ],
+      "uh": "Onthoud: «Cultuur» = gewoonten en waarden."
+     },
+     {
+      "v": "Welk begrip hoort bij: \"de manier van denken van mensen in een bepaalde tijd\"?",
+      "o": [
+       "Cultuur",
+       "Secularisatie",
+       "Traditie",
+       "Mentaliteit"
+      ],
+      "c": 3,
+      "d": 3,
+      "u": "«Mentaliteit»: de manier van denken van mensen in een bepaalde tijd.",
+      "uo": [
+       "«Cultuur» betekent gewoonten en waarden.",
+       "«Secularisatie» betekent religie wordt minder.",
+       "«Traditie» betekent overgeleverde gewoonte.",
+       "Klopt, dit is «Mentaliteit»."
+      ],
+      "uh": "Onthoud: «Mentaliteit» = manier van denken."
+     },
+     {
+      "v": "Welke term hoort bij \"manier van denken\"?",
+      "o": [
+       "Mentaliteit",
+       "Secularisatie",
+       "Traditie",
+       "Waarden"
+      ],
+      "c": 0,
+      "d": 2,
+      "u": "«Mentaliteit»: de manier van denken van mensen in een bepaalde tijd.",
+      "uo": [
+       "Klopt, «Mentaliteit» past hierbij.",
+       "«Secularisatie» betekent religie wordt minder.",
+       "«Traditie» betekent overgeleverde gewoonte.",
+       "«Waarden» betekent wat men belangrijk vindt."
+      ],
+      "uh": "Onthoud: «Mentaliteit» = manier van denken."
+     },
+     {
+      "v": "Wat betekent «Mentaliteit»?",
+      "o": [
+       "de gewoonten, gebruiken en waarden van een groep",
+       "de manier van denken van mensen in een bepaalde tijd",
+       "het minder belangrijk worden van religie",
+       "een gewoonte die van generatie op generatie overgaat"
+      ],
+      "c": 1,
+      "d": 1,
+      "u": "«Mentaliteit»: de manier van denken van mensen in een bepaalde tijd.",
+      "uo": [
+       "Dat is «Cultuur».",
+       "Klopt: manier van denken.",
+       "Dat is «Secularisatie».",
+       "Dat is «Traditie»."
+      ],
+      "uh": "Onthoud: «Mentaliteit» = manier van denken."
+     },
+     {
+      "v": "Welk begrip hoort bij: \"wat mensen belangrijk en nastrevenswaardig vinden\"?",
+      "o": [
+       "Normen",
+       "Tolerantie",
+       "Waarden",
+       "Traditie"
+      ],
+      "c": 2,
+      "d": 3,
+      "u": "«Waarden»: wat mensen belangrijk en nastrevenswaardig vinden.",
+      "uo": [
+       "«Normen» betekent gedragsregels.",
+       "«Tolerantie» betekent anderen verdragen.",
+       "Klopt, dit is «Waarden».",
+       "«Traditie» betekent overgeleverde gewoonte."
+      ],
+      "uh": "Onthoud: «Waarden» = wat men belangrijk vindt."
+     },
+     {
+      "v": "Welke term hoort bij \"wat men belangrijk vindt\"?",
+      "o": [
+       "Tolerantie",
+       "Traditie",
+       "Identiteit",
+       "Waarden"
+      ],
+      "c": 3,
+      "d": 2,
+      "u": "«Waarden»: wat mensen belangrijk en nastrevenswaardig vinden.",
+      "uo": [
+       "«Tolerantie» betekent anderen verdragen.",
+       "«Traditie» betekent overgeleverde gewoonte.",
+       "«Identiteit» betekent gevoel van erbij horen.",
+       "Klopt, «Waarden» past hierbij."
+      ],
+      "uh": "Onthoud: «Waarden» = wat men belangrijk vindt."
+     },
+     {
+      "v": "Wat betekent «Waarden»?",
+      "o": [
+       "wat mensen belangrijk en nastrevenswaardig vinden",
+       "regels over hoe je je hoort te gedragen",
+       "het verdragen van andere meningen en geloven",
+       "een gewoonte die van generatie op generatie overgaat"
+      ],
+      "c": 0,
+      "d": 1,
+      "u": "«Waarden»: wat mensen belangrijk en nastrevenswaardig vinden.",
+      "uo": [
+       "Klopt: wat men belangrijk vindt.",
+       "Dat is «Normen».",
+       "Dat is «Tolerantie».",
+       "Dat is «Traditie»."
+      ],
+      "uh": "Onthoud: «Waarden» = wat men belangrijk vindt."
+     },
+     {
+      "v": "Welk begrip hoort bij: \"regels over hoe je je hoort te gedragen\"?",
+      "o": [
+       "Waarden",
+       "Normen",
+       "Mentaliteit",
+       "Cultuur"
+      ],
+      "c": 1,
+      "d": 3,
+      "u": "«Normen»: regels over hoe je je hoort te gedragen.",
+      "uo": [
+       "«Waarden» betekent wat men belangrijk vindt.",
+       "Klopt, dit is «Normen».",
+       "«Mentaliteit» betekent manier van denken.",
+       "«Cultuur» betekent gewoonten en waarden."
+      ],
+      "uh": "Onthoud: «Normen» = gedragsregels."
+     },
+     {
+      "v": "Welke term hoort bij \"gedragsregels\"?",
+      "o": [
+       "Mentaliteit",
+       "Cultuur",
+       "Normen",
+       "Identiteit"
+      ],
+      "c": 2,
+      "d": 2,
+      "u": "«Normen»: regels over hoe je je hoort te gedragen.",
+      "uo": [
+       "«Mentaliteit» betekent manier van denken.",
+       "«Cultuur» betekent gewoonten en waarden.",
+       "Klopt, «Normen» past hierbij.",
+       "«Identiteit» betekent gevoel van erbij horen."
+      ],
+      "uh": "Onthoud: «Normen» = gedragsregels."
+     },
+     {
+      "v": "Wat betekent «Normen»?",
+      "o": [
+       "wat mensen belangrijk en nastrevenswaardig vinden",
+       "de manier van denken van mensen in een bepaalde tijd",
+       "de gewoonten, gebruiken en waarden van een groep",
+       "regels over hoe je je hoort te gedragen"
+      ],
+      "c": 3,
+      "d": 1,
+      "u": "«Normen»: regels over hoe je je hoort te gedragen.",
+      "uo": [
+       "Dat is «Waarden».",
+       "Dat is «Mentaliteit».",
+       "Dat is «Cultuur».",
+       "Klopt: gedragsregels."
+      ],
+      "uh": "Onthoud: «Normen» = gedragsregels."
+     },
+     {
+      "v": "Welk begrip hoort bij: \"een geloof met eigen regels en rituelen\"?",
+      "o": [
+       "Religie",
+       "Traditie",
+       "Tolerantie",
+       "Normen"
+      ],
+      "c": 0,
+      "d": 3,
+      "u": "«Religie»: een geloof met eigen regels en rituelen.",
+      "uo": [
+       "Klopt, dit is «Religie».",
+       "«Traditie» betekent overgeleverde gewoonte.",
+       "«Tolerantie» betekent anderen verdragen.",
+       "«Normen» betekent gedragsregels."
+      ],
+      "uh": "Onthoud: «Religie» = een geloof."
+     },
+     {
+      "v": "Welke term hoort bij \"een geloof\"?",
+      "o": [
+       "Tolerantie",
+       "Religie",
+       "Normen",
+       "Identiteit"
+      ],
+      "c": 1,
+      "d": 2,
+      "u": "«Religie»: een geloof met eigen regels en rituelen.",
+      "uo": [
+       "«Tolerantie» betekent anderen verdragen.",
+       "Klopt, «Religie» past hierbij.",
+       "«Normen» betekent gedragsregels.",
+       "«Identiteit» betekent gevoel van erbij horen."
+      ],
+      "uh": "Onthoud: «Religie» = een geloof."
+     },
+     {
+      "v": "Wat betekent «Religie»?",
+      "o": [
+       "een gewoonte die van generatie op generatie overgaat",
+       "het verdragen van andere meningen en geloven",
+       "een geloof met eigen regels en rituelen",
+       "regels over hoe je je hoort te gedragen"
+      ],
+      "c": 2,
+      "d": 1,
+      "u": "«Religie»: een geloof met eigen regels en rituelen.",
+      "uo": [
+       "Dat is «Traditie».",
+       "Dat is «Tolerantie».",
+       "Klopt: een geloof.",
+       "Dat is «Normen»."
+      ],
+      "uh": "Onthoud: «Religie» = een geloof."
+     },
+     {
+      "v": "Welk begrip hoort bij: \"een gewoonte die van generatie op generatie overgaat\"?",
+      "o": [
+       "Religie",
+       "Vooroordeel",
+       "Identiteit",
+       "Traditie"
+      ],
+      "c": 3,
+      "d": 3,
+      "u": "«Traditie»: een gewoonte die van generatie op generatie overgaat.",
+      "uo": [
+       "«Religie» betekent een geloof.",
+       "«Vooroordeel» betekent oordeel zonder feiten.",
+       "«Identiteit» betekent gevoel van erbij horen.",
+       "Klopt, dit is «Traditie»."
+      ],
+      "uh": "Onthoud: «Traditie» = overgeleverde gewoonte."
+     },
+     {
+      "v": "Welke term hoort bij \"overgeleverde gewoonte\"?",
+      "o": [
+       "Traditie",
+       "Vooroordeel",
+       "Identiteit",
+       "Cultuur"
+      ],
+      "c": 0,
+      "d": 2,
+      "u": "«Traditie»: een gewoonte die van generatie op generatie overgaat.",
+      "uo": [
+       "Klopt, «Traditie» past hierbij.",
+       "«Vooroordeel» betekent oordeel zonder feiten.",
+       "«Identiteit» betekent gevoel van erbij horen.",
+       "«Cultuur» betekent gewoonten en waarden."
+      ],
+      "uh": "Onthoud: «Traditie» = overgeleverde gewoonte."
+     },
+     {
+      "v": "Wat betekent «Secularisatie»?",
+      "o": [
+       "het streven naar gelijke rechten en kansen",
+       "het minder belangrijk worden van religie",
+       "het verdragen van andere meningen en geloven",
+       "het gevoel bij een groep of gebied te horen"
+      ],
+      "c": 1,
+      "d": 1,
+      "u": "«Secularisatie»: het minder belangrijk worden van religie.",
+      "uo": [
+       "Dat is «Emancipatie».",
+       "Klopt: religie wordt minder.",
+       "Dat is «Tolerantie».",
+       "Dat is «Identiteit»."
+      ],
+      "uh": "Onthoud: «Secularisatie» = religie wordt minder."
+     },
+     {
+      "v": "Welk begrip hoort bij: \"het verdragen van andere meningen en geloven\"?",
+      "o": [
+       "Vooroordeel",
+       "Mentaliteit",
+       "Tolerantie",
+       "Cultuur"
+      ],
+      "c": 2,
+      "d": 3,
+      "u": "«Tolerantie»: het verdragen van andere meningen en geloven.",
+      "uo": [
+       "«Vooroordeel» betekent oordeel zonder feiten.",
+       "«Mentaliteit» betekent manier van denken.",
+       "Klopt, dit is «Tolerantie».",
+       "«Cultuur» betekent gewoonten en waarden."
+      ],
+      "uh": "Onthoud: «Tolerantie» = anderen verdragen."
+     },
+     {
+      "v": "Welke term hoort bij \"anderen verdragen\"?",
+      "o": [
+       "Mentaliteit",
+       "Cultuur",
+       "Traditie",
+       "Tolerantie"
+      ],
+      "c": 3,
+      "d": 2,
+      "u": "«Tolerantie»: het verdragen van andere meningen en geloven.",
+      "uo": [
+       "«Mentaliteit» betekent manier van denken.",
+       "«Cultuur» betekent gewoonten en waarden.",
+       "«Traditie» betekent overgeleverde gewoonte.",
+       "Klopt, «Tolerantie» past hierbij."
+      ],
+      "uh": "Onthoud: «Tolerantie» = anderen verdragen."
+     },
+     {
+      "v": "Wat betekent «Tolerantie»?",
+      "o": [
+       "het verdragen van andere meningen en geloven",
+       "een mening vooraf, zonder de feiten te kennen",
+       "de manier van denken van mensen in een bepaalde tijd",
+       "de gewoonten, gebruiken en waarden van een groep"
+      ],
+      "c": 0,
+      "d": 1,
+      "u": "«Tolerantie»: het verdragen van andere meningen en geloven.",
+      "uo": [
+       "Klopt: anderen verdragen.",
+       "Dat is «Vooroordeel».",
+       "Dat is «Mentaliteit».",
+       "Dat is «Cultuur»."
+      ],
+      "uh": "Onthoud: «Tolerantie» = anderen verdragen."
+     },
+     {
+      "v": "Welk begrip hoort bij: \"het streven naar gelijke rechten en kansen\"?",
+      "o": [
+       "Secularisatie",
+       "Emancipatie",
+       "Religie",
+       "Normen"
+      ],
+      "c": 1,
+      "d": 3,
+      "u": "«Emancipatie»: het streven naar gelijke rechten en kansen.",
+      "uo": [
+       "«Secularisatie» betekent religie wordt minder.",
+       "Klopt, dit is «Emancipatie».",
+       "«Religie» betekent een geloof.",
+       "«Normen» betekent gedragsregels."
+      ],
+      "uh": "Onthoud: «Emancipatie» = streven naar gelijkheid."
+     },
+     {
+      "v": "Welke term hoort bij \"gevoel van erbij horen\"?",
+      "o": [
+       "Waarden",
+       "Mentaliteit",
+       "Identiteit",
+       "Secularisatie"
+      ],
+      "c": 2,
+      "d": 2,
+      "u": "«Identiteit»: het gevoel bij een groep of gebied te horen.",
+      "uo": [
+       "«Waarden» betekent wat men belangrijk vindt.",
+       "«Mentaliteit» betekent manier van denken.",
+       "Klopt, «Identiteit» past hierbij.",
+       "«Secularisatie» betekent religie wordt minder."
+      ],
+      "uh": "Onthoud: «Identiteit» = gevoel van erbij horen."
+     },
+     {
+      "v": "Wat betekent «Standensamenleving»?",
+      "o": [
+       "het streven naar gelijke rechten en kansen",
+       "wat mensen belangrijk en nastrevenswaardig vinden",
+       "het gevoel bij een groep of gebied te horen",
+       "een samenleving met vaste maatschappelijke lagen"
+      ],
+      "c": 3,
+      "d": 1,
+      "u": "«Standensamenleving»: een samenleving met vaste maatschappelijke lagen.",
+      "uo": [
+       "Dat is «Emancipatie».",
+       "Dat is «Waarden».",
+       "Dat is «Identiteit».",
+       "Klopt: vaste standen."
+      ],
+      "uh": "Onthoud: «Standensamenleving» = vaste standen."
+     },
+     {
+      "v": "Welk begrip hoort bij: \"het gevoel bij een groep of gebied te horen\"?",
+      "o": [
+       "Identiteit",
+       "Cultuur",
+       "Waarden",
+       "Mentaliteit"
+      ],
+      "c": 0,
+      "d": 3,
+      "u": "«Identiteit»: het gevoel bij een groep of gebied te horen.",
+      "uo": [
+       "Klopt, dit is «Identiteit».",
+       "«Cultuur» betekent gewoonten en waarden.",
+       "«Waarden» betekent wat men belangrijk vindt.",
+       "«Mentaliteit» betekent manier van denken."
+      ],
+      "uh": "Onthoud: «Identiteit» = gevoel van erbij horen."
+     },
+     {
+      "v": "Wat betekent «Identiteit»?",
+      "o": [
+       "de gewoonten, gebruiken en waarden van een groep",
+       "het gevoel bij een groep of gebied te horen",
+       "wat mensen belangrijk en nastrevenswaardig vinden",
+       "de manier van denken van mensen in een bepaalde tijd"
+      ],
+      "c": 1,
+      "d": 1,
+      "u": "«Identiteit»: het gevoel bij een groep of gebied te horen.",
+      "uo": [
+       "Dat is «Cultuur».",
+       "Klopt: gevoel van erbij horen.",
+       "Dat is «Waarden».",
+       "Dat is «Mentaliteit»."
+      ],
+      "uh": "Onthoud: «Identiteit» = gevoel van erbij horen."
+     }
+    ],
+    "begrippen": [
+     {
+      "t": "Cultuur",
+      "d": "de gewoonten, gebruiken en waarden van een groep"
+     },
+     {
+      "t": "Mentaliteit",
+      "d": "de manier van denken van mensen in een bepaalde tijd"
+     },
+     {
+      "t": "Waarden",
+      "d": "wat mensen belangrijk en nastrevenswaardig vinden"
+     },
+     {
+      "t": "Normen",
+      "d": "regels over hoe je je hoort te gedragen"
+     },
+     {
+      "t": "Religie",
+      "d": "een geloof met eigen regels en rituelen"
+     },
+     {
+      "t": "Traditie",
+      "d": "een gewoonte die van generatie op generatie overgaat"
+     },
+     {
+      "t": "Secularisatie",
+      "d": "het minder belangrijk worden van religie"
+     },
+     {
+      "t": "Tolerantie",
+      "d": "het verdragen van andere meningen en geloven"
+     },
+     {
+      "t": "Standensamenleving",
+      "d": "een samenleving met vaste maatschappelijke lagen"
+     },
+     {
+      "t": "Emancipatie",
+      "d": "het streven naar gelijke rechten en kansen"
+     },
+     {
+      "t": "Vooroordeel",
+      "d": "een mening vooraf, zonder de feiten te kennen"
+     },
+     {
+      "t": "Identiteit",
+      "d": "het gevoel bij een groep of gebied te horen"
+     }
+    ],
+    "sam": "<p><b>Cultuur</b> is het geheel van gewoonten, waarden en gebruiken van een groep; de <b>mentaliteit</b> is de manier van denken in een tijd. <b>Waarden</b> zijn wat mensen belangrijk vinden, <b>normen</b> de regels die daaruit volgen. Door <b>secularisatie</b> werd religie in Nederland minder bepalend.</p>"
    },
    {
     "id": "B",
@@ -9746,7 +14677,554 @@ var VAKKEN_VMBO = [
     ],
     "nSv": 0,
     "nOe": 0,
-    "nBeg": 0
+    "nBeg": 0,
+    "sv": [
+     {
+      "v": "Welk begrip hoort bij: \"de belangrijkste wet met de regels van de staat\"?",
+      "o": [
+       "Grondwet",
+       "Grondrecht",
+       "Democratie",
+       "Verzorgingsstaat"
+      ],
+      "c": 0,
+      "d": 3,
+      "u": "«Grondwet»: de belangrijkste wet met de regels van de staat.",
+      "uo": [
+       "Klopt, dit is «Grondwet».",
+       "«Grondrecht» betekent recht voor iedereen.",
+       "«Democratie» betekent het volk kiest.",
+       "«Verzorgingsstaat» betekent staat zorgt voor burgers."
+      ],
+      "uh": "Onthoud: «Grondwet» = de hoogste wet."
+     },
+     {
+      "v": "Welke term hoort bij \"de hoogste wet\"?",
+      "o": [
+       "Democratie",
+       "Grondwet",
+       "Verzorgingsstaat",
+       "Trias Politica"
+      ],
+      "c": 1,
+      "d": 2,
+      "u": "«Grondwet»: de belangrijkste wet met de regels van de staat.",
+      "uo": [
+       "«Democratie» betekent het volk kiest.",
+       "Klopt, «Grondwet» past hierbij.",
+       "«Verzorgingsstaat» betekent staat zorgt voor burgers.",
+       "«Trias Politica» betekent scheiding van machten."
+      ],
+      "uh": "Onthoud: «Grondwet» = de hoogste wet."
+     },
+     {
+      "v": "Wat betekent «Grondwet»?",
+      "o": [
+       "een recht dat iedereen heeft, zoals vrijheid van meningsuiting",
+       "een bestuur waarin het volk zijn vertegenwoordigers kiest",
+       "de belangrijkste wet met de regels van de staat",
+       "een staat die zorgt voor het welzijn van de burgers"
+      ],
+      "c": 2,
+      "d": 1,
+      "u": "«Grondwet»: de belangrijkste wet met de regels van de staat.",
+      "uo": [
+       "Dat is «Grondrecht».",
+       "Dat is «Democratie».",
+       "Klopt: de hoogste wet.",
+       "Dat is «Verzorgingsstaat»."
+      ],
+      "uh": "Onthoud: «Grondwet» = de hoogste wet."
+     },
+     {
+      "v": "Welk begrip hoort bij: \"een recht dat iedereen heeft, zoals vrijheid van meningsuiting\"?",
+      "o": [
+       "Grondwet",
+       "Wetgevende macht",
+       "Trias Politica",
+       "Grondrecht"
+      ],
+      "c": 3,
+      "d": 3,
+      "u": "«Grondrecht»: een recht dat iedereen heeft, zoals vrijheid van meningsuiting.",
+      "uo": [
+       "«Grondwet» betekent de hoogste wet.",
+       "«Wetgevende macht» betekent maakt wetten.",
+       "«Trias Politica» betekent scheiding van machten.",
+       "Klopt, dit is «Grondrecht»."
+      ],
+      "uh": "Onthoud: «Grondrecht» = recht voor iedereen."
+     },
+     {
+      "v": "Welke term hoort bij \"recht voor iedereen\"?",
+      "o": [
+       "Grondrecht",
+       "Wetgevende macht",
+       "Trias Politica",
+       "Parlement"
+      ],
+      "c": 0,
+      "d": 2,
+      "u": "«Grondrecht»: een recht dat iedereen heeft, zoals vrijheid van meningsuiting.",
+      "uo": [
+       "Klopt, «Grondrecht» past hierbij.",
+       "«Wetgevende macht» betekent maakt wetten.",
+       "«Trias Politica» betekent scheiding van machten.",
+       "«Parlement» betekent de volksvertegenwoordiging."
+      ],
+      "uh": "Onthoud: «Grondrecht» = recht voor iedereen."
+     },
+     {
+      "v": "Wat betekent «Wetgevende macht»?",
+      "o": [
+       "de macht die de wetten uitvoert, de regering",
+       "de macht die wetten maakt",
+       "de macht die recht spreekt, de rechters",
+       "de gekozen Kamer die wetten maakt en de regering controleert"
+      ],
+      "c": 1,
+      "d": 1,
+      "u": "«Wetgevende macht»: de macht die wetten maakt.",
+      "uo": [
+       "Dat is «Uitvoerende macht».",
+       "Klopt: maakt wetten.",
+       "Dat is «Rechterlijke macht».",
+       "Dat is «Tweede Kamer»."
+      ],
+      "uh": "Onthoud: «Wetgevende macht» = maakt wetten."
+     },
+     {
+      "v": "Welk begrip hoort bij: \"de scheiding in wetgevende, uitvoerende en rechterlijke macht\"?",
+      "o": [
+       "Democratie",
+       "Uitvoerende macht",
+       "Trias Politica",
+       "Verzorgingsstaat"
+      ],
+      "c": 2,
+      "d": 3,
+      "u": "«Trias Politica»: de scheiding in wetgevende, uitvoerende en rechterlijke macht.",
+      "uo": [
+       "«Democratie» betekent het volk kiest.",
+       "«Uitvoerende macht» betekent voert wetten uit.",
+       "Klopt, dit is «Trias Politica».",
+       "«Verzorgingsstaat» betekent staat zorgt voor burgers."
+      ],
+      "uh": "Onthoud: «Trias Politica» = scheiding van machten."
+     },
+     {
+      "v": "Welke term hoort bij \"scheiding van machten\"?",
+      "o": [
+       "Uitvoerende macht",
+       "Verzorgingsstaat",
+       "Regering",
+       "Trias Politica"
+      ],
+      "c": 3,
+      "d": 2,
+      "u": "«Trias Politica»: de scheiding in wetgevende, uitvoerende en rechterlijke macht.",
+      "uo": [
+       "«Uitvoerende macht» betekent voert wetten uit.",
+       "«Verzorgingsstaat» betekent staat zorgt voor burgers.",
+       "«Regering» betekent koning en ministers.",
+       "Klopt, «Trias Politica» past hierbij."
+      ],
+      "uh": "Onthoud: «Trias Politica» = scheiding van machten."
+     },
+     {
+      "v": "Wat betekent «Uitvoerende macht»?",
+      "o": [
+       "de macht die de wetten uitvoert, de regering",
+       "de macht die wetten maakt",
+       "de macht die recht spreekt, de rechters",
+       "een recht dat iedereen heeft, zoals vrijheid van meningsuiting"
+      ],
+      "c": 0,
+      "d": 1,
+      "u": "«Uitvoerende macht»: de macht die de wetten uitvoert, de regering.",
+      "uo": [
+       "Klopt: voert wetten uit.",
+       "Dat is «Wetgevende macht».",
+       "Dat is «Rechterlijke macht».",
+       "Dat is «Grondrecht»."
+      ],
+      "uh": "Onthoud: «Uitvoerende macht» = voert wetten uit."
+     },
+     {
+      "v": "Welk begrip hoort bij: \"de macht die wetten maakt\"?",
+      "o": [
+       "Uitvoerende macht",
+       "Wetgevende macht",
+       "Rechterlijke macht",
+       "Tweede Kamer"
+      ],
+      "c": 1,
+      "d": 3,
+      "u": "«Wetgevende macht»: de macht die wetten maakt.",
+      "uo": [
+       "«Uitvoerende macht» betekent voert wetten uit.",
+       "Klopt, dit is «Wetgevende macht».",
+       "«Rechterlijke macht» betekent spreekt recht.",
+       "«Tweede Kamer» betekent gekozen, controleert regering."
+      ],
+      "uh": "Onthoud: «Wetgevende macht» = maakt wetten."
+     },
+     {
+      "v": "Welke term hoort bij \"koning en ministers\"?",
+      "o": [
+       "Democratie",
+       "Verzorgingsstaat",
+       "Regering",
+       "Grondwet"
+      ],
+      "c": 2,
+      "d": 2,
+      "u": "«Regering»: de koning en de ministers samen.",
+      "uo": [
+       "«Democratie» betekent het volk kiest.",
+       "«Verzorgingsstaat» betekent staat zorgt voor burgers.",
+       "Klopt, «Regering» past hierbij.",
+       "«Grondwet» betekent de hoogste wet."
+      ],
+      "uh": "Onthoud: «Regering» = koning en ministers."
+     },
+     {
+      "v": "Wat betekent «Rechterlijke macht»?",
+      "o": [
+       "de macht die wetten maakt",
+       "de macht die de wetten uitvoert, de regering",
+       "een recht dat iedereen heeft, zoals vrijheid van meningsuiting",
+       "de macht die recht spreekt, de rechters"
+      ],
+      "c": 3,
+      "d": 1,
+      "u": "«Rechterlijke macht»: de macht die recht spreekt, de rechters.",
+      "uo": [
+       "Dat is «Wetgevende macht».",
+       "Dat is «Uitvoerende macht».",
+       "Dat is «Grondrecht».",
+       "Klopt: spreekt recht."
+      ],
+      "uh": "Onthoud: «Rechterlijke macht» = spreekt recht."
+     },
+     {
+      "v": "Welk begrip hoort bij: \"de macht die de wetten uitvoert, de regering\"?",
+      "o": [
+       "Uitvoerende macht",
+       "Wetgevende macht",
+       "Rechterlijke macht",
+       "Grondrecht"
+      ],
+      "c": 0,
+      "d": 3,
+      "u": "«Uitvoerende macht»: de macht die de wetten uitvoert, de regering.",
+      "uo": [
+       "Klopt, dit is «Uitvoerende macht».",
+       "«Wetgevende macht» betekent maakt wetten.",
+       "«Rechterlijke macht» betekent spreekt recht.",
+       "«Grondrecht» betekent recht voor iedereen."
+      ],
+      "uh": "Onthoud: «Uitvoerende macht» = voert wetten uit."
+     },
+     {
+      "v": "Welke term hoort bij \"de volksvertegenwoordiging\"?",
+      "o": [
+       "Democratie",
+       "Parlement",
+       "Rechterlijke macht",
+       "Tweede Kamer"
+      ],
+      "c": 1,
+      "d": 2,
+      "u": "«Parlement»: de volksvertegenwoordiging: de Eerste en Tweede Kamer.",
+      "uo": [
+       "«Democratie» betekent het volk kiest.",
+       "Klopt, «Parlement» past hierbij.",
+       "«Rechterlijke macht» betekent spreekt recht.",
+       "«Tweede Kamer» betekent gekozen, controleert regering."
+      ],
+      "uh": "Onthoud: «Parlement» = de volksvertegenwoordiging."
+     },
+     {
+      "v": "Wat betekent «Regering»?",
+      "o": [
+       "de volksvertegenwoordiging: de Eerste en Tweede Kamer",
+       "een bestuur waarin het volk zijn vertegenwoordigers kiest",
+       "de koning en de ministers samen",
+       "een staat die zorgt voor het welzijn van de burgers"
+      ],
+      "c": 2,
+      "d": 1,
+      "u": "«Regering»: de koning en de ministers samen.",
+      "uo": [
+       "Dat is «Parlement».",
+       "Dat is «Democratie».",
+       "Klopt: koning en ministers.",
+       "Dat is «Verzorgingsstaat»."
+      ],
+      "uh": "Onthoud: «Regering» = koning en ministers."
+     },
+     {
+      "v": "Welk begrip hoort bij: \"de koning en de ministers samen\"?",
+      "o": [
+       "Parlement",
+       "Democratie",
+       "Verzorgingsstaat",
+       "Regering"
+      ],
+      "c": 3,
+      "d": 3,
+      "u": "«Regering»: de koning en de ministers samen.",
+      "uo": [
+       "«Parlement» betekent de volksvertegenwoordiging.",
+       "«Democratie» betekent het volk kiest.",
+       "«Verzorgingsstaat» betekent staat zorgt voor burgers.",
+       "Klopt, dit is «Regering»."
+      ],
+      "uh": "Onthoud: «Regering» = koning en ministers."
+     },
+     {
+      "v": "Welke term hoort bij \"gekozen, controleert regering\"?",
+      "o": [
+       "Tweede Kamer",
+       "Rechterlijke macht",
+       "Uitvoerende macht",
+       "Grondwet"
+      ],
+      "c": 0,
+      "d": 2,
+      "u": "«Tweede Kamer»: de gekozen Kamer die wetten maakt en de regering controleert.",
+      "uo": [
+       "Klopt, «Tweede Kamer» past hierbij.",
+       "«Rechterlijke macht» betekent spreekt recht.",
+       "«Uitvoerende macht» betekent voert wetten uit.",
+       "«Grondwet» betekent de hoogste wet."
+      ],
+      "uh": "Onthoud: «Tweede Kamer» = gekozen, controleert regering."
+     },
+     {
+      "v": "Wat betekent «Parlement»?",
+      "o": [
+       "de koning en de ministers samen",
+       "de volksvertegenwoordiging: de Eerste en Tweede Kamer",
+       "een bestuur waarin het volk zijn vertegenwoordigers kiest",
+       "de macht die recht spreekt, de rechters"
+      ],
+      "c": 1,
+      "d": 1,
+      "u": "«Parlement»: de volksvertegenwoordiging: de Eerste en Tweede Kamer.",
+      "uo": [
+       "Dat is «Regering».",
+       "Klopt: de volksvertegenwoordiging.",
+       "Dat is «Democratie».",
+       "Dat is «Rechterlijke macht»."
+      ],
+      "uh": "Onthoud: «Parlement» = de volksvertegenwoordiging."
+     },
+     {
+      "v": "Welk begrip hoort bij: \"de volksvertegenwoordiging: de Eerste en Tweede Kamer\"?",
+      "o": [
+       "Regering",
+       "Democratie",
+       "Parlement",
+       "Rechterlijke macht"
+      ],
+      "c": 2,
+      "d": 3,
+      "u": "«Parlement»: de volksvertegenwoordiging: de Eerste en Tweede Kamer.",
+      "uo": [
+       "«Regering» betekent koning en ministers.",
+       "«Democratie» betekent het volk kiest.",
+       "Klopt, dit is «Parlement».",
+       "«Rechterlijke macht» betekent spreekt recht."
+      ],
+      "uh": "Onthoud: «Parlement» = de volksvertegenwoordiging."
+     },
+     {
+      "v": "Welke term hoort bij \"keurt wetten goed of af\"?",
+      "o": [
+       "Rechterlijke macht",
+       "Uitvoerende macht",
+       "Grondwet",
+       "Eerste Kamer"
+      ],
+      "c": 3,
+      "d": 2,
+      "u": "«Eerste Kamer»: de Kamer die wetsvoorstellen goed- of afkeurt.",
+      "uo": [
+       "«Rechterlijke macht» betekent spreekt recht.",
+       "«Uitvoerende macht» betekent voert wetten uit.",
+       "«Grondwet» betekent de hoogste wet.",
+       "Klopt, «Eerste Kamer» past hierbij."
+      ],
+      "uh": "Onthoud: «Eerste Kamer» = keurt wetten goed of af."
+     },
+     {
+      "v": "Wat betekent «Eerste Kamer»?",
+      "o": [
+       "de Kamer die wetsvoorstellen goed- of afkeurt",
+       "de gekozen Kamer die wetten maakt en de regering controleert",
+       "de macht die recht spreekt, de rechters",
+       "de macht die de wetten uitvoert, de regering"
+      ],
+      "c": 0,
+      "d": 1,
+      "u": "«Eerste Kamer»: de Kamer die wetsvoorstellen goed- of afkeurt.",
+      "uo": [
+       "Klopt: keurt wetten goed of af.",
+       "Dat is «Tweede Kamer».",
+       "Dat is «Rechterlijke macht».",
+       "Dat is «Uitvoerende macht»."
+      ],
+      "uh": "Onthoud: «Eerste Kamer» = keurt wetten goed of af."
+     },
+     {
+      "v": "Welk begrip hoort bij: \"de gekozen Kamer die wetten maakt en de regering controleert\"?",
+      "o": [
+       "Eerste Kamer",
+       "Tweede Kamer",
+       "Rechterlijke macht",
+       "Uitvoerende macht"
+      ],
+      "c": 1,
+      "d": 3,
+      "u": "«Tweede Kamer»: de gekozen Kamer die wetten maakt en de regering controleert.",
+      "uo": [
+       "«Eerste Kamer» betekent keurt wetten goed of af.",
+       "Klopt, dit is «Tweede Kamer».",
+       "«Rechterlijke macht» betekent spreekt recht.",
+       "«Uitvoerende macht» betekent voert wetten uit."
+      ],
+      "uh": "Onthoud: «Tweede Kamer» = gekozen, controleert regering."
+     },
+     {
+      "v": "Welke term hoort bij \"het volk kiest\"?",
+      "o": [
+       "Eerste Kamer",
+       "Grondrecht",
+       "Democratie",
+       "Grondwet"
+      ],
+      "c": 2,
+      "d": 2,
+      "u": "«Democratie»: een bestuur waarin het volk zijn vertegenwoordigers kiest.",
+      "uo": [
+       "«Eerste Kamer» betekent keurt wetten goed of af.",
+       "«Grondrecht» betekent recht voor iedereen.",
+       "Klopt, «Democratie» past hierbij.",
+       "«Grondwet» betekent de hoogste wet."
+      ],
+      "uh": "Onthoud: «Democratie» = het volk kiest."
+     },
+     {
+      "v": "Wat betekent «Democratie»?",
+      "o": [
+       "de Kamer die wetsvoorstellen goed- of afkeurt",
+       "een recht dat iedereen heeft, zoals vrijheid van meningsuiting",
+       "de belangrijkste wet met de regels van de staat",
+       "een bestuur waarin het volk zijn vertegenwoordigers kiest"
+      ],
+      "c": 3,
+      "d": 1,
+      "u": "«Democratie»: een bestuur waarin het volk zijn vertegenwoordigers kiest.",
+      "uo": [
+       "Dat is «Eerste Kamer».",
+       "Dat is «Grondrecht».",
+       "Dat is «Grondwet».",
+       "Klopt: het volk kiest."
+      ],
+      "uh": "Onthoud: «Democratie» = het volk kiest."
+     },
+     {
+      "v": "Welk begrip hoort bij: \"de Kamer die wetsvoorstellen goed- of afkeurt\"?",
+      "o": [
+       "Eerste Kamer",
+       "Tweede Kamer",
+       "Rechterlijke macht",
+       "Uitvoerende macht"
+      ],
+      "c": 0,
+      "d": 3,
+      "u": "«Eerste Kamer»: de Kamer die wetsvoorstellen goed- of afkeurt.",
+      "uo": [
+       "Klopt, dit is «Eerste Kamer».",
+       "«Tweede Kamer» betekent gekozen, controleert regering.",
+       "«Rechterlijke macht» betekent spreekt recht.",
+       "«Uitvoerende macht» betekent voert wetten uit."
+      ],
+      "uh": "Onthoud: «Eerste Kamer» = keurt wetten goed of af."
+     },
+     {
+      "v": "Welke term hoort bij \"staat zorgt voor burgers\"?",
+      "o": [
+       "Tweede Kamer",
+       "Verzorgingsstaat",
+       "Regering",
+       "Wetgevende macht"
+      ],
+      "c": 1,
+      "d": 2,
+      "u": "«Verzorgingsstaat»: een staat die zorgt voor het welzijn van de burgers.",
+      "uo": [
+       "«Tweede Kamer» betekent gekozen, controleert regering.",
+       "Klopt, «Verzorgingsstaat» past hierbij.",
+       "«Regering» betekent koning en ministers.",
+       "«Wetgevende macht» betekent maakt wetten."
+      ],
+      "uh": "Onthoud: «Verzorgingsstaat» = staat zorgt voor burgers."
+     }
+    ],
+    "begrippen": [
+     {
+      "t": "Grondwet",
+      "d": "de belangrijkste wet met de regels van de staat"
+     },
+     {
+      "t": "Grondrecht",
+      "d": "een recht dat iedereen heeft, zoals vrijheid van meningsuiting"
+     },
+     {
+      "t": "Trias Politica",
+      "d": "de scheiding in wetgevende, uitvoerende en rechterlijke macht"
+     },
+     {
+      "t": "Wetgevende macht",
+      "d": "de macht die wetten maakt"
+     },
+     {
+      "t": "Uitvoerende macht",
+      "d": "de macht die de wetten uitvoert, de regering"
+     },
+     {
+      "t": "Rechterlijke macht",
+      "d": "de macht die recht spreekt, de rechters"
+     },
+     {
+      "t": "Regering",
+      "d": "de koning en de ministers samen"
+     },
+     {
+      "t": "Parlement",
+      "d": "de volksvertegenwoordiging: de Eerste en Tweede Kamer"
+     },
+     {
+      "t": "Tweede Kamer",
+      "d": "de gekozen Kamer die wetten maakt en de regering controleert"
+     },
+     {
+      "t": "Eerste Kamer",
+      "d": "de Kamer die wetsvoorstellen goed- of afkeurt"
+     },
+     {
+      "t": "Democratie",
+      "d": "een bestuur waarin het volk zijn vertegenwoordigers kiest"
+     },
+     {
+      "t": "Verzorgingsstaat",
+      "d": "een staat die zorgt voor het welzijn van de burgers"
+     }
+    ],
+    "sam": "<p>De <b>Grondwet</b> bevat de belangrijkste regels en de <b>grondrechten</b>. De <b>Trias Politica</b> verdeelt de macht in een <b>wetgevende</b>, <b>uitvoerende</b> en <b>rechterlijke</b> macht. Het <b>parlement</b> (Eerste en Tweede Kamer) controleert de <b>regering</b>.</p>"
    },
    {
     "id": "C",
@@ -9760,7 +15238,554 @@ var VAKKEN_VMBO = [
     ],
     "nSv": 0,
     "nOe": 0,
-    "nBeg": 0
+    "nBeg": 0,
+    "sv": [
+     {
+      "v": "Welk begrip hoort bij: \"een gebouw waar met machines massaal wordt geproduceerd\"?",
+      "o": [
+       "Fabriek",
+       "Stoommachine",
+       "Vakbond",
+       "Kinderarbeid"
+      ],
+      "c": 0,
+      "d": 3,
+      "u": "«Fabriek»: een gebouw waar met machines massaal wordt geproduceerd.",
+      "uo": [
+       "Klopt, dit is «Fabriek».",
+       "«Stoommachine» betekent machine op stoom.",
+       "«Vakbond» betekent komt op voor arbeiders.",
+       "«Kinderarbeid» betekent kinderen in de fabriek."
+      ],
+      "uh": "Onthoud: «Fabriek» = gebouw met machines."
+     },
+     {
+      "v": "Welke term hoort bij \"gebouw met machines\"?",
+      "o": [
+       "Vakbond",
+       "Fabriek",
+       "Kinderarbeid",
+       "Massaproductie"
+      ],
+      "c": 1,
+      "d": 2,
+      "u": "«Fabriek»: een gebouw waar met machines massaal wordt geproduceerd.",
+      "uo": [
+       "«Vakbond» betekent komt op voor arbeiders.",
+       "Klopt, «Fabriek» past hierbij.",
+       "«Kinderarbeid» betekent kinderen in de fabriek.",
+       "«Massaproductie» betekent veel tegelijk maken."
+      ],
+      "uh": "Onthoud: «Fabriek» = gebouw met machines."
+     },
+     {
+      "v": "Wat betekent «Industriële revolutie»?",
+      "o": [
+       "het in grote hoeveelheden maken van producten",
+       "het neerleggen van het werk om eisen kracht bij te zetten",
+       "de overgang naar productie met machines in fabrieken",
+       "een organisatie die opkomt voor arbeiders"
+      ],
+      "c": 2,
+      "d": 1,
+      "u": "«Industriële revolutie»: de overgang naar productie met machines in fabrieken.",
+      "uo": [
+       "Dat is «Massaproductie».",
+       "Dat is «Staking».",
+       "Klopt: productie met machines.",
+       "Dat is «Vakbond»."
+      ],
+      "uh": "Onthoud: «Industriële revolutie» = productie met machines."
+     },
+     {
+      "v": "Welk begrip hoort bij: \"de groei van steden door de industrie\"?",
+      "o": [
+       "Massaproductie",
+       "Sociale kwestie",
+       "Kinderarbeid",
+       "Verstedelijking"
+      ],
+      "c": 3,
+      "d": 3,
+      "u": "«Verstedelijking»: de groei van steden door de industrie.",
+      "uo": [
+       "«Massaproductie» betekent veel tegelijk maken.",
+       "«Sociale kwestie» betekent ellende van arbeiders.",
+       "«Kinderarbeid» betekent kinderen in de fabriek.",
+       "Klopt, dit is «Verstedelijking»."
+      ],
+      "uh": "Onthoud: «Verstedelijking» = steden groeien."
+     },
+     {
+      "v": "Welke term hoort bij \"machine op stoom\"?",
+      "o": [
+       "Stoommachine",
+       "Vakbond",
+       "Arbeider",
+       "Industriële revolutie"
+      ],
+      "c": 0,
+      "d": 2,
+      "u": "«Stoommachine»: een machine die met stoom fabrieken en treinen aandreef.",
+      "uo": [
+       "Klopt, «Stoommachine» past hierbij.",
+       "«Vakbond» betekent komt op voor arbeiders.",
+       "«Arbeider» betekent fabriekswerker.",
+       "«Industriële revolutie» betekent productie met machines."
+      ],
+      "uh": "Onthoud: «Stoommachine» = machine op stoom."
+     },
+     {
+      "v": "Wat betekent «Fabriek»?",
+      "o": [
+       "een machine die met stoom fabrieken en treinen aandreef",
+       "een gebouw waar met machines massaal wordt geproduceerd",
+       "een organisatie die opkomt voor arbeiders",
+       "het laten werken van kinderen in fabrieken"
+      ],
+      "c": 1,
+      "d": 1,
+      "u": "«Fabriek»: een gebouw waar met machines massaal wordt geproduceerd.",
+      "uo": [
+       "Dat is «Stoommachine».",
+       "Klopt: gebouw met machines.",
+       "Dat is «Vakbond».",
+       "Dat is «Kinderarbeid»."
+      ],
+      "uh": "Onthoud: «Fabriek» = gebouw met machines."
+     },
+     {
+      "v": "Welk begrip hoort bij: \"de slechte leef- en werkomstandigheden van arbeiders\"?",
+      "o": [
+       "Kinderarbeid",
+       "Verstedelijking",
+       "Sociale kwestie",
+       "Arbeider"
+      ],
+      "c": 2,
+      "d": 3,
+      "u": "«Sociale kwestie»: de slechte leef- en werkomstandigheden van arbeiders.",
+      "uo": [
+       "«Kinderarbeid» betekent kinderen in de fabriek.",
+       "«Verstedelijking» betekent steden groeien.",
+       "Klopt, dit is «Sociale kwestie».",
+       "«Arbeider» betekent fabriekswerker."
+      ],
+      "uh": "Onthoud: «Sociale kwestie» = ellende van arbeiders."
+     },
+     {
+      "v": "Welke term hoort bij \"steden groeien\"?",
+      "o": [
+       "Sociale kwestie",
+       "Kinderarbeid",
+       "Arbeider",
+       "Verstedelijking"
+      ],
+      "c": 3,
+      "d": 2,
+      "u": "«Verstedelijking»: de groei van steden door de industrie.",
+      "uo": [
+       "«Sociale kwestie» betekent ellende van arbeiders.",
+       "«Kinderarbeid» betekent kinderen in de fabriek.",
+       "«Arbeider» betekent fabriekswerker.",
+       "Klopt, «Verstedelijking» past hierbij."
+      ],
+      "uh": "Onthoud: «Verstedelijking» = steden groeien."
+     },
+     {
+      "v": "Wat betekent «Stoommachine»?",
+      "o": [
+       "een machine die met stoom fabrieken en treinen aandreef",
+       "een gebouw waar met machines massaal wordt geproduceerd",
+       "een organisatie die opkomt voor arbeiders",
+       "iemand die tegen loon in een fabriek werkt"
+      ],
+      "c": 0,
+      "d": 1,
+      "u": "«Stoommachine»: een machine die met stoom fabrieken en treinen aandreef.",
+      "uo": [
+       "Klopt: machine op stoom.",
+       "Dat is «Fabriek».",
+       "Dat is «Vakbond».",
+       "Dat is «Arbeider»."
+      ],
+      "uh": "Onthoud: «Stoommachine» = machine op stoom."
+     },
+     {
+      "v": "Welk begrip hoort bij: \"het laten werken van kinderen in fabrieken\"?",
+      "o": [
+       "Sociale kwestie",
+       "Kinderarbeid",
+       "Vakbond",
+       "Arbeider"
+      ],
+      "c": 1,
+      "d": 3,
+      "u": "«Kinderarbeid»: het laten werken van kinderen in fabrieken.",
+      "uo": [
+       "«Sociale kwestie» betekent ellende van arbeiders.",
+       "Klopt, dit is «Kinderarbeid».",
+       "«Vakbond» betekent komt op voor arbeiders.",
+       "«Arbeider» betekent fabriekswerker."
+      ],
+      "uh": "Onthoud: «Kinderarbeid» = kinderen in de fabriek."
+     },
+     {
+      "v": "Welke term hoort bij \"ellende van arbeiders\"?",
+      "o": [
+       "Verstedelijking",
+       "Arbeider",
+       "Sociale kwestie",
+       "Vakbond"
+      ],
+      "c": 2,
+      "d": 2,
+      "u": "«Sociale kwestie»: de slechte leef- en werkomstandigheden van arbeiders.",
+      "uo": [
+       "«Verstedelijking» betekent steden groeien.",
+       "«Arbeider» betekent fabriekswerker.",
+       "Klopt, «Sociale kwestie» past hierbij.",
+       "«Vakbond» betekent komt op voor arbeiders."
+      ],
+      "uh": "Onthoud: «Sociale kwestie» = ellende van arbeiders."
+     },
+     {
+      "v": "Wat betekent «Verstedelijking»?",
+      "o": [
+       "het in grote hoeveelheden maken van producten",
+       "de slechte leef- en werkomstandigheden van arbeiders",
+       "het laten werken van kinderen in fabrieken",
+       "de groei van steden door de industrie"
+      ],
+      "c": 3,
+      "d": 1,
+      "u": "«Verstedelijking»: de groei van steden door de industrie.",
+      "uo": [
+       "Dat is «Massaproductie».",
+       "Dat is «Sociale kwestie».",
+       "Dat is «Kinderarbeid».",
+       "Klopt: steden groeien."
+      ],
+      "uh": "Onthoud: «Verstedelijking» = steden groeien."
+     },
+     {
+      "v": "Welk begrip hoort bij: \"iemand die tegen loon in een fabriek werkt\"?",
+      "o": [
+       "Arbeider",
+       "Vakbond",
+       "Socialisme",
+       "Massaproductie"
+      ],
+      "c": 0,
+      "d": 3,
+      "u": "«Arbeider»: iemand die tegen loon in een fabriek werkt.",
+      "uo": [
+       "Klopt, dit is «Arbeider».",
+       "«Vakbond» betekent komt op voor arbeiders.",
+       "«Socialisme» betekent gelijkheid voor arbeiders.",
+       "«Massaproductie» betekent veel tegelijk maken."
+      ],
+      "uh": "Onthoud: «Arbeider» = fabriekswerker."
+     },
+     {
+      "v": "Welke term hoort bij \"kinderen in de fabriek\"?",
+      "o": [
+       "Vakbond",
+       "Kinderarbeid",
+       "Arbeider",
+       "Industriële revolutie"
+      ],
+      "c": 1,
+      "d": 2,
+      "u": "«Kinderarbeid»: het laten werken van kinderen in fabrieken.",
+      "uo": [
+       "«Vakbond» betekent komt op voor arbeiders.",
+       "Klopt, «Kinderarbeid» past hierbij.",
+       "«Arbeider» betekent fabriekswerker.",
+       "«Industriële revolutie» betekent productie met machines."
+      ],
+      "uh": "Onthoud: «Kinderarbeid» = kinderen in de fabriek."
+     },
+     {
+      "v": "Wat betekent «Kinderarbeid»?",
+      "o": [
+       "de slechte leef- en werkomstandigheden van arbeiders",
+       "een organisatie die opkomt voor arbeiders",
+       "het laten werken van kinderen in fabrieken",
+       "iemand die tegen loon in een fabriek werkt"
+      ],
+      "c": 2,
+      "d": 1,
+      "u": "«Kinderarbeid»: het laten werken van kinderen in fabrieken.",
+      "uo": [
+       "Dat is «Sociale kwestie».",
+       "Dat is «Vakbond».",
+       "Klopt: kinderen in de fabriek.",
+       "Dat is «Arbeider»."
+      ],
+      "uh": "Onthoud: «Kinderarbeid» = kinderen in de fabriek."
+     },
+     {
+      "v": "Welk begrip hoort bij: \"een organisatie die opkomt voor arbeiders\"?",
+      "o": [
+       "Staking",
+       "Kinderarbeid",
+       "Verstedelijking",
+       "Vakbond"
+      ],
+      "c": 3,
+      "d": 3,
+      "u": "«Vakbond»: een organisatie die opkomt voor arbeiders.",
+      "uo": [
+       "«Staking» betekent het werk neerleggen.",
+       "«Kinderarbeid» betekent kinderen in de fabriek.",
+       "«Verstedelijking» betekent steden groeien.",
+       "Klopt, dit is «Vakbond»."
+      ],
+      "uh": "Onthoud: «Vakbond» = komt op voor arbeiders."
+     },
+     {
+      "v": "Welke term hoort bij \"fabriekswerker\"?",
+      "o": [
+       "Arbeider",
+       "Socialisme",
+       "Massaproductie",
+       "Industriële revolutie"
+      ],
+      "c": 0,
+      "d": 2,
+      "u": "«Arbeider»: iemand die tegen loon in een fabriek werkt.",
+      "uo": [
+       "Klopt, «Arbeider» past hierbij.",
+       "«Socialisme» betekent gelijkheid voor arbeiders.",
+       "«Massaproductie» betekent veel tegelijk maken.",
+       "«Industriële revolutie» betekent productie met machines."
+      ],
+      "uh": "Onthoud: «Arbeider» = fabriekswerker."
+     },
+     {
+      "v": "Wat betekent «Arbeider»?",
+      "o": [
+       "een organisatie die opkomt voor arbeiders",
+       "iemand die tegen loon in een fabriek werkt",
+       "een stroming die opkomt voor gelijkheid en de arbeiders",
+       "het in grote hoeveelheden maken van producten"
+      ],
+      "c": 1,
+      "d": 1,
+      "u": "«Arbeider»: iemand die tegen loon in een fabriek werkt.",
+      "uo": [
+       "Dat is «Vakbond».",
+       "Klopt: fabriekswerker.",
+       "Dat is «Socialisme».",
+       "Dat is «Massaproductie»."
+      ],
+      "uh": "Onthoud: «Arbeider» = fabriekswerker."
+     },
+     {
+      "v": "Welk begrip hoort bij: \"het neerleggen van het werk om eisen kracht bij te zetten\"?",
+      "o": [
+       "Vakbond",
+       "Kinderarbeid",
+       "Staking",
+       "Verstedelijking"
+      ],
+      "c": 2,
+      "d": 3,
+      "u": "«Staking»: het neerleggen van het werk om eisen kracht bij te zetten.",
+      "uo": [
+       "«Vakbond» betekent komt op voor arbeiders.",
+       "«Kinderarbeid» betekent kinderen in de fabriek.",
+       "Klopt, dit is «Staking».",
+       "«Verstedelijking» betekent steden groeien."
+      ],
+      "uh": "Onthoud: «Staking» = het werk neerleggen."
+     },
+     {
+      "v": "Welke term hoort bij \"komt op voor arbeiders\"?",
+      "o": [
+       "Kinderarbeid",
+       "Verstedelijking",
+       "Massaproductie",
+       "Vakbond"
+      ],
+      "c": 3,
+      "d": 2,
+      "u": "«Vakbond»: een organisatie die opkomt voor arbeiders.",
+      "uo": [
+       "«Kinderarbeid» betekent kinderen in de fabriek.",
+       "«Verstedelijking» betekent steden groeien.",
+       "«Massaproductie» betekent veel tegelijk maken.",
+       "Klopt, «Vakbond» past hierbij."
+      ],
+      "uh": "Onthoud: «Vakbond» = komt op voor arbeiders."
+     },
+     {
+      "v": "Wat betekent «Vakbond»?",
+      "o": [
+       "een organisatie die opkomt voor arbeiders",
+       "het neerleggen van het werk om eisen kracht bij te zetten",
+       "het laten werken van kinderen in fabrieken",
+       "de groei van steden door de industrie"
+      ],
+      "c": 0,
+      "d": 1,
+      "u": "«Vakbond»: een organisatie die opkomt voor arbeiders.",
+      "uo": [
+       "Klopt: komt op voor arbeiders.",
+       "Dat is «Staking».",
+       "Dat is «Kinderarbeid».",
+       "Dat is «Verstedelijking»."
+      ],
+      "uh": "Onthoud: «Vakbond» = komt op voor arbeiders."
+     },
+     {
+      "v": "Welk begrip hoort bij: \"een economie gebaseerd op particulier bezit en winst\"?",
+      "o": [
+       "Socialisme",
+       "Kapitalisme",
+       "Sociale kwestie",
+       "Verstedelijking"
+      ],
+      "c": 1,
+      "d": 3,
+      "u": "«Kapitalisme»: een economie gebaseerd op particulier bezit en winst.",
+      "uo": [
+       "«Socialisme» betekent gelijkheid voor arbeiders.",
+       "Klopt, dit is «Kapitalisme».",
+       "«Sociale kwestie» betekent ellende van arbeiders.",
+       "«Verstedelijking» betekent steden groeien."
+      ],
+      "uh": "Onthoud: «Kapitalisme» = bezit en winst."
+     },
+     {
+      "v": "Welke term hoort bij \"het werk neerleggen\"?",
+      "o": [
+       "Kinderarbeid",
+       "Verstedelijking",
+       "Staking",
+       "Massaproductie"
+      ],
+      "c": 2,
+      "d": 2,
+      "u": "«Staking»: het neerleggen van het werk om eisen kracht bij te zetten.",
+      "uo": [
+       "«Kinderarbeid» betekent kinderen in de fabriek.",
+       "«Verstedelijking» betekent steden groeien.",
+       "Klopt, «Staking» past hierbij.",
+       "«Massaproductie» betekent veel tegelijk maken."
+      ],
+      "uh": "Onthoud: «Staking» = het werk neerleggen."
+     },
+     {
+      "v": "Wat betekent «Kapitalisme»?",
+      "o": [
+       "een stroming die opkomt voor gelijkheid en de arbeiders",
+       "de slechte leef- en werkomstandigheden van arbeiders",
+       "de groei van steden door de industrie",
+       "een economie gebaseerd op particulier bezit en winst"
+      ],
+      "c": 3,
+      "d": 1,
+      "u": "«Kapitalisme»: een economie gebaseerd op particulier bezit en winst.",
+      "uo": [
+       "Dat is «Socialisme».",
+       "Dat is «Sociale kwestie».",
+       "Dat is «Verstedelijking».",
+       "Klopt: bezit en winst."
+      ],
+      "uh": "Onthoud: «Kapitalisme» = bezit en winst."
+     },
+     {
+      "v": "Welk begrip hoort bij: \"een stroming die opkomt voor gelijkheid en de arbeiders\"?",
+      "o": [
+       "Socialisme",
+       "Kapitalisme",
+       "Fabriek",
+       "Industriële revolutie"
+      ],
+      "c": 0,
+      "d": 3,
+      "u": "«Socialisme»: een stroming die opkomt voor gelijkheid en de arbeiders.",
+      "uo": [
+       "Klopt, dit is «Socialisme».",
+       "«Kapitalisme» betekent bezit en winst.",
+       "«Fabriek» betekent gebouw met machines.",
+       "«Industriële revolutie» betekent productie met machines."
+      ],
+      "uh": "Onthoud: «Socialisme» = gelijkheid voor arbeiders."
+     },
+     {
+      "v": "Welke term hoort bij \"bezit en winst\"?",
+      "o": [
+       "Sociale kwestie",
+       "Kapitalisme",
+       "Verstedelijking",
+       "Industriële revolutie"
+      ],
+      "c": 1,
+      "d": 2,
+      "u": "«Kapitalisme»: een economie gebaseerd op particulier bezit en winst.",
+      "uo": [
+       "«Sociale kwestie» betekent ellende van arbeiders.",
+       "Klopt, «Kapitalisme» past hierbij.",
+       "«Verstedelijking» betekent steden groeien.",
+       "«Industriële revolutie» betekent productie met machines."
+      ],
+      "uh": "Onthoud: «Kapitalisme» = bezit en winst."
+     }
+    ],
+    "begrippen": [
+     {
+      "t": "Industriële revolutie",
+      "d": "de overgang naar productie met machines in fabrieken"
+     },
+     {
+      "t": "Fabriek",
+      "d": "een gebouw waar met machines massaal wordt geproduceerd"
+     },
+     {
+      "t": "Stoommachine",
+      "d": "een machine die met stoom fabrieken en treinen aandreef"
+     },
+     {
+      "t": "Verstedelijking",
+      "d": "de groei van steden door de industrie"
+     },
+     {
+      "t": "Sociale kwestie",
+      "d": "de slechte leef- en werkomstandigheden van arbeiders"
+     },
+     {
+      "t": "Kinderarbeid",
+      "d": "het laten werken van kinderen in fabrieken"
+     },
+     {
+      "t": "Arbeider",
+      "d": "iemand die tegen loon in een fabriek werkt"
+     },
+     {
+      "t": "Vakbond",
+      "d": "een organisatie die opkomt voor arbeiders"
+     },
+     {
+      "t": "Staking",
+      "d": "het neerleggen van het werk om eisen kracht bij te zetten"
+     },
+     {
+      "t": "Kapitalisme",
+      "d": "een economie gebaseerd op particulier bezit en winst"
+     },
+     {
+      "t": "Socialisme",
+      "d": "een stroming die opkomt voor gelijkheid en de arbeiders"
+     },
+     {
+      "t": "Massaproductie",
+      "d": "het in grote hoeveelheden maken van producten"
+     }
+    ],
+    "sam": "<p>Tijdens de <b>industriële revolutie</b> ging productie van handwerk naar <b>fabrieken</b> met machines, aangedreven door de <b>stoommachine</b>. Steden groeiden en er ontstond een <b>sociale kwestie</b>: slechte omstandigheden voor <b>arbeiders</b>, waartegen <b>vakbonden</b> en <b>stakingen</b> opkwamen.</p>"
    },
    {
     "id": "D",
@@ -9774,7 +15799,554 @@ var VAKKEN_VMBO = [
     ],
     "nSv": 0,
     "nOe": 0,
-    "nBeg": 0
+    "nBeg": 0,
+    "sv": [
+     {
+      "v": "Welk begrip hoort bij: \"het stelsel dat mensen bij tegenslag inkomen geeft\"?",
+      "o": [
+       "Sociale zekerheid",
+       "Verzorgingsstaat",
+       "Uitkering",
+       "Collectieve voorziening"
+      ],
+      "c": 0,
+      "d": 3,
+      "u": "«Sociale zekerheid»: het stelsel dat mensen bij tegenslag inkomen geeft.",
+      "uo": [
+       "Klopt, dit is «Sociale zekerheid».",
+       "«Verzorgingsstaat» betekent staat zorgt voor burgers.",
+       "«Uitkering» betekent geld bij te weinig inkomen.",
+       "«Collectieve voorziening» betekent voor iedereen geregeld."
+      ],
+      "uh": "Onthoud: «Sociale zekerheid» = inkomen bij tegenslag."
+     },
+     {
+      "v": "Welke term hoort bij \"inkomen bij tegenslag\"?",
+      "o": [
+       "Uitkering",
+       "Sociale zekerheid",
+       "Collectieve voorziening",
+       "AOW"
+      ],
+      "c": 1,
+      "d": 2,
+      "u": "«Sociale zekerheid»: het stelsel dat mensen bij tegenslag inkomen geeft.",
+      "uo": [
+       "«Uitkering» betekent geld bij te weinig inkomen.",
+       "Klopt, «Sociale zekerheid» past hierbij.",
+       "«Collectieve voorziening» betekent voor iedereen geregeld.",
+       "«AOW» betekent staatspensioen."
+      ],
+      "uh": "Onthoud: «Sociale zekerheid» = inkomen bij tegenslag."
+     },
+     {
+      "v": "Wat betekent «Sociale zekerheid»?",
+      "o": [
+       "een staat die voor het welzijn van de burgers zorgt",
+       "geld van de overheid voor wie niet genoeg inkomen heeft",
+       "het stelsel dat mensen bij tegenslag inkomen geeft",
+       "iets dat de overheid voor iedereen regelt"
+      ],
+      "c": 2,
+      "d": 1,
+      "u": "«Sociale zekerheid»: het stelsel dat mensen bij tegenslag inkomen geeft.",
+      "uo": [
+       "Dat is «Verzorgingsstaat».",
+       "Dat is «Uitkering».",
+       "Klopt: inkomen bij tegenslag.",
+       "Dat is «Collectieve voorziening»."
+      ],
+      "uh": "Onthoud: «Sociale zekerheid» = inkomen bij tegenslag."
+     },
+     {
+      "v": "Welk begrip hoort bij: \"een staat die voor het welzijn van de burgers zorgt\"?",
+      "o": [
+       "Sociale zekerheid",
+       "Premie",
+       "Pensioen",
+       "Verzorgingsstaat"
+      ],
+      "c": 3,
+      "d": 3,
+      "u": "«Verzorgingsstaat»: een staat die voor het welzijn van de burgers zorgt.",
+      "uo": [
+       "«Sociale zekerheid» betekent inkomen bij tegenslag.",
+       "«Premie» betekent bedrag voor verzekering.",
+       "«Pensioen» betekent inkomen na je werk.",
+       "Klopt, dit is «Verzorgingsstaat»."
+      ],
+      "uh": "Onthoud: «Verzorgingsstaat» = staat zorgt voor burgers."
+     },
+     {
+      "v": "Welke term hoort bij \"beschermende wet\"?",
+      "o": [
+       "Sociale wet",
+       "Solidariteit",
+       "AOW",
+       "Verzorgingsstaat"
+      ],
+      "c": 0,
+      "d": 2,
+      "u": "«Sociale wet»: een wet die burgers beschermt tegen armoede of ziekte.",
+      "uo": [
+       "Klopt, «Sociale wet» past hierbij.",
+       "«Solidariteit» betekent samen risico's dragen.",
+       "«AOW» betekent staatspensioen.",
+       "«Verzorgingsstaat» betekent staat zorgt voor burgers."
+      ],
+      "uh": "Onthoud: «Sociale wet» = beschermende wet."
+     },
+     {
+      "v": "Wat betekent «Verzorgingsstaat»?",
+      "o": [
+       "het stelsel dat mensen bij tegenslag inkomen geeft",
+       "een staat die voor het welzijn van de burgers zorgt",
+       "het bedrag dat je periodiek voor een verzekering betaalt",
+       "inkomen na je werkzame leven"
+      ],
+      "c": 1,
+      "d": 1,
+      "u": "«Verzorgingsstaat»: een staat die voor het welzijn van de burgers zorgt.",
+      "uo": [
+       "Dat is «Sociale zekerheid».",
+       "Klopt: staat zorgt voor burgers.",
+       "Dat is «Premie».",
+       "Dat is «Pensioen»."
+      ],
+      "uh": "Onthoud: «Verzorgingsstaat» = staat zorgt voor burgers."
+     },
+     {
+      "v": "Welk begrip hoort bij: \"een wet die burgers beschermt tegen armoede of ziekte\"?",
+      "o": [
+       "Sociale zekerheid",
+       "Solidariteit",
+       "Sociale wet",
+       "AOW"
+      ],
+      "c": 2,
+      "d": 3,
+      "u": "«Sociale wet»: een wet die burgers beschermt tegen armoede of ziekte.",
+      "uo": [
+       "«Sociale zekerheid» betekent inkomen bij tegenslag.",
+       "«Solidariteit» betekent samen risico's dragen.",
+       "Klopt, dit is «Sociale wet».",
+       "«AOW» betekent staatspensioen."
+      ],
+      "uh": "Onthoud: «Sociale wet» = beschermende wet."
+     },
+     {
+      "v": "Welke term hoort bij \"geld bij te weinig inkomen\"?",
+      "o": [
+       "Sociale wet",
+       "Solidariteit",
+       "Premie",
+       "Uitkering"
+      ],
+      "c": 3,
+      "d": 2,
+      "u": "«Uitkering»: geld van de overheid voor wie niet genoeg inkomen heeft.",
+      "uo": [
+       "«Sociale wet» betekent beschermende wet.",
+       "«Solidariteit» betekent samen risico's dragen.",
+       "«Premie» betekent bedrag voor verzekering.",
+       "Klopt, «Uitkering» past hierbij."
+      ],
+      "uh": "Onthoud: «Uitkering» = geld bij te weinig inkomen."
+     },
+     {
+      "v": "Wat betekent «Werkloosheid»?",
+      "o": [
+       "de situatie waarin mensen geen werk hebben",
+       "een uitkering voor wie geen ander inkomen heeft",
+       "het samen dragen van risico's en lasten",
+       "het staatspensioen voor ouderen"
+      ],
+      "c": 0,
+      "d": 1,
+      "u": "«Werkloosheid»: de situatie waarin mensen geen werk hebben.",
+      "uo": [
+       "Klopt: geen werk hebben.",
+       "Dat is «Bijstand».",
+       "Dat is «Solidariteit».",
+       "Dat is «AOW»."
+      ],
+      "uh": "Onthoud: «Werkloosheid» = geen werk hebben."
+     },
+     {
+      "v": "Welk begrip hoort bij: \"geld van de overheid voor wie niet genoeg inkomen heeft\"?",
+      "o": [
+       "Bijstand",
+       "Uitkering",
+       "Pensioen",
+       "Sociale wet"
+      ],
+      "c": 1,
+      "d": 3,
+      "u": "«Uitkering»: geld van de overheid voor wie niet genoeg inkomen heeft.",
+      "uo": [
+       "«Bijstand» betekent laatste vangnet.",
+       "Klopt, dit is «Uitkering».",
+       "«Pensioen» betekent inkomen na je werk.",
+       "«Sociale wet» betekent beschermende wet."
+      ],
+      "uh": "Onthoud: «Uitkering» = geld bij te weinig inkomen."
+     },
+     {
+      "v": "Welke term hoort bij \"geen werk hebben\"?",
+      "o": [
+       "Solidariteit",
+       "AOW",
+       "Werkloosheid",
+       "Sociale zekerheid"
+      ],
+      "c": 2,
+      "d": 2,
+      "u": "«Werkloosheid»: de situatie waarin mensen geen werk hebben.",
+      "uo": [
+       "«Solidariteit» betekent samen risico's dragen.",
+       "«AOW» betekent staatspensioen.",
+       "Klopt, «Werkloosheid» past hierbij.",
+       "«Sociale zekerheid» betekent inkomen bij tegenslag."
+      ],
+      "uh": "Onthoud: «Werkloosheid» = geen werk hebben."
+     },
+     {
+      "v": "Wat betekent «AOW»?",
+      "o": [
+       "inkomen na je werkzame leven",
+       "het samen dragen van risico's en lasten",
+       "iets dat de overheid voor iedereen regelt",
+       "het staatspensioen voor ouderen"
+      ],
+      "c": 3,
+      "d": 1,
+      "u": "«AOW»: het staatspensioen voor ouderen.",
+      "uo": [
+       "Dat is «Pensioen».",
+       "Dat is «Solidariteit».",
+       "Dat is «Collectieve voorziening».",
+       "Klopt: staatspensioen."
+      ],
+      "uh": "Onthoud: «AOW» = staatspensioen."
+     },
+     {
+      "v": "Welk begrip hoort bij: \"de situatie waarin mensen geen werk hebben\"?",
+      "o": [
+       "Werkloosheid",
+       "Bijstand",
+       "Solidariteit",
+       "AOW"
+      ],
+      "c": 0,
+      "d": 3,
+      "u": "«Werkloosheid»: de situatie waarin mensen geen werk hebben.",
+      "uo": [
+       "Klopt, dit is «Werkloosheid».",
+       "«Bijstand» betekent laatste vangnet.",
+       "«Solidariteit» betekent samen risico's dragen.",
+       "«AOW» betekent staatspensioen."
+      ],
+      "uh": "Onthoud: «Werkloosheid» = geen werk hebben."
+     },
+     {
+      "v": "Welke term hoort bij \"staatspensioen\"?",
+      "o": [
+       "Solidariteit",
+       "AOW",
+       "Collectieve voorziening",
+       "Premie"
+      ],
+      "c": 1,
+      "d": 2,
+      "u": "«AOW»: het staatspensioen voor ouderen.",
+      "uo": [
+       "«Solidariteit» betekent samen risico's dragen.",
+       "Klopt, «AOW» past hierbij.",
+       "«Collectieve voorziening» betekent voor iedereen geregeld.",
+       "«Premie» betekent bedrag voor verzekering."
+      ],
+      "uh": "Onthoud: «AOW» = staatspensioen."
+     },
+     {
+      "v": "Wat betekent «Solidariteit»?",
+      "o": [
+       "een afspraak die je beschermt tegen financiële risico's",
+       "het staatspensioen voor ouderen",
+       "het samen dragen van risico's en lasten",
+       "de situatie waarin mensen geen werk hebben"
+      ],
+      "c": 2,
+      "d": 1,
+      "u": "«Solidariteit»: het samen dragen van risico's en lasten.",
+      "uo": [
+       "Dat is «Verzekering».",
+       "Dat is «AOW».",
+       "Klopt: samen risico's dragen.",
+       "Dat is «Werkloosheid»."
+      ],
+      "uh": "Onthoud: «Solidariteit» = samen risico's dragen."
+     },
+     {
+      "v": "Welk begrip hoort bij: \"het staatspensioen voor ouderen\"?",
+      "o": [
+       "Pensioen",
+       "Solidariteit",
+       "Collectieve voorziening",
+       "AOW"
+      ],
+      "c": 3,
+      "d": 3,
+      "u": "«AOW»: het staatspensioen voor ouderen.",
+      "uo": [
+       "«Pensioen» betekent inkomen na je werk.",
+       "«Solidariteit» betekent samen risico's dragen.",
+       "«Collectieve voorziening» betekent voor iedereen geregeld.",
+       "Klopt, dit is «AOW»."
+      ],
+      "uh": "Onthoud: «AOW» = staatspensioen."
+     },
+     {
+      "v": "Welke term hoort bij \"samen risico's dragen\"?",
+      "o": [
+       "Solidariteit",
+       "AOW",
+       "Werkloosheid",
+       "Sociale zekerheid"
+      ],
+      "c": 0,
+      "d": 2,
+      "u": "«Solidariteit»: het samen dragen van risico's en lasten.",
+      "uo": [
+       "Klopt, «Solidariteit» past hierbij.",
+       "«AOW» betekent staatspensioen.",
+       "«Werkloosheid» betekent geen werk hebben.",
+       "«Sociale zekerheid» betekent inkomen bij tegenslag."
+      ],
+      "uh": "Onthoud: «Solidariteit» = samen risico's dragen."
+     },
+     {
+      "v": "Wat betekent «Verzekering»?",
+      "o": [
+       "het samen dragen van risico's en lasten",
+       "een afspraak die je beschermt tegen financiële risico's",
+       "de situatie waarin mensen geen werk hebben",
+       "geld van de overheid voor wie niet genoeg inkomen heeft"
+      ],
+      "c": 1,
+      "d": 1,
+      "u": "«Verzekering»: een afspraak die je beschermt tegen financiële risico's.",
+      "uo": [
+       "Dat is «Solidariteit».",
+       "Klopt: bescherming tegen risico.",
+       "Dat is «Werkloosheid».",
+       "Dat is «Uitkering»."
+      ],
+      "uh": "Onthoud: «Verzekering» = bescherming tegen risico."
+     },
+     {
+      "v": "Welk begrip hoort bij: \"het samen dragen van risico's en lasten\"?",
+      "o": [
+       "Verzekering",
+       "AOW",
+       "Solidariteit",
+       "Werkloosheid"
+      ],
+      "c": 2,
+      "d": 3,
+      "u": "«Solidariteit»: het samen dragen van risico's en lasten.",
+      "uo": [
+       "«Verzekering» betekent bescherming tegen risico.",
+       "«AOW» betekent staatspensioen.",
+       "Klopt, dit is «Solidariteit».",
+       "«Werkloosheid» betekent geen werk hebben."
+      ],
+      "uh": "Onthoud: «Solidariteit» = samen risico's dragen."
+     },
+     {
+      "v": "Welke term hoort bij \"bescherming tegen risico\"?",
+      "o": [
+       "Werkloosheid",
+       "Uitkering",
+       "Sociale zekerheid",
+       "Verzekering"
+      ],
+      "c": 3,
+      "d": 2,
+      "u": "«Verzekering»: een afspraak die je beschermt tegen financiële risico's.",
+      "uo": [
+       "«Werkloosheid» betekent geen werk hebben.",
+       "«Uitkering» betekent geld bij te weinig inkomen.",
+       "«Sociale zekerheid» betekent inkomen bij tegenslag.",
+       "Klopt, «Verzekering» past hierbij."
+      ],
+      "uh": "Onthoud: «Verzekering» = bescherming tegen risico."
+     },
+     {
+      "v": "Wat betekent «Pensioen»?",
+      "o": [
+       "inkomen na je werkzame leven",
+       "het staatspensioen voor ouderen",
+       "het bedrag dat je periodiek voor een verzekering betaalt",
+       "iets dat de overheid voor iedereen regelt"
+      ],
+      "c": 0,
+      "d": 1,
+      "u": "«Pensioen»: inkomen na je werkzame leven.",
+      "uo": [
+       "Klopt: inkomen na je werk.",
+       "Dat is «AOW».",
+       "Dat is «Premie».",
+       "Dat is «Collectieve voorziening»."
+      ],
+      "uh": "Onthoud: «Pensioen» = inkomen na je werk."
+     },
+     {
+      "v": "Welk begrip hoort bij: \"een afspraak die je beschermt tegen financiële risico's\"?",
+      "o": [
+       "Solidariteit",
+       "Verzekering",
+       "Werkloosheid",
+       "Uitkering"
+      ],
+      "c": 1,
+      "d": 3,
+      "u": "«Verzekering»: een afspraak die je beschermt tegen financiële risico's.",
+      "uo": [
+       "«Solidariteit» betekent samen risico's dragen.",
+       "Klopt, dit is «Verzekering».",
+       "«Werkloosheid» betekent geen werk hebben.",
+       "«Uitkering» betekent geld bij te weinig inkomen."
+      ],
+      "uh": "Onthoud: «Verzekering» = bescherming tegen risico."
+     },
+     {
+      "v": "Welke term hoort bij \"inkomen na je werk\"?",
+      "o": [
+       "Premie",
+       "Collectieve voorziening",
+       "Pensioen",
+       "Sociale zekerheid"
+      ],
+      "c": 2,
+      "d": 2,
+      "u": "«Pensioen»: inkomen na je werkzame leven.",
+      "uo": [
+       "«Premie» betekent bedrag voor verzekering.",
+       "«Collectieve voorziening» betekent voor iedereen geregeld.",
+       "Klopt, «Pensioen» past hierbij.",
+       "«Sociale zekerheid» betekent inkomen bij tegenslag."
+      ],
+      "uh": "Onthoud: «Pensioen» = inkomen na je werk."
+     },
+     {
+      "v": "Wat betekent «Bijstand»?",
+      "o": [
+       "geld van de overheid voor wie niet genoeg inkomen heeft",
+       "het bedrag dat je periodiek voor een verzekering betaalt",
+       "iets dat de overheid voor iedereen regelt",
+       "een uitkering voor wie geen ander inkomen heeft"
+      ],
+      "c": 3,
+      "d": 1,
+      "u": "«Bijstand»: een uitkering voor wie geen ander inkomen heeft.",
+      "uo": [
+       "Dat is «Uitkering».",
+       "Dat is «Premie».",
+       "Dat is «Collectieve voorziening».",
+       "Klopt: laatste vangnet."
+      ],
+      "uh": "Onthoud: «Bijstand» = laatste vangnet."
+     },
+     {
+      "v": "Welk begrip hoort bij: \"inkomen na je werkzame leven\"?",
+      "o": [
+       "Pensioen",
+       "AOW",
+       "Premie",
+       "Collectieve voorziening"
+      ],
+      "c": 0,
+      "d": 3,
+      "u": "«Pensioen»: inkomen na je werkzame leven.",
+      "uo": [
+       "Klopt, dit is «Pensioen».",
+       "«AOW» betekent staatspensioen.",
+       "«Premie» betekent bedrag voor verzekering.",
+       "«Collectieve voorziening» betekent voor iedereen geregeld."
+      ],
+      "uh": "Onthoud: «Pensioen» = inkomen na je werk."
+     },
+     {
+      "v": "Welke term hoort bij \"laatste vangnet\"?",
+      "o": [
+       "Premie",
+       "Bijstand",
+       "Collectieve voorziening",
+       "Sociale zekerheid"
+      ],
+      "c": 1,
+      "d": 2,
+      "u": "«Bijstand»: een uitkering voor wie geen ander inkomen heeft.",
+      "uo": [
+       "«Premie» betekent bedrag voor verzekering.",
+       "Klopt, «Bijstand» past hierbij.",
+       "«Collectieve voorziening» betekent voor iedereen geregeld.",
+       "«Sociale zekerheid» betekent inkomen bij tegenslag."
+      ],
+      "uh": "Onthoud: «Bijstand» = laatste vangnet."
+     }
+    ],
+    "begrippen": [
+     {
+      "t": "Sociale zekerheid",
+      "d": "het stelsel dat mensen bij tegenslag inkomen geeft"
+     },
+     {
+      "t": "Verzorgingsstaat",
+      "d": "een staat die voor het welzijn van de burgers zorgt"
+     },
+     {
+      "t": "Sociale wet",
+      "d": "een wet die burgers beschermt tegen armoede of ziekte"
+     },
+     {
+      "t": "Uitkering",
+      "d": "geld van de overheid voor wie niet genoeg inkomen heeft"
+     },
+     {
+      "t": "Werkloosheid",
+      "d": "de situatie waarin mensen geen werk hebben"
+     },
+     {
+      "t": "AOW",
+      "d": "het staatspensioen voor ouderen"
+     },
+     {
+      "t": "Solidariteit",
+      "d": "het samen dragen van risico's en lasten"
+     },
+     {
+      "t": "Verzekering",
+      "d": "een afspraak die je beschermt tegen financiële risico's"
+     },
+     {
+      "t": "Pensioen",
+      "d": "inkomen na je werkzame leven"
+     },
+     {
+      "t": "Bijstand",
+      "d": "een uitkering voor wie geen ander inkomen heeft"
+     },
+     {
+      "t": "Premie",
+      "d": "het bedrag dat je periodiek voor een verzekering betaalt"
+     },
+     {
+      "t": "Collectieve voorziening",
+      "d": "iets dat de overheid voor iedereen regelt"
+     }
+    ],
+    "sam": "<p>Na 1945 bouwde Nederland een <b>verzorgingsstaat</b>: met <b>sociale wetten</b> en <b>uitkeringen</b> beschermt de <b>sociale zekerheid</b> mensen tegen <b>werkloosheid</b>, ziekte en ouderdom. Dat berust op <b>solidariteit</b>: samen de risico's dragen.</p>"
    },
    {
     "id": "E",
@@ -9788,7 +16360,554 @@ var VAKKEN_VMBO = [
     ],
     "nSv": 0,
     "nOe": 0,
-    "nBeg": 0
+    "nBeg": 0,
+    "sv": [
+     {
+      "v": "Welk begrip hoort bij: \"de indeling van de samenleving in aparte groepen naar geloof of politiek\"?",
+      "o": [
+       "Verzuiling",
+       "Ontzuiling",
+       "Jongerencultuur",
+       "Emancipatie"
+      ],
+      "c": 0,
+      "d": 3,
+      "u": "«Verzuiling»: de indeling van de samenleving in aparte groepen naar geloof of politiek.",
+      "uo": [
+       "Klopt, dit is «Verzuiling».",
+       "«Ontzuiling» betekent zuilen verdwijnen.",
+       "«Jongerencultuur» betekent eigen stijl van jongeren.",
+       "«Emancipatie» betekent streven naar gelijkheid."
+      ],
+      "uh": "Onthoud: «Verzuiling» = samenleving in zuilen."
+     },
+     {
+      "v": "Welke term hoort bij \"samenleving in zuilen\"?",
+      "o": [
+       "Jongerencultuur",
+       "Verzuiling",
+       "Emancipatie",
+       "Individualisering"
+      ],
+      "c": 1,
+      "d": 2,
+      "u": "«Verzuiling»: de indeling van de samenleving in aparte groepen naar geloof of politiek.",
+      "uo": [
+       "«Jongerencultuur» betekent eigen stijl van jongeren.",
+       "Klopt, «Verzuiling» past hierbij.",
+       "«Emancipatie» betekent streven naar gelijkheid.",
+       "«Individualisering» betekent het individu voorop."
+      ],
+      "uh": "Onthoud: «Verzuiling» = samenleving in zuilen."
+     },
+     {
+      "v": "Wat betekent «Ontzuiling»?",
+      "o": [
+       "de indeling van de samenleving in aparte groepen naar geloof of politiek",
+       "de eigen stijl, muziek en ideeën van jongeren",
+       "het verdwijnen van de scheiding tussen die groepen",
+       "het streven naar gelijke rechten, bijvoorbeeld van vrouwen"
+      ],
+      "c": 2,
+      "d": 1,
+      "u": "«Ontzuiling»: het verdwijnen van de scheiding tussen die groepen.",
+      "uo": [
+       "Dat is «Verzuiling».",
+       "Dat is «Jongerencultuur».",
+       "Klopt: zuilen verdwijnen.",
+       "Dat is «Emancipatie»."
+      ],
+      "uh": "Onthoud: «Ontzuiling» = zuilen verdwijnen."
+     },
+     {
+      "v": "Welk begrip hoort bij: \"het verdwijnen van de scheiding tussen die groepen\"?",
+      "o": [
+       "Verzuiling",
+       "Jongerencultuur",
+       "Emancipatie",
+       "Ontzuiling"
+      ],
+      "c": 3,
+      "d": 3,
+      "u": "«Ontzuiling»: het verdwijnen van de scheiding tussen die groepen.",
+      "uo": [
+       "«Verzuiling» betekent samenleving in zuilen.",
+       "«Jongerencultuur» betekent eigen stijl van jongeren.",
+       "«Emancipatie» betekent streven naar gelijkheid.",
+       "Klopt, dit is «Ontzuiling»."
+      ],
+      "uh": "Onthoud: «Ontzuiling» = zuilen verdwijnen."
+     },
+     {
+      "v": "Welke term hoort bij \"zuilen verdwijnen\"?",
+      "o": [
+       "Ontzuiling",
+       "Jongerencultuur",
+       "Emancipatie",
+       "Individualisering"
+      ],
+      "c": 0,
+      "d": 2,
+      "u": "«Ontzuiling»: het verdwijnen van de scheiding tussen die groepen.",
+      "uo": [
+       "Klopt, «Ontzuiling» past hierbij.",
+       "«Jongerencultuur» betekent eigen stijl van jongeren.",
+       "«Emancipatie» betekent streven naar gelijkheid.",
+       "«Individualisering» betekent het individu voorop."
+      ],
+      "uh": "Onthoud: «Ontzuiling» = zuilen verdwijnen."
+     },
+     {
+      "v": "Wat betekent «Jongerencultuur»?",
+      "o": [
+       "een groep die zich verzet tegen bestaande regels",
+       "de eigen stijl, muziek en ideeën van jongeren",
+       "de mate waarin mensen in hun behoeften kunnen voorzien",
+       "een samenleving waarin veel wordt gekocht en gebruikt"
+      ],
+      "c": 1,
+      "d": 1,
+      "u": "«Jongerencultuur»: de eigen stijl, muziek en ideeën van jongeren.",
+      "uo": [
+       "Dat is «Protestbeweging».",
+       "Klopt: eigen stijl van jongeren.",
+       "Dat is «Welvaart».",
+       "Dat is «Consumptiemaatschappij»."
+      ],
+      "uh": "Onthoud: «Jongerencultuur» = eigen stijl van jongeren."
+     },
+     {
+      "v": "Welk begrip hoort bij: \"het streven naar gelijke rechten, bijvoorbeeld van vrouwen\"?",
+      "o": [
+       "Democratisering",
+       "Welvaart",
+       "Emancipatie",
+       "Protestbeweging"
+      ],
+      "c": 2,
+      "d": 3,
+      "u": "«Emancipatie»: het streven naar gelijke rechten, bijvoorbeeld van vrouwen.",
+      "uo": [
+       "«Democratisering» betekent meer inspraak.",
+       "«Welvaart» betekent hoe goed men rondkomt.",
+       "Klopt, dit is «Emancipatie».",
+       "«Protestbeweging» betekent groep die zich verzet."
+      ],
+      "uh": "Onthoud: «Emancipatie» = streven naar gelijkheid."
+     },
+     {
+      "v": "Welke term hoort bij \"streven naar gelijkheid\"?",
+      "o": [
+       "Welvaart",
+       "Protestbeweging",
+       "Verzuiling",
+       "Emancipatie"
+      ],
+      "c": 3,
+      "d": 2,
+      "u": "«Emancipatie»: het streven naar gelijke rechten, bijvoorbeeld van vrouwen.",
+      "uo": [
+       "«Welvaart» betekent hoe goed men rondkomt.",
+       "«Protestbeweging» betekent groep die zich verzet.",
+       "«Verzuiling» betekent samenleving in zuilen.",
+       "Klopt, «Emancipatie» past hierbij."
+      ],
+      "uh": "Onthoud: «Emancipatie» = streven naar gelijkheid."
+     },
+     {
+      "v": "Wat betekent «Protestbeweging»?",
+      "o": [
+       "een groep die zich verzet tegen bestaande regels",
+       "de eigen stijl, muziek en ideeën van jongeren",
+       "de mate waarin mensen in hun behoeften kunnen voorzien",
+       "een samenleving waarin veel wordt gekocht en gebruikt"
+      ],
+      "c": 0,
+      "d": 1,
+      "u": "«Protestbeweging»: een groep die zich verzet tegen bestaande regels.",
+      "uo": [
+       "Klopt: groep die zich verzet.",
+       "Dat is «Jongerencultuur».",
+       "Dat is «Welvaart».",
+       "Dat is «Consumptiemaatschappij»."
+      ],
+      "uh": "Onthoud: «Protestbeweging» = groep die zich verzet."
+     },
+     {
+      "v": "Welk begrip hoort bij: \"de eigen stijl, muziek en ideeën van jongeren\"?",
+      "o": [
+       "Protestbeweging",
+       "Jongerencultuur",
+       "Welvaart",
+       "Consumptiemaatschappij"
+      ],
+      "c": 1,
+      "d": 3,
+      "u": "«Jongerencultuur»: de eigen stijl, muziek en ideeën van jongeren.",
+      "uo": [
+       "«Protestbeweging» betekent groep die zich verzet.",
+       "Klopt, dit is «Jongerencultuur».",
+       "«Welvaart» betekent hoe goed men rondkomt.",
+       "«Consumptiemaatschappij» betekent veel kopen."
+      ],
+      "uh": "Onthoud: «Jongerencultuur» = eigen stijl van jongeren."
+     },
+     {
+      "v": "Welke term hoort bij \"eigen stijl van jongeren\"?",
+      "o": [
+       "Welvaart",
+       "Consumptiemaatschappij",
+       "Jongerencultuur",
+       "Individualisering"
+      ],
+      "c": 2,
+      "d": 2,
+      "u": "«Jongerencultuur»: de eigen stijl, muziek en ideeën van jongeren.",
+      "uo": [
+       "«Welvaart» betekent hoe goed men rondkomt.",
+       "«Consumptiemaatschappij» betekent veel kopen.",
+       "Klopt, «Jongerencultuur» past hierbij.",
+       "«Individualisering» betekent het individu voorop."
+      ],
+      "uh": "Onthoud: «Jongerencultuur» = eigen stijl van jongeren."
+     },
+     {
+      "v": "Wat betekent «Welvaart»?",
+      "o": [
+       "een samenleving waarin veel wordt gekocht en gebruikt",
+       "media die veel mensen tegelijk bereiken, zoals tv en radio",
+       "het verschil in opvattingen tussen jong en oud",
+       "de mate waarin mensen in hun behoeften kunnen voorzien"
+      ],
+      "c": 3,
+      "d": 1,
+      "u": "«Welvaart»: de mate waarin mensen in hun behoeften kunnen voorzien.",
+      "uo": [
+       "Dat is «Consumptiemaatschappij».",
+       "Dat is «Massamedia».",
+       "Dat is «Generatiekloof».",
+       "Klopt: hoe goed men rondkomt."
+      ],
+      "uh": "Onthoud: «Welvaart» = hoe goed men rondkomt."
+     },
+     {
+      "v": "Welk begrip hoort bij: \"een groep die zich verzet tegen bestaande regels\"?",
+      "o": [
+       "Protestbeweging",
+       "Jongerencultuur",
+       "Welvaart",
+       "Consumptiemaatschappij"
+      ],
+      "c": 0,
+      "d": 3,
+      "u": "«Protestbeweging»: een groep die zich verzet tegen bestaande regels.",
+      "uo": [
+       "Klopt, dit is «Protestbeweging».",
+       "«Jongerencultuur» betekent eigen stijl van jongeren.",
+       "«Welvaart» betekent hoe goed men rondkomt.",
+       "«Consumptiemaatschappij» betekent veel kopen."
+      ],
+      "uh": "Onthoud: «Protestbeweging» = groep die zich verzet."
+     },
+     {
+      "v": "Welke term hoort bij \"groep die zich verzet\"?",
+      "o": [
+       "Welvaart",
+       "Protestbeweging",
+       "Consumptiemaatschappij",
+       "Individualisering"
+      ],
+      "c": 1,
+      "d": 2,
+      "u": "«Protestbeweging»: een groep die zich verzet tegen bestaande regels.",
+      "uo": [
+       "«Welvaart» betekent hoe goed men rondkomt.",
+       "Klopt, «Protestbeweging» past hierbij.",
+       "«Consumptiemaatschappij» betekent veel kopen.",
+       "«Individualisering» betekent het individu voorop."
+      ],
+      "uh": "Onthoud: «Protestbeweging» = groep die zich verzet."
+     },
+     {
+      "v": "Wat betekent «Consumptiemaatschappij»?",
+      "o": [
+       "de mate waarin mensen in hun behoeften kunnen voorzien",
+       "het krijgen van meer inspraak en zeggenschap",
+       "een samenleving waarin veel wordt gekocht en gebruikt",
+       "de eigen stijl, muziek en ideeën van jongeren"
+      ],
+      "c": 2,
+      "d": 1,
+      "u": "«Consumptiemaatschappij»: een samenleving waarin veel wordt gekocht en gebruikt.",
+      "uo": [
+       "Dat is «Welvaart».",
+       "Dat is «Democratisering».",
+       "Klopt: veel kopen.",
+       "Dat is «Jongerencultuur»."
+      ],
+      "uh": "Onthoud: «Consumptiemaatschappij» = veel kopen."
+     },
+     {
+      "v": "Welk begrip hoort bij: \"de mate waarin mensen in hun behoeften kunnen voorzien\"?",
+      "o": [
+       "Consumptiemaatschappij",
+       "Massamedia",
+       "Generatiekloof",
+       "Welvaart"
+      ],
+      "c": 3,
+      "d": 3,
+      "u": "«Welvaart»: de mate waarin mensen in hun behoeften kunnen voorzien.",
+      "uo": [
+       "«Consumptiemaatschappij» betekent veel kopen.",
+       "«Massamedia» betekent bereiken velen tegelijk.",
+       "«Generatiekloof» betekent kloof jong en oud.",
+       "Klopt, dit is «Welvaart»."
+      ],
+      "uh": "Onthoud: «Welvaart» = hoe goed men rondkomt."
+     },
+     {
+      "v": "Welke term hoort bij \"hoe goed men rondkomt\"?",
+      "o": [
+       "Welvaart",
+       "Massamedia",
+       "Generatiekloof",
+       "Verzuiling"
+      ],
+      "c": 0,
+      "d": 2,
+      "u": "«Welvaart»: de mate waarin mensen in hun behoeften kunnen voorzien.",
+      "uo": [
+       "Klopt, «Welvaart» past hierbij.",
+       "«Massamedia» betekent bereiken velen tegelijk.",
+       "«Generatiekloof» betekent kloof jong en oud.",
+       "«Verzuiling» betekent samenleving in zuilen."
+      ],
+      "uh": "Onthoud: «Welvaart» = hoe goed men rondkomt."
+     },
+     {
+      "v": "Wat betekent «Individualisering»?",
+      "o": [
+       "het krijgen van meer inspraak en zeggenschap",
+       "het belangrijker worden van het individu",
+       "het verdwijnen van de scheiding tussen die groepen",
+       "het verschil in opvattingen tussen jong en oud"
+      ],
+      "c": 1,
+      "d": 1,
+      "u": "«Individualisering»: het belangrijker worden van het individu.",
+      "uo": [
+       "Dat is «Democratisering».",
+       "Klopt: het individu voorop.",
+       "Dat is «Ontzuiling».",
+       "Dat is «Generatiekloof»."
+      ],
+      "uh": "Onthoud: «Individualisering» = het individu voorop."
+     },
+     {
+      "v": "Welk begrip hoort bij: \"het minder belangrijk worden van religie\"?",
+      "o": [
+       "Ontzuiling",
+       "Individualisering",
+       "Secularisatie",
+       "Generatiekloof"
+      ],
+      "c": 2,
+      "d": 3,
+      "u": "«Secularisatie»: het minder belangrijk worden van religie.",
+      "uo": [
+       "«Ontzuiling» betekent zuilen verdwijnen.",
+       "«Individualisering» betekent het individu voorop.",
+       "Klopt, dit is «Secularisatie».",
+       "«Generatiekloof» betekent kloof jong en oud."
+      ],
+      "uh": "Onthoud: «Secularisatie» = religie wordt minder."
+     },
+     {
+      "v": "Welke term hoort bij \"religie wordt minder\"?",
+      "o": [
+       "Individualisering",
+       "Generatiekloof",
+       "Verzuiling",
+       "Secularisatie"
+      ],
+      "c": 3,
+      "d": 2,
+      "u": "«Secularisatie»: het minder belangrijk worden van religie.",
+      "uo": [
+       "«Individualisering» betekent het individu voorop.",
+       "«Generatiekloof» betekent kloof jong en oud.",
+       "«Verzuiling» betekent samenleving in zuilen.",
+       "Klopt, «Secularisatie» past hierbij."
+      ],
+      "uh": "Onthoud: «Secularisatie» = religie wordt minder."
+     },
+     {
+      "v": "Wat betekent «Secularisatie»?",
+      "o": [
+       "het minder belangrijk worden van religie",
+       "het verdwijnen van de scheiding tussen die groepen",
+       "het belangrijker worden van het individu",
+       "het verschil in opvattingen tussen jong en oud"
+      ],
+      "c": 0,
+      "d": 1,
+      "u": "«Secularisatie»: het minder belangrijk worden van religie.",
+      "uo": [
+       "Klopt: religie wordt minder.",
+       "Dat is «Ontzuiling».",
+       "Dat is «Individualisering».",
+       "Dat is «Generatiekloof»."
+      ],
+      "uh": "Onthoud: «Secularisatie» = religie wordt minder."
+     },
+     {
+      "v": "Welk begrip hoort bij: \"het krijgen van meer inspraak en zeggenschap\"?",
+      "o": [
+       "Emancipatie",
+       "Democratisering",
+       "Protestbeweging",
+       "Welvaart"
+      ],
+      "c": 1,
+      "d": 3,
+      "u": "«Democratisering»: het krijgen van meer inspraak en zeggenschap.",
+      "uo": [
+       "«Emancipatie» betekent streven naar gelijkheid.",
+       "Klopt, dit is «Democratisering».",
+       "«Protestbeweging» betekent groep die zich verzet.",
+       "«Welvaart» betekent hoe goed men rondkomt."
+      ],
+      "uh": "Onthoud: «Democratisering» = meer inspraak."
+     },
+     {
+      "v": "Welke term hoort bij \"meer inspraak\"?",
+      "o": [
+       "Protestbeweging",
+       "Welvaart",
+       "Democratisering",
+       "Consumptiemaatschappij"
+      ],
+      "c": 2,
+      "d": 2,
+      "u": "«Democratisering»: het krijgen van meer inspraak en zeggenschap.",
+      "uo": [
+       "«Protestbeweging» betekent groep die zich verzet.",
+       "«Welvaart» betekent hoe goed men rondkomt.",
+       "Klopt, «Democratisering» past hierbij.",
+       "«Consumptiemaatschappij» betekent veel kopen."
+      ],
+      "uh": "Onthoud: «Democratisering» = meer inspraak."
+     },
+     {
+      "v": "Wat betekent «Democratisering»?",
+      "o": [
+       "het streven naar gelijke rechten, bijvoorbeeld van vrouwen",
+       "een groep die zich verzet tegen bestaande regels",
+       "de mate waarin mensen in hun behoeften kunnen voorzien",
+       "het krijgen van meer inspraak en zeggenschap"
+      ],
+      "c": 3,
+      "d": 1,
+      "u": "«Democratisering»: het krijgen van meer inspraak en zeggenschap.",
+      "uo": [
+       "Dat is «Emancipatie».",
+       "Dat is «Protestbeweging».",
+       "Dat is «Welvaart».",
+       "Klopt: meer inspraak."
+      ],
+      "uh": "Onthoud: «Democratisering» = meer inspraak."
+     },
+     {
+      "v": "Welk begrip hoort bij: \"media die veel mensen tegelijk bereiken, zoals tv en radio\"?",
+      "o": [
+       "Massamedia",
+       "Jongerencultuur",
+       "Ontzuiling",
+       "Verzuiling"
+      ],
+      "c": 0,
+      "d": 3,
+      "u": "«Massamedia»: media die veel mensen tegelijk bereiken, zoals tv en radio.",
+      "uo": [
+       "Klopt, dit is «Massamedia».",
+       "«Jongerencultuur» betekent eigen stijl van jongeren.",
+       "«Ontzuiling» betekent zuilen verdwijnen.",
+       "«Verzuiling» betekent samenleving in zuilen."
+      ],
+      "uh": "Onthoud: «Massamedia» = bereiken velen tegelijk."
+     },
+     {
+      "v": "Welke term hoort bij \"bereiken velen tegelijk\"?",
+      "o": [
+       "Ontzuiling",
+       "Massamedia",
+       "Verzuiling",
+       "Consumptiemaatschappij"
+      ],
+      "c": 1,
+      "d": 2,
+      "u": "«Massamedia»: media die veel mensen tegelijk bereiken, zoals tv en radio.",
+      "uo": [
+       "«Ontzuiling» betekent zuilen verdwijnen.",
+       "Klopt, «Massamedia» past hierbij.",
+       "«Verzuiling» betekent samenleving in zuilen.",
+       "«Consumptiemaatschappij» betekent veel kopen."
+      ],
+      "uh": "Onthoud: «Massamedia» = bereiken velen tegelijk."
+     }
+    ],
+    "begrippen": [
+     {
+      "t": "Verzuiling",
+      "d": "de indeling van de samenleving in aparte groepen naar geloof of politiek"
+     },
+     {
+      "t": "Ontzuiling",
+      "d": "het verdwijnen van de scheiding tussen die groepen"
+     },
+     {
+      "t": "Emancipatie",
+      "d": "het streven naar gelijke rechten, bijvoorbeeld van vrouwen"
+     },
+     {
+      "t": "Jongerencultuur",
+      "d": "de eigen stijl, muziek en ideeën van jongeren"
+     },
+     {
+      "t": "Protestbeweging",
+      "d": "een groep die zich verzet tegen bestaande regels"
+     },
+     {
+      "t": "Welvaart",
+      "d": "de mate waarin mensen in hun behoeften kunnen voorzien"
+     },
+     {
+      "t": "Consumptiemaatschappij",
+      "d": "een samenleving waarin veel wordt gekocht en gebruikt"
+     },
+     {
+      "t": "Individualisering",
+      "d": "het belangrijker worden van het individu"
+     },
+     {
+      "t": "Secularisatie",
+      "d": "het minder belangrijk worden van religie"
+     },
+     {
+      "t": "Democratisering",
+      "d": "het krijgen van meer inspraak en zeggenschap"
+     },
+     {
+      "t": "Massamedia",
+      "d": "media die veel mensen tegelijk bereiken, zoals tv en radio"
+     },
+     {
+      "t": "Generatiekloof",
+      "d": "het verschil in opvattingen tussen jong en oud"
+     }
+    ],
+    "sam": "<p>Na de oorlog verdween de <b>verzuiling</b> (<b>ontzuiling</b>) en kwam de <b>emancipatie</b> op gang. Er ontstond een eigen <b>jongerencultuur</b> en <b>protestbewegingen</b>. Door groeiende <b>welvaart</b> ontstond een <b>consumptiemaatschappij</b> en nam de <b>individualisering</b> toe.</p>"
    },
    {
     "id": "F",
@@ -9802,7 +16921,554 @@ var VAKKEN_VMBO = [
     ],
     "nSv": 0,
     "nOe": 0,
-    "nBeg": 0
+    "nBeg": 0,
+    "sv": [
+     {
+      "v": "Welk begrip hoort bij: \"een gebied dat door een ander land wordt bestuurd\"?",
+      "o": [
+       "Kolonie",
+       "Plantage",
+       "Uitbuiting",
+       "Onafhankelijkheid"
+      ],
+      "c": 0,
+      "d": 3,
+      "u": "«Kolonie»: een gebied dat door een ander land wordt bestuurd.",
+      "uo": [
+       "Klopt, dit is «Kolonie».",
+       "«Plantage» betekent landbouwbedrijf in kolonie.",
+       "«Uitbuiting» betekent misbruik voor winst.",
+       "«Onafhankelijkheid» betekent zelfstandig worden."
+      ],
+      "uh": "Onthoud: «Kolonie» = bestuurd gebied."
+     },
+     {
+      "v": "Welke term hoort bij \"bestuurd gebied\"?",
+      "o": [
+       "Uitbuiting",
+       "Kolonie",
+       "Onafhankelijkheid",
+       "Slavernij"
+      ],
+      "c": 1,
+      "d": 2,
+      "u": "«Kolonie»: een gebied dat door een ander land wordt bestuurd.",
+      "uo": [
+       "«Uitbuiting» betekent misbruik voor winst.",
+       "Klopt, «Kolonie» past hierbij.",
+       "«Onafhankelijkheid» betekent zelfstandig worden.",
+       "«Slavernij» betekent mensen als bezit."
+      ],
+      "uh": "Onthoud: «Kolonie» = bestuurd gebied."
+     },
+     {
+      "v": "Wat betekent «Dekolonisatie»?",
+      "o": [
+       "het in bezit nemen en besturen van een ander gebied",
+       "de militaire acties van Nederland in Indië na 1945",
+       "het onafhankelijk worden van koloniën",
+       "het bezit en dwingen van mensen tot onbetaalde arbeid"
+      ],
+      "c": 2,
+      "d": 1,
+      "u": "«Dekolonisatie»: het onafhankelijk worden van koloniën.",
+      "uo": [
+       "Dat is «Kolonisatie».",
+       "Dat is «Politionele acties».",
+       "Klopt: koloniën worden vrij.",
+       "Dat is «Slavernij»."
+      ],
+      "uh": "Onthoud: «Dekolonisatie» = koloniën worden vrij."
+     },
+     {
+      "v": "Welk begrip hoort bij: \"het in bezit nemen en besturen van een ander gebied\"?",
+      "o": [
+       "Dekolonisatie",
+       "Uitbuiting",
+       "Nationalisme",
+       "Kolonisatie"
+      ],
+      "c": 3,
+      "d": 3,
+      "u": "«Kolonisatie»: het in bezit nemen en besturen van een ander gebied.",
+      "uo": [
+       "«Dekolonisatie» betekent koloniën worden vrij.",
+       "«Uitbuiting» betekent misbruik voor winst.",
+       "«Nationalisme» betekent streven naar eigen natie.",
+       "Klopt, dit is «Kolonisatie»."
+      ],
+      "uh": "Onthoud: «Kolonisatie» = gebied in bezit nemen."
+     },
+     {
+      "v": "Welke term hoort bij \"gebied in bezit nemen\"?",
+      "o": [
+       "Kolonisatie",
+       "Uitbuiting",
+       "Nationalisme",
+       "Kolonie"
+      ],
+      "c": 0,
+      "d": 2,
+      "u": "«Kolonisatie»: het in bezit nemen en besturen van een ander gebied.",
+      "uo": [
+       "Klopt, «Kolonisatie» past hierbij.",
+       "«Uitbuiting» betekent misbruik voor winst.",
+       "«Nationalisme» betekent streven naar eigen natie.",
+       "«Kolonie» betekent bestuurd gebied."
+      ],
+      "uh": "Onthoud: «Kolonisatie» = gebied in bezit nemen."
+     },
+     {
+      "v": "Wat betekent «Nederlands-Indië»?",
+      "o": [
+       "een vroegere Nederlandse kolonie, sinds 1975 onafhankelijk",
+       "de vroegere Nederlandse kolonie, nu Indonesië",
+       "het verhuizen van mensen, zoals van Suriname naar Nederland",
+       "een groot landbouwbedrijf in een kolonie"
+      ],
+      "c": 1,
+      "d": 1,
+      "u": "«Nederlands-Indië»: de vroegere Nederlandse kolonie, nu Indonesië.",
+      "uo": [
+       "Dat is «Suriname».",
+       "Klopt: kolonie, nu Indonesië.",
+       "Dat is «Migratie».",
+       "Dat is «Plantage»."
+      ],
+      "uh": "Onthoud: «Nederlands-Indië» = kolonie, nu Indonesië."
+     },
+     {
+      "v": "Welk begrip hoort bij: \"het onafhankelijk worden van koloniën\"?",
+      "o": [
+       "Kolonisatie",
+       "Politionele acties",
+       "Dekolonisatie",
+       "Slavernij"
+      ],
+      "c": 2,
+      "d": 3,
+      "u": "«Dekolonisatie»: het onafhankelijk worden van koloniën.",
+      "uo": [
+       "«Kolonisatie» betekent gebied in bezit nemen.",
+       "«Politionele acties» betekent militaire acties in Indië.",
+       "Klopt, dit is «Dekolonisatie».",
+       "«Slavernij» betekent mensen als bezit."
+      ],
+      "uh": "Onthoud: «Dekolonisatie» = koloniën worden vrij."
+     },
+     {
+      "v": "Welke term hoort bij \"koloniën worden vrij\"?",
+      "o": [
+       "Politionele acties",
+       "Slavernij",
+       "Kolonie",
+       "Dekolonisatie"
+      ],
+      "c": 3,
+      "d": 2,
+      "u": "«Dekolonisatie»: het onafhankelijk worden van koloniën.",
+      "uo": [
+       "«Politionele acties» betekent militaire acties in Indië.",
+       "«Slavernij» betekent mensen als bezit.",
+       "«Kolonie» betekent bestuurd gebied.",
+       "Klopt, «Dekolonisatie» past hierbij."
+      ],
+      "uh": "Onthoud: «Dekolonisatie» = koloniën worden vrij."
+     },
+     {
+      "v": "Wat betekent «Onafhankelijkheid»?",
+      "o": [
+       "het zelfstandig worden van een land",
+       "het streven naar een eigen zelfstandige natie",
+       "het in bezit nemen en besturen van een ander gebied",
+       "het bezit en dwingen van mensen tot onbetaalde arbeid"
+      ],
+      "c": 0,
+      "d": 1,
+      "u": "«Onafhankelijkheid»: het zelfstandig worden van een land.",
+      "uo": [
+       "Klopt: zelfstandig worden.",
+       "Dat is «Nationalisme».",
+       "Dat is «Kolonisatie».",
+       "Dat is «Slavernij»."
+      ],
+      "uh": "Onthoud: «Onafhankelijkheid» = zelfstandig worden."
+     },
+     {
+      "v": "Welk begrip hoort bij: \"het streven naar een eigen zelfstandige natie\"?",
+      "o": [
+       "Onafhankelijkheid",
+       "Nationalisme",
+       "Plantage",
+       "Uitbuiting"
+      ],
+      "c": 1,
+      "d": 3,
+      "u": "«Nationalisme»: het streven naar een eigen zelfstandige natie.",
+      "uo": [
+       "«Onafhankelijkheid» betekent zelfstandig worden.",
+       "Klopt, dit is «Nationalisme».",
+       "«Plantage» betekent landbouwbedrijf in kolonie.",
+       "«Uitbuiting» betekent misbruik voor winst."
+      ],
+      "uh": "Onthoud: «Nationalisme» = streven naar eigen natie."
+     },
+     {
+      "v": "Welke term hoort bij \"kolonie, nu Indonesië\"?",
+      "o": [
+       "Migratie",
+       "Plantage",
+       "Nederlands-Indië",
+       "Onafhankelijkheid"
+      ],
+      "c": 2,
+      "d": 2,
+      "u": "«Nederlands-Indië»: de vroegere Nederlandse kolonie, nu Indonesië.",
+      "uo": [
+       "«Migratie» betekent mensen verhuizen.",
+       "«Plantage» betekent landbouwbedrijf in kolonie.",
+       "Klopt, «Nederlands-Indië» past hierbij.",
+       "«Onafhankelijkheid» betekent zelfstandig worden."
+      ],
+      "uh": "Onthoud: «Nederlands-Indië» = kolonie, nu Indonesië."
+     },
+     {
+      "v": "Wat betekent «Nationalisme»?",
+      "o": [
+       "het zelfstandig worden van een land",
+       "een groot landbouwbedrijf in een kolonie",
+       "het misbruiken van mensen of gebieden voor winst",
+       "het streven naar een eigen zelfstandige natie"
+      ],
+      "c": 3,
+      "d": 1,
+      "u": "«Nationalisme»: het streven naar een eigen zelfstandige natie.",
+      "uo": [
+       "Dat is «Onafhankelijkheid».",
+       "Dat is «Plantage».",
+       "Dat is «Uitbuiting».",
+       "Klopt: streven naar eigen natie."
+      ],
+      "uh": "Onthoud: «Nationalisme» = streven naar eigen natie."
+     },
+     {
+      "v": "Welk begrip hoort bij: \"het misbruiken van mensen of gebieden voor winst\"?",
+      "o": [
+       "Uitbuiting",
+       "Plantage",
+       "Kolonisatie",
+       "Kolonie"
+      ],
+      "c": 0,
+      "d": 3,
+      "u": "«Uitbuiting»: het misbruiken van mensen of gebieden voor winst.",
+      "uo": [
+       "Klopt, dit is «Uitbuiting».",
+       "«Plantage» betekent landbouwbedrijf in kolonie.",
+       "«Kolonisatie» betekent gebied in bezit nemen.",
+       "«Kolonie» betekent bestuurd gebied."
+      ],
+      "uh": "Onthoud: «Uitbuiting» = misbruik voor winst."
+     },
+     {
+      "v": "Welke term hoort bij \"misbruik voor winst\"?",
+      "o": [
+       "Kolonisatie",
+       "Uitbuiting",
+       "Kolonie",
+       "Nationalisme"
+      ],
+      "c": 1,
+      "d": 2,
+      "u": "«Uitbuiting»: het misbruiken van mensen of gebieden voor winst.",
+      "uo": [
+       "«Kolonisatie» betekent gebied in bezit nemen.",
+       "Klopt, «Uitbuiting» past hierbij.",
+       "«Kolonie» betekent bestuurd gebied.",
+       "«Nationalisme» betekent streven naar eigen natie."
+      ],
+      "uh": "Onthoud: «Uitbuiting» = misbruik voor winst."
+     },
+     {
+      "v": "Wat betekent «Uitbuiting»?",
+      "o": [
+       "een groot landbouwbedrijf in een kolonie",
+       "het in bezit nemen en besturen van een ander gebied",
+       "het misbruiken van mensen of gebieden voor winst",
+       "een gebied dat door een ander land wordt bestuurd"
+      ],
+      "c": 2,
+      "d": 1,
+      "u": "«Uitbuiting»: het misbruiken van mensen of gebieden voor winst.",
+      "uo": [
+       "Dat is «Plantage».",
+       "Dat is «Kolonisatie».",
+       "Klopt: misbruik voor winst.",
+       "Dat is «Kolonie»."
+      ],
+      "uh": "Onthoud: «Uitbuiting» = misbruik voor winst."
+     },
+     {
+      "v": "Welk begrip hoort bij: \"een groot landbouwbedrijf in een kolonie\"?",
+      "o": [
+       "Kolonie",
+       "Migratie",
+       "Slavernij",
+       "Plantage"
+      ],
+      "c": 3,
+      "d": 3,
+      "u": "«Plantage»: een groot landbouwbedrijf in een kolonie.",
+      "uo": [
+       "«Kolonie» betekent bestuurd gebied.",
+       "«Migratie» betekent mensen verhuizen.",
+       "«Slavernij» betekent mensen als bezit.",
+       "Klopt, dit is «Plantage»."
+      ],
+      "uh": "Onthoud: «Plantage» = landbouwbedrijf in kolonie."
+     },
+     {
+      "v": "Welke term hoort bij \"landbouwbedrijf in kolonie\"?",
+      "o": [
+       "Plantage",
+       "Migratie",
+       "Slavernij",
+       "Kolonisatie"
+      ],
+      "c": 0,
+      "d": 2,
+      "u": "«Plantage»: een groot landbouwbedrijf in een kolonie.",
+      "uo": [
+       "Klopt, «Plantage» past hierbij.",
+       "«Migratie» betekent mensen verhuizen.",
+       "«Slavernij» betekent mensen als bezit.",
+       "«Kolonisatie» betekent gebied in bezit nemen."
+      ],
+      "uh": "Onthoud: «Plantage» = landbouwbedrijf in kolonie."
+     },
+     {
+      "v": "Wat betekent «Plantage»?",
+      "o": [
+       "een gebied dat door een ander land wordt bestuurd",
+       "een groot landbouwbedrijf in een kolonie",
+       "het verhuizen van mensen, zoals van Suriname naar Nederland",
+       "het bezit en dwingen van mensen tot onbetaalde arbeid"
+      ],
+      "c": 1,
+      "d": 1,
+      "u": "«Plantage»: een groot landbouwbedrijf in een kolonie.",
+      "uo": [
+       "Dat is «Kolonie».",
+       "Klopt: landbouwbedrijf in kolonie.",
+       "Dat is «Migratie».",
+       "Dat is «Slavernij»."
+      ],
+      "uh": "Onthoud: «Plantage» = landbouwbedrijf in kolonie."
+     },
+     {
+      "v": "Welk begrip hoort bij: \"een vroegere Nederlandse kolonie, sinds 1975 onafhankelijk\"?",
+      "o": [
+       "Nederlands-Indië",
+       "Migratie",
+       "Suriname",
+       "Slavernij"
+      ],
+      "c": 2,
+      "d": 3,
+      "u": "«Suriname»: een vroegere Nederlandse kolonie, sinds 1975 onafhankelijk.",
+      "uo": [
+       "«Nederlands-Indië» betekent kolonie, nu Indonesië.",
+       "«Migratie» betekent mensen verhuizen.",
+       "Klopt, dit is «Suriname».",
+       "«Slavernij» betekent mensen als bezit."
+      ],
+      "uh": "Onthoud: «Suriname» = kolonie, vrij in 1975."
+     },
+     {
+      "v": "Welke term hoort bij \"kolonie, vrij in 1975\"?",
+      "o": [
+       "Migratie",
+       "Slavernij",
+       "Kolonie",
+       "Suriname"
+      ],
+      "c": 3,
+      "d": 2,
+      "u": "«Suriname»: een vroegere Nederlandse kolonie, sinds 1975 onafhankelijk.",
+      "uo": [
+       "«Migratie» betekent mensen verhuizen.",
+       "«Slavernij» betekent mensen als bezit.",
+       "«Kolonie» betekent bestuurd gebied.",
+       "Klopt, «Suriname» past hierbij."
+      ],
+      "uh": "Onthoud: «Suriname» = kolonie, vrij in 1975."
+     },
+     {
+      "v": "Wat betekent «Politionele acties»?",
+      "o": [
+       "de militaire acties van Nederland in Indië na 1945",
+       "het onafhankelijk worden van koloniën",
+       "de vroegere Nederlandse kolonie, nu Indonesië",
+       "het bezit en dwingen van mensen tot onbetaalde arbeid"
+      ],
+      "c": 0,
+      "d": 1,
+      "u": "«Politionele acties»: de militaire acties van Nederland in Indië na 1945.",
+      "uo": [
+       "Klopt: militaire acties in Indië.",
+       "Dat is «Dekolonisatie».",
+       "Dat is «Nederlands-Indië».",
+       "Dat is «Slavernij»."
+      ],
+      "uh": "Onthoud: «Politionele acties» = militaire acties in Indië."
+     },
+     {
+      "v": "Welk begrip hoort bij: \"het verhuizen van mensen, zoals van Suriname naar Nederland\"?",
+      "o": [
+       "Uitbuiting",
+       "Migratie",
+       "Suriname",
+       "Slavernij"
+      ],
+      "c": 1,
+      "d": 3,
+      "u": "«Migratie»: het verhuizen van mensen, zoals van Suriname naar Nederland.",
+      "uo": [
+       "«Uitbuiting» betekent misbruik voor winst.",
+       "Klopt, dit is «Migratie».",
+       "«Suriname» betekent kolonie, vrij in 1975.",
+       "«Slavernij» betekent mensen als bezit."
+      ],
+      "uh": "Onthoud: «Migratie» = mensen verhuizen."
+     },
+     {
+      "v": "Welke term hoort bij \"mensen verhuizen\"?",
+      "o": [
+       "Suriname",
+       "Slavernij",
+       "Migratie",
+       "Kolonie"
+      ],
+      "c": 2,
+      "d": 2,
+      "u": "«Migratie»: het verhuizen van mensen, zoals van Suriname naar Nederland.",
+      "uo": [
+       "«Suriname» betekent kolonie, vrij in 1975.",
+       "«Slavernij» betekent mensen als bezit.",
+       "Klopt, «Migratie» past hierbij.",
+       "«Kolonie» betekent bestuurd gebied."
+      ],
+      "uh": "Onthoud: «Migratie» = mensen verhuizen."
+     },
+     {
+      "v": "Wat betekent «Suriname»?",
+      "o": [
+       "de vroegere Nederlandse kolonie, nu Indonesië",
+       "het verhuizen van mensen, zoals van Suriname naar Nederland",
+       "het bezit en dwingen van mensen tot onbetaalde arbeid",
+       "een vroegere Nederlandse kolonie, sinds 1975 onafhankelijk"
+      ],
+      "c": 3,
+      "d": 1,
+      "u": "«Suriname»: een vroegere Nederlandse kolonie, sinds 1975 onafhankelijk.",
+      "uo": [
+       "Dat is «Nederlands-Indië».",
+       "Dat is «Migratie».",
+       "Dat is «Slavernij».",
+       "Klopt: kolonie, vrij in 1975."
+      ],
+      "uh": "Onthoud: «Suriname» = kolonie, vrij in 1975."
+     },
+     {
+      "v": "Welk begrip hoort bij: \"het bezit en dwingen van mensen tot onbetaalde arbeid\"?",
+      "o": [
+       "Slavernij",
+       "Uitbuiting",
+       "Suriname",
+       "Nationalisme"
+      ],
+      "c": 0,
+      "d": 3,
+      "u": "«Slavernij»: het bezit en dwingen van mensen tot onbetaalde arbeid.",
+      "uo": [
+       "Klopt, dit is «Slavernij».",
+       "«Uitbuiting» betekent misbruik voor winst.",
+       "«Suriname» betekent kolonie, vrij in 1975.",
+       "«Nationalisme» betekent streven naar eigen natie."
+      ],
+      "uh": "Onthoud: «Slavernij» = mensen als bezit."
+     },
+     {
+      "v": "Welke term hoort bij \"mensen als bezit\"?",
+      "o": [
+       "Suriname",
+       "Slavernij",
+       "Nationalisme",
+       "Plantage"
+      ],
+      "c": 1,
+      "d": 2,
+      "u": "«Slavernij»: het bezit en dwingen van mensen tot onbetaalde arbeid.",
+      "uo": [
+       "«Suriname» betekent kolonie, vrij in 1975.",
+       "Klopt, «Slavernij» past hierbij.",
+       "«Nationalisme» betekent streven naar eigen natie.",
+       "«Plantage» betekent landbouwbedrijf in kolonie."
+      ],
+      "uh": "Onthoud: «Slavernij» = mensen als bezit."
+     }
+    ],
+    "begrippen": [
+     {
+      "t": "Kolonie",
+      "d": "een gebied dat door een ander land wordt bestuurd"
+     },
+     {
+      "t": "Kolonisatie",
+      "d": "het in bezit nemen en besturen van een ander gebied"
+     },
+     {
+      "t": "Dekolonisatie",
+      "d": "het onafhankelijk worden van koloniën"
+     },
+     {
+      "t": "Nederlands-Indië",
+      "d": "de vroegere Nederlandse kolonie, nu Indonesië"
+     },
+     {
+      "t": "Onafhankelijkheid",
+      "d": "het zelfstandig worden van een land"
+     },
+     {
+      "t": "Nationalisme",
+      "d": "het streven naar een eigen zelfstandige natie"
+     },
+     {
+      "t": "Uitbuiting",
+      "d": "het misbruiken van mensen of gebieden voor winst"
+     },
+     {
+      "t": "Plantage",
+      "d": "een groot landbouwbedrijf in een kolonie"
+     },
+     {
+      "t": "Politionele acties",
+      "d": "de militaire acties van Nederland in Indië na 1945"
+     },
+     {
+      "t": "Suriname",
+      "d": "een vroegere Nederlandse kolonie, sinds 1975 onafhankelijk"
+     },
+     {
+      "t": "Migratie",
+      "d": "het verhuizen van mensen, zoals van Suriname naar Nederland"
+     },
+     {
+      "t": "Slavernij",
+      "d": "het bezit en dwingen van mensen tot onbetaalde arbeid"
+     }
+    ],
+    "sam": "<p>Nederland bestuurde <b>koloniën</b> zoals <b>Nederlands-Indië</b> en <b>Suriname</b>. Na 1945 leidde het <b>nationalisme</b> tot <b>dekolonisatie</b>: koloniën werden <b>onafhankelijk</b>. Indonesië werd zelfstandig na de <b>politionele acties</b>, Suriname in 1975.</p>"
    },
    {
     "id": "G",
@@ -9819,7 +17485,562 @@ var VAKKEN_VMBO = [
     ],
     "nSv": 0,
     "nOe": 0,
-    "nBeg": 0
+    "nBeg": 0,
+    "sv": [
+     {
+      "v": "Welk begrip hoort bij: \"de oorlog van 1914 tot 1918 in vooral Europa\"?",
+      "o": [
+       "Eerste Wereldoorlog",
+       "Tweede Wereldoorlog",
+       "Koude Oorlog",
+       "Crisis"
+      ],
+      "c": 0,
+      "d": 3,
+      "u": "«Eerste Wereldoorlog»: de oorlog van 1914 tot 1918 in vooral Europa.",
+      "uo": [
+       "Klopt, dit is «Eerste Wereldoorlog».",
+       "«Tweede Wereldoorlog» betekent oorlog 1939-1945.",
+       "«Koude Oorlog» betekent VS tegen Sovjet-Unie.",
+       "«Crisis» betekent werkloosheid en armoede."
+      ],
+      "uh": "Onthoud: «Eerste Wereldoorlog» = oorlog 1914-1918."
+     },
+     {
+      "v": "Welke term hoort bij \"oorlog 1914-1918\"?",
+      "o": [
+       "Koude Oorlog",
+       "Eerste Wereldoorlog",
+       "Crisis",
+       "Beurskrach van 1929"
+      ],
+      "c": 1,
+      "d": 2,
+      "u": "«Eerste Wereldoorlog»: de oorlog van 1914 tot 1918 in vooral Europa.",
+      "uo": [
+       "«Koude Oorlog» betekent VS tegen Sovjet-Unie.",
+       "Klopt, «Eerste Wereldoorlog» past hierbij.",
+       "«Crisis» betekent werkloosheid en armoede.",
+       "«Beurskrach van 1929» betekent instorting van de beurs."
+      ],
+      "uh": "Onthoud: «Eerste Wereldoorlog» = oorlog 1914-1918."
+     },
+     {
+      "v": "Wat betekent «Eerste Wereldoorlog»?",
+      "o": [
+       "de oorlog van 1939 tot 1945",
+       "de spanning tussen de VS en de Sovjet-Unie na 1945",
+       "de oorlog van 1914 tot 1918 in vooral Europa",
+       "een tijd van massale werkloosheid en armoede"
+      ],
+      "c": 2,
+      "d": 1,
+      "u": "«Eerste Wereldoorlog»: de oorlog van 1914 tot 1918 in vooral Europa.",
+      "uo": [
+       "Dat is «Tweede Wereldoorlog».",
+       "Dat is «Koude Oorlog».",
+       "Klopt: oorlog 1914-1918.",
+       "Dat is «Crisis»."
+      ],
+      "uh": "Onthoud: «Eerste Wereldoorlog» = oorlog 1914-1918."
+     },
+     {
+      "v": "Welk begrip hoort bij: \"de periode tussen de twee wereldoorlogen\"?",
+      "o": [
+       "Koude Oorlog",
+       "Val van de Muur",
+       "Warschaupact",
+       "Interbellum"
+      ],
+      "c": 3,
+      "d": 3,
+      "u": "«Interbellum»: de periode tussen de twee wereldoorlogen.",
+      "uo": [
+       "«Koude Oorlog» betekent VS tegen Sovjet-Unie.",
+       "«Val van de Muur» betekent Berlijnse Muur valt, 1989.",
+       "«Warschaupact» betekent communistisch bondgenootschap.",
+       "Klopt, dit is «Interbellum»."
+      ],
+      "uh": "Onthoud: «Interbellum» = tussen de wereldoorlogen."
+     },
+     {
+      "v": "Welke term hoort bij \"tussen de wereldoorlogen\"?",
+      "o": [
+       "Interbellum",
+       "Val van de Muur",
+       "Warschaupact",
+       "Dictatuur"
+      ],
+      "c": 0,
+      "d": 2,
+      "u": "«Interbellum»: de periode tussen de twee wereldoorlogen.",
+      "uo": [
+       "Klopt, «Interbellum» past hierbij.",
+       "«Val van de Muur» betekent Berlijnse Muur valt, 1989.",
+       "«Warschaupact» betekent communistisch bondgenootschap.",
+       "«Dictatuur» betekent alle macht bij één."
+      ],
+      "uh": "Onthoud: «Interbellum» = tussen de wereldoorlogen."
+     },
+     {
+      "v": "Wat betekent «Interbellum»?",
+      "o": [
+       "de spanning tussen de VS en de Sovjet-Unie na 1945",
+       "de periode tussen de twee wereldoorlogen",
+       "de val van de Berlijnse Muur in 1989",
+       "het militaire bondgenootschap van de communistische landen"
+      ],
+      "c": 1,
+      "d": 1,
+      "u": "«Interbellum»: de periode tussen de twee wereldoorlogen.",
+      "uo": [
+       "Dat is «Koude Oorlog».",
+       "Klopt: tussen de wereldoorlogen.",
+       "Dat is «Val van de Muur».",
+       "Dat is «Warschaupact»."
+      ],
+      "uh": "Onthoud: «Interbellum» = tussen de wereldoorlogen."
+     },
+     {
+      "v": "Welk begrip hoort bij: \"een tijd van massale werkloosheid en armoede\"?",
+      "o": [
+       "Beurskrach van 1929",
+       "Interbellum",
+       "Crisis",
+       "Bezetting"
+      ],
+      "c": 2,
+      "d": 3,
+      "u": "«Crisis»: een tijd van massale werkloosheid en armoede.",
+      "uo": [
+       "«Beurskrach van 1929» betekent instorting van de beurs.",
+       "«Interbellum» betekent tussen de wereldoorlogen.",
+       "Klopt, dit is «Crisis».",
+       "«Bezetting» betekent vreemd leger beheerst."
+      ],
+      "uh": "Onthoud: «Crisis» = werkloosheid en armoede."
+     },
+     {
+      "v": "Welke term hoort bij \"werkloosheid en armoede\"?",
+      "o": [
+       "Interbellum",
+       "Bezetting",
+       "Fascisme",
+       "Crisis"
+      ],
+      "c": 3,
+      "d": 2,
+      "u": "«Crisis»: een tijd van massale werkloosheid en armoede.",
+      "uo": [
+       "«Interbellum» betekent tussen de wereldoorlogen.",
+       "«Bezetting» betekent vreemd leger beheerst.",
+       "«Fascisme» betekent sterke leider, één partij.",
+       "Klopt, «Crisis» past hierbij."
+      ],
+      "uh": "Onthoud: «Crisis» = werkloosheid en armoede."
+     },
+     {
+      "v": "Wat betekent «Beurskrach van 1929»?",
+      "o": [
+       "de ineenstorting van de aandelenmarkt die tot een crisis leidde",
+       "een tijd van massale werkloosheid en armoede",
+       "de spanning tussen de VS en de Sovjet-Unie na 1945",
+       "een extreem-rechtse stroming met een sterke leider en één partij"
+      ],
+      "c": 0,
+      "d": 1,
+      "u": "«Beurskrach van 1929»: de ineenstorting van de aandelenmarkt die tot een crisis leidde.",
+      "uo": [
+       "Klopt: instorting van de beurs.",
+       "Dat is «Crisis».",
+       "Dat is «Koude Oorlog».",
+       "Dat is «Fascisme»."
+      ],
+      "uh": "Onthoud: «Beurskrach van 1929» = instorting van de beurs."
+     },
+     {
+      "v": "Welk begrip hoort bij: \"een extreem-rechtse stroming met een sterke leider en één partij\"?",
+      "o": [
+       "Nazisme",
+       "Fascisme",
+       "Beurskrach van 1929",
+       "Bezetting"
+      ],
+      "c": 1,
+      "d": 3,
+      "u": "«Fascisme»: een extreem-rechtse stroming met een sterke leider en één partij.",
+      "uo": [
+       "«Nazisme» betekent Duits fascisme met racisme.",
+       "Klopt, dit is «Fascisme».",
+       "«Beurskrach van 1929» betekent instorting van de beurs.",
+       "«Bezetting» betekent vreemd leger beheerst."
+      ],
+      "uh": "Onthoud: «Fascisme» = sterke leider, één partij."
+     },
+     {
+      "v": "Welke term hoort bij \"sterke leider, één partij\"?",
+      "o": [
+       "Beurskrach van 1929",
+       "Bezetting",
+       "Fascisme",
+       "Dictatuur"
+      ],
+      "c": 2,
+      "d": 2,
+      "u": "«Fascisme»: een extreem-rechtse stroming met een sterke leider en één partij.",
+      "uo": [
+       "«Beurskrach van 1929» betekent instorting van de beurs.",
+       "«Bezetting» betekent vreemd leger beheerst.",
+       "Klopt, «Fascisme» past hierbij.",
+       "«Dictatuur» betekent alle macht bij één."
+      ],
+      "uh": "Onthoud: «Fascisme» = sterke leider, één partij."
+     },
+     {
+      "v": "Wat betekent «Crisis»?",
+      "o": [
+       "de ineenstorting van de aandelenmarkt die tot een crisis leidde",
+       "de periode tussen de twee wereldoorlogen",
+       "de periode waarin een vreemd leger een land beheerst",
+       "een tijd van massale werkloosheid en armoede"
+      ],
+      "c": 3,
+      "d": 1,
+      "u": "«Crisis»: een tijd van massale werkloosheid en armoede.",
+      "uo": [
+       "Dat is «Beurskrach van 1929».",
+       "Dat is «Interbellum».",
+       "Dat is «Bezetting».",
+       "Klopt: werkloosheid en armoede."
+      ],
+      "uh": "Onthoud: «Crisis» = werkloosheid en armoede."
+     },
+     {
+      "v": "Welk begrip hoort bij: \"de Duitse vorm van fascisme met racisme en Jodenhaat\"?",
+      "o": [
+       "Nazisme",
+       "Fascisme",
+       "Holocaust",
+       "Koude Oorlog"
+      ],
+      "c": 0,
+      "d": 3,
+      "u": "«Nazisme»: de Duitse vorm van fascisme met racisme en Jodenhaat.",
+      "uo": [
+       "Klopt, dit is «Nazisme».",
+       "«Fascisme» betekent sterke leider, één partij.",
+       "«Holocaust» betekent moord op de Joden.",
+       "«Koude Oorlog» betekent VS tegen Sovjet-Unie."
+      ],
+      "uh": "Onthoud: «Nazisme» = Duits fascisme met racisme."
+     },
+     {
+      "v": "Welke term hoort bij \"Duits fascisme met racisme\"?",
+      "o": [
+       "Holocaust",
+       "Nazisme",
+       "Koude Oorlog",
+       "Tweede Wereldoorlog"
+      ],
+      "c": 1,
+      "d": 2,
+      "u": "«Nazisme»: de Duitse vorm van fascisme met racisme en Jodenhaat.",
+      "uo": [
+       "«Holocaust» betekent moord op de Joden.",
+       "Klopt, «Nazisme» past hierbij.",
+       "«Koude Oorlog» betekent VS tegen Sovjet-Unie.",
+       "«Tweede Wereldoorlog» betekent oorlog 1939-1945."
+      ],
+      "uh": "Onthoud: «Nazisme» = Duits fascisme met racisme."
+     },
+     {
+      "v": "Wat betekent «Nazisme»?",
+      "o": [
+       "een extreem-rechtse stroming met een sterke leider en één partij",
+       "de systematische moord op zes miljoen Joden door de nazi's",
+       "de Duitse vorm van fascisme met racisme en Jodenhaat",
+       "de spanning tussen de VS en de Sovjet-Unie na 1945"
+      ],
+      "c": 2,
+      "d": 1,
+      "u": "«Nazisme»: de Duitse vorm van fascisme met racisme en Jodenhaat.",
+      "uo": [
+       "Dat is «Fascisme».",
+       "Dat is «Holocaust».",
+       "Klopt: Duits fascisme met racisme.",
+       "Dat is «Koude Oorlog»."
+      ],
+      "uh": "Onthoud: «Nazisme» = Duits fascisme met racisme."
+     },
+     {
+      "v": "Welk begrip hoort bij: \"de oorlog van 1939 tot 1945\"?",
+      "o": [
+       "Eerste Wereldoorlog",
+       "Koude Oorlog",
+       "Crisis",
+       "Tweede Wereldoorlog"
+      ],
+      "c": 3,
+      "d": 3,
+      "u": "«Tweede Wereldoorlog»: de oorlog van 1939 tot 1945.",
+      "uo": [
+       "«Eerste Wereldoorlog» betekent oorlog 1914-1918.",
+       "«Koude Oorlog» betekent VS tegen Sovjet-Unie.",
+       "«Crisis» betekent werkloosheid en armoede.",
+       "Klopt, dit is «Tweede Wereldoorlog»."
+      ],
+      "uh": "Onthoud: «Tweede Wereldoorlog» = oorlog 1939-1945."
+     },
+     {
+      "v": "Welke term hoort bij \"alle macht bij één\"?",
+      "o": [
+       "Dictatuur",
+       "Warschaupact",
+       "Holocaust",
+       "Tweede Wereldoorlog"
+      ],
+      "c": 0,
+      "d": 2,
+      "u": "«Dictatuur»: een bestuur waarin één persoon of partij alle macht heeft.",
+      "uo": [
+       "Klopt, «Dictatuur» past hierbij.",
+       "«Warschaupact» betekent communistisch bondgenootschap.",
+       "«Holocaust» betekent moord op de Joden.",
+       "«Tweede Wereldoorlog» betekent oorlog 1939-1945."
+      ],
+      "uh": "Onthoud: «Dictatuur» = alle macht bij één."
+     },
+     {
+      "v": "Wat betekent «Dictatuur»?",
+      "o": [
+       "het militaire bondgenootschap van de communistische landen",
+       "een bestuur waarin één persoon of partij alle macht heeft",
+       "de systematische moord op zes miljoen Joden door de nazi's",
+       "de oorlog van 1939 tot 1945"
+      ],
+      "c": 1,
+      "d": 1,
+      "u": "«Dictatuur»: een bestuur waarin één persoon of partij alle macht heeft.",
+      "uo": [
+       "Dat is «Warschaupact».",
+       "Klopt: alle macht bij één.",
+       "Dat is «Holocaust».",
+       "Dat is «Tweede Wereldoorlog»."
+      ],
+      "uh": "Onthoud: «Dictatuur» = alle macht bij één."
+     },
+     {
+      "v": "Welk begrip hoort bij: \"de periode waarin een vreemd leger een land beheerst\"?",
+      "o": [
+       "Dictatuur",
+       "Warschaupact",
+       "Bezetting",
+       "Holocaust"
+      ],
+      "c": 2,
+      "d": 3,
+      "u": "«Bezetting»: de periode waarin een vreemd leger een land beheerst.",
+      "uo": [
+       "«Dictatuur» betekent alle macht bij één.",
+       "«Warschaupact» betekent communistisch bondgenootschap.",
+       "Klopt, dit is «Bezetting».",
+       "«Holocaust» betekent moord op de Joden."
+      ],
+      "uh": "Onthoud: «Bezetting» = vreemd leger beheerst."
+     },
+     {
+      "v": "Welke term hoort bij \"oorlog 1939-1945\"?",
+      "o": [
+       "Koude Oorlog",
+       "Crisis",
+       "Beurskrach van 1929",
+       "Tweede Wereldoorlog"
+      ],
+      "c": 3,
+      "d": 2,
+      "u": "«Tweede Wereldoorlog»: de oorlog van 1939 tot 1945.",
+      "uo": [
+       "«Koude Oorlog» betekent VS tegen Sovjet-Unie.",
+       "«Crisis» betekent werkloosheid en armoede.",
+       "«Beurskrach van 1929» betekent instorting van de beurs.",
+       "Klopt, «Tweede Wereldoorlog» past hierbij."
+      ],
+      "uh": "Onthoud: «Tweede Wereldoorlog» = oorlog 1939-1945."
+     },
+     {
+      "v": "Wat betekent «Tweede Wereldoorlog»?",
+      "o": [
+       "de oorlog van 1939 tot 1945",
+       "de oorlog van 1914 tot 1918 in vooral Europa",
+       "de spanning tussen de VS en de Sovjet-Unie na 1945",
+       "een tijd van massale werkloosheid en armoede"
+      ],
+      "c": 0,
+      "d": 1,
+      "u": "«Tweede Wereldoorlog»: de oorlog van 1939 tot 1945.",
+      "uo": [
+       "Klopt: oorlog 1939-1945.",
+       "Dat is «Eerste Wereldoorlog».",
+       "Dat is «Koude Oorlog».",
+       "Dat is «Crisis»."
+      ],
+      "uh": "Onthoud: «Tweede Wereldoorlog» = oorlog 1939-1945."
+     },
+     {
+      "v": "Welk begrip hoort bij: \"de systematische moord op zes miljoen Joden door de nazi's\"?",
+      "o": [
+       "Bezetting",
+       "Holocaust",
+       "Warschaupact",
+       "Tweede Wereldoorlog"
+      ],
+      "c": 1,
+      "d": 3,
+      "u": "«Holocaust»: de systematische moord op zes miljoen Joden door de nazi's.",
+      "uo": [
+       "«Bezetting» betekent vreemd leger beheerst.",
+       "Klopt, dit is «Holocaust».",
+       "«Warschaupact» betekent communistisch bondgenootschap.",
+       "«Tweede Wereldoorlog» betekent oorlog 1939-1945."
+      ],
+      "uh": "Onthoud: «Holocaust» = moord op de Joden."
+     },
+     {
+      "v": "Welke term hoort bij \"vreemd leger beheerst\"?",
+      "o": [
+       "Warschaupact",
+       "Holocaust",
+       "Bezetting",
+       "Nazisme"
+      ],
+      "c": 2,
+      "d": 2,
+      "u": "«Bezetting»: de periode waarin een vreemd leger een land beheerst.",
+      "uo": [
+       "«Warschaupact» betekent communistisch bondgenootschap.",
+       "«Holocaust» betekent moord op de Joden.",
+       "Klopt, «Bezetting» past hierbij.",
+       "«Nazisme» betekent Duits fascisme met racisme."
+      ],
+      "uh": "Onthoud: «Bezetting» = vreemd leger beheerst."
+     },
+     {
+      "v": "Wat betekent «Bezetting»?",
+      "o": [
+       "een bestuur waarin één persoon of partij alle macht heeft",
+       "het militaire bondgenootschap van de communistische landen",
+       "de systematische moord op zes miljoen Joden door de nazi's",
+       "de periode waarin een vreemd leger een land beheerst"
+      ],
+      "c": 3,
+      "d": 1,
+      "u": "«Bezetting»: de periode waarin een vreemd leger een land beheerst.",
+      "uo": [
+       "Dat is «Dictatuur».",
+       "Dat is «Warschaupact».",
+       "Dat is «Holocaust».",
+       "Klopt: vreemd leger beheerst."
+      ],
+      "uh": "Onthoud: «Bezetting» = vreemd leger beheerst."
+     },
+     {
+      "v": "Welk begrip hoort bij: \"de spanning tussen de VS en de Sovjet-Unie na 1945\"?",
+      "o": [
+       "Koude Oorlog",
+       "Interbellum",
+       "Bezetting",
+       "Tweede Wereldoorlog"
+      ],
+      "c": 0,
+      "d": 3,
+      "u": "«Koude Oorlog»: de spanning tussen de VS en de Sovjet-Unie na 1945.",
+      "uo": [
+       "Klopt, dit is «Koude Oorlog».",
+       "«Interbellum» betekent tussen de wereldoorlogen.",
+       "«Bezetting» betekent vreemd leger beheerst.",
+       "«Tweede Wereldoorlog» betekent oorlog 1939-1945."
+      ],
+      "uh": "Onthoud: «Koude Oorlog» = VS tegen Sovjet-Unie."
+     },
+     {
+      "v": "Welke term hoort bij \"moord op de Joden\"?",
+      "o": [
+       "Warschaupact",
+       "Holocaust",
+       "Tweede Wereldoorlog",
+       "Nazisme"
+      ],
+      "c": 1,
+      "d": 2,
+      "u": "«Holocaust»: de systematische moord op zes miljoen Joden door de nazi's.",
+      "uo": [
+       "«Warschaupact» betekent communistisch bondgenootschap.",
+       "Klopt, «Holocaust» past hierbij.",
+       "«Tweede Wereldoorlog» betekent oorlog 1939-1945.",
+       "«Nazisme» betekent Duits fascisme met racisme."
+      ],
+      "uh": "Onthoud: «Holocaust» = moord op de Joden."
+     }
+    ],
+    "begrippen": [
+     {
+      "t": "Eerste Wereldoorlog",
+      "d": "de oorlog van 1914 tot 1918 in vooral Europa"
+     },
+     {
+      "t": "Interbellum",
+      "d": "de periode tussen de twee wereldoorlogen"
+     },
+     {
+      "t": "Beurskrach van 1929",
+      "d": "de ineenstorting van de aandelenmarkt die tot een crisis leidde"
+     },
+     {
+      "t": "Crisis",
+      "d": "een tijd van massale werkloosheid en armoede"
+     },
+     {
+      "t": "Fascisme",
+      "d": "een extreem-rechtse stroming met een sterke leider en één partij"
+     },
+     {
+      "t": "Nazisme",
+      "d": "de Duitse vorm van fascisme met racisme en Jodenhaat"
+     },
+     {
+      "t": "Dictatuur",
+      "d": "een bestuur waarin één persoon of partij alle macht heeft"
+     },
+     {
+      "t": "Tweede Wereldoorlog",
+      "d": "de oorlog van 1939 tot 1945"
+     },
+     {
+      "t": "Bezetting",
+      "d": "de periode waarin een vreemd leger een land beheerst"
+     },
+     {
+      "t": "Holocaust",
+      "d": "de systematische moord op zes miljoen Joden door de nazi's"
+     },
+     {
+      "t": "Koude Oorlog",
+      "d": "de spanning tussen de VS en de Sovjet-Unie na 1945"
+     },
+     {
+      "t": "NAVO",
+      "d": "het militaire bondgenootschap van westerse landen"
+     },
+     {
+      "t": "Warschaupact",
+      "d": "het militaire bondgenootschap van de communistische landen"
+     },
+     {
+      "t": "Val van de Muur",
+      "d": "de val van de Berlijnse Muur in 1989"
+     }
+    ],
+    "sam": "<p>De twintigste eeuw kende twee wereldoorlogen. Na de <b>beurskrach van 1929</b> kwamen <b>fascisme</b> en <b>nazisme</b> op. In de <b>Tweede Wereldoorlog</b> vond de <b>Holocaust</b> plaats. Daarna verdeelde de <b>Koude Oorlog</b> de wereld in <b>NAVO</b> en <b>Warschaupact</b>, tot de <b>Val van de Muur</b> in 1989.</p>"
    },
    {
     "id": "H",
@@ -9833,7 +18054,554 @@ var VAKKEN_VMBO = [
     ],
     "nSv": 0,
     "nOe": 0,
-    "nBeg": 0
+    "nBeg": 0,
+    "sv": [
+     {
+      "v": "Welk begrip hoort bij: \"een samenwerkingsverband van Europese landen\"?",
+      "o": [
+       "Europese Unie",
+       "Europese samenwerking",
+       "Vrede",
+       "Ontwikkelingshulp"
+      ],
+      "c": 0,
+      "d": 3,
+      "u": "«Europese Unie»: een samenwerkingsverband van Europese landen.",
+      "uo": [
+       "Klopt, dit is «Europese Unie».",
+       "«Europese samenwerking» betekent landen werken samen.",
+       "«Vrede» betekent geen oorlog.",
+       "«Ontwikkelingshulp» betekent steun aan arme landen."
+      ],
+      "uh": "Onthoud: «Europese Unie» = samenwerkende EU-landen."
+     },
+     {
+      "v": "Welke term hoort bij \"samenwerkende EU-landen\"?",
+      "o": [
+       "Vrede",
+       "Europese Unie",
+       "Ontwikkelingshulp",
+       "Euro"
+      ],
+      "c": 1,
+      "d": 2,
+      "u": "«Europese Unie»: een samenwerkingsverband van Europese landen.",
+      "uo": [
+       "«Vrede» betekent geen oorlog.",
+       "Klopt, «Europese Unie» past hierbij.",
+       "«Ontwikkelingshulp» betekent steun aan arme landen.",
+       "«Euro» betekent munt van de eurozone."
+      ],
+      "uh": "Onthoud: «Europese Unie» = samenwerkende EU-landen."
+     },
+     {
+      "v": "Wat betekent «Europese Unie»?",
+      "o": [
+       "het samenwerken van landen in Europa na 1945",
+       "het ontbreken van oorlog, een doel van Europese samenwerking",
+       "een samenwerkingsverband van Europese landen",
+       "steun aan armere landen om zich te ontwikkelen"
+      ],
+      "c": 2,
+      "d": 1,
+      "u": "«Europese Unie»: een samenwerkingsverband van Europese landen.",
+      "uo": [
+       "Dat is «Europese samenwerking».",
+       "Dat is «Vrede».",
+       "Klopt: samenwerkende EU-landen.",
+       "Dat is «Ontwikkelingshulp»."
+      ],
+      "uh": "Onthoud: «Europese Unie» = samenwerkende EU-landen."
+     },
+     {
+      "v": "Welk begrip hoort bij: \"de gezamenlijke munt van veel EU-landen\"?",
+      "o": [
+       "Vrij verkeer",
+       "Vrede",
+       "Ontwikkelingshulp",
+       "Euro"
+      ],
+      "c": 3,
+      "d": 3,
+      "u": "«Euro»: de gezamenlijke munt van veel EU-landen.",
+      "uo": [
+       "«Vrij verkeer» betekent vrij binnen de EU.",
+       "«Vrede» betekent geen oorlog.",
+       "«Ontwikkelingshulp» betekent steun aan arme landen.",
+       "Klopt, dit is «Euro»."
+      ],
+      "uh": "Onthoud: «Euro» = munt van de eurozone."
+     },
+     {
+      "v": "Welke term hoort bij \"munt van de eurozone\"?",
+      "o": [
+       "Euro",
+       "Vrede",
+       "Ontwikkelingshulp",
+       "Vluchteling"
+      ],
+      "c": 0,
+      "d": 2,
+      "u": "«Euro»: de gezamenlijke munt van veel EU-landen.",
+      "uo": [
+       "Klopt, «Euro» past hierbij.",
+       "«Vrede» betekent geen oorlog.",
+       "«Ontwikkelingshulp» betekent steun aan arme landen.",
+       "«Vluchteling» betekent ontvlucht gevaar."
+      ],
+      "uh": "Onthoud: «Euro» = munt van de eurozone."
+     },
+     {
+      "v": "Wat betekent «Europese samenwerking»?",
+      "o": [
+       "een samenwerkingsverband van Europese landen",
+       "het samenwerken van landen in Europa na 1945",
+       "het kopen en verkopen tussen landen",
+       "het ontbreken van oorlog, een doel van Europese samenwerking"
+      ],
+      "c": 1,
+      "d": 1,
+      "u": "«Europese samenwerking»: het samenwerken van landen in Europa na 1945.",
+      "uo": [
+       "Dat is «Europese Unie».",
+       "Klopt: landen werken samen.",
+       "Dat is «Handel».",
+       "Dat is «Vrede»."
+      ],
+      "uh": "Onthoud: «Europese samenwerking» = landen werken samen."
+     },
+     {
+      "v": "Welk begrip hoort bij: \"het vrij kunnen reizen, werken en handelen binnen de EU\"?",
+      "o": [
+       "Europese Unie",
+       "Verdrag",
+       "Vrij verkeer",
+       "Migratie"
+      ],
+      "c": 2,
+      "d": 3,
+      "u": "«Vrij verkeer»: het vrij kunnen reizen, werken en handelen binnen de EU.",
+      "uo": [
+       "«Europese Unie» betekent samenwerkende EU-landen.",
+       "«Verdrag» betekent afspraak tussen landen.",
+       "Klopt, dit is «Vrij verkeer».",
+       "«Migratie» betekent mensen verhuizen."
+      ],
+      "uh": "Onthoud: «Vrij verkeer» = vrij binnen de EU."
+     },
+     {
+      "v": "Welke term hoort bij \"vrij binnen de EU\"?",
+      "o": [
+       "Verdrag",
+       "Migratie",
+       "Europese samenwerking",
+       "Vrij verkeer"
+      ],
+      "c": 3,
+      "d": 2,
+      "u": "«Vrij verkeer»: het vrij kunnen reizen, werken en handelen binnen de EU.",
+      "uo": [
+       "«Verdrag» betekent afspraak tussen landen.",
+       "«Migratie» betekent mensen verhuizen.",
+       "«Europese samenwerking» betekent landen werken samen.",
+       "Klopt, «Vrij verkeer» past hierbij."
+      ],
+      "uh": "Onthoud: «Vrij verkeer» = vrij binnen de EU."
+     },
+     {
+      "v": "Wat betekent «Euro»?",
+      "o": [
+       "de gezamenlijke munt van veel EU-landen",
+       "het vrij kunnen reizen, werken en handelen binnen de EU",
+       "het ontbreken van oorlog, een doel van Europese samenwerking",
+       "steun aan armere landen om zich te ontwikkelen"
+      ],
+      "c": 0,
+      "d": 1,
+      "u": "«Euro»: de gezamenlijke munt van veel EU-landen.",
+      "uo": [
+       "Klopt: munt van de eurozone.",
+       "Dat is «Vrij verkeer».",
+       "Dat is «Vrede».",
+       "Dat is «Ontwikkelingshulp»."
+      ],
+      "uh": "Onthoud: «Euro» = munt van de eurozone."
+     },
+     {
+      "v": "Welk begrip hoort bij: \"het steeds meer verweven raken van landen wereldwijd\"?",
+      "o": [
+       "Handel",
+       "Globalisering",
+       "Verdrag",
+       "Ontwikkelingshulp"
+      ],
+      "c": 1,
+      "d": 3,
+      "u": "«Globalisering»: het steeds meer verweven raken van landen wereldwijd.",
+      "uo": [
+       "«Handel» betekent kopen en verkopen.",
+       "Klopt, dit is «Globalisering».",
+       "«Verdrag» betekent afspraak tussen landen.",
+       "«Ontwikkelingshulp» betekent steun aan arme landen."
+      ],
+      "uh": "Onthoud: «Globalisering» = landen raken verweven."
+     },
+     {
+      "v": "Welke term hoort bij \"landen raken verweven\"?",
+      "o": [
+       "Verdrag",
+       "Ontwikkelingshulp",
+       "Globalisering",
+       "Europese Unie"
+      ],
+      "c": 2,
+      "d": 2,
+      "u": "«Globalisering»: het steeds meer verweven raken van landen wereldwijd.",
+      "uo": [
+       "«Verdrag» betekent afspraak tussen landen.",
+       "«Ontwikkelingshulp» betekent steun aan arme landen.",
+       "Klopt, «Globalisering» past hierbij.",
+       "«Europese Unie» betekent samenwerkende EU-landen."
+      ],
+      "uh": "Onthoud: «Globalisering» = landen raken verweven."
+     },
+     {
+      "v": "Wat betekent «Vluchteling»?",
+      "o": [
+       "het verhuizen van mensen tussen landen",
+       "het steeds meer verweven raken van landen wereldwijd",
+       "het vrij kunnen reizen, werken en handelen binnen de EU",
+       "iemand die zijn land ontvlucht vanwege gevaar"
+      ],
+      "c": 3,
+      "d": 1,
+      "u": "«Vluchteling»: iemand die zijn land ontvlucht vanwege gevaar.",
+      "uo": [
+       "Dat is «Migratie».",
+       "Dat is «Globalisering».",
+       "Dat is «Vrij verkeer».",
+       "Klopt: ontvlucht gevaar."
+      ],
+      "uh": "Onthoud: «Vluchteling» = ontvlucht gevaar."
+     },
+     {
+      "v": "Welk begrip hoort bij: \"iemand die zijn land ontvlucht vanwege gevaar\"?",
+      "o": [
+       "Vluchteling",
+       "Migratie",
+       "Globalisering",
+       "Vrij verkeer"
+      ],
+      "c": 0,
+      "d": 3,
+      "u": "«Vluchteling»: iemand die zijn land ontvlucht vanwege gevaar.",
+      "uo": [
+       "Klopt, dit is «Vluchteling».",
+       "«Migratie» betekent mensen verhuizen.",
+       "«Globalisering» betekent landen raken verweven.",
+       "«Vrij verkeer» betekent vrij binnen de EU."
+      ],
+      "uh": "Onthoud: «Vluchteling» = ontvlucht gevaar."
+     },
+     {
+      "v": "Welke term hoort bij \"ontvlucht gevaar\"?",
+      "o": [
+       "Globalisering",
+       "Vluchteling",
+       "Vrij verkeer",
+       "Europese Unie"
+      ],
+      "c": 1,
+      "d": 2,
+      "u": "«Vluchteling»: iemand die zijn land ontvlucht vanwege gevaar.",
+      "uo": [
+       "«Globalisering» betekent landen raken verweven.",
+       "Klopt, «Vluchteling» past hierbij.",
+       "«Vrij verkeer» betekent vrij binnen de EU.",
+       "«Europese Unie» betekent samenwerkende EU-landen."
+      ],
+      "uh": "Onthoud: «Vluchteling» = ontvlucht gevaar."
+     },
+     {
+      "v": "Wat betekent «Migratie»?",
+      "o": [
+       "iemand die zijn land ontvlucht vanwege gevaar",
+       "een bedrijf dat in meerdere landen actief is",
+       "het verhuizen van mensen tussen landen",
+       "steun aan armere landen om zich te ontwikkelen"
+      ],
+      "c": 2,
+      "d": 1,
+      "u": "«Migratie»: het verhuizen van mensen tussen landen.",
+      "uo": [
+       "Dat is «Vluchteling».",
+       "Dat is «Multinational».",
+       "Klopt: mensen verhuizen.",
+       "Dat is «Ontwikkelingshulp»."
+      ],
+      "uh": "Onthoud: «Migratie» = mensen verhuizen."
+     },
+     {
+      "v": "Welk begrip hoort bij: \"het verhuizen van mensen tussen landen\"?",
+      "o": [
+       "Vluchteling",
+       "Multinational",
+       "Ontwikkelingshulp",
+       "Migratie"
+      ],
+      "c": 3,
+      "d": 3,
+      "u": "«Migratie»: het verhuizen van mensen tussen landen.",
+      "uo": [
+       "«Vluchteling» betekent ontvlucht gevaar.",
+       "«Multinational» betekent bedrijf in veel landen.",
+       "«Ontwikkelingshulp» betekent steun aan arme landen.",
+       "Klopt, dit is «Migratie»."
+      ],
+      "uh": "Onthoud: «Migratie» = mensen verhuizen."
+     },
+     {
+      "v": "Welke term hoort bij \"mensen verhuizen\"?",
+      "o": [
+       "Migratie",
+       "Multinational",
+       "Ontwikkelingshulp",
+       "Europese Unie"
+      ],
+      "c": 0,
+      "d": 2,
+      "u": "«Migratie»: het verhuizen van mensen tussen landen.",
+      "uo": [
+       "Klopt, «Migratie» past hierbij.",
+       "«Multinational» betekent bedrijf in veel landen.",
+       "«Ontwikkelingshulp» betekent steun aan arme landen.",
+       "«Europese Unie» betekent samenwerkende EU-landen."
+      ],
+      "uh": "Onthoud: «Migratie» = mensen verhuizen."
+     },
+     {
+      "v": "Wat betekent «Verdrag»?",
+      "o": [
+       "het samenwerken van landen in Europa na 1945",
+       "een officiële afspraak tussen landen",
+       "het verhuizen van mensen tussen landen",
+       "het steeds meer verweven raken van landen wereldwijd"
+      ],
+      "c": 1,
+      "d": 1,
+      "u": "«Verdrag»: een officiële afspraak tussen landen.",
+      "uo": [
+       "Dat is «Europese samenwerking».",
+       "Klopt: afspraak tussen landen.",
+       "Dat is «Migratie».",
+       "Dat is «Globalisering»."
+      ],
+      "uh": "Onthoud: «Verdrag» = afspraak tussen landen."
+     },
+     {
+      "v": "Welk begrip hoort bij: \"een officiële afspraak tussen landen\"?",
+      "o": [
+       "Europese samenwerking",
+       "Migratie",
+       "Verdrag",
+       "Globalisering"
+      ],
+      "c": 2,
+      "d": 3,
+      "u": "«Verdrag»: een officiële afspraak tussen landen.",
+      "uo": [
+       "«Europese samenwerking» betekent landen werken samen.",
+       "«Migratie» betekent mensen verhuizen.",
+       "Klopt, dit is «Verdrag».",
+       "«Globalisering» betekent landen raken verweven."
+      ],
+      "uh": "Onthoud: «Verdrag» = afspraak tussen landen."
+     },
+     {
+      "v": "Welke term hoort bij \"afspraak tussen landen\"?",
+      "o": [
+       "Migratie",
+       "Globalisering",
+       "Ontwikkelingshulp",
+       "Verdrag"
+      ],
+      "c": 3,
+      "d": 2,
+      "u": "«Verdrag»: een officiële afspraak tussen landen.",
+      "uo": [
+       "«Migratie» betekent mensen verhuizen.",
+       "«Globalisering» betekent landen raken verweven.",
+       "«Ontwikkelingshulp» betekent steun aan arme landen.",
+       "Klopt, «Verdrag» past hierbij."
+      ],
+      "uh": "Onthoud: «Verdrag» = afspraak tussen landen."
+     },
+     {
+      "v": "Wat betekent «Handel»?",
+      "o": [
+       "het kopen en verkopen tussen landen",
+       "het steeds meer verweven raken van landen wereldwijd",
+       "het samenwerken van landen in Europa na 1945",
+       "een samenwerkingsverband van Europese landen"
+      ],
+      "c": 0,
+      "d": 1,
+      "u": "«Handel»: het kopen en verkopen tussen landen.",
+      "uo": [
+       "Klopt: kopen en verkopen.",
+       "Dat is «Globalisering».",
+       "Dat is «Europese samenwerking».",
+       "Dat is «Europese Unie»."
+      ],
+      "uh": "Onthoud: «Handel» = kopen en verkopen."
+     },
+     {
+      "v": "Welk begrip hoort bij: \"het ontbreken van oorlog, een doel van Europese samenwerking\"?",
+      "o": [
+       "Verdrag",
+       "Vrede",
+       "Multinational",
+       "Ontwikkelingshulp"
+      ],
+      "c": 1,
+      "d": 3,
+      "u": "«Vrede»: het ontbreken van oorlog, een doel van Europese samenwerking.",
+      "uo": [
+       "«Verdrag» betekent afspraak tussen landen.",
+       "Klopt, dit is «Vrede».",
+       "«Multinational» betekent bedrijf in veel landen.",
+       "«Ontwikkelingshulp» betekent steun aan arme landen."
+      ],
+      "uh": "Onthoud: «Vrede» = geen oorlog."
+     },
+     {
+      "v": "Welke term hoort bij \"geen oorlog\"?",
+      "o": [
+       "Multinational",
+       "Ontwikkelingshulp",
+       "Vrede",
+       "Migratie"
+      ],
+      "c": 2,
+      "d": 2,
+      "u": "«Vrede»: het ontbreken van oorlog, een doel van Europese samenwerking.",
+      "uo": [
+       "«Multinational» betekent bedrijf in veel landen.",
+       "«Ontwikkelingshulp» betekent steun aan arme landen.",
+       "Klopt, «Vrede» past hierbij.",
+       "«Migratie» betekent mensen verhuizen."
+      ],
+      "uh": "Onthoud: «Vrede» = geen oorlog."
+     },
+     {
+      "v": "Wat betekent «Multinational»?",
+      "o": [
+       "het steeds meer verweven raken van landen wereldwijd",
+       "een officiële afspraak tussen landen",
+       "steun aan armere landen om zich te ontwikkelen",
+       "een bedrijf dat in meerdere landen actief is"
+      ],
+      "c": 3,
+      "d": 1,
+      "u": "«Multinational»: een bedrijf dat in meerdere landen actief is.",
+      "uo": [
+       "Dat is «Globalisering».",
+       "Dat is «Verdrag».",
+       "Dat is «Ontwikkelingshulp».",
+       "Klopt: bedrijf in veel landen."
+      ],
+      "uh": "Onthoud: «Multinational» = bedrijf in veel landen."
+     },
+     {
+      "v": "Welk begrip hoort bij: \"het kopen en verkopen tussen landen\"?",
+      "o": [
+       "Handel",
+       "Globalisering",
+       "Europese samenwerking",
+       "Europese Unie"
+      ],
+      "c": 0,
+      "d": 3,
+      "u": "«Handel»: het kopen en verkopen tussen landen.",
+      "uo": [
+       "Klopt, dit is «Handel».",
+       "«Globalisering» betekent landen raken verweven.",
+       "«Europese samenwerking» betekent landen werken samen.",
+       "«Europese Unie» betekent samenwerkende EU-landen."
+      ],
+      "uh": "Onthoud: «Handel» = kopen en verkopen."
+     },
+     {
+      "v": "Welke term hoort bij \"kopen en verkopen\"?",
+      "o": [
+       "Europese samenwerking",
+       "Handel",
+       "Europese Unie",
+       "Ontwikkelingshulp"
+      ],
+      "c": 1,
+      "d": 2,
+      "u": "«Handel»: het kopen en verkopen tussen landen.",
+      "uo": [
+       "«Europese samenwerking» betekent landen werken samen.",
+       "Klopt, «Handel» past hierbij.",
+       "«Europese Unie» betekent samenwerkende EU-landen.",
+       "«Ontwikkelingshulp» betekent steun aan arme landen."
+      ],
+      "uh": "Onthoud: «Handel» = kopen en verkopen."
+     }
+    ],
+    "begrippen": [
+     {
+      "t": "Europese Unie",
+      "d": "een samenwerkingsverband van Europese landen"
+     },
+     {
+      "t": "Europese samenwerking",
+      "d": "het samenwerken van landen in Europa na 1945"
+     },
+     {
+      "t": "Euro",
+      "d": "de gezamenlijke munt van veel EU-landen"
+     },
+     {
+      "t": "Vrij verkeer",
+      "d": "het vrij kunnen reizen, werken en handelen binnen de EU"
+     },
+     {
+      "t": "Globalisering",
+      "d": "het steeds meer verweven raken van landen wereldwijd"
+     },
+     {
+      "t": "Vluchteling",
+      "d": "iemand die zijn land ontvlucht vanwege gevaar"
+     },
+     {
+      "t": "Migratie",
+      "d": "het verhuizen van mensen tussen landen"
+     },
+     {
+      "t": "Verdrag",
+      "d": "een officiële afspraak tussen landen"
+     },
+     {
+      "t": "Vrede",
+      "d": "het ontbreken van oorlog, een doel van Europese samenwerking"
+     },
+     {
+      "t": "Handel",
+      "d": "het kopen en verkopen tussen landen"
+     },
+     {
+      "t": "Multinational",
+      "d": "een bedrijf dat in meerdere landen actief is"
+     },
+     {
+      "t": "Ontwikkelingshulp",
+      "d": "steun aan armere landen om zich te ontwikkelen"
+     }
+    ],
+    "sam": "<p>Na 1945 kozen Europese landen voor <b>samenwerking</b> om <b>vrede</b> en welvaart te bevorderen, wat uitgroeide tot de <b>Europese Unie</b> met een gezamenlijke munt, de <b>euro</b>. Door <b>globalisering</b> raken landen wereldwijd steeds meer met elkaar verweven.</p>"
    },
    {
     "id": "I",
@@ -13280,7 +22048,562 @@ var VAKKEN_VMBO = [
     ],
     "nSv": 0,
     "nOe": 0,
-    "nBeg": 0
+    "nBeg": 0,
+    "sv": [
+     {
+      "v": "Welk begrip hoort bij: \"het nemen van beslissingen over de samenleving\"?",
+      "o": [
+       "Politiek",
+       "Politieke stroming",
+       "Liberalisme",
+       "Coalitie"
+      ],
+      "c": 0,
+      "d": 3,
+      "u": "«Politiek»: het nemen van beslissingen over de samenleving.",
+      "uo": [
+       "Klopt, dit is «Politiek».",
+       "«Politieke stroming» betekent groep met gedeelde ideeën.",
+       "«Liberalisme» betekent vrijheid van het individu.",
+       "«Coalitie» betekent samen regerende partijen."
+      ],
+      "uh": "Onthoud: «Politiek» = beslissen over de samenleving."
+     },
+     {
+      "v": "Welke term hoort bij \"beslissen over de samenleving\"?",
+      "o": [
+       "Liberalisme",
+       "Politiek",
+       "Coalitie",
+       "Confessioneel"
+      ],
+      "c": 1,
+      "d": 2,
+      "u": "«Politiek»: het nemen van beslissingen over de samenleving.",
+      "uo": [
+       "«Liberalisme» betekent vrijheid van het individu.",
+       "Klopt, «Politiek» past hierbij.",
+       "«Coalitie» betekent samen regerende partijen.",
+       "«Confessioneel» betekent politiek op basis van geloof."
+      ],
+      "uh": "Onthoud: «Politiek» = beslissen over de samenleving."
+     },
+     {
+      "v": "Wat betekent «Politiek»?",
+      "o": [
+       "een groep met gedeelde ideeën over de samenleving",
+       "een stroming die de vrijheid van het individu vooropstelt",
+       "het nemen van beslissingen over de samenleving",
+       "een samenwerking van partijen die samen regeren"
+      ],
+      "c": 2,
+      "d": 1,
+      "u": "«Politiek»: het nemen van beslissingen over de samenleving.",
+      "uo": [
+       "Dat is «Politieke stroming».",
+       "Dat is «Liberalisme».",
+       "Klopt: beslissen over de samenleving.",
+       "Dat is «Coalitie»."
+      ],
+      "uh": "Onthoud: «Politiek» = beslissen over de samenleving."
+     },
+     {
+      "v": "Welk begrip hoort bij: \"de politieke richting met nadruk op gelijkheid en de overheid\"?",
+      "o": [
+       "Rechts",
+       "Coalitie",
+       "Verkiezingen",
+       "Links"
+      ],
+      "c": 3,
+      "d": 3,
+      "u": "«Links»: de politieke richting met nadruk op gelijkheid en de overheid.",
+      "uo": [
+       "«Rechts» betekent nadruk op vrijheid.",
+       "«Coalitie» betekent samen regerende partijen.",
+       "«Verkiezingen» betekent kiezen van vertegenwoordigers.",
+       "Klopt, dit is «Links»."
+      ],
+      "uh": "Onthoud: «Links» = nadruk op gelijkheid."
+     },
+     {
+      "v": "Welke term hoort bij \"nadruk op gelijkheid\"?",
+      "o": [
+       "Links",
+       "Coalitie",
+       "Verkiezingen",
+       "Wetsvoorstel"
+      ],
+      "c": 0,
+      "d": 2,
+      "u": "«Links»: de politieke richting met nadruk op gelijkheid en de overheid.",
+      "uo": [
+       "Klopt, «Links» past hierbij.",
+       "«Coalitie» betekent samen regerende partijen.",
+       "«Verkiezingen» betekent kiezen van vertegenwoordigers.",
+       "«Wetsvoorstel» betekent voorstel voor een wet."
+      ],
+      "uh": "Onthoud: «Links» = nadruk op gelijkheid."
+     },
+     {
+      "v": "Wat betekent «Politieke stroming»?",
+      "o": [
+       "het nemen van beslissingen over de samenleving",
+       "een groep met gedeelde ideeën over de samenleving",
+       "politiek die uitgaat van een geloof",
+       "een stroming die opkomt voor gelijkheid en de arbeiders"
+      ],
+      "c": 1,
+      "d": 1,
+      "u": "«Politieke stroming»: een groep met gedeelde ideeën over de samenleving.",
+      "uo": [
+       "Dat is «Politiek».",
+       "Klopt: groep met gedeelde ideeën.",
+       "Dat is «Confessioneel».",
+       "Dat is «Socialisme»."
+      ],
+      "uh": "Onthoud: «Politieke stroming» = groep met gedeelde ideeën."
+     },
+     {
+      "v": "Welk begrip hoort bij: \"de politieke richting met nadruk op vrijheid en de markt\"?",
+      "o": [
+       "Links",
+       "Politieke stroming",
+       "Rechts",
+       "Coalitie"
+      ],
+      "c": 2,
+      "d": 3,
+      "u": "«Rechts»: de politieke richting met nadruk op vrijheid en de markt.",
+      "uo": [
+       "«Links» betekent nadruk op gelijkheid.",
+       "«Politieke stroming» betekent groep met gedeelde ideeën.",
+       "Klopt, dit is «Rechts».",
+       "«Coalitie» betekent samen regerende partijen."
+      ],
+      "uh": "Onthoud: «Rechts» = nadruk op vrijheid."
+     },
+     {
+      "v": "Welke term hoort bij \"nadruk op vrijheid\"?",
+      "o": [
+       "Politieke stroming",
+       "Coalitie",
+       "Liberalisme",
+       "Rechts"
+      ],
+      "c": 3,
+      "d": 2,
+      "u": "«Rechts»: de politieke richting met nadruk op vrijheid en de markt.",
+      "uo": [
+       "«Politieke stroming» betekent groep met gedeelde ideeën.",
+       "«Coalitie» betekent samen regerende partijen.",
+       "«Liberalisme» betekent vrijheid van het individu.",
+       "Klopt, «Rechts» past hierbij."
+      ],
+      "uh": "Onthoud: «Rechts» = nadruk op vrijheid."
+     },
+     {
+      "v": "Wat betekent «Rechts»?",
+      "o": [
+       "de politieke richting met nadruk op vrijheid en de markt",
+       "de politieke richting met nadruk op gelijkheid en de overheid",
+       "een groep met gedeelde ideeën over de samenleving",
+       "een samenwerking van partijen die samen regeren"
+      ],
+      "c": 0,
+      "d": 1,
+      "u": "«Rechts»: de politieke richting met nadruk op vrijheid en de markt.",
+      "uo": [
+       "Klopt: nadruk op vrijheid.",
+       "Dat is «Links».",
+       "Dat is «Politieke stroming».",
+       "Dat is «Coalitie»."
+      ],
+      "uh": "Onthoud: «Rechts» = nadruk op vrijheid."
+     },
+     {
+      "v": "Welk begrip hoort bij: \"een stroming die de vrijheid van het individu vooropstelt\"?",
+      "o": [
+       "Socialisme",
+       "Liberalisme",
+       "Confessioneel",
+       "Lobbyen"
+      ],
+      "c": 1,
+      "d": 3,
+      "u": "«Liberalisme»: een stroming die de vrijheid van het individu vooropstelt.",
+      "uo": [
+       "«Socialisme» betekent gelijkheid voor arbeiders.",
+       "Klopt, dit is «Liberalisme».",
+       "«Confessioneel» betekent politiek op basis van geloof.",
+       "«Lobbyen» betekent politici beïnvloeden."
+      ],
+      "uh": "Onthoud: «Liberalisme» = vrijheid van het individu."
+     },
+     {
+      "v": "Welke term hoort bij \"vrijheid van het individu\"?",
+      "o": [
+       "Lobbyen",
+       "Wetsvoorstel",
+       "Liberalisme",
+       "Links"
+      ],
+      "c": 2,
+      "d": 2,
+      "u": "«Liberalisme»: een stroming die de vrijheid van het individu vooropstelt.",
+      "uo": [
+       "«Lobbyen» betekent politici beïnvloeden.",
+       "«Wetsvoorstel» betekent voorstel voor een wet.",
+       "Klopt, «Liberalisme» past hierbij.",
+       "«Links» betekent nadruk op gelijkheid."
+      ],
+      "uh": "Onthoud: «Liberalisme» = vrijheid van het individu."
+     },
+     {
+      "v": "Wat betekent «Socialisme»?",
+      "o": [
+       "een stroming die de vrijheid van het individu vooropstelt",
+       "politiek die uitgaat van een geloof",
+       "de manier waarop kiezers hun vertegenwoordigers kiezen",
+       "een stroming die opkomt voor gelijkheid en de arbeiders"
+      ],
+      "c": 3,
+      "d": 1,
+      "u": "«Socialisme»: een stroming die opkomt voor gelijkheid en de arbeiders.",
+      "uo": [
+       "Dat is «Liberalisme».",
+       "Dat is «Confessioneel».",
+       "Dat is «Verkiezingen».",
+       "Klopt: gelijkheid voor arbeiders."
+      ],
+      "uh": "Onthoud: «Socialisme» = gelijkheid voor arbeiders."
+     },
+     {
+      "v": "Welk begrip hoort bij: \"een stroming die opkomt voor gelijkheid en de arbeiders\"?",
+      "o": [
+       "Socialisme",
+       "Liberalisme",
+       "Confessioneel",
+       "Verkiezingen"
+      ],
+      "c": 0,
+      "d": 3,
+      "u": "«Socialisme»: een stroming die opkomt voor gelijkheid en de arbeiders.",
+      "uo": [
+       "Klopt, dit is «Socialisme».",
+       "«Liberalisme» betekent vrijheid van het individu.",
+       "«Confessioneel» betekent politiek op basis van geloof.",
+       "«Verkiezingen» betekent kiezen van vertegenwoordigers."
+      ],
+      "uh": "Onthoud: «Socialisme» = gelijkheid voor arbeiders."
+     },
+     {
+      "v": "Welke term hoort bij \"gelijkheid voor arbeiders\"?",
+      "o": [
+       "Verkiezingen",
+       "Socialisme",
+       "Politieke stroming",
+       "Politiek"
+      ],
+      "c": 1,
+      "d": 2,
+      "u": "«Socialisme»: een stroming die opkomt voor gelijkheid en de arbeiders.",
+      "uo": [
+       "«Verkiezingen» betekent kiezen van vertegenwoordigers.",
+       "Klopt, «Socialisme» past hierbij.",
+       "«Politieke stroming» betekent groep met gedeelde ideeën.",
+       "«Politiek» betekent beslissen over de samenleving."
+      ],
+      "uh": "Onthoud: «Socialisme» = gelijkheid voor arbeiders."
+     },
+     {
+      "v": "Wat betekent «Confessioneel»?",
+      "o": [
+       "een stroming die de vrijheid van het individu vooropstelt",
+       "een stroming die opkomt voor gelijkheid en de arbeiders",
+       "politiek die uitgaat van een geloof",
+       "een samenwerking van partijen die samen regeren"
+      ],
+      "c": 2,
+      "d": 1,
+      "u": "«Confessioneel»: politiek die uitgaat van een geloof.",
+      "uo": [
+       "Dat is «Liberalisme».",
+       "Dat is «Socialisme».",
+       "Klopt: politiek op basis van geloof.",
+       "Dat is «Coalitie»."
+      ],
+      "uh": "Onthoud: «Confessioneel» = politiek op basis van geloof."
+     },
+     {
+      "v": "Welk begrip hoort bij: \"een voorstel voor een nieuwe wet\"?",
+      "o": [
+       "Regeerakkoord",
+       "Coalitie",
+       "Confessioneel",
+       "Wetsvoorstel"
+      ],
+      "c": 3,
+      "d": 3,
+      "u": "«Wetsvoorstel»: een voorstel voor een nieuwe wet.",
+      "uo": [
+       "«Regeerakkoord» betekent afspraken van de coalitie.",
+       "«Coalitie» betekent samen regerende partijen.",
+       "«Confessioneel» betekent politiek op basis van geloof.",
+       "Klopt, dit is «Wetsvoorstel»."
+      ],
+      "uh": "Onthoud: «Wetsvoorstel» = voorstel voor een wet."
+     },
+     {
+      "v": "Welke term hoort bij \"politiek op basis van geloof\"?",
+      "o": [
+       "Confessioneel",
+       "Coalitie",
+       "Regeerakkoord",
+       "Politieke stroming"
+      ],
+      "c": 0,
+      "d": 2,
+      "u": "«Confessioneel»: politiek die uitgaat van een geloof.",
+      "uo": [
+       "Klopt, «Confessioneel» past hierbij.",
+       "«Coalitie» betekent samen regerende partijen.",
+       "«Regeerakkoord» betekent afspraken van de coalitie.",
+       "«Politieke stroming» betekent groep met gedeelde ideeën."
+      ],
+      "uh": "Onthoud: «Confessioneel» = politiek op basis van geloof."
+     },
+     {
+      "v": "Wat betekent «Wetsvoorstel»?",
+      "o": [
+       "de afspraken van de partijen die samen gaan regeren",
+       "een voorstel voor een nieuwe wet",
+       "een samenwerking van partijen die samen regeren",
+       "politiek die uitgaat van een geloof"
+      ],
+      "c": 1,
+      "d": 1,
+      "u": "«Wetsvoorstel»: een voorstel voor een nieuwe wet.",
+      "uo": [
+       "Dat is «Regeerakkoord».",
+       "Klopt: voorstel voor een wet.",
+       "Dat is «Coalitie».",
+       "Dat is «Confessioneel»."
+      ],
+      "uh": "Onthoud: «Wetsvoorstel» = voorstel voor een wet."
+     },
+     {
+      "v": "Welk begrip hoort bij: \"een samenwerking van partijen die samen regeren\"?",
+      "o": [
+       "Oppositie",
+       "Links",
+       "Coalitie",
+       "Confessioneel"
+      ],
+      "c": 2,
+      "d": 3,
+      "u": "«Coalitie»: een samenwerking van partijen die samen regeren.",
+      "uo": [
+       "«Oppositie» betekent controleert de regering.",
+       "«Links» betekent nadruk op gelijkheid.",
+       "Klopt, dit is «Coalitie».",
+       "«Confessioneel» betekent politiek op basis van geloof."
+      ],
+      "uh": "Onthoud: «Coalitie» = samen regerende partijen."
+     },
+     {
+      "v": "Welke term hoort bij \"voorstel voor een wet\"?",
+      "o": [
+       "Coalitie",
+       "Confessioneel",
+       "Links",
+       "Wetsvoorstel"
+      ],
+      "c": 3,
+      "d": 2,
+      "u": "«Wetsvoorstel»: een voorstel voor een nieuwe wet.",
+      "uo": [
+       "«Coalitie» betekent samen regerende partijen.",
+       "«Confessioneel» betekent politiek op basis van geloof.",
+       "«Links» betekent nadruk op gelijkheid.",
+       "Klopt, «Wetsvoorstel» past hierbij."
+      ],
+      "uh": "Onthoud: «Wetsvoorstel» = voorstel voor een wet."
+     },
+     {
+      "v": "Wat betekent «Coalitie»?",
+      "o": [
+       "een samenwerking van partijen die samen regeren",
+       "de partijen die niet meeregeren en de regering controleren",
+       "de politieke richting met nadruk op gelijkheid en de overheid",
+       "politiek die uitgaat van een geloof"
+      ],
+      "c": 0,
+      "d": 1,
+      "u": "«Coalitie»: een samenwerking van partijen die samen regeren.",
+      "uo": [
+       "Klopt: samen regerende partijen.",
+       "Dat is «Oppositie».",
+       "Dat is «Links».",
+       "Dat is «Confessioneel»."
+      ],
+      "uh": "Onthoud: «Coalitie» = samen regerende partijen."
+     },
+     {
+      "v": "Welk begrip hoort bij: \"de partijen die niet meeregeren en de regering controleren\"?",
+      "o": [
+       "Coalitie",
+       "Oppositie",
+       "Verkiezingen",
+       "Wetsvoorstel"
+      ],
+      "c": 1,
+      "d": 3,
+      "u": "«Oppositie»: de partijen die niet meeregeren en de regering controleren.",
+      "uo": [
+       "«Coalitie» betekent samen regerende partijen.",
+       "Klopt, dit is «Oppositie».",
+       "«Verkiezingen» betekent kiezen van vertegenwoordigers.",
+       "«Wetsvoorstel» betekent voorstel voor een wet."
+      ],
+      "uh": "Onthoud: «Oppositie» = controleert de regering."
+     },
+     {
+      "v": "Welke term hoort bij \"samen regerende partijen\"?",
+      "o": [
+       "Links",
+       "Confessioneel",
+       "Coalitie",
+       "Liberalisme"
+      ],
+      "c": 2,
+      "d": 2,
+      "u": "«Coalitie»: een samenwerking van partijen die samen regeren.",
+      "uo": [
+       "«Links» betekent nadruk op gelijkheid.",
+       "«Confessioneel» betekent politiek op basis van geloof.",
+       "Klopt, «Coalitie» past hierbij.",
+       "«Liberalisme» betekent vrijheid van het individu."
+      ],
+      "uh": "Onthoud: «Coalitie» = samen regerende partijen."
+     },
+     {
+      "v": "Wat betekent «Belangengroep»?",
+      "o": [
+       "het proberen te beïnvloeden van politici",
+       "een samenwerking van partijen die samen regeren",
+       "politiek die uitgaat van een geloof",
+       "een groep die opkomt voor een bepaald belang"
+      ],
+      "c": 3,
+      "d": 1,
+      "u": "«Belangengroep»: een groep die opkomt voor een bepaald belang.",
+      "uo": [
+       "Dat is «Lobbyen».",
+       "Dat is «Coalitie».",
+       "Dat is «Confessioneel».",
+       "Klopt: komt op voor een belang."
+      ],
+      "uh": "Onthoud: «Belangengroep» = komt op voor een belang."
+     },
+     {
+      "v": "Welk begrip hoort bij: \"een groep die opkomt voor een bepaald belang\"?",
+      "o": [
+       "Belangengroep",
+       "Lobbyen",
+       "Coalitie",
+       "Confessioneel"
+      ],
+      "c": 0,
+      "d": 3,
+      "u": "«Belangengroep»: een groep die opkomt voor een bepaald belang.",
+      "uo": [
+       "Klopt, dit is «Belangengroep».",
+       "«Lobbyen» betekent politici beïnvloeden.",
+       "«Coalitie» betekent samen regerende partijen.",
+       "«Confessioneel» betekent politiek op basis van geloof."
+      ],
+      "uh": "Onthoud: «Belangengroep» = komt op voor een belang."
+     },
+     {
+      "v": "Welke term hoort bij \"controleert de regering\"?",
+      "o": [
+       "Verkiezingen",
+       "Oppositie",
+       "Wetsvoorstel",
+       "Socialisme"
+      ],
+      "c": 1,
+      "d": 2,
+      "u": "«Oppositie»: de partijen die niet meeregeren en de regering controleren.",
+      "uo": [
+       "«Verkiezingen» betekent kiezen van vertegenwoordigers.",
+       "Klopt, «Oppositie» past hierbij.",
+       "«Wetsvoorstel» betekent voorstel voor een wet.",
+       "«Socialisme» betekent gelijkheid voor arbeiders."
+      ],
+      "uh": "Onthoud: «Oppositie» = controleert de regering."
+     }
+    ],
+    "begrippen": [
+     {
+      "t": "Politiek",
+      "d": "het nemen van beslissingen over de samenleving"
+     },
+     {
+      "t": "Politieke stroming",
+      "d": "een groep met gedeelde ideeën over de samenleving"
+     },
+     {
+      "t": "Links",
+      "d": "de politieke richting met nadruk op gelijkheid en de overheid"
+     },
+     {
+      "t": "Rechts",
+      "d": "de politieke richting met nadruk op vrijheid en de markt"
+     },
+     {
+      "t": "Liberalisme",
+      "d": "een stroming die de vrijheid van het individu vooropstelt"
+     },
+     {
+      "t": "Socialisme",
+      "d": "een stroming die opkomt voor gelijkheid en de arbeiders"
+     },
+     {
+      "t": "Confessioneel",
+      "d": "politiek die uitgaat van een geloof"
+     },
+     {
+      "t": "Wetsvoorstel",
+      "d": "een voorstel voor een nieuwe wet"
+     },
+     {
+      "t": "Coalitie",
+      "d": "een samenwerking van partijen die samen regeren"
+     },
+     {
+      "t": "Oppositie",
+      "d": "de partijen die niet meeregeren en de regering controleren"
+     },
+     {
+      "t": "Belangengroep",
+      "d": "een groep die opkomt voor een bepaald belang"
+     },
+     {
+      "t": "Lobbyen",
+      "d": "het proberen te beïnvloeden van politici"
+     },
+     {
+      "t": "Verkiezingen",
+      "d": "de manier waarop kiezers hun vertegenwoordigers kiezen"
+     },
+     {
+      "t": "Regeerakkoord",
+      "d": "de afspraken van de partijen die samen gaan regeren"
+     }
+    ],
+    "sam": "<p>In de <b>politiek</b> worden beslissingen over de samenleving genomen. <b>Politieke stromingen</b> lopen van <b>links</b> (nadruk op gelijkheid) tot <b>rechts</b> (nadruk op vrijheid). Een <b>wetsvoorstel</b> wordt behandeld door het parlement; de regerende partijen vormen een <b>coalitie</b>, de rest de <b>oppositie</b>.</p>"
    },
    {
     "id": "B",
@@ -13295,7 +22618,554 @@ var VAKKEN_VMBO = [
     ],
     "nSv": 0,
     "nOe": 0,
-    "nBeg": 0
+    "nBeg": 0,
+    "sv": [
+     {
+      "v": "Welk begrip hoort bij: \"de situatie waarin mensen geen werk hebben\"?",
+      "o": [
+       "Werkloosheid",
+       "Werkgelegenheid",
+       "Sociale zekerheid",
+       "Inkomen"
+      ],
+      "c": 0,
+      "d": 3,
+      "u": "«Werkloosheid»: de situatie waarin mensen geen werk hebben.",
+      "uo": [
+       "Klopt, dit is «Werkloosheid».",
+       "«Werkgelegenheid» betekent hoeveelheid werk.",
+       "«Sociale zekerheid» betekent inkomen bij tegenslag.",
+       "«Inkomen» betekent geld dat je ontvangt."
+      ],
+      "uh": "Onthoud: «Werkloosheid» = geen werk hebben."
+     },
+     {
+      "v": "Welke term hoort bij \"hoeveelheid werk\"?",
+      "o": [
+       "Cao",
+       "Werkgelegenheid",
+       "Inkomen",
+       "Sociale zekerheid"
+      ],
+      "c": 1,
+      "d": 2,
+      "u": "«Werkgelegenheid»: de hoeveelheid beschikbaar werk.",
+      "uo": [
+       "«Cao» betekent afspraken over het werk.",
+       "Klopt, «Werkgelegenheid» past hierbij.",
+       "«Inkomen» betekent geld dat je ontvangt.",
+       "«Sociale zekerheid» betekent inkomen bij tegenslag."
+      ],
+      "uh": "Onthoud: «Werkgelegenheid» = hoeveelheid werk."
+     },
+     {
+      "v": "Wat betekent «Werkgelegenheid»?",
+      "o": [
+       "de situatie waarin mensen geen werk hebben",
+       "afspraken over arbeidsvoorwaarden voor een hele bedrijfstak",
+       "de hoeveelheid beschikbaar werk",
+       "het geld dat je ontvangt, zoals loon"
+      ],
+      "c": 2,
+      "d": 1,
+      "u": "«Werkgelegenheid»: de hoeveelheid beschikbaar werk.",
+      "uo": [
+       "Dat is «Werkloosheid».",
+       "Dat is «Cao».",
+       "Klopt: hoeveelheid werk.",
+       "Dat is «Inkomen»."
+      ],
+      "uh": "Onthoud: «Werkgelegenheid» = hoeveelheid werk."
+     },
+     {
+      "v": "Welk begrip hoort bij: \"iemand of een bedrijf dat mensen in dienst neemt\"?",
+      "o": [
+       "Werknemer",
+       "Arbeidsmarkt",
+       "Sociale zekerheid",
+       "Werkgever"
+      ],
+      "c": 3,
+      "d": 3,
+      "u": "«Werkgever»: iemand of een bedrijf dat mensen in dienst neemt.",
+      "uo": [
+       "«Werknemer» betekent werkt in loondienst.",
+       "«Arbeidsmarkt» betekent vraag en aanbod van werk.",
+       "«Sociale zekerheid» betekent inkomen bij tegenslag.",
+       "Klopt, dit is «Werkgever»."
+      ],
+      "uh": "Onthoud: «Werkgever» = neemt mensen aan."
+     },
+     {
+      "v": "Welke term hoort bij \"geen werk hebben\"?",
+      "o": [
+       "Werkloosheid",
+       "Sociale zekerheid",
+       "Inkomen",
+       "Werkgever"
+      ],
+      "c": 0,
+      "d": 2,
+      "u": "«Werkloosheid»: de situatie waarin mensen geen werk hebben.",
+      "uo": [
+       "Klopt, «Werkloosheid» past hierbij.",
+       "«Sociale zekerheid» betekent inkomen bij tegenslag.",
+       "«Inkomen» betekent geld dat je ontvangt.",
+       "«Werkgever» betekent neemt mensen aan."
+      ],
+      "uh": "Onthoud: «Werkloosheid» = geen werk hebben."
+     },
+     {
+      "v": "Wat betekent «Werkloosheid»?",
+      "o": [
+       "de hoeveelheid beschikbaar werk",
+       "de situatie waarin mensen geen werk hebben",
+       "het stelsel dat inkomen geeft bij tegenslag",
+       "het geld dat je ontvangt, zoals loon"
+      ],
+      "c": 1,
+      "d": 1,
+      "u": "«Werkloosheid»: de situatie waarin mensen geen werk hebben.",
+      "uo": [
+       "Dat is «Werkgelegenheid».",
+       "Klopt: geen werk hebben.",
+       "Dat is «Sociale zekerheid».",
+       "Dat is «Inkomen»."
+      ],
+      "uh": "Onthoud: «Werkloosheid» = geen werk hebben."
+     },
+     {
+      "v": "Welk begrip hoort bij: \"iemand die in loondienst werkt\"?",
+      "o": [
+       "Werkgever",
+       "Arbeidsmarkt",
+       "Werknemer",
+       "Sociale zekerheid"
+      ],
+      "c": 2,
+      "d": 3,
+      "u": "«Werknemer»: iemand die in loondienst werkt.",
+      "uo": [
+       "«Werkgever» betekent neemt mensen aan.",
+       "«Arbeidsmarkt» betekent vraag en aanbod van werk.",
+       "Klopt, dit is «Werknemer».",
+       "«Sociale zekerheid» betekent inkomen bij tegenslag."
+      ],
+      "uh": "Onthoud: «Werknemer» = werkt in loondienst."
+     },
+     {
+      "v": "Welke term hoort bij \"neemt mensen aan\"?",
+      "o": [
+       "Arbeidsmarkt",
+       "Sociale zekerheid",
+       "Uitkering",
+       "Werkgever"
+      ],
+      "c": 3,
+      "d": 2,
+      "u": "«Werkgever»: iemand of een bedrijf dat mensen in dienst neemt.",
+      "uo": [
+       "«Arbeidsmarkt» betekent vraag en aanbod van werk.",
+       "«Sociale zekerheid» betekent inkomen bij tegenslag.",
+       "«Uitkering» betekent geld bij te weinig inkomen.",
+       "Klopt, «Werkgever» past hierbij."
+      ],
+      "uh": "Onthoud: «Werkgever» = neemt mensen aan."
+     },
+     {
+      "v": "Wat betekent «Werknemer»?",
+      "o": [
+       "iemand die in loondienst werkt",
+       "iemand of een bedrijf dat mensen in dienst neemt",
+       "het geheel van vraag naar en aanbod van werk",
+       "het stelsel dat inkomen geeft bij tegenslag"
+      ],
+      "c": 0,
+      "d": 1,
+      "u": "«Werknemer»: iemand die in loondienst werkt.",
+      "uo": [
+       "Klopt: werkt in loondienst.",
+       "Dat is «Werkgever».",
+       "Dat is «Arbeidsmarkt».",
+       "Dat is «Sociale zekerheid»."
+      ],
+      "uh": "Onthoud: «Werknemer» = werkt in loondienst."
+     },
+     {
+      "v": "Welk begrip hoort bij: \"een organisatie die opkomt voor werknemers\"?",
+      "o": [
+       "Cao",
+       "Vakbond",
+       "Sociale zekerheid",
+       "Werknemer"
+      ],
+      "c": 1,
+      "d": 3,
+      "u": "«Vakbond»: een organisatie die opkomt voor werknemers.",
+      "uo": [
+       "«Cao» betekent afspraken over het werk.",
+       "Klopt, dit is «Vakbond».",
+       "«Sociale zekerheid» betekent inkomen bij tegenslag.",
+       "«Werknemer» betekent werkt in loondienst."
+      ],
+      "uh": "Onthoud: «Vakbond» = komt op voor werknemers."
+     },
+     {
+      "v": "Welke term hoort bij \"werkt in loondienst\"?",
+      "o": [
+       "Arbeidsmarkt",
+       "Sociale zekerheid",
+       "Werknemer",
+       "Uitkering"
+      ],
+      "c": 2,
+      "d": 2,
+      "u": "«Werknemer»: iemand die in loondienst werkt.",
+      "uo": [
+       "«Arbeidsmarkt» betekent vraag en aanbod van werk.",
+       "«Sociale zekerheid» betekent inkomen bij tegenslag.",
+       "Klopt, «Werknemer» past hierbij.",
+       "«Uitkering» betekent geld bij te weinig inkomen."
+      ],
+      "uh": "Onthoud: «Werknemer» = werkt in loondienst."
+     },
+     {
+      "v": "Wat betekent «Vakbond»?",
+      "o": [
+       "afspraken over arbeidsvoorwaarden voor een hele bedrijfstak",
+       "het stelsel dat inkomen geeft bij tegenslag",
+       "iemand die in loondienst werkt",
+       "een organisatie die opkomt voor werknemers"
+      ],
+      "c": 3,
+      "d": 1,
+      "u": "«Vakbond»: een organisatie die opkomt voor werknemers.",
+      "uo": [
+       "Dat is «Cao».",
+       "Dat is «Sociale zekerheid».",
+       "Dat is «Werknemer».",
+       "Klopt: komt op voor werknemers."
+      ],
+      "uh": "Onthoud: «Vakbond» = komt op voor werknemers."
+     },
+     {
+      "v": "Welk begrip hoort bij: \"afspraken over arbeidsvoorwaarden voor een hele bedrijfstak\"?",
+      "o": [
+       "Cao",
+       "Vakbond",
+       "Sociale zekerheid",
+       "Staking"
+      ],
+      "c": 0,
+      "d": 3,
+      "u": "«Cao»: afspraken over arbeidsvoorwaarden voor een hele bedrijfstak.",
+      "uo": [
+       "Klopt, dit is «Cao».",
+       "«Vakbond» betekent komt op voor werknemers.",
+       "«Sociale zekerheid» betekent inkomen bij tegenslag.",
+       "«Staking» betekent het werk neerleggen."
+      ],
+      "uh": "Onthoud: «Cao» = afspraken over het werk."
+     },
+     {
+      "v": "Welke term hoort bij \"komt op voor werknemers\"?",
+      "o": [
+       "Sociale zekerheid",
+       "Vakbond",
+       "Werknemer",
+       "Staking"
+      ],
+      "c": 1,
+      "d": 2,
+      "u": "«Vakbond»: een organisatie die opkomt voor werknemers.",
+      "uo": [
+       "«Sociale zekerheid» betekent inkomen bij tegenslag.",
+       "Klopt, «Vakbond» past hierbij.",
+       "«Werknemer» betekent werkt in loondienst.",
+       "«Staking» betekent het werk neerleggen."
+      ],
+      "uh": "Onthoud: «Vakbond» = komt op voor werknemers."
+     },
+     {
+      "v": "Wat betekent «Inkomen»?",
+      "o": [
+       "geld van de overheid voor wie niet genoeg inkomen heeft",
+       "afspraken over arbeidsvoorwaarden voor een hele bedrijfstak",
+       "het geld dat je ontvangt, zoals loon",
+       "iemand die in loondienst werkt"
+      ],
+      "c": 2,
+      "d": 1,
+      "u": "«Inkomen»: het geld dat je ontvangt, zoals loon.",
+      "uo": [
+       "Dat is «Uitkering».",
+       "Dat is «Cao».",
+       "Klopt: geld dat je ontvangt.",
+       "Dat is «Werknemer»."
+      ],
+      "uh": "Onthoud: «Inkomen» = geld dat je ontvangt."
+     },
+     {
+      "v": "Welk begrip hoort bij: \"het geld dat je ontvangt, zoals loon\"?",
+      "o": [
+       "Uitkering",
+       "Cao",
+       "Werknemer",
+       "Inkomen"
+      ],
+      "c": 3,
+      "d": 3,
+      "u": "«Inkomen»: het geld dat je ontvangt, zoals loon.",
+      "uo": [
+       "«Uitkering» betekent geld bij te weinig inkomen.",
+       "«Cao» betekent afspraken over het werk.",
+       "«Werknemer» betekent werkt in loondienst.",
+       "Klopt, dit is «Inkomen»."
+      ],
+      "uh": "Onthoud: «Inkomen» = geld dat je ontvangt."
+     },
+     {
+      "v": "Welke term hoort bij \"afspraken over het werk\"?",
+      "o": [
+       "Cao",
+       "Sociale zekerheid",
+       "Staking",
+       "Arbeidsmarkt"
+      ],
+      "c": 0,
+      "d": 2,
+      "u": "«Cao»: afspraken over arbeidsvoorwaarden voor een hele bedrijfstak.",
+      "uo": [
+       "Klopt, «Cao» past hierbij.",
+       "«Sociale zekerheid» betekent inkomen bij tegenslag.",
+       "«Staking» betekent het werk neerleggen.",
+       "«Arbeidsmarkt» betekent vraag en aanbod van werk."
+      ],
+      "uh": "Onthoud: «Cao» = afspraken over het werk."
+     },
+     {
+      "v": "Wat betekent «Sociale zekerheid»?",
+      "o": [
+       "geld van de overheid voor wie niet genoeg inkomen heeft",
+       "het stelsel dat inkomen geeft bij tegenslag",
+       "de situatie waarin mensen geen werk hebben",
+       "het neerleggen van het werk om eisen kracht bij te zetten"
+      ],
+      "c": 1,
+      "d": 1,
+      "u": "«Sociale zekerheid»: het stelsel dat inkomen geeft bij tegenslag.",
+      "uo": [
+       "Dat is «Uitkering».",
+       "Klopt: inkomen bij tegenslag.",
+       "Dat is «Werkloosheid».",
+       "Dat is «Staking»."
+      ],
+      "uh": "Onthoud: «Sociale zekerheid» = inkomen bij tegenslag."
+     },
+     {
+      "v": "Welk begrip hoort bij: \"geld van de overheid voor wie niet genoeg inkomen heeft\"?",
+      "o": [
+       "Inkomen",
+       "Arbeidsmarkt",
+       "Uitkering",
+       "Cao"
+      ],
+      "c": 2,
+      "d": 3,
+      "u": "«Uitkering»: geld van de overheid voor wie niet genoeg inkomen heeft.",
+      "uo": [
+       "«Inkomen» betekent geld dat je ontvangt.",
+       "«Arbeidsmarkt» betekent vraag en aanbod van werk.",
+       "Klopt, dit is «Uitkering».",
+       "«Cao» betekent afspraken over het werk."
+      ],
+      "uh": "Onthoud: «Uitkering» = geld bij te weinig inkomen."
+     },
+     {
+      "v": "Welke term hoort bij \"geld dat je ontvangt\"?",
+      "o": [
+       "Cao",
+       "Werknemer",
+       "Staking",
+       "Inkomen"
+      ],
+      "c": 3,
+      "d": 2,
+      "u": "«Inkomen»: het geld dat je ontvangt, zoals loon.",
+      "uo": [
+       "«Cao» betekent afspraken over het werk.",
+       "«Werknemer» betekent werkt in loondienst.",
+       "«Staking» betekent het werk neerleggen.",
+       "Klopt, «Inkomen» past hierbij."
+      ],
+      "uh": "Onthoud: «Inkomen» = geld dat je ontvangt."
+     },
+     {
+      "v": "Wat betekent «Uitkering»?",
+      "o": [
+       "geld van de overheid voor wie niet genoeg inkomen heeft",
+       "het geld dat je ontvangt, zoals loon",
+       "het geheel van vraag naar en aanbod van werk",
+       "afspraken over arbeidsvoorwaarden voor een hele bedrijfstak"
+      ],
+      "c": 0,
+      "d": 1,
+      "u": "«Uitkering»: geld van de overheid voor wie niet genoeg inkomen heeft.",
+      "uo": [
+       "Klopt: geld bij te weinig inkomen.",
+       "Dat is «Inkomen».",
+       "Dat is «Arbeidsmarkt».",
+       "Dat is «Cao»."
+      ],
+      "uh": "Onthoud: «Uitkering» = geld bij te weinig inkomen."
+     },
+     {
+      "v": "Welk begrip hoort bij: \"het geheel van vraag naar en aanbod van werk\"?",
+      "o": [
+       "Werkgelegenheid",
+       "Arbeidsmarkt",
+       "Inkomen",
+       "Cao"
+      ],
+      "c": 1,
+      "d": 3,
+      "u": "«Arbeidsmarkt»: het geheel van vraag naar en aanbod van werk.",
+      "uo": [
+       "«Werkgelegenheid» betekent hoeveelheid werk.",
+       "Klopt, dit is «Arbeidsmarkt».",
+       "«Inkomen» betekent geld dat je ontvangt.",
+       "«Cao» betekent afspraken over het werk."
+      ],
+      "uh": "Onthoud: «Arbeidsmarkt» = vraag en aanbod van werk."
+     },
+     {
+      "v": "Welke term hoort bij \"geld bij te weinig inkomen\"?",
+      "o": [
+       "Arbeidsmarkt",
+       "Cao",
+       "Uitkering",
+       "Sociale zekerheid"
+      ],
+      "c": 2,
+      "d": 2,
+      "u": "«Uitkering»: geld van de overheid voor wie niet genoeg inkomen heeft.",
+      "uo": [
+       "«Arbeidsmarkt» betekent vraag en aanbod van werk.",
+       "«Cao» betekent afspraken over het werk.",
+       "Klopt, «Uitkering» past hierbij.",
+       "«Sociale zekerheid» betekent inkomen bij tegenslag."
+      ],
+      "uh": "Onthoud: «Uitkering» = geld bij te weinig inkomen."
+     },
+     {
+      "v": "Wat betekent «Arbeidsmarkt»?",
+      "o": [
+       "de hoeveelheid beschikbaar werk",
+       "het geld dat je ontvangt, zoals loon",
+       "afspraken over arbeidsvoorwaarden voor een hele bedrijfstak",
+       "het geheel van vraag naar en aanbod van werk"
+      ],
+      "c": 3,
+      "d": 1,
+      "u": "«Arbeidsmarkt»: het geheel van vraag naar en aanbod van werk.",
+      "uo": [
+       "Dat is «Werkgelegenheid».",
+       "Dat is «Inkomen».",
+       "Dat is «Cao».",
+       "Klopt: vraag en aanbod van werk."
+      ],
+      "uh": "Onthoud: «Arbeidsmarkt» = vraag en aanbod van werk."
+     },
+     {
+      "v": "Welk begrip hoort bij: \"het neerleggen van het werk om eisen kracht bij te zetten\"?",
+      "o": [
+       "Staking",
+       "Vakbond",
+       "Inkomen",
+       "Werknemer"
+      ],
+      "c": 0,
+      "d": 3,
+      "u": "«Staking»: het neerleggen van het werk om eisen kracht bij te zetten.",
+      "uo": [
+       "Klopt, dit is «Staking».",
+       "«Vakbond» betekent komt op voor werknemers.",
+       "«Inkomen» betekent geld dat je ontvangt.",
+       "«Werknemer» betekent werkt in loondienst."
+      ],
+      "uh": "Onthoud: «Staking» = het werk neerleggen."
+     },
+     {
+      "v": "Welke term hoort bij \"laagste toegestane loon\"?",
+      "o": [
+       "Vakbond",
+       "Minimumloon",
+       "Werknemer",
+       "Werkgelegenheid"
+      ],
+      "c": 1,
+      "d": 2,
+      "u": "«Minimumloon»: het wettelijk laagste loon dat betaald mag worden.",
+      "uo": [
+       "«Vakbond» betekent komt op voor werknemers.",
+       "Klopt, «Minimumloon» past hierbij.",
+       "«Werknemer» betekent werkt in loondienst.",
+       "«Werkgelegenheid» betekent hoeveelheid werk."
+      ],
+      "uh": "Onthoud: «Minimumloon» = laagste toegestane loon."
+     }
+    ],
+    "begrippen": [
+     {
+      "t": "Werkgelegenheid",
+      "d": "de hoeveelheid beschikbaar werk"
+     },
+     {
+      "t": "Werkloosheid",
+      "d": "de situatie waarin mensen geen werk hebben"
+     },
+     {
+      "t": "Werkgever",
+      "d": "iemand of een bedrijf dat mensen in dienst neemt"
+     },
+     {
+      "t": "Werknemer",
+      "d": "iemand die in loondienst werkt"
+     },
+     {
+      "t": "Vakbond",
+      "d": "een organisatie die opkomt voor werknemers"
+     },
+     {
+      "t": "Cao",
+      "d": "afspraken over arbeidsvoorwaarden voor een hele bedrijfstak"
+     },
+     {
+      "t": "Inkomen",
+      "d": "het geld dat je ontvangt, zoals loon"
+     },
+     {
+      "t": "Sociale zekerheid",
+      "d": "het stelsel dat inkomen geeft bij tegenslag"
+     },
+     {
+      "t": "Uitkering",
+      "d": "geld van de overheid voor wie niet genoeg inkomen heeft"
+     },
+     {
+      "t": "Minimumloon",
+      "d": "het wettelijk laagste loon dat betaald mag worden"
+     },
+     {
+      "t": "Arbeidsmarkt",
+      "d": "het geheel van vraag naar en aanbod van werk"
+     },
+     {
+      "t": "Staking",
+      "d": "het neerleggen van het werk om eisen kracht bij te zetten"
+     }
+    ],
+    "sam": "<p>Op de <b>arbeidsmarkt</b> ontmoeten vraag en aanbod van werk elkaar. <b>Werkgevers</b> en <b>werknemers</b> maken via <b>vakbonden</b> een <b>cao</b>. Wie geen werk heeft, kent <b>werkloosheid</b>; de <b>sociale zekerheid</b> geeft dan een <b>uitkering</b>.</p>"
    },
    {
     "id": "C",
@@ -13309,7 +23179,554 @@ var VAKKEN_VMBO = [
     ],
     "nSv": 0,
     "nOe": 0,
-    "nBeg": 0
+    "nBeg": 0,
+    "sv": [
+     {
+      "v": "Welk begrip hoort bij: \"de gewoonten, taal en gebruiken van een groep\"?",
+      "o": [
+       "Cultuur",
+       "Identiteit",
+       "Tolerantie",
+       "Vooroordeel"
+      ],
+      "c": 0,
+      "d": 3,
+      "u": "«Cultuur»: de gewoonten, taal en gebruiken van een groep.",
+      "uo": [
+       "Klopt, dit is «Cultuur».",
+       "«Identiteit» betekent gevoel van erbij horen.",
+       "«Tolerantie» betekent anderen verdragen.",
+       "«Vooroordeel» betekent oordeel zonder feiten."
+      ],
+      "uh": "Onthoud: «Cultuur» = gewoonten en gebruiken."
+     },
+     {
+      "v": "Welke term hoort bij \"gewoonten en gebruiken\"?",
+      "o": [
+       "Tolerantie",
+       "Cultuur",
+       "Vooroordeel",
+       "Godsdienstvrijheid"
+      ],
+      "c": 1,
+      "d": 2,
+      "u": "«Cultuur»: de gewoonten, taal en gebruiken van een groep.",
+      "uo": [
+       "«Tolerantie» betekent anderen verdragen.",
+       "Klopt, «Cultuur» past hierbij.",
+       "«Vooroordeel» betekent oordeel zonder feiten.",
+       "«Godsdienstvrijheid» betekent vrij je geloof kiezen."
+      ],
+      "uh": "Onthoud: «Cultuur» = gewoonten en gebruiken."
+     },
+     {
+      "v": "Wat betekent «Multiculturele samenleving»?",
+      "o": [
+       "de gewoonten, taal en gebruiken van een groep",
+       "een vast, vaak overdreven beeld van een groep",
+       "een samenleving met mensen van veel culturen",
+       "een mening vooraf, zonder de feiten te kennen"
+      ],
+      "c": 2,
+      "d": 1,
+      "u": "«Multiculturele samenleving»: een samenleving met mensen van veel culturen.",
+      "uo": [
+       "Dat is «Cultuur».",
+       "Dat is «Stereotype».",
+       "Klopt: veel culturen samen.",
+       "Dat is «Vooroordeel»."
+      ],
+      "uh": "Onthoud: «Multiculturele samenleving» = veel culturen samen."
+     },
+     {
+      "v": "Welk begrip hoort bij: \"het gevoel bij een groep te horen\"?",
+      "o": [
+       "Cultuur",
+       "Integratie",
+       "Multiculturele samenleving",
+       "Identiteit"
+      ],
+      "c": 3,
+      "d": 3,
+      "u": "«Identiteit»: het gevoel bij een groep te horen.",
+      "uo": [
+       "«Cultuur» betekent gewoonten en gebruiken.",
+       "«Integratie» betekent meedoen in de samenleving.",
+       "«Multiculturele samenleving» betekent veel culturen samen.",
+       "Klopt, dit is «Identiteit»."
+      ],
+      "uh": "Onthoud: «Identiteit» = gevoel van erbij horen."
+     },
+     {
+      "v": "Welke term hoort bij \"gevoel van erbij horen\"?",
+      "o": [
+       "Identiteit",
+       "Integratie",
+       "Multiculturele samenleving",
+       "Tolerantie"
+      ],
+      "c": 0,
+      "d": 2,
+      "u": "«Identiteit»: het gevoel bij een groep te horen.",
+      "uo": [
+       "Klopt, «Identiteit» past hierbij.",
+       "«Integratie» betekent meedoen in de samenleving.",
+       "«Multiculturele samenleving» betekent veel culturen samen.",
+       "«Tolerantie» betekent anderen verdragen."
+      ],
+      "uh": "Onthoud: «Identiteit» = gevoel van erbij horen."
+     },
+     {
+      "v": "Wat betekent «Cultuur»?",
+      "o": [
+       "het gevoel bij een groep te horen",
+       "de gewoonten, taal en gebruiken van een groep",
+       "het verdragen van andere culturen en meningen",
+       "een mening vooraf, zonder de feiten te kennen"
+      ],
+      "c": 1,
+      "d": 1,
+      "u": "«Cultuur»: de gewoonten, taal en gebruiken van een groep.",
+      "uo": [
+       "Dat is «Identiteit».",
+       "Klopt: gewoonten en gebruiken.",
+       "Dat is «Tolerantie».",
+       "Dat is «Vooroordeel»."
+      ],
+      "uh": "Onthoud: «Cultuur» = gewoonten en gebruiken."
+     },
+     {
+      "v": "Welk begrip hoort bij: \"het opgaan van migranten in de samenleving\"?",
+      "o": [
+       "Segregatie",
+       "Cultuur",
+       "Integratie",
+       "Multiculturele samenleving"
+      ],
+      "c": 2,
+      "d": 3,
+      "u": "«Integratie»: het opgaan van migranten in de samenleving.",
+      "uo": [
+       "«Segregatie» betekent gescheiden leven.",
+       "«Cultuur» betekent gewoonten en gebruiken.",
+       "Klopt, dit is «Integratie».",
+       "«Multiculturele samenleving» betekent veel culturen samen."
+      ],
+      "uh": "Onthoud: «Integratie» = meedoen in de samenleving."
+     },
+     {
+      "v": "Welke term hoort bij \"meedoen in de samenleving\"?",
+      "o": [
+       "Cultuur",
+       "Multiculturele samenleving",
+       "Stereotype",
+       "Integratie"
+      ],
+      "c": 3,
+      "d": 2,
+      "u": "«Integratie»: het opgaan van migranten in de samenleving.",
+      "uo": [
+       "«Cultuur» betekent gewoonten en gebruiken.",
+       "«Multiculturele samenleving» betekent veel culturen samen.",
+       "«Stereotype» betekent vast beeld van een groep.",
+       "Klopt, «Integratie» past hierbij."
+      ],
+      "uh": "Onthoud: «Integratie» = meedoen in de samenleving."
+     },
+     {
+      "v": "Wat betekent «Identiteit»?",
+      "o": [
+       "het gevoel bij een groep te horen",
+       "de gewoonten, taal en gebruiken van een groep",
+       "het opgaan van migranten in de samenleving",
+       "een samenleving met mensen van veel culturen"
+      ],
+      "c": 0,
+      "d": 1,
+      "u": "«Identiteit»: het gevoel bij een groep te horen.",
+      "uo": [
+       "Klopt: gevoel van erbij horen.",
+       "Dat is «Cultuur».",
+       "Dat is «Integratie».",
+       "Dat is «Multiculturele samenleving»."
+      ],
+      "uh": "Onthoud: «Identiteit» = gevoel van erbij horen."
+     },
+     {
+      "v": "Welk begrip hoort bij: \"het ongelijk behandelen van mensen om wie ze zijn\"?",
+      "o": [
+       "Vooroordeel",
+       "Discriminatie",
+       "Migrant",
+       "Godsdienstvrijheid"
+      ],
+      "c": 1,
+      "d": 3,
+      "u": "«Discriminatie»: het ongelijk behandelen van mensen om wie ze zijn.",
+      "uo": [
+       "«Vooroordeel» betekent oordeel zonder feiten.",
+       "Klopt, dit is «Discriminatie».",
+       "«Migrant» betekent verhuist naar ander land.",
+       "«Godsdienstvrijheid» betekent vrij je geloof kiezen."
+      ],
+      "uh": "Onthoud: «Discriminatie» = ongelijk behandelen."
+     },
+     {
+      "v": "Welke term hoort bij \"ongelijk behandelen\"?",
+      "o": [
+       "Migrant",
+       "Godsdienstvrijheid",
+       "Discriminatie",
+       "Multiculturele samenleving"
+      ],
+      "c": 2,
+      "d": 2,
+      "u": "«Discriminatie»: het ongelijk behandelen van mensen om wie ze zijn.",
+      "uo": [
+       "«Migrant» betekent verhuist naar ander land.",
+       "«Godsdienstvrijheid» betekent vrij je geloof kiezen.",
+       "Klopt, «Discriminatie» past hierbij.",
+       "«Multiculturele samenleving» betekent veel culturen samen."
+      ],
+      "uh": "Onthoud: «Discriminatie» = ongelijk behandelen."
+     },
+     {
+      "v": "Wat betekent «Integratie»?",
+      "o": [
+       "het gescheiden leven van bevolkingsgroepen",
+       "de gewoonten, taal en gebruiken van een groep",
+       "een samenleving met mensen van veel culturen",
+       "het opgaan van migranten in de samenleving"
+      ],
+      "c": 3,
+      "d": 1,
+      "u": "«Integratie»: het opgaan van migranten in de samenleving.",
+      "uo": [
+       "Dat is «Segregatie».",
+       "Dat is «Cultuur».",
+       "Dat is «Multiculturele samenleving».",
+       "Klopt: meedoen in de samenleving."
+      ],
+      "uh": "Onthoud: «Integratie» = meedoen in de samenleving."
+     },
+     {
+      "v": "Welk begrip hoort bij: \"een mening vooraf, zonder de feiten te kennen\"?",
+      "o": [
+       "Vooroordeel",
+       "Stereotype",
+       "Discriminatie",
+       "Integratie"
+      ],
+      "c": 0,
+      "d": 3,
+      "u": "«Vooroordeel»: een mening vooraf, zonder de feiten te kennen.",
+      "uo": [
+       "Klopt, dit is «Vooroordeel».",
+       "«Stereotype» betekent vast beeld van een groep.",
+       "«Discriminatie» betekent ongelijk behandelen.",
+       "«Integratie» betekent meedoen in de samenleving."
+      ],
+      "uh": "Onthoud: «Vooroordeel» = oordeel zonder feiten."
+     },
+     {
+      "v": "Welke term hoort bij \"oordeel zonder feiten\"?",
+      "o": [
+       "Discriminatie",
+       "Vooroordeel",
+       "Integratie",
+       "Multiculturele samenleving"
+      ],
+      "c": 1,
+      "d": 2,
+      "u": "«Vooroordeel»: een mening vooraf, zonder de feiten te kennen.",
+      "uo": [
+       "«Discriminatie» betekent ongelijk behandelen.",
+       "Klopt, «Vooroordeel» past hierbij.",
+       "«Integratie» betekent meedoen in de samenleving.",
+       "«Multiculturele samenleving» betekent veel culturen samen."
+      ],
+      "uh": "Onthoud: «Vooroordeel» = oordeel zonder feiten."
+     },
+     {
+      "v": "Wat betekent «Vooroordeel»?",
+      "o": [
+       "een vast, vaak overdreven beeld van een groep",
+       "het ongelijk behandelen van mensen om wie ze zijn",
+       "een mening vooraf, zonder de feiten te kennen",
+       "het opgaan van migranten in de samenleving"
+      ],
+      "c": 2,
+      "d": 1,
+      "u": "«Vooroordeel»: een mening vooraf, zonder de feiten te kennen.",
+      "uo": [
+       "Dat is «Stereotype».",
+       "Dat is «Discriminatie».",
+       "Klopt: oordeel zonder feiten.",
+       "Dat is «Integratie»."
+      ],
+      "uh": "Onthoud: «Vooroordeel» = oordeel zonder feiten."
+     },
+     {
+      "v": "Welk begrip hoort bij: \"een vast, vaak overdreven beeld van een groep\"?",
+      "o": [
+       "Vooroordeel",
+       "Cultuur",
+       "Multiculturele samenleving",
+       "Stereotype"
+      ],
+      "c": 3,
+      "d": 3,
+      "u": "«Stereotype»: een vast, vaak overdreven beeld van een groep.",
+      "uo": [
+       "«Vooroordeel» betekent oordeel zonder feiten.",
+       "«Cultuur» betekent gewoonten en gebruiken.",
+       "«Multiculturele samenleving» betekent veel culturen samen.",
+       "Klopt, dit is «Stereotype»."
+      ],
+      "uh": "Onthoud: «Stereotype» = vast beeld van een groep."
+     },
+     {
+      "v": "Welke term hoort bij \"vast beeld van een groep\"?",
+      "o": [
+       "Stereotype",
+       "Cultuur",
+       "Multiculturele samenleving",
+       "Tolerantie"
+      ],
+      "c": 0,
+      "d": 2,
+      "u": "«Stereotype»: een vast, vaak overdreven beeld van een groep.",
+      "uo": [
+       "Klopt, «Stereotype» past hierbij.",
+       "«Cultuur» betekent gewoonten en gebruiken.",
+       "«Multiculturele samenleving» betekent veel culturen samen.",
+       "«Tolerantie» betekent anderen verdragen."
+      ],
+      "uh": "Onthoud: «Stereotype» = vast beeld van een groep."
+     },
+     {
+      "v": "Wat betekent «Stereotype»?",
+      "o": [
+       "een mening vooraf, zonder de feiten te kennen",
+       "een vast, vaak overdreven beeld van een groep",
+       "de gewoonten, taal en gebruiken van een groep",
+       "een samenleving met mensen van veel culturen"
+      ],
+      "c": 1,
+      "d": 1,
+      "u": "«Stereotype»: een vast, vaak overdreven beeld van een groep.",
+      "uo": [
+       "Dat is «Vooroordeel».",
+       "Klopt: vast beeld van een groep.",
+       "Dat is «Cultuur».",
+       "Dat is «Multiculturele samenleving»."
+      ],
+      "uh": "Onthoud: «Stereotype» = vast beeld van een groep."
+     },
+     {
+      "v": "Welk begrip hoort bij: \"het verdragen van andere culturen en meningen\"?",
+      "o": [
+       "Discriminatie",
+       "Cultuur",
+       "Tolerantie",
+       "Multiculturele samenleving"
+      ],
+      "c": 2,
+      "d": 3,
+      "u": "«Tolerantie»: het verdragen van andere culturen en meningen.",
+      "uo": [
+       "«Discriminatie» betekent ongelijk behandelen.",
+       "«Cultuur» betekent gewoonten en gebruiken.",
+       "Klopt, dit is «Tolerantie».",
+       "«Multiculturele samenleving» betekent veel culturen samen."
+      ],
+      "uh": "Onthoud: «Tolerantie» = anderen verdragen."
+     },
+     {
+      "v": "Welke term hoort bij \"anderen verdragen\"?",
+      "o": [
+       "Cultuur",
+       "Multiculturele samenleving",
+       "Stereotype",
+       "Tolerantie"
+      ],
+      "c": 3,
+      "d": 2,
+      "u": "«Tolerantie»: het verdragen van andere culturen en meningen.",
+      "uo": [
+       "«Cultuur» betekent gewoonten en gebruiken.",
+       "«Multiculturele samenleving» betekent veel culturen samen.",
+       "«Stereotype» betekent vast beeld van een groep.",
+       "Klopt, «Tolerantie» past hierbij."
+      ],
+      "uh": "Onthoud: «Tolerantie» = anderen verdragen."
+     },
+     {
+      "v": "Wat betekent «Tolerantie»?",
+      "o": [
+       "het verdragen van andere culturen en meningen",
+       "het ongelijk behandelen van mensen om wie ze zijn",
+       "de gewoonten, taal en gebruiken van een groep",
+       "een samenleving met mensen van veel culturen"
+      ],
+      "c": 0,
+      "d": 1,
+      "u": "«Tolerantie»: het verdragen van andere culturen en meningen.",
+      "uo": [
+       "Klopt: anderen verdragen.",
+       "Dat is «Discriminatie».",
+       "Dat is «Cultuur».",
+       "Dat is «Multiculturele samenleving»."
+      ],
+      "uh": "Onthoud: «Tolerantie» = anderen verdragen."
+     },
+     {
+      "v": "Welk begrip hoort bij: \"iemand die naar een ander land verhuist\"?",
+      "o": [
+       "Integratie",
+       "Migrant",
+       "Stereotype",
+       "Discriminatie"
+      ],
+      "c": 1,
+      "d": 3,
+      "u": "«Migrant»: iemand die naar een ander land verhuist.",
+      "uo": [
+       "«Integratie» betekent meedoen in de samenleving.",
+       "Klopt, dit is «Migrant».",
+       "«Stereotype» betekent vast beeld van een groep.",
+       "«Discriminatie» betekent ongelijk behandelen."
+      ],
+      "uh": "Onthoud: «Migrant» = verhuist naar ander land."
+     },
+     {
+      "v": "Welke term hoort bij \"verhuist naar ander land\"?",
+      "o": [
+       "Stereotype",
+       "Discriminatie",
+       "Migrant",
+       "Godsdienstvrijheid"
+      ],
+      "c": 2,
+      "d": 2,
+      "u": "«Migrant»: iemand die naar een ander land verhuist.",
+      "uo": [
+       "«Stereotype» betekent vast beeld van een groep.",
+       "«Discriminatie» betekent ongelijk behandelen.",
+       "Klopt, «Migrant» past hierbij.",
+       "«Godsdienstvrijheid» betekent vrij je geloof kiezen."
+      ],
+      "uh": "Onthoud: «Migrant» = verhuist naar ander land."
+     },
+     {
+      "v": "Wat betekent «Migrant»?",
+      "o": [
+       "het opgaan van migranten in de samenleving",
+       "een vast, vaak overdreven beeld van een groep",
+       "het ongelijk behandelen van mensen om wie ze zijn",
+       "iemand die naar een ander land verhuist"
+      ],
+      "c": 3,
+      "d": 1,
+      "u": "«Migrant»: iemand die naar een ander land verhuist.",
+      "uo": [
+       "Dat is «Integratie».",
+       "Dat is «Stereotype».",
+       "Dat is «Discriminatie».",
+       "Klopt: verhuist naar ander land."
+      ],
+      "uh": "Onthoud: «Migrant» = verhuist naar ander land."
+     },
+     {
+      "v": "Welk begrip hoort bij: \"het gescheiden leven van bevolkingsgroepen\"?",
+      "o": [
+       "Segregatie",
+       "Integratie",
+       "Cultuur",
+       "Multiculturele samenleving"
+      ],
+      "c": 0,
+      "d": 3,
+      "u": "«Segregatie»: het gescheiden leven van bevolkingsgroepen.",
+      "uo": [
+       "Klopt, dit is «Segregatie».",
+       "«Integratie» betekent meedoen in de samenleving.",
+       "«Cultuur» betekent gewoonten en gebruiken.",
+       "«Multiculturele samenleving» betekent veel culturen samen."
+      ],
+      "uh": "Onthoud: «Segregatie» = gescheiden leven."
+     },
+     {
+      "v": "Welke term hoort bij \"gescheiden leven\"?",
+      "o": [
+       "Cultuur",
+       "Segregatie",
+       "Multiculturele samenleving",
+       "Stereotype"
+      ],
+      "c": 1,
+      "d": 2,
+      "u": "«Segregatie»: het gescheiden leven van bevolkingsgroepen.",
+      "uo": [
+       "«Cultuur» betekent gewoonten en gebruiken.",
+       "Klopt, «Segregatie» past hierbij.",
+       "«Multiculturele samenleving» betekent veel culturen samen.",
+       "«Stereotype» betekent vast beeld van een groep."
+      ],
+      "uh": "Onthoud: «Segregatie» = gescheiden leven."
+     }
+    ],
+    "begrippen": [
+     {
+      "t": "Multiculturele samenleving",
+      "d": "een samenleving met mensen van veel culturen"
+     },
+     {
+      "t": "Cultuur",
+      "d": "de gewoonten, taal en gebruiken van een groep"
+     },
+     {
+      "t": "Identiteit",
+      "d": "het gevoel bij een groep te horen"
+     },
+     {
+      "t": "Integratie",
+      "d": "het opgaan van migranten in de samenleving"
+     },
+     {
+      "t": "Discriminatie",
+      "d": "het ongelijk behandelen van mensen om wie ze zijn"
+     },
+     {
+      "t": "Vooroordeel",
+      "d": "een mening vooraf, zonder de feiten te kennen"
+     },
+     {
+      "t": "Stereotype",
+      "d": "een vast, vaak overdreven beeld van een groep"
+     },
+     {
+      "t": "Tolerantie",
+      "d": "het verdragen van andere culturen en meningen"
+     },
+     {
+      "t": "Migrant",
+      "d": "iemand die naar een ander land verhuist"
+     },
+     {
+      "t": "Segregatie",
+      "d": "het gescheiden leven van bevolkingsgroepen"
+     },
+     {
+      "t": "Emancipatie",
+      "d": "het streven naar gelijke rechten en kansen"
+     },
+     {
+      "t": "Godsdienstvrijheid",
+      "d": "het recht om je eigen geloof te kiezen"
+     }
+    ],
+    "sam": "<p>In een <b>multiculturele samenleving</b> leven mensen van veel <b>culturen</b> samen. <b>Integratie</b> is het meedoen van migranten; het tegenovergestelde is <b>segregatie</b>. <b>Discriminatie</b>, <b>vooroordelen</b> en <b>stereotypen</b> staan gelijke behandeling in de weg.</p>"
    },
    {
     "id": "D",
@@ -13325,7 +23742,562 @@ var VAKKEN_VMBO = [
     ],
     "nSv": 0,
     "nOe": 0,
-    "nBeg": 0
+    "nBeg": 0,
+    "sv": [
+     {
+      "v": "Welk begrip hoort bij: \"een ernstig strafbaar feit, zoals diefstal of geweld\"?",
+      "o": [
+       "Misdrijf",
+       "Overtreding",
+       "Verdachte",
+       "Strafproces"
+      ],
+      "c": 0,
+      "d": 3,
+      "u": "«Misdrijf»: een ernstig strafbaar feit, zoals diefstal of geweld.",
+      "uo": [
+       "Klopt, dit is «Misdrijf».",
+       "«Overtreding» betekent licht strafbaar feit.",
+       "«Verdachte» betekent wordt beschuldigd.",
+       "«Strafproces» betekent rechtszaak over schuld."
+      ],
+      "uh": "Onthoud: «Misdrijf» = ernstig strafbaar feit."
+     },
+     {
+      "v": "Welke term hoort bij \"ernstig strafbaar feit\"?",
+      "o": [
+       "Verdachte",
+       "Misdrijf",
+       "Strafproces",
+       "Rechter"
+      ],
+      "c": 1,
+      "d": 2,
+      "u": "«Misdrijf»: een ernstig strafbaar feit, zoals diefstal of geweld.",
+      "uo": [
+       "«Verdachte» betekent wordt beschuldigd.",
+       "Klopt, «Misdrijf» past hierbij.",
+       "«Strafproces» betekent rechtszaak over schuld.",
+       "«Rechter» betekent velt het oordeel."
+      ],
+      "uh": "Onthoud: «Misdrijf» = ernstig strafbaar feit."
+     },
+     {
+      "v": "Wat betekent «Criminaliteit»?",
+      "o": [
+       "een ernstig strafbaar feit, zoals diefstal of geweld",
+       "het voorkomen van criminaliteit",
+       "gedrag dat bij de wet verboden is",
+       "de rechtszaak waarin over schuld en straf wordt beslist"
+      ],
+      "c": 2,
+      "d": 1,
+      "u": "«Criminaliteit»: gedrag dat bij de wet verboden is.",
+      "uo": [
+       "Dat is «Misdrijf».",
+       "Dat is «Preventie».",
+       "Klopt: verboden gedrag.",
+       "Dat is «Strafproces»."
+      ],
+      "uh": "Onthoud: «Criminaliteit» = verboden gedrag."
+     },
+     {
+      "v": "Welk begrip hoort bij: \"een licht strafbaar feit, zoals te hard rijden\"?",
+      "o": [
+       "Misdrijf",
+       "Onschuldpresumptie",
+       "Taakstraf",
+       "Overtreding"
+      ],
+      "c": 3,
+      "d": 3,
+      "u": "«Overtreding»: een licht strafbaar feit, zoals te hard rijden.",
+      "uo": [
+       "«Misdrijf» betekent ernstig strafbaar feit.",
+       "«Onschuldpresumptie» betekent onschuldig tot bewezen.",
+       "«Taakstraf» betekent straf met onbetaald werk.",
+       "Klopt, dit is «Overtreding»."
+      ],
+      "uh": "Onthoud: «Overtreding» = licht strafbaar feit."
+     },
+     {
+      "v": "Welke term hoort bij \"licht strafbaar feit\"?",
+      "o": [
+       "Overtreding",
+       "Onschuldpresumptie",
+       "Taakstraf",
+       "Advocaat"
+      ],
+      "c": 0,
+      "d": 2,
+      "u": "«Overtreding»: een licht strafbaar feit, zoals te hard rijden.",
+      "uo": [
+       "Klopt, «Overtreding» past hierbij.",
+       "«Onschuldpresumptie» betekent onschuldig tot bewezen.",
+       "«Taakstraf» betekent straf met onbetaald werk.",
+       "«Advocaat» betekent verdedigt de verdachte."
+      ],
+      "uh": "Onthoud: «Overtreding» = licht strafbaar feit."
+     },
+     {
+      "v": "Wat betekent «Misdrijf»?",
+      "o": [
+       "een licht strafbaar feit, zoals te hard rijden",
+       "een ernstig strafbaar feit, zoals diefstal of geweld",
+       "iemand die van een strafbaar feit wordt beschuldigd",
+       "de rechtszaak waarin over schuld en straf wordt beslist"
+      ],
+      "c": 1,
+      "d": 1,
+      "u": "«Misdrijf»: een ernstig strafbaar feit, zoals diefstal of geweld.",
+      "uo": [
+       "Dat is «Overtreding».",
+       "Klopt: ernstig strafbaar feit.",
+       "Dat is «Verdachte».",
+       "Dat is «Strafproces»."
+      ],
+      "uh": "Onthoud: «Misdrijf» = ernstig strafbaar feit."
+     },
+     {
+      "v": "Welk begrip hoort bij: \"iemand die van een strafbaar feit wordt beschuldigd\"?",
+      "o": [
+       "Advocaat",
+       "Taakstraf",
+       "Verdachte",
+       "Bewijs"
+      ],
+      "c": 2,
+      "d": 3,
+      "u": "«Verdachte»: iemand die van een strafbaar feit wordt beschuldigd.",
+      "uo": [
+       "«Advocaat» betekent verdedigt de verdachte.",
+       "«Taakstraf» betekent straf met onbetaald werk.",
+       "Klopt, dit is «Verdachte».",
+       "«Bewijs» betekent gegevens die iets aantonen."
+      ],
+      "uh": "Onthoud: «Verdachte» = wordt beschuldigd."
+     },
+     {
+      "v": "Welke term hoort bij \"wordt beschuldigd\"?",
+      "o": [
+       "Taakstraf",
+       "Bewijs",
+       "Rechter",
+       "Verdachte"
+      ],
+      "c": 3,
+      "d": 2,
+      "u": "«Verdachte»: iemand die van een strafbaar feit wordt beschuldigd.",
+      "uo": [
+       "«Taakstraf» betekent straf met onbetaald werk.",
+       "«Bewijs» betekent gegevens die iets aantonen.",
+       "«Rechter» betekent velt het oordeel.",
+       "Klopt, «Verdachte» past hierbij."
+      ],
+      "uh": "Onthoud: «Verdachte» = wordt beschuldigd."
+     },
+     {
+      "v": "Wat betekent «Overtreding»?",
+      "o": [
+       "een licht strafbaar feit, zoals te hard rijden",
+       "een ernstig strafbaar feit, zoals diefstal of geweld",
+       "je bent onschuldig tot het tegendeel bewezen is",
+       "een straf waarbij je onbetaald werk moet doen"
+      ],
+      "c": 0,
+      "d": 1,
+      "u": "«Overtreding»: een licht strafbaar feit, zoals te hard rijden.",
+      "uo": [
+       "Klopt: licht strafbaar feit.",
+       "Dat is «Misdrijf».",
+       "Dat is «Onschuldpresumptie».",
+       "Dat is «Taakstraf»."
+      ],
+      "uh": "Onthoud: «Overtreding» = licht strafbaar feit."
+     },
+     {
+      "v": "Welk begrip hoort bij: \"degene die een oordeel velt en de straf bepaalt\"?",
+      "o": [
+       "Officier van justitie",
+       "Rechter",
+       "Advocaat",
+       "Preventie"
+      ],
+      "c": 1,
+      "d": 3,
+      "u": "«Rechter»: degene die een oordeel velt en de straf bepaalt.",
+      "uo": [
+       "«Officier van justitie» betekent de aanklager.",
+       "Klopt, dit is «Rechter».",
+       "«Advocaat» betekent verdedigt de verdachte.",
+       "«Preventie» betekent criminaliteit voorkomen."
+      ],
+      "uh": "Onthoud: «Rechter» = velt het oordeel."
+     },
+     {
+      "v": "Welke term hoort bij \"velt het oordeel\"?",
+      "o": [
+       "Preventie",
+       "Verdachte",
+       "Rechter",
+       "Strafproces"
+      ],
+      "c": 2,
+      "d": 2,
+      "u": "«Rechter»: degene die een oordeel velt en de straf bepaalt.",
+      "uo": [
+       "«Preventie» betekent criminaliteit voorkomen.",
+       "«Verdachte» betekent wordt beschuldigd.",
+       "Klopt, «Rechter» past hierbij.",
+       "«Strafproces» betekent rechtszaak over schuld."
+      ],
+      "uh": "Onthoud: «Rechter» = velt het oordeel."
+     },
+     {
+      "v": "Wat betekent «Officier van justitie»?",
+      "o": [
+       "degene die een oordeel velt en de straf bepaalt",
+       "iemand die een verdachte verdedigt",
+       "een ernstig strafbaar feit, zoals diefstal of geweld",
+       "de aanklager namens de staat"
+      ],
+      "c": 3,
+      "d": 1,
+      "u": "«Officier van justitie»: de aanklager namens de staat.",
+      "uo": [
+       "Dat is «Rechter».",
+       "Dat is «Advocaat».",
+       "Dat is «Misdrijf».",
+       "Klopt: de aanklager."
+      ],
+      "uh": "Onthoud: «Officier van justitie» = de aanklager."
+     },
+     {
+      "v": "Welk begrip hoort bij: \"iemand die een verdachte verdedigt\"?",
+      "o": [
+       "Advocaat",
+       "Officier van justitie",
+       "Rechter",
+       "Preventie"
+      ],
+      "c": 0,
+      "d": 3,
+      "u": "«Advocaat»: iemand die een verdachte verdedigt.",
+      "uo": [
+       "Klopt, dit is «Advocaat».",
+       "«Officier van justitie» betekent de aanklager.",
+       "«Rechter» betekent velt het oordeel.",
+       "«Preventie» betekent criminaliteit voorkomen."
+      ],
+      "uh": "Onthoud: «Advocaat» = verdedigt de verdachte."
+     },
+     {
+      "v": "Welke term hoort bij \"verdedigt de verdachte\"?",
+      "o": [
+       "Preventie",
+       "Advocaat",
+       "Verdachte",
+       "Onschuldpresumptie"
+      ],
+      "c": 1,
+      "d": 2,
+      "u": "«Advocaat»: iemand die een verdachte verdedigt.",
+      "uo": [
+       "«Preventie» betekent criminaliteit voorkomen.",
+       "Klopt, «Advocaat» past hierbij.",
+       "«Verdachte» betekent wordt beschuldigd.",
+       "«Onschuldpresumptie» betekent onschuldig tot bewezen."
+      ],
+      "uh": "Onthoud: «Advocaat» = verdedigt de verdachte."
+     },
+     {
+      "v": "Wat betekent «Advocaat»?",
+      "o": [
+       "de aanklager namens de staat",
+       "degene die een oordeel velt en de straf bepaalt",
+       "iemand die een verdachte verdedigt",
+       "het voorkomen van criminaliteit"
+      ],
+      "c": 2,
+      "d": 1,
+      "u": "«Advocaat»: iemand die een verdachte verdedigt.",
+      "uo": [
+       "Dat is «Officier van justitie».",
+       "Dat is «Rechter».",
+       "Klopt: verdedigt de verdachte.",
+       "Dat is «Preventie»."
+      ],
+      "uh": "Onthoud: «Advocaat» = verdedigt de verdachte."
+     },
+     {
+      "v": "Welk begrip hoort bij: \"de rechtszaak waarin over schuld en straf wordt beslist\"?",
+      "o": [
+       "Bewijs",
+       "Onschuldpresumptie",
+       "Taakstraf",
+       "Strafproces"
+      ],
+      "c": 3,
+      "d": 3,
+      "u": "«Strafproces»: de rechtszaak waarin over schuld en straf wordt beslist.",
+      "uo": [
+       "«Bewijs» betekent gegevens die iets aantonen.",
+       "«Onschuldpresumptie» betekent onschuldig tot bewezen.",
+       "«Taakstraf» betekent straf met onbetaald werk.",
+       "Klopt, dit is «Strafproces»."
+      ],
+      "uh": "Onthoud: «Strafproces» = rechtszaak over schuld."
+     },
+     {
+      "v": "Welke term hoort bij \"rechtszaak over schuld\"?",
+      "o": [
+       "Strafproces",
+       "Onschuldpresumptie",
+       "Taakstraf",
+       "Officier van justitie"
+      ],
+      "c": 0,
+      "d": 2,
+      "u": "«Strafproces»: de rechtszaak waarin over schuld en straf wordt beslist.",
+      "uo": [
+       "Klopt, «Strafproces» past hierbij.",
+       "«Onschuldpresumptie» betekent onschuldig tot bewezen.",
+       "«Taakstraf» betekent straf met onbetaald werk.",
+       "«Officier van justitie» betekent de aanklager."
+      ],
+      "uh": "Onthoud: «Strafproces» = rechtszaak over schuld."
+     },
+     {
+      "v": "Wat betekent «Bewijs»?",
+      "o": [
+       "de rechtszaak waarin over schuld en straf wordt beslist",
+       "gegevens die aantonen of iemand iets heeft gedaan",
+       "een staat waarin iedereen zich aan de wet houdt en rechten heeft",
+       "degene die een oordeel velt en de straf bepaalt"
+      ],
+      "c": 1,
+      "d": 1,
+      "u": "«Bewijs»: gegevens die aantonen of iemand iets heeft gedaan.",
+      "uo": [
+       "Dat is «Strafproces».",
+       "Klopt: gegevens die iets aantonen.",
+       "Dat is «Rechtsstaat».",
+       "Dat is «Rechter»."
+      ],
+      "uh": "Onthoud: «Bewijs» = gegevens die iets aantonen."
+     },
+     {
+      "v": "Welk begrip hoort bij: \"gegevens die aantonen of iemand iets heeft gedaan\"?",
+      "o": [
+       "Strafproces",
+       "Rechtsstaat",
+       "Bewijs",
+       "Rechter"
+      ],
+      "c": 2,
+      "d": 3,
+      "u": "«Bewijs»: gegevens die aantonen of iemand iets heeft gedaan.",
+      "uo": [
+       "«Strafproces» betekent rechtszaak over schuld.",
+       "«Rechtsstaat» betekent wet geldt voor iedereen.",
+       "Klopt, dit is «Bewijs».",
+       "«Rechter» betekent velt het oordeel."
+      ],
+      "uh": "Onthoud: «Bewijs» = gegevens die iets aantonen."
+     },
+     {
+      "v": "Welke term hoort bij \"gegevens die iets aantonen\"?",
+      "o": [
+       "Rechtsstaat",
+       "Rechter",
+       "Misdrijf",
+       "Bewijs"
+      ],
+      "c": 3,
+      "d": 2,
+      "u": "«Bewijs»: gegevens die aantonen of iemand iets heeft gedaan.",
+      "uo": [
+       "«Rechtsstaat» betekent wet geldt voor iedereen.",
+       "«Rechter» betekent velt het oordeel.",
+       "«Misdrijf» betekent ernstig strafbaar feit.",
+       "Klopt, «Bewijs» past hierbij."
+      ],
+      "uh": "Onthoud: «Bewijs» = gegevens die iets aantonen."
+     },
+     {
+      "v": "Wat betekent «Preventie»?",
+      "o": [
+       "het voorkomen van criminaliteit",
+       "het opnieuw plegen van een strafbaar feit",
+       "een straf waarbij je onbetaald werk moet doen",
+       "iemand die een verdachte verdedigt"
+      ],
+      "c": 0,
+      "d": 1,
+      "u": "«Preventie»: het voorkomen van criminaliteit.",
+      "uo": [
+       "Klopt: criminaliteit voorkomen.",
+       "Dat is «Recidive».",
+       "Dat is «Taakstraf».",
+       "Dat is «Advocaat»."
+      ],
+      "uh": "Onthoud: «Preventie» = criminaliteit voorkomen."
+     },
+     {
+      "v": "Welk begrip hoort bij: \"het voorkomen van criminaliteit\"?",
+      "o": [
+       "Recidive",
+       "Preventie",
+       "Taakstraf",
+       "Advocaat"
+      ],
+      "c": 1,
+      "d": 3,
+      "u": "«Preventie»: het voorkomen van criminaliteit.",
+      "uo": [
+       "«Recidive» betekent opnieuw de fout in.",
+       "Klopt, dit is «Preventie».",
+       "«Taakstraf» betekent straf met onbetaald werk.",
+       "«Advocaat» betekent verdedigt de verdachte."
+      ],
+      "uh": "Onthoud: «Preventie» = criminaliteit voorkomen."
+     },
+     {
+      "v": "Welke term hoort bij \"criminaliteit voorkomen\"?",
+      "o": [
+       "Taakstraf",
+       "Advocaat",
+       "Preventie",
+       "Officier van justitie"
+      ],
+      "c": 2,
+      "d": 2,
+      "u": "«Preventie»: het voorkomen van criminaliteit.",
+      "uo": [
+       "«Taakstraf» betekent straf met onbetaald werk.",
+       "«Advocaat» betekent verdedigt de verdachte.",
+       "Klopt, «Preventie» past hierbij.",
+       "«Officier van justitie» betekent de aanklager."
+      ],
+      "uh": "Onthoud: «Preventie» = criminaliteit voorkomen."
+     },
+     {
+      "v": "Wat betekent «Recidive»?",
+      "o": [
+       "het voorkomen van criminaliteit",
+       "een ernstig strafbaar feit, zoals diefstal of geweld",
+       "degene die een oordeel velt en de straf bepaalt",
+       "het opnieuw plegen van een strafbaar feit"
+      ],
+      "c": 3,
+      "d": 1,
+      "u": "«Recidive»: het opnieuw plegen van een strafbaar feit.",
+      "uo": [
+       "Dat is «Preventie».",
+       "Dat is «Misdrijf».",
+       "Dat is «Rechter».",
+       "Klopt: opnieuw de fout in."
+      ],
+      "uh": "Onthoud: «Recidive» = opnieuw de fout in."
+     },
+     {
+      "v": "Welk begrip hoort bij: \"het opnieuw plegen van een strafbaar feit\"?",
+      "o": [
+       "Recidive",
+       "Preventie",
+       "Misdrijf",
+       "Rechter"
+      ],
+      "c": 0,
+      "d": 3,
+      "u": "«Recidive»: het opnieuw plegen van een strafbaar feit.",
+      "uo": [
+       "Klopt, dit is «Recidive».",
+       "«Preventie» betekent criminaliteit voorkomen.",
+       "«Misdrijf» betekent ernstig strafbaar feit.",
+       "«Rechter» betekent velt het oordeel."
+      ],
+      "uh": "Onthoud: «Recidive» = opnieuw de fout in."
+     },
+     {
+      "v": "Welke term hoort bij \"opnieuw de fout in\"?",
+      "o": [
+       "Misdrijf",
+       "Recidive",
+       "Rechter",
+       "Verdachte"
+      ],
+      "c": 1,
+      "d": 2,
+      "u": "«Recidive»: het opnieuw plegen van een strafbaar feit.",
+      "uo": [
+       "«Misdrijf» betekent ernstig strafbaar feit.",
+       "Klopt, «Recidive» past hierbij.",
+       "«Rechter» betekent velt het oordeel.",
+       "«Verdachte» betekent wordt beschuldigd."
+      ],
+      "uh": "Onthoud: «Recidive» = opnieuw de fout in."
+     }
+    ],
+    "begrippen": [
+     {
+      "t": "Criminaliteit",
+      "d": "gedrag dat bij de wet verboden is"
+     },
+     {
+      "t": "Rechtsstaat",
+      "d": "een staat waarin iedereen zich aan de wet houdt en rechten heeft"
+     },
+     {
+      "t": "Misdrijf",
+      "d": "een ernstig strafbaar feit, zoals diefstal of geweld"
+     },
+     {
+      "t": "Overtreding",
+      "d": "een licht strafbaar feit, zoals te hard rijden"
+     },
+     {
+      "t": "Verdachte",
+      "d": "iemand die van een strafbaar feit wordt beschuldigd"
+     },
+     {
+      "t": "Officier van justitie",
+      "d": "de aanklager namens de staat"
+     },
+     {
+      "t": "Rechter",
+      "d": "degene die een oordeel velt en de straf bepaalt"
+     },
+     {
+      "t": "Advocaat",
+      "d": "iemand die een verdachte verdedigt"
+     },
+     {
+      "t": "Strafproces",
+      "d": "de rechtszaak waarin over schuld en straf wordt beslist"
+     },
+     {
+      "t": "Bewijs",
+      "d": "gegevens die aantonen of iemand iets heeft gedaan"
+     },
+     {
+      "t": "Preventie",
+      "d": "het voorkomen van criminaliteit"
+     },
+     {
+      "t": "Recidive",
+      "d": "het opnieuw plegen van een strafbaar feit"
+     },
+     {
+      "t": "Taakstraf",
+      "d": "een straf waarbij je onbetaald werk moet doen"
+     },
+     {
+      "t": "Onschuldpresumptie",
+      "d": "je bent onschuldig tot het tegendeel bewezen is"
+     }
+    ],
+    "sam": "<p>In een <b>rechtsstaat</b> gelden voor iedereen dezelfde regels en rechten. <b>Criminaliteit</b> bestaat uit <b>misdrijven</b> en <b>overtredingen</b>. In een <b>strafproces</b> klaagt de <b>officier van justitie</b> aan, verdedigt de <b>advocaat</b> de <b>verdachte</b> en oordeelt de <b>rechter</b>.</p>"
    },
    {
     "id": "E",
@@ -13341,7 +24313,554 @@ var VAKKEN_VMBO = [
     ],
     "nSv": 0,
     "nOe": 0,
-    "nBeg": 0
+    "nBeg": 0,
+    "sv": [
+     {
+      "v": "Welk begrip hoort bij: \"media die veel mensen tegelijk bereiken\"?",
+      "o": [
+       "Massamedia",
+       "Sociale media",
+       "Amuserende functie",
+       "Informerende functie"
+      ],
+      "c": 0,
+      "d": 3,
+      "u": "«Massamedia»: media die veel mensen tegelijk bereiken.",
+      "uo": [
+       "Klopt, dit is «Massamedia».",
+       "«Sociale media» betekent netwerken om te delen.",
+       "«Amuserende functie» betekent het publiek vermaken.",
+       "«Informerende functie» betekent nieuws geven."
+      ],
+      "uh": "Onthoud: «Massamedia» = bereiken velen tegelijk."
+     },
+     {
+      "v": "Welke term hoort bij \"bereiken velen tegelijk\"?",
+      "o": [
+       "Amuserende functie",
+       "Massamedia",
+       "Informerende functie",
+       "Censuur"
+      ],
+      "c": 1,
+      "d": 2,
+      "u": "«Massamedia»: media die veel mensen tegelijk bereiken.",
+      "uo": [
+       "«Amuserende functie» betekent het publiek vermaken.",
+       "Klopt, «Massamedia» past hierbij.",
+       "«Informerende functie» betekent nieuws geven.",
+       "«Censuur» betekent informatie tegenhouden."
+      ],
+      "uh": "Onthoud: «Massamedia» = bereiken velen tegelijk."
+     },
+     {
+      "v": "Wat betekent «Massamedia»?",
+      "o": [
+       "online netwerken waarop mensen zelf berichten delen",
+       "het vermaken van het publiek",
+       "media die veel mensen tegelijk bereiken",
+       "het geven van nieuws en informatie"
+      ],
+      "c": 2,
+      "d": 1,
+      "u": "«Massamedia»: media die veel mensen tegelijk bereiken.",
+      "uo": [
+       "Dat is «Sociale media».",
+       "Dat is «Amuserende functie».",
+       "Klopt: bereiken velen tegelijk.",
+       "Dat is «Informerende functie»."
+      ],
+      "uh": "Onthoud: «Massamedia» = bereiken velen tegelijk."
+     },
+     {
+      "v": "Welk begrip hoort bij: \"het vermaken van het publiek\"?",
+      "o": [
+       "Informerende functie",
+       "Opiniërende functie",
+       "Beeldvorming",
+       "Amuserende functie"
+      ],
+      "c": 3,
+      "d": 3,
+      "u": "«Amuserende functie»: het vermaken van het publiek.",
+      "uo": [
+       "«Informerende functie» betekent nieuws geven.",
+       "«Opiniërende functie» betekent meningen geven.",
+       "«Beeldvorming» betekent het opgeroepen beeld.",
+       "Klopt, dit is «Amuserende functie»."
+      ],
+      "uh": "Onthoud: «Amuserende functie» = het publiek vermaken."
+     },
+     {
+      "v": "Welke term hoort bij \"het opgeroepen beeld\"?",
+      "o": [
+       "Beeldvorming",
+       "Persvrijheid",
+       "Censuur",
+       "Massamedia"
+      ],
+      "c": 0,
+      "d": 2,
+      "u": "«Beeldvorming»: het beeld dat media van iets of iemand oproepen.",
+      "uo": [
+       "Klopt, «Beeldvorming» past hierbij.",
+       "«Persvrijheid» betekent vrij mogen publiceren.",
+       "«Censuur» betekent informatie tegenhouden.",
+       "«Massamedia» betekent bereiken velen tegelijk."
+      ],
+      "uh": "Onthoud: «Beeldvorming» = het opgeroepen beeld."
+     },
+     {
+      "v": "Wat betekent «Informerende functie»?",
+      "o": [
+       "het vermaken van het publiek",
+       "het geven van nieuws en informatie",
+       "het geven van meningen",
+       "het onbevooroordeeld weergeven van feiten"
+      ],
+      "c": 1,
+      "d": 1,
+      "u": "«Informerende functie»: het geven van nieuws en informatie.",
+      "uo": [
+       "Dat is «Amuserende functie».",
+       "Klopt: nieuws geven.",
+       "Dat is «Opiniërende functie».",
+       "Dat is «Objectiviteit»."
+      ],
+      "uh": "Onthoud: «Informerende functie» = nieuws geven."
+     },
+     {
+      "v": "Welk begrip hoort bij: \"het geven van meningen\"?",
+      "o": [
+       "Informerende functie",
+       "Amuserende functie",
+       "Opiniërende functie",
+       "Censuur"
+      ],
+      "c": 2,
+      "d": 3,
+      "u": "«Opiniërende functie»: het geven van meningen.",
+      "uo": [
+       "«Informerende functie» betekent nieuws geven.",
+       "«Amuserende functie» betekent het publiek vermaken.",
+       "Klopt, dit is «Opiniërende functie».",
+       "«Censuur» betekent informatie tegenhouden."
+      ],
+      "uh": "Onthoud: «Opiniërende functie» = meningen geven."
+     },
+     {
+      "v": "Welke term hoort bij \"mening bewust sturen\"?",
+      "o": [
+       "Censuur",
+       "Opiniërende functie",
+       "Massamedia",
+       "Manipulatie"
+      ],
+      "c": 3,
+      "d": 2,
+      "u": "«Manipulatie»: het bewust sturen van iemands mening.",
+      "uo": [
+       "«Censuur» betekent informatie tegenhouden.",
+       "«Opiniërende functie» betekent meningen geven.",
+       "«Massamedia» betekent bereiken velen tegelijk.",
+       "Klopt, «Manipulatie» past hierbij."
+      ],
+      "uh": "Onthoud: «Manipulatie» = mening bewust sturen."
+     },
+     {
+      "v": "Wat betekent «Amuserende functie»?",
+      "o": [
+       "het vermaken van het publiek",
+       "het geven van nieuws en informatie",
+       "het geven van meningen",
+       "het beeld dat media van iets of iemand oproepen"
+      ],
+      "c": 0,
+      "d": 1,
+      "u": "«Amuserende functie»: het vermaken van het publiek.",
+      "uo": [
+       "Klopt: het publiek vermaken.",
+       "Dat is «Informerende functie».",
+       "Dat is «Opiniërende functie».",
+       "Dat is «Beeldvorming»."
+      ],
+      "uh": "Onthoud: «Amuserende functie» = het publiek vermaken."
+     },
+     {
+      "v": "Welk begrip hoort bij: \"het beeld dat media van iets of iemand oproepen\"?",
+      "o": [
+       "Manipulatie",
+       "Beeldvorming",
+       "Persvrijheid",
+       "Censuur"
+      ],
+      "c": 1,
+      "d": 3,
+      "u": "«Beeldvorming»: het beeld dat media van iets of iemand oproepen.",
+      "uo": [
+       "«Manipulatie» betekent mening bewust sturen.",
+       "Klopt, dit is «Beeldvorming».",
+       "«Persvrijheid» betekent vrij mogen publiceren.",
+       "«Censuur» betekent informatie tegenhouden."
+      ],
+      "uh": "Onthoud: «Beeldvorming» = het opgeroepen beeld."
+     },
+     {
+      "v": "Welke term hoort bij \"informatie tegenhouden\"?",
+      "o": [
+       "Manipulatie",
+       "Opiniërende functie",
+       "Censuur",
+       "Nepnieuws"
+      ],
+      "c": 2,
+      "d": 2,
+      "u": "«Censuur»: het tegenhouden of aanpassen van informatie.",
+      "uo": [
+       "«Manipulatie» betekent mening bewust sturen.",
+       "«Opiniërende functie» betekent meningen geven.",
+       "Klopt, «Censuur» past hierbij.",
+       "«Nepnieuws» betekent nep als echt nieuws."
+      ],
+      "uh": "Onthoud: «Censuur» = informatie tegenhouden."
+     },
+     {
+      "v": "Wat betekent «Opiniërende functie»?",
+      "o": [
+       "het geven van nieuws en informatie",
+       "het vermaken van het publiek",
+       "het tegenhouden of aanpassen van informatie",
+       "het geven van meningen"
+      ],
+      "c": 3,
+      "d": 1,
+      "u": "«Opiniërende functie»: het geven van meningen.",
+      "uo": [
+       "Dat is «Informerende functie».",
+       "Dat is «Amuserende functie».",
+       "Dat is «Censuur».",
+       "Klopt: meningen geven."
+      ],
+      "uh": "Onthoud: «Opiniërende functie» = meningen geven."
+     },
+     {
+      "v": "Welk begrip hoort bij: \"het bewust sturen van iemands mening\"?",
+      "o": [
+       "Manipulatie",
+       "Beeldvorming",
+       "Censuur",
+       "Opiniërende functie"
+      ],
+      "c": 0,
+      "d": 3,
+      "u": "«Manipulatie»: het bewust sturen van iemands mening.",
+      "uo": [
+       "Klopt, dit is «Manipulatie».",
+       "«Beeldvorming» betekent het opgeroepen beeld.",
+       "«Censuur» betekent informatie tegenhouden.",
+       "«Opiniërende functie» betekent meningen geven."
+      ],
+      "uh": "Onthoud: «Manipulatie» = mening bewust sturen."
+     },
+     {
+      "v": "Welke term hoort bij \"vrij mogen publiceren\"?",
+      "o": [
+       "Manipulatie",
+       "Persvrijheid",
+       "Beeldvorming",
+       "Massamedia"
+      ],
+      "c": 1,
+      "d": 2,
+      "u": "«Persvrijheid»: het recht van media om vrij te publiceren.",
+      "uo": [
+       "«Manipulatie» betekent mening bewust sturen.",
+       "Klopt, «Persvrijheid» past hierbij.",
+       "«Beeldvorming» betekent het opgeroepen beeld.",
+       "«Massamedia» betekent bereiken velen tegelijk."
+      ],
+      "uh": "Onthoud: «Persvrijheid» = vrij mogen publiceren."
+     },
+     {
+      "v": "Wat betekent «Manipulatie»?",
+      "o": [
+       "het beeld dat media van iets of iemand oproepen",
+       "het tegenhouden of aanpassen van informatie",
+       "het bewust sturen van iemands mening",
+       "het geven van meningen"
+      ],
+      "c": 2,
+      "d": 1,
+      "u": "«Manipulatie»: het bewust sturen van iemands mening.",
+      "uo": [
+       "Dat is «Beeldvorming».",
+       "Dat is «Censuur».",
+       "Klopt: mening bewust sturen.",
+       "Dat is «Opiniërende functie»."
+      ],
+      "uh": "Onthoud: «Manipulatie» = mening bewust sturen."
+     },
+     {
+      "v": "Welk begrip hoort bij: \"het tegenhouden of aanpassen van informatie\"?",
+      "o": [
+       "Persvrijheid",
+       "Manipulatie",
+       "Opiniërende functie",
+       "Censuur"
+      ],
+      "c": 3,
+      "d": 3,
+      "u": "«Censuur»: het tegenhouden of aanpassen van informatie.",
+      "uo": [
+       "«Persvrijheid» betekent vrij mogen publiceren.",
+       "«Manipulatie» betekent mening bewust sturen.",
+       "«Opiniërende functie» betekent meningen geven.",
+       "Klopt, dit is «Censuur»."
+      ],
+      "uh": "Onthoud: «Censuur» = informatie tegenhouden."
+     },
+     {
+      "v": "Welke term hoort bij \"zet aan tot kopen\"?",
+      "o": [
+       "Reclame",
+       "Manipulatie",
+       "Opiniërende functie",
+       "Sociale media"
+      ],
+      "c": 0,
+      "d": 2,
+      "u": "«Reclame»: een boodschap om mensen tot kopen aan te zetten.",
+      "uo": [
+       "Klopt, «Reclame» past hierbij.",
+       "«Manipulatie» betekent mening bewust sturen.",
+       "«Opiniërende functie» betekent meningen geven.",
+       "«Sociale media» betekent netwerken om te delen."
+      ],
+      "uh": "Onthoud: «Reclame» = zet aan tot kopen."
+     },
+     {
+      "v": "Wat betekent «Persvrijheid»?",
+      "o": [
+       "het tegenhouden of aanpassen van informatie",
+       "het recht van media om vrij te publiceren",
+       "het bewust sturen van iemands mening",
+       "het beeld dat media van iets of iemand oproepen"
+      ],
+      "c": 1,
+      "d": 1,
+      "u": "«Persvrijheid»: het recht van media om vrij te publiceren.",
+      "uo": [
+       "Dat is «Censuur».",
+       "Klopt: vrij mogen publiceren.",
+       "Dat is «Manipulatie».",
+       "Dat is «Beeldvorming»."
+      ],
+      "uh": "Onthoud: «Persvrijheid» = vrij mogen publiceren."
+     },
+     {
+      "v": "Welk begrip hoort bij: \"het recht van media om vrij te publiceren\"?",
+      "o": [
+       "Censuur",
+       "Manipulatie",
+       "Persvrijheid",
+       "Beeldvorming"
+      ],
+      "c": 2,
+      "d": 3,
+      "u": "«Persvrijheid»: het recht van media om vrij te publiceren.",
+      "uo": [
+       "«Censuur» betekent informatie tegenhouden.",
+       "«Manipulatie» betekent mening bewust sturen.",
+       "Klopt, dit is «Persvrijheid».",
+       "«Beeldvorming» betekent het opgeroepen beeld."
+      ],
+      "uh": "Onthoud: «Persvrijheid» = vrij mogen publiceren."
+     },
+     {
+      "v": "Welke term hoort bij \"netwerken om te delen\"?",
+      "o": [
+       "Persvrijheid",
+       "Nepnieuws",
+       "Informerende functie",
+       "Sociale media"
+      ],
+      "c": 3,
+      "d": 2,
+      "u": "«Sociale media»: online netwerken waarop mensen zelf berichten delen.",
+      "uo": [
+       "«Persvrijheid» betekent vrij mogen publiceren.",
+       "«Nepnieuws» betekent nep als echt nieuws.",
+       "«Informerende functie» betekent nieuws geven.",
+       "Klopt, «Sociale media» past hierbij."
+      ],
+      "uh": "Onthoud: «Sociale media» = netwerken om te delen."
+     },
+     {
+      "v": "Wat betekent «Objectiviteit»?",
+      "o": [
+       "het onbevooroordeeld weergeven van feiten",
+       "het bewust sturen van iemands mening",
+       "het recht van media om vrij te publiceren",
+       "onjuiste berichten die als echt nieuws worden verspreid"
+      ],
+      "c": 0,
+      "d": 1,
+      "u": "«Objectiviteit»: het onbevooroordeeld weergeven van feiten.",
+      "uo": [
+       "Klopt: onbevooroordeeld weergeven.",
+       "Dat is «Manipulatie».",
+       "Dat is «Persvrijheid».",
+       "Dat is «Nepnieuws»."
+      ],
+      "uh": "Onthoud: «Objectiviteit» = onbevooroordeeld weergeven."
+     },
+     {
+      "v": "Welk begrip hoort bij: \"een boodschap om mensen tot kopen aan te zetten\"?",
+      "o": [
+       "Nepnieuws",
+       "Reclame",
+       "Manipulatie",
+       "Opiniërende functie"
+      ],
+      "c": 1,
+      "d": 3,
+      "u": "«Reclame»: een boodschap om mensen tot kopen aan te zetten.",
+      "uo": [
+       "«Nepnieuws» betekent nep als echt nieuws.",
+       "Klopt, dit is «Reclame».",
+       "«Manipulatie» betekent mening bewust sturen.",
+       "«Opiniërende functie» betekent meningen geven."
+      ],
+      "uh": "Onthoud: «Reclame» = zet aan tot kopen."
+     },
+     {
+      "v": "Welke term hoort bij \"nep als echt nieuws\"?",
+      "o": [
+       "Reclame",
+       "Censuur",
+       "Nepnieuws",
+       "Persvrijheid"
+      ],
+      "c": 2,
+      "d": 2,
+      "u": "«Nepnieuws»: onjuiste berichten die als echt nieuws worden verspreid.",
+      "uo": [
+       "«Reclame» betekent zet aan tot kopen.",
+       "«Censuur» betekent informatie tegenhouden.",
+       "Klopt, «Nepnieuws» past hierbij.",
+       "«Persvrijheid» betekent vrij mogen publiceren."
+      ],
+      "uh": "Onthoud: «Nepnieuws» = nep als echt nieuws."
+     },
+     {
+      "v": "Wat betekent «Reclame»?",
+      "o": [
+       "onjuiste berichten die als echt nieuws worden verspreid",
+       "het bewust sturen van iemands mening",
+       "het geven van meningen",
+       "een boodschap om mensen tot kopen aan te zetten"
+      ],
+      "c": 3,
+      "d": 1,
+      "u": "«Reclame»: een boodschap om mensen tot kopen aan te zetten.",
+      "uo": [
+       "Dat is «Nepnieuws».",
+       "Dat is «Manipulatie».",
+       "Dat is «Opiniërende functie».",
+       "Klopt: zet aan tot kopen."
+      ],
+      "uh": "Onthoud: «Reclame» = zet aan tot kopen."
+     },
+     {
+      "v": "Welk begrip hoort bij: \"onjuiste berichten die als echt nieuws worden verspreid\"?",
+      "o": [
+       "Nepnieuws",
+       "Manipulatie",
+       "Reclame",
+       "Censuur"
+      ],
+      "c": 0,
+      "d": 3,
+      "u": "«Nepnieuws»: onjuiste berichten die als echt nieuws worden verspreid.",
+      "uo": [
+       "Klopt, dit is «Nepnieuws».",
+       "«Manipulatie» betekent mening bewust sturen.",
+       "«Reclame» betekent zet aan tot kopen.",
+       "«Censuur» betekent informatie tegenhouden."
+      ],
+      "uh": "Onthoud: «Nepnieuws» = nep als echt nieuws."
+     },
+     {
+      "v": "Wat betekent «Sociale media»?",
+      "o": [
+       "media die veel mensen tegelijk bereiken",
+       "online netwerken waarop mensen zelf berichten delen",
+       "het recht van media om vrij te publiceren",
+       "onjuiste berichten die als echt nieuws worden verspreid"
+      ],
+      "c": 1,
+      "d": 1,
+      "u": "«Sociale media»: online netwerken waarop mensen zelf berichten delen.",
+      "uo": [
+       "Dat is «Massamedia».",
+       "Klopt: netwerken om te delen.",
+       "Dat is «Persvrijheid».",
+       "Dat is «Nepnieuws»."
+      ],
+      "uh": "Onthoud: «Sociale media» = netwerken om te delen."
+     }
+    ],
+    "begrippen": [
+     {
+      "t": "Massamedia",
+      "d": "media die veel mensen tegelijk bereiken"
+     },
+     {
+      "t": "Informerende functie",
+      "d": "het geven van nieuws en informatie"
+     },
+     {
+      "t": "Amuserende functie",
+      "d": "het vermaken van het publiek"
+     },
+     {
+      "t": "Opiniërende functie",
+      "d": "het geven van meningen"
+     },
+     {
+      "t": "Beeldvorming",
+      "d": "het beeld dat media van iets of iemand oproepen"
+     },
+     {
+      "t": "Manipulatie",
+      "d": "het bewust sturen van iemands mening"
+     },
+     {
+      "t": "Censuur",
+      "d": "het tegenhouden of aanpassen van informatie"
+     },
+     {
+      "t": "Persvrijheid",
+      "d": "het recht van media om vrij te publiceren"
+     },
+     {
+      "t": "Objectiviteit",
+      "d": "het onbevooroordeeld weergeven van feiten"
+     },
+     {
+      "t": "Reclame",
+      "d": "een boodschap om mensen tot kopen aan te zetten"
+     },
+     {
+      "t": "Sociale media",
+      "d": "online netwerken waarop mensen zelf berichten delen"
+     },
+     {
+      "t": "Nepnieuws",
+      "d": "onjuiste berichten die als echt nieuws worden verspreid"
+     }
+    ],
+    "sam": "<p><b>Massamedia</b> bereiken veel mensen tegelijk en hebben een <b>informerende</b>, <b>amuserende</b> en <b>opiniërende</b> functie. Media bepalen mede de <b>beeldvorming</b>; door <b>manipulatie</b> of <b>nepnieuws</b> kan die worden gestuurd. <b>Persvrijheid</b> beschermt het vrij publiceren.</p>"
    },
    {
     "id": "F",
@@ -13355,7 +24874,554 @@ var VAKKEN_VMBO = [
     ],
     "nSv": 0,
     "nOe": 0,
-    "nBeg": 0
+    "nBeg": 0,
+    "sv": [
+     {
+      "v": "Welk begrip hoort bij: \"het steeds meer gebruiken van computers en internet\"?",
+      "o": [
+       "Digitalisering",
+       "Digitale kloof",
+       "Datalek",
+       "Toestemming"
+      ],
+      "c": 0,
+      "d": 3,
+      "u": "«Digitalisering»: het steeds meer gebruiken van computers en internet.",
+      "uo": [
+       "Klopt, dit is «Digitalisering».",
+       "«Digitale kloof» betekent kloof in digitale kennis.",
+       "«Datalek» betekent gegevens komen vrij.",
+       "«Toestemming» betekent akkoord voor gebruik."
+      ],
+      "uh": "Onthoud: «Digitalisering» = meer computers en internet."
+     },
+     {
+      "v": "Welke term hoort bij \"meer computers en internet\"?",
+      "o": [
+       "Datalek",
+       "Digitalisering",
+       "Toestemming",
+       "Cybercriminaliteit"
+      ],
+      "c": 1,
+      "d": 2,
+      "u": "«Digitalisering»: het steeds meer gebruiken van computers en internet.",
+      "uo": [
+       "«Datalek» betekent gegevens komen vrij.",
+       "Klopt, «Digitalisering» past hierbij.",
+       "«Toestemming» betekent akkoord voor gebruik.",
+       "«Cybercriminaliteit» betekent misdaad via internet."
+      ],
+      "uh": "Onthoud: «Digitalisering» = meer computers en internet."
+     },
+     {
+      "v": "Wat betekent «Digitalisering»?",
+      "o": [
+       "het verschil tussen wie wel en niet met techniek overweg kan",
+       "het per ongeluk vrijkomen van persoonsgegevens",
+       "het steeds meer gebruiken van computers en internet",
+       "het akkoord geven voor het gebruik van je gegevens"
+      ],
+      "c": 2,
+      "d": 1,
+      "u": "«Digitalisering»: het steeds meer gebruiken van computers en internet.",
+      "uo": [
+       "Dat is «Digitale kloof».",
+       "Dat is «Datalek».",
+       "Klopt: meer computers en internet.",
+       "Dat is «Toestemming»."
+      ],
+      "uh": "Onthoud: «Digitalisering» = meer computers en internet."
+     },
+     {
+      "v": "Welk begrip hoort bij: \"het recht om zelf te bepalen wat anderen over je weten\"?",
+      "o": [
+       "Persoonsgegevens",
+       "Cybercriminaliteit",
+       "Algoritme",
+       "Privacy"
+      ],
+      "c": 3,
+      "d": 3,
+      "u": "«Privacy»: het recht om zelf te bepalen wat anderen over je weten.",
+      "uo": [
+       "«Persoonsgegevens» betekent informatie over een persoon.",
+       "«Cybercriminaliteit» betekent misdaad via internet.",
+       "«Algoritme» betekent rekenregels van een computer.",
+       "Klopt, dit is «Privacy»."
+      ],
+      "uh": "Onthoud: «Privacy» = controle over je gegevens."
+     },
+     {
+      "v": "Welke term hoort bij \"controle over je gegevens\"?",
+      "o": [
+       "Privacy",
+       "Cybercriminaliteit",
+       "Algoritme",
+       "Toestemming"
+      ],
+      "c": 0,
+      "d": 2,
+      "u": "«Privacy»: het recht om zelf te bepalen wat anderen over je weten.",
+      "uo": [
+       "Klopt, «Privacy» past hierbij.",
+       "«Cybercriminaliteit» betekent misdaad via internet.",
+       "«Algoritme» betekent rekenregels van een computer.",
+       "«Toestemming» betekent akkoord voor gebruik."
+      ],
+      "uh": "Onthoud: «Privacy» = controle over je gegevens."
+     },
+     {
+      "v": "Wat betekent «Sociale media»?",
+      "o": [
+       "het alleen zien van informatie die bij je past",
+       "online netwerken om berichten te delen",
+       "criminaliteit via computers en internet",
+       "het akkoord geven voor het gebruik van je gegevens"
+      ],
+      "c": 1,
+      "d": 1,
+      "u": "«Sociale media»: online netwerken om berichten te delen.",
+      "uo": [
+       "Dat is «Filterbubbel».",
+       "Klopt: netwerken om te delen.",
+       "Dat is «Cybercriminaliteit».",
+       "Dat is «Toestemming»."
+      ],
+      "uh": "Onthoud: «Sociale media» = netwerken om te delen."
+     },
+     {
+      "v": "Welk begrip hoort bij: \"online netwerken om berichten te delen\"?",
+      "o": [
+       "Filterbubbel",
+       "Cybercriminaliteit",
+       "Sociale media",
+       "Toestemming"
+      ],
+      "c": 2,
+      "d": 3,
+      "u": "«Sociale media»: online netwerken om berichten te delen.",
+      "uo": [
+       "«Filterbubbel» betekent alleen wat bij je past.",
+       "«Cybercriminaliteit» betekent misdaad via internet.",
+       "Klopt, dit is «Sociale media».",
+       "«Toestemming» betekent akkoord voor gebruik."
+      ],
+      "uh": "Onthoud: «Sociale media» = netwerken om te delen."
+     },
+     {
+      "v": "Welke term hoort bij \"netwerken om te delen\"?",
+      "o": [
+       "Cybercriminaliteit",
+       "Toestemming",
+       "Digitalisering",
+       "Sociale media"
+      ],
+      "c": 3,
+      "d": 2,
+      "u": "«Sociale media»: online netwerken om berichten te delen.",
+      "uo": [
+       "«Cybercriminaliteit» betekent misdaad via internet.",
+       "«Toestemming» betekent akkoord voor gebruik.",
+       "«Digitalisering» betekent meer computers en internet.",
+       "Klopt, «Sociale media» past hierbij."
+      ],
+      "uh": "Onthoud: «Sociale media» = netwerken om te delen."
+     },
+     {
+      "v": "Wat betekent «Persoonsgegevens»?",
+      "o": [
+       "informatie die over een persoon gaat",
+       "het recht om zelf te bepalen wat anderen over je weten",
+       "het recht van een maker op zijn eigen werk",
+       "het onbekend blijven van je identiteit"
+      ],
+      "c": 0,
+      "d": 1,
+      "u": "«Persoonsgegevens»: informatie die over een persoon gaat.",
+      "uo": [
+       "Klopt: informatie over een persoon.",
+       "Dat is «Privacy».",
+       "Dat is «Auteursrecht».",
+       "Dat is «Anonimiteit»."
+      ],
+      "uh": "Onthoud: «Persoonsgegevens» = informatie over een persoon."
+     },
+     {
+      "v": "Welk begrip hoort bij: \"het per ongeluk vrijkomen van persoonsgegevens\"?",
+      "o": [
+       "Cybercriminaliteit",
+       "Datalek",
+       "Digitale kloof",
+       "Persoonsgegevens"
+      ],
+      "c": 1,
+      "d": 3,
+      "u": "«Datalek»: het per ongeluk vrijkomen van persoonsgegevens.",
+      "uo": [
+       "«Cybercriminaliteit» betekent misdaad via internet.",
+       "Klopt, dit is «Datalek».",
+       "«Digitale kloof» betekent kloof in digitale kennis.",
+       "«Persoonsgegevens» betekent informatie over een persoon."
+      ],
+      "uh": "Onthoud: «Datalek» = gegevens komen vrij."
+     },
+     {
+      "v": "Welke term hoort bij \"gegevens komen vrij\"?",
+      "o": [
+       "Digitale kloof",
+       "Persoonsgegevens",
+       "Datalek",
+       "Toestemming"
+      ],
+      "c": 2,
+      "d": 2,
+      "u": "«Datalek»: het per ongeluk vrijkomen van persoonsgegevens.",
+      "uo": [
+       "«Digitale kloof» betekent kloof in digitale kennis.",
+       "«Persoonsgegevens» betekent informatie over een persoon.",
+       "Klopt, «Datalek» past hierbij.",
+       "«Toestemming» betekent akkoord voor gebruik."
+      ],
+      "uh": "Onthoud: «Datalek» = gegevens komen vrij."
+     },
+     {
+      "v": "Wat betekent «Datalek»?",
+      "o": [
+       "criminaliteit via computers en internet",
+       "het verschil tussen wie wel en niet met techniek overweg kan",
+       "informatie die over een persoon gaat",
+       "het per ongeluk vrijkomen van persoonsgegevens"
+      ],
+      "c": 3,
+      "d": 1,
+      "u": "«Datalek»: het per ongeluk vrijkomen van persoonsgegevens.",
+      "uo": [
+       "Dat is «Cybercriminaliteit».",
+       "Dat is «Digitale kloof».",
+       "Dat is «Persoonsgegevens».",
+       "Klopt: gegevens komen vrij."
+      ],
+      "uh": "Onthoud: «Datalek» = gegevens komen vrij."
+     },
+     {
+      "v": "Welk begrip hoort bij: \"een set regels waarmee een computer keuzes maakt\"?",
+      "o": [
+       "Algoritme",
+       "Filterbubbel",
+       "Auteursrecht",
+       "Digitale kloof"
+      ],
+      "c": 0,
+      "d": 3,
+      "u": "«Algoritme»: een set regels waarmee een computer keuzes maakt.",
+      "uo": [
+       "Klopt, dit is «Algoritme».",
+       "«Filterbubbel» betekent alleen wat bij je past.",
+       "«Auteursrecht» betekent recht van de maker.",
+       "«Digitale kloof» betekent kloof in digitale kennis."
+      ],
+      "uh": "Onthoud: «Algoritme» = rekenregels van een computer."
+     },
+     {
+      "v": "Welke term hoort bij \"rekenregels van een computer\"?",
+      "o": [
+       "Auteursrecht",
+       "Algoritme",
+       "Digitale kloof",
+       "Cybercriminaliteit"
+      ],
+      "c": 1,
+      "d": 2,
+      "u": "«Algoritme»: een set regels waarmee een computer keuzes maakt.",
+      "uo": [
+       "«Auteursrecht» betekent recht van de maker.",
+       "Klopt, «Algoritme» past hierbij.",
+       "«Digitale kloof» betekent kloof in digitale kennis.",
+       "«Cybercriminaliteit» betekent misdaad via internet."
+      ],
+      "uh": "Onthoud: «Algoritme» = rekenregels van een computer."
+     },
+     {
+      "v": "Wat betekent «Algoritme»?",
+      "o": [
+       "het alleen zien van informatie die bij je past",
+       "het recht van een maker op zijn eigen werk",
+       "een set regels waarmee een computer keuzes maakt",
+       "het verschil tussen wie wel en niet met techniek overweg kan"
+      ],
+      "c": 2,
+      "d": 1,
+      "u": "«Algoritme»: een set regels waarmee een computer keuzes maakt.",
+      "uo": [
+       "Dat is «Filterbubbel».",
+       "Dat is «Auteursrecht».",
+       "Klopt: rekenregels van een computer.",
+       "Dat is «Digitale kloof»."
+      ],
+      "uh": "Onthoud: «Algoritme» = rekenregels van een computer."
+     },
+     {
+      "v": "Welk begrip hoort bij: \"het verschil tussen wie wel en niet met techniek overweg kan\"?",
+      "o": [
+       "Digitalisering",
+       "Datalek",
+       "Toestemming",
+       "Digitale kloof"
+      ],
+      "c": 3,
+      "d": 3,
+      "u": "«Digitale kloof»: het verschil tussen wie wel en niet met techniek overweg kan.",
+      "uo": [
+       "«Digitalisering» betekent meer computers en internet.",
+       "«Datalek» betekent gegevens komen vrij.",
+       "«Toestemming» betekent akkoord voor gebruik.",
+       "Klopt, dit is «Digitale kloof»."
+      ],
+      "uh": "Onthoud: «Digitale kloof» = kloof in digitale kennis."
+     },
+     {
+      "v": "Welke term hoort bij \"kloof in digitale kennis\"?",
+      "o": [
+       "Digitale kloof",
+       "Datalek",
+       "Toestemming",
+       "Cybercriminaliteit"
+      ],
+      "c": 0,
+      "d": 2,
+      "u": "«Digitale kloof»: het verschil tussen wie wel en niet met techniek overweg kan.",
+      "uo": [
+       "Klopt, «Digitale kloof» past hierbij.",
+       "«Datalek» betekent gegevens komen vrij.",
+       "«Toestemming» betekent akkoord voor gebruik.",
+       "«Cybercriminaliteit» betekent misdaad via internet."
+      ],
+      "uh": "Onthoud: «Digitale kloof» = kloof in digitale kennis."
+     },
+     {
+      "v": "Wat betekent «Cybercriminaliteit»?",
+      "o": [
+       "het per ongeluk vrijkomen van persoonsgegevens",
+       "criminaliteit via computers en internet",
+       "online netwerken om berichten te delen",
+       "het akkoord geven voor het gebruik van je gegevens"
+      ],
+      "c": 1,
+      "d": 1,
+      "u": "«Cybercriminaliteit»: criminaliteit via computers en internet.",
+      "uo": [
+       "Dat is «Datalek».",
+       "Klopt: misdaad via internet.",
+       "Dat is «Sociale media».",
+       "Dat is «Toestemming»."
+      ],
+      "uh": "Onthoud: «Cybercriminaliteit» = misdaad via internet."
+     },
+     {
+      "v": "Welk begrip hoort bij: \"het alleen zien van informatie die bij je past\"?",
+      "o": [
+       "Algoritme",
+       "Digitale kloof",
+       "Filterbubbel",
+       "Datalek"
+      ],
+      "c": 2,
+      "d": 3,
+      "u": "«Filterbubbel»: het alleen zien van informatie die bij je past.",
+      "uo": [
+       "«Algoritme» betekent rekenregels van een computer.",
+       "«Digitale kloof» betekent kloof in digitale kennis.",
+       "Klopt, dit is «Filterbubbel».",
+       "«Datalek» betekent gegevens komen vrij."
+      ],
+      "uh": "Onthoud: «Filterbubbel» = alleen wat bij je past."
+     },
+     {
+      "v": "Welke term hoort bij \"onbekend blijven\"?",
+      "o": [
+       "Algoritme",
+       "Datalek",
+       "Digitalisering",
+       "Anonimiteit"
+      ],
+      "c": 3,
+      "d": 2,
+      "u": "«Anonimiteit»: het onbekend blijven van je identiteit.",
+      "uo": [
+       "«Algoritme» betekent rekenregels van een computer.",
+       "«Datalek» betekent gegevens komen vrij.",
+       "«Digitalisering» betekent meer computers en internet.",
+       "Klopt, «Anonimiteit» past hierbij."
+      ],
+      "uh": "Onthoud: «Anonimiteit» = onbekend blijven."
+     },
+     {
+      "v": "Wat betekent «Anonimiteit»?",
+      "o": [
+       "het onbekend blijven van je identiteit",
+       "het recht om zelf te bepalen wat anderen over je weten",
+       "een set regels waarmee een computer keuzes maakt",
+       "het per ongeluk vrijkomen van persoonsgegevens"
+      ],
+      "c": 0,
+      "d": 1,
+      "u": "«Anonimiteit»: het onbekend blijven van je identiteit.",
+      "uo": [
+       "Klopt: onbekend blijven.",
+       "Dat is «Privacy».",
+       "Dat is «Algoritme».",
+       "Dat is «Datalek»."
+      ],
+      "uh": "Onthoud: «Anonimiteit» = onbekend blijven."
+     },
+     {
+      "v": "Welk begrip hoort bij: \"het recht van een maker op zijn eigen werk\"?",
+      "o": [
+       "Privacy",
+       "Auteursrecht",
+       "Digitale kloof",
+       "Algoritme"
+      ],
+      "c": 1,
+      "d": 3,
+      "u": "«Auteursrecht»: het recht van een maker op zijn eigen werk.",
+      "uo": [
+       "«Privacy» betekent controle over je gegevens.",
+       "Klopt, dit is «Auteursrecht».",
+       "«Digitale kloof» betekent kloof in digitale kennis.",
+       "«Algoritme» betekent rekenregels van een computer."
+      ],
+      "uh": "Onthoud: «Auteursrecht» = recht van de maker."
+     },
+     {
+      "v": "Welke term hoort bij \"alleen wat bij je past\"?",
+      "o": [
+       "Digitale kloof",
+       "Datalek",
+       "Filterbubbel",
+       "Digitalisering"
+      ],
+      "c": 2,
+      "d": 2,
+      "u": "«Filterbubbel»: het alleen zien van informatie die bij je past.",
+      "uo": [
+       "«Digitale kloof» betekent kloof in digitale kennis.",
+       "«Datalek» betekent gegevens komen vrij.",
+       "Klopt, «Filterbubbel» past hierbij.",
+       "«Digitalisering» betekent meer computers en internet."
+      ],
+      "uh": "Onthoud: «Filterbubbel» = alleen wat bij je past."
+     },
+     {
+      "v": "Wat betekent «Filterbubbel»?",
+      "o": [
+       "een set regels waarmee een computer keuzes maakt",
+       "het verschil tussen wie wel en niet met techniek overweg kan",
+       "het per ongeluk vrijkomen van persoonsgegevens",
+       "het alleen zien van informatie die bij je past"
+      ],
+      "c": 3,
+      "d": 1,
+      "u": "«Filterbubbel»: het alleen zien van informatie die bij je past.",
+      "uo": [
+       "Dat is «Algoritme».",
+       "Dat is «Digitale kloof».",
+       "Dat is «Datalek».",
+       "Klopt: alleen wat bij je past."
+      ],
+      "uh": "Onthoud: «Filterbubbel» = alleen wat bij je past."
+     },
+     {
+      "v": "Welke term hoort bij \"recht van de maker\"?",
+      "o": [
+       "Auteursrecht",
+       "Digitale kloof",
+       "Algoritme",
+       "Digitalisering"
+      ],
+      "c": 0,
+      "d": 2,
+      "u": "«Auteursrecht»: het recht van een maker op zijn eigen werk.",
+      "uo": [
+       "Klopt, «Auteursrecht» past hierbij.",
+       "«Digitale kloof» betekent kloof in digitale kennis.",
+       "«Algoritme» betekent rekenregels van een computer.",
+       "«Digitalisering» betekent meer computers en internet."
+      ],
+      "uh": "Onthoud: «Auteursrecht» = recht van de maker."
+     },
+     {
+      "v": "Wat betekent «Auteursrecht»?",
+      "o": [
+       "het recht om zelf te bepalen wat anderen over je weten",
+       "het recht van een maker op zijn eigen werk",
+       "het verschil tussen wie wel en niet met techniek overweg kan",
+       "een set regels waarmee een computer keuzes maakt"
+      ],
+      "c": 1,
+      "d": 1,
+      "u": "«Auteursrecht»: het recht van een maker op zijn eigen werk.",
+      "uo": [
+       "Dat is «Privacy».",
+       "Klopt: recht van de maker.",
+       "Dat is «Digitale kloof».",
+       "Dat is «Algoritme»."
+      ],
+      "uh": "Onthoud: «Auteursrecht» = recht van de maker."
+     }
+    ],
+    "begrippen": [
+     {
+      "t": "Digitalisering",
+      "d": "het steeds meer gebruiken van computers en internet"
+     },
+     {
+      "t": "Privacy",
+      "d": "het recht om zelf te bepalen wat anderen over je weten"
+     },
+     {
+      "t": "Sociale media",
+      "d": "online netwerken om berichten te delen"
+     },
+     {
+      "t": "Persoonsgegevens",
+      "d": "informatie die over een persoon gaat"
+     },
+     {
+      "t": "Datalek",
+      "d": "het per ongeluk vrijkomen van persoonsgegevens"
+     },
+     {
+      "t": "Algoritme",
+      "d": "een set regels waarmee een computer keuzes maakt"
+     },
+     {
+      "t": "Digitale kloof",
+      "d": "het verschil tussen wie wel en niet met techniek overweg kan"
+     },
+     {
+      "t": "Cybercriminaliteit",
+      "d": "criminaliteit via computers en internet"
+     },
+     {
+      "t": "Anonimiteit",
+      "d": "het onbekend blijven van je identiteit"
+     },
+     {
+      "t": "Filterbubbel",
+      "d": "het alleen zien van informatie die bij je past"
+     },
+     {
+      "t": "Auteursrecht",
+      "d": "het recht van een maker op zijn eigen werk"
+     },
+     {
+      "t": "Toestemming",
+      "d": "het akkoord geven voor het gebruik van je gegevens"
+     }
+    ],
+    "sam": "<p><b>Digitalisering</b> verandert de samenleving. <b>Sociale media</b> en <b>algoritmes</b> bepalen wat je ziet, soms in een <b>filterbubbel</b>. <b>Privacy</b> en <b>persoonsgegevens</b> komen onder druk te staan, bijvoorbeeld door een <b>datalek</b> of <b>cybercriminaliteit</b>.</p>"
    },
    {
     "id": "G",
