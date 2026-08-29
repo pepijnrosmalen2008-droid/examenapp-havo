@@ -128,6 +128,30 @@ function balance(cand, target = 26) {
   });
 }
 
+const _esc = s => String(s == null ? '' : s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+/**
+ * Bouw een RIJKE samenvatting (HTML met de sam-markup van de app) uit de
+ * concepten: intro + een gestileerde begrippenlijst (.sam-definitie) + een
+ * onthoud-blok met de belangrijkste verschillen. Zo is de samenvatting geen
+ * losse alinea meer maar echte leerstof. `spec.samFull` overschrijft dit.
+ */
+function buildSummary(spec) {
+  if (spec.samFull) return spec.samFull;
+  const cs = spec.concepten || [];
+  const intro = spec.sam || '';
+  const defs = cs.map(c => `<div class="sam-definitie"><div class="sam-definitie-term">${_esc(c.t)}</div><div class="sam-definitie-body">${_esc(String(c.d).replace(/\.$/, ''))}.</div></div>`).join('');
+  const byTerm = {}; cs.forEach(c => { byTerm[c.t.toLowerCase()] = c; });
+  const contrasts = [];
+  for (const c of cs) {
+    if (contrasts.length >= 4) break;
+    const fc = byTerm[String((c.fout || [])[0] || '').toLowerCase()];
+    if (fc && !contrasts.some(x => x.includes(`«${fc.t}»`) && x.includes(`«${c.t}»`)))
+      contrasts.push(`<b>«${_esc(c.t)}»</b> is ${_esc(kernOf(c))}, terwijl <b>«${_esc(fc.t)}»</b> ${_esc(kernOf(fc))} is.`);
+  }
+  const onthoud = contrasts.length ? `<div class="sam-onthoud"><b>Let op de verschillen.</b> ${contrasts.join(' ')}</div>` : '';
+  return `${intro}<div class="sam-head">Kernbegrippen</div>${defs}${onthoud}`;
+}
+
 /** Bouw het volledige leerdoel-object. */
 export function expandLeerdoel(spec) {
   const beg = spec.concepten.map(c => ({ t: c.t, d: c.d }));
@@ -137,7 +161,7 @@ export function expandLeerdoel(spec) {
   const ld = {
     id: spec.leerdoel, naam: spec.naam,
     beschrijving: spec.beschrijving || '', ceStatus: spec.ceStatus || 'CE',
-    onderwerpen: spec.onderwerpen || [], sam: spec.sam || '',
+    onderwerpen: spec.onderwerpen || [], sam: buildSummary(spec),
     begrippen: beg, sv, oe: spec.oe || [],
   };
   return ld;
@@ -246,7 +270,7 @@ async function runSpecFile(specfile, write) {
       } else {
         // domein-modus (vmbo): hang de bank direct onder het domein
         dom.sv = ld.sv; dom.begrippen = ld.begrippen;
-        if (spec.sam) dom.sam = spec.sam;
+        dom.sam = ld.sam;
         if (spec.oe) dom.oe = spec.oe;
         reg.push(`${spec.niveau} ${spec.vak} domein ${spec.domein}`);
       }
