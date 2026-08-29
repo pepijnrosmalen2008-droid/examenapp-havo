@@ -1105,9 +1105,10 @@ var VAKKEN_VMBO = [
      "Windsystemen en de wet van Buys Ballot",
      "Klimaatgrafieken lezen"
     ],
-    "nSv": 0,
+    "nSv": 26,
     "nOe": 0,
-    "nBeg": 0
+    "nBeg": 14,
+    "hasSam": true
    },
    {
     "id": "B",
@@ -1120,9 +1121,10 @@ var VAKKEN_VMBO = [
      "Nederland en het water",
      "Overstromingsrisico"
     ],
-    "nSv": 0,
+    "nSv": 26,
     "nOe": 0,
-    "nBeg": 0
+    "nBeg": 12,
+    "hasSam": true
    },
    {
     "id": "C",
@@ -1134,9 +1136,10 @@ var VAKKEN_VMBO = [
      "Bevolkingsgroei",
      "Verstedelijking en migratie"
     ],
-    "nSv": 0,
+    "nSv": 26,
     "nOe": 0,
-    "nBeg": 0
+    "nBeg": 12,
+    "hasSam": true
    },
    {
     "id": "D",
@@ -1149,9 +1152,10 @@ var VAKKEN_VMBO = [
      "Centrum-periferierelaties",
      "Oorzaken van welvaartsverschillen"
     ],
-    "nSv": 0,
+    "nSv": 26,
     "nOe": 0,
-    "nBeg": 0
+    "nBeg": 12,
+    "hasSam": true
    },
    {
     "id": "E",
@@ -1163,9 +1167,10 @@ var VAKKEN_VMBO = [
      "Bestemming van gebieden",
      "Belangen bij ruimtegebruik"
     ],
-    "nSv": 0,
+    "nSv": 26,
     "nOe": 0,
-    "nBeg": 0
+    "nBeg": 12,
+    "hasSam": true
    },
    {
     "id": "F",
@@ -1178,9 +1183,10 @@ var VAKKEN_VMBO = [
      "Cultuurgebieden",
      "Grenzen en territoriale conflicten"
     ],
-    "nSv": 0,
+    "nSv": 26,
     "nOe": 0,
-    "nBeg": 0
+    "nBeg": 12,
+    "hasSam": true
    },
    {
     "id": "G",
