@@ -186,11 +186,22 @@ export function expandLeerdoel(spec) {
     // worden afgeleid uit de juiste per-optie-uitleg als je ze niet meegeeft.
     sv = spec.vragen.map(q => {
       const o = q.o;
-      // hele korte per-optie-uitleg (bv. "Nee.") opvullen tot betekenisvolle lengte
-      const uo = (q.uo || []).map((x, i) => { const s = String(x).trim(); return s.length >= 8 ? s : (i === q.c ? 'Ja, dat klopt.' : 'Nee, dat klopt niet.'); });
+      // Per-optie-uitleg verrijken: een te korte afleider-reactie ("Nee.") krijgt
+      // automatisch het juiste antwoord erbij, zodat elke optie iets uitlegt in
+      // plaats van enkel te ontkennen. Reeds volwaardige redenen blijven staan.
+      const uo = (q.uo || []).map((x, i) => {
+        const s = String(x).trim();
+        if (i === q.c) return s.length >= 8 ? s : 'Ja, dat klopt.';
+        if (s.length >= 12) return s;
+        const kort = s.replace(/[.!\s]*$/, '').trim();
+        return `${kort ? kort + ', ' : 'Nee, '}het juiste antwoord is «${o[q.c]}».`;
+      });
       let u = q.u;
-      if (!u) { u = String(uo[q.c] || '').replace(/^klopt[\s:,.‑-]*/i, '').trim(); u = u ? u.charAt(0).toUpperCase() + u.slice(1) : ''; if (u.length < 12) u = 'Het juiste antwoord is: ' + o[q.c] + '.'; }
-      const uh = q.uh || u;
+      if (!u) { u = String(uo[q.c] || '').replace(/^(klopt|ja,? dat klopt)[\s:,.‑-]*/i, '').trim(); u = u ? u.charAt(0).toUpperCase() + u.slice(1) : ''; if (u.length < 12) u = 'Het juiste antwoord is: ' + o[q.c] + '.'; }
+      // Onthoud = geheugensteun: noem het juiste antwoord samen met de kernreden,
+      // zodat deze regel iets toevoegt boven de losse "waarom juist"-uitleg.
+      let uh = q.uh;
+      if (!uh) { const ans = String(o[q.c] || '').trim(); uh = (ans && u && !u.toLowerCase().startsWith(ans.toLowerCase().slice(0, 10))) ? `${ans}: ${u}` : u; }
       return { v: q.v, o, c: q.c, d: q.d, u, uo, uh };
     });
   } else {

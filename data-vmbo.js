@@ -438,7 +438,7 @@ var VAKKEN_VMBO = [
        "Klopt: massa gedeeld door volume.",
        "Temperatuur is iets anders."
       ],
-      "uh": "Massa gedeeld door volume."
+      "uh": "De massa per volume: Massa gedeeld door volume."
      },
      {
       "v": "Een blok van 200 g heeft een volume van 100 cm³. Wat is de dichtheid?",
@@ -457,7 +457,7 @@ var VAKKEN_VMBO = [
        "Dat is het volume.",
        "Deel massa door volume."
       ],
-      "uh": "200 / 100 = 2 g/cm³."
+      "uh": "2 g/cm³: 200 / 100 = 2 g/cm³."
      },
      {
       "v": "Hoe heet de overgang van vast naar vloeibaar?",
@@ -476,7 +476,7 @@ var VAKKEN_VMBO = [
        "Dat is vloeibaar naar gas.",
        "Dat is gas naar vloeibaar."
       ],
-      "uh": "Vast wordt vloeibaar."
+      "uh": "Smelten: Vast wordt vloeibaar."
      },
      {
       "v": "Water verdampt. Welke faseovergang is dit?",
@@ -530,10 +530,10 @@ var VAKKEN_VMBO = [
       "uo": [
        "Klopt: tijdens de faseovergang blijft de temperatuur gelijk.",
        "Nee, even niet.",
-       "Nee, dat klopt niet.",
+       "Nee, het juiste antwoord is «Die blijft even gelijk».",
        "Temperatuur verdwijnt niet."
       ],
-      "uh": "Tijdens de faseovergang blijft de temperatuur gelijk."
+      "uh": "Die blijft even gelijk: Tijdens de faseovergang blijft de temperatuur gelijk."
      },
      {
       "v": "Wat is massa?",
@@ -571,7 +571,7 @@ var VAKKEN_VMBO = [
        "Klopt: de ingenomen ruimte.",
        "Iets anders."
       ],
-      "uh": "De ingenomen ruimte."
+      "uh": "De ruimte die iets inneemt: De ingenomen ruimte."
      },
      {
       "v": "IJs wordt water. Hoe heet dat?",
@@ -590,7 +590,7 @@ var VAKKEN_VMBO = [
        "Dat is vloeibaar naar vast.",
        "Klopt: vast wordt vloeibaar."
       ],
-      "uh": "Vast wordt vloeibaar."
+      "uh": "Smelten: Vast wordt vloeibaar."
      },
      {
       "v": "Waterdamp wordt weer water. Hoe heet dat?",
@@ -609,7 +609,7 @@ var VAKKEN_VMBO = [
        "Dat is vloeibaar naar gas.",
        "Dat is vloeibaar naar vast."
       ],
-      "uh": "Gas wordt vloeibaar."
+      "uh": "Condenseren: Gas wordt vloeibaar."
      },
      {
       "v": "Een stof met een grote dichtheid is...",
@@ -628,7 +628,7 @@ var VAKKEN_VMBO = [
        "Niet per se.",
        "Niet per se."
       ],
-      "uh": "Veel massa in weinig volume."
+      "uh": "zwaar voor zijn grootte: Veel massa in weinig volume."
      },
      {
       "v": "Welke fase heeft een vaste vorm én een vast volume?",
@@ -647,7 +647,7 @@ var VAKKEN_VMBO = [
        "Klopt: een vaste stof.",
        "Damp is een gas."
       ],
-      "uh": "Een vaste stof."
+      "uh": "Vaste stof: Een vaste stof."
      }
     ],
     "begrippen": [
@@ -742,7 +742,7 @@ var VAKKEN_VMBO = [
        "Weerstand is in ohm.",
        "Vermogen is in watt."
       ],
-      "uh": "Stroomsterkte in ampère."
+      "uh": "De stroomsterkte: Stroomsterkte in ampère."
      },
      {
       "v": "Wat meet je in volt?",
@@ -761,7 +761,7 @@ var VAKKEN_VMBO = [
        "Klopt: spanning in volt.",
        "Vermogen in watt."
       ],
-      "uh": "Spanning in volt."
+      "uh": "De spanning: Spanning in volt."
      },
      {
       "v": "Wat meet je in ohm?",
@@ -780,7 +780,7 @@ var VAKKEN_VMBO = [
        "Stroom in ampère.",
        "Energie in joule."
       ],
-      "uh": "Weerstand in ohm."
+      "uh": "De weerstand: Weerstand in ohm."
      },
      {
       "v": "Door een lamp loopt 0,5 A bij 6 V. Wat is de weerstand?",
@@ -799,7 +799,7 @@ var VAKKEN_VMBO = [
        "Dat is de stroom.",
        "Klopt: R = U / I = 6 / 0,5 = 12 ohm."
       ],
-      "uh": "R = U / I = 6 / 0,5 = 12 ohm."
+      "uh": "12 ohm: R = U / I = 6 / 0,5 = 12 ohm."
      },
      {
       "v": "In een serieschakeling heeft de stroom...",
@@ -816,9 +816,9 @@ var VAKKEN_VMBO = [
        "Dat is parallel.",
        "Klopt: één weg door de keten.",
        "Er is wel stroom.",
-       "Onjuist."
+       "Onjuist, het juiste antwoord is «maar één weg»."
       ],
-      "uh": "Één weg door de keten."
+      "uh": "maar één weg: Één weg door de keten."
      },
      {
       "v": "Eén lampje gaat stuk en de rest gaat ook uit. Wat voor schakeling?",
@@ -837,7 +837,7 @@ var VAKKEN_VMBO = [
        "Klopt: in serie valt alles uit.",
        "Er is wel een schakeling."
       ],
-      "uh": "In serie valt alles uit."
+      "uh": "Serie: In serie valt alles uit."
      },
      {
       "v": "Wat laat een geleider door?",
@@ -856,7 +856,7 @@ var VAKKEN_VMBO = [
        "Niet alleen warmte.",
        "Niet alleen licht."
       ],
-      "uh": "Een geleider laat stroom door."
+      "uh": "Stroom: Een geleider laat stroom door."
      },
      {
       "v": "Wat doet een isolator?",
@@ -871,11 +871,11 @@ var VAKKEN_VMBO = [
       "u": "Een isolator laat geen stroom door.",
       "uo": [
        "Dat is een geleider.",
-       "Nee, dat klopt niet.",
-       "Nee, dat klopt niet.",
+       "Nee, het juiste antwoord is «Stroom tegenhouden».",
+       "Nee, het juiste antwoord is «Stroom tegenhouden».",
        "Klopt: een isolator laat geen stroom door."
       ],
-      "uh": "Een isolator laat geen stroom door."
+      "uh": "Stroom tegenhouden: Een isolator laat geen stroom door."
      },
      {
       "v": "Wat is vermogen?",
@@ -908,12 +908,12 @@ var VAKKEN_VMBO = [
       "d": 3,
       "u": "E = P × t = 100 × 2 = 200 Wh.",
       "uo": [
-       "Onjuist.",
+       "Onjuist, het juiste antwoord is «200 Wh».",
        "Dat is het vermogen.",
        "Klopt: E = P × t = 100 × 2 = 200 Wh.",
        "Dat is de tijd."
       ],
-      "uh": "E = P × t = 100 × 2 = 200 Wh."
+      "uh": "200 Wh: E = P × t = 100 × 2 = 200 Wh."
      },
      {
       "v": "Wat is een zekering?",
@@ -932,7 +932,7 @@ var VAKKEN_VMBO = [
        "Een lamp geeft licht.",
        "Iets anders."
       ],
-      "uh": "Onderbreekt de stroom bij te veel stroom."
+      "uh": "Een beveiliging tegen te veel stroom: Onderbreekt de stroom bij te veel stroom."
      },
      {
       "v": "Wat gebeurt er bij kortsluiting?",
@@ -946,12 +946,12 @@ var VAKKEN_VMBO = [
       "d": 3,
       "u": "Bijna geen weerstand, dus heel veel stroom.",
       "uo": [
-       "Nee, dat klopt niet.",
+       "Nee, het juiste antwoord is «Er loopt heel veel stroom».",
        "Er loopt juist veel.",
        "Nee, juist heel laag.",
        "Klopt: bijna geen weerstand, dus heel veel stroom."
       ],
-      "uh": "Bijna geen weerstand, dus heel veel stroom."
+      "uh": "Er loopt heel veel stroom: Bijna geen weerstand, dus heel veel stroom."
      }
     ],
     "begrippen": [
@@ -1038,7 +1038,7 @@ var VAKKEN_VMBO = [
        "Straling gaat door de ruimte.",
        "Isolatie houdt warmte tegen."
       ],
-      "uh": "Geleiding, de stof beweegt niet."
+      "uh": "Warmtegeleiding: Geleiding, de stof beweegt niet."
      },
      {
       "v": "De zon warmt de aarde op. Hoe gaat die warmte?",
@@ -1073,10 +1073,10 @@ var VAKKEN_VMBO = [
       "uo": [
        "Klopt: warmtetransport tegenhouden.",
        "Dat is geleiding.",
-       "Nee, dat klopt niet.",
-       "Nee, dat klopt niet."
+       "Nee, het juiste antwoord is «Warmte tegenhouden».",
+       "Nee, het juiste antwoord is «Warmte tegenhouden»."
       ],
-      "uh": "Warmtetransport tegenhouden."
+      "uh": "Warmte tegenhouden: Warmtetransport tegenhouden."
      },
      {
       "v": "Wat is nodig voor verbranding?",
@@ -1091,7 +1091,7 @@ var VAKKEN_VMBO = [
       "u": "Brandstof reageert met zuurstof.",
       "uo": [
        "Niet genoeg.",
-       "Nee, dat klopt niet.",
+       "Nee, het juiste antwoord is «Brandstof en zuurstof».",
        "Nee, juist niet.",
        "Klopt: brandstof reageert met zuurstof."
       ],
@@ -1133,7 +1133,7 @@ var VAKKEN_VMBO = [
        "Klopt: het deel dat nuttig wordt gebruikt.",
        "Brandstof is iets anders."
       ],
-      "uh": "Het deel dat nuttig wordt gebruikt."
+      "uh": "Het nuttig gebruikte deel: Het deel dat nuttig wordt gebruikt."
      },
      {
       "v": "Wat is een goede warmte-isolator?",
@@ -1171,7 +1171,7 @@ var VAKKEN_VMBO = [
        "Kou straal je niet uit.",
        "Klopt: metaal geleidt je lichaamswarmte snel weg."
       ],
-      "uh": "Metaal geleidt je lichaamswarmte snel weg."
+      "uh": "Het geleidt de warmte snel weg: Metaal geleidt je lichaamswarmte snel weg."
      },
      {
       "v": "Wat komt vrij bij een verbranding?",
@@ -1185,12 +1185,12 @@ var VAKKEN_VMBO = [
       "d": 1,
       "u": "Er komt warmte vrij.",
       "uo": [
-       "Nee, dat klopt niet.",
+       "Nee, het juiste antwoord is «Warmte».",
        "Klopt: er komt warmte vrij.",
        "Niet alleen water.",
        "Er gebeurt wel iets."
       ],
-      "uh": "Er komt warmte vrij."
+      "uh": "Warmte: Er komt warmte vrij."
      },
      {
       "v": "Wat is soortelijke warmte?",
@@ -1204,12 +1204,12 @@ var VAKKEN_VMBO = [
       "d": 2,
       "u": "Warmte om 1 kg 1 graad op te warmen.",
       "uo": [
-       "Nee, dat klopt niet.",
-       "Nee, dat klopt niet.",
+       "Nee, het juiste antwoord is «De warmte per kg per graad».",
+       "Nee, het juiste antwoord is «De warmte per kg per graad».",
        "Klopt: warmte om 1 kg 1 graad op te warmen.",
-       "Nee, dat klopt niet."
+       "Nee, het juiste antwoord is «De warmte per kg per graad»."
       ],
-      "uh": "Warmte om 1 kg 1 graad op te warmen."
+      "uh": "De warmte per kg per graad: Warmte om 1 kg 1 graad op te warmen."
      },
      {
       "v": "Je verwarmt 2 kg water (c = 4180) 10 °C op. Q = c·m·ΔT is...",
@@ -1224,11 +1224,11 @@ var VAKKEN_VMBO = [
       "u": "4180 × 2 × 10 = 83.600 J.",
       "uo": [
        "Klopt: 4180 × 2 × 10 = 83.600 J.",
-       "Dat is c.",
-       "Onjuist.",
+       "Dat is c, het juiste antwoord is «83.600 J».",
+       "Onjuist, het juiste antwoord is «83.600 J».",
        "Dat is de massa in gram."
       ],
-      "uh": "4180 × 2 × 10 = 83.600 J."
+      "uh": "83.600 J: 4180 × 2 × 10 = 83.600 J."
      },
      {
       "v": "Waarom draag je in de kou een dikke jas?",
@@ -1243,11 +1243,11 @@ var VAKKEN_VMBO = [
       "u": "De jas isoleert en houdt je warmte binnen.",
       "uo": [
        "Een jas maakt geen warmte.",
-       "Nee, dat klopt niet.",
-       "Nee, dat klopt niet.",
+       "Nee, het juiste antwoord is «Om warmte binnen te houden».",
+       "Nee, het juiste antwoord is «Om warmte binnen te houden».",
        "Klopt: de jas isoleert en houdt je warmte binnen."
       ],
-      "uh": "De jas isoleert en houdt je warmte binnen."
+      "uh": "Om warmte binnen te houden: De jas isoleert en houdt je warmte binnen."
      }
     ],
     "begrippen": [
@@ -1332,7 +1332,7 @@ var VAKKEN_VMBO = [
        "Dat is breking.",
        "Klopt: licht kaatst terug.",
        "Licht verdwijnt niet.",
-       "Nee, dat klopt niet."
+       "Nee, het juiste antwoord is «Licht kaatst terug»."
       ],
       "uh": "Licht kaatst terug."
      },
@@ -1349,7 +1349,7 @@ var VAKKEN_VMBO = [
       "u": "Lichtbreking bij overgang naar een andere stof.",
       "uo": [
        "Dat is terugkaatsen.",
-       "Nee, dat klopt niet.",
+       "Idem, het juiste antwoord is «Lichtbreking».",
        "Klopt: lichtbreking bij overgang naar een andere stof.",
        "Iets anders."
       ],
@@ -1369,10 +1369,10 @@ var VAKKEN_VMBO = [
       "uo": [
        "Klopt: een bolle lens brengt licht samen.",
        "Dat doet een holle lens.",
-       "Nee, dat klopt niet.",
-       "Nee, dat klopt niet."
+       "Nee, het juiste antwoord is «Licht bundelen».",
+       "Nee, het juiste antwoord is «Licht bundelen»."
       ],
-      "uh": "Een bolle lens brengt licht samen."
+      "uh": "Licht bundelen: Een bolle lens brengt licht samen."
      },
      {
       "v": "Wat doet een holle lens?",
@@ -1387,11 +1387,11 @@ var VAKKEN_VMBO = [
       "u": "Een holle lens spreidt het licht.",
       "uo": [
        "Dat doet een bolle lens.",
-       "Nee, dat klopt niet.",
-       "Nee, dat klopt niet.",
+       "Nee, het juiste antwoord is «Licht spreiden».",
+       "Nee, het juiste antwoord is «Licht spreiden».",
        "Klopt: een holle lens spreidt het licht."
       ],
-      "uh": "Een holle lens spreidt het licht."
+      "uh": "Licht spreiden: Een holle lens spreidt het licht."
      },
      {
       "v": "Wat is het brandpunt van een bolle lens?",
@@ -1405,12 +1405,12 @@ var VAKKEN_VMBO = [
       "d": 2,
       "u": "Waar evenwijdige stralen samenkomen.",
       "uo": [
-       "Nee, dat klopt niet.",
+       "Nee, het juiste antwoord is «Waar het licht samenkomt».",
        "Klopt: waar evenwijdige stralen samenkomen.",
-       "Nee, dat klopt niet.",
-       "Nee, dat klopt niet."
+       "Nee, het juiste antwoord is «Waar het licht samenkomt».",
+       "Nee, het juiste antwoord is «Waar het licht samenkomt»."
       ],
-      "uh": "Waar evenwijdige stralen samenkomen."
+      "uh": "Waar het licht samenkomt: Waar evenwijdige stralen samenkomen."
      },
      {
       "v": "Welk beeld kun je op een scherm opvangen?",
@@ -1425,7 +1425,7 @@ var VAKKEN_VMBO = [
       "u": "Een reëel beeld vang je op een scherm.",
       "uo": [
        "Dat kun je niet opvangen.",
-       "Nee, dat klopt niet.",
+       "Idem, het juiste antwoord is «Een reëel beeld».",
        "Klopt: een reëel beeld vang je op een scherm.",
        "Er is wel een beeld."
       ],
@@ -1446,7 +1446,7 @@ var VAKKEN_VMBO = [
        "Klopt: een virtueel beeld, niet op te vangen.",
        "Dat vang je juist op.",
        "Er is wel een beeld.",
-       "Nee, dat klopt niet."
+       "Nee, het juiste antwoord is «Een virtueel beeld»."
       ],
       "uh": "Een virtueel beeld, niet op te vangen."
      },
@@ -1462,9 +1462,9 @@ var VAKKEN_VMBO = [
       "d": 1,
       "u": "Een rechte lijn die de richting van licht toont.",
       "uo": [
-       "Nee, dat klopt niet.",
-       "Nee, dat klopt niet.",
-       "Nee, dat klopt niet.",
+       "Nee, het juiste antwoord is «Een rechte lijn die de richting toont».",
+       "Nee, het juiste antwoord is «Een rechte lijn die de richting toont».",
+       "Nee, het juiste antwoord is «Een rechte lijn die de richting toont».",
        "Klopt: een rechte lijn die de richting van licht toont."
       ],
       "uh": "Een rechte lijn die de richting van licht toont."
@@ -1481,12 +1481,12 @@ var VAKKEN_VMBO = [
       "d": 3,
       "u": "De invalshoek is gelijk aan de terugkaatshoek.",
       "uo": [
-       "Nee, dat klopt niet.",
+       "Nee, het juiste antwoord is «gelijk aan de terugkaatshoek».",
        "Klopt: de invalshoek is gelijk aan de terugkaatshoek.",
-       "Nee, dat klopt niet.",
+       "Nee, het juiste antwoord is «gelijk aan de terugkaatshoek».",
        "Je kunt hem meten."
       ],
-      "uh": "De invalshoek is gelijk aan de terugkaatshoek."
+      "uh": "gelijk aan de terugkaatshoek: De invalshoek is gelijk aan de terugkaatshoek."
      },
      {
       "v": "Waardoor lijkt een rietje in een glas water geknikt?",
@@ -1500,12 +1500,12 @@ var VAKKEN_VMBO = [
       "d": 3,
       "u": "Het licht breekt bij de overgang water-lucht.",
       "uo": [
-       "Nee, dat klopt niet.",
-       "Nee, dat klopt niet.",
+       "Nee, het juiste antwoord is «Door lichtbreking».",
+       "Nee, het juiste antwoord is «Door lichtbreking».",
        "Klopt: het licht breekt bij de overgang water-lucht.",
-       "Nee, dat klopt niet."
+       "Nee, het juiste antwoord is «Door lichtbreking»."
       ],
-      "uh": "Het licht breekt bij de overgang water-lucht."
+      "uh": "Door lichtbreking: Het licht breekt bij de overgang water-lucht."
      },
      {
       "v": "Wat is een lens?",
@@ -1522,9 +1522,9 @@ var VAKKEN_VMBO = [
        "Klopt: een lens bundelt of spreidt licht.",
        "Een spiegel kaatst terug.",
        "Een lamp geeft licht.",
-       "Nee, dat klopt niet."
+       "Nee, het juiste antwoord is «Doorzichtig voorwerp dat licht buigt»."
       ],
-      "uh": "Een lens bundelt of spreidt licht."
+      "uh": "Doorzichtig voorwerp dat licht buigt: Een lens bundelt of spreidt licht."
      },
      {
       "v": "Een loep vergroot. Wat voor lens zit erin?",
@@ -1539,7 +1539,7 @@ var VAKKEN_VMBO = [
       "u": "Een bolle lens.",
       "uo": [
        "Die spreidt juist.",
-       "Nee, dat klopt niet.",
+       "Nee, het juiste antwoord is «Een bolle lens».",
        "Er zit wel een lens in.",
        "Klopt: een bolle lens."
       ],
@@ -1625,12 +1625,12 @@ var VAKKEN_VMBO = [
       "d": 1,
       "u": "Trillingen die zich voortplanten.",
       "uo": [
-       "Nee, dat klopt niet.",
+       "Nee, het juiste antwoord is «Uit trillingen».",
        "Klopt: trillingen die zich voortplanten.",
-       "Nee, dat klopt niet.",
-       "Nee, dat klopt niet."
+       "Nee, het juiste antwoord is «Uit trillingen».",
+       "Nee, het juiste antwoord is «Uit trillingen»."
       ],
-      "uh": "Trillingen die zich voortplanten."
+      "uh": "Uit trillingen: Trillingen die zich voortplanten."
      },
      {
       "v": "Wat is de frequentie?",
@@ -1649,7 +1649,7 @@ var VAKKEN_VMBO = [
        "Klopt: trillingen per seconde, in hertz.",
        "Iets anders."
       ],
-      "uh": "Trillingen per seconde, in hertz."
+      "uh": "Het aantal trillingen per seconde: Trillingen per seconde, in hertz."
      },
      {
       "v": "Wat bepaalt de toonhoogte?",
@@ -1665,10 +1665,10 @@ var VAKKEN_VMBO = [
       "uo": [
        "Klopt: een hoge frequentie geeft een hoge toon.",
        "Dat bepaalt de sterkte.",
-       "Nee, dat klopt niet.",
-       "Nee, dat klopt niet."
+       "Nee, het juiste antwoord is «De frequentie».",
+       "Nee, het juiste antwoord is «De frequentie»."
       ],
-      "uh": "Een hoge frequentie geeft een hoge toon."
+      "uh": "De frequentie: Een hoge frequentie geeft een hoge toon."
      },
      {
       "v": "Wat bepaalt hoe hard een geluid klinkt?",
@@ -1684,7 +1684,7 @@ var VAKKEN_VMBO = [
       "uo": [
        "Dat bepaalt de toonhoogte.",
        "Iets anders.",
-       "Nee, dat klopt niet.",
+       "Nee, het juiste antwoord is «De amplitude».",
        "Klopt: de amplitude bepaalt de geluidssterkte."
       ],
       "uh": "De amplitude bepaalt de geluidssterkte."
@@ -1701,12 +1701,12 @@ var VAKKEN_VMBO = [
       "d": 3,
       "u": "1 / 0,01 = 100 Hz.",
       "uo": [
-       "Onjuist.",
+       "Onjuist, het juiste antwoord is «100 Hz».",
        "Klopt: 1 / 0,01 = 100 Hz.",
-       "Onjuist.",
+       "Onjuist, het juiste antwoord is «100 Hz».",
        "Dat is de tijd."
       ],
-      "uh": "1 / 0,01 = 100 Hz."
+      "uh": "100 Hz: 1 / 0,01 = 100 Hz."
      },
      {
       "v": "Waardoor kan geluid zich NIET voortplanten?",
@@ -1725,7 +1725,7 @@ var VAKKEN_VMBO = [
        "Klopt: in vacuüm is er niets om te trillen.",
        "Een muur trilt ook."
       ],
-      "uh": "In vacuüm is er niets om te trillen."
+      "uh": "Door het luchtledige: In vacuüm is er niets om te trillen."
      },
      {
       "v": "Wat is een echo?",
@@ -1741,10 +1741,10 @@ var VAKKEN_VMBO = [
       "uo": [
        "Klopt: geluid dat terugkaatst.",
        "Niet per se hard.",
-       "Nee, dat klopt niet.",
+       "Nee, het juiste antwoord is «Teruggekaatst geluid».",
        "Geluid is geen licht."
       ],
-      "uh": "Geluid dat terugkaatst."
+      "uh": "Teruggekaatst geluid: Geluid dat terugkaatst."
      },
      {
       "v": "Waarmee meet je met geluid een afstand?",
@@ -1758,12 +1758,12 @@ var VAKKEN_VMBO = [
       "d": 2,
       "u": "Echopeiling gebruikt de tijd van de echo.",
       "uo": [
-       "Nee, dat klopt niet.",
-       "Nee, dat klopt niet.",
+       "Nee, het juiste antwoord is «Met echopeiling».",
+       "Nee, het juiste antwoord is «Met echopeiling».",
        "Een lens is voor licht.",
        "Klopt: echopeiling gebruikt de tijd van de echo."
       ],
-      "uh": "Echopeiling gebruikt de tijd van de echo."
+      "uh": "Met echopeiling: Echopeiling gebruikt de tijd van de echo."
      },
      {
       "v": "Wat is de trillingstijd?",
@@ -1779,10 +1779,10 @@ var VAKKEN_VMBO = [
       "uo": [
        "Dat is de frequentie.",
        "Klopt: de duur van één trilling.",
-       "Nee, dat klopt niet.",
-       "Nee, dat klopt niet."
+       "Nee, het juiste antwoord is «De tijd van één trilling».",
+       "Nee, het juiste antwoord is «De tijd van één trilling»."
       ],
-      "uh": "De duur van één trilling."
+      "uh": "De tijd van één trilling: De duur van één trilling."
      },
      {
       "v": "Wat is de amplitude?",
@@ -1796,10 +1796,10 @@ var VAKKEN_VMBO = [
       "d": 2,
       "u": "De grootte van de uitwijking.",
       "uo": [
-       "Nee, dat klopt niet.",
-       "Nee, dat klopt niet.",
+       "Nee, het juiste antwoord is «De grootte van de uitwijking».",
+       "Nee, het juiste antwoord is «De grootte van de uitwijking».",
        "Klopt: de grootte van de uitwijking.",
-       "Nee, dat klopt niet."
+       "Nee, het juiste antwoord is «De grootte van de uitwijking»."
       ],
       "uh": "De grootte van de uitwijking."
      },
@@ -1816,11 +1816,11 @@ var VAKKEN_VMBO = [
       "u": "Ongeveer 340 m/s.",
       "uo": [
        "Klopt: ongeveer 340 m/s.",
-       "Te laag.",
-       "Te hoog.",
+       "Te laag, het juiste antwoord is «340 m/s».",
+       "Te hoog, het juiste antwoord is «340 m/s».",
        "Veel te laag."
       ],
-      "uh": "Ongeveer 340 m/s."
+      "uh": "340 m/s: Ongeveer 340 m/s."
      },
      {
       "v": "Een lage bromtoon heeft een...",
@@ -1836,10 +1836,10 @@ var VAKKEN_VMBO = [
       "uo": [
        "Nee, dat is een hoge toon.",
        "Dat gaat over hardheid.",
-       "Nee, dat klopt niet.",
+       "Nee, het juiste antwoord is «lage frequentie».",
        "Klopt: een lage toon heeft een lage frequentie."
       ],
-      "uh": "Een lage toon heeft een lage frequentie."
+      "uh": "lage frequentie: Een lage toon heeft een lage frequentie."
      }
     ],
     "begrippen": [
@@ -1921,10 +1921,10 @@ var VAKKEN_VMBO = [
       "d": 1,
       "u": "Een duw of trek op een voorwerp.",
       "uo": [
-       "Nee, dat klopt niet.",
+       "Nee, het juiste antwoord is «Een duw of trek».",
        "Klopt: een duw of trek op een voorwerp.",
        "Snelheid is iets anders.",
-       "Nee, dat klopt niet."
+       "Nee, het juiste antwoord is «Een duw of trek»."
       ],
       "uh": "Een duw of trek op een voorwerp."
      },
@@ -1945,7 +1945,7 @@ var VAKKEN_VMBO = [
        "Klopt: kracht in newton.",
        "Watt is vermogen."
       ],
-      "uh": "Kracht in newton."
+      "uh": "In newton: Kracht in newton."
      },
      {
       "v": "Wat is de zwaartekracht?",
@@ -1961,10 +1961,10 @@ var VAKKEN_VMBO = [
       "uo": [
        "Klopt: de aarde trekt aan massa.",
        "Wrijving is iets anders.",
-       "Nee, dat klopt niet.",
-       "Nee, dat klopt niet."
+       "Nee, het juiste antwoord is «De aantrekking van de aarde».",
+       "Nee, het juiste antwoord is «De aantrekking van de aarde»."
       ],
-      "uh": "De aarde trekt aan massa."
+      "uh": "De aantrekking van de aarde: De aarde trekt aan massa."
      },
      {
       "v": "Twee even grote krachten heffen elkaar op. Wat is er dan?",
@@ -1978,12 +1978,12 @@ var VAKKEN_VMBO = [
       "d": 2,
       "u": "De krachten zijn in evenwicht.",
       "uo": [
-       "Nee, dat klopt niet.",
-       "Nee, dat klopt niet.",
+       "Nee, het juiste antwoord is «Evenwicht».",
+       "Nee, het juiste antwoord is «Evenwicht».",
        "Niet per se.",
        "Klopt: de krachten zijn in evenwicht."
       ],
-      "uh": "De krachten zijn in evenwicht."
+      "uh": "Evenwicht: De krachten zijn in evenwicht."
      },
      {
       "v": "Wat doet een hefboom?",
@@ -1999,8 +1999,8 @@ var VAKKEN_VMBO = [
       "uo": [
        "Niet altijd verkleinen.",
        "Klopt: met weinig kracht een zware last tillen.",
-       "Nee, dat klopt niet.",
-       "Nee, dat klopt niet."
+       "Nee, het juiste antwoord is «Met weinig kracht veel tillen».",
+       "Nee, het juiste antwoord is «Met weinig kracht veel tillen»."
       ],
       "uh": "Met weinig kracht een zware last tillen."
      },
@@ -2016,8 +2016,8 @@ var VAKKEN_VMBO = [
       "d": 2,
       "u": "Om het draaipunt.",
       "uo": [
-       "Nee, dat klopt niet.",
-       "Nee, dat klopt niet.",
+       "Nee, het juiste antwoord is «Om het draaipunt».",
+       "Nee, het juiste antwoord is «Om het draaipunt».",
        "Klopt: om het draaipunt.",
        "De arm is de afstand."
       ],
@@ -2038,7 +2038,7 @@ var VAKKEN_VMBO = [
        "Klopt: reactieafstand plus remweg.",
        "Dat is maar een deel.",
        "Dat is een tijd.",
-       "Nee, dat klopt niet."
+       "Nee, het juiste antwoord is «Reactieafstand plus remweg»."
       ],
       "uh": "Reactieafstand plus remweg."
      },
@@ -2054,12 +2054,12 @@ var VAKKEN_VMBO = [
       "d": 3,
       "u": "Bij hogere snelheid wordt de remweg langer.",
       "uo": [
-       "Nee, dat klopt niet.",
-       "Nee, dat klopt niet.",
-       "Nee, dat klopt niet.",
+       "Nee, het juiste antwoord is «Die wordt langer».",
+       "Nee, het juiste antwoord is «Die wordt langer».",
+       "Nee, het juiste antwoord is «Die wordt langer».",
        "Klopt: bij hogere snelheid wordt de remweg langer."
       ],
-      "uh": "Bij hogere snelheid wordt de remweg langer."
+      "uh": "Die wordt langer: Bij hogere snelheid wordt de remweg langer."
      },
      {
       "v": "Wat is de reactietijd?",
@@ -2075,8 +2075,8 @@ var VAKKEN_VMBO = [
       "uo": [
        "Dat is de remtijd.",
        "Klopt: de tijd tussen zien en reageren.",
-       "Nee, dat klopt niet.",
-       "Nee, dat klopt niet."
+       "Nee, het juiste antwoord is «De tijd tussen zien en reageren».",
+       "Nee, het juiste antwoord is «De tijd tussen zien en reageren»."
       ],
       "uh": "De tijd tussen zien en reageren."
      },
@@ -2092,10 +2092,10 @@ var VAKKEN_VMBO = [
       "d": 2,
       "u": "De som van alle krachten samen.",
       "uo": [
-       "Nee, dat klopt niet.",
+       "Nee, het juiste antwoord is «De som van alle krachten».",
        "Wrijving is één kracht.",
        "Klopt: de som van alle krachten samen.",
-       "Nee, dat klopt niet."
+       "Nee, het juiste antwoord is «De som van alle krachten»."
       ],
       "uh": "De som van alle krachten samen."
      },
@@ -2112,11 +2112,11 @@ var VAKKEN_VMBO = [
       "u": "Wrijving werkt beweging tegen.",
       "uo": [
        "Klopt: wrijving werkt beweging tegen.",
-       "Juist niet.",
-       "Nee, dat klopt niet.",
-       "Nee, dat klopt niet."
+       "Juist niet, het juiste antwoord is «Beweging tegenwerken».",
+       "Nee, het juiste antwoord is «Beweging tegenwerken».",
+       "Nee, het juiste antwoord is «Beweging tegenwerken»."
       ],
-      "uh": "Wrijving werkt beweging tegen."
+      "uh": "Beweging tegenwerken: Wrijving werkt beweging tegen."
      },
      {
       "v": "Waarom is meer afstand houden veiliger bij hoge snelheid?",
@@ -2130,12 +2130,12 @@ var VAKKEN_VMBO = [
       "d": 3,
       "u": "Bij hoge snelheid is de stopafstand groter.",
       "uo": [
-       "Nee, dat klopt niet.",
+       "Nee, het juiste antwoord is «De stopafstand is groter».",
        "Juist langer.",
        "Er is wel risico.",
        "Klopt: bij hoge snelheid is de stopafstand groter."
       ],
-      "uh": "Bij hoge snelheid is de stopafstand groter."
+      "uh": "De stopafstand is groter: Bij hoge snelheid is de stopafstand groter."
      }
     ],
     "begrippen": [
@@ -2221,7 +2221,7 @@ var VAKKEN_VMBO = [
        "Een cel hoort bij biologie.",
        "Een ion is een geladen atoom."
       ],
-      "uh": "Het juiste antwoord is: Een atoom."
+      "uh": "Een atoom: Het juiste antwoord is: Een atoom."
      },
      {
       "v": "Wat is een molecuul?",
@@ -2240,7 +2240,7 @@ var VAKKEN_VMBO = [
        "Klopt: een groepje atomen aan elkaar.",
        "Iets anders."
       ],
-      "uh": "Een groepje atomen aan elkaar."
+      "uh": "Atomen die aan elkaar zitten: Een groepje atomen aan elkaar."
      },
      {
       "v": "Wat is een element?",
@@ -2256,10 +2256,10 @@ var VAKKEN_VMBO = [
       "uo": [
        "Klopt: bestaat uit één soort atomen.",
        "Dat is een verbinding.",
-       "Nee, dat klopt niet.",
-       "Nee, dat klopt niet."
+       "Nee, het juiste antwoord is «Eén soort atomen».",
+       "Nee, het juiste antwoord is «Eén soort atomen»."
       ],
-      "uh": "Bestaat uit één soort atomen."
+      "uh": "Eén soort atomen: Bestaat uit één soort atomen."
      },
      {
       "v": "Water bestaat uit waterstof en zuurstof. Water is een...",
@@ -2274,11 +2274,11 @@ var VAKKEN_VMBO = [
       "u": "Meerdere soorten atomen verbonden.",
       "uo": [
        "Element is één soort atoom.",
-       "Nee, dat klopt niet.",
+       "Nee, het juiste antwoord is «verbinding».",
        "Een verbinding is geen mengsel.",
        "Klopt: meerdere soorten atomen verbonden."
       ],
-      "uh": "Meerdere soorten atomen verbonden."
+      "uh": "verbinding: Meerdere soorten atomen verbonden."
      },
      {
       "v": "Wat is een zuivere stof?",
@@ -2294,10 +2294,10 @@ var VAKKEN_VMBO = [
       "uo": [
        "Dat is een mengsel.",
        "Klopt: één soort deeltjes.",
-       "Nee, dat klopt niet.",
+       "Nee, het juiste antwoord is «Eén soort deeltjes».",
        "Een oplossing is een mengsel."
       ],
-      "uh": "Één soort deeltjes."
+      "uh": "Eén soort deeltjes: Één soort deeltjes."
      },
      {
       "v": "Wat is een mengsel?",
@@ -2312,9 +2312,9 @@ var VAKKEN_VMBO = [
       "u": "Meerdere soorten deeltjes door elkaar.",
       "uo": [
        "Dat is een zuivere stof.",
-       "Nee, dat klopt niet.",
+       "Nee, het juiste antwoord is «Meerdere stoffen door elkaar».",
        "Klopt: meerdere soorten deeltjes door elkaar.",
-       "Nee, dat klopt niet."
+       "Nee, het juiste antwoord is «Meerdere stoffen door elkaar»."
       ],
       "uh": "Meerdere soorten deeltjes door elkaar."
      },
@@ -2333,7 +2333,7 @@ var VAKKEN_VMBO = [
        "Klopt: het proton is positief.",
        "Het elektron is negatief.",
        "Het neutron is ongeladen.",
-       "Nee, dat klopt niet."
+       "Nee, het juiste antwoord is «Het proton»."
       ],
       "uh": "Het proton is positief."
      },
@@ -2349,8 +2349,8 @@ var VAKKEN_VMBO = [
       "d": 2,
       "u": "Het elektron is negatief.",
       "uo": [
-       "Positief.",
-       "Ongeladen.",
+       "Positief, het juiste antwoord is «Het elektron».",
+       "Ongeladen, het juiste antwoord is «Het elektron».",
        "Meestal neutraal.",
        "Klopt: het elektron is negatief."
       ],
@@ -2368,10 +2368,10 @@ var VAKKEN_VMBO = [
       "d": 2,
       "u": "In de atoomkern.",
       "uo": [
-       "Nee, dat klopt niet.",
+       "Nee, het juiste antwoord is «In de atoomkern».",
        "Klopt: in de atoomkern.",
-       "Nee, dat klopt niet.",
-       "Nee, dat klopt niet."
+       "Nee, het juiste antwoord is «In de atoomkern».",
+       "Nee, het juiste antwoord is «In de atoomkern»."
       ],
       "uh": "In de atoomkern."
      },
@@ -2388,9 +2388,9 @@ var VAKKEN_VMBO = [
       "u": "Een atoom met een elektrische lading.",
       "uo": [
        "Een ion is juist geladen.",
-       "Nee, dat klopt niet.",
+       "Nee, het juiste antwoord is «Een atoom met een lading».",
        "Klopt: een atoom met een elektrische lading.",
-       "Nee, dat klopt niet."
+       "Nee, het juiste antwoord is «Een atoom met een lading»."
       ],
       "uh": "Een atoom met een elektrische lading."
      },
@@ -2408,10 +2408,10 @@ var VAKKEN_VMBO = [
       "uo": [
        "Klopt: het water verdampt, het zout blijft achter.",
        "Werkt niet goed.",
-       "Nee, dat klopt niet.",
-       "Nee, dat klopt niet."
+       "Nee, het juiste antwoord is «Door indampen».",
+       "Nee, het juiste antwoord is «Door indampen»."
       ],
-      "uh": "Het water verdampt, het zout blijft achter."
+      "uh": "Door indampen: Het water verdampt, het zout blijft achter."
      },
      {
       "v": "Zuurstofgas bestaat uit één soort atomen. Het is een...",
@@ -2426,11 +2426,11 @@ var VAKKEN_VMBO = [
       "u": "Één soort atomen, dus een element.",
       "uo": [
        "Verbinding heeft meerdere soorten.",
-       "Nee, dat klopt niet.",
-       "Nee, dat klopt niet.",
+       "Nee, het juiste antwoord is «element».",
+       "Nee, het juiste antwoord is «element».",
        "Klopt: één soort atomen, dus een element."
       ],
-      "uh": "Één soort atomen, dus een element."
+      "uh": "element: Één soort atomen, dus een element."
      }
     ],
     "begrippen": [
@@ -2512,12 +2512,12 @@ var VAKKEN_VMBO = [
       "d": 2,
       "u": "Onstabiele kernen zenden straling uit.",
       "uo": [
-       "Nee, dat klopt niet.",
+       "Nee, het juiste antwoord is «Straling uit onstabiele kernen».",
        "Klopt: onstabiele kernen zenden straling uit.",
-       "Nee, dat klopt niet.",
-       "Nee, dat klopt niet."
+       "Nee, het juiste antwoord is «Straling uit onstabiele kernen».",
+       "Nee, het juiste antwoord is «Straling uit onstabiele kernen»."
       ],
-      "uh": "Onstabiele kernen zenden straling uit."
+      "uh": "Straling uit onstabiele kernen: Onstabiele kernen zenden straling uit."
      },
      {
       "v": "Welke straling is het meest doordringend?",
@@ -2534,7 +2534,7 @@ var VAKKEN_VMBO = [
        "Alfa is het minst doordringend.",
        "Beta zit ertussen.",
        "Klopt: gammastraling is zeer doordringend.",
-       "Nee, dat klopt niet."
+       "Nee, het juiste antwoord is «Gammastraling»."
       ],
       "uh": "Gammastraling is zeer doordringend."
      },
@@ -2553,9 +2553,9 @@ var VAKKEN_VMBO = [
        "Klopt: zware, positief geladen deeltjes.",
        "Dat is beta.",
        "Dat is gamma.",
-       "Nee, dat klopt niet."
+       "Nee, het juiste antwoord is «Zware, geladen deeltjes»."
       ],
-      "uh": "Zware, positief geladen deeltjes."
+      "uh": "Zware, geladen deeltjes: Zware, positief geladen deeltjes."
      },
      {
       "v": "Wat is de halveringstijd?",
@@ -2569,9 +2569,9 @@ var VAKKEN_VMBO = [
       "d": 3,
       "u": "De tijd waarin de helft van de kernen vervalt.",
       "uo": [
-       "Nee, dat klopt niet.",
+       "Nee, het juiste antwoord is «De tijd waarin de helft vervalt».",
        "Dosis is iets anders.",
-       "Nee, dat klopt niet.",
+       "Nee, het juiste antwoord is «De tijd waarin de helft vervalt».",
        "Klopt: de tijd waarin de helft van de kernen vervalt."
       ],
       "uh": "De tijd waarin de helft van de kernen vervalt."
@@ -2608,11 +2608,11 @@ var VAKKEN_VMBO = [
       "u": "Materiaal op of in je lichaam is besmetting.",
       "uo": [
        "Bestraling komt van buitenaf.",
-       "Nee, dat klopt niet.",
+       "Nee, het juiste antwoord is «besmetting».",
        "Een dosis is een hoeveelheid.",
        "Klopt: materiaal op of in je lichaam is besmetting."
       ],
-      "uh": "Materiaal op of in je lichaam is besmetting."
+      "uh": "besmetting: Materiaal op of in je lichaam is besmetting."
      },
      {
       "v": "Straling van buitenaf op je lichaam heet...",
@@ -2628,8 +2628,8 @@ var VAKKEN_VMBO = [
       "uo": [
        "Klopt: bestraling komt van buitenaf.",
        "Besmetting is op of in je lichaam.",
-       "Nee, dat klopt niet.",
-       "Nee, dat klopt niet."
+       "Nee, het juiste antwoord is «bestraling».",
+       "Nee, het juiste antwoord is «bestraling»."
       ],
       "uh": "Bestraling komt van buitenaf."
      },
@@ -2650,7 +2650,7 @@ var VAKKEN_VMBO = [
        "Die meet massa.",
        "Klopt: een geigerteller meet straling."
       ],
-      "uh": "Een geigerteller meet straling."
+      "uh": "Met een geigerteller: Een geigerteller meet straling."
      },
      {
       "v": "Wat is betastraling?",
@@ -2667,7 +2667,7 @@ var VAKKEN_VMBO = [
        "Dat is alfa.",
        "Klopt: snelle elektronen.",
        "Dat is gamma.",
-       "Nee, dat klopt niet."
+       "Nee, het juiste antwoord is «Snelle elektronen»."
       ],
       "uh": "Snelle elektronen."
      },
@@ -2683,12 +2683,12 @@ var VAKKEN_VMBO = [
       "d": 3,
       "u": "Ze kan deeltjes geladen maken en cellen beschadigen.",
       "uo": [
-       "Nee, dat klopt niet.",
+       "Nee, het juiste antwoord is «Ze kan cellen beschadigen».",
        "Niet vooral.",
        "Klopt: ze kan deeltjes geladen maken en cellen beschadigen.",
-       "Nee, dat klopt niet."
+       "Nee, het juiste antwoord is «Ze kan cellen beschadigen»."
       ],
-      "uh": "Ze kan deeltjes geladen maken en cellen beschadigen."
+      "uh": "Ze kan cellen beschadigen: Ze kan deeltjes geladen maken en cellen beschadigen."
      },
      {
       "v": "Wat is de dosis?",
@@ -2704,8 +2704,8 @@ var VAKKEN_VMBO = [
       "uo": [
        "Klopt: de hoeveelheid ontvangen straling.",
        "Iets anders.",
-       "Nee, dat klopt niet.",
-       "Nee, dat klopt niet."
+       "Nee, het juiste antwoord is «De hoeveelheid ontvangen straling».",
+       "Nee, het juiste antwoord is «De hoeveelheid ontvangen straling»."
       ],
       "uh": "De hoeveelheid ontvangen straling."
      },
@@ -2722,11 +2722,11 @@ var VAKKEN_VMBO = [
       "u": "Gamma is doordringend, dik lood helpt.",
       "uo": [
        "Papier houdt alfa tegen.",
-       "Nee, dat klopt niet.",
-       "Nee, dat klopt niet.",
+       "Nee, het juiste antwoord is «Een dikke laag lood».",
+       "Nee, het juiste antwoord is «Een dikke laag lood».",
        "Klopt: gamma is doordringend, dik lood helpt."
       ],
-      "uh": "Gamma is doordringend, dik lood helpt."
+      "uh": "Een dikke laag lood: Gamma is doordringend, dik lood helpt."
      }
     ],
     "begrippen": [
@@ -3525,7 +3525,7 @@ var VAKKEN_VMBO = [
        "Klopt: de lederhuid bevat zenuwen en bloedvaten.",
        "Een nagel is geen huidlaag."
       ],
-      "uh": "De lederhuid bevat zenuwen en bloedvaten."
+      "uh": "In de lederhuid: De lederhuid bevat zenuwen en bloedvaten."
      },
      {
       "v": "Als je het warm hebt ga je zweten. Welke klier doet dat?",
@@ -3563,7 +3563,7 @@ var VAKKEN_VMBO = [
        "Zuurstof nemen de longen op.",
        "Klopt: de huid beschermt het lichaam."
       ],
-      "uh": "De huid beschermt het lichaam."
+      "uh": "Beschermen: De huid beschermt het lichaam."
      },
      {
       "v": "Welke functie heeft het skelet, naast bescherming?",
@@ -3582,7 +3582,7 @@ var VAKKEN_VMBO = [
        "Zuurstof vervoeren doet het bloed.",
        "Voedsel opslaan is geen skeletfunctie."
       ],
-      "uh": "Het skelet geeft steun en vorm."
+      "uh": "Steun geven: Het skelet geeft steun en vorm."
      },
      {
       "v": "Het oor en de neus zijn stevig maar buigzaam. Wat is dat?",
@@ -3639,7 +3639,7 @@ var VAKKEN_VMBO = [
        "Kraakbeen zit in oor en neus.",
        "Klopt: talg houdt de huid soepel."
       ],
-      "uh": "Talg houdt de huid soepel."
+      "uh": "Door talg: Talg houdt de huid soepel."
      },
      {
       "v": "Alle botten samen noem je het...",
@@ -3658,7 +3658,7 @@ var VAKKEN_VMBO = [
        "Kraakbeen is steunweefsel.",
        "Het zenuwstelsel geeft prikkels door."
       ],
-      "uh": "Alle botten samen zijn het skelet."
+      "uh": "skelet: Alle botten samen zijn het skelet."
      },
      {
       "v": "Wat doet een talgklier?",
@@ -3677,7 +3677,7 @@ var VAKKEN_VMBO = [
        "Klopt: de talgklier geeft huidvet af.",
        "Botten maakt het beenmerg."
       ],
-      "uh": "De talgklier geeft huidvet af."
+      "uh": "Huidvet afgeven: De talgklier geeft huidvet af."
      },
      {
       "v": "Wat is kraakbeen?",
@@ -3696,7 +3696,7 @@ var VAKKEN_VMBO = [
        "Een huidlaag beschermt.",
        "Een bloedvat vervoert bloed."
       ],
-      "uh": "Kraakbeen is buigzaam steunweefsel."
+      "uh": "Buigzaam steunweefsel: Kraakbeen is buigzaam steunweefsel."
      },
      {
       "v": "Bij een schaafwond raakt vooral de buitenste laag stuk. Welke?",
@@ -3772,7 +3772,7 @@ var VAKKEN_VMBO = [
        "Dat doen de zintuigen.",
        "Dat doen hart en huid."
       ],
-      "uh": "Steun geven en beschermen."
+      "uh": "Steun en bescherming: Steun geven en beschermen."
      },
      {
       "v": "Spierweefsel bestaat uit cellen die op elkaar lijken. Wat is het?",
@@ -3791,7 +3791,7 @@ var VAKKEN_VMBO = [
        "Een bot is iets anders.",
        "Klopt: gelijke cellen vormen een weefsel."
       ],
-      "uh": "Gelijke cellen vormen een weefsel."
+      "uh": "Een weefsel: Gelijke cellen vormen een weefsel."
      }
     ],
     "begrippen": [
@@ -3879,7 +3879,7 @@ var VAKKEN_VMBO = [
        "Klopt: een plant maakt glucose.",
        "Stikstof komt uit de bodem."
       ],
-      "uh": "Een plant maakt glucose."
+      "uh": "Glucose (suiker): Een plant maakt glucose."
      },
      {
       "v": "Wat is een producent in een voedselketen?",
@@ -3974,7 +3974,7 @@ var VAKKEN_VMBO = [
        "Ze maken geen licht.",
        "Bloed pompen doet een hart."
       ],
-      "uh": "Reducenten breken dode resten af."
+      "uh": "Ze breken ze af: Reducenten breken dode resten af."
      },
      {
       "v": "Wat heeft een plant nodig voor fotosynthese?",
@@ -4012,7 +4012,7 @@ var VAKKEN_VMBO = [
        "Een keten is geen kringloop.",
        "Klopt: koolstof in de koolstofkringloop."
       ],
-      "uh": "Koolstof in de koolstofkringloop."
+      "uh": "De koolstofkringloop: Koolstof in de koolstofkringloop."
      },
      {
       "v": "Een dier eet zowel planten als andere dieren. Wat is het?",
@@ -4050,7 +4050,7 @@ var VAKKEN_VMBO = [
        "Dat doen reducenten.",
        "Bloed pompen doet een hart."
       ],
-      "uh": "Planten maken zelf voedsel."
+      "uh": "Ze maken zelf hun voedsel: Planten maken zelf voedsel."
      },
      {
       "v": "Wat gebeurt er bij fotosynthese?",
@@ -4164,7 +4164,7 @@ var VAKKEN_VMBO = [
        "Suiker blijft in de plant.",
        "Klopt: er komt zuurstof vrij."
       ],
-      "uh": "Er komt zuurstof vrij."
+      "uh": "Zuurstof: Er komt zuurstof vrij."
      }
     ],
     "begrippen": [
@@ -4311,7 +4311,7 @@ var VAKKEN_VMBO = [
        "Benzine vervuilt.",
        "Bomen kappen schaadt de natuur."
       ],
-      "uh": "Hergebruiken is duurzaam."
+      "uh": "Grondstoffen hergebruiken: Hergebruiken is duurzaam."
      },
      {
       "v": "Wat is een broeikasgas?",
@@ -4330,7 +4330,7 @@ var VAKKEN_VMBO = [
        "Stikstof is geen broeikasgas.",
        "Waterstof speelt hier geen rol."
       ],
-      "uh": "CO2 houdt warmte vast."
+      "uh": "Koolstofdioxide: CO2 houdt warmte vast."
      },
      {
       "v": "Wat gebeurt er bij recycling?",
@@ -4368,7 +4368,7 @@ var VAKKEN_VMBO = [
        "Aardgas raakt op.",
        "Klopt: wind raakt niet op."
       ],
-      "uh": "Wind raakt niet op."
+      "uh": "Windenergie: Wind raakt niet op."
      },
      {
       "v": "Wat is kringloopdenken?",
@@ -4444,7 +4444,7 @@ var VAKKEN_VMBO = [
        "Uitputten is niet duurzaam.",
        "Klopt: ook voor de toekomst genoeg overhouden."
       ],
-      "uh": "Ook voor de toekomst genoeg overhouden."
+      "uh": "Genoeg overhouden voor later: Ook voor de toekomst genoeg overhouden."
      },
      {
       "v": "Wat helpt tegen het broeikaseffect?",
@@ -4501,7 +4501,7 @@ var VAKKEN_VMBO = [
        "Klopt: de rijkdom aan verschillende soorten.",
        "Alleen planten is te beperkt."
       ],
-      "uh": "De rijkdom aan verschillende soorten."
+      "uh": "De verscheidenheid aan soorten: De rijkdom aan verschillende soorten."
      },
      {
       "v": "Welke energiebron raakt niet op?",
@@ -4520,7 +4520,7 @@ var VAKKEN_VMBO = [
        "Aardolie raakt op.",
        "Klopt: de zon raakt niet op."
       ],
-      "uh": "De zon raakt niet op."
+      "uh": "Zonne-energie: De zon raakt niet op."
      },
      {
       "v": "Waarom is recycling goed voor het milieu?",
@@ -4758,7 +4758,7 @@ var VAKKEN_VMBO = [
        "Pompen doet het hart.",
        "Klopt: de strekspier strekt een gewricht."
       ],
-      "uh": "De strekspier strekt een gewricht."
+      "uh": "Een gewricht strekken: De strekspier strekt een gewricht."
      },
      {
       "v": "Waarmee zijn de botuiteinden bedekt zodat ze soepel bewegen?",
@@ -4777,7 +4777,7 @@ var VAKKEN_VMBO = [
        "Klopt: kraakbeen bedekt de botuiteinden.",
        "Bloed voedt het weefsel."
       ],
-      "uh": "Kraakbeen bedekt de botuiteinden."
+      "uh": "Met kraakbeen: Kraakbeen bedekt de botuiteinden."
      },
      {
       "v": "Wat vermindert de wrijving in een gewricht?",
@@ -4834,7 +4834,7 @@ var VAKKEN_VMBO = [
        "Een bot beweegt niet zelf.",
        "Klopt: een buigspier en een strekspier samen."
       ],
-      "uh": "Een buigspier en een strekspier samen."
+      "uh": "Door een buig- en strekspier: Een buigspier en een strekspier samen."
      },
      {
       "v": "Wat is een pees?",
@@ -4853,7 +4853,7 @@ var VAKKEN_VMBO = [
        "Klopt: een pees verbindt spier en bot.",
        "Dat is de huid."
       ],
-      "uh": "Een pees verbindt spier en bot."
+      "uh": "Weefsel dat spier en bot verbindt: Een pees verbindt spier en bot."
      },
      {
       "v": "Welke twee delen zorgen samen voor beweging?",
@@ -4872,7 +4872,7 @@ var VAKKEN_VMBO = [
        "Hart en longen doen iets anders.",
        "Nieren en blaas zuiveren."
       ],
-      "uh": "Het skelet en de spieren."
+      "uh": "Skelet en spieren: Het skelet en de spieren."
      },
      {
       "v": "Wat gebeurt er als de buigspier samentrekt?",
@@ -4910,7 +4910,7 @@ var VAKKEN_VMBO = [
        "Bloed is vloeibaar.",
        "Klopt: kraakbeen zit in het oor en de neus."
       ],
-      "uh": "Kraakbeen zit in het oor en de neus."
+      "uh": "In het oor: Kraakbeen zit in het oor en de neus."
      }
     ],
     "begrippen": [
@@ -5056,7 +5056,7 @@ var VAKKEN_VMBO = [
        "Filteren doen de nieren.",
        "Klopt: het hart pompt het bloed rond."
       ],
-      "uh": "Het hart pompt het bloed rond."
+      "uh": "Bloed rondpompen: Het hart pompt het bloed rond."
      },
      {
       "v": "Wat nemen de darmvlokken op?",
@@ -5075,7 +5075,7 @@ var VAKKEN_VMBO = [
        "Afval verlaat juist het lichaam.",
        "Botten worden niet opgenomen."
       ],
-      "uh": "Darmvlokken nemen voedingsstoffen op."
+      "uh": "Voedingsstoffen: Darmvlokken nemen voedingsstoffen op."
      },
      {
       "v": "Welk bloedvat voert bloed naar het hart toe?",
@@ -5113,7 +5113,7 @@ var VAKKEN_VMBO = [
        "Voedingsstoffen worden juist gebruikt.",
        "Botten zitten niet in het bloed."
       ],
-      "uh": "De nieren filteren afvalstoffen."
+      "uh": "Afvalstoffen: De nieren filteren afvalstoffen."
      },
      {
       "v": "Wat gebeurt er in de longblaasjes?",
@@ -5189,7 +5189,7 @@ var VAKKEN_VMBO = [
        "De huid beschermt.",
        "Nagels spelen geen rol."
       ],
-      "uh": "Een hormoon werkt via het bloed."
+      "uh": "Via het bloed: Een hormoon werkt via het bloed."
      },
      {
       "v": "Waar voert een slagader het bloed heen?",
@@ -5208,7 +5208,7 @@ var VAKKEN_VMBO = [
        "Niet specifiek naar de longen.",
        "Klopt: een slagader voert bloed van het hart af."
       ],
-      "uh": "Een slagader voert bloed van het hart af."
+      "uh": "Van het hart af: Een slagader voert bloed van het hart af."
      },
      {
       "v": "Waar worden voedingsstoffen in het bloed opgenomen?",
@@ -5246,7 +5246,7 @@ var VAKKEN_VMBO = [
        "Klopt: een haarvat is een heel dun bloedvat.",
        "Een zenuw geeft prikkels door."
       ],
-      "uh": "Een haarvat is een heel dun bloedvat."
+      "uh": "Een heel dun bloedvat: Een haarvat is een heel dun bloedvat."
      },
      {
       "v": "Wat vervoert het bloed naar de cellen?",
@@ -5395,7 +5395,7 @@ var VAKKEN_VMBO = [
        "Klopt: gist laat het deeg rijzen.",
        "Gist koelt niet."
       ],
-      "uh": "Gist laat het deeg rijzen."
+      "uh": "Het laat het deeg rijzen: Gist laat het deeg rijzen."
      },
      {
       "v": "Welk micro-organisme maakt van melk yoghurt?",
@@ -5433,7 +5433,7 @@ var VAKKEN_VMBO = [
        "Virussen maken juist ziek.",
        "Klopt: sommige schimmels maken antibiotica."
       ],
-      "uh": "Sommige schimmels maken antibiotica."
+      "uh": "Van schimmels: Sommige schimmels maken antibiotica."
      },
      {
       "v": "Waartegen werkt een antibioticum?",
@@ -5452,7 +5452,7 @@ var VAKKEN_VMBO = [
        "Niet tegen honger.",
        "Niet tegen dorst."
       ],
-      "uh": "Een antibioticum doodt of remt bacteriën."
+      "uh": "Tegen bacteriën: Een antibioticum doodt of remt bacteriën."
      },
      {
       "v": "Wat is genetische modificatie?",
@@ -5490,7 +5490,7 @@ var VAKKEN_VMBO = [
        "Bacteriën sporten niet.",
        "Bacteriën rekenen niet."
       ],
-      "uh": "Gm-bacteriën maken insuline."
+      "uh": "Om insuline te maken: Gm-bacteriën maken insuline."
      },
      {
       "v": "Wat is gisting?",
@@ -5528,7 +5528,7 @@ var VAKKEN_VMBO = [
        "Bloed maakt het beenmerg.",
        "Spieren groeien door training."
       ],
-      "uh": "Sommige schimmels maken antibiotica."
+      "uh": "Antibiotica: Sommige schimmels maken antibiotica."
      },
      {
       "v": "Wat is insuline?",
@@ -5547,7 +5547,7 @@ var VAKKEN_VMBO = [
        "Klopt: insuline regelt de bloedsuiker.",
        "Insuline is geen antibioticum."
       ],
-      "uh": "Insuline regelt de bloedsuiker."
+      "uh": "Een hormoon voor de bloedsuiker: Insuline regelt de bloedsuiker."
      },
      {
       "v": "Wat is een voordeel van gm-gewassen?",
@@ -5566,7 +5566,7 @@ var VAKKEN_VMBO = [
        "Ze groeien juist wel.",
        "Dat is onmogelijk."
       ],
-      "uh": "Bijvoorbeeld beter tegen droogte."
+      "uh": "Beter tegen droogte: Bijvoorbeeld beter tegen droogte."
      },
      {
       "v": "Wat gebeurt er met melk door melkzuurbacteriën?",
@@ -5604,7 +5604,7 @@ var VAKKEN_VMBO = [
        "Grootte is niet het punt.",
        "Bij resistentie gaan ze juist niet dood."
       ],
-      "uh": "Ongevoelig voor antibiotica."
+      "uh": "Ze zijn ongevoelig voor antibiotica: Ongevoelig voor antibiotica."
      },
      {
       "v": "Wat doet een vaccin?",
@@ -5623,7 +5623,7 @@ var VAKKEN_VMBO = [
        "Klopt: een vaccin traint de afweer.",
        "Het maakt je juist niet ziek."
       ],
-      "uh": "Een vaccin traint de afweer."
+      "uh": "Het traint je afweer: Een vaccin traint de afweer."
      },
      {
       "v": "Wat is een bacterie?",
@@ -5762,7 +5762,7 @@ var VAKKEN_VMBO = [
        "Lenen is iets anders.",
        "Belasting is iets anders."
       ],
-      "uh": "Wat je met je inkomen kunt kopen."
+      "uh": "Wat je kunt kopen: Wat je met je inkomen kunt kopen."
      },
      {
       "v": "Wat gebeurt er bij inflatie?",
@@ -5781,7 +5781,7 @@ var VAKKEN_VMBO = [
        "Lonen dalen niet automatisch.",
        "Geld verdwijnt niet."
       ],
-      "uh": "Bij inflatie stijgen de prijzen."
+      "uh": "De prijzen stijgen: Bij inflatie stijgen de prijzen."
      },
      {
       "v": "Wat is een indexcijfer?",
@@ -5800,7 +5800,7 @@ var VAKKEN_VMBO = [
        "Klopt: een verandering ten opzichte van een basisjaar (100).",
        "Geen muntsoort."
       ],
-      "uh": "Een verandering ten opzichte van een basisjaar (100)."
+      "uh": "Een getal dat een verandering toont: Een verandering ten opzichte van een basisjaar (100)."
      },
      {
       "v": "Waarvoor betaal je premie?",
@@ -5819,7 +5819,7 @@ var VAKKEN_VMBO = [
        "Sparen kost geen premie.",
        "Klopt: premie betaal je voor een verzekering."
       ],
-      "uh": "Premie betaal je voor een verzekering."
+      "uh": "Voor een verzekering: Premie betaal je voor een verzekering."
      },
      {
       "v": "Wat is je eigen risico bij een verzekering?",
@@ -5838,7 +5838,7 @@ var VAKKEN_VMBO = [
        "De verzekeraar dekt de rest.",
        "Sparen is iets anders."
       ],
-      "uh": "Het deel van de schade dat je zelf betaalt."
+      "uh": "Het deel dat je zelf betaalt: Het deel van de schade dat je zelf betaalt."
      },
      {
       "v": "Je prijzen stijgen 5%, je loon 2%. Wat gebeurt met je koopkracht?",
@@ -5857,7 +5857,7 @@ var VAKKEN_VMBO = [
        "Nee, er is een verschil.",
        "Koopkracht verdwijnt niet."
       ],
-      "uh": "Je koopkracht daalt."
+      "uh": "Die daalt: Je koopkracht daalt."
      },
      {
       "v": "Wat is het verschil tussen sparen en uitgeven?",
@@ -5914,7 +5914,7 @@ var VAKKEN_VMBO = [
        "Sparen is iets anders.",
        "Uitgaven zijn iets anders."
       ],
-      "uh": "Inkomen gecorrigeerd voor inflatie."
+      "uh": "Inkomen na inflatie: Inkomen gecorrigeerd voor inflatie."
      },
      {
       "v": "Wat betekent deflatie?",
@@ -5933,7 +5933,7 @@ var VAKKEN_VMBO = [
        "Lonen zijn iets anders.",
        "Belasting is iets anders."
       ],
-      "uh": "Bij deflatie dalen de prijzen."
+      "uh": "Prijzen dalen: Bij deflatie dalen de prijzen."
      },
      {
       "v": "Waarom sluit je een verzekering af?",
@@ -5952,7 +5952,7 @@ var VAKKEN_VMBO = [
        "Klopt: bescherming tegen grote onverwachte kosten.",
        "Belasting is iets anders."
       ],
-      "uh": "Bescherming tegen grote onverwachte kosten."
+      "uh": "Om je te beschermen tegen grote kosten: Bescherming tegen grote onverwachte kosten."
      },
      {
       "v": "Wat is nominaal inkomen?",
@@ -6009,7 +6009,7 @@ var VAKKEN_VMBO = [
        "Lenen helpt niet blijvend.",
        "Hogere belasting helpt niet."
       ],
-      "uh": "Je loon stijgt harder dan de prijzen."
+      "uh": "Loon dat harder stijgt dan de prijzen: Je loon stijgt harder dan de prijzen."
      }
     ],
     "begrippen": [
@@ -6122,7 +6122,7 @@ var VAKKEN_VMBO = [
        "Klopt: bij online kopen heb je bedenktijd.",
        "Verzending is niet gegarandeerd gratis."
       ],
-      "uh": "Bij online kopen heb je bedenktijd."
+      "uh": "Bedenktijd om te retourneren: Bij online kopen heb je bedenktijd."
      },
      {
       "v": "Wat doet de Consumentenbond?",
@@ -6141,7 +6141,7 @@ var VAKKEN_VMBO = [
        "Dat doet een bank.",
        "Dat doet een fabriek."
       ],
-      "uh": "Test producten en geeft advies."
+      "uh": "Producten testen en adviseren: Test producten en geeft advies."
      },
      {
       "v": "Wat laat een keurmerk zien?",
@@ -6160,7 +6160,7 @@ var VAKKEN_VMBO = [
        "Niet per se de houdbaarheid.",
        "Klopt: dat een product aan bepaalde eisen voldoet."
       ],
-      "uh": "Dat een product aan bepaalde eisen voldoet."
+      "uh": "Dat het aan eisen voldoet: Dat een product aan bepaalde eisen voldoet."
      },
      {
       "v": "Wat is een koopovereenkomst?",
@@ -6217,7 +6217,7 @@ var VAKKEN_VMBO = [
        "Lenen is iets anders.",
        "Belasting is iets anders."
       ],
-      "uh": "De periode om een aankoop te annuleren."
+      "uh": "Tijd om een aankoop te annuleren: De periode om een aankoop te annuleren."
      },
      {
       "v": "Wat zijn algemene voorwaarden?",
@@ -6293,7 +6293,7 @@ var VAKKEN_VMBO = [
        "Ruilen is iets anders.",
        "Huren is iets anders."
       ],
-      "uh": "Kopen zonder in de winkel te zijn."
+      "uh": "Kopen via internet of telefoon: Kopen zonder in de winkel te zijn."
      },
      {
       "v": "Waarom zijn consumentenrechten belangrijk?",
@@ -6451,11 +6451,11 @@ var VAKKEN_VMBO = [
       "u": "Het werk in aparte taken opsplitsen.",
       "uo": [
        "Dat is juist het tegenovergestelde.",
-       "Onjuist.",
-       "Onjuist.",
+       "Onjuist, het juiste antwoord is «Werk in aparte taken opdelen».",
+       "Onjuist, het juiste antwoord is «Werk in aparte taken opdelen».",
        "Klopt: het werk in aparte taken opsplitsen."
       ],
-      "uh": "Het werk in aparte taken opsplitsen."
+      "uh": "Werk in aparte taken opdelen: Het werk in aparte taken opsplitsen."
      },
      {
       "v": "Wat gebeurt er door specialisatie?",
@@ -6469,12 +6469,12 @@ var VAKKEN_VMBO = [
       "d": 2,
       "u": "Je op één taak richten laat het beter gaan.",
       "uo": [
-       "Niet luier.",
+       "Niet luier, het juiste antwoord is «Werk gaat sneller en beter».",
        "Klopt: je op één taak richten laat het beter gaan.",
-       "Onjuist.",
-       "Onjuist."
+       "Onjuist, het juiste antwoord is «Werk gaat sneller en beter».",
+       "Onjuist, het juiste antwoord is «Werk gaat sneller en beter»."
       ],
-      "uh": "Je op één taak richten laat het beter gaan."
+      "uh": "Werk gaat sneller en beter: Je op één taak richten laat het beter gaan."
      },
      {
       "v": "Wat is arbeidsproductiviteit?",
@@ -6569,7 +6569,7 @@ var VAKKEN_VMBO = [
        "Klopt: de vakbond komt op voor werknemers.",
        "Dat doet een bank."
       ],
-      "uh": "De vakbond komt op voor werknemers."
+      "uh": "Opkomen voor werknemers: De vakbond komt op voor werknemers."
      },
      {
       "v": "Wat is een werknemer?",
@@ -6604,7 +6604,7 @@ var VAKKEN_VMBO = [
       "uo": [
        "Geen belasting.",
        "Geen verzekering.",
-       "Geen klant.",
+       "Geen klant, het juiste antwoord is «Een middel om te produceren».",
        "Klopt: een middel om mee te produceren, zoals arbeid."
       ],
       "uh": "Een middel om mee te produceren, zoals arbeid."
@@ -6693,7 +6693,7 @@ var VAKKEN_VMBO = [
        "Kosten zijn iets anders.",
        "Belasting is iets anders."
       ],
-      "uh": "De totale verkoopopbrengst, prijs maal aantal."
+      "uh": "Prijs maal aantal verkocht: De totale verkoopopbrengst, prijs maal aantal."
      },
      {
       "v": "Een winkel heeft € 5.000 omzet en € 3.500 kosten. Hoeveel winst?",
@@ -6712,7 +6712,7 @@ var VAKKEN_VMBO = [
        "Klopt: 5.000 − 3.500 = € 1.500.",
        "Dat zijn de kosten."
       ],
-      "uh": "5.000 − 3.500 = € 1.500."
+      "uh": "€ 1.500: 5.000 − 3.500 = € 1.500."
      },
      {
       "v": "Wat zijn constante kosten?",
@@ -6731,7 +6731,7 @@ var VAKKEN_VMBO = [
        "Omzet is iets anders.",
        "Winst is iets anders."
       ],
-      "uh": "Ze veranderen niet met de productie."
+      "uh": "Kosten die gelijk blijven: Ze veranderen niet met de productie."
      },
      {
       "v": "Wat zijn variabele kosten?",
@@ -6750,7 +6750,7 @@ var VAKKEN_VMBO = [
        "Verzekering is meestal constant.",
        "Klopt: ze bewegen mee met de productie."
       ],
-      "uh": "Ze bewegen mee met de productie."
+      "uh": "Kosten die meebewegen met de productie: Ze bewegen mee met de productie."
      },
      {
       "v": "Waarover betaal je btw?",
@@ -6769,7 +6769,7 @@ var VAKKEN_VMBO = [
        "Over loon betaal je loonbelasting.",
        "Niet over een lening."
       ],
-      "uh": "Btw zit op de verkoopprijs."
+      "uh": "Over de verkoopprijs: Btw zit op de verkoopprijs."
      },
      {
       "v": "Wat is winst?",
@@ -6788,7 +6788,7 @@ var VAKKEN_VMBO = [
        "Klopt: winst is omzet min kosten.",
        "De prijs van één product."
       ],
-      "uh": "Winst is omzet min kosten."
+      "uh": "Omzet min kosten: Winst is omzet min kosten."
      },
      {
       "v": "Wat is de winstmarge?",
@@ -6807,7 +6807,7 @@ var VAKKEN_VMBO = [
        "Belasting is iets anders.",
        "Huur is een kostenpost."
       ],
-      "uh": "Het verschil tussen verkoop- en inkoopprijs."
+      "uh": "Verkoopprijs min inkoopprijs: Het verschil tussen verkoop- en inkoopprijs."
      },
      {
       "v": "Wat betekent break-even?",
@@ -6826,7 +6826,7 @@ var VAKKEN_VMBO = [
        "Niet per se de hoogste.",
        "Klopt: de omzet is precies gelijk aan de kosten."
       ],
-      "uh": "De omzet is precies gelijk aan de kosten."
+      "uh": "Omzet gelijk aan de kosten: De omzet is precies gelijk aan de kosten."
      },
      {
       "v": "Wat is het verschil tussen verkoop- en inkoopprijs?",
@@ -6845,7 +6845,7 @@ var VAKKEN_VMBO = [
        "Btw is een belasting.",
        "Huur is een kostenpost."
       ],
-      "uh": "Dat verschil is de winstmarge."
+      "uh": "De winstmarge: Dat verschil is de winstmarge."
      },
      {
       "v": "Wat zijn kosten?",
@@ -6864,7 +6864,7 @@ var VAKKEN_VMBO = [
        "Klopt: alles wat je uitgeeft om te produceren.",
        "Belasting is maar een deel."
       ],
-      "uh": "Alles wat je uitgeeft om te produceren."
+      "uh": "Wat je uitgeeft om te produceren: Alles wat je uitgeeft om te produceren."
      },
      {
       "v": "Wat is brutowinst?",
@@ -6883,7 +6883,7 @@ var VAKKEN_VMBO = [
        "Premie hoort bij verzekeren.",
        "Loon is iets anders."
       ],
-      "uh": "De omzet min de inkoopwaarde."
+      "uh": "Omzet min inkoopwaarde: De omzet min de inkoopwaarde."
      },
      {
       "v": "Waarom betaalt een winkel btw af?",
@@ -6902,7 +6902,7 @@ var VAKKEN_VMBO = [
        "Btw is geen loon.",
        "Klopt: btw draag je af aan de overheid."
       ],
-      "uh": "Btw draag je af aan de overheid."
+      "uh": "Als belasting aan de overheid: Btw draag je af aan de overheid."
      }
     ],
     "begrippen": [
@@ -6988,7 +6988,7 @@ var VAKKEN_VMBO = [
        "Niet om te sparen.",
        "Niet om te lenen."
       ],
-      "uh": "Om wegen, onderwijs en veiligheid te betalen."
+      "uh": "Om collectieve voorzieningen te betalen: Om wegen, onderwijs en veiligheid te betalen."
      },
      {
       "v": "Wat is een directe belasting?",
@@ -7007,7 +7007,7 @@ var VAKKEN_VMBO = [
        "Klopt: directe belasting gaat over inkomen of winst.",
        "Een keurmerk is geen belasting."
       ],
-      "uh": "Directe belasting gaat over inkomen of winst."
+      "uh": "Belasting op inkomen: Directe belasting gaat over inkomen of winst."
      },
      {
       "v": "Wat is een indirecte belasting?",
@@ -7026,7 +7026,7 @@ var VAKKEN_VMBO = [
        "Een subsidie is geen belasting.",
        "Een uitkering is geen belasting."
       ],
-      "uh": "Die zit in de prijs, zoals btw."
+      "uh": "Belasting in de prijs (btw): Die zit in de prijs, zoals btw."
      },
      {
       "v": "Wat is een collectieve voorziening?",
@@ -7079,11 +7079,11 @@ var VAKKEN_VMBO = [
       "u": "Geld van de overheid om iets te stimuleren.",
       "uo": [
        "Geen belasting.",
-       "Geen boete.",
+       "Geen boete, het juiste antwoord is «Geld om iets te stimuleren».",
        "Klopt: geld van de overheid om iets te stimuleren.",
        "Geen lening."
       ],
-      "uh": "Geld van de overheid om iets te stimuleren."
+      "uh": "Geld om iets te stimuleren: Geld van de overheid om iets te stimuleren."
      },
      {
       "v": "Wat is een uitkering?",
@@ -7102,7 +7102,7 @@ var VAKKEN_VMBO = [
        "Geen keurmerk.",
        "Een premie is iets anders."
       ],
-      "uh": "Geld van de overheid voor wie te weinig inkomen heeft."
+      "uh": "Geld bij te weinig inkomen: Geld van de overheid voor wie te weinig inkomen heeft."
      },
      {
       "v": "Wat staat er in de begroting van de overheid?",
@@ -7121,7 +7121,7 @@ var VAKKEN_VMBO = [
        "Niet de rente.",
        "Klopt: de verwachte inkomsten en uitgaven."
       ],
-      "uh": "De verwachte inkomsten en uitgaven."
+      "uh": "Verwachte inkomsten en uitgaven: De verwachte inkomsten en uitgaven."
      },
      {
       "v": "Wat is de staatsschuld?",
@@ -7140,7 +7140,7 @@ var VAKKEN_VMBO = [
        "Niet de belasting.",
        "De begroting is een plan."
       ],
-      "uh": "Het totale bedrag dat de overheid heeft geleend."
+      "uh": "Wat de overheid heeft geleend: Het totale bedrag dat de overheid heeft geleend."
      },
      {
       "v": "Wat hoort bij infrastructuur?",
@@ -7154,12 +7154,12 @@ var VAKKEN_VMBO = [
       "d": 1,
       "u": "Voorzieningen zoals wegen, bruggen en spoor.",
       "uo": [
-       "Nee, dat klopt niet.",
-       "Nee, dat klopt niet.",
+       "Nee, het juiste antwoord is «Wegen en bruggen».",
+       "Nee, het juiste antwoord is «Wegen en bruggen».",
        "Klopt: voorzieningen zoals wegen, bruggen en spoor.",
-       "Nee, dat klopt niet."
+       "Nee, het juiste antwoord is «Wegen en bruggen»."
       ],
-      "uh": "Voorzieningen zoals wegen, bruggen en spoor."
+      "uh": "Wegen en bruggen: Voorzieningen zoals wegen, bruggen en spoor."
      },
      {
       "v": "Wat is een overheidstaak?",
@@ -7178,7 +7178,7 @@ var VAKKEN_VMBO = [
        "Dat is iets anders.",
        "Dat is iets anders."
       ],
-      "uh": "Een taak die de overheid voor de samenleving doet."
+      "uh": "Een taak voor de samenleving: Een taak die de overheid voor de samenleving doet."
      },
      {
       "v": "Wat is het verschil tussen subsidie en uitkering?",
@@ -7285,7 +7285,7 @@ var VAKKEN_VMBO = [
        "Dat is iets anders.",
        "Dat is iets anders."
       ],
-      "uh": "Invoer van goederen uit het buitenland."
+      "uh": "Invoer uit het buitenland: Invoer van goederen uit het buitenland."
      },
      {
       "v": "Wat is export?",
@@ -7304,7 +7304,7 @@ var VAKKEN_VMBO = [
        "Klopt: uitvoer van goederen naar het buitenland.",
        "Geen lening."
       ],
-      "uh": "Uitvoer van goederen naar het buitenland."
+      "uh": "Uitvoer naar het buitenland: Uitvoer van goederen naar het buitenland."
      },
      {
       "v": "Wat is een wisselkoers?",
@@ -7338,11 +7338,11 @@ var VAKKEN_VMBO = [
       "u": "De gezamenlijke munt van veel EU-landen.",
       "uo": [
        "Geen belasting.",
-       "Geen bank.",
+       "Geen bank, het juiste antwoord is «De munt van veel EU-landen».",
        "Een koers is iets anders.",
        "Klopt: de gezamenlijke munt van veel EU-landen."
       ],
-      "uh": "De gezamenlijke munt van veel EU-landen."
+      "uh": "De munt van veel EU-landen: De gezamenlijke munt van veel EU-landen."
      },
      {
       "v": "Wat is de Europese Unie?",
@@ -7376,7 +7376,7 @@ var VAKKEN_VMBO = [
       "u": "Handel zonder belemmeringen tussen landen.",
       "uo": [
        "Nee, juist zonder drempels.",
-       "Nee, dat klopt niet.",
+       "Nee, het juiste antwoord is «Handel zonder belemmeringen».",
        "Klopt: handel zonder belemmeringen tussen landen.",
        "Nee, ook met het buitenland."
       ],
@@ -7396,10 +7396,10 @@ var VAKKEN_VMBO = [
       "uo": [
        "Klopt: eigen bedrijven beschermen tegen buitenlandse concurrentie.",
        "Dat is vrijhandel.",
-       "Onjuist.",
-       "Onjuist."
+       "Onjuist, het juiste antwoord is «De eigen markt beschermen».",
+       "Onjuist, het juiste antwoord is «De eigen markt beschermen»."
       ],
-      "uh": "Eigen bedrijven beschermen tegen buitenlandse concurrentie."
+      "uh": "De eigen markt beschermen: Eigen bedrijven beschermen tegen buitenlandse concurrentie."
      },
      {
       "v": "Wat is de handelsbalans?",
@@ -7413,7 +7413,7 @@ var VAKKEN_VMBO = [
       "d": 3,
       "u": "Het verschil tussen export en import.",
       "uo": [
-       "Nee, dat klopt niet.",
+       "Nee, het juiste antwoord is «Het verschil tussen export en import».",
        "De begroting is iets anders.",
        "Een koers is iets anders.",
        "Klopt: het verschil tussen export en import."
@@ -7434,8 +7434,8 @@ var VAKKEN_VMBO = [
       "uo": [
        "Juist het tegenovergestelde.",
        "Klopt: landen raken wereldwijd steeds meer verweven.",
-       "Nee, dat klopt niet.",
-       "Nee, dat klopt niet."
+       "Nee, het juiste antwoord is «Landen raken wereldwijd verweven».",
+       "Nee, het juiste antwoord is «Landen raken wereldwijd verweven»."
       ],
       "uh": "Landen raken wereldwijd steeds meer verweven."
      },
@@ -7614,9 +7614,9 @@ var VAKKEN_VMBO = [
       "u": "Wie vervuilt betaalt zelf de kosten.",
       "uo": [
        "Klopt: wie vervuilt betaalt zelf de kosten.",
-       "Nee, dat klopt niet.",
-       "Nee, dat klopt niet.",
-       "Nee, dat klopt niet."
+       "Nee, het juiste antwoord is «Wie vervuilt, betaalt».",
+       "Nee, het juiste antwoord is «Wie vervuilt, betaalt».",
+       "Nee, het juiste antwoord is «Wie vervuilt, betaalt»."
       ],
       "uh": "Wie vervuilt betaalt zelf de kosten."
      },
@@ -7632,12 +7632,12 @@ var VAKKEN_VMBO = [
       "d": 3,
       "u": "Een economie waarin grondstoffen worden hergebruikt.",
       "uo": [
-       "Juist niet.",
-       "Nee, dat klopt niet.",
-       "Nee, dat klopt niet.",
+       "Juist niet, het juiste antwoord is «Grondstoffen worden hergebruikt».",
+       "Nee, het juiste antwoord is «Grondstoffen worden hergebruikt».",
+       "Nee, het juiste antwoord is «Grondstoffen worden hergebruikt».",
        "Klopt: een economie waarin grondstoffen worden hergebruikt."
       ],
-      "uh": "Een economie waarin grondstoffen worden hergebruikt."
+      "uh": "Grondstoffen worden hergebruikt: Een economie waarin grondstoffen worden hergebruikt."
      },
      {
       "v": "Wat gebeurt er bij recycling?",
@@ -7651,9 +7651,9 @@ var VAKKEN_VMBO = [
       "d": 1,
       "u": "Afval wordt tot nieuwe grondstof verwerkt.",
       "uo": [
-       "Nee, dat klopt niet.",
+       "Nee, het juiste antwoord is «Afval wordt nieuwe grondstof».",
        "Klopt: afval wordt tot nieuwe grondstof verwerkt.",
-       "Nee, dat klopt niet.",
+       "Nee, het juiste antwoord is «Afval wordt nieuwe grondstof».",
        "Niet per se."
       ],
       "uh": "Afval wordt tot nieuwe grondstof verwerkt."
@@ -7670,10 +7670,10 @@ var VAKKEN_VMBO = [
       "d": 2,
       "u": "Grondstoffen raken op.",
       "uo": [
-       "Nee, dat klopt niet.",
+       "Nee, het juiste antwoord is «Grondstoffen raken op».",
        "Dat is juist goed.",
        "Klopt: grondstoffen raken op.",
-       "Nee, dat klopt niet."
+       "Nee, het juiste antwoord is «Grondstoffen raken op»."
       ],
       "uh": "Grondstoffen raken op."
      },
@@ -7690,9 +7690,9 @@ var VAKKEN_VMBO = [
       "u": "Produceren met zorg voor mens en milieu.",
       "uo": [
        "Klopt: produceren met zorg voor mens en milieu.",
-       "Nee, dat klopt niet.",
-       "Nee, dat klopt niet.",
-       "Nee, dat klopt niet."
+       "Nee, het juiste antwoord is «Produceren met zorg voor milieu».",
+       "Nee, het juiste antwoord is «Produceren met zorg voor milieu».",
+       "Nee, het juiste antwoord is «Produceren met zorg voor milieu»."
       ],
       "uh": "Produceren met zorg voor mens en milieu."
      },
@@ -7708,9 +7708,9 @@ var VAKKEN_VMBO = [
       "d": 1,
       "u": "Aardolie is fossiel en raakt op.",
       "uo": [
-       "Duurzaam.",
-       "Duurzaam.",
-       "Duurzaam.",
+       "Duurzaam, het juiste antwoord is «Aardolie».",
+       "Duurzaam, het juiste antwoord is «Aardolie».",
+       "Duurzaam, het juiste antwoord is «Aardolie».",
        "Klopt: aardolie is fossiel en raakt op."
       ],
       "uh": "Aardolie is fossiel en raakt op."
@@ -7730,7 +7730,7 @@ var VAKKEN_VMBO = [
        "Juist niet de maker.",
        "Klopt: de samenleving betaalt de schade, niet de vervuiler.",
        "Er is wel een probleem.",
-       "Nee, dat klopt niet."
+       "Nee, het juiste antwoord is «De samenleving draait ervoor op»."
       ],
       "uh": "De samenleving betaalt de schade, niet de vervuiler."
      },
@@ -7746,12 +7746,12 @@ var VAKKEN_VMBO = [
       "d": 2,
       "u": "Ontwikkeling die de toekomst niet schaadt.",
       "uo": [
-       "Nee, dat klopt niet.",
+       "Nee, het juiste antwoord is «Groei die de toekomst niet schaadt».",
        "Nee, ook de toekomst telt.",
        "Klopt: ontwikkeling die de toekomst niet schaadt.",
-       "Nee, dat klopt niet."
+       "Nee, het juiste antwoord is «Groei die de toekomst niet schaadt»."
       ],
-      "uh": "Ontwikkeling die de toekomst niet schaadt."
+      "uh": "Groei die de toekomst niet schaadt: Ontwikkeling die de toekomst niet schaadt."
      },
      {
       "v": "Wat is groene energie?",
@@ -7766,11 +7766,11 @@ var VAKKEN_VMBO = [
       "u": "Uit bronnen die niet opraken, zoals zon en wind.",
       "uo": [
        "Klopt: uit bronnen die niet opraken, zoals zon en wind.",
-       "Fossiel.",
-       "Fossiel.",
-       "Fossiel."
+       "Fossiel, het juiste antwoord is «Energie die niet opraakt».",
+       "Fossiel, het juiste antwoord is «Energie die niet opraakt».",
+       "Fossiel, het juiste antwoord is «Energie die niet opraakt»."
       ],
-      "uh": "Uit bronnen die niet opraken, zoals zon en wind."
+      "uh": "Energie die niet opraakt: Uit bronnen die niet opraken, zoals zon en wind."
      },
      {
       "v": "Wat is consuminderen?",
@@ -7784,9 +7784,9 @@ var VAKKEN_VMBO = [
       "d": 2,
       "u": "Bewust minder kopen en gebruiken.",
       "uo": [
-       "Juist niet.",
-       "Nee, dat klopt niet.",
-       "Nee, dat klopt niet.",
+       "Juist niet, het juiste antwoord is «Bewust minder gebruiken».",
+       "Nee, het juiste antwoord is «Bewust minder gebruiken».",
+       "Nee, het juiste antwoord is «Bewust minder gebruiken».",
        "Klopt: bewust minder kopen en gebruiken."
       ],
       "uh": "Bewust minder kopen en gebruiken."
@@ -7873,7 +7873,7 @@ var VAKKEN_VMBO = [
        "Geen belasting.",
        "Klopt: de vergoeding voor het gebruik van geld.",
        "Sparen is iets anders.",
-       "Geen boete."
+       "Geen boete, het juiste antwoord is «De vergoeding voor geld lenen of uitlenen»."
       ],
       "uh": "De vergoeding voor het gebruik van geld."
      },
@@ -7890,11 +7890,11 @@ var VAKKEN_VMBO = [
       "u": "Je krijgt rente over de rente.",
       "uo": [
        "Dat is enkelvoudige interest.",
-       "Nee, dat klopt niet.",
+       "Nee, het juiste antwoord is «Rente ook over eerdere rente».",
        "Klopt: je krijgt rente over de rente.",
        "Geen belasting."
       ],
-      "uh": "Je krijgt rente over de rente."
+      "uh": "Rente ook over eerdere rente: Je krijgt rente over de rente."
      },
      {
       "v": "Wat is enkelvoudige interest?",
@@ -7910,10 +7910,10 @@ var VAKKEN_VMBO = [
       "uo": [
        "Klopt: rente alleen over het oorspronkelijke bedrag.",
        "Dat is samengesteld.",
-       "Nee, dat klopt niet.",
+       "Nee, het juiste antwoord is «Rente over alleen het startbedrag».",
        "Een lening is iets anders."
       ],
-      "uh": "Rente alleen over het oorspronkelijke bedrag."
+      "uh": "Rente over alleen het startbedrag: Rente alleen over het oorspronkelijke bedrag."
      },
      {
       "v": "Je zet € 100 weg tegen 10% rente. Hoeveel rente in jaar 2 (samengesteld)?",
@@ -7932,7 +7932,7 @@ var VAKKEN_VMBO = [
        "Veel te veel.",
        "Klopt: 10% over € 110 is € 11."
       ],
-      "uh": "10% over € 110 is € 11."
+      "uh": "€ 11: 10% over € 110 is € 11."
      },
      {
       "v": "Wat is een hypotheek?",
@@ -7946,7 +7946,7 @@ var VAKKEN_VMBO = [
       "d": 1,
       "u": "Een lening voor een huis, met het huis als onderpand.",
       "uo": [
-       "Nee, dat klopt niet.",
+       "Nee, het juiste antwoord is «Een lening voor een huis».",
        "Klopt: een lening voor een huis, met het huis als onderpand.",
        "Geen belasting.",
        "Geen verzekering."
@@ -7965,12 +7965,12 @@ var VAKKEN_VMBO = [
       "d": 2,
       "u": "Zekerheid voor de bank.",
       "uo": [
-       "Nee, dat klopt niet.",
+       "Nee, het juiste antwoord is «Bezit dat de bank mag verkopen bij niet-betalen».",
        "Rente is iets anders.",
        "Klopt: zekerheid voor de bank.",
        "Premie hoort bij verzekeren."
       ],
-      "uh": "Zekerheid voor de bank."
+      "uh": "Bezit dat de bank mag verkopen bij niet-betalen: Zekerheid voor de bank."
      },
      {
       "v": "Wat is aflossing?",
@@ -8003,12 +8003,12 @@ var VAKKEN_VMBO = [
       "d": 2,
       "u": "De centrale bank bewaakt de waarde van het geld.",
       "uo": [
-       "Nee, dat klopt niet.",
+       "Nee, het juiste antwoord is «Het geld bewaken».",
        "Dat doet de Belastingdienst.",
-       "Nee, dat klopt niet.",
+       "Nee, het juiste antwoord is «Het geld bewaken».",
        "Klopt: de centrale bank bewaakt de waarde van het geld."
       ],
-      "uh": "De centrale bank bewaakt de waarde van het geld."
+      "uh": "Het geld bewaken: De centrale bank bewaakt de waarde van het geld."
      },
      {
       "v": "Wat is krediet?",
@@ -8042,11 +8042,11 @@ var VAKKEN_VMBO = [
       "u": "Door stijgende prijzen wordt geld minder waard.",
       "uo": [
        "Nee, minder.",
-       "Nee, dat klopt niet.",
+       "Nee, het juiste antwoord is «Het wordt minder waard».",
        "Klopt: door stijgende prijzen wordt geld minder waard.",
        "Geld verdwijnt niet."
       ],
-      "uh": "Door stijgende prijzen wordt geld minder waard."
+      "uh": "Het wordt minder waard: Door stijgende prijzen wordt geld minder waard."
      },
      {
       "v": "Wat is sparen?",
@@ -8081,10 +8081,10 @@ var VAKKEN_VMBO = [
       "uo": [
        "Niet zomaar.",
        "Niet per se.",
-       "Nee, dat klopt niet.",
+       "Nee, het juiste antwoord is «Omdat je rente over rente krijgt».",
        "Klopt: je krijgt ook rente over de eerder ontvangen rente."
       ],
-      "uh": "Je krijgt ook rente over de eerder ontvangen rente."
+      "uh": "Omdat je rente over rente krijgt: Je krijgt ook rente over de eerder ontvangen rente."
      }
     ],
     "begrippen": [
@@ -8184,10 +8184,10 @@ var VAKKEN_VMBO = [
       "d": 2,
       "u": "Een plan waarin je je bedrijf uitwerkt.",
       "uo": [
-       "Nee, dat klopt niet.",
-       "Nee, dat klopt niet.",
+       "Nee, het juiste antwoord is «Een plan waarin je je bedrijf uitwerkt».",
+       "Nee, het juiste antwoord is «Een plan waarin je je bedrijf uitwerkt».",
        "Klopt: een plan waarin je je bedrijf uitwerkt.",
-       "Nee, dat klopt niet."
+       "Nee, het juiste antwoord is «Een plan waarin je je bedrijf uitwerkt»."
       ],
       "uh": "Een plan waarin je je bedrijf uitwerkt."
      },
@@ -8208,7 +8208,7 @@ var VAKKEN_VMBO = [
        "Belasting is iets anders.",
        "Loon is iets anders."
       ],
-      "uh": "Het geld dat je nodig hebt om te starten."
+      "uh": "Geld om te beginnen: Het geld dat je nodig hebt om te starten."
      },
      {
       "v": "Wat is marktonderzoek?",
@@ -8222,9 +8222,9 @@ var VAKKEN_VMBO = [
       "d": 2,
       "u": "Onderzoek naar je klanten en concurrenten.",
       "uo": [
-       "Nee, dat klopt niet.",
-       "Nee, dat klopt niet.",
-       "Nee, dat klopt niet.",
+       "Nee, het juiste antwoord is «Onderzoek naar klanten en concurrenten».",
+       "Nee, het juiste antwoord is «Onderzoek naar klanten en concurrenten».",
+       "Nee, het juiste antwoord is «Onderzoek naar klanten en concurrenten».",
        "Klopt: onderzoek naar je klanten en concurrenten."
       ],
       "uh": "Onderzoek naar je klanten en concurrenten."
@@ -8241,12 +8241,12 @@ var VAKKEN_VMBO = [
       "d": 2,
       "u": "De groep klanten die je wilt bereiken.",
       "uo": [
-       "Te breed.",
+       "Te breed, het juiste antwoord is «De klanten die je wilt bereiken».",
        "Klopt: de groep klanten die je wilt bereiken.",
        "Dat zijn juist rivalen.",
        "Iets anders."
       ],
-      "uh": "De groep klanten die je wilt bereiken."
+      "uh": "De klanten die je wilt bereiken: De groep klanten die je wilt bereiken."
      },
      {
       "v": "Wat is een concurrent?",
@@ -8265,7 +8265,7 @@ var VAKKEN_VMBO = [
        "Klopt: een rivaal die hetzelfde aanbiedt.",
        "Iets anders."
       ],
-      "uh": "Een rivaal die hetzelfde aanbiedt."
+      "uh": "Een ander bedrijf dat hetzelfde aanbiedt: Een rivaal die hetzelfde aanbiedt."
      },
      {
       "v": "Wat is de kostprijs?",
@@ -8317,7 +8317,7 @@ var VAKKEN_VMBO = [
       "d": 2,
       "u": "Geld uitgeven aan bedrijfsmiddelen.",
       "uo": [
-       "Nee, dat klopt niet.",
+       "Nee, het juiste antwoord is «Geld uitgeven aan bedrijfsmiddelen».",
        "Klopt: geld uitgeven aan bedrijfsmiddelen.",
        "Iets anders.",
        "Iets anders."
@@ -8341,7 +8341,7 @@ var VAKKEN_VMBO = [
        "Klopt: de manier waarop je aan geld komt.",
        "Kostprijs is iets anders."
       ],
-      "uh": "De manier waarop je aan geld komt."
+      "uh": "Hoe je aan geld voor je bedrijf komt: De manier waarop je aan geld komt."
      },
      {
       "v": "Wat is de winstmarge?",
@@ -8360,7 +8360,7 @@ var VAKKEN_VMBO = [
        "Belasting is iets anders.",
        "Startkapitaal is iets anders."
       ],
-      "uh": "Het verschil tussen verkoopprijs en kostprijs."
+      "uh": "Verkoopprijs min kostprijs: Het verschil tussen verkoopprijs en kostprijs."
      },
      {
       "v": "Wat is een rechtsvorm?",
@@ -8374,9 +8374,9 @@ var VAKKEN_VMBO = [
       "d": 3,
       "u": "De juridische vorm, zoals een eenmanszaak.",
       "uo": [
-       "Nee, dat klopt niet.",
-       "Nee, dat klopt niet.",
-       "Nee, dat klopt niet.",
+       "Nee, het juiste antwoord is «De juridische vorm van een bedrijf».",
+       "Nee, het juiste antwoord is «De juridische vorm van een bedrijf».",
+       "Nee, het juiste antwoord is «De juridische vorm van een bedrijf».",
        "Klopt: de juridische vorm, zoals een eenmanszaak."
       ],
       "uh": "De juridische vorm, zoals een eenmanszaak."
@@ -8476,10 +8476,10 @@ var VAKKEN_VMBO = [
       "uo": [
        "Dat zijn waarden.",
        "Klopt: normen zijn gedragsregels.",
-       "Nee, dat klopt niet.",
-       "Nee, dat klopt niet."
+       "Nee, het juiste antwoord is «Regels voor je gedrag».",
+       "Nee, het juiste antwoord is «Regels voor je gedrag»."
       ],
-      "uh": "Normen zijn gedragsregels."
+      "uh": "Regels voor je gedrag: Normen zijn gedragsregels."
      },
      {
       "v": "Wat zijn waarden?",
@@ -8494,11 +8494,11 @@ var VAKKEN_VMBO = [
       "u": "Wat mensen belangrijk vinden.",
       "uo": [
        "Dat zijn normen.",
-       "Nee, dat klopt niet.",
+       "Nee, het juiste antwoord is «Wat je belangrijk vindt».",
        "Klopt: wat mensen belangrijk vinden.",
-       "Nee, dat klopt niet."
+       "Nee, het juiste antwoord is «Wat je belangrijk vindt»."
       ],
-      "uh": "Wat mensen belangrijk vinden."
+      "uh": "Wat je belangrijk vindt: Wat mensen belangrijk vinden."
      },
      {
       "v": "Wat betekent secularisatie?",
@@ -8514,10 +8514,10 @@ var VAKKEN_VMBO = [
       "uo": [
        "Klopt: het geloof wordt minder bepalend.",
        "Juist andersom.",
-       "Nee, dat klopt niet.",
-       "Nee, dat klopt niet."
+       "Nee, het juiste antwoord is «Religie wordt minder belangrijk».",
+       "Nee, het juiste antwoord is «Religie wordt minder belangrijk»."
       ],
-      "uh": "Het geloof wordt minder bepalend."
+      "uh": "Religie wordt minder belangrijk: Het geloof wordt minder bepalend."
      },
      {
       "v": "Wat is een traditie?",
@@ -8531,12 +8531,12 @@ var VAKKEN_VMBO = [
       "d": 1,
       "u": "Een gewoonte die van generatie op generatie overgaat.",
       "uo": [
-       "Nee, dat klopt niet.",
-       "Nee, dat klopt niet.",
+       "Nee, het juiste antwoord is «Een overgeleverde gewoonte».",
+       "Nee, het juiste antwoord is «Een overgeleverde gewoonte».",
        "Dat is een vooroordeel.",
        "Klopt: een gewoonte die van generatie op generatie overgaat."
       ],
-      "uh": "Een gewoonte die van generatie op generatie overgaat."
+      "uh": "Een overgeleverde gewoonte: Een gewoonte die van generatie op generatie overgaat."
      },
      {
       "v": "Wat is een vooroordeel?",
@@ -8550,12 +8550,12 @@ var VAKKEN_VMBO = [
       "d": 2,
       "u": "Een mening vooraf, zonder de feiten.",
       "uo": [
-       "Nee, dat klopt niet.",
+       "Nee, het juiste antwoord is «Een oordeel zonder de feiten».",
        "Klopt: een mening vooraf, zonder de feiten.",
-       "Nee, dat klopt niet.",
-       "Nee, dat klopt niet."
+       "Nee, het juiste antwoord is «Een oordeel zonder de feiten».",
+       "Nee, het juiste antwoord is «Een oordeel zonder de feiten»."
       ],
-      "uh": "Een mening vooraf, zonder de feiten."
+      "uh": "Een oordeel zonder de feiten: Een mening vooraf, zonder de feiten."
      },
      {
       "v": "Wat is tolerantie?",
@@ -8569,10 +8569,10 @@ var VAKKEN_VMBO = [
       "d": 2,
       "u": "Andere meningen en geloven verdragen.",
       "uo": [
-       "Juist niet.",
-       "Nee, dat klopt niet.",
+       "Juist niet, het juiste antwoord is «Andere meningen verdragen».",
+       "Nee, het juiste antwoord is «Andere meningen verdragen».",
        "Klopt: andere meningen en geloven verdragen.",
-       "Nee, dat klopt niet."
+       "Nee, het juiste antwoord is «Andere meningen verdragen»."
       ],
       "uh": "Andere meningen en geloven verdragen."
      },
@@ -8590,10 +8590,10 @@ var VAKKEN_VMBO = [
       "uo": [
        "Klopt: vaste maatschappelijke lagen.",
        "Juist niet gelijk.",
-       "Nee, dat klopt niet.",
-       "Nee, dat klopt niet."
+       "Nee, het juiste antwoord is «Een samenleving met vaste lagen».",
+       "Nee, het juiste antwoord is «Een samenleving met vaste lagen»."
       ],
-      "uh": "Vaste maatschappelijke lagen."
+      "uh": "Een samenleving met vaste lagen: Vaste maatschappelijke lagen."
      },
      {
       "v": "Wat is mentaliteit?",
@@ -8607,12 +8607,12 @@ var VAKKEN_VMBO = [
       "d": 2,
       "u": "Hoe mensen in een tijd denken.",
       "uo": [
-       "Nee, dat klopt niet.",
-       "Nee, dat klopt niet.",
-       "Nee, dat klopt niet.",
+       "Nee, het juiste antwoord is «De manier van denken in een tijd».",
+       "Nee, het juiste antwoord is «De manier van denken in een tijd».",
+       "Nee, het juiste antwoord is «De manier van denken in een tijd».",
        "Klopt: hoe mensen in een tijd denken."
       ],
-      "uh": "Hoe mensen in een tijd denken."
+      "uh": "De manier van denken in een tijd: Hoe mensen in een tijd denken."
      },
      {
       "v": "Wat is emancipatie?",
@@ -8626,10 +8626,10 @@ var VAKKEN_VMBO = [
       "d": 2,
       "u": "Streven naar gelijke rechten.",
       "uo": [
-       "Juist meer.",
+       "Juist meer, het juiste antwoord is «Streven naar gelijke rechten».",
        "Klopt: streven naar gelijke rechten.",
-       "Nee, dat klopt niet.",
-       "Nee, dat klopt niet."
+       "Nee, het juiste antwoord is «Streven naar gelijke rechten».",
+       "Nee, het juiste antwoord is «Streven naar gelijke rechten»."
       ],
       "uh": "Streven naar gelijke rechten."
      },
@@ -8645,12 +8645,12 @@ var VAKKEN_VMBO = [
       "d": 1,
       "u": "Gewoonten, taal en gebruiken van een groep.",
       "uo": [
-       "Nee, dat klopt niet.",
-       "Nee, dat klopt niet.",
+       "Nee, het juiste antwoord is «Gewoonten en gebruiken».",
+       "Nee, het juiste antwoord is «Gewoonten en gebruiken».",
        "Klopt: gewoonten, taal en gebruiken van een groep.",
-       "Nee, dat klopt niet."
+       "Nee, het juiste antwoord is «Gewoonten en gebruiken»."
       ],
-      "uh": "Gewoonten, taal en gebruiken van een groep."
+      "uh": "Gewoonten en gebruiken: Gewoonten, taal en gebruiken van een groep."
      },
      {
       "v": "Waarom werd Nederland minder religieus?",
@@ -8666,8 +8666,8 @@ var VAKKEN_VMBO = [
       "uo": [
        "Klopt: door secularisatie werd geloof minder belangrijk.",
        "Juist andersom.",
-       "Nee, dat klopt niet.",
-       "Nee, dat klopt niet."
+       "Nee, het juiste antwoord is «Door secularisatie».",
+       "Nee, het juiste antwoord is «Door secularisatie»."
       ],
       "uh": "Door secularisatie werd geloof minder belangrijk."
      }
@@ -8754,8 +8754,8 @@ var VAKKEN_VMBO = [
       "uo": [
        "Nee, de hoogste.",
        "Klopt: de belangrijkste wet met de regels van de staat.",
-       "Nee, dat klopt niet.",
-       "Nee, dat klopt niet."
+       "Nee, het juiste antwoord is «De belangrijkste wet».",
+       "Nee, het juiste antwoord is «De belangrijkste wet»."
       ],
       "uh": "De belangrijkste wet met de regels van de staat."
      },
@@ -8771,10 +8771,10 @@ var VAKKEN_VMBO = [
       "d": 2,
       "u": "Een recht dat iedereen heeft, zoals vrije meningsuiting.",
       "uo": [
-       "Nee, dat klopt niet.",
-       "Nee, dat klopt niet.",
+       "Nee, het juiste antwoord is «Een recht voor iedereen».",
+       "Nee, het juiste antwoord is «Een recht voor iedereen».",
        "Klopt: een recht dat iedereen heeft, zoals vrije meningsuiting.",
-       "Nee, dat klopt niet."
+       "Nee, het juiste antwoord is «Een recht voor iedereen»."
       ],
       "uh": "Een recht dat iedereen heeft, zoals vrije meningsuiting."
      },
@@ -8791,11 +8791,11 @@ var VAKKEN_VMBO = [
       "u": "Wetgevende, uitvoerende en rechterlijke macht apart.",
       "uo": [
        "Klopt: wetgevende, uitvoerende en rechterlijke macht apart.",
-       "Nee, dat klopt niet.",
-       "Nee, dat klopt niet.",
-       "Nee, dat klopt niet."
+       "Nee, het juiste antwoord is «De scheiding van machten».",
+       "Nee, het juiste antwoord is «De scheiding van machten».",
+       "Nee, het juiste antwoord is «De scheiding van machten»."
       ],
-      "uh": "Wetgevende, uitvoerende en rechterlijke macht apart."
+      "uh": "De scheiding van machten: Wetgevende, uitvoerende en rechterlijke macht apart."
      },
      {
       "v": "Wie maakt de wetten?",
@@ -8811,7 +8811,7 @@ var VAKKEN_VMBO = [
       "uo": [
        "De rechter spreekt recht.",
        "Niet alleen.",
-       "Nee, dat klopt niet.",
+       "Nee, het juiste antwoord is «De wetgevende macht».",
        "Klopt: de wetgevende macht maakt wetten."
       ],
       "uh": "De wetgevende macht maakt wetten."
@@ -8830,10 +8830,10 @@ var VAKKEN_VMBO = [
       "uo": [
        "Die spreekt recht.",
        "Klopt: de regering voert wetten uit.",
-       "Nee, dat klopt niet.",
+       "Nee, het juiste antwoord is «De uitvoerende macht».",
        "Die keurt goed of af."
       ],
-      "uh": "De regering voert wetten uit."
+      "uh": "De uitvoerende macht: De regering voert wetten uit."
      },
      {
       "v": "Wie spreekt recht?",
@@ -8850,7 +8850,7 @@ var VAKKEN_VMBO = [
        "Die voert uit.",
        "Dat controleert.",
        "Klopt: de rechters spreken recht.",
-       "Nee, dat klopt niet."
+       "Nee, het juiste antwoord is «De rechterlijke macht»."
       ],
       "uh": "De rechters spreken recht."
      },
@@ -8868,10 +8868,10 @@ var VAKKEN_VMBO = [
       "uo": [
        "Klopt: gekozen, maakt en controleert wetten.",
        "Dat is iets anders.",
-       "Nee, dat klopt niet.",
-       "Nee, dat klopt niet."
+       "Nee, het juiste antwoord is «De gekozen volksvertegenwoordiging».",
+       "Nee, het juiste antwoord is «De gekozen volksvertegenwoordiging»."
       ],
-      "uh": "Gekozen, maakt en controleert wetten."
+      "uh": "De gekozen volksvertegenwoordiging: Gekozen, maakt en controleert wetten."
      },
      {
       "v": "Wat doet de Eerste Kamer?",
@@ -8886,11 +8886,11 @@ var VAKKEN_VMBO = [
       "u": "De Eerste Kamer keurt wetten goed of af.",
       "uo": [
        "Dat doet vooral de Tweede Kamer.",
-       "Nee, dat klopt niet.",
-       "Nee, dat klopt niet.",
+       "Nee, het juiste antwoord is «Wetten goed- of afkeuren».",
+       "Nee, het juiste antwoord is «Wetten goed- of afkeuren».",
        "Klopt: de Eerste Kamer keurt wetten goed of af."
       ],
-      "uh": "De Eerste Kamer keurt wetten goed of af."
+      "uh": "Wetten goed- of afkeuren: De Eerste Kamer keurt wetten goed of af."
      },
      {
       "v": "Wat is een democratie?",
@@ -8906,8 +8906,8 @@ var VAKKEN_VMBO = [
       "uo": [
        "Dat is een dictatuur.",
        "Klopt: het volk kiest zijn vertegenwoordigers.",
-       "Nee, dat klopt niet.",
-       "Nee, dat klopt niet."
+       "Nee, het juiste antwoord is «Het volk kiest».",
+       "Nee, het juiste antwoord is «Het volk kiest»."
       ],
       "uh": "Het volk kiest zijn vertegenwoordigers."
      },
@@ -8923,8 +8923,8 @@ var VAKKEN_VMBO = [
       "d": 2,
       "u": "De koning en de ministers samen.",
       "uo": [
-       "Nee, dat klopt niet.",
-       "Nee, dat klopt niet.",
+       "Nee, het juiste antwoord is «De koning en ministers».",
+       "Nee, het juiste antwoord is «De koning en ministers».",
        "Klopt: de koning en de ministers samen.",
        "Die controleert de regering."
       ],
@@ -8943,11 +8943,11 @@ var VAKKEN_VMBO = [
       "u": "Zo controleren de machten elkaar.",
       "uo": [
        "Klopt: zo controleren de machten elkaar.",
-       "Nee, dat klopt niet.",
-       "Nee, dat klopt niet.",
-       "Nee, dat klopt niet."
+       "Nee, het juiste antwoord is «Om machtsmisbruik te voorkomen».",
+       "Nee, het juiste antwoord is «Om machtsmisbruik te voorkomen».",
+       "Nee, het juiste antwoord is «Om machtsmisbruik te voorkomen»."
       ],
-      "uh": "Zo controleren de machten elkaar."
+      "uh": "Om machtsmisbruik te voorkomen: Zo controleren de machten elkaar."
      }
     ],
     "begrippen": [
@@ -9028,9 +9028,9 @@ var VAKKEN_VMBO = [
       "d": 2,
       "u": "Productie met machines in fabrieken.",
       "uo": [
-       "Juist niet.",
+       "Juist niet, het juiste antwoord is «Productie ging naar fabrieken».",
        "Klopt: productie met machines in fabrieken.",
-       "Juist meer.",
+       "Juist meer, het juiste antwoord is «Productie ging naar fabrieken».",
        "Steden groeiden."
       ],
       "uh": "Productie met machines in fabrieken."
@@ -9047,10 +9047,10 @@ var VAKKEN_VMBO = [
       "d": 2,
       "u": "De stoommachine.",
       "uo": [
-       "Kwam later.",
-       "Nee, dat klopt niet.",
+       "Kwam later, het juiste antwoord is «De stoommachine».",
+       "Nee, het juiste antwoord is «De stoommachine».",
        "Klopt: de stoommachine.",
-       "Nee, dat klopt niet."
+       "Nee, het juiste antwoord is «De stoommachine»."
       ],
       "uh": "De stoommachine."
      },
@@ -9067,11 +9067,11 @@ var VAKKEN_VMBO = [
       "u": "De slechte leef- en werkomstandigheden.",
       "uo": [
        "Klopt: de slechte leef- en werkomstandigheden.",
-       "Nee, dat klopt niet.",
-       "Nee, dat klopt niet.",
-       "Nee, dat klopt niet."
+       "Nee, het juiste antwoord is «Slechte omstandigheden van arbeiders».",
+       "Nee, het juiste antwoord is «Slechte omstandigheden van arbeiders».",
+       "Nee, het juiste antwoord is «Slechte omstandigheden van arbeiders»."
       ],
-      "uh": "De slechte leef- en werkomstandigheden."
+      "uh": "Slechte omstandigheden van arbeiders: De slechte leef- en werkomstandigheden."
      },
      {
       "v": "Wat deden arbeiders om betere omstandigheden af te dwingen?",
@@ -9085,12 +9085,12 @@ var VAKKEN_VMBO = [
       "d": 3,
       "u": "Ze staakten en verenigden zich in vakbonden.",
       "uo": [
-       "Nee, dat klopt niet.",
+       "Nee, het juiste antwoord is «Staken en vakbonden vormen».",
        "Niet vooral.",
        "Ze kwamen juist in actie.",
        "Klopt: ze staakten en verenigden zich in vakbonden."
       ],
-      "uh": "Ze staakten en verenigden zich in vakbonden."
+      "uh": "Staken en vakbonden vormen: Ze staakten en verenigden zich in vakbonden."
      },
      {
       "v": "Wat is kapitalisme?",
@@ -9107,9 +9107,9 @@ var VAKKEN_VMBO = [
        "Dat lijkt op socialisme.",
        "Klopt: gebaseerd op particulier bezit en winst.",
        "Dat is het doel van socialisme.",
-       "Nee, dat klopt niet."
+       "Nee, het juiste antwoord is «Bezit en winst voor particulieren»."
       ],
-      "uh": "Gebaseerd op particulier bezit en winst."
+      "uh": "Bezit en winst voor particulieren: Gebaseerd op particulier bezit en winst."
      },
      {
       "v": "Wat is socialisme?",
@@ -9124,11 +9124,11 @@ var VAKKEN_VMBO = [
       "u": "Gelijkheid en de arbeiders.",
       "uo": [
        "Dat lijkt op kapitalisme.",
-       "Nee, dat klopt niet.",
+       "Nee, het juiste antwoord is «Opkomen voor gelijkheid en arbeiders».",
        "Klopt: gelijkheid en de arbeiders.",
-       "Nee, dat klopt niet."
+       "Nee, het juiste antwoord is «Opkomen voor gelijkheid en arbeiders»."
       ],
-      "uh": "Gelijkheid en de arbeiders."
+      "uh": "Opkomen voor gelijkheid en arbeiders: Gelijkheid en de arbeiders."
      },
      {
       "v": "Wat is kinderarbeid?",
@@ -9143,11 +9143,11 @@ var VAKKEN_VMBO = [
       "u": "Kinderen werkten in fabrieken.",
       "uo": [
        "Klopt: kinderen werkten in fabrieken.",
-       "Juist niet.",
-       "Nee, dat klopt niet.",
-       "Nee, dat klopt niet."
+       "Juist niet, het juiste antwoord is «Kinderen laten werken in fabrieken».",
+       "Nee, het juiste antwoord is «Kinderen laten werken in fabrieken».",
+       "Nee, het juiste antwoord is «Kinderen laten werken in fabrieken»."
       ],
-      "uh": "Kinderen werkten in fabrieken."
+      "uh": "Kinderen laten werken in fabrieken: Kinderen werkten in fabrieken."
      },
      {
       "v": "Waarom trokken mensen naar de stad?",
@@ -9161,12 +9161,12 @@ var VAKKEN_VMBO = [
       "d": 2,
       "u": "Er was werk in de fabrieken (verstedelijking).",
       "uo": [
-       "Nee, dat klopt niet.",
-       "Nee, dat klopt niet.",
-       "Nee, dat klopt niet.",
+       "Nee, het juiste antwoord is «Voor werk in fabrieken».",
+       "Nee, het juiste antwoord is «Voor werk in fabrieken».",
+       "Nee, het juiste antwoord is «Voor werk in fabrieken».",
        "Klopt: er was werk in de fabrieken (verstedelijking)."
       ],
-      "uh": "Er was werk in de fabrieken (verstedelijking)."
+      "uh": "Voor werk in fabrieken: Er was werk in de fabrieken (verstedelijking)."
      },
      {
       "v": "Wat is een staking?",
@@ -9180,7 +9180,7 @@ var VAKKEN_VMBO = [
       "d": 2,
       "u": "Het werk neerleggen om eisen kracht bij te zetten.",
       "uo": [
-       "Juist niet.",
+       "Juist niet, het juiste antwoord is «Het werk neerleggen».",
        "Klopt: het werk neerleggen om eisen kracht bij te zetten.",
        "Een staking is juist actie.",
        "Niet per se."
@@ -9199,12 +9199,12 @@ var VAKKEN_VMBO = [
       "d": 2,
       "u": "De vakbond kwam op voor arbeiders.",
       "uo": [
-       "Nee, dat klopt niet.",
-       "Nee, dat klopt niet.",
+       "Nee, het juiste antwoord is «Opkomen voor arbeiders».",
+       "Nee, het juiste antwoord is «Opkomen voor arbeiders».",
        "Klopt: de vakbond kwam op voor arbeiders.",
-       "Nee, dat klopt niet."
+       "Nee, het juiste antwoord is «Opkomen voor arbeiders»."
       ],
-      "uh": "De vakbond kwam op voor arbeiders."
+      "uh": "Opkomen voor arbeiders: De vakbond kwam op voor arbeiders."
      },
      {
       "v": "Wat maakte massaproductie mogelijk?",
@@ -9219,11 +9219,11 @@ var VAKKEN_VMBO = [
       "u": "Met machines veel tegelijk maken.",
       "uo": [
        "Klopt: met machines veel tegelijk maken.",
-       "Juist niet.",
-       "Nee, dat klopt niet.",
-       "Nee, dat klopt niet."
+       "Juist niet, het juiste antwoord is «Machines in fabrieken».",
+       "Nee, het juiste antwoord is «Machines in fabrieken».",
+       "Nee, het juiste antwoord is «Machines in fabrieken»."
       ],
-      "uh": "Met machines veel tegelijk maken."
+      "uh": "Machines in fabrieken: Met machines veel tegelijk maken."
      }
     ],
     "begrippen": [
@@ -9304,12 +9304,12 @@ var VAKKEN_VMBO = [
       "d": 2,
       "u": "De overheid zorgt voor het welzijn van burgers.",
       "uo": [
-       "Nee, dat klopt niet.",
+       "Nee, het juiste antwoord is «Een staat die voor het welzijn zorgt».",
        "Klopt: de overheid zorgt voor het welzijn van burgers.",
-       "Nee, dat klopt niet.",
-       "Nee, dat klopt niet."
+       "Nee, het juiste antwoord is «Een staat die voor het welzijn zorgt».",
+       "Nee, het juiste antwoord is «Een staat die voor het welzijn zorgt»."
       ],
-      "uh": "De overheid zorgt voor het welzijn van burgers."
+      "uh": "Een staat die voor het welzijn zorgt: De overheid zorgt voor het welzijn van burgers."
      },
      {
       "v": "Waarvoor is sociale zekerheid?",
@@ -9323,12 +9323,12 @@ var VAKKEN_VMBO = [
       "d": 2,
       "u": "Inkomen bij ziekte, werkloosheid of ouderdom.",
       "uo": [
-       "Nee, dat klopt niet.",
-       "Nee, dat klopt niet.",
+       "Nee, het juiste antwoord is «Voor inkomen bij tegenslag».",
+       "Nee, het juiste antwoord is «Voor inkomen bij tegenslag».",
        "Klopt: inkomen bij ziekte, werkloosheid of ouderdom.",
-       "Nee, dat klopt niet."
+       "Nee, het juiste antwoord is «Voor inkomen bij tegenslag»."
       ],
-      "uh": "Inkomen bij ziekte, werkloosheid of ouderdom."
+      "uh": "Voor inkomen bij tegenslag: Inkomen bij ziekte, werkloosheid of ouderdom."
      },
      {
       "v": "Wat is een uitkering?",
@@ -9343,11 +9343,11 @@ var VAKKEN_VMBO = [
       "u": "Geld van de overheid bij te weinig inkomen.",
       "uo": [
        "Klopt: geld van de overheid bij te weinig inkomen.",
-       "Nee, dat klopt niet.",
-       "Nee, dat klopt niet.",
-       "Nee, dat klopt niet."
+       "Nee, het juiste antwoord is «Geld bij te weinig inkomen».",
+       "Nee, het juiste antwoord is «Geld bij te weinig inkomen».",
+       "Nee, het juiste antwoord is «Geld bij te weinig inkomen»."
       ],
-      "uh": "Geld van de overheid bij te weinig inkomen."
+      "uh": "Geld bij te weinig inkomen: Geld van de overheid bij te weinig inkomen."
      },
      {
       "v": "Wat is de AOW?",
@@ -9361,12 +9361,12 @@ var VAKKEN_VMBO = [
       "d": 2,
       "u": "De AOW is het staatspensioen voor ouderen.",
       "uo": [
-       "Nee, dat klopt niet.",
-       "Nee, dat klopt niet.",
-       "Nee, dat klopt niet.",
+       "Nee, het juiste antwoord is «Het staatspensioen voor ouderen».",
+       "Nee, het juiste antwoord is «Het staatspensioen voor ouderen».",
+       "Nee, het juiste antwoord is «Het staatspensioen voor ouderen».",
        "Klopt: de AOW is het staatspensioen voor ouderen."
       ],
-      "uh": "De AOW is het staatspensioen voor ouderen."
+      "uh": "Het staatspensioen voor ouderen: De AOW is het staatspensioen voor ouderen."
      },
      {
       "v": "Wat betekent solidariteit?",
@@ -9380,12 +9380,12 @@ var VAKKEN_VMBO = [
       "d": 2,
       "u": "Samen de lasten en risico's dragen.",
       "uo": [
-       "Juist niet.",
+       "Juist niet, het juiste antwoord is «Samen risico's dragen».",
        "Klopt: samen de lasten en risico's dragen.",
-       "Nee, dat klopt niet.",
-       "Nee, dat klopt niet."
+       "Nee, het juiste antwoord is «Samen risico's dragen».",
+       "Nee, het juiste antwoord is «Samen risico's dragen»."
       ],
-      "uh": "Samen de lasten en risico's dragen."
+      "uh": "Samen risico's dragen: Samen de lasten en risico's dragen."
      },
      {
       "v": "Wat is bijstand?",
@@ -9399,12 +9399,12 @@ var VAKKEN_VMBO = [
       "d": 2,
       "u": "Het laatste vangnet.",
       "uo": [
-       "Nee, dat klopt niet.",
-       "Nee, dat klopt niet.",
+       "Nee, het juiste antwoord is «Een uitkering voor wie geen inkomen heeft».",
+       "Nee, het juiste antwoord is «Een uitkering voor wie geen inkomen heeft».",
        "Klopt: het laatste vangnet.",
-       "Nee, dat klopt niet."
+       "Nee, het juiste antwoord is «Een uitkering voor wie geen inkomen heeft»."
       ],
-      "uh": "Het laatste vangnet."
+      "uh": "Een uitkering voor wie geen inkomen heeft: Het laatste vangnet."
      },
      {
       "v": "Wanneer bouwde Nederland de verzorgingsstaat op?",
@@ -9419,11 +9419,11 @@ var VAKKEN_VMBO = [
       "u": "Vooral na de Tweede Wereldoorlog.",
       "uo": [
        "Klopt: vooral na de Tweede Wereldoorlog.",
-       "Nee, dat klopt niet.",
-       "Nee, dat klopt niet.",
-       "Nee, dat klopt niet."
+       "Nee, het juiste antwoord is «Na 1945».",
+       "Nee, het juiste antwoord is «Na 1945».",
+       "Nee, het juiste antwoord is «Na 1945»."
       ],
-      "uh": "Vooral na de Tweede Wereldoorlog."
+      "uh": "Na 1945: Vooral na de Tweede Wereldoorlog."
      },
      {
       "v": "Wat is een sociale wet?",
@@ -9437,12 +9437,12 @@ var VAKKEN_VMBO = [
       "d": 2,
       "u": "Beschermt burgers tegen armoede of ziekte.",
       "uo": [
-       "Nee, dat klopt niet.",
-       "Nee, dat klopt niet.",
-       "Nee, dat klopt niet.",
+       "Nee, het juiste antwoord is «Een wet die tegen armoede beschermt».",
+       "Nee, het juiste antwoord is «Een wet die tegen armoede beschermt».",
+       "Nee, het juiste antwoord is «Een wet die tegen armoede beschermt».",
        "Klopt: beschermt burgers tegen armoede of ziekte."
       ],
-      "uh": "Beschermt burgers tegen armoede of ziekte."
+      "uh": "Een wet die tegen armoede beschermt: Beschermt burgers tegen armoede of ziekte."
      },
      {
       "v": "Wat is werkloosheid?",
@@ -9456,12 +9456,12 @@ var VAKKEN_VMBO = [
       "d": 1,
       "u": "Mensen hebben geen werk.",
       "uo": [
-       "Juist niet.",
+       "Juist niet, het juiste antwoord is «Geen werk hebben».",
        "Klopt: mensen hebben geen werk.",
-       "Nee, dat klopt niet.",
+       "Nee, het juiste antwoord is «Geen werk hebben».",
        "Dat is iets anders."
       ],
-      "uh": "Mensen hebben geen werk."
+      "uh": "Geen werk hebben: Mensen hebben geen werk."
      },
      {
       "v": "Wat is een pensioen?",
@@ -9475,10 +9475,10 @@ var VAKKEN_VMBO = [
       "d": 2,
       "u": "Inkomen na je werkende jaren.",
       "uo": [
-       "Nee, dat klopt niet.",
-       "Nee, dat klopt niet.",
+       "Nee, het juiste antwoord is «Inkomen na je werkzame leven».",
+       "Nee, het juiste antwoord is «Inkomen na je werkzame leven».",
        "Klopt: inkomen na je werkende jaren.",
-       "Nee, dat klopt niet."
+       "Nee, het juiste antwoord is «Inkomen na je werkzame leven»."
       ],
       "uh": "Inkomen na je werkende jaren."
      },
@@ -9495,11 +9495,11 @@ var VAKKEN_VMBO = [
       "u": "Premie betaal je voor een verzekering.",
       "uo": [
        "Klopt: premie betaal je voor een verzekering.",
-       "Nee, dat klopt niet.",
-       "Nee, dat klopt niet.",
-       "Nee, dat klopt niet."
+       "Nee, het juiste antwoord is «Voor een verzekering».",
+       "Nee, het juiste antwoord is «Voor een verzekering».",
+       "Nee, het juiste antwoord is «Voor een verzekering»."
       ],
-      "uh": "Premie betaal je voor een verzekering."
+      "uh": "Voor een verzekering: Premie betaal je voor een verzekering."
      }
     ],
     "begrippen": [
@@ -9580,12 +9580,12 @@ var VAKKEN_VMBO = [
       "d": 2,
       "u": "Aparte groepen naar geloof en politiek.",
       "uo": [
-       "Juist niet.",
+       "Juist niet, het juiste antwoord is «De samenleving in aparte groepen».",
        "Klopt: aparte groepen naar geloof en politiek.",
-       "Nee, dat klopt niet.",
-       "Nee, dat klopt niet."
+       "Nee, het juiste antwoord is «De samenleving in aparte groepen».",
+       "Nee, het juiste antwoord is «De samenleving in aparte groepen»."
       ],
-      "uh": "Aparte groepen naar geloof en politiek."
+      "uh": "De samenleving in aparte groepen: Aparte groepen naar geloof en politiek."
      },
      {
       "v": "Wat is ontzuiling?",
@@ -9599,12 +9599,12 @@ var VAKKEN_VMBO = [
       "d": 2,
       "u": "De scheiding tussen groepen verdween.",
       "uo": [
-       "Nee, dat klopt niet.",
-       "Nee, dat klopt niet.",
+       "Nee, het juiste antwoord is «De zuilen verdwijnen».",
+       "Nee, het juiste antwoord is «De zuilen verdwijnen».",
        "Klopt: de scheiding tussen groepen verdween.",
-       "Nee, dat klopt niet."
+       "Nee, het juiste antwoord is «De zuilen verdwijnen»."
       ],
-      "uh": "De scheiding tussen groepen verdween."
+      "uh": "De zuilen verdwijnen: De scheiding tussen groepen verdween."
      },
      {
       "v": "Wat is emancipatie?",
@@ -9619,9 +9619,9 @@ var VAKKEN_VMBO = [
       "u": "Streven naar gelijke rechten, bv. van vrouwen.",
       "uo": [
        "Klopt: streven naar gelijke rechten, bv. van vrouwen.",
-       "Juist meer.",
-       "Nee, dat klopt niet.",
-       "Nee, dat klopt niet."
+       "Juist meer, het juiste antwoord is «Streven naar gelijke rechten».",
+       "Nee, het juiste antwoord is «Streven naar gelijke rechten».",
+       "Nee, het juiste antwoord is «Streven naar gelijke rechten»."
       ],
       "uh": "Streven naar gelijke rechten, bv. van vrouwen."
      },
@@ -9637,9 +9637,9 @@ var VAKKEN_VMBO = [
       "d": 2,
       "u": "Een eigen stijl, muziek en ideeën.",
       "uo": [
-       "Juist niet.",
-       "Nee, dat klopt niet.",
-       "Nee, dat klopt niet.",
+       "Juist niet, het juiste antwoord is «Een eigen jongerencultuur».",
+       "Nee, het juiste antwoord is «Een eigen jongerencultuur».",
+       "Nee, het juiste antwoord is «Een eigen jongerencultuur».",
        "Klopt: een eigen stijl, muziek en ideeën."
       ],
       "uh": "Een eigen stijl, muziek en ideeën."
@@ -9656,12 +9656,12 @@ var VAKKEN_VMBO = [
       "d": 2,
       "u": "Er wordt veel gekocht.",
       "uo": [
-       "Juist niet.",
+       "Juist niet, het juiste antwoord is «Een samenleving die veel koopt».",
        "Klopt: er wordt veel gekocht.",
-       "Nee, dat klopt niet.",
-       "Nee, dat klopt niet."
+       "Nee, het juiste antwoord is «Een samenleving die veel koopt».",
+       "Nee, het juiste antwoord is «Een samenleving die veel koopt»."
       ],
-      "uh": "Er wordt veel gekocht."
+      "uh": "Een samenleving die veel koopt: Er wordt veel gekocht."
      },
      {
       "v": "Wat betekent individualisering?",
@@ -9675,10 +9675,10 @@ var VAKKEN_VMBO = [
       "d": 2,
       "u": "Het individu voorop.",
       "uo": [
-       "Juist niet.",
-       "Nee, dat klopt niet.",
+       "Juist niet, het juiste antwoord is «Het individu wordt belangrijker».",
+       "Nee, het juiste antwoord is «Het individu wordt belangrijker».",
        "Klopt: het individu voorop.",
-       "Nee, dat klopt niet."
+       "Nee, het juiste antwoord is «Het individu wordt belangrijker»."
       ],
       "uh": "Het individu voorop."
      },
@@ -9695,11 +9695,11 @@ var VAKKEN_VMBO = [
       "u": "Mensen kregen meer inspraak.",
       "uo": [
        "Klopt: mensen kregen meer inspraak.",
-       "Juist niet.",
-       "Nee, dat klopt niet.",
-       "Nee, dat klopt niet."
+       "Juist niet, het juiste antwoord is «Meer inspraak krijgen».",
+       "Nee, het juiste antwoord is «Meer inspraak krijgen».",
+       "Nee, het juiste antwoord is «Meer inspraak krijgen»."
       ],
-      "uh": "Mensen kregen meer inspraak."
+      "uh": "Meer inspraak krijgen: Mensen kregen meer inspraak."
      },
      {
       "v": "Wat vergrootte de kloof tussen jong en oud?",
@@ -9713,12 +9713,12 @@ var VAKKEN_VMBO = [
       "d": 3,
       "u": "Eigen jongerencultuur en massamedia.",
       "uo": [
-       "Nee, dat klopt niet.",
-       "Nee, dat klopt niet.",
-       "Nee, dat klopt niet.",
+       "Nee, het juiste antwoord is «Massamedia en jongerencultuur».",
+       "Nee, het juiste antwoord is «Massamedia en jongerencultuur».",
+       "Nee, het juiste antwoord is «Massamedia en jongerencultuur».",
        "Klopt: eigen jongerencultuur en massamedia."
       ],
-      "uh": "Eigen jongerencultuur en massamedia."
+      "uh": "Massamedia en jongerencultuur: Eigen jongerencultuur en massamedia."
      },
      {
       "v": "Wat is secularisatie?",
@@ -9732,12 +9732,12 @@ var VAKKEN_VMBO = [
       "d": 1,
       "u": "Religie wordt minder belangrijk.",
       "uo": [
-       "Juist niet.",
+       "Juist niet, het juiste antwoord is «Minder geloof».",
        "Klopt: religie wordt minder belangrijk.",
-       "Nee, dat klopt niet.",
-       "Nee, dat klopt niet."
+       "Nee, het juiste antwoord is «Minder geloof».",
+       "Nee, het juiste antwoord is «Minder geloof»."
       ],
-      "uh": "Religie wordt minder belangrijk."
+      "uh": "Minder geloof: Religie wordt minder belangrijk."
      },
      {
       "v": "Wat is een protestbeweging?",
@@ -9751,12 +9751,12 @@ var VAKKEN_VMBO = [
       "d": 2,
       "u": "Verzet tegen bestaande regels.",
       "uo": [
-       "Nee, dat klopt niet.",
-       "Nee, dat klopt niet.",
+       "Nee, het juiste antwoord is «Een groep die zich verzet».",
+       "Nee, het juiste antwoord is «Een groep die zich verzet».",
        "Klopt: verzet tegen bestaande regels.",
        "Niet per se."
       ],
-      "uh": "Verzet tegen bestaande regels."
+      "uh": "Een groep die zich verzet: Verzet tegen bestaande regels."
      },
      {
       "v": "Wat maakte de welvaart na 1945 mogelijk?",
@@ -9771,11 +9771,11 @@ var VAKKEN_VMBO = [
       "u": "De economie groeide sterk.",
       "uo": [
        "Klopt: de economie groeide sterk.",
-       "Nee, dat klopt niet.",
-       "Nee, dat klopt niet.",
-       "Nee, dat klopt niet."
+       "Nee, het juiste antwoord is «Economische groei».",
+       "Nee, het juiste antwoord is «Economische groei».",
+       "Nee, het juiste antwoord is «Economische groei»."
       ],
-      "uh": "De economie groeide sterk."
+      "uh": "Economische groei: De economie groeide sterk."
      }
     ],
     "begrippen": [
@@ -9856,10 +9856,10 @@ var VAKKEN_VMBO = [
       "d": 1,
       "u": "Een gebied dat een ander land bestuurt.",
       "uo": [
-       "Juist niet.",
+       "Juist niet, het juiste antwoord is «Een gebied bestuurd door een ander land».",
        "Klopt: een gebied dat een ander land bestuurt.",
-       "Nee, dat klopt niet.",
-       "Nee, dat klopt niet."
+       "Nee, het juiste antwoord is «Een gebied bestuurd door een ander land».",
+       "Nee, het juiste antwoord is «Een gebied bestuurd door een ander land»."
       ],
       "uh": "Een gebied dat een ander land bestuurt."
      },
@@ -9876,9 +9876,9 @@ var VAKKEN_VMBO = [
       "u": "Koloniën worden zelfstandig.",
       "uo": [
        "Dat is kolonisatie.",
-       "Nee, dat klopt niet.",
+       "Idem, het juiste antwoord is «Koloniën worden onafhankelijk».",
        "Klopt: koloniën worden zelfstandig.",
-       "Nee, dat klopt niet."
+       "Nee, het juiste antwoord is «Koloniën worden onafhankelijk»."
       ],
       "uh": "Koloniën worden zelfstandig."
      },
@@ -9896,8 +9896,8 @@ var VAKKEN_VMBO = [
       "uo": [
        "Klopt: Nederlands-Indië werd Indonesië.",
        "Suriname is iets anders.",
-       "Nee, dat klopt niet.",
-       "Nee, dat klopt niet."
+       "Nee, het juiste antwoord is «Nederlands-Indië».",
+       "Nee, het juiste antwoord is «Nederlands-Indië»."
       ],
       "uh": "Nederlands-Indië werd Indonesië."
      },
@@ -9913,12 +9913,12 @@ var VAKKEN_VMBO = [
       "d": 2,
       "u": "Het juiste antwoord is: In 1975.",
       "uo": [
-       "Nee, dat klopt niet.",
-       "Nee, dat klopt niet.",
+       "Nee, het juiste antwoord is «In 1975».",
+       "Nee, het juiste antwoord is «In 1975».",
        "Suriname is wel onafhankelijk.",
        "Klopt: in 1975."
       ],
-      "uh": "Het juiste antwoord is: In 1975."
+      "uh": "In 1975: Het juiste antwoord is: In 1975."
      },
      {
       "v": "Wat is nationalisme?",
@@ -9932,10 +9932,10 @@ var VAKKEN_VMBO = [
       "d": 2,
       "u": "Streven naar een eigen zelfstandige natie.",
       "uo": [
-       "Nee, dat klopt niet.",
+       "Nee, het juiste antwoord is «Streven naar een eigen natie».",
        "Klopt: streven naar een eigen zelfstandige natie.",
-       "Nee, dat klopt niet.",
-       "Nee, dat klopt niet."
+       "Nee, het juiste antwoord is «Streven naar een eigen natie».",
+       "Nee, het juiste antwoord is «Streven naar een eigen natie»."
       ],
       "uh": "Streven naar een eigen zelfstandige natie."
      },
@@ -9951,10 +9951,10 @@ var VAKKEN_VMBO = [
       "d": 3,
       "u": "Militaire acties van Nederland in Indië na 1945.",
       "uo": [
-       "Nee, dat klopt niet.",
-       "Nee, dat klopt niet.",
+       "Nee, het juiste antwoord is «Militaire acties in Indië».",
+       "Nee, het juiste antwoord is «Militaire acties in Indië».",
        "Klopt: militaire acties van Nederland in Indië na 1945.",
-       "Nee, dat klopt niet."
+       "Nee, het juiste antwoord is «Militaire acties in Indië»."
       ],
       "uh": "Militaire acties van Nederland in Indië na 1945."
      },
@@ -9971,11 +9971,11 @@ var VAKKEN_VMBO = [
       "u": "Grondstoffen en plantages, vaak door uitbuiting.",
       "uo": [
        "Klopt: grondstoffen en plantages, vaak door uitbuiting.",
-       "Nee, dat klopt niet.",
-       "Nee, dat klopt niet.",
-       "Nee, dat klopt niet."
+       "Nee, het juiste antwoord is «Met grondstoffen en plantages».",
+       "Nee, het juiste antwoord is «Met grondstoffen en plantages».",
+       "Nee, het juiste antwoord is «Met grondstoffen en plantages»."
       ],
-      "uh": "Grondstoffen en plantages, vaak door uitbuiting."
+      "uh": "Met grondstoffen en plantages: Grondstoffen en plantages, vaak door uitbuiting."
      },
      {
       "v": "Wat is uitbuiting?",
@@ -9989,12 +9989,12 @@ var VAKKEN_VMBO = [
       "d": 2,
       "u": "Mensen of gebieden misbruiken voor winst.",
       "uo": [
-       "Juist niet.",
-       "Nee, dat klopt niet.",
-       "Nee, dat klopt niet.",
+       "Juist niet, het juiste antwoord is «Mensen misbruiken voor winst».",
+       "Nee, het juiste antwoord is «Mensen misbruiken voor winst».",
+       "Nee, het juiste antwoord is «Mensen misbruiken voor winst».",
        "Klopt: mensen of gebieden misbruiken voor winst."
       ],
-      "uh": "Mensen of gebieden misbruiken voor winst."
+      "uh": "Mensen misbruiken voor winst: Mensen of gebieden misbruiken voor winst."
      },
      {
       "v": "Wat is kolonisatie?",
@@ -10010,10 +10010,10 @@ var VAKKEN_VMBO = [
       "uo": [
        "Juist het tegenovergestelde.",
        "Klopt: een ander gebied in bezit nemen en besturen.",
-       "Nee, dat klopt niet.",
-       "Nee, dat klopt niet."
+       "Nee, het juiste antwoord is «Een gebied in bezit nemen».",
+       "Nee, het juiste antwoord is «Een gebied in bezit nemen»."
       ],
-      "uh": "Een ander gebied in bezit nemen en besturen."
+      "uh": "Een gebied in bezit nemen: Een ander gebied in bezit nemen en besturen."
      },
      {
       "v": "Wat gebeurde na de onafhankelijkheid van Suriname?",
@@ -10028,7 +10028,7 @@ var VAKKEN_VMBO = [
       "u": "Veel mensen kwamen naar Nederland.",
       "uo": [
        "Niet iedereen.",
-       "Nee, dat klopt niet.",
+       "Nee, het juiste antwoord is «Veel mensen migreerden naar Nederland».",
        "Klopt: veel mensen kwamen naar Nederland.",
        "Er veranderde veel."
       ],
@@ -10047,9 +10047,9 @@ var VAKKEN_VMBO = [
       "u": "Een groot landbouwbedrijf in een kolonie.",
       "uo": [
        "Klopt: een groot landbouwbedrijf in een kolonie.",
-       "Nee, dat klopt niet.",
-       "Nee, dat klopt niet.",
-       "Nee, dat klopt niet."
+       "Nee, het juiste antwoord is «Een groot landbouwbedrijf in een kolonie».",
+       "Nee, het juiste antwoord is «Een groot landbouwbedrijf in een kolonie».",
+       "Nee, het juiste antwoord is «Een groot landbouwbedrijf in een kolonie»."
       ],
       "uh": "Een groot landbouwbedrijf in een kolonie."
      }
@@ -10137,10 +10137,10 @@ var VAKKEN_VMBO = [
       "uo": [
        "Dat is de Tweede.",
        "Klopt: 1914 tot 1918.",
-       "Nee, dat klopt niet.",
-       "Nee, dat klopt niet."
+       "Nee, het juiste antwoord is «1914-1918».",
+       "Nee, het juiste antwoord is «1914-1918»."
       ],
-      "uh": "1914 tot 1918."
+      "uh": "1914-1918: 1914 tot 1918."
      },
      {
       "v": "Wat is het interbellum?",
@@ -10154,12 +10154,12 @@ var VAKKEN_VMBO = [
       "d": 2,
       "u": "De periode tussen de twee wereldoorlogen.",
       "uo": [
-       "Nee, dat klopt niet.",
-       "Nee, dat klopt niet.",
+       "Nee, het juiste antwoord is «De tijd tussen de wereldoorlogen».",
+       "Nee, het juiste antwoord is «De tijd tussen de wereldoorlogen».",
        "Klopt: de periode tussen de twee wereldoorlogen.",
-       "Nee, dat klopt niet."
+       "Nee, het juiste antwoord is «De tijd tussen de wereldoorlogen»."
       ],
-      "uh": "De periode tussen de twee wereldoorlogen."
+      "uh": "De tijd tussen de wereldoorlogen: De periode tussen de twee wereldoorlogen."
      },
      {
       "v": "Wat gebeurde er in 1929?",
@@ -10174,9 +10174,9 @@ var VAKKEN_VMBO = [
       "u": "De beurskrach leidde tot een crisis.",
       "uo": [
        "Klopt: de beurskrach leidde tot een crisis.",
-       "Nee, dat klopt niet.",
+       "Nee, het juiste antwoord is «De beurskrach».",
        "Nee, dat was 1989.",
-       "Nee, dat klopt niet."
+       "Nee, het juiste antwoord is «De beurskrach»."
       ],
       "uh": "De beurskrach leidde tot een crisis."
      },
@@ -10192,9 +10192,9 @@ var VAKKEN_VMBO = [
       "d": 2,
       "u": "Extreem-rechts met een sterke leider en één partij.",
       "uo": [
-       "Juist niet.",
-       "Nee, dat klopt niet.",
-       "Nee, dat klopt niet.",
+       "Juist niet, het juiste antwoord is «Extreem-rechts met één sterke leider».",
+       "Nee, het juiste antwoord is «Extreem-rechts met één sterke leider».",
+       "Nee, het juiste antwoord is «Extreem-rechts met één sterke leider».",
        "Klopt: extreem-rechts met een sterke leider en één partij."
       ],
       "uh": "Extreem-rechts met een sterke leider en één partij."
@@ -10211,12 +10211,12 @@ var VAKKEN_VMBO = [
       "d": 2,
       "u": "De Duitse vorm van fascisme met Jodenhaat.",
       "uo": [
-       "Nee, dat klopt niet.",
+       "Nee, het juiste antwoord is «Duits fascisme met racisme».",
        "Klopt: de Duitse vorm van fascisme met Jodenhaat.",
-       "Nee, dat klopt niet.",
-       "Nee, dat klopt niet."
+       "Nee, het juiste antwoord is «Duits fascisme met racisme».",
+       "Nee, het juiste antwoord is «Duits fascisme met racisme»."
       ],
-      "uh": "De Duitse vorm van fascisme met Jodenhaat."
+      "uh": "Duits fascisme met racisme: De Duitse vorm van fascisme met Jodenhaat."
      },
      {
       "v": "Wat is de Holocaust?",
@@ -10230,12 +10230,12 @@ var VAKKEN_VMBO = [
       "d": 2,
       "u": "De systematische moord op de Joden door de nazi's.",
       "uo": [
-       "Nee, dat klopt niet.",
-       "Nee, dat klopt niet.",
+       "Nee, het juiste antwoord is «De moord op zes miljoen Joden».",
+       "Nee, het juiste antwoord is «De moord op zes miljoen Joden».",
        "Klopt: de systematische moord op de Joden door de nazi's.",
-       "Nee, dat klopt niet."
+       "Nee, het juiste antwoord is «De moord op zes miljoen Joden»."
       ],
-      "uh": "De systematische moord op de Joden door de nazi's."
+      "uh": "De moord op zes miljoen Joden: De systematische moord op de Joden door de nazi's."
      },
      {
       "v": "Wat was de Koude Oorlog?",
@@ -10251,8 +10251,8 @@ var VAKKEN_VMBO = [
       "uo": [
        "Klopt: spanning tussen VS en Sovjet-Unie na 1945.",
        "Er werd niet direct gevochten.",
-       "Nee, dat klopt niet.",
-       "Nee, dat klopt niet."
+       "Nee, het juiste antwoord is «Spanning tussen VS en Sovjet-Unie».",
+       "Nee, het juiste antwoord is «Spanning tussen VS en Sovjet-Unie»."
       ],
       "uh": "Spanning tussen VS en Sovjet-Unie na 1945."
      },
@@ -10269,11 +10269,11 @@ var VAKKEN_VMBO = [
       "u": "Het militaire bondgenootschap van westerse landen.",
       "uo": [
        "Dat was het Warschaupact.",
-       "Nee, dat klopt niet.",
-       "Nee, dat klopt niet.",
+       "Nee, het juiste antwoord is «Het westerse bondgenootschap».",
+       "Nee, het juiste antwoord is «Het westerse bondgenootschap».",
        "Klopt: het militaire bondgenootschap van westerse landen."
       ],
-      "uh": "Het militaire bondgenootschap van westerse landen."
+      "uh": "Het westerse bondgenootschap: Het militaire bondgenootschap van westerse landen."
      },
      {
       "v": "Wat gebeurde er in 1989?",
@@ -10287,12 +10287,12 @@ var VAKKEN_VMBO = [
       "d": 2,
       "u": "De Muur viel, einde van de Koude Oorlog.",
       "uo": [
-       "Nee, dat klopt niet.",
+       "Nee, het juiste antwoord is «De val van de Berlijnse Muur».",
        "Klopt: de Muur viel, einde van de Koude Oorlog.",
        "Dat was 1929.",
-       "Nee, dat klopt niet."
+       "Nee, het juiste antwoord is «De val van de Berlijnse Muur»."
       ],
-      "uh": "De Muur viel, einde van de Koude Oorlog."
+      "uh": "De val van de Berlijnse Muur: De Muur viel, einde van de Koude Oorlog."
      },
      {
       "v": "Wat is een dictatuur?",
@@ -10307,11 +10307,11 @@ var VAKKEN_VMBO = [
       "u": "Alle macht bij één.",
       "uo": [
        "Dat is een democratie.",
-       "Juist niet.",
+       "Juist niet, het juiste antwoord is «Eén persoon of partij heeft alle macht».",
        "Klopt: alle macht bij één.",
-       "Nee, dat klopt niet."
+       "Nee, het juiste antwoord is «Eén persoon of partij heeft alle macht»."
       ],
-      "uh": "Alle macht bij één."
+      "uh": "Eén persoon of partij heeft alle macht: Alle macht bij één."
      },
      {
       "v": "Wat betekende de bezetting voor Nederland in WOII?",
@@ -10326,11 +10326,11 @@ var VAKKEN_VMBO = [
       "u": "Duitsland beheerste het land.",
       "uo": [
        "Klopt: Duitsland beheerste het land.",
-       "Juist niet.",
-       "Nee, dat klopt niet.",
-       "Nee, dat klopt niet."
+       "Juist niet, het juiste antwoord is «Een vreemd leger had de macht».",
+       "Nee, het juiste antwoord is «Een vreemd leger had de macht».",
+       "Nee, het juiste antwoord is «Een vreemd leger had de macht»."
       ],
-      "uh": "Duitsland beheerste het land."
+      "uh": "Een vreemd leger had de macht: Duitsland beheerste het land."
      }
     ],
     "begrippen": [
@@ -10419,12 +10419,12 @@ var VAKKEN_VMBO = [
       "d": 2,
       "u": "Om vrede en welvaart te bevorderen.",
       "uo": [
-       "Juist niet.",
+       "Juist niet, het juiste antwoord is «Voor vrede en welvaart».",
        "Klopt: om vrede en welvaart te bevorderen.",
-       "Nee, dat klopt niet.",
-       "Nee, dat klopt niet."
+       "Nee, het juiste antwoord is «Voor vrede en welvaart».",
+       "Nee, het juiste antwoord is «Voor vrede en welvaart»."
       ],
-      "uh": "Om vrede en welvaart te bevorderen."
+      "uh": "Voor vrede en welvaart: Om vrede en welvaart te bevorderen."
      },
      {
       "v": "Wat is de euro?",
@@ -10438,12 +10438,12 @@ var VAKKEN_VMBO = [
       "d": 1,
       "u": "De munt van veel EU-landen.",
       "uo": [
-       "Nee, dat klopt niet.",
-       "Nee, dat klopt niet.",
+       "Nee, het juiste antwoord is «De gezamenlijke munt van EU-landen».",
+       "Nee, het juiste antwoord is «De gezamenlijke munt van EU-landen».",
        "Klopt: de munt van veel EU-landen.",
-       "Nee, dat klopt niet."
+       "Nee, het juiste antwoord is «De gezamenlijke munt van EU-landen»."
       ],
-      "uh": "De munt van veel EU-landen."
+      "uh": "De gezamenlijke munt van EU-landen: De munt van veel EU-landen."
      },
      {
       "v": "Wat is de Europese Unie?",
@@ -10458,8 +10458,8 @@ var VAKKEN_VMBO = [
       "u": "Een samenwerkingsverband van Europese landen.",
       "uo": [
        "Klopt: een samenwerkingsverband van Europese landen.",
-       "Nee, dat klopt niet.",
-       "Nee, dat klopt niet.",
+       "Nee, het juiste antwoord is «Een samenwerking van Europese landen».",
+       "Nee, het juiste antwoord is «Een samenwerking van Europese landen».",
        "De munt is de euro."
       ],
       "uh": "Een samenwerkingsverband van Europese landen."
@@ -10476,9 +10476,9 @@ var VAKKEN_VMBO = [
       "d": 2,
       "u": "Landen raken wereldwijd verweven.",
       "uo": [
-       "Juist niet.",
-       "Nee, dat klopt niet.",
-       "Nee, dat klopt niet.",
+       "Juist niet, het juiste antwoord is «Landen raken wereldwijd verweven».",
+       "Nee, het juiste antwoord is «Landen raken wereldwijd verweven».",
+       "Nee, het juiste antwoord is «Landen raken wereldwijd verweven».",
        "Klopt: landen raken wereldwijd verweven."
       ],
       "uh": "Landen raken wereldwijd verweven."
@@ -10497,10 +10497,10 @@ var VAKKEN_VMBO = [
       "uo": [
        "Juist minder.",
        "Klopt: vrij binnen de EU.",
-       "Nee, dat klopt niet.",
-       "Nee, dat klopt niet."
+       "Nee, het juiste antwoord is «Vrij reizen, werken en handelen».",
+       "Nee, het juiste antwoord is «Vrij reizen, werken en handelen»."
       ],
-      "uh": "Vrij binnen de EU."
+      "uh": "Vrij reizen, werken en handelen: Vrij binnen de EU."
      },
      {
       "v": "Wat is een verdrag?",
@@ -10514,12 +10514,12 @@ var VAKKEN_VMBO = [
       "d": 1,
       "u": "Een afspraak tussen landen.",
       "uo": [
-       "Nee, dat klopt niet.",
-       "Nee, dat klopt niet.",
+       "Nee, het juiste antwoord is «Een officiële afspraak tussen landen».",
+       "Nee, het juiste antwoord is «Een officiële afspraak tussen landen».",
        "Klopt: een afspraak tussen landen.",
-       "Nee, dat klopt niet."
+       "Nee, het juiste antwoord is «Een officiële afspraak tussen landen»."
       ],
-      "uh": "Een afspraak tussen landen."
+      "uh": "Een officiële afspraak tussen landen: Een afspraak tussen landen."
      },
      {
       "v": "Wat is een multinational?",
@@ -10534,9 +10534,9 @@ var VAKKEN_VMBO = [
       "u": "Een bedrijf dat in veel landen actief is.",
       "uo": [
        "Klopt: een bedrijf dat in veel landen actief is.",
-       "Nee, dat klopt niet.",
-       "Nee, dat klopt niet.",
-       "Nee, dat klopt niet."
+       "Nee, het juiste antwoord is «Een bedrijf in meerdere landen».",
+       "Nee, het juiste antwoord is «Een bedrijf in meerdere landen».",
+       "Nee, het juiste antwoord is «Een bedrijf in meerdere landen»."
       ],
       "uh": "Een bedrijf dat in veel landen actief is."
      },
@@ -10552,9 +10552,9 @@ var VAKKEN_VMBO = [
       "d": 2,
       "u": "Steun aan armere landen om zich te ontwikkelen.",
       "uo": [
-       "Nee, dat klopt niet.",
-       "Nee, dat klopt niet.",
-       "Nee, dat klopt niet.",
+       "Nee, het juiste antwoord is «Steun aan armere landen».",
+       "Nee, het juiste antwoord is «Steun aan armere landen».",
+       "Nee, het juiste antwoord is «Steun aan armere landen».",
        "Klopt: steun aan armere landen om zich te ontwikkelen."
       ],
       "uh": "Steun aan armere landen om zich te ontwikkelen."
@@ -10571,10 +10571,10 @@ var VAKKEN_VMBO = [
       "d": 2,
       "u": "Vrede en welvaart.",
       "uo": [
-       "Juist niet.",
+       "Juist niet, het juiste antwoord is «Vrede».",
        "Klopt: vrede en welvaart.",
-       "Nee, dat klopt niet.",
-       "Nee, dat klopt niet."
+       "Nee, het juiste antwoord is «Vrede».",
+       "Nee, het juiste antwoord is «Vrede»."
       ],
       "uh": "Vrede en welvaart."
      },
@@ -10590,10 +10590,10 @@ var VAKKEN_VMBO = [
       "d": 2,
       "u": "Iemand die zijn land ontvlucht vanwege gevaar.",
       "uo": [
-       "Nee, dat klopt niet.",
-       "Nee, dat klopt niet.",
+       "Nee, het juiste antwoord is «Iemand die zijn land ontvlucht».",
+       "Nee, het juiste antwoord is «Iemand die zijn land ontvlucht».",
        "Klopt: iemand die zijn land ontvlucht vanwege gevaar.",
-       "Nee, dat klopt niet."
+       "Nee, het juiste antwoord is «Iemand die zijn land ontvlucht»."
       ],
       "uh": "Iemand die zijn land ontvlucht vanwege gevaar."
      },
@@ -10610,11 +10610,11 @@ var VAKKEN_VMBO = [
       "u": "Goederen kopen en verkopen tussen landen.",
       "uo": [
        "Klopt: goederen kopen en verkopen tussen landen.",
-       "Nee, dat klopt niet.",
-       "Nee, dat klopt niet.",
-       "Nee, dat klopt niet."
+       "Nee, het juiste antwoord is «Kopen en verkopen over de grens».",
+       "Nee, het juiste antwoord is «Kopen en verkopen over de grens».",
+       "Nee, het juiste antwoord is «Kopen en verkopen over de grens»."
       ],
-      "uh": "Goederen kopen en verkopen tussen landen."
+      "uh": "Kopen en verkopen over de grens: Goederen kopen en verkopen tussen landen."
      }
     ],
     "begrippen": [
@@ -10723,10 +10723,10 @@ var VAKKEN_VMBO = [
       "d": 2,
       "u": "Weer is nu, klimaat over lange tijd.",
       "uo": [
-       "Nee, dat klopt niet.",
+       "Nee, het juiste antwoord is «Weer is nu, klimaat is gemiddeld over 30 jaar».",
        "Klopt: weer is nu, klimaat over lange tijd.",
        "Nee, dat is klimaat.",
-       "Nee, dat klopt niet."
+       "Nee, het juiste antwoord is «Weer is nu, klimaat is gemiddeld over 30 jaar»."
       ],
       "uh": "Weer is nu, klimaat over lange tijd."
      },
@@ -10747,7 +10747,7 @@ var VAKKEN_VMBO = [
        "Klopt: opstijgende lucht, vaak nat.",
        "Er is juist wind."
       ],
-      "uh": "Opstijgende lucht, vaak nat."
+      "uh": "Vaak bewolkt en nat: Opstijgende lucht, vaak nat."
      },
      {
       "v": "Wat is wind?",
@@ -10762,11 +10762,11 @@ var VAKKEN_VMBO = [
       "u": "Lucht stroomt van hoge naar lage druk.",
       "uo": [
        "Klopt: lucht stroomt van hoge naar lage druk.",
-       "Nee, dat klopt niet.",
-       "Nee, dat klopt niet.",
-       "Nee, dat klopt niet."
+       "Nee, het juiste antwoord is «Bewegende lucht van hoge naar lage druk».",
+       "Nee, het juiste antwoord is «Bewegende lucht van hoge naar lage druk».",
+       "Nee, het juiste antwoord is «Bewegende lucht van hoge naar lage druk»."
       ],
-      "uh": "Lucht stroomt van hoge naar lage druk."
+      "uh": "Bewegende lucht van hoge naar lage druk: Lucht stroomt van hoge naar lage druk."
      },
      {
       "v": "Wat lees je af aan een klimaatgrafiek?",
@@ -10780,12 +10780,12 @@ var VAKKEN_VMBO = [
       "d": 2,
       "u": "Gemiddelde temperatuur en neerslag per maand.",
       "uo": [
-       "Nee, dat klopt niet.",
-       "Nee, dat klopt niet.",
-       "Nee, dat klopt niet.",
+       "Nee, het juiste antwoord is «Temperatuur en neerslag per maand».",
+       "Nee, het juiste antwoord is «Temperatuur en neerslag per maand».",
+       "Nee, het juiste antwoord is «Temperatuur en neerslag per maand».",
        "Klopt: gemiddelde temperatuur en neerslag per maand."
       ],
-      "uh": "Gemiddelde temperatuur en neerslag per maand."
+      "uh": "Temperatuur en neerslag per maand: Gemiddelde temperatuur en neerslag per maand."
      },
      {
       "v": "Nederland heeft een...",
@@ -10799,12 +10799,12 @@ var VAKKEN_VMBO = [
       "d": 2,
       "u": "Mild door de zee.",
       "uo": [
-       "Nee, dat klopt niet.",
+       "Nee, het juiste antwoord is «zeeklimaat».",
        "Klopt: mild door de zee.",
-       "Nee, dat klopt niet.",
+       "Nee, het juiste antwoord is «zeeklimaat».",
        "Dat is ver van zee."
       ],
-      "uh": "Mild door de zee."
+      "uh": "zeeklimaat: Mild door de zee."
      },
      {
       "v": "Wat is een hogedrukgebied?",
@@ -10819,11 +10819,11 @@ var VAKKEN_VMBO = [
       "u": "Dalende lucht, droog weer.",
       "uo": [
        "Dat is lagedruk.",
-       "Nee, dat klopt niet.",
+       "Nee, het juiste antwoord is «Vaak droog en zonnig».",
        "Klopt: dalende lucht, droog weer.",
-       "Nee, dat klopt niet."
+       "Nee, het juiste antwoord is «Vaak droog en zonnig»."
       ],
-      "uh": "Dalende lucht, droog weer."
+      "uh": "Vaak droog en zonnig: Dalende lucht, droog weer."
      },
      {
       "v": "Wat is neerslag?",
@@ -10838,11 +10838,11 @@ var VAKKEN_VMBO = [
       "u": "Water dat uit de lucht valt.",
       "uo": [
        "Klopt: water dat uit de lucht valt.",
-       "Nee, dat klopt niet.",
-       "Nee, dat klopt niet.",
-       "Nee, dat klopt niet."
+       "Nee, het juiste antwoord is «Regen en sneeuw».",
+       "Nee, het juiste antwoord is «Regen en sneeuw».",
+       "Nee, het juiste antwoord is «Regen en sneeuw»."
       ],
-      "uh": "Water dat uit de lucht valt."
+      "uh": "Regen en sneeuw: Water dat uit de lucht valt."
      },
      {
       "v": "Wat is een isobar op een weerkaart?",
@@ -10856,12 +10856,12 @@ var VAKKEN_VMBO = [
       "d": 3,
       "u": "Verbindt punten met dezelfde luchtdruk.",
       "uo": [
-       "Nee, dat klopt niet.",
-       "Nee, dat klopt niet.",
-       "Nee, dat klopt niet.",
+       "Nee, het juiste antwoord is «Een lijn van gelijke luchtdruk».",
+       "Nee, het juiste antwoord is «Een lijn van gelijke luchtdruk».",
+       "Nee, het juiste antwoord is «Een lijn van gelijke luchtdruk».",
        "Klopt: verbindt punten met dezelfde luchtdruk."
       ],
-      "uh": "Verbindt punten met dezelfde luchtdruk."
+      "uh": "Een lijn van gelijke luchtdruk: Verbindt punten met dezelfde luchtdruk."
      },
      {
       "v": "Wat is een landklimaat?",
@@ -10877,10 +10877,10 @@ var VAKKEN_VMBO = [
       "uo": [
        "Dat is zeeklimaat.",
        "Klopt: extreem, ver van zee.",
-       "Nee, dat klopt niet.",
-       "Nee, dat klopt niet."
+       "Nee, het juiste antwoord is «Koude winters en warme zomers».",
+       "Nee, het juiste antwoord is «Koude winters en warme zomers»."
       ],
-      "uh": "Extreem, ver van zee."
+      "uh": "Koude winters en warme zomers: Extreem, ver van zee."
      },
      {
       "v": "Wat is een front?",
@@ -10894,10 +10894,10 @@ var VAKKEN_VMBO = [
       "d": 2,
       "u": "De grens tussen warme en koude lucht.",
       "uo": [
-       "Nee, dat klopt niet.",
-       "Nee, dat klopt niet.",
+       "Nee, het juiste antwoord is «De grens tussen warme en koude lucht».",
+       "Nee, het juiste antwoord is «De grens tussen warme en koude lucht».",
        "Klopt: de grens tussen warme en koude lucht.",
-       "Nee, dat klopt niet."
+       "Nee, het juiste antwoord is «De grens tussen warme en koude lucht»."
       ],
       "uh": "De grens tussen warme en koude lucht."
      },
@@ -10914,11 +10914,11 @@ var VAKKEN_VMBO = [
       "u": "De zee zorgt voor milde temperaturen.",
       "uo": [
        "Klopt: de zee zorgt voor milde temperaturen.",
-       "Nee, dat klopt niet.",
-       "Nee, dat klopt niet.",
-       "Nee, dat klopt niet."
+       "Nee, het juiste antwoord is «Door de invloed van de zee».",
+       "Nee, het juiste antwoord is «Door de invloed van de zee».",
+       "Nee, het juiste antwoord is «Door de invloed van de zee»."
       ],
-      "uh": "De zee zorgt voor milde temperaturen."
+      "uh": "Door de invloed van de zee: De zee zorgt voor milde temperaturen."
      }
     ],
     "begrippen": [
@@ -11011,9 +11011,9 @@ var VAKKEN_VMBO = [
        "Water verdwijnt niet.",
        "Klopt: water gaat rond via verdamping en neerslag.",
        "Nee, dat is één deel.",
-       "Nee, dat klopt niet."
+       "Nee, het juiste antwoord is «Verdamping, neerslag en afstroming»."
       ],
-      "uh": "Water gaat rond via verdamping en neerslag."
+      "uh": "Verdamping, neerslag en afstroming: Water gaat rond via verdamping en neerslag."
      },
      {
       "v": "Wat is verdamping?",
@@ -11028,11 +11028,11 @@ var VAKKEN_VMBO = [
       "u": "Water wordt waterdamp.",
       "uo": [
        "Dat is neerslag.",
-       "Nee, dat klopt niet.",
+       "Nee, het juiste antwoord is «Water dat waterdamp wordt».",
        "Klopt: water wordt waterdamp.",
        "Dat is grondwater."
       ],
-      "uh": "Water wordt waterdamp."
+      "uh": "Water dat waterdamp wordt: Water wordt waterdamp."
      },
      {
       "v": "Wat doet een dijk?",
@@ -11048,10 +11048,10 @@ var VAKKEN_VMBO = [
       "uo": [
        "Klopt: een dijk houdt het water tegen.",
        "Dat doet een gemaal.",
-       "Nee, dat klopt niet.",
+       "Nee, het juiste antwoord is «Houdt het water tegen».",
        "Dat doet een polder."
       ],
-      "uh": "Een dijk houdt het water tegen."
+      "uh": "Houdt het water tegen: Een dijk houdt het water tegen."
      },
      {
       "v": "Wat is een polder?",
@@ -11065,12 +11065,12 @@ var VAKKEN_VMBO = [
       "d": 2,
       "u": "Laag land dat door dijken en gemalen droog blijft.",
       "uo": [
-       "Nee, dat klopt niet.",
-       "Nee, dat klopt niet.",
-       "Nee, dat klopt niet.",
+       "Nee, het juiste antwoord is «Drooggelegd laaggelegen land».",
+       "Nee, het juiste antwoord is «Drooggelegd laaggelegen land».",
+       "Nee, het juiste antwoord is «Drooggelegd laaggelegen land».",
        "Klopt: laag land dat door dijken en gemalen droog blijft."
       ],
-      "uh": "Laag land dat door dijken en gemalen droog blijft."
+      "uh": "Drooggelegd laaggelegen land: Laag land dat door dijken en gemalen droog blijft."
      },
      {
       "v": "Wat doet een gemaal?",
@@ -11086,10 +11086,10 @@ var VAKKEN_VMBO = [
       "uo": [
        "Dat doet een dijk.",
        "Klopt: het pompt overtollig water weg.",
-       "Nee, dat klopt niet.",
-       "Nee, dat klopt niet."
+       "Nee, het juiste antwoord is «Overtollig water wegpompen».",
+       "Nee, het juiste antwoord is «Overtollig water wegpompen»."
       ],
-      "uh": "Het pompt overtollig water weg."
+      "uh": "Overtollig water wegpompen: Het pompt overtollig water weg."
      },
      {
       "v": "Wat is grondwater?",
@@ -11103,12 +11103,12 @@ var VAKKEN_VMBO = [
       "d": 1,
       "u": "Water dat in de bodem zit.",
       "uo": [
-       "Nee, dat klopt niet.",
-       "Nee, dat klopt niet.",
+       "Nee, het juiste antwoord is «Water in de bodem».",
+       "Nee, het juiste antwoord is «Water in de bodem».",
        "Klopt: water dat in de bodem zit.",
-       "Nee, dat klopt niet."
+       "Nee, het juiste antwoord is «Water in de bodem»."
       ],
-      "uh": "Water dat in de bodem zit."
+      "uh": "Water in de bodem: Water dat in de bodem zit."
      },
      {
       "v": "Wat is een delta?",
@@ -11123,9 +11123,9 @@ var VAKKEN_VMBO = [
       "u": "Waar een rivier zich vertakt en in zee uitmondt.",
       "uo": [
        "Klopt: waar een rivier zich vertakt en in zee uitmondt.",
-       "Nee, dat klopt niet.",
-       "Nee, dat klopt niet.",
-       "Nee, dat klopt niet."
+       "Nee, het juiste antwoord is «Waar een rivier in zee uitmondt».",
+       "Nee, het juiste antwoord is «Waar een rivier in zee uitmondt».",
+       "Nee, het juiste antwoord is «Waar een rivier in zee uitmondt»."
       ],
       "uh": "Waar een rivier zich vertakt en in zee uitmondt."
      },
@@ -11141,12 +11141,12 @@ var VAKKEN_VMBO = [
       "d": 3,
       "u": "Door de stijgende zeespiegel.",
       "uo": [
-       "Nee, dat klopt niet.",
+       "Nee, het juiste antwoord is «Door zeespiegelstijging».",
        "Juist andersom.",
        "Dijken helpen juist.",
        "Klopt: door de stijgende zeespiegel."
       ],
-      "uh": "Door de stijgende zeespiegel."
+      "uh": "Door zeespiegelstijging: Door de stijgende zeespiegel."
      },
      {
       "v": "Wat beheert het waterschap?",
@@ -11160,12 +11160,12 @@ var VAKKEN_VMBO = [
       "d": 2,
       "u": "Het waterschap zorgt voor dijken en waterpeil.",
       "uo": [
-       "Nee, dat klopt niet.",
+       "Nee, het juiste antwoord is «De dijken en het waterpeil».",
        "Klopt: het waterschap zorgt voor dijken en waterpeil.",
-       "Nee, dat klopt niet.",
-       "Nee, dat klopt niet."
+       "Nee, het juiste antwoord is «De dijken en het waterpeil».",
+       "Nee, het juiste antwoord is «De dijken en het waterpeil»."
       ],
-      "uh": "Het waterschap zorgt voor dijken en waterpeil."
+      "uh": "De dijken en het waterpeil: Het waterschap zorgt voor dijken en waterpeil."
      },
      {
       "v": "Wat is een rivier?",
@@ -11179,10 +11179,10 @@ var VAKKEN_VMBO = [
       "d": 1,
       "u": "Stromend water dat naar zee gaat.",
       "uo": [
-       "Nee, dat klopt niet.",
+       "Nee, het juiste antwoord is «Stromend water naar de zee».",
        "Dat is grondwater.",
        "Klopt: stromend water dat naar zee gaat.",
-       "Nee, dat klopt niet."
+       "Nee, het juiste antwoord is «Stromend water naar de zee»."
       ],
       "uh": "Stromend water dat naar zee gaat."
      },
@@ -11199,11 +11199,11 @@ var VAKKEN_VMBO = [
       "u": "Veel land ligt onder zeeniveau.",
       "uo": [
        "Klopt: veel land ligt onder zeeniveau.",
-       "Juist niet.",
+       "Juist niet, het juiste antwoord is «Grote delen liggen laag».",
        "Er is wel zee.",
        "Er valt wel regen."
       ],
-      "uh": "Veel land ligt onder zeeniveau."
+      "uh": "Grote delen liggen laag: Veel land ligt onder zeeniveau."
      }
     ],
     "begrippen": [
@@ -11286,10 +11286,10 @@ var VAKKEN_VMBO = [
       "uo": [
        "Dat is het sterftecijfer.",
        "Klopt: geboorten per duizend inwoners.",
-       "Nee, dat klopt niet.",
-       "Nee, dat klopt niet."
+       "Nee, het juiste antwoord is «Aantal geboorten per 1000 inwoners».",
+       "Nee, het juiste antwoord is «Aantal geboorten per 1000 inwoners»."
       ],
-      "uh": "Geboorten per duizend inwoners."
+      "uh": "Aantal geboorten per 1000 inwoners: Geboorten per duizend inwoners."
      },
      {
       "v": "Wat is natuurlijke aanwas?",
@@ -11303,12 +11303,12 @@ var VAKKEN_VMBO = [
       "d": 3,
       "u": "Geboorten min sterfte.",
       "uo": [
-       "Nee, dat klopt niet.",
-       "Nee, dat klopt niet.",
+       "Nee, het juiste antwoord is «Geboortecijfer min sterftecijfer».",
+       "Nee, het juiste antwoord is «Geboortecijfer min sterftecijfer».",
        "Klopt: geboorten min sterfte.",
-       "Nee, dat klopt niet."
+       "Nee, het juiste antwoord is «Geboortecijfer min sterftecijfer»."
       ],
-      "uh": "Geboorten min sterfte."
+      "uh": "Geboortecijfer min sterftecijfer: Geboorten min sterfte."
      },
      {
       "v": "Wat is immigratie?",
@@ -11324,10 +11324,10 @@ var VAKKEN_VMBO = [
       "uo": [
        "Klopt: je vestigen in een nieuw land.",
        "Dat is emigratie.",
-       "Nee, dat klopt niet.",
-       "Nee, dat klopt niet."
+       "Nee, het juiste antwoord is «Een land binnenkomen».",
+       "Nee, het juiste antwoord is «Een land binnenkomen»."
       ],
-      "uh": "Je vestigen in een nieuw land."
+      "uh": "Een land binnenkomen: Je vestigen in een nieuw land."
      },
      {
       "v": "Wat is emigratie?",
@@ -11342,11 +11342,11 @@ var VAKKEN_VMBO = [
       "u": "Vertrekken uit je eigen land.",
       "uo": [
        "Dat is immigratie.",
-       "Nee, dat klopt niet.",
-       "Nee, dat klopt niet.",
+       "Nee, het juiste antwoord is «Je eigen land verlaten».",
+       "Nee, het juiste antwoord is «Je eigen land verlaten».",
        "Klopt: vertrekken uit je eigen land."
       ],
-      "uh": "Vertrekken uit je eigen land."
+      "uh": "Je eigen land verlaten: Vertrekken uit je eigen land."
      },
      {
       "v": "Wat is verstedelijking?",
@@ -11360,10 +11360,10 @@ var VAKKEN_VMBO = [
       "d": 2,
       "u": "Steden groeien, meer stadsbewoners.",
       "uo": [
-       "Juist niet.",
+       "Juist niet, het juiste antwoord is «Steden groeien».",
        "Klopt: steden groeien, meer stadsbewoners.",
-       "Nee, dat klopt niet.",
-       "Nee, dat klopt niet."
+       "Nee, het juiste antwoord is «Steden groeien».",
+       "Nee, het juiste antwoord is «Steden groeien»."
       ],
       "uh": "Steden groeien, meer stadsbewoners."
      },
@@ -11379,10 +11379,10 @@ var VAKKEN_VMBO = [
       "d": 2,
       "u": "Inwoners per km².",
       "uo": [
-       "Nee, dat klopt niet.",
-       "Nee, dat klopt niet.",
+       "Nee, het juiste antwoord is «Inwoners per vierkante kilometer».",
+       "Nee, het juiste antwoord is «Inwoners per vierkante kilometer».",
        "Klopt: inwoners per km².",
-       "Nee, dat klopt niet."
+       "Nee, het juiste antwoord is «Inwoners per vierkante kilometer»."
       ],
       "uh": "Inwoners per km²."
      },
@@ -11399,11 +11399,11 @@ var VAKKEN_VMBO = [
       "u": "Het aandeel ouderen stijgt.",
       "uo": [
        "Klopt: het aandeel ouderen stijgt.",
-       "Nee, dat klopt niet.",
-       "Nee, dat klopt niet.",
-       "Nee, dat klopt niet."
+       "Nee, het juiste antwoord is «Meer ouderen in de bevolking».",
+       "Nee, het juiste antwoord is «Meer ouderen in de bevolking».",
+       "Nee, het juiste antwoord is «Meer ouderen in de bevolking»."
       ],
-      "uh": "Het aandeel ouderen stijgt."
+      "uh": "Meer ouderen in de bevolking: Het aandeel ouderen stijgt."
      },
      {
       "v": "Wat is urbanisatie?",
@@ -11418,11 +11418,11 @@ var VAKKEN_VMBO = [
       "u": "Mensen trekken van het platteland naar de stad.",
       "uo": [
        "Juist andersom.",
-       "Nee, dat klopt niet.",
-       "Nee, dat klopt niet.",
+       "Nee, het juiste antwoord is «Van platteland naar de stad».",
+       "Nee, het juiste antwoord is «Van platteland naar de stad».",
        "Klopt: mensen trekken van het platteland naar de stad."
       ],
-      "uh": "Mensen trekken van het platteland naar de stad."
+      "uh": "Van platteland naar de stad: Mensen trekken van het platteland naar de stad."
      },
      {
       "v": "Wat is het sterftecijfer?",
@@ -11438,8 +11438,8 @@ var VAKKEN_VMBO = [
       "uo": [
        "Dat is het geboortecijfer.",
        "Klopt: sterfgevallen per duizend inwoners.",
-       "Nee, dat klopt niet.",
-       "Nee, dat klopt niet."
+       "Nee, het juiste antwoord is «Sterfgevallen per 1000 inwoners».",
+       "Nee, het juiste antwoord is «Sterfgevallen per 1000 inwoners»."
       ],
       "uh": "Sterfgevallen per duizend inwoners."
      },
@@ -11455,12 +11455,12 @@ var VAKKEN_VMBO = [
       "d": 1,
       "u": "Mensen verhuizen naar een ander gebied.",
       "uo": [
-       "Nee, dat klopt niet.",
-       "Nee, dat klopt niet.",
+       "Nee, het juiste antwoord is «Verhuizen naar een ander gebied».",
+       "Nee, het juiste antwoord is «Verhuizen naar een ander gebied».",
        "Klopt: mensen verhuizen naar een ander gebied.",
-       "Nee, dat klopt niet."
+       "Nee, het juiste antwoord is «Verhuizen naar een ander gebied»."
       ],
-      "uh": "Mensen verhuizen naar een ander gebied."
+      "uh": "Verhuizen naar een ander gebied: Mensen verhuizen naar een ander gebied."
      },
      {
       "v": "Wat is het platteland?",
@@ -11475,9 +11475,9 @@ var VAKKEN_VMBO = [
       "u": "Dunbevolkt gebied buiten de stad.",
       "uo": [
        "Klopt: dunbevolkt gebied buiten de stad.",
-       "Nee, dat klopt niet.",
-       "Nee, dat klopt niet.",
-       "Nee, dat klopt niet."
+       "Nee, het juiste antwoord is «Dunbevolkt gebied buiten de stad».",
+       "Nee, het juiste antwoord is «Dunbevolkt gebied buiten de stad».",
+       "Nee, het juiste antwoord is «Dunbevolkt gebied buiten de stad»."
       ],
       "uh": "Dunbevolkt gebied buiten de stad."
      }
@@ -11563,8 +11563,8 @@ var VAKKEN_VMBO = [
       "uo": [
        "Het is meer dan alleen geld.",
        "Klopt: hoe goed men kan rondkomen.",
-       "Nee, dat klopt niet.",
-       "Nee, dat klopt niet."
+       "Nee, het juiste antwoord is «Hoe goed mensen in hun behoeften kunnen voorzien».",
+       "Nee, het juiste antwoord is «Hoe goed mensen in hun behoeften kunnen voorzien»."
       ],
       "uh": "Hoe goed men kan rondkomen."
      },
@@ -11580,10 +11580,10 @@ var VAKKEN_VMBO = [
       "d": 3,
       "u": "De gemiddelde productie per persoon.",
       "uo": [
-       "Nee, dat klopt niet.",
-       "Nee, dat klopt niet.",
+       "Nee, het juiste antwoord is «De gemiddelde productie per persoon».",
+       "Nee, het juiste antwoord is «De gemiddelde productie per persoon».",
        "Klopt: de gemiddelde productie per persoon.",
-       "Nee, dat klopt niet."
+       "Nee, het juiste antwoord is «De gemiddelde productie per persoon»."
       ],
       "uh": "De gemiddelde productie per persoon."
      },
@@ -11601,8 +11601,8 @@ var VAKKEN_VMBO = [
       "uo": [
        "Klopt: een land met lage welvaart.",
        "Dat is een ontwikkeld land.",
-       "Nee, dat klopt niet.",
-       "Nee, dat klopt niet."
+       "Nee, het juiste antwoord is «Een land met lage welvaart».",
+       "Nee, het juiste antwoord is «Een land met lage welvaart»."
       ],
       "uh": "Een land met lage welvaart."
      },
@@ -11619,11 +11619,11 @@ var VAKKEN_VMBO = [
       "u": "Een rijk, welvarend kerngebied.",
       "uo": [
        "Dat is de periferie.",
-       "Nee, dat klopt niet.",
-       "Nee, dat klopt niet.",
+       "Nee, het juiste antwoord is «Een rijk gebied met veel bedrijvigheid».",
+       "Nee, het juiste antwoord is «Een rijk gebied met veel bedrijvigheid».",
        "Klopt: een rijk, welvarend kerngebied."
       ],
-      "uh": "Een rijk, welvarend kerngebied."
+      "uh": "Een rijk gebied met veel bedrijvigheid: Een rijk, welvarend kerngebied."
      },
      {
       "v": "Wat is de periferie?",
@@ -11639,10 +11639,10 @@ var VAKKEN_VMBO = [
       "uo": [
        "Juist het tegenovergestelde.",
        "Klopt: arm gebied aan de rand.",
-       "Nee, dat klopt niet.",
-       "Nee, dat klopt niet."
+       "Nee, het juiste antwoord is «Een arm, afgelegen randgebied».",
+       "Nee, het juiste antwoord is «Een arm, afgelegen randgebied»."
       ],
-      "uh": "Arm gebied aan de rand."
+      "uh": "Een arm, afgelegen randgebied: Arm gebied aan de rand."
      },
      {
       "v": "Wat is levensverwachting?",
@@ -11656,12 +11656,12 @@ var VAKKEN_VMBO = [
       "d": 2,
       "u": "De gemiddelde levensduur.",
       "uo": [
-       "Nee, dat klopt niet.",
-       "Nee, dat klopt niet.",
+       "Nee, het juiste antwoord is «Het gemiddelde aantal jaren dat iemand leeft».",
+       "Nee, het juiste antwoord is «Het gemiddelde aantal jaren dat iemand leeft».",
        "Klopt: de gemiddelde levensduur.",
-       "Nee, dat klopt niet."
+       "Nee, het juiste antwoord is «Het gemiddelde aantal jaren dat iemand leeft»."
       ],
-      "uh": "De gemiddelde levensduur."
+      "uh": "Het gemiddelde aantal jaren dat iemand leeft: De gemiddelde levensduur."
      },
      {
       "v": "Wat is analfabetisme?",
@@ -11676,9 +11676,9 @@ var VAKKEN_VMBO = [
       "u": "Niet kunnen lezen en schrijven.",
       "uo": [
        "Klopt: niet kunnen lezen en schrijven.",
-       "Nee, dat klopt niet.",
-       "Nee, dat klopt niet.",
-       "Nee, dat klopt niet."
+       "Nee, het juiste antwoord is «Niet kunnen lezen en schrijven».",
+       "Nee, het juiste antwoord is «Niet kunnen lezen en schrijven».",
+       "Nee, het juiste antwoord is «Niet kunnen lezen en schrijven»."
       ],
       "uh": "Niet kunnen lezen en schrijven."
      },
@@ -11695,11 +11695,11 @@ var VAKKEN_VMBO = [
       "u": "Verschillen in grondstoffen, onderwijs en handel.",
       "uo": [
        "Niet alleen.",
-       "Nee, dat klopt niet.",
-       "Nee, dat klopt niet.",
+       "Nee, het juiste antwoord is «Door grondstoffen, onderwijs en handel».",
+       "Nee, het juiste antwoord is «Door grondstoffen, onderwijs en handel».",
        "Klopt: verschillen in grondstoffen, onderwijs en handel."
       ],
-      "uh": "Verschillen in grondstoffen, onderwijs en handel."
+      "uh": "Door grondstoffen, onderwijs en handel: Verschillen in grondstoffen, onderwijs en handel."
      },
      {
       "v": "Wat is een ontwikkeld land?",
@@ -11715,10 +11715,10 @@ var VAKKEN_VMBO = [
       "uo": [
        "Dat is een ontwikkelingsland.",
        "Klopt: een rijk land met hoge welvaart.",
-       "Nee, dat klopt niet.",
-       "Nee, dat klopt niet."
+       "Nee, het juiste antwoord is «Een land met hoge welvaart».",
+       "Nee, het juiste antwoord is «Een land met hoge welvaart»."
       ],
-      "uh": "Een rijk land met hoge welvaart."
+      "uh": "Een land met hoge welvaart: Een rijk land met hoge welvaart."
      },
      {
       "v": "Wat is ontwikkelingssamenwerking?",
@@ -11732,10 +11732,10 @@ var VAKKEN_VMBO = [
       "d": 2,
       "u": "Hulp aan armere landen.",
       "uo": [
-       "Nee, dat klopt niet.",
-       "Nee, dat klopt niet.",
+       "Nee, het juiste antwoord is «Hulp aan armere landen».",
+       "Nee, het juiste antwoord is «Hulp aan armere landen».",
        "Klopt: hulp aan armere landen.",
-       "Nee, dat klopt niet."
+       "Nee, het juiste antwoord is «Hulp aan armere landen»."
       ],
       "uh": "Hulp aan armere landen."
      },
@@ -11752,9 +11752,9 @@ var VAKKEN_VMBO = [
       "u": "Met grondstoffen kan een land geld verdienen.",
       "uo": [
        "Klopt: met grondstoffen kan een land geld verdienen.",
-       "Nee, dat klopt niet.",
-       "Nee, dat klopt niet.",
-       "Nee, dat klopt niet."
+       "Nee, het juiste antwoord is «Met grondstoffen».",
+       "Nee, het juiste antwoord is «Met grondstoffen».",
+       "Nee, het juiste antwoord is «Met grondstoffen»."
       ],
       "uh": "Met grondstoffen kan een land geld verdienen."
      }
@@ -11837,12 +11837,12 @@ var VAKKEN_VMBO = [
       "d": 2,
       "u": "Het indelen en plannen van de ruimte.",
       "uo": [
-       "Nee, dat klopt niet.",
+       "Nee, het juiste antwoord is «Het plannen van het gebruik van de ruimte».",
        "Klopt: het indelen en plannen van de ruimte.",
-       "Nee, dat klopt niet.",
-       "Nee, dat klopt niet."
+       "Nee, het juiste antwoord is «Het plannen van het gebruik van de ruimte».",
+       "Nee, het juiste antwoord is «Het plannen van het gebruik van de ruimte»."
       ],
-      "uh": "Het indelen en plannen van de ruimte."
+      "uh": "Het plannen van het gebruik van de ruimte: Het indelen en plannen van de ruimte."
      },
      {
       "v": "Wat legt een bestemmingsplan vast?",
@@ -11856,10 +11856,10 @@ var VAKKEN_VMBO = [
       "d": 2,
       "u": "Waarvoor grond gebruikt mag worden.",
       "uo": [
-       "Nee, dat klopt niet.",
-       "Nee, dat klopt niet.",
+       "Nee, het juiste antwoord is «Waarvoor grond gebruikt mag worden».",
+       "Nee, het juiste antwoord is «Waarvoor grond gebruikt mag worden».",
        "Klopt: waarvoor grond gebruikt mag worden.",
-       "Nee, dat klopt niet."
+       "Nee, het juiste antwoord is «Waarvoor grond gebruikt mag worden»."
       ],
       "uh": "Waarvoor grond gebruikt mag worden."
      },
@@ -11876,9 +11876,9 @@ var VAKKEN_VMBO = [
       "u": "De functie, zoals wonen of natuur.",
       "uo": [
        "Klopt: de functie, zoals wonen of natuur.",
-       "Nee, dat klopt niet.",
-       "Nee, dat klopt niet.",
-       "Nee, dat klopt niet."
+       "Nee, het juiste antwoord is «De functie die het krijgt».",
+       "Nee, het juiste antwoord is «De functie die het krijgt».",
+       "Nee, het juiste antwoord is «De functie die het krijgt»."
       ],
       "uh": "De functie, zoals wonen of natuur."
      },
@@ -11894,12 +11894,12 @@ var VAKKEN_VMBO = [
       "d": 3,
       "u": "Verschillende belangen tegen elkaar afwegen.",
       "uo": [
-       "Nee, dat klopt niet.",
-       "Nee, dat klopt niet.",
-       "Nee, dat klopt niet.",
+       "Nee, het juiste antwoord is «Belangen tegen elkaar afwegen».",
+       "Nee, het juiste antwoord is «Belangen tegen elkaar afwegen».",
+       "Nee, het juiste antwoord is «Belangen tegen elkaar afwegen».",
        "Klopt: verschillende belangen tegen elkaar afwegen."
       ],
-      "uh": "Verschillende belangen tegen elkaar afwegen."
+      "uh": "Belangen tegen elkaar afwegen: Verschillende belangen tegen elkaar afwegen."
      },
      {
       "v": "Wat is een woonfunctie?",
@@ -11915,8 +11915,8 @@ var VAKKEN_VMBO = [
       "uo": [
        "Dat is industrie.",
        "Klopt: een gebied om te wonen.",
-       "Nee, dat klopt niet.",
-       "Nee, dat klopt niet."
+       "Nee, het juiste antwoord is «Een gebied om te wonen».",
+       "Nee, het juiste antwoord is «Een gebied om te wonen»."
       ],
       "uh": "Een gebied om te wonen."
      },
@@ -11932,12 +11932,12 @@ var VAKKEN_VMBO = [
       "d": 2,
       "u": "Beschermde natuur.",
       "uo": [
-       "Nee, dat klopt niet.",
-       "Nee, dat klopt niet.",
+       "Nee, het juiste antwoord is «Beschermd gebied voor planten en dieren».",
+       "Nee, het juiste antwoord is «Beschermd gebied voor planten en dieren».",
        "Klopt: beschermde natuur.",
-       "Nee, dat klopt niet."
+       "Nee, het juiste antwoord is «Beschermd gebied voor planten en dieren»."
       ],
-      "uh": "Beschermde natuur."
+      "uh": "Beschermd gebied voor planten en dieren: Beschermde natuur."
      },
      {
       "v": "Waarom is ruimtelijke ordening in Nederland belangrijk?",
@@ -11952,11 +11952,11 @@ var VAKKEN_VMBO = [
       "u": "Weinig ruimte, veel mensen.",
       "uo": [
        "Klopt: weinig ruimte, veel mensen.",
-       "Juist niet.",
+       "Juist niet, het juiste antwoord is «Het land is klein en dichtbevolkt».",
        "Er wonen juist veel mensen.",
        "Er is juist veel water."
       ],
-      "uh": "Weinig ruimte, veel mensen."
+      "uh": "Het land is klein en dichtbevolkt: Weinig ruimte, veel mensen."
      },
      {
       "v": "Wat is een recreatiefunctie?",
@@ -11972,7 +11972,7 @@ var VAKKEN_VMBO = [
       "uo": [
        "Dat is wonen.",
        "Dat is industrie.",
-       "Nee, dat klopt niet.",
+       "Nee, het juiste antwoord is «Een gebied voor ontspanning».",
        "Klopt: een gebied voor ontspanning."
       ],
       "uh": "Een gebied voor ontspanning."
@@ -11989,10 +11989,10 @@ var VAKKEN_VMBO = [
       "d": 1,
       "u": "Een gebied voor bedrijven.",
       "uo": [
-       "Juist niet.",
+       "Juist niet, het juiste antwoord is «Een gebied voor bedrijven en fabrieken».",
        "Klopt: een gebied voor bedrijven.",
-       "Nee, dat klopt niet.",
-       "Nee, dat klopt niet."
+       "Nee, het juiste antwoord is «Een gebied voor bedrijven en fabrieken».",
+       "Nee, het juiste antwoord is «Een gebied voor bedrijven en fabrieken»."
       ],
       "uh": "Een gebied voor bedrijven."
      },
@@ -12008,12 +12008,12 @@ var VAKKEN_VMBO = [
       "d": 2,
       "u": "Wat iemand ergens bij te winnen heeft.",
       "uo": [
-       "Nee, dat klopt niet.",
-       "Nee, dat klopt niet.",
+       "Nee, het juiste antwoord is «Het voordeel dat iemand ergens bij heeft».",
+       "Nee, het juiste antwoord is «Het voordeel dat iemand ergens bij heeft».",
        "Klopt: wat iemand ergens bij te winnen heeft.",
-       "Nee, dat klopt niet."
+       "Nee, het juiste antwoord is «Het voordeel dat iemand ergens bij heeft»."
       ],
-      "uh": "Wat iemand ergens bij te winnen heeft."
+      "uh": "Het voordeel dat iemand ergens bij heeft: Wat iemand ergens bij te winnen heeft."
      },
      {
       "v": "Wie bepaalt mede de ruimtelijke ordening?",
@@ -12028,9 +12028,9 @@ var VAKKEN_VMBO = [
       "u": "De overheid bepaalt mede het ruimtegebruik.",
       "uo": [
        "Klopt: de overheid bepaalt mede het ruimtegebruik.",
-       "Nee, dat klopt niet.",
-       "Nee, dat klopt niet.",
-       "Nee, dat klopt niet."
+       "Nee, het juiste antwoord is «De overheid».",
+       "Nee, het juiste antwoord is «De overheid».",
+       "Nee, het juiste antwoord is «De overheid»."
       ],
       "uh": "De overheid bepaalt mede het ruimtegebruik."
      }
@@ -12116,10 +12116,10 @@ var VAKKEN_VMBO = [
       "uo": [
        "Niet altijd.",
        "Klopt: de scheidingslijn tussen gebieden.",
-       "Nee, dat klopt niet.",
+       "Nee, het juiste antwoord is «De lijn die twee gebieden scheidt».",
        "Niet altijd."
       ],
-      "uh": "De scheidingslijn tussen gebieden."
+      "uh": "De lijn die twee gebieden scheidt: De scheidingslijn tussen gebieden."
      },
      {
       "v": "Wat is een natuurlijke grens?",
@@ -12133,12 +12133,12 @@ var VAKKEN_VMBO = [
       "d": 2,
       "u": "Valt samen met een rivier of gebergte.",
       "uo": [
-       "Nee, dat klopt niet.",
-       "Nee, dat klopt niet.",
+       "Nee, het juiste antwoord is «Een grens langs een rivier of gebergte».",
+       "Nee, het juiste antwoord is «Een grens langs een rivier of gebergte».",
        "Klopt: valt samen met een rivier of gebergte.",
-       "Nee, dat klopt niet."
+       "Nee, het juiste antwoord is «Een grens langs een rivier of gebergte»."
       ],
-      "uh": "Valt samen met een rivier of gebergte."
+      "uh": "Een grens langs een rivier of gebergte: Valt samen met een rivier of gebergte."
      },
      {
       "v": "Wat is een migratiestroom?",
@@ -12153,9 +12153,9 @@ var VAKKEN_VMBO = [
       "u": "Een grote verhuizing van mensen tussen gebieden.",
       "uo": [
        "Klopt: een grote verhuizing van mensen tussen gebieden.",
-       "Nee, dat klopt niet.",
-       "Nee, dat klopt niet.",
-       "Nee, dat klopt niet."
+       "Nee, het juiste antwoord is «Een grote verplaatsing van mensen».",
+       "Nee, het juiste antwoord is «Een grote verplaatsing van mensen».",
+       "Nee, het juiste antwoord is «Een grote verplaatsing van mensen»."
       ],
       "uh": "Een grote verhuizing van mensen tussen gebieden."
      },
@@ -12171,9 +12171,9 @@ var VAKKEN_VMBO = [
       "d": 2,
       "u": "Het gevoel ergens bij te horen.",
       "uo": [
-       "Nee, dat klopt niet.",
-       "Nee, dat klopt niet.",
-       "Nee, dat klopt niet.",
+       "Nee, het juiste antwoord is «Het gevoel bij een groep te horen».",
+       "Nee, het juiste antwoord is «Het gevoel bij een groep te horen».",
+       "Nee, het juiste antwoord is «Het gevoel bij een groep te horen».",
        "Klopt: het gevoel ergens bij te horen."
       ],
       "uh": "Het gevoel ergens bij te horen."
@@ -12190,10 +12190,10 @@ var VAKKEN_VMBO = [
       "d": 2,
       "u": "Een gebied met een gedeelde cultuur.",
       "uo": [
-       "Nee, dat klopt niet.",
+       "Nee, het juiste antwoord is «Een gebied met een gedeelde cultuur en taal».",
        "Klopt: een gebied met een gedeelde cultuur.",
-       "Nee, dat klopt niet.",
-       "Nee, dat klopt niet."
+       "Nee, het juiste antwoord is «Een gebied met een gedeelde cultuur en taal».",
+       "Nee, het juiste antwoord is «Een gebied met een gedeelde cultuur en taal»."
       ],
       "uh": "Een gebied met een gedeelde cultuur."
      },
@@ -12210,11 +12210,11 @@ var VAKKEN_VMBO = [
       "u": "Nieuwkomers doen mee in de samenleving.",
       "uo": [
        "Dat is het tegenovergestelde.",
-       "Nee, dat klopt niet.",
+       "Nee, het juiste antwoord is «Meedoen in de samenleving».",
        "Klopt: nieuwkomers doen mee in de samenleving.",
-       "Nee, dat klopt niet."
+       "Nee, het juiste antwoord is «Meedoen in de samenleving»."
       ],
-      "uh": "Nieuwkomers doen mee in de samenleving."
+      "uh": "Meedoen in de samenleving: Nieuwkomers doen mee in de samenleving."
      },
      {
       "v": "Wat is een vluchteling?",
@@ -12229,11 +12229,11 @@ var VAKKEN_VMBO = [
       "u": "Ontvlucht gevaar.",
       "uo": [
        "Klopt: ontvlucht gevaar.",
-       "Nee, dat klopt niet.",
-       "Nee, dat klopt niet.",
-       "Nee, dat klopt niet."
+       "Nee, het juiste antwoord is «Iemand die zijn land ontvlucht».",
+       "Nee, het juiste antwoord is «Iemand die zijn land ontvlucht».",
+       "Nee, het juiste antwoord is «Iemand die zijn land ontvlucht»."
       ],
-      "uh": "Ontvlucht gevaar."
+      "uh": "Iemand die zijn land ontvlucht: Ontvlucht gevaar."
      },
      {
       "v": "Wat is een territoriaal conflict?",
@@ -12247,9 +12247,9 @@ var VAKKEN_VMBO = [
       "d": 3,
       "u": "Een conflict over het bezit van een gebied.",
       "uo": [
-       "Nee, dat klopt niet.",
-       "Nee, dat klopt niet.",
-       "Nee, dat klopt niet.",
+       "Nee, het juiste antwoord is «Een conflict over gebied».",
+       "Nee, het juiste antwoord is «Een conflict over gebied».",
+       "Nee, het juiste antwoord is «Een conflict over gebied».",
        "Klopt: een conflict over het bezit van een gebied."
       ],
       "uh": "Een conflict over het bezit van een gebied."
@@ -12266,10 +12266,10 @@ var VAKKEN_VMBO = [
       "d": 2,
       "u": "Gewoonten, taal en gebruiken van een groep.",
       "uo": [
-       "Nee, dat klopt niet.",
+       "Nee, het juiste antwoord is «Gewoonten, taal en gebruiken».",
        "Klopt: gewoonten, taal en gebruiken van een groep.",
-       "Nee, dat klopt niet.",
-       "Nee, dat klopt niet."
+       "Nee, het juiste antwoord is «Gewoonten, taal en gebruiken».",
+       "Nee, het juiste antwoord is «Gewoonten, taal en gebruiken»."
       ],
       "uh": "Gewoonten, taal en gebruiken van een groep."
      },
@@ -12285,12 +12285,12 @@ var VAKKEN_VMBO = [
       "d": 2,
       "u": "Bij een bepaald land horen.",
       "uo": [
-       "Nee, dat klopt niet.",
-       "Nee, dat klopt niet.",
+       "Nee, het juiste antwoord is «Het behoren tot een bepaald land».",
+       "Nee, het juiste antwoord is «Het behoren tot een bepaald land».",
        "Klopt: bij een bepaald land horen.",
-       "Nee, dat klopt niet."
+       "Nee, het juiste antwoord is «Het behoren tot een bepaald land»."
       ],
-      "uh": "Bij een bepaald land horen."
+      "uh": "Het behoren tot een bepaald land: Bij een bepaald land horen."
      },
      {
       "v": "Wat is een territorium?",
@@ -12305,11 +12305,11 @@ var VAKKEN_VMBO = [
       "u": "Het grondgebied van een land.",
       "uo": [
        "Klopt: het grondgebied van een land.",
-       "Nee, dat klopt niet.",
-       "Nee, dat klopt niet.",
-       "Nee, dat klopt niet."
+       "Nee, het juiste antwoord is «Het gebied waarover een land zeggenschap heeft».",
+       "Nee, het juiste antwoord is «Het gebied waarover een land zeggenschap heeft».",
+       "Nee, het juiste antwoord is «Het gebied waarover een land zeggenschap heeft»."
       ],
-      "uh": "Het grondgebied van een land."
+      "uh": "Het gebied waarover een land zeggenschap heeft: Het grondgebied van een land."
      }
     ],
     "begrippen": [
@@ -12418,12 +12418,12 @@ var VAKKEN_VMBO = [
       "d": 1,
       "u": "Beslissen over de samenleving.",
       "uo": [
-       "Nee, dat klopt niet.",
+       "Nee, het juiste antwoord is «Beslissingen nemen over de samenleving».",
        "Klopt: beslissen over de samenleving.",
-       "Nee, dat klopt niet.",
-       "Nee, dat klopt niet."
+       "Nee, het juiste antwoord is «Beslissingen nemen over de samenleving».",
+       "Nee, het juiste antwoord is «Beslissingen nemen over de samenleving»."
       ],
-      "uh": "Beslissen over de samenleving."
+      "uh": "Beslissingen nemen over de samenleving: Beslissen over de samenleving."
      },
      {
       "v": "Waar legt links de nadruk op?",
@@ -12440,9 +12440,9 @@ var VAKKEN_VMBO = [
        "Dat is rechts.",
        "Dat is rechts.",
        "Klopt: links benadrukt gelijkheid.",
-       "Nee, dat klopt niet."
+       "Nee, het juiste antwoord is «Op gelijkheid»."
       ],
-      "uh": "Links benadrukt gelijkheid."
+      "uh": "Op gelijkheid: Links benadrukt gelijkheid."
      },
      {
       "v": "Wat is een coalitie?",
@@ -12458,8 +12458,8 @@ var VAKKEN_VMBO = [
       "uo": [
        "Klopt: partijen die samen regeren.",
        "Dat is de oppositie.",
-       "Nee, dat klopt niet.",
-       "Nee, dat klopt niet."
+       "Nee, het juiste antwoord is «Partijen die samen regeren».",
+       "Nee, het juiste antwoord is «Partijen die samen regeren»."
       ],
       "uh": "Partijen die samen regeren."
      },
@@ -12476,11 +12476,11 @@ var VAKKEN_VMBO = [
       "u": "De oppositie controleert de regering.",
       "uo": [
        "Nee, dat doet de coalitie.",
-       "Nee, dat klopt niet.",
-       "Nee, dat klopt niet.",
+       "Nee, het juiste antwoord is «De regering controleren».",
+       "Nee, het juiste antwoord is «De regering controleren».",
        "Klopt: de oppositie controleert de regering."
       ],
-      "uh": "De oppositie controleert de regering."
+      "uh": "De regering controleren: De oppositie controleert de regering."
      },
      {
       "v": "Waar staat het liberalisme voor?",
@@ -12497,7 +12497,7 @@ var VAKKEN_VMBO = [
        "Dat is socialisme.",
        "Klopt: vrijheid van het individu.",
        "Dat is confessioneel.",
-       "Nee, dat klopt niet."
+       "Nee, het juiste antwoord is «Vrijheid van het individu»."
       ],
       "uh": "Vrijheid van het individu."
      },
@@ -12513,10 +12513,10 @@ var VAKKEN_VMBO = [
       "d": 2,
       "u": "Politici proberen te beïnvloeden.",
       "uo": [
-       "Nee, dat klopt niet.",
-       "Nee, dat klopt niet.",
+       "Nee, het juiste antwoord is «Politici proberen te overtuigen».",
+       "Nee, het juiste antwoord is «Politici proberen te overtuigen».",
        "Klopt: politici proberen te beïnvloeden.",
-       "Nee, dat klopt niet."
+       "Nee, het juiste antwoord is «Politici proberen te overtuigen»."
       ],
       "uh": "Politici proberen te beïnvloeden."
      },
@@ -12533,9 +12533,9 @@ var VAKKEN_VMBO = [
       "u": "Een voorstel voor een nieuwe wet.",
       "uo": [
        "Klopt: een voorstel voor een nieuwe wet.",
-       "Nee, dat klopt niet.",
-       "Nee, dat klopt niet.",
-       "Nee, dat klopt niet."
+       "Nee, het juiste antwoord is «Een voorstel voor een nieuwe wet».",
+       "Nee, het juiste antwoord is «Een voorstel voor een nieuwe wet».",
+       "Nee, het juiste antwoord is «Een voorstel voor een nieuwe wet»."
       ],
       "uh": "Een voorstel voor een nieuwe wet."
      },
@@ -12553,7 +12553,7 @@ var VAKKEN_VMBO = [
       "uo": [
        "Dat is liberalisme.",
        "Dat is confessioneel.",
-       "Nee, dat klopt niet.",
+       "Nee, het juiste antwoord is «Gelijkheid voor arbeiders».",
        "Klopt: gelijkheid, opkomen voor arbeiders."
       ],
       "uh": "Gelijkheid, opkomen voor arbeiders."
@@ -12572,10 +12572,10 @@ var VAKKEN_VMBO = [
       "uo": [
        "Niet per se.",
        "Klopt: burgers kiezen vertegenwoordigers.",
-       "Nee, dat klopt niet.",
-       "Nee, dat klopt niet."
+       "Nee, het juiste antwoord is «Kiezers kiezen hun vertegenwoordigers».",
+       "Nee, het juiste antwoord is «Kiezers kiezen hun vertegenwoordigers»."
       ],
-      "uh": "Burgers kiezen vertegenwoordigers."
+      "uh": "Kiezers kiezen hun vertegenwoordigers: Burgers kiezen vertegenwoordigers."
      },
      {
       "v": "Wat doet een belangengroep?",
@@ -12589,12 +12589,12 @@ var VAKKEN_VMBO = [
       "d": 2,
       "u": "Komt op voor een belang, zoals het milieu.",
       "uo": [
-       "Nee, dat klopt niet.",
-       "Nee, dat klopt niet.",
+       "Nee, het juiste antwoord is «Opkomen voor een bepaald belang».",
+       "Nee, het juiste antwoord is «Opkomen voor een bepaald belang».",
        "Klopt: komt op voor een belang, zoals het milieu.",
-       "Nee, dat klopt niet."
+       "Nee, het juiste antwoord is «Opkomen voor een bepaald belang»."
       ],
-      "uh": "Komt op voor een belang, zoals het milieu."
+      "uh": "Opkomen voor een bepaald belang: Komt op voor een belang, zoals het milieu."
      },
      {
       "v": "Wat staat er in een regeerakkoord?",
@@ -12609,11 +12609,11 @@ var VAKKEN_VMBO = [
       "u": "De plannen waarover de coalitie het eens is.",
       "uo": [
        "Klopt: de plannen waarover de coalitie het eens is.",
-       "Nee, dat klopt niet.",
-       "Nee, dat klopt niet.",
-       "Nee, dat klopt niet."
+       "Nee, het juiste antwoord is «De afspraken van de coalitie».",
+       "Nee, het juiste antwoord is «De afspraken van de coalitie».",
+       "Nee, het juiste antwoord is «De afspraken van de coalitie»."
       ],
-      "uh": "De plannen waarover de coalitie het eens is."
+      "uh": "De afspraken van de coalitie: De plannen waarover de coalitie het eens is."
      }
     ],
     "begrippen": [
@@ -12703,12 +12703,12 @@ var VAKKEN_VMBO = [
       "d": 2,
       "u": "Waar vraag en aanbod van werk samenkomen.",
       "uo": [
-       "Nee, dat klopt niet.",
+       "Nee, het juiste antwoord is «Vraag naar en aanbod van werk».",
        "Klopt: waar vraag en aanbod van werk samenkomen.",
-       "Nee, dat klopt niet.",
-       "Nee, dat klopt niet."
+       "Nee, het juiste antwoord is «Vraag naar en aanbod van werk».",
+       "Nee, het juiste antwoord is «Vraag naar en aanbod van werk»."
       ],
-      "uh": "Waar vraag en aanbod van werk samenkomen."
+      "uh": "Vraag naar en aanbod van werk: Waar vraag en aanbod van werk samenkomen."
      },
      {
       "v": "Wat is werkloosheid?",
@@ -12722,12 +12722,12 @@ var VAKKEN_VMBO = [
       "d": 1,
       "u": "Mensen zonder werk.",
       "uo": [
-       "Juist niet.",
-       "Nee, dat klopt niet.",
+       "Juist niet, het juiste antwoord is «Mensen hebben geen werk».",
+       "Nee, het juiste antwoord is «Mensen hebben geen werk».",
        "Klopt: mensen zonder werk.",
-       "Nee, dat klopt niet."
+       "Nee, het juiste antwoord is «Mensen hebben geen werk»."
       ],
-      "uh": "Mensen zonder werk."
+      "uh": "Mensen hebben geen werk: Mensen zonder werk."
      },
      {
       "v": "Wat doet een werkgever?",
@@ -12743,8 +12743,8 @@ var VAKKEN_VMBO = [
       "uo": [
        "Klopt: neemt mensen aan.",
        "Dat is de werknemer.",
-       "Nee, dat klopt niet.",
-       "Nee, dat klopt niet."
+       "Nee, het juiste antwoord is «Neemt mensen in dienst».",
+       "Nee, het juiste antwoord is «Neemt mensen in dienst»."
       ],
       "uh": "Neemt mensen aan."
      },
@@ -12760,12 +12760,12 @@ var VAKKEN_VMBO = [
       "d": 2,
       "u": "Komt op voor werknemers.",
       "uo": [
-       "Nee, dat klopt niet.",
-       "Nee, dat klopt niet.",
-       "Nee, dat klopt niet.",
+       "Nee, het juiste antwoord is «Opkomen voor werknemers».",
+       "Nee, het juiste antwoord is «Opkomen voor werknemers».",
+       "Nee, het juiste antwoord is «Opkomen voor werknemers».",
        "Klopt: komt op voor werknemers."
       ],
-      "uh": "Komt op voor werknemers."
+      "uh": "Opkomen voor werknemers: Komt op voor werknemers."
      },
      {
       "v": "Wat is een cao?",
@@ -12779,10 +12779,10 @@ var VAKKEN_VMBO = [
       "d": 2,
       "u": "Afspraken over het werk voor een bedrijfstak.",
       "uo": [
-       "Nee, dat klopt niet.",
+       "Nee, het juiste antwoord is «Afspraken over arbeidsvoorwaarden».",
        "Klopt: afspraken over het werk voor een bedrijfstak.",
-       "Nee, dat klopt niet.",
-       "Nee, dat klopt niet."
+       "Nee, het juiste antwoord is «Afspraken over arbeidsvoorwaarden».",
+       "Nee, het juiste antwoord is «Afspraken over arbeidsvoorwaarden»."
       ],
       "uh": "Afspraken over het werk voor een bedrijfstak."
      },
@@ -12798,12 +12798,12 @@ var VAKKEN_VMBO = [
       "d": 2,
       "u": "Het laagste loon dat betaald mag worden.",
       "uo": [
-       "Juist niet.",
-       "Nee, dat klopt niet.",
+       "Juist niet, het juiste antwoord is «Het wettelijk laagste loon».",
+       "Nee, het juiste antwoord is «Het wettelijk laagste loon».",
        "Klopt: het laagste loon dat betaald mag worden.",
-       "Nee, dat klopt niet."
+       "Nee, het juiste antwoord is «Het wettelijk laagste loon»."
       ],
-      "uh": "Het laagste loon dat betaald mag worden."
+      "uh": "Het wettelijk laagste loon: Het laagste loon dat betaald mag worden."
      },
      {
       "v": "Wat is een uitkering?",
@@ -12819,10 +12819,10 @@ var VAKKEN_VMBO = [
       "uo": [
        "Klopt: geld voor wie niet genoeg inkomen heeft.",
        "Dat is inkomen.",
-       "Nee, dat klopt niet.",
-       "Nee, dat klopt niet."
+       "Nee, het juiste antwoord is «Geld van de overheid bij te weinig inkomen».",
+       "Nee, het juiste antwoord is «Geld van de overheid bij te weinig inkomen»."
       ],
-      "uh": "Geld voor wie niet genoeg inkomen heeft."
+      "uh": "Geld van de overheid bij te weinig inkomen: Geld voor wie niet genoeg inkomen heeft."
      },
      {
       "v": "Wat is een staking?",
@@ -12836,12 +12836,12 @@ var VAKKEN_VMBO = [
       "d": 2,
       "u": "Werknemers leggen het werk neer.",
       "uo": [
-       "Nee, dat klopt niet.",
-       "Nee, dat klopt niet.",
-       "Nee, dat klopt niet.",
+       "Nee, het juiste antwoord is «Het werk neerleggen om eisen».",
+       "Nee, het juiste antwoord is «Het werk neerleggen om eisen».",
+       "Nee, het juiste antwoord is «Het werk neerleggen om eisen».",
        "Klopt: werknemers leggen het werk neer."
       ],
-      "uh": "Werknemers leggen het werk neer."
+      "uh": "Het werk neerleggen om eisen: Werknemers leggen het werk neer."
      },
      {
       "v": "Wat doet een werknemer?",
@@ -12857,8 +12857,8 @@ var VAKKEN_VMBO = [
       "uo": [
        "Dat is de werkgever.",
        "Klopt: werkt in loondienst.",
-       "Nee, dat klopt niet.",
-       "Nee, dat klopt niet."
+       "Nee, het juiste antwoord is «Werkt in loondienst».",
+       "Nee, het juiste antwoord is «Werkt in loondienst»."
       ],
       "uh": "Werkt in loondienst."
      },
@@ -12874,12 +12874,12 @@ var VAKKEN_VMBO = [
       "d": 2,
       "u": "Hoeveel werk er is.",
       "uo": [
-       "Nee, dat klopt niet.",
-       "Nee, dat klopt niet.",
+       "Nee, het juiste antwoord is «De hoeveelheid beschikbaar werk».",
+       "Nee, het juiste antwoord is «De hoeveelheid beschikbaar werk».",
        "Klopt: hoeveel werk er is.",
-       "Nee, dat klopt niet."
+       "Nee, het juiste antwoord is «De hoeveelheid beschikbaar werk»."
       ],
-      "uh": "Hoeveel werk er is."
+      "uh": "De hoeveelheid beschikbaar werk: Hoeveel werk er is."
      },
      {
       "v": "Wat is sociale zekerheid?",
@@ -12894,11 +12894,11 @@ var VAKKEN_VMBO = [
       "u": "Vangt je op met een uitkering bij tegenslag.",
       "uo": [
        "Klopt: vangt je op met een uitkering bij tegenslag.",
-       "Nee, dat klopt niet.",
-       "Nee, dat klopt niet.",
-       "Nee, dat klopt niet."
+       "Nee, het juiste antwoord is «Een stelsel dat inkomen geeft bij tegenslag».",
+       "Nee, het juiste antwoord is «Een stelsel dat inkomen geeft bij tegenslag».",
+       "Nee, het juiste antwoord is «Een stelsel dat inkomen geeft bij tegenslag»."
       ],
-      "uh": "Vangt je op met een uitkering bij tegenslag."
+      "uh": "Een stelsel dat inkomen geeft bij tegenslag: Vangt je op met een uitkering bij tegenslag."
      }
     ],
     "begrippen": [
@@ -12979,12 +12979,12 @@ var VAKKEN_VMBO = [
       "d": 1,
       "u": "Mensen van veel culturen samen.",
       "uo": [
-       "Juist niet.",
+       "Juist niet, het juiste antwoord is «Een samenleving met veel culturen».",
        "Klopt: mensen van veel culturen samen.",
-       "Nee, dat klopt niet.",
-       "Nee, dat klopt niet."
+       "Nee, het juiste antwoord is «Een samenleving met veel culturen».",
+       "Nee, het juiste antwoord is «Een samenleving met veel culturen»."
       ],
-      "uh": "Mensen van veel culturen samen."
+      "uh": "Een samenleving met veel culturen: Mensen van veel culturen samen."
      },
      {
       "v": "Wat is integratie?",
@@ -12999,11 +12999,11 @@ var VAKKEN_VMBO = [
       "u": "Nieuwkomers doen mee.",
       "uo": [
        "Dat is segregatie.",
-       "Nee, dat klopt niet.",
+       "Nee, het juiste antwoord is «Meedoen in de samenleving».",
        "Klopt: nieuwkomers doen mee.",
-       "Nee, dat klopt niet."
+       "Nee, het juiste antwoord is «Meedoen in de samenleving»."
       ],
-      "uh": "Nieuwkomers doen mee."
+      "uh": "Meedoen in de samenleving: Nieuwkomers doen mee."
      },
      {
       "v": "Wat is discriminatie?",
@@ -13019,10 +13019,10 @@ var VAKKEN_VMBO = [
       "uo": [
        "Klopt: ongelijke behandeling om wie iemand is.",
        "Juist het tegenovergestelde.",
-       "Nee, dat klopt niet.",
-       "Nee, dat klopt niet."
+       "Nee, het juiste antwoord is «Mensen ongelijk behandelen om wie ze zijn».",
+       "Nee, het juiste antwoord is «Mensen ongelijk behandelen om wie ze zijn»."
       ],
-      "uh": "Ongelijke behandeling om wie iemand is."
+      "uh": "Mensen ongelijk behandelen om wie ze zijn: Ongelijke behandeling om wie iemand is."
      },
      {
       "v": "Wat is een vooroordeel?",
@@ -13036,12 +13036,12 @@ var VAKKEN_VMBO = [
       "d": 2,
       "u": "Een oordeel vooraf, zonder feiten.",
       "uo": [
-       "Nee, dat klopt niet.",
-       "Nee, dat klopt niet.",
-       "Nee, dat klopt niet.",
+       "Nee, het juiste antwoord is «Een mening zonder de feiten te kennen».",
+       "Nee, het juiste antwoord is «Een mening zonder de feiten te kennen».",
+       "Nee, het juiste antwoord is «Een mening zonder de feiten te kennen».",
        "Klopt: een oordeel vooraf, zonder feiten."
       ],
-      "uh": "Een oordeel vooraf, zonder feiten."
+      "uh": "Een mening zonder de feiten te kennen: Een oordeel vooraf, zonder feiten."
      },
      {
       "v": "Wat is segregatie?",
@@ -13057,10 +13057,10 @@ var VAKKEN_VMBO = [
       "uo": [
        "Dat is integratie.",
        "Klopt: bevolkingsgroepen leven gescheiden.",
-       "Nee, dat klopt niet.",
-       "Nee, dat klopt niet."
+       "Nee, het juiste antwoord is «Groepen leven gescheiden».",
+       "Nee, het juiste antwoord is «Groepen leven gescheiden»."
       ],
-      "uh": "Bevolkingsgroepen leven gescheiden."
+      "uh": "Groepen leven gescheiden: Bevolkingsgroepen leven gescheiden."
      },
      {
       "v": "Wat is een stereotype?",
@@ -13074,12 +13074,12 @@ var VAKKEN_VMBO = [
       "d": 2,
       "u": "Een vast, vaak overdreven beeld van een groep.",
       "uo": [
-       "Nee, dat klopt niet.",
-       "Nee, dat klopt niet.",
+       "Nee, het juiste antwoord is «Een vast beeld van een groep».",
+       "Nee, het juiste antwoord is «Een vast beeld van een groep».",
        "Klopt: een vast, vaak overdreven beeld van een groep.",
-       "Nee, dat klopt niet."
+       "Nee, het juiste antwoord is «Een vast beeld van een groep»."
       ],
-      "uh": "Een vast, vaak overdreven beeld van een groep."
+      "uh": "Een vast beeld van een groep: Een vast, vaak overdreven beeld van een groep."
      },
      {
       "v": "Wat is godsdienstvrijheid?",
@@ -13094,11 +13094,11 @@ var VAKKEN_VMBO = [
       "u": "Iedereen mag zijn eigen geloof kiezen.",
       "uo": [
        "Klopt: iedereen mag zijn eigen geloof kiezen.",
-       "Nee, dat klopt niet.",
-       "Nee, dat klopt niet.",
-       "Nee, dat klopt niet."
+       "Nee, het juiste antwoord is «Het recht je eigen geloof te kiezen».",
+       "Nee, het juiste antwoord is «Het recht je eigen geloof te kiezen».",
+       "Nee, het juiste antwoord is «Het recht je eigen geloof te kiezen»."
       ],
-      "uh": "Iedereen mag zijn eigen geloof kiezen."
+      "uh": "Het recht je eigen geloof te kiezen: Iedereen mag zijn eigen geloof kiezen."
      },
      {
       "v": "Wat is emancipatie?",
@@ -13112,9 +13112,9 @@ var VAKKEN_VMBO = [
       "d": 3,
       "u": "Streven naar gelijke rechten en kansen.",
       "uo": [
-       "Nee, dat klopt niet.",
-       "Nee, dat klopt niet.",
-       "Nee, dat klopt niet.",
+       "Nee, het juiste antwoord is «Streven naar gelijke rechten».",
+       "Nee, het juiste antwoord is «Streven naar gelijke rechten».",
+       "Nee, het juiste antwoord is «Streven naar gelijke rechten».",
        "Klopt: streven naar gelijke rechten en kansen."
       ],
       "uh": "Streven naar gelijke rechten en kansen."
@@ -13131,10 +13131,10 @@ var VAKKEN_VMBO = [
       "d": 1,
       "u": "Iemand die naar een ander land verhuist.",
       "uo": [
-       "Nee, dat klopt niet.",
+       "Nee, het juiste antwoord is «Iemand die naar een ander land verhuist».",
        "Klopt: iemand die naar een ander land verhuist.",
-       "Nee, dat klopt niet.",
-       "Nee, dat klopt niet."
+       "Nee, het juiste antwoord is «Iemand die naar een ander land verhuist».",
+       "Nee, het juiste antwoord is «Iemand die naar een ander land verhuist»."
       ],
       "uh": "Iemand die naar een ander land verhuist."
      },
@@ -13150,12 +13150,12 @@ var VAKKEN_VMBO = [
       "d": 2,
       "u": "Anderen en hun mening verdragen.",
       "uo": [
-       "Juist niet.",
-       "Nee, dat klopt niet.",
+       "Juist niet, het juiste antwoord is «Andere culturen en meningen verdragen».",
+       "Nee, het juiste antwoord is «Andere culturen en meningen verdragen».",
        "Klopt: anderen en hun mening verdragen.",
-       "Nee, dat klopt niet."
+       "Nee, het juiste antwoord is «Andere culturen en meningen verdragen»."
       ],
-      "uh": "Anderen en hun mening verdragen."
+      "uh": "Andere culturen en meningen verdragen: Anderen en hun mening verdragen."
      },
      {
       "v": "Wat hoort bij cultuur?",
@@ -13170,9 +13170,9 @@ var VAKKEN_VMBO = [
       "u": "Taal, gewoonten en gebruiken van een groep.",
       "uo": [
        "Klopt: taal, gewoonten en gebruiken van een groep.",
-       "Nee, dat klopt niet.",
-       "Nee, dat klopt niet.",
-       "Nee, dat klopt niet."
+       "Nee, het juiste antwoord is «Taal, gewoonten en gebruiken».",
+       "Nee, het juiste antwoord is «Taal, gewoonten en gebruiken».",
+       "Nee, het juiste antwoord is «Taal, gewoonten en gebruiken»."
       ],
       "uh": "Taal, gewoonten en gebruiken van een groep."
      }
@@ -13257,12 +13257,12 @@ var VAKKEN_VMBO = [
       "d": 2,
       "u": "Iedereen houdt zich aan de wet en heeft rechten.",
       "uo": [
-       "Juist niet.",
+       "Juist niet, het juiste antwoord is «Een staat waarin de wet voor iedereen geldt».",
        "Klopt: iedereen houdt zich aan de wet en heeft rechten.",
-       "Nee, dat klopt niet.",
-       "Nee, dat klopt niet."
+       "Nee, het juiste antwoord is «Een staat waarin de wet voor iedereen geldt».",
+       "Nee, het juiste antwoord is «Een staat waarin de wet voor iedereen geldt»."
       ],
-      "uh": "Iedereen houdt zich aan de wet en heeft rechten."
+      "uh": "Een staat waarin de wet voor iedereen geldt: Iedereen houdt zich aan de wet en heeft rechten."
      },
      {
       "v": "Wat is een misdrijf?",
@@ -13277,9 +13277,9 @@ var VAKKEN_VMBO = [
       "u": "Een ernstig strafbaar feit zoals diefstal.",
       "uo": [
        "Dat is een overtreding.",
-       "Nee, dat klopt niet.",
+       "Nee, het juiste antwoord is «Een ernstig strafbaar feit».",
        "Klopt: een ernstig strafbaar feit zoals diefstal.",
-       "Nee, dat klopt niet."
+       "Nee, het juiste antwoord is «Een ernstig strafbaar feit»."
       ],
       "uh": "Een ernstig strafbaar feit zoals diefstal."
      },
@@ -13297,8 +13297,8 @@ var VAKKEN_VMBO = [
       "uo": [
        "Klopt: een licht feit, zoals te hard rijden.",
        "Dat is een misdrijf.",
-       "Nee, dat klopt niet.",
-       "Nee, dat klopt niet."
+       "Nee, het juiste antwoord is «Een licht strafbaar feit».",
+       "Nee, het juiste antwoord is «Een licht strafbaar feit»."
       ],
       "uh": "Een licht feit, zoals te hard rijden."
      },
@@ -13316,10 +13316,10 @@ var VAKKEN_VMBO = [
       "uo": [
        "Dat doet de officier van justitie.",
        "Dat doet de advocaat.",
-       "Nee, dat klopt niet.",
+       "Nee, het juiste antwoord is «Een oordeel vellen».",
        "Klopt: velt het oordeel en bepaalt de straf."
       ],
-      "uh": "Velt het oordeel en bepaalt de straf."
+      "uh": "Een oordeel vellen: Velt het oordeel en bepaalt de straf."
      },
      {
       "v": "Wat doet de officier van justitie?",
@@ -13336,9 +13336,9 @@ var VAKKEN_VMBO = [
        "Dat doet de advocaat.",
        "Klopt: de aanklager namens de staat.",
        "Dat doet de rechter.",
-       "Nee, dat klopt niet."
+       "Nee, het juiste antwoord is «Klaagt aan namens de staat»."
       ],
-      "uh": "De aanklager namens de staat."
+      "uh": "Klaagt aan namens de staat: De aanklager namens de staat."
      },
      {
       "v": "Wat betekent de onschuldpresumptie?",
@@ -13352,12 +13352,12 @@ var VAKKEN_VMBO = [
       "d": 3,
       "u": "Onschuldig tot schuld bewezen is.",
       "uo": [
-       "Juist niet.",
-       "Nee, dat klopt niet.",
+       "Juist niet, het juiste antwoord is «Je bent onschuldig tot het tegendeel bewezen is».",
+       "Nee, het juiste antwoord is «Je bent onschuldig tot het tegendeel bewezen is».",
        "Klopt: onschuldig tot schuld bewezen is.",
-       "Nee, dat klopt niet."
+       "Nee, het juiste antwoord is «Je bent onschuldig tot het tegendeel bewezen is»."
       ],
-      "uh": "Onschuldig tot schuld bewezen is."
+      "uh": "Je bent onschuldig tot het tegendeel bewezen is: Onschuldig tot schuld bewezen is."
      },
      {
       "v": "Wat is preventie?",
@@ -13372,9 +13372,9 @@ var VAKKEN_VMBO = [
       "u": "Criminaliteit voorkomen.",
       "uo": [
        "Klopt: criminaliteit voorkomen.",
-       "Nee, dat klopt niet.",
+       "Nee, het juiste antwoord is «Criminaliteit voorkomen».",
        "Dat is recidive.",
-       "Nee, dat klopt niet."
+       "Nee, het juiste antwoord is «Criminaliteit voorkomen»."
       ],
       "uh": "Criminaliteit voorkomen."
      },
@@ -13391,11 +13391,11 @@ var VAKKEN_VMBO = [
       "u": "Opnieuw de fout in gaan.",
       "uo": [
        "Dat is preventie.",
-       "Nee, dat klopt niet.",
-       "Nee, dat klopt niet.",
+       "Nee, het juiste antwoord is «Opnieuw een strafbaar feit plegen».",
+       "Nee, het juiste antwoord is «Opnieuw een strafbaar feit plegen».",
        "Klopt: opnieuw de fout in gaan."
       ],
-      "uh": "Opnieuw de fout in gaan."
+      "uh": "Opnieuw een strafbaar feit plegen: Opnieuw de fout in gaan."
      },
      {
       "v": "Wat doet een advocaat?",
@@ -13412,7 +13412,7 @@ var VAKKEN_VMBO = [
        "Dat doet de officier.",
        "Klopt: verdedigt de verdachte.",
        "Dat doet de rechter.",
-       "Nee, dat klopt niet."
+       "Nee, het juiste antwoord is «Verdedigt de verdachte»."
       ],
       "uh": "Verdedigt de verdachte."
      },
@@ -13428,12 +13428,12 @@ var VAKKEN_VMBO = [
       "d": 2,
       "u": "Je moet onbetaald werk doen.",
       "uo": [
-       "Nee, dat klopt niet.",
-       "Nee, dat klopt niet.",
+       "Nee, het juiste antwoord is «Onbetaald werk als straf».",
+       "Nee, het juiste antwoord is «Onbetaald werk als straf».",
        "Klopt: je moet onbetaald werk doen.",
-       "Nee, dat klopt niet."
+       "Nee, het juiste antwoord is «Onbetaald werk als straf»."
       ],
-      "uh": "Je moet onbetaald werk doen."
+      "uh": "Onbetaald werk als straf: Je moet onbetaald werk doen."
      },
      {
       "v": "Wat is bewijs in een strafproces?",
@@ -13448,9 +13448,9 @@ var VAKKEN_VMBO = [
       "u": "Gegevens die schuld of onschuld aantonen.",
       "uo": [
        "Klopt: gegevens die schuld of onschuld aantonen.",
-       "Nee, dat klopt niet.",
-       "Nee, dat klopt niet.",
-       "Nee, dat klopt niet."
+       "Nee, het juiste antwoord is «Gegevens die aantonen of iemand iets deed».",
+       "Nee, het juiste antwoord is «Gegevens die aantonen of iemand iets deed».",
+       "Nee, het juiste antwoord is «Gegevens die aantonen of iemand iets deed»."
       ],
       "uh": "Gegevens die schuld of onschuld aantonen."
      }
@@ -13543,12 +13543,12 @@ var VAKKEN_VMBO = [
       "d": 1,
       "u": "Bereiken veel mensen tegelijk.",
       "uo": [
-       "Juist niet.",
+       "Juist niet, het juiste antwoord is «Media die veel mensen tegelijk bereiken».",
        "Klopt: bereiken veel mensen tegelijk.",
-       "Nee, dat klopt niet.",
-       "Nee, dat klopt niet."
+       "Nee, het juiste antwoord is «Media die veel mensen tegelijk bereiken».",
+       "Nee, het juiste antwoord is «Media die veel mensen tegelijk bereiken»."
       ],
-      "uh": "Bereiken veel mensen tegelijk."
+      "uh": "Media die veel mensen tegelijk bereiken: Bereiken veel mensen tegelijk."
      },
      {
       "v": "Wat is de informerende functie?",
@@ -13565,7 +13565,7 @@ var VAKKEN_VMBO = [
        "Dat is amuseren.",
        "Dat is opiniëren.",
        "Klopt: nieuws en informatie geven.",
-       "Nee, dat klopt niet."
+       "Nee, het juiste antwoord is «Nieuws en informatie geven»."
       ],
       "uh": "Nieuws en informatie geven."
      },
@@ -13584,7 +13584,7 @@ var VAKKEN_VMBO = [
        "Klopt: het publiek vermaken.",
        "Dat is informeren.",
        "Dat is opiniëren.",
-       "Nee, dat klopt niet."
+       "Nee, het juiste antwoord is «Het publiek vermaken»."
       ],
       "uh": "Het publiek vermaken."
      },
@@ -13601,11 +13601,11 @@ var VAKKEN_VMBO = [
       "u": "Media mogen vrij publiceren.",
       "uo": [
        "Juist het tegenovergestelde.",
-       "Nee, dat klopt niet.",
-       "Nee, dat klopt niet.",
+       "Nee, het juiste antwoord is «Het recht van media om vrij te publiceren».",
+       "Nee, het juiste antwoord is «Het recht van media om vrij te publiceren».",
        "Klopt: media mogen vrij publiceren."
       ],
-      "uh": "Media mogen vrij publiceren."
+      "uh": "Het recht van media om vrij te publiceren: Media mogen vrij publiceren."
      },
      {
       "v": "Wat is censuur?",
@@ -13621,8 +13621,8 @@ var VAKKEN_VMBO = [
       "uo": [
        "Dat is persvrijheid.",
        "Klopt: informatie wordt tegengehouden.",
-       "Nee, dat klopt niet.",
-       "Nee, dat klopt niet."
+       "Nee, het juiste antwoord is «Informatie tegenhouden of aanpassen».",
+       "Nee, het juiste antwoord is «Informatie tegenhouden of aanpassen»."
       ],
       "uh": "Informatie wordt tegengehouden."
      },
@@ -13638,10 +13638,10 @@ var VAKKEN_VMBO = [
       "d": 2,
       "u": "Het beeld dat je van iets krijgt.",
       "uo": [
-       "Nee, dat klopt niet.",
-       "Nee, dat klopt niet.",
+       "Nee, het juiste antwoord is «Het beeld dat media oproepen».",
+       "Nee, het juiste antwoord is «Het beeld dat media oproepen».",
        "Klopt: het beeld dat je van iets krijgt.",
-       "Nee, dat klopt niet."
+       "Nee, het juiste antwoord is «Het beeld dat media oproepen»."
       ],
       "uh": "Het beeld dat je van iets krijgt."
      },
@@ -13658,11 +13658,11 @@ var VAKKEN_VMBO = [
       "u": "Onware berichten die als echt worden verspreid.",
       "uo": [
        "Klopt: onware berichten die als echt worden verspreid.",
-       "Nee, dat klopt niet.",
-       "Nee, dat klopt niet.",
-       "Nee, dat klopt niet."
+       "Nee, het juiste antwoord is «Onjuiste berichten als echt nieuws».",
+       "Nee, het juiste antwoord is «Onjuiste berichten als echt nieuws».",
+       "Nee, het juiste antwoord is «Onjuiste berichten als echt nieuws»."
       ],
-      "uh": "Onware berichten die als echt worden verspreid."
+      "uh": "Onjuiste berichten als echt nieuws: Onware berichten die als echt worden verspreid."
      },
      {
       "v": "Wat is de opiniërende functie?",
@@ -13678,7 +13678,7 @@ var VAKKEN_VMBO = [
       "uo": [
        "Dat is informeren.",
        "Dat is amuseren.",
-       "Nee, dat klopt niet.",
+       "Nee, het juiste antwoord is «Meningen geven».",
        "Klopt: meningen geven."
       ],
       "uh": "Meningen geven."
@@ -13695,10 +13695,10 @@ var VAKKEN_VMBO = [
       "d": 3,
       "u": "Onbevooroordeeld weergeven.",
       "uo": [
-       "Juist niet.",
+       "Juist niet, het juiste antwoord is «Onbevooroordeeld de feiten weergeven».",
        "Klopt: onbevooroordeeld weergeven.",
-       "Nee, dat klopt niet.",
-       "Nee, dat klopt niet."
+       "Nee, het juiste antwoord is «Onbevooroordeeld de feiten weergeven».",
+       "Nee, het juiste antwoord is «Onbevooroordeeld de feiten weergeven»."
       ],
       "uh": "Onbevooroordeeld weergeven."
      },
@@ -13714,12 +13714,12 @@ var VAKKEN_VMBO = [
       "d": 2,
       "u": "De mening bewust sturen.",
       "uo": [
-       "Nee, dat klopt niet.",
-       "Nee, dat klopt niet.",
+       "Nee, het juiste antwoord is «Iemands mening bewust sturen».",
+       "Nee, het juiste antwoord is «Iemands mening bewust sturen».",
        "Klopt: de mening bewust sturen.",
-       "Nee, dat klopt niet."
+       "Nee, het juiste antwoord is «Iemands mening bewust sturen»."
       ],
-      "uh": "De mening bewust sturen."
+      "uh": "Iemands mening bewust sturen: De mening bewust sturen."
      },
      {
       "v": "Wat zijn sociale media?",
@@ -13734,11 +13734,11 @@ var VAKKEN_VMBO = [
       "u": "Online netwerken om zelf te delen.",
       "uo": [
        "Klopt: online netwerken om zelf te delen.",
-       "Nee, dat klopt niet.",
-       "Nee, dat klopt niet.",
-       "Nee, dat klopt niet."
+       "Nee, het juiste antwoord is «Netwerken waarop mensen zelf berichten delen».",
+       "Nee, het juiste antwoord is «Netwerken waarop mensen zelf berichten delen».",
+       "Nee, het juiste antwoord is «Netwerken waarop mensen zelf berichten delen»."
       ],
-      "uh": "Online netwerken om zelf te delen."
+      "uh": "Netwerken waarop mensen zelf berichten delen: Online netwerken om zelf te delen."
      }
     ],
     "begrippen": [
@@ -13819,10 +13819,10 @@ var VAKKEN_VMBO = [
       "d": 1,
       "u": "Steeds meer gaat digitaal.",
       "uo": [
-       "Juist niet.",
+       "Juist niet, het juiste antwoord is «Steeds meer via computers en internet».",
        "Klopt: steeds meer gaat digitaal.",
-       "Nee, dat klopt niet.",
-       "Nee, dat klopt niet."
+       "Nee, het juiste antwoord is «Steeds meer via computers en internet».",
+       "Nee, het juiste antwoord is «Steeds meer via computers en internet»."
       ],
       "uh": "Steeds meer gaat digitaal."
      },
@@ -13838,12 +13838,12 @@ var VAKKEN_VMBO = [
       "d": 2,
       "u": "Controle over je eigen gegevens.",
       "uo": [
-       "Juist niet.",
-       "Nee, dat klopt niet.",
+       "Juist niet, het juiste antwoord is «Zelf bepalen wat anderen over je weten».",
+       "Nee, het juiste antwoord is «Zelf bepalen wat anderen over je weten».",
        "Klopt: controle over je eigen gegevens.",
-       "Nee, dat klopt niet."
+       "Nee, het juiste antwoord is «Zelf bepalen wat anderen over je weten»."
       ],
-      "uh": "Controle over je eigen gegevens."
+      "uh": "Zelf bepalen wat anderen over je weten: Controle over je eigen gegevens."
      },
      {
       "v": "Wat is een datalek?",
@@ -13859,10 +13859,10 @@ var VAKKEN_VMBO = [
       "uo": [
        "Klopt: gegevens komen ongewild naar buiten.",
        "Juist het tegenovergestelde.",
-       "Nee, dat klopt niet.",
-       "Nee, dat klopt niet."
+       "Nee, het juiste antwoord is «Persoonsgegevens komen per ongeluk vrij».",
+       "Nee, het juiste antwoord is «Persoonsgegevens komen per ongeluk vrij»."
       ],
-      "uh": "Gegevens komen ongewild naar buiten."
+      "uh": "Persoonsgegevens komen per ongeluk vrij: Gegevens komen ongewild naar buiten."
      },
      {
       "v": "Wat is een filterbubbel?",
@@ -13876,12 +13876,12 @@ var VAKKEN_VMBO = [
       "d": 3,
       "u": "Je ziet vooral wat bij je past.",
       "uo": [
-       "Juist niet.",
-       "Nee, dat klopt niet.",
-       "Nee, dat klopt niet.",
+       "Juist niet, het juiste antwoord is «Alleen informatie zien die bij je past».",
+       "Nee, het juiste antwoord is «Alleen informatie zien die bij je past».",
+       "Nee, het juiste antwoord is «Alleen informatie zien die bij je past».",
        "Klopt: je ziet vooral wat bij je past."
       ],
-      "uh": "Je ziet vooral wat bij je past."
+      "uh": "Alleen informatie zien die bij je past: Je ziet vooral wat bij je past."
      },
      {
       "v": "Wat is een algoritme?",
@@ -13895,12 +13895,12 @@ var VAKKEN_VMBO = [
       "d": 2,
       "u": "Rekenregels die keuzes maken.",
       "uo": [
-       "Nee, dat klopt niet.",
+       "Nee, het juiste antwoord is «Regels waarmee een computer keuzes maakt».",
        "Klopt: rekenregels die keuzes maken.",
-       "Nee, dat klopt niet.",
-       "Nee, dat klopt niet."
+       "Nee, het juiste antwoord is «Regels waarmee een computer keuzes maakt».",
+       "Nee, het juiste antwoord is «Regels waarmee een computer keuzes maakt»."
       ],
-      "uh": "Rekenregels die keuzes maken."
+      "uh": "Regels waarmee een computer keuzes maakt: Rekenregels die keuzes maken."
      },
      {
       "v": "Wat is cybercriminaliteit?",
@@ -13914,12 +13914,12 @@ var VAKKEN_VMBO = [
       "d": 2,
       "u": "Misdaad via computers en internet.",
       "uo": [
-       "Nee, dat klopt niet.",
-       "Nee, dat klopt niet.",
+       "Nee, het juiste antwoord is «Criminaliteit via internet».",
+       "Nee, het juiste antwoord is «Criminaliteit via internet».",
        "Klopt: misdaad via computers en internet.",
-       "Nee, dat klopt niet."
+       "Nee, het juiste antwoord is «Criminaliteit via internet»."
       ],
-      "uh": "Misdaad via computers en internet."
+      "uh": "Criminaliteit via internet: Misdaad via computers en internet."
      },
      {
       "v": "Wat zijn persoonsgegevens?",
@@ -13934,11 +13934,11 @@ var VAKKEN_VMBO = [
       "u": "Gegevens die over een persoon gaan.",
       "uo": [
        "Klopt: gegevens die over een persoon gaan.",
-       "Nee, dat klopt niet.",
-       "Nee, dat klopt niet.",
-       "Nee, dat klopt niet."
+       "Nee, het juiste antwoord is «Informatie die over een persoon gaat».",
+       "Nee, het juiste antwoord is «Informatie die over een persoon gaat».",
+       "Nee, het juiste antwoord is «Informatie die over een persoon gaat»."
       ],
-      "uh": "Gegevens die over een persoon gaan."
+      "uh": "Informatie die over een persoon gaat: Gegevens die over een persoon gaan."
      },
      {
       "v": "Wat is de digitale kloof?",
@@ -13952,12 +13952,12 @@ var VAKKEN_VMBO = [
       "d": 3,
       "u": "Verschil in digitale vaardigheid.",
       "uo": [
-       "Nee, dat klopt niet.",
-       "Nee, dat klopt niet.",
-       "Nee, dat klopt niet.",
+       "Nee, het juiste antwoord is «Het verschil tussen wie wel en niet met techniek overweg kan».",
+       "Nee, het juiste antwoord is «Het verschil tussen wie wel en niet met techniek overweg kan».",
+       "Nee, het juiste antwoord is «Het verschil tussen wie wel en niet met techniek overweg kan».",
        "Klopt: verschil in digitale vaardigheid."
       ],
-      "uh": "Verschil in digitale vaardigheid."
+      "uh": "Het verschil tussen wie wel en niet met techniek overweg kan: Verschil in digitale vaardigheid."
      },
      {
       "v": "Waarvoor heb je vaak toestemming nodig?",
@@ -13971,12 +13971,12 @@ var VAKKEN_VMBO = [
       "d": 2,
       "u": "Gegevens mogen vaak alleen met toestemming gebruikt worden.",
       "uo": [
-       "Nee, dat klopt niet.",
+       "Nee, het juiste antwoord is «Voor het gebruik van je persoonsgegevens».",
        "Klopt: gegevens mogen vaak alleen met toestemming gebruikt worden.",
-       "Nee, dat klopt niet.",
-       "Nee, dat klopt niet."
+       "Nee, het juiste antwoord is «Voor het gebruik van je persoonsgegevens».",
+       "Nee, het juiste antwoord is «Voor het gebruik van je persoonsgegevens»."
       ],
-      "uh": "Gegevens mogen vaak alleen met toestemming gebruikt worden."
+      "uh": "Voor het gebruik van je persoonsgegevens: Gegevens mogen vaak alleen met toestemming gebruikt worden."
      },
      {
       "v": "Wat beschermt het auteursrecht?",
@@ -13990,10 +13990,10 @@ var VAKKEN_VMBO = [
       "d": 2,
       "u": "Het werk van makers.",
       "uo": [
-       "Nee, dat klopt niet.",
-       "Nee, dat klopt niet.",
+       "Nee, het juiste antwoord is «Het werk van een maker».",
+       "Nee, het juiste antwoord is «Het werk van een maker».",
        "Klopt: het werk van makers.",
-       "Nee, dat klopt niet."
+       "Nee, het juiste antwoord is «Het werk van een maker»."
       ],
       "uh": "Het werk van makers."
      },
@@ -14011,10 +14011,10 @@ var VAKKEN_VMBO = [
       "uo": [
        "Klopt: je identiteit blijft onbekend.",
        "Juist het tegenovergestelde.",
-       "Nee, dat klopt niet.",
-       "Nee, dat klopt niet."
+       "Nee, het juiste antwoord is «Onbekend blijven».",
+       "Nee, het juiste antwoord is «Onbekend blijven»."
       ],
-      "uh": "Je identiteit blijft onbekend."
+      "uh": "Onbekend blijven: Je identiteit blijft onbekend."
      }
     ],
     "begrippen": [
