@@ -1,9 +1,20 @@
-// VMBO GL/TL - Economie. Compacte contentspec → scripts/expand-leerdoelen.mjs.
-const V = (domein, naam, sam, concepten) => ({ niveau: 'vmbo', vak: 'ec', domein, naam, sam, concepten });
+// VMBO GL/TL - Economie. Gouden-stijl contentspec.
+const V = (domein, naam, intro, secties, concepten) => ({ niveau: 'vmbo', vak: 'ec', domein, naam, intro, secties, concepten });
 
 export default [
   V('A', 'Consumptie',
-    `<p><b>Koopkracht</b> is hoeveel je met je inkomen kunt kopen. Door <b>inflatie</b> (stijgende prijzen) daalt je koopkracht als je loon niet meestijgt. Met een <b>indexcijfer</b> reken je veranderingen ten opzichte van een basisjaar uit. Een <b>verzekering</b> beschermt je tegen financiële risico's: je betaalt <b>premie</b> en houdt vaak een <b>eigen risico</b>.</p>`,
+    `<strong>Koopkracht</strong> is hoeveel je met je inkomen kunt kopen. Door <strong>inflatie</strong> daalt je koopkracht als je loon niet meestijgt. Met een <strong>indexcijfer</strong> reken je veranderingen uit, en met een <strong>verzekering</strong> bescherm je je tegen financiële risico's.`,
+    [
+      { h: '1. Inkomen, uitgaven en koopkracht', p: [
+        `Je <strong>inkomen</strong> is het geld dat je ontvangt, je <strong>uitgaven</strong> is het geld dat je besteedt. Wat je niet uitgeeft, kun je <strong>sparen</strong>. Met een <strong>budget</strong> (een overzicht van inkomsten en uitgaven) hou je overzicht; <strong>budgetteren</strong> is je uitgaven vooraf plannen.`,
+        `Je <strong>koopkracht</strong> zegt hoeveel je met dat inkomen daadwerkelijk kunt kopen.`] },
+      { h: '2. Inflatie en je koopkracht', p: [
+        `<strong>Inflatie</strong> is een algemene stijging van de prijzen, <strong>deflatie</strong> een daling. Een <strong>indexcijfer</strong> laat een verandering zien ten opzichte van een basisjaar (dat op 100 staat).`,
+        `Je <strong>nominaal inkomen</strong> is je inkomen in euro's; je <strong>reëel inkomen</strong> is dat inkomen gecorrigeerd voor inflatie. Stijgen de prijzen harder dan je loon, dan daalt je koopkracht.`],
+        worked: { q: 'De prijzen stijgen met 4% (indexcijfer 104). Je loon stijgt met 2%. Wat gebeurt er met je koopkracht?', steps: ['Vergelijk de stijging van de prijzen met die van je loon.', 'De prijzen stijgen harder (4%) dan je loon (2%).'], ans: 'Je koopkracht daalt: je kunt minder kopen dan eerst.' } },
+      { h: '3. Je beschermen met een verzekering', p: [
+        `Een <strong>verzekering</strong> beschermt je tegen grote, onverwachte kosten. Je betaalt daarvoor periodiek een <strong>premie</strong>. Bij schade betaal je vaak eerst zelf een deel, het <strong>eigen risico</strong>; de rest vergoedt de verzekeraar.`] },
+    ],
     [
       { t: 'Koopkracht', d: 'hoeveel je met je inkomen kunt kopen', k: 'wat je inkomen kan kopen', fout: ['Reëel inkomen', 'Inkomen'] },
       { t: 'Inkomen', d: 'het geld dat je ontvangt, bijvoorbeeld loon', k: 'geld dat je ontvangt', fout: ['Uitgaven', 'Koopkracht'] },
@@ -22,7 +33,13 @@ export default [
     ]),
 
   V('B', 'Consumentenrechten',
-    `<p>Als koper heb je <b>consumentenrechten</b>, zoals <b>garantie</b> en bij online kopen een <b>bedenktijd</b>. Een <b>consumentenorganisatie</b> zoals de <b>Consumentenbond</b> test producten en helpt bij een <b>klacht</b>. Een <b>keurmerk</b> laat zien dat een product aan bepaalde eisen voldoet.</p>`,
+    `Als koper heb je <strong>consumentenrechten</strong>, zoals <strong>garantie</strong> en bij online kopen een <strong>bedenktijd</strong>. Een <strong>consumentenorganisatie</strong> test producten en helpt bij een <strong>klacht</strong>.`,
+    [
+      { h: '1. Je rechten als koper', p: [
+        `Bij een aankoop sluit je een <strong>koopovereenkomst</strong>, waarbij <strong>algemene voorwaarden</strong> horen. <strong>Garantie</strong> geeft je recht op herstel of vervanging bij een gebrek. Koop je op afstand (online), dan heb je <strong>bedenktijd</strong> en een <strong>retourrecht</strong> om de aankoop terug te sturen.`] },
+      { h: '2. Hulp en keurmerken', p: [
+        `Een <strong>consumentenorganisatie</strong> zoals de <strong>Consumentenbond</strong> test producten en geeft advies. Ben je ontevreden, dan dien je een <strong>klacht</strong> in bij de verkoper. Een <strong>keurmerk</strong> laat vooraf zien dat een product aan bepaalde eisen voldoet.`] },
+    ],
     [
       { t: 'Consumentenrecht', d: 'de rechten die een koper heeft', k: 'rechten van de koper', fout: ['Garantie', 'Algemene voorwaarden'] },
       { t: 'Garantie', d: 'het recht op herstel of vervanging bij een gebrek', k: 'herstel bij een gebrek', fout: ['Retourrecht', 'Bedenktijd'] },
@@ -39,7 +56,16 @@ export default [
     ]),
 
   V('C', 'Arbeid en productie',
-    `<p>Van je <b>brutoloon</b> gaan belasting en premies af; wat overblijft is je <b>nettoloon</b>. Door <b>arbeidsverdeling</b> en <b>specialisatie</b> stijgt de <b>arbeidsproductiviteit</b>: de productie per werknemer. In een <b>cao</b> staan afspraken tussen werkgevers en <b>vakbonden</b> over het werk.</p>`,
+    `Van je <strong>brutoloon</strong> gaan belasting en premies af; wat overblijft is je <strong>nettoloon</strong>. Door <strong>arbeidsverdeling</strong> en <strong>specialisatie</strong> stijgt de <strong>arbeidsproductiviteit</strong>.`,
+    [
+      { h: '1. Van brutoloon naar nettoloon', p: [
+        `Je <strong>brutoloon</strong> is je loon vóór aftrek. Daar gaat de <strong>loonheffing</strong> (belasting en premies) vanaf. Wat je op je rekening krijgt, is je <strong>nettoloon</strong>.`],
+        worked: { q: 'Je brutoloon is € 2.000 en de loonheffing is € 550. Hoeveel is je nettoloon?', steps: ['Nettoloon = brutoloon − loonheffing.', 'Nettoloon = 2.000 − 550.'], ans: 'Je nettoloon is € 1.450.' } },
+      { h: '2. Productiever werken', p: [
+        `Door <strong>arbeidsverdeling</strong> splits je het werk in aparte taken, en door <strong>specialisatie</strong> legt iemand zich toe op één taak. Daardoor stijgt de <strong>arbeidsproductiviteit</strong>: de productie per werknemer.`] },
+      { h: '3. Werkgevers, werknemers en afspraken', p: [
+        `Een <strong>werkgever</strong> neemt mensen in dienst, een <strong>werknemer</strong> werkt in loondienst. In een <strong>cao</strong> staan de arbeidsvoorwaarden voor een hele bedrijfstak, mede bepaald door <strong>vakbonden</strong>. Het <strong>minimumloon</strong> is het wettelijk laagste loon.`] },
+    ],
     [
       { t: 'Brutoloon', d: 'je loon vóór aftrek van belasting en premies', k: 'loon vóór aftrek', fout: ['Nettoloon'] },
       { t: 'Nettoloon', d: 'je loon na aftrek van belasting en premies', k: 'loon na aftrek', fout: ['Brutoloon'] },
@@ -56,7 +82,16 @@ export default [
     ]),
 
   V('D', 'Arbeid en bedrijf',
-    `<p>De <b>omzet</b> is prijs maal aantal. Trek je de <b>kosten</b> ervan af, dan houd je <b>winst</b> over. <b>Constante kosten</b> veranderen niet met de productie, <b>variabele kosten</b> wel. Over de verkoopprijs betaal je <b>btw</b> aan de overheid.</p>`,
+    `De <strong>omzet</strong> is prijs maal aantal. Trek je de <strong>kosten</strong> ervan af, dan houd je <strong>winst</strong> over. Over de verkoopprijs betaal je <strong>btw</strong> aan de overheid.`,
+    [
+      { h: '1. Omzet, kosten en winst', p: [
+        `De <strong>omzet</strong> is de totale verkoopopbrengst: prijs maal aantal. De <strong>kosten</strong> is alles wat je uitgeeft om te produceren. De <strong>winst</strong> is wat overblijft als je de kosten van de omzet aftrekt.`],
+        worked: { q: 'Een bedrijf heeft een omzet van € 5.000 en kosten van € 3.500. Hoeveel winst maakt het?', steps: ['Winst = omzet − kosten.', 'Winst = 5.000 − 3.500.'], ans: 'De winst is € 1.500.' } },
+      { h: '2. Constante en variabele kosten', p: [
+        `<strong>Constante kosten</strong> (zoals huur) veranderen niet met de productie; <strong>variabele kosten</strong> (zoals grondstoffen) bewegen wél mee. Samen vormen ze de <strong>totale kosten</strong>. Bij het <strong>break-even</strong>punt is de omzet precies gelijk aan de kosten: geen winst, geen verlies.`] },
+      { h: '3. Prijzen en btw', p: [
+        `Het verschil tussen <strong>verkoopprijs</strong> en <strong>inkoopprijs</strong> is de <strong>winstmarge</strong>. Over de verkoopprijs reken je <strong>btw</strong>, die je afdraagt aan de overheid.`] },
+    ],
     [
       { t: 'Omzet', d: 'de totale verkoopopbrengst: prijs maal aantal', k: 'prijs maal aantal', fout: ['Winst', 'Brutowinst'] },
       { t: 'Verkoopprijs', d: 'de prijs waarvoor je een product verkoopt', k: 'prijs bij verkoop', fout: ['Inkoopprijs'] },
@@ -73,7 +108,15 @@ export default [
     ]),
 
   V('E', 'Overheid en bestuur',
-    `<p>De <b>overheid</b> heft <b>belasting</b> om <b>collectieve voorzieningen</b> zoals wegen en onderwijs te betalen. <b>Directe belasting</b> gaat over inkomen of winst, <b>indirecte belasting</b> zit in de prijs van producten. Wie te weinig inkomen heeft, kan een <b>uitkering</b> krijgen.</p>`,
+    `De <strong>overheid</strong> heft <strong>belasting</strong> om <strong>collectieve voorzieningen</strong> zoals wegen en onderwijs te betalen. <strong>Directe belasting</strong> gaat over inkomen, <strong>indirecte belasting</strong> zit in de prijs.`,
+    [
+      { h: '1. Waarom belasting?', p: [
+        `De overheid betaalt <strong>collectieve voorzieningen</strong> die er voor iedereen zijn, zoals <strong>infrastructuur</strong>, onderwijs en veiligheid. Dat geld komt binnen via <strong>belasting</strong>: een verplichte betaling aan de staat. Zulke taken heten <strong>overheidstaken</strong>.`] },
+      { h: '2. Directe en indirecte belasting', p: [
+        `Een <strong>directe belasting</strong> gaat over je inkomen of winst, zoals de <strong>inkomstenbelasting</strong>. Een <strong>indirecte belasting</strong> zit verwerkt in de prijs van producten, zoals de <strong>btw</strong>. Op sommige producten zit extra belasting, de <strong>accijns</strong>.`] },
+      { h: '3. De begroting', p: [
+        `In de <strong>begroting</strong> zet de overheid de verwachte inkomsten en uitgaven op een rij. Geeft de overheid meer uit dan er binnenkomt, dan groeit de <strong>staatsschuld</strong>. Met een <strong>subsidie</strong> stimuleert de overheid iets; met een <strong>uitkering</strong> helpt ze wie te weinig inkomen heeft.`] },
+    ],
     [
       { t: 'Belasting', d: 'een verplichte betaling aan de overheid', k: 'verplichte betaling aan de staat', fout: ['Accijns', 'Premie'] },
       { t: 'Directe belasting', d: 'belasting op inkomen of winst', k: 'belasting op inkomen', fout: ['Indirecte belasting'] },
@@ -90,7 +133,15 @@ export default [
     ]),
 
   V('F', 'Internationale ontwikkelingen',
-    `<p>Landen handelen met elkaar: <b>import</b> is invoer, <b>export</b> is uitvoer. Voor handel met andere munten geldt een <b>wisselkoers</b>. Binnen de <b>Europese Unie</b> is er een <b>interne markt</b> met vrije handel. <b>Ontwikkelingssamenwerking</b> helpt armere landen vooruit.</p>`,
+    `Landen handelen met elkaar: <strong>import</strong> is invoer, <strong>export</strong> is uitvoer. Voor handel met andere munten geldt een <strong>wisselkoers</strong>. Binnen de <strong>Europese Unie</strong> is er vrije handel.`,
+    [
+      { h: '1. Import en export', p: [
+        `<strong>Import</strong> is het invoeren van goederen uit het buitenland, <strong>export</strong> het uitvoeren ervan. Het verschil tussen export en import heet de <strong>handelsbalans</strong>.`] },
+      { h: '2. Geld over de grens', p: [
+        `Handel je met een land met een andere munt, dan speelt de <strong>wisselkoers</strong>: de prijs van de ene munt in de andere. Veel EU-landen gebruiken dezelfde munt, de <strong>euro</strong>, zodat wisselen niet meer nodig is. Soms heft een land <strong>invoerrechten</strong> op buitenlandse goederen.`] },
+      { h: '3. Samenwerking en globalisering', p: [
+        `De <strong>Europese Unie</strong> vormt één <strong>interne markt</strong> met vrije handel. Landen kiezen tussen <strong>vrijhandel</strong> (geen drempels) en <strong>protectionisme</strong> (eigen markt beschermen). Door <strong>globalisering</strong> raken landen wereldwijd verweven; met <strong>ontwikkelingssamenwerking</strong> worden armere landen geholpen.`] },
+    ],
     [
       { t: 'Import', d: 'het invoeren van goederen uit het buitenland', k: 'invoer uit buitenland', fout: ['Export'] },
       { t: 'Export', d: 'het uitvoeren van goederen naar het buitenland', k: 'uitvoer naar buitenland', fout: ['Import'] },
@@ -107,7 +158,13 @@ export default [
     ]),
 
   V('G', 'Natuur en milieu',
-    `<p>Produceren kost niet alleen geld maar ook <b>milieukosten</b>. Bij <b>externe kosten</b> draait de samenleving voor de schade op, tenzij het <b>vervuiler-betaalt-principe</b> geldt. <b>Duurzaam produceren</b> en een <b>circulaire economie</b> beperken de <b>uitputting</b> van grondstoffen.</p>`,
+    `Produceren kost niet alleen geld maar ook <strong>milieukosten</strong>. Bij <strong>externe kosten</strong> draait de samenleving op voor de schade. <strong>Duurzaam produceren</strong> en een <strong>circulaire economie</strong> beperken de <strong>uitputting</strong> van grondstoffen.`,
+    [
+      { h: '1. De kosten van vervuiling', p: [
+        `Vervuiling brengt <strong>milieukosten</strong> met zich mee. Vaak zijn dat <strong>externe kosten</strong>: niet de vervuiler maar de samenleving betaalt. Met het <strong>vervuiler-betaalt-principe</strong> legt de overheid die kosten juist bij de veroorzaker.`] },
+      { h: '2. Duurzaam en circulair', p: [
+        `<strong>Duurzaam produceren</strong> houdt rekening met mens en milieu. In een <strong>circulaire economie</strong> worden grondstoffen steeds hergebruikt via <strong>recycling</strong>, zodat de <strong>uitputting</strong> van grondstoffen afneemt. Dat past bij <strong>duurzame ontwikkeling</strong>: groei die de toekomst niet schaadt.`] },
+    ],
     [
       { t: 'Milieukosten', d: 'de kosten van schade aan het milieu', k: 'kosten van milieuschade', fout: ['Externe kosten'] },
       { t: 'Externe kosten', d: 'kosten die niet de veroorzaker maar de samenleving draagt', k: 'samenleving betaalt de schade', fout: ['Milieukosten'] },
@@ -124,7 +181,16 @@ export default [
     ]),
 
   V('H', 'Geld- en bankwezen',
-    `<p>Wie geld leent of uitleent, betaalt of ontvangt <b>rente</b>. Bij <b>samengestelde interest</b> krijg je ook rente over eerder ontvangen rente. Een <b>hypotheek</b> is een lening voor een huis met het huis als <b>onderpand</b>. De <b>centrale bank</b> bewaakt de waarde van het geld.</p>`,
+    `Wie geld leent of uitleent, betaalt of ontvangt <strong>rente</strong>. Bij <strong>samengestelde interest</strong> krijg je ook rente over eerder ontvangen rente. Een <strong>hypotheek</strong> is een lening voor een huis.`,
+    [
+      { h: '1. Sparen, lenen en rente', p: [
+        `<strong>Rente</strong> is de vergoeding voor het gebruik van geld: je ontvangt rente over je <strong>sparen</strong> en betaalt rente als je gaat <strong>lenen</strong>. Een lening betaal je stapsgewijs terug via <strong>aflossing</strong>; de mogelijkheid om te lenen heet <strong>krediet</strong>.`] },
+      { h: '2. Rente over rente', p: [
+        `Bij <strong>enkelvoudige interest</strong> krijg je elk jaar rente over alleen het startbedrag. Bij <strong>samengestelde interest</strong> krijg je rente over het bedrag inclusief de eerder bijgeschreven rente, waardoor je spaargeld sneller groeit.`],
+        worked: { q: 'Je zet € 100 weg tegen 10% rente per jaar. Hoeveel rente krijg je in het tweede jaar?', steps: ['Na jaar 1 heb je € 110 (€ 100 + € 10 rente).', 'In jaar 2 krijg je 10% over € 110, niet over € 100.'], ans: '€ 11 rente: je krijgt rente over de rente (samengestelde interest).' } },
+      { h: '3. Lenen voor een huis', p: [
+        `Een <strong>hypotheek</strong> is een lening voor een huis, met het huis als <strong>onderpand</strong>: betaal je niet terug, dan mag de bank het verkopen. De <strong>centrale bank</strong> bewaakt de waarde van het geld en beïnvloedt de rente.`] },
+    ],
     [
       { t: 'Rente', d: 'de vergoeding voor het lenen of uitlenen van geld', k: 'vergoeding voor geld', fout: ['Aflossing'] },
       { t: 'Samengestelde interest', d: 'rente die je ook over eerder ontvangen rente krijgt', k: 'rente over rente', fout: ['Enkelvoudige interest'] },
@@ -141,7 +207,13 @@ export default [
     ]),
 
   V('I', 'Ondernemen',
-    `<p>Een <b>ondernemer</b> start een bedrijf en neemt <b>risico</b>. In een <b>ondernemingsplan</b> werk je je idee uit: <b>doelgroep</b>, <b>marktonderzoek</b>, <b>startkapitaal</b> en de <b>kostprijs</b>. De <b>rechtsvorm</b> bepaalt onder meer wie aansprakelijk is.</p>`,
+    `Een <strong>ondernemer</strong> start een bedrijf en neemt <strong>risico</strong>. In een <strong>ondernemingsplan</strong> werk je je idee uit: <strong>doelgroep</strong>, <strong>marktonderzoek</strong>, <strong>startkapitaal</strong> en de <strong>kostprijs</strong>.`,
+    [
+      { h: '1. Een bedrijf starten', p: [
+        `Een <strong>ondernemer</strong> begint een bedrijf en neemt daarbij <strong>risico</strong>: de kans dat het misgaat. In een <strong>ondernemingsplan</strong> werk je alles uit. Je hebt <strong>startkapitaal</strong> nodig en doet <strong>investeringen</strong> in bedrijfsmiddelen. Hoe je aan geld komt, heet de <strong>financiering</strong>; de <strong>rechtsvorm</strong> bepaalt onder meer wie aansprakelijk is.`] },
+      { h: '2. Klanten en prijs', p: [
+        `Met <strong>marktonderzoek</strong> onderzoek je je klanten en <strong>concurrenten</strong>, zodat je je <strong>doelgroep</strong> kent. De <strong>kostprijs</strong> zijn de kosten per product; het verschil met de verkoopprijs is je <strong>winstmarge</strong>.`] },
+    ],
     [
       { t: 'Ondernemer', d: 'iemand die een bedrijf start en er risico mee neemt', k: 'start een bedrijf', fout: ['Werkgever'] },
       { t: 'Ondernemingsplan', d: 'een plan waarin je je bedrijf uitwerkt', k: 'plan voor je bedrijf', fout: ['Marktonderzoek'] },

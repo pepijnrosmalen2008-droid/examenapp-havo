@@ -1,9 +1,19 @@
-// VMBO GL/TL - Natuur- en scheikunde 1 (nask1). Compacte contentspec.
-const V = (domein, naam, sam, concepten) => ({ niveau: 'vmbo', vak: 'na1', domein, naam, sam, concepten });
+// VMBO GL/TL - Natuur- en scheikunde 1 (nask1). Gouden-stijl contentspec.
+const V = (domein, naam, intro, secties, concepten) => ({ niveau: 'vmbo', vak: 'na1', domein, naam, intro, secties, concepten });
 
 export default [
   V('A', 'Stoffen en materialen',
-    `<p>De <b>dichtheid</b> is de massa per volume van een stof. Bij een <b>faseovergang</b> gaat een stof van vast naar vloeibaar (<b>smelten</b>) of van vloeibaar naar gas (<b>verdampen</b>). Een <b>temperatuur-tijdgrafiek</b> laat zien hoe de temperatuur tijdens verwarmen verandert.</p>`,
+    `De <strong>dichtheid</strong> is de massa per volume van een stof. Bij een <strong>faseovergang</strong> gaat een stof van vast naar vloeibaar of van vloeibaar naar gas. Een <strong>temperatuur-tijdgrafiek</strong> laat zien hoe de temperatuur tijdens verwarmen verandert.`,
+    [
+      { h: '1. Dichtheid', p: [
+        `De <strong>dichtheid</strong> vertelt hoe zwaar een stof is voor zijn grootte: de <strong>massa</strong> per <strong>volume</strong>. IJzer heeft een grote dichtheid, piepschuim een kleine. Je berekent de dichtheid door de massa te delen door het volume.`],
+        formula: { label: 'Dichtheid', eq: 'ρ = m / V', note: 'ρ de dichtheid (g/cm³ of kg/m³), m de massa, V het volume.' },
+        worked: { q: 'Een blok heeft een massa van 200 g en een volume van 100 cm³. Bereken de dichtheid.', steps: ['Gebruik ρ = m / V.', 'ρ = 200 / 100.'], ans: 'De dichtheid is 2 g/cm³.' } },
+      { h: '2. Faseovergangen', p: [
+        `Een stof kan <strong>vast</strong>, <strong>vloeibaar</strong> of <strong>gas</strong> zijn. De overgangen hebben eigen namen: <strong>smelten</strong> (vast → vloeibaar) en <strong>stollen</strong> (vloeibaar → vast), en <strong>verdampen</strong> (vloeibaar → gas) en <strong>condenseren</strong> (gas → vloeibaar). Het <strong>smeltpunt</strong> en het <strong>kookpunt</strong> zijn de temperaturen waarbij dat gebeurt.`] },
+      { h: '3. Temperatuur-tijdgrafiek', p: [
+        `In een <strong>temperatuur-tijdgrafiek</strong> zet je de temperatuur uit tegen de tijd bij verwarmen. Tijdens een faseovergang blijft de temperatuur even gelijk (een vlak stuk in de grafiek), omdat alle warmte in de overgang gaat zitten.`] },
+    ],
     [
       { t: 'Dichtheid', d: 'de massa per volume van een stof', k: 'massa per volume', fout: ['Massa', 'Volume'] },
       { t: 'Massa', d: 'de hoeveelheid stof, in kilogram of gram', k: 'hoeveelheid stof', fout: ['Volume', 'Dichtheid'] },
@@ -22,7 +32,21 @@ export default [
     ]),
 
   V('B', 'Elektrische energie',
-    `<p>In een stroomkring hoort bij een <b>spanning</b> een <b>stroomsterkte</b> en een <b>weerstand</b>, verbonden door de <b>wet van Ohm</b> (U = I × R). In een <b>serieschakeling</b> heeft de stroom één weg, in een <b>parallelschakeling</b> meerdere. Het <b>vermogen</b> is de energie per seconde.</p>`,
+    `In een stroomkring horen <strong>spanning</strong>, <strong>stroomsterkte</strong> en <strong>weerstand</strong> bij elkaar, verbonden door de <strong>wet van Ohm</strong>. In een <strong>serieschakeling</strong> heeft de stroom één weg, in een <strong>parallelschakeling</strong> meerdere.`,
+    [
+      { h: '1. Stroom, spanning en weerstand', p: [
+        `De <strong>stroomsterkte</strong> (in ampère) is de hoeveelheid lading die per seconde stroomt. De <strong>spanning</strong> (in volt) is de duw die de stroom veroorzaakt. De <strong>weerstand</strong> (in ohm) werkt de stroom tegen. Een <strong>geleider</strong> laat stroom goed door, een <strong>isolator</strong> niet.`] },
+      { h: '2. De wet van Ohm', p: [
+        `Spanning, stroom en weerstand hangen samen: hoe hoger de weerstand bij dezelfde spanning, hoe kleiner de stroom.`],
+        formula: { label: 'Wet van Ohm', eq: 'U = I × R', note: 'U de spanning (V), I de stroomsterkte (A), R de weerstand (Ω).' },
+        worked: { q: 'Door een lampje loopt 0,5 A bij een spanning van 6 V. Bereken de weerstand.', steps: ['Herschrijf U = I × R naar R = U / I.', 'R = 6 / 0,5.'], ans: 'De weerstand is 12 Ω.' } },
+      { h: '3. Serie en parallel', p: [
+        `In een <strong>serieschakeling</strong> heeft de stroom maar één weg: gaat één lampje stuk, dan doet de rest het ook niet. In een <strong>parallelschakeling</strong> zijn er takken naast elkaar. Een <strong>kortsluiting</strong> is een verbinding met bijna geen weerstand; een <strong>zekering</strong> onderbreekt dan de stroom.`] },
+      { h: '4. Vermogen en energie', p: [
+        `Het <strong>vermogen</strong> (in watt) is de energie die per seconde wordt omgezet. De <strong>elektrische energie</strong> die een apparaat gebruikt, hangt af van het vermogen én de tijd dat het aanstaat.`],
+        formula: { label: 'Vermogen en energie', eq: 'P = U × I   en   E = P × t', note: 'P het vermogen (W), E de energie (J of Wh), t de tijd.' },
+        worked: { q: 'Een apparaat van 100 W staat 2 uur aan. Bereken de gebruikte energie.', steps: ['Gebruik E = P × t.', 'E = 100 W × 2 h.'], ans: 'De energie is 200 Wh (0,2 kWh).' } },
+    ],
     [
       { t: 'Stroomsterkte', d: 'de hoeveelheid lading die per seconde stroomt, in ampère', k: 'lading per seconde', fout: ['Spanning', 'Weerstand'] },
       { t: 'Spanning', d: 'de duw die de stroom veroorzaakt, in volt', k: 'de elektrische duw', fout: ['Stroomsterkte', 'Weerstand'] },
@@ -39,7 +63,17 @@ export default [
     ]),
 
   V('C', 'Verbranden en verwarmen',
-    `<p>Warmte gaat over door <b>geleiding</b>, <b>stroming</b> of <b>straling</b>. Met <b>isolatie</b> houd je warmtetransport tegen. Bij <b>verbranding</b> reageert een <b>brandstof</b> met <b>zuurstof</b> en komt er warmte vrij. De <b>soortelijke warmte</b> zegt hoeveel warmte een stof nodig heeft om op te warmen.</p>`,
+    `Warmte gaat over door <strong>geleiding</strong>, <strong>stroming</strong> of <strong>straling</strong>. Met <strong>isolatie</strong> houd je warmte tegen. Bij <strong>verbranding</strong> reageert een <strong>brandstof</strong> met <strong>zuurstof</strong> en komt er warmte vrij.`,
+    [
+      { h: '1. Warmtetransport', p: [
+        `Warmte kan op drie manieren van warm naar koud gaan. Bij <strong>warmtegeleiding</strong> geeft een stof de warmte door zonder zelf te bewegen (metaal). Bij <strong>warmtestroming</strong> beweegt een vloeistof of gas mee (verwarming in huis). Bij <strong>warmtestraling</strong> gaat de warmte door straling, zonder tussenstof (de zon). Met <strong>isolatie</strong> hou je warmtetransport tegen.`] },
+      { h: '2. Verbranding', p: [
+        `Bij een <strong>verbranding</strong> reageert een <strong>brandstof</strong> met <strong>zuurstof</strong> en komt warmte vrij. Het <strong>rendement</strong> zegt welk deel van de energie nuttig wordt gebruikt; de rest gaat als warmte verloren.`] },
+      { h: '3. Soortelijke warmte', p: [
+        `Hoeveel warmte een stof nodig heeft om op te warmen, hangt af van de <strong>soortelijke warmte</strong> (c), de massa en de temperatuurstijging.`],
+        formula: { label: 'Warmte', eq: 'Q = c × m × ΔT', note: 'Q de warmte (J), c de soortelijke warmte, m de massa (kg), ΔT de temperatuurstijging (°C).' },
+        worked: { q: 'Je verwarmt 2 kg water (c = 4180) van 20 °C naar 30 °C. Bereken de warmte.', steps: ['Bepaal ΔT = 30 − 20 = 10 °C.', 'Q = c × m × ΔT = 4180 × 2 × 10.'], ans: 'Er is 83.600 J warmte nodig.' } },
+    ],
     [
       { t: 'Warmtegeleiding', d: 'warmtetransport door een stof zonder dat de stof zelf beweegt', k: 'warmte door een stof', fout: ['Warmtestroming', 'Warmtestraling'] },
       { t: 'Warmtestroming', d: 'warmtetransport doordat een vloeistof of gas beweegt', k: 'warmte met bewegende stof', fout: ['Warmtegeleiding', 'Warmtestraling'] },
@@ -56,7 +90,13 @@ export default [
     ]),
 
   V('D', 'Licht en beeld',
-    `<p>Licht gaat rechtdoor tot het wordt <b>teruggekaatst</b> of <b>gebroken</b>. Een <b>bolle lens</b> bundelt licht in het <b>brandpunt</b>, een <b>holle lens</b> spreidt het. Zo ontstaat een <b>beeld</b> dat <b>reëel</b> (op te vangen) of <b>virtueel</b> (zoals in een spiegel) is.</p>`,
+    `Licht gaat rechtdoor tot het wordt <strong>teruggekaatst</strong> of <strong>gebroken</strong>. Een <strong>bolle lens</strong> bundelt licht in het <strong>brandpunt</strong>, een <strong>holle lens</strong> spreidt het.`,
+    [
+      { h: '1. Terugkaatsing en breking', p: [
+        `Een <strong>lichtstraal</strong> gaat rechtdoor tot hij een oppervlak raakt. Bij <strong>spiegeling</strong> kaatst het licht terug; de <strong>invalshoek</strong> is dan gelijk aan de terugkaatshoek. Gaat licht van de ene stof naar de andere (lucht naar water), dan verandert het van richting: <strong>lichtbreking</strong>.`] },
+      { h: '2. Lenzen en beeld', p: [
+        `Een <strong>bolle lens</strong> brengt lichtstralen bij elkaar in het <strong>brandpunt</strong>; een <strong>holle lens</strong> laat ze juist uit elkaar gaan. Zo ontstaat een <strong>beeld</strong>. Een <strong>reëel beeld</strong> kun je op een scherm opvangen; een <strong>virtueel beeld</strong> niet, zoals je spiegelbeeld.`] },
+    ],
     [
       { t: 'Lichtstraal', d: 'een rechte lijn die de richting van het licht aangeeft', k: 'richting van licht', fout: ['Lichtbreking'] },
       { t: 'Spiegeling', d: 'het terugkaatsen van licht door een spiegel', k: 'licht kaatst terug', fout: ['Lichtbreking'] },
@@ -73,7 +113,17 @@ export default [
     ]),
 
   V('E', 'Geluid',
-    `<p><b>Geluid</b> bestaat uit <b>trillingen</b> die zich door een stof voortplanten. De <b>frequentie</b> (trillingen per seconde) bepaalt de <b>toonhoogte</b>, de <b>amplitude</b> de <b>geluidssterkte</b>. Met teruggekaatst geluid (een <b>echo</b>) kun je met <b>echopeiling</b> afstanden meten.</p>`,
+    `<strong>Geluid</strong> bestaat uit <strong>trillingen</strong> die zich door een stof voortplanten. De <strong>frequentie</strong> bepaalt de <strong>toonhoogte</strong>, de <strong>amplitude</strong> de <strong>geluidssterkte</strong>.`,
+    [
+      { h: '1. Trillingen en geluid', p: [
+        `Een <strong>geluidsbron</strong> maakt <strong>trillingen</strong>: heen-en-weergaande bewegingen. Die trillingen planten zich als <strong>geluid</strong> voort door een stof, bijvoorbeeld lucht. In het luchtledige is er geen geluid, want er is niets om te trillen.`] },
+      { h: '2. Frequentie en amplitude', p: [
+        `De <strong>frequentie</strong> is het aantal trillingen per seconde (in hertz); de <strong>trillingstijd</strong> is de duur van één trilling. Een hoge frequentie geeft een hoge <strong>toonhoogte</strong>. De <strong>amplitude</strong> is de grootte van de uitwijking en bepaalt de <strong>geluidssterkte</strong>: hoe harder het klinkt.`],
+        formula: { label: 'Frequentie', eq: 'f = 1 / T', note: 'f de frequentie (Hz), T de trillingstijd (s).' },
+        worked: { q: 'Eén trilling duurt 0,01 s. Bereken de frequentie.', steps: ['Gebruik f = 1 / T.', 'f = 1 / 0,01.'], ans: 'De frequentie is 100 Hz.' } },
+      { h: '3. Echo en geluidssnelheid', p: [
+        `Geluid heeft een <strong>geluidssnelheid</strong> (in lucht ongeveer 340 m/s). Kaatst geluid terug, dan hoor je een <strong>echo</strong>. Met <strong>echopeiling</strong> meet je een afstand door de tijd van de echo te gebruiken.`] },
+    ],
     [
       { t: 'Geluid', d: 'trillingen die zich door een stof voortplanten', k: 'voortplantende trillingen', fout: ['Trilling'] },
       { t: 'Trilling', d: 'een heen-en-weergaande beweging', k: 'heen en weer bewegen', fout: ['Frequentie'] },
@@ -90,7 +140,16 @@ export default [
     ]),
 
   V('F', 'Kracht en veiligheid',
-    `<p>Een <b>kracht</b> is een duw of trek, gemeten in <b>newton</b>. Meerdere krachten vormen samen de <b>resultante</b>; heffen ze elkaar op, dan is er <b>evenwicht</b>. Een <b>hefboom</b> vergroot kracht rond een <b>draaipunt</b>. Je <b>stopafstand</b> is de reactieafstand plus de <b>remweg</b>.</p>`,
+    `Een <strong>kracht</strong> is een duw of trek, gemeten in <strong>newton</strong>. Een <strong>hefboom</strong> vergroot kracht rond een <strong>draaipunt</strong>. Je <strong>stopafstand</strong> is de reactieafstand plus de <strong>remweg</strong>.`,
+    [
+      { h: '1. Krachten', p: [
+        `Een <strong>kracht</strong> is een duw of trek die een voorwerp kan vervormen of versnellen; de eenheid is de <strong>newton</strong>. De <strong>zwaartekracht</strong> trekt alles naar de aarde. Werken meerdere krachten, dan tel je ze samen tot de <strong>resultante</strong>. Heffen ze elkaar op, dan is er <strong>evenwicht</strong>. De <strong>wrijvingskracht</strong> werkt beweging tegen.`] },
+      { h: '2. Hefbomen', p: [
+        `Een <strong>hefboom</strong> draait om een <strong>draaipunt</strong> en maakt het mogelijk met weinig kracht een zware last te tillen. Het draai-effect heet het <strong>moment</strong>: kracht maal arm.`],
+        formula: { label: 'Moment', eq: 'M = F × r', note: 'M het moment, F de kracht (N), r de arm (afstand tot het draaipunt).' } },
+      { h: '3. Snelheid en veiligheid', p: [
+        `Voordat je remt, verstrijkt eerst je <strong>reactietijd</strong>: de tijd tussen zien en reageren. De afstand tijdens het remmen is de <strong>remweg</strong>. Samen vormen de reactieafstand en de remweg de <strong>stopafstand</strong>. Bij een hogere snelheid worden beide groter.`] },
+    ],
     [
       { t: 'Kracht', d: 'een duw of trek die een voorwerp kan vervormen of versnellen', k: 'duw of trek', fout: ['Moment', 'Zwaartekracht'] },
       { t: 'Zwaartekracht', d: 'de kracht waarmee de aarde aan massa trekt', k: 'aantrekking van de aarde', fout: ['Kracht'] },
@@ -107,7 +166,15 @@ export default [
     ]),
 
   V('G', 'Bouw van de materie',
-    `<p>Alle stoffen bestaan uit <b>atomen</b>. Zitten atomen aan elkaar, dan vormen ze een <b>molecuul</b>. Een <b>element</b> bestaat uit één soort atomen, een <b>verbinding</b> uit meerdere. Een <b>zuivere stof</b> heeft één soort deeltjes; een <b>mengsel</b> meerdere.</p>`,
+    `Alle stoffen bestaan uit <strong>atomen</strong>. Zitten atomen aan elkaar, dan vormen ze een <strong>molecuul</strong>. Een <strong>zuivere stof</strong> heeft één soort deeltjes; een <strong>mengsel</strong> meerdere.`,
+    [
+      { h: '1. Atomen en moleculen', p: [
+        `Het kleinste deeltje van een stof is het <strong>atoom</strong>. Zitten atomen aan elkaar vast, dan vormen ze een <strong>molecuul</strong>. Een <strong>element</strong> bestaat uit één soort atomen (bijvoorbeeld zuurstof); een <strong>verbinding</strong> uit meerdere soorten (bijvoorbeeld water).`] },
+      { h: '2. Zuivere stof en mengsel', p: [
+        `Een <strong>zuivere stof</strong> bestaat uit één soort deeltjes. Een <strong>mengsel</strong> bevat meerdere soorten deeltjes door elkaar. Door <strong>scheiden</strong> (zoals filtreren of indampen) haal je een mengsel weer uit elkaar.`] },
+      { h: '3. In het atoom', p: [
+        `Een atoom heeft een <strong>atoomkern</strong> met <strong>protonen</strong> (positief) en <strong>neutronen</strong> (ongeladen). Daaromheen bewegen <strong>elektronen</strong> (negatief). Krijgt een atoom lading, bijvoorbeeld door elektronen op te nemen of af te staan, dan is het een <strong>ion</strong>.`] },
+    ],
     [
       { t: 'Atoom', d: 'het kleinste deeltje van een element', k: 'kleinste deeltje', fout: ['Molecuul'] },
       { t: 'Molecuul', d: 'een groepje atomen dat aan elkaar zit', k: 'groepje atomen', fout: ['Atoom'] },
@@ -124,7 +191,13 @@ export default [
     ]),
 
   V('H', 'Straling en stralingsbescherming',
-    `<p><b>Radioactiviteit</b> is het uitzenden van <b>straling</b> door onstabiele kernen. Er zijn drie soorten: <b>alfa</b>, <b>bèta</b> en <b>gamma</b>. <b>Ioniserende straling</b> kan schadelijk zijn; met <b>afscherming</b> en afstand bescherm je jezelf. De <b>halveringstijd</b> zegt hoe snel de straling afneemt.</p>`,
+    `<strong>Radioactiviteit</strong> is het uitzenden van <strong>straling</strong> door onstabiele kernen. Er zijn drie soorten: <strong>alfa</strong>, <strong>bèta</strong> en <strong>gamma</strong>. Met <strong>afscherming</strong> en afstand bescherm je jezelf.`,
+    [
+      { h: '1. Soorten straling', p: [
+        `<strong>Radioactiviteit</strong> ontstaat als onstabiele atoomkernen <strong>straling</strong> uitzenden. Er zijn drie soorten: <strong>alfastraling</strong> (zware, geladen deeltjes, weinig doordringend), <strong>betastraling</strong> (snelle elektronen) en <strong>gammastraling</strong> (zeer doordringend, zonder lading). Omdat deze straling deeltjes geladen kan maken, heet ze <strong>ioniserende straling</strong>.`] },
+      { h: '2. Halveringstijd en bescherming', p: [
+        `De <strong>halveringstijd</strong> is de tijd waarin de helft van de radioactieve kernen vervalt: daarna is de straling gehalveerd. Straling van buitenaf heet <strong>bestraling</strong>; zit het radioactieve materiaal op of in je lichaam, dan is er <strong>besmetting</strong>. Je beschermt je met <strong>afscherming</strong>, afstand en korte blootstelling. De ontvangen hoeveelheid heet de <strong>dosis</strong>, die je meet met een <strong>geigerteller</strong>.`] },
+    ],
     [
       { t: 'Straling', d: 'energie die zich door de ruimte verplaatst als golven of deeltjes', k: 'energie door de ruimte', fout: ['Radioactiviteit'] },
       { t: 'Radioactiviteit', d: 'het uitzenden van straling door onstabiele kernen', k: 'kernen zenden straling uit', fout: ['Straling'] },

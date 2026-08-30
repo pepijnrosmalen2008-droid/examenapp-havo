@@ -1,9 +1,18 @@
-// VMBO GL/TL - Aardrijkskunde. Compacte contentspec → scripts/expand-leerdoelen.mjs.
-const V = (domein, naam, sam, concepten) => ({ niveau: 'vmbo', vak: 'ak', domein, naam, sam, concepten });
+// VMBO GL/TL - Aardrijkskunde. Gouden-stijl contentspec.
+const V = (domein, naam, intro, secties, concepten) => ({ niveau: 'vmbo', vak: 'ak', domein, naam, intro, secties, concepten });
 
 export default [
   V('A', 'Weer en klimaat',
-    `<p><b>Weer</b> is de toestand van de atmosfeer op een moment; <b>klimaat</b> is het gemiddelde weer over dertig jaar. Lucht stroomt van een <b>hogedrukgebied</b> naar een <b>lagedrukgebied</b>: dat is <b>wind</b>. Een <b>klimaatgrafiek</b> toont de gemiddelde temperatuur en neerslag per maand.</p>`,
+    `<strong>Weer</strong> is de toestand van de atmosfeer op een moment; <strong>klimaat</strong> is het gemiddelde weer over dertig jaar. Lucht stroomt van een <strong>hogedrukgebied</strong> naar een <strong>lagedrukgebied</strong>: dat is <strong>wind</strong>.`,
+    [
+      { h: '1. Weer en klimaat', p: [
+        `<strong>Weer</strong> beschrijft de toestand van de lucht op één moment (nu regen, straks zon). <strong>Klimaat</strong> is het gemiddelde weer over een lange periode, meestal dertig jaar. Nederland heeft een <strong>zeeklimaat</strong>: milde winters en koele zomers door de invloed van de zee. Ver van zee heerst een <strong>landklimaat</strong> met koude winters en warme zomers.`] },
+      { h: '2. Luchtdruk en wind', p: [
+        `De <strong>luchtdruk</strong> is de druk die de lucht uitoefent. In een <strong>lagedrukgebied</strong> stijgt lucht op: vaak bewolkt en nat. In een <strong>hogedrukgebied</strong> daalt lucht: vaak droog en zonnig. Lucht stroomt van hoge naar lage druk, en die stroming is de <strong>wind</strong>. De <strong>wet van Buys Ballot</strong> beschrijft hoe de wind rond die gebieden draait.`,
+        `Op een weerkaart verbindt een <strong>isobar</strong> punten met dezelfde luchtdruk, en een <strong>front</strong> is de grens tussen warme en koude lucht.`] },
+      { h: '3. Een klimaatgrafiek lezen', p: [
+        `Een <strong>klimaatgrafiek</strong> laat per maand de gemiddelde <strong>temperatuur</strong> (als lijn) en de <strong>neerslag</strong> (als staven) zien. Zo herken je bijvoorbeeld een natte winter en een droge zomer, of andersom.`] },
+    ],
     [
       { t: 'Weer', d: 'de toestand van de atmosfeer op een bepaald moment', k: 'toestand van de lucht nu', fout: ['Klimaat'] },
       { t: 'Klimaat', d: 'het gemiddelde weer over een lange periode van dertig jaar', k: 'gemiddeld weer, lange termijn', fout: ['Weer'] },
@@ -22,7 +31,13 @@ export default [
     ]),
 
   V('B', 'Water',
-    `<p>In de <b>waterkringloop</b> verdampt water, valt het als <b>neerslag</b> en stroomt het via <b>rivieren</b> terug naar zee. Nederland ligt laag en beschermt zich met <b>dijken</b>, <b>polders</b> en <b>gemalen</b>. Door <b>zeespiegelstijging</b> neemt het <b>overstromingsrisico</b> toe.</p>`,
+    `In de <strong>waterkringloop</strong> verdampt water, valt het als <strong>neerslag</strong> en stroomt het via <strong>rivieren</strong> terug naar zee. Nederland ligt laag en beschermt zich met <strong>dijken</strong>, <strong>polders</strong> en <strong>gemalen</strong>.`,
+    [
+      { h: '1. De waterkringloop', p: [
+        `Water is voortdurend in beweging. Door <strong>verdamping</strong> wordt zeewater waterdamp, die als <strong>neerslag</strong> weer valt. Een deel zakt weg als <strong>grondwater</strong>, een deel stroomt via een <strong>rivier</strong> naar zee, waar de rivier zich in een <strong>delta</strong> vertakt. Dit geheel heet de <strong>waterkringloop</strong>.`] },
+      { h: '2. Nederland en het water', p: [
+        `Grote delen van Nederland liggen onder zeeniveau. Een <strong>dijk</strong> houdt het water tegen, een <strong>polder</strong> is drooggelegd land en een <strong>gemaal</strong> pompt overtollig water weg. Het <strong>waterschap</strong> beheert de dijken en het waterpeil. Door <strong>zeespiegelstijging</strong> neemt het risico op <strong>overstroming</strong> toe.`] },
+    ],
     [
       { t: 'Waterkringloop', d: 'de kringloop van verdamping, neerslag en afstroming van water', k: 'water gaat rond', fout: ['Verdamping'] },
       { t: 'Verdamping', d: 'het overgaan van water in waterdamp', k: 'water wordt damp', fout: ['Neerslag'] },
@@ -39,7 +54,13 @@ export default [
     ]),
 
   V('C', 'Bevolking en ruimte',
-    `<p>De <b>bevolkingsgroei</b> hangt af van het <b>geboortecijfer</b>, het <b>sterftecijfer</b> en <b>migratie</b>. Door <b>verstedelijking</b> trekken mensen naar de stad. De <b>bevolkingsdichtheid</b> zegt hoeveel mensen er per vierkante kilometer wonen.</p>`,
+    `De <strong>bevolkingsgroei</strong> hangt af van het <strong>geboortecijfer</strong>, het <strong>sterftecijfer</strong> en <strong>migratie</strong>. Door <strong>verstedelijking</strong> trekken mensen naar de stad.`,
+    [
+      { h: '1. Waardoor groeit een bevolking?', p: [
+        `Een bevolking groeit door geboorte en immigratie, en krimpt door sterfte en emigratie. Het <strong>geboortecijfer</strong> en het <strong>sterftecijfer</strong> geven het aantal geboorten en sterfgevallen per duizend inwoners. Het verschil is de <strong>natuurlijke aanwas</strong>. Daarnaast telt <strong>migratie</strong> mee: <strong>immigratie</strong> is een land binnenkomen, <strong>emigratie</strong> is vertrekken.`] },
+      { h: '2. Steden en spreiding', p: [
+        `Door <strong>verstedelijking</strong> groeien steden en neemt het aandeel stadsbewoners toe; het trekken van het platteland naar de stad heet <strong>urbanisatie</strong>. De <strong>bevolkingsdichtheid</strong> zegt hoeveel mensen er per vierkante kilometer wonen. In veel landen speelt ook <strong>vergrijzing</strong>: het aandeel ouderen stijgt.`] },
+    ],
     [
       { t: 'Bevolkingsgroei', d: 'de toename van het aantal inwoners van een gebied', k: 'meer inwoners', fout: ['Natuurlijke aanwas'] },
       { t: 'Geboortecijfer', d: 'het aantal geboorten per duizend inwoners per jaar', k: 'geboorten per 1000', fout: ['Sterftecijfer'] },
@@ -56,7 +77,13 @@ export default [
     ]),
 
   V('D', 'Arm en rijk',
-    `<p>De <b>welvaart</b> verschilt sterk tussen landen; het <b>bnp per inwoner</b> is er een maat voor. Rijke <b>centrumgebieden</b> staan tegenover arme <b>periferiegebieden</b>. <b>Welvaartsverschillen</b> ontstaan door grondstoffen, onderwijs en handel.</p>`,
+    `De <strong>welvaart</strong> verschilt sterk tussen landen; het <strong>bnp per inwoner</strong> is er een maat voor. Rijke <strong>centrumgebieden</strong> staan tegenover arme <strong>periferiegebieden</strong>.`,
+    [
+      { h: '1. Welvaart meten', p: [
+        `<strong>Welvaart</strong> is de mate waarin mensen in hun behoeften kunnen voorzien. Je meet die onder meer met het <strong>bnp per inwoner</strong> (de gemiddelde productie per persoon), de <strong>levensverwachting</strong> en het <strong>analfabetisme</strong>. Landen met lage welvaart heten <strong>ontwikkelingslanden</strong>, landen met hoge welvaart <strong>ontwikkelde landen</strong>.`] },
+      { h: '2. Centrum en periferie', p: [
+        `Binnen en tussen landen zie je een rijk <strong>centrum</strong> met veel bedrijvigheid en een arme <strong>periferie</strong> aan de rand. Zulke <strong>welvaartsverschillen</strong> ontstaan door verschillen in <strong>grondstoffen</strong>, onderwijs, <strong>infrastructuur</strong> en handel. Met <strong>ontwikkelingssamenwerking</strong> worden armere landen geholpen.`] },
+    ],
     [
       { t: 'Welvaart', d: 'de mate waarin mensen in hun behoeften kunnen voorzien', k: 'hoe goed men rondkomt', fout: ['Welvaartsverschil'] },
       { t: 'Bnp per inwoner', d: 'de gemiddelde productie per persoon in een land', k: 'productie per persoon', fout: ['Levensverwachting'] },
@@ -73,7 +100,13 @@ export default [
     ]),
 
   V('E', 'Ruimtelijke ordening',
-    `<p><b>Ruimtelijke ordening</b> is het plannen van het gebruik van de ruimte. In een <b>bestemmingsplan</b> legt de overheid vast welke <b>bestemming</b> een gebied krijgt: wonen, werken of natuur. Daarbij is steeds een <b>belangenafweging</b> nodig.</p>`,
+    `<strong>Ruimtelijke ordening</strong> is het plannen van het gebruik van de ruimte. In een <strong>bestemmingsplan</strong> legt de overheid vast welke <strong>bestemming</strong> een gebied krijgt: wonen, werken of natuur.`,
+    [
+      { h: '1. De ruimte plannen', p: [
+        `Nederland is klein en dichtbevolkt, dus de ruimte wordt zorgvuldig verdeeld: dat is <strong>ruimtelijke ordening</strong>. In een <strong>bestemmingsplan</strong> legt de gemeente vast waarvoor grond gebruikt mag worden. De <strong>bestemming</strong> is de functie die een gebied krijgt; de <strong>functie</strong> is het gebruik ervan, zoals wonen of natuur.`] },
+      { h: '2. Belangen afwegen', p: [
+        `Bij het inrichten van een gebied botsen vaak verschillende <strong>belangen</strong>. De overheid maakt dan een <strong>belangenafweging</strong>. Zo kies je tussen een <strong>woonfunctie</strong> en een <strong>recreatiefunctie</strong>, of tussen een <strong>industriegebied</strong> en een beschermd <strong>natuurgebied</strong>.`] },
+    ],
     [
       { t: 'Ruimtelijke ordening', d: 'het indelen en plannen van het gebruik van de ruimte', k: 'de ruimte plannen', fout: ['Bestemmingsplan'] },
       { t: 'Bestemmingsplan', d: 'een plan dat vastlegt waarvoor grond gebruikt mag worden', k: 'plan voor grondgebruik', fout: ['Bestemming', 'Ruimtelijke ordening'] },
@@ -90,7 +123,13 @@ export default [
     ]),
 
   V('F', 'Grenzen en identiteit',
-    `<p>Een <b>grens</b> scheidt gebieden; soms valt hij samen met een rivier of gebergte (<b>natuurlijke grens</b>). <b>Migratiestromen</b> verplaatsen mensen tussen <b>cultuurgebieden</b>. Gedeelde taal, gewoonten en <b>identiteit</b> binden mensen, maar over <b>territorium</b> ontstaan soms conflicten.</p>`,
+    `Een <strong>grens</strong> scheidt gebieden; soms valt hij samen met een rivier of gebergte. <strong>Migratiestromen</strong> verplaatsen mensen tussen <strong>cultuurgebieden</strong>, en gedeelde taal en gewoonten vormen een <strong>identiteit</strong>.`,
+    [
+      { h: '1. Grenzen en gebied', p: [
+        `Een <strong>grens</strong> is de lijn die twee gebieden scheidt. Een <strong>natuurlijke grens</strong> valt samen met bijvoorbeeld een rivier of gebergte. Het gebied waarover een land zeggenschap heeft, is het <strong>territorium</strong>; over het bezit ervan ontstaat soms een <strong>territoriaal conflict</strong>.`] },
+      { h: '2. Migratie, cultuur en identiteit', p: [
+        `Door <strong>migratiestromen</strong> verhuizen grote groepen mensen, soms als <strong>vluchteling</strong>. Een <strong>cultuurgebied</strong> deelt taal en gewoonten (de <strong>cultuur</strong>) en soms een <strong>godsdienst</strong>. Dat gedeelde gevoel erbij te horen is de <strong>identiteit</strong>. <strong>Integratie</strong> is het meedoen van nieuwkomers in de samenleving.`] },
+    ],
     [
       { t: 'Grens', d: 'de lijn die twee gebieden of landen van elkaar scheidt', k: 'scheidingslijn', fout: ['Natuurlijke grens'] },
       { t: 'Natuurlijke grens', d: 'een grens die samenvalt met een rivier of gebergte', k: 'grens langs de natuur', fout: ['Grens'] },

@@ -1,9 +1,15 @@
-// VMBO GL/TL - Geschiedenis & staatsinrichting. Compacte contentspec.
-const V = (domein, naam, sam, concepten) => ({ niveau: 'vmbo', vak: 'gs', domein, naam, sam, concepten });
+// VMBO GL/TL - Geschiedenis & staatsinrichting. Gouden-stijl contentspec.
+const V = (domein, naam, intro, secties, concepten) => ({ niveau: 'vmbo', vak: 'gs', domein, naam, intro, secties, concepten });
 
 export default [
   V('A', 'Cultuur en mentaliteit',
-    `<p><b>Cultuur</b> is het geheel van gewoonten, waarden en gebruiken van een groep; de <b>mentaliteit</b> is de manier van denken in een tijd. <b>Waarden</b> zijn wat mensen belangrijk vinden, <b>normen</b> de regels die daaruit volgen. Door <b>secularisatie</b> werd religie in Nederland minder bepalend.</p>`,
+    `<strong>Cultuur</strong> is het geheel van gewoonten, waarden en gebruiken van een groep; de <strong>mentaliteit</strong> is de manier van denken in een tijd. Door <strong>secularisatie</strong> werd religie in Nederland minder bepalend.`,
+    [
+      { h: '1. Cultuur, waarden en normen', p: [
+        `<strong>Cultuur</strong> omvat de gewoonten, gebruiken en waarden van een groep, terwijl de <strong>mentaliteit</strong> gaat over de manier van denken in een bepaalde tijd. <strong>Waarden</strong> zijn wat mensen belangrijk vinden (bijvoorbeeld vrijheid); <strong>normen</strong> zijn de gedragsregels die daaruit volgen. Een <strong>traditie</strong> is een gewoonte die van generatie op generatie overgaat.`] },
+      { h: '2. Religie en verandering', p: [
+        `Lange tijd bepaalde <strong>religie</strong> het dagelijks leven. Door <strong>secularisatie</strong> werd het geloof minder belangrijk. In een vroegere <strong>standensamenleving</strong> lag je plaats vast; door <strong>emancipatie</strong> streden groepen voor gelijke rechten. <strong>Tolerantie</strong> betekent andere meningen verdragen, terwijl een <strong>vooroordeel</strong> juist een oordeel vooraf is.`] },
+    ],
     [
       { t: 'Cultuur', d: 'de gewoonten, gebruiken en waarden van een groep', k: 'gewoonten en waarden', fout: ['Mentaliteit'] },
       { t: 'Mentaliteit', d: 'de manier van denken van mensen in een bepaalde tijd', k: 'manier van denken', fout: ['Cultuur'] },
@@ -20,7 +26,15 @@ export default [
     ]),
 
   V('B', 'Staatsinrichting van Nederland',
-    `<p>De <b>Grondwet</b> bevat de belangrijkste regels en de <b>grondrechten</b>. De <b>Trias Politica</b> verdeelt de macht in een <b>wetgevende</b>, <b>uitvoerende</b> en <b>rechterlijke</b> macht. Het <b>parlement</b> (Eerste en Tweede Kamer) controleert de <b>regering</b>.</p>`,
+    `De <strong>Grondwet</strong> bevat de belangrijkste regels en de <strong>grondrechten</strong>. De <strong>Trias Politica</strong> verdeelt de macht in drieën. Het <strong>parlement</strong> controleert de <strong>regering</strong>.`,
+    [
+      { h: '1. De Grondwet en grondrechten', p: [
+        `De <strong>Grondwet</strong> is de belangrijkste wet: alle andere wetten moeten eraan voldoen. Erin staan de <strong>grondrechten</strong>, zoals vrijheid van meningsuiting en het recht op gelijke behandeling. Nederland is een <strong>democratie</strong>: het volk kiest zijn vertegenwoordigers.`] },
+      { h: '2. De Trias Politica', p: [
+        `Om machtsmisbruik te voorkomen is de macht verdeeld (de <strong>Trias Politica</strong>): de <strong>wetgevende macht</strong> maakt wetten, de <strong>uitvoerende macht</strong> voert ze uit en de <strong>rechterlijke macht</strong> spreekt recht. Zo controleren de machten elkaar.`] },
+      { h: '3. Regering en parlement', p: [
+        `De <strong>regering</strong> (de koning en de ministers) bestuurt het land. Het <strong>parlement</strong>, bestaande uit de <strong>Tweede Kamer</strong> (gekozen, maakt en controleert wetten) en de <strong>Eerste Kamer</strong> (keurt wetten goed of af), controleert de regering. Samen zorgen ze onder meer voor de <strong>verzorgingsstaat</strong>.`] },
+    ],
     [
       { t: 'Grondwet', d: 'de belangrijkste wet met de regels van de staat', k: 'de hoogste wet', fout: ['Grondrecht'] },
       { t: 'Grondrecht', d: 'een recht dat iedereen heeft, zoals vrijheid van meningsuiting', k: 'recht voor iedereen', fout: ['Grondwet'] },
@@ -37,7 +51,13 @@ export default [
     ]),
 
   V('C', 'De industriële samenleving',
-    `<p>Tijdens de <b>industriële revolutie</b> ging productie van handwerk naar <b>fabrieken</b> met machines, aangedreven door de <b>stoommachine</b>. Steden groeiden en er ontstond een <b>sociale kwestie</b>: slechte omstandigheden voor <b>arbeiders</b>, waartegen <b>vakbonden</b> en <b>stakingen</b> opkwamen.</p>`,
+    `Tijdens de <strong>industriële revolutie</strong> ging productie van handwerk naar <strong>fabrieken</strong> met machines. Steden groeiden en er ontstond een <strong>sociale kwestie</strong>, waartegen <strong>vakbonden</strong> en <strong>stakingen</strong> opkwamen.`,
+    [
+      { h: '1. De industriële revolutie', p: [
+        `Vanaf de negentiende eeuw veranderde de productie ingrijpend: de <strong>industriële revolutie</strong>. In plaats van thuis met de hand werd er in <strong>fabrieken</strong> met machines geproduceerd, aangedreven door de <strong>stoommachine</strong>. Dit maakte <strong>massaproductie</strong> mogelijk en zorgde voor <strong>verstedelijking</strong>: mensen trokken voor werk naar de stad.`] },
+      { h: '2. De sociale kwestie', p: [
+        `De arbeiders leefden en werkten onder slechte omstandigheden: de <strong>sociale kwestie</strong>. Er was veel <strong>kinderarbeid</strong>. <strong>Arbeiders</strong> verenigden zich in <strong>vakbonden</strong> en gebruikten de <strong>staking</strong> als middel. Tegenover het <strong>kapitalisme</strong> (bezit en winst) ontstond het <strong>socialisme</strong>, dat opkwam voor gelijkheid.`] },
+    ],
     [
       { t: 'Industriële revolutie', d: 'de overgang naar productie met machines in fabrieken', k: 'productie met machines', fout: ['Massaproductie'] },
       { t: 'Fabriek', d: 'een gebouw waar met machines massaal wordt geproduceerd', k: 'gebouw met machines', fout: ['Stoommachine'] },
@@ -54,7 +74,13 @@ export default [
     ]),
 
   V('D', 'Sociale zekerheid en verzorgingsstaat',
-    `<p>Na 1945 bouwde Nederland een <b>verzorgingsstaat</b>: met <b>sociale wetten</b> en <b>uitkeringen</b> beschermt de <b>sociale zekerheid</b> mensen tegen <b>werkloosheid</b>, ziekte en ouderdom. Dat berust op <b>solidariteit</b>: samen de risico's dragen.</p>`,
+    `Na 1945 bouwde Nederland een <strong>verzorgingsstaat</strong>: met <strong>sociale wetten</strong> en <strong>uitkeringen</strong> beschermt de <strong>sociale zekerheid</strong> mensen tegen tegenslag. Dat berust op <strong>solidariteit</strong>.`,
+    [
+      { h: '1. De verzorgingsstaat', p: [
+        `In een <strong>verzorgingsstaat</strong> zorgt de overheid voor het welzijn van de burgers. Via <strong>sociale wetten</strong> en de <strong>sociale zekerheid</strong> krijgen mensen inkomen bij ziekte, werkloosheid of ouderdom. Dit werkt door <strong>solidariteit</strong>: gezonde en werkende mensen betalen mee voor wie het (even) niet redt.`] },
+      { h: '2. Uitkeringen en pensioen', p: [
+        `Wie geen werk heeft (<strong>werkloosheid</strong>) kan een <strong>uitkering</strong> krijgen; wie helemaal geen inkomen heeft, valt terug op de <strong>bijstand</strong>. Ouderen ontvangen de <strong>AOW</strong> en vaak een aanvullend <strong>pensioen</strong>. Voor verzekeringen betaal je <strong>premie</strong>. Voorzieningen die er voor iedereen zijn, heten <strong>collectieve voorzieningen</strong>.`] },
+    ],
     [
       { t: 'Sociale zekerheid', d: 'het stelsel dat mensen bij tegenslag inkomen geeft', k: 'inkomen bij tegenslag', fout: ['Verzorgingsstaat'] },
       { t: 'Verzorgingsstaat', d: 'een staat die voor het welzijn van de burgers zorgt', k: 'staat zorgt voor burgers', fout: ['Sociale zekerheid'] },
@@ -71,7 +97,13 @@ export default [
     ]),
 
   V('E', 'Ontwikkelingen na 1945',
-    `<p>Na de oorlog verdween de <b>verzuiling</b> (<b>ontzuiling</b>) en kwam de <b>emancipatie</b> op gang. Er ontstond een eigen <b>jongerencultuur</b> en <b>protestbewegingen</b>. Door groeiende <b>welvaart</b> ontstond een <b>consumptiemaatschappij</b> en nam de <b>individualisering</b> toe.</p>`,
+    `Na de oorlog verdween de <strong>verzuiling</strong> en kwam de <strong>emancipatie</strong> op gang. Er ontstond een eigen <strong>jongerencultuur</strong>, en door groeiende <strong>welvaart</strong> een <strong>consumptiemaatschappij</strong>.`,
+    [
+      { h: '1. Ontzuiling en emancipatie', p: [
+        `Vóór 1960 was de samenleving verdeeld in aparte groepen naar geloof en politiek: de <strong>verzuiling</strong>. Daarna verdwenen die scheidslijnen: de <strong>ontzuiling</strong>. Tegelijk vond <strong>emancipatie</strong> plaats (bijvoorbeeld van vrouwen) en <strong>democratisering</strong>: mensen kregen meer inspraak. Ook de <strong>secularisatie</strong> zette door.`] },
+      { h: '2. Jongeren, welvaart en protest', p: [
+        `Jongeren ontwikkelden een eigen <strong>jongerencultuur</strong> met eigen muziek en ideeën, en vormden <strong>protestbewegingen</strong>. Door de stijgende <strong>welvaart</strong> ontstond een <strong>consumptiemaatschappij</strong> en nam de <strong>individualisering</strong> toe. De opkomst van de <strong>massamedia</strong> vergrootte soms de <strong>generatiekloof</strong> tussen jong en oud.`] },
+    ],
     [
       { t: 'Verzuiling', d: 'de indeling van de samenleving in aparte groepen naar geloof of politiek', k: 'samenleving in zuilen', fout: ['Ontzuiling'] },
       { t: 'Ontzuiling', d: 'het verdwijnen van de scheiding tussen die groepen', k: 'zuilen verdwijnen', fout: ['Verzuiling'] },
@@ -88,7 +120,13 @@ export default [
     ]),
 
   V('F', 'Kolonisatie en dekolonisatie',
-    `<p>Nederland bestuurde <b>koloniën</b> zoals <b>Nederlands-Indië</b> en <b>Suriname</b>. Na 1945 leidde het <b>nationalisme</b> tot <b>dekolonisatie</b>: koloniën werden <b>onafhankelijk</b>. Indonesië werd zelfstandig na de <b>politionele acties</b>, Suriname in 1975.</p>`,
+    `Nederland bestuurde <strong>koloniën</strong> zoals <strong>Nederlands-Indië</strong> en <strong>Suriname</strong>. Na 1945 leidde het <strong>nationalisme</strong> tot <strong>dekolonisatie</strong>: koloniën werden <strong>onafhankelijk</strong>.`,
+    [
+      { h: '1. Koloniën', p: [
+        `Een <strong>kolonie</strong> is een gebied dat door een ander land wordt bestuurd; het in bezit nemen ervan heet <strong>kolonisatie</strong>. Nederland verdiende in zijn koloniën aan grondstoffen en <strong>plantages</strong>, vaak door <strong>uitbuiting</strong> van de bevolking. In het verleden hoorde daar ook <strong>slavernij</strong> bij.`] },
+      { h: '2. Onafhankelijkheid', p: [
+        `Na de Tweede Wereldoorlog groeide het <strong>nationalisme</strong>: het streven naar een eigen natie. Dat leidde tot <strong>dekolonisatie</strong>. <strong>Nederlands-Indië</strong> werd na de <strong>politionele acties</strong> onafhankelijk als Indonesië; <strong>Suriname</strong> werd zelfstandig in 1975. Veel mensen kwamen daarna via <strong>migratie</strong> naar Nederland.`] },
+    ],
     [
       { t: 'Kolonie', d: 'een gebied dat door een ander land wordt bestuurd', k: 'bestuurd gebied', fout: ['Plantage'] },
       { t: 'Kolonisatie', d: 'het in bezit nemen en besturen van een ander gebied', k: 'gebied in bezit nemen', fout: ['Dekolonisatie'] },
@@ -105,7 +143,15 @@ export default [
     ]),
 
   V('G', 'Historisch overzicht vanaf 1900',
-    `<p>De twintigste eeuw kende twee wereldoorlogen. Na de <b>beurskrach van 1929</b> kwamen <b>fascisme</b> en <b>nazisme</b> op. In de <b>Tweede Wereldoorlog</b> vond de <b>Holocaust</b> plaats. Daarna verdeelde de <b>Koude Oorlog</b> de wereld in <b>NAVO</b> en <b>Warschaupact</b>, tot de <b>Val van de Muur</b> in 1989.</p>`,
+    `De twintigste eeuw kende twee wereldoorlogen. Na de <strong>beurskrach van 1929</strong> kwamen <strong>fascisme</strong> en <strong>nazisme</strong> op. Daarna verdeelde de <strong>Koude Oorlog</strong> de wereld tot de <strong>Val van de Muur</strong> in 1989.`,
+    [
+      { h: '1. De wereldoorlogen', p: [
+        `De <strong>Eerste Wereldoorlog</strong> (1914-1918) werd gevolgd door het <strong>interbellum</strong>, de tijd tussen de oorlogen. In de <strong>Tweede Wereldoorlog</strong> (1939-1945) kende Nederland een <strong>bezetting</strong> door Duitsland. In die oorlog vond de <strong>Holocaust</strong> plaats: de systematische moord op zes miljoen Joden.`] },
+      { h: '2. Crisis en dictaturen', p: [
+        `De <strong>beurskrach van 1929</strong> stortte de wereld in een economische <strong>crisis</strong> met massale werkloosheid. In die onrust kwamen extreem-rechtse stromingen op: het <strong>fascisme</strong> en, in Duitsland, het <strong>nazisme</strong> met racisme en Jodenhaat. Beide vestigden een <strong>dictatuur</strong>: alle macht bij één partij.`] },
+      { h: '3. De Koude Oorlog', p: [
+        `Na 1945 stonden de VS en de Sovjet-Unie tegenover elkaar in de <strong>Koude Oorlog</strong>. Het Westen vormde de <strong>NAVO</strong>, het communistische blok het <strong>Warschaupact</strong>. De spanning eindigde met de <strong>Val van de Muur</strong> in Berlijn in 1989.`] },
+    ],
     [
       { t: 'Eerste Wereldoorlog', d: 'de oorlog van 1914 tot 1918 in vooral Europa', k: 'oorlog 1914-1918', fout: ['Tweede Wereldoorlog'] },
       { t: 'Interbellum', d: 'de periode tussen de twee wereldoorlogen', k: 'tussen de wereldoorlogen', fout: ['Koude Oorlog'] },
@@ -124,7 +170,13 @@ export default [
     ]),
 
   V('H', 'Europa en de wereld',
-    `<p>Na 1945 kozen Europese landen voor <b>samenwerking</b> om <b>vrede</b> en welvaart te bevorderen, wat uitgroeide tot de <b>Europese Unie</b> met een gezamenlijke munt, de <b>euro</b>. Door <b>globalisering</b> raken landen wereldwijd steeds meer met elkaar verweven.</p>`,
+    `Na 1945 kozen Europese landen voor <strong>samenwerking</strong> om <strong>vrede</strong> en welvaart te bevorderen, wat uitgroeide tot de <strong>Europese Unie</strong>. Door <strong>globalisering</strong> raken landen wereldwijd verweven.`,
+    [
+      { h: '1. Europese samenwerking', p: [
+        `Om herhaling van oorlog te voorkomen, begonnen Europese landen na 1945 samen te werken. Die <strong>Europese samenwerking</strong> groeide uit tot de <strong>Europese Unie</strong>, met een gezamenlijke munt, de <strong>euro</strong>, en <strong>vrij verkeer</strong> van mensen en goederen. Afspraken tussen landen worden vastgelegd in een <strong>verdrag</strong>; het hoofddoel was en is <strong>vrede</strong>.`] },
+      { h: '2. Globalisering', p: [
+        `Door <strong>globalisering</strong> raken landen steeds meer met elkaar verweven via <strong>handel</strong> en <strong>multinationals</strong>. Mensen verplaatsen zich door <strong>migratie</strong>, soms als <strong>vluchteling</strong>. Rijke landen geven <strong>ontwikkelingshulp</strong> aan armere landen.`] },
+    ],
     [
       { t: 'Europese Unie', d: 'een samenwerkingsverband van Europese landen', k: 'samenwerkende EU-landen', fout: ['Europese samenwerking'] },
       { t: 'Europese samenwerking', d: 'het samenwerken van landen in Europa na 1945', k: 'landen werken samen', fout: ['Europese Unie'] },
