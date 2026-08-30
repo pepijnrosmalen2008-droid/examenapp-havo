@@ -1,12 +1,27 @@
-// VMBO GL/TL - Biologie. Compacte contentspec → scripts/expand-leerdoelen.mjs.
-// Per domein: concepten (t=term, d=definitie, k=korte kern, fout=verwarbare termen)
-// + een korte samenvatting. De generator maakt hier de gouden-valide vraagbank van.
-const D = (niveau, vak, domein, naam, sam, concepten) => ({ niveau, vak, domein, naam, sam, concepten });
-const V = (domein, naam, sam, concepten) => D('vmbo', 'bi', domein, naam, sam, concepten);
+// VMBO GL/TL - Biologie. Gouden-stijl contentspec → scripts/expand-leerdoelen.mjs.
+// Per domein: intro + secties (prosa, formuleboxen, voorbeeldopgaven) voor de
+// samenvatting, plus concepten (t/d/k/fout) die de vraagbank én flashcards voeden.
+const V = (domein, naam, intro, secties, concepten) => ({ niveau: 'vmbo', vak: 'bi', domein, naam, intro, secties, concepten });
 
 export default [
   V('A', 'Cellen aan de basis',
-    `<p>Alle organismen zijn opgebouwd uit <b>cellen</b>. Cellen met dezelfde vorm en functie vormen een <b>weefsel</b>, weefsels vormen een <b>orgaan</b> en organen die samenwerken een <b>orgaanstelsel</b>. In de <b>celkern</b> ligt het <b>DNA</b>; een stukje DNA met de code voor één eigenschap heet een <b>gen</b>. Het geheel aan genen is het <b>genotype</b>, de zichtbare eigenschappen zijn het <b>fenotype</b>.</p>`,
+    `Alle levende wezens bestaan uit <strong>cellen</strong>. In dit domein leer je hoe cellen zijn opgebouwd, waarin een plantencel verschilt van een dierlijke cel, en hoe eigenschappen via <strong>DNA</strong> worden doorgegeven bij een <strong>monohybride kruising</strong>.`,
+    [
+      { h: '1. Van cel tot organisme', p: [
+        `De <strong>cel</strong> is de kleinste bouwsteen van een organisme. Cellen met dezelfde vorm en functie vormen samen een <strong>weefsel</strong> (bijvoorbeeld spierweefsel). Meerdere weefsels die samen een taak uitvoeren vormen een <strong>orgaan</strong>, zoals het hart. Organen die samenwerken aan één functie vormen een <strong>orgaanstelsel</strong>, zoals het bloedvatenstelsel.`,
+        `Deze volgorde van klein naar groot (cel → weefsel → orgaan → orgaanstelsel → organisme) heet de organisatie van het lichaam. Elke laag is opgebouwd uit de laag eronder.`] },
+      { h: '2. De bouw van een cel', p: [
+        `Elke cel wordt omsloten door een <strong>celmembraan</strong> dat bepaalt welke stoffen erin en eruit gaan. In de <strong>celkern</strong> ligt het <strong>DNA</strong>. De rest van de cel is gevuld met <strong>cytoplasma</strong>, de vloeistof waarin de celonderdelen liggen.`,
+        `Een plantencel heeft drie extra onderdelen die een dierlijke cel niet heeft: een stevige <strong>celwand</strong>, <strong>bladgroenkorrels</strong> voor de fotosynthese en een grote <strong>vacuole</strong> met vocht.`] },
+      { h: '3. DNA, genen en chromosomen', p: [
+        `Het <strong>DNA</strong> bevat alle erfelijke informatie. Een klein stukje DNA met de code voor één eigenschap heet een <strong>gen</strong>. Als DNA sterk wordt opgerold, vormt het een <strong>chromosoom</strong>; die zijn zichtbaar bij een celdeling.`,
+        `Het <strong>genotype</strong> is de erfelijke aanleg (alle genen), het <strong>fenotype</strong> is wat je daarvan ziet: de waarneembare eigenschappen. Het fenotype ontstaat uit het genotype én invloeden van de omgeving.`] },
+      { h: '4. Kruisingen en overerving', p: [
+        `Van elk gen heb je twee versies (allelen), één van elke ouder. Een <strong>dominant allel</strong> bepaalt de eigenschap al als het één keer aanwezig is; een <strong>recessief allel</strong> komt alleen tot uiting als beide allelen recessief zijn. Bij een <strong>monohybride kruising</strong> volg je één eigenschap.`],
+        worked: { q: 'Kruis twee planten met genotype Aa. A (rood) is dominant over a (wit). Welke kleurverhouding krijg je?', steps: ['Zet de allelen in een kruisingsschema: Aa × Aa.', 'De mogelijke combinaties zijn AA, Aa, Aa en aa.', 'AA en Aa geven rood, aa geeft wit.'], ans: 'De verhouding is 3 rood : 1 wit.' } },
+      { h: '5. Natuurlijke selectie', p: [
+        `Individuen binnen een soort verschillen van elkaar. Bij <strong>natuurlijke selectie</strong> overleven en planten de individuen zich voort die het best zijn aangepast aan hun omgeving. Zo geven zij hun gunstige eigenschappen door en verandert een soort langzaam.`] },
+    ],
     [
       { t: 'Cel', d: 'de kleinste bouwsteen van een organisme', k: 'kleinste bouwsteen', fout: ['Weefsel', 'Orgaan'] },
       { t: 'Weefsel', d: 'een groep cellen met dezelfde vorm en functie', k: 'groep gelijke cellen', fout: ['Cel', 'Orgaan'] },
@@ -23,11 +38,20 @@ export default [
       { t: 'Gen', d: 'een stukje DNA met de code voor één eigenschap', k: 'code voor een eigenschap', fout: ['DNA', 'Chromosoom'] },
       { t: 'Genotype', d: 'de erfelijke aanleg (de genen) van een organisme', k: 'de genen', fout: ['Fenotype', 'DNA'] },
       { t: 'Fenotype', d: 'de waarneembare eigenschappen van een organisme', k: 'zichtbare eigenschappen', fout: ['Genotype'] },
+      { t: 'Dominant allel', d: 'een allel dat het fenotype al bepaalt als het aanwezig is', k: 'overheerst altijd', fout: ['Recessief allel'] },
+      { t: 'Recessief allel', d: 'een allel dat alleen tot uiting komt bij twee exemplaren', k: 'alleen dubbel zichtbaar', fout: ['Dominant allel'] },
       { t: 'Natuurlijke selectie', d: 'het beter overleven en voortplanten van best aangepaste individuen', k: 'best aangepasten overleven', fout: ['Fenotype'] },
     ]),
 
   V('B', 'In stand houden van het organisme',
-    `<p>Het lichaam heeft <b>stevigheid</b> en <b>bescherming</b> nodig. De <b>huid</b> beschermt tegen ziekteverwekkers en uitdroging; het <b>skelet</b> geeft steun en vorm. Organismen zijn opgebouwd van cel naar weefsel, orgaan en orgaanstelsel.</p>`,
+    `Het lichaam heeft <strong>stevigheid</strong> en <strong>bescherming</strong> nodig. De <strong>huid</strong> houdt ziekteverwekkers en uitdroging tegen, en het <strong>skelet</strong> geeft steun en vorm.`,
+    [
+      { h: '1. De huid beschermt', p: [
+        `De <strong>huid</strong> is het grootste orgaan en beschermt tegen uitdroging, kou en ziekteverwekkers. Bovenop ligt de <strong>opperhuid</strong>, met daaronder de <strong>lederhuid</strong> vol zenuwen en bloedvaten, en daaronder het <strong>onderhuids bindweefsel</strong> met vet dat warmte vasthoudt.`,
+        `In de huid zitten klieren: een <strong>talgklier</strong> geeft huidvet af dat de huid soepel houdt, en een <strong>zweetklier</strong> geeft zweet af waarmee het lichaam afkoelt.`] },
+      { h: '2. Steun en stevigheid', p: [
+        `Het <strong>skelet</strong> geeft het lichaam vorm en steun en beschermt kwetsbare organen: de <strong>steunfunctie</strong> en de <strong>beschermende functie</strong>. Botten zijn hard, terwijl <strong>kraakbeen</strong> stevig maar buigzaam is, zoals in het oor en de neus.`] },
+    ],
     [
       { t: 'Huid', d: 'het orgaan dat het lichaam bedekt en beschermt', k: 'beschermende bedekking', fout: ['Opperhuid', 'Lederhuid'] },
       { t: 'Opperhuid', d: 'de buitenste laag van de huid', k: 'buitenste huidlaag', fout: ['Lederhuid', 'Huid'] },
@@ -44,7 +68,16 @@ export default [
     ]),
 
   V('C', 'Planten, dieren en hun samenhang',
-    `<p>In een ecosysteem hangen organismen samen via <b>voedselketens</b> en <b>voedselwebben</b>. <b>Producenten</b> (planten) maken met <b>fotosynthese</b> zelf voedsel; <b>consumenten</b> eten anderen; <b>reducenten</b> breken dood materiaal af. Zo lopen de <b>koolstofkringloop</b> en de <b>stikstofkringloop</b> rond.</p>`,
+    `In een ecosysteem hangen organismen met elkaar samen. <strong>Producenten</strong> maken met <strong>fotosynthese</strong> zelf voedsel, <strong>consumenten</strong> eten anderen en <strong>reducenten</strong> breken dood materiaal af. Zo blijven stoffen in een <strong>kringloop</strong> rondgaan.`,
+    [
+      { h: '1. Voedselketens en voedselwebben', p: [
+        `Een <strong>voedselketen</strong> laat zien wie wie eet, in een rechte lijn: van <strong>producent</strong> naar <strong>consument</strong>. In werkelijkheid eten veel dieren van meerdere soorten; als je die ketens met elkaar verbindt, krijg je een <strong>voedselweb</strong>.`,
+        `Je onderscheidt eters naar hun voedsel: een <strong>herbivoor</strong> eet planten, een <strong>carnivoor</strong> eet dieren en een <strong>omnivoor</strong> eet beide.`] },
+      { h: '2. Producenten, consumenten en reducenten', p: [
+        `<strong>Producenten</strong> (groene planten) maken hun eigen voedsel met <strong>fotosynthese</strong>. <strong>Consumenten</strong> kunnen dat niet en eten daarom andere organismen. <strong>Reducenten</strong>, zoals schimmels en bacteriën, breken dode resten af tot stoffen die planten weer kunnen gebruiken.`] },
+      { h: '3. Kringlopen', p: [
+        `Doordat producenten, consumenten en reducenten samenwerken, blijven stoffen rondgaan. In de <strong>koolstofkringloop</strong> gaat koolstof via fotosynthese en verbranding tussen lucht en organismen rond. In de <strong>stikstofkringloop</strong> zorgen bacteriën dat stikstof beschikbaar blijft voor planten.`] },
+    ],
     [
       { t: 'Voedselketen', d: 'een reeks organismen die elkaar opeten, van producent naar consument', k: 'wie eet wie, in een lijn', fout: ['Voedselweb'] },
       { t: 'Voedselweb', d: 'meerdere voedselketens die met elkaar verbonden zijn', k: 'verbonden voedselketens', fout: ['Voedselketen'] },
@@ -62,7 +95,13 @@ export default [
     ]),
 
   V('D', 'Mensen beïnvloeden hun omgeving',
-    `<p>De mens beïnvloedt het milieu door <b>vervuiling</b> en het gebruik van grondstoffen. <b>Duurzaamheid</b> en <b>kringloopdenken</b> proberen die invloed te verkleinen, bijvoorbeeld door <b>recycling</b> en het gebruik van <b>duurzame energie</b>.</p>`,
+    `De mens gebruikt grondstoffen en veroorzaakt <strong>milieuvervuiling</strong>. Met <strong>duurzaamheid</strong> en <strong>kringloopdenken</strong> proberen we die invloed te verkleinen.`,
+    [
+      { h: '1. Vervuiling en klimaat', p: [
+        `Bij <strong>milieuvervuiling</strong> komen schadelijke stoffen in lucht, water of bodem. Door het verbranden van <strong>fossiele brandstoffen</strong> komen <strong>broeikasgassen</strong> vrij die warmte vasthouden: het <strong>broeikaseffect</strong>, waardoor de aarde opwarmt.`] },
+      { h: '2. Duurzaam met grondstoffen', p: [
+        `<strong>Duurzaamheid</strong> betekent zo leven dat er ook voor de toekomst genoeg overblijft. Bij <strong>kringloopdenken</strong> gebruik je grondstoffen steeds opnieuw in plaats van ze weg te gooien; <strong>recycling</strong> en <strong>duurzame energie</strong> horen daarbij. Zo blijft de <strong>biodiversiteit</strong> beter behouden.`] },
+    ],
     [
       { t: 'Milieuvervuiling', d: 'het toevoegen van schadelijke stoffen aan lucht, water of bodem', k: 'schadelijke stoffen lozen', fout: ['Broeikaseffect'] },
       { t: 'Broeikaseffect', d: 'het opwarmen van de aarde door broeikasgassen in de lucht', k: 'aarde warmt op', fout: ['Milieuvervuiling', 'Ozonlaag'] },
@@ -79,7 +118,13 @@ export default [
     ]),
 
   V('E', 'Houding en beweging',
-    `<p>Het <b>skelet</b> en de <b>spieren</b> zorgen samen voor beweging. Botten zijn met elkaar verbonden in <b>gewrichten</b>. Spieren kunnen alleen <b>trekken</b>, dus werken ze in paren: een <b>buigspier</b> en een <b>strekspier</b> (een <b>antagonist</b>).</p>`,
+    `Het <strong>skelet</strong> en de <strong>spieren</strong> zorgen samen voor beweging. Botten zijn met elkaar verbonden in <strong>gewrichten</strong>, en spieren werken in paren omdat ze alleen kunnen trekken.`,
+    [
+      { h: '1. Gewrichten en verbindingen', p: [
+        `Waar twee botten beweegbaar samenkomen, zit een <strong>gewricht</strong>. <strong>Gewrichtsbanden</strong> houden de botten bij elkaar, <strong>kraakbeen</strong> bedekt de uiteinden en <strong>gewrichtssmeer</strong> vermindert de wrijving. Een <strong>scharniergewricht</strong> (knie) buigt in één richting, een <strong>kogelgewricht</strong> (schouder) draait alle kanten op.`] },
+      { h: '2. Spieren werken in paren', p: [
+        `Een <strong>spier</strong> kan alleen trekken, niet duwen. Daarom werken spieren in paren: een <strong>buigspier</strong> buigt een gewricht en de <strong>strekspier</strong> strekt het weer. Zo\'n tegenwerkend paar heet een <strong>antagonist</strong>. Een <strong>pees</strong> verbindt de spier met het bot.`] },
+    ],
     [
       { t: 'Gewricht', d: 'een beweegbare verbinding tussen twee botten', k: 'beweegbare botverbinding', fout: ['Gewrichtsband', 'Pees'] },
       { t: 'Gewrichtsband', d: 'stevig weefsel dat botten in een gewricht bij elkaar houdt', k: 'houdt botten bijeen', fout: ['Pees', 'Gewricht'] },
@@ -96,7 +141,15 @@ export default [
     ]),
 
   V('F', 'Het lichaam in werking',
-    `<p>Organen werken samen om het lichaam draaiende te houden. De <b>vertering</b> maakt voedsel klein, het <b>bloed</b> vervoert stoffen via het <b>hart</b>, de <b>longen</b> zorgen voor <b>gaswisseling</b>, de <b>nieren</b> reinigen het bloed en het <b>zenuwstelsel</b> regelt en stuurt.</p>`,
+    `Organen werken samen om je lichaam draaiende te houden: de <strong>vertering</strong> maakt voedsel klein, het <strong>bloed</strong> vervoert stoffen, de <strong>longen</strong> zorgen voor <strong>gaswisseling</strong> en het <strong>zenuwstelsel</strong> stuurt alles aan.`,
+    [
+      { h: '1. Vertering en opname', p: [
+        `Bij de <strong>vertering</strong> wordt voedsel klein gemaakt zodat het in het bloed kan worden opgenomen. <strong>Enzymen</strong> versnellen dat proces. In de dunne darm nemen <strong>darmvlokken</strong> de voedingsstoffen op in het bloed.`] },
+      { h: '2. Bloedsomloop', p: [
+        `Het <strong>hart</strong> pompt het bloed rond. <strong>Slagaders</strong> voeren bloed van het hart af, <strong>aders</strong> voeren het naar het hart toe, en in de dunne <strong>haarvaten</strong> vindt de uitwisseling van stoffen met de cellen plaats.`] },
+      { h: '3. Gaswisseling en regeling', p: [
+        `In de <strong>longblaasjes</strong> vindt <strong>gaswisseling</strong> plaats: zuurstof gaat het bloed in, koolstofdioxide gaat eruit. De <strong>nieren</strong> filteren afvalstoffen uit het bloed. Het <strong>zenuwstelsel</strong> stuurt snel met prikkels, terwijl <strong>hormonen</strong> langzamer sturen via het bloed.`] },
+    ],
     [
       { t: 'Vertering', d: 'het klein maken van voedsel zodat het opgenomen kan worden', k: 'voedsel klein maken', fout: ['Opname', 'Verbranding'] },
       { t: 'Enzym', d: 'een stof die een reactie zoals vertering versnelt', k: 'versnelt een reactie', fout: ['Hormoon'] },
@@ -114,7 +167,14 @@ export default [
     ]),
 
   V('G', 'Bio-wetenschappen en maatschappij',
-    `<p>Mensen gebruiken organismen in de <b>biotechnologie</b>: <b>gist</b> en <b>melkzuurbacteriën</b> in voeding, <b>schimmels</b> voor <b>antibiotica</b>, en <b>genetische modificatie</b> om bijvoorbeeld <b>insuline</b> te maken. Zulke technieken hebben voordelen én nadelen.</p>`,
+    `Mensen zetten organismen aan het werk in de <strong>biotechnologie</strong>: <strong>gist</strong> en <strong>melkzuurbacteriën</strong> in voeding, <strong>schimmels</strong> voor <strong>antibiotica</strong> en <strong>genetische modificatie</strong> om stoffen zoals <strong>insuline</strong> te maken.`,
+    [
+      { h: '1. Micro-organismen in voeding', p: [
+        `<strong>Biotechnologie</strong> is het gebruik van organismen om producten te maken. <strong>Gist</strong> is een schimmel die suiker omzet en deeg laat rijzen; <strong>melkzuurbacteriën</strong> maken van melk yoghurt en kaas. Dit omzetten zonder zuurstof heet <strong>gisting</strong>.`] },
+      { h: '2. Medicijnen en modificatie', p: [
+        `Sommige <strong>schimmels</strong> maken <strong>antibiotica</strong>, stoffen die bacteriën doden of hun groei remmen. Bij <strong>genetische modificatie</strong> verander je gericht het DNA van een organisme, bijvoorbeeld om bacteriën <strong>insuline</strong> te laten maken voor mensen met diabetes.`,
+        `Genetische modificatie heeft voor- en nadelen. <strong>Gm-gewassen</strong> kunnen bijvoorbeeld beter tegen droogte, maar er zijn ook zorgen over gevolgen voor natuur en gezondheid. Overmatig antibioticagebruik leidt tot <strong>resistentie</strong>.`] },
+    ],
     [
       { t: 'Biotechnologie', d: 'het gebruik van organismen om producten te maken', k: 'organismen als fabriekje', fout: ['Genetische modificatie'] },
       { t: 'Gist', d: 'een schimmel die suiker omzet en deeg laat rijzen', k: 'laat deeg rijzen', fout: ['Melkzuurbacterie', 'Schimmel'] },

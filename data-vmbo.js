@@ -5076,7 +5076,7 @@ var VAKKEN_VMBO = [
        "Cel",
        "Weefsel",
        "Orgaan",
-       "Celmembraan"
+       "Recessief allel"
       ],
       "c": 0,
       "d": 3,
@@ -5085,26 +5085,26 @@ var VAKKEN_VMBO = [
        "Klopt, dit is «Cel».",
        "«Weefsel» betekent groep gelijke cellen.",
        "«Orgaan» betekent meerdere weefsels met een taak.",
-       "«Celmembraan» betekent omhulsel van de cel."
+       "«Recessief allel» betekent alleen dubbel zichtbaar."
       ],
       "uh": "Onthoud: «Cel» = kleinste bouwsteen."
      },
      {
       "v": "Welke term hoort bij \"kleinste bouwsteen\"?",
       "o": [
-       "Celmembraan",
+       "Recessief allel",
        "Cel",
-       "Cytoplasma",
-       "Fenotype"
+       "Celwand",
+       "Celmembraan"
       ],
       "c": 1,
       "d": 2,
       "u": "«Cel»: de kleinste bouwsteen van een organisme.",
       "uo": [
-       "«Celmembraan» betekent omhulsel van de cel.",
+       "«Recessief allel» betekent alleen dubbel zichtbaar.",
        "Klopt, «Cel» past hierbij.",
-       "«Cytoplasma» betekent vloeistof in de cel.",
-       "«Fenotype» betekent zichtbare eigenschappen."
+       "«Celwand» betekent stevige laag bij planten.",
+       "«Celmembraan» betekent omhulsel van de cel."
       ],
       "uh": "Onthoud: «Cel» = kleinste bouwsteen."
      },
@@ -5114,7 +5114,7 @@ var VAKKEN_VMBO = [
        "een groep cellen met dezelfde vorm en functie",
        "een structuur van meerdere weefsels met een eigen taak",
        "de kleinste bouwsteen van een organisme",
-       "het dunne laagje dat de cel omsluit en stoffen doorlaat"
+       "een allel dat alleen tot uiting komt bij twee exemplaren"
       ],
       "c": 2,
       "d": 1,
@@ -5123,7 +5123,7 @@ var VAKKEN_VMBO = [
        "Dat is «Weefsel».",
        "Dat is «Orgaan».",
        "Klopt: kleinste bouwsteen.",
-       "Dat is «Celmembraan»."
+       "Dat is «Recessief allel»."
       ],
       "uh": "Onthoud: «Cel» = kleinste bouwsteen."
      },
@@ -5132,7 +5132,7 @@ var VAKKEN_VMBO = [
       "o": [
        "Cel",
        "Orgaan",
-       "Fenotype",
+       "Genotype",
        "Weefsel"
       ],
       "c": 3,
@@ -5141,7 +5141,7 @@ var VAKKEN_VMBO = [
       "uo": [
        "«Cel» betekent kleinste bouwsteen.",
        "«Orgaan» betekent meerdere weefsels met een taak.",
-       "«Fenotype» betekent zichtbare eigenschappen.",
+       "«Genotype» betekent de genen.",
        "Klopt, dit is «Weefsel»."
       ],
       "uh": "Onthoud: «Weefsel» = groep gelijke cellen."
@@ -5150,18 +5150,18 @@ var VAKKEN_VMBO = [
       "v": "Welke term hoort bij \"groep gelijke cellen\"?",
       "o": [
        "Weefsel",
-       "Fenotype",
-       "Bladgroenkorrel",
-       "DNA"
+       "Genotype",
+       "Gen",
+       "Recessief allel"
       ],
       "c": 0,
       "d": 2,
       "u": "«Weefsel»: een groep cellen met dezelfde vorm en functie.",
       "uo": [
        "Klopt, «Weefsel» past hierbij.",
-       "«Fenotype» betekent zichtbare eigenschappen.",
-       "«Bladgroenkorrel» betekent doet fotosynthese.",
-       "«DNA» betekent erfelijke informatie."
+       "«Genotype» betekent de genen.",
+       "«Gen» betekent code voor een eigenschap.",
+       "«Recessief allel» betekent alleen dubbel zichtbaar."
       ],
       "uh": "Onthoud: «Weefsel» = groep gelijke cellen."
      },
@@ -5171,7 +5171,7 @@ var VAKKEN_VMBO = [
        "de kleinste bouwsteen van een organisme",
        "een groep cellen met dezelfde vorm en functie",
        "een structuur van meerdere weefsels met een eigen taak",
-       "de waarneembare eigenschappen van een organisme"
+       "de erfelijke aanleg (de genen) van een organisme"
       ],
       "c": 1,
       "d": 1,
@@ -5180,7 +5180,7 @@ var VAKKEN_VMBO = [
        "Dat is «Cel».",
        "Klopt: groep gelijke cellen.",
        "Dat is «Orgaan».",
-       "Dat is «Fenotype»."
+       "Dat is «Genotype»."
       ],
       "uh": "Onthoud: «Weefsel» = groep gelijke cellen."
      },
@@ -5190,7 +5190,7 @@ var VAKKEN_VMBO = [
        "Weefsel",
        "Orgaanstelsel",
        "Orgaan",
-       "Celmembraan"
+       "Recessief allel"
       ],
       "c": 2,
       "d": 3,
@@ -5199,25 +5199,25 @@ var VAKKEN_VMBO = [
        "«Weefsel» betekent groep gelijke cellen.",
        "«Orgaanstelsel» betekent samenwerkende organen.",
        "Klopt, dit is «Orgaan».",
-       "«Celmembraan» betekent omhulsel van de cel."
+       "«Recessief allel» betekent alleen dubbel zichtbaar."
       ],
       "uh": "Onthoud: «Orgaan» = meerdere weefsels met een taak."
      },
      {
       "v": "Welke term hoort bij \"meerdere weefsels met een taak\"?",
       "o": [
-       "Celmembraan",
+       "Recessief allel",
+       "Cytoplasma",
        "Celkern",
-       "Natuurlijke selectie",
        "Orgaan"
       ],
       "c": 3,
       "d": 2,
       "u": "«Orgaan»: een structuur van meerdere weefsels met een eigen taak.",
       "uo": [
-       "«Celmembraan» betekent omhulsel van de cel.",
+       "«Recessief allel» betekent alleen dubbel zichtbaar.",
+       "«Cytoplasma» betekent vloeistof in de cel.",
        "«Celkern» betekent bevat het DNA.",
-       "«Natuurlijke selectie» betekent best aangepasten overleven.",
        "Klopt, «Orgaan» past hierbij."
       ],
       "uh": "Onthoud: «Orgaan» = meerdere weefsels met een taak."
@@ -5228,7 +5228,7 @@ var VAKKEN_VMBO = [
        "een structuur van meerdere weefsels met een eigen taak",
        "een groep cellen met dezelfde vorm en functie",
        "organen die samen één functie uitvoeren",
-       "het dunne laagje dat de cel omsluit en stoffen doorlaat"
+       "een allel dat alleen tot uiting komt bij twee exemplaren"
       ],
       "c": 0,
       "d": 1,
@@ -5237,54 +5237,54 @@ var VAKKEN_VMBO = [
        "Klopt: meerdere weefsels met een taak.",
        "Dat is «Weefsel».",
        "Dat is «Orgaanstelsel».",
-       "Dat is «Celmembraan»."
+       "Dat is «Recessief allel»."
       ],
       "uh": "Onthoud: «Orgaan» = meerdere weefsels met een taak."
      },
      {
-      "v": "Welk begrip hoort bij: \"het celonderdeel waarin het DNA ligt\"?",
+      "v": "Welk begrip hoort bij: \"het dunne laagje dat de cel omsluit en stoffen doorlaat\"?",
       "o": [
-       "Cytoplasma",
-       "Celkern",
+       "Celwand",
        "Celmembraan",
-       "Fenotype"
+       "Celkern",
+       "Natuurlijke selectie"
       ],
       "c": 1,
       "d": 3,
-      "u": "«Celkern»: het celonderdeel waarin het DNA ligt.",
+      "u": "«Celmembraan»: het dunne laagje dat de cel omsluit en stoffen doorlaat.",
       "uo": [
-       "«Cytoplasma» betekent vloeistof in de cel.",
-       "Klopt, dit is «Celkern».",
-       "«Celmembraan» betekent omhulsel van de cel.",
-       "«Fenotype» betekent zichtbare eigenschappen."
+       "«Celwand» betekent stevige laag bij planten.",
+       "Klopt, dit is «Celmembraan».",
+       "«Celkern» betekent bevat het DNA.",
+       "«Natuurlijke selectie» betekent best aangepasten overleven."
       ],
-      "uh": "Onthoud: «Celkern» = bevat het DNA."
+      "uh": "Onthoud: «Celmembraan» = omhulsel van de cel."
      },
      {
-      "v": "Welke term hoort bij \"omhulsel van de cel\"?",
+      "v": "Welke term hoort bij \"samenwerkende organen\"?",
       "o": [
-       "Weefsel",
-       "Vacuole",
        "Celmembraan",
-       "Bladgroenkorrel"
+       "Gen",
+       "Orgaanstelsel",
+       "Natuurlijke selectie"
       ],
       "c": 2,
       "d": 2,
-      "u": "«Celmembraan»: het dunne laagje dat de cel omsluit en stoffen doorlaat.",
+      "u": "«Orgaanstelsel»: organen die samen één functie uitvoeren.",
       "uo": [
-       "«Weefsel» betekent groep gelijke cellen.",
-       "«Vacuole» betekent vochtblaas in plantencel.",
-       "Klopt, «Celmembraan» past hierbij.",
-       "«Bladgroenkorrel» betekent doet fotosynthese."
+       "«Celmembraan» betekent omhulsel van de cel.",
+       "«Gen» betekent code voor een eigenschap.",
+       "Klopt, «Orgaanstelsel» past hierbij.",
+       "«Natuurlijke selectie» betekent best aangepasten overleven."
       ],
-      "uh": "Onthoud: «Celmembraan» = omhulsel van de cel."
+      "uh": "Onthoud: «Orgaanstelsel» = samenwerkende organen."
      },
      {
       "v": "Wat betekent «Orgaanstelsel»?",
       "o": [
        "een structuur van meerdere weefsels met een eigen taak",
        "een groep cellen met dezelfde vorm en functie",
-       "de vloeistof in de cel waarin de onderdelen liggen",
+       "het dunne laagje dat de cel omsluit en stoffen doorlaat",
        "organen die samen één functie uitvoeren"
       ],
       "c": 3,
@@ -5293,46 +5293,103 @@ var VAKKEN_VMBO = [
       "uo": [
        "Dat is «Orgaan».",
        "Dat is «Weefsel».",
-       "Dat is «Cytoplasma».",
+       "Dat is «Celmembraan».",
        "Klopt: samenwerkende organen."
       ],
       "uh": "Onthoud: «Orgaanstelsel» = samenwerkende organen."
      },
      {
-      "v": "Welk begrip hoort bij: \"de stevige buitenlaag om een plantencel\"?",
+      "v": "Welk begrip hoort bij: \"het celonderdeel waarin het DNA ligt\"?",
       "o": [
-       "Celwand",
+       "Celkern",
+       "Cytoplasma",
        "Celmembraan",
-       "Chromosoom",
-       "Fenotype"
+       "Genotype"
       ],
       "c": 0,
       "d": 3,
+      "u": "«Celkern»: het celonderdeel waarin het DNA ligt.",
+      "uo": [
+       "Klopt, dit is «Celkern».",
+       "«Cytoplasma» betekent vloeistof in de cel.",
+       "«Celmembraan» betekent omhulsel van de cel.",
+       "«Genotype» betekent de genen."
+      ],
+      "uh": "Onthoud: «Celkern» = bevat het DNA."
+     },
+     {
+      "v": "Welke term hoort bij \"omhulsel van de cel\"?",
+      "o": [
+       "Natuurlijke selectie",
+       "Celmembraan",
+       "Gen",
+       "Recessief allel"
+      ],
+      "c": 1,
+      "d": 2,
+      "u": "«Celmembraan»: het dunne laagje dat de cel omsluit en stoffen doorlaat.",
+      "uo": [
+       "«Natuurlijke selectie» betekent best aangepasten overleven.",
+       "Klopt, «Celmembraan» past hierbij.",
+       "«Gen» betekent code voor een eigenschap.",
+       "«Recessief allel» betekent alleen dubbel zichtbaar."
+      ],
+      "uh": "Onthoud: «Celmembraan» = omhulsel van de cel."
+     },
+     {
+      "v": "Wat betekent «Celmembraan»?",
+      "o": [
+       "de stevige buitenlaag om een plantencel",
+       "het celonderdeel waarin het DNA ligt",
+       "het dunne laagje dat de cel omsluit en stoffen doorlaat",
+       "het beter overleven en voortplanten van best aangepaste individuen"
+      ],
+      "c": 2,
+      "d": 1,
+      "u": "«Celmembraan»: het dunne laagje dat de cel omsluit en stoffen doorlaat.",
+      "uo": [
+       "Dat is «Celwand».",
+       "Dat is «Celkern».",
+       "Klopt: omhulsel van de cel.",
+       "Dat is «Natuurlijke selectie»."
+      ],
+      "uh": "Onthoud: «Celmembraan» = omhulsel van de cel."
+     },
+     {
+      "v": "Welk begrip hoort bij: \"de stevige buitenlaag om een plantencel\"?",
+      "o": [
+       "Celmembraan",
+       "Genotype",
+       "Cytoplasma",
+       "Celwand"
+      ],
+      "c": 3,
+      "d": 3,
       "u": "«Celwand»: de stevige buitenlaag om een plantencel.",
       "uo": [
-       "Klopt, dit is «Celwand».",
        "«Celmembraan» betekent omhulsel van de cel.",
-       "«Chromosoom» betekent opgerold DNA.",
-       "«Fenotype» betekent zichtbare eigenschappen."
+       "«Genotype» betekent de genen.",
+       "«Cytoplasma» betekent vloeistof in de cel.",
+       "Klopt, dit is «Celwand»."
       ],
       "uh": "Onthoud: «Celwand» = stevige laag bij planten."
      },
      {
       "v": "Welke term hoort bij \"bevat het DNA\"?",
       "o": [
-       "Fenotype",
        "Celkern",
-       "Bladgroenkorrel",
-       "DNA"
+       "Genotype",
+       "Gen",
+       "Recessief allel"
       ],
-      "c": 1,
+      "c": 0,
       "d": 2,
       "u": "«Celkern»: het celonderdeel waarin het DNA ligt.",
       "uo": [
-       "«Fenotype» betekent zichtbare eigenschappen.",
        "Klopt, «Celkern» past hierbij.",
-       "«Bladgroenkorrel» betekent doet fotosynthese.",
-       "«DNA» betekent erfelijke informatie."
+       "«Genotype» betekent de genen.",
+       "«Gen» betekent code voor een eigenschap.",
+       "«Recessief allel» betekent alleen dubbel zichtbaar."
       ],
       "uh": "Onthoud: «Celkern» = bevat het DNA."
      },
@@ -5340,18 +5397,18 @@ var VAKKEN_VMBO = [
       "v": "Wat betekent «Celkern»?",
       "o": [
        "de vloeistof in de cel waarin de onderdelen liggen",
-       "het dunne laagje dat de cel omsluit en stoffen doorlaat",
        "het celonderdeel waarin het DNA ligt",
-       "de waarneembare eigenschappen van een organisme"
+       "het dunne laagje dat de cel omsluit en stoffen doorlaat",
+       "de erfelijke aanleg (de genen) van een organisme"
       ],
-      "c": 2,
+      "c": 1,
       "d": 1,
       "u": "«Celkern»: het celonderdeel waarin het DNA ligt.",
       "uo": [
        "Dat is «Cytoplasma».",
-       "Dat is «Celmembraan».",
        "Klopt: bevat het DNA.",
-       "Dat is «Fenotype»."
+       "Dat is «Celmembraan».",
+       "Dat is «Genotype»."
       ],
       "uh": "Onthoud: «Celkern» = bevat het DNA."
      },
@@ -5360,207 +5417,150 @@ var VAKKEN_VMBO = [
       "o": [
        "Bladgroenkorrel",
        "Cytoplasma",
-       "Fenotype",
-       "Vacuole"
+       "Vacuole",
+       "Genotype"
       ],
-      "c": 3,
+      "c": 2,
       "d": 3,
       "u": "«Vacuole»: een grote blaas met vocht in een plantencel.",
       "uo": [
        "«Bladgroenkorrel» betekent doet fotosynthese.",
        "«Cytoplasma» betekent vloeistof in de cel.",
-       "«Fenotype» betekent zichtbare eigenschappen.",
-       "Klopt, dit is «Vacuole»."
+       "Klopt, dit is «Vacuole».",
+       "«Genotype» betekent de genen."
       ],
       "uh": "Onthoud: «Vacuole» = vochtblaas in plantencel."
      },
      {
       "v": "Welke term hoort bij \"vloeistof in de cel\"?",
       "o": [
-       "Cytoplasma",
-       "Weefsel",
-       "Bladgroenkorrel",
-       "Natuurlijke selectie"
+       "DNA",
+       "Natuurlijke selectie",
+       "Orgaan",
+       "Cytoplasma"
       ],
-      "c": 0,
+      "c": 3,
       "d": 2,
       "u": "«Cytoplasma»: de vloeistof in de cel waarin de onderdelen liggen.",
       "uo": [
-       "Klopt, «Cytoplasma» past hierbij.",
-       "«Weefsel» betekent groep gelijke cellen.",
-       "«Bladgroenkorrel» betekent doet fotosynthese.",
-       "«Natuurlijke selectie» betekent best aangepasten overleven."
+       "«DNA» betekent erfelijke informatie.",
+       "«Natuurlijke selectie» betekent best aangepasten overleven.",
+       "«Orgaan» betekent meerdere weefsels met een taak.",
+       "Klopt, «Cytoplasma» past hierbij."
       ],
       "uh": "Onthoud: «Cytoplasma» = vloeistof in de cel."
      },
      {
       "v": "Wat betekent «Celwand»?",
       "o": [
-       "het dunne laagje dat de cel omsluit en stoffen doorlaat",
        "de stevige buitenlaag om een plantencel",
-       "een streng van sterk opgerold DNA in de celkern",
-       "de waarneembare eigenschappen van een organisme"
+       "het dunne laagje dat de cel omsluit en stoffen doorlaat",
+       "de erfelijke aanleg (de genen) van een organisme",
+       "de vloeistof in de cel waarin de onderdelen liggen"
       ],
-      "c": 1,
+      "c": 0,
       "d": 1,
       "u": "«Celwand»: de stevige buitenlaag om een plantencel.",
       "uo": [
-       "Dat is «Celmembraan».",
        "Klopt: stevige laag bij planten.",
-       "Dat is «Chromosoom».",
-       "Dat is «Fenotype»."
+       "Dat is «Celmembraan».",
+       "Dat is «Genotype».",
+       "Dat is «Cytoplasma»."
       ],
       "uh": "Onthoud: «Celwand» = stevige laag bij planten."
      },
      {
-      "v": "Welk begrip hoort bij: \"de stof met de erfelijke informatie\"?",
+      "v": "Welk begrip hoort bij: \"een streng van sterk opgerold DNA in de celkern\"?",
       "o": [
        "Gen",
        "Chromosoom",
        "DNA",
-       "Weefsel"
+       "Bladgroenkorrel"
       ],
-      "c": 2,
+      "c": 1,
       "d": 3,
-      "u": "«DNA»: de stof met de erfelijke informatie.",
+      "u": "«Chromosoom»: een streng van sterk opgerold DNA in de celkern.",
       "uo": [
        "«Gen» betekent code voor een eigenschap.",
-       "«Chromosoom» betekent opgerold DNA.",
-       "Klopt, dit is «DNA».",
-       "«Weefsel» betekent groep gelijke cellen."
+       "Klopt, dit is «Chromosoom».",
+       "«DNA» betekent erfelijke informatie.",
+       "«Bladgroenkorrel» betekent doet fotosynthese."
       ],
-      "uh": "Onthoud: «DNA» = erfelijke informatie."
+      "uh": "Onthoud: «Chromosoom» = opgerold DNA."
      },
      {
       "v": "Welke term hoort bij \"stevige laag bij planten\"?",
       "o": [
-       "Chromosoom",
-       "Fenotype",
-       "Bladgroenkorrel",
-       "Celwand"
+       "Genotype",
+       "Cytoplasma",
+       "Celwand",
+       "Chromosoom"
       ],
-      "c": 3,
+      "c": 2,
       "d": 2,
       "u": "«Celwand»: de stevige buitenlaag om een plantencel.",
       "uo": [
-       "«Chromosoom» betekent opgerold DNA.",
-       "«Fenotype» betekent zichtbare eigenschappen.",
-       "«Bladgroenkorrel» betekent doet fotosynthese.",
-       "Klopt, «Celwand» past hierbij."
+       "«Genotype» betekent de genen.",
+       "«Cytoplasma» betekent vloeistof in de cel.",
+       "Klopt, «Celwand» past hierbij.",
+       "«Chromosoom» betekent opgerold DNA."
       ],
       "uh": "Onthoud: «Celwand» = stevige laag bij planten."
      },
      {
-      "v": "Wat betekent «Vacuole»?",
+      "v": "Wat betekent «Bladgroenkorrel»?",
       "o": [
        "een grote blaas met vocht in een plantencel",
-       "plantencelonderdeel dat de fotosynthese uitvoert",
-       "de vloeistof in de cel waarin de onderdelen liggen",
-       "de waarneembare eigenschappen van een organisme"
+       "de stevige buitenlaag om een plantencel",
+       "de erfelijke aanleg (de genen) van een organisme",
+       "plantencelonderdeel dat de fotosynthese uitvoert"
       ],
-      "c": 0,
+      "c": 3,
       "d": 1,
-      "u": "«Vacuole»: een grote blaas met vocht in een plantencel.",
-      "uo": [
-       "Klopt: vochtblaas in plantencel.",
-       "Dat is «Bladgroenkorrel».",
-       "Dat is «Cytoplasma».",
-       "Dat is «Fenotype»."
-      ],
-      "uh": "Onthoud: «Vacuole» = vochtblaas in plantencel."
-     },
-     {
-      "v": "Welk begrip hoort bij: \"een stukje DNA met de code voor één eigenschap\"?",
-      "o": [
-       "DNA",
-       "Gen",
-       "Chromosoom",
-       "Weefsel"
-      ],
-      "c": 1,
-      "d": 3,
-      "u": "«Gen»: een stukje DNA met de code voor één eigenschap.",
-      "uo": [
-       "«DNA» betekent erfelijke informatie.",
-       "Klopt, dit is «Gen».",
-       "«Chromosoom» betekent opgerold DNA.",
-       "«Weefsel» betekent groep gelijke cellen."
-      ],
-      "uh": "Onthoud: «Gen» = code voor een eigenschap."
-     },
-     {
-      "v": "Welke term hoort bij \"doet fotosynthese\"?",
-      "o": [
-       "Celkern",
-       "Chromosoom",
-       "Bladgroenkorrel",
-       "Natuurlijke selectie"
-      ],
-      "c": 2,
-      "d": 2,
       "u": "«Bladgroenkorrel»: plantencelonderdeel dat de fotosynthese uitvoert.",
       "uo": [
-       "«Celkern» betekent bevat het DNA.",
-       "«Chromosoom» betekent opgerold DNA.",
-       "Klopt, «Bladgroenkorrel» past hierbij.",
-       "«Natuurlijke selectie» betekent best aangepasten overleven."
+       "Dat is «Vacuole».",
+       "Dat is «Celwand».",
+       "Dat is «Genotype».",
+       "Klopt: doet fotosynthese."
       ],
       "uh": "Onthoud: «Bladgroenkorrel» = doet fotosynthese."
      },
      {
-      "v": "Wat betekent «DNA»?",
+      "v": "Welk begrip hoort bij: \"de stof met de erfelijke informatie\"?",
       "o": [
-       "een stukje DNA met de code voor één eigenschap",
-       "een streng van sterk opgerold DNA in de celkern",
-       "een groep cellen met dezelfde vorm en functie",
-       "de stof met de erfelijke informatie"
+       "DNA",
+       "Gen",
+       "Chromosoom",
+       "Recessief allel"
       ],
-      "c": 3,
-      "d": 1,
+      "c": 0,
+      "d": 3,
       "u": "«DNA»: de stof met de erfelijke informatie.",
       "uo": [
-       "Dat is «Gen».",
-       "Dat is «Chromosoom».",
-       "Dat is «Weefsel».",
-       "Klopt: erfelijke informatie."
+       "Klopt, dit is «DNA».",
+       "«Gen» betekent code voor een eigenschap.",
+       "«Chromosoom» betekent opgerold DNA.",
+       "«Recessief allel» betekent alleen dubbel zichtbaar."
       ],
       "uh": "Onthoud: «DNA» = erfelijke informatie."
      },
      {
-      "v": "Welk begrip hoort bij: \"de erfelijke aanleg (de genen) van een organisme\"?",
-      "o": [
-       "Genotype",
-       "Fenotype",
-       "DNA",
-       "Weefsel"
-      ],
-      "c": 0,
-      "d": 3,
-      "u": "«Genotype»: de erfelijke aanleg (de genen) van een organisme.",
-      "uo": [
-       "Klopt, dit is «Genotype».",
-       "«Fenotype» betekent zichtbare eigenschappen.",
-       "«DNA» betekent erfelijke informatie.",
-       "«Weefsel» betekent groep gelijke cellen."
-      ],
-      "uh": "Onthoud: «Genotype» = de genen."
-     },
-     {
       "v": "Welke term hoort bij \"vochtblaas in plantencel\"?",
       "o": [
-       "Fenotype",
+       "Genotype",
        "Vacuole",
-       "Celkern",
-       "DNA"
+       "Gen",
+       "Recessief allel"
       ],
       "c": 1,
       "d": 2,
       "u": "«Vacuole»: een grote blaas met vocht in een plantencel.",
       "uo": [
-       "«Fenotype» betekent zichtbare eigenschappen.",
+       "«Genotype» betekent de genen.",
        "Klopt, «Vacuole» past hierbij.",
-       "«Celkern» betekent bevat het DNA.",
-       "«DNA» betekent erfelijke informatie."
+       "«Gen» betekent code voor een eigenschap.",
+       "«Recessief allel» betekent alleen dubbel zichtbaar."
       ],
       "uh": "Onthoud: «Vacuole» = vochtblaas in plantencel."
      }
@@ -5627,11 +5627,19 @@ var VAKKEN_VMBO = [
       "d": "de waarneembare eigenschappen van een organisme"
      },
      {
+      "t": "Dominant allel",
+      "d": "een allel dat het fenotype al bepaalt als het aanwezig is"
+     },
+     {
+      "t": "Recessief allel",
+      "d": "een allel dat alleen tot uiting komt bij twee exemplaren"
+     },
+     {
       "t": "Natuurlijke selectie",
       "d": "het beter overleven en voortplanten van best aangepaste individuen"
      }
     ],
-    "sam": "<p>Alle organismen zijn opgebouwd uit <b>cellen</b>. Cellen met dezelfde vorm en functie vormen een <b>weefsel</b>, weefsels vormen een <b>orgaan</b> en organen die samenwerken een <b>orgaanstelsel</b>. In de <b>celkern</b> ligt het <b>DNA</b>; een stukje DNA met de code voor één eigenschap heet een <b>gen</b>. Het geheel aan genen is het <b>genotype</b>, de zichtbare eigenschappen zijn het <b>fenotype</b>.</p><div class=\"sam-head\">Kernbegrippen</div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Cel</div><div class=\"sam-definitie-body\">de kleinste bouwsteen van een organisme.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Weefsel</div><div class=\"sam-definitie-body\">een groep cellen met dezelfde vorm en functie.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Orgaan</div><div class=\"sam-definitie-body\">een structuur van meerdere weefsels met een eigen taak.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Orgaanstelsel</div><div class=\"sam-definitie-body\">organen die samen één functie uitvoeren.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Celmembraan</div><div class=\"sam-definitie-body\">het dunne laagje dat de cel omsluit en stoffen doorlaat.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Celkern</div><div class=\"sam-definitie-body\">het celonderdeel waarin het DNA ligt.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Cytoplasma</div><div class=\"sam-definitie-body\">de vloeistof in de cel waarin de onderdelen liggen.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Celwand</div><div class=\"sam-definitie-body\">de stevige buitenlaag om een plantencel.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Bladgroenkorrel</div><div class=\"sam-definitie-body\">plantencelonderdeel dat de fotosynthese uitvoert.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Vacuole</div><div class=\"sam-definitie-body\">een grote blaas met vocht in een plantencel.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Chromosoom</div><div class=\"sam-definitie-body\">een streng van sterk opgerold DNA in de celkern.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">DNA</div><div class=\"sam-definitie-body\">de stof met de erfelijke informatie.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Gen</div><div class=\"sam-definitie-body\">een stukje DNA met de code voor één eigenschap.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Genotype</div><div class=\"sam-definitie-body\">de erfelijke aanleg (de genen) van een organisme.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Fenotype</div><div class=\"sam-definitie-body\">de waarneembare eigenschappen van een organisme.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Natuurlijke selectie</div><div class=\"sam-definitie-body\">het beter overleven en voortplanten van best aangepaste individuen.</div></div><div class=\"sam-onthoud\"><b>Let op de verschillen.</b> <b>«Cel»</b> is kleinste bouwsteen, terwijl <b>«Weefsel»</b> groep gelijke cellen is. <b>«Orgaan»</b> is meerdere weefsels met een taak, terwijl <b>«Weefsel»</b> groep gelijke cellen is. <b>«Orgaanstelsel»</b> is samenwerkende organen, terwijl <b>«Orgaan»</b> meerdere weefsels met een taak is. <b>«Celmembraan»</b> is omhulsel van de cel, terwijl <b>«Celwand»</b> stevige laag bij planten is.</div>"
+    "sam": "<div class=\"sam-intro\">Alle levende wezens bestaan uit <strong>cellen</strong>. In dit domein leer je hoe cellen zijn opgebouwd, waarin een plantencel verschilt van een dierlijke cel, en hoe eigenschappen via <strong>DNA</strong> worden doorgegeven bij een <strong>monohybride kruising</strong>.</div><div class=\"sam-head\">1. Van cel tot organisme</div><p>De <strong>cel</strong> is de kleinste bouwsteen van een organisme. Cellen met dezelfde vorm en functie vormen samen een <strong>weefsel</strong> (bijvoorbeeld spierweefsel). Meerdere weefsels die samen een taak uitvoeren vormen een <strong>orgaan</strong>, zoals het hart. Organen die samenwerken aan één functie vormen een <strong>orgaanstelsel</strong>, zoals het bloedvatenstelsel.</p><p>Deze volgorde van klein naar groot (cel → weefsel → orgaan → orgaanstelsel → organisme) heet de organisatie van het lichaam. Elke laag is opgebouwd uit de laag eronder.</p><div class=\"sam-head\">2. De bouw van een cel</div><p>Elke cel wordt omsloten door een <strong>celmembraan</strong> dat bepaalt welke stoffen erin en eruit gaan. In de <strong>celkern</strong> ligt het <strong>DNA</strong>. De rest van de cel is gevuld met <strong>cytoplasma</strong>, de vloeistof waarin de celonderdelen liggen.</p><p>Een plantencel heeft drie extra onderdelen die een dierlijke cel niet heeft: een stevige <strong>celwand</strong>, <strong>bladgroenkorrels</strong> voor de fotosynthese en een grote <strong>vacuole</strong> met vocht.</p><div class=\"sam-head\">3. DNA, genen en chromosomen</div><p>Het <strong>DNA</strong> bevat alle erfelijke informatie. Een klein stukje DNA met de code voor één eigenschap heet een <strong>gen</strong>. Als DNA sterk wordt opgerold, vormt het een <strong>chromosoom</strong>; die zijn zichtbaar bij een celdeling.</p><p>Het <strong>genotype</strong> is de erfelijke aanleg (alle genen), het <strong>fenotype</strong> is wat je daarvan ziet: de waarneembare eigenschappen. Het fenotype ontstaat uit het genotype én invloeden van de omgeving.</p><div class=\"sam-head\">4. Kruisingen en overerving</div><p>Van elk gen heb je twee versies (allelen), één van elke ouder. Een <strong>dominant allel</strong> bepaalt de eigenschap al als het één keer aanwezig is; een <strong>recessief allel</strong> komt alleen tot uiting als beide allelen recessief zijn. Bij een <strong>monohybride kruising</strong> volg je één eigenschap.</p><div class=\"sam-worked\"><div class=\"sam-worked-h\">✍️ Voorbeeldopgave</div><div class=\"sam-worked-q\">Kruis twee planten met genotype Aa. A (rood) is dominant over a (wit). Welke kleurverhouding krijg je?</div><ol class=\"sam-worked-steps\"><li>Zet de allelen in een kruisingsschema: Aa × Aa.</li><li>De mogelijke combinaties zijn AA, Aa, Aa en aa.</li><li>AA en Aa geven rood, aa geeft wit.</li></ol><div class=\"sam-worked-ans\">✅ De verhouding is 3 rood : 1 wit.</div></div><div class=\"sam-head\">5. Natuurlijke selectie</div><p>Individuen binnen een soort verschillen van elkaar. Bij <strong>natuurlijke selectie</strong> overleven en planten de individuen zich voort die het best zijn aangepast aan hun omgeving. Zo geven zij hun gunstige eigenschappen door en verandert een soort langzaam.</p><div class=\"sam-head\">Begrippen op een rij</div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Cel</div><div class=\"sam-definitie-body\">de kleinste bouwsteen van een organisme.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Weefsel</div><div class=\"sam-definitie-body\">een groep cellen met dezelfde vorm en functie.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Orgaan</div><div class=\"sam-definitie-body\">een structuur van meerdere weefsels met een eigen taak.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Orgaanstelsel</div><div class=\"sam-definitie-body\">organen die samen één functie uitvoeren.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Celmembraan</div><div class=\"sam-definitie-body\">het dunne laagje dat de cel omsluit en stoffen doorlaat.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Celkern</div><div class=\"sam-definitie-body\">het celonderdeel waarin het DNA ligt.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Cytoplasma</div><div class=\"sam-definitie-body\">de vloeistof in de cel waarin de onderdelen liggen.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Celwand</div><div class=\"sam-definitie-body\">de stevige buitenlaag om een plantencel.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Bladgroenkorrel</div><div class=\"sam-definitie-body\">plantencelonderdeel dat de fotosynthese uitvoert.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Vacuole</div><div class=\"sam-definitie-body\">een grote blaas met vocht in een plantencel.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Chromosoom</div><div class=\"sam-definitie-body\">een streng van sterk opgerold DNA in de celkern.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">DNA</div><div class=\"sam-definitie-body\">de stof met de erfelijke informatie.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Gen</div><div class=\"sam-definitie-body\">een stukje DNA met de code voor één eigenschap.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Genotype</div><div class=\"sam-definitie-body\">de erfelijke aanleg (de genen) van een organisme.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Fenotype</div><div class=\"sam-definitie-body\">de waarneembare eigenschappen van een organisme.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Dominant allel</div><div class=\"sam-definitie-body\">een allel dat het fenotype al bepaalt als het aanwezig is.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Recessief allel</div><div class=\"sam-definitie-body\">een allel dat alleen tot uiting komt bij twee exemplaren.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Natuurlijke selectie</div><div class=\"sam-definitie-body\">het beter overleven en voortplanten van best aangepaste individuen.</div></div><div class=\"sam-onthoud\"><b>Let op de verschillen.</b> <b>«Cel»</b> is kleinste bouwsteen, terwijl <b>«Weefsel»</b> groep gelijke cellen is. <b>«Orgaan»</b> is meerdere weefsels met een taak, terwijl <b>«Weefsel»</b> groep gelijke cellen is. <b>«Orgaanstelsel»</b> is samenwerkende organen, terwijl <b>«Orgaan»</b> meerdere weefsels met een taak is. <b>«Celmembraan»</b> is omhulsel van de cel, terwijl <b>«Celwand»</b> stevige laag bij planten is.</div>"
    },
    {
     "id": "B",
@@ -6192,7 +6200,7 @@ var VAKKEN_VMBO = [
       "d": "een micro-organisme dat een ziekte kan veroorzaken"
      }
     ],
-    "sam": "<p>Het lichaam heeft <b>stevigheid</b> en <b>bescherming</b> nodig. De <b>huid</b> beschermt tegen ziekteverwekkers en uitdroging; het <b>skelet</b> geeft steun en vorm. Organismen zijn opgebouwd van cel naar weefsel, orgaan en orgaanstelsel.</p><div class=\"sam-head\">Kernbegrippen</div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Huid</div><div class=\"sam-definitie-body\">het orgaan dat het lichaam bedekt en beschermt.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Opperhuid</div><div class=\"sam-definitie-body\">de buitenste laag van de huid.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Lederhuid</div><div class=\"sam-definitie-body\">de laag onder de opperhuid met zenuwen en bloedvaten.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Onderhuids bindweefsel</div><div class=\"sam-definitie-body\">de vetlaag onder de lederhuid die warmte vasthoudt.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Skelet</div><div class=\"sam-definitie-body\">alle botten samen die het lichaam steun en vorm geven.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Bot</div><div class=\"sam-definitie-body\">een hard orgaan dat steun geeft en bloedcellen kan maken.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Kraakbeen</div><div class=\"sam-definitie-body\">stevig maar buigzaam steunweefsel, bijvoorbeeld in het oor.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Beschermende functie</div><div class=\"sam-definitie-body\">het afschermen van organen tegen schade van buiten.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Steunfunctie</div><div class=\"sam-definitie-body\">het geven van stevigheid en vorm aan het lichaam.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Talgklier</div><div class=\"sam-definitie-body\">huidklier die vet afgeeft en de huid soepel houdt.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Zweetklier</div><div class=\"sam-definitie-body\">huidklier die zweet afgeeft en zo het lichaam koelt.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Ziekteverwekker</div><div class=\"sam-definitie-body\">een micro-organisme dat een ziekte kan veroorzaken.</div></div><div class=\"sam-onthoud\"><b>Let op de verschillen.</b> <b>«Huid»</b> is beschermende bedekking, terwijl <b>«Opperhuid»</b> buitenste huidlaag is. <b>«Opperhuid»</b> is buitenste huidlaag, terwijl <b>«Lederhuid»</b> laag onder de opperhuid is. <b>«Onderhuids bindweefsel»</b> is vetlaag, houdt warmte vast, terwijl <b>«Lederhuid»</b> laag onder de opperhuid is. <b>«Skelet»</b> is alle botten samen, terwijl <b>«Bot»</b> hard steunorgaan is.</div>"
+    "sam": "<div class=\"sam-intro\">Het lichaam heeft <strong>stevigheid</strong> en <strong>bescherming</strong> nodig. De <strong>huid</strong> houdt ziekteverwekkers en uitdroging tegen, en het <strong>skelet</strong> geeft steun en vorm.</div><div class=\"sam-head\">1. De huid beschermt</div><p>De <strong>huid</strong> is het grootste orgaan en beschermt tegen uitdroging, kou en ziekteverwekkers. Bovenop ligt de <strong>opperhuid</strong>, met daaronder de <strong>lederhuid</strong> vol zenuwen en bloedvaten, en daaronder het <strong>onderhuids bindweefsel</strong> met vet dat warmte vasthoudt.</p><p>In de huid zitten klieren: een <strong>talgklier</strong> geeft huidvet af dat de huid soepel houdt, en een <strong>zweetklier</strong> geeft zweet af waarmee het lichaam afkoelt.</p><div class=\"sam-head\">2. Steun en stevigheid</div><p>Het <strong>skelet</strong> geeft het lichaam vorm en steun en beschermt kwetsbare organen: de <strong>steunfunctie</strong> en de <strong>beschermende functie</strong>. Botten zijn hard, terwijl <strong>kraakbeen</strong> stevig maar buigzaam is, zoals in het oor en de neus.</p><div class=\"sam-head\">Begrippen op een rij</div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Huid</div><div class=\"sam-definitie-body\">het orgaan dat het lichaam bedekt en beschermt.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Opperhuid</div><div class=\"sam-definitie-body\">de buitenste laag van de huid.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Lederhuid</div><div class=\"sam-definitie-body\">de laag onder de opperhuid met zenuwen en bloedvaten.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Onderhuids bindweefsel</div><div class=\"sam-definitie-body\">de vetlaag onder de lederhuid die warmte vasthoudt.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Skelet</div><div class=\"sam-definitie-body\">alle botten samen die het lichaam steun en vorm geven.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Bot</div><div class=\"sam-definitie-body\">een hard orgaan dat steun geeft en bloedcellen kan maken.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Kraakbeen</div><div class=\"sam-definitie-body\">stevig maar buigzaam steunweefsel, bijvoorbeeld in het oor.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Beschermende functie</div><div class=\"sam-definitie-body\">het afschermen van organen tegen schade van buiten.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Steunfunctie</div><div class=\"sam-definitie-body\">het geven van stevigheid en vorm aan het lichaam.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Talgklier</div><div class=\"sam-definitie-body\">huidklier die vet afgeeft en de huid soepel houdt.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Zweetklier</div><div class=\"sam-definitie-body\">huidklier die zweet afgeeft en zo het lichaam koelt.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Ziekteverwekker</div><div class=\"sam-definitie-body\">een micro-organisme dat een ziekte kan veroorzaken.</div></div><div class=\"sam-onthoud\"><b>Let op de verschillen.</b> <b>«Huid»</b> is beschermende bedekking, terwijl <b>«Opperhuid»</b> buitenste huidlaag is. <b>«Opperhuid»</b> is buitenste huidlaag, terwijl <b>«Lederhuid»</b> laag onder de opperhuid is. <b>«Onderhuids bindweefsel»</b> is vetlaag, houdt warmte vast, terwijl <b>«Lederhuid»</b> laag onder de opperhuid is. <b>«Skelet»</b> is alle botten samen, terwijl <b>«Bot»</b> hard steunorgaan is.</div>"
    },
    {
     "id": "C",
@@ -6759,7 +6767,7 @@ var VAKKEN_VMBO = [
       "d": "een leefgebied met alle organismen en hun omgeving samen"
      }
     ],
-    "sam": "<p>In een ecosysteem hangen organismen samen via <b>voedselketens</b> en <b>voedselwebben</b>. <b>Producenten</b> (planten) maken met <b>fotosynthese</b> zelf voedsel; <b>consumenten</b> eten anderen; <b>reducenten</b> breken dood materiaal af. Zo lopen de <b>koolstofkringloop</b> en de <b>stikstofkringloop</b> rond.</p><div class=\"sam-head\">Kernbegrippen</div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Voedselketen</div><div class=\"sam-definitie-body\">een reeks organismen die elkaar opeten, van producent naar consument.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Voedselweb</div><div class=\"sam-definitie-body\">meerdere voedselketens die met elkaar verbonden zijn.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Producent</div><div class=\"sam-definitie-body\">een organisme dat zelf voedsel maakt, meestal een plant.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Consument</div><div class=\"sam-definitie-body\">een organisme dat andere organismen eet.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Reducent</div><div class=\"sam-definitie-body\">een organisme dat dood materiaal afbreekt, zoals een schimmel.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Fotosynthese</div><div class=\"sam-definitie-body\">het maken van glucose uit koolstofdioxide en water met licht.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Verbranding</div><div class=\"sam-definitie-body\">het vrijmaken van energie uit voedingsstoffen met zuurstof.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Koolstofkringloop</div><div class=\"sam-definitie-body\">de kringloop waarin koolstof tussen organismen en lucht rondgaat.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Stikstofkringloop</div><div class=\"sam-definitie-body\">de kringloop waarin stikstof via bacteriën en planten rondgaat.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Herbivoor</div><div class=\"sam-definitie-body\">een dier dat alleen planten eet.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Carnivoor</div><div class=\"sam-definitie-body\">een dier dat andere dieren eet.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Omnivoor</div><div class=\"sam-definitie-body\">een dier dat zowel planten als dieren eet.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Ecosysteem</div><div class=\"sam-definitie-body\">een leefgebied met alle organismen en hun omgeving samen.</div></div><div class=\"sam-onthoud\"><b>Let op de verschillen.</b> <b>«Voedselketen»</b> is wie eet wie, in een lijn, terwijl <b>«Voedselweb»</b> verbonden voedselketens is. <b>«Producent»</b> is maakt zelf voedsel, terwijl <b>«Consument»</b> eet andere organismen is. <b>«Reducent»</b> is breekt dood materiaal af, terwijl <b>«Producent»</b> maakt zelf voedsel is. <b>«Fotosynthese»</b> is suiker maken met licht, terwijl <b>«Verbranding»</b> energie vrijmaken met zuurstof is.</div>"
+    "sam": "<div class=\"sam-intro\">In een ecosysteem hangen organismen met elkaar samen. <strong>Producenten</strong> maken met <strong>fotosynthese</strong> zelf voedsel, <strong>consumenten</strong> eten anderen en <strong>reducenten</strong> breken dood materiaal af. Zo blijven stoffen in een <strong>kringloop</strong> rondgaan.</div><div class=\"sam-head\">1. Voedselketens en voedselwebben</div><p>Een <strong>voedselketen</strong> laat zien wie wie eet, in een rechte lijn: van <strong>producent</strong> naar <strong>consument</strong>. In werkelijkheid eten veel dieren van meerdere soorten; als je die ketens met elkaar verbindt, krijg je een <strong>voedselweb</strong>.</p><p>Je onderscheidt eters naar hun voedsel: een <strong>herbivoor</strong> eet planten, een <strong>carnivoor</strong> eet dieren en een <strong>omnivoor</strong> eet beide.</p><div class=\"sam-head\">2. Producenten, consumenten en reducenten</div><p><strong>Producenten</strong> (groene planten) maken hun eigen voedsel met <strong>fotosynthese</strong>. <strong>Consumenten</strong> kunnen dat niet en eten daarom andere organismen. <strong>Reducenten</strong>, zoals schimmels en bacteriën, breken dode resten af tot stoffen die planten weer kunnen gebruiken.</p><div class=\"sam-head\">3. Kringlopen</div><p>Doordat producenten, consumenten en reducenten samenwerken, blijven stoffen rondgaan. In de <strong>koolstofkringloop</strong> gaat koolstof via fotosynthese en verbranding tussen lucht en organismen rond. In de <strong>stikstofkringloop</strong> zorgen bacteriën dat stikstof beschikbaar blijft voor planten.</p><div class=\"sam-head\">Begrippen op een rij</div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Voedselketen</div><div class=\"sam-definitie-body\">een reeks organismen die elkaar opeten, van producent naar consument.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Voedselweb</div><div class=\"sam-definitie-body\">meerdere voedselketens die met elkaar verbonden zijn.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Producent</div><div class=\"sam-definitie-body\">een organisme dat zelf voedsel maakt, meestal een plant.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Consument</div><div class=\"sam-definitie-body\">een organisme dat andere organismen eet.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Reducent</div><div class=\"sam-definitie-body\">een organisme dat dood materiaal afbreekt, zoals een schimmel.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Fotosynthese</div><div class=\"sam-definitie-body\">het maken van glucose uit koolstofdioxide en water met licht.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Verbranding</div><div class=\"sam-definitie-body\">het vrijmaken van energie uit voedingsstoffen met zuurstof.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Koolstofkringloop</div><div class=\"sam-definitie-body\">de kringloop waarin koolstof tussen organismen en lucht rondgaat.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Stikstofkringloop</div><div class=\"sam-definitie-body\">de kringloop waarin stikstof via bacteriën en planten rondgaat.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Herbivoor</div><div class=\"sam-definitie-body\">een dier dat alleen planten eet.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Carnivoor</div><div class=\"sam-definitie-body\">een dier dat andere dieren eet.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Omnivoor</div><div class=\"sam-definitie-body\">een dier dat zowel planten als dieren eet.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Ecosysteem</div><div class=\"sam-definitie-body\">een leefgebied met alle organismen en hun omgeving samen.</div></div><div class=\"sam-onthoud\"><b>Let op de verschillen.</b> <b>«Voedselketen»</b> is wie eet wie, in een lijn, terwijl <b>«Voedselweb»</b> verbonden voedselketens is. <b>«Producent»</b> is maakt zelf voedsel, terwijl <b>«Consument»</b> eet andere organismen is. <b>«Reducent»</b> is breekt dood materiaal af, terwijl <b>«Producent»</b> maakt zelf voedsel is. <b>«Fotosynthese»</b> is suiker maken met licht, terwijl <b>«Verbranding»</b> energie vrijmaken met zuurstof is.</div>"
    },
    {
     "id": "D",
@@ -7320,7 +7328,7 @@ var VAKKEN_VMBO = [
       "d": "een natuurlijke stof waarvan je iets maakt"
      }
     ],
-    "sam": "<p>De mens beïnvloedt het milieu door <b>vervuiling</b> en het gebruik van grondstoffen. <b>Duurzaamheid</b> en <b>kringloopdenken</b> proberen die invloed te verkleinen, bijvoorbeeld door <b>recycling</b> en het gebruik van <b>duurzame energie</b>.</p><div class=\"sam-head\">Kernbegrippen</div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Milieuvervuiling</div><div class=\"sam-definitie-body\">het toevoegen van schadelijke stoffen aan lucht, water of bodem.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Broeikaseffect</div><div class=\"sam-definitie-body\">het opwarmen van de aarde door broeikasgassen in de lucht.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Broeikasgas</div><div class=\"sam-definitie-body\">een gas zoals koolstofdioxide dat warmte vasthoudt.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Duurzaamheid</div><div class=\"sam-definitie-body\">zo leven dat er ook voor de toekomst genoeg overblijft.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Kringloopdenken</div><div class=\"sam-definitie-body\">grondstoffen steeds opnieuw gebruiken in plaats van weggooien.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Recycling</div><div class=\"sam-definitie-body\">afval verwerken tot nieuwe grondstoffen of producten.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Duurzame energie</div><div class=\"sam-definitie-body\">energie uit bronnen die niet opraken, zoals zon en wind.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Fossiele brandstof</div><div class=\"sam-definitie-body\">brandstof uit resten van organismen, zoals olie en gas.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Biodiversiteit</div><div class=\"sam-definitie-body\">de verscheidenheid aan soorten in een gebied.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Afbreekbaar</div><div class=\"sam-definitie-body\">materiaal dat door reducenten wordt afgebroken.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Fijnstof</div><div class=\"sam-definitie-body\">kleine zwevende deeltjes in de lucht die schadelijk zijn.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Grondstof</div><div class=\"sam-definitie-body\">een natuurlijke stof waarvan je iets maakt.</div></div><div class=\"sam-onthoud\"><b>Let op de verschillen.</b> <b>«Milieuvervuiling»</b> is schadelijke stoffen lozen, terwijl <b>«Broeikaseffect»</b> aarde warmt op is. <b>«Broeikasgas»</b> is gas dat warmte vasthoudt, terwijl <b>«Fijnstof»</b> schadelijke luchtdeeltjes is. <b>«Duurzaamheid»</b> is toekomstbestendig leven, terwijl <b>«Kringloopdenken»</b> grondstoffen hergebruiken is. <b>«Recycling»</b> is afval hergebruiken, terwijl <b>«Kringloopdenken»</b> grondstoffen hergebruiken is.</div>"
+    "sam": "<div class=\"sam-intro\">De mens gebruikt grondstoffen en veroorzaakt <strong>milieuvervuiling</strong>. Met <strong>duurzaamheid</strong> en <strong>kringloopdenken</strong> proberen we die invloed te verkleinen.</div><div class=\"sam-head\">1. Vervuiling en klimaat</div><p>Bij <strong>milieuvervuiling</strong> komen schadelijke stoffen in lucht, water of bodem. Door het verbranden van <strong>fossiele brandstoffen</strong> komen <strong>broeikasgassen</strong> vrij die warmte vasthouden: het <strong>broeikaseffect</strong>, waardoor de aarde opwarmt.</p><div class=\"sam-head\">2. Duurzaam met grondstoffen</div><p><strong>Duurzaamheid</strong> betekent zo leven dat er ook voor de toekomst genoeg overblijft. Bij <strong>kringloopdenken</strong> gebruik je grondstoffen steeds opnieuw in plaats van ze weg te gooien; <strong>recycling</strong> en <strong>duurzame energie</strong> horen daarbij. Zo blijft de <strong>biodiversiteit</strong> beter behouden.</p><div class=\"sam-head\">Begrippen op een rij</div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Milieuvervuiling</div><div class=\"sam-definitie-body\">het toevoegen van schadelijke stoffen aan lucht, water of bodem.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Broeikaseffect</div><div class=\"sam-definitie-body\">het opwarmen van de aarde door broeikasgassen in de lucht.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Broeikasgas</div><div class=\"sam-definitie-body\">een gas zoals koolstofdioxide dat warmte vasthoudt.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Duurzaamheid</div><div class=\"sam-definitie-body\">zo leven dat er ook voor de toekomst genoeg overblijft.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Kringloopdenken</div><div class=\"sam-definitie-body\">grondstoffen steeds opnieuw gebruiken in plaats van weggooien.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Recycling</div><div class=\"sam-definitie-body\">afval verwerken tot nieuwe grondstoffen of producten.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Duurzame energie</div><div class=\"sam-definitie-body\">energie uit bronnen die niet opraken, zoals zon en wind.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Fossiele brandstof</div><div class=\"sam-definitie-body\">brandstof uit resten van organismen, zoals olie en gas.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Biodiversiteit</div><div class=\"sam-definitie-body\">de verscheidenheid aan soorten in een gebied.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Afbreekbaar</div><div class=\"sam-definitie-body\">materiaal dat door reducenten wordt afgebroken.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Fijnstof</div><div class=\"sam-definitie-body\">kleine zwevende deeltjes in de lucht die schadelijk zijn.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Grondstof</div><div class=\"sam-definitie-body\">een natuurlijke stof waarvan je iets maakt.</div></div><div class=\"sam-onthoud\"><b>Let op de verschillen.</b> <b>«Milieuvervuiling»</b> is schadelijke stoffen lozen, terwijl <b>«Broeikaseffect»</b> aarde warmt op is. <b>«Broeikasgas»</b> is gas dat warmte vasthoudt, terwijl <b>«Fijnstof»</b> schadelijke luchtdeeltjes is. <b>«Duurzaamheid»</b> is toekomstbestendig leven, terwijl <b>«Kringloopdenken»</b> grondstoffen hergebruiken is. <b>«Recycling»</b> is afval hergebruiken, terwijl <b>«Kringloopdenken»</b> grondstoffen hergebruiken is.</div>"
    },
    {
     "id": "E",
@@ -7881,7 +7889,7 @@ var VAKKEN_VMBO = [
       "d": "een gewricht dat in alle richtingen kan draaien, zoals de schouder"
      }
     ],
-    "sam": "<p>Het <b>skelet</b> en de <b>spieren</b> zorgen samen voor beweging. Botten zijn met elkaar verbonden in <b>gewrichten</b>. Spieren kunnen alleen <b>trekken</b>, dus werken ze in paren: een <b>buigspier</b> en een <b>strekspier</b> (een <b>antagonist</b>).</p><div class=\"sam-head\">Kernbegrippen</div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Gewricht</div><div class=\"sam-definitie-body\">een beweegbare verbinding tussen twee botten.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Gewrichtsband</div><div class=\"sam-definitie-body\">stevig weefsel dat botten in een gewricht bij elkaar houdt.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Pees</div><div class=\"sam-definitie-body\">stevig weefsel dat een spier aan een bot vastmaakt.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Spier</div><div class=\"sam-definitie-body\">een orgaan dat kan samentrekken en zo beweging maakt.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Buigspier</div><div class=\"sam-definitie-body\">een spier die een gewricht buigt.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Strekspier</div><div class=\"sam-definitie-body\">een spier die een gewricht strekt.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Antagonist</div><div class=\"sam-definitie-body\">een spier die de tegengestelde beweging maakt.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Gewrichtskapsel</div><div class=\"sam-definitie-body\">het omhulsel om een gewricht met smeervloeistof.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Gewrichtssmeer</div><div class=\"sam-definitie-body\">vloeistof die de wrijving in een gewricht verkleint.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Kraakbeen</div><div class=\"sam-definitie-body\">buigzaam steunweefsel dat de botuiteinden bedekt.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Scharniergewricht</div><div class=\"sam-definitie-body\">een gewricht dat maar in één richting buigt, zoals de knie.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Kogelgewricht</div><div class=\"sam-definitie-body\">een gewricht dat in alle richtingen kan draaien, zoals de schouder.</div></div><div class=\"sam-onthoud\"><b>Let op de verschillen.</b> <b>«Gewricht»</b> is beweegbare botverbinding, terwijl <b>«Gewrichtsband»</b> houdt botten bijeen is. <b>«Gewrichtsband»</b> is houdt botten bijeen, terwijl <b>«Pees»</b> verbindt spier met bot is. <b>«Spier»</b> is trekt samen, beweegt, terwijl <b>«Pees»</b> verbindt spier met bot is. <b>«Buigspier»</b> is buigt een gewricht, terwijl <b>«Strekspier»</b> strekt een gewricht is.</div>"
+    "sam": "<div class=\"sam-intro\">Het <strong>skelet</strong> en de <strong>spieren</strong> zorgen samen voor beweging. Botten zijn met elkaar verbonden in <strong>gewrichten</strong>, en spieren werken in paren omdat ze alleen kunnen trekken.</div><div class=\"sam-head\">1. Gewrichten en verbindingen</div><p>Waar twee botten beweegbaar samenkomen, zit een <strong>gewricht</strong>. <strong>Gewrichtsbanden</strong> houden de botten bij elkaar, <strong>kraakbeen</strong> bedekt de uiteinden en <strong>gewrichtssmeer</strong> vermindert de wrijving. Een <strong>scharniergewricht</strong> (knie) buigt in één richting, een <strong>kogelgewricht</strong> (schouder) draait alle kanten op.</p><div class=\"sam-head\">2. Spieren werken in paren</div><p>Een <strong>spier</strong> kan alleen trekken, niet duwen. Daarom werken spieren in paren: een <strong>buigspier</strong> buigt een gewricht en de <strong>strekspier</strong> strekt het weer. Zo'n tegenwerkend paar heet een <strong>antagonist</strong>. Een <strong>pees</strong> verbindt de spier met het bot.</p><div class=\"sam-head\">Begrippen op een rij</div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Gewricht</div><div class=\"sam-definitie-body\">een beweegbare verbinding tussen twee botten.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Gewrichtsband</div><div class=\"sam-definitie-body\">stevig weefsel dat botten in een gewricht bij elkaar houdt.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Pees</div><div class=\"sam-definitie-body\">stevig weefsel dat een spier aan een bot vastmaakt.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Spier</div><div class=\"sam-definitie-body\">een orgaan dat kan samentrekken en zo beweging maakt.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Buigspier</div><div class=\"sam-definitie-body\">een spier die een gewricht buigt.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Strekspier</div><div class=\"sam-definitie-body\">een spier die een gewricht strekt.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Antagonist</div><div class=\"sam-definitie-body\">een spier die de tegengestelde beweging maakt.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Gewrichtskapsel</div><div class=\"sam-definitie-body\">het omhulsel om een gewricht met smeervloeistof.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Gewrichtssmeer</div><div class=\"sam-definitie-body\">vloeistof die de wrijving in een gewricht verkleint.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Kraakbeen</div><div class=\"sam-definitie-body\">buigzaam steunweefsel dat de botuiteinden bedekt.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Scharniergewricht</div><div class=\"sam-definitie-body\">een gewricht dat maar in één richting buigt, zoals de knie.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Kogelgewricht</div><div class=\"sam-definitie-body\">een gewricht dat in alle richtingen kan draaien, zoals de schouder.</div></div><div class=\"sam-onthoud\"><b>Let op de verschillen.</b> <b>«Gewricht»</b> is beweegbare botverbinding, terwijl <b>«Gewrichtsband»</b> houdt botten bijeen is. <b>«Gewrichtsband»</b> is houdt botten bijeen, terwijl <b>«Pees»</b> verbindt spier met bot is. <b>«Spier»</b> is trekt samen, beweegt, terwijl <b>«Pees»</b> verbindt spier met bot is. <b>«Buigspier»</b> is buigt een gewricht, terwijl <b>«Strekspier»</b> strekt een gewricht is.</div>"
    },
    {
     "id": "F",
@@ -8449,7 +8457,7 @@ var VAKKEN_VMBO = [
       "d": "een orgaan dat prikkels uit de omgeving opvangt"
      }
     ],
-    "sam": "<p>Organen werken samen om het lichaam draaiende te houden. De <b>vertering</b> maakt voedsel klein, het <b>bloed</b> vervoert stoffen via het <b>hart</b>, de <b>longen</b> zorgen voor <b>gaswisseling</b>, de <b>nieren</b> reinigen het bloed en het <b>zenuwstelsel</b> regelt en stuurt.</p><div class=\"sam-head\">Kernbegrippen</div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Vertering</div><div class=\"sam-definitie-body\">het klein maken van voedsel zodat het opgenomen kan worden.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Enzym</div><div class=\"sam-definitie-body\">een stof die een reactie zoals vertering versnelt.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Darmvlok</div><div class=\"sam-definitie-body\">uitstulping in de dunne darm die voedingsstoffen opneemt.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Slagader</div><div class=\"sam-definitie-body\">een bloedvat dat bloed van het hart af vervoert.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Ader</div><div class=\"sam-definitie-body\">een bloedvat dat bloed naar het hart toe vervoert.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Haarvat</div><div class=\"sam-definitie-body\">een heel dun bloedvat waar uitwisseling van stoffen plaatsvindt.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Hart</div><div class=\"sam-definitie-body\">de spier die het bloed rondpompt.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Gaswisseling</div><div class=\"sam-definitie-body\">de opname van zuurstof en afgifte van koolstofdioxide.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Longblaasje</div><div class=\"sam-definitie-body\">klein blaasje in de long waar gaswisseling plaatsvindt.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Nier</div><div class=\"sam-definitie-body\">een orgaan dat afvalstoffen uit het bloed filtert.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Zenuwstelsel</div><div class=\"sam-definitie-body\">het stelsel dat prikkels doorgeeft en het lichaam stuurt.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Hormoon</div><div class=\"sam-definitie-body\">een stof die via het bloed processen in het lichaam regelt.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Zintuig</div><div class=\"sam-definitie-body\">een orgaan dat prikkels uit de omgeving opvangt.</div></div><div class=\"sam-onthoud\"><b>Let op de verschillen.</b> <b>«Enzym»</b> is versnelt een reactie, terwijl <b>«Hormoon»</b> regelt via het bloed is. <b>«Darmvlok»</b> is neemt voeding op, terwijl <b>«Vertering»</b> voedsel klein maken is. <b>«Slagader»</b> is bloed van het hart af, terwijl <b>«Ader»</b> bloed naar het hart toe is. <b>«Haarvat»</b> is uitwisseling van stoffen, terwijl <b>«Slagader»</b> bloed van het hart af is.</div>"
+    "sam": "<div class=\"sam-intro\">Organen werken samen om je lichaam draaiende te houden: de <strong>vertering</strong> maakt voedsel klein, het <strong>bloed</strong> vervoert stoffen, de <strong>longen</strong> zorgen voor <strong>gaswisseling</strong> en het <strong>zenuwstelsel</strong> stuurt alles aan.</div><div class=\"sam-head\">1. Vertering en opname</div><p>Bij de <strong>vertering</strong> wordt voedsel klein gemaakt zodat het in het bloed kan worden opgenomen. <strong>Enzymen</strong> versnellen dat proces. In de dunne darm nemen <strong>darmvlokken</strong> de voedingsstoffen op in het bloed.</p><div class=\"sam-head\">2. Bloedsomloop</div><p>Het <strong>hart</strong> pompt het bloed rond. <strong>Slagaders</strong> voeren bloed van het hart af, <strong>aders</strong> voeren het naar het hart toe, en in de dunne <strong>haarvaten</strong> vindt de uitwisseling van stoffen met de cellen plaats.</p><div class=\"sam-head\">3. Gaswisseling en regeling</div><p>In de <strong>longblaasjes</strong> vindt <strong>gaswisseling</strong> plaats: zuurstof gaat het bloed in, koolstofdioxide gaat eruit. De <strong>nieren</strong> filteren afvalstoffen uit het bloed. Het <strong>zenuwstelsel</strong> stuurt snel met prikkels, terwijl <strong>hormonen</strong> langzamer sturen via het bloed.</p><div class=\"sam-head\">Begrippen op een rij</div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Vertering</div><div class=\"sam-definitie-body\">het klein maken van voedsel zodat het opgenomen kan worden.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Enzym</div><div class=\"sam-definitie-body\">een stof die een reactie zoals vertering versnelt.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Darmvlok</div><div class=\"sam-definitie-body\">uitstulping in de dunne darm die voedingsstoffen opneemt.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Slagader</div><div class=\"sam-definitie-body\">een bloedvat dat bloed van het hart af vervoert.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Ader</div><div class=\"sam-definitie-body\">een bloedvat dat bloed naar het hart toe vervoert.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Haarvat</div><div class=\"sam-definitie-body\">een heel dun bloedvat waar uitwisseling van stoffen plaatsvindt.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Hart</div><div class=\"sam-definitie-body\">de spier die het bloed rondpompt.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Gaswisseling</div><div class=\"sam-definitie-body\">de opname van zuurstof en afgifte van koolstofdioxide.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Longblaasje</div><div class=\"sam-definitie-body\">klein blaasje in de long waar gaswisseling plaatsvindt.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Nier</div><div class=\"sam-definitie-body\">een orgaan dat afvalstoffen uit het bloed filtert.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Zenuwstelsel</div><div class=\"sam-definitie-body\">het stelsel dat prikkels doorgeeft en het lichaam stuurt.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Hormoon</div><div class=\"sam-definitie-body\">een stof die via het bloed processen in het lichaam regelt.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Zintuig</div><div class=\"sam-definitie-body\">een orgaan dat prikkels uit de omgeving opvangt.</div></div><div class=\"sam-onthoud\"><b>Let op de verschillen.</b> <b>«Enzym»</b> is versnelt een reactie, terwijl <b>«Hormoon»</b> regelt via het bloed is. <b>«Darmvlok»</b> is neemt voeding op, terwijl <b>«Vertering»</b> voedsel klein maken is. <b>«Slagader»</b> is bloed van het hart af, terwijl <b>«Ader»</b> bloed naar het hart toe is. <b>«Haarvat»</b> is uitwisseling van stoffen, terwijl <b>«Slagader»</b> bloed van het hart af is.</div>"
    },
    {
     "id": "G",
@@ -9012,7 +9020,7 @@ var VAKKEN_VMBO = [
       "d": "een eencellig organisme zonder celkern"
      }
     ],
-    "sam": "<p>Mensen gebruiken organismen in de <b>biotechnologie</b>: <b>gist</b> en <b>melkzuurbacteriën</b> in voeding, <b>schimmels</b> voor <b>antibiotica</b>, en <b>genetische modificatie</b> om bijvoorbeeld <b>insuline</b> te maken. Zulke technieken hebben voordelen én nadelen.</p><div class=\"sam-head\">Kernbegrippen</div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Biotechnologie</div><div class=\"sam-definitie-body\">het gebruik van organismen om producten te maken.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Gist</div><div class=\"sam-definitie-body\">een schimmel die suiker omzet en deeg laat rijzen.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Melkzuurbacterie</div><div class=\"sam-definitie-body\">een bacterie die melk in yoghurt of kaas omzet.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Gisting</div><div class=\"sam-definitie-body\">het omzetten van suiker door micro-organismen zonder zuurstof.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Antibioticum</div><div class=\"sam-definitie-body\">een stof die bacteriën doodt of hun groei remt.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Schimmel</div><div class=\"sam-definitie-body\">een organisme dat stoffen zoals antibiotica kan maken.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Genetische modificatie</div><div class=\"sam-definitie-body\">het gericht veranderen van het DNA van een organisme.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Insuline</div><div class=\"sam-definitie-body\">een hormoon dat met gm-bacteriën gemaakt kan worden.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Gm-gewas</div><div class=\"sam-definitie-body\">een gewas met gericht veranderd DNA.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Resistentie</div><div class=\"sam-definitie-body\">ongevoeligheid van bacteriën voor een antibioticum.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Vaccin</div><div class=\"sam-definitie-body\">een middel dat je afweer traint tegen een ziekteverwekker.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Bacterie</div><div class=\"sam-definitie-body\">een eencellig organisme zonder celkern.</div></div><div class=\"sam-onthoud\"><b>Let op de verschillen.</b> <b>«Biotechnologie»</b> is organismen als fabriekje, terwijl <b>«Genetische modificatie»</b> DNA gericht veranderen is. <b>«Gist»</b> is laat deeg rijzen, terwijl <b>«Melkzuurbacterie»</b> maakt yoghurt en kaas is. <b>«Antibioticum»</b> is werkt tegen bacteriën, terwijl <b>«Vaccin»</b> traint de afweer is. <b>«Schimmel»</b> is maakt o.a. antibiotica, terwijl <b>«Bacterie»</b> eencellig, geen kern is.</div>"
+    "sam": "<div class=\"sam-intro\">Mensen zetten organismen aan het werk in de <strong>biotechnologie</strong>: <strong>gist</strong> en <strong>melkzuurbacteriën</strong> in voeding, <strong>schimmels</strong> voor <strong>antibiotica</strong> en <strong>genetische modificatie</strong> om stoffen zoals <strong>insuline</strong> te maken.</div><div class=\"sam-head\">1. Micro-organismen in voeding</div><p><strong>Biotechnologie</strong> is het gebruik van organismen om producten te maken. <strong>Gist</strong> is een schimmel die suiker omzet en deeg laat rijzen; <strong>melkzuurbacteriën</strong> maken van melk yoghurt en kaas. Dit omzetten zonder zuurstof heet <strong>gisting</strong>.</p><div class=\"sam-head\">2. Medicijnen en modificatie</div><p>Sommige <strong>schimmels</strong> maken <strong>antibiotica</strong>, stoffen die bacteriën doden of hun groei remmen. Bij <strong>genetische modificatie</strong> verander je gericht het DNA van een organisme, bijvoorbeeld om bacteriën <strong>insuline</strong> te laten maken voor mensen met diabetes.</p><p>Genetische modificatie heeft voor- en nadelen. <strong>Gm-gewassen</strong> kunnen bijvoorbeeld beter tegen droogte, maar er zijn ook zorgen over gevolgen voor natuur en gezondheid. Overmatig antibioticagebruik leidt tot <strong>resistentie</strong>.</p><div class=\"sam-head\">Begrippen op een rij</div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Biotechnologie</div><div class=\"sam-definitie-body\">het gebruik van organismen om producten te maken.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Gist</div><div class=\"sam-definitie-body\">een schimmel die suiker omzet en deeg laat rijzen.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Melkzuurbacterie</div><div class=\"sam-definitie-body\">een bacterie die melk in yoghurt of kaas omzet.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Gisting</div><div class=\"sam-definitie-body\">het omzetten van suiker door micro-organismen zonder zuurstof.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Antibioticum</div><div class=\"sam-definitie-body\">een stof die bacteriën doodt of hun groei remt.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Schimmel</div><div class=\"sam-definitie-body\">een organisme dat stoffen zoals antibiotica kan maken.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Genetische modificatie</div><div class=\"sam-definitie-body\">het gericht veranderen van het DNA van een organisme.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Insuline</div><div class=\"sam-definitie-body\">een hormoon dat met gm-bacteriën gemaakt kan worden.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Gm-gewas</div><div class=\"sam-definitie-body\">een gewas met gericht veranderd DNA.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Resistentie</div><div class=\"sam-definitie-body\">ongevoeligheid van bacteriën voor een antibioticum.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Vaccin</div><div class=\"sam-definitie-body\">een middel dat je afweer traint tegen een ziekteverwekker.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Bacterie</div><div class=\"sam-definitie-body\">een eencellig organisme zonder celkern.</div></div><div class=\"sam-onthoud\"><b>Let op de verschillen.</b> <b>«Biotechnologie»</b> is organismen als fabriekje, terwijl <b>«Genetische modificatie»</b> DNA gericht veranderen is. <b>«Gist»</b> is laat deeg rijzen, terwijl <b>«Melkzuurbacterie»</b> maakt yoghurt en kaas is. <b>«Antibioticum»</b> is werkt tegen bacteriën, terwijl <b>«Vaccin»</b> traint de afweer is. <b>«Schimmel»</b> is maakt o.a. antibiotica, terwijl <b>«Bacterie»</b> eencellig, geen kern is.</div>"
    }
   ]
  },

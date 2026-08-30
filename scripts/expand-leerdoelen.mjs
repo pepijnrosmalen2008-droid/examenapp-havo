@@ -135,10 +135,25 @@ const _esc = s => String(s == null ? '' : s).replace(/&/g, '&amp;').replace(/</g
  * onthoud-blok met de belangrijkste verschillen. Zo is de samenvatting geen
  * losse alinea meer maar echte leerstof. `spec.samFull` overschrijft dit.
  */
+// Render één geschreven sectie in de gouden sam-markup (kop + prosa + optioneel
+// een formulebox en/of een voorbeeldopgave). p/formula/worked bevatten bewust
+// HTML (bv. <strong>), dus die worden niet ge-escaped.
+function renderSectie(s) {
+  let out = `<div class="sam-head">${s.h}</div>`;
+  (s.p || []).forEach(p => { out += `<p>${p}</p>`; });
+  if (s.formula) out += `<div class="sam-formula-box"><div class="sam-formula-label">${_esc(s.formula.label)}</div><div class="sam-formula-eq">${s.formula.eq}</div>${s.formula.note ? `<div class="sam-formula-note">${s.formula.note}</div>` : ''}</div>`;
+  if (s.worked) { const st = (s.worked.steps || []).map(x => `<li>${x}</li>`).join(''); out += `<div class="sam-worked"><div class="sam-worked-h">✍️ Voorbeeldopgave</div><div class="sam-worked-q">${s.worked.q}</div><ol class="sam-worked-steps">${st}</ol><div class="sam-worked-ans">✅ ${s.worked.ans}</div></div>`; }
+  return out;
+}
+/**
+ * Bouw de samenvatting. Gouden route: als de spec `intro` + `secties` geeft,
+ * renderen we prosa-secties (kop, uitleg, formulebox, voorbeeldopgave) in de
+ * gouden markup, gevolgd door een begrippen-overzicht + onthoud-blok. Zonder
+ * secties valt hij terug op de compacte begrippen-samenvatting.
+ */
 function buildSummary(spec) {
   if (spec.samFull) return spec.samFull;
   const cs = spec.concepten || [];
-  const intro = spec.sam || '';
   const defs = cs.map(c => `<div class="sam-definitie"><div class="sam-definitie-term">${_esc(c.t)}</div><div class="sam-definitie-body">${_esc(String(c.d).replace(/\.$/, ''))}.</div></div>`).join('');
   const byTerm = {}; cs.forEach(c => { byTerm[c.t.toLowerCase()] = c; });
   const contrasts = [];
@@ -149,6 +164,12 @@ function buildSummary(spec) {
       contrasts.push(`<b>«${_esc(c.t)}»</b> is ${_esc(kernOf(c))}, terwijl <b>«${_esc(fc.t)}»</b> ${_esc(kernOf(fc))} is.`);
   }
   const onthoud = contrasts.length ? `<div class="sam-onthoud"><b>Let op de verschillen.</b> ${contrasts.join(' ')}</div>` : '';
+  const begSection = `<div class="sam-head">Begrippen op een rij</div>${defs}${onthoud}`;
+  if (Array.isArray(spec.secties) && spec.secties.length) {
+    const intro = spec.intro ? `<div class="sam-intro">${spec.intro}</div>` : (spec.sam || '');
+    return intro + spec.secties.map(renderSectie).join('') + begSection;
+  }
+  const intro = spec.sam || '';
   return `${intro}<div class="sam-head">Kernbegrippen</div>${defs}${onthoud}`;
 }
 
