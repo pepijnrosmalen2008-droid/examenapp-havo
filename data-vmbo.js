@@ -8463,498 +8463,213 @@ var VAKKEN_VMBO = [
     "nBeg": 0,
     "sv": [
      {
-      "v": "Welk begrip hoort bij: \"de gewoonten, gebruiken en waarden van een groep\"?",
+      "v": "Wat zijn normen?",
       "o": [
-       "Cultuur",
-       "Mentaliteit",
-       "Tolerantie",
-       "Traditie"
-      ],
-      "c": 0,
-      "d": 3,
-      "u": "«Cultuur»: de gewoonten, gebruiken en waarden van een groep.",
-      "uo": [
-       "Klopt, dit is «Cultuur».",
-       "«Mentaliteit» betekent manier van denken.",
-       "«Tolerantie» betekent anderen verdragen.",
-       "«Traditie» betekent overgeleverde gewoonte."
-      ],
-      "uh": "Onthoud: «Cultuur» = gewoonten en waarden."
-     },
-     {
-      "v": "Welke term hoort bij \"gewoonten en waarden\"?",
-      "o": [
-       "Tolerantie",
-       "Cultuur",
-       "Traditie",
-       "Identiteit"
+       "Wat je belangrijk vindt",
+       "Regels voor je gedrag",
+       "Een geloof",
+       "Een traditie"
       ],
       "c": 1,
-      "d": 2,
-      "u": "«Cultuur»: de gewoonten, gebruiken en waarden van een groep.",
+      "d": 1,
+      "u": "Normen zijn gedragsregels.",
       "uo": [
-       "«Tolerantie» betekent anderen verdragen.",
-       "Klopt, «Cultuur» past hierbij.",
-       "«Traditie» betekent overgeleverde gewoonte.",
-       "«Identiteit» betekent gevoel van erbij horen."
+       "Dat zijn waarden.",
+       "Klopt: normen zijn gedragsregels.",
+       "Nee, dat klopt niet.",
+       "Nee, dat klopt niet."
       ],
-      "uh": "Onthoud: «Cultuur» = gewoonten en waarden."
+      "uh": "Normen zijn gedragsregels."
      },
      {
-      "v": "Wat betekent «Cultuur»?",
+      "v": "Wat zijn waarden?",
       "o": [
-       "de manier van denken van mensen in een bepaalde tijd",
-       "het verdragen van andere meningen en geloven",
-       "de gewoonten, gebruiken en waarden van een groep",
-       "een gewoonte die van generatie op generatie overgaat"
+       "Gedragsregels",
+       "Een gebouw",
+       "Wat je belangrijk vindt",
+       "Een wet"
       ],
       "c": 2,
       "d": 1,
-      "u": "«Cultuur»: de gewoonten, gebruiken en waarden van een groep.",
+      "u": "Wat mensen belangrijk vinden.",
       "uo": [
-       "Dat is «Mentaliteit».",
-       "Dat is «Tolerantie».",
-       "Klopt: gewoonten en waarden.",
-       "Dat is «Traditie»."
+       "Dat zijn normen.",
+       "Nee, dat klopt niet.",
+       "Klopt: wat mensen belangrijk vinden.",
+       "Nee, dat klopt niet."
       ],
-      "uh": "Onthoud: «Cultuur» = gewoonten en waarden."
+      "uh": "Wat mensen belangrijk vinden."
      },
      {
-      "v": "Welk begrip hoort bij: \"de manier van denken van mensen in een bepaalde tijd\"?",
+      "v": "Wat betekent secularisatie?",
       "o": [
-       "Cultuur",
-       "Secularisatie",
-       "Traditie",
-       "Mentaliteit"
-      ],
-      "c": 3,
-      "d": 3,
-      "u": "«Mentaliteit»: de manier van denken van mensen in een bepaalde tijd.",
-      "uo": [
-       "«Cultuur» betekent gewoonten en waarden.",
-       "«Secularisatie» betekent religie wordt minder.",
-       "«Traditie» betekent overgeleverde gewoonte.",
-       "Klopt, dit is «Mentaliteit»."
-      ],
-      "uh": "Onthoud: «Mentaliteit» = manier van denken."
-     },
-     {
-      "v": "Welke term hoort bij \"manier van denken\"?",
-      "o": [
-       "Mentaliteit",
-       "Secularisatie",
-       "Traditie",
-       "Waarden"
+       "Religie wordt minder belangrijk",
+       "Religie wordt belangrijker",
+       "Meer regels",
+       "Meer tradities"
       ],
       "c": 0,
       "d": 2,
-      "u": "«Mentaliteit»: de manier van denken van mensen in een bepaalde tijd.",
+      "u": "Het geloof wordt minder bepalend.",
       "uo": [
-       "Klopt, «Mentaliteit» past hierbij.",
-       "«Secularisatie» betekent religie wordt minder.",
-       "«Traditie» betekent overgeleverde gewoonte.",
-       "«Waarden» betekent wat men belangrijk vindt."
+       "Klopt: het geloof wordt minder bepalend.",
+       "Juist andersom.",
+       "Nee, dat klopt niet.",
+       "Nee, dat klopt niet."
       ],
-      "uh": "Onthoud: «Mentaliteit» = manier van denken."
+      "uh": "Het geloof wordt minder bepalend."
      },
      {
-      "v": "Wat betekent «Mentaliteit»?",
+      "v": "Wat is een traditie?",
       "o": [
-       "de gewoonten, gebruiken en waarden van een groep",
-       "de manier van denken van mensen in een bepaalde tijd",
-       "het minder belangrijk worden van religie",
-       "een gewoonte die van generatie op generatie overgaat"
-      ],
-      "c": 1,
-      "d": 1,
-      "u": "«Mentaliteit»: de manier van denken van mensen in een bepaalde tijd.",
-      "uo": [
-       "Dat is «Cultuur».",
-       "Klopt: manier van denken.",
-       "Dat is «Secularisatie».",
-       "Dat is «Traditie»."
-      ],
-      "uh": "Onthoud: «Mentaliteit» = manier van denken."
-     },
-     {
-      "v": "Welk begrip hoort bij: \"wat mensen belangrijk en nastrevenswaardig vinden\"?",
-      "o": [
-       "Normen",
-       "Tolerantie",
-       "Waarden",
-       "Traditie"
-      ],
-      "c": 2,
-      "d": 3,
-      "u": "«Waarden»: wat mensen belangrijk en nastrevenswaardig vinden.",
-      "uo": [
-       "«Normen» betekent gedragsregels.",
-       "«Tolerantie» betekent anderen verdragen.",
-       "Klopt, dit is «Waarden».",
-       "«Traditie» betekent overgeleverde gewoonte."
-      ],
-      "uh": "Onthoud: «Waarden» = wat men belangrijk vindt."
-     },
-     {
-      "v": "Welke term hoort bij \"wat men belangrijk vindt\"?",
-      "o": [
-       "Tolerantie",
-       "Traditie",
-       "Identiteit",
-       "Waarden"
+       "Een wet",
+       "Een geloof",
+       "Een mening vooraf",
+       "Een overgeleverde gewoonte"
       ],
       "c": 3,
-      "d": 2,
-      "u": "«Waarden»: wat mensen belangrijk en nastrevenswaardig vinden.",
-      "uo": [
-       "«Tolerantie» betekent anderen verdragen.",
-       "«Traditie» betekent overgeleverde gewoonte.",
-       "«Identiteit» betekent gevoel van erbij horen.",
-       "Klopt, «Waarden» past hierbij."
-      ],
-      "uh": "Onthoud: «Waarden» = wat men belangrijk vindt."
-     },
-     {
-      "v": "Wat betekent «Waarden»?",
-      "o": [
-       "wat mensen belangrijk en nastrevenswaardig vinden",
-       "regels over hoe je je hoort te gedragen",
-       "het verdragen van andere meningen en geloven",
-       "een gewoonte die van generatie op generatie overgaat"
-      ],
-      "c": 0,
       "d": 1,
-      "u": "«Waarden»: wat mensen belangrijk en nastrevenswaardig vinden.",
+      "u": "Een gewoonte die van generatie op generatie overgaat.",
       "uo": [
-       "Klopt: wat men belangrijk vindt.",
-       "Dat is «Normen».",
-       "Dat is «Tolerantie».",
-       "Dat is «Traditie»."
+       "Nee, dat klopt niet.",
+       "Nee, dat klopt niet.",
+       "Dat is een vooroordeel.",
+       "Klopt: een gewoonte die van generatie op generatie overgaat."
       ],
-      "uh": "Onthoud: «Waarden» = wat men belangrijk vindt."
+      "uh": "Een gewoonte die van generatie op generatie overgaat."
      },
      {
-      "v": "Welk begrip hoort bij: \"regels over hoe je je hoort te gedragen\"?",
+      "v": "Wat is een vooroordeel?",
       "o": [
-       "Waarden",
-       "Normen",
-       "Mentaliteit",
-       "Cultuur"
+       "Een gedragsregel",
+       "Een oordeel zonder de feiten",
+       "Een traditie",
+       "Een geloof"
       ],
       "c": 1,
-      "d": 3,
-      "u": "«Normen»: regels over hoe je je hoort te gedragen.",
+      "d": 2,
+      "u": "Een mening vooraf, zonder de feiten.",
       "uo": [
-       "«Waarden» betekent wat men belangrijk vindt.",
-       "Klopt, dit is «Normen».",
-       "«Mentaliteit» betekent manier van denken.",
-       "«Cultuur» betekent gewoonten en waarden."
+       "Nee, dat klopt niet.",
+       "Klopt: een mening vooraf, zonder de feiten.",
+       "Nee, dat klopt niet.",
+       "Nee, dat klopt niet."
       ],
-      "uh": "Onthoud: «Normen» = gedragsregels."
+      "uh": "Een mening vooraf, zonder de feiten."
      },
      {
-      "v": "Welke term hoort bij \"gedragsregels\"?",
+      "v": "Wat is tolerantie?",
       "o": [
-       "Mentaliteit",
-       "Cultuur",
-       "Normen",
-       "Identiteit"
+       "Anderen uitsluiten",
+       "Regels opleggen",
+       "Andere meningen verdragen",
+       "Een traditie"
       ],
       "c": 2,
       "d": 2,
-      "u": "«Normen»: regels over hoe je je hoort te gedragen.",
+      "u": "Andere meningen en geloven verdragen.",
       "uo": [
-       "«Mentaliteit» betekent manier van denken.",
-       "«Cultuur» betekent gewoonten en waarden.",
-       "Klopt, «Normen» past hierbij.",
-       "«Identiteit» betekent gevoel van erbij horen."
+       "Juist niet.",
+       "Nee, dat klopt niet.",
+       "Klopt: andere meningen en geloven verdragen.",
+       "Nee, dat klopt niet."
       ],
-      "uh": "Onthoud: «Normen» = gedragsregels."
+      "uh": "Andere meningen en geloven verdragen."
      },
      {
-      "v": "Wat betekent «Normen»?",
+      "v": "Wat is een standensamenleving?",
       "o": [
-       "wat mensen belangrijk en nastrevenswaardig vinden",
-       "de manier van denken van mensen in een bepaalde tijd",
-       "de gewoonten, gebruiken en waarden van een groep",
-       "regels over hoe je je hoort te gedragen"
-      ],
-      "c": 3,
-      "d": 1,
-      "u": "«Normen»: regels over hoe je je hoort te gedragen.",
-      "uo": [
-       "Dat is «Waarden».",
-       "Dat is «Mentaliteit».",
-       "Dat is «Cultuur».",
-       "Klopt: gedragsregels."
-      ],
-      "uh": "Onthoud: «Normen» = gedragsregels."
-     },
-     {
-      "v": "Welk begrip hoort bij: \"een geloof met eigen regels en rituelen\"?",
-      "o": [
-       "Religie",
-       "Traditie",
-       "Tolerantie",
-       "Normen"
+       "Een samenleving met vaste lagen",
+       "Een gelijke samenleving",
+       "Een democratie",
+       "Een dictatuur"
       ],
       "c": 0,
-      "d": 3,
-      "u": "«Religie»: een geloof met eigen regels en rituelen.",
+      "d": 2,
+      "u": "Vaste maatschappelijke lagen.",
       "uo": [
-       "Klopt, dit is «Religie».",
-       "«Traditie» betekent overgeleverde gewoonte.",
-       "«Tolerantie» betekent anderen verdragen.",
-       "«Normen» betekent gedragsregels."
+       "Klopt: vaste maatschappelijke lagen.",
+       "Juist niet gelijk.",
+       "Nee, dat klopt niet.",
+       "Nee, dat klopt niet."
       ],
-      "uh": "Onthoud: «Religie» = een geloof."
+      "uh": "Vaste maatschappelijke lagen."
      },
      {
-      "v": "Welke term hoort bij \"een geloof\"?",
+      "v": "Wat is mentaliteit?",
       "o": [
-       "Tolerantie",
-       "Religie",
-       "Normen",
-       "Identiteit"
+       "Een gebouw",
+       "Een wet",
+       "Een geloof",
+       "De manier van denken in een tijd"
+      ],
+      "c": 3,
+      "d": 2,
+      "u": "Hoe mensen in een tijd denken.",
+      "uo": [
+       "Nee, dat klopt niet.",
+       "Nee, dat klopt niet.",
+       "Nee, dat klopt niet.",
+       "Klopt: hoe mensen in een tijd denken."
+      ],
+      "uh": "Hoe mensen in een tijd denken."
+     },
+     {
+      "v": "Wat is emancipatie?",
+      "o": [
+       "Minder rechten",
+       "Streven naar gelijke rechten",
+       "Meer regels",
+       "Een traditie"
       ],
       "c": 1,
       "d": 2,
-      "u": "«Religie»: een geloof met eigen regels en rituelen.",
+      "u": "Streven naar gelijke rechten.",
       "uo": [
-       "«Tolerantie» betekent anderen verdragen.",
-       "Klopt, «Religie» past hierbij.",
-       "«Normen» betekent gedragsregels.",
-       "«Identiteit» betekent gevoel van erbij horen."
+       "Juist meer.",
+       "Klopt: streven naar gelijke rechten.",
+       "Nee, dat klopt niet.",
+       "Nee, dat klopt niet."
       ],
-      "uh": "Onthoud: «Religie» = een geloof."
+      "uh": "Streven naar gelijke rechten."
      },
      {
-      "v": "Wat betekent «Religie»?",
+      "v": "Wat hoort bij cultuur?",
       "o": [
-       "een gewoonte die van generatie op generatie overgaat",
-       "het verdragen van andere meningen en geloven",
-       "een geloof met eigen regels en rituelen",
-       "regels over hoe je je hoort te gedragen"
+       "Alleen het weer",
+       "Alleen de economie",
+       "Gewoonten en gebruiken",
+       "Alleen de wet"
       ],
       "c": 2,
       "d": 1,
-      "u": "«Religie»: een geloof met eigen regels en rituelen.",
+      "u": "Gewoonten, taal en gebruiken van een groep.",
       "uo": [
-       "Dat is «Traditie».",
-       "Dat is «Tolerantie».",
-       "Klopt: een geloof.",
-       "Dat is «Normen»."
+       "Nee, dat klopt niet.",
+       "Nee, dat klopt niet.",
+       "Klopt: gewoonten, taal en gebruiken van een groep.",
+       "Nee, dat klopt niet."
       ],
-      "uh": "Onthoud: «Religie» = een geloof."
+      "uh": "Gewoonten, taal en gebruiken van een groep."
      },
      {
-      "v": "Welk begrip hoort bij: \"een gewoonte die van generatie op generatie overgaat\"?",
+      "v": "Waarom werd Nederland minder religieus?",
       "o": [
-       "Religie",
-       "Vooroordeel",
-       "Identiteit",
-       "Traditie"
-      ],
-      "c": 3,
-      "d": 3,
-      "u": "«Traditie»: een gewoonte die van generatie op generatie overgaat.",
-      "uo": [
-       "«Religie» betekent een geloof.",
-       "«Vooroordeel» betekent oordeel zonder feiten.",
-       "«Identiteit» betekent gevoel van erbij horen.",
-       "Klopt, dit is «Traditie»."
-      ],
-      "uh": "Onthoud: «Traditie» = overgeleverde gewoonte."
-     },
-     {
-      "v": "Welke term hoort bij \"overgeleverde gewoonte\"?",
-      "o": [
-       "Traditie",
-       "Vooroordeel",
-       "Identiteit",
-       "Cultuur"
-      ],
-      "c": 0,
-      "d": 2,
-      "u": "«Traditie»: een gewoonte die van generatie op generatie overgaat.",
-      "uo": [
-       "Klopt, «Traditie» past hierbij.",
-       "«Vooroordeel» betekent oordeel zonder feiten.",
-       "«Identiteit» betekent gevoel van erbij horen.",
-       "«Cultuur» betekent gewoonten en waarden."
-      ],
-      "uh": "Onthoud: «Traditie» = overgeleverde gewoonte."
-     },
-     {
-      "v": "Wat betekent «Secularisatie»?",
-      "o": [
-       "het streven naar gelijke rechten en kansen",
-       "het minder belangrijk worden van religie",
-       "het verdragen van andere meningen en geloven",
-       "het gevoel bij een groep of gebied te horen"
-      ],
-      "c": 1,
-      "d": 1,
-      "u": "«Secularisatie»: het minder belangrijk worden van religie.",
-      "uo": [
-       "Dat is «Emancipatie».",
-       "Klopt: religie wordt minder.",
-       "Dat is «Tolerantie».",
-       "Dat is «Identiteit»."
-      ],
-      "uh": "Onthoud: «Secularisatie» = religie wordt minder."
-     },
-     {
-      "v": "Welk begrip hoort bij: \"het verdragen van andere meningen en geloven\"?",
-      "o": [
-       "Vooroordeel",
-       "Mentaliteit",
-       "Tolerantie",
-       "Cultuur"
-      ],
-      "c": 2,
-      "d": 3,
-      "u": "«Tolerantie»: het verdragen van andere meningen en geloven.",
-      "uo": [
-       "«Vooroordeel» betekent oordeel zonder feiten.",
-       "«Mentaliteit» betekent manier van denken.",
-       "Klopt, dit is «Tolerantie».",
-       "«Cultuur» betekent gewoonten en waarden."
-      ],
-      "uh": "Onthoud: «Tolerantie» = anderen verdragen."
-     },
-     {
-      "v": "Welke term hoort bij \"anderen verdragen\"?",
-      "o": [
-       "Mentaliteit",
-       "Cultuur",
-       "Traditie",
-       "Tolerantie"
-      ],
-      "c": 3,
-      "d": 2,
-      "u": "«Tolerantie»: het verdragen van andere meningen en geloven.",
-      "uo": [
-       "«Mentaliteit» betekent manier van denken.",
-       "«Cultuur» betekent gewoonten en waarden.",
-       "«Traditie» betekent overgeleverde gewoonte.",
-       "Klopt, «Tolerantie» past hierbij."
-      ],
-      "uh": "Onthoud: «Tolerantie» = anderen verdragen."
-     },
-     {
-      "v": "Wat betekent «Tolerantie»?",
-      "o": [
-       "het verdragen van andere meningen en geloven",
-       "een mening vooraf, zonder de feiten te kennen",
-       "de manier van denken van mensen in een bepaalde tijd",
-       "de gewoonten, gebruiken en waarden van een groep"
-      ],
-      "c": 0,
-      "d": 1,
-      "u": "«Tolerantie»: het verdragen van andere meningen en geloven.",
-      "uo": [
-       "Klopt: anderen verdragen.",
-       "Dat is «Vooroordeel».",
-       "Dat is «Mentaliteit».",
-       "Dat is «Cultuur»."
-      ],
-      "uh": "Onthoud: «Tolerantie» = anderen verdragen."
-     },
-     {
-      "v": "Welk begrip hoort bij: \"het streven naar gelijke rechten en kansen\"?",
-      "o": [
-       "Secularisatie",
-       "Emancipatie",
-       "Religie",
-       "Normen"
-      ],
-      "c": 1,
-      "d": 3,
-      "u": "«Emancipatie»: het streven naar gelijke rechten en kansen.",
-      "uo": [
-       "«Secularisatie» betekent religie wordt minder.",
-       "Klopt, dit is «Emancipatie».",
-       "«Religie» betekent een geloof.",
-       "«Normen» betekent gedragsregels."
-      ],
-      "uh": "Onthoud: «Emancipatie» = streven naar gelijkheid."
-     },
-     {
-      "v": "Welke term hoort bij \"gevoel van erbij horen\"?",
-      "o": [
-       "Waarden",
-       "Mentaliteit",
-       "Identiteit",
-       "Secularisatie"
-      ],
-      "c": 2,
-      "d": 2,
-      "u": "«Identiteit»: het gevoel bij een groep of gebied te horen.",
-      "uo": [
-       "«Waarden» betekent wat men belangrijk vindt.",
-       "«Mentaliteit» betekent manier van denken.",
-       "Klopt, «Identiteit» past hierbij.",
-       "«Secularisatie» betekent religie wordt minder."
-      ],
-      "uh": "Onthoud: «Identiteit» = gevoel van erbij horen."
-     },
-     {
-      "v": "Wat betekent «Standensamenleving»?",
-      "o": [
-       "het streven naar gelijke rechten en kansen",
-       "wat mensen belangrijk en nastrevenswaardig vinden",
-       "het gevoel bij een groep of gebied te horen",
-       "een samenleving met vaste maatschappelijke lagen"
-      ],
-      "c": 3,
-      "d": 1,
-      "u": "«Standensamenleving»: een samenleving met vaste maatschappelijke lagen.",
-      "uo": [
-       "Dat is «Emancipatie».",
-       "Dat is «Waarden».",
-       "Dat is «Identiteit».",
-       "Klopt: vaste standen."
-      ],
-      "uh": "Onthoud: «Standensamenleving» = vaste standen."
-     },
-     {
-      "v": "Welk begrip hoort bij: \"het gevoel bij een groep of gebied te horen\"?",
-      "o": [
-       "Identiteit",
-       "Cultuur",
-       "Waarden",
-       "Mentaliteit"
+       "Door secularisatie",
+       "Door meer kerken",
+       "Door meer regels",
+       "Door tradities"
       ],
       "c": 0,
       "d": 3,
-      "u": "«Identiteit»: het gevoel bij een groep of gebied te horen.",
+      "u": "Door secularisatie werd geloof minder belangrijk.",
       "uo": [
-       "Klopt, dit is «Identiteit».",
-       "«Cultuur» betekent gewoonten en waarden.",
-       "«Waarden» betekent wat men belangrijk vindt.",
-       "«Mentaliteit» betekent manier van denken."
+       "Klopt: door secularisatie werd geloof minder belangrijk.",
+       "Juist andersom.",
+       "Nee, dat klopt niet.",
+       "Nee, dat klopt niet."
       ],
-      "uh": "Onthoud: «Identiteit» = gevoel van erbij horen."
-     },
-     {
-      "v": "Wat betekent «Identiteit»?",
-      "o": [
-       "de gewoonten, gebruiken en waarden van een groep",
-       "het gevoel bij een groep of gebied te horen",
-       "wat mensen belangrijk en nastrevenswaardig vinden",
-       "de manier van denken van mensen in een bepaalde tijd"
-      ],
-      "c": 1,
-      "d": 1,
-      "u": "«Identiteit»: het gevoel bij een groep of gebied te horen.",
-      "uo": [
-       "Dat is «Cultuur».",
-       "Klopt: gevoel van erbij horen.",
-       "Dat is «Waarden».",
-       "Dat is «Mentaliteit»."
-      ],
-      "uh": "Onthoud: «Identiteit» = gevoel van erbij horen."
+      "uh": "Door secularisatie werd geloof minder belangrijk."
      }
     ],
     "begrippen": [
@@ -9026,498 +8741,213 @@ var VAKKEN_VMBO = [
     "nBeg": 0,
     "sv": [
      {
-      "v": "Welk begrip hoort bij: \"de belangrijkste wet met de regels van de staat\"?",
+      "v": "Wat is de Grondwet?",
       "o": [
-       "Grondwet",
-       "Grondrecht",
-       "Democratie",
-       "Verzorgingsstaat"
-      ],
-      "c": 0,
-      "d": 3,
-      "u": "«Grondwet»: de belangrijkste wet met de regels van de staat.",
-      "uo": [
-       "Klopt, dit is «Grondwet».",
-       "«Grondrecht» betekent recht voor iedereen.",
-       "«Democratie» betekent het volk kiest.",
-       "«Verzorgingsstaat» betekent staat zorgt voor burgers."
-      ],
-      "uh": "Onthoud: «Grondwet» = de hoogste wet."
-     },
-     {
-      "v": "Welke term hoort bij \"de hoogste wet\"?",
-      "o": [
-       "Democratie",
-       "Grondwet",
-       "Verzorgingsstaat",
-       "Trias Politica"
-      ],
-      "c": 1,
-      "d": 2,
-      "u": "«Grondwet»: de belangrijkste wet met de regels van de staat.",
-      "uo": [
-       "«Democratie» betekent het volk kiest.",
-       "Klopt, «Grondwet» past hierbij.",
-       "«Verzorgingsstaat» betekent staat zorgt voor burgers.",
-       "«Trias Politica» betekent scheiding van machten."
-      ],
-      "uh": "Onthoud: «Grondwet» = de hoogste wet."
-     },
-     {
-      "v": "Wat betekent «Grondwet»?",
-      "o": [
-       "een recht dat iedereen heeft, zoals vrijheid van meningsuiting",
-       "een bestuur waarin het volk zijn vertegenwoordigers kiest",
-       "de belangrijkste wet met de regels van de staat",
-       "een staat die zorgt voor het welzijn van de burgers"
-      ],
-      "c": 2,
-      "d": 1,
-      "u": "«Grondwet»: de belangrijkste wet met de regels van de staat.",
-      "uo": [
-       "Dat is «Grondrecht».",
-       "Dat is «Democratie».",
-       "Klopt: de hoogste wet.",
-       "Dat is «Verzorgingsstaat»."
-      ],
-      "uh": "Onthoud: «Grondwet» = de hoogste wet."
-     },
-     {
-      "v": "Welk begrip hoort bij: \"een recht dat iedereen heeft, zoals vrijheid van meningsuiting\"?",
-      "o": [
-       "Grondwet",
-       "Wetgevende macht",
-       "Trias Politica",
-       "Grondrecht"
-      ],
-      "c": 3,
-      "d": 3,
-      "u": "«Grondrecht»: een recht dat iedereen heeft, zoals vrijheid van meningsuiting.",
-      "uo": [
-       "«Grondwet» betekent de hoogste wet.",
-       "«Wetgevende macht» betekent maakt wetten.",
-       "«Trias Politica» betekent scheiding van machten.",
-       "Klopt, dit is «Grondrecht»."
-      ],
-      "uh": "Onthoud: «Grondrecht» = recht voor iedereen."
-     },
-     {
-      "v": "Welke term hoort bij \"recht voor iedereen\"?",
-      "o": [
-       "Grondrecht",
-       "Wetgevende macht",
-       "Trias Politica",
-       "Parlement"
-      ],
-      "c": 0,
-      "d": 2,
-      "u": "«Grondrecht»: een recht dat iedereen heeft, zoals vrijheid van meningsuiting.",
-      "uo": [
-       "Klopt, «Grondrecht» past hierbij.",
-       "«Wetgevende macht» betekent maakt wetten.",
-       "«Trias Politica» betekent scheiding van machten.",
-       "«Parlement» betekent de volksvertegenwoordiging."
-      ],
-      "uh": "Onthoud: «Grondrecht» = recht voor iedereen."
-     },
-     {
-      "v": "Wat betekent «Wetgevende macht»?",
-      "o": [
-       "de macht die de wetten uitvoert, de regering",
-       "de macht die wetten maakt",
-       "de macht die recht spreekt, de rechters",
-       "de gekozen Kamer die wetten maakt en de regering controleert"
+       "Een gewone wet",
+       "De belangrijkste wet",
+       "Een verdrag",
+       "Een advies"
       ],
       "c": 1,
       "d": 1,
-      "u": "«Wetgevende macht»: de macht die wetten maakt.",
+      "u": "De belangrijkste wet met de regels van de staat.",
       "uo": [
-       "Dat is «Uitvoerende macht».",
-       "Klopt: maakt wetten.",
-       "Dat is «Rechterlijke macht».",
-       "Dat is «Tweede Kamer»."
+       "Nee, de hoogste.",
+       "Klopt: de belangrijkste wet met de regels van de staat.",
+       "Nee, dat klopt niet.",
+       "Nee, dat klopt niet."
       ],
-      "uh": "Onthoud: «Wetgevende macht» = maakt wetten."
+      "uh": "De belangrijkste wet met de regels van de staat."
      },
      {
-      "v": "Welk begrip hoort bij: \"de scheiding in wetgevende, uitvoerende en rechterlijke macht\"?",
+      "v": "Wat is een grondrecht?",
       "o": [
-       "Democratie",
-       "Uitvoerende macht",
-       "Trias Politica",
-       "Verzorgingsstaat"
-      ],
-      "c": 2,
-      "d": 3,
-      "u": "«Trias Politica»: de scheiding in wetgevende, uitvoerende en rechterlijke macht.",
-      "uo": [
-       "«Democratie» betekent het volk kiest.",
-       "«Uitvoerende macht» betekent voert wetten uit.",
-       "Klopt, dit is «Trias Politica».",
-       "«Verzorgingsstaat» betekent staat zorgt voor burgers."
-      ],
-      "uh": "Onthoud: «Trias Politica» = scheiding van machten."
-     },
-     {
-      "v": "Welke term hoort bij \"scheiding van machten\"?",
-      "o": [
-       "Uitvoerende macht",
-       "Verzorgingsstaat",
-       "Regering",
-       "Trias Politica"
-      ],
-      "c": 3,
-      "d": 2,
-      "u": "«Trias Politica»: de scheiding in wetgevende, uitvoerende en rechterlijke macht.",
-      "uo": [
-       "«Uitvoerende macht» betekent voert wetten uit.",
-       "«Verzorgingsstaat» betekent staat zorgt voor burgers.",
-       "«Regering» betekent koning en ministers.",
-       "Klopt, «Trias Politica» past hierbij."
-      ],
-      "uh": "Onthoud: «Trias Politica» = scheiding van machten."
-     },
-     {
-      "v": "Wat betekent «Uitvoerende macht»?",
-      "o": [
-       "de macht die de wetten uitvoert, de regering",
-       "de macht die wetten maakt",
-       "de macht die recht spreekt, de rechters",
-       "een recht dat iedereen heeft, zoals vrijheid van meningsuiting"
-      ],
-      "c": 0,
-      "d": 1,
-      "u": "«Uitvoerende macht»: de macht die de wetten uitvoert, de regering.",
-      "uo": [
-       "Klopt: voert wetten uit.",
-       "Dat is «Wetgevende macht».",
-       "Dat is «Rechterlijke macht».",
-       "Dat is «Grondrecht»."
-      ],
-      "uh": "Onthoud: «Uitvoerende macht» = voert wetten uit."
-     },
-     {
-      "v": "Welk begrip hoort bij: \"de macht die wetten maakt\"?",
-      "o": [
-       "Uitvoerende macht",
-       "Wetgevende macht",
-       "Rechterlijke macht",
-       "Tweede Kamer"
-      ],
-      "c": 1,
-      "d": 3,
-      "u": "«Wetgevende macht»: de macht die wetten maakt.",
-      "uo": [
-       "«Uitvoerende macht» betekent voert wetten uit.",
-       "Klopt, dit is «Wetgevende macht».",
-       "«Rechterlijke macht» betekent spreekt recht.",
-       "«Tweede Kamer» betekent gekozen, controleert regering."
-      ],
-      "uh": "Onthoud: «Wetgevende macht» = maakt wetten."
-     },
-     {
-      "v": "Welke term hoort bij \"koning en ministers\"?",
-      "o": [
-       "Democratie",
-       "Verzorgingsstaat",
-       "Regering",
-       "Grondwet"
+       "Een plicht",
+       "Een belasting",
+       "Een recht voor iedereen",
+       "Een straf"
       ],
       "c": 2,
       "d": 2,
-      "u": "«Regering»: de koning en de ministers samen.",
+      "u": "Een recht dat iedereen heeft, zoals vrije meningsuiting.",
       "uo": [
-       "«Democratie» betekent het volk kiest.",
-       "«Verzorgingsstaat» betekent staat zorgt voor burgers.",
-       "Klopt, «Regering» past hierbij.",
-       "«Grondwet» betekent de hoogste wet."
+       "Nee, dat klopt niet.",
+       "Nee, dat klopt niet.",
+       "Klopt: een recht dat iedereen heeft, zoals vrije meningsuiting.",
+       "Nee, dat klopt niet."
       ],
-      "uh": "Onthoud: «Regering» = koning en ministers."
+      "uh": "Een recht dat iedereen heeft, zoals vrije meningsuiting."
      },
      {
-      "v": "Wat betekent «Rechterlijke macht»?",
+      "v": "Wat regelt de Trias Politica?",
       "o": [
-       "de macht die wetten maakt",
-       "de macht die de wetten uitvoert, de regering",
-       "een recht dat iedereen heeft, zoals vrijheid van meningsuiting",
-       "de macht die recht spreekt, de rechters"
-      ],
-      "c": 3,
-      "d": 1,
-      "u": "«Rechterlijke macht»: de macht die recht spreekt, de rechters.",
-      "uo": [
-       "Dat is «Wetgevende macht».",
-       "Dat is «Uitvoerende macht».",
-       "Dat is «Grondrecht».",
-       "Klopt: spreekt recht."
-      ],
-      "uh": "Onthoud: «Rechterlijke macht» = spreekt recht."
-     },
-     {
-      "v": "Welk begrip hoort bij: \"de macht die de wetten uitvoert, de regering\"?",
-      "o": [
-       "Uitvoerende macht",
-       "Wetgevende macht",
-       "Rechterlijke macht",
-       "Grondrecht"
-      ],
-      "c": 0,
-      "d": 3,
-      "u": "«Uitvoerende macht»: de macht die de wetten uitvoert, de regering.",
-      "uo": [
-       "Klopt, dit is «Uitvoerende macht».",
-       "«Wetgevende macht» betekent maakt wetten.",
-       "«Rechterlijke macht» betekent spreekt recht.",
-       "«Grondrecht» betekent recht voor iedereen."
-      ],
-      "uh": "Onthoud: «Uitvoerende macht» = voert wetten uit."
-     },
-     {
-      "v": "Welke term hoort bij \"de volksvertegenwoordiging\"?",
-      "o": [
-       "Democratie",
-       "Parlement",
-       "Rechterlijke macht",
-       "Tweede Kamer"
-      ],
-      "c": 1,
-      "d": 2,
-      "u": "«Parlement»: de volksvertegenwoordiging: de Eerste en Tweede Kamer.",
-      "uo": [
-       "«Democratie» betekent het volk kiest.",
-       "Klopt, «Parlement» past hierbij.",
-       "«Rechterlijke macht» betekent spreekt recht.",
-       "«Tweede Kamer» betekent gekozen, controleert regering."
-      ],
-      "uh": "Onthoud: «Parlement» = de volksvertegenwoordiging."
-     },
-     {
-      "v": "Wat betekent «Regering»?",
-      "o": [
-       "de volksvertegenwoordiging: de Eerste en Tweede Kamer",
-       "een bestuur waarin het volk zijn vertegenwoordigers kiest",
-       "de koning en de ministers samen",
-       "een staat die zorgt voor het welzijn van de burgers"
-      ],
-      "c": 2,
-      "d": 1,
-      "u": "«Regering»: de koning en de ministers samen.",
-      "uo": [
-       "Dat is «Parlement».",
-       "Dat is «Democratie».",
-       "Klopt: koning en ministers.",
-       "Dat is «Verzorgingsstaat»."
-      ],
-      "uh": "Onthoud: «Regering» = koning en ministers."
-     },
-     {
-      "v": "Welk begrip hoort bij: \"de koning en de ministers samen\"?",
-      "o": [
-       "Parlement",
-       "Democratie",
-       "Verzorgingsstaat",
-       "Regering"
-      ],
-      "c": 3,
-      "d": 3,
-      "u": "«Regering»: de koning en de ministers samen.",
-      "uo": [
-       "«Parlement» betekent de volksvertegenwoordiging.",
-       "«Democratie» betekent het volk kiest.",
-       "«Verzorgingsstaat» betekent staat zorgt voor burgers.",
-       "Klopt, dit is «Regering»."
-      ],
-      "uh": "Onthoud: «Regering» = koning en ministers."
-     },
-     {
-      "v": "Welke term hoort bij \"gekozen, controleert regering\"?",
-      "o": [
-       "Tweede Kamer",
-       "Rechterlijke macht",
-       "Uitvoerende macht",
-       "Grondwet"
+       "De scheiding van machten",
+       "De belasting",
+       "De euro",
+       "Het leger"
       ],
       "c": 0,
       "d": 2,
-      "u": "«Tweede Kamer»: de gekozen Kamer die wetten maakt en de regering controleert.",
+      "u": "Wetgevende, uitvoerende en rechterlijke macht apart.",
       "uo": [
-       "Klopt, «Tweede Kamer» past hierbij.",
-       "«Rechterlijke macht» betekent spreekt recht.",
-       "«Uitvoerende macht» betekent voert wetten uit.",
-       "«Grondwet» betekent de hoogste wet."
+       "Klopt: wetgevende, uitvoerende en rechterlijke macht apart.",
+       "Nee, dat klopt niet.",
+       "Nee, dat klopt niet.",
+       "Nee, dat klopt niet."
       ],
-      "uh": "Onthoud: «Tweede Kamer» = gekozen, controleert regering."
+      "uh": "Wetgevende, uitvoerende en rechterlijke macht apart."
      },
      {
-      "v": "Wat betekent «Parlement»?",
+      "v": "Wie maakt de wetten?",
       "o": [
-       "de koning en de ministers samen",
-       "de volksvertegenwoordiging: de Eerste en Tweede Kamer",
-       "een bestuur waarin het volk zijn vertegenwoordigers kiest",
-       "de macht die recht spreekt, de rechters"
-      ],
-      "c": 1,
-      "d": 1,
-      "u": "«Parlement»: de volksvertegenwoordiging: de Eerste en Tweede Kamer.",
-      "uo": [
-       "Dat is «Regering».",
-       "Klopt: de volksvertegenwoordiging.",
-       "Dat is «Democratie».",
-       "Dat is «Rechterlijke macht»."
-      ],
-      "uh": "Onthoud: «Parlement» = de volksvertegenwoordiging."
-     },
-     {
-      "v": "Welk begrip hoort bij: \"de volksvertegenwoordiging: de Eerste en Tweede Kamer\"?",
-      "o": [
-       "Regering",
-       "Democratie",
-       "Parlement",
-       "Rechterlijke macht"
-      ],
-      "c": 2,
-      "d": 3,
-      "u": "«Parlement»: de volksvertegenwoordiging: de Eerste en Tweede Kamer.",
-      "uo": [
-       "«Regering» betekent koning en ministers.",
-       "«Democratie» betekent het volk kiest.",
-       "Klopt, dit is «Parlement».",
-       "«Rechterlijke macht» betekent spreekt recht."
-      ],
-      "uh": "Onthoud: «Parlement» = de volksvertegenwoordiging."
-     },
-     {
-      "v": "Welke term hoort bij \"keurt wetten goed of af\"?",
-      "o": [
-       "Rechterlijke macht",
-       "Uitvoerende macht",
-       "Grondwet",
-       "Eerste Kamer"
+       "De rechter",
+       "De koning alleen",
+       "De politie",
+       "De wetgevende macht"
       ],
       "c": 3,
       "d": 2,
-      "u": "«Eerste Kamer»: de Kamer die wetsvoorstellen goed- of afkeurt.",
+      "u": "De wetgevende macht maakt wetten.",
       "uo": [
-       "«Rechterlijke macht» betekent spreekt recht.",
-       "«Uitvoerende macht» betekent voert wetten uit.",
-       "«Grondwet» betekent de hoogste wet.",
-       "Klopt, «Eerste Kamer» past hierbij."
+       "De rechter spreekt recht.",
+       "Niet alleen.",
+       "Nee, dat klopt niet.",
+       "Klopt: de wetgevende macht maakt wetten."
       ],
-      "uh": "Onthoud: «Eerste Kamer» = keurt wetten goed of af."
+      "uh": "De wetgevende macht maakt wetten."
      },
      {
-      "v": "Wat betekent «Eerste Kamer»?",
+      "v": "Wie voert de wetten uit?",
       "o": [
-       "de Kamer die wetsvoorstellen goed- of afkeurt",
-       "de gekozen Kamer die wetten maakt en de regering controleert",
-       "de macht die recht spreekt, de rechters",
-       "de macht die de wetten uitvoert, de regering"
-      ],
-      "c": 0,
-      "d": 1,
-      "u": "«Eerste Kamer»: de Kamer die wetsvoorstellen goed- of afkeurt.",
-      "uo": [
-       "Klopt: keurt wetten goed of af.",
-       "Dat is «Tweede Kamer».",
-       "Dat is «Rechterlijke macht».",
-       "Dat is «Uitvoerende macht»."
-      ],
-      "uh": "Onthoud: «Eerste Kamer» = keurt wetten goed of af."
-     },
-     {
-      "v": "Welk begrip hoort bij: \"de gekozen Kamer die wetten maakt en de regering controleert\"?",
-      "o": [
-       "Eerste Kamer",
-       "Tweede Kamer",
-       "Rechterlijke macht",
-       "Uitvoerende macht"
+       "De rechterlijke macht",
+       "De uitvoerende macht",
+       "Alleen de burgers",
+       "De Eerste Kamer"
       ],
       "c": 1,
-      "d": 3,
-      "u": "«Tweede Kamer»: de gekozen Kamer die wetten maakt en de regering controleert.",
+      "d": 2,
+      "u": "De regering voert wetten uit.",
       "uo": [
-       "«Eerste Kamer» betekent keurt wetten goed of af.",
-       "Klopt, dit is «Tweede Kamer».",
-       "«Rechterlijke macht» betekent spreekt recht.",
-       "«Uitvoerende macht» betekent voert wetten uit."
+       "Die spreekt recht.",
+       "Klopt: de regering voert wetten uit.",
+       "Nee, dat klopt niet.",
+       "Die keurt goed of af."
       ],
-      "uh": "Onthoud: «Tweede Kamer» = gekozen, controleert regering."
+      "uh": "De regering voert wetten uit."
      },
      {
-      "v": "Welke term hoort bij \"het volk kiest\"?",
+      "v": "Wie spreekt recht?",
       "o": [
-       "Eerste Kamer",
-       "Grondrecht",
-       "Democratie",
-       "Grondwet"
+       "De regering",
+       "Het parlement",
+       "De rechterlijke macht",
+       "De koning"
       ],
       "c": 2,
       "d": 2,
-      "u": "«Democratie»: een bestuur waarin het volk zijn vertegenwoordigers kiest.",
+      "u": "De rechters spreken recht.",
       "uo": [
-       "«Eerste Kamer» betekent keurt wetten goed of af.",
-       "«Grondrecht» betekent recht voor iedereen.",
-       "Klopt, «Democratie» past hierbij.",
-       "«Grondwet» betekent de hoogste wet."
+       "Die voert uit.",
+       "Dat controleert.",
+       "Klopt: de rechters spreken recht.",
+       "Nee, dat klopt niet."
       ],
-      "uh": "Onthoud: «Democratie» = het volk kiest."
+      "uh": "De rechters spreken recht."
      },
      {
-      "v": "Wat betekent «Democratie»?",
+      "v": "Wat is de Tweede Kamer?",
       "o": [
-       "de Kamer die wetsvoorstellen goed- of afkeurt",
-       "een recht dat iedereen heeft, zoals vrijheid van meningsuiting",
-       "de belangrijkste wet met de regels van de staat",
-       "een bestuur waarin het volk zijn vertegenwoordigers kiest"
+       "De gekozen volksvertegenwoordiging",
+       "De regering",
+       "De rechtbank",
+       "De koning"
+      ],
+      "c": 0,
+      "d": 2,
+      "u": "Gekozen, maakt en controleert wetten.",
+      "uo": [
+       "Klopt: gekozen, maakt en controleert wetten.",
+       "Dat is iets anders.",
+       "Nee, dat klopt niet.",
+       "Nee, dat klopt niet."
+      ],
+      "uh": "Gekozen, maakt en controleert wetten."
+     },
+     {
+      "v": "Wat doet de Eerste Kamer?",
+      "o": [
+       "Wetten maken",
+       "Recht spreken",
+       "Belasting innen",
+       "Wetten goed- of afkeuren"
       ],
       "c": 3,
-      "d": 1,
-      "u": "«Democratie»: een bestuur waarin het volk zijn vertegenwoordigers kiest.",
+      "d": 2,
+      "u": "De Eerste Kamer keurt wetten goed of af.",
       "uo": [
-       "Dat is «Eerste Kamer».",
-       "Dat is «Grondrecht».",
-       "Dat is «Grondwet».",
-       "Klopt: het volk kiest."
+       "Dat doet vooral de Tweede Kamer.",
+       "Nee, dat klopt niet.",
+       "Nee, dat klopt niet.",
+       "Klopt: de Eerste Kamer keurt wetten goed of af."
       ],
-      "uh": "Onthoud: «Democratie» = het volk kiest."
+      "uh": "De Eerste Kamer keurt wetten goed of af."
      },
      {
-      "v": "Welk begrip hoort bij: \"de Kamer die wetsvoorstellen goed- of afkeurt\"?",
+      "v": "Wat is een democratie?",
       "o": [
-       "Eerste Kamer",
-       "Tweede Kamer",
-       "Rechterlijke macht",
-       "Uitvoerende macht"
+       "Eén persoon beslist",
+       "Het volk kiest",
+       "Er zijn geen regels",
+       "De koning beslist alles"
+      ],
+      "c": 1,
+      "d": 1,
+      "u": "Het volk kiest zijn vertegenwoordigers.",
+      "uo": [
+       "Dat is een dictatuur.",
+       "Klopt: het volk kiest zijn vertegenwoordigers.",
+       "Nee, dat klopt niet.",
+       "Nee, dat klopt niet."
+      ],
+      "uh": "Het volk kiest zijn vertegenwoordigers."
+     },
+     {
+      "v": "Wie horen bij de regering?",
+      "o": [
+       "De rechters",
+       "De burgers",
+       "De koning en ministers",
+       "De Tweede Kamer"
+      ],
+      "c": 2,
+      "d": 2,
+      "u": "De koning en de ministers samen.",
+      "uo": [
+       "Nee, dat klopt niet.",
+       "Nee, dat klopt niet.",
+       "Klopt: de koning en de ministers samen.",
+       "Die controleert de regering."
+      ],
+      "uh": "De koning en de ministers samen."
+     },
+     {
+      "v": "Waarom is de macht verdeeld in drieën?",
+      "o": [
+       "Om machtsmisbruik te voorkomen",
+       "Om belasting te innen",
+       "Om oorlog te voeren",
+       "Om geld te sparen"
       ],
       "c": 0,
       "d": 3,
-      "u": "«Eerste Kamer»: de Kamer die wetsvoorstellen goed- of afkeurt.",
+      "u": "Zo controleren de machten elkaar.",
       "uo": [
-       "Klopt, dit is «Eerste Kamer».",
-       "«Tweede Kamer» betekent gekozen, controleert regering.",
-       "«Rechterlijke macht» betekent spreekt recht.",
-       "«Uitvoerende macht» betekent voert wetten uit."
+       "Klopt: zo controleren de machten elkaar.",
+       "Nee, dat klopt niet.",
+       "Nee, dat klopt niet.",
+       "Nee, dat klopt niet."
       ],
-      "uh": "Onthoud: «Eerste Kamer» = keurt wetten goed of af."
-     },
-     {
-      "v": "Welke term hoort bij \"staat zorgt voor burgers\"?",
-      "o": [
-       "Tweede Kamer",
-       "Verzorgingsstaat",
-       "Regering",
-       "Wetgevende macht"
-      ],
-      "c": 1,
-      "d": 2,
-      "u": "«Verzorgingsstaat»: een staat die zorgt voor het welzijn van de burgers.",
-      "uo": [
-       "«Tweede Kamer» betekent gekozen, controleert regering.",
-       "Klopt, «Verzorgingsstaat» past hierbij.",
-       "«Regering» betekent koning en ministers.",
-       "«Wetgevende macht» betekent maakt wetten."
-      ],
-      "uh": "Onthoud: «Verzorgingsstaat» = staat zorgt voor burgers."
+      "uh": "Zo controleren de machten elkaar."
      }
     ],
     "begrippen": [
@@ -9587,498 +9017,213 @@ var VAKKEN_VMBO = [
     "nBeg": 0,
     "sv": [
      {
-      "v": "Welk begrip hoort bij: \"een gebouw waar met machines massaal wordt geproduceerd\"?",
+      "v": "Wat veranderde tijdens de industriële revolutie?",
       "o": [
-       "Fabriek",
-       "Stoommachine",
-       "Vakbond",
-       "Kinderarbeid"
-      ],
-      "c": 0,
-      "d": 3,
-      "u": "«Fabriek»: een gebouw waar met machines massaal wordt geproduceerd.",
-      "uo": [
-       "Klopt, dit is «Fabriek».",
-       "«Stoommachine» betekent machine op stoom.",
-       "«Vakbond» betekent komt op voor arbeiders.",
-       "«Kinderarbeid» betekent kinderen in de fabriek."
-      ],
-      "uh": "Onthoud: «Fabriek» = gebouw met machines."
-     },
-     {
-      "v": "Welke term hoort bij \"gebouw met machines\"?",
-      "o": [
-       "Vakbond",
-       "Fabriek",
-       "Kinderarbeid",
-       "Massaproductie"
+       "Alles bleef handwerk",
+       "Productie ging naar fabrieken",
+       "Er kwamen minder machines",
+       "Steden krompen"
       ],
       "c": 1,
       "d": 2,
-      "u": "«Fabriek»: een gebouw waar met machines massaal wordt geproduceerd.",
+      "u": "Productie met machines in fabrieken.",
       "uo": [
-       "«Vakbond» betekent komt op voor arbeiders.",
-       "Klopt, «Fabriek» past hierbij.",
-       "«Kinderarbeid» betekent kinderen in de fabriek.",
-       "«Massaproductie» betekent veel tegelijk maken."
+       "Juist niet.",
+       "Klopt: productie met machines in fabrieken.",
+       "Juist meer.",
+       "Steden groeiden."
       ],
-      "uh": "Onthoud: «Fabriek» = gebouw met machines."
+      "uh": "Productie met machines in fabrieken."
      },
      {
-      "v": "Wat betekent «Industriële revolutie»?",
+      "v": "Wat dreef de fabrieken en treinen aan?",
       "o": [
-       "het in grote hoeveelheden maken van producten",
-       "het neerleggen van het werk om eisen kracht bij te zetten",
-       "de overgang naar productie met machines in fabrieken",
-       "een organisatie die opkomt voor arbeiders"
-      ],
-      "c": 2,
-      "d": 1,
-      "u": "«Industriële revolutie»: de overgang naar productie met machines in fabrieken.",
-      "uo": [
-       "Dat is «Massaproductie».",
-       "Dat is «Staking».",
-       "Klopt: productie met machines.",
-       "Dat is «Vakbond»."
-      ],
-      "uh": "Onthoud: «Industriële revolutie» = productie met machines."
-     },
-     {
-      "v": "Welk begrip hoort bij: \"de groei van steden door de industrie\"?",
-      "o": [
-       "Massaproductie",
-       "Sociale kwestie",
-       "Kinderarbeid",
-       "Verstedelijking"
-      ],
-      "c": 3,
-      "d": 3,
-      "u": "«Verstedelijking»: de groei van steden door de industrie.",
-      "uo": [
-       "«Massaproductie» betekent veel tegelijk maken.",
-       "«Sociale kwestie» betekent ellende van arbeiders.",
-       "«Kinderarbeid» betekent kinderen in de fabriek.",
-       "Klopt, dit is «Verstedelijking»."
-      ],
-      "uh": "Onthoud: «Verstedelijking» = steden groeien."
-     },
-     {
-      "v": "Welke term hoort bij \"machine op stoom\"?",
-      "o": [
-       "Stoommachine",
-       "Vakbond",
-       "Arbeider",
-       "Industriële revolutie"
-      ],
-      "c": 0,
-      "d": 2,
-      "u": "«Stoommachine»: een machine die met stoom fabrieken en treinen aandreef.",
-      "uo": [
-       "Klopt, «Stoommachine» past hierbij.",
-       "«Vakbond» betekent komt op voor arbeiders.",
-       "«Arbeider» betekent fabriekswerker.",
-       "«Industriële revolutie» betekent productie met machines."
-      ],
-      "uh": "Onthoud: «Stoommachine» = machine op stoom."
-     },
-     {
-      "v": "Wat betekent «Fabriek»?",
-      "o": [
-       "een machine die met stoom fabrieken en treinen aandreef",
-       "een gebouw waar met machines massaal wordt geproduceerd",
-       "een organisatie die opkomt voor arbeiders",
-       "het laten werken van kinderen in fabrieken"
-      ],
-      "c": 1,
-      "d": 1,
-      "u": "«Fabriek»: een gebouw waar met machines massaal wordt geproduceerd.",
-      "uo": [
-       "Dat is «Stoommachine».",
-       "Klopt: gebouw met machines.",
-       "Dat is «Vakbond».",
-       "Dat is «Kinderarbeid»."
-      ],
-      "uh": "Onthoud: «Fabriek» = gebouw met machines."
-     },
-     {
-      "v": "Welk begrip hoort bij: \"de slechte leef- en werkomstandigheden van arbeiders\"?",
-      "o": [
-       "Kinderarbeid",
-       "Verstedelijking",
-       "Sociale kwestie",
-       "Arbeider"
-      ],
-      "c": 2,
-      "d": 3,
-      "u": "«Sociale kwestie»: de slechte leef- en werkomstandigheden van arbeiders.",
-      "uo": [
-       "«Kinderarbeid» betekent kinderen in de fabriek.",
-       "«Verstedelijking» betekent steden groeien.",
-       "Klopt, dit is «Sociale kwestie».",
-       "«Arbeider» betekent fabriekswerker."
-      ],
-      "uh": "Onthoud: «Sociale kwestie» = ellende van arbeiders."
-     },
-     {
-      "v": "Welke term hoort bij \"steden groeien\"?",
-      "o": [
-       "Sociale kwestie",
-       "Kinderarbeid",
-       "Arbeider",
-       "Verstedelijking"
-      ],
-      "c": 3,
-      "d": 2,
-      "u": "«Verstedelijking»: de groei van steden door de industrie.",
-      "uo": [
-       "«Sociale kwestie» betekent ellende van arbeiders.",
-       "«Kinderarbeid» betekent kinderen in de fabriek.",
-       "«Arbeider» betekent fabriekswerker.",
-       "Klopt, «Verstedelijking» past hierbij."
-      ],
-      "uh": "Onthoud: «Verstedelijking» = steden groeien."
-     },
-     {
-      "v": "Wat betekent «Stoommachine»?",
-      "o": [
-       "een machine die met stoom fabrieken en treinen aandreef",
-       "een gebouw waar met machines massaal wordt geproduceerd",
-       "een organisatie die opkomt voor arbeiders",
-       "iemand die tegen loon in een fabriek werkt"
-      ],
-      "c": 0,
-      "d": 1,
-      "u": "«Stoommachine»: een machine die met stoom fabrieken en treinen aandreef.",
-      "uo": [
-       "Klopt: machine op stoom.",
-       "Dat is «Fabriek».",
-       "Dat is «Vakbond».",
-       "Dat is «Arbeider»."
-      ],
-      "uh": "Onthoud: «Stoommachine» = machine op stoom."
-     },
-     {
-      "v": "Welk begrip hoort bij: \"het laten werken van kinderen in fabrieken\"?",
-      "o": [
-       "Sociale kwestie",
-       "Kinderarbeid",
-       "Vakbond",
-       "Arbeider"
-      ],
-      "c": 1,
-      "d": 3,
-      "u": "«Kinderarbeid»: het laten werken van kinderen in fabrieken.",
-      "uo": [
-       "«Sociale kwestie» betekent ellende van arbeiders.",
-       "Klopt, dit is «Kinderarbeid».",
-       "«Vakbond» betekent komt op voor arbeiders.",
-       "«Arbeider» betekent fabriekswerker."
-      ],
-      "uh": "Onthoud: «Kinderarbeid» = kinderen in de fabriek."
-     },
-     {
-      "v": "Welke term hoort bij \"ellende van arbeiders\"?",
-      "o": [
-       "Verstedelijking",
-       "Arbeider",
-       "Sociale kwestie",
-       "Vakbond"
+       "Meteen elektriciteit",
+       "De wind",
+       "De stoommachine",
+       "Zonne-energie"
       ],
       "c": 2,
       "d": 2,
-      "u": "«Sociale kwestie»: de slechte leef- en werkomstandigheden van arbeiders.",
+      "u": "De stoommachine.",
       "uo": [
-       "«Verstedelijking» betekent steden groeien.",
-       "«Arbeider» betekent fabriekswerker.",
-       "Klopt, «Sociale kwestie» past hierbij.",
-       "«Vakbond» betekent komt op voor arbeiders."
+       "Kwam later.",
+       "Nee, dat klopt niet.",
+       "Klopt: de stoommachine.",
+       "Nee, dat klopt niet."
       ],
-      "uh": "Onthoud: «Sociale kwestie» = ellende van arbeiders."
+      "uh": "De stoommachine."
      },
      {
-      "v": "Wat betekent «Verstedelijking»?",
+      "v": "Wat was de sociale kwestie?",
       "o": [
-       "het in grote hoeveelheden maken van producten",
-       "de slechte leef- en werkomstandigheden van arbeiders",
-       "het laten werken van kinderen in fabrieken",
-       "de groei van steden door de industrie"
-      ],
-      "c": 3,
-      "d": 1,
-      "u": "«Verstedelijking»: de groei van steden door de industrie.",
-      "uo": [
-       "Dat is «Massaproductie».",
-       "Dat is «Sociale kwestie».",
-       "Dat is «Kinderarbeid».",
-       "Klopt: steden groeien."
-      ],
-      "uh": "Onthoud: «Verstedelijking» = steden groeien."
-     },
-     {
-      "v": "Welk begrip hoort bij: \"iemand die tegen loon in een fabriek werkt\"?",
-      "o": [
-       "Arbeider",
-       "Vakbond",
-       "Socialisme",
-       "Massaproductie"
-      ],
-      "c": 0,
-      "d": 3,
-      "u": "«Arbeider»: iemand die tegen loon in een fabriek werkt.",
-      "uo": [
-       "Klopt, dit is «Arbeider».",
-       "«Vakbond» betekent komt op voor arbeiders.",
-       "«Socialisme» betekent gelijkheid voor arbeiders.",
-       "«Massaproductie» betekent veel tegelijk maken."
-      ],
-      "uh": "Onthoud: «Arbeider» = fabriekswerker."
-     },
-     {
-      "v": "Welke term hoort bij \"kinderen in de fabriek\"?",
-      "o": [
-       "Vakbond",
-       "Kinderarbeid",
-       "Arbeider",
-       "Industriële revolutie"
-      ],
-      "c": 1,
-      "d": 2,
-      "u": "«Kinderarbeid»: het laten werken van kinderen in fabrieken.",
-      "uo": [
-       "«Vakbond» betekent komt op voor arbeiders.",
-       "Klopt, «Kinderarbeid» past hierbij.",
-       "«Arbeider» betekent fabriekswerker.",
-       "«Industriële revolutie» betekent productie met machines."
-      ],
-      "uh": "Onthoud: «Kinderarbeid» = kinderen in de fabriek."
-     },
-     {
-      "v": "Wat betekent «Kinderarbeid»?",
-      "o": [
-       "de slechte leef- en werkomstandigheden van arbeiders",
-       "een organisatie die opkomt voor arbeiders",
-       "het laten werken van kinderen in fabrieken",
-       "iemand die tegen loon in een fabriek werkt"
-      ],
-      "c": 2,
-      "d": 1,
-      "u": "«Kinderarbeid»: het laten werken van kinderen in fabrieken.",
-      "uo": [
-       "Dat is «Sociale kwestie».",
-       "Dat is «Vakbond».",
-       "Klopt: kinderen in de fabriek.",
-       "Dat is «Arbeider»."
-      ],
-      "uh": "Onthoud: «Kinderarbeid» = kinderen in de fabriek."
-     },
-     {
-      "v": "Welk begrip hoort bij: \"een organisatie die opkomt voor arbeiders\"?",
-      "o": [
-       "Staking",
-       "Kinderarbeid",
-       "Verstedelijking",
-       "Vakbond"
-      ],
-      "c": 3,
-      "d": 3,
-      "u": "«Vakbond»: een organisatie die opkomt voor arbeiders.",
-      "uo": [
-       "«Staking» betekent het werk neerleggen.",
-       "«Kinderarbeid» betekent kinderen in de fabriek.",
-       "«Verstedelijking» betekent steden groeien.",
-       "Klopt, dit is «Vakbond»."
-      ],
-      "uh": "Onthoud: «Vakbond» = komt op voor arbeiders."
-     },
-     {
-      "v": "Welke term hoort bij \"fabriekswerker\"?",
-      "o": [
-       "Arbeider",
-       "Socialisme",
-       "Massaproductie",
-       "Industriële revolutie"
+       "Slechte omstandigheden van arbeiders",
+       "Een nieuwe wet",
+       "Een oorlog",
+       "Een belasting"
       ],
       "c": 0,
       "d": 2,
-      "u": "«Arbeider»: iemand die tegen loon in een fabriek werkt.",
+      "u": "De slechte leef- en werkomstandigheden.",
       "uo": [
-       "Klopt, «Arbeider» past hierbij.",
-       "«Socialisme» betekent gelijkheid voor arbeiders.",
-       "«Massaproductie» betekent veel tegelijk maken.",
-       "«Industriële revolutie» betekent productie met machines."
+       "Klopt: de slechte leef- en werkomstandigheden.",
+       "Nee, dat klopt niet.",
+       "Nee, dat klopt niet.",
+       "Nee, dat klopt niet."
       ],
-      "uh": "Onthoud: «Arbeider» = fabriekswerker."
+      "uh": "De slechte leef- en werkomstandigheden."
      },
      {
-      "v": "Wat betekent «Arbeider»?",
+      "v": "Wat deden arbeiders om betere omstandigheden af te dwingen?",
       "o": [
-       "een organisatie die opkomt voor arbeiders",
-       "iemand die tegen loon in een fabriek werkt",
-       "een stroming die opkomt voor gelijkheid en de arbeiders",
-       "het in grote hoeveelheden maken van producten"
-      ],
-      "c": 1,
-      "d": 1,
-      "u": "«Arbeider»: iemand die tegen loon in een fabriek werkt.",
-      "uo": [
-       "Dat is «Vakbond».",
-       "Klopt: fabriekswerker.",
-       "Dat is «Socialisme».",
-       "Dat is «Massaproductie»."
-      ],
-      "uh": "Onthoud: «Arbeider» = fabriekswerker."
-     },
-     {
-      "v": "Welk begrip hoort bij: \"het neerleggen van het werk om eisen kracht bij te zetten\"?",
-      "o": [
-       "Vakbond",
-       "Kinderarbeid",
-       "Staking",
-       "Verstedelijking"
-      ],
-      "c": 2,
-      "d": 3,
-      "u": "«Staking»: het neerleggen van het werk om eisen kracht bij te zetten.",
-      "uo": [
-       "«Vakbond» betekent komt op voor arbeiders.",
-       "«Kinderarbeid» betekent kinderen in de fabriek.",
-       "Klopt, dit is «Staking».",
-       "«Verstedelijking» betekent steden groeien."
-      ],
-      "uh": "Onthoud: «Staking» = het werk neerleggen."
-     },
-     {
-      "v": "Welke term hoort bij \"komt op voor arbeiders\"?",
-      "o": [
-       "Kinderarbeid",
-       "Verstedelijking",
-       "Massaproductie",
-       "Vakbond"
+       "Belasting betalen",
+       "Emigreren",
+       "Niets",
+       "Staken en vakbonden vormen"
       ],
       "c": 3,
-      "d": 2,
-      "u": "«Vakbond»: een organisatie die opkomt voor arbeiders.",
+      "d": 3,
+      "u": "Ze staakten en verenigden zich in vakbonden.",
       "uo": [
-       "«Kinderarbeid» betekent kinderen in de fabriek.",
-       "«Verstedelijking» betekent steden groeien.",
-       "«Massaproductie» betekent veel tegelijk maken.",
-       "Klopt, «Vakbond» past hierbij."
+       "Nee, dat klopt niet.",
+       "Niet vooral.",
+       "Ze kwamen juist in actie.",
+       "Klopt: ze staakten en verenigden zich in vakbonden."
       ],
-      "uh": "Onthoud: «Vakbond» = komt op voor arbeiders."
+      "uh": "Ze staakten en verenigden zich in vakbonden."
      },
      {
-      "v": "Wat betekent «Vakbond»?",
+      "v": "Wat is kapitalisme?",
       "o": [
-       "een organisatie die opkomt voor arbeiders",
-       "het neerleggen van het werk om eisen kracht bij te zetten",
-       "het laten werken van kinderen in fabrieken",
-       "de groei van steden door de industrie"
-      ],
-      "c": 0,
-      "d": 1,
-      "u": "«Vakbond»: een organisatie die opkomt voor arbeiders.",
-      "uo": [
-       "Klopt: komt op voor arbeiders.",
-       "Dat is «Staking».",
-       "Dat is «Kinderarbeid».",
-       "Dat is «Verstedelijking»."
-      ],
-      "uh": "Onthoud: «Vakbond» = komt op voor arbeiders."
-     },
-     {
-      "v": "Welk begrip hoort bij: \"een economie gebaseerd op particulier bezit en winst\"?",
-      "o": [
-       "Socialisme",
-       "Kapitalisme",
-       "Sociale kwestie",
-       "Verstedelijking"
+       "Alles is van de staat",
+       "Bezit en winst voor particulieren",
+       "Iedereen is gelijk",
+       "Er is geen geld"
       ],
       "c": 1,
-      "d": 3,
-      "u": "«Kapitalisme»: een economie gebaseerd op particulier bezit en winst.",
+      "d": 2,
+      "u": "Gebaseerd op particulier bezit en winst.",
       "uo": [
-       "«Socialisme» betekent gelijkheid voor arbeiders.",
-       "Klopt, dit is «Kapitalisme».",
-       "«Sociale kwestie» betekent ellende van arbeiders.",
-       "«Verstedelijking» betekent steden groeien."
+       "Dat lijkt op socialisme.",
+       "Klopt: gebaseerd op particulier bezit en winst.",
+       "Dat is het doel van socialisme.",
+       "Nee, dat klopt niet."
       ],
-      "uh": "Onthoud: «Kapitalisme» = bezit en winst."
+      "uh": "Gebaseerd op particulier bezit en winst."
      },
      {
-      "v": "Welke term hoort bij \"het werk neerleggen\"?",
+      "v": "Wat is socialisme?",
       "o": [
-       "Kinderarbeid",
-       "Verstedelijking",
-       "Staking",
-       "Massaproductie"
+       "Bezit voor enkelen",
+       "Meer macht voor de koning",
+       "Opkomen voor gelijkheid en arbeiders",
+       "Minder regels"
       ],
       "c": 2,
       "d": 2,
-      "u": "«Staking»: het neerleggen van het werk om eisen kracht bij te zetten.",
+      "u": "Gelijkheid en de arbeiders.",
       "uo": [
-       "«Kinderarbeid» betekent kinderen in de fabriek.",
-       "«Verstedelijking» betekent steden groeien.",
-       "Klopt, «Staking» past hierbij.",
-       "«Massaproductie» betekent veel tegelijk maken."
+       "Dat lijkt op kapitalisme.",
+       "Nee, dat klopt niet.",
+       "Klopt: gelijkheid en de arbeiders.",
+       "Nee, dat klopt niet."
       ],
-      "uh": "Onthoud: «Staking» = het werk neerleggen."
+      "uh": "Gelijkheid en de arbeiders."
      },
      {
-      "v": "Wat betekent «Kapitalisme»?",
+      "v": "Wat is kinderarbeid?",
       "o": [
-       "een stroming die opkomt voor gelijkheid en de arbeiders",
-       "de slechte leef- en werkomstandigheden van arbeiders",
-       "de groei van steden door de industrie",
-       "een economie gebaseerd op particulier bezit en winst"
-      ],
-      "c": 3,
-      "d": 1,
-      "u": "«Kapitalisme»: een economie gebaseerd op particulier bezit en winst.",
-      "uo": [
-       "Dat is «Socialisme».",
-       "Dat is «Sociale kwestie».",
-       "Dat is «Verstedelijking».",
-       "Klopt: bezit en winst."
-      ],
-      "uh": "Onthoud: «Kapitalisme» = bezit en winst."
-     },
-     {
-      "v": "Welk begrip hoort bij: \"een stroming die opkomt voor gelijkheid en de arbeiders\"?",
-      "o": [
-       "Socialisme",
-       "Kapitalisme",
-       "Fabriek",
-       "Industriële revolutie"
+       "Kinderen laten werken in fabrieken",
+       "Kinderen naar school sturen",
+       "Kinderen laten spelen",
+       "Kinderen belasting laten betalen"
       ],
       "c": 0,
-      "d": 3,
-      "u": "«Socialisme»: een stroming die opkomt voor gelijkheid en de arbeiders.",
+      "d": 1,
+      "u": "Kinderen werkten in fabrieken.",
       "uo": [
-       "Klopt, dit is «Socialisme».",
-       "«Kapitalisme» betekent bezit en winst.",
-       "«Fabriek» betekent gebouw met machines.",
-       "«Industriële revolutie» betekent productie met machines."
+       "Klopt: kinderen werkten in fabrieken.",
+       "Juist niet.",
+       "Nee, dat klopt niet.",
+       "Nee, dat klopt niet."
       ],
-      "uh": "Onthoud: «Socialisme» = gelijkheid voor arbeiders."
+      "uh": "Kinderen werkten in fabrieken."
      },
      {
-      "v": "Welke term hoort bij \"bezit en winst\"?",
+      "v": "Waarom trokken mensen naar de stad?",
       "o": [
-       "Sociale kwestie",
-       "Kapitalisme",
-       "Verstedelijking",
-       "Industriële revolutie"
+       "Voor schone lucht",
+       "Voor de natuur",
+       "Voor rust",
+       "Voor werk in fabrieken"
+      ],
+      "c": 3,
+      "d": 2,
+      "u": "Er was werk in de fabrieken (verstedelijking).",
+      "uo": [
+       "Nee, dat klopt niet.",
+       "Nee, dat klopt niet.",
+       "Nee, dat klopt niet.",
+       "Klopt: er was werk in de fabrieken (verstedelijking)."
+      ],
+      "uh": "Er was werk in de fabrieken (verstedelijking)."
+     },
+     {
+      "v": "Wat is een staking?",
+      "o": [
+       "Harder werken",
+       "Het werk neerleggen",
+       "Meer loon vragen zonder actie",
+       "Ontslag nemen"
       ],
       "c": 1,
       "d": 2,
-      "u": "«Kapitalisme»: een economie gebaseerd op particulier bezit en winst.",
+      "u": "Het werk neerleggen om eisen kracht bij te zetten.",
       "uo": [
-       "«Sociale kwestie» betekent ellende van arbeiders.",
-       "Klopt, «Kapitalisme» past hierbij.",
-       "«Verstedelijking» betekent steden groeien.",
-       "«Industriële revolutie» betekent productie met machines."
+       "Juist niet.",
+       "Klopt: het werk neerleggen om eisen kracht bij te zetten.",
+       "Een staking is juist actie.",
+       "Niet per se."
       ],
-      "uh": "Onthoud: «Kapitalisme» = bezit en winst."
+      "uh": "Het werk neerleggen om eisen kracht bij te zetten."
+     },
+     {
+      "v": "Wat deed een vakbond?",
+      "o": [
+       "Producten maken",
+       "Belasting innen",
+       "Opkomen voor arbeiders",
+       "Fabrieken bouwen"
+      ],
+      "c": 2,
+      "d": 2,
+      "u": "De vakbond kwam op voor arbeiders.",
+      "uo": [
+       "Nee, dat klopt niet.",
+       "Nee, dat klopt niet.",
+       "Klopt: de vakbond kwam op voor arbeiders.",
+       "Nee, dat klopt niet."
+      ],
+      "uh": "De vakbond kwam op voor arbeiders."
+     },
+     {
+      "v": "Wat maakte massaproductie mogelijk?",
+      "o": [
+       "Machines in fabrieken",
+       "Handwerk thuis",
+       "Minder arbeiders",
+       "Meer natuur"
+      ],
+      "c": 0,
+      "d": 3,
+      "u": "Met machines veel tegelijk maken.",
+      "uo": [
+       "Klopt: met machines veel tegelijk maken.",
+       "Juist niet.",
+       "Nee, dat klopt niet.",
+       "Nee, dat klopt niet."
+      ],
+      "uh": "Met machines veel tegelijk maken."
      }
     ],
     "begrippen": [
@@ -10148,498 +9293,213 @@ var VAKKEN_VMBO = [
     "nBeg": 0,
     "sv": [
      {
-      "v": "Welk begrip hoort bij: \"het stelsel dat mensen bij tegenslag inkomen geeft\"?",
+      "v": "Wat is een verzorgingsstaat?",
       "o": [
-       "Sociale zekerheid",
-       "Verzorgingsstaat",
-       "Uitkering",
-       "Collectieve voorziening"
-      ],
-      "c": 0,
-      "d": 3,
-      "u": "«Sociale zekerheid»: het stelsel dat mensen bij tegenslag inkomen geeft.",
-      "uo": [
-       "Klopt, dit is «Sociale zekerheid».",
-       "«Verzorgingsstaat» betekent staat zorgt voor burgers.",
-       "«Uitkering» betekent geld bij te weinig inkomen.",
-       "«Collectieve voorziening» betekent voor iedereen geregeld."
-      ],
-      "uh": "Onthoud: «Sociale zekerheid» = inkomen bij tegenslag."
-     },
-     {
-      "v": "Welke term hoort bij \"inkomen bij tegenslag\"?",
-      "o": [
-       "Uitkering",
-       "Sociale zekerheid",
-       "Collectieve voorziening",
-       "AOW"
+       "Een staat zonder regels",
+       "Een staat die voor het welzijn zorgt",
+       "Een dictatuur",
+       "Een bedrijf"
       ],
       "c": 1,
       "d": 2,
-      "u": "«Sociale zekerheid»: het stelsel dat mensen bij tegenslag inkomen geeft.",
+      "u": "De overheid zorgt voor het welzijn van burgers.",
       "uo": [
-       "«Uitkering» betekent geld bij te weinig inkomen.",
-       "Klopt, «Sociale zekerheid» past hierbij.",
-       "«Collectieve voorziening» betekent voor iedereen geregeld.",
-       "«AOW» betekent staatspensioen."
+       "Nee, dat klopt niet.",
+       "Klopt: de overheid zorgt voor het welzijn van burgers.",
+       "Nee, dat klopt niet.",
+       "Nee, dat klopt niet."
       ],
-      "uh": "Onthoud: «Sociale zekerheid» = inkomen bij tegenslag."
+      "uh": "De overheid zorgt voor het welzijn van burgers."
      },
      {
-      "v": "Wat betekent «Sociale zekerheid»?",
+      "v": "Waarvoor is sociale zekerheid?",
       "o": [
-       "een staat die voor het welzijn van de burgers zorgt",
-       "geld van de overheid voor wie niet genoeg inkomen heeft",
-       "het stelsel dat mensen bij tegenslag inkomen geeft",
-       "iets dat de overheid voor iedereen regelt"
-      ],
-      "c": 2,
-      "d": 1,
-      "u": "«Sociale zekerheid»: het stelsel dat mensen bij tegenslag inkomen geeft.",
-      "uo": [
-       "Dat is «Verzorgingsstaat».",
-       "Dat is «Uitkering».",
-       "Klopt: inkomen bij tegenslag.",
-       "Dat is «Collectieve voorziening»."
-      ],
-      "uh": "Onthoud: «Sociale zekerheid» = inkomen bij tegenslag."
-     },
-     {
-      "v": "Welk begrip hoort bij: \"een staat die voor het welzijn van de burgers zorgt\"?",
-      "o": [
-       "Sociale zekerheid",
-       "Premie",
-       "Pensioen",
-       "Verzorgingsstaat"
-      ],
-      "c": 3,
-      "d": 3,
-      "u": "«Verzorgingsstaat»: een staat die voor het welzijn van de burgers zorgt.",
-      "uo": [
-       "«Sociale zekerheid» betekent inkomen bij tegenslag.",
-       "«Premie» betekent bedrag voor verzekering.",
-       "«Pensioen» betekent inkomen na je werk.",
-       "Klopt, dit is «Verzorgingsstaat»."
-      ],
-      "uh": "Onthoud: «Verzorgingsstaat» = staat zorgt voor burgers."
-     },
-     {
-      "v": "Welke term hoort bij \"beschermende wet\"?",
-      "o": [
-       "Sociale wet",
-       "Solidariteit",
-       "AOW",
-       "Verzorgingsstaat"
-      ],
-      "c": 0,
-      "d": 2,
-      "u": "«Sociale wet»: een wet die burgers beschermt tegen armoede of ziekte.",
-      "uo": [
-       "Klopt, «Sociale wet» past hierbij.",
-       "«Solidariteit» betekent samen risico's dragen.",
-       "«AOW» betekent staatspensioen.",
-       "«Verzorgingsstaat» betekent staat zorgt voor burgers."
-      ],
-      "uh": "Onthoud: «Sociale wet» = beschermende wet."
-     },
-     {
-      "v": "Wat betekent «Verzorgingsstaat»?",
-      "o": [
-       "het stelsel dat mensen bij tegenslag inkomen geeft",
-       "een staat die voor het welzijn van de burgers zorgt",
-       "het bedrag dat je periodiek voor een verzekering betaalt",
-       "inkomen na je werkzame leven"
-      ],
-      "c": 1,
-      "d": 1,
-      "u": "«Verzorgingsstaat»: een staat die voor het welzijn van de burgers zorgt.",
-      "uo": [
-       "Dat is «Sociale zekerheid».",
-       "Klopt: staat zorgt voor burgers.",
-       "Dat is «Premie».",
-       "Dat is «Pensioen»."
-      ],
-      "uh": "Onthoud: «Verzorgingsstaat» = staat zorgt voor burgers."
-     },
-     {
-      "v": "Welk begrip hoort bij: \"een wet die burgers beschermt tegen armoede of ziekte\"?",
-      "o": [
-       "Sociale zekerheid",
-       "Solidariteit",
-       "Sociale wet",
-       "AOW"
-      ],
-      "c": 2,
-      "d": 3,
-      "u": "«Sociale wet»: een wet die burgers beschermt tegen armoede of ziekte.",
-      "uo": [
-       "«Sociale zekerheid» betekent inkomen bij tegenslag.",
-       "«Solidariteit» betekent samen risico's dragen.",
-       "Klopt, dit is «Sociale wet».",
-       "«AOW» betekent staatspensioen."
-      ],
-      "uh": "Onthoud: «Sociale wet» = beschermende wet."
-     },
-     {
-      "v": "Welke term hoort bij \"geld bij te weinig inkomen\"?",
-      "o": [
-       "Sociale wet",
-       "Solidariteit",
-       "Premie",
-       "Uitkering"
-      ],
-      "c": 3,
-      "d": 2,
-      "u": "«Uitkering»: geld van de overheid voor wie niet genoeg inkomen heeft.",
-      "uo": [
-       "«Sociale wet» betekent beschermende wet.",
-       "«Solidariteit» betekent samen risico's dragen.",
-       "«Premie» betekent bedrag voor verzekering.",
-       "Klopt, «Uitkering» past hierbij."
-      ],
-      "uh": "Onthoud: «Uitkering» = geld bij te weinig inkomen."
-     },
-     {
-      "v": "Wat betekent «Werkloosheid»?",
-      "o": [
-       "de situatie waarin mensen geen werk hebben",
-       "een uitkering voor wie geen ander inkomen heeft",
-       "het samen dragen van risico's en lasten",
-       "het staatspensioen voor ouderen"
-      ],
-      "c": 0,
-      "d": 1,
-      "u": "«Werkloosheid»: de situatie waarin mensen geen werk hebben.",
-      "uo": [
-       "Klopt: geen werk hebben.",
-       "Dat is «Bijstand».",
-       "Dat is «Solidariteit».",
-       "Dat is «AOW»."
-      ],
-      "uh": "Onthoud: «Werkloosheid» = geen werk hebben."
-     },
-     {
-      "v": "Welk begrip hoort bij: \"geld van de overheid voor wie niet genoeg inkomen heeft\"?",
-      "o": [
-       "Bijstand",
-       "Uitkering",
-       "Pensioen",
-       "Sociale wet"
-      ],
-      "c": 1,
-      "d": 3,
-      "u": "«Uitkering»: geld van de overheid voor wie niet genoeg inkomen heeft.",
-      "uo": [
-       "«Bijstand» betekent laatste vangnet.",
-       "Klopt, dit is «Uitkering».",
-       "«Pensioen» betekent inkomen na je werk.",
-       "«Sociale wet» betekent beschermende wet."
-      ],
-      "uh": "Onthoud: «Uitkering» = geld bij te weinig inkomen."
-     },
-     {
-      "v": "Welke term hoort bij \"geen werk hebben\"?",
-      "o": [
-       "Solidariteit",
-       "AOW",
-       "Werkloosheid",
-       "Sociale zekerheid"
+       "Voor de winst",
+       "Voor de export",
+       "Voor inkomen bij tegenslag",
+       "Voor de koning"
       ],
       "c": 2,
       "d": 2,
-      "u": "«Werkloosheid»: de situatie waarin mensen geen werk hebben.",
+      "u": "Inkomen bij ziekte, werkloosheid of ouderdom.",
       "uo": [
-       "«Solidariteit» betekent samen risico's dragen.",
-       "«AOW» betekent staatspensioen.",
-       "Klopt, «Werkloosheid» past hierbij.",
-       "«Sociale zekerheid» betekent inkomen bij tegenslag."
+       "Nee, dat klopt niet.",
+       "Nee, dat klopt niet.",
+       "Klopt: inkomen bij ziekte, werkloosheid of ouderdom.",
+       "Nee, dat klopt niet."
       ],
-      "uh": "Onthoud: «Werkloosheid» = geen werk hebben."
+      "uh": "Inkomen bij ziekte, werkloosheid of ouderdom."
      },
      {
-      "v": "Wat betekent «AOW»?",
+      "v": "Wat is een uitkering?",
       "o": [
-       "inkomen na je werkzame leven",
-       "het samen dragen van risico's en lasten",
-       "iets dat de overheid voor iedereen regelt",
-       "het staatspensioen voor ouderen"
-      ],
-      "c": 3,
-      "d": 1,
-      "u": "«AOW»: het staatspensioen voor ouderen.",
-      "uo": [
-       "Dat is «Pensioen».",
-       "Dat is «Solidariteit».",
-       "Dat is «Collectieve voorziening».",
-       "Klopt: staatspensioen."
-      ],
-      "uh": "Onthoud: «AOW» = staatspensioen."
-     },
-     {
-      "v": "Welk begrip hoort bij: \"de situatie waarin mensen geen werk hebben\"?",
-      "o": [
-       "Werkloosheid",
-       "Bijstand",
-       "Solidariteit",
-       "AOW"
-      ],
-      "c": 0,
-      "d": 3,
-      "u": "«Werkloosheid»: de situatie waarin mensen geen werk hebben.",
-      "uo": [
-       "Klopt, dit is «Werkloosheid».",
-       "«Bijstand» betekent laatste vangnet.",
-       "«Solidariteit» betekent samen risico's dragen.",
-       "«AOW» betekent staatspensioen."
-      ],
-      "uh": "Onthoud: «Werkloosheid» = geen werk hebben."
-     },
-     {
-      "v": "Welke term hoort bij \"staatspensioen\"?",
-      "o": [
-       "Solidariteit",
-       "AOW",
-       "Collectieve voorziening",
-       "Premie"
-      ],
-      "c": 1,
-      "d": 2,
-      "u": "«AOW»: het staatspensioen voor ouderen.",
-      "uo": [
-       "«Solidariteit» betekent samen risico's dragen.",
-       "Klopt, «AOW» past hierbij.",
-       "«Collectieve voorziening» betekent voor iedereen geregeld.",
-       "«Premie» betekent bedrag voor verzekering."
-      ],
-      "uh": "Onthoud: «AOW» = staatspensioen."
-     },
-     {
-      "v": "Wat betekent «Solidariteit»?",
-      "o": [
-       "een afspraak die je beschermt tegen financiële risico's",
-       "het staatspensioen voor ouderen",
-       "het samen dragen van risico's en lasten",
-       "de situatie waarin mensen geen werk hebben"
-      ],
-      "c": 2,
-      "d": 1,
-      "u": "«Solidariteit»: het samen dragen van risico's en lasten.",
-      "uo": [
-       "Dat is «Verzekering».",
-       "Dat is «AOW».",
-       "Klopt: samen risico's dragen.",
-       "Dat is «Werkloosheid»."
-      ],
-      "uh": "Onthoud: «Solidariteit» = samen risico's dragen."
-     },
-     {
-      "v": "Welk begrip hoort bij: \"het staatspensioen voor ouderen\"?",
-      "o": [
-       "Pensioen",
-       "Solidariteit",
-       "Collectieve voorziening",
-       "AOW"
-      ],
-      "c": 3,
-      "d": 3,
-      "u": "«AOW»: het staatspensioen voor ouderen.",
-      "uo": [
-       "«Pensioen» betekent inkomen na je werk.",
-       "«Solidariteit» betekent samen risico's dragen.",
-       "«Collectieve voorziening» betekent voor iedereen geregeld.",
-       "Klopt, dit is «AOW»."
-      ],
-      "uh": "Onthoud: «AOW» = staatspensioen."
-     },
-     {
-      "v": "Welke term hoort bij \"samen risico's dragen\"?",
-      "o": [
-       "Solidariteit",
-       "AOW",
-       "Werkloosheid",
-       "Sociale zekerheid"
-      ],
-      "c": 0,
-      "d": 2,
-      "u": "«Solidariteit»: het samen dragen van risico's en lasten.",
-      "uo": [
-       "Klopt, «Solidariteit» past hierbij.",
-       "«AOW» betekent staatspensioen.",
-       "«Werkloosheid» betekent geen werk hebben.",
-       "«Sociale zekerheid» betekent inkomen bij tegenslag."
-      ],
-      "uh": "Onthoud: «Solidariteit» = samen risico's dragen."
-     },
-     {
-      "v": "Wat betekent «Verzekering»?",
-      "o": [
-       "het samen dragen van risico's en lasten",
-       "een afspraak die je beschermt tegen financiële risico's",
-       "de situatie waarin mensen geen werk hebben",
-       "geld van de overheid voor wie niet genoeg inkomen heeft"
-      ],
-      "c": 1,
-      "d": 1,
-      "u": "«Verzekering»: een afspraak die je beschermt tegen financiële risico's.",
-      "uo": [
-       "Dat is «Solidariteit».",
-       "Klopt: bescherming tegen risico.",
-       "Dat is «Werkloosheid».",
-       "Dat is «Uitkering»."
-      ],
-      "uh": "Onthoud: «Verzekering» = bescherming tegen risico."
-     },
-     {
-      "v": "Welk begrip hoort bij: \"het samen dragen van risico's en lasten\"?",
-      "o": [
-       "Verzekering",
-       "AOW",
-       "Solidariteit",
-       "Werkloosheid"
-      ],
-      "c": 2,
-      "d": 3,
-      "u": "«Solidariteit»: het samen dragen van risico's en lasten.",
-      "uo": [
-       "«Verzekering» betekent bescherming tegen risico.",
-       "«AOW» betekent staatspensioen.",
-       "Klopt, dit is «Solidariteit».",
-       "«Werkloosheid» betekent geen werk hebben."
-      ],
-      "uh": "Onthoud: «Solidariteit» = samen risico's dragen."
-     },
-     {
-      "v": "Welke term hoort bij \"bescherming tegen risico\"?",
-      "o": [
-       "Werkloosheid",
-       "Uitkering",
-       "Sociale zekerheid",
-       "Verzekering"
-      ],
-      "c": 3,
-      "d": 2,
-      "u": "«Verzekering»: een afspraak die je beschermt tegen financiële risico's.",
-      "uo": [
-       "«Werkloosheid» betekent geen werk hebben.",
-       "«Uitkering» betekent geld bij te weinig inkomen.",
-       "«Sociale zekerheid» betekent inkomen bij tegenslag.",
-       "Klopt, «Verzekering» past hierbij."
-      ],
-      "uh": "Onthoud: «Verzekering» = bescherming tegen risico."
-     },
-     {
-      "v": "Wat betekent «Pensioen»?",
-      "o": [
-       "inkomen na je werkzame leven",
-       "het staatspensioen voor ouderen",
-       "het bedrag dat je periodiek voor een verzekering betaalt",
-       "iets dat de overheid voor iedereen regelt"
+       "Geld bij te weinig inkomen",
+       "Een belasting",
+       "Een lening",
+       "Een boete"
       ],
       "c": 0,
       "d": 1,
-      "u": "«Pensioen»: inkomen na je werkzame leven.",
+      "u": "Geld van de overheid bij te weinig inkomen.",
       "uo": [
-       "Klopt: inkomen na je werk.",
-       "Dat is «AOW».",
-       "Dat is «Premie».",
-       "Dat is «Collectieve voorziening»."
+       "Klopt: geld van de overheid bij te weinig inkomen.",
+       "Nee, dat klopt niet.",
+       "Nee, dat klopt niet.",
+       "Nee, dat klopt niet."
       ],
-      "uh": "Onthoud: «Pensioen» = inkomen na je werk."
+      "uh": "Geld van de overheid bij te weinig inkomen."
      },
      {
-      "v": "Welk begrip hoort bij: \"een afspraak die je beschermt tegen financiële risico's\"?",
+      "v": "Wat is de AOW?",
       "o": [
-       "Solidariteit",
-       "Verzekering",
-       "Werkloosheid",
-       "Uitkering"
+       "Een bedrijfspensioen",
+       "Een verzekering",
+       "Een belasting",
+       "Het staatspensioen voor ouderen"
+      ],
+      "c": 3,
+      "d": 2,
+      "u": "De AOW is het staatspensioen voor ouderen.",
+      "uo": [
+       "Nee, dat klopt niet.",
+       "Nee, dat klopt niet.",
+       "Nee, dat klopt niet.",
+       "Klopt: de AOW is het staatspensioen voor ouderen."
+      ],
+      "uh": "De AOW is het staatspensioen voor ouderen."
+     },
+     {
+      "v": "Wat betekent solidariteit?",
+      "o": [
+       "Ieder voor zich",
+       "Samen risico's dragen",
+       "Meer belasting",
+       "Minder regels"
       ],
       "c": 1,
-      "d": 3,
-      "u": "«Verzekering»: een afspraak die je beschermt tegen financiële risico's.",
+      "d": 2,
+      "u": "Samen de lasten en risico's dragen.",
       "uo": [
-       "«Solidariteit» betekent samen risico's dragen.",
-       "Klopt, dit is «Verzekering».",
-       "«Werkloosheid» betekent geen werk hebben.",
-       "«Uitkering» betekent geld bij te weinig inkomen."
+       "Juist niet.",
+       "Klopt: samen de lasten en risico's dragen.",
+       "Nee, dat klopt niet.",
+       "Nee, dat klopt niet."
       ],
-      "uh": "Onthoud: «Verzekering» = bescherming tegen risico."
+      "uh": "Samen de lasten en risico's dragen."
      },
      {
-      "v": "Welke term hoort bij \"inkomen na je werk\"?",
+      "v": "Wat is bijstand?",
       "o": [
-       "Premie",
-       "Collectieve voorziening",
-       "Pensioen",
-       "Sociale zekerheid"
+       "Een pensioen",
+       "Een belasting",
+       "Een uitkering voor wie geen inkomen heeft",
+       "Een verzekering"
       ],
       "c": 2,
       "d": 2,
-      "u": "«Pensioen»: inkomen na je werkzame leven.",
+      "u": "Het laatste vangnet.",
       "uo": [
-       "«Premie» betekent bedrag voor verzekering.",
-       "«Collectieve voorziening» betekent voor iedereen geregeld.",
-       "Klopt, «Pensioen» past hierbij.",
-       "«Sociale zekerheid» betekent inkomen bij tegenslag."
+       "Nee, dat klopt niet.",
+       "Nee, dat klopt niet.",
+       "Klopt: het laatste vangnet.",
+       "Nee, dat klopt niet."
       ],
-      "uh": "Onthoud: «Pensioen» = inkomen na je werk."
+      "uh": "Het laatste vangnet."
      },
      {
-      "v": "Wat betekent «Bijstand»?",
+      "v": "Wanneer bouwde Nederland de verzorgingsstaat op?",
       "o": [
-       "geld van de overheid voor wie niet genoeg inkomen heeft",
-       "het bedrag dat je periodiek voor een verzekering betaalt",
-       "iets dat de overheid voor iedereen regelt",
-       "een uitkering voor wie geen ander inkomen heeft"
-      ],
-      "c": 3,
-      "d": 1,
-      "u": "«Bijstand»: een uitkering voor wie geen ander inkomen heeft.",
-      "uo": [
-       "Dat is «Uitkering».",
-       "Dat is «Premie».",
-       "Dat is «Collectieve voorziening».",
-       "Klopt: laatste vangnet."
-      ],
-      "uh": "Onthoud: «Bijstand» = laatste vangnet."
-     },
-     {
-      "v": "Welk begrip hoort bij: \"inkomen na je werkzame leven\"?",
-      "o": [
-       "Pensioen",
-       "AOW",
-       "Premie",
-       "Collectieve voorziening"
+       "Na 1945",
+       "In de middeleeuwen",
+       "Vóór 1800",
+       "Nooit"
       ],
       "c": 0,
-      "d": 3,
-      "u": "«Pensioen»: inkomen na je werkzame leven.",
+      "d": 2,
+      "u": "Vooral na de Tweede Wereldoorlog.",
       "uo": [
-       "Klopt, dit is «Pensioen».",
-       "«AOW» betekent staatspensioen.",
-       "«Premie» betekent bedrag voor verzekering.",
-       "«Collectieve voorziening» betekent voor iedereen geregeld."
+       "Klopt: vooral na de Tweede Wereldoorlog.",
+       "Nee, dat klopt niet.",
+       "Nee, dat klopt niet.",
+       "Nee, dat klopt niet."
       ],
-      "uh": "Onthoud: «Pensioen» = inkomen na je werk."
+      "uh": "Vooral na de Tweede Wereldoorlog."
      },
      {
-      "v": "Welke term hoort bij \"laatste vangnet\"?",
+      "v": "Wat is een sociale wet?",
       "o": [
-       "Premie",
-       "Bijstand",
-       "Collectieve voorziening",
-       "Sociale zekerheid"
+       "Een belastingwet",
+       "Een verkeerswet",
+       "Een handelswet",
+       "Een wet die tegen armoede beschermt"
+      ],
+      "c": 3,
+      "d": 2,
+      "u": "Beschermt burgers tegen armoede of ziekte.",
+      "uo": [
+       "Nee, dat klopt niet.",
+       "Nee, dat klopt niet.",
+       "Nee, dat klopt niet.",
+       "Klopt: beschermt burgers tegen armoede of ziekte."
+      ],
+      "uh": "Beschermt burgers tegen armoede of ziekte."
+     },
+     {
+      "v": "Wat is werkloosheid?",
+      "o": [
+       "Veel werk hebben",
+       "Geen werk hebben",
+       "Op vakantie zijn",
+       "Met pensioen zijn"
       ],
       "c": 1,
-      "d": 2,
-      "u": "«Bijstand»: een uitkering voor wie geen ander inkomen heeft.",
+      "d": 1,
+      "u": "Mensen hebben geen werk.",
       "uo": [
-       "«Premie» betekent bedrag voor verzekering.",
-       "Klopt, «Bijstand» past hierbij.",
-       "«Collectieve voorziening» betekent voor iedereen geregeld.",
-       "«Sociale zekerheid» betekent inkomen bij tegenslag."
+       "Juist niet.",
+       "Klopt: mensen hebben geen werk.",
+       "Nee, dat klopt niet.",
+       "Dat is iets anders."
       ],
-      "uh": "Onthoud: «Bijstand» = laatste vangnet."
+      "uh": "Mensen hebben geen werk."
+     },
+     {
+      "v": "Wat is een pensioen?",
+      "o": [
+       "Loon tijdens je werk",
+       "Een uitkering bij ziekte",
+       "Inkomen na je werkzame leven",
+       "Een studiebeurs"
+      ],
+      "c": 2,
+      "d": 2,
+      "u": "Inkomen na je werkende jaren.",
+      "uo": [
+       "Nee, dat klopt niet.",
+       "Nee, dat klopt niet.",
+       "Klopt: inkomen na je werkende jaren.",
+       "Nee, dat klopt niet."
+      ],
+      "uh": "Inkomen na je werkende jaren."
+     },
+     {
+      "v": "Waarvoor betaal je premie?",
+      "o": [
+       "Voor een verzekering",
+       "Voor de export",
+       "Voor een keurmerk",
+       "Voor een lening"
+      ],
+      "c": 0,
+      "d": 1,
+      "u": "Premie betaal je voor een verzekering.",
+      "uo": [
+       "Klopt: premie betaal je voor een verzekering.",
+       "Nee, dat klopt niet.",
+       "Nee, dat klopt niet.",
+       "Nee, dat klopt niet."
+      ],
+      "uh": "Premie betaal je voor een verzekering."
      }
     ],
     "begrippen": [
@@ -10709,498 +9569,213 @@ var VAKKEN_VMBO = [
     "nBeg": 0,
     "sv": [
      {
-      "v": "Welk begrip hoort bij: \"de indeling van de samenleving in aparte groepen naar geloof of politiek\"?",
+      "v": "Wat was verzuiling?",
       "o": [
-       "Verzuiling",
-       "Ontzuiling",
-       "Jongerencultuur",
-       "Emancipatie"
-      ],
-      "c": 0,
-      "d": 3,
-      "u": "«Verzuiling»: de indeling van de samenleving in aparte groepen naar geloof of politiek.",
-      "uo": [
-       "Klopt, dit is «Verzuiling».",
-       "«Ontzuiling» betekent zuilen verdwijnen.",
-       "«Jongerencultuur» betekent eigen stijl van jongeren.",
-       "«Emancipatie» betekent streven naar gelijkheid."
-      ],
-      "uh": "Onthoud: «Verzuiling» = samenleving in zuilen."
-     },
-     {
-      "v": "Welke term hoort bij \"samenleving in zuilen\"?",
-      "o": [
-       "Jongerencultuur",
-       "Verzuiling",
-       "Emancipatie",
-       "Individualisering"
+       "Eén grote groep",
+       "De samenleving in aparte groepen",
+       "Geen groepen",
+       "Alleen jongeren"
       ],
       "c": 1,
       "d": 2,
-      "u": "«Verzuiling»: de indeling van de samenleving in aparte groepen naar geloof of politiek.",
+      "u": "Aparte groepen naar geloof en politiek.",
       "uo": [
-       "«Jongerencultuur» betekent eigen stijl van jongeren.",
-       "Klopt, «Verzuiling» past hierbij.",
-       "«Emancipatie» betekent streven naar gelijkheid.",
-       "«Individualisering» betekent het individu voorop."
+       "Juist niet.",
+       "Klopt: aparte groepen naar geloof en politiek.",
+       "Nee, dat klopt niet.",
+       "Nee, dat klopt niet."
       ],
-      "uh": "Onthoud: «Verzuiling» = samenleving in zuilen."
+      "uh": "Aparte groepen naar geloof en politiek."
      },
      {
-      "v": "Wat betekent «Ontzuiling»?",
+      "v": "Wat is ontzuiling?",
       "o": [
-       "de indeling van de samenleving in aparte groepen naar geloof of politiek",
-       "de eigen stijl, muziek en ideeën van jongeren",
-       "het verdwijnen van de scheiding tussen die groepen",
-       "het streven naar gelijke rechten, bijvoorbeeld van vrouwen"
-      ],
-      "c": 2,
-      "d": 1,
-      "u": "«Ontzuiling»: het verdwijnen van de scheiding tussen die groepen.",
-      "uo": [
-       "Dat is «Verzuiling».",
-       "Dat is «Jongerencultuur».",
-       "Klopt: zuilen verdwijnen.",
-       "Dat is «Emancipatie»."
-      ],
-      "uh": "Onthoud: «Ontzuiling» = zuilen verdwijnen."
-     },
-     {
-      "v": "Welk begrip hoort bij: \"het verdwijnen van de scheiding tussen die groepen\"?",
-      "o": [
-       "Verzuiling",
-       "Jongerencultuur",
-       "Emancipatie",
-       "Ontzuiling"
-      ],
-      "c": 3,
-      "d": 3,
-      "u": "«Ontzuiling»: het verdwijnen van de scheiding tussen die groepen.",
-      "uo": [
-       "«Verzuiling» betekent samenleving in zuilen.",
-       "«Jongerencultuur» betekent eigen stijl van jongeren.",
-       "«Emancipatie» betekent streven naar gelijkheid.",
-       "Klopt, dit is «Ontzuiling»."
-      ],
-      "uh": "Onthoud: «Ontzuiling» = zuilen verdwijnen."
-     },
-     {
-      "v": "Welke term hoort bij \"zuilen verdwijnen\"?",
-      "o": [
-       "Ontzuiling",
-       "Jongerencultuur",
-       "Emancipatie",
-       "Individualisering"
-      ],
-      "c": 0,
-      "d": 2,
-      "u": "«Ontzuiling»: het verdwijnen van de scheiding tussen die groepen.",
-      "uo": [
-       "Klopt, «Ontzuiling» past hierbij.",
-       "«Jongerencultuur» betekent eigen stijl van jongeren.",
-       "«Emancipatie» betekent streven naar gelijkheid.",
-       "«Individualisering» betekent het individu voorop."
-      ],
-      "uh": "Onthoud: «Ontzuiling» = zuilen verdwijnen."
-     },
-     {
-      "v": "Wat betekent «Jongerencultuur»?",
-      "o": [
-       "een groep die zich verzet tegen bestaande regels",
-       "de eigen stijl, muziek en ideeën van jongeren",
-       "de mate waarin mensen in hun behoeften kunnen voorzien",
-       "een samenleving waarin veel wordt gekocht en gebruikt"
-      ],
-      "c": 1,
-      "d": 1,
-      "u": "«Jongerencultuur»: de eigen stijl, muziek en ideeën van jongeren.",
-      "uo": [
-       "Dat is «Protestbeweging».",
-       "Klopt: eigen stijl van jongeren.",
-       "Dat is «Welvaart».",
-       "Dat is «Consumptiemaatschappij»."
-      ],
-      "uh": "Onthoud: «Jongerencultuur» = eigen stijl van jongeren."
-     },
-     {
-      "v": "Welk begrip hoort bij: \"het streven naar gelijke rechten, bijvoorbeeld van vrouwen\"?",
-      "o": [
-       "Democratisering",
-       "Welvaart",
-       "Emancipatie",
-       "Protestbeweging"
-      ],
-      "c": 2,
-      "d": 3,
-      "u": "«Emancipatie»: het streven naar gelijke rechten, bijvoorbeeld van vrouwen.",
-      "uo": [
-       "«Democratisering» betekent meer inspraak.",
-       "«Welvaart» betekent hoe goed men rondkomt.",
-       "Klopt, dit is «Emancipatie».",
-       "«Protestbeweging» betekent groep die zich verzet."
-      ],
-      "uh": "Onthoud: «Emancipatie» = streven naar gelijkheid."
-     },
-     {
-      "v": "Welke term hoort bij \"streven naar gelijkheid\"?",
-      "o": [
-       "Welvaart",
-       "Protestbeweging",
-       "Verzuiling",
-       "Emancipatie"
-      ],
-      "c": 3,
-      "d": 2,
-      "u": "«Emancipatie»: het streven naar gelijke rechten, bijvoorbeeld van vrouwen.",
-      "uo": [
-       "«Welvaart» betekent hoe goed men rondkomt.",
-       "«Protestbeweging» betekent groep die zich verzet.",
-       "«Verzuiling» betekent samenleving in zuilen.",
-       "Klopt, «Emancipatie» past hierbij."
-      ],
-      "uh": "Onthoud: «Emancipatie» = streven naar gelijkheid."
-     },
-     {
-      "v": "Wat betekent «Protestbeweging»?",
-      "o": [
-       "een groep die zich verzet tegen bestaande regels",
-       "de eigen stijl, muziek en ideeën van jongeren",
-       "de mate waarin mensen in hun behoeften kunnen voorzien",
-       "een samenleving waarin veel wordt gekocht en gebruikt"
-      ],
-      "c": 0,
-      "d": 1,
-      "u": "«Protestbeweging»: een groep die zich verzet tegen bestaande regels.",
-      "uo": [
-       "Klopt: groep die zich verzet.",
-       "Dat is «Jongerencultuur».",
-       "Dat is «Welvaart».",
-       "Dat is «Consumptiemaatschappij»."
-      ],
-      "uh": "Onthoud: «Protestbeweging» = groep die zich verzet."
-     },
-     {
-      "v": "Welk begrip hoort bij: \"de eigen stijl, muziek en ideeën van jongeren\"?",
-      "o": [
-       "Protestbeweging",
-       "Jongerencultuur",
-       "Welvaart",
-       "Consumptiemaatschappij"
-      ],
-      "c": 1,
-      "d": 3,
-      "u": "«Jongerencultuur»: de eigen stijl, muziek en ideeën van jongeren.",
-      "uo": [
-       "«Protestbeweging» betekent groep die zich verzet.",
-       "Klopt, dit is «Jongerencultuur».",
-       "«Welvaart» betekent hoe goed men rondkomt.",
-       "«Consumptiemaatschappij» betekent veel kopen."
-      ],
-      "uh": "Onthoud: «Jongerencultuur» = eigen stijl van jongeren."
-     },
-     {
-      "v": "Welke term hoort bij \"eigen stijl van jongeren\"?",
-      "o": [
-       "Welvaart",
-       "Consumptiemaatschappij",
-       "Jongerencultuur",
-       "Individualisering"
+       "Meer zuilen",
+       "Strengere zuilen",
+       "De zuilen verdwijnen",
+       "Een nieuwe zuil"
       ],
       "c": 2,
       "d": 2,
-      "u": "«Jongerencultuur»: de eigen stijl, muziek en ideeën van jongeren.",
+      "u": "De scheiding tussen groepen verdween.",
       "uo": [
-       "«Welvaart» betekent hoe goed men rondkomt.",
-       "«Consumptiemaatschappij» betekent veel kopen.",
-       "Klopt, «Jongerencultuur» past hierbij.",
-       "«Individualisering» betekent het individu voorop."
+       "Nee, dat klopt niet.",
+       "Nee, dat klopt niet.",
+       "Klopt: de scheiding tussen groepen verdween.",
+       "Nee, dat klopt niet."
       ],
-      "uh": "Onthoud: «Jongerencultuur» = eigen stijl van jongeren."
+      "uh": "De scheiding tussen groepen verdween."
      },
      {
-      "v": "Wat betekent «Welvaart»?",
+      "v": "Wat is emancipatie?",
       "o": [
-       "een samenleving waarin veel wordt gekocht en gebruikt",
-       "media die veel mensen tegelijk bereiken, zoals tv en radio",
-       "het verschil in opvattingen tussen jong en oud",
-       "de mate waarin mensen in hun behoeften kunnen voorzien"
-      ],
-      "c": 3,
-      "d": 1,
-      "u": "«Welvaart»: de mate waarin mensen in hun behoeften kunnen voorzien.",
-      "uo": [
-       "Dat is «Consumptiemaatschappij».",
-       "Dat is «Massamedia».",
-       "Dat is «Generatiekloof».",
-       "Klopt: hoe goed men rondkomt."
-      ],
-      "uh": "Onthoud: «Welvaart» = hoe goed men rondkomt."
-     },
-     {
-      "v": "Welk begrip hoort bij: \"een groep die zich verzet tegen bestaande regels\"?",
-      "o": [
-       "Protestbeweging",
-       "Jongerencultuur",
-       "Welvaart",
-       "Consumptiemaatschappij"
+       "Streven naar gelijke rechten",
+       "Minder rechten",
+       "Meer regels",
+       "Een geloof"
       ],
       "c": 0,
-      "d": 3,
-      "u": "«Protestbeweging»: een groep die zich verzet tegen bestaande regels.",
+      "d": 2,
+      "u": "Streven naar gelijke rechten, bv. van vrouwen.",
       "uo": [
-       "Klopt, dit is «Protestbeweging».",
-       "«Jongerencultuur» betekent eigen stijl van jongeren.",
-       "«Welvaart» betekent hoe goed men rondkomt.",
-       "«Consumptiemaatschappij» betekent veel kopen."
+       "Klopt: streven naar gelijke rechten, bv. van vrouwen.",
+       "Juist meer.",
+       "Nee, dat klopt niet.",
+       "Nee, dat klopt niet."
       ],
-      "uh": "Onthoud: «Protestbeweging» = groep die zich verzet."
+      "uh": "Streven naar gelijke rechten, bv. van vrouwen."
      },
      {
-      "v": "Welke term hoort bij \"groep die zich verzet\"?",
+      "v": "Wat ontstond er onder jongeren na 1945?",
       "o": [
-       "Welvaart",
-       "Protestbeweging",
-       "Consumptiemaatschappij",
-       "Individualisering"
+       "Meer verzuiling",
+       "Minder muziek",
+       "Meer regels",
+       "Een eigen jongerencultuur"
+      ],
+      "c": 3,
+      "d": 2,
+      "u": "Een eigen stijl, muziek en ideeën.",
+      "uo": [
+       "Juist niet.",
+       "Nee, dat klopt niet.",
+       "Nee, dat klopt niet.",
+       "Klopt: een eigen stijl, muziek en ideeën."
+      ],
+      "uh": "Een eigen stijl, muziek en ideeën."
+     },
+     {
+      "v": "Wat is een consumptiemaatschappij?",
+      "o": [
+       "Een samenleving die weinig koopt",
+       "Een samenleving die veel koopt",
+       "Een dictatuur",
+       "Een standensamenleving"
       ],
       "c": 1,
       "d": 2,
-      "u": "«Protestbeweging»: een groep die zich verzet tegen bestaande regels.",
+      "u": "Er wordt veel gekocht.",
       "uo": [
-       "«Welvaart» betekent hoe goed men rondkomt.",
-       "Klopt, «Protestbeweging» past hierbij.",
-       "«Consumptiemaatschappij» betekent veel kopen.",
-       "«Individualisering» betekent het individu voorop."
+       "Juist niet.",
+       "Klopt: er wordt veel gekocht.",
+       "Nee, dat klopt niet.",
+       "Nee, dat klopt niet."
       ],
-      "uh": "Onthoud: «Protestbeweging» = groep die zich verzet."
+      "uh": "Er wordt veel gekocht."
      },
      {
-      "v": "Wat betekent «Consumptiemaatschappij»?",
+      "v": "Wat betekent individualisering?",
       "o": [
-       "de mate waarin mensen in hun behoeften kunnen voorzien",
-       "het krijgen van meer inspraak en zeggenschap",
-       "een samenleving waarin veel wordt gekocht en gebruikt",
-       "de eigen stijl, muziek en ideeën van jongeren"
+       "De groep telt meer",
+       "Meer regels",
+       "Het individu wordt belangrijker",
+       "Minder vrijheid"
       ],
       "c": 2,
-      "d": 1,
-      "u": "«Consumptiemaatschappij»: een samenleving waarin veel wordt gekocht en gebruikt.",
-      "uo": [
-       "Dat is «Welvaart».",
-       "Dat is «Democratisering».",
-       "Klopt: veel kopen.",
-       "Dat is «Jongerencultuur»."
-      ],
-      "uh": "Onthoud: «Consumptiemaatschappij» = veel kopen."
-     },
-     {
-      "v": "Welk begrip hoort bij: \"de mate waarin mensen in hun behoeften kunnen voorzien\"?",
-      "o": [
-       "Consumptiemaatschappij",
-       "Massamedia",
-       "Generatiekloof",
-       "Welvaart"
-      ],
-      "c": 3,
-      "d": 3,
-      "u": "«Welvaart»: de mate waarin mensen in hun behoeften kunnen voorzien.",
-      "uo": [
-       "«Consumptiemaatschappij» betekent veel kopen.",
-       "«Massamedia» betekent bereiken velen tegelijk.",
-       "«Generatiekloof» betekent kloof jong en oud.",
-       "Klopt, dit is «Welvaart»."
-      ],
-      "uh": "Onthoud: «Welvaart» = hoe goed men rondkomt."
-     },
-     {
-      "v": "Welke term hoort bij \"hoe goed men rondkomt\"?",
-      "o": [
-       "Welvaart",
-       "Massamedia",
-       "Generatiekloof",
-       "Verzuiling"
-      ],
-      "c": 0,
       "d": 2,
-      "u": "«Welvaart»: de mate waarin mensen in hun behoeften kunnen voorzien.",
+      "u": "Het individu voorop.",
       "uo": [
-       "Klopt, «Welvaart» past hierbij.",
-       "«Massamedia» betekent bereiken velen tegelijk.",
-       "«Generatiekloof» betekent kloof jong en oud.",
-       "«Verzuiling» betekent samenleving in zuilen."
-      ],
-      "uh": "Onthoud: «Welvaart» = hoe goed men rondkomt."
-     },
-     {
-      "v": "Wat betekent «Individualisering»?",
-      "o": [
-       "het krijgen van meer inspraak en zeggenschap",
-       "het belangrijker worden van het individu",
-       "het verdwijnen van de scheiding tussen die groepen",
-       "het verschil in opvattingen tussen jong en oud"
-      ],
-      "c": 1,
-      "d": 1,
-      "u": "«Individualisering»: het belangrijker worden van het individu.",
-      "uo": [
-       "Dat is «Democratisering».",
+       "Juist niet.",
+       "Nee, dat klopt niet.",
        "Klopt: het individu voorop.",
-       "Dat is «Ontzuiling».",
-       "Dat is «Generatiekloof»."
+       "Nee, dat klopt niet."
       ],
-      "uh": "Onthoud: «Individualisering» = het individu voorop."
+      "uh": "Het individu voorop."
      },
      {
-      "v": "Welk begrip hoort bij: \"het minder belangrijk worden van religie\"?",
+      "v": "Wat is democratisering?",
       "o": [
-       "Ontzuiling",
-       "Individualisering",
-       "Secularisatie",
-       "Generatiekloof"
-      ],
-      "c": 2,
-      "d": 3,
-      "u": "«Secularisatie»: het minder belangrijk worden van religie.",
-      "uo": [
-       "«Ontzuiling» betekent zuilen verdwijnen.",
-       "«Individualisering» betekent het individu voorop.",
-       "Klopt, dit is «Secularisatie».",
-       "«Generatiekloof» betekent kloof jong en oud."
-      ],
-      "uh": "Onthoud: «Secularisatie» = religie wordt minder."
-     },
-     {
-      "v": "Welke term hoort bij \"religie wordt minder\"?",
-      "o": [
-       "Individualisering",
-       "Generatiekloof",
-       "Verzuiling",
-       "Secularisatie"
-      ],
-      "c": 3,
-      "d": 2,
-      "u": "«Secularisatie»: het minder belangrijk worden van religie.",
-      "uo": [
-       "«Individualisering» betekent het individu voorop.",
-       "«Generatiekloof» betekent kloof jong en oud.",
-       "«Verzuiling» betekent samenleving in zuilen.",
-       "Klopt, «Secularisatie» past hierbij."
-      ],
-      "uh": "Onthoud: «Secularisatie» = religie wordt minder."
-     },
-     {
-      "v": "Wat betekent «Secularisatie»?",
-      "o": [
-       "het minder belangrijk worden van religie",
-       "het verdwijnen van de scheiding tussen die groepen",
-       "het belangrijker worden van het individu",
-       "het verschil in opvattingen tussen jong en oud"
+       "Meer inspraak krijgen",
+       "Minder inspraak",
+       "Meer koningen",
+       "Minder rechten"
       ],
       "c": 0,
-      "d": 1,
-      "u": "«Secularisatie»: het minder belangrijk worden van religie.",
+      "d": 2,
+      "u": "Mensen kregen meer inspraak.",
       "uo": [
-       "Klopt: religie wordt minder.",
-       "Dat is «Ontzuiling».",
-       "Dat is «Individualisering».",
-       "Dat is «Generatiekloof»."
+       "Klopt: mensen kregen meer inspraak.",
+       "Juist niet.",
+       "Nee, dat klopt niet.",
+       "Nee, dat klopt niet."
       ],
-      "uh": "Onthoud: «Secularisatie» = religie wordt minder."
+      "uh": "Mensen kregen meer inspraak."
      },
      {
-      "v": "Welk begrip hoort bij: \"het krijgen van meer inspraak en zeggenschap\"?",
+      "v": "Wat vergrootte de kloof tussen jong en oud?",
       "o": [
-       "Emancipatie",
-       "Democratisering",
-       "Protestbeweging",
-       "Welvaart"
+       "Meer verzuiling",
+       "Minder muziek",
+       "Meer belasting",
+       "Massamedia en jongerencultuur"
+      ],
+      "c": 3,
+      "d": 3,
+      "u": "Eigen jongerencultuur en massamedia.",
+      "uo": [
+       "Nee, dat klopt niet.",
+       "Nee, dat klopt niet.",
+       "Nee, dat klopt niet.",
+       "Klopt: eigen jongerencultuur en massamedia."
+      ],
+      "uh": "Eigen jongerencultuur en massamedia."
+     },
+     {
+      "v": "Wat is secularisatie?",
+      "o": [
+       "Meer geloof",
+       "Minder geloof",
+       "Meer regels",
+       "Een traditie"
       ],
       "c": 1,
-      "d": 3,
-      "u": "«Democratisering»: het krijgen van meer inspraak en zeggenschap.",
+      "d": 1,
+      "u": "Religie wordt minder belangrijk.",
       "uo": [
-       "«Emancipatie» betekent streven naar gelijkheid.",
-       "Klopt, dit is «Democratisering».",
-       "«Protestbeweging» betekent groep die zich verzet.",
-       "«Welvaart» betekent hoe goed men rondkomt."
+       "Juist niet.",
+       "Klopt: religie wordt minder belangrijk.",
+       "Nee, dat klopt niet.",
+       "Nee, dat klopt niet."
       ],
-      "uh": "Onthoud: «Democratisering» = meer inspraak."
+      "uh": "Religie wordt minder belangrijk."
      },
      {
-      "v": "Welke term hoort bij \"meer inspraak\"?",
+      "v": "Wat is een protestbeweging?",
       "o": [
-       "Protestbeweging",
-       "Welvaart",
-       "Democratisering",
-       "Consumptiemaatschappij"
+       "Een regeringspartij",
+       "Een bedrijf",
+       "Een groep die zich verzet",
+       "Alleen een vakbond"
       ],
       "c": 2,
       "d": 2,
-      "u": "«Democratisering»: het krijgen van meer inspraak en zeggenschap.",
+      "u": "Verzet tegen bestaande regels.",
       "uo": [
-       "«Protestbeweging» betekent groep die zich verzet.",
-       "«Welvaart» betekent hoe goed men rondkomt.",
-       "Klopt, «Democratisering» past hierbij.",
-       "«Consumptiemaatschappij» betekent veel kopen."
+       "Nee, dat klopt niet.",
+       "Nee, dat klopt niet.",
+       "Klopt: verzet tegen bestaande regels.",
+       "Niet per se."
       ],
-      "uh": "Onthoud: «Democratisering» = meer inspraak."
+      "uh": "Verzet tegen bestaande regels."
      },
      {
-      "v": "Wat betekent «Democratisering»?",
+      "v": "Wat maakte de welvaart na 1945 mogelijk?",
       "o": [
-       "het streven naar gelijke rechten, bijvoorbeeld van vrouwen",
-       "een groep die zich verzet tegen bestaande regels",
-       "de mate waarin mensen in hun behoeften kunnen voorzien",
-       "het krijgen van meer inspraak en zeggenschap"
-      ],
-      "c": 3,
-      "d": 1,
-      "u": "«Democratisering»: het krijgen van meer inspraak en zeggenschap.",
-      "uo": [
-       "Dat is «Emancipatie».",
-       "Dat is «Protestbeweging».",
-       "Dat is «Welvaart».",
-       "Klopt: meer inspraak."
-      ],
-      "uh": "Onthoud: «Democratisering» = meer inspraak."
-     },
-     {
-      "v": "Welk begrip hoort bij: \"media die veel mensen tegelijk bereiken, zoals tv en radio\"?",
-      "o": [
-       "Massamedia",
-       "Jongerencultuur",
-       "Ontzuiling",
-       "Verzuiling"
+       "Economische groei",
+       "Een oorlog",
+       "Meer verzuiling",
+       "Minder werk"
       ],
       "c": 0,
-      "d": 3,
-      "u": "«Massamedia»: media die veel mensen tegelijk bereiken, zoals tv en radio.",
-      "uo": [
-       "Klopt, dit is «Massamedia».",
-       "«Jongerencultuur» betekent eigen stijl van jongeren.",
-       "«Ontzuiling» betekent zuilen verdwijnen.",
-       "«Verzuiling» betekent samenleving in zuilen."
-      ],
-      "uh": "Onthoud: «Massamedia» = bereiken velen tegelijk."
-     },
-     {
-      "v": "Welke term hoort bij \"bereiken velen tegelijk\"?",
-      "o": [
-       "Ontzuiling",
-       "Massamedia",
-       "Verzuiling",
-       "Consumptiemaatschappij"
-      ],
-      "c": 1,
       "d": 2,
-      "u": "«Massamedia»: media die veel mensen tegelijk bereiken, zoals tv en radio.",
+      "u": "De economie groeide sterk.",
       "uo": [
-       "«Ontzuiling» betekent zuilen verdwijnen.",
-       "Klopt, «Massamedia» past hierbij.",
-       "«Verzuiling» betekent samenleving in zuilen.",
-       "«Consumptiemaatschappij» betekent veel kopen."
+       "Klopt: de economie groeide sterk.",
+       "Nee, dat klopt niet.",
+       "Nee, dat klopt niet.",
+       "Nee, dat klopt niet."
       ],
-      "uh": "Onthoud: «Massamedia» = bereiken velen tegelijk."
+      "uh": "De economie groeide sterk."
      }
     ],
     "begrippen": [
@@ -11270,498 +9845,213 @@ var VAKKEN_VMBO = [
     "nBeg": 0,
     "sv": [
      {
-      "v": "Welk begrip hoort bij: \"een gebied dat door een ander land wordt bestuurd\"?",
+      "v": "Wat is een kolonie?",
       "o": [
-       "Kolonie",
-       "Plantage",
-       "Uitbuiting",
-       "Onafhankelijkheid"
-      ],
-      "c": 0,
-      "d": 3,
-      "u": "«Kolonie»: een gebied dat door een ander land wordt bestuurd.",
-      "uo": [
-       "Klopt, dit is «Kolonie».",
-       "«Plantage» betekent landbouwbedrijf in kolonie.",
-       "«Uitbuiting» betekent misbruik voor winst.",
-       "«Onafhankelijkheid» betekent zelfstandig worden."
-      ],
-      "uh": "Onthoud: «Kolonie» = bestuurd gebied."
-     },
-     {
-      "v": "Welke term hoort bij \"bestuurd gebied\"?",
-      "o": [
-       "Uitbuiting",
-       "Kolonie",
-       "Onafhankelijkheid",
-       "Slavernij"
-      ],
-      "c": 1,
-      "d": 2,
-      "u": "«Kolonie»: een gebied dat door een ander land wordt bestuurd.",
-      "uo": [
-       "«Uitbuiting» betekent misbruik voor winst.",
-       "Klopt, «Kolonie» past hierbij.",
-       "«Onafhankelijkheid» betekent zelfstandig worden.",
-       "«Slavernij» betekent mensen als bezit."
-      ],
-      "uh": "Onthoud: «Kolonie» = bestuurd gebied."
-     },
-     {
-      "v": "Wat betekent «Dekolonisatie»?",
-      "o": [
-       "het in bezit nemen en besturen van een ander gebied",
-       "de militaire acties van Nederland in Indië na 1945",
-       "het onafhankelijk worden van koloniën",
-       "het bezit en dwingen van mensen tot onbetaalde arbeid"
-      ],
-      "c": 2,
-      "d": 1,
-      "u": "«Dekolonisatie»: het onafhankelijk worden van koloniën.",
-      "uo": [
-       "Dat is «Kolonisatie».",
-       "Dat is «Politionele acties».",
-       "Klopt: koloniën worden vrij.",
-       "Dat is «Slavernij»."
-      ],
-      "uh": "Onthoud: «Dekolonisatie» = koloniën worden vrij."
-     },
-     {
-      "v": "Welk begrip hoort bij: \"het in bezit nemen en besturen van een ander gebied\"?",
-      "o": [
-       "Dekolonisatie",
-       "Uitbuiting",
-       "Nationalisme",
-       "Kolonisatie"
-      ],
-      "c": 3,
-      "d": 3,
-      "u": "«Kolonisatie»: het in bezit nemen en besturen van een ander gebied.",
-      "uo": [
-       "«Dekolonisatie» betekent koloniën worden vrij.",
-       "«Uitbuiting» betekent misbruik voor winst.",
-       "«Nationalisme» betekent streven naar eigen natie.",
-       "Klopt, dit is «Kolonisatie»."
-      ],
-      "uh": "Onthoud: «Kolonisatie» = gebied in bezit nemen."
-     },
-     {
-      "v": "Welke term hoort bij \"gebied in bezit nemen\"?",
-      "o": [
-       "Kolonisatie",
-       "Uitbuiting",
-       "Nationalisme",
-       "Kolonie"
-      ],
-      "c": 0,
-      "d": 2,
-      "u": "«Kolonisatie»: het in bezit nemen en besturen van een ander gebied.",
-      "uo": [
-       "Klopt, «Kolonisatie» past hierbij.",
-       "«Uitbuiting» betekent misbruik voor winst.",
-       "«Nationalisme» betekent streven naar eigen natie.",
-       "«Kolonie» betekent bestuurd gebied."
-      ],
-      "uh": "Onthoud: «Kolonisatie» = gebied in bezit nemen."
-     },
-     {
-      "v": "Wat betekent «Nederlands-Indië»?",
-      "o": [
-       "een vroegere Nederlandse kolonie, sinds 1975 onafhankelijk",
-       "de vroegere Nederlandse kolonie, nu Indonesië",
-       "het verhuizen van mensen, zoals van Suriname naar Nederland",
-       "een groot landbouwbedrijf in een kolonie"
+       "Een vrij land",
+       "Een gebied bestuurd door een ander land",
+       "Een stad",
+       "Een bedrijf"
       ],
       "c": 1,
       "d": 1,
-      "u": "«Nederlands-Indië»: de vroegere Nederlandse kolonie, nu Indonesië.",
+      "u": "Een gebied dat een ander land bestuurt.",
       "uo": [
-       "Dat is «Suriname».",
-       "Klopt: kolonie, nu Indonesië.",
-       "Dat is «Migratie».",
-       "Dat is «Plantage»."
+       "Juist niet.",
+       "Klopt: een gebied dat een ander land bestuurt.",
+       "Nee, dat klopt niet.",
+       "Nee, dat klopt niet."
       ],
-      "uh": "Onthoud: «Nederlands-Indië» = kolonie, nu Indonesië."
+      "uh": "Een gebied dat een ander land bestuurt."
      },
      {
-      "v": "Welk begrip hoort bij: \"het onafhankelijk worden van koloniën\"?",
+      "v": "Wat is dekolonisatie?",
       "o": [
-       "Kolonisatie",
-       "Politionele acties",
-       "Dekolonisatie",
-       "Slavernij"
-      ],
-      "c": 2,
-      "d": 3,
-      "u": "«Dekolonisatie»: het onafhankelijk worden van koloniën.",
-      "uo": [
-       "«Kolonisatie» betekent gebied in bezit nemen.",
-       "«Politionele acties» betekent militaire acties in Indië.",
-       "Klopt, dit is «Dekolonisatie».",
-       "«Slavernij» betekent mensen als bezit."
-      ],
-      "uh": "Onthoud: «Dekolonisatie» = koloniën worden vrij."
-     },
-     {
-      "v": "Welke term hoort bij \"koloniën worden vrij\"?",
-      "o": [
-       "Politionele acties",
-       "Slavernij",
-       "Kolonie",
-       "Dekolonisatie"
-      ],
-      "c": 3,
-      "d": 2,
-      "u": "«Dekolonisatie»: het onafhankelijk worden van koloniën.",
-      "uo": [
-       "«Politionele acties» betekent militaire acties in Indië.",
-       "«Slavernij» betekent mensen als bezit.",
-       "«Kolonie» betekent bestuurd gebied.",
-       "Klopt, «Dekolonisatie» past hierbij."
-      ],
-      "uh": "Onthoud: «Dekolonisatie» = koloniën worden vrij."
-     },
-     {
-      "v": "Wat betekent «Onafhankelijkheid»?",
-      "o": [
-       "het zelfstandig worden van een land",
-       "het streven naar een eigen zelfstandige natie",
-       "het in bezit nemen en besturen van een ander gebied",
-       "het bezit en dwingen van mensen tot onbetaalde arbeid"
-      ],
-      "c": 0,
-      "d": 1,
-      "u": "«Onafhankelijkheid»: het zelfstandig worden van een land.",
-      "uo": [
-       "Klopt: zelfstandig worden.",
-       "Dat is «Nationalisme».",
-       "Dat is «Kolonisatie».",
-       "Dat is «Slavernij»."
-      ],
-      "uh": "Onthoud: «Onafhankelijkheid» = zelfstandig worden."
-     },
-     {
-      "v": "Welk begrip hoort bij: \"het streven naar een eigen zelfstandige natie\"?",
-      "o": [
-       "Onafhankelijkheid",
-       "Nationalisme",
-       "Plantage",
-       "Uitbuiting"
-      ],
-      "c": 1,
-      "d": 3,
-      "u": "«Nationalisme»: het streven naar een eigen zelfstandige natie.",
-      "uo": [
-       "«Onafhankelijkheid» betekent zelfstandig worden.",
-       "Klopt, dit is «Nationalisme».",
-       "«Plantage» betekent landbouwbedrijf in kolonie.",
-       "«Uitbuiting» betekent misbruik voor winst."
-      ],
-      "uh": "Onthoud: «Nationalisme» = streven naar eigen natie."
-     },
-     {
-      "v": "Welke term hoort bij \"kolonie, nu Indonesië\"?",
-      "o": [
-       "Migratie",
-       "Plantage",
-       "Nederlands-Indië",
-       "Onafhankelijkheid"
+       "Een gebied veroveren",
+       "Een kolonie stichten",
+       "Koloniën worden onafhankelijk",
+       "Een oorlog beginnen"
       ],
       "c": 2,
       "d": 2,
-      "u": "«Nederlands-Indië»: de vroegere Nederlandse kolonie, nu Indonesië.",
+      "u": "Koloniën worden zelfstandig.",
       "uo": [
-       "«Migratie» betekent mensen verhuizen.",
-       "«Plantage» betekent landbouwbedrijf in kolonie.",
-       "Klopt, «Nederlands-Indië» past hierbij.",
-       "«Onafhankelijkheid» betekent zelfstandig worden."
+       "Dat is kolonisatie.",
+       "Nee, dat klopt niet.",
+       "Klopt: koloniën worden zelfstandig.",
+       "Nee, dat klopt niet."
       ],
-      "uh": "Onthoud: «Nederlands-Indië» = kolonie, nu Indonesië."
+      "uh": "Koloniën worden zelfstandig."
      },
      {
-      "v": "Wat betekent «Nationalisme»?",
-      "o": [
-       "het zelfstandig worden van een land",
-       "een groot landbouwbedrijf in een kolonie",
-       "het misbruiken van mensen of gebieden voor winst",
-       "het streven naar een eigen zelfstandige natie"
-      ],
-      "c": 3,
-      "d": 1,
-      "u": "«Nationalisme»: het streven naar een eigen zelfstandige natie.",
-      "uo": [
-       "Dat is «Onafhankelijkheid».",
-       "Dat is «Plantage».",
-       "Dat is «Uitbuiting».",
-       "Klopt: streven naar eigen natie."
-      ],
-      "uh": "Onthoud: «Nationalisme» = streven naar eigen natie."
-     },
-     {
-      "v": "Welk begrip hoort bij: \"het misbruiken van mensen of gebieden voor winst\"?",
-      "o": [
-       "Uitbuiting",
-       "Plantage",
-       "Kolonisatie",
-       "Kolonie"
-      ],
-      "c": 0,
-      "d": 3,
-      "u": "«Uitbuiting»: het misbruiken van mensen of gebieden voor winst.",
-      "uo": [
-       "Klopt, dit is «Uitbuiting».",
-       "«Plantage» betekent landbouwbedrijf in kolonie.",
-       "«Kolonisatie» betekent gebied in bezit nemen.",
-       "«Kolonie» betekent bestuurd gebied."
-      ],
-      "uh": "Onthoud: «Uitbuiting» = misbruik voor winst."
-     },
-     {
-      "v": "Welke term hoort bij \"misbruik voor winst\"?",
-      "o": [
-       "Kolonisatie",
-       "Uitbuiting",
-       "Kolonie",
-       "Nationalisme"
-      ],
-      "c": 1,
-      "d": 2,
-      "u": "«Uitbuiting»: het misbruiken van mensen of gebieden voor winst.",
-      "uo": [
-       "«Kolonisatie» betekent gebied in bezit nemen.",
-       "Klopt, «Uitbuiting» past hierbij.",
-       "«Kolonie» betekent bestuurd gebied.",
-       "«Nationalisme» betekent streven naar eigen natie."
-      ],
-      "uh": "Onthoud: «Uitbuiting» = misbruik voor winst."
-     },
-     {
-      "v": "Wat betekent «Uitbuiting»?",
-      "o": [
-       "een groot landbouwbedrijf in een kolonie",
-       "het in bezit nemen en besturen van een ander gebied",
-       "het misbruiken van mensen of gebieden voor winst",
-       "een gebied dat door een ander land wordt bestuurd"
-      ],
-      "c": 2,
-      "d": 1,
-      "u": "«Uitbuiting»: het misbruiken van mensen of gebieden voor winst.",
-      "uo": [
-       "Dat is «Plantage».",
-       "Dat is «Kolonisatie».",
-       "Klopt: misbruik voor winst.",
-       "Dat is «Kolonie»."
-      ],
-      "uh": "Onthoud: «Uitbuiting» = misbruik voor winst."
-     },
-     {
-      "v": "Welk begrip hoort bij: \"een groot landbouwbedrijf in een kolonie\"?",
-      "o": [
-       "Kolonie",
-       "Migratie",
-       "Slavernij",
-       "Plantage"
-      ],
-      "c": 3,
-      "d": 3,
-      "u": "«Plantage»: een groot landbouwbedrijf in een kolonie.",
-      "uo": [
-       "«Kolonie» betekent bestuurd gebied.",
-       "«Migratie» betekent mensen verhuizen.",
-       "«Slavernij» betekent mensen als bezit.",
-       "Klopt, dit is «Plantage»."
-      ],
-      "uh": "Onthoud: «Plantage» = landbouwbedrijf in kolonie."
-     },
-     {
-      "v": "Welke term hoort bij \"landbouwbedrijf in kolonie\"?",
-      "o": [
-       "Plantage",
-       "Migratie",
-       "Slavernij",
-       "Kolonisatie"
-      ],
-      "c": 0,
-      "d": 2,
-      "u": "«Plantage»: een groot landbouwbedrijf in een kolonie.",
-      "uo": [
-       "Klopt, «Plantage» past hierbij.",
-       "«Migratie» betekent mensen verhuizen.",
-       "«Slavernij» betekent mensen als bezit.",
-       "«Kolonisatie» betekent gebied in bezit nemen."
-      ],
-      "uh": "Onthoud: «Plantage» = landbouwbedrijf in kolonie."
-     },
-     {
-      "v": "Wat betekent «Plantage»?",
-      "o": [
-       "een gebied dat door een ander land wordt bestuurd",
-       "een groot landbouwbedrijf in een kolonie",
-       "het verhuizen van mensen, zoals van Suriname naar Nederland",
-       "het bezit en dwingen van mensen tot onbetaalde arbeid"
-      ],
-      "c": 1,
-      "d": 1,
-      "u": "«Plantage»: een groot landbouwbedrijf in een kolonie.",
-      "uo": [
-       "Dat is «Kolonie».",
-       "Klopt: landbouwbedrijf in kolonie.",
-       "Dat is «Migratie».",
-       "Dat is «Slavernij»."
-      ],
-      "uh": "Onthoud: «Plantage» = landbouwbedrijf in kolonie."
-     },
-     {
-      "v": "Welk begrip hoort bij: \"een vroegere Nederlandse kolonie, sinds 1975 onafhankelijk\"?",
+      "v": "Welke kolonie werd Indonesië?",
       "o": [
        "Nederlands-Indië",
-       "Migratie",
        "Suriname",
-       "Slavernij"
-      ],
-      "c": 2,
-      "d": 3,
-      "u": "«Suriname»: een vroegere Nederlandse kolonie, sinds 1975 onafhankelijk.",
-      "uo": [
-       "«Nederlands-Indië» betekent kolonie, nu Indonesië.",
-       "«Migratie» betekent mensen verhuizen.",
-       "Klopt, dit is «Suriname».",
-       "«Slavernij» betekent mensen als bezit."
-      ],
-      "uh": "Onthoud: «Suriname» = kolonie, vrij in 1975."
-     },
-     {
-      "v": "Welke term hoort bij \"kolonie, vrij in 1975\"?",
-      "o": [
-       "Migratie",
-       "Slavernij",
-       "Kolonie",
-       "Suriname"
-      ],
-      "c": 3,
-      "d": 2,
-      "u": "«Suriname»: een vroegere Nederlandse kolonie, sinds 1975 onafhankelijk.",
-      "uo": [
-       "«Migratie» betekent mensen verhuizen.",
-       "«Slavernij» betekent mensen als bezit.",
-       "«Kolonie» betekent bestuurd gebied.",
-       "Klopt, «Suriname» past hierbij."
-      ],
-      "uh": "Onthoud: «Suriname» = kolonie, vrij in 1975."
-     },
-     {
-      "v": "Wat betekent «Politionele acties»?",
-      "o": [
-       "de militaire acties van Nederland in Indië na 1945",
-       "het onafhankelijk worden van koloniën",
-       "de vroegere Nederlandse kolonie, nu Indonesië",
-       "het bezit en dwingen van mensen tot onbetaalde arbeid"
+       "België",
+       "Congo"
       ],
       "c": 0,
       "d": 1,
-      "u": "«Politionele acties»: de militaire acties van Nederland in Indië na 1945.",
+      "u": "Nederlands-Indië werd Indonesië.",
       "uo": [
-       "Klopt: militaire acties in Indië.",
-       "Dat is «Dekolonisatie».",
-       "Dat is «Nederlands-Indië».",
-       "Dat is «Slavernij»."
+       "Klopt: Nederlands-Indië werd Indonesië.",
+       "Suriname is iets anders.",
+       "Nee, dat klopt niet.",
+       "Nee, dat klopt niet."
       ],
-      "uh": "Onthoud: «Politionele acties» = militaire acties in Indië."
+      "uh": "Nederlands-Indië werd Indonesië."
      },
      {
-      "v": "Welk begrip hoort bij: \"het verhuizen van mensen, zoals van Suriname naar Nederland\"?",
+      "v": "Wanneer werd Suriname onafhankelijk?",
       "o": [
-       "Uitbuiting",
-       "Migratie",
-       "Suriname",
-       "Slavernij"
-      ],
-      "c": 1,
-      "d": 3,
-      "u": "«Migratie»: het verhuizen van mensen, zoals van Suriname naar Nederland.",
-      "uo": [
-       "«Uitbuiting» betekent misbruik voor winst.",
-       "Klopt, dit is «Migratie».",
-       "«Suriname» betekent kolonie, vrij in 1975.",
-       "«Slavernij» betekent mensen als bezit."
-      ],
-      "uh": "Onthoud: «Migratie» = mensen verhuizen."
-     },
-     {
-      "v": "Welke term hoort bij \"mensen verhuizen\"?",
-      "o": [
-       "Suriname",
-       "Slavernij",
-       "Migratie",
-       "Kolonie"
-      ],
-      "c": 2,
-      "d": 2,
-      "u": "«Migratie»: het verhuizen van mensen, zoals van Suriname naar Nederland.",
-      "uo": [
-       "«Suriname» betekent kolonie, vrij in 1975.",
-       "«Slavernij» betekent mensen als bezit.",
-       "Klopt, «Migratie» past hierbij.",
-       "«Kolonie» betekent bestuurd gebied."
-      ],
-      "uh": "Onthoud: «Migratie» = mensen verhuizen."
-     },
-     {
-      "v": "Wat betekent «Suriname»?",
-      "o": [
-       "de vroegere Nederlandse kolonie, nu Indonesië",
-       "het verhuizen van mensen, zoals van Suriname naar Nederland",
-       "het bezit en dwingen van mensen tot onbetaalde arbeid",
-       "een vroegere Nederlandse kolonie, sinds 1975 onafhankelijk"
+       "In 1900",
+       "In 1600",
+       "Nooit",
+       "In 1975"
       ],
       "c": 3,
-      "d": 1,
-      "u": "«Suriname»: een vroegere Nederlandse kolonie, sinds 1975 onafhankelijk.",
+      "d": 2,
+      "u": "Het juiste antwoord is: In 1975.",
       "uo": [
-       "Dat is «Nederlands-Indië».",
-       "Dat is «Migratie».",
-       "Dat is «Slavernij».",
-       "Klopt: kolonie, vrij in 1975."
+       "Nee, dat klopt niet.",
+       "Nee, dat klopt niet.",
+       "Suriname is wel onafhankelijk.",
+       "Klopt: in 1975."
       ],
-      "uh": "Onthoud: «Suriname» = kolonie, vrij in 1975."
+      "uh": "Het juiste antwoord is: In 1975."
      },
      {
-      "v": "Welk begrip hoort bij: \"het bezit en dwingen van mensen tot onbetaalde arbeid\"?",
+      "v": "Wat is nationalisme?",
       "o": [
-       "Slavernij",
-       "Uitbuiting",
-       "Suriname",
-       "Nationalisme"
-      ],
-      "c": 0,
-      "d": 3,
-      "u": "«Slavernij»: het bezit en dwingen van mensen tot onbetaalde arbeid.",
-      "uo": [
-       "Klopt, dit is «Slavernij».",
-       "«Uitbuiting» betekent misbruik voor winst.",
-       "«Suriname» betekent kolonie, vrij in 1975.",
-       "«Nationalisme» betekent streven naar eigen natie."
-      ],
-      "uh": "Onthoud: «Slavernij» = mensen als bezit."
-     },
-     {
-      "v": "Welke term hoort bij \"mensen als bezit\"?",
-      "o": [
-       "Suriname",
-       "Slavernij",
-       "Nationalisme",
-       "Plantage"
+       "Een gebied veroveren",
+       "Streven naar een eigen natie",
+       "Belasting innen",
+       "Handel drijven"
       ],
       "c": 1,
       "d": 2,
-      "u": "«Slavernij»: het bezit en dwingen van mensen tot onbetaalde arbeid.",
+      "u": "Streven naar een eigen zelfstandige natie.",
       "uo": [
-       "«Suriname» betekent kolonie, vrij in 1975.",
-       "Klopt, «Slavernij» past hierbij.",
-       "«Nationalisme» betekent streven naar eigen natie.",
-       "«Plantage» betekent landbouwbedrijf in kolonie."
+       "Nee, dat klopt niet.",
+       "Klopt: streven naar een eigen zelfstandige natie.",
+       "Nee, dat klopt niet.",
+       "Nee, dat klopt niet."
       ],
-      "uh": "Onthoud: «Slavernij» = mensen als bezit."
+      "uh": "Streven naar een eigen zelfstandige natie."
+     },
+     {
+      "v": "Wat waren de politionele acties?",
+      "o": [
+       "Politiehervormingen",
+       "Verkiezingen",
+       "Militaire acties in Indië",
+       "Een verdrag"
+      ],
+      "c": 2,
+      "d": 3,
+      "u": "Militaire acties van Nederland in Indië na 1945.",
+      "uo": [
+       "Nee, dat klopt niet.",
+       "Nee, dat klopt niet.",
+       "Klopt: militaire acties van Nederland in Indië na 1945.",
+       "Nee, dat klopt niet."
+      ],
+      "uh": "Militaire acties van Nederland in Indië na 1945."
+     },
+     {
+      "v": "Waarmee verdiende Nederland in de koloniën?",
+      "o": [
+       "Met grondstoffen en plantages",
+       "Met toerisme",
+       "Met belasting hier",
+       "Met fabrieken hier"
+      ],
+      "c": 0,
+      "d": 2,
+      "u": "Grondstoffen en plantages, vaak door uitbuiting.",
+      "uo": [
+       "Klopt: grondstoffen en plantages, vaak door uitbuiting.",
+       "Nee, dat klopt niet.",
+       "Nee, dat klopt niet.",
+       "Nee, dat klopt niet."
+      ],
+      "uh": "Grondstoffen en plantages, vaak door uitbuiting."
+     },
+     {
+      "v": "Wat is uitbuiting?",
+      "o": [
+       "Eerlijk betalen",
+       "Vrij handelen",
+       "Belasting betalen",
+       "Mensen misbruiken voor winst"
+      ],
+      "c": 3,
+      "d": 2,
+      "u": "Mensen of gebieden misbruiken voor winst.",
+      "uo": [
+       "Juist niet.",
+       "Nee, dat klopt niet.",
+       "Nee, dat klopt niet.",
+       "Klopt: mensen of gebieden misbruiken voor winst."
+      ],
+      "uh": "Mensen of gebieden misbruiken voor winst."
+     },
+     {
+      "v": "Wat is kolonisatie?",
+      "o": [
+       "Een land bevrijden",
+       "Een gebied in bezit nemen",
+       "Handel drijven",
+       "Een verdrag sluiten"
+      ],
+      "c": 1,
+      "d": 2,
+      "u": "Een ander gebied in bezit nemen en besturen.",
+      "uo": [
+       "Juist het tegenovergestelde.",
+       "Klopt: een ander gebied in bezit nemen en besturen.",
+       "Nee, dat klopt niet.",
+       "Nee, dat klopt niet."
+      ],
+      "uh": "Een ander gebied in bezit nemen en besturen."
+     },
+     {
+      "v": "Wat gebeurde na de onafhankelijkheid van Suriname?",
+      "o": [
+       "Iedereen bleef",
+       "Er kwam oorlog hier",
+       "Veel mensen migreerden naar Nederland",
+       "Niets veranderde"
+      ],
+      "c": 2,
+      "d": 3,
+      "u": "Veel mensen kwamen naar Nederland.",
+      "uo": [
+       "Niet iedereen.",
+       "Nee, dat klopt niet.",
+       "Klopt: veel mensen kwamen naar Nederland.",
+       "Er veranderde veel."
+      ],
+      "uh": "Veel mensen kwamen naar Nederland."
+     },
+     {
+      "v": "Wat is een plantage?",
+      "o": [
+       "Een groot landbouwbedrijf in een kolonie",
+       "Een fabriek in Nederland",
+       "Een school",
+       "Een haven"
+      ],
+      "c": 0,
+      "d": 1,
+      "u": "Een groot landbouwbedrijf in een kolonie.",
+      "uo": [
+       "Klopt: een groot landbouwbedrijf in een kolonie.",
+       "Nee, dat klopt niet.",
+       "Nee, dat klopt niet.",
+       "Nee, dat klopt niet."
+      ],
+      "uh": "Een groot landbouwbedrijf in een kolonie."
      }
     ],
     "begrippen": [
@@ -11834,498 +10124,213 @@ var VAKKEN_VMBO = [
     "nBeg": 0,
     "sv": [
      {
-      "v": "Welk begrip hoort bij: \"de oorlog van 1914 tot 1918 in vooral Europa\"?",
+      "v": "Wanneer was de Eerste Wereldoorlog?",
       "o": [
-       "Eerste Wereldoorlog",
-       "Tweede Wereldoorlog",
-       "Koude Oorlog",
-       "Crisis"
-      ],
-      "c": 0,
-      "d": 3,
-      "u": "«Eerste Wereldoorlog»: de oorlog van 1914 tot 1918 in vooral Europa.",
-      "uo": [
-       "Klopt, dit is «Eerste Wereldoorlog».",
-       "«Tweede Wereldoorlog» betekent oorlog 1939-1945.",
-       "«Koude Oorlog» betekent VS tegen Sovjet-Unie.",
-       "«Crisis» betekent werkloosheid en armoede."
-      ],
-      "uh": "Onthoud: «Eerste Wereldoorlog» = oorlog 1914-1918."
-     },
-     {
-      "v": "Welke term hoort bij \"oorlog 1914-1918\"?",
-      "o": [
-       "Koude Oorlog",
-       "Eerste Wereldoorlog",
-       "Crisis",
-       "Beurskrach van 1929"
-      ],
-      "c": 1,
-      "d": 2,
-      "u": "«Eerste Wereldoorlog»: de oorlog van 1914 tot 1918 in vooral Europa.",
-      "uo": [
-       "«Koude Oorlog» betekent VS tegen Sovjet-Unie.",
-       "Klopt, «Eerste Wereldoorlog» past hierbij.",
-       "«Crisis» betekent werkloosheid en armoede.",
-       "«Beurskrach van 1929» betekent instorting van de beurs."
-      ],
-      "uh": "Onthoud: «Eerste Wereldoorlog» = oorlog 1914-1918."
-     },
-     {
-      "v": "Wat betekent «Eerste Wereldoorlog»?",
-      "o": [
-       "de oorlog van 1939 tot 1945",
-       "de spanning tussen de VS en de Sovjet-Unie na 1945",
-       "de oorlog van 1914 tot 1918 in vooral Europa",
-       "een tijd van massale werkloosheid en armoede"
-      ],
-      "c": 2,
-      "d": 1,
-      "u": "«Eerste Wereldoorlog»: de oorlog van 1914 tot 1918 in vooral Europa.",
-      "uo": [
-       "Dat is «Tweede Wereldoorlog».",
-       "Dat is «Koude Oorlog».",
-       "Klopt: oorlog 1914-1918.",
-       "Dat is «Crisis»."
-      ],
-      "uh": "Onthoud: «Eerste Wereldoorlog» = oorlog 1914-1918."
-     },
-     {
-      "v": "Welk begrip hoort bij: \"de periode tussen de twee wereldoorlogen\"?",
-      "o": [
-       "Koude Oorlog",
-       "Val van de Muur",
-       "Warschaupact",
-       "Interbellum"
-      ],
-      "c": 3,
-      "d": 3,
-      "u": "«Interbellum»: de periode tussen de twee wereldoorlogen.",
-      "uo": [
-       "«Koude Oorlog» betekent VS tegen Sovjet-Unie.",
-       "«Val van de Muur» betekent Berlijnse Muur valt, 1989.",
-       "«Warschaupact» betekent communistisch bondgenootschap.",
-       "Klopt, dit is «Interbellum»."
-      ],
-      "uh": "Onthoud: «Interbellum» = tussen de wereldoorlogen."
-     },
-     {
-      "v": "Welke term hoort bij \"tussen de wereldoorlogen\"?",
-      "o": [
-       "Interbellum",
-       "Val van de Muur",
-       "Warschaupact",
-       "Dictatuur"
-      ],
-      "c": 0,
-      "d": 2,
-      "u": "«Interbellum»: de periode tussen de twee wereldoorlogen.",
-      "uo": [
-       "Klopt, «Interbellum» past hierbij.",
-       "«Val van de Muur» betekent Berlijnse Muur valt, 1989.",
-       "«Warschaupact» betekent communistisch bondgenootschap.",
-       "«Dictatuur» betekent alle macht bij één."
-      ],
-      "uh": "Onthoud: «Interbellum» = tussen de wereldoorlogen."
-     },
-     {
-      "v": "Wat betekent «Interbellum»?",
-      "o": [
-       "de spanning tussen de VS en de Sovjet-Unie na 1945",
-       "de periode tussen de twee wereldoorlogen",
-       "de val van de Berlijnse Muur in 1989",
-       "het militaire bondgenootschap van de communistische landen"
+       "1939-1945",
+       "1914-1918",
+       "1900-1910",
+       "1950-1960"
       ],
       "c": 1,
       "d": 1,
-      "u": "«Interbellum»: de periode tussen de twee wereldoorlogen.",
+      "u": "1914 tot 1918.",
       "uo": [
-       "Dat is «Koude Oorlog».",
-       "Klopt: tussen de wereldoorlogen.",
-       "Dat is «Val van de Muur».",
-       "Dat is «Warschaupact»."
+       "Dat is de Tweede.",
+       "Klopt: 1914 tot 1918.",
+       "Nee, dat klopt niet.",
+       "Nee, dat klopt niet."
       ],
-      "uh": "Onthoud: «Interbellum» = tussen de wereldoorlogen."
+      "uh": "1914 tot 1918."
      },
      {
-      "v": "Welk begrip hoort bij: \"een tijd van massale werkloosheid en armoede\"?",
+      "v": "Wat is het interbellum?",
       "o": [
-       "Beurskrach van 1929",
-       "Interbellum",
-       "Crisis",
-       "Bezetting"
-      ],
-      "c": 2,
-      "d": 3,
-      "u": "«Crisis»: een tijd van massale werkloosheid en armoede.",
-      "uo": [
-       "«Beurskrach van 1929» betekent instorting van de beurs.",
-       "«Interbellum» betekent tussen de wereldoorlogen.",
-       "Klopt, dit is «Crisis».",
-       "«Bezetting» betekent vreemd leger beheerst."
-      ],
-      "uh": "Onthoud: «Crisis» = werkloosheid en armoede."
-     },
-     {
-      "v": "Welke term hoort bij \"werkloosheid en armoede\"?",
-      "o": [
-       "Interbellum",
-       "Bezetting",
-       "Fascisme",
-       "Crisis"
-      ],
-      "c": 3,
-      "d": 2,
-      "u": "«Crisis»: een tijd van massale werkloosheid en armoede.",
-      "uo": [
-       "«Interbellum» betekent tussen de wereldoorlogen.",
-       "«Bezetting» betekent vreemd leger beheerst.",
-       "«Fascisme» betekent sterke leider, één partij.",
-       "Klopt, «Crisis» past hierbij."
-      ],
-      "uh": "Onthoud: «Crisis» = werkloosheid en armoede."
-     },
-     {
-      "v": "Wat betekent «Beurskrach van 1929»?",
-      "o": [
-       "de ineenstorting van de aandelenmarkt die tot een crisis leidde",
-       "een tijd van massale werkloosheid en armoede",
-       "de spanning tussen de VS en de Sovjet-Unie na 1945",
-       "een extreem-rechtse stroming met een sterke leider en één partij"
-      ],
-      "c": 0,
-      "d": 1,
-      "u": "«Beurskrach van 1929»: de ineenstorting van de aandelenmarkt die tot een crisis leidde.",
-      "uo": [
-       "Klopt: instorting van de beurs.",
-       "Dat is «Crisis».",
-       "Dat is «Koude Oorlog».",
-       "Dat is «Fascisme»."
-      ],
-      "uh": "Onthoud: «Beurskrach van 1929» = instorting van de beurs."
-     },
-     {
-      "v": "Welk begrip hoort bij: \"een extreem-rechtse stroming met een sterke leider en één partij\"?",
-      "o": [
-       "Nazisme",
-       "Fascisme",
-       "Beurskrach van 1929",
-       "Bezetting"
-      ],
-      "c": 1,
-      "d": 3,
-      "u": "«Fascisme»: een extreem-rechtse stroming met een sterke leider en één partij.",
-      "uo": [
-       "«Nazisme» betekent Duits fascisme met racisme.",
-       "Klopt, dit is «Fascisme».",
-       "«Beurskrach van 1929» betekent instorting van de beurs.",
-       "«Bezetting» betekent vreemd leger beheerst."
-      ],
-      "uh": "Onthoud: «Fascisme» = sterke leider, één partij."
-     },
-     {
-      "v": "Welke term hoort bij \"sterke leider, één partij\"?",
-      "o": [
-       "Beurskrach van 1929",
-       "Bezetting",
-       "Fascisme",
-       "Dictatuur"
+       "De tijd vóór WOI",
+       "Een veldslag",
+       "De tijd tussen de wereldoorlogen",
+       "Een verdrag"
       ],
       "c": 2,
       "d": 2,
-      "u": "«Fascisme»: een extreem-rechtse stroming met een sterke leider en één partij.",
+      "u": "De periode tussen de twee wereldoorlogen.",
       "uo": [
-       "«Beurskrach van 1929» betekent instorting van de beurs.",
-       "«Bezetting» betekent vreemd leger beheerst.",
-       "Klopt, «Fascisme» past hierbij.",
-       "«Dictatuur» betekent alle macht bij één."
+       "Nee, dat klopt niet.",
+       "Nee, dat klopt niet.",
+       "Klopt: de periode tussen de twee wereldoorlogen.",
+       "Nee, dat klopt niet."
       ],
-      "uh": "Onthoud: «Fascisme» = sterke leider, één partij."
+      "uh": "De periode tussen de twee wereldoorlogen."
      },
      {
-      "v": "Wat betekent «Crisis»?",
+      "v": "Wat gebeurde er in 1929?",
       "o": [
-       "de ineenstorting van de aandelenmarkt die tot een crisis leidde",
-       "de periode tussen de twee wereldoorlogen",
-       "de periode waarin een vreemd leger een land beheerst",
-       "een tijd van massale werkloosheid en armoede"
-      ],
-      "c": 3,
-      "d": 1,
-      "u": "«Crisis»: een tijd van massale werkloosheid en armoede.",
-      "uo": [
-       "Dat is «Beurskrach van 1929».",
-       "Dat is «Interbellum».",
-       "Dat is «Bezetting».",
-       "Klopt: werkloosheid en armoede."
-      ],
-      "uh": "Onthoud: «Crisis» = werkloosheid en armoede."
-     },
-     {
-      "v": "Welk begrip hoort bij: \"de Duitse vorm van fascisme met racisme en Jodenhaat\"?",
-      "o": [
-       "Nazisme",
-       "Fascisme",
-       "Holocaust",
-       "Koude Oorlog"
+       "De beurskrach",
+       "Het einde van WOII",
+       "De val van de Muur",
+       "De start van de EU"
       ],
       "c": 0,
-      "d": 3,
-      "u": "«Nazisme»: de Duitse vorm van fascisme met racisme en Jodenhaat.",
+      "d": 2,
+      "u": "De beurskrach leidde tot een crisis.",
       "uo": [
-       "Klopt, dit is «Nazisme».",
-       "«Fascisme» betekent sterke leider, één partij.",
-       "«Holocaust» betekent moord op de Joden.",
-       "«Koude Oorlog» betekent VS tegen Sovjet-Unie."
+       "Klopt: de beurskrach leidde tot een crisis.",
+       "Nee, dat klopt niet.",
+       "Nee, dat was 1989.",
+       "Nee, dat klopt niet."
       ],
-      "uh": "Onthoud: «Nazisme» = Duits fascisme met racisme."
+      "uh": "De beurskrach leidde tot een crisis."
      },
      {
-      "v": "Welke term hoort bij \"Duits fascisme met racisme\"?",
+      "v": "Wat is fascisme?",
       "o": [
-       "Holocaust",
-       "Nazisme",
-       "Koude Oorlog",
-       "Tweede Wereldoorlog"
+       "Een democratie",
+       "Een vorm van socialisme",
+       "Een godsdienst",
+       "Extreem-rechts met één sterke leider"
+      ],
+      "c": 3,
+      "d": 2,
+      "u": "Extreem-rechts met een sterke leider en één partij.",
+      "uo": [
+       "Juist niet.",
+       "Nee, dat klopt niet.",
+       "Nee, dat klopt niet.",
+       "Klopt: extreem-rechts met een sterke leider en één partij."
+      ],
+      "uh": "Extreem-rechts met een sterke leider en één partij."
+     },
+     {
+      "v": "Wat was het nazisme?",
+      "o": [
+       "Een democratie",
+       "Duits fascisme met racisme",
+       "Een vakbond",
+       "Een kerk"
       ],
       "c": 1,
       "d": 2,
-      "u": "«Nazisme»: de Duitse vorm van fascisme met racisme en Jodenhaat.",
+      "u": "De Duitse vorm van fascisme met Jodenhaat.",
       "uo": [
-       "«Holocaust» betekent moord op de Joden.",
-       "Klopt, «Nazisme» past hierbij.",
-       "«Koude Oorlog» betekent VS tegen Sovjet-Unie.",
-       "«Tweede Wereldoorlog» betekent oorlog 1939-1945."
+       "Nee, dat klopt niet.",
+       "Klopt: de Duitse vorm van fascisme met Jodenhaat.",
+       "Nee, dat klopt niet.",
+       "Nee, dat klopt niet."
       ],
-      "uh": "Onthoud: «Nazisme» = Duits fascisme met racisme."
+      "uh": "De Duitse vorm van fascisme met Jodenhaat."
      },
      {
-      "v": "Wat betekent «Nazisme»?",
+      "v": "Wat is de Holocaust?",
       "o": [
-       "een extreem-rechtse stroming met een sterke leider en één partij",
-       "de systematische moord op zes miljoen Joden door de nazi's",
-       "de Duitse vorm van fascisme met racisme en Jodenhaat",
-       "de spanning tussen de VS en de Sovjet-Unie na 1945"
+       "Een veldslag",
+       "Een verdrag",
+       "De moord op zes miljoen Joden",
+       "Een verkiezing"
       ],
       "c": 2,
-      "d": 1,
-      "u": "«Nazisme»: de Duitse vorm van fascisme met racisme en Jodenhaat.",
+      "d": 2,
+      "u": "De systematische moord op de Joden door de nazi's.",
       "uo": [
-       "Dat is «Fascisme».",
-       "Dat is «Holocaust».",
-       "Klopt: Duits fascisme met racisme.",
-       "Dat is «Koude Oorlog»."
+       "Nee, dat klopt niet.",
+       "Nee, dat klopt niet.",
+       "Klopt: de systematische moord op de Joden door de nazi's.",
+       "Nee, dat klopt niet."
       ],
-      "uh": "Onthoud: «Nazisme» = Duits fascisme met racisme."
+      "uh": "De systematische moord op de Joden door de nazi's."
      },
      {
-      "v": "Welk begrip hoort bij: \"de oorlog van 1939 tot 1945\"?",
+      "v": "Wat was de Koude Oorlog?",
       "o": [
-       "Eerste Wereldoorlog",
-       "Koude Oorlog",
-       "Crisis",
-       "Tweede Wereldoorlog"
-      ],
-      "c": 3,
-      "d": 3,
-      "u": "«Tweede Wereldoorlog»: de oorlog van 1939 tot 1945.",
-      "uo": [
-       "«Eerste Wereldoorlog» betekent oorlog 1914-1918.",
-       "«Koude Oorlog» betekent VS tegen Sovjet-Unie.",
-       "«Crisis» betekent werkloosheid en armoede.",
-       "Klopt, dit is «Tweede Wereldoorlog»."
-      ],
-      "uh": "Onthoud: «Tweede Wereldoorlog» = oorlog 1939-1945."
-     },
-     {
-      "v": "Welke term hoort bij \"alle macht bij één\"?",
-      "o": [
-       "Dictatuur",
-       "Warschaupact",
-       "Holocaust",
-       "Tweede Wereldoorlog"
+       "Spanning tussen VS en Sovjet-Unie",
+       "Een oorlog met veldslagen",
+       "Een wereldoorlog",
+       "Een burgeroorlog"
       ],
       "c": 0,
       "d": 2,
-      "u": "«Dictatuur»: een bestuur waarin één persoon of partij alle macht heeft.",
+      "u": "Spanning tussen VS en Sovjet-Unie na 1945.",
       "uo": [
-       "Klopt, «Dictatuur» past hierbij.",
-       "«Warschaupact» betekent communistisch bondgenootschap.",
-       "«Holocaust» betekent moord op de Joden.",
-       "«Tweede Wereldoorlog» betekent oorlog 1939-1945."
+       "Klopt: spanning tussen VS en Sovjet-Unie na 1945.",
+       "Er werd niet direct gevochten.",
+       "Nee, dat klopt niet.",
+       "Nee, dat klopt niet."
       ],
-      "uh": "Onthoud: «Dictatuur» = alle macht bij één."
+      "uh": "Spanning tussen VS en Sovjet-Unie na 1945."
      },
      {
-      "v": "Wat betekent «Dictatuur»?",
+      "v": "Wat was de NAVO?",
       "o": [
-       "het militaire bondgenootschap van de communistische landen",
-       "een bestuur waarin één persoon of partij alle macht heeft",
-       "de systematische moord op zes miljoen Joden door de nazi's",
-       "de oorlog van 1939 tot 1945"
+       "Een communistisch pact",
+       "Een handelsverdrag",
+       "Een munt",
+       "Het westerse bondgenootschap"
+      ],
+      "c": 3,
+      "d": 2,
+      "u": "Het militaire bondgenootschap van westerse landen.",
+      "uo": [
+       "Dat was het Warschaupact.",
+       "Nee, dat klopt niet.",
+       "Nee, dat klopt niet.",
+       "Klopt: het militaire bondgenootschap van westerse landen."
+      ],
+      "uh": "Het militaire bondgenootschap van westerse landen."
+     },
+     {
+      "v": "Wat gebeurde er in 1989?",
+      "o": [
+       "Het begin van WOII",
+       "De val van de Berlijnse Muur",
+       "De beurskrach",
+       "Het begin van WOI"
       ],
       "c": 1,
-      "d": 1,
-      "u": "«Dictatuur»: een bestuur waarin één persoon of partij alle macht heeft.",
+      "d": 2,
+      "u": "De Muur viel, einde van de Koude Oorlog.",
       "uo": [
-       "Dat is «Warschaupact».",
+       "Nee, dat klopt niet.",
+       "Klopt: de Muur viel, einde van de Koude Oorlog.",
+       "Dat was 1929.",
+       "Nee, dat klopt niet."
+      ],
+      "uh": "De Muur viel, einde van de Koude Oorlog."
+     },
+     {
+      "v": "Wat is een dictatuur?",
+      "o": [
+       "Het volk kiest",
+       "Er zijn veel partijen",
+       "Eén persoon of partij heeft alle macht",
+       "Er zijn geen leiders"
+      ],
+      "c": 2,
+      "d": 2,
+      "u": "Alle macht bij één.",
+      "uo": [
+       "Dat is een democratie.",
+       "Juist niet.",
        "Klopt: alle macht bij één.",
-       "Dat is «Holocaust».",
-       "Dat is «Tweede Wereldoorlog»."
+       "Nee, dat klopt niet."
       ],
-      "uh": "Onthoud: «Dictatuur» = alle macht bij één."
+      "uh": "Alle macht bij één."
      },
      {
-      "v": "Welk begrip hoort bij: \"de periode waarin een vreemd leger een land beheerst\"?",
+      "v": "Wat betekende de bezetting voor Nederland in WOII?",
       "o": [
-       "Dictatuur",
-       "Warschaupact",
-       "Bezetting",
-       "Holocaust"
-      ],
-      "c": 2,
-      "d": 3,
-      "u": "«Bezetting»: de periode waarin een vreemd leger een land beheerst.",
-      "uo": [
-       "«Dictatuur» betekent alle macht bij één.",
-       "«Warschaupact» betekent communistisch bondgenootschap.",
-       "Klopt, dit is «Bezetting».",
-       "«Holocaust» betekent moord op de Joden."
-      ],
-      "uh": "Onthoud: «Bezetting» = vreemd leger beheerst."
-     },
-     {
-      "v": "Welke term hoort bij \"oorlog 1939-1945\"?",
-      "o": [
-       "Koude Oorlog",
-       "Crisis",
-       "Beurskrach van 1929",
-       "Tweede Wereldoorlog"
-      ],
-      "c": 3,
-      "d": 2,
-      "u": "«Tweede Wereldoorlog»: de oorlog van 1939 tot 1945.",
-      "uo": [
-       "«Koude Oorlog» betekent VS tegen Sovjet-Unie.",
-       "«Crisis» betekent werkloosheid en armoede.",
-       "«Beurskrach van 1929» betekent instorting van de beurs.",
-       "Klopt, «Tweede Wereldoorlog» past hierbij."
-      ],
-      "uh": "Onthoud: «Tweede Wereldoorlog» = oorlog 1939-1945."
-     },
-     {
-      "v": "Wat betekent «Tweede Wereldoorlog»?",
-      "o": [
-       "de oorlog van 1939 tot 1945",
-       "de oorlog van 1914 tot 1918 in vooral Europa",
-       "de spanning tussen de VS en de Sovjet-Unie na 1945",
-       "een tijd van massale werkloosheid en armoede"
-      ],
-      "c": 0,
-      "d": 1,
-      "u": "«Tweede Wereldoorlog»: de oorlog van 1939 tot 1945.",
-      "uo": [
-       "Klopt: oorlog 1939-1945.",
-       "Dat is «Eerste Wereldoorlog».",
-       "Dat is «Koude Oorlog».",
-       "Dat is «Crisis»."
-      ],
-      "uh": "Onthoud: «Tweede Wereldoorlog» = oorlog 1939-1945."
-     },
-     {
-      "v": "Welk begrip hoort bij: \"de systematische moord op zes miljoen Joden door de nazi's\"?",
-      "o": [
-       "Bezetting",
-       "Holocaust",
-       "Warschaupact",
-       "Tweede Wereldoorlog"
-      ],
-      "c": 1,
-      "d": 3,
-      "u": "«Holocaust»: de systematische moord op zes miljoen Joden door de nazi's.",
-      "uo": [
-       "«Bezetting» betekent vreemd leger beheerst.",
-       "Klopt, dit is «Holocaust».",
-       "«Warschaupact» betekent communistisch bondgenootschap.",
-       "«Tweede Wereldoorlog» betekent oorlog 1939-1945."
-      ],
-      "uh": "Onthoud: «Holocaust» = moord op de Joden."
-     },
-     {
-      "v": "Welke term hoort bij \"vreemd leger beheerst\"?",
-      "o": [
-       "Warschaupact",
-       "Holocaust",
-       "Bezetting",
-       "Nazisme"
-      ],
-      "c": 2,
-      "d": 2,
-      "u": "«Bezetting»: de periode waarin een vreemd leger een land beheerst.",
-      "uo": [
-       "«Warschaupact» betekent communistisch bondgenootschap.",
-       "«Holocaust» betekent moord op de Joden.",
-       "Klopt, «Bezetting» past hierbij.",
-       "«Nazisme» betekent Duits fascisme met racisme."
-      ],
-      "uh": "Onthoud: «Bezetting» = vreemd leger beheerst."
-     },
-     {
-      "v": "Wat betekent «Bezetting»?",
-      "o": [
-       "een bestuur waarin één persoon of partij alle macht heeft",
-       "het militaire bondgenootschap van de communistische landen",
-       "de systematische moord op zes miljoen Joden door de nazi's",
-       "de periode waarin een vreemd leger een land beheerst"
-      ],
-      "c": 3,
-      "d": 1,
-      "u": "«Bezetting»: de periode waarin een vreemd leger een land beheerst.",
-      "uo": [
-       "Dat is «Dictatuur».",
-       "Dat is «Warschaupact».",
-       "Dat is «Holocaust».",
-       "Klopt: vreemd leger beheerst."
-      ],
-      "uh": "Onthoud: «Bezetting» = vreemd leger beheerst."
-     },
-     {
-      "v": "Welk begrip hoort bij: \"de spanning tussen de VS en de Sovjet-Unie na 1945\"?",
-      "o": [
-       "Koude Oorlog",
-       "Interbellum",
-       "Bezetting",
-       "Tweede Wereldoorlog"
+       "Een vreemd leger had de macht",
+       "Nederland was vrij",
+       "Er was vrede",
+       "Nederland won"
       ],
       "c": 0,
       "d": 3,
-      "u": "«Koude Oorlog»: de spanning tussen de VS en de Sovjet-Unie na 1945.",
+      "u": "Duitsland beheerste het land.",
       "uo": [
-       "Klopt, dit is «Koude Oorlog».",
-       "«Interbellum» betekent tussen de wereldoorlogen.",
-       "«Bezetting» betekent vreemd leger beheerst.",
-       "«Tweede Wereldoorlog» betekent oorlog 1939-1945."
+       "Klopt: Duitsland beheerste het land.",
+       "Juist niet.",
+       "Nee, dat klopt niet.",
+       "Nee, dat klopt niet."
       ],
-      "uh": "Onthoud: «Koude Oorlog» = VS tegen Sovjet-Unie."
-     },
-     {
-      "v": "Welke term hoort bij \"moord op de Joden\"?",
-      "o": [
-       "Warschaupact",
-       "Holocaust",
-       "Tweede Wereldoorlog",
-       "Nazisme"
-      ],
-      "c": 1,
-      "d": 2,
-      "u": "«Holocaust»: de systematische moord op zes miljoen Joden door de nazi's.",
-      "uo": [
-       "«Warschaupact» betekent communistisch bondgenootschap.",
-       "Klopt, «Holocaust» past hierbij.",
-       "«Tweede Wereldoorlog» betekent oorlog 1939-1945.",
-       "«Nazisme» betekent Duits fascisme met racisme."
-      ],
-      "uh": "Onthoud: «Holocaust» = moord op de Joden."
+      "uh": "Duitsland beheerste het land."
      }
     ],
     "begrippen": [
@@ -12403,498 +10408,213 @@ var VAKKEN_VMBO = [
     "nBeg": 0,
     "sv": [
      {
-      "v": "Welk begrip hoort bij: \"een samenwerkingsverband van Europese landen\"?",
+      "v": "Waarom werkten Europese landen na 1945 samen?",
       "o": [
-       "Europese Unie",
-       "Europese samenwerking",
-       "Vrede",
-       "Ontwikkelingshulp"
-      ],
-      "c": 0,
-      "d": 3,
-      "u": "«Europese Unie»: een samenwerkingsverband van Europese landen.",
-      "uo": [
-       "Klopt, dit is «Europese Unie».",
-       "«Europese samenwerking» betekent landen werken samen.",
-       "«Vrede» betekent geen oorlog.",
-       "«Ontwikkelingshulp» betekent steun aan arme landen."
-      ],
-      "uh": "Onthoud: «Europese Unie» = samenwerkende EU-landen."
-     },
-     {
-      "v": "Welke term hoort bij \"samenwerkende EU-landen\"?",
-      "o": [
-       "Vrede",
-       "Europese Unie",
-       "Ontwikkelingshulp",
-       "Euro"
+       "Om oorlog te voeren",
+       "Voor vrede en welvaart",
+       "Om koloniën te houden",
+       "Om grenzen te sluiten"
       ],
       "c": 1,
       "d": 2,
-      "u": "«Europese Unie»: een samenwerkingsverband van Europese landen.",
+      "u": "Om vrede en welvaart te bevorderen.",
       "uo": [
-       "«Vrede» betekent geen oorlog.",
-       "Klopt, «Europese Unie» past hierbij.",
-       "«Ontwikkelingshulp» betekent steun aan arme landen.",
-       "«Euro» betekent munt van de eurozone."
+       "Juist niet.",
+       "Klopt: om vrede en welvaart te bevorderen.",
+       "Nee, dat klopt niet.",
+       "Nee, dat klopt niet."
       ],
-      "uh": "Onthoud: «Europese Unie» = samenwerkende EU-landen."
+      "uh": "Om vrede en welvaart te bevorderen."
      },
      {
-      "v": "Wat betekent «Europese Unie»?",
+      "v": "Wat is de euro?",
       "o": [
-       "het samenwerken van landen in Europa na 1945",
-       "het ontbreken van oorlog, een doel van Europese samenwerking",
-       "een samenwerkingsverband van Europese landen",
-       "steun aan armere landen om zich te ontwikkelen"
+       "Een verdrag",
+       "Een leger",
+       "De gezamenlijke munt van EU-landen",
+       "Een belasting"
       ],
       "c": 2,
       "d": 1,
-      "u": "«Europese Unie»: een samenwerkingsverband van Europese landen.",
+      "u": "De munt van veel EU-landen.",
       "uo": [
-       "Dat is «Europese samenwerking».",
-       "Dat is «Vrede».",
-       "Klopt: samenwerkende EU-landen.",
-       "Dat is «Ontwikkelingshulp»."
+       "Nee, dat klopt niet.",
+       "Nee, dat klopt niet.",
+       "Klopt: de munt van veel EU-landen.",
+       "Nee, dat klopt niet."
       ],
-      "uh": "Onthoud: «Europese Unie» = samenwerkende EU-landen."
+      "uh": "De munt van veel EU-landen."
      },
      {
-      "v": "Welk begrip hoort bij: \"de gezamenlijke munt van veel EU-landen\"?",
+      "v": "Wat is de Europese Unie?",
       "o": [
-       "Vrij verkeer",
+       "Een samenwerking van Europese landen",
+       "Een bedrijf",
+       "Een land",
+       "Een munt"
+      ],
+      "c": 0,
+      "d": 1,
+      "u": "Een samenwerkingsverband van Europese landen.",
+      "uo": [
+       "Klopt: een samenwerkingsverband van Europese landen.",
+       "Nee, dat klopt niet.",
+       "Nee, dat klopt niet.",
+       "De munt is de euro."
+      ],
+      "uh": "Een samenwerkingsverband van Europese landen."
+     },
+     {
+      "v": "Wat is globalisering?",
+      "o": [
+       "Landen sluiten zich af",
+       "Minder handel",
+       "Meer grenzen",
+       "Landen raken wereldwijd verweven"
+      ],
+      "c": 3,
+      "d": 2,
+      "u": "Landen raken wereldwijd verweven.",
+      "uo": [
+       "Juist niet.",
+       "Nee, dat klopt niet.",
+       "Nee, dat klopt niet.",
+       "Klopt: landen raken wereldwijd verweven."
+      ],
+      "uh": "Landen raken wereldwijd verweven."
+     },
+     {
+      "v": "Wat is vrij verkeer in de EU?",
+      "o": [
+       "Meer grenscontrole",
+       "Vrij reizen, werken en handelen",
+       "Meer belasting",
+       "Aparte munten"
+      ],
+      "c": 1,
+      "d": 2,
+      "u": "Vrij binnen de EU.",
+      "uo": [
+       "Juist minder.",
+       "Klopt: vrij binnen de EU.",
+       "Nee, dat klopt niet.",
+       "Nee, dat klopt niet."
+      ],
+      "uh": "Vrij binnen de EU."
+     },
+     {
+      "v": "Wat is een verdrag?",
+      "o": [
+       "Een oorlog",
+       "Een belasting",
+       "Een officiële afspraak tussen landen",
+       "Een munt"
+      ],
+      "c": 2,
+      "d": 1,
+      "u": "Een afspraak tussen landen.",
+      "uo": [
+       "Nee, dat klopt niet.",
+       "Nee, dat klopt niet.",
+       "Klopt: een afspraak tussen landen.",
+       "Nee, dat klopt niet."
+      ],
+      "uh": "Een afspraak tussen landen."
+     },
+     {
+      "v": "Wat is een multinational?",
+      "o": [
+       "Een bedrijf in meerdere landen",
+       "Een klein winkeltje",
+       "Een overheid",
+       "Een school"
+      ],
+      "c": 0,
+      "d": 2,
+      "u": "Een bedrijf dat in veel landen actief is.",
+      "uo": [
+       "Klopt: een bedrijf dat in veel landen actief is.",
+       "Nee, dat klopt niet.",
+       "Nee, dat klopt niet.",
+       "Nee, dat klopt niet."
+      ],
+      "uh": "Een bedrijf dat in veel landen actief is."
+     },
+     {
+      "v": "Wat is ontwikkelingshulp?",
+      "o": [
+       "Handel met winst",
+       "Belasting innen",
+       "Een lening",
+       "Steun aan armere landen"
+      ],
+      "c": 3,
+      "d": 2,
+      "u": "Steun aan armere landen om zich te ontwikkelen.",
+      "uo": [
+       "Nee, dat klopt niet.",
+       "Nee, dat klopt niet.",
+       "Nee, dat klopt niet.",
+       "Klopt: steun aan armere landen om zich te ontwikkelen."
+      ],
+      "uh": "Steun aan armere landen om zich te ontwikkelen."
+     },
+     {
+      "v": "Wat was het hoofddoel van de Europese samenwerking?",
+      "o": [
+       "Meer oorlog",
        "Vrede",
-       "Ontwikkelingshulp",
-       "Euro"
-      ],
-      "c": 3,
-      "d": 3,
-      "u": "«Euro»: de gezamenlijke munt van veel EU-landen.",
-      "uo": [
-       "«Vrij verkeer» betekent vrij binnen de EU.",
-       "«Vrede» betekent geen oorlog.",
-       "«Ontwikkelingshulp» betekent steun aan arme landen.",
-       "Klopt, dit is «Euro»."
-      ],
-      "uh": "Onthoud: «Euro» = munt van de eurozone."
-     },
-     {
-      "v": "Welke term hoort bij \"munt van de eurozone\"?",
-      "o": [
-       "Euro",
-       "Vrede",
-       "Ontwikkelingshulp",
-       "Vluchteling"
-      ],
-      "c": 0,
-      "d": 2,
-      "u": "«Euro»: de gezamenlijke munt van veel EU-landen.",
-      "uo": [
-       "Klopt, «Euro» past hierbij.",
-       "«Vrede» betekent geen oorlog.",
-       "«Ontwikkelingshulp» betekent steun aan arme landen.",
-       "«Vluchteling» betekent ontvlucht gevaar."
-      ],
-      "uh": "Onthoud: «Euro» = munt van de eurozone."
-     },
-     {
-      "v": "Wat betekent «Europese samenwerking»?",
-      "o": [
-       "een samenwerkingsverband van Europese landen",
-       "het samenwerken van landen in Europa na 1945",
-       "het kopen en verkopen tussen landen",
-       "het ontbreken van oorlog, een doel van Europese samenwerking"
+       "Meer koloniën",
+       "Aparte munten"
       ],
       "c": 1,
-      "d": 1,
-      "u": "«Europese samenwerking»: het samenwerken van landen in Europa na 1945.",
-      "uo": [
-       "Dat is «Europese Unie».",
-       "Klopt: landen werken samen.",
-       "Dat is «Handel».",
-       "Dat is «Vrede»."
-      ],
-      "uh": "Onthoud: «Europese samenwerking» = landen werken samen."
-     },
-     {
-      "v": "Welk begrip hoort bij: \"het vrij kunnen reizen, werken en handelen binnen de EU\"?",
-      "o": [
-       "Europese Unie",
-       "Verdrag",
-       "Vrij verkeer",
-       "Migratie"
-      ],
-      "c": 2,
-      "d": 3,
-      "u": "«Vrij verkeer»: het vrij kunnen reizen, werken en handelen binnen de EU.",
-      "uo": [
-       "«Europese Unie» betekent samenwerkende EU-landen.",
-       "«Verdrag» betekent afspraak tussen landen.",
-       "Klopt, dit is «Vrij verkeer».",
-       "«Migratie» betekent mensen verhuizen."
-      ],
-      "uh": "Onthoud: «Vrij verkeer» = vrij binnen de EU."
-     },
-     {
-      "v": "Welke term hoort bij \"vrij binnen de EU\"?",
-      "o": [
-       "Verdrag",
-       "Migratie",
-       "Europese samenwerking",
-       "Vrij verkeer"
-      ],
-      "c": 3,
       "d": 2,
-      "u": "«Vrij verkeer»: het vrij kunnen reizen, werken en handelen binnen de EU.",
+      "u": "Vrede en welvaart.",
       "uo": [
-       "«Verdrag» betekent afspraak tussen landen.",
-       "«Migratie» betekent mensen verhuizen.",
-       "«Europese samenwerking» betekent landen werken samen.",
-       "Klopt, «Vrij verkeer» past hierbij."
+       "Juist niet.",
+       "Klopt: vrede en welvaart.",
+       "Nee, dat klopt niet.",
+       "Nee, dat klopt niet."
       ],
-      "uh": "Onthoud: «Vrij verkeer» = vrij binnen de EU."
+      "uh": "Vrede en welvaart."
      },
      {
-      "v": "Wat betekent «Euro»?",
+      "v": "Wat is een vluchteling?",
       "o": [
-       "de gezamenlijke munt van veel EU-landen",
-       "het vrij kunnen reizen, werken en handelen binnen de EU",
-       "het ontbreken van oorlog, een doel van Europese samenwerking",
-       "steun aan armere landen om zich te ontwikkelen"
-      ],
-      "c": 0,
-      "d": 1,
-      "u": "«Euro»: de gezamenlijke munt van veel EU-landen.",
-      "uo": [
-       "Klopt: munt van de eurozone.",
-       "Dat is «Vrij verkeer».",
-       "Dat is «Vrede».",
-       "Dat is «Ontwikkelingshulp»."
-      ],
-      "uh": "Onthoud: «Euro» = munt van de eurozone."
-     },
-     {
-      "v": "Welk begrip hoort bij: \"het steeds meer verweven raken van landen wereldwijd\"?",
-      "o": [
-       "Handel",
-       "Globalisering",
-       "Verdrag",
-       "Ontwikkelingshulp"
-      ],
-      "c": 1,
-      "d": 3,
-      "u": "«Globalisering»: het steeds meer verweven raken van landen wereldwijd.",
-      "uo": [
-       "«Handel» betekent kopen en verkopen.",
-       "Klopt, dit is «Globalisering».",
-       "«Verdrag» betekent afspraak tussen landen.",
-       "«Ontwikkelingshulp» betekent steun aan arme landen."
-      ],
-      "uh": "Onthoud: «Globalisering» = landen raken verweven."
-     },
-     {
-      "v": "Welke term hoort bij \"landen raken verweven\"?",
-      "o": [
-       "Verdrag",
-       "Ontwikkelingshulp",
-       "Globalisering",
-       "Europese Unie"
+       "Een toerist",
+       "Een handelaar",
+       "Iemand die zijn land ontvlucht",
+       "Een ambtenaar"
       ],
       "c": 2,
       "d": 2,
-      "u": "«Globalisering»: het steeds meer verweven raken van landen wereldwijd.",
+      "u": "Iemand die zijn land ontvlucht vanwege gevaar.",
       "uo": [
-       "«Verdrag» betekent afspraak tussen landen.",
-       "«Ontwikkelingshulp» betekent steun aan arme landen.",
-       "Klopt, «Globalisering» past hierbij.",
-       "«Europese Unie» betekent samenwerkende EU-landen."
+       "Nee, dat klopt niet.",
+       "Nee, dat klopt niet.",
+       "Klopt: iemand die zijn land ontvlucht vanwege gevaar.",
+       "Nee, dat klopt niet."
       ],
-      "uh": "Onthoud: «Globalisering» = landen raken verweven."
+      "uh": "Iemand die zijn land ontvlucht vanwege gevaar."
      },
      {
-      "v": "Wat betekent «Vluchteling»?",
+      "v": "Wat is handel tussen landen?",
       "o": [
-       "het verhuizen van mensen tussen landen",
-       "het steeds meer verweven raken van landen wereldwijd",
-       "het vrij kunnen reizen, werken en handelen binnen de EU",
-       "iemand die zijn land ontvlucht vanwege gevaar"
-      ],
-      "c": 3,
-      "d": 1,
-      "u": "«Vluchteling»: iemand die zijn land ontvlucht vanwege gevaar.",
-      "uo": [
-       "Dat is «Migratie».",
-       "Dat is «Globalisering».",
-       "Dat is «Vrij verkeer».",
-       "Klopt: ontvlucht gevaar."
-      ],
-      "uh": "Onthoud: «Vluchteling» = ontvlucht gevaar."
-     },
-     {
-      "v": "Welk begrip hoort bij: \"iemand die zijn land ontvlucht vanwege gevaar\"?",
-      "o": [
-       "Vluchteling",
-       "Migratie",
-       "Globalisering",
-       "Vrij verkeer"
-      ],
-      "c": 0,
-      "d": 3,
-      "u": "«Vluchteling»: iemand die zijn land ontvlucht vanwege gevaar.",
-      "uo": [
-       "Klopt, dit is «Vluchteling».",
-       "«Migratie» betekent mensen verhuizen.",
-       "«Globalisering» betekent landen raken verweven.",
-       "«Vrij verkeer» betekent vrij binnen de EU."
-      ],
-      "uh": "Onthoud: «Vluchteling» = ontvlucht gevaar."
-     },
-     {
-      "v": "Welke term hoort bij \"ontvlucht gevaar\"?",
-      "o": [
-       "Globalisering",
-       "Vluchteling",
-       "Vrij verkeer",
-       "Europese Unie"
-      ],
-      "c": 1,
-      "d": 2,
-      "u": "«Vluchteling»: iemand die zijn land ontvlucht vanwege gevaar.",
-      "uo": [
-       "«Globalisering» betekent landen raken verweven.",
-       "Klopt, «Vluchteling» past hierbij.",
-       "«Vrij verkeer» betekent vrij binnen de EU.",
-       "«Europese Unie» betekent samenwerkende EU-landen."
-      ],
-      "uh": "Onthoud: «Vluchteling» = ontvlucht gevaar."
-     },
-     {
-      "v": "Wat betekent «Migratie»?",
-      "o": [
-       "iemand die zijn land ontvlucht vanwege gevaar",
-       "een bedrijf dat in meerdere landen actief is",
-       "het verhuizen van mensen tussen landen",
-       "steun aan armere landen om zich te ontwikkelen"
-      ],
-      "c": 2,
-      "d": 1,
-      "u": "«Migratie»: het verhuizen van mensen tussen landen.",
-      "uo": [
-       "Dat is «Vluchteling».",
-       "Dat is «Multinational».",
-       "Klopt: mensen verhuizen.",
-       "Dat is «Ontwikkelingshulp»."
-      ],
-      "uh": "Onthoud: «Migratie» = mensen verhuizen."
-     },
-     {
-      "v": "Welk begrip hoort bij: \"het verhuizen van mensen tussen landen\"?",
-      "o": [
-       "Vluchteling",
-       "Multinational",
-       "Ontwikkelingshulp",
-       "Migratie"
-      ],
-      "c": 3,
-      "d": 3,
-      "u": "«Migratie»: het verhuizen van mensen tussen landen.",
-      "uo": [
-       "«Vluchteling» betekent ontvlucht gevaar.",
-       "«Multinational» betekent bedrijf in veel landen.",
-       "«Ontwikkelingshulp» betekent steun aan arme landen.",
-       "Klopt, dit is «Migratie»."
-      ],
-      "uh": "Onthoud: «Migratie» = mensen verhuizen."
-     },
-     {
-      "v": "Welke term hoort bij \"mensen verhuizen\"?",
-      "o": [
-       "Migratie",
-       "Multinational",
-       "Ontwikkelingshulp",
-       "Europese Unie"
-      ],
-      "c": 0,
-      "d": 2,
-      "u": "«Migratie»: het verhuizen van mensen tussen landen.",
-      "uo": [
-       "Klopt, «Migratie» past hierbij.",
-       "«Multinational» betekent bedrijf in veel landen.",
-       "«Ontwikkelingshulp» betekent steun aan arme landen.",
-       "«Europese Unie» betekent samenwerkende EU-landen."
-      ],
-      "uh": "Onthoud: «Migratie» = mensen verhuizen."
-     },
-     {
-      "v": "Wat betekent «Verdrag»?",
-      "o": [
-       "het samenwerken van landen in Europa na 1945",
-       "een officiële afspraak tussen landen",
-       "het verhuizen van mensen tussen landen",
-       "het steeds meer verweven raken van landen wereldwijd"
-      ],
-      "c": 1,
-      "d": 1,
-      "u": "«Verdrag»: een officiële afspraak tussen landen.",
-      "uo": [
-       "Dat is «Europese samenwerking».",
-       "Klopt: afspraak tussen landen.",
-       "Dat is «Migratie».",
-       "Dat is «Globalisering»."
-      ],
-      "uh": "Onthoud: «Verdrag» = afspraak tussen landen."
-     },
-     {
-      "v": "Welk begrip hoort bij: \"een officiële afspraak tussen landen\"?",
-      "o": [
-       "Europese samenwerking",
-       "Migratie",
-       "Verdrag",
-       "Globalisering"
-      ],
-      "c": 2,
-      "d": 3,
-      "u": "«Verdrag»: een officiële afspraak tussen landen.",
-      "uo": [
-       "«Europese samenwerking» betekent landen werken samen.",
-       "«Migratie» betekent mensen verhuizen.",
-       "Klopt, dit is «Verdrag».",
-       "«Globalisering» betekent landen raken verweven."
-      ],
-      "uh": "Onthoud: «Verdrag» = afspraak tussen landen."
-     },
-     {
-      "v": "Welke term hoort bij \"afspraak tussen landen\"?",
-      "o": [
-       "Migratie",
-       "Globalisering",
-       "Ontwikkelingshulp",
-       "Verdrag"
-      ],
-      "c": 3,
-      "d": 2,
-      "u": "«Verdrag»: een officiële afspraak tussen landen.",
-      "uo": [
-       "«Migratie» betekent mensen verhuizen.",
-       "«Globalisering» betekent landen raken verweven.",
-       "«Ontwikkelingshulp» betekent steun aan arme landen.",
-       "Klopt, «Verdrag» past hierbij."
-      ],
-      "uh": "Onthoud: «Verdrag» = afspraak tussen landen."
-     },
-     {
-      "v": "Wat betekent «Handel»?",
-      "o": [
-       "het kopen en verkopen tussen landen",
-       "het steeds meer verweven raken van landen wereldwijd",
-       "het samenwerken van landen in Europa na 1945",
-       "een samenwerkingsverband van Europese landen"
+       "Kopen en verkopen over de grens",
+       "Belasting innen",
+       "Een verdrag",
+       "Een oorlog"
       ],
       "c": 0,
       "d": 1,
-      "u": "«Handel»: het kopen en verkopen tussen landen.",
+      "u": "Goederen kopen en verkopen tussen landen.",
       "uo": [
-       "Klopt: kopen en verkopen.",
-       "Dat is «Globalisering».",
-       "Dat is «Europese samenwerking».",
-       "Dat is «Europese Unie»."
+       "Klopt: goederen kopen en verkopen tussen landen.",
+       "Nee, dat klopt niet.",
+       "Nee, dat klopt niet.",
+       "Nee, dat klopt niet."
       ],
-      "uh": "Onthoud: «Handel» = kopen en verkopen."
-     },
-     {
-      "v": "Welk begrip hoort bij: \"het ontbreken van oorlog, een doel van Europese samenwerking\"?",
-      "o": [
-       "Verdrag",
-       "Vrede",
-       "Multinational",
-       "Ontwikkelingshulp"
-      ],
-      "c": 1,
-      "d": 3,
-      "u": "«Vrede»: het ontbreken van oorlog, een doel van Europese samenwerking.",
-      "uo": [
-       "«Verdrag» betekent afspraak tussen landen.",
-       "Klopt, dit is «Vrede».",
-       "«Multinational» betekent bedrijf in veel landen.",
-       "«Ontwikkelingshulp» betekent steun aan arme landen."
-      ],
-      "uh": "Onthoud: «Vrede» = geen oorlog."
-     },
-     {
-      "v": "Welke term hoort bij \"geen oorlog\"?",
-      "o": [
-       "Multinational",
-       "Ontwikkelingshulp",
-       "Vrede",
-       "Migratie"
-      ],
-      "c": 2,
-      "d": 2,
-      "u": "«Vrede»: het ontbreken van oorlog, een doel van Europese samenwerking.",
-      "uo": [
-       "«Multinational» betekent bedrijf in veel landen.",
-       "«Ontwikkelingshulp» betekent steun aan arme landen.",
-       "Klopt, «Vrede» past hierbij.",
-       "«Migratie» betekent mensen verhuizen."
-      ],
-      "uh": "Onthoud: «Vrede» = geen oorlog."
-     },
-     {
-      "v": "Wat betekent «Multinational»?",
-      "o": [
-       "het steeds meer verweven raken van landen wereldwijd",
-       "een officiële afspraak tussen landen",
-       "steun aan armere landen om zich te ontwikkelen",
-       "een bedrijf dat in meerdere landen actief is"
-      ],
-      "c": 3,
-      "d": 1,
-      "u": "«Multinational»: een bedrijf dat in meerdere landen actief is.",
-      "uo": [
-       "Dat is «Globalisering».",
-       "Dat is «Verdrag».",
-       "Dat is «Ontwikkelingshulp».",
-       "Klopt: bedrijf in veel landen."
-      ],
-      "uh": "Onthoud: «Multinational» = bedrijf in veel landen."
-     },
-     {
-      "v": "Welk begrip hoort bij: \"het kopen en verkopen tussen landen\"?",
-      "o": [
-       "Handel",
-       "Globalisering",
-       "Europese samenwerking",
-       "Europese Unie"
-      ],
-      "c": 0,
-      "d": 3,
-      "u": "«Handel»: het kopen en verkopen tussen landen.",
-      "uo": [
-       "Klopt, dit is «Handel».",
-       "«Globalisering» betekent landen raken verweven.",
-       "«Europese samenwerking» betekent landen werken samen.",
-       "«Europese Unie» betekent samenwerkende EU-landen."
-      ],
-      "uh": "Onthoud: «Handel» = kopen en verkopen."
-     },
-     {
-      "v": "Welke term hoort bij \"kopen en verkopen\"?",
-      "o": [
-       "Europese samenwerking",
-       "Handel",
-       "Europese Unie",
-       "Ontwikkelingshulp"
-      ],
-      "c": 1,
-      "d": 2,
-      "u": "«Handel»: het kopen en verkopen tussen landen.",
-      "uo": [
-       "«Europese samenwerking» betekent landen werken samen.",
-       "Klopt, «Handel» past hierbij.",
-       "«Europese Unie» betekent samenwerkende EU-landen.",
-       "«Ontwikkelingshulp» betekent steun aan arme landen."
-      ],
-      "uh": "Onthoud: «Handel» = kopen en verkopen."
+      "uh": "Goederen kopen en verkopen tussen landen."
      }
     ],
     "begrippen": [

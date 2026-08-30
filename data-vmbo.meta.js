@@ -968,7 +968,7 @@ var VAKKEN_VMBO = [
      "Waarden en normen door de tijd",
      "Cultuur en religie"
     ],
-    "nSv": 26,
+    "nSv": 11,
     "nOe": 0,
     "nBeg": 12,
     "hasSam": true
@@ -985,7 +985,7 @@ var VAKKEN_VMBO = [
      "Eerste en Tweede Kamer",
      "Het ontstaan van de verzorgingsstaat"
     ],
-    "nSv": 26,
+    "nSv": 11,
     "nOe": 0,
     "nBeg": 12,
     "hasSam": true
@@ -1000,7 +1000,7 @@ var VAKKEN_VMBO = [
      "Industriële revolutie",
      "Arbeid en de sociale kwestie"
     ],
-    "nSv": 26,
+    "nSv": 11,
     "nOe": 0,
     "nBeg": 12,
     "hasSam": true
@@ -1015,7 +1015,7 @@ var VAKKEN_VMBO = [
      "Sociale wetten",
      "De verzorgingsstaat na 1945"
     ],
-    "nSv": 26,
+    "nSv": 11,
     "nOe": 0,
     "nBeg": 12,
     "hasSam": true
@@ -1030,7 +1030,7 @@ var VAKKEN_VMBO = [
      "Ontzuiling en emancipatie",
      "Jongerencultuur en protest"
     ],
-    "nSv": 26,
+    "nSv": 11,
     "nOe": 0,
     "nBeg": 12,
     "hasSam": true
@@ -1045,7 +1045,7 @@ var VAKKEN_VMBO = [
      "Nederlands-Indië",
      "Onafhankelijkheid van Indonesië en Suriname"
     ],
-    "nSv": 26,
+    "nSv": 11,
     "nOe": 0,
     "nBeg": 12,
     "hasSam": true
@@ -1063,7 +1063,7 @@ var VAKKEN_VMBO = [
      "Koude Oorlog: NAVO vs. Warschaupact",
      "Val van de Muur en dekolonisatie"
     ],
-    "nSv": 26,
+    "nSv": 11,
     "nOe": 0,
     "nBeg": 14,
     "hasSam": true
@@ -1078,7 +1078,7 @@ var VAKKEN_VMBO = [
      "Europese samenwerking (EU)",
      "Globalisering"
     ],
-    "nSv": 26,
+    "nSv": 11,
     "nOe": 0,
     "nBeg": 12,
     "hasSam": true
