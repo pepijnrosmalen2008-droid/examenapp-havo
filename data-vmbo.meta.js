@@ -1121,7 +1121,7 @@ var VAKKEN_VMBO = [
      "Windsystemen en de wet van Buys Ballot",
      "Klimaatgrafieken lezen"
     ],
-    "nSv": 26,
+    "nSv": 11,
     "nOe": 0,
     "nBeg": 14,
     "hasSam": true
@@ -1137,7 +1137,7 @@ var VAKKEN_VMBO = [
      "Nederland en het water",
      "Overstromingsrisico"
     ],
-    "nSv": 26,
+    "nSv": 11,
     "nOe": 0,
     "nBeg": 12,
     "hasSam": true
@@ -1152,7 +1152,7 @@ var VAKKEN_VMBO = [
      "Bevolkingsgroei",
      "Verstedelijking en migratie"
     ],
-    "nSv": 26,
+    "nSv": 11,
     "nOe": 0,
     "nBeg": 12,
     "hasSam": true
@@ -1168,7 +1168,7 @@ var VAKKEN_VMBO = [
      "Centrum-periferierelaties",
      "Oorzaken van welvaartsverschillen"
     ],
-    "nSv": 26,
+    "nSv": 11,
     "nOe": 0,
     "nBeg": 12,
     "hasSam": true
@@ -1183,7 +1183,7 @@ var VAKKEN_VMBO = [
      "Bestemming van gebieden",
      "Belangen bij ruimtegebruik"
     ],
-    "nSv": 26,
+    "nSv": 11,
     "nOe": 0,
     "nBeg": 12,
     "hasSam": true
@@ -1199,7 +1199,7 @@ var VAKKEN_VMBO = [
      "Cultuurgebieden",
      "Grenzen en territoriale conflicten"
     ],
-    "nSv": 26,
+    "nSv": 11,
     "nOe": 0,
     "nBeg": 12,
     "hasSam": true
@@ -1242,7 +1242,7 @@ var VAKKEN_VMBO = [
      "De route van een wetsvoorstel",
      "Besluitvorming en belangengroepen"
     ],
-    "nSv": 26,
+    "nSv": 11,
     "nOe": 0,
     "nBeg": 14,
     "hasSam": true
@@ -1258,7 +1258,7 @@ var VAKKEN_VMBO = [
      "Werkgevers, werknemers en vakbonden",
      "Inkomen en sociale zekerheid"
     ],
-    "nSv": 26,
+    "nSv": 11,
     "nOe": 0,
     "nBeg": 12,
     "hasSam": true
@@ -1273,7 +1273,7 @@ var VAKKEN_VMBO = [
      "Cultuur en identiteit",
      "Discriminatie en integratie"
     ],
-    "nSv": 26,
+    "nSv": 11,
     "nOe": 0,
     "nBeg": 12,
     "hasSam": true
@@ -1290,7 +1290,7 @@ var VAKKEN_VMBO = [
      "Rechten van verdachten",
      "Soorten straffen"
     ],
-    "nSv": 26,
+    "nSv": 11,
     "nOe": 0,
     "nBeg": 14,
     "hasSam": true
@@ -1307,7 +1307,7 @@ var VAKKEN_VMBO = [
      "Censuur",
      "De multiculturele samenleving"
     ],
-    "nSv": 26,
+    "nSv": 11,
     "nOe": 0,
     "nBeg": 12,
     "hasSam": true
@@ -1322,7 +1322,7 @@ var VAKKEN_VMBO = [
      "Digitalisering",
      "Privacy en sociale media"
     ],
-    "nSv": 26,
+    "nSv": 11,
     "nOe": 0,
     "nBeg": 12,
     "hasSam": true
