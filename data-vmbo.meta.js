@@ -692,7 +692,7 @@ var VAKKEN_VMBO = [
     ],
     "nSv": 26,
     "nOe": 0,
-    "nBeg": 16,
+    "nBeg": 18,
     "hasSam": true
    },
    {
