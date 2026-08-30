@@ -176,9 +176,18 @@ function buildSummary(spec) {
 /** Bouw het volledige leerdoel-object. */
 export function expandLeerdoel(spec) {
   const beg = spec.concepten.map(c => ({ t: c.t, d: c.d }));
-  const bank = balance(genBank(spec.concepten), spec.target || 26);
-  const toepas = (spec.toepas || []).map(q => ({ ...q }));
-  const sv = [...toepas, ...bank].map(({ _t, ...q }) => q);
+  // Vragen: als de spec HANDGESCHREVEN gouden vragen (spec.vragen) meelevert,
+  // gebruiken we ALLEEN die (scenario-/begripsvragen met echte per-optie-uitleg).
+  // Zonder spec.vragen valt de fabriek terug op de term-generator (begrip-herkenning)
+  // - handig voor een snelle eerste vulling, maar niet de gouden standaard.
+  let sv;
+  if (Array.isArray(spec.vragen) && spec.vragen.length) {
+    sv = spec.vragen.map(q => ({ ...q }));
+  } else {
+    const bank = balance(genBank(spec.concepten), spec.target || 26);
+    const toepas = (spec.toepas || []).map(q => ({ ...q }));
+    sv = [...toepas, ...bank].map(({ _t, ...q }) => q);
+  }
   const ld = {
     id: spec.leerdoel, naam: spec.naam,
     beschrijving: spec.beschrijving || '', ceStatus: spec.ceStatus || 'CE',

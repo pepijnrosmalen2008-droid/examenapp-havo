@@ -690,7 +690,7 @@ var VAKKEN_VMBO = [
      "Monohybride kruisingen",
      "Natuurlijke selectie"
     ],
-    "nSv": 26,
+    "nSv": 24,
     "nOe": 0,
     "nBeg": 18,
     "hasSam": true

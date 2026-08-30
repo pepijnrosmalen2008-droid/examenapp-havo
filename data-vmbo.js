@@ -5071,498 +5071,460 @@ var VAKKEN_VMBO = [
     "nBeg": 0,
     "sv": [
      {
-      "v": "Welk begrip hoort bij: \"de kleinste bouwsteen van een organisme\"?",
+      "v": "Cellen met dezelfde vorm en functie vormen samen...",
       "o": [
-       "Cel",
-       "Weefsel",
-       "Orgaan",
-       "Recessief allel"
-      ],
-      "c": 0,
-      "d": 3,
-      "u": "«Cel»: de kleinste bouwsteen van een organisme.",
-      "uo": [
-       "Klopt, dit is «Cel».",
-       "«Weefsel» betekent groep gelijke cellen.",
-       "«Orgaan» betekent meerdere weefsels met een taak.",
-       "«Recessief allel» betekent alleen dubbel zichtbaar."
-      ],
-      "uh": "Onthoud: «Cel» = kleinste bouwsteen."
-     },
-     {
-      "v": "Welke term hoort bij \"kleinste bouwsteen\"?",
-      "o": [
-       "Recessief allel",
-       "Cel",
-       "Celwand",
-       "Celmembraan"
+       "een orgaan",
+       "een weefsel",
+       "een orgaanstelsel",
+       "een organisme"
       ],
       "c": 1,
       "d": 2,
-      "u": "«Cel»: de kleinste bouwsteen van een organisme.",
+      "u": "Cellen met dezelfde vorm en functie vormen een weefsel.",
       "uo": [
-       "«Recessief allel» betekent alleen dubbel zichtbaar.",
-       "Klopt, «Cel» past hierbij.",
-       "«Celwand» betekent stevige laag bij planten.",
-       "«Celmembraan» betekent omhulsel van de cel."
+       "Een orgaan bestaat uit meerdere weefsels.",
+       "Klopt: gelijke cellen vormen een weefsel.",
+       "Een orgaanstelsel is een groep samenwerkende organen.",
+       "Een organisme is het hele levende wezen."
       ],
-      "uh": "Onthoud: «Cel» = kleinste bouwsteen."
+      "uh": "Cel → weefsel → orgaan → orgaanstelsel."
      },
      {
-      "v": "Wat betekent «Cel»?",
+      "v": "Het hart bestaat uit spierweefsel, zenuwweefsel en bloedvaten. Het hart is dus...",
       "o": [
-       "een groep cellen met dezelfde vorm en functie",
-       "een structuur van meerdere weefsels met een eigen taak",
-       "de kleinste bouwsteen van een organisme",
-       "een allel dat alleen tot uiting komt bij twee exemplaren"
+       "een cel",
+       "een weefsel",
+       "een orgaan",
+       "een orgaanstelsel"
       ],
       "c": 2,
-      "d": 1,
-      "u": "«Cel»: de kleinste bouwsteen van een organisme.",
+      "d": 2,
+      "u": "Een orgaan bestaat uit meerdere weefsels die samen een taak hebben.",
       "uo": [
-       "Dat is «Weefsel».",
-       "Dat is «Orgaan».",
-       "Klopt: kleinste bouwsteen.",
-       "Dat is «Recessief allel»."
+       "Een cel is de kleinste bouwsteen.",
+       "Een weefsel is één soort cellen.",
+       "Klopt: meerdere weefsels vormen een orgaan.",
+       "Een orgaanstelsel is een groep organen."
       ],
-      "uh": "Onthoud: «Cel» = kleinste bouwsteen."
+      "uh": "Orgaan = meerdere weefsels met een taak."
      },
      {
-      "v": "Welk begrip hoort bij: \"een groep cellen met dezelfde vorm en functie\"?",
+      "v": "Je ziet onder de microscoop een cel met een celwand en bladgroenkorrels. Wat voor cel is dit?",
       "o": [
-       "Cel",
-       "Orgaan",
-       "Genotype",
-       "Weefsel"
+       "Een dierlijke cel",
+       "Een zenuwcel",
+       "Een rode bloedcel",
+       "Een plantencel"
       ],
       "c": 3,
       "d": 3,
-      "u": "«Weefsel»: een groep cellen met dezelfde vorm en functie.",
+      "u": "Alleen plantencellen hebben een celwand en bladgroenkorrels.",
       "uo": [
-       "«Cel» betekent kleinste bouwsteen.",
-       "«Orgaan» betekent meerdere weefsels met een taak.",
-       "«Genotype» betekent de genen.",
-       "Klopt, dit is «Weefsel»."
+       "Een dierlijke cel heeft geen celwand.",
+       "Een zenuwcel is een dierlijke cel.",
+       "Een rode bloedcel is een dierlijke cel.",
+       "Klopt: celwand en bladgroen horen bij planten."
       ],
-      "uh": "Onthoud: «Weefsel» = groep gelijke cellen."
+      "uh": "Celwand + bladgroen = plantencel."
      },
      {
-      "v": "Welke term hoort bij \"groep gelijke cellen\"?",
+      "v": "Welk onderdeel heeft een plantencel wél en een dierlijke cel niet?",
       "o": [
-       "Weefsel",
-       "Genotype",
-       "Gen",
-       "Recessief allel"
-      ],
-      "c": 0,
-      "d": 2,
-      "u": "«Weefsel»: een groep cellen met dezelfde vorm en functie.",
-      "uo": [
-       "Klopt, «Weefsel» past hierbij.",
-       "«Genotype» betekent de genen.",
-       "«Gen» betekent code voor een eigenschap.",
-       "«Recessief allel» betekent alleen dubbel zichtbaar."
-      ],
-      "uh": "Onthoud: «Weefsel» = groep gelijke cellen."
-     },
-     {
-      "v": "Wat betekent «Weefsel»?",
-      "o": [
-       "de kleinste bouwsteen van een organisme",
-       "een groep cellen met dezelfde vorm en functie",
-       "een structuur van meerdere weefsels met een eigen taak",
-       "de erfelijke aanleg (de genen) van een organisme"
-      ],
-      "c": 1,
-      "d": 1,
-      "u": "«Weefsel»: een groep cellen met dezelfde vorm en functie.",
-      "uo": [
-       "Dat is «Cel».",
-       "Klopt: groep gelijke cellen.",
-       "Dat is «Orgaan».",
-       "Dat is «Genotype»."
-      ],
-      "uh": "Onthoud: «Weefsel» = groep gelijke cellen."
-     },
-     {
-      "v": "Welk begrip hoort bij: \"een structuur van meerdere weefsels met een eigen taak\"?",
-      "o": [
-       "Weefsel",
-       "Orgaanstelsel",
-       "Orgaan",
-       "Recessief allel"
-      ],
-      "c": 2,
-      "d": 3,
-      "u": "«Orgaan»: een structuur van meerdere weefsels met een eigen taak.",
-      "uo": [
-       "«Weefsel» betekent groep gelijke cellen.",
-       "«Orgaanstelsel» betekent samenwerkende organen.",
-       "Klopt, dit is «Orgaan».",
-       "«Recessief allel» betekent alleen dubbel zichtbaar."
-      ],
-      "uh": "Onthoud: «Orgaan» = meerdere weefsels met een taak."
-     },
-     {
-      "v": "Welke term hoort bij \"meerdere weefsels met een taak\"?",
-      "o": [
-       "Recessief allel",
-       "Cytoplasma",
-       "Celkern",
-       "Orgaan"
-      ],
-      "c": 3,
-      "d": 2,
-      "u": "«Orgaan»: een structuur van meerdere weefsels met een eigen taak.",
-      "uo": [
-       "«Recessief allel» betekent alleen dubbel zichtbaar.",
-       "«Cytoplasma» betekent vloeistof in de cel.",
-       "«Celkern» betekent bevat het DNA.",
-       "Klopt, «Orgaan» past hierbij."
-      ],
-      "uh": "Onthoud: «Orgaan» = meerdere weefsels met een taak."
-     },
-     {
-      "v": "Wat betekent «Orgaan»?",
-      "o": [
-       "een structuur van meerdere weefsels met een eigen taak",
-       "een groep cellen met dezelfde vorm en functie",
-       "organen die samen één functie uitvoeren",
-       "een allel dat alleen tot uiting komt bij twee exemplaren"
-      ],
-      "c": 0,
-      "d": 1,
-      "u": "«Orgaan»: een structuur van meerdere weefsels met een eigen taak.",
-      "uo": [
-       "Klopt: meerdere weefsels met een taak.",
-       "Dat is «Weefsel».",
-       "Dat is «Orgaanstelsel».",
-       "Dat is «Recessief allel»."
-      ],
-      "uh": "Onthoud: «Orgaan» = meerdere weefsels met een taak."
-     },
-     {
-      "v": "Welk begrip hoort bij: \"het dunne laagje dat de cel omsluit en stoffen doorlaat\"?",
-      "o": [
-       "Celwand",
-       "Celmembraan",
-       "Celkern",
-       "Natuurlijke selectie"
-      ],
-      "c": 1,
-      "d": 3,
-      "u": "«Celmembraan»: het dunne laagje dat de cel omsluit en stoffen doorlaat.",
-      "uo": [
-       "«Celwand» betekent stevige laag bij planten.",
-       "Klopt, dit is «Celmembraan».",
-       "«Celkern» betekent bevat het DNA.",
-       "«Natuurlijke selectie» betekent best aangepasten overleven."
-      ],
-      "uh": "Onthoud: «Celmembraan» = omhulsel van de cel."
-     },
-     {
-      "v": "Welke term hoort bij \"samenwerkende organen\"?",
-      "o": [
-       "Celmembraan",
-       "Gen",
-       "Orgaanstelsel",
-       "Natuurlijke selectie"
-      ],
-      "c": 2,
-      "d": 2,
-      "u": "«Orgaanstelsel»: organen die samen één functie uitvoeren.",
-      "uo": [
-       "«Celmembraan» betekent omhulsel van de cel.",
-       "«Gen» betekent code voor een eigenschap.",
-       "Klopt, «Orgaanstelsel» past hierbij.",
-       "«Natuurlijke selectie» betekent best aangepasten overleven."
-      ],
-      "uh": "Onthoud: «Orgaanstelsel» = samenwerkende organen."
-     },
-     {
-      "v": "Wat betekent «Orgaanstelsel»?",
-      "o": [
-       "een structuur van meerdere weefsels met een eigen taak",
-       "een groep cellen met dezelfde vorm en functie",
-       "het dunne laagje dat de cel omsluit en stoffen doorlaat",
-       "organen die samen één functie uitvoeren"
-      ],
-      "c": 3,
-      "d": 1,
-      "u": "«Orgaanstelsel»: organen die samen één functie uitvoeren.",
-      "uo": [
-       "Dat is «Orgaan».",
-       "Dat is «Weefsel».",
-       "Dat is «Celmembraan».",
-       "Klopt: samenwerkende organen."
-      ],
-      "uh": "Onthoud: «Orgaanstelsel» = samenwerkende organen."
-     },
-     {
-      "v": "Welk begrip hoort bij: \"het celonderdeel waarin het DNA ligt\"?",
-      "o": [
-       "Celkern",
-       "Cytoplasma",
-       "Celmembraan",
-       "Genotype"
-      ],
-      "c": 0,
-      "d": 3,
-      "u": "«Celkern»: het celonderdeel waarin het DNA ligt.",
-      "uo": [
-       "Klopt, dit is «Celkern».",
-       "«Cytoplasma» betekent vloeistof in de cel.",
-       "«Celmembraan» betekent omhulsel van de cel.",
-       "«Genotype» betekent de genen."
-      ],
-      "uh": "Onthoud: «Celkern» = bevat het DNA."
-     },
-     {
-      "v": "Welke term hoort bij \"omhulsel van de cel\"?",
-      "o": [
-       "Natuurlijke selectie",
-       "Celmembraan",
-       "Gen",
-       "Recessief allel"
-      ],
-      "c": 1,
-      "d": 2,
-      "u": "«Celmembraan»: het dunne laagje dat de cel omsluit en stoffen doorlaat.",
-      "uo": [
-       "«Natuurlijke selectie» betekent best aangepasten overleven.",
-       "Klopt, «Celmembraan» past hierbij.",
-       "«Gen» betekent code voor een eigenschap.",
-       "«Recessief allel» betekent alleen dubbel zichtbaar."
-      ],
-      "uh": "Onthoud: «Celmembraan» = omhulsel van de cel."
-     },
-     {
-      "v": "Wat betekent «Celmembraan»?",
-      "o": [
-       "de stevige buitenlaag om een plantencel",
-       "het celonderdeel waarin het DNA ligt",
-       "het dunne laagje dat de cel omsluit en stoffen doorlaat",
-       "het beter overleven en voortplanten van best aangepaste individuen"
-      ],
-      "c": 2,
-      "d": 1,
-      "u": "«Celmembraan»: het dunne laagje dat de cel omsluit en stoffen doorlaat.",
-      "uo": [
-       "Dat is «Celwand».",
-       "Dat is «Celkern».",
-       "Klopt: omhulsel van de cel.",
-       "Dat is «Natuurlijke selectie»."
-      ],
-      "uh": "Onthoud: «Celmembraan» = omhulsel van de cel."
-     },
-     {
-      "v": "Welk begrip hoort bij: \"de stevige buitenlaag om een plantencel\"?",
-      "o": [
-       "Celmembraan",
-       "Genotype",
-       "Cytoplasma",
-       "Celwand"
-      ],
-      "c": 3,
-      "d": 3,
-      "u": "«Celwand»: de stevige buitenlaag om een plantencel.",
-      "uo": [
-       "«Celmembraan» betekent omhulsel van de cel.",
-       "«Genotype» betekent de genen.",
-       "«Cytoplasma» betekent vloeistof in de cel.",
-       "Klopt, dit is «Celwand»."
-      ],
-      "uh": "Onthoud: «Celwand» = stevige laag bij planten."
-     },
-     {
-      "v": "Welke term hoort bij \"bevat het DNA\"?",
-      "o": [
-       "Celkern",
-       "Genotype",
-       "Gen",
-       "Recessief allel"
-      ],
-      "c": 0,
-      "d": 2,
-      "u": "«Celkern»: het celonderdeel waarin het DNA ligt.",
-      "uo": [
-       "Klopt, «Celkern» past hierbij.",
-       "«Genotype» betekent de genen.",
-       "«Gen» betekent code voor een eigenschap.",
-       "«Recessief allel» betekent alleen dubbel zichtbaar."
-      ],
-      "uh": "Onthoud: «Celkern» = bevat het DNA."
-     },
-     {
-      "v": "Wat betekent «Celkern»?",
-      "o": [
-       "de vloeistof in de cel waarin de onderdelen liggen",
-       "het celonderdeel waarin het DNA ligt",
-       "het dunne laagje dat de cel omsluit en stoffen doorlaat",
-       "de erfelijke aanleg (de genen) van een organisme"
-      ],
-      "c": 1,
-      "d": 1,
-      "u": "«Celkern»: het celonderdeel waarin het DNA ligt.",
-      "uo": [
-       "Dat is «Cytoplasma».",
-       "Klopt: bevat het DNA.",
-       "Dat is «Celmembraan».",
-       "Dat is «Genotype»."
-      ],
-      "uh": "Onthoud: «Celkern» = bevat het DNA."
-     },
-     {
-      "v": "Welk begrip hoort bij: \"een grote blaas met vocht in een plantencel\"?",
-      "o": [
-       "Bladgroenkorrel",
-       "Cytoplasma",
-       "Vacuole",
-       "Genotype"
-      ],
-      "c": 2,
-      "d": 3,
-      "u": "«Vacuole»: een grote blaas met vocht in een plantencel.",
-      "uo": [
-       "«Bladgroenkorrel» betekent doet fotosynthese.",
-       "«Cytoplasma» betekent vloeistof in de cel.",
-       "Klopt, dit is «Vacuole».",
-       "«Genotype» betekent de genen."
-      ],
-      "uh": "Onthoud: «Vacuole» = vochtblaas in plantencel."
-     },
-     {
-      "v": "Welke term hoort bij \"vloeistof in de cel\"?",
-      "o": [
-       "DNA",
-       "Natuurlijke selectie",
-       "Orgaan",
+       "Een celwand",
+       "Een celkern",
+       "Een celmembraan",
        "Cytoplasma"
       ],
-      "c": 3,
+      "c": 0,
       "d": 2,
-      "u": "«Cytoplasma»: de vloeistof in de cel waarin de onderdelen liggen.",
+      "u": "De celwand komt alleen bij plantencellen voor.",
       "uo": [
-       "«DNA» betekent erfelijke informatie.",
-       "«Natuurlijke selectie» betekent best aangepasten overleven.",
-       "«Orgaan» betekent meerdere weefsels met een taak.",
-       "Klopt, «Cytoplasma» past hierbij."
+       "Klopt: de celwand is er bij planten.",
+       "Een celkern zit in beide.",
+       "Een celmembraan zit in beide.",
+       "Cytoplasma zit in beide."
       ],
-      "uh": "Onthoud: «Cytoplasma» = vloeistof in de cel."
+      "uh": "Celwand: alleen bij planten."
      },
      {
-      "v": "Wat betekent «Celwand»?",
+      "v": "Waar in de cel ligt het DNA?",
       "o": [
-       "de stevige buitenlaag om een plantencel",
-       "het dunne laagje dat de cel omsluit en stoffen doorlaat",
-       "de erfelijke aanleg (de genen) van een organisme",
-       "de vloeistof in de cel waarin de onderdelen liggen"
+       "In het cytoplasma",
+       "In de celkern",
+       "In het celmembraan",
+       "In de vacuole"
+      ],
+      "c": 1,
+      "d": 1,
+      "u": "Het DNA ligt in de celkern.",
+      "uo": [
+       "Het cytoplasma is de vloeistof eromheen.",
+       "Klopt: het DNA ligt in de celkern.",
+       "Het celmembraan is de buitenkant.",
+       "De vacuole is een vochtblaas in planten."
+      ],
+      "uh": "DNA zit in de celkern."
+     },
+     {
+      "v": "Hoe heet het dunne laagje dat de hele cel omsluit?",
+      "o": [
+       "De celkern",
+       "De celwand",
+       "Het celmembraan",
+       "Het cytoplasma"
+      ],
+      "c": 2,
+      "d": 1,
+      "u": "Het celmembraan omsluit de cel en regelt wat er in en uit gaat.",
+      "uo": [
+       "De celkern bevat het DNA.",
+       "De celwand zit alleen bij planten.",
+       "Klopt: het celmembraan omsluit de cel.",
+       "Cytoplasma is de vloeistof in de cel."
+      ],
+      "uh": "Celmembraan = omhulsel van de cel."
+     },
+     {
+      "v": "Wat is de functie van de bladgroenkorrels in een plantencel?",
+      "o": [
+       "Het DNA bewaren",
+       "De cel stevig maken",
+       "Vocht opslaan",
+       "Fotosynthese uitvoeren"
+      ],
+      "c": 3,
+      "d": 2,
+      "u": "In de bladgroenkorrels vindt de fotosynthese plaats.",
+      "uo": [
+       "Het DNA zit in de celkern.",
+       "De celwand maakt de cel stevig.",
+       "De vacuole slaat vocht op.",
+       "Klopt: bladgroen doet de fotosynthese."
+      ],
+      "uh": "Bladgroenkorrel = fotosynthese."
+     },
+     {
+      "v": "Hoe heet een stukje DNA met de code voor één eigenschap?",
+      "o": [
+       "Een gen",
+       "Een chromosoom",
+       "Een cel",
+       "Een weefsel"
       ],
       "c": 0,
       "d": 1,
-      "u": "«Celwand»: de stevige buitenlaag om een plantencel.",
+      "u": "Een gen is een stukje DNA met de code voor één eigenschap.",
       "uo": [
-       "Klopt: stevige laag bij planten.",
-       "Dat is «Celmembraan».",
-       "Dat is «Genotype».",
-       "Dat is «Cytoplasma»."
+       "Klopt: een gen codeert voor één eigenschap.",
+       "Een chromosoom is opgerold DNA.",
+       "Een cel is de bouwsteen van het lichaam.",
+       "Een weefsel is een groep cellen."
       ],
-      "uh": "Onthoud: «Celwand» = stevige laag bij planten."
+      "uh": "Gen = code voor één eigenschap."
      },
      {
-      "v": "Welk begrip hoort bij: \"een streng van sterk opgerold DNA in de celkern\"?",
+      "v": "Wat is een chromosoom?",
       "o": [
-       "Gen",
-       "Chromosoom",
-       "DNA",
-       "Bladgroenkorrel"
+       "De vloeistof in de cel",
+       "Sterk opgerold DNA",
+       "Het omhulsel van de cel",
+       "Een soort weefsel"
       ],
       "c": 1,
-      "d": 3,
-      "u": "«Chromosoom»: een streng van sterk opgerold DNA in de celkern.",
+      "d": 2,
+      "u": "Een chromosoom is sterk opgerold DNA in de celkern.",
       "uo": [
-       "«Gen» betekent code voor een eigenschap.",
-       "Klopt, dit is «Chromosoom».",
-       "«DNA» betekent erfelijke informatie.",
-       "«Bladgroenkorrel» betekent doet fotosynthese."
+       "De vloeistof in de cel is cytoplasma.",
+       "Klopt: een chromosoom is opgerold DNA.",
+       "Het omhulsel is het celmembraan.",
+       "Een weefsel is een groep cellen."
       ],
-      "uh": "Onthoud: «Chromosoom» = opgerold DNA."
+      "uh": "Chromosoom = opgerold DNA."
      },
      {
-      "v": "Welke term hoort bij \"stevige laag bij planten\"?",
+      "v": "Iemand heeft blauwe ogen. Die blauwe ogen zijn een voorbeeld van het...",
       "o": [
-       "Genotype",
-       "Cytoplasma",
-       "Celwand",
-       "Chromosoom"
+       "genotype",
+       "gen",
+       "fenotype",
+       "chromosoom"
       ],
       "c": 2,
       "d": 2,
-      "u": "«Celwand»: de stevige buitenlaag om een plantencel.",
+      "u": "Het fenotype is wat je aan de buitenkant ziet, zoals oogkleur.",
       "uo": [
-       "«Genotype» betekent de genen.",
-       "«Cytoplasma» betekent vloeistof in de cel.",
-       "Klopt, «Celwand» past hierbij.",
-       "«Chromosoom» betekent opgerold DNA."
+       "Het genotype is de erfelijke aanleg die je niet ziet.",
+       "Een gen is een stukje DNA.",
+       "Klopt: wat je ziet is het fenotype.",
+       "Een chromosoom is opgerold DNA."
       ],
-      "uh": "Onthoud: «Celwand» = stevige laag bij planten."
+      "uh": "Fenotype = wat je ziet."
      },
      {
-      "v": "Wat betekent «Bladgroenkorrel»?",
+      "v": "Wat wordt bedoeld met het genotype van een organisme?",
       "o": [
-       "een grote blaas met vocht in een plantencel",
-       "de stevige buitenlaag om een plantencel",
-       "de erfelijke aanleg (de genen) van een organisme",
-       "plantencelonderdeel dat de fotosynthese uitvoert"
+       "De zichtbare eigenschappen",
+       "Het aantal cellen",
+       "De grootte",
+       "De erfelijke aanleg (de genen)"
       ],
       "c": 3,
-      "d": 1,
-      "u": "«Bladgroenkorrel»: plantencelonderdeel dat de fotosynthese uitvoert.",
+      "d": 2,
+      "u": "Het genotype is de erfelijke aanleg: alle genen samen.",
       "uo": [
-       "Dat is «Vacuole».",
-       "Dat is «Celwand».",
-       "Dat is «Genotype».",
-       "Klopt: doet fotosynthese."
+       "De zichtbare eigenschappen zijn het fenotype.",
+       "Het aantal cellen zegt niets over het genotype.",
+       "De grootte hoort bij het fenotype.",
+       "Klopt: het genotype is de erfelijke aanleg."
       ],
-      "uh": "Onthoud: «Bladgroenkorrel» = doet fotosynthese."
+      "uh": "Genotype = de genen."
      },
      {
-      "v": "Welk begrip hoort bij: \"de stof met de erfelijke informatie\"?",
+      "v": "Je kruist twee planten met genotype Aa. A (rood) is dominant over a (wit). Welk deel is naar verwachting wit?",
       "o": [
-       "DNA",
-       "Gen",
-       "Chromosoom",
-       "Recessief allel"
+       "1 op de 4",
+       "2 op de 4",
+       "3 op de 4",
+       "4 op de 4"
       ],
       "c": 0,
       "d": 3,
-      "u": "«DNA»: de stof met de erfelijke informatie.",
+      "u": "Aa × Aa geeft AA, Aa, Aa en aa: 1 op de 4 is aa (wit).",
       "uo": [
-       "Klopt, dit is «DNA».",
-       "«Gen» betekent code voor een eigenschap.",
-       "«Chromosoom» betekent opgerold DNA.",
-       "«Recessief allel» betekent alleen dubbel zichtbaar."
+       "Klopt: alleen aa is wit, dus 1 op de 4.",
+       "2 op de 4 klopt niet, alleen aa is wit.",
+       "3 op de 4 is juist rood.",
+       "Niet alle nakomelingen zijn wit."
       ],
-      "uh": "Onthoud: «DNA» = erfelijke informatie."
+      "uh": "Aa × Aa → 3 : 1."
      },
      {
-      "v": "Welke term hoort bij \"vochtblaas in plantencel\"?",
+      "v": "Een plant heeft genotype Bb. B (paars) is dominant over b (wit). Welke kleur heeft de plant?",
       "o": [
-       "Genotype",
-       "Vacuole",
-       "Gen",
-       "Recessief allel"
+       "Wit",
+       "Paars",
+       "Half paars, half wit",
+       "Geen kleur"
+      ],
+      "c": 1,
+      "d": 3,
+      "u": "Het dominante allel B bepaalt de kleur, dus de plant is paars.",
+      "uo": [
+       "Wit zou alleen bij genotype bb.",
+       "Klopt: het dominante B maakt de plant paars.",
+       "Kleuren mengen niet bij dominantie.",
+       "Elke plant heeft een kleur."
+      ],
+      "uh": "Het dominante allel bepaalt het fenotype."
+     },
+     {
+      "v": "Een eigenschap komt alleen tot uiting als beide allelen ervoor aanwezig zijn. Zo'n allel noem je...",
+      "o": [
+       "dominant",
+       "een chromosoom",
+       "recessief",
+       "een fenotype"
+      ],
+      "c": 2,
+      "d": 2,
+      "u": "Een recessief allel komt alleen tot uiting bij twee exemplaren.",
+      "uo": [
+       "Een dominant allel is al bij één exemplaar zichtbaar.",
+       "Een chromosoom is opgerold DNA.",
+       "Klopt: recessief heeft er twee nodig.",
+       "Een fenotype is een zichtbare eigenschap."
+      ],
+      "uh": "Recessief = alleen dubbel zichtbaar."
+     },
+     {
+      "v": "Konijnen met een dikke vacht overleven de kou beter en krijgen meer jongen. Dit heet...",
+      "o": [
+       "fotosynthese",
+       "een kruising",
+       "celdeling",
+       "natuurlijke selectie"
+      ],
+      "c": 3,
+      "d": 3,
+      "u": "Bij natuurlijke selectie overleven de best aangepaste individuen en geven hun eigenschappen door.",
+      "uo": [
+       "Fotosynthese is het maken van voedsel door planten.",
+       "Een kruising combineert twee ouders.",
+       "Celdeling is het delen van een cel.",
+       "Klopt: de best aangepaste konijnen overleven."
+      ],
+      "uh": "Best aangepast overleeft: natuurlijke selectie."
+     },
+     {
+      "v": "Waarom lijken kinderen vaak op hun ouders?",
+      "o": [
+       "Doordat ze DNA van hun ouders erven",
+       "Doordat ze hetzelfde eten",
+       "Doordat ze in hetzelfde huis wonen",
+       "Doordat ze evenveel cellen hebben"
+      ],
+      "c": 0,
+      "d": 2,
+      "u": "Kinderen erven DNA (genen) van hun ouders, met daarin de erfelijke eigenschappen.",
+      "uo": [
+       "Klopt: ze erven het DNA van hun ouders.",
+       "Wat je eet verandert je DNA niet.",
+       "Waar je woont bepaalt je genen niet.",
+       "Iedereen heeft heel veel cellen."
+      ],
+      "uh": "Eigenschappen erf je via DNA."
+     },
+     {
+      "v": "Wat is de kleinste bouwsteen van een organisme?",
+      "o": [
+       "Een orgaan",
+       "Een cel",
+       "Een weefsel",
+       "Een chromosoom"
+      ],
+      "c": 1,
+      "d": 1,
+      "u": "De cel is de kleinste bouwsteen van een organisme.",
+      "uo": [
+       "Een orgaan is uit veel cellen opgebouwd.",
+       "Klopt: de cel is de kleinste bouwsteen.",
+       "Een weefsel is een groep cellen.",
+       "Een chromosoom zit ín een cel."
+      ],
+      "uh": "Cel = kleinste bouwsteen."
+     },
+     {
+      "v": "Het hart en de bloedvaten werken samen om bloed rond te pompen. Samen vormen ze...",
+      "o": [
+       "een weefsel",
+       "een orgaan",
+       "een orgaanstelsel",
+       "een cel"
+      ],
+      "c": 2,
+      "d": 2,
+      "u": "Organen die samen één functie uitvoeren vormen een orgaanstelsel.",
+      "uo": [
+       "Een weefsel is één soort cellen.",
+       "Een orgaan is één structuur, zoals het hart.",
+       "Klopt: samenwerkende organen vormen een orgaanstelsel.",
+       "Een cel is de kleinste bouwsteen."
+      ],
+      "uh": "Orgaanstelsel = samenwerkende organen."
+     },
+     {
+      "v": "Hoe heet de vloeistof in de cel waarin de onderdelen liggen?",
+      "o": [
+       "De celkern",
+       "De celwand",
+       "De vacuole",
+       "Het cytoplasma"
+      ],
+      "c": 3,
+      "d": 2,
+      "u": "Het cytoplasma is de vloeistof in de cel waarin de onderdelen zweven.",
+      "uo": [
+       "De celkern bevat het DNA.",
+       "De celwand zit alleen bij planten.",
+       "De vacuole is een vochtblaas.",
+       "Klopt: het cytoplasma is de celvloeistof."
+      ],
+      "uh": "Cytoplasma = vloeistof in de cel."
+     },
+     {
+      "v": "Een grote vacuole vol vocht houdt een plant stevig. Bij welke cel hoort een grote vacuole?",
+      "o": [
+       "Een plantencel",
+       "Een dierlijke cel",
+       "Een bacterie",
+       "Een rode bloedcel"
+      ],
+      "c": 0,
+      "d": 3,
+      "u": "Een grote vacuole komt voor in plantencellen.",
+      "uo": [
+       "Klopt: de vacuole hoort bij de plantencel.",
+       "Dierlijke cellen hebben geen grote vacuole.",
+       "Een bacterie is heel anders gebouwd.",
+       "Een rode bloedcel is een dierlijke cel."
+      ],
+      "uh": "Vacuole = plantencel."
+     },
+     {
+      "v": "Wat is de functie van het DNA in een cel?",
+      "o": [
+       "De cel stevig maken",
+       "De erfelijke informatie bevatten",
+       "Vocht opslaan",
+       "Zuurstof vervoeren"
       ],
       "c": 1,
       "d": 2,
-      "u": "«Vacuole»: een grote blaas met vocht in een plantencel.",
+      "u": "Het DNA bevat de erfelijke informatie van het organisme.",
       "uo": [
-       "«Genotype» betekent de genen.",
-       "Klopt, «Vacuole» past hierbij.",
-       "«Gen» betekent code voor een eigenschap.",
-       "«Recessief allel» betekent alleen dubbel zichtbaar."
+       "Stevigheid komt van de celwand.",
+       "Klopt: DNA bevat de erfelijke informatie.",
+       "Vocht slaat de vacuole op.",
+       "Zuurstof vervoeren doen rode bloedcellen."
       ],
-      "uh": "Onthoud: «Vacuole» = vochtblaas in plantencel."
+      "uh": "DNA = erfelijke informatie."
+     },
+     {
+      "v": "Bij een kruising is 3 op de 4 nakomelingen rood en 1 op de 4 wit. Wat weet je over de kleur rood?",
+      "o": [
+       "Rood is recessief",
+       "Rood en wit zijn even sterk",
+       "Rood is dominant",
+       "Kleur is niet erfelijk"
+      ],
+      "c": 2,
+      "d": 3,
+      "u": "De verhouding 3 op 1 hoort bij een dominante eigenschap (rood).",
+      "uo": [
+       "Als rood recessief was, zou juist wit vaker voorkomen.",
+       "Dan zou je geen 3 op 1 zien.",
+       "Klopt: de verhouding 3 op 1 wijst op dominant rood.",
+       "Kleur wordt juist wél geërfd."
+      ],
+      "uh": "3 op 1: de meerderheid is dominant."
+     },
+     {
+      "v": "Welke van deze is een voorbeeld van een weefsel?",
+      "o": [
+       "Het hart",
+       "Het bloedvatenstelsel",
+       "Een levercel",
+       "Spierweefsel"
+      ],
+      "c": 3,
+      "d": 2,
+      "u": "Spierweefsel bestaat uit cellen met dezelfde vorm en functie: een weefsel.",
+      "uo": [
+       "Het hart is een orgaan.",
+       "Het bloedvatenstelsel is een orgaanstelsel.",
+       "Een levercel is één cel.",
+       "Klopt: spierweefsel is een weefsel."
+      ],
+      "uh": "Weefsel = groep gelijke cellen."
+     },
+     {
+      "v": "Twee planten met hetzelfde genotype: de ene staat in de zon en groeit groter. Wat bepaalt dit verschil?",
+      "o": [
+       "De omgeving",
+       "Alleen het genotype",
+       "Het aantal chromosomen",
+       "Het celmembraan"
+      ],
+      "c": 0,
+      "d": 3,
+      "u": "Het fenotype ontstaat uit het genotype én invloeden van de omgeving.",
+      "uo": [
+       "Klopt: de omgeving (zon) maakt het verschil.",
+       "Het genotype is juist gelijk.",
+       "Het aantal chromosomen is gelijk.",
+       "Het celmembraan speelt hier geen rol."
+      ],
+      "uh": "Fenotype = genotype + omgeving."
      }
     ],
     "begrippen": [
