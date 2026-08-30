@@ -7874,498 +7874,270 @@ var VAKKEN_VMBO = [
     "nBeg": 0,
     "sv": [
      {
-      "v": "Welk begrip hoort bij: \"hoeveel je met je inkomen kunt kopen\"?",
+      "v": "Wat betekent koopkracht?",
       "o": [
-       "Koopkracht",
-       "Reëel inkomen",
-       "Inkomen",
-       "Premie"
+       "Wat je kunt kopen",
+       "Wat je totaal spaart",
+       "Wat je totaal leent",
+       "Wat je aan belasting betaalt"
       ],
       "c": 0,
-      "d": 3,
-      "u": "«Koopkracht»: hoeveel je met je inkomen kunt kopen.",
+      "d": 1,
+      "u": "Wat je met je inkomen kunt kopen.",
       "uo": [
-       "Klopt, dit is «Koopkracht».",
-       "«Reëel inkomen» betekent inkomen na inflatie.",
-       "«Inkomen» betekent geld dat je ontvangt.",
-       "«Premie» betekent bedrag voor verzekering."
+       "Klopt: wat je met je inkomen kunt kopen.",
+       "Sparen is iets anders.",
+       "Lenen is iets anders.",
+       "Belasting is iets anders."
       ],
-      "uh": "Onthoud: «Koopkracht» = wat je inkomen kan kopen."
+      "uh": "Wat je met je inkomen kunt kopen."
      },
      {
-      "v": "Welke term hoort bij \"geld dat je ontvangt\"?",
+      "v": "Wat gebeurt er bij inflatie?",
       "o": [
-       "Nominaal inkomen",
-       "Inkomen",
-       "Deflatie",
-       "Indexcijfer"
+       "De prijzen dalen",
+       "De prijzen stijgen",
+       "De lonen dalen mee",
+       "Het geld verdwijnt"
       ],
       "c": 1,
       "d": 2,
-      "u": "«Inkomen»: het geld dat je ontvangt, bijvoorbeeld loon.",
+      "u": "Bij inflatie stijgen de prijzen.",
       "uo": [
-       "«Nominaal inkomen» betekent inkomen in euro's.",
-       "Klopt, «Inkomen» past hierbij.",
-       "«Deflatie» betekent prijzen dalen.",
-       "«Indexcijfer» betekent verandering t.o.v. basisjaar."
+       "Dat is deflatie.",
+       "Klopt: bij inflatie stijgen de prijzen.",
+       "Lonen dalen niet automatisch.",
+       "Geld verdwijnt niet."
       ],
-      "uh": "Onthoud: «Inkomen» = geld dat je ontvangt."
+      "uh": "Bij inflatie stijgen de prijzen."
      },
      {
-      "v": "Wat betekent «Koopkracht»?",
+      "v": "Wat is een indexcijfer?",
       "o": [
-       "je inkomen gecorrigeerd voor inflatie",
-       "het geld dat je ontvangt, bijvoorbeeld loon",
-       "hoeveel je met je inkomen kunt kopen",
-       "het bedrag dat je periodiek voor een verzekering betaalt"
+       "Een soort belasting",
+       "Een spaarrekening",
+       "Een getal dat een verandering toont",
+       "Een muntsoort"
       ],
       "c": 2,
       "d": 1,
-      "u": "«Koopkracht»: hoeveel je met je inkomen kunt kopen.",
+      "u": "Een verandering ten opzichte van een basisjaar (100).",
       "uo": [
-       "Dat is «Reëel inkomen».",
-       "Dat is «Inkomen».",
-       "Klopt: wat je inkomen kan kopen.",
-       "Dat is «Premie»."
+       "Geen belasting.",
+       "Geen spaarrekening.",
+       "Klopt: een verandering ten opzichte van een basisjaar (100).",
+       "Geen muntsoort."
       ],
-      "uh": "Onthoud: «Koopkracht» = wat je inkomen kan kopen."
+      "uh": "Een verandering ten opzichte van een basisjaar (100)."
      },
      {
-      "v": "Welk begrip hoort bij: \"het geld dat je ontvangt, bijvoorbeeld loon\"?",
+      "v": "Waarvoor betaal je premie?",
       "o": [
-       "Uitgaven",
-       "Koopkracht",
-       "Nominaal inkomen",
-       "Inkomen"
+       "Voor een lening",
+       "Voor belasting",
+       "Voor sparen",
+       "Voor een verzekering"
       ],
       "c": 3,
-      "d": 3,
-      "u": "«Inkomen»: het geld dat je ontvangt, bijvoorbeeld loon.",
+      "d": 1,
+      "u": "Premie betaal je voor een verzekering.",
       "uo": [
-       "«Uitgaven» betekent geld dat je besteedt.",
-       "«Koopkracht» betekent wat je inkomen kan kopen.",
-       "«Nominaal inkomen» betekent inkomen in euro's.",
-       "Klopt, dit is «Inkomen»."
+       "Een lening betaal je met rente terug.",
+       "Belasting is iets anders.",
+       "Sparen kost geen premie.",
+       "Klopt: premie betaal je voor een verzekering."
       ],
-      "uh": "Onthoud: «Inkomen» = geld dat je ontvangt."
+      "uh": "Premie betaal je voor een verzekering."
      },
      {
-      "v": "Welke term hoort bij \"geld dat je besteedt\"?",
+      "v": "Wat is je eigen risico bij een verzekering?",
       "o": [
-       "Uitgaven",
-       "Nominaal inkomen",
-       "Deflatie",
-       "Eigen risico"
+       "Het deel dat je zelf betaalt",
+       "De premie per maand",
+       "De totale schade",
+       "Het spaargeld"
       ],
       "c": 0,
       "d": 2,
-      "u": "«Uitgaven»: het geld dat je besteedt.",
+      "u": "Het deel van de schade dat je zelf betaalt.",
       "uo": [
-       "Klopt, «Uitgaven» past hierbij.",
-       "«Nominaal inkomen» betekent inkomen in euro's.",
-       "«Deflatie» betekent prijzen dalen.",
-       "«Eigen risico» betekent schade die je zelf betaalt."
+       "Klopt: het deel van de schade dat je zelf betaalt.",
+       "Dat is de premie.",
+       "De verzekeraar dekt de rest.",
+       "Sparen is iets anders."
       ],
-      "uh": "Onthoud: «Uitgaven» = geld dat je besteedt."
+      "uh": "Het deel van de schade dat je zelf betaalt."
      },
      {
-      "v": "Wat betekent «Inkomen»?",
+      "v": "Je prijzen stijgen 5%, je loon 2%. Wat gebeurt met je koopkracht?",
       "o": [
-       "het geld dat je besteedt",
-       "het geld dat je ontvangt, bijvoorbeeld loon",
-       "hoeveel je met je inkomen kunt kopen",
-       "je inkomen in euro's zonder correctie voor inflatie"
-      ],
-      "c": 1,
-      "d": 1,
-      "u": "«Inkomen»: het geld dat je ontvangt, bijvoorbeeld loon.",
-      "uo": [
-       "Dat is «Uitgaven».",
-       "Klopt: geld dat je ontvangt.",
-       "Dat is «Koopkracht».",
-       "Dat is «Nominaal inkomen»."
-      ],
-      "uh": "Onthoud: «Inkomen» = geld dat je ontvangt."
-     },
-     {
-      "v": "Welk begrip hoort bij: \"het geld dat je besteedt\"?",
-      "o": [
-       "Inkomen",
-       "Sparen",
-       "Uitgaven",
-       "Nominaal inkomen"
-      ],
-      "c": 2,
-      "d": 3,
-      "u": "«Uitgaven»: het geld dat je besteedt.",
-      "uo": [
-       "«Inkomen» betekent geld dat je ontvangt.",
-       "«Sparen» betekent geld bewaren.",
-       "Klopt, dit is «Uitgaven».",
-       "«Nominaal inkomen» betekent inkomen in euro's."
-      ],
-      "uh": "Onthoud: «Uitgaven» = geld dat je besteedt."
-     },
-     {
-      "v": "Welke term hoort bij \"geld bewaren\"?",
-      "o": [
-       "Inkomen",
-       "Indexcijfer",
-       "Budget",
-       "Sparen"
-      ],
-      "c": 3,
-      "d": 2,
-      "u": "«Sparen»: geld dat je niet uitgeeft maar bewaart.",
-      "uo": [
-       "«Inkomen» betekent geld dat je ontvangt.",
-       "«Indexcijfer» betekent verandering t.o.v. basisjaar.",
-       "«Budget» betekent overzicht inkomsten en uitgaven.",
-       "Klopt, «Sparen» past hierbij."
-      ],
-      "uh": "Onthoud: «Sparen» = geld bewaren."
-     },
-     {
-      "v": "Wat betekent «Uitgaven»?",
-      "o": [
-       "het geld dat je besteedt",
-       "het geld dat je ontvangt, bijvoorbeeld loon",
-       "geld dat je niet uitgeeft maar bewaart",
-       "je inkomen in euro's zonder correctie voor inflatie"
-      ],
-      "c": 0,
-      "d": 1,
-      "u": "«Uitgaven»: het geld dat je besteedt.",
-      "uo": [
-       "Klopt: geld dat je besteedt.",
-       "Dat is «Inkomen».",
-       "Dat is «Sparen».",
-       "Dat is «Nominaal inkomen»."
-      ],
-      "uh": "Onthoud: «Uitgaven» = geld dat je besteedt."
-     },
-     {
-      "v": "Welk begrip hoort bij: \"geld dat je niet uitgeeft maar bewaart\"?",
-      "o": [
-       "Uitgaven",
-       "Sparen",
-       "Inkomen",
-       "Indexcijfer"
+       "Die stijgt",
+       "Die daalt",
+       "Die blijft gelijk",
+       "Die verdwijnt"
       ],
       "c": 1,
       "d": 3,
-      "u": "«Sparen»: geld dat je niet uitgeeft maar bewaart.",
+      "u": "Je koopkracht daalt.",
       "uo": [
-       "«Uitgaven» betekent geld dat je besteedt.",
-       "Klopt, dit is «Sparen».",
-       "«Inkomen» betekent geld dat je ontvangt.",
-       "«Indexcijfer» betekent verandering t.o.v. basisjaar."
+       "Nee, de prijzen stijgen harder.",
+       "Klopt: je koopkracht daalt.",
+       "Nee, er is een verschil.",
+       "Koopkracht verdwijnt niet."
       ],
-      "uh": "Onthoud: «Sparen» = geld bewaren."
+      "uh": "Je koopkracht daalt."
      },
      {
-      "v": "Welke term hoort bij \"overzicht inkomsten en uitgaven\"?",
+      "v": "Wat is het verschil tussen sparen en uitgeven?",
       "o": [
-       "Inkomen",
-       "Indexcijfer",
-       "Budget",
-       "Uitgaven"
+       "Sparen kost meer",
+       "Beide zijn hetzelfde",
+       "Sparen bewaar je, uitgeven besteed je",
+       "Uitgeven is verboden"
       ],
       "c": 2,
       "d": 2,
-      "u": "«Budget»: een overzicht van verwachte inkomsten en uitgaven.",
+      "u": "Sparen bewaar je, uitgeven besteed je.",
       "uo": [
-       "«Inkomen» betekent geld dat je ontvangt.",
-       "«Indexcijfer» betekent verandering t.o.v. basisjaar.",
-       "Klopt, «Budget» past hierbij.",
-       "«Uitgaven» betekent geld dat je besteedt."
+       "Sparen kost niets extra.",
+       "Ze zijn niet hetzelfde.",
+       "Klopt: sparen bewaar je, uitgeven besteed je.",
+       "Uitgeven mag gewoon."
       ],
-      "uh": "Onthoud: «Budget» = overzicht inkomsten en uitgaven."
+      "uh": "Sparen bewaar je, uitgeven besteed je."
      },
      {
-      "v": "Wat betekent «Sparen»?",
+      "v": "Wat is een budget?",
       "o": [
-       "het geld dat je besteedt",
-       "het geld dat je ontvangt, bijvoorbeeld loon",
-       "een getal dat een verandering ten opzichte van een basisjaar weergeeft",
-       "geld dat je niet uitgeeft maar bewaart"
+       "Een soort belasting",
+       "Een verzekering",
+       "Een lening",
+       "Een overzicht van inkomsten en uitgaven"
       ],
       "c": 3,
       "d": 1,
-      "u": "«Sparen»: geld dat je niet uitgeeft maar bewaart.",
+      "u": "Een overzicht van inkomsten en uitgaven.",
       "uo": [
-       "Dat is «Uitgaven».",
-       "Dat is «Inkomen».",
-       "Dat is «Indexcijfer».",
-       "Klopt: geld bewaren."
+       "Geen belasting.",
+       "Geen verzekering.",
+       "Geen lening.",
+       "Klopt: een overzicht van inkomsten en uitgaven."
       ],
-      "uh": "Onthoud: «Sparen» = geld bewaren."
+      "uh": "Een overzicht van inkomsten en uitgaven."
      },
      {
-      "v": "Welk begrip hoort bij: \"een overzicht van verwachte inkomsten en uitgaven\"?",
+      "v": "Wat is reëel inkomen?",
       "o": [
-       "Budget",
-       "Budgetteren",
-       "Inkomen",
-       "Indexcijfer"
-      ],
-      "c": 0,
-      "d": 3,
-      "u": "«Budget»: een overzicht van verwachte inkomsten en uitgaven.",
-      "uo": [
-       "Klopt, dit is «Budget».",
-       "«Budgetteren» betekent uitgaven plannen.",
-       "«Inkomen» betekent geld dat je ontvangt.",
-       "«Indexcijfer» betekent verandering t.o.v. basisjaar."
-      ],
-      "uh": "Onthoud: «Budget» = overzicht inkomsten en uitgaven."
-     },
-     {
-      "v": "Welke term hoort bij \"uitgaven plannen\"?",
-      "o": [
-       "Eigen risico",
-       "Budgetteren",
-       "Premie",
-       "Deflatie"
-      ],
-      "c": 1,
-      "d": 2,
-      "u": "«Budgetteren»: je uitgaven plannen binnen je inkomen.",
-      "uo": [
-       "«Eigen risico» betekent schade die je zelf betaalt.",
-       "Klopt, «Budgetteren» past hierbij.",
-       "«Premie» betekent bedrag voor verzekering.",
-       "«Deflatie» betekent prijzen dalen."
-      ],
-      "uh": "Onthoud: «Budgetteren» = uitgaven plannen."
-     },
-     {
-      "v": "Wat betekent «Budget»?",
-      "o": [
-       "je uitgaven plannen binnen je inkomen",
-       "het geld dat je ontvangt, bijvoorbeeld loon",
-       "een overzicht van verwachte inkomsten en uitgaven",
-       "een getal dat een verandering ten opzichte van een basisjaar weergeeft"
-      ],
-      "c": 2,
-      "d": 1,
-      "u": "«Budget»: een overzicht van verwachte inkomsten en uitgaven.",
-      "uo": [
-       "Dat is «Budgetteren».",
-       "Dat is «Inkomen».",
-       "Klopt: overzicht inkomsten en uitgaven.",
-       "Dat is «Indexcijfer»."
-      ],
-      "uh": "Onthoud: «Budget» = overzicht inkomsten en uitgaven."
-     },
-     {
-      "v": "Welk begrip hoort bij: \"je uitgaven plannen binnen je inkomen\"?",
-      "o": [
-       "Budget",
-       "Eigen risico",
-       "Premie",
-       "Budgetteren"
-      ],
-      "c": 3,
-      "d": 3,
-      "u": "«Budgetteren»: je uitgaven plannen binnen je inkomen.",
-      "uo": [
-       "«Budget» betekent overzicht inkomsten en uitgaven.",
-       "«Eigen risico» betekent schade die je zelf betaalt.",
-       "«Premie» betekent bedrag voor verzekering.",
-       "Klopt, dit is «Budgetteren»."
-      ],
-      "uh": "Onthoud: «Budgetteren» = uitgaven plannen."
-     },
-     {
-      "v": "Welke term hoort bij \"prijzen stijgen\"?",
-      "o": [
-       "Inflatie",
-       "Uitgaven",
-       "Indexcijfer",
-       "Budget"
+       "Inkomen na inflatie",
+       "Inkomen in euro's",
+       "Je spaargeld",
+       "Je uitgaven"
       ],
       "c": 0,
       "d": 2,
-      "u": "«Inflatie»: een algemene stijging van de prijzen.",
+      "u": "Inkomen gecorrigeerd voor inflatie.",
       "uo": [
-       "Klopt, «Inflatie» past hierbij.",
-       "«Uitgaven» betekent geld dat je besteedt.",
-       "«Indexcijfer» betekent verandering t.o.v. basisjaar.",
-       "«Budget» betekent overzicht inkomsten en uitgaven."
+       "Klopt: inkomen gecorrigeerd voor inflatie.",
+       "Dat is nominaal inkomen.",
+       "Sparen is iets anders.",
+       "Uitgaven zijn iets anders."
       ],
-      "uh": "Onthoud: «Inflatie» = prijzen stijgen."
+      "uh": "Inkomen gecorrigeerd voor inflatie."
      },
      {
-      "v": "Wat betekent «Budgetteren»?",
+      "v": "Wat betekent deflatie?",
       "o": [
-       "een overzicht van verwachte inkomsten en uitgaven",
-       "je uitgaven plannen binnen je inkomen",
-       "het deel van de schade dat je zelf betaalt",
-       "het bedrag dat je periodiek voor een verzekering betaalt"
+       "Prijzen stijgen",
+       "Prijzen dalen",
+       "Lonen stijgen",
+       "Belasting stijgt"
       ],
       "c": 1,
       "d": 1,
-      "u": "«Budgetteren»: je uitgaven plannen binnen je inkomen.",
+      "u": "Bij deflatie dalen de prijzen.",
       "uo": [
-       "Dat is «Budget».",
-       "Klopt: uitgaven plannen.",
-       "Dat is «Eigen risico».",
-       "Dat is «Premie»."
+       "Dat is inflatie.",
+       "Klopt: bij deflatie dalen de prijzen.",
+       "Lonen zijn iets anders.",
+       "Belasting is iets anders."
       ],
-      "uh": "Onthoud: «Budgetteren» = uitgaven plannen."
+      "uh": "Bij deflatie dalen de prijzen."
      },
      {
-      "v": "Welk begrip hoort bij: \"een algemene stijging van de prijzen\"?",
+      "v": "Waarom sluit je een verzekering af?",
       "o": [
-       "Deflatie",
-       "Uitgaven",
-       "Inflatie",
-       "Indexcijfer"
-      ],
-      "c": 2,
-      "d": 3,
-      "u": "«Inflatie»: een algemene stijging van de prijzen.",
-      "uo": [
-       "«Deflatie» betekent prijzen dalen.",
-       "«Uitgaven» betekent geld dat je besteedt.",
-       "Klopt, dit is «Inflatie».",
-       "«Indexcijfer» betekent verandering t.o.v. basisjaar."
-      ],
-      "uh": "Onthoud: «Inflatie» = prijzen stijgen."
-     },
-     {
-      "v": "Welke term hoort bij \"prijzen dalen\"?",
-      "o": [
-       "Uitgaven",
-       "Indexcijfer",
-       "Budget",
-       "Deflatie"
-      ],
-      "c": 3,
-      "d": 2,
-      "u": "«Deflatie»: een algemene daling van de prijzen.",
-      "uo": [
-       "«Uitgaven» betekent geld dat je besteedt.",
-       "«Indexcijfer» betekent verandering t.o.v. basisjaar.",
-       "«Budget» betekent overzicht inkomsten en uitgaven.",
-       "Klopt, «Deflatie» past hierbij."
-      ],
-      "uh": "Onthoud: «Deflatie» = prijzen dalen."
-     },
-     {
-      "v": "Wat betekent «Inflatie»?",
-      "o": [
-       "een algemene stijging van de prijzen",
-       "een algemene daling van de prijzen",
-       "het geld dat je besteedt",
-       "een getal dat een verandering ten opzichte van een basisjaar weergeeft"
-      ],
-      "c": 0,
-      "d": 1,
-      "u": "«Inflatie»: een algemene stijging van de prijzen.",
-      "uo": [
-       "Klopt: prijzen stijgen.",
-       "Dat is «Deflatie».",
-       "Dat is «Uitgaven».",
-       "Dat is «Indexcijfer»."
-      ],
-      "uh": "Onthoud: «Inflatie» = prijzen stijgen."
-     },
-     {
-      "v": "Welk begrip hoort bij: \"een algemene daling van de prijzen\"?",
-      "o": [
-       "Inflatie",
-       "Deflatie",
-       "Uitgaven",
-       "Indexcijfer"
-      ],
-      "c": 1,
-      "d": 3,
-      "u": "«Deflatie»: een algemene daling van de prijzen.",
-      "uo": [
-       "«Inflatie» betekent prijzen stijgen.",
-       "Klopt, dit is «Deflatie».",
-       "«Uitgaven» betekent geld dat je besteedt.",
-       "«Indexcijfer» betekent verandering t.o.v. basisjaar."
-      ],
-      "uh": "Onthoud: «Deflatie» = prijzen dalen."
-     },
-     {
-      "v": "Welke term hoort bij \"verandering t.o.v. basisjaar\"?",
-      "o": [
-       "Eigen risico",
-       "Premie",
-       "Indexcijfer",
-       "Budgetteren"
+       "Om te sparen",
+       "Om te lenen",
+       "Om je te beschermen tegen grote kosten",
+       "Om belasting te betalen"
       ],
       "c": 2,
       "d": 2,
-      "u": "«Indexcijfer»: een getal dat een verandering ten opzichte van een basisjaar weergeeft.",
+      "u": "Bescherming tegen grote onverwachte kosten.",
       "uo": [
-       "«Eigen risico» betekent schade die je zelf betaalt.",
-       "«Premie» betekent bedrag voor verzekering.",
-       "Klopt, «Indexcijfer» past hierbij.",
-       "«Budgetteren» betekent uitgaven plannen."
+       "Sparen is iets anders.",
+       "Lenen is iets anders.",
+       "Klopt: bescherming tegen grote onverwachte kosten.",
+       "Belasting is iets anders."
       ],
-      "uh": "Onthoud: «Indexcijfer» = verandering t.o.v. basisjaar."
+      "uh": "Bescherming tegen grote onverwachte kosten."
      },
      {
-      "v": "Wat betekent «Deflatie»?",
+      "v": "Wat is nominaal inkomen?",
       "o": [
-       "een algemene stijging van de prijzen",
-       "het geld dat je besteedt",
-       "een getal dat een verandering ten opzichte van een basisjaar weergeeft",
-       "een algemene daling van de prijzen"
+       "Inkomen na inflatie",
+       "Je koopkracht",
+       "Je spaargeld",
+       "Inkomen in euro's"
       ],
       "c": 3,
-      "d": 1,
-      "u": "«Deflatie»: een algemene daling van de prijzen.",
+      "d": 2,
+      "u": "Inkomen in euro's, zonder correctie.",
       "uo": [
-       "Dat is «Inflatie».",
-       "Dat is «Uitgaven».",
-       "Dat is «Indexcijfer».",
-       "Klopt: prijzen dalen."
+       "Dat is reëel inkomen.",
+       "Koopkracht is iets anders.",
+       "Sparen is iets anders.",
+       "Klopt: inkomen in euro's, zonder correctie."
       ],
-      "uh": "Onthoud: «Deflatie» = prijzen dalen."
+      "uh": "Inkomen in euro's, zonder correctie."
      },
      {
-      "v": "Welk begrip hoort bij: \"een getal dat een verandering ten opzichte van een basisjaar weergeeft\"?",
+      "v": "Wat is budgetteren?",
       "o": [
-       "Indexcijfer",
-       "Inflatie",
-       "Eigen risico",
-       "Premie"
+       "Je uitgaven plannen",
+       "Meer geld lenen",
+       "Alles snel uitgeven",
+       "Belasting ontwijken"
       ],
       "c": 0,
-      "d": 3,
-      "u": "«Indexcijfer»: een getal dat een verandering ten opzichte van een basisjaar weergeeft.",
+      "d": 1,
+      "u": "Je uitgaven plannen binnen je inkomen.",
       "uo": [
-       "Klopt, dit is «Indexcijfer».",
-       "«Inflatie» betekent prijzen stijgen.",
-       "«Eigen risico» betekent schade die je zelf betaalt.",
-       "«Premie» betekent bedrag voor verzekering."
+       "Klopt: je uitgaven plannen binnen je inkomen.",
+       "Lenen is iets anders.",
+       "Dat is het tegenovergestelde.",
+       "Dat mag niet."
       ],
-      "uh": "Onthoud: «Indexcijfer» = verandering t.o.v. basisjaar."
+      "uh": "Je uitgaven plannen binnen je inkomen."
      },
      {
-      "v": "Welke term hoort bij \"bescherming tegen risico\"?",
+      "v": "Wat is nodig voor meer koopkracht?",
       "o": [
-       "Eigen risico",
-       "Verzekering",
-       "Nominaal inkomen",
-       "Budgetteren"
+       "Prijzen die veel harder stijgen dan lonen",
+       "Loon dat harder stijgt dan de prijzen",
+       "Meer lenen bij de bank",
+       "Hogere belasting betalen"
       ],
       "c": 1,
-      "d": 2,
-      "u": "«Verzekering»: een afspraak waarbij je premie betaalt tegen financiële risico's.",
+      "d": 3,
+      "u": "Je loon stijgt harder dan de prijzen.",
       "uo": [
-       "«Eigen risico» betekent schade die je zelf betaalt.",
-       "Klopt, «Verzekering» past hierbij.",
-       "«Nominaal inkomen» betekent inkomen in euro's.",
-       "«Budgetteren» betekent uitgaven plannen."
+       "Dan daalt je koopkracht juist.",
+       "Klopt: je loon stijgt harder dan de prijzen.",
+       "Lenen helpt niet blijvend.",
+       "Hogere belasting helpt niet."
       ],
-      "uh": "Onthoud: «Verzekering» = bescherming tegen risico."
+      "uh": "Je loon stijgt harder dan de prijzen."
      }
     ],
     "begrippen": [
@@ -8443,498 +8215,232 @@ var VAKKEN_VMBO = [
     "nBeg": 0,
     "sv": [
      {
-      "v": "Welk begrip hoort bij: \"de rechten die een koper heeft\"?",
+      "v": "Wat geeft garantie je recht op?",
       "o": [
-       "Consumentenrecht",
-       "Garantie",
-       "Algemene voorwaarden",
-       "Keurmerk"
-      ],
-      "c": 0,
-      "d": 3,
-      "u": "«Consumentenrecht»: de rechten die een koper heeft.",
-      "uo": [
-       "Klopt, dit is «Consumentenrecht».",
-       "«Garantie» betekent herstel bij een gebrek.",
-       "«Algemene voorwaarden» betekent de kleine lettertjes.",
-       "«Keurmerk» betekent teken van kwaliteit."
-      ],
-      "uh": "Onthoud: «Consumentenrecht» = rechten van de koper."
-     },
-     {
-      "v": "Welke term hoort bij \"rechten van de koper\"?",
-      "o": [
-       "Keurmerk",
-       "Consumentenrecht",
-       "Consumentenorganisatie",
-       "Consumentenbond"
+       "Een lager bedrag",
+       "Herstel of vervanging bij een gebrek",
+       "Gratis producten",
+       "Meer bedenktijd"
       ],
       "c": 1,
       "d": 2,
-      "u": "«Consumentenrecht»: de rechten die een koper heeft.",
+      "u": "Herstel of vervanging bij een gebrek.",
       "uo": [
-       "«Keurmerk» betekent teken van kwaliteit.",
-       "Klopt, «Consumentenrecht» past hierbij.",
-       "«Consumentenorganisatie» betekent komt op voor kopers.",
-       "«Consumentenbond» betekent test en adviseert."
+       "Garantie gaat niet over korting.",
+       "Klopt: herstel of vervanging bij een gebrek.",
+       "Niet zomaar gratis.",
+       "Dat is iets anders."
       ],
-      "uh": "Onthoud: «Consumentenrecht» = rechten van de koper."
+      "uh": "Herstel of vervanging bij een gebrek."
      },
      {
-      "v": "Wat betekent «Consumentenrecht»?",
+      "v": "Je koopt online een jas. Welk recht heb je?",
       "o": [
-       "het recht op herstel of vervanging bij een gebrek",
-       "de regels die bij een koopovereenkomst horen",
-       "de rechten die een koper heeft",
-       "een teken dat een product aan bepaalde eisen voldoet"
-      ],
-      "c": 2,
-      "d": 1,
-      "u": "«Consumentenrecht»: de rechten die een koper heeft.",
-      "uo": [
-       "Dat is «Garantie».",
-       "Dat is «Algemene voorwaarden».",
-       "Klopt: rechten van de koper.",
-       "Dat is «Keurmerk»."
-      ],
-      "uh": "Onthoud: «Consumentenrecht» = rechten van de koper."
-     },
-     {
-      "v": "Welk begrip hoort bij: \"het recht op herstel of vervanging bij een gebrek\"?",
-      "o": [
-       "Retourrecht",
-       "Bedenktijd",
-       "Keurmerk",
-       "Garantie"
-      ],
-      "c": 3,
-      "d": 3,
-      "u": "«Garantie»: het recht op herstel of vervanging bij een gebrek.",
-      "uo": [
-       "«Retourrecht» betekent aankoop terugsturen.",
-       "«Bedenktijd» betekent periode om te annuleren.",
-       "«Keurmerk» betekent teken van kwaliteit.",
-       "Klopt, dit is «Garantie»."
-      ],
-      "uh": "Onthoud: «Garantie» = herstel bij een gebrek."
-     },
-     {
-      "v": "Welke term hoort bij \"herstel bij een gebrek\"?",
-      "o": [
-       "Garantie",
-       "Keurmerk",
-       "Consumentenrecht",
-       "Consument"
-      ],
-      "c": 0,
-      "d": 2,
-      "u": "«Garantie»: het recht op herstel of vervanging bij een gebrek.",
-      "uo": [
-       "Klopt, «Garantie» past hierbij.",
-       "«Keurmerk» betekent teken van kwaliteit.",
-       "«Consumentenrecht» betekent rechten van de koper.",
-       "«Consument» betekent de koper en gebruiker."
-      ],
-      "uh": "Onthoud: «Garantie» = herstel bij een gebrek."
-     },
-     {
-      "v": "Wat betekent «Garantie»?",
-      "o": [
-       "het recht om een aankoop terug te sturen",
-       "het recht op herstel of vervanging bij een gebrek",
-       "de periode waarin je een aankoop mag annuleren",
-       "een teken dat een product aan bepaalde eisen voldoet"
-      ],
-      "c": 1,
-      "d": 1,
-      "u": "«Garantie»: het recht op herstel of vervanging bij een gebrek.",
-      "uo": [
-       "Dat is «Retourrecht».",
-       "Klopt: herstel bij een gebrek.",
-       "Dat is «Bedenktijd».",
-       "Dat is «Keurmerk»."
-      ],
-      "uh": "Onthoud: «Garantie» = herstel bij een gebrek."
-     },
-     {
-      "v": "Welk begrip hoort bij: \"de periode waarin je een aankoop mag annuleren\"?",
-      "o": [
-       "Retourrecht",
-       "Garantie",
-       "Bedenktijd",
-       "Consumentenrecht"
-      ],
-      "c": 2,
-      "d": 3,
-      "u": "«Bedenktijd»: de periode waarin je een aankoop mag annuleren.",
-      "uo": [
-       "«Retourrecht» betekent aankoop terugsturen.",
-       "«Garantie» betekent herstel bij een gebrek.",
-       "Klopt, dit is «Bedenktijd».",
-       "«Consumentenrecht» betekent rechten van de koper."
-      ],
-      "uh": "Onthoud: «Bedenktijd» = periode om te annuleren."
-     },
-     {
-      "v": "Welke term hoort bij \"aankoop terugsturen\"?",
-      "o": [
-       "Klacht",
-       "Consumentenrecht",
-       "Consument",
-       "Retourrecht"
-      ],
-      "c": 3,
-      "d": 2,
-      "u": "«Retourrecht»: het recht om een aankoop terug te sturen.",
-      "uo": [
-       "«Klacht» betekent melding dat iets niet voldoet.",
-       "«Consumentenrecht» betekent rechten van de koper.",
-       "«Consument» betekent de koper en gebruiker.",
-       "Klopt, «Retourrecht» past hierbij."
-      ],
-      "uh": "Onthoud: «Retourrecht» = aankoop terugsturen."
-     },
-     {
-      "v": "Wat betekent «Retourrecht»?",
-      "o": [
-       "het recht om een aankoop terug te sturen",
-       "de periode waarin je een aankoop mag annuleren",
-       "het recht op herstel of vervanging bij een gebrek",
-       "een melding dat een product of dienst niet voldoet"
-      ],
-      "c": 0,
-      "d": 1,
-      "u": "«Retourrecht»: het recht om een aankoop terug te sturen.",
-      "uo": [
-       "Klopt: aankoop terugsturen.",
-       "Dat is «Bedenktijd».",
-       "Dat is «Garantie».",
-       "Dat is «Klacht»."
-      ],
-      "uh": "Onthoud: «Retourrecht» = aankoop terugsturen."
-     },
-     {
-      "v": "Welk begrip hoort bij: \"een organisatie die producten test en consumenten adviseert\"?",
-      "o": [
-       "Consumentenorganisatie",
-       "Consumentenbond",
-       "Bedenktijd",
-       "Klacht"
-      ],
-      "c": 1,
-      "d": 3,
-      "u": "«Consumentenbond»: een organisatie die producten test en consumenten adviseert.",
-      "uo": [
-       "«Consumentenorganisatie» betekent komt op voor kopers.",
-       "Klopt, dit is «Consumentenbond».",
-       "«Bedenktijd» betekent periode om te annuleren.",
-       "«Klacht» betekent melding dat iets niet voldoet."
-      ],
-      "uh": "Onthoud: «Consumentenbond» = test en adviseert."
-     },
-     {
-      "v": "Welke term hoort bij \"periode om te annuleren\"?",
-      "o": [
-       "Garantie",
-       "Consumentenrecht",
-       "Bedenktijd",
-       "Keurmerk"
+       "Geen enkel recht",
+       "Alleen garantie",
+       "Bedenktijd om te retourneren",
+       "Altijd gratis verzending"
       ],
       "c": 2,
       "d": 2,
-      "u": "«Bedenktijd»: de periode waarin je een aankoop mag annuleren.",
+      "u": "Bij online kopen heb je bedenktijd.",
       "uo": [
-       "«Garantie» betekent herstel bij een gebrek.",
-       "«Consumentenrecht» betekent rechten van de koper.",
-       "Klopt, «Bedenktijd» past hierbij.",
-       "«Keurmerk» betekent teken van kwaliteit."
+       "Je hebt wel rechten.",
+       "Er is meer dan garantie.",
+       "Klopt: bij online kopen heb je bedenktijd.",
+       "Verzending is niet gegarandeerd gratis."
       ],
-      "uh": "Onthoud: «Bedenktijd» = periode om te annuleren."
+      "uh": "Bij online kopen heb je bedenktijd."
      },
      {
-      "v": "Wat betekent «Bedenktijd»?",
+      "v": "Wat doet de Consumentenbond?",
       "o": [
-       "het recht om een aankoop terug te sturen",
-       "het recht op herstel of vervanging bij een gebrek",
-       "de rechten die een koper heeft",
-       "de periode waarin je een aankoop mag annuleren"
-      ],
-      "c": 3,
-      "d": 1,
-      "u": "«Bedenktijd»: de periode waarin je een aankoop mag annuleren.",
-      "uo": [
-       "Dat is «Retourrecht».",
-       "Dat is «Garantie».",
-       "Dat is «Consumentenrecht».",
-       "Klopt: periode om te annuleren."
-      ],
-      "uh": "Onthoud: «Bedenktijd» = periode om te annuleren."
-     },
-     {
-      "v": "Welk begrip hoort bij: \"een melding dat een product of dienst niet voldoet\"?",
-      "o": [
-       "Klacht",
-       "Garantie",
-       "Retourrecht",
-       "Consumentenrecht"
+       "Producten testen en adviseren",
+       "Belasting innen",
+       "Geld uitlenen",
+       "Producten maken"
       ],
       "c": 0,
-      "d": 3,
-      "u": "«Klacht»: een melding dat een product of dienst niet voldoet.",
-      "uo": [
-       "Klopt, dit is «Klacht».",
-       "«Garantie» betekent herstel bij een gebrek.",
-       "«Retourrecht» betekent aankoop terugsturen.",
-       "«Consumentenrecht» betekent rechten van de koper."
-      ],
-      "uh": "Onthoud: «Klacht» = melding dat iets niet voldoet."
-     },
-     {
-      "v": "Welke term hoort bij \"melding dat iets niet voldoet\"?",
-      "o": [
-       "Retourrecht",
-       "Klacht",
-       "Consumentenrecht",
-       "Consument"
-      ],
-      "c": 1,
-      "d": 2,
-      "u": "«Klacht»: een melding dat een product of dienst niet voldoet.",
-      "uo": [
-       "«Retourrecht» betekent aankoop terugsturen.",
-       "Klopt, «Klacht» past hierbij.",
-       "«Consumentenrecht» betekent rechten van de koper.",
-       "«Consument» betekent de koper en gebruiker."
-      ],
-      "uh": "Onthoud: «Klacht» = melding dat iets niet voldoet."
-     },
-     {
-      "v": "Wat betekent «Consumentenorganisatie»?",
-      "o": [
-       "een organisatie die producten test en consumenten adviseert",
-       "de afspraak tussen een koper en een verkoper",
-       "een organisatie die opkomt voor kopers",
-       "de periode waarin je een aankoop mag annuleren"
-      ],
-      "c": 2,
       "d": 1,
-      "u": "«Consumentenorganisatie»: een organisatie die opkomt voor kopers.",
+      "u": "Test producten en geeft advies.",
       "uo": [
-       "Dat is «Consumentenbond».",
-       "Dat is «Koopovereenkomst».",
-       "Klopt: komt op voor kopers.",
-       "Dat is «Bedenktijd»."
+       "Klopt: test producten en geeft advies.",
+       "Dat doet de Belastingdienst.",
+       "Dat doet een bank.",
+       "Dat doet een fabriek."
       ],
-      "uh": "Onthoud: «Consumentenorganisatie» = komt op voor kopers."
+      "uh": "Test producten en geeft advies."
      },
      {
-      "v": "Welk begrip hoort bij: \"een teken dat een product aan bepaalde eisen voldoet\"?",
+      "v": "Wat laat een keurmerk zien?",
       "o": [
-       "Garantie",
-       "Aankoop op afstand",
-       "Consument",
-       "Keurmerk"
+       "De prijs",
+       "De maker",
+       "De houdbaarheid",
+       "Dat het aan eisen voldoet"
       ],
       "c": 3,
-      "d": 3,
-      "u": "«Keurmerk»: een teken dat een product aan bepaalde eisen voldoet.",
-      "uo": [
-       "«Garantie» betekent herstel bij een gebrek.",
-       "«Aankoop op afstand» betekent kopen zonder winkel.",
-       "«Consument» betekent de koper en gebruiker.",
-       "Klopt, dit is «Keurmerk»."
-      ],
-      "uh": "Onthoud: «Keurmerk» = teken van kwaliteit."
-     },
-     {
-      "v": "Welke term hoort bij \"teken van kwaliteit\"?",
-      "o": [
-       "Keurmerk",
-       "Aankoop op afstand",
-       "Consument",
-       "Consumentenrecht"
-      ],
-      "c": 0,
       "d": 2,
-      "u": "«Keurmerk»: een teken dat een product aan bepaalde eisen voldoet.",
+      "u": "Dat een product aan bepaalde eisen voldoet.",
       "uo": [
-       "Klopt, «Keurmerk» past hierbij.",
-       "«Aankoop op afstand» betekent kopen zonder winkel.",
-       "«Consument» betekent de koper en gebruiker.",
-       "«Consumentenrecht» betekent rechten van de koper."
+       "Niet de prijs.",
+       "Niet de maker.",
+       "Niet per se de houdbaarheid.",
+       "Klopt: dat een product aan bepaalde eisen voldoet."
       ],
-      "uh": "Onthoud: «Keurmerk» = teken van kwaliteit."
+      "uh": "Dat een product aan bepaalde eisen voldoet."
      },
      {
-      "v": "Wat betekent «Algemene voorwaarden»?",
+      "v": "Wat is een koopovereenkomst?",
       "o": [
-       "de afspraak tussen een koper en een verkoper",
-       "de regels die bij een koopovereenkomst horen",
-       "de rechten die een koper heeft",
-       "een melding dat een product of dienst niet voldoet"
+       "Een verzekering",
+       "De afspraak tussen koper en verkoper",
+       "Een lening",
+       "Een belasting"
       ],
       "c": 1,
       "d": 1,
-      "u": "«Algemene voorwaarden»: de regels die bij een koopovereenkomst horen.",
+      "u": "De afspraak tussen koper en verkoper.",
       "uo": [
-       "Dat is «Koopovereenkomst».",
-       "Klopt: de kleine lettertjes.",
-       "Dat is «Consumentenrecht».",
-       "Dat is «Klacht»."
+       "Geen verzekering.",
+       "Klopt: de afspraak tussen koper en verkoper.",
+       "Geen lening.",
+       "Geen belasting."
       ],
-      "uh": "Onthoud: «Algemene voorwaarden» = de kleine lettertjes."
+      "uh": "De afspraak tussen koper en verkoper."
      },
      {
-      "v": "Welk begrip hoort bij: \"de afspraak tussen een koper en een verkoper\"?",
+      "v": "Je product is na een week kapot. Wat doe je?",
       "o": [
-       "Algemene voorwaarden",
-       "Aankoop op afstand",
-       "Koopovereenkomst",
-       "Klacht"
+       "Niets, pech gehad",
+       "Er nog een kopen",
+       "Een klacht indienen",
+       "Belasting betalen"
       ],
       "c": 2,
       "d": 3,
-      "u": "«Koopovereenkomst»: de afspraak tussen een koper en een verkoper.",
+      "u": "Een klacht indienen bij de verkoper.",
       "uo": [
-       "«Algemene voorwaarden» betekent de kleine lettertjes.",
-       "«Aankoop op afstand» betekent kopen zonder winkel.",
-       "Klopt, dit is «Koopovereenkomst».",
-       "«Klacht» betekent melding dat iets niet voldoet."
+       "Je hebt rechten.",
+       "Dat helpt niet.",
+       "Klopt: een klacht indienen bij de verkoper.",
+       "Niet relevant."
       ],
-      "uh": "Onthoud: «Koopovereenkomst» = afspraak koper-verkoper."
+      "uh": "Een klacht indienen bij de verkoper."
      },
      {
-      "v": "Welke term hoort bij \"afspraak koper-verkoper\"?",
+      "v": "Wat is bedenktijd?",
       "o": [
-       "Aankoop op afstand",
-       "Klacht",
-       "Bedenktijd",
-       "Koopovereenkomst"
-      ],
-      "c": 3,
-      "d": 2,
-      "u": "«Koopovereenkomst»: de afspraak tussen een koper en een verkoper.",
-      "uo": [
-       "«Aankoop op afstand» betekent kopen zonder winkel.",
-       "«Klacht» betekent melding dat iets niet voldoet.",
-       "«Bedenktijd» betekent periode om te annuleren.",
-       "Klopt, «Koopovereenkomst» past hierbij."
-      ],
-      "uh": "Onthoud: «Koopovereenkomst» = afspraak koper-verkoper."
-     },
-     {
-      "v": "Wat betekent «Koopovereenkomst»?",
-      "o": [
-       "de afspraak tussen een koper en een verkoper",
-       "de regels die bij een koopovereenkomst horen",
-       "een aankoop via internet, telefoon of post",
-       "een melding dat een product of dienst niet voldoet"
+       "Tijd om een aankoop te annuleren",
+       "Tijd om te sparen",
+       "Tijd om te lenen",
+       "Tijd om belasting te betalen"
       ],
       "c": 0,
       "d": 1,
-      "u": "«Koopovereenkomst»: de afspraak tussen een koper en een verkoper.",
+      "u": "De periode om een aankoop te annuleren.",
       "uo": [
-       "Klopt: afspraak koper-verkoper.",
-       "Dat is «Algemene voorwaarden».",
-       "Dat is «Aankoop op afstand».",
-       "Dat is «Klacht»."
+       "Klopt: de periode om een aankoop te annuleren.",
+       "Sparen is iets anders.",
+       "Lenen is iets anders.",
+       "Belasting is iets anders."
       ],
-      "uh": "Onthoud: «Koopovereenkomst» = afspraak koper-verkoper."
+      "uh": "De periode om een aankoop te annuleren."
      },
      {
-      "v": "Welke term hoort bij \"de koper en gebruiker\"?",
+      "v": "Wat zijn algemene voorwaarden?",
       "o": [
-       "Koopovereenkomst",
-       "Consument",
-       "Klacht",
-       "Bedenktijd"
+       "De prijs van een product",
+       "Een soort verzekering",
+       "Een keurmerk",
+       "De regels bij een koop"
+      ],
+      "c": 3,
+      "d": 2,
+      "u": "De regels die bij een koopovereenkomst horen.",
+      "uo": [
+       "Niet de prijs.",
+       "Geen verzekering.",
+       "Geen keurmerk.",
+       "Klopt: de regels die bij een koopovereenkomst horen."
+      ],
+      "uh": "De regels die bij een koopovereenkomst horen."
+     },
+     {
+      "v": "Wat is een consument?",
+      "o": [
+       "Een fabriek",
+       "Iemand die koopt en gebruikt",
+       "Een verkoper",
+       "De overheid"
       ],
       "c": 1,
-      "d": 2,
-      "u": "«Consument»: iemand die producten of diensten koopt en gebruikt.",
+      "d": 1,
+      "u": "Iemand die producten koopt en gebruikt.",
       "uo": [
-       "«Koopovereenkomst» betekent afspraak koper-verkoper.",
-       "Klopt, «Consument» past hierbij.",
-       "«Klacht» betekent melding dat iets niet voldoet.",
-       "«Bedenktijd» betekent periode om te annuleren."
+       "Een fabriek maakt producten.",
+       "Klopt: iemand die producten koopt en gebruikt.",
+       "Een verkoper verkoopt juist.",
+       "De overheid is iets anders."
       ],
-      "uh": "Onthoud: «Consument» = de koper en gebruiker."
+      "uh": "Iemand die producten koopt en gebruikt."
      },
      {
-      "v": "Wat betekent «Aankoop op afstand»?",
+      "v": "Waarvoor kun je bij de Consumentenbond terecht?",
       "o": [
-       "de periode waarin je een aankoop mag annuleren",
-       "het recht om een aankoop terug te sturen",
-       "een aankoop via internet, telefoon of post",
-       "iemand die producten of diensten koopt en gebruikt"
+       "Voor een lening",
+       "Voor belasting",
+       "Voor advies over producten",
+       "Voor een baan"
       ],
       "c": 2,
-      "d": 1,
-      "u": "«Aankoop op afstand»: een aankoop via internet, telefoon of post.",
+      "d": 2,
+      "u": "Voor advies en tests over producten.",
       "uo": [
-       "Dat is «Bedenktijd».",
-       "Dat is «Retourrecht».",
-       "Klopt: kopen zonder winkel.",
-       "Dat is «Consument»."
+       "Dat doet een bank.",
+       "Dat doet de Belastingdienst.",
+       "Klopt: voor advies en tests over producten.",
+       "Dat is iets anders."
       ],
-      "uh": "Onthoud: «Aankoop op afstand» = kopen zonder winkel."
+      "uh": "Voor advies en tests over producten."
      },
      {
-      "v": "Wat betekent «Consument»?",
+      "v": "Wat is een aankoop op afstand?",
       "o": [
-       "de afspraak tussen een koper en een verkoper",
-       "een melding dat een product of dienst niet voldoet",
-       "de periode waarin je een aankoop mag annuleren",
-       "iemand die producten of diensten koopt en gebruikt"
-      ],
-      "c": 3,
-      "d": 1,
-      "u": "«Consument»: iemand die producten of diensten koopt en gebruikt.",
-      "uo": [
-       "Dat is «Koopovereenkomst».",
-       "Dat is «Klacht».",
-       "Dat is «Bedenktijd».",
-       "Klopt: de koper en gebruiker."
-      ],
-      "uh": "Onthoud: «Consument» = de koper en gebruiker."
-     },
-     {
-      "v": "Welk begrip hoort bij: \"het recht om een aankoop terug te sturen\"?",
-      "o": [
-       "Retourrecht",
-       "Bedenktijd",
-       "Garantie",
-       "Klacht"
+       "Kopen via internet of telefoon",
+       "Kopen in de winkel",
+       "Ruilen met een vriend",
+       "Iets huren"
       ],
       "c": 0,
-      "d": 3,
-      "u": "«Retourrecht»: het recht om een aankoop terug te sturen.",
+      "d": 1,
+      "u": "Kopen zonder in de winkel te zijn.",
       "uo": [
-       "Klopt, dit is «Retourrecht».",
-       "«Bedenktijd» betekent periode om te annuleren.",
-       "«Garantie» betekent herstel bij een gebrek.",
-       "«Klacht» betekent melding dat iets niet voldoet."
+       "Klopt: kopen zonder in de winkel te zijn.",
+       "Dat is juist in de winkel.",
+       "Ruilen is iets anders.",
+       "Huren is iets anders."
       ],
-      "uh": "Onthoud: «Retourrecht» = aankoop terugsturen."
+      "uh": "Kopen zonder in de winkel te zijn."
      },
      {
-      "v": "Welke term hoort bij \"komt op voor kopers\"?",
+      "v": "Waarom zijn consumentenrechten belangrijk?",
       "o": [
-       "Koopovereenkomst",
-       "Consumentenorganisatie",
-       "Bedenktijd",
-       "Algemene voorwaarden"
+       "Ze verhogen de prijs",
+       "Ze innen belasting",
+       "Ze maken producten",
+       "Ze beschermen de koper"
       ],
-      "c": 1,
-      "d": 2,
-      "u": "«Consumentenorganisatie»: een organisatie die opkomt voor kopers.",
+      "c": 3,
+      "d": 3,
+      "u": "Ze beschermen de koper.",
       "uo": [
-       "«Koopovereenkomst» betekent afspraak koper-verkoper.",
-       "Klopt, «Consumentenorganisatie» past hierbij.",
-       "«Bedenktijd» betekent periode om te annuleren.",
-       "«Algemene voorwaarden» betekent de kleine lettertjes."
+       "Ze gaan niet over de prijs.",
+       "Niet over belasting.",
+       "Ze maken geen producten.",
+       "Klopt: ze beschermen de koper."
       ],
-      "uh": "Onthoud: «Consumentenorganisatie» = komt op voor kopers."
+      "uh": "Ze beschermen de koper."
      }
     ],
     "begrippen": [
@@ -9004,498 +8510,232 @@ var VAKKEN_VMBO = [
     "nBeg": 0,
     "sv": [
      {
-      "v": "Welk begrip hoort bij: \"je loon vóór aftrek van belasting en premies\"?",
+      "v": "Wat is je brutoloon?",
       "o": [
-       "Brutoloon",
-       "Nettoloon",
-       "Vakbond",
-       "Werkgever"
-      ],
-      "c": 0,
-      "d": 3,
-      "u": "«Brutoloon»: je loon vóór aftrek van belasting en premies.",
-      "uo": [
-       "Klopt, dit is «Brutoloon».",
-       "«Nettoloon» betekent loon na aftrek.",
-       "«Vakbond» betekent komt op voor werknemers.",
-       "«Werkgever» betekent neemt mensen aan."
-      ],
-      "uh": "Onthoud: «Brutoloon» = loon vóór aftrek."
-     },
-     {
-      "v": "Welke term hoort bij \"loon vóór aftrek\"?",
-      "o": [
-       "Vakbond",
-       "Brutoloon",
-       "Werkgever",
-       "Cao"
-      ],
-      "c": 1,
-      "d": 2,
-      "u": "«Brutoloon»: je loon vóór aftrek van belasting en premies.",
-      "uo": [
-       "«Vakbond» betekent komt op voor werknemers.",
-       "Klopt, «Brutoloon» past hierbij.",
-       "«Werkgever» betekent neemt mensen aan.",
-       "«Cao» betekent afspraken over het werk."
-      ],
-      "uh": "Onthoud: «Brutoloon» = loon vóór aftrek."
-     },
-     {
-      "v": "Wat betekent «Brutoloon»?",
-      "o": [
-       "je loon na aftrek van belasting en premies",
-       "een organisatie die opkomt voor werknemers",
-       "je loon vóór aftrek van belasting en premies",
-       "iemand of een bedrijf dat mensen in dienst neemt"
-      ],
-      "c": 2,
-      "d": 1,
-      "u": "«Brutoloon»: je loon vóór aftrek van belasting en premies.",
-      "uo": [
-       "Dat is «Nettoloon».",
-       "Dat is «Vakbond».",
-       "Klopt: loon vóór aftrek.",
-       "Dat is «Werkgever»."
-      ],
-      "uh": "Onthoud: «Brutoloon» = loon vóór aftrek."
-     },
-     {
-      "v": "Welk begrip hoort bij: \"je loon na aftrek van belasting en premies\"?",
-      "o": [
-       "Brutoloon",
-       "Vakbond",
-       "Werkgever",
-       "Nettoloon"
-      ],
-      "c": 3,
-      "d": 3,
-      "u": "«Nettoloon»: je loon na aftrek van belasting en premies.",
-      "uo": [
-       "«Brutoloon» betekent loon vóór aftrek.",
-       "«Vakbond» betekent komt op voor werknemers.",
-       "«Werkgever» betekent neemt mensen aan.",
-       "Klopt, dit is «Nettoloon»."
-      ],
-      "uh": "Onthoud: «Nettoloon» = loon na aftrek."
-     },
-     {
-      "v": "Welke term hoort bij \"loon na aftrek\"?",
-      "o": [
-       "Nettoloon",
-       "Vakbond",
-       "Werkgever",
-       "Cao"
-      ],
-      "c": 0,
-      "d": 2,
-      "u": "«Nettoloon»: je loon na aftrek van belasting en premies.",
-      "uo": [
-       "Klopt, «Nettoloon» past hierbij.",
-       "«Vakbond» betekent komt op voor werknemers.",
-       "«Werkgever» betekent neemt mensen aan.",
-       "«Cao» betekent afspraken over het werk."
-      ],
-      "uh": "Onthoud: «Nettoloon» = loon na aftrek."
-     },
-     {
-      "v": "Wat betekent «Nettoloon»?",
-      "o": [
-       "je loon vóór aftrek van belasting en premies",
-       "je loon na aftrek van belasting en premies",
-       "een organisatie die opkomt voor werknemers",
-       "iemand of een bedrijf dat mensen in dienst neemt"
+       "Je loon na aftrek",
+       "Je loon vóór aftrek",
+       "Je spaargeld",
+       "Je uitkering"
       ],
       "c": 1,
       "d": 1,
-      "u": "«Nettoloon»: je loon na aftrek van belasting en premies.",
+      "u": "Je loon vóór aftrek van belasting en premies.",
       "uo": [
-       "Dat is «Brutoloon».",
-       "Klopt: loon na aftrek.",
-       "Dat is «Vakbond».",
-       "Dat is «Werkgever»."
+       "Dat is nettoloon.",
+       "Klopt: je loon vóór aftrek van belasting en premies.",
+       "Sparen is iets anders.",
+       "Een uitkering is iets anders."
       ],
-      "uh": "Onthoud: «Nettoloon» = loon na aftrek."
+      "uh": "Je loon vóór aftrek van belasting en premies."
      },
      {
-      "v": "Welk begrip hoort bij: \"de belasting en premies die van je loon worden ingehouden\"?",
+      "v": "Wat blijft over na aftrek van belasting en premies?",
       "o": [
-       "Brutoloon",
-       "Werknemer",
-       "Loonheffing",
-       "Arbeidsproductiviteit"
-      ],
-      "c": 2,
-      "d": 3,
-      "u": "«Loonheffing»: de belasting en premies die van je loon worden ingehouden.",
-      "uo": [
-       "«Brutoloon» betekent loon vóór aftrek.",
-       "«Werknemer» betekent werkt in loondienst.",
-       "Klopt, dit is «Loonheffing».",
-       "«Arbeidsproductiviteit» betekent productie per werknemer."
-      ],
-      "uh": "Onthoud: «Loonheffing» = inhoudingen op je loon."
-     },
-     {
-      "v": "Welke term hoort bij \"inhoudingen op je loon\"?",
-      "o": [
-       "Werknemer",
-       "Arbeidsproductiviteit",
-       "Nettoloon",
-       "Loonheffing"
-      ],
-      "c": 3,
-      "d": 2,
-      "u": "«Loonheffing»: de belasting en premies die van je loon worden ingehouden.",
-      "uo": [
-       "«Werknemer» betekent werkt in loondienst.",
-       "«Arbeidsproductiviteit» betekent productie per werknemer.",
-       "«Nettoloon» betekent loon na aftrek.",
-       "Klopt, «Loonheffing» past hierbij."
-      ],
-      "uh": "Onthoud: «Loonheffing» = inhoudingen op je loon."
-     },
-     {
-      "v": "Wat betekent «Arbeidsverdeling»?",
-      "o": [
-       "het opsplitsen van werk in aparte taken",
-       "je toeleggen op één taak of vak",
-       "een organisatie die opkomt voor werknemers",
-       "afspraken over arbeidsvoorwaarden voor een hele bedrijfstak"
-      ],
-      "c": 0,
-      "d": 1,
-      "u": "«Arbeidsverdeling»: het opsplitsen van werk in aparte taken.",
-      "uo": [
-       "Klopt: werk in taken opdelen.",
-       "Dat is «Specialisatie».",
-       "Dat is «Vakbond».",
-       "Dat is «Cao»."
-      ],
-      "uh": "Onthoud: «Arbeidsverdeling» = werk in taken opdelen."
-     },
-     {
-      "v": "Welk begrip hoort bij: \"je toeleggen op één taak of vak\"?",
-      "o": [
-       "Arbeidsverdeling",
-       "Specialisatie",
-       "Cao",
-       "Productiefactor"
-      ],
-      "c": 1,
-      "d": 3,
-      "u": "«Specialisatie»: je toeleggen op één taak of vak.",
-      "uo": [
-       "«Arbeidsverdeling» betekent werk in taken opdelen.",
-       "Klopt, dit is «Specialisatie».",
-       "«Cao» betekent afspraken over het werk.",
-       "«Productiefactor» betekent middel om te produceren."
-      ],
-      "uh": "Onthoud: «Specialisatie» = je op één taak richten."
-     },
-     {
-      "v": "Welke term hoort bij \"werk in taken opdelen\"?",
-      "o": [
-       "Vakbond",
-       "Cao",
-       "Arbeidsverdeling",
-       "Arbeidsproductiviteit"
+       "Het brutoloon",
+       "De loonheffing",
+       "Het nettoloon",
+       "De cao"
       ],
       "c": 2,
       "d": 2,
-      "u": "«Arbeidsverdeling»: het opsplitsen van werk in aparte taken.",
+      "u": "Het nettoloon.",
       "uo": [
-       "«Vakbond» betekent komt op voor werknemers.",
-       "«Cao» betekent afspraken over het werk.",
-       "Klopt, «Arbeidsverdeling» past hierbij.",
-       "«Arbeidsproductiviteit» betekent productie per werknemer."
+       "Dat is juist vóór aftrek.",
+       "Dat wordt juist ingehouden.",
+       "Klopt: het nettoloon.",
+       "Een cao is een afspraak."
       ],
-      "uh": "Onthoud: «Arbeidsverdeling» = werk in taken opdelen."
+      "uh": "Het nettoloon."
      },
      {
-      "v": "Wat betekent «Specialisatie»?",
+      "v": "Wat is loonheffing?",
       "o": [
-       "het opsplitsen van werk in aparte taken",
-       "afspraken over arbeidsvoorwaarden voor een hele bedrijfstak",
-       "een middel om mee te produceren, zoals arbeid of kapitaal",
-       "je toeleggen op één taak of vak"
-      ],
-      "c": 3,
-      "d": 1,
-      "u": "«Specialisatie»: je toeleggen op één taak of vak.",
-      "uo": [
-       "Dat is «Arbeidsverdeling».",
-       "Dat is «Cao».",
-       "Dat is «Productiefactor».",
-       "Klopt: je op één taak richten."
-      ],
-      "uh": "Onthoud: «Specialisatie» = je op één taak richten."
-     },
-     {
-      "v": "Welk begrip hoort bij: \"iemand die in loondienst werkt\"?",
-      "o": [
-       "Werknemer",
-       "Werkgever",
-       "Vakbond",
-       "Arbeidsproductiviteit"
-      ],
-      "c": 0,
-      "d": 3,
-      "u": "«Werknemer»: iemand die in loondienst werkt.",
-      "uo": [
-       "Klopt, dit is «Werknemer».",
-       "«Werkgever» betekent neemt mensen aan.",
-       "«Vakbond» betekent komt op voor werknemers.",
-       "«Arbeidsproductiviteit» betekent productie per werknemer."
-      ],
-      "uh": "Onthoud: «Werknemer» = werkt in loondienst."
-     },
-     {
-      "v": "Welke term hoort bij \"je op één taak richten\"?",
-      "o": [
-       "Cao",
-       "Specialisatie",
-       "Productiefactor",
-       "Brutoloon"
-      ],
-      "c": 1,
-      "d": 2,
-      "u": "«Specialisatie»: je toeleggen op één taak of vak.",
-      "uo": [
-       "«Cao» betekent afspraken over het werk.",
-       "Klopt, «Specialisatie» past hierbij.",
-       "«Productiefactor» betekent middel om te produceren.",
-       "«Brutoloon» betekent loon vóór aftrek."
-      ],
-      "uh": "Onthoud: «Specialisatie» = je op één taak richten."
-     },
-     {
-      "v": "Wat betekent «Arbeidsproductiviteit»?",
-      "o": [
-       "het opsplitsen van werk in aparte taken",
-       "het wettelijk laagste loon dat betaald mag worden",
-       "de productie per werknemer per tijd",
-       "afspraken over arbeidsvoorwaarden voor een hele bedrijfstak"
-      ],
-      "c": 2,
-      "d": 1,
-      "u": "«Arbeidsproductiviteit»: de productie per werknemer per tijd.",
-      "uo": [
-       "Dat is «Arbeidsverdeling».",
-       "Dat is «Minimumloon».",
-       "Klopt: productie per werknemer.",
-       "Dat is «Cao»."
-      ],
-      "uh": "Onthoud: «Arbeidsproductiviteit» = productie per werknemer."
-     },
-     {
-      "v": "Welk begrip hoort bij: \"iemand of een bedrijf dat mensen in dienst neemt\"?",
-      "o": [
-       "Werknemer",
-       "Vakbond",
-       "Arbeidsproductiviteit",
-       "Werkgever"
-      ],
-      "c": 3,
-      "d": 3,
-      "u": "«Werkgever»: iemand of een bedrijf dat mensen in dienst neemt.",
-      "uo": [
-       "«Werknemer» betekent werkt in loondienst.",
-       "«Vakbond» betekent komt op voor werknemers.",
-       "«Arbeidsproductiviteit» betekent productie per werknemer.",
-       "Klopt, dit is «Werkgever»."
-      ],
-      "uh": "Onthoud: «Werkgever» = neemt mensen aan."
-     },
-     {
-      "v": "Welke term hoort bij \"werkt in loondienst\"?",
-      "o": [
-       "Werknemer",
-       "Vakbond",
-       "Arbeidsproductiviteit",
-       "Cao"
-      ],
-      "c": 0,
-      "d": 2,
-      "u": "«Werknemer»: iemand die in loondienst werkt.",
-      "uo": [
-       "Klopt, «Werknemer» past hierbij.",
-       "«Vakbond» betekent komt op voor werknemers.",
-       "«Arbeidsproductiviteit» betekent productie per werknemer.",
-       "«Cao» betekent afspraken over het werk."
-      ],
-      "uh": "Onthoud: «Werknemer» = werkt in loondienst."
-     },
-     {
-      "v": "Wat betekent «Werknemer»?",
-      "o": [
-       "iemand of een bedrijf dat mensen in dienst neemt",
-       "iemand die in loondienst werkt",
-       "een organisatie die opkomt voor werknemers",
-       "de productie per werknemer per tijd"
-      ],
-      "c": 1,
-      "d": 1,
-      "u": "«Werknemer»: iemand die in loondienst werkt.",
-      "uo": [
-       "Dat is «Werkgever».",
-       "Klopt: werkt in loondienst.",
-       "Dat is «Vakbond».",
-       "Dat is «Arbeidsproductiviteit»."
-      ],
-      "uh": "Onthoud: «Werknemer» = werkt in loondienst."
-     },
-     {
-      "v": "Welk begrip hoort bij: \"afspraken over arbeidsvoorwaarden voor een hele bedrijfstak\"?",
-      "o": [
-       "Minimumloon",
-       "Vakbond",
-       "Cao",
-       "Productiefactor"
-      ],
-      "c": 2,
-      "d": 3,
-      "u": "«Cao»: afspraken over arbeidsvoorwaarden voor een hele bedrijfstak.",
-      "uo": [
-       "«Minimumloon» betekent laagste toegestane loon.",
-       "«Vakbond» betekent komt op voor werknemers.",
-       "Klopt, dit is «Cao».",
-       "«Productiefactor» betekent middel om te produceren."
-      ],
-      "uh": "Onthoud: «Cao» = afspraken over het werk."
-     },
-     {
-      "v": "Welke term hoort bij \"neemt mensen aan\"?",
-      "o": [
-       "Vakbond",
-       "Arbeidsproductiviteit",
-       "Cao",
-       "Werkgever"
-      ],
-      "c": 3,
-      "d": 2,
-      "u": "«Werkgever»: iemand of een bedrijf dat mensen in dienst neemt.",
-      "uo": [
-       "«Vakbond» betekent komt op voor werknemers.",
-       "«Arbeidsproductiviteit» betekent productie per werknemer.",
-       "«Cao» betekent afspraken over het werk.",
-       "Klopt, «Werkgever» past hierbij."
-      ],
-      "uh": "Onthoud: «Werkgever» = neemt mensen aan."
-     },
-     {
-      "v": "Wat betekent «Minimumloon»?",
-      "o": [
-       "het wettelijk laagste loon dat betaald mag worden",
-       "afspraken over arbeidsvoorwaarden voor een hele bedrijfstak",
-       "je toeleggen op één taak of vak",
-       "het opsplitsen van werk in aparte taken"
+       "Belasting en premies op je loon",
+       "Je spaarrente",
+       "Je vakantiegeld",
+       "Je bonus"
       ],
       "c": 0,
       "d": 1,
-      "u": "«Minimumloon»: het wettelijk laagste loon dat betaald mag worden.",
+      "u": "Belasting en premies die worden ingehouden.",
       "uo": [
-       "Klopt: laagste toegestane loon.",
-       "Dat is «Cao».",
-       "Dat is «Specialisatie».",
-       "Dat is «Arbeidsverdeling»."
+       "Klopt: belasting en premies die worden ingehouden.",
+       "Rente is iets anders.",
+       "Vakantiegeld is iets anders.",
+       "Een bonus is iets anders."
       ],
-      "uh": "Onthoud: «Minimumloon» = laagste toegestane loon."
+      "uh": "Belasting en premies die worden ingehouden."
      },
      {
-      "v": "Welk begrip hoort bij: \"het wettelijk laagste loon dat betaald mag worden\"?",
+      "v": "Wat is arbeidsverdeling?",
       "o": [
-       "Cao",
-       "Minimumloon",
-       "Specialisatie",
-       "Arbeidsverdeling"
+       "Iedereen doet alles",
+       "Niemand werkt",
+       "Alleen de baas werkt",
+       "Werk in aparte taken opdelen"
+      ],
+      "c": 3,
+      "d": 3,
+      "u": "Het werk in aparte taken opsplitsen.",
+      "uo": [
+       "Dat is juist het tegenovergestelde.",
+       "Onjuist.",
+       "Onjuist.",
+       "Klopt: het werk in aparte taken opsplitsen."
+      ],
+      "uh": "Het werk in aparte taken opsplitsen."
+     },
+     {
+      "v": "Wat gebeurt er door specialisatie?",
+      "o": [
+       "Mensen worden luier",
+       "Werk gaat sneller en beter",
+       "Er is minder werk",
+       "De lonen dalen mee"
       ],
       "c": 1,
-      "d": 3,
-      "u": "«Minimumloon»: het wettelijk laagste loon dat betaald mag worden.",
+      "d": 2,
+      "u": "Je op één taak richten laat het beter gaan.",
       "uo": [
-       "«Cao» betekent afspraken over het werk.",
-       "Klopt, dit is «Minimumloon».",
-       "«Specialisatie» betekent je op één taak richten.",
-       "«Arbeidsverdeling» betekent werk in taken opdelen."
+       "Niet luier.",
+       "Klopt: je op één taak richten laat het beter gaan.",
+       "Onjuist.",
+       "Onjuist."
       ],
-      "uh": "Onthoud: «Minimumloon» = laagste toegestane loon."
+      "uh": "Je op één taak richten laat het beter gaan."
      },
      {
-      "v": "Welke term hoort bij \"afspraken over het werk\"?",
+      "v": "Wat is arbeidsproductiviteit?",
       "o": [
-       "Productiefactor",
-       "Werkgever",
-       "Cao",
-       "Specialisatie"
+       "Het aantal werknemers",
+       "Het totale loon",
+       "De productie per werknemer",
+       "Het aantal machines"
       ],
       "c": 2,
       "d": 2,
-      "u": "«Cao»: afspraken over arbeidsvoorwaarden voor een hele bedrijfstak.",
+      "u": "De productie per werknemer per tijd.",
       "uo": [
-       "«Productiefactor» betekent middel om te produceren.",
-       "«Werkgever» betekent neemt mensen aan.",
-       "Klopt, «Cao» past hierbij.",
-       "«Specialisatie» betekent je op één taak richten."
+       "Niet het aantal mensen.",
+       "Niet het loon.",
+       "Klopt: de productie per werknemer per tijd.",
+       "Niet het aantal machines."
       ],
-      "uh": "Onthoud: «Cao» = afspraken over het werk."
+      "uh": "De productie per werknemer per tijd."
      },
      {
-      "v": "Wat betekent «Vakbond»?",
+      "v": "Wie neemt mensen in dienst?",
       "o": [
-       "iemand of een bedrijf dat mensen in dienst neemt",
-       "de productie per werknemer per tijd",
-       "het opsplitsen van werk in aparte taken",
-       "een organisatie die opkomt voor werknemers"
-      ],
-      "c": 3,
-      "d": 1,
-      "u": "«Vakbond»: een organisatie die opkomt voor werknemers.",
-      "uo": [
-       "Dat is «Werkgever».",
-       "Dat is «Arbeidsproductiviteit».",
-       "Dat is «Arbeidsverdeling».",
-       "Klopt: komt op voor werknemers."
-      ],
-      "uh": "Onthoud: «Vakbond» = komt op voor werknemers."
-     },
-     {
-      "v": "Welk begrip hoort bij: \"een organisatie die opkomt voor werknemers\"?",
-      "o": [
-       "Vakbond",
-       "Werkgever",
-       "Arbeidsproductiviteit",
-       "Arbeidsverdeling"
+       "De werkgever",
+       "De werknemer",
+       "De vakbond",
+       "De klant"
       ],
       "c": 0,
-      "d": 3,
-      "u": "«Vakbond»: een organisatie die opkomt voor werknemers.",
+      "d": 1,
+      "u": "De werkgever neemt mensen aan.",
       "uo": [
-       "Klopt, dit is «Vakbond».",
-       "«Werkgever» betekent neemt mensen aan.",
-       "«Arbeidsproductiviteit» betekent productie per werknemer.",
-       "«Arbeidsverdeling» betekent werk in taken opdelen."
+       "Klopt: de werkgever neemt mensen aan.",
+       "De werknemer werkt in dienst.",
+       "De vakbond komt op voor werknemers.",
+       "De klant koopt."
       ],
-      "uh": "Onthoud: «Vakbond» = komt op voor werknemers."
+      "uh": "De werkgever neemt mensen aan."
      },
      {
-      "v": "Welke term hoort bij \"laagste toegestane loon\"?",
+      "v": "Wat staat er in een cao?",
       "o": [
-       "Specialisatie",
-       "Minimumloon",
-       "Arbeidsverdeling",
-       "Brutoloon"
+       "De prijs van producten",
+       "De belastingtarieven",
+       "De koers van de euro",
+       "Afspraken over arbeidsvoorwaarden"
+      ],
+      "c": 3,
+      "d": 2,
+      "u": "Afspraken over het werk voor een bedrijfstak.",
+      "uo": [
+       "Niet over productprijzen.",
+       "Niet over belasting.",
+       "Niet over de euro.",
+       "Klopt: afspraken over het werk voor een bedrijfstak."
+      ],
+      "uh": "Afspraken over het werk voor een bedrijfstak."
+     },
+     {
+      "v": "Wat is het minimumloon?",
+      "o": [
+       "Het hoogste loon",
+       "Het wettelijk laagste loon",
+       "Het gemiddelde loon",
+       "Het loon van de baas"
       ],
       "c": 1,
-      "d": 2,
-      "u": "«Minimumloon»: het wettelijk laagste loon dat betaald mag worden.",
+      "d": 1,
+      "u": "Het wettelijk laagste toegestane loon.",
       "uo": [
-       "«Specialisatie» betekent je op één taak richten.",
-       "Klopt, «Minimumloon» past hierbij.",
-       "«Arbeidsverdeling» betekent werk in taken opdelen.",
-       "«Brutoloon» betekent loon vóór aftrek."
+       "Juist niet het hoogste.",
+       "Klopt: het wettelijk laagste toegestane loon.",
+       "Niet het gemiddelde.",
+       "Niet specifiek de baas."
       ],
-      "uh": "Onthoud: «Minimumloon» = laagste toegestane loon."
+      "uh": "Het wettelijk laagste toegestane loon."
+     },
+     {
+      "v": "Wat doet een vakbond?",
+      "o": [
+       "Producten verkopen",
+       "Belasting innen",
+       "Opkomen voor werknemers",
+       "Geld uitlenen"
+      ],
+      "c": 2,
+      "d": 2,
+      "u": "De vakbond komt op voor werknemers.",
+      "uo": [
+       "Nee, dat doet een winkel.",
+       "Dat doet de Belastingdienst.",
+       "Klopt: de vakbond komt op voor werknemers.",
+       "Dat doet een bank."
+      ],
+      "uh": "De vakbond komt op voor werknemers."
+     },
+     {
+      "v": "Wat is een werknemer?",
+      "o": [
+       "Iemand die in loondienst werkt",
+       "Iemand die personeel aanneemt",
+       "Een klant",
+       "Een fabriek"
+      ],
+      "c": 0,
+      "d": 1,
+      "u": "Iemand die in loondienst werkt.",
+      "uo": [
+       "Klopt: iemand die in loondienst werkt.",
+       "Dat is de werkgever.",
+       "Een klant koopt.",
+       "Een fabriek maakt producten."
+      ],
+      "uh": "Iemand die in loondienst werkt."
+     },
+     {
+      "v": "Wat is een productiefactor?",
+      "o": [
+       "Een soort belasting",
+       "Een verzekering",
+       "Een klant",
+       "Een middel om te produceren"
+      ],
+      "c": 3,
+      "d": 3,
+      "u": "Een middel om mee te produceren, zoals arbeid.",
+      "uo": [
+       "Geen belasting.",
+       "Geen verzekering.",
+       "Geen klant.",
+       "Klopt: een middel om mee te produceren, zoals arbeid."
+      ],
+      "uh": "Een middel om mee te produceren, zoals arbeid."
      }
     ],
     "begrippen": [
@@ -9565,498 +8805,232 @@ var VAKKEN_VMBO = [
     "nBeg": 0,
     "sv": [
      {
-      "v": "Welk begrip hoort bij: \"de totale verkoopopbrengst: prijs maal aantal\"?",
+      "v": "Wat is de omzet?",
       "o": [
-       "Omzet",
-       "Winst",
-       "Brutowinst",
-       "Break-even"
-      ],
-      "c": 0,
-      "d": 3,
-      "u": "«Omzet»: de totale verkoopopbrengst: prijs maal aantal.",
-      "uo": [
-       "Klopt, dit is «Omzet».",
-       "«Winst» betekent opbrengst min kosten.",
-       "«Brutowinst» betekent omzet min inkoopwaarde.",
-       "«Break-even» betekent omzet is gelijk aan kosten."
-      ],
-      "uh": "Onthoud: «Omzet» = prijs maal aantal."
-     },
-     {
-      "v": "Welke term hoort bij \"prijs maal aantal\"?",
-      "o": [
-       "Break-even",
-       "Omzet",
-       "Winstmarge",
-       "Variabele kosten"
-      ],
-      "c": 1,
-      "d": 2,
-      "u": "«Omzet»: de totale verkoopopbrengst: prijs maal aantal.",
-      "uo": [
-       "«Break-even» betekent omzet is gelijk aan kosten.",
-       "Klopt, «Omzet» past hierbij.",
-       "«Winstmarge» betekent verkoop min inkoop.",
-       "«Variabele kosten» betekent bewegen mee."
-      ],
-      "uh": "Onthoud: «Omzet» = prijs maal aantal."
-     },
-     {
-      "v": "Wat betekent «Omzet»?",
-      "o": [
-       "het bedrag dat overblijft na aftrek van de kosten",
-       "de omzet min de inkoopwaarde van de verkochte producten",
-       "de totale verkoopopbrengst: prijs maal aantal",
-       "het punt waarop de omzet precies gelijk is aan de kosten"
-      ],
-      "c": 2,
-      "d": 1,
-      "u": "«Omzet»: de totale verkoopopbrengst: prijs maal aantal.",
-      "uo": [
-       "Dat is «Winst».",
-       "Dat is «Brutowinst».",
-       "Klopt: prijs maal aantal.",
-       "Dat is «Break-even»."
-      ],
-      "uh": "Onthoud: «Omzet» = prijs maal aantal."
-     },
-     {
-      "v": "Welk begrip hoort bij: \"de prijs waarvoor je een product verkoopt\"?",
-      "o": [
-       "Inkoopprijs",
-       "Variabele kosten",
-       "Constante kosten",
-       "Verkoopprijs"
-      ],
-      "c": 3,
-      "d": 3,
-      "u": "«Verkoopprijs»: de prijs waarvoor je een product verkoopt.",
-      "uo": [
-       "«Inkoopprijs» betekent prijs bij inkoop.",
-       "«Variabele kosten» betekent bewegen mee.",
-       "«Constante kosten» betekent blijven gelijk.",
-       "Klopt, dit is «Verkoopprijs»."
-      ],
-      "uh": "Onthoud: «Verkoopprijs» = prijs bij verkoop."
-     },
-     {
-      "v": "Welke term hoort bij \"prijs bij verkoop\"?",
-      "o": [
-       "Verkoopprijs",
-       "Variabele kosten",
-       "Constante kosten",
-       "Omzet"
-      ],
-      "c": 0,
-      "d": 2,
-      "u": "«Verkoopprijs»: de prijs waarvoor je een product verkoopt.",
-      "uo": [
-       "Klopt, «Verkoopprijs» past hierbij.",
-       "«Variabele kosten» betekent bewegen mee.",
-       "«Constante kosten» betekent blijven gelijk.",
-       "«Omzet» betekent prijs maal aantal."
-      ],
-      "uh": "Onthoud: «Verkoopprijs» = prijs bij verkoop."
-     },
-     {
-      "v": "Wat betekent «Verkoopprijs»?",
-      "o": [
-       "de prijs die je voor een product betaalt",
-       "de prijs waarvoor je een product verkoopt",
-       "kosten die meebewegen met de productie",
-       "kosten die niet veranderen met de productie"
+       "De winst",
+       "Prijs maal aantal verkocht",
+       "De kosten",
+       "De belasting"
       ],
       "c": 1,
       "d": 1,
-      "u": "«Verkoopprijs»: de prijs waarvoor je een product verkoopt.",
+      "u": "De totale verkoopopbrengst, prijs maal aantal.",
       "uo": [
-       "Dat is «Inkoopprijs».",
-       "Klopt: prijs bij verkoop.",
-       "Dat is «Variabele kosten».",
-       "Dat is «Constante kosten»."
+       "Winst is omzet min kosten.",
+       "Klopt: de totale verkoopopbrengst, prijs maal aantal.",
+       "Kosten zijn iets anders.",
+       "Belasting is iets anders."
       ],
-      "uh": "Onthoud: «Verkoopprijs» = prijs bij verkoop."
+      "uh": "De totale verkoopopbrengst, prijs maal aantal."
      },
      {
-      "v": "Welk begrip hoort bij: \"de prijs die je voor een product betaalt\"?",
+      "v": "Een winkel heeft € 5.000 omzet en € 3.500 kosten. Hoeveel winst?",
       "o": [
-       "Verkoopprijs",
-       "Constante kosten",
-       "Inkoopprijs",
-       "Kosten"
+       "€ 8.500",
+       "€ 5.000",
+       "€ 1.500",
+       "€ 3.500"
       ],
       "c": 2,
       "d": 3,
-      "u": "«Inkoopprijs»: de prijs die je voor een product betaalt.",
+      "u": "5.000 − 3.500 = € 1.500.",
       "uo": [
-       "«Verkoopprijs» betekent prijs bij verkoop.",
-       "«Constante kosten» betekent blijven gelijk.",
-       "Klopt, dit is «Inkoopprijs».",
-       "«Kosten» betekent uitgaven om te produceren."
+       "Je moet aftrekken, niet optellen.",
+       "Dat is de omzet.",
+       "Klopt: 5.000 − 3.500 = € 1.500.",
+       "Dat zijn de kosten."
       ],
-      "uh": "Onthoud: «Inkoopprijs» = prijs bij inkoop."
+      "uh": "5.000 − 3.500 = € 1.500."
      },
      {
-      "v": "Welke term hoort bij \"prijs bij inkoop\"?",
+      "v": "Wat zijn constante kosten?",
       "o": [
-       "Constante kosten",
-       "Kosten",
-       "Omzet",
-       "Inkoopprijs"
-      ],
-      "c": 3,
-      "d": 2,
-      "u": "«Inkoopprijs»: de prijs die je voor een product betaalt.",
-      "uo": [
-       "«Constante kosten» betekent blijven gelijk.",
-       "«Kosten» betekent uitgaven om te produceren.",
-       "«Omzet» betekent prijs maal aantal.",
-       "Klopt, «Inkoopprijs» past hierbij."
-      ],
-      "uh": "Onthoud: «Inkoopprijs» = prijs bij inkoop."
-     },
-     {
-      "v": "Wat betekent «Inkoopprijs»?",
-      "o": [
-       "de prijs die je voor een product betaalt",
-       "de prijs waarvoor je een product verkoopt",
-       "kosten die niet veranderen met de productie",
-       "alles wat je uitgeeft om te produceren"
+       "Kosten die gelijk blijven",
+       "Kosten die meebewegen",
+       "De totale omzet",
+       "De winst"
       ],
       "c": 0,
       "d": 1,
-      "u": "«Inkoopprijs»: de prijs die je voor een product betaalt.",
+      "u": "Ze veranderen niet met de productie.",
       "uo": [
-       "Klopt: prijs bij inkoop.",
-       "Dat is «Verkoopprijs».",
-       "Dat is «Constante kosten».",
-       "Dat is «Kosten»."
+       "Klopt: ze veranderen niet met de productie.",
+       "Dat zijn variabele kosten.",
+       "Omzet is iets anders.",
+       "Winst is iets anders."
       ],
-      "uh": "Onthoud: «Inkoopprijs» = prijs bij inkoop."
+      "uh": "Ze veranderen niet met de productie."
      },
      {
-      "v": "Welk begrip hoort bij: \"belasting die je over de verkoopprijs betaalt\"?",
+      "v": "Wat zijn variabele kosten?",
       "o": [
-       "Winst",
-       "Btw",
-       "Variabele kosten",
-       "Break-even"
-      ],
-      "c": 1,
-      "d": 3,
-      "u": "«Btw»: belasting die je over de verkoopprijs betaalt.",
-      "uo": [
-       "«Winst» betekent opbrengst min kosten.",
-       "Klopt, dit is «Btw».",
-       "«Variabele kosten» betekent bewegen mee.",
-       "«Break-even» betekent omzet is gelijk aan kosten."
-      ],
-      "uh": "Onthoud: «Btw» = belasting op de prijs."
-     },
-     {
-      "v": "Welke term hoort bij \"belasting op de prijs\"?",
-      "o": [
-       "Variabele kosten",
-       "Break-even",
-       "Btw",
-       "Winstmarge"
-      ],
-      "c": 2,
-      "d": 2,
-      "u": "«Btw»: belasting die je over de verkoopprijs betaalt.",
-      "uo": [
-       "«Variabele kosten» betekent bewegen mee.",
-       "«Break-even» betekent omzet is gelijk aan kosten.",
-       "Klopt, «Btw» past hierbij.",
-       "«Winstmarge» betekent verkoop min inkoop."
-      ],
-      "uh": "Onthoud: «Btw» = belasting op de prijs."
-     },
-     {
-      "v": "Wat betekent «Btw»?",
-      "o": [
-       "het bedrag dat overblijft na aftrek van de kosten",
-       "kosten die meebewegen met de productie",
-       "het punt waarop de omzet precies gelijk is aan de kosten",
-       "belasting die je over de verkoopprijs betaalt"
+       "Kosten die gelijk blijven",
+       "De vaste huur",
+       "De verzekering",
+       "Kosten die meebewegen met de productie"
       ],
       "c": 3,
-      "d": 1,
-      "u": "«Btw»: belasting die je over de verkoopprijs betaalt.",
-      "uo": [
-       "Dat is «Winst».",
-       "Dat is «Variabele kosten».",
-       "Dat is «Break-even».",
-       "Klopt: belasting op de prijs."
-      ],
-      "uh": "Onthoud: «Btw» = belasting op de prijs."
-     },
-     {
-      "v": "Welk begrip hoort bij: \"het bedrag dat overblijft na aftrek van de kosten\"?",
-      "o": [
-       "Winst",
-       "Omzet",
-       "Brutowinst",
-       "Break-even"
-      ],
-      "c": 0,
       "d": 3,
-      "u": "«Winst»: het bedrag dat overblijft na aftrek van de kosten.",
+      "u": "Ze bewegen mee met de productie.",
       "uo": [
-       "Klopt, dit is «Winst».",
-       "«Omzet» betekent prijs maal aantal.",
-       "«Brutowinst» betekent omzet min inkoopwaarde.",
-       "«Break-even» betekent omzet is gelijk aan kosten."
+       "Dat zijn constante kosten.",
+       "Huur is meestal constant.",
+       "Verzekering is meestal constant.",
+       "Klopt: ze bewegen mee met de productie."
       ],
-      "uh": "Onthoud: «Winst» = opbrengst min kosten."
+      "uh": "Ze bewegen mee met de productie."
      },
      {
-      "v": "Welke term hoort bij \"opbrengst min kosten\"?",
+      "v": "Waarover betaal je btw?",
       "o": [
-       "Break-even",
-       "Winst",
-       "Winstmarge",
-       "Variabele kosten"
+       "Over je spaargeld",
+       "Over de verkoopprijs",
+       "Over je loon",
+       "Over een lening"
       ],
       "c": 1,
       "d": 2,
-      "u": "«Winst»: het bedrag dat overblijft na aftrek van de kosten.",
+      "u": "Btw zit op de verkoopprijs.",
       "uo": [
-       "«Break-even» betekent omzet is gelijk aan kosten.",
-       "Klopt, «Winst» past hierbij.",
-       "«Winstmarge» betekent verkoop min inkoop.",
-       "«Variabele kosten» betekent bewegen mee."
+       "Niet over sparen.",
+       "Klopt: btw zit op de verkoopprijs.",
+       "Over loon betaal je loonbelasting.",
+       "Niet over een lening."
       ],
-      "uh": "Onthoud: «Winst» = opbrengst min kosten."
+      "uh": "Btw zit op de verkoopprijs."
      },
      {
-      "v": "Wat betekent «Winst»?",
+      "v": "Wat is winst?",
       "o": [
-       "de totale verkoopopbrengst: prijs maal aantal",
-       "de omzet min de inkoopwaarde van de verkochte producten",
-       "het bedrag dat overblijft na aftrek van de kosten",
-       "het punt waarop de omzet precies gelijk is aan de kosten"
+       "De totale omzet",
+       "Alle kosten samen",
+       "Omzet min kosten",
+       "De verkoopprijs"
       ],
       "c": 2,
       "d": 1,
-      "u": "«Winst»: het bedrag dat overblijft na aftrek van de kosten.",
+      "u": "Winst is omzet min kosten.",
       "uo": [
-       "Dat is «Omzet».",
-       "Dat is «Brutowinst».",
-       "Klopt: opbrengst min kosten.",
-       "Dat is «Break-even»."
+       "Dat is de omzet.",
+       "Dat zijn de kosten.",
+       "Klopt: winst is omzet min kosten.",
+       "De prijs van één product."
       ],
-      "uh": "Onthoud: «Winst» = opbrengst min kosten."
+      "uh": "Winst is omzet min kosten."
      },
      {
-      "v": "Welk begrip hoort bij: \"alles wat je uitgeeft om te produceren\"?",
+      "v": "Wat is de winstmarge?",
       "o": [
-       "Omzet",
-       "Inkoopprijs",
-       "Verkoopprijs",
-       "Kosten"
-      ],
-      "c": 3,
-      "d": 3,
-      "u": "«Kosten»: alles wat je uitgeeft om te produceren.",
-      "uo": [
-       "«Omzet» betekent prijs maal aantal.",
-       "«Inkoopprijs» betekent prijs bij inkoop.",
-       "«Verkoopprijs» betekent prijs bij verkoop.",
-       "Klopt, dit is «Kosten»."
-      ],
-      "uh": "Onthoud: «Kosten» = uitgaven om te produceren."
-     },
-     {
-      "v": "Welke term hoort bij \"uitgaven om te produceren\"?",
-      "o": [
-       "Kosten",
-       "Inkoopprijs",
-       "Verkoopprijs",
-       "Break-even"
+       "Verkoopprijs min inkoopprijs",
+       "De totale omzet",
+       "De belasting",
+       "De vaste huur"
       ],
       "c": 0,
       "d": 2,
-      "u": "«Kosten»: alles wat je uitgeeft om te produceren.",
+      "u": "Het verschil tussen verkoop- en inkoopprijs.",
       "uo": [
-       "Klopt, «Kosten» past hierbij.",
-       "«Inkoopprijs» betekent prijs bij inkoop.",
-       "«Verkoopprijs» betekent prijs bij verkoop.",
-       "«Break-even» betekent omzet is gelijk aan kosten."
+       "Klopt: het verschil tussen verkoop- en inkoopprijs.",
+       "Omzet is iets anders.",
+       "Belasting is iets anders.",
+       "Huur is een kostenpost."
       ],
-      "uh": "Onthoud: «Kosten» = uitgaven om te produceren."
+      "uh": "Het verschil tussen verkoop- en inkoopprijs."
      },
      {
-      "v": "Wat betekent «Kosten»?",
+      "v": "Wat betekent break-even?",
       "o": [
-       "de totale verkoopopbrengst: prijs maal aantal",
-       "alles wat je uitgeeft om te produceren",
-       "de prijs die je voor een product betaalt",
-       "de prijs waarvoor je een product verkoopt"
-      ],
-      "c": 1,
-      "d": 1,
-      "u": "«Kosten»: alles wat je uitgeeft om te produceren.",
-      "uo": [
-       "Dat is «Omzet».",
-       "Klopt: uitgaven om te produceren.",
-       "Dat is «Inkoopprijs».",
-       "Dat is «Verkoopprijs»."
-      ],
-      "uh": "Onthoud: «Kosten» = uitgaven om te produceren."
-     },
-     {
-      "v": "Welk begrip hoort bij: \"kosten die niet veranderen met de productie\"?",
-      "o": [
-       "Variabele kosten",
-       "Winstmarge",
-       "Constante kosten",
-       "Totale kosten"
-      ],
-      "c": 2,
-      "d": 3,
-      "u": "«Constante kosten»: kosten die niet veranderen met de productie.",
-      "uo": [
-       "«Variabele kosten» betekent bewegen mee.",
-       "«Winstmarge» betekent verkoop min inkoop.",
-       "Klopt, dit is «Constante kosten».",
-       "«Totale kosten» betekent constant plus variabel."
-      ],
-      "uh": "Onthoud: «Constante kosten» = blijven gelijk."
-     },
-     {
-      "v": "Welke term hoort bij \"omzet min inkoopwaarde\"?",
-      "o": [
-       "Omzet",
-       "Kosten",
-       "Totale kosten",
-       "Brutowinst"
+       "Veel winst maken",
+       "Verlies lijden",
+       "De hoogste omzet halen",
+       "Omzet gelijk aan de kosten"
       ],
       "c": 3,
-      "d": 2,
-      "u": "«Brutowinst»: de omzet min de inkoopwaarde van de verkochte producten.",
+      "d": 3,
+      "u": "De omzet is precies gelijk aan de kosten.",
       "uo": [
-       "«Omzet» betekent prijs maal aantal.",
-       "«Kosten» betekent uitgaven om te produceren.",
-       "«Totale kosten» betekent constant plus variabel.",
-       "Klopt, «Brutowinst» past hierbij."
+       "Nee, geen winst.",
+       "Nee, ook geen verlies.",
+       "Niet per se de hoogste.",
+       "Klopt: de omzet is precies gelijk aan de kosten."
       ],
-      "uh": "Onthoud: «Brutowinst» = omzet min inkoopwaarde."
+      "uh": "De omzet is precies gelijk aan de kosten."
      },
      {
-      "v": "Wat betekent «Constante kosten»?",
+      "v": "Wat is het verschil tussen verkoop- en inkoopprijs?",
       "o": [
-       "kosten die niet veranderen met de productie",
-       "kosten die meebewegen met de productie",
-       "het verschil tussen verkoopprijs en inkoopprijs",
-       "de constante kosten plus de variabele kosten"
-      ],
-      "c": 0,
-      "d": 1,
-      "u": "«Constante kosten»: kosten die niet veranderen met de productie.",
-      "uo": [
-       "Klopt: blijven gelijk.",
-       "Dat is «Variabele kosten».",
-       "Dat is «Winstmarge».",
-       "Dat is «Totale kosten»."
-      ],
-      "uh": "Onthoud: «Constante kosten» = blijven gelijk."
-     },
-     {
-      "v": "Welk begrip hoort bij: \"kosten die meebewegen met de productie\"?",
-      "o": [
-       "Constante kosten",
-       "Variabele kosten",
-       "Winstmarge",
-       "Totale kosten"
+       "De omzet",
+       "De winstmarge",
+       "De btw",
+       "De vaste huur"
       ],
       "c": 1,
-      "d": 3,
-      "u": "«Variabele kosten»: kosten die meebewegen met de productie.",
+      "d": 2,
+      "u": "Dat verschil is de winstmarge.",
       "uo": [
-       "«Constante kosten» betekent blijven gelijk.",
-       "Klopt, dit is «Variabele kosten».",
-       "«Winstmarge» betekent verkoop min inkoop.",
-       "«Totale kosten» betekent constant plus variabel."
+       "Omzet is prijs maal aantal.",
+       "Klopt: dat verschil is de winstmarge.",
+       "Btw is een belasting.",
+       "Huur is een kostenpost."
       ],
-      "uh": "Onthoud: «Variabele kosten» = bewegen mee."
+      "uh": "Dat verschil is de winstmarge."
      },
      {
-      "v": "Welke term hoort bij \"verkoop min inkoop\"?",
+      "v": "Wat zijn kosten?",
       "o": [
-       "Verkoopprijs",
-       "Omzet",
-       "Winstmarge",
-       "Kosten"
+       "De verkoopopbrengst",
+       "De gemaakte winst",
+       "Wat je uitgeeft om te produceren",
+       "Alleen de belasting"
       ],
       "c": 2,
       "d": 2,
-      "u": "«Winstmarge»: het verschil tussen verkoopprijs en inkoopprijs.",
+      "u": "Alles wat je uitgeeft om te produceren.",
       "uo": [
-       "«Verkoopprijs» betekent prijs bij verkoop.",
-       "«Omzet» betekent prijs maal aantal.",
-       "Klopt, «Winstmarge» past hierbij.",
-       "«Kosten» betekent uitgaven om te produceren."
+       "Dat is de omzet.",
+       "Winst is iets anders.",
+       "Klopt: alles wat je uitgeeft om te produceren.",
+       "Belasting is maar een deel."
       ],
-      "uh": "Onthoud: «Winstmarge» = verkoop min inkoop."
+      "uh": "Alles wat je uitgeeft om te produceren."
      },
      {
-      "v": "Wat betekent «Variabele kosten»?",
+      "v": "Wat is brutowinst?",
       "o": [
-       "kosten die niet veranderen met de productie",
-       "het verschil tussen verkoopprijs en inkoopprijs",
-       "de constante kosten plus de variabele kosten",
-       "kosten die meebewegen met de productie"
-      ],
-      "c": 3,
-      "d": 1,
-      "u": "«Variabele kosten»: kosten die meebewegen met de productie.",
-      "uo": [
-       "Dat is «Constante kosten».",
-       "Dat is «Winstmarge».",
-       "Dat is «Totale kosten».",
-       "Klopt: bewegen mee."
-      ],
-      "uh": "Onthoud: «Variabele kosten» = bewegen mee."
-     },
-     {
-      "v": "Welk begrip hoort bij: \"de constante kosten plus de variabele kosten\"?",
-      "o": [
-       "Totale kosten",
-       "Constante kosten",
-       "Variabele kosten",
-       "Winst"
+       "Omzet min inkoopwaarde",
+       "De totale kosten",
+       "De premie",
+       "Het nettoloon"
       ],
       "c": 0,
-      "d": 3,
-      "u": "«Totale kosten»: de constante kosten plus de variabele kosten.",
+      "d": 2,
+      "u": "De omzet min de inkoopwaarde.",
       "uo": [
-       "Klopt, dit is «Totale kosten».",
-       "«Constante kosten» betekent blijven gelijk.",
-       "«Variabele kosten» betekent bewegen mee.",
-       "«Winst» betekent opbrengst min kosten."
+       "Klopt: de omzet min de inkoopwaarde.",
+       "Kosten zijn iets anders.",
+       "Premie hoort bij verzekeren.",
+       "Loon is iets anders."
       ],
-      "uh": "Onthoud: «Totale kosten» = constant plus variabel."
+      "uh": "De omzet min de inkoopwaarde."
      },
      {
-      "v": "Welke term hoort bij \"omzet is gelijk aan kosten\"?",
+      "v": "Waarom betaalt een winkel btw af?",
       "o": [
-       "Verkoopprijs",
-       "Break-even",
-       "Omzet",
-       "Constante kosten"
+       "Als extra spaargeld",
+       "Als winst voor de baas",
+       "Als loon voor personeel",
+       "Als belasting aan de overheid"
       ],
-      "c": 1,
+      "c": 3,
       "d": 2,
-      "u": "«Break-even»: het punt waarop de omzet precies gelijk is aan de kosten.",
+      "u": "Btw draag je af aan de overheid.",
       "uo": [
-       "«Verkoopprijs» betekent prijs bij verkoop.",
-       "Klopt, «Break-even» past hierbij.",
-       "«Omzet» betekent prijs maal aantal.",
-       "«Constante kosten» betekent blijven gelijk."
+       "Niet als spaargeld.",
+       "Btw is geen winst.",
+       "Btw is geen loon.",
+       "Klopt: btw draag je af aan de overheid."
       ],
-      "uh": "Onthoud: «Break-even» = omzet is gelijk aan kosten."
+      "uh": "Btw draag je af aan de overheid."
      }
     ],
     "begrippen": [
@@ -10126,498 +9100,232 @@ var VAKKEN_VMBO = [
     "nBeg": 0,
     "sv": [
      {
-      "v": "Welk begrip hoort bij: \"een verplichte betaling aan de overheid\"?",
+      "v": "Waarom heft de overheid belasting?",
       "o": [
+       "Om winst te maken",
+       "Om collectieve voorzieningen te betalen",
+       "Om te sparen",
+       "Om te lenen"
+      ],
+      "c": 1,
+      "d": 2,
+      "u": "Om wegen, onderwijs en veiligheid te betalen.",
+      "uo": [
+       "De overheid maakt geen winst.",
+       "Klopt: om wegen, onderwijs en veiligheid te betalen.",
+       "Niet om te sparen.",
+       "Niet om te lenen."
+      ],
+      "uh": "Om wegen, onderwijs en veiligheid te betalen."
+     },
+     {
+      "v": "Wat is een directe belasting?",
+      "o": [
+       "Btw op producten",
+       "Accijns op benzine",
+       "Belasting op inkomen",
+       "Een keurmerk"
+      ],
+      "c": 2,
+      "d": 2,
+      "u": "Directe belasting gaat over inkomen of winst.",
+      "uo": [
+       "Btw is indirect.",
+       "Accijns is indirect.",
+       "Klopt: directe belasting gaat over inkomen of winst.",
+       "Een keurmerk is geen belasting."
+      ],
+      "uh": "Directe belasting gaat over inkomen of winst."
+     },
+     {
+      "v": "Wat is een indirecte belasting?",
+      "o": [
+       "Belasting in de prijs (btw)",
+       "Belasting op je inkomen",
+       "Een subsidie",
+       "Een uitkering"
+      ],
+      "c": 0,
+      "d": 2,
+      "u": "Die zit in de prijs, zoals btw.",
+      "uo": [
+       "Klopt: die zit in de prijs, zoals btw.",
+       "Dat is directe belasting.",
+       "Een subsidie is geen belasting.",
+       "Een uitkering is geen belasting."
+      ],
+      "uh": "Die zit in de prijs, zoals btw."
+     },
+     {
+      "v": "Wat is een collectieve voorziening?",
+      "o": [
+       "Iets voor jou alleen",
+       "Een verzekering",
+       "Een lening",
+       "Iets dat de overheid voor iedereen regelt"
+      ],
+      "c": 3,
+      "d": 2,
+      "u": "Iets dat de overheid voor iedereen regelt, zoals wegen.",
+      "uo": [
+       "Nee, juist voor iedereen.",
+       "Geen verzekering.",
+       "Geen lening.",
+       "Klopt: iets dat de overheid voor iedereen regelt, zoals wegen."
+      ],
+      "uh": "Iets dat de overheid voor iedereen regelt, zoals wegen."
+     },
+     {
+      "v": "Wat is accijns?",
+      "o": [
+       "Belasting op inkomen",
+       "Extra belasting op bv. benzine",
+       "Een subsidie",
+       "Een uitkering"
+      ],
+      "c": 1,
+      "d": 2,
+      "u": "Extra belasting op producten zoals alcohol en benzine.",
+      "uo": [
+       "Dat is inkomstenbelasting.",
+       "Klopt: extra belasting op producten zoals alcohol en benzine.",
+       "Geen subsidie.",
+       "Geen uitkering."
+      ],
+      "uh": "Extra belasting op producten zoals alcohol en benzine."
+     },
+     {
+      "v": "Wat is een subsidie?",
+      "o": [
+       "Een belasting",
+       "Een boete",
+       "Geld om iets te stimuleren",
+       "Een lening"
+      ],
+      "c": 2,
+      "d": 1,
+      "u": "Geld van de overheid om iets te stimuleren.",
+      "uo": [
+       "Geen belasting.",
+       "Geen boete.",
+       "Klopt: geld van de overheid om iets te stimuleren.",
+       "Geen lening."
+      ],
+      "uh": "Geld van de overheid om iets te stimuleren."
+     },
+     {
+      "v": "Wat is een uitkering?",
+      "o": [
+       "Geld bij te weinig inkomen",
+       "Een belasting",
+       "Een keurmerk",
+       "Een verzekeringspremie"
+      ],
+      "c": 0,
+      "d": 1,
+      "u": "Geld van de overheid voor wie te weinig inkomen heeft.",
+      "uo": [
+       "Klopt: geld van de overheid voor wie te weinig inkomen heeft.",
+       "Geen belasting.",
+       "Geen keurmerk.",
+       "Een premie is iets anders."
+      ],
+      "uh": "Geld van de overheid voor wie te weinig inkomen heeft."
+     },
+     {
+      "v": "Wat staat er in de begroting van de overheid?",
+      "o": [
+       "De koers van de euro",
+       "De prijzen in de winkel",
+       "De rente bij de bank",
+       "Verwachte inkomsten en uitgaven"
+      ],
+      "c": 3,
+      "d": 2,
+      "u": "De verwachte inkomsten en uitgaven.",
+      "uo": [
+       "Niet de euro.",
+       "Niet winkelprijzen.",
+       "Niet de rente.",
+       "Klopt: de verwachte inkomsten en uitgaven."
+      ],
+      "uh": "De verwachte inkomsten en uitgaven."
+     },
+     {
+      "v": "Wat is de staatsschuld?",
+      "o": [
+       "Het spaargeld van de overheid",
+       "Wat de overheid heeft geleend",
+       "De totale belasting",
+       "De begroting"
+      ],
+      "c": 1,
+      "d": 2,
+      "u": "Het totale bedrag dat de overheid heeft geleend.",
+      "uo": [
+       "Nee, juist schuld.",
+       "Klopt: het totale bedrag dat de overheid heeft geleend.",
+       "Niet de belasting.",
+       "De begroting is een plan."
+      ],
+      "uh": "Het totale bedrag dat de overheid heeft geleend."
+     },
+     {
+      "v": "Wat hoort bij infrastructuur?",
+      "o": [
+       "Spaargeld",
        "Belasting",
-       "Accijns",
-       "Infrastructuur",
-       "Uitkering"
-      ],
-      "c": 0,
-      "d": 3,
-      "u": "«Belasting»: een verplichte betaling aan de overheid.",
-      "uo": [
-       "Klopt, dit is «Belasting».",
-       "«Accijns» betekent extra belasting op producten.",
-       "«Infrastructuur» betekent wegen en verbindingen.",
-       "«Uitkering» betekent geld bij te weinig inkomen."
-      ],
-      "uh": "Onthoud: «Belasting» = verplichte betaling aan de staat."
-     },
-     {
-      "v": "Welke term hoort bij \"verplichte betaling aan de staat\"?",
-      "o": [
-       "Infrastructuur",
-       "Belasting",
-       "Uitkering",
-       "Begroting"
-      ],
-      "c": 1,
-      "d": 2,
-      "u": "«Belasting»: een verplichte betaling aan de overheid.",
-      "uo": [
-       "«Infrastructuur» betekent wegen en verbindingen.",
-       "Klopt, «Belasting» past hierbij.",
-       "«Uitkering» betekent geld bij te weinig inkomen.",
-       "«Begroting» betekent plan van inkomsten en uitgaven."
-      ],
-      "uh": "Onthoud: «Belasting» = verplichte betaling aan de staat."
-     },
-     {
-      "v": "Wat betekent «Belasting»?",
-      "o": [
-       "extra belasting op producten zoals alcohol en benzine",
-       "voorzieningen zoals wegen, bruggen en spoor",
-       "een verplichte betaling aan de overheid",
-       "geld van de overheid voor wie niet genoeg inkomen heeft"
+       "Wegen en bruggen",
+       "Verzekeringen"
       ],
       "c": 2,
       "d": 1,
-      "u": "«Belasting»: een verplichte betaling aan de overheid.",
+      "u": "Voorzieningen zoals wegen, bruggen en spoor.",
       "uo": [
-       "Dat is «Accijns».",
-       "Dat is «Infrastructuur».",
-       "Klopt: verplichte betaling aan de staat.",
-       "Dat is «Uitkering»."
+       "Nee, dat klopt niet.",
+       "Nee, dat klopt niet.",
+       "Klopt: voorzieningen zoals wegen, bruggen en spoor.",
+       "Nee, dat klopt niet."
       ],
-      "uh": "Onthoud: «Belasting» = verplichte betaling aan de staat."
+      "uh": "Voorzieningen zoals wegen, bruggen en spoor."
      },
      {
-      "v": "Welk begrip hoort bij: \"belasting op inkomen of winst\"?",
+      "v": "Wat is een overheidstaak?",
       "o": [
-       "Indirecte belasting",
-       "Inkomstenbelasting",
-       "Overheidstaak",
-       "Directe belasting"
-      ],
-      "c": 3,
-      "d": 3,
-      "u": "«Directe belasting»: belasting op inkomen of winst.",
-      "uo": [
-       "«Indirecte belasting» betekent belasting in de prijs.",
-       "«Inkomstenbelasting» betekent belasting over inkomen.",
-       "«Overheidstaak» betekent taak van de overheid.",
-       "Klopt, dit is «Directe belasting»."
-      ],
-      "uh": "Onthoud: «Directe belasting» = belasting op inkomen."
-     },
-     {
-      "v": "Welke term hoort bij \"belasting op inkomen\"?",
-      "o": [
-       "Directe belasting",
-       "Inkomstenbelasting",
-       "Overheidstaak",
-       "Collectieve voorziening"
-      ],
-      "c": 0,
-      "d": 2,
-      "u": "«Directe belasting»: belasting op inkomen of winst.",
-      "uo": [
-       "Klopt, «Directe belasting» past hierbij.",
-       "«Inkomstenbelasting» betekent belasting over inkomen.",
-       "«Overheidstaak» betekent taak van de overheid.",
-       "«Collectieve voorziening» betekent voor iedereen geregeld."
-      ],
-      "uh": "Onthoud: «Directe belasting» = belasting op inkomen."
-     },
-     {
-      "v": "Wat betekent «Directe belasting»?",
-      "o": [
-       "belasting die in de prijs van producten zit",
-       "belasting op inkomen of winst",
-       "belasting die je over je inkomen betaalt",
-       "een taak die de overheid voor de samenleving uitvoert"
-      ],
-      "c": 1,
-      "d": 1,
-      "u": "«Directe belasting»: belasting op inkomen of winst.",
-      "uo": [
-       "Dat is «Indirecte belasting».",
-       "Klopt: belasting op inkomen.",
-       "Dat is «Inkomstenbelasting».",
-       "Dat is «Overheidstaak»."
-      ],
-      "uh": "Onthoud: «Directe belasting» = belasting op inkomen."
-     },
-     {
-      "v": "Welk begrip hoort bij: \"extra belasting op producten zoals alcohol en benzine\"?",
-      "o": [
-       "Belasting",
-       "Uitkering",
-       "Accijns",
-       "Collectieve voorziening"
-      ],
-      "c": 2,
-      "d": 3,
-      "u": "«Accijns»: extra belasting op producten zoals alcohol en benzine.",
-      "uo": [
-       "«Belasting» betekent verplichte betaling aan de staat.",
-       "«Uitkering» betekent geld bij te weinig inkomen.",
-       "Klopt, dit is «Accijns».",
-       "«Collectieve voorziening» betekent voor iedereen geregeld."
-      ],
-      "uh": "Onthoud: «Accijns» = extra belasting op producten."
-     },
-     {
-      "v": "Welke term hoort bij \"belasting over inkomen\"?",
-      "o": [
-       "Accijns",
-       "Overheidstaak",
-       "Indirecte belasting",
-       "Inkomstenbelasting"
-      ],
-      "c": 3,
-      "d": 2,
-      "u": "«Inkomstenbelasting»: belasting die je over je inkomen betaalt.",
-      "uo": [
-       "«Accijns» betekent extra belasting op producten.",
-       "«Overheidstaak» betekent taak van de overheid.",
-       "«Indirecte belasting» betekent belasting in de prijs.",
-       "Klopt, «Inkomstenbelasting» past hierbij."
-      ],
-      "uh": "Onthoud: «Inkomstenbelasting» = belasting over inkomen."
-     },
-     {
-      "v": "Wat betekent «Indirecte belasting»?",
-      "o": [
-       "belasting die in de prijs van producten zit",
-       "belasting op inkomen of winst",
-       "belasting die je over je inkomen betaalt",
-       "een bijdrage van de overheid om iets te stimuleren"
+       "Een taak voor de samenleving",
+       "Een taak van een bedrijf",
+       "Sparen bij een bank",
+       "Iets kopen in de winkel"
       ],
       "c": 0,
       "d": 1,
-      "u": "«Indirecte belasting»: belasting die in de prijs van producten zit.",
+      "u": "Een taak die de overheid voor de samenleving doet.",
       "uo": [
-       "Klopt: belasting in de prijs.",
-       "Dat is «Directe belasting».",
-       "Dat is «Inkomstenbelasting».",
-       "Dat is «Subsidie»."
+       "Klopt: een taak die de overheid voor de samenleving doet.",
+       "Dat doet een bedrijf.",
+       "Dat is iets anders.",
+       "Dat is iets anders."
       ],
-      "uh": "Onthoud: «Indirecte belasting» = belasting in de prijs."
+      "uh": "Een taak die de overheid voor de samenleving doet."
      },
      {
-      "v": "Welk begrip hoort bij: \"een bijdrage van de overheid om iets te stimuleren\"?",
+      "v": "Wat is het verschil tussen subsidie en uitkering?",
       "o": [
-       "Uitkering",
-       "Subsidie",
-       "Infrastructuur",
-       "Overheidstaak"
-      ],
-      "c": 1,
-      "d": 3,
-      "u": "«Subsidie»: een bijdrage van de overheid om iets te stimuleren.",
-      "uo": [
-       "«Uitkering» betekent geld bij te weinig inkomen.",
-       "Klopt, dit is «Subsidie».",
-       "«Infrastructuur» betekent wegen en verbindingen.",
-       "«Overheidstaak» betekent taak van de overheid."
-      ],
-      "uh": "Onthoud: «Subsidie» = geld om te stimuleren."
-     },
-     {
-      "v": "Welke term hoort bij \"extra belasting op producten\"?",
-      "o": [
-       "Uitkering",
-       "Collectieve voorziening",
-       "Accijns",
-       "Overheidstaak"
-      ],
-      "c": 2,
-      "d": 2,
-      "u": "«Accijns»: extra belasting op producten zoals alcohol en benzine.",
-      "uo": [
-       "«Uitkering» betekent geld bij te weinig inkomen.",
-       "«Collectieve voorziening» betekent voor iedereen geregeld.",
-       "Klopt, «Accijns» past hierbij.",
-       "«Overheidstaak» betekent taak van de overheid."
-      ],
-      "uh": "Onthoud: «Accijns» = extra belasting op producten."
-     },
-     {
-      "v": "Wat betekent «Inkomstenbelasting»?",
-      "o": [
-       "belasting op inkomen of winst",
-       "extra belasting op producten zoals alcohol en benzine",
-       "een taak die de overheid voor de samenleving uitvoert",
-       "belasting die je over je inkomen betaalt"
-      ],
-      "c": 3,
-      "d": 1,
-      "u": "«Inkomstenbelasting»: belasting die je over je inkomen betaalt.",
-      "uo": [
-       "Dat is «Directe belasting».",
-       "Dat is «Accijns».",
-       "Dat is «Overheidstaak».",
-       "Klopt: belasting over inkomen."
-      ],
-      "uh": "Onthoud: «Inkomstenbelasting» = belasting over inkomen."
-     },
-     {
-      "v": "Welk begrip hoort bij: \"geld van de overheid voor wie niet genoeg inkomen heeft\"?",
-      "o": [
-       "Uitkering",
-       "Subsidie",
-       "Infrastructuur",
-       "Collectieve voorziening"
-      ],
-      "c": 0,
-      "d": 3,
-      "u": "«Uitkering»: geld van de overheid voor wie niet genoeg inkomen heeft.",
-      "uo": [
-       "Klopt, dit is «Uitkering».",
-       "«Subsidie» betekent geld om te stimuleren.",
-       "«Infrastructuur» betekent wegen en verbindingen.",
-       "«Collectieve voorziening» betekent voor iedereen geregeld."
-      ],
-      "uh": "Onthoud: «Uitkering» = geld bij te weinig inkomen."
-     },
-     {
-      "v": "Welke term hoort bij \"geld om te stimuleren\"?",
-      "o": [
-       "Infrastructuur",
-       "Subsidie",
-       "Overheidstaak",
-       "Belasting"
-      ],
-      "c": 1,
-      "d": 2,
-      "u": "«Subsidie»: een bijdrage van de overheid om iets te stimuleren.",
-      "uo": [
-       "«Infrastructuur» betekent wegen en verbindingen.",
-       "Klopt, «Subsidie» past hierbij.",
-       "«Overheidstaak» betekent taak van de overheid.",
-       "«Belasting» betekent verplichte betaling aan de staat."
-      ],
-      "uh": "Onthoud: «Subsidie» = geld om te stimuleren."
-     },
-     {
-      "v": "Wat betekent «Accijns»?",
-      "o": [
-       "een verplichte betaling aan de overheid",
-       "geld van de overheid voor wie niet genoeg inkomen heeft",
-       "extra belasting op producten zoals alcohol en benzine",
-       "iets dat de overheid voor iedereen regelt, zoals wegen"
-      ],
-      "c": 2,
-      "d": 1,
-      "u": "«Accijns»: extra belasting op producten zoals alcohol en benzine.",
-      "uo": [
-       "Dat is «Belasting».",
-       "Dat is «Uitkering».",
-       "Klopt: extra belasting op producten.",
-       "Dat is «Collectieve voorziening»."
-      ],
-      "uh": "Onthoud: «Accijns» = extra belasting op producten."
-     },
-     {
-      "v": "Welk begrip hoort bij: \"het overzicht van verwachte inkomsten en uitgaven van de overheid\"?",
-      "o": [
-       "Staatsschuld",
-       "Infrastructuur",
-       "Collectieve voorziening",
-       "Begroting"
+       "Beide zijn een belasting",
+       "Beide zijn een lening",
+       "Er is geen verschil",
+       "Subsidie stimuleert, uitkering helpt bij te weinig inkomen"
       ],
       "c": 3,
       "d": 3,
-      "u": "«Begroting»: het overzicht van verwachte inkomsten en uitgaven van de overheid.",
+      "u": "Subsidie stimuleert iets, een uitkering helpt bij te weinig inkomen.",
       "uo": [
-       "«Staatsschuld» betekent wat de staat heeft geleend.",
-       "«Infrastructuur» betekent wegen en verbindingen.",
-       "«Collectieve voorziening» betekent voor iedereen geregeld.",
-       "Klopt, dit is «Begroting»."
+       "Het is geen belasting.",
+       "Het is geen lening.",
+       "Er is wel verschil.",
+       "Klopt: subsidie stimuleert iets, een uitkering helpt bij te weinig inkomen."
       ],
-      "uh": "Onthoud: «Begroting» = plan van inkomsten en uitgaven."
-     },
-     {
-      "v": "Welke term hoort bij \"geld bij te weinig inkomen\"?",
-      "o": [
-       "Uitkering",
-       "Infrastructuur",
-       "Collectieve voorziening",
-       "Begroting"
-      ],
-      "c": 0,
-      "d": 2,
-      "u": "«Uitkering»: geld van de overheid voor wie niet genoeg inkomen heeft.",
-      "uo": [
-       "Klopt, «Uitkering» past hierbij.",
-       "«Infrastructuur» betekent wegen en verbindingen.",
-       "«Collectieve voorziening» betekent voor iedereen geregeld.",
-       "«Begroting» betekent plan van inkomsten en uitgaven."
-      ],
-      "uh": "Onthoud: «Uitkering» = geld bij te weinig inkomen."
-     },
-     {
-      "v": "Wat betekent «Collectieve voorziening»?",
-      "o": [
-       "een bijdrage van de overheid om iets te stimuleren",
-       "iets dat de overheid voor iedereen regelt, zoals wegen",
-       "het overzicht van verwachte inkomsten en uitgaven van de overheid",
-       "een taak die de overheid voor de samenleving uitvoert"
-      ],
-      "c": 1,
-      "d": 1,
-      "u": "«Collectieve voorziening»: iets dat de overheid voor iedereen regelt, zoals wegen.",
-      "uo": [
-       "Dat is «Subsidie».",
-       "Klopt: voor iedereen geregeld.",
-       "Dat is «Begroting».",
-       "Dat is «Overheidstaak»."
-      ],
-      "uh": "Onthoud: «Collectieve voorziening» = voor iedereen geregeld."
-     },
-     {
-      "v": "Welk begrip hoort bij: \"het totale bedrag dat de overheid heeft geleend\"?",
-      "o": [
-       "Begroting",
-       "Collectieve voorziening",
-       "Staatsschuld",
-       "Accijns"
-      ],
-      "c": 2,
-      "d": 3,
-      "u": "«Staatsschuld»: het totale bedrag dat de overheid heeft geleend.",
-      "uo": [
-       "«Begroting» betekent plan van inkomsten en uitgaven.",
-       "«Collectieve voorziening» betekent voor iedereen geregeld.",
-       "Klopt, dit is «Staatsschuld».",
-       "«Accijns» betekent extra belasting op producten."
-      ],
-      "uh": "Onthoud: «Staatsschuld» = wat de staat heeft geleend."
-     },
-     {
-      "v": "Welke term hoort bij \"plan van inkomsten en uitgaven\"?",
-      "o": [
-       "Infrastructuur",
-       "Collectieve voorziening",
-       "Subsidie",
-       "Begroting"
-      ],
-      "c": 3,
-      "d": 2,
-      "u": "«Begroting»: het overzicht van verwachte inkomsten en uitgaven van de overheid.",
-      "uo": [
-       "«Infrastructuur» betekent wegen en verbindingen.",
-       "«Collectieve voorziening» betekent voor iedereen geregeld.",
-       "«Subsidie» betekent geld om te stimuleren.",
-       "Klopt, «Begroting» past hierbij."
-      ],
-      "uh": "Onthoud: «Begroting» = plan van inkomsten en uitgaven."
-     },
-     {
-      "v": "Wat betekent «Subsidie»?",
-      "o": [
-       "een bijdrage van de overheid om iets te stimuleren",
-       "geld van de overheid voor wie niet genoeg inkomen heeft",
-       "voorzieningen zoals wegen, bruggen en spoor",
-       "een taak die de overheid voor de samenleving uitvoert"
-      ],
-      "c": 0,
-      "d": 1,
-      "u": "«Subsidie»: een bijdrage van de overheid om iets te stimuleren.",
-      "uo": [
-       "Klopt: geld om te stimuleren.",
-       "Dat is «Uitkering».",
-       "Dat is «Infrastructuur».",
-       "Dat is «Overheidstaak»."
-      ],
-      "uh": "Onthoud: «Subsidie» = geld om te stimuleren."
-     },
-     {
-      "v": "Welk begrip hoort bij: \"voorzieningen zoals wegen, bruggen en spoor\"?",
-      "o": [
-       "Collectieve voorziening",
-       "Infrastructuur",
-       "Inkomstenbelasting",
-       "Overheidstaak"
-      ],
-      "c": 1,
-      "d": 3,
-      "u": "«Infrastructuur»: voorzieningen zoals wegen, bruggen en spoor.",
-      "uo": [
-       "«Collectieve voorziening» betekent voor iedereen geregeld.",
-       "Klopt, dit is «Infrastructuur».",
-       "«Inkomstenbelasting» betekent belasting over inkomen.",
-       "«Overheidstaak» betekent taak van de overheid."
-      ],
-      "uh": "Onthoud: «Infrastructuur» = wegen en verbindingen."
-     },
-     {
-      "v": "Welke term hoort bij \"wat de staat heeft geleend\"?",
-      "o": [
-       "Collectieve voorziening",
-       "Accijns",
-       "Staatsschuld",
-       "Belasting"
-      ],
-      "c": 2,
-      "d": 2,
-      "u": "«Staatsschuld»: het totale bedrag dat de overheid heeft geleend.",
-      "uo": [
-       "«Collectieve voorziening» betekent voor iedereen geregeld.",
-       "«Accijns» betekent extra belasting op producten.",
-       "Klopt, «Staatsschuld» past hierbij.",
-       "«Belasting» betekent verplichte betaling aan de staat."
-      ],
-      "uh": "Onthoud: «Staatsschuld» = wat de staat heeft geleend."
-     },
-     {
-      "v": "Wat betekent «Staatsschuld»?",
-      "o": [
-       "het overzicht van verwachte inkomsten en uitgaven van de overheid",
-       "iets dat de overheid voor iedereen regelt, zoals wegen",
-       "extra belasting op producten zoals alcohol en benzine",
-       "het totale bedrag dat de overheid heeft geleend"
-      ],
-      "c": 3,
-      "d": 1,
-      "u": "«Staatsschuld»: het totale bedrag dat de overheid heeft geleend.",
-      "uo": [
-       "Dat is «Begroting».",
-       "Dat is «Collectieve voorziening».",
-       "Dat is «Accijns».",
-       "Klopt: wat de staat heeft geleend."
-      ],
-      "uh": "Onthoud: «Staatsschuld» = wat de staat heeft geleend."
-     },
-     {
-      "v": "Welk begrip hoort bij: \"een taak die de overheid voor de samenleving uitvoert\"?",
-      "o": [
-       "Overheidstaak",
-       "Collectieve voorziening",
-       "Uitkering",
-       "Infrastructuur"
-      ],
-      "c": 0,
-      "d": 3,
-      "u": "«Overheidstaak»: een taak die de overheid voor de samenleving uitvoert.",
-      "uo": [
-       "Klopt, dit is «Overheidstaak».",
-       "«Collectieve voorziening» betekent voor iedereen geregeld.",
-       "«Uitkering» betekent geld bij te weinig inkomen.",
-       "«Infrastructuur» betekent wegen en verbindingen."
-      ],
-      "uh": "Onthoud: «Overheidstaak» = taak van de overheid."
-     },
-     {
-      "v": "Welke term hoort bij \"wegen en verbindingen\"?",
-      "o": [
-       "Inkomstenbelasting",
-       "Infrastructuur",
-       "Overheidstaak",
-       "Subsidie"
-      ],
-      "c": 1,
-      "d": 2,
-      "u": "«Infrastructuur»: voorzieningen zoals wegen, bruggen en spoor.",
-      "uo": [
-       "«Inkomstenbelasting» betekent belasting over inkomen.",
-       "Klopt, «Infrastructuur» past hierbij.",
-       "«Overheidstaak» betekent taak van de overheid.",
-       "«Subsidie» betekent geld om te stimuleren."
-      ],
-      "uh": "Onthoud: «Infrastructuur» = wegen en verbindingen."
+      "uh": "Subsidie stimuleert iets, een uitkering helpt bij te weinig inkomen."
      }
     ],
     "begrippen": [
@@ -10689,498 +9397,232 @@ var VAKKEN_VMBO = [
     "nBeg": 0,
     "sv": [
      {
-      "v": "Welk begrip hoort bij: \"het invoeren van goederen uit het buitenland\"?",
+      "v": "Wat is import?",
       "o": [
-       "Import",
-       "Export",
-       "Wisselkoers",
-       "Handelsbalans"
-      ],
-      "c": 0,
-      "d": 3,
-      "u": "«Import»: het invoeren van goederen uit het buitenland.",
-      "uo": [
-       "Klopt, dit is «Import».",
-       "«Export» betekent uitvoer naar buitenland.",
-       "«Wisselkoers» betekent prijs van een munt.",
-       "«Handelsbalans» betekent export min import."
-      ],
-      "uh": "Onthoud: «Import» = invoer uit buitenland."
-     },
-     {
-      "v": "Welke term hoort bij \"invoer uit buitenland\"?",
-      "o": [
-       "Wisselkoers",
-       "Import",
-       "Handelsbalans",
-       "Globalisering"
+       "Uitvoer naar buitenland",
+       "Invoer uit het buitenland",
+       "Belasting op producten",
+       "Sparen in het buitenland"
       ],
       "c": 1,
-      "d": 2,
-      "u": "«Import»: het invoeren van goederen uit het buitenland.",
+      "d": 1,
+      "u": "Invoer van goederen uit het buitenland.",
       "uo": [
-       "«Wisselkoers» betekent prijs van een munt.",
-       "Klopt, «Import» past hierbij.",
-       "«Handelsbalans» betekent export min import.",
-       "«Globalisering» betekent landen raken verweven."
+       "Dat is export.",
+       "Klopt: invoer van goederen uit het buitenland.",
+       "Dat is iets anders.",
+       "Dat is iets anders."
       ],
-      "uh": "Onthoud: «Import» = invoer uit buitenland."
+      "uh": "Invoer van goederen uit het buitenland."
      },
      {
-      "v": "Wat betekent «Import»?",
+      "v": "Wat is export?",
       "o": [
-       "het uitvoeren van goederen naar het buitenland",
-       "de prijs van de ene munt uitgedrukt in de andere",
-       "het invoeren van goederen uit het buitenland",
-       "het verschil tussen de export en de import"
+       "Invoer uit het buitenland",
+       "Een belasting",
+       "Uitvoer naar het buitenland",
+       "Een lening"
       ],
       "c": 2,
       "d": 1,
-      "u": "«Import»: het invoeren van goederen uit het buitenland.",
+      "u": "Uitvoer van goederen naar het buitenland.",
       "uo": [
-       "Dat is «Export».",
-       "Dat is «Wisselkoers».",
-       "Klopt: invoer uit buitenland.",
-       "Dat is «Handelsbalans»."
+       "Dat is import.",
+       "Geen belasting.",
+       "Klopt: uitvoer van goederen naar het buitenland.",
+       "Geen lening."
       ],
-      "uh": "Onthoud: «Import» = invoer uit buitenland."
+      "uh": "Uitvoer van goederen naar het buitenland."
      },
      {
-      "v": "Welk begrip hoort bij: \"het uitvoeren van goederen naar het buitenland\"?",
+      "v": "Wat is een wisselkoers?",
       "o": [
-       "Import",
-       "Wisselkoers",
-       "Handelsbalans",
-       "Export"
-      ],
-      "c": 3,
-      "d": 3,
-      "u": "«Export»: het uitvoeren van goederen naar het buitenland.",
-      "uo": [
-       "«Import» betekent invoer uit buitenland.",
-       "«Wisselkoers» betekent prijs van een munt.",
-       "«Handelsbalans» betekent export min import.",
-       "Klopt, dit is «Export»."
-      ],
-      "uh": "Onthoud: «Export» = uitvoer naar buitenland."
-     },
-     {
-      "v": "Welke term hoort bij \"uitvoer naar buitenland\"?",
-      "o": [
-       "Export",
-       "Wisselkoers",
-       "Handelsbalans",
-       "Globalisering"
+       "De prijs van een munt in een andere",
+       "De rente op sparen",
+       "Een belasting",
+       "Een keurmerk"
       ],
       "c": 0,
       "d": 2,
-      "u": "«Export»: het uitvoeren van goederen naar het buitenland.",
+      "u": "De prijs van de ene munt in de andere.",
       "uo": [
-       "Klopt, «Export» past hierbij.",
-       "«Wisselkoers» betekent prijs van een munt.",
-       "«Handelsbalans» betekent export min import.",
-       "«Globalisering» betekent landen raken verweven."
+       "Klopt: de prijs van de ene munt in de andere.",
+       "Rente is iets anders.",
+       "Geen belasting.",
+       "Geen keurmerk."
       ],
-      "uh": "Onthoud: «Export» = uitvoer naar buitenland."
+      "uh": "De prijs van de ene munt in de andere."
      },
      {
-      "v": "Wat betekent «Export»?",
+      "v": "Wat is de euro?",
       "o": [
-       "het invoeren van goederen uit het buitenland",
-       "het uitvoeren van goederen naar het buitenland",
-       "de prijs van de ene munt uitgedrukt in de andere",
-       "het verschil tussen de export en de import"
-      ],
-      "c": 1,
-      "d": 1,
-      "u": "«Export»: het uitvoeren van goederen naar het buitenland.",
-      "uo": [
-       "Dat is «Import».",
-       "Klopt: uitvoer naar buitenland.",
-       "Dat is «Wisselkoers».",
-       "Dat is «Handelsbalans»."
-      ],
-      "uh": "Onthoud: «Export» = uitvoer naar buitenland."
-     },
-     {
-      "v": "Welk begrip hoort bij: \"het verschil tussen de export en de import\"?",
-      "o": [
-       "Wisselkoers",
-       "Ontwikkelingssamenwerking",
-       "Handelsbalans",
-       "Globalisering"
-      ],
-      "c": 2,
-      "d": 3,
-      "u": "«Handelsbalans»: het verschil tussen de export en de import.",
-      "uo": [
-       "«Wisselkoers» betekent prijs van een munt.",
-       "«Ontwikkelingssamenwerking» betekent hulp aan arme landen.",
-       "Klopt, dit is «Handelsbalans».",
-       "«Globalisering» betekent landen raken verweven."
-      ],
-      "uh": "Onthoud: «Handelsbalans» = export min import."
-     },
-     {
-      "v": "Welke term hoort bij \"export min import\"?",
-      "o": [
-       "Ontwikkelingssamenwerking",
-       "Globalisering",
-       "Import",
-       "Handelsbalans"
+       "Een belasting",
+       "Een bank",
+       "Een wisselkoers",
+       "De munt van veel EU-landen"
       ],
       "c": 3,
-      "d": 2,
-      "u": "«Handelsbalans»: het verschil tussen de export en de import.",
-      "uo": [
-       "«Ontwikkelingssamenwerking» betekent hulp aan arme landen.",
-       "«Globalisering» betekent landen raken verweven.",
-       "«Import» betekent invoer uit buitenland.",
-       "Klopt, «Handelsbalans» past hierbij."
-      ],
-      "uh": "Onthoud: «Handelsbalans» = export min import."
-     },
-     {
-      "v": "Wat betekent «Handelsbalans»?",
-      "o": [
-       "het verschil tussen de export en de import",
-       "de prijs van de ene munt uitgedrukt in de andere",
-       "hulp aan armere landen om zich te ontwikkelen",
-       "het steeds meer verweven raken van landen wereldwijd"
-      ],
-      "c": 0,
       "d": 1,
-      "u": "«Handelsbalans»: het verschil tussen de export en de import.",
+      "u": "De gezamenlijke munt van veel EU-landen.",
       "uo": [
-       "Klopt: export min import.",
-       "Dat is «Wisselkoers».",
-       "Dat is «Ontwikkelingssamenwerking».",
-       "Dat is «Globalisering»."
+       "Geen belasting.",
+       "Geen bank.",
+       "Een koers is iets anders.",
+       "Klopt: de gezamenlijke munt van veel EU-landen."
       ],
-      "uh": "Onthoud: «Handelsbalans» = export min import."
+      "uh": "De gezamenlijke munt van veel EU-landen."
      },
      {
-      "v": "Welk begrip hoort bij: \"de prijs van de ene munt uitgedrukt in de andere\"?",
+      "v": "Wat is de Europese Unie?",
       "o": [
-       "Euro",
-       "Wisselkoers",
-       "Interne markt",
-       "Europese Unie"
+       "Een bedrijf",
+       "Een samenwerking van Europese landen",
+       "Een munt",
+       "Een belasting"
       ],
       "c": 1,
-      "d": 3,
-      "u": "«Wisselkoers»: de prijs van de ene munt uitgedrukt in de andere.",
+      "d": 1,
+      "u": "Een samenwerkingsverband van Europese landen.",
       "uo": [
-       "«Euro» betekent de munt van de eurozone.",
-       "Klopt, dit is «Wisselkoers».",
-       "«Interne markt» betekent vrije handel in de EU.",
-       "«Europese Unie» betekent samenwerkende EU-landen."
+       "Geen bedrijf.",
+       "Klopt: een samenwerkingsverband van Europese landen.",
+       "De munt is de euro.",
+       "Geen belasting."
       ],
-      "uh": "Onthoud: «Wisselkoers» = prijs van een munt."
+      "uh": "Een samenwerkingsverband van Europese landen."
      },
      {
-      "v": "Welke term hoort bij \"prijs van een munt\"?",
+      "v": "Wat is vrijhandel?",
       "o": [
-       "Interne markt",
-       "Europese Unie",
-       "Wisselkoers",
-       "Import"
+       "Handel met veel drempels",
+       "Handel verbieden",
+       "Handel zonder belemmeringen",
+       "Alleen binnenlandse handel"
       ],
       "c": 2,
       "d": 2,
-      "u": "«Wisselkoers»: de prijs van de ene munt uitgedrukt in de andere.",
+      "u": "Handel zonder belemmeringen tussen landen.",
       "uo": [
-       "«Interne markt» betekent vrije handel in de EU.",
-       "«Europese Unie» betekent samenwerkende EU-landen.",
-       "Klopt, «Wisselkoers» past hierbij.",
-       "«Import» betekent invoer uit buitenland."
+       "Nee, juist zonder drempels.",
+       "Nee, dat klopt niet.",
+       "Klopt: handel zonder belemmeringen tussen landen.",
+       "Nee, ook met het buitenland."
       ],
-      "uh": "Onthoud: «Wisselkoers» = prijs van een munt."
+      "uh": "Handel zonder belemmeringen tussen landen."
      },
      {
-      "v": "Wat betekent «Euro»?",
+      "v": "Wat is protectionisme?",
       "o": [
-       "de prijs van de ene munt uitgedrukt in de andere",
-       "hulp aan armere landen om zich te ontwikkelen",
-       "het steeds meer verweven raken van landen wereldwijd",
-       "de gezamenlijke munt van veel EU-landen"
-      ],
-      "c": 3,
-      "d": 1,
-      "u": "«Euro»: de gezamenlijke munt van veel EU-landen.",
-      "uo": [
-       "Dat is «Wisselkoers».",
-       "Dat is «Ontwikkelingssamenwerking».",
-       "Dat is «Globalisering».",
-       "Klopt: de munt van de eurozone."
-      ],
-      "uh": "Onthoud: «Euro» = de munt van de eurozone."
-     },
-     {
-      "v": "Welk begrip hoort bij: \"de gezamenlijke munt van veel EU-landen\"?",
-      "o": [
-       "Euro",
-       "Wisselkoers",
-       "Ontwikkelingssamenwerking",
-       "Globalisering"
-      ],
-      "c": 0,
-      "d": 3,
-      "u": "«Euro»: de gezamenlijke munt van veel EU-landen.",
-      "uo": [
-       "Klopt, dit is «Euro».",
-       "«Wisselkoers» betekent prijs van een munt.",
-       "«Ontwikkelingssamenwerking» betekent hulp aan arme landen.",
-       "«Globalisering» betekent landen raken verweven."
-      ],
-      "uh": "Onthoud: «Euro» = de munt van de eurozone."
-     },
-     {
-      "v": "Welke term hoort bij \"de munt van de eurozone\"?",
-      "o": [
-       "Ontwikkelingssamenwerking",
-       "Euro",
-       "Globalisering",
-       "Europese Unie"
-      ],
-      "c": 1,
-      "d": 2,
-      "u": "«Euro»: de gezamenlijke munt van veel EU-landen.",
-      "uo": [
-       "«Ontwikkelingssamenwerking» betekent hulp aan arme landen.",
-       "Klopt, «Euro» past hierbij.",
-       "«Globalisering» betekent landen raken verweven.",
-       "«Europese Unie» betekent samenwerkende EU-landen."
-      ],
-      "uh": "Onthoud: «Euro» = de munt van de eurozone."
-     },
-     {
-      "v": "Wat betekent «Europese Unie»?",
-      "o": [
-       "de vrije handel binnen de EU zonder grenzen",
-       "hulp aan armere landen om zich te ontwikkelen",
-       "een samenwerkingsverband van Europese landen",
-       "het steeds meer verweven raken van landen wereldwijd"
-      ],
-      "c": 2,
-      "d": 1,
-      "u": "«Europese Unie»: een samenwerkingsverband van Europese landen.",
-      "uo": [
-       "Dat is «Interne markt».",
-       "Dat is «Ontwikkelingssamenwerking».",
-       "Klopt: samenwerkende EU-landen.",
-       "Dat is «Globalisering»."
-      ],
-      "uh": "Onthoud: «Europese Unie» = samenwerkende EU-landen."
-     },
-     {
-      "v": "Welk begrip hoort bij: \"een samenwerkingsverband van Europese landen\"?",
-      "o": [
-       "Interne markt",
-       "Ontwikkelingssamenwerking",
-       "Globalisering",
-       "Europese Unie"
-      ],
-      "c": 3,
-      "d": 3,
-      "u": "«Europese Unie»: een samenwerkingsverband van Europese landen.",
-      "uo": [
-       "«Interne markt» betekent vrije handel in de EU.",
-       "«Ontwikkelingssamenwerking» betekent hulp aan arme landen.",
-       "«Globalisering» betekent landen raken verweven.",
-       "Klopt, dit is «Europese Unie»."
-      ],
-      "uh": "Onthoud: «Europese Unie» = samenwerkende EU-landen."
-     },
-     {
-      "v": "Welke term hoort bij \"samenwerkende EU-landen\"?",
-      "o": [
-       "Europese Unie",
-       "Ontwikkelingssamenwerking",
-       "Globalisering",
-       "Import"
+       "De eigen markt beschermen",
+       "Vrij handelen",
+       "Meer importeren",
+       "Grenzen openstellen"
       ],
       "c": 0,
       "d": 2,
-      "u": "«Europese Unie»: een samenwerkingsverband van Europese landen.",
+      "u": "Eigen bedrijven beschermen tegen buitenlandse concurrentie.",
       "uo": [
-       "Klopt, «Europese Unie» past hierbij.",
-       "«Ontwikkelingssamenwerking» betekent hulp aan arme landen.",
-       "«Globalisering» betekent landen raken verweven.",
-       "«Import» betekent invoer uit buitenland."
+       "Klopt: eigen bedrijven beschermen tegen buitenlandse concurrentie.",
+       "Dat is vrijhandel.",
+       "Onjuist.",
+       "Onjuist."
       ],
-      "uh": "Onthoud: «Europese Unie» = samenwerkende EU-landen."
+      "uh": "Eigen bedrijven beschermen tegen buitenlandse concurrentie."
      },
      {
-      "v": "Wat betekent «Interne markt»?",
+      "v": "Wat is de handelsbalans?",
       "o": [
-       "handel zonder belemmeringen tussen landen",
-       "de vrije handel binnen de EU zonder grenzen",
-       "een samenwerkingsverband van Europese landen",
-       "de gezamenlijke munt van veel EU-landen"
-      ],
-      "c": 1,
-      "d": 1,
-      "u": "«Interne markt»: de vrije handel binnen de EU zonder grenzen.",
-      "uo": [
-       "Dat is «Vrijhandel».",
-       "Klopt: vrije handel in de EU.",
-       "Dat is «Europese Unie».",
-       "Dat is «Euro»."
-      ],
-      "uh": "Onthoud: «Interne markt» = vrije handel in de EU."
-     },
-     {
-      "v": "Welk begrip hoort bij: \"de vrije handel binnen de EU zonder grenzen\"?",
-      "o": [
-       "Vrijhandel",
-       "Europese Unie",
-       "Interne markt",
-       "Euro"
-      ],
-      "c": 2,
-      "d": 3,
-      "u": "«Interne markt»: de vrije handel binnen de EU zonder grenzen.",
-      "uo": [
-       "«Vrijhandel» betekent handel zonder drempels.",
-       "«Europese Unie» betekent samenwerkende EU-landen.",
-       "Klopt, dit is «Interne markt».",
-       "«Euro» betekent de munt van de eurozone."
-      ],
-      "uh": "Onthoud: «Interne markt» = vrije handel in de EU."
-     },
-     {
-      "v": "Welke term hoort bij \"vrije handel in de EU\"?",
-      "o": [
-       "Euro",
-       "Import",
-       "Globalisering",
-       "Interne markt"
+       "Het spaargeld",
+       "De begroting",
+       "De wisselkoers",
+       "Het verschil tussen export en import"
       ],
       "c": 3,
-      "d": 2,
-      "u": "«Interne markt»: de vrije handel binnen de EU zonder grenzen.",
+      "d": 3,
+      "u": "Het verschil tussen export en import.",
       "uo": [
-       "«Euro» betekent de munt van de eurozone.",
-       "«Import» betekent invoer uit buitenland.",
-       "«Globalisering» betekent landen raken verweven.",
-       "Klopt, «Interne markt» past hierbij."
+       "Nee, dat klopt niet.",
+       "De begroting is iets anders.",
+       "Een koers is iets anders.",
+       "Klopt: het verschil tussen export en import."
       ],
-      "uh": "Onthoud: «Interne markt» = vrije handel in de EU."
+      "uh": "Het verschil tussen export en import."
      },
      {
-      "v": "Wat betekent «Invoerrechten»?",
+      "v": "Wat is globalisering?",
       "o": [
-       "belasting op goederen die worden ingevoerd",
-       "eigen bedrijven beschermen tegen buitenlandse concurrentie",
-       "de vrije handel binnen de EU zonder grenzen",
-       "het steeds meer verweven raken van landen wereldwijd"
-      ],
-      "c": 0,
-      "d": 1,
-      "u": "«Invoerrechten»: belasting op goederen die worden ingevoerd.",
-      "uo": [
-       "Klopt: belasting op invoer.",
-       "Dat is «Protectionisme».",
-       "Dat is «Interne markt».",
-       "Dat is «Globalisering»."
-      ],
-      "uh": "Onthoud: «Invoerrechten» = belasting op invoer."
-     },
-     {
-      "v": "Welk begrip hoort bij: \"belasting op goederen die worden ingevoerd\"?",
-      "o": [
-       "Protectionisme",
-       "Invoerrechten",
-       "Interne markt",
-       "Globalisering"
+       "Landen sluiten zich af",
+       "Landen raken wereldwijd verweven",
+       "Alleen binnenlandse handel",
+       "Minder handel"
       ],
       "c": 1,
-      "d": 3,
-      "u": "«Invoerrechten»: belasting op goederen die worden ingevoerd.",
+      "d": 2,
+      "u": "Landen raken wereldwijd steeds meer verweven.",
       "uo": [
-       "«Protectionisme» betekent eigen markt beschermen.",
-       "Klopt, dit is «Invoerrechten».",
-       "«Interne markt» betekent vrije handel in de EU.",
-       "«Globalisering» betekent landen raken verweven."
+       "Juist het tegenovergestelde.",
+       "Klopt: landen raken wereldwijd steeds meer verweven.",
+       "Nee, dat klopt niet.",
+       "Nee, dat klopt niet."
       ],
-      "uh": "Onthoud: «Invoerrechten» = belasting op invoer."
+      "uh": "Landen raken wereldwijd steeds meer verweven."
      },
      {
-      "v": "Welke term hoort bij \"belasting op invoer\"?",
+      "v": "Wat is ontwikkelingssamenwerking?",
       "o": [
-       "Interne markt",
-       "Globalisering",
-       "Invoerrechten",
-       "Import"
+       "Handel met winst",
+       "Belasting innen",
+       "Hulp aan armere landen",
+       "Een lening bij de bank"
       ],
       "c": 2,
       "d": 2,
-      "u": "«Invoerrechten»: belasting op goederen die worden ingevoerd.",
+      "u": "Hulp aan armere landen om zich te ontwikkelen.",
       "uo": [
-       "«Interne markt» betekent vrije handel in de EU.",
-       "«Globalisering» betekent landen raken verweven.",
-       "Klopt, «Invoerrechten» past hierbij.",
-       "«Import» betekent invoer uit buitenland."
+       "Niet gericht op winst.",
+       "Geen belasting.",
+       "Klopt: hulp aan armere landen om zich te ontwikkelen.",
+       "Geen lening."
       ],
-      "uh": "Onthoud: «Invoerrechten» = belasting op invoer."
+      "uh": "Hulp aan armere landen om zich te ontwikkelen."
      },
      {
-      "v": "Wat betekent «Ontwikkelingssamenwerking»?",
+      "v": "Wat zijn invoerrechten?",
       "o": [
-       "het steeds meer verweven raken van landen wereldwijd",
-       "het verschil tussen de export en de import",
-       "belasting op goederen die worden ingevoerd",
-       "hulp aan armere landen om zich te ontwikkelen"
-      ],
-      "c": 3,
-      "d": 1,
-      "u": "«Ontwikkelingssamenwerking»: hulp aan armere landen om zich te ontwikkelen.",
-      "uo": [
-       "Dat is «Globalisering».",
-       "Dat is «Handelsbalans».",
-       "Dat is «Invoerrechten».",
-       "Klopt: hulp aan arme landen."
-      ],
-      "uh": "Onthoud: «Ontwikkelingssamenwerking» = hulp aan arme landen."
-     },
-     {
-      "v": "Welk begrip hoort bij: \"handel zonder belemmeringen tussen landen\"?",
-      "o": [
-       "Vrijhandel",
-       "Protectionisme",
-       "Export",
-       "Import"
+       "Belasting op ingevoerde goederen",
+       "Belasting op je loon",
+       "Een subsidie",
+       "Een keurmerk"
       ],
       "c": 0,
-      "d": 3,
-      "u": "«Vrijhandel»: handel zonder belemmeringen tussen landen.",
+      "d": 2,
+      "u": "Belasting op goederen die je invoert.",
       "uo": [
-       "Klopt, dit is «Vrijhandel».",
-       "«Protectionisme» betekent eigen markt beschermen.",
-       "«Export» betekent uitvoer naar buitenland.",
-       "«Import» betekent invoer uit buitenland."
+       "Klopt: belasting op goederen die je invoert.",
+       "Dat is loonbelasting.",
+       "Geen subsidie.",
+       "Geen keurmerk."
       ],
-      "uh": "Onthoud: «Vrijhandel» = handel zonder drempels."
+      "uh": "Belasting op goederen die je invoert."
      },
      {
-      "v": "Welke term hoort bij \"handel zonder drempels\"?",
+      "v": "Wat is een voordeel van de interne markt van de EU?",
       "o": [
-       "Export",
-       "Vrijhandel",
-       "Import",
-       "Europese Unie"
+       "Meer grenzen",
+       "Meer invoerrechten",
+       "Hogere belasting",
+       "Vrije handel zonder grenzen"
       ],
-      "c": 1,
-      "d": 2,
-      "u": "«Vrijhandel»: handel zonder belemmeringen tussen landen.",
+      "c": 3,
+      "d": 3,
+      "u": "Vrije handel binnen de EU zonder grenzen.",
       "uo": [
-       "«Export» betekent uitvoer naar buitenland.",
-       "Klopt, «Vrijhandel» past hierbij.",
-       "«Import» betekent invoer uit buitenland.",
-       "«Europese Unie» betekent samenwerkende EU-landen."
+       "Juist minder grenzen.",
+       "Juist minder rechten.",
+       "Niet per se.",
+       "Klopt: vrije handel binnen de EU zonder grenzen."
       ],
-      "uh": "Onthoud: «Vrijhandel» = handel zonder drempels."
+      "uh": "Vrije handel binnen de EU zonder grenzen."
      }
     ],
     "begrippen": [
@@ -11250,498 +9692,232 @@ var VAKKEN_VMBO = [
     "nBeg": 0,
     "sv": [
      {
-      "v": "Welk begrip hoort bij: \"de kosten van schade aan het milieu\"?",
+      "v": "Wat zijn milieukosten?",
       "o": [
-       "Milieukosten",
-       "Externe kosten",
-       "Uitputting",
-       "Grondstof"
-      ],
-      "c": 0,
-      "d": 3,
-      "u": "«Milieukosten»: de kosten van schade aan het milieu.",
-      "uo": [
-       "Klopt, dit is «Milieukosten».",
-       "«Externe kosten» betekent samenleving betaalt de schade.",
-       "«Uitputting» betekent grondstoffen raken op.",
-       "«Grondstof» betekent basismateriaal."
-      ],
-      "uh": "Onthoud: «Milieukosten» = kosten van milieuschade."
-     },
-     {
-      "v": "Welke term hoort bij \"kosten van milieuschade\"?",
-      "o": [
-       "Uitputting",
-       "Milieukosten",
-       "Grondstof",
-       "Vervuiler-betaalt-principe"
+       "De prijs van een product",
+       "De kosten van schade aan het milieu",
+       "De winst",
+       "De belasting"
       ],
       "c": 1,
       "d": 2,
-      "u": "«Milieukosten»: de kosten van schade aan het milieu.",
+      "u": "De kosten van milieuschade.",
       "uo": [
-       "«Uitputting» betekent grondstoffen raken op.",
-       "Klopt, «Milieukosten» past hierbij.",
-       "«Grondstof» betekent basismateriaal.",
-       "«Vervuiler-betaalt-principe» betekent vervuiler betaalt."
+       "Niet de productprijs.",
+       "Klopt: de kosten van milieuschade.",
+       "Winst is iets anders.",
+       "Belasting is iets anders."
       ],
-      "uh": "Onthoud: «Milieukosten» = kosten van milieuschade."
+      "uh": "De kosten van milieuschade."
      },
      {
-      "v": "Wat betekent «Milieukosten»?",
+      "v": "Wat zijn externe kosten?",
       "o": [
-       "kosten die niet de veroorzaker maar de samenleving draagt",
-       "het opraken van grondstoffen",
-       "de kosten van schade aan het milieu",
-       "een natuurlijke stof waarvan je iets maakt"
-      ],
-      "c": 2,
-      "d": 1,
-      "u": "«Milieukosten»: de kosten van schade aan het milieu.",
-      "uo": [
-       "Dat is «Externe kosten».",
-       "Dat is «Uitputting».",
-       "Klopt: kosten van milieuschade.",
-       "Dat is «Grondstof»."
-      ],
-      "uh": "Onthoud: «Milieukosten» = kosten van milieuschade."
-     },
-     {
-      "v": "Welk begrip hoort bij: \"produceren met zorg voor mens en milieu\"?",
-      "o": [
-       "Circulaire economie",
-       "Externe kosten",
-       "Grondstof",
-       "Duurzaam produceren"
-      ],
-      "c": 3,
-      "d": 3,
-      "u": "«Duurzaam produceren»: produceren met zorg voor mens en milieu.",
-      "uo": [
-       "«Circulaire economie» betekent grondstoffen hergebruiken.",
-       "«Externe kosten» betekent samenleving betaalt de schade.",
-       "«Grondstof» betekent basismateriaal.",
-       "Klopt, dit is «Duurzaam produceren»."
-      ],
-      "uh": "Onthoud: «Duurzaam produceren» = produceren met zorg."
-     },
-     {
-      "v": "Welke term hoort bij \"grondstoffen hergebruiken\"?",
-      "o": [
-       "Circulaire economie",
-       "Grondstof",
-       "Externe kosten",
-       "Duurzame ontwikkeling"
-      ],
-      "c": 0,
-      "d": 2,
-      "u": "«Circulaire economie»: een economie waarin grondstoffen worden hergebruikt.",
-      "uo": [
-       "Klopt, «Circulaire economie» past hierbij.",
-       "«Grondstof» betekent basismateriaal.",
-       "«Externe kosten» betekent samenleving betaalt de schade.",
-       "«Duurzame ontwikkeling» betekent toekomstbestendige groei."
-      ],
-      "uh": "Onthoud: «Circulaire economie» = grondstoffen hergebruiken."
-     },
-     {
-      "v": "Wat betekent «Vervuiler-betaalt-principe»?",
-      "o": [
-       "kosten die niet de veroorzaker maar de samenleving draagt",
-       "wie vervuilt, betaalt zelf de kosten daarvan",
-       "een natuurlijke stof waarvan je iets maakt",
-       "afval verwerken tot nieuwe grondstoffen"
-      ],
-      "c": 1,
-      "d": 1,
-      "u": "«Vervuiler-betaalt-principe»: wie vervuilt, betaalt zelf de kosten daarvan.",
-      "uo": [
-       "Dat is «Externe kosten».",
-       "Klopt: vervuiler betaalt.",
-       "Dat is «Grondstof».",
-       "Dat is «Recycling»."
-      ],
-      "uh": "Onthoud: «Vervuiler-betaalt-principe» = vervuiler betaalt."
-     },
-     {
-      "v": "Welk begrip hoort bij: \"een economie waarin grondstoffen worden hergebruikt\"?",
-      "o": [
-       "Recycling",
-       "Duurzaam produceren",
-       "Circulaire economie",
-       "Grondstof"
-      ],
-      "c": 2,
-      "d": 3,
-      "u": "«Circulaire economie»: een economie waarin grondstoffen worden hergebruikt.",
-      "uo": [
-       "«Recycling» betekent afval hergebruiken.",
-       "«Duurzaam produceren» betekent produceren met zorg.",
-       "Klopt, dit is «Circulaire economie».",
-       "«Grondstof» betekent basismateriaal."
-      ],
-      "uh": "Onthoud: «Circulaire economie» = grondstoffen hergebruiken."
-     },
-     {
-      "v": "Welke term hoort bij \"afval hergebruiken\"?",
-      "o": [
-       "Groene energie",
-       "Uitputting",
-       "Duurzame ontwikkeling",
-       "Recycling"
-      ],
-      "c": 3,
-      "d": 2,
-      "u": "«Recycling»: afval verwerken tot nieuwe grondstoffen.",
-      "uo": [
-       "«Groene energie» betekent energie die niet opraakt.",
-       "«Uitputting» betekent grondstoffen raken op.",
-       "«Duurzame ontwikkeling» betekent toekomstbestendige groei.",
-       "Klopt, «Recycling» past hierbij."
-      ],
-      "uh": "Onthoud: «Recycling» = afval hergebruiken."
-     },
-     {
-      "v": "Wat betekent «Duurzaam produceren»?",
-      "o": [
-       "produceren met zorg voor mens en milieu",
-       "een economie waarin grondstoffen worden hergebruikt",
-       "kosten die niet de veroorzaker maar de samenleving draagt",
-       "een natuurlijke stof waarvan je iets maakt"
-      ],
-      "c": 0,
-      "d": 1,
-      "u": "«Duurzaam produceren»: produceren met zorg voor mens en milieu.",
-      "uo": [
-       "Klopt: produceren met zorg.",
-       "Dat is «Circulaire economie».",
-       "Dat is «Externe kosten».",
-       "Dat is «Grondstof»."
-      ],
-      "uh": "Onthoud: «Duurzaam produceren» = produceren met zorg."
-     },
-     {
-      "v": "Welk begrip hoort bij: \"afval verwerken tot nieuwe grondstoffen\"?",
-      "o": [
-       "Circulaire economie",
-       "Recycling",
-       "Groene energie",
-       "Uitputting"
-      ],
-      "c": 1,
-      "d": 3,
-      "u": "«Recycling»: afval verwerken tot nieuwe grondstoffen.",
-      "uo": [
-       "«Circulaire economie» betekent grondstoffen hergebruiken.",
-       "Klopt, dit is «Recycling».",
-       "«Groene energie» betekent energie die niet opraakt.",
-       "«Uitputting» betekent grondstoffen raken op."
-      ],
-      "uh": "Onthoud: «Recycling» = afval hergebruiken."
-     },
-     {
-      "v": "Welke term hoort bij \"basismateriaal\"?",
-      "o": [
-       "Groene energie",
-       "Recycling",
-       "Grondstof",
-       "Uitputting"
+       "Kosten die de maker betaalt",
+       "De gemaakte winst",
+       "Kosten die de samenleving draagt",
+       "De inkoopprijs"
       ],
       "c": 2,
       "d": 2,
-      "u": "«Grondstof»: een natuurlijke stof waarvan je iets maakt.",
+      "u": "Kosten die de samenleving draagt, niet de vervuiler.",
       "uo": [
-       "«Groene energie» betekent energie die niet opraakt.",
-       "«Recycling» betekent afval hergebruiken.",
-       "Klopt, «Grondstof» past hierbij.",
-       "«Uitputting» betekent grondstoffen raken op."
+       "Nee, juist niet de maker.",
+       "Winst is iets anders.",
+       "Klopt: kosten die de samenleving draagt, niet de vervuiler.",
+       "Iets anders."
       ],
-      "uh": "Onthoud: «Grondstof» = basismateriaal."
+      "uh": "Kosten die de samenleving draagt, niet de vervuiler."
      },
      {
-      "v": "Wat betekent «Recycling»?",
+      "v": "Wat betekent het vervuiler-betaalt-principe?",
       "o": [
-       "een economie waarin grondstoffen worden hergebruikt",
-       "energie uit bronnen die niet opraken",
-       "het opraken van grondstoffen",
-       "afval verwerken tot nieuwe grondstoffen"
-      ],
-      "c": 3,
-      "d": 1,
-      "u": "«Recycling»: afval verwerken tot nieuwe grondstoffen.",
-      "uo": [
-       "Dat is «Circulaire economie».",
-       "Dat is «Groene energie».",
-       "Dat is «Uitputting».",
-       "Klopt: afval hergebruiken."
-      ],
-      "uh": "Onthoud: «Recycling» = afval hergebruiken."
-     },
-     {
-      "v": "Welk begrip hoort bij: \"een natuurlijke stof waarvan je iets maakt\"?",
-      "o": [
-       "Grondstof",
-       "Fossiele brandstof",
-       "Groene energie",
-       "Recycling"
+       "Wie vervuilt, betaalt",
+       "De overheid betaalt alles",
+       "Niemand betaalt",
+       "De klant betaalt nooit"
       ],
       "c": 0,
-      "d": 3,
-      "u": "«Grondstof»: een natuurlijke stof waarvan je iets maakt.",
+      "d": 2,
+      "u": "Wie vervuilt betaalt zelf de kosten.",
       "uo": [
-       "Klopt, dit is «Grondstof».",
-       "«Fossiele brandstof» betekent olie, gas en kolen.",
-       "«Groene energie» betekent energie die niet opraakt.",
-       "«Recycling» betekent afval hergebruiken."
+       "Klopt: wie vervuilt betaalt zelf de kosten.",
+       "Nee, dat klopt niet.",
+       "Nee, dat klopt niet.",
+       "Nee, dat klopt niet."
       ],
-      "uh": "Onthoud: «Grondstof» = basismateriaal."
+      "uh": "Wie vervuilt betaalt zelf de kosten."
      },
      {
-      "v": "Welke term hoort bij \"grondstoffen raken op\"?",
+      "v": "Wat is een circulaire economie?",
       "o": [
-       "Externe kosten",
-       "Uitputting",
-       "Milieukosten",
-       "Recycling"
+       "Alles wordt weggegooid",
+       "Meer verbranden",
+       "Grondstoffen uitputten",
+       "Grondstoffen worden hergebruikt"
+      ],
+      "c": 3,
+      "d": 3,
+      "u": "Een economie waarin grondstoffen worden hergebruikt.",
+      "uo": [
+       "Juist niet.",
+       "Nee, dat klopt niet.",
+       "Nee, dat klopt niet.",
+       "Klopt: een economie waarin grondstoffen worden hergebruikt."
+      ],
+      "uh": "Een economie waarin grondstoffen worden hergebruikt."
+     },
+     {
+      "v": "Wat gebeurt er bij recycling?",
+      "o": [
+       "Afval blijft liggen",
+       "Afval wordt nieuwe grondstof",
+       "Afval verdwijnt",
+       "Afval wordt duurder"
       ],
       "c": 1,
-      "d": 2,
-      "u": "«Uitputting»: het opraken van grondstoffen.",
+      "d": 1,
+      "u": "Afval wordt tot nieuwe grondstof verwerkt.",
       "uo": [
-       "«Externe kosten» betekent samenleving betaalt de schade.",
-       "Klopt, «Uitputting» past hierbij.",
-       "«Milieukosten» betekent kosten van milieuschade.",
-       "«Recycling» betekent afval hergebruiken."
+       "Nee, dat klopt niet.",
+       "Klopt: afval wordt tot nieuwe grondstof verwerkt.",
+       "Nee, dat klopt niet.",
+       "Niet per se."
       ],
-      "uh": "Onthoud: «Uitputting» = grondstoffen raken op."
+      "uh": "Afval wordt tot nieuwe grondstof verwerkt."
      },
      {
-      "v": "Wat betekent «Grondstof»?",
+      "v": "Wat is uitputting van grondstoffen?",
       "o": [
-       "brandstof uit resten van organismen, zoals olie en gas",
-       "energie uit bronnen die niet opraken",
-       "een natuurlijke stof waarvan je iets maakt",
-       "afval verwerken tot nieuwe grondstoffen"
+       "Meer grondstoffen krijgen",
+       "Grondstoffen hergebruiken",
+       "Grondstoffen raken op",
+       "Grondstoffen sparen"
       ],
       "c": 2,
-      "d": 1,
-      "u": "«Grondstof»: een natuurlijke stof waarvan je iets maakt.",
-      "uo": [
-       "Dat is «Fossiele brandstof».",
-       "Dat is «Groene energie».",
-       "Klopt: basismateriaal.",
-       "Dat is «Recycling»."
-      ],
-      "uh": "Onthoud: «Grondstof» = basismateriaal."
-     },
-     {
-      "v": "Welk begrip hoort bij: \"het opraken van grondstoffen\"?",
-      "o": [
-       "Duurzame ontwikkeling",
-       "Externe kosten",
-       "Milieukosten",
-       "Uitputting"
-      ],
-      "c": 3,
-      "d": 3,
-      "u": "«Uitputting»: het opraken van grondstoffen.",
-      "uo": [
-       "«Duurzame ontwikkeling» betekent toekomstbestendige groei.",
-       "«Externe kosten» betekent samenleving betaalt de schade.",
-       "«Milieukosten» betekent kosten van milieuschade.",
-       "Klopt, dit is «Uitputting»."
-      ],
-      "uh": "Onthoud: «Uitputting» = grondstoffen raken op."
-     },
-     {
-      "v": "Welke term hoort bij \"olie, gas en kolen\"?",
-      "o": [
-       "Fossiele brandstof",
-       "Vervuiler-betaalt-principe",
-       "Consuminderen",
-       "Externe kosten"
-      ],
-      "c": 0,
       "d": 2,
-      "u": "«Fossiele brandstof»: brandstof uit resten van organismen, zoals olie en gas.",
+      "u": "Grondstoffen raken op.",
       "uo": [
-       "Klopt, «Fossiele brandstof» past hierbij.",
-       "«Vervuiler-betaalt-principe» betekent vervuiler betaalt.",
-       "«Consuminderen» betekent bewust minder gebruiken.",
-       "«Externe kosten» betekent samenleving betaalt de schade."
-      ],
-      "uh": "Onthoud: «Fossiele brandstof» = olie, gas en kolen."
-     },
-     {
-      "v": "Wat betekent «Uitputting»?",
-      "o": [
-       "ontwikkeling die de toekomst niet schaadt",
-       "het opraken van grondstoffen",
-       "kosten die niet de veroorzaker maar de samenleving draagt",
-       "de kosten van schade aan het milieu"
-      ],
-      "c": 1,
-      "d": 1,
-      "u": "«Uitputting»: het opraken van grondstoffen.",
-      "uo": [
-       "Dat is «Duurzame ontwikkeling».",
+       "Nee, dat klopt niet.",
+       "Dat is juist goed.",
        "Klopt: grondstoffen raken op.",
-       "Dat is «Externe kosten».",
-       "Dat is «Milieukosten»."
+       "Nee, dat klopt niet."
       ],
-      "uh": "Onthoud: «Uitputting» = grondstoffen raken op."
+      "uh": "Grondstoffen raken op."
      },
      {
-      "v": "Welk begrip hoort bij: \"brandstof uit resten van organismen, zoals olie en gas\"?",
+      "v": "Wat is duurzaam produceren?",
       "o": [
-       "Groene energie",
-       "Vervuiler-betaalt-principe",
-       "Fossiele brandstof",
-       "Consuminderen"
-      ],
-      "c": 2,
-      "d": 3,
-      "u": "«Fossiele brandstof»: brandstof uit resten van organismen, zoals olie en gas.",
-      "uo": [
-       "«Groene energie» betekent energie die niet opraakt.",
-       "«Vervuiler-betaalt-principe» betekent vervuiler betaalt.",
-       "Klopt, dit is «Fossiele brandstof».",
-       "«Consuminderen» betekent bewust minder gebruiken."
-      ],
-      "uh": "Onthoud: «Fossiele brandstof» = olie, gas en kolen."
-     },
-     {
-      "v": "Welke term hoort bij \"energie die niet opraakt\"?",
-      "o": [
-       "Duurzaam produceren",
-       "Consuminderen",
-       "Recycling",
-       "Groene energie"
-      ],
-      "c": 3,
-      "d": 2,
-      "u": "«Groene energie»: energie uit bronnen die niet opraken.",
-      "uo": [
-       "«Duurzaam produceren» betekent produceren met zorg.",
-       "«Consuminderen» betekent bewust minder gebruiken.",
-       "«Recycling» betekent afval hergebruiken.",
-       "Klopt, «Groene energie» past hierbij."
-      ],
-      "uh": "Onthoud: «Groene energie» = energie die niet opraakt."
-     },
-     {
-      "v": "Wat betekent «Duurzame ontwikkeling»?",
-      "o": [
-       "ontwikkeling die de toekomst niet schaadt",
-       "het opraken van grondstoffen",
-       "brandstof uit resten van organismen, zoals olie en gas",
-       "een natuurlijke stof waarvan je iets maakt"
+       "Produceren met zorg voor milieu",
+       "Zoveel mogelijk vervuilen",
+       "Alles wegwerpen",
+       "Grondstoffen uitputten"
       ],
       "c": 0,
       "d": 1,
-      "u": "«Duurzame ontwikkeling»: ontwikkeling die de toekomst niet schaadt.",
+      "u": "Produceren met zorg voor mens en milieu.",
       "uo": [
-       "Klopt: toekomstbestendige groei.",
-       "Dat is «Uitputting».",
-       "Dat is «Fossiele brandstof».",
-       "Dat is «Grondstof»."
+       "Klopt: produceren met zorg voor mens en milieu.",
+       "Nee, dat klopt niet.",
+       "Nee, dat klopt niet.",
+       "Nee, dat klopt niet."
       ],
-      "uh": "Onthoud: «Duurzame ontwikkeling» = toekomstbestendige groei."
+      "uh": "Produceren met zorg voor mens en milieu."
      },
      {
-      "v": "Welk begrip hoort bij: \"energie uit bronnen die niet opraken\"?",
+      "v": "Wat is een fossiele brandstof?",
       "o": [
-       "Fossiele brandstof",
-       "Groene energie",
-       "Duurzaam produceren",
-       "Consuminderen"
-      ],
-      "c": 1,
-      "d": 3,
-      "u": "«Groene energie»: energie uit bronnen die niet opraken.",
-      "uo": [
-       "«Fossiele brandstof» betekent olie, gas en kolen.",
-       "Klopt, dit is «Groene energie».",
-       "«Duurzaam produceren» betekent produceren met zorg.",
-       "«Consuminderen» betekent bewust minder gebruiken."
-      ],
-      "uh": "Onthoud: «Groene energie» = energie die niet opraakt."
-     },
-     {
-      "v": "Welke term hoort bij \"bewust minder gebruiken\"?",
-      "o": [
-       "Uitputting",
-       "Groene energie",
-       "Consuminderen",
-       "Milieukosten"
-      ],
-      "c": 2,
-      "d": 2,
-      "u": "«Consuminderen»: bewust minder kopen en gebruiken.",
-      "uo": [
-       "«Uitputting» betekent grondstoffen raken op.",
-       "«Groene energie» betekent energie die niet opraakt.",
-       "Klopt, «Consuminderen» past hierbij.",
-       "«Milieukosten» betekent kosten van milieuschade."
-      ],
-      "uh": "Onthoud: «Consuminderen» = bewust minder gebruiken."
-     },
-     {
-      "v": "Wat betekent «Groene energie»?",
-      "o": [
-       "brandstof uit resten van organismen, zoals olie en gas",
-       "produceren met zorg voor mens en milieu",
-       "bewust minder kopen en gebruiken",
-       "energie uit bronnen die niet opraken"
+       "Zonne-energie",
+       "Windenergie",
+       "Waterkracht",
+       "Aardolie"
       ],
       "c": 3,
       "d": 1,
-      "u": "«Groene energie»: energie uit bronnen die niet opraken.",
+      "u": "Aardolie is fossiel en raakt op.",
       "uo": [
-       "Dat is «Fossiele brandstof».",
-       "Dat is «Duurzaam produceren».",
-       "Dat is «Consuminderen».",
-       "Klopt: energie die niet opraakt."
+       "Duurzaam.",
+       "Duurzaam.",
+       "Duurzaam.",
+       "Klopt: aardolie is fossiel en raakt op."
       ],
-      "uh": "Onthoud: «Groene energie» = energie die niet opraakt."
+      "uh": "Aardolie is fossiel en raakt op."
      },
      {
-      "v": "Welk begrip hoort bij: \"bewust minder kopen en gebruiken\"?",
+      "v": "Waarom zijn externe kosten een probleem?",
       "o": [
-       "Consuminderen",
-       "Duurzaam produceren",
-       "Uitputting",
-       "Groene energie"
-      ],
-      "c": 0,
-      "d": 3,
-      "u": "«Consuminderen»: bewust minder kopen en gebruiken.",
-      "uo": [
-       "Klopt, dit is «Consuminderen».",
-       "«Duurzaam produceren» betekent produceren met zorg.",
-       "«Uitputting» betekent grondstoffen raken op.",
-       "«Groene energie» betekent energie die niet opraakt."
-      ],
-      "uh": "Onthoud: «Consuminderen» = bewust minder gebruiken."
-     },
-     {
-      "v": "Wat betekent «Consuminderen»?",
-      "o": [
-       "produceren met zorg voor mens en milieu",
-       "bewust minder kopen en gebruiken",
-       "het opraken van grondstoffen",
-       "energie uit bronnen die niet opraken"
+       "De maker betaalt te veel",
+       "De samenleving draait ervoor op",
+       "Er is geen probleem",
+       "Producten worden gratis"
       ],
       "c": 1,
-      "d": 1,
-      "u": "«Consuminderen»: bewust minder kopen en gebruiken.",
+      "d": 3,
+      "u": "De samenleving betaalt de schade, niet de vervuiler.",
       "uo": [
-       "Dat is «Duurzaam produceren».",
-       "Klopt: bewust minder gebruiken.",
-       "Dat is «Uitputting».",
-       "Dat is «Groene energie»."
+       "Juist niet de maker.",
+       "Klopt: de samenleving betaalt de schade, niet de vervuiler.",
+       "Er is wel een probleem.",
+       "Nee, dat klopt niet."
       ],
-      "uh": "Onthoud: «Consuminderen» = bewust minder gebruiken."
+      "uh": "De samenleving betaalt de schade, niet de vervuiler."
+     },
+     {
+      "v": "Wat is duurzame ontwikkeling?",
+      "o": [
+       "Snelle uitputting",
+       "Alleen nu belangrijk",
+       "Groei die de toekomst niet schaadt",
+       "Meer vervuiling"
+      ],
+      "c": 2,
+      "d": 2,
+      "u": "Ontwikkeling die de toekomst niet schaadt.",
+      "uo": [
+       "Nee, dat klopt niet.",
+       "Nee, ook de toekomst telt.",
+       "Klopt: ontwikkeling die de toekomst niet schaadt.",
+       "Nee, dat klopt niet."
+      ],
+      "uh": "Ontwikkeling die de toekomst niet schaadt."
+     },
+     {
+      "v": "Wat is groene energie?",
+      "o": [
+       "Energie die niet opraakt",
+       "Aardgas",
+       "Steenkool",
+       "Aardolie"
+      ],
+      "c": 0,
+      "d": 1,
+      "u": "Uit bronnen die niet opraken, zoals zon en wind.",
+      "uo": [
+       "Klopt: uit bronnen die niet opraken, zoals zon en wind.",
+       "Fossiel.",
+       "Fossiel.",
+       "Fossiel."
+      ],
+      "uh": "Uit bronnen die niet opraken, zoals zon en wind."
+     },
+     {
+      "v": "Wat is consuminderen?",
+      "o": [
+       "Meer kopen",
+       "Alles vervangen",
+       "Vaker weggooien",
+       "Bewust minder gebruiken"
+      ],
+      "c": 3,
+      "d": 2,
+      "u": "Bewust minder kopen en gebruiken.",
+      "uo": [
+       "Juist niet.",
+       "Nee, dat klopt niet.",
+       "Nee, dat klopt niet.",
+       "Klopt: bewust minder kopen en gebruiken."
+      ],
+      "uh": "Bewust minder kopen en gebruiken."
      }
     ],
     "begrippen": [
@@ -11811,498 +9987,232 @@ var VAKKEN_VMBO = [
     "nBeg": 0,
     "sv": [
      {
-      "v": "Welk begrip hoort bij: \"de vergoeding voor het lenen of uitlenen van geld\"?",
+      "v": "Wat is rente?",
       "o": [
-       "Rente",
-       "Aflossing",
-       "Krediet",
-       "Inflatie"
-      ],
-      "c": 0,
-      "d": 3,
-      "u": "«Rente»: de vergoeding voor het lenen of uitlenen van geld.",
-      "uo": [
-       "Klopt, dit is «Rente».",
-       "«Aflossing» betekent lening terugbetalen.",
-       "«Krediet» betekent mogelijkheid om te lenen.",
-       "«Inflatie» betekent prijzen stijgen."
-      ],
-      "uh": "Onthoud: «Rente» = vergoeding voor geld."
-     },
-     {
-      "v": "Welke term hoort bij \"vergoeding voor geld\"?",
-      "o": [
-       "Krediet",
-       "Rente",
-       "Inflatie",
-       "Rentestand"
-      ],
-      "c": 1,
-      "d": 2,
-      "u": "«Rente»: de vergoeding voor het lenen of uitlenen van geld.",
-      "uo": [
-       "«Krediet» betekent mogelijkheid om te lenen.",
-       "Klopt, «Rente» past hierbij.",
-       "«Inflatie» betekent prijzen stijgen.",
-       "«Rentestand» betekent hoogte van de rente."
-      ],
-      "uh": "Onthoud: «Rente» = vergoeding voor geld."
-     },
-     {
-      "v": "Wat betekent «Samengestelde interest»?",
-      "o": [
-       "rente alleen over het oorspronkelijke bedrag",
-       "bezit dat de bank mag verkopen als je niet terugbetaalt",
-       "rente die je ook over eerder ontvangen rente krijgt",
-       "een lening voor een huis met het huis als onderpand"
-      ],
-      "c": 2,
-      "d": 1,
-      "u": "«Samengestelde interest»: rente die je ook over eerder ontvangen rente krijgt.",
-      "uo": [
-       "Dat is «Enkelvoudige interest».",
-       "Dat is «Onderpand».",
-       "Klopt: rente over rente.",
-       "Dat is «Hypotheek»."
-      ],
-      "uh": "Onthoud: «Samengestelde interest» = rente over rente."
-     },
-     {
-      "v": "Welk begrip hoort bij: \"rente alleen over het oorspronkelijke bedrag\"?",
-      "o": [
-       "Samengestelde interest",
-       "Onderpand",
-       "Aflossing",
-       "Enkelvoudige interest"
-      ],
-      "c": 3,
-      "d": 3,
-      "u": "«Enkelvoudige interest»: rente alleen over het oorspronkelijke bedrag.",
-      "uo": [
-       "«Samengestelde interest» betekent rente over rente.",
-       "«Onderpand» betekent zekerheid voor de bank.",
-       "«Aflossing» betekent lening terugbetalen.",
-       "Klopt, dit is «Enkelvoudige interest»."
-      ],
-      "uh": "Onthoud: «Enkelvoudige interest» = rente over startbedrag."
-     },
-     {
-      "v": "Welke term hoort bij \"geld opzijzetten\"?",
-      "o": [
-       "Sparen",
-       "Samengestelde interest",
-       "Rente",
-       "Inflatie"
-      ],
-      "c": 0,
-      "d": 2,
-      "u": "«Sparen»: geld opzijzetten, vaak bij een bank tegen rente.",
-      "uo": [
-       "Klopt, «Sparen» past hierbij.",
-       "«Samengestelde interest» betekent rente over rente.",
-       "«Rente» betekent vergoeding voor geld.",
-       "«Inflatie» betekent prijzen stijgen."
-      ],
-      "uh": "Onthoud: «Sparen» = geld opzijzetten."
-     },
-     {
-      "v": "Wat betekent «Enkelvoudige interest»?",
-      "o": [
-       "rente die je ook over eerder ontvangen rente krijgt",
-       "rente alleen over het oorspronkelijke bedrag",
-       "bezit dat de bank mag verkopen als je niet terugbetaalt",
-       "het terugbetalen van een lening"
+       "Een belasting",
+       "De vergoeding voor geld lenen of uitlenen",
+       "Je spaargeld",
+       "Een boete"
       ],
       "c": 1,
       "d": 1,
-      "u": "«Enkelvoudige interest»: rente alleen over het oorspronkelijke bedrag.",
+      "u": "De vergoeding voor het gebruik van geld.",
       "uo": [
-       "Dat is «Samengestelde interest».",
-       "Klopt: rente over startbedrag.",
-       "Dat is «Onderpand».",
-       "Dat is «Aflossing»."
+       "Geen belasting.",
+       "Klopt: de vergoeding voor het gebruik van geld.",
+       "Sparen is iets anders.",
+       "Geen boete."
       ],
-      "uh": "Onthoud: «Enkelvoudige interest» = rente over startbedrag."
+      "uh": "De vergoeding voor het gebruik van geld."
      },
      {
-      "v": "Welk begrip hoort bij: \"geld opzijzetten, vaak bij een bank tegen rente\"?",
+      "v": "Wat is samengestelde interest?",
       "o": [
-       "Lenen",
-       "Samengestelde interest",
-       "Sparen",
-       "Rente"
-      ],
-      "c": 2,
-      "d": 3,
-      "u": "«Sparen»: geld opzijzetten, vaak bij een bank tegen rente.",
-      "uo": [
-       "«Lenen» betekent geld tijdelijk gebruiken.",
-       "«Samengestelde interest» betekent rente over rente.",
-       "Klopt, dit is «Sparen».",
-       "«Rente» betekent vergoeding voor geld."
-      ],
-      "uh": "Onthoud: «Sparen» = geld opzijzetten."
-     },
-     {
-      "v": "Welke term hoort bij \"geld tijdelijk gebruiken\"?",
-      "o": [
-       "Inflatie",
-       "Onderpand",
-       "Rentestand",
-       "Lenen"
-      ],
-      "c": 3,
-      "d": 2,
-      "u": "«Lenen»: geld tijdelijk van een ander gebruiken tegen rente.",
-      "uo": [
-       "«Inflatie» betekent prijzen stijgen.",
-       "«Onderpand» betekent zekerheid voor de bank.",
-       "«Rentestand» betekent hoogte van de rente.",
-       "Klopt, «Lenen» past hierbij."
-      ],
-      "uh": "Onthoud: «Lenen» = geld tijdelijk gebruiken."
-     },
-     {
-      "v": "Wat betekent «Sparen»?",
-      "o": [
-       "geld opzijzetten, vaak bij een bank tegen rente",
-       "geld tijdelijk van een ander gebruiken tegen rente",
-       "rente die je ook over eerder ontvangen rente krijgt",
-       "de vergoeding voor het lenen of uitlenen van geld"
-      ],
-      "c": 0,
-      "d": 1,
-      "u": "«Sparen»: geld opzijzetten, vaak bij een bank tegen rente.",
-      "uo": [
-       "Klopt: geld opzijzetten.",
-       "Dat is «Lenen».",
-       "Dat is «Samengestelde interest».",
-       "Dat is «Rente»."
-      ],
-      "uh": "Onthoud: «Sparen» = geld opzijzetten."
-     },
-     {
-      "v": "Welk begrip hoort bij: \"geld tijdelijk van een ander gebruiken tegen rente\"?",
-      "o": [
-       "Sparen",
-       "Lenen",
-       "Krediet",
-       "Inflatie"
-      ],
-      "c": 1,
-      "d": 3,
-      "u": "«Lenen»: geld tijdelijk van een ander gebruiken tegen rente.",
-      "uo": [
-       "«Sparen» betekent geld opzijzetten.",
-       "Klopt, dit is «Lenen».",
-       "«Krediet» betekent mogelijkheid om te lenen.",
-       "«Inflatie» betekent prijzen stijgen."
-      ],
-      "uh": "Onthoud: «Lenen» = geld tijdelijk gebruiken."
-     },
-     {
-      "v": "Welke term hoort bij \"lening voor een huis\"?",
-      "o": [
-       "Onderpand",
-       "Centrale bank",
-       "Hypotheek",
-       "Rentestand"
+       "Rente over alleen het startbedrag",
+       "Helemaal geen rente",
+       "Rente ook over eerdere rente",
+       "Een belasting"
       ],
       "c": 2,
       "d": 2,
-      "u": "«Hypotheek»: een lening voor een huis met het huis als onderpand.",
+      "u": "Je krijgt rente over de rente.",
       "uo": [
-       "«Onderpand» betekent zekerheid voor de bank.",
-       "«Centrale bank» betekent bewaakt het geld.",
-       "Klopt, «Hypotheek» past hierbij.",
-       "«Rentestand» betekent hoogte van de rente."
+       "Dat is enkelvoudige interest.",
+       "Nee, dat klopt niet.",
+       "Klopt: je krijgt rente over de rente.",
+       "Geen belasting."
       ],
-      "uh": "Onthoud: «Hypotheek» = lening voor een huis."
+      "uh": "Je krijgt rente over de rente."
      },
      {
-      "v": "Wat betekent «Hypotheek»?",
+      "v": "Wat is enkelvoudige interest?",
       "o": [
-       "de mogelijkheid om geld te lenen",
-       "bezit dat de bank mag verkopen als je niet terugbetaalt",
-       "de bank die het geldbeleid van een land of de EU bepaalt",
-       "een lening voor een huis met het huis als onderpand"
-      ],
-      "c": 3,
-      "d": 1,
-      "u": "«Hypotheek»: een lening voor een huis met het huis als onderpand.",
-      "uo": [
-       "Dat is «Krediet».",
-       "Dat is «Onderpand».",
-       "Dat is «Centrale bank».",
-       "Klopt: lening voor een huis."
-      ],
-      "uh": "Onthoud: «Hypotheek» = lening voor een huis."
-     },
-     {
-      "v": "Welk begrip hoort bij: \"een lening voor een huis met het huis als onderpand\"?",
-      "o": [
-       "Hypotheek",
-       "Krediet",
-       "Onderpand",
-       "Centrale bank"
-      ],
-      "c": 0,
-      "d": 3,
-      "u": "«Hypotheek»: een lening voor een huis met het huis als onderpand.",
-      "uo": [
-       "Klopt, dit is «Hypotheek».",
-       "«Krediet» betekent mogelijkheid om te lenen.",
-       "«Onderpand» betekent zekerheid voor de bank.",
-       "«Centrale bank» betekent bewaakt het geld."
-      ],
-      "uh": "Onthoud: «Hypotheek» = lening voor een huis."
-     },
-     {
-      "v": "Welke term hoort bij \"hoogte van de rente\"?",
-      "o": [
-       "Enkelvoudige interest",
-       "Rentestand",
-       "Samengestelde interest",
-       "Centrale bank"
-      ],
-      "c": 1,
-      "d": 2,
-      "u": "«Rentestand»: de hoogte van de rente op een bepaald moment.",
-      "uo": [
-       "«Enkelvoudige interest» betekent rente over startbedrag.",
-       "Klopt, «Rentestand» past hierbij.",
-       "«Samengestelde interest» betekent rente over rente.",
-       "«Centrale bank» betekent bewaakt het geld."
-      ],
-      "uh": "Onthoud: «Rentestand» = hoogte van de rente."
-     },
-     {
-      "v": "Wat betekent «Rentestand»?",
-      "o": [
-       "de vergoeding voor het lenen of uitlenen van geld",
-       "rente alleen over het oorspronkelijke bedrag",
-       "de hoogte van de rente op een bepaald moment",
-       "rente die je ook over eerder ontvangen rente krijgt"
-      ],
-      "c": 2,
-      "d": 1,
-      "u": "«Rentestand»: de hoogte van de rente op een bepaald moment.",
-      "uo": [
-       "Dat is «Rente».",
-       "Dat is «Enkelvoudige interest».",
-       "Klopt: hoogte van de rente.",
-       "Dat is «Samengestelde interest»."
-      ],
-      "uh": "Onthoud: «Rentestand» = hoogte van de rente."
-     },
-     {
-      "v": "Welk begrip hoort bij: \"de hoogte van de rente op een bepaald moment\"?",
-      "o": [
-       "Rente",
-       "Enkelvoudige interest",
-       "Samengestelde interest",
-       "Rentestand"
-      ],
-      "c": 3,
-      "d": 3,
-      "u": "«Rentestand»: de hoogte van de rente op een bepaald moment.",
-      "uo": [
-       "«Rente» betekent vergoeding voor geld.",
-       "«Enkelvoudige interest» betekent rente over startbedrag.",
-       "«Samengestelde interest» betekent rente over rente.",
-       "Klopt, dit is «Rentestand»."
-      ],
-      "uh": "Onthoud: «Rentestand» = hoogte van de rente."
-     },
-     {
-      "v": "Welke term hoort bij \"lening terugbetalen\"?",
-      "o": [
-       "Aflossing",
-       "Krediet",
-       "Centrale bank",
-       "Rentestand"
+       "Rente over alleen het startbedrag",
+       "Rente over rente",
+       "Helemaal geen rente",
+       "Een lening"
       ],
       "c": 0,
       "d": 2,
-      "u": "«Aflossing»: het terugbetalen van een lening.",
+      "u": "Rente alleen over het oorspronkelijke bedrag.",
       "uo": [
-       "Klopt, «Aflossing» past hierbij.",
-       "«Krediet» betekent mogelijkheid om te lenen.",
-       "«Centrale bank» betekent bewaakt het geld.",
-       "«Rentestand» betekent hoogte van de rente."
+       "Klopt: rente alleen over het oorspronkelijke bedrag.",
+       "Dat is samengesteld.",
+       "Nee, dat klopt niet.",
+       "Een lening is iets anders."
       ],
-      "uh": "Onthoud: «Aflossing» = lening terugbetalen."
+      "uh": "Rente alleen over het oorspronkelijke bedrag."
      },
      {
-      "v": "Wat betekent «Aflossing»?",
+      "v": "Je zet € 100 weg tegen 10% rente. Hoeveel rente in jaar 2 (samengesteld)?",
       "o": [
-       "de vergoeding voor het lenen of uitlenen van geld",
-       "het terugbetalen van een lening",
-       "de mogelijkheid om geld te lenen",
-       "de bank die het geldbeleid van een land of de EU bepaalt"
+       "€ 10",
+       "€ 0",
+       "€ 100",
+       "€ 11"
+      ],
+      "c": 3,
+      "d": 3,
+      "u": "10% over € 110 is € 11.",
+      "uo": [
+       "Dat is jaar 1.",
+       "Er is wel rente.",
+       "Veel te veel.",
+       "Klopt: 10% over € 110 is € 11."
+      ],
+      "uh": "10% over € 110 is € 11."
+     },
+     {
+      "v": "Wat is een hypotheek?",
+      "o": [
+       "Een spaarrekening",
+       "Een lening voor een huis",
+       "Een belasting",
+       "Een verzekering"
       ],
       "c": 1,
       "d": 1,
-      "u": "«Aflossing»: het terugbetalen van een lening.",
+      "u": "Een lening voor een huis, met het huis als onderpand.",
       "uo": [
-       "Dat is «Rente».",
-       "Klopt: lening terugbetalen.",
-       "Dat is «Krediet».",
-       "Dat is «Centrale bank»."
+       "Nee, dat klopt niet.",
+       "Klopt: een lening voor een huis, met het huis als onderpand.",
+       "Geen belasting.",
+       "Geen verzekering."
       ],
-      "uh": "Onthoud: «Aflossing» = lening terugbetalen."
+      "uh": "Een lening voor een huis, met het huis als onderpand."
      },
      {
-      "v": "Welk begrip hoort bij: \"het terugbetalen van een lening\"?",
+      "v": "Wat is onderpand?",
       "o": [
-       "Rente",
-       "Krediet",
-       "Aflossing",
-       "Centrale bank"
+       "Je spaargeld",
+       "De rente",
+       "Bezit dat de bank mag verkopen bij niet-betalen",
+       "De premie"
       ],
       "c": 2,
-      "d": 3,
-      "u": "«Aflossing»: het terugbetalen van een lening.",
-      "uo": [
-       "«Rente» betekent vergoeding voor geld.",
-       "«Krediet» betekent mogelijkheid om te lenen.",
-       "Klopt, dit is «Aflossing».",
-       "«Centrale bank» betekent bewaakt het geld."
-      ],
-      "uh": "Onthoud: «Aflossing» = lening terugbetalen."
-     },
-     {
-      "v": "Welke term hoort bij \"zekerheid voor de bank\"?",
-      "o": [
-       "Krediet",
-       "Centrale bank",
-       "Rentestand",
-       "Onderpand"
-      ],
-      "c": 3,
       "d": 2,
-      "u": "«Onderpand»: bezit dat de bank mag verkopen als je niet terugbetaalt.",
+      "u": "Zekerheid voor de bank.",
       "uo": [
-       "«Krediet» betekent mogelijkheid om te lenen.",
-       "«Centrale bank» betekent bewaakt het geld.",
-       "«Rentestand» betekent hoogte van de rente.",
-       "Klopt, «Onderpand» past hierbij."
-      ],
-      "uh": "Onthoud: «Onderpand» = zekerheid voor de bank."
-     },
-     {
-      "v": "Wat betekent «Onderpand»?",
-      "o": [
-       "bezit dat de bank mag verkopen als je niet terugbetaalt",
-       "een lening voor een huis met het huis als onderpand",
-       "de mogelijkheid om geld te lenen",
-       "de bank die het geldbeleid van een land of de EU bepaalt"
-      ],
-      "c": 0,
-      "d": 1,
-      "u": "«Onderpand»: bezit dat de bank mag verkopen als je niet terugbetaalt.",
-      "uo": [
+       "Nee, dat klopt niet.",
+       "Rente is iets anders.",
        "Klopt: zekerheid voor de bank.",
-       "Dat is «Hypotheek».",
-       "Dat is «Krediet».",
-       "Dat is «Centrale bank»."
+       "Premie hoort bij verzekeren."
       ],
-      "uh": "Onthoud: «Onderpand» = zekerheid voor de bank."
+      "uh": "Zekerheid voor de bank."
      },
      {
-      "v": "Welk begrip hoort bij: \"bezit dat de bank mag verkopen als je niet terugbetaalt\"?",
+      "v": "Wat is aflossing?",
       "o": [
-       "Hypotheek",
-       "Onderpand",
-       "Krediet",
-       "Centrale bank"
+       "Het terugbetalen van een lening",
+       "De rente",
+       "Het sparen",
+       "De premie"
+      ],
+      "c": 0,
+      "d": 1,
+      "u": "Het terugbetalen van een lening.",
+      "uo": [
+       "Klopt: het terugbetalen van een lening.",
+       "Rente is de vergoeding.",
+       "Sparen is iets anders.",
+       "Premie is iets anders."
+      ],
+      "uh": "Het terugbetalen van een lening."
+     },
+     {
+      "v": "Wat doet de centrale bank?",
+      "o": [
+       "Producten verkopen",
+       "Belasting innen",
+       "Loon betalen",
+       "Het geld bewaken"
+      ],
+      "c": 3,
+      "d": 2,
+      "u": "De centrale bank bewaakt de waarde van het geld.",
+      "uo": [
+       "Nee, dat klopt niet.",
+       "Dat doet de Belastingdienst.",
+       "Nee, dat klopt niet.",
+       "Klopt: de centrale bank bewaakt de waarde van het geld."
+      ],
+      "uh": "De centrale bank bewaakt de waarde van het geld."
+     },
+     {
+      "v": "Wat is krediet?",
+      "o": [
+       "Een belasting",
+       "De mogelijkheid om te lenen",
+       "Je spaargeld",
+       "Een keurmerk"
       ],
       "c": 1,
-      "d": 3,
-      "u": "«Onderpand»: bezit dat de bank mag verkopen als je niet terugbetaalt.",
+      "d": 2,
+      "u": "De mogelijkheid om geld te lenen.",
       "uo": [
-       "«Hypotheek» betekent lening voor een huis.",
-       "Klopt, dit is «Onderpand».",
-       "«Krediet» betekent mogelijkheid om te lenen.",
-       "«Centrale bank» betekent bewaakt het geld."
+       "Geen belasting.",
+       "Klopt: de mogelijkheid om geld te lenen.",
+       "Sparen is iets anders.",
+       "Geen keurmerk."
       ],
-      "uh": "Onthoud: «Onderpand» = zekerheid voor de bank."
+      "uh": "De mogelijkheid om geld te lenen."
      },
      {
-      "v": "Welke term hoort bij \"mogelijkheid om te lenen\"?",
+      "v": "Wat gebeurt er bij inflatie met je geld?",
       "o": [
-       "Centrale bank",
-       "Sparen",
-       "Krediet",
-       "Inflatie"
+       "Het wordt meer waard",
+       "Het blijft gelijk",
+       "Het wordt minder waard",
+       "Het verdwijnt"
       ],
       "c": 2,
       "d": 2,
-      "u": "«Krediet»: de mogelijkheid om geld te lenen.",
+      "u": "Door stijgende prijzen wordt geld minder waard.",
       "uo": [
-       "«Centrale bank» betekent bewaakt het geld.",
-       "«Sparen» betekent geld opzijzetten.",
-       "Klopt, «Krediet» past hierbij.",
-       "«Inflatie» betekent prijzen stijgen."
+       "Nee, minder.",
+       "Nee, dat klopt niet.",
+       "Klopt: door stijgende prijzen wordt geld minder waard.",
+       "Geld verdwijnt niet."
       ],
-      "uh": "Onthoud: «Krediet» = mogelijkheid om te lenen."
+      "uh": "Door stijgende prijzen wordt geld minder waard."
      },
      {
-      "v": "Wat betekent «Krediet»?",
+      "v": "Wat is sparen?",
       "o": [
-       "geld tijdelijk van een ander gebruiken tegen rente",
-       "de bank die het geldbeleid van een land of de EU bepaalt",
-       "geld opzijzetten, vaak bij een bank tegen rente",
-       "de mogelijkheid om geld te lenen"
-      ],
-      "c": 3,
-      "d": 1,
-      "u": "«Krediet»: de mogelijkheid om geld te lenen.",
-      "uo": [
-       "Dat is «Lenen».",
-       "Dat is «Centrale bank».",
-       "Dat is «Sparen».",
-       "Klopt: mogelijkheid om te lenen."
-      ],
-      "uh": "Onthoud: «Krediet» = mogelijkheid om te lenen."
-     },
-     {
-      "v": "Welk begrip hoort bij: \"de mogelijkheid om geld te lenen\"?",
-      "o": [
-       "Krediet",
-       "Lenen",
-       "Centrale bank",
-       "Sparen"
+       "Geld opzijzetten bij een bank",
+       "Geld lenen",
+       "Geld uitgeven",
+       "Belasting betalen"
       ],
       "c": 0,
-      "d": 3,
-      "u": "«Krediet»: de mogelijkheid om geld te lenen.",
+      "d": 1,
+      "u": "Geld opzijzetten, vaak tegen rente.",
       "uo": [
-       "Klopt, dit is «Krediet».",
-       "«Lenen» betekent geld tijdelijk gebruiken.",
-       "«Centrale bank» betekent bewaakt het geld.",
-       "«Sparen» betekent geld opzijzetten."
+       "Klopt: geld opzijzetten, vaak tegen rente.",
+       "Dat is het tegenovergestelde.",
+       "Uitgeven is iets anders.",
+       "Belasting is iets anders."
       ],
-      "uh": "Onthoud: «Krediet» = mogelijkheid om te lenen."
+      "uh": "Geld opzijzetten, vaak tegen rente."
      },
      {
-      "v": "Welke term hoort bij \"prijzen stijgen\"?",
+      "v": "Waarom groeit spaargeld sneller met samengestelde interest?",
       "o": [
-       "Onderpand",
-       "Inflatie",
-       "Krediet",
-       "Samengestelde interest"
+       "Omdat de bank meer geeft",
+       "Omdat je meer stort",
+       "Omdat de rente daalt",
+       "Omdat je rente over rente krijgt"
       ],
-      "c": 1,
-      "d": 2,
-      "u": "«Inflatie»: een algemene stijging van de prijzen.",
+      "c": 3,
+      "d": 3,
+      "u": "Je krijgt ook rente over de eerder ontvangen rente.",
       "uo": [
-       "«Onderpand» betekent zekerheid voor de bank.",
-       "Klopt, «Inflatie» past hierbij.",
-       "«Krediet» betekent mogelijkheid om te lenen.",
-       "«Samengestelde interest» betekent rente over rente."
+       "Niet zomaar.",
+       "Niet per se.",
+       "Nee, dat klopt niet.",
+       "Klopt: je krijgt ook rente over de eerder ontvangen rente."
       ],
-      "uh": "Onthoud: «Inflatie» = prijzen stijgen."
+      "uh": "Je krijgt ook rente over de eerder ontvangen rente."
      }
     ],
     "begrippen": [
@@ -12372,498 +10282,232 @@ var VAKKEN_VMBO = [
     "nBeg": 0,
     "sv": [
      {
-      "v": "Welk begrip hoort bij: \"geld dat je uitgeeft aan bedrijfsmiddelen\"?",
+      "v": "Wat is een ondernemer?",
       "o": [
-       "Investering",
-       "Startkapitaal",
-       "Concurrent",
-       "Doelgroep"
-      ],
-      "c": 0,
-      "d": 3,
-      "u": "«Investering»: geld dat je uitgeeft aan bedrijfsmiddelen.",
-      "uo": [
-       "Klopt, dit is «Investering».",
-       "«Startkapitaal» betekent geld om te starten.",
-       "«Concurrent» betekent rivaal op de markt.",
-       "«Doelgroep» betekent jouw klanten."
-      ],
-      "uh": "Onthoud: «Investering» = geld in bedrijfsmiddelen."
-     },
-     {
-      "v": "Welke term hoort bij \"start een bedrijf\"?",
-      "o": [
-       "Risico",
-       "Ondernemer",
-       "Startkapitaal",
-       "Ondernemingsplan"
-      ],
-      "c": 1,
-      "d": 2,
-      "u": "«Ondernemer»: iemand die een bedrijf start en er risico mee neemt.",
-      "uo": [
-       "«Risico» betekent kans op verlies.",
-       "Klopt, «Ondernemer» past hierbij.",
-       "«Startkapitaal» betekent geld om te starten.",
-       "«Ondernemingsplan» betekent plan voor je bedrijf."
-      ],
-      "uh": "Onthoud: «Ondernemer» = start een bedrijf."
-     },
-     {
-      "v": "Wat betekent «Ondernemingsplan»?",
-      "o": [
-       "onderzoek naar klanten en concurrenten",
-       "de kans dat iets misgaat en je geld verliest",
-       "een plan waarin je je bedrijf uitwerkt",
-       "het verschil tussen verkoopprijs en kostprijs"
-      ],
-      "c": 2,
-      "d": 1,
-      "u": "«Ondernemingsplan»: een plan waarin je je bedrijf uitwerkt.",
-      "uo": [
-       "Dat is «Marktonderzoek».",
-       "Dat is «Risico».",
-       "Klopt: plan voor je bedrijf.",
-       "Dat is «Winstmarge»."
-      ],
-      "uh": "Onthoud: «Ondernemingsplan» = plan voor je bedrijf."
-     },
-     {
-      "v": "Welk begrip hoort bij: \"de groep klanten die je wilt bereiken\"?",
-      "o": [
-       "Concurrent",
-       "Risico",
-       "Kostprijs",
-       "Doelgroep"
-      ],
-      "c": 3,
-      "d": 3,
-      "u": "«Doelgroep»: de groep klanten die je wilt bereiken.",
-      "uo": [
-       "«Concurrent» betekent rivaal op de markt.",
-       "«Risico» betekent kans op verlies.",
-       "«Kostprijs» betekent kosten per product.",
-       "Klopt, dit is «Doelgroep»."
-      ],
-      "uh": "Onthoud: «Doelgroep» = jouw klanten."
-     },
-     {
-      "v": "Welke term hoort bij \"jouw klanten\"?",
-      "o": [
-       "Doelgroep",
-       "Risico",
-       "Kostprijs",
-       "Winstmarge"
-      ],
-      "c": 0,
-      "d": 2,
-      "u": "«Doelgroep»: de groep klanten die je wilt bereiken.",
-      "uo": [
-       "Klopt, «Doelgroep» past hierbij.",
-       "«Risico» betekent kans op verlies.",
-       "«Kostprijs» betekent kosten per product.",
-       "«Winstmarge» betekent verkoopprijs min kostprijs."
-      ],
-      "uh": "Onthoud: «Doelgroep» = jouw klanten."
-     },
-     {
-      "v": "Wat betekent «Startkapitaal»?",
-      "o": [
-       "geld dat je uitgeeft aan bedrijfsmiddelen",
-       "het geld dat je nodig hebt om te beginnen",
-       "het verschil tussen verkoopprijs en kostprijs",
-       "de juridische vorm van een bedrijf, zoals een eenmanszaak"
+       "Iemand in loondienst",
+       "Iemand die een bedrijf start en risico neemt",
+       "Een klant",
+       "Een ambtenaar"
       ],
       "c": 1,
       "d": 1,
-      "u": "«Startkapitaal»: het geld dat je nodig hebt om te beginnen.",
+      "u": "Iemand die een bedrijf start en risico neemt.",
       "uo": [
-       "Dat is «Investering».",
-       "Klopt: geld om te starten.",
-       "Dat is «Winstmarge».",
-       "Dat is «Rechtsvorm»."
+       "Dat is een werknemer.",
+       "Klopt: iemand die een bedrijf start en risico neemt.",
+       "Een klant koopt.",
+       "Iets anders."
       ],
-      "uh": "Onthoud: «Startkapitaal» = geld om te starten."
+      "uh": "Iemand die een bedrijf start en risico neemt."
      },
      {
-      "v": "Welk begrip hoort bij: \"een ander bedrijf dat hetzelfde aanbiedt\"?",
+      "v": "Wat is een ondernemingsplan?",
       "o": [
-       "Doelgroep",
-       "Ondernemingsplan",
-       "Concurrent",
-       "Ondernemer"
-      ],
-      "c": 2,
-      "d": 3,
-      "u": "«Concurrent»: een ander bedrijf dat hetzelfde aanbiedt.",
-      "uo": [
-       "«Doelgroep» betekent jouw klanten.",
-       "«Ondernemingsplan» betekent plan voor je bedrijf.",
-       "Klopt, dit is «Concurrent».",
-       "«Ondernemer» betekent start een bedrijf."
-      ],
-      "uh": "Onthoud: «Concurrent» = rivaal op de markt."
-     },
-     {
-      "v": "Welke term hoort bij \"rivaal op de markt\"?",
-      "o": [
-       "Ondernemingsplan",
-       "Ondernemer",
-       "Kostprijs",
-       "Concurrent"
-      ],
-      "c": 3,
-      "d": 2,
-      "u": "«Concurrent»: een ander bedrijf dat hetzelfde aanbiedt.",
-      "uo": [
-       "«Ondernemingsplan» betekent plan voor je bedrijf.",
-       "«Ondernemer» betekent start een bedrijf.",
-       "«Kostprijs» betekent kosten per product.",
-       "Klopt, «Concurrent» past hierbij."
-      ],
-      "uh": "Onthoud: «Concurrent» = rivaal op de markt."
-     },
-     {
-      "v": "Wat betekent «Investering»?",
-      "o": [
-       "geld dat je uitgeeft aan bedrijfsmiddelen",
-       "het geld dat je nodig hebt om te beginnen",
-       "een ander bedrijf dat hetzelfde aanbiedt",
-       "de groep klanten die je wilt bereiken"
-      ],
-      "c": 0,
-      "d": 1,
-      "u": "«Investering»: geld dat je uitgeeft aan bedrijfsmiddelen.",
-      "uo": [
-       "Klopt: geld in bedrijfsmiddelen.",
-       "Dat is «Startkapitaal».",
-       "Dat is «Concurrent».",
-       "Dat is «Doelgroep»."
-      ],
-      "uh": "Onthoud: «Investering» = geld in bedrijfsmiddelen."
-     },
-     {
-      "v": "Welk begrip hoort bij: \"de kosten per product\"?",
-      "o": [
-       "Winstmarge",
-       "Kostprijs",
-       "Risico",
-       "Doelgroep"
-      ],
-      "c": 1,
-      "d": 3,
-      "u": "«Kostprijs»: de kosten per product.",
-      "uo": [
-       "«Winstmarge» betekent verkoopprijs min kostprijs.",
-       "Klopt, dit is «Kostprijs».",
-       "«Risico» betekent kans op verlies.",
-       "«Doelgroep» betekent jouw klanten."
-      ],
-      "uh": "Onthoud: «Kostprijs» = kosten per product."
-     },
-     {
-      "v": "Welke term hoort bij \"kosten per product\"?",
-      "o": [
-       "Risico",
-       "Doelgroep",
-       "Kostprijs",
-       "Concurrent"
+       "Een belastingformulier",
+       "Een verzekering",
+       "Een plan waarin je je bedrijf uitwerkt",
+       "Een lening"
       ],
       "c": 2,
       "d": 2,
-      "u": "«Kostprijs»: de kosten per product.",
+      "u": "Een plan waarin je je bedrijf uitwerkt.",
       "uo": [
-       "«Risico» betekent kans op verlies.",
-       "«Doelgroep» betekent jouw klanten.",
-       "Klopt, «Kostprijs» past hierbij.",
-       "«Concurrent» betekent rivaal op de markt."
+       "Nee, dat klopt niet.",
+       "Nee, dat klopt niet.",
+       "Klopt: een plan waarin je je bedrijf uitwerkt.",
+       "Nee, dat klopt niet."
       ],
-      "uh": "Onthoud: «Kostprijs» = kosten per product."
+      "uh": "Een plan waarin je je bedrijf uitwerkt."
      },
      {
-      "v": "Wat betekent «Marktonderzoek»?",
+      "v": "Wat is startkapitaal?",
       "o": [
-       "de groep klanten die je wilt bereiken",
-       "geld dat je uitgeeft aan bedrijfsmiddelen",
-       "de juridische vorm van een bedrijf, zoals een eenmanszaak",
-       "onderzoek naar klanten en concurrenten"
-      ],
-      "c": 3,
-      "d": 1,
-      "u": "«Marktonderzoek»: onderzoek naar klanten en concurrenten.",
-      "uo": [
-       "Dat is «Doelgroep».",
-       "Dat is «Investering».",
-       "Dat is «Rechtsvorm».",
-       "Klopt: onderzoek naar de markt."
-      ],
-      "uh": "Onthoud: «Marktonderzoek» = onderzoek naar de markt."
-     },
-     {
-      "v": "Welk begrip hoort bij: \"het verschil tussen verkoopprijs en kostprijs\"?",
-      "o": [
-       "Winstmarge",
-       "Kostprijs",
-       "Ondernemingsplan",
-       "Ondernemer"
+       "Geld om te beginnen",
+       "De latere winst",
+       "De belasting",
+       "Het loon"
       ],
       "c": 0,
-      "d": 3,
-      "u": "«Winstmarge»: het verschil tussen verkoopprijs en kostprijs.",
+      "d": 1,
+      "u": "Het geld dat je nodig hebt om te starten.",
       "uo": [
-       "Klopt, dit is «Winstmarge».",
-       "«Kostprijs» betekent kosten per product.",
-       "«Ondernemingsplan» betekent plan voor je bedrijf.",
-       "«Ondernemer» betekent start een bedrijf."
+       "Klopt: het geld dat je nodig hebt om te starten.",
+       "Winst komt later.",
+       "Belasting is iets anders.",
+       "Loon is iets anders."
       ],
-      "uh": "Onthoud: «Winstmarge» = verkoopprijs min kostprijs."
+      "uh": "Het geld dat je nodig hebt om te starten."
      },
      {
-      "v": "Welke term hoort bij \"verkoopprijs min kostprijs\"?",
+      "v": "Wat is marktonderzoek?",
       "o": [
-       "Ondernemingsplan",
-       "Winstmarge",
-       "Ondernemer",
-       "Doelgroep"
+       "Producten verkopen",
+       "Belasting berekenen",
+       "Loon uitbetalen",
+       "Onderzoek naar klanten en concurrenten"
+      ],
+      "c": 3,
+      "d": 2,
+      "u": "Onderzoek naar je klanten en concurrenten.",
+      "uo": [
+       "Nee, dat klopt niet.",
+       "Nee, dat klopt niet.",
+       "Nee, dat klopt niet.",
+       "Klopt: onderzoek naar je klanten en concurrenten."
+      ],
+      "uh": "Onderzoek naar je klanten en concurrenten."
+     },
+     {
+      "v": "Wat is een doelgroep?",
+      "o": [
+       "Alle mensen",
+       "De klanten die je wilt bereiken",
+       "Je concurrenten",
+       "De overheid"
       ],
       "c": 1,
       "d": 2,
-      "u": "«Winstmarge»: het verschil tussen verkoopprijs en kostprijs.",
+      "u": "De groep klanten die je wilt bereiken.",
       "uo": [
-       "«Ondernemingsplan» betekent plan voor je bedrijf.",
-       "Klopt, «Winstmarge» past hierbij.",
-       "«Ondernemer» betekent start een bedrijf.",
-       "«Doelgroep» betekent jouw klanten."
+       "Te breed.",
+       "Klopt: de groep klanten die je wilt bereiken.",
+       "Dat zijn juist rivalen.",
+       "Iets anders."
       ],
-      "uh": "Onthoud: «Winstmarge» = verkoopprijs min kostprijs."
+      "uh": "De groep klanten die je wilt bereiken."
      },
      {
-      "v": "Wat betekent «Doelgroep»?",
+      "v": "Wat is een concurrent?",
       "o": [
-       "een ander bedrijf dat hetzelfde aanbiedt",
-       "de kans dat iets misgaat en je geld verliest",
-       "de groep klanten die je wilt bereiken",
-       "de kosten per product"
+       "Een klant",
+       "Een leverancier",
+       "Een ander bedrijf dat hetzelfde aanbiedt",
+       "De overheid"
       ],
       "c": 2,
-      "d": 1,
-      "u": "«Doelgroep»: de groep klanten die je wilt bereiken.",
+      "d": 2,
+      "u": "Een rivaal die hetzelfde aanbiedt.",
       "uo": [
-       "Dat is «Concurrent».",
-       "Dat is «Risico».",
-       "Klopt: jouw klanten.",
-       "Dat is «Kostprijs»."
+       "Een klant koopt.",
+       "Een leverancier levert.",
+       "Klopt: een rivaal die hetzelfde aanbiedt.",
+       "Iets anders."
       ],
-      "uh": "Onthoud: «Doelgroep» = jouw klanten."
+      "uh": "Een rivaal die hetzelfde aanbiedt."
      },
      {
-      "v": "Welk begrip hoort bij: \"de kans dat iets misgaat en je geld verliest\"?",
+      "v": "Wat is de kostprijs?",
       "o": [
-       "Financiering",
-       "Ondernemingsplan",
-       "Ondernemer",
-       "Risico"
-      ],
-      "c": 3,
-      "d": 3,
-      "u": "«Risico»: de kans dat iets misgaat en je geld verliest.",
-      "uo": [
-       "«Financiering» betekent hoe je aan geld komt.",
-       "«Ondernemingsplan» betekent plan voor je bedrijf.",
-       "«Ondernemer» betekent start een bedrijf.",
-       "Klopt, dit is «Risico»."
-      ],
-      "uh": "Onthoud: «Risico» = kans op verlies."
-     },
-     {
-      "v": "Welke term hoort bij \"kans op verlies\"?",
-      "o": [
-       "Risico",
-       "Ondernemingsplan",
-       "Ondernemer",
-       "Rechtsvorm"
+       "De kosten per product",
+       "De verkoopprijs",
+       "De winst",
+       "De belasting"
       ],
       "c": 0,
       "d": 2,
-      "u": "«Risico»: de kans dat iets misgaat en je geld verliest.",
+      "u": "De kosten per product.",
       "uo": [
-       "Klopt, «Risico» past hierbij.",
-       "«Ondernemingsplan» betekent plan voor je bedrijf.",
-       "«Ondernemer» betekent start een bedrijf.",
-       "«Rechtsvorm» betekent juridische vorm."
+       "Klopt: de kosten per product.",
+       "De prijs bij verkoop is iets anders.",
+       "Winst is iets anders.",
+       "Belasting is iets anders."
       ],
-      "uh": "Onthoud: «Risico» = kans op verlies."
+      "uh": "De kosten per product."
      },
      {
-      "v": "Wat betekent «Concurrent»?",
+      "v": "Wat is risico bij ondernemen?",
       "o": [
-       "de groep klanten die je wilt bereiken",
-       "een ander bedrijf dat hetzelfde aanbiedt",
-       "een plan waarin je je bedrijf uitwerkt",
-       "iemand die een bedrijf start en er risico mee neemt"
+       "Zekere winst",
+       "Een verzekering",
+       "Een lening",
+       "De kans dat iets misgaat"
+      ],
+      "c": 3,
+      "d": 2,
+      "u": "De kans dat iets misgaat en je geld verliest.",
+      "uo": [
+       "Winst is niet zeker.",
+       "Iets anders.",
+       "Iets anders.",
+       "Klopt: de kans dat iets misgaat en je geld verliest."
+      ],
+      "uh": "De kans dat iets misgaat en je geld verliest."
+     },
+     {
+      "v": "Wat is een investering?",
+      "o": [
+       "Geld weggooien",
+       "Geld uitgeven aan bedrijfsmiddelen",
+       "Belasting betalen",
+       "Sparen op de bank"
       ],
       "c": 1,
-      "d": 1,
-      "u": "«Concurrent»: een ander bedrijf dat hetzelfde aanbiedt.",
+      "d": 2,
+      "u": "Geld uitgeven aan bedrijfsmiddelen.",
       "uo": [
-       "Dat is «Doelgroep».",
-       "Klopt: rivaal op de markt.",
-       "Dat is «Ondernemingsplan».",
-       "Dat is «Ondernemer»."
+       "Nee, dat klopt niet.",
+       "Klopt: geld uitgeven aan bedrijfsmiddelen.",
+       "Iets anders.",
+       "Iets anders."
       ],
-      "uh": "Onthoud: «Concurrent» = rivaal op de markt."
+      "uh": "Geld uitgeven aan bedrijfsmiddelen."
      },
      {
-      "v": "Welk begrip hoort bij: \"de juridische vorm van een bedrijf, zoals een eenmanszaak\"?",
+      "v": "Wat is financiering?",
       "o": [
-       "Ondernemingsplan",
-       "Startkapitaal",
-       "Rechtsvorm",
-       "Ondernemer"
+       "De winst",
+       "De belasting",
+       "Hoe je aan geld voor je bedrijf komt",
+       "De kostprijs"
       ],
       "c": 2,
-      "d": 3,
-      "u": "«Rechtsvorm»: de juridische vorm van een bedrijf, zoals een eenmanszaak.",
-      "uo": [
-       "«Ondernemingsplan» betekent plan voor je bedrijf.",
-       "«Startkapitaal» betekent geld om te starten.",
-       "Klopt, dit is «Rechtsvorm».",
-       "«Ondernemer» betekent start een bedrijf."
-      ],
-      "uh": "Onthoud: «Rechtsvorm» = juridische vorm."
-     },
-     {
-      "v": "Welke term hoort bij \"juridische vorm\"?",
-      "o": [
-       "Startkapitaal",
-       "Ondernemer",
-       "Concurrent",
-       "Rechtsvorm"
-      ],
-      "c": 3,
       "d": 2,
-      "u": "«Rechtsvorm»: de juridische vorm van een bedrijf, zoals een eenmanszaak.",
+      "u": "De manier waarop je aan geld komt.",
       "uo": [
-       "«Startkapitaal» betekent geld om te starten.",
-       "«Ondernemer» betekent start een bedrijf.",
-       "«Concurrent» betekent rivaal op de markt.",
-       "Klopt, «Rechtsvorm» past hierbij."
+       "Winst is iets anders.",
+       "Belasting is iets anders.",
+       "Klopt: de manier waarop je aan geld komt.",
+       "Kostprijs is iets anders."
       ],
-      "uh": "Onthoud: «Rechtsvorm» = juridische vorm."
+      "uh": "De manier waarop je aan geld komt."
      },
      {
-      "v": "Wat betekent «Kostprijs»?",
+      "v": "Wat is de winstmarge?",
       "o": [
-       "de kosten per product",
-       "het verschil tussen verkoopprijs en kostprijs",
-       "de kans dat iets misgaat en je geld verliest",
-       "de groep klanten die je wilt bereiken"
-      ],
-      "c": 0,
-      "d": 1,
-      "u": "«Kostprijs»: de kosten per product.",
-      "uo": [
-       "Klopt: kosten per product.",
-       "Dat is «Winstmarge».",
-       "Dat is «Risico».",
-       "Dat is «Doelgroep»."
-      ],
-      "uh": "Onthoud: «Kostprijs» = kosten per product."
-     },
-     {
-      "v": "Wat betekent «Winstmarge»?",
-      "o": [
-       "de kosten per product",
-       "het verschil tussen verkoopprijs en kostprijs",
-       "een plan waarin je je bedrijf uitwerkt",
-       "iemand die een bedrijf start en er risico mee neemt"
-      ],
-      "c": 1,
-      "d": 1,
-      "u": "«Winstmarge»: het verschil tussen verkoopprijs en kostprijs.",
-      "uo": [
-       "Dat is «Kostprijs».",
-       "Klopt: verkoopprijs min kostprijs.",
-       "Dat is «Ondernemingsplan».",
-       "Dat is «Ondernemer»."
-      ],
-      "uh": "Onthoud: «Winstmarge» = verkoopprijs min kostprijs."
-     },
-     {
-      "v": "Wat betekent «Risico»?",
-      "o": [
-       "de manier waarop je aan geld voor je bedrijf komt",
-       "een plan waarin je je bedrijf uitwerkt",
-       "de kans dat iets misgaat en je geld verliest",
-       "iemand die een bedrijf start en er risico mee neemt"
-      ],
-      "c": 2,
-      "d": 1,
-      "u": "«Risico»: de kans dat iets misgaat en je geld verliest.",
-      "uo": [
-       "Dat is «Financiering».",
-       "Dat is «Ondernemingsplan».",
-       "Klopt: kans op verlies.",
-       "Dat is «Ondernemer»."
-      ],
-      "uh": "Onthoud: «Risico» = kans op verlies."
-     },
-     {
-      "v": "Welk begrip hoort bij: \"een plan waarin je je bedrijf uitwerkt\"?",
-      "o": [
-       "Marktonderzoek",
-       "Risico",
-       "Winstmarge",
-       "Ondernemingsplan"
-      ],
-      "c": 3,
-      "d": 3,
-      "u": "«Ondernemingsplan»: een plan waarin je je bedrijf uitwerkt.",
-      "uo": [
-       "«Marktonderzoek» betekent onderzoek naar de markt.",
-       "«Risico» betekent kans op verlies.",
-       "«Winstmarge» betekent verkoopprijs min kostprijs.",
-       "Klopt, dit is «Ondernemingsplan»."
-      ],
-      "uh": "Onthoud: «Ondernemingsplan» = plan voor je bedrijf."
-     },
-     {
-      "v": "Welke term hoort bij \"plan voor je bedrijf\"?",
-      "o": [
-       "Ondernemingsplan",
-       "Risico",
-       "Winstmarge",
-       "Doelgroep"
+       "Verkoopprijs min kostprijs",
+       "De totale omzet",
+       "De belasting",
+       "Het startkapitaal"
       ],
       "c": 0,
       "d": 2,
-      "u": "«Ondernemingsplan»: een plan waarin je je bedrijf uitwerkt.",
+      "u": "Het verschil tussen verkoopprijs en kostprijs.",
       "uo": [
-       "Klopt, «Ondernemingsplan» past hierbij.",
-       "«Risico» betekent kans op verlies.",
-       "«Winstmarge» betekent verkoopprijs min kostprijs.",
-       "«Doelgroep» betekent jouw klanten."
+       "Klopt: het verschil tussen verkoopprijs en kostprijs.",
+       "Omzet is iets anders.",
+       "Belasting is iets anders.",
+       "Startkapitaal is iets anders."
       ],
-      "uh": "Onthoud: «Ondernemingsplan» = plan voor je bedrijf."
+      "uh": "Het verschil tussen verkoopprijs en kostprijs."
      },
      {
-      "v": "Wat betekent «Ondernemer»?",
+      "v": "Wat is een rechtsvorm?",
       "o": [
-       "de kans dat iets misgaat en je geld verliest",
-       "iemand die een bedrijf start en er risico mee neemt",
-       "het geld dat je nodig hebt om te beginnen",
-       "een plan waarin je je bedrijf uitwerkt"
+       "Een verzekering",
+       "Een marktonderzoek",
+       "Een lening",
+       "De juridische vorm van een bedrijf"
       ],
-      "c": 1,
-      "d": 1,
-      "u": "«Ondernemer»: iemand die een bedrijf start en er risico mee neemt.",
+      "c": 3,
+      "d": 3,
+      "u": "De juridische vorm, zoals een eenmanszaak.",
       "uo": [
-       "Dat is «Risico».",
-       "Klopt: start een bedrijf.",
-       "Dat is «Startkapitaal».",
-       "Dat is «Ondernemingsplan»."
+       "Nee, dat klopt niet.",
+       "Nee, dat klopt niet.",
+       "Nee, dat klopt niet.",
+       "Klopt: de juridische vorm, zoals een eenmanszaak."
       ],
-      "uh": "Onthoud: «Ondernemer» = start een bedrijf."
+      "uh": "De juridische vorm, zoals een eenmanszaak."
      }
     ],
     "begrippen": [

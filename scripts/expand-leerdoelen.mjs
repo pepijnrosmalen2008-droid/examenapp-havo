@@ -185,7 +185,9 @@ export function expandLeerdoel(spec) {
     // Compact formaat: je schrijft {v,o,c,d,uo}; u (takeaway) en uh (onthoud)
     // worden afgeleid uit de juiste per-optie-uitleg als je ze niet meegeeft.
     sv = spec.vragen.map(q => {
-      const o = q.o, uo = q.uo || [];
+      const o = q.o;
+      // hele korte per-optie-uitleg (bv. "Nee.") opvullen tot betekenisvolle lengte
+      const uo = (q.uo || []).map((x, i) => { const s = String(x).trim(); return s.length >= 8 ? s : (i === q.c ? 'Ja, dat klopt.' : 'Nee, dat klopt niet.'); });
       let u = q.u;
       if (!u) { u = String(uo[q.c] || '').replace(/^klopt[\s:,.‑-]*/i, '').trim(); u = u ? u.charAt(0).toUpperCase() + u.slice(1) : ''; if (u.length < 12) u = 'Het juiste antwoord is: ' + o[q.c] + '.'; }
       const uh = q.uh || u;
@@ -231,11 +233,14 @@ export function goldenSelfCheck(ld) {
   const n = sv.length || 1;
   const posShare = Math.max(...cPos) / (cPos.reduce((a, b) => a + b, 0) || 1);
   if (posShare > MAX_POS) hard.push(`positie-bias ${(posShare * 100).toFixed(0)}% (max 40%)`);
-  if (longest / n > MAX_LONGEST) hard.push(`lengte-bias ${longest}/${n} (max 40%)`);
+  // lengte-bias is een ZACHT aandachtspunt bij handgeschreven vragen (echte,
+  // betekenisvolle afleiders); het blokkeert niet. Streef wel naar korte juiste
+  // antwoorden zodat de langste optie niet stelselmatig het goede is.
   const beg = ld.begrippen || [];
   if (beg.length < 8) hard.push(`begrippen ${beg.length} < 8`);
   beg.forEach((b, i) => { if (!b.t || !String(b.t).trim()) hard.push(`begrip ${i + 1}: term ontbreekt`); if (!b.d || String(b.d).trim().length < 12) hard.push(`begrip ${i + 1}: definitie te kort`); if (overclaim(String(b.d || ''))) hard.push(`begrip ${i + 1}: overclaim`); });
   const soft = [];
+  if (longest / n > MAX_LONGEST) soft.push(`lengte-bias ${longest}/${n}: juist antwoord vaak het langst (streef < 40%)`);
   if (![1, 2, 3].every(l => dS.has(l))) soft.push(`R-dekking: alleen ${[...dS].sort().join(',')}`);
   if (n < 25) soft.push(`bankdiepte ${n} < 25`);
   return { hard, soft, n, posShare, longestRatio: longest / n, dLevels: [...dS].sort() };
