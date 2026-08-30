@@ -705,7 +705,7 @@ var VAKKEN_VMBO = [
      "Stevigheid en bescherming",
      "Opbouw van het lichaam"
     ],
-    "nSv": 26,
+    "nSv": 16,
     "nOe": 0,
     "nBeg": 12,
     "hasSam": true
@@ -722,7 +722,7 @@ var VAKKEN_VMBO = [
      "Koolstof- en stikstofkringloop",
      "Fotosynthese"
     ],
-    "nSv": 26,
+    "nSv": 16,
     "nOe": 0,
     "nBeg": 13,
     "hasSam": true
@@ -737,7 +737,7 @@ var VAKKEN_VMBO = [
      "Milieuvervuiling",
      "Duurzaamheid en kringloopdenken"
     ],
-    "nSv": 26,
+    "nSv": 16,
     "nOe": 0,
     "nBeg": 12,
     "hasSam": true
@@ -752,7 +752,7 @@ var VAKKEN_VMBO = [
      "Skelet en gewrichten",
      "Spieren en beweging"
     ],
-    "nSv": 26,
+    "nSv": 16,
     "nOe": 0,
     "nBeg": 12,
     "hasSam": true
@@ -770,7 +770,7 @@ var VAKKEN_VMBO = [
      "Nieren, huid en uitscheiding",
      "Zenuwstelsel, hormonen en zintuigen (oog)"
     ],
-    "nSv": 26,
+    "nSv": 16,
     "nOe": 0,
     "nBeg": 13,
     "hasSam": true
@@ -787,7 +787,7 @@ var VAKKEN_VMBO = [
      "Genetische modificatie (o.a. insuline)",
      "Voor- en nadelen van gm-gewassen"
     ],
-    "nSv": 26,
+    "nSv": 16,
     "nOe": 0,
     "nBeg": 12,
     "hasSam": true

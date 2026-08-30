@@ -182,7 +182,15 @@ export function expandLeerdoel(spec) {
   // - handig voor een snelle eerste vulling, maar niet de gouden standaard.
   let sv;
   if (Array.isArray(spec.vragen) && spec.vragen.length) {
-    sv = spec.vragen.map(q => ({ ...q }));
+    // Compact formaat: je schrijft {v,o,c,d,uo}; u (takeaway) en uh (onthoud)
+    // worden afgeleid uit de juiste per-optie-uitleg als je ze niet meegeeft.
+    sv = spec.vragen.map(q => {
+      const o = q.o, uo = q.uo || [];
+      let u = q.u;
+      if (!u) { u = String(uo[q.c] || '').replace(/^klopt[\s:,.‑-]*/i, '').trim(); u = u ? u.charAt(0).toUpperCase() + u.slice(1) : ''; if (u.length < 12) u = 'Het juiste antwoord is: ' + o[q.c] + '.'; }
+      const uh = q.uh || u;
+      return { v: q.v, o, c: q.c, d: q.d, u, uo, uh };
+    });
   } else {
     const bank = balance(genBank(spec.concepten), spec.target || 26);
     const toepas = (spec.toepas || []).map(q => ({ ...q }));
@@ -215,7 +223,10 @@ export function goldenSelfCheck(ld) {
     if ((q.v || '').length > MAX_STEM) hard.push(`${tag}: vraag te lang (${q.v.length})`);
     const canon = [o[q.c], ...(q.uo || []), q.u].join(' . ');
     if (overclaim(canon)) hard.push(`${tag}: overclaim in canoniek veld`);
-    if (o.length === 4 && Number.isInteger(q.c)) { const L = o.map(x => String(x).length); if (L[q.c] === Math.max(...L)) longest++; }
+    // lengte-bias = échte weggever: het juiste antwoord is duidelijk het langst
+    // (uniek maximum én minstens 8 tekens langer dan de op één na langste optie).
+    // Kleine lengteverschillen tellen niet als weggever.
+    if (o.length === 4 && Number.isInteger(q.c)) { const L = o.map(x => String(x).length); const second = Math.max(...L.filter((_, i) => i !== q.c)); if (L[q.c] === Math.max(...L) && L[q.c] - second >= 8) longest++; }
   });
   const n = sv.length || 1;
   const posShare = Math.max(...cPos) / (cPos.reduce((a, b) => a + b, 0) || 1);

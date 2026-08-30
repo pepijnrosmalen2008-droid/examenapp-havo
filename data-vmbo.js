@@ -5618,498 +5618,308 @@ var VAKKEN_VMBO = [
     "nBeg": 0,
     "sv": [
      {
-      "v": "Welk begrip hoort bij: \"het orgaan dat het lichaam bedekt en beschermt\"?",
+      "v": "Welke huidlaag ligt aan de buitenkant?",
       "o": [
-       "Huid",
-       "Opperhuid",
-       "Lederhuid",
-       "Zweetklier"
+       "De diepe lederhuidlaag",
+       "De opperhuid",
+       "Het onderhuids vetweefsel",
+       "De vochtige celkern"
+      ],
+      "c": 1,
+      "d": 2,
+      "u": "De opperhuid ligt bovenop.",
+      "uo": [
+       "De lederhuid ligt juist dieper.",
+       "Klopt: de opperhuid ligt bovenop.",
+       "Dat is de vetlaag nog dieper.",
+       "De celkern hoort bij een cel."
+      ],
+      "uh": "De opperhuid ligt bovenop."
+     },
+     {
+      "v": "Waar zitten de zenuwen en bloedvaten van de huid?",
+      "o": [
+       "In de dode opperhuidlaag",
+       "In het haar op je huid",
+       "In de lederhuid",
+       "In de rand van je nagel"
+      ],
+      "c": 2,
+      "d": 2,
+      "u": "De lederhuid bevat zenuwen en bloedvaten.",
+      "uo": [
+       "De opperhuid is de dode buitenlaag.",
+       "Haar is geen huidlaag.",
+       "Klopt: de lederhuid bevat zenuwen en bloedvaten.",
+       "Een nagel is geen huidlaag."
+      ],
+      "uh": "De lederhuid bevat zenuwen en bloedvaten."
+     },
+     {
+      "v": "Als je het warm hebt ga je zweten. Welke klier doet dat?",
+      "o": [
+       "De zweetklier",
+       "De talgklier voor huidvet",
+       "De celkern in de cel",
+       "De beschermende opperhuid"
       ],
       "c": 0,
       "d": 3,
-      "u": "«Huid»: het orgaan dat het lichaam bedekt en beschermt.",
+      "u": "De zweetklier koelt je af.",
       "uo": [
-       "Klopt, dit is «Huid».",
-       "«Opperhuid» betekent buitenste huidlaag.",
-       "«Lederhuid» betekent laag onder de opperhuid.",
-       "«Zweetklier» betekent geeft zweet af, koelt."
+       "Klopt: de zweetklier koelt je af.",
+       "De talgklier geeft juist huidvet af.",
+       "De celkern hoort bij een cel.",
+       "De opperhuid is een laag, geen klier."
       ],
-      "uh": "Onthoud: «Huid» = beschermende bedekking."
+      "uh": "De zweetklier koelt je af."
      },
      {
-      "v": "Welke term hoort bij \"beschermende bedekking\"?",
+      "v": "Wat is de belangrijkste functie van de huid?",
       "o": [
-       "Zweetklier",
-       "Huid",
+       "Het bloed rondpompen",
+       "Het voedsel verteren",
+       "Het zuurstof opnemen",
+       "Beschermen"
+      ],
+      "c": 3,
+      "d": 2,
+      "u": "De huid beschermt het lichaam.",
+      "uo": [
+       "Bloed rondpompen doet het hart.",
+       "Verteren gebeurt in de darmen.",
+       "Zuurstof nemen de longen op.",
+       "Klopt: de huid beschermt het lichaam."
+      ],
+      "uh": "De huid beschermt het lichaam."
+     },
+     {
+      "v": "Welke functie heeft het skelet, naast bescherming?",
+      "o": [
+       "Het bloed zuiveren",
+       "Steun geven",
+       "Het zuurstof vervoeren",
+       "Het voedsel opslaan"
+      ],
+      "c": 1,
+      "d": 2,
+      "u": "Het skelet geeft steun en vorm.",
+      "uo": [
+       "Bloed zuiveren doen de nieren.",
+       "Klopt: het skelet geeft steun en vorm.",
+       "Zuurstof vervoeren doet het bloed.",
+       "Voedsel opslaan is geen skeletfunctie."
+      ],
+      "uh": "Het skelet geeft steun en vorm."
+     },
+     {
+      "v": "Het oor en de neus zijn stevig maar buigzaam. Wat is dat?",
+      "o": [
+       "Hard en stevig bot",
+       "Een trekkende spier",
        "Kraakbeen",
-       "Ziekteverwekker"
-      ],
-      "c": 1,
-      "d": 2,
-      "u": "«Huid»: het orgaan dat het lichaam bedekt en beschermt.",
-      "uo": [
-       "«Zweetklier» betekent geeft zweet af, koelt.",
-       "Klopt, «Huid» past hierbij.",
-       "«Kraakbeen» betekent buigzaam steunweefsel.",
-       "«Ziekteverwekker» betekent veroorzaakt ziekte."
-      ],
-      "uh": "Onthoud: «Huid» = beschermende bedekking."
-     },
-     {
-      "v": "Wat betekent «Huid»?",
-      "o": [
-       "de buitenste laag van de huid",
-       "de laag onder de opperhuid met zenuwen en bloedvaten",
-       "het orgaan dat het lichaam bedekt en beschermt",
-       "huidklier die zweet afgeeft en zo het lichaam koelt"
-      ],
-      "c": 2,
-      "d": 1,
-      "u": "«Huid»: het orgaan dat het lichaam bedekt en beschermt.",
-      "uo": [
-       "Dat is «Opperhuid».",
-       "Dat is «Lederhuid».",
-       "Klopt: beschermende bedekking.",
-       "Dat is «Zweetklier»."
-      ],
-      "uh": "Onthoud: «Huid» = beschermende bedekking."
-     },
-     {
-      "v": "Welk begrip hoort bij: \"de buitenste laag van de huid\"?",
-      "o": [
-       "Lederhuid",
-       "Huid",
-       "Bot",
-       "Opperhuid"
-      ],
-      "c": 3,
-      "d": 3,
-      "u": "«Opperhuid»: de buitenste laag van de huid.",
-      "uo": [
-       "«Lederhuid» betekent laag onder de opperhuid.",
-       "«Huid» betekent beschermende bedekking.",
-       "«Bot» betekent hard steunorgaan.",
-       "Klopt, dit is «Opperhuid»."
-      ],
-      "uh": "Onthoud: «Opperhuid» = buitenste huidlaag."
-     },
-     {
-      "v": "Welke term hoort bij \"buitenste huidlaag\"?",
-      "o": [
-       "Opperhuid",
-       "Bot",
-       "Steunfunctie",
-       "Zweetklier"
-      ],
-      "c": 0,
-      "d": 2,
-      "u": "«Opperhuid»: de buitenste laag van de huid.",
-      "uo": [
-       "Klopt, «Opperhuid» past hierbij.",
-       "«Bot» betekent hard steunorgaan.",
-       "«Steunfunctie» betekent stevigheid en vorm.",
-       "«Zweetklier» betekent geeft zweet af, koelt."
-      ],
-      "uh": "Onthoud: «Opperhuid» = buitenste huidlaag."
-     },
-     {
-      "v": "Wat betekent «Opperhuid»?",
-      "o": [
-       "de laag onder de opperhuid met zenuwen en bloedvaten",
-       "de buitenste laag van de huid",
-       "het orgaan dat het lichaam bedekt en beschermt",
-       "een hard orgaan dat steun geeft en bloedcellen kan maken"
-      ],
-      "c": 1,
-      "d": 1,
-      "u": "«Opperhuid»: de buitenste laag van de huid.",
-      "uo": [
-       "Dat is «Lederhuid».",
-       "Klopt: buitenste huidlaag.",
-       "Dat is «Huid».",
-       "Dat is «Bot»."
-      ],
-      "uh": "Onthoud: «Opperhuid» = buitenste huidlaag."
-     },
-     {
-      "v": "Welk begrip hoort bij: \"de laag onder de opperhuid met zenuwen en bloedvaten\"?",
-      "o": [
-       "Opperhuid",
-       "Onderhuids bindweefsel",
-       "Lederhuid",
-       "Bot"
+       "De beschermende huid"
       ],
       "c": 2,
       "d": 3,
-      "u": "«Lederhuid»: de laag onder de opperhuid met zenuwen en bloedvaten.",
+      "u": "Kraakbeen is stevig en buigzaam.",
       "uo": [
-       "«Opperhuid» betekent buitenste huidlaag.",
-       "«Onderhuids bindweefsel» betekent vetlaag, houdt warmte vast.",
-       "Klopt, dit is «Lederhuid».",
-       "«Bot» betekent hard steunorgaan."
+       "Bot is hard en niet buigzaam.",
+       "Een spier kan samentrekken.",
+       "Klopt: kraakbeen is stevig en buigzaam.",
+       "De huid is de bedekking."
       ],
-      "uh": "Onthoud: «Lederhuid» = laag onder de opperhuid."
+      "uh": "Kraakbeen is stevig en buigzaam."
      },
      {
-      "v": "Welke term hoort bij \"laag onder de opperhuid\"?",
+      "v": "Welke laag onder de huid houdt de warmte vast?",
       "o": [
-       "Bot",
-       "Steunfunctie",
-       "Zweetklier",
-       "Lederhuid"
+       "De dunne dode opperhuid",
+       "De vetlaag",
+       "Een gladde talgklier",
+       "De buitenste hoornlaag"
+      ],
+      "c": 1,
+      "d": 2,
+      "u": "De vetlaag houdt warmte vast.",
+      "uo": [
+       "De opperhuid is dun en dood.",
+       "Klopt: de vetlaag houdt warmte vast.",
+       "Een talgklier geeft vet af.",
+       "De hoornlaag is de buitenkant."
+      ],
+      "uh": "De vetlaag houdt warmte vast."
+     },
+     {
+      "v": "Waardoor blijft je huid soepel?",
+      "o": [
+       "Door afkoelend zweet",
+       "Door voedend bloed",
+       "Door stevig kraakbeen",
+       "Door talg"
       ],
       "c": 3,
       "d": 2,
-      "u": "«Lederhuid»: de laag onder de opperhuid met zenuwen en bloedvaten.",
+      "u": "Talg houdt de huid soepel.",
       "uo": [
-       "«Bot» betekent hard steunorgaan.",
-       "«Steunfunctie» betekent stevigheid en vorm.",
-       "«Zweetklier» betekent geeft zweet af, koelt.",
-       "Klopt, «Lederhuid» past hierbij."
+       "Zweet koelt je juist af.",
+       "Bloed voedt de huid.",
+       "Kraakbeen zit in oor en neus.",
+       "Klopt: talg houdt de huid soepel."
       ],
-      "uh": "Onthoud: «Lederhuid» = laag onder de opperhuid."
+      "uh": "Talg houdt de huid soepel."
      },
      {
-      "v": "Wat betekent «Lederhuid»?",
+      "v": "Alle botten samen noem je het...",
       "o": [
-       "de laag onder de opperhuid met zenuwen en bloedvaten",
-       "de buitenste laag van de huid",
-       "de vetlaag onder de lederhuid die warmte vasthoudt",
-       "een hard orgaan dat steun geeft en bloedcellen kan maken"
-      ],
-      "c": 0,
-      "d": 1,
-      "u": "«Lederhuid»: de laag onder de opperhuid met zenuwen en bloedvaten.",
-      "uo": [
-       "Klopt: laag onder de opperhuid.",
-       "Dat is «Opperhuid».",
-       "Dat is «Onderhuids bindweefsel».",
-       "Dat is «Bot»."
-      ],
-      "uh": "Onthoud: «Lederhuid» = laag onder de opperhuid."
-     },
-     {
-      "v": "Welk begrip hoort bij: \"alle botten samen die het lichaam steun en vorm geven\"?",
-      "o": [
-       "Bot",
-       "Skelet",
-       "Opperhuid",
-       "Huid"
+       "spierstelsel",
+       "skelet",
+       "steunweefsel",
+       "zenuwstelsel"
       ],
       "c": 1,
-      "d": 3,
-      "u": "«Skelet»: alle botten samen die het lichaam steun en vorm geven.",
+      "d": 1,
+      "u": "Alle botten samen zijn het skelet.",
       "uo": [
-       "«Bot» betekent hard steunorgaan.",
-       "Klopt, dit is «Skelet».",
-       "«Opperhuid» betekent buitenste huidlaag.",
-       "«Huid» betekent beschermende bedekking."
+       "Het spierstelsel bestaat uit spieren.",
+       "Klopt: alle botten samen zijn het skelet.",
+       "Kraakbeen is steunweefsel.",
+       "Het zenuwstelsel geeft prikkels door."
       ],
-      "uh": "Onthoud: «Skelet» = alle botten samen."
+      "uh": "Alle botten samen zijn het skelet."
      },
      {
-      "v": "Welke term hoort bij \"alle botten samen\"?",
+      "v": "Wat doet een talgklier?",
       "o": [
-       "Opperhuid",
-       "Huid",
-       "Skelet",
-       "Ziekteverwekker"
+       "Zweet afgeven en koelen",
+       "Bloed door het lichaam pompen",
+       "Huidvet afgeven",
+       "Nieuwe botten aanmaken"
       ],
       "c": 2,
       "d": 2,
-      "u": "«Skelet»: alle botten samen die het lichaam steun en vorm geven.",
+      "u": "De talgklier geeft huidvet af.",
       "uo": [
-       "«Opperhuid» betekent buitenste huidlaag.",
-       "«Huid» betekent beschermende bedekking.",
-       "Klopt, «Skelet» past hierbij.",
-       "«Ziekteverwekker» betekent veroorzaakt ziekte."
+       "Zweet afgeven doet de zweetklier.",
+       "Bloed pompen doet het hart.",
+       "Klopt: de talgklier geeft huidvet af.",
+       "Botten maakt het beenmerg."
       ],
-      "uh": "Onthoud: «Skelet» = alle botten samen."
+      "uh": "De talgklier geeft huidvet af."
      },
      {
-      "v": "Wat betekent «Onderhuids bindweefsel»?",
+      "v": "Wat is kraakbeen?",
       "o": [
-       "de laag onder de opperhuid met zenuwen en bloedvaten",
-       "huidklier die vet afgeeft en de huid soepel houdt",
-       "een hard orgaan dat steun geeft en bloedcellen kan maken",
-       "de vetlaag onder de lederhuid die warmte vasthoudt"
-      ],
-      "c": 3,
-      "d": 1,
-      "u": "«Onderhuids bindweefsel»: de vetlaag onder de lederhuid die warmte vasthoudt.",
-      "uo": [
-       "Dat is «Lederhuid».",
-       "Dat is «Talgklier».",
-       "Dat is «Bot».",
-       "Klopt: vetlaag, houdt warmte vast."
-      ],
-      "uh": "Onthoud: «Onderhuids bindweefsel» = vetlaag, houdt warmte vast."
-     },
-     {
-      "v": "Welk begrip hoort bij: \"een hard orgaan dat steun geeft en bloedcellen kan maken\"?",
-      "o": [
-       "Bot",
-       "Kraakbeen",
-       "Skelet",
-       "Ziekteverwekker"
-      ],
-      "c": 0,
-      "d": 3,
-      "u": "«Bot»: een hard orgaan dat steun geeft en bloedcellen kan maken.",
-      "uo": [
-       "Klopt, dit is «Bot».",
-       "«Kraakbeen» betekent buigzaam steunweefsel.",
-       "«Skelet» betekent alle botten samen.",
-       "«Ziekteverwekker» betekent veroorzaakt ziekte."
-      ],
-      "uh": "Onthoud: «Bot» = hard steunorgaan."
-     },
-     {
-      "v": "Welke term hoort bij \"hard steunorgaan\"?",
-      "o": [
-       "Ziekteverwekker",
-       "Bot",
-       "Zweetklier",
-       "Beschermende functie"
-      ],
-      "c": 1,
-      "d": 2,
-      "u": "«Bot»: een hard orgaan dat steun geeft en bloedcellen kan maken.",
-      "uo": [
-       "«Ziekteverwekker» betekent veroorzaakt ziekte.",
-       "Klopt, «Bot» past hierbij.",
-       "«Zweetklier» betekent geeft zweet af, koelt.",
-       "«Beschermende functie» betekent organen afschermen."
-      ],
-      "uh": "Onthoud: «Bot» = hard steunorgaan."
-     },
-     {
-      "v": "Wat betekent «Skelet»?",
-      "o": [
-       "een hard orgaan dat steun geeft en bloedcellen kan maken",
-       "de buitenste laag van de huid",
-       "alle botten samen die het lichaam steun en vorm geven",
-       "het orgaan dat het lichaam bedekt en beschermt"
-      ],
-      "c": 2,
-      "d": 1,
-      "u": "«Skelet»: alle botten samen die het lichaam steun en vorm geven.",
-      "uo": [
-       "Dat is «Bot».",
-       "Dat is «Opperhuid».",
-       "Klopt: alle botten samen.",
-       "Dat is «Huid»."
-      ],
-      "uh": "Onthoud: «Skelet» = alle botten samen."
-     },
-     {
-      "v": "Welk begrip hoort bij: \"stevig maar buigzaam steunweefsel, bijvoorbeeld in het oor\"?",
-      "o": [
-       "Bot",
-       "Zweetklier",
-       "Beschermende functie",
-       "Kraakbeen"
-      ],
-      "c": 3,
-      "d": 3,
-      "u": "«Kraakbeen»: stevig maar buigzaam steunweefsel, bijvoorbeeld in het oor.",
-      "uo": [
-       "«Bot» betekent hard steunorgaan.",
-       "«Zweetklier» betekent geeft zweet af, koelt.",
-       "«Beschermende functie» betekent organen afschermen.",
-       "Klopt, dit is «Kraakbeen»."
-      ],
-      "uh": "Onthoud: «Kraakbeen» = buigzaam steunweefsel."
-     },
-     {
-      "v": "Welke term hoort bij \"buigzaam steunweefsel\"?",
-      "o": [
-       "Kraakbeen",
-       "Zweetklier",
-       "Beschermende functie",
-       "Steunfunctie"
-      ],
-      "c": 0,
-      "d": 2,
-      "u": "«Kraakbeen»: stevig maar buigzaam steunweefsel, bijvoorbeeld in het oor.",
-      "uo": [
-       "Klopt, «Kraakbeen» past hierbij.",
-       "«Zweetklier» betekent geeft zweet af, koelt.",
-       "«Beschermende functie» betekent organen afschermen.",
-       "«Steunfunctie» betekent stevigheid en vorm."
-      ],
-      "uh": "Onthoud: «Kraakbeen» = buigzaam steunweefsel."
-     },
-     {
-      "v": "Wat betekent «Bot»?",
-      "o": [
-       "stevig maar buigzaam steunweefsel, bijvoorbeeld in het oor",
-       "een hard orgaan dat steun geeft en bloedcellen kan maken",
-       "alle botten samen die het lichaam steun en vorm geven",
-       "een micro-organisme dat een ziekte kan veroorzaken"
-      ],
-      "c": 1,
-      "d": 1,
-      "u": "«Bot»: een hard orgaan dat steun geeft en bloedcellen kan maken.",
-      "uo": [
-       "Dat is «Kraakbeen».",
-       "Klopt: hard steunorgaan.",
-       "Dat is «Skelet».",
-       "Dat is «Ziekteverwekker»."
-      ],
-      "uh": "Onthoud: «Bot» = hard steunorgaan."
-     },
-     {
-      "v": "Welk begrip hoort bij: \"het afschermen van organen tegen schade van buiten\"?",
-      "o": [
-       "Steunfunctie",
-       "Onderhuids bindweefsel",
-       "Beschermende functie",
-       "Opperhuid"
-      ],
-      "c": 2,
-      "d": 3,
-      "u": "«Beschermende functie»: het afschermen van organen tegen schade van buiten.",
-      "uo": [
-       "«Steunfunctie» betekent stevigheid en vorm.",
-       "«Onderhuids bindweefsel» betekent vetlaag, houdt warmte vast.",
-       "Klopt, dit is «Beschermende functie».",
-       "«Opperhuid» betekent buitenste huidlaag."
-      ],
-      "uh": "Onthoud: «Beschermende functie» = organen afschermen."
-     },
-     {
-      "v": "Welke term hoort bij \"organen afschermen\"?",
-      "o": [
-       "Onderhuids bindweefsel",
-       "Opperhuid",
-       "Kraakbeen",
-       "Beschermende functie"
-      ],
-      "c": 3,
-      "d": 2,
-      "u": "«Beschermende functie»: het afschermen van organen tegen schade van buiten.",
-      "uo": [
-       "«Onderhuids bindweefsel» betekent vetlaag, houdt warmte vast.",
-       "«Opperhuid» betekent buitenste huidlaag.",
-       "«Kraakbeen» betekent buigzaam steunweefsel.",
-       "Klopt, «Beschermende functie» past hierbij."
-      ],
-      "uh": "Onthoud: «Beschermende functie» = organen afschermen."
-     },
-     {
-      "v": "Wat betekent «Beschermende functie»?",
-      "o": [
-       "het afschermen van organen tegen schade van buiten",
-       "het geven van stevigheid en vorm aan het lichaam",
-       "de vetlaag onder de lederhuid die warmte vasthoudt",
-       "de buitenste laag van de huid"
+       "Buigzaam steunweefsel",
+       "Een samentrekkende spier",
+       "Een bedekkende huidlaag",
+       "Een vervoerend bloedvat"
       ],
       "c": 0,
       "d": 1,
-      "u": "«Beschermende functie»: het afschermen van organen tegen schade van buiten.",
+      "u": "Kraakbeen is buigzaam steunweefsel.",
       "uo": [
-       "Klopt: organen afschermen.",
-       "Dat is «Steunfunctie».",
-       "Dat is «Onderhuids bindweefsel».",
-       "Dat is «Opperhuid»."
+       "Klopt: kraakbeen is buigzaam steunweefsel.",
+       "Een spier kan samentrekken.",
+       "Een huidlaag beschermt.",
+       "Een bloedvat vervoert bloed."
       ],
-      "uh": "Onthoud: «Beschermende functie» = organen afschermen."
+      "uh": "Kraakbeen is buigzaam steunweefsel."
      },
      {
-      "v": "Welk begrip hoort bij: \"het geven van stevigheid en vorm aan het lichaam\"?",
+      "v": "Bij een schaafwond raakt vooral de buitenste laag stuk. Welke?",
       "o": [
-       "Beschermende functie",
-       "Steunfunctie",
-       "Bot",
-       "Skelet"
+       "De diepe lederhuid",
+       "Het onderhuids bindweefsel",
+       "Een hard bot",
+       "De opperhuid"
+      ],
+      "c": 3,
+      "d": 3,
+      "u": "De opperhuid is de buitenste laag.",
+      "uo": [
+       "De lederhuid ligt dieper.",
+       "Het bindweefsel ligt onderop.",
+       "Een bot zit veel dieper.",
+       "Klopt: de opperhuid is de buitenste laag."
+      ],
+      "uh": "De opperhuid is de buitenste laag."
+     },
+     {
+      "v": "Wat beschermt je organen tegen stoten van buiten?",
+      "o": [
+       "De koelende zweetklier",
+       "Het skelet",
+       "Het vloeibare cytoplasma",
+       "De grote vacuole"
       ],
       "c": 1,
-      "d": 3,
-      "u": "«Steunfunctie»: het geven van stevigheid en vorm aan het lichaam.",
+      "d": 2,
+      "u": "Het skelet beschermt de organen.",
       "uo": [
-       "«Beschermende functie» betekent organen afschermen.",
-       "Klopt, dit is «Steunfunctie».",
-       "«Bot» betekent hard steunorgaan.",
-       "«Skelet» betekent alle botten samen."
+       "De zweetklier koelt af.",
+       "Klopt: het skelet beschermt de organen.",
+       "Cytoplasma zit in een cel.",
+       "De vacuole hoort bij een plantencel."
       ],
-      "uh": "Onthoud: «Steunfunctie» = stevigheid en vorm."
+      "uh": "Het skelet beschermt de organen."
      },
      {
-      "v": "Welke term hoort bij \"geeft huidvet af\"?",
+      "v": "Waartegen beschermt de huid vooral?",
       "o": [
-       "Steunfunctie",
-       "Bot",
-       "Talgklier",
-       "Kraakbeen"
+       "Tegen te veel eigen bloed",
+       "Tegen te veel botten",
+       "Tegen ziekteverwekkers",
+       "Tegen je eigen spieren"
       ],
       "c": 2,
       "d": 2,
-      "u": "«Talgklier»: huidklier die vet afgeeft en de huid soepel houdt.",
+      "u": "Tegen ziekteverwekkers en uitdroging.",
       "uo": [
-       "«Steunfunctie» betekent stevigheid en vorm.",
-       "«Bot» betekent hard steunorgaan.",
-       "Klopt, «Talgklier» past hierbij.",
-       "«Kraakbeen» betekent buigzaam steunweefsel."
+       "Bloed hoort juist in het lichaam.",
+       "Botten horen bij het skelet.",
+       "Klopt: tegen ziekteverwekkers en uitdroging.",
+       "Spieren horen bij beweging."
       ],
-      "uh": "Onthoud: «Talgklier» = geeft huidvet af."
+      "uh": "Tegen ziekteverwekkers en uitdroging."
      },
      {
-      "v": "Wat betekent «Steunfunctie»?",
+      "v": "Welke twee taken heeft het skelet vooral?",
       "o": [
-       "het afschermen van organen tegen schade van buiten",
-       "een hard orgaan dat steun geeft en bloedcellen kan maken",
-       "alle botten samen die het lichaam steun en vorm geven",
-       "het geven van stevigheid en vorm aan het lichaam"
-      ],
-      "c": 3,
-      "d": 1,
-      "u": "«Steunfunctie»: het geven van stevigheid en vorm aan het lichaam.",
-      "uo": [
-       "Dat is «Beschermende functie».",
-       "Dat is «Bot».",
-       "Dat is «Skelet».",
-       "Klopt: stevigheid en vorm."
-      ],
-      "uh": "Onthoud: «Steunfunctie» = stevigheid en vorm."
-     },
-     {
-      "v": "Welk begrip hoort bij: \"huidklier die vet afgeeft en de huid soepel houdt\"?",
-      "o": [
-       "Talgklier",
-       "Zweetklier",
-       "Steunfunctie",
-       "Bot"
-      ],
-      "c": 0,
-      "d": 3,
-      "u": "«Talgklier»: huidklier die vet afgeeft en de huid soepel houdt.",
-      "uo": [
-       "Klopt, dit is «Talgklier».",
-       "«Zweetklier» betekent geeft zweet af, koelt.",
-       "«Steunfunctie» betekent stevigheid en vorm.",
-       "«Bot» betekent hard steunorgaan."
-      ],
-      "uh": "Onthoud: «Talgklier» = geeft huidvet af."
-     },
-     {
-      "v": "Welke term hoort bij \"veroorzaakt ziekte\"?",
-      "o": [
-       "Skelet",
-       "Ziekteverwekker",
-       "Bot",
-       "Beschermende functie"
+       "Voedsel verteren en ademhalen",
+       "Steun en bescherming",
+       "Zien en horen met zintuigen",
+       "Bloed pompen en koelen"
       ],
       "c": 1,
       "d": 2,
-      "u": "«Ziekteverwekker»: een micro-organisme dat een ziekte kan veroorzaken.",
+      "u": "Steun geven en beschermen.",
       "uo": [
-       "«Skelet» betekent alle botten samen.",
-       "Klopt, «Ziekteverwekker» past hierbij.",
-       "«Bot» betekent hard steunorgaan.",
-       "«Beschermende functie» betekent organen afschermen."
+       "Dat doen darmen en longen.",
+       "Klopt: steun geven en beschermen.",
+       "Dat doen de zintuigen.",
+       "Dat doen hart en huid."
       ],
-      "uh": "Onthoud: «Ziekteverwekker» = veroorzaakt ziekte."
+      "uh": "Steun geven en beschermen."
+     },
+     {
+      "v": "Spierweefsel bestaat uit cellen die op elkaar lijken. Wat is het?",
+      "o": [
+       "Een groep samenwerkende organen",
+       "Een enkele losse lichaamscel",
+       "Een hard stuk bot",
+       "Een weefsel"
+      ],
+      "c": 3,
+      "d": 2,
+      "u": "Gelijke cellen vormen een weefsel.",
+      "uo": [
+       "Dat is een orgaanstelsel.",
+       "Het is niet één losse cel.",
+       "Een bot is iets anders.",
+       "Klopt: gelijke cellen vormen een weefsel."
+      ],
+      "uh": "Gelijke cellen vormen een weefsel."
      }
     ],
     "begrippen": [
@@ -6181,498 +5991,308 @@ var VAKKEN_VMBO = [
     "nBeg": 0,
     "sv": [
      {
-      "v": "Welk begrip hoort bij: \"een reeks organismen die elkaar opeten, van producent naar consument\"?",
+      "v": "Wat maakt een plant met fotosynthese?",
       "o": [
-       "Voedselketen",
-       "Voedselweb",
-       "Reducent",
-       "Stikstofkringloop"
-      ],
-      "c": 0,
-      "d": 3,
-      "u": "«Voedselketen»: een reeks organismen die elkaar opeten, van producent naar consument.",
-      "uo": [
-       "Klopt, dit is «Voedselketen».",
-       "«Voedselweb» betekent verbonden voedselketens.",
-       "«Reducent» betekent breekt dood materiaal af.",
-       "«Stikstofkringloop» betekent stikstof gaat rond."
-      ],
-      "uh": "Onthoud: «Voedselketen» = wie eet wie, in een lijn."
-     },
-     {
-      "v": "Welke term hoort bij \"wie eet wie, in een lijn\"?",
-      "o": [
-       "Reducent",
-       "Voedselketen",
-       "Stikstofkringloop",
-       "Koolstofkringloop"
-      ],
-      "c": 1,
-      "d": 2,
-      "u": "«Voedselketen»: een reeks organismen die elkaar opeten, van producent naar consument.",
-      "uo": [
-       "«Reducent» betekent breekt dood materiaal af.",
-       "Klopt, «Voedselketen» past hierbij.",
-       "«Stikstofkringloop» betekent stikstof gaat rond.",
-       "«Koolstofkringloop» betekent koolstof gaat rond."
-      ],
-      "uh": "Onthoud: «Voedselketen» = wie eet wie, in een lijn."
-     },
-     {
-      "v": "Wat betekent «Voedselweb»?",
-      "o": [
-       "een reeks organismen die elkaar opeten, van producent naar consument",
-       "een dier dat zowel planten als dieren eet",
-       "meerdere voedselketens die met elkaar verbonden zijn",
-       "een organisme dat andere organismen eet"
-      ],
-      "c": 2,
-      "d": 1,
-      "u": "«Voedselweb»: meerdere voedselketens die met elkaar verbonden zijn.",
-      "uo": [
-       "Dat is «Voedselketen».",
-       "Dat is «Omnivoor».",
-       "Klopt: verbonden voedselketens.",
-       "Dat is «Consument»."
-      ],
-      "uh": "Onthoud: «Voedselweb» = verbonden voedselketens."
-     },
-     {
-      "v": "Welk begrip hoort bij: \"meerdere voedselketens die met elkaar verbonden zijn\"?",
-      "o": [
-       "Voedselketen",
-       "Omnivoor",
-       "Consument",
-       "Voedselweb"
-      ],
-      "c": 3,
-      "d": 3,
-      "u": "«Voedselweb»: meerdere voedselketens die met elkaar verbonden zijn.",
-      "uo": [
-       "«Voedselketen» betekent wie eet wie, in een lijn.",
-       "«Omnivoor» betekent alleseter.",
-       "«Consument» betekent eet andere organismen.",
-       "Klopt, dit is «Voedselweb»."
-      ],
-      "uh": "Onthoud: «Voedselweb» = verbonden voedselketens."
-     },
-     {
-      "v": "Welke term hoort bij \"maakt zelf voedsel\"?",
-      "o": [
-       "Producent",
-       "Omnivoor",
-       "Stikstofkringloop",
-       "Herbivoor"
-      ],
-      "c": 0,
-      "d": 2,
-      "u": "«Producent»: een organisme dat zelf voedsel maakt, meestal een plant.",
-      "uo": [
-       "Klopt, «Producent» past hierbij.",
-       "«Omnivoor» betekent alleseter.",
-       "«Stikstofkringloop» betekent stikstof gaat rond.",
-       "«Herbivoor» betekent planteneter."
-      ],
-      "uh": "Onthoud: «Producent» = maakt zelf voedsel."
-     },
-     {
-      "v": "Wat betekent «Producent»?",
-      "o": [
-       "een organisme dat andere organismen eet",
-       "een organisme dat zelf voedsel maakt, meestal een plant",
-       "een organisme dat dood materiaal afbreekt, zoals een schimmel",
-       "een dier dat zowel planten als dieren eet"
-      ],
-      "c": 1,
-      "d": 1,
-      "u": "«Producent»: een organisme dat zelf voedsel maakt, meestal een plant.",
-      "uo": [
-       "Dat is «Consument».",
-       "Klopt: maakt zelf voedsel.",
-       "Dat is «Reducent».",
-       "Dat is «Omnivoor»."
-      ],
-      "uh": "Onthoud: «Producent» = maakt zelf voedsel."
-     },
-     {
-      "v": "Welk begrip hoort bij: \"een organisme dat zelf voedsel maakt, meestal een plant\"?",
-      "o": [
-       "Consument",
-       "Reducent",
-       "Producent",
-       "Omnivoor"
-      ],
-      "c": 2,
-      "d": 3,
-      "u": "«Producent»: een organisme dat zelf voedsel maakt, meestal een plant.",
-      "uo": [
-       "«Consument» betekent eet andere organismen.",
-       "«Reducent» betekent breekt dood materiaal af.",
-       "Klopt, dit is «Producent».",
-       "«Omnivoor» betekent alleseter."
-      ],
-      "uh": "Onthoud: «Producent» = maakt zelf voedsel."
-     },
-     {
-      "v": "Welke term hoort bij \"eet andere organismen\"?",
-      "o": [
-       "Omnivoor",
-       "Stikstofkringloop",
-       "Herbivoor",
-       "Consument"
-      ],
-      "c": 3,
-      "d": 2,
-      "u": "«Consument»: een organisme dat andere organismen eet.",
-      "uo": [
-       "«Omnivoor» betekent alleseter.",
-       "«Stikstofkringloop» betekent stikstof gaat rond.",
-       "«Herbivoor» betekent planteneter.",
-       "Klopt, «Consument» past hierbij."
-      ],
-      "uh": "Onthoud: «Consument» = eet andere organismen."
-     },
-     {
-      "v": "Wat betekent «Consument»?",
-      "o": [
-       "een organisme dat andere organismen eet",
-       "een organisme dat zelf voedsel maakt, meestal een plant",
-       "een organisme dat dood materiaal afbreekt, zoals een schimmel",
-       "een dier dat zowel planten als dieren eet"
-      ],
-      "c": 0,
-      "d": 1,
-      "u": "«Consument»: een organisme dat andere organismen eet.",
-      "uo": [
-       "Klopt: eet andere organismen.",
-       "Dat is «Producent».",
-       "Dat is «Reducent».",
-       "Dat is «Omnivoor»."
-      ],
-      "uh": "Onthoud: «Consument» = eet andere organismen."
-     },
-     {
-      "v": "Welk begrip hoort bij: \"een organisme dat andere organismen eet\"?",
-      "o": [
-       "Producent",
-       "Consument",
-       "Reducent",
-       "Omnivoor"
-      ],
-      "c": 1,
-      "d": 3,
-      "u": "«Consument»: een organisme dat andere organismen eet.",
-      "uo": [
-       "«Producent» betekent maakt zelf voedsel.",
-       "Klopt, dit is «Consument».",
-       "«Reducent» betekent breekt dood materiaal af.",
-       "«Omnivoor» betekent alleseter."
-      ],
-      "uh": "Onthoud: «Consument» = eet andere organismen."
-     },
-     {
-      "v": "Welke term hoort bij \"breekt dood materiaal af\"?",
-      "o": [
-       "Omnivoor",
-       "Ecosysteem",
-       "Reducent",
-       "Voedselketen"
+       "Zuurstof en afval",
+       "Alleen schoon water",
+       "Glucose (suiker)",
+       "Stikstof uit de bodem"
       ],
       "c": 2,
       "d": 2,
-      "u": "«Reducent»: een organisme dat dood materiaal afbreekt, zoals een schimmel.",
+      "u": "Een plant maakt glucose.",
       "uo": [
-       "«Omnivoor» betekent alleseter.",
-       "«Ecosysteem» betekent organismen plus omgeving.",
-       "Klopt, «Reducent» past hierbij.",
-       "«Voedselketen» betekent wie eet wie, in een lijn."
+       "Zuurstof komt vrij, maar is niet het hoofdproduct.",
+       "Water is een grondstof, geen product.",
+       "Klopt: een plant maakt glucose.",
+       "Stikstof komt uit de bodem."
       ],
-      "uh": "Onthoud: «Reducent» = breekt dood materiaal af."
+      "uh": "Een plant maakt glucose."
      },
      {
-      "v": "Wat betekent «Fotosynthese»?",
+      "v": "Wat is een producent in een voedselketen?",
       "o": [
-       "het vrijmaken van energie uit voedingsstoffen met zuurstof",
-       "een organisme dat zelf voedsel maakt, meestal een plant",
-       "de kringloop waarin stikstof via bacteriën en planten rondgaat",
-       "het maken van glucose uit koolstofdioxide en water met licht"
-      ],
-      "c": 3,
-      "d": 1,
-      "u": "«Fotosynthese»: het maken van glucose uit koolstofdioxide en water met licht.",
-      "uo": [
-       "Dat is «Verbranding».",
-       "Dat is «Producent».",
-       "Dat is «Stikstofkringloop».",
-       "Klopt: suiker maken met licht."
-      ],
-      "uh": "Onthoud: «Fotosynthese» = suiker maken met licht."
-     },
-     {
-      "v": "Welk begrip hoort bij: \"een organisme dat dood materiaal afbreekt, zoals een schimmel\"?",
-      "o": [
-       "Reducent",
-       "Producent",
-       "Consument",
-       "Omnivoor"
-      ],
-      "c": 0,
-      "d": 3,
-      "u": "«Reducent»: een organisme dat dood materiaal afbreekt, zoals een schimmel.",
-      "uo": [
-       "Klopt, dit is «Reducent».",
-       "«Producent» betekent maakt zelf voedsel.",
-       "«Consument» betekent eet andere organismen.",
-       "«Omnivoor» betekent alleseter."
-      ],
-      "uh": "Onthoud: «Reducent» = breekt dood materiaal af."
-     },
-     {
-      "v": "Welke term hoort bij \"suiker maken met licht\"?",
-      "o": [
-       "Producent",
-       "Fotosynthese",
-       "Stikstofkringloop",
-       "Koolstofkringloop"
-      ],
-      "c": 1,
-      "d": 2,
-      "u": "«Fotosynthese»: het maken van glucose uit koolstofdioxide en water met licht.",
-      "uo": [
-       "«Producent» betekent maakt zelf voedsel.",
-       "Klopt, «Fotosynthese» past hierbij.",
-       "«Stikstofkringloop» betekent stikstof gaat rond.",
-       "«Koolstofkringloop» betekent koolstof gaat rond."
-      ],
-      "uh": "Onthoud: «Fotosynthese» = suiker maken met licht."
-     },
-     {
-      "v": "Wat betekent «Verbranding»?",
-      "o": [
-       "het maken van glucose uit koolstofdioxide en water met licht",
-       "een dier dat andere dieren eet",
-       "het vrijmaken van energie uit voedingsstoffen met zuurstof",
-       "een organisme dat dood materiaal afbreekt, zoals een schimmel"
-      ],
-      "c": 2,
-      "d": 1,
-      "u": "«Verbranding»: het vrijmaken van energie uit voedingsstoffen met zuurstof.",
-      "uo": [
-       "Dat is «Fotosynthese».",
-       "Dat is «Carnivoor».",
-       "Klopt: energie vrijmaken met zuurstof.",
-       "Dat is «Reducent»."
-      ],
-      "uh": "Onthoud: «Verbranding» = energie vrijmaken met zuurstof."
-     },
-     {
-      "v": "Welk begrip hoort bij: \"het maken van glucose uit koolstofdioxide en water met licht\"?",
-      "o": [
-       "Verbranding",
-       "Producent",
-       "Stikstofkringloop",
-       "Fotosynthese"
-      ],
-      "c": 3,
-      "d": 3,
-      "u": "«Fotosynthese»: het maken van glucose uit koolstofdioxide en water met licht.",
-      "uo": [
-       "«Verbranding» betekent energie vrijmaken met zuurstof.",
-       "«Producent» betekent maakt zelf voedsel.",
-       "«Stikstofkringloop» betekent stikstof gaat rond.",
-       "Klopt, dit is «Fotosynthese»."
-      ],
-      "uh": "Onthoud: «Fotosynthese» = suiker maken met licht."
-     },
-     {
-      "v": "Welke term hoort bij \"planteneter\"?",
-      "o": [
-       "Herbivoor",
-       "Stikstofkringloop",
-       "Fotosynthese",
-       "Verbranding"
-      ],
-      "c": 0,
-      "d": 2,
-      "u": "«Herbivoor»: een dier dat alleen planten eet.",
-      "uo": [
-       "Klopt, «Herbivoor» past hierbij.",
-       "«Stikstofkringloop» betekent stikstof gaat rond.",
-       "«Fotosynthese» betekent suiker maken met licht.",
-       "«Verbranding» betekent energie vrijmaken met zuurstof."
-      ],
-      "uh": "Onthoud: «Herbivoor» = planteneter."
-     },
-     {
-      "v": "Wat betekent «Stikstofkringloop»?",
-      "o": [
-       "de kringloop waarin koolstof tussen organismen en lucht rondgaat",
-       "de kringloop waarin stikstof via bacteriën en planten rondgaat",
-       "een leefgebied met alle organismen en hun omgeving samen",
-       "meerdere voedselketens die met elkaar verbonden zijn"
-      ],
-      "c": 1,
-      "d": 1,
-      "u": "«Stikstofkringloop»: de kringloop waarin stikstof via bacteriën en planten rondgaat.",
-      "uo": [
-       "Dat is «Koolstofkringloop».",
-       "Klopt: stikstof gaat rond.",
-       "Dat is «Ecosysteem».",
-       "Dat is «Voedselweb»."
-      ],
-      "uh": "Onthoud: «Stikstofkringloop» = stikstof gaat rond."
-     },
-     {
-      "v": "Welk begrip hoort bij: \"het vrijmaken van energie uit voedingsstoffen met zuurstof\"?",
-      "o": [
-       "Fotosynthese",
-       "Carnivoor",
-       "Verbranding",
-       "Reducent"
-      ],
-      "c": 2,
-      "d": 3,
-      "u": "«Verbranding»: het vrijmaken van energie uit voedingsstoffen met zuurstof.",
-      "uo": [
-       "«Fotosynthese» betekent suiker maken met licht.",
-       "«Carnivoor» betekent vleeseter.",
-       "Klopt, dit is «Verbranding».",
-       "«Reducent» betekent breekt dood materiaal af."
-      ],
-      "uh": "Onthoud: «Verbranding» = energie vrijmaken met zuurstof."
-     },
-     {
-      "v": "Welke term hoort bij \"vleeseter\"?",
-      "o": [
-       "Stikstofkringloop",
-       "Fotosynthese",
-       "Verbranding",
-       "Carnivoor"
-      ],
-      "c": 3,
-      "d": 2,
-      "u": "«Carnivoor»: een dier dat andere dieren eet.",
-      "uo": [
-       "«Stikstofkringloop» betekent stikstof gaat rond.",
-       "«Fotosynthese» betekent suiker maken met licht.",
-       "«Verbranding» betekent energie vrijmaken met zuurstof.",
-       "Klopt, «Carnivoor» past hierbij."
-      ],
-      "uh": "Onthoud: «Carnivoor» = vleeseter."
-     },
-     {
-      "v": "Wat betekent «Herbivoor»?",
-      "o": [
-       "een dier dat alleen planten eet",
-       "een dier dat andere dieren eet",
-       "een dier dat zowel planten als dieren eet",
-       "de kringloop waarin stikstof via bacteriën en planten rondgaat"
+       "Een plant",
+       "Een vleesetend dier",
+       "Een afbrekende schimmel",
+       "Een grazend hert"
       ],
       "c": 0,
       "d": 1,
-      "u": "«Herbivoor»: een dier dat alleen planten eet.",
+      "u": "Een plant maakt zelf voedsel.",
       "uo": [
-       "Klopt: planteneter.",
-       "Dat is «Carnivoor».",
-       "Dat is «Omnivoor».",
-       "Dat is «Stikstofkringloop»."
+       "Klopt: een plant maakt zelf voedsel.",
+       "Dat is een consument.",
+       "Dat is een reducent.",
+       "Dat is een herbivoor."
       ],
-      "uh": "Onthoud: «Herbivoor» = planteneter."
+      "uh": "Een plant maakt zelf voedsel."
      },
      {
-      "v": "Welk begrip hoort bij: \"de kringloop waarin koolstof tussen organismen en lucht rondgaat\"?",
+      "v": "Een schimmel breekt dode bladeren af. Wat is de schimmel?",
       "o": [
-       "Stikstofkringloop",
-       "Koolstofkringloop",
-       "Ecosysteem",
-       "Voedselweb"
+       "Een producent",
+       "Een reducent",
+       "Een herbivoor",
+       "Een carnivoor"
       ],
       "c": 1,
       "d": 3,
-      "u": "«Koolstofkringloop»: de kringloop waarin koolstof tussen organismen en lucht rondgaat.",
+      "u": "Een reducent breekt dood materiaal af.",
       "uo": [
-       "«Stikstofkringloop» betekent stikstof gaat rond.",
-       "Klopt, dit is «Koolstofkringloop».",
-       "«Ecosysteem» betekent organismen plus omgeving.",
-       "«Voedselweb» betekent verbonden voedselketens."
+       "Een producent maakt zelf voedsel.",
+       "Klopt: een reducent breekt dood materiaal af.",
+       "Een herbivoor eet planten.",
+       "Een carnivoor eet dieren."
       ],
-      "uh": "Onthoud: «Koolstofkringloop» = koolstof gaat rond."
+      "uh": "Een reducent breekt dood materiaal af."
      },
      {
-      "v": "Welke term hoort bij \"alleseter\"?",
+      "v": "Een koe eet alleen gras. Wat voor eter is een koe?",
       "o": [
-       "Stikstofkringloop",
-       "Ecosysteem",
-       "Omnivoor",
-       "Voedselketen"
+       "Een carnivoor",
+       "Een reducent",
+       "Een producent",
+       "Een herbivoor"
+      ],
+      "c": 3,
+      "d": 2,
+      "u": "Een herbivoor eet planten.",
+      "uo": [
+       "Een carnivoor eet vlees.",
+       "Een reducent breekt af.",
+       "Een producent maakt voedsel.",
+       "Klopt: een herbivoor eet planten."
+      ],
+      "uh": "Een herbivoor eet planten."
+     },
+     {
+      "v": "Wat gebeurt er in een voedselweb?",
+      "o": [
+       "Eén rechte eetketen",
+       "Alleen planten groeien",
+       "Meerdere ketens zijn verbonden",
+       "Stoffen verdwijnen"
       ],
       "c": 2,
       "d": 2,
-      "u": "«Omnivoor»: een dier dat zowel planten als dieren eet.",
+      "u": "Meerdere ketens zijn met elkaar verbonden.",
       "uo": [
-       "«Stikstofkringloop» betekent stikstof gaat rond.",
-       "«Ecosysteem» betekent organismen plus omgeving.",
-       "Klopt, «Omnivoor» past hierbij.",
-       "«Voedselketen» betekent wie eet wie, in een lijn."
+       "Dat is een voedselketen.",
+       "Een web bevat ook dieren.",
+       "Klopt: meerdere ketens zijn met elkaar verbonden.",
+       "Stoffen gaan juist rond."
       ],
-      "uh": "Onthoud: «Omnivoor» = alleseter."
+      "uh": "Meerdere ketens zijn met elkaar verbonden."
      },
      {
-      "v": "Wat betekent «Carnivoor»?",
+      "v": "Wat doen reducenten met dode resten?",
       "o": [
-       "een dier dat alleen planten eet",
-       "een dier dat zowel planten als dieren eet",
-       "de kringloop waarin stikstof via bacteriën en planten rondgaat",
-       "een dier dat andere dieren eet"
-      ],
-      "c": 3,
-      "d": 1,
-      "u": "«Carnivoor»: een dier dat andere dieren eet.",
-      "uo": [
-       "Dat is «Herbivoor».",
-       "Dat is «Omnivoor».",
-       "Dat is «Stikstofkringloop».",
-       "Klopt: vleeseter."
-      ],
-      "uh": "Onthoud: «Carnivoor» = vleeseter."
-     },
-     {
-      "v": "Welk begrip hoort bij: \"de kringloop waarin stikstof via bacteriën en planten rondgaat\"?",
-      "o": [
-       "Stikstofkringloop",
-       "Koolstofkringloop",
-       "Ecosysteem",
-       "Voedselweb"
+       "Ze breken ze af",
+       "Ze eten levende dieren",
+       "Ze maken er licht van",
+       "Ze pompen bloed rond"
       ],
       "c": 0,
-      "d": 3,
-      "u": "«Stikstofkringloop»: de kringloop waarin stikstof via bacteriën en planten rondgaat.",
+      "d": 1,
+      "u": "Reducenten breken dode resten af.",
       "uo": [
-       "Klopt, dit is «Stikstofkringloop».",
-       "«Koolstofkringloop» betekent koolstof gaat rond.",
-       "«Ecosysteem» betekent organismen plus omgeving.",
-       "«Voedselweb» betekent verbonden voedselketens."
+       "Klopt: reducenten breken dode resten af.",
+       "Ze eten geen levende dieren.",
+       "Ze maken geen licht.",
+       "Bloed pompen doet een hart."
       ],
-      "uh": "Onthoud: «Stikstofkringloop» = stikstof gaat rond."
+      "uh": "Reducenten breken dode resten af."
      },
      {
-      "v": "Welke term hoort bij \"organismen plus omgeving\"?",
+      "v": "Wat heeft een plant nodig voor fotosynthese?",
       "o": [
-       "Carnivoor",
-       "Ecosysteem",
-       "Producent",
-       "Voedselketen"
+       "Zuurstof uit de lucht",
+       "Licht, water en CO2",
+       "Suiker als brandstof",
+       "Vlees en eiwitten"
       ],
       "c": 1,
       "d": 2,
-      "u": "«Ecosysteem»: een leefgebied met alle organismen en hun omgeving samen.",
+      "u": "Licht, water en koolstofdioxide.",
       "uo": [
-       "«Carnivoor» betekent vleeseter.",
-       "Klopt, «Ecosysteem» past hierbij.",
-       "«Producent» betekent maakt zelf voedsel.",
-       "«Voedselketen» betekent wie eet wie, in een lijn."
+       "Zuurstof komt juist vrij.",
+       "Klopt: licht, water en koolstofdioxide.",
+       "Suiker is het product.",
+       "Planten eten geen vlees."
       ],
-      "uh": "Onthoud: «Ecosysteem» = organismen plus omgeving."
+      "uh": "Licht, water en koolstofdioxide."
+     },
+     {
+      "v": "In welke kringloop gaat koolstof rond?",
+      "o": [
+       "De waterkringloop",
+       "De stikstofkringloop",
+       "De voedselketen",
+       "De koolstofkringloop"
+      ],
+      "c": 3,
+      "d": 2,
+      "u": "Koolstof in de koolstofkringloop.",
+      "uo": [
+       "Water gaat rond in de waterkringloop.",
+       "Stikstof in de stikstofkringloop.",
+       "Een keten is geen kringloop.",
+       "Klopt: koolstof in de koolstofkringloop."
+      ],
+      "uh": "Koolstof in de koolstofkringloop."
+     },
+     {
+      "v": "Een dier eet zowel planten als andere dieren. Wat is het?",
+      "o": [
+       "Een herbivoor",
+       "Een producent",
+       "Een omnivoor",
+       "Een reducent"
+      ],
+      "c": 2,
+      "d": 3,
+      "u": "Een omnivoor eet allebei.",
+      "uo": [
+       "Een herbivoor eet alleen planten.",
+       "Een producent maakt voedsel.",
+       "Klopt: een omnivoor eet allebei.",
+       "Een reducent breekt af."
+      ],
+      "uh": "Een omnivoor eet allebei."
+     },
+     {
+      "v": "Waarom noem je planten producenten?",
+      "o": [
+       "Ze maken zelf hun voedsel",
+       "Ze eten andere dieren",
+       "Ze breken resten af",
+       "Ze pompen bloed rond"
+      ],
+      "c": 0,
+      "d": 2,
+      "u": "Planten maken zelf voedsel.",
+      "uo": [
+       "Klopt: planten maken zelf voedsel.",
+       "Dat doen consumenten.",
+       "Dat doen reducenten.",
+       "Bloed pompen doet een hart."
+      ],
+      "uh": "Planten maken zelf voedsel."
+     },
+     {
+      "v": "Wat gebeurt er bij fotosynthese?",
+      "o": [
+       "Suiker wordt juist verbrand",
+       "Er wordt suiker gemaakt",
+       "Er wordt bloed rondgepompt",
+       "Water verdampt in de lucht"
+      ],
+      "c": 1,
+      "d": 2,
+      "u": "Er wordt suiker gemaakt.",
+      "uo": [
+       "Verbranden is het tegenovergestelde.",
+       "Klopt: er wordt suiker gemaakt.",
+       "Bloed pompen doet een hart.",
+       "Dat is verdamping."
+      ],
+      "uh": "Er wordt suiker gemaakt."
+     },
+     {
+      "v": "Wat is een reducent, bijvoorbeeld?",
+      "o": [
+       "Een grasetend konijn",
+       "Een groene plant",
+       "Een jagende vos",
+       "Een schimmel"
+      ],
+      "c": 3,
+      "d": 3,
+      "u": "Een schimmel is een reducent.",
+      "uo": [
+       "Dat is een herbivoor.",
+       "Dat is een producent.",
+       "Dat is een carnivoor.",
+       "Klopt: een schimmel is een reducent."
+      ],
+      "uh": "Een schimmel is een reducent."
+     },
+     {
+      "v": "Waardoor blijven stoffen in een ecosysteem rondgaan?",
+      "o": [
+       "Door alleen de planten",
+       "Door alleen de dieren",
+       "Door kringlopen",
+       "Doordat ze verdwijnen"
+      ],
+      "c": 2,
+      "d": 2,
+      "u": "Door kringlopen gaan stoffen rond.",
+      "uo": [
+       "Planten alleen is niet genoeg.",
+       "Dieren alleen is niet genoeg.",
+       "Klopt: door kringlopen gaan stoffen rond.",
+       "Stoffen verdwijnen niet."
+      ],
+      "uh": "Door kringlopen gaan stoffen rond."
+     },
+     {
+      "v": "Wat is een ecosysteem?",
+      "o": [
+       "Organismen met hun omgeving",
+       "Alleen de dieren in een gebied",
+       "Alleen de groene planten",
+       "Alleen de kale bodem"
+      ],
+      "c": 0,
+      "d": 1,
+      "u": "Organismen samen met hun omgeving.",
+      "uo": [
+       "Klopt: organismen samen met hun omgeving.",
+       "Dieren zijn maar een deel.",
+       "Planten zijn maar een deel.",
+       "De bodem is maar een deel."
+      ],
+      "uh": "Organismen samen met hun omgeving."
+     },
+     {
+      "v": "Een vos eet konijnen. Wat voor eter is de vos?",
+      "o": [
+       "Een herbivoor",
+       "Een carnivoor",
+       "Een producent",
+       "Een reducent"
+      ],
+      "c": 1,
+      "d": 2,
+      "u": "Een carnivoor eet dieren.",
+      "uo": [
+       "Een herbivoor eet planten.",
+       "Klopt: een carnivoor eet dieren.",
+       "Een producent maakt voedsel.",
+       "Een reducent breekt af."
+      ],
+      "uh": "Een carnivoor eet dieren."
+     },
+     {
+      "v": "Welke stof komt vrij bij fotosynthese?",
+      "o": [
+       "Koolstofdioxide",
+       "Stikstof",
+       "Suiker",
+       "Zuurstof"
+      ],
+      "c": 3,
+      "d": 2,
+      "u": "Er komt zuurstof vrij.",
+      "uo": [
+       "CO2 is juist een grondstof.",
+       "Stikstof speelt hier geen rol.",
+       "Suiker blijft in de plant.",
+       "Klopt: er komt zuurstof vrij."
+      ],
+      "uh": "Er komt zuurstof vrij."
      }
     ],
     "begrippen": [
@@ -6746,498 +6366,308 @@ var VAKKEN_VMBO = [
     "nBeg": 0,
     "sv": [
      {
-      "v": "Welk begrip hoort bij: \"het opwarmen van de aarde door broeikasgassen in de lucht\"?",
+      "v": "Wat hoort bij milieuvervuiling?",
       "o": [
-       "Broeikaseffect",
-       "Milieuvervuiling",
-       "Recycling",
-       "Grondstof"
-      ],
-      "c": 0,
-      "d": 3,
-      "u": "«Broeikaseffect»: het opwarmen van de aarde door broeikasgassen in de lucht.",
-      "uo": [
-       "Klopt, dit is «Broeikaseffect».",
-       "«Milieuvervuiling» betekent schadelijke stoffen lozen.",
-       "«Recycling» betekent afval hergebruiken.",
-       "«Grondstof» betekent basismateriaal."
-      ],
-      "uh": "Onthoud: «Broeikaseffect» = aarde warmt op."
-     },
-     {
-      "v": "Welke term hoort bij \"aarde warmt op\"?",
-      "o": [
-       "Recycling",
-       "Broeikaseffect",
-       "Grondstof",
-       "Fossiele brandstof"
+       "Bomen planten langs de weg",
+       "Schadelijke stoffen lozen",
+       "Afval netjes scheiden",
+       "Zonnepanelen plaatsen"
       ],
       "c": 1,
       "d": 2,
-      "u": "«Broeikaseffect»: het opwarmen van de aarde door broeikasgassen in de lucht.",
+      "u": "Schadelijke stoffen in de omgeving brengen.",
       "uo": [
-       "«Recycling» betekent afval hergebruiken.",
-       "Klopt, «Broeikaseffect» past hierbij.",
-       "«Grondstof» betekent basismateriaal.",
-       "«Fossiele brandstof» betekent olie, gas en kolen."
+       "Bomen planten helpt juist.",
+       "Klopt: schadelijke stoffen in de omgeving brengen.",
+       "Scheiden is juist goed.",
+       "Zonnepanelen zijn schoon."
       ],
-      "uh": "Onthoud: «Broeikaseffect» = aarde warmt op."
+      "uh": "Schadelijke stoffen in de omgeving brengen."
      },
      {
-      "v": "Wat betekent «Broeikaseffect»?",
+      "v": "Waardoor warmt de aarde op?",
       "o": [
-       "het toevoegen van schadelijke stoffen aan lucht, water of bodem",
-       "afval verwerken tot nieuwe grondstoffen of producten",
-       "het opwarmen van de aarde door broeikasgassen in de lucht",
-       "een natuurlijke stof waarvan je iets maakt"
-      ],
-      "c": 2,
-      "d": 1,
-      "u": "«Broeikaseffect»: het opwarmen van de aarde door broeikasgassen in de lucht.",
-      "uo": [
-       "Dat is «Milieuvervuiling».",
-       "Dat is «Recycling».",
-       "Klopt: aarde warmt op.",
-       "Dat is «Grondstof»."
-      ],
-      "uh": "Onthoud: «Broeikaseffect» = aarde warmt op."
-     },
-     {
-      "v": "Welk begrip hoort bij: \"een gas zoals koolstofdioxide dat warmte vasthoudt\"?",
-      "o": [
-       "Fijnstof",
-       "Recycling",
-       "Kringloopdenken",
-       "Broeikasgas"
-      ],
-      "c": 3,
-      "d": 3,
-      "u": "«Broeikasgas»: een gas zoals koolstofdioxide dat warmte vasthoudt.",
-      "uo": [
-       "«Fijnstof» betekent schadelijke luchtdeeltjes.",
-       "«Recycling» betekent afval hergebruiken.",
-       "«Kringloopdenken» betekent grondstoffen hergebruiken.",
-       "Klopt, dit is «Broeikasgas»."
-      ],
-      "uh": "Onthoud: «Broeikasgas» = gas dat warmte vasthoudt."
-     },
-     {
-      "v": "Welke term hoort bij \"gas dat warmte vasthoudt\"?",
-      "o": [
-       "Broeikasgas",
-       "Recycling",
-       "Kringloopdenken",
-       "Milieuvervuiling"
-      ],
-      "c": 0,
-      "d": 2,
-      "u": "«Broeikasgas»: een gas zoals koolstofdioxide dat warmte vasthoudt.",
-      "uo": [
-       "Klopt, «Broeikasgas» past hierbij.",
-       "«Recycling» betekent afval hergebruiken.",
-       "«Kringloopdenken» betekent grondstoffen hergebruiken.",
-       "«Milieuvervuiling» betekent schadelijke stoffen lozen."
-      ],
-      "uh": "Onthoud: «Broeikasgas» = gas dat warmte vasthoudt."
-     },
-     {
-      "v": "Wat betekent «Broeikasgas»?",
-      "o": [
-       "kleine zwevende deeltjes in de lucht die schadelijk zijn",
-       "een gas zoals koolstofdioxide dat warmte vasthoudt",
-       "afval verwerken tot nieuwe grondstoffen of producten",
-       "grondstoffen steeds opnieuw gebruiken in plaats van weggooien"
-      ],
-      "c": 1,
-      "d": 1,
-      "u": "«Broeikasgas»: een gas zoals koolstofdioxide dat warmte vasthoudt.",
-      "uo": [
-       "Dat is «Fijnstof».",
-       "Klopt: gas dat warmte vasthoudt.",
-       "Dat is «Recycling».",
-       "Dat is «Kringloopdenken»."
-      ],
-      "uh": "Onthoud: «Broeikasgas» = gas dat warmte vasthoudt."
-     },
-     {
-      "v": "Welk begrip hoort bij: \"zo leven dat er ook voor de toekomst genoeg overblijft\"?",
-      "o": [
-       "Kringloopdenken",
-       "Fossiele brandstof",
-       "Duurzaamheid",
-       "Duurzame energie"
-      ],
-      "c": 2,
-      "d": 3,
-      "u": "«Duurzaamheid»: zo leven dat er ook voor de toekomst genoeg overblijft.",
-      "uo": [
-       "«Kringloopdenken» betekent grondstoffen hergebruiken.",
-       "«Fossiele brandstof» betekent olie, gas en kolen.",
-       "Klopt, dit is «Duurzaamheid».",
-       "«Duurzame energie» betekent energie die niet opraakt."
-      ],
-      "uh": "Onthoud: «Duurzaamheid» = toekomstbestendig leven."
-     },
-     {
-      "v": "Welke term hoort bij \"toekomstbestendig leven\"?",
-      "o": [
-       "Fossiele brandstof",
-       "Duurzame energie",
-       "Milieuvervuiling",
-       "Duurzaamheid"
-      ],
-      "c": 3,
-      "d": 2,
-      "u": "«Duurzaamheid»: zo leven dat er ook voor de toekomst genoeg overblijft.",
-      "uo": [
-       "«Fossiele brandstof» betekent olie, gas en kolen.",
-       "«Duurzame energie» betekent energie die niet opraakt.",
-       "«Milieuvervuiling» betekent schadelijke stoffen lozen.",
-       "Klopt, «Duurzaamheid» past hierbij."
-      ],
-      "uh": "Onthoud: «Duurzaamheid» = toekomstbestendig leven."
-     },
-     {
-      "v": "Wat betekent «Duurzaamheid»?",
-      "o": [
-       "zo leven dat er ook voor de toekomst genoeg overblijft",
-       "grondstoffen steeds opnieuw gebruiken in plaats van weggooien",
-       "brandstof uit resten van organismen, zoals olie en gas",
-       "energie uit bronnen die niet opraken, zoals zon en wind"
-      ],
-      "c": 0,
-      "d": 1,
-      "u": "«Duurzaamheid»: zo leven dat er ook voor de toekomst genoeg overblijft.",
-      "uo": [
-       "Klopt: toekomstbestendig leven.",
-       "Dat is «Kringloopdenken».",
-       "Dat is «Fossiele brandstof».",
-       "Dat is «Duurzame energie»."
-      ],
-      "uh": "Onthoud: «Duurzaamheid» = toekomstbestendig leven."
-     },
-     {
-      "v": "Welk begrip hoort bij: \"afval verwerken tot nieuwe grondstoffen of producten\"?",
-      "o": [
-       "Kringloopdenken",
-       "Recycling",
-       "Fijnstof",
-       "Fossiele brandstof"
-      ],
-      "c": 1,
-      "d": 3,
-      "u": "«Recycling»: afval verwerken tot nieuwe grondstoffen of producten.",
-      "uo": [
-       "«Kringloopdenken» betekent grondstoffen hergebruiken.",
-       "Klopt, dit is «Recycling».",
-       "«Fijnstof» betekent schadelijke luchtdeeltjes.",
-       "«Fossiele brandstof» betekent olie, gas en kolen."
-      ],
-      "uh": "Onthoud: «Recycling» = afval hergebruiken."
-     },
-     {
-      "v": "Welke term hoort bij \"grondstoffen hergebruiken\"?",
-      "o": [
-       "Biodiversiteit",
-       "Duurzame energie",
-       "Kringloopdenken",
-       "Broeikasgas"
+       "Door recycling",
+       "Door meer bomen",
+       "Door het broeikaseffect",
+       "Door schone lucht"
       ],
       "c": 2,
       "d": 2,
-      "u": "«Kringloopdenken»: grondstoffen steeds opnieuw gebruiken in plaats van weggooien.",
+      "u": "Door het broeikaseffect.",
       "uo": [
-       "«Biodiversiteit» betekent soortenrijkdom.",
-       "«Duurzame energie» betekent energie die niet opraakt.",
-       "Klopt, «Kringloopdenken» past hierbij.",
-       "«Broeikasgas» betekent gas dat warmte vasthoudt."
+       "Recycling helpt juist.",
+       "Bomen nemen CO2 op.",
+       "Klopt: door het broeikaseffect.",
+       "Schone lucht warmt niet op."
       ],
-      "uh": "Onthoud: «Kringloopdenken» = grondstoffen hergebruiken."
+      "uh": "Door het broeikaseffect."
      },
      {
-      "v": "Wat betekent «Recycling»?",
+      "v": "Welke energiebron raakt op?",
       "o": [
-       "grondstoffen steeds opnieuw gebruiken in plaats van weggooien",
-       "kleine zwevende deeltjes in de lucht die schadelijk zijn",
-       "brandstof uit resten van organismen, zoals olie en gas",
-       "afval verwerken tot nieuwe grondstoffen of producten"
-      ],
-      "c": 3,
-      "d": 1,
-      "u": "«Recycling»: afval verwerken tot nieuwe grondstoffen of producten.",
-      "uo": [
-       "Dat is «Kringloopdenken».",
-       "Dat is «Fijnstof».",
-       "Dat is «Fossiele brandstof».",
-       "Klopt: afval hergebruiken."
-      ],
-      "uh": "Onthoud: «Recycling» = afval hergebruiken."
-     },
-     {
-      "v": "Welk begrip hoort bij: \"energie uit bronnen die niet opraken, zoals zon en wind\"?",
-      "o": [
-       "Duurzame energie",
-       "Fossiele brandstof",
-       "Fijnstof",
-       "Biodiversiteit"
-      ],
-      "c": 0,
-      "d": 3,
-      "u": "«Duurzame energie»: energie uit bronnen die niet opraken, zoals zon en wind.",
-      "uo": [
-       "Klopt, dit is «Duurzame energie».",
-       "«Fossiele brandstof» betekent olie, gas en kolen.",
-       "«Fijnstof» betekent schadelijke luchtdeeltjes.",
-       "«Biodiversiteit» betekent soortenrijkdom."
-      ],
-      "uh": "Onthoud: «Duurzame energie» = energie die niet opraakt."
-     },
-     {
-      "v": "Welke term hoort bij \"afval hergebruiken\"?",
-      "o": [
-       "Fijnstof",
-       "Recycling",
-       "Fossiele brandstof",
-       "Biodiversiteit"
-      ],
-      "c": 1,
-      "d": 2,
-      "u": "«Recycling»: afval verwerken tot nieuwe grondstoffen of producten.",
-      "uo": [
-       "«Fijnstof» betekent schadelijke luchtdeeltjes.",
-       "Klopt, «Recycling» past hierbij.",
-       "«Fossiele brandstof» betekent olie, gas en kolen.",
-       "«Biodiversiteit» betekent soortenrijkdom."
-      ],
-      "uh": "Onthoud: «Recycling» = afval hergebruiken."
-     },
-     {
-      "v": "Wat betekent «Duurzame energie»?",
-      "o": [
-       "brandstof uit resten van organismen, zoals olie en gas",
-       "kleine zwevende deeltjes in de lucht die schadelijk zijn",
-       "energie uit bronnen die niet opraken, zoals zon en wind",
-       "de verscheidenheid aan soorten in een gebied"
-      ],
-      "c": 2,
-      "d": 1,
-      "u": "«Duurzame energie»: energie uit bronnen die niet opraken, zoals zon en wind.",
-      "uo": [
-       "Dat is «Fossiele brandstof».",
-       "Dat is «Fijnstof».",
-       "Klopt: energie die niet opraakt.",
-       "Dat is «Biodiversiteit»."
-      ],
-      "uh": "Onthoud: «Duurzame energie» = energie die niet opraakt."
-     },
-     {
-      "v": "Welk begrip hoort bij: \"materiaal dat door reducenten wordt afgebroken\"?",
-      "o": [
-       "Recycling",
-       "Kringloopdenken",
-       "Duurzaamheid",
-       "Afbreekbaar"
+       "Zonne-energie",
+       "Windenergie",
+       "Waterkracht",
+       "Aardgas"
       ],
       "c": 3,
       "d": 3,
-      "u": "«Afbreekbaar»: materiaal dat door reducenten wordt afgebroken.",
+      "u": "Aardgas is een fossiele brandstof.",
       "uo": [
-       "«Recycling» betekent afval hergebruiken.",
-       "«Kringloopdenken» betekent grondstoffen hergebruiken.",
-       "«Duurzaamheid» betekent toekomstbestendig leven.",
-       "Klopt, dit is «Afbreekbaar»."
+       "De zon raakt niet op.",
+       "Wind raakt niet op.",
+       "Water raakt niet op.",
+       "Klopt: aardgas is een fossiele brandstof."
       ],
-      "uh": "Onthoud: «Afbreekbaar» = wordt afgebroken."
+      "uh": "Aardgas is een fossiele brandstof."
      },
      {
-      "v": "Welke term hoort bij \"wordt afgebroken\"?",
+      "v": "Wat is duurzaam gedrag?",
       "o": [
-       "Afbreekbaar",
-       "Kringloopdenken",
-       "Duurzaamheid",
-       "Milieuvervuiling"
+       "Grondstoffen hergebruiken",
+       "Alles meteen weggooien",
+       "Veel benzine blijven verbruiken",
+       "Oude bomen omkappen"
       ],
       "c": 0,
       "d": 2,
-      "u": "«Afbreekbaar»: materiaal dat door reducenten wordt afgebroken.",
+      "u": "Hergebruiken is duurzaam.",
       "uo": [
-       "Klopt, «Afbreekbaar» past hierbij.",
-       "«Kringloopdenken» betekent grondstoffen hergebruiken.",
-       "«Duurzaamheid» betekent toekomstbestendig leven.",
-       "«Milieuvervuiling» betekent schadelijke stoffen lozen."
+       "Klopt: hergebruiken is duurzaam.",
+       "Weggooien is niet duurzaam.",
+       "Benzine vervuilt.",
+       "Bomen kappen schaadt de natuur."
       ],
-      "uh": "Onthoud: «Afbreekbaar» = wordt afgebroken."
+      "uh": "Hergebruiken is duurzaam."
      },
      {
-      "v": "Wat betekent «Fossiele brandstof»?",
+      "v": "Wat is een broeikasgas?",
       "o": [
-       "energie uit bronnen die niet opraken, zoals zon en wind",
-       "brandstof uit resten van organismen, zoals olie en gas",
-       "een gas zoals koolstofdioxide dat warmte vasthoudt",
-       "een natuurlijke stof waarvan je iets maakt"
+       "Zuurstof",
+       "Koolstofdioxide",
+       "Stikstof",
+       "Waterstof"
       ],
       "c": 1,
       "d": 1,
-      "u": "«Fossiele brandstof»: brandstof uit resten van organismen, zoals olie en gas.",
+      "u": "CO2 houdt warmte vast.",
       "uo": [
-       "Dat is «Duurzame energie».",
-       "Klopt: olie, gas en kolen.",
-       "Dat is «Broeikasgas».",
-       "Dat is «Grondstof»."
+       "Zuurstof is geen broeikasgas.",
+       "Klopt: CO2 houdt warmte vast.",
+       "Stikstof is geen broeikasgas.",
+       "Waterstof speelt hier geen rol."
       ],
-      "uh": "Onthoud: «Fossiele brandstof» = olie, gas en kolen."
+      "uh": "CO2 houdt warmte vast."
      },
      {
-      "v": "Welk begrip hoort bij: \"kleine zwevende deeltjes in de lucht die schadelijk zijn\"?",
+      "v": "Wat gebeurt er bij recycling?",
       "o": [
-       "Broeikasgas",
-       "Afbreekbaar",
-       "Fijnstof",
-       "Grondstof"
-      ],
-      "c": 2,
-      "d": 3,
-      "u": "«Fijnstof»: kleine zwevende deeltjes in de lucht die schadelijk zijn.",
-      "uo": [
-       "«Broeikasgas» betekent gas dat warmte vasthoudt.",
-       "«Afbreekbaar» betekent wordt afgebroken.",
-       "Klopt, dit is «Fijnstof».",
-       "«Grondstof» betekent basismateriaal."
-      ],
-      "uh": "Onthoud: «Fijnstof» = schadelijke luchtdeeltjes."
-     },
-     {
-      "v": "Welke term hoort bij \"schadelijke luchtdeeltjes\"?",
-      "o": [
-       "Afbreekbaar",
-       "Grondstof",
-       "Milieuvervuiling",
-       "Fijnstof"
-      ],
-      "c": 3,
-      "d": 2,
-      "u": "«Fijnstof»: kleine zwevende deeltjes in de lucht die schadelijk zijn.",
-      "uo": [
-       "«Afbreekbaar» betekent wordt afgebroken.",
-       "«Grondstof» betekent basismateriaal.",
-       "«Milieuvervuiling» betekent schadelijke stoffen lozen.",
-       "Klopt, «Fijnstof» past hierbij."
-      ],
-      "uh": "Onthoud: «Fijnstof» = schadelijke luchtdeeltjes."
-     },
-     {
-      "v": "Wat betekent «Biodiversiteit»?",
-      "o": [
-       "de verscheidenheid aan soorten in een gebied",
-       "een gas zoals koolstofdioxide dat warmte vasthoudt",
-       "kleine zwevende deeltjes in de lucht die schadelijk zijn",
-       "materiaal dat door reducenten wordt afgebroken"
-      ],
-      "c": 0,
-      "d": 1,
-      "u": "«Biodiversiteit»: de verscheidenheid aan soorten in een gebied.",
-      "uo": [
-       "Klopt: soortenrijkdom.",
-       "Dat is «Broeikasgas».",
-       "Dat is «Fijnstof».",
-       "Dat is «Afbreekbaar»."
-      ],
-      "uh": "Onthoud: «Biodiversiteit» = soortenrijkdom."
-     },
-     {
-      "v": "Welk begrip hoort bij: \"een natuurlijke stof waarvan je iets maakt\"?",
-      "o": [
-       "Fossiele brandstof",
-       "Grondstof",
-       "Afbreekbaar",
-       "Recycling"
-      ],
-      "c": 1,
-      "d": 3,
-      "u": "«Grondstof»: een natuurlijke stof waarvan je iets maakt.",
-      "uo": [
-       "«Fossiele brandstof» betekent olie, gas en kolen.",
-       "Klopt, dit is «Grondstof».",
-       "«Afbreekbaar» betekent wordt afgebroken.",
-       "«Recycling» betekent afval hergebruiken."
-      ],
-      "uh": "Onthoud: «Grondstof» = basismateriaal."
-     },
-     {
-      "v": "Welke term hoort bij \"basismateriaal\"?",
-      "o": [
-       "Afbreekbaar",
-       "Recycling",
-       "Grondstof",
-       "Duurzame energie"
+       "Afval wordt verbrand",
+       "Afval blijft liggen",
+       "Afval wordt hergebruikt",
+       "Afval wordt begraven"
       ],
       "c": 2,
       "d": 2,
-      "u": "«Grondstof»: een natuurlijke stof waarvan je iets maakt.",
+      "u": "Afval wordt een nieuwe grondstof.",
       "uo": [
-       "«Afbreekbaar» betekent wordt afgebroken.",
-       "«Recycling» betekent afval hergebruiken.",
-       "Klopt, «Grondstof» past hierbij.",
-       "«Duurzame energie» betekent energie die niet opraakt."
+       "Verbranden is geen recycling.",
+       "Blijven liggen helpt niet.",
+       "Klopt: afval wordt een nieuwe grondstof.",
+       "Begraven is geen hergebruik."
       ],
-      "uh": "Onthoud: «Grondstof» = basismateriaal."
+      "uh": "Afval wordt een nieuwe grondstof."
      },
      {
-      "v": "Wat betekent «Afbreekbaar»?",
+      "v": "Welke energiebron is duurzaam?",
       "o": [
-       "afval verwerken tot nieuwe grondstoffen of producten",
-       "grondstoffen steeds opnieuw gebruiken in plaats van weggooien",
-       "zo leven dat er ook voor de toekomst genoeg overblijft",
-       "materiaal dat door reducenten wordt afgebroken"
+       "Aardolie",
+       "Steenkool",
+       "Aardgas",
+       "Windenergie"
       ],
       "c": 3,
-      "d": 1,
-      "u": "«Afbreekbaar»: materiaal dat door reducenten wordt afgebroken.",
+      "d": 3,
+      "u": "Wind raakt niet op.",
       "uo": [
-       "Dat is «Recycling».",
-       "Dat is «Kringloopdenken».",
-       "Dat is «Duurzaamheid».",
-       "Klopt: wordt afgebroken."
+       "Aardolie raakt op.",
+       "Steenkool raakt op.",
+       "Aardgas raakt op.",
+       "Klopt: wind raakt niet op."
       ],
-      "uh": "Onthoud: «Afbreekbaar» = wordt afgebroken."
+      "uh": "Wind raakt niet op."
      },
      {
-      "v": "Wat betekent «Grondstof»?",
+      "v": "Wat is kringloopdenken?",
       "o": [
-       "een natuurlijke stof waarvan je iets maakt",
-       "brandstof uit resten van organismen, zoals olie en gas",
-       "materiaal dat door reducenten wordt afgebroken",
-       "afval verwerken tot nieuwe grondstoffen of producten"
+       "Grondstoffen opnieuw gebruiken",
+       "Steeds nieuwe grondstoffen kopen",
+       "Alles verbranden",
+       "Water verspillen"
       ],
       "c": 0,
-      "d": 1,
-      "u": "«Grondstof»: een natuurlijke stof waarvan je iets maakt.",
+      "d": 2,
+      "u": "Grondstoffen opnieuw gebruiken.",
       "uo": [
-       "Klopt: basismateriaal.",
-       "Dat is «Fossiele brandstof».",
-       "Dat is «Afbreekbaar».",
-       "Dat is «Recycling»."
+       "Klopt: grondstoffen opnieuw gebruiken.",
+       "Nieuw kopen is het tegenovergestelde.",
+       "Verbranden is geen kringloop.",
+       "Verspillen is niet duurzaam."
       ],
-      "uh": "Onthoud: «Grondstof» = basismateriaal."
+      "uh": "Grondstoffen opnieuw gebruiken."
      },
      {
-      "v": "Welk begrip hoort bij: \"het toevoegen van schadelijke stoffen aan lucht, water of bodem\"?",
+      "v": "Waarom is het broeikaseffect een probleem?",
       "o": [
-       "Broeikaseffect",
-       "Milieuvervuiling",
-       "Fijnstof",
-       "Biodiversiteit"
+       "De aarde koelt af",
+       "De aarde warmt op",
+       "Er komt meer zuurstof",
+       "Er groeien meer bomen"
       ],
       "c": 1,
-      "d": 3,
-      "u": "«Milieuvervuiling»: het toevoegen van schadelijke stoffen aan lucht, water of bodem.",
+      "d": 2,
+      "u": "De aarde warmt op.",
       "uo": [
-       "«Broeikaseffect» betekent aarde warmt op.",
-       "Klopt, dit is «Milieuvervuiling».",
-       "«Fijnstof» betekent schadelijke luchtdeeltjes.",
-       "«Biodiversiteit» betekent soortenrijkdom."
+       "De aarde koelt niet af.",
+       "Klopt: de aarde warmt op.",
+       "Zuurstof is niet het probleem.",
+       "Meer bomen zou juist helpen."
       ],
-      "uh": "Onthoud: «Milieuvervuiling» = schadelijke stoffen lozen."
+      "uh": "De aarde warmt op."
+     },
+     {
+      "v": "Wat is een fossiele brandstof?",
+      "o": [
+       "Zonlicht",
+       "Wind",
+       "Aardolie",
+       "Stromend water"
+      ],
+      "c": 2,
+      "d": 1,
+      "u": "Aardolie is fossiel.",
+      "uo": [
+       "Zonlicht is duurzaam.",
+       "Wind is duurzaam.",
+       "Klopt: aardolie is fossiel.",
+       "Water is duurzaam."
+      ],
+      "uh": "Aardolie is fossiel."
+     },
+     {
+      "v": "Wat betekent duurzaamheid?",
+      "o": [
+       "Alles snel opmaken",
+       "Zoveel mogelijk kopen",
+       "Grondstoffen uitputten",
+       "Genoeg overhouden voor later"
+      ],
+      "c": 3,
+      "d": 2,
+      "u": "Ook voor de toekomst genoeg overhouden.",
+      "uo": [
+       "Opmaken is niet duurzaam.",
+       "Veel kopen is niet duurzaam.",
+       "Uitputten is niet duurzaam.",
+       "Klopt: ook voor de toekomst genoeg overhouden."
+      ],
+      "uh": "Ook voor de toekomst genoeg overhouden."
+     },
+     {
+      "v": "Wat helpt tegen het broeikaseffect?",
+      "o": [
+       "Minder fossiele brandstof gebruiken",
+       "Steeds meer kolen verbranden",
+       "Veel meer met de auto rijden",
+       "Grote bossen kappen"
+      ],
+      "c": 0,
+      "d": 2,
+      "u": "Minder fossiele brandstof gebruiken.",
+      "uo": [
+       "Klopt: minder fossiele brandstof gebruiken.",
+       "Kolen verergeren het.",
+       "Auto rijden stoot CO2 uit.",
+       "Bossen kappen verergert het."
+      ],
+      "uh": "Minder fossiele brandstof gebruiken."
+     },
+     {
+      "v": "Wat is fijnstof?",
+      "o": [
+       "Heel schone lucht",
+       "Kleine schadelijke deeltjes",
+       "Gewone zuurstof",
+       "Schoon regenwater"
+      ],
+      "c": 1,
+      "d": 1,
+      "u": "Kleine schadelijke deeltjes in de lucht.",
+      "uo": [
+       "Fijnstof maakt de lucht juist vuil.",
+       "Klopt: kleine schadelijke deeltjes in de lucht.",
+       "Zuurstof is geen fijnstof.",
+       "Water is geen fijnstof."
+      ],
+      "uh": "Kleine schadelijke deeltjes in de lucht."
+     },
+     {
+      "v": "Wat is biodiversiteit?",
+      "o": [
+       "Eén enkele soort in een gebied",
+       "Helemaal geen leven",
+       "De verscheidenheid aan soorten",
+       "Alleen groene planten"
+      ],
+      "c": 2,
+      "d": 2,
+      "u": "De rijkdom aan verschillende soorten.",
+      "uo": [
+       "Eén soort is juist weinig diversiteit.",
+       "Zonder leven is er geen diversiteit.",
+       "Klopt: de rijkdom aan verschillende soorten.",
+       "Alleen planten is te beperkt."
+      ],
+      "uh": "De rijkdom aan verschillende soorten."
+     },
+     {
+      "v": "Welke energiebron raakt niet op?",
+      "o": [
+       "Aardgas",
+       "Steenkool",
+       "Aardolie",
+       "Zonne-energie"
+      ],
+      "c": 3,
+      "d": 3,
+      "u": "De zon raakt niet op.",
+      "uo": [
+       "Aardgas raakt op.",
+       "Steenkool raakt op.",
+       "Aardolie raakt op.",
+       "Klopt: de zon raakt niet op."
+      ],
+      "uh": "De zon raakt niet op."
+     },
+     {
+      "v": "Waarom is recycling goed voor het milieu?",
+      "o": [
+       "Er zijn minder grondstoffen nodig",
+       "Er ontstaat juist veel meer afval",
+       "Er wordt meer brandstof verstookt",
+       "Er komt meer vervuiling vrij"
+      ],
+      "c": 0,
+      "d": 2,
+      "u": "Er zijn minder nieuwe grondstoffen nodig.",
+      "uo": [
+       "Klopt: er zijn minder nieuwe grondstoffen nodig.",
+       "Recycling geeft juist minder afval.",
+       "Recycling is geen verbranding.",
+       "Recycling vermindert vervuiling."
+      ],
+      "uh": "Er zijn minder nieuwe grondstoffen nodig."
      }
     ],
     "begrippen": [
@@ -7307,498 +6737,308 @@ var VAKKEN_VMBO = [
     "nBeg": 0,
     "sv": [
      {
-      "v": "Welk begrip hoort bij: \"een beweegbare verbinding tussen twee botten\"?",
+      "v": "Wat verbindt twee botten beweegbaar met elkaar?",
       "o": [
-       "Gewricht",
-       "Gewrichtsband",
-       "Pees",
-       "Gewrichtskapsel"
-      ],
-      "c": 0,
-      "d": 3,
-      "u": "«Gewricht»: een beweegbare verbinding tussen twee botten.",
-      "uo": [
-       "Klopt, dit is «Gewricht».",
-       "«Gewrichtsband» betekent houdt botten bijeen.",
-       "«Pees» betekent verbindt spier met bot.",
-       "«Gewrichtskapsel» betekent omhulsel met smeer."
-      ],
-      "uh": "Onthoud: «Gewricht» = beweegbare botverbinding."
-     },
-     {
-      "v": "Welke term hoort bij \"beweegbare botverbinding\"?",
-      "o": [
-       "Gewrichtskapsel",
-       "Gewricht",
-       "Spier",
-       "Kogelgewricht"
-      ],
-      "c": 1,
-      "d": 2,
-      "u": "«Gewricht»: een beweegbare verbinding tussen twee botten.",
-      "uo": [
-       "«Gewrichtskapsel» betekent omhulsel met smeer.",
-       "Klopt, «Gewricht» past hierbij.",
-       "«Spier» betekent trekt samen, beweegt.",
-       "«Kogelgewricht» betekent draait alle richtingen."
-      ],
-      "uh": "Onthoud: «Gewricht» = beweegbare botverbinding."
-     },
-     {
-      "v": "Wat betekent «Gewricht»?",
-      "o": [
-       "stevig weefsel dat botten in een gewricht bij elkaar houdt",
-       "stevig weefsel dat een spier aan een bot vastmaakt",
-       "een beweegbare verbinding tussen twee botten",
-       "het omhulsel om een gewricht met smeervloeistof"
-      ],
-      "c": 2,
-      "d": 1,
-      "u": "«Gewricht»: een beweegbare verbinding tussen twee botten.",
-      "uo": [
-       "Dat is «Gewrichtsband».",
-       "Dat is «Pees».",
-       "Klopt: beweegbare botverbinding.",
-       "Dat is «Gewrichtskapsel»."
-      ],
-      "uh": "Onthoud: «Gewricht» = beweegbare botverbinding."
-     },
-     {
-      "v": "Welk begrip hoort bij: \"stevig weefsel dat botten in een gewricht bij elkaar houdt\"?",
-      "o": [
-       "Pees",
-       "Gewricht",
-       "Gewrichtskapsel",
-       "Gewrichtsband"
-      ],
-      "c": 3,
-      "d": 3,
-      "u": "«Gewrichtsband»: stevig weefsel dat botten in een gewricht bij elkaar houdt.",
-      "uo": [
-       "«Pees» betekent verbindt spier met bot.",
-       "«Gewricht» betekent beweegbare botverbinding.",
-       "«Gewrichtskapsel» betekent omhulsel met smeer.",
-       "Klopt, dit is «Gewrichtsband»."
-      ],
-      "uh": "Onthoud: «Gewrichtsband» = houdt botten bijeen."
-     },
-     {
-      "v": "Welke term hoort bij \"houdt botten bijeen\"?",
-      "o": [
-       "Gewrichtsband",
-       "Gewrichtskapsel",
-       "Spier",
-       "Kogelgewricht"
-      ],
-      "c": 0,
-      "d": 2,
-      "u": "«Gewrichtsband»: stevig weefsel dat botten in een gewricht bij elkaar houdt.",
-      "uo": [
-       "Klopt, «Gewrichtsband» past hierbij.",
-       "«Gewrichtskapsel» betekent omhulsel met smeer.",
-       "«Spier» betekent trekt samen, beweegt.",
-       "«Kogelgewricht» betekent draait alle richtingen."
-      ],
-      "uh": "Onthoud: «Gewrichtsband» = houdt botten bijeen."
-     },
-     {
-      "v": "Wat betekent «Pees»?",
-      "o": [
-       "stevig weefsel dat botten in een gewricht bij elkaar houdt",
-       "stevig weefsel dat een spier aan een bot vastmaakt",
-       "vloeistof die de wrijving in een gewricht verkleint",
-       "een gewricht dat in alle richtingen kan draaien, zoals de schouder"
-      ],
-      "c": 1,
-      "d": 1,
-      "u": "«Pees»: stevig weefsel dat een spier aan een bot vastmaakt.",
-      "uo": [
-       "Dat is «Gewrichtsband».",
-       "Klopt: verbindt spier met bot.",
-       "Dat is «Gewrichtssmeer».",
-       "Dat is «Kogelgewricht»."
-      ],
-      "uh": "Onthoud: «Pees» = verbindt spier met bot."
-     },
-     {
-      "v": "Welk begrip hoort bij: \"stevig weefsel dat een spier aan een bot vastmaakt\"?",
-      "o": [
-       "Gewrichtsband",
-       "Gewrichtssmeer",
-       "Pees",
-       "Kogelgewricht"
-      ],
-      "c": 2,
-      "d": 3,
-      "u": "«Pees»: stevig weefsel dat een spier aan een bot vastmaakt.",
-      "uo": [
-       "«Gewrichtsband» betekent houdt botten bijeen.",
-       "«Gewrichtssmeer» betekent vermindert wrijving.",
-       "Klopt, dit is «Pees».",
-       "«Kogelgewricht» betekent draait alle richtingen."
-      ],
-      "uh": "Onthoud: «Pees» = verbindt spier met bot."
-     },
-     {
-      "v": "Welke term hoort bij \"verbindt spier met bot\"?",
-      "o": [
-       "Gewrichtssmeer",
-       "Kogelgewricht",
-       "Strekspier",
-       "Pees"
-      ],
-      "c": 3,
-      "d": 2,
-      "u": "«Pees»: stevig weefsel dat een spier aan een bot vastmaakt.",
-      "uo": [
-       "«Gewrichtssmeer» betekent vermindert wrijving.",
-       "«Kogelgewricht» betekent draait alle richtingen.",
-       "«Strekspier» betekent strekt een gewricht.",
-       "Klopt, «Pees» past hierbij."
-      ],
-      "uh": "Onthoud: «Pees» = verbindt spier met bot."
-     },
-     {
-      "v": "Wat betekent «Spier»?",
-      "o": [
-       "een orgaan dat kan samentrekken en zo beweging maakt",
-       "stevig weefsel dat een spier aan een bot vastmaakt",
-       "een gewricht dat maar in één richting buigt, zoals de knie",
-       "een gewricht dat in alle richtingen kan draaien, zoals de schouder"
-      ],
-      "c": 0,
-      "d": 1,
-      "u": "«Spier»: een orgaan dat kan samentrekken en zo beweging maakt.",
-      "uo": [
-       "Klopt: trekt samen, beweegt.",
-       "Dat is «Pees».",
-       "Dat is «Scharniergewricht».",
-       "Dat is «Kogelgewricht»."
-      ],
-      "uh": "Onthoud: «Spier» = trekt samen, beweegt."
-     },
-     {
-      "v": "Welk begrip hoort bij: \"een orgaan dat kan samentrekken en zo beweging maakt\"?",
-      "o": [
-       "Pees",
-       "Spier",
-       "Scharniergewricht",
-       "Kogelgewricht"
-      ],
-      "c": 1,
-      "d": 3,
-      "u": "«Spier»: een orgaan dat kan samentrekken en zo beweging maakt.",
-      "uo": [
-       "«Pees» betekent verbindt spier met bot.",
-       "Klopt, dit is «Spier».",
-       "«Scharniergewricht» betekent buigt één richting.",
-       "«Kogelgewricht» betekent draait alle richtingen."
-      ],
-      "uh": "Onthoud: «Spier» = trekt samen, beweegt."
-     },
-     {
-      "v": "Welke term hoort bij \"trekt samen, beweegt\"?",
-      "o": [
-       "Scharniergewricht",
-       "Kogelgewricht",
-       "Spier",
-       "Gewrichtssmeer"
+       "Een spier",
+       "Een pees",
+       "Een gewricht",
+       "De huid"
       ],
       "c": 2,
       "d": 2,
-      "u": "«Spier»: een orgaan dat kan samentrekken en zo beweging maakt.",
+      "u": "Een gewricht verbindt botten beweegbaar.",
       "uo": [
-       "«Scharniergewricht» betekent buigt één richting.",
-       "«Kogelgewricht» betekent draait alle richtingen.",
-       "Klopt, «Spier» past hierbij.",
-       "«Gewrichtssmeer» betekent vermindert wrijving."
+       "Een spier trekt samen.",
+       "Een pees verbindt spier en bot.",
+       "Klopt: een gewricht verbindt botten beweegbaar.",
+       "De huid bedekt het lichaam."
       ],
-      "uh": "Onthoud: «Spier» = trekt samen, beweegt."
+      "uh": "Een gewricht verbindt botten beweegbaar."
      },
      {
-      "v": "Wat betekent «Buigspier»?",
+      "v": "Waarom werken spieren in paren?",
       "o": [
-       "een spier die een gewricht strekt",
-       "een gewricht dat maar in één richting buigt, zoals de knie",
-       "het omhulsel om een gewricht met smeervloeistof",
-       "een spier die een gewricht buigt"
-      ],
-      "c": 3,
-      "d": 1,
-      "u": "«Buigspier»: een spier die een gewricht buigt.",
-      "uo": [
-       "Dat is «Strekspier».",
-       "Dat is «Scharniergewricht».",
-       "Dat is «Gewrichtskapsel».",
-       "Klopt: buigt een gewricht."
-      ],
-      "uh": "Onthoud: «Buigspier» = buigt een gewricht."
-     },
-     {
-      "v": "Welk begrip hoort bij: \"een spier die een gewricht buigt\"?",
-      "o": [
-       "Buigspier",
-       "Strekspier",
-       "Scharniergewricht",
-       "Gewrichtskapsel"
+       "Een spier kan alleen trekken",
+       "Een spier kan alleen maar duwen",
+       "Spieren zijn veel te zwak",
+       "Botten bewegen helemaal zelf"
       ],
       "c": 0,
       "d": 3,
-      "u": "«Buigspier»: een spier die een gewricht buigt.",
+      "u": "Een spier kan alleen trekken, dus je hebt er twee nodig.",
       "uo": [
-       "Klopt, dit is «Buigspier».",
-       "«Strekspier» betekent strekt een gewricht.",
-       "«Scharniergewricht» betekent buigt één richting.",
-       "«Gewrichtskapsel» betekent omhulsel met smeer."
+       "Klopt: een spier kan alleen trekken, dus je hebt er twee nodig.",
+       "Een spier duwt niet.",
+       "Kracht is niet het probleem.",
+       "Botten bewegen niet uit zichzelf."
       ],
-      "uh": "Onthoud: «Buigspier» = buigt een gewricht."
+      "uh": "Een spier kan alleen trekken, dus je hebt er twee nodig."
      },
      {
-      "v": "Welke term hoort bij \"buigt een gewricht\"?",
+      "v": "Welke spier buigt een gewricht?",
       "o": [
-       "Scharniergewricht",
-       "Buigspier",
-       "Gewrichtskapsel",
-       "Gewrichtssmeer"
+       "De strekspier",
+       "De buigspier",
+       "De pees",
+       "Het gewrichtskapsel"
       ],
       "c": 1,
       "d": 2,
-      "u": "«Buigspier»: een spier die een gewricht buigt.",
+      "u": "De buigspier buigt.",
       "uo": [
-       "«Scharniergewricht» betekent buigt één richting.",
-       "Klopt, «Buigspier» past hierbij.",
-       "«Gewrichtskapsel» betekent omhulsel met smeer.",
-       "«Gewrichtssmeer» betekent vermindert wrijving."
+       "De strekspier strekt juist.",
+       "Klopt: de buigspier buigt.",
+       "Een pees is geen spier.",
+       "Het kapsel omhult het gewricht."
       ],
-      "uh": "Onthoud: «Buigspier» = buigt een gewricht."
+      "uh": "De buigspier buigt."
      },
      {
-      "v": "Wat betekent «Strekspier»?",
+      "v": "Wat verbindt een spier met een bot?",
       "o": [
-       "een spier die een gewricht buigt",
-       "stevig weefsel dat botten in een gewricht bij elkaar houdt",
-       "een spier die een gewricht strekt",
-       "een beweegbare verbinding tussen twee botten"
-      ],
-      "c": 2,
-      "d": 1,
-      "u": "«Strekspier»: een spier die een gewricht strekt.",
-      "uo": [
-       "Dat is «Buigspier».",
-       "Dat is «Gewrichtsband».",
-       "Klopt: strekt een gewricht.",
-       "Dat is «Gewricht»."
-      ],
-      "uh": "Onthoud: «Strekspier» = strekt een gewricht."
-     },
-     {
-      "v": "Welk begrip hoort bij: \"een spier die een gewricht strekt\"?",
-      "o": [
-       "Buigspier",
-       "Gewrichtsband",
-       "Gewricht",
-       "Strekspier"
-      ],
-      "c": 3,
-      "d": 3,
-      "u": "«Strekspier»: een spier die een gewricht strekt.",
-      "uo": [
-       "«Buigspier» betekent buigt een gewricht.",
-       "«Gewrichtsband» betekent houdt botten bijeen.",
-       "«Gewricht» betekent beweegbare botverbinding.",
-       "Klopt, dit is «Strekspier»."
-      ],
-      "uh": "Onthoud: «Strekspier» = strekt een gewricht."
-     },
-     {
-      "v": "Welke term hoort bij \"strekt een gewricht\"?",
-      "o": [
-       "Strekspier",
-       "Gewrichtsband",
-       "Gewricht",
-       "Gewrichtskapsel"
-      ],
-      "c": 0,
-      "d": 2,
-      "u": "«Strekspier»: een spier die een gewricht strekt.",
-      "uo": [
-       "Klopt, «Strekspier» past hierbij.",
-       "«Gewrichtsband» betekent houdt botten bijeen.",
-       "«Gewricht» betekent beweegbare botverbinding.",
-       "«Gewrichtskapsel» betekent omhulsel met smeer."
-      ],
-      "uh": "Onthoud: «Strekspier» = strekt een gewricht."
-     },
-     {
-      "v": "Wat betekent «Gewrichtskapsel»?",
-      "o": [
-       "stevig weefsel dat botten in een gewricht bij elkaar houdt",
-       "het omhulsel om een gewricht met smeervloeistof",
-       "een spier die een gewricht buigt",
-       "een spier die een gewricht strekt"
-      ],
-      "c": 1,
-      "d": 1,
-      "u": "«Gewrichtskapsel»: het omhulsel om een gewricht met smeervloeistof.",
-      "uo": [
-       "Dat is «Gewrichtsband».",
-       "Klopt: omhulsel met smeer.",
-       "Dat is «Buigspier».",
-       "Dat is «Strekspier»."
-      ],
-      "uh": "Onthoud: «Gewrichtskapsel» = omhulsel met smeer."
-     },
-     {
-      "v": "Welk begrip hoort bij: \"een spier die de tegengestelde beweging maakt\"?",
-      "o": [
-       "Buigspier",
-       "Strekspier",
-       "Antagonist",
-       "Gewricht"
-      ],
-      "c": 2,
-      "d": 3,
-      "u": "«Antagonist»: een spier die de tegengestelde beweging maakt.",
-      "uo": [
-       "«Buigspier» betekent buigt een gewricht.",
-       "«Strekspier» betekent strekt een gewricht.",
-       "Klopt, dit is «Antagonist».",
-       "«Gewricht» betekent beweegbare botverbinding."
-      ],
-      "uh": "Onthoud: «Antagonist» = tegenwerkende spier."
-     },
-     {
-      "v": "Welke term hoort bij \"tegenwerkende spier\"?",
-      "o": [
-       "Gewricht",
-       "Gewrichtskapsel",
-       "Scharniergewricht",
-       "Antagonist"
-      ],
-      "c": 3,
-      "d": 2,
-      "u": "«Antagonist»: een spier die de tegengestelde beweging maakt.",
-      "uo": [
-       "«Gewricht» betekent beweegbare botverbinding.",
-       "«Gewrichtskapsel» betekent omhulsel met smeer.",
-       "«Scharniergewricht» betekent buigt één richting.",
-       "Klopt, «Antagonist» past hierbij."
-      ],
-      "uh": "Onthoud: «Antagonist» = tegenwerkende spier."
-     },
-     {
-      "v": "Wat betekent «Gewrichtssmeer»?",
-      "o": [
-       "vloeistof die de wrijving in een gewricht verkleint",
-       "buigzaam steunweefsel dat de botuiteinden bedekt",
-       "een orgaan dat kan samentrekken en zo beweging maakt",
-       "een gewricht dat in alle richtingen kan draaien, zoals de schouder"
-      ],
-      "c": 0,
-      "d": 1,
-      "u": "«Gewrichtssmeer»: vloeistof die de wrijving in een gewricht verkleint.",
-      "uo": [
-       "Klopt: vermindert wrijving.",
-       "Dat is «Kraakbeen».",
-       "Dat is «Spier».",
-       "Dat is «Kogelgewricht»."
-      ],
-      "uh": "Onthoud: «Gewrichtssmeer» = vermindert wrijving."
-     },
-     {
-      "v": "Welk begrip hoort bij: \"buigzaam steunweefsel dat de botuiteinden bedekt\"?",
-      "o": [
-       "Gewrichtssmeer",
+       "Een gewrichtsband",
        "Kraakbeen",
-       "Scharniergewricht",
-       "Strekspier"
-      ],
-      "c": 1,
-      "d": 3,
-      "u": "«Kraakbeen»: buigzaam steunweefsel dat de botuiteinden bedekt.",
-      "uo": [
-       "«Gewrichtssmeer» betekent vermindert wrijving.",
-       "Klopt, dit is «Kraakbeen».",
-       "«Scharniergewricht» betekent buigt één richting.",
-       "«Strekspier» betekent strekt een gewricht."
-      ],
-      "uh": "Onthoud: «Kraakbeen» = bedekt botuiteinden."
-     },
-     {
-      "v": "Welke term hoort bij \"bedekt botuiteinden\"?",
-      "o": [
-       "Scharniergewricht",
-       "Strekspier",
-       "Kraakbeen",
-       "Antagonist"
-      ],
-      "c": 2,
-      "d": 2,
-      "u": "«Kraakbeen»: buigzaam steunweefsel dat de botuiteinden bedekt.",
-      "uo": [
-       "«Scharniergewricht» betekent buigt één richting.",
-       "«Strekspier» betekent strekt een gewricht.",
-       "Klopt, «Kraakbeen» past hierbij.",
-       "«Antagonist» betekent tegenwerkende spier."
-      ],
-      "uh": "Onthoud: «Kraakbeen» = bedekt botuiteinden."
-     },
-     {
-      "v": "Wat betekent «Kraakbeen»?",
-      "o": [
-       "vloeistof die de wrijving in een gewricht verkleint",
-       "een gewricht dat maar in één richting buigt, zoals de knie",
-       "een spier die een gewricht strekt",
-       "buigzaam steunweefsel dat de botuiteinden bedekt"
+       "Een bloedvat",
+       "Een pees"
       ],
       "c": 3,
-      "d": 1,
-      "u": "«Kraakbeen»: buigzaam steunweefsel dat de botuiteinden bedekt.",
+      "d": 3,
+      "u": "Een pees verbindt spier en bot.",
       "uo": [
-       "Dat is «Gewrichtssmeer».",
-       "Dat is «Scharniergewricht».",
-       "Dat is «Strekspier».",
-       "Klopt: bedekt botuiteinden."
+       "Een band verbindt botten onderling.",
+       "Kraakbeen bedekt botuiteinden.",
+       "Een bloedvat vervoert bloed.",
+       "Klopt: een pees verbindt spier en bot."
       ],
-      "uh": "Onthoud: «Kraakbeen» = bedekt botuiteinden."
+      "uh": "Een pees verbindt spier en bot."
      },
      {
-      "v": "Welk begrip hoort bij: \"een gewricht dat in alle richtingen kan draaien, zoals de schouder\"?",
+      "v": "De knie buigt maar in één richting. Wat voor gewricht is dat?",
       "o": [
-       "Kogelgewricht",
-       "Scharniergewricht",
-       "Antagonist",
-       "Kraakbeen"
+       "Een kogelgewricht",
+       "Een vast gewricht",
+       "Een scharniergewricht",
+       "Een spiergewricht"
+      ],
+      "c": 2,
+      "d": 3,
+      "u": "Een scharniergewricht buigt in één richting.",
+      "uo": [
+       "Een kogelgewricht draait alle kanten op.",
+       "Een vast gewricht beweegt niet.",
+       "Klopt: een scharniergewricht buigt in één richting.",
+       "Een spiergewricht bestaat niet."
+      ],
+      "uh": "Een scharniergewricht buigt in één richting."
+     },
+     {
+      "v": "De schouder kan alle kanten op draaien. Wat voor gewricht?",
+      "o": [
+       "Een kogelgewricht",
+       "Een scharniergewricht",
+       "Een vast gewricht",
+       "Een pees"
       ],
       "c": 0,
       "d": 3,
-      "u": "«Kogelgewricht»: een gewricht dat in alle richtingen kan draaien, zoals de schouder.",
+      "u": "Een kogelgewricht draait alle kanten op.",
       "uo": [
-       "Klopt, dit is «Kogelgewricht».",
-       "«Scharniergewricht» betekent buigt één richting.",
-       "«Antagonist» betekent tegenwerkende spier.",
-       "«Kraakbeen» betekent bedekt botuiteinden."
+       "Klopt: een kogelgewricht draait alle kanten op.",
+       "Een scharnier buigt in één richting.",
+       "Een vast gewricht beweegt niet.",
+       "Een pees is geen gewricht."
       ],
-      "uh": "Onthoud: «Kogelgewricht» = draait alle richtingen."
+      "uh": "Een kogelgewricht draait alle kanten op."
      },
      {
-      "v": "Wat betekent «Scharniergewricht»?",
+      "v": "Wat houdt de botten in een gewricht bij elkaar?",
       "o": [
-       "een gewricht dat in alle richtingen kan draaien, zoals de schouder",
-       "een gewricht dat maar in één richting buigt, zoals de knie",
-       "stevig weefsel dat botten in een gewricht bij elkaar houdt",
-       "buigzaam steunweefsel dat de botuiteinden bedekt"
+       "Een spier",
+       "Een gewrichtsband",
+       "Een bloedvat",
+       "De opperhuid"
+      ],
+      "c": 1,
+      "d": 2,
+      "u": "Een gewrichtsband houdt botten bijeen.",
+      "uo": [
+       "Een spier zorgt voor beweging.",
+       "Klopt: een gewrichtsband houdt botten bijeen.",
+       "Een bloedvat vervoert bloed.",
+       "De opperhuid is een huidlaag."
+      ],
+      "uh": "Een gewrichtsband houdt botten bijeen."
+     },
+     {
+      "v": "Wat doet de strekspier?",
+      "o": [
+       "Een gewricht buigen",
+       "De huid koelen",
+       "Bloed pompen",
+       "Een gewricht strekken"
+      ],
+      "c": 3,
+      "d": 2,
+      "u": "De strekspier strekt een gewricht.",
+      "uo": [
+       "Buigen doet de buigspier.",
+       "Koelen doet de huid.",
+       "Pompen doet het hart.",
+       "Klopt: de strekspier strekt een gewricht."
+      ],
+      "uh": "De strekspier strekt een gewricht."
+     },
+     {
+      "v": "Waarmee zijn de botuiteinden bedekt zodat ze soepel bewegen?",
+      "o": [
+       "Met spierweefsel",
+       "Met huid",
+       "Met kraakbeen",
+       "Met bloed"
+      ],
+      "c": 2,
+      "d": 2,
+      "u": "Kraakbeen bedekt de botuiteinden.",
+      "uo": [
+       "Spierweefsel beweegt het bot.",
+       "Huid bedekt het lichaam.",
+       "Klopt: kraakbeen bedekt de botuiteinden.",
+       "Bloed voedt het weefsel."
+      ],
+      "uh": "Kraakbeen bedekt de botuiteinden."
+     },
+     {
+      "v": "Wat vermindert de wrijving in een gewricht?",
+      "o": [
+       "Gewrichtssmeer",
+       "Een pees",
+       "Een spier",
+       "Een bot"
+      ],
+      "c": 0,
+      "d": 2,
+      "u": "Gewrichtssmeer vermindert de wrijving.",
+      "uo": [
+       "Klopt: gewrichtssmeer vermindert de wrijving.",
+       "Een pees verbindt spier en bot.",
+       "Een spier zorgt voor beweging.",
+       "Een bot geeft steun."
+      ],
+      "uh": "Gewrichtssmeer vermindert de wrijving."
+     },
+     {
+      "v": "Twee spieren die tegengesteld werken heten...",
+      "o": [
+       "synergisten",
+       "antagonisten",
+       "pezen",
+       "banden"
       ],
       "c": 1,
       "d": 1,
-      "u": "«Scharniergewricht»: een gewricht dat maar in één richting buigt, zoals de knie.",
+      "u": "Antagonisten werken tegengesteld.",
       "uo": [
-       "Dat is «Kogelgewricht».",
-       "Klopt: buigt één richting.",
-       "Dat is «Gewrichtsband».",
-       "Dat is «Kraakbeen»."
+       "Synergisten werken juist samen.",
+       "Klopt: antagonisten werken tegengesteld.",
+       "Pezen verbinden spier en bot.",
+       "Banden verbinden botten."
       ],
-      "uh": "Onthoud: «Scharniergewricht» = buigt één richting."
+      "uh": "Antagonisten werken tegengesteld."
+     },
+     {
+      "v": "Waarom kun je je arm buigen én strekken?",
+      "o": [
+       "Door één sterke spier",
+       "Door de huid",
+       "Door een bot",
+       "Door een buig- en strekspier"
+      ],
+      "c": 3,
+      "d": 3,
+      "u": "Een buigspier en een strekspier samen.",
+      "uo": [
+       "Eén spier kan alleen trekken.",
+       "De huid beweegt niet.",
+       "Een bot beweegt niet zelf.",
+       "Klopt: een buigspier en een strekspier samen."
+      ],
+      "uh": "Een buigspier en een strekspier samen."
+     },
+     {
+      "v": "Wat is een pees?",
+      "o": [
+       "Een gewricht in de knie",
+       "Buigzaam kraakbeen in het oor",
+       "Weefsel dat spier en bot verbindt",
+       "Een beschermende huidlaag"
+      ],
+      "c": 2,
+      "d": 2,
+      "u": "Een pees verbindt spier en bot.",
+      "uo": [
+       "Dat is een gewricht.",
+       "Dat is kraakbeen.",
+       "Klopt: een pees verbindt spier en bot.",
+       "Dat is de huid."
+      ],
+      "uh": "Een pees verbindt spier en bot."
+     },
+     {
+      "v": "Welke twee delen zorgen samen voor beweging?",
+      "o": [
+       "Skelet en spieren",
+       "Huid en haren",
+       "Hart en longen",
+       "Nieren en blaas"
+      ],
+      "c": 0,
+      "d": 1,
+      "u": "Het skelet en de spieren.",
+      "uo": [
+       "Klopt: het skelet en de spieren.",
+       "Huid en haren beschermen.",
+       "Hart en longen doen iets anders.",
+       "Nieren en blaas zuiveren."
+      ],
+      "uh": "Het skelet en de spieren."
+     },
+     {
+      "v": "Wat gebeurt er als de buigspier samentrekt?",
+      "o": [
+       "Het gewricht strekt",
+       "Het gewricht buigt",
+       "Het bot breekt",
+       "De huid koelt af"
+      ],
+      "c": 1,
+      "d": 2,
+      "u": "Het gewricht buigt.",
+      "uo": [
+       "Strekken doet de strekspier.",
+       "Klopt: het gewricht buigt.",
+       "Er breekt niets.",
+       "De huid heeft hier geen rol."
+      ],
+      "uh": "Het gewricht buigt."
+     },
+     {
+      "v": "Waar zit kraakbeen onder andere?",
+      "o": [
+       "In het hart",
+       "In de longen",
+       "In het bloed",
+       "In het oor"
+      ],
+      "c": 3,
+      "d": 2,
+      "u": "Kraakbeen zit in het oor en de neus.",
+      "uo": [
+       "Het hart is een spier.",
+       "De longen doen gaswisseling.",
+       "Bloed is vloeibaar.",
+       "Klopt: kraakbeen zit in het oor en de neus."
+      ],
+      "uh": "Kraakbeen zit in het oor en de neus."
      }
     ],
     "begrippen": [
@@ -7871,498 +7111,308 @@ var VAKKEN_VMBO = [
     "nBeg": 0,
     "sv": [
      {
-      "v": "Welk begrip hoort bij: \"een stof die een reactie zoals vertering versnelt\"?",
+      "v": "Wat gebeurt er bij de vertering?",
       "o": [
-       "Enzym",
-       "Hormoon",
-       "Zenuwstelsel",
-       "Hart"
-      ],
-      "c": 0,
-      "d": 3,
-      "u": "«Enzym»: een stof die een reactie zoals vertering versnelt.",
-      "uo": [
-       "Klopt, dit is «Enzym».",
-       "«Hormoon» betekent regelt via het bloed.",
-       "«Zenuwstelsel» betekent stuurt met prikkels.",
-       "«Hart» betekent pompt het bloed rond."
-      ],
-      "uh": "Onthoud: «Enzym» = versnelt een reactie."
-     },
-     {
-      "v": "Welke term hoort bij \"voedsel klein maken\"?",
-      "o": [
-       "Hormoon",
-       "Vertering",
-       "Longblaasje",
-       "Hart"
+       "Bloed wordt rondgepompt",
+       "Voedsel wordt klein gemaakt",
+       "Zuurstof wordt opgenomen",
+       "Afval wordt gefilterd"
       ],
       "c": 1,
       "d": 2,
-      "u": "«Vertering»: het klein maken van voedsel zodat het opgenomen kan worden.",
+      "u": "Voedsel wordt klein gemaakt.",
       "uo": [
-       "«Hormoon» betekent regelt via het bloed.",
-       "Klopt, «Vertering» past hierbij.",
-       "«Longblaasje» betekent plek van gaswisseling.",
-       "«Hart» betekent pompt het bloed rond."
+       "Pompen doet het hart.",
+       "Klopt: voedsel wordt klein gemaakt.",
+       "Zuurstof nemen de longen op.",
+       "Filteren doen de nieren."
       ],
-      "uh": "Onthoud: «Vertering» = voedsel klein maken."
+      "uh": "Voedsel wordt klein gemaakt."
      },
      {
-      "v": "Wat betekent «Vertering»?",
+      "v": "Welk bloedvat voert bloed van het hart af?",
       "o": [
-       "een stof die via het bloed processen in het lichaam regelt",
-       "klein blaasje in de long waar gaswisseling plaatsvindt",
-       "het klein maken van voedsel zodat het opgenomen kan worden",
-       "de spier die het bloed rondpompt"
-      ],
-      "c": 2,
-      "d": 1,
-      "u": "«Vertering»: het klein maken van voedsel zodat het opgenomen kan worden.",
-      "uo": [
-       "Dat is «Hormoon».",
-       "Dat is «Longblaasje».",
-       "Klopt: voedsel klein maken.",
-       "Dat is «Hart»."
-      ],
-      "uh": "Onthoud: «Vertering» = voedsel klein maken."
-     },
-     {
-      "v": "Welk begrip hoort bij: \"uitstulping in de dunne darm die voedingsstoffen opneemt\"?",
-      "o": [
-       "Vertering",
-       "Nier",
-       "Hart",
-       "Darmvlok"
-      ],
-      "c": 3,
-      "d": 3,
-      "u": "«Darmvlok»: uitstulping in de dunne darm die voedingsstoffen opneemt.",
-      "uo": [
-       "«Vertering» betekent voedsel klein maken.",
-       "«Nier» betekent filtert het bloed.",
-       "«Hart» betekent pompt het bloed rond.",
-       "Klopt, dit is «Darmvlok»."
-      ],
-      "uh": "Onthoud: «Darmvlok» = neemt voeding op."
-     },
-     {
-      "v": "Welke term hoort bij \"versnelt een reactie\"?",
-      "o": [
-       "Enzym",
-       "Zenuwstelsel",
-       "Hart",
-       "Zintuig"
-      ],
-      "c": 0,
-      "d": 2,
-      "u": "«Enzym»: een stof die een reactie zoals vertering versnelt.",
-      "uo": [
-       "Klopt, «Enzym» past hierbij.",
-       "«Zenuwstelsel» betekent stuurt met prikkels.",
-       "«Hart» betekent pompt het bloed rond.",
-       "«Zintuig» betekent vangt prikkels op."
-      ],
-      "uh": "Onthoud: «Enzym» = versnelt een reactie."
-     },
-     {
-      "v": "Wat betekent «Enzym»?",
-      "o": [
-       "een stof die via het bloed processen in het lichaam regelt",
-       "een stof die een reactie zoals vertering versnelt",
-       "het stelsel dat prikkels doorgeeft en het lichaam stuurt",
-       "de spier die het bloed rondpompt"
-      ],
-      "c": 1,
-      "d": 1,
-      "u": "«Enzym»: een stof die een reactie zoals vertering versnelt.",
-      "uo": [
-       "Dat is «Hormoon».",
-       "Klopt: versnelt een reactie.",
-       "Dat is «Zenuwstelsel».",
-       "Dat is «Hart»."
-      ],
-      "uh": "Onthoud: «Enzym» = versnelt een reactie."
-     },
-     {
-      "v": "Welk begrip hoort bij: \"een bloedvat dat bloed naar het hart toe vervoert\"?",
-      "o": [
-       "Slagader",
-       "Haarvat",
-       "Ader",
-       "Nier"
-      ],
-      "c": 2,
-      "d": 3,
-      "u": "«Ader»: een bloedvat dat bloed naar het hart toe vervoert.",
-      "uo": [
-       "«Slagader» betekent bloed van het hart af.",
-       "«Haarvat» betekent uitwisseling van stoffen.",
-       "Klopt, dit is «Ader».",
-       "«Nier» betekent filtert het bloed."
-      ],
-      "uh": "Onthoud: «Ader» = bloed naar het hart toe."
-     },
-     {
-      "v": "Welke term hoort bij \"bloed van het hart af\"?",
-      "o": [
-       "Hormoon",
-       "Zintuig",
-       "Vertering",
-       "Slagader"
-      ],
-      "c": 3,
-      "d": 2,
-      "u": "«Slagader»: een bloedvat dat bloed van het hart af vervoert.",
-      "uo": [
-       "«Hormoon» betekent regelt via het bloed.",
-       "«Zintuig» betekent vangt prikkels op.",
-       "«Vertering» betekent voedsel klein maken.",
-       "Klopt, «Slagader» past hierbij."
-      ],
-      "uh": "Onthoud: «Slagader» = bloed van het hart af."
-     },
-     {
-      "v": "Wat betekent «Darmvlok»?",
-      "o": [
-       "uitstulping in de dunne darm die voedingsstoffen opneemt",
-       "het klein maken van voedsel zodat het opgenomen kan worden",
-       "een orgaan dat afvalstoffen uit het bloed filtert",
-       "de spier die het bloed rondpompt"
-      ],
-      "c": 0,
-      "d": 1,
-      "u": "«Darmvlok»: uitstulping in de dunne darm die voedingsstoffen opneemt.",
-      "uo": [
-       "Klopt: neemt voeding op.",
-       "Dat is «Vertering».",
-       "Dat is «Nier».",
-       "Dat is «Hart»."
-      ],
-      "uh": "Onthoud: «Darmvlok» = neemt voeding op."
-     },
-     {
-      "v": "Welk begrip hoort bij: \"een heel dun bloedvat waar uitwisseling van stoffen plaatsvindt\"?",
-      "o": [
-       "Slagader",
-       "Haarvat",
-       "Ader",
-       "Longblaasje"
-      ],
-      "c": 1,
-      "d": 3,
-      "u": "«Haarvat»: een heel dun bloedvat waar uitwisseling van stoffen plaatsvindt.",
-      "uo": [
-       "«Slagader» betekent bloed van het hart af.",
-       "Klopt, dit is «Haarvat».",
-       "«Ader» betekent bloed naar het hart toe.",
-       "«Longblaasje» betekent plek van gaswisseling."
-      ],
-      "uh": "Onthoud: «Haarvat» = uitwisseling van stoffen."
-     },
-     {
-      "v": "Welke term hoort bij \"bloed naar het hart toe\"?",
-      "o": [
-       "Nier",
-       "Zintuig",
-       "Ader",
-       "Hart"
+       "Een ader",
+       "Een haarvat",
+       "Een slagader",
+       "Een zenuw"
       ],
       "c": 2,
       "d": 2,
-      "u": "«Ader»: een bloedvat dat bloed naar het hart toe vervoert.",
+      "u": "Een slagader voert bloed van het hart af.",
       "uo": [
-       "«Nier» betekent filtert het bloed.",
-       "«Zintuig» betekent vangt prikkels op.",
-       "Klopt, «Ader» past hierbij.",
-       "«Hart» betekent pompt het bloed rond."
+       "Een ader voert bloed naar het hart toe.",
+       "In haarvaten wisselen stoffen uit.",
+       "Klopt: een slagader voert bloed van het hart af.",
+       "Een zenuw is geen bloedvat."
       ],
-      "uh": "Onthoud: «Ader» = bloed naar het hart toe."
+      "uh": "Een slagader voert bloed van het hart af."
      },
      {
-      "v": "Wat betekent «Slagader»?",
+      "v": "Waar vindt de gaswisseling plaats?",
       "o": [
-       "een bloedvat dat bloed naar het hart toe vervoert",
-       "een heel dun bloedvat waar uitwisseling van stoffen plaatsvindt",
-       "een stof die via het bloed processen in het lichaam regelt",
-       "een bloedvat dat bloed van het hart af vervoert"
+       "In de longblaasjes",
+       "In de maag",
+       "In de nieren",
+       "In de botten"
+      ],
+      "c": 0,
+      "d": 2,
+      "u": "In de longblaasjes.",
+      "uo": [
+       "Klopt: in de longblaasjes.",
+       "De maag verteert voedsel.",
+       "De nieren filteren bloed.",
+       "Botten geven steun."
+      ],
+      "uh": "In de longblaasjes."
+     },
+     {
+      "v": "Wat doet het hart?",
+      "o": [
+       "Voedsel verteren",
+       "Zuurstof maken",
+       "Bloed filteren",
+       "Bloed rondpompen"
       ],
       "c": 3,
       "d": 1,
-      "u": "«Slagader»: een bloedvat dat bloed van het hart af vervoert.",
+      "u": "Het hart pompt het bloed rond.",
       "uo": [
-       "Dat is «Ader».",
-       "Dat is «Haarvat».",
-       "Dat is «Hormoon».",
-       "Klopt: bloed van het hart af."
+       "Verteren doen de darmen.",
+       "Zuurstof maak je niet zelf aan.",
+       "Filteren doen de nieren.",
+       "Klopt: het hart pompt het bloed rond."
       ],
-      "uh": "Onthoud: «Slagader» = bloed van het hart af."
+      "uh": "Het hart pompt het bloed rond."
      },
      {
-      "v": "Welk begrip hoort bij: \"klein blaasje in de long waar gaswisseling plaatsvindt\"?",
+      "v": "Wat nemen de darmvlokken op?",
       "o": [
-       "Longblaasje",
-       "Haarvat",
-       "Zenuwstelsel",
-       "Ader"
-      ],
-      "c": 0,
-      "d": 3,
-      "u": "«Longblaasje»: klein blaasje in de long waar gaswisseling plaatsvindt.",
-      "uo": [
-       "Klopt, dit is «Longblaasje».",
-       "«Haarvat» betekent uitwisseling van stoffen.",
-       "«Zenuwstelsel» betekent stuurt met prikkels.",
-       "«Ader» betekent bloed naar het hart toe."
-      ],
-      "uh": "Onthoud: «Longblaasje» = plek van gaswisseling."
-     },
-     {
-      "v": "Welke term hoort bij \"uitwisseling van stoffen\"?",
-      "o": [
-       "Longblaasje",
-       "Haarvat",
-       "Hart",
-       "Zintuig"
+       "Zuurstof",
+       "Voedingsstoffen",
+       "Afvalstoffen",
+       "Botten"
       ],
       "c": 1,
       "d": 2,
-      "u": "«Haarvat»: een heel dun bloedvat waar uitwisseling van stoffen plaatsvindt.",
+      "u": "Darmvlokken nemen voedingsstoffen op.",
       "uo": [
-       "«Longblaasje» betekent plek van gaswisseling.",
-       "Klopt, «Haarvat» past hierbij.",
-       "«Hart» betekent pompt het bloed rond.",
-       "«Zintuig» betekent vangt prikkels op."
+       "Zuurstof nemen de longen op.",
+       "Klopt: darmvlokken nemen voedingsstoffen op.",
+       "Afval verlaat juist het lichaam.",
+       "Botten worden niet opgenomen."
       ],
-      "uh": "Onthoud: «Haarvat» = uitwisseling van stoffen."
+      "uh": "Darmvlokken nemen voedingsstoffen op."
      },
      {
-      "v": "Wat betekent «Ader»?",
+      "v": "Welk bloedvat voert bloed naar het hart toe?",
       "o": [
-       "een bloedvat dat bloed van het hart af vervoert",
-       "een heel dun bloedvat waar uitwisseling van stoffen plaatsvindt",
-       "een bloedvat dat bloed naar het hart toe vervoert",
-       "een orgaan dat afvalstoffen uit het bloed filtert"
+       "Een slagader",
+       "Een haarvat",
+       "Een ader",
+       "Een pees"
       ],
       "c": 2,
-      "d": 1,
-      "u": "«Ader»: een bloedvat dat bloed naar het hart toe vervoert.",
+      "d": 2,
+      "u": "Een ader voert bloed naar het hart.",
       "uo": [
-       "Dat is «Slagader».",
-       "Dat is «Haarvat».",
-       "Klopt: bloed naar het hart toe.",
-       "Dat is «Nier»."
+       "Een slagader voert bloed van het hart af.",
+       "In haarvaten wisselen stoffen uit.",
+       "Klopt: een ader voert bloed naar het hart.",
+       "Een pees verbindt spier en bot."
       ],
-      "uh": "Onthoud: «Ader» = bloed naar het hart toe."
+      "uh": "Een ader voert bloed naar het hart."
      },
      {
-      "v": "Welk begrip hoort bij: \"een stof die via het bloed processen in het lichaam regelt\"?",
+      "v": "Wat filteren de nieren uit het bloed?",
       "o": [
-       "Enzym",
-       "Zenuwstelsel",
-       "Hart",
-       "Hormoon"
+       "Afvalstoffen",
+       "Zuurstof",
+       "Voedingsstoffen",
+       "Botten"
+      ],
+      "c": 0,
+      "d": 2,
+      "u": "De nieren filteren afvalstoffen.",
+      "uo": [
+       "Klopt: de nieren filteren afvalstoffen.",
+       "Zuurstof blijft in het bloed.",
+       "Voedingsstoffen worden juist gebruikt.",
+       "Botten zitten niet in het bloed."
+      ],
+      "uh": "De nieren filteren afvalstoffen."
+     },
+     {
+      "v": "Wat gebeurt er in de longblaasjes?",
+      "o": [
+       "Voedsel verteren",
+       "Bloed filteren",
+       "Botten maken",
+       "Zuurstof en CO2 wisselen"
       ],
       "c": 3,
       "d": 3,
-      "u": "«Hormoon»: een stof die via het bloed processen in het lichaam regelt.",
+      "u": "Zuurstof erin, koolstofdioxide eruit.",
       "uo": [
-       "«Enzym» betekent versnelt een reactie.",
-       "«Zenuwstelsel» betekent stuurt met prikkels.",
-       "«Hart» betekent pompt het bloed rond.",
-       "Klopt, dit is «Hormoon»."
+       "Verteren gebeurt in de darmen.",
+       "Filteren doen de nieren.",
+       "Botten maakt het beenmerg.",
+       "Klopt: zuurstof erin, koolstofdioxide eruit."
       ],
-      "uh": "Onthoud: «Hormoon» = regelt via het bloed."
+      "uh": "Zuurstof erin, koolstofdioxide eruit."
      },
      {
-      "v": "Welke term hoort bij \"pompt het bloed rond\"?",
+      "v": "Wat versnelt de vertering van voedsel?",
       "o": [
-       "Hart",
-       "Slagader",
-       "Ader",
-       "Longblaasje"
+       "Botten",
+       "Enzymen",
+       "Zenuwen",
+       "Bloedvaten"
+      ],
+      "c": 1,
+      "d": 2,
+      "u": "Enzymen versnellen de vertering.",
+      "uo": [
+       "Botten geven steun.",
+       "Klopt: enzymen versnellen de vertering.",
+       "Zenuwen geven prikkels door.",
+       "Bloedvaten vervoeren stoffen."
+      ],
+      "uh": "Enzymen versnellen de vertering."
+     },
+     {
+      "v": "Wat stuurt snel met prikkels door het lichaam?",
+      "o": [
+       "Het bloed",
+       "De darmen",
+       "Het zenuwstelsel",
+       "De huid"
+      ],
+      "c": 2,
+      "d": 2,
+      "u": "Het zenuwstelsel stuurt met prikkels.",
+      "uo": [
+       "Bloed vervoert stoffen.",
+       "De darmen verteren.",
+       "Klopt: het zenuwstelsel stuurt met prikkels.",
+       "De huid beschermt."
+      ],
+      "uh": "Het zenuwstelsel stuurt met prikkels."
+     },
+     {
+      "v": "Hoe regelt een hormoon iets in het lichaam?",
+      "o": [
+       "Via het bloed",
+       "Via de botten",
+       "Via de huid",
+       "Via de nagels"
       ],
       "c": 0,
       "d": 2,
-      "u": "«Hart»: de spier die het bloed rondpompt.",
+      "u": "Een hormoon werkt via het bloed.",
       "uo": [
-       "Klopt, «Hart» past hierbij.",
-       "«Slagader» betekent bloed van het hart af.",
-       "«Ader» betekent bloed naar het hart toe.",
-       "«Longblaasje» betekent plek van gaswisseling."
+       "Klopt: een hormoon werkt via het bloed.",
+       "Botten geven steun.",
+       "De huid beschermt.",
+       "Nagels spelen geen rol."
       ],
-      "uh": "Onthoud: «Hart» = pompt het bloed rond."
+      "uh": "Een hormoon werkt via het bloed."
      },
      {
-      "v": "Wat betekent «Hart»?",
+      "v": "Waar voert een slagader het bloed heen?",
       "o": [
-       "een bloedvat dat bloed van het hart af vervoert",
-       "de spier die het bloed rondpompt",
-       "een bloedvat dat bloed naar het hart toe vervoert",
-       "klein blaasje in de long waar gaswisseling plaatsvindt"
+       "Naar het hart toe",
+       "Naar de nieren toe",
+       "Naar de longen",
+       "Van het hart af"
       ],
-      "c": 1,
-      "d": 1,
-      "u": "«Hart»: de spier die het bloed rondpompt.",
-      "uo": [
-       "Dat is «Slagader».",
-       "Klopt: pompt het bloed rond.",
-       "Dat is «Ader».",
-       "Dat is «Longblaasje»."
-      ],
-      "uh": "Onthoud: «Hart» = pompt het bloed rond."
-     },
-     {
-      "v": "Welk begrip hoort bij: \"een orgaan dat prikkels uit de omgeving opvangt\"?",
-      "o": [
-       "Zenuwstelsel",
-       "Gaswisseling",
-       "Zintuig",
-       "Ader"
-      ],
-      "c": 2,
+      "c": 3,
       "d": 3,
-      "u": "«Zintuig»: een orgaan dat prikkels uit de omgeving opvangt.",
+      "u": "Een slagader voert bloed van het hart af.",
       "uo": [
-       "«Zenuwstelsel» betekent stuurt met prikkels.",
-       "«Gaswisseling» betekent zuurstof in, CO2 uit.",
-       "Klopt, dit is «Zintuig».",
-       "«Ader» betekent bloed naar het hart toe."
+       "Dat doet juist een ader.",
+       "Niet specifiek naar de nieren.",
+       "Niet specifiek naar de longen.",
+       "Klopt: een slagader voert bloed van het hart af."
       ],
-      "uh": "Onthoud: «Zintuig» = vangt prikkels op."
+      "uh": "Een slagader voert bloed van het hart af."
      },
      {
-      "v": "Welke term hoort bij \"plek van gaswisseling\"?",
+      "v": "Waar worden voedingsstoffen in het bloed opgenomen?",
       "o": [
-       "Zenuwstelsel",
-       "Ader",
-       "Darmvlok",
-       "Longblaasje"
-      ],
-      "c": 3,
-      "d": 2,
-      "u": "«Longblaasje»: klein blaasje in de long waar gaswisseling plaatsvindt.",
-      "uo": [
-       "«Zenuwstelsel» betekent stuurt met prikkels.",
-       "«Ader» betekent bloed naar het hart toe.",
-       "«Darmvlok» betekent neemt voeding op.",
-       "Klopt, «Longblaasje» past hierbij."
-      ],
-      "uh": "Onthoud: «Longblaasje» = plek van gaswisseling."
-     },
-     {
-      "v": "Wat betekent «Gaswisseling»?",
-      "o": [
-       "de opname van zuurstof en afgifte van koolstofdioxide",
-       "het klein maken van voedsel zodat het opgenomen kan worden",
-       "een bloedvat dat bloed van het hart af vervoert",
-       "klein blaasje in de long waar gaswisseling plaatsvindt"
-      ],
-      "c": 0,
-      "d": 1,
-      "u": "«Gaswisseling»: de opname van zuurstof en afgifte van koolstofdioxide.",
-      "uo": [
-       "Klopt: zuurstof in, CO2 uit.",
-       "Dat is «Vertering».",
-       "Dat is «Slagader».",
-       "Dat is «Longblaasje»."
-      ],
-      "uh": "Onthoud: «Gaswisseling» = zuurstof in, CO2 uit."
-     },
-     {
-      "v": "Welke term hoort bij \"filtert het bloed\"?",
-      "o": [
-       "Slagader",
-       "Nier",
-       "Ader",
-       "Gaswisseling"
+       "In de longen",
+       "In de dunne darm",
+       "In het hart",
+       "In de nieren"
       ],
       "c": 1,
       "d": 2,
-      "u": "«Nier»: een orgaan dat afvalstoffen uit het bloed filtert.",
+      "u": "In de dunne darm via darmvlokken.",
       "uo": [
-       "«Slagader» betekent bloed van het hart af.",
-       "Klopt, «Nier» past hierbij.",
-       "«Ader» betekent bloed naar het hart toe.",
-       "«Gaswisseling» betekent zuurstof in, CO2 uit."
+       "In de longen gaat het om zuurstof.",
+       "Klopt: in de dunne darm via darmvlokken.",
+       "Het hart pompt alleen.",
+       "De nieren filteren."
       ],
-      "uh": "Onthoud: «Nier» = filtert het bloed."
+      "uh": "In de dunne darm via darmvlokken."
      },
      {
-      "v": "Wat betekent «Longblaasje»?",
+      "v": "Wat is een haarvat?",
       "o": [
-       "een heel dun bloedvat waar uitwisseling van stoffen plaatsvindt",
-       "het stelsel dat prikkels doorgeeft en het lichaam stuurt",
-       "klein blaasje in de long waar gaswisseling plaatsvindt",
-       "een bloedvat dat bloed naar het hart toe vervoert"
+       "Een dikke slagader",
+       "Een grote ader",
+       "Een heel dun bloedvat",
+       "Een zenuw"
       ],
       "c": 2,
-      "d": 1,
-      "u": "«Longblaasje»: klein blaasje in de long waar gaswisseling plaatsvindt.",
-      "uo": [
-       "Dat is «Haarvat».",
-       "Dat is «Zenuwstelsel».",
-       "Klopt: plek van gaswisseling.",
-       "Dat is «Ader»."
-      ],
-      "uh": "Onthoud: «Longblaasje» = plek van gaswisseling."
-     },
-     {
-      "v": "Welke term hoort bij \"stuurt met prikkels\"?",
-      "o": [
-       "Gaswisseling",
-       "Hart",
-       "Darmvlok",
-       "Zenuwstelsel"
-      ],
-      "c": 3,
       "d": 2,
-      "u": "«Zenuwstelsel»: het stelsel dat prikkels doorgeeft en het lichaam stuurt.",
+      "u": "Een haarvat is een heel dun bloedvat.",
       "uo": [
-       "«Gaswisseling» betekent zuurstof in, CO2 uit.",
-       "«Hart» betekent pompt het bloed rond.",
-       "«Darmvlok» betekent neemt voeding op.",
-       "Klopt, «Zenuwstelsel» past hierbij."
+       "Een slagader is juist dik.",
+       "Een ader is groter.",
+       "Klopt: een haarvat is een heel dun bloedvat.",
+       "Een zenuw geeft prikkels door."
       ],
-      "uh": "Onthoud: «Zenuwstelsel» = stuurt met prikkels."
+      "uh": "Een haarvat is een heel dun bloedvat."
      },
      {
-      "v": "Wat betekent «Nier»?",
+      "v": "Wat vervoert het bloed naar de cellen?",
       "o": [
-       "een orgaan dat afvalstoffen uit het bloed filtert",
-       "een bloedvat dat bloed van het hart af vervoert",
-       "een bloedvat dat bloed naar het hart toe vervoert",
-       "de opname van zuurstof en afgifte van koolstofdioxide"
+       "Zuurstof en voeding",
+       "Alleen botten",
+       "Alleen spieren",
+       "Alleen huid"
       ],
       "c": 0,
       "d": 1,
-      "u": "«Nier»: een orgaan dat afvalstoffen uit het bloed filtert.",
+      "u": "Zuurstof en voedingsstoffen.",
       "uo": [
-       "Klopt: filtert het bloed.",
-       "Dat is «Slagader».",
-       "Dat is «Ader».",
-       "Dat is «Gaswisseling»."
+       "Klopt: zuurstof en voedingsstoffen.",
+       "Botten worden niet vervoerd.",
+       "Spieren worden niet vervoerd.",
+       "Huid wordt niet vervoerd."
       ],
-      "uh": "Onthoud: «Nier» = filtert het bloed."
+      "uh": "Zuurstof en voedingsstoffen."
      },
      {
-      "v": "Welke term hoort bij \"regelt via het bloed\"?",
+      "v": "Welk orgaan neemt zuurstof op uit de lucht?",
       "o": [
-       "Hart",
-       "Hormoon",
-       "Ader",
-       "Zintuig"
+       "De maag",
+       "De nieren",
+       "Het hart",
+       "De longen"
       ],
-      "c": 1,
+      "c": 3,
       "d": 2,
-      "u": "«Hormoon»: een stof die via het bloed processen in het lichaam regelt.",
+      "u": "De longen nemen zuurstof op.",
       "uo": [
-       "«Hart» betekent pompt het bloed rond.",
-       "Klopt, «Hormoon» past hierbij.",
-       "«Ader» betekent bloed naar het hart toe.",
-       "«Zintuig» betekent vangt prikkels op."
+       "De maag verteert.",
+       "De nieren filteren.",
+       "Het hart pompt.",
+       "Klopt: de longen nemen zuurstof op."
       ],
-      "uh": "Onthoud: «Hormoon» = regelt via het bloed."
+      "uh": "De longen nemen zuurstof op."
      }
     ],
     "begrippen": [
@@ -8438,498 +7488,308 @@ var VAKKEN_VMBO = [
     "nBeg": 0,
     "sv": [
      {
-      "v": "Welk begrip hoort bij: \"het gebruik van organismen om producten te maken\"?",
+      "v": "Wat is biotechnologie?",
       "o": [
-       "Biotechnologie",
-       "Genetische modificatie",
-       "Antibioticum",
-       "Bacterie"
-      ],
-      "c": 0,
-      "d": 3,
-      "u": "«Biotechnologie»: het gebruik van organismen om producten te maken.",
-      "uo": [
-       "Klopt, dit is «Biotechnologie».",
-       "«Genetische modificatie» betekent DNA gericht veranderen.",
-       "«Antibioticum» betekent werkt tegen bacteriën.",
-       "«Bacterie» betekent eencellig, geen kern."
-      ],
-      "uh": "Onthoud: «Biotechnologie» = organismen als fabriekje."
-     },
-     {
-      "v": "Welke term hoort bij \"laat deeg rijzen\"?",
-      "o": [
-       "Vaccin",
-       "Gist",
-       "Genetische modificatie",
-       "Bacterie"
+       "Het bestuderen van sterren",
+       "Organismen gebruiken om iets te maken",
+       "Het bouwen van machines",
+       "Het meten van het weer"
       ],
       "c": 1,
       "d": 2,
-      "u": "«Gist»: een schimmel die suiker omzet en deeg laat rijzen.",
+      "u": "Organismen inzetten om producten te maken.",
       "uo": [
-       "«Vaccin» betekent traint de afweer.",
-       "Klopt, «Gist» past hierbij.",
-       "«Genetische modificatie» betekent DNA gericht veranderen.",
-       "«Bacterie» betekent eencellig, geen kern."
+       "Dat is sterrenkunde.",
+       "Klopt: organismen inzetten om producten te maken.",
+       "Dat is techniek.",
+       "Dat is het weerbericht."
       ],
-      "uh": "Onthoud: «Gist» = laat deeg rijzen."
+      "uh": "Organismen inzetten om producten te maken."
      },
      {
-      "v": "Wat betekent «Biotechnologie»?",
+      "v": "Wat doet gist in brood?",
       "o": [
-       "het gericht veranderen van het DNA van een organisme",
-       "een stof die bacteriën doodt of hun groei remt",
-       "het gebruik van organismen om producten te maken",
-       "een eencellig organisme zonder celkern"
+       "Het maakt het brood zout",
+       "Het kleurt het brood",
+       "Het laat het deeg rijzen",
+       "Het koelt het brood af"
       ],
       "c": 2,
-      "d": 1,
-      "u": "«Biotechnologie»: het gebruik van organismen om producten te maken.",
+      "d": 2,
+      "u": "Gist laat het deeg rijzen.",
       "uo": [
-       "Dat is «Genetische modificatie».",
-       "Dat is «Antibioticum».",
-       "Klopt: organismen als fabriekje.",
-       "Dat is «Bacterie»."
+       "Gist maakt het niet zout.",
+       "Gist kleurt niet.",
+       "Klopt: gist laat het deeg rijzen.",
+       "Gist koelt niet."
       ],
-      "uh": "Onthoud: «Biotechnologie» = organismen als fabriekje."
+      "uh": "Gist laat het deeg rijzen."
      },
      {
-      "v": "Welk begrip hoort bij: \"een schimmel die suiker omzet en deeg laat rijzen\"?",
+      "v": "Welk micro-organisme maakt van melk yoghurt?",
       "o": [
-       "Melkzuurbacterie",
-       "Schimmel",
-       "Vaccin",
+       "De melkzuurbacterie",
+       "Een schimmel",
+       "Een virus",
        "Gist"
       ],
-      "c": 3,
-      "d": 3,
-      "u": "«Gist»: een schimmel die suiker omzet en deeg laat rijzen.",
-      "uo": [
-       "«Melkzuurbacterie» betekent maakt yoghurt en kaas.",
-       "«Schimmel» betekent maakt o.a. antibiotica.",
-       "«Vaccin» betekent traint de afweer.",
-       "Klopt, dit is «Gist»."
-      ],
-      "uh": "Onthoud: «Gist» = laat deeg rijzen."
-     },
-     {
-      "v": "Welke term hoort bij \"suiker omzetten zonder zuurstof\"?",
-      "o": [
-       "Gisting",
-       "Gm-gewas",
-       "Schimmel",
-       "Genetische modificatie"
-      ],
       "c": 0,
       "d": 2,
-      "u": "«Gisting»: het omzetten van suiker door micro-organismen zonder zuurstof.",
+      "u": "De melkzuurbacterie maakt yoghurt.",
       "uo": [
-       "Klopt, «Gisting» past hierbij.",
-       "«Gm-gewas» betekent gewas met veranderd DNA.",
-       "«Schimmel» betekent maakt o.a. antibiotica.",
-       "«Genetische modificatie» betekent DNA gericht veranderen."
+       "Klopt: de melkzuurbacterie maakt yoghurt.",
+       "Een schimmel maakt o.a. antibiotica.",
+       "Een virus maakt ziek.",
+       "Gist laat deeg rijzen."
       ],
-      "uh": "Onthoud: «Gisting» = suiker omzetten zonder zuurstof."
+      "uh": "De melkzuurbacterie maakt yoghurt."
      },
      {
-      "v": "Wat betekent «Gist»?",
+      "v": "Waar worden antibiotica onder andere van gemaakt?",
       "o": [
-       "een bacterie die melk in yoghurt of kaas omzet",
-       "een schimmel die suiker omzet en deeg laat rijzen",
-       "een organisme dat stoffen zoals antibiotica kan maken",
-       "een middel dat je afweer traint tegen een ziekteverwekker"
+       "Van gist",
+       "Van melk",
+       "Van virussen",
+       "Van schimmels"
+      ],
+      "c": 3,
+      "d": 3,
+      "u": "Sommige schimmels maken antibiotica.",
+      "uo": [
+       "Gist laat deeg rijzen.",
+       "Melk wordt yoghurt.",
+       "Virussen maken juist ziek.",
+       "Klopt: sommige schimmels maken antibiotica."
+      ],
+      "uh": "Sommige schimmels maken antibiotica."
+     },
+     {
+      "v": "Waartegen werkt een antibioticum?",
+      "o": [
+       "Tegen kou",
+       "Tegen bacteriën",
+       "Tegen honger",
+       "Tegen dorst"
       ],
       "c": 1,
       "d": 1,
-      "u": "«Gist»: een schimmel die suiker omzet en deeg laat rijzen.",
+      "u": "Een antibioticum doodt of remt bacteriën.",
       "uo": [
-       "Dat is «Melkzuurbacterie».",
-       "Klopt: laat deeg rijzen.",
-       "Dat is «Schimmel».",
-       "Dat is «Vaccin»."
+       "Niet tegen kou.",
+       "Klopt: een antibioticum doodt of remt bacteriën.",
+       "Niet tegen honger.",
+       "Niet tegen dorst."
       ],
-      "uh": "Onthoud: «Gist» = laat deeg rijzen."
+      "uh": "Een antibioticum doodt of remt bacteriën."
      },
      {
-      "v": "Welk begrip hoort bij: \"een stof die bacteriën doodt of hun groei remt\"?",
+      "v": "Wat is genetische modificatie?",
       "o": [
-       "Vaccin",
-       "Genetische modificatie",
-       "Antibioticum",
-       "Schimmel"
-      ],
-      "c": 2,
-      "d": 3,
-      "u": "«Antibioticum»: een stof die bacteriën doodt of hun groei remt.",
-      "uo": [
-       "«Vaccin» betekent traint de afweer.",
-       "«Genetische modificatie» betekent DNA gericht veranderen.",
-       "Klopt, dit is «Antibioticum».",
-       "«Schimmel» betekent maakt o.a. antibiotica."
-      ],
-      "uh": "Onthoud: «Antibioticum» = werkt tegen bacteriën."
-     },
-     {
-      "v": "Welke term hoort bij \"werkt tegen bacteriën\"?",
-      "o": [
-       "Genetische modificatie",
-       "Schimmel",
-       "Biotechnologie",
-       "Antibioticum"
-      ],
-      "c": 3,
-      "d": 2,
-      "u": "«Antibioticum»: een stof die bacteriën doodt of hun groei remt.",
-      "uo": [
-       "«Genetische modificatie» betekent DNA gericht veranderen.",
-       "«Schimmel» betekent maakt o.a. antibiotica.",
-       "«Biotechnologie» betekent organismen als fabriekje.",
-       "Klopt, «Antibioticum» past hierbij."
-      ],
-      "uh": "Onthoud: «Antibioticum» = werkt tegen bacteriën."
-     },
-     {
-      "v": "Wat betekent «Melkzuurbacterie»?",
-      "o": [
-       "een bacterie die melk in yoghurt of kaas omzet",
-       "een schimmel die suiker omzet en deeg laat rijzen",
-       "een middel dat je afweer traint tegen een ziekteverwekker",
-       "een gewas met gericht veranderd DNA"
-      ],
-      "c": 0,
-      "d": 1,
-      "u": "«Melkzuurbacterie»: een bacterie die melk in yoghurt of kaas omzet.",
-      "uo": [
-       "Klopt: maakt yoghurt en kaas.",
-       "Dat is «Gist».",
-       "Dat is «Vaccin».",
-       "Dat is «Gm-gewas»."
-      ],
-      "uh": "Onthoud: «Melkzuurbacterie» = maakt yoghurt en kaas."
-     },
-     {
-      "v": "Welk begrip hoort bij: \"een organisme dat stoffen zoals antibiotica kan maken\"?",
-      "o": [
-       "Bacterie",
-       "Schimmel",
-       "Gist",
-       "Genetische modificatie"
-      ],
-      "c": 1,
-      "d": 3,
-      "u": "«Schimmel»: een organisme dat stoffen zoals antibiotica kan maken.",
-      "uo": [
-       "«Bacterie» betekent eencellig, geen kern.",
-       "Klopt, dit is «Schimmel».",
-       "«Gist» betekent laat deeg rijzen.",
-       "«Genetische modificatie» betekent DNA gericht veranderen."
-      ],
-      "uh": "Onthoud: «Schimmel» = maakt o.a. antibiotica."
-     },
-     {
-      "v": "Welke term hoort bij \"maakt o.a. antibiotica\"?",
-      "o": [
-       "Genetische modificatie",
-       "Biotechnologie",
-       "Schimmel",
-       "Vaccin"
+       "Een dier goed voeren",
+       "Een plant water geven",
+       "Het DNA gericht veranderen",
+       "Een dier trainen"
       ],
       "c": 2,
       "d": 2,
-      "u": "«Schimmel»: een organisme dat stoffen zoals antibiotica kan maken.",
+      "u": "Het DNA gericht veranderen.",
       "uo": [
-       "«Genetische modificatie» betekent DNA gericht veranderen.",
-       "«Biotechnologie» betekent organismen als fabriekje.",
-       "Klopt, «Schimmel» past hierbij.",
-       "«Vaccin» betekent traint de afweer."
+       "Voeren verandert het DNA niet.",
+       "Water geven ook niet.",
+       "Klopt: het DNA gericht veranderen.",
+       "Trainen verandert het DNA niet."
       ],
-      "uh": "Onthoud: «Schimmel» = maakt o.a. antibiotica."
+      "uh": "Het DNA gericht veranderen."
      },
      {
-      "v": "Wat betekent «Antibioticum»?",
+      "v": "Waarvoor gebruiken we gm-bacteriën onder andere?",
       "o": [
-       "een middel dat je afweer traint tegen een ziekteverwekker",
-       "het gericht veranderen van het DNA van een organisme",
-       "een organisme dat stoffen zoals antibiotica kan maken",
-       "een stof die bacteriën doodt of hun groei remt"
-      ],
-      "c": 3,
-      "d": 1,
-      "u": "«Antibioticum»: een stof die bacteriën doodt of hun groei remt.",
-      "uo": [
-       "Dat is «Vaccin».",
-       "Dat is «Genetische modificatie».",
-       "Dat is «Schimmel».",
-       "Klopt: werkt tegen bacteriën."
-      ],
-      "uh": "Onthoud: «Antibioticum» = werkt tegen bacteriën."
-     },
-     {
-      "v": "Welk begrip hoort bij: \"een hormoon dat met gm-bacteriën gemaakt kan worden\"?",
-      "o": [
-       "Insuline",
-       "Antibioticum",
-       "Vaccin",
-       "Bacterie"
+       "Om insuline te maken",
+       "Om brood te bakken",
+       "Om te sporten",
+       "Om te rekenen"
       ],
       "c": 0,
       "d": 3,
-      "u": "«Insuline»: een hormoon dat met gm-bacteriën gemaakt kan worden.",
+      "u": "Gm-bacteriën maken insuline.",
       "uo": [
-       "Klopt, dit is «Insuline».",
-       "«Antibioticum» betekent werkt tegen bacteriën.",
-       "«Vaccin» betekent traint de afweer.",
-       "«Bacterie» betekent eencellig, geen kern."
+       "Klopt: gm-bacteriën maken insuline.",
+       "Bakken doet de bakker.",
+       "Bacteriën sporten niet.",
+       "Bacteriën rekenen niet."
       ],
-      "uh": "Onthoud: «Insuline» = hormoon uit gm-bacteriën."
+      "uh": "Gm-bacteriën maken insuline."
      },
      {
-      "v": "Welke term hoort bij \"hormoon uit gm-bacteriën\"?",
+      "v": "Wat is gisting?",
       "o": [
-       "Vaccin",
-       "Insuline",
-       "Bacterie",
-       "Biotechnologie"
+       "Verbranden met zuurstof",
+       "Bevriezen van voedsel",
+       "Koken van water",
+       "Suiker omzetten zonder zuurstof"
+      ],
+      "c": 3,
+      "d": 3,
+      "u": "Suiker omzetten zonder zuurstof.",
+      "uo": [
+       "Verbranden gebruikt juist zuurstof.",
+       "Bevriezen is iets anders.",
+       "Koken is iets anders.",
+       "Klopt: suiker omzetten zonder zuurstof."
+      ],
+      "uh": "Suiker omzetten zonder zuurstof."
+     },
+     {
+      "v": "Wat kan een schimmel maken?",
+      "o": [
+       "Botten",
+       "Antibiotica",
+       "Bloed",
+       "Spieren"
       ],
       "c": 1,
       "d": 2,
-      "u": "«Insuline»: een hormoon dat met gm-bacteriën gemaakt kan worden.",
+      "u": "Sommige schimmels maken antibiotica.",
       "uo": [
-       "«Vaccin» betekent traint de afweer.",
-       "Klopt, «Insuline» past hierbij.",
-       "«Bacterie» betekent eencellig, geen kern.",
-       "«Biotechnologie» betekent organismen als fabriekje."
+       "Botten maakt het beenmerg.",
+       "Klopt: sommige schimmels maken antibiotica.",
+       "Bloed maakt het beenmerg.",
+       "Spieren groeien door training."
       ],
-      "uh": "Onthoud: «Insuline» = hormoon uit gm-bacteriën."
+      "uh": "Sommige schimmels maken antibiotica."
      },
      {
-      "v": "Wat betekent «Insuline»?",
+      "v": "Wat is insuline?",
       "o": [
-       "een stof die bacteriën doodt of hun groei remt",
-       "een middel dat je afweer traint tegen een ziekteverwekker",
-       "een hormoon dat met gm-bacteriën gemaakt kan worden",
-       "een eencellig organisme zonder celkern"
+       "Een soort bacterie",
+       "Een soort schimmel",
+       "Een hormoon voor de bloedsuiker",
+       "Een antibioticum"
       ],
       "c": 2,
-      "d": 1,
-      "u": "«Insuline»: een hormoon dat met gm-bacteriën gemaakt kan worden.",
+      "d": 2,
+      "u": "Insuline regelt de bloedsuiker.",
       "uo": [
-       "Dat is «Antibioticum».",
-       "Dat is «Vaccin».",
-       "Klopt: hormoon uit gm-bacteriën.",
-       "Dat is «Bacterie»."
+       "Insuline is geen bacterie.",
+       "Ook geen schimmel.",
+       "Klopt: insuline regelt de bloedsuiker.",
+       "Insuline is geen antibioticum."
       ],
-      "uh": "Onthoud: «Insuline» = hormoon uit gm-bacteriën."
+      "uh": "Insuline regelt de bloedsuiker."
      },
      {
-      "v": "Welk begrip hoort bij: \"een gewas met gericht veranderd DNA\"?",
+      "v": "Wat is een voordeel van gm-gewassen?",
       "o": [
-       "Genetische modificatie",
-       "Vaccin",
-       "Bacterie",
-       "Gm-gewas"
-      ],
-      "c": 3,
-      "d": 3,
-      "u": "«Gm-gewas»: een gewas met gericht veranderd DNA.",
-      "uo": [
-       "«Genetische modificatie» betekent DNA gericht veranderen.",
-       "«Vaccin» betekent traint de afweer.",
-       "«Bacterie» betekent eencellig, geen kern.",
-       "Klopt, dit is «Gm-gewas»."
-      ],
-      "uh": "Onthoud: «Gm-gewas» = gewas met veranderd DNA."
-     },
-     {
-      "v": "Welke term hoort bij \"gewas met veranderd DNA\"?",
-      "o": [
-       "Gm-gewas",
-       "Vaccin",
-       "Bacterie",
-       "Biotechnologie"
+       "Beter tegen droogte",
+       "Ze smaken heel zoet",
+       "Ze groeien niet meer",
+       "Ze worden zwaarder dan lood"
       ],
       "c": 0,
-      "d": 2,
-      "u": "«Gm-gewas»: een gewas met gericht veranderd DNA.",
+      "d": 3,
+      "u": "Bijvoorbeeld beter tegen droogte.",
       "uo": [
-       "Klopt, «Gm-gewas» past hierbij.",
-       "«Vaccin» betekent traint de afweer.",
-       "«Bacterie» betekent eencellig, geen kern.",
-       "«Biotechnologie» betekent organismen als fabriekje."
+       "Klopt: bijvoorbeeld beter tegen droogte.",
+       "Smaak is niet het doel.",
+       "Ze groeien juist wel.",
+       "Dat is onmogelijk."
       ],
-      "uh": "Onthoud: «Gm-gewas» = gewas met veranderd DNA."
+      "uh": "Bijvoorbeeld beter tegen droogte."
      },
      {
-      "v": "Wat betekent «Gm-gewas»?",
+      "v": "Wat gebeurt er met melk door melkzuurbacteriën?",
       "o": [
-       "het gericht veranderen van het DNA van een organisme",
-       "een gewas met gericht veranderd DNA",
-       "een middel dat je afweer traint tegen een ziekteverwekker",
-       "een eencellig organisme zonder celkern"
+       "De melk bevriest",
+       "De melk verdampt",
+       "De melk wordt gekookt",
+       "De melk wordt yoghurt of kaas"
+      ],
+      "c": 3,
+      "d": 2,
+      "u": "De melk wordt yoghurt of kaas.",
+      "uo": [
+       "Bevriezen is iets anders.",
+       "Verdampen is iets anders.",
+       "Koken is iets anders.",
+       "Klopt: de melk wordt yoghurt of kaas."
+      ],
+      "uh": "De melk wordt yoghurt of kaas."
+     },
+     {
+      "v": "Wat betekent resistentie bij bacteriën?",
+      "o": [
+       "Ze worden beter gevoed",
+       "Ze zijn ongevoelig voor antibiotica",
+       "Ze worden groter",
+       "Ze gaan sneller dood"
       ],
       "c": 1,
-      "d": 1,
-      "u": "«Gm-gewas»: een gewas met gericht veranderd DNA.",
-      "uo": [
-       "Dat is «Genetische modificatie».",
-       "Klopt: gewas met veranderd DNA.",
-       "Dat is «Vaccin».",
-       "Dat is «Bacterie»."
-      ],
-      "uh": "Onthoud: «Gm-gewas» = gewas met veranderd DNA."
-     },
-     {
-      "v": "Welk begrip hoort bij: \"ongevoeligheid van bacteriën voor een antibioticum\"?",
-      "o": [
-       "Antibioticum",
-       "Schimmel",
-       "Resistentie",
-       "Gisting"
-      ],
-      "c": 2,
       "d": 3,
-      "u": "«Resistentie»: ongevoeligheid van bacteriën voor een antibioticum.",
+      "u": "Ongevoelig voor antibiotica.",
       "uo": [
-       "«Antibioticum» betekent werkt tegen bacteriën.",
-       "«Schimmel» betekent maakt o.a. antibiotica.",
-       "Klopt, dit is «Resistentie».",
-       "«Gisting» betekent suiker omzetten zonder zuurstof."
-      ],
-      "uh": "Onthoud: «Resistentie» = ongevoelig voor antibiotica."
-     },
-     {
-      "v": "Welke term hoort bij \"ongevoelig voor antibiotica\"?",
-      "o": [
-       "Schimmel",
-       "Gisting",
-       "Biotechnologie",
-       "Resistentie"
-      ],
-      "c": 3,
-      "d": 2,
-      "u": "«Resistentie»: ongevoeligheid van bacteriën voor een antibioticum.",
-      "uo": [
-       "«Schimmel» betekent maakt o.a. antibiotica.",
-       "«Gisting» betekent suiker omzetten zonder zuurstof.",
-       "«Biotechnologie» betekent organismen als fabriekje.",
-       "Klopt, «Resistentie» past hierbij."
-      ],
-      "uh": "Onthoud: «Resistentie» = ongevoelig voor antibiotica."
-     },
-     {
-      "v": "Wat betekent «Resistentie»?",
-      "o": [
-       "ongevoeligheid van bacteriën voor een antibioticum",
-       "een stof die bacteriën doodt of hun groei remt",
-       "een organisme dat stoffen zoals antibiotica kan maken",
-       "het omzetten van suiker door micro-organismen zonder zuurstof"
-      ],
-      "c": 0,
-      "d": 1,
-      "u": "«Resistentie»: ongevoeligheid van bacteriën voor een antibioticum.",
-      "uo": [
+       "Voeding is niet het punt.",
        "Klopt: ongevoelig voor antibiotica.",
-       "Dat is «Antibioticum».",
-       "Dat is «Schimmel».",
-       "Dat is «Gisting»."
+       "Grootte is niet het punt.",
+       "Bij resistentie gaan ze juist niet dood."
       ],
-      "uh": "Onthoud: «Resistentie» = ongevoelig voor antibiotica."
+      "uh": "Ongevoelig voor antibiotica."
      },
      {
-      "v": "Welk begrip hoort bij: \"een middel dat je afweer traint tegen een ziekteverwekker\"?",
+      "v": "Wat doet een vaccin?",
       "o": [
-       "Antibioticum",
-       "Vaccin",
-       "Gist",
-       "Biotechnologie"
-      ],
-      "c": 1,
-      "d": 3,
-      "u": "«Vaccin»: een middel dat je afweer traint tegen een ziekteverwekker.",
-      "uo": [
-       "«Antibioticum» betekent werkt tegen bacteriën.",
-       "Klopt, dit is «Vaccin».",
-       "«Gist» betekent laat deeg rijzen.",
-       "«Biotechnologie» betekent organismen als fabriekje."
-      ],
-      "uh": "Onthoud: «Vaccin» = traint de afweer."
-     },
-     {
-      "v": "Welke term hoort bij \"traint de afweer\"?",
-      "o": [
-       "Gist",
-       "Biotechnologie",
-       "Vaccin",
-       "Bacterie"
+       "Het doodt bacteriën direct",
+       "Het geeft je energie",
+       "Het traint je afweer",
+       "Het maakt je ziek"
       ],
       "c": 2,
       "d": 2,
-      "u": "«Vaccin»: een middel dat je afweer traint tegen een ziekteverwekker.",
+      "u": "Een vaccin traint de afweer.",
       "uo": [
-       "«Gist» betekent laat deeg rijzen.",
-       "«Biotechnologie» betekent organismen als fabriekje.",
-       "Klopt, «Vaccin» past hierbij.",
-       "«Bacterie» betekent eencellig, geen kern."
+       "Dat doet een antibioticum.",
+       "Een vaccin geeft geen energie.",
+       "Klopt: een vaccin traint de afweer.",
+       "Het maakt je juist niet ziek."
       ],
-      "uh": "Onthoud: «Vaccin» = traint de afweer."
+      "uh": "Een vaccin traint de afweer."
      },
      {
-      "v": "Wat betekent «Bacterie»?",
+      "v": "Wat is een bacterie?",
       "o": [
-       "een organisme dat stoffen zoals antibiotica kan maken",
-       "een schimmel die suiker omzet en deeg laat rijzen",
-       "het gericht veranderen van het DNA van een organisme",
-       "een eencellig organisme zonder celkern"
-      ],
-      "c": 3,
-      "d": 1,
-      "u": "«Bacterie»: een eencellig organisme zonder celkern.",
-      "uo": [
-       "Dat is «Schimmel».",
-       "Dat is «Gist».",
-       "Dat is «Genetische modificatie».",
-       "Klopt: eencellig, geen kern."
-      ],
-      "uh": "Onthoud: «Bacterie» = eencellig, geen kern."
-     },
-     {
-      "v": "Welk begrip hoort bij: \"een eencellig organisme zonder celkern\"?",
-      "o": [
-       "Bacterie",
-       "Schimmel",
-       "Gist",
-       "Genetische modificatie"
+       "Eencellig, zonder kern",
+       "Een groot dier met botten",
+       "Een harde grijze steen",
+       "Een glanzend metaal"
       ],
       "c": 0,
-      "d": 3,
-      "u": "«Bacterie»: een eencellig organisme zonder celkern.",
+      "d": 1,
+      "u": "Eencellig, zonder celkern.",
       "uo": [
-       "Klopt, dit is «Bacterie».",
-       "«Schimmel» betekent maakt o.a. antibiotica.",
-       "«Gist» betekent laat deeg rijzen.",
-       "«Genetische modificatie» betekent DNA gericht veranderen."
+       "Klopt: eencellig, zonder celkern.",
+       "Een bacterie is geen groot dier.",
+       "Een bacterie leeft.",
+       "Een bacterie is geen metaal."
       ],
-      "uh": "Onthoud: «Bacterie» = eencellig, geen kern."
+      "uh": "Eencellig, zonder celkern."
      },
      {
-      "v": "Welke term hoort bij \"eencellig, geen kern\"?",
+      "v": "Waarom is te veel antibiotica gebruiken een probleem?",
       "o": [
-       "Genetische modificatie",
-       "Bacterie",
-       "Biotechnologie",
-       "Vaccin"
+       "Het voedt de bacteriën",
+       "Het maakt bacteriën groter",
+       "Het maakt bacteriën sneller",
+       "Bacteriën worden resistent"
       ],
-      "c": 1,
-      "d": 2,
-      "u": "«Bacterie»: een eencellig organisme zonder celkern.",
+      "c": 3,
+      "d": 3,
+      "u": "Bacteriën worden ongevoelig (resistent).",
       "uo": [
-       "«Genetische modificatie» betekent DNA gericht veranderen.",
-       "Klopt, «Bacterie» past hierbij.",
-       "«Biotechnologie» betekent organismen als fabriekje.",
-       "«Vaccin» betekent traint de afweer."
+       "Het voedt ze niet.",
+       "Grootte is niet het punt.",
+       "Snelheid is niet het punt.",
+       "Klopt: bacteriën worden ongevoelig (resistent)."
       ],
-      "uh": "Onthoud: «Bacterie» = eencellig, geen kern."
+      "uh": "Bacteriën worden ongevoelig (resistent)."
      }
     ],
     "begrippen": [
