@@ -159,4 +159,155 @@ export default [
       { v: 'Bereken de spanning: een stroom van 2 A door een weerstand van 5 Ω.', o: ['10 V', '2,5 V', '0,4 V', '7 V'], c: 0, d: 2, uo: ['Klopt: U = I·R = 2 · 5 = 10 V.', 'Nee, dat is R/I.', 'Nee, dat is I/R.', 'Nee, dat is I + R.'], uh: 'U = I · R.' },
       { v: 'Wat is de vervangingsweerstand van twee weerstanden van 4 Ω in serie?', o: ['8 Ω', '2 Ω', '4 Ω', '16 Ω'], c: 0, d: 2, uo: ['Klopt: in serie tel je op: 4 + 4 = 8 Ω.', 'Nee, 2 Ω hoort bij twee gelijke weerstanden parallel.', 'Nee, samen is het meer dan één.', 'Nee, je telt op, niet vermenigvuldigen.'], uh: 'Serie: R_totaal = R₁ + R₂.' },
     ]),
+
+  V('E', 'Straling en materie',
+    `Onstabiele kernen zenden <strong>straling</strong> uit: <strong>alfa</strong> (heliumkern), <strong>bèta</strong> (elektron) en <strong>gamma</strong> (foton). De <strong>halveringstijd</strong> is de tijd waarin de helft vervalt; de <strong>activiteit</strong> daalt daardoor exponentieel.`,
+    [
+      { h: '1. Soorten straling', p: [
+        `<strong>Alfastraling</strong> (₂⁴He) wordt al door papier gestopt, <strong>bètastraling</strong> (elektronen) dringt verder door, en <strong>gammastraling</strong> (fotonen, geen massa of lading) het diepst: daarvoor is dik lood nodig. Alle drie zijn <strong>ioniserend</strong>: ze slaan elektronen los.`] },
+      { h: '2. Halveringstijd', p: [
+        `Na één <strong>halveringstijd</strong> is de helft van de kernen vervallen, na n halveringstijden nog (½)ⁿ. De <strong>activiteit</strong> (verval per seconde) daalt exponentieel mee.`],
+        formula: { label: 'Verval', eq: 'deel over = (½)ⁿ, met n = t / t½', note: 'Na 15 jaar bij t½ = 5 jaar: n = 3, dus (½)³ = ⅛ over.' } },
+    ],
+    [
+      { t: 'Alfastraling', d: 'straling van heliumkernen (₂⁴He), weinig doordringend', k: 'heliumkern, weinig doordringend', fout: ['Bètastraling', 'Gammastraling'] },
+      { t: 'Bètastraling', d: 'straling van snelle elektronen, matig doordringend', k: 'snelle elektronen', fout: ['Alfastraling', 'Gammastraling'] },
+      { t: 'Gammastraling', d: 'straling van fotonen zonder massa of lading, sterk doordringend', k: 'foton, sterk doordringend', fout: ['Alfastraling', 'Bètastraling'] },
+      { t: 'Halveringstijd', d: 'de tijd waarin de helft van de kernen vervalt', k: 'helft vervalt', fout: ['Activiteit'] },
+      { t: 'Activiteit', d: 'het aantal vervallen per seconde; daalt exponentieel', k: 'verval per seconde', fout: ['Halveringstijd'] },
+      { t: 'Ioniserende straling', d: 'straling die elektronen losslaat en ionen maakt', k: 'slaat elektronen los', fout: ['Gammastraling'] },
+      { t: 'Isotoop', d: 'atoomsoort met hetzelfde aantal protonen maar een ander aantal neutronen', k: 'zelfde Z, ander aantal neutronen', fout: ['Radioactief verval'] },
+      { t: 'Radioactief verval', d: 'het uiteenvallen van een onstabiele kern onder uitzending van straling', k: 'kern valt uiteen', fout: ['Halveringstijd'] },
+    ],
+    [
+      { v: 'Welke straling heeft het grootste doordringend vermogen?', o: ['gammastraling', 'alfastraling', 'bètastraling', 'geen ervan dringt door'], c: 0, d: 2, uo: ['Klopt: gammastraling dringt het diepst door en vereist dik lood.', 'Nee, alfa wordt al door papier gestopt.', 'Nee, bèta dringt minder ver door dan gamma.', 'Nee, gamma dringt het diepst door.'], uh: 'Doordringing: alfa < bèta < gamma.' },
+      { v: 'Wat is de halveringstijd van een radioactieve stof?', o: ['de tijd waarin de helft van de kernen vervalt', 'de tijd tot alle kernen vervallen', 'de helft van de totale levensduur', 'de tijd tussen twee vervallen'], c: 0, d: 2, uo: ['Klopt: na één halveringstijd is de helft vervallen.', 'Nee, alle kernen vervallen duurt in theorie oneindig.', 'Nee, het is niet de halve levensduur.', 'Nee, het is geen tijd tussen twee vervallen.'], uh: 'Halveringstijd: de helft vervalt.' },
+      { v: 'Na hoeveel halveringstijden is nog ⅛ van een stof over?', o: ['2', '3', '4', '8'], c: 1, d: 3, uo: ['Nee, na 2 is nog ¼ over.', 'Klopt: ½ → ¼ → ⅛, dus 3 halveringstijden.', 'Nee, na 4 is nog 1/16 over.', 'Nee, 8 is de noemer, niet het aantal.'], uh: 'Elke halveringstijd halveert: (½)ⁿ.' },
+      { v: 'Wat gebeurt met de activiteit naarmate de tijd verstrijkt?', o: ['die daalt exponentieel', 'die blijft gelijk', 'die stijgt', 'die daalt lineair'], c: 0, d: 2, uo: ['Klopt: de activiteit daalt exponentieel, net als het aantal kernen.', 'Nee, de activiteit neemt af.', 'Nee, ze stijgt niet.', 'Nee, de afname is exponentieel, niet lineair.'], uh: 'Activiteit daalt exponentieel.' },
+      { v: 'Een isotoop heeft een halveringstijd van 5 jaar. Welk deel is na 15 jaar over?', o: ['⅛', '¼', '½', '1/16'], c: 0, d: 3, uo: ['Klopt: 15/5 = 3 halveringstijden, dus (½)³ = ⅛.', 'Nee, ¼ is er na 10 jaar over.', 'Nee, ½ is er na 5 jaar over.', 'Nee, 1/16 is er na 20 jaar over.'], uh: '15 jaar = 3 halveringstijden → ⅛.' },
+      { v: 'Welk verval zendt een heliumkern uit?', o: ['alfaverval', 'bètaverval', 'gammaverval', 'geen verval'], c: 0, d: 2, uo: ['Klopt: bij alfaverval komt een heliumkern (₂⁴He) vrij.', 'Nee, bèta zendt een elektron uit.', 'Nee, gamma is een foton.', 'Nee, alfaverval doet dit.'], uh: 'Alfaverval → heliumkern.' },
+      { v: 'Wat doet ioniserende straling met atomen?', o: ['ze slaat elektronen los, waardoor ionen ontstaan', 'ze verwarmt alleen', 'ze laat licht ontstaan', 'ze heeft geen effect'], c: 0, d: 2, uo: ['Klopt: ze slaat elektronen los en maakt zo ionen.', 'Nee, meer dan alleen verwarmen.', 'Nee, dat is niet het hoofdeffect.', 'Nee, ze heeft wel degelijk effect.'], uh: 'Ioniserend: slaat elektronen los.' },
+      { v: 'Waarmee scherm je gammastraling het best af?', o: ['met dik lood', 'met papier', 'met een dun laagje huid', 'met lucht'], c: 0, d: 2, uo: ['Klopt: dik lood of beton houdt gammastraling het best tegen.', 'Nee, papier stopt alleen alfa.', 'Nee, huid stopt alfa, niet gamma.', 'Nee, lucht houdt gamma nauwelijks tegen.'], uh: 'Gamma: dik lood of beton.' },
+    ]),
+
+  V('F', 'Quantumwereld en relativiteit',
+    `Licht gedraagt zich als <strong>fotonen</strong> (foto-elektrisch effect) en materie als een golf (<strong>de-Broglie</strong>). Kernen veranderen bij <strong>alfa-</strong> en <strong>bètaverval</strong>, en <strong>splitsing</strong> of <strong>fusie</strong> leveren energie. Bij hoge snelheden geldt de <strong>relativiteitstheorie</strong>.`,
+    [
+      { h: '1. Quantumfysica', p: [
+        `Bij het <strong>foto-elektrisch effect</strong> slaat licht alleen elektronen los als de <strong>frequentie</strong> boven de drempelfrequentie ligt, ongeacht de intensiteit; de drempel is de <strong>uittreedarbeid</strong>. Materie heeft een golflengte volgens de <strong>de-Broglie</strong>-relatie <em>λ = h/p</em>.`],
+        formula: { label: 'De-Broglie', eq: 'λ = h / p = h / (m·v)', note: 'Hoe groter de impuls, hoe kleiner de golflengte.' } },
+      { h: '2. Kernprocessen en relativiteit', p: [
+        `Bij <strong>alfaverval</strong> vertrekt een heliumkern; bij <strong>bèta-min-verval</strong> wordt een neutron een proton, dus Z stijgt met 1. Bij <strong>kernsplitsing</strong> valt een zware kern uiteen, bij <strong>kernfusie</strong> smelten lichte kernen samen; beide kunnen energie leveren (de zon fuseert). Dicht bij de lichtsnelheid treden <strong>tijddilatatie</strong> en <strong>lengteverkorting</strong> op.`] },
+    ],
+    [
+      { t: 'Foto-elektrisch effect', d: 'licht slaat elektronen los als de frequentie boven de drempel ligt', k: 'frequentie boven de drempel', fout: ['De-Broglie-golflengte'] },
+      { t: 'Foton', d: 'een energiepakketje van licht: E = h·f', k: 'energiepakketje van licht', fout: ['Uittreedarbeid'] },
+      { t: 'Uittreedarbeid', d: 'de minimale energie om een elektron uit een metaal los te maken', k: 'drempelenergie voor uittreden', fout: ['Foton'] },
+      { t: 'De-Broglie-golflengte', d: 'de golflengte van een deeltje: λ = h/p', k: 'λ = h/p', fout: ['Foto-elektrisch effect'] },
+      { t: 'Alfaverval', d: 'kernverval waarbij een heliumkern (₂⁴He) wordt uitgezonden', k: 'zendt heliumkern uit', fout: ['Bètaverval'] },
+      { t: 'Bètaverval', d: 'kernverval waarbij een neutron een proton wordt onder uitzending van een elektron', k: 'neutron → proton + elektron', fout: ['Alfaverval'] },
+      { t: 'Kernsplitsing', d: 'het uiteenvallen van een zware kern in lichtere kernen, met energie', k: 'zware kern → lichtere', fout: ['Kernfusie'] },
+      { t: 'Kernfusie', d: 'het samensmelten van lichte kernen tot een zwaardere, met energie', k: 'lichte kernen → zwaardere', fout: ['Kernsplitsing'] },
+      { t: 'Tijddilatatie', d: 'bewegende klokken lopen langzamer bij hoge snelheden', k: 'bewegende klok loopt langzamer', fout: ['Relativiteitstheorie'] },
+      { t: 'Relativiteitstheorie', d: 'de theorie die geldt bij snelheden dicht bij de lichtsnelheid', k: 'geldt dicht bij lichtsnelheid', fout: ['Tijddilatatie'] },
+    ],
+    [
+      { v: 'Wat bepaalt of een elektron wordt losgeslagen bij het foto-elektrisch effect?', o: ['de frequentie van het licht', 'de intensiteit van het licht', 'de kleur van het metaal', 'de belichtingstijd'], c: 0, d: 3, uo: ['Klopt: alleen boven de drempelfrequentie, ongeacht de intensiteit.', 'Nee, meer intensiteit onder de drempel doet niets.', 'Nee, de kleur van het metaal is niet bepalend.', 'Nee, de tijd niet.'], uh: 'Foto-elektrisch: frequentie boven de drempel.' },
+      { v: 'Wat is de de-Broglie-golflengte van een deeltje met impuls p?', o: ['λ = h/p', 'λ = h·p', 'λ = p/h', 'λ = h·f'], c: 0, d: 3, uo: ['Klopt: λ = h/p = h/(m·v).', 'Nee, dat is fout: delen, niet vermenigvuldigen.', 'Nee, dat is omgekeerd.', 'Nee, dat is E = h·f.'], uh: 'λ = h/p (materiegolven).' },
+      { v: 'Wat verandert het atoomnummer Z bij bèta-min-verval?', o: ['Z stijgt met 1', 'Z daalt met 1', 'Z blijft gelijk', 'Z stijgt met 2'], c: 0, d: 3, uo: ['Klopt: een neutron wordt een proton, dus Z stijgt met 1.', 'Nee, Z daalt niet.', 'Nee, Z verandert wel.', 'Nee, dat is alfa (Z daalt met 2).'], uh: 'β⁻: neutron → proton, Z + 1.' },
+      { v: 'Welk gevolg volgt uit de speciale relativiteitstheorie bij hoge snelheden?', o: ['tijddilatatie en lengteverkorting', 'geen enkel gevolg', 'de massa verdwijnt', 'de tijd gaat sneller'], c: 0, d: 3, uo: ['Klopt: bewegende klokken lopen langzamer en lengtes krimpen.', 'Nee, er zijn wel gevolgen.', 'Nee, de massa verdwijnt niet.', 'Nee, de tijd gaat juist langzamer voor de bewegende waarnemer.'], uh: 'Hoge v: tijddilatatie + lengteverkorting.' },
+      { v: 'Welk type kernverval zendt een heliumkern uit?', o: ['alfaverval', 'bètaverval', 'gammaverval', 'kernfusie'], c: 0, d: 2, uo: ['Klopt: alfaverval zendt een heliumkern (₂⁴He) uit.', 'Nee, bèta zendt een elektron uit.', 'Nee, gamma is een foton.', 'Nee, fusie is geen verval.'], uh: 'Alfa = heliumkern.' },
+      { v: 'Wat is het verschil tussen kernsplitsing en kernfusie?', o: ['splitsing: zware kern → lichtere; fusie: lichte kernen → zwaardere', 'fusie: een zware kern splitst', 'ze zijn identiek', 'splitsing kost energie, fusie niet'], c: 0, d: 3, uo: ['Klopt: splitsing breekt een zware kern, fusie smelt lichte kernen samen; beide kunnen energie leveren.', 'Nee, dat is omgekeerd.', 'Nee, ze verschillen.', 'Nee, beide kunnen juist energie leveren.'], uh: 'Splitsing: zwaar → licht; fusie: licht → zwaar.' },
+      { v: 'Welke eigenschap heeft een gammafoton ten opzichte van alfa- en bètastraling?', o: ['de grootste doordringing, geen massa of lading', 'het is zwaar en positief geladen', 'het is geladen zoals bèta', 'het is het minst doordringend'], c: 0, d: 2, uo: ['Klopt: gamma dringt het diepst door en heeft geen massa of lading.', 'Nee, gamma is een foton, geen zwaar deeltje.', 'Nee, gamma heeft geen lading.', 'Nee, gamma dringt juist het diepst door.'], uh: 'Gamma: foton, geen lading, diepste doordringing.' },
+      { v: 'Wat is de minimale energie om een elektron uit een metaaloppervlak los te slaan?', o: ['de uittreedarbeid', 'de de-Broglie-energie', 'de bindingsenergie van de kern', 'de activeringsenergie'], c: 0, d: 3, uo: ['Klopt: de uittreedarbeid is de drempelenergie om een elektron los te maken.', 'Nee, dat is geen energiedrempel voor uittreden.', 'Nee, dat hoort bij de kern.', 'Nee, dat is een chemische term.'], uh: 'Uittreedarbeid = drempel van het foto-elektrisch effect.' },
+      { v: 'Wat is een foton?', o: ['een energiepakketje van licht', 'een geladen deeltje', 'een atoomkern', 'een golf zonder energie'], c: 0, d: 1, uo: ['Klopt: licht bestaat uit fotonen, pakketjes energie (E = h·f).', 'Nee, een foton heeft geen lading.', 'Nee, een foton is geen kern.', 'Nee, een foton draagt juist energie.'], uh: 'Foton: energiepakketje, E = h·f.' },
+      { v: 'Waar levert kernfusie de energie van?', o: ['de zon', 'een gloeilamp', 'een batterij', 'een windmolen'], c: 0, d: 2, uo: ['Klopt: in de zon fuseren waterstofkernen tot helium en komt energie vrij.', 'Nee, een gloeilamp gebruikt stroom.', 'Nee, een batterij is chemisch.', 'Nee, een windmolen gebruikt wind.'], uh: 'De zon: kernfusie van waterstof.' },
+    ]),
+
+  V('G', 'Leven en Aarde',
+    `Uit het <strong>spectrum</strong> van een ster lees je temperatuur en samenstelling af; de <strong>roodverschuiving</strong> van verre stelsels toont dat het heelal <strong>uitdijt</strong>. In de geneeskunde gebruik je <strong>röntgenstraling</strong>, <strong>echografie</strong> en <strong>MRI</strong>.`,
+    [
+      { h: '1. Sterren en heelal', p: [
+        `Het <strong>spectrum</strong> van een ster verraadt haar temperatuur en samenstelling. De <strong>roodverschuiving</strong> van verre sterrenstelsels betekent dat ze van ons af bewegen: het heelal <strong>dijt uit</strong>. Doordat het licht jaren onderweg is (een <strong>lichtjaar</strong> is een afstand), zien we sterren zoals ze vroeger waren.`] },
+      { h: '2. Straling in de geneeskunde', p: [
+        `Een <strong>röntgenfoto</strong> maakt botten zichtbaar met röntgenstraling. <strong>Echografie</strong> werkt met ultrageluid, en een <strong>MRI</strong> gebruikt sterke magneten en radiogolven. Straling met een hogere frequentie heeft meer energie per foton (E = h·f), met gammastraling als hoogste.`] },
+    ],
+    [
+      { t: 'Spectrum', d: 'de verdeling van licht over kleuren, verraadt temperatuur en samenstelling', k: 'verraadt temperatuur en samenstelling', fout: ['Roodverschuiving'] },
+      { t: 'Roodverschuiving', d: 'verschuiving van licht naar rood doordat een bron van ons af beweegt', k: 'bron beweegt weg', fout: ['Uitdijend heelal'] },
+      { t: 'Uitdijend heelal', d: 'het heelal wordt steeds groter; verre stelsels bewegen weg', k: 'heelal wordt groter', fout: ['Roodverschuiving'] },
+      { t: 'Lichtjaar', d: 'de afstand die licht in één jaar aflegt', k: 'afstand van licht in een jaar', fout: ['Roodverschuiving'] },
+      { t: 'Röntgenstraling', d: 'doordringende straling waarmee je botten in beeld brengt', k: 'röntgenfoto van botten', fout: ['Echografie'] },
+      { t: 'Echografie', d: 'beeldtechniek met ultrageluid (geluidsgolven)', k: 'werkt met ultrageluid', fout: ['Röntgenstraling'] },
+      { t: 'MRI', d: 'scan met sterke magneten en radiogolven', k: 'magneten en radiogolven', fout: ['Echografie'] },
+      { t: 'Gammastraling', d: 'straling met de hoogste energie per foton', k: 'hoogste fotonenergie', fout: ['Röntgenstraling'] },
+    ],
+    [
+      { v: 'Welke straling heeft de hoogste energie per foton?', o: ['gammastraling', 'radiogolven', 'infrarood', 'zichtbaar licht'], c: 0, d: 2, uo: ['Klopt: gammastraling heeft de hoogste frequentie en dus energie per foton.', 'Nee, radiogolven hebben de laagste energie.', 'Nee, infrarood is laag-energetisch.', 'Nee, zichtbaar licht ligt ertussenin.'], uh: 'Hogere frequentie → hogere fotonenergie (E = h·f).' },
+      { v: 'Waaruit leid je de temperatuur en samenstelling van een ster af?', o: ['uit haar spectrum', 'uit de kleur van de nachthemel', 'uit haar afstand', 'uit haar naam'], c: 0, d: 3, uo: ['Klopt: het spectrum verraadt temperatuur en samenstelling.', 'Nee, de nachthemel zegt dat niet.', 'Nee, de afstand is iets anders.', 'Nee, de naam niet.'], uh: 'Spectrum → temperatuur en samenstelling.' },
+      { v: 'Wat betekent de roodverschuiving van verre sterrenstelsels?', o: ['ze bewegen van ons af en het heelal dijt uit', 'ze komen naar ons toe', 'ze staan stil', 'ze worden zomaar roder'], c: 0, d: 3, uo: ['Klopt: roodverschuiving betekent wegbewegen, het heelal dijt uit.', 'Nee, naar ons toe geeft blauwverschuiving.', 'Nee, ze staan niet stil.', 'Nee, de verschuiving heeft een oorzaak: beweging.'], uh: 'Roodverschuiving: wegbewegend, uitdijend heelal.' },
+      { v: 'Welke medische techniek gebruikt röntgenstraling?', o: ['een röntgenfoto van botten', 'een echo', 'een hartfilmpje (ECG)', 'een bloedtest'], c: 0, d: 1, uo: ['Klopt: een röntgenfoto maakt botten zichtbaar.', 'Nee, een echo gebruikt geluid.', 'Nee, een ECG meet elektrische signalen.', 'Nee, een bloedtest gebruikt geen straling.'], uh: 'Röntgenfoto: botten met röntgenstraling.' },
+      { v: 'Waarop berust echografie?', o: ['ultrageluid', 'röntgenstraling', 'radioactiviteit', 'magnetisme'], c: 0, d: 2, uo: ['Klopt: echografie werkt met ultrageluid.', 'Nee, dat is een röntgenfoto.', 'Nee, geen radioactiviteit.', 'Nee, dat is MRI.'], uh: 'Echografie: ultrageluid.' },
+      { v: 'Wat is een lichtjaar?', o: ['de afstand die licht in één jaar aflegt', 'een periode van een jaar', 'de helderheid van een ster', 'de leeftijd van het licht'], c: 0, d: 2, uo: ['Klopt: een lichtjaar is een afstand: wat licht in een jaar aflegt.', 'Nee, het is een afstand, geen tijd.', 'Nee, het is geen helderheid.', 'Nee, geen leeftijd.'], uh: 'Lichtjaar = afstand (licht × 1 jaar).' },
+      { v: 'Waarom zien we verre sterren zoals ze vroeger waren?', o: ['hun licht doet er lang over om ons te bereiken', 'ze bewegen niet', 'ze zijn heel oud', 'onze ogen zijn traag'], c: 0, d: 3, uo: ['Klopt: het licht is jaren onderweg, dus we zien het verleden.', 'Nee, dat is niet de reden.', 'Nee, hun leeftijd is niet de reden.', 'Nee, onze ogen zijn niet traag.'], uh: 'Licht is jaren onderweg → we zien het verleden.' },
+      { v: 'Welke techniek gebruikt sterke magneten en radiogolven voor een scan?', o: ['MRI', 'röntgen', 'echografie', 'een gewone foto'], c: 0, d: 3, uo: ['Klopt: een MRI gebruikt sterke magneten en radiogolven.', 'Nee, röntgen gebruikt röntgenstraling.', 'Nee, echografie gebruikt geluid.', 'Nee, dat klopt niet.'], uh: 'MRI: magneten + radiogolven.' },
+    ]),
+
+  V('H', 'Natuurwetten en modellen',
+    `De grote <strong>behoudswetten</strong> (energie, impuls, lading) gelden altijd in een gesloten systeem. Een natuurkundig <strong>model</strong> heeft een <strong>geldigheidsgebied</strong> en moet <strong>toetsbare voorspellingen</strong> doen. Licht heeft zowel een <strong>golf-</strong> als een <strong>deeltjeskarakter</strong>.`,
+    [
+      { h: '1. Behoudswetten', p: [
+        `De <strong>wet van behoud van energie</strong> zegt dat energie niet ontstaat of verdwijnt maar van vorm verandert. Bij botsingen blijft in een gesloten systeem de <strong>impuls</strong> (p = m·v) behouden, en de totale <strong>lading</strong> blijft constant.`] },
+      { h: '2. Modellen', p: [
+        `Elk <strong>model</strong> heeft een <strong>geldigheidsgebied</strong>: dicht bij de lichtsnelheid faalt de klassieke mechanica en gebruik je de <strong>relativiteitstheorie</strong>. Het <strong>deeltjesmodel</strong> van licht verklaart het foto-elektrisch effect, het <strong>golfmodel</strong> verklaart interferentie en diffractie. Een goed model doet <strong>toetsbare voorspellingen</strong>.`] },
+    ],
+    [
+      { t: 'Behoud van energie', d: 'energie ontstaat of verdwijnt niet, maar verandert van vorm', k: 'energie verandert van vorm', fout: ['Behoud van impuls', 'Behoud van lading'] },
+      { t: 'Behoud van impuls', d: 'de totale impuls blijft constant in een gesloten systeem', k: 'totale impuls constant', fout: ['Behoud van energie'] },
+      { t: 'Behoud van lading', d: 'de totale lading blijft constant in een gesloten systeem', k: 'totale lading constant', fout: ['Behoud van energie'] },
+      { t: 'Model', d: 'een vereenvoudigde voorstelling met een geldigheidsgebied', k: 'vereenvoudiging met grenzen', fout: ['Geldigheidsgebied'] },
+      { t: 'Geldigheidsgebied', d: 'het bereik waarbinnen een model klopt', k: 'bereik waarbinnen het klopt', fout: ['Model'] },
+      { t: 'Deeltjesmodel van licht', d: 'model waarin licht uit fotonen bestaat; verklaart het foto-elektrisch effect', k: 'licht als fotonen', fout: ['Golfmodel van licht'] },
+      { t: 'Golfmodel van licht', d: 'model waarin licht een golf is; verklaart interferentie en diffractie', k: 'licht als golf', fout: ['Deeltjesmodel van licht'] },
+      { t: 'Relativiteitstheorie', d: 'de theorie die de klassieke mechanica vervangt bij hoge snelheden', k: 'geldt bij hoge snelheden', fout: ['Model'] },
+    ],
+    [
+      { v: 'De wet van behoud van energie zegt dat energie...', o: ['niet ontstaat of verdwijnt maar van vorm verandert', 'kan verdwijnen', 'vanzelf kan ontstaan', 'altijd warmte wordt'], c: 0, d: 2, uo: ['Klopt: energie verandert van vorm; de totale hoeveelheid blijft gelijk.', 'Nee, energie verdwijnt niet.', 'Nee, energie ontstaat niet vanzelf.', 'Nee, niet altijd warmte.'], uh: 'Energie: van vorm veranderen, niet ontstaan of verdwijnen.' },
+      { v: 'Wat blijft bij een botsing in een gesloten systeem behouden?', o: ['de totale impuls', 'de snelheid', 'de vorm', 'de temperatuur'], c: 0, d: 2, uo: ['Klopt: de totale impuls blijft behouden.', 'Nee, snelheden veranderen.', 'Nee, de vorm kan veranderen.', 'Nee, temperatuur is niet behouden.'], uh: 'Botsing: totale impuls behouden.' },
+      { v: 'Impuls is gedefinieerd als...', o: ['m·v', '½mv²', 'm·a', 'F·s'], c: 0, d: 1, uo: ['Klopt: impuls p = massa × snelheid.', 'Nee, dat is kinetische energie.', 'Nee, dat is kracht.', 'Nee, dat is arbeid.'], uh: 'p = m·v.' },
+      { v: 'Een model heeft altijd...', o: ['een geldigheidsgebied', 'gelijk in alle gevallen', 'geen grenzen', 'perfecte nauwkeurigheid'], c: 0, d: 2, uo: ['Klopt: elk model geldt binnen bepaalde grenzen.', 'Nee, een model is niet altijd juist.', 'Nee, het heeft juist grenzen.', 'Nee, perfect is een model nooit.'], uh: 'Elk model heeft een geldigheidsgebied.' },
+      { v: 'Het deeltjesmodel van licht verklaart goed...', o: ['het foto-elektrisch effect', 'diffractie', 'interferentie', 'breking'], c: 0, d: 3, uo: ['Klopt: het foto-elektrisch effect toont het deeltjeskarakter van licht.', 'Nee, diffractie hoort bij het golfmodel.', 'Nee, interferentie is golfgedrag.', 'Nee, breking is golfgedrag.'], uh: 'Deeltjesmodel: foto-elektrisch effect.' },
+      { v: 'Dicht bij de lichtsnelheid faalt de klassieke mechanica en gebruik je...', o: ['de relativiteitstheorie', 'de klassieke mechanica', 'de wet van Ohm', 'de thermodynamica'], c: 0, d: 2, uo: ['Klopt: bij hoge snelheden gebruik je de relativiteitstheorie.', 'Nee, de klassieke mechanica faalt daar juist.', 'Nee, dat gaat over elektriciteit.', 'Nee, dat gaat over warmte.'], uh: 'Hoge v: relativiteitstheorie.' },
+      { v: 'Behoud van lading betekent dat de totale lading...', o: ['constant blijft in een gesloten systeem', 'verdwijnt', 'vanzelf ontstaat', 'altijd nul is'], c: 0, d: 2, uo: ['Klopt: de totale lading blijft constant.', 'Nee, lading verdwijnt niet.', 'Nee, lading ontstaat niet vanzelf.', 'Nee, ze hoeft niet nul te zijn.'], uh: 'Totale lading blijft behouden.' },
+      { v: 'Een goed natuurkundig model is toetsbaar doordat het...', o: ['toetsbare voorspellingen doet', 'niet te weerleggen is', 'altijd klopt', 'ingewikkeld is'], c: 0, d: 3, uo: ['Klopt: het doet voorspellingen die je met experimenten kunt toetsen.', 'Nee, onweerlegbaar is juist niet wetenschappelijk.', 'Nee, een model kan fout blijken.', 'Nee, ingewikkeldheid maakt het niet toetsbaar.'], uh: 'Goed model: toetsbare voorspellingen.' },
+    ]),
+
+  V('I', 'Onderzoek en ontwerp',
+    `Goed onderzoek beheerst de <strong>meetonzekerheid</strong>: je onderscheidt <strong>systematische</strong> en <strong>toevallige fouten</strong>, houdt variabelen <strong>constant</strong> en meet vaker. Een ontwerp begint met een <strong>programma van eisen</strong>.`,
+    [
+      { h: '1. Meten en fouten', p: [
+        `Je geeft een meting met een <strong>marge (±)</strong>. Een <strong>systematische fout</strong> verschuift de meting steeds dezelfde kant op; een <strong>toevallige fout</strong> is willekeurig en verklein je door <strong>vaker te meten en te middelen</strong>. Om de invloed van één <strong>variabele</strong> te onderzoeken houd je de andere constant.`] },
+      { h: '2. Betrouwbaarheid en ontwerp', p: [
+        `Meer <strong>meetpunten</strong> geven een betrouwbaarder verband. De <strong>afleesnauwkeurigheid</strong> van een liniaal met mm-schaal is ongeveer ± 0,5 mm. Wijkt je resultaat af van de verwachting, controleer dan eerst je opzet en meetfouten. Een <strong>ontwerpopdracht</strong> start met een <strong>programma van eisen</strong>.`] },
+    ],
+    [
+      { t: 'Meetonzekerheid', d: 'de marge waarbinnen de echte waarde ligt, aangegeven met ±', k: 'marge rond de meetwaarde', fout: ['Afleesnauwkeurigheid'] },
+      { t: 'Systematische fout', d: 'een fout die de meting steeds dezelfde kant op verschuift', k: 'steeds dezelfde afwijking', fout: ['Toevallige fout'] },
+      { t: 'Toevallige fout', d: 'een willekeurige fout, kleiner door vaker te meten en te middelen', k: 'willekeurig, middel weg', fout: ['Systematische fout'] },
+      { t: 'Variabele', d: 'een grootheid die je verandert of constant houdt in een onderzoek', k: 'grootheid in het onderzoek', fout: ['Programma van eisen'] },
+      { t: 'Programma van eisen', d: 'de lijst eisen waarmee je een ontwerpopdracht begint', k: 'lijst eisen bij ontwerp', fout: ['Hypothese'] },
+      { t: 'Afleesnauwkeurigheid', d: 'hoe nauwkeurig je een meetinstrument kunt aflezen', k: 'nauwkeurigheid van aflezen', fout: ['Meetonzekerheid'] },
+      { t: 'Betrouwbaarheid', d: 'de mate waarin een meting herhaalbaar en te vertrouwen is', k: 'herhaalbaar en te vertrouwen', fout: ['Meetonzekerheid'] },
+      { t: 'Hypothese', d: 'een toetsbare verwachting die je vooraf opstelt', k: 'verwachting vooraf', fout: ['Programma van eisen'] },
+    ],
+    [
+      { v: 'Hoe geef je de meetonzekerheid van een meting?', o: ['als een marge (±) om de meetwaarde', 'als één getal zonder marge', 'als een percentage van de tijd', 'als een kleur'], c: 0, d: 2, uo: ['Klopt: je geeft een marge met ± rond de meetwaarde.', 'Nee, zonder marge geef je de onzekerheid niet weer.', 'Nee, niet als tijdspercentage.', 'Nee, geen kleur.'], uh: 'Onzekerheid: waarde ± marge.' },
+      { v: 'Om de invloed van één variabele te onderzoeken houd je de andere...', o: ['constant', 'ook variabel', 'weg', 'willekeurig'], c: 0, d: 2, uo: ['Klopt: je houdt de overige variabelen constant.', 'Nee, dan weet je niet welke het effect gaf.', 'Nee, weglaten kan niet altijd.', 'Nee, willekeurig maakt het onbetrouwbaar.'], uh: 'Onderzoek: één variabele, rest constant.' },
+      { v: 'Een systematische fout...', o: ['verschuift de meting steeds dezelfde kant op', 'is volledig willekeurig', 'verdwijnt door te middelen', 'komt alleen door pech'], c: 0, d: 3, uo: ['Klopt: een systematische fout wijkt steeds dezelfde kant op af.', 'Nee, dat is een toevallige fout.', 'Nee, middelen helpt hier niet.', 'Nee, het is een structurele afwijking, geen pech.'], uh: 'Systematisch: steeds dezelfde afwijking.' },
+      { v: 'Een toevallige (random) fout verklein je door...', o: ['vaker meten en middelen', 'één keer meten', 'sneller werken', 'af te ronden'], c: 0, d: 2, uo: ['Klopt: vaker meten en middelen vermindert toevallige fouten.', 'Nee, één meting helpt niet.', 'Nee, sneller werken niet.', 'Nee, afronden verandert de fout niet.'], uh: 'Toevallige fout: vaker meten en middelen.' },
+      { v: 'Bij een ontwerpopdracht begin je met...', o: ['een programma van eisen', 'het eindproduct', 'de conclusie', 'een grafiek'], c: 0, d: 2, uo: ['Klopt: je stelt eerst een programma van eisen op.', 'Nee, het eindproduct komt later.', 'Nee, de conclusie komt aan het eind.', 'Nee, een grafiek is niet de start.'], uh: 'Ontwerp start met een programma van eisen.' },
+      { v: 'De afleesnauwkeurigheid van een liniaal met mm-schaal is ongeveer...', o: ['± 0,5 mm', '± 5 cm', '± 1 m', '± 0,001 mm'], c: 0, d: 3, uo: ['Klopt: bij een mm-schaal lees je af tot ongeveer een halve mm nauwkeurig.', 'Nee, dat is veel te grof.', 'Nee, veel te grof.', 'Nee, zo nauwkeurig is een liniaal niet.'], uh: 'mm-liniaal: ± 0,5 mm.' },
+      { v: 'Meer meetpunten in een grafiek geven...', o: ['een betrouwbaarder verband', 'een minder betrouwbaar verband', 'geen verschil', 'altijd een rechte lijn'], c: 0, d: 2, uo: ['Klopt: meer meetpunten maken het verband betrouwbaarder.', 'Nee, juist betrouwbaarder.', 'Nee, het maakt wel verschil.', 'Nee, niet per se een rechte lijn.'], uh: 'Meer meetpunten → betrouwbaarder.' },
+      { v: 'Als je resultaat afwijkt van de verwachting, doe je eerst...', o: ['de opzet en meetfouten kritisch bekijken', 'de meting weggooien', 'de verwachting aanpassen', 'stoppen met het onderzoek'], c: 0, d: 3, uo: ['Klopt: je controleert eerst je opzet en mogelijke meetfouten.', 'Nee, zomaar weggooien mag niet.', 'Nee, niet klakkeloos de verwachting aanpassen.', 'Nee, stoppen lost niets op.'], uh: 'Bij afwijking: eerst opzet en meetfouten checken.' },
+    ]),
 ];
